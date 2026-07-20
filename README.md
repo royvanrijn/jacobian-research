@@ -16,6 +16,7 @@ distinct rational points. It therefore supplies a counterexample to the
 classical Jacobian conjecture in dimension three. The inverse problem reduces
 to a cubic polynomial, making it possible to determine the exact image, fiber
 stratification, nonproperness set, normalization, and monodromy.
+([Claims C01--C03](CLAIMS.md#c01))
 
 The same construction belongs to a weighted family controlled by the
 one-variable pencil `H(W)-sW+t`. For this family the repository proves full
@@ -23,6 +24,7 @@ symmetric monodromy, a generic nodal-cuspidal discriminant theorem in every
 degree, generic surjectivity from inverse degree five onward, a complete
 contact-partition and irreducible-component theorem for exceptional seeds, and
 the associated finite-field Chebotarev law.
+([Claims C04--C13](CLAIMS.md#c04))
 
 ### Proof status
 
@@ -105,7 +107,7 @@ F(0,0,-1/4)=F(1,-3/2,13/2)=F(-1,3/2,13/2)
 Thus `F` is everywhere étale over `C` but is not injective and
 hence is not a polynomial automorphism. Appending identity coordinates gives
 counterexamples in every dimension at least three. The coordinate degrees are
-`(7,6,4)`.
+`(7,6,4)`. ([Claim C01](CLAIMS.md#c01))
 
 The determinant also has two executable checks: one with SymPy and one with an
 independent standard-library sparse-polynomial implementation.  No global
@@ -151,6 +153,8 @@ where
 Q=27a^2c^2-18abc+16a+b^3c-b^2.
 \]
 
+([Claim C02](CLAIMS.md#c02))
+
 This model also explains the failure of properness: repeated inverse roots are
 precisely the reconstruction poles, so sheets can escape to infinity without
 finite ramification.
@@ -182,6 +186,7 @@ and `Gamma=Sing(V(Q))`. The complete affine fiber table is:
 The proof includes the `x=0` chart, every exceptional cubic, explicit escaping
 paths over all boundary strata, and a converse boundedness argument off
 `V(Q)`. Root meridians generate the full monodromy group `S_3`.
+([Claim C03](CLAIMS.md#c03))
 
 See [Construction and anatomy](notes/CONSTRUCTION.md) and
 [Exact image, fibers, and nonproperness](notes/IMAGE_AND_NONPROPERNESS.md).
@@ -204,11 +209,12 @@ discriminant has normalization
 \]
 
 the curve of tangent lines to the graph `Y=H(W)`.
+([Claim C04](CLAIMS.md#c04))
 
 The repository proves:
 
 1. The generic inverse pencil is irreducible, and its geometric and arithmetic
-   monodromy groups are `S_n`.
+   monodromy groups are `S_n`. ([Claim C04](CLAIMS.md#c04))
 2. For generic admissible `H`, the projective discriminant is a rational
    degree-`n` curve with a smooth point at infinity, exactly `n-2` ordinary
    cusps, and
@@ -217,11 +223,12 @@ The repository proves:
    {(n-2)(n-3)\over2}
    \]
 
-   ordinary nodes, with no other singularities.
+   ordinary nodes, with no other singularities. ([Claim C05](CLAIMS.md#c05))
 3. Generic weighted maps are surjective over the algebraic closure for every
-   inverse degree `n>=5`.
+   inverse degree `n>=5`. ([Claim C06](CLAIMS.md#c06))
 4. The canonical family `H_d(W)=W^d(1-W)`, one-extra-root deformations, and
    repeated primitive roots have exact image and boundary theorems.
+   ([Claim C06](CLAIMS.md#c06))
 
 The main references are
 [the weighted-seed theorem](notes/WEIGHTED_SEED_THEOREM.md),
@@ -268,6 +275,8 @@ classification is
 =n-\ell(\lambda)-2.
 \]
 
+([Claim C08](CLAIMS.md#c08))
+
 ### Unique omitted-value theorem
 
 Every normalized admissible seed has at most one omitted inverse-pencil value
@@ -292,6 +301,7 @@ P-Q=(A-B)(A+B)
 has degree at least `n/2>=2`, again a contradiction. Hence the displayed
 union is genuinely disjoint: the exact partition of the unique omitted
 polynomial assigns every nonsurjective seed to one and only one stratum.
+([Claim C07](CLAIMS.md#c07))
 
 ### Main theorem
 
@@ -346,6 +356,7 @@ boundary strata by arbitrary partitions with parts at least two, and every
 component intersection is determined by common coarsening. The theorem is
 set-theoretic; scheme-theoretic intersections, embedded components, and
 intersection multiplicities are separate questions.
+([Claim C10](CLAIMS.md#c10))
 
 ### Dimension theorem
 
@@ -377,6 +388,7 @@ parts when `n` is even, and by one triple part with all remaining parts double
 when `n` is odd. Whenever further representations `2a+3b=n` exist, they give
 genuine lower-dimensional components; the exceptional locus is then not
 equidimensional.
+([Claim C08](CLAIMS.md#c08))
 
 The codimension formula also explains the sharp degree transition in the
 image theorem. The exceptional closure has codimension zero in degrees three
@@ -421,6 +433,7 @@ More generally, if reconstruction required multiplicity at least `r`, the
 primitive contact orders would be `r,...,2r-1`. The specific pair `{2,3}`
 comes from the present threshold `r=2`; the atom principle is the universal
 part.
+([Claim C09](CLAIMS.md#c09))
 
 ### Universal equation and irreducibility
 
@@ -449,6 +462,8 @@ Its irreducibility proof is uniform:
   nonsquare.
 - Only seven endpoint-rank cases lie outside these stable regimes, and each
   has an explicit linear or nonsquare-discriminant certificate.
+
+([Claim C10](CLAIMS.md#c10))
 
 ### Normalization theorem
 
@@ -491,6 +506,7 @@ first geometric two-branch example occurs in degree twelve for
 `(a,b)=(3,2)` over `E_(6,6)`.  Degree fourteen is only the first ambiguity
 after additionally quotienting abstract allocation data by permutations of
 equal-multiplicity roots.
+([Claim C11](CLAIMS.md#c11))
 
 This is deliberately a generic-stratum statement: at more-special points,
 branches may specialize or ramify further.  Completed-local branch structure,
@@ -501,6 +517,7 @@ two regular fourfold branches over
 `k[[t,epsilon,eta]]/(epsilon^2,eta^2)`.  Its conductor has transverse
 colength four, so the branches are quadratically tangent rather than nodal.
 See [the generic degree-twelve local singularity](notes/DEGREE12_LOCAL_SINGULARITY.md).
+([Claim C12](CLAIMS.md#c12))
 
 ### Proof architecture for closures and intersections
 
@@ -525,6 +542,7 @@ the boundary; and polynomial Mason--Stothers excludes the remaining
 off-collision two-omission incidence for every pair of distinct contact
 types. These facts prove both the reverse closure implication and the
 common-coarsening intersection formula.
+([Claim C10](CLAIMS.md#c10))
 
 ### Number of components
 
@@ -553,6 +571,7 @@ Equivalently,
 
 Together, these statements give completeness, irreducibility, and
 distinctness of every component in all degrees.
+([Claim C10](CLAIMS.md#c10))
 
 The low-degree calculations remain useful regressions: degree five recovers
 the established `(3,2)` polynomial `F(R,P)`; degree six has the two components
@@ -583,10 +602,13 @@ and targets with exactly `j` rational preimages have count
 {\binom{n}{j}D_{n-j}\over n!}q^3+O_H(q^{5/2}).
 \]
 
+([Claim C13](CLAIMS.md#c13))
+
 The original cubic also has exact finite-field distributions in every
 characteristic. Separately, standard reductions produce explicit
 95-dimensional cubic-homogeneous and 510-dimensional Drużkowski forms with
 transported rational collisions.
+([Claim C15](CLAIMS.md#c15))
 
 See [Finite-field Chebotarev](notes/FINITE_FIELD_CHEBOTAREV.md),
 [exact cubic finite-field distributions](notes/FINITE_FIELD_VALUE_DISTRIBUTION.md),
