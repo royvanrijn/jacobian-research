@@ -1,6 +1,6 @@
 # Sources consulted
 
-Accessed 20 July 2026. Because the announcement is same-day, sources are split
+Accessed 20--21 July 2026. Because the announcement is same-day, sources are split
 between exact certificates and background; none should yet be treated as settled
 historical attribution.
 

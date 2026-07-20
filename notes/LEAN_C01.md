@@ -43,6 +43,11 @@ and runs `lake build`.  It is intentionally not part of `make verify`, because
 the first run installs the pinned Lean `v4.33.0-rc1` toolchain and mathlib
 dependencies.
 
+The pinned target was reproduced successfully on 21 July 2026.  The upstream
+`#print axioms` checks report only `propext`, `Classical.choice`, and
+`Quot.sound` for each of the three final theorems; in particular, the reported
+dependency lists contain no `sorryAx`.
+
 ## Attribution and source boundary
 
 The Lean definitions and proofs are Dean Cureton's work.  His README titles

@@ -1,6 +1,6 @@
 # Provenance audit
 
-Audited 20 July 2026. This note separates the earliest public announcement
+Audited 20--21 July 2026. This note separates the earliest public announcement
 located so far from exact mathematical verification and from later structural
 exposition.
 
