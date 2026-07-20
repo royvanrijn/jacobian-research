@@ -122,9 +122,9 @@ monodromy alone:
 - radical decompositions of the nonproperness hypersurface.
 
 For the canonical family `H_d(W)=W^d(1-W)`, the only primitive zeros are the
-distinguished points `0` and `1`, making it the first family for the remaining
-global-geometry theorem. Deformed seeds should be treated afterward because
-their extra primitive zeros create additional `C=0` branches.
+distinguished points `0` and `1`. Its global geometry is now proved in
+`CANONICAL_FAMILY_IMAGE.md`. Deformed seeds should be treated afterward
+because their extra primitive zeros create additional `C=0` branches.
 
 ## Finite-field interpretation
 

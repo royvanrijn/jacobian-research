@@ -42,8 +42,9 @@ G(1,0,0)=G(-1,0,2)=(0,0,1).
 - [x] Connectedness and geometric/arithmetic monodromy `S_4`.
 - [x] Universal inverse, discriminant-normalization, and `S_n` monodromy
   theorem for arbitrary characteristic-zero seeds.
-- [ ] Generalization of the image and nonproperness statements to the
-  canonical family, then to seeds with extra primitive zeros.
+- [x] Generalization of the image and nonproperness statements to the
+  canonical family.
+- [ ] Extension to seeds with extra primitive zeros.
 
 ## Quartic inverse on `C!=0`
 

@@ -26,6 +26,10 @@
   discriminant normalization, and geometric/arithmetic monodromy `S_n` for
   every characteristic-zero weighted seed; canonical and deformed degrees
   through eight have an exact regression audit.
+- The canonical family `H_d=W^d(1-W)` now has a uniform image and
+  nonproperness theorem: the inverse-degree-three and four members have one
+  omitted curve each, all inverse degrees at least five are surjective, and
+  the `C=0` boundary fibers and saturation factors are explicit.
 - A bounded scan of 627 weighted seeds is exploratory and explicitly separated
   from theorem-level claims.
 
@@ -48,6 +52,5 @@
   now have exact certificates.
 - Audit the stable-equivalence steps and external implication theorems against
   their primary sources.
-- Generalize the quartic image and nonproperness theorem first to the canonical
-  family, using its two-point primitive-zero profile; keep additional boundary
-  branches from deformed seeds explicit.
+- Extend the image and nonproperness theorem to deformed seeds, keeping every
+  additional primitive-zero boundary branch explicit.

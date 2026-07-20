@@ -106,6 +106,9 @@ Fibers have `3`, `1`, and `0` affine points respectively on `Q != 0`, on
 - Universal inverse-discriminant normalization and full `S_n` monodromy for
   every characteristic-zero weighted seed:
   [WEIGHTED_SEED_THEOREM.md](notes/WEIGHTED_SEED_THEOREM.md).
+- Exact images and nonproperness sets for the full canonical family
+  `H_d(W)=W^d(1-W)`:
+  [CANONICAL_FAMILY_IMAGE.md](notes/CANONICAL_FAMILY_IMAGE.md).
 - Explicit 95-dimensional cubic-homogeneous and 510-dimensional Drużkowski
   counterexamples:
   [CUBIC_HOMOGENEOUS_REDUCTION.md](notes/CUBIC_HOMOGENEOUS_REDUCTION.md) and
