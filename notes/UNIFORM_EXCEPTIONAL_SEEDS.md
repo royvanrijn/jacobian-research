@@ -392,6 +392,11 @@ lies in one of these closures by the collision theorem.  Finally, Mason's
 inequality also excludes containment of one maximal closure in the boundary
 of another.
 
+Retaining collisions while imposing `D!=0` and weighted admissibility gives a
+smooth quotient-coordinate hypersurface.  Its finite generically degree-one
+map to the seed component is the normalization morphism; see
+`COMPONENT_NORMALIZATION.md`.
+
 For the last assertion, the map from `ell` marked roots to the top `ell`
 monic coefficients is finite, not merely generically finite.  Its leading
 homogeneous forms are equivalent by Newton identities to the weighted power

@@ -385,6 +385,44 @@ def multiplicity_excess(partition, baseline=2):
     return sum(value - baseline for value in partition)
 
 
+def component_decomposition_count(
+    collision_partition, double_root_count, triple_root_count
+):
+    """Count ``M=Q**2*R**3`` decompositions of one collision polynomial.
+
+    For a root of exact multiplicity ``m``, an allocation contributes
+    ``i`` roots to ``Q`` and ``j`` roots to ``R`` with ``2*i+3*j=m``.
+    The global degrees of ``Q,R`` are fixed by the requested root counts.
+    """
+    collision_partition = tuple(int(value) for value in collision_partition)
+    double_root_count = int(double_root_count)
+    triple_root_count = int(triple_root_count)
+    if (
+        not collision_partition
+        or any(value < 2 for value in collision_partition)
+        or double_root_count < 0
+        or triple_root_count < 0
+        or sum(collision_partition)
+        != 2 * double_root_count + 3 * triple_root_count
+    ):
+        raise ValueError("collision degree must equal 2*a+3*b")
+    counts = {(0, 0): 1}
+    for multiplicity in collision_partition:
+        allocations = tuple(
+            (double_roots, triple_roots)
+            for triple_roots in range(multiplicity // 3 + 1)
+            for double_roots in range(multiplicity // 2 + 1)
+            if 2 * double_roots + 3 * triple_roots == multiplicity
+        )
+        next_counts = {}
+        for (used_double, used_triple), count in counts.items():
+            for add_double, add_triple in allocations:
+                key = (used_double + add_double, used_triple + add_triple)
+                next_counts[key] = next_counts.get(key, 0) + count
+        counts = next_counts
+    return counts.get((double_root_count, triple_root_count), 0)
+
+
 def maximal_two_three_phi(double_root_count, triple_root_count, prefix="maxphi"):
     """Build ``Phi`` for ``M=Q_2**2*Q_3**3`` in quotient coordinates."""
     double_root_count = int(double_root_count)

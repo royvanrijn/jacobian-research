@@ -394,6 +394,43 @@ Its irreducibility proof is uniform:
 - Only seven endpoint-rank cases lie outside these stable regimes, and each
   has an explicit linear or nonsquare-discriminant certificate.
 
+### Normalization theorem
+
+Retain the collision diagonals in `Phi_(2^a3^b)=0`, but impose `D!=0` and the
+weighted admissibility condition.  The resulting quotient-coordinate
+hypersurface `tilde(C)_(a,b)` is smooth.  In the stable ranges this follows
+from
+
+\[
+{\partial\Phi\over\partial u}=-2xy^3
+\qquad\text{or}\qquad
+{\partial\Phi\over\partial v}=-3x^2y^2,
+\]
+
+because `x=Q(0)` and `y=R(0)` cannot vanish when `Phi=0` and `D!=0`.  The
+same seven endpoint-rank cases saturate to the empty singular locus exactly.
+
+Top-coefficient recovery makes the natural seed map finite, while an exact
+2/3 polynomial uniquely determines `Q` and `R`, making it generically
+one-to-one.  Therefore
+
+\[
+\boxed{
+\widetilde{\mathcal C}_{a,b}\longrightarrow\mathcal C_{a,b}
+\text{ is the normalization morphism}.}
+\]
+
+Normalization fibers over a collision type `(m_1,...,m_k)` are counted by
+
+\[
+[U^aV^b]\prod_{\rho=1}^k
+\left(\sum_{2i+3j=m_\rho}U^iV^j\right).
+\]
+
+Thus every component has an explicit smooth normalization, and its
+set-theoretic collision branches are combinatorial.  Scheme-theoretic
+ramification and conductor multiplicities remain separate questions.
+
 ### Proof architecture for closures and intersections
 
 Collision gives the forward closure implication:
@@ -455,6 +492,7 @@ meeting along the predicted collision boundary `(6,2)`.
 See [Uniform exceptional seeds](notes/UNIFORM_EXCEPTIONAL_SEEDS.md),
 [the contact-atom principle](notes/CONTACT_ATOM_PRINCIPLE.md),
 [the unique omitted-value theorem](notes/UNIQUE_OMITTED_VALUE.md),
+[component normalization](notes/COMPONENT_NORMALIZATION.md),
 [contact-partition strata](notes/CONTACT_PARTITION_STRATA.md), and
 [omitted-value classification](notes/OMITTED_VALUE_CLASSIFICATION.md).
 

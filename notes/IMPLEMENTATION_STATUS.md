@@ -88,6 +88,10 @@
   degree at least two.  Every seed therefore omits at most one normalized
   pencil value, and the exact contact strata form a disjoint stratification
   of the nonsurjective locus.
+- Every exceptional component now has an explicit smooth normalization: the
+  admissible `Q^2R^3` quotient hypersurface is smooth even across collision
+  diagonals, and its seed map is finite and generically degree one.  Collision
+  fiber cardinalities are computed by allocations `2i+3j=m` at each root.
 - A bounded scan of 627 weighted seeds is exploratory and explicitly separated
   from theorem-level claims.
 
@@ -116,3 +120,5 @@
   eliminate the universal exceptional strata in selected low degrees.
 - Refine the set-theoretic common-coarsening formula to scheme-theoretic
   intersections, including embedded components and collision multiplicities.
+- Compute normalization ramification, conductor ideals, and local branch
+  multiplicities along each collision stratum.

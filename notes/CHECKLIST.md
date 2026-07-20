@@ -121,6 +121,14 @@ repository; it does not by itself claim independent replication.
   has at most one omitted inverse-pencil value.
 - [x] Upgrade the exceptional-locus union to the disjoint exact-partition
   stratification `N_n = disjoint_union E_lambda`.
+- [x] Prove that every admissible maximal quotient hypersurface is smooth,
+  including all collision diagonals.
+- [x] Identify its finite generically degree-one seed map as the normalization
+  of the corresponding irreducible component.
+- [x] Count set-theoretic normalization fibers by the local allocations
+  `2i+3j=m`.
+- [ ] Determine ramification divisors, conductors, and scheme-theoretic branch
+  multiplicities of the component normalizations.
 - [x] Verify the threshold-`r` atom set `{r,...,2r-1}` and automatic abc bound
   for `r>=3`.
 - [ ] Determine the scheme-theoretic component intersections, embedded

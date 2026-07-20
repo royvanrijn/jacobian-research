@@ -137,6 +137,11 @@ valuation for `a>=3`, and has seven explicit endpoint-rank cases.  Hence the
 maximal partition types index the irreducible components of the closure of
 the exceptional seed locus.
 
+The admissible quotient hypersurface remains smooth when collision diagonals
+are retained.  Its finite map to the corresponding seed component is the
+normalization, and `component_decomposition_count` counts its set-theoretic
+fibers over collision partitions.
+
 ## Degree-five regression
 
 For `lambda=(3,2)`, write

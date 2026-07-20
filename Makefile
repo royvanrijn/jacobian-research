@@ -30,6 +30,7 @@ verify-family:
 	$(PYTHON) scripts/verify_maximal_phi_irreducibility.py
 	$(PYTHON) scripts/verify_contact_atom_principle.py
 	$(PYTHON) scripts/verify_unique_omitted_value.py
+	$(PYTHON) scripts/verify_component_normalization.py
 	$(PYTHON) scripts/verify_canonical_family_image.py
 	$(PYTHON) scripts/verify_deformed_seed_boundary.py
 	$(PYTHON) scripts/verify_omitted_value_classification.py
