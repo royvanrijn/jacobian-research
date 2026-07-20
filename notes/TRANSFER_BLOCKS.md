@@ -7,7 +7,7 @@ For an allocation change
 \]
 
 at one collision root, the stronger factorization correspondence is the
-scheme
+stronger factorization scheme
 
 \[
 \mathfrak Z_k={(U,V):U^2=V^3},
@@ -100,18 +100,40 @@ dual numbers at every point.
 
 ## Consequence for branch intersections
 
-The calculation proves the stronger-equality lower bound for a two-transfer
-collision:
+Normalized seed coefficients discard the constant and linear coefficients of
+the collision polynomial.  The correct two-transfer equation is therefore
 
 \[
-\operatorname{length}\mathfrak Z_2=4.
+U^2-V^3=\lambda Z+\mu.                            \tag{4}
 \]
 
-To identify the actual normalization-branch intersection, one must still
-allow the two normalized polynomials to differ by an affine polynomial.  As
-in the degree-twelve `k=1` calculation, the remaining task is a jet upper
-bound of four.  If that bound holds, the length sandwich identifies the full
-branch intersection with (2).
+After the same triangular elimination, equation (4) retains only the
+coefficient equations in degrees `5,4,3,2`; the degree-one and constant
+equations are omitted.  Their exact Groebner basis is nevertheless still
+
+\[
+(X^3,2XY-pX^2,Y^2-qX^2).
+\]
+
+Moreover, the discarded degree-one and constant equations reduce to zero
+modulo this ideal.  Thus affine difference does not enlarge the two-transfer
+block:
+
+\[
+\boxed{\mathfrak Z_2^{\mathrm{aff}}=\mathfrak Z_2.} \tag{5}
+\]
+
+In particular, the actual isolated two-transfer correspondence has length
+four:
+
+\[
+\operatorname{length}\mathfrak Z_2^{\mathrm{aff}}=4.
+\]
+
+For a global pair of allocations, transfers at different collision roots are
+coupled by the fixed total `(a,b)` and by the single global affine difference.
+The local result (5) supplies the exact two-transfer factor, but assembling
+several compensating blocks still requires a Hensel-product/equalizer theorem.
 
 ## General program
 

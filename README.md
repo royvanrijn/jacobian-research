@@ -525,10 +525,11 @@ colength four, so the branches are quadratically tangent rather than nodal.
 See [the generic degree-twelve local singularity](notes/DEGREE12_LOCAL_SINGULARITY.md).
 ([Claim C12](CLAIMS.md#c12))
 
-The first higher-transfer block is also explicit.  For two simultaneous
-`3Q <-> 2R` transfers at one root, the stronger factorization scheme is finite
-flat of rank four over the reduced quadratic-factor space, with coincident-root
-fiber `k[X,Y]/(X^3,XY,Y^2)`. ([Claim C17](CLAIMS.md#c17))
+The first higher-transfer block is also explicit. For two simultaneous
+`3Q <-> 2R` transfers at one root, even allowing the normalized polynomials to
+differ by an affine term, the factorization scheme is finite flat of rank four
+over the reduced quadratic-factor space, with coincident-root fiber
+`k[X,Y]/(X^3,XY,Y^2)`. ([Claim C17](CLAIMS.md#c17))
 
 ### Proof architecture for closures and intersections
 

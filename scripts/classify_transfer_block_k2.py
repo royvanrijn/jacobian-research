@@ -35,14 +35,26 @@ adapted = {
 remaining = [sp.factor(equation.subs(adapted)) for equation in remaining]
 
 candidate = [X**3, 2*X*Y-p*X**2, Y**2-q*X**2]
-computed_groebner = sp.groebner(remaining, Y, X, q, p, order="lex", domain=sp.QQ)
+strong_groebner = sp.groebner(remaining, Y, X, q, p, order="lex", domain=sp.QQ)
+
+# Normalized coefficients only require U^2-V^3 to be affine.  Thus only the
+# equations in degrees 5,4,3,2 remain after the triangular high-coefficient
+# elimination; degrees 1 and 0 are deliberately omitted.
+affine_remaining = remaining[:4]
+affine_groebner = sp.groebner(
+    affine_remaining, Y, X, q, p, order="lex", domain=sp.QQ
+)
 candidate_groebner = sp.groebner(candidate, Y, X, q, p, order="lex", domain=sp.QQ)
 
-# Equality of ideals, checked in both directions.
+# Equality of the affine-difference ideal with the candidate, checked in both
+# directions.  The two discarded strong-equality equations then reduce to
+# zero as well, proving that affine difference adds no infinitesimal points.
 assert all(candidate_groebner.reduce(equation)[1] == 0
-           for equation in remaining)
-assert all(computed_groebner.reduce(equation)[1] == 0
+           for equation in affine_remaining)
+assert all(affine_groebner.reduce(equation)[1] == 0
            for equation in candidate)
+assert all(affine_groebner.reduce(equation)[1] == 0 for equation in remaining)
+assert all(strong_groebner.reduce(equation)[1] == 0 for equation in candidate)
 
 # Monic leading terms Y^2, X*Y, X^3 give a free k[p,q]-basis.
 basis = (sp.Integer(1), X, Y, X**2)
@@ -60,6 +72,7 @@ assert special.reduce(X*Y)[1] == 0
 assert special.reduce(Y**2)[1] == 0
 
 print("PASS: the six high coefficients eliminate U triangularly")
+print("PASS: allowing U^2-V^3 to be affine gives the same Z_2 ideal")
 print("PASS: Z_2 has ideal (X^3, 2XY-pX^2, Y^2-qX^2)")
 print("PASS: Z_2 is finite flat of rank 4 over k[p,q]")
 print("PASS: the coincident-root fiber is k[X,Y]/(X^3,XY,Y^2)")
