@@ -52,6 +52,9 @@
   show that the good locus meets every admissible degree. Thus generic seeds
   are surjective for all inverse degrees at least five. Exact rational seeds
   through degree ten remain as independent regression certificates.
+- The higher-cusp, cusp-plus-branch, tritangent, and ordinary-bitangent strata
+  now have reusable universal ideals with explicit Rabinowitsch saturation by
+  every diagonal, cusp, degree, and weighted-admissibility factor.
 - A bounded scan of 627 weighted seeds is exploratory and explicitly separated
   from theorem-level claims.
 
@@ -74,6 +77,6 @@
   now have exact certificates.
 - Audit the stable-equivalence steps and external implication theorems against
   their primary sources.
-- Turn the dual-curve incidence proof into explicit saturated universal ideals
-  and compare it archivally with classical projective duality, then make
-  good-prime exclusions effective for individual seeds.
+- Compare the dual-curve incidence proof archivally with classical projective
+  duality, then make good-prime exclusions effective for individual seeds and
+  eliminate the universal exceptional strata in selected low degrees.

@@ -102,6 +102,47 @@ H_n(W)=W^2+W^3+\cdots+W^{n-1}-(n-2)W^n
 and has `H''(1)/(-H'(1))=-4n/3`. Hence the good open set meets the admissible
 slice for every `n>=3`, proving the theorem uniformly.
 
+## Universal saturated incidence ideals
+
+The module `jcsearch.discriminant_geometry` now represents the theorem's bad
+loci directly over the universal admissible chart
+
+\[
+H(W)=\sum_{k=3}^n h_k(W^k-W^2).
+\]
+
+This imposes `H(0)=H'(0)=H(1)=0` identically. The coefficient open set is
+represented by the single factor
+
+\[
+\Omega_n=h_nH'(1)\bigl(H''(1)-2H'(1)\bigr),
+\]
+
+excluding degree drop, `c=-H'(1)=0`, and the forbidden weighted value
+`H''(1)/c=-2`.
+
+Write `D_s(r,u),D_t(r,u)` for the two diagonal-divided bitangent equations.
+The reusable incidence ideals and saturation factors are:
+
+| Incidence | Equations | Saturation factor besides `Omega_n` |
+|---|---|---|
+| ordinary ordered bitangent | `D_s(r,u),D_t(r,u)` | `(r-u)H''(r)H''(u)` |
+| higher cusp | `H''(r),H'''(r)` | `1` |
+| ordinary cusp plus branch | `H''(r),D_s(r,u),D_t(r,u)` | `(r-u)H'''(r)H''(u)` |
+| tritangent | `D(r,u),D(r,v)` | `(r-u)(r-v)(u-v)H''(r)H''(u)H''(v)` |
+
+If `S` is the full displayed saturation factor, the implementation adjoins a
+Rabinowitsch variable `z` and the equation `1-zS=0`. Eliminating the marked
+points and `z` therefore produces the closed coefficient-space stratum without
+retaining diagonals, nonordinary cusp endpoints, or inadmissible parameters.
+`incidence_elimination_generators` performs this elimination when a concrete
+degree is small enough for a direct Groebner calculation.
+
+The executable audit verifies every contact factorization and saturation gate
+symbolically. As a genuine elimination regression, the degree-four
+higher-cusp ideal recovers exactly the discriminant of `H''` in the admissible
+coefficient space.
+
 ## Degree and birational normalization
 
 The map `nu_H` is birational onto its image in characteristic zero. Indeed,
@@ -267,6 +308,7 @@ Run:
 
 ```bash
 .venv/bin/python scripts/verify_generic_discriminant_geometry.py
+.venv/bin/python scripts/verify_universal_discriminant_incidences.py
 ```
 
 The verifier checks the uniform incidence-dimension formulas and tangent-chord
