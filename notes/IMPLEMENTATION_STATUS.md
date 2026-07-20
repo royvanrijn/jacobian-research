@@ -10,6 +10,9 @@ This document uses three distinct kinds of support:
 3. **Regression test:** exact bounded-degree examples test an implementation
    and guard the uniform argument against algebraic mistakes; they do not
    establish the all-degree quantifier.
+4. **External formal certificate:** a separately authored proof-assistant
+   project is fetched at an immutable revision and checked with its pinned
+   toolchain; authorship and scope remain those of the upstream project.
 
 Unless explicitly called an executable certificate, the all-degree statements
 below have status (2), generally accompanied by support of type (1) for key
@@ -19,6 +22,10 @@ identities and type (3) in selected degrees.
 
 - Two independent implementations verify `det DF = -2`, the three-point
   rational collision, and coordinate degrees `(7,6,4)`.
+- Dean Cureton's separately authored Lean 4 project formally proves the
+  determinant and collision, a determinant-one rescaling over every field,
+  and the complex specialization. `make verify-lean-c01` reproduces the
+  pinned external build; see [LEAN_C01](LEAN_C01.md).
 - The dependency-free verifier uses standard-library rational arithmetic and
   its own sparse polynomial representation.
 - The primitive cubic, rational reconstruction, and discriminant identity are

@@ -35,6 +35,23 @@ F_3&=2x-3x^2y-x^3z,
 the determinant `-2`, and the same three-point collision stored here. This
 agrees with the repository's independent finite certificates.
 
+## Lean formalization
+
+[Dean Cureton's `deancureton/jacobian`](https://github.com/deancureton/jacobian)
+provides a separately authored Lean 4 formalization.  Commit
+[`0d4a9212d874226ad81ce5a926becddfa94e6a88`](https://github.com/deancureton/jacobian/commit/0d4a9212d874226ad81ce5a926becddfa94e6a88),
+authored 20 July 2026, proves the determinant and three rational evaluations
+for the displayed map, then proves a determinant-one rescaling noninjective
+over every field and specializes the result to `C`.  Its README credits
+“Levent Alpöge/Fable 5's counterexample”; this repository credits Cureton for
+the formalization and does not infer discovery priority from the later proof.
+
+The audited commit has no license file.  The integration therefore records
+authorship and an immutable source link and supplies a target that builds the
+upstream checkout, rather than copying or adapting its Lean source.  See
+[LEAN_C01](LEAN_C01.md) for the theorem-by-theorem scope and reproduction
+instructions.
+
 ## Later exposition, not discovery provenance
 
 Gallagher's page explicitly distinguishes the externally announced map from

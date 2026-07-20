@@ -28,7 +28,9 @@ the associated finite-field Chebotarev law.
 ### Proof status
 
 The foundational three-dimensional counterexample has direct executable
-certificates.  The all-degree weighted-family results are conventional
+certificates and a separately authored Lean 4 formalization by Dean Cureton;
+see [External Lean formalization of C01](notes/LEAN_C01.md).  The all-degree
+weighted-family results are conventional
 mathematical theorems proved by uniform written arguments: irreducibility of
 `H(W)-sW+t`, birational normalization of the discriminant, transitivity plus
 local transpositions for `S_n`, Mason--Stothers separation, weighted
@@ -125,6 +127,12 @@ counterexamples in every dimension at least three. The coordinate degrees are
 The determinant also has two executable checks: one with SymPy and one with an
 independent standard-library sparse-polynomial implementation.  No global
 geometry or family theorem is needed for this minimal certificate.
+
+Dean Cureton has also formalized this determinant, the explicit collision,
+and a determinant-one rescaling in Lean 4.  The pinned external replication
+target `make verify-lean-c01` builds his proof without vendoring its unlicensed
+source; its exact theorem scope and attribution are recorded in
+[the Lean C01 audit](notes/LEAN_C01.md).
 
 ## 2. Marked-root inverse model and reconstruction
 

@@ -5,7 +5,8 @@ SYSTEM_PYTHON ?= python3
 
 .PHONY: check verify verify-logged verify-minimal verify-core verify-geometry \
 	verify-theorems verify-regressions verify-derived verify-family \
-	verify-quartic verify-normal-forms scan-weighted-seeds
+	verify-quartic verify-normal-forms verify-formal verify-lean-c01 \
+	scan-weighted-seeds
 
 check:
 	$(PYTHON) -m compileall -q jcsearch scripts
@@ -72,6 +73,14 @@ verify-normal-forms:
 	$(PYTHON) scripts/verify_cubic_linear_counterexample.py
 
 verify-derived: verify-normal-forms
+
+# Optional formal replication. This fetches Dean Cureton's separately authored
+# Lean project at the audited commit recorded in notes/LEAN_C01.md; it is kept
+# out of the default target because it downloads a pinned Lean/mathlib toolchain.
+verify-lean-c01:
+	bash scripts/verify_lean_c01.sh
+
+verify-formal: verify-lean-c01
 
 verify: check verify-core verify-theorems verify-regressions verify-derived
 

@@ -19,6 +19,8 @@ formal derivations of its universal quantifier.
 - [x] Audit every stored restatement of the map for signs and coordinate order.
 - [x] Give the hand-checkable structural determinant proof through the
   `(t,r,c)` inverse chart.
+- [x] Locate, scope, credit, pin, and reproduce Dean Cureton's external Lean 4
+  formalization of the determinant and collision (`make verify-lean-c01`).
 - [ ] Reproduce the certificate in an unrelated computer algebra system.
 
 ## 2. Cubic inverse and boundary geometry

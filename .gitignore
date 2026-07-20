@@ -16,6 +16,7 @@ __pycache__/
 .ruff_cache/
 .coverage
 htmlcov/
+.cache/
 
 # Reproducible verification logs are generated locally and uploaded by CI.
 artifacts/verification/

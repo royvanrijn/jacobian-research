@@ -11,6 +11,12 @@ materials that have not yet been located.
 - [The Jacobian counterexample, explained](https://jacobianfun.org/jacobian-explained):
   exact map, checks, weighted coordinates, inverse cubic, and proposed seed
   family.
+- [Dean Cureton, `deancureton/jacobian`](https://github.com/deancureton/jacobian),
+  pinned here at commit
+  [`0d4a9212d874226ad81ce5a926becddfa94e6a88`](https://github.com/deancureton/jacobian/commit/0d4a9212d874226ad81ce5a926becddfa94e6a88):
+  external Lean 4 formalization of the determinant, collisions, unit-Jacobian
+  counterexample, and complex specialization. See [LEAN_C01](LEAN_C01.md) for
+  theorem scope, reproduction, attribution, and the no-license source boundary.
 - [Bass, Connell, and Wright, The Jacobian Conjecture: Reduction of Degree and
   Formal Expansion of the Inverse](https://doi.org/10.1090/S0273-0979-1982-15032-7):
   classical reduction to cubic-homogeneous form.
