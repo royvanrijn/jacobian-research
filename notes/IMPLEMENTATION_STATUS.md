@@ -42,6 +42,10 @@
   saturation exponent, boundary trace, direct fibers, and escaping-branch
   rates are determined by the complete root-multiplicity profile, including
   nonsplit factors.
+- Universal `S_n` monodromy now yields a good-reduction finite-field
+  Chebotarev theorem: degree-`n` fiber sizes converge to the fixed-point law of
+  `S_n`, with target counts `p_{n,j}q^3+O(q^(5/2))` and limiting image density
+  `1-D_n/n!`.
 - A bounded scan of 627 weighted seeds is exploratory and explicitly separated
   from theorem-level claims.
 
@@ -64,5 +68,5 @@
   now have exact certificates.
 - Audit the stable-equivalence steps and external implication theorems against
   their primary sources.
-- Derive finite-field Chebotarev distributions from the universal `S_n`
-  theorem, separating good reduction from exact small-characteristic cases.
+- Make the good-prime exclusion effective for individual seeds and compute
+  exact corrections for selected higher-degree small-characteristic models.

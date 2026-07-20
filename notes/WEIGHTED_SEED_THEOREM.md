@@ -140,6 +140,10 @@ Chebotarev; it does not by itself prove an exact formula for every finite
 field. Bad characteristics, boundary fibers, and exact error terms remain a
 separate arithmetic step.
 
+The good-reduction asymptotic, its `S_n` fixed-point probabilities, and the
+transfer from the pencil to the three-dimensional target are proved in
+`FINITE_FIELD_CHEBOTAREV.md`.
+
 Run the finite-degree exact audit with:
 
 ```bash

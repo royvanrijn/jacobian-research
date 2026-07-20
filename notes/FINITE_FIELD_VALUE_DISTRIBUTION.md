@@ -339,6 +339,11 @@ the cubic inverse model plus the affine boundary chart. It therefore provides a
 concrete comparison point for general work on value sets of polynomial maps and
 for current work deriving finite-field distributions from monodromy.
 
+That general derivation is now given in
+`FINITE_FIELD_CHEBOTAREV.md`: every good reduction of an inverse-degree-`n`
+weighted seed has the limiting fixed-point law of `S_n`, while the formulas in
+this note retain the stronger exact corrections in every characteristic.
+
 Two useful points of comparison are:
 
 - Gary L. Mullen, Daqing Wan, and Qiang Wang, [*Value sets of polynomial maps

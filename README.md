@@ -118,6 +118,9 @@ Fibers have `3`, `1`, and `0` affine points respectively on `Q != 0`, on
 - Exact discriminant saturation and boundary strata for repeated, including
   nonsplit, extra primitive roots:
   [REPEATED_ROOT_BOUNDARY.md](notes/REPEATED_ROOT_BOUNDARY.md).
+- Good-reduction finite-field fiber laws from universal `S_n` monodromy and
+  Chebotarev:
+  [FINITE_FIELD_CHEBOTAREV.md](notes/FINITE_FIELD_CHEBOTAREV.md).
 - Explicit 95-dimensional cubic-homogeneous and 510-dimensional Drużkowski
   counterexamples:
   [CUBIC_HOMOGENEOUS_REDUCTION.md](notes/CUBIC_HOMOGENEOUS_REDUCTION.md) and

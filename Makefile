@@ -27,6 +27,7 @@ verify-quartic:
 	$(PYTHON) scripts/verify_deformed_seed_boundary.py
 	$(PYTHON) scripts/verify_omitted_value_classification.py
 	$(PYTHON) scripts/verify_repeated_root_boundary.py
+	$(PYTHON) scripts/verify_weighted_chebotarev.py
 	$(PYTHON) scripts/verify_quartic_weighted_map.py
 	$(PYTHON) scripts/verify_quartic_discriminant.py
 	$(PYTHON) scripts/verify_quartic_monodromy.py

@@ -47,6 +47,8 @@ G(1,0,0)=G(-1,0,2)=(0,0,1).
 - [x] Boundary and image theorem for one additional simple primitive zero.
 - [x] Omitted-value classification for several or repeated extra zeros.
 - [x] Boundary saturation theorem for repeated extra zeros.
+- [x] Good-reduction finite-field Chebotarev law from universal `S_n`
+  monodromy.
 
 ## Quartic inverse on `C!=0`
 
