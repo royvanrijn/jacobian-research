@@ -12,8 +12,11 @@ verify-minimal:
 
 verify-core: verify-minimal
 	$(PYTHON) scripts/verify_counterexample.py
+	$(PYTHON) scripts/audit_map_consistency.py
 	$(PYTHON) scripts/cubic_model.py
 	$(PYTHON) scripts/image_nonproperness.py
+	$(PYTHON) scripts/verify_exceptional_fibers.py
+	$(PYTHON) scripts/verify_image_nonproperness_inclusions.py
 
 verify-search:
 	$(PYTHON) scripts/validate_ladder.py

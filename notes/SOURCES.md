@@ -4,6 +4,10 @@ Accessed 20 July 2026. Because the announcement is same-day, sources are split
 between exact certificates and background; none should yet be treated as settled
 historical attribution.
 
+See [PROVENANCE_AUDIT.md](PROVENANCE_AUDIT.md) for the dated announcement
+trail, the timestamp discrepancy between same-day sources, and the discovery
+materials that have not yet been located.
+
 - [The Jacobian counterexample, explained](https://jacobianfun.org/jacobian-explained):
   exact map, checks, weighted coordinates, inverse cubic, and proposed seed
   family.

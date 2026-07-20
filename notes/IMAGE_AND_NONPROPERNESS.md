@@ -103,7 +103,38 @@ after replacing the generators by a lexicographic Groebner basis.  Its radical
 is `(3bc-4,12a-b^2)`, so `Gamma` is exactly the singular locus of `V(Q)`.
 
 Run `.venv/bin/python scripts/image_nonproperness.py` for the exact symbolic
-certificates used above.
+certificates used above. The complementary
+`.venv/bin/python scripts/verify_exceptional_fibers.py` makes the complete
+degeneration case split executable: `c!=0` double/triple roots, `c=0` finite
+quadratic roots, the simple projective root at infinity, and every denominator
+in both reconstruction charts.
+
+## Denominator-safe inclusion audit
+
+The complementary script
+`.venv/bin/python scripts/verify_image_nonproperness_inclusions.py` verifies
+both image inclusions and both nonproperness inclusions using the following
+exhaustive chart split:
+
+| Source/root chart | Condition | Outcome |
+|---|---|---|
+| affine `x=0` | exactly over `c=0` | the finite point `(0,b,a-4b^2)` |
+| finite root `t` | `P'(t)!=0` | one finite `x!=0` source point |
+| finite root `t` | `P'(t)=0` | the escaping boundary divisor over `V(Q)` |
+| projective root `t=infinity` | necessarily `c=0` | regular `s=1/t` branch returning to `x=0` |
+
+This split checks the strata that raw denominator clearing could mishandle.
+The elimination of the finite boundary is `(Q)`, but that fact is not used
+alone: off `Gamma` its rational inverse is checked modulo `Q`; the failed
+inverse denominator is handled explicitly by the triple-root parameter on
+`Gamma`; and the leading-coefficient slice `c=0`, `a=b^2/16` is reached by
+`t=b/4`. Conversely, every boundary parameter satisfies `Q=0`, so the
+elimination introduces no extraneous target stratum.
+
+For nonproperness, every repeated-root parameter supplies an exact punctured
+escape path with `x=2/P'(t)`. Outside `V(Q)`, finite roots have `P'` invertible,
+while the only possible root at infinity lies in the regular `s` chart above.
+Thus no unexamined projective-root direction remains.
 
 ## Boundary normalization and lost sheets
 

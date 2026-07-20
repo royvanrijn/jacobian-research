@@ -284,9 +284,12 @@ make verify
 ```bash
 python3 scripts/verify_counterexample_independent.py
 .venv/bin/python scripts/verify_counterexample.py
+.venv/bin/python scripts/audit_map_consistency.py
 .venv/bin/python scripts/rediscover_3d_chart.py
 .venv/bin/python scripts/cubic_model.py
 .venv/bin/python scripts/image_nonproperness.py
+.venv/bin/python scripts/verify_exceptional_fibers.py
+.venv/bin/python scripts/verify_image_nonproperness_inclusions.py
 .venv/bin/python scripts/weighted_lift.py
 ```
 
@@ -433,7 +436,8 @@ The script supports bounded modular runs through `--run`, `--prime`, and
   `NEWTON_BAND_STAGE_D`.
 - Current large-degree boundary: `NEWTON_9_27_REGRESSION`,
   `DEGREE_72_108_STATUS`.
-- Claim boundaries and provenance: `IMPLEMENTATION_STATUS`, `SOURCES`.
+- Claim boundaries and provenance: `IMPLEMENTATION_STATUS`, `SOURCES`,
+  `PROVENANCE_AUDIT`.
 
 ## Current research boundary
 

@@ -17,12 +17,13 @@ Labels used below:
 1. **Independent minimal certificate.** Remove the single-algebra-engine
    failure mode from the determinant, collision, and degree checks. Implemented
    below with a dependency-free sparse-polynomial verifier.
-2. **Provenance and formula audit.** Establish the primary source and compare
-   every repository occurrence of the map mechanically, including signs,
-   coordinate order, and normalization.
-3. **Independent exceptional-stratum geometry.** Reprove the image,
-   nonproperness, and fibre statements without silently restricting to the
-   generic rational reconstruction chart.
+2. **Provenance and formula audit.** The public announcement trail and every
+   inventoried direct map restatement have now been audited. Original prompts,
+   discovery code, seeds, intermediate candidates, and an archived primary
+   timestamp remain unavailable.
+3. **Independent exceptional-stratum geometry.** The full inverse-cubic
+   degeneration case split and denominator-safe image/nonproperness inclusions
+   are now executable. The singular-locus/normalization audit remains separate.
 4. **Normal-form artifact audit.** Add the 95D and 510D independent verifiers to
    the declared regression suite, then audit the cited stable-equivalence steps.
 5. **Published 2D reduction audit.** Verify the reductions preceding the
@@ -72,10 +73,12 @@ homotopy benchmarks, and broad `(72,108)` builders).
 
 ## 1. Establish a trustworthy baseline
 
-- [ ] **Verify** the provenance of the displayed 3D map: locate the earliest
-  primary source, original search code or prompt if available, timestamps,
-  random seeds, and intermediate candidates. Keep same-day exposition distinct
-  from a citable or peer-reviewed source.
+- [ ] **Verify** the complete provenance of the displayed 3D map. The earliest
+  located public trail, attribution, exact formula, and timestamp discrepancy
+  are recorded in `PROVENANCE_AUDIT.md`; original prompts, discovery code,
+  seeds, intermediate candidates, and an archived primary timestamp remain
+  unavailable. Keep same-day exposition distinct from a citable or
+  peer-reviewed source.
 - [ ] **Verify** repository integrity before treating results as archival.
   Record a commit, Python/Julia/msolve versions, platform, commands, runtimes,
   and hashes for retained certificates and generated large artifacts.
@@ -105,9 +108,10 @@ msolve, Julia, generated artifacts, or external literature.
   distinctness directly from the displayed formula. These two checks alone are
   the minimal counterexample certificate. Reproduced exactly by
   `verify_counterexample.py` in the current run.
-- [ ] **Verify** that the formula used by every script and note is identical,
-  including signs, output order, determinant normalization, and coordinate
-  degrees `(7,6,4)`.
+- [x] **Verify** that every inventoried direct restatement of the formula agrees
+  in signs and output order. `audit_map_consistency.py` checks the Python, Julia,
+  finite-field, dependency-free, README, and facts-ledger forms mechanically;
+  normalization remains explicit only where a derived construction applies it.
 - [x] **Verify** the primitive cubic identities and rational reconstruction.
   These exact identities were reproduced by `cubic_model.py`.
 - [ ] **Verify** generic degree three independently. Separate what follows from
@@ -126,12 +130,17 @@ large generated artifact.
 - [ ] **Verify** irreducibility of `Q`, its nonsquare discriminant class, and
   the resulting non-normal cubic extension with `S_3` Galois closure over the
   function field. Make every characteristic and base-field assumption explicit.
-- [ ] **Verify** the fibre classification on all exceptional cases, especially
-  `c=0`, degree drops of the cubic, repeated roots, and points where the rational
-  reconstruction formula has a pole.
-- [ ] **Verify** both inclusions in
+- [x] **Verify** the fibre classification on all exceptional inverse-cubic
+  cases. `verify_exceptional_fibers.py` covers `c!=0` double and triple roots,
+  the always-quadratic `c=0` finite part, its simple projective root at infinity,
+  the regular `x=0` extension, representative cardinalities `3/1/0`, and proves
+  that reconstruction poles are exactly repeated finite roots.
+- [x] **Verify** both inclusions in
   `F(C^3) = C^3 \ Gamma` and both inclusions in `S_F = V(Q)`; check that no
   affine or boundary stratum is lost by clearing a denominator.
+  `verify_image_nonproperness_inclusions.py` exhausts the `x=0`, finite-simple,
+  finite-repeated, and projective-infinity charts and separately checks the
+  generic discriminant, `c=0`, and `Gamma` strata.
 - [ ] **Verify** that `Gamma` is exactly the singular locus of `V(Q)` and that
   the proposed boundary parameterization is its normalization.
 - [ ] **Discover** a full resolution of the rational extension between suitable
