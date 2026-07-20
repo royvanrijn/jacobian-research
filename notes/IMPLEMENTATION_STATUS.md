@@ -30,6 +30,10 @@
   nonproperness theorem: the inverse-degree-three and four members have one
   omitted curve each, all inverse degrees at least five are surjective, and
   the `C=0` boundary fibers and saturation factors are explicit.
+- Boundary-clean deformed seeds now have a uniform `C=0` fiber and
+  nonproperness theorem. The complete one-extra-simple-zero family has an
+  explicit omitted double-double curve, including its quadruple-root
+  degeneration.
 - A bounded scan of 627 weighted seeds is exploratory and explicitly separated
   from theorem-level claims.
 
@@ -52,5 +56,5 @@
   now have exact certificates.
 - Audit the stable-equivalence steps and external implication theorems against
   their primary sources.
-- Extend the image and nonproperness theorem to deformed seeds, keeping every
-  additional primitive-zero boundary branch explicit.
+- Extend the explicit omitted-value classification from one extra simple zero
+  to several extra zeros and then to repeated extra zeros.

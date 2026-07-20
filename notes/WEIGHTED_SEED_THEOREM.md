@@ -124,7 +124,9 @@ monodromy alone:
 For the canonical family `H_d(W)=W^d(1-W)`, the only primitive zeros are the
 distinguished points `0` and `1`. Its global geometry is now proved in
 `CANONICAL_FAMILY_IMAGE.md`. Deformed seeds should be treated afterward
-because their extra primitive zeros create additional `C=0` branches.
+because their extra primitive zeros create additional `C=0` branches. The
+boundary-clean case and the full one-extra-simple-zero family are treated in
+`DEFORMED_SEED_BOUNDARY.md`.
 
 ## Finite-field interpretation
 

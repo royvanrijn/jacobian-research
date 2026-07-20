@@ -109,6 +109,9 @@ Fibers have `3`, `1`, and `0` affine points respectively on `Q != 0`, on
 - Exact images and nonproperness sets for the full canonical family
   `H_d(W)=W^d(1-W)`:
   [CANONICAL_FAMILY_IMAGE.md](notes/CANONICAL_FAMILY_IMAGE.md).
+- Boundary geometry and the exact image theorem for deformations with one
+  additional simple primitive zero:
+  [DEFORMED_SEED_BOUNDARY.md](notes/DEFORMED_SEED_BOUNDARY.md).
 - Explicit 95-dimensional cubic-homogeneous and 510-dimensional Drużkowski
   counterexamples:
   [CUBIC_HOMOGENEOUS_REDUCTION.md](notes/CUBIC_HOMOGENEOUS_REDUCTION.md) and

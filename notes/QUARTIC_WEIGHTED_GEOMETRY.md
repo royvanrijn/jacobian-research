@@ -44,7 +44,8 @@ G(1,0,0)=G(-1,0,2)=(0,0,1).
   theorem for arbitrary characteristic-zero seeds.
 - [x] Generalization of the image and nonproperness statements to the
   canonical family.
-- [ ] Extension to seeds with extra primitive zeros.
+- [x] Boundary and image theorem for one additional simple primitive zero.
+- [ ] Omitted-value classification for several or repeated extra zeros.
 
 ## Quartic inverse on `C!=0`
 
