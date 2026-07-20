@@ -126,18 +126,60 @@ for degree in range(3, 11):
 # parts, whereas every m>=4 can.  For two distinct maximal stratum types,
 # Mason--Stothers gives
 # n <= ell(lambda)+ell(mu), but the combinatorics gives a strict deficit.
+component_counts = []
 for degree in range(3, 51):
     maximal = maximal_two_three_partitions(degree)
-    assert set(maximal) == {
+    permitted = {
         partition
         for partition in restricted_partitions(degree)
         if set(partition) <= {2, 3}
     }
+    assert set(maximal) == permitted
+    component_counts.append(len(maximal))
+    cutoff = degree // 3
+    explicit_count = (
+        cutoff // 2 + 1 if degree % 2 == 0 else (cutoff + 1) // 2
+    )
+    assert len(maximal) == explicit_count
+    assert min(
+        exceptional_stratum_codimension(degree, partition)
+        for partition in maximal
+    ) == (degree + 1) // 2 - 2
+    if degree <= 14:
+        all_partitions = tuple(restricted_partitions(degree))
+        for maximal_partition in maximal:
+            coarsenings = tuple(
+                partition
+                for partition in all_partitions
+                if collision_precedes(maximal_partition, partition)
+            )
+            for outside_partition in all_partitions:
+                if collision_precedes(maximal_partition, outside_partition):
+                    continue
+                assert all(
+                    affine_difference_mason_defect(
+                        outside_partition, coarsening
+                    )
+                    >= 1
+                    for coarsening in coarsenings
+                )
     for index, left_partition in enumerate(maximal):
         for right_partition in maximal[index + 1 :]:
             assert affine_difference_mason_defect(
                 left_partition, right_partition
             ) >= 1
+            if degree <= 14:
+                for coarsening in restricted_partitions(degree):
+                    if collision_precedes(right_partition, coarsening):
+                        assert affine_difference_mason_defect(
+                            left_partition, coarsening
+                        ) >= 1
+
+z = sp.symbols("z")
+component_series = sp.series(1 / ((1 - z**2) * (1 - z**3)), z, 0, 51).removeO()
+assert component_counts == [
+    sp.expand(component_series).coeff(z, degree) for degree in range(3, 51)
+]
 
 # The uniform two-omission API exposes the equation requested by the theorem.
 two_omission_six = two_omission_incidence(6, (2, 2, 2), (3, 3))
@@ -246,6 +288,7 @@ print("PASS: weighted Newton coefficients give the all-degree rank theorem")
 print("PASS: every full-contact stratum has dimension ell(lambda)-1")
 print("PASS: collision merging is a partial order and gives every closure inclusion")
 print("PASS: Mason excludes all off-collision pairs of maximal 2/3 partitions")
+print("PASS: component counts and total codimension have the uniform closed forms")
 print("PASS: degree eight has maximal candidates (2,2,2,2) and (3,3,2)")
 print("PASS: their closures share (6,2), with deeper boundary (8)")
 print("PASS: their exact degree-eight intersection has no off-diagonal points")

@@ -110,6 +110,11 @@ repository; it does not by itself claim independent replication.
   `Phi_(2^a 3^b)` hypersurface.
 - [x] Deduce that maximal 2/3 partitions index the irreducible components of
   the exceptional-locus closure.
+- [x] Derive the component dimensions, total exceptional codimension
+  `ceil(n/2)-2`, component-count generating function, and exact
+  common-coarsening intersection formula.
+- [ ] Determine the scheme-theoretic component intersections, embedded
+  components, and collision multiplicities.
 - [ ] Reconcile the proof fully with the precise hypotheses of the classical
   projective-duality literature.
 

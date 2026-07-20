@@ -18,9 +18,10 @@ The same construction belongs to a weighted family controlled by the
 one-variable pencil `H(W)-sW+t`. For this family the repository proves full
 symmetric monodromy, a generic nodal-cuspidal discriminant theorem in every
 degree, generic surjectivity from inverse degree five onward, a complete
-contact-partition description of omitted values, and the associated
-finite-field Chebotarev law. Every main algebraic claim has an executable exact
-certificate or an explicitly identified external theorem input.
+contact-partition and irreducible-component theorem for exceptional seeds, and
+the associated finite-field Chebotarev law. Every main algebraic claim has an
+executable exact certificate or an explicitly identified external theorem
+input.
 
 ## 1. Main theorem
 
@@ -175,7 +176,8 @@ The main references are
 ## 5. Contact partitions and exceptional seeds
 
 An omitted value on `C!=0` occurs exactly when every root of the inverse
-polynomial is multiple. For a full contact partition
+polynomial is multiple. Let `A_n` be the normalized admissible seed space;
+it has dimension `n-3`. For a full contact partition
 
 \[
 \lambda=(\lambda_1,\ldots,\lambda_k),
@@ -196,36 +198,195 @@ all diagonals and weighted-admissibility factors, and returns the exact
 coefficient-space elimination presentation. It also supports partial contact
 with a residual factor.
 
-The first exceptional parameter spaces are now explicit:
+Let `N_n` be the nonsurjective seed locus and `E_lambda` the image of the
+exact full-contact incidence of type `lambda`. The complete incidence
+classification is
 
-- Degree five: the `(3,2)` incidence recovers the established polynomial
-  `F(R,P)` up to the scalar `5/64`.
-- Degree six: the main `(2,2,2)` locus is an irreducible rational quartic
-  surface; the exact `(2,2,2)` and `(3,3)` strata are disjoint and their
-  closures meet exactly along the `(6)` collision boundary.
-- Degree seven: the leading `(3,2,2)` locus has codimension two in normalized
-  seed space. Hence nonsurjectivity is not detected by a single coefficient
-  equation.
-- In every degree, the exceptional locus is the union of the full-contact
-  strata, with
+\[
+\mathcal N_n=
+\bigcup_{\substack{\lambda\vdash n\\\lambda_i\ge2}}\mathcal E_\lambda,
+\qquad
+\dim\mathcal E_\lambda=\ell(\lambda)-1,
+\qquad
+\operatorname{codim}_{\mathcal A_n}\mathcal E_\lambda
+=n-\ell(\lambda)-2.
+\]
 
-  \[
-  \dim E_\lambda=\ell(\lambda)-1,
-  \qquad
-  \operatorname{codim}_{\mathcal A_n}E_\lambda=n-\ell(\lambda)-2.
-  \]
+### Main theorem
 
-  The proof is a weighted-Vandermonde rank calculation on the top
-  coefficients of `M_lambda`.
-- Degree eight tests the proposed component poset: the maximal candidates
-  `(2,2,2,2)` and `(3,3,2)` share the `(6,2)` collision boundary and have no
-  exact off-diagonal intersection.
-- In all degrees, merging parts defines a collision partial order with
-  `E_mu` contained in the closure of `E_lambda` whenever `lambda<=mu`.
-  Mason--Stothers excludes every off-collision two-omission incidence between
-  distinct maximal 2/3 partitions. The maximal root hypersurfaces are
-  uniformly irreducible, so the irreducible components of the exceptional-
-  locus closure are indexed exactly by partitions using only twos and threes.
+For every pair `(a,b)` of nonnegative integers satisfying `2a+3b=n`, let
+
+\[
+\mathcal C_{a,b}=\overline{\mathcal E_{2^a3^b}}.
+\]
+
+Equivalently, `C_(a,b)` is the closure of the stratum whose full-contact
+polynomial has the form
+
+\[
+M=Q^2R^3,
+\qquad \deg Q=a,
+\qquad \deg R=b.
+\]
+
+Write `C_lambda=C_(a,b)` for `lambda=2^a3^b`. The result has three parts.
+
+**Component classification.**
+
+\[
+\boxed{
+\operatorname{Irr}\bigl(\overline{\mathcal N_n}\bigr)
+=\left\{\mathcal C_\lambda:
+\lambda\vdash n,\ \lambda_i\in\{2,3\}\right\}.}
+\]
+
+**Closure order.** Define `lambda<=nu` when `nu` is obtained from `lambda` by
+merging parts. For every full-contact partition `nu`,
+
+\[
+\boxed{
+\mathcal E_\nu\subseteq\mathcal C_\lambda
+\quad\Longleftrightarrow\quad
+\lambda\preceq\nu.}
+\]
+
+**Intersection formula.** For maximal 2/3 partitions `lambda` and `mu`,
+set-theoretically inside `A_n`,
+
+\[
+\boxed{
+\mathcal C_\lambda\cap\mathcal C_\mu
+=\bigcup_{\substack{\lambda\preceq\nu\\\mu\preceq\nu}}
+\mathcal E_\nu.}
+\]
+
+In short: the irreducible components are indexed by 2/3 partitions, their
+boundary strata by arbitrary partitions with parts at least two, and every
+component intersection is determined by common coarsening. The theorem is
+set-theoretic; scheme-theoretic intersections, embedded components, and
+intersection multiplicities are separate questions.
+
+### Dimension theorem
+
+The root support has dimension `a+b`, and endpoint normalization imposes one
+equation. Therefore
+
+\[
+\dim\mathcal C_{a,b}=a+b-1.
+\]
+
+Since `dim A_n=n-3`,
+
+\[
+\operatorname{codim}_{\mathcal A_n}\mathcal C_{a,b}
+=n-a-b-2=a+2b-2.
+\]
+
+Maximizing `a+b` means minimizing the number of triple parts. Hence the full
+nonsurjective locus has
+
+\[
+\boxed{
+\operatorname{codim}_{\mathcal A_n}\overline{\mathcal N_n}
+=\left\lceil{n\over2}\right\rceil-2.}
+\]
+
+There is a unique top-dimensional component: it is indexed by all double
+parts when `n` is even, and by one triple part with all remaining parts double
+when `n` is odd. Whenever further representations `2a+3b=n` exist, they give
+genuine lower-dimensional components; the exceptional locus is then not
+equidimensional.
+
+The codimension formula also explains the sharp degree transition in the
+image theorem. The exceptional closure has codimension zero in degrees three
+and four, codimension one in degree five, and increasing codimension
+thereafter. Thus generic surjectivity begins exactly at inverse degree five
+for structural, rather than case-specific, reasons.
+
+### Universal equation and irreducibility
+
+For a maximal partition `lambda=2^a3^b`, write `M=Q^2R^3` as above and set
+
+\[
+x=Q(0),\quad u=Q'(0),\quad X=Q(1),
+\qquad
+y=R(0),\quad v=R'(0),\quad Y=R(1),
+\]
+
+then the normalized incidence equation is universally
+
+\[
+\boxed{
+\Phi_{2^a3^b}
+=X^2Y^3-x^2y^3-2xuy^3-3x^2y^2v.}
+\]
+
+Its irreducibility proof is uniform:
+
+- If `b>=3`, the endpoint coordinates of `R` are independent and `Phi` is
+  primitive linear in `v`.
+- If `a>=3`, `Phi` is primitive quadratic in the independent coordinate `X`;
+  the odd `x`-valuation of its constant term makes the discriminant
+  nonsquare.
+- Only seven endpoint-rank cases lie outside these stable regimes, and each
+  has an explicit linear or nonsquare-discriminant certificate.
+
+### Proof architecture for closures and intersections
+
+Collision gives the forward closure implication:
+
+\[
+\lambda\preceq\mu
+\quad\Longrightarrow\quad
+\mathcal E_\mu\subseteq\overline{\mathcal E_\lambda}.
+\]
+
+Every partition with parts at least two is therefore contained in the closure
+of a maximal 2/3 stratum obtained by splitting its larger parts. Conversely,
+for two distinct maximal components, every intersection point inside `A_n`
+comes from a root collision. There are no off-collision intersections
+supporting two distinct omitted values of different maximal types.
+
+Three facts make this conclusion global: tangent-chord deformation realizes
+every permitted collision closure; weighted Newton sums make recovery of the
+omitted roots from the top coefficients finite, excluding roots escaping at
+the boundary; and polynomial Mason--Stothers excludes the remaining
+off-collision two-omission incidence. These facts prove both the reverse
+closure implication and the common-coarsening intersection formula.
+
+### Number of components
+
+The number of components is the number of representations `n=2a+3b`:
+
+\[
+c_n=\#\left\{b:0\le b\le\left\lfloor n/3\right\rfloor,
+\ b\equiv n\pmod2\right\}.
+\]
+
+If `m=floor(n/3)`, this is
+
+\[
+c_n=
+\begin{cases}
+\left\lfloor m/2\right\rfloor+1,&n\text{ even},\\
+\left\lfloor(m+1)/2\right\rfloor,&n\text{ odd}.
+\end{cases}
+\]
+
+Equivalently,
+
+\[
+\sum_{n\ge0}c_nz^n={1\over(1-z^2)(1-z^3)}.
+\]
+
+Together, these statements give completeness, irreducibility, and
+distinctness of every component in all degrees.
+
+The low-degree calculations remain useful regressions: degree five recovers
+the established `(3,2)` polynomial `F(R,P)`; degree six has the two components
+`(2,2,2)` and `(3,3)` meeting along `(6)`; degree seven first exhibits genuine
+codimension two; and degree eight has components `(2,2,2,2)` and `(3,3,2)`
+meeting along the predicted collision boundary `(6,2)`.
 
 See [Uniform exceptional seeds](notes/UNIFORM_EXCEPTIONAL_SEEDS.md),
 [contact-partition strata](notes/CONTACT_PARTITION_STRATA.md), and

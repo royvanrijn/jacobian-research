@@ -75,6 +75,9 @@
   The proof is primitive-linear for `b>=3`, nonsquare-quadratic for `a>=3`,
   and has seven exact endpoint-rank certificates.  Thus maximal 2/3 types
   index the actual irreducible components of the exceptional-locus closure.
+  Their dimensions are `a+b-1`, the full exceptional codimension is
+  `ceil(n/2)-2`, and component intersections are exactly the common collision
+  coarsenings.
 - A bounded scan of 627 weighted seeds is exploratory and explicitly separated
   from theorem-level claims.
 
@@ -101,3 +104,5 @@
 - Compare the dual-curve incidence proof archivally with classical projective
   duality, then make good-prime exclusions effective for individual seeds and
   eliminate the universal exceptional strata in selected low degrees.
+- Refine the set-theoretic common-coarsening formula to scheme-theoretic
+  intersections, including embedded components and collision multiplicities.

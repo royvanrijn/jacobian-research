@@ -295,7 +295,7 @@ Let `a` be the number of double roots and `b` the number of triple roots.  In
 equal-part quotient coordinates write
 
 \[
-M=Q(W)^2R(W)^3,qquad \deg Q=a,quad\deg R=b.
+M=Q(W)^2R(W)^3,\qquad \deg Q=a,\quad\deg R=b.
 \]
 
 Set
@@ -383,7 +383,7 @@ homogeneous forms are equivalent by Newton identities to the weighted power
 sums
 
 \[
-p_j=\sum_i\lambda_i r_i^j,qquad 1\le j\le\ell.
+p_j=\sum_i\lambda_i r_i^j,\qquad 1\le j\le\ell.
 \]
 
 They have no common projective zero: after grouping equal nonzero root values,
@@ -403,6 +403,55 @@ Consequently,
 \text{ are indexed by the partitions of }n\text{ using only }2\text{ and }3.}
 \]
 
+Writing `C_lambda=closure(E_lambda)` for a maximal 2/3 partition, the closure
+order is exact: for every full-contact partition `nu`,
+
+\[
+\boxed{
+\mathcal E_\nu\subseteq\mathcal C_\lambda
+\quad\Longleftrightarrow\quad
+\lambda\preceq\nu.}
+\]
+
+The forward implication is the collision theorem.  For the converse,
+finiteness of the top-coefficient map turns any limiting factorization into a
+genuine coarsening, while Mason excludes a second omitted value of a
+noncoarsening type.
+
+For `lambda=2^a3^b`, write `C_lambda=closure(E_lambda)`.  The component
+dimensions are
+
+\[
+\dim\mathcal C_\lambda=a+b-1,
+\qquad
+\operatorname{codim}_{\mathcal A_n}\mathcal C_\lambda
+=n-a-b-2=a+2b-2.
+\]
+
+The unique top-dimensional component minimizes `b`, so
+
+\[
+\operatorname{codim}_{\mathcal A_n}\overline{\mathcal N_n}
+=\left\lceil{n\over2}\right\rceil-2.
+\]
+
+The same finiteness and Mason argument gives the set-theoretic intersection
+formula inside `A_n`:
+
+\[
+\mathcal C_\lambda\cap\mathcal C_\mu
+=\bigcup_{\substack{\lambda\preceq\nu\\\mu\preceq\nu}}
+\mathcal E_\nu.
+\]
+
+Indeed, the two limiting omitted polynomials cannot have distinct target
+values by Mason.  They are therefore equal, and their exact multiplicity
+partition is a common coarsening.  The reverse inclusion is the collision-
+closure theorem.
+
+These are set-theoretic statements.  The scheme-theoretic intersections may
+carry multiplicities or embedded components and are not identified here.
+
 In particular, the number of components is
 
 \[
@@ -412,6 +461,18 @@ In particular, the number of components is
 
 where `b` is the number of triple parts and `(n-3b)/2` is the number of
 double parts.
+
+If `m=floor(n/3)`, this count is
+
+\[
+c_n=
+\begin{cases}
+\lfloor m/2\rfloor+1,&n\text{ even},\\
+\lfloor(m+1)/2\rfloor,&n\text{ odd},
+\end{cases}
+\qquad
+\sum_{n\ge0}c_nz^n={1\over(1-z^2)(1-z^3)}.
+\]
 
 ## Executable certificate
 
