@@ -115,6 +115,9 @@ Fibers have `3`, `1`, and `0` affine points respectively on `Q != 0`, on
 - Exact omitted-value classification for arbitrary fixed seeds and a closed
   exceptional-locus equation for two additional simple zeros:
   [OMITTED_VALUE_CLASSIFICATION.md](notes/OMITTED_VALUE_CLASSIFICATION.md).
+- Exact discriminant saturation and boundary strata for repeated, including
+  nonsplit, extra primitive roots:
+  [REPEATED_ROOT_BOUNDARY.md](notes/REPEATED_ROOT_BOUNDARY.md).
 - Explicit 95-dimensional cubic-homogeneous and 510-dimensional Drużkowski
   counterexamples:
   [CUBIC_HOMOGENEOUS_REDUCTION.md](notes/CUBIC_HOMOGENEOUS_REDUCTION.md) and

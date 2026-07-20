@@ -38,6 +38,10 @@
   multiplicity-partition classifier. For two additional simple zeros, one
   explicit coefficient equation detects the exceptional nonsurjective
   subfamily; generic two- and three-extra-root representatives are surjective.
+- Repeated extra primitive roots now have an exact boundary theorem. Their
+  saturation exponent, boundary trace, direct fibers, and escaping-branch
+  rates are determined by the complete root-multiplicity profile, including
+  nonsplit factors.
 - A bounded scan of 627 weighted seeds is exploratory and explicitly separated
   from theorem-level claims.
 
@@ -60,5 +64,5 @@
   now have exact certificates.
 - Audit the stable-equivalence steps and external implication theorems against
   their primary sources.
-- Extend the boundary saturation and direct `C=0` theorem to repeated extra
-  zeros; their omitted values are already covered by the exact classifier.
+- Derive finite-field Chebotarev distributions from the universal `S_n`
+  theorem, separating good reduction from exact small-characteristic cases.

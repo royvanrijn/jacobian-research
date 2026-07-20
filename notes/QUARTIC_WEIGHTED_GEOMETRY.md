@@ -46,7 +46,7 @@ G(1,0,0)=G(-1,0,2)=(0,0,1).
   canonical family.
 - [x] Boundary and image theorem for one additional simple primitive zero.
 - [x] Omitted-value classification for several or repeated extra zeros.
-- [ ] Boundary saturation theorem for repeated extra zeros.
+- [x] Boundary saturation theorem for repeated extra zeros.
 
 ## Quartic inverse on `C!=0`
 

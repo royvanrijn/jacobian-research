@@ -216,3 +216,5 @@ deformations of the actual polynomial map.
 
 The omitted-value problem for several or repeated extra zeros is solved by the
 exact multiplicity-partition classifier in `OMITTED_VALUE_CLASSIFICATION.md`.
+Repeated-root saturation and its additional boundary multiplicities are proved
+in `REPEATED_ROOT_BOUNDARY.md`.
