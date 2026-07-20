@@ -36,6 +36,8 @@ verify-theorems:
 	$(PYTHON) scripts/verify_unique_omitted_value.py
 	$(PYTHON) scripts/verify_component_normalization.py
 	$(PYTHON) scripts/verify_degree12_branch_intersection.py
+	$(PYTHON) scripts/verify_dicritical_divisors.py
+	$(PYTHON) scripts/classify_transfer_block_k2.py
 	$(PYTHON) scripts/verify_omitted_value_classification.py
 	$(PYTHON) scripts/verify_repeated_root_boundary.py
 

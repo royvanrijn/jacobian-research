@@ -229,11 +229,18 @@ The repository proves:
    repeated primitive roots have exact image and boundary theorems.
    ([Claim C06](CLAIMS.md#c06))
 
+The normalized graph compactification has one universal discriminant
+dicritical divisor and explicit Kummer divisors over `C=0` indexed by the
+primitive-root multiplicities of `H`. Their images give the nonproperness set,
+and an omitted value is exactly a fiber supported entirely on the
+discriminant divisor. ([Claim C16](CLAIMS.md#c16))
+
 The main references are
 [the weighted-seed theorem](notes/WEIGHTED_SEED_THEOREM.md),
 [the generic discriminant theorem](notes/GENERIC_DISCRIMINANT_CURVE.md),
 [the canonical image theorem](notes/CANONICAL_FAMILY_IMAGE.md), and
-[the repeated-root boundary theorem](notes/REPEATED_ROOT_BOUNDARY.md).
+[the repeated-root boundary theorem](notes/REPEATED_ROOT_BOUNDARY.md), and
+[the dicritical compactification theorem](notes/DICRITICAL_COMPACTIFICATION.md).
 
 ## 5. Contact partitions and exceptional seeds
 
@@ -517,6 +524,11 @@ two regular fourfold branches over
 colength four, so the branches are quadratically tangent rather than nodal.
 See [the generic degree-twelve local singularity](notes/DEGREE12_LOCAL_SINGULARITY.md).
 ([Claim C12](CLAIMS.md#c12))
+
+The first higher-transfer block is also explicit.  For two simultaneous
+`3Q <-> 2R` transfers at one root, the stronger factorization scheme is finite
+flat of rank four over the reduced quadratic-factor space, with coincident-root
+fiber `k[X,Y]/(X^3,XY,Y^2)`. ([Claim C17](CLAIMS.md#c17))
 
 ### Proof architecture for closures and intersections
 

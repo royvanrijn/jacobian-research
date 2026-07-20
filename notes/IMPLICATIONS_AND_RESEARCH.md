@@ -25,10 +25,10 @@
 - **Normal forms.** Apply affine and triangular changes, tame automorphisms,
   Gröbner/SAGBI reduction, and weighted projective compactification. Determine
   whether degrees `(7,6,4)` or support can be lowered.
-- **Infinity.** The precise nonproperness hypersurface is now `V(Q)` (see
-  `IMAGE_AND_NONPROPERNESS.md`).  Resolve the rational extension to a morphism
-  between compactifications and compute its boundary divisors, dicritical
-  components, and valuations.
+- **Infinity.** The normalized inverse graph and all dicritical prime divisors
+  are classified in `DICRITICAL_COMPACTIFICATION.md`. Compute a minimal
+  explicit blow-up sequence, discrepancies, and the full boundary intersection
+  graph, then compare it with the normalized-graph model.
 - **Topology.** Root meridians now explicitly give transpositions generating
   `S_3` (see `IMAGE_AND_NONPROPERNESS.md`).  Compute a presentation of the full
   fundamental group of the discriminant complement and its action, and compare

@@ -34,8 +34,10 @@ formal derivations of its universal quantifier.
   transposition monodromy algebraically.
 - [ ] Recheck irreducibility, normalization, and `S_3` monodromy in a second
   proof environment.
-- [ ] Resolve the rational extension between compactifications and inventory
-  every boundary divisor and dicritical component.
+- [x] Construct the normalized inverse-graph compactification and classify
+  every dicritical prime responsible for nonproperness and omission.
+- [ ] Compute an explicit minimal blow-up sequence and discrepancies for that
+  normalized graph model.
 
 ## 3. Weighted-seed theorem
 
@@ -136,6 +138,10 @@ formal derivations of its universal quantifier.
   equal-multiplicity orbit-type ambiguity in degree fourteen.
 - [x] Compute the generic completed-local fiber product, conductor, and
   transverse multiplicity four for `C_(3,2)` along `E_(6,6)`.
+- [x] Classify the stronger two-transfer block `Z_2`, including its rank-four
+  flat structure and non-Gorenstein coincident-root fiber.
+- [ ] Prove the affine-difference jet upper bound for the actual `k=2` branch
+  intersection and classify the blocks `Z_k` for `k>=3`.
 - [ ] Determine ramification divisors, conductors, and scheme-theoretic branch
   multiplicities of the remaining component normalizations.
 - [x] Verify the threshold-`r` atom set `{r,...,2r-1}` and automatic abc bound
