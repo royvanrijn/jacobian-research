@@ -113,6 +113,16 @@ repository; it does not by itself claim independent replication.
 - [x] Derive the component dimensions, total exceptional codimension
   `ceil(n/2)-2`, component-count generating function, and exact
   common-coarsening intersection formula.
+- [x] Prove the contact-atom principle: `{2,3}` are the indecomposable allowed
+  contact orders, and every higher multiplicity is their collision boundary.
+- [x] Strengthen Mason separation to every pair of distinct full-contact
+  partitions using the excess identity.
+- [x] Close the even-degree all-double equality case and prove that every seed
+  has at most one omitted inverse-pencil value.
+- [x] Upgrade the exceptional-locus union to the disjoint exact-partition
+  stratification `N_n = disjoint_union E_lambda`.
+- [x] Verify the threshold-`r` atom set `{r,...,2r-1}` and automatic abc bound
+  for `r>=3`.
 - [ ] Determine the scheme-theoretic component intersections, embedded
   components, and collision multiplicities.
 - [ ] Reconcile the proof fully with the precise hypotheses of the classical

@@ -112,6 +112,12 @@ pair it returns the cleared numerators of `s_i-s_j` and `t_i-t_j`:
 This avoids conflating a coarser root partition of one inverse polynomial
 with a seed having two different omitted targets.
 
+The unique omitted-value theorem proves that the distinct-target
+Rabinowitsch locus is empty in every degree.  The simultaneous API remains a
+useful exact presentation of that emptiness and of common-value collision
+boundaries.  Consequently the exact `E_lambda` form a disjoint stratification
+of the nonsurjective seed locus.
+
 For two partitions, `two_omission_incidence` additionally returns the uniform
 affine-difference presentation
 

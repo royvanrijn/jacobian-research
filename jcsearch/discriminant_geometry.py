@@ -347,6 +347,44 @@ def maximal_two_three_partitions(degree: int):
     return tuple(sorted(partitions, reverse=True))
 
 
+def contact_semigroup_atoms(minimum_multiplicity=2):
+    """Atoms of the additive contact semigroup ``{m >= r}``.
+
+    An allowed multiplicity is indecomposable into two allowed summands
+    exactly when it lies in ``r,...,2*r-1``.
+    """
+    minimum_multiplicity = int(minimum_multiplicity)
+    if minimum_multiplicity < 2:
+        raise ValueError("the contact threshold must be at least two")
+    return tuple(range(minimum_multiplicity, 2 * minimum_multiplicity))
+
+
+def contact_atom_refinement(partition, minimum_multiplicity=2):
+    """Split every contact part into atoms above the chosen threshold."""
+    minimum_multiplicity = int(minimum_multiplicity)
+    atoms = set(contact_semigroup_atoms(minimum_multiplicity))
+    partition = tuple(int(value) for value in partition)
+    if not partition or any(value < minimum_multiplicity for value in partition):
+        raise ValueError("every part must meet the contact threshold")
+    refinement = []
+    for value in partition:
+        while value >= 2 * minimum_multiplicity:
+            refinement.append(minimum_multiplicity)
+            value -= minimum_multiplicity
+        refinement.append(value)
+    assert set(refinement) <= atoms
+    return tuple(sorted(refinement, reverse=True))
+
+
+def multiplicity_excess(partition, baseline=2):
+    """Return ``sum(m_i-baseline)`` for a full-contact partition."""
+    baseline = int(baseline)
+    partition = tuple(int(value) for value in partition)
+    if baseline < 2 or not partition or any(value < baseline for value in partition):
+        raise ValueError("every part must meet the multiplicity baseline")
+    return sum(value - baseline for value in partition)
+
+
 def maximal_two_three_phi(double_root_count, triple_root_count, prefix="maxphi"):
     """Build ``Phi`` for ``M=Q_2**2*Q_3**3`` in quotient coordinates."""
     double_root_count = int(double_root_count)

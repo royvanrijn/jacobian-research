@@ -204,13 +204,38 @@ classification is
 
 \[
 \mathcal N_n=
-\bigcup_{\substack{\lambda\vdash n\\\lambda_i\ge2}}\mathcal E_\lambda,
+\bigsqcup_{\substack{\lambda\vdash n\\\lambda_i\ge2}}\mathcal E_\lambda,
 \qquad
 \dim\mathcal E_\lambda=\ell(\lambda)-1,
 \qquad
 \operatorname{codim}_{\mathcal A_n}\mathcal E_\lambda
 =n-\ell(\lambda)-2.
 \]
+
+### Unique omitted-value theorem
+
+Every normalized admissible seed has at most one omitted inverse-pencil value
+`(s,t)`. Indeed, two distinct omitted values would give monic full-contact
+polynomials `P,Q` with `P-Q` nonzero affine-linear. Mason--Stothers excludes
+all support-length cases except
+
+\[
+n\text{ even},
+\qquad
+P=A^2,
+\qquad Q=B^2,
+\qquad \deg A=\deg B=n/2.
+\]
+
+But then
+
+\[
+P-Q=(A-B)(A+B)
+\]
+
+has degree at least `n/2>=2`, again a contradiction. Hence the displayed
+union is genuinely disjoint: the exact partition of the unique omitted
+polynomial assigns every nonsurjective seed to one and only one stratum.
 
 ### Main theorem
 
@@ -303,6 +328,44 @@ and four, codimension one in degree five, and increasing codimension
 thereafter. Thus generic surjectivity begins exactly at inverse degree five
 for structural, rather than case-specific, reasons.
 
+### Why twos and threes?
+
+The answer is local and additive. Omission forbids simple roots, so every
+allowed contact order lies in the numerical semigroup
+
+\[
+S_2=\{2,3,4,\ldots\}=\langle2,3\rangle.
+\]
+
+Collision adds contact orders. The only indecomposable nonzero elements of
+`S_2` are two and three: neither can split without introducing a forbidden
+simple root, while every `m>=4` splits as `2+(m-2)`. Thus the 2/3 partitions
+are the atomic collision types. The dimension formula turns these atoms into
+maximal component closures; they do not arise from a low-degree pattern.
+
+Mason--Stothers has a different role. For a full-contact partition put
+
+\[
+\epsilon(\lambda)=\sum_i(\lambda_i-2)=n-2\ell(\lambda).
+\]
+
+The affine-difference incidence for two degree-`n` types would require
+
+\[
+n\le\ell(\lambda)+\ell(\mu)
+=n-{\epsilon(\lambda)+\epsilon(\mu)\over2}.
+\]
+
+For distinct partitions the total excess is positive, since the all-double
+partition is the unique zero-excess type. Hence Mason excludes off-collision
+coexistence for every pair of distinct full-contact partitions, not only for
+maximal 2/3 types.
+
+More generally, if reconstruction required multiplicity at least `r`, the
+primitive contact orders would be `r,...,2r-1`. The specific pair `{2,3}`
+comes from the present threshold `r=2`; the atom principle is the universal
+part.
+
 ### Universal equation and irreducibility
 
 For a maximal partition `lambda=2^a3^b`, write `M=Q^2R^3` as above and set
@@ -351,8 +414,9 @@ Three facts make this conclusion global: tangent-chord deformation realizes
 every permitted collision closure; weighted Newton sums make recovery of the
 omitted roots from the top coefficients finite, excluding roots escaping at
 the boundary; and polynomial Mason--Stothers excludes the remaining
-off-collision two-omission incidence. These facts prove both the reverse
-closure implication and the common-coarsening intersection formula.
+off-collision two-omission incidence for every pair of distinct contact
+types. These facts prove both the reverse closure implication and the
+common-coarsening intersection formula.
 
 ### Number of components
 
@@ -389,6 +453,8 @@ codimension two; and degree eight has components `(2,2,2,2)` and `(3,3,2)`
 meeting along the predicted collision boundary `(6,2)`.
 
 See [Uniform exceptional seeds](notes/UNIFORM_EXCEPTIONAL_SEEDS.md),
+[the contact-atom principle](notes/CONTACT_ATOM_PRINCIPLE.md),
+[the unique omitted-value theorem](notes/UNIQUE_OMITTED_VALUE.md),
 [contact-partition strata](notes/CONTACT_PARTITION_STRATA.md), and
 [omitted-value classification](notes/OMITTED_VALUE_CLASSIFICATION.md).
 

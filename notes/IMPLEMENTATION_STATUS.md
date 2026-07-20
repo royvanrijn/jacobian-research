@@ -78,6 +78,16 @@
   Their dimensions are `a+b-1`, the full exceptional codimension is
   `ceil(n/2)-2`, and component intersections are exactly the common collision
   coarsenings.
+- The contact-atom theorem explains the occurrence of twos and threes as the
+  indecomposable elements of the allowed multiplicity semigroup.  Its exact
+  threshold-`r` generalization is implemented.  The excess identity sharpens
+  Mason separation from maximal types to every pair of distinct full-contact
+  partitions.
+- The unique omitted-value theorem closes Mason's sole support-equality case:
+  two distinct monic all-double polynomials are squares whose difference has
+  degree at least two.  Every seed therefore omits at most one normalized
+  pencil value, and the exact contact strata form a disjoint stratification
+  of the nonsurjective locus.
 - A bounded scan of 627 weighted seeds is exploratory and explicitly separated
   from theorem-level claims.
 
