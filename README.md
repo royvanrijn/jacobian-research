@@ -1,3 +1,6 @@
+The map was announced by Levent Alpöge and Fable; this repository
+independently verifies and studies it.
+
 # A three-dimensional counterexample to the Jacobian conjecture
 
 ## Abstract
@@ -33,11 +36,51 @@ y+3x(1+xy)^2z+3xy^2(4+3xy),
 \right).
 \]
 
-Exact expansion gives
+Here is a short structural proof of the determinant.  On `x!=0`, use the
+inverse-chart coordinates
 
 \[
-\det DF=-2.
+t=y+{1\over x},\qquad r={2\over x},\qquad c=F_3(x,y,z).
 \]
+
+For a target `(a,b,c)`, the inverse cubic and its derivative give
+
+\[
+a=t^2+{rt\over2}-ct^3,qquad
+b=r+4t-3ct^2.
+\]
+
+Therefore
+
+\[
+\det {\partial(a,b,c)\over\partial(t,r,c)}
+=\det\begin{pmatrix}
+2t+r/2-3ct^2&t/2&-t^3\\
+4-6ct&1&-3t^2\\
+0&0&1
+\end{pmatrix}
+={r\over2}.
+\]
+
+Directly from the source chart,
+
+\[
+\det {\partial(t,r,c)\over\partial(x,y,z)}
+=\det\begin{pmatrix}
+-1/x^2&1&0\\
+-2/x^2&0&0\\
+2-6xy-3x^2z&-3x^2&-x^3
+\end{pmatrix}
+=-2x.
+\]
+
+Since `r=2/x`, the chain rule gives
+
+\[
+\det DF={r\over2}(-2x)=-2
+\]
+
+on `x!=0`, and hence everywhere by polynomial identity.
 
 Nevertheless,
 
@@ -51,9 +94,9 @@ hence is not a polynomial automorphism. Appending identity coordinates gives
 counterexamples in every dimension at least three. The coordinate degrees are
 `(7,6,4)`.
 
-The determinant, collision, and degrees are checked twice: once with SymPy and
-once with an independent standard-library sparse-polynomial implementation.
-No global geometry or family theorem is needed for this minimal certificate.
+The determinant also has two executable checks: one with SymPy and one with an
+independent standard-library sparse-polynomial implementation.  No global
+geometry or family theorem is needed for this minimal certificate.
 
 ## 2. Inverse equation and reconstruction
 
@@ -439,7 +482,11 @@ equal-multiplicity roots.
 This is deliberately a generic-stratum statement: at more-special points,
 branches may specialize or ramify further.  Completed-local branch structure,
 scheme-theoretic ramification, and conductor multiplicities remain separate
-questions.
+questions in general.  The first two-branch case is now explicit: generically
+along `E_(6,6)`, the completed local ring of `C_(3,2)` is the fiber product of
+two regular fourfold branches over
+`k[[t,epsilon,eta]]/(epsilon^2,eta^2)`.  Its conductor has transverse
+colength four, so the branches are quadratically tangent rather than nodal.
 
 ### Proof architecture for closures and intersections
 

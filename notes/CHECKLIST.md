@@ -14,7 +14,8 @@ repository; it does not by itself claim independent replication.
   are distinct with a common image.
 - [x] Check coordinate degrees `(7,6,4)`.
 - [x] Audit every stored restatement of the map for signs and coordinate order.
-- [ ] Write a short structural determinant proof from the weighted chart.
+- [x] Give the hand-checkable structural determinant proof through the
+  `(t,r,c)` inverse chart.
 - [ ] Reproduce the certificate in an unrelated computer algebra system.
 
 ## 2. Cubic inverse and boundary geometry
@@ -130,8 +131,10 @@ repository; it does not by itself claim independent replication.
 - [x] Verify that degree twelve, `C_(3,2)` over `E_(6,6)`, is the first
   geometric two-branch collision, and distinguish it from the first abstract
   equal-multiplicity orbit-type ambiguity in degree fourteen.
+- [x] Compute the generic completed-local fiber product, conductor, and
+  transverse multiplicity four for `C_(3,2)` along `E_(6,6)`.
 - [ ] Determine ramification divisors, conductors, and scheme-theoretic branch
-  multiplicities of the component normalizations.
+  multiplicities of the remaining component normalizations.
 - [x] Verify the threshold-`r` atom set `{r,...,2r-1}` and automatic abc bound
   for `r>=3`.
 - [ ] Determine the scheme-theoretic component intersections, embedded

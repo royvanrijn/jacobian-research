@@ -107,7 +107,8 @@
 
 ## Remaining audit work
 
-- Produce a short structural determinant proof suitable for hand checking.
+- The README now gives a short hand-checkable structural determinant proof
+  through the `(t,r,c)` inverse chart.
 - Obtain an independent second-CAS verification and archival reproduction log.
 - Complete the provenance record and separate priority from verification.
 - Independently audit normalization and every boundary stratum used by the

@@ -174,6 +174,181 @@ ramification, completed-local branch structure, and conductor multiplicities
 are not determined by this generic count; they remain part of the
 intersection-multiplicity problem.
 
+## First differential calculation in degree twelve
+
+The first two-branch collision is **not** a transverse node.  At the exact
+admissible witness
+
+\[
+M=(W+6/5)^6(W-1)^6,
+\]
+
+differentiate the normalized coefficient map on the two sheets
+
+\[
+(Q,R)=((W+6/5)^3,(W-1)^2),\qquad
+(Q,R)=((W-1)^3,(W+6/5)^2).
+\]
+
+After restricting each five-dimensional `(Q,R)` coefficient tangent space
+by `dPhi=0`, both differentials have rank four.  Their image tangent spaces
+in the normalized seed-coefficient space have
+
+\[
+\dim(T_1+T_2)=5,
+\qquad
+\dim(T_1\cap T_2)=3.                              \tag{2}
+\]
+
+By contrast, `E_(6,6)` has dimension one.  Thus the two branches have two
+excess common tangent directions at this witness.  In particular neither a
+transverse meeting nor a completed-local model `xy=0` is possible: even on
+dimension grounds, an `xy=0` singularity makes the branch intersection a
+divisor, whereas `E_(6,6)` has codimension three in the four-dimensional
+component `C_(3,2)`.
+
+Before imposing the incidence equation, the source of the excess tangency is
+already visible.  Writing `A=W-alpha`, `B=W-beta`, the first allocation has
+
+\[
+\delta M=2A^3B^6\delta Q+3A^6B^4\delta R,
+\]
+
+and the exchanged allocation has the analogous expression with `A,B`
+exchanged.  These weighted-factorization tangent spaces overlap in more than
+the two directions obtained by moving `alpha,beta`; imposing `dPhi=0` gives
+(2).
+
+Consequently the next local problem is a higher-contact problem: determine
+the scheme-theoretic (necessarily nonreduced to first order) gluing locus in
+the normalization, then compute its conductor.  A generic intersection
+multiplicity is not yet assigned here, since the intersection is
+positive-dimensional and excess; it requires specifying the transverse
+slice (or, equivalently, the corresponding normal-cone multiplicity).
+
+The second jets determine the first nontrivial contact order at the witness.
+Pair the three source tangent directions on the two sheets which have the
+same image, take their six symmetric second derivatives, and quotient the
+target by `T_1+T_2`.  The resulting quadratic map has rank two.  In the exact
+basis used by the certificate its two scalar quadratic forms are, up to
+nonzero constants,
+
+\[
+\begin{aligned}
+q_1={}&186624x_0^2+648000x_0x_1-388800x_0x_2
+       +953125x_1^2-1612500x_1x_2+765000x_2^2,\\
+q_2={}&(5x_1-6x_2)^2.
+\end{aligned}
+\]
+
+On the hyperplane `5x_1-6x_2=0`, the first form restricts to
+
+\[
+q_1=9(144x_0+125x_1)^2.
+\]
+
+Thus the reduced common zero of the quadratic separation is precisely one
+line, the tangent direction to `E_(6,6)`, while the two transverse equations
+occur with square leading terms.  This proves quadratic separation of the
+two excess common tangent directions at the witness.
+
+## Completed-local ring and conductor
+
+The higher-order calculation is controlled by one universal sixfold block.
+For the factors centered at one of the two distinct roots, equality of the
+polynomials on the two sheets is
+
+\[
+Q^2=T^3,
+\]
+
+where `Q` is monic cubic and `T` is monic quadratic.  Translate the root so
+that the cubic is depressed and write
+
+\[
+Q=Z^3+uZ+v,qquad T=Z^2+aZ+b.
+\]
+
+Coefficient comparison in `Q^2-T^3` has the exact Groebner basis
+
+\[
+a,\qquad v,\qquad 2u-3b,\qquad b^2.              \tag{3}
+\]
+
+Thus the scheme of exchanged factorizations at one sixfold root is a smooth
+root coordinate times one dual number.  Hensel separation at the two
+distinct roots makes the two blocks independent.  Before the incidence
+condition their off-diagonal double scheme is therefore
+
+\[
+k[[\alpha,\beta]][\epsilon,\eta]/
+   (\epsilon^2,\eta^2).
+\]
+
+The incidence equation `Phi=0` is smooth in the root directions on a dense
+open subset of `E_(6,6)` (both root derivatives are nonzero at the displayed
+admissible witness).  Formal implicit-function elimination removes one of
+`alpha,beta`, including its nilpotent correction, and introduces no further
+relation between `epsilon,eta`.  Consequently the off-diagonal double scheme
+over the geometric generic point of `E_(6,6)` is
+
+\[
+\boxed{D=k[[t,\epsilon,\eta]]/
+              (\epsilon^2,\eta^2).}              \tag{4}
+\]
+
+Choose regular parameters `(t,x,y,z)` on either normalization sheet so that
+`t` is the collision-stratum parameter, `x,y` restrict to `epsilon,eta` on
+the double scheme, and `z` is the remaining transverse parameter.  Put
+
+\[
+B_+=k[[t,x,y,z]],\qquad B_-=k[[t,x',y',z']],
+\]
+
+and identify their quotients
+
+\[
+B_+/(z,x^2,y^2)\simeq D\simeq
+B_-/(z',x'^2,y'^2).
+\]
+
+Direct formal elimination of the finite coefficient map then gives the
+completed local ring as the fiber product
+
+\[
+\boxed{
+\widehat{\mathcal O}_{\mathcal C_{3,2},\bar\xi}
+ \simeq B_+\mathop{\times}_{D}B_- .}             \tag{5}
+\]
+
+Here `bar(xi)` is a geometric generic point of `E_(6,6)`.  Formula (5) makes
+the conductor in the completed normalization explicit:
+
+\[
+\boxed{
+\mathfrak c=(z,x^2,y^2)\oplus(z',x'^2,y'^2)
+ \subset B_+\oplus B_- .}                        \tag{6}
+\]
+
+Its reduced support is the preimage of `E_(6,6)`, but it retains a double
+infinitesimal direction from each sixfold block.  After taking a transverse
+slice to the stratum, the double scheme has length
+
+\[
+\boxed{\operatorname{length}k[\epsilon,\eta]/
+                 (\epsilon^2,\eta^2)=4.}         \tag{7}
+\]
+
+Thus the natural generic excess-intersection multiplicity is four.  The
+degree-twelve component is generically quadratically tangent, with conductor
+colength four transverse to `E_(6,6)`; it is not generically nodal.
+
+The exact calculation is executable:
+
+```bash
+python scripts/verify_degree12_branch_intersection.py
+```
+
 ## Rationality
 
 The normalization is visibly rational in the stable ranges: solve equation
