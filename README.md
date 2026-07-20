@@ -142,7 +142,6 @@ make scan-weighted-seeds
 julia --project=. scripts/nonproper_fiber_homotopy.jl
 ```
 
-The normal-form generators write large ignored JSON artifacts under `results/`.
 Julia is optional and is used only for the numerical nonproper-fiber benchmark.
 
 For a claim-by-claim status and audit order, see
