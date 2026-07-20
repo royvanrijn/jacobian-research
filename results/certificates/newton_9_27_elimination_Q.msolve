@@ -1,0 +1,8 @@
+#Reduced Groebner basis data
+#---
+#field characteristic: 0
+#variable order:       d1, d0, dm1, C3, Fm4
+#monomial order:       graded reverse lexicographical
+#length of basis:      1 element
+#---
+[8*C3^69*Fm4^3+18*d1*dm1^6*C3^23*Fm4+27*d0*dm1^9]:

@@ -1,0 +1,16 @@
+{
+  "status": "Section 5 terminal system transcribed and exactly reproduced; prior corner reductions remain source-dependent",
+  "case": {"A0": [9, 27], "m_n": [2, 3]},
+  "source": "Guccione-Guccione-Horruitiner-Valqui, arXiv:2204.14178, section 5",
+  "purpose": "The chart/Newton engine must reproduce the published contradiction before the unresolved (8,28) case is trusted.",
+  "reduced_newton_polygons": {
+    "P": [[0,0],[1,1],[6,16],[6,18],[0,18]],
+    "Q": [[0,0],[1,0],[9,24],[9,27],[0,27]]
+  },
+  "bracket": "x",
+  "terminal_elimination_5_9": "18*C3^23*d1*dminus1^6*Fminus4+8*C3^69*Fminus4^3+27*d0*dminus1^9=0",
+  "terminal_valuation_relation_5_11": "18*(y+1)^22*dtilde1*dtilde_minus1^6*g+8*(y+1)^66*g^3+27*dtilde0*dtilde_minus1^9=0",
+  "machine_result": "results/newton_9_27_regression.json",
+  "exact_certificate": "results/certificates/newton_9_27_elimination_Q.msolve",
+  "remaining_scope_warning": "The machine check assumes the paper's reductions through Proposition 5.5; it reproduces the explicit nine-equation elimination and valuation/degree contradiction, not all cited preceding theorems."
+}

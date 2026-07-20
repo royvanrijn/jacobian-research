@@ -1,0 +1,27 @@
+# macOS and editor-local files
+.DS_Store
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Python environments, caches, and tooling state
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Julia local environment products
+.julia/
+
+# Generated experiment output. Retained certificates, solver inputs, and
+# Markdown summaries below results/ remain tracked.
+/results/*.json
+/results/*.txt
+
