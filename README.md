@@ -112,6 +112,9 @@ Fibers have `3`, `1`, and `0` affine points respectively on `Q != 0`, on
 - Boundary geometry and the exact image theorem for deformations with one
   additional simple primitive zero:
   [DEFORMED_SEED_BOUNDARY.md](notes/DEFORMED_SEED_BOUNDARY.md).
+- Exact omitted-value classification for arbitrary fixed seeds and a closed
+  exceptional-locus equation for two additional simple zeros:
+  [OMITTED_VALUE_CLASSIFICATION.md](notes/OMITTED_VALUE_CLASSIFICATION.md).
 - Explicit 95-dimensional cubic-homogeneous and 510-dimensional Drużkowski
   counterexamples:
   [CUBIC_HOMOGENEOUS_REDUCTION.md](notes/CUBIC_HOMOGENEOUS_REDUCTION.md) and

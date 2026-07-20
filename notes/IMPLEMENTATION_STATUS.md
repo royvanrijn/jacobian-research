@@ -34,6 +34,10 @@
   nonproperness theorem. The complete one-extra-simple-zero family has an
   explicit omitted double-double curve, including its quadruple-root
   degeneration.
+- Omitted values for arbitrary fixed seeds now have a complete exact
+  multiplicity-partition classifier. For two additional simple zeros, one
+  explicit coefficient equation detects the exceptional nonsurjective
+  subfamily; generic two- and three-extra-root representatives are surjective.
 - A bounded scan of 627 weighted seeds is exploratory and explicitly separated
   from theorem-level claims.
 
@@ -56,5 +60,5 @@
   now have exact certificates.
 - Audit the stable-equivalence steps and external implication theorems against
   their primary sources.
-- Extend the explicit omitted-value classification from one extra simple zero
-  to several extra zeros and then to repeated extra zeros.
+- Extend the boundary saturation and direct `C=0` theorem to repeated extra
+  zeros; their omitted values are already covered by the exact classifier.

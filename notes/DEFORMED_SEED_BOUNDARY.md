@@ -213,3 +213,6 @@ Run:
 The verifier checks the symbolic `rho`-family, the direct boundary conic,
 exact `C^2` saturation, the omitted square factorization, and four rational
 deformations of the actual polynomial map.
+
+The omitted-value problem for several or repeated extra zeros is solved by the
+exact multiplicity-partition classifier in `OMITTED_VALUE_CLASSIFICATION.md`.
