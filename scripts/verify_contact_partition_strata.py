@@ -10,7 +10,10 @@ import sympy as sp
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
-from jcsearch.discriminant_geometry import contact_partition_incidence  # noqa: E402
+from jcsearch.discriminant_geometry import (  # noqa: E402
+    contact_partition_incidence,
+    multiple_omission_incidence,
+)
 
 
 def primitive_coefficients(data):
@@ -164,6 +167,53 @@ three_three_seed = dict(
 )
 assert F6.subs(three_three_seed) == -sp.Rational(640000, 177147)
 
+# The complete intersection with the main closure is only the common-value
+# collision boundary.  A rational parameter q for Phi_(3,3)=0 pulls F6 back
+# to the square of the quadratic-root discriminant; saturation by distinct
+# roots therefore makes the two exact strata disjoint.
+q = sp.symbols("q")
+three_three_parameter = {
+    q1: 1 - 3 * q**2 / (3 * q - 1),
+    q2: -3 * q**3 / (3 * q - 1),
+}
+assert sp.factor(three_three.phi.subs(three_three_parameter)) == 0
+three_three_parameter_seed = dict(
+    zip(
+        (x, y, z),
+        (
+            sp.cancel(value.subs(three_three_parameter))
+            for value in primitive_coefficients(three_three)
+        ),
+    )
+)
+intersection_pullback = sp.factor(
+    sp.cancel(F6.subs(three_three_parameter_seed)).as_numer_denom()[0]
+)
+root_discriminant_pullback = sp.factor(
+    (q1**2 - 4 * q2).subs(three_three_parameter)
+)
+assert sp.factor(
+    intersection_pullback
+    / ((3 * q - 1) ** 12 * root_discriminant_pullback**2)
+) == -4
+
+# The shared-incidence API separately exposes common and distinct omitted
+# values.  Its distinct-value equations are a genuine ideal localization, not
+# the single-polynomial test delta_s*delta_t != 0.
+degree_six_multiple = multiple_omission_incidence(6, ((2, 2, 2), (3, 3)))
+assert len(degree_six_multiple.common_value_ideal) == 1
+assert len(degree_six_multiple.distinct_value_gates) == 1
+delta_s, delta_t = degree_six_multiple.common_value_ideal[0]
+first, second = degree_six_multiple.contacts
+assert sp.cancel(first.s - second.s - delta_s / (first.scale_denominator * second.scale_denominator)) == 0
+assert sp.cancel(first.t - second.t - delta_t / (first.scale_denominator * second.scale_denominator)) == 0
+repeated_partition_multiple = multiple_omission_incidence(
+    6, ((2, 2, 2), (2, 2, 2))
+)
+assert set(repeated_partition_multiple.contacts[0].quotient_coordinates).isdisjoint(
+    repeated_partition_multiple.contacts[1].quotient_coordinates
+)
+
 # Every (6) point is the common collision boundary of (4,2), (3,3), and the
 # main square stratum.  All are admissible and smooth on the main quartic.
 six = degree_six[(6,)]
@@ -209,5 +259,5 @@ assert normalized_seed_dimension - leading_seven.expected_seed_dimension == 2
 print("PASS: arbitrary partitions, residual factors, and equal-part quotients")
 print("PASS: degree-five (3,2) elimination recovers 5*F(R,P)/64")
 print("PASS: degree-six main locus is an irreducible rational quartic surface")
-print("PASS: degree-six closures and (6) collision intersections are exact")
+print("PASS: degree-six exact strata are disjoint and meet only on the (6) boundary")
 print("PASS: degree-seven nonsurjectivity has genuine codimension two")

@@ -201,14 +201,35 @@ The first exceptional parameter spaces are now explicit:
 - Degree five: the `(3,2)` incidence recovers the established polynomial
   `F(R,P)` up to the scalar `5/64`.
 - Degree six: the main `(2,2,2)` locus is an irreducible rational quartic
-  surface; the `(4,2)`, `(3,3)`, and `(6)` strata and their collision boundaries
-  are classified exactly.
+  surface; the exact `(2,2,2)` and `(3,3)` strata are disjoint and their
+  closures meet exactly along the `(6)` collision boundary.
 - Degree seven: the leading `(3,2,2)` locus has codimension two in normalized
   seed space. Hence nonsurjectivity is not detected by a single coefficient
   equation.
+- In every degree, the exceptional locus is the union of the full-contact
+  strata, with
 
-See [Contact-partition strata](notes/CONTACT_PARTITION_STRATA.md) and
-[Omitted-value classification](notes/OMITTED_VALUE_CLASSIFICATION.md).
+  \[
+  \dim E_\lambda=\ell(\lambda)-1,
+  \qquad
+  \operatorname{codim}_{\mathcal A_n}E_\lambda=n-\ell(\lambda)-2.
+  \]
+
+  The proof is a weighted-Vandermonde rank calculation on the top
+  coefficients of `M_lambda`.
+- Degree eight tests the proposed component poset: the maximal candidates
+  `(2,2,2,2)` and `(3,3,2)` share the `(6,2)` collision boundary and have no
+  exact off-diagonal intersection.
+- In all degrees, merging parts defines a collision partial order with
+  `E_mu` contained in the closure of `E_lambda` whenever `lambda<=mu`.
+  Mason--Stothers excludes every off-collision two-omission incidence between
+  distinct maximal 2/3 partitions. What remains for a strict irreducible-
+  component theorem is uniform irreducibility of the maximal root
+  hypersurfaces.
+
+See [Uniform exceptional seeds](notes/UNIFORM_EXCEPTIONAL_SEEDS.md),
+[contact-partition strata](notes/CONTACT_PARTITION_STRATA.md), and
+[omitted-value classification](notes/OMITTED_VALUE_CLASSIFICATION.md).
 
 ## 6. Arithmetic and normal forms
 

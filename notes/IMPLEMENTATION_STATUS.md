@@ -60,6 +60,17 @@
   degree-five polynomial `F(R,P)`, identifies the degree-six main locus as a
   rational irreducible quartic surface, and proves that degree-seven
   nonsurjectivity first occurs in codimension two.
+- The uniform exceptional-seed theorem identifies the nonsurjective locus as
+  the union of all full-contact strata and proves
+  `dim E_lambda=ell(lambda)-1` by a weighted-Vandermonde determinant.  The
+  multiple-omission API separates common collision values from genuinely
+  distinct omitted values.  Exact degree-six and degree-eight calculations
+  find only the predicted common collision boundaries and no off-diagonal
+  intersections.
+- Merging partition parts now defines an executable collision partial order.
+  Tangent-chord deformation proves every coarser stratum lies in the closure
+  of every refining stratum, and Mason--Stothers uniformly rules out
+  off-collision two-omission solutions for distinct maximal 2/3 partitions.
 - A bounded scan of 627 weighted seeds is exploratory and explicitly separated
   from theorem-level claims.
 
@@ -86,3 +97,6 @@
 - Compare the dual-curve incidence proof archivally with classical projective
   duality, then make good-prime exclusions effective for individual seeds and
   eliminate the universal exceptional strata in selected low degrees.
+- Upgrade the proved stratum-level component poset to a scheme-theoretic
+  irreducible-component theorem by proving uniform irreducibility, or finding
+  the irreducible factors, of `Phi_lambda` for maximal 2/3 partitions.

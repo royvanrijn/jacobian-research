@@ -89,6 +89,26 @@ repository; it does not by itself claim independent replication.
   root curve.
 - [x] Classify the degree-six full-contact strata and their closure relations.
 - [x] Prove that the degree-seven nonsurjective locus has codimension two.
+- [x] Prove the uniform exceptional-locus union and the formula
+  `dim E_lambda=ell(lambda)-1` using weighted Newton sums and a weighted
+  Vandermonde determinant.
+- [x] Implement simultaneous multiple-omission incidences with separate
+  common-value and distinct-value ideals.
+- [x] Settle the degree-six `(2,2,2)`/`(3,3)` intersection: the exact strata
+  are disjoint and their closures meet on `(6)`.
+- [x] Use degree eight as a theorem test: verify the `(2,2,2,2)` and `(3,3,2)`
+  dimensions, their shared `(6,2)` and `(8)` boundaries, and the absence of
+  exact off-diagonal intersections.
+- [x] Formalize the collision partial order `lambda<=mu` by merging parts.
+- [x] Construct a uniform tangent-chord root-splitting deformation proving
+  `E_mu` is contained in the closure of `E_lambda` whenever `lambda<=mu`.
+- [x] Build the uniform affine-difference incidence
+  `a M_lambda-b M_mu=alpha W+beta`.
+- [x] Use Mason--Stothers to exclude every off-collision two-omission solution
+  for distinct maximal partitions with parts only two and three.
+- [ ] Upgrade the stratum-level component poset to a strict irreducible-
+  component theorem by resolving uniform irreducibility of maximal
+  `Phi_lambda` hypersurfaces.
 - [ ] Reconcile the proof fully with the precise hypotheses of the classical
   projective-duality literature.
 

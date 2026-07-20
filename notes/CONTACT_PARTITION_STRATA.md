@@ -95,7 +95,34 @@ expanded Groebner basis; `incidence_elimination_generators` computes the
 elimination when desired.
 
 For full contact the root-quotient hypersurface has `k` coordinates and one
-equation, hence expected seed dimension `k-1`.
+equation.  The weighted-Vandermonde theorem proves—not merely predicts—that
+its seed image has dimension `k-1`; see
+`UNIFORM_EXCEPTIONAL_SEEDS.md`.
+
+## Simultaneous omissions
+
+`multiple_omission_incidence(degree, partitions)` identifies the normalized
+seed coefficients for two or more full-contact factorizations.  For every
+pair it returns the cleared numerators of `s_i-s_j` and `t_i-t_j`:
+
+- their joint vanishing is the common-value collision locus;
+- a two-generator Rabinowitsch gate forces the omitted values to be genuinely
+  distinct.
+
+This avoids conflating a coarser root partition of one inverse polynomial
+with a seed having two different omitted targets.
+
+For two partitions, `two_omission_incidence` additionally returns the uniform
+affine-difference presentation
+
+\[
+aM_\lambda-bM_\mu=\alpha W+\beta.
+\]
+
+Polynomial Mason--Stothers proves that its off-collision saturation is empty
+whenever `lambda!=mu` are maximal partitions using only twos and threes.  The
+proof and collision partial order are stated in
+`UNIFORM_EXCEPTIONAL_SEEDS.md`.
 
 ## Degree-five regression
 
@@ -175,6 +202,10 @@ The boundary relations are:
 - every `(6)` point is a common collision boundary of `(4,2)`, `(3,3)`, and
   `(2,2,2)`;
 - all four `(6)` points are smooth on the main quartic.
+- the complete `(3,3)` pullback of the main quartic is the square of its
+  two-root discriminant, up to invertible factors.  Hence the exact
+  `(3,3)` and `(2,2,2)` strata are disjoint and their closures meet only on
+  `(6)`; there is no seed with two distinct omitted values of these types.
 
 Thus the lower curves describe different phenomena: `(4,2)` is a boundary of
 the main square locus, whereas `(3,3)` is a separate exceptional curve sharing
@@ -192,9 +223,10 @@ The normalized seed space has dimension four. The exact dimensions are:
 | `(7)` | 0 | 4 |
 
 Every displayed root-space `Phi_lambda` is irreducible and coprime to its
-weighted admissibility factor. For the leading `(3,2,2)` stratum, an exact
-Jacobian-rank certificate at quotient coordinates `(-6,-3,-4)` proves that
-its coefficient image really has dimension two.
+weighted admissibility factor. The uniform weighted-Vandermonde certificate
+proves that the leading `(3,2,2)` coefficient image has dimension two; the
+older exact rank point at quotient coordinates `(-6,-3,-4)` remains as a
+low-degree regression check.
 
 Therefore the degree-seven nonsurjective locus has codimension two. In
 particular, no single nonzero coefficient equation detects nonsurjectivity:
@@ -204,4 +236,5 @@ Run:
 
 ```bash
 .venv/bin/python scripts/verify_contact_partition_strata.py
+.venv/bin/python scripts/verify_uniform_exceptional_seed_theorem.py
 ```

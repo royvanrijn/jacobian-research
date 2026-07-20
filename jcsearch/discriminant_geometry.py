@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
+from itertools import combinations
 from math import factorial
 
 import sympy as sp
@@ -118,6 +119,73 @@ class ContactPartitionIncidence:
         return self.primitive
 
 
+@dataclass(frozen=True)
+class MultipleOmissionIncidence:
+    """A common normalized seed with several full-contact omitted values."""
+
+    degree: int
+    partitions: tuple[tuple[int, ...], ...]
+    contacts: tuple[ContactPartitionIncidence, ...]
+    coefficient_parameters: tuple[sp.Symbol, ...]
+    equations: tuple[sp.Expr, ...]
+    marked_points: tuple[sp.Symbol, ...]
+    saturation_factor: sp.Expr
+    gate: sp.Symbol
+    omission_coordinates: tuple[tuple[sp.Expr, sp.Expr], ...]
+    pairwise_value_differences: tuple[tuple[sp.Expr, sp.Expr], ...]
+    distinct_value_gates: tuple[tuple[sp.Symbol, sp.Symbol], ...]
+
+    @property
+    def saturated_equations(self):
+        """Equations for simultaneous admissible full-contact incidences."""
+        return self.equations + (1 - self.gate * self.saturation_factor,)
+
+    @property
+    def common_value_ideal(self):
+        """Pairwise ideals whose vanishing means the omitted values coincide."""
+        return self.pairwise_value_differences
+
+    @property
+    def distinct_omitted_value_equations(self):
+        """Rabinowitsch equations forcing every pair of values to differ."""
+        gates = tuple(
+            1 - gate_s * delta_s - gate_t * delta_t
+            for (gate_s, gate_t), (delta_s, delta_t) in zip(
+                self.distinct_value_gates, self.pairwise_value_differences
+            )
+        )
+        return self.saturated_equations + gates
+
+
+@dataclass(frozen=True)
+class TwoOmissionIncidence:
+    """Uniform affine-difference presentation for two contact partitions."""
+
+    degree: int
+    partitions: tuple[tuple[int, ...], tuple[int, ...]]
+    variable: sp.Symbol
+    left: ContactPartitionIncidence
+    right: ContactPartitionIncidence
+    left_scale: sp.Symbol
+    right_scale: sp.Symbol
+    affine_slope: sp.Symbol
+    affine_intercept: sp.Symbol
+    affine_difference: sp.Expr
+    equations: tuple[sp.Expr, ...]
+    collision_discriminant: sp.Expr
+    saturation_factor: sp.Expr
+    shared_seed_incidence: MultipleOmissionIncidence
+
+    @property
+    def high_coefficient_equations(self):
+        """Equations saying the difference has degree at most one."""
+        polynomial = sp.Poly(self.affine_difference, self.variable)
+        return tuple(
+            polynomial.coeff_monomial(self.variable**power)
+            for power in range(2, self.degree + 1)
+        )
+
+
 def discriminant_param(H, W):
     """Return the tangent-line coordinates (s,t) of the graph of H."""
     derivative = sp.diff(H, W)
@@ -198,7 +266,158 @@ def contact_incidence_dimension(degree: int, multiplicities):
     return len(multiplicities) + quotient_coefficients
 
 
-def contact_partition_incidence(degree, multiplicities, full_contact=True):
+def collision_partition_blocks(finer, coarser):
+    """Return blocks witnessing ``finer <= coarser`` under root collision.
+
+    The relation means that every part of ``coarser`` is the sum of one block
+    of parts of ``finer``.  ``None`` is returned when no such merging exists.
+    Parts and blocks use deterministic decreasing order.
+    """
+    finer = tuple(sorted((int(value) for value in finer), reverse=True))
+    coarser = tuple(sorted((int(value) for value in coarser), reverse=True))
+    if (
+        not finer
+        or not coarser
+        or any(value < 2 for value in finer + coarser)
+        or sum(finer) != sum(coarser)
+        or len(finer) < len(coarser)
+    ):
+        return None
+
+    def search(remaining, target_index):
+        if target_index == len(coarser):
+            return () if not remaining else None
+        target = coarser[target_index]
+        for size in range(1, len(remaining) + 1):
+            for block in combinations(remaining, size):
+                if sum(finer[index] for index in block) != target:
+                    continue
+                block_set = set(block)
+                tail = search(
+                    tuple(index for index in remaining if index not in block_set),
+                    target_index + 1,
+                )
+                if tail is not None:
+                    return (tuple(block),) + tail
+        return None
+
+    return search(tuple(range(len(finer))), 0)
+
+
+def collision_precedes(finer, coarser):
+    """Return whether the coarser partition is obtained by merging parts."""
+    return collision_partition_blocks(finer, coarser) is not None
+
+
+def maximal_two_three_partitions(degree: int):
+    """Return types indexing maximal strata: partitions using only 2 and 3.
+
+    These are the minimal elements for ``collision_precedes`` because that
+    order points from a finer partition toward a coarser collision.
+    """
+    degree = int(degree)
+    if degree < 2:
+        return ()
+    partitions = []
+    for threes in range(degree // 3 + 1):
+        remainder = degree - 3 * threes
+        if remainder % 2 == 0:
+            partitions.append((3,) * threes + (2,) * (remainder // 2))
+    return tuple(sorted(partitions, reverse=True))
+
+
+def affine_difference_mason_defect(left_partition, right_partition):
+    """Return the strict Mason obstruction ``n-l(left)-l(right)``.
+
+    A positive value rules out two coprime monic full-contact polynomials with
+    these partitions whose difference has degree at most one.
+    """
+    left = tuple(int(value) for value in left_partition)
+    right = tuple(int(value) for value in right_partition)
+    if (
+        not left
+        or not right
+        or any(value < 2 for value in left + right)
+        or sum(left) != sum(right)
+    ):
+        raise ValueError("partitions must have the same degree and parts at least two")
+    return sum(left) - len(left) - len(right)
+
+
+def normalized_seed_space_dimension(degree: int):
+    """Dimension of the normalized admissible seed space A_n."""
+    if degree < 3:
+        raise ValueError("inverse degree must be at least three")
+    return degree - 3
+
+
+def exceptional_stratum_dimension(multiplicities):
+    """Dimension of a nonempty full-contact stratum E_lambda."""
+    multiplicities = tuple(int(value) for value in multiplicities)
+    if not multiplicities or any(value < 2 for value in multiplicities):
+        raise ValueError("partition parts must all be at least two")
+    return len(multiplicities) - 1
+
+
+def exceptional_stratum_codimension(degree: int, multiplicities):
+    """Codimension of E_lambda in the normalized seed space A_n."""
+    multiplicities = tuple(int(value) for value in multiplicities)
+    if sum(multiplicities) != degree:
+        raise ValueError("a full-contact partition must sum to the degree")
+    return normalized_seed_space_dimension(degree) - exceptional_stratum_dimension(
+        multiplicities
+    )
+
+
+def weighted_power_sums(multiplicities, roots, count=None):
+    """Return p_j=sum_i lambda_i*r_i**j for the weighted root multiset."""
+    multiplicities = tuple(int(value) for value in multiplicities)
+    roots = tuple(roots)
+    if len(multiplicities) != len(roots):
+        raise ValueError("one multiplicity is required for every root")
+    if count is None:
+        count = len(roots)
+    return tuple(
+        sp.expand(sum(weight * root**power for weight, root in zip(multiplicities, roots)))
+        for power in range(1, int(count) + 1)
+    )
+
+
+def weighted_newton_top_coefficients(multiplicities, roots, count=None):
+    """Recover the top monic coefficients from weighted Newton sums."""
+    powers = weighted_power_sums(multiplicities, roots, count)
+    coefficients = [sp.Integer(1)]
+    for index, power_sum in enumerate(powers, start=1):
+        coefficient = -(
+            power_sum
+            + sum(
+                coefficients[offset] * powers[index - offset - 1]
+                for offset in range(1, index)
+            )
+        ) / index
+        coefficients.append(sp.expand(coefficient))
+    return tuple(coefficients[1:])
+
+
+def weighted_vandermonde_determinant(multiplicities, roots):
+    """Closed Jacobian determinant for the top coefficient map.
+
+    For ``M=prod(W-r_i)**lambda_i`` and top monic coefficients
+    ``(c_1,...,c_l)``, this is ``det(d c_j / d r_i)``.
+    """
+    multiplicities = tuple(int(value) for value in multiplicities)
+    roots = tuple(roots)
+    if len(multiplicities) != len(roots):
+        raise ValueError("one multiplicity is required for every root")
+    vandermonde = sp.prod(
+        roots[right] - roots[left]
+        for left in range(len(roots))
+        for right in range(left + 1, len(roots))
+    )
+    return sp.expand((-1) ** len(roots) * sp.prod(multiplicities) * vandermonde)
+
+
+def contact_partition_incidence(degree, multiplicities, full_contact=True, _prefix=None):
     """Return the exact incidence attached to an arbitrary contact partition.
 
     Equal multiplicities are quotiented before elimination by replacing their
@@ -217,7 +436,7 @@ def contact_partition_incidence(degree, multiplicities, full_contact=True):
         raise ValueError("a full-contact partition must sum to the degree")
 
     partition_tag = "_".join(str(value) for value in multiplicities)
-    prefix = f"_cp{degree}_{partition_tag}"
+    prefix = _prefix or f"_cp{degree}_{partition_tag}"
     W = sp.symbols(f"{prefix}_W")
     marked_roots = tuple(sp.symbols(f"{prefix}_r0:{len(multiplicities)}"))
 
@@ -370,6 +589,151 @@ def contact_partition_incidence(degree, multiplicities, full_contact=True):
         coefficient_parameters=coefficient_parameters,
         normalized_universal_primitive=normalized_universal_primitive,
         coefficient_space_elimination_ideal=coefficient_space_elimination_ideal,
+    )
+
+
+def multiple_omission_incidence(degree, partitions):
+    """Return the incidence for one seed with several omitted values.
+
+    Each partition supplies a factorization
+    ``H-s_i*W+t_i=a_i*M_i``.  The coefficient equations identify the
+    normalized primitives, while ``pairwise_value_differences`` records the
+    cleared numerators of ``s_i-s_j`` and ``t_i-t_j``.  Vanishing of both
+    numerators means one common omitted value; the extra Rabinowitsch gates in
+    ``distinct_omitted_value_equations`` instead force genuinely different
+    target values.
+    """
+    degree = int(degree)
+    partitions = tuple(
+        tuple(sorted((int(value) for value in partition), reverse=True))
+        for partition in partitions
+    )
+    if len(partitions) < 2:
+        raise ValueError("at least two contact partitions are required")
+    contacts = tuple(
+        contact_partition_incidence(
+            degree,
+            partition,
+            full_contact=True,
+            _prefix=f"_multi{degree}_{index}_{'_'.join(map(str, partition))}",
+        )
+        for index, partition in enumerate(partitions)
+    )
+    coefficient_parameters = tuple(
+        sp.symbols(f"_multi{degree}_h{index}") for index in range(3, degree)
+    )
+    equations = []
+    marked_points = []
+    saturation_factors = []
+    omission_coordinates = []
+    for contact in contacts:
+        parameter_substitution = dict(
+            zip(contact.coefficient_parameters, coefficient_parameters)
+        )
+        equations.extend(
+            sp.expand(equation.subs(parameter_substitution))
+            for equation in contact.coefficient_space_elimination_ideal.equations
+        )
+        marked_points.extend(contact.quotient_coordinates)
+        saturation_factors.append(contact.weighted_admissibility_factor)
+        omission_coordinates.append((contact.s, contact.t))
+
+    pairwise_value_differences = []
+    distinct_value_gates = []
+    for left in range(len(contacts)):
+        for right in range(left + 1, len(contacts)):
+            first = contacts[left]
+            second = contacts[right]
+            first_zero = first.M.subs(first.variable, 0)
+            second_zero = second.M.subs(second.variable, 0)
+            first_prime_zero = sp.diff(first.M, first.variable).subs(first.variable, 0)
+            second_prime_zero = sp.diff(second.M, second.variable).subs(second.variable, 0)
+            delta_s = sp.expand(
+                first_prime_zero * second.scale_denominator
+                - second_prime_zero * first.scale_denominator
+            )
+            delta_t = sp.expand(
+                -first_zero * second.scale_denominator
+                + second_zero * first.scale_denominator
+            )
+            pairwise_value_differences.append((delta_s, delta_t))
+            distinct_value_gates.append(
+                sp.symbols(
+                    f"_multi{degree}_value_gate_{left}_{right}_s "
+                    f"_multi{degree}_value_gate_{left}_{right}_t"
+                )
+            )
+
+    return MultipleOmissionIncidence(
+        degree=degree,
+        partitions=partitions,
+        contacts=contacts,
+        coefficient_parameters=coefficient_parameters,
+        equations=tuple(equations),
+        marked_points=tuple(marked_points),
+        saturation_factor=sp.factor(sp.prod(saturation_factors)),
+        gate=sp.symbols(f"_multi{degree}_gate"),
+        omission_coordinates=tuple(omission_coordinates),
+        pairwise_value_differences=tuple(pairwise_value_differences),
+        distinct_value_gates=tuple(distinct_value_gates),
+    )
+
+
+def two_omission_incidence(degree, left_partition, right_partition):
+    """Build ``a*M_left-b*M_right=alpha*W+beta`` uniformly.
+
+    The returned high-coefficient equations are the compact root-space form
+    of the shared-seed incidence.  The full ``multiple_omission_incidence`` is
+    retained alongside it to impose endpoint normalization and distinguish
+    common from genuinely different omitted target values.
+    """
+    degree = int(degree)
+    shared = multiple_omission_incidence(
+        degree, (tuple(left_partition), tuple(right_partition))
+    )
+    left, right = shared.contacts
+    W = sp.symbols(f"_two{degree}_W")
+    left_polynomial = left.M.subs(left.variable, W)
+    right_polynomial = right.M.subs(right.variable, W)
+    left_scale, right_scale = sp.symbols(f"_two{degree}_a _two{degree}_b")
+    affine_slope, affine_intercept = sp.symbols(
+        f"_two{degree}_alpha _two{degree}_beta"
+    )
+    affine_difference = sp.expand(
+        left_scale * left_polynomial
+        - right_scale * right_polynomial
+        - affine_slope * W
+        - affine_intercept
+    )
+    polynomial = sp.Poly(affine_difference, W)
+    equations = tuple(
+        sp.expand(polynomial.coeff_monomial(W**power))
+        for power in range(degree + 1)
+    )
+    collision_discriminant = sp.factor(
+        left.distinct_root_factor * right.distinct_root_factor
+    )
+    return TwoOmissionIncidence(
+        degree=degree,
+        partitions=(left.multiplicities, right.multiplicities),
+        variable=W,
+        left=left,
+        right=right,
+        left_scale=left_scale,
+        right_scale=right_scale,
+        affine_slope=affine_slope,
+        affine_intercept=affine_intercept,
+        affine_difference=affine_difference,
+        equations=equations,
+        collision_discriminant=collision_discriminant,
+        saturation_factor=sp.factor(
+            left_scale
+            * right_scale
+            * collision_discriminant
+            * left.weighted_admissibility_factor
+            * right.weighted_admissibility_factor
+        ),
+        shared_seed_incidence=shared,
     )
 
 
