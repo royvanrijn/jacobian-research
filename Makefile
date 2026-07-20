@@ -19,6 +19,7 @@ verify-core: verify-minimal
 	$(PYTHON) scripts/verify_counterexample.py
 	$(PYTHON) scripts/audit_map_consistency.py
 	$(PYTHON) scripts/cubic_model.py
+	$(PYTHON) scripts/verify_marked_root_model.py
 	$(PYTHON) scripts/image_nonproperness.py
 	$(PYTHON) scripts/verify_exceptional_fibers.py
 	$(PYTHON) scripts/verify_image_nonproperness_inclusions.py
@@ -38,6 +39,7 @@ verify-theorems:
 	$(PYTHON) scripts/verify_degree12_branch_intersection.py
 	$(PYTHON) scripts/verify_dicritical_divisors.py
 	$(PYTHON) scripts/classify_transfer_block_k2.py
+	$(PYTHON) scripts/verify_allocation_hensel_product.py
 	$(PYTHON) scripts/verify_omitted_value_classification.py
 	$(PYTHON) scripts/verify_repeated_root_boundary.py
 

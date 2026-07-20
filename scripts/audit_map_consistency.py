@@ -26,7 +26,7 @@ CANONICAL = (
     y + 3*x*u**2*z + 3*x*y**2*(4 + 3*x*y),
     2*x - 3*x**2*y - x**3*z,
 )
-ENVIRONMENT = {"x": x, "y": y, "z": z, "u": u}
+ENVIRONMENT = {"x": x, "y": y, "z": z, "u": u, "w": u}
 
 
 def assignment(path: str, name: str) -> ast.expr:
@@ -85,6 +85,7 @@ DIRECT_MAPS = (
     "scripts/keller_tangent.py",
     "scripts/nonproper_fiber_benchmark.py",
     "scripts/verify_counterexample.py",
+    "scripts/verify_marked_root_model.py",
 )
 for source in DIRECT_MAPS:
     assert_same(source, extracted_map(source))

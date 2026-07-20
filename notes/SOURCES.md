@@ -32,6 +32,13 @@ materials that have not yet been located.
 - [MathOverflow: explicit cubic model with S3 monodromy](https://mathoverflow.net/questions/513387/galois-structure-of-the-new-counterexample-to-the-jacobian-conjecture-an-explic):
   primitive element `t=y+1/x`, reconstruction, discriminant, and monodromy
   argument. This is a question/discussion, not a refereed paper.
+- [Andy Jiang (`@davikrehalt`), geometric interpretation](https://x.com/davikrehalt/status/2079175065695035442):
+  public post adopting the binary-cubic/marked-projective-root formulation.
+  The status was posted 20 July 2026 at 12:02:19 UTC and located for this
+  audit 20 July 2026 at 22:43 UTC (21 July 00:43 CEST). Its affine
+  cubic/reconstruction and fiber consequences overlap repository claims
+  C02--C03; the projective marked-root organization is used here with
+  attribution and without a priority claim.
 - [Encyclopedia of Mathematics: Jacobian conjecture](https://encyclopediaofmath.org/wiki/Jacobian_conjecture):
   established formulation, reductions, and references predating the
   announcement.

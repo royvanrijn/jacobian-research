@@ -47,6 +47,25 @@ Zhang's page is a same-day consequence audit, not the discovery record. Its
 value for provenance is its direct link to the announcement and exact formula
 transcription.
 
+## Marked-projective-root interpretation
+
+Qiaochu Yuan's same-day MathOverflow update links a geometric interpretation
+to [Andy Jiang (`@davikrehalt`), status
+`2079175065695035442`](https://x.com/davikrehalt/status/2079175065695035442).
+The status ID encodes a posting time of 20 July 2026 at 12:02:19 UTC. The link
+and attribution were located for this audit at 20 July 2026 22:43 UTC
+(21 July 00:43 CEST).
+
+The repository adopts from that post the organization of the source as binary
+cubics with a marked simple projective root. The affine cubic, its derivative
+reconstruction, generic degree, discriminant, root at infinity, and `3/1/0`
+fiber results substantially overlap the pre-existing C02--C03 material in
+`IMAGE_AND_NONPROPERNESS.md` and its exact scripts. The new
+`MARKED_ROOT_MODEL.md` supplies the two-chart global isomorphism proof and
+credits the public post for the projective marked-root formulation. This
+audit has not established priority for that formulation, and the repository
+makes no such claim.
+
 ## Not yet located
 
 - the original Fable conversation or full prompt;

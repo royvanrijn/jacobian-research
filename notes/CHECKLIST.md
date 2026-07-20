@@ -142,6 +142,10 @@ formal derivations of its universal quantifier.
   rank-four flat structure and non-Gorenstein coincident-root fiber.
 - [ ] Prove the global equalizer theorem for compensating transfers at several
   roots and classify the blocks `Z_k` for `k>=3`.
+- [x] Prove the strong Hensel-product decomposition and reduce affine rigidity
+  to a transverse length upper bound.
+- [x] Prove the quadratic-cubic colength-sixteen upper bound in the `(2,-2)`
+  case and identify its affine equalizer with `Z_2 completed-tensor Z_2`.
 - [ ] Determine ramification divisors, conductors, and scheme-theoretic branch
   multiplicities of the remaining component normalizations.
 - [x] Verify the threshold-`r` atom set `{r,...,2r-1}` and automatic abc bound

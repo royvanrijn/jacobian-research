@@ -50,6 +50,20 @@ y+3x(1+xy)^2z+3xy^2(4+3xy),
 \right).
 \]
 
+The source is the space of binary cubics with a marked simple projective
+root; the Keller map forgets the marked root.  More precisely, `(x,y,z)`
+marks `[1+xy:x]` on
+
+\[
+cU^3-2U^2V+bUV^2-2aV^3=0,
+\]
+
+and this identifies the source with the simple-root locus of the finite
+degree-three incidence cover.  This is the main conceptual explanation of the
+determinant, generic degree three, root at infinity, `3/1/0` fiber table, and
+omitted triple-root locus; see
+[The cubic map as a marked-root space](notes/MARKED_ROOT_MODEL.md).
+
 Here is a short structural proof of the determinant.  On `x!=0`, use the
 inverse-chart coordinates
 
@@ -112,7 +126,7 @@ The determinant also has two executable checks: one with SymPy and one with an
 independent standard-library sparse-polynomial implementation.  No global
 geometry or family theorem is needed for this minimal certificate.
 
-## 2. Inverse equation and reconstruction
+## 2. Marked-root inverse model and reconstruction
 
 Write a target as `(a,b,c)` and, on `x!=0`, set
 
@@ -154,9 +168,17 @@ Q=27a^2c^2-18abc+16a+b^3c-b^2.
 
 ([Claim C02](CLAIMS.md#c02))
 
-This model also explains the failure of properness: repeated inverse roots are
-precisely the reconstruction poles, so sheets can escape to infinity without
-finite ramification.
+Projectively, `P` is the binary cubic above.  Its root `[1:0]` when `c=0`
+reconstructs regularly to `(0,b,a-4b^2)`, so it is exactly the `x=0` chart,
+not an escaping sheet.  The marked-root theorem identifies all of `A^3` with
+the simple-root locus, including this infinity chart.  Repeated marked roots
+form the ramification divisor of the ambient finite incidence cover; that
+divisor is removed from the source.  It is not a branch divisor of `F`, which
+is everywhere etale.
+
+This model also explains the failure of properness: repeated finite inverse
+roots are reconstruction poles, so sheets can escape to infinity without
+finite ramification of the affine Keller map.
 
 ## 3. Image, fibers, and nonproperness
 
@@ -182,6 +204,11 @@ and `Gamma=Sing(V(Q))`. The complete affine fiber table is:
 | `Q=0` away from `Gamma` | 1 |
 | `Gamma` | 0 |
 
+These counts are simply the numbers of simple projective roots of the binary
+cubic: three distinct roots, a double root plus a simple root, or a triple
+root.  In the last case coefficient comparison gives
+`3bc=4, 27ac^2=4`, equivalently `3bc=4, 12a=b^2`.
+
 The proof includes the `x=0` chart, every exceptional cubic, explicit escaping
 paths over all boundary strata, and a converse boundedness argument off
 `V(Q)`. Root meridians generate the full monodromy group `S_3`.
@@ -189,6 +216,9 @@ paths over all boundary strata, and a converse boundedness argument off
 
 See [Construction and anatomy](notes/CONSTRUCTION.md) and
 [Exact image, fibers, and nonproperness](notes/IMAGE_AND_NONPROPERNESS.md).
+The latter remains the proof of the exact image and nonproperness statements;
+the [marked-root model](notes/MARKED_ROOT_MODEL.md) packages their fiber
+geometry.
 
 ## 4. Weighted inverse families
 
@@ -531,6 +561,15 @@ differ by an affine term, the factorization scheme is finite flat of rank four
 over the reduced quadratic-factor space, with coincident-root fiber
 `k[X,Y]/(X^3,XY,Y^2)`. ([Claim C17](CLAIMS.md#c17))
 
+For arbitrary pairs of allocations, strong equality decomposes formally as a
+Hensel tensor product of the rootwise transfer blocks and a smooth common
+factor.  The actual normalized-branch intersection is the same product once a
+single global affine-difference length bound is verified.  In the first global
+higher-transfer case `(2,-2)`, that bound is sixteen and the completed
+intersection is `Z_2 completed-tensor Z_2`, with Hilbert function
+`(1,4,6,4,1)`.
+([Claim C18](CLAIMS.md#c18))
+
 ### Proof architecture for closures and intersections
 
 Collision gives the forward closure implication:
@@ -664,7 +703,7 @@ Useful targets are:
 | Command | Scope |
 |---|---|
 | `make verify-minimal` | dependency-free determinant, collision, and degrees |
-| `make verify-core` | foundational map, cubic inverse, exact image, fibers, and nonproperness |
+| `make verify-core` | foundational map, marked-root model, cubic inverse, exact image, fibers, and nonproperness |
 | `make verify-theorems` | exact identities and local models used by the written uniform proofs |
 | `make verify-regressions` | bounded-degree family, discriminant, Chebotarev, and quartic regressions |
 | `make verify-derived` | regenerate and verify the large stable-equivalent normal forms |
