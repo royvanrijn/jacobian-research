@@ -487,6 +487,7 @@ along `E_(6,6)`, the completed local ring of `C_(3,2)` is the fiber product of
 two regular fourfold branches over
 `k[[t,epsilon,eta]]/(epsilon^2,eta^2)`.  Its conductor has transverse
 colength four, so the branches are quadratically tangent rather than nodal.
+See [the generic degree-twelve local singularity](notes/DEGREE12_LOCAL_SINGULARITY.md).
 
 ### Proof architecture for closures and intersections
 

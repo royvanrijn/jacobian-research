@@ -108,9 +108,39 @@ quadratic_quotient_rank = (combined.row_join(quadratic_matrix).rank()
                            - combined_rank)
 assert quadratic_quotient_rank == 2
 
+# Exact scalar representatives for the two quadratic relations on the three
+# common tangent directions.  Off-diagonal entries use the bilinear-matrix
+# convention, so the associated polynomial has coefficients 2*q_ij.
+annihilator = sp.Matrix.hstack(*combined.T.nullspace()).T
+projected_quadratics = annihilator*quadratic_matrix
+q1 = sp.Matrix([[186624, 324000, -194400, 953125, -806250, 765000]])
+q2 = sp.Matrix([[0, 0, 0, 25, -30, 36]])
+assert projected_quadratics.col_join(q1).rank() == projected_quadratics.rank()
+assert projected_quadratics.col_join(q2).rank() == projected_quadratics.rank()
+assert q1.col_join(q2).rank() == 2
+x0, x1, x2 = sp.symbols("x0 x1 x2")
+q1_polynomial = (q1[0, 0]*x0**2 + 2*q1[0, 1]*x0*x1
+                 + 2*q1[0, 2]*x0*x2 + q1[0, 3]*x1**2
+                 + 2*q1[0, 4]*x1*x2 + q1[0, 5]*x2**2)
+q2_polynomial = (q2[0, 0]*x0**2 + 2*q2[0, 1]*x0*x1
+                 + 2*q2[0, 2]*x0*x2 + q2[0, 3]*x1**2
+                 + 2*q2[0, 4]*x1*x2 + q2[0, 5]*x2**2)
+assert sp.factor(q2_polynomial) == (5*x1-6*x2)**2
+assert sp.factor(q1_polynomial.subs(x2, sp.Rational(5, 6)*x1)) == \
+       9*(144*x0+125*x1)**2
+
+# The stronger equality M_+=M_- supplies the quotient by two independent
+# squares, with standard basis 1, epsilon, eta, epsilon*eta and length four.
+epsilon, eta = sp.symbols("epsilon eta")
+dual_block = sp.groebner([epsilon**2, eta**2], epsilon, eta)
+standard_monomials = (sp.Integer(1), epsilon, eta, epsilon*eta)
+assert all(dual_block.reduce(monomial)[1] == monomial
+           for monomial in standard_monomials)
+
 print("PASS: both normalization differentials have rank 4")
 print("PASS: at the admissible (6,6) witness their tangent images meet in dimension 3")
 print("PASS: an xy=0 normal-crossing model is impossible (the stratum has dimension 1)")
 print("PASS: the excess common tangent directions separate with quadratic rank 2")
 print("PASS: one exchanged sixfold block is a dual number: Q^2=T^3 gives b^2=0")
-print("PASS: two independent blocks give transverse gluing length 4")
+print("PASS: the quadratic upper bound and dual-block lower bound both give length 4")
+print("PASS: two independent blocks give D=k[[t,e,n]]/(e^2,n^2)")

@@ -254,9 +254,15 @@ two excess common tangent directions at the witness.
 
 ## Completed-local ring and conductor
 
-The higher-order calculation is controlled by one universal sixfold block.
-For the factors centered at one of the two distinct roots, equality of the
-polynomials on the two sheets is
+Equality of normalized seeds is equality of the coefficients of `M` in
+degrees `2,...,12`; the constant and linear coefficients are discarded by
+the normalization.  Equivalently, the two monic polynomials `M_+,M_-` may
+differ by an affine polynomial.  This distinction is essential in the
+scheme-theoretic calculation below.
+
+Begin with the closed subscheme on which the stronger equality `M_+=M_-`
+holds.  It is controlled by one universal sixfold block.  For the factors
+centered at one of the two distinct roots, the equation is
 
 \[
 Q^2=T^3,
@@ -275,10 +281,10 @@ Coefficient comparison in `Q^2-T^3` has the exact Groebner basis
 a,\qquad v,\qquad 2u-3b,\qquad b^2.              \tag{3}
 \]
 
-Thus the scheme of exchanged factorizations at one sixfold root is a smooth
-root coordinate times one dual number.  Hensel separation at the two
-distinct roots makes the two blocks independent.  Before the incidence
-condition their off-diagonal double scheme is therefore
+Thus this stronger-equality subscheme at one sixfold root is a smooth root
+coordinate times one dual number.  Hensel separation at the two distinct
+roots makes the two blocks independent.  Before the incidence condition it
+is therefore
 
 \[
 k[[\alpha,\beta]][\epsilon,\eta]/
@@ -289,8 +295,28 @@ The incidence equation `Phi=0` is smooth in the root directions on a dense
 open subset of `E_(6,6)` (both root derivatives are nonzero at the displayed
 admissible witness).  Formal implicit-function elimination removes one of
 `alpha,beta`, including its nilpotent correction, and introduces no further
-relation between `epsilon,eta`.  Consequently the off-diagonal double scheme
-over the geometric generic point of `E_(6,6)` is
+relation between `epsilon,eta`.  Hence the stronger-equality subscheme has
+transverse length four.
+
+It remains to show that allowing `M_+-M_-` to be affine does not enlarge the
+formal double scheme.  Take a transverse slice to `E_(6,6)`.  The first
+differential calculation gives embedding dimension two.  The second-jet
+calculation gives two initial quadratic relations whose reduced common zero
+is the origin; after independent linear changes they have leading terms
+`epsilon^2` and `eta^2`.  Therefore the associated graded algebra is a
+quotient of
+
+\[
+k[\epsilon,\eta]/(\epsilon^2,\eta^2),
+\]
+
+so its length is at most four.  On the other hand, the stronger-equality
+subscheme (3) is a closed subscheme of it and already has length four.  The
+surjection of local Artin rings is consequently an isomorphism.  This
+length sandwich proves that the omitted affine coefficients create neither
+extra nilpotents nor embedded components.
+
+Consequently the full off-diagonal double scheme along the dense open set is
 
 \[
 \boxed{D=k[[t,\epsilon,\eta]]/
@@ -312,8 +338,11 @@ B_+/(z,x^2,y^2)\simeq D\simeq
 B_-/(z',x'^2,y'^2).
 \]
 
-Direct formal elimination of the finite coefficient map then gives the
-completed local ring as the fiber product
+By definition, the completed coefficient ring is the equalizer of the two
+normalization-sheet maps subject to equality of all normalized coefficients.
+The preceding calculation identifies that formal equivalence relation with
+the two quotient maps to `D`.  Thus the completed local ring is the fiber
+product
 
 \[
 \boxed{
