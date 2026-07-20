@@ -57,5 +57,6 @@ transcription.
 - a direct archived copy of the announcement with an unambiguous UTC timestamp.
 
 Accordingly, the formula and public attribution trail are corroborated, but
-the construction provenance is still incomplete. Mathematical validity rests
-on the exact certificates, not on attribution or source authority.
+the construction provenance is still incomplete.  Mathematical validity rests
+on the executable core certificate together with the written proofs of the
+subsequent structural theorems, not on attribution or source authority.

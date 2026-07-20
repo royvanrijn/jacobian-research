@@ -1,5 +1,20 @@
 # Implementation status
 
+This document uses three distinct kinds of support:
+
+1. **Executable certificate:** an exact computation directly establishes the
+   stated finite identity or example.
+2. **Uniform written proof:** a conventional mathematical argument establishes
+   a quantified theorem in every degree.  Scripts may check its algebraic
+   lemmas, but do not constitute a formal proof assistant derivation.
+3. **Regression test:** exact bounded-degree examples test an implementation
+   and guard the uniform argument against algebraic mistakes; they do not
+   establish the all-degree quantifier.
+
+Unless explicitly called an executable certificate, the all-degree statements
+below have status (2), generally accompanied by support of type (1) for key
+identities and type (3) in selected degrees.
+
 ## Exact core
 
 - Two independent implementations verify `det DF = -2`, the three-point
@@ -22,10 +37,11 @@
   has exact verifiers for polynomiality, determinant, collision, inverse,
   discriminant, special fibers, nonproperness, singular locus, image, and full
   geometric/arithmetic monodromy `S_4`.
-- The universal inverse-pencil theorem now proves irreducibility, birational
-  discriminant normalization, and geometric/arithmetic monodromy `S_n` for
-  every characteristic-zero weighted seed; canonical and deformed degrees
-  through eight have an exact regression audit.
+- A uniform written proof of the universal inverse-pencil theorem establishes
+  irreducibility, birational discriminant normalization, and
+  geometric/arithmetic monodromy `S_n` for every characteristic-zero weighted
+  seed.  Canonical and deformed degrees through eight have exact regression
+  tests; those tests do not prove the all-degree statement.
 - The canonical family `H_d=W^d(1-W)` now has a uniform image and
   nonproperness theorem: the inverse-degree-three and four members have one
   omitted curve each, all inverse degrees at least five are surjective, and
@@ -46,12 +62,13 @@
   Chebotarev theorem: degree-`n` fiber sizes converge to the fixed-point law of
   `S_n`, with target counts `p_{n,j}q^3+O(q^(5/2))` and limiting image density
   `1-D_n/n!`.
-- The generic degree-`n` discriminant theorem now identifies the curve as a
-  rational dual with `n-2` cusps and `(n-2)(n-3)/2` nodes in every degree. A
+- A uniform written proof of the generic degree-`n` discriminant theorem
+  identifies the curve as a rational dual with `n-2` cusps and
+  `(n-2)(n-3)/2` nodes in every degree. A
   uniform contact-incidence dimension proof and tangent-chord normalization
   show that the good locus meets every admissible degree. Thus generic seeds
   are surjective for all inverse degrees at least five. Exact rational seeds
-  through degree ten remain as independent regression certificates.
+  through degree ten remain as independent exact regression tests.
 - The higher-cusp, cusp-plus-branch, tritangent, and ordinary-bitangent strata
   now have reusable universal ideals with explicit Rabinowitsch saturation by
   every diagonal, cusp, degree, and weighted-admissibility factor.
@@ -60,19 +77,19 @@
   degree-five polynomial `F(R,P)`, identifies the degree-six main locus as a
   rational irreducible quartic surface, and proves that degree-seven
   nonsurjectivity first occurs in codimension two.
-- The uniform exceptional-seed theorem identifies the nonsurjective locus as
+- The written uniform exceptional-seed proof identifies the nonsurjective locus as
   the union of all full-contact strata and proves
   `dim E_lambda=ell(lambda)-1` by a weighted-Vandermonde determinant.  The
   multiple-omission API separates common collision values from genuinely
   distinct omitted values.  Exact degree-six and degree-eight calculations
   find only the predicted common collision boundaries and no off-diagonal
   intersections.
-- Merging partition parts now defines an executable collision partial order.
-  Tangent-chord deformation proves every coarser stratum lies in the closure
+- Merging partition parts defines an executable combinatorial collision-order
+  calculation.  The written tangent-chord deformation proves every coarser stratum lies in the closure
   of every refining stratum, and Mason--Stothers uniformly rules out
   off-collision two-omission solutions for distinct maximal 2/3 partitions.
-- The maximal root hypersurfaces `Phi_(2^a 3^b)` are uniformly irreducible.
-  The proof is primitive-linear for `b>=3`, nonsquare-quadratic for `a>=3`,
+- The maximal root hypersurfaces `Phi_(2^a 3^b)` are uniformly irreducible by
+  a written proof: primitive-linear for `b>=3`, nonsquare-quadratic for `a>=3`,
   and has seven exact endpoint-rank certificates.  Thus maximal 2/3 types
   index the actual irreducible components of the exceptional-locus closure.
   Their dimensions are `a+b-1`, the full exceptional codimension is

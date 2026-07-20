@@ -22,9 +22,22 @@ one-variable pencil `H(W)-sW+t`. For this family the repository proves full
 symmetric monodromy, a generic nodal-cuspidal discriminant theorem in every
 degree, generic surjectivity from inverse degree five onward, a complete
 contact-partition and irreducible-component theorem for exceptional seeds, and
-the associated finite-field Chebotarev law. Every main algebraic claim has an
-executable exact certificate or an explicitly identified external theorem
-input.
+the associated finite-field Chebotarev law.
+
+### Proof status
+
+The foundational three-dimensional counterexample has direct executable
+certificates.  The all-degree weighted-family results are conventional
+mathematical theorems proved by uniform written arguments: irreducibility of
+`H(W)-sW+t`, birational normalization of the discriminant, transitivity plus
+local transpositions for `S_n`, Mason--Stothers separation, weighted
+Vandermonde dimension calculations, and tangent-chord collision order.
+
+The accompanying scripts verify the algebraic identities used in those
+arguments and test exact examples in bounded degrees (typically through
+degree eight or ten).  Those computations are regression tests and proof
+audits; they are not formal machine proofs of the quantified all-degree
+statements.  External theorem inputs are identified where they occur.
 
 ## 1. Main theorem
 
@@ -588,7 +601,7 @@ The minimal certificate requires only the Python standard library:
 python3 scripts/verify_counterexample_independent.py
 ```
 
-The complete exact suite is:
+The routine executable identity and regression suite is:
 
 ```bash
 python3 -m venv .venv
@@ -603,7 +616,7 @@ Useful targets are:
 | `make verify-minimal` | dependency-free determinant, collision, and degrees |
 | `make verify-core` | minimal certificate plus cubic inverse identities |
 | `make verify-geometry` | cubic image and nonproperness |
-| `make verify-family` | weighted families, discriminants, contact strata, and quartic geometry |
+| `make verify-family` | identities and finite-degree regressions for weighted families, discriminants, contact strata, and quartic geometry |
 | `make verify-normal-forms` | regenerate and verify the large normal forms |
 | `make scan-weighted-seeds` | reproduce the exploratory bounded seed scan |
 
@@ -615,8 +628,9 @@ Julia is optional and is used only for the numerical continuation benchmark in
 The logical status of every claim is separated from discovery provenance:
 
 - [FACTS.md](notes/FACTS.md) records the principal exact statements.
-- [IMPLEMENTATION_STATUS.md](notes/IMPLEMENTATION_STATUS.md) maps statements to
-  executable support.
+- [IMPLEMENTATION_STATUS.md](notes/IMPLEMENTATION_STATUS.md) distinguishes
+  uniform written proofs from executable identities and finite-degree
+  regressions.
 - [CHECKLIST.md](notes/CHECKLIST.md) distinguishes completed certificates from
   remaining independent audits.
 - [PROVENANCE_AUDIT.md](notes/PROVENANCE_AUDIT.md) and
@@ -628,6 +642,8 @@ Additional exact analyses include the commuting inverse-Jacobian frame
 implications ([DIRECT_CONSEQUENCES.md](notes/DIRECT_CONSEQUENCES.md)).
 
 The 627-seed scan is retained as an exploratory ledger, not as evidence for
-the theorem-level claims. The foundational three-dimensional certificate does
-not depend on the family theory, numerical continuation, high-dimensional
+the theorem-level claims.  Likewise, passing `make verify` does not by itself
+prove the all-degree family theorems; those depend on the cited written
+uniform arguments.  The foundational three-dimensional certificate does not
+depend on the family theory, numerical continuation, high-dimensional
 reductions, or provenance assertions.

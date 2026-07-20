@@ -3,7 +3,10 @@
 The shortest certificate comes first. Later geometry and consequences must not
 be used to support the determinant-and-collision certificate on which they
 depend. A checked item has an executable or written certificate in this
-repository; it does not by itself claim independent replication.
+repository; it does not by itself claim independent replication.  For a
+quantified all-degree item, a check normally records completion of a uniform
+written proof.  Finite-degree scripts are regression tests for that proof, not
+formal derivations of its universal quantifier.
 
 ## 1. Minimal certificate
 
@@ -174,8 +177,8 @@ repository; it does not by itself claim independent replication.
 - [ ] Confirm that generators and verifiers do not share hidden failure modes.
 - [ ] Recover or document the absence of original prompts, search code, seeds,
   intermediate candidates, and a primary timestamped announcement.
-- [ ] Run the complete certificate independently from a clean checkout and
-  archive its logs.
+- [ ] Run the complete executable identity and regression suite independently
+  from a clean checkout and archive its logs.
 
 ## Recommended next order
 
@@ -185,11 +188,12 @@ repository; it does not by itself claim independent replication.
 4. Audit compactifications, stable equivalence, and external implications.
 5. Compute compact coefficient ideals for selected lower-dimensional strata.
 
-The routine executable audit is:
+The routine executable identity and regression audit is:
 
 ```bash
 make verify
 ```
 
 Large generated normal forms and archival checks remain separate from this
-routine target.
+routine target.  Passing it does not replace the written proofs of the
+all-degree theorems.
