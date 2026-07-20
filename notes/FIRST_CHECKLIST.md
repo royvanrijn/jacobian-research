@@ -12,6 +12,38 @@ Labels used below:
   yet contain.
 - **Analyse**: explain structure already visible in the exact computations.
 
+## Current verification run: 20 July 2026
+
+`make verify` completed successfully from a newly created ignored `.venv` on
+macOS with Python 3.14.2, SymPy 1.14.0, mpmath 1.3.0, msolve 0.10.1, and Julia
+1.12.6. The first invocation failed only because `.venv` did not yet exist;
+after installing `requirements.txt`, the complete declared suite exited zero.
+
+The run reproduced:
+
+- Python compilation and all 19 README relative-link checks;
+- `det DF = -2`, the three-point rational collision, coordinate degrees
+  `(7,6,4)`, and the displayed Palais--Smale escape curve;
+- the primitive cubic identities, rational reconstruction, discriminant
+  identity, simple-root and `x=0` fibre checks, singular-locus calculation,
+  boundary elimination/normalization, and explicit root-meridian checks;
+- the validation ladder, including msolve F4/F4SAT controls and the planted
+  chart and weighted-lift controls;
+- translated-box checks through `n=4`, Newton translation through exponents
+  eight, and the cached Stage D outcome classifications;
+- the scoped `(9,27)` terminal elimination over `Q` and its three modular
+  cross-checks; as documented by the script, this assumes the preceding
+  published Newton reductions; and
+- all 24 retained characteristic-zero msolve certificates: 23 reduced bases
+  `[1]` and the exact `(9,27)` elimination relation.
+
+This run establishes reproducibility of the repository's declared regression
+suite on one local environment. It is not a second-CAS verification, an audit
+of the literature reductions, an independent ideal-membership proof, or a run
+of scripts omitted from the `make verify` target (including the 95D/510D
+artifact generators/verifiers, finite-field scripts, dynamics scripts, Julia
+homotopy benchmarks, and broad `(72,108)` builders).
+
 ## 1. Establish a trustworthy baseline
 
 - [ ] **Verify** the provenance of the displayed 3D map: locate the earliest
@@ -21,12 +53,13 @@ Labels used below:
 - [ ] **Verify** repository integrity before treating results as archival.
   Record a commit, Python/Julia/msolve versions, platform, commands, runtimes,
   and hashes for retained certificates and generated large artifacts.
-- [ ] **Verify** file-retention claims. The README says top-level result JSON
-  files are ignored, but no `.gitignore` is currently present; decide which
-  artifacts are source, retained evidence, regenerated output, or local noise.
-- [ ] **Verify** a clean-environment run of `make verify`, then run the 3D core
+- [x] **Verify** file-retention claims. Top-level generated result JSON/TXT
+  files and local noise are now ignored; certificates, solver inputs, Markdown
+  summaries, source, and pinned dependency manifests remain trackable.
+- [x] **Verify** a clean-environment run of `make verify`, then run the 3D core
   scripts without msolve or Julia to make the minimal dependency boundary
-  explicit. Preserve complete logs, including skipped optional checks.
+  explicit. The 20 July 2026 run above passed; `verify-core` uses only the
+  pinned Python environment. Preserve complete logs in a future archival run.
 - [ ] **Verify** that verifier scripts do not merely re-use the same formulas,
   serialization assumptions, or helper routines as their generators. Add
   independent parsers/checks where shared failure modes remain.
@@ -40,16 +73,18 @@ msolve, Julia, generated artifacts, or external literature.
 - [ ] **Verify** coefficient-by-coefficient that `det DF = -2` in at least two
   unrelated systems, and derive a short hand-checkable proof using the weighted
   chart identities rather than only full symbolic expansion.
-- [ ] **Verify** the three rational substitutions and their pairwise
+- [x] **Verify** the three rational substitutions and their pairwise
   distinctness directly from the displayed formula. These two checks alone are
-  the minimal counterexample certificate.
+  the minimal counterexample certificate. Reproduced exactly by
+  `verify_counterexample.py` in the current run.
 - [ ] **Verify** that the formula used by every script and note is identical,
   including signs, output order, determinant normalization, and coordinate
   degrees `(7,6,4)`.
-- [ ] **Verify** the primitive cubic identities, rational reconstruction, and
-  generic degree three independently. Separate what follows from one explicit
-  three-point fibre plus etaleness from what depends on elimination or
-  irreducibility.
+- [x] **Verify** the primitive cubic identities and rational reconstruction.
+  These exact identities were reproduced by `cubic_model.py`.
+- [ ] **Verify** generic degree three independently. Separate what follows from
+  one explicit three-point fibre plus etaleness from what depends on
+  elimination or irreducibility.
 - [ ] **Analyse** the smallest robust certificate format: displayed map,
   determinant proof, collision, and optional reconstruction identities. It
   should be reviewable without trusting repository infrastructure.
