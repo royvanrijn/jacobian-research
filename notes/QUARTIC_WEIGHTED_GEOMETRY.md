@@ -49,6 +49,8 @@ G(1,0,0)=G(-1,0,2)=(0,0,1).
 - [x] Boundary saturation theorem for repeated extra zeros.
 - [x] Good-reduction finite-field Chebotarev law from universal `S_n`
   monodromy.
+- [x] Generic nodal-cuspidal discriminant theorem and generic surjectivity in
+  inverse degree at least five.
 
 ## Quartic inverse on `C!=0`
 

@@ -46,6 +46,12 @@
   Chebotarev theorem: degree-`n` fiber sizes converge to the fixed-point law of
   `S_n`, with target counts `p_{n,j}q^3+O(q^(5/2))` and limiting image density
   `1-D_n/n!`.
+- The generic degree-`n` discriminant theorem schema now identifies the curve
+  as a rational dual with `n-2` cusps and `(n-2)(n-3)/2` nodes. Exact rational
+  nonemptiness certificates cover degrees `3,...,10`; in that range this proves
+  generic surjectivity from degree five onward and gives the degree-five
+  exceptional equation its cusp-plus-branch interpretation. A uniform
+  graph-family transversality proof remains to promote the result to all `n`.
 - A bounded scan of 627 weighted seeds is exploratory and explicitly separated
   from theorem-level claims.
 
@@ -68,5 +74,6 @@
   now have exact certificates.
 - Audit the stable-equivalence steps and external implication theorems against
   their primary sources.
-- Make the good-prime exclusion effective for individual seeds and compute
-  exact corrections for selected higher-degree small-characteristic models.
+- Make the generic dual-curve transversality proof fully archival against the
+  classical projective-duality literature, then make good-prime exclusions
+  effective for individual seeds.

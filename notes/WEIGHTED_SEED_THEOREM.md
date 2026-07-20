@@ -121,6 +121,12 @@ monodromy alone:
 - whether extra zeros of `H` introduce additional boundary branches;
 - radical decompositions of the nonproperness hypersurface.
 
+Their expected generic behavior is organized by the projective-dual theorem
+schema in `GENERIC_DISCRIMINANT_CURVE.md`: exact certificates through inverse
+degree ten leave only the expected ordinary cusps and bitangent nodes, while
+special seeds retain the seed-dependent higher collisions listed here. The
+uniform all-degree transversality step is recorded there as remaining work.
+
 For the canonical family `H_d(W)=W^d(1-W)`, the only primitive zeros are the
 distinguished points `0` and `1`. Its global geometry is now proved in
 `CANONICAL_FAMILY_IMAGE.md`. Deformed seeds should be treated afterward

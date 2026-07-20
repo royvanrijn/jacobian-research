@@ -106,6 +106,9 @@ Fibers have `3`, `1`, and `0` affine points respectively on `Q != 0`, on
 - Universal inverse-discriminant normalization and full `S_n` monodromy for
   every characteristic-zero weighted seed:
   [WEIGHTED_SEED_THEOREM.md](notes/WEIGHTED_SEED_THEOREM.md).
+- Generic discriminants as nodal-cuspidal dual curves, with the exact
+  cusp/node theorem schema and rational certificates through degree ten:
+  [GENERIC_DISCRIMINANT_CURVE.md](notes/GENERIC_DISCRIMINANT_CURVE.md).
 - Exact images and nonproperness sets for the full canonical family
   `H_d(W)=W^d(1-W)`:
   [CANONICAL_FAMILY_IMAGE.md](notes/CANONICAL_FAMILY_IMAGE.md).
@@ -144,6 +147,6 @@ Julia is optional and is used only for the numerical nonproper-fiber benchmark.
 
 For a claim-by-claim status and audit order, see
 [FACTS.md](notes/FACTS.md), [IMPLEMENTATION_STATUS.md](notes/IMPLEMENTATION_STATUS.md),
-and [FIRST_CHECKLIST.md](notes/FIRST_CHECKLIST.md). Provenance and historical
+and [CHECKLIST.md](notes/CHECKLIST.md). Provenance and historical
 priority remain distinct from the exact certificate; see
 [PROVENANCE_AUDIT.md](notes/PROVENANCE_AUDIT.md).
