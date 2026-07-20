@@ -13,10 +13,10 @@ F:\mathbb A^3\longrightarrow\mathbb A^3
 
 with constant nonzero Jacobian determinant and a fiber containing three
 distinct rational points. It therefore supplies a counterexample to the
-classical Jacobian conjecture in dimension three. The inverse problem reduces
-to a cubic polynomial, making it possible to determine the exact image, fiber
-stratification, nonproperness set, normalization, and monodromy.
-([Claims C01--C03](CLAIMS.md#c01))
+classical Jacobian conjecture in dimension three. ([Claim C01](CLAIMS.md#c01))
+The inverse problem reduces to a cubic polynomial. ([Claim C02](CLAIMS.md#c02))
+Its exact image, fiber stratification, nonproperness set, and monodromy are
+also determined. ([Claim C03](CLAIMS.md#c03))
 
 The same construction belongs to a weighted family controlled by the
 one-variable pencil `H(W)-sW+t`. For this family the repository proves full
@@ -24,7 +24,6 @@ symmetric monodromy, a generic nodal-cuspidal discriminant theorem in every
 degree, generic surjectivity from inverse degree five onward, a complete
 contact-partition and irreducible-component theorem for exceptional seeds, and
 the associated finite-field Chebotarev law.
-([Claims C04--C13](CLAIMS.md#c04))
 
 ### Proof status
 
@@ -610,6 +609,10 @@ characteristic. Separately, standard reductions produce explicit
 transported rational collisions.
 ([Claim C15](CLAIMS.md#c15))
 
+The explicit quartic weighted model has determinant `-6`, two cusps and one
+node on its discriminant, full `S_4` monodromy, and a completely classified
+image and nonproperness set. ([Claim C14](CLAIMS.md#c14))
+
 See [Finite-field Chebotarev](notes/FINITE_FIELD_CHEBOTAREV.md),
 [exact cubic finite-field distributions](notes/FINITE_FIELD_VALUE_DISTRIBUTION.md),
 [the cubic-homogeneous reduction](notes/CUBIC_HOMOGENEOUS_REDUCTION.md), and
@@ -631,15 +634,29 @@ python3 -m venv .venv
 make verify
 ```
 
+Python is pinned in [`.python-version`](.python-version), and every Python
+dependency is pinned in [`requirements.txt`](requirements.txt).  To retain a
+local environment record and full verification log, run:
+
+```bash
+make verify-logged
+```
+
+This writes `artifacts/verification/environment.txt` and
+`artifacts/verification/verify.log`.  CI runs the four evidence classes in
+separate jobs and archives the corresponding logs for every commit.
+
 Useful targets are:
 
 | Command | Scope |
 |---|---|
 | `make verify-minimal` | dependency-free determinant, collision, and degrees |
-| `make verify-core` | minimal certificate plus cubic inverse identities |
-| `make verify-geometry` | cubic image and nonproperness |
-| `make verify-family` | identities and finite-degree regressions for weighted families, discriminants, contact strata, and quartic geometry |
-| `make verify-normal-forms` | regenerate and verify the large normal forms |
+| `make verify-core` | foundational map, cubic inverse, exact image, fibers, and nonproperness |
+| `make verify-theorems` | exact identities and local models used by the written uniform proofs |
+| `make verify-regressions` | bounded-degree family, discriminant, Chebotarev, and quartic regressions |
+| `make verify-derived` | regenerate and verify the large stable-equivalent normal forms |
+| `make verify-family` | backward-compatible alias for theorem identities plus regressions |
+| `make verify-normal-forms` | backward-compatible normal-form target |
 | `make scan-weighted-seeds` | reproduce the exploratory bounded seed scan |
 
 Julia is optional and is used only for the numerical continuation benchmark in
@@ -649,6 +666,9 @@ Julia is optional and is used only for the numerical continuation benchmark in
 
 The logical status of every claim is separated from discovery provenance:
 
+- [CLAIMS.md](CLAIMS.md) assigns every major README theorem a unique claim ID
+  and records its written proof, executable support, regression role, external
+  dependencies, and independent-audit status.
 - [FACTS.md](notes/FACTS.md) records the principal exact statements.
 - [IMPLEMENTATION_STATUS.md](notes/IMPLEMENTATION_STATUS.md) distinguishes
   uniform written proofs from executable identities and finite-degree

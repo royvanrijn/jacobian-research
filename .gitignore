@@ -17,5 +17,8 @@ __pycache__/
 .coverage
 htmlcov/
 
+# Reproducible verification logs are generated locally and uploaded by CI.
+artifacts/verification/
+
 # Julia local environment products
 .julia/
