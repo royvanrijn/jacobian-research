@@ -240,6 +240,19 @@ discriminant has normalization
 the curve of tangent lines to the graph `Y=H(W)`.
 ([Claim C04](CLAIMS.md#c04))
 
+Globally, the weighted source is the regular-reconstruction open in the
+normalization of the finite marked-root incidence
+
+\[
+H(W)-BCW+cAC^2=0.
+\]
+
+Over `C!=0` this is exactly the simple-root locus. Over `C=0`, normalization
+is essential: finite `gamma=0` source points can lie over the multiple root
+`W=0`, while an additional simple root of `H` can still be a reconstruction
+pole. See [The weighted family as a normalized marked-root
+space](notes/WEIGHTED_MARKED_ROOT_MODEL.md). ([Claim C04](CLAIMS.md#c04))
+
 The repository proves:
 
 1. The generic inverse pencil is irreducible, and its geometric and arithmetic
@@ -263,7 +276,9 @@ The normalized graph compactification has one universal discriminant
 dicritical divisor and explicit Kummer divisors over `C=0` indexed by the
 primitive-root multiplicities of `H`. Their images give the nonproperness set,
 and an omitted value is exactly a fiber supported entirely on the
-discriminant divisor. ([Claim C16](CLAIMS.md#c16))
+discriminant divisor. These are precisely the polar divisors removed from the
+normalized marked-root incidence to recover the affine source.
+([Claim C16](CLAIMS.md#c16))
 
 The main references are
 [the weighted-seed theorem](notes/WEIGHTED_SEED_THEOREM.md),
@@ -271,6 +286,8 @@ The main references are
 [the canonical image theorem](notes/CANONICAL_FAMILY_IMAGE.md), and
 [the repeated-root boundary theorem](notes/REPEATED_ROOT_BOUNDARY.md), and
 [the dicritical compactification theorem](notes/DICRITICAL_COMPACTIFICATION.md).
+The incidence-space formulation is in
+[the weighted marked-root theorem](notes/WEIGHTED_MARKED_ROOT_MODEL.md).
 
 ## 5. Contact partitions and exceptional seeds
 
@@ -561,13 +578,26 @@ differ by an affine term, the factorization scheme is finite flat of rank four
 over the reduced quadratic-factor space, with coincident-root fiber
 `k[X,Y]/(X^3,XY,Y^2)`. ([Claim C17](CLAIMS.md#c17))
 
+The three-transfer block is finite flat of rank eight over the reduced monic
+cubic-factor space.  Its coincident-root fiber has Hilbert function
+`(1,3,3,1)` and socle dimension two, and affine difference again adds no
+points. ([Claim C19](CLAIMS.md#c19))
+
+The four-transfer block is finite flat of rank sixteen over the reduced monic
+quartic-factor space, with affine difference equal to strong equality.  Its
+coincident-root fiber has Hilbert function `(1,4,6,4,1)` and socle dimension
+four.  This verifies the predicted rank `2^k` through `k=4`, while showing
+that the collision algebras are already far from Gorenstein.
+([Claim C20](CLAIMS.md#c20))
+
 For arbitrary pairs of allocations, strong equality decomposes formally as a
 Hensel tensor product of the rootwise transfer blocks and a smooth common
 factor.  The actual normalized-branch intersection is the same product once a
 single global affine-difference length bound is verified.  In the first global
 higher-transfer case `(2,-2)`, that bound is sixteen and the completed
 intersection is `Z_2 completed-tensor Z_2`, with Hilbert function
-`(1,4,6,4,1)`.
+`(1,4,6,4,1)`.  The first mixed case `(2,-1,-1)` also has length sixteen and
+equals `Z_2 completed-tensor Z_1 completed-tensor Z_1`.
 ([Claim C18](CLAIMS.md#c18))
 
 ### Proof architecture for closures and intersections

@@ -267,10 +267,11 @@ under the marking `[1+xy:x]`.
 For this cubic, `I -> A^3` is a finite marked-root cover and the source is the
 complement of its repeated-marked-root divisor.  The general weighted
 inverse-pencil construction has the same pattern: form the finite cover that
-marks a root of `H(W)-sW+t`, reconstruct the source from that root, and remove
-the repeated-root divisor together with any additional reconstruction-pole
-divisors.  [DICRITICAL_COMPACTIFICATION.md](DICRITICAL_COMPACTIFICATION.md)
-(Claim C16) classifies the corresponding dicritical divisors on the normalized
+marks a root of `H(W)-sW+t`, normalize it over the degenerate `C=0` fiber,
+and retain its regular-reconstruction open.  The precise theorem is
+[WEIGHTED_MARKED_ROOT_MODEL.md](WEIGHTED_MARKED_ROOT_MODEL.md).
+[DICRITICAL_COMPACTIFICATION.md](DICRITICAL_COMPACTIFICATION.md) (Claim C16)
+classifies the reconstruction-pole divisors on the corresponding normalized
 inverse-graph compactification.
 
 This interpretation is adopted with attribution to Andy Jiang's public

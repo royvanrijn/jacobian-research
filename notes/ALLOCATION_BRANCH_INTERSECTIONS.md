@@ -240,5 +240,54 @@ D^{\mathrm{aff}}_{(2,-2)}=D^=_{(2,-2)}
 \]
 
 This is the first genuinely global higher-transfer branch-intersection
-theorem.  The next new cases are mixed transfer vectors such as `(2,-1,-1)`
-and the first unknown local block `Z_3`.
+theorem.
+
+## The mixed `(2,-1,-1)` theorem
+
+Place the `k=2` block at `W=0` and the two compensating elementary blocks at
+`W=1,2`.  The two sheets have base factors
+
+\[
+\begin{array}{c|cc}
+&Q&R\\ \hline
+A&W^6&((W-1)(W-2))^2\\
+A'&((W-1)(W-2))^3&W^4.
+\end{array}
+\]
+
+The same twenty-variable implicit reduction again has tangent dimension eight:
+four reduced directions and four transverse directions.  Through cubic order,
+the transverse local standard basis is
+
+\[
+\begin{aligned}
+e_0^2-20e_1^2,&\qquad 2e_0e_1+9e_1^2,\qquad e_1^3,\\
+e_2^2,&\qquad e_2e_3,\qquad e_3^3.               \tag{12}
+\end{aligned}
+\]
+
+It has sixteen standard monomials.  Therefore the affine correspondence has
+transverse length at most sixteen.  The strong Hensel product
+
+\[
+\mathfrak Z_2\widehat\otimes
+\mathfrak Z_1\widehat\otimes\mathfrak Z_1
+\]
+
+is a closed length-sixteen subscheme, and hence
+
+\[
+\boxed{
+D^{\mathrm{aff}}_{(2,-1,-1)}=D^=_{(2,-1,-1)}
+=\mathfrak Z_2\widehat\otimes
+ \mathfrak Z_1\widehat\otimes\mathfrak Z_1.}    \tag{13}
+\]
+
+The particular linear transverse slice used in (12) is not the canonical
+product slice: its two-variable factors are flat degenerations of the local
+blocks.  The length argument identifies the unsliced completed
+correspondence, where the Hensel factors are canonical.
+
+The next genuinely new object is therefore the local block `Z_3`; no remaining
+global product of the already known blocks has a smaller untested transfer
+weight.

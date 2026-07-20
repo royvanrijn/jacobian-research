@@ -137,19 +137,141 @@ several compensating blocks still requires a Hensel-product/equalizer theorem.
 
 ## General program
 
-The result supports the finite-flat conjecture
+The first two results support the finite-flat conjecture
 
 \[
 \operatorname{rank}_{k[S]}\mathfrak Z_k=2^k.
 \]
 
-For `k>=3`, the correct question is not whether the special fiber is a tensor
+For higher `k`, the correct question is not whether the special fiber is a tensor
 product of dual numbers—it need not be—but whether one can find a monic
 Groebner basis with `2^k` standard monomials and describe its multiplication
 as a flat degeneration of the subset algebra over the squarefree-root locus.
+
+## The three-transfer theorem
+
+Let
+
+\[
+S=Z^3+pZ^2+qZ+r,\qquad V=S^2+XZ^2+YZ+T.
+\]
+
+The nine highest coefficient equations eliminate the nine nonleading
+coefficients of `U`.  Over the coefficient ring `k[p,q,r]`, the remaining
+equations have the monic relative Groebner basis
+
+\[
+\begin{aligned}
+T^3={}&6T^2r^2+6X^2pr^3-12XYr^3,\\
+T^2X={}&2T^2pr+2X^2p^2r^2-4XYpr^2,\\
+TX^2={}&2T^2q+2X^2pqr-4XYqr,\\
+X^2Y={}&4T^2p+4X^2p^2r-8XYpr,\\
+X^3={}&6T^2+6X^2pr-12XYr,\\
+2TY={}&-X^2pq+X^2r+2XYq,\\
+Y^2={}&-2TX-X^2p^2+X^2q+2XYp.                 \tag{6}
+\end{aligned}
+\]
+
+Its standard monomials are
+
+\[
+1,\quad T,\quad T^2,\quad X,\quad TX,\quad X^2,
+\quad Y,\quad XY.
+\]
+
+Therefore
+
+\[
+\boxed{\operatorname{rank}_{k[p,q,r]}\mathfrak Z_3=8.} \tag{7}
+\]
+
+As for `Z_2`, retaining only the coefficient equations in degrees at least
+two gives exactly the same ideal: the discarded linear and constant equations
+reduce to zero modulo (6).  Thus
+
+\[
+\boxed{\mathfrak Z_3^{\mathrm{aff}}=\mathfrak Z_3.}    \tag{8}
+\]
+
+At `S=Z^3`, the special fiber is
+
+\[
+\begin{aligned}
+T^3=T^2X=TX^2=X^2Y=TY=0,\\
+X^3=6T^2,qquad Y^2=-2TX.                       \tag{9}
+\end{aligned}
+\]
+
+It has length eight and Hilbert function `(1,3,3,1)`.  Both `T^2` and `XY`
+lie in its socle, so the socle has dimension two and the algebra is not
+Gorenstein.  Once again, collision preserves the generic length `2^3` but
+changes the multiplication of the squarefree subset algebra.
+
+## The four-transfer theorem
+
+Let
+
+\[
+S=Z^4+pZ^3+qZ^2+rZ+t,
+\qquad
+V=S^2+AZ^3+BZ^2+CZ+D.
+\]
+
+The twelve highest coefficient equations eliminate the twelve nonleading
+coefficients of the monic degree-twelve polynomial `U`.  The coefficient
+equations in degrees eleven through two have a thirteen-element monic
+relative Groebner basis over `k[p,q,r,t]`.  Its leading monomials are
+
+\[
+\begin{gathered}
+A^2CD,D^3,CD^2,BD^2,B^2D,B^3,AD^2,ABD,AB^2,\\
+A^2B,A^3,C^2,BC.
+\end{gathered}                                                    \tag{10}
+\]
+
+Consequently its standard monomials are
+
+\[
+\begin{gathered}
+1,A,B,C,D,A^2,AB,B^2,AC,AD,BD,CD,D^2,\\
+A^2C,A^2D,ACD,
+\end{gathered}                                                    \tag{11}
+\]
+
+and the quotient is free over the full monic-quartic parameter space:
+
+\[
+\boxed{\operatorname{rank}_{k[p,q,r,t]}\mathfrak Z_4=16.}        \tag{12}
+\]
+
+The discarded linear and constant coefficient equations reduce to zero
+modulo the same basis.  Hence affine difference again introduces neither
+extra components nor an embedded correction:
+
+\[
+\boxed{\mathfrak Z_4^{\mathrm{aff}}=\mathfrak Z_4.}              \tag{13}
+\]
+
+At the coincident quartic `S=Z^4`, a convenient specialized Groebner basis is
+
+\[
+\begin{gathered}
+A^2CD, D^3, CD^2, BD^2, D(AC-2B^2), B^3-3A^2D,\\
+AD^2, ABD, A(AC+B^2), A^2B-2D^2,\\
+A^3-12CD, C^2+2BD, AD+BC.
+\end{gathered}                                                    \tag{14}
+\]
+
+The powers of its maximal ideal have dimensions `15,11,5,1,0`, so the
+Hilbert function is `(1,4,6,4,1)`.  Its socle has dimension four.  Thus the
+length remains the generic value `2^4`, while the increasingly large socle
+shows that the coincident fibers are not approaching a complete-intersection
+or Gorenstein pattern.
 
 Run:
 
 ```bash
 python scripts/classify_transfer_block_k2.py
+python scripts/classify_transfer_block_k3.py
+python scripts/classify_transfer_block_k4.py
 ```

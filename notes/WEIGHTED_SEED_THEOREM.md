@@ -102,6 +102,13 @@ exactly the reconstruction poles. The universal theorem gives `S_n`
 monodromy for every such degree-`n` inverse pencil, including canonical and
 deformed seeds.
 
+This statement is deliberately on `C!=0`.  Its global incidence-space
+extension is [WEIGHTED_MARKED_ROOT_MODEL.md](WEIGHTED_MARKED_ROOT_MODEL.md):
+after normalizing the finite marked-root cover, the affine source is exactly
+the open where all reconstruction coordinates are regular.  That formulation
+includes the finite `x=0` and `gamma=0` charts without misclassifying the
+extra primitive-root branches at `C=0`.
+
 ## What is universal and what remains conditional
 
 The following data are now universal:

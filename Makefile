@@ -29,6 +29,7 @@ verify-geometry: verify-core
 verify-theorems:
 	$(PYTHON) scripts/verify_weighted_seed_schema.py
 	$(PYTHON) scripts/verify_weighted_seed_theorem.py
+	$(PYTHON) scripts/verify_weighted_marked_root_model.py
 	$(PYTHON) scripts/verify_universal_discriminant_incidences.py
 	$(PYTHON) scripts/verify_contact_partition_strata.py
 	$(PYTHON) scripts/verify_uniform_exceptional_seed_theorem.py
@@ -39,7 +40,10 @@ verify-theorems:
 	$(PYTHON) scripts/verify_degree12_branch_intersection.py
 	$(PYTHON) scripts/verify_dicritical_divisors.py
 	$(PYTHON) scripts/classify_transfer_block_k2.py
+	$(PYTHON) scripts/classify_transfer_block_k3.py
+	$(PYTHON) scripts/classify_transfer_block_k4.py
 	$(PYTHON) scripts/verify_allocation_hensel_product.py
+	$(PYTHON) scripts/verify_mixed_allocation_equalizer.py
 	$(PYTHON) scripts/verify_omitted_value_classification.py
 	$(PYTHON) scripts/verify_repeated_root_boundary.py
 

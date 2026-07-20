@@ -42,6 +42,11 @@ identities and type (3) in selected degrees.
   geometric/arithmetic monodromy `S_n` for every characteristic-zero weighted
   seed.  Canonical and deformed degrees through eight have exact regression
   tests; those tests do not prove the all-degree statement.
+- The normalized marked-root theorem identifies the affine weighted source
+  with the regular-reconstruction open of the normalized finite root
+  incidence. Its exact audit checks the universal inverse algebra, the finite
+  root-one and zero-cluster charts, the escaping Kummer scale, and the full
+  canonical inverse quartic.
 - The canonical family `H_d=W^d(1-W)` now has a uniform image and
   nonproperness theorem: the inverse-degree-three and four members have one
   omitted curve each, all inverse degrees at least five are surjective, and

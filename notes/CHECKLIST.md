@@ -140,12 +140,20 @@ formal derivations of its universal quantifier.
   transverse multiplicity four for `C_(3,2)` along `E_(6,6)`.
 - [x] Classify the affine-difference two-transfer block `Z_2`, including its
   rank-four flat structure and non-Gorenstein coincident-root fiber.
-- [ ] Prove the global equalizer theorem for compensating transfers at several
-  roots and classify the blocks `Z_k` for `k>=3`.
+- [ ] Prove the remaining global equalizer theorems for compensating transfers
+  at several roots.
 - [x] Prove the strong Hensel-product decomposition and reduce affine rigidity
   to a transverse length upper bound.
 - [x] Prove the quadratic-cubic colength-sixteen upper bound in the `(2,-2)`
   case and identify its affine equalizer with `Z_2 completed-tensor Z_2`.
+- [x] Prove the mixed `(2,-1,-1)` affine equalizer theorem with transverse
+  length sixteen.
+- [x] Classify `Z_3` as a rank-eight finite-flat affine-difference block and
+  compute its non-Gorenstein coincident-root fiber.
+- [x] Classify `Z_4` as a rank-sixteen finite-flat affine-difference block and
+  compute its Hilbert function and four-dimensional socle.
+- [ ] Classify the blocks `Z_k` for `k>=5`, or extract a uniform relative
+  Groebner basis from the cases `k<=4`.
 - [ ] Determine ramification divisors, conductors, and scheme-theoretic branch
   multiplicities of the remaining component normalizations.
 - [x] Verify the threshold-`r` atom set `{r,...,2r-1}` and automatic abc bound
