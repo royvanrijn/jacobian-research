@@ -67,6 +67,40 @@ def ordinary_cusp_determinant(H, W):
     return sp.factor(remainder)
 
 
+def contact_incidence_dimension(degree: int, multiplicities):
+    """Dimension bound for a common-tangent contact incidence modulo lines.
+
+    A tangent line with distinct contact points of multiplicities ``m_i`` has
+    ``H-line = product((W-r_i)**m_i) * Q``.  The returned dimension counts the
+    contact points and the coefficients of Q.  ``None`` means that the total
+    contact exceeds the polynomial degree, so the incidence is empty.
+    """
+    multiplicities = tuple(int(value) for value in multiplicities)
+    if degree < 2 or not multiplicities or any(value < 2 for value in multiplicities):
+        raise ValueError("contact multiplicities must all be at least two")
+    total_contact = sum(multiplicities)
+    if total_contact > degree:
+        return None
+    quotient_coefficients = degree - total_contact + 1
+    return len(multiplicities) + quotient_coefficients
+
+
+def tangent_chord_normalization(G, W, alpha, beta):
+    """Normalize a tangent chord of G to the weighted endpoints zero and one.
+
+    If the tangent at ``alpha`` also meets the graph at ``beta``, the result H
+    satisfies H(0)=H'(0)=H(1)=0.  Its dual parameterization differs from that
+    of G only by an affine source reparameterization and an invertible affine
+    target transformation.
+    """
+    difference = sp.sympify(beta) - sp.sympify(alpha)
+    if difference == 0:
+        raise ValueError("the tangent-chord endpoints must be distinct")
+    shifted = sp.sympify(alpha) + difference * W
+    tangent = G.subs(W, alpha) + sp.diff(G, W).subs(W, alpha) * difference * W
+    return sp.expand(G.subs(W, shifted) - tangent)
+
+
 def deterministic_generic_primitive(degree: int, W):
     """Return the rational admissible audit seed used in degrees 3 and above."""
     if degree < 3:

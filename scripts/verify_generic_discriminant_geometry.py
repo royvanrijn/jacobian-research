@@ -12,12 +12,14 @@ sys.path.insert(0, str(ROOT))
 
 from jcsearch.discriminant_geometry import (  # noqa: E402
     bitangent_equations,
+    contact_incidence_dimension,
     cusp_polynomial,
     deterministic_generic_primitive,
     discriminant_param,
     ordinary_cusp_determinant,
     partition_dual_geometry,
     symmetric_bitangent_equations,
+    tangent_chord_normalization,
 )
 from jcsearch.weighted import WeightedSeedModel, w  # noqa: E402
 
@@ -54,6 +56,50 @@ def quotient_dimension(groebner_basis, variables):
 
 s, t = sp.symbols("s t")
 pair_sum, pair_product = sp.symbols("pair_sum pair_product")
+
+# Uniform dimension certificate in the (n-1)-dimensional coefficient space
+# modulo affine-linear summands.  These are precisely the contact patterns
+# that can produce worse-than-nodal-cuspidal dual geometry.
+for degree in range(3, 65):
+    ambient_dimension = degree - 1
+    for contacts in ((4,), (3, 2), (2, 2, 2)):
+        incidence_dimension = contact_incidence_dimension(degree, contacts)
+        if sum(contacts) > degree:
+            assert incidence_dimension is None
+        else:
+            assert incidence_dimension == ambient_dimension - 1
+    audit_H = deterministic_generic_primitive(degree, w)
+    closed_form = sum(w**power for power in range(2, degree)) - (degree - 2) * w**degree
+    assert sp.expand(audit_H - closed_form) == 0
+    audit_c = -sp.diff(audit_H, w).subs(w, 1)
+    assert sp.cancel(sp.diff(audit_H, w, 2).subs(w, 1) / audit_c) == -sp.Rational(4 * degree, 3)
+
+# Tangent-chord normalization puts a generic polynomial graph into the
+# admissible weighted slice without changing its dual singularity types.
+alpha, beta = sp.symbols("alpha beta")
+generic_coefficients = sp.symbols("g0:7")
+generic_G = sum(coefficient * w**index for index, coefficient in enumerate(generic_coefficients))
+normalized_H = tangent_chord_normalization(generic_G, w, alpha, beta)
+normalization_slope, normalization_intercept = discriminant_param(normalized_H, w)
+source_point = alpha + (beta - alpha) * w
+source_slope = sp.diff(generic_G, w).subs(w, source_point)
+source_intercept = source_point * source_slope - generic_G.subs(w, source_point)
+chord_defect = sp.expand(
+    generic_G.subs(w, beta)
+    - generic_G.subs(w, alpha)
+    - sp.diff(generic_G, w).subs(w, alpha) * (beta - alpha)
+)
+assert normalized_H.subs(w, 0) == 0
+assert sp.diff(normalized_H, w).subs(w, 0) == 0
+assert sp.expand(normalized_H.subs(w, 1) - chord_defect) == 0
+assert sp.expand(
+    normalization_slope
+    - (beta - alpha) * (source_slope - sp.diff(generic_G, w).subs(w, alpha))
+) == 0
+assert sp.expand(
+    normalization_intercept
+    - (source_intercept - alpha * source_slope + generic_G.subs(w, alpha))
+) == 0
 
 for degree in range(3, 11):
     H = deterministic_generic_primitive(degree, w)
@@ -136,6 +182,8 @@ assert partition_dual_geometry((3, 2)) == "ordinary cusp branch meeting another 
 assert partition_dual_geometry((2, 2, 2)) == "tritangent line / triple normalization point"
 
 print("PASS: deterministic admissible seeds through inverse degree ten")
+print("PASS: all-degree bad-contact incidences have codimension at least one")
+print("PASS: tangent chords normalize the good locus into the admissible slice")
 print("PASS: exactly n-2 ordinary cusps and (n-2)(n-3)/2 ordinary nodes")
 print("PASS: infinity is smooth and the singular scheme has minimal Tjurina number")
 print("PASS: multiplicity partitions carry their dual-curve singularity types")

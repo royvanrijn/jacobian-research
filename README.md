@@ -106,8 +106,8 @@ Fibers have `3`, `1`, and `0` affine points respectively on `Q != 0`, on
 - Universal inverse-discriminant normalization and full `S_n` monodromy for
   every characteristic-zero weighted seed:
   [WEIGHTED_SEED_THEOREM.md](notes/WEIGHTED_SEED_THEOREM.md).
-- Generic discriminants as nodal-cuspidal dual curves, with the exact
-  cusp/node theorem schema and rational certificates through degree ten:
+- Generic discriminants as nodal-cuspidal dual curves, with an all-degree
+  contact-incidence proof and exact rational regressions through degree ten:
   [GENERIC_DISCRIMINANT_CURVE.md](notes/GENERIC_DISCRIMINANT_CURVE.md).
 - Exact images and nonproperness sets for the full canonical family
   `H_d(W)=W^d(1-W)`:

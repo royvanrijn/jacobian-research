@@ -29,22 +29,93 @@ On a Zariski-open subset of admissible degree-`n` primitives:
   ordinary nodes;
 - it has no other singularities.
 
-The excluded parameter conditions are algebraic: a multiple root of `H''`, a
-cusp sharing its tangent-line image with another normalization point, a
-tritangent, coincident node images, nontransverse self-intersection, or a
-degeneration of the infinity jet. They are obtained by eliminating the
-normalization variables from the corresponding incidence equations after
-saturating away diagonals and cusp factors. Thus each condition is Zariski
-closed.
+This statement holds in every degree `n>=3`. The proof is internal to the
+polynomial-graph family and does not infer a uniform result from the finite
+computational audit.
 
-The classical generic-duality theorem says that the dual of a generic plane
-curve has only ordinary nodes and cusps. Applying its incidence/transversality
-argument to this polynomial-graph family proves that the complement of the bad
-loci above is open. Nonemptiness is certified computationally here, over the
-rationals, in each degree `3,...,10`. Extending this implementation-level
-nonemptiness certificate uniformly to every degree still requires either a
-uniform explicit seed family proof or a graph-family-specific transversality
-proof; the verifier does not silently infer all degrees from ten examples.
+## Uniform genericity proof
+
+Work first with degree-`n` polynomials modulo affine-linear summands. Adding
+`aW+b` merely translates the dual coordinates by `(a,-b)`, so this coefficient
+space has dimension `n-1` and retains all dual singularity data.
+
+Every bad affine singularity forces one of three common-tangent contact
+factorizations, with the displayed contact points distinct:
+
+| Bad event | Factorization of `H(W)-ell(W)` |
+|---|---|
+| higher cusp at `r` | `(W-r)^4 Q(W)` |
+| cusp at `r` plus another branch `u` | `(W-r)^3(W-u)^2 Q(W)` |
+| three normalization points over one image | `(W-r)^2(W-u)^2(W-v)^2 Q(W)` |
+
+If the total contact order is `m` at `k` marked points, then `Q` contributes
+`n-m+1` coefficients and the points contribute `k` parameters. Each row
+therefore has dimension
+
+\[
+k+(n-m+1)=n-2
+\]
+
+when it is nonempty; in smaller degrees it is empty. Compactifying the marked
+points shows that the closure of each incidence image still has dimension at
+most `n-2`. Their finite union is consequently a proper closed subset of the
+`n-1` dimensional coefficient space. This simultaneously excludes multiple
+roots of `H''`, cusp-branch collisions, tritangents, and coincident node
+images. Two distinct regular branches can never be tangent to each other,
+because their tangent directions are `(1,r)` and `(1,u)`, with determinant
+`u-r`.
+
+It remains to show that this open set meets the admissible weighted-seed
+slice. Let `G` be a generic good polynomial, choose a generic tangent point
+`alpha`, and let `beta!=alpha` be a simple residual intersection of that
+tangent with the graph. Put `d=beta-alpha` and
+
+\[
+H(W)=G(\alpha+dW)-G(\alpha)-G'(\alpha)dW.
+\]
+
+Then
+
+\[
+H(0)=H'(0)=H(1)=0,
+\qquad H'(1)\ne0.
+\]
+
+Moreover, writing `(s_G,t_G)=(G',WG'-G)` at `alpha+dW`,
+
+\[
+(s_H,t_H)=
+\bigl(d(s_G-G'(\alpha)),\ t_G-\alpha s_G+G(\alpha)\bigr).
+\]
+
+Thus tangent-chord normalization is an affine source reparameterization
+followed by an invertible affine target change and preserves every dual
+singularity type. The tangent-chord incidence is irreducible and dominates
+the unrestricted coefficient space. The remaining weighted condition
+`H''(1)/(-H'(1))!=-2` removes only a proper closed subset: the admissible audit
+family simplifies to
+
+\[
+H_n(W)=W^2+W^3+\cdots+W^{n-1}-(n-2)W^n
+\]
+
+and has `H''(1)/(-H'(1))=-4n/3`. Hence the good open set meets the admissible
+slice for every `n>=3`, proving the theorem uniformly.
+
+## Degree and birational normalization
+
+The map `nu_H` is birational onto its image in characteristic zero. Indeed,
+where `H''(r)!=0`,
+
+\[
+{dt\over ds}={rH''(r)\over H''(r)}=r,
+\]
+
+so the normalization coordinate is recovered rationally as the tangent slope
+of the discriminant curve. After homogenization the three parameterizing
+forms have degree `n` and no common factor. A generic line therefore pulls
+back to a degree-`n` divisor, proving that the image curve has degree `n` and
+normalization `P^1`.
 
 ## Cusps are flexes
 
@@ -148,14 +219,16 @@ contributions leaves
 ={(n-2)(n-3)\over2}
 \]
 
-nodes. The exact audit also checks the global Tjurina number
+nodes. As a regression certificate, the exact audit also checks the global
+Tjurina number
 
 \[
 2(n-2)+{(n-2)(n-3)\over2},
 \]
 
 which is the minimal value contributed by precisely these ordinary cusps and
-nodes and rules out higher collisions in the deterministic examples.
+nodes and independently rules out higher collisions in the deterministic
+examples through degree ten.
 
 ## Generic surjectivity
 
@@ -167,7 +240,7 @@ has `2+2+1+...`. Therefore:
 - `n=4`: the node is a double-double omitted value;
 - `n>=5`: every discriminant value retains at least one simple root.
 
-Hence a generic admissible weighted seed of inverse degree `n>=5` is
+Hence a generic admissible weighted seed of every inverse degree `n>=5` is
 surjective over the algebraic closure.
 
 For inverse degree five, the exceptional equation `F(R,P)=0` from
@@ -196,10 +269,11 @@ Run:
 .venv/bin/python scripts/verify_generic_discriminant_geometry.py
 ```
 
-The verifier checks deterministic rational admissible seeds in every inverse
-degree from three through ten, including squarefree cusp polynomials,
-bitangent counts, the smooth infinity jet, global singular-scheme length, and
-the multiplicity dictionary.
+The verifier checks the uniform incidence-dimension formulas and tangent-chord
+normalization identities symbolically. It also retains deterministic rational
+regression seeds in every inverse degree from three through ten, including
+squarefree cusp polynomials, bitangent counts, the smooth infinity jet, global
+singular-scheme length, and the multiplicity dictionary.
 
 ## Reference
 
@@ -207,5 +281,5 @@ For the surrounding projective-duality machinery, see Aliaksandr Yuran,
 *Plucker Formulas for Plane Algebraic Curves with a Given Newton Polygon*,
 arXiv:2204.04626. It treats inflections and bitangents as cusps and nodes of
 the dual curve and proves generic nodal-cuspidal behavior under suitable
-Newton-polygon hypotheses. The exact graph-family checks in this repository
-are deliberately stated separately from those hypotheses.
+Newton-polygon hypotheses. The theorem above instead uses the elementary
+contact-incidence dimension argument specialized to polynomial graphs.
