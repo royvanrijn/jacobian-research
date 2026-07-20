@@ -1,0 +1,116 @@
+[
+  {
+    "case": "case_with_vertical_vertices",
+    "source_scope": "Proposition 4.3 reduced Newton polygons",
+    "refinement_scope": "all lattice coefficients in the reduced polygon",
+    "bracket": "x^2",
+    "collision_normalization": "not imposed; not preserved by reduction",
+    "P_vertices": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        8,
+        14
+      ],
+      [
+        8,
+        16
+      ],
+      [
+        0,
+        8
+      ]
+    ],
+    "Q_vertices": [
+      [
+        0,
+        0
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        12,
+        21
+      ],
+      [
+        12,
+        24
+      ],
+      [
+        0,
+        12
+      ]
+    ],
+    "P_lattice_points": 61,
+    "Q_lattice_points": 125,
+    "variables": 186,
+    "jacobian_coefficient_equations": 302,
+    "required_nonzero_vertex_coefficients": 10,
+    "target_x2_exponent_reachable": true,
+    "edge_power_refinement": false,
+    "run": null,
+    "msolve_input": "results/systems/reduced_72_108_case_with_vertical_vertices_broad_modp.input",
+    "msolve_mode": "last polynomial is saturator; invoke with -S"
+  },
+  {
+    "case": "case_without_vertical_vertices",
+    "source_scope": "Proposition 4.3 reduced Newton polygons",
+    "refinement_scope": "all lattice coefficients in the reduced polygon",
+    "bracket": "x^2",
+    "collision_normalization": "not imposed; not preserved by reduction",
+    "P_vertices": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        8,
+        14
+      ],
+      [
+        8,
+        16
+      ]
+    ],
+    "Q_vertices": [
+      [
+        0,
+        0
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        12,
+        21
+      ],
+      [
+        12,
+        24
+      ]
+    ],
+    "P_lattice_points": 25,
+    "Q_lattice_points": 47,
+    "variables": 72,
+    "jacobian_coefficient_equations": 92,
+    "required_nonzero_vertex_coefficients": 8,
+    "target_x2_exponent_reachable": true,
+    "edge_power_refinement": false,
+    "run": null,
+    "msolve_input": "results/systems/reduced_72_108_case_without_vertical_vertices_broad_modp.input",
+    "msolve_mode": "last polynomial is saturator; invoke with -S"
+  }
+]

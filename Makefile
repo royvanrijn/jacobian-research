@@ -1,12 +1,16 @@
 PYTHON ?= .venv/bin/python
+SYSTEM_PYTHON ?= python3
 
-.PHONY: check verify verify-core verify-search verify-certificates
+.PHONY: check verify verify-minimal verify-core verify-search verify-certificates
 
 check:
 	$(PYTHON) -m compileall -q jcsearch scripts
 	$(PYTHON) scripts/check_readme_links.py
 
-verify-core:
+verify-minimal:
+	$(SYSTEM_PYTHON) scripts/verify_counterexample_independent.py
+
+verify-core: verify-minimal
 	$(PYTHON) scripts/verify_counterexample.py
 	$(PYTHON) scripts/cubic_model.py
 	$(PYTHON) scripts/image_nonproperness.py

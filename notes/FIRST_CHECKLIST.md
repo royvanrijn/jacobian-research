@@ -12,6 +12,26 @@ Labels used below:
   yet contain.
 - **Analyse**: explain structure already visible in the exact computations.
 
+## Most promising next steps
+
+1. **Independent minimal certificate.** Remove the single-algebra-engine
+   failure mode from the determinant, collision, and degree checks. Implemented
+   below with a dependency-free sparse-polynomial verifier.
+2. **Provenance and formula audit.** Establish the primary source and compare
+   every repository occurrence of the map mechanically, including signs,
+   coordinate order, and normalization.
+3. **Independent exceptional-stratum geometry.** Reprove the image,
+   nonproperness, and fibre statements without silently restricting to the
+   generic rational reconstruction chart.
+4. **Normal-form artifact audit.** Add the 95D and 510D independent verifiers to
+   the declared regression suite, then audit the cited stable-equivalence steps.
+5. **Published 2D reduction audit.** Verify the reductions preceding the
+   `(9,27)` terminal system and every leading-form condition behind the reduced
+   `(72,108)` systems before increasing solver budgets.
+
+This order prioritizes short checks that secure all downstream claims before
+open-ended classification or larger computation.
+
 ## Current verification run: 20 July 2026
 
 `make verify` completed successfully from a newly created ignored `.venv` on
@@ -36,6 +56,12 @@ The run reproduced:
   published Newton reductions; and
 - all 24 retained characteristic-zero msolve certificates: 23 reduced bases
   `[1]` and the exact `(9,27)` elimination relation.
+
+After that run, `verify_counterexample_independent.py` was added and wired into
+`make verify-core`. It restates the map using a standalone integer sparse-
+polynomial implementation, computes the full Jacobian determinant, evaluates
+the collision with standard-library rational arithmetic, and checks total
+degrees without importing SymPy or `jcsearch`.
 
 This run establishes reproducibility of the repository's declared regression
 suite on one local environment. It is not a second-CAS verification, an audit
@@ -70,8 +96,10 @@ msolve, Julia, generated artifacts, or external literature.
 
 ## 2. Independently certify the 3D counterexample
 
-- [ ] **Verify** coefficient-by-coefficient that `det DF = -2` in at least two
-  unrelated systems, and derive a short hand-checkable proof using the weighted
+- [x] **Verify** coefficient-by-coefficient that `det DF = -2` in two unrelated
+  implementations: SymPy and the local dependency-free sparse-polynomial
+  verifier.
+- [ ] **Derive** a short hand-checkable determinant proof using the weighted
   chart identities rather than only full symbolic expansion.
 - [x] **Verify** the three rational substitutions and their pairwise
   distinctness directly from the displayed formula. These two checks alone are

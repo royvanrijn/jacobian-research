@@ -1,0 +1,343 @@
+{
+  "scope": {
+    "deg_p": 4,
+    "i": [
+      0,
+      6
+    ],
+    "j": [
+      -8,
+      8
+    ]
+  },
+  "records": [
+    {
+      "p": "0",
+      "signature": {
+        "valuation_xy": [
+          -1,
+          0
+        ],
+        "jacobian_divisor": {
+          "v=0": 2
+        },
+        "pole_semigroup_generators": [
+          [
+            -1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "exponent_lattice_snf": [
+          1,
+          1
+        ],
+        "exceptional_divisors": 1
+      },
+      "support_size": 119,
+      "equations": 56,
+      "rank_Q": 56,
+      "kernel_dimension": 63,
+      "earliest_forbidden": [
+        1,
+        0
+      ],
+      "ranks_mod_p": {
+        "1000003": 56,
+        "1000033": 56,
+        "1000037": 56
+      },
+      "bad_primes": []
+    },
+    {
+      "p": "v",
+      "signature": {
+        "valuation_xy": [
+          -1,
+          0
+        ],
+        "jacobian_divisor": {
+          "v=0": 2
+        },
+        "pole_semigroup_generators": [
+          [
+            -1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "exponent_lattice_snf": [
+          1,
+          1
+        ],
+        "exceptional_divisors": 1
+      },
+      "support_size": 119,
+      "equations": 77,
+      "rank_Q": 56,
+      "kernel_dimension": 63,
+      "earliest_forbidden": [
+        1,
+        0
+      ],
+      "ranks_mod_p": {
+        "1000003": 56,
+        "1000033": 56,
+        "1000037": 56
+      },
+      "bad_primes": []
+    },
+    {
+      "p": "v**2",
+      "signature": {
+        "valuation_xy": [
+          -1,
+          0
+        ],
+        "jacobian_divisor": {
+          "v=0": 2
+        },
+        "pole_semigroup_generators": [
+          [
+            -1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "exponent_lattice_snf": [
+          1,
+          1
+        ],
+        "exceptional_divisors": 1
+      },
+      "support_size": 119,
+      "equations": 98,
+      "rank_Q": 60,
+      "kernel_dimension": 59,
+      "earliest_forbidden": [
+        1,
+        0
+      ],
+      "ranks_mod_p": {
+        "1000003": 60,
+        "1000033": 60,
+        "1000037": 60
+      },
+      "bad_primes": []
+    },
+    {
+      "p": "v**2 + v",
+      "signature": {
+        "valuation_xy": [
+          -1,
+          0
+        ],
+        "jacobian_divisor": {
+          "v=0": 2
+        },
+        "pole_semigroup_generators": [
+          [
+            -1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "exponent_lattice_snf": [
+          1,
+          1
+        ],
+        "exceptional_divisors": 1
+      },
+      "support_size": 119,
+      "equations": 98,
+      "rank_Q": 60,
+      "kernel_dimension": 59,
+      "earliest_forbidden": [
+        1,
+        0
+      ],
+      "ranks_mod_p": {
+        "1000003": 60,
+        "1000033": 60,
+        "1000037": 60
+      },
+      "bad_primes": []
+    },
+    {
+      "p": "v**3",
+      "signature": {
+        "valuation_xy": [
+          -1,
+          0
+        ],
+        "jacobian_divisor": {
+          "v=0": 2
+        },
+        "pole_semigroup_generators": [
+          [
+            -1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "exponent_lattice_snf": [
+          1,
+          1
+        ],
+        "exceptional_divisors": 1
+      },
+      "support_size": 119,
+      "equations": 119,
+      "rank_Q": 70,
+      "kernel_dimension": 49,
+      "earliest_forbidden": [
+        1,
+        0
+      ],
+      "ranks_mod_p": {
+        "1000003": 70,
+        "1000033": 70,
+        "1000037": 70
+      },
+      "bad_primes": []
+    },
+    {
+      "p": "v**3 + v**2 + v",
+      "signature": {
+        "valuation_xy": [
+          -1,
+          0
+        ],
+        "jacobian_divisor": {
+          "v=0": 2
+        },
+        "pole_semigroup_generators": [
+          [
+            -1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "exponent_lattice_snf": [
+          1,
+          1
+        ],
+        "exceptional_divisors": 1
+      },
+      "support_size": 119,
+      "equations": 119,
+      "rank_Q": 70,
+      "kernel_dimension": 49,
+      "earliest_forbidden": [
+        1,
+        0
+      ],
+      "ranks_mod_p": {
+        "1000003": 70,
+        "1000033": 70,
+        "1000037": 70
+      },
+      "bad_primes": []
+    },
+    {
+      "p": "v**4",
+      "signature": {
+        "valuation_xy": [
+          -1,
+          0
+        ],
+        "jacobian_divisor": {
+          "v=0": 2
+        },
+        "pole_semigroup_generators": [
+          [
+            -1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "exponent_lattice_snf": [
+          1,
+          1
+        ],
+        "exceptional_divisors": 1
+      },
+      "support_size": 119,
+      "equations": 140,
+      "rank_Q": 80,
+      "kernel_dimension": 39,
+      "earliest_forbidden": [
+        1,
+        0
+      ],
+      "ranks_mod_p": {
+        "1000003": 80,
+        "1000033": 80,
+        "1000037": 80
+      },
+      "bad_primes": []
+    },
+    {
+      "p": "v**4 + v**3 + v**2 + v",
+      "signature": {
+        "valuation_xy": [
+          -1,
+          0
+        ],
+        "jacobian_divisor": {
+          "v=0": 2
+        },
+        "pole_semigroup_generators": [
+          [
+            -1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "exponent_lattice_snf": [
+          1,
+          1
+        ],
+        "exceptional_divisors": 1
+      },
+      "support_size": 119,
+      "equations": 140,
+      "rank_Q": 80,
+      "kernel_dimension": 39,
+      "earliest_forbidden": [
+        1,
+        0
+      ],
+      "ranks_mod_p": {
+        "1000003": 80,
+        "1000033": 80,
+        "1000037": 80
+      },
+      "bad_primes": []
+    }
+  ]
+}

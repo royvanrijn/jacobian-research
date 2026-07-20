@@ -1,0 +1,1059 @@
+[
+  {
+    "name": "identity",
+    "word": [],
+    "expressions": [
+      "x",
+      "y"
+    ],
+    "jacobian": "1",
+    "signature": {
+      "coordinate_valuations": [
+        0,
+        1
+      ],
+      "jacobian_valuation": 0,
+      "lattice_snf": [
+        1,
+        1
+      ],
+      "sampled_polynomializable_cone": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    },
+    "score": 1
+  },
+  {
+    "name": "div",
+    "word": [
+      "div"
+    ],
+    "expressions": [
+      "x",
+      "y/x"
+    ],
+    "jacobian": "1/x",
+    "signature": {
+      "coordinate_valuations": [
+        -1,
+        1
+      ],
+      "jacobian_valuation": -1,
+      "lattice_snf": [
+        1,
+        1
+      ],
+      "sampled_polynomializable_cone": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    },
+    "score": 2
+  },
+  {
+    "name": "mul",
+    "word": [
+      "mul"
+    ],
+    "expressions": [
+      "x",
+      "x*y"
+    ],
+    "jacobian": "x",
+    "signature": {
+      "coordinate_valuations": [
+        1,
+        1
+      ],
+      "jacobian_valuation": 1,
+      "lattice_snf": [
+        1,
+        1
+      ],
+      "sampled_polynomializable_cone": [
+        [
+          -2,
+          2
+        ],
+        [
+          -1,
+          1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    },
+    "score": 2
+  },
+  {
+    "name": "translate:1",
+    "word": [
+      "translate:1"
+    ],
+    "expressions": [
+      "x",
+      "(x*y + 1)/x"
+    ],
+    "jacobian": "1",
+    "signature": {
+      "coordinate_valuations": [
+        -1,
+        1
+      ],
+      "jacobian_valuation": 0,
+      "lattice_snf": [
+        1,
+        1
+      ],
+      "sampled_polynomializable_cone": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    },
+    "score": 2
+  },
+  {
+    "name": "translate:2",
+    "word": [
+      "translate:2"
+    ],
+    "expressions": [
+      "x",
+      "(x**2*y + 1)/x**2"
+    ],
+    "jacobian": "1",
+    "signature": {
+      "coordinate_valuations": [
+        -2,
+        1
+      ],
+      "jacobian_valuation": 0,
+      "lattice_snf": [
+        1,
+        1
+      ],
+      "sampled_polynomializable_cone": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ]
+      ]
+    },
+    "score": 2
+  },
+  {
+    "name": "div/div",
+    "word": [
+      "div",
+      "div"
+    ],
+    "expressions": [
+      "x",
+      "y/x**2"
+    ],
+    "jacobian": "x**(-2)",
+    "signature": {
+      "coordinate_valuations": [
+        -2,
+        1
+      ],
+      "jacobian_valuation": -2,
+      "lattice_snf": [
+        1,
+        1
+      ],
+      "sampled_polynomializable_cone": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ]
+      ]
+    },
+    "score": 3
+  },
+  {
+    "name": "div/swap",
+    "word": [
+      "div",
+      "swap"
+    ],
+    "expressions": [
+      "y/x",
+      "x"
+    ],
+    "jacobian": "-1/x",
+    "signature": {
+      "coordinate_valuations": [
+        -1,
+        1
+      ],
+      "jacobian_valuation": -1,
+      "lattice_snf": [
+        1,
+        1
+      ],
+      "sampled_polynomializable_cone": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    },
+    "score": 3
+  },
+  {
+    "name": "div/translate:2",
+    "word": [
+      "div",
+      "translate:2"
+    ],
+    "expressions": [
+      "x",
+      "(x*y + 1)/x**2"
+    ],
+    "jacobian": "1/x",
+    "signature": {
+      "coordinate_valuations": [
+        -2,
+        1
+      ],
+      "jacobian_valuation": -1,
+      "lattice_snf": [
+        1,
+        1
+      ],
+      "sampled_polynomializable_cone": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ]
+      ]
+    },
+    "score": 3
+  },
+  {
+    "name": "mul/mul",
+    "word": [
+      "mul",
+      "mul"
+    ],
+    "expressions": [
+      "x",
+      "x**2*y"
+    ],
+    "jacobian": "x**2",
+    "signature": {
+      "coordinate_valuations": [
+        1,
+        2
+      ],
+      "jacobian_valuation": 2,
+      "lattice_snf": [
+        1,
+        1
+      ],
+      "sampled_polynomializable_cone": [
+        [
+          -2,
+          1
+        ],
+        [
+          -2,
+          2
+        ],
+        [
+          -1,
+          1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    },
+    "score": 3
+  },
+  {
+    "name": "mul/swap",
+    "word": [
+      "mul",
+      "swap"
+    ],
+    "expressions": [
+      "x*y",
+      "x"
+    ],
+    "jacobian": "-x",
+    "signature": {
+      "coordinate_valuations": [
+        1,
+        1
+      ],
+      "jacobian_valuation": 1,
+      "lattice_snf": [
+        1,
+        1
+      ],
+      "sampled_polynomializable_cone": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          -2
+        ],
+        [
+          2,
+          -1
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    },
+    "score": 3
+  },
+  {
+    "name": "mul/translate:1",
+    "word": [
+      "mul",
+      "translate:1"
+    ],
+    "expressions": [
+      "x",
+      "(x**2*y + 1)/x"
+    ],
+    "jacobian": "x",
+    "signature": {
+      "coordinate_valuations": [
+        -1,
+        1
+      ],
+      "jacobian_valuation": 1,
+      "lattice_snf": [
+        1,
+        1
+      ],
+      "sampled_polynomializable_cone": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    },
+    "score": 3
+  },
+  {
+    "name": "mul/translate:2",
+    "word": [
+      "mul",
+      "translate:2"
+    ],
+    "expressions": [
+      "x",
+      "(x**3*y + 1)/x**2"
+    ],
+    "jacobian": "x",
+    "signature": {
+      "coordinate_valuations": [
+        -2,
+        1
+      ],
+      "jacobian_valuation": 1,
+      "lattice_snf": [
+        1,
+        1
+      ],
+      "sampled_polynomializable_cone": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ]
+      ]
+    },
+    "score": 3
+  },
+  {
+    "name": "swap/div",
+    "word": [
+      "swap",
+      "div"
+    ],
+    "expressions": [
+      "y",
+      "x/y"
+    ],
+    "jacobian": "-1/y",
+    "signature": {
+      "coordinate_valuations": [
+        0,
+        1
+      ],
+      "jacobian_valuation": 0,
+      "lattice_snf": [
+        1,
+        1
+      ],
+      "sampled_polynomializable_cone": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    },
+    "score": 3
+  },
+  {
+    "name": "swap/mul",
+    "word": [
+      "swap",
+      "mul"
+    ],
+    "expressions": [
+      "y",
+      "x*y"
+    ],
+    "jacobian": "-y",
+    "signature": {
+      "coordinate_valuations": [
+        0,
+        1
+      ],
+      "jacobian_valuation": 0,
+      "lattice_snf": [
+        1,
+        1
+      ],
+      "sampled_polynomializable_cone": [
+        [
+          -2,
+          2
+        ],
+        [
+          -1,
+          1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    },
+    "score": 3
+  },
+  {
+    "name": "swap/translate:1",
+    "word": [
+      "swap",
+      "translate:1"
+    ],
+    "expressions": [
+      "y",
+      "(x*y + 1)/y"
+    ],
+    "jacobian": "-1",
+    "signature": {
+      "coordinate_valuations": [
+        0,
+        0
+      ],
+      "jacobian_valuation": 0,
+      "lattice_snf": [
+        1,
+        1
+      ],
+      "sampled_polynomializable_cone": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    },
+    "score": 3
+  },
+  {
+    "name": "swap/translate:2",
+    "word": [
+      "swap",
+      "translate:2"
+    ],
+    "expressions": [
+      "y",
+      "(x*y**2 + 1)/y**2"
+    ],
+    "jacobian": "-1",
+    "signature": {
+      "coordinate_valuations": [
+        0,
+        0
+      ],
+      "jacobian_valuation": 0,
+      "lattice_snf": [
+        1,
+        1
+      ],
+      "sampled_polynomializable_cone": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ]
+      ]
+    },
+    "score": 3
+  },
+  {
+    "name": "translate:1/mul",
+    "word": [
+      "translate:1",
+      "mul"
+    ],
+    "expressions": [
+      "x",
+      "x*y + 1"
+    ],
+    "jacobian": "x",
+    "signature": {
+      "coordinate_valuations": [
+        0,
+        1
+      ],
+      "jacobian_valuation": 1,
+      "lattice_snf": [
+        1,
+        1
+      ],
+      "sampled_polynomializable_cone": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    },
+    "score": 3
+  },
+  {
+    "name": "translate:1/swap",
+    "word": [
+      "translate:1",
+      "swap"
+    ],
+    "expressions": [
+      "(x*y + 1)/x",
+      "x"
+    ],
+    "jacobian": "-1",
+    "signature": {
+      "coordinate_valuations": [
+        -1,
+        1
+      ],
+      "jacobian_valuation": 0,
+      "lattice_snf": [
+        1,
+        1
+      ],
+      "sampled_polynomializable_cone": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    },
+    "score": 3
+  },
+  {
+    "name": "translate:2/div",
+    "word": [
+      "translate:2",
+      "div"
+    ],
+    "expressions": [
+      "x",
+      "(x**2*y + 1)/x**3"
+    ],
+    "jacobian": "1/x",
+    "signature": {
+      "coordinate_valuations": [
+        -3,
+        1
+      ],
+      "jacobian_valuation": -1,
+      "lattice_snf": [
+        1,
+        1
+      ],
+      "sampled_polynomializable_cone": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ]
+    },
+    "score": 3
+  },
+  {
+    "name": "translate:2/swap",
+    "word": [
+      "translate:2",
+      "swap"
+    ],
+    "expressions": [
+      "(x**2*y + 1)/x**2",
+      "x"
+    ],
+    "jacobian": "-1",
+    "signature": {
+      "coordinate_valuations": [
+        -2,
+        1
+      ],
+      "jacobian_valuation": 0,
+      "lattice_snf": [
+        1,
+        1
+      ],
+      "sampled_polynomializable_cone": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ]
+    },
+    "score": 3
+  }
+]

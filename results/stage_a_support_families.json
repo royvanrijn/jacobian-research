@@ -1,0 +1,232 @@
+[
+  {
+    "family": "triangle_d3",
+    "terms_per_coordinate": 10,
+    "coefficient_variables": 20,
+    "equations": 23,
+    "chart_term_counts": {
+      "0": 10,
+      "v": 20,
+      "v**2": 20,
+      "v**2 + v": 32,
+      "v**3": 20,
+      "v**3 + v**2 + v": 43,
+      "v**4": 20,
+      "v**4 + v**3 + v**2 + v": 55
+    },
+    "runs": [
+      {
+        "prime": 1000003,
+        "saturated": true,
+        "empty": true,
+        "positive_dimensional": false,
+        "returncode": 0
+      },
+      {
+        "prime": 1000033,
+        "saturated": true,
+        "empty": true,
+        "positive_dimensional": false,
+        "returncode": 0
+      },
+      {
+        "prime": 1000037,
+        "saturated": true,
+        "empty": true,
+        "positive_dimensional": false,
+        "returncode": 0
+      },
+      {
+        "prime": 0,
+        "saturated": false,
+        "empty": true,
+        "positive_dimensional": false,
+        "returncode": 0
+      }
+    ]
+  },
+  {
+    "family": "triangle_d4",
+    "terms_per_coordinate": 15,
+    "coefficient_variables": 30,
+    "equations": 36,
+    "chart_term_counts": {
+      "0": 15,
+      "v": 34,
+      "v**2": 35,
+      "v**2 + v": 59,
+      "v**3": 35,
+      "v**3 + v**2 + v": 88,
+      "v**4": 35,
+      "v**4 + v**3 + v**2 + v": 116
+    },
+    "runs": [
+      {
+        "prime": 1000003,
+        "saturated": true,
+        "empty": true,
+        "positive_dimensional": false,
+        "returncode": 0
+      },
+      {
+        "prime": 1000033,
+        "saturated": true,
+        "empty": true,
+        "positive_dimensional": false,
+        "returncode": 0
+      },
+      {
+        "prime": 1000037,
+        "saturated": true,
+        "empty": true,
+        "positive_dimensional": false,
+        "returncode": 0
+      },
+      {
+        "prime": 0,
+        "saturated": false,
+        "empty": true,
+        "positive_dimensional": false,
+        "returncode": 0
+      }
+    ]
+  },
+  {
+    "family": "x_heavy_15",
+    "terms_per_coordinate": 15,
+    "coefficient_variables": 30,
+    "equations": 35,
+    "chart_term_counts": {
+      "0": 15,
+      "v": 25,
+      "v**2": 25,
+      "v**2 + v": 31,
+      "v**3": 25,
+      "v**3 + v**2 + v": 37,
+      "v**4": 25,
+      "v**4 + v**3 + v**2 + v": 43
+    },
+    "runs": [
+      {
+        "prime": 1000003,
+        "saturated": true,
+        "empty": true,
+        "positive_dimensional": false,
+        "returncode": 0
+      },
+      {
+        "prime": 1000033,
+        "saturated": true,
+        "empty": true,
+        "positive_dimensional": false,
+        "returncode": 0
+      },
+      {
+        "prime": 1000037,
+        "saturated": true,
+        "empty": true,
+        "positive_dimensional": false,
+        "returncode": 0
+      },
+      {
+        "prime": 0,
+        "saturated": false,
+        "empty": true,
+        "positive_dimensional": false,
+        "returncode": 0
+      }
+    ]
+  },
+  {
+    "family": "y_heavy_15",
+    "terms_per_coordinate": 15,
+    "coefficient_variables": 30,
+    "equations": 35,
+    "chart_term_counts": {
+      "0": 15,
+      "v": 52,
+      "v**2": 52,
+      "v**2 + v": 130,
+      "v**3": 52,
+      "v**3 + v**2 + v": 221,
+      "v**4": 52,
+      "v**4 + v**3 + v**2 + v": 301
+    },
+    "runs": [
+      {
+        "prime": 1000003,
+        "saturated": true,
+        "empty": true,
+        "positive_dimensional": false,
+        "returncode": 0
+      },
+      {
+        "prime": 1000033,
+        "saturated": true,
+        "empty": true,
+        "positive_dimensional": false,
+        "returncode": 0
+      },
+      {
+        "prime": 1000037,
+        "saturated": true,
+        "empty": true,
+        "positive_dimensional": false,
+        "returncode": 0
+      },
+      {
+        "prime": 0,
+        "saturated": false,
+        "empty": true,
+        "positive_dimensional": false,
+        "returncode": 0
+      }
+    ]
+  },
+  {
+    "family": "balanced_15",
+    "terms_per_coordinate": 15,
+    "coefficient_variables": 30,
+    "equations": 43,
+    "chart_term_counts": {
+      "0": 15,
+      "v": 35,
+      "v**2": 40,
+      "v**2 + v": 65,
+      "v**3": 40,
+      "v**3 + v**2 + v": 102,
+      "v**4": 40,
+      "v**4 + v**3 + v**2 + v": 136
+    },
+    "runs": [
+      {
+        "prime": 1000003,
+        "saturated": true,
+        "empty": true,
+        "positive_dimensional": false,
+        "returncode": 0
+      },
+      {
+        "prime": 1000033,
+        "saturated": true,
+        "empty": true,
+        "positive_dimensional": false,
+        "returncode": 0
+      },
+      {
+        "prime": 1000037,
+        "saturated": true,
+        "empty": true,
+        "positive_dimensional": false,
+        "returncode": 0
+      },
+      {
+        "prime": 0,
+        "saturated": false,
+        "empty": true,
+        "positive_dimensional": false,
+        "returncode": 0
+      }
+    ]
+  }
+]

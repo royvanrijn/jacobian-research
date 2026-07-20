@@ -1,0 +1,853 @@
+[
+  {
+    "family": "diamond_r2",
+    "support_size": 13,
+    "support": [
+      [
+        -2,
+        0
+      ],
+      [
+        -1,
+        -1
+      ],
+      [
+        -1,
+        0
+      ],
+      [
+        -1,
+        1
+      ],
+      [
+        0,
+        -2
+      ],
+      [
+        0,
+        -1
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        -1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "kernel_dimension": 3,
+    "pole_rank": 10,
+    "denominator_orders": {
+      "x": 4,
+      "xy+1": 2
+    },
+    "earliest_remainder_monomial": [
+      0,
+      0
+    ],
+    "equations": 9,
+    "runs": [
+      {
+        "prime": 1000003,
+        "empty": true,
+        "positive_dimensional": false,
+        "returncode": 0
+      },
+      {
+        "prime": 1000033,
+        "empty": true,
+        "positive_dimensional": false,
+        "returncode": 0
+      },
+      {
+        "prime": 1000037,
+        "empty": true,
+        "positive_dimensional": false,
+        "returncode": 0
+      },
+      {
+        "prime": 0,
+        "empty": true,
+        "positive_dimensional": false,
+        "returncode": 0
+      }
+    ]
+  },
+  {
+    "family": "box_r2",
+    "support_size": 25,
+    "support": [
+      [
+        -2,
+        -2
+      ],
+      [
+        -2,
+        -1
+      ],
+      [
+        -2,
+        0
+      ],
+      [
+        -2,
+        1
+      ],
+      [
+        -2,
+        2
+      ],
+      [
+        -1,
+        -2
+      ],
+      [
+        -1,
+        -1
+      ],
+      [
+        -1,
+        0
+      ],
+      [
+        -1,
+        1
+      ],
+      [
+        -1,
+        2
+      ],
+      [
+        0,
+        -2
+      ],
+      [
+        0,
+        -1
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        -2
+      ],
+      [
+        1,
+        -1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        -2
+      ],
+      [
+        2,
+        -1
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    "kernel_dimension": 6,
+    "pole_rank": 19,
+    "denominator_orders": {
+      "x": 6,
+      "xy+1": 4
+    },
+    "earliest_remainder_monomial": [
+      0,
+      0
+    ],
+    "equations": 17,
+    "runs": [
+      {
+        "prime": 1000003,
+        "empty": true,
+        "positive_dimensional": false,
+        "returncode": 0
+      },
+      {
+        "prime": 1000033,
+        "empty": true,
+        "positive_dimensional": false,
+        "returncode": 0
+      },
+      {
+        "prime": 1000037,
+        "empty": true,
+        "positive_dimensional": false,
+        "returncode": 0
+      },
+      {
+        "prime": 0,
+        "empty": true,
+        "positive_dimensional": false,
+        "returncode": 0
+      }
+    ]
+  },
+  {
+    "family": "asymmetric_30",
+    "support_size": 30,
+    "support": [
+      [
+        -2,
+        -2
+      ],
+      [
+        -2,
+        -1
+      ],
+      [
+        -2,
+        0
+      ],
+      [
+        -2,
+        1
+      ],
+      [
+        -2,
+        2
+      ],
+      [
+        -1,
+        -2
+      ],
+      [
+        -1,
+        -1
+      ],
+      [
+        -1,
+        0
+      ],
+      [
+        -1,
+        1
+      ],
+      [
+        -1,
+        2
+      ],
+      [
+        0,
+        -2
+      ],
+      [
+        0,
+        -1
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        -2
+      ],
+      [
+        1,
+        -1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        -2
+      ],
+      [
+        2,
+        -1
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        -2
+      ],
+      [
+        3,
+        -1
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        3,
+        2
+      ]
+    ],
+    "kernel_dimension": 8,
+    "pole_rank": 22,
+    "denominator_orders": {
+      "x": 7,
+      "xy+1": 4
+    },
+    "earliest_remainder_monomial": [
+      0,
+      0
+    ],
+    "equations": 25,
+    "runs": [
+      {
+        "prime": 1000003,
+        "empty": true,
+        "positive_dimensional": false,
+        "returncode": 0
+      },
+      {
+        "prime": 1000033,
+        "empty": true,
+        "positive_dimensional": false,
+        "returncode": 0
+      },
+      {
+        "prime": 1000037,
+        "empty": true,
+        "positive_dimensional": false,
+        "returncode": 0
+      },
+      {
+        "prime": 0,
+        "empty": true,
+        "positive_dimensional": false,
+        "returncode": 0
+      }
+    ]
+  },
+  {
+    "family": "shifted_42",
+    "support_size": 42,
+    "support": [
+      [
+        -3,
+        -2
+      ],
+      [
+        -3,
+        -1
+      ],
+      [
+        -3,
+        0
+      ],
+      [
+        -3,
+        1
+      ],
+      [
+        -3,
+        2
+      ],
+      [
+        -3,
+        3
+      ],
+      [
+        -2,
+        -2
+      ],
+      [
+        -2,
+        -1
+      ],
+      [
+        -2,
+        0
+      ],
+      [
+        -2,
+        1
+      ],
+      [
+        -2,
+        2
+      ],
+      [
+        -2,
+        3
+      ],
+      [
+        -1,
+        -2
+      ],
+      [
+        -1,
+        -1
+      ],
+      [
+        -1,
+        0
+      ],
+      [
+        -1,
+        1
+      ],
+      [
+        -1,
+        2
+      ],
+      [
+        -1,
+        3
+      ],
+      [
+        0,
+        -2
+      ],
+      [
+        0,
+        -1
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        -2
+      ],
+      [
+        1,
+        -1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        -2
+      ],
+      [
+        2,
+        -1
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        -2
+      ],
+      [
+        3,
+        -1
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        3,
+        3
+      ]
+    ],
+    "kernel_dimension": 9,
+    "pole_rank": 33,
+    "denominator_orders": {
+      "x": 7,
+      "xy+1": 6
+    },
+    "earliest_remainder_monomial": [
+      0,
+      0
+    ],
+    "equations": 27,
+    "runs": [
+      {
+        "prime": 1000003,
+        "empty": true,
+        "positive_dimensional": false,
+        "returncode": 0
+      },
+      {
+        "prime": 1000033,
+        "empty": true,
+        "positive_dimensional": false,
+        "returncode": 0
+      },
+      {
+        "prime": 1000037,
+        "empty": true,
+        "positive_dimensional": false,
+        "returncode": 0
+      },
+      {
+        "prime": 0,
+        "empty": true,
+        "positive_dimensional": false,
+        "returncode": 0
+      }
+    ]
+  },
+  {
+    "family": "box_r3",
+    "support_size": 49,
+    "support": [
+      [
+        -3,
+        -3
+      ],
+      [
+        -3,
+        -2
+      ],
+      [
+        -3,
+        -1
+      ],
+      [
+        -3,
+        0
+      ],
+      [
+        -3,
+        1
+      ],
+      [
+        -3,
+        2
+      ],
+      [
+        -3,
+        3
+      ],
+      [
+        -2,
+        -3
+      ],
+      [
+        -2,
+        -2
+      ],
+      [
+        -2,
+        -1
+      ],
+      [
+        -2,
+        0
+      ],
+      [
+        -2,
+        1
+      ],
+      [
+        -2,
+        2
+      ],
+      [
+        -2,
+        3
+      ],
+      [
+        -1,
+        -3
+      ],
+      [
+        -1,
+        -2
+      ],
+      [
+        -1,
+        -1
+      ],
+      [
+        -1,
+        0
+      ],
+      [
+        -1,
+        1
+      ],
+      [
+        -1,
+        2
+      ],
+      [
+        -1,
+        3
+      ],
+      [
+        0,
+        -3
+      ],
+      [
+        0,
+        -2
+      ],
+      [
+        0,
+        -1
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        -3
+      ],
+      [
+        1,
+        -2
+      ],
+      [
+        1,
+        -1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        -3
+      ],
+      [
+        2,
+        -2
+      ],
+      [
+        2,
+        -1
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        -3
+      ],
+      [
+        3,
+        -2
+      ],
+      [
+        3,
+        -1
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        3,
+        3
+      ]
+    ],
+    "kernel_dimension": 10,
+    "pole_rank": 39,
+    "denominator_orders": {
+      "x": 9,
+      "xy+1": 6
+    },
+    "earliest_remainder_monomial": [
+      0,
+      0
+    ],
+    "equations": 33,
+    "runs": [
+      {
+        "prime": 1000003,
+        "empty": true,
+        "positive_dimensional": false,
+        "returncode": 0
+      },
+      {
+        "prime": 1000033,
+        "empty": true,
+        "positive_dimensional": false,
+        "returncode": 0
+      },
+      {
+        "prime": 1000037,
+        "empty": true,
+        "positive_dimensional": false,
+        "returncode": 0
+      },
+      {
+        "prime": 0,
+        "empty": true,
+        "positive_dimensional": false,
+        "returncode": 0
+      }
+    ]
+  }
+]

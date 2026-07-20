@@ -19,9 +19,3 @@ htmlcov/
 
 # Julia local environment products
 .julia/
-
-# Generated experiment output. Retained certificates, solver inputs, and
-# Markdown summaries below results/ remain tracked.
-/results/*.json
-/results/*.txt
-

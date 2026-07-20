@@ -48,10 +48,14 @@ every dimension at least three. The coordinate degrees are `(7,6,4)`.
 Run the independent finite check:
 
 ```bash
+python3 scripts/verify_counterexample_independent.py
 python3 -m venv .venv
 .venv/bin/pip install -r requirements.txt
 .venv/bin/python scripts/verify_counterexample.py
 ```
+
+The first verifier is dependency-free and implements its own exact sparse
+polynomial arithmetic; the second uses SymPy.
 
 ## What this project has added
 
@@ -278,6 +282,7 @@ make verify
 ### Core exact geometry
 
 ```bash
+python3 scripts/verify_counterexample_independent.py
 .venv/bin/python scripts/verify_counterexample.py
 .venv/bin/python scripts/rediscover_3d_chart.py
 .venv/bin/python scripts/cubic_model.py
