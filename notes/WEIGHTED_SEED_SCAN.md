@@ -1,9 +1,10 @@
 # Weighted-seed theorem schema and bounded scan
 
-This is an exploratory search ledger. The exact proof program now proceeds in
-the stricter order recorded in `QUARTIC_WEIGHTED_GEOMETRY.md`: finish the
-quartic image, boundary, nonproperness, and singularity analysis before lifting
-any theorem to arbitrary seeds.
+This is an exploratory search ledger. The universal inverse, discriminant, and
+monodromy statements are now proved in `WEIGHTED_SEED_THEOREM.md`. The scan is
+still not theorem-level evidence for exact images, boundary strata, or
+finite-field formulas; those require the seed-specific analyses separated
+there.
 
 ## Universal one-variable model
 

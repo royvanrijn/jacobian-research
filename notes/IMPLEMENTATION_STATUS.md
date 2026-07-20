@@ -20,7 +20,12 @@
   adversarial homotopy benchmark are implemented.
 - A general weighted-seed constructor is implemented. The quartic-sheet model
   has exact verifiers for polynomiality, determinant, collision, inverse,
-  discriminant, special fibers, nonproperness, singular locus, and image.
+  discriminant, special fibers, nonproperness, singular locus, image, and full
+  geometric/arithmetic monodromy `S_4`.
+- The universal inverse-pencil theorem now proves irreducibility, birational
+  discriminant normalization, and geometric/arithmetic monodromy `S_n` for
+  every characteristic-zero weighted seed; canonical and deformed degrees
+  through eight have an exact regression audit.
 - A bounded scan of 627 weighted seeds is exploratory and explicitly separated
   from theorem-level claims.
 
@@ -38,9 +43,11 @@
 - Produce a short structural determinant proof suitable for hand checking.
 - Obtain an independent second-CAS verification and archival reproduction log.
 - Complete the provenance record and separate priority from verification.
-- Independently audit irreducibility, normalization, monodromy, and every
-  boundary stratum used by the strongest global-geometry claims.
+- Independently audit normalization and every boundary stratum used by the
+  strongest global-geometry claims; the quartic irreducibility and monodromy
+  now have exact certificates.
 - Audit the stable-equivalence steps and external implication theorems against
   their primary sources.
-- Generalize the proved quartic weighted geometry only after stating precise
-  hypotheses on primitive zeros and ramification.
+- Generalize the quartic image and nonproperness theorem first to the canonical
+  family, using its two-point primitive-zero profile; keep additional boundary
+  branches from deformed seeds explicit.

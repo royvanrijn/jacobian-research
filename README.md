@@ -100,8 +100,12 @@ Fibers have `3`, `1`, and `0` affine points respectively on `Q != 0`, on
 - A degree-14 polynomial with three nondegenerate global minima and an explicit
   Palais--Smale sequence:
   [GRADIENT_INFINITY.md](notes/GRADIENT_INFINITY.md).
-- Exact image and boundary geometry for a quartic-sheet member of the weighted
-  family: [QUARTIC_WEIGHTED_GEOMETRY.md](notes/QUARTIC_WEIGHTED_GEOMETRY.md).
+- Exact image, boundary geometry, and full `S_4` monodromy for a quartic-sheet
+  member of the weighted family:
+  [QUARTIC_WEIGHTED_GEOMETRY.md](notes/QUARTIC_WEIGHTED_GEOMETRY.md).
+- Universal inverse-discriminant normalization and full `S_n` monodromy for
+  every characteristic-zero weighted seed:
+  [WEIGHTED_SEED_THEOREM.md](notes/WEIGHTED_SEED_THEOREM.md).
 - Explicit 95-dimensional cubic-homogeneous and 510-dimensional Drużkowski
   counterexamples:
   [CUBIC_HOMOGENEOUS_REDUCTION.md](notes/CUBIC_HOMOGENEOUS_REDUCTION.md) and

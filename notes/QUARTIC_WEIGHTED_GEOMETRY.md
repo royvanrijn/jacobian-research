@@ -39,7 +39,11 @@ G(1,0,0)=G(-1,0,2)=(0,0,1).
 - [x] Converse properness outside those components.
 - [x] Radical certificate for the singular locus.
 - [x] Exact image and fiber-cardinality theorem.
-- [ ] Generalization of the proved quartic statements to arbitrary seeds.
+- [x] Connectedness and geometric/arithmetic monodromy `S_4`.
+- [x] Universal inverse, discriminant-normalization, and `S_n` monodromy
+  theorem for arbitrary characteristic-zero seeds.
+- [ ] Generalization of the image and nonproperness statements to the
+  canonical family, then to seeds with extra primitive zeros.
 
 ## Quartic inverse on `C!=0`
 
@@ -121,6 +125,45 @@ Run:
 
 ```bash
 .venv/bin/python scripts/verify_quartic_discriminant.py
+```
+
+## Monodromy of the inverse cover
+
+The polynomial `E` is irreducible over `Q(s,t)`: viewed in
+`Q[s,W][t]`, it is linear and monic in `t`, so any factor independent of `t`
+would divide its unit leading coefficient. Thus the four-sheet cover over the
+discriminant complement is connected and its geometric monodromy is a
+transitive subgroup of `S_4`.
+
+The normalization gives exact representatives for all three relevant local
+branch types:
+
+- at the smooth point `r=1`, `(s,t)=(-1,-2)`, the factorization is
+  `-(W-1)^2(W^2+2W+2)`; a transverse `t`-slice splits the double root and gives
+  a transposition;
+- at either cusp `r=+/-1/sqrt(6)`, the local equation in `W=r+h` and
+  `t=t_0+epsilon` starts with `epsilon+c h^3`, so the three roots at the triple
+  root give a 3-cycle;
+- at the node, `s=0`, `t=-1/4+epsilon` gives
+  `-(W^2-1/2)^2+epsilon`, so the two double roots split simultaneously and
+  give a double transposition.
+
+If `G<=S_4` is the geometric monodromy group, transitivity implies `4` divides
+`|G|`, while the cusp 3-cycle implies `3` divides `|G|`. Hence `|G|` is `12`
+or `24`. The smooth-point transposition is odd, excluding the unique
+index-two subgroup `A_4`; therefore
+
+\[
+G=S_4.
+\]
+
+The arithmetic monodromy over `Q(s,t)` contains the geometric group and is
+also `S_4`.
+
+Run:
+
+```bash
+.venv/bin/python scripts/verify_quartic_monodromy.py
 ```
 
 ## Direct fibers on `C=0`
