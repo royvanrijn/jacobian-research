@@ -420,16 +420,26 @@ one-to-one.  Therefore
 \text{ is the normalization morphism}.}
 \]
 
-Normalization fibers over a collision type `(m_1,...,m_k)` are counted by
+Over the generic point of the exact collision stratum of type
+`(m_1,...,m_k)`, the geometric branches of the component are counted by
 
 \[
 [U^aV^b]\prod_{\rho=1}^k
 \left(\sum_{2i+3j=m_\rho}U^iV^j\right).
 \]
 
-Thus every component has an explicit smooth normalization, and its
-set-theoretic collision branches are combinatorial.  Scheme-theoretic
-ramification and conductor multiplicities remain separate questions.
+The entries label distinct generic roots, so equal multiplicities are not
+quotiented by permutation.  Thus every component has an explicit smooth
+normalization and its generic collision branches are combinatorial.  The
+first geometric two-branch example occurs in degree twelve for
+`(a,b)=(3,2)` over `E_(6,6)`.  Degree fourteen is only the first ambiguity
+after additionally quotienting abstract allocation data by permutations of
+equal-multiplicity roots.
+
+This is deliberately a generic-stratum statement: at more-special points,
+branches may specialize or ramify further.  Completed-local branch structure,
+scheme-theoretic ramification, and conductor multiplicities remain separate
+questions.
 
 ### Proof architecture for closures and intersections
 

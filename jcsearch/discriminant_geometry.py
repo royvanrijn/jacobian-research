@@ -423,6 +423,89 @@ def component_decomposition_count(
     return counts.get((double_root_count, triple_root_count), 0)
 
 
+def refinement_branches(atom_partition, collision_partition):
+    """Enumerate geometric normalization branches over a collision type.
+
+    Entries of ``collision_partition`` correspond to the distinct root values
+    of the collision polynomial.  Equal multiplicities are *not* quotiented:
+    assigning different roles to two distinct roots gives different points of
+    the normalization even when those roots have the same multiplicity.
+    """
+    atom_partition = tuple(
+        sorted((int(value) for value in atom_partition), reverse=True)
+    )
+    collision_partition = tuple(int(value) for value in collision_partition)
+    if (
+        not atom_partition
+        or set(atom_partition) - {2, 3}
+        or not collision_partition
+        or any(value < 2 for value in collision_partition)
+        or sum(atom_partition) != sum(collision_partition)
+    ):
+        raise ValueError(
+            "use a 2/3 partition and a collision partition of equal degree"
+        )
+    target_double = atom_partition.count(2)
+    target_triple = atom_partition.count(3)
+    branches = []
+
+    def extend(index, used_double, used_triple, allocations):
+        if index == len(collision_partition):
+            if (used_double, used_triple) == (target_double, target_triple):
+                branches.append(tuple(allocations))
+            return
+        multiplicity = collision_partition[index]
+        for triple_roots in range(multiplicity // 3 + 1):
+            remainder = multiplicity - 3 * triple_roots
+            if remainder % 2:
+                continue
+            double_roots = remainder // 2
+            if (
+                used_double + double_roots <= target_double
+                and used_triple + triple_roots <= target_triple
+            ):
+                extend(
+                    index + 1,
+                    used_double + double_roots,
+                    used_triple + triple_roots,
+                    allocations + ((double_roots, triple_roots),),
+                )
+
+    extend(0, 0, 0, ())
+    return tuple(branches)
+
+
+def refinement_branch_orbits(atom_partition, collision_partition):
+    """Collapse branches by abstract permutations of equal-multiplicity roots.
+
+    This counts combinatorial orbit types, not geometric normalization points.
+    It is provided to make that distinction explicit.
+    """
+    collision_partition = tuple(int(value) for value in collision_partition)
+    branches = refinement_branches(atom_partition, collision_partition)
+    multiplicities = tuple(sorted(set(collision_partition), reverse=True))
+    orbit_representatives = set()
+    for branch in branches:
+        representative = tuple(
+            (
+                multiplicity,
+                tuple(
+                    sorted(
+                        (
+                            branch[index]
+                            for index, value in enumerate(collision_partition)
+                            if value == multiplicity
+                        ),
+                        reverse=True,
+                    )
+                ),
+            )
+            for multiplicity in multiplicities
+        )
+        orbit_representatives.add(representative)
+    return tuple(sorted(orbit_representatives, reverse=True))
+
+
 def maximal_two_three_phi(double_root_count, triple_root_count, prefix="maxphi"):
     """Build ``Phi`` for ``M=Q_2**2*Q_3**3`` in quotient coordinates."""
     double_root_count = int(double_root_count)

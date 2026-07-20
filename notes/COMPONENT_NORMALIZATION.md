@@ -133,21 +133,46 @@ at every root, subject to
 \sum_\rho j_\rho=b.
 \]
 
-Consequently the set-theoretic normalization-fiber cardinality is
+Consequently, over the generic point of the exact collision stratum
+`E_nu`, the number of geometric branches of `C_(a,b)` is
 
 \[
 [U^aV^b]\prod_{\rho=1}^k
 \left(\sum_{2i+3j=m_\rho}U^iV^j\right).
 \]
 
-This counts collision branches combinatorially.  For example, over the
-partition `(6,6)` in the `(a,b)=(3,2)` component, the two multiplicity-six
-roots can receive the `Q^2` and `R^3` contributions in either order, giving a
-normalization fiber of size two.
+Here the entries of `nu` label the distinct generic roots; equal
+multiplicities are not quotiented by permutation.  For example, over the
+partition `(6,6)` in the `(a,b)=(3,2)` component, the two distinct
+multiplicity-six roots can receive the `Q^2` and `R^3` contributions in either
+order.  Thus `C_(3,2)` has two geometric branches over the generic point of
+`E_(6,6)`.  This is the first such ambiguity, in degree twelve.
 
-Scheme-theoretic ramification and conductor multiplicities are not determined
-by this set-theoretic count; they remain part of the intersection-multiplicity
-problem.
+An exact admissible witness is
+
+\[
+M=(W+6/5)^6(W-1)^6.
+\]
+
+It satisfies `Phi=0`, `D=46656/15625`, and weighted admissibility factor
+`-93312/15625`.  Its two normalization points are obtained from
+
+\[
+(Q,R)=((W+6/5)^3,(W-1)^2)
+\quad\text{or}\quad
+((W-1)^3,(W+6/5)^2).
+\]
+
+If one additionally quotients the allocation data by abstract permutations
+of roots having equal multiplicity, degree fourteen is the first collision
+with two orbit types: `(a,b)=(4,2)` over `(8,6)`.  That auxiliary orbit count
+is not the geometric normalization-fiber count.
+
+The formula is a generic-stratum statement.  At more-special points of
+`E_nu`, branches can specialize or ramify further.  Scheme-theoretic
+ramification, completed-local branch structure, and conductor multiplicities
+are not determined by this generic count; they remain part of the
+intersection-multiplicity problem.
 
 ## Rationality
 
@@ -167,4 +192,6 @@ python scripts/verify_component_normalization.py
 
 The script verifies the stable derivatives, saturates all seven exceptional
 singular ideals without removing collision diagonals, checks generic degree
-one, and audits the collision-fiber counting formula through degree fourteen.
+one, verifies the first geometric branch ambiguity in degree twelve, and
+separates it from the first equal-multiplicity orbit-type ambiguity in degree
+fourteen.

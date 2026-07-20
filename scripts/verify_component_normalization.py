@@ -14,6 +14,8 @@ from jcsearch.discriminant_geometry import (  # noqa: E402
     component_decomposition_count,
     maximal_two_three_partitions,
     maximal_two_three_phi,
+    refinement_branch_orbits,
+    refinement_branches,
 )
 
 
@@ -74,17 +76,60 @@ for degree in range(3, 15):
         ) == 1
         for collision in full_contact_partitions(degree):
             if collision_precedes(maximal, collision):
-                assert component_decomposition_count(
+                count = component_decomposition_count(
                     collision, double_count, triple_count
-                ) >= 1
+                )
+                assert count >= 1
+                assert count == len(refinement_branches(maximal, collision))
 
-# The first simple self-identification example: at two multiplicity-six roots,
-# the (a,b)=(3,2) normalization can assign Q^2 and R^3 to the two roots in
-# either order.
+# The first geometric multiple-branch fiber occurs in degree twelve.  The two
+# multiplicity-six entries name two distinct generic roots, so exchanging
+# their Q^2 and R^3 roles gives two distinct normalization points.
+for degree in range(3, 12):
+    for maximal in maximal_two_three_partitions(degree):
+        for collision in full_contact_partitions(degree):
+            if collision_precedes(maximal, collision):
+                assert len(refinement_branches(maximal, collision)) == 1
+
+degree_twelve = (3, 3, 2, 2, 2)
+branches_twelve = refinement_branches(degree_twelve, (6, 6))
+assert branches_twelve == (((3, 0), (0, 2)), ((0, 2), (3, 0)))
 assert component_decomposition_count((6, 6), 3, 2) == 2
+
+# This degree-twelve fiber is realized on the admissible open, not merely in
+# the projective collision boundary.
+W = sp.symbols("witness_W")
+r, s = -sp.Rational(6, 5), sp.Integer(1)
+M = sp.expand((W - r) ** 6 * (W - s) ** 6)
+D = sp.expand(sp.diff(M, W).subs(W, 1) - sp.diff(M, W).subs(W, 0))
+phi = sp.expand(M.subs(W, 1) - M.subs(W, 0) - sp.diff(M, W).subs(W, 0))
+weighted_open = sp.expand(sp.diff(M, W, 2).subs(W, 1) - 2 * D)
+assert phi == 0
+assert D == sp.Rational(46656, 15625)
+assert weighted_open == -sp.Rational(93312, 15625)
+normalization_pairs = (
+    (sp.expand((W - r) ** 3), sp.expand((W - s) ** 2)),
+    (sp.expand((W - s) ** 3), sp.expand((W - r) ** 2)),
+)
+assert normalization_pairs[0] != normalization_pairs[1]
+assert all(sp.expand(Q**2 * R**3 - M) == 0 for Q, R in normalization_pairs)
+
+# If one additionally forgets the identities of equal-multiplicity collision
+# roots, degree fourteen is the first ambiguity of abstract allocation types.
+# This orbit count is deliberately not used as a geometric fiber count.
+for degree in range(3, 14):
+    for maximal in maximal_two_three_partitions(degree):
+        for collision in full_contact_partitions(degree):
+            if collision_precedes(maximal, collision):
+                assert len(refinement_branch_orbits(maximal, collision)) == 1
+
+degree_fourteen = (3, 3, 2, 2, 2, 2)
+assert len(refinement_branch_orbits(degree_fourteen, (8, 6))) == 2
 
 print("PASS: stable maximal Phi hypersurfaces are smooth on the admissible open")
 print("PASS: all seven endpoint-rank singular ideals saturate to the unit ideal")
 print("PASS: exact 2/3 polynomials give generic degree-one quotient maps")
 print("PASS: collision fibers are counted by the local equations 2*i+3*j=m")
+print("PASS: the first generic geometric two-branch collision is degree 12")
+print("PASS: the first equal-multiplicity orbit-type ambiguity is degree 14")
 print("PASS: every maximal seed component has an explicit smooth normalization")

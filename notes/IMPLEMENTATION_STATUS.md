@@ -121,4 +121,6 @@
 - Refine the set-theoretic common-coarsening formula to scheme-theoretic
   intersections, including embedded components and collision multiplicities.
 - Compute normalization ramification, conductor ideals, and local branch
-  multiplicities along each collision stratum.
+  multiplicities at special points of each collision stratum; the generic
+  geometric branch count is now the coefficient of
+  `U^a V^b` in `product_rho sum_(2i+3j=m_rho) U^i V^j`.

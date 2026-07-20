@@ -125,8 +125,11 @@ repository; it does not by itself claim independent replication.
   including all collision diagonals.
 - [x] Identify its finite generically degree-one seed map as the normalization
   of the corresponding irreducible component.
-- [x] Count set-theoretic normalization fibers by the local allocations
-  `2i+3j=m`.
+- [x] Count geometric branches over the generic point of each collision
+  stratum by the local allocations `2i+3j=m`.
+- [x] Verify that degree twelve, `C_(3,2)` over `E_(6,6)`, is the first
+  geometric two-branch collision, and distinguish it from the first abstract
+  equal-multiplicity orbit-type ambiguity in degree fourteen.
 - [ ] Determine ramification divisors, conductors, and scheme-theoretic branch
   multiplicities of the component normalizations.
 - [x] Verify the threshold-`r` atom set `{r,...,2r-1}` and automatic abc bound
