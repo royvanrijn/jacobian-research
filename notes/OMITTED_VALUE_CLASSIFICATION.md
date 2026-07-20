@@ -150,6 +150,10 @@ The dual-curve interpretation of every multiplicity partition, including the
 geometric meaning of `F(R,P)=0`, is given in
 `GENERIC_DISCRIMINANT_CURVE.md`.
 
+The uniform root-space parameterization, equal-part quotient, saturated
+coefficient-space ideal, degree-five regression, and new degree-six and seven
+strata are given in `CONTACT_PARTITION_STRATA.md`.
+
 Run:
 
 ```bash

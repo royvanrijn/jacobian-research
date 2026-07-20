@@ -83,6 +83,12 @@ repository; it does not by itself claim independent replication.
 - [x] Deduce generic surjectivity for every inverse degree `n>=5`.
 - [x] Make the closed bad loci and their saturations into reusable symbolic
   certificates rather than relying on the global Tjurina check for examples.
+- [x] Generalize the incidence API to arbitrary contact partitions, including
+  residual factors and equal-part permutation quotients.
+- [x] Recover the degree-five exceptional polynomial from the uniform `(3,2)`
+  root curve.
+- [x] Classify the degree-six full-contact strata and their closure relations.
+- [x] Prove that the degree-seven nonsurjective locus has codimension two.
 - [ ] Reconcile the proof fully with the precise hypotheses of the classical
   projective-duality literature.
 
@@ -123,10 +129,10 @@ repository; it does not by itself claim independent replication.
 ## Recommended next order
 
 1. Make good-prime exclusions effective seed by seed.
-2. Stratify the exceptional discriminant loci beyond their contact partitions.
+2. Continue the exceptional-strata analysis in degrees eight and higher.
 3. Perform the second-CAS and clean-checkout archival reproduction.
 4. Audit compactifications, stable equivalence, and external implications.
-5. Compute low-degree coefficient equations from the universal incidences.
+5. Compute compact coefficient ideals for selected lower-dimensional strata.
 
 The routine executable audit is:
 

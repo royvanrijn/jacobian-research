@@ -109,6 +109,9 @@ Fibers have `3`, `1`, and `0` affine points respectively on `Q != 0`, on
 - Generic discriminants as nodal-cuspidal dual curves, with an all-degree
   contact-incidence proof and exact rational regressions through degree ten:
   [GENERIC_DISCRIMINANT_CURVE.md](notes/GENERIC_DISCRIMINANT_CURVE.md).
+- Arbitrary contact partitions, saturated coefficient ideals, and the exact
+  degree-five through degree-seven exceptional strata:
+  [CONTACT_PARTITION_STRATA.md](notes/CONTACT_PARTITION_STRATA.md).
 - Exact images and nonproperness sets for the full canonical family
   `H_d(W)=W^d(1-W)`:
   [CANONICAL_FAMILY_IMAGE.md](notes/CANONICAL_FAMILY_IMAGE.md).

@@ -55,6 +55,11 @@
 - The higher-cusp, cusp-plus-branch, tritangent, and ordinary-bitangent strata
   now have reusable universal ideals with explicit Rabinowitsch saturation by
   every diagonal, cusp, degree, and weighted-admissibility factor.
+- The incidence API now accepts every contact partition, quotients equal parts
+  before elimination, and supports exact residual factors. It recovers the
+  degree-five polynomial `F(R,P)`, identifies the degree-six main locus as a
+  rational irreducible quartic surface, and proves that degree-seven
+  nonsurjectivity first occurs in codimension two.
 - A bounded scan of 627 weighted seeds is exploratory and explicitly separated
   from theorem-level claims.
 

@@ -25,6 +25,7 @@ verify-quartic:
 	$(PYTHON) scripts/verify_weighted_seed_theorem.py
 	$(PYTHON) scripts/verify_generic_discriminant_geometry.py
 	$(PYTHON) scripts/verify_universal_discriminant_incidences.py
+	$(PYTHON) scripts/verify_contact_partition_strata.py
 	$(PYTHON) scripts/verify_canonical_family_image.py
 	$(PYTHON) scripts/verify_deformed_seed_boundary.py
 	$(PYTHON) scripts/verify_omitted_value_classification.py

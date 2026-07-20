@@ -50,6 +50,10 @@ class SaturatedIncidence:
         """Contact-factor dimension before projection to coefficient space."""
         return contact_incidence_dimension(self.degree, self.contact_partition)
 
+    def eliminate(self):
+        """Compute generators of the coefficient-space elimination ideal."""
+        return incidence_elimination_generators(self)
+
 
 @dataclass(frozen=True)
 class ContactPartitionIncidence:
@@ -87,6 +91,31 @@ class ContactPartitionIncidence:
         """Expected dimension in the normalized seed coefficient space."""
         internal = len(self.quotient_coordinates) + len(self.residual_coefficients)
         return internal - 1
+
+    @property
+    def Phi(self):
+        """Alias matching the conventional notation Phi_lambda."""
+        return self.phi
+
+    @property
+    def a(self):
+        """Scale in ``H-sW+t=a*M``."""
+        return self.scale
+
+    @property
+    def s(self):
+        """Slope parameter in the inverse pencil."""
+        return self.slope
+
+    @property
+    def t(self):
+        """Intercept parameter in the inverse pencil."""
+        return self.intercept
+
+    @property
+    def H(self):
+        """Normalized admissible primitive."""
+        return self.primitive
 
 
 def discriminant_param(H, W):
@@ -403,11 +432,13 @@ def universal_primitive(degree: int, W, prefix="h", admissible=True):
 
 
 def universal_discriminant_incidences(model: UniversalPrimitive, prefix="inc"):
-    """Build the saturated universal tangent-contact incidence ideals.
+    """Build compatibility wrappers for the original named incidences.
 
-    The returned dictionary contains the ordinary ordered-bitangent incidence
-    and the three bad strata used by the all-degree theorem.  Saturation is
-    represented exactly by a Rabinowitsch equation ``1-gate*factor``.
+    New full- and partial-contact work should use
+    :func:`contact_partition_incidence`.  This dictionary retains the ordinary
+    ordered-bitangent incidence and the first three named bad strata used by
+    the all-degree theorem. Saturation is represented by a Rabinowitsch
+    equation ``1-gate*factor``.
     """
     H = model.polynomial
     W = model.variable
