@@ -18,7 +18,9 @@ from jcsearch.discriminant_geometry import (  # noqa: E402
     discriminant_param,
     ordinary_cusp_determinant,
     partition_dual_geometry,
+    projective_discriminant_param,
     symmetric_bitangent_equations,
+    tangent_chord_incidence_equation,
     tangent_chord_normalization,
 )
 from jcsearch.weighted import WeightedSeedModel, w  # noqa: E402
@@ -68,6 +70,12 @@ for degree in range(3, 65):
             assert incidence_dimension is None
         else:
             assert incidence_dimension == ambient_dimension - 1
+            residual_degree = degree - sum(contacts)
+            # The compact graph source is (P^1)^k times P^(d+1), where the
+            # extra projective coordinate homogenizes the affine Q-space.
+            compact_source_dimension = len(contacts) + residual_degree + 1
+            assert compact_source_dimension == incidence_dimension
+            assert compact_source_dimension < ambient_dimension
     audit_H = deterministic_generic_primitive(degree, w)
     closed_form = sum(w**power for power in range(2, degree)) - (degree - 2) * w**degree
     assert sp.expand(audit_H - closed_form) == 0
@@ -79,6 +87,10 @@ for degree in range(3, 65):
 alpha, beta = sp.symbols("alpha beta")
 generic_coefficients = sp.symbols("g0:7")
 generic_G = sum(coefficient * w**index for index, coefficient in enumerate(generic_coefficients))
+chord_incidence = tangent_chord_incidence_equation(generic_G, w, alpha, beta)
+# The divided equation solves uniquely for the quadratic coefficient. This
+# is the explicit irreducibility certificate for the tangent-chord incidence.
+assert sp.diff(chord_incidence, generic_coefficients[2]) == 1
 normalized_H = tangent_chord_normalization(generic_G, w, alpha, beta)
 normalization_slope, normalization_intercept = discriminant_param(normalized_H, w)
 source_point = alpha + (beta - alpha) * w
@@ -125,6 +137,24 @@ for degree in range(3, 11):
     leading = sp.Poly(H, w).LC()
     assert sp.limit(w * slope / intercept, w, sp.oo) == sp.Rational(degree, degree - 1)
     assert sp.limit(w**degree / intercept, w, sp.oo) == 1 / ((degree - 1) * leading)
+    R, U = sp.symbols(f"R{degree} U{degree}")
+    projective_slope, projective_intercept, projective_z = projective_discriminant_param(
+        H, w, R, U, degree
+    )
+    assert sp.expand(projective_slope.subs(U, 1) - slope.subs(w, R)) == 0
+    assert sp.expand(projective_intercept.subs(U, 1) - intercept.subs(w, R)) == 0
+    assert projective_z.subs(U, 1) == 1
+    assert projective_slope.subs({R: 1, U: 0}) == 0
+    assert projective_intercept.subs({R: 1, U: 0}) == (degree - 1) * leading
+    assert projective_z.subs(U, 0) == 0
+    q = sp.symbols(f"q{degree}")
+    infinity_uniformizer = sp.cancel(
+        projective_slope.subs({R: 1, U: q})
+        / projective_intercept.subs({R: 1, U: q})
+    )
+    assert sp.limit(infinity_uniformizer / q, q, 0) == sp.Rational(
+        degree, degree - 1
+    )
 
     # Work on unordered pairs.  The common resultant contains n-2 diagonal
     # cusp points and the remaining simple factor counts ordinary bitangents.
@@ -182,8 +212,10 @@ assert partition_dual_geometry((3, 2)) == "ordinary cusp branch meeting another 
 assert partition_dual_geometry((2, 2, 2)) == "tritangent line / triple normalization point"
 
 print("PASS: deterministic admissible seeds through inverse degree ten")
-print("PASS: all-degree bad-contact incidences have codimension at least one")
+print("PASS: compactified bad-contact sources have dimension n-2")
+print("PASS: divided tangent-chord incidence is an irreducible affine bundle")
 print("PASS: tangent chords normalize the good locus into the admissible slice")
 print("PASS: exactly n-2 ordinary cusps and (n-2)(n-3)/2 ordinary nodes")
-print("PASS: infinity is smooth and the singular scheme has minimal Tjurina number")
+print("PASS: projective normalization is immersed at its unique infinity point")
+print("PASS: singular scheme has the minimal nodal-cuspidal Tjurina number")
 print("PASS: multiplicity partitions carry their dual-curve singularity types")

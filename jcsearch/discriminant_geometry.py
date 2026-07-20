@@ -213,6 +213,37 @@ def discriminant_param(H, W):
     return sp.expand(derivative), sp.expand(W * derivative - H)
 
 
+def projective_discriminant_param(H, W, R, U, degree=None):
+    """Homogenize the tangent-line map to three forms of one degree.
+
+    The result restricts to ``[H'(R), R*H'(R)-H(R), 1]`` on ``U=1``.
+    For an exact degree-``n`` polynomial it sends the sole parameter point
+    at infinity to ``[0:1:0]`` and has no projective base point.
+    """
+    H = sp.expand(H)
+    if degree is None:
+        degree = sp.Poly(H, W).degree()
+    degree = int(degree)
+    if degree < 2 or sp.degree(H, W) > degree:
+        raise ValueError("the homogenizing degree must dominate deg(H) and be at least two")
+
+    def homogenize(expression, target_degree):
+        polynomial = sp.Poly(sp.expand(expression), W)
+        return sp.expand(
+            sum(
+                polynomial.coeff_monomial(W**power)
+                * R**power
+                * U ** (target_degree - power)
+                for power in range(target_degree + 1)
+            )
+        )
+
+    derivative = sp.diff(H, W)
+    slope = sp.expand(U * homogenize(derivative, degree - 1))
+    intercept = homogenize(W * derivative - H, degree)
+    return slope, intercept, U**degree
+
+
 def cusp_polynomial(H, W):
     """Return the ramification polynomial of the discriminant normalization."""
     return sp.expand(sp.diff(H, W, 2))
@@ -978,6 +1009,23 @@ def tangent_chord_normalization(G, W, alpha, beta):
     shifted = sp.sympify(alpha) + difference * W
     tangent = G.subs(W, alpha) + sp.diff(G, W).subs(W, alpha) * difference * W
     return sp.expand(G.subs(W, shifted) - tangent)
+
+
+def tangent_chord_incidence_equation(G, W, alpha, beta):
+    """Return the divided equation for a residual tangent intersection.
+
+    The numerator is always divisible by ``(beta-alpha)^2``.  In the
+    coefficient space modulo affine polynomials, the coefficient of the
+    quadratic coefficient of ``G`` is one; this makes the incidence an
+    irreducible affine bundle over the ordered distinct endpoint space.
+    """
+    difference = sp.sympify(beta) - sp.sympify(alpha)
+    numerator = sp.expand(
+        G.subs(W, beta)
+        - G.subs(W, alpha)
+        - sp.diff(G, W).subs(W, alpha) * difference
+    )
+    return sp.expand(sp.cancel(numerator / difference**2))
 
 
 def universal_primitive(degree: int, W, prefix="h", admissible=True):

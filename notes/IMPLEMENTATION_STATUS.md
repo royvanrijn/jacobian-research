@@ -76,11 +76,17 @@ identities and type (3) in selected degrees.
   `1-D_n/n!`.
 - A uniform written proof of the generic degree-`n` discriminant theorem
   identifies the curve as a rational dual with `n-2` cusps and
-  `(n-2)(n-3)/2` nodes in every degree. A
-  uniform contact-incidence dimension proof and tangent-chord normalization
-  show that the good locus meets every admissible degree. Thus generic seeds
-  are surjective for all inverse degrees at least five. Exact rational seeds
-  through degree ten remain as independent exact regression tests.
+  `(n-2)(n-3)/2` nodes in every degree.  The proof now constructs saturated
+  projective graph closures for the `(4)`, `(3,2)`, and `(2,2,2)` incidences,
+  proves those patterns exhaust every bad affine normalization branch,
+  classifies every marked-root, residual, coefficient, and degree-drop
+  degeneration at infinity, and proves that closure cannot increase the
+  `n-2` incidence dimension.  The divided tangent-chord incidence is an
+  explicit irreducible affine bundle dominating the unrestricted coefficient
+  space; its admissible open is nonempty, so the good locus meets every
+  normalized weighted slice. Thus generic seeds are surjective for all
+  inverse degrees at least five. Exact rational seeds through degree ten
+  remain as independent exact regression tests.
 - The higher-cusp, cusp-plus-branch, tritangent, and ordinary-bitangent strata
   now have reusable universal ideals with explicit Rabinowitsch saturation by
   every diagonal, cusp, degree, and weighted-admissibility factor.

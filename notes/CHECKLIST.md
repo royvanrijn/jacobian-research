@@ -86,8 +86,19 @@ formal derivations of its universal quantifier.
 - [x] Use the global singular-scheme length to exclude hidden tritangents,
   cusp-branch collisions, coincident nodes, and higher singularities in those
   examples.
-- [x] Prove nonemptiness of the good parameter locus uniformly in every degree
-  using contact-incidence dimensions and tangent-chord normalization.
+- [x] Define the compactified `(4)`, `(3,2)`, and `(2,2,2)` incidence
+  varieties as saturated projective graph closures with explicit homogeneous
+  coefficient equations.
+- [x] Prove from normalization branches and common-tangent contact orders that
+  those three patterns exhaust every bad affine singularity.
+- [x] Classify all finite-collision, residual, marked-root-at-infinity,
+  residual-at-infinity, coefficient-at-infinity, and degree-drop boundaries.
+- [x] Prove that each compactified graph remains irreducible of dimension
+  `n-2` and that proper projection keeps its closed image at dimension at
+  most `n-2`.
+- [x] Prove the divided tangent-chord incidence is an irreducible affine bundle
+  dominating coefficient space, and use its explicit admissible witness to
+  show every normalized weighted slice meets the good open.
 - [x] Deduce generic surjectivity for every inverse degree `n>=5`.
 - [x] Make the closed bad loci and their saturations into reusable symbolic
   certificates rather than relying on the global Tjurina check for examples.

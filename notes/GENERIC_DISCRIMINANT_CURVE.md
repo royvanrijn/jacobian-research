@@ -35,72 +35,306 @@ computational audit.
 
 ## Uniform genericity proof
 
-Work first with degree-`n` polynomials modulo affine-linear summands. Adding
-`aW+b` merely translates the dual coordinates by `(a,-b)`, so this coefficient
-space has dimension `n-1` and retains all dual singularity data.
-
-Every bad affine singularity forces one of three common-tangent contact
-factorizations, with the displayed contact points distinct:
-
-| Bad event | Factorization of `H(W)-ell(W)` |
-|---|---|
-| higher cusp at `r` | `(W-r)^4 Q(W)` |
-| cusp at `r` plus another branch `u` | `(W-r)^3(W-u)^2 Q(W)` |
-| three normalization points over one image | `(W-r)^2(W-u)^2(W-v)^2 Q(W)` |
-
-If the total contact order is `m` at `k` marked points, then `Q` contributes
-`n-m+1` coefficients and the points contribute `k` parameters. Each row
-therefore has dimension
+Fix an algebraically closed field `k` of characteristic zero.  Work in the
+affine coefficient space
 
 \[
-k+(n-m+1)=n-2
+\mathcal B_n=\operatorname{Spec}k[h_2,\ldots,h_n]\simeq\mathbb A^{n-1},
+\qquad H(W)=\sum_{j=2}^n h_jW^j.
 \]
 
-when it is nonempty; in smaller degrees it is empty. Compactifying the marked
-points shows that the closure of each incidence image still has dimension at
-most `n-2`. Their finite union is consequently a proper closed subset of the
-`n-1` dimensional coefficient space. This simultaneously excludes multiple
-roots of `H''`, cusp-branch collisions, tritangents, and coincident node
-images. Two distinct regular branches can never be tangent to each other,
-because their tangent directions are `(1,r)` and `(1,u)`, with determinant
-`u-r`.
+This is the space of degree-at-most-`n` polynomials modulo affine-linear
+summands. Adding `aW+b` translates the dual coordinates by `(a,-b)` and does
+not change any singularity type. The exact-degree locus is the open set
+`B_n^o=D(h_n)`.
 
-It remains to show that this open set meets the admissible weighted-seed
-slice. Let `G` be a generic good polynomial, choose a generic tangent point
-`alpha`, and let `beta!=alpha` be a simple residual intersection of that
-tangent with the graph. Put `d=beta-alpha` and
+### Projective normalization and its point at infinity
+
+For `[R:U] in P^1`, the projective extension of the tangent-line map is
 
 \[
-H(W)=G(\alpha+dW)-G(\alpha)-G'(\alpha)dW.
+\overline\nu_H[R:U]=[S_H(R,U):T_H(R,U):Z(R,U)],
 \]
 
-Then
+where the three degree-`n` forms are
 
 \[
-H(0)=H'(0)=H(1)=0,
-\qquad H'(1)\ne0.
+\begin{aligned}
+S_H&=\sum_{j=2}^n jh_jR^{j-1}U^{n-j+1},\\
+T_H&=\sum_{j=2}^n (j-1)h_jR^jU^{n-j},\\
+Z&=U^n.
+\end{aligned}
 \]
 
-Moreover, writing `(s_G,t_G)=(G',WG'-G)` at `alpha+dW`,
+On `U=1` this is `[H'(R):RH'(R)-H(R):1]`.  On `B_n^o` the forms have no
+common zero.  The only parameter point over the target line at infinity is
+`[R:U]=[1:0]`, and its image is `[0:1:0]`.  In the local coordinate `q=U/R`
+and the target chart `T=1`,
+
+\[
+{S_H\over T_H}={n\over n-1}q+O(q^2),\qquad
+{Z\over T_H}={1\over(n-1)h_n}q^n+O(q^{n+1}).
+\]
+
+Thus `q` is recovered from the first target coordinate.  Uniformly on
+`D(h_n)`, the map is a closed immersion in a formal neighborhood of infinity.
+In particular the point at infinity is smooth, cannot meet a finite branch,
+and cannot be the limit of two distinct normalization points with a common
+image.
+
+### The three compactified bad-incidence varieties
+
+For a contact pattern
+
+\[
+\mu=(\mu_1,\ldots,\mu_k),\qquad
+m=\sum_i\mu_i,\qquad d=n-m,
+\]
+
+put
+
+\[
+M_\mu(W)=\prod_{i=1}^k(W-r_i)^{\mu_i}.
+\]
+
+When `d>=0`, an affine common-tangent incidence has the coefficient identity
+
+\[
+H(W)-\ell(W)=M_\mu(W)Q(W),\qquad \deg Q\le d. \tag{1}
+\]
+
+Since `ell` is affine-linear, equation (1) says exactly that the coefficients
+of `W^2,...,W^n` in `H` and `M_mu Q` agree.  Consequently it defines a
+polynomial map
+
+\[
+\theta_\mu:\mathbb A^k\times\mathbb A^{d+1}\longrightarrow\mathcal B_n.
+\tag{2}
+\]
+
+The exact-contact incidence is the open subset where the marked roots are
+distinct, `Q(r_i)!=0`, and the product has degree `n`.
+
+Here is an explicit proper compactification of (2).  Write a marked root as
+`[R_i:U_i]`, put
+
+\[
+L_i(W,V)=U_iW-R_iV,\quad
+D=\prod_iU_i^{\mu_i},\quad
+M_\mu^h=\prod_iL_i^{\mu_i},
+\]
+
+and write
+
+\[
+Q^h(W,V)=\sum_{a=0}^d q_aW^aV^{d-a}.
+\]
+
+Compactify the residual coefficients as
+`[q_infty:q_0:...:q_d] in P^(d+1)` and the target as
+`[z:h_2:...:h_n] in P^(n-1)`.  If `P_j` denotes the coefficient of
+`W^jV^(n-j)` in `M_mu^h Q^h`, define
+
+\[
+\overline{\mathcal I}_\mu\subset
+(\mathbb P^1)^k\times\mathbb P^{d+1}\times\mathbb P^{n-1} \tag{3}
+\]
+
+to be the graph closure, equivalently the subscheme obtained from
+
+\[
+Dq_\infty h_j-zP_j=0\qquad(2\le j\le n) \tag{4}
+\]
+
+by saturation with respect to `z D q_infty`.  This saturation is part of the
+definition: it removes components created solely by homogenizing away from
+the affine graph chart.  If `d<0`, the incidence is empty.
+
+The three bad patterns and their compactifications are
+
+| Pattern `mu` | Event | `m` | `k` | `d+1` residual coefficients |
+|---|---|---:|---:|---:|
+| `(4)` | nonordinary ramified branch | 4 | 1 | `n-3` |
+| `(3,2)` | ramified branch sharing its image | 5 | 2 | `n-4` |
+| `(2,2,2)` | at least three normalization points over one image | 6 | 3 | `n-5` |
+
+The source of every nonempty affine graph in (2) is irreducible of dimension
+
+\[
+k+(d+1)=k+n-m+1=n-2. \tag{5}
+\]
+
+Its graph closure (3) is therefore irreducible of the same dimension; taking
+a closure introduces no new irreducible component.  Projection from (3) to
+`P^(n-1)` is proper, so its image is closed and is exactly the Zariski closure
+of the corresponding affine incidence image.  Hence
+
+\[
+\dim\overline{\theta_\mu(\mathcal I_\mu^o)}\le n-2. \tag{6}
+\]
+
+This proves the dimension bound for the closure, not merely for the
+distinct-root chart.  Root collisions, residual factors meeting marked
+roots, and every projective boundary stratum remain inside the same
+irreducible graph closure and cannot raise its dimension.
+
+### Exhaustion of every bad affine singularity
+
+For a finite parameter `r`, let `ell_r` be the tangent line to the graph of
+`H` at `r`.  Its contact order is
+
+\[
+c(r)=\operatorname{ord}_{W=r}(H(W)-\ell_r(W))\ge2.
+\]
+
+The derivative formula
+
+\[
+\nu_H'(r)=H''(r)(1,r) \tag{7}
+\]
+
+gives the complete branch classification:
+
+1. `c(r)=2` exactly when the normalization is immersive at `r`.
+2. `c(r)=3` exactly when `H''` has a simple zero at `r`.  Then
+   `det(nu_H''(r),nu_H'''(r))=2H'''(r)^2!=0`, so the image branch is an
+   ordinary cusp.
+3. `c(r)>=4` gives pattern `(4)` after absorbing all excess contact into `Q`.
+
+Now suppose a singular image point has more than one normalization preimage.
+Equality of two images says precisely that one affine line is tangent at both
+graph points, so every preimage contributes contact at least two to (1).
+There are only three possibilities not already ordinary:
+
+- if one of exactly two branches is ramified, their contact orders dominate
+  `(3,2)`; this also includes cusp-cusp collisions and higher contact after
+  moving the excess multiplicity into `Q`;
+- if there are at least three preimages, any three give `(2,2,2)`; this also
+  includes coincident node images and fibers with four or more preimages;
+- if there are exactly two unramified preimages `r!=u`, the two branch tangent
+  directions are `(1,r)` and `(1,u)`, whose determinant is `u-r!=0`.  The
+  singularity is therefore an ordinary transverse node, never a tacnode.
+
+Together with the one-branch classification, these alternatives prove that
+`(4)`, `(3,2)`, and `(2,2,2)` exhaust every affine singularity worse than an
+ordinary node or ordinary cusp.  There is no additional nonbirational case:
+on `H''!=0`, the function `dt/ds=r` recovers the normalization parameter from
+the image function field.
+
+### Complete boundary analysis
+
+For clarity, every degeneration of the open incidences is listed here.
+
+1. **Finite marked-root collisions.**  Merging marked roots adds their contact
+   orders: `(3,2)` can specialize to contact at least five, while `(2,2,2)`
+   can specialize to `(4,2)` or contact at least six.  These are points of the
+   same closures and are already dominated by one of the three patterns.
+2. **Residual collision.**  If `Q(r_i)=0`, the corresponding contact order
+   increases.  This is again excess multiplicity inside the same closure; it
+   includes patterns such as `(3,3)`, `(4,2)`, and higher cusps.
+3. **A marked point tends to parameter infinity.**  A ramified marked point
+   would make the homogenization of `H''` vanish at `[1:0]`, but its value
+   there is `n(n-1)h_n`; hence this forces degree drop `h_n=0`.  An unramified
+   point at infinity cannot share an image with a finite point because their
+   target `Z`-coordinates differ.  Two or more marked points cannot collide
+   there off the diagonal because the local expansion above makes
+   `overline(nu)_H` a closed immersion at infinity.
+4. **Residual coefficients tend to infinity.**  Once all marked roots remain
+   finite, a nonzero limiting direction `Q_infty` would have to make every
+   coefficient of degree at least two in `M_mu Q_infty` vanish in order for
+   the target coefficients to stay affine and bounded.  Thus
+   `M_mu Q_infty` would be affine-linear, contradicting
+   `deg M_mu=m>=4`.
+5. **The coefficient target tends to infinity.**  This is exactly the boundary
+   `z=0` of `P^(n-1)` and does not lie over `B_n`.
+6. **Degree drop.**  The remaining boundary is contained in `h_n=0`, outside
+   `B_n^o`.  After cancelling the common power of `U`, it is the analogous
+   lower-degree problem and supplies no singularity of an exact degree-`n`
+   discriminant.
+
+These cases exhaust the boundary of (3): it is the union of `z=0`,
+`q_infty=0`, some `U_i=0`, the finite diagonals, the residual-resultant
+divisors, and `h_n=0`.  Thus no unexamined infinity component projects into
+the exact-degree affine coefficient space.
+
+### The good open set
+
+Let `Z_4`, `Z_32`, and `Z_222` be the three closed projective images from
+(3).  By (6), each has dimension at most `n-2`, whereas `B_n` has dimension
+`n-1`.  Their union with the degree-drop divisor is a proper closed subset.
+Its complement `U_n` has squarefree `H''`, no cusp-branch collision, and no
+tritangent or coincident node images.  The exhaustion proof and the infinity
+analysis show that every discriminant belonging to `U_n` has only ordinary
+cusps and ordinary nodes and is smooth at infinity.
+
+### Why the admissible weighted slice meets the good open
+
+It remains to prove that `U_n` is not lost after imposing the weighted endpoint
+conditions.  Define the tangent-chord incidence
+
+\[
+\mathcal T_n=\left\{(G,\alpha,\beta):\alpha\ne\beta,\quad
+{G(\beta)-G(\alpha)-G'(\alpha)(\beta-\alpha)
+ \over(\beta-\alpha)^2}=0\right\}. \tag{8}
+\]
+
+The divided expression is polynomial.  Its coefficient of `g_2` is exactly
+one, so (8) solves uniquely for `g_2`.  Consequently
+
+\[
+\mathcal T_n\simeq
+(\mathbb A^2\setminus\Delta)\times\mathbb A^{n-2} \tag{9}
+\]
+
+and is irreducible.  The projection `T_n -> B_n` is dominant: for an
+exact-degree `G` and a generic `alpha`, the divided tangent-intersection
+polynomial has degree `n-2` in `beta`, and it does not vanish at `beta=alpha`
+because that value is `G''(alpha)/2`.  Over the algebraic closure it therefore
+has a distinct residual root.
+
+Put `d=beta-alpha` and
+
+\[
+H(W)=G(\alpha+dW)-G(\alpha)-G'(\alpha)dW. \tag{10}
+\]
+
+Then `H(0)=H'(0)=H(1)=0`.  Writing `(s_G,t_G)=(G',WG'-G)` at
+`alpha+dW`, one obtains
 
 \[
 (s_H,t_H)=
-\bigl(d(s_G-G'(\alpha)),\ t_G-\alpha s_G+G(\alpha)\bigr).
+\bigl(d(s_G-G'(\alpha)),\ t_G-\alpha s_G+G(\alpha)\bigr). \tag{11}
 \]
 
-Thus tangent-chord normalization is an affine source reparameterization
-followed by an invertible affine target change and preserves every dual
-singularity type. The tangent-chord incidence is irreducible and dominates
-the unrestricted coefficient space. The remaining weighted condition
-`H''(1)/(-H'(1))!=-2` removes only a proper closed subset: the admissible audit
-family simplifies to
+Equation (11) is an affine reparameterization of `P^1` followed by an
+invertible affine target transformation of determinant `d`.  It preserves
+the projective discriminant, including the local type at infinity.  Hence the
+inverse image of `U_n` in `T_n` is a nonempty open subset.
+
+The remaining weighted conditions are also a nonempty open subset of `T_n`:
+
+\[
+\deg H=n,\qquad H'(1)\ne0,\qquad H''(1)-2H'(1)\ne0. \tag{12}
+\]
+
+Nonemptiness is witnessed on (8) by `G=H_n`, `alpha=0`, `beta=1`, where
 
 \[
 H_n(W)=W^2+W^3+\cdots+W^{n-1}-(n-2)W^n
 \]
 
-and has `H''(1)/(-H'(1))=-4n/3`. Hence the good open set meets the admissible
-slice for every `n>=3`, proving the theorem uniformly.
+and
+
+\[
+{H_n''(1)\over-H_n'(1)}=-{4n\over3}\ne-2.
+\]
+
+Because `T_n` is irreducible, its nonempty good open and its nonempty
+weighted-admissible open intersect.  Equation (10) at a point of this
+intersection is a good admissible seed.  Finally, scaling by the nonzero
+constant `-1/H'(1)` reaches the normalized slice `H'(1)=-1`; the ratio in
+(12) and every dual singularity type are unchanged.  Therefore the normalized
+admissible weighted slice meets `U_n` for every `n>=3`.
 
 ## Universal saturated incidence ideals
 
