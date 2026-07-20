@@ -87,8 +87,9 @@ Run:
 .venv/bin/python scripts/verify_quartic_weighted_map.py
 ```
 
-The broader seed scan in `WEIGHTED_SEED_SCAN.md` remains exploratory until the
-unchecked quartic items above are complete.
+The broader seed scan in `WEIGHTED_SEED_SCAN.md` remains exploratory. Its role
+is diagnostic; the completed quartic and all-degree theorems use the exact
+certificates listed above rather than extrapolation from the scan.
 
 ## Discriminant normalization and singularities
 

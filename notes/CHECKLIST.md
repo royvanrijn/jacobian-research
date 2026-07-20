@@ -111,8 +111,9 @@ repository; it does not by itself claim independent replication.
 
 - [ ] Reproduce the 95D and 510D generated artifacts from a clean checkout.
 - [ ] Audit each stable-equivalence and pairing step against the cited theorem.
-- [ ] Audit every downstream conjectural implication, including hypotheses,
-  fields, dimensions, and quantifiers.
+- [x] Audit the four recorded downstream conjectural implications, including
+  hypotheses, fields, dimensions, and quantifiers.
+- [ ] Independently reproduce that implication audit from the primary sources.
 - [ ] Determine whether affine, triangular, or tame changes reduce degree,
   support, or coefficient height.
 

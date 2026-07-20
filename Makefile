@@ -1,11 +1,11 @@
 PYTHON ?= .venv/bin/python
 SYSTEM_PYTHON ?= python3
 
-.PHONY: check verify verify-minimal verify-core verify-geometry verify-quartic verify-normal-forms scan-weighted-seeds
+.PHONY: check verify verify-minimal verify-core verify-geometry verify-family verify-quartic verify-normal-forms scan-weighted-seeds
 
 check:
 	$(PYTHON) -m compileall -q jcsearch scripts
-	$(PYTHON) scripts/check_readme_links.py
+	$(PYTHON) scripts/check_markdown_links.py
 
 verify-minimal:
 	$(SYSTEM_PYTHON) scripts/verify_counterexample_independent.py
@@ -20,7 +20,7 @@ verify-geometry:
 	$(PYTHON) scripts/verify_exceptional_fibers.py
 	$(PYTHON) scripts/verify_image_nonproperness_inclusions.py
 
-verify-quartic:
+verify-family:
 	$(PYTHON) scripts/verify_weighted_seed_schema.py
 	$(PYTHON) scripts/verify_weighted_seed_theorem.py
 	$(PYTHON) scripts/verify_generic_discriminant_geometry.py
@@ -40,13 +40,16 @@ verify-quartic:
 	$(PYTHON) scripts/verify_quartic_singular_locus.py
 	$(PYTHON) scripts/verify_quartic_image.py
 
+# Backward-compatible name retained for existing commands and links.
+verify-quartic: verify-family
+
 verify-normal-forms:
 	$(PYTHON) scripts/cubic_homogeneous_reduction.py
 	$(PYTHON) scripts/verify_cubic_homogeneous_counterexample.py
 	$(PYTHON) scripts/cubic_linear_reduction.py
 	$(PYTHON) scripts/verify_cubic_linear_counterexample.py
 
-verify: check verify-core verify-geometry verify-quartic
+verify: check verify-core verify-geometry verify-family
 
 scan-weighted-seeds:
 	$(PYTHON) scripts/scan_weighted_seeds.py

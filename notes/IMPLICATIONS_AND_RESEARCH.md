@@ -37,12 +37,11 @@
   weighted infinity chart for the three-minimum polynomial; determine which
   stable sets at infinity form its basin boundaries. The first exact chart
   calculation is recorded in `GRADIENT_INFINITY.md`.
-- **Families.** The quartic-sheet seed `p=w-2w^3` now has a complete exact
-  image/nonproperness/fiber/singularity model, and 627 admissible seeds through
-  degree six have been scanned exploratorily. Use the quartic proof as the
-  template for a theorem with explicit hypotheses on the zeros of `H=integral
-  p`, ramification of `p`, monodromy, and finite-field reduction; then classify
-  when two seeds give polynomially equivalent maps.
+- **Families.** The universal monodromy, generic discriminant, boundary, and
+  contact-partition theorems now replace extrapolation from the 627-seed scan.
+  Continue the exceptional-strata calculation in degrees eight and higher,
+  make bad-prime exclusions effective, and classify when two seeds give
+  polynomially equivalent maps.
 - **Known reductions.** The Bass–Connell–Wright/Yagzhev and
   Gorni–Zampieri/Druzkowski reductions have now been executed explicitly,
   yielding certified counterexamples in dimensions 95 and 510 respectively.

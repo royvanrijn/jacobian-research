@@ -20,6 +20,7 @@ htmlcov/
 # Julia local environment products
 .julia/
 
-# Generated three-dimensional analysis and normal-form artifacts.
+# New generated analysis and normal-form artifacts. Selected reference JSON
+# certificates already tracked under results/ remain tracked by Git.
 /results/*.json
 /results/*.txt

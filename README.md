@@ -1,6 +1,28 @@
-# A three-dimensional Jacobian counterexample
+# A three-dimensional counterexample to the Jacobian conjecture
 
-This repository verifies and studies the polynomial map
+## Abstract
+
+This repository gives an exact certificate for a polynomial map
+
+\[
+F:\mathbb A^3\longrightarrow\mathbb A^3
+\]
+
+with constant nonzero Jacobian determinant and a fiber containing three
+distinct rational points. It therefore supplies a counterexample to the
+classical Jacobian conjecture in dimension three. The inverse problem reduces
+to a cubic polynomial, making it possible to determine the exact image, fiber
+stratification, nonproperness set, normalization, and monodromy.
+
+The same construction belongs to a weighted family controlled by the
+one-variable pencil `H(W)-sW+t`. For this family the repository proves full
+symmetric monodromy, a generic nodal-cuspidal discriminant theorem in every
+degree, generic surjectivity from inverse degree five onward, a complete
+contact-partition description of omitted values, and the associated
+finite-field Chebotarev law. Every main algebraic claim has an executable exact
+certificate or an explicitly identified external theorem input.
+
+## 1. Main theorem
 
 \[
 F(x,y,z)=\left(
@@ -10,37 +32,219 @@ y+3x(1+xy)^2z+3xy^2(4+3xy),
 \right).
 \]
 
-Its central certificate is finite and exact:
+Exact expansion gives
 
 \[
-\det DF=-2
+\det DF=-2.
 \]
 
-and
+Nevertheless,
 
 \[
-F(0,0,-1/4)=F(1,-3/2,13/2)=F(-1,3/2,13/2)=(-1/4,0,0).
+F(0,0,-1/4)=F(1,-3/2,13/2)=F(-1,3/2,13/2)
+=(-1/4,0,0).
 \]
 
-Thus `F` is everywhere étale over `C` but is not injective. Subject only to
-checking the displayed arithmetic, it is a counterexample to the classical
-Jacobian conjecture in dimension three. Appending identity coordinates gives
-counterexamples in every dimension at least three. Its coordinate degrees are
+Thus `F` is everywhere étale over `C` but is not injective and
+hence is not a polynomial automorphism. Appending identity coordinates gives
+counterexamples in every dimension at least three. The coordinate degrees are
 `(7,6,4)`.
 
-The repository is deliberately centered on this three-dimensional result and
-its direct consequences. It contains no plane-search program.
+The determinant, collision, and degrees are checked twice: once with SymPy and
+once with an independent standard-library sparse-polynomial implementation.
+No global geometry or family theorem is needed for this minimal certificate.
 
-## Quick verification
+## 2. Inverse equation and reconstruction
 
-The smallest verifier uses only Python's standard library and implements its
-own sparse polynomial arithmetic:
+Write a target as `(a,b,c)` and, on `x!=0`, set
+
+\[
+T=y+{1\over x}.
+\]
+
+The inverse problem becomes
+
+\[
+P(T)=cT^3-2T^2+bT-2a=0.
+\]
+
+If
+
+\[
+r=P'(T)=3cT^2-4T+b,
+\]
+
+then a simple root reconstructs the source by
+
+\[
+x={2\over r},\qquad
+y=T-{r\over2},\qquad
+z={5r^2\over4}-{3Tr\over2}-{cr^3\over8}.
+\]
+
+The function-field extension therefore has degree three. Its discriminant is
+
+\[
+\operatorname{Disc}_T(P)=-4Q,
+\]
+
+where
+
+\[
+Q=27a^2c^2-18abc+16a+b^3c-b^2.
+\]
+
+This model also explains the failure of properness: repeated inverse roots are
+precisely the reconstruction poles, so sheets can escape to infinity without
+finite ramification.
+
+## 3. Image, fibers, and nonproperness
+
+Define
+
+\[
+\Gamma=V(3bc-4,12a-b^2).
+\]
+
+Then
+
+\[
+F(\mathbb C^3)=\mathbb C^3\setminus\Gamma,
+\qquad
+S_F=V(Q),
+\]
+
+and `Gamma=Sing(V(Q))`. The complete affine fiber table is:
+
+| Target stratum | Fiber cardinality |
+|---|---:|
+| `Q!=0` | 3 |
+| `Q=0` away from `Gamma` | 1 |
+| `Gamma` | 0 |
+
+The proof includes the `x=0` chart, every exceptional cubic, explicit escaping
+paths over all boundary strata, and a converse boundedness argument off
+`V(Q)`. Root meridians generate the full monodromy group `S_3`.
+
+See [Construction and anatomy](notes/CONSTRUCTION.md) and
+[Exact image, fibers, and nonproperness](notes/IMAGE_AND_NONPROPERNESS.md).
+
+## 4. Weighted inverse families
+
+The three-dimensional map is part of a weighted construction determined by an
+admissible primitive `H` of degree `n`. Its inverse pencil is
+
+\[
+E_{s,t}(W)=H(W)-sW+t,
+\]
+
+with `(s,t)=(BC,cAC^2)` on `C!=0`. Simple roots reconstruct finite source
+points; repeated roots are reconstruction poles. The repeated-root
+discriminant has normalization
+
+\[
+\nu_H(r)=\bigl(H'(r),rH'(r)-H(r)\bigr),
+\]
+
+the curve of tangent lines to the graph `Y=H(W)`.
+
+The repository proves:
+
+1. The generic inverse pencil is irreducible, and its geometric and arithmetic
+   monodromy groups are `S_n`.
+2. For generic admissible `H`, the projective discriminant is a rational
+   degree-`n` curve with a smooth point at infinity, exactly `n-2` ordinary
+   cusps, and
+
+   \[
+   {(n-2)(n-3)\over2}
+   \]
+
+   ordinary nodes, with no other singularities.
+3. Generic weighted maps are surjective over the algebraic closure for every
+   inverse degree `n>=5`.
+4. The canonical family `H_d(W)=W^d(1-W)`, one-extra-root deformations, and
+   repeated primitive roots have exact image and boundary theorems.
+
+The main references are
+[the weighted-seed theorem](notes/WEIGHTED_SEED_THEOREM.md),
+[the generic discriminant theorem](notes/GENERIC_DISCRIMINANT_CURVE.md),
+[the canonical image theorem](notes/CANONICAL_FAMILY_IMAGE.md), and
+[the repeated-root boundary theorem](notes/REPEATED_ROOT_BOUNDARY.md).
+
+## 5. Contact partitions and exceptional seeds
+
+An omitted value on `C!=0` occurs exactly when every root of the inverse
+polynomial is multiple. For a full contact partition
+
+\[
+\lambda=(\lambda_1,\ldots,\lambda_k),
+\qquad \lambda_i\ge2,
+\qquad \sum_i\lambda_i=n,
+\]
+
+put
+
+\[
+M_\lambda(W)=\prod_i(W-r_i)^{\lambda_i},
+\qquad
+\Phi_\lambda=M_\lambda(1)-M_\lambda(0)-M_\lambda'(0).
+\]
+
+The API quotients roots with equal multiplicity before elimination, saturates
+all diagonals and weighted-admissibility factors, and returns the exact
+coefficient-space elimination presentation. It also supports partial contact
+with a residual factor.
+
+The first exceptional parameter spaces are now explicit:
+
+- Degree five: the `(3,2)` incidence recovers the established polynomial
+  `F(R,P)` up to the scalar `5/64`.
+- Degree six: the main `(2,2,2)` locus is an irreducible rational quartic
+  surface; the `(4,2)`, `(3,3)`, and `(6)` strata and their collision boundaries
+  are classified exactly.
+- Degree seven: the leading `(3,2,2)` locus has codimension two in normalized
+  seed space. Hence nonsurjectivity is not detected by a single coefficient
+  equation.
+
+See [Contact-partition strata](notes/CONTACT_PARTITION_STRATA.md) and
+[Omitted-value classification](notes/OMITTED_VALUE_CLASSIFICATION.md).
+
+## 6. Arithmetic and normal forms
+
+At primes of good reduction, `S_n` monodromy gives the limiting fixed-point
+law of a random permutation. If `D_n` is the derangement number, then the
+limiting image density is
+
+\[
+1-{D_n\over n!},
+\]
+
+and targets with exactly `j` rational preimages have count
+
+\[
+{\binom{n}{j}D_{n-j}\over n!}q^3+O_H(q^{5/2}).
+\]
+
+The original cubic also has exact finite-field distributions in every
+characteristic. Separately, standard reductions produce explicit
+95-dimensional cubic-homogeneous and 510-dimensional Drużkowski forms with
+transported rational collisions.
+
+See [Finite-field Chebotarev](notes/FINITE_FIELD_CHEBOTAREV.md),
+[exact cubic finite-field distributions](notes/FINITE_FIELD_VALUE_DISTRIBUTION.md),
+[the cubic-homogeneous reduction](notes/CUBIC_HOMOGENEOUS_REDUCTION.md), and
+[the cubic-linear reduction](notes/CUBIC_LINEAR_REDUCTION.md).
+
+## 7. Reproducibility
+
+The minimal certificate requires only the Python standard library:
 
 ```bash
 python3 scripts/verify_counterexample_independent.py
 ```
 
-For the full exact suite:
+The complete exact suite is:
 
 ```bash
 python3 -m venv .venv
@@ -48,107 +252,38 @@ python3 -m venv .venv
 make verify
 ```
 
-The logical core is `make verify-core`. The remaining targets verify the
-inverse geometry and the quartic member of the weighted family.
+Useful targets are:
 
-## Inverse and global geometry
+| Command | Scope |
+|---|---|
+| `make verify-minimal` | dependency-free determinant, collision, and degrees |
+| `make verify-core` | minimal certificate plus cubic inverse identities |
+| `make verify-geometry` | cubic image and nonproperness |
+| `make verify-family` | weighted families, discriminants, contact strata, and quartic geometry |
+| `make verify-normal-forms` | regenerate and verify the large normal forms |
+| `make scan-weighted-seeds` | reproduce the exploratory bounded seed scan |
 
-Writing a target as `(a,b,c)` and setting `t=y+1/x`, the inverse problem reduces
-to
+Julia is optional and is used only for the numerical continuation benchmark in
+[NONPROPER_FIBER_BENCHMARK.md](notes/NONPROPER_FIBER_BENCHMARK.md).
 
-\[
-cT^3-2T^2+bT-2a=0.
-\]
+## 8. Repository guide and scope
 
-If `r=3ct^2-4t+b`, the source is reconstructed by
+The logical status of every claim is separated from discovery provenance:
 
-\[
-x=2/r,\qquad y=t-r/2,\qquad
-z=5r^2/4-3tr/2-cr^3/8.
-\]
+- [FACTS.md](notes/FACTS.md) records the principal exact statements.
+- [IMPLEMENTATION_STATUS.md](notes/IMPLEMENTATION_STATUS.md) maps statements to
+  executable support.
+- [CHECKLIST.md](notes/CHECKLIST.md) distinguishes completed certificates from
+  remaining independent audits.
+- [PROVENANCE_AUDIT.md](notes/PROVENANCE_AUDIT.md) and
+  [SOURCES.md](notes/SOURCES.md) record the available historical trail.
 
-Consequently the generic function-field degree is three. The discriminant is
-`-4Q`, where
+Additional exact analyses include the commuting inverse-Jacobian frame
+([COMMUTING_FLOWS.md](notes/COMMUTING_FLOWS.md)), gradient dynamics at infinity
+([GRADIENT_INFINITY.md](notes/GRADIENT_INFINITY.md)), and audited downstream
+implications ([DIRECT_CONSEQUENCES.md](notes/DIRECT_CONSEQUENCES.md)).
 
-\[
-Q=27a^2c^2-18abc+16a+b^3c-b^2.
-\]
-
-The exact image, fibers, and nonproperness set are
-
-\[
-F(\mathbb C^3)=\mathbb C^3\setminus\Gamma,\qquad S_F=V(Q),
-\]
-
-with
-
-\[
-\Gamma=V(3bc-4,12a-b^2).
-\]
-
-Fibers have `3`, `1`, and `0` affine points respectively on `Q != 0`, on
-`Q = 0` away from `Gamma`, and on `Gamma`. See
-[CONSTRUCTION.md](notes/CONSTRUCTION.md) and
-[IMAGE_AND_NONPROPERNESS.md](notes/IMAGE_AND_NONPROPERNESS.md).
-
-## Further results retained here
-
-- Exact finite-field fiber distributions in every characteristic:
-  [FINITE_FIELD_VALUE_DISTRIBUTION.md](notes/FINITE_FIELD_VALUE_DISTRIBUTION.md).
-- Commuting inverse-Jacobian vector fields:
-  [COMMUTING_FLOWS.md](notes/COMMUTING_FLOWS.md).
-- A degree-14 polynomial with three nondegenerate global minima and an explicit
-  Palais--Smale sequence:
-  [GRADIENT_INFINITY.md](notes/GRADIENT_INFINITY.md).
-- Exact image, boundary geometry, and full `S_4` monodromy for a quartic-sheet
-  member of the weighted family:
-  [QUARTIC_WEIGHTED_GEOMETRY.md](notes/QUARTIC_WEIGHTED_GEOMETRY.md).
-- Universal inverse-discriminant normalization and full `S_n` monodromy for
-  every characteristic-zero weighted seed:
-  [WEIGHTED_SEED_THEOREM.md](notes/WEIGHTED_SEED_THEOREM.md).
-- Generic discriminants as nodal-cuspidal dual curves, with an all-degree
-  contact-incidence proof and exact rational regressions through degree ten:
-  [GENERIC_DISCRIMINANT_CURVE.md](notes/GENERIC_DISCRIMINANT_CURVE.md).
-- Arbitrary contact partitions, saturated coefficient ideals, and the exact
-  degree-five through degree-seven exceptional strata:
-  [CONTACT_PARTITION_STRATA.md](notes/CONTACT_PARTITION_STRATA.md).
-- Exact images and nonproperness sets for the full canonical family
-  `H_d(W)=W^d(1-W)`:
-  [CANONICAL_FAMILY_IMAGE.md](notes/CANONICAL_FAMILY_IMAGE.md).
-- Boundary geometry and the exact image theorem for deformations with one
-  additional simple primitive zero:
-  [DEFORMED_SEED_BOUNDARY.md](notes/DEFORMED_SEED_BOUNDARY.md).
-- Exact omitted-value classification for arbitrary fixed seeds and a closed
-  exceptional-locus equation for two additional simple zeros:
-  [OMITTED_VALUE_CLASSIFICATION.md](notes/OMITTED_VALUE_CLASSIFICATION.md).
-- Exact discriminant saturation and boundary strata for repeated, including
-  nonsplit, extra primitive roots:
-  [REPEATED_ROOT_BOUNDARY.md](notes/REPEATED_ROOT_BOUNDARY.md).
-- Good-reduction finite-field fiber laws from universal `S_n` monodromy and
-  Chebotarev:
-  [FINITE_FIELD_CHEBOTAREV.md](notes/FINITE_FIELD_CHEBOTAREV.md).
-- Explicit 95-dimensional cubic-homogeneous and 510-dimensional Drużkowski
-  counterexamples:
-  [CUBIC_HOMOGENEOUS_REDUCTION.md](notes/CUBIC_HOMOGENEOUS_REDUCTION.md) and
-  [CUBIC_LINEAR_REDUCTION.md](notes/CUBIC_LINEAR_REDUCTION.md).
-- Audited implications for related conjectures:
-  [DIRECT_CONSEQUENCES.md](notes/DIRECT_CONSEQUENCES.md).
-
-## Additional commands
-
-```bash
-make verify-normal-forms
-make scan-weighted-seeds
-.venv/bin/python scripts/finite_field_distribution.py
-.venv/bin/python scripts/commuting_flows.py
-.venv/bin/python scripts/nonproper_fiber_benchmark.py
-julia --project=. scripts/nonproper_fiber_homotopy.jl
-```
-
-Julia is optional and is used only for the numerical nonproper-fiber benchmark.
-
-For a claim-by-claim status and audit order, see
-[FACTS.md](notes/FACTS.md), [IMPLEMENTATION_STATUS.md](notes/IMPLEMENTATION_STATUS.md),
-and [CHECKLIST.md](notes/CHECKLIST.md). Provenance and historical
-priority remain distinct from the exact certificate; see
-[PROVENANCE_AUDIT.md](notes/PROVENANCE_AUDIT.md).
+The 627-seed scan is retained as an exploratory ledger, not as evidence for
+the theorem-level claims. The foundational three-dimensional certificate does
+not depend on the family theory, numerical continuation, high-dimensional
+reductions, or provenance assertions.

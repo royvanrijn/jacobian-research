@@ -69,8 +69,9 @@
   cubic-homogeneous map with an exact transported collision.
 - The Gorni--Zampieri/Drużkowski pairing produces a 510-dimensional
   cubic-linear map with an exact transported collision.
-- Both large artifacts are generated locally and checked by dedicated
-  verifiers; they are ignored because they are reproducible and large.
+- Both large artifacts are generated locally, checked by dedicated verifiers,
+  and retained as tracked reference certificates. Newly generated result files
+  remain ignored by default.
 
 ## Remaining audit work
 
@@ -80,8 +81,8 @@
 - Independently audit normalization and every boundary stratum used by the
   strongest global-geometry claims; the quartic irreducibility and monodromy
   now have exact certificates.
-- Audit the stable-equivalence steps and external implication theorems against
-  their primary sources.
+- Independently re-audit the stable-equivalence steps and recorded external
+  implications against their primary sources.
 - Compare the dual-curve incidence proof archivally with classical projective
   duality, then make good-prime exclusions effective for individual seeds and
   eliminate the universal exceptional strata in selected low degrees.

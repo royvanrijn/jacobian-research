@@ -1,7 +1,7 @@
 # Omitted-value classification for arbitrary seeds
 
-This note gives an exact finite algorithm for the remaining image problem and
-a closed classification for primitives with two additional simple zeros.
+This note gives an exact finite algorithm for omitted values of any fixed seed
+and a closed classification for primitives with two additional simple zeros.
 
 ## Complete factor-matching criterion
 

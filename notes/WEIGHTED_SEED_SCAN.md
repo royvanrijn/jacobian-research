@@ -1,4 +1,4 @@
-# Weighted-seed theorem schema and bounded scan
+# Bounded weighted-seed scan
 
 This is an exploratory search ledger. The universal inverse, discriminant, and
 monodromy statements are now proved in `WEIGHTED_SEED_THEOREM.md`. The scan is
@@ -81,8 +81,9 @@ cost of additional `C=0` branches.
 
 The finite-field histograms use the number of simple roots of the inverse
 pencil, so their possible fiber sizes line up with fixed-point counts in the
-natural permutation action. This is evidence for an `S_n` theorem schema, not
-a proof of geometric monodromy or an exact all-`q` distribution.
+natural permutation action. They are diagnostics for the independently proved
+`S_n` monodromy and Chebotarev theorems, not part of either proof and not an
+exact all-`q` distribution.
 
 Reproduce with:
 
