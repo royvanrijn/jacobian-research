@@ -1,7 +1,7 @@
 PYTHON ?= .venv/bin/python
 SYSTEM_PYTHON ?= python3
 
-.PHONY: check verify verify-minimal verify-core verify-search verify-certificates
+.PHONY: check verify verify-minimal verify-core verify-geometry verify-quartic verify-normal-forms scan-weighted-seeds
 
 check:
 	$(PYTHON) -m compileall -q jcsearch scripts
@@ -14,17 +14,29 @@ verify-core: verify-minimal
 	$(PYTHON) scripts/verify_counterexample.py
 	$(PYTHON) scripts/audit_map_consistency.py
 	$(PYTHON) scripts/cubic_model.py
+
+verify-geometry:
 	$(PYTHON) scripts/image_nonproperness.py
 	$(PYTHON) scripts/verify_exceptional_fibers.py
 	$(PYTHON) scripts/verify_image_nonproperness_inclusions.py
 
-verify-search:
-	$(PYTHON) scripts/validate_ladder.py
-	$(PYTHON) scripts/verify_translated_box_theorem.py
-	$(PYTHON) scripts/verify_newton_translation.py
-	$(PYTHON) scripts/newton_9_27_regression.py
+verify-quartic:
+	$(PYTHON) scripts/verify_weighted_seed_schema.py
+	$(PYTHON) scripts/verify_quartic_weighted_map.py
+	$(PYTHON) scripts/verify_quartic_discriminant.py
+	$(PYTHON) scripts/verify_quartic_c0_fibers.py
+	$(PYTHON) scripts/verify_quartic_nonproperness_paths.py
+	$(PYTHON) scripts/verify_quartic_properness_converse.py
+	$(PYTHON) scripts/verify_quartic_singular_locus.py
+	$(PYTHON) scripts/verify_quartic_image.py
 
-verify-certificates:
-	$(PYTHON) scripts/verify_certificates.py
+verify-normal-forms:
+	$(PYTHON) scripts/cubic_homogeneous_reduction.py
+	$(PYTHON) scripts/verify_cubic_homogeneous_counterexample.py
+	$(PYTHON) scripts/cubic_linear_reduction.py
+	$(PYTHON) scripts/verify_cubic_linear_counterexample.py
 
-verify: check verify-core verify-search verify-certificates
+verify: check verify-core verify-geometry verify-quartic
+
+scan-weighted-seeds:
+	$(PYTHON) scripts/scan_weighted_seeds.py

@@ -19,3 +19,7 @@ htmlcov/
 
 # Julia local environment products
 .julia/
+
+# Generated three-dimensional analysis and normal-form artifacts.
+/results/*.json
+/results/*.txt

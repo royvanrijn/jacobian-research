@@ -37,20 +37,17 @@
   weighted infinity chart for the three-minimum polynomial; determine which
   stable sets at infinity form its basin boundaries. The first exact chart
   calculation is recorded in `GRADIENT_INFINITY.md`.
-- **Families.** Verify the claimed seed family for every generic degree at least
-  three; classify when two seeds give polynomially equivalent maps.
+- **Families.** The quartic-sheet seed `p=w-2w^3` now has a complete exact
+  image/nonproperness/fiber/singularity model, and 627 admissible seeds through
+  degree six have been scanned exploratorily. Use the quartic proof as the
+  template for a theorem with explicit hypotheses on the zeros of `H=integral
+  p`, ramification of `p`, monodromy, and finite-field reduction; then classify
+  when two seeds give polynomially equivalent maps.
 - **Known reductions.** The Bass–Connell–Wright/Yagzhev and
   Gorni–Zampieri/Druzkowski reductions have now been executed explicitly,
   yielding certified counterexamples in dimensions 95 and 510 respectively.
   The next task is to optimize the stable-equivalence choices and reduce these
   dimensions and support sizes without losing the transparent certificates.
-- **Dimension two.** Determine which 3D ingredient is impossible on a surface.
-  Compare the boundary dual graph and valuation constraints with the 2D
-  nonproper value-set theory.
-- **Prime-degree claims.** Audit the 2024 preprint claiming no 2D Keller map has
-  prime function-field degree. If valid, a 2D search must target composite
-  non-Galois degree (the first candidate would then be 4, not 3).
-
 ## Simplification program
 
 Use a multi-objective score

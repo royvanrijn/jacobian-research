@@ -22,9 +22,6 @@ materials that have not yet been located.
   used for the Druzkowski artifact.
 - [Zihan Zhang, Direct Consequences of the Three-Dimensional Counterexample](https://zzhang-iu.github.io/papers/direct-consequences-jacobian/index.html):
   immediate logical consequences and same-day source trail.
-- [Guccione et al., Increasing the degree of a possible counterexample from 100 to 108](https://arxiv.org/abs/2204.14178):
-  degree-pair/corner-chain restrictions; leaves the `(72,108)` case with
-  `A0=(8,28)` unresolved and discards the other small cases discussed there.
 - [Derksen–van den Essen–Zhao, The Gaussian Moments Conjecture and the Jacobian Conjecture](https://arxiv.org/abs/1506.05192):
   proves the implication used in the Gaussian-moments consequence.
 - [Zhao, Hessian Nilpotent Polynomials and the Jacobian Conjecture](https://arxiv.org/abs/math/0409534):
@@ -35,10 +32,6 @@ materials that have not yet been located.
 - [MathOverflow: explicit cubic model with S3 monodromy](https://mathoverflow.net/questions/513387/galois-structure-of-the-new-counterexample-to-the-jacobian-conjecture-an-explic):
   primitive element `t=y+1/x`, reconstruction, discriminant, and monodromy
   argument. This is a question/discussion, not a refereed paper.
-- [Vered Moskowicz, There are no Keller maps having prime degree field extensions](https://arxiv.org/abs/2407.13795):
-  2024 preprint focused on dimension two; includes references for the classical
-  birational and Galois cases. Its stronger prime-degree claim is recent and
-  should be independently audited.
 - [Encyclopedia of Mathematics: Jacobian conjecture](https://encyclopediaofmath.org/wiki/Jacobian_conjecture):
   established formulation, reductions, and references predating the
   announcement.

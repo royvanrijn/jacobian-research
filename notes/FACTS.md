@@ -126,24 +126,14 @@ cardinalities are respectively `3,1,0` on `Q != 0`, `Q=0` off `Gamma`, and
 `Gamma`, and the nonproperness set is exactly `V(Q)`.  Moreover `Gamma` is the
 singular locus of `V(Q)`.
 
-## What remains open
+## Explicit normal-form reductions
 
-The two-dimensional Jacobian conjecture is not resolved by this map. Dimension
-three does not reduce downward to dimension two merely by deleting a
-coordinate.  The standard reductions have now been executed explicitly:
+The standard reductions have been executed explicitly:
 `CUBIC_HOMOGENEOUS_REDUCTION.md` gives a 95-dimensional map `I+H` with `H`
 cubic homogeneous, and `CUBIC_LINEAR_REDUCTION.md` gives a 510-dimensional
-Druzkowski map `X-(AX)^{*3}` with `rank(A)=95`.  Both have determinant one and
-stored exact rational collisions.  These higher-dimensional normal forms do
-not by themselves produce a 2D counterexample.
-
-A 2D Keller counterexample cannot have a birational function-field extension;
-the classical Galois case is also invertible. In particular degree two is
-excluded because a separable quadratic extension is Galois. A non-normal cubic
-is therefore the first plausible generic field-degree pattern. A 2024 preprint
-claims the stronger result that no 2D Keller map can have *prime* generic field
-degree; if correct, it excludes cubic degree as well, not merely Galois cubic.
-That recent preprint must be checked carefully before using it as a theorem.
+Druzkowski map `X-(AX)^{*3}` with `rank(A)=95`. Both have determinant one and
+stored exact rational collisions. These are explicit normal forms of the same
+counterexample mechanism, not logically independent counterexamples.
 
 ## Audited downstream conjectures
 

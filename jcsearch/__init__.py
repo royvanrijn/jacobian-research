@@ -1,2 +1,1 @@
-"""Exact chart-first search utilities for plane Keller maps."""
-
+"""Exact utilities for the three-dimensional weighted-map constructions."""
