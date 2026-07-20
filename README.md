@@ -223,9 +223,9 @@ The first exceptional parameter spaces are now explicit:
 - In all degrees, merging parts defines a collision partial order with
   `E_mu` contained in the closure of `E_lambda` whenever `lambda<=mu`.
   Mason--Stothers excludes every off-collision two-omission incidence between
-  distinct maximal 2/3 partitions. What remains for a strict irreducible-
-  component theorem is uniform irreducibility of the maximal root
-  hypersurfaces.
+  distinct maximal 2/3 partitions. The maximal root hypersurfaces are
+  uniformly irreducible, so the irreducible components of the exceptional-
+  locus closure are indexed exactly by partitions using only twos and threes.
 
 See [Uniform exceptional seeds](notes/UNIFORM_EXCEPTIONAL_SEEDS.md),
 [contact-partition strata](notes/CONTACT_PARTITION_STRATA.md), and

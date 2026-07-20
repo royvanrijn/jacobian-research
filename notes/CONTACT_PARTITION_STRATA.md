@@ -124,6 +124,13 @@ whenever `lambda!=mu` are maximal partitions using only twos and threes.  The
 proof and collision partial order are stated in
 `UNIFORM_EXCEPTIONAL_SEEDS.md`.
 
+For a maximal partition, `maximal_two_three_phi(a,b)` returns the compact
+quotient model `M=Q^2R^3`.  Its `Phi` hypersurface is irreducible for every
+`a,b`: the stable proof is linear in `R'(0)` for `b>=3`, quadratic with an odd
+valuation for `a>=3`, and has seven explicit endpoint-rank cases.  Hence the
+maximal partition types index the irreducible components of the closure of
+the exceptional seed locus.
+
 ## Degree-five regression
 
 For `lambda=(3,2)`, write

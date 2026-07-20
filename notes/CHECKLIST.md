@@ -106,9 +106,10 @@ repository; it does not by itself claim independent replication.
   `a M_lambda-b M_mu=alpha W+beta`.
 - [x] Use Mason--Stothers to exclude every off-collision two-omission solution
   for distinct maximal partitions with parts only two and three.
-- [ ] Upgrade the stratum-level component poset to a strict irreducible-
-  component theorem by resolving uniform irreducibility of maximal
-  `Phi_lambda` hypersurfaces.
+- [x] Prove uniform irreducibility of every maximal
+  `Phi_(2^a 3^b)` hypersurface.
+- [x] Deduce that maximal 2/3 partitions index the irreducible components of
+  the exceptional-locus closure.
 - [ ] Reconcile the proof fully with the precise hypotheses of the classical
   projective-duality literature.
 

@@ -71,6 +71,10 @@
   Tangent-chord deformation proves every coarser stratum lies in the closure
   of every refining stratum, and Mason--Stothers uniformly rules out
   off-collision two-omission solutions for distinct maximal 2/3 partitions.
+- The maximal root hypersurfaces `Phi_(2^a 3^b)` are uniformly irreducible.
+  The proof is primitive-linear for `b>=3`, nonsquare-quadratic for `a>=3`,
+  and has seven exact endpoint-rank certificates.  Thus maximal 2/3 types
+  index the actual irreducible components of the exceptional-locus closure.
 - A bounded scan of 627 weighted seeds is exploratory and explicitly separated
   from theorem-level claims.
 
@@ -97,6 +101,3 @@
 - Compare the dual-curve incidence proof archivally with classical projective
   duality, then make good-prime exclusions effective for individual seeds and
   eliminate the universal exceptional strata in selected low degrees.
-- Upgrade the proved stratum-level component poset to a scheme-theoretic
-  irreducible-component theorem by proving uniform irreducibility, or finding
-  the irreducible factors, of `Phi_lambda` for maximal 2/3 partitions.

@@ -186,6 +186,27 @@ class TwoOmissionIncidence:
         )
 
 
+@dataclass(frozen=True)
+class MaximalContactPhi:
+    """The quotient-coordinate hypersurface for a maximal 2/3 partition."""
+
+    double_root_count: int
+    triple_root_count: int
+    degree: int
+    variable: sp.Symbol
+    double_root_polynomial: sp.Expr
+    triple_root_polynomial: sp.Expr
+    double_coordinates: tuple[sp.Symbol, ...]
+    triple_coordinates: tuple[sp.Symbol, ...]
+    M: sp.Expr
+    phi: sp.Expr
+
+    @property
+    def partition(self):
+        """The corresponding maximal full-contact partition."""
+        return (3,) * self.triple_root_count + (2,) * self.double_root_count
+
+
 def discriminant_param(H, W):
     """Return the tangent-line coordinates (s,t) of the graph of H."""
     derivative = sp.diff(H, W)
@@ -324,6 +345,53 @@ def maximal_two_three_partitions(degree: int):
         if remainder % 2 == 0:
             partitions.append((3,) * threes + (2,) * (remainder // 2))
     return tuple(sorted(partitions, reverse=True))
+
+
+def maximal_two_three_phi(double_root_count, triple_root_count, prefix="maxphi"):
+    """Build ``Phi`` for ``M=Q_2**2*Q_3**3`` in quotient coordinates."""
+    double_root_count = int(double_root_count)
+    triple_root_count = int(triple_root_count)
+    if double_root_count < 0 or triple_root_count < 0:
+        raise ValueError("root counts must be nonnegative")
+    if double_root_count + triple_root_count == 0:
+        raise ValueError("at least one contact root is required")
+    W = sp.symbols(f"_{prefix}_W")
+    double_coordinates = tuple(
+        sp.symbols(f"_{prefix}_q0:{double_root_count}")
+    )
+    triple_coordinates = tuple(
+        sp.symbols(f"_{prefix}_r0:{triple_root_count}")
+    )
+    double_root_polynomial = sp.expand(
+        W**double_root_count
+        + sum(
+            coefficient * W**index
+            for index, coefficient in enumerate(double_coordinates)
+        )
+    )
+    triple_root_polynomial = sp.expand(
+        W**triple_root_count
+        + sum(
+            coefficient * W**index
+            for index, coefficient in enumerate(triple_coordinates)
+        )
+    )
+    M = sp.expand(double_root_polynomial**2 * triple_root_polynomial**3)
+    phi = sp.expand(
+        M.subs(W, 1) - M.subs(W, 0) - sp.diff(M, W).subs(W, 0)
+    )
+    return MaximalContactPhi(
+        double_root_count=double_root_count,
+        triple_root_count=triple_root_count,
+        degree=2 * double_root_count + 3 * triple_root_count,
+        variable=W,
+        double_root_polynomial=double_root_polynomial,
+        triple_root_polynomial=triple_root_polynomial,
+        double_coordinates=double_coordinates,
+        triple_coordinates=triple_coordinates,
+        M=M,
+        phi=phi,
+    )
 
 
 def affine_difference_mason_defect(left_partition, right_partition):

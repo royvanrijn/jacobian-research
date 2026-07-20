@@ -289,11 +289,129 @@ exceptional stratum in the closure of a maximal 2/3 stratum.  The
 two-omission theorem shows that distinct maximal types are disjoint away from
 collision boundaries.
 
-This proves the proposed component poset at the level of full-contact strata
-and their closures.  To identify each maximal stratum closure with one
-irreducible component in the strict scheme-theoretic sense, one additional
-issue remains: prove irreducibility of `Phi_lambda` (or determine its
-irreducible factors) uniformly for every maximal 2/3 partition.
+## Uniform irreducibility of maximal strata
+
+Let `a` be the number of double roots and `b` the number of triple roots.  In
+equal-part quotient coordinates write
+
+\[
+M=Q(W)^2R(W)^3,qquad \deg Q=a,quad\deg R=b.
+\]
+
+Set
+
+\[
+x=Q(0),\quad u=Q'(0),\quad X=Q(1),
+\qquad
+y=R(0),\quad v=R'(0),\quad Y=R(1).
+\]
+
+Then
+
+\[
+\Phi_{2^a3^b}
+=X^2Y^3-x^2y^3-2xuy^3-3x^2y^2v.                 \tag{1}
+\]
+
+For a monic polynomial of degree at least three, its values at zero, its
+derivative at zero, and its value at one are independent affine-linear
+coordinates.  In degrees two, one, and zero the only relations are
+
+\[
+X=1+x+u,\qquad (u,X)=(1,1+x),\qquad (x,u,X)=(1,0,1),
+\]
+
+and similarly for `(y,v,Y)`.
+
+### Theorem
+
+For every maximal 2/3 partition of inverse degree at least three,
+
+\[
+\boxed{\Phi_{2^a3^b}\text{ is irreducible over }k.}
+\]
+
+If `b>=3`, equation (1) is primitive linear in the independent coordinate
+`v`.  Its coefficient `-3x^2y^2` is coprime to its constant term: reduction
+modulo `x` or `y` leaves the nonzero term `X^2Y^3`, with the degree-zero,
+one, and two relations for `Q` giving the same conclusion.  Gauss's lemma
+proves irreducibility.
+
+If `a>=3` and `b<=2`, equation (1) is primitive quadratic in the independent
+coordinate `X`.  Its constant term is
+
+\[
+-xy^2(xy+2uy+3xv),
+\]
+
+which has `x`-adic valuation exactly one, while the leading coefficient is
+`Y^3`.  The corresponding element of the coefficient fraction field is not
+a square, so the quadratic is irreducible.
+
+Only seven endpoint-rank cases remain.  They have the following elementary
+certificates; square factors in the displayed discriminants are harmless.
+
+| `(a,b)` | Variable | Certificate |
+|---|---|---|
+| `(0,1)` | `y` | `Phi=3y+1` |
+| `(0,2)` | `y` | `Disc=3(v+1)^3(3v-1)` |
+| `(1,1)` | `x` | `Disc=4y^2(6y^2+8y+3)` |
+| `(1,2)` | `x` | `Disc=-4y^2G`; `G(0,y)=y(3y^2+3y+1)` |
+| `(2,0)` | `x` | `Phi=u^2+2u+2x+1` |
+| `(2,1)` | `u` | the discriminant has `x`-adic valuation one |
+| `(2,2)` | `u` | the discriminant has `x`-adic valuation one |
+
+For `(1,2)`, a square in the coefficient fraction field would, by unique
+factorization, be a constant times a polynomial square; specializing `v=0`
+would then have even `y`-valuation, contrary to the displayed formula.
+The other odd factors and valuations are immediate from the table.  Thus
+every remaining quadratic has nonsquare discriminant.  This completes the
+proof in all degrees.
+
+### Irreducible-component theorem
+
+The hypersurface `Phi_lambda=0` is irreducible for every maximal 2/3 type;
+removing collision and admissibility divisors leaves a dense irreducible open
+set.  Its seed-image closure is therefore irreducible.  Every other stratum
+lies in one of these closures by the collision theorem.  Finally, Mason's
+inequality also excludes containment of one maximal closure in the boundary
+of another.
+
+For the last assertion, the map from `ell` marked roots to the top `ell`
+monic coefficients is finite, not merely generically finite.  Its leading
+homogeneous forms are equivalent by Newton identities to the weighted power
+sums
+
+\[
+p_j=\sum_i\lambda_i r_i^j,qquad 1\le j\le\ell.
+\]
+
+They have no common projective zero: after grouping equal nonzero root values,
+the first `m` equations form an invertible Vandermonde matrix times nonzero
+positive integral weights.  Thus roots cannot escape while their top
+coefficients remain bounded.  Any boundary point inside `A_n` therefore comes
+from an actual collision, hence from a proper coarsening of the second
+partition.  Replacing that maximal partition by a proper coarsening decreases
+its length, so the Mason defect only increases.  No maximal closure is
+contained in another.
+
+Consequently,
+
+\[
+\boxed{
+\text{the irreducible components of }\overline{\mathcal N_n}
+\text{ are indexed by the partitions of }n\text{ using only }2\text{ and }3.}
+\]
+
+In particular, the number of components is
+
+\[
+\#\left\{b:0\le b\le\left\lfloor{n\over3}\right\rfloor,
+\quad b\equiv n\pmod 2\right\},
+\]
+
+where `b` is the number of triple parts and `(n-3b)/2` is the number of
+double parts.
 
 ## Executable certificate
 
@@ -301,9 +419,12 @@ Run:
 
 ```bash
 python scripts/verify_uniform_exceptional_seed_theorem.py
+python scripts/verify_maximal_phi_irreducibility.py
 ```
 
 The script checks the weighted-Vandermonde identity symbolically, audits the
 collision order and specialization identities through degree ten, checks the
 Mason defect for all maximal pairs through degree fifty, and retains the exact
-degree-eight intersection calculation as a regression.
+degree-eight intersection calculation as a regression.  The irreducibility
+script verifies the two stable endpoint-coordinate arguments, all seven small
+cases, and exact quotient-coordinate factorizations through degree fourteen.
