@@ -73,7 +73,9 @@ identities and type (3) in selected degrees.
 - Universal `S_n` monodromy now yields a good-reduction finite-field
   Chebotarev theorem: degree-`n` fiber sizes converge to the fixed-point law of
   `S_n`, with target counts `p_{n,j}q^3+O(q^(5/2))` and limiting image density
-  `1-D_n/n!`.
+  `1-D_n/n!`.  The good-prime ideal is explicit, monodromy preservation is
+  proved outside it, the boundary contribution is separated exactly, and a
+  coarse Cafure--Matera constant makes the error effective.
 - A uniform written proof of the generic degree-`n` discriminant theorem
   identifies the curve as a rational dual with `n-2` cusps and
   `(n-2)(n-3)/2` nodes in every degree.  The proof now constructs saturated
@@ -134,7 +136,7 @@ identities and type (3) in selected degrees.
 
 - The Bass--Connell--Wright/Yagzhev construction produces a 95-dimensional
   cubic-homogeneous map with an exact transported collision.
-- The Gorni--Zampieri/Drużkowski pairing produces a 510-dimensional
+- The Gorni--Zampieri/Drużkowski pairing produces a 451-dimensional
   cubic-linear map with an exact transported collision.
 - Both large artifacts are generated locally, checked by dedicated verifiers,
   and retained as tracked reference certificates. Newly generated result files
@@ -144,7 +146,8 @@ identities and type (3) in selected degrees.
 
 - The README now gives a short hand-checkable structural determinant proof
   through the `(t,r,c)` inverse chart.
-- Obtain an independent second-CAS verification and archival reproduction log.
+- Archive an environment reproduction log; an independent standard-library
+  exact implementation now regenerates both C15 forms.
 - Complete the provenance record and separate priority from verification.
 - Independently audit normalization and every boundary stratum used by the
   strongest global-geometry claims; the quartic irreducibility and monodromy

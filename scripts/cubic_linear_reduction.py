@@ -6,12 +6,12 @@ Starting from the sparse 95-dimensional map f=x+H, write
     H(x) = -B(Dx)^{*3}
 
 using the standard polarization identities for cubic monomials.  After adding
-an identity block to B, set A=DB.  Then ker(A)=ker(B), and
+a smallest coordinate complement to B, set A=DB.  Then ker(A)=ker(B), and
 
     G(X) = X - (AX)^{*3}
 
 is Gorni--Zampieri paired with f.  The resulting Druzkowski map has dimension
-510.  The script also transports the three-point collision explicitly.
+451.  The script also transports the three-point collision explicitly.
 """
 
 from __future__ import annotations
@@ -136,16 +136,35 @@ def main() -> None:
     m = len(forms)
     assert m == 415
 
-    # B=[B0|I_n] and D=[D0;0].  D0 already has full column rank.
+    # D0 already has full column rank.  B0 has rank 59, so append only a
+    # 36-column coordinate complement, rather than the redundant I_n used by
+    # the first 510-dimensional construction.
     b_columns: list[dict[int, sp.Rational]] = [cubes[form] for form in forms]
-    b_columns.extend([{index: sp.Integer(1)} for index in range(n)])
+    b0 = sp.zeros(n, m)
+    for column_index, column in enumerate(b_columns):
+        for row_index, value in column.items():
+            b0[row_index, column_index] = value
+    b0_rank = b0.rank()
+    assert b0_rank == 59
+    current = b0
+    complement_indices = []
+    current_rank = b0_rank
+    for index in range(n):
+        candidate = current.row_join(sp.eye(n)[:, index])
+        candidate_rank = candidate.rank()
+        if candidate_rank > current_rank:
+            complement_indices.append(index)
+            current = candidate
+            current_rank = candidate_rank
+    assert current_rank == n and len(complement_indices) == n - b0_rank == 36
+    b_columns.extend([{index: sp.Integer(1)} for index in complement_indices])
     d_rows: list[dict[int, sp.Rational]] = [
         {index: sp.Integer(value) for index, value in enumerate(form) if value}
         for form in forms
     ]
-    d_rows.extend([{} for _ in range(n)])
-    N = m + n
-    assert N == 510
+    d_rows.extend([{} for _ in complement_indices])
+    N = m + len(complement_indices)
+    assert N == 451
 
     d_matrix = sp.zeros(N, n)
     for row_index, row in enumerate(d_rows):
@@ -153,7 +172,7 @@ def main() -> None:
             d_matrix[row_index, column_index] = value
     assert d_matrix.rank() == n
 
-    # Build row access for B, then A=DB without dense 510x510 multiplication.
+    # Build row access for B, then A=DB without dense 451x451 multiplication.
     b_rows: list[dict[int, sp.Rational]] = [dict() for _ in range(n)]
     for column_index, column in enumerate(b_columns):
         for row_index, value in column.items():
@@ -197,11 +216,31 @@ def main() -> None:
     d_json = [sparse_vector(row) for row in d_rows]
     a_json = [sparse_vector(row) for row in a_rows]
 
-    # C embeds x into the final n coordinates.  If f(p_i) is constant, then
+    # Construct a sparse rational right inverse C from pivot columns of B.  If
+    # f(p_i) is constant, then
     # G(Cp_i) differ by kernel vectors.  Translate each Cp_i by that difference
     # to obtain literal collisions for G.
+    b_matrix = sp.zeros(n, N)
+    for column_index, column in enumerate(b_columns):
+        for row_index, value in column.items():
+            b_matrix[row_index, column_index] = value
+    _, pivot_columns = b_matrix.rref()
+    assert len(pivot_columns) == n
+    pivot_inverse = b_matrix[:, list(pivot_columns)].inv()
+    c_matrix = sp.zeros(N, n)
+    for local_row, global_row in enumerate(pivot_columns):
+        c_matrix[global_row, :] = pivot_inverse[local_row, :]
+    assert b_matrix * c_matrix == sp.eye(n)
+    c_rows = [
+        {column: c_matrix[row, column] for column in range(n) if c_matrix[row, column]}
+        for row in range(N)
+    ]
+
     source_points = [[sp.Rational(value) for value in point] for point in source["collision_points"]]
-    base_points = [[sp.Integer(0)] * m + point for point in source_points]
+    base_points = [
+        [sp.cancel(sum(value * point[index] for index, value in row.items())) for row in c_rows]
+        for point in source_points
+    ]
 
     def G(point):
         linear_forms = eval_rows(a_json, point)
@@ -232,7 +271,8 @@ def main() -> None:
             "B_columns": b_json,
             "D_shape": [N, n],
             "D_rows": d_json,
-            "C": "C(x)=(0,...,0,x), using the final 95 coordinates",
+            "C_shape": [N, n],
+            "C_rows": [sparse_vector(row) for row in c_rows],
             "identities": ["BC=I_95", "A=DB", "AC=D", "ker(A)=ker(B)"],
         },
         "A_rows": a_json,
@@ -241,6 +281,9 @@ def main() -> None:
         "statistics": {
             "source_cubic_terms": sum(len(component) for component in source["H"]),
             "unique_cube_forms": m,
+            "rank_B0": b0_rank,
+            "complement_columns": len(complement_indices),
+            "complement_coordinate_indices": complement_indices,
             "dimension": N,
             "nonzero_rows_A": sum(bool(row) for row in a_rows),
             "nonzero_entries_A": sum(len(row) for row in a_rows),
@@ -248,6 +291,7 @@ def main() -> None:
     }
     OUTPUT.write_text(json.dumps(artifact, indent=2) + "\n")
     print(f"PASS: decomposed 148 cubic terms into {m} unique cubes of linear forms")
+    print(f"PASS: rank(B0)={b0_rank}; appended {len(complement_indices)} complement columns")
     print(f"PASS: constructed cubic-linear G in dimension {N} with rank(A)={n}")
     print("PASS: exact GZ pairing identities certify det DG=1")
     print("PASS: transported three distinct rational points to one common image")

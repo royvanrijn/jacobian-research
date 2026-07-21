@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Independently verify the sparse 510-dimensional Druzkowski artifact."""
+"""Independently verify the sparse 451-dimensional Druzkowski artifact."""
 
 from __future__ import annotations
 
@@ -41,18 +41,26 @@ def main() -> None:
     source = json.loads(SOURCE.read_text())
     data = json.loads(ARTIFACT.read_text())
     n, N = data["paired_dimension"], data["dimension"]
-    assert (n, N) == (95, 510)
+    assert (n, N) == (95, 451)
 
     b_columns = rows_to_dict(data["pairing"]["B_columns"])
     d_rows = rows_to_dict(data["pairing"]["D_rows"])
     a_rows = rows_to_dict(data["A_rows"])
     assert len(b_columns) == N and len(d_rows) == N and len(a_rows) == N
 
-    # BC=I follows from the final identity block of B and the stated C.
-    cube_count = N - n
-    for index in range(n):
-        assert b_columns[cube_count + index] == {index: sp.Integer(1)}
-        assert d_rows[cube_count + index] == {}
+    cube_count = data["statistics"]["unique_cube_forms"]
+    assert cube_count == 415 and N - cube_count == 36
+
+    # Check the stored rational right inverse C and both pairing identities.
+    c_rows = rows_to_dict(data["pairing"]["C_rows"])
+    assert len(c_rows) == N
+    for i in range(n):
+        for j in range(n):
+            value = sum(
+                b_columns[row].get(i, 0) * c_rows[row].get(j, 0)
+                for row in range(N)
+            )
+            assert sp.cancel(value) == (1 if i == j else 0)
 
     # Check rank(D)=95 exactly, so A=DB has ker(A)=ker(B).
     d_matrix = sp.zeros(N, n)
@@ -60,6 +68,14 @@ def main() -> None:
         for column_index, value in row.items():
             d_matrix[row_index, column_index] = value
     assert d_matrix.rank() == n
+
+    # B0 has rank 59 and the 36 appended columns are a minimal complement.
+    b0_matrix = sp.zeros(n, cube_count)
+    for column_index, column in enumerate(b_columns[:cube_count]):
+        for row_index, value in column.items():
+            b0_matrix[row_index, column_index] = value
+    assert b0_matrix.rank() == data["statistics"]["rank_B0"] == 59
+    assert len(b_columns[cube_count:]) == n - 59
 
     # Independently multiply D and B and compare every sparse row of A.
     b_rows = [dict() for _ in range(n)]
@@ -101,7 +117,7 @@ def main() -> None:
         expected_h.append(encoded)
     assert reconstructed == expected_h
 
-    # Direct exact substitution into all 510 cubic-linear coordinates.
+    # Direct exact substitution into all 451 cubic-linear coordinates.
     points = [[sp.Rational(value) for value in point] for point in data["collision_points"]]
     common_image = [sp.Rational(value) for value in data["common_image"]]
     assert len({tuple(point) for point in points}) == 3
@@ -119,7 +135,8 @@ def main() -> None:
     print("PASS: B,C,D satisfy BC=I, A=DB, AC=D, and ker(A)=ker(B)")
     print("PASS: reconstructed all 148 source cubic terms from 415 cubes")
     print("PASS: sparse A has rank 95 by its exact D*B factorization")
-    print("PASS: all three 510-dimensional rational points have the stored common image")
+    print("PASS: rank(B0)=59, so the 36-column extension and dimension 451 are minimal for this B0")
+    print("PASS: all three 451-dimensional rational points have the stored common image")
     print("PASS: the exact GZ/Sylvester determinant identity certifies det DG=1")
 
 

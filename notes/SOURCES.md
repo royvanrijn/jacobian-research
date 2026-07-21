@@ -17,6 +17,35 @@ materials that have not yet been located.
   external Lean 4 formalization of the determinant, collisions, unit-Jacobian
   counterexample, and complex specialization. See [LEAN_C01](LEAN_C01.md) for
   theorem scope, reproduction, attribution, and the no-license source boundary.
+- [Macaulay2 `CoincidentRootLoci` package](https://macaulay2.com/doc/Macaulay2/share/doc/Macaulay2/CoincidentRootLoci/html/toc.html):
+  classical coincident-root ideals, parameterizations, tangent spaces, and
+  singular loci used by the independent degree-five-through-eight comparison.
+- [Jaydeep Chipalkatti, *On equations defining coincident root
+  loci*](https://arxiv.org/abs/math/0110224): equations and singular-locus
+  background for coincident-root strata.
+- [L. M. Feher, A. Nemethi, and R. Rimanyi, *Coincident root loci of binary
+  forms*](https://arxiv.org/abs/math/0311312): classical geometry and
+  equivariant-class background.
+- [Simon Kurmann, *Some remarks on equations defining coincident root
+  loci*](https://doi.org/10.1016/j.jalgebra.2011.10.045): normalization and
+  singular-locus background cited by the Macaulay2 package.
+- [Stacks Project, Lemma 58.21.4, *Purity of branch
+  locus*](https://stacks.math.columbia.edu/tag/0BMB): the precise purity input
+  used to make the universal `S_n` monodromy proof algebraic.
+- [Stacks Project, *Universally injective, unramified
+  morphisms*](https://stacks.math.columbia.edu/tag/06ND), together with its
+  sections on [universally injective morphisms](https://stacks.math.columbia.edu/tag/01S2)
+  and [universal homeomorphisms](https://stacks.math.columbia.edu/tag/04DC):
+  scheme-theoretic bridge criteria used in the master quotient theorem C21.
+- [Stacks Project, proper-image and curve inputs](https://stacks.math.columbia.edu/tag/01W6),
+  together with [proper plus locally quasi-finite implies finite](https://stacks.math.columbia.edu/tag/0F2P)
+  and [the genus of a curve](https://stacks.math.columbia.edu/tag/0BY6): the
+  external closure, finiteness, and arithmetic-genus inputs isolated in the
+  complete C05 proof.
+- [SGA 1, *Etale covers and the fundamental
+  group*](https://firmaprim.github.io/sga/sga-1/), Expose XII, Theorem 5.1 and
+  Corollary 5.2: Riemann-existence comparison used after descent to `C` to
+  identify finite etale covers of affine space.
 - [Bass, Connell, and Wright, The Jacobian Conjecture: Reduction of Degree and
   Formal Expansion of the Inverse](https://doi.org/10.1090/S0273-0979-1982-15032-7):
   classical reduction to cubic-homogeneous form.

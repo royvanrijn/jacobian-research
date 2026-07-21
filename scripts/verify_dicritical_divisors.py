@@ -16,7 +16,9 @@ d, k, rho, h = sp.symbols("d k rho h", nonzero=True)
 
 # A nonzero primitive root of multiplicity mu.  With C=d^mu and
 # W=rho+k*d, the first nonzero inverse-penc-il coefficient is
-# h*k^mu-B*rho.  Thus k^mu=B*rho/h and the boundary map has degree mu.
+# h*k^mu-B*rho.  Thus k^mu=B*rho/h in the ramified chart.  The exponent
+# mu is the intrinsic ramification index; the prime divisor has residue
+# degree one over C=0.
 for mu in range(1, 6):
     local_H = h*(W-rho)**mu
     local_E = sp.expand(local_H-B*C*W+c*A*C**2)
@@ -30,8 +32,9 @@ for mu in range(1, 6):
 
 # The zero cluster of multiplicity m.  The escaping cluster uses
 # C=d^(m-1), W=k*d and has boundary equation k*(h*k^(m-1)-B)=0.
-# Removing k=0 leaves a degree-(m-1) dicritical divisor.  For m=2 this
-# branch belongs to the finite gamma=0 chart; only m>=3 is dicritical.
+# Removing k=0 leaves the ramification-index-(m-1) dicritical valuation.
+# Its residue degree is one.  For m=2 this branch belongs to the finite
+# gamma=0 chart; only m>=3 is dicritical.
 for m in range(3, 7):
     local_H = h*W**m
     local_E = sp.expand(local_H-B*C*W+c*A*C**2)
@@ -57,6 +60,6 @@ assert sp.factor(double_zero-(h*k**2-B*k+c*A)) == 0
 assert sp.factor(-(-c)/c) == 1
 
 print("PASS: the repeated-root divisor maps by s=H'(r), t=rH'(r)-H(r)")
-print("PASS: a nonzero primitive root of multiplicity mu gives a degree-mu Kummer divisor")
-print("PASS: a zero of multiplicity m>=3 gives a degree-(m-1) dicritical divisor")
+print("PASS: a nonzero primitive root of multiplicity mu gives ramification index mu")
+print("PASS: a zero of multiplicity m>=3 gives ramification index m-1")
 print("PASS: the distinguished root 1 and the double-zero cluster are finite charts")

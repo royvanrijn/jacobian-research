@@ -23,6 +23,9 @@ regular-reconstruction open, and the divisors classified below are exactly
 the polar divisors in its complement.  The graph model used here retains the
 valuations needed for nonproperness and omission.
 
+The explicit graph blow-up, local toric charts, discrepancies and intersection
+graphs are proved in [C16_BLOWUP_GEOMETRY.md](C16_BLOWUP_GEOMETRY.md).
+
 ## Resolved inverse graph
 
 Embed the affine source in `P^3` and take the closure of the graph of `G_H` in
@@ -78,8 +81,9 @@ inverse graph, the dicritical divisors are exactly the following.
    \kappa^{\mu_j}={B\rho_j\over h_j},             \tag{3}
    \]
    where `h_j` is the first nonzero local coefficient of `H` at `rho_j`.
-   Thus `D_(rho_j) -> V(C)` is generically degree `mu_j` and accounts for
-   exactly `mu_j` escaping inverse sheets.
+   Intrinsically `D_(rho_j) -> V(C)` has residue degree one and ramification
+   index `mu_j`.  The ramified chart displays the `mu_j` nearby escaping
+   sheets; it does not make them distinct prime divisors.
 
 3. **The zero-cluster divisor `D_0`.**  It occurs exactly when `m_0>=3`.
    With
@@ -90,9 +94,9 @@ inverse graph, the dicritical divisors are exactly the following.
    \[
    \kappa^{m_0-1}={B\over h_0}.                  \tag{4}
    \]
-   Hence `D_0 -> V(C)` has generic degree `m_0-1` and accounts for the
-   `m_0-1` zero-cluster sheets which do not extend to the finite `gamma=0`
-   chart.
+   Hence `D_0 -> V(C)` has residue degree one and ramification index `m_0-1`.
+   It accounts for the `m_0-1` zero-cluster sheets which do not extend to the
+   finite `gamma=0` chart.
 
 There are no other dicritical divisors.  The distinguished simple root `1`
 extends to the finite `x=0` chart.  When `m_0=2`, both generic zero-cluster
@@ -171,9 +175,10 @@ V(C),&m_0\ge3\text{ or }q>0,\\
 \end{cases}                                      \tag{6}
 \]
 
-Here repetitions change the generic degrees of the maps to `V(C)`, not their
-images.  Formula (6) recovers the exceptional minimal cubic and the general
-boundary theorem without relying only on a discriminant saturation.
+Here repetitions change the ramification indices along the maps to `V(C)`,
+not their residue degrees or images.  Formula (6) recovers the exceptional
+minimal cubic and the general boundary theorem without relying only on a
+discriminant saturation.
 
 Omission occurs on `C!=0` precisely when every root of (1) is multiple.  In
 the compactification this means that the entire length-`n` inverse fiber is
@@ -193,5 +198,7 @@ python scripts/verify_dicritical_divisors.py
 
 The script checks (2), the Kummer leading equations (3)--(4) for
 multiplicities through five or six, and the finite nature of the distinguished
-root-one chart.  These finite multiplicity checks are regressions for the
-uniform valuation argument above.
+root-one chart.  The Kummer exponents are checked as ramification indices.
+The graph blow-up and all exceptional valuations are audited separately by
+`verify_c16_blowup_geometry.py`.  These finite multiplicity checks are
+regressions for the uniform valuation argument above.

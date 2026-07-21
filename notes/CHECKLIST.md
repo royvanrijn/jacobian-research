@@ -165,8 +165,9 @@ formal derivations of its universal quantifier.
   compute its non-Gorenstein coincident-root fiber.
 - [x] Classify `Z_4` as a rank-sixteen finite-flat affine-difference block and
   compute its Hilbert function and four-dimensional socle.
-- [ ] Classify the blocks `Z_k` for `k>=5`, or extract a uniform relative
-  Groebner basis from the cases `k<=4`.
+- [x] Prove the all-`k` Boolean-quotient model, finite flatness of rank `2^k`,
+  affine/strong equality, and collided Hilbert series `(1+t)^k`; retain exact
+  Groebner regressions through `k=6`.
 - [ ] Determine ramification divisors, conductors, and scheme-theoretic branch
   multiplicities of the remaining component normalizations.
 - [x] Verify the threshold-`r` atom set `{r,...,2r-1}` and automatic abc bound
@@ -184,8 +185,11 @@ formal derivations of its universal quantifier.
 - [x] Deduce limiting image density `1-D_n/n!`.
 - [x] Check representative degree-three, four, and five models over a finite
   field against the predicted square-root scaling.
-- [ ] Make the finite set of excluded primes effective for an individual
-  seed.
+- [x] Make the excluded primes effective from denominators, Jacobian units,
+  `n!`, and the squarefree-factor discriminant/resultant certificate; audit
+  monodromy preservation and every Chebotarev twist hypothesis.
+- [x] Separate the exact discriminant and `C=0` contributions and prove the
+  universal boundary total and first-moment identities.
 - [ ] Compute exact lower-order corrections for selected higher-degree and
   small-characteristic models.
 - [ ] Determine how special discriminant singularities alter finite-field
@@ -193,7 +197,7 @@ formal derivations of its universal quantifier.
 
 ## 7. Derived constructions and implications
 
-- [ ] Reproduce the 95D and 510D generated artifacts from a clean checkout.
+- [ ] Reproduce the 95D and 451D generated artifacts from a clean checkout.
 - [ ] Audit each stable-equivalence and pairing step against the cited theorem.
 - [x] Audit the four recorded downstream conjectural implications, including
   hypotheses, fields, dimensions, and quantifiers.
@@ -215,7 +219,8 @@ formal derivations of its universal quantifier.
 
 1. Make good-prime exclusions effective seed by seed.
 2. Continue the exceptional-strata analysis in degrees eight and higher.
-3. Perform the second-CAS and clean-checkout archival reproduction.
+3. Perform a clean-checkout archival reproduction; the independent exact
+   implementation is now part of `make verify-derived`.
 4. Audit compactifications, stable equivalence, and external implications.
 5. Compute compact coefficient ideals for selected lower-dimensional strata.
 

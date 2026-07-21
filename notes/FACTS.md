@@ -130,7 +130,7 @@ singular locus of `V(Q)`.
 
 The standard reductions have been executed explicitly:
 `CUBIC_HOMOGENEOUS_REDUCTION.md` gives a 95-dimensional map `I+H` with `H`
-cubic homogeneous, and `CUBIC_LINEAR_REDUCTION.md` gives a 510-dimensional
+cubic homogeneous, and `CUBIC_LINEAR_REDUCTION.md` gives a 451-dimensional
 Druzkowski map `X-(AX)^{*3}` with `rank(A)=95`. Both have determinant one and
 stored exact rational collisions. These are explicit normal forms of the same
 counterexample mechanism, not logically independent counterexamples.
@@ -141,7 +141,8 @@ By contraposition of the cited implication/equivalence theorems, the verified
 3D counterexample also implies: the Mathieu conjecture fails for `SU(3)`; the
 Gaussian Moments Conjecture fails in at least one finite dimension; Zhao's
 quartic homogeneous Vanishing Conjecture fails in at least one finite
-dimension; and the all-dimensional Image Conjecture fails. The latter three
-statements are existential and currently provide neither the least dimension
-nor explicit witnesses. See `DIRECT_CONSEQUENCES.md` for the claim-by-claim
-audit and primary references.
+dimension; and the all-dimensional Image Conjecture fails.  C15 now supplies
+an explicit 190-variable quartic HN witness, an explicit Special
+Image-Conjecture pair, and a third-Weyl-algebra Dixmier witness.  Least
+dimensions and the least exceptional Vanishing exponent remain unknown. See
+`C15_INDEPENDENT_AUDIT.md` and `DIRECT_CONSEQUENCES.md`.

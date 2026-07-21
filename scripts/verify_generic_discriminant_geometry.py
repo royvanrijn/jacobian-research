@@ -79,8 +79,18 @@ for degree in range(3, 65):
     audit_H = deterministic_generic_primitive(degree, w)
     closed_form = sum(w**power for power in range(2, degree)) - (degree - 2) * w**degree
     assert sp.expand(audit_H - closed_form) == 0
+    assert tangent_chord_incidence_equation(audit_H, w, 0, 1) == 0
+    assert sp.Poly(audit_H, w).degree() == degree
     audit_c = -sp.diff(audit_H, w).subs(w, 1)
-    assert sp.cancel(sp.diff(audit_H, w, 2).subs(w, 1) / audit_c) == -sp.Rational(4 * degree, 3)
+    assert audit_c != 0
+    assert (
+        sp.diff(audit_H, w, 2).subs(w, 1)
+        - 2 * sp.diff(audit_H, w).subs(w, 1)
+        != 0
+    )
+    assert sp.cancel(
+        sp.diff(audit_H, w, 2).subs(w, 1) / audit_c
+    ) == -sp.Rational(4 * degree, 3)
 
 # Tangent-chord normalization puts a generic polynomial graph into the
 # admissible weighted slice without changing its dual singularity types.

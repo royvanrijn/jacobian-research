@@ -4,7 +4,7 @@ The 95-dimensional cubic-homogeneous counterexample `f=x+H` has been paired,
 in the sense of Gorni--Zampieri, with an explicit cubic-linear map
 
 \[
-G(X)=X-(AX)^{*3}:\mathbb C^{510}\longrightarrow\mathbb C^{510}.
+G(X)=X-(AX)^{*3}:\mathbb C^{451}\longrightarrow\mathbb C^{451}.
 \]
 
 Here `*3` denotes coordinatewise cubing.  The matrix `A` is rational, has rank
@@ -34,13 +34,16 @@ distinct cubes.  This gives matrices `B_0,D_0` with
 H(x)=-B_0(D_0x)^{*3}.
 \]
 
-The matrix `D_0` already has full column rank 95.  Put
+The matrix `D_0` already has full column rank 95.  The first implementation put
 
 \[
 B=(B_0\mid I_{95}),\qquad D=\binom{D_0}{0},\qquad A=DB,
 \]
 
-and let `C` embed `x` into the final 95 coordinates.  Then
+which gives dimension 510.  Exact row reduction, however, gives
+`rank(B_0)=59`.  The audited construction appends only a 36-column coordinate
+complement and computes a rational right inverse `C`.  This gives dimension
+`415+36=451`, and still
 
 \[
 BC=I_{95},\qquad AC=D,
@@ -78,7 +81,7 @@ G(X+k)=G(X)+k\qquad(k\in\ker A),
 
 each point can be translated by the corresponding kernel difference to give a
 literal common image.  The artifact stores the three resulting rational points,
-and the verifier substitutes them into all 510 coordinates exactly.
+and the verifier substitutes them into all 451 coordinates exactly.
 
 ## Reproduction
 
@@ -90,3 +93,7 @@ and the verifier substitutes them into all 510 coordinates exactly.
 The construction follows Proposition 2.1 of Gorni and Zampieri, *On
 cubic-linear polynomial mappings* (2013), which makes Druzkowski's reduction
 explicit through the pairing matrices `B` and `C`.
+
+Dimension 451 is minimal for this fixed polarization matrix `B_0`; no
+minimality among all cube decompositions is claimed.  See
+[C15_INDEPENDENT_AUDIT.md](C15_INDEPENDENT_AUDIT.md).

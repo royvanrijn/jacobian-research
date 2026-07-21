@@ -48,6 +48,36 @@ for length in range(1, 6):
         jacobian - weighted_vandermonde_determinant(multiplicities, roots)
     ) == 0
 
+# Nonemptiness starts on the maximally collided locus M=(W-r)^n.  Its Phi
+# polynomial has n-2 distinct roots; D is nonzero at all of them, and the
+# weighted forbidden factor A does not vanish at all of them.  The written
+# proof derives this from (z^n-nz+n-1)/(z-1)^2 and then splits the root by the
+# formal implicit-function theorem.  This loop is a bounded exact regression
+# of those three polynomial assertions, not the all-degree proof.
+W_nonempty, r_nonempty = sp.symbols("W_nonempty r_nonempty")
+for degree in range(3, 41):
+    collided = (W_nonempty - r_nonempty) ** degree
+    phi = sp.Poly(
+        collided.subs(W_nonempty, 1)
+        - collided.subs(W_nonempty, 0)
+        - sp.diff(collided, W_nonempty).subs(W_nonempty, 0),
+        r_nonempty,
+    )
+    D_collided = sp.Poly(
+        sp.diff(collided, W_nonempty).subs(W_nonempty, 1)
+        - sp.diff(collided, W_nonempty).subs(W_nonempty, 0),
+        r_nonempty,
+    )
+    A_collided = sp.Poly(
+        sp.diff(collided, W_nonempty, 2).subs(W_nonempty, 1)
+        - 2 * D_collided.as_expr(),
+        r_nonempty,
+    )
+    assert phi.degree() == degree - 2
+    assert sp.gcd(phi, phi.diff()).degree() == 0
+    assert sp.gcd(phi, D_collided).degree() == 0
+    assert sp.rem(A_collided, phi).as_expr() != 0
+
 # The theorem's dimension and codimension formulas are uniform over all
 # permitted partitions, rather than a table of low-degree rank witnesses.
 for degree in range(3, 21):
@@ -285,6 +315,7 @@ assert degree_eight_multiple.partitions == ((2, 2, 2, 2), (3, 3, 2))
 assert len(degree_eight_multiple.common_value_ideal) == 1
 
 print("PASS: weighted Newton coefficients give the all-degree rank theorem")
+print("PASS: maximally collided Phi has admissible roots in the nonemptiness regression")
 print("PASS: every full-contact stratum has dimension ell(lambda)-1")
 print("PASS: collision merging is a partial order and gives every closure inclusion")
 print("PASS: Mason excludes all off-collision pairs of maximal 2/3 partitions")

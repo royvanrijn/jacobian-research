@@ -48,6 +48,10 @@ For every `a,b>=0` with `2a+3b=n>=3`,
 In particular, every exceptional component has an explicit smooth
 normalization.
 
+The common coincident-root proof of finiteness, birationality, and the exact
+component image is also given in
+[COINCIDENT_ROOT_REBUILD.md](COINCIDENT_ROOT_REBUILD.md#7-the-proposed-smooth-models-are-the-normalizations).
+
 ## Smoothness of the quotient hypersurface
 
 Set

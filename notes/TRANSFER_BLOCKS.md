@@ -135,18 +135,23 @@ coupled by the fixed total `(a,b)` and by the single global affine difference.
 The local result (5) supplies the exact two-transfer factor, but assembling
 several compensating blocks still requires a Hensel-product/equalizer theorem.
 
-## General program
+## The all-`k` structure
 
-The first two results support the finite-flat conjecture
+The conjecture is now a theorem.  Over ordered roots `S=prod(Z-r_i)`, attach
+commuting square-zero variables `epsilon_i` and set
 
 \[
-\operatorname{rank}_{k[S]}\mathfrak Z_k=2^k.
+V=\prod_i((Z-r_i)^2+\epsilon_i),\qquad
+U=\prod_i((Z-r_i)^3+	frac32\epsilon_i(Z-r_i)).
 \]
 
-For higher `k`, the correct question is not whether the special fiber is a tensor
-product of dual numbers—it need not be—but whether one can find a monic
-Groebner basis with `2^k` standard monomials and describe its multiplication
-as a flat degeneration of the subset algebra over the squarefree-root locus.
+The transfer block is the symmetric-group quotient of this Boolean
+thickening.  Consequently it is finite flat of rank `2^k`, affine difference
+adds nothing for every `k`, and the coincident-root Hilbert series is
+`(1+t)^k`.  The complete invariant-theoretic proof is in
+[ALL_K_TRANSFER_BLOCK_THEOREM.md](ALL_K_TRANSFER_BLOCK_THEOREM.md).  The
+explicit results below are retained as coordinate models and independent
+low-degree audits of the structural theorem.
 
 ## The three-transfer theorem
 

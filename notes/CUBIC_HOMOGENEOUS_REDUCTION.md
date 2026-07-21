@@ -1,7 +1,8 @@
 # Explicit cubic-homogeneous counterexample
 
 The announced degree-`(7,6,4)` counterexample has now been carried through an
-explicit Bass--Connell--Wright/Yagzhev degree reduction.  The result is a map
+explicit Bass--Connell--Wright/Yagzhev degree reduction using polynomial stable
+equivalences and one Segre equivalence.  The result is a map
 
 \[
 K=I+H:\mathbb C^{95}\longrightarrow\mathbb C^{95},
@@ -91,3 +92,5 @@ homogeneity, substitutes all three points into all 95 coordinates, validates the
 The degree-reduction formula follows the four-step implementation in L. Andrew
 Campbell, *Reduction Theorems for the Strong Real Jacobian Conjecture* (2014),
 which in turn implements the Bass--Connell--Wright/Yagzhev reduction.
+The independent regeneration and primary-source hypothesis audit are recorded
+in [C15_INDEPENDENT_AUDIT.md](C15_INDEPENDENT_AUDIT.md).

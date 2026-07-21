@@ -13,6 +13,52 @@ sys.path.insert(0, str(ROOT))
 from jcsearch.weighted import WeightedSeedModel, canonical_seed, w, x, y, z  # noqa: E402
 
 
+# Universal construction lemma.  The endpoint choice of a0 gives the exact
+# second-order cancellation needed for polynomiality, while the four small
+# Jacobians prove det(DG_H)=b0*c on C!=0 and hence everywhere.
+kappa0 = sp.symbols("kappa0")
+a_weight0 = -(1 + kappa0) / (2 + kappa0)
+assert sp.factor(1 + kappa0 + a_weight0 * (2 + kappa0)) == 0
+
+x0, y_source0, z_source0, v0, S0 = sp.symbols(
+    "x0 y_source0 z_source0 v0 S0"
+)
+a00, b00, c00 = sp.symbols("a00 b00 c00", nonzero=True)
+gamma0 = 1 + a00 * v0 + b00 * S0
+u0 = 1 + v0
+W0 = u0 * gamma0
+C0 = x0 * gamma0
+J_source_invariants = sp.Matrix(
+    (x0, x0 * y_source0, x0**2 * z_source0)
+).jacobian((x0, y_source0, z_source0)).det()
+J_weighted = sp.Matrix((W0, gamma0, C0)).jacobian((x0, v0, S0)).det()
+assert sp.factor(J_source_invariants - x0**3) == 0
+assert sp.factor(J_weighted - b00 * gamma0**2) == 0
+
+dp0, A0, B0 = sp.symbols("dp0 A0 B0")
+J_pencil = sp.Matrix(
+    (
+        (dp0, c00, 0),
+        (c00 * gamma0 + W0 * dp0, c00 * W0, 0),
+        (0, 0, 1),
+    )
+).det()
+J_target_pencil = sp.Matrix(
+    (
+        (0, C0, B0),
+        (c00 * C0**2, 0, 2 * c00 * A0 * C0),
+        (0, 0, 1),
+    )
+).det()
+assert sp.factor(J_pencil + c00**2 * gamma0) == 0
+assert sp.factor(J_target_pencil + c00 * C0**3) == 0
+det_weighted = sp.cancel(
+    J_source_invariants * J_weighted * J_pencil / J_target_pencil
+)
+assert sp.factor(det_weighted - b00 * c00) == 0
+print("PASS: universal polynomiality cancellation and det(DG_H)=b0*c")
+
+
 # Universal incidence and reconstruction algebra.  Here h and p stand for
 # H(W) and H'(W); the only relation used is E=h-BCW+cAC^2=0.
 A, B, C, W = sp.symbols("A B C W")

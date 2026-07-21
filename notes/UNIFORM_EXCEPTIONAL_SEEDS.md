@@ -89,10 +89,13 @@ value theorem and unique factorization make it the displayed disjoint union.
 
 The root parameter space has dimension `ell(lambda)`.  The polynomial
 `Phi_lambda` is nonzero—for example its specialization with all roots zero is
-`1`—so its hypersurface has dimension `ell(lambda)-1`.  The excluded factors
-are proper divisors, and tangent-chord normalization supplies points in the
-admissible open set.  Quotienting equal parts is finite and does not change
-dimension.
+`1`.  Nonemptiness of its exact admissible zero set requires a separate
+argument: [COINCIDENT_ROOT_REBUILD.md](COINCIDENT_ROOT_REBUILD.md#3-nonemptiness-of-every-full-contact-stratum)
+first finds an admissible zero on the maximally collided `(n)` locus, then
+splits it according to `lambda` while preserving `Phi=0` by the formal
+implicit-function theorem.  Thus the retained principal divisor has
+dimension `ell(lambda)-1`.  Quotienting equal parts is finite and does not
+change dimension.
 
 It remains to prove that projection to seed coefficients does not lower the
 dimension.  Put

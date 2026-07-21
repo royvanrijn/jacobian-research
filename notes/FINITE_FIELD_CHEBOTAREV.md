@@ -1,156 +1,279 @@
-# Finite-field Chebotarev law for weighted seeds
+# Effective finite-field Chebotarev for weighted seeds
 
-This note derives the finite-field statistic common to every weighted seed
-from the universal `S_n` monodromy theorem. It is an asymptotic good-reduction
-result. Exact formulas in exceptional or small characteristics remain separate
-computations, as in `FINITE_FIELD_VALUE_DISTRIBUTION.md`.
+This note makes C13 effective seed by seed.  It gives an explicit bad-prime
+integer (or ideal over a number field), proves preservation of `S_n`
+monodromy at every remaining prime, separates the complete boundary
+contribution, and records an explicit—deliberately coarse—Chebotarev error.
 
-## Pencil Chebotarev theorem
-
-Let `H` be a characteristic-zero primitive of degree `n>=3`, defined over a
-number field, and consider
+Let `K` be a number field and let `H in K[W]` have degree `n>=3`.  Assume the
+weighted model is admissible:
 
 \[
-E_{s,t}(W)=H(W)-sW+t.
+H(0)=H(1)=H'(0)=0,\qquad H'(1)=-c\ne0,
+\qquad \det DG_H=b_0c\ne0.                       \tag{1}
 \]
 
-After choosing an integral model, exclude the finite set of primes where a
-coefficient denominator, the degree, separability, or the `S_n` cover has bad
-reduction. For every remaining residue field `F_q`, let `U` be the complement
-of the discriminant curve in the `(s,t)`-plane.
-
-The geometric monodromy of the degree-`n` root cover over `U` is `S_n`.
-Effective Chebotarev for finite morphisms of varieties over finite fields,
-using Lang--Weil on the corresponding twists, gives for every conjugacy class
-`K` in `S_n`
+Put
 
 \[
-\#\{(s,t)\in U(\mathbb F_q):\operatorname{Frob}_{s,t}\in K\}
-={|K|\over n!}q^2+O_H(q^{3/2}).
+ E_{s,t}(W)=H(W)-sW+t,qquad
+ \Delta_H(s,t)=\operatorname{Res}_W(E_{s,t},H'(W)-s).            \tag{2}
 \]
 
-The cycle lengths of Frobenius are the degrees of the irreducible factors of
-`E_{s,t}`. In particular, its fixed points are exactly the simple rational
-roots.
+Scalar leading-coefficient factors in `Delta_H` are harmless; below it is
+always replaced by its primitive part.
 
-This use of Chebotarev for finite quasi-projective morphisms follows the
-finite-field formulation proved via twisted varieties and Lang--Weil in
-[Steve Meagher, *A simple proof of Chebotarev's density theorem over finite
-fields*](https://doi.org/10.1017/S0004972718000448). The specialization from
-factorization types to symmetric-group cycle types is also developed for
-families `f(W)+sW+t` by [Pär Kurlberg and Lior Rosenzweig, *The Chebotarev
-density theorem for function fields -- incomplete
-intervals*](https://arxiv.org/abs/1901.06751).
+## 1. An explicit bad-reduction certificate
 
-## Fixed-point distribution
-
-Let `D_m` denote the number of derangements in `S_m`. The number of
-permutations in `S_n` with exactly `j` fixed points is
+Choose an integral ideal `d_H` supported on all denominator primes in the coefficients
+of `H,c,b_0,a_0` and in the displayed weighted map.  Write the squarefree
+decomposition over `K`
 
 \[
-{n\choose j}D_{n-j}.
+                         H=h_n\prod_m P_m(W)^m,                  \tag{3}
 \]
 
-Consequently, if `M_j(q)` counts all pencil parameters `(s,t)` with exactly
-`j` simple rational roots, including the lower-order discriminant locus, then
+where the `P_m` are monic, squarefree and pairwise coprime.  Define the
+nonzero boundary resultant
 
 \[
-M_j(q)=p_{n,j}q^2+O_H(q^{3/2}),
-\qquad
-p_{n,j}={{n\choose j}D_{n-j}\over n!}.
+ R_{\partial,H}=
+ \prod_m\operatorname{Disc}(P_m)
+ \prod_{m<\ell}\operatorname{Res}(P_m,P_\ell).                  \tag{4}
 \]
 
-The discriminant curve has only `O_H(q)` rational points, so adding its
-ramified specializations does not change the error term.
-
-The first laws are:
-
-| `n` | Nonzero probabilities `p_{n,j}` |
-|---:|---|
-| 3 | `p_0=1/3`, `p_1=1/2`, `p_3=1/6` |
-| 4 | `p_0=3/8`, `p_1=1/3`, `p_2=1/4`, `p_4=1/24` |
-| 5 | `p_0=11/30`, `p_1=3/8`, `p_2=1/6`, `p_3=1/12`, `p_5=1/120` |
-| 6 | `p_0=53/144`, `p_1=11/30`, `p_2=3/16`, `p_3=1/18`, `p_4=1/48`, `p_6=1/720` |
-
-There is never a permutation with exactly `n-1` fixed points. For every
-`1<=k<=n`, the falling-factorial moment satisfies
+Let `r_(partial,H)` be an integral ideal whose support is the union of the
+zero and pole primes of the nonzero number `R_(partial,H)`.  The effective bad
+ideal is
 
 \[
-\mathbb E[(\#\operatorname{Fix})_k]=1.
+ \boxed{\mathfrak B_H=
+ d_H\,(n!)\,(h_n)\,(c)\,(b_0)\,r_{\partial,H}.}                 \tag{5}
 \]
 
-These identities are the group-theoretic limits of the ordered distinct
-fiber-product counts.
+One may also multiply (5) by the discriminant of `K` to obtain a rational
+integer excluding ramified rational primes.  For a rational seed, clear
+denominators and take the absolute product of the resulting integer factors.
+The function
 
-## Transfer to the three-dimensional weighted map
-
-For fixed `C!=0`, the change of target coordinates
-
-\[
-(A,B)\longmapsto(s,t)=(BC,cAC^2)
-\]
-
-is a bijection over `F_q`. The affine fiber of the weighted map has one point
-for every simple rational root of `E_{s,t}`. Hence the count on `C!=0` is
-exactly `(q-1)M_j(q)`.
-
-The plane `C=0` contains only `q^2` targets. Its direct boundary fibers, all
-ramified specializations, and every omitted-value lift therefore contribute
-below the Chebotarev error after the extra `C` parameter is included. If
-`N_j(q)` is the full number of targets in `F_q^3` with `j` rational source
-points, then
-
-\[
-N_j(q)=p_{n,j}q^3+O_H(q^{5/2}).
-\]
-
-Thus the limiting rational image density is
-
-\[
-\lim_{q\to\infty}{|G_H(\mathbb F_q^3)|\over q^3}
-=1-p_{n,0}
-=1-{D_n\over n!}.
-\]
-
-As `n` grows, this tends to `1-e^{-1}`. This does not conflict with geometric
-surjectivity over the algebraic closure: a target can have preimages without
-having a rational preimage.
-
-The limiting mean fiber size is one, and in fact the mean over all targets is
-exactly one for every finite field because the source and target both have
-`q^3` points.
-
-## Exact incidence check and diagnostics
-
-There is one useful identity before taking a limit. For each candidate root
-`r` and each slope `s!=H'(r)`, exactly one intercept `t` makes `r` a simple
-root. Therefore
-
-\[
-\sum_{s,t}\#\{\text{simple roots of }E_{s,t}\}=q(q-1).
-\]
-
-The module `jcsearch.chebotarev` implements derangements, exact `S_n`
-fixed-point probabilities, and prime-field pencil histograms. Run:
-
-```bash
-.venv/bin/python scripts/verify_weighted_chebotarev.py
+```python
+rational_good_reduction_certificate(H, W, c=c, b0=b0, a0=a0)
 ```
 
-The verifier proves the finite group identities through `S_8`, checks the
-exact simple-root incidence, and reports finite-sample discrepancies for
-inverse degrees three, four, and five. Those samples are diagnostics; the
-asymptotic theorem comes from monodromy plus finite-field Chebotarev.
+in `jcsearch.chebotarev` performs this calculation.
+
+If a prime ideal `p` does not divide `B_H`, then:
+
+* all model coefficients are integral at `p`;
+* `deg(bar H)=n` and `bar c`, `bar b_0`, hence the Jacobian, are units;
+* the residue characteristic is greater than `n`;
+* resultants commute with reduction, so `bar Delta_H` is the discriminant of
+  the reduced pencil; and
+* (4) preserves every squarefree factor and every multiplicity in (3).
+
+Thus (5) simultaneously controls the inverse degree, etaleness of the
+weighted map, the root profile governing `C=0`, and the characteristic needed
+for tame monodromy.  It is intentionally conservative: a prime dividing
+`B_H` may still be good, but no prime outside it is bad for these reasons.
+
+## 2. Geometric monodromy survives reduction
+
+Let `k` be an algebraically closed field of characteristic `p>n` in which
+`h_n` is nonzero.  Put
+
+\[
+ U=\mathbb A^2_{s,t}\setminus V(\Delta_H).
+\]
+
+The root incidence `E=0` is irreducible: it is primitive and linear in `t`.
+Hence the geometric monodromy is transitive.  Since
+
+\[
+ H''(W)=n(n-1)h_nW^{n-2}+\cdots
+\]
+
+is nonzero, the generic point of the repeated-root divisor has exactly one
+double root.  Its tame inertia is a transposition.  The discriminant
+normalization
+
+\[
+ r\longmapsto(s,t)=(H'(r),,rH'(r)-H(r))                          \tag{6}
+\]
+
+is generically one-to-one by the pole-order argument from C04; that argument
+uses only that `n(n-1)h_n` is nonzero.  Therefore the branch divisor is
+geometrically irreducible and all its generic inertia groups are conjugate
+transpositions.
+
+The prime-to-`p` etale fundamental group of affine space has no nontrivial
+unramified quotient.  Because `p>n` implies `p` does not divide `n!`, the
+geometric Galois group is generated by these inertia transpositions.  A
+transitive permutation group generated by transpositions is the full
+symmetric group.  Consequently
+
+\[
+ \boxed{\operatorname{Gal}(E/\overline{k}(s,t))=S_n}             \tag{7}
+\]
+
+for every prime outside (5), not merely for all sufficiently large unnamed
+primes.  The arithmetic group contains the geometric `S_n` inside `S_n`, so
+it too equals `S_n`; there is no constant-field correction.
+
+## 3. Chebotarev hypotheses, one by one
+
+Let `q` be the norm of a prime outside (5), or any power of its residue field.
+Over `U/F_q`, let `Y` be the ordered-root cover.  Then:
+
+1. `Y -> U` is finite etale: `Delta_H!=0` is exactly separability of `E`.
+2. The `S_n` action is free and `Y/S_n=U`.
+3. `Y` is geometrically integral by (7).
+4. Every twist `Y^g` is geometrically integral, since it becomes isomorphic
+   to `Y` over the algebraic closure.
+5. All twists have dimension two.
+6. For `(s,t) in U(F_q)`, Frobenius cycle lengths are the irreducible-factor
+   degrees of `E`; fixed points are exactly its rational roots, all simple on
+   `U`.
+
+These are precisely the hypotheses in Meagher's twist proof of finite-field
+Chebotarev.  His point-count identity is exact:
+
+\[
+ \#Y^g(\mathbb F_q)=|C_{S_n}(g)|
+ \#\{u\in U(\mathbb F_q):\operatorname{Frob}_u\in[g]\}.         \tag{8}
+\]
+
+See [Steve Meagher, *A simple proof of Chebotarev's density theorem over
+finite fields*](https://doi.org/10.1017/S0004972718000448).
+
+## 4. An explicit error bound
+
+There is a useful uniform, if large, projective-degree bound.  Present `Y` in
+ordered-root coordinates `w_1,...,w_n` by the `n` equations
+`E(w_i)=0` and invert the Vandermonde with one extra variable.  Bezout gives
+
+\[
+ \delta_n=n^n\left({n\choose2}+1\right)                         \tag{9}
+\]
+
+as a bound for the degree of this affine embedding.  The `S_n` action is
+linear in these coordinates, so every twist has the same degree bound.
+
+For `q>6delta_n^2`, the explicit Lang--Weil estimate of Cafure--Matera gives
+
+\[
+ L_n(q)=(\delta_n-1)(\delta_n-2)q^{3/2}
+       +5\delta_n^{13/3}q.                                     \tag{10}
+\]
+
+Their theorem is stated for an absolutely irreducible affine variety of
+dimension two and degree at most `delta_n`, exactly the situation above; see
+[Cafure--Matera, *Improved explicit estimates on the number of solutions of
+equations over a finite field*](https://arxiv.org/abs/math/0405302).
+
+Let `C_j(q)` count points of `U(F_q)` whose pencil has exactly `j` rational
+roots and put
+
+\[
+ p_{n,j}={{n\choose j}D_{n-j}\over n!}.                          \tag{11}
+\]
+
+Summing (8) over the conjugacy classes with `j` fixed points yields the
+effective estimate
+
+\[
+ \boxed{|C_j(q)-p_{n,j}q^2|\le p_{n,j}L_n(q)\le L_n(q).}         \tag{12}
+\]
+
+For smaller good `q`, direct enumeration is finite and the trivial bound
+`q^2` applies.  The constants in (9)--(12) depend only on `n`; a seed-specific
+equivariant embedding or cohomology calculation can make them dramatically
+smaller.
+
+## 5. Exact discriminant and `C=0` contributions
+
+Let `D_j(q)` count points on `V(Delta_H)(F_q)` for which `E` has exactly `j`
+simple rational roots.  Let `B_j(q)` be the exact target-plane histogram
+
+\[
+ B_j(q)=\#\{(A,B)\in\mathbb F_q^2:
+             \#G_H^{-1}(A,B,0)(\mathbb F_q)=j\}.                 \tag{13}
+\]
+
+For each `C!=0`, `(A,B)->(s,t)=(BC,cAC^2)` is a bijection.  Therefore the
+full three-dimensional count is the exact identity
+
+\[
+ \boxed{N_j(q)=(q-1)(C_j(q)+D_j(q))+B_j(q).}                     \tag{14}
+
+This is the boundary term previously hidden in big-O notation.
+
+The root-one chart is an isomorphism onto `C=0`, so `B_0(q)=0`.  Moreover,
+the source divisor `C=xgamma=0` is the disjoint union of `x=0`, containing
+`q^2` points, and `gamma=0`, containing `q(q-1)` points because for `x!=0`
+the equation `1+a_0xy+b_0x^2z=0` determines `z`.  Hence
+
+\[
+ \boxed{\sum_jB_j(q)=q^2,qquad
+        B_0(q)=0,qquad
+        \sum_jjB_j(q)=2q^2-q.}                                  \tag{15}
+
+The individual `B_j` are seed-dependent but exactly computable from the two
+polynomial equations obtained by restricting `G_H` to `x=0` and `gamma=0`.
+No normalization or geometric-point multiplicity is used in (13): it is the
+literal rational-point histogram.
+
+If `d_Delta=deg Delta_H` (computable by the certificate function), the affine
+Schwartz--Zippel bound gives
+
+\[
+ \sum_jD_j(q)\le d_\Delta q.                                   \tag{16}
+
+Combining (12)--(16) gives the completely explicit estimate
+
+\[
+\begin{aligned}
+ |N_j(q)-p_{n,j}q^3|
+ \le{}&(q-1)p_{n,j}L_n(q)\\
+ &+d_\Delta q(q-1)+(1+p_{n,j})q^2.              \tag{17}
+\end{aligned}
+
+Thus the Chebotarev term is effective of order `q^(5/2)` and the entire
+discriminant plus `C=0` correction is explicitly `O(q^2)`.
+
+## 6. Consequences and exact diagnostics
+
+Equation (17) proves
+
+\[
+ N_j(q)=p_{n,j}q^3+O_n(q^{5/2}),
+ \qquad
+ {|G_H(\mathbb F_q^3)|\over q^3}
+ \longrightarrow1-{D_n\over n!}.                               \tag{18}
+
+The mean fiber size is exactly one for every `q`.  On the pencil this follows
+from the exact incidence identity
+
+\[
+ \sum_{s,t}\#\{\text{simple roots of }E_{s,t}\}=q(q-1);         \tag{19}
+
+after transfer to `C!=0`, (15) supplies precisely the missing boundary
+incidence and gives `q^3` source points in total.
+
+Run
+
+```bash
+python scripts/verify_effective_chebotarev.py
+python scripts/verify_weighted_chebotarev.py
+```
+
+The first script computes certificate integers and discriminant degrees for
+representative seeds, verifies the differential identities behind monodromy,
+and checks (14)--(15) by exact finite-field enumeration.  The second retains
+the permutation and pencil-distribution regressions.
 
 ## Scope
 
-The theorem applies after excluding finitely many bad primes and then letting
-`q` grow through good residue fields. It does not replace:
-
-- exact formulas for a specified small characteristic;
-- analysis where the inverse degree drops modulo the characteristic;
-- inseparable reductions or reductions where the geometric group changes;
-- the seed-specific `C=0` fiber tables.
-
-These distinctions explain why the original cubic has a universal `S_3`
-limit while characteristic two has a different exact distribution.
+The exclusion (5) and the bound (17) are effective, but conservative.  At a
+prime dividing (5), direct computation may still prove good reduction.  The
+theorem does not claim a closed formula for each seed-dependent `B_j(q)`, nor
+does it replace the sharper exact formulas available for the original cubic.

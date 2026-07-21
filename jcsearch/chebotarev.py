@@ -9,6 +9,81 @@ import math
 import sympy as sp
 
 
+def _rational_integer_data(expressions) -> tuple[int, list[sp.Expr]]:
+    """Clear rational denominators and return their lcm and integral forms."""
+    denominator = 1
+    expanded = []
+    for expression in expressions:
+        expression = sp.expand(sp.sympify(expression))
+        expanded.append(expression)
+        coefficients = (sp.Poly(expression).coeffs()
+                        if expression.free_symbols else [expression])
+        for coefficient in coefficients:
+            denominator = math.lcm(
+                denominator, abs(int(sp.denom(sp.cancel(coefficient))))
+            )
+    return denominator, [sp.expand(denominator * expression) for expression in expanded]
+
+
+def rational_good_reduction_certificate(
+    primitive, variable, *, c=sp.Integer(1), b0=sp.Integer(1), a0=sp.Integer(0)
+):
+    """Return an explicit rational-seed bad-prime certificate.
+
+    Every prime not dividing ``bad_integer`` preserves the degree, the
+    weighted Jacobian unit, the squarefree multiplicity profile of ``H``, and
+    the characteristic hypotheses used in the uniform S_n monodromy proof.
+    """
+    H = sp.Poly(sp.expand(primitive), variable, domain=sp.QQ)
+    n = H.degree()
+    denominator, integral = _rational_integer_data((H.as_expr(), c, b0, a0))
+    integral_H, integral_c, integral_b0, _ = integral
+
+    # The squarefree decomposition is defined over Q.  Its discriminants and
+    # pairwise resultants are precisely the collision certificate for the
+    # primitive-root multiplicity profile.
+    _, squarefree = sp.sqf_list(H.as_expr(), variable)
+    boundary_resultant = sp.Integer(1)
+    factors = [sp.Poly(factor, variable, domain=sp.QQ) for factor, _ in squarefree]
+    for factor in factors:
+        if factor.degree() > 1:
+            boundary_resultant *= sp.discriminant(factor.as_expr(), variable)
+    for left in range(len(factors)):
+        for right in range(left + 1, len(factors)):
+            boundary_resultant *= sp.resultant(
+                factors[left].as_expr(), factors[right].as_expr(), variable
+            )
+    boundary_resultant = sp.cancel(boundary_resultant)
+    boundary_num, boundary_den = map(int, sp.fraction(boundary_resultant))
+
+    leading = int(sp.Poly(integral_H, variable).LC())
+    c_integer = int(integral_c)
+    b_integer = int(integral_b0)
+    bad_integer = abs(
+        denominator
+        * math.factorial(n)
+        * leading
+        * c_integer
+        * b_integer
+        * boundary_num
+        * boundary_den
+    )
+    if bad_integer == 0:
+        raise ValueError("the seed/model data do not define a nonzero certificate")
+
+    slope, intercept = sp.symbols("s t")
+    pencil = H.as_expr() - slope * variable + intercept
+    discriminant = sp.primitive(sp.together(sp.discriminant(pencil, variable)))[1]
+    return {
+        "degree": n,
+        "denominator": denominator,
+        "boundary_resultant": sp.factor(boundary_resultant),
+        "bad_integer": bad_integer,
+        "discriminant": sp.factor(discriminant),
+        "discriminant_degree": sp.Poly(discriminant, slope, intercept).total_degree(),
+    }
+
+
 def derangement_count(n: int) -> int:
     """Return the number of fixed-point-free permutations of ``n`` letters."""
     if n < 0:

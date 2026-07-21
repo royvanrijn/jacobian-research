@@ -19,18 +19,19 @@ false for every `n>=3`.
   all-dimensional Jacobian conjecture. The counterexample negates the latter,
   so at least one finite-dimensional GMC statement fails. It does not identify
   the least dimension or an explicit pair of polynomials.
-- **Zhao's Vanishing Conjecture: false in some finite dimension.** Zhao's paper
-  states equivalence between the all-dimensional Jacobian conjecture and the
-  quartic homogeneous vanishing conjecture, and identifies its hypothesis with
-  Hessian nilpotency. Thus an existential quartic Hessian-nilpotent counterexample
-  follows. No small explicit quartic follows automatically from the 3D formula.
-- **Image Conjecture: false in some finite dimension.** The published implication
-  is `Image Conjecture => Vanishing Conjecture`; since the latter fails in some
-  dimension globally, the all-dimensional Image Conjecture cannot hold. This is
-  again existential.
+- **Zhao's Vanishing Conjecture: explicitly false in dimension 190.**  The C15
+  symmetric-gradient construction gives the 2012-term quartic HN polynomial
+  `R` stored in `results/c15_consequence_witnesses.json`.  Its gradient map has
+  a transported collision, so Zhao's inversion formula proves
+  `Delta^m R^(m+1)` is not eventually zero.
+- **Special Image Conjecture: explicitly false in dimension 190.**  For this
+  `R`, take `f=(sum zeta_i^2)R` and `g=R`.  Every `f^m` lies in the operator
+  image, while `g f^m` fails to do so infinitely often.
+- **Dixmier conjecture: explicitly false for the third Weyl algebra.**  The
+  normalized C01 map gives `Psi(x_i)=F_i` and
+  `Psi(d_i)=sum_j(JF^(-1))_(ji)d_j`.  The exact Weyl relations hold, while an
+  inverse would force a polynomial left inverse to the colliding map.
 
-These conclusions are logically sound given the cited implication/equivalence
-theorems. Only the first identifies a failing dimension (`SU(3)`); the others do
-not. None of the implication theorems automatically supplies compact explicit
-witnesses from the displayed map.
-
+The first two bullets remain nonconstructive.  The final three are explicit;
+their formulas, hypothesis audit, and remaining minimality questions are in
+[C15_INDEPENDENT_AUDIT.md](C15_INDEPENDENT_AUDIT.md).

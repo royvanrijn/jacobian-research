@@ -1,13 +1,78 @@
 # The cubic map as a marked-root space
 
-This note repackages the affine cubic and fiber calculations in
-[IMAGE_AND_NONPROPERNESS.md](IMAGE_AND_NONPROPERNESS.md) as one geometric
-statement.  The affine reconstruction and the `3/1/0` fiber theorem were
-already recorded there; the new organizing idea is to retain the inverse root
-projectively and regard it as a marked root of a binary cubic.
+This note identifies the counterexample with a simple open restriction of the
+addition map for effective divisors on `P^1`.  The formulas below provide the
+two affine charts needed to verify that the source open is `A^3` and recover
+the earlier affine cubic and fiber calculations in
+[IMAGE_AND_NONPROPERNESS.md](IMAGE_AND_NONPROPERNESS.md).
 
 Work over a field of characteristic zero.  Write `F(x,y,z)=(a,b,c)` for the
 map in the README.
+
+## Intrinsic symmetric-product form
+
+Consider
+
+\[
+\pi:\mathbb P^1\times\operatorname{Sym}^2(\mathbb P^1)
+\longrightarrow\operatorname{Sym}^3(\mathbb P^1),\qquad
+(p,\{q,r\})\longmapsto\{p,q,r\}.
+\]
+
+Its source is the incidence space of a binary cubic with one root marked.
+The ramification divisor is
+
+\[
+R=\{(p,\{q,r\}):p=q\text{ or }p=r\},
+\]
+
+the repeated-marked-root locus.  Under
+`Sym^3(P^1) ~= P^3`, the small diagonal `{3p}` is a twisted cubic.  Choose a
+hyperplane `H` tangent but not osculating to it and put
+
+\[
+X=(\mathbb P^1\times\operatorname{Sym}^2(\mathbb P^1))
+   \setminus(R\cup\pi^{-1}(H)),\qquad
+Y=\operatorname{Sym}^3(\mathbb P^1)\setminus H.
+\]
+
+After a change of coordinate on `P^1`, write a binary cubic as
+
+\[
+[c:d:b:e]=cU^3+dU^2V+bUV^2+eV^3
+\]
+
+and take `H={d=0}`.  Indeed, on the small diagonal
+
+\[
+(\alpha U+\beta V)^3
+=[\alpha^3:3\alpha^2\beta:3\alpha\beta^2:\beta^3],
+\]
+
+so `d=0` cuts it with multiplicities two and one.  Hence the hyperplane is
+tangent and not osculating.  Normalizing `d=-2` and setting `e=-2a` identifies
+`Y` with `A^3_(a,b,c)` and gives the binary cubic
+
+\[
+Q_{a,b,c}(U,V)=cU^3-2U^2V+bUV^2-2aV^3.
+\]
+
+The inverse image of this affine chart under `pi` is exactly the incidence
+space of such a cubic with one projective root marked.  Removing `R` retains
+exactly the simple marked roots.  In other words, the open `X` above is the
+simple-root incidence `I^simp` used below.
+
+The theorem proved by the two reconstruction charts below is precisely
+
+\[
+X\cong\mathbb A^3_{x,y,z},\qquad Y\cong\mathbb A^3_{a,b,c},
+\qquad \pi|_X=F.
+\]
+
+Because `pi` is generically three-to-one and its ramification divisor has been
+removed, `pi|X` is étale and generically three-to-one.  Thus the displayed
+identifications give the counterexample directly; the determinant and
+displayed collision are compact coordinate certificates for the same fact.
 
 ## The affine-root chart
 

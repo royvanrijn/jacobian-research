@@ -44,7 +44,7 @@
   polynomially equivalent maps.
 - **Known reductions.** The Bass–Connell–Wright/Yagzhev and
   Gorni–Zampieri/Druzkowski reductions have now been executed explicitly,
-  yielding certified counterexamples in dimensions 95 and 510 respectively.
+  yielding certified counterexamples in dimensions 95 and 451 respectively.
   The next task is to optimize the stable-equivalence choices and reduce these
   dimensions and support sizes without losing the transparent certificates.
 ## Simplification program

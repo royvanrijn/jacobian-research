@@ -96,6 +96,13 @@ for got, want in zip(F, (a, b, c_s)):
     assert sp.factor(got.subs({x: x_s, y: y_s, z: z_s}) - want) == 0
 print("PASS: s-chart reconstruction formulas recover the target")
 
+# Check the other composition on the source U-chart, not only the target
+# composition above.  Here s=x/(1+xy) and d=1/(1+xy).
+source_chart = {a: F[0], b: F[1], c: F[2], s: source_s}
+for reconstructed, expected in zip((x_s, y_s, z_s), (x, y, z)):
+    assert sp.factor(reconstructed.subs(source_chart) - expected) == 0
+print("PASS: s-chart reconstruction composed with the marking is the identity")
+
 assert sp.denom(z_s) == 1
 assert (d.subs(s, 0), x_s.subs(s, 0), y_s.subs(s, 0), z_s.subs(s, 0)) == (
     1,

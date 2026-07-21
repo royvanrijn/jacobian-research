@@ -32,6 +32,77 @@ v=xy,\quad S=x^2z,\quad u=1+v,
 
 Write the associated polynomial map as `G_H(x,y,z)=(A,B,C)`.
 
+## Polynomiality and constant Jacobian
+
+Put `p=H'` and
+
+\[
+q(W)={Wp(W)-H(W)\over c}.
+\]
+
+Because `p(0)=0`, the polynomial `p(W)` is divisible by `W`; hence
+`p(W)/gamma` is polynomial after `W=u gamma`.  Because
+`H(0)=H'(0)=0`, `q(W)` is divisible by `W^2`, so
+`q(W)/gamma^2` is polynomial as well.  It remains to justify the displayed
+divisions by `x` and `x^2` in (4).
+
+At `x=0` one has `(u,gamma,W)=(1,1,1)`.  Thus
+
+\[
+c+{p(W)\over\gamma}=c+p(1)=0,
+\]
+
+so the numerator defining `B` is divisible by `x`.  Write
+`kappa=p'(1)/c`.  Since `q(1)=-1` and `q'(1)=kappa`, differentiation at
+`x=0` gives
+
+\[
+{\partial\over\partial x}
+\left(u+{q(W)\over\gamma^2}\right)_{x=0}
+=\bigl(1+\kappa+a_0(2+\kappa)\bigr)y=0.
+\]
+
+The numerator itself also vanishes at `x=0`, so it is divisible by `x^2`.
+Consequently all three expressions in (4) are polynomials.
+
+There is also a denominator-free structural determinant proof.  On the dense
+open `C=x gamma ne 0`, introduce
+
+\[
+s=BC=c\gamma+p(W),\qquad
+t=cAC^2=cW\gamma+Wp(W)-H(W).
+\]
+
+The three coordinate changes have determinants
+
+\[
+\det{\partial(x,v,S)\over\partial(x,y,z)}=x^3,
+\]
+
+\[
+\det{\partial(W,\gamma,C)\over\partial(x,v,S)}
+=b_0\gamma^2,
+\qquad
+\det{\partial(s,t,C)\over\partial(W,\gamma,C)}
+=-c^2\gamma,
+\]
+
+and
+
+\[
+\det{\partial(s,t,C)\over\partial(A,B,C)}=-cC^3.
+\]
+
+Since `C=x gamma`, the chain rule gives
+
+\[
+\boxed{\det DG_H=b_0c.}                            \tag{2a}
+\]
+
+Both sides are polynomials, so equality on `C ne 0` proves the identity on
+all of `A^3`.  In particular `G_H` is etale and quasi-finite without any
+appeal to later boundary theory.
+
 ## The finite marked-root incidence
 
 For a target `(A,B,C)`, define
@@ -54,13 +125,8 @@ is the entire projective root incidence.  Its projection to the target is
 finite flat of degree `n`: after division by `h_n`, equation (2) is monic in
 `W`, so its coordinate ring is free with basis `1,W,...,W^(n-1)`.
 
-The source marks the root (1).  Indeed, if
-
-\[
-q(W)={WH'(W)-H(W)\over c},
-\]
-
-then the weighted map is defined in invariant coordinates by
+The source marks the root (1).  Indeed, with `q` as above, the weighted map is
+defined in invariant coordinates by
 
 \[
 C=x\gamma,\qquad
@@ -183,10 +249,11 @@ is exactly the simple-root isomorphism (11).
 
 **Proof.**  The source is normal, and (6) is dominant and birational by the
 explicit inverse on the dense open `C!=0`.  It therefore factors uniquely
-through the normalization (12).  The lift is quasi-finite because
-`det(DG_H)=b_0c!=0`, so `G_H` is etale and quasi-finite, and every fiber of the
-lift is contained in a fiber of `G_H`.  A quasi-finite birational morphism to
-a normal variety is an open immersion by Zariski's Main Theorem.
+through the normalization (12).  The lift is quasi-finite because the
+construction lemma gives `det(DG_H)=b_0c!=0`, so `G_H` is etale and
+quasi-finite, and every fiber of the lift is contained in a fiber of `G_H`.
+A quasi-finite birational morphism to a normal variety is an open immersion by
+Zariski's Main Theorem.
 
 On its image, the rational functions (7)--(9) pull back to the source
 coordinates, so the image lies in `R_H`.  Conversely, wherever these three
@@ -269,6 +336,11 @@ C16 is precisely the divisorial classification of the complement
 \(\widetilde{\mathcal I}_H\setminus\mathcal R_H\).  On the normalized
 inverse-graph compactification, these
 same valuations are the dicritical boundary divisors.
+
+The Kummer exponents in (18) are ramification indices.  Each corresponding
+prime divisor has residue degree one over `C=0`; the explicit blow-ups and
+the intervening nondicritical `A`-chains are computed in
+[C16_BLOWUP_GEOMETRY.md](C16_BLOWUP_GEOMETRY.md).
 
 The exact image and omission statements remain seed-dependent.  The theorem
 organizes their inverse geometry but does not replace the boundary arguments

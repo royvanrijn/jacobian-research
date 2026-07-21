@@ -6,7 +6,8 @@ SYSTEM_PYTHON ?= python3
 .PHONY: check verify verify-logged verify-minimal verify-core verify-geometry \
 	verify-theorems verify-regressions verify-derived verify-family \
 	verify-quartic verify-normal-forms verify-formal verify-lean-c01 \
-	scan-weighted-seeds
+	verify-foundations verify-foundations-formal \
+	verify-coincident-root-loci scan-weighted-seeds
 
 check:
 	$(PYTHON) -m compileall -q jcsearch scripts
@@ -40,13 +41,16 @@ verify-theorems:
 	$(PYTHON) scripts/verify_component_normalization.py
 	$(PYTHON) scripts/verify_degree12_branch_intersection.py
 	$(PYTHON) scripts/verify_dicritical_divisors.py
+	$(PYTHON) scripts/verify_c16_blowup_geometry.py
 	$(PYTHON) scripts/classify_transfer_block_k2.py
 	$(PYTHON) scripts/classify_transfer_block_k3.py
 	$(PYTHON) scripts/classify_transfer_block_k4.py
+	$(PYTHON) scripts/verify_all_k_transfer_block.py
 	$(PYTHON) scripts/verify_allocation_hensel_product.py
 	$(PYTHON) scripts/verify_mixed_allocation_equalizer.py
 	$(PYTHON) scripts/verify_omitted_value_classification.py
 	$(PYTHON) scripts/verify_repeated_root_boundary.py
+	$(PYTHON) scripts/verify_effective_chebotarev.py
 
 verify-regressions:
 	$(PYTHON) scripts/verify_generic_discriminant_geometry.py
@@ -71,6 +75,8 @@ verify-normal-forms:
 	$(PYTHON) scripts/verify_cubic_homogeneous_counterexample.py
 	$(PYTHON) scripts/cubic_linear_reduction.py
 	$(PYTHON) scripts/verify_cubic_linear_counterexample.py
+	$(PYTHON) scripts/audit_c15_independent.py
+	$(PYTHON) scripts/generate_c15_consequences.py
 
 verify-derived: verify-normal-forms
 
@@ -81,6 +87,19 @@ verify-lean-c01:
 	bash scripts/verify_lean_c01.sh
 
 verify-formal: verify-lean-c01
+
+verify-foundations: verify-core
+	$(PYTHON) scripts/verify_weighted_seed_schema.py
+	$(PYTHON) scripts/verify_weighted_seed_theorem.py
+	$(PYTHON) scripts/verify_weighted_marked_root_model.py
+
+verify-foundations-formal: verify-foundations verify-lean-c01
+
+# Optional independent bounded-degree comparison with Macaulay2's classical
+# CoincidentRootLoci package.  The wrapper uses a pinned Docker image if M2 is
+# not installed locally.
+verify-coincident-root-loci:
+	bash scripts/verify_coincident_root_slices.sh
 
 verify: check verify-core verify-theorems verify-regressions verify-derived
 

@@ -14,9 +14,14 @@ F:\mathbb A^3\longrightarrow\mathbb A^3
 with constant nonzero Jacobian determinant and a fiber containing three
 distinct rational points. It therefore supplies a counterexample to the
 classical Jacobian conjecture in dimension three. ([Claim C01](CLAIMS.md#c01))
-The inverse problem reduces to a cubic polynomial. ([Claim C02](CLAIMS.md#c02))
-Its exact image, fiber stratification, nonproperness set, and monodromy are
-also determined. ([Claim C03](CLAIMS.md#c03))
+
+Intrinsically, the example is the addition map from a point and an effective
+divisor of degree two to an effective divisor of degree three.  Removing its
+ramification divisor and the inverse image of a tangent, nonosculating
+hyperplane leaves an affine three-space mapping etale and generically
+three-to-one to another affine three-space. ([Claim C02](CLAIMS.md#c02))  The
+exact image, exceptional fibers, and nonproperness set are also determined.
+([Claim C03](CLAIMS.md#c03))
 
 The same construction belongs to a weighted family controlled by the
 one-variable pencil `H(W)-sW+t`. For this family the repository proves full
@@ -24,6 +29,18 @@ symmetric monodromy, a generic nodal-cuspidal discriminant theorem in every
 degree, generic surjectivity from inverse degree five onward, a complete
 contact-partition and irreducible-component theorem for exceptional seeds, and
 the associated finite-field Chebotarev law.
+
+The two universal constructions behind these results—the affine quotient of
+the no-simple-root locus on the target side and the normalized marked-root
+incidence on the source side—are assembled in
+[Master geometry](notes/MASTER_GEOMETRY.md).  That note also relates the
+exceptional strata to classical coincident-root loci, explains the common
+`2/3` cusp structure, and isolates the stronger affine-rigidity conjecture.
+The exact quotient result is the
+[master quotient theorem](notes/MASTER_QUOTIENT_THEOREM.md): finite radicial
+globally, a locally closed immersion on exact contact strata, with the
+exceptional locus equal to its normalized admissible hyperplane slice.
+([Claim C21](CLAIMS.md#c21))
 
 ### Proof status
 
@@ -36,81 +53,104 @@ mathematical theorems proved by uniform written arguments: irreducibility of
 local transpositions for `S_n`, Mason--Stothers separation, weighted
 Vandermonde dimension calculations, and tangent-chord collision order.
 
+The complete claim-level proof DAG—including exact quantifiers, computational
+and prose responsibilities, external inputs, and unresolved obligations—is
+[recorded separately](notes/CLAIM_DEPENDENCY_GRAPH.md).
+
+The self-contained foundational chain C01--C04 is isolated in
+[Foundational geometry](notes/FOUNDATIONAL_GEOMETRY.md): the original
+determinant and collision, the two-chart cubic marked-root isomorphism, the
+weighted normalized marked-root theorem, and the algebraic `S_n` monodromy
+argument.
+
 The accompanying scripts verify the algebraic identities used in those
 arguments and test exact examples in bounded degrees (typically through
 degree eight or ten).  Those computations are regression tests and proof
 audits; they are not formal machine proofs of the quantified all-degree
 statements.  External theorem inputs are identified where they occur.
 
-## 1. Main theorem
+## 1. Geometric construction and explicit map
+
+Identify `Sym^3(P^1)` with `P^3`, and let
+
+\[
+\pi:\mathbb P^1\times\operatorname{Sym}^2(\mathbb P^1)
+   \longrightarrow \operatorname{Sym}^3(\mathbb P^1),\qquad
+(p,\{q,r\})\longmapsto\{p,q,r\}.
+\]
+
+Let `R` be the ramification divisor of `pi`; thus `R` is the locus where the
+marked point `p` also occurs in the residual divisor `{q,r}`.  Let `H` be a
+hyperplane in `Sym^3(P^1)` tangent, but not osculating, to the small diagonal
+
+\[
+\Delta=\{3p:p\in\mathbb P^1\}\subset\operatorname{Sym}^3(\mathbb P^1).
+\]
+
+Then
+
+\[
+X=\bigl(\mathbb P^1\times\operatorname{Sym}^2(\mathbb P^1)\bigr)
+  \setminus\bigl(R\cup\pi^{-1}(H)\bigr)\cong\mathbb A^3,
+\qquad
+Y=\operatorname{Sym}^3(\mathbb P^1)\setminus H\cong\mathbb A^3.       \tag{1}
+\]
+
+The restriction `pi|X:X -> Y` is étale, since `R` has been removed, and is
+generically three-to-one: a reduced divisor `{p,q,r}` has three possible
+marked points.  After the affine identifications in (1), it is therefore a
+noninjective polynomial étale map `A^3 -> A^3`, hence a counterexample to the
+Jacobian conjecture. ([Claim C02](CLAIMS.md#c02))
+
+Here is the corresponding coordinate map:
 
 \[
 F(x,y,z)=\left(
 (1+xy)^3z+y^2(1+xy)(4+3xy),
 y+3x(1+xy)^2z+3xy^2(4+3xy),
 2x-3x^2y-x^3z
-\right).
+\right).                                                        \tag{2}
 \]
 
-The source is the space of binary cubics with a marked simple projective
-root; the Keller map forgets the marked root.  More precisely, `(x,y,z)`
-marks `[1+xy:x]` on
+To see the affine charts explicitly, write a binary cubic as
 
 \[
-cU^3-2U^2V+bUV^2-2aV^3=0,
+[c:d:b:e]=cU^3+dU^2V+bUV^2+eV^3.
 \]
 
-and this identifies the source with the simple-root locus of the finite
-degree-three incidence cover.  This is the main conceptual explanation of the
-determinant, generic degree three, root at infinity, `3/1/0` fiber table, and
-omitted triple-root locus; see
-[The cubic map as a marked-root space](notes/MARKED_ROOT_MODEL.md).
-
-Here is a short structural proof of the determinant.  On `x!=0`, use the
-inverse-chart coordinates
+The small diagonal is the twisted cubic
 
 \[
-t=y+{1\over x},\qquad r={2\over x},\qquad c=F_3(x,y,z).
+[\alpha:\beta]\longmapsto
+[\alpha^3:3\alpha^2\beta:3\alpha\beta^2:\beta^3].
 \]
 
-For a target `(a,b,c)`, the inverse cubic and its derivative give
+Up to a projective change of coordinate, a tangent nonosculating hyperplane is
+`H={d=0}`: its intersection with the small diagonal has multiplicities `2+1`.
+Normalize its complement by `d=-2` and write `e=-2a`.  Thus `Y` consists of
+the cubics
 
 \[
-a=t^2+{rt\over2}-ct^3,qquad
-b=r+4t-3ct^2.
+Q_{a,b,c}(U,V)=cU^3-2U^2V+bUV^2-2aV^3.             \tag{3}
 \]
 
-Therefore
+A point of the source marks one projective root of (3), and `R` is precisely
+the repeated-marked-root locus.  The affine isomorphism in (1) sends
+`(x,y,z)` to the cubic with coefficients `F(x,y,z)` and marked root
+`[1+xy:x]`.  In these coordinates `pi|X` is exactly (2).  See
+[The cubic map as a marked-root space](notes/MARKED_ROOT_MODEL.md) for the two
+affine charts and their inverse formulas.
+
+Geometrically, removal of `R` says that `F` is étale. Its Jacobian determinant
+is therefore a unit in the coordinate ring of `A^3`, hence a nonzero constant.
+Direct expansion gives
 
 \[
-\det {\partial(a,b,c)\over\partial(t,r,c)}
-=\det\begin{pmatrix}
-2t+r/2-3ct^2&t/2&-t^3\\
-4-6ct&1&-3t^2\\
-0&0&1
-\end{pmatrix}
-={r\over2}.
+\det DF=-2.
 \]
 
-Directly from the source chart,
-
-\[
-\det {\partial(t,r,c)\over\partial(x,y,z)}
-=\det\begin{pmatrix}
--1/x^2&1&0\\
--2/x^2&0&0\\
-2-6xy-3x^2z&-3x^2&-x^3
-\end{pmatrix}
-=-2x.
-\]
-
-Since `r=2/x`, the chain rule gives
-
-\[
-\det DF={r\over2}(-2x)=-2
-\]
-
-on `x!=0`, and hence everywhere by polynomial identity.
+The coordinate-chart factorization in the marked-root note gives the same
+constant without a full determinant expansion.
 
 Nevertheless,
 
@@ -134,7 +174,7 @@ target `make verify-lean-c01` builds his proof without vendoring its unlicensed
 source; its exact theorem scope and attribution are recorded in
 [the Lean C01 audit](notes/LEAN_C01.md).
 
-## 2. Marked-root inverse model and reconstruction
+## 2. Coordinate reconstruction
 
 Write a target as `(a,b,c)` and, on `x!=0`, set
 
@@ -162,7 +202,7 @@ y=T-{r\over2},\qquad
 z={5r^2\over4}-{3Tr\over2}-{cr^3\over8}.
 \]
 
-The function-field extension therefore has degree three. Its discriminant is
+The function-field extension has degree three. Its discriminant is
 
 \[
 \operatorname{Disc}_T(P)=-4Q,
@@ -174,15 +214,11 @@ where
 Q=27a^2c^2-18abc+16a+b^3c-b^2.
 \]
 
-([Claim C02](CLAIMS.md#c02))
-
-Projectively, `P` is the binary cubic above.  Its root `[1:0]` when `c=0`
-reconstructs regularly to `(0,b,a-4b^2)`, so it is exactly the `x=0` chart,
-not an escaping sheet.  The marked-root theorem identifies all of `A^3` with
-the simple-root locus, including this infinity chart.  Repeated marked roots
-form the ramification divisor of the ambient finite incidence cover; that
-divisor is removed from the source.  It is not a branch divisor of `F`, which
-is everywhere etale.
+The projective root `[1:0]`, present when `c=0`, reconstructs regularly to
+`(0,b,a-4b^2)` and supplies the `x=0` chart.  Thus the reconstruction includes
+all simple projective roots, not just the finite roots of `P`.  Repeated
+marked roots are exactly the removed divisor `R`; they do not give
+ramification at any point of `X`.
 
 This model also explains the failure of properness: repeated finite inverse
 roots are reconstruction poles, so sheets can escape to infinity without
@@ -281,11 +317,12 @@ The repository proves:
    ([Claim C06](CLAIMS.md#c06))
 
 The normalized graph compactification has one universal discriminant
-dicritical divisor and explicit Kummer divisors over `C=0` indexed by the
-primitive-root multiplicities of `H`. Their images give the nonproperness set,
-and an omitted value is exactly a fiber supported entirely on the
-discriminant divisor. These are precisely the polar divisors removed from the
-normalized marked-root incidence to recover the affine source.
+dicritical divisor and explicit ramified divisors over `C=0` indexed by the
+primitive-root multiplicities of `H`.  Their residue degrees are one; the
+Kummer exponents are their ramification indices.  Their images give the
+nonproperness set, and an omitted value is exactly a fiber supported entirely
+on the discriminant divisor. These are precisely the polar divisors removed
+from the normalized marked-root incidence to recover the affine source.
 ([Claim C16](CLAIMS.md#c16))
 
 The main references are
@@ -294,6 +331,9 @@ The main references are
 [the canonical image theorem](notes/CANONICAL_FAMILY_IMAGE.md), and
 [the repeated-root boundary theorem](notes/REPEATED_ROOT_BOUNDARY.md), and
 [the dicritical compactification theorem](notes/DICRITICAL_COMPACTIFICATION.md).
+The canonical graph blow-up, local toric charts, divisor intersections and
+discrepancies are in
+[the explicit C16 resolution](notes/C16_BLOWUP_GEOMETRY.md).
 The incidence-space formulation is in
 [the weighted marked-root theorem](notes/WEIGHTED_MARKED_ROOT_MODEL.md).
 
@@ -598,6 +638,14 @@ four.  This verifies the predicted rank `2^k` through `k=4`, while showing
 that the collision algebras are already far from Gorenstein.
 ([Claim C20](CLAIMS.md#c20))
 
+Uniformly for every `k`, the transfer block is the symmetric-group quotient
+of one commuting square-zero cusp jet at each ordered root.  Consequently
+`Z_k^aff=Z_k`, it is finite flat of rank `2^k`, and the maximally collided
+fiber has Hilbert series `(1+t)^k`.  Exact Gröbner regressions now extend
+through `k=6`; see
+[the all-k transfer-block theorem](notes/ALL_K_TRANSFER_BLOCK_THEOREM.md).
+([Claim C22](CLAIMS.md#c22))
+
 For arbitrary pairs of allocations, strong equality decomposes formally as a
 Hensel tensor product of the rootwise transfer blocks and a smooth common
 factor.  The actual normalized-branch intersection is the same product once a
@@ -668,7 +716,9 @@ the established `(3,2)` polynomial `F(R,P)`; degree six has the two components
 codimension two; and degree eight has components `(2,2,2,2)` and `(3,3,2)`
 meeting along the predicted collision boundary `(6,2)`.
 
-See [Uniform exceptional seeds](notes/UNIFORM_EXCEPTIONAL_SEEDS.md),
+The unified proof is
+[C08--C11 rebuilt from coincident-root geometry](notes/COINCIDENT_ROOT_REBUILD.md).
+See also [Uniform exceptional seeds](notes/UNIFORM_EXCEPTIONAL_SEEDS.md),
 [the contact-atom principle](notes/CONTACT_ATOM_PRINCIPLE.md),
 [the unique omitted-value theorem](notes/UNIQUE_OMITTED_VALUE.md),
 [component normalization](notes/COMPONENT_NORMALIZATION.md),
@@ -677,9 +727,12 @@ See [Uniform exceptional seeds](notes/UNIFORM_EXCEPTIONAL_SEEDS.md),
 
 ## 6. Arithmetic and normal forms
 
-At primes of good reduction, `S_n` monodromy gives the limiting fixed-point
-law of a random permutation. If `D_n` is the derangement number, then the
-limiting image density is
+For each number-field seed, an explicit ideal built from coefficient
+denominators, `n!`, the leading and Jacobian coefficients, and the
+discriminants/resultants of the primitive-root factors excludes every bad
+prime.  At every remaining prime, `S_n` monodromy survives reduction and gives
+the fixed-point law of a random permutation. If `D_n` is the derangement
+number, then the limiting image density is
 
 \[
 1-{D_n\over n!},
@@ -693,9 +746,15 @@ and targets with exactly `j` rational preimages have count
 
 ([Claim C13](CLAIMS.md#c13))
 
+The full count has the exact decomposition
+`N_j=(q-1)(C_j+D_j)+B_j`; the `C=0` histogram satisfies
+`sum B_j=q^2`, `B_0=0`, and `sum jB_j=2q^2-q`.  The ordered-root embedding and
+the Cafure--Matera estimate give a completely explicit, though coarse,
+`q^(5/2)` error constant.
+
 The original cubic also has exact finite-field distributions in every
 characteristic. Separately, standard reductions produce explicit
-95-dimensional cubic-homogeneous and 510-dimensional Drużkowski forms with
+95-dimensional cubic-homogeneous and 451-dimensional Drużkowski forms with
 transported rational collisions.
 ([Claim C15](CLAIMS.md#c15))
 
@@ -706,7 +765,9 @@ image and nonproperness set. ([Claim C14](CLAIMS.md#c14))
 See [Finite-field Chebotarev](notes/FINITE_FIELD_CHEBOTAREV.md),
 [exact cubic finite-field distributions](notes/FINITE_FIELD_VALUE_DISTRIBUTION.md),
 [the cubic-homogeneous reduction](notes/CUBIC_HOMOGENEOUS_REDUCTION.md), and
-[the cubic-linear reduction](notes/CUBIC_LINEAR_REDUCTION.md).
+[the cubic-linear reduction](notes/CUBIC_LINEAR_REDUCTION.md).  The independent
+hypothesis audit and explicit downstream witnesses are in
+[C15 independent audit](notes/C15_INDEPENDENT_AUDIT.md).
 
 ## 7. Reproducibility
 
@@ -744,7 +805,7 @@ Useful targets are:
 | `make verify-core` | foundational map, marked-root model, cubic inverse, exact image, fibers, and nonproperness |
 | `make verify-theorems` | exact identities and local models used by the written uniform proofs |
 | `make verify-regressions` | bounded-degree family, discriminant, Chebotarev, and quartic regressions |
-| `make verify-derived` | regenerate and verify the large stable-equivalent normal forms |
+| `make verify-derived` | regenerate and verify the large stable--Segre/GZ normal forms and consequences |
 | `make verify-family` | backward-compatible alias for theorem identities plus regressions |
 | `make verify-normal-forms` | backward-compatible normal-form target |
 | `make scan-weighted-seeds` | reproduce the exploratory bounded seed scan |

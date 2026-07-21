@@ -15,9 +15,11 @@ Y=H(r)+H'(r)(W-r)=sW-t
 to the graph `Y=H(W)`. Thus the discriminant is the projective dual curve of
 the polynomial graph, and its singularities record exceptional tangent lines.
 
-## Generic nodal-cuspidal theorem
+## C05: generic nodal-cuspidal theorem
 
-On a Zariski-open subset of admissible degree-`n` primitives:
+Let `k` be algebraically closed of characteristic zero and let `n>=3`.  There
+is a nonempty Zariski-open subset of the normalized admissible degree-`n`
+seed space such that, for every seed in that open:
 
 - the projective discriminant is a rational curve of degree `n`;
 - its unique point at infinity is smooth;
@@ -29,11 +31,24 @@ On a Zariski-open subset of admissible degree-`n` primitives:
   ordinary nodes;
 - it has no other singularities.
 
-This statement holds in every degree `n>=3`. The proof is internal to the
-polynomial-graph family and does not infer a uniform result from the finite
-computational audit.
+The proof below is uniform in `n`.  Its logical order is:
 
-## Uniform genericity proof
+1. prove that the displayed `P^1` map is finite and birational onto an
+   integral degree-`n` plane curve;
+2. classify every affine normalization branch and show that the only
+   worse-than-node-or-cusp contacts dominate `(4)`, `(3,2)`, or `(2,2,2)`;
+3. compactify those three incidences and prove that their closed coefficient
+   images have codimension at least one;
+4. prove uniformly over `h_n!=0` that the normalization is a formal closed
+   immersion at its unique point over infinity;
+5. prove that the weighted admissible slice meets the complement of the bad
+   images; and
+6. apply the plane-curve genus formula.
+
+No bounded computation and no generic projective-duality theorem is used in
+this implication chain.
+
+## Complete all-degree proof
 
 Fix an algebraically closed field `k` of characteristic zero.  Work in the
 affine coefficient space
@@ -76,11 +91,48 @@ and the target chart `T=1`,
 {Z\over T_H}={1\over(n-1)h_n}q^n+O(q^{n+1}).
 \]
 
-Thus `q` is recovered from the first target coordinate.  Uniformly on
-`D(h_n)`, the map is a closed immersion in a formal neighborhood of infinity.
-In particular the point at infinity is smooth, cannot meet a finite branch,
-and cannot be the limit of two distinct normalization points with a common
-image.
+Thus `q` is recovered from the first target coordinate: in the completed
+local ring over `k[h_2,...,h_n,h_n^{-1}]`, `S_H/T_H=q` times a unit.  The
+second target coordinate is then a power series in the first.  Hence the
+relative map is a closed immersion in a formal neighborhood of the infinity
+section, uniformly on `D(h_n)`.  In every exact-degree fiber the point at
+infinity is smooth and has exactly one normalization preimage.  Moreover the
+off-diagonal part of the relative fiber product of two normalization copies
+has closure disjoint from this section.  This last statement rules out not
+only an actual second branch at infinity, but also a degeneration of finite
+bitangent or tritangent branches to infinity while the coefficient point
+remains in `D(h_n)`.
+
+### Birationality, normalization, and degree
+
+The affine derivatives are
+
+\[
+ {ds\over dr}=H''(r),\qquad {dt\over dr}=rH''(r).
+\]
+
+Since `H''` is nonzero for an exact degree-`n` polynomial in characteristic
+zero,
+
+\[
+ r={dt\over ds}
+\]
+
+in the function field of the image.  Thus `overline(nu)_H` is birational
+onto its image.  A nonconstant morphism from the proper curve `P^1` to its
+image is finite.  Since `P^1` is normal, it is therefore the normalization of
+the reduced integral image curve.
+
+The three homogeneous forms have no common zero: if `U!=0`, then `Z!=0`,
+while at `U=0` one has
+
+\[
+ [S_H:T_H:Z]=[0:(n-1)h_nR^n:0].
+\]
+
+They consequently define a base-point-free linear series of degree `n`.
+Because the map is birational, the pullback of a general line consists of
+`n` points counted with multiplicity, so the image curve has degree `n`.
 
 ### The three compactified bad-incidence varieties
 
@@ -140,15 +192,17 @@ Compactify the residual coefficients as
 (\mathbb P^1)^k\times\mathbb P^{d+1}\times\mathbb P^{n-1} \tag{3}
 \]
 
-to be the graph closure, equivalently the subscheme obtained from
+to be the scheme-theoretic graph closure.  Concretely, it is the subscheme
+obtained from
 
 \[
 Dq_\infty h_j-zP_j=0\qquad(2\le j\le n) \tag{4}
 \]
 
-by saturation with respect to `z D q_infty`.  This saturation is part of the
-definition: it removes components created solely by homogenizing away from
-the affine graph chart.  If `d<0`, the incidence is empty.
+by saturation with respect to `z D q_infty`.  Indeed, saturation contracts
+the ideal from the principal open on which (4) is exactly the affine graph;
+it therefore gives the graph closure and removes homogenization-only
+components.  If `d<0`, the incidence is empty.
 
 The three bad patterns and their compactifications are
 
@@ -164,19 +218,23 @@ The source of every nonempty affine graph in (2) is irreducible of dimension
 k+(d+1)=k+n-m+1=n-2. \tag{5}
 \]
 
-Its graph closure (3) is therefore irreducible of the same dimension; taking
-a closure introduces no new irreducible component.  Projection from (3) to
-`P^(n-1)` is proper, so its image is closed and is exactly the Zariski closure
-of the corresponding affine incidence image.  Hence
+Its graph is isomorphic to the source, so its graph closure (3) is
+irreducible of the same dimension; taking a closure introduces neither a new
+component nor a larger dimension.  Projection from (3) to `P^(n-1)` is
+proper, so its image is closed and equals the Zariski closure of the
+corresponding affine incidence image.  Hence
 
 \[
 \dim\overline{\theta_\mu(\mathcal I_\mu^o)}\le n-2. \tag{6}
 \]
 
-This proves the dimension bound for the closure, not merely for the
+Since \(\dim\mathcal B_n=n-1\), every nonempty bad image has codimension at
+least one.  This proves the bound for the closed image, not merely for the
 distinct-root chart.  Root collisions, residual factors meeting marked
 roots, and every projective boundary stratum remain inside the same
-irreducible graph closure and cannot raise its dimension.
+irreducible graph closure and cannot raise its dimension.  When `n` is below
+the total contact of a pattern, that incidence is empty and the conclusion is
+automatic.
 
 ### Exhaustion of every bad affine singularity
 
@@ -233,12 +291,14 @@ For clarity, every degeneration of the open incidences is listed here.
    increases.  This is again excess multiplicity inside the same closure; it
    includes patterns such as `(3,3)`, `(4,2)`, and higher cusps.
 3. **A marked point tends to parameter infinity.**  A ramified marked point
-   would make the homogenization of `H''` vanish at `[1:0]`, but its value
-   there is `n(n-1)h_n`; hence this forces degree drop `h_n=0`.  An unramified
-   point at infinity cannot share an image with a finite point because their
-   target `Z`-coordinates differ.  Two or more marked points cannot collide
-   there off the diagonal because the local expansion above makes
-   `overline(nu)_H` a closed immersion at infinity.
+   would make the homogenization of `H''` vanish at `[1:0]`, whose value is
+   `n(n-1)h_n`; this is impossible over `D(h_n)`.  A finite marked point has
+   target coordinate `Z!=0`, whereas the infinity section has `Z=0`, so the
+   two cannot share an image.  Finally, the relative formal closed-immersion
+   calculation above says that the off-diagonal equal-image locus has closure
+   disjoint from the infinity section.  Thus neither two distinct marked
+   points nor a tritangent configuration can coalesce there over an
+   exact-degree coefficient limit.
 4. **Residual coefficients tend to infinity.**  Once all marked roots remain
    finite, a nonzero limiting direction `Q_infty` would have to make every
    coefficient of degree at least two in `M_mu Q_infty` vanish in order for
@@ -247,15 +307,17 @@ For clarity, every degeneration of the open incidences is listed here.
    `deg M_mu=m>=4`.
 5. **The coefficient target tends to infinity.**  This is exactly the boundary
    `z=0` of `P^(n-1)` and does not lie over `B_n`.
-6. **Degree drop.**  The remaining boundary is contained in `h_n=0`, outside
-   `B_n^o`.  After cancelling the common power of `U`, it is the analogous
-   lower-degree problem and supplies no singularity of an exact degree-`n`
-   discriminant.
+6. **Degree drop.**  The divisor `h_n=0` is outside `B_n^o`.  After cancelling
+   the common power of `U`, it is the analogous lower-degree problem and
+   supplies no singularity of an exact degree-`n` discriminant.
 
-These cases exhaust the boundary of (3): it is the union of `z=0`,
-`q_infty=0`, some `U_i=0`, the finite diagonals, the residual-resultant
-divisors, and `h_n=0`.  Thus no unexamined infinity component projects into
-the exact-degree affine coefficient space.
+These cases exhaust the coordinate boundary of (3), and they may of course
+meet each other.  Over an exact affine coefficient limit (`z h_n!=0`), case
+3 excludes every `U_i=0`; with all marked roots finite, case 4 excludes
+`q_infty=0`.  What remains consists only of finite diagonals and
+residual-resultant divisors, already covered by cases 1 and 2.  Thus no
+unexamined boundary component produces an additional bad contact over the
+exact-degree affine coefficient space.
 
 ### The good open set
 
@@ -336,7 +398,39 @@ constant `-1/H'(1)` reaches the normalized slice `H'(1)=-1`; the ratio in
 (12) and every dual singularity type are unchanged.  Therefore the normalized
 admissible weighted slice meets `U_n` for every `n>=3`.
 
-## Universal saturated incidence ideals
+### Completion of the proof by genus
+
+Choose a normalized admissible seed in this intersection.  Avoiding `Z_4`
+means that `H''`, of degree `n-2`, is squarefree.  Its `n-2` roots therefore
+give exactly `n-2` ordinary cusp parameters.  Avoiding `Z_32` says that their
+images are distinct and that no cusp image contains another branch.  The
+exhaustion theorem says that every remaining finite singularity has exactly
+two unramified preimages and is an ordinary transverse node; avoiding
+`Z_222` prevents three preimages or two node pairs from sharing an image.
+The relative infinity calculation supplies one smooth point and no further
+branch there.
+
+Let `N` be the number of nodes.  The curve is integral of degree `n`, its
+normalization is `P^1`, and both an ordinary node and an ordinary cusp have
+delta invariant one.  Therefore the normalization-genus formula gives
+
+\[
+ { (n-1)(n-2)\over2}
+ =p_a(C)=g(\mathbb P^1)+\sum_{x\in\operatorname{Sing}C}\delta_x
+ =0+(n-2)+N.
+\]
+
+Consequently
+
+\[
+ N={ (n-2)(n-3)\over2}.
+\]
+
+All other possible singularities were excluded before this numerical step;
+the genus formula determines the number of the remaining nodes rather than
+being used to guess their local type.  This completes the proof of C05.
+
+## Universal saturated incidence ideals and regression certificates
 
 The module `jcsearch.discriminant_geometry` now represents the theorem's bad
 loci directly over the universal admissible chart
@@ -552,6 +646,18 @@ squarefree cusp polynomials, bitangent counts, the smooth infinity jet, global
 singular-scheme length, and the multiplicity dictionary.
 
 ## Reference
+
+The external scheme/curve inputs used in the proof are the standard facts
+that a proper morphism has closed image
+([Stacks Project, Tag 01W6](https://stacks.math.columbia.edu/tag/01W6)), that
+a proper locally quasi-finite morphism is finite
+([Tag 0F2P](https://stacks.math.columbia.edu/tag/0F2P)), and the arithmetic
+genus formalism for proper curves
+([Tag 0BY6](https://stacks.math.columbia.edu/tag/0BY6)).  The local delta
+values of an ordinary node and ordinary cusp are the standard completed-local
+calculations.  Everything family-specific—birationality, the three incidence
+patterns, codimension, infinity, and meeting the admissible slice—is proved
+above.
 
 For the surrounding projective-duality machinery, see Aliaksandr Yuran,
 *Plucker Formulas for Plane Algebraic Curves with a Given Newton Polygon*,
