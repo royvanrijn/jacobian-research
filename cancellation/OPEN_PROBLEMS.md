@@ -47,12 +47,13 @@ target intersections cease to distinguish examples.
 
 ## 4. Audit the remaining all-parameter inputs
 
-Boundary normalization and exhaustion have a clean-room audit.  The most
-valuable independent regressions still missing are:
+Boundary normalization and exhaustion have a clean-room audit.  The thick
+intersection formula now has independent resultant and completed-local-ring
+proofs, together with bounded symbolic and standard-library exact-arithmetic
+regressions.  The most valuable independent regressions still missing are:
 
 1. the universal cancellation and reconstruction proof;
-2. the all-parameter monodromy computation; and
-3. the all-parameter thick intersection formula.
+2. the all-parameter monodromy computation.
 
 Positive invariance regressions should also conjugate a known map by
 complicated source and target automorphisms, change primitive elements and

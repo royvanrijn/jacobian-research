@@ -48,6 +48,15 @@ stratified object.
 
 ## 2. Complete boundary list
 
+This section is a summary.  The canonical paper contains the complete local
+proof, including the four generic DVRs, explicit uniformizers, every affine
+and boundary prime, geometric and arithmetic residue degrees, reduced prime
+discriminant equations, and the no-residual-component saturation argument;
+see [the extracted boundary-exhaustion section](../papers/marked-root-multiplicity/boundary-exhaustion.tex).
+Its exact weighted-discriminant lemma proves for the displayed degreewise
+seed that `Disc_W(E_N)=lambda_N C^2 delta_N`, with `delta_N` prime, reduced,
+and nonzero modulo `C`.
+
 Completeness is certified locally.  For a target prime divisor `Z` and a
 finite cover of generic degree `nu`, all primes over the generic point obey
 
@@ -202,11 +211,18 @@ library and is run as
 python3 scripts/audit_boundary_exhaustion_independent.py
 ```
 
-The scheme-intersection formula is checked in bounded symbolic ranges by
-`scripts/verify_scheme_boundary_all_parameters.py`; its all-parameter
-proof is the monic-resultant and beta-integral calculation summarized in
-(2)--(3).  A genuinely independent audit of that all-parameter thickening is
-still desirable.
+The scheme-intersection formula now has two independent all-parameter proofs
+in the canonical paper's
+[thick-intersection section](../papers/marked-root-multiplicity/thick-intersection.tex):
+a primitive monic-resultant calculation and a completed-local-ring length
+calculation.  The former is checked in bounded symbolic ranges by
+`scripts/verify_scheme_boundary_all_parameters.py`; the latter has a
+standard-library exact-arithmetic audit in
+`scripts/audit_thick_intersection_local.py`.
+
+The canonical proof and the independent audit serve different purposes.  The
+former is the source of the theorem and its local-ring hypotheses; the latter
+is a clean-room regression against omitted branches and transcription errors.
 
 Detailed former component notes are retained in
 [the cancellation archive](../archive/cancellation-components/).

@@ -1,4 +1,9 @@
-\section{The cubic marked-root space}\label{sec:cubic-incidence}
+\section{Global coordinate certificate}\label{sec:cubic-incidence}
+
+We now identify the geometric morphism of
+Theorem~\ref{thm:geometric-counterexample} with the polynomial map
+\eqref{eq:F}.  The only genuinely global coordinate issue is the marked root
+at infinity; the two root charts below isolate that check.
 
 Let $(a,b,c)$ be coordinates on $Y=\A^3_k$ and define
 \begin{equation}\label{eq:binary-cubic}
@@ -157,10 +162,9 @@ $\A^3_k$.  Lemmas~\ref{lem:affine-mutual} and
 \ref{lem:projective-mutual} therefore glue to a two-sided inverse of $\Phi$.
 \end{proof}
 
-Under $\operatorname{Sym}^3(\P^1)\simeq\P^3$, the coefficient hyperplane of
-$U^2V$ is tangent but not osculating to the small diagonal.  Normalizing that
-coefficient to $-2$ identifies its complement with $\A^3_k$, while marking
-one root identifies its inverse image with $I$.  The ramification divisor of
-the marked-root cover is the repeated-marked-root locus, whose complement is
-$I^{\mathrm{simp}}$.  This gives the intrinsic symmetric-product
-interpretation of Theorem~\ref{thm:marked-root}.
+Under $\operatorname{Sym}^3(\P^1)\simeq\P^3$, normalizing the complement of
+the hyperplane $H$ from Section~\ref{sec:geometric-construction} makes the
+$U^2V$ coefficient equal to $-2$ and identifies $Y$ with $\A^3_k$.  Marking
+one root gives $I$, and removing the repeated-marked-root divisor gives
+$I^{\mathrm{simp}}$.  Thus Theorem~\ref{thm:marked-root} is precisely the
+global coordinate certificate for Theorem~\ref{thm:geometric-counterexample}.

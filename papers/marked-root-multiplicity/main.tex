@@ -149,13 +149,65 @@ The marked inverse equation is
 At every generic simple root, differentiating (3.4) and using (3.2)
 reconstructs $(x,y,z)$; hence its degree is the generic degree of the map.
 
+\begin{proposition}[explicit regular weighted fiber]
+\label{prop:weighted-explicit-fiber}
+Suppose $H\in\overline{\mathbb Q}[W]$ is an admissible seed of degree $d$
+and $c\in\overline{\mathbb Q}^{\times}$.  For any complex number $\alpha$
+transcendental over $\overline{\mathbb Q}$, the target
+\[
+ (A,B,C)=(\alpha,0,1)                                    \tag{3.5}
+\]
+has exactly $d$ distinct inverse roots, and every one lies in the
+regular-reconstruction open.  More explicitly, if
+\[
+ H(w_i)+c\alpha=0,qquad
+ \gamma_i=-\frac{H'(w_i)}c,qquad 1\le i\le d,           \tag{3.6}
+\]
+then $H'(w_i)\ne0$ and the $d$ source points are
+\[
+ x_i=\gamma_i^{-1},\qquad y_i=w_i-\gamma_i,
+\]
+\[
+ z_i=\frac{\gamma_i^2}{b_0}
+ \left[\gamma_i-1-a_0\left(\frac{w_i}{\gamma_i}-1\right)\right].
+                                                                    \tag{3.7}
+\]
+\end{proposition}
+
+\begin{proof}
+At (3.5), the inverse equation and its $W$-derivative are
+\[
+ E(W)=H(W)+c\alpha,qquad E_W(W)=H'(W).                  \tag{3.8}
+\]
+If $w$ were a common root, then $w$ would be algebraic over
+$\overline{\mathbb Q}$ because it is a root of the nonzero polynomial
+$H'$.  Hence $H(w)$ would be algebraic, contradicting
+$H(w)=-c\alpha$.  Thus $E$ is a degree-$d$ polynomial with $d$ distinct
+complex roots.
+
+The reconstruction formulas are
+\[
+ \gamma=-E_W/c,\qquad x=C/\gamma,qquad
+ y=(W-\gamma)/C,
+\]
+\[
+ z=\frac{\gamma-1-a_0(W/\gamma-1)}{b_0x^2}.             \tag{3.9}
+\]
+Their only possible denominators on the incidence are $C$, $E_W$ (through
+$\gamma$), and the fixed units $b_0,c$.  At (3.5), $C=1$ and the preceding
+coprimality argument gives $E_W(w_i)\ne0$ for every root.  Substitution into
+(3.9) gives (3.7), so all reconstruction denominators are excluded
+simultaneously.  Distinct $w_i$ give distinct marked source points.
+\end{proof}
+
 \begin{lemma}[weighted admissibility]\label{lem:weighted}
 For every $N\ge4$,
 \[
- H_N(W)=W^2(1-W)(1+W^{N-3})                               \tag{3.5}
+ H_N(W)=W^2(1-W)(1+W^{N-3})                              \tag{3.10}
 \]
 is an admissible split seed of degree $N$.  With $b_0=1$, (3.2) is a Keller
-map of generic degree $N$, and some fiber consists of $N$ distinct points.
+map of generic degree $N$, and the fiber over $(\pi,0,1)$ consists of $N$
+distinct points.
 \end{lemma}
 
 \begin{proof}
@@ -165,9 +217,10 @@ different from $1$.  Direct differentiation gives
  H_N'(1)=-2,qquad H_N''(1)/2=-(N+1)\ne-2.
 \]
 Thus (3.1) holds with $c=2$.  Equations (3.2)--(3.4) give polynomiality,
-Jacobian $2$, and exact generic degree $N$.  The simple-root locus of (3.4)
-is a nonempty target open, so it contains a complex point whose $N$ roots
-reconstruct to $N$ distinct source points.
+Jacobian $2$, and exact generic degree $N$.  Since $H_N\in\mathbb Q[W]$ and
+$\pi$ is transcendental, Proposition~\ref{prop:weighted-explicit-fiber}
+applies with $\alpha=\pi$ and supplies the asserted $N$-point fiber, with all
+reconstruction denominators nonzero.
 \end{proof}
 
 \subsection{Cancellation marked roots}
@@ -175,11 +228,11 @@ reconstruct to $N$ distinct source points.
 Fix $m,r\ge1$, $C\in k^*$, and a polynomial $h(A)$.  Put
 \[
  A=1+xy^m,\quad B=A^{r+1}z+y^{m+1}h(A),\quad
- P=AB,\quad Q=y+xB,                                      \tag{3.6}
+ P=AB,\quad Q=y+xB,                                     \tag{3.11}
 \]
 and initially in the localization at $A$ put
 \[
- R=C\int_0^{x/A}\{1-t(Q-Pt)^m\}^r\,dt.                  \tag{3.7}
+ R=C\int_0^{x/A}\{1-t(Q-Pt)^m\}^r\,dt.                 \tag{3.12}
 \]
 Writing $s=x/A$, one has
 \[
@@ -188,195 +241,75 @@ Writing $s=x/A$, one has
 and the change $(x,y,z)\mapsto(s,P,Q)$ has determinant $-A^r$.
 Since $R_s=CD^r=CA^{-r}$,
 \[
- \det\frac{\partial(P,Q,R)}{\partial(x,y,z)}=-C.         \tag{3.8}
+ \det\frac{\partial(P,Q,R)}{\partial(x,y,z)}=-C.        \tag{3.13}
 \]
 
-Only the $z$-free part of (3.7) can have an $A$-pole.  Its regularity is the
+Only the $z$-free part of (3.12) can have an $A$-pole.  Its regularity is the
 finite condition
 \[
- \Phi_{m,r}(A,h(A))\equiv0\pmod {A^{r+1}},                \tag{3.9}
+ \Phi_{m,r}(A,h(A))\equiv0\pmod {A^{r+1}},               \tag{3.14}
 \]
 where
 \[
  \Phi_{m,r}(A,H)=\int_0^1
  [A+(1-A)u\{1-(1-A)H(1-u)\}^m]^r\,du.
 \]
-If $q=h(0)$, the constant term of (3.9), after monic normalization, is
+If $q=h(0)$, the constant term of (3.14), after monic normalization, is
 \[
  M_{m,r}(q)=\sum_{j=0}^{mr}(-1)^j
- \binom{mr+r+1}{j}q^{mr-j}.                               \tag{3.10}
+ \binom{mr+r+1}{j}q^{mr-j}.                              \tag{3.15}
 \]
 
 \begin{lemma}[divisor construction]\label{lem:cancellation}
 Let $N\ge4$, put $n=N-1$, and let $r$ be a proper positive divisor of $n$.
-For $m=n/r-1$, some complex polynomial $h$ satisfies (3.9).  Equations
-(3.6)--(3.7) then define a polynomial Keller map of generic degree $N$ with
+For $m=n/r-1$, some complex polynomial $h$ satisfies (3.14).  Equations
+(3.11)--(3.12) then define a polynomial Keller map of generic degree $N$ with
 a fiber of $N$ distinct points.
 \end{lemma}
 
 \begin{proof}
-We have $m\ge1$.  Up to a nonzero scalar, (3.10) is
+We have $m\ge1$.  Up to a nonzero scalar, (3.15) is
 \[
  y(q)=\int_0^1u^r(1-q+qu)^{mr}\,du
  =\frac1{r+1}{}_2F_1(-mr,1;r+2;q).
 \]
 Its differential equation is
 \[
- q(1-q)y''+[r+2-(2-mr)q]y'+mr\,y=0.                      \tag{3.11}
+ q(1-q)y''+[r+2-(2-mr)q]y'+mr\,y=0.                     \tag{3.16}
 \]
-If $y$ and $y'$ vanished together away from $0,1$, uniqueness in (3.11)
+If $y$ and $y'$ vanished together away from $0,1$, uniqueness in (3.16)
 would make $y$ identically zero.  At $0$ and $1$ its integral is nonzero.
 Thus $M_{m,r}$ is squarefree.  It has degree $mr\ge1$, hence has a complex
 root $q$.  At such a root, $\partial_q\Phi_{m,r}(0,q)\ne0$; successively
 equating the coefficients of $A,\ldots,A^r$ determines a unique jet
-$h=q+h_1A+\cdots+h_rA^r$ satisfying (3.9).  Thus $R$ is polynomial and
-(3.8) applies.
+$h=q+h_1A+\cdots+h_rA^r$ satisfying (3.14).  Thus $R$ is polynomial and
+(3.13) applies.
 
 The inverse equation is
 \[
- \Psi(T)=C\int_0^T\{1-t(Q-Pt)^m\}^r\,dt-R,               \tag{3.12}
+ \Psi(T)=C\int_0^T\{1-t(Q-Pt)^m\}^r\,dt-R,              \tag{3.17}
 \]
 of degree $r(m+1)+1=N$.  If
 $D=1-T(Q-PT)^m\ne0$, reconstruction is
 \[
- y=Q-TP,quad A=D^{-1},\quad x=TD^{-1},
+ y=Q-TP,\quad A=D^{-1},\quad x=TD^{-1},
 \]
 \[
- z=PD^{r+2}-y^{m+1}D^{r+1}h(D^{-1}).                     \tag{3.13}
+ z=PD^{r+2}-y^{m+1}D^{r+1}h(D^{-1}).                    \tag{3.18}
 \]
-The resultant of $\Psi$ and $D$ is generically nonzero, so (3.13) proves
-exact generic degree.  At $(P,Q,R)=(1,0,0)$, (3.12) is
+The resultant of $\Psi$ and $D$ is generically nonzero, so (3.18) proves
+exact generic degree.  At $(P,Q,R)=(1,0,0)$, (3.17) is
 $CTE_{m,r}((-1)^mT^{m+1})$.  A repeated nonzero root would force
 $(-1)^mT^{m+1}=1$, but
-$E_{m,r}(1)=\int_0^1(1-v^{m+1})^r,dv\ne0$.  Hence all $N$ roots are simple
+$E_{m,r}(1)=\int_0^1(1-v^{m+1})^r\,dv\ne0$.  Hence all $N$ roots are simple
 and reconstruct to $N$ distinct source points.
 \end{proof}
 
-\section{Exhausting the normalization boundary}
+\input{boundary-exhaustion.tex}
 
-For a target prime divisor $Z$, the local ring at its generic point is a
-DVR.  If $[L:K]=N$, its primes in the integral closure obey
-\[
- N=\sum_{E\mid Z}e(E/Z)f(E/Z).                            \tag{4.1}
-\]
-This includes primes in the affine-source open and boundary primes.
+\input{stable-functoriality.tex}
 
-\begin{lemma}[boundary exhaustion]\label{lem:boundary}
-The complete boundary-image list for the split weighted map is
-$\Delta_H$ and $C=0$.  Over $\Delta_H$ there is one boundary prime with
-$(e,f)=(2,1)$; over $C=0$ there are $N-3$ geometric boundary primes with
-$(e,f)=(1,1)$.
-
-For the cancellation map it is $\Delta_{m,r}$ and $P=0$.  Over the first
-there is one boundary prime with $(e,f)=(r+1,1)$; over the second there are
-$mr-1$ geometric boundary primes with $(e,f)=(1,1)$.  For $N\ge4$ both
-target vertices occur.  In each family the discriminant is the unique vertex
-receiving ramification.
-\end{lemma}
-
-\begin{proof}
-Off the two displayed divisors, the inverse roots are simple and the
-reconstruction formulas are regular.  Thus every boundary image lies in the
-displayed list.
-
-For the weighted map, the generic discriminant prime contributes two sheets
-and the remaining $N-2$ sheets are affine.  Over $C=0$, the double-zero
-cluster is one affine prime of residue degree two, the root $W=1$ is one
-affine prime, and the $N-3$ extra roots give the stated boundary primes.
-The two degree sums are
-\[
- 2+(N-2)=N,qquad2+1+(N-3)=N.                             \tag{4.2}
-\]
-
-For cancellation, the integral critical divisor has ramification $r+1$;
-all remaining discriminant sheets are affine.  Over $P=0$, the $U=0$
-cluster is an affine prime of residue degree $r+1$, one distinguished
-nonzero root is affine, and the other $mr-1$ simple roots are boundary.  Thus
-\[
- (r+1)+N-(r+1)=N,qquad(r+1)+1+(mr-1)=N.                 \tag{4.3}
-\]
-Every missing prime would add a positive term to (4.1), so (4.2)--(4.3) are
-exhaustive.  The ramified prime cannot lie in the source because a Keller map
-is etale there.  Finally, $mr=1$ occurs only for $(m,r)=(1,1)$ and $N=3$;
-our range therefore makes both second vertices genuine boundary images.
-
-The boundary itself has no hidden higher-codimension component: the
-distinguished affine source is an affine open in the normal affine finite
-normalization, hence its nonempty complement is pure of codimension one.
-A height-one prime in this integral finite cover contracts to a height-one
-prime of the normal target.  Thus the target-divisor list loses no boundary
-geometry relevant here.
-\end{proof}
-
-\section{Stable functoriality}
-
-\begin{lemma}[stable boundary signature]\label{lem:stable}
-For the maps in Lemma~\ref{lem:boundary}, the pair $(e_\Delta,\mu)$ of
-(2.1) is invariant under polynomial left--right equivalence and after
-adjoining any number of identity variables.
-\end{lemma}
-
-\begin{proof}
-A left--right equivalence identifies the corresponding finite function-field
-extensions over isomorphic targets.  Uniqueness and functoriality of
-normalization identify the finite covers, carry the distinguished affine
-open to the distinguished affine open, and preserve boundary valuations,
-their $e,f$ labels, and scheme-theoretic target intersections.  The intrinsic
-ramification marking from Lemma~\ref{lem:boundary} prevents the two target
-vertices from being exchanged.
-
-Under stabilization, the finite normalization and open pair base-change to
-their product with affine space.  An intersection ring $R$ becomes
-$R[t_1,\ldots,t_s]$.  Since
-$\Nil(R[t_1,\ldots,t_s])=\Nil(R)[t_1,\ldots,t_s]$, its exact nilpotency
-index and reducedness are unchanged.  The regular flat base change also
-preserves the valuation ramification index.
-\end{proof}
-
-\section{Reduced and thick boundary contact}
-
-\begin{lemma}[contact calculation]\label{lem:contact}
-For the split weighted map, $Z_\Delta\cap Z_0$ is reduced and $\mu=1$.
-For a cancellation map of type $(m,r)$ with $N\ge4$, it is nonreduced and
-\[
- e_\Delta=r+1,qquad\mu=mr(m+1)=m(N-1)>1.                 \tag{6.1}
-\]
-\end{lemma}
-
-\begin{proof}
-Write $H(W)=W^2J(W)$, with $h_2=J(0)\ne0$.  In the double-zero chart put
-$W=Cu$ in (3.4) and remove the forced power of $C$.  At $C=0$ the limiting
-quadratic is
-\[
- h_2u^2-Bu+cA.
-\]
-Consequently the saturated discriminant trace is
-\[
- C=0,qquad B^2-4h_2cA=0,                                \tag{6.2}
-\]
-whose coordinate ring is $\C[B]$.
-
-For cancellation, the critical divisor of (3.12) is
-$1-T(Q-PT)^m=0$.  Normalize it by
-\[
- Y=Q-PT,qquad T=Y^{-m},\qquad P=(Q-Y)Y^m.                \tag{6.3}
-\]
-The exponent $r$ in $\partial_T\Psi=C(1-T(Q-PT)^m)^r$
-gives ramification $r+1$.  Eliminating $Y$ from (6.3) and the critical value
-and then restricting to $P=0$ gives, up to a nonzero scalar,
-\[
- Q^{mr(m+1)}\bigl((r+1)RQ^m-C\bigr).                     \tag{6.4}
-\]
-The factors in (6.4) are comaximal, since $C\ne0$, and therefore the
-intersection ring is
-\[
- \frac{\C[Q,R]}{(Q^{mr(m+1)})}
- \times\C[Q,Q^{-1}].                                     \tag{6.5}
-\]
-Its nilradical is generated by $Q$ in the first factor and has exact index
-$mr(m+1)$.  In our range the $P=0$ vertex is canonical by
-Lemma~\ref{lem:boundary}, and the index exceeds one.
-\end{proof}
+\input{thick-intersection.tex}
 
 \section{Proof of the degreewise theorem}
 

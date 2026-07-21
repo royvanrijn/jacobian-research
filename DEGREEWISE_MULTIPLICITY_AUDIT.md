@@ -40,7 +40,8 @@ Thus (1) satisfies the weighted-seed hypotheses.  Taking `b_0=1` and
 \]
 
 in the weighted construction gives a polynomial map `G_N:A^3->A^3` with
-constant nonzero Jacobian and generic fiber degree `N`.
+constant nonzero Jacobian and generic fiber degree `N`.  Its explicit target
+`(A,B,C)=(pi,0,1)` has `N` distinct source points.
 
 ### Check
 
@@ -70,6 +71,19 @@ gives `det DG_N=b_0c=2`.  The inverse equation
 
 has degree `N` and reconstructs the source at every generic simple root, so
 the generic degree is exactly `N`.
+
+At `(A,B,C)=(pi,0,1)`, equation (4) is
+
+\[
+ H_N(W)+2\pi=0.
+\]
+
+Every root of `H_N'` is algebraic.  A repeated root would therefore make
+`-H_N(W)/2=pi` algebraic, contradicting the transcendence of `pi`.  Hence
+the equation has `N` distinct roots.  On the incidence the reconstruction
+denominators reduce to `C` and
+`E_W=H_N'(W)-BC`: here `C=1` and `E_W=H_N'(W)!=0` at every root.  Thus all
+`N` roots reconstruct simultaneously, not merely generically.
 
 **Uses only:** elementary differentiation and the general weighted
 divisibility/Jacobian identity.  It does not use Lemmas 2--5.
@@ -142,6 +156,10 @@ At `(P,Q,R)=(1,0,0)` the standard beta-integral argument shows that (9) has
 test, and reconstruction.  It does not use Lemmas 1 or 3--5.
 
 ## Lemma 3 — the boundary vertices and labels are exhaustive
+
+The canonical local-ring proof is the paper's
+[boundary-exhaustion section](papers/marked-root-multiplicity/boundary-exhaustion.tex).
+The discussion below is only its audit checklist.
 
 Let `U=A^3`, let `Y=A^3`, and for either map let
 
@@ -221,12 +239,14 @@ therefore identify the finite covers, their distinguished affine opens,
 their boundary primes, and the target scheme intersections.  Ramification
 indices and nilradicals are intrinsic under this isomorphism.
 
-After stabilization by `A^s`, the normalization is
-`bar X_F x A^s`, and every intersection ring `R` becomes
-`R[t_1,...,t_s]`.  Polynomial extension is faithfully flat,
-`Nil(R[t])=Nil(R)[t]`, and the exact nilpotency index is unchanged.
-Ramification indices are unchanged by the same regular base change.  Hence
-(14) is stable.
+The standalone
+[stabilization proposition](papers/marked-root-multiplicity/stable-functoriality.tex)
+proves, rather than assumes, that normalization commutes with adjoining
+identity variables.  It then tracks the extended height-one primes and
+Gauss valuations, scheme intersections, and nilradicals.  In particular,
+every intersection ring `R` becomes `R[t_1,...,t_s]`, with
+`Nil(R[t])=Nil(R)[t]` and `Nil(R[t])^a=Nil(R)^a[t]`.  Hence ramification,
+reducedness, and the exact nilpotency index in (14) are stable.
 
 **Uses only:** the canonical boundary object furnished by Lemma 3 and
 standard functoriality of finite normalization.  It does not use the family
@@ -273,12 +293,17 @@ For (16), normalize the critical divisor of (9) with
  Y=Q-PT,\qquad T=Y^{-m},\qquad P=(Q-Y)Y^m.
 \]
 
-Eliminating `Y` and setting `P=0` gives, up to a unit,
-`Q^{mr(m+1)}((r+1)RQ^m-C)`.  The two factors are comaximal because `C!=0`,
-giving the product decomposition.  Its first factor has nilradical generated
-by `Q` with exact index (17).  The restriction `N>=4` excludes `(m,r)=(1,1)`,
-the sole case in which `P=0` is only a coordinate trace rather than a
-boundary vertex.
+The canonical paper now proves the exponent twice in its
+[thick-intersection section](papers/marked-root-multiplicity/thick-intersection.tex).
+The eliminative proof forms the primitive monic resultant in `Y`; at `P=0`
+it factors as `G(0)^mG(Q)`, and two beta integrals give orders `m*mr` and
+`mr`.  Independently, the completed regular plane `C(R)[[Y,Q]]` has
+`div(P)=m[Y=0]+[Y=Q]`; additivity of local intersection multiplicity gives
+the same length `m(mr)+mr=mr(m+1)` without a resultant.  The two displayed
+factors in (16) are comaximal because `C!=0`, giving the product
+decomposition and exact nilpotency index (17).  The restriction `N>=4`
+excludes `(m,r)=(1,1)`, the sole case in which `P=0` is only a coordinate
+trace rather than a boundary vertex.
 
 **Uses only:** the local equations of the two normalized critical divisors.
 It does not use the stable-invariance argument.
@@ -312,6 +337,13 @@ regression in
 
 ```bash
 .venv/bin/python scripts/verify_scheme_boundary_all_parameters.py
+```
+
+and a standard-library exact-arithmetic audit of the independent local
+length calculation in
+
+```bash
+python3 scripts/audit_thick_intersection_local.py
 ```
 
 These scripts are regressions, not substitutes for Lemmas 3 and 5.  The

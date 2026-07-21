@@ -86,7 +86,21 @@ pinned rather than copied into this repository.
 
 ## The geometric turn
 
-For a target `(a,b,c)`, consider the binary cubic
+The counterexample has a shorter coordinate-free construction.  Start from
+
+\[
+\mathbb P^1\times\operatorname{Sym}^2(\mathbb P^1)
+\longrightarrow\operatorname{Sym}^3(\mathbb P^1),\qquad (x,Q)\mapsto x+Q,
+\]
+
+and remove its ramification divisor together with the inverse image of a
+tangent non-osculating hyperplane.  The target complement is `A^3`.  The two
+boundary lines in each `Sym^2(P^1)` fiber become chords of an auxiliary
+conic; residual intersection makes the source an iterated affine-line bundle,
+hence `A^3`.  The restricted addition map is étale and generically
+three-to-one, so this already proves the counterexample without coordinates.
+
+Coordinates turn that construction into the binary cubic
 
 \[
 Q_{a,b,c}(U,V)=cU^3-2U^2V+bUV^2-2aV^3.
@@ -105,6 +119,12 @@ discriminant, and fiber formulas.  It adopts Jiang’s projective organization
 with attribution; the repository contribution is the global two-chart proof,
 including the root at infinity and the identification of the affine source as
 the regular-reconstruction open.
+
+The auxiliary-conic proof comes from a later geometric manuscript prompted by
+Semon Rezchikov.  The repository now uses it as the primary existence proof;
+the two charts remain the explicit coordinate certificate, including the root
+at infinity.  This simplification affects the foundational cubic only and
+adds no new cancellation, boundary-invariant, or stable-equivalence result.
 
 This cubic picture became the template:
 
@@ -129,7 +149,9 @@ distinctions matter:
 |---|---|---|
 | Explicit map, determinant, and rational collision | Alpöge/Fable announcement trail | Independent exact implementations, a compact proof, and a maintained reproduction target; no discovery claim |
 | Marked projective root | Andy Jiang’s public geometric interpretation | The global two-chart scheme proof, including the root at infinity, plus exact image and nonproperness arguments |
+| Auxiliary conic and residual-intersection coordinate | Rezchikov-prompted geometric manuscript | Integration with the marked-root model while retaining explicit coordinate charts and downstream scope boundaries |
 | Weighted lift and higher-degree seed family | Alexis Gallagher’s explainer | A normalized-incidence formulation, the regular-reconstruction open, uniform `S_N` monodromy, and later complete boundary calculations |
+| Quartic Islands A/B/C | Juntang Zhuang's pinned compilation and exact collision checkers | Independent compact reconstruction showing one canonical and two split weighted seeds, complete boundary signatures, and exclusion from the cancellation normal forms |
 | Formal verification of the foundational map | Dean Cureton’s Lean project | Pinned attribution, scope audit, and an optional upstream build target |
 | Immediate consequences and source trail | Zihan Zhang’s audit | A separate proof architecture focused on inverse geometry, normalization, and stable equivalence |
 | Cancellation maps and canonical boundary invariants | No earlier source has been identified in the present audit | The finite cancellation operator, all-parameter reconstruction and collision, boundary-exhaustion theorem, thick intersections, and rigidity results |
@@ -184,6 +206,14 @@ The canonical statement and proof are in the standalone paper
 [Marked-root Keller maps](MARKED_ROOT_KELLER_MAPS.md) supplies the common
 framework, while the [five-lemma audit](DEGREEWISE_MULTIPLICITY_AUDIT.md) is a
 verification companion.  Neither is a competing canonical theorem source.
+
+Three externally published quartic maps called Islands A, B, and C are
+classified in the [quartic-islands audit](extended-geometry/EXTERNAL_QUARTIC_ISLANDS.md).
+They are not new cancellation classes: one is the canonical triple-zero
+weighted seed and two are split weighted seeds with normalized extra roots
+`3` and `-1/2`.  Their boundary data separate Island A from the other two;
+the present invariant package does not assert unrestricted equivalence or
+inequivalence between the two split-root parameters.
 
 ## What is genuinely new here?
 
@@ -243,6 +273,8 @@ This repository explicitly thanks and credits:
 - Akhil for posing the question, as reported by Zihan Zhang;
 - Andy Jiang for the marked-projective-root organization;
 - Alexis Gallagher for the explanatory weighted-lift and seed-family account;
+- Juntang Zhuang for the pinned public compilation, Island A/B/C labels,
+  expanded maps, and exact quartic collision certificates;
 - Dean Cureton for the independently authored Lean formalization;
 - Zihan Zhang for the source and direct-consequence audit; and
 - Qiaochu Yuan for connecting the public geometric interpretation to the

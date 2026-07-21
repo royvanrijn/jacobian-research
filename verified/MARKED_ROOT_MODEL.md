@@ -1,9 +1,10 @@
 # The cubic map as a marked-root space
 
-This note identifies the counterexample with a simple open restriction of the
-addition map for effective divisors on `P^1`.  The formulas below provide the
-two affine charts needed to verify that the source open is `A^3` and recover
-the earlier affine cubic and fiber calculations in
+This note first constructs the counterexample intrinsically as an open
+restriction of the addition map for effective divisors on `P^1`.  Residual
+intersection with an auxiliary conic proves that the source is `A^3`.  The
+two affine charts are retained only as a global coordinate certificate for
+the displayed polynomial formula and the earlier fiber calculations in
 [IMAGE_AND_NONPROPERNESS.md](IMAGE_AND_NONPROPERNESS.md).
 
 Work over a field of characteristic zero.  Write `F(x,y,z)=(a,b,c)` for the
@@ -23,7 +24,7 @@ Its source is the incidence space of a binary cubic with one root marked.
 The ramification divisor is
 
 \[
-R=\{(p,\{q,r\}):p=q\text{ or }p=r\},
+D=\{(p,\{q,r\}):p=q\text{ or }p=r\},
 \]
 
 the repeated-marked-root locus.  Under
@@ -32,7 +33,7 @@ hyperplane `H` tangent but not osculating to it and put
 
 \[
 X=(\mathbb P^1\times\operatorname{Sym}^2(\mathbb P^1))
-   \setminus(R\cup\pi^{-1}(H)),\qquad
+   \setminus(D\cup\pi^{-1}(H)),\qquad
 Y=\operatorname{Sym}^3(\mathbb P^1)\setminus H.
 \]
 
@@ -58,21 +59,102 @@ Q_{a,b,c}(U,V)=cU^3-2U^2V+bUV^2-2aV^3.
 \]
 
 The inverse image of this affine chart under `pi` is exactly the incidence
-space of such a cubic with one projective root marked.  Removing `R` retains
+space of such a cubic with one projective root marked.  Removing `D` retains
 exactly the simple marked roots.  In other words, the open `X` above is the
 simple-root incidence `I^simp` used below.
 
-The theorem proved by the two reconstruction charts below is precisely
+The residual-intersection argument in the next section proves intrinsically
+that
 
 \[
-X\cong\mathbb A^3_{x,y,z},\qquad Y\cong\mathbb A^3_{a,b,c},
-\qquad \pi|_X=F.
+X\cong\mathbb A^3,\qquad Y\cong\mathbb A^3.
 \]
 
 Because `pi` is generically three-to-one and its ramification divisor has been
-removed, `pi|X` is étale and generically three-to-one.  Thus the displayed
-identifications give the counterexample directly; the determinant and
-displayed collision are compact coordinate certificates for the same fact.
+removed, `pi|X` is étale and generically three-to-one.  This already gives the
+counterexample without polynomial coordinates: after choosing affine-space
+identifications, its Jacobian determinant is a unit in a polynomial ring and
+hence a nonzero constant.  The reconstruction charts
+later identify one choice of affine coordinates with the displayed map `F`;
+the determinant and collision are compact independent certificates.
+
+## Boundary lines and the auxiliary conic
+
+There is also a coordinate-light explanation of why the source open is
+affine three-space.  Choose affine coordinate `t` on
+`P^1 \ {infinity}` so that the hyperplane section is the zero-sum condition
+
+\[
+x+y+z=0.                                             \tag{A}
+\]
+
+On the small diagonal this becomes `3x=0`; after projective closure the
+hyperplane meets the twisted cubic in the divisor `2[infinity]+[0]`.  This is
+the intrinsic reason that the chosen hyperplane is tangent but not
+osculating.
+
+Fix the marked point `x`.  In the plane `Sym^2(P^1)`, write
+
+\[
+D_x=\{Q:Q\text{ contains }x\},\qquad
+E_x=\{Q:x+Q\in H\}.
+\]
+
+If `Gamma={2t}` is the Veronese conic, then `D_x` is the tangent to `Gamma`
+at `2x`, while the `E_x` form the pencil through
+`p_infinity=2[infinity]`.  Put
+
+\[
+\tau(x)=-x/2,\qquad \alpha=\tau^{-1},\quad \alpha(x)=-2x,
+\qquad h(x)=D_x\cap E_x=x+\alpha(x).
+\]
+
+Here the last plus sign denotes addition of effective divisors, not addition
+of affine coordinates.  The points `h(x)` trace a second smooth conic
+`C=h(P^1)`.  Relative to `C`, the two boundary lines have the uniform chord
+descriptions
+
+\[
+E_x=\overline{h(x)p_\infty},\qquad
+D_x=\overline{h(x)h(\tau(x))},                      \tag{B}
+\]
+
+with a coincident chord interpreted as a tangent.
+
+For `(x,Q)` in `X`, the line through `h(x)` and `Q` is defined because their
+coincidence would put `Q` on both removed boundary lines.  Its residual
+intersection with `C` defines
+
+\[
+\rho:X\longrightarrow C\setminus\{p_\infty\}\simeq\mathbb A^1. \tag{C}
+\]
+
+The omitted residual value `p_infinity` is exactly the condition `Q in E_x`.
+For a residual point `s`, the condition `Q in D_x` excludes exactly the one
+marked point satisfying `s=h(tau(x))`.  Thus
+
+\[
+B=\{(x,s)\in\mathbb P^1\times(C\setminus\{p_\infty\}):
+       s\ne h(\tau(x))\}
+\]
+
+is the complement of a section in a projective-line bundle over `A^1`.
+Hence it is a torsor under a line bundle; both the line bundle and torsor are
+trivial, so `B` is isomorphic to `A^2`.  Over `B`, the point `Q` varies on the
+line `h(x)s` with `h(x)` removed, giving another complement-of-a-section
+affine-line bundle.  Line bundles and additive torsors on affine space are
+trivial, so
+
+\[
+X\longrightarrow B\longrightarrow\mathbb A^1,
+\qquad X\simeq\mathbb A^3.                          \tag{D}
+\]
+
+This residual-intersection construction supplies a natural first coordinate
+and a conceptual proof of the source isomorphism.  The two charts below are
+still needed as an explicit coordinate certificate, including regularity at
+the projective root at infinity, and to identify this abstract affine
+three-space with the displayed polynomial map.
 
 ## The affine-root chart
 

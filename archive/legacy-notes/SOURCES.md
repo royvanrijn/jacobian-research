@@ -11,6 +11,13 @@ materials that have not yet been located.
 - [The Jacobian counterexample, explained](https://jacobianfun.org/jacobian-explained):
   exact map, checks, weighted coordinates, inverse cubic, and proposed seed
   family.
+- [Juntang Zhuang, `jzkay12/jacobian_conjecture`](https://github.com/jzkay12/jacobian_conjecture),
+  pinned here at commit
+  [`1ff68e870f66afec8c6611f910fcc8f5522fdbce`](https://github.com/jzkay12/jacobian_conjecture/commit/1ff68e870f66afec8c6611f910fcc8f5522fdbce):
+  public compilation of the expanded `F4a`, `F4b`, and `F4c` maps, their
+  Island A/B/C labels, constant-Jacobian checks, and rational collision
+  certificates.  The repository's resolvent and canonical-boundary analysis
+  is recorded separately in the [quartic-islands audit](../../extended-geometry/EXTERNAL_QUARTIC_ISLANDS.md).
 - [Dean Cureton, `deancureton/jacobian`](https://github.com/deancureton/jacobian),
   pinned here at commit
   [`0d4a9212d874226ad81ce5a926becddfa94e6a88`](https://github.com/deancureton/jacobian/commit/0d4a9212d874226ad81ce5a926becddfa94e6a88):

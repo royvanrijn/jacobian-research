@@ -83,6 +83,32 @@ credits the public post for the projective marked-root formulation. This
 audit has not established priority for that formulation, and the repository
 makes no such claim.
 
+## Juntang Zhuang's quartic compilation
+
+On 21 July 2026, Juntang Zhuang published
+[`jzkay12/jacobian_conjecture`](https://github.com/jzkay12/jacobian_conjecture)
+with a PDF titled *Explicit Polynomial Maps with Constant Jacobian and
+Verified Collisions* and parallel Python and Wolfram Language checkers.  This
+audit pins commit
+[`1ff68e870f66afec8c6611f910fcc8f5522fdbce`](https://github.com/jzkay12/jacobian_conjecture/commit/1ff68e870f66afec8c6611f910fcc8f5522fdbce).
+The source names three quartic examples `F4a`, `F4b`, and `F4c`, labels them
+Islands A, B, and C, displays their expanded rational-coefficient maps, and
+checks their constant Jacobians and listed rational collisions.  The PDF is
+authored by Juntang Zhuang and says it was inspired by Levent Alpöge's public
+post.
+
+This repository credits Zhuang for that public compilation, notation, and
+the external finite certificates.  No license file was present at the pinned
+commit, so no upstream source code or prose is copied here.  This audit does
+not infer discovery priority for
+the individual quartic formulas.  The local integration does not copy the
+upstream checker: it reconstructs the maps from compact formulas and derives
+their weighted-seed resolvents and canonical boundaries independently.  The
+result is the [quartic-islands audit](../../extended-geometry/EXTERNAL_QUARTIC_ISLANDS.md):
+all three have degree four and `S_4` monodromy; Island A is the canonical
+triple-zero seed, while B and C are split seeds with extra roots `3` and
+`-1/2`; none is a cancellation `(m,r,h)` normal form.
+
 ## Not yet located
 
 - the original Fable conversation or full prompt;

@@ -53,6 +53,7 @@ verify-theorems:
 
 verify-master:
 	$(SYSTEM_PYTHON) scripts/audit_boundary_exhaustion_independent.py
+	$(SYSTEM_PYTHON) scripts/audit_thick_intersection_local.py
 	$(PYTHON) scripts/verify_master_universal.py
 	$(PYTHON) scripts/verify_master_instances.py
 	$(PYTHON) scripts/verify_resolvent_ramification_signature.py
@@ -77,6 +78,7 @@ verify-regressions:
 	$(PYTHON) scripts/verify_quartic_weighted_map.py
 	$(PYTHON) scripts/verify_quartic_discriminant.py
 	$(PYTHON) scripts/verify_quartic_monodromy.py
+	$(PYTHON) scripts/verify_external_quartic_islands.py
 	$(PYTHON) scripts/verify_quartic_c0_fibers.py
 	$(PYTHON) scripts/verify_quartic_nonproperness_paths.py
 	$(PYTHON) scripts/verify_quartic_properness_converse.py

@@ -39,6 +39,7 @@ expected = [
     "Degree-twelve local singularity",
     "Effective finite-field Chebotarev law",
     "Explicit quartic weighted model",
+    "External quartic-island classification",
     "Stable normal-form consequences",
     "Dicritical compactification",
     "Cancellation construction",

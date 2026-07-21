@@ -1,0 +1,112 @@
+\section{The geometric counterexample}\label{sec:geometric-construction}
+
+Let $k$ be a field of characteristic zero.  Consider the finite flat
+degree-three marking morphism
+\[
+ \pi:\P^1\times\operatorname{Sym}^2(\P^1)
+ \longrightarrow\operatorname{Sym}^3(\P^1),\qquad
+ (x,Q)\longmapsto x+Q.
+\]
+Its ramification divisor is
+\[
+ D=\{(x,Q):Q\text{ contains }x\}.
+\]
+Choose $0,\infty\in\P^1$ and let $H\subset\operatorname{Sym}^3(\P^1)$ be
+the hyperplane whose equation on the affine line
+$\P^1\setminus\{\infty\}$ is
+\begin{equation}\label{eq:zero-sum-hyperplane}
+ x+y+z=0.
+\end{equation}
+On the small diagonal this becomes $3x=0$; after projective closure the
+remaining intersection multiplicity two lies at $\infty$.  Thus $H$ is
+tangent but not osculating to the twisted cubic of triple points.
+
+Set
+\[
+ E=\pi^{-1}(H),\qquad
+ U=\bigl(\P^1\times\operatorname{Sym}^2(\P^1)\bigr)\setminus(D\cup E),
+ \qquad Y=\operatorname{Sym}^3(\P^1)\setminus H.
+\]
+Since $H$ is a hyperplane in $\P^3\simeq\operatorname{Sym}^3(\P^1)$,
+$Y\simeq\A^3$.
+
+\subsection{The auxiliary conic}
+
+For fixed $x$, let $D_x$ and $E_x$ be the lines cut out by $D$ and $E$ in
+$\{x\}\times\operatorname{Sym}^2(\P^1)$.  If
+$\Gamma=\{2t:t\in\P^1\}$ is the Veronese conic, then $D_x$ is tangent to
+$\Gamma$ at $2x$, while the $E_x$ form the pencil through
+$p_\infty=2\infty$.  Define
+\[
+ \tau(x)=-x/2,\qquad \alpha=\tau^{-1},\qquad
+ h(x)=D_x\cap E_x=x+\alpha(x),\quad \alpha(x)=-2x,
+\]
+where the last plus sign denotes addition of effective divisors.  The image
+$C=h(\P^1)$ is a smooth conic, and the boundary lines become its chords
+\begin{equation}\label{eq:auxiliary-chords}
+ E_x=\overline{h(x)p_\infty},\qquad
+ D_x=\overline{h(x)h(\tau(x))},
+\end{equation}
+with coincident endpoints interpreted as tangency
+\cite{rezchikov-geometric}.
+
+\begin{proposition}[affine source]\label{prop:geometric-affine-source}
+The residual-intersection construction gives $U\simeq\A^3$.
+\end{proposition}
+
+\begin{proof}
+For $(x,Q)\in U$, the line $\overline{h(x)Q}$ has a second intersection
+\[
+ \rho(x,Q)\in C.
+\]
+This varies regularly, with tangency counted twice.  By
+\eqref{eq:auxiliary-chords}, the value $p_\infty$ occurs exactly on the
+removed divisor $E$, so $\rho$ takes values in
+$C\setminus\{p_\infty\}\simeq\A^1$.
+
+For a residual point $s$, the removed divisor $D$ excludes exactly the one
+marked point satisfying $s=h(\tau(x))$.  Hence
+\[
+ B=\{(x,s)\in\P^1\times(C\setminus\{p_\infty\}):
+          s\ne h(\tau(x))\}
+\longrightarrow C\setminus\{p_\infty\}
+\]
+is the complement of a section in a $\P^1$-bundle.  It is a torsor under a
+line bundle; both the line bundle and torsor are trivial on $\A^1$, so
+$B\simeq\A^2$.
+
+For fixed $(x,s)\in B$, the point $Q$ varies on
+$\overline{h(x)s}\setminus\{h(x)\}\simeq\A^1$.  This is again the
+complement of a section in a $\P^1$-bundle.  Its associated line bundle and
+torsor are trivial on $B\simeq\A^2$.  Therefore
+\[
+ U\longrightarrow B\longrightarrow\A^1,
+ \qquad U\simeq\A^3.\qedhere
+\]
+\end{proof}
+
+\begin{theorem}[geometric counterexample]\label{thm:geometric-counterexample}
+After choosing affine-space identifications, the restriction of $\pi$ gives
+an etale, generically three-to-one morphism
+\[
+ \A^3\simeq U\longrightarrow Y\simeq\A^3.
+\]
+Its Jacobian determinant in these coordinates is a nonzero constant.  In
+particular it is not an isomorphism and, after base change to an algebraic
+closure, is not injective.
+\end{theorem}
+
+\begin{proof}
+The map $\pi$ is the finite flat cover that marks one point of an effective
+divisor of degree three.  Its ramification divisor is $D$, so its restriction
+to $U$ is etale.  A divisor with three distinct points has three markings;
+hence the restriction has generic degree three.  Proposition
+\ref{prop:geometric-affine-source} and the identification $Y\simeq\A^3$
+give the displayed affine morphism.  Its Jacobian determinant is a unit in a
+polynomial ring and is therefore a nonzero constant.
+\end{proof}
+
+This proves the existence of the counterexample without choosing polynomial
+coordinates.  The next two sections give a compact explicit formula and then
+certify, including at the projective root at infinity, that it is a coordinate
+realization of this geometric morphism.

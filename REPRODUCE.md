@@ -48,6 +48,18 @@ make verify-master
 This runs the construction, parameter arithmetic, boundary, monodromy, and
 current-ansatz rigidity regressions.
 
+## External quartic islands
+
+Juntang Zhuang's pinned `F4a`, `F4b`, and `F4c` examples have an independent
+compact reconstruction and canonical-boundary audit:
+
+```bash
+.venv/bin/python scripts/verify_external_quartic_islands.py
+```
+
+This command is also part of `make verify-regressions`.  It requires no
+network access and does not copy or execute the upstream checker.
+
 ## Complete active suite
 
 ```bash

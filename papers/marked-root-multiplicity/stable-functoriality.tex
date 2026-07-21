@@ -1,0 +1,150 @@
+\section{Stable functoriality}
+
+The following proposition records the normalization statement underlying
+stabilization.  It is independent of the two explicit families.
+
+\begin{proposition}[normalization and boundary under stabilization]
+\label{prop:stable-normalization}
+Let $Y$ be a normal integral affine variety over $\C$, let $L/k(Y)$ be a
+finite extension, and put $X=\Norm_Y(L)$.  Let $U\subset X$ be a dense open
+and $\partial=(X\setminus U)_{\mathrm{red}}$.  For $s\ge0$, write
+\[
+ Y_s=Y\times\A^s,\qquad U_s=U\times\A^s,
+ \qquad L_s=L(t_1,\ldots,t_s).
+\]
+Then there is a canonical isomorphism over $Y_s$
+\[
+ \Norm_{Y\times\A^s}\bigl(L(t_1,\ldots,t_s)\bigr)
+ \simeq X\times\A^s.                                    \tag{5.1}
+\]
+In particular, taking $L=k(U)$ and $X=\overline X_F$ gives
+\[
+ \Norm_{Y\times\A^s}\bigl(k(U)(t_1,\ldots,t_s)\bigr)
+ \simeq\overline X_F\times\A^s.
+\]
+Under (5.1) the following statements hold.
+\begin{enumerate}
+\item The reduced boundary is
+\[
+ (X\times\A^s\setminus U_s)_{\mathrm{red}}
+ =\partial\times\A^s,                                   \tag{5.2}
+\]
+and its prime divisors are exactly $E\times\A^s$, with $E$ a
+prime divisor of $\partial$.
+\item If a boundary prime $E$ lies over a target prime divisor $Z$, the
+corresponding stabilized primes are $E_s=E\times\A^s$ and
+$Z_s=Z\times\A^s$.  Their divisorial valuations are the Gauss extensions
+\[
+ v_{E_s}|_L=v_E,\qquad v_{E_s}(t_i)=0,
+\]
+and
+\[
+ e(E_s/Z_s)=e(E/Z),\qquad f(E_s/Z_s)=f(E/Z).             \tag{5.3}
+\]
+\item Every reduced or scheme-theoretic multiple intersection commutes with
+stabilization.  In particular, for target divisors $Z_1,\ldots,Z_q$ and
+boundary divisors $E_1,\ldots,E_p$,
+\[
+ \bigcap_i(Z_i\times\A^s)
+ =\left(\bigcap_i Z_i\right)\times\A^s,
+ \qquad
+ \bigcap_j(E_j\times\A^s)
+ =\left(\bigcap_j E_j\right)\times\A^s                 \tag{5.4}
+\]
+as schemes.
+\item If $R$ is the affine coordinate ring of one of these intersections,
+then the stabilized ring is $R[t_1,\ldots,t_s]$ and
+\[
+ \Nil(R[t_1,\ldots,t_s])=\Nil(R)[t_1,\ldots,t_s].       \tag{5.5}
+\]
+Consequently reducedness and the exact nilpotency index of the nilradical
+are preserved.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+Write $Y=\operatorname{Spec}A$.  If $B$ is the integral closure of $A$ in
+$L$, then $X=\operatorname{Spec}B$.  The ring $B[t_1,\ldots,t_s]$ is finite
+and integral over $A[t_1,\ldots,t_s]$, has fraction field $L_s$, and is
+normal because a polynomial ring over a normal domain is normal.  If an
+element of $L_s$ is integral over $A[t_1,\ldots,t_s]$, it is also integral
+over $B[t_1,\ldots,t_s]$; normality then puts it in
+$B[t_1,\ldots,t_s]$.  Thus this polynomial ring is the full integral
+closure, proving (5.1).
+
+Let $I\subset B$ be the radical ideal defining $\partial$.  The ideal of
+$\partial\times\A^s$ is $I B[t_1,\ldots,t_s]$, and it is radical because its
+quotient $(B/I)[t_1,\ldots,t_s]$ is reduced.  If
+$I=\bigcap_\alpha\mathfrak p_\alpha$ is its minimal-prime decomposition, then
+\[
+ I B[t_1,\ldots,t_s]
+ =\bigcap_\alpha\mathfrak p_\alpha B[t_1,\ldots,t_s].
+\]
+Each extended ideal is prime, since
+$(B/\mathfrak p_\alpha)[t_1,\ldots,t_s]$ is a domain, and its height equals
+the height of $\mathfrak p_\alpha$.  This proves (5.2) and the asserted
+bijection of reduced boundary primes.
+
+Let $\mathfrak p_E\subset B$ and $\mathfrak p_Z\subset A$ be the height-one
+primes of $E$ and $Z$.  Their extensions are the height-one primes of $E_s$
+and $Z_s$.  Since normal height-one local rings are DVRs, their uniformizers
+may be chosen to be the same as before polynomial extension.  At the generic
+points the residue fields are
+\[
+ \kappa(E_s)=\kappa(E)(t_1,\ldots,t_s),\qquad
+ \kappa(Z_s)=\kappa(Z)(t_1,\ldots,t_s).
+\]
+The extended valuation is therefore the Gauss valuation, so its value group
+on $k(Y)^\times$ is unchanged and every $t_i$ has value zero.  The defining
+identity $v_E|_{k(Y)}=e(E/Z)v_Z$ gives the same ramification index after
+extension, while
+\[
+ [\kappa(E_s):\kappa(Z_s)]
+ =[\kappa(E):\kappa(Z)]
+\]
+gives the same residue degree.  This proves (5.3).
+
+Scheme intersection is defined by the sum of ideal sheaves.  On an affine
+chart, if the relevant ideals are $J_1,\ldots,J_q$, then after stabilization
+their sum is $(J_1+\cdots+J_q)[t_1,\ldots,t_s]$, and the quotient is
+\[
+ \bigl(A/(J_1+\cdots+J_q)\bigr)[t_1,\ldots,t_s].
+\]
+This proves (5.4), both downstairs and upstairs; taking radicals also proves
+the reduced version.
+
+Finally, put $N=\Nil(R)$.  The ring $(R/N)[t_1,\ldots,t_s]$ is reduced, so
+every nilpotent polynomial has all coefficients in $N$.  Conversely, the
+finitely many nilpotent coefficients of a polynomial generate a nilpotent
+ideal, so every element of $N[t_1,\ldots,t_s]$ is nilpotent.  This proves
+(5.5).  Moreover
+\[
+ \bigl(N[t_1,\ldots,t_s]\bigr)^a=N^a[t_1,\ldots,t_s]
+\]
+for every $a$.  Hence the least $a\ge1$ for which the nilradical has zero
+$a$-th power is unchanged, including the convention $a=1$ in the reduced
+case.
+\end{proof}
+
+\begin{lemma}[stable boundary signature]\label{lem:stable}
+For the maps in Lemma~\ref{lem:boundary}, the pair $(e_\Delta,\mu)$ of
+(2.1) is invariant under polynomial left--right equivalence and after
+adjoining any number of identity variables.
+\end{lemma}
+
+\begin{proof}
+A left--right equivalence identifies the corresponding finite function-field
+extensions over isomorphic targets.  Uniqueness and functoriality of
+normalization identify the finite covers, carry the distinguished affine
+open to the distinguished affine open, and preserve boundary valuations,
+their $e,f$ labels, and scheme-theoretic target intersections.  The intrinsic
+ramification marking from Lemma~\ref{lem:boundary} prevents the two target
+vertices from being exchanged.
+
+For stabilization, Proposition~\ref{prop:stable-normalization} identifies the
+normalization and the distinguished open pair, preserves all reduced
+boundary primes and their valuation labels, and base-changes the marked
+target intersection scheme.  Its final assertion preserves reducedness and
+the exact nilpotency index.  Thus both entries of $(e_\Delta,\mu)$ are
+unchanged.
+\end{proof}
