@@ -7,7 +7,7 @@ universal root cover back to an affine pencil, normalizes it, and retains the
 open on which the marked root reconstructs a source point.
 
 This note is a synthesis.  The target-side quotient statement is proved
-precisely in [MASTER_QUOTIENT_THEOREM.md](../../experimental/transfer-and-cancellation/MASTER_QUOTIENT_THEOREM.md); only
+precisely in [MASTER_QUOTIENT_THEOREM.md](../transfer-all-k/MASTER_QUOTIENT_THEOREM.md); only
 its closed-immersion upgrade across all collision strata remains conjectural.
 The ambient multiplication maps, their torus-normalized hyperplane slices,
 the uniqueness of the cubic affine complement, and the obstruction to the
@@ -198,7 +198,7 @@ be Gorenstein.  They are flat degenerations of the squarefree subset algebra,
 not literal tensor products of dual numbers.  The equality
 `Z_k^aff=Z_k` says that permitting an affine difference between two
 factorizations introduces no additional local structure for any block.  See
-[ALL_K_TRANSFER_BLOCK_THEOREM.md](../../experimental/transfer-and-cancellation/ALL_K_TRANSFER_BLOCK_THEOREM.md).
+[ALL_K_TRANSFER_BLOCK_THEOREM.md](../transfer-all-k/ALL_K_TRANSFER_BLOCK_THEOREM.md).
 
 ## 5. The source-side construction
 

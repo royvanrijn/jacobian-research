@@ -394,7 +394,7 @@ This proves the conclusion asserted informally in
 resolvent indices are not enough; the proof requires their identification
 with the canonical boundary primes.
 
-### The `r=1` classification problem
+### The `r=1` boundary-intersection obstruction
 
 Let `r=1`, `m>1`, so `N=m+2`.  The presently computed intrinsic data agree
 with a generic degree-`N` weighted seed:
@@ -405,27 +405,37 @@ with a generic degree-`N` weighted seed:
 - `N-3=m-1` unramified geometric boundary primes over one additional target
   divisor, with total loss `m-1`.
 
-Thus the resolvent--ramification signature developed here gives **no
-obstruction** for `C24_(m,1)`.  The case `m=1` is explicitly C01 after the
-linear changes already recorded in the master construction.  For `m>1`, no
-polynomial left--right transformation is known, and no stronger invariant in
-this repository currently separates the maps.
-
-A precise next condition is to decide whether there are polynomial target
-coordinates identifying the two nonproperness components together with an
-isomorphism of the finite normal pairs
+Thus the numerical part of the resolvent--ramification signature gives no
+obstruction.  The reduced intersection of the two distinguished target
+components does.  On `P=0`, the C24 critical equation gives `T=Q^(-m)` and
+its critical value gives
 
 \[
- (\bar X_{C24},X)\cong(\bar X_{G_H},A^3)                 \tag{19}
+ 2RQ^m-C=0.
 \]
 
-whose restriction to the affine opens is induced by a polynomial source
-automorphism.  Equality of the tables above is necessary but not sufficient:
-it omits conductor ideals, intersections of boundary primes over
-`Delta cap V(P)`, and the filtered valuation semigroups
-`v_E(k[X]\setminus0)`.  Computing any one of those structures is a concrete
-route to an obstruction; constructing (19) with polynomial restrictions is a
-route to an equivalence.
+The full saturated discriminant also has the closure component `Q=0`, so the
+reduced C24 intersection is `A^1 disjoint-union G_m`.  For a generic weighted
+primitive
+`H(W)=W^2J(W)`, the saturated discriminant trace on `C=0` is, up to a nonzero
+scalar,
+
+\[
+ B^2-4H_2cA=0,
+\]
+
+where `H_2` is the coefficient of `W^2`.  This intersection is `A^1`.  The
+two target components are intrinsically distinguished by their ramification
+data, so a target automorphism arising from a left--right equivalence would
+have to identify the intersections.  One is disconnected and the other is
+connected.  The
+complete uniform argument, including stabilization, is in
+[BOUNDARY_INTERSECTION_OBSTRUCTION.md](BOUNDARY_INTERSECTION_OBSTRUCTION.md).
+
+Therefore `C24_(m,1)` is not polynomially left--right equivalent, even
+stably, to a generic degree-`m+2` weighted seed for every `m>1`.  The case
+`m=1` remains the explicit C01 identification already recorded in the master
+construction.
 
 ## 7. Concise comparison
 
@@ -437,8 +447,9 @@ Here “generic C04” means (8), and `n=N` when it is compared with C24.
 | generic C04, degree `n` | `n` | `S_n` | `1^(n-1)` | one prime, `e=2`, loss 2 | `n-3` geometric `e=1` primes; loss `n-3` |
 | C24 `(m,r)` | `r(m+1)+1` | `S_N` if `r` odd; `A_N` if `r` even | `r^(m+1)` | one prime, `e=r+1`, loss `r+1` | `mr-1` geometric `e=1` primes; loss `mr-1` |
 
-The table proves inequivalence for `r>=2`.  For `r=1` every displayed entry
-matches generic C04, leaving the polynomial equivalence question open.
+The table proves inequivalence for `r>=2`.  For `r=1` the displayed numerical
+entries match generic C04, while the boundary-intersection theorem proves
+inequivalence for `m>1`.
 
 ## External inputs and hypotheses
 

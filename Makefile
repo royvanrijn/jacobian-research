@@ -34,6 +34,7 @@ verify-theorems:
 	$(PYTHON) scripts/verify_weighted_seed_schema.py
 	$(PYTHON) scripts/verify_weighted_seed_theorem.py
 	$(PYTHON) scripts/verify_weighted_marked_root_model.py
+	$(SYSTEM_PYTHON) scripts/audit_c04_independent.py
 	$(PYTHON) scripts/verify_universal_discriminant_incidences.py
 	$(PYTHON) scripts/verify_contact_partition_strata.py
 	$(PYTHON) scripts/verify_uniform_exceptional_seed_theorem.py
@@ -42,6 +43,7 @@ verify-theorems:
 	$(PYTHON) scripts/verify_unique_omitted_value.py
 	$(PYTHON) scripts/verify_component_normalization.py
 	$(PYTHON) scripts/verify_degree12_branch_intersection.py
+	$(SYSTEM_PYTHON) scripts/audit_c12_independent.py
 	$(PYTHON) scripts/verify_dicritical_divisors.py
 	$(PYTHON) scripts/verify_c16_blowup_geometry.py
 	$(PYTHON) scripts/classify_transfer_block_k2.py
@@ -57,9 +59,15 @@ verify-master:
 	$(PYTHON) scripts/verify_master_universal.py
 	$(PYTHON) scripts/verify_master_instances.py
 	$(PYTHON) scripts/verify_resolvent_ramification_signature.py
+	$(PYTHON) scripts/verify_boundary_intersection_obstruction.py
+	$(PYTHON) scripts/verify_parameter_irreducibility.py
+	$(PYTHON) scripts/verify_parameter_discriminant.py
+	$(PYTHON) scripts/verify_parameter_galois_groups.py
+	$(PYTHON) scripts/verify_parameter_galois_jordan.py
 	$(PYTHON) scripts/verify_generalized_cancellation.py
 
 verify-regressions:
+	$(SYSTEM_PYTHON) scripts/audit_c14_independent.py
 	$(PYTHON) scripts/verify_generic_discriminant_geometry.py
 	$(PYTHON) scripts/verify_canonical_family_image.py
 	$(PYTHON) scripts/verify_deformed_seed_boundary.py
@@ -99,6 +107,7 @@ verify-foundations: verify-core
 	$(PYTHON) scripts/verify_weighted_seed_schema.py
 	$(PYTHON) scripts/verify_weighted_seed_theorem.py
 	$(PYTHON) scripts/verify_weighted_marked_root_model.py
+	$(SYSTEM_PYTHON) scripts/audit_c04_independent.py
 
 verify-foundations-formal: verify-foundations verify-lean-c01
 

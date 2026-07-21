@@ -251,13 +251,48 @@ factor of (13) give Galois-conjugate maps.  The displayed fields are:
 - `M_(2,2)`: `Q(q)` for a root of the displayed irreducible quartic; the four
   maps are conjugate and its splitting-field group is `D_4`.
 
-Uniform irreducibility and Galois group of (13) are **not** claimed.  The
-reciprocal is a truncated binomial polynomial, whose general irreducibility is
-a genuine arithmetic problem; see
+Uniform irreducibility and Galois group of (13) are **not** claimed.  An
+entire coordinate column is known: the classical truncated-binomial theorem
+proves (13) irreducible for every `(m,r)=(1,r)`.  In addition, if
+`mr+r+1=p^k` and
+`v_p(mr)=k-1`, then (13) is Eisenstein at `p`.  In particular it is
+irreducible whenever `mr+r+1` is prime.  See the exact
+[prime-power proof](PARAMETER_IRREDUCIBILITY.md).
+
+A second criterion handles composite values missed by Eisenstein.  If both
+`mr+1` and `mr+r+2` are prime and `mr+r+2` is primitive modulo `mr+1`, then
+reduction modulo `mr+r+2` turns (13) into the irreducible cyclotomic
+polynomial `Phi_(mr+1)`.  The same note proves this criterion.
+
+A third criterion uses the affine-reciprocal form
+`sum_(j=0)^(mr) binom(j+r,r)x^j`.  Its roots lie strictly inside the unit
+disk, so it is irreducible whenever its leading coefficient
+`binom(mr+r,r)` is prime.  In particular this proves every `r=1` case with
+`m+1` prime, including cases missed by both preceding criteria.
+
+The reciprocal is a truncated binomial polynomial, whose remaining general
+irreducibility is a genuine arithmetic problem; see
 [Filaseta--Kumchev--Pasechnik](https://arxiv.org/abs/math/0409523),
 [Khanduja--Khassa--Laishram](https://arxiv.org/abs/1306.0758), and the more
 recent [Laishram--Yadav](https://digitalcommons.isical.ac.in/journal-articles/4864/).
-The exact scripts factor the displayed cases only.
+For every pair with `mr<=30`, the exact regression now constructs a
+modular factor-degree sieve whose only surviving rational factor degrees are
+zero and the full degree.  This is an exact finite-range irreducibility proof,
+not a uniform theorem outside the four subfamilies above.
+
+The parameter-polynomial Galois groups are now classified exactly for every
+`mr<=30`; see [PARAMETER_GALOIS_GROUPS.md](PARAMETER_GALOIS_GROUPS.md).  Most
+are symmetric, but `(2,2)` has group `D_4`, `(2,3)` and `(6,1)` have the
+transitive degree-six `S_5=PGL_2(F_5)` action, `(4,3)` has group `A_12`, and
+`(2,8)` and `(16,1)` have group `A_16`, `(17,1)` has group `A_17`, and
+`(1,24)` and `(12,2)` have group `A_24`.  Thus no uniform full-symmetric
+assertion is made beyond that table.
+The exact [parameter-discriminant formula](PARAMETER_DISCRIMINANT.md) proves
+uniform separability and gives a complete rational-square criterion for all
+`m,r`.  Its even-degree square locus is completely parametrized and contains
+an explicit infinite family for each fixed `r`, so alternating containment is
+not a sporadic low-degree effect.  Only irreducibility and the permutation-
+group certificates remain finite-range inputs in the Galois table.
 
 ## 4. Generic fiber degree and exact reconstruction
 
@@ -382,17 +417,20 @@ resolvent pole is the finite source divisor `A=0`.  It also proves
  \end{cases}
 \]
 
-For `r=1`, all entries presently computed in the intrinsic signature agree
-with a generic weighted seed of degree `m+2`.  No equivalence or obstruction
-is currently known for `m>1`.
+For `r=1`, all numerical entries in the intrinsic signature agree with a
+generic weighted seed of degree `m+2`.  The stronger
+[boundary-intersection invariant](BOUNDARY_INTERSECTION_OBSTRUCTION.md)
+separates them for every `m>1`: the two distinguished target components meet
+in `A^1 disjoint-union G_m` for C24 and in `A^1` for the weighted seed.
 
 The precise conclusion is therefore:
 
 - the master family strictly extends the original cubic construction;
 - both constructions are pullbacks of the universal marked-root incidence;
-- neither family is presently proved to contain the entire other weighted
-  family; and
-- classification up to polynomial source/target equivalence remains open.
+- no noncubic C24 member is polynomially left--right equivalent, even stably,
+  to a generic weighted seed; and
+- every allowed tail deformation is removed by a polynomial source shift in
+  `z`.
 
 ## 7. Formal closure operations
 
@@ -432,10 +470,8 @@ Not proved uniformly:
 
 - irreducibility or the Galois group of `M_(m,r)` over `Q`;
 - the arithmetic minimal collision field for every pair;
-- equivalence or inequivalence among arbitrary tail deformations
-  `h_q+A^(r+1)g`; and
-- equivalence or inequivalence of `C24_(m,1)`, `m>1`, and generic degree
-  `m+2` weighted seeds; and
+- equivalence or inequivalence among distinct nonconjugate parameter roots
+  having the same intrinsic numerical signature; and
 - a global classification, up to polynomial coordinate equivalence and field
   descent, of all polynomial cancellation branches represented by
   `L_(m,r)`.
@@ -453,5 +489,16 @@ arithmetic and equivalence statements.
   collision polynomials for every displayed row;
 - `scripts/verify_resolvent_ramification_signature.py`: exact critical,
   infinity-chart, residue-degree and monodromy regressions for the four small
-  cases; and
+  cases;
+- `scripts/verify_boundary_intersection_obstruction.py`: exact degree-four
+  through degree-six regressions for the boundary intersections; and
+- `scripts/verify_parameter_irreducibility.py`: prime-power Eisenstein
+  certificates, cyclotomic and unit-disk criteria, and exact modular
+  degree-sieve certificates for `mr<=30`; and
+- `scripts/verify_parameter_discriminant.py`: closed discriminant formula and
+  uniform rational-square criterion; and
+- `scripts/verify_parameter_galois_groups.py`: complete exact parameter-
+  Galois classification for `mr<=6`; and
+- `scripts/verify_parameter_galois_jordan.py`: Frobenius--Jordan parameter-
+  Galois classification for `7<=mr<=30`; and
 - `scripts/generate_master_regression.py m r`: generator for a new pair.

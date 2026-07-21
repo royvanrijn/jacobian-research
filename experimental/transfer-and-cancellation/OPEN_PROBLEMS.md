@@ -1,4 +1,21 @@
-# Open problems
+# Status and open problems
+
+## Current open frontier
+
+The active questions are now sharply separated from completed milestones:
+
+1. classify polynomial left--right equivalence among maps attached to
+   distinct C24 parameter roots;
+2. prove or disprove irreducibility of `M_(m,r)` outside the known uniform
+   criteria and the exact range `mr<=30`;
+3. classify parameter Galois groups in all degrees and determine minimal
+   collision fields; and
+4. find the smallest relaxation of the completed two-weight coordinate
+   skeleton that can produce a genuinely new cancellation family.
+
+The generic-weighted-seed comparison, all allowed tail deformations,
+separability, the complete `m=1` irreducibility column, and the generalized
+mechanism inside the current ansatz are no longer open.
 
 ## Archived all-`k` transfer question
 
@@ -13,24 +30,23 @@ but that narrower question is frozen rather than used as a dependency.  The
 superseded programme and its exact historical regressions are preserved in
 [the archive](../../archive/transfer-all-k/).
 
-## Polynomial equivalence of `C24_(m,1)` and generic weighted seeds
+## Settled: `C24_(m,1)` versus generic weighted seeds
 
 Fix an algebraically closed characteristic-zero field and `m>1`.  Let
 `F_m:A^3 -> A^3` be a polynomial C24 cancellation map with `r=1`, including
 an arbitrary allowed tail `h_q(A)+A^2g(A)`.  Let `G_H` be a generic admissible
 weighted-seed map whose inverse degree is `n=m+2`.
 
-**Question.**  Do there exist polynomial automorphisms `alpha,beta` of
-`A^3` such that
+There do not exist polynomial automorphisms `alpha,beta` of `A^3` such that
 
 \[
- G_H=\beta\circ F_m\circ\alpha?
+ G_H=\beta\circ F_m\circ\alpha.
 \]
 
-The same question may be asked after adjoining the same number of identity
+for `m>1`; the same is true after adjoining the same number of identity
 coordinates.
 
-### What is known
+### Boundary-intersection obstruction
 
 The intrinsic data computed in
 [RESOLVENT_RAMIFICATION_SIGNATURE.md](RESOLVENT_RAMIFICATION_SIGNATURE.md)
@@ -42,39 +58,32 @@ agree:
 - `m-1` geometric unramified boundary primes over a second target divisor,
   with total loss `m-1`.
 
+The numerical data alone do not separate the maps.  However, the reduced
+intersection of the two intrinsically distinguished target components is
+`A^1 disjoint-union G_m` for C24 and `A^1` for a generic weighted seed.  The
+first is disconnected and the second is connected, and polynomial
+stabilization preserves that difference.  The complete proof is
+[BOUNDARY_INTERSECTION_OBSTRUCTION.md](BOUNDARY_INTERSECTION_OBSTRUCTION.md).
+
 For `m=1`, the explicit linear transformation in
 [MASTER_CANCELLATION_CONSTRUCTION.md](MASTER_CANCELLATION_CONSTRUCTION.md)
-identifies C24 with C01.  No transformation is known for `m>1`.  The
-ramification argument which settles `r>=2` supplies no obstruction here.
+identifies C24 with C01; there is no second boundary component to compare.
 
-### Exact unresolved condition
+## Settled: C24 tail deformations
 
-Let `bar(X)_F` and `bar(X)_G` be the normalizations of the target affine
-spaces in the two source function fields, with their canonical affine-source
-opens.  Left--right equivalence requires an isomorphism of finite normal
-pairs, after a polynomial target change,
+For fixed `(m,r,q)`, the construction permits every tail
+`h_q(A)+A^(r+1)g(A)`.  The inverse resolvent, monodromy, and target
+boundary-intersection data do not see `g` because the tails are already
+source-equivalent.  Replacing `h_q` by `h_q+A^(r+1)g` is exactly
+precomposition by the polynomial automorphism
 
 \[
- (\bar X_F,A^3)\simeq(\bar X_G,A^3),
+ (x,y,z)\longmapsto(x,y,z+y^{m+1}g(1+xy^m)).
 \]
 
-whose restriction to the affine opens is a polynomial source automorphism.
-The signature proves equality only of the generic codimension-one numerical
-data.  It does not compare:
+Thus tails do not define distinct polynomial left--right classes.
 
-1. conductor ideals and completed local rings where the discriminant meets
-   the second nonproperness component;
-2. intersection and specialization of the `m-1` unramified boundary primes;
-3. the filtered valuation semigroups `v_E(k[x,y,z]\setminus0)`;
-4. dependence of any of these data on the tail `g` or on the weighted seed
-   coefficients.
-
-An explicit polynomial pair `(alpha,beta)`, a mismatch in one of items 1--3,
-or a proof that the normal-pair isomorphism cannot restrict polynomially would
-settle the question.  Bounded symbolic agreement of discriminants or fiber
-counts is not sufficient for an all-`m` conclusion.
-
-## Nonmonomial solutions of the generalized cancellation equation
+## Settled inside the ansatz: generalized cancellation
 
 Use the notation of
 [GENERALIZED_CANCELLATION_MECHANISM.md](GENERALIZED_CANCELLATION_MECHANISM.md).
@@ -84,15 +93,48 @@ For `e=1`, every polynomial leading solution is controlled by
  I_n(q)=\int_0^1u\{1-q(1-u)\}^n\,du.
 \]
 
-A genuinely nonmonomial leading term requires a common root of `I_n` and
-`I_l` for distinct positive integers `n,l`.  No such common root occurs for
-`1<=n,l<=12`, but this is only a bounded exact computation.
+The generalized cancellation note proves more generally that, for every
+fixed `e>=1`, the spectral polynomials
 
-**Questions.** Are the polynomials `I_n` pairwise coprime in characteristic
-zero?  If not, does a common-root solution have an invertible linearization
-and a full cancellation jet with coefficients in `k[y]` rather than merely
-in `k[y,f(y)^(-1)]`?  Finally, is any resulting map inequivalent to a C24
-monomial member?
+\[
+ J_{N,e}(q)=\int_0^1u^e\{1-q(1-u)\}^Ndu.
+\]
 
-For `e>=2`, even the polynomial solutions of the leading functional equation
-are unclassified.  No existence claim for a new family is made.
+are pairwise coprime.  Consequently every polynomial leading solution has
+`f=c(y-alpha)^m` and `g_0=q(y-alpha)f`, and Hensel uniqueness makes its full
+jet a translated/scaled C24 jet.  The arbitrary `A^(e+1)` tail is removed by
+a polynomial source automorphism.  Thus there is no nonmonomial branch, and
+no new polynomial-equivalence class, anywhere in the ansatz of that note.
+
+**Remaining question.** Which minimal relaxation of the coordinate skeleton
+(1)--(2) still admits a finite cancellation operator but escapes the
+rising-factorial spectral coprimality argument?  Equivalence among distinct
+C24 parameter branches remains a separate classification problem.
+
+## Parameter-polynomial arithmetic
+
+The [prime-power Eisenstein theorem](PARAMETER_IRREDUCIBILITY.md) proves
+`M_(m,r)` irreducible whenever
+
+\[
+ mr+r+1=p^k,\qquad v_p(mr)=k-1.
+\]
+
+This includes every pair for which `mr+r+1` is prime and shows that its maps
+form one arithmetic Galois-conjugacy class.  It does not settle
+irreducibility for arbitrary `(m,r)`.  Classical truncated-binomial theory
+does settle the complete column `m=1`.  A second theorem in the same note
+proves irreducibility when `mr+1` and `mr+r+2` are prime and `mr+r+2` is
+primitive modulo `mr+1`; reduction then gives `Phi_(mr+1)`.  A third theorem
+uses the unit-disk transform to cover `binom(mr+r,r)` prime, including every
+`r=1` case with `m+1` prime.  The remaining questions are the other
+truncated-binomial cases beyond the exact modularly certified range
+`mr<=30`, higher Galois groups, and polynomial left--right equivalence
+between conjugate roots over an algebraic closure.  The
+[closed discriminant formula](PARAMETER_DISCRIMINANT.md) already settles
+separability and alternating containment uniformly; square discriminants
+occur in an explicit infinite family for every fixed `r`.  The exact
+[degree-thirty table](PARAMETER_GALOIS_GROUPS.md) shows that full symmetric
+groups coexist with `D_4`, the exceptional degree-six `S_5` action, and
+alternating groups `A_12`, `A_16`, `A_17`, and `A_24`, so the higher-group
+problem must allow genuine exceptional families.

@@ -89,7 +89,7 @@ The weighted C04 construction replaces the cubic by
 | C01 | Explicit map, determinant, and collision | Verified independently | [Core proof](verified/FOUNDATIONAL_GEOMETRY.md) | Two exact implementations and a pinned Lean 4 proof |
 | C02 | Marked-root realization | Proved internally | [Marked-root model](verified/MARKED_ROOT_MODEL.md) | Exact two-chart verification |
 | C03 | Image, fibers, and nonproperness | Proved internally | [Image and nonproperness](verified/IMAGE_AND_NONPROPERNESS.md) | Exact boundary scripts |
-| C04 | Weighted marked-root family and `S_n` monodromy | Proved internally | [Weighted theorem](verified/WEIGHTED_SEED_THEOREM.md) | Bounded symbolic regressions |
+| C04 | Weighted marked-root family and `S_n` monodromy | Verified independently | [Weighted theorem](verified/WEIGHTED_SEED_THEOREM.md) | Clean-room proof and standard-library checker |
 
 The complete four-status ledger is [CLAIMS.md](CLAIMS.md).
 

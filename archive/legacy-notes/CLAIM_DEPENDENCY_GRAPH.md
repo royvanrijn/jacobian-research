@@ -270,20 +270,25 @@ chart.
 cancellation, structural determinant, reconstruction identities,
 normalization formulas, primitivity, and local charts.  Fixed seeds through
 bounded degree are regressions only.
+`audit_c04_independent.py` separately checks polynomiality, Jacobians,
+incidence, and reconstruction using only standard-library sparse-polynomial
+arithmetic and no project weighted-model code.
 
 **Prose.**  [FOUNDATIONAL_GEOMETRY.md](../../verified/FOUNDATIONAL_GEOMETRY.md) collects the
 independent proof spine; [WEIGHTED_SEED_THEOREM.md](../../verified/WEIGHTED_SEED_THEOREM.md)
 proves the uniform pencil and algebraic monodromy theorem; and
 [WEIGHTED_MARKED_ROOT_MODEL.md](../../verified/WEIGHTED_MARKED_ROOT_MODEL.md) proves the
 normalized global reconstruction statement.
+[C04_INDEPENDENT_AUDIT.md](../../verified/C04_INDEPENDENT_AUDIT.md) gives a
+clean-room derivation and an alternative vertical-line branch-cycle proof of
+`S_n`.
 
 **External theorems.**  Gauss's lemma, normalization and Zariski's Main
 Theorem, Zariski--Nagata purity, and triviality of finite etale covers of
 affine space over an algebraically closed characteristic-zero field.
 
-**Obligations.**  The construction and monodromy hypotheses are now explicit,
-but the all-degree proof has no formal artifact or independent second proof
-environment.
+**Obligations.**  A proof-assistant artifact is still absent, but the
+all-degree proof now has an independent second derivation and implementation.
 
 ## C05 — generic discriminant geometry
 
@@ -567,6 +572,9 @@ two-minimal-prime fiber-product lemma.
 **Computation.**  `verify_degree12_branch_intersection.py` checks the rational
 admissible witness, differential ranks, second jets, local Gröbner bases,
 affine-equality reduction, and the upper/lower length-four sandwich.
+`audit_c12_independent.py` replaces the sixfold-block Groebner step by an
+elementary triangular ideal proof and independently checks the two square
+directions and length-four algebra using only rational arithmetic.
 
 **Prose.**  [DEGREE12_LOCAL_SINGULARITY.md](../../experimental/geometry/DEGREE12_LOCAL_SINGULARITY.md)
 passes from those finite calculations to completed local rings, identifies
@@ -575,8 +583,9 @@ the fiber product, and computes the conductor.
 **External theorems.**  Excellence/reduced completion, formal implicit
 function theorem, and standard two-minimal-prime fiber-product facts.
 
-**Obligations.**  Independent CAS and local-algebra audit remains pending;
-the theorem is only generic along the stated dense open.
+**Obligations.**  An unrelated-CAS reproduction of the full tangent-rank
+matrices remains desirable; the theorem is only generic along the stated
+dense open.
 
 ## C13 — finite-field Chebotarev law
 
@@ -638,6 +647,9 @@ proofs.
 determinant, reconstruction, discriminant factorization and singularities,
 fiber tables, both nonproperness inclusions, properness converse, and
 monodromy.
+`audit_c14_independent.py` separately reconstructs the map, Jacobian,
+incidence, discriminant normalization, and key fiber identities with a
+dependency-free sparse-polynomial implementation.
 
 **Prose.**  [QUARTIC_WEIGHTED_GEOMETRY.md](../../experimental/geometry/QUARTIC_WEIGHTED_GEOMETRY.md)
 organizes the exact computations into the global image and boundary proof.
@@ -645,7 +657,8 @@ organizes the exact computations into the global image and boundary proof.
 **External theorems.**  None for the finite polynomial identities; only
 standard interpretations of the resulting exact cover data.
 
-**Obligations.**  Reproduction in an unrelated CAS remains pending.
+**Obligations.**  An unrelated-CAS reproduction of the singular-locus radical
+and every formal escape path remains desirable.
 
 ## C15 — stable normal-form consequences
 
@@ -780,7 +793,7 @@ coefficients.
 `verify_mixed_allocation_equalizer.py` retain the exact quadratic-cubic
 colength-sixteen audits.
 
-**Prose.**  [ALLOCATION_BRANCH_INTERSECTIONS.md](../../experimental/transfer-and-cancellation/ALLOCATION_BRANCH_INTERSECTIONS.md)
+**Prose.**  [ALLOCATION_BRANCH_INTERSECTIONS.md](../transfer-all-k/ALLOCATION_BRANCH_INTERSECTIONS.md)
 proves the arbitrary strong Hensel product, derives the signed product
 formulation, and kills the two shared affine coefficients before decomposing
 into local blocks.
@@ -862,7 +875,7 @@ Wronskian identity. Existing coincident-root eliminations and C17--C20
 transfer calculations are bounded regressions; none proves the all-degree
 statement.
 
-**Prose.**  [MASTER_QUOTIENT_THEOREM.md](../../experimental/transfer-and-cancellation/MASTER_QUOTIENT_THEOREM.md) proves
+**Prose.**  [MASTER_QUOTIENT_THEOREM.md](../transfer-all-k/MASTER_QUOTIENT_THEOREM.md) proves
 finiteness by weighted Newton coordinates, identifies every completed
 collision relation by Hensel products of C22 blocks, proves affine/strong
 equality by the global Wronskian, descends by completion, and obtains the
@@ -907,11 +920,11 @@ the conductor norms, confluent product rule, triangular norm generation,
 normalized compound bases, and binomial filtration ranks. C17, C19 and C20
 are independent exact low-degree models.
 
-**Prose.**  [ALL_K_TRANSFER_BLOCK_THEOREM.md](../../experimental/transfer-and-cancellation/ALL_K_TRANSFER_BLOCK_THEOREM.md)
+**Prose.**  [ALL_K_TRANSFER_BLOCK_THEOREM.md](../transfer-all-k/ALL_K_TRANSFER_BLOCK_THEOREM.md)
 proves affine/strong equality directly, identifies the formal block with the
 invariant Boolean model, deduces finite flatness by Reynolds splitting, and
 computes the collided Hilbert filtration using the regular representation.
-[C22_DEFORMATION_AUDIT.md](../../experimental/transfer-and-cancellation/C22_DEFORMATION_AUDIT.md) gives a clean-room proof
+[C22_DEFORMATION_AUDIT.md](../transfer-all-k/C22_DEFORMATION_AUDIT.md) gives a clean-room proof
 from the conductor ribbon and its divided-power symmetric product.
 
 **External theorems.**  For the first proof: reflection-group freeness, the
@@ -984,10 +997,13 @@ explicit collision of that full cardinality over an algebraic closure.  If
 `N=r(m+1)+1`, its geometric monodromy is `S_N` for odd `r` and `A_N` for even
 `r`.  Its canonical finite normalization has one discriminant boundary prime
 of ramification index and sheet loss `r+1`, and `mr-1` geometric unramified
-boundary primes over `P=0`.  Consequently `r>=2` is not polynomially
+boundary primes over `P=0`. Consequently `r>=2` is not polynomially
 left--right equivalent, even after adjoining identities, to a generic
-weighted seed.  For `r=1,m>1` the computed signature agrees with the generic
-weighted signature and equivalence remains open.
+weighted seed. For `r=1,m>1` the numerical signature agrees, but the reduced
+intersection of the two intrinsic target boundary components is disconnected
+for C24 and connected for a generic weighted seed; hence these maps are also
+inequivalent, even after stabilization. The remaining case `(m,r)=(1,1)` is
+the explicit C01 identification.
 
 **Depends on.** The elementary coordinate identities `s=x/A` and
 `D=1-s(Q-Ps)^m=A^(-1)`; the `A`-adic pole calculation; formal polynomial
@@ -1018,35 +1034,43 @@ and proves the monodromy and inequivalence theorems.
 second-order linear ODE at an ordinary point; finiteness and functoriality of
 normalization; Zariski's Main Theorem; extension theory of DVRs; tame branch
 cycles in characteristic zero; elementary Galois conjugacy and
-finite-separable extension facts. The cited truncated-binomial papers are
-context for an open arithmetic problem, not inputs to the proved theorem.
+finite-separable extension facts; Dedekind's factorization theorem; Jordan's
+prime-cycle theorem for primitive permutation groups; and the discriminant
+criterion for alternating containment.  The Khanduja--Khassa--Laishram
+truncated-binomial irreducibility theorem proves the complete C24 `m=1`
+column; the remaining cited truncated-binomial papers are context for the
+open general arithmetic problem.
+
+The C24 parameter discriminant is now computed uniformly by an elementary
+resultant argument, giving separability and the rational-square criterion for
+all `m,r`; the degree-thirty bound applies only to irreducibility and Galois-
+group classification.
 
 **Obligations.** Independent audit of the all-`m,r` cancellation and boundary
-proofs is pending. Uniform irreducibility and Galois groups of the parameter
-polynomial, minimal collision fields, equivalence of arbitrary tail
-deformations, equivalence of `C24_(m,1)` with generic weighted seeds for
-`m>1`, and a global arithmetic/coordinate classification of all polynomial
-cancellation branches remain open.
+proofs is pending. Uniform irreducibility and Galois groups beyond the exact
+degree-thirty parameter classification, minimal collision fields, equivalence
+among distinct parameter roots, and a global arithmetic/coordinate
+classification of all polynomial cancellation branches remain open.
 
 ## Cross-claim unresolved obligations
 
 The following obligations affect more than one node:
 
-1. No all-degree result C04--C11 or C16 has a proof-assistant artifact.
+1. C04 is independently verified but has no proof-assistant artifact; no
+   all-degree result C05--C11 or C16 has such an artifact.
 2. The algebraic-geometry compactifications in C05 and C16 need independent
    expert audits.
 3. The polynomial Mason--Stothers input to C07 and C10 needs a recorded
    primary-source hypothesis audit.
 4. C13's effective certificate and twist audit need an independent
    arithmetic-geometry review; its current uniform constants are coarse.
-5. Full conductors for exceptional-component intersections remain to be
-   tabulated, but C18 proves all affine allocation equalizers uniformly.
-6. C21 proves the affine-rigidity closed immersion; an independent audit of
-   its completed Boolean descent remains desirable.
-7. C23 rules out the first higher consecutive candidate arithmetically; a
+5. C12's full tangent matrices and C14's complete singular-radical and
+   escape-path suite still merit reproduction in an unrelated CAS.
+6. C23 rules out the first higher consecutive candidate arithmetically; a
    uniform classification of higher affine factorization complements remains
    open.
-8. C24 reduces cancellation to finite jets and its resolvent signature rules
-   out generic weighted equivalence for `r>=2`, but the arithmetic
-   classification and the `r=1,m>1` coordinate-equivalence problem remain
-   open.
+7. C24's ramification and boundary-intersection invariants rule out generic
+   weighted equivalence for every noncubic member. Uniform parameter
+   irreducibility and Galois groups, minimal collision fields, equivalence
+   among distinct parameter roots, and classification beyond the two-weight
+   skeleton remain open.

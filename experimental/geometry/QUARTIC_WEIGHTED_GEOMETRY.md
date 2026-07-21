@@ -52,6 +52,10 @@ G(1,0,0)=G(-1,0,2)=(0,0,1).
 - [x] Generic nodal-cuspidal discriminant theorem and generic surjectivity in
   inverse degree at least five.
 
+A dependency-free reconstruction of the map, determinant, inverse quartic,
+discriminant normalization, and key fiber identities is recorded in
+[C14_INDEPENDENT_AUDIT.md](C14_INDEPENDENT_AUDIT.md).
+
 ## Quartic inverse on `C!=0`
 
 For target `(A,B,C)`, the inverse equation is

@@ -7,6 +7,7 @@ instance verifier, and the command-line regression generator.
 """
 from __future__ import annotations
 
+import math
 from dataclasses import dataclass
 
 import sympy as sp
@@ -43,6 +44,45 @@ def parameter_polynomial(m: int, r: int, q: sp.Symbol) -> sp.Expr:
         (-1) ** j * sp.binomial(total, j) * q ** (n - j)
         for j in range(n + 1)
     ))
+
+
+def parameter_discriminant(m: int, r: int) -> sp.Integer:
+    """Return the closed-form discriminant of M_{m,r}."""
+    n = m * r
+    total = n + r + 1
+    leading_reciprocal = sp.binomial(n + r, r)
+    return sp.Integer(
+        (-1) ** (n * (n - 1) // 2)
+        * (r + 1)
+        * total ** (n - 1)
+        * leading_reciprocal ** (n - 2)
+    )
+
+
+def parameter_discriminant_is_square(m: int, r: int) -> bool:
+    """Decide whether the parameter discriminant is a square in QQ."""
+    n = m * r
+    if n % 4 not in (0, 1):
+        return False
+    if n % 2 == 0:
+        square_part = (r + 1) * (n + r + 1)
+    else:
+        square_part = (r + 1) * sp.binomial(n + r, r)
+    return bool(sp.integer_nthroot(int(square_part), 2)[1])
+
+
+def even_square_discriminant_family(r: int, k: int) -> int:
+    """Return an m in an infinite square-discriminant family for fixed r."""
+    if r < 1 or k < 1:
+        raise ValueError("r and k must be positive")
+    factors = sp.factorint(r + 1)
+    squarefree = math.prod(
+        int(prime) for prime, exponent in factors.items() if exponent % 2
+    )
+    square_root = sp.integer_nthroot((r + 1) // squarefree, 2)
+    assert square_root[1]
+    a = int(square_root[0])
+    return 4 * squarefree * k * (a + r * k)
 
 
 def phi(m: int, r: int, A: sp.Symbol, H: sp.Expr) -> sp.Expr:

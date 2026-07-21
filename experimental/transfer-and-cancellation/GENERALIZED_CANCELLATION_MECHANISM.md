@@ -298,18 +298,95 @@ The same reduction works after translating and scaling `y`:
 `g=(y-alpha)f(y)h(A)`.  These members are polynomially conjugate to the
 corresponding C24 maps and are not new equivalence classes.
 
-## 4. A complete leading-order description when `e=1`
+## 4. Classification of polynomial leading solutions
 
-For `n>=1`, set
+For `N>=0`, introduce the spectral polynomials
 
 \[
- I_n(q)=\int_0^1u\{1-q(1-u)\}^n du.                     \tag{12}
+ J_{N,e}(q)=\int_0^1u^e\{1-q(1-u)\}^Ndu
+ ={1\over e+1}\,{}_2F_1(-N,1;e+2;q).                    \tag{12}
+\]
+
+Equivalently,
+
+\[
+ J_{N,e}(q)=
+ \sum_{j=0}^N(-1)^j{\binom Nj\over
+ (e+j+1)\binom{e+j}{j}}q^j.                             \tag{13}
+\]
+
+### Theorem 4 (all leading polynomial solutions)
+
+Suppose `e>=1` and `g_0 in k[y]` satisfies (10).  Then `f` divides `g_0`,
+and `v=g_0/f` has degree one.  Thus
+
+\[
+ v=q(y-\alpha),\qquad q\in k^*,\quad\alpha\in k.
+\]
+
+Write
+
+\[
+ f(\alpha+w)^e=\sum_{N\ge0}d_Nw^N.
+\]
+
+Then the leading equation is equivalent to
+
+\[
+ d_NJ_{N,e}(q)=0\qquad\hbox{for every }N.               \tag{14}
+\]
+
+Conversely, (14) implies (10).
+
+### Proof
+
+Put `v=g_0/f`.  After multiplying (10) by `f(y)^e`, its numerator is
+
+\[
+ \int_0^1u^e f\{y-v(y)(1-u)\}^e du.                    \tag{15}
+\]
+
+If `v` had a pole at a finite point, the term obtained from the leading
+coefficient of `f` and the power `v^(e deg(f))` would have uniquely smallest
+valuation there.  Its multiplier is the nonzero beta integral
+
+\[
+ \int_0^1u^e(1-u)^{e\deg(f)}du.
+\]
+
+Thus `v` has no finite pole, so it is a polynomial and `f|g_0`.  If
+`p=deg(v)>1`, the same term has uniquely largest `y`-degree
+`ep deg(f)` in (15).  If `p=0`, the leading term of `f(y-v(1-u))^e` has
+degree `e deg(f)` and nonzero multiplier `1/(e+1)`.  Both cases contradict
+(15).  Hence `p=1`.
+
+Write `v=q(y-alpha)` and `w=y-alpha`.  Then
+
+\[
+ f\{y-v(1-u)\}^e
+ =f\bigl(\alpha+w\{1-q(1-u)\}\bigr)^e.
+\]
+
+Expanding `f(alpha+w)^e` and integrating coefficientwise gives (14), in
+both directions.  QED
+
+In particular `d_0=0`, because `J_(0,e)=1/(e+1)`.  Hence every leading
+solution chooses a root `alpha` of `f`.  A nonmonomial `f(alpha+w)` forces
+at least two nonzero `d_N`, so it requires a common root of two distinct
+spectral polynomials `J_(N,e)`.
+
+## 5. Pairwise coprimality and complete classification in the ansatz
+
+For `n>=1`, set `I_n=J_(n,1)`.  Thus
+
+\[
+ I_n(q)=\int_0^1u\{1-q(1-u)\}^n du.                     \tag{16}
 \]
 
 Up to a nonzero rational scalar, `I_n` is the C24 parameter polynomial
 `M_(n,1)`.
 
-### Theorem 4
+### Theorem 5
 
 Let `e=1`, and suppose `g_0 in k[y]` satisfies (10).  Then `f` divides
 `g_0`.  Writing `v=g_0/f`, the polynomial `v` has degree one.  Therefore
@@ -323,10 +400,10 @@ Writing `f=sum_n c_n(y-alpha)^n`, the leading cancellation equation is
 equivalent to
 
 \[
- c_n I_n(q)=0\qquad\hbox{for every }n.                  \tag{13}
+ c_n I_n(q)=0\qquad\hbox{for every }n.                  \tag{17}
 \]
 
-Conversely, (13) implies (10).
+Conversely, (17) implies (10).
 
 ### Proof
 
@@ -336,7 +413,7 @@ is
 \[
  \sum_{j=0}^{d}{(-v)^j f^{(j)}(y)\over
  j!(j+1)(j+2)}=0,
- \qquad d=\deg f.                                       \tag{14}
+ \qquad d=\deg f.                                       \tag{18}
 \]
 
 If `v` had a pole at a root of `f`, the `j=d` term would have strictly
@@ -344,21 +421,180 @@ smallest valuation, since `f^(d)` is a nonzero constant.  Hence `v` has no
 finite pole after extending to an algebraic closure and is a polynomial.
 Descent then proves `f|g_0` over `k`.
 
-If `p=deg v>1`, the `j=d` term in (14) has uniquely largest degree
+If `p=deg v>1`, the `j=d` term in (18) has uniquely largest degree
 `dp`; if `p=0`, the `j=0` term has uniquely largest degree `d`.  Both are
 impossible.  Thus `p=1`, and `v=q(y-alpha)` with `q!=0`.
 
 On the monomial `(y-alpha)^n`, the left side before Taylor expansion acts by
-multiplication with `I_n(q)`.  Linearity gives (13) and its converse.  QED
+multiplication with `I_n(q)`.  Linearity gives (17) and its converse.  QED
 
-Theorem 4 isolates the precise route to a genuinely new `e=1` family: two
-distinct polynomials `I_n` would need a common root `q`, allowing `f` to have
-more than one shifted monomial, and the resulting Hensel coefficient `g_1`
-would still have to be polynomial.  Exact computation finds no such common
-root for `1<=n<=12`; this bounded result is evidence only.  No all-degree
-coprimality theorem is claimed here.
+Theorem 5 is also the `e=1` specialization of Theorem 4.  The separate proof
+is retained because (18) is a useful explicit linear form of the equation.
 
-## 5. What has and has not been generalized
+### Theorem 6 (uniform pairwise coprimality)
+
+For every fixed `e>=1`, the polynomials `J_(N,e)`, `N>=1`, are pairwise
+coprime over every characteristic-zero field.
+
+### Proof
+
+Set `r=1-q`.  Expanding first in `r` and evaluating the beta integrals gives
+
+\[
+ J_{N,e}(1-r)={N!\over(N+e+1)!}
+ \sum_{k=0}^N{(N-k+e)!\over(N-k)!}r^k.                 \tag{19}
+\]
+
+Up to a nonzero scalar, reciprocation turns the polynomial in (19) into
+
+\[
+ H_{N,e}(x)=\sum_{j=0}^N(j+1)_e x^j,                   \tag{20}
+\]
+
+where `(j+1)_e=(j+1)(j+2)\cdots(j+e)`.
+
+Suppose `M<N` and `H_(M,e)(beta)=H_(N,e)(beta)=0`.  The root `beta` is
+nonzero, and subtraction gives
+
+\[
+ \sum_{j=M+1}^N(j+1)_e\beta^j=0.                       \tag{21}
+\]
+
+If `N=M+1`, (21) is impossible.  Otherwise divide by `beta^(M+1)`.
+The Enestrom--Kakeya theorem applied to `H_(M,e)` gives
+
+\[
+ |\beta|\le {M\over M+e},                               \tag{22}
+\]
+
+because
+
+\[
+ {(j+1)_e\over(j+2)_e}={j+1\over j+e+1}
+\]
+
+is increasing.  Applied to the divided tail in (21), the same theorem gives
+
+\[
+ |\beta|\ge {M+2\over M+e+2}.                           \tag{23}
+\]
+
+The lower bound in (23) is strictly larger than the upper bound in (22),
+since cross multiplication leaves `2e>0`.  Hence no common root exists over
+the complex numbers, and therefore no nonconstant gcd exists in
+characteristic zero.  QED
+
+For `e=1`, (19) also reduces to the closed form
+
+\[
+ I_n(q)={r^{n+2}-(n+2)r+n+1\over
+ (n+1)(n+2)(1-r)^2},
+\]
+
+so Theorem 6 contains the former `e=1` argument.
+
+### Corollary 7 (no new polynomial member in the ansatz)
+
+Every polynomial map produced by (1)--(2), for `e>=1`, is polynomially
+left--right equivalent, by translations and nonzero scalings together with
+the source change below, to a C24 map.
+
+### Proof
+
+By Theorems 4 and 6, the polynomial `f(alpha+w)^e` has exactly one nonzero
+monomial.  Unique factorization then gives
+
+\[
+ f(y)=c(y-\alpha)^d,
+ \qquad
+ g_0=q(y-\alpha)f(y),                                  \tag{24}
+\]
+
+where `q` is a root of `J_(de,e)`.  This spectral polynomial is the C24
+parameter polynomial up to a nonzero scalar and is squarefree by the
+argument in Section 3 of the master construction.
+
+Put `w=y-alpha`.  Varying `q` varies `g_0` by `wf`, so the linearization in
+(27) below satisfies
+
+\[
+ \delta_{f,e}(g_0)\,wf=J'_{de,e}(q).                   \tag{25}
+\]
+
+It is therefore a unit of `k[w,w^(-1)]`.  The localized Hensel jet is unique,
+and the translated/scaled C24 jet `wf h_q(A)` supplies it.  Hence every
+polynomial solution has the form
+
+\[
+ g(y,A)=wf(y)h_q(A)+A^{e+1}k(y,A).                     \tag{26}
+\]
+
+Finally, the last term is removed by the polynomial source automorphism
+`z -> z+k(y,A)`, since `A` is independent of `z` and `B_z=A^(e+1)`.
+The translation and nonzero scalings reduce `c` and `alpha` to the standard
+C24 coordinates.  QED
+
+Thus the generalized one-variable input and the two weights do not produce
+a new polynomial-equivalence class inside this coordinate skeleton.  The
+bounded search in `scripts/search_generalized_spectrum.py` is retained only
+as a stress test of the uniform formula.
+
+## 6. Necessary and sufficient recursive conditions for polynomial lifting
+
+The Hensel statement after (10) can be sharpened into explicit descent
+obstructions.  Put `t=1-u`, `v=g_0/f`,
+
+\[
+ Y=y-vt,\qquad H=f(Y).
+\]
+
+The linearization is
+
+\[
+ \delta_{f,e}(g_0)=
+ -{e\over f^{e+1}}\int_0^1u^etH^{e-1}f'(Y)du.           \tag{27}
+\]
+
+Keeping `g(A)=g_0` constant, the explicit part of the coefficient of `A` in
+the cancellation operator is
+
+\[
+ E_1=e\int_0^1
+ \left({uH\over f}\right)^{e-1}
+ \left\{1-{uH\over f}+{utv f'(Y)\over f}\right\}du.   \tag{28}
+\]
+
+Consequently a polynomial first lift exists only if the equation
+
+\[
+ \delta_{f,e}(g_0)g_1=-E_1                             \tag{29}
+\]
+
+has a solution `g_1 in k[y]`.  When `delta!=0`, this is exactly the condition
+`-E_1/delta in k[y]`; it is stronger than solvability in
+`k[y,f^(-1)]`.  When `delta=0`, the first necessary condition is `E_1=0`,
+and the branch is degenerate rather than Henselian.
+
+More generally, suppose `g_0,...,g_(d-1)` have killed the coefficients below
+`A^d`, and let `E_d` be the coefficient of `A^d` obtained by temporarily
+setting `g_d=0`.  The coefficient of the new variable is always the same
+linearization, so
+
+\[
+ \delta_{f,e}(g_0)g_d=-E_d.                             \tag{30}
+\]
+
+If `delta!=0`, a full polynomial jet exists if and only if the recursively
+determined quotients `-E_d/delta` lie in `k[y]` for every `1<=d<=e`.
+If `delta` is a unit only in `k[y,f^(-1)]`, these quotient conditions are the
+additional polynomial-descent tests.  In valuation language, every pole
+along every irreducible factor of `f` must cancel at every step, and every
+zero of the numerator of `delta` away from `f=0` must divide the corresponding
+`E_d`.  Equivalently, `ord_p(E_d)>=ord_p(delta)` for every irreducible
+`p in k[y]`.  Equations (27)--(30) remain useful as explicit diagnostics for
+variants outside the classified polynomial ansatz.
+
+## 7. What has and has not been generalized
 
 Proved uniformly:
 
@@ -371,25 +607,25 @@ Proved uniformly:
   critical partition `e^(deg(f)+1)`;
 - within the natural two-weight ansatz, polynomial cancellation forces
   `P=AB` and `B_z=A^(e+1)`;
-- the leading equation is (10), with a conditional Hensel recurrence; and
-- for `e=1`, Theorem 4 classifies every polynomial leading solution by the
-  common-root spectrum of the explicit polynomials `I_n`.
+- every polynomial leading solution has `g_0/f=q(y-alpha)` and is classified
+  by the common-root spectrum of the explicit `J_(N,e)`;
+- the full-jet problem is the finite sequence of polynomial divisibility
+  tests (29)--(30);
+- for every `e>=1`, the `J_(N,e)` are pairwise coprime; and
+- every polynomial member of (1)--(2) is polynomially left--right equivalent
+  to C24, with its `A^(e+1)` tail removed already on the source.
 
 Not proved:
 
-- existence of a non-C24 solution of (10) whose full jet descends to
-  `k[y,A]`;
-- pairwise coprimality of all `I_n`;
-- classification of (10) for `e>=2`;
-- inequivalence of any future solution from C24 or C04; or
-- a classification outside the ansatz (1)--(2).
+- a classification outside the coordinate skeleton (1)--(2); or
+- equivalence or inequivalence among distinct nonconjugate C24 parameter
+  branches having the same intrinsic numerical signature.
 
-The next sharp problem is therefore algebraic: determine the common-root
-spectrum of the `I_n`, then solve the polynomial-descent problem for the
-Hensel jet.  This is narrower and more testable than searching arbitrary
-three-variable formulas.
+The spectral route to a new family is therefore closed for all `e>=1`, not
+merely in a bounded box.  Any further generalization must change the
+coordinate skeleton or the one-variable reconstruction mechanism.
 
-## 6. Exact regression
+## 8. Exact regression
 
 Run
 
@@ -399,5 +635,12 @@ Run
 
 The script checks the two-weight Jacobian on representative symbolic
 polynomials, the weight obstruction, reduction to the C24 operator, the
-`e=1` spectral formula, and pairwise gcds of `I_1,...,I_12`.  Those bounded
-checks are not proofs of the uniform theorems above.
+spectral formulas, the reciprocal rising-factorial form behind Theorem 6,
+bounded pairwise gcds, and the first-jet formula.  The all-degree proof is the
+Enestrom--Kakeya argument, not the bounded search.
+
+The larger stress test is run separately:
+
+```bash
+.venv/bin/python scripts/search_generalized_spectrum.py
+```

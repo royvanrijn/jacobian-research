@@ -33,12 +33,14 @@ C16, with exact scripts checking their finite identities and representative
 models. “Fully proved” here means proved internally, not independently
 reviewed; see the [claim ledger](../../CLAIMS.md).
 
-## What is only computationally tested?
+## What was strengthened from computational evidence?
 
-C12's completed-local model and C14's quartic geometry rely most heavily on
-large exact symbolic calculations. Bounded degree, multiplicity, and
-finite-field runs elsewhere are regressions and do not prove uniform
-quantifiers.
+C12's completed-local model and C14's quartic geometry now have complete
+internal proofs plus dependency-free clean-room checks of their decisive
+algebra.  An unrelated-CAS reproduction of the full C12 tangent matrices and
+the complete C14 radical/path suite would still strengthen them further.
+Bounded degree, multiplicity, and finite-field runs elsewhere remain
+regressions and do not prove uniform quantifiers.
 
 ## What is the likeliest failure point?
 

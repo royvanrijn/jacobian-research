@@ -30,5 +30,7 @@ assert [number for number, _ in rows] == list(range(1, 25)), (
 for number, status in rows:
     assert status in allowed, f"C{number:02d} has unsupported status {status!r}"
 
-assert "C24 | **Active**" in (root / "RESEARCH_STATUS.md").read_text()
+research_status = (root / "RESEARCH_STATUS.md").read_text()
+assert re.search(r"^\| C24 \|.*\| \*\*Active\*\* \|", research_status, re.MULTILINE)
+assert "Proved construction with incomplete global classification" in research_status
 print("PASS claim ledger: C01--C24 use only the four approved statuses")

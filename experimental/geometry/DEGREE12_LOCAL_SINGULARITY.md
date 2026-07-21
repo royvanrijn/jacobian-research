@@ -206,3 +206,6 @@ The script checks the two differential ranks, their tangent intersection,
 the exact second quadratic forms, the sixfold-block Groebner basis, smoothness
 of the incidence equation at an admissible witness, and the matching
 upper/lower length bounds.
+
+The elementary ideal proof and dependency-free second checker are recorded in
+[C12_INDEPENDENT_AUDIT.md](C12_INDEPENDENT_AUDIT.md).
