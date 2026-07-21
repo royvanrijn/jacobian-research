@@ -281,17 +281,14 @@ This conclusion concerns the complete canonical normalization.  The root
 equations are used only to prove (7)--(8) and to construct enough normalized
 DVR branches to saturate the local degree formula.
 
-## 6. Proof status and remaining audit risk
+## 6. Independent audit
 
 Theorem 2.1 and Lemma 1.1 are abstract algebraic statements independent of
-the two families.  Theorem 5.1 is presently an **internal proof**: its C04
-input uses the normalized marked-root and pole-divisor calculations, and its
-C24 input uses the critical and projective reconstruction charts.  Exact
-symbolic checks verify the identities and degree counts, but they do not by
-themselves replace the support argument (7)--(8).
-
-The highest-value independent review is therefore a clean-room verification
-of these four points:
+the two families.  The family-specific inputs to Theorem 5.1 have now been
+rederived in the
+[independent boundary-exhaustion audit](BOUNDARY_EXHAUSTION_INDEPENDENT_AUDIT.md).
+That proof starts from the defining inverse incidences and independently
+checks these four points:
 
 1. the resolvent incidence has the same function field as the polynomial map;
 2. its normalization is the canonical finite normalization over the target;
@@ -300,6 +297,13 @@ of these four points:
 4. the local branches used in (3)--(6) are distinct normalization primes with
    the asserted `e` and `f`.
 
-Until that audit is completed, downstream boundary-intersection obstructions
-should cite Theorem 5.1 explicitly and retain their current “proved
-internally” status rather than being promoted to independent verification.
+Its standard-library checker verifies the inverse derivative and degree,
+the projective chart scaling and `P=0` factorization, squarefreeness of the
+boundary polynomial, the parameter-root identity, and both local degree
+saturations without importing a project module.  The all-parameter proof is
+the valuation and normalization argument in the audit, not extrapolation from
+the bounded regression grid.
+
+This closes the previously identified independent boundary-exhaustion risk.
+It does not independently reprove every other part of C24, such as polynomial
+cancellation, monodromy, parameter arithmetic, or unrestricted equivalence.

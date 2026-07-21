@@ -56,6 +56,7 @@ verify-theorems:
 	$(PYTHON) scripts/verify_effective_chebotarev.py
 
 verify-master:
+	$(SYSTEM_PYTHON) scripts/audit_boundary_exhaustion_independent.py
 	$(PYTHON) scripts/verify_master_universal.py
 	$(PYTHON) scripts/verify_master_instances.py
 	$(PYTHON) scripts/verify_resolvent_ramification_signature.py

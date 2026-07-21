@@ -103,8 +103,11 @@ The [boundary-exhaustion certificate](BOUNDARY_EXHAUSTION_CERTIFICATE.md)
 separates support containment from local `sum ef` degree accounting.  Its
 Theorem 5.1 states explicitly that the displayed C04/C24 divisors are all
 components of the canonical normalization boundary and lists all their target
-images.  This remains internally proved pending a clean-room compactification
-audit.  The full C24 intersection is a disjoint
+images.  The
+[clean-room boundary audit](BOUNDARY_EXHAUSTION_INDEPENDENT_AUDIT.md)
+independently rederives the normalization identification, reconstruction
+opens, degenerate charts, and DVR degree saturation.  The full C24
+intersection is a disjoint
 union of `G_m` and a thickened affine line with nilradical index `m(m+1)`;
 the weighted intersection is reduced.  This gives a second stable obstruction
 beyond connectedness of the reductions.

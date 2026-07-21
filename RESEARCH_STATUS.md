@@ -51,7 +51,7 @@ independently verified.
 | Comparison with generic weighted seeds | Settled uniformly | For every noncubic C24 member, the full intersection of its two divisorial boundary images is nonreduced, while the generic weighted intersection is reduced; this gives one stable proof for all `r`; `(1,1)` is C01 |
 | Canonical boundary-incidence invariant | Proved internally with hypothesis audit | Every quasi-finite map in the stated normal affine setup has stable diagrams of both scheme-theoretic and reduced intersections of divisorial boundary images; Keller maps satisfy the setup automatically |
 | Upstairs--downstairs boundary incidence | Proved abstractly; C04/C24 vertex layer explicit | The stable bipartite object records boundary primes, finite edge covers, upstairs intersections, scheme images downstairs, and the relative different; C24 intersection strata upstairs remain to be computed |
-| Boundary exhaustion and thick intersections | Proved internally | Support containment plus exact `sum ef` accounting proves the C04/C24 boundary lists exhaustive; for every noncubic `(m,r)`, the full canonical C24 intersection has nilradical index `mr(m+1)`; the generic weighted intersection is reduced |
+| Boundary exhaustion and thick intersections | Exhaustion independently audited; thick intersection proved internally | A clean-room normalization and two-chart audit confirms the C04/C24 boundary lists are exhaustive; for every noncubic `(m,r)`, the full canonical C24 intersection has nilradical index `mr(m+1)`; the generic weighted intersection is reduced |
 | Tail deformations | Settled | Every allowed `A^(r+1)` tail is removed by a polynomial source automorphism |
 | Generalized two-weight mechanism | Settled inside the stated ansatz | Spectral coprimality forces the monomial C24 branch; no nonmonomial polynomial branch survives |
 | Parameter separability and discriminant | Proved uniformly | Closed discriminant formula, exact square criterion, complete even-degree square locus, and an infinite square family for each fixed `r` |
@@ -63,7 +63,7 @@ independently verified.
 | Finite factorized-resolvent relaxation | Settled | Every normalized factor `1-tf_i(Q-Pt)` is forced either to equal the original factor or to be identically one; all nontrivial factors coalesce and polynomiality again yields only C24 |
 | Arbitrary target-dependent polynomial derivative | Settled inside the skeleton | Algebraic independence of `(s,P,Q)` forces `H(T,P,Q)=lambda(1-Tf(Q-PT))^n`; polynomiality again yields only C24 |
 | Beyond the completed skeleton | Open | Change the reconstruction skeleton itself, for example with an additional source function, source variable, or inverse variable |
-| Independent verification | Pending | The all-`m,r` cancellation, normalization, and boundary package still needs a genuinely separate audit |
+| Independent verification | Partial | Boundary normalization and exhaustion now have a separate clean-room audit; polynomial cancellation, monodromy, and the thick scheme-intersection formula still need genuinely separate all-parameter audits |
 
 The boundary comparison is proved in
 [BOUNDARY_INTERSECTION_OBSTRUCTION.md](experimental/transfer-and-cancellation/BOUNDARY_INTERSECTION_OBSTRUCTION.md).
@@ -79,11 +79,9 @@ The first parameter-equivalence theorem is
 
 ## Other open or review-level work
 
-1. Independently audit Theorem 5.1 of the boundary-exhaustion certificate:
-   identify the C04 and C24 resolvent normalizations with the canonical finite
-   normalizations, verify the exact reconstruction opens in the degenerate
-   charts, and recheck every local `e,f` count.  This subsumes the relevant
-   global compactification risk in C05 and C16.
+1. Independently audit the remaining all-parameter C24 inputs beyond the now
+   clean-room-verified boundary exhaustion: polynomial cancellation,
+   monodromy, and the thick scheme-intersection formula.
 2. Record a primary-source hypothesis audit for the Mason--Stothers uses in
    C07 and C10.
 3. Independently review C13's effective Chebotarev and twist argument; its
