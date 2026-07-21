@@ -819,7 +819,7 @@ cancellation branches remains open. ([Claim C24](CLAIMS.md#c24))
 
 ```bash
 make verify-master
-.venv/bin/python scripts/generate_master_regression.py 2 3
+.venv/bin/python scripts/generate_master_regression.py 3 1
 ```
 
 ## 8. Reproducibility
