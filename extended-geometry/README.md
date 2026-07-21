@@ -17,6 +17,7 @@ in [STATUS.md](../STATUS.md).
 | Explicit quartic model | [Quartic weighted geometry](QUARTIC_WEIGHTED_GEOMETRY.md) |
 | Zhuang's external quartic islands | [Weighted-seed identification and boundary audit](EXTERNAL_QUARTIC_ISLANDS.md) |
 | Stable normal-form consequences | [Consequences and audit](STABLE_NORMAL_FORM_AUDIT.md) |
+| Marked-point dimension barrier | [Why the universal marked-point construction starts in dimension three](MARKED_POINT_DIMENSION_BARRIER.md) |
 | Dicritical boundary | [Dicritical compactification](DICRITICAL_COMPACTIFICATION.md) |
 
 Intermediate deformation notes, bounded stratum reports, the expanded dicritical
