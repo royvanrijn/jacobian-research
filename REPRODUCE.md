@@ -32,6 +32,13 @@ pinned toolchain:
 make verify-lean-foundational
 ```
 
+GitHub Actions runs this target in the required `formal-lean` job using the
+pinned upstream commit and Lean action.  The `papers` job compiles all three
+maintained papers, and `macaulay2-independent-check` runs the pinned
+Macaulay2 comparison.  Together with the four Python matrix jobs, these are
+the complete CI verification pipeline.  The final `verification-complete`
+job is the single aggregation check intended for GitHub branch protection.
+
 ## Cancellation programme
 
 ```bash
@@ -57,6 +64,12 @@ the paper with:
 ```bash
 cd papers/marked-root-multiplicity
 latexmk -pdf -interaction=nonstopmode -halt-on-error main.tex
+```
+
+To compile every maintained paper with the same target used by CI, run:
+
+```bash
+make verify-papers
 ```
 
 To retain an environment record and complete log under `artifacts/`, run:

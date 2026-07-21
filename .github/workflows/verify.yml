@@ -5,18 +5,32 @@ on:
   pull_request:
   workflow_dispatch:
 
+permissions:
+  contents: read
+
+concurrency:
+  group: verification-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  PIP_DISABLE_PIP_VERSION_CHECK: "1"
+  PYTHONUNBUFFERED: "1"
+
 jobs:
   verify:
     name: verify-${{ matrix.suite }}
     runs-on: ubuntu-latest
+    timeout-minutes: 45
     strategy:
       fail-fast: false
       matrix:
         suite: [core, theorems, regressions, derived]
 
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
         with:
           python-version-file: .python-version
           cache: pip
@@ -33,8 +47,109 @@ jobs:
           make PYTHON=python SYSTEM_PYTHON=python check verify-${{ matrix.suite }} 2>&1 | tee artifacts/verification/verify-${{ matrix.suite }}.log
       - name: Archive verification logs
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
         with:
           name: verification-${{ matrix.suite }}-${{ github.sha }}
           path: artifacts/verification/
           if-no-files-found: error
+          retention-days: 14
+
+  formal-lean:
+    name: formal-lean
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    steps:
+      - name: Check out this repository
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - name: Check out the pinned external Lean certificate
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          repository: deancureton/jacobian
+          ref: 0d4a9212d874226ad81ce5a926becddfa94e6a88
+          path: .cache/lean-foundational
+          persist-credentials: false
+      - name: Install Lean and prime the Mathlib cache
+        uses: leanprover/lean-action@38fbc41a8c28c4cbaec22d7f7de508ec2e7c0dd9 # v1
+        with:
+          lake-package-directory: .cache/lean-foundational
+          auto-config: false
+          build: true
+          test: false
+          lint: false
+          use-mathlib-cache: true
+      - name: Reproduce the repository formal-verification target
+        shell: bash
+        run: |
+          mkdir -p artifacts/verification
+          set -o pipefail
+          make verify-lean-foundational 2>&1 | tee artifacts/verification/formal-lean.log
+      - name: Archive formal-verification log
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: formal-lean-${{ github.sha }}
+          path: artifacts/verification/formal-lean.log
+          if-no-files-found: error
+          retention-days: 14
+
+  papers:
+    name: papers
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - name: Install TeX toolchain
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes --no-install-recommends \
+            latexmk texlive-fonts-recommended texlive-latex-extra
+      - name: Build all maintained papers
+        run: make verify-papers
+      - name: Archive compiled papers
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: papers-${{ github.sha }}
+          path: |
+            papers/core-counterexample/main.pdf
+            papers/discriminant-pencils/main.pdf
+            papers/marked-root-multiplicity/main.pdf
+          if-no-files-found: error
+          retention-days: 14
+
+  macaulay2:
+    name: macaulay2-independent-check
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - name: Run the pinned Macaulay2 comparison
+        run: make verify-coincident-root-loci
+
+  verification-complete:
+    name: verification-complete
+    if: ${{ always() }}
+    needs: [verify, formal-lean, papers, macaulay2]
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Require every verification layer
+        env:
+          PYTHON_RESULT: ${{ needs.verify.result }}
+          LEAN_RESULT: ${{ needs.formal-lean.result }}
+          PAPERS_RESULT: ${{ needs.papers.result }}
+          MACAULAY2_RESULT: ${{ needs.macaulay2.result }}
+        run: |
+          test "$PYTHON_RESULT" = success
+          test "$LEAN_RESULT" = success
+          test "$PAPERS_RESULT" = success
+          test "$MACAULAY2_RESULT" = success

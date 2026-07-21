@@ -8,7 +8,7 @@ SYSTEM_PYTHON ?= python3
 	verify-master \
 	verify-quartic verify-normal-forms verify-formal verify-lean-foundational \
 	verify-foundations verify-foundations-formal \
-	verify-coincident-root-loci
+	verify-coincident-root-loci verify-papers clean-papers
 
 check:
 	$(PYTHON) -m compileall -q jcsearch scripts
@@ -118,6 +118,17 @@ verify-foundations-formal: verify-foundations verify-lean-foundational
 # not installed locally.
 verify-coincident-root-loci:
 	bash scripts/verify_coincident_root_slices.sh
+
+verify-papers:
+	latexmk -cd -pdf -interaction=nonstopmode -halt-on-error papers/core-counterexample/main.tex
+	latexmk -cd -pdf -interaction=nonstopmode -halt-on-error papers/discriminant-pencils/main.tex
+	latexmk -cd -pdf -interaction=nonstopmode -halt-on-error papers/marked-root-multiplicity/main.tex
+
+clean-papers:
+	latexmk -cd -C papers/core-counterexample/main.tex
+	latexmk -cd -C papers/discriminant-pencils/main.tex
+	latexmk -cd -C papers/marked-root-multiplicity/main.tex
+	$(RM) papers/core-counterexample/main.bbl
 
 verify: check verify-core verify-theorems verify-regressions verify-derived
 
