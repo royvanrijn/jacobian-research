@@ -95,8 +95,8 @@ and
 \widehat F=(F\times\operatorname{id})\circ H_F.
 \]
 
-Thus `widehat F` is right-equivalent to the three-variable stabilization of
-`F`.  More explicitly, for every target `(y,q)`,
+Thus `widehat F` is right-equivalent to `F x id_{A^n}`.  More explicitly, for
+every target `(y,q)`,
 
 \[
 \widehat F^{-1}(y,q)
@@ -240,9 +240,9 @@ Its lift
 \widehat F(x,p)=\left(F(x),-\frac12\operatorname{adj}(DF(x))^Tp\right)
 \]
 
-is an exact polynomial symplectic etale endomorphism of `A^6` with Jacobian
-one, generic degree three, and the same nonproperness set after adjoining the
-momentum coordinates.
+is a noninjective exact polynomial symplectic etale endomorphism of `A^6` with
+Jacobian one, generic degree three, and nonproperness set
+`S_F x A^3` in the target.
 
 Let
 
