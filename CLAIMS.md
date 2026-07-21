@@ -30,12 +30,12 @@ Only four evidence statuses are used:
 | C15 | Stable normal-form consequences | Proved internally | [Audit](experimental/geometry/C15_INDEPENDENT_AUDIT.md) | Second exact implementation |
 | C16 | Dicritical compactification | Proved internally | [Proof](experimental/geometry/DICRITICAL_COMPACTIFICATION.md) | None |
 | C17 | Two-transfer block | Proved internally | [Transfer blocks](experimental/transfer-and-cancellation/TRANSFER_BLOCKS.md) | Exact Groebner calculation |
-| C18 | Global allocation equalizer | Proved internally | [Proof](experimental/transfer-and-cancellation/ALLOCATION_BRANCH_INTERSECTIONS.md) | None |
+| C18 | Global allocation equalizer | Conjectural / incomplete | [Conditional argument](experimental/transfer-and-cancellation/ALLOCATION_BRANCH_INTERSECTIONS.md) | C22 dependency refuted |
 | C19 | Three-transfer block | Computational evidence | [Transfer blocks](experimental/transfer-and-cancellation/TRANSFER_BLOCKS.md) | Exact Groebner calculation |
 | C20 | Four-transfer block | Computational evidence | [Transfer blocks](experimental/transfer-and-cancellation/TRANSFER_BLOCKS.md) | Exact Groebner calculation |
-| C21 | Master quotient theorem | Proved internally | [Proof](experimental/transfer-and-cancellation/MASTER_QUOTIENT_THEOREM.md) | None |
-| C22 | Boolean transfer theorem | Proved internally | [Proof](experimental/transfer-and-cancellation/ALL_K_TRANSFER_BLOCK_THEOREM.md) | None |
-| C23 | Universal factorization slices | Proved internally | [Proof](experimental/transfer-and-cancellation/UNIVERSAL_FACTORIZATION_GEOMETRY.md) | None |
+| C21 | Master quotient theorem | Conjectural / incomplete | [Conditional argument](experimental/transfer-and-cancellation/MASTER_QUOTIENT_THEOREM.md) | C22 dependency refuted |
+| C22 | All-`k` transfer block | Computational evidence | [Counteraudit](experimental/transfer-and-cancellation/C22_CONDUCTOR_RIBBON_AUDIT.md) | Exact `k<=6` checks only |
+| C23 | Universal factorization slices | Conjectural / incomplete | [Partial results](experimental/transfer-and-cancellation/UNIVERSAL_FACTORIZATION_GEOMETRY.md) | All-`k` transfer conclusion depends on C22 |
 | C24 | Master cancellation family and left-right classification | Conjectural / incomplete | [Proved construction](experimental/transfer-and-cancellation/MASTER_CANCELLATION_CONSTRUCTION.md) | Small exact cases only |
 
 Workflow state is tracked separately in [RESEARCH_STATUS.md](RESEARCH_STATUS.md).

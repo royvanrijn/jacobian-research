@@ -49,6 +49,7 @@ verify-theorems:
 	$(PYTHON) scripts/classify_transfer_block_k4.py
 	$(PYTHON) scripts/verify_all_k_transfer_block.py
 	$(SYSTEM_PYTHON) scripts/verify_c22_deformation_audit.py
+	$(PYTHON) scripts/verify_c22_ribbon_functor.py
 	$(PYTHON) scripts/verify_global_affine_rigidity.py
 	$(PYTHON) scripts/verify_universal_factorization_geometry.py
 	$(PYTHON) scripts/verify_allocation_hensel_product.py
@@ -61,6 +62,7 @@ verify-master:
 	$(PYTHON) scripts/verify_master_universal.py
 	$(PYTHON) scripts/verify_master_instances.py
 	$(PYTHON) scripts/verify_resolvent_ramification_signature.py
+	$(PYTHON) scripts/verify_generalized_cancellation.py
 
 verify-regressions:
 	$(PYTHON) scripts/verify_generic_discriminant_geometry.py

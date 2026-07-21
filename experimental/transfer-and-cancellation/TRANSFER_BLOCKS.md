@@ -137,7 +137,8 @@ several compensating blocks still requires a Hensel-product/equalizer theorem.
 
 ## The all-`k` structure
 
-The conjecture is now a theorem.  Over ordered roots `S=prod(Z-r_i)`, attach
+The following formerly claimed theorem is false as a ribbon identification.
+Over ordered roots `S=prod(Z-r_i)`, attach
 commuting square-zero variables `epsilon_i` and set
 
 \[
@@ -145,13 +146,12 @@ V=\prod_i((Z-r_i)^2+\epsilon_i),\qquad
 U=\prod_i((Z-r_i)^3+	frac32\epsilon_i(Z-r_i)).
 \]
 
-The transfer block is the symmetric-group quotient of this Boolean
-thickening.  Consequently it is finite flat of rank `2^k`, affine difference
-adds nothing for every `k`, and the coincident-root Hilbert series is
-`(1+t)^k`.  The complete invariant-theoretic proof is in
-[ALL_K_TRANSFER_BLOCK_THEOREM.md](ALL_K_TRANSFER_BLOCK_THEOREM.md).  The
-explicit results below are retained as coordinate models and independent
-low-degree audits of the structural theorem.
+The resulting norm map is not the transfer block: at `k=2` it kills the
+nonzero class `X^2`.  See the
+[counteraudit](C22_CONDUCTOR_RIBBON_AUDIT.md).  Finite flatness of rank
+`2^k` and Hilbert series `(1+t)^k` remain exact low-degree results and an
+all-`k` conjecture.  The explicit results below are retained as coordinate
+models and bounded audits.
 
 ## The three-transfer theorem
 

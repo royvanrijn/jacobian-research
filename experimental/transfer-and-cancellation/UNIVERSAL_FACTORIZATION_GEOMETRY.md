@@ -259,10 +259,13 @@ normalization locus is
  S\longmapsto(U,V)=(S^3,S^2),\qquad\deg S=k.                    \tag{18}
 \]
 
-The formal completion of (17) along (18) is exactly `Z_k`.  The affine
+The formal completion of (17) along (18) is exactly `Z_k` by definition.  The affine
 variant is the analogous fiber product after projecting degree-`6k`
-polynomials modulo `span(1,Z)`.  The all-`k` transfer theorem proves that this
-larger-looking local fiber has the same completion: `Z_k^aff=Z_k`.  Thus the
+polynomials modulo `span(1,Z)`.  The differential Wronskian argument proves
+`Z_k^aff=Z_k` in characteristic zero, independently of the refuted ribbon
+model.  The uniform finite-flat rank assertion formerly attached to this
+statement is now open; see
+[C22_CONDUCTOR_RIBBON_AUDIT.md](C22_CONDUCTOR_RIBBON_AUDIT.md).  Thus the
 transfer block is not merely analogous to a factorization singularity; it is
 the local fiber of the square/cube universal factorization equalizer.
 

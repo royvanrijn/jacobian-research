@@ -1,5 +1,12 @@
 # Independent deformation-theoretic audit of C22
 
+> **Refuted.**  The norm morphism used below is not an isomorphism.  At
+> `k=2` its collision image has length three while the factorization block
+> has length four; it kills the nonzero class `X^2`.  See the exact
+> [conductor-ribbon counteraudit](C22_CONDUCTOR_RIBBON_AUDIT.md).  This file
+> is retained to identify the failed argument and must not be cited as a
+> proof.
+
 This note reproves the all-`k` transfer-block theorem without taking an
 invariant ring, using a Reynolds operator, or invoking the regular
 representation of the symmetric group. The replacement is the deformation

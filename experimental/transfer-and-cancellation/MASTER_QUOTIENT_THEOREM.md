@@ -1,5 +1,13 @@
 # The master quotient theorem
 
+> **Conditional status.**  Sections 5 and 7 use C22's asserted all-`k`
+> Boolean factorization relation.  The conductor-ribbon norm underlying that
+> assertion is refuted in
+> [C22_CONDUCTOR_RIBBON_AUDIT.md](C22_CONDUCTOR_RIBBON_AUDIT.md).  The
+> independent Wronskian and finiteness arguments below remain valid, but the
+> completed-collision surjectivity and hence the full closed-immersion theorem
+> require a replacement local proof.
+
 This note gives the precise target-side theorem behind the exceptional-seed
 construction. Throughout, `k` has characteristic zero and `n>=3`.
 

@@ -1,5 +1,13 @@
 # The all-`k` transfer-block theorem
 
+> **Status correction.**  The asserted Boolean/ribbon identification is
+> false: its norm map misses a second-order class for `k=2` and four classes
+> for `k=3`.  Consequently the uniform rank and flatness theorem is not
+> proved by this note.  The affine-difference argument remains valid under
+> its stated characteristic-zero hypothesis, and the bounded Groebner
+> computations remain evidence.  See
+> [C22_CONDUCTOR_RIBBON_AUDIT.md](C22_CONDUCTOR_RIBBON_AUDIT.md).
+
 Let `K` be a characteristic-zero field and let
 
 \[
@@ -30,7 +38,7 @@ for the squaring and cubing maps, and `Z_k` is its completion along
 fiber; see [UNIVERSAL_FACTORIZATION_GEOMETRY.md](UNIVERSAL_FACTORIZATION_GEOMETRY.md)
 for the ambient multiplication-map interpretation.
 
-## The theorem
+## Former theorem statement (not established)
 
 For every `k>=1`:
 
@@ -53,13 +61,14 @@ The fibers need not be Gorenstein.  Formula (3) is a Hilbert-function
 statement, not an assertion that the collided algebra is a tensor product of
 dual numbers.
 
-An independent proof is given in
+The formerly claimed independent proof is given in
 [C22_DEFORMATION_AUDIT.md](C22_DEFORMATION_AUDIT.md). It constructs the same
 block as the divided-power symmetric product of the conductor ribbon of the
 cusp normalization, proves collision flatness by confluent divided
 differences, and compares it with the factorization fiber by a
-split-surjection/Nakayama argument. That proof uses neither invariant-ring
-exactness nor the symmetric-group coinvariant algebra.
+split-surjection/Nakayama argument.  The counteraudit shows that its claimed
+surjection fails already for `k=2`; this paragraph records the old strategy,
+not a valid proof.
 
 ## 1. Affine difference vanishes
 

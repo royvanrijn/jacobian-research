@@ -1,5 +1,11 @@
 # Hensel products and allocation-branch intersections
 
+> **Conditional status.**  The all-`k` completed-intersection statements use
+> C22's Boolean/ribbon identification, which fails at `k=2`; see
+> [C22_CONDUCTOR_RIBBON_AUDIT.md](C22_CONDUCTOR_RIBBON_AUDIT.md).  Explicit
+> low-transfer calculations and the global Wronskian argument remain valid,
+> but the uniform nilpotent intersection structure is not proved.
+
 Fix a collision polynomial
 
 \[

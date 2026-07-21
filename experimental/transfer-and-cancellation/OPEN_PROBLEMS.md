@@ -1,5 +1,23 @@
 # Open problems
 
+## Direct all-`k` transfer-block basis after the ribbon counterexample
+
+Let `Z_k` be the completion of the monic square/cube factorization scheme
+`U^2=V^3` along `(U,V)=(S^3,S^2)`.  The proposed identification with the
+divided-power symmetric product of the split cusp ribbon is false: its norm
+map kills `X^2` in the `k=2` collided fiber.  See
+[C22_CONDUCTOR_RIBBON_AUDIT.md](C22_CONDUCTOR_RIBBON_AUDIT.md).
+
+**Question.** Is `Z_k` nevertheless finite flat of rank `2^k` over the
+extracted `S`-base for every `k` in characteristic zero?
+
+A proof must construct a spanning set over the full completed base and rule
+out discriminant-supported torsion without using the refuted norm
+surjection.  A counterexample may instead exhibit rank jump, torsion, or an
+additional Artin deformation for some `k`.  Exact presentations are available
+through the bounded low-degree cases, with collided-fiber evidence for
+`k=5,6`; they do not establish the all-`k` quantifier.
+
 ## Polynomial equivalence of `C24_(m,1)` and generic weighted seeds
 
 Fix an algebraically closed characteristic-zero field and `m>1`.  Let
@@ -60,3 +78,26 @@ An explicit polynomial pair `(alpha,beta)`, a mismatch in one of items 1--3,
 or a proof that the normal-pair isomorphism cannot restrict polynomially would
 settle the question.  Bounded symbolic agreement of discriminants or fiber
 counts is not sufficient for an all-`m` conclusion.
+
+## Nonmonomial solutions of the generalized cancellation equation
+
+Use the notation of
+[GENERALIZED_CANCELLATION_MECHANISM.md](GENERALIZED_CANCELLATION_MECHANISM.md).
+For `e=1`, every polynomial leading solution is controlled by
+
+\[
+ I_n(q)=\int_0^1u\{1-q(1-u)\}^n\,du.
+\]
+
+A genuinely nonmonomial leading term requires a common root of `I_n` and
+`I_l` for distinct positive integers `n,l`.  No such common root occurs for
+`1<=n,l<=12`, but this is only a bounded exact computation.
+
+**Questions.** Are the polynomials `I_n` pairwise coprime in characteristic
+zero?  If not, does a common-root solution have an invertible linearization
+and a full cancellation jet with coefficients in `k[y]` rather than merely
+in `k[y,f(y)^(-1)]`?  Finally, is any resulting map inequivalent to a C24
+monomial member?
+
+For `e>=2`, even the polynomial solutions of the leading functional equation
+are unclassified.  No existence claim for a new family is made.

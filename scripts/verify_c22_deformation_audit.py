@@ -1,7 +1,10 @@
-"""Dependency-free regressions for the deformation-theoretic audit of C22.
+"""Internal ribbon regressions from the now-refuted C22 deformation audit.
 
 This deliberately avoids invariant rings and computer algebra.  Coefficients
 in the ordered conductor ribbon are represented by squarefree bit masks.
+These checks concern the ribbon itself; they do not test the false claim that
+its norm map is surjective onto the square/cube factorization block.  See
+``verify_c22_ribbon_functor.py`` for the counterexample.
 """
 
 from fractions import Fraction
@@ -268,3 +271,4 @@ print("PASS: exact divided differences satisfy the confluent product rule")
 print("PASS: linearized norm coefficients have triangular diagonal 1,...,k")
 print("PASS: normalized compound bases have ranks binomial(k,d) through k=8")
 print("PASS: the collision filtration has total rank 2^k through k=8")
+print("NOTICE: these ribbon checks do not imply norm surjectivity onto C22")
