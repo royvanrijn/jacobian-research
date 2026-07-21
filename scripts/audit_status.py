@@ -26,6 +26,7 @@ for line in status.splitlines():
 
 expected = [
     "Foundational Keller map and rational collision",
+    "Exact symplectic cotangent lift and Weyl quantization",
     "Cubic marked-root realization",
     "Exact cubic image, fibers, and nonproperness",
     "Weighted marked-root family and `S_n` monodromy",
