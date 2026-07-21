@@ -1,6 +1,6 @@
 # Provenance audit
 
-Audited 20--21 July 2026. This note separates the earliest public announcement
+Audited 20--22 July 2026. This note separates the earliest public announcement
 located so far from exact mathematical verification and from later structural
 exposition.
 
@@ -82,6 +82,31 @@ fiber results substantially overlap the pre-existing cubic marked-root and image
 credits the public post for the projective marked-root formulation. This
 audit has not established priority for that formulation, and the repository
 makes no such claim.
+
+## Marked-point dimension barrier
+
+The universal factorization setup, the boundary classes `(1,1)` and `(b,a)`,
+and the exact cubic contact classification were already present in the
+repository's scoped factorization-slice note.  On 22 July 2026 the repository
+isolated the uniform marked-point specialization
+
+\[
+ [R_n]=(n-1,1),\qquad [E_H]=(1,1),
+\]
+
+and the determinant `n-2` of the resulting boundary map.  This gives the
+complete unit/Picard obstruction in degree two and shows that affine space can
+occur in the universal marked-point/hyperplane-complement family only in
+dimension three.
+
+The argument depends conceptually on Jiang's marked-projective-root
+organization and on the repository's prior factorization-slice calculation;
+it is not attributed to the original counterexample announcement.  A limited
+search on 22 July 2026 did not locate an earlier source for this exact uniform
+boundary-lattice formulation.  The repository records that negative search
+result without making a priority claim.  The theorem and its explicit scope
+boundary are in the
+[marked-point dimension-barrier note](../../extended-geometry/MARKED_POINT_DIMENSION_BARRIER.md).
 
 ## Juntang Zhuang's quartic compilation
 
