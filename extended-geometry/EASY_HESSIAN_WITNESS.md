@@ -1,10 +1,11 @@
 # An easy degree-five test witness for the Hessian-root invariant
 
 This note gives a deliberately simple pair of degree-five weighted Keller maps
-for testing the stable Hessian-root invariant.  Both maps are defined over
+for testing the stable Hessian-root invariant. Both maps are defined over
 `Q`, both have Jacobian determinant `-1`, and one of them has an explicit
-rational collision.  Their stable inequivalence is visible from the single
-calculation that one Hessian polynomial is squarefree and the other is not.
+rational collision. Their stable inequivalence is visible before any
+cross-ratio calculation: the intrinsic Hessian-root support has three points
+for one map and two points for the other.
 
 ## 1. The two primitives
 
@@ -26,7 +27,7 @@ For both primitives,
  H(0)=H'(0)=H(1)=0,\qquad -H'(1)=-1.
 \]
 
-Thus the weighted normalization constant is `c=-1`.  The remaining
+Thus the weighted normalization constant is `c=-1`. The remaining
 admissibility data are
 
 \[
@@ -62,7 +63,7 @@ For either primitive define
 \]
 
 The weighted-seed polynomiality calculation shows that these quotients are
-polynomials.  Denote the resulting maps by
+polynomials. Denote the resulting maps by
 
 \[
  F_{\mathrm{red}},F_{\mathrm{dbl}}:\mathbb A^3\longrightarrow\mathbb A^3.
@@ -96,7 +97,7 @@ The inverse polynomial is
  H_{\mathrm{dbl}}(W)-20W+20,
 \]
 
-which has the two distinct simple roots `W=1` and `W=2`.  Reconstruction gives
+which has the two distinct simple roots `W=1` and `W=2`. Reconstruction gives
 
 \[
  P_1=\left(-\frac1{19},20,-\frac{22990}{3}\right),
@@ -114,17 +115,37 @@ Direct substitution gives
 
 Hence `F_dbl` is an entirely rational explicit Keller counterexample.
 
-The extra factor `2W^2-2W+1` has discriminant `-4`, and
+## 3. Boundary-clean audit
+
+The residual primitive factors are
+
+\[
+ R_{\mathrm{red}}(W)=W^2+1,
+ \qquad
+ R_{\mathrm{dbl}}(W)=2W^2-2W+1.
+\]
+
+Both have discriminant `-4`, so their two additional primitive roots are
+distinct. Moreover,
 
 \[
  \operatorname{Res}_W
- \left(2W^2-2W+1,-W+H_{\mathrm{dbl}}'(W)\right)=16.
+ \left(R_{\mathrm{red}},-W+H_{\mathrm{red}}'(W)\right)=1,
 \]
 
-Thus its two additional primitive-root branches are distinct and satisfy the
-boundary-clean condition used in the weighted boundary theorem.
+and
 
-## 3. The one-line stable distinction
+\[
+ \operatorname{Res}_W
+ \left(R_{\mathrm{dbl}},-W+H_{\mathrm{dbl}}'(W)\right)=16.
+\]
+
+Thus all additional primitive-root branches satisfy the boundary-clean
+condition. For each map, the complete canonical target boundary is therefore
+the intrinsically ordered pair consisting of the ramified discriminant vertex
+and `C=0`, exactly as required by the stable Hessian-root theorem.
+
+## 4. The one-line stable distinction
 
 The Hessian polynomials are
 
@@ -142,11 +163,17 @@ The first has discriminant
  \operatorname{Disc}(H_{\mathrm{red}}'')=-1080\ne0,
 \]
 
-while the second has the nonreduced divisor
+so its Hessian-root support consists of three distinct points. The second has
+support
 
 \[
- \operatorname{div}(H_{\mathrm{dbl}}'')
- =2[1/2]+[1/5].
+ \{1/2,1/5\}
+\]
+
+and scheme-theoretic divisor
+
+\[
+ \operatorname{div}(H_{\mathrm{dbl}}'')=2[1/2]+[1/5].
 \]
 
 On the normalization of the intrinsic discriminant open, the zeroth Fitting
@@ -157,23 +184,26 @@ ideal of the relative differential module is
  \Omega_{\widetilde D_H/D_H}=(H''(r)).
 \]
 
-Stable left--right equivalence preserves this finite divisor scheme up to an
-affine change of the normalization coordinate.  In particular it preserves
-reducedness.  Therefore
+Stable left--right equivalence preserves this module and its support after
+stabilization. Hence it preserves the number of irreducible Hessian-root
+components. Here that number is three versus two, which is already impossible.
+The full Fitting divisor additionally records the doubled point. Therefore
 
 \[
  \boxed{F_{\mathrm{red}}\not\sim_{\mathrm{stable}}F_{\mathrm{dbl}}.}
 \]
 
-This is the smallest practical regression for the new theorem: no cross-ratio
-calculation is needed.  The test is simply
+This is the smallest practical regression for the new theorem. The essential
+test is simply
 
 ```text
-discriminant(H_red'') != 0
-discriminant(H_dbl'') == 0
+degree(squarefree_part(H_red'')) == 3
+degree(squarefree_part(H_dbl'')) == 2
 ```
 
-## 4. Exact reproduction
+with the discriminants providing an equivalent quick check.
+
+## 5. Exact reproduction
 
 Run
 
@@ -182,5 +212,5 @@ Run
 ```
 
 The checker verifies admissibility, polynomiality, both constant Jacobians,
-generic degree five, the rational collision, the boundary-clean resultant,
-and the reduced-versus-nonreduced Hessian divisor obstruction.
+generic degree five, the rational collision, both boundary-clean resultants,
+and the three-component-versus-two-component Hessian-root obstruction.
