@@ -42,6 +42,15 @@ globally, a locally closed immersion on exact contact strata, with the
 exceptional locus equal to its normalized admissible hyperplane slice.
 ([Claim C21](CLAIMS.md#c21))
 
+The broader [universal factorization geometry](notes/UNIVERSAL_FACTORIZATION_GEOMETRY.md)
+classifies the normalized hyperplane slices of
+`P^a x P^b -> P^(a+b)`.  It proves that the tangent nonosculating slice is the
+unique cubic affine-space complement, while the next `(2,3)` candidate has
+good-reduction count `q^5-q^3+q^2` and is not `A^5`.  The same framework
+identifies `Z_k` as a local square/cube factorization fiber and the weighted
+maps as three-dimensional pullbacks of the universal marked-factor geometry.
+([Claim C23](CLAIMS.md#c23))
+
 ### Proof status
 
 The foundational three-dimensional counterexample has direct executable

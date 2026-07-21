@@ -9,6 +9,18 @@ new point is the correct global formulation: the raw simple-root locus works
 over `C!=0`, but over `C=0` one must normalize the root incidence and retain
 exactly the branches on which reconstruction is regular.
 
+Universally, this is the pullback of the marked linear-factor map
+`mu_(1,n-1)` along
+
+\[
+ (A,B,C)\longmapsto H(W)-BCW+cAC^2.
+\]
+
+The parameter space is three-dimensional even though the polynomial depends
+on it through two pencil coordinates: `C` retains the reconstruction scale.
+This factorization-slice interpretation is developed in
+[UNIVERSAL_FACTORIZATION_GEOMETRY.md](UNIVERSAL_FACTORIZATION_GEOMETRY.md).
+
 Work over a characteristic-zero field `k`.  Let `H in k[W]` be an admissible
 primitive of degree `n`, with
 

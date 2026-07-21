@@ -17,6 +17,19 @@ along `(U,V)=(S^3,S^2)`, of the scheme of monic polynomials of degrees
 Write `Z_k^aff` for the same completion with (1) weakened to
 `U^2-V^3 in K[Z]_(<=1)`.
 
+Equivalently, before completion the strong scheme is the fiber product
+
+\[
+ \operatorname{Poly}_{3k}^{\rm mon}
+ \mathop{\times}_{\operatorname{Poly}_{6k}^{\rm mon}}
+ \operatorname{Poly}_{2k}^{\rm mon},
+\]
+
+for the squaring and cubing maps, and `Z_k` is its completion along
+`S mapsto (S^3,S^2)`.  Thus `Z_k` is the local square/cube factorization
+fiber; see [UNIVERSAL_FACTORIZATION_GEOMETRY.md](UNIVERSAL_FACTORIZATION_GEOMETRY.md)
+for the ambient multiplication-map interpretation.
+
 ## The theorem
 
 For every `k>=1`:

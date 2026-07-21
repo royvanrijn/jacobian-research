@@ -9,6 +9,10 @@ open on which the marked root reconstructs a source point.
 This note is a synthesis.  The target-side quotient statement is proved
 precisely in [MASTER_QUOTIENT_THEOREM.md](MASTER_QUOTIENT_THEOREM.md); only
 its closed-immersion upgrade across all collision strata remains conjectural.
+The ambient multiplication maps, their torus-normalized hyperplane slices,
+the uniqueness of the cubic affine complement, and the obstruction to the
+next `(2,3)` candidate are developed in
+[UNIVERSAL_FACTORIZATION_GEOMETRY.md](UNIVERSAL_FACTORIZATION_GEOMETRY.md).
 Claim C01 remains independently certified by Dean Cureton's Lean 4
 formalization; see [LEAN_C01.md](LEAN_C01.md).
 
@@ -210,6 +214,12 @@ Its finite degree-`n` root incidence is
 \[
  \mathcal I_H=V(E)\subset\mathbb A^3_{A,B,C}\times\mathbb A^1_W.
 \]
+
+This incidence is the pullback of the universal factorization map
+`mu_(1,n-1)` along the three-parameter map
+`(A,B,C) mapsto H-BCW+cAC^2`.  The coordinate `C` is the reconstruction scale,
+so this is a three-dimensional parametrized pullback even though its image in
+polynomial coefficient space lies in the affine pencil `H+<1,W>`.
 
 Let `I_H^nu` be its normalization and let `R_H` be the locus where the
 marked root reconstructs regular source coordinates.  C04 and C16 prove the

@@ -51,6 +51,9 @@ flowchart LR
     C17 --> C19
     C17 --> C20
     C17 --> C22
+    C02 --> C23
+    C04 --> C23
+    C22 --> C23
 
     C07 --> C21
     C08 --> C21
@@ -906,6 +909,50 @@ associated gradeds.
 filtered invariant descent remains pending.  The theorem handles every local
 block, not arbitrary global equalizers coupling several collision roots.
 
+## C23 — universal factorization slices
+
+**Quantified statement.**  For multiplication
+`mu_(a,b):P^a x P^b -> P^(a+b)`, the complement of the resultant and the
+pullback of a hyperplane has the explicit torus-normalized presentation (7)
+of [UNIVERSAL_FACTORIZATION_GEOMETRY.md](UNIVERSAL_FACTORIZATION_GEOMETRY.md).
+Hyperplane contact is the zero partition, with support moduli, of its
+restriction to the rational normal curve.  For the cubic map, the contact
+types `(1,1,1)`, `(2,1)`, and `(3)` have reduction counts `q^3-q`, `q^3`, and
+`q^3-q^2`; hence the known `(2,1)` slice is the unique affine three-space.
+The `(a,b)=(2,3)` middle slice has constant units, trivial Picard/class group
+and canonical class, Euler characteristic one, but count `q^5-q^3+q^2`, so
+it is not affine five-space.  The completed transfer block `Z_k` is the local
+fiber product of squaring and cubing, and the weighted marked-root spaces are
+three-dimensional pullbacks of `mu_(1,n-1)`.
+
+**Depends on.**  C02 for the positive cubic `(2,1)` identification; C04 for
+the weighted normalized marked-root pullback; C22 for the completed
+square/cube transfer fiber; multiplication of binary forms; the resultant
+ramification divisor; the contact form on the rational normal curve;
+homogeneous-polynomial Moebius inversion and bilinear-form ranks.
+
+**Computation.**  `verify_universal_factorization_geometry.py` checks the
+three cubic normal forms, the consecutive-degree resultant weight, exact
+cubic counts over three finite fields, the `(2,3)` count over five finite
+fields, its symbolic Moebius sum, the local cusp jet, and the weighted
+three-parameter polynomial identity.
+
+**Prose.**  [UNIVERSAL_FACTORIZATION_GEOMETRY.md](UNIVERSAL_FACTORIZATION_GEOMETRY.md)
+derives the torus quotient and resultant gauge, classifies normalized contact
+slices, proves the cubic fiber decompositions, proves the `(2,3)` count by
+Moebius inversion, and identifies the two universal pullback/fiber-product
+constructions.
+
+**External theorems.**  The divisor localization sequence for units and
+Picard groups; spreading out a characteristic-zero isomorphism to almost all
+finite places.  The optional Hodge--Deligne-polynomial statement uses the
+standard polynomial-count comparison.
+
+**Obligations.**  An independent motivic computation of the `(2,3)` class
+and an independent affine-geometry audit remain desirable.  No classification
+of all higher-degree hyperplanes beyond their contact partition plus support
+moduli is claimed.
+
 ## Cross-claim unresolved obligations
 
 The following obligations affect more than one node:
@@ -922,4 +969,7 @@ The following obligations affect more than one node:
    set-theoretic or restricted to named transfer vectors.
 6. C21 proves finite radiciality and stratumwise immersion, but the
    affine-rigidity closed-immersion conjecture at arbitrary collisions remains
+   open.
+7. C23 rules out the first higher consecutive candidate arithmetically; a
+   uniform classification of higher affine factorization complements remains
    open.

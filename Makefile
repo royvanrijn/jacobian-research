@@ -46,6 +46,7 @@ verify-theorems:
 	$(PYTHON) scripts/classify_transfer_block_k3.py
 	$(PYTHON) scripts/classify_transfer_block_k4.py
 	$(PYTHON) scripts/verify_all_k_transfer_block.py
+	$(PYTHON) scripts/verify_universal_factorization_geometry.py
 	$(PYTHON) scripts/verify_allocation_hensel_product.py
 	$(PYTHON) scripts/verify_mixed_allocation_equalizer.py
 	$(PYTHON) scripts/verify_omitted_value_classification.py
