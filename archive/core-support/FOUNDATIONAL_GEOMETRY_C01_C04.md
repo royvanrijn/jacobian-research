@@ -61,7 +61,7 @@ three.
 There are three independent certificates for this finite calculation: two
 local implementations and Dean Cureton's separately authored pinned Lean 4
 formalization.  The Lean scope and attribution are recorded in
-[LEAN_C01.md](LEAN_C01.md).
+[LEAN_C01.md](../../verified/LEAN_C01.md).
 
 A complementary positive covariance test is
 [C01_INVARIANCE_REGRESSION.md](C01_INVARIANCE_REGRESSION.md).  It applies

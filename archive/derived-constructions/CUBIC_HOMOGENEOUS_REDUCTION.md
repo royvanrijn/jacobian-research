@@ -93,4 +93,4 @@ The degree-reduction formula follows the four-step implementation in L. Andrew
 Campbell, *Reduction Theorems for the Strong Real Jacobian Conjecture* (2014),
 which in turn implements the Bass--Connell--Wright/Yagzhev reduction.
 The independent regeneration and primary-source hypothesis audit are recorded
-in [C15_INDEPENDENT_AUDIT.md](C15_INDEPENDENT_AUDIT.md).
+in [C15_INDEPENDENT_AUDIT.md](../../experimental/geometry/C15_INDEPENDENT_AUDIT.md).

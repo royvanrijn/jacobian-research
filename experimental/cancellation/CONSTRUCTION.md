@@ -214,14 +214,9 @@ The argument establishes the determinant (4), polynomiality criterion (8),
 parameter formula and recurrence (10)--(12), exact reconstruction
 (13)--(15), and collision (16)--(17) for every `m,r>=1`.
 
-Verification entry points:
-
-- `scripts/master_cancellation.py` implements the operator and recurrence;
-- `scripts/verify_master_universal.py` checks the uniform identities in
-  bounded structural ranges;
-- `scripts/verify_master_instances.py` checks exact displayed instances;
-- `archive/tooling/generate_master_regression.py m r` generates an optional
-  new regression pair.
+The public reproduction target is `make verify-master`; see
+[REPRODUCE.md](../../REPRODUCE.md).  Optional generators and exploratory
+regressions are retained under `archive/tooling/`.
 
 The detailed former master note and its component derivations are retained in
 [the cancellation archive](../../archive/cancellation-components/).

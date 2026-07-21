@@ -166,10 +166,11 @@ certificates through inverse degree ten provide computational regressions.
 
 For the canonical family `H_d(W)=W^d(1-W)`, the only primitive zeros are the
 distinguished points `0` and `1`. Its global geometry is now proved in
-`CANONICAL_FAMILY_IMAGE.md`. Deformed seeds should be treated afterward
-because their extra primitive zeros create additional `C=0` branches. The
-boundary-clean case and the full one-extra-simple-zero family are treated in
-`DEFORMED_SEED_BOUNDARY.md`.
+[the canonical-family image theorem](../experimental/geometry/CANONICAL_FAMILY_IMAGE.md).
+Deformed seeds should be treated afterward because their extra primitive
+zeros create additional `C=0` branches.  The earlier one-extra-zero derivation
+is retained in
+[archive/geometry-support](../archive/geometry-support/DEFORMED_SEED_BOUNDARY.md).
 
 ## Finite-field interpretation
 
@@ -185,17 +186,7 @@ separate arithmetic step.
 
 The good-reduction asymptotic, its `S_n` fixed-point probabilities, and the
 transfer from the pencil to the three-dimensional target are proved in
-`FINITE_FIELD_CHEBOTAREV.md`.
-
-Run the finite-degree exact audit with:
-
-```bash
-.venv/bin/python scripts/verify_weighted_seed_theorem.py
-```
-
-It checks canonical inverse degrees `3` through `8` and four noncanonical
-deformations, including irreducibility, discriminant elimination, birational
-degree data, and an exact smooth double-root representative.
+[the finite-field theorem](../experimental/geometry/FINITE_FIELD_CHEBOTAREV.md).
 
 ### Clean-room reproduction
 
@@ -209,4 +200,5 @@ python3 scripts/audit_c04_independent.py
 ```
 
 The detailed former audit narrative is retained in
-[archive/core-support](../archive/core-support/README.md).
+[archive/core-support](../archive/core-support/README.md).  The public command
+sequence is in [REPRODUCE.md](../REPRODUCE.md).

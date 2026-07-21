@@ -1,7 +1,7 @@
 # Clean-room strengthening of the C12 local singularity
 
 This audit isolates the algebraic heart of
-[DEGREE12_LOCAL_SINGULARITY.md](DEGREE12_LOCAL_SINGULARITY.md) and checks it
+[DEGREE12_LOCAL_SINGULARITY.md](../../experimental/geometry/DEGREE12_LOCAL_SINGULARITY.md) and checks it
 without SymPy or project algebra helpers.
 
 For one exchanged sixfold root, depress the cubic and write

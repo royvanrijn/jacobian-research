@@ -44,7 +44,7 @@ on `C=0` has a unique finite boundary preimage.
 
 ## Scan executed
 
-`scripts/scan_weighted_seeds.py` scanned 627 distinct admissible seeds through
+`archive/tooling/scan_weighted_seeds.py` scanned 627 distinct admissible seeds through
 degree six. It used the canonical primitives
 
 \[

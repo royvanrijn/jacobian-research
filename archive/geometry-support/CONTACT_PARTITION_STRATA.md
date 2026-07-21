@@ -100,7 +100,7 @@ its seed image has dimension `k-1`; see
 `UNIFORM_EXCEPTIONAL_SEEDS.md`.  Uniform nonemptiness of the exact admissible
 open, finiteness of the top-coefficient map, and the exact closure converse
 are proved together in
-[COINCIDENT_ROOT_REBUILD.md](COINCIDENT_ROOT_REBUILD.md).
+[COINCIDENT_ROOT_REBUILD.md](../../experimental/geometry/COINCIDENT_ROOT_REBUILD.md).
 
 ## Simultaneous omissions
 

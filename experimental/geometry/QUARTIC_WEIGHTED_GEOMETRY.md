@@ -26,32 +26,6 @@ Both apparent quotients cancel. Exact expansion gives coordinate degrees
 G(1,0,0)=G(-1,0,2)=(0,0,1).
 \]
 
-## Implementation record
-
-- [x] Generalized weighted-seed builder.
-- [x] Exact integer quartic map, polynomiality, determinant, degrees, and
-  collision.
-- [x] `C!=0` root reconstruction and pole classification.
-- [x] Discriminant and repeated-root normalization.
-- [x] Cusp/node classification.
-- [x] Direct `C=0` fiber calculation.
-- [x] Explicit escaping sequences for both anticipated components of `S_{G}`.
-- [x] Converse properness outside those components.
-- [x] Radical certificate for the singular locus.
-- [x] Exact image and fiber-cardinality theorem.
-- [x] Connectedness and geometric/arithmetic monodromy `S_4`.
-- [x] Universal inverse, discriminant-normalization, and `S_n` monodromy
-  theorem for arbitrary characteristic-zero seeds.
-- [x] Generalization of the image and nonproperness statements to the
-  canonical family.
-- [x] Boundary and image theorem for one additional simple primitive zero.
-- [x] Omitted-value classification for several or repeated extra zeros.
-- [x] Boundary saturation theorem for repeated extra zeros.
-- [x] Good-reduction finite-field Chebotarev law from universal `S_n`
-  monodromy.
-- [x] Generic nodal-cuspidal discriminant theorem and generic surjectivity in
-  inverse degree at least five.
-
 ## Quartic inverse on `C!=0`
 
 For target `(A,B,C)`, the inverse equation is

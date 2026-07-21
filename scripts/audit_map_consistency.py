@@ -115,8 +115,8 @@ def canonical_value(point: tuple[int, int, int]) -> tuple[int, int, int]:
     return tuple(int(component.subs(substitutions)) for component in CANONICAL)
 
 
-distribution = load_functions("scripts/finite_field_distribution.py")
-refinements = load_functions("scripts/finite_field_refinements.py")
+distribution = load_functions("archive/tooling/finite_field_distribution.py")
+refinements = load_functions("archive/tooling/finite_field_refinements.py")
 for point in ((a, b, c) for a in range(-2, 3)
               for b in range(-2, 3) for c in range(-2, 3)):
     expected = canonical_value(point)

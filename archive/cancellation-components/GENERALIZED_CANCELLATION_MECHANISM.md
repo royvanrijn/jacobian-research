@@ -536,7 +536,7 @@ C24 coordinates.  QED
 
 Thus the generalized one-variable input and the two weights do not produce
 a new polynomial-equivalence class inside this coordinate skeleton.  The
-bounded search in `scripts/search_generalized_spectrum.py` is retained only
+bounded search in `archive/tooling/search_generalized_spectrum.py` is retained only
 as a stress test of the uniform formula.
 
 ## 6. Necessary and sufficient recursive conditions for polynomial lifting
@@ -642,5 +642,5 @@ Enestrom--Kakeya argument, not the bounded search.
 The larger stress test is run separately:
 
 ```bash
-.venv/bin/python scripts/search_generalized_spectrum.py
+.venv/bin/python archive/tooling/search_generalized_spectrum.py
 ```

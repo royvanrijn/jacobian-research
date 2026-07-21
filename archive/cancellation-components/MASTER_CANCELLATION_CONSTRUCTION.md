@@ -526,4 +526,4 @@ arithmetic and equivalence statements.
   Galois classification for `mr<=6`; and
 - `scripts/verify_parameter_galois_jordan.py`: Frobenius--Jordan parameter-
   Galois classification for `7<=mr<=30`; and
-- `scripts/generate_master_regression.py m r`: generator for a new pair.
+- `archive/tooling/generate_master_regression.py m r`: generator for a new pair.

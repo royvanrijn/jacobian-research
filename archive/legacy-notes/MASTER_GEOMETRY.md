@@ -107,7 +107,7 @@ condition `Phi=0` cuts its root normalization by one, giving
 \]
 
 The weighted-Vandermonde argument in
-[UNIFORM_EXCEPTIONAL_SEEDS.md](../../experimental/geometry/UNIFORM_EXCEPTIONAL_SEEDS.md) additionally
+[UNIFORM_EXCEPTIONAL_SEEDS.md](../geometry-support/UNIFORM_EXCEPTIONAL_SEEDS.md) additionally
 proves that the map to seed coefficients does not lower this dimension.
 
 ## 3. Classical coincident-root loci

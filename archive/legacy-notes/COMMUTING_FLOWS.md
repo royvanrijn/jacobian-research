@@ -139,7 +139,7 @@ These exponents refer to \(x=2/P'(t)\), hence to the largest affine coordinate
 after reconstruction. The table upgrades the earlier generic \(2/3\) statement
 to a full directional classification at every point of \(\Gamma\).
 
-Run .venv/bin/python scripts/commuting_flows.py for the exact certificates.
+Run .venv/bin/python archive/tooling/commuting_flows.py for the exact certificates.
 
 ## A nonconstant complete combination
 
@@ -274,4 +274,4 @@ flows preserving the omitted curve whose basic inverse-Jacobian lifts fail to
 be complete. The weighted Euler symmetry remains special because its lift is
 compatible with the source scaling itself.
 
-Run .venv/bin/python scripts/low_degree_symmetries.py for the enumeration.
+Run .venv/bin/python archive/tooling/low_degree_symmetries.py for the enumeration.

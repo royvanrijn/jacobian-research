@@ -189,7 +189,7 @@ generic degree certificate, and discriminant identity.
 [MARKED_ROOT_MODEL.md](../../verified/MARKED_ROOT_MODEL.md) prove the global two-chart
 incidence isomorphism and explain why denominator clearing loses no root
 chart. [README §1](../../README.md#1-geometric-construction-and-explicit-map)
-states the intrinsic construction; [FACTS.md](../../verified/FACTS.md#function-field-model)
+states the intrinsic construction; [FACTS.md](../core-support/FACTS.md#function-field-model)
 proves the function-field degree argument.
 
 **External theorems.**  Standard identifications `Sym^d(P^1) ~= P^d` and of
@@ -278,9 +278,9 @@ arithmetic and no project weighted-model code.
 **Prose.**  [FOUNDATIONAL_GEOMETRY.md](../../verified/FOUNDATIONAL_GEOMETRY.md) collects the
 independent proof spine; [WEIGHTED_SEED_THEOREM.md](../../verified/WEIGHTED_SEED_THEOREM.md)
 proves the uniform pencil and algebraic monodromy theorem; and
-[WEIGHTED_MARKED_ROOT_MODEL.md](../../verified/WEIGHTED_MARKED_ROOT_MODEL.md) proves the
+[WEIGHTED_MARKED_ROOT_MODEL.md](../core-support/WEIGHTED_MARKED_ROOT_MODEL.md) proves the
 normalized global reconstruction statement.
-[C04_INDEPENDENT_AUDIT.md](../../verified/C04_INDEPENDENT_AUDIT.md) gives a
+[C04_INDEPENDENT_AUDIT.md](../core-support/C04_INDEPENDENT_AUDIT.md) gives a
 clean-room derivation and an alternative vertical-line branch-cycle proof of
 `S_n`.
 
@@ -370,8 +370,8 @@ check bounded instances and nonsplit factors; those are regressions for the
 uniform family statements.
 
 **Prose.**  [CANONICAL_FAMILY_IMAGE.md](../../experimental/geometry/CANONICAL_FAMILY_IMAGE.md),
-[DEFORMED_SEED_BOUNDARY.md](../../experimental/geometry/DEFORMED_SEED_BOUNDARY.md), and
-[REPEATED_ROOT_BOUNDARY.md](../../experimental/geometry/REPEATED_ROOT_BOUNDARY.md) prove the lacunary
+[DEFORMED_SEED_BOUNDARY.md](../geometry-support/DEFORMED_SEED_BOUNDARY.md), and
+[REPEATED_ROOT_BOUNDARY.md](../geometry-support/REPEATED_ROOT_BOUNDARY.md) prove the lacunary
 factor classification, direct boundary fibers, valuation formula, and both
 image/nonproperness inclusions.
 
@@ -400,7 +400,7 @@ identities.  Mason alternatives through degree 24 are regression tests.
 
 **Prose.**  [OMITTED_VALUE_CLASSIFICATION.md](../../experimental/geometry/OMITTED_VALUE_CLASSIFICATION.md)
 proves exhaustiveness of factor matching;
-[UNIQUE_OMITTED_VALUE.md](../../experimental/geometry/UNIQUE_OMITTED_VALUE.md) proves separation and the
+[UNIQUE_OMITTED_VALUE.md](../geometry-support/UNIQUE_OMITTED_VALUE.md) proves separation and the
 remaining all-double case.
 
 **External theorems.**  Polynomial Mason--Stothers.
@@ -434,8 +434,8 @@ audit, not an all-degree proof.
 **Prose.**  [COINCIDENT_ROOT_REBUILD.md](../../experimental/geometry/COINCIDENT_ROOT_REBUILD.md) proves
 nonemptiness by splitting an admissible maximally collided polynomial,
 finiteness by weighted Newton coordinates, and the exact dimension formula.
-[CONTACT_PARTITION_STRATA.md](../../experimental/geometry/CONTACT_PARTITION_STRATA.md) and
-[UNIFORM_EXCEPTIONAL_SEEDS.md](../../experimental/geometry/UNIFORM_EXCEPTIONAL_SEEDS.md) retain the
+[CONTACT_PARTITION_STRATA.md](../geometry-support/CONTACT_PARTITION_STRATA.md) and
+[UNIFORM_EXCEPTIONAL_SEEDS.md](../geometry-support/UNIFORM_EXCEPTIONAL_SEEDS.md) retain the
 incidence API and original formulation.
 
 **External theorems.**  Finite group quotients, the homogeneous base-locus
@@ -495,7 +495,7 @@ checked.  Bounded Mason scans are regressions only.
 **Prose.**  [COINCIDENT_ROOT_REBUILD.md](../../experimental/geometry/COINCIDENT_ROOT_REBUILD.md) derives
 both directions of the closure order from finite coincident-root
 normalizations, proves maximal irreducibility, and derives intersections from
-unique omission.  [UNIFORM_EXCEPTIONAL_SEEDS.md](../../experimental/geometry/UNIFORM_EXCEPTIONAL_SEEDS.md)
+unique omission.  [UNIFORM_EXCEPTIONAL_SEEDS.md](../geometry-support/UNIFORM_EXCEPTIONAL_SEEDS.md)
 contains the endpoint details and original component formulas.
 
 **External theorems.**  Polynomial Mason--Stothers and standard finite
@@ -679,8 +679,8 @@ independent of SymPy.  It checks `rank(B_0)=59`, the minimal 36-column
 complement, all pairing identities and collisions, and generates the explicit
 consequence artifact.
 
-**Prose.**  [CUBIC_HOMOGENEOUS_REDUCTION.md](../../experimental/geometry/CUBIC_HOMOGENEOUS_REDUCTION.md)
-and [CUBIC_LINEAR_REDUCTION.md](../../experimental/geometry/CUBIC_LINEAR_REDUCTION.md) document each
+**Prose.**  [CUBIC_HOMOGENEOUS_REDUCTION.md](../derived-constructions/CUBIC_HOMOGENEOUS_REDUCTION.md)
+and [CUBIC_LINEAR_REDUCTION.md](../derived-constructions/CUBIC_LINEAR_REDUCTION.md) document each
 transformation and the dimension counts.  [C15_INDEPENDENT_AUDIT.md](../../experimental/geometry/C15_INDEPENDENT_AUDIT.md)
 audits the hypotheses and consequences.
 
@@ -723,7 +723,7 @@ relations and reconstruction valuations through multiplicity nineteen.
 
 **Prose.**  [DICRITICAL_COMPACTIFICATION.md](../../experimental/geometry/DICRITICAL_COMPACTIFICATION.md)
 proves exhaustiveness by valuations and applies the valuative criterion.
-[C16_BLOWUP_GEOMETRY.md](../../experimental/geometry/C16_BLOWUP_GEOMETRY.md) gives the centers, four graph
+[C16_BLOWUP_GEOMETRY.md](../geometry-support/C16_BLOWUP_GEOMETRY.md) gives the centers, four graph
 charts, local toric charts, exceptional divisors, discrepancies, dual graphs,
 target images and the precise minimality statement.
 

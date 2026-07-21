@@ -88,7 +88,7 @@ or endgame multiplicities must be retained.
 
 ## Benchmark protocol
 
-`scripts/nonproper_fiber_homotopy.jl` starts from the exact three-point fiber
+`archive/tooling/nonproper_fiber_homotopy.jl` starts from the exact three-point fiber
 at `s=0`, attempts each labeled path through `delta=10^-1,...,10^-10`, and
 emits CSV rows comparing observed and predicted norms, coordinates, and
 normalized projective endpoints.  A lost affine path is recorded as `LOST`
@@ -109,14 +109,14 @@ finite/infinite classification, and accidental merging of projective branches.
 Run the exact oracle first:
 
 ```bash
-.venv/bin/python scripts/nonproper_fiber_benchmark.py
+.venv/bin/python archive/tooling/nonproper_fiber_benchmark.py
 ```
 
 Then run the numerical adapter in an environment with Julia and
 HomotopyContinuation.jl:
 
 ```bash
-julia --project=. scripts/nonproper_fiber_homotopy.jl
+julia --project=. archive/tooling/nonproper_fiber_homotopy.jl
 ```
 
 The parameter-homotopy call follows the current HomotopyContinuation.jl

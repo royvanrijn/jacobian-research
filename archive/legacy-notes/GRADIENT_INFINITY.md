@@ -103,7 +103,7 @@ Palais--Smale curve certifies loss of compactness but is not itself a gradient
 trajectory or a basin boundary.
 
 These identities are checked exactly by
-`scripts/analyze_gradient_infinity.py`.
+`archive/tooling/analyze_gradient_infinity.py`.
 
 ## Next calculation
 

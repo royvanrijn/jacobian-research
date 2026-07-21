@@ -2,9 +2,9 @@
 
 This note generalizes the marked-root viewpoint from the exceptional cubic to
 the admissible weighted inverse-pencil family.  It packages formulas already
-used in [WEIGHTED_SEED_THEOREM.md](WEIGHTED_SEED_THEOREM.md) and the divisor
+used in [WEIGHTED_SEED_THEOREM.md](../../verified/WEIGHTED_SEED_THEOREM.md) and the divisor
 classification in
-[DICRITICAL_COMPACTIFICATION.md](../experimental/geometry/DICRITICAL_COMPACTIFICATION.md).  The main
+[DICRITICAL_COMPACTIFICATION.md](../../experimental/geometry/DICRITICAL_COMPACTIFICATION.md).  The main
 new point is the correct global formulation: the raw simple-root locus works
 over `C!=0`, but over `C=0` one must normalize the root incidence and retain
 exactly the branches on which reconstruction is regular.
@@ -19,7 +19,7 @@ Universally, this is the pullback of the marked linear-factor map
 The parameter space is three-dimensional even though the polynomial depends
 on it through two pencil coordinates: `C` retains the reconstruction scale.
 This factorization-slice interpretation is developed in
-[the archived factorization-slice note](../archive/transfer-program/cubic-factorization-obstruction.md).
+[the archived factorization-slice note](../transfer-program/cubic-factorization-obstruction.md).
 
 Work over a characteristic-zero field `k`.  Let `H in k[W]` be an admissible
 primitive of degree `n`, with
@@ -352,7 +352,7 @@ same valuations are the dicritical boundary divisors.
 The Kummer exponents in (18) are ramification indices.  Each corresponding
 prime divisor has residue degree one over `C=0`; the explicit blow-ups and
 the intervening nondicritical `A`-chains are computed in
-[C16_BLOWUP_GEOMETRY.md](../experimental/geometry/C16_BLOWUP_GEOMETRY.md).
+[C16_BLOWUP_GEOMETRY.md](../geometry-support/C16_BLOWUP_GEOMETRY.md).
 
 The exact image and omission statements remain seed-dependent.  The theorem
 organizes their inverse geometry but does not replace the boundary arguments
@@ -361,7 +361,7 @@ in the canonical, deformed, and repeated-root notes.
 ## Relation with the exceptional cubic
 
 For the exceptional cubic, the alternative binary root `[U:V]` used in
-[MARKED_ROOT_MODEL.md](MARKED_ROOT_MODEL.md) already packages the affine
+[MARKED_ROOT_MODEL.md](../../verified/MARKED_ROOT_MODEL.md) already packages the affine
 source as a raw simple-root locus, including its root at infinity.  For a
 general weighted seed the natural root `W` has no projective root at infinity,
 but its incidence is singular over the multiple root `W=0`; normalization and
