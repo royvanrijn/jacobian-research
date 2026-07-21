@@ -13,7 +13,7 @@ where every nonzero component term of `H` is homogeneous of degree three,
 image.  Thus `K` is an explicit cubic-homogeneous Keller counterexample.
 
 The full map is stored sparsely in
-`results/cubic_homogeneous_counterexample.json`.  It has 148 nonzero cubic
+`artifacts/generated-results/cubic_homogeneous_counterexample.json`.  It has 148 nonzero cubic
 terms, so the sparse artifact is a substantially clearer exact specification
 than 95 expanded coordinate formulas.
 

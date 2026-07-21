@@ -91,4 +91,4 @@ Reproduce with:
 make scan-weighted-seeds
 ```
 
-The detailed generated output is `results/weighted_seed_scan.json`.
+The detailed generated output is `artifacts/generated-results/weighted_seed_scan.json`.

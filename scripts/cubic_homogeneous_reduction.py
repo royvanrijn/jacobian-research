@@ -23,7 +23,7 @@ import sympy as sp
 
 
 ROOT = Path(__file__).resolve().parents[1]
-OUTPUT = ROOT / "results" / "cubic_homogeneous_counterexample.json"
+OUTPUT = ROOT / "artifacts" / "generated-results" / "cubic_homogeneous_counterexample.json"
 
 
 def rational_text(value: sp.Expr) -> str:

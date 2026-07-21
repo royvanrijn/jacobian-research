@@ -1,0 +1,23 @@
+\section{Explicit counterexample}
+
+Let $k$ be a characteristic-zero field, put $u=1+xy$, and define
+$F=(F_1,F_2,F_3):\A_k^3\to\A_k^3$ by
+\begin{align*}
+F_1&=u^3z+y^2u(4+3xy),\\
+F_2&=y+3xu^2z+3xy^2(4+3xy),\\
+F_3&=2x-3x^2y-x^3z.
+\end{align*}
+
+\begin{theorem}\label{thm:counterexample}
+The map $F$ has $\det DF=-2$ and
+\[
+F(0,0,-1/4)=F(1,-3/2,13/2)=F(-1,3/2,13/2)=(-1/4,0,0).
+\]
+In particular, $F$ is an everywhere-etale noninjective polynomial map.
+After adjoining identity coordinates, the same conclusion holds in every
+dimension at least three.
+\end{theorem}
+
+The proof is split into a structural determinant calculation and exact
+substitution.  This separation makes the finite certificate easy to reproduce
+without relying on the later geometry.

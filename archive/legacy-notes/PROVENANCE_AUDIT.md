@@ -49,7 +49,7 @@ the formalization and does not infer discovery priority from the later proof.
 The audited commit has no license file.  The integration therefore records
 authorship and an immutable source link and supplies a target that builds the
 upstream checkout, rather than copying or adapting its Lean source.  See
-[LEAN_C01](LEAN_C01.md) for the theorem-by-theorem scope and reproduction
+[LEAN_C01](../../verified/LEAN_C01.md) for the theorem-by-theorem scope and reproduction
 instructions.
 
 ## Later exposition, not discovery provenance

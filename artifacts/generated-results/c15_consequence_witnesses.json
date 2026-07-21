@@ -37,7 +37,7 @@
     "dimension": 190,
     "variables": "u_0,...,u_94,v_0,...,v_94",
     "definition": "R(u,v)=-sum_i ((u_i-I*v_i)/sqrt(2))*H_i((u+I*v)/sqrt(2))",
-    "source_H": "results/cubic_homogeneous_counterexample.json",
+    "source_H": "artifacts/generated-results/cubic_homogeneous_counterexample.json",
     "terms": [
       {
         "coefficient": "3/8",

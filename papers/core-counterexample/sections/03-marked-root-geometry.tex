@@ -1,0 +1,37 @@
+\section{Marked-root geometry}
+
+For $(a,b,c)\in\A^3$, consider the binary cubic
+\[
+Q_{a,b,c}(U,V)=cU^3-2U^2V+bUV^2-2aV^3.
+\]
+Let $I\subset\A^3\times\Pone$ be its root incidence and let
+$I^{\mathrm{simp}}$ denote the locus where the marked root is simple.
+
+\begin{theorem}\label{thm:marked-root}
+The morphism
+\[
+\A^3\longrightarrow I^{\mathrm{simp}},\qquad
+(x,y,z)\longmapsto(F(x,y,z),[1+xy:x])
+\]
+is an isomorphism. Under this isomorphism, $F$ is the finite projection which
+forgets the marked simple root.
+\end{theorem}
+
+On $V\ne0$, put $T=U/V$ and
+$P(T)=cT^3-2T^2+bT-2a$.  A simple root $t$ reconstructs by
+\[
+v=P'(t)/2,qquad x=v^{-1},qquad y=t-v,qquad
+z=5v^2-3tv-cv^3.
+\]
+The complementary $U\ne0$ chart is regular at the projective root at infinity
+and supplies the $x=0$ source chart.  The two formulas agree on their overlap.
+This second chart is essential: an affine-root computation alone would miss
+part of the source.
+
+Intrinsically, this is the restriction of
+\[
+\Pone\times\operatorname{Sym}^2(\Pone)
+\longrightarrow\operatorname{Sym}^3(\Pone)
+\]
+after removing the repeated-marked-root divisor and the inverse image of a
+tangent, nonosculating hyperplane.

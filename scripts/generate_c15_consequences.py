@@ -11,8 +11,8 @@ import sympy as sp
 
 
 ROOT = Path(__file__).resolve().parents[1]
-SOURCE = ROOT / "results" / "cubic_homogeneous_counterexample.json"
-OUTPUT = ROOT / "results" / "c15_consequence_witnesses.json"
+SOURCE = ROOT / "artifacts" / "generated-results" / "cubic_homogeneous_counterexample.json"
+OUTPUT = ROOT / "artifacts" / "generated-results" / "c15_consequence_witnesses.json"
 
 
 def sparse_poly(poly, variables):

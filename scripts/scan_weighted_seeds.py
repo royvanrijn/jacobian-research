@@ -126,7 +126,7 @@ def main():
     parser.add_argument("--max-degree", type=int, default=6)
     parser.add_argument("--coefficient-bound", type=int, default=2)
     parser.add_argument("--primes", default="5,7,11")
-    parser.add_argument("--output", default="results/weighted_seed_scan.json")
+    parser.add_argument("--output", default="artifacts/generated-results/weighted_seed_scan.json")
     args = parser.parse_args()
     assert 2 <= args.max_degree <= 8
     primes = tuple(int(value) for value in args.primes.split(",") if value)

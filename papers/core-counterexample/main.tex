@@ -1,0 +1,43 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage[hidelinks]{hyperref}
+\usepackage{booktabs}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newcommand{\A}{\mathbb A}
+\newcommand{\Pone}{\mathbb P^1}
+
+\title{A Three-Dimensional Keller Map with a Rational Collision}
+\author{Repository working draft}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We study an explicit polynomial map of affine three-space with constant
+nonzero Jacobian and three distinct rational points in one fiber.  We give
+exact algebraic certificates, identify the source with a marked-simple-root
+incidence for binary cubics, determine the image and fiber structure over
+the complex numbers, and extend the construction to a normalized weighted
+marked-root family with symmetric monodromy.
+\end{abstract}
+
+\tableofcontents
+
+\input{sections/01-explicit-counterexample}
+\input{sections/02-exact-verification}
+\input{sections/03-marked-root-geometry}
+\input{sections/04-image-and-fibers}
+\input{sections/05-weighted-generalisation}
+\input{sections/06-monodromy}
+\input{sections/07-examples}
+\input{sections/08-further-directions}
+
+\bibliographystyle{alpha}
+\bibliography{references}
+\end{document}

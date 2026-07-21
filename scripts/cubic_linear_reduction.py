@@ -24,8 +24,8 @@ import sympy as sp
 
 
 ROOT = Path(__file__).resolve().parents[1]
-SOURCE = ROOT / "results" / "cubic_homogeneous_counterexample.json"
-OUTPUT = ROOT / "results" / "cubic_linear_counterexample.json"
+SOURCE = ROOT / "artifacts" / "generated-results" / "cubic_homogeneous_counterexample.json"
+OUTPUT = ROOT / "artifacts" / "generated-results" / "cubic_linear_counterexample.json"
 
 
 def qtext(value: sp.Expr) -> str:

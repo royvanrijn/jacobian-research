@@ -1,7 +1,7 @@
 {
   "format": "sparse-cubic-linear-map-v1",
   "construction": "Gorni--Zampieri pairing / Druzkowski reduction",
-  "source_cubic_homogeneous_artifact": "results/cubic_homogeneous_counterexample.json",
+  "source_cubic_homogeneous_artifact": "artifacts/generated-results/cubic_homogeneous_counterexample.json",
   "paired_dimension": 95,
   "dimension": 451,
   "map": "G(X)=X-(A X)^{*3}",

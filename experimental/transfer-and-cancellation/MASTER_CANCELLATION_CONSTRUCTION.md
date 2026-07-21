@@ -358,11 +358,33 @@ cubic map.
 
 This does not make the whole master construction a disguised weighted-seed
 pencil.  The primitive polynomial (17) has derivative (19).  For `r>=2` it is
-generically a perfect `r`-th power and every critical point has ramification
-index `r+1`.  A generic admissible weighted seed has inverse derivative
-`H'(T)-P`, with simple critical points and ramification index two.  Ramification
-indices survive source and target reparametrization, so the `r>=2` maps are
-not reparametrizations of generic weighted seeds.
+generically a perfect `r`-th power and every critical point has local index
+`r+1`.  A raw resolvent index is not by itself a coordinate invariant: a
+primitive element can create a nonnormal discriminant, and a displayed
+reconstruction denominator can have removable chart poles.  The missing
+argument is supplied in
+[RESOLVENT_RAMIFICATION_SIGNATURE.md](RESOLVENT_RAMIFICATION_SIGNATURE.md):
+the critical divisor of (17) is integral, maps birationally to a canonical
+boundary prime in the finite normalization, and has intrinsic ramification
+index `r+1`.  A generic admissible weighted seed has corresponding intrinsic
+index two.  The normalized boundary indices are invariant under polynomial
+left--right equivalence and stabilization.  Hence the `r>=2` maps are not
+polynomially left--right equivalent, even stably, to generic weighted seeds.
+
+The same note computes the remaining generic boundary.  Over `P=0`, C24 has
+`mr-1` geometric unramified boundary primes, while one apparent projective
+resolvent pole is the finite source divisor `A=0`.  It also proves
+
+\[
+ \operatorname{Mon}(C24_{m,r})=
+ \begin{cases}S_{r(m+1)+1},&r\text{ odd},\\
+ A_{r(m+1)+1},&r\text{ even}.
+ \end{cases}
+\]
+
+For `r=1`, all entries presently computed in the intrinsic signature agree
+with a generic weighted seed of degree `m+2`.  No equivalence or obstruction
+is currently known for `m>1`.
 
 The precise conclusion is therefore:
 
@@ -395,7 +417,9 @@ Proved uniformly in this note:
 - irreducibility, separability, exact degree, and reconstruction for the
   generic fiber polynomial (17);
 - the `N`-point collision (21)--(23) for every `m,r`; and
-- the comparison (24) and the ramification obstruction for `r>=2`.
+- the comparison (24); and, together with the normalized-boundary proof in
+  `RESOLVENT_RAMIFICATION_SIGNATURE.md`, the stable left--right ramification
+  obstruction for `r>=2` and the `S_N/A_N` monodromy formula.
 
 Verified by finite exact computation:
 
@@ -410,6 +434,8 @@ Not proved uniformly:
 - the arithmetic minimal collision field for every pair;
 - equivalence or inequivalence among arbitrary tail deformations
   `h_q+A^(r+1)g`; and
+- equivalence or inequivalence of `C24_(m,1)`, `m>1`, and generic degree
+  `m+2` weighted seeds; and
 - a global classification, up to polynomial coordinate equivalence and field
   descent, of all polynomial cancellation branches represented by
   `L_(m,r)`.
@@ -424,6 +450,8 @@ arithmetic and equivalence statements.
 - `scripts/verify_master_universal.py`: universal formulas plus bounded
   structural regressions;
 - `scripts/verify_master_instances.py`: exact polynomial maps, Jacobians, and
-  collision polynomials for every displayed row; and
+  collision polynomials for every displayed row;
+- `scripts/verify_resolvent_ramification_signature.py`: exact critical,
+  infinity-chart, residue-degree and monodromy regressions for the four small
+  cases; and
 - `scripts/generate_master_regression.py m r`: generator for a new pair.
-

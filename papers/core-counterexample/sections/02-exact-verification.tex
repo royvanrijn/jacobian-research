@@ -1,0 +1,26 @@
+\section{Exact verification}
+
+On the dense open set $x\ne0$, introduce
+\[
+t=y+1/x,\qquad r=2/x,\qquad c=F_3(x,y,z),
+\]
+and write $(a,b,c)=F(x,y,z)$. Direct substitution yields
+\[
+a=t^2+\frac{rt}{2}-ct^3,
+\qquad
+b=r+4t-3ct^2.
+\]
+The two Jacobian factors are
+\[
+\det\frac{\partial(a,b,c)}{\partial(t,r,c)}=\frac r2,
+\qquad
+\det\frac{\partial(t,r,c)}{\partial(x,y,z)}=-2x.
+\]
+Since $r=2/x$, their product is $-2$.  Both $\det DF$ and $-2$ are
+polynomials, so equality on the dense open proves equality everywhere.
+Substitution of the three displayed source points proves the collision.
+
+The repository contains two exact implementations and a separately authored,
+pinned Lean 4 formalization.  The precise commands and scope are listed in
+the accompanying verification directory; none of the geometric theorems is
+needed for this certificate.

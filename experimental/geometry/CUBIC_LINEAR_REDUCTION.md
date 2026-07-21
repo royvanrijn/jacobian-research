@@ -12,7 +12,7 @@ Here `*3` denotes coordinatewise cubing.  The matrix `A` is rational, has rank
 image.  Consequently `G` is an explicit Druzkowski-form Keller counterexample.
 
 The sparse matrix, pairing certificate, collision points, and common image are
-stored in `results/cubic_linear_counterexample.json`.
+stored in `artifacts/generated-results/cubic_linear_counterexample.json`.
 
 ## Pairing construction
 

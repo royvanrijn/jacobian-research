@@ -7,14 +7,14 @@ universal root cover back to an affine pencil, normalizes it, and retains the
 open on which the marked root reconstructs a source point.
 
 This note is a synthesis.  The target-side quotient statement is proved
-precisely in [MASTER_QUOTIENT_THEOREM.md](MASTER_QUOTIENT_THEOREM.md); only
+precisely in [MASTER_QUOTIENT_THEOREM.md](../../experimental/transfer-and-cancellation/MASTER_QUOTIENT_THEOREM.md); only
 its closed-immersion upgrade across all collision strata remains conjectural.
 The ambient multiplication maps, their torus-normalized hyperplane slices,
 the uniqueness of the cubic affine complement, and the obstruction to the
 next `(2,3)` candidate are developed in
-[UNIVERSAL_FACTORIZATION_GEOMETRY.md](UNIVERSAL_FACTORIZATION_GEOMETRY.md).
+[UNIVERSAL_FACTORIZATION_GEOMETRY.md](../../experimental/transfer-and-cancellation/UNIVERSAL_FACTORIZATION_GEOMETRY.md).
 Claim C01 remains independently certified by Dean Cureton's Lean 4
-formalization; see [LEAN_C01.md](LEAN_C01.md).
+formalization; see [LEAN_C01.md](../../verified/LEAN_C01.md).
 
 ## 1. The target-side construction
 
@@ -107,7 +107,7 @@ condition `Phi=0` cuts its root normalization by one, giving
 \]
 
 The weighted-Vandermonde argument in
-[UNIFORM_EXCEPTIONAL_SEEDS.md](UNIFORM_EXCEPTIONAL_SEEDS.md) additionally
+[UNIFORM_EXCEPTIONAL_SEEDS.md](../../experimental/geometry/UNIFORM_EXCEPTIONAL_SEEDS.md) additionally
 proves that the map to seed coefficients does not lower this dimension.
 
 ## 3. Classical coincident-root loci
@@ -154,7 +154,7 @@ replace those slice and local-algebra arguments.
 
 The complete finite-normalization, slice-nonemptiness, exact-closure, and
 common-coarsening proof for C08--C11 is collected in
-[COINCIDENT_ROOT_REBUILD.md](COINCIDENT_ROOT_REBUILD.md).
+[COINCIDENT_ROOT_REBUILD.md](../../experimental/geometry/COINCIDENT_ROOT_REBUILD.md).
 
 ## 4. Why 2 and 3 are the cusp
 
@@ -198,7 +198,7 @@ be Gorenstein.  They are flat degenerations of the squarefree subset algebra,
 not literal tensor products of dual numbers.  The equality
 `Z_k^aff=Z_k` says that permitting an affine difference between two
 factorizations introduces no additional local structure for any block.  See
-[ALL_K_TRANSFER_BLOCK_THEOREM.md](ALL_K_TRANSFER_BLOCK_THEOREM.md).
+[ALL_K_TRANSFER_BLOCK_THEOREM.md](../../experimental/transfer-and-cancellation/ALL_K_TRANSFER_BLOCK_THEOREM.md).
 
 ## 5. The source-side construction
 
@@ -280,7 +280,7 @@ the local statement to the global closed immersion.
 The official Macaulay2 `CoincidentRootLoci` package constructs
 `Delta_lambda`, its ideal, parameterization, tangent space, and singular
 locus.  The repository script
-[`verify_coincident_root_slices.m2`](../scripts/verify_coincident_root_slices.m2)
+[`verify_coincident_root_slices.m2`](../../scripts/verify_coincident_root_slices.m2)
 uses those package ideals through degree seven, substitutes the normalized
 hyperplane section, saturates by the exact-degree and weighted-admissibility
 factors, and eliminates the constant and linear coefficients.  In degree

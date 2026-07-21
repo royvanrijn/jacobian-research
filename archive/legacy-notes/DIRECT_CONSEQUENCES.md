@@ -21,7 +21,7 @@ false for every `n>=3`.
   the least dimension or an explicit pair of polynomials.
 - **Zhao's Vanishing Conjecture: explicitly false in dimension 190.**  The C15
   symmetric-gradient construction gives the 2012-term quartic HN polynomial
-  `R` stored in `results/c15_consequence_witnesses.json`.  Its gradient map has
+  `R` stored in `artifacts/generated-results/c15_consequence_witnesses.json`.  Its gradient map has
   a transported collision, so Zhao's inversion formula proves
   `Delta^m R^(m+1)` is not eventually zero.
 - **Special Image Conjecture: explicitly false in dimension 190.**  For this
@@ -34,4 +34,4 @@ false for every `n>=3`.
 
 The first two bullets remain nonconstructive.  The final three are explicit;
 their formulas, hypothesis audit, and remaining minimality questions are in
-[C15_INDEPENDENT_AUDIT.md](C15_INDEPENDENT_AUDIT.md).
+[C15_INDEPENDENT_AUDIT.md](../../experimental/geometry/C15_INDEPENDENT_AUDIT.md).

@@ -6,8 +6,11 @@ import re
 
 
 root = Path(__file__).resolve().parents[1]
-documents = [root / "README.md", root / "results" / "README.md"]
-documents.extend(sorted((root / "notes").glob("*.md")))
+excluded_parts = {".git", ".venv", ".cache", ".idea"}
+documents = sorted(
+    path for path in root.rglob("*.md")
+    if not excluded_parts.intersection(path.relative_to(root).parts)
+)
 
 missing = []
 checked = 0
@@ -17,7 +20,6 @@ for document in documents:
     for target in targets:
         if "://" in target or target.startswith(("#", "mailto:")):
             continue
-        # Avoid interpreting TeX such as ``[X_i,X_j](F_k)`` as a file link.
         if "." not in target and "/" not in target:
             continue
         path_text = target.split("#", 1)[0]

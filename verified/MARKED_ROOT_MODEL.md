@@ -335,11 +335,11 @@ inverse-pencil construction has the same pattern: form the finite cover that
 marks a root of `H(W)-sW+t`, normalize it over the degenerate `C=0` fiber,
 and retain its regular-reconstruction open.  The precise theorem is
 [WEIGHTED_MARKED_ROOT_MODEL.md](WEIGHTED_MARKED_ROOT_MODEL.md).
-[DICRITICAL_COMPACTIFICATION.md](DICRITICAL_COMPACTIFICATION.md) (Claim C16)
+[DICRITICAL_COMPACTIFICATION.md](../experimental/geometry/DICRITICAL_COMPACTIFICATION.md) (Claim C16)
 classifies the reconstruction-pole divisors on the corresponding normalized
 inverse-graph compactification.
 
 This interpretation is adopted with attribution to Andy Jiang's public
-geometric-interpretation post; see [SOURCES.md](SOURCES.md) and
-[PROVENANCE_AUDIT.md](PROVENANCE_AUDIT.md).  The overlap with the repository's
+geometric-interpretation post; see [SOURCES.md](../archive/legacy-notes/SOURCES.md) and
+[PROVENANCE_AUDIT.md](../archive/legacy-notes/PROVENANCE_AUDIT.md).  The overlap with the repository's
 earlier C02--C03 computations is recorded there, and no priority claim is made.

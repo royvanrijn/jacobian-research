@@ -14,8 +14,8 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-H_FILE = ROOT / "results" / "cubic_homogeneous_counterexample.json"
-A_FILE = ROOT / "results" / "cubic_linear_counterexample.json"
+H_FILE = ROOT / "artifacts" / "generated-results" / "cubic_homogeneous_counterexample.json"
+A_FILE = ROOT / "artifacts" / "generated-results" / "cubic_linear_counterexample.json"
 Poly = dict[tuple[int, ...], Q]
 
 

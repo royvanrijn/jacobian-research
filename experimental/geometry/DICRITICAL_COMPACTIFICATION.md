@@ -17,7 +17,7 @@ This note gives a compactification of the inverse correspondence and
 classifies every divisor at infinity which dominates a divisor in the target.
 
 The intrinsic finite-cover formulation is proved in
-[WEIGHTED_MARKED_ROOT_MODEL.md](WEIGHTED_MARKED_ROOT_MODEL.md).  The
+[WEIGHTED_MARKED_ROOT_MODEL.md](../../verified/WEIGHTED_MARKED_ROOT_MODEL.md).  The
 normalization of the marked-root incidence contains the affine source as its
 regular-reconstruction open, and the divisors classified below are exactly
 the polar divisors in its complement.  The graph model used here retains the

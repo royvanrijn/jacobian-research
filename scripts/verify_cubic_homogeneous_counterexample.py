@@ -10,7 +10,7 @@ import sympy as sp
 
 
 ROOT = Path(__file__).resolve().parents[1]
-ARTIFACT = ROOT / "results" / "cubic_homogeneous_counterexample.json"
+ARTIFACT = ROOT / "artifacts" / "generated-results" / "cubic_homogeneous_counterexample.json"
 
 
 def evaluate_h(components, point):

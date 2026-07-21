@@ -78,7 +78,7 @@ Since `det J=1`, the coefficients are polynomial. Exact calculation verifies
 It is not an automorphism: otherwise `Psi^{-1}(x_j)` would commute with every
 `x_i`, hence lie in `C[x]` by PBW. Applying `Psi` would produce a polynomial
 left inverse to `F`, contradicting the C01 collision. All nine coefficients are
-stored in `results/c15_consequence_witnesses.json`. No external
+stored in `artifacts/generated-results/c15_consequence_witnesses.json`. No external
 Dixmier--Jacobian reduction is needed.
 
 ## Explicit quartic Hessian-nilpotent witness

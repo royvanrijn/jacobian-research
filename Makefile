@@ -60,6 +60,7 @@ verify-theorems:
 verify-master:
 	$(PYTHON) scripts/verify_master_universal.py
 	$(PYTHON) scripts/verify_master_instances.py
+	$(PYTHON) scripts/verify_resolvent_ramification_signature.py
 
 verify-regressions:
 	$(PYTHON) scripts/verify_generic_discriminant_geometry.py
@@ -90,7 +91,7 @@ verify-normal-forms:
 verify-derived: verify-normal-forms
 
 # Optional formal replication. This fetches Dean Cureton's separately authored
-# Lean project at the audited commit recorded in notes/LEAN_C01.md; it is kept
+# Lean project at the audited commit recorded in verified/LEAN_C01.md; it is kept
 # out of the default target because it downloads a pinned Lean/mathlib toolchain.
 verify-lean-c01:
 	bash scripts/verify_lean_c01.sh

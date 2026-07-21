@@ -1,6 +1,6 @@
 # Claim dependency graph and proof ledger
 
-This document refines [CLAIMS.md](../CLAIMS.md) into a directed proof graph.
+This document refines [CLAIMS.md](../../CLAIMS.md) into a directed proof graph.
 For every claim it records the exact quantifiers, internal lemmas, division
 between executable and written proof, external inputs, and remaining proof or
 audit obligations.
@@ -122,14 +122,14 @@ determinant, collision, distinctness, and coordinate degrees.  Dean Cureton's
 pinned Lean 4 project formally establishes the determinant, collisions,
 determinant-one rescaling, and complex specialization.
 
-**Prose.**  [FOUNDATIONAL_GEOMETRY.md](FOUNDATIONAL_GEOMETRY.md) gives the
-structural determinant proof and collision; [README §1](../README.md#1-geometric-construction-and-explicit-map)
+**Prose.**  [FOUNDATIONAL_GEOMETRY.md](../../verified/FOUNDATIONAL_GEOMETRY.md) gives the
+structural determinant proof and collision; [README §1](../../README.md#1-geometric-construction-and-explicit-map)
 identifies the geometric etale map and gives the implications to dimensions
 `N>=3`.
 
 **External theorems.**  None beyond definitions for the local certificate.
 The optional Lean replication uses Lean/mathlib and remains Dean Cureton's
-separately authored work; see [LEAN_C01.md](LEAN_C01.md).
+separately authored work; see [LEAN_C01.md](../../verified/LEAN_C01.md).
 
 **Obligations.**  No known internal proof gap.  A third unrelated CAS audit
 and an archival clean-machine reproduction remain desirable.
@@ -184,11 +184,11 @@ coordinate map; the marked-root identities; the two reconstruction charts;
 `verify_counterexample.py` check both charts, incidence, inverse formulas,
 generic degree certificate, and discriminant identity.
 
-**Prose.**  [FOUNDATIONAL_GEOMETRY.md](FOUNDATIONAL_GEOMETRY.md) and
-[MARKED_ROOT_MODEL.md](MARKED_ROOT_MODEL.md) prove the global two-chart
+**Prose.**  [FOUNDATIONAL_GEOMETRY.md](../../verified/FOUNDATIONAL_GEOMETRY.md) and
+[MARKED_ROOT_MODEL.md](../../verified/MARKED_ROOT_MODEL.md) prove the global two-chart
 incidence isomorphism and explain why denominator clearing loses no root
-chart. [README §1](../README.md#1-geometric-construction-and-explicit-map)
-states the intrinsic construction; [FACTS.md](FACTS.md#function-field-model)
+chart. [README §1](../../README.md#1-geometric-construction-and-explicit-map)
+states the intrinsic construction; [FACTS.md](../../verified/FACTS.md#function-field-model)
 proves the function-field degree argument.
 
 **External theorems.**  Standard identifications `Sym^d(P^1) ~= P^d` and of
@@ -224,8 +224,8 @@ transposition around the discriminant.
 escaping-path scripts prove the algebraic inclusions and representative local
 identities exactly.
 
-**Prose.**  [FOUNDATIONAL_GEOMETRY.md](FOUNDATIONAL_GEOMETRY.md) gives the
-root-chart proof spine; [IMAGE_AND_NONPROPERNESS.md](IMAGE_AND_NONPROPERNESS.md)
+**Prose.**  [FOUNDATIONAL_GEOMETRY.md](../../verified/FOUNDATIONAL_GEOMETRY.md) gives the
+root-chart proof spine; [IMAGE_AND_NONPROPERNESS.md](../../verified/IMAGE_AND_NONPROPERNESS.md)
 proves the two image inclusions, both nonproperness inclusions, properness off
 `V(Q)`, and the explicit `S_3` loops.
 
@@ -271,10 +271,10 @@ cancellation, structural determinant, reconstruction identities,
 normalization formulas, primitivity, and local charts.  Fixed seeds through
 bounded degree are regressions only.
 
-**Prose.**  [FOUNDATIONAL_GEOMETRY.md](FOUNDATIONAL_GEOMETRY.md) collects the
-independent proof spine; [WEIGHTED_SEED_THEOREM.md](WEIGHTED_SEED_THEOREM.md)
+**Prose.**  [FOUNDATIONAL_GEOMETRY.md](../../verified/FOUNDATIONAL_GEOMETRY.md) collects the
+independent proof spine; [WEIGHTED_SEED_THEOREM.md](../../verified/WEIGHTED_SEED_THEOREM.md)
 proves the uniform pencil and algebraic monodromy theorem; and
-[WEIGHTED_MARKED_ROOT_MODEL.md](WEIGHTED_MARKED_ROOT_MODEL.md) proves the
+[WEIGHTED_MARKED_ROOT_MODEL.md](../../verified/WEIGHTED_MARKED_ROOT_MODEL.md) proves the
 normalized global reconstruction statement.
 
 **External theorems.**  Gauss's lemma, normalization and Zariski's Main
@@ -307,7 +307,7 @@ identities, homogeneous graph formulas, compactified source dimensions,
 affine-bundle identity, admissible witness, and exact examples through degree
 ten.  The examples do not prove genericity in all degrees.
 
-**Prose.**  [GENERIC_DISCRIMINANT_CURVE.md](GENERIC_DISCRIMINANT_CURVE.md)
+**Prose.**  [GENERIC_DISCRIMINANT_CURVE.md](../../experimental/geometry/GENERIC_DISCRIMINANT_CURVE.md)
 proves compactification, exhaustion, all infinity degenerations, closure
 dimension, nonempty good open, and the genus count.
 
@@ -363,9 +363,9 @@ identities are exact.  Canonical, deformed, repeated-root, and quartic scripts
 check bounded instances and nonsplit factors; those are regressions for the
 uniform family statements.
 
-**Prose.**  [CANONICAL_FAMILY_IMAGE.md](CANONICAL_FAMILY_IMAGE.md),
-[DEFORMED_SEED_BOUNDARY.md](DEFORMED_SEED_BOUNDARY.md), and
-[REPEATED_ROOT_BOUNDARY.md](REPEATED_ROOT_BOUNDARY.md) prove the lacunary
+**Prose.**  [CANONICAL_FAMILY_IMAGE.md](../../experimental/geometry/CANONICAL_FAMILY_IMAGE.md),
+[DEFORMED_SEED_BOUNDARY.md](../../experimental/geometry/DEFORMED_SEED_BOUNDARY.md), and
+[REPEATED_ROOT_BOUNDARY.md](../../experimental/geometry/REPEATED_ROOT_BOUNDARY.md) prove the lacunary
 factor classification, direct boundary fibers, valuation formula, and both
 image/nonproperness inclusions.
 
@@ -392,9 +392,9 @@ Mason--Stothers inequality; the all-double difference-of-squares endpoint.
 classifier; `verify_unique_omitted_value.py` checks support and endpoint
 identities.  Mason alternatives through degree 24 are regression tests.
 
-**Prose.**  [OMITTED_VALUE_CLASSIFICATION.md](OMITTED_VALUE_CLASSIFICATION.md)
+**Prose.**  [OMITTED_VALUE_CLASSIFICATION.md](../../experimental/geometry/OMITTED_VALUE_CLASSIFICATION.md)
 proves exhaustiveness of factor matching;
-[UNIQUE_OMITTED_VALUE.md](UNIQUE_OMITTED_VALUE.md) proves separation and the
+[UNIQUE_OMITTED_VALUE.md](../../experimental/geometry/UNIQUE_OMITTED_VALUE.md) proves separation and the
 remaining all-double case.
 
 **External theorems.**  Polynomial Mason--Stothers.
@@ -425,11 +425,11 @@ Vandermonde identity, and eliminations in degrees five through eight are
 checked exactly.  The new Macaulay2 comparison is an independent bounded
 audit, not an all-degree proof.
 
-**Prose.**  [COINCIDENT_ROOT_REBUILD.md](COINCIDENT_ROOT_REBUILD.md) proves
+**Prose.**  [COINCIDENT_ROOT_REBUILD.md](../../experimental/geometry/COINCIDENT_ROOT_REBUILD.md) proves
 nonemptiness by splitting an admissible maximally collided polynomial,
 finiteness by weighted Newton coordinates, and the exact dimension formula.
-[CONTACT_PARTITION_STRATA.md](CONTACT_PARTITION_STRATA.md) and
-[UNIFORM_EXCEPTIONAL_SEEDS.md](UNIFORM_EXCEPTIONAL_SEEDS.md) retain the
+[CONTACT_PARTITION_STRATA.md](../../experimental/geometry/CONTACT_PARTITION_STRATA.md) and
+[UNIFORM_EXCEPTIONAL_SEEDS.md](../../experimental/geometry/UNIFORM_EXCEPTIONAL_SEEDS.md) retain the
 incidence API and original formulation.
 
 **External theorems.**  Finite group quotients, the homogeneous base-locus
@@ -456,7 +456,7 @@ used only for separation of distinct types, not atom selection.
 **Computation.**  `verify_contact_atom_principle.py` checks semigroup atoms,
 excess identities, threshold-`r` formulas, and bounded enumerations.
 
-**Prose.**  [CONTACT_ATOM_PRINCIPLE.md](CONTACT_ATOM_PRINCIPLE.md) gives the
+**Prose.**  [CONTACT_ATOM_PRINCIPLE.md](../../experimental/geometry/CONTACT_ATOM_PRINCIPLE.md) gives the
 uniform semigroup and dimension-optimization proof.
 
 **External theorems.**  Mason--Stothers only for the subsequent separation
@@ -486,10 +486,10 @@ root-splitting deformation; irreducibility of every maximal
 certificates, component counts, and exact degree-six/eight intersections are
 checked.  Bounded Mason scans are regressions only.
 
-**Prose.**  [COINCIDENT_ROOT_REBUILD.md](COINCIDENT_ROOT_REBUILD.md) derives
+**Prose.**  [COINCIDENT_ROOT_REBUILD.md](../../experimental/geometry/COINCIDENT_ROOT_REBUILD.md) derives
 both directions of the closure order from finite coincident-root
 normalizations, proves maximal irreducibility, and derives intersections from
-unique omission.  [UNIFORM_EXCEPTIONAL_SEEDS.md](UNIFORM_EXCEPTIONAL_SEEDS.md)
+unique omission.  [UNIFORM_EXCEPTIONAL_SEEDS.md](../../experimental/geometry/UNIFORM_EXCEPTIONAL_SEEDS.md)
 contains the endpoint details and original component formulas.
 
 **External theorems.**  Polynomial Mason--Stothers and standard finite
@@ -519,7 +519,7 @@ H=(-M+M'(0)W+M(0))/D
 and is its normalization.  Over the generic exact collision type
 `nu=(m_1,...,m_k)`, its fiber is the set of allocations
 `2i_rho+3j_rho=m_rho` with totals `(a,b)`, counted by the coefficient formula
-in [COMPONENT_NORMALIZATION.md](COMPONENT_NORMALIZATION.md).
+in [COMPONENT_NORMALIZATION.md](../../experimental/geometry/COMPONENT_NORMALIZATION.md).
 
 **Depends on.**  C10's irreducible components; universal endpoint derivative
 for smoothness; seven low endpoint cases; finiteness of the weighted Newton
@@ -530,9 +530,9 @@ each collision root.
 derivatives, seven saturated singular ideals, finiteness identities,
 degree-one behavior, and allocation counts.
 
-**Prose.**  [COINCIDENT_ROOT_REBUILD.md](COINCIDENT_ROOT_REBUILD.md) gives the
+**Prose.**  [COINCIDENT_ROOT_REBUILD.md](../../experimental/geometry/COINCIDENT_ROOT_REBUILD.md) gives the
 finite-normalization proof in the common coincident-root framework;
-[COMPONENT_NORMALIZATION.md](COMPONENT_NORMALIZATION.md) proves smoothness,
+[COMPONENT_NORMALIZATION.md](../../experimental/geometry/COMPONENT_NORMALIZATION.md) proves smoothness,
 normality, finiteness, birationality, and the allocation formula in detail.
 
 **External theorems.**  A finite birational morphism from a normal integral
@@ -568,7 +568,7 @@ two-minimal-prime fiber-product lemma.
 admissible witness, differential ranks, second jets, local Gröbner bases,
 affine-equality reduction, and the upper/lower length-four sandwich.
 
-**Prose.**  [DEGREE12_LOCAL_SINGULARITY.md](DEGREE12_LOCAL_SINGULARITY.md)
+**Prose.**  [DEGREE12_LOCAL_SINGULARITY.md](../../experimental/geometry/DEGREE12_LOCAL_SINGULARITY.md)
 passes from those finite calculations to completed local rings, identifies
 the fiber product, and computes the conductor.
 
@@ -607,7 +607,7 @@ integers and discriminant degrees, checks the branch derivative, and verifies
 the exact full/pencil/boundary decomposition in degrees three and four.
 `verify_weighted_chebotarev.py` retains permutation and sample regressions.
 
-**Prose.**  [FINITE_FIELD_CHEBOTAREV.md](FINITE_FIELD_CHEBOTAREV.md) constructs
+**Prose.**  [FINITE_FIELD_CHEBOTAREV.md](../../experimental/geometry/FINITE_FIELD_CHEBOTAREV.md) constructs
 `B_H`, proves monodromy preservation, audits every twist hypothesis, derives
 the explicit error, and separates the exact discriminant and `C=0` terms.
 
@@ -623,7 +623,7 @@ zeroth entry and first moment are exact.
 ## C14 — explicit quartic weighted model
 
 **Quantified statement.**  For the single quartic weighted map displayed in
-[QUARTIC_WEIGHTED_GEOMETRY.md](QUARTIC_WEIGHTED_GEOMETRY.md), over
+[QUARTIC_WEIGHTED_GEOMETRY.md](../../experimental/geometry/QUARTIC_WEIGHTED_GEOMETRY.md), over
 characteristic zero, the determinant is `-6`, the inverse cover has geometric
 and arithmetic monodromy `S_4`, its discriminant has exactly two ordinary
 cusps and one ordinary node, and its image, fiber cardinalities, singular
@@ -639,7 +639,7 @@ determinant, reconstruction, discriminant factorization and singularities,
 fiber tables, both nonproperness inclusions, properness converse, and
 monodromy.
 
-**Prose.**  [QUARTIC_WEIGHTED_GEOMETRY.md](QUARTIC_WEIGHTED_GEOMETRY.md)
+**Prose.**  [QUARTIC_WEIGHTED_GEOMETRY.md](../../experimental/geometry/QUARTIC_WEIGHTED_GEOMETRY.md)
 organizes the exact computations into the global image and boundary proof.
 
 **External theorems.**  None for the finite polynomial identities; only
@@ -665,9 +665,9 @@ independent of SymPy.  It checks `rank(B_0)=59`, the minimal 36-column
 complement, all pairing identities and collisions, and generates the explicit
 consequence artifact.
 
-**Prose.**  [CUBIC_HOMOGENEOUS_REDUCTION.md](CUBIC_HOMOGENEOUS_REDUCTION.md)
-and [CUBIC_LINEAR_REDUCTION.md](CUBIC_LINEAR_REDUCTION.md) document each
-transformation and the dimension counts.  [C15_INDEPENDENT_AUDIT.md](C15_INDEPENDENT_AUDIT.md)
+**Prose.**  [CUBIC_HOMOGENEOUS_REDUCTION.md](../../experimental/geometry/CUBIC_HOMOGENEOUS_REDUCTION.md)
+and [CUBIC_LINEAR_REDUCTION.md](../../experimental/geometry/CUBIC_LINEAR_REDUCTION.md) document each
+transformation and the dimension counts.  [C15_INDEPENDENT_AUDIT.md](../../experimental/geometry/C15_INDEPENDENT_AUDIT.md)
 audits the hypotheses and consequences.
 
 **External theorems.**  Campbell Theorems 4--5, Gorni--Zampieri Propositions
@@ -707,9 +707,9 @@ discriminant map and Kummer leading terms; `verify_c16_blowup_geometry.py`
 checks the graph coordinates, both zero-cluster blow-up charts, toric
 relations and reconstruction valuations through multiplicity nineteen.
 
-**Prose.**  [DICRITICAL_COMPACTIFICATION.md](DICRITICAL_COMPACTIFICATION.md)
+**Prose.**  [DICRITICAL_COMPACTIFICATION.md](../../experimental/geometry/DICRITICAL_COMPACTIFICATION.md)
 proves exhaustiveness by valuations and applies the valuative criterion.
-[C16_BLOWUP_GEOMETRY.md](C16_BLOWUP_GEOMETRY.md) gives the centers, four graph
+[C16_BLOWUP_GEOMETRY.md](../../experimental/geometry/C16_BLOWUP_GEOMETRY.md) gives the centers, four graph
 charts, local toric charts, exceptional divisors, discrepancies, dual graphs,
 target images and the precise minimality statement.
 
@@ -745,7 +745,7 @@ displayed monic relative Gröbner basis.
 containment, triangular elimination, comparison with the affine-difference
 ideal, standard-monomial enumeration, and special-fiber socle calculation.
 
-**Prose.**  [TRANSFER_BLOCKS.md](TRANSFER_BLOCKS.md) identifies the free basis
+**Prose.**  [TRANSFER_BLOCKS.md](../../experimental/transfer-and-cancellation/TRANSFER_BLOCKS.md) identifies the free basis
 `1,X,Y,X^2` and applies the relative Gröbner criterion.
 
 **External theorems.**  Standard monic relative Gröbner-basis freeness
@@ -780,7 +780,7 @@ coefficients.
 `verify_mixed_allocation_equalizer.py` retain the exact quadratic-cubic
 colength-sixteen audits.
 
-**Prose.**  [ALLOCATION_BRANCH_INTERSECTIONS.md](ALLOCATION_BRANCH_INTERSECTIONS.md)
+**Prose.**  [ALLOCATION_BRANCH_INTERSECTIONS.md](../../experimental/transfer-and-cancellation/ALLOCATION_BRANCH_INTERSECTIONS.md)
 proves the arbitrary strong Hensel product, derives the signed product
 formulation, and kills the two shared affine coefficients before decomposing
 into local blocks.
@@ -808,7 +808,7 @@ reduction of the discarded affine coefficients to zero.
 Gröbner basis, eight standard monomials, affine/strong equality, Hilbert
 function, and socle.
 
-**Prose.**  [TRANSFER_BLOCKS.md](TRANSFER_BLOCKS.md#the-three-transfer-theorem)
+**Prose.**  [TRANSFER_BLOCKS.md](../../experimental/transfer-and-cancellation/TRANSFER_BLOCKS.md#the-three-transfer-theorem)
 deduces finite flatness from the monic basis.
 
 **External theorems.**  Standard relative Gröbner-basis freeness criterion.
@@ -832,7 +832,7 @@ of strong and affine-difference ideals.
 monomials, all relative reductions, affine/strong equality, the special-fiber
 Hilbert function, and its four-dimensional socle.
 
-**Prose.**  [TRANSFER_BLOCKS.md](TRANSFER_BLOCKS.md#the-four-transfer-theorem)
+**Prose.**  [TRANSFER_BLOCKS.md](../../experimental/transfer-and-cancellation/TRANSFER_BLOCKS.md#the-four-transfer-theorem)
 applies the relative Gröbner freeness criterion and interprets the collision
 fiber.
 
@@ -862,7 +862,7 @@ Wronskian identity. Existing coincident-root eliminations and C17--C20
 transfer calculations are bounded regressions; none proves the all-degree
 statement.
 
-**Prose.**  [MASTER_QUOTIENT_THEOREM.md](MASTER_QUOTIENT_THEOREM.md) proves
+**Prose.**  [MASTER_QUOTIENT_THEOREM.md](../../experimental/transfer-and-cancellation/MASTER_QUOTIENT_THEOREM.md) proves
 finiteness by weighted Newton coordinates, identifies every completed
 collision relation by Hensel products of C22 blocks, proves affine/strong
 equality by the global Wronskian, descends by completion, and obtains the
@@ -907,11 +907,11 @@ the conductor norms, confluent product rule, triangular norm generation,
 normalized compound bases, and binomial filtration ranks. C17, C19 and C20
 are independent exact low-degree models.
 
-**Prose.**  [ALL_K_TRANSFER_BLOCK_THEOREM.md](ALL_K_TRANSFER_BLOCK_THEOREM.md)
+**Prose.**  [ALL_K_TRANSFER_BLOCK_THEOREM.md](../../experimental/transfer-and-cancellation/ALL_K_TRANSFER_BLOCK_THEOREM.md)
 proves affine/strong equality directly, identifies the formal block with the
 invariant Boolean model, deduces finite flatness by Reynolds splitting, and
 computes the collided Hilbert filtration using the regular representation.
-[C22_DEFORMATION_AUDIT.md](C22_DEFORMATION_AUDIT.md) gives a clean-room proof
+[C22_DEFORMATION_AUDIT.md](../../experimental/transfer-and-cancellation/C22_DEFORMATION_AUDIT.md) gives a clean-room proof
 from the conductor ribbon and its divided-power symmetric product.
 
 **External theorems.**  For the first proof: reflection-group freeness, the
@@ -930,7 +930,7 @@ to prove every global equalizer coupling several collision roots.
 **Quantified statement.**  For multiplication
 `mu_(a,b):P^a x P^b -> P^(a+b)`, the complement of the resultant and the
 pullback of a hyperplane has the explicit torus-normalized presentation (7)
-of [UNIVERSAL_FACTORIZATION_GEOMETRY.md](UNIVERSAL_FACTORIZATION_GEOMETRY.md).
+of [UNIVERSAL_FACTORIZATION_GEOMETRY.md](../../experimental/transfer-and-cancellation/UNIVERSAL_FACTORIZATION_GEOMETRY.md).
 Hyperplane contact is the zero partition, with support moduli, of its
 restriction to the rational normal curve.  For the cubic map, the contact
 types `(1,1,1)`, `(2,1)`, and `(3)` have reduction counts `q^3-q`, `q^3`, and
@@ -953,7 +953,7 @@ cubic counts over three finite fields, the `(2,3)` count over five finite
 fields, its symbolic Moebius sum, the local cusp jet, and the weighted
 three-parameter polynomial identity.
 
-**Prose.**  [UNIVERSAL_FACTORIZATION_GEOMETRY.md](UNIVERSAL_FACTORIZATION_GEOMETRY.md)
+**Prose.**  [UNIVERSAL_FACTORIZATION_GEOMETRY.md](../../experimental/transfer-and-cancellation/UNIVERSAL_FACTORIZATION_GEOMETRY.md)
 derives the torus quotient and resultant gauge, classifies normalized contact
 slices, proves the cubic fiber decompositions, proves the `(2,3)` count by
 Moebius inversion, and identifies the two universal pullback/fiber-product
@@ -973,14 +973,21 @@ moduli is claimed.
 
 **Quantified statement.** For every `m,r>=1` over characteristic zero and
 every nonzero `C`, the rational ansatz in
-[MASTER_CANCELLATION_CONSTRUCTION.md](MASTER_CANCELLATION_CONSTRUCTION.md)
+[MASTER_CANCELLATION_CONSTRUCTION.md](../../experimental/transfer-and-cancellation/MASTER_CANCELLATION_CONSTRUCTION.md)
 has determinant `-C` in the localization at `A=1+xy^m`. Its last coordinate
 is polynomial exactly when the finite operator `L_(m,r)` vanishes. Roots of
 the monic truncated-binomial parameter polynomial, followed by the displayed
 finite Hensel recurrence, give normalized cancellation polynomials. The
 generic fiber polynomial is irreducible, separable, and has exact degree
 `r(m+1)+1`; every root reconstructs one source point, and `(1,0,0)` has an
-explicit collision of that full cardinality over an algebraic closure.
+explicit collision of that full cardinality over an algebraic closure.  If
+`N=r(m+1)+1`, its geometric monodromy is `S_N` for odd `r` and `A_N` for even
+`r`.  Its canonical finite normalization has one discriminant boundary prime
+of ramification index and sheet loss `r+1`, and `mr-1` geometric unramified
+boundary primes over `P=0`.  Consequently `r>=2` is not polynomially
+left--right equivalent, even after adjoining identities, to a generic
+weighted seed.  For `r=1,m>1` the computed signature agrees with the generic
+weighted signature and equivalence remains open.
 
 **Depends on.** The elementary coordinate identities `s=x/A` and
 `D=1-s(Q-Ps)^m=A^(-1)`; the `A`-adic pole calculation; formal polynomial
@@ -991,26 +998,35 @@ integration; and C01 only for the final linear-equivalence comparison of the
 finite recurrence, primitive fiber derivative and degree, and generated
 structural Jacobians. `verify_master_instances.py` verifies four exact maps,
 their polynomiality modulo the defining number field, determinant, and full
-collision polynomial. `generate_master_regression.py` emits exact data for a
-new pair.
+collision polynomial. `verify_resolvent_ramification_signature.py` checks the
+four small critical partitions, infinity polynomials, distinguished finite
+branch, residue-degree orbits and monodromy groups.
+`generate_master_regression.py` emits exact data for a new pair.
 
-**Prose.** [MASTER_CANCELLATION_CONSTRUCTION.md](MASTER_CANCELLATION_CONSTRUCTION.md)
+**Prose.** [MASTER_CANCELLATION_CONSTRUCTION.md](../../experimental/transfer-and-cancellation/MASTER_CANCELLATION_CONSTRUCTION.md)
 separates the localized Jacobian theorem from polynomial cancellation, proves
 the finite operator criterion, derives the hypergeometric/truncated-binomial
 parameter and recurrence, gives the primitive-element reconstruction and
 uniform collision, compares ramification with weighted seeds, and demotes
 products/compositions to formal closure corollaries.
+[RESOLVENT_RAMIFICATION_SIGNATURE.md](../../experimental/transfer-and-cancellation/RESOLVENT_RAMIFICATION_SIGNATURE.md)
+constructs the canonical finite-normalization signature, proves its
+left--right and stable invariance, identifies both C24 boundary components,
+and proves the monodromy and inequivalence theorems.
 
 **External theorems.** Gauss's lemma; uniqueness for solutions of a
-second-order linear ODE at an ordinary point; elementary Galois conjugacy and
+second-order linear ODE at an ordinary point; finiteness and functoriality of
+normalization; Zariski's Main Theorem; extension theory of DVRs; tame branch
+cycles in characteristic zero; elementary Galois conjugacy and
 finite-separable extension facts. The cited truncated-binomial papers are
 context for an open arithmetic problem, not inputs to the proved theorem.
 
-**Obligations.** Independent audit of the all-`m,r` cancellation proof is
-pending. Uniform irreducibility and Galois groups of the parameter polynomial,
-minimal collision fields, equivalence of arbitrary tail deformations, and a
-global arithmetic/coordinate classification of all polynomial cancellation
-branches remain open.
+**Obligations.** Independent audit of the all-`m,r` cancellation and boundary
+proofs is pending. Uniform irreducibility and Galois groups of the parameter
+polynomial, minimal collision fields, equivalence of arbitrary tail
+deformations, equivalence of `C24_(m,1)` with generic weighted seeds for
+`m>1`, and a global arithmetic/coordinate classification of all polynomial
+cancellation branches remain open.
 
 ## Cross-claim unresolved obligations
 
@@ -1030,5 +1046,7 @@ The following obligations affect more than one node:
 7. C23 rules out the first higher consecutive candidate arithmetically; a
    uniform classification of higher affine factorization complements remains
    open.
-8. C24 reduces cancellation to finite jets, but the arithmetic and
-   coordinate-equivalence classification of all branches remains open.
+8. C24 reduces cancellation to finite jets and its resolvent signature rules
+   out generic weighted equivalence for `r>=2`, but the arithmetic
+   classification and the `r=1,m>1` coordinate-equivalence problem remain
+   open.

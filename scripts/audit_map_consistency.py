@@ -159,10 +159,17 @@ display = "".join([
     "y+3x(1+xy)^2z+3xy^2(4+3xy),",
     "2x-3x^2y-x^3z",
 ])
-for relative in ("README.md", "notes/FINITE_FIELD_VALUE_DISTRIBUTION.md"):
-    compact = "".join((ROOT / relative).read_text().split())
-    assert display in compact, relative
-facts = "".join((ROOT / "notes/FACTS.md").read_text().split())
+compact = "".join((ROOT / "archive/legacy-notes/FINITE_FIELD_VALUE_DISTRIBUTION.md").read_text().split())
+assert display in compact, "archive/legacy-notes/FINITE_FIELD_VALUE_DISTRIBUTION.md"
+readme = "".join((ROOT / "README.md").read_text().split())
+for fragment in (
+    "Let`u=1+xy`anddefine`F:A^3->A^3`by",
+    "u^3z+y^2u(4+3xy)",
+    "y+3xu^2z+3xy^2(4+3xy)",
+    "2x-3x^2y-x^3z",
+):
+    assert fragment in readme, fragment
+facts = "".join((ROOT / "verified/FACTS.md").read_text().split())
 for fragment in (
     "Put`u=1+xy`andwrite`F=(a,b,c)`",
     "a=u^3z+y^2u(4+3xy)",

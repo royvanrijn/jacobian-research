@@ -15,7 +15,7 @@ materials that have not yet been located.
   pinned here at commit
   [`0d4a9212d874226ad81ce5a926becddfa94e6a88`](https://github.com/deancureton/jacobian/commit/0d4a9212d874226ad81ce5a926becddfa94e6a88):
   external Lean 4 formalization of the determinant, collisions, unit-Jacobian
-  counterexample, and complex specialization. See [LEAN_C01](LEAN_C01.md) for
+  counterexample, and complex specialization. See [LEAN_C01](../../verified/LEAN_C01.md) for
   theorem scope, reproduction, attribution, and the no-license source boundary.
 - [Macaulay2 `CoincidentRootLoci` package](https://macaulay2.com/doc/Macaulay2/share/doc/Macaulay2/CoincidentRootLoci/html/toc.html):
   classical coincident-root ideals, parameterizations, tangent spaces, and
