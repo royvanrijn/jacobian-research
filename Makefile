@@ -23,6 +23,7 @@ verify-core: verify-minimal
 	$(PYTHON) scripts/audit_map_consistency.py
 	$(PYTHON) scripts/cubic_model.py
 	$(PYTHON) scripts/audit_foundational_invariance_regression.py
+	$(PYTHON) scripts/verify_symplectic_weyl_lift.py
 	$(PYTHON) scripts/verify_marked_root_model.py
 	$(PYTHON) scripts/image_nonproperness.py
 	$(PYTHON) scripts/verify_exceptional_fibers.py
