@@ -1,6 +1,6 @@
 # Sources consulted
 
-Accessed 20--21 July 2026. Because the announcement is same-day, sources are split
+Accessed 20--22 July 2026. Because the announcement is same-day, sources are split
 between exact certificates and background; none should yet be treated as settled
 historical attribution.
 
@@ -11,6 +11,17 @@ materials that have not yet been located.
 - [The Jacobian counterexample, explained](https://jacobianfun.org/jacobian-explained):
   exact map, checks, weighted coordinates, inverse cubic, and proposed seed
   family.
+- [Omniscience Research Agent and Jeff Pickhardt, *An Explicit Counterexample to the Dixmier Conjecture in A_3*](https://omniscienceproject.com/papers/an-explicit-counterexample-to-the-dixmier-conjecture-in-a-3-jfLENtXF):
+  same-dimension inverse-Jacobian lift of the foundational map to an explicit
+  injective non-surjective Weyl-algebra endomorphism, with centralizer and
+  differential-order proofs of non-surjectivity.
+- [V. V. Bavula, *Holonomic modules and 1-generation in the Jacobian Conjecture*](https://arxiv.org/abs/2112.03177):
+  inverse-Jacobian extension of Keller maps to Weyl-algebra endomorphisms and
+  centralizer statements used in the classical implication from Dixmier to
+  Jacobian.
+- [A. Belov-Kanel and M. Kontsevich, *The Jacobian Conjecture is stably equivalent to the Dixmier Conjecture*](https://arxiv.org/abs/math/0512171):
+  the dimension-preserving implication `DC_n => JC_n`, differential-order
+  pullback argument, and the deeper stable converse.
 - [Juntang Zhuang, `jzkay12/jacobian_conjecture`](https://github.com/jzkay12/jacobian_conjecture),
   pinned here at commit
   [`1ff68e870f66afec8c6611f910fcc8f5522fdbce`](https://github.com/jzkay12/jacobian_conjecture/commit/1ff68e870f66afec8c6611f910fcc8f5522fdbce):
