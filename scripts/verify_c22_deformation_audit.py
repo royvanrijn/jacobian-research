@@ -178,6 +178,25 @@ def divided_difference(coefficients, left, right):
     )
 
 
+def scalar_polynomial_add(left, right):
+    size = max(len(left), len(right))
+    return [
+        (left[index] if index < len(left) else Fraction(0))
+        + (right[index] if index < len(right) else Fraction(0))
+        for index in range(size)
+    ]
+
+
+def scalar_polynomial_multiply(left, right):
+    answer = [Fraction(0)] * (len(left) + len(right) - 1)
+    for left_degree, left_coefficient in enumerate(left):
+        for right_degree, right_coefficient in enumerate(right):
+            answer[left_degree + right_degree] += (
+                left_coefficient * right_coefficient
+            )
+    return answer
+
+
 # The unique one-root transverse jet and all of its ordered tensor products.
 for k in range(1, 8):
     U, V = ordered_norms(k)
@@ -199,6 +218,30 @@ for left, right in ((Fraction(2), Fraction(5)), (Fraction(3), Fraction(3))):
         evaluate(f, left) * divided_difference(g, left, right)
         + evaluate(g, right) * divided_difference(f, left, right)
     )
+
+# If S(Z)/(Z-r)=Z^(k-1)+p_1(r)Z^(k-2)+..., polynomial division gives
+# p_a=s_a+r p_(a-1). Hence the coefficient at drop a in its square is
+# triangular in 1,r,...,r^a with diagonal a+1. These are precisely the first
+# k linearized norm coefficients used to recover theta_0,...,theta_(k-1).
+for k in range(1, 9):
+    divisor_coefficients = [[Fraction(1)]]
+    for degree in range(1, k):
+        symmetric_coefficient = Fraction(degree * degree + 1)
+        divisor_coefficients.append(
+            [symmetric_coefficient] + divisor_coefficients[-1]
+        )
+    for drop in range(k):
+        square_coefficient = [Fraction(0)]
+        for left_drop in range(drop + 1):
+            square_coefficient = scalar_polynomial_add(
+                square_coefficient,
+                scalar_polynomial_multiply(
+                    divisor_coefficients[left_drop],
+                    divisor_coefficients[drop - left_drop],
+                ),
+            )
+        assert len(square_coefficient) == drop + 1
+        assert square_coefficient[-1] == drop + 1
 
 # The vertical-degree-d normal symbols are Schur polynomials, obtained by
 # dividing each alternant by its internal Vandermonde. The normalized
@@ -222,5 +265,6 @@ for k in range(1, 9):
 
 print("PASS: ordered cusp jets satisfy U^2=V^3 through seven tensor factors")
 print("PASS: exact divided differences satisfy the confluent product rule")
+print("PASS: linearized norm coefficients have triangular diagonal 1,...,k")
 print("PASS: normalized compound bases have ranks binomial(k,d) through k=8")
 print("PASS: the collision filtration has total rank 2^k through k=8")

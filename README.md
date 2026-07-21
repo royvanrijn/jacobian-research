@@ -662,8 +662,11 @@ Uniformly for every `k`, the transfer block is the symmetric-group quotient
 of one commuting square-zero cusp jet at each ordered root.  Consequently
 `Z_k^aff=Z_k`, it is finite flat of rank `2^k`, and the maximally collided
 fiber has Hilbert series `(1+t)^k`.  Exact Gröbner regressions now extend
-through `k=6`; see
-[the all-k transfer-block theorem](notes/ALL_K_TRANSFER_BLOCK_THEOREM.md).
+through `k=6`. A separate deformation-theoretic proof identifies the block
+with the divided-power symmetric product of the cusp's conductor ribbon and
+proves collision flatness using confluent divided differences; see
+[the all-k transfer-block theorem](notes/ALL_K_TRANSFER_BLOCK_THEOREM.md) and
+[the independent C22 audit](notes/C22_DEFORMATION_AUDIT.md).
 ([Claim C22](CLAIMS.md#c22))
 
 For arbitrary pairs of allocations, strong equality decomposes formally as a

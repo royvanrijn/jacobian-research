@@ -893,28 +893,37 @@ It is finite flat of rank `2^k`; allowing `U^2-V^3` to be affine gives the
 same formal scheme; and the `S=Z^k` transverse fiber has Hilbert series
 `(1+t)^k`.
 
-**Depends on.**  C17's transfer-block definition; the Wronskian syzygies;
-the cusp-factorization lemma; symmetric descent of the ordered-root Boolean
-thickening; and the symmetric-group coinvariant algebra.
+**Depends on.**  C17's transfer-block definition and the Wronskian syzygies.
+The first proof uses the cusp-factorization lemma, symmetric descent, and the
+symmetric-group coinvariant algebra. The independent proof instead uses the
+normalization of the cusp, divided-power norm laws, confluent divided
+differences, and Nakayama's lemma.
 
 **Computation.**  `verify_all_k_transfer_block.py` checks the universal
 Wronskian and one-root cusp-jet identities and computes the new `k=5,6`
 coincident blocks exactly, obtaining lengths `32,64` and the binomial Hilbert
-functions.  C17, C19 and C20 are independent exact low-degree models.
+functions. `verify_c22_deformation_audit.py` is dependency-free and checks
+the conductor norms, confluent product rule, triangular norm generation,
+normalized compound bases, and binomial filtration ranks. C17, C19 and C20
+are independent exact low-degree models.
 
 **Prose.**  [ALL_K_TRANSFER_BLOCK_THEOREM.md](ALL_K_TRANSFER_BLOCK_THEOREM.md)
 proves affine/strong equality directly, identifies the formal block with the
 invariant Boolean model, deduces finite flatness by Reynolds splitting, and
 computes the collided Hilbert filtration using the regular representation.
+[C22_DEFORMATION_AUDIT.md](C22_DEFORMATION_AUDIT.md) gives a clean-room proof
+from the conductor ribbon and its divided-power symmetric product.
 
-**External theorems.**  Reflection-group freeness and the regular-representation
-description of the symmetric-group coinvariant algebra; Reynolds exactness;
-the completeness criterion for filtered morphisms that are isomorphisms on
-associated gradeds.
+**External theorems.**  For the first proof: reflection-group freeness, the
+regular-representation description of the symmetric-group coinvariant
+algebra, Reynolds exactness, and the completeness criterion for filtered
+morphisms. For the independent proof: the universal norm property of divided
+powers, exact polynomial divided differences, and Nakayama's lemma.
 
-**Obligations.** Independent audit of the cusp-factorization lemma and its
-filtered invariant descent remains pending. C18 uses these local relations to
-prove every global equalizer coupling several collision roots.
+**Obligations.** The invariant-theoretic cusp-factorization lemma now has the
+independent conductor-ribbon proof just cited. External replication in a
+second proof environment remains desirable. C18 uses these local relations
+to prove every global equalizer coupling several collision roots.
 
 ## C23 — universal factorization slices
 

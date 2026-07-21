@@ -171,6 +171,9 @@ formal derivations of its universal quantifier.
 - [x] Prove the all-`k` Boolean-quotient model, finite flatness of rank `2^k`,
   affine/strong equality, and collided Hilbert series `(1+t)^k`; retain exact
   Groebner regressions through `k=6`.
+- [x] Independently reconstruct every `Z_k` as the divided-power symmetric
+  product of the cusp conductor ribbon, using confluent divided differences
+  and a split-surjection/Nakayama comparison instead of invariant theory.
 - [ ] Determine ramification divisors, conductors, and scheme-theoretic branch
   multiplicities of the remaining component normalizations.
 - [x] Verify the threshold-`r` atom set `{r,...,2r-1}` and automatic abc bound

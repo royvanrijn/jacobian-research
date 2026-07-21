@@ -53,6 +53,14 @@ The fibers need not be Gorenstein.  Formula (3) is a Hilbert-function
 statement, not an assertion that the collided algebra is a tensor product of
 dual numbers.
 
+An independent proof is given in
+[C22_DEFORMATION_AUDIT.md](C22_DEFORMATION_AUDIT.md). It constructs the same
+block as the divided-power symmetric product of the conductor ribbon of the
+cusp normalization, proves collision flatness by confluent divided
+differences, and compares it with the factorization fiber by a
+split-surjection/Nakayama argument. That proof uses neither invariant-ring
+exactness nor the symmetric-group coinvariant algebra.
+
 ## 1. Affine difference vanishes
 
 Put `D=U^2-V^3` and
@@ -269,6 +277,7 @@ Run
 
 ```bash
 python scripts/verify_all_k_transfer_block.py
+python scripts/verify_c22_deformation_audit.py
 ```
 
 The script checks the Wronskian identities, the universal one-root cusp jet,
@@ -276,3 +285,6 @@ and the previously uncomputed coincident blocks `k=5,6`.  It obtains lengths
 `32,64` and Hilbert functions `(1,5,10,10,5,1)` and
 `(1,6,15,20,15,6,1)`.  These computations audit the structural theorem; they
 are not used to extend a bounded Groebner pattern to arbitrary `k`.
+The second script is dependency-free and separately checks the conductor
+norms, exact divided differences, triangular norm generation, normalized
+compound determinants, and binomial filtration ranks.
