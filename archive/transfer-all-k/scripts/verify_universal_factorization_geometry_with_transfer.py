@@ -125,6 +125,17 @@ assert sp.expand(degree_zero + degree_one + degree_two) == q**5 - q**3 + q**2
 print("PASS: homogeneous Moebius inversion gives the announced count polynomial")
 
 
+# The square/cube normalization identity underlying the local transfer fiber.
+z, root, epsilon = sp.symbols("z root epsilon")
+local_v = (z - root) ** 2 + epsilon
+local_u = (z - root) ** 3 + sp.Rational(3, 2) * epsilon * (z - root)
+identity = sp.Poly(sp.expand(local_u**2 - local_v**3), epsilon).rem(
+    sp.Poly(epsilon**2, epsilon)
+)
+assert identity.as_expr() == 0
+print("PASS: the square-zero cusp jet lies in the square/cube factorization fiber")
+
+
 # Weighted targets are the pullback of the universal polynomial along sigma_H.
 A, B, C, c, W = sp.symbols("A B C c W")
 H = W**5 - W**2

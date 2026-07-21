@@ -30,12 +30,12 @@ Only four evidence statuses are used:
 | C15 | Stable normal-form consequences | Proved internally | [Audit](experimental/geometry/C15_INDEPENDENT_AUDIT.md) | Second exact implementation |
 | C16 | Dicritical compactification | Proved internally | [Proof](experimental/geometry/DICRITICAL_COMPACTIFICATION.md) | None |
 | C17 | Two-transfer block | Proved internally | [Transfer blocks](experimental/transfer-and-cancellation/TRANSFER_BLOCKS.md) | Exact Groebner calculation |
-| C18 | Global allocation equalizer | Conjectural / incomplete | [Conditional argument](experimental/transfer-and-cancellation/ALLOCATION_BRANCH_INTERSECTIONS.md) | C22 dependency refuted |
+| C18 | Archived global allocation equalizer | Conjectural / incomplete | [Archived conditional argument](archive/transfer-all-k/ALLOCATION_BRANCH_INTERSECTIONS.md) | C22 input not recovered |
 | C19 | Three-transfer block | Computational evidence | [Transfer blocks](experimental/transfer-and-cancellation/TRANSFER_BLOCKS.md) | Exact Groebner calculation |
 | C20 | Four-transfer block | Computational evidence | [Transfer blocks](experimental/transfer-and-cancellation/TRANSFER_BLOCKS.md) | Exact Groebner calculation |
-| C21 | Master quotient theorem | Conjectural / incomplete | [Conditional argument](experimental/transfer-and-cancellation/MASTER_QUOTIENT_THEOREM.md) | C22 dependency refuted |
-| C22 | All-`k` transfer block | Computational evidence | [Counteraudit](experimental/transfer-and-cancellation/C22_CONDUCTOR_RIBBON_AUDIT.md) | Exact `k<=6` checks only |
-| C23 | Universal factorization slices | Conjectural / incomplete | [Partial results](experimental/transfer-and-cancellation/UNIVERSAL_FACTORIZATION_GEOMETRY.md) | All-`k` transfer conclusion depends on C22 |
+| C21 | Archived master quotient theorem | Conjectural / incomplete | [Archived conditional argument](archive/transfer-all-k/MASTER_QUOTIENT_THEOREM.md) | C22 input not recovered |
+| C22 | All-`k` transfer block; proposed filtration refuted | Conjectural / incomplete | [Quadratic-remainder counterexample](experimental/transfer-and-cancellation/QUADRATIC_REMAINDER_ALGEBRA.md) | Exact low-`k` examples only |
+| C23 | Cubic factorization-slice classification and `(2,3)` obstruction | Proved internally | [Cubic classification and exact obstruction](experimental/transfer-and-cancellation/UNIVERSAL_FACTORIZATION_GEOMETRY.md) | Exact finite-field checks; general higher-degree classification remains open |
 | C24 | Master cancellation family and left-right classification | Conjectural / incomplete | [Proved construction](experimental/transfer-and-cancellation/MASTER_CANCELLATION_CONSTRUCTION.md) | Small exact cases only |
 
 Workflow state is tracked separately in [RESEARCH_STATUS.md](RESEARCH_STATUS.md).

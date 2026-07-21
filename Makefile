@@ -47,13 +47,8 @@ verify-theorems:
 	$(PYTHON) scripts/classify_transfer_block_k2.py
 	$(PYTHON) scripts/classify_transfer_block_k3.py
 	$(PYTHON) scripts/classify_transfer_block_k4.py
-	$(PYTHON) scripts/verify_all_k_transfer_block.py
-	$(SYSTEM_PYTHON) scripts/verify_c22_deformation_audit.py
-	$(PYTHON) scripts/verify_c22_ribbon_functor.py
-	$(PYTHON) scripts/verify_global_affine_rigidity.py
+	$(PYTHON) experimental/transfer-and-cancellation/scripts/test_quadratic_remainder_initial.py
 	$(PYTHON) scripts/verify_universal_factorization_geometry.py
-	$(PYTHON) scripts/verify_allocation_hensel_product.py
-	$(PYTHON) scripts/verify_mixed_allocation_equalizer.py
 	$(PYTHON) scripts/verify_omitted_value_classification.py
 	$(PYTHON) scripts/verify_repeated_root_boundary.py
 	$(PYTHON) scripts/verify_effective_chebotarev.py

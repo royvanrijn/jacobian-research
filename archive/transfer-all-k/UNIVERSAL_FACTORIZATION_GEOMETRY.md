@@ -266,7 +266,37 @@ Thus the `(2,3)` candidate is not affine five-space.  The count is
 polynomial; the standard polynomial-count comparison also gives compactly
 supported Hodge--Deligne polynomial `L^5-L^3+L^2`.
 
-## 6. Separate weighted pullback connection
+## 6. Suspended transfer connection (not part of the independent theorem)
+
+Let `Poly_d^mon` denote monic degree-`d` polynomials.  The strong transfer
+scheme is the fiber product
+
+\[
+ \operatorname{Poly}_{3k}^{\rm mon}
+ \mathop{\times}_{\operatorname{Poly}_{6k}^{\rm mon}}
+ \operatorname{Poly}_{2k}^{\rm mon},                            \tag{17}
+\]
+
+where the two maps are `U mapsto U^2` and `V mapsto V^3`.  Its reduced
+normalization locus is
+
+\[
+ S\longmapsto(U,V)=(S^3,S^2),\qquad\deg S=k.                    \tag{18}
+\]
+
+The formal completion of (17) along (18) is exactly `Z_k` by definition.  The
+affine variant is the analogous fiber product after projecting degree-`6k`
+polynomials modulo `span(1,Z)`.  The differential Wronskian argument proving
+`Z_k^aff=Z_k` in characteristic zero is separate from the refuted ribbon
+model.  The uniform finite-flat rank assertion formerly attached to this
+statement is open; see
+[C22_CONDUCTOR_RIBBON_AUDIT.md](C22_CONDUCTOR_RIBBON_AUDIT.md).  Thus the
+transfer block is not merely analogous to a factorization singularity; it is
+the local fiber of the square/cube universal factorization equalizer.  No
+rank, flatness, or Boolean-structure conclusion from C22 is imported into
+the affine-complement results of Sections 1--5.
+
+## 7. Separate weighted pullback connection
 
 The universal marked-root factorization is `mu_(1,n-1)`.  For an admissible
 weighted seed `H`, define the three-dimensional parameter map
@@ -305,7 +335,7 @@ This interpretation depends on the weighted marked-root theorem C04.  It is
 context for the broader programme, not an input to the independent C23
 classification and obstruction results.
 
-## 7. Resulting programme
+## 8. Resulting programme
 
 The independent problem now has a clean sequence of targets.
 
@@ -338,5 +368,5 @@ Run
 
 The script checks the contact normal forms, resultant weights, all three
 cubic counts, and the `(2,3)` Moebius/rank formula by exact finite-field
-enumeration.  Its weighted-pullback check is not a dependency of the
-affine-space results.
+enumeration.  Its final two checks concern the optional connections in
+Sections 6--7 and are not dependencies of the affine-space results.

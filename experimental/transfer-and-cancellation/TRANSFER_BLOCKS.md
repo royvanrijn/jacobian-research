@@ -135,7 +135,7 @@ coupled by the fixed total `(a,b)` and by the single global affine difference.
 The local result (5) supplies the exact two-transfer factor, but assembling
 several compensating blocks still requires a Hensel-product/equalizer theorem.
 
-## The all-`k` structure
+## Archived all-`k` interpretation
 
 The following formerly claimed theorem is false as a ribbon identification.
 Over ordered roots `S=prod(Z-r_i)`, attach
@@ -147,11 +147,11 @@ U=\prod_i((Z-r_i)^3+	frac32\epsilon_i(Z-r_i)).
 \]
 
 The resulting norm map is not the transfer block: at `k=2` it kills the
-nonzero class `X^2`.  See the
-[counteraudit](C22_CONDUCTOR_RIBBON_AUDIT.md).  Finite flatness of rank
-`2^k` and Hilbert series `(1+t)^k` remain exact low-degree results and an
-all-`k` conjecture.  The explicit results below are retained as coordinate
-models and bounded audits.
+nonzero class `X^2`.  A later proposed quadratic-remainder tangent cone also
+fails at `k=2`, because it omits `X^3` and is positive-dimensional; see the
+[quadratic-remainder counterexample](QUADRATIC_REMAINDER_ALGEBRA.md).
+The all-`k` interpretation is archived.  The explicit results below are
+retained only as exact low-degree coordinate models.
 
 ## The three-transfer theorem
 

@@ -1,13 +1,16 @@
 # Transfer and cancellation: C17--C24
 
-**Workflow state:** C24 is the main active branch. C22 is reopened only for a
-corrective audit; C18, C21, and the all-`k` portion of C23 are conditional on
-that repair.
+**Workflow state:** C24 is the sole active research branch.  The proposed
+C22 transverse filtration is refuted at `k=2`; C18, C21, and all
+transfer-dependent all-`k` claims have been archived.  C23's independent
+affine-factorization-complement results remain in scope.
 
 ## What is the main theorem?
 
-C17--C23 describe completed square/cube transfer blocks and their global
-factorization equalizers. C24 constructs the master cancellation family,
+C17, C19, and C20 now supply only exact low-`k` local-algebra examples.
+[C23](UNIVERSAL_FACTORIZATION_GEOMETRY.md) independently studies when
+universal marked-factorization complements are affine spaces. C24
+constructs the master cancellation family,
 computes its generic inverse degree and monodromy, and begins its
 classification under polynomial left--right equivalence.  The
 [generalized cancellation note](GENERALIZED_CANCELLATION_MECHANISM.md)
@@ -23,31 +26,32 @@ resolvents can define equivalent polynomial maps.
 
 ## What does it depend on?
 
-The local transfer theory uses formal Hensel factorization, relative Groebner
-bases, symmetric-group invariant theory, and completed tensor products. C24
+The retained low-`k` transfer examples use exact relative Groebner bases. C24
 uses its explicit reconstruction formulas, finite normalization, DVR
 ramification, and tame branch cycles. Its `(1,1)` member links back to
 [C01](../../verified/FOUNDATIONAL_GEOMETRY.md).
 
 ## What is fully proved?
 
-C17 and the affine-difference Wronskian argument remain internally proved.
-The former all-`k` Boolean model in C22 is refuted by an explicit second-order
-deformation, making the dependent C18/C21 conclusions conditional. The
+C17 remains an exact low-degree theorem.  The independent cubic C23
+classification and `(2,3)` obstruction remain internally proved.  The
 construction, degree, reconstruction, monodromy, and `r>=2` ramification
-obstruction in C24 remain internally proved.
+obstruction in C24 remain internally proved.  The new
+[quadratic-remainder audit](QUADRATIC_REMAINDER_ALGEBRA.md) proves that the
+proposed C22 associated graded is false.
 
 ## What is only computationally tested?
 
-The explicit `Z_3` and `Z_4` presentations (C19--C20), transfer-block ranks
-through the bounded cases, parameter-polynomial factorizations, and displayed
-small C24 maps are computational evidence. They do not prove an all-`k`
-transfer theorem.
+The explicit `Z_3` and `Z_4` presentations (C19--C20), parameter-polynomial
+factorizations, and displayed small C24 maps are computational evidence.
+They are retained as bounded examples, not evidence for an active all-`k`
+programme.
 
 ## What is the likeliest failure point?
 
-For transfer theory, the Boolean norm is now known to omit collision
-directions, beginning with `X^2` at `k=2`. For active C24 work, the risk is
+For transfer theory, the quadratic-remainder tangent cone is now known to
+omit `X^3` at `k=2`, while the older Boolean norm omits `X^2`.  For active
+C24 work, the risk is
 mistaking a primitive-resolvent artifact for an invariant of the polynomial
 map. Every proposed obstruction must be identified on the canonical finite
 normalization.
@@ -71,7 +75,7 @@ common-root and polynomial-descent problem isolated in the
 [generalized mechanism](GENERALIZED_CANCELLATION_MECHANISM.md).  No other
 branch in this directory is active.
 
-The C22 corrective target is stated in the
-[conductor-ribbon counteraudit](C22_CONDUCTOR_RIBBON_AUDIT.md): construct a
-direct all-base straightening basis in the factorization ring, without using
-the refuted norm isomorphism.
+The archived all-`k` transfer programme is preserved under
+[archive/transfer-all-k](../../archive/transfer-all-k/).  It is not an active
+dependency chain.  Only the exact low-degree examples in
+[TRANSFER_BLOCKS.md](TRANSFER_BLOCKS.md) remain in current navigation.

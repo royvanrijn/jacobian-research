@@ -366,7 +366,8 @@ Derive directly from (3) either:
    without dividing by a discriminant.
 
 Until one of these is supplied, C22 remains computational evidence and no
-dependent C18, C21, or C23 claim is restored.
+dependent C18 or C21 claim is restored.  C23's affine-complement theorems are
+independent; only its explicitly suspended transfer connection touches C22.
 
 ## 7. Verification
 

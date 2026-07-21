@@ -1,22 +1,17 @@
 # Open problems
 
-## Direct all-`k` transfer-block basis after the ribbon counterexample
+## Archived all-`k` transfer question
 
-Let `Z_k` be the completion of the monic square/cube factorization scheme
-`U^2=V^3` along `(U,V)=(S^3,S^2)`.  The proposed identification with the
-divided-power symmetric product of the split cusp ribbon is false: its norm
-map kills `X^2` in the `k=2` collided fiber.  See
-[C22_CONDUCTOR_RIBBON_AUDIT.md](C22_CONDUCTOR_RIBBON_AUDIT.md).
+The former C22 programme is no longer active.  Both proposed conceptual
+models fail at `k=2`: the ribbon norm kills `X^2`, and the quadratic-remainder
+tangent cone omits `X^3`.  The latter proposed special fiber is
+positive-dimensional for every `k>=2`; see
+[QUADRATIC_REMAINDER_ALGEBRA.md](QUADRATIC_REMAINDER_ALGEBRA.md).
 
-**Question.** Is `Z_k` nevertheless finite flat of rank `2^k` over the
-extracted `S`-base for every `k` in characteristic zero?
-
-A proof must construct a spanning set over the full completed base and rule
-out discriminant-supported torsion without using the refuted norm
-surjection.  A counterexample may instead exhibit rank jump, torsion, or an
-additional Artin deformation for some `k`.  Exact presentations are available
-through the bounded low-degree cases, with collided-fiber evidence for
-`k=5,6`; they do not establish the all-`k` quantifier.
+This does not logically disprove finite flatness of the actual transfer ring,
+but that narrower question is frozen rather than used as a dependency.  The
+superseded programme and its exact historical regressions are preserved in
+[the archive](../../archive/transfer-all-k/).
 
 ## Polynomial equivalence of `C24_(m,1)` and generic weighted seeds
 

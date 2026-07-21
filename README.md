@@ -96,6 +96,8 @@ The complete four-status ledger is [CLAIMS.md](CLAIMS.md).
 ## Deeper work
 
 - [Core paper draft](papers/core-counterexample/main.tex)
+- [Standalone discriminant-pencils paper](papers/discriminant-pencils/main.tex)
+- [Adversarial audit of C05](papers/discriminant-pencils/AUDIT.md)
 - [Verified C01--C04 material](verified/README.md)
 - [Experimental geometry, C05--C16](experimental/geometry/README.md)
 - [Transfer and cancellation, C17--C24](experimental/transfer-and-cancellation/README.md)
