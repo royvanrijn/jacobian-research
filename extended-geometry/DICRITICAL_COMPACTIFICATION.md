@@ -17,7 +17,7 @@ This note gives a compactification of the inverse correspondence and
 classifies every divisor at infinity which dominates a divisor in the target.
 
 The intrinsic finite-cover formulation is proved in the archived
-[weighted marked-root derivation](../../archive/core-support/WEIGHTED_MARKED_ROOT_MODEL.md).  The
+[weighted marked-root derivation](../archive/core-support/WEIGHTED_MARKED_ROOT_MODEL.md).  The
 normalization of the marked-root incidence contains the affine source as its
 regular-reconstruction open, and the divisors classified below are exactly
 the polar divisors in its complement.  The graph model used here retains the
@@ -25,7 +25,7 @@ valuations needed for nonproperness and omission.
 
 The explicit graph blow-up, local toric charts, discrepancies and intersection
 graphs are retained in the
-[geometry-support archive](../../archive/geometry-support/C16_BLOWUP_GEOMETRY.md).
+[geometry-support archive](../archive/geometry-support/C16_BLOWUP_GEOMETRY.md).
 
 ## Resolved inverse graph
 

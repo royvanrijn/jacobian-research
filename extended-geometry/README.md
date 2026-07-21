@@ -1,8 +1,8 @@
-# Experimental geometry: C05--C16
+# Extended geometry: C05--C16
 
 These documents extend the weighted marked-root theorem beyond the stable
 C01--C04 core.  Mathematical completion and external review are recorded only
-in [STATUS.md](../../STATUS.md).
+in [STATUS.md](../STATUS.md).
 
 | Results | Primary document |
 |---|---|
@@ -20,6 +20,6 @@ in [STATUS.md](../../STATUS.md).
 
 Intermediate deformation notes, bounded stratum reports, the expanded C16
 blow-up calculation, and former standalone audit narratives are preserved in
-[archive/geometry-support](../../archive/geometry-support/README.md).
+[archive/geometry-support](../archive/geometry-support/README.md).
 Derived normal-form construction notes are preserved in
-[archive/derived-constructions](../../archive/derived-constructions/README.md).
+[archive/derived-constructions](../archive/derived-constructions/README.md).

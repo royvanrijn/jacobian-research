@@ -179,8 +179,12 @@ boundary intersection is reduced.  Therefore:
 \text{ pairwise stably inequivalent degree-}N\text{ maps.}}
 \]
 
-The common framework and proof are in
-[Marked-root Keller maps](MARKED_ROOT_KELLER_MAPS.md).
+The common framework is in
+[Marked-root Keller maps](MARKED_ROOT_KELLER_MAPS.md).  The divisor-count
+argument has also been isolated as a
+[five-lemma audit](DEGREEWISE_MULTIPLICITY_AUDIT.md) and a concise,
+[standalone paper](papers/marked-root-multiplicity/main.tex) that treats
+C01--C04 only as motivation.
 
 ## What is genuinely new here?
 
@@ -209,19 +213,21 @@ repository” and “externally reviewed” are different assertions.
 C01–C04 are the stable core. See [STATUS.md](STATUS.md) for detailed
 evidence levels.
 
-The shortest reading path is:
+The stable-core reading path is:
 
 1. [C01 exact proof](verified/FOUNDATIONAL_GEOMETRY.md)
 2. [C02 marked-root model](verified/MARKED_ROOT_MODEL.md)
 3. [C03 exact image and nonproperness](verified/IMAGE_AND_NONPROPERNESS.md)
 4. [C04 weighted theorem](verified/WEIGHTED_SEED_THEOREM.md)
-5. [Cancellation construction](experimental/cancellation/CONSTRUCTION.md)
-6. [Boundary geometry](experimental/cancellation/BOUNDARY_GEOMETRY.md)
-7. [Marked-root framework and divisor-count theorem](MARKED_ROOT_KELLER_MAPS.md)
+
+Further families continue in one sequence:
+[cancellation construction](experimental/cancellation/CONSTRUCTION.md),
+[boundary geometry](experimental/cancellation/BOUNDARY_GEOMETRY.md), and the
+[marked-root framework and divisor-count theorem](MARKED_ROOT_KELLER_MAPS.md).
 
 For execution, start with [REPRODUCE.md](REPRODUCE.md).  The core paper is
 [papers/core-counterexample/main.tex](papers/core-counterexample/main.tex).
-Further geometry is indexed in
+Extended geometry is indexed in
 [extended-geometry](extended-geometry/README.md); cancellation
 arithmetic, rigidity, and open problems live beside the construction under
 `experimental/cancellation/`.  Superseded derivations and exploratory tools

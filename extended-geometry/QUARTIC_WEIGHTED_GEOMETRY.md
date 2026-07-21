@@ -348,4 +348,4 @@ python3 scripts/audit_c14_independent.py
 ```
 
 The former standalone audit narrative is retained in
-[archive/geometry-support](../../archive/geometry-support/README.md).
+[archive/geometry-support](../archive/geometry-support/README.md).

@@ -47,6 +47,17 @@ current-ansatz rigidity regressions.
 make verify
 ```
 
+## Standalone degreewise paper
+
+The five-lemma audit is
+[`DEGREEWISE_MULTIPLICITY_AUDIT.md`](DEGREEWISE_MULTIPLICITY_AUDIT.md).  Build
+the corresponding standalone paper with:
+
+```bash
+cd papers/marked-root-multiplicity
+latexmk -pdf -interaction=nonstopmode -halt-on-error main.tex
+```
+
 To retain an environment record and complete log under `artifacts/`, run:
 
 ```bash
