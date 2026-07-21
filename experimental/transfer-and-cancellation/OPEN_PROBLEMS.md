@@ -20,18 +20,12 @@ The generic-weighted-seed comparison, all allowed tail deformations,
 separability, the complete `m=1` irreducibility column, and the generalized
 mechanism inside the current ansatz are no longer open.
 
-## Archived all-`k` transfer question
+## Archived transfer programme
 
-The former C22 programme is no longer active.  Both proposed conceptual
-models fail at `k=2`: the ribbon norm kills `X^2`, and the quadratic-remainder
-tangent cone omits `X^3`.  The latter proposed special fiber is
-positive-dimensional for every `k>=2`; see
-[QUADRATIC_REMAINDER_ALGEBRA.md](QUADRATIC_REMAINDER_ALGEBRA.md).
-
-This does not logically disprove finite flatness of the actual transfer ring,
-but that narrower question is frozen rather than used as a dependency.  The
-superseded programme and its exact historical regressions are preserved in
-[the archive](../../archive/transfer-all-k/).
+The former transfer route is no longer part of the active problem list.  Its
+finite examples, conditional all-`k` arguments, refuted filtrations, and
+scoped cubic obstruction are preserved in
+[the archive](../../archive/transfer-program/).
 
 ## Settled: `C24_(m,1)` versus generic weighted seeds
 
@@ -109,10 +103,15 @@ jet a translated/scaled C24 jet.  The arbitrary `A^(e+1)` tail is removed by
 a polynomial source automorphism.  Thus there is no nonmonomial branch, and
 no new polynomial-equivalence class, anywhere in the ansatz of that note.
 
-The first minimal coordinate relaxation is now settled in
+The universal normalized monomial-triangular three-weight class is now
+settled in
 [THREE_WEIGHT_CANCELLATION_CLASSIFICATION.md](THREE_WEIGHT_CANCELLATION_CLASSIFICATION.md):
-allowing `Q=y+xA^cB` with an independent third weight forces `c=a-1` and the
-old derivative power before polynomial cancellation is even imposed.
+all `a,b>=1`, `c>=0`, arbitrary `f`, arbitrary triangular `g`, and every
+one-factor polynomial derivative are quantified.  Localized Keller forces
+`c=a-1` and the old derivative power before polynomial cancellation is even
+imposed; polynomiality then gives only C24.  Its assumption audit identifies
+additional source functions, inverse variables, and nonmonomial `P,Q`
+combinations as the genuine ways to leave the classified skeleton.
 
 The alternative minimal relaxation is also settled in
 [TWO_FACTOR_RESOLVENT_CLASSIFICATION.md](TWO_FACTOR_RESOLVENT_CLASSIFICATION.md):
@@ -135,6 +134,15 @@ parameter branches remains a separate classification problem, but the
 [target-fixed rigidity theorem](TARGET_FIXED_PARAMETER_RIGIDITY.md) shows
 that any such equivalence must use a nonidentity target automorphism moving
 the filled `P=0` boundary branch.
+
+The
+[target-boundary automorphism theorem](TARGET_BOUNDARY_AUTOMORPHISM_GROUP.md)
+computes the restriction of that group to `P=0`: it is the weighted scaling
+torus `(P,Q,R)->(lambda^(m+1)P,lambda Q,lambda^(-m)R)`, up to a residual
+kernel congruent to the identity on the boundary plane.  The torus fixes
+`w=PT/Q` and therefore fixes every parameter root.  The remaining equivalence
+problem is to kill, or compute the finite root permutation induced by, the
+cover-lifting part of that residual kernel.
 
 ## Parameter-polynomial arithmetic
 

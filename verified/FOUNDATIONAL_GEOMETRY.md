@@ -63,6 +63,13 @@ local implementations and Dean Cureton's separately authored pinned Lean 4
 formalization.  The Lean scope and attribution are recorded in
 [LEAN_C01.md](LEAN_C01.md).
 
+A complementary positive covariance test is
+[C01_INVARIANCE_REGRESSION.md](C01_INVARIANCE_REGRESSION.md).  It applies
+nonlinear source and target automorphisms, replaces the primitive element,
+changes the projective root coordinate, and stabilizes, then verifies that
+the canonical normalization-boundary object is transported rather than
+changed.
+
 ## Theorem B: the cubic marked-root isomorphism
 
 Intrinsically, let
@@ -398,5 +405,5 @@ make verify-foundations-formal
 The exact scripts prove all displayed finite identities and both chart
 compositions.  The all-`n` quantifiers in Theorems C and D are proved by the
 written arguments above; bounded-degree symbolic examples are regression
-tests only.  No statement from C05--C20, and in particular no affine-rigidity
+tests only.  No later claim, and in particular no affine-rigidity
 conjecture, is used.

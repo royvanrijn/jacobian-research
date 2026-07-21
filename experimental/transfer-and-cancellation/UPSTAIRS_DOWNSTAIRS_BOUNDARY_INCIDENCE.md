@@ -4,6 +4,8 @@ The target boundary-incidence diagram is only a quotient of the canonical
 finite normalization.  This note defines a bipartite enhancement which keeps
 the boundary primes upstairs, their finite maps to target divisors, all
 multiple intersections on both sides, and the maps between those strata.
+Its reduced, scheme-theoretic, and formal truncations are organized explicitly
+in [the boundary-invariant ladder](BOUNDARY_INVARIANT_LADDER.md).
 
 Use the admissible boundary setup
 
@@ -168,12 +170,12 @@ This local representation can distinguish covers with identical divisorial
 `e,f` data.  A primitive resolvent supplies a valid computation only after its
 local branches have been identified with the canonical normalization (1).
 
-## 5. The enhanced invariant
+## 5. The enhanced invariant and its ladder
 
 ### Definition 5.1
 
-The **upstairs--downstairs boundary-incidence object**
-`mathfrak I_(X->Y)(F)` consists of:
+The **scheme-theoretic upstairs--downstairs boundary-incidence object**
+`mathfrak I^sch_(X->Y)(F)` consists of:
 
 1. the bipartite finite sets `mathcal E_F -> mathcal D_F`;
 2. every finite edge morphism `E -> Z_E`, including its function-field map;
@@ -181,18 +183,31 @@ The **upstairs--downstairs boundary-incidence object**
 4. all downstairs intersections `J_U` and their reductions;
 5. every scheme image and finite factorization `K_S -> W_S -> J_(q(S))`;
 6. all incidence arrows induced by inclusions of indexing subsets; and
-7. in the separable case, the different ideal and, when desired, the formal
-   completions along `K_S -> W_S`.
+7. the canonical maps whose formal completions define the next layer.
+
+Termwise reduction defines `mathfrak I^red_(X->Y)(F)`.  In the separable case,
+adjoining the different, completed stratum maps, finite-stratum conductors,
+boundary valuation filtrations, and derived local monodromy defines
+`mathfrak I^formal_(X->Y)(F)`.  Thus
+
+\[
+ \mathfrak I^{\rm formal}_{X\to Y}(F)
+ \longrightarrow\mathfrak I^{\rm sch}_{X\to Y}(F)
+ \longrightarrow\mathfrak I^{\rm red}_{X\to Y}(F).
+\]
+
+Definition 4.1 of the ladder note gives the precise formal-layer data and the
+necessary warning about conductors of open immersions.
 
 There is a canonical forgetful functor
 
 \[
- \mathfrak I_{X\to Y}(F)\longrightarrow\mathfrak I_Y(F)       \tag{11}
+ \mathfrak I^*_{X\to Y}(F)\longrightarrow\mathfrak I^*_Y(F)   \tag{11}
 \]
 
-to the former target-only diagram.  It forgets the distinct upstairs
+at every layer `* in {red,sch,formal}`.  It forgets the distinct upstairs
 vertices, their intersections and scheme images, the actual residue covers,
-and all infinitesimal ramification data.
+and the infinitesimal ramification data which live upstairs.
 
 ## 6. Functoriality and stabilization
 
@@ -202,15 +217,14 @@ Let `F:X -> Y` and `G:X' -> Y'` be admissible boundary setups.
 
 1. A left--right isomorphism `G=beta F alpha` induces an isomorphism
    \[
-   \mathfrak I_{X\to Y}(F)\simeq
-   \mathfrak I_{X'\to Y'}(G).                                \tag{12}
+   \mathfrak I^*_{X\to Y}(F)\simeq
+   \mathfrak I^*_{X'\to Y'}(G).                              \tag{12}
    \]
-2. For every `a>=0`, every scheme and morphism in
-   `mathfrak I_(X->Y)(F times id_(A^a))` is the product with `A^a` of the
-   corresponding algebraic scheme or morphism for `F`.  The optional formal
-   completions are the completions of these products along the extended
-   ideals.
-3. Consequently the affine-cylinder class of the enhanced object is a stable
+2. For every `a>=0`, the reduced and scheme layers for
+   `F times id_(A^a)` are termwise products with `A^a`.  The formal layer uses
+   the corresponding completed cylinders, extended conductor and different
+   ideals, and Gauss-extended valuation filtrations.
+3. Consequently the affine-cylinder class of each layer is a stable
    polynomial left--right invariant.
 
 **Proof.**  Source and target isomorphisms transport the function-field
@@ -244,7 +258,11 @@ polynomial extension preserves the kernel defining the image.  Moreover,
 \]
 
 so the different ideal and its restrictions pull back.  Formal completions
-along extended ideals are functorial as well.  Affinely, if `I subset R`
+along extended ideals are functorial as well.  For a finite stratum-ring map
+`A subset B`, polynomial extension gives
+`Ann_(A[t])((B/A)[t])=Ann_A(B/A)[t]`, so its conductor extends.  Each
+divisorial valuation takes its Gauss extension with value zero on the new
+variables, preserving every valuation filtration.  Affinely, if `I subset R`
 defines a stratum, the stabilized completed ring is
 
 \[

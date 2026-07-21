@@ -268,8 +268,12 @@ selects
 On the affine source this is exactly `A=0`; it gives one affine `(1,1)`
 prime.  There can be no third affine prime over `P=0`, because
 `P=AB` and the affine inverse image of `P=0` has only the prime divisors
-`A=0` and `B=0`.  Therefore the remaining `mr-1` simple roots are distinct
-boundary primes `(1,1)`.  The total is
+`A=0` and `B=0`.  Here `A=1+xy^m` is primitive and linear in `x`, hence
+prime.  Also `B=A^(r+1)z+y^(m+1)h(A)` is primitive and linear in `z`:
+`A` does not divide its constant term because every parameter root has
+`q=h(0)!=0`, and `A=0` forces `y!=0`.  Thus `B` is prime and is not associated
+to `A`.  Therefore the remaining `mr-1` simple roots are distinct boundary
+primes `(1,1)`.  The total is
 
 \[
  (r+1)+1+(mr-1)=N.                                        \tag{20}

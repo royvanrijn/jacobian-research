@@ -1,5 +1,9 @@
 # Higher transfer blocks
 
+> **Archived historical computation.**  These isolated `k=2,3,4` models are
+> not active claims and do not support an all-`k` transfer programme.  See
+> [README.md](README.md).
+
 For an allocation change
 
 \[
@@ -149,7 +153,7 @@ U=\prod_i((Z-r_i)^3+	frac32\epsilon_i(Z-r_i)).
 The resulting norm map is not the transfer block: at `k=2` it kills the
 nonzero class `X^2`.  A later proposed quadratic-remainder tangent cone also
 fails at `k=2`, because it omits `X^3` and is positive-dimensional; see the
-[quadratic-remainder counterexample](QUADRATIC_REMAINDER_ALGEBRA.md).
+[quadratic-remainder counterexample](failed-all-k-filtrations.md).
 The all-`k` interpretation is archived.  The explicit results below are
 retained only as exact low-degree coordinate models.
 
@@ -276,7 +280,7 @@ or Gorenstein pattern.
 Run:
 
 ```bash
-python scripts/classify_transfer_block_k2.py
-python scripts/classify_transfer_block_k3.py
-python scripts/classify_transfer_block_k4.py
+python archive/transfer-program/scripts/classify_transfer_block_k2.py
+python archive/transfer-program/scripts/classify_transfer_block_k3.py
+python archive/transfer-program/scripts/classify_transfer_block_k4.py
 ```

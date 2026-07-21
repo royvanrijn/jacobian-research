@@ -6,6 +6,12 @@ left--right invariant.  It also records the exact hypotheses: quasi-finiteness
 is essential for the canonical open immersion, while reduction of the target
 intersections is optional rather than necessary.
 
+The target diagrams defined here are the target quotients of the reduced and
+scheme-theoretic levels in
+[the boundary-invariant ladder](BOUNDARY_INVARIANT_LADDER.md), whose formal
+level adds completed neighborhoods, finite-stratum conductors, differents,
+and boundary valuation filtrations.
+
 ## 1. Correct general setup
 
 Let `k` be a field.  Let `X=Spec(A)` and `Y=Spec(B)` be normal integral affine

@@ -119,6 +119,14 @@ problem is therefore reduced to the automorphism action on this canonical
 normal pair; generic resolvent, monodromy, and numerical ramification data
 alone cannot decide it.
 
+The first computation of this group is now in
+[TARGET_BOUNDARY_AUTOMORPHISM_GROUP.md](TARGET_BOUNDARY_AUTOMORPHISM_GROUP.md):
+every labelled-pair automorphism restricts on `P=0` to
+`(Q,R)->(uQ,u^(-m)R)`.  The resulting scaling torus fixes the projective
+coordinate `w=PT/Q` and hence every parameter root.  Any motion between
+distinct roots must therefore lie in the residual congruence kernel which is
+identity on `P=0` and lifts to the finite normalization.
+
 Run the exact regression with
 
 ```bash

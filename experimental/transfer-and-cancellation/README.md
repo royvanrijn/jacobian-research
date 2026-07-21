@@ -1,16 +1,13 @@
-# Transfer and cancellation: C17--C24
+# C24 cancellation and boundary theory
 
-**Workflow state:** C24 is the sole active research branch.  The proposed
-C22 transverse filtration is refuted at `k=2`; C18, C21, and all
-transfer-dependent all-`k` claims have been archived.  C23's independent
-affine-factorization-complement results remain in scope.
+**Workflow state:** C24 is the sole active research branch in this directory.
+The former transfer programme has been moved entirely to
+[archive/transfer-program](../../archive/transfer-program/) and is not an
+active dependency.
 
 ## What is the main theorem?
 
-C17, C19, and C20 now supply only exact low-`k` local-algebra examples.
-[C23](UNIVERSAL_FACTORIZATION_GEOMETRY.md) independently studies when
-universal marked-factorization complements are affine spaces. C24
-constructs the master cancellation family,
+C24 constructs the master cancellation family,
 computes its generic inverse degree and monodromy, and begins its
 classification under polynomial left--right equivalence.  The
 [generalized cancellation note](GENERALIZED_CANCELLATION_MECHANISM.md)
@@ -19,45 +16,34 @@ and reduces polynomiality to a finite functional equation.
 
 ## Why is it interesting?
 
-The transfer blocks isolate the local algebra behind collisions of
-factorization strata. The cancellation family supplies a broader source of
-explicit noninjective Keller maps and asks whether visibly different inverse
-resolvents can define equivalent polynomial maps.
+The cancellation family supplies a broader source of explicit noninjective
+Keller maps and asks whether visibly different inverse resolvents can define
+equivalent polynomial maps.
 
 ## What does it depend on?
 
-The retained low-`k` transfer examples use exact relative Groebner bases. C24
-uses its explicit reconstruction formulas, finite normalization, DVR
+C24 uses its explicit reconstruction formulas, finite normalization, DVR
 ramification, and tame branch cycles. Its `(1,1)` member links back to
 [C01](../../verified/FOUNDATIONAL_GEOMETRY.md).
 
 ## What is fully proved?
 
-C17 remains an exact low-degree theorem.  The independent cubic C23
-classification and `(2,3)` obstruction remain internally proved.  The
-construction, degree, reconstruction, and monodromy in C24 remain internally
+The construction, degree, reconstruction, and monodromy in C24 remain internally
 proved.  The `r>=2` ramification obstruction and the
 [boundary-intersection obstruction](BOUNDARY_INTERSECTION_OBSTRUCTION.md)
 for `r=1,m>1` separate every noncubic C24 member from generic weighted seeds.
-The new
-[quadratic-remainder audit](QUADRATIC_REMAINDER_ALGEBRA.md) proves that the
-proposed C22 associated graded is false.
 
 ## What remains only computationally supported?
 
-The explicit `Z_3` and `Z_4` presentations (C19--C20) and displayed small C24
-coordinate maps remain exact bounded computations. They are examples, not
-evidence for an active all-`k` transfer programme. Parameter arithmetic is
-now stronger: three irreducibility criteria and the full `m=1` column are
+Displayed small C24 coordinate maps remain exact bounded computations.
+Parameter arithmetic is stronger: three irreducibility criteria and the full `m=1` column are
 uniform theorems, every pair `mr<=30` has an exact modular irreducibility
 certificate, the discriminant is known uniformly, and Galois groups are
 classified exactly through `mr<=30`.
 
 ## What is the likeliest failure point?
 
-For transfer theory, the quadratic-remainder tangent cone is now known to
-omit `X^3` at `k=2`, while the older Boolean norm omits `X^2`.  For active
-C24 work, the risk is
+For active C24 work, the principal risk is
 mistaking a primitive-resolvent artifact for an invariant of the polynomial
 map. Every proposed obstruction must be identified on the canonical finite
 normalization.
@@ -91,6 +77,13 @@ object is functorial and stable under affine cylinders; its C04/C24 vertex
 layer is explicit, while the C24 upstairs intersection schemes are the next
 geometric computation.
 
+The [boundary-invariant ladder](BOUNDARY_INVARIANT_LADDER.md) organizes this
+programme as
+`I^formal -> I^sch -> I^red`: reduced incidence first, full intersection
+schemes and multiplicities second, and completed stratum maps, differents,
+finite-stratum conductors, and valuation filtrations third.  Each layer is
+functorial and stable under affine cylinders.
+
 The [monodromy deck-rigidity theorem](MONODROMY_DECK_RIGIDITY.md) identifies
 target-fixed automorphisms of a finite normalization with `N_G(H)/H`, or
 equivalently with the centralizer of its transitive monodromy action.  A
@@ -98,6 +91,13 @@ self-normalizing sheet stabilizer makes the normalization rigid and reduces
 comparison of two source models inside it to equality of their distinguished
 affine opens.  This separates the general uniqueness argument in C24 from the
 parameter-specific pole calculation.
+
+The subsequent
+[target-boundary automorphism calculation](TARGET_BOUNDARY_AUTOMORPHISM_GROUP.md)
+shows that every labelled-pair automorphism restricts on `P=0` to weighted
+scaling.  This torus fixes the boundary root coordinate and all parameter
+roots, reducing unrestricted parameter equivalence to a cover-lifting
+congruence kernel which is identity on the boundary plane.
 
 The [boundary-exhaustion certificate](BOUNDARY_EXHAUSTION_CERTIFICATE.md)
 separates support containment from local `sum ef` degree accounting.  Its
@@ -132,11 +132,13 @@ right-equivalent over the identity target exactly when their cancellation
 jets agree modulo `A^(r+1)`, so distinct normalized roots are inequivalent
 even stably in that category. Any remaining equivalence must use a
 nonidentity target automorphism that moves the filled `P=0` boundary branch.
-The first relaxation beyond that skeleton is also closed: the
+The normalized monomial-triangular three-weight class is also closed: the
 [three-weight classification](THREE_WEIGHT_CANCELLATION_CLASSIFICATION.md)
-allows the exponent in `Q=y+xA^cB` to vary independently, but the localized
-Jacobian forces `c=a-1` and the old derivative power.  Polynomiality then
-reduces to the two-weight theorem, so no additional branch occurs.
+quantifies over every integer weight triple, arbitrary `f`, arbitrary
+triangular correction `g`, and every one-factor polynomial derivative.  The
+localized Jacobian forces `c=a-1` and the old derivative power; polynomiality
+then reduces to the two-weight theorem, so no additional branch occurs.  A
+complete assumption table marks precisely how one must leave this skeleton.
 The alternative minimal relaxation is closed by the
 [two-factor resolvent classification](TWO_FACTOR_RESOLVENT_CLASSIFICATION.md):
 a second normalized factor is forced either to coincide with the original
@@ -168,7 +170,5 @@ alternating groups at `(4,3)`, `(2,8)`, `(16,1)`, `(17,1)`, `(1,24)`, and
 `(12,2)`, so a uniform symmetric-group conjecture is false.  No other branch
 in this directory is active.
 
-The archived all-`k` transfer programme is preserved under
-[archive/transfer-all-k](../../archive/transfer-all-k/).  It is not an active
-dependency chain.  Only the exact low-degree examples in
-[TRANSFER_BLOCKS.md](TRANSFER_BLOCKS.md) remain in current navigation.
+Historical transfer material is available only through the
+[transfer-program archive](../../archive/transfer-program/).

@@ -100,7 +100,7 @@ The complete four-status ledger is [CLAIMS.md](CLAIMS.md).
 - [Adversarial audit of C05](papers/discriminant-pencils/AUDIT.md)
 - [Verified C01--C04 material](verified/README.md)
 - [Experimental geometry, C05--C16](experimental/geometry/README.md)
-- [Transfer and cancellation, C17--C24](experimental/transfer-and-cancellation/README.md)
+- [C24 cancellation and boundary theory](experimental/transfer-and-cancellation/README.md)
 - [Current research status](RESEARCH_STATUS.md)
 - [Archived notes and superseded derivations](archive/README.md)
 - [Verification commands](Makefile)

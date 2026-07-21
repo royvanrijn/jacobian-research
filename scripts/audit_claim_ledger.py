@@ -24,8 +24,10 @@ for line in ledger.splitlines():
     assert len(cells) == 5, f"C{match.group(1)} does not have five columns"
     rows.append((int(match.group(1)), cells[2]))
 
-assert [number for number, _ in rows] == list(range(1, 25)), (
-    "CLAIMS.md must contain exactly C01--C24 in order"
+active_claims = list(range(1, 17)) + [24]
+assert [number for number, _ in rows] == active_claims, (
+    "CLAIMS.md must contain active claims C01--C16 and C24 in order; "
+    "the archived transfer programme must not reappear as claim rows"
 )
 for number, status in rows:
     assert status in allowed, f"C{number:02d} has unsupported status {status!r}"
@@ -33,4 +35,4 @@ for number, status in rows:
 research_status = (root / "RESEARCH_STATUS.md").read_text()
 assert re.search(r"^\| C24 \|.*\| \*\*Active\*\* \|", research_status, re.MULTILINE)
 assert "Proved construction with incomplete global classification" in research_status
-print("PASS claim ledger: C01--C24 use only the four approved statuses")
+print("PASS claim ledger: active C01--C16 and C24 use approved statuses; transfer rows absent")

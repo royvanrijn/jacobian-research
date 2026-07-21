@@ -397,7 +397,8 @@ components.  Hence, as sets inside the admissible seed space,
 For maximal `2/3` types these closures are the components `C_lambda` and
 `C_mu`, giving the proposed component-intersection formula.  Equation (22)
 is deliberately set-theoretic.  The scheme intersection can be nonreduced
-and can have nontrivial conductor multiplicity; C12 and C17--C20 study those
+and can have nontrivial conductor multiplicity; C12 and the archived
+transfer-block examples study those
 stronger local structures.
 
 ## 9. Consequences and proof status

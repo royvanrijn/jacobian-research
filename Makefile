@@ -22,6 +22,7 @@ verify-core: verify-minimal
 	$(PYTHON) scripts/verify_counterexample.py
 	$(PYTHON) scripts/audit_map_consistency.py
 	$(PYTHON) scripts/cubic_model.py
+	$(PYTHON) scripts/audit_c01_invariance_regression.py
 	$(PYTHON) scripts/verify_marked_root_model.py
 	$(PYTHON) scripts/image_nonproperness.py
 	$(PYTHON) scripts/verify_exceptional_fibers.py
@@ -46,11 +47,6 @@ verify-theorems:
 	$(SYSTEM_PYTHON) scripts/audit_c12_independent.py
 	$(PYTHON) scripts/verify_dicritical_divisors.py
 	$(PYTHON) scripts/verify_c16_blowup_geometry.py
-	$(PYTHON) scripts/classify_transfer_block_k2.py
-	$(PYTHON) scripts/classify_transfer_block_k3.py
-	$(PYTHON) scripts/classify_transfer_block_k4.py
-	$(PYTHON) experimental/transfer-and-cancellation/scripts/test_quadratic_remainder_initial.py
-	$(PYTHON) scripts/verify_universal_factorization_geometry.py
 	$(PYTHON) scripts/verify_omitted_value_classification.py
 	$(PYTHON) scripts/verify_repeated_root_boundary.py
 	$(PYTHON) scripts/verify_effective_chebotarev.py

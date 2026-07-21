@@ -1,5 +1,9 @@
 # Universal factorization slices and affine complements
 
+> **Archived scoped result.**  The cubic classification and `(2,3)`
+> obstruction are preserved for reference, but the former programme label is
+> no longer part of the active claim ledger.  See [README.md](README.md).
+
 This note isolates the part of C23 that does not use the all-`k` transfer
 claim C22.  Its subject is the following affine-geometry problem:
 
@@ -333,7 +337,7 @@ space, while the finite-field/Grothendieck correction does.
 Run
 
 ```text
-.venv/bin/python scripts/verify_universal_factorization_geometry.py
+.venv/bin/python archive/transfer-program/scripts/verify_universal_factorization_geometry.py
 ```
 
 The script checks the contact normal forms, resultant weights, all three

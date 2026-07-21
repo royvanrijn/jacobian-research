@@ -1,5 +1,9 @@
 # The quadratic remainder algebra is not the transfer tangent cone
 
+> **Archived refutation.**  This note is retained as the decisive failure
+> record for the former all-`k` transfer programme.  It is not an active
+> dependency.  See [README.md](README.md).
+
 ## Status and conclusion
 
 **Counterexample (proved).**  The proposed identification of the transverse
@@ -331,7 +335,7 @@ Run:
 
 ```bash
 .venv/bin/python \
-  experimental/transfer-and-cancellation/scripts/test_quadratic_remainder_initial.py
+  archive/transfer-program/scripts/test_quadratic_remainder_initial.py
 ```
 
 ## 8. Programme consequence

@@ -758,7 +758,7 @@ displayed monic relative Gröbner basis.
 containment, triangular elimination, comparison with the affine-difference
 ideal, standard-monomial enumeration, and special-fiber socle calculation.
 
-**Prose.**  [TRANSFER_BLOCKS.md](../../experimental/transfer-and-cancellation/TRANSFER_BLOCKS.md) identifies the free basis
+**Prose.**  [TRANSFER_BLOCKS.md](../transfer-program/three-four-transfer-computations.md) identifies the free basis
 `1,X,Y,X^2` and applies the relative Gröbner criterion.
 
 **External theorems.**  Standard monic relative Gröbner-basis freeness
@@ -793,7 +793,7 @@ coefficients.
 `verify_mixed_allocation_equalizer.py` retain the exact quadratic-cubic
 colength-sixteen audits.
 
-**Prose.**  [ALLOCATION_BRANCH_INTERSECTIONS.md](../transfer-all-k/ALLOCATION_BRANCH_INTERSECTIONS.md)
+**Prose.**  [ALLOCATION_BRANCH_INTERSECTIONS.md](../transfer-program/failed-all-k-details/ALLOCATION_BRANCH_INTERSECTIONS.md)
 proves the arbitrary strong Hensel product, derives the signed product
 formulation, and kills the two shared affine coefficients before decomposing
 into local blocks.
@@ -821,7 +821,7 @@ reduction of the discarded affine coefficients to zero.
 Gröbner basis, eight standard monomials, affine/strong equality, Hilbert
 function, and socle.
 
-**Prose.**  [TRANSFER_BLOCKS.md](../../experimental/transfer-and-cancellation/TRANSFER_BLOCKS.md#the-three-transfer-theorem)
+**Prose.**  [TRANSFER_BLOCKS.md](../transfer-program/three-four-transfer-computations.md#the-three-transfer-theorem)
 deduces finite flatness from the monic basis.
 
 **External theorems.**  Standard relative Gröbner-basis freeness criterion.
@@ -845,7 +845,7 @@ of strong and affine-difference ideals.
 monomials, all relative reductions, affine/strong equality, the special-fiber
 Hilbert function, and its four-dimensional socle.
 
-**Prose.**  [TRANSFER_BLOCKS.md](../../experimental/transfer-and-cancellation/TRANSFER_BLOCKS.md#the-four-transfer-theorem)
+**Prose.**  [TRANSFER_BLOCKS.md](../transfer-program/three-four-transfer-computations.md#the-four-transfer-theorem)
 applies the relative Gröbner freeness criterion and interprets the collision
 fiber.
 
@@ -875,7 +875,7 @@ Wronskian identity. Existing coincident-root eliminations and C17--C20
 transfer calculations are bounded regressions; none proves the all-degree
 statement.
 
-**Prose.**  [MASTER_QUOTIENT_THEOREM.md](../transfer-all-k/MASTER_QUOTIENT_THEOREM.md) proves
+**Prose.**  [MASTER_QUOTIENT_THEOREM.md](../transfer-program/failed-all-k-details/MASTER_QUOTIENT_THEOREM.md) proves
 finiteness by weighted Newton coordinates, identifies every completed
 collision relation by Hensel products of C22 blocks, proves affine/strong
 equality by the global Wronskian, descends by completion, and obtains the
@@ -920,11 +920,11 @@ the conductor norms, confluent product rule, triangular norm generation,
 normalized compound bases, and binomial filtration ranks. C17, C19 and C20
 are independent exact low-degree models.
 
-**Prose.**  [ALL_K_TRANSFER_BLOCK_THEOREM.md](../transfer-all-k/ALL_K_TRANSFER_BLOCK_THEOREM.md)
+**Prose.**  [ALL_K_TRANSFER_BLOCK_THEOREM.md](../transfer-program/failed-all-k-details/ALL_K_TRANSFER_BLOCK_THEOREM.md)
 proves affine/strong equality directly, identifies the formal block with the
 invariant Boolean model, deduces finite flatness by Reynolds splitting, and
 computes the collided Hilbert filtration using the regular representation.
-[C22_DEFORMATION_AUDIT.md](../transfer-all-k/C22_DEFORMATION_AUDIT.md) gives a clean-room proof
+[C22_DEFORMATION_AUDIT.md](../transfer-program/failed-all-k-details/C22_DEFORMATION_AUDIT.md) gives a clean-room proof
 from the conductor ribbon and its divided-power symmetric product.
 
 **External theorems.**  For the first proof: reflection-group freeness, the
@@ -943,7 +943,7 @@ to prove every global equalizer coupling several collision roots.
 **Quantified statement.**  For multiplication
 `mu_(a,b):P^a x P^b -> P^(a+b)`, the complement of the resultant and the
 pullback of a hyperplane has the explicit torus-normalized presentation (7)
-of [UNIVERSAL_FACTORIZATION_GEOMETRY.md](../../experimental/transfer-and-cancellation/UNIVERSAL_FACTORIZATION_GEOMETRY.md).
+of [UNIVERSAL_FACTORIZATION_GEOMETRY.md](../transfer-program/cubic-factorization-obstruction.md).
 Hyperplane contact is the zero partition, with support moduli, of its
 restriction to the rational normal curve.  For the cubic map, the contact
 types `(1,1,1)`, `(2,1)`, and `(3)` have reduction counts `q^3-q`, `q^3`, and
@@ -966,7 +966,7 @@ cubic counts over three finite fields, the `(2,3)` count over five finite
 fields, its symbolic Moebius sum, the local cusp jet, and the weighted
 three-parameter polynomial identity.
 
-**Prose.**  [UNIVERSAL_FACTORIZATION_GEOMETRY.md](../../experimental/transfer-and-cancellation/UNIVERSAL_FACTORIZATION_GEOMETRY.md)
+**Prose.**  [UNIVERSAL_FACTORIZATION_GEOMETRY.md](../transfer-program/cubic-factorization-obstruction.md)
 derives the torus quotient and resultant gauge, classifies normalized contact
 slices, proves the cubic fiber decompositions, proves the `(2,3)` count by
 Moebius inversion, and identifies the two universal pullback/fiber-product

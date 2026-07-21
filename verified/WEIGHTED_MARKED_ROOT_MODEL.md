@@ -19,7 +19,7 @@ Universally, this is the pullback of the marked linear-factor map
 The parameter space is three-dimensional even though the polynomial depends
 on it through two pencil coordinates: `C` retains the reconstruction scale.
 This factorization-slice interpretation is developed in
-[UNIVERSAL_FACTORIZATION_GEOMETRY.md](../experimental/transfer-and-cancellation/UNIVERSAL_FACTORIZATION_GEOMETRY.md).
+[the archived factorization-slice note](../archive/transfer-program/cubic-factorization-obstruction.md).
 
 Work over a characteristic-zero field `k`.  Let `H in k[W]` be an admissible
 primitive of degree `n`, with
