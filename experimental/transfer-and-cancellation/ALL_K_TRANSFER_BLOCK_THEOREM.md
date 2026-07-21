@@ -7,6 +7,8 @@
 > its stated characteristic-zero hypothesis, and the bounded Groebner
 > computations remain evidence.  See
 > [C22_CONDUCTOR_RIBBON_AUDIT.md](C22_CONDUCTOR_RIBBON_AUDIT.md).
+> The replacement direct presentation and current bounded basis results are
+> in [DIRECT_TRANSFER_BASIS.md](DIRECT_TRANSFER_BASIS.md).
 
 Let `K` be a characteristic-zero field and let
 

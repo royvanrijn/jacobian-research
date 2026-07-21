@@ -336,3 +336,7 @@ The immediate all-`k` problem is:
 
 Until that is done, C21 and the allocation-intersection statements that use
 the all-`k` Boolean relation have a material unresolved dependency.
+
+The direct elimination identity, exact bases through `k=4`, and bounded
+counterexample search are now recorded in
+[DIRECT_TRANSFER_BASIS.md](DIRECT_TRANSFER_BASIS.md).
