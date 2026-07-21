@@ -1,5 +1,6 @@
-"""Exact regressions for the universal global affine-rigidity identity."""
+"""Exact regressions for arbitrary global transfer equalizers."""
 
+import math
 import sympy as sp
 
 W = sp.symbols("W")
@@ -56,5 +57,76 @@ for n in range(3, 30):
     ) == -n * mu
 
 
+def product(items):
+    answer = sp.Poly(1, W, domain=sp.QQ)
+    for item in items:
+        answer *= sp.Poly(item, W, domain=sp.QQ)
+    return answer
+
+
+def transfer_diagnostic(vector):
+    """Audit the cross-coupled global equation for one transfer vector."""
+    assert sum(vector) == 0 and all(value != 0 for value in vector)
+    blocks = []
+    for index, value in enumerate(vector):
+        size = abs(value)
+        blocks.append((
+            sp.Poly(monic(101 + 17 * index, 3 * size), W, domain=sp.QQ),
+            sp.Poly(monic(211 + 19 * index, 2 * size), W, domain=sp.QQ),
+            value,
+        ))
+
+    Q_plus = product(U for U, _, value in blocks if value > 0)
+    Q_minus = product(U for U, _, value in blocks if value < 0)
+    R_plus = product(V for _, V, value in blocks if value > 0)
+    R_minus = product(V for _, V, value in blocks if value < 0)
+    M_plus = Q_plus**2 * R_minus**3
+    M_minus = Q_minus**2 * R_plus**3
+
+    wronskian = M_minus * M_plus.diff() - M_plus * M_minus.diff()
+    divisor = Q_plus * R_minus**2 * Q_minus * R_plus**2
+    quotient = (
+        Q_minus * R_plus
+        * (2 * Q_plus.diff() * R_minus + 3 * Q_plus * R_minus.diff())
+        - Q_plus * R_minus
+        * (2 * Q_minus.diff() * R_plus + 3 * Q_minus * R_plus.diff())
+    )
+    assert wronskian == divisor * quotient
+
+    weight = sum(value for value in vector if value > 0)
+    assert -sum(value for value in vector if value < 0) == weight
+    assert M_plus.degree() == M_minus.degree() == 12 * weight
+    assert divisor.degree() == 14 * weight > M_plus.degree()
+
+    total_transfer = sum(abs(value) for value in vector)
+    rank = 2**total_transfer
+    hilbert = tuple(math.comb(total_transfer, degree)
+                    for degree in range(total_transfer + 1))
+    return rank, hilbert
+
+
+diagnostics = {
+    "Z3 with three Z1 compensators": ((3, -1, -1, -1), 64),
+    "two interacting Z3 blocks": ((3, -3), 64),
+    "Z4 with four Z1 compensators": ((4, -1, -1, -1, -1), 256),
+    "mixed Z3-Z2-Z1": ((3, -2, -1), 64),
+    "three-block Z4-Z3-Z1": ((4, -3, -1), 256),
+}
+
+for name, (vector, expected_rank) in diagnostics.items():
+    rank, hilbert = transfer_diagnostic(vector)
+    assert rank == expected_rank
+    assert sum(hilbert) == rank
+
+# A primitive Z1 contribution used with exponent -3 at one cluster is an
+# effective transfer -3, hence a Z3 block rather than three tensor factors.
+weights = (3, 1)
+exponents = (1, -3)
+assert sum(weight * exponent for weight, exponent in zip(weights, exponents)) == 0
+assert tuple(weight * exponent for weight, exponent in zip(weights, exponents)) == (3, -3)
+
+
 print("PASS: the monic Wronskian divisor is audited for 2/3 pairs through degree 12")
 print("PASS: the shared affine coefficients vanish over every Q-algebra")
+print("PASS: five Z3/Z4 global transfer diagnostics have the predicted tensor ranks")
+print("PASS: concentrated exponents are classified by their effective local transfer")

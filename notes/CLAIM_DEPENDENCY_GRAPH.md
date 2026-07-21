@@ -760,7 +760,10 @@ claim alone does not settle global compensation between several roots.
 polynomial, the completed strong-equality correspondence is a regular factor
 completed-tensored with the rootwise blocks `Z_|k_rho|`. The affine normalized
 correspondence is the same formal scheme for every transfer vector, and its
-transverse rank is `2^(sum_rho abs(k_rho))`.
+transverse rank is `2^(sum_rho abs(k_rho))`. In signed product notation the
+actual branch equation is the cross-coupled relation
+`Q_+^2 R_-^3-Q_-^2 R_+^3 in <1,W>`; separate affine relations on the `Q` and
+`R` products are not asserted.
 
 **Depends on.** C11 allocation fibers; C22's all-`k` finite-flat Boolean
 relation; unique formal Hensel factorization into coprime root clusters; the
@@ -769,14 +772,18 @@ global monic Wronskian divisor and its degree bound.
 **Computation.** `verify_global_affine_rigidity.py` checks exact integer
 specializations of the Wronskian factorization for all allocation pairs
 through degree twelve and the symbolic leading-coefficient argument through
-degree twenty-nine.
+degree twenty-nine. It also checks the corrected `Z_3/Z_4` diagnostics
+`(3,-1,-1,-1)`, `(3,-3)`, `(4,-1,-1,-1,-1)`, `(3,-2,-1)`, and
+`(4,-3,-1)`, including their Wronskian degrees, tensor ranks, and Hilbert
+coefficients.
 `verify_allocation_hensel_product.py` and
 `verify_mixed_allocation_equalizer.py` retain the exact quadratic-cubic
 colength-sixteen audits.
 
 **Prose.**  [ALLOCATION_BRANCH_INTERSECTIONS.md](ALLOCATION_BRANCH_INTERSECTIONS.md)
-proves the arbitrary strong Hensel product and kills the two shared affine
-coefficients before decomposing into local blocks.
+proves the arbitrary strong Hensel product, derives the signed product
+formulation, and kills the two shared affine coefficients before decomposing
+into local blocks.
 
 **External theorems.** Formal Hensel factorization and standard facts about
 completed tensor products and finite-flat ranks.

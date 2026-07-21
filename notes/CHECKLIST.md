@@ -155,6 +155,9 @@ formal derivations of its universal quantifier.
   rank-four flat structure and non-Gorenstein coincident-root fiber.
 - [x] Prove all global equalizer theorems for compensating transfers by the
   universal Wronskian, killing the two shared affine coefficients at once.
+- [x] Audit the first `Z_3/Z_4` global configurations, including two `Z_3`
+  blocks, elementary compensation of `Z_3` and `Z_4`, mixed
+  `Z_3 completed-tensor Z_2`, and a three-block transfer.
 - [x] Prove the strong Hensel-product decomposition and reduce affine rigidity
   to a transverse length upper bound.
 - [x] Prove the quadratic-cubic colength-sixteen upper bound in the `(2,-2)`
