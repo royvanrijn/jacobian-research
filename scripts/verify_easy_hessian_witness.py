@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Exact regression for the reduced/nonreduced Hessian-root witness pair."""
+"""Exact regression for the easy degree-five Hessian-root witness pair."""
 
 import sys
 from pathlib import Path
@@ -53,12 +53,16 @@ assert E.subs(w, 2) == 0
 assert sp.diff(E, w).subs(w, 1) == -19
 assert sp.diff(E, w).subs(w, 2) == 44
 
-# The two additional primitive roots are distinct and boundary-clean.
-R = 2 * w**2 - 2 * w + 1
-assert sp.discriminant(R, w) == -4
-assert sp.factor(sp.resultant(R, -w + sp.diff(H_dbl, w), w)) == 16
+# Both split primitives have two distinct, boundary-clean additional roots.
+for H, residual, expected_resultant in (
+    (H_red, w**2 + 1, 1),
+    (H_dbl, 2 * w**2 - 2 * w + 1, 16),
+):
+    assert sp.discriminant(residual, w) == -4
+    resultant = sp.factor(sp.resultant(residual, -w + sp.diff(H, w), w))
+    assert resultant == expected_resultant
 
-# Stable Hessian-root obstruction: reduced versus nonreduced Fitting divisor.
+# Stable obstruction: three Hessian-root components versus two.
 K_red = sp.factor(sp.diff(H_red, w, 2))
 K_dbl = sp.factor(sp.diff(H_dbl, w, 2))
 
@@ -68,8 +72,10 @@ assert sp.discriminant(K_red, w) == -1080
 assert sp.discriminant(K_dbl, w) == 0
 assert sp.gcd(K_red, sp.diff(K_red, w)) == 1
 assert sp.factor(sp.gcd(K_dbl, sp.diff(K_dbl, w))) == 2 * w - 1
+assert sp.degree(sp.sqf_part(K_red), w) == 3
+assert sp.degree(sp.sqf_part(K_dbl), w) == 2
 
 print("PASS: both rational weighted maps are polynomial Keller maps of degree five")
 print("PASS: the double-Hessian map has the stated rational collision")
-print("PASS: its additional primitive-root branches are boundary-clean")
-print("PASS: reduced versus nonreduced Hessian divisor separates the stable classes")
+print("PASS: both additional-root pairs are boundary-clean")
+print("PASS: three versus two Hessian-root components separates the stable classes")
