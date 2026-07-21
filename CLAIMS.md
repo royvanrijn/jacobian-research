@@ -36,7 +36,7 @@ Only four evidence statuses are used:
 | C21 | Archived master quotient theorem | Conjectural / incomplete | [Archived conditional argument](archive/transfer-all-k/MASTER_QUOTIENT_THEOREM.md) | C22 input not recovered |
 | C22 | All-`k` transfer block unproved; two proposed filtrations refuted | Conjectural / incomplete | [Quadratic-remainder counterexample](experimental/transfer-and-cancellation/QUADRATIC_REMAINDER_ALGEBRA.md) | Exact low-`k` examples only |
 | C23 | Cubic factorization-slice classification and `(2,3)` obstruction | Proved internally | [Cubic classification and exact obstruction](experimental/transfer-and-cancellation/UNIVERSAL_FACTORIZATION_GEOMETRY.md) | Exact finite-field checks; general higher-degree classification remains open |
-| C24 | Master cancellation family and generalized-mechanism classification | Conjectural / incomplete | [Construction](experimental/transfer-and-cancellation/MASTER_CANCELLATION_CONSTRUCTION.md), [complete two-weight classification](experimental/transfer-and-cancellation/GENERALIZED_CANCELLATION_MECHANISM.md), and [boundary obstruction](experimental/transfer-and-cancellation/BOUNDARY_INTERSECTION_OBSTRUCTION.md) | Uniform discriminant, infinite square families, full `m=1` irreducibility, and Galois groups through degree thirty; general arithmetic and equivalence remain open |
+| C24 | Master cancellation family and generalized-mechanism classification | Conjectural / incomplete | [Construction](experimental/transfer-and-cancellation/MASTER_CANCELLATION_CONSTRUCTION.md), [complete two-weight classification](experimental/transfer-and-cancellation/GENERALIZED_CANCELLATION_MECHANISM.md), [three-weight rigidity](experimental/transfer-and-cancellation/THREE_WEIGHT_CANCELLATION_CLASSIFICATION.md), [boundary obstruction](experimental/transfer-and-cancellation/BOUNDARY_INTERSECTION_OBSTRUCTION.md), and [canonical boundary-incidence invariant](experimental/transfer-and-cancellation/CANONICAL_BOUNDARY_INTERSECTION_INVARIANT.md) | Uniform discriminant, full `m=1` irreducibility, Galois groups through degree thirty, and [target-fixed parameter rigidity](experimental/transfer-and-cancellation/TARGET_FIXED_PARAMETER_RIGIDITY.md); general arithmetic and unrestricted equivalence remain open |
 
 Workflow state is tracked separately in [RESEARCH_STATUS.md](RESEARCH_STATUS.md).
 
@@ -46,8 +46,10 @@ mechanism classification, tail equivalence, comparison with generic weighted
 seeds, and discriminant theorem are proved internally. Irreducibility is
 proved for the complete `m=1` column, three further uniform arithmetic
 criteria, and every `mr<=30`; Galois groups are classified through `mr<=30`.
-Uniform arithmetic, distinct-parameter-root equivalence, minimal collision
-fields, and classification beyond the two-weight skeleton remain open.
+Distinct roots are not target-fixed right-equivalent, even stably. Uniform
+arithmetic, unrestricted distinct-parameter-root left--right equivalence,
+minimal collision fields, and classification with a second resolvent factor
+remain open.
 
 C18, C21, and C22 are preserved as archived historical claims. Their
 incomplete status is not an active dependency of C23 or C24.

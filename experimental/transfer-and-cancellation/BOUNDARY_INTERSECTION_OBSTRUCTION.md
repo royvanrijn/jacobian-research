@@ -3,7 +3,9 @@
 This note settles the remaining comparison between `C24_(m,1)`, `m>1`, and
 a generic weighted seed of inverse degree `m+2`.  The obstruction is the
 reduced intersection of the two intrinsically distinguished target boundary
-components.
+components.  The general theorem making this construction a canonical stable
+left--right invariant is recorded in
+[CANONICAL_BOUNDARY_INTERSECTION_INVARIANT.md](CANONICAL_BOUNDARY_INTERSECTION_INVARIANT.md).
 
 Throughout, `k` is a characteristic-zero field.  For the weighted family,
 write
@@ -145,8 +147,9 @@ For every `m>1`, no `C24_(m,1)` map, including any allowed tail
 `h_q(A)+A^2g(A)`, is polynomially left--right equivalent to a generic
 weighted-seed map of inverse degree `m+2`.
 
-The same conclusion holds after adjoining equally many identity coordinates.
-Indeed the distinguished intersections become
+The same conclusion holds after adjoining equally many identity coordinates,
+by the canonical boundary-intersection theorem.  Concretely, the
+distinguished intersections become
 `(A^1 disjoint-union G_m) x A^a` and `A^(a+1)`; polynomial extension does not
 remove the nontrivial idempotent.
 

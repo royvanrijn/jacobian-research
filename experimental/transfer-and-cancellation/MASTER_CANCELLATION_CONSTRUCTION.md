@@ -379,6 +379,22 @@ compositum of `K_q` with the splitting field of (21).  The Galois group of
 map and its entire marked collision.  No smaller collision field is asserted
 without factoring (21) for the chosen pair.
 
+Distinct parameter roots are already rigid over a fixed target. The generic
+extension (17) has trivial target-field automorphism group because its
+`S_N` or `A_N` point stabilizer is self-normalizing. Hence the unique
+target-fixed birational identification between branches `h` and `h'` is
+
+\[
+ (x,y,z)\longmapsto
+ \left(x,y,z+{y^{m+1}(h(A)-h'(A))\over A^{r+1}}\right).
+\]
+
+It is polynomial exactly when `h=h' mod A^(r+1)`. Thus distinct normalized
+parameter roots are not target-fixed right-equivalent, even stably. The full
+proof and the reduction of unrestricted left--right equivalence to an
+automorphism problem for the marked canonical boundary pair are in
+[TARGET_FIXED_PARAMETER_RIGIDITY.md](TARGET_FIXED_PARAMETER_RIGIDITY.md).
+
 ## 6. Relation with the weighted-seed construction
 
 The member `(m,r,q)=(1,1,3)` has `h=3+9A`.  If `F=(F_1,F_2,F_3)` is the
@@ -429,6 +445,8 @@ The precise conclusion is therefore:
 - both constructions are pullbacks of the universal marked-root incidence;
 - no noncubic C24 member is polynomially left--right equivalent, even stably,
   to a generic weighted seed; and
+- distinct normalized C24 parameter roots are not target-fixed
+  right-equivalent, even stably; and
 - every allowed tail deformation is removed by a polynomial source shift in
   `z`.
 

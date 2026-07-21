@@ -4,14 +4,15 @@
 
 The active questions are now sharply separated from completed milestones:
 
-1. classify polynomial left--right equivalence among maps attached to
-   distinct C24 parameter roots;
+1. classify unrestricted polynomial left--right equivalence among maps
+   attached to distinct C24 parameter roots; target-fixed right-equivalence
+   is now completely classified and separates distinct normalized roots;
 2. prove or disprove irreducibility of `M_(m,r)` outside the known uniform
    criteria and the exact range `mr<=30`;
 3. classify parameter Galois groups in all degrees and determine minimal
    collision fields; and
-4. find the smallest relaxation of the completed two-weight coordinate
-   skeleton that can produce a genuinely new cancellation family.
+4. classify a second independent resolvent factor, now that the first
+   one-additional-weight relaxation has been proved to collapse to C24.
 
 The generic-weighted-seed comparison, all allowed tail deformations,
 separability, the complete `m=1` irreducibility column, and the generalized
@@ -106,10 +107,18 @@ jet a translated/scaled C24 jet.  The arbitrary `A^(e+1)` tail is removed by
 a polynomial source automorphism.  Thus there is no nonmonomial branch, and
 no new polynomial-equivalence class, anywhere in the ansatz of that note.
 
-**Remaining question.** Which minimal relaxation of the coordinate skeleton
-(1)--(2) still admits a finite cancellation operator but escapes the
-rising-factorial spectral coprimality argument?  Equivalence among distinct
-C24 parameter branches remains a separate classification problem.
+The first minimal coordinate relaxation is now settled in
+[THREE_WEIGHT_CANCELLATION_CLASSIFICATION.md](THREE_WEIGHT_CANCELLATION_CLASSIFICATION.md):
+allowing `Q=y+xA^cB` with an independent third weight forces `c=a-1` and the
+old derivative power before polynomial cancellation is even imposed.
+
+**Remaining question.** Can a second independent resolvent factor still
+admit a finite cancellation operator while escaping the rising-factorial
+spectral coprimality argument? Equivalence among distinct C24 parameter
+branches remains a separate classification problem, but the
+[target-fixed rigidity theorem](TARGET_FIXED_PARAMETER_RIGIDITY.md) shows
+that any such equivalence must use a nonidentity target automorphism moving
+the filled `P=0` boundary branch.
 
 ## Parameter-polynomial arithmetic
 
@@ -129,8 +138,9 @@ primitive modulo `mr+1`; reduction then gives `Phi_(mr+1)`.  A third theorem
 uses the unit-disk transform to cover `binom(mr+r,r)` prime, including every
 `r=1` case with `m+1` prime.  The remaining questions are the other
 truncated-binomial cases beyond the exact modularly certified range
-`mr<=30`, higher Galois groups, and polynomial left--right equivalence
-between conjugate roots over an algebraic closure.  The
+`mr<=30`, higher Galois groups, and unrestricted polynomial left--right
+equivalence between conjugate roots over an algebraic closure. Fixed-target
+right-equivalence is already ruled out for distinct roots. The
 [closed discriminant formula](PARAMETER_DISCRIMINANT.md) already settles
 separability and alternating containment uniformly; square discriminants
 occur in an explicit infinite family for every fixed `r`.  The exact

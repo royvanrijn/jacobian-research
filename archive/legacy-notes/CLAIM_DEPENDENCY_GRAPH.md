@@ -1048,9 +1048,11 @@ group classification.
 
 **Obligations.** Independent audit of the all-`m,r` cancellation and boundary
 proofs is pending. Uniform irreducibility and Galois groups beyond the exact
-degree-thirty parameter classification, minimal collision fields, equivalence
-among distinct parameter roots, and a global arithmetic/coordinate
-classification of all polynomial cancellation branches remain open.
+degree-thirty parameter classification, minimal collision fields,
+unrestricted left--right equivalence among distinct parameter roots, and a
+global arithmetic/coordinate classification of all polynomial cancellation
+branches remain open. Target-fixed right-equivalence is classified: distinct
+normalized roots are inequivalent, even stably.
 
 ## Cross-claim unresolved obligations
 
@@ -1070,7 +1072,8 @@ The following obligations affect more than one node:
    uniform classification of higher affine factorization complements remains
    open.
 7. C24's ramification and boundary-intersection invariants rule out generic
-   weighted equivalence for every noncubic member. Uniform parameter
-   irreducibility and Galois groups, minimal collision fields, equivalence
-   among distinct parameter roots, and classification beyond the two-weight
+   weighted equivalence for every noncubic member, and target-fixed rigidity
+   separates distinct normalized parameter roots. Uniform parameter
+   irreducibility and Galois groups, minimal collision fields, unrestricted
+   parameter-root equivalence, and classification beyond the two-weight
    skeleton remain open.

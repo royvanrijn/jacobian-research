@@ -175,6 +175,12 @@ equivalence is then handled by Theorems 2.1 and 2.2.  QED
 This theorem does **not** say that a particular one-variable resolvent survives
 mixing old and new coordinates.  Only the intrinsic finite-cover data do.
 
+The target boundary divisors, labelled by these intrinsic data, and all their
+reduced multiple intersections form a stronger stable incidence invariant.
+Uniquely marked intersections are canonical subobjects.  The general
+statement and its cylinder proof are recorded in
+[CANONICAL_BOUNDARY_INTERSECTION_INVARIANT.md](CANONICAL_BOUNDARY_INTERSECTION_INVARIANT.md).
+
 ## 3. C01 and a generic weighted seed
 
 For C01 the projective cubic resolvent is

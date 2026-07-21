@@ -73,15 +73,31 @@ equivalence techniques.
 The reduced intersection of the intrinsically distinguished target boundary
 components is `A^1 disjoint-union G_m` for C24 with `r=1,m>1` and `A^1` for a
 generic weighted seed.  This settles the formerly unresolved comparison,
-including stable left--right equivalence.
+including stable left--right equivalence.  The
+[canonical boundary-incidence theorem](CANONICAL_BOUNDARY_INTERSECTION_INVARIANT.md)
+now packages, for every characteristic-zero nonproper Keller map, the full
+ramification-labelled diagram of target boundary divisors and all their
+reduced multiple intersections.  Unique intrinsic markings are needed only
+to extract a named intersection such as the one used here.
 
 The [generalized mechanism](GENERALIZED_CANCELLATION_MECHANISM.md) now
 classifies the full two-weight ansatz.  For every `e>=1`, its spectral
 polynomials are pairwise coprime; every polynomial leading term is monomial
 after translation/scaling; and the unique full jet is C24, while the
 `A^(e+1)` tail is removed by a polynomial source automorphism.  Hence a new
-constructive family must relax the coordinate skeleton itself.  Equivalence
-among distinct C24 parameter branches is a separate remaining target.  The
+constructive family must relax the coordinate skeleton itself. Equivalence
+among distinct C24 parameter branches is now narrowed by
+[target-fixed rigidity](TARGET_FIXED_PARAMETER_RIGIDITY.md): two branches are
+right-equivalent over the identity target exactly when their cancellation
+jets agree modulo `A^(r+1)`, so distinct normalized roots are inequivalent
+even stably in that category. Any remaining equivalence must use a
+nonidentity target automorphism that moves the filled `P=0` boundary branch.
+The first relaxation beyond that skeleton is also closed: the
+[three-weight classification](THREE_WEIGHT_CANCELLATION_CLASSIFICATION.md)
+allows the exponent in `Q=y+xA^cB` to vary independently, but the localized
+Jacobian forces `c=a-1` and the old derivative power.  Polynomiality then
+reduces to the two-weight theorem, so no additional branch occurs.
+The
 [prime-power Eisenstein theorem](PARAMETER_IRREDUCIBILITY.md) proves that all
 roots form one arithmetic conjugacy class whenever `mr+r+1=p^k` and
 `v_p(mr)=k-1`.  Its cyclotomic companion covers further composite values

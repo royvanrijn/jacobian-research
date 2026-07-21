@@ -49,23 +49,29 @@ independently verified.
 |---|---|---|
 | Polynomial cancellation construction | Proved internally for all `m,r>=1` | Constant Jacobian, finite cancellation operator, Hensel recurrence, reconstruction, collision, inverse degree, and monodromy |
 | Comparison with generic weighted seeds | Settled | Ramification separates `r>=2`; the reduced boundary intersection separates `r=1,m>1`, even stably; `(1,1)` is the known C01 identification |
+| Canonical boundary-incidence invariant | Proved internally | Every characteristic-zero Keller map has a stable ramification-labelled diagram of all divisorial boundary images and their reduced multiple intersections; uniquely marked intersections supply immediate stable left--right obstructions |
 | Tail deformations | Settled | Every allowed `A^(r+1)` tail is removed by a polynomial source automorphism |
 | Generalized two-weight mechanism | Settled inside the stated ansatz | Spectral coprimality forces the monomial C24 branch; no nonmonomial polynomial branch survives |
 | Parameter separability and discriminant | Proved uniformly | Closed discriminant formula, exact square criterion, complete even-degree square locus, and an infinite square family for each fixed `r` |
 | Parameter irreducibility | Partially solved | Full `m=1` column; three uniform arithmetic criteria; every pair `mr<=30`; arbitrary remaining `(m,r)` open |
 | Parameter Galois groups | Exact through `mr<=30` | Symmetric, alternating, dihedral, and exceptional degree-six actions occur; all-degree classification open |
-| Distinct parameter-root equivalence | Open | Determine whether maps attached to conjugate or otherwise distinct roots `q` are polynomially left--right equivalent over an algebraic closure |
+| Distinct parameter-root equivalence | Partially settled | Distinct normalized roots are not target-fixed right-equivalent, even stably; unrestricted left--right equivalence is reduced to target automorphisms of the marked canonical boundary pair |
 | Minimal collision fields | Open | Determine the least fields over which the full collisions are defined |
-| Beyond the two-weight skeleton | Open | Find the smallest coordinate relaxation admitting a new cancellation family, or classify all polynomial cancellation branches |
+| One-additional-weight relaxation | Settled | For `P=A^aB`, `Q=y+xA^cB`, and a one-factor polynomial resolvent derivative, the Jacobian forces `c=a-1` and the former derivative power; polynomiality then yields only C24 |
+| Beyond the three-weight skeleton | Open | Classify a second independent resolvent factor, or find another minimal coordinate relaxation admitting a genuinely new cancellation family |
 | Independent verification | Pending | The all-`m,r` cancellation, normalization, and boundary package still needs a genuinely separate audit |
 
 The boundary comparison is proved in
 [BOUNDARY_INTERSECTION_OBSTRUCTION.md](experimental/transfer-and-cancellation/BOUNDARY_INTERSECTION_OBSTRUCTION.md).
+Its reusable invariant-theoretic form is proved in
+[CANONICAL_BOUNDARY_INTERSECTION_INVARIANT.md](experimental/transfer-and-cancellation/CANONICAL_BOUNDARY_INTERSECTION_INVARIANT.md).
 The arithmetic results are collected in
 [PARAMETER_IRREDUCIBILITY.md](experimental/transfer-and-cancellation/PARAMETER_IRREDUCIBILITY.md),
 [PARAMETER_DISCRIMINANT.md](experimental/transfer-and-cancellation/PARAMETER_DISCRIMINANT.md),
 and
 [PARAMETER_GALOIS_GROUPS.md](experimental/transfer-and-cancellation/PARAMETER_GALOIS_GROUPS.md).
+The first parameter-equivalence theorem is
+[TARGET_FIXED_PARAMETER_RIGIDITY.md](experimental/transfer-and-cancellation/TARGET_FIXED_PARAMETER_RIGIDITY.md).
 
 ## Other open or review-level work
 
