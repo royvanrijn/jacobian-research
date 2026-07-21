@@ -25,9 +25,12 @@ Put `K=k(Y)` and `L=k(X)`, with the inclusion induced by `F`, and let
 \]
 
 be the normalization of `Y` in `L`.  Since `Y` is excellent, (1) is finite.
-The map `F` factors through (1).  The induced map
-`j_F:X -> bar(X)_F` is a quasi-finite birational morphism to a normal scheme,
-hence an open immersion by Zariski's Main Theorem.  Thus
+Write `A=k[X]`, `B=k[Y]`, and let `bar(B)` be the integral closure of `B` in
+`L`.  Every element of `bar(B)` is integral over `A`; normality of `A` gives
+`bar(B) subset A`.  Hence `F` factors through (1).  A Keller map is étale and
+therefore quasi-finite, so the induced map
+`j_F:X -> bar(X)_F` is a quasi-finite birational morphism to a normal scheme.
+It is an open immersion by Zariski's Main Theorem.  Thus
 
 \[
  \partial_F=\bar X_F\setminus X                                  \tag{2}
@@ -42,7 +45,8 @@ The **intrinsic resolvent--ramification signature** `Sigma(F)` consists of:
 
 - the generic degree `nu=[L:K]`;
 - the geometric monodromy permutation group of the Galois closure of `L/K`;
-- for every geometric prime divisor `Z` of `Y` met by `partial_F`, the
+- for every prime divisor `Z` of `Y` dominated by a divisorial component of
+  `partial_F`, the
   multiset
   \[
     \mathcal B_Z(F)=\{(e(E/Z),f(E/Z)):E\subset\partial_F, E\mapsto Z\};
@@ -52,18 +56,20 @@ The **intrinsic resolvent--ramification signature** `Sigma(F)` consists of:
   \[
     \ell_Z(F)=\sum_{E\subset\partial_F, E\mapsto Z}e(E/Z)f(E/Z);  \tag{4}
   \]
-- for every boundary prime `E`, the valuation functional
-  `v_E:k[X]^* -> Z`, considered up to automorphism of the `k`-algebra
-  `k[X]`.
+- for every boundary prime `E`, the valuation functional on nonzero elements
+  of `k[X]` (equivalently `v_E:L^* -> Z` together with its restriction to
+  `k[X]`), considered up to automorphism of the `k`-algebra `k[X]`.
 
-Over an algebraically closed field all geometric residue degrees in (3) are
-one.  Over a nonsplit coefficient field, one geometric orbit is a single
-arithmetic prime and its residue degree is the orbit size.  Formula (4) is a
-length: it counts nearby generic sheets specializing to boundary.  It should
-not be confused with the number of points in a reduced special fiber.
-Indeed, extension of the DVR at the generic point of `Z` gives
-`nu=sum_E e(E/Z)f(E/Z)` (there is no defect in characteristic zero); (4) is
-the part of this sum supported outside the affine-source open.
+Here `f(E/Z)=[kappa(E):kappa(Z)]`.  It can exceed one even over an
+algebraically closed field: it is the generic degree of `E -> Z`, not merely
+a constant-field orbit size.  Formula (4) is the boundary contribution to
+the length of the generic special fiber over `Z`; it should not be confused
+with the number of reduced points.  The fundamental equality
+`nu=sum_E e(E/Z)f(E/Z)` sums over **all** primes of `bar(X)_F` over `Z`.
+Equation (4) retains only those whose generic points lie outside the
+affine-source open.  Geometric profiles are obtained by repeating the
+construction after base change and normalization, not by replacing every
+residue degree with one.
 
 The last entry is the coordinate-free meaning of **reconstruction pole
 divisors**.  Choosing coordinates `(x_1,...,x_d)` replaces the functional by
@@ -165,20 +171,22 @@ under polynomial stable left--right equivalence.
 **Proof.**  The new field extension is the purely transcendental base change
 `L(t_1,...,t_a)/K(t_1,...,t_a)`.  Linear disjointness from a purely
 transcendental extension preserves degree and the geometric Galois closure.
-Because `bar(X)_F` is normal in characteristic zero,
-`bar(X)_F times A^a` is normal and is the integral closure after this base
-change.  The identity variables have valuation zero at `E times A^a`; the
-extensions of the corresponding DVRs have the same value groups and residue
-extensions.  This proves all assertions.  An arbitrary stable left--right
-equivalence is then handled by Theorems 2.1 and 2.2.  QED
+Integral closure commutes with polynomial extension, so
+`bar(X)_F times A^a` is the integral closure after this base change.  The
+identity variables have valuation zero at `E times A^a`; the ramification
+index is unchanged and the residue extension becomes
+`kappa(E)(t_1,...,t_a)/kappa(Z)(t_1,...,t_a)`, of the same finite degree.
+This proves all assertions.  An arbitrary stable left--right equivalence is
+then handled by Theorems 2.1 and 2.2.  QED
 
 This theorem does **not** say that a particular one-variable resolvent survives
 mixing old and new coordinates.  Only the intrinsic finite-cover data do.
 
 The target boundary divisors, labelled by these intrinsic data, and all their
-reduced multiple intersections form a stronger stable incidence invariant.
-Uniquely marked intersections are canonical subobjects.  The general
-statement and its cylinder proof are recorded in
+scheme-theoretic multiple intersections form a stronger stable incidence
+invariant; their reductions give a coarser invariant.  Uniquely marked
+intersections are canonical subobjects.  The general statement and its
+cylinder proof are recorded in
 [CANONICAL_BOUNDARY_INTERSECTION_INVARIANT.md](CANONICAL_BOUNDARY_INTERSECTION_INVARIANT.md).
 
 ## 3. C01 and a generic weighted seed
@@ -355,6 +363,17 @@ factor (18).  Equivalently, they are the orbit sizes of the other roots of
 
 The raw pole `s=x/A` sees all `mr` nonzero roots in (17); the intrinsic table
 sees only `mr-1`.  This is the promised adversarial chart check.
+
+The completeness of this list is not inferred merely from the displayed
+roots.  The support and `sum ef=N` argument is isolated in
+[BOUNDARY_EXHAUSTION_CERTIFICATE.md](BOUNDARY_EXHAUSTION_CERTIFICATE.md); it
+also supplies the corresponding generic weighted-seed exhaustion proof.
+The full scheme-theoretic intersection of `Delta_(m,r)` with `P=0` is
+computed in
+[C24_SCHEME_BOUNDARY_ALL_PARAMETERS.md](C24_SCHEME_BOUNDARY_ALL_PARAMETERS.md);
+its nilradical has exact index `mr(m+1)`.  This is a canonical boundary
+intersection for the noncubic pairs; at `(1,1)`, `P=0` has no boundary prime
+and the same formula is only a coordinate trace.
 
 ## 5. Four exact small cases
 

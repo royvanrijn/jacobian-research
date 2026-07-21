@@ -36,7 +36,7 @@ Only four evidence statuses are used:
 | C21 | Archived master quotient theorem | Conjectural / incomplete | [Archived conditional argument](archive/transfer-all-k/MASTER_QUOTIENT_THEOREM.md) | C22 input not recovered |
 | C22 | All-`k` transfer block unproved; two proposed filtrations refuted | Conjectural / incomplete | [Quadratic-remainder counterexample](experimental/transfer-and-cancellation/QUADRATIC_REMAINDER_ALGEBRA.md) | Exact low-`k` examples only |
 | C23 | Cubic factorization-slice classification and `(2,3)` obstruction | Proved internally | [Cubic classification and exact obstruction](experimental/transfer-and-cancellation/UNIVERSAL_FACTORIZATION_GEOMETRY.md) | Exact finite-field checks; general higher-degree classification remains open |
-| C24 | Master cancellation family and generalized-mechanism classification | Conjectural / incomplete | [Construction](experimental/transfer-and-cancellation/MASTER_CANCELLATION_CONSTRUCTION.md), [complete two-weight classification](experimental/transfer-and-cancellation/GENERALIZED_CANCELLATION_MECHANISM.md), [three-weight rigidity](experimental/transfer-and-cancellation/THREE_WEIGHT_CANCELLATION_CLASSIFICATION.md), [boundary obstruction](experimental/transfer-and-cancellation/BOUNDARY_INTERSECTION_OBSTRUCTION.md), and [canonical boundary-incidence invariant](experimental/transfer-and-cancellation/CANONICAL_BOUNDARY_INTERSECTION_INVARIANT.md) | Uniform discriminant, full `m=1` irreducibility, Galois groups through degree thirty, and [target-fixed parameter rigidity](experimental/transfer-and-cancellation/TARGET_FIXED_PARAMETER_RIGIDITY.md); general arithmetic and unrestricted equivalence remain open |
+| C24 | Master cancellation family and generalized-mechanism classification | Conjectural / incomplete | [Construction](experimental/transfer-and-cancellation/MASTER_CANCELLATION_CONSTRUCTION.md), [complete two-weight classification](experimental/transfer-and-cancellation/GENERALIZED_CANCELLATION_MECHANISM.md), [three-weight rigidity](experimental/transfer-and-cancellation/THREE_WEIGHT_CANCELLATION_CLASSIFICATION.md), [finite-factor rigidity](experimental/transfer-and-cancellation/TWO_FACTOR_RESOLVENT_CLASSIFICATION.md), [arbitrary polynomial-resolvent rigidity](experimental/transfer-and-cancellation/TARGET_DEPENDENT_RESOLVENT_CLASSIFICATION.md), [boundary exhaustion](experimental/transfer-and-cancellation/BOUNDARY_EXHAUSTION_CERTIFICATE.md), [all-parameter thick intersections](experimental/transfer-and-cancellation/C24_SCHEME_BOUNDARY_ALL_PARAMETERS.md), [upstairs--downstairs incidence](experimental/transfer-and-cancellation/UPSTAIRS_DOWNSTAIRS_BOUNDARY_INCIDENCE.md), [boundary obstruction](experimental/transfer-and-cancellation/BOUNDARY_INTERSECTION_OBSTRUCTION.md), and [canonical boundary-incidence invariant](experimental/transfer-and-cancellation/CANONICAL_BOUNDARY_INTERSECTION_INVARIANT.md) | Uniform discriminant, full `m=1` irreducibility, Galois groups through degree thirty, and [target-fixed parameter rigidity](experimental/transfer-and-cancellation/TARGET_FIXED_PARAMETER_RIGIDITY.md); general arithmetic and unrestricted equivalence remain open |
 
 Workflow state is tracked separately in [RESEARCH_STATUS.md](RESEARCH_STATUS.md).
 
@@ -48,8 +48,8 @@ proved for the complete `m=1` column, three further uniform arithmetic
 criteria, and every `mr<=30`; Galois groups are classified through `mr<=30`.
 Distinct roots are not target-fixed right-equivalent, even stably. Uniform
 arithmetic, unrestricted distinct-parameter-root left--right equivalence,
-minimal collision fields, and classification with a second resolvent factor
-remain open.
+minimal collision fields, and classification after changing the reconstruction
+skeleton itself remain open.
 
 C18, C21, and C22 are preserved as archived historical claims. Their
 incomplete status is not an active dependency of C23 or C24.

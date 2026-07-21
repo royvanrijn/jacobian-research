@@ -439,6 +439,13 @@ generic weighted seed of degree `m+2`.  The stronger
 separates them for every `m>1`: the two distinguished target components meet
 in `A^1 disjoint-union G_m` for C24 and in `A^1` for the weighted seed.
 
+The later
+[all-parameter scheme-theoretic calculation](C24_SCHEME_BOUNDARY_ALL_PARAMETERS.md)
+unifies the comparison.  For every noncubic `(m,r)`, the intersection of the
+two C24 boundary-image divisors is nonreduced with nilradical index
+`mr(m+1)`, whereas the generic weighted intersection is reduced.  Thus one
+stable boundary-incidence obstruction now handles all `r`.
+
 The precise conclusion is therefore:
 
 - the master family strictly extends the original cubic construction;

@@ -3,6 +3,8 @@
 This note proves the first uniform equivalence theorem among distinct C24
 parameter branches. It does not settle unrestricted polynomial left--right
 equivalence, because a nontrivial target automorphism is still allowed there.
+The general deck-transformation mechanism used below is isolated in
+[the monodromy deck-rigidity theorem](MONODROMY_DECK_RIGIDITY.md).
 
 Fix `m,r>=1`, a characteristic-zero field containing the relevant parameter
 roots, and a nonzero Jacobian constant `C`. For a cancellation polynomial
@@ -36,11 +38,9 @@ The geometric monodromy is `S_N` for odd `r` and `A_N` for even `r`, where
 \]
 
 The corresponding degree-`N` function-field extension has no nontrivial
-target-field automorphism. Indeed, in its Galois closure the subgroup for one
-sheet is the natural point stabilizer `H`. For `S_N` with `N>=3`, and for
-`A_N` with `N>=5`, `H` is self-normalizing: it has one globally fixed point,
-so every element normalizing `H` preserves that point and already belongs to
-`H`. Thus
+target-field automorphism.  This is Corollary 1.2 of the general deck-rigidity
+theorem: the natural point stabilizer `H` is self-normalizing in `S_N` for
+`N>=3` and in `A_N` for `N>=4`.  Thus
 
 \[
  \operatorname{Aut}_{k(P,Q,R)} k(x,y,z)=N_G(H)/H=1.    \tag{2}
@@ -50,9 +50,11 @@ The even-`r` case always has `N>=5`, so these two cases exhaust C24.
 
 ## 2. The unique birational identification
 
-Let `h` and `h'` be two cancellation polynomials. Any fixed-target
-birational map between their source covers must induce the unique field
-identification (2), hence fix `s,P,Q`. The reconstruction formulas then fix
+Let `h` and `h'` be two cancellation polynomials.  Corollary 2.2 of the
+general theorem says that target-fixed equivalence is equality of their two
+marked affine opens inside the common normalization.  Any fixed-target
+birational map must induce the unique field identification (2), hence fix
+`s,P,Q`. The reconstruction formulas then fix
 
 \[
  y=Q-sP,\qquad A=\{1-s(Q-Ps)^m\}^{-1},\qquad x=sA.

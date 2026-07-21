@@ -1,11 +1,13 @@
 # Boundary-intersection obstruction for C24
 
 This note settles the remaining comparison between `C24_(m,1)`, `m>1`, and
-a generic weighted seed of inverse degree `m+2`.  The obstruction is the
-reduced intersection of the two intrinsically distinguished target boundary
-components.  The general theorem making this construction a canonical stable
-left--right invariant is recorded in
+a generic weighted seed of inverse degree `m+2`.  Both the scheme-theoretic
+and reduced intersections of the two intrinsically distinguished target
+boundary components are computed.  The general theorem making these
+constructions canonical stable left--right invariants is recorded in
 [CANONICAL_BOUNDARY_INTERSECTION_INVARIANT.md](CANONICAL_BOUNDARY_INTERSECTION_INVARIANT.md).
+The all-`(m,r)` version of the C24 thick-intersection calculation is
+[C24_SCHEME_BOUNDARY_ALL_PARAMETERS.md](C24_SCHEME_BOUNDARY_ALL_PARAMETERS.md).
 
 Throughout, `k` is a characteristic-zero field.  For the weighted family,
 write
@@ -81,21 +83,46 @@ Therefore `Res_Y(F,G)` is a nonzero scalar times
 discriminant--derivative resultant before and after `Y=Q-PT` gives the
 additional nonzero power of `C` in (1); the leading coefficient of `Psi`, of
 `P`-order `m`, gives the exact saturation order `m(m-1)`.  This proves (1),
-not merely its reduced support.  Thus the reduced target intersection is
+not merely its reduced support.  The critical divisor is integral and maps
+generically one-to-one to the discriminant, while a generic critical value is
+a simple branch value: at its generic point `D_T!=0`, so
+`Psi_(TT)=C D_T!=0`.  The critical-value incidence is integral, its elimination
+ideal is prime, and the generic fold makes that prime occur to exponent one
+in the discriminant.  Hence the saturated discriminant is a reduced prime
+equation, not a power of one.  The canonical scheme-theoretic target
+intersection is
 
 \[
- \boxed{P=0,\quad Q(2RQ^m-C)=0.}                       \tag{2}
+ \boxed{P=0,\quad Q^{m(m+1)}(2RQ^m-C)=0.}               \tag{2}
 \]
 
 The two factors in (2) are comaximal because `C` is nonzero.  Its coordinate
 ring is therefore
 
 \[
- k[Q,R]/(Q(2RQ^m-C))
- \simeq k[R]\times k[Q,Q^{-1}],                        \tag{3}
+ \begin{aligned}
+ k[Q,R]/\bigl(Q^{m(m+1)}(2RQ^m-C)\bigr)
+ &\simeq k[Q,R]/(Q^{m(m+1)})\times
+          k[Q,R]/(2RQ^m-C)\\
+ &\simeq k[Q,R]/(Q^{m(m+1)})\times k[Q,Q^{-1}].
+ \end{aligned}                                           \tag{3}
 \]
 
-so the intersection is `A^1 disjoint-union G_m`.
+Its nilradical has nilpotency index exactly `m(m+1)`.  Passing to the
+reduction gives
+
+\[
+ \boxed{P=0,\quad Q(2RQ^m-C)=0,}                        \tag{4}
+\]
+
+with coordinate ring
+
+\[
+ k[Q,R]/(Q(2RQ^m-C))
+ \simeq k[R]\times k[Q,Q^{-1}],                         \tag{5}
+\]
+
+so the reduced intersection is `A^1 disjoint-union G_m`.
 
 For the weighted seed, the inverse polynomial is
 
@@ -114,18 +141,44 @@ involving one of them is a unit at the generic point of `C=0`.  The two small
 roots alone contribute the exact saturated trace
 
 \[
- \boxed{C=0,\quad B^2-4h_2cA=0}                        \tag{4}
+ \boxed{C=0,\quad B^2-4h_2cA=0}                        \tag{6}
 \]
 
-up to a nonzero scalar.  Thus this reduced intersection has coordinate ring
+up to a nonzero scalar.  The generic weighted discriminant is irreducible
+and has generic branch multiplicity one.  Indeed, on `C!=0` its critical-
+value incidence is parametrized by `(W,C)` through
 
 \[
- k[A,B]/(B^2-4h_2cA)\simeq k[B].                       \tag{5}
+ B={H'(W)\over C},\qquad
+ A={WH'(W)-H(W)\over cC^2}.
+\]
+
+This incidence is integral and generically one-to-one onto the discriminant;
+generic `W` has `H''(W)!=0`, giving a simple fold.  Thus the saturated trace
+is the prime discriminant equation restricted to `C=0`.  Consequently (6)
+is the scheme-theoretic intersection, and it is already reduced, with
+coordinate ring
+
+\[
+ k[A,B]/(B^2-4h_2cA)\simeq k[B].                        \tag{7}
 \]
 
 This root-scaling argument also proves that the pulled-back discriminant has
 exact `C`-adic order two.  It is the uniform version of the one-extra-root
 calculation in `verify_deformed_seed_boundary.py`.
+
+### Theorem (thick boundary intersection)
+
+For every `m>1`, the canonical scheme-theoretic intersection of the two
+marked C24 target boundary divisors has coordinate ring (3).  It is the
+disjoint union of `G_m` and the `m(m+1)`-fold nilpotent thickening of an
+affine line in a transverse direction.  Its reduction is (5).  For the
+generic weighted seed of inverse degree `m+2`, the corresponding canonical
+scheme-theoretic intersection is the reduced affine line (7).
+
+After adjoining identity coordinates, these rings are replaced by polynomial
+rings over them.  In particular, reducedness and the C24 nilradical index
+`m(m+1)` are stable left--right invariants of the marked intersections.
 
 ## Intrinsic character and inequivalence
 
@@ -134,12 +187,14 @@ out by its boundary ramification index two and sheet loss two.  The second
 target component is intrinsically singled out by its unramified boundary
 primes and total sheet loss `m-1>0`.  A polynomial left--right equivalence
 must therefore carry these two components, respectively, to their
-counterparts.  Its target automorphism would restrict to an isomorphism of
-their reduced intersections.
+counterparts.  Its target automorphism would restrict to isomorphisms of both
+their scheme-theoretic intersections and their reductions.
 
-No such isomorphism exists.  The ring (3) has a nontrivial idempotent, whereas
-the domain (5) does not.  Equivalently, the C24 intersection is disconnected
-and the weighted intersection is connected.
+No such isomorphism exists.  Scheme-theoretically, (3) is nonreduced with
+nilradical of index `m(m+1)`, whereas (7) is reduced.  After reduction, the
+ring (5) has a nontrivial idempotent, whereas the domain (7) does not.
+Equivalently, the reduced C24 intersection is disconnected and the weighted
+intersection is connected.
 
 ### Theorem
 
@@ -148,8 +203,9 @@ For every `m>1`, no `C24_(m,1)` map, including any allowed tail
 weighted-seed map of inverse degree `m+2`.
 
 The same conclusion holds after adjoining equally many identity coordinates,
-by the canonical boundary-intersection theorem.  Concretely, the
-distinguished intersections become
+by the canonical boundary-incidence theorem.  Polynomial extension preserves
+the nilradical and its nilpotency index.  On reductions, the distinguished
+intersections become
 `(A^1 disjoint-union G_m) x A^a` and `A^(a+1)`; polynomial extension does not
 remove the nontrivial idempotent.
 

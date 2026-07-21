@@ -61,12 +61,15 @@ verify-master:
 	$(PYTHON) scripts/verify_resolvent_ramification_signature.py
 	$(PYTHON) scripts/verify_target_fixed_parameter_rigidity.py
 	$(PYTHON) scripts/verify_boundary_intersection_obstruction.py
+	$(PYTHON) scripts/verify_c24_scheme_boundary_all_parameters.py
 	$(PYTHON) scripts/verify_parameter_irreducibility.py
 	$(PYTHON) scripts/verify_parameter_discriminant.py
 	$(PYTHON) scripts/verify_parameter_galois_groups.py
 	$(PYTHON) scripts/verify_parameter_galois_jordan.py
 	$(PYTHON) scripts/verify_generalized_cancellation.py
 	$(PYTHON) scripts/verify_three_weight_cancellation.py
+	$(PYTHON) scripts/verify_two_factor_resolvent.py
+	$(PYTHON) scripts/verify_target_dependent_resolvent.py
 
 verify-regressions:
 	$(SYSTEM_PYTHON) scripts/audit_c14_independent.py

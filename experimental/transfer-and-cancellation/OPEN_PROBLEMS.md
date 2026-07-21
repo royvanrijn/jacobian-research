@@ -7,12 +7,14 @@ The active questions are now sharply separated from completed milestones:
 1. classify unrestricted polynomial left--right equivalence among maps
    attached to distinct C24 parameter roots; target-fixed right-equivalence
    is now completely classified and separates distinct normalized roots;
+   compute the enhanced upstairs--downstairs boundary incidence as a candidate
+   obstruction to the remaining target automorphisms;
 2. prove or disprove irreducibility of `M_(m,r)` outside the known uniform
    criteria and the exact range `mr<=30`;
 3. classify parameter Galois groups in all degrees and determine minimal
    collision fields; and
-4. classify a second independent resolvent factor, now that the first
-   one-additional-weight relaxation has been proved to collapse to C24.
+4. change the reconstruction skeleton itself, for example by introducing an
+   additional source function, source variable, or inverse variable.
 
 The generic-weighted-seed comparison, all allowed tail deformations,
 separability, the complete `m=1` irreducibility column, and the generalized
@@ -112,10 +114,24 @@ The first minimal coordinate relaxation is now settled in
 allowing `Q=y+xA^cB` with an independent third weight forces `c=a-1` and the
 old derivative power before polynomial cancellation is even imposed.
 
-**Remaining question.** Can a second independent resolvent factor still
-admit a finite cancellation operator while escaping the rising-factorial
-spectral coprimality argument? Equivalence among distinct C24 parameter
-branches remains a separate classification problem, but the
+The alternative minimal relaxation is also settled in
+[TWO_FACTOR_RESOLVENT_CLASSIFICATION.md](TWO_FACTOR_RESOLVENT_CLASSIFICATION.md):
+a second normalized factor `1-tf_2(Q-Pt)` must coincide with the original
+factor or be identically one.  The proof extends to any finite product of
+normalized factors, all of whose nontrivial members coalesce.  Polynomiality
+therefore again gives only C24.
+
+The stronger
+[TARGET_DEPENDENT_RESOLVENT_CLASSIFICATION.md](TARGET_DEPENDENT_RESOLVENT_CLASSIFICATION.md)
+allows an arbitrary polynomial `H(T,P,Q)` as the derivative.  Algebraic
+independence of `(s,P,Q)` forces the exact original power
+`lambda(1-Tf(Q-PT))^e`.  Thus derivative generalization is completely closed
+inside the coordinate skeleton.
+
+**Remaining question.** Can a skeleton with an additional source function,
+source variable, or inverse variable escape both Jacobian rigidity and
+rising-factorial spectral coprimality? Equivalence among distinct C24
+parameter branches remains a separate classification problem, but the
 [target-fixed rigidity theorem](TARGET_FIXED_PARAMETER_RIGIDITY.md) shows
 that any such equivalence must use a nonidentity target automorphism moving
 the filled `P=0` boundary branch.

@@ -77,8 +77,45 @@ including stable left--right equivalence.  The
 [canonical boundary-incidence theorem](CANONICAL_BOUNDARY_INTERSECTION_INVARIANT.md)
 now packages, for every characteristic-zero nonproper Keller map, the full
 ramification-labelled diagram of target boundary divisors and all their
-reduced multiple intersections.  Unique intrinsic markings are needed only
-to extract a named intersection such as the one used here.
+scheme-theoretic multiple intersections, together with its termwise
+reduction.  Its hypothesis audit isolates quasi-finiteness, normality, finite
+normalization, and boundary exhaustion.  Unique intrinsic markings are needed
+only to extract a named intersection such as the one used here.
+
+The
+[upstairs--downstairs enhancement](UPSTAIRS_DOWNSTAIRS_BOUNDARY_INCIDENCE.md)
+retains the boundary primes in the finite normalization, their actual finite
+maps to target divisors, all upstairs intersections, their scheme images
+inside downstairs intersections, and the relative different.  This bipartite
+object is functorial and stable under affine cylinders; its C04/C24 vertex
+layer is explicit, while the C24 upstairs intersection schemes are the next
+geometric computation.
+
+The [monodromy deck-rigidity theorem](MONODROMY_DECK_RIGIDITY.md) identifies
+target-fixed automorphisms of a finite normalization with `N_G(H)/H`, or
+equivalently with the centralizer of its transitive monodromy action.  A
+self-normalizing sheet stabilizer makes the normalization rigid and reduces
+comparison of two source models inside it to equality of their distinguished
+affine opens.  This separates the general uniqueness argument in C24 from the
+parameter-specific pole calculation.
+
+The [boundary-exhaustion certificate](BOUNDARY_EXHAUSTION_CERTIFICATE.md)
+separates support containment from local `sum ef` degree accounting.  Its
+Theorem 5.1 states explicitly that the displayed C04/C24 divisors are all
+components of the canonical normalization boundary and lists all their target
+images.  This remains internally proved pending a clean-room compactification
+audit.  The full C24 intersection is a disjoint
+union of `G_m` and a thickened affine line with nilradical index `m(m+1)`;
+the weighted intersection is reduced.  This gives a second stable obstruction
+beyond connectedness of the reductions.
+
+The [all-parameter thick-intersection theorem](C24_SCHEME_BOUNDARY_ALL_PARAMETERS.md)
+extends the trace formula to every `C24_(m,r)` and the canonical stable
+statement to every noncubic pair: the exact nilradical index is `mr(m+1)`,
+and the reduced intersection is always
+`A^1 disjoint-union G_m`.  Since the generic weighted intersection is reduced,
+this gives one scheme-theoretic stable-inequivalence proof for every noncubic
+C24 member, replacing the former split between `r=1` and `r>=2`.
 
 The [generalized mechanism](GENERALIZED_CANCELLATION_MECHANISM.md) now
 classifies the full two-weight ansatz.  For every `e>=1`, its spectral
@@ -97,6 +134,18 @@ The first relaxation beyond that skeleton is also closed: the
 allows the exponent in `Q=y+xA^cB` to vary independently, but the localized
 Jacobian forces `c=a-1` and the old derivative power.  Polynomiality then
 reduces to the two-weight theorem, so no additional branch occurs.
+The alternative minimal relaxation is closed by the
+[two-factor resolvent classification](TWO_FACTOR_RESOLVENT_CLASSIFICATION.md):
+a second normalized factor is forced either to coincide with the original
+factor or to be identically one.  The same Laurent-unit proof handles any
+finite product of normalized factors: all nontrivial factors coalesce.  Thus
+both proposed Option B relaxations produce only C24.
+More strongly, the
+[target-dependent resolvent theorem](TARGET_DEPENDENT_RESOLVENT_CLASSIFICATION.md)
+allows an arbitrary polynomial derivative `H(T,P,Q)`.  Algebraic independence
+forces it to be exactly the original power.  Option B is therefore complete
+inside the coordinate skeleton; any new branch must change reconstruction
+itself.
 The
 [prime-power Eisenstein theorem](PARAMETER_IRREDUCIBILITY.md) proves that all
 roots form one arithmetic conjugacy class whenever `mr+r+1=p^k` and
