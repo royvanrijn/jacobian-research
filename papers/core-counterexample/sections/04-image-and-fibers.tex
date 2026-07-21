@@ -1,28 +1,107 @@
-\section{Exact image and fiber structure}
+\section{The weighted polynomial construction}\label{sec:weighted-map}
 
-The cubic discriminant is $-4Q$, where
-\[
-Q=27a^2c^2-18abc+16a+b^3c-b^2.
-\]
-The triple-root locus is
-\[
-\Gamma=V(3bc-4,\,12a-b^2).
-\]
+Let $k$ be a field of characteristic zero.  Fix a polynomial $H\in k[W]$ of
+degree $n\ge3$ satisfying
+\begin{equation}\label{eq:admissible-H}
+ H(0)=H(1)=0,qquad H'(0)=0,qquad H'(1)=-c\ne0,qquad
+ \kappa:=H''(1)/c\ne-2.
+\end{equation}
+Thus $c\in k^\times$.  Choose $b_0\in k^\times$ and set
+\begin{equation}\label{eq:a0}
+ a_0=-\frac{1+\kappa}{2+\kappa}.
+\end{equation}
+On $\A^3_{x,y,z}$ define
+\begin{equation}\label{eq:weighted-source-invariants}
+ v=xy,qquad S=x^2z,qquad u=1+v,qquad
+ \gamma=1+a_0v+b_0S,qquad W=u\gamma.
+\end{equation}
+Write $p=H'$ and
+\begin{equation}\label{eq:qdef}
+ q(W)=\frac{Wp(W)-H(W)}{c}.
+\end{equation}
+The weighted map $G_H=(A,B,C)$ is given by
+\begin{equation}\label{eq:weighted-formulas}
+ C=x\gamma,qquad
+ B=\frac{c+p(W)/\gamma}{x},qquad
+ A=\frac{u+q(W)/\gamma^2}{x^2}.
+\end{equation}
+The next proposition proves that the displayed rational expressions are
+actual polynomial coordinates.
 
-\begin{theorem}\label{thm:image}
-Over $\mathbb C$,
+For clarity, if $f\in k[x,y,z]$, write
 \[
-F(\mathbb C^3)=\mathbb C^3\setminus\Gamma,
-\qquad
-S_F=V(Q),
+ \partial_x^{[1]}f=\frac{f-f|_{x=0}}x,qquad
+ \partial_x^{[2]}f=
+ \frac{f-f|_{x=0}-x(\partial f/\partial x)|_{x=0}}{x^2}.
 \]
-where $S_F$ is the nonproperness set.  Fibers have respectively three, one,
-and zero points on $Q\ne0$, on $V(Q)\setminus\Gamma$, and on $\Gamma$.
-\end{theorem}
+These are polynomial divided-difference operators.
 
-This follows from Theorem~\ref{thm:marked-root}: a nonzero binary cubic has
-three, one, or zero simple roots according to multiplicity type $(1,1,1)$,
-$(2,1)$, or $(3)$.  Repeated roots are precisely the poles of the affine
-reconstruction chart and give escaping branches.  Away from the discriminant,
-all roots remain simple, while the projective infinity root is controlled by
-the second regular chart.
+\begin{proposition}[polynomiality]\label{prop:weighted-polynomiality}
+Equations \eqref{eq:weighted-formulas} define elements of $k[x,y,z]$.
+More explicitly, if $p(W)=W\widetilde p(W)$ and
+$q(W)=W^2\widetilde q(W)$, then
+\begin{align*}
+ C&=x\gamma,\\
+ B&=\partial_x^{[1]}\bigl(c+u\widetilde p(u\gamma)\bigr),\\
+ A&=\partial_x^{[2]}\bigl(u+u^2\widetilde q(u\gamma)\bigr).
+\end{align*}
+\end{proposition}
+
+\begin{proof}
+The conditions $p(0)=0$ and $H(0)=H'(0)=0$ imply respectively
+$W\mid p(W)$ and $W^2\mid q(W)$.  Hence
+\[
+ p(W)/\gamma=u\widetilde p(u\gamma),qquad
+ q(W)/\gamma^2=u^2\widetilde q(u\gamma)
+\]
+are polynomials before division by powers of $x$.
+
+At $x=0$ one has $(u,\gamma,W)=(1,1,1)$, so the numerator of $B$ is
+$c+p(1)=0$.  It is therefore divisible by $x$.  Further,
+\[
+ q(1)=-1,qquad q'(1)=\kappa.
+\]
+Thus the numerator $N_A=u+q(W)/\gamma^2$ vanishes at $x=0$, and direct
+differentiation gives
+\[
+ \left.\frac{\partial N_A}{\partial x}\right|_{x=0}
+ =\bigl(1+\kappa+a_0(2+\kappa)\bigr)y=0
+\]
+by \eqref{eq:a0}.  Hence $x^2\mid N_A$.  The divided-difference formulas are
+therefore equal to \eqref{eq:weighted-formulas} and explicitly exhibit all
+three coordinates as polynomials.
+\end{proof}
+
+\begin{proposition}[constant Jacobian]\label{prop:weighted-jacobian}
+For every $H,b_0$ satisfying \eqref{eq:admissible-H},
+\[
+ \det DG_H=b_0c\in k^\times.
+\]
+In particular $G_H$ is etale and quasi-finite.
+\end{proposition}
+
+\begin{proof}
+On the dense open $D(C)=D(x\gamma)$ introduce
+\begin{equation}\label{eq:s-t}
+ s=BC=c\gamma+p(W),qquad
+ t=cAC^2=cW\gamma+Wp(W)-H(W).
+\end{equation}
+The successive coordinate changes have Jacobian determinants
+\begin{align*}
+\det\frac{\partial(x,v,S)}{\partial(x,y,z)}&=x^3,&
+\det\frac{\partial(W,\gamma,C)}{\partial(x,v,S)}&=b_0\gamma^2,\\
+\det\frac{\partial(s,t,C)}{\partial(W,\gamma,C)}&=-c^2\gamma,&
+\det\frac{\partial(s,t,C)}{\partial(A,B,C)}&=-cC^3.
+\end{align*}
+The chain rule and $C=x\gamma$ give
+\[
+ x^3b_0\gamma^2(-c^2\gamma)=(-cC^3)\det DG_H,
+\]
+and cancellation on $D(C)$ yields $\det DG_H=b_0c$.  Both sides are
+polynomials, so the equality extends to all of $\A^3_k$.  An etale morphism
+of finite type is quasi-finite.
+\end{proof}
+
+The word ``generic'' has not been used in this section: polynomiality and the
+Jacobian identity hold uniformly for every $H$ satisfying the explicit
+admissibility conditions \eqref{eq:admissible-H}.

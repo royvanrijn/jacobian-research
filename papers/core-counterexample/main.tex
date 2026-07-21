@@ -1,8 +1,11 @@
 \documentclass[11pt]{article}
 \usepackage[margin=1in]{geometry}
-\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{amsmath,amssymb,amsthm,mathtools,mathrsfs}
 \usepackage[hidelinks]{hyperref}
-\usepackage{booktabs}
+\usepackage{booktabs,longtable,array,microtype}
+\setlength{\marginparwidth}{0.82in}
+\let\plainmarginpar\marginpar
+\renewcommand{\marginpar}[1]{\plainmarginpar{\raggedright\scriptsize #1}}
 
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem{proposition}[theorem]{Proposition}
@@ -37,6 +40,9 @@ marked-root family with symmetric monodromy.
 \input{sections/06-monodromy}
 \input{sections/07-examples}
 \input{sections/08-further-directions}
+
+\appendix
+\input{sections/appendix-dependencies}
 
 \bibliographystyle{alpha}
 \bibliography{references}

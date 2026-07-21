@@ -1,0 +1,70 @@
+\section{Theorem dependencies}\label{app:dependencies}
+
+The following table records the logical inputs to the principal statements.
+``Exact algebra'' means an identity proved in the indicated polynomial or
+localized coordinate ring; bounded computations are not dependencies.
+
+\small
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.20\textwidth}
+                  >{\raggedright\arraybackslash}p{0.34\textwidth}
+                  >{\raggedright\arraybackslash}p{0.34\textwidth}}
+\toprule
+Result & Internal dependencies & External input \\
+\midrule
+\endfirsthead
+\toprule
+Result & Internal dependencies & External input \\
+\midrule
+\endhead
+Theorem~\ref{thm:counterexample} &
+Coordinate identity \eqref{eq:trc-target}, chain rule, exact substitution &
+Jacobian criterion for etaleness over a characteristic-zero field \\
+\addlinespace
+Theorem~\ref{thm:marked-root} &
+Proposition~\ref{prop:cubic-marking}; Lemmas~\ref{lem:affine-mutual} and
+\ref{lem:projective-mutual}; overlap \eqref{eq:chart-overlap} &
+Standard identification $\operatorname{Sym}^3(\P^1)\simeq\P^3$ only for the
+intrinsic interpretation, not for the chart isomorphism \\
+\addlinespace
+Proposition~\ref{prop:fibers-image} &
+Theorem~\ref{thm:marked-root}; multiplicity classification of a binary cubic;
+coefficient comparison for a cube & None beyond elementary algebra \\
+\addlinespace
+Proposition~\ref{prop:nonproperness} &
+Both cubic reconstruction charts; discriminant identity &
+Complex implicit-function theorem and the sequential criterion for
+nonproperness \\
+\addlinespace
+Proposition~\ref{prop:weighted-polynomiality} &
+Endpoint conditions \eqref{eq:admissible-H}; divisibility of $p,q$; divided
+differences & None \\
+\addlinespace
+Proposition~\ref{prop:weighted-jacobian} &
+The four coordinate-change determinants in \eqref{eq:s-t} &
+Etale morphisms of finite type are quasi-finite \\
+\addlinespace
+Proposition~\ref{prop:weighted-Cnonzero} &
+Incidence equation \eqref{eq:weighted-pencil}; explicit reconstruction
+\eqref{eq:weighted-reconstruction} & None \\
+\addlinespace
+Theorem~\ref{thm:weighted-global} &
+Propositions~\ref{prop:weighted-polynomiality},
+\ref{prop:weighted-jacobian}, and \ref{prop:weighted-Cnonzero} &
+Finiteness and universal property of normalization; Zariski's Main Theorem;
+normality criterion via height-one valuations \\
+\addlinespace
+Proposition~\ref{prop:pencil-irreducible} &
+Linearity in $t$ and coefficient comparison & Gauss's lemma \\
+\addlinespace
+Proposition~\ref{prop:universal-disc} &
+Repeated-root equations and coprime pole orders $n-1,n$ &
+Standard facts on finite maps of normal projective curves \\
+\addlinespace
+Theorem~\ref{thm:symmetric-monodromy} &
+Propositions~\ref{prop:pencil-irreducible} and
+\ref{prop:universal-disc}; connected transposition graph &
+Zariski--Nagata purity; Riemann existence comparison; triviality of finite
+etale covers of affine space in characteristic zero \\
+\bottomrule
+\end{longtable}
+\normalsize

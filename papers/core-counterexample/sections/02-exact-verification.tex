@@ -1,26 +1,166 @@
-\section{Exact verification}
+\section{The cubic marked-root space}\label{sec:cubic-incidence}
 
-On the dense open set $x\ne0$, introduce
+Let $(a,b,c)$ be coordinates on $Y=\A^3_k$ and define
+\begin{equation}\label{eq:binary-cubic}
+ Q_{a,b,c}(U,V)=cU^3-2U^2V+bUV^2-2aV^3.
+\end{equation}
+The \emph{raw root incidence} is the closed subscheme
 \[
-t=y+1/x,\qquad r=2/x,\qquad c=F_3(x,y,z),
+ I=V(Q_{a,b,c})\subset Y\times\P^1_k.
 \]
-and write $(a,b,c)=F(x,y,z)$. Direct substitution yields
-\[
-a=t^2+\frac{rt}{2}-ct^3,
-\qquad
-b=r+4t-3ct^2.
-\]
-The two Jacobian factors are
-\[
-\det\frac{\partial(a,b,c)}{\partial(t,r,c)}=\frac r2,
-\qquad
-\det\frac{\partial(t,r,c)}{\partial(x,y,z)}=-2x.
-\]
-Since $r=2/x$, their product is $-2$.  Both $\det DF$ and $-2$ are
-polynomials, so equality on the dense open proves equality everywhere.
-Substitution of the three displayed source points proves the collision.
+Because the coefficient of $U^2V$ is the unit $-2$, no fiber contains the
+whole projective line.  Each fiber is therefore an effective Cartier divisor
+of degree three on $\P^1$, and $I\to Y$ is finite flat of degree three.  Let
+$I^{\mathrm{simp}}\subset I$ be the open locus where the marked projective
+root has multiplicity one.  No normalization is used in this cubic model.
 
-The repository contains two exact implementations and a separately authored,
-pinned Lean 4 formalization.  The precise commands and scope are listed in
-the accompanying verification directory; none of the geometric theorems is
-needed for this certificate.
+\begin{proposition}[source marking]\label{prop:cubic-marking}
+The formula
+\[
+ \Phi:\A^3_k\longrightarrow I,qquad
+ (x,y,z)\longmapsto\bigl(F(x,y,z),[1+xy:x]\bigr)
+\]
+defines a morphism, and its image is contained in $I^{\mathrm{simp}}$.
+\end{proposition}
+
+\begin{proof}
+Expansion of \eqref{eq:binary-cubic} after substituting \eqref{eq:F} gives
+the polynomial identity
+\[
+ Q_{F(x,y,z)}(1+xy,x)=0.
+\]
+The homogeneous pair $(1+xy,x)$ never vanishes simultaneously, so it defines
+a morphism to $\P^1$.  Simplicity will follow on each of the two charts below;
+their source preimages are $D(x)$ and $D(1+xy)$, which cover $\A^3_k$.
+\end{proof}
+
+\subsection{The chart \texorpdfstring{$V\ne0$}{V nonzero}}
+
+Put $u=U/V$ and
+\[
+ P(T)=cT^3-2T^2+bT-2a.
+\]
+The simple-root chart has coordinate ring
+\begin{equation}\label{eq:affine-chart-ring}
+ k[a,b,c,u,P'(u)^{-1}]/(P(u)).
+\end{equation}
+Define $v=P'(u)/2$ and
+\begin{equation}\label{eq:affine-inverse}
+ x=v^{-1},\qquad y=u-v,qquad
+ z=5v^2-3uv-cv^3.
+\end{equation}
+These are regular functions on \eqref{eq:affine-chart-ring}.  Conversely, on
+$D(x)\subset\A^3_k$ one has
+\begin{equation}\label{eq:affine-forward}
+ u=y+x^{-1},\qquad v=x^{-1},qquad
+ a=u^2+uv-cu^3,qquad b=4u+2v-3cu^2,
+\end{equation}
+and hence $P(u)=0$ and $P'(u)=2v=2/x$.
+
+\begin{lemma}\label{lem:affine-mutual}
+The maps \eqref{eq:affine-inverse} and \eqref{eq:affine-forward} are mutually
+inverse between $D(x)$ and the chart \eqref{eq:affine-chart-ring}.
+\end{lemma}
+
+\begin{proof}
+Starting from $D(x)$, \eqref{eq:affine-forward} gives $v=1/x$, so
+\eqref{eq:affine-inverse} returns $x$ and $y=u-v$.  Solving the identity
+$c=2x-3x^2y-x^3z$ for $z$ after substituting $x=1/v$ and $y=u-v$ gives the
+third formula in \eqref{eq:affine-inverse}; hence the source composition is
+the identity.
+
+Conversely, start in \eqref{eq:affine-chart-ring}.  The equation $P(u)=0$
+is equivalent to $a=u^2+uv-cu^3$, while $P'(u)=2v$ is equivalent to
+$b=4u+2v-3cu^2$.  Substitution of \eqref{eq:affine-inverse} into
+\eqref{eq:F} therefore returns $(a,b,c)$, and
+$y+1/x=(u-v)+v=u$.  Thus the incidence composition is also the identity.
+\end{proof}
+
+\subsection{The chart \texorpdfstring{$U\ne0$}{U nonzero}}
+
+Put $s=V/U$ and
+\begin{equation}\label{eq:R-d}
+ R(s)=c-2s+bs^2-2as^3,qquad
+ d=1-bs+3as^2=-\frac12R'(s).
+\end{equation}
+The simple-root chart has coordinate ring
+\[
+ k[a,b,c,s,d^{-1}]/(R(s)).
+\]
+Define
+\begin{align}
+x&=s/d,& y&=b-3as,\label{eq:projective-xy}\\
+z&=d\bigl(a-4b^2+(b^3+22ab)s-(30a^2+8ab^2)s^2\nonumber\\
+ & & &\hspace{35mm}+21a^2bs^3-18a^3s^4\bigr).\label{eq:projective-z}
+\end{align}
+The expression \eqref{eq:projective-z} is polynomial at $s=0$.  There the
+root equation gives $c=0$, $d=1$, and the inverse is
+\begin{equation}\label{eq:infinity-source}
+ (x,y,z)=(0,b,a-4b^2).
+\end{equation}
+
+\begin{lemma}\label{lem:projective-mutual}
+Equations \eqref{eq:projective-xy}--\eqref{eq:projective-z} define a morphism
+to $\A^3_k$ inverse to $\Phi$ over the chart $U\ne0$.
+\end{lemma}
+
+\begin{proof}
+For $s\ne0$, solving first gives
+\[
+ z=\frac{2sd^2-3s^2d(b-3as)-cd^3}{s^3}.
+\]
+Using $R(s)=0$, or $c=2s-bs^2+2as^3$, its numerator is divisible by $s^3$;
+the quotient is exactly \eqref{eq:projective-z}.  Thus the displayed formula
+extends the inverse across $s=0$.
+
+In the coordinate ring $k[a,b,c,s,d^{-1}]/(R)$, direct substitution into
+\eqref{eq:F} gives $(F_1,F_2,F_3)=(a,b,c)$ and
+\[
+ [1+xy:x]=[1:s].
+\]
+For the reverse composition, on $D(1+xy)$ put
+\[
+ s=\frac{x}{1+xy}.
+\]
+Substitution of $F(x,y,z)$ into \eqref{eq:R-d} gives
+$R(s)=0$ and $d=(1+xy)^{-1}$.  Equations
+\eqref{eq:projective-xy}--\eqref{eq:projective-z} then return $(x,y,z)$.
+All identities are identities in the indicated localized polynomial rings,
+so the verification includes $s=0$ and does not rely on taking a limit.
+\end{proof}
+
+\subsection{Agreement on the overlap}
+
+On $U,V\ne0$,
+\begin{equation}\label{eq:chart-overlap}
+ u=s^{-1},qquad v=d/s.
+\end{equation}
+The first two coordinates in \eqref{eq:affine-inverse} become
+$x=s/d$ and $y=1/s-d/s=b-3as$, using \eqref{eq:R-d} and $R(s)=0$.
+Substituting \eqref{eq:chart-overlap} into the third affine formula and again
+using $R(s)=0$ gives \eqref{eq:projective-z}.  Hence the two inverse maps
+agree scheme-theoretically on their overlap.
+
+\begin{theorem}[cubic marked-root isomorphism]\label{thm:marked-root}
+The morphism $\Phi$ induces an isomorphism
+\[
+ \A^3_k\xrightarrow{\sim}I^{\mathrm{simp}}.
+\]
+Under this isomorphism, $F$ is the restriction to $I^{\mathrm{simp}}$ of the
+finite flat projection $I\to\A^3_k$.
+\end{theorem}
+
+\begin{proof}
+The two root charts cover $\P^1$, and their inverse morphisms agree by
+\eqref{eq:chart-overlap}.  Their source preimages $D(x)$ and $D(1+xy)$ cover
+$\A^3_k$.  Lemmas~\ref{lem:affine-mutual} and
+\ref{lem:projective-mutual} therefore glue to a two-sided inverse of $\Phi$.
+\end{proof}
+
+Under $\operatorname{Sym}^3(\P^1)\simeq\P^3$, the coefficient hyperplane of
+$U^2V$ is tangent but not osculating to the small diagonal.  Normalizing that
+coefficient to $-2$ identifies its complement with $\A^3_k$, while marking
+one root identifies its inverse image with $I$.  The ramification divisor of
+the marked-root cover is the repeated-marked-root locus, whose complement is
+$I^{\mathrm{simp}}$.  This gives the intrinsic symmetric-product
+interpretation of Theorem~\ref{thm:marked-root}.

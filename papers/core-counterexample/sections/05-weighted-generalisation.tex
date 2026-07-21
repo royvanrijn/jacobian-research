@@ -1,25 +1,176 @@
-\section{Weighted generalisation}
+\section{The normalized incidence and reconstruction}\label{sec:weighted-incidence}
 
-Let $H\in k[W]$ have degree $n\ge3$ and satisfy
-\[
-H(0)=H(1)=0,\quad H'(0)=0,\quad H'(1)=-c\ne0,
-\quad H''(1)/c\ne-2.
-\]
-The weighted construction produces a polynomial Keller map
-$G_H:\A^3\to\A^3$ with inverse pencil
-\[
-E_{A,B,C}(W)=H(W)-BCW+cAC^2.
-\]
+Retain all hypotheses and notation from Section~\ref{sec:weighted-map}.  For
+a target $(A,B,C)$ define
+\begin{equation}\label{eq:weighted-pencil}
+ E_{A,B,C}(W)=H(W)-BCW+cAC^2.
+\end{equation}
 
-\begin{theorem}\label{thm:weighted}
-The normalization of the finite marked-root incidence $E=0$ contains an open
-regular-reconstruction locus isomorphic to $\A^3$.  Under this isomorphism,
-$G_H$ is the restriction of the finite degree-$n$ root projection.  Over
-$C\ne0$, the affine source is exactly the simple-root locus.
+\subsection{Four distinct spaces}
+
+The \emph{raw incidence} is
+\begin{equation}\label{eq:raw-incidence}
+ \mathcal I_H=V(E_{A,B,C}(W))
+ \subset\A^3_{A,B,C}\times\A^1_W.
+\end{equation}
+If $h_n$ is the leading coefficient of $H$, then $h_n^{-1}E$ is monic in
+$W$.  Hence $\mathcal I_H\to\A^3$ is finite flat of degree $n$, with basis
+$1,W,\ldots,W^{n-1}$.  The projective homogenization has value $h_nW^n$ on
+the hyperplane at infinity, so \eqref{eq:raw-incidence} already contains all
+projective roots.
+
+The polynomial $E$ is irreducible in $k[A,B,C,W]$.  Indeed, viewed as a
+linear polynomial in $A$ over the UFD $k[B,C,W]$, it is primitive because
+$cC^2$ and $H(W)-BCW$ are coprime; it is irreducible over the fraction field
+and hence by Gauss's lemma.  Thus $\mathcal I_H$ is integral.  We do
+\emph{not} assert that it is normal.
+
+Let
+\begin{equation}\label{eq:normalization}
+ \nu:\widetilde{\mathcal I}_H\longrightarrow\mathcal I_H
+\end{equation}
+be its normalization.  This is the \emph{entire finite normal model} used
+below.  Normality is imposed by taking normalization; it is not deduced for
+the raw incidence.  Since a finite-type $k$-scheme is excellent,
+\eqref{eq:normalization} is finite, and the composite
+$\widetilde{\mathcal I}_H\to\A^3$ remains finite of degree $n$
+\cite{stacks-normalization}.
+
+The \emph{raw simple-root locus} is
+\[
+ \mathcal I_H^{\mathrm{simp}}=D(E_W)\subset\mathcal I_H,
+ \qquad E_W=H'(W)-BC.
+\]
+Finally, define rational functions on the common function field by
+\begin{equation}\label{eq:weighted-reconstruction}
+ \gamma=\frac{BC-H'(W)}c,qquad
+ x=\frac C\gamma,qquad
+ y=\frac{W-\gamma}{C},qquad
+ z=\frac{\gamma-1-a_0(W/\gamma-1)}{b_0x^2}.
+\end{equation}
+The \emph{regular-reconstruction open} is the explicitly defined open
+\begin{equation}\label{eq:RH}
+ \mathcal R_H=\left\{\xi\in\widetilde{\mathcal I}_H:
+ x,y,z\text{ are regular at }\xi\right\}.
+\end{equation}
+It is open because the regularity domain of a rational function is open.
+These four objects---raw incidence, normalization, simple-root locus, and
+regular-reconstruction open---must not be identified without proof.
+
+\begin{proposition}[reconstruction over \texorpdfstring{$C\ne0$}{C nonzero}]\label{prop:weighted-Cnonzero}
+Over $D(C)$, normalization is unnecessary on the simple-root locus and
+\[
+ G_H^{-1}(D(C))\xrightarrow{\sim}
+ \mathcal I_H^{\mathrm{simp}}\cap D(C).
+\]
+The inverse is given by \eqref{eq:weighted-reconstruction}.
+\end{proposition}
+
+\begin{proof}
+On the incidence, $\gamma=-E_W/c$.  Thus on $D(C E_W)$ both $C$ and
+$\gamma$ are units and all formulas \eqref{eq:weighted-reconstruction} are
+regular.  Moreover $E_W$ is invertible there, so the raw incidence is etale
+over the regular target on this locus; it is normal, and the normalization is
+an isomorphism over it.  Put $u=W/\gamma$, $v=u-1$, and
+$S=(\gamma-1-a_0v)/b_0$.  Then $x=C/\gamma$, $y=v/x$, and $z=S/x^2$.
+Substitution in \eqref{eq:weighted-formulas}, using $E=0$, returns
+$(A,B,C)$ and $W=u\gamma$.
+
+Conversely, at a source point with $C=x\gamma\ne0$ one has
+\[
+ E_W(W(x,y,z))=-c\gamma\ne0.
+\]
+The same identities recover $(x,y,z)$.  They are equalities in localized
+coordinate rings, not merely pointwise formulas.
+\end{proof}
+
+\begin{theorem}[global regular-reconstruction theorem]\label{thm:weighted-global}
+For every admissible $H$ satisfying \eqref{eq:admissible-H}, the root marking
+\[
+ \iota_0:\A^3_{x,y,z}\longrightarrow\mathcal I_H,qquad
+ (x,y,z)\longmapsto(G_H(x,y,z),W(x,y,z))
+\]
+lifts uniquely to an isomorphism
+\[
+ \iota:\A^3_{x,y,z}\xrightarrow{\sim}\mathcal R_H.
+\]
+Under this identification, $G_H$ is the restriction of the finite map
+$\widetilde{\mathcal I}_H\to\A^3_{A,B,C}$.  Its generic degree is $n$.
 \end{theorem}
 
-The normalization is necessary over $C=0$: a repeated specialized root can
-still reconstruct to a finite point, while a simple specialized root can lie
-at infinity.  The coordinate-free statement is therefore regularity of all
-reconstruction functions on the normalized incidence, not a global
-identification with the raw simple-root locus.
+\begin{proof}
+The identity $E_{G_H(x,y,z)}(W(x,y,z))=0$ follows directly from
+\eqref{eq:weighted-formulas} and defines $\iota_0$.  Proposition
+\ref{prop:weighted-Cnonzero} makes this morphism dominant and birational.
+Because $\A^3$ is normal, the universal property of normalization gives a
+unique lift $\iota$ to $\widetilde{\mathcal I}_H$.
+
+The lift is quasi-finite: each of its fibers is contained in a fiber of the
+etale, hence quasi-finite, map $G_H$.  It is a quasi-finite birational
+morphism to the normal scheme $\widetilde{\mathcal I}_H$, so Zariski's Main
+Theorem makes it an open immersion \cite{stacks-zmt}.  On its image, the rational functions
+\eqref{eq:weighted-reconstruction} pull back to the source coordinates;
+hence the image lies in $\mathcal R_H$.
+
+Conversely, wherever $x,y,z$ in \eqref{eq:weighted-reconstruction} are
+regular, they define a morphism to $\A^3$.  The identities
+$G_H(x,y,z)=(A,B,C)$ and $W=(1+xy)\gamma$, already proved in the common
+function field on $D(C)$, hold on that regularity neighborhood.  This
+morphism is inverse to the open immersion, so its domain is exactly
+$\mathcal R_H$.
+
+Finally, a generic target has $C\ne0$ and $E_W\ne0$ at each of the $n$ roots
+of the monic degree-$n$ polynomial $E$.  Proposition
+\ref{prop:weighted-Cnonzero} therefore reconstructs $n$ source points, proving
+that the generic degree of $G_H$ is $n$.
+\end{proof}
+
+Because $\widetilde{\mathcal I}_H$ is normal, regularity of a rational
+function is detected at height-one points.  Consequently the complement is
+specified set-theoretically by
+\begin{equation}\label{eq:boundary-valuations}
+ \widetilde{\mathcal I}_H\setminus\mathcal R_H
+ =\bigcup_{\substack{D\in\widetilde{\mathcal I}_H^{(1)}\\
+ \min(v_D(x),v_D(y),v_D(z))<0}}
+ \overline{\{D\}}.
+\end{equation}
+Thus the affine source is one explicitly defined open, and its divisorial
+complement consists of the pole valuations \eqref{eq:boundary-valuations}.
+The C01--C04 argument does not enumerate these valuations for every root
+profile of $H$.
+\marginpar{CHECK: the underlying C04 note proves the regularity-open
+description but not a uniform seed-by-seed classification of every boundary
+valuation.}
+
+\subsection{The fiber over \texorpdfstring{$C=0$}{C=0}}
+
+At $C=0$, the raw incidence specializes to $H(W)=0$.  The simple-root locus
+is not the affine source globally: a repeated root at $W=0$ may have normalized
+branches with regular reconstruction, while a simple additional root of $H$
+may have a reconstruction pole.
+
+The distinguished root $W=1$ is simple because $H'(1)=-c$.  In the completed
+etale local incidence at that root,
+\begin{equation}\label{eq:root-one-expansion}
+ W=1-\frac BcC+
+ \left(A+\frac{2+\kappa}{2c^2}B^2\right)C^2+O(C^3).
+\end{equation}
+The reconstruction then has $x\to0$ and
+$y\to-(2+\kappa)B/c$; the choice \eqref{eq:a0} cancels the linear term in
+$\gamma-1-a_0(W/\gamma-1)$, so formally $S=O(C^2)$ and $z=S/x^2$ has no
+formal pole.
+\marginpar{CHECK: the notes use this completed expansion to assert algebraic
+regularity on the whole root-one chart; an explicit completion-intersection
+or algebraization lemma should be cited.}
+
+Write $H(W)=W^{m_0}L(W)$ with $m_0\ge2$ and $L(0)=h_0\ne0$.  The chart
+$W=CR$, after division by $C^2$, has strict equation
+\begin{equation}\label{eq:zero-cluster}
+ C^{m_0-2}R^{m_0}L(CR)-BR+cA=0.
+\end{equation}
+For $m_0=2$, its generic special fiber is
+$h_0R^2-BR+cA=0$; for $m_0\ge3$ and $B\ne0$, it has the generic solution
+$R=cA/B$.  These formulas exhibit finite normalized branches but do not
+classify every special point or every boundary divisor over $C=0$.
+\marginpar{CHECK: the zero-cluster analysis in C04 is generic; no complete
+scheme-theoretic $C=0$ fiber classification is proved there.}
