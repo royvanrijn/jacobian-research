@@ -12,3 +12,6 @@ directory and are intentionally absent from the front page.
 The [transfer-program archive](transfer-program/) contains the former
 C17--C23 finite examples, failed all-`k` mechanisms, conditional arguments,
 and scoped factorization obstruction.
+
+The [cancellation-component archive](cancellation-components/) preserves the
+former fragmented C24 narratives now consolidated into five active documents.

@@ -82,16 +82,10 @@ forgets the marked root. Consequently:
 The weighted C04 construction replaces the cubic by
 `H(W)-BCW+cAC^2` and retains the same normalized marked-root mechanism.
 
-## Proof status
+## Mathematical status
 
-| Claim | Description | Status | Main proof | Independent check |
-|---|---|---|---|---|
-| C01 | Explicit map, determinant, and collision | Verified independently | [Core proof](verified/FOUNDATIONAL_GEOMETRY.md) | Two exact implementations and a pinned Lean 4 proof |
-| C02 | Marked-root realization | Proved internally | [Marked-root model](verified/MARKED_ROOT_MODEL.md) | Exact two-chart verification |
-| C03 | Image, fibers, and nonproperness | Proved internally | [Image and nonproperness](verified/IMAGE_AND_NONPROPERNESS.md) | Exact boundary scripts |
-| C04 | Weighted marked-root family and `S_n` monodromy | Verified independently | [Weighted theorem](verified/WEIGHTED_SEED_THEOREM.md) | Clean-room proof and standard-library checker |
-
-The complete four-status ledger is [CLAIMS.md](CLAIMS.md).
+C01–C04 are the stable core. See [STATUS.md](STATUS.md) for detailed
+evidence levels.
 
 ## Deeper work
 
@@ -100,7 +94,11 @@ The complete four-status ledger is [CLAIMS.md](CLAIMS.md).
 - [Adversarial audit of C05](papers/discriminant-pencils/AUDIT.md)
 - [Verified C01--C04 material](verified/README.md)
 - [Experimental geometry, C05--C16](experimental/geometry/README.md)
-- [C24 cancellation and boundary theory](experimental/transfer-and-cancellation/README.md)
-- [Current research status](RESEARCH_STATUS.md)
+- Cancellation programme: [construction](experimental/cancellation/CONSTRUCTION.md),
+  [arithmetic](experimental/cancellation/ARITHMETIC.md),
+  [boundary geometry](experimental/cancellation/BOUNDARY_GEOMETRY.md),
+  [rigidity within the current ansatz](experimental/cancellation/RIGIDITY.md),
+  and [open problems](experimental/cancellation/OPEN_PROBLEMS.md)
+- [Mathematical status and external review](STATUS.md)
 - [Archived notes and superseded derivations](archive/README.md)
 - [Verification commands](Makefile)

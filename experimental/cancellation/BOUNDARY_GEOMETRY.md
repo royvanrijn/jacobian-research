@@ -31,12 +31,20 @@ bipartite diagram
  \{E\subset\partial_F\}\longrightarrow\{Z\subset Y\}.
 \]
 
-The divisorial-image hypothesis must not be hidden.  In the general
-quasi-finite setup a boundary divisor may map into codimension at least two.
-The divisorial invariant therefore either assumes boundary noncontraction or
-is understood as the codimension-one truncation of a larger stratified
-object retaining all images.  Keller maps between affine spaces satisfy the
-needed purity/noncontraction statement in the applications here.
+The divisorial-image point is a theorem here, not a hidden assumption.  The
+finite normalization is affine.  If a component of the complement of the
+dense affine open `U` had codimension at least two, normality and extension
+across codimension two would identify the coordinate rings on a principal
+neighborhood and its intersection with `U`, contradicting the missing
+component.  Thus `partial_F` is pure of codimension one.  If `E` corresponds
+to a height-one prime `q` in the normalization and `p=q cap k[Y]`, then
+`p!=0`; going down for the integral extension over normal `k[Y]` gives
+`ht(p)<=1`, hence `ht(p)=1`.  Therefore every boundary prime maps onto a
+target prime divisor.  Boundary divisors can contract in arbitrary projective
+compactifications or blowups, but not in this canonical affine finite-
+normalization setup.  Without affineness, normality, or finiteness, one must
+instead impose noncontraction or retain all higher-codimension images in a
+stratified object.
 
 ## 2. Complete boundary list
 

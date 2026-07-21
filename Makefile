@@ -13,7 +13,7 @@ SYSTEM_PYTHON ?= python3
 check:
 	$(PYTHON) -m compileall -q jcsearch scripts
 	$(PYTHON) scripts/check_markdown_links.py
-	$(PYTHON) scripts/audit_claim_ledger.py
+	$(PYTHON) scripts/audit_status.py
 
 verify-minimal:
 	$(SYSTEM_PYTHON) scripts/verify_counterexample_independent.py

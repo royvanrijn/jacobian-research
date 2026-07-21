@@ -208,11 +208,11 @@ theorem](BOUNDARY_GEOMETRY.md).  Rigidity under enlargements of the present
 ansatz and target-fixed parameter rigidity are intentionally collected in
 [RIGIDITY.md](RIGIDITY.md), not claimed as part of this construction theorem.
 
-## 7. Exact status and verification
+## 7. Scope and verification
 
-Proved uniformly here: the determinant (4), polynomiality criterion (8),
+The argument establishes the determinant (4), polynomiality criterion (8),
 parameter formula and recurrence (10)--(12), exact reconstruction
-(13)--(15), and collision (16)--(17).
+(13)--(15), and collision (16)--(17) for every `m,r>=1`.
 
 Verification entry points:
 

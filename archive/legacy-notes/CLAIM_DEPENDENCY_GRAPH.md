@@ -1,6 +1,7 @@
 # Claim dependency graph and proof ledger
 
-This document refines [CLAIMS.md](../../CLAIMS.md) into a directed proof graph.
+This historical document records the former directed proof graph.  Current
+completion and review information is maintained in [STATUS.md](../../STATUS.md).
 For every claim it records the exact quantifiers, internal lemmas, division
 between executable and written proof, external inputs, and remaining proof or
 audit obligations.
@@ -986,7 +987,7 @@ moduli is claimed.
 
 **Quantified statement.** For every `m,r>=1` over characteristic zero and
 every nonzero `C`, the rational ansatz in
-[MASTER_CANCELLATION_CONSTRUCTION.md](../../experimental/transfer-and-cancellation/MASTER_CANCELLATION_CONSTRUCTION.md)
+[MASTER_CANCELLATION_CONSTRUCTION.md](../cancellation-components/MASTER_CANCELLATION_CONSTRUCTION.md)
 has determinant `-C` in the localization at `A=1+xy^m`. Its last coordinate
 is polynomial exactly when the finite operator `L_(m,r)` vanishes. Roots of
 the monic truncated-binomial parameter polynomial, followed by the displayed
@@ -1019,13 +1020,13 @@ four small critical partitions, infinity polynomials, distinguished finite
 branch, residue-degree orbits and monodromy groups.
 `generate_master_regression.py` emits exact data for a new pair.
 
-**Prose.** [MASTER_CANCELLATION_CONSTRUCTION.md](../../experimental/transfer-and-cancellation/MASTER_CANCELLATION_CONSTRUCTION.md)
+**Prose.** [MASTER_CANCELLATION_CONSTRUCTION.md](../cancellation-components/MASTER_CANCELLATION_CONSTRUCTION.md)
 separates the localized Jacobian theorem from polynomial cancellation, proves
 the finite operator criterion, derives the hypergeometric/truncated-binomial
 parameter and recurrence, gives the primitive-element reconstruction and
 uniform collision, compares ramification with weighted seeds, and demotes
 products/compositions to formal closure corollaries.
-[RESOLVENT_RAMIFICATION_SIGNATURE.md](../../experimental/transfer-and-cancellation/RESOLVENT_RAMIFICATION_SIGNATURE.md)
+[RESOLVENT_RAMIFICATION_SIGNATURE.md](../cancellation-components/RESOLVENT_RAMIFICATION_SIGNATURE.md)
 constructs the canonical finite-normalization signature, proves its
 left--right and stable invariance, identifies both C24 boundary components,
 and proves the monodromy and inequivalence theorems.

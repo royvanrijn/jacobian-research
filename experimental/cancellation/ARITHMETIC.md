@@ -88,14 +88,14 @@ This table is an exact bounded theorem, not evidence for an all-degree
 symmetric-group statement.  Formula (1) explains the alternating cases, and
 also shows why alternating containment persists in infinite families.
 
-## 3. Exact status
+## 3. Known range and open boundary
 
-Proved uniformly: separability, the discriminant formula and square
-criterion, the entire `m=1` irreducibility column, and the three additional
-irreducibility criteria above.
+The uniform arguments establish separability, the discriminant formula and
+square criterion, the entire `m=1` irreducibility column, and the three
+additional irreducibility criteria above.
 
-Proved in a finite range: irreducibility and the complete natural Galois
-group for `mr<=30`.
+Exact finite certificates establish irreducibility and the complete natural
+Galois group for `mr<=30`.
 
 Open: irreducibility for all remaining `(m,r)` and an all-parameter
 classification of the natural Galois group.  Minimal fields of definition of

@@ -26,7 +26,7 @@ Both apparent quotients cancel. Exact expansion gives coordinate degrees
 G(1,0,0)=G(-1,0,2)=(0,0,1).
 \]
 
-## Implementation order and status
+## Implementation record
 
 - [x] Generalized weighted-seed builder.
 - [x] Exact integer quartic map, polynomiality, determinant, degrees, and

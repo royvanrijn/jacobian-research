@@ -3,7 +3,7 @@
 Dean Cureton's [`deancureton/jacobian`](https://github.com/deancureton/jacobian)
 is a separate Lean 4 formalization of the announced counterexample.  This
 repository uses it as an external, independently implemented formal
-certificate for [Claim C01](../CLAIMS.md#c01), pinned at commit
+certificate for [C01](../STATUS.md), pinned at commit
 [`0d4a9212d874226ad81ce5a926becddfa94e6a88`](https://github.com/deancureton/jacobian/commit/0d4a9212d874226ad81ce5a926becddfa94e6a88).
 
 ## Exact scope

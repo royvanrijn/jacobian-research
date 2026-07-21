@@ -1,8 +1,5 @@
 # Experimental geometry: C05--C16
 
-**Workflow state:** awaiting review. No theorem in this directory is currently
-being extended.
-
 ## What is the main theorem?
 
 The programme describes the discriminant, image, omitted values, collision
@@ -26,14 +23,14 @@ also use normalization, Zariski's Main Theorem, purity, Mason--Stothers,
 formal Hensel factorization, valuation theory, and standard plane-curve
 singularity formulas.
 
-## What is fully proved?
+## What is established?
 
-The repository contains internal written proofs for C05--C11, C13, C15, and
-C16, with exact scripts checking their finite identities and representative
-models. “Fully proved” here means proved internally, not independently
-reviewed; see the [claim ledger](../../CLAIMS.md).
+The repository contains written proofs for C05--C11, C13, C15, and C16, with
+exact scripts checking their finite identities and representative models.
+Completion and review information is maintained only in
+[STATUS.md](../../STATUS.md).
 
-## What was strengthened from computational evidence?
+## Independent checks
 
 C12's completed-local model and C14's quartic geometry now have complete
 internal proofs plus dependency-free clean-room checks of their decisive

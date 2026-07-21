@@ -401,7 +401,7 @@ and can have nontrivial conductor multiplicity; C12 and the archived
 transfer-block examples study those
 stronger local structures.
 
-## 9. Consequences and proof status
+## 9. Consequences and proof boundary
 
 For `lambda=2^a3^b`,
 
