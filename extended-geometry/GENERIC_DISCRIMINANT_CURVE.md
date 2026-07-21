@@ -15,7 +15,7 @@ Y=H(r)+H'(r)(W-r)=sW-t
 to the graph `Y=H(W)`. Thus the discriminant is the projective dual curve of
 the polynomial graph, and its singularities record exceptional tangent lines.
 
-## C05: generic nodal-cuspidal theorem
+## Generic nodal-cuspidal theorem
 
 Let `k` be algebraically closed of characteristic zero and let `n>=3`.  There
 is a nonempty Zariski-open subset of the normalized admissible degree-`n`
@@ -428,7 +428,7 @@ Consequently
 
 All other possible singularities were excluded before this numerical step;
 the genus formula determines the number of the remaining nodes rather than
-being used to guess their local type.  This completes the proof of C05.
+being used to guess their local type.  This completes the proof of Generic Discriminant Theorem.
 
 ## Universal saturated incidence ideals and regression certificates
 

@@ -64,7 +64,7 @@ def check_resolvent_degree_and_critical_power() -> None:
         assert sp.cancel(sp.diff(psi, T) - C * D**exponent) == 0
 
 
-def check_weight_obstruction_and_c24_reduction() -> None:
+def check_weight_obstruction_and_cancellation_reduction() -> None:
     A, y, H = sp.symbols("A y H")
     f = y**3
     G = y**4 * H
@@ -242,8 +242,8 @@ def main() -> None:
     print("PASS: representative two-weight Jacobians are constant")
     check_resolvent_degree_and_critical_power()
     print("PASS: generalized resolvent degree and critical power")
-    check_weight_obstruction_and_c24_reduction()
-    print("PASS: weight obstruction and exact C24 operator reduction")
+    check_weight_obstruction_and_cancellation_reduction()
+    print("PASS: weight obstruction and exact cancellation construction operator reduction")
     check_e1_spectrum()
     print("PASS: e=1 spectral identity, closed form, and bounded pairwise gcds")
     check_higher_spectrum()

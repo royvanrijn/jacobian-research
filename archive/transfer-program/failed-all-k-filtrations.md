@@ -340,9 +340,9 @@ Run:
 
 ## 8. Programme consequence
 
-The proposed transverse associated-graded theorem is refuted, so C22 is not
-proved.  The dependency chain `C22 -> C18 -> C21 -> C23` is not activated.
+The proposed transverse associated-graded theorem is refuted, so Failed All-k Transfer Block is not
+proved.  The dependency chain `Failed All-k Transfer Block -> Hensel-Product Affine Equalizer -> Master Quotient Theorem -> Factorization-Slice Obstruction` is not activated.
 The former all-`k` transfer programme and its dependent claims are archived.
 Only the exact low-`k` local algebras are retained in active navigation as
-examples.  This conclusion does not affect the independently defined C24
+examples.  This conclusion does not affect the independently defined cancellation construction
 cancellation construction.

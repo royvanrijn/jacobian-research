@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Exact certificate and boundary audits for effective C13."""
+"""Exact certificate and boundary audits for effective finite-field Chebotarev theorem."""
 
 from collections import Counter
 import math

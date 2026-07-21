@@ -14,13 +14,14 @@ The archived entry points are:
 - [failed all-`k` filtrations](failed-all-k-filtrations.md), containing the
   decisive `k=2` counterexamples;
 - [cubic factorization obstruction](cubic-factorization-obstruction.md), the
-  scoped affine-complement result formerly labelled C23; and
+  surviving scoped affine-complement result; and
 - [failed all-`k` details](failed-all-k-details/), preserving the conditional
-  C18/C21 arguments, superseded C22 models, and their scripts.
+  Hensel-Product Affine Equalizer/Master Quotient Theorem arguments, superseded Failed All-k Transfer Block models, and their scripts.
 
 Associated bounded verification programs are under [scripts](scripts/).
 They are not part of the active verification pipeline.
 
-The historical labels C17--C23 are intentionally absent from the current
-claim ledger.  Nothing in this directory is an active dependency of C24 or
+The obsolete transfer claim numbers are intentionally absent from the current
+status ledger.  Nothing in this directory is an active dependency of the
+the cancellation construction or
 the boundary-invariant theory.

@@ -231,7 +231,7 @@ matching upper bound.
 Run
 
 ```bash
-python3 scripts/audit_c12_independent.py
+python3 scripts/audit_degree_twelve_independent.py
 ```
 
 The former standalone audit narrative is retained in

@@ -25,7 +25,7 @@ valuations needed for nonproperness and omission.
 
 The explicit graph blow-up, local toric charts, discrepancies and intersection
 graphs are retained in the
-[geometry-support archive](../archive/geometry-support/C16_BLOWUP_GEOMETRY.md).
+[geometry-support archive](../archive/geometry-support/DICRITICAL_BLOWUP_GEOMETRY.md).
 
 ## Resolved inverse graph
 
@@ -201,5 +201,5 @@ The script checks (2), the Kummer leading equations (3)--(4) for
 multiplicities through five or six, and the finite nature of the distinguished
 root-one chart.  The Kummer exponents are checked as ramification indices.
 The graph blow-up and all exceptional valuations are audited separately by
-`verify_c16_blowup_geometry.py`.  These finite multiplicity checks are
+`verify_dicritical_blowup_geometry.py`.  These finite multiplicity checks are
 regressions for the uniform valuation argument above.

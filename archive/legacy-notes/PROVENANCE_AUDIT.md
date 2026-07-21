@@ -49,7 +49,7 @@ the formalization and does not infer discovery priority from the later proof.
 The audited commit has no license file.  The integration therefore records
 authorship and an immutable source link and supplies a target that builds the
 upstream checkout, rather than copying or adapting its Lean source.  See
-[LEAN_C01](../../verified/LEAN_C01.md) for the theorem-by-theorem scope and reproduction
+[Lean foundational-map audit](../../verified/LEAN_FOUNDATIONAL_MAP.md) for the theorem-by-theorem scope and reproduction
 instructions.
 
 ## Later exposition, not discovery provenance
@@ -76,7 +76,7 @@ and attribution were located for this audit at 20 July 2026 22:43 UTC
 The repository adopts from that post the organization of the source as binary
 cubics with a marked simple projective root. The affine cubic, its derivative
 reconstruction, generic degree, discriminant, root at infinity, and `3/1/0`
-fiber results substantially overlap the pre-existing C02--C03 material in
+fiber results substantially overlap the pre-existing cubic marked-root and image results material in
 `IMAGE_AND_NONPROPERNESS.md` and its exact scripts. The new
 `MARKED_ROOT_MODEL.md` supplies the two-chart global isomorphism proof and
 credits the public post for the projective marked-root formulation. This

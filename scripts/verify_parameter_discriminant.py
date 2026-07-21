@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Exact regressions for the closed C24 parameter-discriminant formula."""
+"""Exact regressions for the closed cancellation construction parameter-discriminant formula."""
 from __future__ import annotations
 
 import sympy as sp

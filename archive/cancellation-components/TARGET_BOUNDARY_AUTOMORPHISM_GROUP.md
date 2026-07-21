@@ -1,12 +1,12 @@
-# Target automorphisms of the C24 marked boundary pair
+# Target automorphisms of the cancellation construction marked boundary pair
 
-The target-fixed theorem reduces equivalence of distinct C24 parameter roots
+The target-fixed theorem reduces equivalence of distinct cancellation parameter roots
 to automorphisms of the common finite normalization covering nonidentity
 target automorphisms.  This note begins the resulting, smaller problem by
 computing the restriction of every labelled-boundary automorphism to the
 distinguished plane `P=0`.
 
-Fix a noncubic `C24_(m,r)` map over a characteristic-zero field `k`, and put
+Fix a noncubic `cancellation type (m,r)` map over a characteristic-zero field `k`, and put
 
 \[
  Y=\mathbb A^3_{P,Q,R},\qquad D_P=V(P),\qquad
@@ -112,13 +112,13 @@ For every `lambda in k^*`, define
 ### Proposition 2.1 (cover-preserving torus)
 
 The maps `sigma_lambda` form a subgroup `G_m` of the labelled-boundary
-automorphism group.  They lift to the common C24 finite normalization by
+automorphism group.  They lift to the common cancellation construction finite normalization by
 
 \[
  T\longmapsto\lambda^{-m}T.                               \tag{9}
 \]
 
-They preserve every C24 affine reconstruction marking and act trivially on
+They preserve every cancellation construction affine reconstruction marking and act trivially on
 the parameter roots.
 
 **Proof.**  Under (8)--(9),
@@ -213,7 +213,7 @@ This replaces unrestricted left--right equivalence by two concrete tasks:
 2. compute its finite permutation image on the roots of `K_(m,r)`.
 
 The full target-only kernel `K` could conceivably contain automorphisms that
-do not lift to the inverse cover.  Such automorphisms are irrelevant to C24
+do not lift to the inverse cover.  Such automorphisms are irrelevant to the cancellation construction
 equivalence and should not be included merely because they preserve the two
 target equations.
 

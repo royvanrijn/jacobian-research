@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Exact Galois-group classification for C24 parameter degree at most six."""
+"""Exact Galois-group classification for cancellation construction parameter degree at most six."""
 from __future__ import annotations
 
 import math
@@ -75,4 +75,4 @@ assert set(EXPECTED) == {
     for r in range(1, 7)
     if m * r <= 6
 }
-print("PASS: complete C24 parameter-Galois classification through degree six")
+print("PASS: complete cancellation construction parameter-Galois classification through degree six")

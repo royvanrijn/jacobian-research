@@ -1,7 +1,7 @@
 # Monodromy, deck transformations, and rigid reconstruction opens
 
-This note isolates the general mechanism behind target-fixed C24 rigidity.
-The mechanism is broader than C24, but its conclusion must be stated
+This note isolates the general mechanism behind target-fixed cancellation construction rigidity.
+The mechanism is broader than cancellation construction, but its conclusion must be stated
 carefully: trivial deck group makes a target-fixed identification unique; it
 does not prove that two unrelated finite extensions are isomorphic.
 
@@ -147,9 +147,9 @@ integral normalization; conversely, an isomorphism of source opens is already
 determined by its generic-field action.  What remains family-specific is
 identifying the two opens inside a common normalization.
 
-## 4. Application to C24 parameter branches
+## 4. Application to cancellation parameter branches
 
-For fixed `(m,r,C)`, every C24 cancellation branch has the same primitive
+For fixed `(m,r,C)`, every cancellation branch has the same primitive
 extension
 
 \[

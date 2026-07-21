@@ -1,8 +1,10 @@
 # Degreewise stable multiplicity: five-lemma audit
 
-This note isolates the proof of the degreewise lower bound from the historical
-claim numbering.  Fix an integer `N>=4`, put `n=N-1`, and work over `C`.
-The conclusion is
+This is the verification companion to the canonical standalone paper
+[`Marked-Root Keller Maps and Degreewise Stable Multiplicity`](papers/marked-root-multiplicity/main.tex).
+It splits that proof into independently checkable obligations; it is not a
+second canonical theorem source.  Fix an integer `N>=4`, put `n=N-1`, and
+work over `C`.  The audited conclusion is
 
 \[
  \#\{\text{stable left--right classes of degree-}N\text{ Keller maps}
@@ -281,7 +283,7 @@ boundary vertex.
 **Uses only:** the local equations of the two normalized critical divisors.
 It does not use the stable-invariance argument.
 
-## Degreewise stable multiplicity theorem
+## Assembly check
 
 There are `tau(n)-1` proper positive divisors of `n=N-1`.  Lemma 2 supplies
 one cancellation map for each.  Distinct divisors `r` have distinct
@@ -294,7 +296,8 @@ cancellation map by reducedness.  Therefore there are at least
  (\tau(N-1)-1)+1=\boxed{\tau(N-1)}
 \]
 
-stable left--right classes in generic degree `N`.
+stable left--right classes in generic degree `N`.  Cite the canonical paper,
+not this audit, for the theorem statement and proof.
 
 ## Reproduction hooks
 
@@ -308,7 +311,7 @@ The all-parameter thick-intersection formula has a bounded symbolic
 regression in
 
 ```bash
-.venv/bin/python scripts/verify_c24_scheme_boundary_all_parameters.py
+.venv/bin/python scripts/verify_scheme_boundary_all_parameters.py
 ```
 
 These scripts are regressions, not substitutes for Lemmas 3 and 5.  The

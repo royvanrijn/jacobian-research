@@ -24,15 +24,36 @@ for line in status.splitlines():
     assert len(cells) == 4, f"status row does not have four columns: {line}"
     rows.append(cells)
 
-expected = [f"C{i:02d}" for i in range(1, 17)] + [
+expected = [
+    "Foundational Keller map and rational collision",
+    "Cubic marked-root realization",
+    "Exact cubic image, fibers, and nonproperness",
+    "Weighted marked-root family and `S_n` monodromy",
+    "Generic discriminant geometry",
+    "Weighted image and boundary theorems",
+    "Full-contact omission and uniqueness",
+    "Contact strata and dimensions",
+    "Contact-atom principle",
+    "Exceptional components and closure order",
+    "Component normalizations",
+    "Degree-twelve local singularity",
+    "Effective finite-field Chebotarev law",
+    "Explicit quartic weighted model",
+    "Stable normal-form consequences",
+    "Dicritical compactification",
     "Cancellation construction",
     "Cancellation-parameter arithmetic",
     "Boundary distinction",
     "Rigidity within the current ansatz",
-    "Degreewise divisor-count theorem",
+    "Degreewise stable-multiplicity theorem",
 ]
-actual = [cells[0].split(" — ", 1)[0] for cells in rows]
+actual = [cells[0] for cells in rows]
 assert actual == expected, "STATUS.md result rows are missing, duplicated, or out of order"
+
+canonical_degreewise = "[Canonical paper](papers/marked-root-multiplicity/main.tex)"
+assert status.count(canonical_degreewise) == 1, (
+    "the degreewise theorem must have exactly one canonical source"
+)
 
 for result, mathematical, review, location in rows:
     assert mathematical, f"{result} has no mathematical status"
@@ -40,8 +61,9 @@ for result, mathematical, review, location in rows:
     assert "](" in location, f"{result} has no linked location"
 
 readme = (root / "README.md").read_text()
-assert "C01–C04 are the stable core. See [STATUS.md](STATUS.md)" in readme
+assert "The foundational map, cubic marked-root model, exact image theorem" in readme
+assert "The canonical statement and proof are in the standalone paper" in readme
 assert "| Claim | Description | Status |" not in readme
 assert "CLAIMS.md" not in readme and "RESEARCH_STATUS.md" not in readme
 
-print("PASS status ledger: one four-column source covers C01--C16 and marked-root results")
+print("PASS status ledger: one four-column source covers the named active results")

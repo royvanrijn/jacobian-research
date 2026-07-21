@@ -1,16 +1,16 @@
 # Archived core support notes
 
-These files preserve supporting and superseded narratives for C01--C04:
+These files preserve supporting and superseded narratives for foundational-through-weighted core:
 
 - the former all-in-one foundational proof chain;
 - the positive invariance regression narrative;
-- the detailed C04 clean-room audit;
+- the detailed weighted marked-root theorem clean-room audit;
 - the expanded weighted marked-root normalization; and
 - the former foundational-facts summary.
 
 The active reading path is now one document per result:
-[C01](../../verified/FOUNDATIONAL_GEOMETRY.md),
-[C02](../../verified/MARKED_ROOT_MODEL.md),
-[C03](../../verified/IMAGE_AND_NONPROPERNESS.md), and
-[C04](../../verified/WEIGHTED_SEED_THEOREM.md).
+[Foundational Keller map](../../verified/FOUNDATIONAL_GEOMETRY.md),
+[Cubic Marked-Root Model](../../verified/MARKED_ROOT_MODEL.md),
+[Cubic Image and Nonproperness Theorem](../../verified/IMAGE_AND_NONPROPERNESS.md), and
+[weighted marked-root theorem](../../verified/WEIGHTED_SEED_THEOREM.md).
 The scripts remain active through [REPRODUCE.md](../../REPRODUCE.md).

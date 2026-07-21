@@ -6,7 +6,7 @@ SYSTEM_PYTHON ?= python3
 .PHONY: check verify verify-logged verify-minimal verify-core verify-geometry \
 	verify-theorems verify-regressions verify-derived verify-family \
 	verify-master \
-	verify-quartic verify-normal-forms verify-formal verify-lean-c01 \
+	verify-quartic verify-normal-forms verify-formal verify-lean-foundational \
 	verify-foundations verify-foundations-formal \
 	verify-coincident-root-loci
 
@@ -22,7 +22,7 @@ verify-core: verify-minimal
 	$(PYTHON) scripts/verify_counterexample.py
 	$(PYTHON) scripts/audit_map_consistency.py
 	$(PYTHON) scripts/cubic_model.py
-	$(PYTHON) scripts/audit_c01_invariance_regression.py
+	$(PYTHON) scripts/audit_foundational_invariance_regression.py
 	$(PYTHON) scripts/verify_marked_root_model.py
 	$(PYTHON) scripts/image_nonproperness.py
 	$(PYTHON) scripts/verify_exceptional_fibers.py
@@ -35,7 +35,7 @@ verify-theorems:
 	$(PYTHON) scripts/verify_weighted_seed_schema.py
 	$(PYTHON) scripts/verify_weighted_seed_theorem.py
 	$(PYTHON) scripts/verify_weighted_marked_root_model.py
-	$(SYSTEM_PYTHON) scripts/audit_c04_independent.py
+	$(SYSTEM_PYTHON) scripts/audit_weighted_independent.py
 	$(PYTHON) scripts/verify_universal_discriminant_incidences.py
 	$(PYTHON) scripts/verify_contact_partition_strata.py
 	$(PYTHON) scripts/verify_uniform_exceptional_seed_theorem.py
@@ -44,9 +44,9 @@ verify-theorems:
 	$(PYTHON) scripts/verify_unique_omitted_value.py
 	$(PYTHON) scripts/verify_component_normalization.py
 	$(PYTHON) scripts/verify_degree12_branch_intersection.py
-	$(SYSTEM_PYTHON) scripts/audit_c12_independent.py
+	$(SYSTEM_PYTHON) scripts/audit_degree_twelve_independent.py
 	$(PYTHON) scripts/verify_dicritical_divisors.py
-	$(PYTHON) scripts/verify_c16_blowup_geometry.py
+	$(PYTHON) scripts/verify_dicritical_blowup_geometry.py
 	$(PYTHON) scripts/verify_omitted_value_classification.py
 	$(PYTHON) scripts/verify_repeated_root_boundary.py
 	$(PYTHON) scripts/verify_effective_chebotarev.py
@@ -58,7 +58,7 @@ verify-master:
 	$(PYTHON) scripts/verify_resolvent_ramification_signature.py
 	$(PYTHON) scripts/verify_target_fixed_parameter_rigidity.py
 	$(PYTHON) scripts/verify_boundary_intersection_obstruction.py
-	$(PYTHON) scripts/verify_c24_scheme_boundary_all_parameters.py
+	$(PYTHON) scripts/verify_scheme_boundary_all_parameters.py
 	$(PYTHON) scripts/verify_parameter_irreducibility.py
 	$(PYTHON) scripts/verify_parameter_discriminant.py
 	$(PYTHON) scripts/verify_parameter_galois_groups.py
@@ -69,7 +69,7 @@ verify-master:
 	$(PYTHON) scripts/verify_target_dependent_resolvent.py
 
 verify-regressions:
-	$(SYSTEM_PYTHON) scripts/audit_c14_independent.py
+	$(SYSTEM_PYTHON) scripts/audit_quartic_independent.py
 	$(PYTHON) scripts/verify_generic_discriminant_geometry.py
 	$(PYTHON) scripts/verify_canonical_family_image.py
 	$(PYTHON) scripts/verify_deformed_seed_boundary.py
@@ -92,26 +92,26 @@ verify-normal-forms:
 	$(PYTHON) scripts/verify_cubic_homogeneous_counterexample.py
 	$(PYTHON) scripts/cubic_linear_reduction.py
 	$(PYTHON) scripts/verify_cubic_linear_counterexample.py
-	$(PYTHON) scripts/audit_c15_independent.py
-	$(PYTHON) scripts/generate_c15_consequences.py
+	$(PYTHON) scripts/audit_stable_normal_form_independent.py
+	$(PYTHON) scripts/generate_stable_normal_form_consequences.py
 
 verify-derived: verify-normal-forms
 
 # Optional formal replication. This fetches Dean Cureton's separately authored
-# Lean project at the audited commit recorded in verified/LEAN_C01.md; it is kept
+# Lean project at the audited commit recorded in verified/LEAN_FOUNDATIONAL_MAP.md; it is kept
 # out of the default target because it downloads a pinned Lean/mathlib toolchain.
-verify-lean-c01:
-	bash scripts/verify_lean_c01.sh
+verify-lean-foundational:
+	bash scripts/verify_lean_foundational_map.sh
 
-verify-formal: verify-lean-c01
+verify-formal: verify-lean-foundational
 
 verify-foundations: verify-core
 	$(PYTHON) scripts/verify_weighted_seed_schema.py
 	$(PYTHON) scripts/verify_weighted_seed_theorem.py
 	$(PYTHON) scripts/verify_weighted_marked_root_model.py
-	$(SYSTEM_PYTHON) scripts/audit_c04_independent.py
+	$(SYSTEM_PYTHON) scripts/audit_weighted_independent.py
 
-verify-foundations-formal: verify-foundations verify-lean-c01
+verify-foundations-formal: verify-foundations verify-lean-foundational
 
 # Optional independent bounded-degree comparison with Macaulay2's classical
 # CoincidentRootLoci package.  The wrapper uses a pinned Docker image if M2 is

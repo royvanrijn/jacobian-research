@@ -1,8 +1,8 @@
 # Hensel products and allocation-branch intersections
 
 > **Conditional status.**  The all-`k` completed-intersection statements use
-> C22's Boolean/ribbon identification, which fails at `k=2`; see
-> [C22_CONDUCTOR_RIBBON_AUDIT.md](C22_CONDUCTOR_RIBBON_AUDIT.md).  Explicit
+> Failed All-k Transfer Block's Boolean/ribbon identification, which fails at `k=2`; see
+> [ALL_K_CONDUCTOR_RIBBON_AUDIT.md](ALL_K_CONDUCTOR_RIBBON_AUDIT.md).  Explicit
 > low-transfer calculations and the global Wronskian argument remain valid,
 > but the uniform nilpotent intersection structure is not proved.
 
@@ -262,7 +262,7 @@ uniformly to arbitrary exponents and any number of clusters.
 
 This proof takes place before Hensel decomposition. It therefore kills the
 two coefficients shared by all local blocks at once, rather than trying to
-cancel separate rootwise affine errors. Combining (10) with (3) and C22 gives
+cancel separate rootwise affine errors. Combining (10) with (3) and Failed All-k Transfer Block gives
 (11)--(12), including every higher compatibility and every nilpotent in the
 Boolean local relations.
 
@@ -315,7 +315,7 @@ elimination. Then the completed component ring is
 \]
 
 and its conductor in `B_A\oplus B_A'` is the direct sum of the two
-quotient kernels. Thus C22 and the global Wronskian determine both the
+quotient kernels. Thus Failed All-k Transfer Block and the global Wronskian determine both the
 completed intersection and conductor for every allocation pair.
 
 ## The global `(2,-2)` theorem

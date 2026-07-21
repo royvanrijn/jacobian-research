@@ -1,11 +1,11 @@
 # Classification with one additional resolvent factor
 
-This note closes the second minimal relaxation of the C24 cancellation
+This note closes the second minimal relaxation of the cancellation
 skeleton.  The inverse derivative is allowed a second normalized factor
 defined by an arbitrary polynomial.  The constant-Jacobian equation forces
 that factor either to coincide with the original factor or to be trivial.
 The same proof classifies an arbitrary finite product of normalized factors.
-Consequently no polynomial cancellation branch beyond C24 occurs anywhere
+Consequently no polynomial cancellation branch beyond cancellation construction occurs anywhere
 in this factorized extension.
 
 Throughout, `k` is a characteristic-zero field, `f_1,f_2 in k[y]`, with
@@ -109,11 +109,11 @@ In the first case (8) is `-C A^(n-u-v)`, which is constant exactly when
 `n=u`.  Conversely, direct substitution proves that both listed reductions
 give the constant `-C`.  QED
 
-### Corollary 2.2 (no polynomial branch beyond C24)
+### Corollary 2.2 (no polynomial branch beyond cancellation construction)
 
 If `(P,Q,R)` in (1)--(4) is polynomial and has nonzero constant Jacobian,
 then, up to translations, nonzero scalings, and polynomial left--right
-equivalence, it is a C24 map.
+equivalence, it is a cancellation map.
 
 **Proof.**  In both cases of Theorem 2.1, the inverse derivative reduces to
 
@@ -126,13 +126,13 @@ member has `n>=1`.  The
 [generalized cancellation theorem](GENERALIZED_CANCELLATION_MECHANISM.md)
 then applies with `e=n`: its weight rigidity forces `a=1`, `b=n+1`, and its
 spectral classification proves that every polynomial member is
-left--right equivalent to C24.  QED
+left--right equivalent to the cancellation construction.  QED
 
 Together with the
 [one-additional-weight theorem](THREE_WEIGHT_CANCELLATION_CLASSIFICATION.md),
 this settles both minimal relaxations proposed in Option B: neither an
 independent third monomial weight nor one additional normalized resolvent
-factor produces anything beyond C24.
+factor produces anything beyond cancellation construction.
 
 ## 3. Arbitrarily many normalized factors
 
@@ -169,7 +169,7 @@ coalesce to
 \]
 
 If the resulting coordinates are polynomial, the map is left--right
-equivalent to C24.
+equivalent to the cancellation construction.
 
 **Proof.**  In `k(y)[A,A^(-1)]`, the product in (11) can be a unit only if
 each factor `rho_i+(1-rho_i)A` is a unit.  The proof of Theorem 2.1 shows this
@@ -179,7 +179,7 @@ is equivalent to `rho_i in {0,1}`.  A factor with `rho_i=0` contributes
 therefore `n-sum_(q_i=f_1)v_i`; its vanishing is exactly (12).  This proves
 the constant-Jacobian classification and (13).  If `n=0`, the primitive is
 again `Cx/A` and is not polynomial.
-For `n>=1`, the generalized cancellation theorem gives the C24 conclusion as
+For `n>=1`, the generalized cancellation theorem gives the cancellation conclusion as
 in Corollary 2.2.  QED
 
 The result does not classify derivatives with factors depending essentially

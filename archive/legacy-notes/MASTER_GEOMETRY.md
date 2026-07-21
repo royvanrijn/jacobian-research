@@ -1,5 +1,10 @@
 # Master geometry: two universal constructions
 
+> **Archived synthesis.** This document mixes surviving geometry with a
+> transfer route that was later refuted.  It is not an active theorem or
+> status source; see [`STATUS.md`](../../STATUS.md) and the
+> [transfer archive](../transfer-program/README.md).
+
 The weighted theory in this repository is organized by two universal
 constructions.  On the target side one projects the locus of polynomials with
 no simple root modulo affine polynomials.  On the source side one pulls the
@@ -13,8 +18,8 @@ The ambient multiplication maps, their torus-normalized hyperplane slices,
 the uniqueness of the cubic affine complement, and the obstruction to the
 next `(2,3)` candidate are developed in
 [UNIVERSAL_FACTORIZATION_GEOMETRY.md](../transfer-program/cubic-factorization-obstruction.md).
-Claim C01 remains independently certified by Dean Cureton's Lean 4
-formalization; see [LEAN_C01.md](../../verified/LEAN_C01.md).
+The foundational Keller map remains independently certified by Dean Cureton's Lean 4
+formalization; see [LEAN_FOUNDATIONAL_MAP.md](../../verified/LEAN_FOUNDATIONAL_MAP.md).
 
 ## 1. The target-side construction
 
@@ -45,8 +50,8 @@ have multiplicity at least two.  Its projective closure is the union of the
 classical coincident-root loci with partitions having no part equal to one.
 Then:
 
-- the ordinary discriminant meets `H+L` in the discriminant curve of C05;
-- $B_n^\circ\cap(H+L)$ is the set of omitted inverse polynomials of C07; and
+- the ordinary discriminant meets `H+L` in the discriminant curve of Generic Discriminant Theorem;
+- $B_n^\circ\cap(H+L)$ is the set of omitted inverse polynomials of Omitted-Value Theorem; and
 - Mason--Stothers rigidity says that a normalized admissible pencil contains
   at most one such polynomial.
 
@@ -96,7 +101,7 @@ has the precise presentation
 with the usual collision exclusions when one is naming an exact stratum.
 Equivalently, quotient the set in parentheses by scalar multiplication, or
 take its unique section `D=1`.  Formula (3) is the quotient/hyperplane form of
-the full-contact classification already proved in C07--C10.
+the full-contact classification already proved in Omitted-Value Theorem--Exceptional-Component Theorem.
 
 This explains the dimension calculation.  A coincident-root locus of type
 `lambda` has affine monic dimension `ell(lambda)`.  The nonzero linear
@@ -128,7 +133,7 @@ of multiplicity `mu`:
  (Q_2,Q_3,\ldots)\longmapsto\prod_{\mu\ge2}Q_\mu^\mu. \tag{4}
 \]
 
-This is exactly the normalization map used in C08--C12.  In particular, for
+This is exactly the normalization map used in Contact-Strata Theorem--Degree-Twelve Local Singularity.  In particular, for
 a maximal partition it reduces to
 
 \[
@@ -153,7 +158,7 @@ therefore give the ambient normalization framework; they do not by themselves
 replace those slice and local-algebra arguments.
 
 The complete finite-normalization, slice-nonemptiness, exact-closure, and
-common-coarsening proof for C08--C11 is collected in
+common-coarsening proof for Contact-Strata Theorem--Component-Normalization Theorem is collected in
 [COINCIDENT_ROOT_REBUILD.md](../../extended-geometry/COINCIDENT_ROOT_REBUILD.md).
 
 ## 4. Why 2 and 3 are the cusp
@@ -222,7 +227,7 @@ so this is a three-dimensional parametrized pullback even though its image in
 polynomial coefficient space lies in the affine pencil `H+<1,W>`.
 
 Let `I_H^nu` be its normalization and let `R_H` be the locus where the
-marked root reconstructs regular source coordinates.  C04 and C16 prove the
+marked root reconstructs regular source coordinates.  weighted marked-root theorem and Dicritical Compactification Theorem prove the
 structural diagram
 
 \[
@@ -242,7 +247,7 @@ displayed isomorphism.  This gives a uniform reading of the main phenomena:
 | nonproperness | reconstruction has a polar divisor on `I_H^nu` |
 | dicritical boundary | a removed polar divisor has nonconstant target image |
 
-The cubic counterexample C01 is the first instance.  Its determinant and
+The cubic foundational cubic counterexample is the first instance.  Its determinant and
 three-point collision are also independently formalized in Lean 4 by Dean
 Cureton; the later universal geometry is not asserted to be part of that
 formalization.
@@ -259,7 +264,7 @@ seed locus. The exact-degree qualification is essential: the
 degree-at-most-`n` locus contains all `(W-a)^2`, which have the same image
 modulo affine polynomials.
 
-The collision proof has two parts. C22 identifies every completed local
+The collision proof has two parts. Failed All-k Transfer Block identifies every completed local
 square/cube relation with its full Boolean thickening; Hensel factorization
 tensors these relations over the distinct collision roots. The only remaining
 coupling is one equation
@@ -301,7 +306,7 @@ It checks all maximal types in degrees five through eight:
  \quad(2,2,2,2),\quad(3,3,2).
 \]
 
-The asserted dimensions agree with C10. These are independent bounded-degree
+The asserted dimensions agree with Exceptional-Component Theorem. These are independent bounded-degree
 ideal comparisons through degree seven and normalization-rank audits in degree
 eight; they are regressions for, not proofs of, the all-degree
 closed-immersion theorem.
@@ -309,7 +314,7 @@ closed-immersion theorem.
 ## References and attribution
 
 - Dean Cureton, [`deancureton/jacobian`](https://github.com/deancureton/jacobian),
-  separately authored Lean 4 formalization of C01.
+  separately authored Lean 4 formalization of the foundational Keller map.
 - Jaydeep Chipalkatti, [*On equations defining coincident root
   loci*](https://arxiv.org/abs/math/0110224).
 - L. M. Feher, A. Nemethi, and R. Rimanyi,

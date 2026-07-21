@@ -273,20 +273,20 @@ not in general the ordinary polynomial ring over `hat(R)_I`; this completed
 cylinder is the datum intended here.  This proves the stabilization and
 stable-invariance assertions.  QED
 
-## 7. First layer for C04 and C24
+## 7. First layer for weighted marked-root theorem and cancellation construction
 
 Theorem 5.1 of the
 [boundary-exhaustion certificate](BOUNDARY_EXHAUSTION_CERTIFICATE.md)
 determines the complete bipartite vertex set and the generic edge covers in
 the canonical finite normalization.
 
-For a generic degree-`n` weighted C04 seed over an algebraic closure:
+For a generic degree-`n` weighted marked-root theorem seed over an algebraic closure:
 
 - one boundary prime `E_Delta` maps birationally to the discriminant with
   ramification index two; and
 - `n-3` boundary primes `E_rho` map birationally and unramifiedly to `C=0`.
 
-For `C24_(m,r)` over an algebraic closure:
+For `cancellation type (m,r)` over an algebraic closure:
 
 - one boundary prime `E_Delta` maps birationally to the discriminant with
   ramification index `r+1`; and
@@ -297,7 +297,7 @@ the irreducible factors of the projective boundary polynomial after removal
 of the distinguished affine root; the finite edge maps retain the resulting
 residue extensions rather than only their degrees.
 
-Thus the vertex and edge layer is already explicit.  The genuinely new C24
+Thus the vertex and edge layer is already explicit.  The genuinely new cancellation construction
 problem begins with the schemes
 
 \[
@@ -322,7 +322,7 @@ of the following ways:
   structure; or
 - the induced local monodromy representations may be nonconjugate.
 
-For C24, the immediate next computation is the upstairs decomposition of the
+For cancellation construction, the immediate next computation is the upstairs decomposition of the
 thick target intersection
 
 \[
@@ -332,5 +332,5 @@ thick target intersection
 The `mr-1` boundary primes over `P=0`, the discriminant boundary prime, and
 their intersections upstairs should explain how the nilpotent affine-line
 component in (15) is assembled.  This enhanced incidence is also a natural
-candidate for distinguishing C24 maps attached to different parameter roots,
+candidate for distinguishing cancellation maps attached to different parameter roots,
 where the target-only numerical signatures agree.

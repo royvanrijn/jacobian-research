@@ -1,10 +1,10 @@
 # Classification of target-dependent polynomial resolvents
 
 This note gives the maximal derivative classification inside the generalized
-C24 coordinate skeleton.  Instead of prescribing a power or a product of
+cancellation coordinate skeleton.  Instead of prescribing a power or a product of
 normalized factors, allow the inverse-resolvent derivative to be an arbitrary
 polynomial in the inverse variable and the target coordinates.  The Keller
-condition forces the original C24 power identically.
+condition forces the original cancellation power identically.
 
 Let `k` have characteristic zero, let `f in k[y]` be nonconstant, let
 `a,b>=1`, and put
@@ -67,7 +67,7 @@ The localized map `(P,Q,R)` has nonzero constant Jacobian if and only if
 \]
 
 Hence target-dependent polynomial coefficients, sums, and arbitrary finite
-factorizations produce no derivative beyond the original C24 power.
+factorizations produce no derivative beyond the original cancellation power.
 
 **Proof.**  Holding `(P,Q)` fixed in (3) gives
 
@@ -100,14 +100,14 @@ Conversely, substituting (7) in (8) gives the constant `-C lambda`.  QED
 
 If the three coordinates `(P,Q,R)` are polynomial and have nonzero constant
 Jacobian, then the map is, up to translations, nonzero scalings, and
-polynomial left--right equivalence, a C24 map.
+polynomial left--right equivalence, a cancellation map.
 
 **Proof.**  Theorem 2.1 forces the derivative used in the
 [generalized cancellation theorem](GENERALIZED_CANCELLATION_MECHANISM.md).
 If `n=0`, then `H=lambda` and `R=C lambda x/A`, which is not polynomial.
 Thus `n>=1`.  The generalized theorem forces `a=1`, `b=n+1`, classifies the
 polynomial cancellation jet spectrally, and removes its tail by a polynomial
-source automorphism.  Its resulting map is C24-equivalent.  QED
+source automorphism.  Its resulting map is cancellation-equivalent.  QED
 
 The
 [finite-factor theorem](TWO_FACTOR_RESOLVENT_CLASSIFICATION.md) is now also a

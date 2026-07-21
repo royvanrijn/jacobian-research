@@ -2,7 +2,7 @@
 
 This note records two direct consequences of the displayed three-dimensional
 Keller counterexample.  They do **not** use the large stable-equivalence models
-of C15.
+of Stable Normal-Form Consequences.
 
 The construction below was circulated on 21 July 2026 in
 [`wmayner/dixmier-counterexample`](https://github.com/wmayner/dixmier-counterexample),
@@ -135,7 +135,7 @@ symplectic form, but it is not a symplectomorphism because it has no inverse.
 
 ## 4. Relation to the repository
 
-This route is dimension preserving and logically independent of C15:
+This route is dimension preserving and logically independent of Stable Normal-Form Consequences:
 
 \[
 \text{three-dimensional Keller collision}
@@ -149,15 +149,15 @@ It also gives a direct Poisson/symplectic lift in dimension six.
 
 The proof depends only on:
 
-1. the exact unit Jacobian determinant from C01;
-2. noninjectivity from C01;
+1. the exact unit Jacobian determinant from the foundational Keller map;
+2. noninjectivity of the foundational Keller map;
 3. standard Weyl-algebra and derivation facts;
 4. the image decomposition above.
 
-## 5. Audit obligations before promotion to the claim ledger
+## 5. Historical audit obligations
 
-Before assigning a new numbered claim, add a repository-local clean-room audit
-which independently checks:
+Before treating this archived route as an independent proof, a clean-room
+audit should check:
 
 - the entries of `G=(DF)^{-1}`;
 - `D_i(F_j)=delta_ij`;
@@ -174,7 +174,7 @@ structural proofs rather than inferred from bounded calculations.
 
 The same external study records a trace-zero primitive relation for one source
 coordinate and a line-congruence interpretation whose projectivized directions
-trace a twisted cubic.  These overlap C02--C03 and the projective symmetric-cube
+trace a twisted cubic.  These overlap cubic marked-root and image results and the projective symmetric-cube
 model, but have not yet been incorporated here because their precise coordinate
 identification with the repository's marked-root variables should first be
 written down and independently checked.

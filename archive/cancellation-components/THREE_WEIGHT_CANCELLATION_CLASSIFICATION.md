@@ -6,7 +6,7 @@ weights, every one-variable input, every triangular correction, and every
 polynomial derivative in the single natural inverse factor.  The
 constant-Jacobian equation forces the third weight back to the two-weight
 slice; the stronger target-dependent derivative theorem and the complete
-polynomial cancellation theorem then force C24.
+polynomial cancellation theorem then force cancellation construction.
 
 Throughout, `k` is a characteristic-zero field, `f in k[y]` is nonconstant,
 `a,b>=1`, and `c>=0` are integers.  Let
@@ -73,7 +73,7 @@ them.
 
 Every member of `mathscr T_3` whose three coordinates are polynomial and
 whose Jacobian is a nonzero constant is, up to translations, nonzero
-scalings, and polynomial left--right equivalence, a C24 map.
+scalings, and polynomial left--right equivalence, a cancellation map.
 
 More precisely:
 
@@ -99,7 +99,7 @@ is Theorem 2.1 of
 which uses algebraic independence of `(s,P,Q)`.  The finite cancellation,
 weight rigidity, spectral coprimality, full-jet uniqueness, and tail removal
 in [the generalized cancellation theorem](GENERALIZED_CANCELLATION_MECHANISM.md)
-then give assertion 3 and the C24 equivalence.  QED
+then give assertion 3 and the cancellation construction equivalence.  QED
 
 The word “maximality” in Theorem 0.2 is relative, not absolute: it exhausts
 the explicitly defined monomial triangular one-factor class.  It does not
@@ -201,11 +201,11 @@ equivalent to
 Finally `n=b+c-1=a+b-2`, proving necessity.  Direct substitution in (9)
 proves sufficiency.  QED
 
-### Corollary 2.2 (no branch beyond C24)
+### Corollary 2.2 (no branch beyond cancellation construction)
 
 Assume in addition that all three coordinates `(P,Q,R)` are polynomial.
 Then, up to translations, nonzero scalings, and polynomial left--right
-equivalence, the map is a C24 map.
+equivalence, the map is a cancellation map.
 
 **Proof.**  Theorem 2.1 forces `c=a-1` and the derivative
 `Theta(W)=lambda(1-W)^(a+b-2)`.  After absorbing `lambda` into `C`, this is
@@ -215,7 +215,7 @@ If `a=b=1`, then `e=a+b-2=0` and (4) is `R=Cs=Cx/A`, which is not a
 polynomial because `A=1+xf(y)` does not divide `x`.  Hence a polynomial member
 has `e>=1`.  The two-weight weight-rigidity theorem then forces `a=1`,
 `b=e+1`, and its complete spectral classification shows that every polynomial
-member is left--right equivalent to C24.  QED
+member is left--right equivalent to the cancellation construction.  QED
 
 The conclusion is scoped to `mathscr T_3`.  A finite product of normalized
 resolvent factors is already known to coalesce to the same factor, and an
@@ -232,13 +232,13 @@ normalizations.
 |---|---|---|
 | Characteristic zero | Makes coefficientwise integration and the spectral arguments valid | In characteristic `p`, Frobenius terms can have zero derivative and integration can fail at exponents `p-1`; the Jacobian no longer detects all perturbations |
 | `f` nonconstant | Gives a genuine inverse factor and positive inverse degree | Constant `f` is a degenerate degree-zero input; the root-selection and translated-power classification do not apply |
-| One rank-one weight `A=1+xf(y)` | Makes every source weight a Laurent power of one canonical function | Removing it returns to a multi-function Keller problem; even arbitrary source conjugates of C24 need not retain this literal coordinate form |
+| One rank-one weight `A=1+xf(y)` | Makes every source weight a Laurent power of one canonical function | Removing it returns to a multi-function Keller problem; even arbitrary source conjugates of the cancellation construction need not retain this literal coordinate form |
 | `B=A^b z+g(y,A)` affine-linear in `z` | Gives `B_z=A^b` and isolates the triangular correction | Nonlinear `z`-dependence changes the determinant factor. Allowing arbitrary `x,y` corrections also includes source-conjugate presentations outside the normalized form |
 | Monomial `P=A^aB`, `Q=y+xA^cB` | Defines the complete three-integer weight space and the identity `Q=y+sP` | Sums of weights or additional `B`-powers can create new determinant terms; these are outside the theorem and remain a possible new skeleton |
 | `a,b>=1`, `c>=0` | Keeps `P,Q,B` polynomial with nontrivial positive weights | Negative weights describe only localized rational maps; zero leading weights introduce automorphism-like degeneracies rather than the cancellation problem classified here |
 | Single inverse variable `s=xA^(c-a)` | Turns inverse reconstruction into one marked-root problem | A second independent inverse variable can support genuinely multivariate resolvents and is an open direction |
 | One-factor derivative `Theta(t f(Q-Pt))` before weight rigidity | Makes the third-weight Laurent zero argument possible | Finite products have been classified and coalesce. Arbitrary `H(T,P,Q)` is classified after `c=a-1`; arbitrary target dependence with an unforced third weight is not asserted here |
-| Polynomiality of all three coordinates | Converts localized Keller identities into polynomial maps | Without it, Theorem 2.1 leaves many localized rational Keller presentations; they are not C24 polynomial maps |
+| Polynomiality of all three coordinates | Converts localized Keller identities into polynomial maps | Without it, Theorem 2.1 leaves many localized rational Keller presentations; they are not cancellation polynomial maps |
 | Nonzero scalar monomial coefficients normalized to one | Removes inessential parameters | Restoring them merely applies translations/nonzero scalings and does not enlarge the equivalence classes |
 
 Two boundaries of the theorem are therefore especially clear.  Removing a

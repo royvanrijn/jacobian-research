@@ -1,6 +1,6 @@
 # Paper audit
 
-This audit covers only the C01--C04 paper. It does not treat later repository
+This audit covers only the foundational-through-weighted core paper. It does not treat later repository
 claims.
 
 ## Remaining proof obligations
@@ -17,7 +17,8 @@ claims.
 
 3. **Uniform boundary enumeration.** The global theorem identifies the affine
    source with the simultaneous regularity open and describes its complement
-   as the support of the negative valuations of `x,y,z`. C01--C04 do not
+   as the support of the negative valuations of `x,y,z`. The results in this
+   paper do not
    enumerate those valuations for every admissible root profile of `H`.
 
 4. **Independent audit of the normalized-incidence argument.** The use of the

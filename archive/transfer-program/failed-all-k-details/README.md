@@ -1,8 +1,8 @@
 # Archived all-k transfer programme
 
-This directory preserves the C18, C21, and C22 programme-level arguments,
-the transfer-dependent portion of C23, and superseded all-`k`
-interpretations of C17--C20.  Nothing was deleted.
+This directory preserves the Hensel-Product Affine Equalizer, Master Quotient Theorem, and Failed All-k Transfer Block programme-level arguments,
+the transfer-dependent portion of Factorization-Slice Obstruction, and superseded all-`k`
+interpretations of finite transfer computations.  Nothing was deleted.
 
 The archive was created after the proposed transverse associated graded
 
@@ -20,7 +20,7 @@ proof navigation and may contain claims explicitly superseded by the
 counterexample.  The scripts subdirectory likewise contains historical
 all-`k`, ribbon, allocation, and quotient regressions.
 
-The independent C23 affine-complement results remain active in
+The independent Factorization-Slice Obstruction affine-complement results remain active in
 [UNIVERSAL_FACTORIZATION_GEOMETRY.md](../cubic-factorization-obstruction.md).
 The exact `k=2,3,4` local transfer algebras remain active only as bounded
 examples in

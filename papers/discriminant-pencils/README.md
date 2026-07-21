@@ -1,6 +1,7 @@
 # Discriminants of the pencils `H(W)-sW+t`
 
-This directory contains the standalone C05 paper and its adversarial audit.
+This directory contains the standalone generic-discriminant paper and its
+adversarial audit.
 
 - [Paper source](main.tex)
 - [Proof audit](AUDIT.md)

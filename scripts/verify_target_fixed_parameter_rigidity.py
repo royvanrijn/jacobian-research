@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Exact regressions for target-fixed rigidity of C24 parameter branches."""
+"""Exact regressions for target-fixed rigidity of cancellation construction parameter branches."""
 from __future__ import annotations
 
 import sympy as sp

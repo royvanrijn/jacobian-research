@@ -1,4 +1,4 @@
-# Galois groups of C24 parameter polynomials through degree thirty
+# Galois groups of cancellation parameter polynomials through degree thirty
 
 This note classifies the arithmetic Galois group of `M_(m,r)` for every pair
 with parameter degree `mr<=30`.  It is an exact finite theorem, not a uniform

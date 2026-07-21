@@ -21,15 +21,15 @@ make verify-core
 make verify-foundations
 ```
 
-`verify-minimal` uses only the Python standard library for C01.  `verify-core`
-adds the exact C01--C03 implementations.  `verify-foundations` adds the
-weighted C04 construction and its clean-room checker.
+`verify-minimal` uses only the Python standard library for the foundational
+map.  `verify-core` adds the cubic marked-root and exact-image implementations.
+`verify-foundations` adds the weighted construction and its clean-room checker.
 
 The separately authored Lean certificate is optional because it downloads a
 pinned toolchain:
 
 ```bash
-make verify-lean-c01
+make verify-lean-foundational
 ```
 
 ## Cancellation programme
@@ -47,11 +47,12 @@ current-ansatz rigidity regressions.
 make verify
 ```
 
-## Standalone degreewise paper
+## Canonical degreewise paper
 
-The five-lemma audit is
+The canonical statement and proof are in the standalone paper; the five-lemma
+verification companion is
 [`DEGREEWISE_MULTIPLICITY_AUDIT.md`](DEGREEWISE_MULTIPLICITY_AUDIT.md).  Build
-the corresponding standalone paper with:
+the paper with:
 
 ```bash
 cd papers/marked-root-multiplicity

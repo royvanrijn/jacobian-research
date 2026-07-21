@@ -5,7 +5,7 @@
 The active questions are now sharply separated from completed milestones:
 
 1. classify unrestricted polynomial left--right equivalence among maps
-   attached to distinct C24 parameter roots; target-fixed right-equivalence
+   attached to distinct cancellation parameter roots; target-fixed right-equivalence
    is now completely classified and separates distinct normalized roots;
    compute the enhanced upstairs--downstairs boundary incidence as a candidate
    obstruction to the remaining target automorphisms;
@@ -27,10 +27,10 @@ finite examples, conditional all-`k` arguments, refuted filtrations, and
 scoped cubic obstruction are preserved in
 [the archive](../../archive/transfer-program/).
 
-## Settled: `C24_(m,1)` versus generic weighted seeds
+## Settled: `cancellation type (m,1)` versus generic weighted seeds
 
 Fix an algebraically closed characteristic-zero field and `m>1`.  Let
-`F_m:A^3 -> A^3` be a polynomial C24 cancellation map with `r=1`, including
+`F_m:A^3 -> A^3` be a polynomial cancellation map with `r=1`, including
 an arbitrary allowed tail `h_q(A)+A^2g(A)`.  Let `G_H` be a generic admissible
 weighted-seed map whose inverse degree is `n=m+2`.
 
@@ -57,16 +57,17 @@ agree:
 
 The numerical data alone do not separate the maps.  However, the reduced
 intersection of the two intrinsically distinguished target components is
-`A^1 disjoint-union G_m` for C24 and `A^1` for a generic weighted seed.  The
+`A^1 disjoint-union G_m` for the cancellation construction and `A^1` for a generic weighted seed.  The
 first is disconnected and the second is connected, and polynomial
 stabilization preserves that difference.  The complete proof is
 [BOUNDARY_INTERSECTION_OBSTRUCTION.md](BOUNDARY_INTERSECTION_OBSTRUCTION.md).
 
 For `m=1`, the explicit linear transformation in
 [MASTER_CANCELLATION_CONSTRUCTION.md](MASTER_CANCELLATION_CONSTRUCTION.md)
-identifies C24 with C01; there is no second boundary component to compare.
+identifies the cubic cancellation member with the foundational Keller map;
+there is no second boundary component to compare.
 
-## Settled: C24 tail deformations
+## Settled: cancellation construction tail deformations
 
 For fixed `(m,r,q)`, the construction permits every tail
 `h_q(A)+A^(r+1)g(A)`.  The inverse resolvent, monodromy, and target
@@ -99,7 +100,7 @@ fixed `e>=1`, the spectral polynomials
 
 are pairwise coprime.  Consequently every polynomial leading solution has
 `f=c(y-alpha)^m` and `g_0=q(y-alpha)f`, and Hensel uniqueness makes its full
-jet a translated/scaled C24 jet.  The arbitrary `A^(e+1)` tail is removed by
+jet a translated/scaled cancellation jet.  The arbitrary `A^(e+1)` tail is removed by
 a polynomial source automorphism.  Thus there is no nonmonomial branch, and
 no new polynomial-equivalence class, anywhere in the ansatz of that note.
 
@@ -109,7 +110,7 @@ settled in
 all `a,b>=1`, `c>=0`, arbitrary `f`, arbitrary triangular `g`, and every
 one-factor polynomial derivative are quantified.  Localized Keller forces
 `c=a-1` and the old derivative power before polynomial cancellation is even
-imposed; polynomiality then gives only C24.  Its assumption audit identifies
+imposed; polynomiality then gives only cancellation construction.  Its assumption audit identifies
 additional source functions, inverse variables, and nonmonomial `P,Q`
 combinations as the genuine ways to leave the classified skeleton.
 
@@ -118,7 +119,7 @@ The alternative minimal relaxation is also settled in
 a second normalized factor `1-tf_2(Q-Pt)` must coincide with the original
 factor or be identically one.  The proof extends to any finite product of
 normalized factors, all of whose nontrivial members coalesce.  Polynomiality
-therefore again gives only C24.
+therefore again gives only cancellation construction.
 
 The stronger
 [TARGET_DEPENDENT_RESOLVENT_CLASSIFICATION.md](TARGET_DEPENDENT_RESOLVENT_CLASSIFICATION.md)
@@ -129,7 +130,7 @@ inside the coordinate skeleton.
 
 **Remaining question.** Can a skeleton with an additional source function,
 source variable, or inverse variable escape both Jacobian rigidity and
-rising-factorial spectral coprimality? Equivalence among distinct C24
+rising-factorial spectral coprimality? Equivalence among distinct cancellation construction
 parameter branches remains a separate classification problem, but the
 [target-fixed rigidity theorem](TARGET_FIXED_PARAMETER_RIGIDITY.md) shows
 that any such equivalence must use a nonidentity target automorphism moving

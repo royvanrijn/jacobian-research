@@ -324,11 +324,11 @@ generic special fiber is `R=cA/B` and gives the single finite zero-cluster
 branch.  Repeated points of (17) can still meet the discriminant boundary;
 the theorem retains only its regular-reconstruction open.
 
-## Pole divisors and C16
+## Pole divisors and Dicritical Compactification Theorem
 
 Because \(\widetilde{\mathcal I}_H\) is normal, the failure locus of the rational
 reconstruction functions is the union of their polar prime divisors.  The
-valuation calculation of Claim C16 identifies exactly those divisors:
+the dicritical compactification valuation calculation identifies exactly those divisors:
 
 1. the discriminant divisor `D_Delta`, where `E_W=0` over `C!=0`;
 2. for every additional nonzero primitive root `rho_j!=1`, the divisor
@@ -343,8 +343,8 @@ C=\delta^{m_0-1},\qquad W=\eta\delta,
 \qquad \eta^{m_0-1}=B/h_0,                          \tag{18}
 \]
 
-and is `D_0`; additional roots have the Kummer scales recorded in C16.  Thus
-C16 is precisely the divisorial classification of the complement
+and is `D_0`; additional roots have the Kummer scales recorded in Dicritical Compactification Theorem.  Thus
+Dicritical Compactification Theorem is precisely the divisorial classification of the complement
 \(\widetilde{\mathcal I}_H\setminus\mathcal R_H\).  On the normalized
 inverse-graph compactification, these
 same valuations are the dicritical boundary divisors.
@@ -352,7 +352,7 @@ same valuations are the dicritical boundary divisors.
 The Kummer exponents in (18) are ramification indices.  Each corresponding
 prime divisor has residue degree one over `C=0`; the explicit blow-ups and
 the intervening nondicritical `A`-chains are computed in
-[C16_BLOWUP_GEOMETRY.md](../geometry-support/C16_BLOWUP_GEOMETRY.md).
+[DICRITICAL_BLOWUP_GEOMETRY.md](../geometry-support/DICRITICAL_BLOWUP_GEOMETRY.md).
 
 The exact image and omission statements remain seed-dependent.  The theorem
 organizes their inverse geometry but does not replace the boundary arguments

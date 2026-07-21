@@ -1,4 +1,4 @@
-# Closed discriminant of the C24 parameter polynomial
+# Closed discriminant of the cancellation parameter polynomial
 
 Put `n=mr`, `L=n+r+1`, and
 

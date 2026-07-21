@@ -1,6 +1,6 @@
 # Canonical boundary-incidence invariants
 
-This note extracts the C04--C24 boundary comparison from its coordinates and
+This note extracts the weighted--cancellation boundary comparison from its coordinates and
 turns the incidence geometry of the target boundary into a stable polynomial
 left--right invariant.  It also records the exact hypotheses: quasi-finiteness
 is essential for the canonical open immersion, while reduction of the target
@@ -321,9 +321,9 @@ The following weakenings or shortcuts are invalid.
    of the constant field does not force a generically finite map
    `E -> Z` to be birational.
 
-## 5. C04 versus C24
+## 5. weighted marked-root theorem versus cancellation construction
 
-Let `m>1`.  The C04--C24 application needs two family-specific inputs beyond
+Let `m>1`.  The weighted--cancellation application needs two family-specific inputs beyond
 Theorem 3.1:
 
 1. the normalization calculations exhaust all divisorial boundary images;
@@ -342,18 +342,18 @@ and all of their target images.  The uniform calculation in
 the **reduced** marked intersections
 
 \[
- I_{p,q}(C24_{m,1})\simeq\mathbb A^1\sqcup\mathbb G_m,
+ I_{p,q}(F^{\mathrm{cancel}}_{m,1})\simeq\mathbb A^1\sqcup\mathbb G_m,
  \qquad
- I_{p,q}(C04_{m+2})\simeq\mathbb A^1.                         \tag{13}
+ I_{p,q}(weighted marked-root theorem_{m+2})\simeq\mathbb A^1.                         \tag{13}
 \]
 
 The first coordinate ring has a nontrivial idempotent and the second does
-not.  Corollary 3.2 therefore proves that no `C24_(m,1)` map, including an
+not.  Corollary 3.2 therefore proves that no `cancellation type (m,1)` map, including an
 arbitrary allowed tail, is polynomially left--right equivalent, even after
-stabilization, to a generic weighted C04 map of inverse degree `m+2`.
+stabilization, to a generic weighted seed map of inverse degree `m+2`.
 
 The strengthened calculation in the boundary-obstruction note also
-identifies the full scheme-theoretic intersections.  C24 has a nilradical of
+identifies the full scheme-theoretic intersections.  The cancellation construction has a nilradical of
 index `m(m+1)`, while the weighted intersection is reduced.  The older
 idempotent obstruction uses only (13), but the nilpotent-sensitive obstruction
 is independently stable by Corollary 3.2.

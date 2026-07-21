@@ -45,7 +45,7 @@ valuation lies on
 
 The resulting boundary primes, their ramification and residue degrees, and
 their upstairs and downstairs intersections form the invariant developed in
-[BOUNDARY_GEOMETRY.md](experimental/cancellation/BOUNDARY_GEOMETRY.md).
+[BOUNDARY_GEOMETRY.md](cancellation/BOUNDARY_GEOMETRY.md).
 
 ## 2. The two principal realizations
 
@@ -79,100 +79,17 @@ Its degree is `r(m+1)+1`, and its derivative is
 
 Thus the distinguished critical divisor has intrinsic ramification index
 `r+1`.  Exact reconstruction and polynomial cancellation are proved in
-[the cancellation construction](experimental/cancellation/CONSTRUCTION.md).
+[the cancellation construction](cancellation/CONSTRUCTION.md).
 
-C01 is the minimal cubic marked-root map.  It is the degree-three point at
+The foundational Keller map is the minimal cubic marked-root map.  It is the degree-three point at
 which the weighted and cancellation descriptions coincide up to linear
 reparametrization.
 
-## 3. Degreewise divisor-count theorem
+## 3. Degreewise stable-multiplicity consequence
 
-### Theorem
+The marked-root framework explains the degreewise lower bound: for every `N>=4`, one split weighted map and one cancellation type for each proper divisor of `N-1` give at least `tau(N-1)` stable left--right classes.  Distinct cancellation types are separated by `(e_Delta,mu)`, while reducedness separates the weighted class.
 
-For every integer `N>=4`, there are at least
-
-\[
-\boxed{\tau(N-1)}
-\]
-
-pairwise stably inequivalent polynomial maps `C^3->C^3` with nonzero constant
-Jacobian, nontrivial fibers, and generic fiber degree `N`.  Here `tau` is the
-positive-divisor counting function.
-
-For the weighted map one may take the split admissible seed
-
-\[
-H_N(W)=W^2(1-W)(1+W^{N-3}).                                \tag{1}
-\]
-
-Its extra roots are the distinct roots of `1+W^{N-3}`; they are nonzero and
-different from `1`.  Moreover,
-
-\[
-H_N'(1)=-2,
-\qquad
-\frac{H_N''(1)}{2}=-(N+1)\ne-2,                            \tag{2}
-\]
-
-so (1) is admissible.  The weighted theorem gives constant nonzero Jacobian
-after taking, for example, `b_0=1` and the forced
-`a_0=-(1+kappa)/(2+kappa)`.  It has generic degree `N`; its generic etale
-fiber therefore contains `N` distinct points.
-
-Put `n=N-1`.  Every proper positive divisor `r` of `n` determines
-
-\[
-m=\frac nr-1\ge1,
-\qquad
-r(m+1)+1=N.                                                \tag{3}
-\]
-
-Conversely, every positive pair satisfying the degree equation arises this
-way.  There are therefore `tau(n)-1` such cancellation types.
-
-For each pair, the cancellation parameter polynomial is monic of degree
-`mr>=1`.  It has a root over `C`, and uniform separability makes every root
-simple, so the finite recurrence constructs a valid polynomial cancellation
-jet.  The resulting map has nonzero constant Jacobian, generic degree `N`,
-and an explicit `N`-point fiber.
-
-Because `N>=4`, none of these pairs is the exceptional cubic `(m,r)=(1,1)`.
-The uniform boundary-exhaustion theorem therefore applies to every pair.
-The complete normalization boundary has two intrinsically different target
-vertices.  The discriminant vertex is the unique one receiving a ramified
-boundary prime, of index
-
-\[
-e_\Delta=r+1,                                               \tag{4}
-\]
-
-while the `P=0` vertex receives only unramified boundary primes.  They cannot
-be exchanged by a left--right equivalence.  Their scheme-theoretic
-intersection has nilradical of exact index
-
-\[
-\mu_{m,r}=mr(m+1)=m(N-1)
-=(N-1)\left(\frac{N-1}{r}-1\right).                        \tag{5}
-\]
-
-Distinct proper divisors `r` give distinct ramification indices (4), and
-equivalently distinct values of (5).  Functoriality of the finite
-normalization preserves these labelled data under arbitrary polynomial
-left--right equivalence; stabilization tensors the intersection rings with a
-polynomial ring and preserves both ramification and nilpotency index.  Hence
-the `tau(N-1)-1` cancellation types are pairwise stably inequivalent.
-
-The weighted map contributes one further class: its corresponding canonical
-boundary intersection is reduced, whereas every cancellation intersection
-above is nonreduced.  This gives
-
-\[
-(\tau(N-1)-1)+1=\tau(N-1)
-\]
-
-classes.  The former degreewise doubling theorem is the weakest case of this
-divisor-count result.  The boundary proof is also recorded in
-[BOUNDARY_GEOMETRY.md](experimental/cancellation/BOUNDARY_GEOMETRY.md).
+The canonical statement and proof are the standalone paper [Marked-Root Keller Maps and Degreewise Stable Multiplicity](papers/marked-root-multiplicity/main.tex).  The [five-lemma audit](DEGREEWISE_MULTIPLICITY_AUDIT.md) is its verification companion.  This document is canonical for the marked-root framework, not for the degreewise theorem.
 
 ## 4. The degree-three `A_2` picture
 

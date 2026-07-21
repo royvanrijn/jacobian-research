@@ -2,10 +2,10 @@
 
 > **Archived scoped result.**  The cubic classification and `(2,3)`
 > obstruction are preserved for reference, but the former programme label is
-> no longer part of the active claim ledger.  See [README.md](README.md).
+> no longer part of the active status ledger.  See [README.md](README.md).
 
-This note isolates the part of C23 that does not use the all-`k` transfer
-claim C22.  Its subject is the following affine-geometry problem:
+This note isolates the factorization-slice obstruction that does not use the
+failed all-`k` transfer block.  Its subject is the following affine-geometry problem:
 
 > For which factor degrees `(a,b)` and hyperplane contacts is the marked
 > factorization complement `X_(a,b)(ell)` isomorphic to affine space?
@@ -18,7 +18,7 @@ There are four logically separate layers.
 4. Sections 6--7 record related transfer and weighted constructions, but no
    assertion in those sections is used in Sections 1--5.
 
-Thus a failure of C22 does not affect the cubic theorem, the `(2,3)` point
+Thus a failure of Failed All-k Transfer Block does not affect the cubic theorem, the `(2,3)` point
 count, or its affine-space obstruction.  The ground field is algebraically
 closed of characteristic zero for the geometric classification, unless a
 finite-field model is explicitly being counted.
@@ -202,7 +202,7 @@ Therefore
 
 The same fiber decomposition gives the corresponding Grothendieck classes
 `L^3-L`, `L^3`, and `L^3-L^2`.  The middle slice is the tangent nonosculating
-slice of C02, and the two-chart reconstruction proves that it is `A^3`.
+slice of Cubic Marked-Root Model, and the two-chart reconstruction proves that it is `A^3`.
 The other two classes, or just their point counts at every good reduction,
 exclude an isomorphism with `A^3`.  Hence:
 
@@ -212,9 +212,9 @@ exclude an isomorphism with `A^3`.  Hence:
 > unique hyperplane for which the unramified cubic factorization complement
 > is isomorphic to affine three-space.
 
-The positive assertion uses only the explicit two-chart theorem of C02.  The
+The positive assertion uses only the explicit two-chart theorem of Cubic Marked-Root Model.  The
 two negative assertions use the displayed motivic classes (equivalently,
-their good-reduction point counts).  Neither direction uses C22 or any
+their good-reduction point counts).  Neither direction uses Failed All-k Transfer Block or any
 transfer theorem.
 
 ## 5. Exact negative example: the `(2,3)` middle slice
@@ -305,8 +305,8 @@ reconstruction scale.  Thus the weighted family is a three-dimensional
 parametrized pullback slice of the universal factorization geometry, not an
 embedded three-plane in the full coefficient space.
 
-This interpretation depends on the weighted marked-root theorem C04.  It is
-context for the broader programme, not an input to the independent C23
+This interpretation depends on the weighted marked-root theorem weighted marked-root theorem.  It is
+context for the broader programme, not an input to the independent Factorization-Slice Obstruction
 classification and obstruction results.
 
 ## 7. Resulting programme

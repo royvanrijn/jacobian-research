@@ -1,9 +1,9 @@
 # The master quotient theorem
 
-> **Conditional status.**  Sections 5 and 7 use C22's asserted all-`k`
+> **Conditional status.**  Sections 5 and 7 use Failed All-k Transfer Block's asserted all-`k`
 > Boolean factorization relation.  The conductor-ribbon norm underlying that
 > assertion is refuted in
-> [C22_CONDUCTOR_RIBBON_AUDIT.md](C22_CONDUCTOR_RIBBON_AUDIT.md).  The
+> [ALL_K_CONDUCTOR_RIBBON_AUDIT.md](ALL_K_CONDUCTOR_RIBBON_AUDIT.md).  The
 > independent Wronskian and finiteness arguments below remain valid, but the
 > completed-collision surjectivity and hence the full closed-immersion theorem
 > require a replacement local proof.
@@ -207,14 +207,14 @@ For two allocations `A,A'`, write
  j_\rho-j'_\rho=-2k_\rho.                                       \tag{13}
 \]
 
-Formal Hensel factorization and C22 identify their strong completed overlap
+Formal Hensel factorization and Failed All-k Transfer Block identify their strong completed overlap
 with a smooth common factor times
 
 \[
  \widehat\bigotimes_{\rho:k_\rho\ne0} Z_{|k_\rho|}.              \tag{14}
 \]
 
-The Boolean model of C22 is the full scheme-theoretic factorization relation,
+The Boolean model of Failed All-k Transfer Block is the full scheme-theoretic factorization relation,
 not its reduction: it retains the square-zero cusp directions at every
 ordered root. Taking the products (14), together with their higher collision
 compatibilities, reconstructs the completed union. Concretely, order the
@@ -255,7 +255,7 @@ The finite map `q` is a closed immersion.
 
 This argument is precisely where the local all-`k` theorem is used. A reduced
 normalization relation would miss conductor nilpotents; the Boolean
-factorization relation in C22 supplies them, and the Wronskian removes the
+factorization relation in Failed All-k Transfer Block supplies them, and the Wronskian removes the
 only global coupling.
 
 ## 6. The exceptional slice
@@ -276,7 +276,7 @@ isomorphism to the exact-degree normalized-seed chart: for
 \]
 
 If `H` is normalized and admissible, an omitted pencil value `(s,t)` is,
-by C07, exactly a polynomial `P=H-sW+t` with no simple root. Its monic
+by Omitted-Value Theorem, exactly a polynomial `P=H-sW+t` with no simple root. Its monic
 rescaling `M=P/h_n` lies in (4): affine terms cancel from `Phi`,
 `D(M)=-1/h_n`, and direct substitution gives `rho(M)=H`. Conversely,
 `M in X_n` differs from a nonzero scalar multiple of `rho(M)` by an affine
@@ -301,7 +301,7 @@ the scheme-theoretic assertion in part 2.
 
 No arbitrary-collision affine-rigidity obligation remains. The independent
 audit boundary is the formal factorization descent: Hensel splitting must be
-used together with the full Boolean relation of C22, rather than with reduced
+used together with the full Boolean relation of Failed All-k Transfer Block, rather than with reduced
 normalization branches alone.
 
 ## External inputs
@@ -309,7 +309,7 @@ normalization branches alone.
 The quantified proof uses the standard finite-quotient normalization of
 coincident-root loci, the projective base-locus criterion for a homogeneous
 map to be finite, formal Hensel factorization, faithful flatness of completion,
-and C22's Boolean factorization relation. No bounded-degree computation proves
+and Failed All-k Transfer Block's Boolean factorization relation. No bounded-degree computation proves
 any all-degree assertion here.
 
 For the scheme-theoretic bridge criteria, see the Stacks Project sections on

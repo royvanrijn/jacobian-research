@@ -1,6 +1,6 @@
-# Independent audit of C04--C24 boundary exhaustion
+# Independent audit of weighted--cancellation boundary exhaustion
 
-This note independently audits the statement that the displayed C04 and C24
+This note independently audits the statement that the displayed weighted marked-root theorem and cancellation construction
 branches are **all** irreducible components of the boundary in the canonical
 finite normalization.  It starts from the defining inverse equations and
 reconstruction formulas; it does not use the component lists asserted in the
@@ -62,7 +62,7 @@ would add a positive summand to (1).  QED
 These lemmas refer to the canonical normalization and its DVRs, not to a
 chosen compactification.
 
-## 2. C04 from the normalized marked-root incidence
+## 2. weighted marked-root theorem from the normalized marked-root incidence
 
 Let
 
@@ -90,7 +90,7 @@ together with the displayed formula for `z`, invert the source marking.
 Thus its function field is `k(A^3)`, and Lemma 1.1 identifies its
 normalization with the canonical finite normalization.
 
-The independent C04 audit already derives (2)--(3), the constant Jacobian,
+The independent weighted marked-root theorem audit already derives (2)--(3), the constant Jacobian,
 and the equality of the affine source with the simultaneous regularity locus
 without importing the weighted-model implementation.  We now inspect every
 possible polar prime.
@@ -161,7 +161,7 @@ that no other canonical boundary prime exists.  Notice that the conclusion
 comes from the normalization and degree saturation; it is not inferred from
 a denominator list.
 
-## 3. C24 from two monic inverse charts
+## 3. Cancellation construction from two monic inverse charts
 
 Put
 
@@ -280,7 +280,7 @@ primes `(1,1)`.  The total is
 \]
 
 Lemma 1.2 excludes every further prime over `P=0`; (13) excludes every other
-target image.  This proves the complete C24 boundary list in the canonical
+target image.  This proves the complete cancellation construction boundary list in the canonical
 normalization.
 
 ## 4. Arithmetic descent and marking safety
@@ -291,10 +291,10 @@ the factor degrees are their residue degrees in these charts.  Applying
 Lemma 1.2 over the original field gives the same saturated total, so no new
 arithmetic prime can appear during descent.
 
-For every noncubic C04 or C24 member, the canonical target diagram therefore
+For every noncubic weighted marked-root theorem or cancellation member, the canonical target diagram therefore
 has exactly two vertices.  One is uniquely marked by receiving a ramified
 boundary prime; the other receives only unramified boundary primes.  The
-marking used in the C04--C24 obstruction is consequently safe against an
+marking used in the weighted--cancellation obstruction is consequently safe against an
 unseen component or a larger automorphism group of a partial diagram.
 
 ## 5. Independent executable
@@ -313,7 +313,7 @@ It also invokes no assertion from the existing boundary certificate.  The
 all-parameter conclusions come from the coefficient-independent arguments
 above; the grid is a regression against transcription errors.
 
-For the C04 polynomiality, incidence, reconstruction, and constant-Jacobian
+For the weighted marked-root theorem polynomiality, incidence, reconstruction, and constant-Jacobian
 identities, the already independent standard-library checker
-`scripts/audit_c04_independent.py` supplies the complementary clean-room
+`scripts/audit_weighted_independent.py` supplies the complementary clean-room
 regression.

@@ -1,4 +1,4 @@
-# C08--C11 rebuilt from coincident-root geometry
+# Contact-Strata Theorem--Component-Normalization Theorem rebuilt from coincident-root geometry
 
 This note gives one proof chain for the contact strata, their closures,
 components, normalizations, and set-theoretic intersections.  Fix an
@@ -231,7 +231,7 @@ exact-root open is dense in the retained model.  A point over a limiting seed
 still gives a genuine
 factorization (2), now with some roots collided.  Its exact multiplicities
 are sums of blocks of parts of `lambda`.  The monic omitted polynomial is
-unique by C07, so if the seed has exact type `mu`, this limiting polynomial
+unique by Omitted-Value Theorem, so if the seed has exact type `mu`, this limiting polynomial
 must be that type-`mu` polynomial.  Therefore `lambda preceq mu`.
 
 Thus the order is exact:
@@ -373,14 +373,14 @@ normalization.  Therefore
         \text{ is the normalization morphism}.}                   \tag{21}
 \]
 
-This proves C11 rather than merely proposing a smooth cover.
+This proves Component-Normalization Theorem rather than merely proposing a smooth cover.
 
 ## 8. Intersections are common coarsenings
 
 Let `lambda,mu` be arbitrary full-contact partitions.  If a seed belongs to
 both `closure(E_lambda)` and `closure(E_mu)`, finiteness of the two retained
 root models supplies limiting factorizations of both types.  They cannot
-represent distinct omitted pencil values by C07.  Their monic omitted
+represent distinct omitted pencil values by Omitted-Value Theorem.  Their monic omitted
 polynomials are therefore equal.  Its exact multiplicity partition `nu` is
 obtained by colliding parts of both `lambda` and `mu`.
 
@@ -397,7 +397,7 @@ components.  Hence, as sets inside the admissible seed space,
 For maximal `2/3` types these closures are the components `C_lambda` and
 `C_mu`, giving the proposed component-intersection formula.  Equation (22)
 is deliberately set-theoretic.  The scheme intersection can be nonreduced
-and can have nontrivial conductor multiplicity; C12 and the archived
+and can have nontrivial conductor multiplicity; Degree-Twelve Local Singularity and the archived
 transfer-block examples study those
 stronger local structures.
 

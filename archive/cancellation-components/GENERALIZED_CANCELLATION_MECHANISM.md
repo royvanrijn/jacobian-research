@@ -1,6 +1,6 @@
-# A generalized C24 cancellation mechanism
+# A generalized cancellation mechanism
 
-This note generalizes only the algebraic cancellation mechanism of C24.  It
+This note generalizes only the algebraic cancellation mechanism of the cancellation construction.  It
 does not claim a new polynomial-equivalence class.  The uniform statements
 below are proofs; the finite searches at the end are regressions and evidence.
 
@@ -31,7 +31,7 @@ In `k[x,y,z,A^{-1}]`, put
 \]
 
 For `a=1`, `b=r+1`, `f(y)=y^m`, and
-`g(y,A)=y^{m+1}h(A)`, these are exactly the C24 formulas.
+`g(y,A)=y^{m+1}h(A)`, these are exactly the cancellation formulas.
 
 ## 1. The two-weight localized theorem
 
@@ -256,7 +256,7 @@ Put `g_0(y)=g(y,0)`.  The constant term of (7) is the equation
 \]
 
 in `k(y)`.  This is the general replacement for the scalar truncated-binomial
-parameter equation of C24.
+parameter equation of the cancellation construction.
 
 Suppose `g_0` solves (10), and let
 
@@ -273,14 +273,14 @@ nilpotent ring `mathscr R[A]/(A^(e+1))` gives a unique jet
 \]
 
 which kills (7).  At step `d`, the new coefficient occurs linearly with
-multiplier `delta_(f,e)(g_0)`, exactly as in the C24 recurrence.  If every
+multiplier `delta_(f,e)(g_0)`, exactly as in the cancellation recurrence.  If every
 `g_d` lies in `k[y]`, (11) defines a polynomial map.  Adding
 `A^(e+1)h(y,A)` does not change cancellation.
 
 The unit and polynomial-descent hypotheses are real restrictions.  A root
 of (10) in `k(y)` need not produce a polynomial cancellation map.
 
-### Recovery of C24
+### Recovery of the cancellation construction
 
 Take `f(y)=y^m` and `g(y,A)=y^(m+1)h(A)`.  Then
 
@@ -296,7 +296,7 @@ one-dimensional invariant subspace of the generalized operator.
 The same reduction works after translating and scaling `y`:
 `f(y)=c(y-alpha)^m` and
 `g=(y-alpha)f(y)h(A)`.  These members are polynomially conjugate to the
-corresponding C24 maps and are not new equivalence classes.
+corresponding cancellation maps and are not new equivalence classes.
 
 ## 4. Classification of polynomial leading solutions
 
@@ -383,7 +383,7 @@ For `n>=1`, set `I_n=J_(n,1)`.  Thus
  I_n(q)=\int_0^1u\{1-q(1-u)\}^n du.                     \tag{16}
 \]
 
-Up to a nonzero rational scalar, `I_n` is the C24 parameter polynomial
+Up to a nonzero rational scalar, `I_n` is the cancellation parameter polynomial
 `M_(n,1)`.
 
 ### Theorem 5
@@ -497,7 +497,7 @@ so Theorem 6 contains the former `e=1` argument.
 
 Every polynomial map produced by (1)--(2), for `e>=1`, is polynomially
 left--right equivalent, by translations and nonzero scalings together with
-the source change below, to a C24 map.
+the source change below, to a cancellation map.
 
 ### Proof
 
@@ -510,7 +510,7 @@ monomial.  Unique factorization then gives
  g_0=q(y-\alpha)f(y),                                  \tag{24}
 \]
 
-where `q` is a root of `J_(de,e)`.  This spectral polynomial is the C24
+where `q` is a root of `J_(de,e)`.  This spectral polynomial is the cancellation construction
 parameter polynomial up to a nonzero scalar and is squarefree by the
 argument in Section 3 of the master construction.
 
@@ -522,7 +522,7 @@ Put `w=y-alpha`.  Varying `q` varies `g_0` by `wf`, so the linearization in
 \]
 
 It is therefore a unit of `k[w,w^(-1)]`.  The localized Hensel jet is unique,
-and the translated/scaled C24 jet `wf h_q(A)` supplies it.  Hence every
+and the translated/scaled cancellation jet `wf h_q(A)` supplies it.  Hence every
 polynomial solution has the form
 
 \[
@@ -532,7 +532,7 @@ polynomial solution has the form
 Finally, the last term is removed by the polynomial source automorphism
 `z -> z+k(y,A)`, since `A` is independent of `z` and `B_z=A^(e+1)`.
 The translation and nonzero scalings reduce `c` and `alpha` to the standard
-C24 coordinates.  QED
+cancellation coordinates.  QED
 
 Thus the generalized one-variable input and the two weights do not produce
 a new polynomial-equivalence class inside this coordinate skeleton.  The
@@ -613,12 +613,12 @@ Proved uniformly:
   tests (29)--(30);
 - for every `e>=1`, the `J_(N,e)` are pairwise coprime; and
 - every polynomial member of (1)--(2) is polynomially left--right equivalent
-  to C24, with its `A^(e+1)` tail removed already on the source.
+  to the cancellation construction, with its `A^(e+1)` tail removed already on the source.
 
 Not proved:
 
 - a classification outside the coordinate skeleton (1)--(2); or
-- equivalence or inequivalence among distinct nonconjugate C24 parameter
+- equivalence or inequivalence among distinct nonconjugate cancellation parameter
   branches having the same intrinsic numerical signature.
 
 The spectral route to a new family is therefore closed for all `e>=1`, not
@@ -634,7 +634,7 @@ Run
 ```
 
 The script checks the two-weight Jacobian on representative symbolic
-polynomials, the weight obstruction, reduction to the C24 operator, the
+polynomials, the weight obstruction, reduction to the cancellation operator, the
 spectral formulas, the reciprocal rising-factorial form behind Theorem 6,
 bounded pairwise gcds, and the first-jet formula.  The all-degree proof is the
 Enestrom--Kakeya argument, not the bounded search.

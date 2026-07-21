@@ -84,7 +84,7 @@ show that all `nu` inverse branches reconstruct there.  A denominator list
 alone is insufficient: apparent poles may be removable chart poles or finite
 source divisors.
 
-## 3. Generic weighted C04 seeds
+## 3. Generic weighted marked-root theorem seeds
 
 Let the inverse degree be `n`, and let
 
@@ -120,9 +120,9 @@ Lemma 1.1 proves that both lists are exhaustive.  In particular, the complete
 boundary profiles are one `(e,f)=(2,1)` prime over `Delta_H` and `n-3`
 geometric `(1,1)` primes over `C=0`.
 
-## 4. C24
+## 4. Cancellation construction
 
-For `C24_(m,r)`, put `N=r(m+1)+1`.  The affine and projective resolvent charts
+For `cancellation type (m,r)`, put `N=r(m+1)+1`.  The affine and projective resolvent charts
 and the reconstruction formulas confine divisorial boundary images to the
 discriminant `Delta_(m,r)` and `P=0`: off these divisors, every inverse root
 is noncritical, hence has `D!=0`, and the reconstruction formulas recover all
@@ -151,7 +151,7 @@ complete profiles are one `(r+1,1)` boundary prime over the discriminant and
 `mr-1` geometric `(1,1)` primes over `P=0`.
 
 For `r=1,m>1`, equations (3)--(6) also prove the uniqueness needed by the
-C04--C24 boundary-intersection theorem: the discriminant divisor is the
+weighted--cancellation boundary-intersection theorem: the discriminant divisor is the
 unique candidate with a ramified boundary prime of index two, and the second
 divisor is the unique candidate with positive unramified boundary
 contribution `m-1`.
@@ -160,7 +160,7 @@ The arithmetic version groups geometric primes and retains their actual
 residue degrees.  Equality (1), not a root-orbit heuristic, remains the
 exhaustion certificate.
 
-## 5. Canonical boundary-exhaustion theorem for C04 and C24
+## 5. Canonical boundary-exhaustion theorem for weighted marked-root theorem and cancellation construction
 
 The preceding calculations can now be stated at the level required by the
 canonical boundary invariant, rather than at the level of a chosen
@@ -171,7 +171,7 @@ resolvent.
 Work geometrically over an algebraic closure of the characteristic-zero
 coefficient field.
 
-1. For a generic split weighted C04 seed of inverse degree `n>=3`, with
+1. For a generic split weighted marked-root theorem seed of inverse degree `n>=3`, with
    
    \[
     H(W)=hW^2(W-1)\prod_{j=1}^{n-3}(W-\rho_j),
@@ -195,7 +195,7 @@ coefficient field.
    `(e,f)=(1,1)`.  When `n=3`, the second list is empty and `V(C)` is not a
    boundary-image divisor.
 
-2. For `C24_(m,r)`, with `N=r(m+1)+1`, the irreducible components of
+2. For `cancellation type (m,r)`, with `N=r(m+1)+1`, the irreducible components of
    `bar(X)_F minus A^3` are exactly
    
    \[
@@ -228,7 +228,7 @@ every component maps onto a target divisor.  It is therefore enough to prove
 support containment and then exhaust every prime over the candidate target
 divisors.
 
-For C04, normalize the finite marked-root incidence.  Its function field is
+For weighted marked-root theorem, normalize the finite marked-root incidence.  Its function field is
 `k(A^3)`, so uniqueness of normalization identifies it with `bar(X)_F`; its
 regular-reconstruction open is exactly the distinguished source `A^3`.  On
 `D(C Delta_H)`, the incidence is finite etale, every marked root is simple,
@@ -245,7 +245,7 @@ zero/root charts over the generic point of `C=0` construct precisely the
 primes listed in part 1.  Their contributions are (3)--(4), each totaling
 `n`; Lemma 1.1 rules out every further prime over either target divisor.
 
-For C24, on `D(P Delta_(m,r))` the degree-`N` resolvent is monic after
+For cancellation construction, on `D(P Delta_(m,r))` the degree-`N` resolvent is monic after
 inverting `P`, is etale, and satisfies `D(T)!=0` at every root.  Formula (20)
 of the master construction reconstructs every root regularly and uniquely,
 so
@@ -274,7 +274,7 @@ the only target vertices of the canonical boundary diagram.  The discriminant
 vertex is intrinsically the unique one receiving a ramified boundary prime;
 the other is the unique vertex receiving only unramified boundary primes.
 Consequently no unlisted boundary divisor can duplicate a profile, change the
-incidence diagram, or enlarge the automorphism group used in the C04--C24
+incidence diagram, or enlarge the automorphism group used in the weighted--cancellation
 comparison.
 
 This conclusion concerns the complete canonical normalization.  The root
@@ -305,5 +305,5 @@ the valuation and normalization argument in the audit, not extrapolation from
 the bounded regression grid.
 
 This closes the previously identified independent boundary-exhaustion risk.
-It does not independently reprove every other part of C24, such as polynomial
+It does not independently reprove every other part of the cancellation construction, such as polynomial
 cancellation, monodromy, parameter arithmetic, or unrestricted equivalence.

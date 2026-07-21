@@ -117,7 +117,7 @@ There are two useful failure modes.
   acquires a discriminant factor at `s=1`, although the normalized extension
   is unramified there.  A naïve resolvent discriminant records failure of the
   chosen generator, not just field ramification.
-- In C24, `s=x/A` has a pole on the affine source divisor `A=0`.  In the
+- In cancellation construction, `s=x/A` has a pole on the affine source divisor `A=0`.  In the
   projective resolvent chart `U=Ps`, exactly one nonzero infinity root is that
   finite divisor.  Counting all poles of `s` as dicritical would therefore
   overcount the boundary by one.  The two-chart normalization is essential.
@@ -189,9 +189,9 @@ intersections are canonical subobjects.  The general statement and its
 cylinder proof are recorded in
 [CANONICAL_BOUNDARY_INTERSECTION_INVARIANT.md](CANONICAL_BOUNDARY_INTERSECTION_INVARIANT.md).
 
-## 3. C01 and a generic weighted seed
+## 3. Foundational Keller map and a generic weighted seed
 
-For C01 the projective cubic resolvent is
+For the foundational Keller map the projective cubic resolvent is
 
 \[
  cU^3-2U^2V+bUV^2-2aV^3.                                \tag{7}
@@ -229,9 +229,9 @@ generic, not the canonical, weighted family.  For
 `H=W^(n-1)(1-W)` the `C=0` row is instead one zero-cluster prime with
 `(e,f)=(n-2,1)` and loss `n-2`.
 
-C01 is the `n=3` minimal case of the generic table.
+The foundational Keller map is the `n=3` minimal case of the generic table.
 
-## 4. C24 for arbitrary `(m,r)`
+## 4. Cancellation construction for arbitrary `(m,r)`
 
 Put
 
@@ -301,7 +301,7 @@ cycle is odd and the group is `S_N`; if `r+1` is odd, all finite branch cycles
 and the `N`-cycle at infinity are even and the group is `A_N`.  Therefore
 
 \[
- \operatorname{Mon}(C24_{m,r})=
+ \operatorname{Mon}(F^{\mathrm{cancel}}_{m,r})=
  \begin{cases}
  S_N,&r\text{ odd},\\
  A_N,&r\text{ even}.
@@ -370,7 +370,7 @@ roots.  The support and `sum ef=N` argument is isolated in
 also supplies the corresponding generic weighted-seed exhaustion proof.
 The full scheme-theoretic intersection of `Delta_(m,r)` with `P=0` is
 computed in
-[C24_SCHEME_BOUNDARY_ALL_PARAMETERS.md](C24_SCHEME_BOUNDARY_ALL_PARAMETERS.md);
+[SCHEME_BOUNDARY_ALL_PARAMETERS.md](SCHEME_BOUNDARY_ALL_PARAMETERS.md);
 its nilradical has exact index `mr(m+1)`.  This is a canonical boundary
 intersection for the noncubic pairs; at `(1,1)`, `P=0` has no boundary prime
 and the same formula is only a coordinate trace.
@@ -404,11 +404,11 @@ exact regressions for the four rows, not proofs of the all-`m,r` arguments.
 
 ### Theorem 6.1
 
-For `r>=2`, `C24_(m,r)` is not polynomially left--right equivalent, nor
+For `r>=2`, `cancellation type (m,r)` is not polynomially left--right equivalent, nor
 stably polynomially left--right equivalent, to a generic weighted-seed map.
 
 **Proof.**  Degrees first force the weighted inverse degree to be
-`n=N`.  The C24 discriminant boundary prime has ramification index `r+1>=3`
+`n=N`.  The cancellation construction discriminant boundary prime has ramification index `r+1>=3`
 and generic sheet loss `r+1`; the generic weighted discriminant prime has
 index two and loss two.  Theorems 2.1--2.4 preserve this boundary valuation
 data.  Independently, when `r` is even, (15) gives `A_N` rather than the
@@ -432,7 +432,7 @@ with a generic degree-`N` weighted seed:
 
 Thus the numerical part of the resolvent--ramification signature gives no
 obstruction.  The reduced intersection of the two distinguished target
-components does.  On `P=0`, the C24 critical equation gives `T=Q^(-m)` and
+components does.  On `P=0`, the cancellation construction critical equation gives `T=Q^(-m)` and
 its critical value gives
 
 \[
@@ -440,7 +440,7 @@ its critical value gives
 \]
 
 The full saturated discriminant also has the closure component `Q=0`, so the
-reduced C24 intersection is `A^1 disjoint-union G_m`.  For a generic weighted
+reduced cancellation construction intersection is `A^1 disjoint-union G_m`.  For a generic weighted
 primitive
 `H(W)=W^2J(W)`, the saturated discriminant trace on `C=0` is, up to a nonzero
 scalar,
@@ -457,23 +457,23 @@ connected.  The
 complete uniform argument, including stabilization, is in
 [BOUNDARY_INTERSECTION_OBSTRUCTION.md](BOUNDARY_INTERSECTION_OBSTRUCTION.md).
 
-Therefore `C24_(m,1)` is not polynomially left--right equivalent, even
+Therefore `cancellation type (m,1)` is not polynomially left--right equivalent, even
 stably, to a generic degree-`m+2` weighted seed for every `m>1`.  The case
-`m=1` remains the explicit C01 identification already recorded in the master
+`m=1` remains the explicit foundational Keller map identification already recorded in the master
 construction.
 
 ## 7. Concise comparison
 
-Here “generic C04” means (8), and `n=N` when it is compared with C24.
+Here “generic weighted seed” means (8), and `n=N` when it is compared with cancellation construction.
 
 | family | degree | monodromy | critical partition | discriminant boundary | second boundary component |
 |---|---:|---|---|---|---|
-| C01 | 3 | `S_3` | `1^2` | one prime, `e=2`, loss 2 | none |
-| generic C04, degree `n` | `n` | `S_n` | `1^(n-1)` | one prime, `e=2`, loss 2 | `n-3` geometric `e=1` primes; loss `n-3` |
-| C24 `(m,r)` | `r(m+1)+1` | `S_N` if `r` odd; `A_N` if `r` even | `r^(m+1)` | one prime, `e=r+1`, loss `r+1` | `mr-1` geometric `e=1` primes; loss `mr-1` |
+| Foundational Keller map | 3 | `S_3` | `1^2` | one prime, `e=2`, loss 2 | none |
+| generic weighted seed, degree `n` | `n` | `S_n` | `1^(n-1)` | one prime, `e=2`, loss 2 | `n-3` geometric `e=1` primes; loss `n-3` |
+| cancellation construction `(m,r)` | `r(m+1)+1` | `S_N` if `r` odd; `A_N` if `r` even | `r^(m+1)` | one prime, `e=r+1`, loss `r+1` | `mr-1` geometric `e=1` primes; loss `mr-1` |
 
 The table proves inequivalence for `r>=2`.  For `r=1` the displayed numerical
-entries match generic C04, while the boundary-intersection theorem proves
+entries match generic weighted seed, while the boundary-intersection theorem proves
 inequivalence for `m>1`.
 
 ## External inputs and hypotheses

@@ -6,7 +6,7 @@
 > proved by this note.  The affine-difference argument remains valid under
 > its stated characteristic-zero hypothesis, and the bounded Groebner
 > computations remain evidence.  See
-> [C22_CONDUCTOR_RIBBON_AUDIT.md](C22_CONDUCTOR_RIBBON_AUDIT.md).
+> [ALL_K_CONDUCTOR_RIBBON_AUDIT.md](ALL_K_CONDUCTOR_RIBBON_AUDIT.md).
 > The replacement direct presentation and current bounded basis results are
 > in [DIRECT_TRANSFER_BASIS.md](DIRECT_TRANSFER_BASIS.md).
 
@@ -64,7 +64,7 @@ statement, not an assertion that the collided algebra is a tensor product of
 dual numbers.
 
 The formerly claimed independent proof is given in
-[C22_DEFORMATION_AUDIT.md](C22_DEFORMATION_AUDIT.md). It constructs the same
+[ALL_K_DEFORMATION_AUDIT.md](ALL_K_DEFORMATION_AUDIT.md). It constructs the same
 block as the divided-power symmetric product of the conductor ribbon of the
 cusp normalization, proves collision flatness by confluent divided
 differences, and compares it with the factorization fiber by a
@@ -134,14 +134,14 @@ On ordered roots set
 \[
 \begin{aligned}
  V&=\prod_{i=1}^k\bigl((Z-r_i)^2+\epsilon_i\bigr),\\
- U&=\prod_{i=1}^k\bigl((Z-r_i)^3+	frac32\epsilon_i(Z-r_i)\bigr).
+ U&=\prod_{i=1}^k\bigl((Z-r_i)^3+\tfrac32\epsilon_i(Z-r_i)\bigr).
 \end{aligned}                                                    \tag{10}
 \]
 
 For `q_i=Z-r_i`,
 
 \[
- (q_i^3+	frac32\epsilon_iq_i)^2
+ (q_i^3+\tfrac32\epsilon_iq_i)^2
  =(q_i^2+\epsilon_i)^3
 \]
 
@@ -288,7 +288,7 @@ Run
 
 ```bash
 python scripts/verify_all_k_transfer_block.py
-python scripts/verify_c22_deformation_audit.py
+python scripts/verify_all_k_deformation_audit.py
 ```
 
 The script checks the Wronskian identities, the universal one-root cusp jet,

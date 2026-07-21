@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Clean-room exact regressions for C04/C24 boundary exhaustion.
+"""Clean-room exact regressions for weighted/cancellation boundary exhaustion.
 
 Uses only the Python standard library and imports no project module.
 """

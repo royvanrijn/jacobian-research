@@ -365,9 +365,9 @@ Derive directly from (3) either:
    normal forms number `binom(k,d)` and whose overlap ambiguities close
    without dividing by a discriminant.
 
-Until one of these is supplied, C22 remains computational evidence and no
-dependent C18 or C21 claim is restored.  C23's affine-complement theorems are
-independent; only its explicitly suspended transfer connection touches C22.
+Until one of these is supplied, Failed All-k Transfer Block remains computational evidence and no
+dependent Hensel-Product Affine Equalizer or Master Quotient Theorem claim is restored.  Factorization-Slice Obstruction's affine-complement theorems are
+independent; only its explicitly suspended transfer connection touches Failed All-k Transfer Block.
 
 ## 7. Verification
 

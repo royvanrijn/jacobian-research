@@ -15,7 +15,7 @@ materials that have not yet been located.
   pinned here at commit
   [`0d4a9212d874226ad81ce5a926becddfa94e6a88`](https://github.com/deancureton/jacobian/commit/0d4a9212d874226ad81ce5a926becddfa94e6a88):
   external Lean 4 formalization of the determinant, collisions, unit-Jacobian
-  counterexample, and complex specialization. See [LEAN_C01](../../verified/LEAN_C01.md) for
+  counterexample, and complex specialization. See [Lean foundational-map audit](../../verified/LEAN_FOUNDATIONAL_MAP.md) for
   theorem scope, reproduction, attribution, and the no-license source boundary.
 - [Macaulay2 `CoincidentRootLoci` package](https://macaulay2.com/doc/Macaulay2/share/doc/Macaulay2/CoincidentRootLoci/html/toc.html):
   classical coincident-root ideals, parameterizations, tangent spaces, and
@@ -36,12 +36,12 @@ materials that have not yet been located.
   morphisms*](https://stacks.math.columbia.edu/tag/06ND), together with its
   sections on [universally injective morphisms](https://stacks.math.columbia.edu/tag/01S2)
   and [universal homeomorphisms](https://stacks.math.columbia.edu/tag/04DC):
-  scheme-theoretic bridge criteria used in the master quotient theorem C21.
+  scheme-theoretic bridge criteria used in the master quotient theorem Master Quotient Theorem.
 - [Stacks Project, proper-image and curve inputs](https://stacks.math.columbia.edu/tag/01W6),
   together with [proper plus locally quasi-finite implies finite](https://stacks.math.columbia.edu/tag/0F2P)
   and [the genus of a curve](https://stacks.math.columbia.edu/tag/0BY6): the
   external closure, finiteness, and arithmetic-genus inputs isolated in the
-  complete C05 proof.
+  complete Generic Discriminant Theorem proof.
 - [SGA 1, *Etale covers and the fundamental
   group*](https://firmaprim.github.io/sga/sga-1/), Expose XII, Theorem 5.1 and
   Corollary 5.2: Riemann-existence comparison used after descent to `C` to
@@ -72,7 +72,7 @@ materials that have not yet been located.
   The status was posted 20 July 2026 at 12:02:19 UTC and located for this
   audit 20 July 2026 at 22:43 UTC (21 July 00:43 CEST). Its affine
   cubic/reconstruction and fiber consequences overlap repository claims
-  C02--C03; the projective marked-root organization is used here with
+  cubic marked-root and image results; the projective marked-root organization is used here with
   attribution and without a priority claim.
 - [Encyclopedia of Mathematics: Jacobian conjecture](https://encyclopediaofmath.org/wiki/Jacobian_conjecture):
   established formulation, reductions, and references predating the

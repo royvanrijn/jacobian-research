@@ -1,6 +1,6 @@
 # Effective finite-field Chebotarev for weighted seeds
 
-This note makes C13 effective seed by seed.  It gives an explicit bad-prime
+This note makes Finite-Field Chebotarev Theorem effective seed by seed.  It gives an explicit bad-prime
 integer (or ideal over a number field), proves preservation of `S_n`
 monodromy at every remaining prime, separates the complete boundary
 contribution, and records an explicit—deliberately coarse—Chebotarev error.
@@ -100,7 +100,7 @@ normalization
  r\longmapsto(s,t)=(H'(r),,rH'(r)-H(r))                          \tag{6}
 \]
 
-is generically one-to-one by the pole-order argument from C04; that argument
+is generically one-to-one by the pole-order argument from weighted marked-root theorem; that argument
 uses only that `n(n-1)h_n` is nonzero.  Therefore the branch divisor is
 geometrically irreducible and all its generic inertia groups are conjugate
 transpositions.

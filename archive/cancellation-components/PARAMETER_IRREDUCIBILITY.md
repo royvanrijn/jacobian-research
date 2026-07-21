@@ -1,4 +1,4 @@
-# Irreducibility results for C24 parameter polynomials
+# Irreducibility results for cancellation parameter polynomials
 
 For `m,r>=1`, put
 
@@ -6,7 +6,7 @@ For `m,r>=1`, put
  n=mr,\qquad L=n+r+1=r(m+1)+1
 \]
 
-and recall the C24 parameter polynomial
+and recall the cancellation parameter polynomial
 
 \[
  \mathcal M_{m,r}(q)=
@@ -28,7 +28,7 @@ For positive integers `N>k`, write
  P_{N,k}(x)=\sum_{j=0}^k\binom Njx^j.
 \]
 
-The C24 polynomial is its reciprocal transform:
+The cancellation polynomial is its reciprocal transform:
 
 \[
  \mathcal M_{m,r}(q)=q^{mr}P_{mr+r+1,mr}(-q^{-1}).
@@ -224,5 +224,5 @@ Run the exact regression with
 
 It checks the coefficient valuations, cyclotomic reductions, and
 affine-reciprocal transforms for certified pairs in bounded boxes, includes
-every displayed C24 example, and constructs the modular degree-sieve
+every displayed cancellation construction example, and constructs the modular degree-sieve
 certificates above.  The uniform results are the three preceding proofs.

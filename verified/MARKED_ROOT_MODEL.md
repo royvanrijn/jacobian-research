@@ -336,11 +336,11 @@ marks a root of `H(W)-sW+t`, normalize it over the degenerate `C=0` fiber,
 and retain its regular-reconstruction open.  The expanded weighted derivation
 is retained in
 [archive/core-support](../archive/core-support/WEIGHTED_MARKED_ROOT_MODEL.md).
-[DICRITICAL_COMPACTIFICATION.md](../extended-geometry/DICRITICAL_COMPACTIFICATION.md) (Claim C16)
+[dicritical compactification theorem](../extended-geometry/DICRITICAL_COMPACTIFICATION.md)
 classifies the reconstruction-pole divisors on the corresponding normalized
 inverse-graph compactification.
 
 This interpretation is adopted with attribution to Andy Jiang's public
 geometric-interpretation post; see [SOURCES.md](../archive/legacy-notes/SOURCES.md) and
 [PROVENANCE_AUDIT.md](../archive/legacy-notes/PROVENANCE_AUDIT.md).  The overlap with the repository's
-earlier C02--C03 computations is recorded there, and no priority claim is made.
+earlier cubic marked-root and image results computations is recorded there, and no priority claim is made.

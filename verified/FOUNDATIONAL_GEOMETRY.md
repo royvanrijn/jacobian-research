@@ -1,4 +1,4 @@
-# C01: exact Keller map and rational collision
+# Foundational Keller map and rational collision
 
 Put `u=1+xy` and define
 
@@ -57,12 +57,12 @@ Since `r=2/x`, their product is `-2`.  Both sides are polynomials, so equality
 on the dense open proves the determinant identity everywhere.  The collision
 is exact substitution, and the three displayed source points are distinct.
 
-This proof is intentionally confined to C01.  The nonduplicated continuation
-of the core chain is:
+This proof is intentionally confined to the foundational map.  The
+nonduplicated continuation of the core chain is:
 
-- [C02 marked-root model](MARKED_ROOT_MODEL.md);
-- [C03 exact image and nonproperness](IMAGE_AND_NONPROPERNESS.md);
-- [C04 weighted theorem](WEIGHTED_SEED_THEOREM.md).
+- [Cubic marked-root model](MARKED_ROOT_MODEL.md);
+- [Exact image and nonproperness](IMAGE_AND_NONPROPERNESS.md);
+- [Weighted marked-root theorem](WEIGHTED_SEED_THEOREM.md).
 
 ## Reproduction
 
@@ -75,7 +75,7 @@ make verify-core
 
 The minimal target uses a dependency-free exact implementation.  The full
 core target adds the marked-root and image regressions.  A separately authored
-pinned Lean certificate is documented in [LEAN_C01.md](LEAN_C01.md).
+pinned Lean certificate is documented in [LEAN_FOUNDATIONAL_MAP.md](LEAN_FOUNDATIONAL_MAP.md).
 
-The former all-in-one C01--C04 derivation and presentation-invariance audit
-are retained in [archive/core-support](../archive/core-support/README.md).
+The former all-in-one derivation and presentation-invariance audit are
+retained in [archive/core-support](../archive/core-support/README.md).

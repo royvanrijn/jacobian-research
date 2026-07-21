@@ -422,12 +422,12 @@ index two.  The normalized boundary indices are invariant under polynomial
 left--right equivalence and stabilization.  Hence the `r>=2` maps are not
 polynomially left--right equivalent, even stably, to generic weighted seeds.
 
-The same note computes the remaining generic boundary.  Over `P=0`, C24 has
+The same note computes the remaining generic boundary.  Over `P=0`, the cancellation construction has
 `mr-1` geometric unramified boundary primes, while one apparent projective
 resolvent pole is the finite source divisor `A=0`.  It also proves
 
 \[
- \operatorname{Mon}(C24_{m,r})=
+ \operatorname{Mon}(F^{\mathrm{cancel}}_{m,r})=
  \begin{cases}S_{r(m+1)+1},&r\text{ odd},\\
  A_{r(m+1)+1},&r\text{ even}.
  \end{cases}
@@ -437,12 +437,12 @@ For `r=1`, all numerical entries in the intrinsic signature agree with a
 generic weighted seed of degree `m+2`.  The stronger
 [boundary-intersection invariant](BOUNDARY_INTERSECTION_OBSTRUCTION.md)
 separates them for every `m>1`: the two distinguished target components meet
-in `A^1 disjoint-union G_m` for C24 and in `A^1` for the weighted seed.
+in `A^1 disjoint-union G_m` for the cancellation construction and in `A^1` for the weighted seed.
 
 The later
-[all-parameter scheme-theoretic calculation](C24_SCHEME_BOUNDARY_ALL_PARAMETERS.md)
+[all-parameter scheme-theoretic calculation](SCHEME_BOUNDARY_ALL_PARAMETERS.md)
 unifies the comparison.  For every noncubic `(m,r)`, the intersection of the
-two C24 boundary-image divisors is nonreduced with nilradical index
+two cancellation construction boundary-image divisors is nonreduced with nilradical index
 `mr(m+1)`, whereas the generic weighted intersection is reduced.  Thus one
 stable boundary-incidence obstruction now handles all `r`.
 
@@ -450,9 +450,9 @@ The precise conclusion is therefore:
 
 - the master family strictly extends the original cubic construction;
 - both constructions are pullbacks of the universal marked-root incidence;
-- no noncubic C24 member is polynomially left--right equivalent, even stably,
+- no noncubic cancellation member is polynomially left--right equivalent, even stably,
   to a generic weighted seed; and
-- distinct normalized C24 parameter roots are not target-fixed
+- distinct normalized cancellation parameter roots are not target-fixed
   right-equivalent, even stably; and
 - every allowed tail deformation is removed by a polynomial source shift in
   `z`.
@@ -466,8 +466,8 @@ finite case, and a collision transports through these operations whenever the
 other factor is held fixed.
 
 These are formal closure corollaries only.  They do not define new primitive
-`N`, `H`, or `M` branches and are not counted as equal-status discoveries in
-the claim ledger.
+`N`, `H`, or `M` branches and are not separate entries in the current status
+ledger.
 
 ## 8. Exact status and open classification target
 

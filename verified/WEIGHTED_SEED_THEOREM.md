@@ -98,7 +98,7 @@ base field; it does not require the coefficients of `H` themselves to lie in
 covers of affine space over an algebraically closed characteristic-zero
 field.  Precise references and the descent-to-`C` proof of the latter standard
 fact are recorded in the
-[archived expanded derivation](../archive/core-support/FOUNDATIONAL_GEOMETRY_C01_C04.md#algebraic-monodromy).
+[archived expanded derivation](../archive/core-support/FOUNDATIONAL_THROUGH_WEIGHTED_GEOMETRY.md#algebraic-monodromy).
 
 ## Consequence for admissible weighted seeds
 
@@ -196,7 +196,7 @@ the constant Jacobian, marked-root reconstruction, normalization, and `S_n`
 monodromy without importing the project weighted-model implementation.  Run
 
 ```bash
-python3 scripts/audit_c04_independent.py
+python3 scripts/audit_weighted_independent.py
 ```
 
 The detailed former audit narrative is retained in

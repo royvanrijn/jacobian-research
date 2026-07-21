@@ -1,6 +1,6 @@
-# Target-fixed rigidity of C24 parameter branches
+# Target-fixed rigidity of cancellation parameter branches
 
-This note proves the first uniform equivalence theorem among distinct C24
+This note proves the first uniform equivalence theorem among distinct cancellation construction
 parameter branches. It does not settle unrestricted polynomial left--right
 equivalence, because a nontrivial target automorphism is still allowed there.
 The general deck-transformation mechanism used below is isolated in
@@ -16,7 +16,7 @@ roots, and a nonzero Jacobian constant `C`. For a cancellation polynomial
  P_h=AB_h,\qquad Q_h=y+xB_h,
 \]
 
-and let `F_h=(P_h,Q_h,R_h)` be the C24 map. Only the class of `h` modulo
+and let `F_h=(P_h,Q_h,R_h)` be the cancellation map. Only the class of `h` modulo
 `A^(r+1)` enters the cancellation condition.
 
 ## 1. The canonical cover is independent of the parameter
@@ -46,7 +46,7 @@ theorem: the natural point stabilizer `H` is self-normalizing in `S_N` for
  \operatorname{Aut}_{k(P,Q,R)} k(x,y,z)=N_G(H)/H=1.    \tag{2}
 \]
 
-The even-`r` case always has `N>=5`, so these two cases exhaust C24.
+The even-`r` case always has `N>=5`, so these two cases exhaust cancellation construction.
 
 ## 2. The unique birational identification
 
@@ -81,7 +81,7 @@ allowed tail, and its inverse is obtained by changing the sign.
 
 ### Theorem
 
-Two C24 maps with the same `(m,r,C)` are polynomially right-equivalent over
+Two cancellation maps with the same `(m,r,C)` are polynomially right-equivalent over
 the identity target if and only if their cancellation polynomials agree
 modulo `A^(r+1)`. In particular, normalized branches attached to distinct
 roots `q!=q'` of `M_(m,r)` are not target-fixed right-equivalent.

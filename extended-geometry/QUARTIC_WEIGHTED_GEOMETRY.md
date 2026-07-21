@@ -344,7 +344,7 @@ E_{r-2r^3,\,r^2-3r^4}(W)
 the `C=0` relation `(B^2-A)x^2=1`, and the omitted-node factorization.  Run
 
 ```bash
-python3 scripts/audit_c14_independent.py
+python3 scripts/audit_quartic_independent.py
 ```
 
 The former standalone audit narrative is retained in

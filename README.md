@@ -81,7 +81,7 @@ identity coordinates gives examples in every higher dimension.
 
 Dean Cureton independently formalized the determinant, the three evaluations,
 a determinant-one rescaling, and the complex specialization in
-[Lean 4](verified/LEAN_C01.md).  His formalization is separately authored and
+[Lean 4](verified/LEAN_FOUNDATIONAL_MAP.md).  His formalization is separately authored and
 pinned rather than copied into this repository.
 
 ## The geometric turn
@@ -130,7 +130,7 @@ distinctions matter:
 | Explicit map, determinant, and rational collision | Alpöge/Fable announcement trail | Independent exact implementations, a compact proof, and a maintained reproduction target; no discovery claim |
 | Marked projective root | Andy Jiang’s public geometric interpretation | The global two-chart scheme proof, including the root at infinity, plus exact image and nonproperness arguments |
 | Weighted lift and higher-degree seed family | Alexis Gallagher’s explainer | A normalized-incidence formulation, the regular-reconstruction open, uniform `S_N` monodromy, and later complete boundary calculations |
-| Formal verification of C01 | Dean Cureton’s Lean project | Pinned attribution, scope audit, and an optional upstream build target |
+| Formal verification of the foundational map | Dean Cureton’s Lean project | Pinned attribution, scope audit, and an optional upstream build target |
 | Immediate consequences and source trail | Zihan Zhang’s audit | A separate proof architecture focused on inverse geometry, normalization, and stable equivalence |
 | Cancellation maps and canonical boundary invariants | No earlier source has been identified in the present audit | The finite cancellation operator, all-parameter reconstruction and collision, boundary-exhaustion theorem, thick intersections, and rigidity results |
 | Many stable classes in each degree | No earlier source has been identified in the present audit | The divisor-count theorem giving at least `tau(N-1)` stable classes in generic degree `N>=4` |
@@ -179,12 +179,11 @@ boundary intersection is reduced.  Therefore:
 \text{ pairwise stably inequivalent degree-}N\text{ maps.}}
 \]
 
-The common framework is in
-[Marked-root Keller maps](MARKED_ROOT_KELLER_MAPS.md).  The divisor-count
-argument has also been isolated as a
-[five-lemma audit](DEGREEWISE_MULTIPLICITY_AUDIT.md) and a concise,
-[standalone paper](papers/marked-root-multiplicity/main.tex) that treats
-C01--C04 only as motivation.
+The canonical statement and proof are in the standalone paper
+[Marked-Root Keller Maps and Degreewise Stable Multiplicity](papers/marked-root-multiplicity/main.tex).
+[Marked-root Keller maps](MARKED_ROOT_KELLER_MAPS.md) supplies the common
+framework, while the [five-lemma audit](DEGREEWISE_MULTIPLICITY_AUDIT.md) is a
+verification companion.  Neither is a competing canonical theorem source.
 
 ## What is genuinely new here?
 
@@ -210,27 +209,29 @@ repository” and “externally reviewed” are different assertions.
 
 ## Reading and reproduction
 
-C01–C04 are the stable core. See [STATUS.md](STATUS.md) for detailed
+The foundational map, cubic marked-root model, exact image theorem, and
+weighted theorem are the stable core. See [STATUS.md](STATUS.md) for detailed
 evidence levels.
 
 The stable-core reading path is:
 
-1. [C01 exact proof](verified/FOUNDATIONAL_GEOMETRY.md)
-2. [C02 marked-root model](verified/MARKED_ROOT_MODEL.md)
-3. [C03 exact image and nonproperness](verified/IMAGE_AND_NONPROPERNESS.md)
-4. [C04 weighted theorem](verified/WEIGHTED_SEED_THEOREM.md)
+1. [Foundational Keller map](verified/FOUNDATIONAL_GEOMETRY.md)
+2. [Cubic marked-root model](verified/MARKED_ROOT_MODEL.md)
+3. [Exact image and nonproperness](verified/IMAGE_AND_NONPROPERNESS.md)
+4. [Weighted marked-root theorem](verified/WEIGHTED_SEED_THEOREM.md)
 
 Further families continue in one sequence:
-[cancellation construction](experimental/cancellation/CONSTRUCTION.md),
-[boundary geometry](experimental/cancellation/BOUNDARY_GEOMETRY.md), and the
-[marked-root framework and divisor-count theorem](MARKED_ROOT_KELLER_MAPS.md).
+[cancellation construction](cancellation/CONSTRUCTION.md),
+[boundary geometry](cancellation/BOUNDARY_GEOMETRY.md), and the
+[marked-root framework](MARKED_ROOT_KELLER_MAPS.md), followed by the
+[canonical degreewise paper](papers/marked-root-multiplicity/main.tex).
 
 For execution, start with [REPRODUCE.md](REPRODUCE.md).  The core paper is
 [papers/core-counterexample/main.tex](papers/core-counterexample/main.tex).
 Extended geometry is indexed in
 [extended-geometry](extended-geometry/README.md); cancellation
 arithmetic, rigidity, and open problems live beside the construction under
-`experimental/cancellation/`.  Superseded derivations and exploratory tools
+`cancellation/`.  Superseded derivations and exploratory tools
 remain available through the [archive](archive/README.md).
 
 ## Credits and sources

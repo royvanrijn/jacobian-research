@@ -147,7 +147,7 @@ commuting square-zero variables `epsilon_i` and set
 
 \[
 V=\prod_i((Z-r_i)^2+\epsilon_i),\qquad
-U=\prod_i((Z-r_i)^3+	frac32\epsilon_i(Z-r_i)).
+U=\prod_i((Z-r_i)^3+\tfrac32\epsilon_i(Z-r_i)).
 \]
 
 The resulting norm map is not the transfer block: at `k=2` it kills the

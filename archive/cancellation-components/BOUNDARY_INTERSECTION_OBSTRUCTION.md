@@ -1,13 +1,13 @@
-# Boundary-intersection obstruction for C24
+# Boundary-intersection obstruction for the cancellation construction
 
-This note settles the remaining comparison between `C24_(m,1)`, `m>1`, and
+This note settles the remaining comparison between `cancellation type (m,1)`, `m>1`, and
 a generic weighted seed of inverse degree `m+2`.  Both the scheme-theoretic
 and reduced intersections of the two intrinsically distinguished target
 boundary components are computed.  The general theorem making these
 constructions canonical stable left--right invariants is recorded in
 [CANONICAL_BOUNDARY_INTERSECTION_INVARIANT.md](CANONICAL_BOUNDARY_INTERSECTION_INVARIANT.md).
-The all-`(m,r)` version of the C24 thick-intersection calculation is
-[C24_SCHEME_BOUNDARY_ALL_PARAMETERS.md](C24_SCHEME_BOUNDARY_ALL_PARAMETERS.md).
+The all-`(m,r)` version of the cancellation construction thick-intersection calculation is
+[SCHEME_BOUNDARY_ALL_PARAMETERS.md](SCHEME_BOUNDARY_ALL_PARAMETERS.md).
 
 Throughout, `k` is a characteristic-zero field.  For the weighted family,
 write
@@ -22,7 +22,7 @@ resolvent--ramification signature.
 
 ## The two intersections
 
-For C24 with `r=1`, the inverse polynomial is
+For the cancellation construction with `r=1`, the inverse polynomial is
 
 \[
  \Psi(T)=C\int_0^T\{1-t(Q-Pt)^m\}\,dt-R,
@@ -170,14 +170,14 @@ calculation in `verify_deformed_seed_boundary.py`.
 ### Theorem (thick boundary intersection)
 
 For every `m>1`, the canonical scheme-theoretic intersection of the two
-marked C24 target boundary divisors has coordinate ring (3).  It is the
+marked cancellation construction target boundary divisors has coordinate ring (3).  It is the
 disjoint union of `G_m` and the `m(m+1)`-fold nilpotent thickening of an
 affine line in a transverse direction.  Its reduction is (5).  For the
 generic weighted seed of inverse degree `m+2`, the corresponding canonical
 scheme-theoretic intersection is the reduced affine line (7).
 
 After adjoining identity coordinates, these rings are replaced by polynomial
-rings over them.  In particular, reducedness and the C24 nilradical index
+rings over them.  In particular, reducedness and the cancellation construction nilradical index
 `m(m+1)` are stable left--right invariants of the marked intersections.
 
 ## Intrinsic character and inequivalence
@@ -193,12 +193,12 @@ their scheme-theoretic intersections and their reductions.
 No such isomorphism exists.  Scheme-theoretically, (3) is nonreduced with
 nilradical of index `m(m+1)`, whereas (7) is reduced.  After reduction, the
 ring (5) has a nontrivial idempotent, whereas the domain (7) does not.
-Equivalently, the reduced C24 intersection is disconnected and the weighted
+Equivalently, the reduced cancellation construction intersection is disconnected and the weighted
 intersection is connected.
 
 ### Theorem
 
-For every `m>1`, no `C24_(m,1)` map, including any allowed tail
+For every `m>1`, no `cancellation type (m,1)` map, including any allowed tail
 `h_q(A)+A^2g(A)`, is polynomially left--right equivalent to a generic
 weighted-seed map of inverse degree `m+2`.
 

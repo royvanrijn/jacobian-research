@@ -141,8 +141,8 @@ By contraposition of the cited implication/equivalence theorems, the verified
 3D counterexample also implies: the Mathieu conjecture fails for `SU(3)`; the
 Gaussian Moments Conjecture fails in at least one finite dimension; Zhao's
 quartic homogeneous Vanishing Conjecture fails in at least one finite
-dimension; and the all-dimensional Image Conjecture fails.  C15 now supplies
+dimension; and the all-dimensional Image Conjecture fails.  Stable Normal-Form Consequences now supplies
 an explicit 190-variable quartic HN witness, an explicit Special
 Image-Conjecture pair, and a third-Weyl-algebra Dixmier witness.  Least
 dimensions and the least exceptional Vanishing exponent remain unknown. See
-`C15_INDEPENDENT_AUDIT.md` and `DIRECT_CONSEQUENCES.md`.
+`STABLE_NORMAL_FORM_AUDIT.md` and `DIRECT_CONSEQUENCES.md`.

@@ -67,9 +67,9 @@ The former target-only reduced diagram is the quotient
    /\{\text{upstairs vertices and maps}\}.                 \tag{5}
 \]
 
-For C04 versus every noncubic C24 member, this first target quotient already
+For weighted marked-root theorem versus every noncubic cancellation member, this first target quotient already
 separates the maps: the marked reduced target intersection is `A^1` for the
-generic weighted seed and `A^1 disjoint-union G_m` for C24.
+generic weighted seed and `A^1 disjoint-union G_m` for the cancellation construction.
 
 ## 3. The scheme-theoretic layer
 
@@ -96,10 +96,10 @@ Termwise reduction gives the second arrow in (1):
 \]
 
 The former target-only scheme diagram `mathfrak J(F)` is precisely the target
-quotient `mathfrak I_Y^sch(F)`.  For C24 its marked target intersection has
+quotient `mathfrak I_Y^sch(F)`.  For cancellation construction its marked target intersection has
 nilradical index `mr(m+1)`, while the generic weighted intersection is
 reduced.  Thus the scheme layer strengthens, but is not needed for, the first
-C04--C24 separation.
+weighted--cancellation separation.
 
 ## 4. The formal layer
 
@@ -237,7 +237,7 @@ The ladder suggests a fixed workflow for new examples:
 This prevents the invariant from changing ad hoc between examples.  Stronger
 layers refine a fixed canonical object; they do not replace earlier layers.
 
-For C04--C24, the reduced target layer already separates the families.  The
+For weighted--cancellation, the reduced target layer already separates the families.  The
 next formal-layer computation is useful for a different purpose: determining
 the cover-lifting congruence kernel in the target-boundary automorphism group
-and its possible action on the C24 parameter roots.
+and its possible action on the cancellation parameter roots.

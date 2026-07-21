@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Exact regressions for the C24 prime-power Eisenstein theorem."""
+"""Exact regressions for the cancellation construction prime-power Eisenstein theorem."""
 from __future__ import annotations
 
 import warnings

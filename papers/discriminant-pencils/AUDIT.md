@@ -1,10 +1,11 @@
-# Adversarial proof audit for C05
+# Adversarial proof audit for the generic discriminant theorem
 
 ## Verdict
 
-C05 survives as a standalone theorem over an algebraically closed field of
+The generic discriminant result survives as a standalone theorem over an algebraically closed field of
 characteristic zero, provided “discriminant curve” means the reduced
-projective closure of the repeated-root locus. The proof does not need C06–C13
+projective closure of the repeated-root locus. The proof does not need the
+later weighted-image through finite-field results
 or any assertion about the image or boundary of the motivating Jacobian map.
 
 The audit led to two proof-hardening changes in the standalone paper:
