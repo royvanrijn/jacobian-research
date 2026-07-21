@@ -79,11 +79,11 @@ def assert_same(path: str, actual: tuple[sp.Expr, ...]) -> None:
 
 
 DIRECT_MAPS = (
-    "scripts/analyze_gradient_infinity.py",
-    "scripts/commuting_flows.py",
+    "archive/tooling/analyze_gradient_infinity.py",
+    "archive/tooling/commuting_flows.py",
     "scripts/image_nonproperness.py",
-    "scripts/keller_tangent.py",
-    "scripts/nonproper_fiber_benchmark.py",
+    "archive/tooling/keller_tangent.py",
+    "archive/tooling/nonproper_fiber_benchmark.py",
     "scripts/verify_counterexample.py",
     "scripts/verify_marked_root_model.py",
 )
@@ -142,7 +142,7 @@ for got, want in zip(independent_mapping, CANONICAL):
 print("PASS map formula: dependency-free verifier")
 
 # Julia's homotopy system subtracts a moving target from the first coordinate.
-julia = "".join((ROOT / "scripts/nonproper_fiber_homotopy.jl").read_text().split())
+julia = "".join((ROOT / "archive/tooling/nonproper_fiber_homotopy.jl").read_text().split())
 for fragment in (
     "u=1+x*y",
     "u^3*z+y^2*u*(4+3*x*y)-(-1//4+s)",
@@ -150,9 +150,9 @@ for fragment in (
     "2*x-3*x^2*y-x^3*z",
 ):
     assert fragment in julia, fragment
-print("PASS map formula: scripts/nonproper_fiber_homotopy.jl")
+print("PASS map formula: archive/tooling/nonproper_fiber_homotopy.jl")
 
-# Human-facing full displays are checked textually; FACTS.md uses the declared
+# Human-facing full displays are checked textually; the archived facts note uses the declared
 # abbreviation u=1+xy and is covered separately.
 display = "".join([
     "(1+xy)^3z+y^2(1+xy)(4+3xy),",
@@ -169,7 +169,7 @@ for fragment in (
     "2x-3x^2y-x^3z",
 ):
     assert fragment in readme, fragment
-facts = "".join((ROOT / "verified/FACTS.md").read_text().split())
+facts = "".join((ROOT / "archive/core-support/FACTS.md").read_text().split())
 for fragment in (
     "Put`u=1+xy`andwrite`F=(a,b,c)`",
     "a=u^3z+y^2u(4+3xy)",

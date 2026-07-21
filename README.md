@@ -90,15 +90,21 @@ evidence levels.
 ## Deeper work
 
 - [Core paper draft](papers/core-counterexample/main.tex)
+- [C01 exact proof](verified/FOUNDATIONAL_GEOMETRY.md)
+- [C02 marked-root model](verified/MARKED_ROOT_MODEL.md)
+- [C03 exact image and nonproperness theorem](verified/IMAGE_AND_NONPROPERNESS.md)
+- [C04 weighted theorem](verified/WEIGHTED_SEED_THEOREM.md)
+- [Cancellation construction](experimental/cancellation/CONSTRUCTION.md)
+- [Mathematical status and external review](STATUS.md)
+- [Reproduction commands](REPRODUCE.md)
+
+## Further results and archives
+
 - [Standalone discriminant-pencils paper](papers/discriminant-pencils/main.tex)
 - [Adversarial audit of C05](papers/discriminant-pencils/AUDIT.md)
-- [Verified C01--C04 material](verified/README.md)
 - [Experimental geometry, C05--C16](experimental/geometry/README.md)
-- Cancellation programme: [construction](experimental/cancellation/CONSTRUCTION.md),
-  [arithmetic](experimental/cancellation/ARITHMETIC.md),
+- Cancellation programme: [arithmetic](experimental/cancellation/ARITHMETIC.md),
   [boundary geometry](experimental/cancellation/BOUNDARY_GEOMETRY.md),
   [rigidity within the current ansatz](experimental/cancellation/RIGIDITY.md),
   and [open problems](experimental/cancellation/OPEN_PROBLEMS.md)
-- [Mathematical status and external review](STATUS.md)
 - [Archived notes and superseded derivations](archive/README.md)
-- [Verification commands](Makefile)

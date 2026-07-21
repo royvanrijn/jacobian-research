@@ -57,3 +57,10 @@ Suggested entry points:
 [generic discriminants](GENERIC_DISCRIMINANT_CURVE.md),
 [contact strata](COINCIDENT_ROOT_REBUILD.md), and
 [dicritical compactification](DICRITICAL_COMPACTIFICATION.md).
+
+Intermediate deformation notes, bounded stratum reports, the expanded C16
+blow-up calculation, and the former standalone C12/C14 audit narratives are
+preserved under
+[archive/geometry-support](../../archive/geometry-support/README.md).
+Derived normal-form construction notes are under
+[archive/derived-constructions](../../archive/derived-constructions/README.md).

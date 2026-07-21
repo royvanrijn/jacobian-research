@@ -8,7 +8,7 @@ SYSTEM_PYTHON ?= python3
 	verify-master \
 	verify-quartic verify-normal-forms verify-formal verify-lean-c01 \
 	verify-foundations verify-foundations-formal \
-	verify-coincident-root-loci scan-weighted-seeds
+	verify-coincident-root-loci
 
 check:
 	$(PYTHON) -m compileall -q jcsearch scripts
@@ -125,6 +125,3 @@ verify-logged:
 	mkdir -p artifacts/verification
 	$(PYTHON) scripts/record_environment.py | tee artifacts/verification/environment.txt
 	set -o pipefail; $(MAKE) verify 2>&1 | tee artifacts/verification/verify.log
-
-scan-weighted-seeds:
-	$(PYTHON) scripts/scan_weighted_seeds.py

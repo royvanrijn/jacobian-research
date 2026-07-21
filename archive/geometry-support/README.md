@@ -1,0 +1,15 @@
+# Archived geometry support notes
+
+This directory retains audit narratives and intermediate deformation or
+compactification notes whose conclusions are incorporated into stronger active
+theorems.  In particular:
+
+- the C12 and C14 audit summaries now live in their primary theorem documents;
+- the C16 blow-up calculation supports the active dicritical theorem;
+- contact-partition and exceptional-seed drafts were superseded by the
+  coincident-root rebuild and contact-atom theorem; and
+- the simple/repeated deformation notes were superseded by the general
+  omitted-value and canonical-family results.
+
+These files remain useful for derivations and regression provenance, but are
+not part of the main proof navigation.

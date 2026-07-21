@@ -15,3 +15,11 @@ and scoped factorization obstruction.
 
 The [cancellation-component archive](cancellation-components/) preserves the
 former fragmented C24 narratives now consolidated into five active documents.
+
+The [core-support archive](core-support/) contains superseded combined proofs
+and expanded C01--C04 audit narratives.  The
+[geometry-support archive](geometry-support/) contains intermediate
+deformation, compactification, and audit notes superseded by stronger active
+theorems.  [Derived constructions](derived-constructions/) and
+[exploratory tooling](tooling/) retain generated-model narratives, searches,
+bounded scans, and diagnostics outside the primary proof path.

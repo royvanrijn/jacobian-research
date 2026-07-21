@@ -52,10 +52,6 @@ G(1,0,0)=G(-1,0,2)=(0,0,1).
 - [x] Generic nodal-cuspidal discriminant theorem and generic surjectivity in
   inverse degree at least five.
 
-A dependency-free reconstruction of the map, determinant, inverse quartic,
-discriminant normalization, and key fiber identities is recorded in
-[C14_INDEPENDENT_AUDIT.md](C14_INDEPENDENT_AUDIT.md).
-
 ## Quartic inverse on `C!=0`
 
 For target `(A,B,C)`, the inverse equation is
@@ -353,3 +349,29 @@ Run:
 ```bash
 .venv/bin/python scripts/verify_quartic_image.py
 ```
+
+## Independent central-algebra audit
+
+A dependency-free sparse-polynomial implementation reconstructs the
+coordinate divisions, obtains `det DG=-6`, checks both collision points and
+the inverse equation, and independently recovers
+
+\[
+\operatorname{disc}_W(E)=-16C^2Q_4.
+\]
+
+It also verifies
+
+\[
+E_{r-2r^3,\,r^2-3r^4}(W)
+=-(W-r)^2(W^2+2rW+3r^2-1),
+\]
+
+the `C=0` relation `(B^2-A)x^2=1`, and the omitted-node factorization.  Run
+
+```bash
+python3 scripts/audit_c14_independent.py
+```
+
+The former standalone audit narrative is retained in
+[archive/geometry-support](../../archive/geometry-support/README.md).

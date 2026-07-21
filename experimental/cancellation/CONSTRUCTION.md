@@ -220,7 +220,8 @@ Verification entry points:
 - `scripts/verify_master_universal.py` checks the uniform identities in
   bounded structural ranges;
 - `scripts/verify_master_instances.py` checks exact displayed instances;
-- `scripts/generate_master_regression.py m r` generates a new pair.
+- `archive/tooling/generate_master_regression.py m r` generates an optional
+  new regression pair.
 
 The detailed former master note and its component derivations are retained in
 [the cancellation archive](../../archive/cancellation-components/).

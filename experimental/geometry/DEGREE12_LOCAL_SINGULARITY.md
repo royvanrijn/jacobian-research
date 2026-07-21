@@ -207,5 +207,32 @@ the exact second quadratic forms, the sixfold-block Groebner basis, smoothness
 of the incidence equation at an admissible witness, and the matching
 upper/lower length bounds.
 
-The elementary ideal proof and dependency-free second checker are recorded in
-[C12_INDEPENDENT_AUDIT.md](C12_INDEPENDENT_AUDIT.md).
+### Independent algebra audit
+
+The decisive sixfold block also has an elementary proof independent of the
+Groebner calculation.  For
+
+\[
+Q=z^3+uz+v,\qquad T=z^2+az+b,
+\]
+
+coefficient comparison in `Q^2-T^3` gives the exact coefficient ideal
+
+\[
+(c_5,c_4,c_3,c_2,c_1,c_0)=(a,v,2u-3b,b^2).
+\]
+
+Thus each separated sixfold root contributes one dual-number block, and the
+two blocks give
+`k[epsilon,eta]/(epsilon^2,eta^2)` of length four.  A dependency-free checker
+also recovers the two common-tangent quadratic restrictions, giving the
+matching upper bound.
+
+Run
+
+```bash
+python3 scripts/audit_c12_independent.py
+```
+
+The former standalone audit narrative is retained in
+[archive/geometry-support](../../archive/geometry-support/README.md).

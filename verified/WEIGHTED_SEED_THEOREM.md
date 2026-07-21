@@ -97,8 +97,8 @@ base field; it does not require the coefficients of `H` themselves to lie in
 `C`.  The only external inputs are purity and the triviality of finite etale
 covers of affine space over an algebraically closed characteristic-zero
 field.  Precise references and the descent-to-`C` proof of the latter standard
-fact are recorded in
-[FOUNDATIONAL_GEOMETRY.md](FOUNDATIONAL_GEOMETRY.md#algebraic-monodromy).
+fact are recorded in the
+[archived expanded derivation](../archive/core-support/FOUNDATIONAL_GEOMETRY_C01_C04.md#algebraic-monodromy).
 
 ## Consequence for admissible weighted seeds
 
@@ -132,12 +132,12 @@ exactly the reconstruction poles. The universal theorem gives `S_n`
 monodromy for every such degree-`n` inverse pencil, including canonical and
 deformed seeds.
 
-This statement is deliberately on `C!=0`.  Its global incidence-space
-extension is [WEIGHTED_MARKED_ROOT_MODEL.md](WEIGHTED_MARKED_ROOT_MODEL.md):
-after normalizing the finite marked-root cover, the affine source is exactly
-the open where all reconstruction coordinates are regular.  That formulation
-includes the finite `x=0` and `gamma=0` charts without misclassifying the
-extra primitive-root branches at `C=0`.
+This statement is deliberately on `C!=0`.  Globally, normalize the finite
+marked-root incidence and retain the open on which every reconstruction
+coordinate is regular.  This includes the finite `x=0` and `gamma=0` charts
+without misclassifying extra primitive-root branches at `C=0`.  The expanded
+two-chart derivation is retained in the
+[core-support archive](../archive/core-support/WEIGHTED_MARKED_ROOT_MODEL.md).
 
 ## What is universal and what remains conditional
 
@@ -196,3 +196,17 @@ Run the finite-degree exact audit with:
 It checks canonical inverse degrees `3` through `8` and four noncanonical
 deformations, including irreducibility, discriminant elimination, birational
 degree data, and an exact smooth double-root representative.
+
+### Clean-room reproduction
+
+A second derivation uses dependency-free sparse-polynomial arithmetic and an
+alternative vertical-line branch-cycle argument.  It rechecks polynomiality,
+the constant Jacobian, marked-root reconstruction, normalization, and `S_n`
+monodromy without importing the project weighted-model implementation.  Run
+
+```bash
+python3 scripts/audit_c04_independent.py
+```
+
+The detailed former audit narrative is retained in
+[archive/core-support](../archive/core-support/README.md).
