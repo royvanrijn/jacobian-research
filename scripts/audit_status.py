@@ -29,6 +29,7 @@ expected = [f"C{i:02d}" for i in range(1, 17)] + [
     "Cancellation-parameter arithmetic",
     "Boundary distinction",
     "Rigidity within the current ansatz",
+    "Degreewise divisor-count theorem",
 ]
 actual = [cells[0].split(" — ", 1)[0] for cells in rows]
 assert actual == expected, "STATUS.md result rows are missing, duplicated, or out of order"
@@ -43,4 +44,4 @@ assert "C01–C04 are the stable core. See [STATUS.md](STATUS.md)" in readme
 assert "| Claim | Description | Status |" not in readme
 assert "CLAIMS.md" not in readme and "RESEARCH_STATUS.md" not in readme
 
-print("PASS status ledger: one four-column source covers C01--C16 and cancellation")
+print("PASS status ledger: one four-column source covers C01--C16 and marked-root results")

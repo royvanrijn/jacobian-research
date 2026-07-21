@@ -82,6 +82,16 @@ forgets the marked root. Consequently:
 The weighted C04 construction replaces the cubic by
 `H(W)-BCW+cAC^2` and retains the same normalized marked-root mechanism.
 
+## Degreewise stable multiplicity
+
+For every `N>=4`, the repository gives at least `tau(N-1)` pairwise stably
+inequivalent three-dimensional Keller maps of generic fiber degree `N`.
+There is one cancellation type for each proper divisor `r|(N-1)`, with
+`m=(N-1)/r-1`, plus a weighted marked-root class.  The cancellation types are
+separated by ramification index `r+1` and boundary nilpotency index
+`m(N-1)`; the weighted boundary intersection is reduced.  See
+[Marked-root Keller maps](MARKED_ROOT_KELLER_MAPS.md).
+
 ## Mathematical status
 
 C01–C04 are the stable core. See [STATUS.md](STATUS.md) for detailed
@@ -95,6 +105,7 @@ evidence levels.
 - [C03 exact image and nonproperness theorem](verified/IMAGE_AND_NONPROPERNESS.md)
 - [C04 weighted theorem](verified/WEIGHTED_SEED_THEOREM.md)
 - [Cancellation construction](experimental/cancellation/CONSTRUCTION.md)
+- [Marked-root Keller framework and divisor-count theorem](MARKED_ROOT_KELLER_MAPS.md)
 - [Mathematical status and external review](STATUS.md)
 - [Reproduction commands](REPRODUCE.md)
 

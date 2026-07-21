@@ -185,7 +185,49 @@ in a resolvent chart.  At the reduced layer one also sees
 `A^1 disjoint-union G_m` versus `A^1`; the thick layer supplies the uniform
 nilpotent obstruction.
 
-## 7. Independent audit notes
+## 7. Degreewise divisor-count theorem
+
+For every `N>=4`, there are at least `tau(N-1)` pairwise stably inequivalent
+polynomial Keller maps `C^3->C^3` with generic fiber degree `N` and nontrivial
+fibers.
+
+For the weighted map choose
+
+\[
+H_N(W)=W^2(1-W)(1+W^{N-3}).
+\]
+
+Its `N-3` extra roots are distinct, nonzero, and different from `1`;
+`H_N'(1)=-2` and `H_N''(1)/2=-(N+1)`, so it is an admissible split weighted
+seed.  Its two canonical boundary-image divisors meet in a reduced scheme.
+
+Put `n=N-1`.  Each proper divisor `r|n` gives the positive pair
+
+\[
+m=n/r-1,
+\]
+
+and hence a degree-`N` cancellation map.  Its monic degree-`mr` parameter
+polynomial has a simple complex root, so the cancellation recurrence supplies
+a branch.  There are `tau(n)-1` such pairs, and `N>=4` excludes the sole
+cubic boundary exception `(m,r)=(1,1)`.
+
+For a pair `(m,r)`, the discriminant boundary vertex is uniquely marked by
+ramification index `r+1`; the `P=0` vertex receives only unramified boundary
+primes.  Their intersection has nilradical index
+
+\[
+mN-m=m(N-1)=n(n/r-1).
+\]
+
+Different proper divisors give different ramification and nilpotency indices,
+so the cancellation types are pairwise stably inequivalent.  The weighted
+map contributes one additional class because its boundary intersection is
+reduced.  Thus the total is at least `tau(N-1)`.  The complete counting and
+shared inverse-cover framework are developed in
+[MARKED_ROOT_KELLER_MAPS.md](../../MARKED_ROOT_KELLER_MAPS.md).
+
+## 8. Independent audit notes
 
 The boundary exhaustion was independently rederived from the generic inverse,
 the normalized critical divisor, both degenerate charts, squarefreeness, and
