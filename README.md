@@ -35,11 +35,12 @@ the no-simple-root locus on the target side and the normalized marked-root
 incidence on the source side—are assembled in
 [Master geometry](notes/MASTER_GEOMETRY.md).  That note also relates the
 exceptional strata to classical coincident-root loci, explains the common
-`2/3` cusp structure, and isolates the stronger affine-rigidity conjecture.
+`2/3` cusp structure, and proves global affine rigidity.
 The exact quotient result is the
-[master quotient theorem](notes/MASTER_QUOTIENT_THEOREM.md): finite radicial
-globally, a locally closed immersion on exact contact strata, with the
-exceptional locus equal to its normalized admissible hyperplane slice.
+[master quotient theorem](notes/MASTER_QUOTIENT_THEOREM.md): projection modulo
+affine polynomials is a closed immersion on the reduced monic exact-degree
+no-simple-root locus, and its normalized admissible slice is isomorphic to the
+closed exceptional locus.
 ([Claim C21](CLAIMS.md#c21))
 
 The broader [universal factorization geometry](notes/UNIVERSAL_FACTORIZATION_GEOMETRY.md)
@@ -50,6 +51,16 @@ good-reduction count `q^5-q^3+q^2` and is not `A^5`.  The same framework
 identifies `Z_k` as a local square/cube factorization fiber and the weighted
 maps as three-dimensional pullbacks of the universal marked-factor geometry.
 ([Claim C23](CLAIMS.md#c23))
+
+A second, cancellation-driven master construction is developed separately in
+[The master cancellation construction](notes/MASTER_CANCELLATION_CONSTRUCTION.md).
+It proves a uniform localized Jacobian identity, reduces polynomiality to one
+finite operator `L_(m,r)`, replaces low-degree parameter tables by a
+truncated-binomial polynomial and a Hensel recurrence, and gives generic
+degree `r(m+1)+1` with a collision of that cardinality.  Its `(1,1)` member is
+linearly equivalent to the original cubic map, while its higher-ramification
+members are not generic weighted-seed reparametrizations.
+([Claim C24](CLAIMS.md#c24))
 
 ### Proof status
 
@@ -657,12 +668,11 @@ through `k=6`; see
 
 For arbitrary pairs of allocations, strong equality decomposes formally as a
 Hensel tensor product of the rootwise transfer blocks and a smooth common
-factor.  The actual normalized-branch intersection is the same product once a
-single global affine-difference length bound is verified.  In the first global
-higher-transfer case `(2,-2)`, that bound is sixteen and the completed
-intersection is `Z_2 completed-tensor Z_2`, with Hilbert function
-`(1,4,6,4,1)`.  The first mixed case `(2,-1,-1)` also has length sixteen and
-equals `Z_2 completed-tensor Z_1 completed-tensor Z_1`.
+factor. A universal Wronskian identity kills the two coefficients of the one
+shared affine correction, so affine and strong correspondences agree for
+every collision tree. Their transverse rank is
+`2^(sum_rho abs(k_rho))`. The `(2,-2)` and `(2,-1,-1)` length-sixteen
+calculations remain independent coordinate audits of the general theorem.
 ([Claim C18](CLAIMS.md#c18))
 
 ### Proof architecture for closures and intersections
@@ -778,7 +788,41 @@ See [Finite-field Chebotarev](notes/FINITE_FIELD_CHEBOTAREV.md),
 hypothesis audit and explicit downstream witnesses are in
 [C15 independent audit](notes/C15_INDEPENDENT_AUDIT.md).
 
-## 7. Reproducibility
+## 7. Master cancellation construction
+
+For `m,r>=1`, put
+
+\[
+A=1+xy^m,\quad B=A^{r+1}z+y^{m+1}h(A),\quad
+P=AB,\quad Q=y+xB,
+\]
+
+\[
+R=C\int_0^{x/A}(1-t(Q-Pt)^m)^r\,dt.
+\]
+
+The determinant is `-C` before any cancellation choice.  Polynomiality is
+equivalent to the vanishing of the finite `A`-adic operator derived in the
+dedicated note.  Its algebraic parameter polynomial is
+
+\[
+\mathcal M_{m,r}(q)=\sum_{j=0}^{mr}(-1)^j
+  {mr+r+1\choose j}q^{mr-j},
+\]
+
+and a uniform recurrence produces the coefficients of `h(A)`.  The generic
+fiber polynomial is irreducible and separable of degree `r(m+1)+1`, and the
+target `(P,Q,R)=(1,0,0)` has exactly that many reconstructed source points
+over an algebraic closure.  Products and compositions are only formal closure
+corollaries.  The arithmetic and coordinate-equivalence classification of all
+cancellation branches remains open. ([Claim C24](CLAIMS.md#c24))
+
+```bash
+make verify-master
+.venv/bin/python scripts/generate_master_regression.py 2 3
+```
+
+## 8. Reproducibility
 
 The minimal certificate requires only the Python standard library:
 
@@ -813,6 +857,7 @@ Useful targets are:
 | `make verify-minimal` | dependency-free determinant, collision, and degrees |
 | `make verify-core` | foundational map, marked-root model, cubic inverse, exact image, fibers, and nonproperness |
 | `make verify-theorems` | exact identities and local models used by the written uniform proofs |
+| `make verify-master` | master cancellation operator, displayed maps, Jacobians, fiber degrees, and collisions |
 | `make verify-regressions` | bounded-degree family, discriminant, Chebotarev, and quartic regressions |
 | `make verify-derived` | regenerate and verify the large stable--Segre/GZ normal forms and consequences |
 | `make verify-family` | backward-compatible alias for theorem identities plus regressions |
@@ -822,7 +867,7 @@ Useful targets are:
 Julia is optional and is used only for the numerical continuation benchmark in
 [NONPROPER_FIBER_BENCHMARK.md](notes/NONPROPER_FIBER_BENCHMARK.md).
 
-## 8. Repository guide and scope
+## 9. Repository guide and scope
 
 The logical status of every claim is separated from discovery provenance:
 

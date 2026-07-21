@@ -153,8 +153,8 @@ formal derivations of its universal quantifier.
   transverse multiplicity four for `C_(3,2)` along `E_(6,6)`.
 - [x] Classify the affine-difference two-transfer block `Z_2`, including its
   rank-four flat structure and non-Gorenstein coincident-root fiber.
-- [ ] Prove the remaining global equalizer theorems for compensating transfers
-  at several roots.
+- [x] Prove all global equalizer theorems for compensating transfers by the
+  universal Wronskian, killing the two shared affine coefficients at once.
 - [x] Prove the strong Hensel-product decomposition and reduce affine rigidity
   to a transverse length upper bound.
 - [x] Prove the quadratic-cubic colength-sixteen upper bound in the `(2,-2)`
@@ -195,7 +195,21 @@ formal derivations of its universal quantifier.
 - [ ] Determine how special discriminant singularities alter finite-field
   error terms without changing generic monodromy.
 
-## 7. Derived constructions and implications
+## 7. Master cancellation construction
+
+- [x] Prove the localized determinant `det J(P,Q,R)=-C` for arbitrary `m,r`.
+- [x] Derive the finite operator `L_(m,r)` and prove that its vanishing is
+  equivalent to polynomiality.
+- [x] Replace finite parameter/coefficient tables by the truncated-binomial
+  polynomial `M_(m,r)` and the exact Hensel recurrence for `h(A)`.
+- [x] Prove generic degree `r(m+1)+1`, irreducibility, separability, exact
+  reconstruction, and a full symbolic collision for every `m,r`.
+- [x] Identify the `(1,1)` member with the original cubic map and separate
+  higher ramification from generic weighted seeds.
+- [ ] Classify all polynomial cancellation branches up to field descent,
+  Galois conjugacy, tail deformation, and polynomial coordinate equivalence.
+
+## 8. Derived constructions and implications
 
 - [ ] Reproduce the 95D and 451D generated artifacts from a clean checkout.
 - [ ] Audit each stable-equivalence and pairing step against the cited theorem.
@@ -205,7 +219,7 @@ formal derivations of its universal quantifier.
 - [ ] Determine whether affine, triangular, or tame changes reduce degree,
   support, or coefficient height.
 
-## 8. Reproducibility and provenance
+## 9. Reproducibility and provenance
 
 - [ ] Record a pinned commit, platform, dependency versions, commands,
   runtimes, and hashes in an archival verification run.
@@ -217,12 +231,13 @@ formal derivations of its universal quantifier.
 
 ## Recommended next order
 
-1. Make good-prime exclusions effective seed by seed.
-2. Continue the exceptional-strata analysis in degrees eight and higher.
-3. Perform a clean-checkout archival reproduction; the independent exact
+1. Classify the polynomial cancellation branches of `L_(m,r)`.
+2. Make good-prime exclusions effective seed by seed.
+3. Continue the exceptional-strata analysis in degrees eight and higher.
+4. Perform a clean-checkout archival reproduction; the independent exact
    implementation is now part of `make verify-derived`.
-4. Audit compactifications, stable equivalence, and external implications.
-5. Compute compact coefficient ideals for selected lower-dimensional strata.
+5. Audit compactifications, stable equivalence, and external implications.
+6. Compute compact coefficient ideals for selected lower-dimensional strata.
 
 The routine executable identity and regression audit is:
 

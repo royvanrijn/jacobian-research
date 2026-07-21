@@ -20,9 +20,11 @@ The requested architectural spine is
  \longrightarrow \mathrm{C12,C16--C20}.
 \]
 
-The literal claim-level DAG has three side branches: C13 comes from the
+The literal claim-level DAG has four side branches: C13 comes from the
 universal monodromy theorem C04, C14 is the explicit quartic specialization,
-and C15 comes directly from C01 through stable-reduction theorems.
+C15 comes directly from C01 through stable-reduction theorems, and C24 is the
+independent cancellation master construction whose first member recovers C01
+up to linear equivalence.
 
 ```mermaid
 flowchart LR
@@ -51,9 +53,12 @@ flowchart LR
     C17 --> C19
     C17 --> C20
     C17 --> C22
+    C22 --> C18
+    C18 --> C21
     C02 --> C23
     C04 --> C23
     C22 --> C23
+    C01 -. comparison .-> C24
 
     C07 --> C21
     C08 --> C21
@@ -71,10 +76,11 @@ logically it is cleanest to regard the reusable `Z_2` theorem as a lemma for
 C12.  C19 and C20 use the definition and Gröbner strategy of C17, not its
 rank-four conclusion.
 
-C21 is the target-side master quotient theorem.  It uses C07 for the
-full-contact/omission interpretation and Mason separation, and C08 for the
-coincident-root strata.  C17--C20 and C22 are evidence for its unclaimed
-closed-immersion upgrade at arbitrary collisions, not dependencies of C21.
+C21 is the target-side master quotient theorem. It uses C07 for the
+full-contact/omission interpretation, C08 for the coincident-root strata, C22
+for the full Boolean local relation, and C18 for the arbitrary global
+Wronskian equalizer. C17--C20 are independent coordinate regressions for the
+local factors.
 
 ## Evidence terminology
 
@@ -748,35 +754,36 @@ criterion.
 **Obligations.**  Independent CAS/local-algebra audit remains pending.  This
 claim alone does not settle global compensation between several roots.
 
-## C18 — Hensel products and two global affine equalizers
+## C18 — Hensel products and the global affine equalizer
 
-**Quantified statement.**  For arbitrary two allocations of a collision
-polynomial in one component, the completed strong-equality correspondence is
-a regular factor completed-tensored with the rootwise blocks
-`Z_|k_rho|`.  For the affine normalized correspondence, this same product
-description holds for transfer vectors `(2,-2)` and `(2,-1,-1)`; in each case
-the transverse length is sixteen.
+**Quantified statement.** For arbitrary two allocations of a collision
+polynomial, the completed strong-equality correspondence is a regular factor
+completed-tensored with the rootwise blocks `Z_|k_rho|`. The affine normalized
+correspondence is the same formal scheme for every transfer vector, and its
+transverse rank is `2^(sum_rho abs(k_rho))`.
 
-**Depends on.**  C11 allocation fibers; C17 local `Z_2`; unique formal Hensel
-factorization into coprime root clusters; smooth elimination of `Phi`; the
-affine equalizer criterion; length upper bounds for the two stated global
-systems.
+**Depends on.** C11 allocation fibers; C22's all-`k` finite-flat Boolean
+relation; unique formal Hensel factorization into coprime root clusters; the
+global monic Wronskian divisor and its degree bound.
 
-**Computation.**  `verify_allocation_hensel_product.py` and
-`verify_mixed_allocation_equalizer.py` perform the exact quadratic-cubic
-reductions, standard-basis calculations, and colength-sixteen sandwiches.
+**Computation.** `verify_global_affine_rigidity.py` checks exact integer
+specializations of the Wronskian factorization for all allocation pairs
+through degree twelve and the symbolic leading-coefficient argument through
+degree twenty-nine.
+`verify_allocation_hensel_product.py` and
+`verify_mixed_allocation_equalizer.py` retain the exact quadratic-cubic
+colength-sixteen audits.
 
 **Prose.**  [ALLOCATION_BRANCH_INTERSECTIONS.md](ALLOCATION_BRANCH_INTERSECTIONS.md)
-proves the arbitrary strong Hensel product, explains the affine closed
-immersion, and derives equality from matching lower and upper lengths.
+proves the arbitrary strong Hensel product and kills the two shared affine
+coefficients before decomposing into local blocks.
 
-**External theorems.**  Formal Hensel factorization, formal implicit-function
-theorem, completed tensor-product facts, and local standard-basis length
-criterion.
+**External theorems.** Formal Hensel factorization and standard facts about
+completed tensor products and finite-flat ranks.
 
-**Obligations.**  Independent audit of the twenty-variable reductions is
-pending.  Global affine equalizers involving `Z_3`, `Z_4`, or arbitrary
-compensating transfer vectors remain outside the proved cases.
+**Obligations.** Independent audit of the completed Boolean descent and the
+Wronskian argument is pending. The twenty-variable reductions remain
+independent coordinate audits, not hypotheses.
 
 ## C19 — the three-transfer block
 
@@ -799,8 +806,8 @@ deduces finite flatness from the monic basis.
 
 **External theorems.**  Standard relative Gröbner-basis freeness criterion.
 
-**Obligations.**  Independent CAS/local-algebra audit remains pending.  The
-result does not yet appear in a proved global affine equalizer.
+**Obligations.** Independent CAS/local-algebra audit remains pending. C18
+places this block in every global affine equalizer in which it occurs.
 
 ## C20 — the four-transfer block
 
@@ -824,50 +831,43 @@ fiber.
 
 **External theorems.**  Standard relative Gröbner-basis freeness criterion.
 
-**Obligations.**  Independent CAS/local-algebra audit remains pending.  C22
-supplies the uniform local theorem; global compensating equalizers remain
-open.
+**Obligations.** Independent CAS/local-algebra audit remains pending. C22
+supplies the uniform local theorem and C18 the global coupling.
 
 ## C21 — master quotient theorem
 
-**Quantified statement.**  For every `n>=3` over every characteristic-zero
+**Quantified statement.** For every `n>=3` over every characteristic-zero
 field, let `B_n` be the reduced monic exact-degree locus of polynomials whose
-roots all have multiplicity at least two.  Projection modulo
-`<1,W>` restricts to a finite radicial morphism from `B_n`, hence a universal
-homeomorphism onto its closed image and a finite birational map on each
-component.  On every exact contact stratum it is unramified and a locally
-closed immersion.  Its `Phi=0`, `D!=0`, weighted-admissible slice maps exactly
-onto the exceptional seed locus with the same conclusions.  No injectivity
-is asserted for the unrestricted degree-at-most-`n` locus.
+roots all have multiplicity at least two. Projection modulo `<1,W>` is a
+closed immersion from `B_n`; equivalently `m_0,m_1` lie in the coefficient
+subalgebra generated by `m_2,...,m_(n-1)`. Its `Phi=0`, `D!=0`,
+weighted-admissible slice is isomorphic to the closed exceptional seed locus.
+No injectivity is asserted for the unrestricted degree-at-most-`n` locus.
 
-**Depends on.**  C07's full-contact omission criterion and Mason separation;
-C08's coincident-root stratification; weighted Newton identities and the
-Vandermonde base-locus lemma; the tangent divisibility
-`prod(W-r_i)^(lambda_i-1)` on each exact stratum; the explicit normalized
-quotient isomorphism `rho`.
+**Depends on.** C07's full-contact omission criterion; C08's coincident-root
+stratification; weighted Newton identities and the Vandermonde base-locus
+lemma; C22's Boolean local factorization relation; C18's global Wronskian
+equalizer; faithful flatness of completion; the explicit normalized quotient
+isomorphism `rho`.
 
-**Computation.**  None proves the all-degree statement.  Existing
-coincident-root eliminations in degrees five through eight and C17--C20/C22
-transfer calculations are regressions or evidence for the stronger
-closed-immersion conjecture.
+**Computation.** `verify_global_affine_rigidity.py` audits the universal
+Wronskian identity. Existing coincident-root eliminations and C17--C20
+transfer calculations are bounded regressions; none proves the all-degree
+statement.
 
 **Prose.**  [MASTER_QUOTIENT_THEOREM.md](MASTER_QUOTIENT_THEOREM.md) proves
-geometric injectivity by Mason, finiteness by weighted Newton coordinates on
-each coincident-root normalization and a finite-union module argument,
-stratumwise immersion by tangent divisibility, and the exceptional-slice
-formula by the explicit mutually inverse normalized coefficient charts.
+finiteness by weighted Newton coordinates, identifies every completed
+collision relation by Hensel products of C22 blocks, proves affine/strong
+equality by the global Wronskian, descends by completion, and obtains the
+exceptional slice from the mutually inverse normalized coefficient charts.
 
-**External theorems.**  Polynomial Mason--Stothers; standard normalization
-of coincident-root loci by the equal-weight root quotient; the homogeneous
-projective base-locus finiteness criterion; standard geometric criteria for
-radicial morphisms, universal homeomorphisms, and locally closed immersions.
+**External theorems.** Standard normalization of coincident-root loci by the
+equal-weight root quotient; the homogeneous projective base-locus finiteness
+criterion; formal Hensel factorization; faithful flatness of Noetherian
+completion; finite-morphism and closed-immersion criteria.
 
-**Obligations.**  It remains open whether the whole reduced union is
-unramified, or a closed immersion, at every collision point.  Equivalently,
-one must exclude all mixed tangent and higher infinitesimal affine secants.
-C22 covers every individual local block but not their arbitrary global
-coupling by one affine difference.  An
-independent scheme-theoretic audit of the finiteness argument is also pending.
+**Obligations.** Independent scheme-theoretic audit of the completed Boolean
+descent and finiteness argument is pending. No collision case remains open.
 
 ## C22 — the all-k transfer block
 
@@ -905,9 +905,9 @@ description of the symmetric-group coinvariant algebra; Reynolds exactness;
 the completeness criterion for filtered morphisms that are isomorphisms on
 associated gradeds.
 
-**Obligations.**  Independent audit of the cusp-factorization lemma and its
-filtered invariant descent remains pending.  The theorem handles every local
-block, not arbitrary global equalizers coupling several collision roots.
+**Obligations.** Independent audit of the cusp-factorization lemma and its
+filtered invariant descent remains pending. C18 uses these local relations to
+prove every global equalizer coupling several collision roots.
 
 ## C23 — universal factorization slices
 
@@ -953,6 +953,49 @@ and an independent affine-geometry audit remain desirable.  No classification
 of all higher-degree hyperplanes beyond their contact partition plus support
 moduli is claimed.
 
+## C24 — master cancellation construction
+
+**Quantified statement.** For every `m,r>=1` over characteristic zero and
+every nonzero `C`, the rational ansatz in
+[MASTER_CANCELLATION_CONSTRUCTION.md](MASTER_CANCELLATION_CONSTRUCTION.md)
+has determinant `-C` in the localization at `A=1+xy^m`. Its last coordinate
+is polynomial exactly when the finite operator `L_(m,r)` vanishes. Roots of
+the monic truncated-binomial parameter polynomial, followed by the displayed
+finite Hensel recurrence, give normalized cancellation polynomials. The
+generic fiber polynomial is irreducible, separable, and has exact degree
+`r(m+1)+1`; every root reconstructs one source point, and `(1,0,0)` has an
+explicit collision of that full cardinality over an algebraic closure.
+
+**Depends on.** The elementary coordinate identities `s=x/A` and
+`D=1-s(Q-Ps)^m=A^(-1)`; the `A`-adic pole calculation; formal polynomial
+integration; and C01 only for the final linear-equivalence comparison of the
+`(1,1)` member.
+
+**Computation.** `verify_master_universal.py` checks the parameter identity,
+finite recurrence, primitive fiber derivative and degree, and generated
+structural Jacobians. `verify_master_instances.py` verifies four exact maps,
+their polynomiality modulo the defining number field, determinant, and full
+collision polynomial. `generate_master_regression.py` emits exact data for a
+new pair.
+
+**Prose.** [MASTER_CANCELLATION_CONSTRUCTION.md](MASTER_CANCELLATION_CONSTRUCTION.md)
+separates the localized Jacobian theorem from polynomial cancellation, proves
+the finite operator criterion, derives the hypergeometric/truncated-binomial
+parameter and recurrence, gives the primitive-element reconstruction and
+uniform collision, compares ramification with weighted seeds, and demotes
+products/compositions to formal closure corollaries.
+
+**External theorems.** Gauss's lemma; uniqueness for solutions of a
+second-order linear ODE at an ordinary point; elementary Galois conjugacy and
+finite-separable extension facts. The cited truncated-binomial papers are
+context for an open arithmetic problem, not inputs to the proved theorem.
+
+**Obligations.** Independent audit of the all-`m,r` cancellation proof is
+pending. Uniform irreducibility and Galois groups of the parameter polynomial,
+minimal collision fields, equivalence of arbitrary tail deformations, and a
+global arithmetic/coordinate classification of all polynomial cancellation
+branches remain open.
+
 ## Cross-claim unresolved obligations
 
 The following obligations affect more than one node:
@@ -964,12 +1007,12 @@ The following obligations affect more than one node:
    primary-source hypothesis audit.
 4. C13's effective certificate and twist audit need an independent
    arithmetic-geometry review; its current uniform constants are coarse.
-5. Scheme-theoretic exceptional-component intersections and arbitrary global
-   transfer equalizers remain open; current claims are deliberately
-   set-theoretic or restricted to named transfer vectors.
-6. C21 proves finite radiciality and stratumwise immersion, but the
-   affine-rigidity closed-immersion conjecture at arbitrary collisions remains
-   open.
+5. Full conductors for exceptional-component intersections remain to be
+   tabulated, but C18 proves all affine allocation equalizers uniformly.
+6. C21 proves the affine-rigidity closed immersion; an independent audit of
+   its completed Boolean descent remains desirable.
 7. C23 rules out the first higher consecutive candidate arithmetically; a
    uniform classification of higher affine factorization complements remains
    open.
+8. C24 reduces cancellation to finite jets, but the arithmetic and
+   coordinate-equivalence classification of all branches remains open.

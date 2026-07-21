@@ -108,7 +108,7 @@ direction on a dense open subset of every exact collision stratum.  Formal
 implicit-function elimination removes one smooth parameter from `R_com` and
 does not alter the Artin multiplication of the transfer blocks.
 
-## The affine equalizer
+## The global affine equalizer theorem
 
 The normalized coefficient map forgets the constant and linear coefficients.
 The actual branch correspondence `D^aff` is consequently defined by
@@ -124,51 +124,76 @@ D^=\hookrightarrow D^{\mathrm{aff}}.             \tag{5}
 \]
 
 Equation (4) is global: unlike strong equality, it does not formally split
-root by root.  This is the sole coupling between the local transfer blocks.
+root by root. It is nevertheless rigid.
 
-### Equalizer criterion
-
-Assume the local blocks in (3) are finite flat over their reduced factors and
-put
+**Theorem.** For every pair of allocations over a characteristic-zero
+coefficient algebra,
 
 \[
-L(A,A')=\prod_{\rho:k_\rho\ne0}
-\operatorname{rank}\mathfrak Z_{|k_\rho|}.       \tag{6}
+                         \boxed{D^{\mathrm{aff}}=D^=.}            \tag{6}
 \]
 
-If a transverse slice of `D^aff` has length at most `L(A,A')`, then (5) is an
-isomorphism.  Indeed, `D^=` is already a closed subscheme of that length, so
-the induced surjection of local Artin rings has equal length.
-
-This reduces the global affine problem to a jet or initial-ideal upper bound;
-no further lower-bound construction is required.
-
-When the finite-flat conjecture
+Consequently the completed transverse algebra is finite flat of rank
 
 \[
-\operatorname{rank}\mathfrak Z_k=2^k             \tag{7}
+ \boxed{L(A,A')=\prod_{\rho:k_\rho\ne0}2^{|k_\rho|}
+                   =2^{\sum_\rho|k_\rho|}.}                      \tag{7}
 \]
 
-holds, the predicted transverse length is
+### Universal Wronskian proof
+
+Write the two global branch polynomials as
 
 \[
-\boxed{L(A,A')=2^{\sum_\rho|k_\rho|}.}           \tag{8}
+ M=Q^2R^3,\qquad N=S^2T^3,
 \]
 
-## Proven cases
+where the factors are monic and
 
-1. For transfers `(1,-1)` over the degree-twelve `(6,6)` collision, the two
-   blocks are dual numbers.  The exact second-jet upper bound is four, so the
-   equalizer criterion proves `D^aff=D^=`.
-2. For an isolated `k=2` block, direct elimination proves that allowing
-   `U^2-V^3` to be affine gives exactly the same ideal as strong equality.
-3. For the first global higher-transfer vector `(2,-2)`, the quadratic-cubic
-   initial ideal has colength sixteen, equal to the strong product.  Hence the
-   affine and strong correspondences coincide in this case as well.
+\[
+ 2\deg Q+3\deg R=2\deg S+3\deg T=n.
+\]
 
-## Conductor once affine rigidity holds
+Suppose `M-N=lambda W+mu` in the universal completed coordinate ring of
+`D^aff`. Set
 
-Suppose the affine equalizer criterion is satisfied.  Let `B_A,B_A'` be the
+\[
+ \mathcal W=NM'-MN'=N(M-N)'-(M-N)N'.             \tag{8}
+\]
+
+The derivative factorizations make `mathcal W` divisible by
+
+\[
+ F=QR^2ST^2,
+ \qquad \deg F=n+{\deg R+\deg T\over2}.           \tag{9}
+\]
+
+The two triple-factor degrees have the same parity. Unless both vanish, their
+sum is at least two, so `deg F>=n+1`; the right side of (8) has degree at most
+`n`. Since `F` is monic, this forces `mathcal W=0` over any `Q`-algebra,
+including rings with nilpotents. The coefficients of degrees `n` and `n-1`
+in
+
+\[
+ N\lambda-N'(\lambda W+\mu)=0
+\]
+
+then give `(1-n)lambda=0` and `-n mu=0`. Thus `lambda=mu=0`. If both triple
+factors are absent, `(Q-S)(Q+S)` is affine; the second factor has degree
+`n/2>=2` and unit leading coefficient, so the product is zero as well.
+
+This proof takes place before Hensel decomposition. It therefore kills the
+two coefficients shared by all local blocks at once, rather than trying to
+cancel separate rootwise affine errors. Combining (6) with (3) and C22 gives
+the rank formula (7).
+
+The earlier length-four and length-sixteen calculations for `(1,-1)`,
+`(2,-2)`, and `(2,-1,-1)` remain exact coordinate audits of this theorem; they
+are no longer separate hypotheses or exceptional cases.
+
+## Conductor
+
+Let `B_A,B_A'` be the
 two regular completed normalization branches and let
 
 \[
@@ -178,7 +203,7 @@ B_{A'}\twoheadrightarrow D
 \]
 
 be their quotient maps to the product algebra (3), after incidence
-elimination.  Then the completed component ring is
+elimination. Then the completed component ring is
 
 \[
 \widehat{\mathcal O}_{C,\bar\xi}
@@ -186,8 +211,8 @@ elimination.  Then the completed component ring is
 \]
 
 and its conductor in `B_A\oplus B_A'` is the direct sum of the two
-quotient kernels.  Thus classifying the local blocks and proving the one
-global upper bound determine both the completed intersection and conductor.
+quotient kernels. Thus C22 and the global Wronskian determine both the
+completed intersection and conductor for every allocation pair.
 
 ## The global `(2,-2)` theorem
 

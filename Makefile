@@ -5,6 +5,7 @@ SYSTEM_PYTHON ?= python3
 
 .PHONY: check verify verify-logged verify-minimal verify-core verify-geometry \
 	verify-theorems verify-regressions verify-derived verify-family \
+	verify-master \
 	verify-quartic verify-normal-forms verify-formal verify-lean-c01 \
 	verify-foundations verify-foundations-formal \
 	verify-coincident-root-loci scan-weighted-seeds
@@ -29,6 +30,7 @@ verify-core: verify-minimal
 verify-geometry: verify-core
 
 verify-theorems:
+	$(MAKE) verify-master
 	$(PYTHON) scripts/verify_weighted_seed_schema.py
 	$(PYTHON) scripts/verify_weighted_seed_theorem.py
 	$(PYTHON) scripts/verify_weighted_marked_root_model.py
@@ -46,12 +48,17 @@ verify-theorems:
 	$(PYTHON) scripts/classify_transfer_block_k3.py
 	$(PYTHON) scripts/classify_transfer_block_k4.py
 	$(PYTHON) scripts/verify_all_k_transfer_block.py
+	$(PYTHON) scripts/verify_global_affine_rigidity.py
 	$(PYTHON) scripts/verify_universal_factorization_geometry.py
 	$(PYTHON) scripts/verify_allocation_hensel_product.py
 	$(PYTHON) scripts/verify_mixed_allocation_equalizer.py
 	$(PYTHON) scripts/verify_omitted_value_classification.py
 	$(PYTHON) scripts/verify_repeated_root_boundary.py
 	$(PYTHON) scripts/verify_effective_chebotarev.py
+
+verify-master:
+	$(PYTHON) scripts/verify_master_universal.py
+	$(PYTHON) scripts/verify_master_instances.py
 
 verify-regressions:
 	$(PYTHON) scripts/verify_generic_discriminant_geometry.py

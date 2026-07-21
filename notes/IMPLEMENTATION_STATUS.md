@@ -35,6 +35,12 @@ identities and type (3) in selected degrees.
 
 ## Extended three-dimensional analysis
 
+- The master cancellation ansatz has a uniform written determinant proof, an
+  exact finite polynomiality operator, a truncated-binomial parameter formula,
+  and a coefficient recurrence. Generic fiber irreducibility, separability,
+  exact degree `r(m+1)+1`, reconstruction, and a symbolic collision are proved
+  for all `m,r`. Four maps are exact regressions; the arithmetic/equivalence
+  classification of all branches remains open.
 - Finite-field distributions and collision refinements are implemented.
 - The commuting inverse-Jacobian frame, low-degree symmetries, and tangent
   constraints are computed exactly.

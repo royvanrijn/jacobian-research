@@ -247,37 +247,33 @@ three-point collision are also independently formalized in Lean 4 by Dean
 Cureton; the later universal geometry is not asserted to be part of that
 formalization.
 
-## 6. The master quotient theorem and the remaining conjecture
+## 6. The master quotient and global affine rigidity
 
 On the monic exact-degree no-simple-root locus, the master quotient theorem
-says that `pi` is finite radicial, hence a universal homeomorphism onto its
-closed image and componentwise finite birational.  Its restriction to every
-exact contact stratum is unramified and a locally closed immersion.  After
-imposing `Phi=0`, `D!=0`, and weighted admissibility, its image is exactly the
-exceptional seed locus.  The exact-degree qualification is essential: the
+says that `pi` is a closed immersion onto its image. For a monic polynomial,
+its constant and linear coefficients are therefore regular
+scheme-theoretic functions of the coefficients of degrees `2,...,n-1`, even
+where contact strata collide. After imposing `Phi=0`, `D!=0`, and weighted
+admissibility, this identifies the resulting slice with the closed exceptional
+seed locus. The exact-degree qualification is essential: the
 degree-at-most-`n` locus contains all `(W-a)^2`, which have the same image
 modulo affine polynomials.
 
-The remaining strengthening is the following.
+The collision proof has two parts. C22 identifies every completed local
+square/cube relation with its full Boolean thickening; Hensel factorization
+tensors these relations over the distinct collision roots. The only remaining
+coupling is one equation
 
-> **Affine rigidity.**  Let `U` be the coefficient-space open defined by the
-> exact-degree and admissibility conditions relevant to (3).  The restriction
-> of `pi:V_n -> V_n/L` from the monic no-simple-root locus over `U` to `U` is
-> a closed immersion.
+\[
+ Q^2R^3-S^2T^3=\lambda W+\mu.
+\]
 
-For a monic polynomial this says that its constant and linear coefficients
-are regular scheme-theoretic functions of the coefficients of degrees
-`2,...,n`.  Set-theoretic injectivity is the unique-omitted-value theorem,
-and finiteness follows from weighted Newton coordinates on the coincident-root
-normalizations.  The closed-immersion assertion additionally requires the
-projection center `L` to avoid tangent vectors and higher infinitesimal
-secants of the whole union at collision points.
-
-This identifies the role of the transfer program.  The schemes `Z_k`, their
-affine variants, and the global compensating equalizers test precisely the
-infinitesimal allocation correspondences which pointwise Mason--Stothers
-cannot see.  The results through `k=4` and the global equalizer calculations
-are evidence, not yet an all-degree proof of affine rigidity.
+The Wronskian `S^2T^3(Q^2R^3)' - Q^2R^3(S^2T^3)'` is divisible by a monic
+polynomial of degree greater than `n`, while the displayed affine equation
+makes it have degree at most `n`. It vanishes, and its two leading
+coefficients force `lambda=mu=0`. Thus affine and strong completed equalizers
+coincide for every collision tree. Faithful flatness of completion upgrades
+the local statement to the global closed immersion.
 
 ## 7. Reproducible coincident-root comparison
 
@@ -305,9 +301,10 @@ It checks all maximal types in degrees five through eight:
  \quad(2,2,2,2),\quad(3,3,2).
 \]
 
-The asserted dimensions agree with C10.  These are independent bounded-degree
+The asserted dimensions agree with C10. These are independent bounded-degree
 ideal comparisons through degree seven and normalization-rank audits in degree
-eight; they are not a proof of the all-degree closed-immersion conjecture.
+eight; they are regressions for, not proofs of, the all-degree
+closed-immersion theorem.
 
 ## References and attribution
 
