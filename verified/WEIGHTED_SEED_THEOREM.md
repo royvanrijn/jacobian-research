@@ -166,7 +166,7 @@ certificates through inverse degree ten provide computational regressions.
 
 For the canonical family `H_d(W)=W^d(1-W)`, the only primitive zeros are the
 distinguished points `0` and `1`. Its global geometry is now proved in
-[the canonical-family image theorem](../experimental/geometry/CANONICAL_FAMILY_IMAGE.md).
+[the canonical-family image theorem](../extended-geometry/CANONICAL_FAMILY_IMAGE.md).
 Deformed seeds should be treated afterward because their extra primitive
 zeros create additional `C=0` branches.  The earlier one-extra-zero derivation
 is retained in
@@ -186,7 +186,7 @@ separate arithmetic step.
 
 The good-reduction asymptotic, its `S_n` fixed-point probabilities, and the
 transfer from the pencil to the three-dimensional target are proved in
-[the finite-field theorem](../experimental/geometry/FINITE_FIELD_CHEBOTAREV.md).
+[the finite-field theorem](../extended-geometry/FINITE_FIELD_CHEBOTAREV.md).
 
 ### Clean-room reproduction
 

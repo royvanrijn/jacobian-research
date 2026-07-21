@@ -4,7 +4,7 @@ This note generalizes the marked-root viewpoint from the exceptional cubic to
 the admissible weighted inverse-pencil family.  It packages formulas already
 used in [WEIGHTED_SEED_THEOREM.md](../../verified/WEIGHTED_SEED_THEOREM.md) and the divisor
 classification in
-[DICRITICAL_COMPACTIFICATION.md](../../experimental/geometry/DICRITICAL_COMPACTIFICATION.md).  The main
+[DICRITICAL_COMPACTIFICATION.md](../../extended-geometry/DICRITICAL_COMPACTIFICATION.md).  The main
 new point is the correct global formulation: the raw simple-root locus works
 over `C!=0`, but over `C=0` one must normalize the root incidence and retain
 exactly the branches on which reconstruction is regular.

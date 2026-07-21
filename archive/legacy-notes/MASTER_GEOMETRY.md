@@ -154,7 +154,7 @@ replace those slice and local-algebra arguments.
 
 The complete finite-normalization, slice-nonemptiness, exact-closure, and
 common-coarsening proof for C08--C11 is collected in
-[COINCIDENT_ROOT_REBUILD.md](../../experimental/geometry/COINCIDENT_ROOT_REBUILD.md).
+[COINCIDENT_ROOT_REBUILD.md](../../extended-geometry/COINCIDENT_ROOT_REBUILD.md).
 
 ## 4. Why 2 and 3 are the cusp
 

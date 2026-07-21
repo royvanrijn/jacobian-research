@@ -336,7 +336,7 @@ marks a root of `H(W)-sW+t`, normalize it over the degenerate `C=0` fiber,
 and retain its regular-reconstruction open.  The expanded weighted derivation
 is retained in
 [archive/core-support](../archive/core-support/WEIGHTED_MARKED_ROOT_MODEL.md).
-[DICRITICAL_COMPACTIFICATION.md](../experimental/geometry/DICRITICAL_COMPACTIFICATION.md) (Claim C16)
+[DICRITICAL_COMPACTIFICATION.md](../extended-geometry/DICRITICAL_COMPACTIFICATION.md) (Claim C16)
 classifies the reconstruction-pole divisors on the corresponding normalized
 inverse-graph compactification.
 

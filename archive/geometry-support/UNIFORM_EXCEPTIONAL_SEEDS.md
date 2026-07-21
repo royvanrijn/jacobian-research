@@ -90,7 +90,7 @@ value theorem and unique factorization make it the displayed disjoint union.
 The root parameter space has dimension `ell(lambda)`.  The polynomial
 `Phi_lambda` is nonzero—for example its specialization with all roots zero is
 `1`.  Nonemptiness of its exact admissible zero set requires a separate
-argument: [COINCIDENT_ROOT_REBUILD.md](../../experimental/geometry/COINCIDENT_ROOT_REBUILD.md#3-nonemptiness-of-every-full-contact-stratum)
+argument: [COINCIDENT_ROOT_REBUILD.md](../../extended-geometry/COINCIDENT_ROOT_REBUILD.md#3-nonemptiness-of-every-full-contact-stratum)
 first finds an admissible zero on the maximally collided `(n)` locus, then
 splits it according to `lambda` while preserving `Phi=0` by the formal
 implicit-function theorem.  Thus the retained principal divisor has

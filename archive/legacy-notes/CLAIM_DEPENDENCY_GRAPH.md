@@ -313,7 +313,7 @@ identities, homogeneous graph formulas, compactified source dimensions,
 affine-bundle identity, admissible witness, and exact examples through degree
 ten.  The examples do not prove genericity in all degrees.
 
-**Prose.**  [GENERIC_DISCRIMINANT_CURVE.md](../../experimental/geometry/GENERIC_DISCRIMINANT_CURVE.md)
+**Prose.**  [GENERIC_DISCRIMINANT_CURVE.md](../../extended-geometry/GENERIC_DISCRIMINANT_CURVE.md)
 proves compactification, exhaustion, all infinity degenerations, closure
 dimension, nonempty good open, and the genus count.
 
@@ -369,7 +369,7 @@ identities are exact.  Canonical, deformed, repeated-root, and quartic scripts
 check bounded instances and nonsplit factors; those are regressions for the
 uniform family statements.
 
-**Prose.**  [CANONICAL_FAMILY_IMAGE.md](../../experimental/geometry/CANONICAL_FAMILY_IMAGE.md),
+**Prose.**  [CANONICAL_FAMILY_IMAGE.md](../../extended-geometry/CANONICAL_FAMILY_IMAGE.md),
 [DEFORMED_SEED_BOUNDARY.md](../geometry-support/DEFORMED_SEED_BOUNDARY.md), and
 [REPEATED_ROOT_BOUNDARY.md](../geometry-support/REPEATED_ROOT_BOUNDARY.md) prove the lacunary
 factor classification, direct boundary fibers, valuation formula, and both
@@ -398,7 +398,7 @@ Mason--Stothers inequality; the all-double difference-of-squares endpoint.
 classifier; `verify_unique_omitted_value.py` checks support and endpoint
 identities.  Mason alternatives through degree 24 are regression tests.
 
-**Prose.**  [OMITTED_VALUE_CLASSIFICATION.md](../../experimental/geometry/OMITTED_VALUE_CLASSIFICATION.md)
+**Prose.**  [OMITTED_VALUE_CLASSIFICATION.md](../../extended-geometry/OMITTED_VALUE_CLASSIFICATION.md)
 proves exhaustiveness of factor matching;
 [UNIQUE_OMITTED_VALUE.md](../geometry-support/UNIQUE_OMITTED_VALUE.md) proves separation and the
 remaining all-double case.
@@ -431,7 +431,7 @@ Vandermonde identity, and eliminations in degrees five through eight are
 checked exactly.  The new Macaulay2 comparison is an independent bounded
 audit, not an all-degree proof.
 
-**Prose.**  [COINCIDENT_ROOT_REBUILD.md](../../experimental/geometry/COINCIDENT_ROOT_REBUILD.md) proves
+**Prose.**  [COINCIDENT_ROOT_REBUILD.md](../../extended-geometry/COINCIDENT_ROOT_REBUILD.md) proves
 nonemptiness by splitting an admissible maximally collided polynomial,
 finiteness by weighted Newton coordinates, and the exact dimension formula.
 [CONTACT_PARTITION_STRATA.md](../geometry-support/CONTACT_PARTITION_STRATA.md) and
@@ -462,7 +462,7 @@ used only for separation of distinct types, not atom selection.
 **Computation.**  `verify_contact_atom_principle.py` checks semigroup atoms,
 excess identities, threshold-`r` formulas, and bounded enumerations.
 
-**Prose.**  [CONTACT_ATOM_PRINCIPLE.md](../../experimental/geometry/CONTACT_ATOM_PRINCIPLE.md) gives the
+**Prose.**  [CONTACT_ATOM_PRINCIPLE.md](../../extended-geometry/CONTACT_ATOM_PRINCIPLE.md) gives the
 uniform semigroup and dimension-optimization proof.
 
 **External theorems.**  Mason--Stothers only for the subsequent separation
@@ -492,7 +492,7 @@ root-splitting deformation; irreducibility of every maximal
 certificates, component counts, and exact degree-six/eight intersections are
 checked.  Bounded Mason scans are regressions only.
 
-**Prose.**  [COINCIDENT_ROOT_REBUILD.md](../../experimental/geometry/COINCIDENT_ROOT_REBUILD.md) derives
+**Prose.**  [COINCIDENT_ROOT_REBUILD.md](../../extended-geometry/COINCIDENT_ROOT_REBUILD.md) derives
 both directions of the closure order from finite coincident-root
 normalizations, proves maximal irreducibility, and derives intersections from
 unique omission.  [UNIFORM_EXCEPTIONAL_SEEDS.md](../geometry-support/UNIFORM_EXCEPTIONAL_SEEDS.md)
@@ -525,7 +525,7 @@ H=(-M+M'(0)W+M(0))/D
 and is its normalization.  Over the generic exact collision type
 `nu=(m_1,...,m_k)`, its fiber is the set of allocations
 `2i_rho+3j_rho=m_rho` with totals `(a,b)`, counted by the coefficient formula
-in [COMPONENT_NORMALIZATION.md](../../experimental/geometry/COMPONENT_NORMALIZATION.md).
+in [COMPONENT_NORMALIZATION.md](../../extended-geometry/COMPONENT_NORMALIZATION.md).
 
 **Depends on.**  C10's irreducible components; universal endpoint derivative
 for smoothness; seven low endpoint cases; finiteness of the weighted Newton
@@ -536,9 +536,9 @@ each collision root.
 derivatives, seven saturated singular ideals, finiteness identities,
 degree-one behavior, and allocation counts.
 
-**Prose.**  [COINCIDENT_ROOT_REBUILD.md](../../experimental/geometry/COINCIDENT_ROOT_REBUILD.md) gives the
+**Prose.**  [COINCIDENT_ROOT_REBUILD.md](../../extended-geometry/COINCIDENT_ROOT_REBUILD.md) gives the
 finite-normalization proof in the common coincident-root framework;
-[COMPONENT_NORMALIZATION.md](../../experimental/geometry/COMPONENT_NORMALIZATION.md) proves smoothness,
+[COMPONENT_NORMALIZATION.md](../../extended-geometry/COMPONENT_NORMALIZATION.md) proves smoothness,
 normality, finiteness, birationality, and the allocation formula in detail.
 
 **External theorems.**  A finite birational morphism from a normal integral
@@ -577,7 +577,7 @@ affine-equality reduction, and the upper/lower length-four sandwich.
 elementary triangular ideal proof and independently checks the two square
 directions and length-four algebra using only rational arithmetic.
 
-**Prose.**  [DEGREE12_LOCAL_SINGULARITY.md](../../experimental/geometry/DEGREE12_LOCAL_SINGULARITY.md)
+**Prose.**  [DEGREE12_LOCAL_SINGULARITY.md](../../extended-geometry/DEGREE12_LOCAL_SINGULARITY.md)
 passes from those finite calculations to completed local rings, identifies
 the fiber product, and computes the conductor.
 
@@ -617,7 +617,7 @@ integers and discriminant degrees, checks the branch derivative, and verifies
 the exact full/pencil/boundary decomposition in degrees three and four.
 `verify_weighted_chebotarev.py` retains permutation and sample regressions.
 
-**Prose.**  [FINITE_FIELD_CHEBOTAREV.md](../../experimental/geometry/FINITE_FIELD_CHEBOTAREV.md) constructs
+**Prose.**  [FINITE_FIELD_CHEBOTAREV.md](../../extended-geometry/FINITE_FIELD_CHEBOTAREV.md) constructs
 `B_H`, proves monodromy preservation, audits every twist hypothesis, derives
 the explicit error, and separates the exact discriminant and `C=0` terms.
 
@@ -633,7 +633,7 @@ zeroth entry and first moment are exact.
 ## C14 — explicit quartic weighted model
 
 **Quantified statement.**  For the single quartic weighted map displayed in
-[QUARTIC_WEIGHTED_GEOMETRY.md](../../experimental/geometry/QUARTIC_WEIGHTED_GEOMETRY.md), over
+[QUARTIC_WEIGHTED_GEOMETRY.md](../../extended-geometry/QUARTIC_WEIGHTED_GEOMETRY.md), over
 characteristic zero, the determinant is `-6`, the inverse cover has geometric
 and arithmetic monodromy `S_4`, its discriminant has exactly two ordinary
 cusps and one ordinary node, and its image, fiber cardinalities, singular
@@ -652,7 +652,7 @@ monodromy.
 incidence, discriminant normalization, and key fiber identities with a
 dependency-free sparse-polynomial implementation.
 
-**Prose.**  [QUARTIC_WEIGHTED_GEOMETRY.md](../../experimental/geometry/QUARTIC_WEIGHTED_GEOMETRY.md)
+**Prose.**  [QUARTIC_WEIGHTED_GEOMETRY.md](../../extended-geometry/QUARTIC_WEIGHTED_GEOMETRY.md)
 organizes the exact computations into the global image and boundary proof.
 
 **External theorems.**  None for the finite polynomial identities; only
@@ -681,7 +681,7 @@ consequence artifact.
 
 **Prose.**  [CUBIC_HOMOGENEOUS_REDUCTION.md](../derived-constructions/CUBIC_HOMOGENEOUS_REDUCTION.md)
 and [CUBIC_LINEAR_REDUCTION.md](../derived-constructions/CUBIC_LINEAR_REDUCTION.md) document each
-transformation and the dimension counts.  [C15_INDEPENDENT_AUDIT.md](../../experimental/geometry/C15_INDEPENDENT_AUDIT.md)
+transformation and the dimension counts.  [C15_INDEPENDENT_AUDIT.md](../../extended-geometry/C15_INDEPENDENT_AUDIT.md)
 audits the hypotheses and consequences.
 
 **External theorems.**  Campbell Theorems 4--5, Gorni--Zampieri Propositions
@@ -721,7 +721,7 @@ discriminant map and Kummer leading terms; `verify_c16_blowup_geometry.py`
 checks the graph coordinates, both zero-cluster blow-up charts, toric
 relations and reconstruction valuations through multiplicity nineteen.
 
-**Prose.**  [DICRITICAL_COMPACTIFICATION.md](../../experimental/geometry/DICRITICAL_COMPACTIFICATION.md)
+**Prose.**  [DICRITICAL_COMPACTIFICATION.md](../../extended-geometry/DICRITICAL_COMPACTIFICATION.md)
 proves exhaustiveness by valuations and applies the valuative criterion.
 [C16_BLOWUP_GEOMETRY.md](../geometry-support/C16_BLOWUP_GEOMETRY.md) gives the centers, four graph
 charts, local toric charts, exceptional divisors, discrepancies, dual graphs,

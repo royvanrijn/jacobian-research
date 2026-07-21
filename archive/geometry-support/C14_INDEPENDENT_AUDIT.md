@@ -1,7 +1,7 @@
 # Clean-room strengthening of the explicit quartic model
 
 This audit independently reconstructs the central exact algebra of
-[QUARTIC_WEIGHTED_GEOMETRY.md](../../experimental/geometry/QUARTIC_WEIGHTED_GEOMETRY.md).  It imports
+[QUARTIC_WEIGHTED_GEOMETRY.md](../../extended-geometry/QUARTIC_WEIGHTED_GEOMETRY.md).  It imports
 neither SymPy nor the project weighted-map implementation.
 
 Starting from
