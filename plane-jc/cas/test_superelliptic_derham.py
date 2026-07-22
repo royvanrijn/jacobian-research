@@ -98,7 +98,29 @@ assert curve6.character_dimension(3) == 5
 assert sum(curve6.character_dimension(r) for r in range(1, 4)) == 14
 assert curve6.compact_h1_dimension == 14
 
+# The Gauss--Manin layer differentiates in the parameter directions and then
+# reuses Hermite reduction.  On the two-parameter elliptic family, the
+# connection is flat and its only denominator is the discriminant divisor.
+u, v = sp.symbols("u v")
+elliptic_A = t**3 + u * t + v
+elliptic = SuperellipticDeRham(t, elliptic_A, 2, check_squarefree=False)
+connection = elliptic.gauss_manin_connection((u, v), 1)
+assert connection.basis == (1, t)
+Mu, Mv = connection.matrices
+curvature = (
+    Mv.diff(u) - Mu.diff(v) + Mu * Mv - Mv * Mu
+).applyfunc(sp.factor)
+assert curvature == sp.zeros(2)
+discriminant = sp.factor(sp.discriminant(elliptic_A, t))
+for matrix in connection.matrices:
+    for value in matrix:
+        denominator = sp.factor(sp.denom(sp.cancel(value)))
+        assert sp.rem(sp.Poly(discriminant, u), sp.Poly(denominator, u)) == 0 or sp.rem(
+            sp.Poly(denominator, u), sp.Poly(-discriminant, u)
+        ) == 0
+
 print("PASS: superelliptic Hermite/de Rham reduction")
 print("PASS: (72,108) gives 11 solved coefficients and 6 compact obstructions")
 print("PASS: character dimensions sum to compact H^1_deRham")
 print("PASS: trivial character descends to a rational quotient differential")
+print("PASS: elliptic Gauss--Manin matrices are flat with discriminant poles")

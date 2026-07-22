@@ -18,10 +18,12 @@ reproduced.”
 | Newton--boundary dictionary | complete as a qualified comparison | [NEWTON_BOUNDARY_DICTIONARY.md](NEWTON_BOUNDARY_DICTIONARY.md) marks exact, standard, interpretive, and speculative correspondences. |
 | Conceptual replacement | investigated; negative result | No intersection, conductor, ramification, determinant, or Smith-normal-form proof is established.  The order-seven grading/value-semigroup question remains repository-original conjectural work. |
 | Frontier 125--150 | complete as a deterministic published-table regression | [NEXT_DEGREE_FRONTIER.md](NEXT_DEGREE_FRONTIER.md) records all 13 pairs and all 24 chain realizations.  It does not claim to independently reimplement the complete-chain generator or to have derived the new Laurent systems. |
-| Family extension | tested; no theorem | Ratio \(2:3\) and gcd data do not suffice.  The \((96,144)\) repeated-tail case is the first proposed reuse experiment. |
+| Family extension | compiler middle end tested; no family theorem | Ratio \(2:3\) and gcd data do not suffice.  The \((72,108)\) six-equation/de Rham identification now has an explicit tail-basis certificate and the engine computes Gauss--Manin matrices.  The proposed \((96,144)\) repeated-tail row has a source-level conflict with the 2016 lower-side exclusion and no derived Laurent bands. |
 | Search-policy consequence | complete | [SEARCH_POLICY.md](SEARCH_POLICY.md) requires admissibility and boundary filters before coefficient solving and reserves sub-frontier searches for tests and automorphisms. |
 
 Accordingly, the degree-125 consequence is locally reproduced in the precise
 conditional sense used by this directory.  The next research objectives are
-deriving the six \((96,144)\) Laurent systems and testing whether the repeated
-\((8,28)\to(11/4,7)\) tail carries the old valuation obstruction.
+reconciling the 2016 exclusion of the \((8,28),(8,40)\) boundary data with the
+2017 raw complete-chain table, then deriving Laurent systems only for rows
+that survive that audit.  The compiler will not infer a de Rham block from
+corners alone.

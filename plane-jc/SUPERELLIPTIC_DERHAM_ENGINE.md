@@ -8,6 +8,12 @@ tests in [`cas/test_superelliptic_derham.py`](cas/test_superelliptic_derham.py).
 It reproduces the structural facts of the audited `(72,108)` first block and
 works for non-hyperelliptic superelliptic examples.
 
+The compiler IR, explicit `(72,108)` tail-obstruction certificate, and
+source-aware `(96,144)` record are in
+[`NEWTON_DERHAM_COMPILER.md`](NEWTON_DERHAM_COMPILER.md) and
+[`cas/newton_derham_compiler.py`](cas/newton_derham_compiler.py).  The engine
+also computes character-wise Gauss--Manin connection matrices.
+
 This is an engine for a leading coefficient block once its Newton bands and
 supports have been derived.  It does **not** derive Laurent polygons from an
 admissible corner chain.  That is the principal missing interface for the
@@ -212,6 +218,20 @@ layer identifies those six equations as compact de Rham coordinates after
 clearing the modular-inverse denominator.  The old raw coefficient solve is
 therefore retained only as a support certificate and a regression oracle.
 
+There is now a denominator-free representative certificate for this
+identification.  The supported solve gives
+
+\[
+ 2AD_*'-3A'D_*-t^2=\sum_{i=0}^5 C_i t^{13+i}.
+\]
+
+The six tail differentials `t^(13+i)dt/y^5` form a compact de Rham basis:
+the low-coefficient map on every possible primitive `D/y^3`, `deg D<=12`,
+is triangular with nonzero determinant `prod_(k=0)^12(2k-3)`.  Hence the
+compact coordinates are exactly `-C_i/2` in that basis.  The compiler
+regression checks the identity, determinant, support bounds, and all six
+coordinates.
+
 ## 6. Scaling quotient before elimination
 
 For `(72,108)`, the endpoint normalization leaves
@@ -241,18 +261,42 @@ order of operations:
 For a new chain the finite diagonal action must be derived from its own
 endpoint normalization.  The order seven in (14) is not a universal feature.
 
-## 7. Frontier experiments
+## 7. Gauss--Manin connection
+
+For a parameter `u` and a basis representative `p(t,u)dt/y^r`, differentiation
+followed by the same Hermite reduction gives
+
+\[
+ \nabla_{\partial_u}\left[p\frac{dt}{y^r}\right]
+ =\operatorname{Red}_r\left[
+ \frac{A\partial_up-(r/a)p\partial_uA}{y^{a+r}}dt
+ \right].
+\]
+
+`SuperellipticDeRham.gauss_manin_connection(...)` returns these matrices in
+the deterministic compact basis.  A two-parameter elliptic regression checks
+flatness and discriminant-supported poles.  This promotes the fiberwise
+de Rham reducer to a family-level engine; the plane-JC obstruction itself is
+a generally non-horizontal section.
+
+## 8. Frontier experiments
 
 ### `(96,144)`
 
-The chain
+The 2017 table contains the chain
 
 \[
  (8,40)\longrightarrow(8,28)\longrightarrow(11/4,7)
 \]
 
-is the clean reuse test.  The next work item is to perform the new first
-descent `(8,40)->(8,28)` and record:
+as a raw length-two complete-chain row.  Before treating it as a live reuse
+test, a source-level conflict must be resolved: the 2016 lower-side paper says
+that `B_0=(8,28), B_1=(8,40)` leads to the impossible last lower corner
+`(8,4)` and can be discarded.  The compiler therefore records the row as
+incomplete and possibly pre-excluded.
+
+If the row survives that reconciliation, the next work item is to perform the
+new first descent `(8,40)->(8,28)` and record:
 
 - the Laurent coordinate change and exact band supports at `(8,28)`;
 - the leading pair `(a,b)` and right-hand monomial `R`;
@@ -274,7 +318,7 @@ the engine.  The expected diagnostic is not necessarily genus three or six
 conditions: it is the character dimension determined by the derived
 `(a,b,deg A)` and formulae (10)--(11).
 
-## 8. Reproduction
+## 9. Reproduction
 
 With the repository's pinned SymPy dependency installed, run
 
@@ -289,6 +333,21 @@ PASS: superelliptic Hermite/de Rham reduction
 PASS: (72,108) gives 11 solved coefficients and 6 compact obstructions
 PASS: character dimensions sum to compact H^1_deRham
 PASS: trivial character descends to a rational quotient differential
+PASS: elliptic Gauss--Manin matrices are flat with discriminant poles
+```
+
+The compiler certificate is checked separately:
+
+```bash
+python3 plane-jc/cas/test_newton_derham_compiler.py
+```
+
+Expected output:
+
+```text
+PASS: (72,108) support equations are certified de Rham tail coordinates
+PASS: the six tail classes have an exact triangular independence certificate
+PASS: compiler IR refuses to invent missing (96,144) Laurent bands
 ```
 
 The existing structural checker remains complementary:

@@ -8,6 +8,17 @@ Its fast regression is:
 python3 plane-jc/cas/test_superelliptic_derham.py
 ```
 
+The source-aware compiler IR and the explicit `(72,108)` tail-basis
+certificate are documented in
+[`../NEWTON_DERHAM_COMPILER.md`](../NEWTON_DERHAM_COMPILER.md).  Run:
+
+```bash
+python3 plane-jc/cas/test_newton_derham_compiler.py
+```
+
+This also verifies that the incomplete `(96,144)` table row is rejected until
+its Laurent bands and source-level lower-side conflict are resolved.
+
 The exact 90 MB Zenodo attachment and its extracted source snapshot are pinned
 in the repository at
 `plane-jc/external/zenodo-21479814/jc2-72-108-exact-certificates-v1.0.1.zip`

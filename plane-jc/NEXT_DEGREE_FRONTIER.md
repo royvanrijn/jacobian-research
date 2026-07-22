@@ -42,7 +42,7 @@ silently treated as solved.
 | \((90,135)\) | 45; \(2:3\) | \((9,36)\to(17/9,4)\) with \((m,n)=(3,2),(2,3)\); \((9,36)\to(9,24)\to(11/3,8)\); and \((12,33)\to(11/3,8)\), both with \((2,3)\) | four published realizations; their Laurent polygons and coefficient systems remain to be derived | very high | no |
 | \((56,140)\) | 28; \(2:5\) | F11, \((7,21)\to(13/7,3)\) | different approximate-root multiplicities | high | no |
 | \((84,140)\) | 28; \(3:5\) | F9, \((7,21)\to(11/7,2)\) | family companion to the previously excluded \((56,84)\) | medium-to-high; prior \((7,21)\) work may help | no, but older \((7,21)\) reductions may be reusable |
-| \((96,144)\) | 48; \(2:3\) | \((8,40)\to(8,28)\to(11/4,7)\), \((m,n)=(3,2)\); four \((2,3)\) chains from \((12,36)\), through respectively \((12,33)\to(11/3,8)\), \((9,24)\to(11/3,8)\), \((21/4,9)\to(19/4,8)\), and \((21/4,9)\to(12/4,5)\); and \((12,36)\to(12,30)\to(16/3,10)\to(11/6,3)\), \((m,n)=(3,2)\) | six published realizations; one contains the old tail, but all Laurent systems remain to be constructed | very high | not unchanged; the old tail may give a reusable subroutine after a new first descent |
+| \((96,144)\) | 48; \(2:3\) | \((8,40)\to(8,28)\to(11/4,7)\), \((m,n)=(3,2)\); four \((2,3)\) chains from \((12,36)\), through respectively \((12,33)\to(11/3,8)\), \((9,24)\to(11/3,8)\), \((21/4,9)\to(19/4,8)\), and \((21/4,9)\to(12/4,5)\); and \((12,36)\to(12,30)\to(16/3,10)\to(11/6,3)\), \((m,n)=(3,2)\) | six rows in the 2017 table; no Laurent systems derived.  The repeated-tail row must first be reconciled with the 2016 lower-side remark that discards \(B_0=(8,28),B_1=(8,40)\) via the impossible corner \((8,4)\) | source reconciliation first | not unchanged; reuse is presently an architecture experiment, not a live exclusion |
 | \((108,144)\) | 36; \(3:4\) | \((8,28)\to(7/4,3)\) | same first corner as the audited case but a different final corner and exponent ratio | high | no |
 | \((42,147)\) | 21; \(2:7\) | F7, \((6,15)\to(7/3,4)\) | large degree ratio and approximate-root exponent | high | no |
 | \((63,147)\) | 21; \(3:7\) | F8, \((6,15)\to(8/3,5)\) | companion chain to F7 | high | no |
@@ -70,10 +70,24 @@ first-block field.  The frontier contains many other \(2:3\) pairs, and their
 corner chains differ.  Even \((108,144)\), which shares \(A_0=(8,28)\), uses
 ratio \(3:4\) and final corner \((7/4,3)\), so the coefficient system changes.
 
-A defensible parameterized conjecture is:
+A defensible parameterized compiler conjecture is:
 
 > A repeated admissible tail should permit reuse of its valuation/band descent
 > after the earlier chain has been separately normalized.
 
-The \((96,144)\) chain through \((8,40)\to(8,28)\to(11/4,7)\) is the first
-test.  This is a follow-up experiment, not a proved reusable argument.
+The raw \((96,144)\) row through
+\((8,40)\to(8,28)\to(11/4,7)\) initially looked like the first test.  A
+source-level rereading changes that status.  In the 2016 lower-side paper,
+the remark following Proposition 3.29 says that
+\(B_0=(8,28),B_1=(8,40)\) leads to the impossible last lower corner
+\((8,4)\) and can be discarded.  The 2017 Section 7 table nevertheless lists
+the length-two complete chain.  The formal proposition proves the
+impossibility of the relevant class of last lower corners; the application to
+this particular `B_0,B_1` pair is stated in the remark as straightforward.
+
+The two source statements must therefore be reconciled before the row is
+treated as a live frontier case.  It remains a useful synthetic test of a
+source-aware compiler: [`cas/newton_derham_compiler.py`](cas/newton_derham_compiler.py)
+records the five missing band-level inputs and refuses to copy the old
+genus-three block into the new row.  See
+[`NEWTON_DERHAM_COMPILER.md`](NEWTON_DERHAM_COMPILER.md).

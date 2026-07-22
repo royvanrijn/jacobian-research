@@ -1,5 +1,11 @@
 # Stable normal-form audit and explicit consequences
 
+The 190-variable Image and quartic HN witnesses below remain valid artifacts
+of the conservative 95-variable reduction.  They are no longer the best
+repository dimensions: the [essential 21-variable construction](IMAGE_VANISHING_COUNTEREXAMPLES.md)
+gives a direct `SIC(21)` witness and one explicit 42-variable quartic for both
+the generalized Laplacian and classical HN Vanishing Conjectures.
+
 ## Corrected theorem
 
 Over any characteristic-zero field, the normalized foundational Keller map is connected to an
