@@ -132,14 +132,26 @@ jobs:
     steps:
       - name: Install the pinned Macaulay2 package
         run: |
-          apt-get update
-          apt-get install --yes --no-install-recommends \
-            git make macaulay2=1.24.11+ds-5+b1
+          apt-get update -qq
+          apt-get install -qq --yes --no-install-recommends \
+            ca-certificates git make macaulay2=1.24.11+ds-5+b1
       - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
         with:
           persist-credentials: false
       - name: Run the pinned Macaulay2 comparison
-        run: make verify-coincident-root-loci
+        shell: bash
+        run: |
+          mkdir -p artifacts/verification
+          set -o pipefail
+          make verify-coincident-root-loci 2>&1 | tee artifacts/verification/macaulay2.log
+      - name: Archive Macaulay2 log
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: macaulay2-${{ github.sha }}
+          path: artifacts/verification/macaulay2.log
+          if-no-files-found: error
+          retention-days: 14
 
   verification-complete:
     name: verification-complete

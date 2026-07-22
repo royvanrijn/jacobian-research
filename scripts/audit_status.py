@@ -43,11 +43,13 @@ expected = [
     "External quartic-island classification",
     "Stable normal-form consequences",
     "Dicritical compactification",
+    "Marked-point dimension barrier",
     "Cancellation construction",
     "Cancellation-parameter arithmetic",
     "Boundary distinction",
     "Rigidity within the current ansatz",
     "Degreewise stable-multiplicity theorem",
+    "Degree-five stable-moduli theorem",
 ]
 actual = [cells[0] for cells in rows]
 assert actual == expected, "STATUS.md result rows are missing, duplicated, or out of order"
