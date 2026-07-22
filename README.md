@@ -127,19 +127,42 @@ and independent Macaulay2 comparison are documented in
 
 ## Research status
 
-There are three primary continuation problems:
+The former `OP-MARK` is now complete as `H3`: the coarse affine mark extends
+uniquely over every DVR limit.  The collision fiber at multiplicity `mu` is
+`k[T]/(T^mu)`, which is nonreduced but has one geometric point.
 
-- `OP-MARK`: valuative affine-sheet extension through every collision stratum.
-- `OP-CR`: cancellation contact resultants for `r>=6`; the first five
-  columns are complete.
-- `OP-LR`: intrinsic target coercivity and no escape for filtered LR contact.
+There are two primary continuation problems:
+
+- `OP-CR`: cancellation contact resultants in the residual wedge `m>=7`,
+  `r>=6`; the first five fixed-`r` columns, the six all-`r` columns `m<=6`,
+  every fixed-`m` eventual tail, and all other parameter-irreducibility
+  ranges are complete.  The first open fixed column `r=6` is reduced exactly
+  to a degree-29 endpoint eliminant.
+- `OP-LR`: universal associated-graded LR obstruction and valuative no escape.
 
 In particular, `b_m=34m+1` is an exact source-only profile in one
 determinant-normalized target gauge.  It is not target-minimal and is not a
-stable LR obstruction.  The better target torus has the exact all-order
-profile `24m+1`, and its `v^(6m)S^(4m)` class survives the
-invariant-ring-saturated equivariant target quotient.  Intrinsic filtered
-minimality and no escape remain open.
+stable LR obstruction.  The better target torus produces a surviving
+`v^(6m)S^(4m)` class in the invariant-ring-saturated equivariant target
+quotient.  Modulo `gamma` its `v`-degree is `10m`, which already points to an
+ordinary source-degree bound around `20m`; the exact torus-gauge slope `24` is
+not needed.  The open algebraic step is to identify this as a universal
+associated-graded obstruction after arbitrary lower gauges.  Formal
+target-lifting now shows that all lower source jets are uniquely forced by the
+target jets.  At order two, logarithmic coordinates reduce the new gauge
+dependence to the affine-linear bracket class `Xi_2(Y_1)`, followed by one
+explicit quadratic coordinate reconstruction.  The entire five-parameter
+degree-25 homogeneous weight-zero kernel has now been audited: its order-two
+quadratic residue never vanishes.  A filtered-coset BCH lemma now shows that
+pairwise opposite-weight expansion is unnecessary at order two if the Rees
+degeneration of the target-lift coset is strict.  Establishing that strictness,
+rather than enlarging the symbolic calculation, is the next algebraic task.
+Its quadratic obstruction is now the explicit second fundamental form
+`II_F(Y_1,Y_2)=-(DF)^(-1)D^2F[ell_F(Y_1),ell_F(Y_2)]`; opposite weights reduce
+to invariant-module maps `II_(F,p,-p)` into the weight-zero normal module.
+Valuative no escape is a separate geometric problem.
+Neither is a bottleneck for stable moduli, which already follow from decorated
+normalization and the affine sheet.
 
 Other questions—arithmetic Galois theory, controlled-boundary suspension
 classification, wider quantization, coefficient-scheme gluing,

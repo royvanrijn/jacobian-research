@@ -176,8 +176,10 @@ Consequently
 \]
 
 has square discriminant.  This begins with
-`m=1,17,49,97,161,241,...` and supplies an odd-degree test family for the
-alternating-group branch of the Galois question.
+`m=1,17,49,97,161,241,337,449,577,721,881,1057,...` and supplies an
+odd-degree test family for the alternating-group branch of the Galois
+question.  Exact Frobenius--Jordan certificates now prove `A_m` for every
+displayed nontrivial member through `m=1057`.
 
 For fixed `r`, the even square locus is a finite union of quadratic
 sequences, hence contributes `O_r(sqrt(X))` parameters `m<=X`.  If `r` is
@@ -336,7 +338,9 @@ diagonal in each of the following cases:
 5. the interval `(mr,(m+1)r+1)` contains at least two primes, by incompatible
    translated Newton polygons; and
 6. every pair with `mr<=30`, together with every finite endpoint
-   `2<=m<=6`, `mr<118`, by exact modular factor-degree certificates.
+   `2<=m<=6`, `mr<118`, by exact modular factor-degree certificates; and
+7. every odd square-family pair `(2a^2-1,1)` with `3<=a<=23` odd, by exact
+   Frobenius degree sieves.
 
 The second item includes the useful prime case `N=p`.  The bounded
 certificates in item 6 are independently replayable even where their
@@ -374,9 +378,9 @@ edge of length `p` must not be described as a pure `p`-cycle without a support
 argument.
 
 The natural Galois group is determined in this repository for every
-`mr<=30`, and also for two further members of the odd square family.  Most
-cases in the complete degree range are symmetric.  The known non-symmetric
-groups are:
+`mr<=30`, and for every odd square-family member `(2a^2-1,1)` with
+`3<=a<=23` odd.  Most cases in the complete degree range are symmetric.  The
+known non-symmetric groups are:
 
 | Pair(s) | Group |
 |---|---|
@@ -386,16 +390,15 @@ groups are:
 | `(2,8)`, `(16,1)` | `A_16` |
 | `(17,1)` | `A_17` |
 | `(1,24)`, `(12,2)` | `A_24` |
-| `(49,1)` | `A_49` |
-| `(97,1)` | `A_97` |
+| `(2a^2-1,1)`, odd `3<=a<=23` | `A_(2a^2-1)` |
 
 The two degree-six exceptions reproduce the published Filaseta--Moy
 phenomenon.  Formula (5) explains every alternating entry and the infinite
-square families.  The degree-49 and degree-97 entries are the next two
-members of the odd family (8a), proved by exact modular degree sieves and
-Jordan-cycle certificates.  The data therefore suggest the sharpened
-all-parameter question: apart from the displayed low-degree `D_4` and
-`PGL_2(F_5)` exceptions, does irreducibility imply
+square families.  The odd family (8a) is proved consecutively through degree
+1057 by exact modular degree sieves, isolated prime cycles, and prime-degree
+or exact block-system primitivity certificates.  The data therefore suggest
+the sharpened all-parameter question: apart from the displayed low-degree
+`D_4` and `PGL_2(F_5)` exceptions, does irreducibility imply
 
 \[
  \operatorname{Gal}(P_{N,k}/\mathbb Q)=
@@ -407,6 +410,16 @@ all-parameter question: apart from the displayed low-degree `D_4` and
 
 on the divisibility diagonal (2)?
 
+For the odd family there is now also a structural local upgrade.  If
+`m+2=sq` with `q>=5`, `q || m+2`, then `q`-adic tame inertia contains a
+pure `(q-2)`-cycle.  An explicit divisor test then proves primitivity, hence
+`A_m`, conditional only on irreducibility.  In particular this works
+automatically when `m+2=3q` is three times a prime, and it replaces the
+modular Galois step for seven of the exact witnesses through `m=1057`.
+The theorem, its support argument, and the remaining quadratic-prime and
+local-separation obstacles are in
+[ODD_SQUARE_LOCAL_CYCLES.md](ODD_SQUARE_LOCAL_CYCLES.md).
+
 ## 4. Known boundary and verification
 
 Uniform results establish separability, the specialized square criterion,
@@ -414,9 +427,10 @@ the six complete columns `1<=m<=6`, and the additional diagonal
 irreducibility criteria above.  The geometric-derivative literature further
 establishes density-one irreducibility on every fixed-`r` row, with the
 quantitative bounds in (10a), and the extra `r=1` families (10b).  Exact
-finite certificates establish irreducibility for `mr<=30` and for the finite
-endpoints `2<=m<=6`, `mr<118`.  The complete natural Galois group is known
-for `mr<=30`, together with `A_49` and `A_97` on the odd square family.
+finite certificates establish irreducibility for `mr<=30`, for the finite
+endpoints `2<=m<=6`, `mr<118`, and for the odd square series through
+`m=1057`.  The complete natural Galois group is known for `mr<=30`, together
+with every `A_(2a^2-1)` for odd `3<=a<=23`.
 
 Open: prove (10) in the remaining cases and answer the large-group question
 (12).  Minimal fields of definition of the collision fibers are a separate
@@ -432,7 +446,13 @@ The exact regressions are:
   numerator, local congruence, and representative cyclotomic Newton edges;
 - `scripts/verify_parameter_galois_groups.py` and
   `scripts/verify_parameter_galois_jordan.py`, for the range `mr<=30` and
-  the additional odd square-family groups `A_49` and `A_97`.
+  the additional odd square-family groups `A_49` and `A_97`;
+- `scripts/verify_odd_square_galois_series.py`, for the separate slow exact
+  replay of the consecutive odd square-family groups `A_161` through
+  `A_1057`;
+- `scripts/verify_odd_square_local_cycles.py`, for the trinomial identity,
+  the isolated-cycle Newton edges, the block criterion, and the next
+  `p | a` Newton polygons.
 
 Detailed component proofs and tables are retained in
 [the cancellation archive](../archive/cancellation-components/).

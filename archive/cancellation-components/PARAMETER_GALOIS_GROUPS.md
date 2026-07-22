@@ -1,4 +1,4 @@
-# Galois groups through degree thirty and two odd square-family cases
+# Galois groups through degree thirty and an odd square-family series
 
 This note classifies the arithmetic Galois group of `M_(m,r)` for every pair
 with parameter degree `mr<=30`.  It is an exact finite theorem, not a uniform
@@ -81,10 +81,10 @@ exact regression checks every certificate:
 .venv/bin/python scripts/verify_parameter_galois_jordan.py
 ```
 
-## Two higher odd square-family certificates
+## Higher odd square-family certificates through degree 1057
 
-The same script contains exact certificates for the next two members of the
-odd square-discriminant family after `(17,1)`:
+The degree-thirty script contains exact certificates for the next two members
+of the odd square-discriminant family after `(17,1)`:
 
 \[
  \operatorname{Gal}(M_{49,1})=A_{49},\qquad
@@ -107,6 +107,42 @@ For degree 97, the types `(89,6,2)`, `(91,5,1)`, and `(83,12,2)` at primes
 `5,19,23` prove irreducibility.  Prime degree gives primitivity, the first
 type isolates an 89-cycle, and Jordan's theorem plus the square discriminant
 gives `A_97`.
+
+A separate slow exact regression continues with every odd parameter
+`m=2a^2-1` for `a=9,11,...,23`:
+
+| `m` | auxiliary primes in the degree sieve | isolated prime cycle | primitivity |
+|---:|---|---:|---|
+| 161 | `11,13` | 131 | the 131-cycle excludes block sizes 7 and 23 |
+| 241 | `5,13` | 149 | prime degree |
+| 337 | `5,17` | 109 | prime degree |
+| 449 | `19,47` | 127 | prime degree |
+| 577 | `5,7,19` | 53 | prime degree |
+| 721 | `5,7,11` | 47 | the type modulo 5 excludes block sizes 7 and 103 |
+| 881 | `5,17` | 139 | prime degree |
+| 1057 | `7,17` | 41 | the type modulo 7 excludes block sizes 7 and 151 |
+
+In every row the subset-sum intersection of the displayed unramified
+factorization types is `{0,m}`, proving irreducibility.  The isolated cycle
+and the stated primitivity certificate put `A_m` in the Galois group by
+Jordan's theorem, while the uniform square-discriminant formula puts the
+group inside `A_m`.  Consequently
+
+\[
+ \boxed{\operatorname{Gal}(\mathcal M_{2a^2-1,1})
+ =A_{2a^2-1}\quad(3\le a\le23,\ a\text{ odd}).}
+\]
+
+The complete factor-degree tuples and exact wreath-product compatibility
+checks are replayed by
+
+```bash
+.venv/bin/python scripts/verify_odd_square_galois_series.py
+```
+
+This verifier is intentionally separate from the standard degree-thirty
+regression because exact modular factorization in degrees 721 through 1057
+is substantially slower.
 
 The table shows that parameter irreducibility alone does not force full
 symmetric Galois group.  A uniform theorem must account for the dihedral

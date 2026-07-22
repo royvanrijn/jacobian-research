@@ -3,10 +3,10 @@
 This note carries out the two reductions suggested by the residual source
 torus for the degree-five arc.  It proves the all-order law `24m+1` in the
 specific target torus gauge and computes an `R=k[v,S]`-saturated target-image
-quotient in the relevant torus-weight sector.  It does **not** yet prove the
-intrinsic filtered left--right lower bound: lower-order target choices and the
-ordinary-degree filtration still have to be incorporated into one filtered
-induction.
+quotient in the relevant torus-weight sector.  The quotient residue gives a
+linear comparison with ordinary degree.  It does **not** yet prove the
+intrinsic filtered left--right lower bound: arbitrary lower source and target
+choices still have to be incorporated into one filtered induction.
 
 ## 1. Two invariant variables
 
@@ -266,18 +266,77 @@ above with a weight-zero polynomial ring and add block summands.  Restriction
 to the zero section preserves the nonzero residue (4.1), so those summands do
 not kill this particular class.
 
-## 5. Remaining filtered step
+## 5. Associated-graded interpretation and remaining step
 
-The calculation proves the all-order torus-gauge profile and survival of its
-candidate in the saturated torus-weight target quotient.  Two points remain
-before this is an intrinsic OP-LR theorem:
+The exact profile `24m+1` is a property of the chosen torus gauge.  The part
+relevant to intrinsic LR coercivity is instead the nonzero class (4.3), viewed
+as the restriction of an order-`m` class in the associated-graded cokernel of
 
-1. the order-`m` filtered induction must allow all lower-order source and
-   target choices, not only the fixed diagonal torus gauge;
-2. nonvanishing in (3.3) must be converted into a lower bound for the
-   ordinary coordinate-degree filtration.  For example, reducing modulo
-   `gamma` replaces `S` by `8v/7-1`, so the normal-form degree is not simply
-   the original degree of `v^(6m)S^(4m)`.
+\[
+ (V,W)\longmapsto DF_2\cdot V+W\circ F_2.          \tag{5.1}
+\]
+
+There is a direct ordinary-degree estimate on the detected residue.  Give
+`v,S` their ordinary source degrees `2,3`.  If a polynomial of weighted degree
+at most `D` is reduced modulo `gamma`, then its image in `k[v]` has `v`-degree
+at most `D/2`: a monomial `v^aS^b` maps to
+`v^a(8v/7-1)^b`, of `v`-degree `a+b`, while
+
+\[
+ 2(a+b)\le 2a+3b.                                  \tag{5.2}
+\]
+
+The factor `N^m` in (4.1) has residue
+
+\[
+ v^{6m}\left(\frac87v-1\right)^{4m},              \tag{5.3}
+\]
+
+of `v`-degree `10m`.  Multiplication by the nonzero linear factor in (4.1)
+leaves the degree at least `10m`.  Therefore any representative detected by
+this quotient has ordinary source degree at least `20m`, up to the fixed
+degree shift introduced by the logarithmic vector-field basis.  Thus a
+positive linear ordinary-degree bound is already present in the torus-weight
+quotient; recovering the exact slope `24` is unnecessary.
+
+The remaining filtered step is canonicity under arbitrary lower gauges.  The
+formal target-lift reduction shows that every lower source jet is uniquely
+forced after the lower target jet is chosen.  Thus if `Z_(m-1)` denotes the
+target-jet scheme through order `m-1`, the nonlinear order-`m` forcing defines
+a universal Rees-cokernel class over `Z_(m-1)`.  One must prove that its
+relevant special-fiber leading face restricts to (4.3), or to another class
+with a positive linear degree bound, at every point of `Z_(m-1)` in the
+proposed resource range.  At order two this is the explicit quadratic class
+`Theta_2(W_1)` in coefficient coordinates, or the affine-linear bracket class
+`Xi_2(Y_1)` plus its known quadratic reconstruction in logarithmic
+coordinates.  The present torus calculation verifies only its
+diagonal-torus section.  See
+[complexity-filtered contact](COMPLEXITY_FILTERED_CONTACT.md#6-the-associated-graded-lr-obstruction)
+for the Rees-module formulation.
+
+The first extension beyond the diagonal-torus section is now complete.  In
+the full degree-25 homogeneous weight-zero source sector, the saturated target
+kernel is exactly
+
+\[
+ R_{24}(x,-y,-2z),
+ \qquad
+ R_{24}=\langle v^{12},v^9S^2,v^6S^4,v^3S^6,S^8\rangle.
+\]
+
+Adding any such kernel field to `N(x,0,-3z)` leaves a quadratic order-two
+reconstruction with nonzero class; its third `R/(gamma)` residue alone cannot
+vanish.  Thus arbitrary weight-zero lower target choices do not kill the
+order-two leading obstruction.  The filtered-coset BCH descent lemma shows
+that opposite nonzero weights do not require pairwise expansion at order two
+provided the target-lift coset is Rees-strict at this face.  Proving that
+strictness is now the remaining order-two task.  Its quadratic obstruction is
+the second fundamental form
+`II_F(Y_1,Y_2)=-(DF)^(-1)D^2F[ell_F(Y_1),ell_F(Y_2)]`, so the nonzero-weight
+problem is a family of invariant-module maps `II_(F,p,-p)`, not an arbitrary
+coefficient expansion.  The exact weight-zero
+calculation is Proposition 6.2 of the contact note and is checked by
+[`verify_order_two_weight_zero_lr_obstruction.py`](../scripts/verify_order_two_weight_zero_lr_obstruction.py).
 
 The exact checker is
 [`verify_degree_five_torus_module.py`](../scripts/verify_degree_five_torus_module.py).

@@ -83,8 +83,9 @@ Here the triple contact is the smallest permitted parity correction.
 
 ## Omitted-value phase diagram
 
-The unique omitted-value theorem identifies the nonsurjective seed locus
-`N_n` with the disjoint union of the full-contact strata.  Maximizing
+The [unique omitted-value lemma](UNIQUE_OMITTED_VALUE.md) identifies the
+nonsurjective seed locus `N_n` with the disjoint union of the full-contact
+strata.  Maximizing
 `a+b-1` subject to `2a+3b=n` gives
 
 \[

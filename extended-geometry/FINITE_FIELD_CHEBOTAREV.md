@@ -192,6 +192,62 @@ For smaller good `q`, direct enumeration is finite and the trivial bound
 equivariant embedding or cohomology calculation can make them dramatically
 smaller.
 
+### Corollary FF2: prescribed factorization and residue-degree types
+
+Let
+
+\[
+ \lambda=(1^{m_1}2^{m_2}\cdots)\vdash n,
+ \qquad z_\lambda=\prod_i i^{m_i}m_i!,
+\]
+
+and let `T_lambda(q)` count the points `(s,t) in U(F_q)` for which
+`E_(s,t)` factors into distinct irreducible polynomials with degrees
+`lambda`.  The Frobenius permutation then belongs to the conjugacy class
+`C_lambda`, whose size is `n!/z_lambda`.  Applying (8) to any representative
+of that class and using `|C_(S_n)(g)|=z_lambda` gives the effective estimate
+
+\[
+ \boxed{\left|T_\lambda(q)-{q^2\over z_\lambda}\right|
+ \le {L_n(q)\over z_\lambda}.}                       \tag{12a}
+\]
+
+In particular,
+
+\[
+ T_\lambda(q)={|C_\lambda|\over n!}q^2+O_n(q^{3/2}). \tag{12b}
+\]
+
+If `q>6delta_n^2` and `q^2>L_n(q)`, then (12a) is positive for every
+partition simultaneously.
+Thus every conjugacy class, equivalently every squarefree factorization type,
+occurs over every sufficiently large good finite field.  If repeated-factor
+polynomials are included in the meaning of factorization type, their total
+contribution is at most `d_Delta q` by (16) below, so (12b) is unchanged; the
+squarefree formulation is the one that directly records Frobenius.
+
+This also produces Keller-fiber witnesses.  Fix any `C in F_q^times`.  The
+change of variables
+
+\[
+ (A,B)\longmapsto(s,t)=(BC,cAC^2)
+\]
+
+is a bijection.  On `U`, every root is simple and the reconstruction formulas
+are defined over its residue field, with `W` recovering the same field from
+the source point.  Hence the irreducible-factor degrees of `E_(s,t)` are
+exactly the residue degrees of the closed points in the Keller fiber over
+`(A,B,C)`.  For each fixed nonzero `C`, the number of targets with residue-
+degree pattern `lambda` is therefore `T_lambda(q)`; over all `C!=0` it is
+
+\[
+ (q-1){q^2\over z_\lambda}+O_n(q^{5/2}).             \tag{12c}
+\]
+
+For witness generation one may simply take `C=1`: a pencil witness `(s,t)`
+becomes the Keller target `(A,B,C)=(t/c,s,1)`.  Random search has asymptotic
+success probability `1/z_lambda`.
+
 ## 5. Exact discriminant and `C=0` contributions
 
 Let `D_j(q)` count points on `V(Delta_H)(F_q)` for which `E` has exactly `j`

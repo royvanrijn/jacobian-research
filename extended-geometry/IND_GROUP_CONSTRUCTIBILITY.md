@@ -6,16 +6,18 @@ target degree, parameter height, pole order, and stabilization dimension, the
 space of left--right equivalences is a finite-type incidence scheme.  This
 gives constructibility and a useful bounded-box algebraization theorem.  The
 second is a coercivity problem: prove that the degree-five arc leaves every
-fixed resource box after minimizing over target automorphisms.
+fixed resource box after allowing arbitrary source and target jets.  Its
+natural form is an associated-graded obstruction, not exact minimization of a
+gauge-dependent slope.
 
 The first part is established below.  It sharpens the exact list of remaining
 steps in [complexity-filtered contact](COMPLEXITY_FILTERED_CONTACT.md).  The
 current degree-five calculation already supplies the source-only coercivity
 in every stabilization dimension.  An explicit torus calculation below shows
 that the determinant-normalized target gauge is not minimal: the first two
-canonical degrees drop from `(35,69)` to `(25,49)`.  Target coercivity after
-intrinsic minimization, and a no-escape statement at the base point, remain
-open.
+canonical degrees drop from `(35,69)` to `(25,49)`.  Universal
+associated-graded nonvanishing after all lower-order gauge choices, and a
+no-escape statement at the base point, remain open.
 
 Work over a characteristic-zero field `k`.  The generic-uniformity theorem in
 Section 3 additionally assumes that `k` is algebraically closed and
@@ -393,63 +395,63 @@ gauge upper bound, rather than a proof of the intrinsic filtered LR minimum,
 because arbitrary lower-order target choices have not yet been included in a
 single filtered induction.
 
-## 6. The target-minimality problem
+## 6. The associated-graded coercivity problem
 
-There are two viable routes.
-
-### Route A: an intrinsic LR minimization
-
-Work directly with the spectrum (4.4).  At order `m`, after fixing lower
-coefficients, the new source and target coefficients enter through the linear
-operator
+Work directly with the spectrum (4.4).  At order `m`, after fixing arbitrary
+lower source and target coefficients, the new coefficients enter through
 
 \[
- (U,V)\longmapsto U\circ F_2+DF_2\,V.              \tag{6.1}
+ (V,W)\longmapsto DF_2\,V+W\circ F_2.              \tag{6.1}
 \]
 
-At orders one and two, the original degree-`34m+1` leading layer lies in the
-target image: the torus (5.5) cancels it.  One must instead compute a filtered
-normal form for (6.1), successively removing target images.  Equations
-(5.9)--(5.10) suggest that the first residual layer is governed by `N^m`.  The
-desired eventual coercivity statement is:
+The lower coefficients contribute a known nonlinear forcing term.  Passing
+to a Rees module for an ordinary-degree-compatible or Newton-polytope
+filtration turns its leading face into a class in the associated-graded
+cokernel of (6.1).  The formal target-lift reduction proves that the lower
+source jet is uniquely forced by the lower target jet.  Because the forcing
+still varies with that target jet, the canonical object is the universal
+class over its coefficient scheme.  Intrinsic coercivity means that this class
+is nonzero for every target jet in the proposed resource range.  At order two
+the contact note rewrites the explicit quadratic expression `Theta_2(W_1)` as
+an affine-linear bracket class `Xi_2(Y_1)` plus one known quadratic coordinate
+reconstruction.  The complete degree-25 homogeneous weight-zero kernel has now
+been computed, and no point of that five-parameter kernel kills the order-two
+residue.  A general filtered-coset BCH lemma removes opposite-weight pairs at
+order two once the target-lift coset is Rees-strict.  Thus strictness of the
+coset degeneration, not a larger pairwise expansion, is the remaining
+structural task.  At quadratic order its exact obstruction is the target-lift
+second fundamental form; torus equivariance reduces it to the module maps
+`II_(F,p,-p)` into the weight-zero normal quotient.
+
+The torus section produces the candidate
 
 \[
- \max\{\deg_x U_m,\deg_x V_m\}\ge c_r m-O_r(1)     \tag{6.2}
-\]
-
-for every solution in stabilization dimension `r`, or at least that the left
-side is unbounded.  Proving (6.2) requires showing that no sequence of
-bounded-degree target coefficients cancels every residual layer.  The first
-candidate after the torus reduction is
-
-\[
- N^m=x^{14m}y^{6m}z^{4m}.                           \tag{6.3}
+ N^m=x^{14m}y^{6m}z^{4m}
+     =(xy)^{6m}(x^2z)^{4m}.                         \tag{6.2}
 \]
 
 Its vector coefficient survives the `k[xy,x^2z]`-saturated equivariant target
-quotient at every order.  The quotient is the elementary diagonal module
-displayed in the torus filtered-module note, and weight-zero identity
-variables do not kill the residue on the zero section.  What remains is to
-incorporate all lower-order target choices and the ordinary coordinate-degree
-filtration, rather than to enlarge the raw three-variable Gröbner search.
+quotient at every order.  Modulo `gamma`, its residue has `v=xy` degree `10m`.
+Since `v` has ordinary source degree two, the quotient detects an ordinary
+degree lower bound `20m-O(1)`.  This comparison is enough for escape; the
+exact torus-gauge law `24m+1` need not be intrinsic.
 
-If coordinate degree can be kept bounded, Theorem 4.1 says that parameter
-height or pole order must escape instead.  This is why all three complexity
-coordinates belong in the final invariant.
+The desired statement is therefore only
 
-### Route B: an intrinsic target slice
+\[
+ \max\{\deg_x V_m,\deg_x W_m\}\ge c_r m-O_r(1)     \tag{6.3}
+\]
 
-Alternatively, impose canonical target conditions and prove that every LR
-equivalence has a bounded-complexity representative in that slice.  The
-determinant normalization alone cannot be that slice, by (5.5)--(5.10).  The
-two intrinsic boundary vertices and the marked-cover reconstruction suggest a
-stronger slice, but using them would make this route depend on the
-normalization boundary invariant.  It could prove minimality of the stronger
-slice efficiently, but would not yet produce a conceptually independent
-invariant.
+for some `c_r>0` and every lower-gauge choice in fixed stabilization dimension
+`r`, or even the weaker assertion that the intrinsic degree is unbounded.
+Once proved, coordinate-degree escape alone leaves every fixed full resource
+box by Theorem 4.1.  Parameter height and pole order remain relevant only when
+coordinate degree does not already escape.
 
-Route A is therefore the route to a genuinely different stable invariant.
-Route B remains a useful intermediate theorem and a check on the computation.
+An intrinsic target slice remains a possible way to prove the universal
+nonvanishing, but it is no longer the definition of the problem.  The precise
+Rees construction is given in
+[complexity-filtered contact](COMPLEXITY_FILTERED_CONTACT.md#6-the-associated-graded-lr-obstruction).
 
 ## 7. The remaining no-escape statement
 
@@ -463,13 +465,23 @@ family only on a dense open after finite base change.  For an arc centered at
 3. a canonical slice with a regular section;
 4. direct control showing that the minimal pole order is zero.
 
+The third route has a geometric valuative refinement.  A meromorphic LR
+equivalence over a punctured DVR should induce a generic isomorphism of the
+proper marked finite-cover objects supplied by the
+[Hurwitz--LL compactification](HURWITZ_LL_COMPACTIFICATION.md).  If the generic
+LR-induced isomorphism belongs to a finite proper `Isom` closure compatible
+with the marks, it extends over the DVR and rules out a pole.  Coarse
+affine-mark descent supplies unique specialization of each individual mark;
+the remaining no-escape lemma is the functoriality and finiteness statement
+for the isomorphism itself.
+
 Without one of these inputs, "every nearby fiber lies in the orbit" and "the
 arc is regularly trivial in the orbit" remain different statements.
 Parameter pole order measures exactly that difference.
 
 ## 8. Resulting theorem ladder
 
-The proposed stable invariant can now be developed in the following order.
+The filtered LR theorem can now be developed in the following order.
 
 1. **Finite-type strata -- proved here.**  Fixed two-sided degree and fixed
    stabilization give a finite-type LR incidence and a constructible orbit
@@ -480,19 +492,25 @@ The proposed stable invariant can now be developed in the following order.
 3. **Full bounded-box algebraization -- proved here.**  Uniform bounds on
    coordinate degree, parameter height, pole order, and stabilization turn
    arbitrary finite contacts into one exact rational family.
-4. **Stable source coercivity -- proved by the degree-five calculation.**
+4. **Stabilized source-only coercivity -- proved by the degree-five
+   calculation.**
    The law `34m+1` survives every fixed identity stabilization in the chosen
    target gauge, but the torus (5.5) shows that this gauge is not minimal.
-5. **Target coercivity -- open.**  Prove an associated-graded lower bound for
-   (6.1), or construct an intrinsic target slice.
+5. **Universal associated-graded coercivity -- open.**  Prove that the
+   order-`m` Rees-cokernel class survives arbitrary lower source and target
+   choices.  Any positive linear ordinary-degree bound suffices.
 6. **No escape at the base -- open if a pointwise theorem is desired.**  Rule
-   out poles in a bounded-degree dominating incidence branch.
+   out poles in a bounded-degree dominating incidence branch, potentially by
+   valuative rigidity of the proper affine-marked boundary object.
+
+This ladder is independent of the stable-moduli theorem.  Decorated
+normalization plus the affine sheet already gives stable moduli; OP-LR is a
+separate statement about the polynomial automorphism ind-group.
 
 Items 1--4 already define a rigorous asymptotic complexity framework.  Items
-5--6 are exactly what separates that framework from a new proof of stable
-degree-five moduli.  Once item 5 holds for every fixed stabilization
-dimension, the escape spectrum (4.4) is a stable LR invariant genuinely
-different in construction from boundary normalization.
+5--6 complete the independent filtered-orbit theorem.  Once item 5 holds for
+every fixed stabilization dimension, the escape spectrum (4.4) is a stable LR
+invariant genuinely different in construction from boundary normalization.
 
 ## 9. References for the ind-group input
 

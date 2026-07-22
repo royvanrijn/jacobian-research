@@ -779,3 +779,65 @@ The symbolic regression
 normalized seeds with two and three simultaneous clusters, including the
 adjunction conductor obtained from the global implicit discriminant.  Thus
 the local-to-global comparison left open after (5.2) is complete.
+
+### 6.4 Stacky marked extension
+
+Combining (2.5) with the formal comparison gives the following completed
+statement.
+
+> **Theorem (stacky marked extension).**  The selected unramified zero-fiber
+> root extends as the tautological marked point on the collision-separating
+> admissible-cover stack.  Forgetting it is the finite, representable, etale
+> morphism
+> \[
+>  [\overline M_{0,N}/S_{n-1}]
+>    \longrightarrow[\overline M_{0,N}/S_n]
+> \]
+> of degree `n=N-2`.  After contraction, its normalized Stein factors,
+> completed root-cover charts, and normalization--conductor squares are the
+> repository constructions at every simultaneous multicluster collision.
+
+The mark persists because it is part of the object parametrized by the
+marked stack.  The quotient properties follow from the subgroup inclusion
+`S_(n-1) subset S_n`, and Sections 6.1--6.3 give the assertions after
+contraction.  No arbitrary-collision local geometry remains open at the
+stack level.
+
+### 6.5 Coarse affine-mark descent
+
+The stack theorem has the following coarse consequence.
+
+> **Theorem (coarse affine-mark descent).**  After contraction, take the
+> relative Hilbert point of degree one selected generically by the
+> distinguished regular-reconstruction component.  Its closure is finite and
+> separated over the normal marked coarse compactification and is isomorphic
+> to the base.  It therefore has exactly one point over every DVR limit,
+> independently of the admissible-cover lift.
+
+Indeed, the relative Hilbert space of length-one subschemes of a finite
+separated cover is the cover itself.  The closure is therefore integral,
+finite, and generically degree one.  The
+marked coarse compactification is normal because its local rings are
+finite-group invariant subrings of normal collision charts.  The
+[finite-birational criterion](https://stacks.math.columbia.edu/tag/0AB1)
+therefore makes the closure an isomorphism.  The categorical property of the
+coarse moduli map
+([Stacks, Section 106.12](https://stacks.math.columbia.edu/tag/0DUF)) makes
+the contracted stack mark factor uniquely through the coarse space, and
+finiteness supplies separatedness and DVR uniqueness.
+
+At a collision of `mu` roots the statement is visible without any abstract
+criterion.  If `R=k[x_1,...,x_mu]` and `T=x_1` is selected, then
+
+\[
+ R^{S_{\mu-1}}
+ \simeq R^{S_\mu}[T]/
+ \left(T^\mu-e_1T^{\mu-1}+\cdots+(-1)^\mu e_\mu\right). \tag{6.6}
+\]
+
+The recursion `e'_j=e_j-T e'_(j-1)` for the elementary symmetric functions
+of the unselected roots proves the presentation.  The total-collision fiber
+is `k[T]/(T^mu)`, which has length `mu` but one geometric point.  Hence pair
+and triple collisions do not produce counterexamples; nor does any higher
+collision.  Together with the completed-chart identification of Section 6,
+this proves coarse affine-mark descent and closes the former `OP-MARK`.

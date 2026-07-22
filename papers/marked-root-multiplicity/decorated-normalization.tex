@@ -316,14 +316,18 @@ target image gives the asserted isomorphism.  Proposition
 $N-2$ rerooting cover and proves the final assertion.
 \end{proof}
 
-\begin{remark}[collision-extension target]
-The remaining global problem is valuative, not generic faithfulness.  One
-must prove that the affine marking extends uniquely over every DVR family in
-the marked admissible-cover compactification and is compatible with the
-normalized Stein factor and conductor square.  This would make the full
-marked morphism representable and radicial at arbitrary simultaneous root
-collisions.  The collision and conductor calculations below verify the local
-models, but this valuative gluing statement is not asserted here.
+\begin{remark}[coarse affine-mark descent]
+The selected root extends tautologically on the marked admissible-cover
+stack; the companion Hurwitz--LL paper records the resulting finite
+representable etale quotient and its comparison with the repository covers
+at arbitrary collisions.  The same paper proves the coarse descent: the
+closure of the distinguished generic degree-one component in the contracted
+finite root cover is finite birational over the normal marked coarse
+compactification, hence isomorphic to it.  Thus the affine mark has one
+coarse specialization over every DVR limit.  At a collision of multiplicity
+$\mu$ the special fiber is $k[T]/(T^\mu)$: it retains the stacky length but
+has one geometric point.  In particular, pair and triple collisions do not
+give counterexamples.
 \end{remark}
 
 \fi
@@ -633,6 +637,76 @@ which proves (6.21).  Since both constructions have the same finite
 normalization map, quotienting by this common conductor gives the same
 conductor square.  The argument descends from geometric branches by Galois
 invariance.
+\end{proof}
+
+\begin{theorem}[stacky marked extension]
+\label{thm:stacky-marked-extension}
+Put $n=N-2$.  The selected unramified zero-fiber root extends as the
+tautological marked point on the collision-separating admissible-cover stack,
+and forgetting the selection is
+\[
+ [\overline M_{0,N}/S_{n-1}]
+ \longrightarrow [\overline M_{0,N}/S_n].
+\]
+This morphism is finite, representable, and etale of degree $n$.  After
+contracting the admissible source and target bubbles, its normalized Stein
+factors are the canonical finite root cover and discriminant normalization,
+and its completed root-cover charts and normalization--conductor squares
+agree with the repository constructions at every simultaneous multicluster
+collision.
+\end{theorem}
+
+\begin{proof}
+The marked point is part of the data of the marked admissible cover, so it
+persists over the entire proper stack.  Proposition
+\ref{prop:hurwitz-ll-compactification} identifies the forgetful map with the
+displayed subgroup quotient; its finiteness, representability, etaleness,
+and degree are therefore the subgroup-index calculation
+$[S_n:S_{n-1}]=n$.  The assertions after contraction are exactly Theorem
+\ref{thm:admissible-formal-comparison}.  Hence no additional collision-chart
+or conductor gluing remains at the stack level.
+\end{proof}
+
+\begin{theorem}[coarse affine-mark descent]
+\label{thm:coarse-affine-mark-descent}
+Let $\overline S_N$ and $\overline B_N$ be the coarse spaces of the marked
+and unmarked collision-separating compactifications.  In the relative
+Hilbert space of length-one subschemes of the contracted finite root cover,
+let $Z$ be the closure of the point selected generically by the distinguished
+regular-reconstruction component.  Then $Z$ is finite and separated, and
+\[
+ Z\xrightarrow{\sim}\overline S_N.
+\]
+Consequently the selected affine mark has exactly one coarse specialization
+over every DVR limit, independently of the admissible-cover lift and
+compatibly with base change.
+\end{theorem}
+
+\begin{proof}
+The coarse spaces are normal: etale-locally their rings are invariant
+subrings of normal collision charts under finite symmetric groups.  By
+Theorem~\ref{thm:stacky-marked-extension}, the contracted ambient root cover
+is finite and agrees in every completed chart with the repository cover.  The
+relative Hilbert space of its length-one subschemes is canonically the cover
+itself.  Hence $Z$ is finite over $\overline S_N$.  It is integral and
+generically the graph of the distinguished mark, so it is birational.  A finite birational
+morphism to a normal integral algebraic space is an isomorphism.
+
+For the explicit collision chart put $R=k[x_1,\ldots,x_\mu]$, let
+$e_j$ be the elementary symmetric functions, and set $T=x_1$.  If $e'_j$
+is elementary symmetric in $x_2,\ldots,x_\mu$, then
+$e_j=e'_j+T e'_{j-1}$.  This recursion and the monic equation for $T$ give
+\[
+ R^{S_{\mu-1}}
+ \simeq R^{S_\mu}[T]/
+ \bigl(T^\mu-e_1T^{\mu-1}+\cdots+(-1)^\mu e_\mu\bigr).
+\]
+Thus the coarse marked chart is the universal finite flat root incidence.
+At a total collision its fiber is $k[T]/(T^\mu)$, which has one geometric
+point.  The categorical property of the coarse moduli map makes the stack
+mark factor uniquely through this chart, and separatedness gives uniqueness
+for every DVR specialization.  Products of these charts handle simultaneous
+clusters.
 \end{proof}
 
 \fi

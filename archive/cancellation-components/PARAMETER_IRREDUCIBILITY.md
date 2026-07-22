@@ -241,9 +241,12 @@ This range is aligned with the exact Galois classification in
 [PARAMETER_GALOIS_GROUPS.md](PARAMETER_GALOIS_GROUPS.md).  It is a finite
 theorem for the stated degree range, not an all-degree extrapolation.
 
-The Frobenius--Jordan regression additionally records degree-sieve
-certificates for `(m,r)=(49,1)` and `(97,1)`, as part of its proofs that their
-Galois groups are respectively `A_49` and `A_97`.
+The Frobenius--Jordan regressions additionally record degree-sieve
+certificates for every odd square-family member `(m,1)` with
+`m=2a^2-1`, `3<=a<=23` odd.  They prove irreducibility through `m=1057` as
+part of the exact proofs that the corresponding Galois groups are `A_m`.
+The high-degree certificates are kept in the separate slow verifier
+`scripts/verify_odd_square_galois_series.py`.
 
 Run the exact regression with
 

@@ -622,7 +622,96 @@ subresultant chain of the two endpoint equations under (41) and (44), and
 prove that its terminal member cannot vanish on `z=y^m`.  The recurrences
 alone do not yet establish that nonvanishing.
 
-## 9. Finite single-prime certificates
+## 9. Arithmetic all-`r` ranges
+
+There is a second uniform route which does not require an endpoint eliminant.
+Both contact polynomials have degree `mr`, and their first coefficients are
+
+\[
+ \begin{aligned}
+ K_{m,r}(w)&=\frac1{r+1}-\frac{mr}{r+2}w+O(w^2),\\
+ L_{m,r}(w)&=\frac1{r+1}
+  -\frac{mr(r+3)}{(r+1)(r+2)}w+O(w^2).              \tag{45}
+ \end{aligned}
+\]
+
+Thus they have the same nonzero constant coefficient but are not associates.
+If `K_(m,r)` is irreducible and the resultant vanished, then `K_(m,r)` would
+divide `L_(m,r)`.  Equal degrees and constant coefficients would force
+`K_(m,r)=L_(m,r)`, contradicting (45).  Hence
+
+\[
+ \boxed{K_{m,r}\text{ irreducible over }\mathbb Q
+ \quad\Longrightarrow\quad
+ \operatorname{Res}_w(K_{m,r},L_{m,r})\ne0.}        \tag{46}
+\]
+
+The fractional-linear identity checked in the boundary diagram identifies
+`K_(m,r)` with the cancellation parameter polynomial
+`P_((m+1)r+1,mr)` up to a nonzero scalar.  The
+[two-prime diagonal theorem](DIAGONAL_TWO_PRIME_IRREDUCIBILITY.md) therefore
+gives the following contact-resultant theorem immediately:
+
+\[
+ \boxed{
+ \begin{gathered}
+  \operatorname{Res}(K_{m,r},L_{m,r})\ne0
+       \quad(1\le m\le6,\ r\ge1),\\
+  \text{and for every fixed }m,\text{ the same holds for all sufficiently
+  large }r.
+ \end{gathered}}                                    \tag{47}
+\]
+
+More generally, (46) transfers every proved parameter-irreducibility range,
+including the prime and two-prime interval criteria.  This is independent of
+the five complete fixed-`r` columns: it supplies six complete all-`r`
+columns in the transverse direction and an eventual tail in every fixed
+`m` column.
+
+Consequently a still-unresolved pair in `OP-CR` must have `m>=7`, `r>=6`,
+composite `N=(m+1)r+1`, and at most one prime in
+`(mr,(m+1)r+1)`, unless another recorded irreducibility criterion applies.
+If that interval contains exactly one prime `N-u`, the only possible factor
+degrees of `K` are `u` and `mr-u`; hence any common factor with `L` must have
+one of those degrees.  This factor-degree restriction is the useful bridge
+between the arithmetic and endpoint approaches.
+
+## 10. The exact first-open-column reduction `r=6`
+
+The bounded-degree endpoint formulation also makes the first column beyond
+the five complete fixed-`r` theorems computationally exact.  At a common
+root with `r=6`, divide the triangular contact equation by the nonzero
+`z=y^m` and clear `(1-y)^6`.  Together with the moment equation this gives
+
+\[
+ \begin{aligned}
+ E_6(m,y,z)&=\sum_{k=0}^{5}(-1)^k\binom6k
+ z^{5-k}\bigl(\beta_k-yz^kT_k(y)\bigr)(1-y)^{5-k}=0,\\
+ F_6(m,y,z)&=\beta_6-yz^6T_6(y)=0.                 \tag{48}
+ \end{aligned}
+\]
+
+Thus `E_6` has degree five and `F_6` degree six in `z`, independently of
+`m`.  Clear their parameter denominators over `Q[m,y]` and form the exact
+`z`-resultant.  Direct polynomial arithmetic gives
+
+\[
+ \boxed{
+  \operatorname{Res}_z(E_6,F_6)=(y-1)^7H_6(m,y),
+  \qquad \deg_yH_6=29,\quad\deg_mH_6=90,
+  \quad H_6(m,1)\ne0.}                             \tag{49}
+\]
+
+The factor at `y=1` is the already excluded endpoint.  Hence every genuine
+common root in the `r=6` column projects to one of only 29 roots of the
+explicit bounded-degree eliminant `H_6`, rather than to a root of a
+degree-`6m` Sylvester resultant.  This is a rigorous reduction, not yet the
+uniform nonvanishing theorem: one must reconstruct the corresponding `z`
+and rule out `z=y^m` on all 29 branches.  The exact construction and degree
+certificate are replayed by
+[`verify_contact_resultant_r6_reduction.py`](../scripts/verify_contact_resultant_r6_reduction.py).
+
+## 11. Finite single-prime certificates
 
 As finite evidence, direct endpoint gcds modulo `1,000,003` give no common
 factor in the following grid:
@@ -645,10 +734,11 @@ by
 [`verify_contact_resultant_modular_grid.py`](../scripts/verify_contact_resultant_modular_grid.py).
 They are evidence only and do not replace the uniform argument.
 
-## 10. Scope boundary (`OP-CR`)
+## 12. Scope boundary (`OP-CR`)
 
-The all-parameter problem now begins at `r=6`.  Formula (6) still gives a
-fixed comparison disk, but the `r=4` analysis shows that demanding every
+The all-parameter problem now begins in the residual wedge `m>=7`, `r>=6`
+not covered by (46) or another parameter-irreducibility theorem.  Formula
+(6) still gives a fixed comparison disk, but the `r=4` analysis shows that demanding every
 endpoint-eliminant root lie outside it is too strong.  The reusable strategy
 is instead: compute Schur--Cohn inertia, localize the exceptional branches,
 and separate `z` from `y^m` by modulus or argument.  Subresultant recurrences
@@ -666,3 +756,9 @@ The exact inertia, Rouche, angle, and Bernstein certificates for `r=4` are in
 The exact sparse resultant, subresultant, Routh, boundary-resultant, and
 Bernstein certificates for `r=5` are in
 [`verify_contact_resultant_r5.py`](../scripts/verify_contact_resultant_r5.py).
+The exact degree-29 endpoint-eliminant reduction for the first open column
+`r=6` is in
+[`verify_contact_resultant_r6_reduction.py`](../scripts/verify_contact_resultant_r6_reduction.py).
+The coefficient comparison and fractional-linear transfer behind (46)--(47)
+are checked by
+[`verify_contact_resultant_irreducible_ranges.py`](../scripts/verify_contact_resultant_irreducible_ranges.py).

@@ -188,7 +188,15 @@ This runs the construction, parameter arithmetic, boundary, monodromy, and
 current-ansatz rigidity regressions.  It includes the endpoint-moment
 reduction of the cancellation contact resultant: the general triangular
 identity is checked exactly on a bounded grid, while the complete
-`r=1,2,3,4` columns are proved uniformly in `m`.  The `r=3` certificate checks
+`r=1,2,3,4` columns are proved uniformly in `m`.  It also checks the
+irreducibility transfer proving every `1<=m<=6` column uniformly in `r` and
+the eventual `r`-tail for each fixed `m`:
+
+```bash
+.venv/bin/python scripts/verify_contact_resultant_irreducible_ranges.py
+```
+
+The `r=3` certificate checks
 coefficientwise positivity of all six principal minors of the reciprocal
 eliminant's Schur--Cohn matrix.  The heavier `r=4` certificate computes the
 degree-eleven eliminant's `(9,2)` Schur--Cohn inertia, runs a 228-cell rational
@@ -200,6 +208,15 @@ It requires Singular for its boundary resultants:
 
 ```bash
 .venv/bin/python scripts/verify_contact_resultant_r5.py
+```
+
+The first still-open fixed-`r` column has an exact bounded-degree reduction:
+the following Singular-backed checker constructs the quintic--sextic
+endpoint equations and verifies that their residual eliminant has degree 29
+in `y` and degree 90 in `m`.  It does not assert uniform nonvanishing.
+
+```bash
+.venv/bin/python scripts/verify_contact_resultant_r6_reduction.py
 ```
 
 The additional finite `5<=r<=12` endpoint grid is quick to replay.  It checks
@@ -262,6 +279,7 @@ identities are checked exactly by
 .venv/bin/python scripts/verify_generic_affine_mark_faithfulness.py
 .venv/bin/python scripts/verify_multicluster_ll_comparison.py
 .venv/bin/python scripts/verify_rerooting_groupoid_boundary.py
+.venv/bin/python scripts/verify_coarse_affine_mark_descent.py
 .venv/bin/python scripts/verify_restricted_ll_degree.py
 .venv/bin/python scripts/verify_caustic_maxwell_boundary.py
 ```
@@ -269,8 +287,12 @@ identities are checked exactly by
 These checks support the generic affine-mark faithfulness theorem: the coarse
 fiber is the exact rerooting orbit and every nontrivial rerooting moves the
 unique unramified affine sheet into the reconstruction boundary.  The
-valuative extension of that marking through all collision strata remains a
-separate research target.  The specialized restricted-LL
+selected root extends on the marked admissible-cover stack, and the
+normalized-Stein, completed-chart, and conductor comparisons are complete at
+arbitrary simultaneous collisions.  Coarse affine-mark descent is also
+complete: the marked invariant ring is the universal monic-root incidence,
+and the total-collision fiber `k[T]/(T^mu)` has one geometric point.  The
+specialized restricted-LL
 degree and caustic/Maxwell boundary-class calculations have no recorded
 external review.
 

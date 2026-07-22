@@ -10,10 +10,12 @@ and external review are recorded only in
 | Generic discriminant geometry | [Generic discriminant curve](GENERIC_DISCRIMINANT_CURVE.md) |
 | Weighted image and boundary | [Canonical-family image](CANONICAL_FAMILY_IMAGE.md) |
 | Omitted values | [Omitted-value classification](OMITTED_VALUE_CLASSIFICATION.md) |
+| Uniqueness of an omitted pencil value | [Unique omitted-value lemma](UNIQUE_OMITTED_VALUE.md) |
 | Contact strata and exceptional components | [Coincident-root rebuild](COINCIDENT_ROOT_REBUILD.md) |
 | Contact atoms and omitted-value phase diagram | [Contact-atom principle](CONTACT_ATOM_PRINCIPLE.md) |
 | Component normalizations | [Component normalization](COMPONENT_NORMALIZATION.md) |
 | Degree-twelve local singularity | [Local singularity](DEGREE12_LOCAL_SINGULARITY.md) |
+| Degree-eighteen triple intersection | [Three-sheet transverse gluing and the remaining conductor equalizer](DEGREE18_TRIPLE_INTERSECTION.md) |
 | Finite-field Chebotarev | [Effective theorem](FINITE_FIELD_CHEBOTAREV.md) |
 | Explicit quartic model | [Quartic weighted geometry](QUARTIC_WEIGHTED_GEOMETRY.md) |
 | Zhuang's external quartic islands | [Weighted-seed identification and boundary audit](EXTERNAL_QUARTIC_ISLANDS.md) |

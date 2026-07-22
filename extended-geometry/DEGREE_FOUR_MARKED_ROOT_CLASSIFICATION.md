@@ -255,9 +255,8 @@ This suggests the **known-presentation space**
 Equation (3.3) is not yet asserted to be a coarse moduli space for all
 quartic Keller maps. It is a parameter scheme for the two classified
 presentations. The weighted component maps generically injectively to
-stable classes; extending that statement through every collision stratum
-requires the valuative marked-cover extension already isolated in the
-decorated-normalization program.
+stable classes.  The stacky selected-root extension through every collision
+stratum and its coarse DVR descent are complete by `H2` and `H3`.
 
 ## 4. Why the shorter proposed scope is insufficient
 

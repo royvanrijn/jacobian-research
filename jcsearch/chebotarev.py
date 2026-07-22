@@ -117,6 +117,23 @@ def fixed_point_distribution(n: int) -> dict[int, Fraction]:
     }
 
 
+def cycle_type_centralizer_size(parts) -> int:
+    """Return ``z_lambda`` for a partition giving a symmetric-group cycle type."""
+    partition = tuple(int(part) for part in parts)
+    if not partition or any(part < 1 for part in partition):
+        raise ValueError("cycle-type parts must be positive")
+    multiplicities = Counter(partition)
+    return math.prod(
+        length**multiplicity * math.factorial(multiplicity)
+        for length, multiplicity in multiplicities.items()
+    )
+
+
+def cycle_type_probability(parts) -> Fraction:
+    """Return the proportion of permutations having the prescribed cycle type."""
+    return Fraction(1, cycle_type_centralizer_size(parts))
+
+
 def _coefficients_mod(polynomial, variable, prime):
     coefficients = {}
     for (exponent,), coefficient in sp.Poly(polynomial, variable).terms():

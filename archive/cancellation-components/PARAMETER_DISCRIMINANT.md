@@ -175,21 +175,25 @@ discriminant pair with `r=1` and odd degree has this form: positivity forces
 odd.  The first values are
 
 \[
- m=1,17,49,97,161,241,337,449,\ldots.
+ m=1,17,49,97,161,241,337,449,577,721,881,1057,\ldots.
 \]
 
 Thus both parities contain infinite alternating-group candidates.
-The exact Frobenius--Jordan regression proves that the next two cases after
-`m=17` are not merely candidates:
+The exact Frobenius--Jordan regressions prove that every displayed nontrivial
+case through `m=1057` is not merely a candidate:
 
 \[
- \operatorname{Gal}(\mathcal M_{49,1})=A_{49},\qquad
- \operatorname{Gal}(\mathcal M_{97,1})=A_{97}.          \tag{9}
+ \boxed{\operatorname{Gal}(\mathcal M_{2a^2-1,1})=A_{2a^2-1}
+ \quad(3\le a\le23,\ a\text{ odd}).}                   \tag{9}
 \]
 
 For degree 49 an isolated 13-cycle rules out the only possible nontrivial
-block size 7; for prime degree 97, irreducibility already implies
-primitivity.  Jordan's theorem and the square discriminants then give (9).
+block size 7.  The later composite degrees 161, 721, and 1057 have exact
+cycle-type incompatibility certificates for every proper block size; the
+remaining displayed degrees are prime.  Exact modular degree sieves prove
+irreducibility, isolated prime cycles invoke Jordan's theorem, and the square
+discriminants then give (9).  The complete high-degree replay is
+`scripts/verify_odd_square_galois_series.py`.
 
 ## Fixed-row density of the square locus
 

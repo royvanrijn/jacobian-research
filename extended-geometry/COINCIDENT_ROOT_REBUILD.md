@@ -230,9 +230,10 @@ the all-zero root tuple lies on every diagonal and has `Phi=1`.  Thus the
 exact-root open is dense in the retained model.  A point over a limiting seed
 still gives a genuine
 factorization (2), now with some roots collided.  Its exact multiplicities
-are sums of blocks of parts of `lambda`.  The monic omitted polynomial is
-unique by Omitted-Value Theorem, so if the seed has exact type `mu`, this limiting polynomial
-must be that type-`mu` polynomial.  Therefore `lambda preceq mu`.
+are sums of blocks of parts of `lambda`.  By the
+[unique omitted-value lemma](UNIQUE_OMITTED_VALUE.md), if the seed has exact
+type `mu`, this limiting polynomial must be its type-`mu` omitted polynomial.
+Therefore `lambda preceq mu`.
 
 Thus the order is exact:
 
@@ -380,7 +381,8 @@ This proves Component-Normalization Theorem rather than merely proposing a smoot
 Let `lambda,mu` be arbitrary full-contact partitions.  If a seed belongs to
 both `closure(E_lambda)` and `closure(E_mu)`, finiteness of the two retained
 root models supplies limiting factorizations of both types.  They cannot
-represent distinct omitted pencil values by Omitted-Value Theorem.  Their monic omitted
+represent distinct omitted pencil values by the
+[unique omitted-value lemma](UNIQUE_OMITTED_VALUE.md).  Their monic omitted
 polynomials are therefore equal.  Its exact multiplicity partition `nu` is
 obtained by colliding parts of both `lambda` and `mu`.
 

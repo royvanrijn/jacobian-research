@@ -648,36 +648,34 @@ available as independent audits, but the generic result uses only the exact
 rerooting fiber, tangent-core reconstruction, and stable preservation of the
 distinguished affine open.
 
-The collision extension is deliberately separate.  What remains is to prove
-that the affine marking extends uniquely over every DVR family in the marked
-admissible-cover compactification, compatibly with the normalized Stein
-factor and conductor square.  That valuative statement would make the full
-marked morphism representable and radicial at arbitrary simultaneous root
-collisions; the local collision computations below are evidence, not a
-substitute for the gluing theorem.
+### Stacky marked extension (complete)
 
-The proper Hurwitz-space package behind that groupoid—including the LL
-branch incidence, collision charts, and conductor boundary—is constructed in
-[HURWITZ_LL_COMPACTIFICATION.md](HURWITZ_LL_COMPACTIFICATION.md).
-Its formal comparison theorem identifies the normalized Stein factors with
-the canonical root cover and discriminant normalization.  If the distinct
-multiple roots have `e_i=ord_(rho_i)(H)-1` and `E=sum_i e_i`, the conductor
-on the `i`-th completed normalization branch is exactly
-
-\[
- (u_i^{e_i(E-1)}).                                    \tag{5.3q}
-\]
-
-Thus simultaneous multicluster collisions introduce no uncomputed gluing:
-their completed rings and conductor square agree on the admissible-cover and
-repository sides.
-
-There is also a useful stack/coarse distinction.  With `n=N-2` simple
-zero-fiber points, compactified rerooting is the finite etale quotient
+Put `n=N-2`.  On the collision-separating admissible-cover compactification,
+the selected root is the tautological marked point `p_1`, and forgetting that
+selection is the quotient-stack morphism
 
 \[
  [\overline M_{0,N}/S_{n-1}]
-   \longrightarrow[\overline M_{0,N}/S_n].            \tag{5.3r}
+   \longrightarrow[\overline M_{0,N}/S_n].            \tag{5.3q}
+\]
+
+This morphism is finite, representable, and etale of degree
+`[S_n:S_(n-1)]=n=N-2`.  Thus the selected root already extends across every
+collision on the marked stack.
+
+The proper Hurwitz-space package behind this statement—including the LL
+branch incidence, collision charts, and conductor boundary—is constructed in
+[HURWITZ_LL_COMPACTIFICATION.md](HURWITZ_LL_COMPACTIFICATION.md).  Its formal
+comparison theorem identifies the normalized Stein factors with the canonical
+root cover and discriminant normalization after contraction.  It also
+identifies every completed root-cover chart and the normalization--conductor
+square at simultaneous collisions of arbitrarily many distinct root
+clusters.  If the multiple roots have `e_i=ord_(rho_i)(H)-1` and
+`E=sum_i e_i`, the conductor on the `i`-th completed normalization branch is
+exactly
+
+\[
+ (u_i^{e_i(E-1)}).                                    \tag{5.3r}
 \]
 
 Its boundary pullback splits with coefficient one according as the selected
@@ -686,6 +684,76 @@ and `n-k`.  Only after contraction to coefficient space does ramification
 appear: a generic pair collision has transposition inertia.  The
 `epsilon=delta^m` chart at a total `m`-fold collision is a cyclic
 codimension-`m-1` slice, not generic divisorial inertia.
+
+This is the completed stacky marked-extension theorem `H2`.  In particular,
+arbitrary collision geometry, normalized-Stein comparison, and conductor
+gluing are not part of the remaining open problem.
+
+### Coarse affine-mark descent (complete)
+
+Let `bar S_N` and `bar B_N` be the coarse spaces of the marked and unmarked
+collision-separating compactifications.  They are normal: étale-locally they
+are finite-group quotients of the smooth space `bar M_(0,N)`, and invariant
+subrings of normal domains are normal.  The selected point gives a finite
+coarse root cover
+
+\[
+ \pi_c:\overline S_N\longrightarrow\overline B_N.   \tag{5.3s}
+\]
+
+The contraction morphism from the marked admissible-cover stack to this
+algebraic-space cover factors uniquely through its coarse moduli space.  By
+the stacky comparison theorem `H2`, its pullback to every completed
+repository chart is the canonical finite root cover, and its generic selected
+point is exactly the distinguished degree-one component contained in the
+regular-reconstruction open.
+
+> **Theorem (coarse affine-mark descent).**  In the relative Hilbert space of
+> degree-one subschemes of the contracted finite root cover, the closure `Z`
+> of the point selected generically by the regular-reconstruction component is
+> finite and separated, and the map `Z -> bar S_N` is an isomorphism.
+> Consequently the affine mark has exactly one coarse specialization over
+> every DVR limit, independently of the admissible-cover lift and compatibly
+> with base change.
+
+There are two formal ingredients.  For a finite separated cover, its relative
+Hilbert space of length-one subschemes is canonically the cover itself.  Thus
+`Z` is a closed integral subspace of a finite cover and is finite over
+`bar S_N`; it is generically the graph of the distinguished mark, so it is
+birational.  A finite birational
+morphism to a normal integral space is an isomorphism
+([Stacks, Lemma 29.55.8](https://stacks.math.columbia.edu/tag/0AB1)).
+Second, the coarse moduli map is categorical for morphisms to algebraic
+spaces ([Stacks, Section 106.12](https://stacks.math.columbia.edu/tag/0DUF)),
+so the contracted stack mark factors uniquely through `bar S_N`.
+Separatedness of the finite cover then gives DVR uniqueness.
+
+The collision algebra makes the conclusion explicit.  At a cluster of
+`mu` roots, write `R=k[x_1,...,x_mu]`.  The coarse unmarked and marked rings
+are
+
+\[
+ R^{S_\mu}=k[e_1,\ldots,e_\mu],\qquad
+ R^{S_{\mu-1}}
+ \simeq k[e_1,\ldots,e_\mu,T]/
+ \bigl(T^\mu-e_1T^{\mu-1}+\cdots+(-1)^\mu e_\mu\bigr), \tag{5.3t}
+\]
+
+where `T=x_1` is the selected root.  Indeed, if `e'_j` is elementary
+symmetric in `x_2,...,x_mu`, the recursion
+`e'_j=e_j-T e'_(j-1)` recovers every marked invariant.  Thus (5.3t) is the
+universal monic-root incidence, finite flat of degree `mu`.  At a total
+collision its fiber is `k[T]/(T^mu)`: it retains the stacky length and
+monodromy but has exactly one geometric point.  In particular neither
+`mu=2` nor `mu=3` gives a counterexample.  The same calculation handles every
+simultaneous cluster independently, and the completed-chart comparison in
+`H2` identifies these local covers with the repository contraction.
+
+The normalized-graph construction has this same Hilbert point as its coarse
+scheme-theoretic image; the reconstruction open is used to select the generic
+point, not to require the limiting point to remain in that open.  For the
+nonreduced collision fiber the limit is supported at its sole geometric
+point.  This completes the former open problem `OP-MARK`.
 
 Projectivizing the `N-2` nonzero critical values gives a natural matching LL
 stratum of the same dimension as the seed space:
@@ -700,7 +768,7 @@ scaling and multiplied by the `N-2` choices of marked unramified point over
 zero, gives
 
 \[
- \boxed{\deg\Lambda_N=(N-2)N^{N-3}}.                 \tag{5.3s}
+ \boxed{\deg\Lambda_N=(N-2)N^{N-3}}.                 \tag{5.3u}
 \]
 
 On the normalized graph compactification its weighted hyperplane
@@ -837,12 +905,13 @@ for a completed computation in every family.
 | saturated off-diagonal scheme and its `S_2` quotient | complete in characteristic zero | complete; quotient pullback and node transversality are checked |
 | conductor map | complete as an intrinsic finite-stratum construction, including the admissible-cover contraction | exact implicit-equation formula for arbitrary plane-curve singularities; simultaneous multicluster exponent `e_i(sum_j e_j-1)` and normalized-Stein comparison checked separately |
 | infinity and second-boundary marks | complete | exact for the weighted seeds; the quartic zero-cluster chart is checked |
-| distinguished affine root-one stratum and marked faithfulness | complete on the ordinary boundary-clean open; the seed open normalizes the marked decorated image | exact affine-sheet and rerooting audits; valuative extension through arbitrary collision strata remains open |
+| stacky marked extension | complete at arbitrary simultaneous multicluster collisions | selected root retained on the marked admissible-cover stack; quotient map finite representable etale of degree `N-2`; normalized-Stein contractions, completed root-cover charts, and conductor squares identified |
+| coarse affine root-one descent | complete after contraction | the finite birational closure is an isomorphism over the normal marked coarse compactification; the local invariant ring is the universal monic-root incidence and its total-collision fiber `k[T]/(T^mu)` has one geometric point |
 | upstairs `(e,f)`, different, DVR, and inertia data | complete as invariant data | generic divisorial layer complete |
-| higher intersections and completed local extensions | complete as functorial invariant data | full cancellation prime diagram is exact under `Res(K,L) != 0`, proved for every `mr<=30`, every `m=1`, all four uniform columns `r=1,2,3,4`, and all uniform parameter-irreducibility cases; the remaining all-parameter problem starts at `r=5` |
+| higher intersections and completed local extensions | complete as functorial invariant data | full cancellation prime diagram is exact under `Res(K,L) != 0`; this is proved in the five columns `r=1,2,3,4,5`, the six transverse columns `1<=m<=6`, every fixed-`m` eventual tail, and all other parameter-irreducibility ranges; the residual problem has `m>=7`, `r>=6`, with the first open column reduced exactly to a degree-29 endpoint eliminant |
 
-The valuative collision extension of the affine sheet is tracked only as
-`OP-MARK`, and the higher cancellation resultant only as `OP-CR`, in
+The coarse affine-mark descent theorem is tracked as `H3` and closes the
+former `OP-MARK`; the higher cancellation resultant remains `OP-CR` in
 [STATUS.md](../STATUS.md).
 
 The stability inputs agree with standard base-change results: normalization
@@ -863,6 +932,7 @@ Run
 ```bash
 .venv/bin/python scripts/verify_decorated_normalization.py
 .venv/bin/python scripts/verify_affine_branch_mark_audit.py
+.venv/bin/python scripts/verify_coarse_affine_mark_descent.py
 .venv/bin/python scripts/verify_stable_generator_rigidity.py
 .venv/bin/python scripts/verify_full_boundary_diagram.py
 ```
