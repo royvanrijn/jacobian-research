@@ -118,9 +118,10 @@ Equations (2.2) and (2.5) now say
  \quad\text{for infinitely many }m.                           \tag{3.3}
 \]
 
-Hence this image is not a Mathieu--Zhao subspace.  This is an explicit
-counterexample to `SIC(21)`, and therefore also to the unrestricted Image
-Conjecture.  The image/kernel theorem and the Image Conjecture are due to
+Hence this image is not a Mathieu--Zhao subspace.  This first gives an explicit
+counterexample to `SIC(21)`; Section 6 descends it further to `SIC(20)`.  Either
+one disproves the unrestricted Image Conjecture.  The image/kernel theorem and
+the Image Conjecture are due to
 [Zhao](https://arxiv.org/abs/0902.0210); the repository proves the inversion
 input locally rather than treating it as a black box.
 
@@ -195,7 +196,9 @@ satisfies
  \Delta^m(Q_0R^m)\ne0\ \text{for infinitely many }m}.         \tag{4.8}
 \]
 
-This is a generalized Laplacian-VC counterexample in 42 variables.
+This is a homogeneous generalized Laplacian-VC counterexample in 42
+variables.  Section 6 improves the generalized dimension to 40 after giving
+up homogeneity.
 
 ## 5. The same quartic defeats the classical HN Vanishing Conjecture
 

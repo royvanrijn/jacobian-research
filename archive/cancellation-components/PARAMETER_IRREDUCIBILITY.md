@@ -187,6 +187,31 @@ This criterion covers cases missed by both earlier theorems, such as
 `(m,r)=(6,1)`: here `m+1=7` is prime, while `L=8` fails the prime-power
 valuation condition and `L+1=9` is not prime.
 
+## Density-one fixed-row theorem from geometric derivatives
+
+The affine-reciprocal polynomial has the classical form
+
+\[
+ \sum_{j=0}^{mr}\binom{r+j}{r}x^j
+ =\frac1{r!}\left(\frac d{dx}\right)^r
+   (1+x+\cdots+x^{(m+1)r}).
+\]
+
+Borisov--Filaseta--Lam--Trifonov prove that for each fixed derivative order
+`r`, the exceptional geometric degrees `h<=T` for which the derivative is
+reducible have count `O(T log(log(T))/log(T))`.  Restricting to
+`h=r(m+1)` therefore gives
+
+\[
+ \#\{m\le X:M_{m,r}\text{ reducible}\}
+ =O_r\!\left(\frac{X\log\log X}{\log X}\right).
+\]
+
+For `r=1`, the sharper exceptional count is
+`O_(epsilon)(X^(1/3+epsilon))`.  This proves density-one irreducibility on
+every fixed-`r` row but does not settle every parameter; see
+[Borisov--Filaseta--Lam--Trifonov](https://doi.org/10.4064/aa-90-2-121-153).
+
 ## Exact modular degree-sieve certificates
 
 The three theorems above are uniform but do not cover every small pair.  The
@@ -215,6 +240,10 @@ The regression constructs certificates (10) for every pair with `mr<=30`.
 This range is aligned with the exact Galois classification in
 [PARAMETER_GALOIS_GROUPS.md](PARAMETER_GALOIS_GROUPS.md).  It is a finite
 theorem for the stated degree range, not an all-degree extrapolation.
+
+The Frobenius--Jordan regression additionally records degree-sieve
+certificates for `(m,r)=(49,1)` and `(97,1)`, as part of its proofs that their
+Galois groups are respectively `A_49` and `A_97`.
 
 Run the exact regression with
 

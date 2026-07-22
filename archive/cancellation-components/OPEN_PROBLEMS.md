@@ -10,15 +10,17 @@ The active questions are now sharply separated from completed milestones:
    compute the enhanced upstairs--downstairs boundary incidence as a candidate
    obstruction to the remaining target automorphisms;
 2. prove or disprove irreducibility of `M_(m,r)` outside the known uniform
-   criteria and the exact range `mr<=30`;
+   criteria, the fixed-`r` density-one theorem, the exact range `mr<=30`, and
+   the additional certified cases `(49,1)` and `(97,1)`;
 3. classify parameter Galois groups in all degrees and determine minimal
    collision fields; and
 4. change the reconstruction skeleton itself, for example by introducing an
    additional source function, source variable, or inverse variable.
 
 The generic-weighted-seed comparison, all allowed tail deformations,
-separability, the complete `m=1` irreducibility column, and the generalized
-mechanism inside the current ansatz are no longer open.
+separability, the complete `m=1` irreducibility column, fixed-`r` density-one
+irreducibility, and the generalized mechanism inside the current ansatz are
+no longer open.
 
 ## Archived transfer programme
 
@@ -163,13 +165,14 @@ primitive modulo `mr+1`; reduction then gives `Phi_(mr+1)`.  A third theorem
 uses the unit-disk transform to cover `binom(mr+r,r)` prime, including every
 `r=1` case with `m+1` prime.  The remaining questions are the other
 truncated-binomial cases beyond the exact modularly certified range
-`mr<=30`, higher Galois groups, and unrestricted polynomial left--right
+`mr<=30` and the additional pairs `(49,1),(97,1)`, higher Galois groups, and
+unrestricted polynomial left--right
 equivalence between conjugate roots over an algebraic closure. Fixed-target
 right-equivalence is already ruled out for distinct roots. The
 [closed discriminant formula](PARAMETER_DISCRIMINANT.md) already settles
 separability and alternating containment uniformly; square discriminants
 occur in an explicit infinite family for every fixed `r`.  The exact
-[degree-thirty table](PARAMETER_GALOIS_GROUPS.md) shows that full symmetric
-groups coexist with `D_4`, the exceptional degree-six `S_5` action, and
-alternating groups `A_12`, `A_16`, `A_17`, and `A_24`, so the higher-group
+[Galois table](PARAMETER_GALOIS_GROUPS.md) shows that full symmetric groups
+coexist with `D_4`, the exceptional degree-six `S_5` action, and alternating
+groups `A_12`, `A_16`, `A_17`, `A_24`, `A_49`, and `A_97`, so the higher-group
 problem must allow genuine exceptional families.

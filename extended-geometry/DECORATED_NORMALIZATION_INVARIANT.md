@@ -571,23 +571,46 @@ version of the “root-one branch.”  It is a genuine stable invariant, but it 
 a stratum of the normalized cover, not yet a mark on the rational curve in
 (3.5).
 
-The missing step is a cross-stratum identification.  The ramification divisor
-in the incidence is cut out by `E=partial_W E=0`.  On the root-one affine
-component,
+The ramification divisor in the incidence is cut out by
+`E=partial_W E=0`.  On the root-one affine component,
 
 \[
  C=0,qquad W=1,qquad
  \partial_WE=H'(1)-BC=-1.                            \tag{5.3b}
 \]
 
-Thus this component is disjoint from the ramification divisor.  In contrast,
-the mark `r=0` in (3.5) came from an actual valuation center where the
-discriminant divisor meets `Z_0`.  There is presently no functorial map from
-the disjoint affine component in (5.3b) to a point of
-`widetilde D_H`.  Calling its root value `r=1` uses the model's primitive
-element `W`; an abstract isomorphism of finite covers need not transport that
-primitive element by the same affine formula as its restriction to the
-ramification divisor.
+Thus this component is disjoint from the ramification divisor.  Calling its
+root value `r=1` would use the model's primitive element before proving that
+the full cover determines that element.  The needed recovery starts with the
+following intrinsic filtration.
+
+> **Low-pole filtration lemma.**  Let `deg H=N` and put
+> `R_H=k[H'(r),rH'(r)-H(r)]`.  For the pole-order filtration at the unique
+> point at infinity of the projective normalization,
+> \[
+>  L_m(R_H)=\{f\in R_H:\operatorname{ord}_\infty(f)\ge-m\},
+> \]
+> one has
+> \[
+>  L_{N-2}=k,\qquad
+>  L_{N-1}=k\oplus k s,\qquad
+>  L_N=k\oplus k s\oplus k t,                         \tag{5.3bb}
+> \]
+> where `s=H'(r)` and `t=rH'(r)-H(r)`.
+
+Indeed, `r` is integral over `k[s]`, while
+`k(s,t)=k(r)` and `[k(r):k(s)]=N-1`.  Hence the implicit equation is monic
+of degree `N-1` in `t`, and every element of `R_H` has a unique representative
+`sum_(0<=j<N-1) p_j(s)t^j`.  The pole weights
+
+\[
+ i(N-1)+jN
+\]
+
+of its monomials are distinct when `0<=j<N-1`: equality modulo `N-1`
+first gives `j=j'`, then `i=i'`.  No top-pole cancellation is possible, and
+(5.3bb) follows.  The proof is unchanged after extending the coefficient
+field.
 
 The ambiguity is visible algebraically.  If `a` is any nonzero simple root of
 `H`, define
@@ -614,24 +637,106 @@ This shows exactly where the intrinsic open contains more information than
 the present decorated-normalization target, but it does not manufacture a
 point on that target.
 
-There is nevertheless a clean conditional classification statement.  Suppose
-one proves a **cross-stratum generator-rigidity lemma** saying that an
-isomorphism of intrinsic covers with their distinguished affine opens carries
-the root-one component to a point of the discriminant normalization through
-the same affine coordinate change obtained from the Fitting divisor.  That
-change already fixes `0` and infinity, so it is `r -> ar`; compatibility with
-the root-one component forces `a=1`.  Equation (5.3) then gives `G=cH`, and
-`G'(1)=H'(1)=-1` forces `c=1`.  Consequently such a lemma would imply
+> **Theorem (faithfulness of the full marked cover).**  Let `H,G` be
+> normalized degree-`N` seeds over a characteristic-zero field, with
+> \[
+>  H(0)=H'(0)=H(1)=0,\quad H'(1)=-1,
+> \]
+> and the analogous equations for `G`.  Assume that zero has exact
+> multiplicity two and is the unique multiple primitive root (the
+> boundary-clean condition).  If the full marked incidence covers, including
+> their regular-reconstruction opens, are stably left--right equivalent, then
+> `H=G`.  In particular
+> \[
+>  F_H\sim_{\mathrm{stable}}F_G\quad\Longrightarrow\quad H=G             \tag{5.3e}
+> \]
+> whenever the stable boundary theorem identifies those full marked covers.
+
+Here is the proof, including the two external inputs.  Localize at `C` and
+write `K=k(C)`, `s=BC`, and `t=cAC^2`.  If the geometric target equivalence
+is written from the `H` target to the `G` target, its coordinate-ring
+pullback is contravariant:
 
 \[
- F_H\sim_{\mathrm{stable}}F_G\quad\Longrightarrow\quad H=G. \tag{5.3e}
+ \beta^*:K[s_G,t_G,z_1,\ldots,z_q]
+       \longrightarrow K[s_H,t_H,z_1,\ldots,z_q].       \tag{5.3l}
 \]
 
-No such cross-stratum lemma is proved here.  Accordingly `r=1` is not added
-to (3.5), and the generic-finiteness bound is not upgraded to generic
-injectivity.  Establishing or refuting generator rigidity for the normalized
-incidence together with its regular-reconstruction open is the precise next
-classification problem.
+This is the repository convention `G=beta F alpha`: formulas that express
+the old target coordinates in the new presentation substitute
+`beta^(-1)`, whereas (5.3l) itself pulls the `G` coordinate functions back
+along `beta`.  The stable equivalence takes the irreducible discriminant
+equation `f_G` to a unit times `f_H`.
+
+The curve `D_H` is geometrically irreducible and singular.  It is irreducible
+by the universal-pencil theorem; it is singular because `H''` is nonconstant
+and the derivative of `nu_H` vanishes at every root of `H''`.  Thus `f_H`
+cannot belong to a one-variable coordinate subring: geometric irreducibility
+would make it linear in that coordinate, hence a smooth coordinate line.
+Drylo's stable-equivalence theorem for `K[s,t]` therefore implies that
+`beta^*` preserves the plane subring `K[s,t]`.  (Robert Drylo,
+[On the stable equivalence problem for k[x,y]](https://doi.org/10.4064/cm124-2-9),
+*Colloq. Math.* 124 (2011), Theorem 1.)
+
+The descended plane automorphism preserves the unique infinity place of the
+discriminant normalization.  Applying (5.3bb) first to `s_G` and then to
+`t_G`, and using invertibility, gives on `D_H`
+
+\[
+ \beta^*s_G=\lambda s_H+b,
+ \qquad
+ \beta^*t_G=\mu t_H+d s_H+e,                           \tag{5.3m}
+\]
+
+with `lambda mu!=0`.  The intrinsic second-boundary mark is `r=0`, so
+`b=e=0`.  On the normalization `r=dt/ds`; hence (5.3m) sends
+
+\[
+ r_G\longmapsto \frac{\mu r_H+d}{\lambda}.
+\]
+
+The same mark forces `d=0`.  After composing with the inverse diagonal
+automorphism, the descended plane automorphism fixes `D_H` pointwise.
+Blanc--Stampfli's fixed-curve theorem says that a nonidentity automorphism of
+the affine plane can fix pointwise only curves equivalent to lines.  Since
+`D_H` is singular, the composition is the identity.  (Jeremy Blanc and
+Immanuel Stampfli,
+[Automorphisms of the plane preserving a curve](https://arxiv.org/abs/1304.2549),
+2013.)  Consequently (5.3m) holds as a polynomial identity, with `d=b=e=0`.
+
+Initially `lambda,mu` lie in `K^*`.  The localized target automorphism and its
+inverse show that each is a unit of `k[C,C^(-1)]`, hence a constant times a
+power of `C`.  The boundary valuations
+`v_(Z_0)(s)=1` and `v_(Z_0)(t)=2` force both powers to be zero.  Thus
+`lambda,mu in k^*`.  Put `a=lambda/mu`.  Restriction to the normalization and
+integration now give
+
+\[
+ G'(r/a)=\lambda H'(r),\qquad G(w)=\mu H(aw),           \tag{5.3n}
+\]
+
+and the orientation is checked directly by
+
+\[
+ \beta^*E_G(w)=G(w)-\lambda s_Hw+\mu t_H
+              =\mu E_H(aw;s_H,t_H).                   \tag{5.3o}
+\]
+
+It remains to show that an abstract stabilized cover lift uses this same
+generator.  The universal pencil has monodromy `S_N`.  Its degree-`N`
+incidence field corresponds to `S_(N-1)`, which is self-normalizing in
+`S_N`; hence the cover has no nontrivial deck automorphism.  Purely
+transcendental stabilization creates none.  Therefore the given cover lift
+is exactly `W_H=aW_G`.
+
+The distinguished affine root-one component for `G` consequently maps to
+the `H`-root `a`.  Since `G(1)=0`, (5.3n) gives `H(a)=0`.  If `a!=1`,
+boundary-cleanness makes `a` a simple extra root, whose sheet is a polar
+boundary component, contradicting preservation of the regular-reconstruction
+open.  Hence `a=1`; then `G=mu H`, and the two equations
+`G'(1)=H'(1)=-1` give `mu=1`.  This proves the theorem.  Notice that the
+coarser decorated-normalization map remains etale of degree `N-2`; it is the
+full cover together with its affine open that is faithful.
 
 Because the decorated normalization is constant on stable polynomial
 left--right classes, generic finiteness has the following stronger
