@@ -793,6 +793,21 @@ Thus simultaneous multicluster collisions introduce no uncomputed gluing:
 their completed rings and conductor square agree on the admissible-cover and
 repository sides.
 
+There is also a useful stack/coarse distinction.  With `n=N-2` simple
+zero-fiber points, compactified rerooting is the finite etale quotient
+
+\[
+ [\overline M_{0,N}/S_{n-1}]
+   \longrightarrow[\overline M_{0,N}/S_n].            \tag{5.3r}
+\]
+
+Its boundary pullback splits with coefficient one according as the selected
+point lies inside or outside a collision block, with restriction degrees `k`
+and `n-k`.  Only after contraction to coefficient space does ramification
+appear: a generic pair collision has transposition inertia.  The
+`epsilon=delta^m` chart at a total `m`-fold collision is a cyclic
+codimension-`m-1` slice, not generic divisorial inertia.
+
 Because the decorated normalization is constant on stable polynomial
 left--right classes, generic finiteness has the following stronger
 degreewise consequence:

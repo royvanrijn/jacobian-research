@@ -87,6 +87,7 @@ verify-master:
 	$(PYTHON) scripts/verify_parameter_galois_jordan.py
 	$(PYTHON) scripts/verify_generalized_cancellation.py
 	$(PYTHON) scripts/verify_log_geometry_of_suspensions.py
+	$(PYTHON) scripts/verify_reciprocal_link_classifier.py
 	$(PYTHON) scripts/verify_three_weight_cancellation.py
 	$(PYTHON) scripts/verify_two_factor_resolvent.py
 	$(PYTHON) scripts/verify_target_dependent_resolvent.py
@@ -140,6 +141,7 @@ verify-regressions: verify-external-consequences
 	$(PYTHON) scripts/verify_affine_branch_mark_audit.py
 	$(PYTHON) scripts/verify_stable_generator_rigidity.py
 	$(PYTHON) scripts/verify_multicluster_ll_comparison.py
+	$(PYTHON) scripts/verify_rerooting_groupoid_boundary.py
 	$(PYTHON) scripts/verify_quartic_c0_fibers.py
 	$(PYTHON) scripts/verify_quartic_nonproperness_paths.py
 	$(PYTHON) scripts/verify_quartic_properness_converse.py

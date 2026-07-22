@@ -487,7 +487,10 @@ realizes the discriminant as a universal critical-value incidence and places
 the compactified rerooting groupoid in a marked admissible-cover closure.  Its
 normalized-Stein comparison identifies every contracted formal root chart and
 the complete multicluster conductor square with the canonical finite
-normalization.
+normalization.  On the collision-separating model, rerooting is the degree
+`N-2` etale quotient stack obtained by selecting one simple zero-fiber point;
+generic transposition ramification appears only after contraction to the
+coarse coefficient model.
 The exact cotangent lift is polynomially right-equivalent to adjoining three
 identity coordinates, so the same invariant and dimension transfer without
 loss:

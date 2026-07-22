@@ -385,9 +385,12 @@ universal Lyashko--Looijenga point-in-branch-divisor incidence along
 $s\mapsto P_{H,s}$.  The normalized seed locus has a proper compactification
 $\overline{\mathcal S}^{\rm adm}_N$ obtained as the normalization of its
 closure in the stack of marked admissible polynomial covers.  The generic
-degree-$N-2$ rerooting relation extends to the proper forgetful groupoid on
-this stack, and a collision of $m$ zero-fiber points has local normalization
-parameter $\epsilon=\delta^m$.
+degree-$N-2$ rerooting relation extends to the proper marked/unmarked
+groupoid.  On the collision-separating model it is a finite representable
+etale quotient-stack morphism.  A total collision of $m$ zero-fiber points
+has $m$-cycle monodromy on the special transverse slice
+$\epsilon=\delta^m$, while generic coarse divisorial inertia is a
+transposition.
 \end{proposition}
 
 \begin{proof}
@@ -418,16 +421,66 @@ A. Deopurkar,
 \href{https://arxiv.org/abs/1206.4535}{\emph{Compactifications of Hurwitz
 spaces}}.}
 
-Forgetting $p_1$ has degree $N-2$ on the profile $(2,1^{N-2})$ locus and is
-the rerooting relation (6.8).  If $m$ choices collide, a transverse equation
-is $u^m=\epsilon$; normalization writes $\epsilon=\delta^m$ and the deck
-action cycles the $m$ choices.  Finally, the stable-map branch divisor extends
+Put $n=N-2$.  Forgetting which of the $n$ simple zero-fiber points is
+designated $p_1$, while retaining all of them as an unordered divisor, is the
+quotient morphism
+\[
+ [\overline M_{0,N}/S_{n-1}]
+ \longrightarrow[\overline M_{0,N}/S_n].             \tag{6.15}
+\]
+It is finite, representable, and etale of degree
+$[S_n:S_{n-1}]=n$, and restricts to the rerooting relation (6.8).  On the
+cyclic slice $u^m=\epsilon$, normalization writes
+$\epsilon=\delta^m$ and cycles the $m$ choices.  For $m>2$ this slice passes
+through the codimension-$(m-1)$ total-collision locus; the generic coarse
+discriminant instead has one pair collision and transposition inertia.
+Finally, the stable-map branch divisor extends
 in flat families, so the LL incidence extends over the closure.\footnote{B.
 Fantechi and R. Pandharipande,
 \href{https://arxiv.org/abs/math/9905104}{\emph{Stable maps and branch
 divisors}}.}  Its finite part has degree $N-1$, after removing the fixed
 branch contribution $(N-1)[\infty]$.
 \end{proof}
+
+\begin{proposition}[rerooting boundary pullback]
+\label{prop:rerooting-boundary-pullback}
+Let $\pi$ be (6.15).  For any boundary divisor whose distinguished component
+contains exactly $k$ of the $n$ simple zero-fiber marks, write
+$\Delta_{k,\mathrm{in}}$ and $\Delta_{k,\mathrm{out}}$ according as $p_1$
+belongs to that component or not.  Then
+\[
+ \pi^*[\Delta_k]
+  =[\Delta_{k,\mathrm{in}}]+[\Delta_{k,\mathrm{out}}], \tag{6.16}
+\]
+with restriction degrees $k$ and $n-k$.  After contraction to the coarse
+coefficient collision model, the generic discriminant pullback consists of
+one degree-one component of ramification index two and one unramified
+component of degree $n-2$.
+\end{proposition}
+
+\begin{proof}
+The quotient-stack map (6.15) is etale, so both coefficients in (6.16) are
+one.  Above an unordered boundary configuration, selecting one of the $k$
+points on the distinguished component gives the first restriction, while
+selecting one of the remaining $n-k$ gives the second.  At a generic
+coefficient collision, choosing the double value has local square-root
+normalization and contributes $2\cdot1$ to the degree; choosing one of the
+$n-2$ other values is unramified.  Thus the degree sum is
+$2+(n-2)=n$.
+\end{proof}
+
+\begin{remark}
+The number $N-2$ here is the subgroup index $[S_n:S_{n-1}]$, not the degree
+of the classical LL morphism.  The latter has degree $N^{N-2}$ on the full
+space of monic centered degree-$N$ polynomials.\footnote{See S. Lando and D.
+Zvonkine,
+\href{https://arxiv.org/abs/math/0303218}{\emph{Counting ramified coverings
+and intersection theory on spaces of rational functions I}}, and the
+references there for the classical polynomial LL degree.}  The fixed pencil and the
+normalized seed locus have smaller dimensions, so an LL degree for their
+restriction requires a separately specified Hurwitz stratum and intersection
+problem.
+\end{remark}
 
 \begin{theorem}[formal comparison at arbitrary root collisions]
 \label{thm:admissible-formal-comparison}
@@ -452,7 +505,7 @@ multiplicity $m_i$, and
 then the conductor in the completed normalization over $(s,t)=(0,0)$ is
 \[
  \overline{\mathfrak c}_{(0,0)}
- =\bigoplus_i u_i^{e_i(E-1)}k[[u_i]].                 \tag{6.15}
+ =\bigoplus_i u_i^{e_i(E-1)}k[[u_i]].                 \tag{6.17}
 \]
 \end{theorem}
 
@@ -473,7 +526,7 @@ At any primitive root $\alpha$, put $W=\alpha+u$.  Completion and elimination
 of $t$ give
 \[
  \widehat{\mathcal O}_{X_H,(0,0,\alpha)}=k[[s,u]],
- \qquad t=s(\alpha+u)-H(\alpha+u),                    \tag{6.16}
+ \qquad t=s(\alpha+u)-H(\alpha+u),                    \tag{6.18}
 \]
 so Hensel separation makes simultaneous distinct clusters a product of the
 same regular charts on both sides.  The reconstruction coordinates are the
@@ -485,7 +538,7 @@ $H(\rho_i+u)=c_i u^{m_i}+O(u^{m_i+1})$.  On its discriminant branch,
 with $q_i=t-\rho_i s$, formula (6.1) gives
 \[
  \operatorname{ord}_{u_i}s=e_i,\qquad
- \operatorname{ord}_{u_i}q_i=e_i+1.                  \tag{6.17}
+ \operatorname{ord}_{u_i}q_i=e_i+1.                  \tag{6.19}
 \]
 Thus its intrinsic conductor exponent is $e_i(e_i-1)$.  Distinct roots give
 distinct tangent lines $t=\rho_i s$, hence
@@ -494,7 +547,7 @@ $f=\prod_i f_i$ adds these pairwise intersections on branch $i$ and yields
 \[
  e_i(e_i-1)+\sum_{j\ne i}e_i e_j=e_i(E-1),
 \]
-which proves (6.15).  Since both constructions have the same finite
+which proves (6.17).  Since both constructions have the same finite
 normalization map, quotienting by this common conductor gives the same
 conductor square.  The argument descends from geometric branches by Galois
 invariance.

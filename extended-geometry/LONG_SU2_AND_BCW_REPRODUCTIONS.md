@@ -640,6 +640,14 @@ completed traces retained by the degree-first run, no trace passes eight exact
 necessary samples of `det(I+sJQ+tJC)=1`.  These are finite search results, not
 lower-bound proofs.
 
+A kernel-aware ordering now reranks a bounded prebeam by the modular
+post-kernel essential dimension of each partial quadratic--cubic truncation.
+At widths 24 and 64 it completes 44 and 112 terminal traces respectively;
+every terminal coefficient matrix has modular rank 21, so none can have
+essential dimension below 21 over `Q`.  On the width-24 terminal set, no trace
+passes the eight exact two-parameter samples; the closest traces fail four.
+Again, this is bounded negative search evidence, not minimality.
+
 The present 16-variable map itself definitely cannot avoid doubling.  At
 `X=(1,...,1)` its known scaling family still has
 
@@ -677,6 +685,8 @@ python3 scripts/audit_rank_compressed_bcw_24_independent.py
 python3 scripts/audit_constant_kernel_bcw_22_independent.py
 .venv/bin/python scripts/verify_essential_bcw_21_route.py
 python3 scripts/audit_essential_bcw_21_independent.py
+.venv/bin/python scripts/audit_bcw_21_linear_quotients.py
+python3 scripts/audit_bcw_21_affine_vector_symmetries.py
 .venv/bin/python scripts/verify_two_parameter_bcw_obstruction.py
 python3 scripts/verify_fixed_gmc_sic_bridge.py
 ```
@@ -688,9 +698,10 @@ baseline, and the following pair construct and independently replay its
 rank-compressed 24-variable homogenization.  The next pair construct and
 independently replay its 22-variable constant-kernel quotient.  The following
 pair freeze and independently replay the improved 21-variable essential
-quotient.  The next script checks the
-two-parameter shortcut obstruction; the final script checks the coefficient
-skeleton of the fixed-dimensional implication.  None of these
+quotient.  The next two scripts exclude further collision-preserving linear
+quotients and affine-vector-field translation symmetries.  The next script
+checks the two-parameter shortcut obstruction; the final script checks the
+coefficient skeleton of the fixed-dimensional implication.  None of these
 replaces the repository's separate 95-variable cubic-homogeneous artifact.
 
 The external theorem inputs and construction sources are:

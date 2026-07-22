@@ -109,8 +109,9 @@ marks give the affine coordinate `W` with values `0,1,infinity`; the target
 coordinate and its scale are fixed by `q_0=0`, `q_infinity=infinity`, and
 `H'(p_1)=-1`.
 
-Forgetting `p_1` gives the rerooting groupoid.  Generically the zero fiber
-has profile
+Forgetting **which** simple point is designated `p_1` gives the rerooting
+groupoid; the point itself remains in the unordered zero-fiber divisor.
+Generically the zero fiber has profile
 
 \[
  (2,1^{N-2}),
@@ -128,6 +129,30 @@ retains the marked regular component and therefore rigidifies this
 forgetful map; the coarser decorated normalization forgets it and has generic
 degree `N-2`.
 
+Put `n=N-2` and label the simple zero-fiber points temporarily as
+`p_1,...,p_n`.  On the collision-separating compactification the marked and
+unmarked stacks are
+
+\[
+ \overline{\mathfrak S}^{\mathrm{root}}_N
+   =[\overline M_{0,N}/S_{n-1}],
+ \qquad
+ \overline{\mathfrak B}^{\mathrm{root}}_N
+   =[\overline M_{0,N}/S_n],                          \tag{2.4}
+\]
+
+where `S_(n-1)` fixes `p_1`.  The rerooting morphism
+
+\[
+ \pi:\overline{\mathfrak S}^{\mathrm{root}}_N
+       \longrightarrow
+       \overline{\mathfrak B}^{\mathrm{root}}_N       \tag{2.5}
+\]
+
+is induced by `S_(n-1) subset S_n`.  It is finite, representable, and etale
+of degree `[S_n:S_(n-1)]=n=N-2`.  This subgroup index, rather than an LL
+degree, is the precise source of the generic fiber count.
+
 ## 3. Root-collision and admissible-cover compactifications
 
 There are two compatible levels of compactification.
@@ -136,12 +161,18 @@ There are two compatible levels of compactification.
 
 Label the `N-3` extra roots temporarily.  Adding the three heavy marks
 `0,1,infinity` identifies the labelled open with an open of `M_(0,N)`.
-Define
+Define the marked and unmarked quotient stacks
 
 \[
- \overline{\mathscr S}^{\mathrm{root}}_N
- =\overline M_{0,N}/S_{N-3}.                           \tag{3.1}
+ \overline{\mathfrak S}^{\mathrm{root}}_N
+ =[\overline M_{0,N}/S_{N-3}],
+ \qquad
+ \overline{\mathfrak B}^{\mathrm{root}}_N
+ =[\overline M_{0,N}/S_{N-2}].                        \tag{3.1}
 \]
+
+Their coarse spaces are obtained by replacing the quotient-stack brackets by
+ordinary finite quotients.
 
 This maximal model replaces every collision by a rational bubble and retains
 the complete collision tree.  Hassett weights on the extra roots contract
@@ -179,8 +210,9 @@ provides intermediate models in which branch points may collide to a
 prescribed extent; these are the Hurwitz analogue of the Hassett contractions
 above.
 
-The morphism from (3.1) to (3.2) is obtained by stable reduction of the
-polynomial map determined by (2.1).  It remembers root-collision directions
+The morphism from the marked stack in (3.1) to (3.2) is obtained by stable
+reduction of the polynomial map determined by (2.1).  It remembers
+root-collision directions
 on the source, while the admissible target also separates colliding critical
 values.  Taking its normalization is essential: it retains the roots of the
 smoothing parameters which appear as boundary inertia.
@@ -195,9 +227,9 @@ transverse labelled model is
  \qquad U(\rho)\ne0.                                  \tag{4.1}
 \]
 
-After normalization write `epsilon=delta^mu`.  The `mu` choices of a root are
-cycled by `delta -> zeta_mu delta`.  At the limit the marked rerooting factor
-has
+On this one-parameter slice, normalization writes `epsilon=delta^mu`.  The
+`mu` choices of a root are cycled by `delta -> zeta_mu delta`.  At the limit
+the marked rerooting factor has
 
 \[
  H_\epsilon'(a)\asymp\delta^{\mu-1},
@@ -205,13 +237,27 @@ has
 \]
 
 so the rerooted seed leaves the affine normalized-seed chart.  The
-admissible-cover bubble absorbs this divergent scale.  The completed
-forgetful map has inertia `mu`, exactly matching the repository boundary
-chart
+admissible-cover bubble absorbs this divergent scale.  On this cyclic slice
+the selected-root branch has `mu`-cycle monodromy, exactly matching the
+repository chart
 
 \[
  C=\delta^\mu,\qquad W=\rho+\kappa\delta.              \tag{4.3}
 \]
+
+This is not generic divisorial inertia when `mu>2`.  The universal local
+coefficient model is
+
+\[
+ [\mathbb A^\mu/S_{\mu-1}]
+   \longrightarrow [\mathbb A^\mu/S_\mu],             \tag{4.3a}
+\]
+
+which is etale as a quotient-stack morphism.  Its coarse discriminant has
+generic transposition inertia: one pair of roots collides.  The slice (4.1)
+passes through the codimension-`mu-1` total-collision locus and has
+discriminant order `mu-1`, so its `mu`-cycle is higher-codimensional
+monodromy, not the ramification index of a boundary divisor.
 
 If extra roots collide with zero, the contracted coefficient-space seed has
 `ord_0(H)>2`; the source-stable model retains the colliding points on a bubble.
@@ -225,6 +271,73 @@ has two pieces.  For `m>=3`, one slope-one root remains in the reconstruction
 open and `m-1` roots form the ramified boundary cluster; for `m=2`, both roots
 belong to the finite quadratic chart.  This is precisely the affine/boundary
 decomposition used in the generalized faithfulness theorem.
+
+### 4.1 Boundary-divisor pullback
+
+The quotient description (2.4) makes the boundary classes elementary.  Let
+`Delta_k^free`, for `2<=k<=n`, be the unmarked boundary whose bubble contains
+exactly `k` simple zero-fiber marks and neither `p_0` nor `p_infinity`.  Let
+`Delta_(0,k)`, for `1<=k<=n-1`, be the boundary whose `p_0`-component contains
+exactly `k` simple marks.  On the marked stack, split either divisor according
+to whether `p_1` lies inside or outside that distinguished block.  Then
+
+\[
+ \boxed{
+ \begin{aligned}
+  \pi^*\Delta_k^{\mathrm{free}}
+    &=\Delta_{k,\mathrm{in}}^{\mathrm{free}}
+      +\Delta_{k,\mathrm{out}}^{\mathrm{free}},\\
+  \pi^*\Delta_{0,k}
+    &=\Delta_{0,k,\mathrm{in}}
+      +\Delta_{0,k,\mathrm{out}}.
+ \end{aligned}}                                      \tag{4.5}
+\]
+
+Every coefficient in (4.5) is one because (2.5) is etale.  Over the generic
+point of either unmarked divisor, the restrictions of the two components have
+degrees
+
+\[
+ \deg(\Delta_{\mathrm{in}}/\Delta)=k,
+ \qquad
+ \deg(\Delta_{\mathrm{out}}/\Delta)=n-k,             \tag{4.6}
+\]
+
+with the empty component omitted at an endpoint.  The identity `k+(n-k)=n`
+is the boundary degree sum for the `n=N-2` choices of root.
+
+After contraction to the coefficient-space collision model, a generic point
+of the discriminant has one double root and `n-2` other simple roots.  Its
+inverse image has two components:
+
+\[
+ \begin{array}{c|c|c}
+  \text{component}&\text{map degree}&\text{ramification index}\\ \hline
+  R:\ p_1\text{ is the collided value}&1&2\\
+  U:\ p_1\text{ is any other value}&n-2&1.
+ \end{array}                                         \tag{4.7}
+\]
+
+Thus `2*1+(n-2)=n`.  The stack cover has no ramification divisor; the coarse
+coefficient cover has the single transposition component `R`.  Higher
+collisions record the full permutation monodromy `S_mu`, with a `mu`-cycle
+visible only after choosing a cyclic transverse slice such as (4.1).
+
+### 4.2 Which degree is an LL degree?
+
+The classical LL morphism from monic centered degree-`N` polynomials to their
+unordered `N-1` critical values is finite of degree `N^(N-2)`.  This is a
+Hurwitz number; see Lando--Zvonkine above and, for a direct modern statement,
+[McCammond, Theorem 7.3](https://web.math.ucsb.edu/~jon.mccammond/papers/gcp2-polynomials-and-cell-structures.pdf).
+
+The repository number `N-2` is different: it is the subgroup index in (2.5),
+counting a selected point in a fixed zero fiber.  Moreover the fixed-pencil
+map `s -> H-sW` is one-dimensional, and the normalized seed locus has
+dimension `N-3`; neither is the full `(N-1)`-dimensional classical LL source.
+Consequently no classical LL degree should be assigned to the repository
+pencil or seed locus without first specifying a matching Hurwitz stratum and
+an intersection problem.  Formulae (4.5)--(4.7) are the correct compactified
+degree statements currently used by the invariant.
 
 ## 5. Extending the LL incidence and the conductor
 
@@ -273,8 +386,9 @@ This gives the compactified invariant package
 
 Its open restriction is the repository full marked incidence cover.  Its
 unmarked restriction is the finite rerooting groupoid, generically of degree
-`N-2`; collision inertia and higher zero clusters are boundary phenomena of
-the same proper stack rather than exceptional formulas.
+`N-2`; permutation monodromy, coarse collision ramification, and higher zero
+clusters are boundary phenomena of the same proper stack rather than
+exceptional formulas.
 
 ## 6. The simultaneous-multicluster comparison theorem
 

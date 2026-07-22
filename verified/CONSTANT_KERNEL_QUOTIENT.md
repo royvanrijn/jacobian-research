@@ -175,6 +175,21 @@ the pipeline only; it is not evidence of minimality.  The repository makes no
 claim to an externally indexed “smallest cubic-homogeneous counterexample”
 benchmark.
 
+The faster rank-aware search also has a `kernel-aware` ordering.  It reranks
+a bounded prebeam using the modular essential rank of the current
+quadratic--cubic truncation.  Widths 24 and 64 produce 44 and 112 terminal
+traces; every terminal trace has modular essential rank 21, which safely
+excludes an essential dimension below 21 over `Q`.  Exact necessary
+two-parameter tests on the 44 width-24 terminals find no pass (the best fail
+four of eight samples).  These finite runs are pruning evidence only.
+
+```bash
+.venv/bin/python scripts/search_rank_aware_bcw.py --width 64 --max-steps 17 \
+  --incumbent 21 --score-mode kernel-aware
+.venv/bin/python scripts/search_rank_aware_bcw.py --width 24 --max-steps 17 \
+  --incumbent 21 --score-mode kernel-aware --check-two-parameter
+```
+
 A larger bounded run,
 
 ```bash

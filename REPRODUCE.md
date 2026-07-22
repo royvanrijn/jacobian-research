@@ -153,7 +153,15 @@ of the reciprocal eliminant's Schur--Cohn matrix.
 
 It also runs the log-geometric bridge regression, including the reciprocal
 determinant, canonical Jacobian-LND exponent, the degree-two plinth/Stein
-countermodel, spectral squarefreeness, and Laurent-tail descent.
+countermodel, spectral squarefreeness, and Laurent-tail descent.  The reusable
+classifier additionally checks exact prime valuations, both localized chart
+compositions, boundary elimination, the primitive residue degree, and the
+spectral gcd obstruction.  Its built-in examples can be inspected directly:
+
+```bash
+.venv/bin/python scripts/classify_reciprocal_link.py cancellation
+.venv/bin/python scripts/classify_reciprocal_link.py masuda
+```
 
 The arithmetic portion also checks the fixed-row Newton-ramification
 extraction:
@@ -189,6 +197,7 @@ identities are checked exactly by
 ```bash
 .venv/bin/python scripts/verify_stable_generator_rigidity.py
 .venv/bin/python scripts/verify_multicluster_ll_comparison.py
+.venv/bin/python scripts/verify_rerooting_groupoid_boundary.py
 ```
 
 The companion affine-stratum audit verifies that the root-one component is
@@ -196,7 +205,11 @@ regular and that a nontrivial rerooting sends it to an extra-root boundary
 component.  The multicluster audit checks distinct tangent lines, all pairwise
 intersection numbers, the conductor exponent
 `e_i(sum_j e_j-1)`, and regularity of the full marked-root incidence at
-collisions.  All three commands are part of `make verify-regressions`.
+collisions.  The rerooting-groupoid audit separately checks the quotient degree `N-2`,
+the selected-in/selected-out boundary pullbacks, generic transposition
+ramification after coefficient contraction, and the distinction between a
+cyclic total-collision slice and generic divisor inertia.  These three audits
+and the companion affine-stratum audit are part of `make verify-regressions`.
 
 ## External consequence identities
 

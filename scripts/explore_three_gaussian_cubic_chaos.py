@@ -45,12 +45,12 @@ import subprocess
 import sys
 
 
-def polynomial(prefix: str, degree: int) -> str:
+def polynomial(prefix: str, degree: int, start: int = 0) -> str:
     terms = []
-    for exponent in range(degree + 1):
+    for exponent in range(start, degree + 1):
         coefficient = f"{prefix}{exponent}"
         terms.append(coefficient if exponent == 0 else f"{coefficient}*z^{exponent}")
-    return "+".join(terms)
+    return "+".join(terms) or "0"
 
 
 def singular_program(
@@ -66,15 +66,25 @@ def singular_program(
     parameters = [
         *(f"a{i}" for i in range(degree + 1)),
         *(f"b{i}" for i in range(degree + 1)),
-        *(f"c{i}" for i in range(degree + 1)),
+        *(f"c{i}" for i in range(chart, degree + 1)),
     ]
-    chart_constraints = [
-        *(f"c{i}" for i in range(chart)),
-        f"s*c{chart}-1",
+    chart_constraints = [f"s*c{chart}-1"]
+    a1 = "a1" if degree >= 1 else "0"
+    b1 = "b1" if degree >= 1 else "0"
+    c0 = "c0" if chart == 0 else "0"
+    c1 = "c1" if degree >= 1 and chart <= 1 else "0"
+    # The z^2 and z^3 coefficients of Z=D/h select the Gaussian formal
+    # solution of the singular connection.  Besides being mathematically
+    # necessary initial data, these low-degree equations are very effective
+    # Groebner preconditioners on the difficult c0 != 0 chart.
+    branch_constraints = [
+        f"a0^2+2*b0^2+6*({c0})^2+4",
+        (
+            f"3*a0*({a1})+6*b0*({b1})+18*({c0})*({c1})"
+            f"+3*a0^2*b0+18*a0*b0*({c0})+4*b0^3"
+            f"+54*b0*({c0})^2-9"
+        ),
     ]
-    chart_substitutions = "\n".join(
-        f"  f=subst(f,c{i},0);" for i in range(chart)
-    )
     coefficient_selection = (
         "int start=1;"
         if low_coefficients is None
@@ -90,7 +100,7 @@ poly hp=diff(h,z);
 poly D=h-z*hp;
 poly v1={polynomial('a', degree)};
 poly v2={polynomial('b', degree)};
-poly v3={polynomial('c', degree)};
+poly v3={polynomial('c', degree, chart)};
 
 poly A0=z*v1;
 poly B0=z*v2;
@@ -128,14 +138,13 @@ ideal I;
 poly f;
 for (int j=start;j<=nc;j++) {{
   f=MC[2,j];
-{chart_substitutions}
   // c_chart is a unit on this chart.  Remove its pure common powers before
   // the Groebner calculation; this is equivalent to the chart saturation
   // and dramatically lowers the degrees of the coefficient generators.
   while ((f!=0) && (subst(f,c{chart},0)==0)) {{ f=f/c{chart}; }}
   I[j-start+1]=f;
 }}
-I=I,{','.join(chart_constraints)};
+I=I,{','.join(branch_constraints + chart_constraints)};
 
 print("compatibility_terms");
 print(size(Compat));
