@@ -566,10 +566,13 @@ For the frozen 16-variable trace, precisely the components numbered
 `0,1,2,3,4,6,8` are nonzero.  Exact rational row reduction shows that all
 seven are independent.  Thus `k=7`, not merely `k<=7`, and (3.9) has
 `16+7+1=24` variables.  Its transported rational three-point collision makes
-it noninvertible.  The locally proved fixed-dimensional implication now gives
+it noninvertible.  Its homogeneous Jacobian has a two-dimensional constant
+kernel; quotienting those directions preserves the collision and gives a
+22-variable cubic-homogeneous Keller map.  The locally proved
+fixed-dimensional implication now gives
 
 \[
- \boxed{\neg\mathrm{GMC}(48)}.                     \tag{3.10}
+ \boxed{\neg\mathrm{GMC}(44)}.                     \tag{3.10}
 \]
 
 This improves only the nonexplicit route-based dimension bound.  Long's
@@ -596,9 +599,20 @@ independently recomputes the rational rank, replays (3.8) with sparse
 polynomials, reconstructs the map, and checks the collision using only the
 standard library.
 
-### 3.4 What remains after 48
+The quotient generator
+[`verify_constant_kernel_bcw_22_route.py`](../scripts/verify_constant_kernel_bcw_22_route.py)
+writes the
+[22-variable sparse artifact](../artifacts/generated-results/constant_kernel_bcw_22_counterexample.json).
+The dependency-free
+[`audit_constant_kernel_bcw_22_independent.py`](../scripts/audit_constant_kernel_bcw_22_independent.py)
+parses the 24-variable source artifact, recomputes both kernel vectors, checks
+`BK=0`, `BC=I`, and `H=HCB`, reconstructs the quotient, verifies cubic
+homogeneity and the descended collision, and checks the block-triangular
+determinant factorization.
 
-The bound 48 is still an upper bound, not a minimality theorem.  The executable
+### 3.4 What remains after 44
+
+The bound 44 is still an upper bound, not a minimality theorem.  The executable
 [`search_rank_aware_bcw.py`](../scripts/search_rank_aware_bcw.py) reconstructs
 the monomial-factor beam search, deduplicates exact polynomial states, and
 scores the actual rational objective `s+rank(C)` after every candidate.  Both

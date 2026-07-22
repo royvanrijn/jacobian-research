@@ -175,8 +175,10 @@ The generated certificates are stored as the conservative
 [`79-variable artifact`](artifacts/generated-results/long_bcw_79_counterexample.json)
 and optimized
 [`33-variable artifact`](artifacts/generated-results/shared_bcw_33_counterexample.json),
-together with the final
-[`24-variable rank-compressed artifact`](artifacts/generated-results/rank_compressed_bcw_24_counterexample.json).
+together with the
+[`24-variable rank-compressed artifact`](artifacts/generated-results/rank_compressed_bcw_24_counterexample.json)
+and final
+[`22-variable constant-kernel quotient`](artifacts/generated-results/constant_kernel_bcw_22_counterexample.json).
 They record the sparse cubic maps, every reduction-step choice, and the three
 exact collision points; regeneration is deterministic.
 

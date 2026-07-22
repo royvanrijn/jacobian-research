@@ -352,6 +352,8 @@ python3 scripts/audit_long_bcw_79_independent.py
 python3 scripts/audit_shared_bcw_33_independent.py
 .venv/bin/python scripts/verify_rank_compressed_bcw_24_route.py
 python3 scripts/audit_rank_compressed_bcw_24_independent.py
+.venv/bin/python scripts/verify_constant_kernel_bcw_22_route.py
+python3 scripts/audit_constant_kernel_bcw_22_independent.py
 ```
 
 The first checker verifies the exact coefficient identities underlying
@@ -360,8 +362,10 @@ and independently replay the complete
 [79-variable sparse artifact](../artifacts/generated-results/long_bcw_79_counterexample.json);
 the following pair do the same for the
 [33-variable baseline artifact](../artifacts/generated-results/shared_bcw_33_counterexample.json),
-and the final pair generate and replay the
-[24-variable rank-compressed artifact](../artifacts/generated-results/rank_compressed_bcw_24_counterexample.json).
+the next pair generate and replay the
+[24-variable rank-compressed artifact](../artifacts/generated-results/rank_compressed_bcw_24_counterexample.json),
+and the final pair generate and independently replay its
+[22-variable constant-kernel quotient](../artifacts/generated-results/constant_kernel_bcw_22_counterexample.json).
 
 Primary provenance remains with
 [Derksen--van den Essen--Zhao](https://arxiv.org/abs/1506.05192) and

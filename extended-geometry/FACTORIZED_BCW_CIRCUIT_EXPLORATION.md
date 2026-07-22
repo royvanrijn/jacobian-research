@@ -20,6 +20,36 @@ The generator is
 and it writes
 [`constant_kernel_bcw_22_counterexample.json`](../artifacts/generated-results/constant_kernel_bcw_22_counterexample.json).
 
+### Constant-kernel quotient proposition
+
+Over a characteristic-zero field, let `F=id+H:A^n->A^n` be a polynomial map
+and let the columns of `K` span a constant subspace contained in `ker DH(x)`
+for every `x`.  Choose a quotient
+`B:k^n->k^(n-d)` with `ker B=im K` and a section `C` with `BC=I`.  Then
+
+\[
+ H=HCB,
+ \qquad f=BFC=id+BHC.
+\]
+
+Writing `S=(C|K)`, there is a polynomial `g` such that
+
+\[
+ S^{-1}FS(q,r)=(f(q),r+g(q)).
+\]
+
+Indeed, `DH K=0` makes `H` constant on the affine `K`-cosets, which gives
+`H=HCB`; applying `S^-1` gives the displayed triangular form.  Consequently
+`det DF=det Df`.  Cubic homogeneity descends, and any collision whose
+`B`-images remain distinct descends to `f`.  This linear-section/quotient
+construction is closely related to Gorni--Zampieri pairing, without requiring
+an identification with every form of that correspondence.
+
+The independent standard-library replay
+[`audit_constant_kernel_bcw_22_independent.py`](../scripts/audit_constant_kernel_bcw_22_independent.py)
+recomputes the kernel from the 24-dimensional source artifact and verifies
+every identity in this proposition for the displayed quotient.
+
 ## 1. The compact foundational DAG
 
 Put
