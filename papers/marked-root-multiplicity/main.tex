@@ -131,6 +131,17 @@ divisor ideals.  Thus $\mu=1$ when the intersection is reduced.
 
 \section{The two constructions}
 
+The common plane layer is the
+\href{../../verified/TANGENT_MAP_CORE.md}{tangent-map core}.  After replacing
+$\gamma$ by the first target coordinate $s=H'(W)+c\gamma$, its normal form is
+\[
+ (W,s)\longmapsto\bigl(s,Ws-H(W)\bigr).                 \tag{3.0}
+\]
+It simultaneously gives the inverse pencil $H(W)-sW+t=0$, the discriminant
+normalization, the Hessian Fitting divisor, and the critical-value incidence.
+The weighted construction below is its three-dimensional suspension; we use
+those consequences without rederiving them separately.
+
 \subsection{Weighted marked roots}
 
 Let $H\in k[W]$ satisfy
@@ -152,7 +163,8 @@ and, with $p=H'$ and $q=(Wp-H)/c$, define
 The conditions (3.1) make the displayed quotients polynomial.  Expanding
 at $x=0$ shows that the constant and linear terms vanish; the remaining
 linear obstruction is exactly
-$(2+\kappa)a_0+(1+\kappa)=0$.  Direct triangular differentiation gives
+$(2+\kappa)a_0+(1+\kappa)=0$.  The weighted-suspension clause of the
+tangent-map core gives
 \[
  \det\frac{\partial(A,B,C)}{\partial(x,y,z)}=b_0c.         \tag{3.3}
 \]
@@ -163,11 +175,14 @@ The marked inverse equation is
 At every generic simple root, differentiating (3.4) and using (3.2)
 reconstructs $(x,y,z)$; hence its degree is the generic degree of the map.
 
-\begin{proposition}[explicit regular weighted fiber]
+\begin{proposition}[regular weighted fibers away from critical values]
 \label{prop:weighted-explicit-fiber}
-Suppose $H\in\overline{\mathbb Q}[W]$ is an admissible seed of degree $d$
-and $c\in\overline{\mathbb Q}^{\times}$.  For any complex number $\alpha$
-transcendental over $\overline{\mathbb Q}$, the target
+Suppose $H\in\C[W]$ is an admissible seed of degree $d$ and $c\ne0$.  Choose
+$\alpha\in\C$ outside the finite set
+\[
+ \left\{-\frac{H(w)}c:H'(w)=0\right\}.
+\]
+Then the target
 \[
  (A,B,C)=(\alpha,0,1)                                    \tag{3.5}
 \]
@@ -193,11 +208,8 @@ At (3.5), the inverse equation and its $W$-derivative are
 \[
  E(W)=H(W)+c\alpha,qquad E_W(W)=H'(W).                  \tag{3.8}
 \]
-If $w$ were a common root, then $w$ would be algebraic over
-$\overline{\mathbb Q}$ because it is a root of the nonzero polynomial
-$H'$.  Hence $H(w)$ would be algebraic, contradicting
-$H(w)=-c\alpha$.  Thus $E$ is a degree-$d$ polynomial with $d$ distinct
-complex roots.
+By the choice of $\alpha$, $E$ and $E_W$ have no common root.  Thus $E$ is a
+degree-$d$ polynomial with $d$ distinct complex roots.
 
 The reconstruction formulas are
 \[
@@ -220,8 +232,8 @@ For every $N\ge4$,
  H_N(W)=W^2(1-W)(1+W^{N-3})                              \tag{3.10}
 \]
 is an admissible split seed of degree $N$.  With $b_0=1$, (3.2) is a Keller
-map of generic degree $N$, and the fiber over $(\pi,0,1)$ consists of $N$
-distinct points.
+map of generic degree $N$ and has a target fiber consisting of $N$ distinct
+points.
 \end{lemma}
 
 \begin{proof}
@@ -231,10 +243,12 @@ different from $1$.  Direct differentiation gives
  H_N'(1)=-2,qquad H_N''(1)/2=-(N+1)\ne-2.
 \]
 Thus (3.1) holds with $c=2$.  Equations (3.2)--(3.4) give polynomiality,
-Jacobian $2$, and exact generic degree $N$.  Since $H_N\in\mathbb Q[W]$ and
-$\pi$ is transcendental, Proposition~\ref{prop:weighted-explicit-fiber}
-applies with $\alpha=\pi$ and supplies the asserted $N$-point fiber, with all
-reconstruction denominators nonzero.
+Jacobian $2$, and exact generic degree $N$.  Choose any $\alpha$ outside the
+finite critical-value set and apply
+Proposition~\ref{prop:weighted-explicit-fiber}.  This supplies an $N$-point
+fiber with every reconstruction denominator nonzero.  Since
+$H_N\in\mathbb Q[W]$, taking $\alpha=\pi$ is a deterministic exact
+certificate.
 \end{proof}
 
 \subsection{Cancellation marked roots}

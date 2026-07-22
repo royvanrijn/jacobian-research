@@ -392,8 +392,8 @@ The chosen target gauge is not minimal.  With
 
 the target automorphism has determinant one, target degree one, bounded
 parameter height, and is regular at zero.  The canonical source and inverse
-degrees for `T_t` composed with `G_t` are `(25,49)` through orders one and two, rather than
-`(35,69)`.  Their leading monomial is
+degrees for `T_t` composed with `G_t` are `(25,49)` through orders one and two,
+rather than `(35,69)`.  Their leading monomial is
 `N=x^14 y^6 z^4`, with leading vectors
 
 \[
@@ -416,6 +416,8 @@ verifies the first two determinant-one identities.  It also checks the
 leading terms (5.4)--(5.5), the Catalan recurrence and closed form through
 eight orders, and the nonvanishing binomial factors.  The all-order conclusion
 uses the degree separation in the proof above, not bounded symbolic expansion.
+The torus-gauge calculation is an additional exact symbolic audit and is not
+yet incorporated into that checker.
 
 ## 6. Current conclusion
 

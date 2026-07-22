@@ -346,6 +346,39 @@ print(\"SIZE\"); size(G);
     print(completed.stdout.strip())
 
 
+def msolve_chart(equations, parameter_monomials, chart):
+    """Compute one affine projective chart with the F4 implementation msolve."""
+
+    variable_names = [f"x{index}" for index in range(38)]
+    polynomials = []
+    for equation in equations.values():
+        terms = []
+        for column, coefficient in equation.items():
+            left, right = parameter_monomials[column]
+            monomial = (
+                f"x{left}^2" if left == right else f"x{left}*x{right}"
+            )
+            terms.append(f"({int(coefficient)})*{monomial}")
+        polynomials.append("+".join(terms))
+    polynomials.append(f"x{chart}-1")
+    payload = (
+        ",".join(variable_names)
+        + f"\n{PRIME}\n"
+        + ",\n".join(polynomials)
+        + "\n"
+    )
+    completed = subprocess.run(
+        ["msolve", "-f", "/dev/stdin", "-o", "/dev/stdout", "-t", "4", "-v", "1"],
+        input=payload,
+        text=True,
+        capture_output=True,
+        timeout=300,
+    )
+    if completed.returncode:
+        raise RuntimeError(completed.stderr)
+    print(completed.stdout.strip())
+
+
 def main():
     # The rational pass certifies that the quoted 57 and 19 are not modular
     # rank accidents.  The nonlinear branch exploration then uses GF(32003).
@@ -407,6 +440,9 @@ def main():
     )
     if len(sys.argv) == 3 and sys.argv[1] == "--singular-chart":
         singular_chart(equations, parameter_monomials, int(sys.argv[2]))
+        return
+    if len(sys.argv) == 3 and sys.argv[1] == "--msolve-chart":
+        msolve_chart(equations, parameter_monomials, int(sys.argv[2]))
         return
     third_order_survivors = []
     for axis in surviving_axes:

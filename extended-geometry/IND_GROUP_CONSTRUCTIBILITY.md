@@ -402,24 +402,28 @@ operator
  (U,V)\longmapsto U\circ F_2+DF_2\,V.              \tag{6.1}
 \]
 
-The Catalan leading term producing (5.1) defines a class in the associated
-graded cokernel of (6.1) with both the source and target degree filtrations.
-The desired coercivity statement is:
+At orders one and two, the original degree-`34m+1` leading layer lies in the
+target image: the torus (5.5) cancels it.  One must instead compute a filtered
+normal form for (6.1), successively removing target images.  Equations
+(5.9)--(5.10) suggest that the first residual layer is governed by `N^m`.  The
+desired eventual coercivity statement is:
 
 \[
  \max\{\deg_x U_m,\deg_x V_m\}\ge c_r m-O_r(1)     \tag{6.2}
 \]
 
 for every solution in stabilization dimension `r`, or at least that the left
-side is unbounded.  Proving (6.2) requires showing that the monomial
+side is unbounded.  Proving (6.2) requires showing that no sequence of
+bounded-degree target coefficients cancels every residual layer.  The first
+candidate after the torus reduction is
 
 \[
- M^m=x^{20m}y^{8m}z^{6m}                            \tag{6.3}
+ N^m=x^{14m}y^{6m}z^{4m}.                           \tag{6.3}
 \]
 
-cannot be cancelled by the pullback of a lower-degree target vector field.
-This is a concrete filtered-module or Gröbner problem.  It should be attacked
-first for `r=0`, then with the extra identity variables retained symbolically.
+Testing whether its vector coefficient survives the next target quotient is a
+concrete filtered-module or Gröbner problem.  It should be attacked first for
+`r=0`, then with the extra identity variables retained symbolically.
 
 If coordinate degree can be kept bounded, Theorem 4.1 says that parameter
 height or pole order must escape instead.  This is why all three complexity
