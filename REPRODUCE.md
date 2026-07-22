@@ -114,14 +114,27 @@ The full exceptional-divisor completion is checked by
 It proves that the complete principal part is canceled by
 `2(2*tau^2-15*tau-18)*X*Q/105`.
 
-The degree-six fixed-`gamma` surface descent is checked by
+The full degree-six generic chart, exceptional divisor, and fixed-`gamma`
+specialization are checked by
 
 ```bash
+.venv/bin/python scripts/verify_degree_six_flux_surface.py
+.venv/bin/python scripts/verify_degree_six_kappa_minus_one_descent.py
 .venv/bin/python scripts/verify_degree_six_fixed_gamma_descent.py
 ```
 
-This verifies the full two-parameter seed slice, componentwise Hamiltonian
-identity, complete four-residue obstruction, and unique quadratic shear.
+These verify the three-parameter generic seed chart and the full exceptional
+divisor, componentwise Hamiltonian identities, complete residues, and unique
+completing shears.  The generic symbolic replay is a heavy calculation.
+
+The all-degree Laurent recurrence and exact fixed-`kappa=-9` probes in degrees
+seven and eight are checked by
+
+```bash
+.venv/bin/python scripts/verify_four_residue_recurrence.py
+.venv/bin/python scripts/explore_all_degree_fixed_gamma.py 7
+.venv/bin/python scripts/explore_all_degree_fixed_gamma.py 8
+```
 
 The separately authored Lean certificate is optional because it downloads a
 pinned toolchain:
