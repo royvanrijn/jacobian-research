@@ -414,7 +414,7 @@ The exact monomial replay is
 The command `--x-degree 1 --shear-degree 1` is the exceptional-chart
 completion certificate.
 
-## 4. Degree-six fixed-`gamma` surface
+## 4. The full degree-six seed space
 
 The normalized degree-six seed space has coordinates `(kappa,sigma,tau)`:
 
@@ -425,6 +425,68 @@ H=W^2(W-1)\left(
 -\frac\kappa2+2\sigma+\tau-3
 \right).
 \]
+
+On the generic chart put \(a=-(1+\kappa)/(2+\kappa)\).  With
+\(W=Z+s_2Q^2\), the complete Laurent principal part lies in the universal
+four-residue direction and has scalar obstruction
+
+\[
+\begin{aligned}
+\mathcal O_{6,a}={}&308(a+1)^2s_2
++a(a+1)^2(753\sigma^2+627\sigma\tau+132\tau^2)\\
+&-a(a+1)((2079a+2574)\sigma+(792a+990)\tau)\\
+&-99(24a^3+72a^2+82a+35).
+\end{aligned}
+\]
+
+The exact denominator is \(681246720a^{10}(a+1)^2X^4\), and the four low
+numerator coefficients are
+
+\[
+16384a^{10}\mathcal O_{6,a},\quad
+98304Qa^{10}\mathcal O_{6,a},\quad
+368640Q^2a^{10}\mathcal O_{6,a},\quad
+1105920Q^3a^{10}\mathcal O_{6,a}.
+\]
+
+Thus the unique completing quadratic shear is
+
+\[
+\boxed{
+s_2=\frac{
+-a(a+1)^2(753\sigma^2+627\sigma\tau+132\tau^2)
++a(a+1)((2079a+2574)\sigma+(792a+990)\tau)
++99(24a^3+72a^2+82a+35)
+}{308(a+1)^2}.}
+\]
+
+This covers \(\kappa\ne-1,-2\).  On the missing admissible divisor
+\(\kappa=-1\), use the replacement system of Section 3 and \(W=Z+cXQ\).
+The complete denominator is \(18480X^4\).  Its only nonzero low numerator
+coefficients are \(\mathcal E_6\) and \(-4Q\mathcal E_6\), in powers \(X^0\)
+and \(X^2\), where
+
+\[
+\mathcal E_6=1155c-251\sigma^2-209\sigma\tau+858\sigma
+-44\tau^2+330\tau+396.
+\]
+
+The exceptional divisor is therefore completed by
+
+\[
+\boxed{
+c=\frac{251\sigma^2+209\sigma\tau-858\sigma
++44\tau^2-330\tau-396}{1155}.}
+\]
+
+### Theorem — complete degree-six descent
+
+Every normalized admissible degree-six seed \((\kappa\ne-2)\) has a
+polynomial rank-two Hamiltonian after one explicit shear.  Use the displayed
+\(Q^2\)-shear on \(\kappa\ne-1,-2\) and the displayed \(XQ\)-shear on
+\(\kappa=-1\).  The resulting exact symplectic maps
+\(\mathbb A^4\to\mathbb A^4\) are polynomially left--right equivalent to the
+weighted maps times \(\operatorname{id}_{\mathbb A^1}\).
 
 Fix `kappa=-9`, so again `a=-8/7` and the degree-five adapted coordinate
 system applies.  With `W=Z+s_2Q^2`, the complete degree-six Laurent principal

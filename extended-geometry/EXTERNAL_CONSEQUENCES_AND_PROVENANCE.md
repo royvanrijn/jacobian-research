@@ -449,6 +449,30 @@ arbitrary JC(2) counterexamples.
    both the caustic and Maxwell classes are now explicit in that basis.  See
    the [faithfulness proof](DECORATED_NORMALIZATION_INVARIANT.md) and the
    [Hurwitz--LL compactification](HURWITZ_LL_COMPACTIFICATION.md).
+
+   The next Hurwitz/LL exploration queue is:
+
+   - **LL polarization and stable-target boundary.**  Compute
+     `lambda=bar Lambda_N^* c_1(O(1))` on the normalized graph and every
+     exceptional coefficient in
+     `n(n-1)lambda=3 C_N+2 M_N+sum_Gamma b_Gamma E_Gamma`.  This should turn
+     the present pullback-orientation check into a complete admissible-target
+     divisor formula.
+   - **Restricted caustic and Maxwell degrees.**  Prove the expected formulas
+     `deg(Lambda_N|C_N)=(N-2)N^(N-4)` and
+     `deg(Lambda_N|M_N)=(N-2)(N-3)N^(N-4)/2`, equivalently the corresponding
+     intersections `(N-2)N^(N-4)/(N-4)!` and
+     `(N-2)(N-3)N^(N-4)/(2(N-4)!)`.  Check first the quartic counts `2,1`
+     and the predicted quintic counts `15,15`.
+   - **Higher zero-fiber profiles.**  Extend from `(2,1^(N-2))` to
+     `(m,1^(N-m))`.  The residue calculation predicts that the caustic remains
+     `2 kappa_1`; derive and verify the general Maxwell boundary formula, whose
+     zero-side coefficient is expected to be
+     `k(N-m-k)(N+k-4)/2`.
+   - **Higher LL strata.**  Compute compactified classes for `A_3`, `A_2A_1`,
+     triple-Maxwell, and simultaneous cluster strata, then organize them in
+     the tautological/boundary ring and compare their intersections with the
+     corresponding Hurwitz numbers.
 9. **Rank-aware BCW circuit minimization.**  The reusable-factor certificate
    lowers the conservative route from 36 to 13 introduced degree-reduction
    variables.  Rank-compressed homogenization turns its exact cubic-output
