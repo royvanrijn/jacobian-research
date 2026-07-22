@@ -44,6 +44,7 @@ $\Delta_{m,r}=0$.  Then for some $a,u\in k^*$ its ring pullback satisfies
  \beta^*Q\equiv uQ\pmod P,
  \qquad
  \beta^*R\equiv u^{-m}R\pmod P.                       \tag{6.3}
+ \label{eq:stable-boundary-plane-scaling}
 \]
 The conclusion permits arbitrary mixing of the stable variables.
 \end{lemma}
@@ -81,7 +82,8 @@ for $u,v\in k^*$.  Substitution of the first equality into the second gives
  =v\{(r+1)RQ^m-C\}.
 \]
 Reduction modulo $Q$ gives $v=1$, and cancellation of $Q^m$ then gives
-$\bar\beta(R)=u^{-m}R$.  This proves \eqref{6.3}.
+$\bar\beta(R)=u^{-m}R$.  This proves
+\eqref{eq:stable-boundary-plane-scaling}.
 \end{proof}
 
 \begin{theorem}[stable cancellation-parameter faithfulness]
@@ -94,7 +96,8 @@ equivalent, then
  q=q'\qquad\hbox{and}\qquad h_q=h_{q'}.
                                                                \tag{6.7}
 \]
-Equivalently, the common finite normalization of \eqref{6.2}, together with
+Equivalently, the common finite normalization of
+\eqref{eq:cancellation-resolvent}, together with
 its distinguished affine reconstruction open and its map to the target,
 faithfully remembers the selected cancellation root.
 \end{theorem}
@@ -106,12 +109,14 @@ adjoining the same tuple of identity variables to both maps, write the ring
 identity supplied by a left--right equivalence as
 \[
  \alpha^*F_{q'}^*=F_q^*\beta^*.                       \tag{6.8}
+ \label{eq:parameter-faithfulness-equivalence}
 \]
 Lemma~\ref{lem:stable-boundary-plane-scaling} gives
 \[
  \beta^*P=aP,
  \qquad
  \beta^*Q=uQ+P\varphi                                 \tag{6.9}
+ \label{eq:parameter-faithfulness-target}
 \]
 for $a,u\in k^*$ and a polynomial $\varphi$, which may involve the stable
 variables.
@@ -120,12 +125,15 @@ In the affine reconstruction open, the inverse image of $P=0$ has exactly
 the two prime components $A=0$ and $B=0$.  Their generic residue degrees over
 $P=0$ are respectively $1$ and $r+1$, by the projective boundary chart
 \eqref{eq:cancellation-projective-branches}.  These labels survive
-stabilization, so \eqref{6.8} cannot exchange the two components.  Unique
-factorization and \eqref{6.9} therefore give a constant $c\in k^*$ such that
+stabilization, so \eqref{eq:parameter-faithfulness-equivalence} cannot
+exchange the two components.  Unique factorization and
+\eqref{eq:parameter-faithfulness-target} therefore give a constant
+$c\in k^*$ such that
 \[
  \alpha^*A'=cA,
  \qquad
  \alpha^*B'=\frac acB.                                \tag{6.10}
+ \label{eq:parameter-faithfulness-factors}
 \]
 
 The scalar $c$ is forced to be one.  Indeed, in the stabilized source the
@@ -139,7 +147,8 @@ coordinate ring
  k[y,y^{-1},z,\boldsymbol\xi]                          \tag{6.12}
 \]
 after solving $x=(t-1)y^{-m}$, and is a domain.  The pullback of the unique
-nondomain fiber $A'=1$ under \eqref{6.10} is $A=c^{-1}$; hence $c=1$.
+nondomain fiber $A'=1$ under
+\eqref{eq:parameter-faithfulness-factors} is $A=c^{-1}$; hence $c=1$.
 
 Put
 \[
@@ -148,29 +157,35 @@ Put
 Since $\alpha^*A'=A$, equation $A'-1=x'(y')^m$ becomes
 \[
  XY^m=xy^m.                                             \tag{6.13}
+ \label{eq:parameter-faithfulness-ufd}
 \]
 The stabilized source ring is a UFD, and $X,Y$ are nonassociate primes.
-If $m>1$, comparison of prime multiplicities in \eqref{6.13} gives
+If $m>1$, comparison of prime multiplicities in
+\eqref{eq:parameter-faithfulness-ufd} gives
 \[
  X=\lambda^{-m}x,qquad Y=\lambda y                   \tag{6.14}
 \]
 for some $\lambda\in k^*$.  If $m=1$, unique factorization also permits the
 formal interchange $X\sim y$, $Y\sim x$.  It cannot occur: reducing the
-$Q$-identity in \eqref{6.8} modulo $B$ gives $Y\equiv uy\pmod B$, while
+$Q$-identity in \eqref{eq:parameter-faithfulness-equivalence} modulo $B$
+gives $Y\equiv uy\pmod B$, while
 \[
  (B)\cap k[x,y,\boldsymbol\xi]=0                       \tag{6.15}
 \]
 because $B=A^{r+1}z+y^{m+1}h_q(A)$ has positive $z$-degree.  Thus the
 interchange would make a nonzero linear combination of $x$ and $y$ belong to
-$(B)$.  Consequently \eqref{6.14} holds for every $m$.  The same reduction
+$(B)$.  Consequently the scaling in (6.14) holds for every $m$.  The same reduction
 modulo $B$ now gives $\lambda=u$.
 
-Using \eqref{6.10} with $c=1$, the full $Q$-identity is
+Using \eqref{eq:parameter-faithfulness-factors} with $c=1$, the full
+$Q$-identity is
 \[
  uy+a u^{-m}xB
  =u(y+xB)+AB\,F_q^*(\varphi).                          \tag{6.16}
+ \label{eq:parameter-faithfulness-Q}
 \]
-Cancel $B$.  If $a u^{-m}-u$ were nonzero, \eqref{6.16} would imply
+Cancel $B$.  If $a u^{-m}-u$ were nonzero,
+\eqref{eq:parameter-faithfulness-Q} would imply
 $A\mid x$, which is false.  Therefore
 \[
  a=u^{m+1}.                                             \tag{6.17}
@@ -180,8 +195,8 @@ At the affine prime $A=0$, the function $y$ is a unit and
 \[
  \left.\frac{B}{y^{m+1}}\right|_{A=0}=q.               \tag{6.18}
 \]
-Equations \eqref{6.10}, \eqref{6.14}, and \eqref{6.17} carry the analogous
-residue for $F_{q'}$ to
+Equations \eqref{eq:parameter-faithfulness-factors} and (6.14)--(6.17)
+carry the analogous residue for $F_{q'}$ to
 \[
  \left.\frac{u^{m+1}B}{(uy)^{m+1}}\right|_{A=0}=q.
 \]
@@ -190,7 +205,7 @@ degree-$r$ jet over each parameter root, so $h_{q'}=h_q$ as well.
 \end{proof}
 
 \begin{remark}[reconstruction-pole interpretation]
-On the inverse chart $D=A^{-1}$, $B=PD$, and $y=Q-sP$, so \eqref{6.18} is
+On the inverse chart $D=A^{-1}$, $B=PD$, and $y=Q-sP$, so (6.18) is
 \[
  q=\operatorname{res}_{A=0}
  \frac{PD}{(Q-sP)^{m+1}}.                              \tag{6.19}
@@ -214,5 +229,10 @@ For fixed $(m,r)$, the $mr$ geometric roots of the squarefree polynomial
 $M_{m,r}$ give $mr$ pairwise stably polynomially left--right inequivalent
 cancellation maps.  Cancellation maps belonging to different pairs $(m,r)$
 of the same inverse degree remain separated by their boundary signatures.
+Consequently, if $n=N-1$, the cancellation branches together with one
+weighted class give the degreewise lower bound
+\[
+ 1+\sum_{\substack{r\mid n\\r<n}}(n-r)
+ =1+n\tau(n)-\sigma(n).
+\]
 \end{corollary}
-

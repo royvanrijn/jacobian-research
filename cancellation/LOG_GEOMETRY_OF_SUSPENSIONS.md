@@ -6,9 +6,9 @@ cover, and proves a marked `A^1/G_m` dichotomy for the plane core.  It also
 separates that plane theorem from the three-dimensional lift.  In the
 reciprocal `G_m` branch, valuation straightening and a canonical locally
 nilpotent derivation reduce the lift to the number of components in one
-general boundary fiber.  The Keller core collapses the displayed boundary
-residue to the base field, while the two-place primitive log marking rules
-out any hidden Stein cover and hence forces a global slice.  The
+general boundary fiber.  The full `A`-adic Keller congruence forces the unique
+cancellation jet in the whole source ring, producing a global slice before
+any Stein or puncture marking is chosen.  The
 polynomial `A^1` branch retains a separate chart-straightening problem.
 
 The point of the reformulation is organizational.  It does not assert that
@@ -22,10 +22,11 @@ identifies three layers:
    Stein degree of a canonical `G_a`-quotient boundary, with affine
    modifications used only after choosing graph charts.
 
-The completion-theoretic part of the third layer is settled here under the
-puncture-complete primitive boundary markings.  What remains is to derive
-that completeness from an initially unmarked divisor-minimal suspension, and
-a polynomial-chart problem in the weighted branch.
+The completion-theoretic part of the reciprocal third layer is settled here
+without a primitive residue or puncture-completeness assumption.  What
+remains is the upstream extraction of the reciprocal height-one markings
+from an arbitrary divisor-minimal suspension, and a polynomial-chart problem
+in the weighted branch.
 
 Work over a characteristic-zero field `k`.  All varieties are integral and
 all generically finite maps are generically separable.
@@ -1077,55 +1078,123 @@ It rules out the general `f_(bar B)>1` plinth model when the displayed
 residue is primitive, not merely the quadratic example.  It does not by
 itself exclude a larger relative constant field invisible to `bar(B)`.
 
-### Lemma 8.6a -- two-place primitivity excludes a hidden Stein cover
+### Proposition 8.6a -- unsliced Hensel rigidity produces the slice
 
-Let `C=G_m=Spec k[y,y^(-1)]`, let `K=k(y)`, and let `L/K` be a finite field
-extension.  Let `C_L` be the normalization of `C` in `L`, and extend its
-finite map to smooth projective completions
+Retain Proposition 8.6.  No primitivity or puncture-completeness hypothesis
+on `bar(B)` is required.  Let `q` be the constant obtained there and let
+`h_q(A)` be the unique degree-`r` cancellation jet with constant term `q`.
+Then
 
 \[
- \bar C_L\longrightarrow\mathbb P^1_y.                \tag{8.28g}
+ \boxed{B-y^{m+1}h_q(A)\in A^{r+1}R.}                 \tag{8.28g}
 \]
 
-Suppose the inverse image of `{0,infinity}` consists of exactly two points
-`p_0,p_infinity`, and the valuation vector of the pulled-back primitive unit
-`y` at these points is primitive.  Then
+Consequently
 
 \[
- \boxed{[L:K]=1.}                                      \tag{8.28h}
+ z={B-y^{m+1}h_q(A)\over A^{r+1}}\in R,qquad
+ \partial(z)=c,                                       \tag{8.28h}
+\]
+
+and hence
+
+\[
+ \boxed{R=k[x,y,z],\qquad\sigma_A=1.}                 \tag{8.28i}
 \]
 
 #### Proof
 
-Put `f=[L:K]`.  Since `k` is algebraically closed, the residue degrees at
-closed points are one.  The degree formula over zero gives
+Work in the UFD `S=R[y^(-1)]` and put `H=B/y^(m+1)`.  Substituting
+`x=(A-1)/y^m` into (8.28d) gives
 
 \[
- f=\sum_{p\mid0}e_p=v_{p_0}(y).
+ T={C_0x\over A^{r+1}}\Phi_{m,r}(A,H),                 \tag{8.28j}
 \]
 
-The corresponding formula over infinity gives
-`v_(p_infinity)(y)=-f`.  Thus the two-place valuation vector is `(f,-f)`.
-Its entries have greatest common divisor `f`; primitivity forces `f=1`.
-QED
+where
 
-This is the no-hidden-cover mechanism.  Every cover of degree greater than
-one leaves one of two log traces: either it creates more than two punctures,
-or the two remaining end orders have a common factor.  Interior branching is
-irrelevant to the argument.  Therefore reconstruction-open status must be
-read on the **full Stein normalization** `C_A` of the boundary quotient, not
-only on the displayed plane critical curve.  If its punctures are all
-recorded and the pullback of the core unit has vector `(1,-1)`, Lemma 8.6a
-gives `sigma_A=1` without assuming that `bar(B)` generates `L_A`.
+\[
+ \Phi_{m,r}(A,H)=\int_0^1
+ \left[A+(1-A)u\{1-(1-A)H(1-u)\}^m\right]^rdu.        \tag{8.28k}
+\]
+
+The prime `A` does not divide `x`, so regularity of `T` implies
+
+\[
+ \Phi_{m,r}(A,H)\in A^{r+1}S.                         \tag{8.28l}
+\]
+
+At `A=0`, this is the spectral equation
+`J_(mr,r)(bar H)=0`.  Proposition 8.6 gives `bar H=q`.  The construction of
+the finite cancellation jet gives
+
+\[
+ \Phi_{m,r}(A,h_q(A))\in A^{r+1}k[A].                 \tag{8.28m}
+\]
+
+Take the polynomial divided difference
+
+\[
+ U={\Phi_{m,r}(A,H)-\Phi_{m,r}(A,h_q(A))
+       \over H-h_q(A)}\in S.                          \tag{8.28n}
+\]
+
+Modulo `A`, both arguments are `q`, and therefore
+
+\[
+ \bar U=J'_{mr,r}(q)\in k^*.                          \tag{8.28o}
+\]
+
+Here squarefreeness of the cancellation parameter polynomial is essential.
+Thus `v_A(U)=0`.  Equations (8.28l)--(8.28m) show that
+`A^(r+1)` divides `(H-h_q(A))U`; the prime valuation now gives
+
+\[
+ H-h_q(A)\in A^{r+1}S.                                \tag{8.28p}
+\]
+
+Multiplying by `y^(m+1)` yields (8.28g) after localization.  Since
+`A=1+xy^m` is coprime to `y`, `A`-adic divisibility descends from `S` to
+`R`, proving (8.28g) in the polynomial source ring.
+
+Equation (8.20) and the fact that `x,y,A` lie in `ker(partial)` now give
+`partial(z)=c`.  Hence `z/c` is a slice, so the slice theorem gives
+`R=(ker partial)[z]`; Proposition 8.4 identifies the kernel with `k[x,y]`.
+Finally `R/AR=(k[x,y]/(A))[z]`, so the generic boundary fiber is one affine
+line and `sigma_A=1`.  QED
+
+The point is that Hensel uniqueness works in the whole nilpotent algebra
+`S/A^(r+1)S`, not only in the base subring `k[y,y^(-1),A]/(A^(r+1))`.
+Hidden boundary constants therefore cannot alter any coefficient of the
+finite jet.  This is stronger than detecting a hidden cover after it has
+formed.
+
+### Corollary 8.6b -- rank-two boundary flags are automatic
+
+Under Propositions 8.3--8.4 and polynomiality of the Keller core, the full
+Stein normalization of the quotient boundary is
+
+\[
+ C_A=V(A)=\operatorname{Spec}k[y,y^{-1}].              \tag{8.28q}
+\]
+
+Its smooth completion has exactly the two flags `y=0` and `y=infinity`, and
+their valuation vector is `(1,-1)`.  Thus an initially unmarked
+divisor-minimal reciprocal suspension has no missing rank-two boundary flag:
+the polynomial core forces the full Stein extension to be trivial before any
+flag decoration is chosen.
+
+#### Proof
+
+Proposition 8.6a gives
+`R/AR=(k[x,y]/(1+xy^m))[z]=k[y,y^(-1),z]`.  The relative algebraic closure
+of `k(y)` in `k(y)(z)` is `k(y)`, so `C_A=G_m`.  Its two standard end
+valuations give `(1,-1)`.  QED
 
 ### Theorem 8.7 -- completion of the marked cancellation branch
 
-In addition to Propositions 8.3--8.4, suppose that:
-
-1. reconstruction-open status is puncture-complete on the full Stein
-   normalization `C_A`, with exactly two punctures and primitive pulled-back
-   `y`-valuation vector; and
-2. the plane-core primitive is the polynomial
+In addition to Propositions 8.3--8.4, suppose that the plane-core primitive
+is the polynomial
 
 \[
  T=C_0\int_0^s\{1-t(Q-Pt)^m\}^r\,dt\in R,
@@ -1147,68 +1216,17 @@ cancellation construction, not merely a link with the same critical curve.
 
 #### Proof
 
-Lemma 8.6a gives `sigma_A=1`; Proposition 8.5 supplies a slice `z`, and
-Proposition 8.4 gives
+Proposition 8.6a gives the polynomial slice (8.28h) directly and identifies
+`R=k[x,y,z]`.  Equations (8.15) then give `P=AB` and `Q=y+xB`, so (8.30)
+follows.  QED
 
-\[
- R=k[x,y,z],\qquad \partial={\partial\over\partial z}.
-\]
-
-After scaling `z`, equation (8.20) integrates to
-
-\[
- B=A^{r+1}z+g(x,y)                                     \tag{8.31}
-\]
-
-for some `g in k[x,y]`.
-
-It remains to remove a restriction present in the earlier triangular
-rigidity argument: `g` need not initially be a polynomial in `(y,A)`.
-Localize at `y` and use `x=(A-1)/y^m`.  Then (8.31) becomes the generalized
-cancellation ansatz over `k[y,y^(-1),A]`.  Polynomiality of (8.29) implies
-the finite-cancellation congruence modulo `A^(r+1)`.  If
-
-\[
- g_0(y)=g(-y^{-m},y),\qquad q(y)=g_0(y)/y^{m+1},         \tag{8.32}
-\]
-
-its constant term is
-
-\[
- J_{mr,r}(q(y))=
- \int_0^1u^r\{1-q(y)(1-u)\}^{mr}\,du=0.                \tag{8.33}
-\]
-
-The nonzero polynomial `J_(mr,r)` has coefficients in `k`.  Hence the
-rational function `q(y)` is algebraic over `k`, and therefore constant.
-The parameter polynomial is squarefree, so the localized Hensel jet is
-unique.  The known jet `y^(m+1)h_q(A)` supplies it, giving
-
-\[
- g-y^{m+1}h_q(A)\in A^{r+1}k[y,y^{-1},A].               \tag{8.34}
-\]
-
-Since `A=1+xy^m` is coprime to `y`, divisibility by `A^(r+1)` descends from
-`k[x,y,y^(-1)]` to `k[x,y]`.  The quotient in (8.34) is removed by a
-polynomial shift of `z`.  This proves (8.30).  QED
-
-The theorem closes both the former arbitrary-rational-chart gap and the
-hidden-Stein-cover gap in the fully log-marked category.  The remaining
-global supply question is
-
-\[
- \boxed{
- \text{unmarked divisor-minimal reconstruction}
- \quad\Longrightarrow\quad
- \text{puncture-completeness on }C_A.}                 \tag{8.35}
-\]
-
-With the full log marking proposed in this note, Theorem 8.7 completes the
-cancellation branch as stated; neither primitivity of `bar(B)` nor Stein
-degree one is assumed.  Without puncture-completeness, the subdegree generated
-by `bar(B)` and the full `sigma_A` must both be retained.  Content and residual
-fixed schemes do not form further independent obstructions: Lemma 8.6a and
-Propositions 8.5--8.6 eliminate them after the full end data are supplied.
+The theorem now closes the arbitrary-rational-chart, hidden-Stein-cover, and
+rank-two-flag gaps simultaneously in the reciprocal branch.  Neither
+primitivity of `bar(B)`, Stein degree one, nor puncture-completeness is an
+assumption.  The full `A^(r+1)`-adic Keller congruence produces the slice and
+makes all three conclusions automatic.  The remaining global problem is
+upstream: deriving the reciprocal link and its height-one valuation markings
+from a completely arbitrary divisor-minimal polynomial suspension.
 
 ### Affine modifications after choosing a completion
 
@@ -1228,9 +1246,9 @@ completion data has been chosen.
 
 ### Residual supply problem
 
-Propositions 8.3--8.6, Lemma 8.6a, and Theorem 8.7 reduce the reciprocal
-bridge to puncture-completeness of the full Stein normalization.  More
-explicitly, start with an
+Propositions 8.3--8.6a, Corollary 8.6b, and Theorem 8.7 close the reciprocal
+bridge once its height-one link and noncontraction marking have been supplied.
+More explicitly, start with an
 elementary reciprocal-boundary link satisfying:
 
 1. there are prime boundary equations `A,D` and an isomorphism
@@ -1240,9 +1258,7 @@ elementary reciprocal-boundary link satisfying:
 3. the Jacobian `b`-divisor and core ramification satisfy the one-boundary
    ledger at the two reciprocal valuations;
 4. one coordinate is preserved as the family parameter;
-5. reconstruction-open status is puncture-complete on the full Stein
-   normalization, whose two end valuations give the core unit a primitive
-   vector;
+5. the marked boundary divisor is not contracted by the invariant-plane map;
 6. both affine completions are polynomial threefolds;
 7. the graph completion is divisor-minimal, with no unrecorded divisorial
    valuations or target ledger.
@@ -1260,16 +1276,16 @@ straightening,
 
 In the normalized `G_m` case Theorem 5.1 makes `f` a translated/scaled pure
 power.  Boundary noncontraction recovers the invariant plane by Proposition
-8.4.  Lemma 8.6a forces the full Stein degree to be one, Proposition 8.5
-supplies the third coordinate, and Theorem 8.7 forces the finite cancellation
-jet even when its initial tail is an arbitrary `g(x,y)`.  Proposition 8.6
-independently collapses the displayed residue `bar(B)` to the base field.
+8.4.  Proposition 8.6 collapses the displayed residue `bar(B)` to the base,
+and Proposition 8.6a upgrades this one coefficient to the complete
+`A^(r+1)`-adic cancellation jet and a global slice.  Corollary 8.6b then
+recovers the two primitive end flags automatically.
 
-Thus complicated or nonreduced graph centers are no longer the primary gap.
-They matter only insofar as they split the general boundary fiber, thereby
-changing `sigma_A`.  The weighted branch retains its separate polynomial-chart
-straightening problem.  The two branches unify at the level of the suspension
-square and its Jacobian `b`-divisors, not as one category of affine birational
+Thus complicated or nonreduced graph centers are no longer an independent
+gap in the reciprocal branch: any hidden boundary splitting is incompatible
+with the full Keller congruence.  The weighted branch retains its separate
+polynomial-chart straightening problem.  The two branches unify at the level
+of the suspension square and its Jacobian `b`-divisors, not as one category of affine birational
 morphisms.
 
 ## 9. Falsification tests for the bridge
@@ -1279,9 +1295,9 @@ classes before an exhaustiveness claim is made.
 
 1. **Boundary Stein splitting.**  Compute `sigma_A` directly for proposed
    reciprocal links.  Proposition 8.6 proves that a displayed primitive value
-   greater than one is incompatible with a polynomial Keller core; Lemma
-   8.6a detects a hidden extension from its puncture count or nonprimitive end
-   orders.
+   greater than one is incompatible with a polynomial Keller core;
+   Proposition 8.6a excludes even an extension hidden from that residue by
+   forcing the complete cancellation jet and slice.
 2. **The standard plinth countermodel.**  The LND
    `partial(x)=0, partial(y)=-2z, partial(z)=x^2` has kernel
    `k[x,x^2y+z^2]`; its general special fiber is two affine lines and its
@@ -1289,7 +1305,8 @@ classes before an exhaustiveness claim is made.
    quadratic residue polynomial and full Stein field exactly; Proposition
    8.6 explains why it cannot carry the cancellation Keller core with that
    residue primitive.  Displaying only a degree-one base residue leaves the
-   quadratic field hidden, which the full-Stein stage still detects.
+   quadratic field hidden from the spectral constant term, which the
+   full-Stein stage detects and the unsliced Hensel congruence excludes.
 3. **Boundary contraction.**  Drop the residue-degree/noncontraction marking
    in Proposition 8.4 and construct birational morphisms of affine planes
    which are isomorphisms off one curve but contract that curve.  This tests
@@ -1299,7 +1316,7 @@ classes before an exhaustiveness claim is made.
    a boundary-supported fixed scheme for (8.19).
 5. **Laurent deformations.**  Use (6.2) to enumerate two-place critical
    embeddings and test which admit a polynomial threefold lift.  Theorem 8.7
-   shows that none survive after the primitive residue passes Proposition 8.6.
+   shows that none survive the full `A^(r+1)`-adic congruence.
 6. **Higher-power `A^1` cores.**  Test (6.1) for `r>=2` against low-weight
    polynomial and birational vertical ledgers.
 7. **Nontrivial target ledgers.**  Allow `R_beta` to absorb a divisor which
@@ -1360,32 +1377,27 @@ A coordinate-preserving one-boundary plane core with normalized critical
 curve having at most two punctures is weighted or cancellation-type once the
 primitive boundary-coordinate valuation vectors of Theorem 5.1 are imposed.
 
-### Proved marked cancellation lift
+### Proved reciprocal cancellation lift
 
 A divisor-minimal orientation-reversing suspension with the primitive
-`G_m` markings is cancellation-type provided:
+height-one `G_m` markings is cancellation-type provided its marked boundary
+divisor is not contracted.  No primitive reconstruction residue, Stein
+degree, or puncture marking is required.
 
-1. its marked boundary divisor is not contracted; and
-2. reconstruction-open status is puncture-complete on the full boundary
-   Stein normalization and retains the primitive two-place unit vector.
-
-The first condition is already part of the residue-degree/reconstruction-open
-decoration.  Lemma 8.6a proves that the second has Stein degree one, while
-Proposition 8.6 collapses `bar(B)` to the base; Proposition 8.5 then turns the
-degree-one conclusion into fixed-point-freeness and a slice.  Under these
-conditions Propositions 8.3--8.6, Lemma 8.6a, and Theorem 8.7 prove the lift,
-including rigidity for an arbitrary initial correction `g(x,y)`.
+Noncontraction is already part of the residue-degree/reconstruction-open
+decoration.  Proposition 8.6a applies Hensel uniqueness in the entire source
+algebra modulo `A^(r+1)`, produces the slice directly, and makes full Stein
+degree one and the primitive two-place flags consequences.
 
 ### Remaining open suspension statement
 
-Every divisor-minimal one-boundary Keller suspension whose reconstruction-open
-decoration records all normalized boundary flags admits, after polynomial
+Every divisor-minimal one-boundary Keller suspension admits, after polynomial
 left--right equivalence, one of two straightened chart mechanisms:
 
 1. an orientation-preserving polynomial chart supplying the one-place
    markings of Theorem 5.1;
-2. an orientation-reversing reciprocal boundary link supplying its two-place
-   markings on the full Stein normalization.
+2. an orientation-reversing reciprocal boundary link supplying its primitive
+   height-one `G_m` markings and boundary noncontraction.
 
 Proving the open suspension statement would yield the desired dichotomy:
 
@@ -1401,14 +1413,13 @@ Proving the open suspension statement would yield the desired dichotomy:
 \]
 
 The current theory therefore no longer stops at an unspecified rational-chart
-classification.  The puncture-complete marked cancellation branch is
-complete.  Equation (8.35) is now the precise supply problem for an initially
-unmarked suspension: does divisor-minimality make every puncture of the full
-Stein normalization visible, with the core unit retaining its primitive
-vector?  Once that log-completeness is supplied, hidden covers are excluded
-by the elementary degree formula, independently of which residue is
-displayed.  The orientation-preserving weighted branch still has its separate
-polynomial-chart straightening problem.
+classification inside the reciprocal branch: that branch is complete once
+the height-one reciprocal link is present.  Rank-two flags, the full Stein
+degree, and the slice are forced by the Keller core.  The remaining suspension
+problem is the upstream classification of arbitrary divisor-minimal charts
+into the two displayed height-one mechanisms.  The orientation-preserving
+weighted branch still has its separate polynomial-chart straightening
+problem.
 
 ## References and repository links
 

@@ -75,6 +75,7 @@ verify-master:
 	$(PYTHON) scripts/verify_master_instances.py
 	$(PYTHON) scripts/verify_resolvent_ramification_signature.py
 	$(PYTHON) scripts/verify_target_fixed_parameter_rigidity.py
+	$(PYTHON) scripts/verify_cancellation_parameter_faithfulness.py
 	$(PYTHON) scripts/verify_boundary_intersection_obstruction.py
 	$(PYTHON) scripts/verify_scheme_boundary_all_parameters.py
 	$(PYTHON) scripts/verify_full_boundary_diagram.py

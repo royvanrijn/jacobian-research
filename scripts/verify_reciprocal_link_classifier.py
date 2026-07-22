@@ -21,6 +21,13 @@ from jcsearch.reciprocal import (
     spectral_obstruction,
     standard_cancellation_example,
 )
+from master_cancellation import (
+    hensel_jet,
+    parameter_polynomial,
+    phi,
+    raw_parameter_polynomial,
+    reduce_q,
+)
 
 
 def check_cancellation_certificate() -> None:
@@ -210,6 +217,39 @@ def check_unsliced_boundary_spectral_equation() -> None:
             assert sp.cancel(pole_coefficient - spectral_value) == 0
 
 
+def check_unsliced_hensel_slice_rigidity() -> None:
+    """The full nilpotent source algebra has the same unique Hensel jet."""
+    A, H, q, eta = sp.symbols("A H q eta")
+    for m in range(1, 5):
+        for r in range(1, 5):
+            modulus = parameter_polynomial(m, r, q)
+            spectral = raw_parameter_polynomial(m, r, q)
+            derivative = sp.diff(spectral, q)
+            assert sp.gcd(modulus, derivative) == 1
+
+            jet = hensel_jet(m, r, A, q)
+            jet_value = sp.expand(phi(m, r, A, jet))
+            for degree in range(r + 1):
+                assert reduce_q(jet_value.coeff(A, degree), q, modulus) == 0
+
+            divided_difference = sp.cancel(
+                (phi(m, r, A, H) - phi(m, r, A, jet)) / (H - jet)
+            )
+            boundary_multiplier = sp.cancel(
+                divided_difference.subs({A: 0, H: q})
+            )
+            assert sp.cancel(boundary_multiplier - derivative) == 0
+
+            # A hidden coefficient eta at any forbidden order is multiplied
+            # by the same invertible spectral derivative.
+            for degree in range(1, r + 1):
+                perturbed = jet + A**degree * eta
+                response = sp.expand(
+                    phi(m, r, A, perturbed) - phi(m, r, A, jet)
+                ).coeff(A, degree)
+                assert reduce_q(response - eta * derivative, q, modulus) == 0
+
+
 def main() -> None:
     check_cancellation_certificate()
     print("PASS reciprocal classifier: valuations, chart, LND, and degree-one residue")
@@ -223,6 +263,8 @@ def main() -> None:
     print("PASS no-hidden-cover valuation lemma for all end partitions with f<=12")
     check_unsliced_boundary_spectral_equation()
     print("PASS unsliced Keller pole coefficient is J_(mr,r)(bar(B)/y^(m+1))")
+    check_unsliced_hensel_slice_rigidity()
+    print("PASS unsliced Hensel rigidity forces the complete jet and global slice")
     check_split_spectral_obstruction()
     print("PASS split-plinth spectral obstruction for f<=6 and m,r<=4")
 

@@ -1,22 +1,41 @@
 # Open problems for the cancellation programme
 
 The cancellation family has separate construction, arithmetic, boundary, and
-rigidity theorems.  Unrestricted parameter equivalence, arithmetic
-classification, and universality beyond the current skeleton remain open.
+rigidity theorems.  Arithmetic classification and universality beyond the
+current skeleton remain open.  The formerly open parameter-equivalence
+problem is now closed by reconstruction-open faithfulness.
 
-## 1. Finish parameter equivalence
+## 1. Closed: parameter equivalence
 
-Compute the polynomial target automorphism group preserving the labelled
-boundary pair and determine which elements lift to the finite normalization.
-The visible quotient is the weighted scaling torus
+For fixed `(m,r)`, the common finite normalization together with its marked
+affine reconstruction open recovers the selected parameter root.  The visible
+target quotient remains the weighted scaling torus
 
 \[
  (Q,R)\mapsto(uQ,u^{-m}R),
 \]
 
-and it fixes every parameter root.  The decisive loose end is the residual
-congruence kernel acting trivially on `P=0`.  Proving that its liftable part is
-trivial would finish distinct-root left--right equivalence.
+and it fixes every parameter root.  It is no longer necessary to prove that
+the residual target congruence kernel is trivial.  Any element of that kernel
+which lifts and preserves the affine reconstruction open must preserve the two
+affine factors `P=AB`, and the source identities force
+
+\[
+ A\mapsto A,\qquad y\mapsto uy,\qquad B\mapsto u^{m+1}B.
+\]
+
+It therefore fixes the reconstruction-pole residue
+
+\[
+ q=\left.\frac{B}{y^{m+1}}\right|_{A=0}.
+\]
+
+Hence the `mr` distinct geometric roots of `M_(m,r)` give `mr` distinct
+stable left--right classes.  The full proof, including stabilization and the
+`m=1` factor-swap exclusion, is
+[the cancellation-parameter faithfulness theorem](../papers/marked-root-multiplicity/cancellation-parameter-faithfulness.tex).
+Computing the target kernel itself remains an optional automorphism-group
+problem, not an input to parameter faithfulness.
 
 ## 2. Complete the arithmetic
 

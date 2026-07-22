@@ -1,9 +1,11 @@
 # Toward rank-two symplectic descent in every degree
 
-This note defines a workable obstruction, proves rank-two completion on the
-normalized degree-five seed surface, and gives the next all-degree
-computations.  The degree-five result is an internal repository theorem with
-an exact two-parameter certificate and no recorded external specialist review.
+This note defines a workable obstruction and proves rank-two completion on
+the normalized degree-five and degree-six seed spaces.  A weighted Laurent
+argument then proves generic-chart completion in every degree, including the
+formerly conjectural fixed-\(\kappa=-9\) theorem.  These are internal
+repository theorems with exact certificates and no recorded external
+specialist review.
 
 ## 1. Normalized seeds and fixed-third-component slices
 

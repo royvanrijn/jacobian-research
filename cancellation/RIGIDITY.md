@@ -104,16 +104,37 @@ parameter roots are therefore not target-fixed right-equivalent, even after
 stabilization.
 
 For unrestricted left--right equivalence, preservation of the labelled
-boundary pair restricts a target automorphism on `P=0` to
+boundary pair, including after stabilization, restricts a target automorphism
+on `P=0` to
 
 \[
  (Q,R)\longmapsto(uQ,u^{-m}R).
 \]
 
-This visible scaling torus fixes the parameter root.  The remaining problem
-is the congruence kernel of target automorphisms acting trivially on the
-boundary plane and lifting to the cover.  Triviality of that kernel has not
-yet been proved, so unrestricted distinct-root equivalence remains open.
+The marked affine reconstruction open now eliminates the possible parameter
+motion from the residual congruence kernel.  In the source UFD, the two affine
+components of `P=AB=0` have residue degrees `1` and `r+1`, so an equivalence
+preserves `A` and `B` separately.  The unique reducible fiber of
+`A=1+xy^m` fixes the scalar of `A`; factorization of `A-1=xy^m` then recovers
+`y` up to a scalar `u`.  The global identity `Q=y+xB`, together with the
+boundary-plane restriction, forces
+
+\[
+ A\mapsto A,\qquad y\mapsto uy,\qquad B\mapsto u^{m+1}B.
+\]
+
+Consequently the intrinsic reconstruction residue
+
+\[
+ q=\left.\frac{B}{y^{m+1}}\right|_{A=0}
+\]
+
+is fixed.  Thus distinct normalized parameter roots are not unrestricted
+stably left--right equivalent.  This proves only that every lift preserving
+the marked open acts trivially on the parameter roots; the full residual
+target congruence kernel may still be nontrivial.  The canonical stable proof
+is Theorem 6.2 in
+[`cancellation-parameter-faithfulness.tex`](../papers/marked-root-multiplicity/cancellation-parameter-faithfulness.tex).
 
 ## 4. Scope and failure modes
 

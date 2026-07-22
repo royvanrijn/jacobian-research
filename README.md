@@ -70,7 +70,8 @@ contains an `(N-3)`-dimensional family of stable classes.
 - **21–22 July — this repository turned one map into whole families.**  Using
   the public root and weighted-lift ideas above, it proved weighted and
   cancellation constructions in every generic degree `N>=3`.  For `N>=4`
-  there are at least `tau(N-1)` stably different construction types and an
+  there are at least `1+(N-1)tau(N-1)-sigma(N-1)` stably different maps
+  across the cancellation branches and one weighted class, as well as an
   `(N-3)`-dimensional family of stable classes—not merely a growing list of
   isolated formulas.  See the [degreewise theorem](papers/marked-root-multiplicity/main.tex)
   and [decorated-normalization invariant](extended-geometry/DECORATED_NORMALIZATION_INVARIANT.md).
@@ -376,7 +377,7 @@ distinctions matter:
 | Weighted-seed/Gaussian bridge | Long's Lagrange--Good search architecture and Good's inversion theorem | A repository-derived polynomial determinant correction turning every nonconstant normalized seed into an explicit four-real-Gaussian witness family; the exact mixed moments recover `1+lambda*H`, making the moment realization injective; supported by a standalone constant-term-safe formal Gaussian--Lagrange proof, locally checked and not externally reviewed |
 | Cancellation maps and canonical boundary invariants | No earlier source has been identified in the present audit | The finite cancellation operator, all-parameter reconstruction and collision, boundary-exhaustion theorem, thick intersections, and rigidity results |
 | Degreewise weighted stable moduli | No earlier source has been identified in the present audit | A degree-`N-2` decorated-normalization invariant with image dimension `N-3`, plus a faithful full marked-cover invariant for all normalized admissible seeds with `ord_0(H)>=2`; the Hurwitz/LL admissible-cover closure organizes compactified rerooting and has the same formal conductor square at simultaneous multicluster collisions |
-| Cross-family stable multiplicity | No earlier source has been identified in the present audit | The complementary divisor-count theorem distinguishing one weighted class and `tau(N-1)-1` cancellation types in generic degree `N>=4` |
+| Cross-family stable multiplicity | No earlier source has been identified in the present audit | The complementary marked-open theorem distinguishes all cancellation parameter roots, all divisor types, and one weighted class, giving at least `1+(N-1)tau(N-1)-sigma(N-1)` stable classes in generic degree `N>=4` |
 
 “No earlier source identified” is a statement about the current search, not a
 claim that no such source exists.  The cancellation and boundary results are
@@ -521,17 +522,28 @@ index
 m(N-1).
 \]
 
+For a fixed type `(m,r)`, the inverse polynomial is independent of the
+chosen cancellation root, but its maximal reconstruction open is not.  The
+open canonically recovers
+
+\[
+q=\left.\frac{B}{y^{m+1}}\right|_{A=0},
+\]
+
+so the `mr=N-1-r` roots give pairwise distinct stable classes.
+
 A weighted marked-root map supplies one additional class because its canonical
 boundary intersection is reduced.  Therefore:
 
 \[
-\boxed{\text{For every }N\ge4,\text{ there are at least }\tau(N-1)
+\boxed{\text{For every }N\ge4,\text{ there are at least }
+1+(N-1)\tau(N-1)-\sigma(N-1)
 \text{ pairwise stably inequivalent degree-}N\text{ maps.}}
 \]
 
-Unlike the moduli-dimension theorem, this finite count distinguishes multiple
-construction types: the weighted locus from every cancellation type and the
-cancellation types from one another.
+Unlike the moduli-dimension theorem, this finite count distinguishes the
+selected weighted class from every cancellation branch, the cancellation
+types from one another, and all parameter roots within each type.
 
 The finer cancellation prime-intersection diagram depends on the contact
 resultant `Res(K_{m,r},L_{m,r})`.  Besides the irreducibility ranges and exact

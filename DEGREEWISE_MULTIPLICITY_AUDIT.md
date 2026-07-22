@@ -8,7 +8,7 @@ work over `C`.  The audited conclusion is
 
 \[
  \#\{\text{stable left--right classes of degree-}N\text{ Keller maps}
-       \}\ge \tau(N-1).
+       \}\ge 1+(N-1)\tau(N-1)-\sigma(N-1),
 \]
 
 Here a *Keller map* is a polynomial map `A^3 -> A^3` with nonzero constant
@@ -16,6 +16,10 @@ Jacobian, and stable left--right equivalence allows polynomial automorphisms
 of source and target after adjoining identity variables.  Each lemma below
 has its own input list; in particular, the construction lemmas do not use the
 boundary calculation, and the functoriality lemma does not use either family.
+The five lemmas give the original divisor-type count; the
+parameter-faithfulness supplement separates all roots within each type and
+gives the displayed strengthening.  Here `sigma` is the sum-of-divisors
+function.
 
 ## Lemma 1 — the displayed weighted seed is admissible
 
@@ -310,19 +314,42 @@ It does not use the stable-invariance argument.
 
 ## Assembly check
 
-There are `tau(n)-1` proper positive divisors of `n=N-1`.  Lemma 2 supplies
-one cancellation map for each.  Distinct divisors `r` have distinct
-`e_Delta=r+1` (and also distinct values
-`mu=n(n/r-1)`), so Lemmas 3--5 make these maps pairwise stably inequivalent.
-Lemma 1 supplies one weighted map; Lemma 5 separates it from every
-cancellation map by reducedness.  Therefore there are at least
+There are `tau(n)-1` proper positive divisors of `n=N-1`.  For each such
+divisor, Lemma 2 supplies `mr=n-r` parameter branches.  The
+parameter-faithfulness supplement separates the branches within a type.
+Distinct divisors `r` have distinct `e_Delta=r+1` (and also distinct values
+`mu=n(n/r-1)`), so Lemmas 3--5 separate different types.  Lemma 1 supplies
+one weighted map; Lemma 5 separates it from every cancellation map by
+reducedness.  Therefore there are at least
 
 \[
- (\tau(N-1)-1)+1=\boxed{\tau(N-1)}
+ 1+\sum_{\substack{r\mid n\\r<n}}(n-r)
+ =\boxed{1+n\tau(n)-\sigma(n)}
 \]
 
 stable left--right classes in generic degree `N`.  Cite the canonical paper,
 not this audit, for the theorem statement and proof.
+
+## Parameter-faithfulness supplement
+
+For a fixed cancellation type `(m,r)`, the degree-`mr` squarefree polynomial
+`M_(m,r)` supplies `mr` normalized cancellation jets.  The canonical paper's
+[parameter-faithfulness theorem](papers/marked-root-multiplicity/cancellation-parameter-faithfulness.tex)
+proves that these jets define `mr` distinct stable left--right classes.
+
+The proof retains the full reconstruction open.  Stable target-boundary
+rigidity gives `P -> aP` and `Q -> uQ mod P`.  In the source UFD the two
+affine factors of `P=AB` have distinct residue degrees, so they cannot be
+exchanged.  The unique nondomain fiber of `A=1+xy^m` fixes the scalar of `A`,
+and factorization of `A-1=xy^m` recovers `y` up to the scalar `u`.  The full
+identity `Q=y+xB` then forces `a=u^(m+1)`.  Therefore the boundary residue
+
+\[
+ q=\left.\frac{B}{y^{m+1}}\right|_{A=0}
+\]
+
+is invariant.  This supplement strengthens the within-type conclusion but is
+not needed for the five-lemma lower bound above.
 
 ## Reproduction hooks
 
@@ -337,6 +364,13 @@ regression in
 
 ```bash
 .venv/bin/python scripts/verify_scheme_boundary_all_parameters.py
+```
+
+The coordinate identities in the parameter-faithfulness supplement are
+checked by
+
+```bash
+.venv/bin/python scripts/verify_cancellation_parameter_faithfulness.py
 ```
 
 and a standard-library exact-arithmetic audit of the independent local

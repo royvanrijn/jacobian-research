@@ -2,8 +2,9 @@
 
 This is the canonical repository statement and proof of two complementary
 degreewise results: the `(N-3)`-dimensional weighted stable-moduli theorem and
-the `tau(N-1)` cross-construction lower bound, the latter organized through
-five separately auditable lemmas.  The foundational map, cubic marked-root
+the `1+(N-1)tau(N-1)-sigma(N-1)` cross-construction and parameter-branch
+lower bound, organized through five separately auditable lemmas and the
+stable parameter-faithfulness theorem.  The foundational map, cubic marked-root
 model, exact image theorem, and weighted theorem appear only as motivation; the
 construction formulas and boundary arguments used by the theorem are
 included in the paper.
@@ -11,7 +12,8 @@ included in the paper.
 The proof-critical normalization, stabilization, and thick-contact
 calculations are isolated as
 [`boundary-exhaustion.tex`](boundary-exhaustion.tex),
-[`stable-functoriality.tex`](stable-functoriality.tex), and
+[`stable-functoriality.tex`](stable-functoriality.tex),
+[`cancellation-parameter-faithfulness.tex`](cancellation-parameter-faithfulness.tex), and
 [`thick-intersection.tex`](thick-intersection.tex).  They are included by the
 main paper and are not competing theorem sources.
 
@@ -27,6 +29,7 @@ From the repository root, the focused regressions for this section are:
 python3 scripts/audit_boundary_exhaustion_independent.py
 python3 scripts/audit_thick_intersection_local.py
 .venv/bin/python scripts/verify_weighted_seed_schema.py
+.venv/bin/python scripts/verify_cancellation_parameter_faithfulness.py
 .venv/bin/python scripts/verify_scheme_boundary_all_parameters.py
 .venv/bin/python scripts/verify_quartic_nonproperness_paths.py
 ```

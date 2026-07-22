@@ -196,7 +196,7 @@ nilpotent obstruction.
 
 ## 7. Degreewise consequence of the boundary calculation
 
-The boundary-exhaustion and contact calculations above supply the boundary inputs to the degreewise result: cancellation type `(m,r)` has `e_Delta=r+1` and `mu=mr(m+1)`, whereas the split weighted contact is reduced.  Combined with the two construction lemmas, this yields at least `tau(N-1)` stable classes in every generic degree `N>=4`.
+The boundary-exhaustion and contact calculations above supply the boundary inputs to the degreewise result: cancellation type `(m,r)` has `e_Delta=r+1` and `mu=mr(m+1)`, whereas the split weighted contact is reduced.  The marked reconstruction open additionally separates all `mr` parameter roots within a type.  Combined with the two construction lemmas, this yields at least `1+(N-1)tau(N-1)-sigma(N-1)` stable classes in every generic degree `N>=4`.
 
 This section is only a component summary.  The canonical statement and proof are in [Marked-Root Keller Maps and Degreewise Stable Multiplicity](../papers/marked-root-multiplicity/main.tex); the [five-lemma audit](../DEGREEWISE_MULTIPLICITY_AUDIT.md) records the independent proof obligations.
 
