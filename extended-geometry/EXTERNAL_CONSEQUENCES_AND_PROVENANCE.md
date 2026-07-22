@@ -444,8 +444,9 @@ arbitrary JC(2) counterexamples.
    formal local-to-global comparison.  The rerooting boundary pullbacks are
    now explicit, and the matching marked-zero-fiber Hurwitz stratum has LL
    degree `(N-2)N^(N-3)` and weighted hyperplane intersection
-   `N^(N-3)/(N-3)!`.  A next project is to express the remaining caustic and
-   Maxwell classes in this boundary basis.  See
+   `N^(N-3)/(N-3)!`.  The invariant root-boundary Picard group has rank
+   `2N-7` with one averaged Keel relation; the caustic is `2 kappa_1`, and
+   both the caustic and Maxwell classes are now explicit in that basis.  See
    the [faithfulness proof](DECORATED_NORMALIZATION_INVARIANT.md) and the
    [Hurwitz--LL compactification](HURWITZ_LL_COMPACTIFICATION.md).
 9. **Rank-aware BCW circuit minimization.**  The reusable-factor certificate

@@ -16,8 +16,8 @@ and
 
 The full cancellation prime-intersection diagram requires
 `Res_w(K_{m,r},L_{m,r}) != 0`.  This note records a uniform endpoint
-reduction and proves the three complete columns `r=1,2,3`.  It does **not**
-claim the remaining all-parameter theorem for `r>=4`.
+reduction and proves the four complete columns `r=1,2,3,4`.  It does **not**
+claim the remaining all-parameter theorem for `r>=5`.
 
 ## 1. Triangular beta-primitive identity
 
@@ -259,17 +259,153 @@ This is disjoint from the `K_{m,3}` root disk (6).  A common root of
  \quad\text{for every }m\ge1.}                       \tag{21}
 \]
 
-## 6. Remaining step
+## 6. The complete column `r=4`
 
-The all-parameter problem now begins at `r=4`.  Formula (6) gives a fixed
-comparison disk for every column: it is enough to prove that the roots of a
-fixed-`r` endpoint eliminant lie strictly outside `|y|=m/(m+1)`.  For `r=3`
-this is exactly the Schur--Cohn certificate above.  For higher `r`, a
-subresultant recurrence may keep the eliminants and their Schur transforms
-smaller than a direct expansion.
+At a common root, `M_4=0`, and division of (1) by the nonzero `z` gives
+
+\[
+ z^3-4z^2M_1+6zM_2-4M_3=0.                         \tag{22}
+\]
+
+Clearing `D^4` in (22) and `D^5` in `M_4=0` produces a cubic `E_m(y,z)`
+and a quartic `F_m(y,z)` in `z`.  Their subresultant chain has `z`-degrees
+
+\[
+ 4,3,2,1,0.
+\]
+
+The last member factors as
+
+\[
+ \operatorname{Res}_z(E_m,F_m)=(y-1)^5H_m(y),       \tag{23}
+\]
+
+up to a nonzero rational function of `m`, where `H_m` has degree eleven.
+The penultimate member is linear:
+
+\[
+ A_m(y)z+B_m(y).                                    \tag{24}
+\]
+
+For `1<=m<=21`, direct substitution `z=y^m` gives the exact polynomial gcd
+
+\[
+ \gcd\big(E_m(y,y^m),F_m(y,y^m)\big)=(y-1)^5.       \tag{25}
+\]
+
+The only candidate in (25) is the excluded endpoint `y=1`, where
+`K_{m,4}(0)=1/5`.
+
+For the uniform tail `m>=22`, put `rho=m/(m+1)` and
+
+\[
+ Q_m(u)=u^{11}H_m(\rho/u).
+\]
+
+The eleven leading minors of the Schur--Cohn form of `Q_m` have degrees
+
+\[
+ 65,128,189,248,305,360,413,464,513,560,605.        \tag{26}
+\]
+
+After `m=n+22`, every coefficient in these minors has the sign
+
+\[
+ +,+,-,+,+,+,+,+,+,+,+.                            \tag{27}
+\]
+
+Fraction-free `LDL^T` elimination therefore gives nine positive and two
+negative pivots.  By the inertia form of Schur--Cohn, `Q_m` has nine roots
+inside the unit disk and two outside.  Equivalently, `H_m` has exactly two
+roots in `|y|<rho` and nine outside it.  Thus the pure modulus separation
+used for `r=3` fails in exactly one conjugate pair.
+
+That pair can nevertheless be localized uniformly.  Set
+
+\[
+ t=1/m,\qquad x=m(y-1),\qquad
+ c=-\frac{523}{200}+\frac{41}{8}i,qquad R=\frac12. \tag{28}
+\]
+
+Then `t^14 H_{1/t}(1+tx)` is a polynomial of degree eleven in `x` and degree
+twenty-four in `t`.  A rational Rouche certificate on the 228 intervals of
+width at most `1/5000` covering `0<=t<=1/22` proves that it has exactly one
+root in `|x-c|<R`.  The conjugate disk contains the other root.  Each cell
+uses a rational degree-eleven comparison polynomial; exact root-distance,
+coefficient-error, and parameter-derivative bounds prove the strict Rouche
+inequality.  Numerical roots only propose those rational comparison
+polynomials and are not used in the certificate.
+
+The upper disk lies strictly inside the transformed `K`-disk.  Indeed, after
+squaring the triangle-inequality bound, its numerator is
+
+\[
+ 44600m^3-487877m^2-1209554m-657077,
+\]
+
+whose coefficients become strictly positive after `m=n+22`.  Moreover every
+point in the upper disk satisfies
+
+\[
+ \pi<m\arg(y)<2\pi.                                 \tag{29}
+\]
+
+The lower inequality follows from
+`atan(q)>q/(1+q^2)` and `pi<22/7`; the resulting shifted quadratic has
+coefficients `415000,19243475,199736262`.  For the upper inequality, compare
+the disk with the ray of angle `2pi/m`, use the alternating cubic/quartic
+Taylor bounds for sine and cosine and
+`333/106<pi<355/113`.  The shifted quartic has coefficients
+
+\[
+ 361647199066050, 22794972938293518,
+ 487119829014994663, 3797665752647679636,
+ 5602580029456243464,
+\]
+
+all positive.  Consequently `y^m` lies in the lower half-plane.
+
+It remains to compare the actual endpoint variable `z`.  On a root of
+`E_m,F_m`, (24) gives `z=-B_m/A_m` provided `A_m` is nonzero.  Substitute
+`y=1+tx`, write this rational function as `N/D`, and put `x=a+ib`.  The
+identity
+
+\[
+ S(t,a,b)=\operatorname{Im}(N\overline D)=|D|^2\operatorname{Im}(z)
+\]
+
+is certified positive on the rectangular box containing the disk:
+
+\[
+ 0\le t\le1/22,\quad -623/200\le a\le-423/200,\quad
+ 37/8\le b\le45/8.                                  \tag{30}
+\]
+
+After mapping (30) to the unit cube, every tensor-product Bernstein
+coefficient of `-S/(4b(3t+2))` is strictly negative.  Hence `S>0`; this also
+proves `D!=0`.  Thus the recovered `z` lies in the upper half-plane, whereas
+(29) puts `y^m` in the lower half-plane.  The conjugate disk gives the
+conjugate contradiction.  Therefore
+
+\[
+ \boxed{\operatorname{Res}_w(K_{m,4},L_{m,4})\ne0
+ \quad\text{for every }m\ge1.}                      \tag{31}
+\]
+
+## 7. Remaining step
+
+The all-parameter problem now begins at `r=5`.  Formula (6) still gives a
+fixed comparison disk, but the `r=4` analysis shows that demanding every
+endpoint-eliminant root lie outside it is too strong.  The reusable strategy
+is instead: compute Schur--Cohn inertia, localize the exceptional branches,
+and separate `z` from `y^m` by modulus or argument.  Subresultant recurrences
+may keep the fixed-`r` eliminants and their Schur transforms smaller than a
+direct expansion.
 
 Raw interpolation of `Res_w(K,L)` still obscures this structure because its
 degree grows with `mr`.
 
-The exact symbolic certificate and bounded general-identity regression are
+The general reduction and `r<=3` certificate are in
 [`verify_contact_resultant_endpoint_reduction.py`](../scripts/verify_contact_resultant_endpoint_reduction.py).
+The exact inertia, Rouche, angle, and Bernstein certificates for `r=4` are in
+[`verify_contact_resultant_r4.py`](../scripts/verify_contact_resultant_r4.py).

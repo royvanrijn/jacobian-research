@@ -530,6 +530,88 @@ degree and using $n=N-2$ gives
 as asserted.
 \end{proof}
 
+\begin{theorem}[caustic and Maxwell boundary classes]
+\label{thm:caustic-maxwell-boundary}
+Put $n=N-2$ and work on
+$\overline{\mathfrak B}^{\rm root}_N=[\overline M_{0,n+2}/S_n]$.
+Its boundary-orbit classes satisfy the unique relation
+\[
+ \sum_{k=1}^{n-1}k(n-k)\Delta_{0,k}
+ =\sum_{k=2}^{n}k(k-1)\Delta_k^{\rm free}.           \tag{6.17}
+\]
+Thus
+\[
+ \mathcal B_n=\{\Delta_2^{\rm free},\ldots,
+ \Delta_n^{\rm free},\Delta_{0,1},\ldots,\Delta_{0,n-2}\}
+\]
+is a basis of the rational Picard group.  If $\mathcal C_N$ and
+$\mathcal M_N$ denote the closures of the caustic and Maxwell divisors, then
+in the redundant orbit presentation
+\[
+\begin{aligned}
+ [\mathcal C_N]
+  &=-\sum_{k=2}^{n}(k-1)(k-2)\Delta_k^{\rm free}
+    +\sum_{k=1}^{n-1}k(n-k)\Delta_{0,k},\\
+ [\mathcal M_N]
+  &=-\frac12\sum_{k=2}^{n}(k-1)(k-2)(k-3)
+                     \Delta_k^{\rm free}\\
+  &\qquad+\frac12\sum_{k=1}^{n-1}k(n-k)(n+k-2)\Delta_{0,k}.
+                                                               \tag{6.18}
+\end{aligned}
+\]
+In the basis $\mathcal B_n$ these become
+\[
+ [\mathcal C_N]=2\sum_{k=2}^{n}(k-1)\Delta_k^{\rm free},       \tag{6.19}
+\]
+and
+\[
+\begin{aligned}
+ [\mathcal M_N]
+  ={}&\frac12\sum_{k=2}^{n}(k-1)
+       \bigl((2n-3)k-(k-2)(k-3)\bigr)\Delta_k^{\rm free}\\
+    &-\frac12\sum_{k=1}^{n-2}k(n-k)(n-k-1)\Delta_{0,k}.
+                                                               \tag{6.20}
+\end{aligned}
+\]
+Moreover $[\mathcal C_N]=2\kappa_1$.
+\end{theorem}
+
+\begin{proof}
+The logarithmic differential $dH/H$ has residue vector
+$(2,1^n,-N)$.  Every proper partial sum is nonzero, so on a stable pointed
+source it has a nonzero residue at every node and its zero divisor avoids the
+nodes.  If $K$ is the relative dualizing class and $D$ the marked divisor,
+the double-zero locus has class
+\[
+ \pi_*((K+D)(2K+D))
+ =2\bigl(\sum_i\psi_i-\delta\bigr)=2\kappa_1.
+\]
+The symmetric boundary expansion of $\kappa_1$, together with the averaged
+Keel relation (6.17), gives (6.18)--(6.19) for the caustic.
+
+For Maxwell, label the simple roots temporarily, normalize one of them to
+$1$, and write $H=W^2\prod_i(W-a_i)$ and $K_H=H'/W$.  On the interior,
+\[
+ \Disc_V\Res_W(K_H,V-H)=\text{unit}\cdot\mathcal C_N^3\mathcal M_N^2.
+\]
+A free collision of $k$ roots gives orders
+$(k-1)(k-2)$, $(k-1)(k-2)(k-3)/2$, and $k(k-1)(k-2)$
+for caustic, Maxwell, and the left side.  If $k$ roots tend to zero, the
+first two orders are $k(k-1)$ and $k(k-1)^2/2$.  If $q=n-k$ roots tend to
+infinity, their pole orders are
+\[
+ q(q-1+2k),\qquad
+ \frac q2\bigl((n-1)(q-1+2k)+k(k-1)\bigr).
+\]
+Averaging over the $n$ choices of normalized simple root gives the
+$\Delta_{0,k}$ coefficients in (6.18), while a free collision contributes
+the negative of its vanishing order.  Finally (6.17) gives (6.20).
+The powers $3$ and $2$ have positive pullback orientation.  On the stable
+target its discriminant pullback also contains target-boundary components;
+the pole terms above have merely been moved across the principal-divisor
+equality, so (6.18) does not suppress that boundary contribution.
+\end{proof}
+
 \begin{theorem}[formal comparison at arbitrary root collisions]
 \label{thm:admissible-formal-comparison}
 Pull the marked admissible-cover compactification of
@@ -553,7 +635,7 @@ multiplicity $m_i$, and
 then the conductor in the completed normalization over $(s,t)=(0,0)$ is
 \[
  \overline{\mathfrak c}_{(0,0)}
- =\bigoplus_i u_i^{e_i(E-1)}k[[u_i]].                 \tag{6.17}
+ =\bigoplus_i u_i^{e_i(E-1)}k[[u_i]].                 \tag{6.21}
 \]
 \end{theorem}
 
@@ -574,7 +656,7 @@ At any primitive root $\alpha$, put $W=\alpha+u$.  Completion and elimination
 of $t$ give
 \[
  \widehat{\mathcal O}_{X_H,(0,0,\alpha)}=k[[s,u]],
- \qquad t=s(\alpha+u)-H(\alpha+u),                    \tag{6.18}
+ \qquad t=s(\alpha+u)-H(\alpha+u),                    \tag{6.22}
 \]
 so Hensel separation makes simultaneous distinct clusters a product of the
 same regular charts on both sides.  The reconstruction coordinates are the
@@ -586,7 +668,7 @@ $H(\rho_i+u)=c_i u^{m_i}+O(u^{m_i+1})$.  On its discriminant branch,
 with $q_i=t-\rho_i s$, formula (6.1) gives
 \[
  \operatorname{ord}_{u_i}s=e_i,\qquad
- \operatorname{ord}_{u_i}q_i=e_i+1.                  \tag{6.19}
+ \operatorname{ord}_{u_i}q_i=e_i+1.                  \tag{6.23}
 \]
 Thus its intrinsic conductor exponent is $e_i(e_i-1)$.  Distinct roots give
 distinct tangent lines $t=\rho_i s$, hence
@@ -595,7 +677,7 @@ $f=\prod_i f_i$ adds these pairwise intersections on branch $i$ and yields
 \[
  e_i(e_i-1)+\sum_{j\ne i}e_i e_j=e_i(E-1),
 \]
-which proves (6.17).  Since both constructions have the same finite
+which proves (6.21).  Since both constructions have the same finite
 normalization map, quotienting by this common conductor gives the same
 conductor square.  The argument descends from geometric branches by Galois
 invariance.

@@ -492,7 +492,9 @@ normalization.  On the collision-separating model, rerooting is the degree
 generic transposition ramification appears only after contraction to the
 coarse coefficient model.  Projectivizing the remaining critical values gives
 the matching marked Hurwitz stratum, and its restricted LL map has exact
-degree `(N-2)N^(N-3)`.
+degree `(N-2)N^(N-3)`.  On the root compactification, the caustic is
+`2 kappa_1`; the caustic and Maxwell closures now both have explicit classes
+in the `2N-7`-element invariant boundary basis.
 The exact cotangent lift is polynomially right-equivalent to adjoining three
 identity coordinates, so the same invariant and dimension transfer without
 loss:

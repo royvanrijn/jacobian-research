@@ -393,7 +393,7 @@ $mr\le30$, the entire column $m=1$, and the other uniform arithmetic
 criteria; direct resultants are additionally checked for $1\le m,r\le5$.
 In particular every rung of the quadratic stationary-point ladder is covered.
 
-There are also three uniform columns which do not use irreducibility.  Put
+There are also four uniform columns which do not use irreducibility.  Put
 $M_k=K_{m,k}$, including $M_0=1$.  Scaling $v=wt$ and expanding gives
 \[
  L_{m,r}=\sum_{k=0}^r(-1)^k\binom rk
@@ -477,4 +477,47 @@ therefore positive definite for $m\ge1$.  Schur--Cohn gives
 which is disjoint from (4.30).  Thus (4.22) also holds for every $m$ when
 $r=3$.  The exact coefficient-positivity certificate is reproduced by
 \path{scripts/verify_contact_resultant_endpoint_reduction.py}.
+
+For $r=4$, a common root similarly gives $M_4=0$ and
+
+\[
+ z^3-4z^2M_1+6zM_2-4M_3=0.                         \tag{4.37}
+\]
+
+After clearing endpoint denominators, these are a cubic $E_m(y,z)$ and a
+quartic $F_m(y,z)$.  Their last two subresultants are linear in $z$ and
+\[
+ \operatorname {Res}_z(E_m,F_m)=(y-1)^5H_m(y),   \tag{4.38}
+\]
+up to a nonzero element of $\mathbb Q(m)$, where $H_m$ has degree eleven.
+For $1\le m\le21$, imposing $z=y^m$ gives the exact gcd $(y-1)^5$,
+so only the already excluded endpoint remains.
+
+For $m\ge22$, the Schur--Cohn form of
+$u^{11}H_m((m/(m+1))/u)$ has inertia $(9,2)$.  Indeed, its eleven leading
+minors have degrees
+\[
+ 65,128,189,248,305,360,413,464,513,560,605
+\]
+and, after $m=n+22$, coefficient signs
+$+,+,-,+,+,+,+,+,+,+,+$.  Thus exactly one conjugate pair of $H_m$-roots
+lies in (4.30).  With $t=1/m$ and $x=m(y-1)$, a rational Rouch\'e
+certificate localizes its upper member in
+\[
+ \left|x+\frac{523}{200}-\frac{41}{8}i\right|<\frac12. \tag{4.39}
+\]
+The certificate covers $0\le t\le1/22$ by 228 rational intervals; exact
+distance, coefficient, and parameter-derivative bounds prove every strict
+Rouch\'e inequality.
+
+The disk (4.39) lies inside (4.30) and satisfies
+$\pi<m\arg(y)<2\pi$, so $y^m$ lies in the lower half-plane.  The linear
+subresultant recovers $z=-B_m/A_m$.  On the rectangular box containing
+(4.39), every tensor-product Bernstein coefficient of the polynomial
+equivalent to $-|A_m|^2\operatorname {Im}(z)$ is strictly negative; hence
+$A_m\ne0$ and $\operatorname {Im}(z)>0$.  This contradicts $z=y^m$; the
+lower disk gives the conjugate contradiction.  Therefore (4.22) holds for
+every $m$ also when $r=4$.  The exact inertia, Rouch\'e, angle, and Bernstein
+certificates are reproduced by
+\path{scripts/verify_contact_resultant_r4.py}.
 \end{proof}

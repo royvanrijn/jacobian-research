@@ -39,11 +39,14 @@ cover with its regular-reconstruction open is faithful, even when the other
 roots collide.  The marked admissible-cover compactification has the same
 normalized Stein factors and conductor square at arbitrary simultaneous root
 collisions.  Its marked-zero-fiber LL morphism has degree
-$(N-2)N^{N-3}$.  Separately, the weighted contact is
+  $(N-2)N^{N-3}$.  Separately, the weighted contact is
 reduced, whereas a cancellation type $(m,r)$ has discriminant ramification
-$r+1$ and nilpotency index $mr(m+1)$.  This distinguishes at least
-$\tau(N-1)$ cross-construction stable classes of degree $N$, each with a
-nontrivial fiber.
+$r+1$ and nilpotency index $mr(m+1)$.  For fixed $(m,r)$, the full marked
+normalization with its affine reconstruction open also recovers the selected
+root of the degree-$mr$ cancellation polynomial.  Thus all parameter roots
+give distinct stable classes.  In particular, the construction distinguishes
+at least $\tau(N-1)$ cross-construction stable classes of degree $N$, each
+with a nontrivial fiber.
 \end{abstract}
 
 \section{Introduction}
@@ -325,6 +328,8 @@ and reconstruct to $N$ distinct source points.
 
 \input{stable-functoriality.tex}
 
+\input{cancellation-parameter-faithfulness.tex}
+
 \input{thick-intersection.tex}
 
 \input{decorated-normalization.tex}
@@ -363,8 +368,9 @@ vertex.  The theorem shows that generic degree alone is a coarse invariant:
 its stable multiplicity already grows at least as the divisor function of
 $N-1$.
 
-The argument deliberately stops at a lower bound.  It neither classifies
-different cancellation parameter roots for fixed $(m,r)$ nor asserts that
-the displayed families exhaust all stable classes.
+The argument deliberately stops short of an exhaustion theorem.  It now
+distinguishes all cancellation parameter roots for fixed $(m,r)$, as well as
+the different cancellation types and the weighted locus, but it does not
+assert that the displayed families exhaust all stable classes.
 
 \end{document}

@@ -397,7 +397,188 @@ Here the rational normalization is the standard stack intersection
 `\int_{\mathbb P(1,...,n)}\eta^{n-1}=1/n!`; intersection with a coarse
 generic point has the integer degree (4.10).  Thus the rerooting factor `N-2` is
 exactly the marking factor multiplying the unmarked polynomial Hurwitz number
-`N^(N-3)`.
+ `N^(N-3)`.
+
+### 4.4 Caustic and Maxwell classes in the root-boundary basis
+
+The root compactification already suffices to compute the two divisorial LL
+strata.  Continue to put `n=N-2`, and work in
+
+\[
+ \overline{\mathfrak B}^{\mathrm{root}}_N
+   =[\overline M_{0,n+2}/S_n].                       \tag{4.12}
+\]
+
+The `2n-2` boundary-orbit classes introduced in Section 4.1 span the rational
+Picard group, but they are not independent.  Their unique relation is the
+averaged Keel relation
+
+\[
+ \boxed{
+ \sum_{k=1}^{n-1}k(n-k)\Delta_{0,k}
+  =\sum_{k=2}^{n}k(k-1)\Delta_k^{\mathrm{free}}.}    \tag{4.13}
+\]
+
+Thus, for example,
+
+\[
+ \mathcal B_n=
+ \{\Delta_2^{\mathrm{free}},\ldots,\Delta_n^{\mathrm{free}},
+   \Delta_{0,1},\ldots,\Delta_{0,n-2}\}             \tag{4.14}
+\]
+
+is a boundary basis of
+`Pic(overline(mathfrak B)^(root)_N)_Q`, of rank `2n-3`.
+
+Let `mathcal C_N` be the closure of the caustic and `mathcal M_N` the
+closure of the Maxwell divisor.  In the redundant, collision-readable orbit
+presentation their classes are
+
+\[
+ \boxed{
+ \begin{aligned}
+ [\mathcal C_N]
+  &=-\sum_{k=2}^{n}(k-1)(k-2)\Delta_k^{\mathrm{free}}
+    +\sum_{k=1}^{n-1}k(n-k)\Delta_{0,k},\\
+ [\mathcal M_N]
+  &=-\frac12\sum_{k=2}^{n}(k-1)(k-2)(k-3)
+                      \Delta_k^{\mathrm{free}}\\
+  &\hspace{1.2cm}
+    +\frac12\sum_{k=1}^{n-1}k(n-k)(n+k-2)\Delta_{0,k}.
+ \end{aligned}}                                      \tag{4.15}
+\]
+
+Using (4.13), the corresponding expressions in the actual basis (4.14) are
+
+\[
+ \boxed{
+ [\mathcal C_N]
+   =2\sum_{k=2}^{n}(k-1)\Delta_k^{\mathrm{free}},}   \tag{4.16}
+\]
+
+and
+
+\[
+ \boxed{
+ \begin{aligned}
+ [\mathcal M_N]
+  ={}&\frac12\sum_{k=2}^{n}(k-1)
+       \bigl((2n-3)k-(k-2)(k-3)\bigr)
+       \Delta_k^{\mathrm{free}}\\
+    &-\frac12\sum_{k=1}^{n-2}k(n-k)(n-k-1)\Delta_{0,k}.
+ \end{aligned}}                                      \tag{4.17}
+\]
+
+There is also a coordinate-free description of the first formula.  On the
+universal stable `(n+2)`-pointed rational curve, the logarithmic differential
+
+\[
+ \omega=\frac{dH}{H},\qquad
+ \operatorname{res}(\omega)=(2,1^n,-N)              \tag{4.18}
+\]
+
+is the unique differential with those residues.  No proper subset of this
+residue vector has sum zero.  Consequently `omega` has a nonzero residue at
+every node and its zero divisor avoids the nodes.  If `K` is the relative
+dualizing class and `D` is the sum of the marked sections, the double-zero
+class is
+
+\[
+ \pi_*\bigl((K+D)(2K+D)\bigr)
+ =2\left(\sum_i\psi_i-\delta\right)=2\kappa_1.       \tag{4.19}
+\]
+
+The standard symmetric boundary expansion
+
+\[
+ \sum_i\psi_i-\delta
+ =\sum_{A\mid A^c}
+   \frac{(|A|-1)(|A^c|-1)}{N-1}\,\Delta_A           \tag{4.20}
+\]
+
+therefore gives the alternative positive presentation
+
+\[
+ [\mathcal C_N]
+ =\frac{2}{n+1}\left(
+   \sum_{k=2}^{n}(k-1)(n+1-k)\Delta_k^{\mathrm{free}}
+  +\sum_{k=1}^{n-1}k(n-k)\Delta_{0,k}\right).       \tag{4.21}
+\]
+
+For completeness, here is the valuation calculation behind (4.15).  Label
+the simple roots temporarily, select one of them as `a_j=1`, and put
+
+\[
+ H(W)=W^2\prod_{i=1}^{n}(W-a_i),\qquad
+ K_H(W)=\frac{H'(W)}W.                               \tag{4.22}
+\]
+
+The caustic equation is `Disc_W(K_H)`.  The critical-value discriminant
+factors on the smooth-root open as
+
+\[
+ \operatorname{Disc}_V\operatorname{Res}_W
+       (K_H(W),V-H(W))
+  =\text{unit}\cdot \mathcal C_N^3\mathcal M_N^2.   \tag{4.23}
+\]
+
+The exponents `3` and `2` are the usual caustic and Maxwell transversal
+multiplicities.  If `k` simple roots collide freely, the orders of the three
+factors in (4.23) are
+
+\[
+ \begin{array}{c|c|c|c}
+ &\mathcal C_N&\mathcal M_N&\text{critical-value discriminant}\\ \hline
+ \text{free }k
+ &(k-1)(k-2)&(k-1)(k-2)(k-3)/2&k(k-1)(k-2).
+ \end{array}                                         \tag{4.24}
+\]
+
+If `k` roots tend to zero, the first two orders are
+
+\[
+ k(k-1),\qquad \frac{k(k-1)^2}{2}.                  \tag{4.25}
+\]
+
+If instead `q=n-k` roots tend to infinity while `k` remain finite, the pole
+orders are
+
+\[
+ \begin{aligned}
+ P_C(q,k)&=q(q-1+2k),\\
+ P_M(q,k)&=\frac q2\left((n-1)(q-1+2k)+k(k-1)\right).
+ \end{aligned}                                      \tag{4.26}
+\]
+
+On `Delta_(0,k)`, the selected root lies on the zero side in `k` of the `n`
+rerootings and on the infinity side in the other `n-k`.  Averaging the
+principal divisor of (4.22) therefore gives
+
+\[
+ \frac{kP_C(n-k,k)-(n-k)k(k-1)}n=k(n-k),            \tag{4.27}
+\]
+
+and
+
+\[
+ \frac{kP_M(n-k,k)-(n-k)k(k-1)^2/2}n
+ =\frac{k(n-k)(n+k-2)}2.                             \tag{4.28}
+\]
+
+These are precisely the `Delta_(0,k)` coefficients in (4.15); a free
+collision contributes the negative of its vanishing order.
+
+One must keep the compactification convention visible here.  Equation
+(4.23) is the factorization on the interior.  On the admissible-cover graph,
+the pullback of the stable target discriminant has **positive** caustic
+multiplicity `3`, positive Maxwell multiplicity `2`, and additional target-
+boundary components.  Formula (4.15) is obtained from the principal divisor
+in the normalized root coordinate, so its positive infinity terms record
+poles moved to the other side of the divisor equality.  This agrees with the
+stable-target pullback orientation used in Section 5; it is not the assertion
+that the target-boundary contribution vanishes.  The transversal
+multiplicities and the analogous Hurwitz-space divisor relation are discussed
+by Lando--Zvonkine in the reference at the end of Section 1.
 
 ## 5. Extending the LL incidence and the conductor
 

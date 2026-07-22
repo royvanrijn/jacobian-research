@@ -146,21 +146,26 @@ make verify-master
 This runs the construction, parameter arithmetic, boundary, monodromy, and
 current-ansatz rigidity regressions.  It includes the endpoint-moment
 reduction of the cancellation contact resultant: the general triangular
-identity is checked exactly on a bounded grid, while the complete `r=1,2,3`
-columns are proved symbolically with `m` left as a parameter.  The `r=3`
-certificate checks coefficientwise positivity of all six principal minors
-of the reciprocal eliminant's Schur--Cohn matrix.
+identity is checked exactly on a bounded grid, while the complete
+`r=1,2,3,4` columns are proved uniformly in `m`.  The `r=3` certificate checks
+coefficientwise positivity of all six principal minors of the reciprocal
+eliminant's Schur--Cohn matrix.  The heavier `r=4` certificate computes the
+degree-eleven eliminant's `(9,2)` Schur--Cohn inertia, runs a 228-cell rational
+Rouche localization, and proves the remaining argument separation by exact
+angle and Bernstein-sign certificates.
 
 It also runs the log-geometric bridge regression, including the reciprocal
 determinant, canonical Jacobian-LND exponent, the degree-two plinth/Stein
 countermodel, spectral squarefreeness, and Laurent-tail descent.  The reusable
 classifier additionally checks exact prime valuations, both localized chart
-compositions, boundary elimination, the primitive residue degree, and the
-spectral gcd obstruction.  Its built-in examples can be inspected directly:
+compositions, boundary elimination, the displayed residue degree, the full
+Stein field via local-slice invariantization, hidden covers, and the spectral
+gcd obstruction.  Its built-in examples can be inspected directly:
 
 ```bash
 .venv/bin/python scripts/classify_reciprocal_link.py cancellation
 .venv/bin/python scripts/classify_reciprocal_link.py masuda
+.venv/bin/python scripts/classify_reciprocal_link.py masuda-hidden
 ```
 
 The arithmetic portion also checks the fixed-row Newton-ramification
@@ -199,6 +204,7 @@ identities are checked exactly by
 .venv/bin/python scripts/verify_multicluster_ll_comparison.py
 .venv/bin/python scripts/verify_rerooting_groupoid_boundary.py
 .venv/bin/python scripts/verify_restricted_ll_degree.py
+.venv/bin/python scripts/verify_caustic_maxwell_boundary.py
 ```
 
 The companion affine-stratum audit verifies that the root-one component is
@@ -213,7 +219,11 @@ cyclic total-collision slice and generic divisor inertia.  These three audits
 and the companion affine-stratum audit are part of `make verify-regressions`.
 The restricted-LL audit checks the Cayley/marking count and independently
 computes degrees `8` and `75` from the quartic and quintic critical-value
-eliminants.  All displayed commands are part of `make verify-regressions`.
+eliminants.  The caustic--Maxwell audit checks the unique invariant Keel
+relation, every collision and infinity valuation, both boundary
+presentations, and the exact factorization `LL-discriminant=C^3 M^2` in
+degrees four and five.  All displayed commands are part of
+`make verify-regressions`.
 
 ## External consequence identities
 

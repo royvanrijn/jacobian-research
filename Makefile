@@ -79,6 +79,7 @@ verify-master:
 	$(PYTHON) scripts/verify_scheme_boundary_all_parameters.py
 	$(PYTHON) scripts/verify_full_boundary_diagram.py
 	$(PYTHON) scripts/verify_contact_resultant_endpoint_reduction.py
+	$(PYTHON) scripts/verify_contact_resultant_r4.py
 	$(PYTHON) scripts/verify_counterexample_ladder.py
 	$(PYTHON) scripts/verify_parameter_irreducibility.py
 	$(PYTHON) scripts/verify_parameter_discriminant.py
@@ -143,6 +144,7 @@ verify-regressions: verify-external-consequences
 	$(PYTHON) scripts/verify_multicluster_ll_comparison.py
 	$(PYTHON) scripts/verify_rerooting_groupoid_boundary.py
 	$(PYTHON) scripts/verify_restricted_ll_degree.py
+	$(PYTHON) scripts/verify_caustic_maxwell_boundary.py
 	$(PYTHON) scripts/verify_quartic_c0_fibers.py
 	$(PYTHON) scripts/verify_quartic_nonproperness_paths.py
 	$(PYTHON) scripts/verify_quartic_properness_converse.py

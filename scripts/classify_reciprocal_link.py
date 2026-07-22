@@ -21,6 +21,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from jcsearch.reciprocal import (
     classify_boundary_reconstruction,
     classify_reciprocal_link,
+    masuda_hidden_cover_example,
     masuda_plinth_example,
     standard_cancellation_example,
 )
@@ -42,15 +43,17 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "example",
-        choices=("cancellation", "masuda"),
+        choices=("cancellation", "masuda", "masuda-hidden"),
         help="built-in exact candidate to classify",
     )
     args = parser.parse_args()
 
     if args.example == "cancellation":
         certificate = classify_reciprocal_link(standard_cancellation_example())
-    else:
+    elif args.example == "masuda":
         certificate = classify_boundary_reconstruction(masuda_plinth_example())
+    else:
+        certificate = classify_boundary_reconstruction(masuda_hidden_cover_example())
     print(json.dumps(stringify(asdict(certificate)), indent=2, sort_keys=True))
 
 

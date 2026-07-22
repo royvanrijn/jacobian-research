@@ -960,7 +960,7 @@ for a completed computation in every family.
 | infinity and second-boundary marks | complete | exact for the weighted seeds; the quartic zero-cluster chart is checked |
 | distinguished affine root-one stratum and full-cover faithfulness | complete for normalized admissible seeds with `ord_0(H)>=2`, including higher zero multiplicity and arbitrary extra-root collisions; low poles, stable plane descent, affine generator recovery, and deck rigidity give the proof | exact cover-stratum, LL incidence, affine target-pullback orientation, higher-zero, collision, scaling, and rerooting audits |
 | upstairs `(e,f)`, different, DVR, and inertia data | complete as invariant data | generic divisorial layer complete |
-| higher intersections and completed local extensions | complete as functorial invariant data | full cancellation prime diagram is exact under `Res(K,L) != 0`, proved for every `mr<=30`, every `m=1`, all three uniform columns `r=1,2,3`, and all uniform parameter-irreducibility cases; the remaining all-parameter problem starts at `r=4` |
+| higher intersections and completed local extensions | complete as functorial invariant data | full cancellation prime diagram is exact under `Res(K,L) != 0`, proved for every `mr<=30`, every `m=1`, all four uniform columns `r=1,2,3,4`, and all uniform parameter-irreducibility cases; the remaining all-parameter problem starts at `r=5` |
 
 The stability inputs agree with standard base-change results: normalization
 commutes with smooth base change ([Stacks, Lemma 76.25.2](https://stacks.math.columbia.edu/tag/082F)),

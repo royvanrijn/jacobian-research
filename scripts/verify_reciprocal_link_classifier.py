@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+from math import gcd
 from pathlib import Path
 import sys
 
@@ -13,7 +14,9 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from jcsearch.reciprocal import (
     classify_boundary_reconstruction,
     classify_reciprocal_link,
+    masuda_hidden_cover_example,
     masuda_plinth_example,
+    split_plinth_example,
     spectral_polynomial,
     spectral_obstruction,
     standard_cancellation_example,
@@ -45,6 +48,11 @@ def check_cancellation_certificate() -> None:
     assert certificate.boundary.boundary_parametrization_valid
     assert certificate.boundary.residue_degree == 1
     assert certificate.boundary.stein_degree == 1
+    assert certificate.boundary.full_stein.degree == 1
+    assert certificate.boundary.full_stein.geometric_component_count == 1
+    assert certificate.boundary.reconstruction_generates_full_stein
+    assert not certificate.boundary.hidden_cover_detected
+    assert certificate.boundary.primitive_marking_agrees
     assert not certificate.spectral.excludes_candidate
     assert certificate.spectral.common_degree == 1
     assert certificate.verdict == "passes_marked_cancellation_boundary_prefilter"
@@ -59,6 +67,77 @@ def check_masuda_stein_degree() -> None:
     assert sp.factor(certificate.residue_polynomial - (Z**2 - tau)) == 0
     assert certificate.residue_degree == 2
     assert certificate.stein_degree == 2
+    assert certificate.full_stein.degree == 2
+    assert certificate.full_stein.geometric_component_count == 2
+    assert sp.factor(
+        certificate.full_stein.primitive_polynomial - (sp.Symbol("Z_Stein") ** 2 - tau)
+    ) == 0
+    assert certificate.reconstruction_generates_full_stein
+    assert not certificate.hidden_cover_detected
+    assert certificate.primitive_marking_agrees
+
+
+def check_hidden_stein_cover() -> None:
+    candidate = masuda_hidden_cover_example()
+    certificate = classify_boundary_reconstruction(candidate)
+    Z = candidate.reconstruction_symbol
+    tau = candidate.boundary_parameter
+    assert sp.factor(certificate.residue_polynomial - (Z - tau)) == 0
+    assert certificate.residue_degree == 1
+    assert certificate.stein_degree == 2
+    assert certificate.full_stein.degree == 2
+    assert not certificate.reconstruction_generates_full_stein
+    assert certificate.hidden_cover_detected
+    assert certificate.primitive_marking_agrees
+
+
+def check_general_full_stein_degrees() -> None:
+    Z_Stein = sp.Symbol("Z_Stein")
+    for plinth_exponent in range(1, 4):
+        for degree in range(2, 7):
+            visible_candidate = split_plinth_example(
+                degree, plinth_exponent=plinth_exponent
+            )
+            visible = classify_boundary_reconstruction(visible_candidate)
+            tau = visible_candidate.boundary_parameter
+            assert visible.residue_degree == degree
+            assert visible.stein_degree == degree
+            assert visible.reconstruction_generates_full_stein
+            assert sp.factor(
+                visible.full_stein.primitive_polynomial - (Z_Stein**degree - tau)
+            ) == 0
+
+            hidden = classify_boundary_reconstruction(
+                split_plinth_example(
+                    degree,
+                    hidden_reconstruction=True,
+                    plinth_exponent=plinth_exponent,
+                )
+            )
+            assert hidden.residue_degree == 1
+            assert hidden.stein_degree == degree
+            assert hidden.hidden_cover_detected
+            assert not hidden.reconstruction_generates_full_stein
+
+
+def compositions(total: int) -> list[tuple[int, ...]]:
+    if total == 0:
+        return [()]
+    result = []
+    for first in range(1, total + 1):
+        for tail in compositions(total - first):
+            result.append((first, *tail))
+    return result
+
+
+def check_two_place_hidden_cover_lemma() -> None:
+    for degree in range(2, 13):
+        for zero_orders in compositions(degree):
+            for pole_orders in compositions(degree):
+                valuation_vector = (*zero_orders, *(-value for value in pole_orders))
+                primitive = gcd(*[abs(value) for value in valuation_vector]) == 1
+                two_places = len(zero_orders) + len(pole_orders) == 2
+                assert not (primitive and two_places)
 
 
 def check_split_spectral_obstruction() -> None:
@@ -135,7 +214,13 @@ def main() -> None:
     check_cancellation_certificate()
     print("PASS reciprocal classifier: valuations, chart, LND, and degree-one residue")
     check_masuda_stein_degree()
-    print("PASS boundary elimination: Masuda plinth model has exact Stein degree two")
+    print("PASS full Stein engine: Masuda plinth model has exact degree two")
+    check_hidden_stein_cover()
+    print("PASS hidden-cover detection: residue degree one but full Stein degree two")
+    check_general_full_stein_degrees()
+    print("PASS automatic full Stein degrees for 1<=n<=3 and 2<=f<=6")
+    check_two_place_hidden_cover_lemma()
+    print("PASS no-hidden-cover valuation lemma for all end partitions with f<=12")
     check_unsliced_boundary_spectral_equation()
     print("PASS unsliced Keller pole coefficient is J_(mr,r)(bar(B)/y^(m+1))")
     check_split_spectral_obstruction()

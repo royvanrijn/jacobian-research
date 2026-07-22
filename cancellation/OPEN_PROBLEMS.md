@@ -92,15 +92,18 @@ parameter-irreducibility range: all `mr<=30`, the complete `m=1` ladder, and
 the uniform criteria in [ARITHMETIC.md](ARITHMETIC.md).  Direct resultants are
 also checked on the regression grid `1<=m,r<=5`.
 
-The [endpoint-moment reduction](CONTACT_RESULTANT.md) now gives three further
+The [endpoint-moment reduction](CONTACT_RESULTANT.md) now gives four further
 uniform theorems independent of parameter irreducibility.  It proves
-nonvanishing for every `m` in the columns `r=1,2,3`; for `r=1` it also gives
+nonvanishing for every `m` in the columns `r=1,2,3,4`; for `r=1` it also gives
 the closed resultant `((m+1)(m+2))^(-m)`.  For fixed `r`, the same method
 replaces the growing degree-`mr` Sylvester problem by two degree-`r` equations
 in `y=1-w` and `z=y^m`.  In the `r=3` column, Schur--Cohn separates the
 degree-six endpoint eliminant from the uniform negative-binomial root disk.
+In the `r=4` column, Schur--Cohn inertia isolates one exceptional conjugate
+pair, and rational Rouche, angle, and Bernstein certificates prove that its
+linear-subresultant `z`-branch cannot equal `y^m`.
 
-The remaining uniform theorem, now beginning at `r>=4`, is the nonvanishing
+The remaining uniform theorem, now beginning at `r>=5`, is the nonvanishing
 problem
 
 \[
