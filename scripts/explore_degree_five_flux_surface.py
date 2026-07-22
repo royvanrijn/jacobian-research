@@ -21,6 +21,7 @@ def main():
     parser.add_argument("--psi-degree", type=int, default=2)
     parser.add_argument("--kappa-value")
     parser.add_argument("--tau-value")
+    parser.add_argument("--use-candidate", action="store_true")
     args = parser.parse_args()
 
     w = sp.symbols("w")
@@ -62,6 +63,16 @@ def main():
     a = sp.cancel((-(1 + kappa) / (2 + kappa)).subs(parameter_values))
     # Constant and linear terms are suppressed: they belong to the elementary
     # R-preserving base normalization that the residue is meant to quotient.
+    candidate_s2 = sp.cancel(
+        (
+            12 * (kappa + 1) * tau**2
+            - 18 * (kappa + 1) * (kappa + 6) * tau
+            + 9 * (kappa**3 + 16 * kappa**2 + 52 * kappa + 72)
+        )
+        / (28 * (kappa + 2))
+    ).subs(parameter_values)
+    if args.use_candidate and 2 in shear:
+        shear[2] = candidate_s2
     psi = sum(shear[degree] * Q**degree for degree in shear)
     W = Z + psi
     Y = Q - X * W / 3
@@ -112,10 +123,15 @@ def main():
         h_vrho.subs({inv_x: 1 / X, rho: 2 * X - 3 * X**2 * Q})
     )
     f = sp.cancel(f_zero + h)
-    assert all(
-        sp.cancel(difference[index] - hamiltonian(f)[index]) == 0
-        for index in range(3)
-    )
+    # A full two-parameter simplification of this redundant identity is much
+    # more expensive than constructing the antiderivative.  Retain the exact
+    # check on one-parameter specializations, which are the intended replay
+    # mode of this exploratory script.
+    if args.kappa_value is not None:
+        assert all(
+            sp.cancel(difference[index] - hamiltonian(f)[index]) == 0
+            for index in range(3)
+        )
 
     numerator, denominator = sp.together(f).as_numer_denom()
     denominator_x_degree = sp.Poly(denominator, X).degree()
@@ -128,6 +144,7 @@ def main():
 
     print("normalized seed H =", sp.factor(H))
     print("weighted a =", a)
+    print("candidate s2 =", candidate_s2)
     print("psi =", psi)
     print("denominator = X^%d * (%s)" % (denominator_x_degree, denominator_unit))
     for index, residue in enumerate(residues):

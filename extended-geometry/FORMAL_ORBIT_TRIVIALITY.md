@@ -234,6 +234,10 @@ ind-group degree filtration, stabilization dimension, or the number and
 degree of shear factors.  The sequence is finite termwise by Theorem 4.1;
 its growth measures the cost of approximating the formal orbit.
 
+This proposal is developed with a two-sided degree filtration and tested on
+the degree-five stable-moduli arc in
+[complexity-filtered orbit contact](COMPLEXITY_FILTERED_CONTACT.md).
+
 There are three natural levels:
 
 1. **Artin quotient:** trivial by Theorem 2.1.
