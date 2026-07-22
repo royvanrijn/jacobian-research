@@ -282,8 +282,21 @@ Consequently:
 etale map }\mathbb A^6\to\mathbb A^6\text{ of generic degree }N.}
 \]
 
-For `N>=4`, the repository's degreewise multiplicity theorem transfers
-without loss:
+For `N>=4`, the strongest degreewise statement comes from the weighted
+decorated-normalization moduli map.  On its explicitly nonempty ordinary
+boundary-clean open, that map is generically finite with image dimension
+`N-3`.  Cotangent lifting preserves the stable class because `widehat F` is
+right-equivalent to `F x id`; hence
+
+\[
+\boxed{\text{For every }N\ge4,\text{ weighted degree-}N\text{ lifts contain an }
+(N-3)\text{-dimensional family of stable exact symplectic maps of }\mathbb A^6.}
+\]
+
+Here the dimension is realized by the image of the same decorated invariant;
+no coarse moduli space for all exact symplectic maps is assumed.
+
+Separately, the degreewise multiplicity theorem transfers without loss:
 
 \[
 \boxed{\text{There are at least }\tau(N-1)\text{ pairwise stably polynomially
@@ -293,7 +306,10 @@ left-right inequivalent exact symplectic maps of generic degree }N.}
 Indeed, `widehat F` is right-equivalent to `F x id_{A^3}`.  If two lifted maps
 became polynomially left-right equivalent after further stabilization, then
 their original maps would already be stably equivalent, contradicting the
-existing boundary invariants.
+existing boundary invariants.  The `N-3` theorem is the positive-dimensional
+weighted-locus headline; the `tau(N-1)` theorem remains complementary because
+it distinguishes the weighted locus from several cancellation types and
+separates those cancellation types from one another.
 
 Each such map also yields an injective non-surjective endomorphism of `A_3(k)`
 whose differential-order symbol map has the corresponding generic degree.

@@ -1,18 +1,22 @@
 # Positive-dimensional moduli of exact symplectic Keller lifts
 
-This note combines two independent results already proved in the repository:
+This note combines three results already proved in the repository:
 
-1. the explicit degree-five family `F_lambda:A^3->A^3`, whose stable
+1. the decorated-normalization theorem, whose generically finite invariant
+   has image dimension `N-3` on a nonempty ordinary boundary-clean weighted
+   locus for every `N>=4`;
+2. the explicit degree-five family `F_lambda:A^3->A^3`, whose stable
    polynomial left--right class retains the affine-equivalence class of the
    Hessian-root divisor of its weighted seed; and
-2. the exact cotangent lift of a Keller map, which is polynomially
+3. the exact cotangent lift of a Keller map, which is polynomially
    right-equivalent to the corresponding identity stabilization.
 
-The combination gives a positive-dimensional stable-moduli theorem for exact
-symplectic etale endomorphisms of affine six-space.  It also produces a
-parameterized family of injective non-surjective Weyl-algebra endomorphisms,
-while making no claim that the latter are pairwise inequivalent under arbitrary
-Weyl automorphisms.
+The combination gives an `(N-3)`-dimensional stable-moduli theorem for exact
+symplectic etale endomorphisms of affine six-space in every generic degree
+`N>=4`.  The degree-five family remains a particularly explicit
+one-parameter slice.  It also produces parameterized injective non-surjective
+Weyl-algebra endomorphisms, while making no claim that the latter are pairwise
+inequivalent under arbitrary Weyl automorphisms.
 
 ## 1. The degree-five family
 
@@ -176,6 +180,40 @@ Thus `F_lambda` and `F_mu` are stably polynomially left--right equivalent.
 The degree-five stable-moduli theorem then gives (1.1).  Each orbit has at most
 six parameters, while `Lambda` is uncountable, proving (3.1).
 
+## 3A. Degreewise dimension theorem
+
+### Theorem 3.2 — `(N-3)`-dimensional exact symplectic stable moduli
+
+For every `N>=4`, there is a nonempty Zariski-open family of weighted
+degree-`N` Keller maps whose cotangent lifts
+
+\[
+ \widehat F_H:\mathbb A^6\longrightarrow\mathbb A^6
+\]
+
+form an `(N-3)`-dimensional family of stable polynomial left--right classes
+of noninjective, nonproper, exact symplectic etale maps with Jacobian one and
+generic degree `N`.
+
+#### Proof
+
+The normalized admissible degree-`N` seed space has dimension `N-3`.  The
+[decorated-normalization theorem](DECORATED_NORMALIZATION_INVARIANT.md) proves
+that its ordinary boundary-clean locus is nonempty for every `N>=4`, and that
+the decorated invariant map on this locus is generically finite with image
+dimension `N-3`.  Because that invariant is preserved by stable polynomial
+left--right equivalence, its image gives an `(N-3)`-dimensional family of
+stable Keller classes.
+
+For every seed `H`, the cotangent factorization (2.3) identifies
+`widehat F_H` up to polynomial right equivalence with
+`F_H x id_{A^3}`.  If two lifts became left--right equivalent after any
+further stabilization, their base maps would be stably left--right
+equivalent, and hence would have the same decorated invariant.  The lifted
+family therefore has the same `N-3` lower bound on stable-class dimension.
+Exact symplecticity, Jacobian one, generic degree, fiber schemes, and
+nonproperness transfer by the general cotangent-lift theorem.
+
 ## 4. Weyl-algebra shadows
 
 For each `lambda`, the inverse-Jacobian derivations define an endomorphism of
@@ -211,19 +249,21 @@ to that larger equivalence relation.
 ## 5. What is new in the combination
 
 The inverse-Jacobian Weyl transfer is classical, and the cotangent lift is an
-elementary exact symplectic construction.  The new consequence recorded here
-is the transfer of the repository's positive-dimensional stable-moduli theorem:
+elementary exact symplectic construction.  The main new consequence recorded
+here is the degreewise transfer
 
 \[
-\text{uncountably many stable Keller classes in dimension three}
+\dim\overline{\operatorname{im}(\mathfrak M_N)}=N-3
 \quad\Longrightarrow\quad
-\text{uncountably many stable exact symplectic classes in dimension six}.
+\text{an }(N-3)\text{-dimensional family of stable exact symplectic classes
+in dimension six}.
 \]
 
-This is stronger than transferring only the earlier divisor-count lower bound
-`tau(N-1)`: it shows that fixed dimension, fixed generic degree, exact
-symplecticity and Jacobian one still leave a positive-dimensional space of
-stable inequivalent nonproper etale maps.
+This holds for every `N>=4` and is stronger than transferring only the earlier
+divisor-count lower bound `tau(N-1)`.  The latter remains useful for separating
+the weighted construction from multiple cancellation types.  The explicit
+degree-five theorem additionally gives a concrete parameter line with a
+six-element orbit bound.
 
 ## 6. Reproduction and dependencies
 

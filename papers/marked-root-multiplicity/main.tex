@@ -6,6 +6,7 @@
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem{lemma}[theorem]{Lemma}
 \newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
 \newtheorem{remark}[theorem]{Remark}
 \newcommand{\A}{\mathbb A}
 \newcommand{\C}{\mathbb C}
@@ -28,12 +29,14 @@ normalization, prove functoriality under stable polynomial left--right
 equivalence, and compare the scheme-theoretic contact of two intrinsically
 marked target divisors.  We also retain the full Fitting divisor of the
 discriminant normalization, its off-diagonal node-pairing scheme, and its
-conductor.  The weighted contact is reduced, whereas a
-cancellation type $(m,r)$ has discriminant ramification $r+1$ and nilpotency
-index $mr(m+1)$.  Consequently there are at least $\tau(N-1)$ pairwise
-stably inequivalent three-dimensional Keller maps of generic degree $N$,
-each with a nontrivial fiber.  The proof is organized as five independently
-checkable lemmas.
+conductor.  On an explicitly nonempty ordinary boundary-clean open, the
+decorated-normalization invariant is generically finite with image dimension
+$N-3$; hence weighted degree-$N$ maps contain an $(N-3)$-dimensional family
+of stable classes for every $N\ge4$.  Separately, the weighted contact is
+reduced, whereas a cancellation type $(m,r)$ has discriminant ramification
+$r+1$ and nilpotency index $mr(m+1)$.  This distinguishes at least
+$\tau(N-1)$ cross-construction stable classes of degree $N$, each with a
+nontrivial fiber.
 \end{abstract}
 
 \section{Introduction}
@@ -66,7 +69,11 @@ canonical boundary comparison, and degreewise count are the later results
 being isolated here.  This wording records the currently located public
 trail and is not a priority claim.
 
-Our main result is the following.
+The positive-dimensional weighted-locus result is
+Corollary~\ref{cor:weighted-stable-moduli} below.  The following theorem is
+the complementary discrete cross-construction statement: it distinguishes
+the weighted locus from one cancellation type for every proper divisor of
+$N-1$, and separates those cancellation types from one another.
 
 \begin{theorem}\label{thm:main}
 For every integer $N\ge4$, there exist at least $\tau(N-1)$ pairwise stably

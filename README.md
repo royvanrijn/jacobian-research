@@ -6,7 +6,9 @@ The first task was modest: check the determinant and the reported collision
 exactly.  Those identities held.  The next question—*why does this map
 work?*—led from a cubic with one root marked to normalized root covers,
 boundary divisors, cancellation constructions, and finally many stably
-inequivalent maps in every generic degree.
+inequivalent maps in every generic degree.  The strongest degreewise result
+is now positive-dimensional: in generic degree `N>=4`, the weighted locus
+contains an `(N-3)`-dimensional family of stable classes.
 
 The repository is both a proof project and a research diary that has now been
 cleaned into a small active theorem chain.  Mathematical completion and
@@ -157,7 +159,8 @@ distinctions matter:
 | GMC, `(xz)`, and `SU(2)` counterexamples | Christopher D. Long's two arXiv papers | Exact local Gaussian and beta/binomial checks, a complete `SU(2)=S^3` Haar proof, all 18 BCW steps through an independently replayed 79-variable sparse artifact, and a local proof of the fixed-dimensional nonexplicit `GMC(158)` route; no claim that the direct witnesses derive from our map |
 | Weighted-seed/Gaussian bridge | Long's Lagrange--Good search architecture and Good's inversion theorem | A repository-derived polynomial determinant correction turning every nonconstant normalized seed into an explicit four-real-Gaussian witness family; locally proved and checked, not externally reviewed |
 | Cancellation maps and canonical boundary invariants | No earlier source has been identified in the present audit | The finite cancellation operator, all-parameter reconstruction and collision, boundary-exhaustion theorem, thick intersections, and rigidity results |
-| Many stable classes in each degree | No earlier source has been identified in the present audit | The divisor-count theorem giving at least `tau(N-1)` stable classes in generic degree `N>=4` |
+| Degreewise weighted stable moduli | No earlier source has been identified in the present audit | A generically finite decorated-normalization invariant with image dimension `N-3`, on an explicitly proved nonempty ordinary boundary-clean open for every generic degree `N>=4` |
+| Cross-family stable multiplicity | No earlier source has been identified in the present audit | The complementary divisor-count theorem distinguishing one weighted class and `tau(N-1)-1` cancellation types in generic degree `N>=4` |
 
 “No earlier source identified” is a statement about the current search, not a
 claim that no such source exists.  The cancellation and boundary results are
@@ -181,7 +184,39 @@ C\int_0^T\{1-t(Q-Pt)^m\}^r\,dt-R
 
 and produces a distinguished boundary ramification index `r+1`.
 
-For a fixed generic degree `N`, every proper divisor `r|(N-1)` gives
+The normalized admissible degree-`N` weighted seed space has dimension
+`N-3`.  For every `N>=4`, its ordinary boundary-clean locus is nonempty: the
+generic discriminant theorem supplies the ordinary nodal-cuspidal open, while
+
+\[
+\frac12W^2(1-W)(1+W^{N-3})
+\]
+
+explicitly witnesses boundary-cleanness and keeps the boundary mark away from
+the cusp and node-branch schemes.  On their nonempty intersection, the
+decorated-normalization invariant is generically finite.  Since it is
+preserved by stable polynomial left--right equivalence,
+
+\[
+\boxed{\text{For every }N\ge4,\text{ weighted degree-}N\text{ maps contain an }
+(N-3)\text{-dimensional family of stable classes.}}
+\]
+
+This is the main degreewise moduli result.  Its proof is in the
+[decorated-normalization theorem](extended-geometry/DECORATED_NORMALIZATION_INVARIANT.md).
+The exact cotangent lift is polynomially right-equivalent to adjoining three
+identity coordinates, so the same invariant and dimension transfer without
+loss:
+
+\[
+\boxed{\text{For every }N\ge4,\text{ exact symplectic maps of }\mathbb A^6
+\text{ contain an }(N-3)\text{-dimensional weighted family of stable classes.}}
+\]
+
+See [degreewise exact symplectic moduli](extended-geometry/SYMPLECTIC_STABLE_MODULI.md).
+
+The cancellation calculation gives a different, complementary result.  For a
+fixed generic degree `N`, every proper divisor `r|(N-1)` gives
 
 \[
 m=\frac{N-1}{r}-1\ge1.
@@ -202,6 +237,10 @@ boundary intersection is reduced.  Therefore:
 \boxed{\text{For every }N\ge4,\text{ there are at least }\tau(N-1)
 \text{ pairwise stably inequivalent degree-}N\text{ maps.}}
 \]
+
+Unlike the moduli-dimension theorem, this finite count distinguishes multiple
+construction types: the weighted locus from every cancellation type and the
+cancellation types from one another.
 
 The canonical statement and proof are in the standalone paper
 [Marked-Root Keller Maps and Degreewise Stable Multiplicity](papers/marked-root-multiplicity/main.tex).
@@ -270,9 +309,11 @@ ideas.  It is the theory built after them:
   cancellation maps;
 - the uniform weighted-seed/Gaussian bridge, including its polynomial
   determinant correction and exact mixed-moment formula;
-- reduced versus nilpotently thick boundary intersections; and
-- the divisor-count lower bound `tau(N-1)` for stable-equivalence classes in
-  every generic degree `N>=4`.
+- reduced versus nilpotently thick boundary intersections;
+- the `(N-3)`-dimensional weighted stable-class family in every generic degree
+  `N>=4`, transferred unchanged to exact symplectic maps of `A^6`; and
+- the complementary divisor-count lower bound `tau(N-1)`, which distinguishes
+  the weighted locus from multiple cancellation types.
 
 These claims should be read with [STATUS.md](STATUS.md): “proved in the
 repository” and “externally reviewed” are different assertions.

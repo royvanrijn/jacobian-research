@@ -135,6 +135,43 @@ A finite specialization centered at $r=\rho$ forces
 $H(\rho)=H'(\rho)=0$, hence $\rho=0$.  Thus the second-boundary intersection
 canonically marks $r=0$; it is not an auxiliary normalization convention.
 
+\begin{proposition}[nonempty ordinary boundary-clean locus]
+\label{prop:ordinary-boundary-clean}
+For every $N\ge4$, the normalized admissible degree-$N$ seed space contains
+a nonempty open on which the discriminant has only ordinary cusps and nodes,
+zero is the unique multiple primitive root, and the boundary mark $r=0$
+belongs to neither the cusp nor the node-branch scheme.
+\end{proposition}
+
+\begin{proof}
+The generic discriminant theorem proves that the ordinary nodal-cuspidal open
+meets the normalized admissible slice in every degree.  Boundary-cleanness and
+avoidance of the finite cusp and node-branch schemes are also open conditions.
+They are nonempty on the normalized slice, as witnessed by
+\[
+ H_N^{\mathrm{split}}(W)=\frac12W^2(1-W)(1+W^{N-3}).
+\]
+Indeed,
+\[
+ (H_N^{\mathrm{split}})'(1)=-1,\qquad
+ (H_N^{\mathrm{split}})''(1)=-(N+1)\ne-2,\qquad
+ (H_N^{\mathrm{split}})''(0)=1.
+\]
+Put $P_N=2H_N^{\mathrm{split}}/W^2=(1-W)(1+W^{N-3})$.
+This polynomial is squarefree and has no zero root.  At every root $\alpha$
+of $P_N$,
+\[
+ \left.\frac{2(H_N^{\mathrm{split}})'(W)}W\right|_{W=\alpha}
+ =\alpha P_N'(\alpha)\ne0.
+\]
+Thus $\gcd(H_N^{\mathrm{split}},(H_N^{\mathrm{split}})')=W$.
+The nonzero second derivative at zero excludes a cusp there.  If an
+off-diagonal point $u$ had the same discriminant image as zero, then
+$H'(u)=H(u)=0$, contradicting the gcd calculation.  Hence the boundary mark
+is not a node branch.  The normalized seed space is irreducible, so its
+nonempty ordinary and boundary-clean opens intersect.
+\end{proof}
+
 For completeness, this decoration gives an actual generic-dimension theorem,
 not only a parameter count.  In the normalized degree-$N$ seed space, an
 isomorphism preserving zero and infinity is $r\mapsto ar$.  Equality of
@@ -146,3 +183,17 @@ seeds vanish together with their first derivatives at zero, integration gives
 The condition $G(1)=0$ forces $H(a)=0$, leaving at most $N-2$ generic
 choices, and $G'(1)=-1$ determines $c$.  Thus the decorated-normalization
 moduli map is generically finite and its image has dimension $N-3$.
+
+\begin{corollary}[degreewise weighted stable moduli]
+\label{cor:weighted-stable-moduli}
+For every $N\ge4$, weighted degree-$N$ maps contain an
+$(N-3)$-dimensional family of stable polynomial left--right classes.
+\end{corollary}
+
+\begin{proof}
+By Proposition~\ref{prop:ordinary-boundary-clean}, the domain of the
+decorated-normalization moduli map contains a nonempty open in every degree.
+The map is generically finite by the preceding argument and its invariant is
+constant on stable classes.  Its stable-class image therefore has dimension
+$N-3$.
+\end{proof}

@@ -1,7 +1,9 @@
 # Marked-root Keller maps and degreewise stable multiplicity
 
-This is the canonical repository statement and proof of the `tau(N-1)` lower
-bound, organized through five separately auditable lemmas.  The foundational map, cubic marked-root
+This is the canonical repository statement and proof of two complementary
+degreewise results: the `(N-3)`-dimensional weighted stable-moduli theorem and
+the `tau(N-1)` cross-construction lower bound, the latter organized through
+five separately auditable lemmas.  The foundational map, cubic marked-root
 model, exact image theorem, and weighted theorem appear only as motivation; the
 construction formulas and boundary arguments used by the theorem are
 included in the paper.
