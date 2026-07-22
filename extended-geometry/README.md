@@ -28,7 +28,7 @@ in [STATUS.md](../STATUS.md).
 | Weighted-seed Gaussian bridge | [Uniform four-real-Gaussian witnesses, exact inverse-pencil branches, and injective mixed-moment fingerprints](WEIGHTED_GAUSSIAN_BRIDGE.md) |
 | Weighted invariant-coordinate Jacobian reduction | [General weight-`(1,-1,-k)` determinant lemma reducing Keller equations to two invariant variables](WEIGHTED_INVARIANT_JACOBIAN_REDUCTION.md) |
 | Weighted tangent suspension and plane Poisson square | [Plane-core determinant rearrangement, explicit foundational pair, tangent-pencil identification, and weighted-Wronskian cascade](WEIGHTED_TANGENT_SUSPENSION.md) |
-| Foundational weighted coefficient scheme | [Exact sixteen-monomial rigidity, dual-number tangent, quadratic obstruction, and affine-orbit separation](FOUNDATIONAL_WEIGHTED_COEFFICIENT_SCHEME.md) |
+| Foundational weighted coefficient scheme | [Exact sixteen-monomial rigidity, dual-number tangent, Wronskian obstruction, and complete two-component boundary decomposition](FOUNDATIONAL_WEIGHTED_COEFFICIENT_SCHEME.md) |
 | Quadratic ladder and rank-two Poisson completion | [Exact cancellation identification, four-dimensional construction, and external-source audit](QUADRATIC_LADDER_AND_POISSON_AUDIT.md) |
 | Degreewise positive-dimensional exact symplectic moduli | [`(N-3)`-dimensional weighted families in `A^6`, with the explicit degree-five line descended to `A^4`](SYMPLECTIC_STABLE_MODULI.md) |
 | Stable normal-form consequences | [Consequences and audit](STABLE_NORMAL_FORM_AUDIT.md) |

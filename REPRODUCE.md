@@ -45,6 +45,17 @@ and two further unit-ideal checks eliminate both one-sided nonconstant-`C`
 boundary charts.
 `verify-foundations` adds the weighted construction and its clean-room checker.
 
+The remaining constant-`C` boundary has a separate exact Singular
+certificate:
+
+```bash
+Singular -q scripts/verify_foundational_constant_c_boundary.sing
+```
+
+It computes exactly two primary components, checks their declared radicals,
+and verifies that the reduced affine-three-space components meet in an
+affine plane.
+
 The heavier regression target also checks the explicit degree-five family and
 its rank-two symplectic descent:
 

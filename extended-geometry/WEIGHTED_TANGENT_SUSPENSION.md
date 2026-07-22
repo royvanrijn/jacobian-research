@@ -297,7 +297,10 @@ After diagonal normalization these are
 Exact Gröbner certificates give the unit ideal on both charts.  Hence the
 punctured boundary `C_10 C_01=0`, `(C_10,C_01)\ne(0,0)`, contains no Keller
 point in this ansatz.  Set-theoretically, all remaining boundary geometry is
-concentrated at the constant-`C` corner.
+concentrated at the constant-`C` corner.  Its exact primary decomposition has
+two nonreduced primary components; their radicals are explicit affine
+three-spaces of triangular automorphisms, as described in the
+[coefficient-scheme note](FOUNDATIONAL_WEIGHTED_COEFFICIENT_SCHEME.md#the-two-reduced-components-at-the-constant-c-corner).
 
 ## 6. Precise comparison with the plane `(72,108)` cascade
 

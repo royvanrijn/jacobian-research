@@ -178,7 +178,7 @@ normalized charts.  Thus, set-theoretically,
 This is a support-specific statement; it is not a general theorem about
 weighted Keller maps.
 
-### Two reduced families at the constant-`C` corner
+### The two reduced components at the constant-`C` corner
 
 The unsaturated boundary is not empty and is not merely a nilpotent artifact.
 On the codimension-two locus
@@ -193,42 +193,67 @@ equation (2) becomes
  \det JF=2(A_uB_v-A_vB_u).
 \]
 
-It therefore contains at least the following reduced affine families.
+The ten coefficient equations have exactly two associated primes.
 
-First, take
-
-\[
- A=v,\qquad B=u+\lambda v,\qquad C=2.
-\]
-
-This is an affine line of triangular automorphisms
-
-\[
- F=(z,\ y+\lambda xz,\ 2x).
-\]
-
-Second, for arbitrary `alpha_2,alpha_3,alpha_4`, take
+The first reduced component is
 
 \[
  A=v+\alpha _2u^2+\alpha _3u^3+\alpha _4u^4,
- \qquad B=u,\qquad C=2.
+ \qquad B=u,qquad C=2.                             \tag{9}
 \]
 
-This is an affine three-space of triangular automorphisms
+It is an affine three-space of triangular automorphisms
 
 \[
- F=(z+\alpha _2y^2+\alpha _3xy^3+\alpha _4x^2y^4,\ y,\ 2x).
+ F=(z+\alpha _2y^2+\alpha _3xy^3+\alpha _4x^2y^4,
+ y,2x).
 \]
 
-Both have determinant `-2`, and explicit polynomial inverses are immediate
-from the displayed triangular forms.  They meet at the linear map
-`(z,y,2x)`.  Thus at least two reduced subvarieties occur on `p=q=0`; neither
-supplies a noninjective boundary Keller map.
+The second reduced component is
 
-These families do **not** constitute a primary decomposition of `I+(p,q)`.
-In particular, they do not decide whether other components exist inside the
-constant-`C` corner, or whether an embedded component accounts for the
-dual-number direction on the open chart.
+\[
+ A=v+\alpha _2u^2+\alpha _3u^3,
+ \qquad B=u+\lambda A,\qquad C=2.                 \tag{10}
+\]
+
+This is another affine three-space.  Its maps are automorphisms because
+`A=v+f(u)` and `B=u+lambda*A` recover `u=B-lambda*A` and then `v=A-f(u)`.
+In the original coordinates they are
+
+\[
+ (x,y,z)\longmapsto
+ \bigl(Z_0,\ y+\lambda xZ_0,\ 2x\bigr),\qquad
+ Z_0=z+\alpha _2y^2+\alpha _3xy^3,
+\]
+
+so the inverse is polynomial in the displayed order.
+The earlier affine line `(A,B)=(v,u+lambda*v)` is the slice
+`alpha_2=alpha_3=0` of this larger component.
+
+In coefficient coordinates, the two primes are
+
+\[
+\begin{aligned}
+\mathfrak p_1={}&(B_{01},B_{20},B_{11},B_{30},B_{21},
+ A_{11},A_{21},A_{31}),\\
+\mathfrak p_2={}&(B_{21},B_{11},A_{31},A_{40},A_{21},A_{11},
+ B_{20}-A_{20}B_{01},B_{30}-A_{30}B_{01}).
+\end{aligned}                                      \tag{11}
+\]
+
+The redundant relation `A_30 B_20-A_20 B_30` may be included in a Gröbner
+basis for `p_2`.  Both primes have affine dimension three.  Their reduced
+intersection is the affine plane
+
+\[
+ A=v+\alpha _2u^2+\alpha _3u^3,\qquad B=u.         \tag{12}
+\]
+
+Exact `primdecGTZ` computation gives two primary components and no embedded
+associated prime.  They are nonreduced: their projective degrees are `20`
+and `30`, while the degrees of their radicals are `1` and `3`.  Thus (9) and
+(10) exhaust the reduced constant-`C` boundary, and every point there is an
+automorphism.
 
 ## 6. Scope and next boundary calculation
 
@@ -243,21 +268,16 @@ univariate weighted-Wronskian layers.  The
 that this cascade generates the same dual-number ideal as (4).  This is the
 preferred calculation on `pq!=0`.
 
-The remaining finite calculation is now the primary decomposition of the
-constant-`C` ideal
+The boundary calculation is now complete at the level of primary components:
+the punctured divisors are empty and `I+(C_10,C_01)` has precisely the two
+components above.  The remaining scheme question is global rather than
+boundary-local: a primary decomposition of the full thirteen-variable ideal
+would determine how these two nonreduced boundary components glue to the
+`pq!=0` dual-number chart.  The earlier direct full-ideal Buchberger attempt
+did not terminate in the lightweight SymPy backend.  No claim about that
+global gluing is inferred from the stratumwise calculations.
 
-\[
- I+(C_{10},C_{01}).
-\]
-
-The two triangular families above prove that this boundary has reduced
-positive-dimensional pieces.  A complete decomposition is still needed to
-decide whether the dual-number direction is an embedded trace of a removed
-component.  A direct thirteen-variable Buchberger computation was attempted
-but did not terminate in the lightweight SymPy backend; no completeness
-claim is inferred from that failed computation.  The one-sided unit-ideal
-certificates remove both punctured divisors from this open problem; the
-Wronskian chart degenerates only at the remaining constant-`C` corner.
-
-The exact certificate is
+The Python certificate is
 [`verify_foundational_weighted_coefficient_scheme.py`](../scripts/verify_foundational_weighted_coefficient_scheme.py).
+The exact primary-component certificate is
+[`verify_foundational_constant_c_boundary.sing`](../scripts/verify_foundational_constant_c_boundary.sing).

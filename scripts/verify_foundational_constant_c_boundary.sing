@@ -1,0 +1,65 @@
+// Exact primary-component certificate for the constant-C boundary.
+LIB "primdec.lib";
+
+ring r=0,(a20,a11,a30,a21,a40,a31,b01,b20,b11,b30,b21),dp;
+
+// Coefficients of A_u B_v-A_v B_u+1 for the declared supports.
+ideal I=
+  -3*a31*b30+4*a40*b21,
+  a31*b21,
+  -3*a21*b30+3*a30*b21-2*a31*b20+4*a40*b11,
+  2*a31*b11,
+  -3*a11*b30+2*a20*b21-2*a21*b20+3*a30*b11-a31+4*a40*b01,
+  -a11*b21+a21*b11+3*a31*b01,
+  -2*a11*b20+2*a20*b11-a21+3*a30*b01-3*b30,
+  2*a21*b01-2*b21,
+  -a11+2*a20*b01-2*b20,
+  a11*b01-b11;
+
+// The two claimed associated primes.
+ideal P1=b21,b30,b11,b20,b01,a31,a21,a11;
+ideal P2=
+  b21,b11,a31,a40,a21,a30*b01-b30,a11,
+  -a30*b20+a20*b30,a20*b01-b20;
+
+proc idealEqual(ideal A, ideal B)
+{
+  if (size(reduce(A,std(B)))!=0) { return(0); }
+  if (size(reduce(B,std(A)))!=0) { return(0); }
+  return(1);
+}
+
+list L=primdecGTZ(I);
+if (size(L)!=2)
+{
+  ERROR("expected exactly two primary components");
+}
+
+int firstIsP1=idealEqual(L[1][2],P1);
+int firstIsP2=idealEqual(L[1][2],P2);
+int secondIsP1=idealEqual(L[2][2],P1);
+int secondIsP2=idealEqual(L[2][2],P2);
+if (!(firstIsP1 && secondIsP2) && !(firstIsP2 && secondIsP1))
+{
+  ERROR("associated primes do not match P1 and P2");
+}
+
+if (dim(std(P1))!=3 || dim(std(P2))!=3)
+{
+  ERROR("both reduced components must have affine dimension three");
+}
+ideal meet=P1+P2;
+if (dim(std(meet))!=2)
+{
+  ERROR("the reduced components must meet in affine dimension two");
+}
+
+"PRIMARY_DEGREES";
+degree(std(L[1][1]));
+degree(std(L[2][1]));
+"PRIME_DEGREES";
+degree(std(L[1][2]));
+degree(std(L[2][2]));
+"PASS: constant-C boundary has exactly two primary components";
+"PASS: their radicals are the two declared triangular A3 families";
+"PASS: the reduced components meet in A2";
