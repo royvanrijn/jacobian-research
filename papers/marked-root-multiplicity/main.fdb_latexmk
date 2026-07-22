@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1784745333 "main.tex" "main.pdf" "main" 1784745334
+["pdflatex"] 1784745422 "main.tex" "main.pdf" "main" 1784745423
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1246382020 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy8.tfm" 1246382020 1120 200be8b775682cdf80acad4be5ef57e4 ""
@@ -143,11 +143,11 @@
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1655727831 2826444 fd9e7b2612ee6e1b790db0e41756cfcd ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
   "boundary-exhaustion.tex" 1784744938 22678 94603f137d4034260f46b9680d4e34d7 ""
-  "cancellation-parameter-faithfulness.tex" 1784745137 8633 e10bdd757916e2ddbe60a4fb710be307 ""
+  "cancellation-parameter-faithfulness.tex" 1784745404 8633 327b8912a77a4e4ab2f2dc327fc87bef ""
   "decorated-normalization.tex" 1784744962 29503 988b01eba117afdaf5dbcb88726a5173 ""
-  "main.aux" 1784745334 5405 7ea69d5c27759d0c4817cecf01b1fa5c "pdflatex"
-  "main.out" 1784745334 2300 1dd18d952199d39bff7c42e74265092f "pdflatex"
-  "main.tex" 1784745137 15994 68b065da784e770caa394650448c9173 ""
+  "main.aux" 1784745423 5405 7ea69d5c27759d0c4817cecf01b1fa5c "pdflatex"
+  "main.out" 1784745423 2300 1dd18d952199d39bff7c42e74265092f "pdflatex"
+  "main.tex" 1784745404 15993 93421602d4cac65e9862ba58a36b7b48 ""
   "stable-functoriality.tex" 1784659078 6133 f0347fe669d7215aff7dc070a9bd02ad ""
   "thick-intersection.tex" 1784658807 6538 cf77e2cb146e4c46f2849c5adc0428f7 ""
   (generated)
