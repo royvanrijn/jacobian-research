@@ -392,4 +392,38 @@ $M_{m,r}$ consequently implies (4.22).  This proves the diagram for all
 $mr\le30$, the entire column $m=1$, and the other uniform arithmetic
 criteria; direct resultants are additionally checked for $1\le m,r\le5$.
 In particular every rung of the quadratic stationary-point ladder is covered.
+
+There are also two uniform columns which do not use irreducibility.  Put
+$M_k=K_{m,k}$, including $M_0=1$.  Scaling $v=wt$ and expanding gives
+\[
+ L_{m,r}=\sum_{k=0}^r(-1)^k\binom rk
+ (1-w)^{m(r-k)}M_k.                                   \tag{4.24}
+\]
+For $r=1$, this says $L_{m,1}+K_{m,1}=(1-w)^m$; a common
+root would be $w=1$, whereas
+$K_{m,1}(1)=1/((m+1)(m+2))$.  In fact
+\[
+ \operatorname {Res}(K_{m,1},L_{m,1})
+ =((m+1)(m+2))^{-m}.                                  \tag{4.25}
+\]
+
+For $r=2$, set $y=1-w$ and $z=y^m$.  The endpoint substitution
+$u=1-wt$ gives
+\[
+ M_k=\frac1{(1-y)^{k+1}}
+ \left\{\frac{k!}{\prod_{j=1}^{k+1}(mk+j)}
+ -yz^k\sum_{j=0}^k\frac{(-1)^j\binom kjy^j}{mk+j+1}\right\}. \tag{4.26}
+\]
+At a common root, (4.24) and $M_2=0$ force $2M_1=z$, or
+\[
+ z\{m(m+1)y^2-2m(m+2)y+(m+1)(m+2)\}=2.               \tag{4.27}
+\]
+Substitution in $M_2=0$ and clearing nonzero denominators factors as
+\[
+ (m+1)^2(y-1)^3\{m^2y-(m+2)^2\}=0.                   \tag{4.28}
+\]
+The first root is $w=0$, where $K_{m,2}=1/3$.  At the second,
+$y=(m+2)^2/m^2>1$, while the braced factor in (4.27) equals
+$2(m+2)(5m^2+10m+4)/m^3>2$; since $z=y^m>1$, (4.27) is
+impossible.  Hence (4.22) holds for every $m$ when $r=2$ as well.
 \end{proof}

@@ -60,7 +60,8 @@ is exact substitution, and the three displayed source points are distinct.
 This proof is intentionally confined to the foundational map.  The
 nonduplicated continuation of the core chain is:
 
-- [Normalized factorization bridge](NORMALIZED_FACTORIZATION_SLICE.md);
+- [Compact normalized factorization model](NORMALIZED_FACTORIZATION_MODEL.md);
+- [Normalized factorization bridge and unequal-degree extension](NORMALIZED_FACTORIZATION_SLICE.md);
 - [Cubic marked-root model](MARKED_ROOT_MODEL.md);
 - [Exact image and nonproperness](IMAGE_AND_NONPROPERNESS.md);
 - [Weighted marked-root theorem](WEIGHTED_SEED_THEOREM.md).

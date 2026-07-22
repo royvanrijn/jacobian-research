@@ -1,0 +1,34 @@
+{
+  "title": "Exact Computer-Assisted Exclusion of the (72,108) Frontier in the Two-Dimensional Jacobian Problem",
+  "upload_type": "software",
+  "description": "<p>This archive contains an English manuscript and an exact characteristic-zero certificate replay for the two Laurent/Newton coefficient systems transcribed from Proposition 4.3 of Guccione, Guccione, Horruitiner and Valqui (arXiv:2204.14178).</p><p>The saved replay ends with <code>JC2_72_108_EXACT_REPLAY_PASS</code>. The computation excludes both transcribed systems. The conclusion that the degree pair (72,108) is impossible, and hence that every hypothetical plane counterexample has maximum degree at least 125, remains conditional on the correctness and exhaustiveness of the published reduction and on its faithful transcription. This archive does not prove the full two-dimensional Jacobian conjecture. Independent mathematical and computational review is requested.</p><p>The hard certificate is 89,105,967 bytes. Its construction uses a fixed 1925 by 1925 rational subsystem, and the recovered identity is checked against all 2010 scalar equations. An independent gmpy2 verifier evaluates 13,410 number-field products, equivalent to 335,250 scalar products.</p>",
+  "creators": [
+    {
+      "name": "Helali, Billel"
+    }
+  ],
+  "access_right": "open",
+  "license": "cc-by-4.0",
+  "keywords": [
+    "Jacobian conjecture",
+    "computer algebra",
+    "exact certificate",
+    "Newton polygon",
+    "characteristic zero",
+    "reproducible research"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://arxiv.org/abs/2204.14178",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://github.com/bilLkarkariy/jc2-72-108-exact-certificates",
+      "relation": "isIdenticalTo",
+      "scheme": "url"
+    }
+  ],
+  "version": "1.0.1",
+  "language": "eng"
+}

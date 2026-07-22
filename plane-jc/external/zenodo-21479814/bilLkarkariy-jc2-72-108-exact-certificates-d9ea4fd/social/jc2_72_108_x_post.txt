@@ -1,0 +1,41 @@
+The last known obstruction before degree 125 has fallen.
+
+In 2022, Guccione, Guccione, Horruitiner and Valqui classified every possible degree pair below 125 for a hypothetical counterexample to the 2D Jacobian Conjecture. They eliminated all of them except one:
+
+(deg P, deg Q) = (72,108), up to symmetry.
+
+Today, working with GPT-5.6 Sol, we completed an exact characteristic-zero certificate replay excluding both Laurent/Newton systems produced by their published reduction.
+
+For one configuration, we verified a unit-ideal identity:
+
+1 = sum T_i R_i.
+
+For the harder configuration, the system splits exhaustively into s = c and s = -c. On the first branch we verified:
+
+h = sum T_i E_i,
+
+so every common zero would require h = 0. But h = 0 is excluded by an exact unit-ideal certificate. An algebraic involution transports the argument to the second branch, whose specialization is independently certified as impossible.
+
+The hard certificate is 89.1 MB. It was reconstructed from a fixed 1925 x 1925 rational system and checked against all 2010 scalar equations. An independent verifier replayed 13,410 number-field products - 335,250 scalar products.
+
+No floating-point approximation. No finite-field obstruction used as the final argument. Only exact polynomial identities in characteristic zero.
+
+Conditional on the correctness and exhaustiveness of the published reduction and its transcription, every hypothetical 2D counterexample must now satisfy:
+
+max(deg P, deg Q) >= 125.
+
+This is not a proof of JC2. It moves its verified computational frontier.
+
+After the newly announced counterexample in dimension 3, the landscape is now:
+
+n = 1: true
+n = 2: open; any counterexample is forced to degree >= 125, conditionally as above
+n >= 3: false
+
+The previous mountain was (72,108). The next one begins at 125.
+
+Paper and exact certificates attached. Independent audit welcome.
+
+https://arxiv.org/abs/2204.14178
+
+#JacobianConjecture #ComputerAlgebra #AIforMath #GPT56Sol #AlgebraicGeometry

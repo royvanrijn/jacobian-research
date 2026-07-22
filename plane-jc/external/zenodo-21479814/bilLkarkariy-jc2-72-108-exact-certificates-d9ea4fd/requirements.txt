@@ -1,0 +1,5 @@
+gmpy2>=2.2
+numpy>=2.0
+python-flint>=0.8
+sympy>=1.14
+

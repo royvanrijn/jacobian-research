@@ -23,6 +23,17 @@ make verify-foundations
 
 `verify-minimal` uses only the Python standard library for the foundational
 map.  `verify-core` adds the cubic marked-root and exact-image implementations.
+It also checks the normalized `(2,3)` factorization slice: the unimodular
+boundary lattice, class `L^5-L^3`, direct counts `q^5-q^3` for four small
+prime fields, and generic degree ten.  The script checks the algebraic and
+arithmetic certificates; it does not promote a virtual Hodge polynomial to
+individual cohomology groups.
+The same target verifies the general weight-`(1,-1,-k)` invariant-coordinate
+Jacobian reduction for `k=1,2,3,4`, including the foundational
+`(-2,-1,1)` output weights.  It then reconstructs the complete
+sixteen-monomial coefficient ideal, proves the gauge-fixed dual-number
+presentation, extracts the infinitesimal deformation and its quadratic
+obstruction, and separates it from the affine left--right orbit.
 `verify-foundations` adds the weighted construction and its clean-room checker.
 
 The separately authored Lean certificate is optional because it downloads a
@@ -46,7 +57,10 @@ make verify-master
 ```
 
 This runs the construction, parameter arithmetic, boundary, monodromy, and
-current-ansatz rigidity regressions.
+current-ansatz rigidity regressions.  It includes the endpoint-moment
+reduction of the cancellation contact resultant: the general triangular
+identity is checked exactly on a bounded grid, while the complete `r=1,2`
+columns are proved symbolically with `m` left as a parameter.
 
 ## External quartic islands
 
@@ -78,12 +92,14 @@ also performs all 18 balanced BCW steps and checks the resulting 79-variable
 cubic-homogeneous collision, writes its sparse artifact, and replays it with a
 separate standard-library implementation.  It then runs the shared-factor
 optimization, which introduces 13 variables, reaches degree three in
-dimension 16, homogenizes to a 33-variable cubic collision, writes a second
-sparse artifact, and replays that trace with another standard-library audit.
+dimension 16, and writes and replays a 33-variable baseline artifact.  It then
+computes the exact rational rank 7 of the cubic component vector, constructs
+the rank-compressed 24-variable cubic collision, and independently replays
+the factorization, sparse map, and collision using only the standard library.
 A local proof of the
 fixed-dimensional DVEZ/Zhao implication, including Gaussian contraction, the
 countable-union step, and formal inversion, completes the nonexplicit route to
-`not GMC(66)`; `not GMC(158)` remains the exact conservative Long-route bound.
+`not GMC(48)`; `not GMC(158)` remains the exact conservative Long-route bound.
 It also verifies the uniform weighted-seed Gaussian bridge:
 first the standalone Gaussian--Lagrange identity for a nonlinear polynomial
 map with nonzero constant terms, then the exact pencil branch, polynomial
@@ -113,7 +129,9 @@ formulas.
 The generated certificates are stored as the conservative
 [`79-variable artifact`](artifacts/generated-results/long_bcw_79_counterexample.json)
 and optimized
-[`33-variable artifact`](artifacts/generated-results/shared_bcw_33_counterexample.json).
+[`33-variable artifact`](artifacts/generated-results/shared_bcw_33_counterexample.json),
+together with the final
+[`24-variable rank-compressed artifact`](artifacts/generated-results/rank_compressed_bcw_24_counterexample.json).
 They record the sparse cubic maps, every reduction-step choice, and the three
 exact collision points; regeneration is deterministic.
 

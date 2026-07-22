@@ -24,8 +24,8 @@ flowchart TD
     U["Universal conjectures known to imply JC cannot all remain true"]
     B["Long route reproduced: cubic-homogeneous Keller map in 79 variables"]
     R["not GMC(158)"]
-    BO["Repository shared-factor optimization: 33 variables"]
-    RO["not GMC(66)"]
+    BO["Repository shared-factor and rank compression: 24 variables"]
+    RO["not GMC(48)"]
     M["Motivation for Long's searches"]
     GP["Long's direct three-Gaussian polynomials"]
     G["not GMC(n) for every n at least 3"]
@@ -73,9 +73,10 @@ three different provenance levels separate.
    fixed-dimensional Derksen--van den Essen--Zhao implication then gives the
    **route-based dimension bound** `not GMC(158)`.  The last step is
    nonconstructive and supplies no explicit Gaussian pair.
-   A later repository common-factor optimization reduces the intermediate
-   dimensions from `3 -> 39 -> 79` to `3 -> 16 -> 33`, improving this local
-   route bound to `not GMC(66)`.  That improvement is not attributed to Long.
+   A later repository common-factor optimization reaches dimension 16.  Exact
+   rank compression of its cubic output then homogenizes in 24 variables,
+   improving this local route bound to `not GMC(48)`.  That improvement is
+   not attributed to Long.
 3. Long's direct three-variable pair independently gives the strictly stronger
    failure of `GMC(n)` for every `n >= 3`.  The paper states that no coordinate,
    term, or algebraic feature of the announced JC map was used to construct
@@ -295,8 +296,8 @@ The same note now records a separate repository optimization.  Exposed factor
 outputs are reused across elementary target shears, including five
 zero-stabilization cancellations.  The exact trace introduces 13 rather than
 36 variables, reaches degree three in dimension 16, and homogenizes to a
-33-variable cubic map.  Its sparse artifact and dependency-free replay certify
-the improved nonexplicit consequence `not GMC(66)`.  No minimality is claimed,
+24-variable cubic map.  Its sparse artifact and dependency-free replay certify
+the improved nonexplicit consequence `not GMC(48)`.  No minimality is claimed,
 and Long's 79-variable route remains the provenance-faithful reproduction of
 the paper.
 
@@ -376,7 +377,8 @@ JC(3) has generated two distinct bodies of work:
   decorated-normalization, and stable-moduli programme;
 - **external consequences:** Long's direct GMC, `(xz)`, and `SU(2)`
   counterexamples and his tracked GMC(158) route, together with the
-  repository's later shared-factor improvement of that route to GMC(66).
+  repository's later shared-factor and rank-compressed improvement of that
+  route to GMC(48).
 
 The existence of explicit consequence-level counterexamples supports studying
 the JC(3) map as a generator of new mathematics.  It does not make every
@@ -433,10 +435,13 @@ arbitrary JC(2) counterexamples.
    theorem would turn the conditional argument in the
    [decorated-normalization note](DECORATED_NORMALIZATION_INVARIANT.md) into
    `F_H stable-equivalent F_G => H=G` for normalized boundary-clean seeds.
-9. **BCW circuit minimization.**  The reusable-factor certificate lowers the
-   conservative route from 36 to 13 introduced degree-reduction variables,
-   hence from 79 to 33 after homogenization.  Encode exposed-factor lifetime,
-   component conflicts, square gates, and zero-cost target shears in SAT or
-   MILP, or use a beam/dynamic-programming search, to test whether fewer than
-   13 auxiliary variables are possible.  Treat 33 as a certified upper bound,
-   not a minimum.
+9. **Rank-aware BCW circuit minimization.**  The reusable-factor certificate
+   lowers the conservative route from 36 to 13 introduced degree-reduction
+   variables.  Rank-compressed homogenization turns its exact cubic-output
+   rank seven into final dimension `4+s+k=24`.  Future SAT, MILP, beam, or
+   circuit searches should therefore minimize `s+rank(C)`, not `s` alone,
+   while tracking exposed-factor lifetime, component conflicts, polynomial
+   factor reuse, multi-term cancellations, and zero-cost target shears.
+   Treat 24 as a certified upper bound, not a minimum.  A separate stronger
+   target is an equivalent `K=X+Q+C` with `det(I+sJQ+tJC)=1`; that would avoid
+   doubling and give a 17-variable homogeneous map and `not GMC(34)`.

@@ -1,0 +1,90 @@
+JC2_72_108_EXACT_REPORT.md: OK
+verify_laurent_reduction.py: OK
+verify_case1_reduction.py: OK
+verify_firstblock_exact.py: OK
+build_firstblock_exact.py: OK
+firstblock_Q_exact.sing: OK
+firstblock_Q_exact.out: OK
+exact_core.py: OK
+case2_exact_generate.py: OK
+case2_compact4_exact.sing: OK
+case2_compact4_exact.out: OK
+case2_residuals_exact.txt: OK
+case1_descent_checkpoint.py: OK
+case1_checkpoint.pkl: OK
+case1_residuals_exact.txt: OK
+factor_q0_exact_clean.sing: OK
+factor_q0_exact_clean.out: OK
+case1_cascade_analysis.py: OK
+case1_cascade_w.py: OK
+case1_branch1_after_w_eqs.txt: OK
+case1_branch2_after_w_eqs.txt: OK
+case1_branch1_after_w_nfmod.sing: OK
+case1_branch1_after_w_nfmod.out: OK
+case1_branch2_after_w_nfmod.sing: OK
+case1_branch2_after_w_nfmod.out: OK
+verify_exact_frontier.sh: OK
+hard/h_certificate_exact.txt: OK
+case2_exact_certificate.pkl: OK
+h0_branch1_exact_certificate.pkl: OK
+h0_exact_certificate.pkl: OK
+verify_serialized_certificates.py: OK
+hard/verify_certificate_gmpy2.py: OK
+verify_hne0_branch_symmetry.py: OK
+verify_all.sh: OK
+PASS: coordinate Jacobian = -1
+PASS: x^2 = t^2 z^4
+PASS: five coefficient identities verified exactly
+PASS: lattice supports contain 25 and 47 points
+P_lattice_points 61 bands {-8: (0, 0, 1), -7: (0, 1, 2), -6: (0, 2, 3), -5: (0, 3, 4), -4: (0, 4, 5), -3: (0, 5, 6), -2: (0, 6, 7), -1: (0, 7, 8), 0: (0, 8, 9), 1: (1, 8, 8), 2: (1, 8, 8)}
+Q_lattice_points 125 bands {-12: (0, 0, 1), -11: (0, 1, 2), -10: (0, 2, 3), -9: (0, 3, 4), -8: (0, 4, 5), -7: (0, 5, 6), -6: (0, 6, 7), -5: (0, 7, 8), -4: (0, 8, 9), -3: (0, 9, 10), -2: (0, 10, 11), -1: (0, 11, 12), 0: (0, 12, 13), 1: (1, 12, 12), 2: (2, 12, 11), 3: (2, 12, 11)}
+coordinate_bracket_[t,z] -1
+generic_band_formula_verified_symbolically_by_chain_rule True
+J4_D_solves 11 residuals 6
+LEX_relations 6 H_degree 35 H_terms 6
+H_irreducible_Q True
+all_firstblock_residuals_vanish_mod_lex True
+comp3=7 J0_nonzero=18 unique=25
+/Users/billelhelali/Documents/projects/others/jacobian2d/JC2_PROOF_PACKAGE/exact_replay/case2_compact4_exact.sing 48807
+/Users/billelhelali/Documents/projects/others/jacobian2d/JC2_PROOF_PACKAGE/exact_replay/case2_full25_exact.sing 345782
+
+BR 1 eta (-1/2) delta udeg 33 surv shapes
+2 (17, 5, [0, 0, 5, 1, 2, 1])
+4 (27, 6, [0, 0, 6, 2, 3, 1])
+5 (27, 6, [0, 0, 6, 2, 3, 1])
+8 (38, 7, [0, 0, 7, 2, 3, 1])
+9 (38, 7, [0, 0, 7, 2, 3, 1])
+10 (38, 7, [0, 0, 7, 2, 3, 1])
+11 (33, 6, [0, 0, 6, 2, 3, 1])
+keep [2, 4, 5, 8, 9, 10, 11]
+
+BR 2 eta (1/2) delta udeg 33 surv shapes
+2 (17, 5, [0, 0, 5, 1, 2, 1])
+4 (27, 6, [0, 0, 6, 2, 3, 1])
+5 (27, 6, [0, 0, 6, 2, 3, 1])
+8 (38, 7, [0, 0, 7, 2, 3, 1])
+9 (38, 7, [0, 0, 7, 2, 3, 1])
+10 (38, 7, [0, 0, 7, 2, 3, 1])
+11 (33, 6, [0, 0, 6, 2, 3, 1])
+keep [2, 4, 5, 8, 9, 10, 11]
+[30, 30, 40, 40, 40, 30] [7, 7, 8, 8, 8, 7]
+[30, 30, 40, 40, 40, 30]
+[30, 30, 40, 40, 40, 30] [7, 7, 8, 8, 8, 7]
+[30, 30, 40, 40, 40, 30]
+comp3=7 J0_nonzero=18 unique=25
+/Users/billelhelali/Documents/projects/others/jacobian2d/JC2_PROOF_PACKAGE/exact_replay/case2_compact4_exact.sing 48807
+/Users/billelhelali/Documents/projects/others/jacobian2d/JC2_PROOF_PACKAGE/exact_replay/case2_full25_exact.sing 345782
+CASE2_SERIALIZED_EXACT_PASS
+s=c H0_SERIALIZED_EXACT_PASS
+s=-c H0_SERIALIZED_EXACT_PASS
+ALL_SERIALIZED_EXACT_CERTIFICATES_PASS
+COEFFICIENT_FIELD_PRODUCTS=13410
+SCALAR_PRODUCTS=335250
+GMPY2_EXACT_PASS
+SYSTEM_SYMMETRY_PASS
+COEFFICIENT_FIELD_PRODUCTS=13410
+SCALAR_PRODUCTS=335250
+GMPY2_EXACT_PASS
+BRANCH1_EXACT_IDENTITY_PASS
+BRANCH2_EXACT_IDENTITY_PASS
+JC2_72_108_EXACT_REPLAY_PASS

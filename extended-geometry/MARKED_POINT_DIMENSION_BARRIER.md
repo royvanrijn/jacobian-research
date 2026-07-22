@@ -228,6 +228,45 @@ The independent cubic contact calculation in
 classifies the three hyperplane contact types for `n=3`.  Only contact type
 `(2,1)`, tangent but nonosculating to the twisted cubic, gives `A^3`; the
 other two types have different motivic classes and finite-field point counts.
+
+Here the orbit statement gives literal isomorphisms of the normalized affine
+sources, not only equality of contact partitions.  If `h,h'` both have
+divisor `2p+q` on the twisted cubic, choose `g in PGL_2` carrying `(p,q)` to
+the corresponding ordered pair for `h'`.  On binary factors, `g` commutes
+with multiplication.  For nonzero constants `delta,eta` one has
+
+\[
+ \operatorname{Res}(gL,gQ)=\delta\operatorname{Res}(L,Q),
+ \qquad h'(g(LQ))=\eta h(LQ).
+\]
+
+After applying `g`, rescale the two factors by
+
+\[
+ \lambda={\eta\over\delta},\qquad
+ \mu={\delta\over\eta^2}.
+\]
+
+Then `lambda*mu*eta=1` and `lambda^2*mu*delta=1`, so both normalized
+equations `h'(LQ)=1` and `Res(L,Q)=1` are restored.  This gives an explicit
+linear isomorphism `X_h -> X_(h')`.  Thus every tangent-nonosculating
+hyperplane gives the same `A^3` source as the representative in the
+[normalized factorization model](../verified/NORMALIZED_FACTORIZATION_MODEL.md).
+
+The exact cubic fiber stratification gives the stronger motivic table
+
+\[
+\begin{array}{c|c|c}
+\text{contact type}&[U_3(H)]&\#U_3(H)(\mathbb F_q)\\ \hline
+(1,1,1)&L^3-L&q^3-q\\
+(2,1)&L^3&q^3\\
+(3)&L^3-L^2&q^3-q^2.
+\end{array}
+\]
+
+Hence the transverse and osculating orbits are excluded from affine
+three-space without relying only on Euler characteristic.
+
 Combining that calculation with the theorem above gives:
 
 ### Corollary

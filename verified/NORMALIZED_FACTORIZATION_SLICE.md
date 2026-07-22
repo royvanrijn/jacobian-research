@@ -7,6 +7,11 @@ expanded foundational Keller map.  It isolates three independent facts:
 2. the normalized factorization slice is polynomially isomorphic to `A^3`;
 3. multiplication on that slice is linearly equivalent to the displayed map.
 
+For the shortest self-contained statement of exactly those three facts, see
+the [three-proposition normalized factorization model](NORMALIZED_FACTORIZATION_MODEL.md).
+The present note additionally proves the projective normalization, explains
+generic degree, and extends the construction to unequal factor degrees.
+
 Work over a field `k` of characteristic zero, and put
 
 \[
@@ -363,6 +368,13 @@ Thus:
 
 So unequal degrees explain étaleness, while consecutive degrees explain the
 canonical normalized affine slice used here.
+
+The first consecutive case beyond `(1,2)` is `(2,3)`.  For the natural
+coefficient `m=[AB]_(T^4 S)`, its normalized source is **not** affine
+five-space: its Grothendieck class is `L^5-L^3` and its finite-field count is
+`q^5-q^3`.  Units, Picard group, factoriality, and the canonical class do not
+detect the failure.  The complete calculation is recorded in the
+[`(2,3)` slice audit](../extended-geometry/QUADRATIC_CUBIC_FACTORIZATION_SLICE.md).
 
 The exact symbolic certificate is
 [`scripts/verify_normalized_factorization_slice.py`](../scripts/verify_normalized_factorization_slice.py).

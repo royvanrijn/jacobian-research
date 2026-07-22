@@ -103,6 +103,52 @@ for got, expected in zip(reconstructed, (b, c, d, e)):
     assert sp.expand(remainder) == 0
 print("PASS: forward after inverse is the identity on the slice")
 
+# The primitive vertical derivation along the projection to (a,b).  It is the
+# cross product of the two (c,d,e)-gradients after removing their common
+# factor a, and its coefficients are D(c),D(d),D(e).
+vertical = {
+    a: sp.Integer(0),
+    b: sp.Integer(0),
+    c: a**2,
+    d: -a * b,
+    e: -2 * b**2,
+}
+
+
+def D(polynomial):
+    return sp.expand(
+        sum(sp.diff(polynomial, variable) * value for variable, value in vertical.items())
+    )
+
+
+gradient_middle = sp.Matrix([sp.diff(middle, variable) for variable in (c, d, e)])
+gradient_resultant = sp.Matrix(
+    [sp.diff(resultant, variable) for variable in (c, d, e)]
+)
+cross_product = gradient_middle.cross(gradient_resultant)
+assert cross_product == a * sp.Matrix([vertical[c], vertical[d], vertical[e]])
+assert D(middle - 1) == 0
+assert D(resultant - 1) == 0
+assert all(D(D(variable)) == 0 for variable in (a, b, c, d, e))
+assert D(y_inverse) == 0
+assert groebner.reduce(sp.expand(D(z_inverse) - 1))[1] == 0
+
+# The half-normalized generator comes directly from
+# Q -> Q + t/2 * L*(a*T-2*b), and the normalization identity b-a*y=1
+# integrates term by term to the alternative slice z_tilde=2*z.
+def D0(polynomial):
+    return sp.cancel(D(polynomial) / 2)
+
+
+z_bezout = 4 * y_inverse * d + 2 * c * y_inverse**2 - e
+assert groebner.reduce(sp.expand(b - a * y_inverse - 1))[1] == 0
+assert D0(-e) == b**2
+assert sp.expand(D0(4 * y_inverse * d) + 2 * a * b * y_inverse) == 0
+assert sp.expand(D0(2 * c * y_inverse**2) - a**2 * y_inverse**2) == 0
+assert groebner.reduce(sp.expand(D0(z_bezout) - 1))[1] == 0
+assert groebner.reduce(sp.expand(z_bezout - 2 * z_inverse))[1] == 0
+print("PASS: primitive vertical LND has invariant y and global polynomial slice z")
+
 # Multiplication on the slice.
 g_map = (
     sp.expand((a * c).subs(forward)),

@@ -49,7 +49,14 @@ parameter-irreducibility range: all `mr<=30`, the complete `m=1` ladder, and
 the uniform criteria in [ARITHMETIC.md](ARITHMETIC.md).  Direct resultants are
 also checked on the regression grid `1<=m,r<=5`.
 
-The remaining uniform theorem is purely the all-parameter nonvanishing
+The [endpoint-moment reduction](CONTACT_RESULTANT.md) now gives two further
+uniform theorems independent of parameter irreducibility.  It proves
+nonvanishing for every `m` in both columns `r=1` and `r=2`; for `r=1` it also
+gives the closed resultant `((m+1)(m+2))^(-m)`.  For fixed `r`, the same method
+replaces the growing degree-`mr` Sylvester problem by two degree-`r` equations
+in `y=1-w` and `z=y^m`.
+
+The remaining uniform theorem, now beginning at `r>=3`, is the nonvanishing
 problem
 
 \[

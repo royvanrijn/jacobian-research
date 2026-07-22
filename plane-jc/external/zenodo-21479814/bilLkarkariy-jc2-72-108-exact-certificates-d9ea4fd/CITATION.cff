@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this archive, please cite the manuscript and the archived release."
+title: "Exact Computer-Assisted Exclusion of the (72,108) Frontier in the Two-Dimensional Jacobian Problem"
+type: software
+version: 1.0.1
+date-released: 2026-07-21
+authors:
+  - family-names: Helali
+    given-names: Billel
+abstract: >-
+  Exact characteristic-zero certificate replay for the two Laurent/Newton
+  coefficient systems associated with the remaining (72,108) degree pair in
+  the two-dimensional Jacobian problem. The degree-125 consequence is
+  conditional on the correctness and exhaustiveness of the published
+  reduction and its faithful transcription.
+keywords:
+  - Jacobian conjecture
+  - computer algebra
+  - exact certificate
+  - Newton polygon
+  - characteristic zero
+repository-code: "https://github.com/bilLkarkariy/jc2-72-108-exact-certificates"
+license: CC-BY-4.0

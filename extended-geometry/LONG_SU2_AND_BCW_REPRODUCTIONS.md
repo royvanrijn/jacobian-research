@@ -1,4 +1,4 @@
-# Complete local reproductions: `SU(2)`, the BCW 79-variable route, and a 33-variable optimization
+# Complete local reproductions: `SU(2)`, the BCW 79-variable route, and a 24-variable optimization
 
 This note supplies the two proofs left deliberately conditional in the first
 external-consequences audit.  It has two distinct outcomes.
@@ -10,9 +10,10 @@ external-consequences audit.  It has two distinct outcomes.
    `not GMC(158)` is proved locally in a companion note, following and
    crediting Derksen--van den Essen--Zhao and Zhao.
 3. A repository-derived common-factor optimization replaces the conservative
-   degree-lowering stage by `3 -> 16`, then homogenizes to 33 variables.  It
-   improves the route-based consequence to `not GMC(66)`.  This is not a
-   formula or dimension claim attributed to Long.
+   degree-lowering stage by `3 -> 16`.  The cubic component vector has exact
+   rational rank seven, so rank-compressed homogenization needs only 24
+   variables and improves the route-based consequence to `not GMC(48)`.
+   This is not a formula or dimension claim attributed to Long.
 
 Neither local proof changes the provenance of Christopher D. Long's external
 results or constitutes external review.
@@ -424,7 +425,7 @@ witness step because the passage from pointwise thresholds to one uniform
 threshold uses a countable-union argument.  The proof reproduces only the
 fixed-dimensional implication needed here, not all results of DVEZ or Zhao.
 
-## 3. Shared-factor optimization: `3 -> 16 -> 33`
+## 3. Shared-factor and rank-compressed optimization: `3 -> 16 -> 24`
 
 The 79-variable construction above remains the exact reproduction of Long's
 conservative route.  It is not dimension-minimal: its 18 steps expose two
@@ -507,23 +508,66 @@ is deliberately recorded so SAT, MILP, dynamic-programming, or beam searches
 can seek a still smaller exposure registry without changing the certificate
 format.
 
-### 3.3 Cubic homogenization and the improved route bound
+### 3.3 Rank-compressed cubic homogenization
 
 Write the 16-variable map as `K=X+Q+C`, with `Q,C` homogeneous of degrees two
-and three.  Applying the construction of Sections 2.4--2.5 gives
+and three.  Let `k` be the row rank over `Q` of the coefficient matrix of the
+component vector `C`.  Choose independent component polynomials
+`c=(c_1,...,c_k)` and the unique constant matrix `B` such that
 
 \[
- V_{33}(X,Y,T)
- =(X,Y,T)+(YT^2+Q(X)T,-C(X),0)                      \tag{3.6}
+ C(X)=B c(X).                                       \tag{3.6}
 \]
 
-in `2*16+1=33` variables.  The same identity
-`det(I+tJN)=1` proves that it is Keller, and the lifted collision proves that
-it is noninvertible.  Consequently the locally proved fixed-dimensional
-implication gives
+Only `Y in A^k` is needed.  Put
 
 \[
- \boxed{\neg\mathrm{GMC}(66)}.                      \tag{3.7}
+ U(X,Y)=(X+Q(X)+BY,Y-c(X)).                         \tag{3.7}
+\]
+
+This is stably left--right equivalent to `K`: precompose `K times id` with
+`A(X,Y)=(X,Y-c(X))`, then postcompose with `P(R,S)=(R+BS,S)`.  More strongly,
+for
+
+\[
+ E_t(X)=X+tQ(X)+t^2C(X)=t^{-1}K(tX),
+\]
+
+define `A_t(X,Y)=(X,Y-tc(X))` and
+`P_t(R,S)=(R+tBS,S)`.  Direct substitution gives
+
+\[
+ \operatorname{id}+tN
+ =P_t\circ(E_t\times\operatorname{id})\circ A_t,
+ \qquad N=(Q+BY,-c).                                \tag{3.8}
+\]
+
+All source and target shears have determinant one, and
+`det DE_t=det DK(tX)=1`; hence `det(I+tJN)=1`.  Equivalently, the Schur
+complement in the homogenized Jacobian is
+
+\[
+ I+tJQ+t^2B Jc=DE_t.
+\]
+
+Therefore
+
+\[
+ V_{n+k+1}(X,Y,T)
+ =(X,Y,T)+(TQ(X)+T^2BY,-c(X),0)                     \tag{3.9}
+\]
+
+is cubic homogeneous and Keller.  If `K(p)=q`, then
+`V(p,c(p),1)=(q,0,1)`, so every collision transports.
+
+For the frozen 16-variable trace, precisely the components numbered
+`0,1,2,3,4,6,8` are nonzero.  Exact rational row reduction shows that all
+seven are independent.  Thus `k=7`, not merely `k<=7`, and (3.9) has
+`16+7+1=24` variables.  Its transported rational three-point collision makes
+it noninvertible.  The locally proved fixed-dimensional implication now gives
+
+\[
+ \boxed{\neg\mathrm{GMC}(48)}.                     \tag{3.10}
 \]
 
 This improves only the nonexplicit route-based dimension bound.  Long's
@@ -538,6 +582,17 @@ The dependency-free
 [`audit_shared_bcw_33_independent.py`](../scripts/audit_shared_bcw_33_independent.py)
 replays all factor exposures and target shears from the original map and
 reconstructs the cubic collision without importing the generator.
+The general rank factorization is implemented in
+[`rank_compressed_bcw_homogenization.py`](../scripts/rank_compressed_bcw_homogenization.py).
+The generator
+[`verify_rank_compressed_bcw_24_route.py`](../scripts/verify_rank_compressed_bcw_24_route.py)
+writes the exact
+[24-variable sparse artifact](../artifacts/generated-results/rank_compressed_bcw_24_counterexample.json),
+and
+[`audit_rank_compressed_bcw_24_independent.py`](../scripts/audit_rank_compressed_bcw_24_independent.py)
+independently recomputes the rational rank, replays (3.8) with sparse
+polynomials, reconstructs the map, and checks the collision using only the
+standard library.
 
 ## Reproduction
 
@@ -550,16 +605,18 @@ Run
 python3 scripts/audit_long_bcw_79_independent.py
 .venv/bin/python scripts/verify_shared_bcw_33_route.py
 python3 scripts/audit_shared_bcw_33_independent.py
+.venv/bin/python scripts/verify_rank_compressed_bcw_24_route.py
+python3 scripts/audit_rank_compressed_bcw_24_independent.py
 python3 scripts/verify_fixed_gmc_sic_bridge.py
 ```
 
 The first two scripts jointly certify the complete `SU(2)` proof.  The next
 two construct and independently replay Long's conservative 79-variable
-route.  The following pair construct and independently replay the
-repository's shared-factor 33-variable optimization.  The last script checks
-the coefficient skeleton of the fixed-dimensional implication.  None of
-these replaces the repository's separate 95-variable cubic-homogeneous
-artifact.
+route.  The next pair record and replay the repository's shared-factor
+baseline, and the following pair construct and independently replay its
+rank-compressed 24-variable homogenization.  The last script checks the
+coefficient skeleton of the fixed-dimensional implication.  None of these
+replaces the repository's separate 95-variable cubic-homogeneous artifact.
 
 The external theorem inputs and construction sources are:
 

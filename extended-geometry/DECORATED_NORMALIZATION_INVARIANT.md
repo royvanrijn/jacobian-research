@@ -668,9 +668,10 @@ critical prime with completed ring `k(R)[[Q]]/(Q^m)`, while every two distinct
 intersections remain reduced.  This accounts for every boundary prime and
 specialization arrow.  Nonvanishing is proved wherever the cancellation
 parameter polynomial is known irreducible—in particular for every `mr<=30`,
-the full `m=1` ladder, and the uniform arithmetic criteria—and is also checked
-by direct resultants for `1<=m,r<=5`.  Outside proven ranges the resultant is
-retained as an explicit per-input certificate.
+the full `m=1` ladder, and the uniform arithmetic criteria.  A separate
+endpoint-moment argument proves both complete columns `r=1,2`, without
+irreducibility, and direct resultants are checked for `1<=m,r<=5`.  Outside
+proven ranges the resultant is retained as an explicit per-input certificate.
 
 ### Completion audit
 
@@ -687,7 +688,7 @@ for a completed computation in every family.
 | infinity and second-boundary marks | complete | exact for the weighted seeds; the quartic zero-cluster chart is checked |
 | distinguished affine root-one stratum | complete on the exact-double-zero boundary-clean locus | exact cover-stratum and rerooting audit; no cross-stratum point on the discriminant normalization is claimed |
 | upstairs `(e,f)`, different, DVR, and inertia data | complete as invariant data | generic divisorial layer complete |
-| higher intersections and completed local extensions | complete as functorial invariant data | full cancellation prime diagram is exact under `Res(K,L) != 0`, proved for every `mr<=30`, the `m=1` ladder, and all uniform parameter-irreducibility cases; all-parameter nonvanishing remains open |
+| higher intersections and completed local extensions | complete as functorial invariant data | full cancellation prime diagram is exact under `Res(K,L) != 0`, proved for every `mr<=30`, every `m=1`, both uniform columns `r=1,2`, and all uniform parameter-irreducibility cases; the remaining all-parameter problem starts at `r=3` |
 
 The stability inputs agree with standard base-change results: normalization
 commutes with smooth base change ([Stacks, Lemma 76.25.2](https://stacks.math.columbia.edu/tag/082F)),

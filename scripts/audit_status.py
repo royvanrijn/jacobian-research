@@ -31,6 +31,7 @@ expected = [
     "Rank-two Poisson / `DC(4)` construction and announcement audit",
     "Long's GMC, `(xz)`, and `SU(2)` counterexamples",
     "Weighted-seed Gaussian bridge",
+    "Weighted invariant reduction and foundational coefficient scheme",
     "Cubic marked-root realization",
     "Exact cubic image, fibers, and nonproperness",
     "Weighted marked-root family and `S_n` monodromy",

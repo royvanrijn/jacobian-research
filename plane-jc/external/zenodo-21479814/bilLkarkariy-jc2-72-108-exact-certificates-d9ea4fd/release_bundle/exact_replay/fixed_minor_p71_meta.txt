@@ -1,0 +1,6 @@
+prime=71
+rows=2010
+cols=1925
+minor_size=1925
+det_mod_71=10
+all_residual_nonzero=0

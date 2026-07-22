@@ -142,6 +142,25 @@ Roots give generic source points.  Repeated roots produce discriminant
 inertia.  When reconstruction develops a pole, the corresponding sheet moves
 to the canonical normalization boundary.
 
+There is also a particularly short factorization proof of the constant
+Jacobian.  For a linear form `L` and a quadratic form `Q`, multiplication has
+only the infinitesimal relative-scaling kernel `(L,-Q)` on the coprime locus.
+The resultant has bidegree `(2,1)` and is nonconstant in exactly that
+direction.  Hence `(L,Q) -> (LQ,Res(L,Q))` is étale; the foundational
+threefold map is its normalized base change.  The
+[three-proposition factorization model](verified/NORMALIZED_FACTORIZATION_MODEL.md)
+gives the global polynomial `A^3` coordinates and the exact linear comparison
+with the announced formula.
+
+The same factorization mechanism is étale for all unequal factor degrees and
+has a unique normalization for consecutive degrees.  The first new case,
+quadratic times cubic, is nevertheless not a new `JC(5)` example: its natural
+normalized source is a smooth factorial fivefold with trivial Picard and
+canonical classes, but its class is `L^5-L^3` rather than `L^5` (equivalently,
+its finite-field count is `q^5-q^3`).  The
+[`(2,3)` slice audit](extended-geometry/QUADRATIC_CUBIC_FACTORIZATION_SLICE.md)
+records the calculation and the precise remaining cohomology question.
+
 ## Parallel discoveries and repository contributions
 
 The project developed during a burst of same-day public work.  The following
@@ -156,7 +175,7 @@ distinctions matter:
 | Quartic Islands A/B/C | Juntang Zhuang's pinned compilation and exact collision checkers | Independent compact reconstruction showing one canonical and two split weighted seeds, complete boundary signatures, and exclusion from the cancellation normal forms |
 | Formal verification of the foundational map | Dean Cureton’s Lean project | Pinned attribution, scope audit, and an optional upstream build target |
 | Immediate consequences and source trail | Zihan Zhang’s audit | A separate proof architecture focused on inverse geometry, normalization, and stable equivalence |
-| GMC, `(xz)`, and `SU(2)` counterexamples | Christopher D. Long's two arXiv papers | Exact local Gaussian and beta/binomial checks, a complete `SU(2)=S^3` Haar proof, all 18 steps of Long's conservative 79-variable route, and a separate repository shared-factor optimization to 33 variables and `not GMC(66)`; both sparse artifacts have independent replays, with no claim that the direct witnesses derive from our map |
+| GMC, `(xz)`, and `SU(2)` counterexamples | Christopher D. Long's two arXiv papers | Exact local Gaussian and beta/binomial checks, a complete `SU(2)=S^3` Haar proof, all 18 steps of Long's conservative 79-variable route, a repository shared-factor reduction to dimension 16, and rank-compressed homogenization to 24 variables and `not GMC(48)`; every sparse artifact has an independent replay, with no claim that the direct witnesses derive from our map |
 | Weighted-seed/Gaussian bridge | Long's Lagrange--Good search architecture and Good's inversion theorem | A repository-derived polynomial determinant correction turning every nonconstant normalized seed into an explicit four-real-Gaussian witness family; the exact mixed moments recover `1+lambda*H`, making the moment realization injective; supported by a standalone constant-term-safe formal Gaussian--Lagrange proof, locally checked and not externally reviewed |
 | Cancellation maps and canonical boundary invariants | No earlier source has been identified in the present audit | The finite cancellation operator, all-parameter reconstruction and collision, boundary-exhaustion theorem, thick intersections, and rigidity results |
 | Degreewise weighted stable moduli | No earlier source has been identified in the present audit | A generically finite decorated-normalization invariant with image dimension `N-3`, on an explicitly proved nonempty ordinary boundary-clean open for every generic degree `N>=4` |
@@ -247,6 +266,13 @@ Unlike the moduli-dimension theorem, this finite count distinguishes multiple
 construction types: the weighted locus from every cancellation type and the
 cancellation types from one another.
 
+The finer cancellation prime-intersection diagram depends on the contact
+resultant `Res(K_{m,r},L_{m,r})`.  Besides the irreducibility ranges and exact
+finite certificates, an endpoint-moment argument now proves uniform
+nonvanishing for every `m` in both columns `r=1,2`; the unrestricted problem
+for `r>=3` remains open.  See the
+[contact-resultant reduction](cancellation/CONTACT_RESULTANT.md).
+
 The canonical statement and proof are in the standalone paper
 [Marked-Root Keller Maps and Degreewise Stable Multiplicity](papers/marked-root-multiplicity/main.tex).
 [Marked-root Keller maps](MARKED_ROOT_KELLER_MAPS.md) supplies the common
@@ -274,8 +300,9 @@ foundational map.  The repository now reproduces its 18 stable steps, the
 dimensions `3 -> 39 -> 79`, the cubic-homogeneous collision, and the complete
 fixed-dimensional implication to `not GMC(158)`.  The proof architecture and
 authorship remain credited to BCW, DVEZ, and Zhao.  A separate repository
-optimization reuses exposed factors, reduces the route to `3 -> 16 -> 33`,
-and improves the nonexplicit bound to `not GMC(66)`; this is a certified upper
+optimization reuses exposed factors, reduces the route to dimension 16, and
+then rank-compresses the cubic output before homogenizing to 24 variables.
+This improves the nonexplicit bound to `not GMC(48)`; it is a certified upper
 bound, not a minimality claim or a result attributed to Long.  Long's
 much smaller direct witnesses were motivated by the JC(3) announcement but
 were not algebraically extracted from that map.  His papers do not review the

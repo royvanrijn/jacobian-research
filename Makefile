@@ -23,6 +23,9 @@ verify-core: verify-minimal
 	$(PYTHON) scripts/verify_counterexample.py
 	$(PYTHON) scripts/audit_map_consistency.py
 	$(PYTHON) scripts/verify_normalized_factorization_slice.py
+	$(PYTHON) scripts/verify_quadratic_cubic_factorization_invariants.py
+	$(PYTHON) scripts/verify_weighted_invariant_jacobian_reduction.py
+	$(PYTHON) scripts/verify_foundational_weighted_coefficient_scheme.py
 	$(PYTHON) scripts/cubic_model.py
 	$(PYTHON) scripts/audit_foundational_invariance_regression.py
 	$(PYTHON) scripts/verify_symplectic_weyl_lift.py
@@ -64,6 +67,7 @@ verify-master:
 	$(PYTHON) scripts/verify_boundary_intersection_obstruction.py
 	$(PYTHON) scripts/verify_scheme_boundary_all_parameters.py
 	$(PYTHON) scripts/verify_full_boundary_diagram.py
+	$(PYTHON) scripts/verify_contact_resultant_endpoint_reduction.py
 	$(PYTHON) scripts/verify_counterexample_ladder.py
 	$(PYTHON) scripts/verify_parameter_irreducibility.py
 	$(PYTHON) scripts/verify_parameter_discriminant.py
@@ -86,6 +90,8 @@ verify-external-consequences:
 	$(SYSTEM_PYTHON) scripts/audit_long_bcw_79_independent.py
 	$(PYTHON) scripts/verify_shared_bcw_33_route.py
 	$(SYSTEM_PYTHON) scripts/audit_shared_bcw_33_independent.py
+	$(PYTHON) scripts/verify_rank_compressed_bcw_24_route.py
+	$(SYSTEM_PYTHON) scripts/audit_rank_compressed_bcw_24_independent.py
 	$(SYSTEM_PYTHON) scripts/verify_fixed_gmc_sic_bridge.py
 	$(PYTHON) scripts/verify_formal_gaussian_lagrange.py
 	$(PYTHON) scripts/verify_weighted_gaussian_bridge.py
