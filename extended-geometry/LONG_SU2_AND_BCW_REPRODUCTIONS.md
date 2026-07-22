@@ -1,4 +1,4 @@
-# Complete local reproductions: `SU(2)`, the BCW 79-variable route, and a 22-variable optimization
+# Complete local reproductions: `SU(2)`, the BCW 79-variable route, and a 21-variable optimization
 
 This note supplies the two proofs left deliberately conditional in the first
 external-consequences audit.  It has two distinct outcomes.
@@ -12,9 +12,11 @@ external-consequences audit.  It has two distinct outcomes.
 3. A repository-derived common-factor optimization replaces the conservative
    degree-lowering stage by `3 -> 16`.  The cubic component vector has exact
    rational rank seven, so rank-compressed homogenization needs only 24
-   variables.  Its two-dimensional constant-kernel quotient gives a
-   22-variable cubic-homogeneous collision and improves the route-based
-   consequence to `not GMC(44)`.
+   variables.  A later essential-dimension search finds a different
+   17-dimensional trace of cubic-output rank six; its 24-dimensional
+   homogenization has a three-dimensional constant kernel and gives a
+   21-variable cubic-homogeneous collision.  The route-based consequence is
+   `not GMC(42)`.
    This is not a formula or dimension claim attributed to Long.
 
 Neither local proof changes the provenance of Christopher D. Long's external
@@ -566,13 +568,14 @@ For the frozen 16-variable trace, precisely the components numbered
 `0,1,2,3,4,6,8` are nonzero.  Exact rational row reduction shows that all
 seven are independent.  Thus `k=7`, not merely `k<=7`, and (3.9) has
 `16+7+1=24` variables.  Its transported rational three-point collision makes
-it noninvertible.  Its homogeneous Jacobian has a two-dimensional constant
-kernel; quotienting those directions preserves the collision and gives a
-22-variable cubic-homogeneous Keller map.  The locally proved
+it noninvertible.  A separate 17-dimensional trace has cubic-output rank six;
+its 24-dimensional homogenization has a three-dimensional constant kernel.
+Quotienting those directions preserves the collision and gives a 21-variable
+cubic-homogeneous Keller map.  The locally proved
 fixed-dimensional implication now gives
 
 \[
- \boxed{\neg\mathrm{GMC}(44)}.                     \tag{3.10}
+ \boxed{\neg\mathrm{GMC}(42)}.                     \tag{3.10}
 \]
 
 This improves only the nonexplicit route-based dimension bound.  Long's
@@ -610,13 +613,28 @@ parses the 24-variable source artifact, recomputes both kernel vectors, checks
 homogeneity and the descended collision, and checks the block-triangular
 determinant factorization.
 
-### 3.4 What remains after 44
+The frozen generator
+[`verify_essential_bcw_21_route.py`](../scripts/verify_essential_bcw_21_route.py)
+writes the
+[21-variable sparse artifact](../artifacts/generated-results/essential_bcw_21_counterexample.json).
+The dependency-free
+[`audit_essential_bcw_21_independent.py`](../scripts/audit_essential_bcw_21_independent.py)
+replays the 17 cancellations from the original map, independently recovers
+cubic-output rank six, reconstructs the 24-dimensional homogenization,
+recomputes its three-dimensional constant kernel, and rebuilds the 21D
+quotient, collision, and triangular determinant factorization.
 
-The bound 44 is still an upper bound, not a minimality theorem.  The executable
+### 3.4 What remains after 42
+
+The bound 42 is still an upper bound, not a minimality theorem.  The executable
 [`search_rank_aware_bcw.py`](../scripts/search_rank_aware_bcw.py) reconstructs
 the monomial-factor beam search, deduplicates exact polynomial states, and
-scores the actual rational objective `s+rank(C)` after every candidate.  Both
-the legacy degree-first and genuinely rank-first orderings, at width 128,
+uses `s+rank(C)` only as its partial-state beam heuristic.  Every completed
+trace is now rank-compressed, homogenized, constant-kernel quotiented, and
+compared by final essential dimension.  The fuller
+[`search_essential_bcw.py`](../scripts/search_essential_bcw.py) also transports
+the collision and computes good-prime cyclic invariant-row-module diagnostics.
+Historically, both the legacy degree-first and genuinely rank-first orderings, at width 128,
 finish with `s+rank(C)=20`; neither finds a 23-variable map.  Across the 232
 completed traces retained by the degree-first run, no trace passes eight exact
 necessary samples of `det(I+sJQ+tJC)=1`.  These are finite search results, not
@@ -657,6 +675,8 @@ python3 scripts/audit_shared_bcw_33_independent.py
 python3 scripts/audit_rank_compressed_bcw_24_independent.py
 .venv/bin/python scripts/verify_constant_kernel_bcw_22_route.py
 python3 scripts/audit_constant_kernel_bcw_22_independent.py
+.venv/bin/python scripts/verify_essential_bcw_21_route.py
+python3 scripts/audit_essential_bcw_21_independent.py
 .venv/bin/python scripts/verify_two_parameter_bcw_obstruction.py
 python3 scripts/verify_fixed_gmc_sic_bridge.py
 ```
@@ -666,7 +686,9 @@ two construct and independently replay Long's conservative 79-variable
 route.  The next pair record and replay the repository's shared-factor
 baseline, and the following pair construct and independently replay its
 rank-compressed 24-variable homogenization.  The next pair construct and
-independently replay its 22-variable constant-kernel quotient.  The next script checks the
+independently replay its 22-variable constant-kernel quotient.  The following
+pair freeze and independently replay the improved 21-variable essential
+quotient.  The next script checks the
 two-parameter shortcut obstruction; the final script checks the coefficient
 skeleton of the fixed-dimensional implication.  None of these
 replaces the repository's separate 95-variable cubic-homogeneous artifact.

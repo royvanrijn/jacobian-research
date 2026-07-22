@@ -1,10 +1,9 @@
 # Toward rank-two symplectic descent in every degree
 
-This note records a workable obstruction, a new calculation on the normalized
-degree-five seed surface, and the next exact computations.  Except where a
-statement is explicitly identified as already proved, the degree-five surface
-formula below is an exploratory result awaiting a single two-parameter exact
-certificate.
+This note defines a workable obstruction, proves rank-two completion on the
+normalized degree-five seed surface, and gives the next all-degree
+computations.  The degree-five result is an internal repository theorem with
+an exact two-parameter certificate and no recorded external specialist review.
 
 ## 1. Normalized seeds and fixed-third-component slices
 
@@ -141,16 +140,42 @@ The normalized degree-five surface has coordinates `(kappa,tau)`:
  \right).
 \]
 
-It satisfies `H'(1)=-1` and `H''(1)=kappa`.  With
-`psi(Q)=s_2 Q^2`, exact computations on the slices
+It satisfies `H'(1)=-1` and `H''(1)=kappa`.  It is useful in the exact
+calculation to replace `kappa` by
 
 \[
- \kappa=-9,-3,0,1,2,3
+ a=-\frac{1+\kappa}{2+\kappa},\qquad
+ \kappa=-\frac{1+2a}{1+a}.
 \]
 
-show that all four negative-`X` residues have one common scalar factor.  The
-same calculation with `tau=0` and symbolic `kappa` is exact.  Together these
-computations give the candidate
+With `psi(Q)=s_2Q^2`, direct calculation over `Q(a,tau,s_2)` proves that the
+localized Hamiltonian has denominator
+
+\[
+ 15482880a^8(a+1)^2X^4
+\]
+
+and that its four low numerator coefficients are respectively
+
+\[
+ 4096a^8\mathcal O,\quad
+ 24576Qa^8\mathcal O,\quad
+ 92160Q^2a^8\mathcal O,\quad
+ 276480Q^3a^8\mathcal O,
+\]
+
+where
+
+\[
+\begin{aligned}
+\mathcal O={}&28(a+1)^2s_2+12a(a+1)^2\tau^2\\
+&-18a(a+1)(4a+5)\tau
+-216a^3-648a^2-738a-315.
+\end{aligned}
+\]
+
+There are no lower powers of `X`.  Solving `mathcal O=0` and returning to
+`kappa` gives
 
 \[
  \boxed{
@@ -172,7 +197,16 @@ Up to a nonzero parameter unit, the raw residue is
  \right).
 \]
 
-Consequently the current evidence predicts:
+### Theorem — degree-five surface completion
+
+On the chart `kappa != -2,-1`, the normalized Hamiltonian is polynomial
+exactly for `s_2=K(kappa,tau)`.  The resulting four coordinates have the six
+canonical brackets, and the source change is a polynomial automorphism.
+Therefore every admissible weighted degree-five map on this chart has an
+exact symplectic completion in `A^4`, polynomially left--right equivalent to
+the original map times `id_(A^1)`.
+
+Consequently:
 
 * the completable locus on `kappa != -2,-1` is the entire two-dimensional
   degree-five seed surface, not a divisor;
@@ -186,7 +220,7 @@ This correctly recovers the published line.  There `kappa=-9` and
  \tau=\frac{3}{2(\lambda-1)},
 \]
 
-so the candidate becomes
+so the completing shear becomes
 
 \[
  K\left(-9,\frac{3}{2(\lambda-1)}\right)
@@ -194,19 +228,54 @@ so the candidate becomes
  {196(\lambda-1)^2}.
 \]
 
-The existing theorem is therefore the generic fixed-`gamma` line inside this
-surface.  Promoting the surface prediction to a theorem requires one direct
-two-parameter simplification (or a degree-bound plus enough exact
-interpolation slices), followed by the same polynomial Hamiltonian and source
-automorphism checks as in the published line.
+The published theorem is therefore the generic fixed-`gamma` line inside this
+surface.  On the ordinary boundary-clean open where the decorated
+normalization invariant is generically finite, completion transfers the full
+two-dimensional stable moduli to exact symplectic maps of `A^4`.  Thus degree
+five is stronger than the fixed-`gamma` target `N-4=1`: it gives `N-3=2`
+dimensions on this chart.
 
-This remains a candidate, not a theorem over `Q(kappa,tau)`.  The exploratory
-script deliberately runs the full Hamiltonian identity check only after a
-one-parameter specialization (`--kappa-value`); its unspecialized mode has
-not proved every residue coefficient or all three Hamiltonian equations.
-Promotion requires those exact two-parameter identities.  The exploratory
-replay is
+The exact certificate is
+[`verify_degree_five_flux_surface.py`](../scripts/verify_degree_five_flux_surface.py).
+The earlier slice-oriented exploratory replay remains
 [`explore_degree_five_flux_surface.py`](../scripts/explore_degree_five_flux_surface.py).
+
+### Exceptional divisors and the moduli open
+
+The exact calculation separates four kinds of exceptional parameters:
+
+1. `tau=0` is the degree-drop divisor: the coefficient of `W^5` in `H` is
+   `tau`.
+2. `kappa=-2` is genuinely outside the weighted marked-root construction,
+   because `a=-(1+kappa)/(2+kappa)` is undefined.
+3. `kappa=-1` gives `a=0`.  The shear itself remains regular,
+   `K(-1,tau)=45/4`, but the adapted source change divides by `a`.  This is a
+   chart exception; the calculation does not prove non-completability there.
+4. The ordinary-cusp condition removes the divisor
+
+\[
+\begin{aligned}
+\Delta_{\rm cusp}(\kappa,\tau)={}&
+\kappa^4-4\kappa^3\tau+18\kappa^3
++8\kappa^2\tau^2-36\kappa^2\tau+123\kappa^2\\
+&-8\kappa\tau^3+24\kappa\tau^2-72\kappa\tau+376\kappa
++8\tau^4+24\tau^3-24\tau^2+72\tau+432.
+\end{aligned}
+\]
+
+Indeed, `disc(H'')=432 Delta_cusp`.  The decorated-normalization theorem
+removes additional proper incidence divisors for cusp-image collisions and
+nonordinary bitangencies.  Their complement is already known to be a nonempty
+open.  Intersecting it with
+
+\[
+ \tau(\kappa+1)(\kappa+2)\Delta_{\rm cusp}\ne0
+\]
+
+is therefore a nonempty two-dimensional open on which the maps have degree
+five, the rank-two completion is defined, and the stable invariant is
+generically finite.  No resolution of the chart divisor `kappa=-1` is needed
+for the two-dimensional theorem.
 
 ## 4. Degree-by-degree computation
 

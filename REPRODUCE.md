@@ -77,6 +77,18 @@ unique parameter-dependent shear cancels them, and verifies the normalized
 base brackets and polynomial source automorphism.  It normally takes roughly
 half a minute in the pinned symbolic environment.
 
+The full normalized degree-five seed surface is checked by
+
+```bash
+.venv/bin/python scripts/verify_degree_five_flux_surface.py
+```
+
+This exact two-parameter calculation works over `Q(a,tau,s_2)`, verifies the
+uniform adapted coordinate and quotient brackets, extracts the complete four
+term Laurent obstruction, and proves that its unique quadratic shear makes
+the Hamiltonian polynomial.  It takes several minutes in the pinned symbolic
+environment.
+
 The separately authored Lean certificate is optional because it downloads a
 pinned toolchain:
 
@@ -141,10 +153,25 @@ It then removes the two-dimensional constant Jacobian kernel, constructs the
 22-variable quotient, and independently replays `BK=0`, `BC=I`, `H=HCB`,
 cubic homogeneity, the descended collision, and the triangular determinant
 factorization using only the standard library.
+Finally, the essential-dimension search freezes a different 17-dimensional
+trace of cubic-output rank six, homogenizes it in 24 variables, removes its
+three-dimensional constant kernel, and independently replays the resulting
+21-variable collision from the original map using only the standard library.
+A final generator uses the first collision-coordinate values `0,1,-1` to fix
+the multiplier `z_0`, expands the direct 60-term Special Image witness, and
+expands the associated 42-variable Laplacian/Hessian-nilpotent quartic:
+
+```bash
+.venv/bin/python scripts/generate_image_vanishing_counterexamples.py
+```
+
+The all-order nonvanishing proof is written in
+[`IMAGE_VANISHING_COUNTEREXAMPLES.md`](extended-geometry/IMAGE_VANISHING_COUNTEREXAMPLES.md);
+the generator checks the finite artifact and change-of-variable identities.
 A local proof of the
 fixed-dimensional DVEZ/Zhao implication, including Gaussian contraction, the
 countable-union step, and formal inversion, completes the nonexplicit route to
-`not GMC(44)`; `not GMC(158)` remains the exact conservative Long-route bound.
+`not GMC(42)`; `not GMC(158)` remains the exact conservative Long-route bound.
 It also verifies the uniform weighted-seed Gaussian bridge:
 first the standalone Gaussian--Lagrange identity for a nonlinear polynomial
 map with nonzero constant terms, then the exact pencil branch, polynomial
@@ -178,9 +205,14 @@ and optimized
 together with the
 [`24-variable rank-compressed artifact`](artifacts/generated-results/rank_compressed_bcw_24_counterexample.json)
 and final
-[`22-variable constant-kernel quotient`](artifacts/generated-results/constant_kernel_bcw_22_counterexample.json).
+[`22-variable constant-kernel quotient`](artifacts/generated-results/constant_kernel_bcw_22_counterexample.json),
+together with the new
+[`21-variable essential quotient`](artifacts/generated-results/essential_bcw_21_counterexample.json)
+and its
+[`21/42-dimensional Image and Vanishing witnesses`](artifacts/generated-results/image_vanishing_counterexamples_21_42.json).
 They record the sparse cubic maps, every reduction-step choice, and the three
-exact collision points; regeneration is deterministic.
+exact collision points, together with the expanded contraction and quartic
+polynomials; regeneration is deterministic.
 
 ## Complete active suite
 

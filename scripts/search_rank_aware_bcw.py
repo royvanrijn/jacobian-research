@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
-"""Search shared-factor BCW traces for smaller ``s + rank(C)``.
+"""Search shared-factor BCW traces for smaller essential dimension.
 
 The certified trace uses s=13 exposed variables and has cubic-output rank
-k=7.  This deterministic beam search optimizes their sum, whose completed
-trace homogenizes in ``4+s+k`` variables.  It emits a JSON plan only when it
-strictly improves the incumbent; the emitted plan must still be frozen into a
-generator and independently replayed before changing any theorem statement.
+k=7.  The beam uses ``s+rank(C)`` as a cheap partial-state heuristic, but every
+completed trace is rank-compressed, homogenized, and constant-kernel
+quotiented before comparison.  It emits a JSON plan only when the final
+essential dimension strictly improves the incumbent; the emitted plan must
+still be frozen into a generator and independently replayed before changing
+any theorem statement.
 """
 
 from __future__ import annotations
@@ -18,7 +20,13 @@ from typing import Iterable
 
 import sympy as sp
 
-from rank_compressed_bcw_homogenization import homogeneous_part
+from rank_compressed_bcw_homogenization import (
+    constant_kernel_quotient,
+    extract_quadratic_cubic,
+    factor_cubic_output,
+    homogeneous_part,
+    rank_compressed_homogeneous_map,
+)
 from verify_shared_bcw_33_route import apply_shared_step, candidate_splits, high_terms
 
 
@@ -135,7 +143,19 @@ def transitions(state: State) -> Iterable[State]:
             yield State(expressions, variables, registry, introduced, state.plan + (step,))
 
 
-def plan_json(state: State, rank: int) -> dict[str, object]:
+def essential_dimension(state: State) -> tuple[int, int]:
+    quadratic, cubic = extract_quadratic_cubic(state.expressions, state.variables)
+    factorization = factor_cubic_output(cubic)
+    variables, homogeneous = rank_compressed_homogeneous_map(
+        state.variables, quadratic, factorization
+    )
+    quotient = constant_kernel_quotient(variables, homogeneous)
+    return len(quotient.quotient_variables), quotient.kernel.cols
+
+
+def plan_json(
+    state: State, rank: int, final_dimension: int, kernel_dimension: int
+) -> dict[str, object]:
     return {
         "format": "rank-aware-bcw-search-candidate-v1",
         "certification_status": "search candidate; requires generator and independent replay",
@@ -143,6 +163,8 @@ def plan_json(state: State, rank: int) -> dict[str, object]:
         "cubic_output_rank": rank,
         "objective_s_plus_rank": state.introduced + rank,
         "homogeneous_dimension": 4 + state.introduced + rank,
+        "constant_kernel_dimension": kernel_dimension,
+        "final_essential_dimension": final_dimension,
         "plan": [
             {
                 "component": component,
@@ -183,7 +205,9 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--width", type=int, default=128)
     parser.add_argument("--max-steps", type=int, default=24)
-    parser.add_argument("--incumbent", type=int, default=20, help="certified s+rank(C)")
+    parser.add_argument(
+        "--incumbent", type=int, default=21, help="certified final essential dimension"
+    )
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
     parser.add_argument(
         "--score-mode",
@@ -217,10 +241,6 @@ def main() -> None:
                 if signature[0] <= 3:
                     completed.append(candidate)
                     continue
-                # Since s never decreases and rank is nonnegative, this state
-                # cannot strictly improve an incumbent once s reaches it.
-                if candidate.introduced >= best_objective:
-                    continue
                 key = state_key(candidate)
                 previous = deduplicated.get(key)
                 if previous is None or candidate.plan < previous.plan:
@@ -228,7 +248,7 @@ def main() -> None:
 
         for candidate in completed:
             rank = cubic_rank(candidate)
-            objective = candidate.introduced + rank
+            objective, _ = essential_dimension(candidate)
             if objective < best_objective or (
                 objective == best_objective
                 and (best_complete is None or candidate.plan < best_complete.plan)
@@ -254,25 +274,34 @@ def main() -> None:
                 f"kept={len(frontier)} lead_high={lead_signature} "
                 f"lead_s={lead.introduced} lead_rank={lead_rank} "
                 f"lead_s_plus_rank={lead.introduced + lead_rank} "
-                f"best_complete={best_objective}",
+                f"best_essential_dimension={best_objective}",
                 flush=True,
             )
         else:
             print(
                 f"depth={depth} generated={generated} unique={len(deduplicated)} "
-                f"kept=0 best_complete={best_objective}",
+                f"kept=0 best_essential_dimension={best_objective}",
                 flush=True,
             )
             break
 
     if best_complete is not None and best_objective < args.incumbent:
         rank = cubic_rank(best_complete)
-        args.output.write_text(json.dumps(plan_json(best_complete, rank), indent=2) + "\n")
-        print(f"IMPROVEMENT s+rank={best_objective}; wrote {args.output.relative_to(ROOT)}")
+        final_dimension, kernel_dimension = essential_dimension(best_complete)
+        args.output.write_text(
+            json.dumps(
+                plan_json(best_complete, rank, final_dimension, kernel_dimension), indent=2
+            )
+            + "\n"
+        )
+        print(
+            f"IMPROVEMENT essential_dimension={best_objective}; "
+            f"wrote {args.output.relative_to(ROOT)}"
+        )
     else:
         print(
             f"NO IMPROVEMENT within width={args.width}, max_steps={args.max_steps}; "
-            f"certified incumbent remains s+rank={args.incumbent}"
+            f"certified incumbent remains essential_dimension={args.incumbent}"
         )
     if args.check_two_parameter:
         print(
@@ -281,8 +310,11 @@ def main() -> None:
         )
         if two_parameter_candidate is not None:
             rank = cubic_rank(two_parameter_candidate)
+            final_dimension, kernel_dimension = essential_dimension(two_parameter_candidate)
             candidate_output = args.output.with_name("two_parameter_bcw_candidate.json")
-            payload = plan_json(two_parameter_candidate, rank)
+            payload = plan_json(
+                two_parameter_candidate, rank, final_dimension, kernel_dimension
+            )
             payload["two_parameter_sample_status"] = "passed 8 exact necessary tests; proof required"
             candidate_output.write_text(json.dumps(payload, indent=2) + "\n")
             print(

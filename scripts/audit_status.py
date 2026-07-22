@@ -31,6 +31,7 @@ expected = [
     "Degree-five rank-two symplectic moduli",
     "Rank-two Poisson / `DC(4)` construction and announcement audit",
     "Long's GMC, `(xz)`, and `SU(2)` counterexamples",
+    "Direct Image and Vanishing counterexamples",
     "Weighted-seed Gaussian bridge",
     "Weighted invariant reduction and foundational coefficient scheme",
     "Cubic marked-root realization",

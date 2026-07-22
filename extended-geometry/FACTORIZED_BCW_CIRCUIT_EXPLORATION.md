@@ -1,4 +1,4 @@
-# Factorized BCW circuit exploration and the 22-variable quotient
+# Factorized BCW circuit exploration and essential quotients
 
 ## Result
 
@@ -7,12 +7,15 @@ but its first exact stable lift does not by itself beat the monomial trace.
 More importantly, the requested structural audit finds a two-dimensional
 constant Jacobian kernel in the existing 24-variable homogeneous map.  The
 map therefore descends to an exact 22-variable cubic-homogeneous Keller
-collision.  The current route bound improves from
+collision.  A subsequent essential-dimension search finds a different
+17-dimensional trace whose rank-compressed 24-dimensional homogenization has
+a three-dimensional constant kernel.  Its exact 21-dimensional quotient
+improves the route bound from
 
 \[
-  \neg\operatorname{GMC}(48)
+  \neg\operatorname{GMC}(44)
   \quad\hbox{to}\quad
-  \boxed{\neg\operatorname{GMC}(44)}.
+  \boxed{\neg\operatorname{GMC}(42)}.
 \]
 
 The generator is
@@ -205,16 +208,31 @@ coefficient matrices.  See
 
 ## 4. Search consequence
 
-The certified baseline for future circuit search is now 22, not 24.  A new
-degree-reduced candidate `K=X+Q+C` should be scored twice:
+The certified baseline for future circuit search is now 21, not 22.  Every new
+degree-reduced candidate `K=X+Q+C` is scored by the mandatory pipeline in the
+[constant-kernel quotient theorem](../verified/CONSTANT_KERNEL_QUOTIENT.md):
 
 1. form the rank-compressed homogenization of dimension `n+rank(C)+1`;
 2. quotient the constant kernel of its homogeneous `JH` to a fixed point;
+3. verify separation of the projected collision and compute invariant-row
+   module diagnostics;
+4. compare the final quotient dimension.
 
-and compare the final quotient dimension.  Constant-kernel removal can change
+Constant-kernel removal can change
 the winner even when two traces have the same `s+rank(C)`.
 
 For the present witness, further gains must therefore occur before or beyond
 linear quotienting: a better circuit-level stable trace, a trace satisfying
 the two-parameter quadratic--cubic determinant identity and hence avoiding
 rank-compressed doubling, or a genuinely nonlinear triangular decomposition.
+
+The first automatic essential-dimension experiment found a
+17-dimensional quadratic--cubic
+trace, cubic-output rank six, 24-dimensional homogenization, a
+three-dimensional constant kernel, and final quotient dimension 21.  See the
+[verified theorem and experiment note](../verified/CONSTANT_KERNEL_QUOTIENT.md).
+The frozen generator and dependency-free replay now certify `not GMC(42)`.
+The exact invariant-row-module audit also proves that the only proper module
+is the homogenizing covector, which is constant on the collision, so this new
+map has no further collision-preserving linear quotient.
+No minimality claim is made.

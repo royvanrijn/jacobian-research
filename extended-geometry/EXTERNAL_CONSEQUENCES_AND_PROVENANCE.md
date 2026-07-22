@@ -24,8 +24,8 @@ flowchart TD
     U["Universal conjectures known to imply JC cannot all remain true"]
     B["Long route reproduced: cubic-homogeneous Keller map in 79 variables"]
     R["not GMC(158)"]
-    BO["Repository optimization and constant-kernel quotient: 22 variables"]
-    RO["not GMC(44)"]
+    BO["Repository essential-dimension optimization: 21 variables"]
+    RO["not GMC(42)"]
     M["Motivation for Long's searches"]
     GP["Long's direct three-Gaussian polynomials"]
     G["not GMC(n) for every n at least 3"]
@@ -76,8 +76,10 @@ three different provenance levels separate.
    A later repository common-factor optimization reaches dimension 16.  Exact
    rank compression of its cubic output then homogenizes in 24 variables;
    quotienting the two-dimensional constant Jacobian kernel gives a
-   22-variable cubic-homogeneous collision and improves this local route bound
-   to `not GMC(44)`.  That improvement is
+   22-variable cubic-homogeneous collision.  A later 17-dimensional trace of
+   cubic-output rank six homogenizes in 24 variables and has a
+   three-dimensional constant-kernel quotient in 21 variables, improving this
+   local route bound to `not GMC(42)`.  That improvement is
    not attributed to Long.
 3. Long's direct three-variable pair independently gives the strictly stronger
    failure of `GMC(n)` for every `n >= 3`.  The paper states that no coordinate,
@@ -299,8 +301,9 @@ outputs are reused across elementary target shears, including five
 zero-stabilization cancellations.  The exact trace introduces 13 rather than
 36 variables, reaches degree three in dimension 16, and homogenizes to a
 24-variable cubic map.  Its exact constant-kernel quotient gives a
-22-variable cubic map.  The sparse artifacts and dependency-free replays certify
-the improved nonexplicit consequence `not GMC(44)`.  No minimality is claimed,
+22-variable cubic map.  A different 17-dimensional trace gives a
+21-variable essential quotient.  The sparse artifacts and dependency-free
+replays certify the improved nonexplicit consequence `not GMC(42)`.  No minimality is claimed,
 and Long's 79-variable route remains the provenance-faithful reproduction of
 the paper.
 
@@ -381,7 +384,7 @@ JC(3) has generated two distinct bodies of work:
 - **external consequences:** Long's direct GMC, `(xz)`, and `SU(2)`
   counterexamples and his tracked GMC(158) route, together with the
   repository's later shared-factor, rank-compressed, and constant-kernel
-  improvement of that route to GMC(44).
+  improvement of that route to GMC(42).
 
 The existence of explicit consequence-level counterexamples supports studying
 the JC(3) map as a generator of new mathematics.  It does not make every

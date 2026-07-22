@@ -274,7 +274,7 @@ distinctions matter:
 | Quartic Islands A/B/C | Juntang Zhuang's pinned compilation and exact collision checkers | Independent compact reconstruction showing one canonical and two split weighted seeds, complete boundary signatures, and exclusion from the cancellation normal forms |
 | Formal verification of the foundational map | Dean Cureton’s Lean project | Pinned attribution, scope audit, and an optional upstream build target |
 | Immediate consequences and source trail | Zihan Zhang’s audit | A separate proof architecture focused on inverse geometry, normalization, and stable equivalence |
-| GMC, `(xz)`, and `SU(2)` counterexamples | Christopher D. Long's two arXiv papers | Exact local Gaussian and beta/binomial checks, a complete `SU(2)=S^3` Haar proof, all 18 steps of Long's conservative 79-variable route, a repository shared-factor reduction to dimension 16, rank-compressed homogenization to 24 variables, and its constant-kernel quotient to 22 variables and `not GMC(44)`; every sparse artifact has an independent replay, with no claim that the direct witnesses derive from our map |
+| GMC, `(xz)`, and `SU(2)` counterexamples | Christopher D. Long's two arXiv papers | Exact local Gaussian and beta/binomial checks, a complete `SU(2)=S^3` Haar proof, all 18 steps of Long's conservative 79-variable route, and a repository 17-dimensional quadratic--cubic trace whose rank-compressed 24-variable homogenization has a 21-variable essential quotient and gives `not GMC(42)`; every sparse artifact has an independent replay, with no claim that the direct witnesses derive from our map |
 | Weighted-seed/Gaussian bridge | Long's Lagrange--Good search architecture and Good's inversion theorem | A repository-derived polynomial determinant correction turning every nonconstant normalized seed into an explicit four-real-Gaussian witness family; the exact mixed moments recover `1+lambda*H`, making the moment realization injective; supported by a standalone constant-term-safe formal Gaussian--Lagrange proof, locally checked and not externally reviewed |
 | Cancellation maps and canonical boundary invariants | No earlier source has been identified in the present audit | The finite cancellation operator, all-parameter reconstruction and collision, boundary-exhaustion theorem, thick intersections, and rigidity results |
 | Degreewise weighted stable moduli | No earlier source has been identified in the present audit | A generically finite decorated-normalization invariant with image dimension `N-3`, on an explicitly proved nonempty ordinary boundary-clean open for every generic degree `N>=4` |
@@ -317,6 +317,15 @@ map: `C=x gamma` supplies the complementary boundary factors and leaves the
 constant Jacobian `b_0c`.  The determinant, inverse pencil, reconstruction
 poles, discriminant normalization, and Hessian divisor are unified in the
 [tangent-map core theorem](verified/TANGENT_MAP_CORE.md).
+
+For cubicization, the
+[constant-kernel quotient theorem](verified/CONSTANT_KERNEL_QUOTIENT.md)
+identifies every constant translation-invariance direction of the homogeneous
+part, conjugates the map to a triangular extension of its essential-input
+quotient, and preserves the full fiber scheme.  The theorem is GZ-type in its
+use of quotient/section matrices, and its search protocol now scores completed
+BCW traces only after rank compression, homogenization, and constant-kernel
+quotienting.
 
 After the triangular change `s=H'(W)+c gamma`, the core is simply
 
@@ -447,13 +456,25 @@ fixed-dimensional implication to `not GMC(158)`.  The proof architecture and
 authorship remain credited to BCW, DVEZ, and Zhao.  A separate repository
 optimization reuses exposed factors, reduces the route to dimension 16, and
 then rank-compresses the cubic output before homogenizing to 24 variables.
-Quotienting its two-dimensional constant Jacobian kernel gives a
-22-dimensional cubic-homogeneous Keller collision.  The JC-derived,
-nonconstructive-at-the-Gaussian-step route now gives `not GMC(44)`; it is a
+An improved 17-dimensional trace has cubic-output rank six; its 24-variable
+homogenization has a three-dimensional constant Jacobian kernel, giving a
+21-dimensional cubic-homogeneous Keller collision.  The JC-derived,
+nonconstructive-at-the-Gaussian-step route now gives `not GMC(42)`; it is a
 certified upper bound, not a minimality claim or a result attributed to Long.  Long's
 much smaller direct witnesses were motivated by the JC(3) announcement but
 were not algebraically extracted from that map.  His papers do not review the
 repository's Hessian/Fitting-divisor or stable-moduli proofs.
+
+The same 21-variable cubic collision is also a direct counterexample
+generator.  Its first collision coordinate is `0,1,-1`, which proves that the
+first formal inverse coordinate has infinitely many nonzero homogeneous
+pieces.  This names an explicit `SIC(21)` witness and, after contraction and a
+complex orthogonal change of variables, an explicit 42-variable quartic that
+simultaneously defeats the generalized Laplacian Vanishing Conjecture and the
+classical Hessian-nilpotent quartic Vanishing Conjecture.  The formulas,
+all-order arguments, expanded 876-term quartic, and the remaining
+nonhomogeneous 20-variable optimization question are in the
+[Image and Vanishing counterexample note](extended-geometry/IMAGE_VANISHING_COUNTEREXAMPLES.md).
 
 There is now a separate internal bridge from the weighted inverse pencil to
 Gaussian moments.  For every nonconstant normalized seed, a polynomial
@@ -484,21 +505,23 @@ does not claim that its independently derived formulas are the manuscript's
 formulas or that the abstract reviews this work.  See the
 [rank-two construction and audit](extended-geometry/QUADRATIC_LADDER_AND_POISSON_AUDIT.md).
 
-The same flux method now applies uniformly to the explicit degree-five
-stable-moduli line.  Its fixed third component uses
-`gamma=1-(8/7)xy+x^2z`; after a common adapted-coordinate change, cancellation
-of the complete negative-`X` principal part uniquely forces a rational
-parameter-dependent shear.  The resulting maps
+The same flux method now applies to the full normalized degree-five seed
+surface.  In coordinates `(kappa,tau)`, a seed-dependent adapted change fixes
+the common quotient coordinate `R=2X-3X^2Q`; cancellation of the complete
+negative-`X` principal part uniquely forces an explicit rational quadratic
+shear.  The resulting maps
 
 \[
-G_\lambda:\mathbb A^4\longrightarrow\mathbb A^4
+G_{\kappa,\tau}:\mathbb A^4\longrightarrow\mathbb A^4
 \]
 
-are exact symplectic, polynomially left--right equivalent to
-`F_lambda x id_(A^1)`, and contain uncountably many stable classes of generic
-degree five.  This descends the explicit moduli line from three canonical
-pairs to two.  See the
-[degree-five rank-two descent](extended-geometry/DEGREE_FIVE_RANK_TWO_DESCENT.md).
+are exact symplectic and polynomially left--right equivalent to the weighted
+maps times `id_(A^1)`.  On the ordinary boundary-clean open this descends the
+full two-dimensional stable moduli from three canonical pairs to two.  The
+former fixed-third-component family is the `kappa=-9` slice.  See the
+[original slice theorem](extended-geometry/DEGREE_FIVE_RANK_TWO_DESCENT.md)
+and the
+[full surface theorem](extended-geometry/ALL_DEGREE_RANK_TWO_DESCENT_PROGRAM.md).
 
 ## What is genuinely new here?
 
@@ -539,6 +562,7 @@ The stable-core reading path is:
 2. [Cubic marked-root model](verified/MARKED_ROOT_MODEL.md)
 3. [Exact image and nonproperness](verified/IMAGE_AND_NONPROPERNESS.md)
 4. [Weighted marked-root theorem](verified/WEIGHTED_SEED_THEOREM.md)
+5. [Constant-kernel quotients and essential cubic input](verified/CONSTANT_KERNEL_QUOTIENT.md)
 
 Further families continue in one sequence:
 [cancellation construction](cancellation/CONSTRUCTION.md),

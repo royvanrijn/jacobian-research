@@ -68,7 +68,7 @@ left--right equivalence implies
 
 Thus every stable class meets the parameter line in at most six points.
 
-## 1A. Rank-two descent of the explicit line
+## 1A. Rank-two descent in degree five
 
 The third output of this family is fixed:
 
@@ -96,9 +96,21 @@ all six canonical brackets and an exact factorization
 \]
 
 Consequently there are uncountably many pairwise stably inequivalent exact
-symplectic maps of `A^4` of generic degree five.  This is stronger in
-dimension than the cotangent result below, but currently applies only to the
-explicit degree-five parameter line.
+symplectic maps of `A^4` of generic degree five.
+
+The later [degree-five surface theorem](ALL_DEGREE_RANK_TWO_DESCENT_PROGRAM.md)
+uses normalized coordinates `(kappa,tau)` on the entire seed surface.  On
+`kappa != -2,-1`, it proves that the unique quadratic shear
+
+\[
+ Z\longmapsto Z+K(\kappa,\tau)Q^2
+\]
+
+cancels all four Laurent residues.  Hence every admissible degree-five map on
+this chart has a four-dimensional exact symplectic completion.  Intersecting
+with the ordinary boundary-clean open of the decorated-normalization theorem
+transfers the full two-dimensional stable moduli to `A^4`.  The line above is
+the specialization `kappa=-9`.
 
 ## 2. Exact cotangent lifts
 
@@ -294,8 +306,9 @@ in dimension six}.
 
 This holds for every `N>=4` and is stronger than transferring only the earlier
 divisor-count lower bound `tau(N-1)`.  The latter remains useful for separating
-the weighted construction from multiple cancellation types.  The explicit
-degree-five theorem additionally gives a concrete parameter line with a
+the weighted construction from multiple cancellation types.  The degree-five
+surface theorem additionally transfers the full two-dimensional seed moduli
+to dimension four; its explicit `kappa=-9` line retains the concrete
 six-element orbit bound.
 
 ## 6. Reproduction and dependencies
@@ -305,13 +318,17 @@ independent exact checks are:
 
 ```bash
 .venv/bin/python scripts/verify_degree_five_stable_moduli.py
+.venv/bin/python scripts/verify_degree_five_flux_surface.py
 .venv/bin/python scripts/verify_symplectic_weyl_lift.py
 ```
 
-The first checks the degree-five seed, Keller map, boundary exclusions,
-discriminant saturation and orbit invariant.  The second checks the inverse
-Jacobian, Weyl commutators, canonical one-form identity, six-variable
-Jacobian and symbolic-momentum collision for the foundational map.
+The first checks the explicit degree-five seed, Keller map, boundary
+exclusions, discriminant saturation and orbit invariant.  The surface checker
+verifies the uniform adapted coordinate, quotient brackets, localized
+Hamiltonian, complete Laurent obstruction and unique shear.  The last checks
+the inverse Jacobian, Weyl commutators, canonical one-form identity,
+six-variable Jacobian and symbolic-momentum collision for the foundational
+map.
 
 The load-bearing non-computational input is the stable Hessian-root invariant
 proved in `DEGREE_FIVE_STABLE_MODULI.md`.  No external specialist review of

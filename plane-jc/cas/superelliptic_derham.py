@@ -60,6 +60,21 @@ class QuotientDifferentialResult:
         return self.differential == 0
 
 
+@dataclass(frozen=True)
+class GaussManinConnection:
+    """Connection matrices in a deterministic compact de Rham basis.
+
+    The matrix for a parameter ``u`` stores the coordinates of
+    ``nabla_{d/du}(basis[j])`` in column ``j``.  Thus, if the basis is written
+    as a row vector ``e``, then ``nabla_{d/du}(e) = e * matrix``.
+    """
+
+    character: int
+    parameters: tuple[sp.Symbol, ...]
+    basis: tuple[sp.Expr, ...]
+    matrices: tuple[sp.Matrix, ...]
+
+
 class SuperellipticDeRham:
     """Hermite reduction on the smooth model of ``y**a = A(t)``.
 
@@ -234,6 +249,61 @@ class SuperellipticDeRham:
         """Reduce the differential attached to a*A*D' - b*A'D = R."""
 
         return self.reduce(sp.Rational(1, self.a) * R, self.a + int(b))
+
+    def gauss_manin_connection(
+        self, parameters: Iterable[sp.Symbol], character: int
+    ) -> GaussManinConnection:
+        """Compute the character-wise Gauss--Manin connection exactly.
+
+        For ``e=[p(t,u) dt/y**r]`` and ``y**a=A(t,u)``, differentiation in a
+        parameter ``u`` gives
+
+            nabla_u(e) = [
+                (A*p_u - (r/a)*p*A_u) dt / y**(a+r)
+            ].
+
+        The existing Hermite reducer puts this class back into the compact
+        character basis.  The method is intended for smooth parameter charts;
+        denominators in the returned matrices record the discriminant and
+        chart boundary that must be localized away from.
+        """
+
+        r = int(character) % self.a
+        if r == 0:
+            raise ValueError("the invariant character has no superelliptic connection")
+        params = tuple(parameters)
+        if any(not isinstance(parameter, sp.Symbol) for parameter in params):
+            raise TypeError("Gauss--Manin parameters must be SymPy symbols")
+        basis = self.compact_basis(r)
+        matrices: list[sp.Matrix] = []
+        Aexpr = self.A.as_expr()
+        for parameter in params:
+            columns: list[sp.Matrix] = []
+            for numerator in basis:
+                differentiated = sp.expand(
+                    Aexpr * sp.diff(numerator, parameter)
+                    - sp.Rational(r, self.a)
+                    * numerator
+                    * sp.diff(Aexpr, parameter)
+                )
+                reduced = self.reduce(differentiated, self.a + r)
+                if not isinstance(reduced, ReductionResult):
+                    raise ArithmeticError("nontrivial character descended unexpectedly")
+                if reduced.compact_coordinates is None:
+                    raise ArithmeticError(
+                        "Gauss--Manin differentiation produced a logarithmic residue"
+                    )
+                columns.append(
+                    sp.Matrix([sp.cancel(value) for value in reduced.compact_coordinates])
+                )
+            matrix = sp.Matrix.hstack(*columns) if columns else sp.zeros(0, 0)
+            matrices.append(matrix.applyfunc(sp.cancel))
+        return GaussManinConnection(
+            character=r,
+            parameters=params,
+            basis=basis,
+            matrices=tuple(matrices),
+        )
 
 
 def weighted_wronskian_compatibility(

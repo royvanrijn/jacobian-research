@@ -20,11 +20,28 @@ trivial would finish distinct-root left--right equivalence.
 
 ## 2. Complete the arithmetic
 
-Prove or disprove irreducibility of `M_{m,r}` for all `m,r`, and classify its
-natural Galois group in all degrees.  The complete range `mr<=30`, the full
-`m=1` column, and three uniform irreducibility criteria are recorded in
-[ARITHMETIC.md](ARITHMETIC.md), but they do not yet imply an all-parameter
-theorem.
+In standard truncated-binomial notation
+
+\[
+ P_{N,k}(x)=\sum_{j=0}^k\binom Njx^j,
+\]
+
+prove the divisibility-diagonal case
+
+\[
+ P_{N,k}\text{ irreducible whenever }
+ 1\le k\le N-2\quad\text{and}\quad N-k-1\mid k.
+\]
+
+Equivalently, prove irreducibility of
+`P_((m+1)r+1,mr)`, hence of its reciprocal transform `M_(m,r)`, for all
+`m,r>=1`.  This is a structured subfamily of the standard open conjecture for
+interior truncated binomial polynomials.  Classify the natural Galois group
+on the same diagonal; the discriminant has an infinite square locus, so the
+expected large groups must allow both alternating and symmetric cases.  The
+complete range `mr<=30`, the full `m=1` column, and three additional uniform
+irreducibility criteria are recorded in [ARITHMETIC.md](ARITHMETIC.md), but
+they do not yet imply an all-parameter theorem.
 
 Determine also the minimal field over which the full symbolic collision is
 defined, rather than only the evident compositum of the parameter field and

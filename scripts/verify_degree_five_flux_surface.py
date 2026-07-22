@@ -35,6 +35,7 @@ q = sp.expand(w * p - H)
 assert sp.factor(H.subs(w, 1)) == 0
 assert sp.factor(p.subs(w, 1) + 1) == 0
 assert sp.factor(sp.diff(H, w, 2).subs(w, 1) - kappa) == 0
+assert sp.factor(sp.Poly(H, w).LC() - tau) == 0
 
 # Uniform adapted source coordinates.  Directly using the invariants avoids
 # expanding the source map before its polynomiality cancellations.
@@ -119,6 +120,7 @@ h_vrho = sp.integrate(residual_vrho / 3, inv_x)
 h = sp.cancel(
     h_vrho.subs({inv_x: 1 / X, rho: 2 * X - 3 * X**2 * Q})
 )
+assert sp.cancel(residual[2] - quotient_hamiltonian(h)[2]) == 0
 f_generic = sp.cancel(f_zero + h)
 
 # Extract the complete principal part.  All four coefficients have one scalar
@@ -174,6 +176,29 @@ candidate_kappa = sp.factor(
     / (28 * (kappa_symbol + 2))
 )
 assert sp.factor(candidate_kappa.subs(kappa_symbol, kappa) - candidate_a) == 0
+assert sp.factor(candidate_kappa.subs(kappa_symbol, -1) - sp.Rational(45, 4)) == 0
+
+delta_cusp = (
+    kappa_symbol**4
+    - 4 * kappa_symbol**3 * tau
+    + 18 * kappa_symbol**3
+    + 8 * kappa_symbol**2 * tau**2
+    - 36 * kappa_symbol**2 * tau
+    + 123 * kappa_symbol**2
+    - 8 * kappa_symbol * tau**3
+    + 24 * kappa_symbol * tau**2
+    - 72 * kappa_symbol * tau
+    + 376 * kappa_symbol
+    + 8 * tau**4
+    + 24 * tau**3
+    - 24 * tau**2
+    + 72 * tau
+    + 432
+)
+H_kappa = H.subs(a, -(1 + kappa_symbol) / (2 + kappa_symbol))
+assert sp.factor(
+    sp.discriminant(sp.diff(H_kappa, w, 2), w) - 432 * delta_cusp
+) == 0
 
 # The four low coefficients are the complete obstruction to polynomiality.
 assert all(sp.factor(coefficient.subs(s2, candidate_a)) == 0 for coefficient in expected)
@@ -201,3 +226,4 @@ print("PASS: one adapted coordinate R works for every a != 0,-1")
 print("PASS: the complete Laurent principal part has one scalar obstruction")
 print("PASS: the unique quadratic shear cancels it on the entire surface chart")
 print("PASS: the published kappa=-9 formula is its fixed-gamma specialization")
+print("PASS: identified degree-drop, chart, admissibility, and cusp divisors")

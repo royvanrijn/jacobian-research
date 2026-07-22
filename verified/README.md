@@ -19,6 +19,10 @@ This directory contains the stable proof chain:
   diagram unifying the determinant, inverse pencil, discriminant normalization,
   reconstruction poles, and Hessian Fitting divisor, together with the
   distinct controlled-boundary core of the cancellation maps.
+- [Constant-kernel quotient](CONSTANT_KERNEL_QUOTIENT.md): the general
+  triangular-extension and fiber-scheme theorem, its GZ-type context, the
+  verified 24-to-22 quotient, and the mandatory essential-dimension search
+  protocol.
 
 The external Lean certificate for the foundational map remains in
 [LEAN_FOUNDATIONAL_MAP.md](LEAN_FOUNDATIONAL_MAP.md).
@@ -30,4 +34,4 @@ Start with [FOUNDATIONAL_GEOMETRY.md](FOUNDATIONAL_GEOMETRY.md). The paper
 version is being assembled under
 [papers/core-counterexample](../papers/core-counterexample/main.tex).
 
-These eight documents are the primary core references.
+These nine documents are the primary core references.

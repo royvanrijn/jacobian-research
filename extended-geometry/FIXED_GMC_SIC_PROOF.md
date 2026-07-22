@@ -2,7 +2,8 @@
 
 This note proves the precise implication needed by the reproduced 79-variable
 cubic-homogeneous map and the repository-derived 33-variable baseline,
-24-variable rank-compressed map, and 22-variable constant-kernel quotient:
+24-variable rank-compressed maps, the 22-variable constant-kernel quotient,
+and the final 21-variable essential quotient:
 
 \[
  \mathrm{GMC}(2r)
@@ -15,7 +16,7 @@ cubic-homogeneous map and the repository-derived 33-variable baseline,
 The proof follows the architecture of Derksen--van den Essen--Zhao and Zhao,
 but all steps needed for one fixed `r` are written here, including the
 countable-union lemma and the formal inversion identity.  Applying the
-contrapositive at `r=22` makes the improved route to `not GMC(44)` locally
+contrapositive at `r=21` makes the improved route to `not GMC(42)` locally
 self-contained.  It remains nonconstructive at the Gaussian-witness step.
 
 ## 1. Two contraction maps
@@ -312,25 +313,25 @@ Therefore every `G_i` is a polynomial.  The formal inverse of `F` is a
 polynomial inverse, so `F` is invertible.  This proves the second implication
 in (0.1).
 
-## 6. Application to the constant-kernel 22-variable quotient
+## 6. Application to the essential 21-variable quotient
 
 The [BCW reproduction and shared-factor optimization](LONG_SU2_AND_BCW_REPRODUCTIONS.md)
-constructs, after exact rational rank compression and constant-kernel
-quotienting,
+constructs, after an exact 17-dimensional stable trace, rational rank
+compression, and constant-kernel quotienting,
 
 \[
- V(Z)=Z+\mathcal H(Z),\qquad Z\in\mathbb A^{22},
+ V(Z)=Z+\mathcal H(Z),\qquad Z\in\mathbb A^{21},
 \]
 
 where `mathcal H` is cubic homogeneous, `det DV=1`, and three distinct rational
 points have one common image.  Put `H=-mathcal H`; then `V=Z-H` has exactly the
 form used above and is not invertible.
 
-If `GMC(44)` were true, (3.4) would give `SIC(22)`, and Section 5 would make
+If `GMC(42)` were true, (3.4) would give `SIC(21)`, and Section 5 would make
 `V` invertible, contradicting its explicit collision.  Hence
 
 \[
- \boxed{\neg\mathrm{GMC}(44)}.
+ \boxed{\neg\mathrm{GMC}(42)}.
 \]
 
 This is now a complete local proof of the route-based failure.  It is still
@@ -338,7 +339,7 @@ nonexplicit as a Gaussian counterexample because Proposition 3.2 uses the
 uncountable-field countable-union argument.  Long's direct three-variable
 witness remains a separate and much stronger explicit external result.  The
 79-variable map and `not GMC(158)` remain the exact reproduction of Long's
-conservative route; the improvements to 22 and 44 are repository-derived.
+conservative route; the improvements to 21 and 42 are repository-derived.
 
 ## 7. Reproduction
 
@@ -354,6 +355,8 @@ python3 scripts/audit_shared_bcw_33_independent.py
 python3 scripts/audit_rank_compressed_bcw_24_independent.py
 .venv/bin/python scripts/verify_constant_kernel_bcw_22_route.py
 python3 scripts/audit_constant_kernel_bcw_22_independent.py
+.venv/bin/python scripts/verify_essential_bcw_21_route.py
+python3 scripts/audit_essential_bcw_21_independent.py
 ```
 
 The first checker verifies the exact coefficient identities underlying
@@ -364,8 +367,10 @@ the following pair do the same for the
 [33-variable baseline artifact](../artifacts/generated-results/shared_bcw_33_counterexample.json),
 the next pair generate and replay the
 [24-variable rank-compressed artifact](../artifacts/generated-results/rank_compressed_bcw_24_counterexample.json),
-and the final pair generate and independently replay its
+the following pair generate and independently replay its
 [22-variable constant-kernel quotient](../artifacts/generated-results/constant_kernel_bcw_22_counterexample.json).
+The last pair freeze and independently replay the improved
+[21-variable essential quotient](../artifacts/generated-results/essential_bcw_21_counterexample.json).
 
 Primary provenance remains with
 [Derksen--van den Essen--Zhao](https://arxiv.org/abs/1506.05192) and

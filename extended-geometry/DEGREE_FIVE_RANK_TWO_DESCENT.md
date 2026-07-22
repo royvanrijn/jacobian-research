@@ -260,6 +260,9 @@ brackets, all three relative-Hamiltonian equations, the complete principal
 part, uniqueness of (18), polynomiality, and the source automorphism.
 
 This is an internal repository theorem with no recorded external specialist
-review.  It proves rank-two descent for the explicit degree-five line.  It
-does not yet prove a four-dimensional descent for every weighted seed or for
-the full `(N-3)`-dimensional family in arbitrary degree.
+review.  This certificate proves rank-two descent for the explicit
+degree-five line.  The later
+[degree-five surface theorem](ALL_DEGREE_RANK_TWO_DESCENT_PROGRAM.md) proves
+the two-parameter normalized degree-five extension on
+`kappa != -2,-1`.  Descent for the full `(N-3)`-dimensional family in
+arbitrary degree remains open.
