@@ -163,6 +163,16 @@ singleton is a triangular homogenizing coordinate, not a removable constant
 kernel direction; setting it to one recovers a nonhomogeneous map rather than
 a smaller cubic-homogeneous witness.
 
+There is also no more general collision-preserving **linear** quotient.  The
+66 coefficient matrices of `JH_22` have only three common invariant row
+spaces: zero, the homogenizing covector `span(e_21^T)`, and the full space.
+The middle space is constant on all three collision points.  The exact audit
+proves this by showing that the induced coefficient algebra modulo
+`span(e_21^T)` is the full matrix algebra `M_21(Q)`, while a common invariant
+hyperplane is excluded by the zero common kernel of the 65 nilpotent
+coefficient matrices.  See
+[`audit_bcw_22_linear_quotients.py`](../scripts/audit_bcw_22_linear_quotients.py).
+
 ## 4. Search consequence
 
 The certified baseline for future circuit search is now 22, not 24.  A new
@@ -174,3 +184,7 @@ degree-reduced candidate `K=X+Q+C` should be scored twice:
 and compare the final quotient dimension.  Constant-kernel removal can change
 the winner even when two traces have the same `s+rank(C)`.
 
+For the present witness, further gains must therefore occur before or beyond
+linear quotienting: a better circuit-level stable trace, a trace satisfying
+the two-parameter quadratic--cubic determinant identity and hence avoiding
+rank-compressed doubling, or a genuinely nonlinear triangular decomposition.

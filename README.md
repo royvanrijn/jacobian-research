@@ -251,7 +251,12 @@ its finite-field count is `q^5-q^3`).  The visible determinant-one projection
 does not split it: its identity fiber is `x^2+zy^2=1`, of class `L^2+L`, and
 the associated Euclidean-addition distribution jumps rank along `a_0=0`.
 This rules out the natural product charts, but not an abstract isomorphism
-which mixes all coefficient functions.  The
+which mixes all coefficient functions.  A generic-plane/nodal-complement
+argument now proves that the complex fivefold is simply connected.  The top
+boundary homology of the incidence normalization also gives
+`H^2=0` and `H^3=Q(-2)` without a full normal-crossings resolution.  Thus all
+currently computed topology agrees with `A^2 x SL_2`; only possible
+cancelling cohomology in degrees four and five remains.  The
 [`(2,3)` slice audit](extended-geometry/QUADRATIC_CUBIC_FACTORIZATION_SLICE.md)
 records the calculation and the precise remaining cohomology question.
 

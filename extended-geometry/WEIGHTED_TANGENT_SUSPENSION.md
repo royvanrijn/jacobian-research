@@ -301,6 +301,9 @@ concentrated at the constant-`C` corner.  Its exact primary decomposition has
 two nonreduced primary components; their radicals are explicit affine
 three-spaces of triangular automorphisms, as described in the
 [coefficient-scheme note](FOUNDATIONAL_WEIGHTED_COEFFICIENT_SCHEME.md#the-two-reduced-components-at-the-constant-c-corner).
+The same note also computes the degree-ten toric closure of the open
+diagonal-gauge orbit and its two attachment lines.  Thus the entire reduced
+global coefficient scheme, not only its boundary, is explicit.
 
 ## 6. Precise comparison with the plane `(72,108)` cascade
 

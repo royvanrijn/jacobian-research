@@ -117,4 +117,7 @@ are whether every one-boundary suspension is equivalent to one of these two
 normal forms, and which divisor, monodromy, and reconstruction data obstruct
 such an equivalence.  The precise comparison theorem and determinant ledgers
 are in the
-[tangent-map core note](../verified/TANGENT_MAP_CORE.md).
+[tangent-map core note](../verified/TANGENT_MAP_CORE.md).  A two-sided
+suspension-square formalism, the simple-section plane-core normal form, and
+the first independent two-boundary triangular obstruction are developed in
+[the controlled-boundary suspension note](CONTROLLED_BOUNDARY_SUSPENSIONS.md).

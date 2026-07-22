@@ -269,16 +269,72 @@ univariate weighted-Wronskian layers.  The
 that this cascade generates the same dual-number ideal as (4).  This is the
 preferred calculation on `pq!=0`.
 
-The boundary calculation is now complete at the level of primary components:
+The boundary calculation is complete at the level of primary components:
 the punctured divisors are empty and `I+(C_10,C_01)` has precisely the two
-components above.  The remaining scheme question is global rather than
-boundary-local: a primary decomposition of the full thirteen-variable ideal
-would determine how these two nonreduced boundary components glue to the
-`pq!=0` dual-number chart.  The earlier direct full-ideal Buchberger attempt
-did not terminate in the lightweight SymPy backend.  No claim about that
-global gluing is inferred from the stratumwise calculations.
+components above.  The reduced global gluing can also be recovered without a
+thirteen-variable Gröbner basis.
+
+Write `alpha=-p/3` and `beta=-q`.  The effective diagonal-torus orbit of the
+foundational point is
+
+\[
+\begin{aligned}
+(A_{20},A_{11},A_{30},A_{21},A_{40},A_{31})
+={}&(4\alpha^2/\beta,3\alpha,7\alpha^3/\beta,
+3\alpha^2,3\alpha^4/\beta,\alpha^3),\\
+(B_{01},B_{20},B_{11},B_{30},B_{21})
+={}&(3\beta/\alpha,12\alpha,6\beta,9\alpha^2,
+3\alpha\beta).
+\end{aligned}                                      \tag{13}
+\]
+
+Eliminating `alpha,beta` after inverting their product gives a prime
+degree-ten affine surface `T`.  Since the normalized reduced chart is a
+point, `T` is the closure of the entire reduced `pq!=0` locus.  Its boundary
+at `p=q=0` is the union of the two lines
+
+\[
+\begin{aligned}
+L_A:&\quad A=v+\lambda u^2,\quad B=u,\\
+L_B:&\quad A=v,\quad B=u+\lambda v.
+\end{aligned}                                      \tag{14}
+\]
+
+The first line lies in both reduced boundary components; the second lies in
+the component (10).  In particular,
+
+\[
+ T\cap V(\mathfrak p_1)=L_A,qquad
+ T\cap V(\mathfrak p_2)=L_A\cup L_B.               \tag{15}
+\]
+
+Together with the empty one-sided charts, this proves the reduced global
+decomposition
+
+\[
+ \boxed{V(I)_{\mathrm{red}}=T\cup V(\mathfrak p_1)
+ \cup V(\mathfrak p_2).}                           \tag{16}
+\]
+
+What remains is purely scheme-theoretic: determine the nilpotent gluing of
+the generically doubled toric component to the two nonreduced boundary
+components along (14).  A bounded Singular attempt at the full global
+standard basis still did not terminate; the radical and every reduced
+attachment are nevertheless fixed by (13)--(16).
+
+Exact tangent ranks measure the residual thickness.  The full
+thirteen-variable scheme has tangent dimension `3` at the foundational open
+point, versus reduced dimension `2` for `T`.  At generic points of the
+boundary components (9) and (10), its tangent dimensions are respectively
+`7` and `6`, versus reduced dimension `3`.  They jump to `8` along a generic
+point of their reduced affine-plane intersection, remain `8` on a generic
+point of `L_A`, and are `7` on a generic point of `L_B`.  Thus the missing
+information is substantial nilpotent structure along already known reduced
+strata, not evidence for another reduced component.
 
 The Python certificate is
 [`verify_foundational_weighted_coefficient_scheme.py`](../scripts/verify_foundational_weighted_coefficient_scheme.py).
 The exact primary-component certificate is
 [`verify_foundational_constant_c_boundary.sing`](../scripts/verify_foundational_constant_c_boundary.sing).
+The reduced global gluing certificate is
+[`verify_foundational_reduced_gluing.sing`](../scripts/verify_foundational_reduced_gluing.sing).

@@ -413,9 +413,11 @@ For the natural affine-space question, the lattice stage is now complete:
 
 The remaining research is therefore sharply localized rather than open
 ended.  For `(1,2)`, the tangent-nonosculating hyperplane gives the known
-affine three-space source.  For `(2,3)`, the natural tangent hyperplane fails
-by its motivic class, but other binary-quintic hyperplanes have not been
-classified.  For `(p,p+1)` with `p>=2`, the next questions are:
+affine three-space source.  The complete contact recursion for `(2,3)` shows
+that every binary-quintic hyperplane fails by its Hodge--Deligne polynomial;
+see the
+[consecutive-factor contact reduction](CONSECUTIVE_FACTOR_CONTACT_CLASSIFICATION.md).
+For `(p,p+1)` with `p>=3`, the next questions are:
 
 1. determine which hyperplane pullbacks are prime and stratify their contact
    types, including moduli once the rational-normal-curve contact divisor has

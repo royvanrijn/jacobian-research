@@ -231,9 +231,30 @@ for one_sided_C in (2 - v, 2 - 3 * u):
     assert len(one_sided_ideal.polys) == 1
     assert one_sided_ideal.polys[0].as_expr() == 1
 
+# Tangent dimensions of the full thirteen-variable scheme.  These distinguish
+# the doubled open torus from the thicker boundary and attachment strata.
+scheme_variables = (*coefficient_variables, C10, C01)
+scheme_jacobian = sp.Matrix(keller_equations).jacobian(scheme_variables)
+
+def tangent_dimension(assignments):
+    point = {variable: 0 for variable in scheme_variables}
+    point.update(assignments)
+    return len(scheme_variables) - scheme_jacobian.subs(point).rank()
+
+
+assert tangent_dimension(foundational_substitution) == 3
+assert tangent_dimension({A20: 1, A30: 2, A40: 3}) == 7
+assert tangent_dimension(
+    {A20: 1, A30: 2, B01: 3, B20: 3, B30: 6}
+) == 6
+assert tangent_dimension({A20: 1}) == 8
+assert tangent_dimension({B01: 1}) == 7
+assert tangent_dimension({}) == 8
+
 print("PASS: weights, degree bounds, and z-linearity give exactly 16 monomials")
 print("PASS: normalized Keller scheme is Q[epsilon]/(epsilon^2)")
 print("PASS: explicit H is first-order Keller and has a nonzero quadratic obstruction")
 print("PASS: H is not tangent to the affine left-right orbit")
 print("PASS: two reduced triangular automorphism families lie on p=q=0")
 print("PASS: both one-sided nonconstant-C boundary charts have unit ideal")
+print("PASS: full-scheme tangent dimensions are 3, 7/6, and 8/7 on the declared strata")

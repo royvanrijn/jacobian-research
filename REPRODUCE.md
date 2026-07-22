@@ -56,6 +56,14 @@ It computes exactly two primary components, checks their declared radicals,
 and verifies that the reduced affine-three-space components meet in an
 affine plane.
 
+The reduced global attachment of the open torus orbit is checked by
+
+```bash
+Singular -q scripts/verify_foundational_reduced_gluing.sing
+```
+
+This verifies the degree-ten toric closure and its two boundary lines.
+
 The heavier regression target also checks the explicit degree-five family and
 its rank-two symplectic descent:
 

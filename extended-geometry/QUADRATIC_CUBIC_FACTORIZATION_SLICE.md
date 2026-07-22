@@ -161,10 +161,11 @@ first nonconstant term is `-(uv)^2`, as for `A^2 x SL_2`.  It is tempting to
 identify this with `H^3=Q(-2)` and all other positive-degree rational
 cohomology zero.  That conclusion does not follow from the Grothendieck class:
 different cohomological degrees can cancel in the Hodge--Deligne polynomial.
-A full normal-crossings or simplicial resolution of `R union E`, including
-the degree-two gcd conductor, is still required to separate `H^2` and `H^3`.
-Accordingly the proved low-degree statement here is (11), not the stronger
-`SL_2`-shaped cohomology guess.
+The virtual polynomial alone therefore proves only (11), not the stronger
+`SL_2`-shaped cohomology guess.  Sections 7--8 below supply the missing
+geometric input: a generic-plane argument and the top homology of the
+incidence normalization separate `H^2` and `H^3` without constructing a full
+normal-crossings resolution.
 
 For context, Farb--Wolfson compute the topology and arithmetic of the
 `resultant=1` space for **two monic forms of the same degree** in

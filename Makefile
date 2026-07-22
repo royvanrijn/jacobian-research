@@ -25,6 +25,7 @@ verify-plane-jc:
 
 verify-weighted-boundary:
 	Singular -q scripts/verify_foundational_constant_c_boundary.sing
+	Singular -q scripts/verify_foundational_reduced_gluing.sing
 
 verify-core: verify-minimal
 	$(PYTHON) scripts/verify_counterexample.py

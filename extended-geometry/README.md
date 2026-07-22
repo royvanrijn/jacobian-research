@@ -29,11 +29,13 @@ in [STATUS.md](../STATUS.md).
 | Weighted invariant-coordinate Jacobian reduction | [General weight-`(1,-1,-k)` determinant lemma reducing Keller equations to two invariant variables](WEIGHTED_INVARIANT_JACOBIAN_REDUCTION.md) |
 | Weighted tangent suspension and plane Poisson square | [Plane-core determinant rearrangement, explicit foundational pair, tangent-pencil identification, and weighted-Wronskian cascade](WEIGHTED_TANGENT_SUSPENSION.md) |
 | Foundational weighted coefficient scheme | [Exact sixteen-monomial rigidity, dual-number tangent, Wronskian obstruction, and complete two-component boundary decomposition](FOUNDATIONAL_WEIGHTED_COEFFICIENT_SCHEME.md) |
+| Formal polynomial-orbit triviality | [All-order Artin source triviality, finite special-jet interpolation in `A^3`, and the formal-to-algebraic moduli gap](FORMAL_ORBIT_TRIVIALITY.md) |
 | Quadratic ladder and rank-two Poisson completion | [Exact cancellation identification, four-dimensional construction, and external-source audit](QUADRATIC_LADDER_AND_POISSON_AUDIT.md) |
 | Degreewise positive-dimensional exact symplectic moduli | [`(N-3)`-dimensional weighted families in `A^6`, with the explicit degree-five line descended to `A^4`](SYMPLECTIC_STABLE_MODULI.md) |
 | Stable normal-form consequences | [Consequences and audit](STABLE_NORMAL_FORM_AUDIT.md) |
 | Marked-point dimension barrier | [Why the universal marked-point construction starts in dimension three](MARKED_POINT_DIMENSION_BARRIER.md) |
 | Relative-scaling/boundary-lattice theorem | [One weight map controls etaleness, normalization torsors, units, Picard torsion, canonical classes, and the multi-factor unit obstruction](RELATIVE_SCALING_BOUNDARY_LATTICE.md) |
+| Consecutive-factor contact reduction | [Universal coprime class, catalecticant term, exact gcd recursion, and contact-moduli programme for `V_p x V_(p+1)`](CONSECUTIVE_FACTOR_CONTACT_CLASSIFICATION.md) |
 | Plane degree frontier | [External Newton-polygon reduction and local exact reproduction of the larger-coordinate bound 125](../plane-jc/README.md) |
 | Normalized quadratic--cubic factorization slice | [The natural degree-ten source is factorial with trivial canonical class but has class `L^5-L^3`, so it is not `A^5`](QUADRATIC_CUBIC_FACTORIZATION_SLICE.md) |
 | Naskręcki “Six Questions” take-away audit | [Closed items, the cubic vertical LND and slice, source-dependent deformation gaps, and the next moduli tangent problem](NASKRECKI_SIX_QUESTIONS_AUDIT.md) |

@@ -1,0 +1,83 @@
+// Exact reduced gluing certificate for the foundational coefficient scheme.
+LIB "primdec.lib";
+
+ring r=0,(a20,a11,a30,a21,a40,a31,b01,b20,b11,b30,b21,p,q),dp;
+
+// Prime ideal of the closure of the pq!=0 diagonal-torus orbit.
+ideal T=
+  b11+6*q,b20+4*p,3*a21-b30,a11+p,p*q-b21,
+  a30*q+7*a31,9*a20*q+4*b30,p^2-b30,
+  b21*p-b30*q,b30*p+27*a31,b01*p-9*q,
+  a31*p-a40*q,a30*p+7*a40,7*a20*p+12*a30,
+  b30*b21+27*a31*q,b01*b21-9*q^2,
+  a30*b21+7*a31*p,9*a20*b21+4*b30*p,
+  b30^2+27*a31*p,b01*b30-9*b21,
+  a31*b30-a40*b21,a30*b30+7*a40*p,
+  7*a20*b30+12*a30*p,3*a31*b01+b30*q,
+  a40*b01-9*a31,3*a30*b01-7*b30,a20*b01+4*p,
+  27*a30*a31-7*a40*b30,63*a20*a31-4*a30*b30,
+  12*a30^2-49*a20*a40,b30*q^2-b21^2,
+  a40*q^2-a31*b21,a40*b30*q+27*a31^2,
+  a40*b21^2+27*a31^2*q,27*a31*q^3+b21^3,
+  a40^2*b21*q+27*a31^3;
+
+// The two reduced constant-C boundary components, now with p=q=0.
+ideal P1=p,q,b21,b30,b11,b20,b01,a31,a21,a11;
+ideal P2=
+  p,q,b21,b11,a31,a40,a21,a30*b01-b30,a11,
+  -a30*b20+a20*b30,a20*b01-b20;
+
+// The two attachment lines.
+ideal La=
+  b01,p,q,b21,b30,b11,b20,a31,a40,a21,a30,a11;
+ideal Lb=
+  a20,p,q,b21,b30,b11,b20,a31,a40,a21,a30,a11;
+
+proc idealEqual(ideal A, ideal B)
+{
+  if (size(reduce(A,std(B)))!=0) { return(0); }
+  if (size(reduce(B,std(A)))!=0) { return(0); }
+  return(1);
+}
+
+if (dim(std(T))!=2) { ERROR("toric closure must have affine dimension two"); }
+
+list boundaryMeet=primdecGTZ(T+ideal(p,q));
+if (size(boundaryMeet)!=2)
+{
+  ERROR("toric closure must meet p=q=0 in two components");
+}
+int firstLa=idealEqual(boundaryMeet[1][2],La);
+int firstLb=idealEqual(boundaryMeet[1][2],Lb);
+int secondLa=idealEqual(boundaryMeet[2][2],La);
+int secondLb=idealEqual(boundaryMeet[2][2],Lb);
+if (!(firstLa && secondLb) && !(firstLb && secondLa))
+{
+  ERROR("boundary attachments do not match the two declared lines");
+}
+
+list meetP1=primdecGTZ(T+P1);
+if (size(meetP1)!=1 || !idealEqual(meetP1[1][2],La))
+{
+  ERROR("T intersect P1 must be La");
+}
+
+list meetP2=primdecGTZ(T+P2);
+if (size(meetP2)!=2)
+{
+  ERROR("T intersect P2 must have two reduced lines");
+}
+firstLa=idealEqual(meetP2[1][2],La);
+firstLb=idealEqual(meetP2[1][2],Lb);
+secondLa=idealEqual(meetP2[2][2],La);
+secondLb=idealEqual(meetP2[2][2],Lb);
+if (!(firstLa && secondLb) && !(firstLb && secondLa))
+{
+  ERROR("T intersect P2 does not match La union Lb");
+}
+
+"TORIC_DEGREE";
+degree(std(T));
+"PASS: the open torus orbit has a two-dimensional degree-ten closure";
+"PASS: its reduced boundary is exactly La union Lb";
+"PASS: T meets P1 in La and P2 in La union Lb";

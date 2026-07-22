@@ -1,5 +1,13 @@
 # Exact replay commands
 
+The reusable superelliptic leading-block reducer is documented in
+[`../SUPERELLIPTIC_DERHAM_ENGINE.md`](../SUPERELLIPTIC_DERHAM_ENGINE.md).
+Its fast regression is:
+
+```bash
+python3 plane-jc/cas/test_superelliptic_derham.py
+```
+
 The exact 90 MB Zenodo attachment and its extracted source snapshot are pinned
 in the repository at
 `plane-jc/external/zenodo-21479814/jc2-72-108-exact-certificates-v1.0.1.zip`
