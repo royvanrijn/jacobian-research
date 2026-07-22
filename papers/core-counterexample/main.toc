@@ -19,5 +19,5 @@
 \contentsline {subsection}{\numberline {9.2}Canonical admissible polynomials}{18}{subsection.9.2}%
 \contentsline {subsection}{\numberline {9.3}Logical scope}{18}{subsection.9.3}%
 \contentsline {subsection}{\numberline {9.4}Comparison, verification, and provenance}{18}{subsection.9.4}%
-\contentsline {section}{\numberline {10}Further directions}{18}{section.10}%
+\contentsline {section}{\numberline {10}Subsequent developments}{18}{section.10}%
 \contentsline {section}{\numberline {A}Theorem dependencies}{19}{appendix.A}%

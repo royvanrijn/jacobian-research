@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex main"] 1784730313 "main.aux" "main.bbl" "main" 1784730314
+["bibtex main"] 1784747342 "main.aux" "main.bbl" "main" 1784747343
   "/usr/local/texlive/2022/texmf-dist/bibtex/bst/base/alpha.bst" 1292289607 23907 a5f93555796fb564b924339521f10a7c ""
-  "main.aux" 1784730314 10293 b69ad1525b64dfa644e6584f93af230e "pdflatex"
+  "main.aux" 1784747343 10303 5cc8993b16dd7d487b7d6c4600249e37 "pdflatex"
   "references.bib" 1784662283 2667 462d487db1b55cf1583a65b1ca9090d8 ""
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1784730313 "main.tex" "main.pdf" "main" 1784730314
+["pdflatex"] 1784747342 "main.tex" "main.pdf" "main" 1784747343
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -132,11 +132,11 @@
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1647878959 4410336 7d30a02e9fa9a16d7d1f8d037ba69641 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1655727831 2826444 fd9e7b2612ee6e1b790db0e41756cfcd ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "main.aux" 1784730314 10293 b69ad1525b64dfa644e6584f93af230e "pdflatex"
-  "main.bbl" 1784730313 2233 d336ac1ad3d70e396147b9fa859a8e48 "bibtex main"
-  "main.out" 1784730314 4623 962e26e500ba3e6a01017d76c3e35de0 "pdflatex"
+  "main.aux" 1784747343 10303 5cc8993b16dd7d487b7d6c4600249e37 "pdflatex"
+  "main.bbl" 1784747342 2233 d336ac1ad3d70e396147b9fa859a8e48 "bibtex main"
+  "main.out" 1784747343 4648 09baaf53122817ca8b8ee59a554b7087 "pdflatex"
   "main.tex" 1784701774 1697 035ab769d7d9a4b911feff884007421c ""
-  "main.toc" 1784730314 2075 e33a48ee58fcf3463511633e8fb33a71 "pdflatex"
+  "main.toc" 1784747343 2080 a96fe78b6d15a5440aa07e60751c508b "pdflatex"
   "sections/00-geometric-construction.tex" 1784663201 4230 b5f8a9b6cc7093bd9593c2fc7a492270 ""
   "sections/00b-factorization-bridge.tex" 1784720307 6336 f3bc0c125a4c66704759a70663d04a80 ""
   "sections/01-explicit-counterexample.tex" 1784625175 2162 8768f85c47444c04245c7b8ff679a595 ""
@@ -146,7 +146,7 @@
   "sections/05-weighted-generalisation.tex" 1784729596 7984 ec1a33e526c7a1c47a5382b2c31772b9 ""
   "sections/06-monodromy.tex" 1784729719 4696 8c8bc1c2991a75ca21bb82703ee3c976 ""
   "sections/07-examples.tex" 1784653658 3836 ef45b04cb9795b57a0015864b7c1a62e ""
-  "sections/08-further-directions.tex" 1784654343 2128 9601a8aadb129e9815bb923975a51f1b ""
+  "sections/08-further-directions.tex" 1784746908 1285 ee7e6726fae4f8db680864bcf224d659 ""
   "sections/appendix-dependencies.tex" 1784729919 3175 b342c0f7227de9415f9633d71e511fe0 ""
   (generated)
   "main.aux"

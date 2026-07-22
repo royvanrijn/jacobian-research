@@ -1,9 +1,12 @@
 # Rank-two symplectic descent in every degree
 
 This note proves rank-two completion for every normalized admissible seed in
-every degree `N>=5`.  The degree-five and degree-six calculations supply
-explicit base cases, and a weighted Laurent argument gives the uniform
-theorem on both adapted charts, including the fixed-\(\kappa=-9\) slices.
+every degree `N>=5`.  The weighted Laurent theorem on the two adapted charts
+is the canonical source.  The degree-five and degree-six calculations are
+generated specializations retained as readable formulas and independent
+regressions; they are not separate theorem sources.  Stable moduli are
+transferred by the coarse decorated-normalization map, not by full-cover
+faithfulness.
 These are internal repository theorems with exact certificates and no
 recorded external specialist review.
 
@@ -130,7 +133,42 @@ linear response map.  The zero-orbit criterion is exact:
 Constants and linear terms of `psi` belong to the elementary base gauge, so
 the first genuine coefficient is the coefficient of `Q^2`.
 
-## 3. The full normalized degree-five surface
+## 3. Canonical all-degree theorem
+
+### Theorem — rank-two descent and stable moduli in every degree
+
+For every `N>=5`, every normalized admissible seed (`kappa!=-2`) has an exact
+symplectic rank-two completion in `A^4`, polynomially left--right equivalent
+to the weighted map times `id_(A^1)`.  On `kappa!=-1,-2`, the complete Laurent
+principal part lies on the universal four-residue line
+
+\[
+\Theta=X^{-4}+6QX^{-3}+\frac{45}{2}Q^2X^{-2}
++\frac{135}{2}Q^3X^{-1},
+\]
+
+and is canceled by a unique `Q^2` shear modulo elementary gauge.  On the
+replacement chart `kappa=-1`, it lies on
+
+\[
+\Theta_{\rm exc}=X^{-4}-4QX^{-2}
+\]
+
+and is canceled by an `XQ` shear.
+
+On the ordinary boundary-clean seed open, the
+[coarse decorated-normalization map](DECORATED_NORMALIZATION_INVARIANT.md)
+is generically etale of exact degree `N-2` onto the normalization of its
+image, and that image has the full source dimension `N-3`.  Because rank-two
+completion is an identity stabilization up to polynomial left--right
+equivalence, it follows directly that the completed maps contain an
+`(N-3)`-dimensional family of stable classes.  This conclusion is independent
+of the stronger full-cover faithfulness theorem.
+
+The proof of the two uniform residue statements is in Section 6.  Sections 4
+and 5 instantiate them in degrees five and six as exact regression examples.
+
+## 4. Degree-five regression formulas
 
 The normalized degree-five surface has coordinates `(kappa,tau)`:
 
@@ -199,7 +237,7 @@ Up to a nonzero parameter unit, the raw residue is
  \right).
 \]
 
-### Theorem — generic-chart degree-five completion
+### Regression — generic-chart degree-five completion
 
 On the chart `kappa != -2,-1`, the normalized Hamiltonian is polynomial
 exactly for `s_2=K(kappa,tau)`.  The resulting four coordinates have the six
@@ -401,7 +439,7 @@ The normalized Hamiltonian is polynomial, so the four output coordinates
 have all six canonical brackets and are polynomially left--right equivalent
 to the original weighted map times an identity.
 
-### Theorem — complete degree-five surface descent
+### Corollary/regression — complete degree-five surface descent
 
 Every normalized admissible degree-five seed (`kappa != -2`) has a rank-two
 exact symplectic completion in `A^4`.  For `kappa != -1,-2` use the quadratic
@@ -414,7 +452,7 @@ The exact monomial replay is
 The command `--x-degree 1 --shear-degree 1` is the exceptional-chart
 completion certificate.
 
-## 4. The full degree-six seed space
+## 5. Degree-six regression formulas
 
 The normalized degree-six seed space has coordinates `(kappa,sigma,tau)`:
 
@@ -479,7 +517,7 @@ c=\frac{251\sigma^2+209\sigma\tau-858\sigma
 +44\tau^2-330\tau-396}{1155}.}
 \]
 
-### Theorem — complete degree-six descent
+### Corollary/regression — complete degree-six descent
 
 Every normalized admissible degree-six seed \((\kappa\ne-2)\) has a
 polynomial rank-two Hamiltonian after one explicit shear.  Use the displayed
@@ -510,7 +548,7 @@ s_2=\frac{
 +1056\tau^2+4752\tau-16929}{2156}.}
 \]
 
-### Theorem — degree-six fixed-`gamma` descent
+### Regression — degree-six fixed-`gamma` descent
 
 Every normalized degree-six seed on the `kappa=-9` slice has a polynomial
 rank-two Hamiltonian after the displayed quadratic shear.  For `sigma!=0`,

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.6.20)  22 JUL 2026 16:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.6.20)  22 JUL 2026 21:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -556,13 +556,26 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 (./sections/04-image-and-fibers.tex [10] [11] [12])
 (./sections/05-weighted-generalisation.tex [13] [14] [15])
 (./sections/06-monodromy.tex [16]) (./sections/07-examples.tex [17])
-(./sections/08-further-directions.tex [18]
+(./sections/08-further-directions.tex
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-)
-(./sections/appendix-dependencies.tex [19]) (./main.bbl
+ [18]
+Overfull \hbox (2.76819pt too wide) in paragraph at lines 12--15
+[]\OT1/cmr/m/n/10.95 (-20) The canon-i-cal de-gree-wise com-par-i-son the-o-rem
+ is \OT1/cmtt/m/n/10.95 papers/marked-root-multiplicity/main.tex\OT1/cmr/m/n/10
+.95 (-20) .
+ []
+
+
+Overfull \hbox (93.24593pt too wide) in paragraph at lines 17--23
+\OT1/cmr/m/n/10.95 (-20) the-o-rem and its full-cover faith-ful-ness re-fine-me
+nt are in \OT1/cmtt/m/n/10.95 extended-geometry/DECORATED[]NORMALIZATION[]INVAR
+IANT.md\OT1/cmr/m/n/10.95 (-20) . 
+ []
+
+) (./sections/appendix-dependencies.tex [19]) (./main.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 16--20
 []\OT1/cmr/m/n/10.95 (+20) Dean Cure-ton.  A lean 4 for-mal-iza-tion of the ja-
 co-bian coun-terex-am-
@@ -574,18 +587,18 @@ Underfull \hbox (badness 8000) in paragraph at lines 16--20
 / deancureton / jacobian$[]\OT1/cmr/m/n/10.95 (+20) , 2026.  Pinned com-mit
  []
 
-[20]) [21] (./main.aux)
+) [20] (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 962E26E500BA3E6A01017D76C3E35DE0;4623.
+(rerunfilecheck)             Checksum: 09BAAF53122817CA8B8EE59A554B7087;4648.
  ) 
 Here is how much of TeX's memory you used:
- 13292 strings out of 478268
- 211410 string characters out of 5846347
- 551083 words of memory out of 5000000
+ 13289 strings out of 478268
+ 211387 string characters out of 5846347
+ 551088 words of memory out of 5000000
  31012 multiletter control sequences out of 15000+600000
- 486007 words of font info for 155 fonts, out of 8000000 for 9000
+ 485956 words of font info for 154 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 63i,16n,71p,1001b,459s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 63i,16n,71p,1001b,443s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
@@ -608,10 +621,10 @@ texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2022/t
 exmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/20
 22/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb></usr/local/texlive
 /2022/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on main.pdf (21 pages, 355997 bytes).
+Output written on main.pdf (20 pages, 357005 bytes).
 PDF statistics:
- 567 PDF objects out of 1000 (max. 8388607)
- 495 compressed objects within 5 object streams
- 115 named destinations out of 1000 (max. 500000)
+ 560 PDF objects out of 1000 (max. 8388607)
+ 489 compressed objects within 5 object streams
+ 114 named destinations out of 1000 (max. 500000)
  33465 words of extra memory for PDF output out of 35830 (max. 10000000)
 
