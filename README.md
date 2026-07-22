@@ -102,6 +102,77 @@ conic; residual intersection makes the source an iterated affine-line bundle,
 hence `A^3`.  The restricted addition map is étale and generically
 three-to-one, so this already proves the counterexample without coordinates.
 
+Between that projective proof and the expanded polynomial lies a short
+equivariant coordinate certificate.  Write
+
+\[
+ L=aT+bS,\qquad Q=cT^2+dTS+eS^2
+\]
+
+and normalize the factor pair by
+
+\[
+ X=\{a^2e-abd+b^2c=1,\ ad+bc=1\}\subset\mathbb A^5.
+\]
+
+The following formulas are a polynomial isomorphism
+`A^3_(a,y,z) -> X`:
+
+\[
+\begin{aligned}
+b&=1+ay,\\
+c&=1-\frac32ay+a^2z,\\
+d&=\frac12y-az+\frac32ay^2-a^2yz,\\
+e&=-2z+4y^2-4ayz+3ay^3-2a^2y^2z,
+\end{aligned}
+\]
+
+with polynomial inverse
+
+\[
+y=2bd-ae,\qquad
+z=2d^2+ce+6bd^2+3bce-\frac92e.
+\]
+
+No division by `a` occurs, so this is a global certificate across the
+root-at-infinity divisor `a=0`.  It intertwines the residual torus actions
+
+\[
+(a,y,z)\mapsto(\lambda a,\lambda^{-1}y,\lambda^{-2}z),\qquad
+(a,b,c,d,e)\mapsto(\lambda a,b,c,\lambda^{-1}d,\lambda^{-2}e).
+\]
+
+Dropping the fixed product coefficient `ad+bc=1`, multiplication is
+
+\[
+G(a,y,z)=(ac,ae+bd,be),\qquad \det DG=-1.
+\]
+
+For
+
+\[
+A(z_1,z_2,z_3)=(z_1,z_2,-z_3/2),\qquad
+B(u_1,u_2,u_3)=(u_3,2u_2,2u_1),
+\]
+
+the announced polynomial is exactly
+
+\[
+\boxed{F_{\rm original}=B\circ G\circ A.}
+\]
+
+Thus the algebraic route is
+
+\[
+\boxed{\text{coprime factorization}
+\Rightarrow\text{étale normalized multiplication}
+\Rightarrow\text{exceptional affine slice}
+\Rightarrow\text{announced polynomial}.}
+\]
+
+The complete proof and exact symbolic certificate are in the
+[three-proposition factorization model](verified/NORMALIZED_FACTORIZATION_MODEL.md).
+
 Coordinates turn that construction into the binary cubic
 
 \[
@@ -123,10 +194,12 @@ including the root at infinity and the identification of the affine source as
 the regular-reconstruction open.
 
 The auxiliary-conic proof comes from a later geometric manuscript prompted by
-Semon Rezchikov.  The repository now uses it as the primary existence proof;
-the two charts remain the explicit coordinate certificate, including the root
-at infinity.  This simplification affects the foundational cubic only and
-adds no new cancellation, boundary-invariant, or stable-equivalence result.
+Semon Rezchikov.  The repository uses it as the projective existence proof;
+the normalized factorization model is the intermediate algebraic certificate,
+and the two marked-root charts remain the direct reconstruction certificate.
+Together they include the root at infinity.  This simplification affects the
+foundational cubic only and adds no new cancellation, boundary-invariant, or
+stable-equivalence result.
 
 This cubic picture became the template:
 
@@ -142,15 +215,12 @@ Roots give generic source points.  Repeated roots produce discriminant
 inertia.  When reconstruction develops a pole, the corresponding sheet moves
 to the canonical normalization boundary.
 
-There is also a particularly short factorization proof of the constant
-Jacobian.  For a linear form `L` and a quadratic form `Q`, multiplication has
-only the infinitesimal relative-scaling kernel `(L,-Q)` on the coprime locus.
-The resultant has bidegree `(2,1)` and is nonconstant in exactly that
-direction.  Hence `(L,Q) -> (LQ,Res(L,Q))` is étale; the foundational
-threefold map is its normalized base change.  The
-[three-proposition factorization model](verified/NORMALIZED_FACTORIZATION_MODEL.md)
-gives the global polynomial `A^3` coordinates and the exact linear comparison
-with the announced formula.
+For completeness, the étaleness step in that route is intrinsic.  For a
+linear form `L` and a quadratic form `Q`, multiplication has only the
+infinitesimal relative-scaling kernel `(L,-Q)` on the coprime locus.  The
+resultant has bidegree `(2,1)` and is nonconstant in exactly that direction.
+Hence `(L,Q) -> (LQ,Res(L,Q))` is étale, and the displayed threefold map is
+its normalized base change.
 
 The same factorization mechanism is étale for all unequal factor degrees and
 has a unique normalization for consecutive degrees.  The first new case,

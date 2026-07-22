@@ -66,6 +66,14 @@ assert sp.expand((middle - 1).subs(forward)) == 0
 assert sp.expand((resultant - 1).subs(forward)) == 0
 print("PASS: forward formulas land on Res=1 and [LQ]_(T^2S)=1")
 
+# Residual torus equivariance, including the a=0 divisor.
+scale = sp.symbols("scale", nonzero=True)
+source_scale = {a: scale * a, y: y / scale, z: z / scale**2}
+assert sp.cancel(b_forward.subs(source_scale) - b_forward) == 0
+assert sp.cancel(c_forward.subs(source_scale) - c_forward) == 0
+assert sp.cancel(d_forward.subs(source_scale) - d_forward / scale) == 0
+assert sp.cancel(e_forward.subs(source_scale) - e_forward / scale**2) == 0
+
 # Polynomial inverse coordinates.
 y_inverse = 2 * b * d - a * e
 z_inverse = 2 * d**2 + c * e + 6 * b * d**2 + 3 * b * c * e - sp.Rational(9, 2) * e
@@ -73,6 +81,17 @@ z_inverse = 2 * d**2 + c * e + 6 * b * d**2 + 3 * b * c * e - sp.Rational(9, 2) 
 assert sp.expand(y_inverse.subs(forward) - y) == 0
 assert sp.expand(z_inverse.subs(forward) - z) == 0
 print("PASS: inverse after forward is the identity")
+
+coefficient_scale = {
+    a: scale * a,
+    b: b,
+    c: c,
+    d: d / scale,
+    e: e / scale**2,
+}
+assert sp.cancel(y_inverse.subs(coefficient_scale) - y_inverse / scale) == 0
+assert sp.cancel(z_inverse.subs(coefficient_scale) - z_inverse / scale**2) == 0
+print("PASS: polynomial coordinate certificate is equivariant for the residual torus")
 
 # Verify the other composition in the coordinate ring of the complete intersection.
 relations = (resultant - 1, middle - 1)
@@ -157,6 +176,9 @@ g_map = (
 )
 g_jacobian = sp.factor(sp.Matrix(g_map).jacobian((a, y, z)).det())
 assert g_jacobian == -1
+assert sp.cancel(g_map[0].subs(source_scale) - scale * g_map[0]) == 0
+assert sp.cancel(g_map[1].subs(source_scale) - g_map[1] / scale) == 0
+assert sp.cancel(g_map[2].subs(source_scale) - g_map[2] / scale**2) == 0
 print("PASS: normalized multiplication map has determinant -1")
 
 # Linear equivalence with the foundational polynomial.

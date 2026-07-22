@@ -52,6 +52,33 @@ Its inverse is the polynomial map
  z=2d^2+ce+6bd^2+3bce-\frac92e.}
 \]
 
+This certificate is equivariant for the residual one-dimensional torus.  On
+the affine coordinates it acts by
+
+\[
+ (a,y,z)\longmapsto(\lambda a,\lambda^{-1}y,\lambda^{-2}z),
+\]
+
+and on the factor coefficients by
+
+\[
+ (a,b,c,d,e)\longmapsto
+ (\lambda a,b,c,\lambda^{-1}d,\lambda^{-2}e).
+\]
+
+Both defining equations have weight zero, and the forward and inverse
+formulas intertwine these actions.  The multiplication coordinates
+
+\[
+ (ac,ae+bd,be)
+\]
+
+have respective weights `(1,-1,-2)`.  This is the torus equivariance retained
+after the coefficient condition `ad+bc=1` selects the affine slice.  The full
+binary-form multiplication map before choosing that hyperplane is
+`GL_2`-equivariant; the chosen tangent hyperplane is not claimed to preserve
+the full `GL_2` action.
+
 ### Proof
 
 Substitution of the four displayed forward formulas gives
@@ -296,7 +323,8 @@ Since `det A=-1/2` and `det B=-4`, this also gives
 The construction is therefore summarized by the entirely explicit chain
 
 \[
- \boxed{\text{normalized coprime factorization}
+ \boxed{\text{coprime factorization}
+ \longrightarrow\text{étale normalized multiplication}
  \longrightarrow X\simeq\mathbb A^3
  \xrightarrow{\,G\,}\mathbb A^3
  \xrightarrow{\text{linear target change}}F_{\mathrm{orig}}.}

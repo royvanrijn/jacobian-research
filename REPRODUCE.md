@@ -23,6 +23,10 @@ make verify-foundations
 
 `verify-minimal` uses only the Python standard library for the foundational
 map.  `verify-core` adds the cubic marked-root and exact-image implementations.
+Its normalized-factorization certificate checks both polynomial compositions
+across `a=0`, residual-torus equivariance, determinant `-1` for normalized
+multiplication, and the two explicit linear changes recovering the announced
+map.
 It also checks the normalized `(2,3)` factorization slice: the unimodular
 boundary lattice, class `L^5-L^3`, direct counts `q^5-q^3` for four small
 prime fields, and generic degree ten.  The script checks the algebraic and
