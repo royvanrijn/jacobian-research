@@ -135,7 +135,10 @@ jobs:
           apt-get update
           apt-get install --yes --no-install-recommends \
             git make macaulay2=1.24.11+ds-5+b1
-      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+      # checkout@v6 stores credentials through runner-path includeIf entries that
+      # are not reliable in this container job. v4.2.2 keeps checkout local to
+      # the job workspace and is sufficient because this job never pushes.
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
           persist-credentials: false
       - name: Run the pinned Macaulay2 comparison
