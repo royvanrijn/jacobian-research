@@ -66,9 +66,10 @@ nonduplicated continuation of the core chain is:
 - [Weighted marked-root theorem](WEIGHTED_SEED_THEOREM.md).
 
 The factorization bridge derives the displayed polynomial from multiplication
-of a normalized coprime linear and quadratic factor.  It proves étaleness by
-base change from the coefficient--resultant map and gives a global polynomial
-isomorphism between the normalized slice and `A^3`.
+of a normalized coprime linear and quadratic factor.  It identifies that
+normalized complete intersection canonically with the projective marked-root
+open, proves étaleness by base change from the coefficient--resultant map, and
+extends the differential argument to every pair of unequal factor degrees.
 
 ## Reproduction
 
