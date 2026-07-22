@@ -7,7 +7,13 @@ expanded foundational Keller map.  It isolates three independent facts:
 2. the normalized factorization slice is polynomially isomorphic to `A^3`;
 3. multiplication on that slice is linearly equivalent to the displayed map.
 
-Work over a field `k` of characteristic zero.  Write
+Work over a field `k` of characteristic zero, and put
+
+\[
+V_i=\operatorname{Sym}^i(k^2).
+\]
+
+Write
 
 \[
 L=aT+bS,
@@ -286,15 +292,8 @@ X_{\mathrm{fac}}\cong\mathbb A^3
 
 ## 6. Unequal factor degrees
 
-The étaleness mechanism is not special to degrees one and two.  Let
-
-\[
-V_p=\operatorname{Sym}^p(k^2),
-\qquad
-V_q=\operatorname{Sym}^q(k^2),
-\]
-
-and define
+The étaleness mechanism is not special to degrees one and two.  For positive
+integers `p,q`, define
 
 \[
 \Theta_{p,q}:V_p\times V_q\longrightarrow
