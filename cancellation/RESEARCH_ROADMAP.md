@@ -1,43 +1,11 @@
-# Open problems for the cancellation programme
+# Cancellation research roadmap
 
 The cancellation family has separate construction, arithmetic, boundary, and
-rigidity theorems.  Arithmetic classification and universality beyond the
-current skeleton remain open.  The formerly open parameter-equivalence
-problem is now closed by reconstruction-open faithfulness.
+rigidity theorems.  This roadmap contains only active research directions;
+closed milestones are recorded in [CHANGELOG.md](CHANGELOG.md).
 
-## 1. Closed: parameter equivalence
 
-For fixed `(m,r)`, the common finite normalization together with its marked
-affine reconstruction open recovers the selected parameter root.  The visible
-target quotient remains the weighted scaling torus
-
-\[
- (Q,R)\mapsto(uQ,u^{-m}R),
-\]
-
-and it fixes every parameter root.  It is no longer necessary to prove that
-the residual target congruence kernel is trivial.  Any element of that kernel
-which lifts and preserves the affine reconstruction open must preserve the two
-affine factors `P=AB`, and the source identities force
-
-\[
- A\mapsto A,\qquad y\mapsto uy,\qquad B\mapsto u^{m+1}B.
-\]
-
-It therefore fixes the reconstruction-pole residue
-
-\[
- q=\left.\frac{B}{y^{m+1}}\right|_{A=0}.
-\]
-
-Hence the `mr` distinct geometric roots of `M_(m,r)` give `mr` distinct
-stable left--right classes.  The full proof, including stabilization and the
-`m=1` factor-swap exclusion, is
-[the cancellation-parameter faithfulness theorem](../papers/marked-root-multiplicity/cancellation-parameter-faithfulness.tex).
-Computing the target kernel itself remains an optional automorphism-group
-problem, not an input to parameter faithfulness.
-
-## 2. Complete the arithmetic
+## 1. Complete the arithmetic
 
 In standard truncated-binomial notation
 
@@ -92,7 +60,7 @@ Determine also the minimal field over which the full symbolic collision is
 defined, rather than only the evident compositum of the parameter field and
 the collision polynomial's splitting field.
 
-## 3. Prove the all-parameter contact resultant
+## 2. Prove the all-parameter contact resultant
 
 The full reduced/scheme/formal invariant is now active, and the generic
 weighted divisorial profile has executable `(e,f)`, different, completed-DVR,
@@ -134,7 +102,7 @@ Completed finite-stratum conductors, restrictions of the different, valuation
 filtrations, and local monodromy are refinements of the now-known incidence
 graph rather than missing prime intersections.
 
-## 4. Audit the remaining all-parameter inputs
+## 3. Audit the remaining all-parameter inputs
 
 Boundary normalization and exhaustion have a clean-room audit.  The thick
 intersection formula now has independent resultant and completed-local-ring
@@ -149,7 +117,7 @@ complicated source and target automorphisms, change primitive elements and
 compactification coordinates, and stabilize it.  The reconstructed boundary
 object should remain canonically isomorphic.
 
-## 5. Go beyond the skeleton
+## 4. Go beyond the skeleton
 
 [RIGIDITY.md](RIGIDITY.md) exhausts additional monomial weights, finitely many
 normalized resolvent factors, and arbitrary target-dependent polynomial
@@ -158,7 +126,7 @@ genuinely broader classification must change that skeleton—for example by
 adding another source function, source variable, or independent inverse
 variable—and then rebuild the cancellation and boundary analyses.
 
-## 6. Classify controlled-boundary suspensions
+## 5. Classify controlled-boundary suspensions
 
 The weighted and cancellation constructions now have explicit but distinct
 plane cores:

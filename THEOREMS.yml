@@ -1,0 +1,115 @@
+{
+  "schema_version": 1,
+  "theorems": [
+    {
+      "id": "F1",
+      "theorem": "Foundational Keller collision",
+      "status": "proved",
+      "canonical_source": "verified/FOUNDATIONAL_GEOMETRY.md",
+      "dependencies": [],
+      "checker": "scripts/verify_counterexample_independent.py",
+      "external_review": "Lean certificate",
+      "supersedes": []
+    },
+    {
+      "id": "W1",
+      "theorem": "Tangent-map core and weighted suspension",
+      "status": "proved for every polynomial core and every admissible weighted seed",
+      "canonical_source": "verified/TANGENT_MAP_CORE.md",
+      "dependencies": ["F1"],
+      "checker": "scripts/verify_weighted_seed_theorem.py",
+      "external_review": "none",
+      "supersedes": ["local Jacobian/discriminant derivations"]
+    },
+    {
+      "id": "C1",
+      "theorem": "Cancellation construction",
+      "status": "proved for every m,r >= 1",
+      "canonical_source": "cancellation/CONSTRUCTION.md",
+      "dependencies": [],
+      "checker": "scripts/verify_master_universal.py",
+      "external_review": "none",
+      "supersedes": ["case tables"]
+    },
+    {
+      "id": "B1",
+      "theorem": "Boundary exhaustion",
+      "status": "proved in codimension one for both active families",
+      "canonical_source": "papers/marked-root-multiplicity/boundary-exhaustion.tex",
+      "dependencies": ["W1", "C1"],
+      "checker": "scripts/audit_boundary_exhaustion_independent.py",
+      "external_review": "none",
+      "supersedes": ["chart-only arguments"]
+    },
+    {
+      "id": "S1",
+      "theorem": "Stable boundary functoriality",
+      "status": "proved",
+      "canonical_source": "verified/STABLE_NORMALIZATION_FUNCTORIALITY.md",
+      "dependencies": [],
+      "checker": null,
+      "external_review": "none",
+      "supersedes": ["construction-private stabilization arguments"]
+    },
+    {
+      "id": "P1",
+      "theorem": "Cancellation-parameter faithfulness",
+      "status": "proved for the marked reconstruction open",
+      "canonical_source": "papers/marked-root-multiplicity/cancellation-parameter-faithfulness.tex",
+      "dependencies": ["C1", "S1"],
+      "checker": "scripts/verify_cancellation_parameter_faithfulness.py",
+      "external_review": "none",
+      "supersedes": []
+    },
+    {
+      "id": "M1",
+      "theorem": "Degreewise finite count",
+      "status": "proved for every N >= 4",
+      "canonical_source": "papers/marked-root-multiplicity/main.tex",
+      "dependencies": ["B1", "S1", "P1"],
+      "checker": "scripts/verify_full_boundary_diagram.py",
+      "external_review": "none",
+      "supersedes": ["tau(N-1)"]
+    },
+    {
+      "id": "D1",
+      "theorem": "Decorated moduli",
+      "status": "proved: dimension N-3 on an explicit open for N >= 4",
+      "canonical_source": "extended-geometry/DECORATED_NORMALIZATION_INVARIANT.md",
+      "dependencies": ["S1", "W1"],
+      "checker": "scripts/verify_decorated_normalization.py",
+      "external_review": "none",
+      "supersedes": ["degree-five-only moduli"]
+    },
+    {
+      "id": "F2",
+      "theorem": "Full-cover faithfulness",
+      "status": "proved for normalized admissible seeds",
+      "canonical_source": "papers/marked-root-multiplicity/decorated-normalization.tex",
+      "dependencies": ["D1", "external: stable plane descent and fixed-curve rigidity"],
+      "checker": "scripts/verify_affine_branch_mark_audit.py",
+      "external_review": "under audit",
+      "supersedes": ["six-orbit bound"]
+    },
+    {
+      "id": "O1",
+      "theorem": "Formal orbit triviality",
+      "status": "proved over every local Artin base; finite reduced jets in dimension three",
+      "canonical_source": "extended-geometry/FORMAL_ORBIT_TRIVIALITY.md",
+      "dependencies": [],
+      "checker": "scripts/verify_formal_orbit_triviality.py",
+      "external_review": "none",
+      "supersedes": ["bounded-support infinitesimal-moduli language"]
+    },
+    {
+      "id": "R1",
+      "theorem": "Rank-two all-degree descent",
+      "status": "proved for every normalized admissible seed of degree N >= 5; coarse decorated normalization gives N-3 stable dimensions",
+      "canonical_source": "extended-geometry/RANK_TWO_SYMPLECTIC_DESCENT.md",
+      "dependencies": ["W1", "D1"],
+      "checker": "scripts/verify_four_residue_recurrence.py",
+      "external_review": "none",
+      "supersedes": ["degree-five/six theorem sources", "full-cover faithfulness as a rank-two dependency"]
+    }
+  ]
+}

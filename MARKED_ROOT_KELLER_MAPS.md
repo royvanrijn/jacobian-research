@@ -87,7 +87,26 @@ reparametrization.
 
 ## 3. Degreewise stable-multiplicity consequence
 
-The marked-root framework explains the degreewise lower bound: for every `N>=4`, one split weighted map and one cancellation type for each proper divisor of `N-1` give at least `tau(N-1)` stable left--right classes.  Distinct cancellation types are separated by `(e_Delta,mu)`, while reducedness separates the weighted class.
+The marked-root framework explains the sharp repository lower bound.  For a
+fixed proper divisor `r|(N-1)`, put `m=(N-1)/r-1`.  The reconstruction open
+recovers the selected cancellation root, so that type contributes all
+`mr=N-1-r` parameter-root classes, not merely one representative.  Summing
+over the proper divisors and adding one split weighted class gives
+
+\[
+ \boxed{1+(N-1)\tau(N-1)-\sigma(N-1)}
+\]
+
+pairwise stably inequivalent degree-`N` maps for every `N>=4`.  Distinct
+cancellation types are separated by `(e_Delta,mu)`, parameter roots within a
+type by reconstruction-open faithfulness, and the weighted class by its
+reduced boundary contact.
+
+This is a **finite degreewise count** of explicitly separated classes.  It is
+not the dimension of a moduli space.  The separate weighted-seed theorem
+gives an `(N-3)`-dimensional family of stable classes; neither statement
+subsumes the other because the finite count also distinguishes the
+cancellation branches from the weighted construction.
 
 The canonical statement and proof are the standalone paper [Marked-Root Keller Maps and Degreewise Stable Multiplicity](papers/marked-root-multiplicity/main.tex).  The [five-lemma audit](DEGREEWISE_MULTIPLICITY_AUDIT.md) is its verification companion.  This document is canonical for the marked-root framework, not for the degreewise theorem.
 

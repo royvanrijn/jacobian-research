@@ -1,8 +1,8 @@
 # Extended geometry
 
 These documents continue beyond the stable core.  Mathematical completion
-and external review are recorded only
-in [STATUS.md](../STATUS.md).
+and external review are recorded in the [theorem index](../THEOREMS.yml),
+rendered in [STATUS.md](../STATUS.md).
 
 | Results | Primary document |
 |---|---|
@@ -20,8 +20,9 @@ in [STATUS.md](../STATUS.md).
 | Hurwitz--LL compactification | [LL spectral incidence, marked admissible-cover closure, etale rerooting quotient and boundary pullbacks, exact multicluster comparison, restricted LL degree `(N-2)N^(N-3)`, and caustic/Maxwell boundary classes](HURWITZ_LL_COMPACTIFICATION.md) |
 | Cancellation contact resultant | [Endpoint-moment reduction and uniform `r=1,2,3,4` proofs](../cancellation/CONTACT_RESULTANT.md) |
 | Degree-five positive-dimensional stable moduli | [Stable Hessian-root invariant and explicit family](DEGREE_FIVE_STABLE_MODULI.md) |
-| Degree-five rank-two symplectic descent | [Parameter-dependent residue cancellation and uncountable stable moduli in `A^4`](DEGREE_FIVE_RANK_TWO_DESCENT.md) |
-| Rank-two descent beyond the explicit line | [Complete degree-five and degree-six seed spaces, all-degree two-chart theorem, stable moduli in `A^4`, and direct `A_2` quantization](ALL_DEGREE_RANK_TWO_DESCENT_PROGRAM.md) |
+| Rank-two symplectic descent in `A^4` | [Complete degree-five and degree-six seed spaces, the all-degree two-chart theorem, and `N-3` stable dimensions for every `N>=5`](RANK_TWO_SYMPLECTIC_DESCENT.md) |
+| Degree-five rank-two worked example | [The original fixed-`kappa=-9` line with explicit parameter-dependent residue cancellation](DEGREE_FIVE_RANK_TWO_DESCENT.md) |
+| Filtered `A_2` quantization obstruction | [The separate `hbar^5` obstruction for the standard parity-preserving Weyl-symbol ansatz](RANK_TWO_FILTERED_QUANTIZATION_OBSTRUCTION.md) |
 | Exact symplectic and Weyl lifts | [Classical-quantum bridge](SYMPLECTIC_WEYL_LIFT.md) |
 | External GMC, `(xz)`, and `SU(2)` consequences | [Consequence graph, exact witnesses, provenance, and research trajectories](EXTERNAL_CONSEQUENCES_AND_PROVENANCE.md) |
 | Complete Long consequence reproductions | [`SU(2)` Haar proof, exact `3 -> 39 -> 79` BCW reproduction, repository reduction to dimension 16, and rank-compressed 24-variable homogenization](LONG_SU2_AND_BCW_REPRODUCTIONS.md) |
@@ -35,14 +36,14 @@ in [STATUS.md](../STATUS.md).
 | Formal polynomial-orbit triviality | [All-order Artin source triviality, finite special-jet interpolation in `A^3`, and the formal-to-algebraic moduli gap](FORMAL_ORBIT_TRIVIALITY.md) |
 | Complexity-filtered orbit contact | [Degree-filtered contact, canonical-jet lower bounds, source-algebraization obstruction, and the exact all-order degree-five law `b_m=34m+1`](COMPLEXITY_FILTERED_CONTACT.md) |
 | Quadratic ladder and rank-two Poisson completion | [Exact cancellation identification, four-dimensional construction, and external-source audit](QUADRATIC_LADDER_AND_POISSON_AUDIT.md) |
-| Degreewise positive-dimensional exact symplectic moduli | [`(N-3)`-dimensional weighted families in `A^6`, with the full two-dimensional degree-five surface descended to `A^4`](SYMPLECTIC_STABLE_MODULI.md) |
+| Degreewise positive-dimensional exact symplectic moduli | [`(N-3)`-dimensional weighted families in `A^6` via the cotangent lift](SYMPLECTIC_STABLE_MODULI.md) |
 | Stable normal-form consequences | [Consequences and audit](STABLE_NORMAL_FORM_AUDIT.md) |
 | Marked-point dimension barrier | [Why the universal marked-point construction starts in dimension three](MARKED_POINT_DIMENSION_BARRIER.md) |
 | Relative-scaling/boundary-lattice theorem | [One weight map controls etaleness, normalization torsors, units, Picard torsion, canonical classes, and the multi-factor unit obstruction](RELATIVE_SCALING_BOUNDARY_LATTICE.md) |
 | Consecutive-factor contact reduction | [Universal coprime class, catalecticant term, exact gcd recursion, and contact-moduli programme for `V_p x V_(p+1)`](CONSECUTIVE_FACTOR_CONTACT_CLASSIFICATION.md) |
 | Plane degree frontier | [External Newton-polygon reduction and local exact reproduction of the larger-coordinate bound 125](../plane-jc/README.md) |
 | Normalized quadratic--cubic factorization slice | [The natural degree-ten source is factorial with class `L^5-L^3`, trivial positive Chow groups, `K_0=Z`, and complex homotopy type `S^3`; one global LND has a slice, two commuting LNDs have a trinomial generic quotient, and the global `A^2 x SL_2` product question remains open](QUADRATIC_CUBIC_FACTORIZATION_SLICE.md) |
-| Naskręcki “Six Questions” take-away audit | [Closed items, the cubic vertical LND and slice, formal polynomial-orbit triviality, complete reduced boundary geometry, and the remaining algebraization gap](NASKRECKI_SIX_QUESTIONS_AUDIT.md) |
+| Naskręcki “Six Questions” provenance | [Short active source-status note; the dated theorem-by-theorem audit is archived](NASKRECKI_PROVENANCE_NOTE.md) |
 | Dicritical boundary | [Dicritical compactification](DICRITICAL_COMPACTIFICATION.md) |
 
 Intermediate deformation notes, bounded stratum reports, the expanded dicritical

@@ -1,3 +1,6 @@
+\ifdefined\HurwitzLLPaper
+\else
+
 \section{The scheme-theoretic decorated normalization}
 
 For a weighted primitive $H$, let $D_H$ be the reduced discriminant of
@@ -378,6 +381,11 @@ extra-root collisions alter the compactified rerooting groupoid but introduce
 no new full-cover identifications.
 \end{remark}
 
+\fi
+
+\ifdefined\DecoratedNormalizationPaper
+\else
+
 \begin{proposition}[Hurwitz--LL compactification]
 \label{prop:hurwitz-ll-compactification}
 For $P_{H,s}(W)=H(W)-sW$, the curve $D_H$ is the pullback of the
@@ -682,6 +690,11 @@ conductor square.  The argument descends from geometric branches by Galois
 invariance.
 \end{proof}
 
+\fi
+
+\ifdefined\HurwitzLLPaper
+\else
+
 \begin{corollary}[degreewise weighted stable moduli]
 \label{cor:weighted-stable-moduli}
 For every $N\ge4$, weighted degree-$N$ maps contain an
@@ -695,3 +708,5 @@ The map is generically finite by the preceding argument and its invariant is
 constant on stable classes.  Its stable-class image therefore has dimension
 $N-3$.
 \end{proof}
+
+\fi

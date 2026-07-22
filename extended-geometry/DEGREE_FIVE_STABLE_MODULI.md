@@ -1,10 +1,10 @@
 # Infinitely many stable classes in generic degree five
 
-This note proves a positive-dimensional stable-moduli theorem for the weighted
-marked-root construction.  The invariant is not a higher jet of the
-intersection with `C=0`.  It is the ramification divisor of the normalization
-of the discriminant curve on the intrinsic open away from the second boundary
-vertex.
+This note gives an explicit positive-dimensional stable-moduli family for the
+weighted marked-root construction.  Full-cover faithfulness now proves exact
+parameter recovery.  The earlier Hessian/Fitting-divisor argument is retained
+because it is an independent, weaker fallback using only the ramification
+divisor of the discriminant normalization and affine three-point geometry.
 
 The resulting invariant is reusable: for split weighted seeds, stable
 polynomial left--right equivalence forces the root divisor of `H''` on the
@@ -119,7 +119,7 @@ system constructed in the
 
 ## 2. Main theorem
 
-### Theorem 2.1 — degree-five stable moduli
+### Theorem 2.1 — exact degree-five parameter recovery
 
 For every `lambda in Lambda`, the map `F_lambda` is a polynomial Keller map
 with
@@ -130,10 +130,21 @@ with
 
 generic fiber degree five, and a fiber containing five distinct points.
 
-Define
+If `F_lambda` and `F_mu` are polynomially left--right equivalent after
+adjoining any number of identity variables, then
 
 \[
- \chi(\lambda)=\frac{\lambda-p}{q-p}                 \tag{2.2}
+ \boxed{\lambda=\mu.}                               \tag{2.2}
+\]
+
+Consequently the maps `F_lambda`, `lambda in Lambda`, are an uncountable
+family of pairwise stably polynomially left--right inequivalent Keller maps
+of generic degree five.
+
+For the independent coarse invariant, define
+
+\[
+ \chi(\lambda)=\frac{\lambda-p}{q-p}                 \tag{2.3}
 \]
 
 and the six-element anharmonic orbit
@@ -143,40 +154,37 @@ and the six-element anharmonic orbit
  \left\{
  x,\ 1-x,\ \frac1x,\ \frac1{1-x},\
  \frac{x}{x-1},\ \frac{x-1}{x}
- \right\}.                                           \tag{2.3}
+ \right\}.                                           \tag{2.4}
 \]
 
-If `F_lambda` and `F_mu` are polynomially left--right equivalent after
-adjoining any number of identity variables, then
+The Hessian/Fitting-divisor argument alone gives
 
 \[
- \chi(\mu)\in\mathfrak A(\chi(\lambda)).             \tag{2.4}
+ \chi(\mu)\in\mathfrak A(\chi(\lambda)).             \tag{2.5}
 \]
 
 Equivalently, `mu` belongs to the explicitly described set
 
 \[
  \mathfrak O(\lambda)=
- \left\{p+(q-p)a:a\in\mathfrak A(\chi(\lambda))\right\}. \tag{2.5}
+ \left\{p+(q-p)a:a\in\mathfrak A(\chi(\lambda))\right\}. \tag{2.6}
 \]
 
-In particular, every stable class meets this family in at most six parameters.
-Therefore the maps `F_lambda`, `lambda in Lambda`, contain uncountably many
-pairwise stably polynomially left--right inequivalent Keller maps of generic
-degree five.
+Thus it bounds a stable class by six parameters even without invoking the
+stronger full-cover theorem.  It is not the sharp separation statement.
 
 The orbit obstruction can also be written without `sqrt(6)`.  Put
 
 \[
  J(\lambda)=
  \frac{64(50\lambda^2-40\lambda+17)^3}
- {75(10\lambda^2-8\lambda+1)^2}.                     \tag{2.6}
+ {75(10\lambda^2-8\lambda+1)^2}.                     \tag{2.7}
 \]
 
 Then stable equivalence implies
 
 \[
- J(\lambda)=J(\mu).                                  \tag{2.7}
+ J(\lambda)=J(\mu).                                  \tag{2.8}
 \]
 
 The rational map `J:P^1->P^1` has generic degree six, and its fibers are the
@@ -384,6 +392,12 @@ divisors `div(H'')` and `div(G'')` are affinely equivalent on `A^1`.
 
 #### Proof
 
+The normalization, relative-differential, and Fitting-ideal base-change steps
+are instances of the general
+[stable normalization functoriality theorem](../verified/STABLE_NORMALIZATION_FUNCTORIALITY.md).
+This proof only identifies the intrinsic degree-five boundary vertex and its
+Hessian divisor.
+
 Remove the intrinsic second boundary vertex.  On `C!=0`, the coordinate change
 
 \[
@@ -396,7 +410,7 @@ is an isomorphism, and it identifies
  Z_\Delta\setminus Z_0\simeq D_H\times\mathbb G_m. \tag{5.4}
 \]
 
-After adjoining `s` identity variables, its normalization is
+After adjoining `s` identity variables, the general theorem identifies its normalization as
 
 \[
  \mathbb A^1_r\times\mathbb G_m\times\mathbb A^s,
@@ -463,7 +477,31 @@ the Fitting ideals, not only their radicals, are identified, the valuation
 along each component also agrees.  This is the asserted affine equivalence of
 effective divisors.  QED.
 
-## 6. Proof of the orbit statement
+## 6. Exact recovery and the coarse orbit statement
+
+Normalize the seed by
+
+\[
+ \widetilde H_\lambda=H_\lambda/c_\lambda,
+ \qquad \widetilde H_\lambda'(1)=-1.
+\]
+
+The [faithfulness theorem for the full marked cover](DECORATED_NORMALIZATION_INVARIANT.md)
+applies because the seed has a double zero at `0`, a distinguished simple
+root at `1`, and the complete reconstruction open is part of the stable
+boundary object.  Stable equivalence therefore recovers the normalized seed
+itself:
+
+\[
+ \widetilde H_\lambda=\widetilde H_\mu.
+\]
+
+Their second derivatives have the fixed roots `p,q` and the remaining roots
+`lambda,mu`, respectively.  Equality of the normalized polynomials therefore
+forces `lambda=mu`, proving the sharp statement (2.2).
+
+For completeness, the independent Fitting-divisor argument gives the
+following coarser conclusion.
 
 For the present family, (1.1) and the exclusion
 `10 lambda^2-8 lambda+1 != 0` make the intrinsic Hessian-root divisor reduced
@@ -486,9 +524,9 @@ The standard symmetric function of this six-element orbit is
  256\frac{(1-x+x^2)^3}{x^2(1-x)^2}.
 \]
 
-Substitution of `x=chi(lambda)` simplifies to (2.6), proving (2.7).  Since each
-orbit is finite and `Lambda` is infinite, infinitely many stable classes
-follow; over `C` the conclusion is in fact uncountable.
+Substitution of `x=chi(lambda)` simplifies to (2.7), proving (2.8).  This
+six-element orbit and `J(lambda)` remain useful explicit coarse invariants,
+but exact parameter recovery is stronger.
 
 ## 7. Why the next boundary jet is not the modulus
 
@@ -527,12 +565,16 @@ Run
 
 ```bash
 .venv/bin/python scripts/verify_degree_five_stable_moduli.py
+.venv/bin/python scripts/verify_affine_branch_mark_audit.py
+.venv/bin/python scripts/verify_stable_generator_rigidity.py
 ```
 
-The checker verifies the seed identities, admissibility, polynomial weighted
-map, constant Jacobian, inverse equation, split-root and boundary exceptional
-polynomials, exact `C^2` discriminant saturation, the reduced boundary conic,
-and the rational orbit invariant (2.6).
+The first checker verifies the seed identities, admissibility, polynomial
+weighted map, constant Jacobian, inverse equation, split-root and boundary
+exceptional polynomials, exact `C^2` discriminant saturation, the reduced
+boundary conic, and the rational orbit invariant (2.7).  The latter two are
+the exact audits for the affine root-one mark and stable generator rigidity
+used by full-cover faithfulness.
 
 No external specialist review of the Hessian/Fitting-divisor theorem or this
 stable-moduli consequence is currently recorded.  Long's external consequence

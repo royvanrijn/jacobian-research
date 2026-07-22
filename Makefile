@@ -9,12 +9,15 @@ SYSTEM_PYTHON ?= python3
 	verify-master \
 	verify-quartic verify-normal-forms verify-formal verify-lean-foundational \
 	verify-foundations verify-foundations-formal \
-	verify-coincident-root-loci verify-papers clean-papers
+	verify-coincident-root-loci verify-papers render-status clean-papers
 
 check:
 	$(PYTHON) -m compileall -q jcsearch scripts
 	$(PYTHON) scripts/check_markdown_links.py
 	$(PYTHON) scripts/audit_status.py
+
+render-status:
+	$(SYSTEM_PYTHON) scripts/render_status.py
 
 verify-minimal:
 	$(SYSTEM_PYTHON) scripts/verify_counterexample_independent.py

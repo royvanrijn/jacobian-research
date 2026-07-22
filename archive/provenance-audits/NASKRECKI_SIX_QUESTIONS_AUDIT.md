@@ -1,4 +1,6 @@
-# Audit of the “Six Questions” take-aways
+# Archived audit of the “Six Questions” take-aways
+
+> Historical provenance snapshot from 22 July 2026.  This document is not an active theorem ledger; follow [STATUS.md](../../STATUS.md) and the linked active theorem notes for current claims.
 
 This is a provenance and research-scope audit of a supplied summary attributed
 to a recent paper of Bartosz Naskręcki.  As of 22 July 2026, the repository
@@ -22,7 +24,7 @@ paper's exact input data.
 ## 1. Foundational factorization: closed
 
 The compact
-[normalized factorization model](../verified/NORMALIZED_FACTORIZATION_MODEL.md)
+[normalized factorization model](../../verified/NORMALIZED_FACTORIZATION_MODEL.md)
 now gives the complete chain
 
 \[
@@ -130,7 +132,7 @@ If `F_i=x^(w_i)A_i(u,v)` on `x!=0`, then the exact chain-rule identity is
 In the balanced case `sum(w_i)=-k`, the three-variable Keller equation is
 exactly the displayed two-variable determinant equation.  The proof,
 polynomial-extension scope, and exact checks are in the
-[weighted invariant-coordinate lemma](WEIGHTED_INVARIANT_JACOBIAN_REDUCTION.md).
+[weighted invariant-coordinate lemma](../../extended-geometry/WEIGHTED_INVARIANT_JACOBIAN_REDUCTION.md).
 This closes the reusable differential reduction without relying on the later
 sixteen-monomial Gröbner computation.
 
@@ -159,7 +161,7 @@ including `(B_01-3)^2`, and proves
 
 The theorem, all eleven triangular relations, and the precise gauge scope are
 in the
-[foundational weighted coefficient scheme](FOUNDATIONAL_WEIGHTED_COEFFICIENT_SCHEME.md).
+[foundational weighted coefficient scheme](../../extended-geometry/FOUNDATIONAL_WEIGHTED_COEFFICIENT_SCHEME.md).
 This is classification inside the displayed weighted support, not
 classification of all degree-profile `(7,6,4)` Keller maps.
 
@@ -178,7 +180,7 @@ The exact checker proves:
 - the full normalized ansatz has no reduced second-order lift;
 - `H` is not tangent to the affine source--target left--right orbit;
 - nevertheless, the
-  [polynomial-orbit calculation](CUBIC_DUAL_NUMBER_ORBIT_TANGENCY.md) gives
+  [polynomial-orbit calculation](../../extended-geometry/CUBIC_DUAL_NUMBER_ORBIT_TANGENCY.md) gives
   `H=DF\,V` for the polynomial divergence-free field
   `V=(DF)^(-1)H`, and an explicit decomposition into 133 locally nilpotent
   shears realizes it as the tangent of a reduced polynomial source-orbit
@@ -193,7 +195,7 @@ Thus the claimed local algebra
 is now a proved repository result.  Its nilpotent direction is therefore an
 artifact of the normalized finite-support slice, not an infinitesimal class
 modulo the full polynomial orbit.  The
-[formal-orbit theorem](FORMAL_ORBIT_TRIVIALITY.md) strengthens this: every
+[formal-orbit theorem](../../extended-geometry/FORMAL_ORBIT_TRIVIALITY.md) strengthens this: every
 Artin deformation of a Keller map is uniquely source-trivial, and in
 dimension three every finite determinant-one jet has a reduced polynomial
 special-automorphism representative.  Thus polynomial-orbit tangency and
@@ -211,7 +213,7 @@ dual-number point alone.
 ## 6. The `pq=0` boundary: primary decomposition complete
 
 The
-[coefficient-scheme computation](FOUNDATIONAL_WEIGHTED_COEFFICIENT_SCHEME.md)
+[coefficient-scheme computation](../../extended-geometry/FOUNDATIONAL_WEIGHTED_COEFFICIENT_SCHEME.md)
 generates the full unsaturated thirteen-variable Keller ideal explicitly by
 the sixteen coefficients of the invariant determinant.  Both punctured
 coordinate divisors `p=0,q!=0` and `q=0,p!=0` are empty.  On `p=q=0`, exact
@@ -252,7 +254,7 @@ For cubic forms, hyperplanes have the three contact types
 \]
 
 The active
-[marked-point dimension barrier](MARKED_POINT_DIMENSION_BARRIER.md)
+[marked-point dimension barrier](../../extended-geometry/MARKED_POINT_DIMENSION_BARRIER.md)
 and its exact factorization calculation prove:
 
 \[

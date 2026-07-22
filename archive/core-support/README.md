@@ -3,6 +3,8 @@
 These files preserve supporting and superseded narratives for foundational-through-weighted core:
 
 - the former all-in-one foundational proof chain;
+- the former normalized factorization bridge, now replaced by the algebraic
+  model and projective incidence notes;
 - the positive invariance regression narrative;
 - the detailed weighted marked-root theorem clean-room audit;
 - the expanded weighted marked-root normalization; and

@@ -392,7 +392,7 @@ family.
 
 Open: prove (10) in the remaining cases and answer the large-group question
 (12).  Minimal fields of definition of the collision fibers are a separate
-arithmetic problem; see [OPEN_PROBLEMS.md](OPEN_PROBLEMS.md).
+arithmetic problem; see the [research roadmap](RESEARCH_ROADMAP.md).
 
 The exact regressions are:
 

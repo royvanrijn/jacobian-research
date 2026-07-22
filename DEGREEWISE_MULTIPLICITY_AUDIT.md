@@ -243,8 +243,8 @@ therefore identify the finite covers, their distinguished affine opens,
 their boundary primes, and the target scheme intersections.  Ramification
 indices and nilradicals are intrinsic under this isomorphism.
 
-The standalone
-[stabilization proposition](papers/marked-root-multiplicity/stable-functoriality.tex)
+The construction-independent
+[stable normalization functoriality theorem](verified/STABLE_NORMALIZATION_FUNCTORIALITY.md)
 proves, rather than assumes, that normalization commutes with adjoining
 identity variables.  It then tracks the extended height-one primes and
 Gauss valuations, scheme intersections, and nilradicals.  In particular,

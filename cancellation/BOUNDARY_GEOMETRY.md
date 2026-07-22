@@ -174,7 +174,10 @@ open.  It therefore identifies all three layers whenever the indicated
 formal data are defined.  Stabilization by identity variables is flat base
 change: it tensors intersection rings with a polynomial ring, preserves
 reduction, nilpotency indices, valuation labels, and the bipartite incidence
-diagram.  These statements require the canonical normalization boundary;
+diagram.  These assertions are instances of the construction-independent
+[stable normalization functoriality theorem](../verified/STABLE_NORMALIZATION_FUNCTORIALITY.md),
+including its Fitting and conductor base-change clauses.  They require the
+canonical normalization boundary;
 they are not assertions about arbitrary compactifications.
 
 ## 6. Stable comparison with weighted seeds

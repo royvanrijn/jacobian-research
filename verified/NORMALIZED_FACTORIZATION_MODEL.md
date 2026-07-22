@@ -1,10 +1,12 @@
 # The normalized factorization model
 
-This note packages the foundational counterexample into three propositions:
-an explicit affine-space source, a coordinate-free étaleness mechanism, and
-an exact linear comparison with the announced polynomial.  The longer
-[factorization bridge](NORMALIZED_FACTORIZATION_SLICE.md) supplies the
-projective interpretation and the extension to arbitrary unequal degrees.
+This is the canonical algebraic proof of the foundational construction.  Its
+three propositions give the normalized complete intersection and its global
+polynomial inverse, the coefficient--resultant étaleness mechanism, and the
+exact linear comparison with the announced polynomial.  The final section
+records the unequal-degree extension.  Projective hyperplane geometry is kept
+separately in the
+[foundational incidence construction](FOUNDATIONAL_INCIDENCE_CONSTRUCTION.md).
 
 Work over a field `k` of characteristic zero.  Put
 
@@ -212,7 +214,7 @@ and has the same invariant ring when `f` is nonzero.  A nonconstant `f` may
 introduce additional fixed fibers, so only invariant **units** preserve the
 everywhere-free slice action.
 
-## Proposition 2: the coefficient--resultant map is étale
+## Proposition 2: coefficient--resultant étaleness and normalized slices
 
 Let `V_i=\operatorname{Sym}^i(k^2)` and define
 
@@ -256,7 +258,26 @@ the identity
  \boxed{\det D\Theta=-\operatorname{Res}(L,Q)^2.}
 \]
 
-Let
+More generally, let `ell in V_3^*` be nonzero and put
+
+\[
+ X_\ell=\{(L,Q):\operatorname{Res}(L,Q)=1,\ \ell(LQ)=1\},
+\]
+
+\[
+ H_\ell=\{C\in V_3:\ell(C)=1\}\simeq\mathbb A^3.
+\]
+
+Multiplication induces an étale morphism
+
+\[
+ \mu_\ell:X_\ell\longrightarrow H_\ell.
+\]
+
+Indeed, this is the base change of `Theta` along `C -> (C,1)`.  Étaleness
+therefore holds for every hyperplane independently of its contact type.
+
+For the representative used in Proposition 1, let
 
 \[
  H=\{[C]_{T^2S}=1,\ \rho=1\}
@@ -329,6 +350,68 @@ The construction is therefore summarized by the entirely explicit chain
  \xrightarrow{\,G\,}\mathbb A^3
  \xrightarrow{\text{linear target change}}F_{\mathrm{orig}}.}
 \]
+
+## Unequal-degree extension
+
+For positive integers `p,q`, define
+
+\[
+ \Theta_{p,q}:V_p\times V_q\longrightarrow
+ V_{p+q}\times\mathbb A^1,
+ \qquad (A,B)\longmapsto(AB,\operatorname{Res}(A,B)).
+\]
+
+If `A` and `B` are coprime, the kernel of the differential of multiplication
+is again the relative-scaling line
+
+\[
+ (\dot A,\dot B)=\lambda(A,-B).
+\]
+
+The resultant has bidegree `(q,p)`, and therefore
+
+\[
+ d\operatorname{Res}_{(A,B)}(A,-B)
+ =(q-p)\operatorname{Res}(A,B).
+\]
+
+Thus `Theta_(p,q)` is étale on the coprime locus whenever `q-p` is nonzero in
+the ground field: its differential is injective, and source and target both
+have dimension `p+q+2`.  In characteristic zero this is exactly the
+unequal-degree case.
+
+The projective normalization also records the size of the residual ambiguity.
+Assume `q>p`, let `m` be a nonzero linear functional of `AB`, and put
+`r=Res(A,B)`.  Under `(A,B)->(lambda A,mu B)`,
+
+\[
+ m\longmapsto\lambda\mu m,
+ \qquad r\longmapsto\lambda^q\mu^p r.
+\]
+
+After imposing `lambda mu m=1`, the second normalization becomes
+
+\[
+ \lambda^{q-p}={m^p\over r},
+ \qquad \mu={1\over\lambda m}.
+\]
+
+Consequently `q=p+1` admits a unique algebraic normalization,
+
+\[
+ \lambda={m^p\over r},\qquad
+ \mu={r\over m^{p+1}},
+\]
+
+whereas `q-p>1` leaves a residual `mu_(q-p)` ambiguity and `p=q` leaves the
+relative-scaling tangent direction undetected.  The case `p>q` is the same
+after interchanging the factors.
+
+The first later consecutive case `(2,3)` is not affine five-space: for the
+natural tangent coefficient its class is `L^5-L^3` and its finite-field count
+is `q^5-q^3`.  Units, Picard group, factoriality, and the canonical class do
+not detect this failure.  The complete calculation is in the
+[`(2,3)` slice audit](../extended-geometry/QUADRATIC_CUBIC_FACTORIZATION_SLICE.md).
 
 ## Exact certificate
 

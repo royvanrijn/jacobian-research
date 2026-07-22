@@ -15,7 +15,8 @@ contains an `(N-3)`-dimensional family of stable classes.
 > **Snapshot: 22 July 2026.**  This is a timeline of public announcements,
 > external contributions, and results first recorded in this repository—not a
 > priority ruling or a claim of peer review.  The announcement appears as 19
-> or 20 July depending on timezone.  See the [evidence ledger](STATUS.md) and
+> or 20 July depending on timezone.  See the [theorem index](THEOREMS.yml),
+> its [rendered status summary](STATUS.md), and the
 > [provenance audit](archive/legacy-notes/PROVENANCE_AUDIT.md) for the careful
 > version.
 
@@ -104,7 +105,8 @@ contains an `(N-3)`-dimensional family of stable classes.
 
 The repository is both a proof project and a research diary that has now been
 cleaned into a small active theorem chain.  Mathematical completion and
-external review are deliberately kept separate in [STATUS.md](STATUS.md).
+external review are deliberately kept separate in the machine-readable
+[theorem index](THEOREMS.yml); [STATUS.md](STATUS.md) is its rendered summary.
 
 The plane problem is tracked separately in the [JC(2) constraint
 program](plane-jc/README.md).  Its current scoped result is an external
@@ -282,8 +284,8 @@ X\simeq\mathbb A^3&:&\text{the special }(2,1)\text{ hyperplane orbit}.
 
 The complete proof and exact symbolic certificate are in the
 [three-proposition factorization model](verified/NORMALIZED_FACTORIZATION_MODEL.md).
-The hyperplane-independent argument is isolated as three lemmas in the
-[foundational incidence construction](verified/FOUNDATIONAL_INCIDENCE_CONSTRUCTION.md).
+The projective hyperplane-orbit and Grothendieck-class argument is isolated in
+the [foundational incidence construction](verified/FOUNDATIONAL_INCIDENCE_CONSTRUCTION.md).
 
 Coordinates turn that construction into the binary cubic
 
@@ -548,9 +550,11 @@ types from one another, and all parameter roots within each type.
 The finer cancellation prime-intersection diagram depends on the contact
 resultant `Res(K_{m,r},L_{m,r})`.  Besides the irreducibility ranges and exact
 finite certificates, an endpoint-moment argument now proves uniform
-nonvanishing for every `m` in all three columns `r=1,2,3`; the `r=3` proof
+nonvanishing for every `m` in all four columns `r=1,2,3,4`; the `r=3` proof
 uses Schur--Cohn separation of a degree-six endpoint eliminant from the
-negative-binomial root disk.  The unrestricted problem for `r>=4` remains
+negative-binomial root disk, while the `r=4` proof isolates the exceptional
+conjugate pair and excludes its endpoint branch by rational Rouche, angle,
+and Bernstein certificates.  The unrestricted problem for `r>=5` remains
 open.  See the
 [contact-resultant reduction](cancellation/CONTACT_RESULTANT.md).
 
@@ -632,23 +636,26 @@ does not claim that its independently derived formulas are the manuscript's
 formulas or that the abstract reviews this work.  See the
 [rank-two construction and audit](extended-geometry/QUADRATIC_LADDER_AND_POISSON_AUDIT.md).
 
-The same flux method now applies to the full normalized degree-five seed
-surface.  In coordinates `(kappa,tau)`, a seed-dependent adapted change fixes
-the common quotient coordinate `R=2X-3X^2Q`; cancellation of the complete
-negative-`X` principal part uniquely forces an explicit rational quadratic
-shear.  The resulting maps
+The same flux method now applies uniformly to every normalized admissible
+degree-`N` seed for `N>=5`.  On `kappa!=-1,-2`, the adapted chart fixes the
+common quotient coordinate `R=2X-3X^2Q`; weighted homogeneity forces the
+complete negative-`X` principal part onto one universal four-residue line,
+which a unique quadratic `Q^2` shear cancels.  The replacement chart at
+`kappa=-1` has its own universal residue line and is completed by an `XQ`
+shear.  Thus every such seed has an exact symplectic completion
 
 \[
-G_{\kappa,\tau}:\mathbb A^4\longrightarrow\mathbb A^4
+G_H:\mathbb A^4\longrightarrow\mathbb A^4
 \]
 
-are exact symplectic and polynomially left--right equivalent to the weighted
-maps times `id_(A^1)`.  On the ordinary boundary-clean open this descends the
-full two-dimensional stable moduli from three canonical pairs to two.  The
-former fixed-third-component family is the `kappa=-9` slice.  See the
-[original slice theorem](extended-geometry/DEGREE_FIVE_RANK_TWO_DESCENT.md)
-and the
-[full surface theorem](extended-geometry/ALL_DEGREE_RANK_TWO_DESCENT_PROGRAM.md).
+that is polynomially left--right equivalent to the weighted map times
+`id_(A^1)`.  Full-cover faithfulness transfers the entire `(N-3)`-dimensional
+seed open to pairwise stably inequivalent exact symplectic maps of `A^4`; a
+fixed `kappa=-9` slice has dimension `N-4`.  Degree five remains the first
+worked example: its full seed surface gives two stable dimensions, and the
+original fixed-third-component line supplies explicit formulas.  See the
+[all-degree rank-two theorem](extended-geometry/RANK_TWO_SYMPLECTIC_DESCENT.md)
+and the [degree-five worked example](extended-geometry/DEGREE_FIVE_RANK_TWO_DESCENT.md).
 
 ## Detailed novelty ledger
 
@@ -658,22 +665,27 @@ nonproperness theorems; reduced, scheme-theoretic, and formal boundary
 invariants stable under left--right equivalence and stabilization; complete
 normalization-boundary exhaustion; and the distinction between reduced and
 nilpotently thick boundary intersections.  The contribution-by-source table
-above and [STATUS.md](STATUS.md) delimit these repository results from
-external discoveries and from locally reproduced work.
+above and the [theorem index](THEOREMS.yml) delimit these repository results
+from external discoveries and from locally reproduced work.  The compact
+[status page](STATUS.md) renders that index.
 
 ## Reading and reproduction
 
 The foundational map, cubic marked-root model, exact image theorem, and
-weighted theorem are the stable core. See [STATUS.md](STATUS.md) for detailed
-evidence levels.
+weighted theorem are the stable core. See the [theorem index](THEOREMS.yml)
+for evidence levels and [STATUS.md](STATUS.md) for the rendered overview.
 
 The stable-core reading path is:
 
 1. [Foundational Keller map](verified/FOUNDATIONAL_GEOMETRY.md)
-2. [Cubic marked-root model](verified/MARKED_ROOT_MODEL.md)
-3. [Exact image and nonproperness](verified/IMAGE_AND_NONPROPERNESS.md)
-4. [Weighted marked-root theorem](verified/WEIGHTED_SEED_THEOREM.md)
-5. [Constant-kernel quotients and essential cubic input](verified/CONSTANT_KERNEL_QUOTIENT.md)
+2. [Tangent-map core](verified/TANGENT_MAP_CORE.md)
+3. [Normalized factorization model](verified/NORMALIZED_FACTORIZATION_MODEL.md)
+4. [Foundational incidence construction](verified/FOUNDATIONAL_INCIDENCE_CONSTRUCTION.md)
+5. [Cubic marked-root model](verified/MARKED_ROOT_MODEL.md)
+6. [Exact image and nonproperness](verified/IMAGE_AND_NONPROPERNESS.md)
+7. [Weighted marked-root theorem](verified/WEIGHTED_SEED_THEOREM.md)
+8. [Stable normalization functoriality](verified/STABLE_NORMALIZATION_FUNCTORIALITY.md)
+9. [Constant-kernel quotients and essential cubic input](verified/CONSTANT_KERNEL_QUOTIENT.md)
 
 Further families continue in one sequence:
 [cancellation construction](cancellation/CONSTRUCTION.md),
@@ -688,8 +700,8 @@ For execution, start with [REPRODUCE.md](REPRODUCE.md).  The core paper is
 [papers/core-counterexample/main.tex](papers/core-counterexample/main.tex).
 Extended geometry is indexed in
 [extended-geometry](extended-geometry/README.md); cancellation
-arithmetic, rigidity, and open problems live beside the construction under
-`cancellation/`.  Superseded derivations and exploratory tools
+arithmetic, rigidity, and the research roadmap live beside the construction
+under `cancellation/`.  Superseded derivations and exploratory tools
 remain available through the [archive](archive/README.md).
 
 ## Credits and sources

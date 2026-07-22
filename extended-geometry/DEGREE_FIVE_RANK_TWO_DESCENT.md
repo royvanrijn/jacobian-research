@@ -1,8 +1,11 @@
-# Rank-two symplectic descent of the degree-five moduli family
+# Worked example: rank-two symplectic descent in degree five
 
-This note proves that the explicit degree-five stable-moduli family admits a
-four-dimensional Poisson completion.  It descends the family from the
-universal six-dimensional cotangent lift to two canonical pairs.
+This note preserves the first explicit rank-two calculation as a worked
+degree-five example.  It proves directly that the original one-parameter
+stable-moduli family admits a four-dimensional Poisson completion, descending
+that family from the universal six-dimensional cotangent lift to two
+canonical pairs.  The uniform theorem for every degree `N>=5` is now the
+canonical source: [Rank-two symplectic descent](RANK_TWO_SYMPLECTIC_DESCENT.md).
 
 There is a normalization point to settle first.  In the verified family,
 
@@ -260,9 +263,9 @@ brackets, all three relative-Hamiltonian equations, the complete principal
 part, uniqueness of (18), polynomiality, and the source automorphism.
 
 This is an internal repository theorem with no recorded external specialist
-review.  This certificate proves rank-two descent for the explicit
-degree-five line.  The later
-[degree-five surface theorem](ALL_DEGREE_RANK_TWO_DESCENT_PROGRAM.md) proves
-the two-parameter normalized degree-five extension on
-`kappa != -2,-1`.  Descent for the full `(N-3)`-dimensional family in
-arbitrary degree remains open.
+review.  Its role is an explicit worked example for the original degree-five
+line.  The later [all-degree theorem](RANK_TWO_SYMPLECTIC_DESCENT.md) proves
+completion for every normalized admissible seed in every degree `N>=5`, on
+both adapted charts.  Full-cover faithfulness transfers `N-3` stable
+dimensions to `A^4`; in degree five this gives the complete two-dimensional
+seed surface, with the present line as the `kappa=-9` specialization.

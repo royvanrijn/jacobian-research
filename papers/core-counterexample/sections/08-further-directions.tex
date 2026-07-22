@@ -1,35 +1,27 @@
-\section{Further directions}\label{sec:further}
+\section{Subsequent developments}\label{sec:further}
 
-The results above stop with the uniform weighted construction.  Two natural
-questions remain.  First, for a fixed admissible $H$, one may try to classify
-the pole valuations \eqref{eq:boundary-valuations} and thereby determine the
-exact image, nonproperness set, and special fibers of $G_H$.  Second, one may
-compare other one-variable inverse constructions with the weighted family
-under polynomial source and target automorphisms.
+Later repository papers develop the inverse geometry beyond the scope of the
+present foundational article.  The exact image, nonproperness set, and
+special fibers of the weighted family are treated in
+\texttt{extended-geometry/CANONICAL\_FAMILY\_IMAGE.md} and
+\texttt{verified/IMAGE\_AND\_NONPROPERNESS.md}.  The normalized-cover and
+boundary formalism is developed in
+\texttt{MARKED\_ROOT\_KELLER\_MAPS.md} and
+\texttt{cancellation/BOUNDARY\_GEOMETRY.md}.
 
-Subsequent work in this repository answers the degree-by-degree comparison
-question beyond the scope of this paper.  For every generic fiber
-degree $N\ge4$, there are at least $\tau(N-1)$ pairwise stably inequivalent
-three-dimensional Keller maps, where $\tau$ is the positive-divisor counting
-function.  The cancellation types are indexed by the
-proper divisors $r\mid N-1$, with $m=(N-1)/r-1$, and are separated by their
-boundary ramification and nilpotency indices; a split weighted seed supplies
-one further reduced-boundary class.  This paragraph is only a retrospective
-summary.  The canonical statement and proof are in
-\texttt{papers/marked-root-multiplicity/main.tex}; the common
-normalized-root-cover framework is recorded separately in
-\texttt{MARKED\_ROOT\_KELLER\_MAPS.md}.
+The canonical degreewise comparison theorem is
+\texttt{papers/marked-root-multiplicity/main.tex}.  It proves that for every
+$N\ge4$ there are at least
+\[
+ 1+(N-1)\tau(N-1)-\sigma(N-1)
+\]
+pairwise stably inequivalent maps of generic degree $N$, including all
+parameter-root branches of the cancellation construction and one weighted
+class.  The separate positive-dimensional weighted-moduli theorem and its
+full-cover faithfulness refinement are in
+\texttt{extended-geometry/DECORATED\_NORMALIZATION\_INVARIANT.md}.
 
-Neither direction is used in this paper.  In particular, computations for
-special quartics, bounded-degree discriminants, finite fields, transfer
-blocks, and cancellation families do not prove or strengthen any theorem
-stated above.  They may suggest conjectures or supply test cases, but the
-present argument depends only on the explicit cubic identities, the two
-projective root charts, normalization and Zariski's Main Theorem, and the
-purity argument for symmetric monodromy.
-
-A useful next foundational step would be an independent algebraic-geometry
-audit of Theorem~\ref{thm:weighted-global}, especially the passage from the
-formal $C=0$ expansions to algebraic regularity and the precise divisorial
-structure of the complement of $\mathcal R_H$.  Until that audit is supplied,
-the paper deliberately states no uniform seed-by-seed boundary theorem.
+These subsequent results are not inputs to this paper.  The argument here
+continues to depend only on the explicit cubic identities, the two projective
+root charts, normalization and Zariski's Main Theorem, and purity for the
+symmetric-monodromy statement.

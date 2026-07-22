@@ -3,22 +3,26 @@
 This directory contains the stable proof chain:
 
 - [Foundational Keller map](FOUNDATIONAL_GEOMETRY.md): exact determinant and collision;
+- [Tangent-map core](TANGENT_MAP_CORE.md): the central theorem unifying the
+  inverse pencil, plane incidence, Jacobian factor, discriminant normalization,
+  reconstruction pole, Hessian Fitting divisor, weighted suspension, and the
+  comparison with cancellation suspension;
 - [Normalized factorization model](NORMALIZED_FACTORIZATION_MODEL.md): three compact
   propositions giving the polynomial `A^3` source, coefficient--resultant
-  étaleness, and exact relation to the foundational polynomial;
+  étaleness, exact relation to the foundational polynomial, LND/slice proof,
+  and unequal-degree extension;
 - [Foundational incidence construction](FOUNDATIONAL_INCIDENCE_CONSTRUCTION.md):
-  three coordinate-free lemmas separating universal étaleness, projective
-  normalization and generic degree, and the exceptional `(2,1)` affine slice;
-- [Factorization bridge](NORMALIZED_FACTORIZATION_SLICE.md): projective normalization
-  and the unequal-degree extension;
-- [Cubic marked-root model](MARKED_ROOT_MODEL.md): the cubic marked-root isomorphism;
+  projective normalization, arbitrary hyperplanes, the three contact orbits,
+  and the exceptional `(2,1)` affine slice;
+- [Cubic marked-root model](MARKED_ROOT_MODEL.md): the marked-root isomorphism
+  and its affine-root and root-at-infinity reconstruction charts;
 - [Cubic image and nonproperness theorem](IMAGE_AND_NONPROPERNESS.md): exact image, fibers, and nonproperness;
 - [Weighted marked-root theorem](WEIGHTED_SEED_THEOREM.md): weighted construction and symmetric
   monodromy.
-- [Tangent-map core](TANGENT_MAP_CORE.md): the central weighted-suspension
-  diagram unifying the determinant, inverse pencil, discriminant normalization,
-  reconstruction poles, and Hessian Fitting divisor, together with the
-  distinct controlled-boundary core of the cancellation maps.
+- [Stable normalization functoriality](STABLE_NORMALIZATION_FUNCTORIALITY.md):
+  the construction-independent theorem for normalization, boundary valuations,
+  intersections, nilpotents, relative differentials, Fitting ideals, and
+  conductor decorations after adjoining identity variables;
 - [Constant-kernel quotient](CONSTANT_KERNEL_QUOTIENT.md): the general
   triangular-extension and fiber-scheme theorem, its GZ-type context, the
   verified 24-to-22 quotient, and the mandatory essential-dimension search

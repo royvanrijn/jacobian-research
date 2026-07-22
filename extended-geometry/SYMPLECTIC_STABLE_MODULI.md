@@ -5,17 +5,16 @@ This note combines three results already proved in the repository:
 1. the decorated-normalization theorem, whose generically finite invariant
    has image dimension `N-3` on a nonempty ordinary boundary-clean weighted
    locus for every `N>=4`;
-2. the explicit degree-five family `F_lambda:A^3->A^3`, whose stable
-   polynomial left--right class retains the affine-equivalence class of the
-   Hessian-root divisor of its weighted seed; and
+2. the explicit degree-five family `F_lambda:A^3->A^3`, for which full-cover
+   faithfulness recovers `lambda` exactly while the Hessian-root divisor gives
+   an independent coarse invariant; and
 3. the exact cotangent lift of a Keller map, which is polynomially
    right-equivalent to the corresponding identity stabilization.
 
 The combination gives an `(N-3)`-dimensional stable-moduli theorem for exact
 symplectic etale endomorphisms of affine six-space in every generic degree
-`N>=4`.  A separate relative-flux calculation now descends the explicit
-degree-five parameter line to affine four-space.  The cotangent construction
-also produces parameterized injective non-surjective Weyl-algebra
+`N>=4`.  The cotangent construction also produces parameterized injective
+non-surjective Weyl-algebra
 endomorphisms, while making no claim that the latter are pairwise inequivalent
 under arbitrary Weyl automorphisms.
 
@@ -53,7 +52,8 @@ q=\frac{4+\sqrt6}{10},\qquad
 
 The degree-five stable-moduli theorem proves that every `F_lambda` is a Keller
 map of generic degree five with a five-point fiber, and that stable polynomial
-left--right equivalence implies
+left--right equivalence implies `lambda=mu`.  Independently, its coarse
+Hessian/Fitting invariant implies
 
 \[
 \chi(\mu)\in
@@ -66,51 +66,9 @@ left--right equivalence implies
 \tag{1.1}
 \]
 
-Thus every stable class meets the parameter line in at most six points.
+Thus (1.1) remains an explicit six-element coarse orbit, although full-cover
+faithfulness separates every parameter exactly.
 
-## 1A. Rank-two descent in degree five
-
-The third output of this family is fixed:
-
-\[
- C_\lambda=x\left(1-\frac87xy+x^2z\right).
-\]
-
-After one fixed diagonal source change, `2C_lambda` becomes the common
-coordinate `R=2X-3X^2Q`.  The
-[rank-two descent theorem](DEGREE_FIVE_RANK_TWO_DESCENT.md) computes the full
-relative Hamiltonian residue and proves that the unique pole-free quadratic
-shear is
-
-\[
- Z\longmapsto Z+\kappa_\lambda Q^2,qquad
- \kappa_\lambda=-{27(57\lambda^2-138\lambda+73)
- \over196(\lambda-1)^2}.
-\]
-
-It constructs polynomial coordinates `(R,T_lambda,D_lambda,S_lambda)` with
-all six canonical brackets and an exact factorization
-
-\[
- G_\lambda\sim_{\rm LR}F_\lambda\times\operatorname{id}_{\mathbb A^1}.
-\]
-
-Consequently there are uncountably many pairwise stably inequivalent exact
-symplectic maps of `A^4` of generic degree five.
-
-The later [degree-five surface theorem](ALL_DEGREE_RANK_TWO_DESCENT_PROGRAM.md)
-uses normalized coordinates `(kappa,tau)` on the entire seed surface.  On
-`kappa != -2,-1`, it proves that the unique quadratic shear
-
-\[
- Z\longmapsto Z+K(\kappa,\tau)Q^2
-\]
-
-cancels all four Laurent residues.  Hence every admissible degree-five map on
-this chart has a four-dimensional exact symplectic completion.  Intersecting
-with the ordinary boundary-clean open of the decorated-normalization theorem
-transfers the full two-dimensional stable moduli to `A^4`.  The line above is
-the specialization `kappa=-9`.
 
 ## 2. Exact cotangent lifts
 
@@ -180,9 +138,8 @@ five-point target fiber of `F_lambda` has five distinct preimages under
 `widehat F_lambda`.
 
 If `widehat F_lambda` and `widehat F_mu` are polynomially left--right
-equivalent after adjoining any number of identity variables, then (1.1)
-holds.  Consequently every stable class meets this family in at most six
-parameters, and
+equivalent after adjoining any number of identity variables, then
+`lambda=mu`.  Consequently
 
 \[
 \boxed{
@@ -222,8 +179,9 @@ F_\mu\times\operatorname{id}_{\mathbb A^{3+s}}.
 \]
 
 Thus `F_lambda` and `F_mu` are stably polynomially left--right equivalent.
-The degree-five stable-moduli theorem then gives (1.1).  Each orbit has at most
-six parameters, while `Lambda` is uncountable, proving (3.1).
+The full-cover faithfulness theorem then gives `lambda=mu`.  Since `Lambda` is
+uncountable, this proves (3.1).  Equation (1.1) remains a weaker independent
+consequence of the Hessian/Fitting divisor.
 
 ## 3A. Degreewise dimension theorem
 
@@ -304,12 +262,10 @@ here is the degreewise transfer
 in dimension six}.
 \]
 
-This holds for every `N>=4` and is stronger than transferring only the earlier
-divisor-count lower bound `tau(N-1)`.  The latter remains useful for separating
-the weighted construction from multiple cancellation types.  The degree-five
-surface theorem additionally transfers the full two-dimensional seed moduli
-to dimension four; its explicit `kappa=-9` line retains the concrete
-six-element orbit bound.
+This holds for every `N>=4`.  It is a moduli-dimension statement, distinct
+from the finite arithmetic count
+`1+(N-1)tau(N-1)-sigma(N-1)`, which additionally separates cancellation
+branches from the weighted construction.
 
 ## 6. Reproduction and dependencies
 
@@ -318,20 +274,19 @@ independent exact checks are:
 
 ```bash
 .venv/bin/python scripts/verify_degree_five_stable_moduli.py
-.venv/bin/python scripts/verify_degree_five_flux_surface.py
 .venv/bin/python scripts/verify_symplectic_weyl_lift.py
 ```
 
 The first checks the explicit degree-five seed, Keller map, boundary
-exclusions, discriminant saturation and orbit invariant.  The surface checker
-verifies the uniform adapted coordinate, quotient brackets, localized
-Hamiltonian, complete Laurent obstruction and unique shear.  The last checks
+exclusions, discriminant saturation and orbit invariant.  The last checks
 the inverse Jacobian, Weyl commutators, canonical one-form identity,
 six-variable Jacobian and symbolic-momentum collision for the foundational
 map.
 
-The load-bearing non-computational input is the stable Hessian-root invariant
-proved in `DEGREE_FIVE_STABLE_MODULI.md`.  No external specialist review of
-that invariant or of the combined stable-moduli consequence is currently
-recorded.  In particular, Christopher D. Long's independent consequence
-papers do not validate or review this theorem.
+The load-bearing non-computational input for exact parameter recovery is
+full-cover faithfulness in `DECORATED_NORMALIZATION_INVARIANT.md`; the stable
+Hessian-root invariant in `DEGREE_FIVE_STABLE_MODULI.md` supplies the
+independent coarse orbit.  No external specialist review of either invariant
+or of the combined stable-moduli consequence is currently recorded.  In
+particular, Christopher D. Long's independent consequence papers do not
+validate or review this theorem.

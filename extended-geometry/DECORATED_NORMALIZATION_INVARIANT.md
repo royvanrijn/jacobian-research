@@ -62,6 +62,12 @@ divisor.  Passing to `sqf(H'')` loses genuine invariant information.
 
 ### Stable functoriality, including multiplicities
 
+All base-change assertions in this subsection are applications of the
+construction-independent
+[stable normalization functoriality theorem](../verified/STABLE_NORMALIZATION_FUNCTORIALITY.md).
+The present note supplies the family-specific identification of the intrinsic
+decorated normalization.
+
 Suppose two split weighted marked-root maps have the intrinsically ordered
 target-boundary pair `(Z_Delta,Z_0)` used in the stable boundary theorem.
 Removing `Z_0` identifies the discriminant vertex and its normalization with
@@ -81,7 +87,7 @@ their zeroth Fitting ideal sheaves.  After adjoining `q` identity variables,
  \simeq \operatorname{pr}_1^*Omega_{\widetilde D_H/D_H}.
 \]
 
-Fitting ideals commute with this flat base change.  Hence the effective
+Fitting ideals commute with this flat base change by that theorem.  Hence the effective
 Cartier divisor (1.1), including every coefficient
 `ord_alpha(H'')`, is preserved under stable polynomial left--right
 equivalence.
@@ -940,10 +946,10 @@ intersections remain reduced.  This accounts for every boundary prime and
 specialization arrow.  Nonvanishing is proved wherever the cancellation
 parameter polynomial is known irreducible—in particular for every `mr<=30`,
 the full `m=1` ladder, and the uniform arithmetic criteria.  A separate
-endpoint-moment and Schur--Cohn argument proves all three complete columns
-`r=1,2,3`, without
-irreducibility, and direct resultants are checked for `1<=m,r<=5`.  Outside
-proven ranges the resultant is retained as an explicit per-input certificate.
+endpoint-moment, Schur--Cohn, and rational-certificate argument proves all
+four complete columns `r=1,2,3,4`, without irreducibility, and direct
+resultants are checked for `1<=m,r<=5`.  Outside proven ranges the resultant
+is retained as an explicit per-input certificate.
 
 ### Completion audit
 

@@ -1427,8 +1427,8 @@ problem.
   in [`CONTROLLED_BOUNDARY_SUSPENSIONS.md`](CONTROLLED_BOUNDARY_SUSPENSIONS.md).
 - The canonical finite normalization and invariant ladder are in
   [`BOUNDARY_GEOMETRY.md`](BOUNDARY_GEOMETRY.md).
-- The exact stable base-change proposition is in
-  [`../papers/marked-root-multiplicity/stable-functoriality.tex`](../papers/marked-root-multiplicity/stable-functoriality.tex).
+- The construction-independent stable base-change theorem is
+  [`../verified/STABLE_NORMALIZATION_FUNCTORIALITY.md`](../verified/STABLE_NORMALIZATION_FUNCTORIALITY.md).
 - Rigidity after triangularization is in [`RIGIDITY.md`](RIGIDITY.md).
 - The finite-cancellation operator, its leading equation, and the Laurent
   Hensel argument used in Theorem 8.7 are in

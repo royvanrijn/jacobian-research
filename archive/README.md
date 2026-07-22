@@ -24,3 +24,7 @@ deformation, compactification, and audit notes superseded by stronger active
 theorems.  [Derived constructions](derived-constructions/) and
 [exploratory tooling](tooling/) retain generated-model narratives, searches,
 bounded scans, and diagnostics outside the primary proof path.
+
+The [provenance-audits archive](provenance-audits/) preserves dated source
+searches and attribution snapshots that should not be read as active theorem
+statements.

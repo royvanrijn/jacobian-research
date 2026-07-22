@@ -299,17 +299,19 @@ no coarse moduli space for all exact symplectic maps is assumed.
 Separately, the degreewise multiplicity theorem transfers without loss:
 
 \[
-\boxed{\text{There are at least }\tau(N-1)\text{ pairwise stably polynomially
-left-right inequivalent exact symplectic maps of generic degree }N.}
+\boxed{\text{There are at least }
+1+(N-1)\tau(N-1)-\sigma(N-1)
+\text{ pairwise stably polynomially left-right inequivalent exact symplectic
+maps of generic degree }N.}
 \]
 
 Indeed, `widehat F` is right-equivalent to `F x id_{A^3}`.  If two lifted maps
 became polynomially left-right equivalent after further stabilization, then
 their original maps would already be stably equivalent, contradicting the
 existing boundary invariants.  The `N-3` theorem is the positive-dimensional
-weighted-locus headline; the `tau(N-1)` theorem remains complementary because
-it distinguishes the weighted locus from several cancellation types and
-separates those cancellation types from one another.
+weighted-locus headline; the finite arithmetic count remains complementary
+because it distinguishes the weighted locus from every cancellation type and
+separates all selected parameter roots within those types.
 
 Each such map also yields an injective non-surjective endomorphism of `A_3(k)`
 whose differential-order symbol map has the corresponding generic degree.

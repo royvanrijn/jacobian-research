@@ -1,428 +1,195 @@
 # The cubic map as a marked-root space
 
-This note first constructs the counterexample intrinsically as an open
-restriction of the addition map for effective divisors on `P^1`.  Residual
-intersection with an auxiliary conic proves that the source is `A^3`.  The
-two affine charts are retained only as a global coordinate certificate for
-the displayed polynomial formula and the earlier fiber calculations in
+This note gives only the marked-root interpretation of the foundational map
+and the two reconstruction charts needed to make that interpretation global.
+The second chart is essential: it identifies the source divisor `x=0` with a
+simple root at infinity.  The normalized factorization proof belongs to
+[NORMALIZED_FACTORIZATION_MODEL.md](NORMALIZED_FACTORIZATION_MODEL.md), the
+projective hyperplane geometry to
+[FOUNDATIONAL_INCIDENCE_CONSTRUCTION.md](FOUNDATIONAL_INCIDENCE_CONSTRUCTION.md),
+and the image and fiber analysis to
 [IMAGE_AND_NONPROPERNESS.md](IMAGE_AND_NONPROPERNESS.md).
 
-Work over a field of characteristic zero.  Write `F(x,y,z)=(a,b,c)` for the
-map in the README.
-
-## Intrinsic symmetric-product form
-
-Consider
+Work over a field of characteristic zero.  Write
+`F(x,y,z)=(a,b,c)` for the map in
+[FOUNDATIONAL_GEOMETRY.md](FOUNDATIONAL_GEOMETRY.md), and attach to a target
+the binary cubic
 
 \[
-\pi:\mathbb P^1\times\operatorname{Sym}^2(\mathbb P^1)
-\longrightarrow\operatorname{Sym}^3(\mathbb P^1),\qquad
-(p,\{q,r\})\longmapsto\{p,q,r\}.
+ Q_{a,b,c}(U,V)=cU^3-2U^2V+bUV^2-2aV^3.             \tag{1}
 \]
 
-Its source is the incidence space of a binary cubic with one root marked.
-The ramification divisor is
+Let
 
 \[
-D=\{(p,\{q,r\}):p=q\text{ or }p=r\},
+ I=\{((a,b,c),[U:V])\in\mathbb A^3\times\mathbb P^1:
+ Q_{a,b,c}(U,V)=0\}.                                \tag{2}
 \]
 
-the repeated-marked-root locus.  Under
-`Sym^3(P^1) ~= P^3`, the small diagonal `{3p}` is a twisted cubic.  Choose a
-hyperplane `H` tangent but not osculating to it and put
+The projection `I -> A^3` is the finite flat degree-three incidence cover:
+each fiber is the projective root divisor of (1), and the fixed coefficient
+`-2` prevents an entire projective-line fiber.  Let `I^simp` be the locus on
+which the marked projective root is simple.
+
+Equivalently, under
 
 \[
-X=(\mathbb P^1\times\operatorname{Sym}^2(\mathbb P^1))
-   \setminus(D\cup\pi^{-1}(H)),\qquad
-Y=\operatorname{Sym}^3(\mathbb P^1)\setminus H.
+ \operatorname{Sym}^3(\mathbb P^1)\simeq\mathbb P^3,
 \]
 
-After a change of coordinate on `P^1`, write a binary cubic as
+this is the incidence of a binary cubic with one root marked, restricted away
+from the repeated-marked-root divisor and from the tangent-nonosculating
+hyperplane used to make the cubic coefficient chart affine.  The projective
+geometry and the exceptional `(2,1)` contact type are proved in the incidence
+note cited above.
+
+## The affine-root reconstruction chart
+
+On `V!=0`, put `u=U/V` and dehomogenize (1):
 
 \[
-[c:d:b:e]=cU^3+dU^2V+bUV^2+eV^3
+ P(T)=cT^3-2T^2+bT-2a.                              \tag{3}
 \]
 
-and take `H={d=0}`.  Indeed, on the small diagonal
+On the source open `x!=0`, set
 
 \[
-(\alpha U+\beta V)^3
-=[\alpha^3:3\alpha^2\beta:3\alpha\beta^2:\beta^3],
+ u=y+{1\over x},\qquad v={1\over x}.
 \]
 
-so `d=0` cuts it with multiplicities two and one.  Hence the hyperplane is
-tangent and not osculating.  Normalizing `d=-2` and setting `e=-2a` identifies
-`Y` with `A^3_(a,b,c)` and gives the binary cubic
+Direct substitution in `F` gives
 
 \[
-Q_{a,b,c}(U,V)=cU^3-2U^2V+bUV^2-2aV^3.
+ a=u^2+uv-cu^3,qquad b=4u+2v-3cu^2.                \tag{4}
 \]
 
-The inverse image of this affine chart under `pi` is exactly the incidence
-space of such a cubic with one projective root marked.  Removing `D` retains
-exactly the simple marked roots.  In other words, the open `X` above is the
-simple-root incidence `I^simp` used below.
-
-The residual-intersection argument in the next section proves intrinsically
-that
+Consequently
 
 \[
-X\cong\mathbb A^3,\qquad Y\cong\mathbb A^3.
+ P(u)=0,qquad P'(u)=3cu^2-4u+b=2v.                 \tag{5}
 \]
 
-Because `pi` is generically three-to-one and its ramification divisor has been
-removed, `pi|X` is étale and generically three-to-one.  This already gives the
-counterexample without polynomial coordinates: after choosing affine-space
-identifications, its Jacobian determinant is a unit in a polynomial ring and
-hence a nonzero constant.  The reconstruction charts
-later identify one choice of affine coordinates with the displayed map `F`;
-the determinant and collision are compact independent certificates.
-
-## Boundary lines and the auxiliary conic
-
-There is also a coordinate-light explanation of why the source open is
-affine three-space.  Choose affine coordinate `t` on
-`P^1 \ {infinity}` so that the hyperplane section is the zero-sum condition
+Thus an affine root `u` is simple exactly when `v!=0`.  Conversely a simple
+affine root reconstructs a unique source point:
 
 \[
-x+y+z=0.                                             \tag{A}
+ v={P'(u)\over2},\qquad x={1\over v},\qquad y=u-v,
 \]
 
-On the small diagonal this becomes `3x=0`; after projective closure the
-hyperplane meets the twisted cubic in the divisor `2[infinity]+[0]`.  This is
-the intrinsic reason that the chosen hyperplane is tangent but not
-osculating.
-
-Fix the marked point `x`.  In the plane `Sym^2(P^1)`, write
-
 \[
-D_x=\{Q:Q\text{ contains }x\},\qquad
-E_x=\{Q:x+Q\in H\}.
+ z=5v^2-3uv-cv^3.                                   \tag{6}
 \]
 
-If `Gamma={2t}` is the Veronese conic, then `D_x` is the tangent to `Gamma`
-at `2x`, while the `E_x` form the pencil through
-`p_infinity=2[infinity]`.  Put
+Substitution of (6) into `F` returns `(a,b,c)`.  These are the same formulas
+as the `t,r` formulas in
+[IMAGE_AND_NONPROPERNESS.md](IMAGE_AND_NONPROPERNESS.md), with `t=u` and
+`r=2v`.
+
+## The global marked projective root
+
+Direct expansion of the coordinates of `F` proves the polynomial identity
 
 \[
-\tau(x)=-x/2,\qquad \alpha=\tau^{-1},\quad \alpha(x)=-2x,
-\qquad h(x)=D_x\cap E_x=x+\alpha(x).
+ Q_{F(x,y,z)}(1+xy,x)=0.                             \tag{7}
 \]
 
-Here the last plus sign denotes addition of effective divisors, not addition
-of affine coordinates.  The points `h(x)` trace a second smooth conic
-`C=h(P^1)`.  Relative to `C`, the two boundary lines have the uniform chord
-descriptions
+Every source point therefore marks the projective root
 
 \[
-E_x=\overline{h(x)p_\infty},\qquad
-D_x=\overline{h(x)h(\tau(x))},                      \tag{B}
+ \boxed{[U:V]=[1+xy:x].}                            \tag{8}
 \]
 
-with a coincident chord interpreted as a tangent.
+For `x!=0`, this is the affine root `U/V=u=y+1/x`.  Formula (8), unlike that
+affine coordinate, remains defined across `x=0` because `x` and `1+xy` cannot
+vanish simultaneously.
 
-For `(x,Q)` in `X`, the line through `h(x)` and `Q` is defined because their
-coincidence would put `Q` on both removed boundary lines.  Its residual
-intersection with `C` defines
+## The root-at-infinity reconstruction chart
 
-\[
-\rho:X\longrightarrow C\setminus\{p_\infty\}\simeq\mathbb A^1. \tag{C}
-\]
-
-The omitted residual value `p_infinity` is exactly the condition `Q in E_x`.
-For a residual point `s`, the condition `Q in D_x` excludes exactly the one
-marked point satisfying `s=h(tau(x))`.  Thus
+On `U!=0`, set `s=V/U`.  Equation (1) becomes
 
 \[
-B=\{(x,s)\in\mathbb P^1\times(C\setminus\{p_\infty\}):
-       s\ne h(\tau(x))\}
-\]
-
-is the complement of a section in a projective-line bundle over `A^1`.
-Hence it is a torsor under a line bundle; both the line bundle and torsor are
-trivial, so `B` is isomorphic to `A^2`.  Over `B`, the point `Q` varies on the
-line `h(x)s` with `h(x)` removed, giving another complement-of-a-section
-affine-line bundle.  Line bundles and additive torsors on affine space are
-trivial, so
-
-\[
-X\longrightarrow B\longrightarrow\mathbb A^1,
-\qquad X\simeq\mathbb A^3.                          \tag{D}
-\]
-
-This residual-intersection construction supplies a natural first coordinate
-and a conceptual proof of the source isomorphism.  The two charts below are
-still needed as an explicit coordinate certificate, including regularity at
-the projective root at infinity, and to identify this abstract affine
-three-space with the displayed polynomial map.
-
-## The affine-root chart
-
-On `x!=0`, put
-
-\[
-u=y+{1\over x},\qquad v={1\over x}.
-\]
-
-Substitution in the three coordinates of `F`, followed by elimination of
-`x,y,z`, gives
-
-\[
-a=u^2+uv-cu^3,\qquad b=4u+2v-3cu^2.                 \tag{1}
-\]
-
-For
-
-\[
-P(T)=cT^3-2T^2+bT-2a,
-\]
-
-equation (1) immediately yields
-
-\[
-P(u)=0,\qquad P'(u)=3cu^2-4u+b=2v.                 \tag{2}
-\]
-
-Thus an affine root `u` is simple exactly when `v!=0`.  Conversely, a simple
-root reconstructs a unique source point:
-
-\[
-v={P'(u)\over2},\qquad x={1\over v},\qquad y=u-v,
-\qquad z=5v^2-3uv-cv^3.                            \tag{3}
-\]
-
-Substitution of (3) in `F` gives `(a,b,c)`.  These are the same formulas as
-the `t,r` formulas in [IMAGE_AND_NONPROPERNESS.md](IMAGE_AND_NONPROPERNESS.md),
-with `t=u` and `r=2v`.
-
-## The projective root
-
-For a target `(a,b,c)`, define the binary cubic
-
-\[
-Q_{a,b,c}(U,V)
- =cU^3-2U^2V+bUV^2-2aV^3.                          \tag{4}
-\]
-
-Its `V!=0` dehomogenization is `P(U/V)`.  Direct expansion of the coordinates
-of `F` proves the polynomial identity
-
-\[
-Q_{F(x,y,z)}(1+xy,x)=0.                             \tag{5}
-\]
-
-Consequently every source point marks the projective root
-
-\[
-[U:V]=[1+xy:x].                                     \tag{6}
-\]
-
-For `x!=0`, (6) is the affine root `U/V=u=y+1/x`.  Unlike that affine
-coordinate, (6) continues across `x=0`.
-
-## The root-at-infinity chart
-
-On `U!=0`, set `s=V/U`.  Equation (4) becomes
-
-\[
-R(s)=c-2s+bs^2-2as^3=0.                             \tag{7}
+ R(s)=c-2s+bs^2-2as^3=0.                            \tag{9}
 \]
 
 Put
 
 \[
-d=1-bs+3as^2=-{1\over2}R'(s).                       \tag{8}
+ d=1-bs+3as^2=-{1\over2}R'(s).                      \tag{10}
 \]
 
-The root is simple on this chart exactly when `d!=0`.  Solving the source
-coordinates gives
+The root is simple on this chart exactly when `d!=0`.  The first two source
+coordinates reconstruct as
 
 \[
-x={s\over d},\qquad y=b-3as.                        \tag{9}
+ x={s\over d},\qquad y=b-3as.                       \tag{11}
 \]
 
-The third coordinate can first be written, for `s!=0`, as
+For `s!=0`, the third coordinate initially has the form
 
 \[
-z={2sd^2-3s^2d(b-3as)-cd^3\over s^3}.
+ z={2sd^2-3s^2d(b-3as)-cd^3\over s^3}.
 \]
 
-Using (7), so that `c=2s-bs^2+2as^3`, the numerator is divisible by `s^3`.
-After cancellation one obtains the expression regular at `s=0`
+Using (9), hence `c=2s-bs^2+2as^3`, cancels the apparent pole and gives the
+expression regular at `s=0`:
 
 \[
 \begin{aligned}
 z=d\big(&a-4b^2+(b^3+22ab)s-(30a^2+8ab^2)s^2\\
-        &+21a^2bs^3-18a^3s^4\big).                 \tag{10}
+        &+21a^2bs^3-18a^3s^4\big).                 \tag{12}
 \end{aligned}
 \]
 
-Substitution of (7)--(10) in `F` returns `(a,b,c)`.  At `s=0`, the root
-equation forces `c=0`, while `d=1`; hence
+Substitution of (9)--(12) into `F` returns `(a,b,c)`.  At `s=0`, the root
+equation forces `c=0` and `d=1`, so
 
 \[
-(x,y,z)=(0,b,a-4b^2).                               \tag{11}
+ \boxed{(x,y,z)=(0,b,a-4b^2).}                      \tag{13}
 \]
 
-Thus the existing `x=0` source chart is precisely the root `[1:0]` at
-infinity.  On the overlap `s!=0`, one has
+Thus the source divisor `x=0` is exactly the chart of the projective root
+`[1:0]` at infinity.  It is always simple when it occurs, since
+`R'(0)=-2`.  On the overlap `s!=0`,
 
 \[
-u={1\over s},\qquad v={d\over s},
+ u={1\over s},\qquad v={d\over s},
 \]
 
-and (9)--(10) agree with (3).
+and (11)--(12) agree with the affine reconstruction (6).
 
-## The marked-root theorem
-
-Let
-
-\[
-I=\{((a,b,c),[U:V])\in\mathbb A^3\mathbin\times\mathbb P^1:
-Q_{a,b,c}(U,V)=0\}.
-\]
-
-The projection `I -> A^3` is the finite flat degree-three incidence cover:
-the fixed coefficient `-2` prevents an entire projective-line fiber, and each
-fiber is a degree-three Cartier divisor.  Let `I^simp` be its simple-root
-locus.  Concretely:
-
-- on `V!=0`, with `u=U/V`, simplicity means `P'(u)!=0`;
-- on `U!=0`, with `s=V/U`, simplicity means `R'(s)!=0`, equivalently `d!=0`.
-
-These conditions agree on the overlap.  They include the root at infinity:
-when `s=0`, equation (7) says `c=0` and `R'(0)=-2`, so `[1:0]` is always
-simple whenever it is a root.
+## Marked-root theorem
 
 **Theorem.**  The morphism
 
 \[
-\Phi:\mathbb A^3_{x,y,z}\longrightarrow I^{\rm simp},\qquad
-(x,y,z)\longmapsto(F(x,y,z),[1+xy:x])               \tag{12}
+ \Phi:\mathbb A^3_{x,y,z}\longrightarrow I^{\rm simp},\qquad
+ (x,y,z)\longmapsto(F(x,y,z),[1+xy:x])              \tag{14}
 \]
 
 is an isomorphism.  Under this isomorphism, `F` is the projection that
 forgets which simple projective root was marked.
 
-**Proof.**  Identity (5) puts the image in `I`.  If `x!=0`, equations (2)
-and (6) give `P'(u)=2/x!=0`.  If `1+xy!=0`, direct substitution in (8) gives
+**Proof.**  Identity (7) puts the image in `I`.  If `x!=0`, equations (5) and
+(8) give `P'(u)=2/x!=0`.  On the source open `1+xy!=0`, substitution in (10)
+gives
 
 \[
-d={1\over1+xy},
+ d={1\over1+xy},
 \]
 
-so the marked root is again simple.  These source opens cover because `x`
-and `1+xy` cannot vanish simultaneously.
+so the marked root is simple there as well.  These two source opens cover.
 
-On the `V!=0` part of `I^simp`, formulas (2)--(3) give a regular inverse:
-`P'(u)` is invertible there.  On the `U!=0` part, formulas (8)--(10) give a
-regular inverse: their only denominator is a power of the invertible function
-`d`, and (10) is polynomial at `s=0`.  The overlap identities
-`u=1/s`, `v=d/s` show that the inverses agree.  Substitution verifies both
-compositions, proving (12).  The target component of (12) is `F`, so it is
+On `V!=0` in `I^simp`, formulas (5)--(6) give a regular inverse because
+`P'(u)` is invertible.  On `U!=0`, formulas (10)--(12) give a regular inverse
+because `d` is invertible and (12) is polynomial at `s=0`.  The overlap
+relations `u=1/s` and `v=d/s` show that the inverses agree.  Substitution
+verifies both compositions.  The target component of (14) is `F`, so it is
 the forgetful projection.  \(\square\)
 
-The theorem is global: the regular expression (10), not merely its limit, is
-the extra regularity argument needed at the projective root at infinity.
+The regular formula (12), rather than merely its limit at `s=0`, is the
+additional argument that makes the marked-root interpretation global.
 
-## Determinant and the removed ramification divisor
-
-On the affine-root chart, (1) gives
-
-\[
-\det {\partial(a,b,c)\over\partial(u,v,c)}=2v.
-\]
-
-Meanwhile, from `u=y+1/x`, `v=1/x`, and
-`c=2x-3x^2y-x^3z`,
-
-\[
-\det {\partial(u,v,c)\over\partial(x,y,z)}=-{1\over v}.
-\]
-
-Their product is `-2`.  The equation `v=0` is the affine-chart part of the
-ramification divisor of the finite marked-root cover `I -> A^3`; globally it
-is the repeated-marked-root locus removed in passing to `I^simp`.  It is not a
-branch divisor of the affine Keller map `F`.  The latter is the restriction to
-the simple-root locus and is everywhere etale, with determinant `-2`.
-
-## Fibers, discriminant, and the omitted locus
-
-Over an algebraically closed field, the projective roots of a nonzero binary
-cubic have one of three multiplicity types.  Because a fiber of `F` is the set
-of simple roots, the theorem gives
-
-| Binary-cubic root type | Number of source points |
-|---|---:|
-| three distinct roots | 3 |
-| one double and one simple root | 1 |
-| one triple root | 0 |
-
-In the repository's sign convention,
-
-\[
-Q_{\rm disc}=27a^2c^2-18abc+16a+b^3c-b^2.           \tag{13}
-\]
-
-Thus `Qdisc!=0` is the first row and `Qdisc=0` gives the last two rows.
-The raw polynomial discriminant of `P` is `-4 Qdisc`; after suppressing the
-inessential factor `4`, the ordinary cubic-discriminant convention used in
-some sources is `-Qdisc`.  In particular, their sign is the opposite of the
-repository's `Qdisc` convention.
-
-The cubic is a cube exactly on
-
-\[
-3bc=4,\qquad 27ac^2=4.                              \tag{14}
-\]
-
-Here `c!=0`; equations (14) are equivalent to the repository's
-`3bc=4, 12a=b^2`.  This is the triple-root locus `Gamma`, hence the omitted
-locus.  The exact image and nonproperness arguments remain those in
-[IMAGE_AND_NONPROPERNESS.md](IMAGE_AND_NONPROPERNESS.md); the marked-root
-theorem packages their fiber count but does not replace their escaping-path
-and boundedness proofs.
-
-## The displayed collision
-
-At `(a,b,c)=(-1/4,0,0)`,
-
-\[
-Q_{-1/4,0,0}(U,V)
-=-2U^2V+{1\over2}V^3
-=-2V(U-V/2)(U+V/2).
-\]
-
-Its three projective roots are
-
-\[
-[1:0],\qquad [1/2:1],\qquad [-1/2:1].
-\]
-
-They correspond respectively to
-
-\[
-(0,0,-1/4),\qquad
-(-1,3/2,13/2),\qquad
-(1,-3/2,13/2),
-\]
-
-under the marking `[1+xy:x]`.
-
-## Relation with the weighted family
-
-For this cubic, `I -> A^3` is a finite marked-root cover and the source is the
-complement of its repeated-marked-root divisor.  The general weighted
-inverse-pencil construction has the same pattern: form the finite cover that
-marks a root of `H(W)-sW+t`, normalize it over the degenerate `C=0` fiber,
-and retain its regular-reconstruction open.  The expanded weighted derivation
-is retained in
-[archive/core-support](../archive/core-support/WEIGHTED_MARKED_ROOT_MODEL.md).
-[dicritical compactification theorem](../extended-geometry/DICRITICAL_COMPACTIFICATION.md)
-classifies the reconstruction-pole divisors on the corresponding normalized
-inverse-graph compactification.
-
-This interpretation is adopted with attribution to Andy Jiang's public
-geometric-interpretation post; see [SOURCES.md](../archive/legacy-notes/SOURCES.md) and
-[PROVENANCE_AUDIT.md](../archive/legacy-notes/PROVENANCE_AUDIT.md).  The overlap with the repository's
-earlier cubic marked-root and image results computations is recorded there, and no priority claim is made.
+This projective-root organization is adopted with attribution to Andy
+Jiang's public geometric-interpretation post; the provenance record is in
+[SOURCES.md](../archive/legacy-notes/SOURCES.md) and
+[PROVENANCE_AUDIT.md](../archive/legacy-notes/PROVENANCE_AUDIT.md).

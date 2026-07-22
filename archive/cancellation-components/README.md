@@ -13,6 +13,6 @@ The consolidated programme is:
 - [arithmetic](../../cancellation/ARITHMETIC.md);
 - [boundary geometry](../../cancellation/BOUNDARY_GEOMETRY.md);
 - [rigidity within the current ansatz](../../cancellation/RIGIDITY.md);
-- [open problems](../../cancellation/OPEN_PROBLEMS.md).
+- [research roadmap](../../cancellation/RESEARCH_ROADMAP.md).
 
 Verification scripts remain active in the top-level `scripts/` directory.
