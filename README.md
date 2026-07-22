@@ -649,11 +649,13 @@ G_H:\mathbb A^4\longrightarrow\mathbb A^4
 \]
 
 that is polynomially left--right equivalent to the weighted map times
-`id_(A^1)`.  Full-cover faithfulness transfers the entire `(N-3)`-dimensional
-seed open to pairwise stably inequivalent exact symplectic maps of `A^4`; a
-fixed `kappa=-9` slice has dimension `N-4`.  Degree five remains the first
-worked example: its full seed surface gives two stable dimensions, and the
-original fixed-third-component line supplies explicit formulas.  See the
+`id_(A^1)`.  The coarse decorated-normalization map is generically etale of
+exact degree `N-2` while retaining the full `(N-3)`-dimensional source image.
+It therefore transfers the principal moduli result to pairwise stably
+inequivalent exact symplectic maps of `A^4` without using full-cover
+faithfulness.  A fixed `kappa=-9` slice has dimension `N-4`.  Degrees five
+and six are retained as explicit regression specializations of the
+all-degree residue theorem, not as independent theorem sources.  See the
 [all-degree rank-two theorem](extended-geometry/RANK_TWO_SYMPLECTIC_DESCENT.md)
 and the [degree-five worked example](extended-geometry/DEGREE_FIVE_RANK_TWO_DESCENT.md).
 
