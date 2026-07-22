@@ -76,13 +76,25 @@ proofs.  A companion symbolic checker proves the `SU(2)=S^3` Haar density in
 Hopf coordinates, completing the local integration proof.  The same target
 also performs all 18 balanced BCW steps and checks the resulting 79-variable
 cubic-homogeneous collision, writes its sparse artifact, and replays it with a
-separate standard-library implementation.  A local proof of the
+separate standard-library implementation.  It then runs the shared-factor
+optimization, which introduces 13 variables, reaches degree three in
+dimension 16, homogenizes to a 33-variable cubic collision, writes a second
+sparse artifact, and replays that trace with another standard-library audit.
+A local proof of the
 fixed-dimensional DVEZ/Zhao implication, including Gaussian contraction, the
 countable-union step, and formal inversion, completes the nonexplicit route to
-`not GMC(158)`.  It also verifies the uniform weighted-seed Gaussian bridge:
-the exact pencil branch, polynomial determinant correction, and bounded Wick
-moments for canonical and split seeds, followed by a separate standard-library
-reconstruction.  These checks are part of
+`not GMC(66)`; `not GMC(158)` remains the exact conservative Long-route bound.
+It also verifies the uniform weighted-seed Gaussian bridge:
+first the standalone Gaussian--Lagrange identity for a nonlinear polynomial
+map with nonzero constant terms, then the exact pencil branch, polynomial
+determinant correction, and bounded Wick moments for canonical and split
+seeds.  It also reverts the mixed-moment generating series to recover a
+symbolic quartic and a concrete weighted quintic exactly, followed by a
+separate standard-library reconstruction.  The
+all-order completed-ring and residue proof is
+[`FORMAL_GAUSSIAN_LAGRANGE_LEMMA.md`](extended-geometry/FORMAL_GAUSSIAN_LAGRANGE_LEMMA.md);
+the bounded exact script is explicitly a regression rather than a substitute
+for that proof.  These checks are part of
 `verify-regressions`, not `verify-minimal`.
 
 The same target runs the rank-two Poisson pre-audit and the independent
@@ -98,9 +110,11 @@ term counts, and collision.  This proves a repository rank-two Poisson
 theorem; it does not assert that these are the unavailable manuscript's
 formulas.
 
-The generated certificate is stored as
-[`artifacts/generated-results/long_bcw_79_counterexample.json`](artifacts/generated-results/long_bcw_79_counterexample.json).
-It records the sparse cubic map, all reduction-step choices, and the three
+The generated certificates are stored as the conservative
+[`79-variable artifact`](artifacts/generated-results/long_bcw_79_counterexample.json)
+and optimized
+[`33-variable artifact`](artifacts/generated-results/shared_bcw_33_counterexample.json).
+They record the sparse cubic maps, every reduction-step choice, and the three
 exact collision points; regeneration is deterministic.
 
 ## Complete active suite

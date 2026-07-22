@@ -450,6 +450,113 @@ at most `N-2` points.  Consequently
 on the generic ordinary locus.  This proves the image dimension; it does not
 claim that every abstract decorated configuration occurs.
 
+### The affine root-one stratum and the missing cross-stratum lemma
+
+There is a tempting apparent improvement of the preceding argument.  Over
+`Z_0=V(C)`, the normalized incidence does intrinsically distinguish the
+simple root `W=1` from the additional simple roots.  This distinction is real,
+but it does **not** yet supply another point on the discriminant-normalization
+line.
+
+Assume throughout this paragraph that zero has exact multiplicity two, as it
+does on the generic open in `A_N`, and write
+`H(W)=h_2W^2+O(W^3)` with `h_2!=0`.  Over the generic point
+`K=k(A,B)` of `Z_0`, the finite zero-cluster chart `W=CR` has special equation
+
+\[
+ h_2R^2-BR+A=0.                                      \tag{5.3a}
+\]
+
+Its discriminant `B^2-4h_2A` has odd valuation along its own prime, so (5.3a)
+is irreducible over `K`; this affine component has residue degree two.  The
+root `W=1` is simple because `H'(1)=-1`, and the completed reconstruction
+calculation gives a regular affine component of residue degree one.  Every
+additional simple primitive root is a polar boundary component.  Hence:
+
+> **Intrinsic affine-stratum fact.**  On the exact-double-zero,
+> boundary-clean locus, the root-one component is the unique
+> residue-degree-one component over the generic point of `Z_0` which is
+> contained in the distinguished affine open and is not part of the
+> zero-cluster component.
+
+This statement is preserved by stable left--right equivalence because the
+intrinsic cover retains the open immersion `X -> bar X_F`, not merely its
+function field.
+
+It is therefore safe to refine the **full-cover** decoration by adjoining
+
+\[
+ \mathcal A_{1,H}\longrightarrow Z_0,                \tag{5.3aa}
+\]
+
+where `mathcal A_(1,H)` denotes this distinguished affine component together
+with its embedding in the regular-reconstruction open.  This is the intrinsic
+version of the “root-one branch.”  It is a genuine stable invariant, but it is
+a stratum of the normalized cover, not yet a mark on the rational curve in
+(3.5).
+
+The missing step is a cross-stratum identification.  The ramification divisor
+in the incidence is cut out by `E=partial_W E=0`.  On the root-one affine
+component,
+
+\[
+ C=0,qquad W=1,qquad
+ \partial_WE=H'(1)-BC=-1.                            \tag{5.3b}
+\]
+
+Thus this component is disjoint from the ramification divisor.  In contrast,
+the mark `r=0` in (3.5) came from an actual valuation center where the
+discriminant divisor meets `Z_0`.  There is presently no functorial map from
+the disjoint affine component in (5.3b) to a point of
+`widetilde D_H`.  Calling its root value `r=1` uses the model's primitive
+element `W`; an abstract isomorphism of finite covers need not transport that
+primitive element by the same affine formula as its restriction to the
+ramification divisor.
+
+The ambiguity is visible algebraically.  If `a` is any nonzero simple root of
+`H`, define
+
+\[
+ \kappa_a=-\frac1{aH'(a)},
+ \qquad G_a(w)=\kappa_aH(aw).                         \tag{5.3c}
+\]
+
+Then `G_a(1)=0` and `G_a'(1)=-1`, and the bare marked-root pencils satisfy
+
+\[
+ E_{G_a}(w;s,t)
+ =\kappa_a E_H\!\left(aw;
+        \frac{s}{\kappa_a a},\frac{t}{\kappa_a}\right). \tag{5.3d}
+\]
+
+Their discriminant normalizations are therefore linearly identified by
+`r_H=ar_G`.  Under this identification the distinguished root of `G_a` goes
+to the root `a` of `H`, not necessarily to `1`.  When `a!=1`, (5.3d) does not
+identify the distinguished regular-reconstruction opens: it sends the affine
+root-one component for `G_a` to an extra-root boundary component for `H`.
+This shows exactly where the intrinsic open contains more information than
+the present decorated-normalization target, but it does not manufacture a
+point on that target.
+
+There is nevertheless a clean conditional classification statement.  Suppose
+one proves a **cross-stratum generator-rigidity lemma** saying that an
+isomorphism of intrinsic covers with their distinguished affine opens carries
+the root-one component to a point of the discriminant normalization through
+the same affine coordinate change obtained from the Fitting divisor.  That
+change already fixes `0` and infinity, so it is `r -> ar`; compatibility with
+the root-one component forces `a=1`.  Equation (5.3) then gives `G=cH`, and
+`G'(1)=H'(1)=-1` forces `c=1`.  Consequently such a lemma would imply
+
+\[
+ F_H\sim_{\mathrm{stable}}F_G\quad\Longrightarrow\quad H=G. \tag{5.3e}
+\]
+
+No such cross-stratum lemma is proved here.  Accordingly `r=1` is not added
+to (3.5), and the generic-finiteness bound is not upgraded to generic
+injectivity.  Establishing or refuting generator rigidity for the normalized
+incidence together with its regular-reconstruction open is the precise next
+classification problem.
+
 Because the decorated normalization is constant on stable polynomial
 left--right classes, generic finiteness has the following stronger
 degreewise consequence:
@@ -578,6 +685,7 @@ for a completed computation in every family.
 | saturated off-diagonal scheme and its `S_2` quotient | complete in characteristic zero | complete; quotient pullback and node transversality are checked |
 | conductor map | complete as an intrinsic finite-stratum construction | exact implicit-equation formula for arbitrary plane-curve singularities, checked against the ordinary factorization |
 | infinity and second-boundary marks | complete | exact for the weighted seeds; the quartic zero-cluster chart is checked |
+| distinguished affine root-one stratum | complete on the exact-double-zero boundary-clean locus | exact cover-stratum and rerooting audit; no cross-stratum point on the discriminant normalization is claimed |
 | upstairs `(e,f)`, different, DVR, and inertia data | complete as invariant data | generic divisorial layer complete |
 | higher intersections and completed local extensions | complete as functorial invariant data | full cancellation prime diagram is exact under `Res(K,L) != 0`, proved for every `mr<=30`, the `m=1` ladder, and all uniform parameter-irreducibility cases; all-parameter nonvanishing remains open |
 
@@ -598,6 +706,7 @@ Run
 
 ```bash
 .venv/bin/python scripts/verify_decorated_normalization.py
+.venv/bin/python scripts/verify_affine_branch_mark_audit.py
 .venv/bin/python scripts/verify_full_boundary_diagram.py
 ```
 
@@ -610,3 +719,8 @@ their separation by (4.4) and the boundary chart (3.6), and checks generic
 boundary-cover `(e,f)`,
 different, completed-DVR, inertia, residue-factor, and degree-sum data for
 both weighted and cancellation profiles.
+
+The affine-branch audit separately verifies the unique unramified root-one
+stratum, its disjointness from the ramification divisor, and the exact
+rerooting identity (5.3d).  Its scope line records that cross-stratum
+generator rigidity remains open.

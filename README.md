@@ -156,8 +156,8 @@ distinctions matter:
 | Quartic Islands A/B/C | Juntang Zhuang's pinned compilation and exact collision checkers | Independent compact reconstruction showing one canonical and two split weighted seeds, complete boundary signatures, and exclusion from the cancellation normal forms |
 | Formal verification of the foundational map | Dean Cureton’s Lean project | Pinned attribution, scope audit, and an optional upstream build target |
 | Immediate consequences and source trail | Zihan Zhang’s audit | A separate proof architecture focused on inverse geometry, normalization, and stable equivalence |
-| GMC, `(xz)`, and `SU(2)` counterexamples | Christopher D. Long's two arXiv papers | Exact local Gaussian and beta/binomial checks, a complete `SU(2)=S^3` Haar proof, all 18 BCW steps through an independently replayed 79-variable sparse artifact, and a local proof of the fixed-dimensional nonexplicit `GMC(158)` route; no claim that the direct witnesses derive from our map |
-| Weighted-seed/Gaussian bridge | Long's Lagrange--Good search architecture and Good's inversion theorem | A repository-derived polynomial determinant correction turning every nonconstant normalized seed into an explicit four-real-Gaussian witness family; locally proved and checked, not externally reviewed |
+| GMC, `(xz)`, and `SU(2)` counterexamples | Christopher D. Long's two arXiv papers | Exact local Gaussian and beta/binomial checks, a complete `SU(2)=S^3` Haar proof, all 18 steps of Long's conservative 79-variable route, and a separate repository shared-factor optimization to 33 variables and `not GMC(66)`; both sparse artifacts have independent replays, with no claim that the direct witnesses derive from our map |
+| Weighted-seed/Gaussian bridge | Long's Lagrange--Good search architecture and Good's inversion theorem | A repository-derived polynomial determinant correction turning every nonconstant normalized seed into an explicit four-real-Gaussian witness family; the exact mixed moments recover `1+lambda*H`, making the moment realization injective; supported by a standalone constant-term-safe formal Gaussian--Lagrange proof, locally checked and not externally reviewed |
 | Cancellation maps and canonical boundary invariants | No earlier source has been identified in the present audit | The finite cancellation operator, all-parameter reconstruction and collision, boundary-exhaustion theorem, thick intersections, and rigidity results |
 | Degreewise weighted stable moduli | No earlier source has been identified in the present audit | A generically finite decorated-normalization invariant with image dimension `N-3`, on an explicitly proved nonempty ordinary boundary-clean open for every generic degree `N>=4` |
 | Cross-family stable multiplicity | No earlier source has been identified in the present audit | The complementary divisor-count theorem distinguishing one weighted class and `tau(N-1)-1` cancellation types in generic degree `N>=4` |
@@ -204,6 +204,11 @@ preserved by stable polynomial left--right equivalence,
 
 This is the main degreewise moduli result.  Its proof is in the
 [decorated-normalization theorem](extended-geometry/DECORATED_NORMALIZATION_INVARIANT.md).
+The simple `W=1` sheet is intrinsic as an affine component over the second
+boundary divisor, but it is disjoint from the discriminant ramification
+divisor.  A cross-stratum generator-rigidity lemma would be needed to turn it
+into a `r=1` mark on the discriminant normalization and upgrade generic
+finiteness to generic injectivity; that lemma is not presently proved.
 The exact cotangent lift is polynomially right-equivalent to adjoining three
 identity coordinates, so the same invariant and dimension transfer without
 loss:
@@ -268,7 +273,10 @@ Long's JC-to-GMC route does use an exact diagonal normalization of the
 foundational map.  The repository now reproduces its 18 stable steps, the
 dimensions `3 -> 39 -> 79`, the cubic-homogeneous collision, and the complete
 fixed-dimensional implication to `not GMC(158)`.  The proof architecture and
-authorship remain credited to BCW, DVEZ, and Zhao.  Long's
+authorship remain credited to BCW, DVEZ, and Zhao.  A separate repository
+optimization reuses exposed factors, reduces the route to `3 -> 16 -> 33`,
+and improves the nonexplicit bound to `not GMC(66)`; this is a certified upper
+bound, not a minimality claim or a result attributed to Long.  Long's
 much smaller direct witnesses were motivated by the JC(3) announcement but
 were not algebraically extracted from that map.  His papers do not review the
 repository's Hessian/Fitting-divisor or stable-moduli proofs.
@@ -280,6 +288,16 @@ produces an explicit `GMC(4)` witness family whose mixed moments read one exact
 branch of `H(W)-sW+t=0`.  This construction was prompted by Long's method but
 is not one of Long's witnesses and has not received external specialist
 review.  See the [weighted Gaussian bridge](extended-geometry/WEIGHTED_GAUSSIAN_BRIDGE.md).
+The complete mixed-moment sequence determines the branch series, whose
+compositional inverse recovers `1+lambda*H` exactly; for a degree-`d`
+polynomial, moments through order `d+1` suffice.  On normalized seeds,
+`H'(1)=-1` then recovers both `lambda=-h'(1)` and `H`.  This is an injective
+exact fingerprint, not a proof of inequivalence under arbitrary
+Gaussian-variable transformations.
+The load-bearing formal identity, including polynomial maps with nonzero
+constant term, is isolated in the
+[formal Gaussian--Lagrange lemma](extended-geometry/FORMAL_GAUSSIAN_LAGRANGE_LEMMA.md);
+it is the highest-priority theorem here for external specialist review.
 
 There is also an independent internal closure of the supplied rank-two
 Poisson gap.  An exact flux calculation forces the shear `Z -> Z-9Q^2` and
@@ -308,7 +326,8 @@ ideas.  It is the theory built after them:
 - complete normalization-boundary exhaustion for the weighted and
   cancellation maps;
 - the uniform weighted-seed/Gaussian bridge, including its polynomial
-  determinant correction and exact mixed-moment formula;
+  determinant correction and exact mixed-moment formula, supported by the
+  standalone constant-term Gaussian--Lagrange lemma;
 - reduced versus nilpotently thick boundary intersections;
 - the `(N-3)`-dimensional weighted stable-class family in every generic degree
   `N>=4`, transferred unchanged to exact symplectic maps of `A^6`; and

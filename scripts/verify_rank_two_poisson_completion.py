@@ -49,6 +49,24 @@ for got, expected in zip(
 ):
     assert sp.expand(got - expected) == 0
 
+# Compute the induced Poisson tensor on the invariant quotient explicitly.
+# In particular X,Q,Z lie in ker{-,R}, while E is the slice coordinate for
+# that locally nilpotent derivation.  Since (X,Q,Z,E) is a polynomial
+# coordinate system, these identities prove ker{-,R}=Q[X,Q,Z].
+R_source = sp.expand(2 * X_source - 3 * X_source**2 * Q_source)
+assert poisson(X_source, Q_source) == 0
+assert poisson(X_source, Z_source) == -3 * X_source**2
+assert poisson(Q_source, Z_source) == 6 * X_source * Q_source - 2
+assert sp.expand(
+    poisson(E_source, X_source) - (1 + 3 * X_source * Q_source) / 2
+) == 0
+assert poisson(E_source, Q_source) == -3 * Q_source**2
+assert sp.expand(poisson(E_source, Z_source) - 9 * Q_source * Z_source / 2) == 0
+assert poisson(X_source, R_source) == 0
+assert poisson(Q_source, R_source) == 0
+assert poisson(Z_source, R_source) == 0
+assert poisson(E_source, R_source) == 1
+
 
 def foundational_pair(z_argument: sp.Expr) -> tuple[sp.Expr, sp.Expr, sp.Expr]:
     """(F1/2,F2,F3) after Y=Q-X*z_argument/3."""
@@ -217,6 +235,7 @@ for point in collision_points:
 assert len(set(collision_points)) == 3
 
 print("PASS: c=-9 is the unique pole-free shear in the family Z -> Z+cQ^2")
+print("PASS: induced quotient bracket and ker{-,R}=Q[X,Q,Z] are exact")
 print("PASS: all six rank-two Poisson brackets hold exactly over Q")
 print("PASS: det d(R,T,D,S)=1 and the displayed R is x(2-3xq)")
 print("PASS: the complete foundational three-point fiber transports to (0,0,0,-1/8)")

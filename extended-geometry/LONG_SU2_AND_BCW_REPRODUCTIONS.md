@@ -1,4 +1,4 @@
-# Complete local reproductions: `SU(2)` Haar measure and the BCW 79-variable route
+# Complete local reproductions: `SU(2)`, the BCW 79-variable route, and a 33-variable optimization
 
 This note supplies the two proofs left deliberately conditional in the first
 external-consequences audit.  It has two distinct outcomes.
@@ -9,6 +9,10 @@ external-consequences audit.  It has two distinct outcomes.
    checked exactly.  The fixed-dimensional implication from that map to
    `not GMC(158)` is proved locally in a companion note, following and
    crediting Derksen--van den Essen--Zhao and Zhao.
+3. A repository-derived common-factor optimization replaces the conservative
+   degree-lowering stage by `3 -> 16`, then homogenizes to 33 variables.  It
+   improves the route-based consequence to `not GMC(66)`.  This is not a
+   formula or dimension claim attributed to Long.
 
 Neither local proof changes the provenance of Christopher D. Long's external
 results or constitutes external review.
@@ -420,6 +424,121 @@ witness step because the passage from pointwise thresholds to one uniform
 threshold uses a countable-union argument.  The proof reproduces only the
 fixed-dimensional implication needed here, not all results of DVEZ or Zhao.
 
+## 3. Shared-factor optimization: `3 -> 16 -> 33`
+
+The 79-variable construction above remains the exact reproduction of Long's
+conservative route.  It is not dimension-minimal: its 18 steps expose two
+fresh factors independently even when a factor has already appeared as an
+output coordinate.
+
+### 3.1 Reusable-factor elementary equivalence
+
+Suppose a previous source shear has exposed a polynomial `a(x)` as the output
+
+\[
+ A=Y+a(x).                                           \tag{3.1}
+\]
+
+If coordinate `i` contains `c a(x)b(x)` and `i` is not the `A` coordinate,
+adjoin only one new variable `Z`, apply the source shear
+
+\[
+ Z\longmapsto Z+b(x),
+\]
+
+and then the elementary target shear
+
+\[
+ T_i\longmapsto T_i-cA T_Z.                         \tag{3.2}
+\]
+
+After the source shear, `T_Z=Z+b(x)`, so (3.2) cancels `cab`.  Both
+automorphisms have determinant one.  If `b` was exposed previously too, no
+new variable is needed: subtract `cAB` directly.  If `a=b` was not exposed,
+one variable suffices—expose `A=Y+a` and subtract `cA^2`.  These are exact
+stable left--right equivalences, not arithmetic-circuit substitutions made
+outside the map category.
+
+At a transported collision point, set every new source variable to the
+negative value of its exposed factor.  All exposed-factor outputs are then
+zero, so each target shear preserves the common image exactly.
+
+### 3.2 Deterministic factor search
+
+For each current top-degree monomial, enumerate every unordered factor split
+`ab` with both degrees between two and `d-2`.  Retain a registry of outputs of
+the form (3.1), and rank candidates lexicographically by
+
+\[
+ (\text{new maximum degree},
+   \sum_{\deg m>3}(\deg m-3)^2,\
+   \text{number of high terms},\
+   \text{new variables},\
+   -\text{reusable factors}).                        \tag{3.3}
+\]
+
+Freezing the best trace from a deterministic width-24 beam search produces 17
+target cancellations with degree
+sequence
+
+\[
+ 7,6,6,5,5,5,5,\underbrace{4,\ldots,4}_{10\text{ times}},
+\]
+
+but the corresponding new-variable counts are
+
+\[
+ 2,0,1,0,1,1,1,0,0,1,1,1,1,1,1,0,1.              \tag{3.4}
+\]
+
+Their sum is 13.  The resulting determinant-one map therefore has degree at
+most three in
+
+\[
+ 3+13=16                                             \tag{3.5}
+\]
+
+variables, identity linear part, and the transported rational three-point
+collision.  Five zero-cost cancellations in (3.4) reuse both exposed factors;
+the square cancellation at the second step is the first of them.
+
+This is a certified upper bound, not a minimality theorem.  The greedy score
+is deliberately recorded so SAT, MILP, dynamic-programming, or beam searches
+can seek a still smaller exposure registry without changing the certificate
+format.
+
+### 3.3 Cubic homogenization and the improved route bound
+
+Write the 16-variable map as `K=X+Q+C`, with `Q,C` homogeneous of degrees two
+and three.  Applying the construction of Sections 2.4--2.5 gives
+
+\[
+ V_{33}(X,Y,T)
+ =(X,Y,T)+(YT^2+Q(X)T,-C(X),0)                      \tag{3.6}
+\]
+
+in `2*16+1=33` variables.  The same identity
+`det(I+tJN)=1` proves that it is Keller, and the lifted collision proves that
+it is noninvertible.  Consequently the locally proved fixed-dimensional
+implication gives
+
+\[
+ \boxed{\neg\mathrm{GMC}(66)}.                      \tag{3.7}
+\]
+
+This improves only the nonexplicit route-based dimension bound.  Long's
+direct three-real-Gaussian witness remains far stronger and independently
+authored.
+
+The SymPy generator
+[`verify_shared_bcw_33_route.py`](../scripts/verify_shared_bcw_33_route.py)
+writes the exact
+[33-variable sparse artifact](../artifacts/generated-results/shared_bcw_33_counterexample.json).
+The dependency-free
+[`audit_shared_bcw_33_independent.py`](../scripts/audit_shared_bcw_33_independent.py)
+replays all factor exposures and target shears from the original map and
+reconstructs the cubic collision without importing the generator.
+
 ## Reproduction
 
 Run
@@ -429,12 +548,15 @@ Run
 .venv/bin/python scripts/verify_long_xz_mathieu.py
 .venv/bin/python scripts/verify_long_bcw_79_route.py
 python3 scripts/audit_long_bcw_79_independent.py
+.venv/bin/python scripts/verify_shared_bcw_33_route.py
+python3 scripts/audit_shared_bcw_33_independent.py
 python3 scripts/verify_fixed_gmc_sic_bridge.py
 ```
 
-The first two scripts jointly certify the complete `SU(2)` proof.  The third
-constructs the BCW route and writes the 79-variable artifact; the fourth
-replays it independently using only the standard library.  The fifth checks
+The first two scripts jointly certify the complete `SU(2)` proof.  The next
+two construct and independently replay Long's conservative 79-variable
+route.  The following pair construct and independently replay the
+repository's shared-factor 33-variable optimization.  The last script checks
 the coefficient skeleton of the fixed-dimensional implication.  None of
 these replaces the repository's separate 95-variable cubic-homogeneous
 artifact.

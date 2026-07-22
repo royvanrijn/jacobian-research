@@ -1,7 +1,8 @@
 # Fixed-dimensional Gaussian-to-Jacobian implication
 
-This note proves the precise implication needed by the 79-variable
-cubic-homogeneous map:
+This note proves the precise implication needed by both the reproduced
+79-variable cubic-homogeneous map and its repository-derived 33-variable
+shared-factor optimization:
 
 \[
  \mathrm{GMC}(2r)
@@ -14,7 +15,7 @@ cubic-homogeneous map:
 The proof follows the architecture of Derksen--van den Essen--Zhao and Zhao,
 but all steps needed for one fixed `r` are written here, including the
 countable-union lemma and the formal inversion identity.  Applying the
-contrapositive at `r=79` makes the repository's route to `not GMC(158)` locally
+contrapositive at `r=33` makes the improved route to `not GMC(66)` locally
 self-contained.  It remains nonconstructive at the Gaussian-witness step.
 
 ## 1. Two contraction maps
@@ -311,29 +312,32 @@ Therefore every `G_i` is a polynomial.  The formal inverse of `F` is a
 polynomial inverse, so `F` is invertible.  This proves the second implication
 in (0.1).
 
-## 6. Application to the 79-variable map
+## 6. Application to the optimized 33-variable map
 
-The [BCW reproduction](LONG_SU2_AND_BCW_REPRODUCTIONS.md) constructs
+The [BCW reproduction and shared-factor optimization](LONG_SU2_AND_BCW_REPRODUCTIONS.md)
+constructs
 
 \[
- V(Z)=Z+\mathcal H(Z),\qquad Z\in\mathbb A^{79},
+ V(Z)=Z+\mathcal H(Z),\qquad Z\in\mathbb A^{33},
 \]
 
 where `mathcal H` is cubic homogeneous, `det DV=1`, and three distinct rational
 points have one common image.  Put `H=-mathcal H`; then `V=Z-H` has exactly the
 form used above and is not invertible.
 
-If `GMC(158)` were true, (3.4) would give `SIC(79)`, and Section 5 would make
+If `GMC(66)` were true, (3.4) would give `SIC(33)`, and Section 5 would make
 `V` invertible, contradicting its explicit collision.  Hence
 
 \[
- \boxed{\neg\mathrm{GMC}(158)}.
+ \boxed{\neg\mathrm{GMC}(66)}.
 \]
 
 This is now a complete local proof of the route-based failure.  It is still
 nonexplicit as a Gaussian counterexample because Proposition 3.2 uses the
 uncountable-field countable-union argument.  Long's direct three-variable
-witness remains a separate and much stronger explicit external result.
+witness remains a separate and much stronger explicit external result.  The
+79-variable map and `not GMC(158)` remain the exact reproduction of Long's
+conservative route; the improvement to 33 and 66 is repository-derived.
 
 ## 7. Reproduction
 
@@ -343,12 +347,16 @@ Run
 python3 scripts/verify_fixed_gmc_sic_bridge.py
 .venv/bin/python scripts/verify_long_bcw_79_route.py
 python3 scripts/audit_long_bcw_79_independent.py
+.venv/bin/python scripts/verify_shared_bcw_33_route.py
+python3 scripts/audit_shared_bcw_33_independent.py
 ```
 
 The first checker verifies the exact coefficient identities underlying
-Sections 1, 3, and 4 in bounded multi-index ranges.  The latter two generate
+Sections 1, 3, and 4 in bounded multi-index ranges.  The next pair generate
 and independently replay the complete
-[79-variable sparse artifact](../artifacts/generated-results/long_bcw_79_counterexample.json).
+[79-variable sparse artifact](../artifacts/generated-results/long_bcw_79_counterexample.json);
+the final pair do the same for the optimized
+[33-variable artifact](../artifacts/generated-results/shared_bcw_33_counterexample.json).
 
 Primary provenance remains with
 [Derksen--van den Essen--Zhao](https://arxiv.org/abs/1506.05192) and

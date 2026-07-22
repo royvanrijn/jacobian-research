@@ -75,7 +75,7 @@ This is a family statement, not merely a bounded computation.  The exact
 checker supplies independent finite-range Wick regressions after the written
 all-order proof.
 
-## 2. The Gaussian Lagrange--Good identity
+## 2. The formal Gaussian--Lagrange input
 
 Let `Phi=(Phi_1,...,Phi_r)` be a polynomial map and let
 
@@ -107,23 +107,8 @@ Consequently the formal exponential generating function is
                                                                \tag{2.2}
 \]
 
-The coefficientwise Abhyankar--Gurjar identity proved in
-[the fixed-dimensional note](FIXED_GMC_SIC_PROOF.md) applies to
-`F_u(z)=z-u Phi(z)`.  Use its test series
-
-\[
- \frac{A(z)}{\det(I-uJ\Phi(z))}.
-\]
-
-Here `Phi` may have a constant term.  The proof in the fixed-dimensional note
-was stated for a nonlinear part of order at least two, but its coefficient
-argument applies verbatim in the `(u,z)`-adic topology: `F_u` is congruent to
-the identity modulo `u`, and the factor `u^{|alpha|}` makes every coefficient
-of `u` a finite sum.  Thus no zero-constant-term hypothesis on `Phi` is being
-silently used.
-
-The Jacobian factor in Abhyankar--Gurjar cancels the denominator of this test
-series, and evaluation of the formal inverse at zero gives (2.1).  Therefore
+The [constant-term Gaussian--Lagrange lemma](FORMAL_GAUSSIAN_LAGRANGE_LEMMA.md)
+proves, for arbitrary polynomial `Phi`, that
 
 \[
  \boxed{
@@ -133,10 +118,16 @@ series, and evaluation of the formal inverse at zero gives (2.1).  Therefore
                                                                \tag{2.3}
 \]
 
-This locally proves the precise Lagrange--Good formula used here.  Good's
-multivariable inversion theorem and Long's use of (2.3) retain their external
-provenance; the reduction to the already proved formal inversion identity
-means (2.3) is not a black-box theorem input in this repository.
+Its standalone proof works in `C[[u,z_1,...,z_r]]`, proves coefficientwise
+finiteness, justifies the formal residue change when `Phi(0) != 0`, and fixes
+both the determinant orientation and the complex Gaussian derivative
+convention.  That constant-term case is essential here: by (1.2),
+`Phi_1(0,0)=1`.
+
+Good's multivariable inversion theorem and Long's use of this architecture
+retain their external provenance.  Formula (2.3), including the moving fixed
+point caused by the constant term, is proved locally rather than used as a
+black box.
 
 All series in this note are formal.  No analytic integrability assertion for
 `exp(uP)` is needed.
@@ -261,7 +252,81 @@ whose coefficients vary algebraically with the seed.  No claim is made here
 that distinct stable seed classes give inequivalent Gaussian witnesses; that
 requires a separate equivalence theory for Gaussian pairs.
 
-## 6. Why Long's three-real-variable correction does not transfer directly
+## 6. Exact recovery from the mixed moments
+
+Put
+
+\[
+ M_m(H,\lambda)=
+ \mathbb E\!\left(QP_{H,\lambda}^m\right).
+\]
+
+Equation (4.2) says
+
+\[
+ g(u)=\sum_{m\ge0}\frac{M_m(H,\lambda)}{m!}u^m,
+ \qquad g=u h(g).                                    \tag{6.1}
+\]
+
+Here `M_0=E(Q)=0` and `M_1=1`, so `g(u)=u+O(u^2)` has a unique
+compositional inverse
+\(\eta(z)=g^{\langle-1\rangle}(z)\).  Substituting `u=eta(z)` into the
+fixed-point equation gives
+
+\[
+ z=\eta(z)h(z),
+ \qquad
+ \boxed{\eta(z)=\frac{z}{h(z)},\quad
+        h(z)=\frac{z}{\eta(z)}.}                     \tag{6.2}
+\]
+
+The reciprocal orientation in (6.2) is forced already by the linear example
+`h(z)=1+az`, for which `g(u)=u/(1-au)` and
+`eta(z)=z/(1+az)`.
+
+### Theorem 6.1 — injective mixed-moment fingerprint
+
+On the set of polynomials `h` with `h(0)=1`, the map
+
+\[
+ h\longmapsto
+ \left(\mathbb E(QP_h^m)\right)_{m\ge0}              \tag{6.3}
+\]
+
+defined by the determinant-cancelling bridge is injective.  Explicitly, the
+complete sequence determines `g` by (6.1), formal series reversion determines
+`eta`, and (6.2) recovers `h` exactly.
+The same coefficientwise reconstruction remains valid for formal `h`, though
+then the bridge generally produces formal rather than polynomial `Phi`.
+
+If `h` has degree at most `d`, only the finite list
+
+\[
+ M_1,M_2,\ldots,M_{d+1}                              \tag{6.4}
+\]
+
+is needed: these moments determine `g mod u^(d+2)`, hence
+`eta mod z^(d+2)` and `z/eta mod z^(d+1)`, which contains every coefficient
+of `h`.  Thus distinct polynomials `1+lambda H` have distinct mixed-moment
+sequences.  For fixed nonzero `lambda`, this recovers `H`; if `lambda` is also
+allowed to vary, the moments recover the product `lambda H`, not its two
+factors separately without a normalization on `H`.  On the repository's
+normalized admissible seed locus, however, `H'(1)=-1`, and therefore
+
+\[
+ \boxed{\lambda=-h'(1),\qquad
+ H=\frac{h-1}{\lambda}.}                            \tag{6.5}
+\]
+
+Thus the map `(H,lambda) -> (M_m)_(m>=0)` is injective on normalized seeds
+with `lambda!=0`.
+
+This is an injective realization at the level of exact moment sequences.  It
+does not assert that the resulting polynomial pairs are inequivalent under
+arbitrary transformations of the Gaussian variables or under any broader
+notion of Gaussian-witness equivalence.
+
+## 7. Why Long's three-real-variable correction does not transfer directly
 
 For the more economical ansatz
 
@@ -274,31 +339,35 @@ formula forces
 
 \[
  v(z)=
- -\frac{h(z)h'(z)(2h(z)-zh'(z))}{2D(z)^2}           \tag{6.1}
+ -\frac{h(z)h'(z)(2h(z)-zh'(z))}{2D(z)^2}           \tag{7.1}
 \]
 
 if the pure-moment generating function is to equal one.  For Long's affine
-choice `h=1+z`, one has `D=1`, and (6.1) is exactly
+choice `h=1+z`, one has `D=1`, and (7.1) is exactly
 
 \[
  v=-\tfrac12(1+z)(2+z).
 \]
 
 For the audited nonlinear canonical and split weighted seeds, the numerator
-in (6.1) is not divisible by `D^2`; the required `v` is rational rather than
+in (7.1) is not divisible by `D^2`; the required `v` is rational rather than
 polynomial.  This is an exact obstruction to the direct half-pair ansatz, not
 an obstruction to every possible three-real-variable construction.
 
-## 7. Reproduction and status
+## 8. Reproduction and status
 
 Run
 
 ```bash
+.venv/bin/python scripts/verify_formal_gaussian_lagrange.py
 .venv/bin/python scripts/verify_weighted_gaussian_bridge.py
+.venv/bin/python scripts/verify_gaussian_moment_fingerprint.py
 python3 scripts/audit_weighted_gaussian_bridge_independent.py
 ```
 
-The checker verifies:
+The first checker tests the standalone identity through `u^6` for a nonlinear
+two-variable `Phi` with two nonzero constant terms.  The bridge checker then
+verifies:
 
 - the parameterized fixed point and pencil identity;
 - the determinant cancellation symbolically;
@@ -307,12 +376,18 @@ The checker verifies:
 - the Lagrange coefficient formula; and
 - the half-pair divisibility obstruction for those nonlinear seeds.
 
+The fingerprint checker directly reconstructs a symbolic quartic `h`
+from `M_1,...,M_5` by exact compositional reversion and also audits a concrete
+degree-five instance.
+
 The second checker reconstructs the correction using only sparse `Fraction`
 arithmetic, independently solves the fixed branch through order 14, and
 replays the determinant and Wick moments without SymPy or project imports.
 
 The theorem is **proved in the repository** and **exactly computationally
 checked in bounded ranges**.  It is **not externally specialist-reviewed**.
+The standalone formal Gaussian--Lagrange lemma is the priority target for such
+review.
 Christopher D. Long is credited for the Gaussian Lagrange--Good search
 architecture; his direct three- and four-variable witnesses remain
 independently authored external results and are not reclassified as weighted

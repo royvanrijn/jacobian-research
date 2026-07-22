@@ -84,8 +84,12 @@ verify-external-consequences:
 	$(SYSTEM_PYTHON) scripts/audit_rank_two_poisson_completion_independent.py
 	$(PYTHON) scripts/verify_long_bcw_79_route.py
 	$(SYSTEM_PYTHON) scripts/audit_long_bcw_79_independent.py
+	$(PYTHON) scripts/verify_shared_bcw_33_route.py
+	$(SYSTEM_PYTHON) scripts/audit_shared_bcw_33_independent.py
 	$(SYSTEM_PYTHON) scripts/verify_fixed_gmc_sic_bridge.py
+	$(PYTHON) scripts/verify_formal_gaussian_lagrange.py
 	$(PYTHON) scripts/verify_weighted_gaussian_bridge.py
+	$(PYTHON) scripts/verify_gaussian_moment_fingerprint.py
 	$(SYSTEM_PYTHON) scripts/audit_weighted_gaussian_bridge_independent.py
 
 verify-regressions: verify-external-consequences
@@ -99,6 +103,7 @@ verify-regressions: verify-external-consequences
 	$(PYTHON) scripts/verify_quartic_monodromy.py
 	$(PYTHON) scripts/verify_external_quartic_islands.py
 	$(PYTHON) scripts/verify_decorated_normalization.py
+	$(PYTHON) scripts/verify_affine_branch_mark_audit.py
 	$(PYTHON) scripts/verify_quartic_c0_fibers.py
 	$(PYTHON) scripts/verify_quartic_nonproperness_paths.py
 	$(PYTHON) scripts/verify_quartic_properness_converse.py

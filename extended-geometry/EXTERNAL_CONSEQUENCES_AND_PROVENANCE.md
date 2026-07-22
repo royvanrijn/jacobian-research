@@ -22,8 +22,10 @@ The evidence labels used below have fixed meanings.
 flowchart TD
     J["Announced JC(3) counterexample"]
     U["Universal conjectures known to imply JC cannot all remain true"]
-    B["BCW reduction: cubic-homogeneous Keller map in 79 variables"]
+    B["Long route reproduced: cubic-homogeneous Keller map in 79 variables"]
     R["not GMC(158)"]
+    BO["Repository shared-factor optimization: 33 variables"]
+    RO["not GMC(66)"]
     M["Motivation for Long's searches"]
     GP["Long's direct three-Gaussian polynomials"]
     G["not GMC(n) for every n at least 3"]
@@ -38,6 +40,8 @@ flowchart TD
     J -->|"logical consequence"| U
     J -->|"tracked BCW route"| B
     B -->|"route-based dimension bound"| R
+    J -->|"locally optimized BCW route"| BO
+    BO -->|"improved route-based dimension bound"| RO
     J -.->|"motivated, did not algebraically generate"| M
     M -.-> GP
     M -.-> XP
@@ -69,6 +73,9 @@ three different provenance levels separate.
    fixed-dimensional Derksen--van den Essen--Zhao implication then gives the
    **route-based dimension bound** `not GMC(158)`.  The last step is
    nonconstructive and supplies no explicit Gaussian pair.
+   A later repository common-factor optimization reduces the intermediate
+   dimensions from `3 -> 39 -> 79` to `3 -> 16 -> 33`, improving this local
+   route bound to `not GMC(66)`.  That improvement is not attributed to Long.
 3. Long's direct three-variable pair independently gives the strictly stronger
    failure of `GMC(n)` for every `n >= 3`.  The paper states that no coordinate,
    term, or algebraic feature of the announced JC map was used to construct
@@ -284,6 +291,15 @@ includes a serialized artifact and independent replay.  The
 DVEZ/Zhao implication needed to deduce `not GMC(158)`, while retaining their
 authorship and the nonconstructive status of that final Gaussian step.
 
+The same note now records a separate repository optimization.  Exposed factor
+outputs are reused across elementary target shears, including five
+zero-stabilization cancellations.  The exact trace introduces 13 rather than
+36 variables, reaches degree three in dimension 16, and homogenizes to a
+33-variable cubic map.  Its sparse artifact and dependency-free replay certify
+the improved nonexplicit consequence `not GMC(66)`.  No minimality is claimed,
+and Long's 79-variable route remains the provenance-faithful reproduction of
+the paper.
+
 ## Rank-two Poisson and `DC(4)`: independent closure, provenance open
 
 A supplied abstract announces four polynomials
@@ -359,7 +375,8 @@ JC(3) has generated two distinct bodies of work:
 - **internal geometry:** the repository's marked-root, boundary,
   decorated-normalization, and stable-moduli programme;
 - **external consequences:** Long's direct GMC, `(xz)`, and `SU(2)`
-  counterexamples and his tracked GMC(158) route.
+  counterexamples and his tracked GMC(158) route, together with the
+  repository's later shared-factor improvement of that route to GMC(66).
 
 The existence of explicit consequence-level counterexamples supports studying
 the JC(3) map as a generator of new mathematics.  It does not make every
@@ -379,9 +396,16 @@ arbitrary JC(2) counterexamples.
 2. **Weighted-seed Gaussian families and equivalence.**  The
    [four-real-Gaussian bridge](WEIGHTED_GAUSSIAN_BRIDGE.md) now turns every
    nonconstant normalized seed into an explicit witness family by an exact
-   polynomial determinant correction.  Determine when two resulting pairs
-   are equivalent, whether seed moduli survive, and whether a different
-   correction can descend uniformly to three real variables.
+   polynomial determinant correction.  Its
+   [formal Gaussian--Lagrange lemma](FORMAL_GAUSSIAN_LAGRANGE_LEMMA.md), now
+   proved with arbitrary constant terms and a coefficientwise residue change,
+   is the priority target for external specialist review.  Determine when two
+   resulting pairs are equivalent and whether a different correction can
+   descend uniformly to three real variables.  The raw mixed-moment question
+   is now settled internally: the full sequence recovers `1+lambda*H`
+   exactly—and on `H'(1)=-1` recovers both `lambda` and `H`—so seed moduli
+   survive as exact moment fingerprints, without yet implying inequivalence
+   under transformations of Gaussian variables.
 3. **Minimal dimensions.**  Determine why both the simple marked-point
    architecture and Long's direct GMC architecture begin naturally in
    dimension three.  Study GMC(2) without treating it as equivalent to JC(2).
@@ -397,6 +421,22 @@ arbitrary JC(2) counterexamples.
    the foundational map, Long's Lagrange/determinant cancellation, and the
    beta/binomial cancellation in the `(xz)` example.
 7. **Explicit families and moduli.**  Compare Long's minimal-support isolated
-   witnesses with the new weighted-seed families; construct Gaussian
-   equivalence invariants and test whether the seed's decorated-normalization
-   moduli remain visible after the bridge.
+   witnesses with the new weighted-seed families.  The mixed-moment sequence
+   is already an injective seed fingerprint; determine which functions of it
+   descend to invariants for natural Gaussian-equivalence groups and whether
+   the seed's decorated-normalization moduli remain visible after quotienting.
+8. **Cross-stratum generator rigidity.**  The root-one sheet is intrinsically
+   distinguished inside the affine source over `Z_0`, but it is disjoint from
+   the ramification divisor.  Determine whether an isomorphism of normalized
+   incidence covers preserving the regular-reconstruction opens must identify
+   the primitive root generators compatibly across those strata.  A positive
+   theorem would turn the conditional argument in the
+   [decorated-normalization note](DECORATED_NORMALIZATION_INVARIANT.md) into
+   `F_H stable-equivalent F_G => H=G` for normalized boundary-clean seeds.
+9. **BCW circuit minimization.**  The reusable-factor certificate lowers the
+   conservative route from 36 to 13 introduced degree-reduction variables,
+   hence from 79 to 33 after homogenization.  Encode exposed-factor lifetime,
+   component conflicts, square gates, and zero-cost target shears in SAT or
+   MILP, or use a beam/dynamic-programming search, to test whether fewer than
+   13 auxiliary variables are possible.  Treat 33 as a certified upper bound,
+   not a minimum.

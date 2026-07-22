@@ -218,6 +218,34 @@ Consequently `c=-9` is the unique pole-free member of this one-parameter
 family.  Unlike the naive case, its forced primitive is polynomial.  This is
 how the missing completion was found.
 
+### Relation to a degree-by-degree coefficient search
+
+This closes the proposed reverse-engineering problem without requiring a
+blind Gröbner search.  Its requested stages appear here as follows.
+
+1. Equations (1)--(2) give polynomial coordinates with
+   `ker{-,R}=Q[X,Q,Z]`: the derivation `{-,R}` kills `X,Q,Z`, sends `E` to
+   one, and is therefore exactly `partial_E` in this polynomial coordinate
+   ring.  The induced quotient bracket is displayed explicitly in the proof
+   below.
+2. The foundational triple after the `R`-fixing shear `Z -> Z+cQ^2`
+   automatically supplies candidates `(S_c,T_c)` with `{S_c,T_c}=1` and both
+   commuting with `R`.  This replaces a general coefficient ansatz by a
+   geometrically constrained family that already transports the complete
+   foundational fiber.
+3. Once `(S_c,T_c)` is fixed, writing `D=E+f` turns the last two mixed-bracket
+   equations into the linear Hamiltonian equation (7).  Integration leaves
+   the principal part (8), so polynomiality forces `c=-9`; substituting it
+   gives the polynomial `K` in (11).
+4. Equations (12)--(14) then verify all six brackets and carry the exact
+   three-point collision.
+
+Thus existence is settled constructively.  What has **not** been proved is a
+degree-bounded classification of every possible canonical pair `(S,T)`, or
+that this solution equals the unavailable manuscript's outputs.  A general
+Gröbner/SAT coefficient search would now address uniqueness and classification,
+not the existence of a rank-two completion.
+
 ## An independent rank-two Poisson completion
 
 The mathematical existence gap can now be closed without claiming to have
