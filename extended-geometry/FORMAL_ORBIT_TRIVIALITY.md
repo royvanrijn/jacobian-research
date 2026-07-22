@@ -6,6 +6,14 @@ invertible for composition near the identity even when it is not globally
 invertible as a polynomial map.  Consequently the quotient by the full
 polynomial source-automorphism functor has no finite-order deformation data.
 
+The operational consequence is immediate: a dual-number or higher Artin
+direction found inside a bounded-support ansatz is a feature of that slice,
+not genuine global moduli.  Further searches must impose bounded-degree or
+factorization complexity, study algebraization over a reduced base, or use
+global normalization-boundary invariants.  The
+[complexity-filtered follow-up](COMPLEXITY_FILTERED_CONTACT.md) is the direct
+continuation adopted in this repository.
+
 Throughout, `k` is a field.  Characteristic zero is needed only for the
 reduced-curve interpolation theorem in Section 4.  Write
 
