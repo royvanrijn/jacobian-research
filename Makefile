@@ -144,6 +144,7 @@ verify-regressions: verify-external-consequences
 	$(PYTHON) scripts/verify_external_quartic_islands.py
 	$(PYTHON) scripts/verify_decorated_normalization.py
 	$(PYTHON) scripts/verify_affine_branch_mark_audit.py
+	$(PYTHON) scripts/verify_generic_affine_mark_faithfulness.py
 	$(PYTHON) scripts/verify_stable_generator_rigidity.py
 	$(PYTHON) scripts/verify_multicluster_ll_comparison.py
 	$(PYTHON) scripts/verify_rerooting_groupoid_boundary.py

@@ -64,6 +64,21 @@ particular it proves generic degree four.  It also identifies the apparent islan
 
 They are weighted-seed strata, not cancellation-parameter roots.
 
+More precisely, after scaling each seed so that `H'(1)=-1`, they occupy the
+following points of the normalized line (0.1) in
+[the quartic weighted note](QUARTIC_WEIGHTED_GEOMETRY.md):
+
+| map | normalized parameter `alpha` | root profile |
+|---|---:|---|
+| `F4a` | `-1` | triple zero |
+| `F4b` | `1/2` | double zero and `rho=3` |
+| `F4c` | `-2/3` | double zero and `rho=-1/2` |
+
+Thus the word “islands” describes three published points, not three
+components of the marked-root presentation space.  In particular B and C
+are two distinct points on the same split weighted stratum; their distinction
+requires the decorated boundary mark, not a new construction skeleton.
+
 ## 2. Normalized source and target boundaries
 
 Let `Q_H` be the reduced saturated discriminant of `E_H`.  The two target
@@ -146,6 +161,13 @@ The resulting conclusion is more precise than calling the examples three
 unrelated islands: all three lie outside the cancellation skeleton, but all
 three lie inside the already classified weighted-seed construction.  They do
 not by themselves introduce a new construction direction.
+
+This identification is one input to the
+[degree-four marked-root classification problem](DEGREE_FOUR_MARKED_ROOT_CLASSIFICATION.md).
+That note proves exhaustion only in a precisely straightened suspension
+universe.  Neither the three external examples nor the present boundary
+audit proves that every quartic marked-root Keller map belongs to that
+universe.
 
 ## 5. Exact reproduction
 

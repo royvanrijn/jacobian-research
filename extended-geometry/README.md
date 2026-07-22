@@ -16,7 +16,7 @@ rendered in [STATUS.md](../STATUS.md).
 | Finite-field Chebotarev | [Effective theorem](FINITE_FIELD_CHEBOTAREV.md) |
 | Explicit quartic model | [Quartic weighted geometry](QUARTIC_WEIGHTED_GEOMETRY.md) |
 | Zhuang's external quartic islands | [Weighted-seed identification and boundary audit](EXTERNAL_QUARTIC_ISLANDS.md) |
-| Decorated normalization and degreewise stable moduli | [Canonical paper](../papers/decorated-discriminant-normalization/main.tex); [extended audit and repair notes](DECORATED_NORMALIZATION_INVARIANT.md) |
+| Decorated normalization and degreewise stable moduli | [Canonical paper](../papers/decorated-discriminant-normalization/main.tex); [extended affine-mark and collision audit](DECORATED_NORMALIZATION_INVARIANT.md) |
 | Hurwitz--LL compactification | [Canonical paper](../papers/hurwitz-ll-rerooting/main.tex); [extended audit](HURWITZ_LL_COMPACTIFICATION.md) |
 | Cancellation contact resultant | [Endpoint-moment reduction and uniform `r=1,2,3,4` proofs](../cancellation/CONTACT_RESULTANT.md) |
 | Degree-five positive-dimensional stable moduli | [Stable Hessian-root invariant and explicit family](DEGREE_FIVE_STABLE_MODULI.md) |

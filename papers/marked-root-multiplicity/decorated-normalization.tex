@@ -240,153 +240,94 @@ Fitting-divisor quotient.  After one final shrinking they are isomorphic,
 which proves the asserted etaleness onto the normalized image.
 \end{proof}
 
-\begin{lemma}[low-pole filtration]
-\label{lem:low-pole}
-Let $\deg H=N$ and set
-$s=H'(r)$, $t=rH'(r)-H(r)$ and $R_H=k[s,t]\subset k[r]$.
-For the pole-order filtration at the unique point at infinity of the
-projective normalization,
-\[
- L_m(R_H)=\{f\in R_H:\operatorname{ord}_\infty(f)\ge-m\},
-\]
-one has
-\[
- L_{N-2}=k,\qquad L_{N-1}=k\oplus ks,
- \qquad L_N=k\oplus ks\oplus kt.                       \tag{6.9}
-\]
-These equalities remain valid after an arbitrary field extension.
+\begin{lemma}[the affine root sheet]
+\label{lem:affine-root-sheet}
+On the ordinary boundary-clean open, the root-one component over $C=0$ is
+the unique unramified component of the inverse incidence which meets the
+regular-reconstruction open outside the zero cluster.  The double-zero locus
+forms a residue-degree-two cluster rather than a simple root sheet, and every
+component belonging to another simple root lies in the reconstruction
+boundary.
 \end{lemma}
 
 \begin{proof}
-The element $r$ is integral over $k[s]$, while
-$k(s,t)=k(r)$ and $[k(r):k(s)]=N-1$.  Thus the implicit equation of
-$D_H$ is monic of degree $N-1$ in $t$, so each class has a unique
-representative
+The tangent-core identities give
 \[
- \sum_{0\le j<N-1}p_j(s)t^j.
+ \gamma=-E_W/c,\qquad x=C/\gamma,
+ \qquad y=(W-\gamma)/C.                               \tag{6.9}
 \]
-The monomial $s^it^j$ has pole order $i(N-1)+jN$.  If two such orders
-are equal with $0\le j,j'<N-1$, reduction modulo $N-1$ gives $j=j'$ and
-then $i=i'$.  Hence leading poles cannot cancel, and (6.9) follows.
-The argument is coefficient-field independent.
+The exact double root at zero supplies the separate residue-degree-two chart
+described by the quadratic zero-cluster model.  Let $\rho\ne0$ be a simple
+root of $H$.  Along its component over $C=0$ one has
+\[
+ \gamma\longrightarrow-H'(\rho)/c.
+\]
+Unless this limit equals $\rho$, the last expression in (6.9) has a pole.
+If it does equal $\rho$, the leading $y$-pole cancels, but from
+\[
+ z=\frac{\gamma-1-a_0(W/\gamma-1)}{b_0x^2}            \tag{6.10}
+\]
+the numerator tends to $\rho-1$.  Thus this branch is regular only for
+$\rho=1$.  At root one, $-H'(1)/c=1$, and the weighted reconstruction
+formulas are regular.  Boundary-cleanness makes the remaining roots simple
+and separates their branches, proving uniqueness.  The characterization uses
+only ramification and membership in the distinguished affine open, so it is
+intrinsic and is preserved by stabilization.
 \end{proof}
 
-\begin{remark}[repair status]
-The full-cover statement below records the intended rigidity theorem and the
-current proof architecture, but it is not an input to the preceding decorated
-normalization results or to Corollary~\ref{cor:weighted-stable-moduli}.  A
-repair is required before this statement is promoted from repair target to an
-active theorem dependency.
-\end{remark}
-
-\begin{theorem}[full-cover faithfulness---repair target]
-\label{thm:full-cover-faithful}
-Let $k$ be a characteristic-zero field.  Let $H,G\in k[W]$ be normalized
-degree-$N$ seeds:
+\begin{theorem}[generic affine-mark faithfulness]
+\label{thm:affine-mark-faithful}
+On the ordinary boundary-clean open, the decorated normalization together
+with the affine root sheet recovers the normalized seed exactly.  In
+particular, for seeds $H,G$ on this open,
 \[
- H(0)=H'(0)=H(1)=0,\quad H'(1)=-1,
-\]
-and similarly for $G$.  Suppose zero has multiplicity at least two, with no
-restriction on collisions or multiplicities among the other roots.  If their
-full marked incidence covers, including
-the regular-reconstruction opens, are stably left--right equivalent, then
-$H=G$.  Consequently,
-\[
- F_H\sim_{\mathrm{stable\ LR}}F_G\quad\Longrightarrow\quad H=G.         \tag{6.10}
+ F_H\sim_{\mathrm{stable\ LR}}F_G\quad\Longrightarrow\quad H=G.        \tag{6.11}
 \]
 \end{theorem}
 
 \begin{proof}
-Localize away from the second target boundary and put
-$K=k(C)$, $s=BC$, and $t=cAC^2$.  We first fix the variance convention.
-If the geometric target map is $\beta:Y_H\to Y_G$, its ring map is
+Stable normalization functoriality identifies the decorated normalizations
+and carries the regular-reconstruction open, hence the affine root sheet, to
+its counterpart.  Proposition~\ref{prop:decorated-unramified} says that two
+seeds in one geometric decorated fiber are related by a unique generic
+rerooting
 \[
- \beta^*:K[s_G,t_G,z_1,\ldots,z_q]
-       \longrightarrow K[s_H,t_H,z_1,\ldots,z_q].       \tag{6.11}
+ G=G_a,\qquad G_a(w)=\kappa_aH(aw),
+ \qquad \kappa_a=-\frac1{aH'(a)},                    \tag{6.12}
 \]
-Thus the repository convention $G=\beta F\alpha$ uses $\beta^{-1}$ when
-old target coordinates are expressed in the new presentation, but uses
-$\beta^*$ in (6.11).  The latter takes an irreducible equation $f_G$ of the
-discriminant to a unit times $f_H$.
-
-The curve $D_H$ is geometrically irreducible by the universal-pencil theorem
-and is singular: $H''$ is nonconstant, and $d\nu_H$ vanishes at a root of
-$H''$.  In particular $f_H$ cannot lie in a one-variable coordinate
-subring, since geometric irreducibility would then make it linear in that
-coordinate and $D_H$ a smooth coordinate line.  Dry\l o's stable-equivalence
-theorem for $K[s,t]$ therefore implies that $\beta^*$ preserves the plane
-subring $K[s,t]$.\footnote{R. Dry\l o,
-\href{https://doi.org/10.4064/cm124-2-9}{\emph{On the stable equivalence
-problem for $k[x,y]$}}, Colloq. Math. 124 (2011), 247--253, Theorem 1.}
-
-The descended plane automorphism preserves the unique infinity place.
-Lemma~\ref{lem:low-pole}, applied in both directions, gives on $D_H$
-\[
- \beta^*s_G=\lambda s_H+b,
- \qquad \beta^*t_G=\mu t_H+d s_H+e,                    \tag{6.12}
-\]
-where $\lambda\mu\ne0$.  Every second-boundary center is a multiple
-primitive root and hence has $s=t=0$; since zero supplies a center on both
-sides, this gives $b=e=0$ without requiring uniqueness.
-Since $r=dt/ds$ on the normalization, (6.12) induces
-\[
- r_G=\frac{\mu r_H+d}{\lambda};
-\]
-compose with the inverse triangular linear automorphism in (6.12).  The
-resulting plane automorphism fixes $D_H$
-pointwise.  The fixed-curve theorem of Blanc--Stampfli says that a
-nonidentity affine-plane automorphism can fix pointwise only a curve
-equivalent to a line.\footnote{J. Blanc and I. Stampfli,
-\href{https://arxiv.org/abs/1304.2549}{\emph{Automorphisms of the plane
-preserving a curve}}, 2013.}  Since $D_H$ is singular, the composition is
-the identity.  Hence (6.12), with $b=e=0$, holds in the entire plane ring.
-
-Put $a=\lambda/\mu$ and $p=d/\lambda$.  Restricting to the normalization
-and integrating gives
-\[
- G'(r/a+p)=\lambda H'(r),
- \qquad G(w)=\mu H(a(w-p)).                            \tag{6.13}
-\]
-The $t$ identity makes the integration constant zero.  The parameters
-$a,p,\mu$ lie in $k$: the affine map $w\mapsto a(w-p)$ carries the finite
-root multiset of $G$ to that of $H$, and the images of the distinct roots
-$0,1$ determine $a,p$ up to a finite constant choice; the leading
-coefficient then determines $\mu$.
-The pullback orientation is checked without convention by the identity
-\[
- \beta^*E_G(w)=G(w)-\lambda s_Hw+\mu t_H+d s_H
-              =\mu E_H(a(w-p);s_H,t_H).               \tag{6.14}
-\]
-
-The universal pencil has monodromy $S_N$.  Its degree-$N$ incidence field
-corresponds to the self-normalizing subgroup $S_{N-1}$, so the cover has no
-nontrivial deck automorphism; purely transcendental stabilization adds none.
-Therefore the actual cover lift in (6.14) is
-$W_H=a(W_G-p)$.
-
-Let $m=\operatorname{ord}_0(G)\ge2$.  The Newton polygon of
-$hW^m-BCW+AC^2$ shows that the zero cluster has affine sheets: both sheets
-when $m=2$, and one slope-one sheet when $m\ge3$.  It maps to the $H$-root
-$-ap$ with multiplicity $m$.  If $-ap\ne0$, all sheets of this nonzero
-multiple-root cluster are polar, since $y=(W-\gamma)/C$ has leading term
-$(-ap)/C$.  Preservation of the reconstruction open forces $p=0$.
-
-The affine root-one component for $G$ now maps to the simple $H$-root $a$.
-Every simple extra root is polar.  If $H'(a)+a\ne0$, the coordinate
-$y=(W-\gamma)/C$ has a pole.  If that leading pole cancels, then
-$\gamma\to a$ and $x\to0$, while the numerator of the reconstruction formula
-for $z$ tends to $a-1$.  Thus regularity still forces $a=1$.  Now
-$G=\mu H$, and $G'(1)=H'(1)=-1$ forces $\mu=1$.
+at a nonzero simple root $a$ of $H$.  Under the incidence isomorphism (6.8),
+the root-one sheet of $G_a$ maps to the root-$a$ sheet of $H$.  By
+Lemma~\ref{lem:affine-root-sheet}, preservation of the affine sheet forces
+$a=1$.  Then $\kappa_1=1$ because $H'(1)=-1$, so $G=H$.
 \end{proof}
 
-\begin{remark}
-Theorem~\ref{thm:full-cover-faithful} concerns the full incidence cover with
-its affine open.  Proposition~\ref{prop:decorated-unramified} is unchanged:
-the coarser decorated-normalization map forgets that open and remains
-generically etale of degree $N-2$.  The exact-double-zero boundary-clean
-locus is its generic special case; higher zero multiplicity and arbitrary
-extra-root collisions alter the compactified rerooting groupoid but introduce
-no new full-cover identifications.
+\begin{theorem}[marked moduli normalization]
+\label{thm:marked-moduli-normalization}
+After shrinking the ordinary boundary-clean seed open, its marked decorated
+map is an isomorphism onto the normalization of its image.  Under this
+identification, forgetting the affine root sheet is finite etale of degree
+$N-2$ onto the normalized coarse decorated image.
+\end{theorem}
+
+\begin{proof}
+The seed open is smooth and hence normal.  The marked map is generically
+unramified because its composite with the coarse decorated map is, and
+Theorem~\ref{thm:affine-mark-faithful} makes it generically one-to-one.
+It is therefore birational and quasi-finite onto the normalization of its
+image.  Zariski's Main Theorem makes it an open immersion; shrinking the
+target image gives the asserted isomorphism.  Proposition
+\ref{prop:decorated-unramified} identifies the forgetful morphism with the
+$N-2$ rerooting cover and proves the final assertion.
+\end{proof}
+
+\begin{remark}[collision-extension target]
+The remaining global problem is valuative, not generic faithfulness.  One
+must prove that the affine marking extends uniquely over every DVR family in
+the marked admissible-cover compactification and is compatible with the
+normalized Stein factor and conductor square.  This would make the full
+marked morphism representable and radicial at arbitrary simultaneous root
+collisions.  The collision and conductor calculations below verify the local
+models, but this valuative gluing statement is not asserted here.
 \end{remark}
 
 \fi

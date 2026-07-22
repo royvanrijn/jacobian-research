@@ -326,7 +326,7 @@ does not assert that the resulting polynomial pairs are inequivalent under
 arbitrary transformations of the Gaussian variables or under any broader
 notion of Gaussian-witness equivalence.
 
-## 7. Why Long's three-real-variable correction does not transfer directly
+## 7. Three-real-variable obstruction through quadratic real chaos
 
 For the more economical ansatz
 
@@ -349,10 +349,47 @@ choice `h=1+z`, one has `D=1`, and (7.1) is exactly
  v=-\tfrac12(1+z)(2+z).
 \]
 
-For the audited nonlinear canonical and split weighted seeds, the numerator
-in (7.1) is not divisible by `D^2`; the required `v` is rational rather than
-polynomial.  This is an exact obstruction to the direct half-pair ansatz, not
-an obstruction to every possible three-real-variable construction.
+The same denominator is forced for the **most general separated correction
+of real-Gaussian degree at most two**,
+
+\[
+ P=Wh(Z)+c(Z)+a(Z)T+b(Z)T^2.                        \tag{7.2}
+\]
+
+Indeed, the one-variable Gaussian--Lagrange identity reduces pure-moment
+cancellation to
+
+\[
+ \mathbb E_T\!\left[
+  \exp\!\left(\frac z{h(z)}V(z,T)\right)
+ \right]=\frac{D(z)}{h(z)},                         \tag{7.3}
+\]
+
+where `V=c+aT+bT^2`.  Exact Gaussian integration and the fact that the
+exponential of a nonconstant rational function cannot be algebraic force
+
+\[
+ b=-\frac{hh'(2h-zh')}{2D^2},
+ \qquad c=-\frac{za^2D^2}{2h^3}.                   \tag{7.4}
+\]
+
+For every nonlinear polynomial `h` with `h(0)=1`, the first expression in
+(7.4) is not a polynomial.  To see this uniformly, `D` has degree `deg(h)`.
+If every root of `D` were a root of `h`, it would be a multiple root; a root
+of multiplicity `m` in `h` has multiplicity exactly `m-1` in `D`.  The total
+of these multiplicities is strictly below `deg(h)`, a contradiction.  Hence
+`D` has a root `beta` with `h(beta) != 0`.  At that root
+`h'(beta)=h(beta)/beta != 0` and `2h(beta)-beta h'(beta)=h(beta) != 0`, so even
+`D` does not divide the numerator in (7.4).
+
+Thus no nonlinear weighted seed admits a polynomial correction of the form
+(7.2).  This strictly strengthens the earlier seed-by-seed half-pair check,
+but it is still not an obstruction to every polynomial in `(Z,W,T)`.
+Higher powers of `T`, corrections involving `W`, and the obstruction to
+importing a second Lagrange--Good fixed-point coordinate into an odd Gaussian
+dimension are analyzed in the
+[three-real-variable search note](THREE_REAL_WEIGHTED_GAUSSIAN_SEARCH.md).
+The unrestricted three-real polynomial problem remains open.
 
 ## 8. Reproduction and status
 
@@ -362,6 +399,8 @@ Run
 .venv/bin/python scripts/verify_formal_gaussian_lagrange.py
 .venv/bin/python scripts/verify_weighted_gaussian_bridge.py
 .venv/bin/python scripts/verify_gaussian_moment_fingerprint.py
+.venv/bin/python scripts/search_three_real_weighted_ansatz.py \
+  --z-degree 1 --w-degree 1 --moment-order 5
 python3 scripts/audit_weighted_gaussian_bridge_independent.py
 ```
 
@@ -374,11 +413,20 @@ verifies:
 - exact Wick moments through `m=12` for canonical cubic, quartic, and quintic
   seeds and a split quartic seed;
 - the Lagrange coefficient formula; and
-- the half-pair divisibility obstruction for those nonlinear seeds.
+- the original half-pair divisibility regression for the audited nonlinear
+  seeds (now subsumed by the all-nonlinear proof in Section 7).
 
 The fingerprint checker directly reconstructs a symbolic quartic `h`
 from `M_1,...,M_5` by exact compositional reversion and also audits a concrete
 degree-five instance.
+
+The three-real search checker constructs exact pure- and mixed-moment ideals
+for finite polynomial supports involving `(Z,W,T)`.  Its unit-ideal results
+are exact exclusions of the specified supports; nonunit truncations are
+reported only as survivors, not witnesses.  The companion search note records
+the all-orders separated-quadratic theorem, the odd-dimensional polarization
+obstruction for the existing determinant architecture, and the remaining
+higher-chaos frontier.
 
 The second checker reconstructs the correction using only sparse `Fraction`
 arithmetic, independently solves the fixed branch through order 14, and

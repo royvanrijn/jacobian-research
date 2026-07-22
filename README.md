@@ -378,7 +378,7 @@ distinctions matter:
 | GMC, `(xz)`, and `SU(2)` counterexamples | Christopher D. Long's two arXiv papers | Exact local Gaussian and beta/binomial checks, a complete `SU(2)=S^3` Haar proof, all 18 steps of Long's conservative 79-variable route, and a repository 17-dimensional quadratic--cubic trace whose rank-compressed 24-variable homogenization has a 21-variable essential quotient and gives `not GMC(42)`; every sparse artifact has an independent replay, with no claim that the direct witnesses derive from our map |
 | Weighted-seed/Gaussian bridge | Long's Lagrange--Good search architecture and Good's inversion theorem | A repository-derived polynomial determinant correction turning every nonconstant normalized seed into an explicit four-real-Gaussian witness family; the exact mixed moments recover `1+lambda*H`, making the moment realization injective; supported by a standalone constant-term-safe formal Gaussian--Lagrange proof, locally checked and not externally reviewed |
 | Cancellation maps and canonical boundary invariants | No earlier source has been identified in the present audit | The finite cancellation operator, all-parameter reconstruction and collision, boundary-exhaustion theorem, thick intersections, and rigidity results |
-| Degreewise weighted stable moduli | No earlier source has been identified in the present audit | A degree-`N-2` decorated-normalization invariant with image dimension `N-3`; full marked-cover faithfulness remains a repair target. The separate Hurwitz/LL paper organizes the admissible-cover closure and compactified rerooting and compares the formal conductor square at simultaneous multicluster collisions |
+| Degreewise weighted stable moduli | No earlier source has been identified in the present audit | A degree-`N-2` coarse decorated-normalization invariant with image dimension `N-3`; adding the unique unramified affine root sheet normalizes the marked image and gives exact parameter recovery on a nonempty open. The separate Hurwitz/LL paper organizes the admissible-cover closure; valuative extension of the affine marking through every collision stratum remains open |
 | Cross-family stable multiplicity | No earlier source has been identified in the present audit | The complementary marked-open theorem distinguishes all cancellation parameter roots, all divisor types, and one weighted class, giving at least `1+(N-1)tau(N-1)-sigma(N-1)` stable classes in generic degree `N>=4` |
 
 “No earlier source identified” is a statement about the current search, not a
@@ -488,9 +488,11 @@ preserved by stable polynomial left--right equivalence,
 This is the main degreewise moduli result.  Its proof is in the
 [decorated-normalization paper](papers/decorated-discriminant-normalization/main.tex).
 The coarse decorated-normalization map remains generically etale of degree
-`N-2`, reflecting the finite rerooting groupoid.  The proposed refinement by
-the full marked incidence cover and its regular-reconstruction open remains a
-repair target and is not used for this moduli theorem.
+`N-2`, reflecting the finite rerooting groupoid.  Adding the unique
+unramified root sheet which meets the regular-reconstruction open removes
+exactly this ambiguity: after shrinking, the normalized seed open is the
+normalization of the marked decorated image.  Extending that affine marking
+valuatively through every collision stratum is the remaining global problem.
 The [Hurwitz--LL compactification](papers/hurwitz-ll-rerooting/main.tex)
 realizes the discriminant as a universal critical-value incidence and places
 the compactified rerooting groupoid in a marked admissible-cover closure.  Its
@@ -662,9 +664,10 @@ G_H:\mathbb A^4\longrightarrow\mathbb A^4
 that is polynomially left--right equivalent to the weighted map times
 `id_(A^1)`.  The coarse decorated-normalization map is generically etale of
 exact degree `N-2` while retaining the full `(N-3)`-dimensional source image.
-It therefore transfers the principal moduli result to pairwise stably
-inequivalent exact symplectic maps of `A^4` without using full-cover
-faithfulness.  A fixed `kappa=-9` slice has dimension `N-4`.  Degrees five
+It therefore transfers the principal dimension result to stable exact
+symplectic classes in `A^4` without a faithfulness input.  The affine-marked
+refinement then gives exact seed-parameter separation on a nonempty open.  A
+fixed `kappa=-9` slice has dimension `N-4`.  Degrees five
 and six are retained as explicit regression specializations of the
 all-degree residue theorem, not as independent theorem sources.  See the
 [all-degree rank-two theorem](extended-geometry/RANK_TWO_SYMPLECTIC_DESCENT.md)

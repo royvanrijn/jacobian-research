@@ -21,6 +21,10 @@ calculations are isolated as
 [`thick-intersection.tex`](thick-intersection.tex).  They are included by the
 main paper and are not competing theorem sources.
 
+The conditional contact-resultant and full projective-branch intersection
+material is separated into the non-proof-critical
+[`refined-boundary-geometry.tex`](refined-boundary-geometry.tex) appendix.
+
 The construction-independent canonical source for stabilization, including
 normalization, valuation, intersection, nilradical, relative-differential,
 Fitting, and conductor base change, is

@@ -163,7 +163,22 @@ image, and that image has the full source dimension `N-3`.  Because rank-two
 completion is an identity stabilization up to polynomial left--right
 equivalence, it follows directly that the completed maps contain an
 `(N-3)`-dimensional family of stable classes.  This conclusion is independent
-of the stronger full-cover faithfulness theorem.
+of the affine-marked refinement below.
+
+### Corollary — parameter-faithful rank-two moduli
+
+After shrinking to the marked ordinary boundary-clean open, the assignment
+
+\[
+ H\longmapsto [G_H]_{\rm stable\ LR}
+\]
+
+is injective.  Indeed, `G_H` is polynomially left--right equivalent to
+`F_H times id_(A^1)`, while the
+[generic affine-mark faithfulness theorem](../papers/decorated-discriminant-normalization/main.tex)
+recovers `H` from the stable class of `F_H`.  Thus the coarse theorem supplies
+the `N-3`-dimensional result without faithfulness, and the affine mark upgrades
+it to exact parameter separation on a nonempty open.
 
 The proof of the two uniform residue statements is in Section 6.  Sections 4
 and 5 instantiate them in degrees five and six as exact regression examples.
@@ -573,16 +588,15 @@ for which
  \operatorname{disc}(H'')=19184247360.
 \]
 
-On this open, the coarse decorated-normalization invariant has finite fibers.
-Since rank-two completion is polynomially left--right equivalent to adjoining
-one identity coordinate, its image gives the full two-dimensional space of
-stable classes on this slice.  No recovery of the individual
-`(sigma,tau)` labels is needed.
+On this open, the affine-mark theorem recovers the seed exactly.  Since
+rank-two completion is polynomially left--right equivalent to adjoining one
+identity coordinate, distinct `(sigma,tau)` parameters give distinct stable
+classes after shrinking to the marked open.
 
 ### Corollary — two-dimensional degree-six stable moduli in `A^4`
 
-There is a nonempty two-dimensional algebraic space of stable
-polynomial left--right classes of degree-six exact symplectic Keller maps
+There is a nonempty two-dimensional algebraic family of pairwise stably
+polynomially left--right inequivalent degree-six exact symplectic Keller maps
 
 \[
  \boxed{G_{\sigma,\tau}:\mathbb A^4\longrightarrow\mathbb A^4.}
@@ -591,12 +605,13 @@ polynomial left--right classes of degree-six exact symplectic Keller maps
 The exact certificate is
 [`verify_degree_six_fixed_gamma_descent.py`](../scripts/verify_degree_six_fixed_gamma_descent.py).
 
-The same witness proves that the ordinary boundary-clean open in the full
+The same witness proves that the marked ordinary boundary-clean open in the full
 \((\kappa,\sigma,\tau)\)-space is nonempty.  The coarse decorated map is
 generically etale of exact degree four onto a three-dimensional image, while
 the generic-chart completion covers a dense open.  Hence degree six also has
-a three-dimensional space of stable exact symplectic classes in
-\(\mathbb A^4\), independently of full-cover faithfulness.
+a three-dimensional family of pairwise stably inequivalent exact symplectic
+maps in \(\mathbb A^4\).  The dimension statement uses only the coarse map;
+pairwise parameter separation uses its affine-marked refinement.
 
 The full-space and exceptional-divisor certificates are
 [`verify_degree_six_flux_surface.py`](../scripts/verify_degree_six_flux_surface.py)
@@ -724,8 +739,9 @@ restriction to the fixed slice has image dimension \(N-4\).  On the full seed
 open it is generically etale of exact degree \(N-2\) and has image dimension
 \(N-3\).  Since completion is polynomially left--right equivalent to identity
 stabilization, these are respectively \(N-4\) and \(N-3\) dimensions of stable
-exact symplectic classes in \(\mathbb A^4\).  Full-cover faithfulness is not an
-input.
+exact symplectic classes in \(\mathbb A^4\), without a faithfulness input.
+After adding the affine root mark and shrinking once more, distinct seed
+parameters give pairwise distinct stable classes on both opens.
 
 The Laurent recurrence is checked by
 [`verify_four_residue_recurrence.py`](../scripts/verify_four_residue_recurrence.py).

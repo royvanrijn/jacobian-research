@@ -28,6 +28,16 @@ remains is the upstream extraction of the reciprocal height-one markings
 from an arbitrary divisor-minimal suspension, and a polynomial-chart problem
 in the weighted branch.
 
+The upstream audit in
+[`ONE_BOUNDARY_CHART_CLASSIFICATION.md`](ONE_BOUNDARY_CHART_CLASSIFICATION.md)
+shows that this last sentence needs a precise definition of divisor
+minimality.  If it means only one affine pole divisor, the proposed global
+dichotomy is false: a positive-oriented rational chart can cancel the
+Jacobian of a one-boundary core and give the identity Keller map.  The audit
+proves the signed chart theorem under the additional boundary-monotonicity
+hypothesis and separates normal height-one primitivity from the still-open
+tangential residue markings.
+
 Work over a characteristic-zero field `k`.  All varieties are integral and
 all generically finite maps are generically separable.
 
@@ -1387,13 +1397,31 @@ degree one and the primitive two-place flags consequences.
 
 ### Remaining open suspension statement
 
-Every divisor-minimal one-boundary Keller suspension admits, after polynomial
-left--right equivalence, one of two straightened chart mechanisms:
+The corrected open statement is that every **nontrivial, height-one
+saturated** divisor-minimal one-boundary Keller suspension satisfies the
+boundary-monotonicity and residue-saturation properties needed to admit,
+after polynomial left--right equivalence, one of two straightened chart
+mechanisms:
 
 1. an orientation-preserving polynomial chart supplying the one-place
    markings of Theorem 5.1;
 2. an orientation-reversing reciprocal boundary link supplying its primitive
    height-one `G_m` markings and boundary noncontraction.
+
+Without the emphasized strengthening in this formulation, there is
+a third elementary mechanism.  For `r>=1`, put
+
+\[
+ \alpha(a,y,z)=(a^{-r}y,a,z),
+ \qquad
+ \Phi(w,q,p)=(q,q^rw,p).
+\]
+
+Their composition is the identity.  The sole boundary is smooth, the
+orientation is positive, and the two Jacobian powers cancel, but `alpha` is
+rational rather than polynomial.  This example is divisor-minimal in the naïve
+one-pole-support sense.  It is excluded by boundary monotonicity or by a
+precise nontriviality condition, not by factoriality or smoothness alone.
 
 Proving the open suspension statement would yield the desired dichotomy:
 
@@ -1417,10 +1445,33 @@ into the two displayed height-one mechanisms.  The orientation-preserving
 weighted branch still has its separate polynomial-chart straightening
 problem.
 
+The upstream chart note proves the following partial replacement.  If the
+two affine models are factorial, their height-one link is saturated, and
+positive orientation is boundary-monotone, then the unit lattice forces
+exactly:
+
+\[
+ D=cA\quad\text{with a polynomial chart},
+ \qquad\text{or}\qquad
+ D=cA^{-1}\quad\text{with a reciprocal link}.         \tag{11.2}
+\]
+
+On a factorial graph completion, displayed exceptional primes which consume
+the full relative Picard rank are the complete exceptional list.  In the
+reciprocal row, a polynomial effective target ledger must vanish once the
+source ledger cancels.  These statements settle the normal height-one and
+hidden-divisor parts under explicit hypotheses.  They do not produce
+`v_A(Q-sP)=0`, `v_A(P)=1`, or the weighted vertical formulas; those are the
+residue-saturation and positive straightening frontiers respectively.
+
 ## References and repository links
 
 - The original determinant ledger and coordinate-preserving normal forms are
   in [`CONTROLLED_BOUNDARY_SUSPENSIONS.md`](CONTROLLED_BOUNDARY_SUSPENSIONS.md).
+- The intrinsic pole-support criterion, relative Picard-rank audit,
+  boundary-monotonicity theorem, and the same-orientation countermodels are
+  in
+  [`ONE_BOUNDARY_CHART_CLASSIFICATION.md`](ONE_BOUNDARY_CHART_CLASSIFICATION.md).
 - The canonical finite normalization and invariant ladder are in
   [`BOUNDARY_GEOMETRY.md`](BOUNDARY_GEOMETRY.md).
 - The construction-independent stable base-change theorem is

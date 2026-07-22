@@ -51,23 +51,22 @@ boundary are documented in
 
 Open work, in dependency order:
 
-1. **Coordinate before starting the F2 derivation.**  Another active agent may
-   already be working on the `(75,125)` F2 `j=1` normal form; inspect current
-   worktrees/branches and avoid duplicating that derivation.
-2. **Derive or obtain an exhaustive F2 `j=1` normal-form certificate.**  The
-   required output is every Laurent polygon branch, the normalizing
-   transformations, vertex nonvanishing, coefficient normalizations, full
-   supports, and transformed bracket monomial.  The compiler deliberately
-   rejects the current corner-only record.
-3. **Reconcile the `(96,144)` sources.**  Settle the relation between the 2016
+1. **Finish the F2 lower-boundary theorem.**  The chain arithmetic, Puiseux
+   translation, transformed bracket, forced vertices, common-power band, and
+   terminal type-I normalization are now exact and machine-readable; see
+   [`F2_75_125_DERIVATION.md`](F2_75_125_DERIVATION.md).  What remains is to
+   prove the `gamma` branches exhaustive and determine every lower Laurent
+   boundary and band through bracket layer 4.  The compiler deliberately
+   rejects the partial record.
+2. **Reconcile the `(96,144)` sources.**  Settle the relation between the 2016
    lower-side exclusion of `(8,28),(8,40)` and the 2017 raw complete-chain row
    before treating repeated-tail reuse as a live exclusion problem.
-4. **Test reuse only after a new band derivation exists.**  Derive the new
+3. **Test reuse only after a new band derivation exists.**  Derive the new
    curve polynomial `A`, give an explicit base/coordinate map, pass the exact
    cyclic-curve identity check, and then compare the forcing differential,
    primitive support, residual scaling, and gauge/exact class.  Equal coarse
    fingerprints alone are not evidence of reuse.
-5. **Optional engineering simplification.**  Emit one machine-readable report
+4. **Optional engineering simplification.**  Emit one machine-readable report
    per normal-form branch containing provenance, polygons, bands, bracket
    layers, Wronskian data, de Rham certificate, and any reuse certificate.
 

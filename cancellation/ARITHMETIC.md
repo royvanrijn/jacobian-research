@@ -299,6 +299,31 @@ ramified simultaneously, so the argument does not prove `t=1`.  The exact
 extraction and this support warning are proved in
 [FIXED_R_NEWTON_RAMIFICATION.md](FIXED_R_NEWTON_RAMIFICATION.md).
 
+The divisibility diagonal also supports a complementary Newton-polygon
+theorem in the other direction.  If `m>=2` and the interval
+
+\[
+ mr<p<(m+1)r+1
+\]
+
+contains two primes, the two corresponding translated Newton polygons force
+two different and incompatible factor-degree pairs.  Hence the polynomial is
+irreducible.  The prime number theorem shows that, for every fixed `m`, this
+criterion holds for all sufficiently large `r`.  An explicit prime-interval
+theorem of Rohrbach--Weis, combined with finite exact certificates below
+degree `118`, proves the complete columns
+
+\[
+ \boxed{1\le m\le6,\qquad r\ge1.}                    \tag{10d}
+\]
+
+More precisely, if a counterexample with `m>=2` exists, then `N` is composite
+and `(mr,(m+1)r+1)` contains at most one prime.  If it contains exactly one
+prime `N-u`, the polynomial must be the product of exactly two irreducibles
+of degrees `u` and `mr-u`.  The proof and the short-interval calculation are
+given in
+[DIAGONAL_TWO_PRIME_IRREDUCIBILITY.md](DIAGONAL_TWO_PRIME_IRREDUCIBILITY.md).
+
 In addition, the repository proves irreducibility on the cancellation
 diagonal in each of the following cases:
 
@@ -307,11 +332,14 @@ diagonal in each of the following cases:
 3. both `k+1` and `N+1` are prime and `N+1` is primitive modulo `k+1`, by
    cyclotomic reduction;
 4. `binom(N-1,k)` is prime, using the strict unit-disk location of the roots
-   of `B_(k,r)`; and
-5. every pair with `mr<=30`, by exact modular factor-degree certificates.
+   of `B_(k,r)`;
+5. the interval `(mr,(m+1)r+1)` contains at least two primes, by incompatible
+   translated Newton polygons; and
+6. every pair with `mr<=30`, together with every finite endpoint
+   `2<=m<=6`, `mr<118`, by exact modular factor-degree certificates.
 
 The second item includes the useful prime case `N=p`.  The bounded
-certificates in item 5 are independently replayable even where their
+certificates in item 6 are independently replayable even where their
 conclusions overlap published small-degree or earlier computational ranges.
 None of the cited theorems or these criteria covers every pair in (10).
 
@@ -382,13 +410,13 @@ on the divisibility diagonal (2)?
 ## 4. Known boundary and verification
 
 Uniform results establish separability, the specialized square criterion,
-the full `m=1` irreducibility column, and the three additional diagonal
+the six complete columns `1<=m<=6`, and the additional diagonal
 irreducibility criteria above.  The geometric-derivative literature further
 establishes density-one irreducibility on every fixed-`r` row, with the
 quantitative bounds in (10a), and the extra `r=1` families (10b).  Exact
-finite certificates establish irreducibility and the complete natural
-Galois group for `mr<=30`, together with `A_49` and `A_97` on the odd square
-family.
+finite certificates establish irreducibility for `mr<=30` and for the finite
+endpoints `2<=m<=6`, `mr<118`.  The complete natural Galois group is known
+for `mr<=30`, together with `A_49` and `A_97` on the odd square family.
 
 Open: prove (10) in the remaining cases and answer the large-group question
 (12).  Minimal fields of definition of the collision fibers are a separate
@@ -397,7 +425,7 @@ arithmetic problem; see the [research roadmap](RESEARCH_ROADMAP.md).
 The exact regressions are:
 
 - `scripts/verify_parameter_irreducibility.py`, for the uniform diagonal
-  criteria and modular degree-sieve certificates;
+  criteria, two-prime Newton polygons, and modular degree-sieve certificates;
 - `scripts/verify_parameter_discriminant.py`, for (3a), (5)--(8a) after
   specialization;
 - `scripts/verify_fixed_r_newton_ramification.py`, for the reciprocal

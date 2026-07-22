@@ -105,6 +105,13 @@ where `A(0)=B(0)=id` and, with a fixed composition convention,
 Stable versions allow identity variables before taking the minimum and record
 the stabilization dimension as a second filtration parameter.
 
+For a genuinely stable profile one should not minimize over the stabilization
+dimension separately at each contact order: that would allow the number of
+identity variables to grow with `m`, whereas stable equivalence uses one fixed
+finite stabilization.  The appropriate object is the resource spectrum
+indexed by `(m,r,D_x,D_t,nu_t)` developed in
+[the ind-group constructibility note](IND_GROUP_CONSTRUCTIBILITY.md).
+
 The numerical values depend on coordinates.  Under fixed polynomial changes
 of source and target coordinates, however, (1.3) distorts them by bounded
 multiplicative constants.  Thus boundedness, unboundedness, and coarse growth
@@ -207,6 +214,16 @@ degrees tending to infinity and need not assemble regularly.  A stable-moduli
 theorem from this filtration therefore also needs a boundedness or
 constructibility result ensuring that pointwise equivalences in an algebraic
 neighbourhood can be chosen in one bounded degree stratum.
+
+The finite-type part of that bridge is now proved in
+[ind-group constructibility](IND_GROUP_CONSTRUCTIBILITY.md): bounded
+two-sided automorphism degree gives a finite-type incidence scheme, pointwise
+stable equivalence over an uncountable irreducible base gives one fixed degree
+and stabilization dimension generically, and a generically finite base change
+produces a regular equivalence on a dense open.  What constructibility does
+**not** give is regularity at the chosen base point; a dominating incidence
+branch may have a pole there.  This is the remaining no-escape problem and is
+the reason pole order belongs in the full profile.
 
 ## 5. Degree-five test
 
@@ -358,6 +375,14 @@ source trivialization of bounded polynomial degree.  In particular, its
 canonical formal source trivializer does not algebraize to a polynomial
 automorphism curve in this target gauge.
 
+The same conclusion holds after every fixed identity stabilization.  Indeed,
+the unique formal source trivializer of
+`G_t x id_r` relative to `F_2 x id_r` is
+`widehat(alpha)_t x id_r`, so its forward and inverse coefficient degrees
+remain `34m+1`.  Thus stabilization introduces no new source-only gap; the
+open issue is cancellation by target automorphisms.  See Proposition 5.1 of
+[the constructibility note](IND_GROUP_CONSTRUCTIBILITY.md).
+
 The checker
 [`verify_degree_five_contact_profile.py`](../scripts/verify_degree_five_contact_profile.py)
 constructs the target-normalized arc, computes both canonical source
@@ -385,3 +410,10 @@ bounded-degree family.  Parameter numerator degree and pole order must also
 be controlled for a complete algebraization-complexity profile.  These are
 the remaining steps before this filtration itself becomes a left--right
 stable-moduli theorem.
+
+More precisely, the constructible generic boundedness bridge is now complete,
+as is a Noetherian theorem saying that contact in one fixed full resource box
+at every order produces one exact rational equivalence.  The remaining
+family-theoretic issue is no escape at the base point, and the remaining
+degree-five computation is target-minimal coercivity, preferably in every
+fixed stabilization dimension.

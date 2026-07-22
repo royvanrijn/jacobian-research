@@ -21,5 +21,16 @@ htmlcov/
 # Reproducible verification logs are generated locally and uploaded by CI.
 artifacts/verification/
 
+# Paper-local LaTeX build products
+/papers/**/*.aux
+/papers/**/*.log
+/papers/**/*.fls
+/papers/**/*.fdb_latexmk
+/papers/**/*.out
+/papers/**/*.toc
+/papers/**/*.bbl
+/papers/**/*.blg
+/papers/**/main.pdf
+
 # Julia local environment products
 .julia/

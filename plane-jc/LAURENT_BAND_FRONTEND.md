@@ -132,16 +132,25 @@ Family `F2` at `j=1` supplies only
  (5,20)\longrightarrow(7/5,2),\qquad(m,n)=(3,5).
 \]
 
+The chain theorem nevertheless forces a useful partial certificate.  With
+`X=x^(1/5)`, the required Puiseux translation is
+`y -> y+lambda/X`, the bracket becomes `X^4`, and two consecutive nonzero
+edges are fixed.  The terminal type-I edge normalizes uniquely and has no
+residual de Rham obstruction.  These exact facts and the remaining proof
+obligations are derived in
+[`F2_75_125_DERIVATION.md`](F2_75_125_DERIVATION.md) and encoded by
+[`cas/f2_75_125_frontend.py`](cas/f2_75_125_frontend.py).
+
 The older `(50,75)` calculation concerns the `j=0`, `(2,3)` member and begins
 with two additional cases `gamma=2,3`; it explicitly says that the first
 normal-form part is not proved there because it is used only to revisit a
 known case.  Consequently it is neither a proof nor a template for the
 `(3,5)` member.
 
-The next genuine frontier task is therefore a new F2 `j=1` normal-form
-proposition producing an exhaustive list of Laurent polygon pairs.  Until
-that theorem is derived, `(75,125)` has no honest band input for either the
-front-end compiler or the de Rham engine.
+The next genuine frontier task is therefore the lower-boundary part of a new
+F2 `j=1` normal-form proposition: prove the `gamma` branches exhaustive and
+produce the complete Laurent polygon pairs.  Until that theorem is derived,
+`(75,125)` has no honest complete band input for the de Rham engine.
 
 ## 5. Reproduction
 

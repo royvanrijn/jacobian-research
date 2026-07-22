@@ -83,13 +83,13 @@
     },
     {
       "id": "F2",
-      "theorem": "Full-cover faithfulness",
-      "status": "repair required before use; retained in the decorated paper as a repair target",
+      "theorem": "Generic affine-mark faithfulness",
+      "status": "proved on the ordinary boundary-clean open; the marked seed map normalizes its image",
       "canonical_source": "papers/decorated-discriminant-normalization/main.tex",
-      "dependencies": ["D1", "external: stable plane descent and fixed-curve rigidity"],
-      "checker": "scripts/verify_affine_branch_mark_audit.py",
-      "external_review": "under audit",
-      "supersedes": ["six-orbit bound"]
+      "dependencies": ["D1", "S1", "W1"],
+      "checker": "scripts/verify_generic_affine_mark_faithfulness.py",
+      "external_review": "none",
+      "supersedes": ["six-orbit bound", "legacy global-faithfulness proof"]
     },
     {
       "id": "H1",
@@ -119,7 +119,357 @@
       "dependencies": ["W1", "D1"],
       "checker": "scripts/verify_four_residue_recurrence.py",
       "external_review": "none",
-      "supersedes": ["degree-five/six theorem sources", "full-cover faithfulness as a rank-two dependency"]
+      "supersedes": ["degree-five/six theorem sources", "faithfulness as a prerequisite for the principal rank-two dimension theorem"]
+    },
+    {
+      "id": "R2",
+      "theorem": "Rank-two parameter faithfulness",
+      "status": "proved on the ordinary boundary-clean seed open for every N >= 5",
+      "canonical_source": "extended-geometry/RANK_TWO_SYMPLECTIC_DESCENT.md",
+      "dependencies": ["R1", "F2"],
+      "checker": "scripts/verify_generic_affine_mark_faithfulness.py",
+      "external_review": "none",
+      "supersedes": ["dimension-only rank-two separation"]
+    },
+    {
+      "id": "G1",
+      "theorem": "Generic nodal-cuspidal discriminant geometry",
+      "status": "proved on a nonempty open of normalized admissible degree-n seeds for every n >= 3",
+      "canonical_source": "extended-geometry/GENERIC_DISCRIMINANT_CURVE.md",
+      "dependencies": ["W1"],
+      "checker": "scripts/verify_generic_discriminant_geometry.py",
+      "external_review": "none",
+      "supersedes": ["bounded generic-discriminant experiments"]
+    },
+    {
+      "id": "I1",
+      "theorem": "Canonical-family image and nonproperness",
+      "status": "proved for H_d(W)=W^d(1-W) for every d >= 2, including the exact affine image and boundary fibers",
+      "canonical_source": "extended-geometry/CANONICAL_FAMILY_IMAGE.md",
+      "dependencies": ["W1"],
+      "checker": "scripts/verify_canonical_family_image.py",
+      "external_review": "none",
+      "supersedes": []
+    },
+    {
+      "id": "I2",
+      "theorem": "Omitted-value classification",
+      "status": "complete finite classifier for every fixed seed, with a closed classification for primitives having two additional simple zeros",
+      "canonical_source": "extended-geometry/OMITTED_VALUE_CLASSIFICATION.md",
+      "dependencies": ["W1"],
+      "checker": "scripts/verify_omitted_value_classification.py",
+      "external_review": "none",
+      "supersedes": ["singular-locus-only omitted-value tests"]
+    },
+    {
+      "id": "E1",
+      "theorem": "Full-contact strata and exceptional components",
+      "status": "proved in characteristic zero for every full-contact partition: nonemptiness, dimensions, closure order, maximal components, normalizations, and set-theoretic intersections",
+      "canonical_source": "extended-geometry/COINCIDENT_ROOT_REBUILD.md",
+      "dependencies": ["W1", "I2"],
+      "checker": "scripts/verify_maximal_phi_irreducibility.py",
+      "external_review": "none",
+      "supersedes": ["chart-only contact-stratum arguments"]
+    },
+    {
+      "id": "E2",
+      "theorem": "Contact-atom principle",
+      "status": "proved for every normalized exceptional seed locus in characteristic zero; maximal contact types use only multiplicities two and three",
+      "canonical_source": "extended-geometry/CONTACT_ATOM_PRINCIPLE.md",
+      "dependencies": ["E1"],
+      "checker": "scripts/verify_contact_atom_principle.py",
+      "external_review": "none",
+      "supersedes": ["Mason--Stothers as the source of the two-three classification"]
+    },
+    {
+      "id": "E3",
+      "theorem": "Exceptional-component normalization",
+      "status": "proved for every maximal partition 2^a 3^b in characteristic zero, with an explicit smooth normalization",
+      "canonical_source": "extended-geometry/COMPONENT_NORMALIZATION.md",
+      "dependencies": ["E1", "E2"],
+      "checker": "scripts/verify_component_normalization.py",
+      "external_review": "none",
+      "supersedes": []
+    },
+    {
+      "id": "E4",
+      "theorem": "Generic degree-twelve local singularity",
+      "status": "proved etale-locally on a dense open of the (6,6) collision stratum; the two branches have transverse intersection length four",
+      "canonical_source": "extended-geometry/DEGREE12_LOCAL_SINGULARITY.md",
+      "dependencies": ["E3"],
+      "checker": "scripts/audit_degree_twelve_independent.py",
+      "external_review": "none",
+      "supersedes": ["nodal model for the generic degree-twelve branch intersection"]
+    },
+    {
+      "id": "FF1",
+      "theorem": "Effective finite-field Chebotarev for weighted seeds",
+      "status": "proved seed by seed away from an explicit bad ideal, assuming the characteristic-zero seed has S_n monodromy",
+      "canonical_source": "extended-geometry/FINITE_FIELD_CHEBOTAREV.md",
+      "dependencies": ["W1", "external: effective finite-field Chebotarev estimates"],
+      "checker": "scripts/verify_effective_chebotarev.py",
+      "external_review": "none",
+      "supersedes": ["unspecified good-reduction exclusions"]
+    },
+    {
+      "id": "Q1",
+      "theorem": "Explicit quartic weighted geometry",
+      "status": "proved for the displayed quartic model: inverse cover, discriminant, monodromy, exact image, boundary fibers, and nonproperness",
+      "canonical_source": "extended-geometry/QUARTIC_WEIGHTED_GEOMETRY.md",
+      "dependencies": ["W1"],
+      "checker": "scripts/audit_quartic_independent.py",
+      "external_review": "none",
+      "supersedes": ["bounded quartic seed scan as theorem evidence"]
+    },
+    {
+      "id": "Q2",
+      "theorem": "External quartic-island identification",
+      "status": "the three pinned quartic maps are exactly identified as weighted seeds; their normalization boundary, monodromy, nilpotency, and cancellation separation are audited",
+      "canonical_source": "extended-geometry/EXTERNAL_QUARTIC_ISLANDS.md",
+      "dependencies": ["W1", "Q1", "external: pinned Zhuang quartic formulas"],
+      "checker": "scripts/verify_external_quartic_islands.py",
+      "external_review": "none",
+      "supersedes": ["treating the three quartic islands as unrelated constructions"]
+    },
+    {
+      "id": "D2",
+      "theorem": "Scheme-theoretic decorated-normalization invariant",
+      "status": "proved for the intrinsic finite normalization cover and full Fitting/conductor data; affine-mark faithfulness is proved on the ordinary boundary-clean open, while all-parameter cancellation intersections remain conditional on their explicit resultants outside the proved ranges",
+      "canonical_source": "extended-geometry/DECORATED_NORMALIZATION_INVARIANT.md",
+      "dependencies": ["D1", "F2", "H1"],
+      "checker": "scripts/verify_decorated_normalization.py",
+      "external_review": "none",
+      "supersedes": ["reduced-discriminant-only stable invariant"]
+    },
+    {
+      "id": "CR1",
+      "theorem": "Cancellation contact resultant",
+      "status": "proved uniformly for every m >= 1 in the complete columns r=1,2,3,4; the all-parameter theorem for r >= 5 remains open",
+      "canonical_source": "cancellation/CONTACT_RESULTANT.md",
+      "dependencies": ["C1"],
+      "checker": "scripts/verify_contact_resultant_endpoint_reduction.py",
+      "external_review": "none",
+      "supersedes": ["bounded resultant table for r <= 4"]
+    },
+    {
+      "id": "D5",
+      "theorem": "Degree-five stable moduli",
+      "status": "proved on an explicit nonempty parameter open, with exact affine-mark recovery and an independent coarse Hessian-root invariant",
+      "canonical_source": "extended-geometry/DEGREE_FIVE_STABLE_MODULI.md",
+      "dependencies": ["W1", "D1", "F2"],
+      "checker": "scripts/verify_degree_five_stable_moduli.py",
+      "external_review": "none",
+      "supersedes": ["six-element coarse orbit as the degree-five separation theorem"]
+    },
+    {
+      "id": "R3",
+      "theorem": "Degree-five rank-two regression",
+      "status": "proved directly for the original degree-five stable-moduli line; retained as a worked regression for the all-degree theorem R1",
+      "canonical_source": "extended-geometry/DEGREE_FIVE_RANK_TWO_DESCENT.md",
+      "dependencies": ["D5", "R1"],
+      "checker": "scripts/verify_degree_five_rank_two_descent.py",
+      "external_review": "none",
+      "supersedes": []
+    },
+    {
+      "id": "QO1",
+      "theorem": "Filtered A_2 quantization obstruction",
+      "status": "proved at hbar^5 for the standard parity-preserving filtered Weyl-symbol ansatz at the stated degree-five sample; odd-power and wider-filtration lifts remain open",
+      "canonical_source": "extended-geometry/RANK_TWO_FILTERED_QUANTIZATION_OBSTRUCTION.md",
+      "dependencies": ["R1"],
+      "checker": "scripts/explore_degree_five_a2_subprincipal.py",
+      "external_review": "none",
+      "supersedes": ["unresolved symmetric-ordering test"]
+    },
+    {
+      "id": "SW1",
+      "theorem": "Exact symplectic and Weyl lifts",
+      "status": "proved for every characteristic-zero Keller map: the polynomial cotangent lift and inverse-Jacobian Weyl embedding preserve fibers and generic degree",
+      "canonical_source": "extended-geometry/SYMPLECTIC_WEYL_LIFT.md",
+      "dependencies": ["F1"],
+      "checker": "scripts/verify_symplectic_weyl_lift.py",
+      "external_review": "none",
+      "supersedes": ["construction-specific cotangent-lift arguments"]
+    },
+    {
+      "id": "LR1",
+      "theorem": "SU(2) and BCW consequence reproductions",
+      "status": "locally proved and exactly replayed: the SU(2) Haar witness, the 3-to-39-to-79 route, and the repository 21-variable essential quotient yielding the route to not GMC(42)",
+      "canonical_source": "extended-geometry/LONG_SU2_AND_BCW_REPRODUCTIONS.md",
+      "dependencies": ["F1", "external: Bass--Connell--Wright reduction and Long's formulas"],
+      "checker": "scripts/audit_essential_bcw_21_independent.py",
+      "external_review": "none",
+      "supersedes": ["conditional local reproduction of the SU(2) and BCW routes"]
+    },
+    {
+      "id": "GS1",
+      "theorem": "Fixed-dimensional GMC to SIC to Keller invertibility",
+      "status": "proved for every fixed r; applied contrapositively to the 21-variable cubic collision to obtain a locally complete route to not GMC(42)",
+      "canonical_source": "extended-geometry/FIXED_GMC_SIC_PROOF.md",
+      "dependencies": ["LR1", "external: Derksen--van den Essen--Zhao and Zhao implication architecture"],
+      "checker": "scripts/verify_fixed_gmc_sic_bridge.py",
+      "external_review": "none",
+      "supersedes": ["unstated fixed-dimension Gaussian implication"]
+    },
+    {
+      "id": "IV1",
+      "theorem": "Direct Image and Vanishing counterexamples",
+      "status": "proved by explicit identity-slice constructions: not SIC(20), generalized Laplacian/HN failure in 40 variables, homogeneous quartic HN-VC failure in 42 variables, and an all-order inverse recurrence",
+      "canonical_source": "extended-geometry/IMAGE_VANISHING_COUNTEREXAMPLES.md",
+      "dependencies": ["LR1", "GS1"],
+      "checker": "scripts/audit_identity_slice_counterexamples_independent.py",
+      "external_review": "none",
+      "supersedes": ["95-to-190 stable-normal-form dimensions for Image and Vanishing witnesses"]
+    },
+    {
+      "id": "GL1",
+      "theorem": "Constant-term Gaussian--Lagrange identity",
+      "status": "proved coefficientwise for polynomial Phi with no restriction on Phi(0), including completed-ring, residue, determinant, and Wick normalization",
+      "canonical_source": "extended-geometry/FORMAL_GAUSSIAN_LAGRANGE_LEMMA.md",
+      "dependencies": [],
+      "checker": "scripts/verify_formal_gaussian_lagrange.py",
+      "external_review": "none",
+      "supersedes": ["zero-constant-term-only bridge lemma"]
+    },
+    {
+      "id": "WG1",
+      "theorem": "Weighted-seed Gaussian bridge",
+      "status": "proved for every nonconstant normalized seed, producing explicit four-real-Gaussian GMC counterexamples and injective mixed-moment fingerprints",
+      "canonical_source": "extended-geometry/WEIGHTED_GAUSSIAN_BRIDGE.md",
+      "dependencies": ["GL1"],
+      "checker": "scripts/audit_weighted_gaussian_bridge_independent.py",
+      "external_review": "none",
+      "supersedes": ["bounded Wick-moment evidence for the weighted bridge"]
+    },
+    {
+      "id": "WI1",
+      "theorem": "Weighted invariant-coordinate Jacobian reduction",
+      "status": "proved for arbitrary weight pattern (1,-1,-k), reducing the three-variable Jacobian to a two-invariant determinant",
+      "canonical_source": "extended-geometry/WEIGHTED_INVARIANT_JACOBIAN_REDUCTION.md",
+      "dependencies": [],
+      "checker": "scripts/verify_weighted_invariant_jacobian_reduction.py",
+      "external_review": "none",
+      "supersedes": ["map-specific weighted Jacobian expansions"]
+    },
+    {
+      "id": "WT1",
+      "theorem": "Weighted tangent suspension and Poisson-square reduction",
+      "status": "proved for the stated plane-core setup, including the foundational pair, tangent pencil, and weighted-Wronskian cascade; the comparison with the plane exclusion remains scoped",
+      "canonical_source": "extended-geometry/WEIGHTED_TANGENT_SUSPENSION.md",
+      "dependencies": ["F1", "WI1"],
+      "checker": "scripts/verify_weighted_tangent_suspension.py",
+      "external_review": "none",
+      "supersedes": ["orientation-free plane-core formula"]
+    },
+    {
+      "id": "FC1",
+      "theorem": "Foundational weighted coefficient scheme",
+      "status": "proved for the sixteen-monomial ansatz: unique nonreduced normalized point, dual-number tangent, Wronskian obstruction, and two reduced boundary components; nilpotent boundary gluing remains open",
+      "canonical_source": "extended-geometry/FOUNDATIONAL_WEIGHTED_COEFFICIENT_SCHEME.md",
+      "dependencies": ["F1", "WI1", "WT1"],
+      "checker": "scripts/verify_foundational_weighted_coefficient_scheme.py",
+      "external_review": "none",
+      "supersedes": ["informal weighted-coefficient rigidity summary"]
+    },
+    {
+      "id": "O2",
+      "theorem": "Complexity-filtered orbit contact",
+      "status": "proved for source-degree complexity and its canonical-jet lower bound; the degree-five family has exact lower-bound law b_m=34m+1, while target-gauge minimality and no-escape remain open",
+      "canonical_source": "extended-geometry/COMPLEXITY_FILTERED_CONTACT.md",
+      "dependencies": ["O1", "D5"],
+      "checker": "scripts/verify_degree_five_contact_profile.py",
+      "external_review": "none",
+      "supersedes": ["unfiltered infinite contact as a moduli invariant"]
+    },
+    {
+      "id": "QP1",
+      "theorem": "Quadratic ladder and rank-two Poisson completion",
+      "status": "the quadratic ladder is proved to be the m=1 cancellation column, and an independent exact rank-two Poisson completion is proved; the announced external manuscript's provenance remains unresolved",
+      "canonical_source": "extended-geometry/QUADRATIC_LADDER_AND_POISSON_AUDIT.md",
+      "dependencies": ["F1", "C1", "SW1"],
+      "checker": "scripts/audit_rank_two_poisson_completion_independent.py",
+      "external_review": "none",
+      "supersedes": ["existence gap left by the incomplete rank-two Poisson card"]
+    },
+    {
+      "id": "SM1",
+      "theorem": "Degreewise exact symplectic stable moduli",
+      "status": "proved: an (N-3)-dimensional family of pairwise stably inequivalent exact symplectic etale maps of A^6 for every generic degree N >= 4",
+      "canonical_source": "extended-geometry/SYMPLECTIC_STABLE_MODULI.md",
+      "dependencies": ["D1", "F2", "SW1"],
+      "checker": "scripts/verify_symplectic_weyl_lift.py",
+      "external_review": "none",
+      "supersedes": ["degree-five-only exact symplectic moduli"]
+    },
+    {
+      "id": "SN1",
+      "theorem": "Stable normal-form consequences",
+      "status": "proved with corrected stable--Segre terminology: explicit 95-variable cubic and 451-variable Druzkowski reductions, plus valid 190-variable Image and HN witnesses",
+      "canonical_source": "extended-geometry/STABLE_NORMAL_FORM_AUDIT.md",
+      "dependencies": ["F1", "external: Campbell and Gorni--Zampieri stable reductions"],
+      "checker": "scripts/audit_stable_normal_form_independent.py",
+      "external_review": "none",
+      "supersedes": ["510-variable fixed-column Druzkowski reduction", "polynomial-stable label for the Segre step"]
+    },
+    {
+      "id": "MP1",
+      "theorem": "Marked-point dimension barrier",
+      "status": "proved for the complete marked-point/hyperplane-complement construction on P^1; affine-space source is possible only in dimension three",
+      "canonical_source": "extended-geometry/MARKED_POINT_DIMENSION_BARRIER.md",
+      "dependencies": [],
+      "checker": null,
+      "external_review": "none",
+      "supersedes": ["unqualified extension of the marked-point construction to dimension two"]
+    },
+    {
+      "id": "BL1",
+      "theorem": "Relative-scaling boundary-lattice theorem",
+      "status": "proved for two-factor normalization torsors and multi-factor boundary complements, including units, Picard torsion, canonical classes, and the multi-factor unit obstruction",
+      "canonical_source": "extended-geometry/RELATIVE_SCALING_BOUNDARY_LATTICE.md",
+      "dependencies": [],
+      "checker": null,
+      "external_review": "none",
+      "supersedes": ["separate scaling, unit, and Picard calculations"]
+    },
+    {
+      "id": "CF1",
+      "theorem": "Consecutive-factor contact reduction",
+      "status": "proved as a finite motivic classification algorithm for every consecutive row; the quadratic--cubic row is classified and the cubic--quartic row has no affine-space exception, while no closed all-row formula is claimed",
+      "canonical_source": "extended-geometry/CONSECUTIVE_FACTOR_CONTACT_CLASSIFICATION.md",
+      "dependencies": ["BL1"],
+      "checker": "scripts/classify_consecutive_factor_34.py",
+      "external_review": "none",
+      "supersedes": ["quadratic--cubic row as the only tested consecutive-factor obstruction"]
+    },
+    {
+      "id": "PF1",
+      "theorem": "Normalized quadratic--cubic factorization slice",
+      "status": "proved to be a smooth factorial affine fivefold with class L^5-L^3, trivial positive Chow groups, K_0=Z, and complex homotopy type S^3; the global A^2 x SL_2 product and flexibility questions remain open",
+      "canonical_source": "extended-geometry/QUADRATIC_CUBIC_FACTORIZATION_SLICE.md",
+      "dependencies": ["BL1", "CF1"],
+      "checker": "scripts/verify_quadratic_cubic_factorization_invariants.py",
+      "external_review": "none",
+      "supersedes": ["affine-five-space candidate for the tangent quadratic--cubic slice"]
+    },
+    {
+      "id": "PJ1",
+      "theorem": "Plane Jacobian degree frontier",
+      "status": "locally reproduced conditional on the published minimal/standard normal-form reductions: any plane counterexample has larger coordinate degree at least 125; this does not prove JC(2) or attainability",
+      "canonical_source": "plane-jc/DEGREE_FRONTIER_125.md",
+      "dependencies": ["external: published minimal-standard-pair reductions and exact (72,108) certificates"],
+      "checker": null,
+      "external_review": "none",
+      "supersedes": ["larger-coordinate frontier 108"]
+    },
+    {
+      "id": "DC1",
+      "theorem": "Dicritical boundary classification",
+      "status": "proved for every admissible primitive in characteristic zero: all dicritical divisors of the normalized inverse graph and their target images are classified",
+      "canonical_source": "extended-geometry/DICRITICAL_COMPACTIFICATION.md",
+      "dependencies": ["W1", "I2"],
+      "checker": "scripts/verify_dicritical_divisors.py",
+      "external_review": "none",
+      "supersedes": ["unresolved boundary-at-infinity divisor list"]
     }
   ]
 }

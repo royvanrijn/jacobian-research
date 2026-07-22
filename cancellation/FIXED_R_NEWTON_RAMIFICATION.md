@@ -177,6 +177,29 @@ If both are proved for a density-one set, Jordan's theorem gives containment
 of `A_(mr)`.  The square-discriminant estimate then upgrades the result to
 `S_(mr)` for density-one many `m`.
 
+There are two useful reductions once local support is available.  Since the
+Newton prime satisfies `p | d+1`, one has `gcd(p,d)=1`.  A pure `p`-cycle in
+a transitive imprimitive action must lie inside one block: if it cycled `p`
+blocks of size `c`, its support would have size at least `pc`.  Hence every
+nontrivial block would have size
+
+\[
+ c>p,\qquad c\mid d.                                  \tag{9}
+\]
+
+Thus primitivity only has to eliminate the divisors in (9), not every
+abstract block size.  In particular, if `d+1=2p`, any order-`p` permutation
+in degree `d=2p-1` is automatically one `p`-cycle and no divisor in (9)
+exists.  The support and block gaps are both closed on this sparse subfamily
+whenever the Newton edge, irreducibility, and `p<=d-3` hypotheses hold.
+
+The detailed block lemma, the exact local-separation target, and a modular
+factorization experiment are developed in
+[FIXED_R_GALOIS_UPGRADE.md](FIXED_R_GALOIS_UPGRADE.md).  That note also
+records why finding a favorable auxiliary factorization experimentally is
+not yet a density-one proof: Chebotarev cannot be used to manufacture the
+desired cycle type before its presence in the Galois group is known.
+
 ## 3. Exact regression
 
 The companion script

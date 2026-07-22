@@ -1,0 +1,40 @@
+\section{Refined cancellation boundary geometry}
+
+This supplemental appendix is deliberately not included in the proof of the
+degreewise multiplicity theorem.  That theorem uses only the complete
+codimension-one boundary list and the unconditional thick-contact formula
+$\mu=mr(m+1)$.  The finer question considered here is how the individual
+projective branches above $P=0$ meet one another and the critical prime.
+
+Put
+\[
+ K_{m,r}(w)=w^{-r-1}\int_0^w v^r(1-v)^{mr}\,dv,
+ \qquad p(w)=w(1-w)^m,
+\]
+\[
+ L_{m,r}(w)=w^{-r-1}\int_0^w\{p(w)-p(v)\}^r\,dv.
+\]
+On the normalized contraction, the critical prime restricts to
+\[
+ Q^mL_{m,r}(w)
+ \quad\text{in}\quad
+ \C(R)[w]/(K_{m,r})[[Q]].
+\]
+Consequently the additional hypothesis
+\[
+ \operatorname{Res}_w(K_{m,r},L_{m,r})\ne0
+\]
+makes $L_{m,r}$ a unit in the reduced branch algebra.  After strict
+henselization, each geometric $K_{m,r}$-branch then meets the critical prime
+in $\C(R)[[Q]]/(Q^m)$; distinct $K$-branches meet in the reduced stratum
+$P=Q=0$.  This yields the full pairwise and higher intersection diagram, but
+is strictly finer than the total contact length needed by M1.
+
+The endpoint-moment reduction, the uniform proofs for $r=1,2,3,4$, the
+bounded direct-resultant certificates, and the remaining conditional ranges
+are maintained in
+\href{../../cancellation/CONTACT_RESULTANT.md}{Cancellation contact
+resultant}.  Their executable certificates are
+\path{scripts/verify_contact_resultant_endpoint_reduction.py},
+\path{scripts/verify_contact_resultant_r4.py}, and the related focused
+resultant scripts.  None is a dependency of the degreewise theorem.

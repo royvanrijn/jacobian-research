@@ -20,6 +20,17 @@ This also verifies that the incomplete `(96,144)` and `(75,125)` table rows
 are rejected until their Laurent bands are derived; the former additionally
 has a source-level lower-side conflict to resolve.
 
+The exact forced F2 `j=1` skeleton and its machine-readable residual
+obligations are tested separately:
+
+```bash
+python3 plane-jc/cas/test_f2_75_125_frontend.py
+python3 plane-jc/cas/f2_75_125_frontend.py
+```
+
+The second command emits JSON.  Its `frontend_complete` field is intentionally
+false until the lower Laurent boundary has been classified exhaustively.
+
 To compile both audited Proposition 4.3 polygons through lattice supports,
 the Laurent chart, all upper bracket layers, and the genus-three first block,
 run:

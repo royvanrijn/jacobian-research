@@ -5,9 +5,9 @@ The root-one sheet is intrinsic in the regular-reconstruction open, but is
 disjoint from the ramification divisor.  A rerooted quartic demonstrates that
 bare marked-root pencils identify their normalization coordinates by a
 scaling which sends the new affine root one to an old extra boundary root.
-The full-cover rigidity theorem excludes this scaling because it does not
-preserve the regular-reconstruction open; its global algebra and orientation
-are checked by verify_stable_generator_rigidity.py.
+Generic affine-mark faithfulness excludes this scaling because it does not
+preserve the regular-reconstruction open.  The degree-independent argument is
+checked by verify_generic_affine_mark_faithfulness.py.
 """
 
 from __future__ import annotations

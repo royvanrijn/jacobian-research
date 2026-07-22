@@ -1,8 +1,9 @@
 # Infinitely many stable classes in generic degree five
 
 This note gives an explicit positive-dimensional stable-moduli family for the
-weighted marked-root construction.  Full-cover faithfulness now proves exact
-parameter recovery.  The earlier Hessian/Fitting-divisor argument is retained
+weighted marked-root construction.  Generic affine-mark faithfulness proves
+exact parameter recovery on the working open.  The earlier
+Hessian/Fitting-divisor argument is retained
 because it is an independent, weaker fallback using only the ramification
 divisor of the discriminant normalization and affine three-point geometry.
 
@@ -572,9 +573,9 @@ Run
 The first checker verifies the seed identities, admissibility, polynomial
 weighted map, constant Jacobian, inverse equation, split-root and boundary
 exceptional polynomials, exact `C^2` discriminant saturation, the reduced
-boundary conic, and the rational orbit invariant (2.7).  The latter two are
-the exact audits for the affine root-one mark and stable generator rigidity
-used by full-cover faithfulness.
+boundary conic, and the rational orbit invariant (2.7).  The latter two audit
+the affine root-one mark and reconstruction-pole calculation used by generic
+affine-mark faithfulness.
 
 No external specialist review of the Hessian/Fitting-divisor theorem or this
 stable-moduli consequence is currently recorded.  Long's external consequence

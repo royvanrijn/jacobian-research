@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Exact regressions for the cancellation construction prime-power Eisenstein theorem."""
+"""Exact regressions for the cancellation-parameter irreducibility results."""
 from __future__ import annotations
 
 import warnings
@@ -9,6 +9,7 @@ from sympy.utilities.exceptions import SymPyDeprecationWarning
 
 from master_cancellation import (
     DISPLAYED_INSTANCES,
+    parameter_discriminant,
     parameter_polynomial,
     raw_parameter_polynomial,
 )
@@ -125,26 +126,68 @@ for r in range(1, 31):
     assert sp.Poly(truncated, x, domain=sp.QQ).is_irreducible
     truncated_binomial_column.append(r)
 
+# A prime p=N-u in (k,N) gives the V-shaped Newton polygon with vertices
+# (0,1), (u,0), (k,1) after translating P_{N,k}(x) by x -> x-1.  Two such
+# primes give incompatible factor-degree pairs on the diagonal when m>=2.
+two_prime_newton_pairs = 0
+for m in range(2, 9):
+    for r in range(1, 11):
+        n = m * r
+        total = n + r + 1
+        primes = list(sp.primerange(n + 1, total))
+        if len(primes) < 2:
+            continue
+
+        truncated = sum(sp.binomial(total, j) * x**j for j in range(n + 1))
+        translated = sp.Poly(sp.expand(truncated.subs(x, x - 1)), x, domain=sp.ZZ)
+        degree_pairs: list[tuple[int, int]] = []
+        for prime in primes[:2]:
+            u = total - int(prime)
+            assert 1 <= u <= r <= n // 2
+            for j in range(n + 1):
+                expected = 0 if j == u else 1
+                assert valuation(int(translated.nth(j)), int(prime)) == expected
+            degree_pairs.append((u, n - u))
+        assert degree_pairs[0] != degree_pairs[1]
+        two_prime_newton_pairs += 1
+
 degree_sieve_max_prime = 0
 degree_sieve_max_steps = 0
 degree_sieve_pairs = 0
-for m in range(1, 31):
-    for r in range(1, 31):
-        if m * r > 30:
+degree_sieve_small_columns = 0
+degree_sieve_targets = {
+    (m, r)
+    for m in range(1, 31)
+    for r in range(1, 31)
+    if m * r <= 30
+}
+degree_sieve_targets |= {
+    (m, r)
+    for m in range(2, 7)
+    for r in range(1, 118)
+    if m * r < 118
+}
+for m, r in sorted(degree_sieve_targets):
+    polynomial = sp.Poly(parameter_polynomial(m, r, q), q, domain=sp.ZZ)
+    possible_degrees = set(range(polynomial.degree() + 1))
+    discriminant = int(parameter_discriminant(m, r))
+    steps = 0
+    for prime in sp.primerange(2, 300):
+        # A good prime gives a squarefree reduction and avoids the many
+        # repeated linear factors at primes dividing the discriminant.
+        if discriminant % int(prime) == 0:
             continue
-        polynomial = sp.Poly(parameter_polynomial(m, r, q), q, domain=sp.ZZ)
-        possible_degrees = set(range(polynomial.degree() + 1))
-        steps = 0
-        for prime in sp.primerange(2, 100):
-            degrees = modular_factor_degrees(polynomial, int(prime))
-            possible_degrees &= subset_sums(degrees)
-            steps += 1
-            if possible_degrees == {0, polynomial.degree()}:
-                degree_sieve_max_prime = max(degree_sieve_max_prime, int(prime))
-                degree_sieve_max_steps = max(degree_sieve_max_steps, steps)
-                break
-        assert possible_degrees == {0, polynomial.degree()}
-        degree_sieve_pairs += 1
+        degrees = modular_factor_degrees(polynomial, int(prime))
+        possible_degrees &= subset_sums(degrees)
+        steps += 1
+        if possible_degrees == {0, polynomial.degree()}:
+            degree_sieve_max_prime = max(degree_sieve_max_prime, int(prime))
+            degree_sieve_max_steps = max(degree_sieve_max_steps, steps)
+            break
+    assert possible_degrees == {0, polynomial.degree()}
+    degree_sieve_pairs += 1
+    if 2 <= m <= 6 and m * r < 118:
+        degree_sieve_small_columns += 1
 
 prime_cases = sum(1 for _, _, _, exponent in certified if exponent == 1)
 print(
@@ -156,7 +199,12 @@ print(f"PASS: irreducible cyclotomic reductions for {len(cyclotomic)} pairs")
 print(f"PASS: unit-disk leading-prime certificates for {len(leading_prime)} pairs")
 print("PASS: truncated-binomial theorem translation for the full m=1 column")
 print(
-    f"PASS: modular degree-sieve certificates for all {degree_sieve_pairs} pairs "
-    "with mr<=30 "
+    "PASS: translated two-prime Newton polygons for "
+    f"{two_prime_newton_pairs} representative diagonal pairs"
+)
+print(
+    f"PASS: modular degree-sieve certificates for {degree_sieve_pairs} pairs, "
+    f"including all {degree_sieve_small_columns} finite endpoints with "
+    "2<=m<=6 and mr<118 "
     f"(largest prime {degree_sieve_max_prime}, at most {degree_sieve_max_steps} steps)"
 )

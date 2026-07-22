@@ -109,7 +109,10 @@ assert "impossible last lower corner (8,4)" in repeated.source_reconciliation
 frontier = frontier_75_125_record()
 assert not frontier.frontend_complete
 assert frontier.multiplicities == (3, 5)
-assert len(frontier.missing_frontend_data) == 5
+assert len(frontier.missing_frontend_data) == 3
+assert "support control" in frontier.missing_frontend_data[0]
+assert "exhaustive gamma branches" in frontier.missing_frontend_data[1]
+assert "bracket layer 4" in frontier.missing_frontend_data[2]
 assert "j=0 degree-(50,75)" in frontier.source_reconciliation
 
 try:

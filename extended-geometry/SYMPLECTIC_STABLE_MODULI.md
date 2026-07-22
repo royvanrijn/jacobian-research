@@ -179,7 +179,7 @@ F_\mu\times\operatorname{id}_{\mathbb A^{3+s}}.
 \]
 
 Thus `F_lambda` and `F_mu` are stably polynomially left--right equivalent.
-The full-cover faithfulness theorem then gives `lambda=mu`.  Since `Lambda` is
+Generic affine-mark faithfulness then gives `lambda=mu`.  Since `Lambda` is
 uncountable, this proves (3.1).  Equation (1.1) remains a weaker independent
 consequence of the Hessian/Fitting divisor.
 
@@ -284,7 +284,7 @@ six-variable Jacobian and symbolic-momentum collision for the foundational
 map.
 
 The load-bearing non-computational input for exact parameter recovery is
-full-cover faithfulness in `DECORATED_NORMALIZATION_INVARIANT.md`; the stable
+generic affine-mark faithfulness in `DECORATED_NORMALIZATION_INVARIANT.md`; the stable
 Hessian-root invariant in `DEGREE_FIVE_STABLE_MODULI.md` supplies the
 independent coarse orbit.  No external specialist review of either invariant
 or of the combined stable-moduli consequence is currently recorded.  In

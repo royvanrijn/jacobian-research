@@ -217,7 +217,7 @@ compact reconstruction and canonical-boundary audit:
 This command is also part of `make verify-regressions`.  It requires no
 network access and does not copy or execute the upstream checker.
 
-## Decorated normalization, full-cover repair target, and Hurwitz--LL calculations
+## Decorated normalization, affine-mark faithfulness, and Hurwitz--LL calculations
 
 The LL critical-value incidence, low-pole filtration, contravariant
 triangular target convention, affine pencil transport, higher-zero Newton
@@ -226,15 +226,18 @@ identities are checked exactly by
 
 ```bash
 .venv/bin/python scripts/verify_stable_generator_rigidity.py
+.venv/bin/python scripts/verify_generic_affine_mark_faithfulness.py
 .venv/bin/python scripts/verify_multicluster_ll_comparison.py
 .venv/bin/python scripts/verify_rerooting_groupoid_boundary.py
 .venv/bin/python scripts/verify_restricted_ll_degree.py
 .venv/bin/python scripts/verify_caustic_maxwell_boundary.py
 ```
 
-These checks support the individual identities and finite calculations.  The
-full-cover faithfulness statement remains a repair target; the checks do not
-promote it to an active theorem dependency.  The specialized restricted-LL
+These checks support the generic affine-mark faithfulness theorem: the coarse
+fiber is the exact rerooting orbit and every nontrivial rerooting moves the
+unique unramified affine sheet into the reconstruction boundary.  The
+valuative extension of that marking through all collision strata remains a
+separate research target.  The specialized restricted-LL
 degree and caustic/Maxwell boundary-class calculations have no recorded
 external review.
 

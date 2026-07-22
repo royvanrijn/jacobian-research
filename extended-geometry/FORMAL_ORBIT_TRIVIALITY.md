@@ -249,6 +249,10 @@ its growth measures the cost of approximating the formal orbit.
 This proposal is developed with a two-sided degree filtration and tested on
 the degree-five stable-moduli arc in
 [complexity-filtered orbit contact](COMPLEXITY_FILTERED_CONTACT.md).
+The finite-type automorphism strata, constructible bounded-orbit relation,
+full parameter-height/pole-order spectrum, and the precise limitation of the
+pointwise-to-family bridge are developed in
+[ind-group constructibility](IND_GROUP_CONSTRUCTIBILITY.md).
 
 There are three natural levels:
 

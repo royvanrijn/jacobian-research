@@ -383,7 +383,7 @@ def repeated_tail_96_144_record() -> NewtonChainIR:
 
 
 def frontier_75_125_record() -> NewtonChainIR:
-    """The first numerical frontier row, still lacking Laurent bands."""
+    """The first frontier row, with forced edges but no exhaustive polygons."""
 
     return NewtonChainIR(
         name="75_125_F2",
@@ -393,18 +393,21 @@ def frontier_75_125_record() -> NewtonChainIR:
         ),
         multiplicities=(3, 5),
         enumeration_source="GGHV 2017 family F2 with j=1",
-        status="family/corner row only; not a derived Laurent system",
+        status=(
+            "forced chain, Puiseux chart, bracket monomial, and terminal edge "
+            "are derived; lower Laurent boundary remains unclassified"
+        ),
         missing_frontend_data=(
-            "Laurent normalization for the F2 j=1 member",
-            "band supports for the 3:5 approximate-root expansion",
-            "weighted-Wronskian exponents and right-hand side",
-            "supported primitive exponents",
-            "residual diagonal scaling",
+            "proof of support control after y -> y+lambda*x^(-1/5)",
+            "exhaustive gamma branches and their complete Laurent polygons",
+            "all bands from the common-power layer to bracket layer 4",
         ),
         source_reconciliation=(
             "GGV 2014 Section 5 treats the F2 j=0 degree-(50,75) member "
             "with ratio 2:3; its modified coefficient systems do not supply "
-            "the missing 3:5 bands for the j=1 degree-(75,125) member"
+            "the missing 3:5 bands for the j=1 degree-(75,125) member. "
+            "The exact facts that do follow from GGHV 2017 are encoded in "
+            "cas/f2_75_125_frontend.py"
         ),
     )
 

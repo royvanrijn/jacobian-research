@@ -207,10 +207,14 @@ The first numerical frontier is family `F2` at `j=1`:
  (5,20)\longrightarrow(7/5,2),\qquad(m,n)=(3,5).
 \]
 
-The 2017 paper supplies the family formula and corners, but not Laurent bands
-for this member.  The 2014 polynomial-system paper treats the `j=0` member
-with degrees `(50,75)` and ratio `2:3`; its two modified coefficient systems
-do not derive the `3:5` bands needed at `(75,125)`.  The compiler records five
+The 2017 chain theorem additionally forces the Puiseux translation, two
+consecutive edges, and the transformed bracket `X^4`; the terminal type-I
+edge has an exact rank-zero normalization.  This partial source certificate
+is encoded in [`cas/f2_75_125_frontend.py`](cas/f2_75_125_frontend.py) and
+derived in [`F2_75_125_DERIVATION.md`](F2_75_125_DERIVATION.md).  It does not
+classify the lower Laurent boundary.  The 2014 polynomial-system paper treats
+the `j=0` member with degrees `(50,75)` and ratio `2:3`; its two modified coefficient systems
+do not derive the `3:5` bands needed at `(75,125)`.  The compiler records three
 missing inputs and rejects this row too.  In particular, neither the covering
 exponent, character, genus, nor obstruction rank can yet be inferred
 faithfully from the family table.

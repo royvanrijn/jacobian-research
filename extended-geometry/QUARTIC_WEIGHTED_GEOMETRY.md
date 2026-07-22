@@ -3,6 +3,41 @@
 This note follows the proof order for the exact quartic-sheet model before any
 claim is generalized to arbitrary seeds.
 
+The map below is the point `alpha=-1/2` on the normalized quartic weighted
+seed line
+
+\[
+ H_\alpha(W)=
+ \alpha W^4-(1+2\alpha)W^3+(1+\alpha)W^2
+ =W^2(W-1)(\alpha W-\alpha-1),                       \tag{0.1}
+\]
+
+where `H_alpha'(1)=-1`.  Exact degree and weighted admissibility remove
+`alpha=0,1`, respectively.  Thus the presentation space is the curve
+
+\[
+ \mathcal W_4=\operatorname{Spec}
+ k[\alpha,(\alpha(\alpha-1))^{-1}].                  \tag{0.2}
+\]
+
+For `alpha!=-1`, zero is a double root and the fourth primitive root is
+`rho=1+1/alpha`.  At `alpha=-1` it joins the zero cluster, giving the triple-
+zero seed.  After dividing the universal factor `C^2`, the leading
+target-boundary trace is, up to a unit,
+
+\[
+ (\alpha+1)^2\bigl(4(\alpha+1)A-B^2\bigr).           \tag{0.3}
+\]
+
+It is reduced for every split seed.  At `alpha=-1` the displayed leading
+trace vanishes, the exact `C`-order rises from two to three, and the next
+trace is a cube; its boundary-contact index is three.  In particular no
+quartic weighted seed has the six-fold contact of degree-four cancellation.
+
+The scoped exhaustion question, the proof under straightened-suspension
+hypotheses, and the remaining escape hatches are stated in
+[Degree-four marked-root classification](DEGREE_FOUR_MARKED_ROOT_CLASSIFICATION.md).
+
 Put
 
 \[
@@ -33,6 +68,9 @@ For target `(A,B,C)`, the inverse equation is
 \[
 E(W)=W^2-W^4-2BCW+AC^2=0.
 \]
+
+This is twice the normalized pencil attached to `H_(-1/2)`; multiplying an
+inverse equation by a nonzero scalar does not change its marked-root cover.
 
 Its derivative satisfies
 
