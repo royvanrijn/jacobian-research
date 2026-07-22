@@ -77,7 +77,7 @@ The conceptual content is that multiplication forgets exactly the relative
 scaling `(L,Q) -> (lambda L,lambda^{-1}Q)`, while the resultant detects that
 missing direction.
 
-## 2. The normalized slice
+## 2. The normalized slice and the projective open
 
 Put
 
@@ -104,6 +104,60 @@ Consequently the multiplication morphism
 
 is étale.  No separate calculation near `a=0` is required: étaleness is
 preserved by base change.
+
+Let
+
+\[
+U=\bigl(\mathbb P(V_1)\times\mathbb P(V_2)\bigr)
+\setminus\bigl(\{R=0\}\cup\{[LQ]_{T^2S}=0\}\bigr).
+\]
+
+This is exactly the projective source open in the marked-root construction.
+Projectivization gives an isomorphism
+
+\[
+\boxed{X_{\mathrm{fac}}\xrightarrow{\sim}U.}
+\]
+
+Indeed, take a projective pair `([L],[Q])` in `U`, choose arbitrary
+representatives, and put
+
+\[
+m=[LQ]_{T^2S},\qquad r=R(L,Q).
+\]
+
+Both are nonzero.  Under independent rescaling
+
+\[
+(L,Q)\longmapsto(\lambda L,\mu Q),
+\]
+
+they transform as
+
+\[
+m\longmapsto\lambda\mu m,
+\qquad
+r\longmapsto\lambda^2\mu r.
+\]
+
+The unique rescaling for which both normalized values equal one is
+
+\[
+\boxed{
+\lambda={m\over r},
+\qquad
+\mu={r\over m^2}.
+}
+\]
+
+This construction is independent of the chosen representatives.  If they are
+replaced by `(alpha L,beta Q)`, then `m` and `r` become
+`alpha beta m` and `alpha^2 beta r`, while the new normalization scalars become
+`lambda/alpha` and `mu/beta`.  Thus the normalized affine pair is unchanged.
+The formulas are regular on `U`, so they give the inverse to projectivization.
+
+This identifies the normalized complete intersection literally, not merely
+birationally, with the geometric source open.
 
 ## 3. Polynomial coordinates on the slice
 
@@ -229,6 +283,86 @@ X_{\mathrm{fac}}\cong\mathbb A^3
 \text{the tangent non-osculating normalized slice}.
 \end{array}
 \]
+
+## 6. Unequal factor degrees
+
+The étaleness mechanism is not special to degrees one and two.  Let
+
+\[
+V_p=\operatorname{Sym}^p(k^2),
+\qquad
+V_q=\operatorname{Sym}^q(k^2),
+\]
+
+and define
+
+\[
+\Theta_{p,q}:V_p\times V_q\longrightarrow
+V_{p+q}\times\mathbb A^1,
+\qquad
+(A,B)\longmapsto(AB,\operatorname{Res}(A,B)).
+\]
+
+### Unequal-degree coefficient–resultant theorem
+
+If `p != q`, then `Theta_(p,q)` is étale on the coprime locus.
+
+### Proof
+
+If
+
+\[
+\dot A B+A\dot B=0
+\]
+
+and `A,B` are coprime, then the same divisibility argument gives
+
+\[
+(\dot A,\dot B)=\lambda(A,-B).
+\]
+
+The resultant has bidegree `(q,p)`.  Therefore
+
+\[
+d\operatorname{Res}_{(A,B)}(A,-B)
+=(q-p)\operatorname{Res}(A,B).
+\]
+
+In characteristic zero this is nonzero when `p != q`.  It kills the unique
+kernel direction of multiplication, and the source and target dimensions are
+both `p+q+2`.
+
+The normalization step reveals why **consecutive** degrees are especially
+natural.  Suppose `q>p`, let `m` be any nonzero linear functional of the
+product `AB`, and put `r=Res(A,B)`.  Under factor rescaling,
+
+\[
+m\longmapsto\lambda\mu m,
+\qquad
+r\longmapsto\lambda^q\mu^p r.
+\]
+
+After imposing `lambda mu m=1`, the resultant condition becomes
+
+\[
+\lambda^{q-p}={m^p\over r},
+\qquad
+\mu={1\over\lambda m}.
+\]
+
+Thus:
+
+- if `q-p=1`, there is a unique algebraic normalization,
+  \[
+  \lambda={m^p\over r},\qquad
+  \mu={r\over m^{p+1}};
+  \]
+- if `q-p>1`, a residual `mu_(q-p)` ambiguity remains;
+- if `q=p`, the resultant has weight zero along relative scaling and cannot
+  repair the differential kernel of multiplication.
+
+So unequal degrees explain étaleness, while consecutive degrees explain the
+canonical normalized affine slice used here.
 
 The exact symbolic certificate is
 [`scripts/verify_normalized_factorization_slice.py`](../scripts/verify_normalized_factorization_slice.py).
