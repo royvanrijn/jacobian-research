@@ -63,11 +63,17 @@ The first card claims a standard rank-two Poisson endomorphism on
 \]
 
 If correct, this would improve the repository's current cotangent-lift
-consequence from three canonical pairs to two.  It would also require a
-terminology correction: with two canonical pairs it is a rank-two Weyl
-algebra in the usual convention (four polynomial generators in the associated
-graded algebra), not a fourth Weyl algebra unless “fourth” is explicitly
-being used to count generators.
+consequence from three canonical pairs to two.  It also needs a terminology
+explanation.  In the usual convention `A_n` has `2n` associated-graded
+polynomial generators.  The four displayed Poisson coordinates have the
+symbol size of `A_2`.  The abstract does not say that their direct
+quantization automatically gives `A_4`: it advertises a separate construction
+using the same four polynomials as commuting base-coordinate multiplication
+operators, together with four Hamiltonian duals.  Read as an
+inverse-Jacobian/cotangent construction, that
+produces eight Weyl generators and therefore lands naturally in `A_4`.  The
+full appendix is still needed to check that this is the intended construction
+and that its operator identities and non-surjectivity proof are correct.
 
 The screenshot alone is not a certificate.  To admit the claim, the audit
 needs the exact formulas for `T,D,S` and must independently verify
@@ -78,11 +84,102 @@ needs the exact formulas for `T,D,S` and must independently verify
 \]
 
 plus a displayed collision or another proof of nonsurjectivity.  The proposed
-Weyl lift must then be checked for ordering corrections: commuting principal
-symbols do not by themselves prove that the corresponding Weyl operators
-commute.
+Weyl lift must then be checked at the operator level; principal-symbol
+identities alone do not prove all Weyl commutators.
 
-No public source matching the exact text was located by exact-phrase search
-on 22 July 2026.  Until the missing formulas or source are supplied, this is
-a high-priority candidate audit, not an active theorem or a dependency of the
-boundary work.
+## An exact foundational fingerprint
+
+One part of the provenance question can be answered without guessing the
+missing outputs.  Put
+
+\[
+ \begin{aligned}
+ X&=x,\\
+ Z&=3x^2p+(2-6xq)z,\\
+ Y&=q-\frac{xZ}{3},\\
+ E&=\frac{1+3xq}{2}p-3q^2z.
+ \end{aligned}                                           \tag{1}
+\]
+
+This is a polynomial automorphism of `Q[x,q,p,z]`, with determinant `-1`.
+Indeed, writing `q=Y+XZ/3`, its inverse is
+
+\[
+ p=-6EXq+2E+3Zq^2,
+ \qquad
+ z=-3EX^2+\frac32ZXq+\frac12Z.                         \tag{2}
+\]
+
+For the foundational map `F=(F_1,F_2,F_3)`, substitution of (1) gives
+
+\[
+ F_3(X,Y,Z)=2X-3X^2Y-X^3Z=x(2-3xq)=R.                 \tag{3}
+\]
+
+Thus the displayed `R` is an exact algebraic fingerprint of the foundational
+counterexample, not merely a coincident degree or fiber count.  It is strong
+evidence that the announced construction is derived from that map.  It is not
+yet a proof that the unavailable `T,D,S` are the manuscript's particular
+lift, nor does it identify the author or source.
+
+There is also a useful negative result.  The obvious invariant choices
+
+\[
+ S_0=\frac12F_1(X,Y,Z),\qquad T_0=F_2(X,Y,Z)
+\]
+
+satisfy exactly
+
+\[
+ \{S_0,T_0\}=1,
+ \qquad \{R,S_0\}=\{R,T_0\}=0,
+ \qquad \{E,R\}=1.                                    \tag{4}
+\]
+
+Nevertheless there is **no** polynomial correction
+`D=E+f(X,Y,Z)` for which both `{D,S_0}` and `{D,T_0}` vanish.  Since (1) is a
+polynomial coordinate system and the kernel of `{-,R}` is `Q[X,Y,Z]`, this
+covers every possible polynomial partner `D` for this particular pair
+`S_0,T_0`.
+
+Here is the exact obstruction.  With `Q=Y+XZ/3`, the first completion
+equation can be integrated explicitly; the two remaining equations reduce to
+
+\[
+ \left(-3X^2\partial_X+(6XQ-2)\partial_Q\right)h
+ =\frac{Q^3}{2}
+  \left(54Q^3X^3+189Q^2X^2+222QX+89\right).           \tag{5}
+\]
+
+After localizing at `X`, set `v=1/X` and
+`rho=2X-3X^2Q`.  The derivation on the left sends `v` to `3` and `rho` to
+zero.  Its forced antiderivative, modulo a polynomial in `rho`, becomes
+
+\[
+ \frac{54Q^6X^6+234Q^5X^5+375Q^4X^4+270Q^3X^3
+       +90Q^2X^2+24QX+4}{60X^4}.                      \tag{6}
+\]
+
+A polynomial in `rho` has no negative power of `X`, so it cannot cancel the
+term `1/(15X^4)`.  Equation (5) has no polynomial solution.  This proves that
+the manuscript's missing formulas, if correct, contain a genuinely different
+choice or construction; they cannot responsibly be filled in by the naive
+foundational substitution.  The exact certificate is
+[`verify_rank_two_poisson_preaudit.py`](../scripts/verify_rank_two_poisson_preaudit.py).
+
+## What remains unavailable
+
+The complete audit must identify the paper and compare its actual formulas
+with (1)--(6).  Generic degree three and a three-point fiber alone still do
+not establish polynomial left--right equivalence or derivation.
+
+No public source matching the exact text was located on 22 July 2026 after
+exact-phrase and formula searches, arXiv metadata searches, and inspection of
+the public Omniscience Project papers index.  Its separately published `A_3`
+paper is not this manuscript.  Until the missing formulas or source are
+supplied, the rank-two claim remains a high-priority **external announced
+manuscript under audit**, not an active theorem, not an attributed Long
+result, and not a dependency of the boundary work.  The locally proved
+fingerprint and obstruction are repository results, not substitutes for the
+external audit.  The broader consequence comparison is in
+[External consequences and provenance](EXTERNAL_CONSEQUENCES_AND_PROVENANCE.md).

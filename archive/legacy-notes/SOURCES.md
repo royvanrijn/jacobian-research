@@ -81,6 +81,32 @@ materials that have not yet been located.
   immediate logical consequences and same-day source trail.
 - [Derksen–van den Essen–Zhao, The Gaussian Moments Conjecture and the Jacobian Conjecture](https://arxiv.org/abs/1506.05192):
   proves the implication used in the Gaussian-moments consequence.
+- [Wenhua Zhao, *Images of commuting differential operators of order one with
+  constant leading coefficients*](https://arxiv.org/abs/0902.0210): the
+  fixed-map Special Image Conjecture input used after the cubic-homogeneous
+  BCW reduction.
+- [Christopher D. Long, *Small Counterexamples to the Gaussian Moments
+  Conjecture*](https://arxiv.org/abs/2607.18186), arXiv:2607.18186v1,
+  submitted 20 July 2026: explicit three-variable Gaussian witness and a
+  separate conservative BCW route from the announced JC map to
+  `not GMC(158)`.  The paper explicitly says the direct witness was not
+  derived from the JC map.  The repository now reproduces the route's exact
+  18-step reduction and 79-variable cubic-homogeneous collision locally.
+- [I. J. Good, *Generalizations to several variables of Lagrange's expansion,
+  with applications to stochastic processes*](https://doi.org/10.1017/S0305004100034666),
+  Proceedings of the Cambridge Philosophical Society 56 (1960), 367--380:
+  multivariable inversion formula underlying Long's Gaussian fixed-point
+  method.  The repository's weighted-seed bridge derives its needed special
+  case locally from the coefficientwise Abhyankar--Gurjar identity.
+- [Christopher D. Long, *Counterexamples to the (xz)-Conjecture and the
+  Mathieu Conjecture for (SU(2))*](https://arxiv.org/abs/2607.19012),
+  arXiv:2607.19012v1, submitted 21 July 2026: direct `(xz)` witness and its
+  `SU(2)` lift.
+- [M. Müger and L. Tuset, *The Mathieu conjecture for `SU(2)` reduced to an
+  abelian conjecture*](https://doi.org/10.1016/j.indag.2023.10.001),
+  Indagationes Mathematicae 35 (2024), 114--118: Lemma 2.1 is the
+  Haar-integration formula used in Long's `SU(2)` lift.  The repository now
+  also proves this formula directly from `SU(2)=S^3` and Hopf coordinates.
 - [Zhao, Hessian Nilpotent Polynomials and the Jacobian Conjecture](https://arxiv.org/abs/math/0409534):
   equivalence with the quartic Vanishing Conjecture and Hessian-nilpotent
   formulation.

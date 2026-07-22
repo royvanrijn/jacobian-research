@@ -154,6 +154,8 @@ distinctions matter:
 | Quartic Islands A/B/C | Juntang Zhuang's pinned compilation and exact collision checkers | Independent compact reconstruction showing one canonical and two split weighted seeds, complete boundary signatures, and exclusion from the cancellation normal forms |
 | Formal verification of the foundational map | Dean Cureton’s Lean project | Pinned attribution, scope audit, and an optional upstream build target |
 | Immediate consequences and source trail | Zihan Zhang’s audit | A separate proof architecture focused on inverse geometry, normalization, and stable equivalence |
+| GMC, `(xz)`, and `SU(2)` counterexamples | Christopher D. Long's two arXiv papers | Exact local Gaussian and beta/binomial checks, a complete `SU(2)=S^3` Haar proof, all 18 BCW steps through an independently replayed 79-variable sparse artifact, and a local proof of the fixed-dimensional nonexplicit `GMC(158)` route; no claim that the direct witnesses derive from our map |
+| Weighted-seed/Gaussian bridge | Long's Lagrange--Good search architecture and Good's inversion theorem | A repository-derived polynomial determinant correction turning every nonconstant normalized seed into an explicit four-real-Gaussian witness family; locally proved and checked, not externally reviewed |
 | Cancellation maps and canonical boundary invariants | No earlier source has been identified in the present audit | The finite cancellation operator, all-parameter reconstruction and collision, boundary-exhaustion theorem, thick intersections, and rigidity results |
 | Many stable classes in each degree | No earlier source has been identified in the present audit | The divisor-count theorem giving at least `tau(N-1)` stable classes in generic degree `N>=4` |
 
@@ -211,9 +213,34 @@ Three externally published quartic maps called Islands A, B, and C are
 classified in the [quartic-islands audit](extended-geometry/EXTERNAL_QUARTIC_ISLANDS.md).
 They are not new cancellation classes: one is the canonical triple-zero
 weighted seed and two are split weighted seeds with normalized extra roots
-`3` and `-1/2`.  Their boundary data separate Island A from the other two;
-the present invariant package does not assert unrestricted equivalence or
-inequivalence between the two split-root parameters.
+`3` and `-1/2`.  Their boundary data separate Island A from the other two,
+and the scheme-theoretic decorated-normalization invariant separates the two
+split-root parameters from each other.
+
+## Internal geometry and external consequences
+
+The marked-root, boundary, decorated-normalization, and stable-moduli results
+are the repository's internal geometric programme.  Christopher D. Long's
+direct Gaussian-moment, `(xz)`, and `SU(2)` counterexamples are independent
+external consequences discovered after JC(3).  The distinction is documented
+in the [external-consequences and provenance note](extended-geometry/EXTERNAL_CONSEQUENCES_AND_PROVENANCE.md).
+
+Long's JC-to-GMC route does use an exact diagonal normalization of the
+foundational map.  The repository now reproduces its 18 stable steps, the
+dimensions `3 -> 39 -> 79`, the cubic-homogeneous collision, and the complete
+fixed-dimensional implication to `not GMC(158)`.  The proof architecture and
+authorship remain credited to BCW, DVEZ, and Zhao.  Long's
+much smaller direct witnesses were motivated by the JC(3) announcement but
+were not algebraically extracted from that map.  His papers do not review the
+repository's Hessian/Fitting-divisor or stable-moduli proofs.
+
+There is now a separate internal bridge from the weighted inverse pencil to
+Gaussian moments.  For every nonconstant normalized seed, a polynomial
+two-complex-coordinate correction cancels the Lagrange--Good determinant and
+produces an explicit `GMC(4)` witness family whose mixed moments read one exact
+branch of `H(W)-sW+t=0`.  This construction was prompted by Long's method but
+is not one of Long's witnesses and has not received external specialist
+review.  See the [weighted Gaussian bridge](extended-geometry/WEIGHTED_GAUSSIAN_BRIDGE.md).
 
 ## What is genuinely new here?
 
@@ -230,6 +257,8 @@ ideas.  It is the theory built after them:
 - the uniform cancellation construction and its arithmetic parameter family;
 - complete normalization-boundary exhaustion for the weighted and
   cancellation maps;
+- the uniform weighted-seed/Gaussian bridge, including its polynomial
+  determinant correction and exact mixed-moment formula;
 - reduced versus nilpotently thick boundary intersections; and
 - the divisor-count lower bound `tau(N-1)` for stable-equivalence classes in
   every generic degree `N>=4`.
@@ -276,6 +305,8 @@ This repository explicitly thanks and credits:
 - Juntang Zhuang for the pinned public compilation, Island A/B/C labels,
   expanded maps, and exact quartic collision certificates;
 - Dean Cureton for the independently authored Lean formalization;
+- Christopher D. Long for the independently authored GMC, `(xz)`, and
+  `SU(2)` counterexamples and for the explicit fixed-dimensional GMC route;
 - Zihan Zhang for the source and direct-consequence audit; and
 - Qiaochu Yuan for connecting the public geometric interpretation to the
   MathOverflow discussion.

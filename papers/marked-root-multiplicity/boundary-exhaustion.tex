@@ -379,10 +379,17 @@ $S$; adding the critical prime or any further $K$-branch does not thicken
 that intersection.  These are all intersections among boundary primes.
 
 Equation (4.22) is an exact, decidable certificate rather than a genericity
-shortcut.  The repository verifies it for $1\le m,r\le5$.  It also holds for
-the entire column $m=1$: the transformed $K_{1,r}$ is the irreducible
-parameter polynomial proved in the arithmetic theorem, while $K_{1,r}$ and
-$L_{1,r}$ have equal constant term $1/(r+1)$ but distinct linear terms, so
-they cannot be associates.  This includes every rung of the quadratic
-stationary-point ladder.
+shortcut.  Under $w=-q/(1-q)$, $K_{m,r}$ is a nonzero scalar multiple of the
+parameter polynomial $M_{m,r}$ after clearing $(1-q)^{mr}$.  Moreover $K$ and
+$L$ have the same constant term $1/(r+1)$, whereas their linear terms are
+respectively
+\[
+ -\frac{mr}{r+2},\qquad
+ -\frac{mr(r+3)}{(r+1)(r+2)}.
+\]
+They are therefore not associates.  Every proved irreducibility case for
+$M_{m,r}$ consequently implies (4.22).  This proves the diagram for all
+$mr\le30$, the entire column $m=1$, and the other uniform arithmetic
+criteria; direct resultants are additionally checked for $1\le m,r\le5$.
+In particular every rung of the quadratic stationary-point ladder is covered.
 \end{proof}

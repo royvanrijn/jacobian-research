@@ -243,4 +243,5 @@ Jacobian and symbolic-momentum collision for the foundational map.
 The load-bearing non-computational input is the stable Hessian-root invariant
 proved in `DEGREE_FIVE_STABLE_MODULI.md`.  No external specialist review of
 that invariant or of the combined stable-moduli consequence is currently
-recorded.
+recorded.  In particular, Christopher D. Long's independent consequence
+papers do not validate or review this theorem.

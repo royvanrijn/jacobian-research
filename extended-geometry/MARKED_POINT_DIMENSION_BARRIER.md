@@ -260,6 +260,11 @@ finite normalization with several boundary primes and affine companion
 sheets above every nonproperness component.  The two-dimensional Jacobian
 conjecture remains a separate problem.
 
+In short: JC(3) exposes a concrete marked-point mechanism, and this theorem
+excludes that exact mechanism in dimension two.  It does not describe what
+all counterexamples must look like and does not exclude arbitrary JC(2)
+counterexamples.
+
 ## Credits and provenance
 
 The explicit three-dimensional map follows the Alpoge/Fable public

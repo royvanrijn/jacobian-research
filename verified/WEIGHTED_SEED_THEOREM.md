@@ -202,3 +202,13 @@ python3 scripts/audit_weighted_independent.py
 The detailed former audit narrative is retained in
 [archive/core-support](../archive/core-support/README.md).  The public command
 sequence is in [REPRODUCE.md](../REPRODUCE.md).
+
+Christopher D. Long's later GMC and Mathieu-conjecture papers are external
+consequences motivated by JC(3), not reviews of this weighted-seed theorem and
+not derivations from its inverse pencil.  Motivated by Long's Lagrange--Good
+search architecture, a subsequent repository theorem now does turn every
+nonconstant normalized inverse seed into a uniform four-real-Gaussian witness
+family; this is a new internal bridge, not a reinterpretation of Long's direct
+formulas.  See the [weighted Gaussian bridge](../extended-geometry/WEIGHTED_GAUSSIAN_BRIDGE.md)
+and the exact provenance split in the
+[external-consequences note](../extended-geometry/EXTERNAL_CONSEQUENCES_AND_PROVENANCE.md).

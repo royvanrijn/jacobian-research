@@ -499,8 +499,10 @@ The exact certificate `Res(K,L) != 0` makes `L` a unit in the reduced finite
 critical prime with completed ring `k(R)[[Q]]/(Q^m)`, while every two distinct
 `K`-branches meet in the common reduced stratum `S={P=Q=0}`.  Higher
 intersections remain reduced.  This accounts for every boundary prime and
-specialization arrow.  Nonvanishing is proved for the full `m=1` ladder and
-checked exactly for `1 <= m,r <= 5`; outside proven ranges the resultant is
+specialization arrow.  Nonvanishing is proved wherever the cancellation
+parameter polynomial is known irreducible—in particular for every `mr<=30`,
+the full `m=1` ladder, and the uniform arithmetic criteria—and is also checked
+by direct resultants for `1<=m,r<=5`.  Outside proven ranges the resultant is
 retained as an explicit per-input certificate.
 
 ### Completion audit
@@ -517,7 +519,7 @@ for a completed computation in every family.
 | conductor map | complete as an intrinsic finite-stratum construction | exact implicit-equation formula for arbitrary plane-curve singularities, checked against the ordinary factorization |
 | infinity and second-boundary marks | complete | exact for the weighted seeds; the quartic zero-cluster chart is checked |
 | upstairs `(e,f)`, different, DVR, and inertia data | complete as invariant data | generic divisorial layer complete |
-| higher intersections and completed local extensions | complete as functorial invariant data | full cancellation prime diagram is exact under `Res(K,L) != 0`, proved for the `m=1` ladder and certified on `1 <= m,r <= 5`; all-parameter nonvanishing remains open |
+| higher intersections and completed local extensions | complete as functorial invariant data | full cancellation prime diagram is exact under `Res(K,L) != 0`, proved for every `mr<=30`, the `m=1` ladder, and all uniform parameter-irreducibility cases; all-parameter nonvanishing remains open |
 
 The stability inputs agree with standard base-change results: normalization
 commutes with smooth base change ([Stacks, Lemma 76.25.2](https://stacks.math.columbia.edu/tag/082F)),

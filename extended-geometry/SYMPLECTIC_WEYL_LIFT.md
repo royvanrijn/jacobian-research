@@ -329,3 +329,15 @@ three-point collision over symbolic target momentum.
 - The exact cotangent-lift formulation and the transfer of the repository's
   stable-class lower bounds are recorded here as elementary consequences.  No
   historical priority claim is made without a broader source audit.
+- A supplied rank-two Poisson abstract would, if fully verified, give a
+  sharper four-dimensional symplectic result by a structurally different
+  construction.  Its four Poisson coordinates have `A_2` symbol size, while
+  the separately advertised four outputs plus four Hamiltonian duals explain
+  how its Weyl construction could instead land in `A_4`.  The missing formulas,
+  exact foundational fingerprint, and obstruction to the naive completion are
+  recorded in the [Poisson audit](QUADRATIC_LADDER_AND_POISSON_AUDIT.md); the
+  announcement is not evidence for this theorem.
+- Long's consequence papers do not review this cotangent-lift proof or the
+  stable-moduli transfer.  Their precise relationship to the foundational map
+  is recorded separately in the
+  [external-consequences note](EXTERNAL_CONSEQUENCES_AND_PROVENANCE.md).

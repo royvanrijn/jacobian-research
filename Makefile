@@ -5,6 +5,7 @@ SYSTEM_PYTHON ?= python3
 
 .PHONY: check verify verify-logged verify-minimal verify-core verify-geometry \
 	verify-theorems verify-regressions verify-derived verify-family \
+	verify-external-consequences \
 	verify-master \
 	verify-quartic verify-normal-forms verify-formal verify-lean-foundational \
 	verify-foundations verify-foundations-formal \
@@ -73,7 +74,19 @@ verify-master:
 	$(PYTHON) scripts/verify_two_factor_resolvent.py
 	$(PYTHON) scripts/verify_target_dependent_resolvent.py
 
-verify-regressions:
+verify-external-consequences:
+	$(SYSTEM_PYTHON) scripts/verify_long_gaussian_moments.py
+	$(SYSTEM_PYTHON) scripts/verify_long_xz_mathieu.py
+	$(PYTHON) scripts/verify_long_su2_haar.py
+	$(PYTHON) scripts/verify_long_foundational_normalization.py
+	$(PYTHON) scripts/verify_rank_two_poisson_preaudit.py
+	$(PYTHON) scripts/verify_long_bcw_79_route.py
+	$(SYSTEM_PYTHON) scripts/audit_long_bcw_79_independent.py
+	$(SYSTEM_PYTHON) scripts/verify_fixed_gmc_sic_bridge.py
+	$(PYTHON) scripts/verify_weighted_gaussian_bridge.py
+	$(SYSTEM_PYTHON) scripts/audit_weighted_gaussian_bridge_independent.py
+
+verify-regressions: verify-external-consequences
 	$(SYSTEM_PYTHON) scripts/audit_quartic_independent.py
 	$(PYTHON) scripts/verify_generic_discriminant_geometry.py
 	$(PYTHON) scripts/verify_canonical_family_image.py

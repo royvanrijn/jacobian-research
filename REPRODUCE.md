@@ -60,6 +60,42 @@ compact reconstruction and canonical-boundary audit:
 This command is also part of `make verify-regressions`.  It requires no
 network access and does not copy or execute the upstream checker.
 
+## External consequence identities
+
+Christopher D. Long's direct Gaussian-moment and `(xz)` identities, together
+with the exact normalization of the foundational map used in his BCW
+discussion, have a dedicated target:
+
+```bash
+make verify-external-consequences
+```
+
+The Gaussian and `(xz)` scripts use only the Python standard library.  Their
+bounded exact regressions are distinguished from Long's written all-exponent
+proofs.  A companion symbolic checker proves the `SU(2)=S^3` Haar density in
+Hopf coordinates, completing the local integration proof.  The same target
+also performs all 18 balanced BCW steps and checks the resulting 79-variable
+cubic-homogeneous collision, writes its sparse artifact, and replays it with a
+separate standard-library implementation.  A local proof of the
+fixed-dimensional DVEZ/Zhao implication, including Gaussian contraction, the
+countable-union step, and formal inversion, completes the nonexplicit route to
+`not GMC(158)`.  It also verifies the uniform weighted-seed Gaussian bridge:
+the exact pencil branch, polynomial determinant correction, and bounded Wick
+moments for canonical and split seeds, followed by a separate standard-library
+reconstruction.  These checks are part of
+`verify-regressions`, not `verify-minimal`.
+
+The same target runs the rank-two Poisson **pre-audit**.  It verifies that the
+single displayed output `R=x(2-3xq)` is exactly the foundational third output
+after a polynomial source automorphism, and proves that the naive choices
+`S=F_1/2`, `T=F_2` have no polynomial `D`-completion.  It does not reconstruct
+or certify the unavailable manuscript formulas.
+
+The generated certificate is stored as
+[`artifacts/generated-results/long_bcw_79_counterexample.json`](artifacts/generated-results/long_bcw_79_counterexample.json).
+It records the sparse cubic map, all reduction-step choices, and the three
+exact collision points; regeneration is deterministic.
+
 ## Complete active suite
 
 ```bash

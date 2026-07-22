@@ -43,8 +43,11 @@ The full prime-intersection diagram is now executable.  With
 `K=K_{m,r}` and the critical coefficient `L=L_{m,r}`, the exact certificate
 `Res(K,L) != 0` proves that every geometric `K`-branch has critical contact
 length `m`; distinct `K`-branches meet in the common reduced central stratum.
-This closes the diagram for the complete `m=1` ladder and for every certified
-input, including the regression grid `1 <= m,r <= 5`.
+Since `K` is a fractional-linear transform of the parameter polynomial `M`
+and `K,L` are visibly not associates, this closes the diagram in every proved
+parameter-irreducibility range: all `mr<=30`, the complete `m=1` ladder, and
+the uniform criteria in [ARITHMETIC.md](ARITHMETIC.md).  Direct resultants are
+also checked on the regression grid `1<=m,r<=5`.
 
 The remaining uniform theorem is purely the all-parameter nonvanishing
 problem

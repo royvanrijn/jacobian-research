@@ -34,6 +34,26 @@ for m in range(1, 6):
         assert sp.factor(L - independent_L) == 0
         assert sp.degree(K, w) == m * r
         assert sp.degree(L, w) == m * r
+        assert sp.Poly(K, w).coeff_monomial(1) == sp.Rational(1, r + 1)
+        assert sp.Poly(K, w).coeff_monomial(w) == -sp.Rational(m * r, r + 2)
+        assert sp.Poly(L, w).coeff_monomial(1) == sp.Rational(1, r + 1)
+        assert sp.Poly(L, w).coeff_monomial(w) == -sp.Rational(
+            m * r * (r + 3), (r + 1) * (r + 2)
+        )
+
+        # K is a fractional-linear transform of the cancellation parameter
+        # polynomial M.  Hence every proved irreducibility range for M also
+        # proves the nonzero contact resultant without computing it.
+        q = sp.Symbol("q")
+        n = m * r
+        M = sum(
+            (-1) ** j * sp.binomial(n + r + 1, j) * q ** (n - j)
+            for j in range(n + 1)
+        )
+        transformed_K = sp.factor(
+            sp.cancel((1 - q) ** n * K.subs(w, -q / (1 - q)))
+        )
+        assert sp.rem(sp.Poly(M, q), sp.Poly(transformed_K, q)) == 0
         assert diagram.branch_discriminant != 0
         assert diagram.contact_resultant != 0
         assert diagram.contact_certified

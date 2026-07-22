@@ -521,3 +521,7 @@ The checker verifies the seed identities, admissibility, polynomial weighted
 map, constant Jacobian, inverse equation, split-root and boundary exceptional
 polynomials, exact `C^2` discriminant saturation, the reduced boundary conic,
 and the rational orbit invariant (2.6).
+
+No external specialist review of the Hessian/Fitting-divisor theorem or this
+stable-moduli consequence is currently recorded.  Long's external consequence
+papers concern different witnesses and do not supply such a review.

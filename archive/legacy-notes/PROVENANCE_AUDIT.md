@@ -134,6 +134,52 @@ all three have degree four and `S_4` monodromy; Island A is the canonical
 triple-zero seed, while B and C are split seeds with extra roots `3` and
 `-1/2`; none is a cancellation `(m,r,h)` normal form.
 
+## Christopher D. Long's external consequences
+
+Christopher D. Long submitted
+[*Small Counterexamples to the Gaussian Moments Conjecture*](https://arxiv.org/abs/2607.18186)
+as arXiv:2607.18186v1 on 20 July 2026 and
+[*Counterexamples to the (xz)-Conjecture and the Mathieu Conjecture for
+(SU(2))*](https://arxiv.org/abs/2607.19012) as arXiv:2607.19012v1 on 21 July
+2026.  These are independently authored external manuscripts, not external
+reviews of this repository.
+
+The first paper records three provenance levels which must not be collapsed.
+The announced JC(3) map motivated the search; tracking that map through a BCW
+reduction gives a nonexplicit fixed-dimensional route to `not GMC(158)`;
+Long's direct three-Gaussian witness separately proves `not GMC(n)` for all
+`n>=3` and was not derived from the announced map.  The determinant-one map
+used in the route is exactly
+
+\[
+ L=\operatorname{diag}(1/2,1/2,-1/2)\circ
+ F\circ\operatorname{diag}(1,2,2),
+\]
+
+where `F` is the repository's determinant `-2` presentation.  This identity
+and its transported three-point collision are locally checked.
+
+The second paper's `(xz)` and `SU(2)` witnesses were likewise motivated by the
+post-JC search rather than extracted from the marked-root map.  The repository
+reproduces the exact beta/binomial and Laurent-polynomial identities.  Its
+local `SU(2)` proof now derives normalized Haar measure from the unit
+three-sphere and Hopf coordinates.  The repository also reproduces all 18 BCW
+steps, the dimensions `3 -> 39 -> 79`, and the final cubic-homogeneous
+collision, with a separate standard-library replay.  The fixed-dimensional
+DVEZ/Zhao implication to `not GMC(158)` is now also proved locally through
+Gaussian contraction, the countable-union lemma, and formal inversion.  This
+reproduction does not transfer authorship or constitute review.  Full
+formulas, evidence labels, and reproduction scope are in the
+[external-consequences note](../../extended-geometry/EXTERNAL_CONSEQUENCES_AND_PROVENANCE.md).
+
+Long's Lagrange--Good discussion subsequently motivated a distinct internal
+construction: the repository's
+[weighted-seed Gaussian bridge](../../extended-geometry/WEIGHTED_GAUSSIAN_BRIDGE.md).
+That theorem uses a new polynomial auxiliary coordinate to cancel the Good
+determinant for every normalized inverse seed.  It is proved and exactly
+checked locally, is not asserted in Long's paper, is not attributed to Long,
+and has no recorded external specialist review.
+
 ## Not yet located
 
 - the original Fable conversation or full prompt;

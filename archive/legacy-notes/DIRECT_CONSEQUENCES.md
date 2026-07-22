@@ -1,5 +1,12 @@
 # Audited downstream consequences
 
+> **Archived scope.**  This was the 20 July consequence audit.  Christopher
+> D. Long's 20--21 July preprints subsequently supplied direct explicit
+> three-variable GMC, `(xz)`, and `SU(2)` witnesses.  The current consequence
+> graph and the distinction between the nonexplicit `GMC(158)` route and the
+> direct `GMC(n>=3)` witness are maintained in
+> [External consequences and provenance](../../extended-geometry/EXTERNAL_CONSEQUENCES_AND_PROVENANCE.md).
+
 This note audits the claims in Zihan Zhang's 20 July 2026 expository page.
 
 ## Directly verified premise
@@ -32,6 +39,8 @@ false for every `n>=3`.
   `Psi(d_i)=sum_j(JF^(-1))_(ji)d_j`.  The exact Weyl relations hold, while an
   inverse would force a polynomial left inverse to the colliding map.
 
-The first two bullets remain nonconstructive.  The final three are explicit;
+The first two bullets describe only the original route and remain
+nonconstructive as written.  Long's later direct witnesses are explicit and
+strictly stronger on Gaussian dimension.  The final three bullets here are explicit;
 their formulas, hypothesis audit, and remaining minimality questions are in
 [STABLE_NORMAL_FORM_AUDIT.md](../../extended-geometry/STABLE_NORMAL_FORM_AUDIT.md).
