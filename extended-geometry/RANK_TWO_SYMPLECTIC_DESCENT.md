@@ -269,9 +269,10 @@ so the completing shear becomes
 \]
 
 The published theorem is therefore the generic fixed-`gamma` line inside this
-surface.  On the ordinary boundary-clean open where the decorated
-normalization invariant is generically finite, completion transfers the full
-two-dimensional stable moduli to exact symplectic maps of `A^4`.  Thus degree
+surface.  On the ordinary boundary-clean open, the coarse decorated-
+normalization map is generically etale of exact degree three and completion
+transfers its full two-dimensional image to stable moduli of exact symplectic
+maps of `A^4`.  Thus degree
 five is stronger than the fixed-`gamma` target `N-4=1`: it gives `N-3=2`
 dimensions on this chart.
 
@@ -572,17 +573,16 @@ for which
  \operatorname{disc}(H'')=19184247360.
 \]
 
-On this open, the full-cover faithfulness theorem for decorated
-normalization says that stable left--right equivalence recovers the normalized
-seed itself.  Since rank-two completion is polynomially left--right
-equivalent to adjoining one identity coordinate, it follows that two
-completed maps are stably equivalent only when their `(sigma,tau)` parameters
-are equal.
+On this open, the coarse decorated-normalization invariant has finite fibers.
+Since rank-two completion is polynomially left--right equivalent to adjoining
+one identity coordinate, its image gives the full two-dimensional space of
+stable classes on this slice.  No recovery of the individual
+`(sigma,tau)` labels is needed.
 
 ### Corollary — two-dimensional degree-six stable moduli in `A^4`
 
-There is a nonempty two-dimensional algebraic family of pairwise stably
-polynomially left--right inequivalent degree-six exact symplectic Keller maps
+There is a nonempty two-dimensional algebraic space of stable
+polynomial left--right classes of degree-six exact symplectic Keller maps
 
 \[
  \boxed{G_{\sigma,\tau}:\mathbb A^4\longrightarrow\mathbb A^4.}
@@ -591,19 +591,19 @@ polynomially left--right inequivalent degree-six exact symplectic Keller maps
 The exact certificate is
 [`verify_degree_six_fixed_gamma_descent.py`](../scripts/verify_degree_six_fixed_gamma_descent.py).
 
-The same witness proves that the faithful open in the full
-\((\kappa,\sigma,\tau)\)-space is nonempty.  Full-cover faithfulness now
-recovers all three seed parameters, while the generic-chart completion covers
-a dense open.  Hence there is also a nonempty three-dimensional family of
-pairwise stably inequivalent degree-six exact symplectic maps in
-\(\mathbb A^4\).
+The same witness proves that the ordinary boundary-clean open in the full
+\((\kappa,\sigma,\tau)\)-space is nonempty.  The coarse decorated map is
+generically etale of exact degree four onto a three-dimensional image, while
+the generic-chart completion covers a dense open.  Hence degree six also has
+a three-dimensional space of stable exact symplectic classes in
+\(\mathbb A^4\), independently of full-cover faithfulness.
 
 The full-space and exceptional-divisor certificates are
 [`verify_degree_six_flux_surface.py`](../scripts/verify_degree_six_flux_surface.py)
 and
 [`verify_degree_six_kappa_minus_one_descent.py`](../scripts/verify_degree_six_kappa_minus_one_descent.py).
 
-## 5. All-degree rank-two theorem
+## 6. Uniform residue proof
 
 The repeated four-residue direction is forced by the quotient grading.  Give
 the localized base ring the weights
