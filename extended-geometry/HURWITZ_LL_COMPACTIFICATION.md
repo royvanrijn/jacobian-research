@@ -339,6 +339,66 @@ pencil or seed locus without first specifying a matching Hurwitz stratum and
 an intersection problem.  Formulae (4.5)--(4.7) are the correct compactified
 degree statements currently used by the invariant.
 
+### 4.3 The marked-zero-fiber LL degree
+
+There is, however, a natural matching stratum.  On the exact-double,
+simple-critical-value open of the normalized seed space, let
+`v_1,...,v_n`, with `n=N-2`, be the nonzero critical values of `H`; the
+remaining critical value is `H(0)=0`.  Write
+
+\[
+ Q_H(V)=\prod_{j=1}^n(V-v_j)
+       =V^n+c_1V^{n-1}+\cdots+c_n.                   \tag{4.8}
+\]
+
+Target scaling sends `c_j` to `lambda^j c_j`.  Hence (4.8) defines the
+restricted marked LL morphism
+
+\[
+ \Lambda_N:\mathcal A_N^\circ
+ \longrightarrow\mathbb P(1,2,\ldots,n),
+ \qquad H\longmapsto[c_1:\cdots:c_n].                \tag{4.9}
+\]
+
+Both sides have dimension `n-1=N-3`.
+
+> **Theorem (restricted LL degree).**  The map (4.9) is generically finite
+> and
+> \[
+>  \boxed{\deg\Lambda_N=(N-2)N^{N-3}.}                \tag{4.10}
+> \]
+
+To prove this, start with the classical LL map on monic centered degree-`N`
+polynomials.  Its generic degree is `N^(N-2)`.  The `mu_N` action by source
+precomposition is generically free and preserves all critical values, so
+passing to polynomial covers up to affine source isomorphism divides the
+count by `N`; the resulting Hurwitz count is `N^(N-3)`.  Requiring one
+specified critical value to be zero does not alter the generic degree: it is
+a transverse target slice where the critical values remain distinct.  Over
+that simple branch value, the fiber profile is `(2,1^(N-2))`, and marking the
+unramified point `p_1` gives `N-2` choices.  Finally the conditions
+`p_0=0`, `p_1=1`, and `H'(1)=-1` choose a unique representative modulo source
+and target affine transformations.  This proves (4.10).
+
+For a proper intersection model, take the normalization
+`\overline{\mathcal A}^{\mathrm{LL}}_N` of the graph closure of (4.9) in the
+marked admissible-cover compactification times `\mathbb P(1,...,n)`.  The
+extended morphism `\overline\Lambda_N` has the same generic degree.  If
+`\eta=c_1(\mathcal O_{\mathbb P(1,...,n)}(1))`, then
+
+\[
+ \int_{\overline{\mathcal A}^{\mathrm{LL}}_N}
+  \overline\Lambda_N^*\eta^{N-3}
+ =\frac{(N-2)N^{N-3}}{(N-2)!}
+ =\boxed{\frac{N^{N-3}}{(N-3)!}}.                   \tag{4.11}
+\]
+
+Here the rational normalization is the standard stack intersection
+`\int_{\mathbb P(1,...,n)}\eta^{n-1}=1/n!`; intersection with a coarse
+generic point has the integer degree (4.10).  Thus the rerooting factor `N-2` is
+exactly the marking factor multiplying the unmarked polynomial Hurwitz number
+`N^(N-3)`.
+
 ## 5. Extending the LL incidence and the conductor
 
 Fantechi--Pandharipande construct a branch divisor in flat families and a

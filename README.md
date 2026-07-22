@@ -490,7 +490,9 @@ the complete multicluster conductor square with the canonical finite
 normalization.  On the collision-separating model, rerooting is the degree
 `N-2` etale quotient stack obtained by selecting one simple zero-fiber point;
 generic transposition ramification appears only after contraction to the
-coarse coefficient model.
+coarse coefficient model.  Projectivizing the remaining critical values gives
+the matching marked Hurwitz stratum, and its restricted LL map has exact
+degree `(N-2)N^(N-3)`.
 The exact cotangent lift is polynomially right-equivalent to adjoining three
 identity coordinates, so the same invariant and dimension transfer without
 loss:
@@ -665,6 +667,8 @@ Further families continue in one sequence:
 [log-geometric suspension bridge](cancellation/LOG_GEOMETRY_OF_SUSPENSIONS.md), then the
 [marked-root framework](MARKED_ROOT_KELLER_MAPS.md), followed by the
 [canonical degreewise paper](papers/marked-root-multiplicity/main.tex).
+Explicit reciprocal candidates can be audited with the
+[exact reciprocal-link classifier](cancellation/RECIPROCAL_LINK_CLASSIFIER.md).
 
 For execution, start with [REPRODUCE.md](REPRODUCE.md).  The core paper is
 [papers/core-counterexample/main.tex](papers/core-counterexample/main.tex).

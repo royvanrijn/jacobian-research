@@ -482,6 +482,54 @@ restriction requires a separately specified Hurwitz stratum and intersection
 problem.
 \end{remark}
 
+\begin{theorem}[marked-zero-fiber LL degree]
+\label{thm:restricted-ll-degree}
+Let $\mathcal A_N^\circ$ be the exact-double normalized seed locus on which
+all critical values are simple.  Put $n=N-2$, let $v_1,\ldots,v_n$ be the
+nonzero critical values, and write
+\[
+ \prod_{j=1}^n(V-v_j)=V^n+c_1V^{n-1}+\cdots+c_n.
+\]
+Then
+\[
+ \Lambda_N:\mathcal A_N^\circ\longrightarrow\mathbb P(1,2,\ldots,n),
+ \qquad H\longmapsto[c_1:\cdots:c_n]
+\]
+is generically finite of degree
+\[
+ \boxed{\deg\Lambda_N=(N-2)N^{N-3}}.
+\]
+If $\overline{\mathcal A}^{\rm LL}_N$ is the normalized graph closure in the
+marked admissible-cover compactification and
+$\eta=c_1(\mathcal O_{\mathbb P(1,\ldots,n)}(1))$, then
+\[
+ \int_{\overline{\mathcal A}^{\rm LL}_N}
+       \overline\Lambda_N^*\eta^{N-3}
+ =\frac{N^{N-3}}{(N-3)!}.
+\]
+\end{theorem}
+
+\begin{proof}
+The classical polynomial LL map has degree $N^{N-2}$.  Generic
+precomposition by $\mu_N$ acts freely on its monic centered source and
+preserves every critical value.  Quotienting by affine source isomorphism
+therefore leaves $N^{N-3}$ covers.  Requiring one specified critical value to
+be zero is a transverse target slice and does not change that count.  Its
+fiber profile is $(2,1^{N-2})$, so marking an unramified point over zero gives
+$N-2$ choices.  The source conditions $p_0=0,p_1=1$ and the target condition
+$H'(1)=-1$ then choose a unique normalized representative.  This proves the
+degree formula.
+
+The weighted-projective stack satisfies
+$\int_{\mathbb P(1,\ldots,n)}\eta^{n-1}=1/n!$.  Multiplying by the generic
+degree and using $n=N-2$ gives
+\[
+ \frac{(N-2)N^{N-3}}{(N-2)!}
+ =\frac{N^{N-3}}{(N-3)!},
+\]
+as asserted.
+\end{proof}
+
 \begin{theorem}[formal comparison at arbitrary root collisions]
 \label{thm:admissible-formal-comparison}
 Pull the marked admissible-cover compactification of

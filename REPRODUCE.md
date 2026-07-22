@@ -198,6 +198,7 @@ identities are checked exactly by
 .venv/bin/python scripts/verify_stable_generator_rigidity.py
 .venv/bin/python scripts/verify_multicluster_ll_comparison.py
 .venv/bin/python scripts/verify_rerooting_groupoid_boundary.py
+.venv/bin/python scripts/verify_restricted_ll_degree.py
 ```
 
 The companion affine-stratum audit verifies that the root-one component is
@@ -210,6 +211,9 @@ the selected-in/selected-out boundary pullbacks, generic transposition
 ramification after coefficient contraction, and the distinction between a
 cyclic total-collision slice and generic divisor inertia.  These three audits
 and the companion affine-stratum audit are part of `make verify-regressions`.
+The restricted-LL audit checks the Cayley/marking count and independently
+computes degrees `8` and `75` from the quartic and quintic critical-value
+eliminants.  All displayed commands are part of `make verify-regressions`.
 
 ## External consequence identities
 

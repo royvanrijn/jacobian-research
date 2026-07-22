@@ -83,6 +83,7 @@ class ReciprocalLinkCertificate:
     y: sp.Expr
     B: sp.Expr
     valuations: tuple[tuple[str, int], ...]
+    marked_valuation_pattern: bool
     reciprocal_identity: bool
     straightening_identity: bool
     polynomial_straightening: bool
@@ -95,6 +96,7 @@ class ReciprocalLinkCertificate:
     localized_coordinate_certificate: bool
     boundary: BoundaryReconstructionCertificate
     spectral: SpectralObstructionCertificate
+    verdict: str
 
 
 def _poly_order(expression: sp.Expr, prime: sp.Expr, variables) -> int:
@@ -251,12 +253,18 @@ def spectral_obstruction(
     constraint_poly = sp.Poly(numerator, residue_symbol, domain=field).monic()
     common = sp.gcd(residue_poly, constraint_poly).monic()
     common_degree = common.degree()
+    # Over the algebraically closed ground field the transformed spectral
+    # polynomial is a product of linear factors
+    # Z-q_i*boundary_y^(m+1).  Thus a primitive geometric residue extension
+    # of degree >1 is excluded even if several conjugate factors remain
+    # bundled over QQ(parameter).
+    geometrically_excluded = residue_poly.degree() > 1 or common_degree == 0
     return SpectralObstructionCertificate(
         spectral_polynomial=sp.factor(spectral.as_expr()),
         transformed_constraint=sp.factor(constraint_poly.as_expr()),
         common_factor=sp.factor(common.as_expr()),
         common_degree=common_degree,
-        excludes_candidate=common_degree == 0,
+        excludes_candidate=geometrically_excluded,
     )
 
 
@@ -350,6 +358,30 @@ def classify_reciprocal_link(
         candidate.r,
     )
 
+    marked_pattern = dict(valuations) == {
+        "s": -1,
+        "Y": 0,
+        "P": 1,
+        "B": 0,
+        "D": -1,
+    }
+    reciprocal_valid = (
+        marked_pattern
+        and reciprocal_identity
+        and straightening_identity
+        and polynomial_straightening
+        and localized_certificate
+        and boundary_certificate.boundary_parametrization_valid
+    )
+    if not reciprocal_valid:
+        verdict = "invalid_or_incomplete_reciprocal_certificate"
+    elif spectral_certificate.excludes_candidate:
+        verdict = "excluded_by_keller_boundary_spectrum"
+    elif boundary_certificate.stein_degree == 1:
+        verdict = "passes_marked_cancellation_boundary_prefilter"
+    else:
+        verdict = "requires_primitive_stein_analysis"
+
     return ReciprocalLinkCertificate(
         name=candidate.name,
         D=D,
@@ -358,6 +390,7 @@ def classify_reciprocal_link(
         y=y,
         B=B,
         valuations=valuations,
+        marked_valuation_pattern=marked_pattern,
         reciprocal_identity=reciprocal_identity,
         straightening_identity=straightening_identity,
         polynomial_straightening=polynomial_straightening,
@@ -370,6 +403,7 @@ def classify_reciprocal_link(
         localized_coordinate_certificate=localized_certificate,
         boundary=boundary_certificate,
         spectral=spectral_certificate,
+        verdict=verdict,
     )
 
 

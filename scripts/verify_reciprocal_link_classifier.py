@@ -14,6 +14,7 @@ from jcsearch.reciprocal import (
     classify_boundary_reconstruction,
     classify_reciprocal_link,
     masuda_plinth_example,
+    spectral_polynomial,
     spectral_obstruction,
     standard_cancellation_example,
 )
@@ -30,6 +31,7 @@ def check_cancellation_certificate() -> None:
         "B": 0,
         "D": -1,
     }
+    assert certificate.marked_valuation_pattern
     assert certificate.reciprocal_identity
     assert certificate.straightening_identity
     assert certificate.polynomial_straightening
@@ -45,6 +47,7 @@ def check_cancellation_certificate() -> None:
     assert certificate.boundary.stein_degree == 1
     assert not certificate.spectral.excludes_candidate
     assert certificate.spectral.common_degree == 1
+    assert certificate.verdict == "passes_marked_cancellation_boundary_prefilter"
 
 
 def check_masuda_stein_degree() -> None:
@@ -79,6 +82,25 @@ def check_split_spectral_obstruction() -> None:
                 )
                 assert certificate.excludes_candidate
                 assert certificate.common_degree == 0
+
+    # An arithmetic gcd can package conjugate constant spectral roots into a
+    # higher-degree factor.  It is still excluded geometrically because the
+    # ground field of the theorem is algebraically closed.
+    q = sp.symbols("q_spectral")
+    conjugate_constraint = spectral_polynomial(2, 1, q).as_expr().subs(
+        q, Z / tau**3
+    )
+    conjugate_numerator, _ = sp.fraction(sp.cancel(conjugate_constraint))
+    conjugate = spectral_obstruction(
+        conjugate_numerator,
+        Z,
+        tau,
+        tau,
+        2,
+        1,
+    )
+    assert conjugate.common_degree == 2
+    assert conjugate.excludes_candidate
 
 
 def integrate_unit_interval(expression: sp.Expr, variable: sp.Symbol) -> sp.Expr:

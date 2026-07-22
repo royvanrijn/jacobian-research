@@ -17,7 +17,7 @@ in [STATUS.md](../STATUS.md).
 | Explicit quartic model | [Quartic weighted geometry](QUARTIC_WEIGHTED_GEOMETRY.md) |
 | Zhuang's external quartic islands | [Weighted-seed identification and boundary audit](EXTERNAL_QUARTIC_ISLANDS.md) |
 | Decorated normalization and degreewise stable moduli | [Scheme-theoretic Fitting, node pairing, conductor, quartic separation, collision-tolerant full-cover faithfulness, and the `(N-3)`-dimensional weighted moduli theorem](DECORATED_NORMALIZATION_INVARIANT.md) |
-| Hurwitz--LL compactification | [LL spectral incidence, marked admissible-cover closure, etale stack quotient and boundary pullbacks for rerooting, coarse collision monodromy, and exact normalized-Stein/conductor comparison](HURWITZ_LL_COMPACTIFICATION.md) |
+| Hurwitz--LL compactification | [LL spectral incidence, marked admissible-cover closure, etale rerooting quotient and boundary pullbacks, exact multicluster comparison, and restricted LL degree `(N-2)N^(N-3)`](HURWITZ_LL_COMPACTIFICATION.md) |
 | Cancellation contact resultant | [Endpoint-moment reduction and uniform `r=1,2,3` proofs](../cancellation/CONTACT_RESULTANT.md) |
 | Degree-five positive-dimensional stable moduli | [Stable Hessian-root invariant and explicit family](DEGREE_FIVE_STABLE_MODULI.md) |
 | Degree-five rank-two symplectic descent | [Parameter-dependent residue cancellation and uncountable stable moduli in `A^4`](DEGREE_FIVE_RANK_TWO_DESCENT.md) |

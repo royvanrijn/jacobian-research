@@ -808,6 +808,26 @@ appear: a generic pair collision has transposition inertia.  The
 `epsilon=delta^m` chart at a total `m`-fold collision is a cyclic
 codimension-`m-1` slice, not generic divisorial inertia.
 
+Projectivizing the `N-2` nonzero critical values gives a natural matching LL
+stratum of the same dimension as the seed space:
+
+\[
+ \Lambda_N:\mathcal A_N^\circ\longrightarrow
+ \mathbb P(1,2,\ldots,N-2).
+\]
+
+The classical polynomial LL count, divided by the generic `mu_N` source
+scaling and multiplied by the `N-2` choices of marked unramified point over
+zero, gives
+
+\[
+ \boxed{\deg\Lambda_N=(N-2)N^{N-3}}.                 \tag{5.3s}
+\]
+
+On the normalized graph compactification its weighted hyperplane
+intersection is `N^(N-3)/(N-3)!`.  Thus the formerly heuristic connection to
+LL degrees is now an exact marked Hurwitz count.
+
 Because the decorated normalization is constant on stable polynomial
 left--right classes, generic finiteness has the following stronger
 degreewise consequence:

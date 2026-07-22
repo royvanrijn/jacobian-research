@@ -142,6 +142,7 @@ verify-regressions: verify-external-consequences
 	$(PYTHON) scripts/verify_stable_generator_rigidity.py
 	$(PYTHON) scripts/verify_multicluster_ll_comparison.py
 	$(PYTHON) scripts/verify_rerooting_groupoid_boundary.py
+	$(PYTHON) scripts/verify_restricted_ll_degree.py
 	$(PYTHON) scripts/verify_quartic_c0_fibers.py
 	$(PYTHON) scripts/verify_quartic_nonproperness_paths.py
 	$(PYTHON) scripts/verify_quartic_properness_converse.py

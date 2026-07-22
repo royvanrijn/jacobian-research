@@ -33,9 +33,18 @@ It then certifies:
  y^{(m+1)mr}J_{mr,r}(Z/y^{m+1}).
 \]
 
-A gcd of degree zero is an exact certificate that the candidate cannot have a
-polynomial cancellation Keller core.  A degree-one common factor identifies
-the permitted boundary value `bar(B)=q y^(m+1)`.
+A gcd of degree zero is an exact arithmetic certificate that the candidate
+cannot have a polynomial cancellation Keller core.  Over the algebraically
+closed ground field, every transformed spectral factor is linear; hence the
+classifier also rejects every primitive residue polynomial of degree greater
+than one, even if an arithmetic gcd bundles several conjugate constant roots.
+A degree-one common factor identifies the permitted boundary value
+`bar(B)=q y^(m+1)`.
+
+The final `verdict` is deliberately a prefilter verdict.  Passing means that
+the exact reciprocal markings and boundary spectrum agree with the marked
+cancellation theorem; it does not replace the separate check that the full
+primitive `T` is polynomial.
 
 ## Command-line examples
 
