@@ -75,7 +75,7 @@
       "id": "D1",
       "theorem": "Decorated moduli",
       "status": "proved: dimension N-3 on an explicit open for N >= 4",
-      "canonical_source": "extended-geometry/DECORATED_NORMALIZATION_INVARIANT.md",
+      "canonical_source": "papers/decorated-discriminant-normalization/main.tex",
       "dependencies": ["S1", "W1"],
       "checker": "scripts/verify_decorated_normalization.py",
       "external_review": "none",
@@ -84,12 +84,22 @@
     {
       "id": "F2",
       "theorem": "Full-cover faithfulness",
-      "status": "proved for normalized admissible seeds",
-      "canonical_source": "papers/marked-root-multiplicity/decorated-normalization.tex",
+      "status": "repair required before use; retained in the decorated paper as a repair target",
+      "canonical_source": "papers/decorated-discriminant-normalization/main.tex",
       "dependencies": ["D1", "external: stable plane descent and fixed-curve rigidity"],
       "checker": "scripts/verify_affine_branch_mark_audit.py",
       "external_review": "under audit",
       "supersedes": ["six-orbit bound"]
+    },
+    {
+      "id": "H1",
+      "theorem": "Hurwitz--LL compactification of rerooting",
+      "status": "repository proof of the admissible-cover closure, LL degree, and caustic/Maxwell classes",
+      "canonical_source": "papers/hurwitz-ll-rerooting/main.tex",
+      "dependencies": ["external: admissible-cover compactification technology"],
+      "checker": "scripts/verify_restricted_ll_degree.py",
+      "external_review": "none",
+      "supersedes": []
     },
     {
       "id": "O1",
