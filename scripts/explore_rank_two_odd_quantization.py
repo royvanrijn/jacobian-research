@@ -17,6 +17,7 @@ from collections import defaultdict
 from fractions import Fraction
 import subprocess
 import sys
+import tempfile
 
 from sympy.polys.domains import GF, QQ
 from sympy.polys.matrices.sdm import sdm_irref, sdm_nullspace_from_rref
@@ -367,16 +368,30 @@ def msolve_chart(equations, parameter_monomials, chart):
         + ",\n".join(polynomials)
         + "\n"
     )
-    completed = subprocess.run(
-        ["msolve", "-f", "/dev/stdin", "-o", "/dev/stdout", "-t", "4", "-v", "1"],
-        input=payload,
-        text=True,
-        capture_output=True,
-        timeout=300,
-    )
-    if completed.returncode:
-        raise RuntimeError(completed.stderr)
-    print(completed.stdout.strip())
+    with tempfile.NamedTemporaryFile(mode="w", suffix=".msolve") as source:
+        with tempfile.NamedTemporaryFile(mode="r", suffix=".out") as output:
+            source.write(payload)
+            source.flush()
+            completed = subprocess.run(
+                [
+                    "msolve",
+                    "-f",
+                    source.name,
+                    "-o",
+                    output.name,
+                    "-t",
+                    "4",
+                    "-v",
+                    "1",
+                ],
+                text=True,
+                capture_output=True,
+                timeout=300,
+            )
+            if completed.returncode:
+                raise RuntimeError(completed.stderr)
+            print(completed.stdout.strip())
+            print(output.read().strip())
 
 
 def main():
