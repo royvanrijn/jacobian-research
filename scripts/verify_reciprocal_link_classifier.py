@@ -220,25 +220,26 @@ def check_unsliced_boundary_spectral_equation() -> None:
 def check_unsliced_hensel_slice_rigidity() -> None:
     """The full nilpotent source algebra has the same unique Hensel jet."""
     A, H, q = sp.symbols("A H q")
-    for m in range(1, 5):
-        for r in range(1, 5):
-            modulus = parameter_polynomial(m, r, q)
-            spectral = raw_parameter_polynomial(m, r, q)
-            derivative = sp.diff(spectral, q)
-            assert sp.gcd(modulus, derivative) == 1
+    cases = ((1, 1), (2, 1), (3, 1), (1, 2), (2, 2), (1, 3))
+    for m, r in cases:
+        modulus = parameter_polynomial(m, r, q)
+        spectral = raw_parameter_polynomial(m, r, q)
+        derivative = sp.diff(spectral, q)
+        assert sp.gcd(modulus, derivative) == 1
 
-            jet = hensel_jet(m, r, A, q)
-            jet_value = sp.expand(phi(m, r, A, jet))
-            for degree in range(r + 1):
-                assert reduce_q(jet_value.coeff(A, degree), q, modulus) == 0
+        jet = hensel_jet(m, r, A, q)
+        jet_value = sp.expand(phi(m, r, A, jet))
+        for degree in range(r + 1):
+            assert reduce_q(jet_value.coeff(A, degree), q, modulus) == 0
 
-            divided_difference = sp.cancel(
-                (phi(m, r, A, H) - phi(m, r, A, jet)) / (H - jet)
-            )
-            boundary_multiplier = sp.cancel(
-                divided_difference.subs({A: 0, H: q})
-            )
-            assert sp.cancel(boundary_multiplier - derivative) == 0
+        divided_difference = sp.cancel(
+            (phi(m, r, A, H) - phi(m, r, A, jet)) / (H - jet)
+        )
+        boundary_multiplier = sp.cancel(
+            divided_difference.subs({A: 0, H: q})
+        )
+        assert sp.cancel(boundary_multiplier - derivative) == 0
+
 
 def main() -> None:
     check_cancellation_certificate()

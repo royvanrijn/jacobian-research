@@ -136,6 +136,16 @@ seven and eight are checked by
 .venv/bin/python scripts/explore_all_degree_fixed_gamma.py 8
 ```
 
+The direct second-Weyl-algebra parity test is replayed by
+
+```bash
+.venv/bin/python scripts/explore_degree_five_a2_subprincipal.py
+```
+
+It solves the `hbar^3` equation exactly, retains its full 42-dimensional
+solution space, and proves that the `hbar^5` cokernel contains `1=0`.  This is
+an obstruction only to the declared parity-preserving filtered ansatz.
+
 The separately authored Lean certificate is optional because it downloads a
 pinned toolchain:
 
@@ -173,7 +183,9 @@ countermodel, spectral squarefreeness, and Laurent-tail descent.  The reusable
 classifier additionally checks exact prime valuations, both localized chart
 compositions, boundary elimination, the displayed residue degree, the full
 Stein field via local-slice invariantization, hidden covers, and the spectral
-gcd obstruction.  Its built-in examples can be inspected directly:
+gcd obstruction.  It also checks the unsliced divided-difference Hensel
+multiplier which upgrades the boundary value to the complete cancellation
+jet and global slice.  Its built-in examples can be inspected directly:
 
 ```bash
 .venv/bin/python scripts/classify_reciprocal_link.py cancellation

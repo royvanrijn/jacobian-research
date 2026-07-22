@@ -1175,7 +1175,7 @@ Under Propositions 8.3--8.4 and polynomiality of the Keller core, the full
 Stein normalization of the quotient boundary is
 
 \[
- C_A=V(A)=\operatorname{Spec}k[y,y^{-1}].              \tag{8.28q}
+ C_A=V_K(A)=\operatorname{Spec}k[y,y^{-1}].            \tag{8.28q}
 \]
 
 Its smooth completion has exactly the two flags `y=0` and `y=infinity`, and
@@ -1191,7 +1191,7 @@ Proposition 8.6a gives
 of `k(y)` in `k(y)(z)` is `k(y)`, so `C_A=G_m`.  Its two standard end
 valuations give `(1,-1)`.  QED
 
-### Theorem 8.7 -- completion of the marked cancellation branch
+### Theorem 8.7 -- completion of the reciprocal cancellation branch
 
 In addition to Propositions 8.3--8.4, suppose that the plane-core primitive
 is the polynomial
@@ -1434,7 +1434,8 @@ problem.
   Hensel argument used in Theorem 8.7 are in
   [`../archive/cancellation-components/GENERALIZED_CANCELLATION_MECHANISM.md`](../archive/cancellation-components/GENERALIZED_CANCELLATION_MECHANISM.md).
 - The exact valuation, LND, boundary-elimination, automatic full-Stein-field,
-  hidden-cover, and spectral-gcd certificates are implemented in
+  hidden-cover, spectral-gcd, and unsliced Hensel-multiplier certificates are
+  implemented in
   [`../jcsearch/reciprocal.py`](../jcsearch/reciprocal.py) and exercised by
   [`../scripts/verify_reciprocal_link_classifier.py`](../scripts/verify_reciprocal_link_classifier.py).
   Usage and certificate semantics are documented in

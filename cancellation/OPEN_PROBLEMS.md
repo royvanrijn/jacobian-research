@@ -187,3 +187,13 @@ are in the
 suspension-square formalism, the simple-section plane-core normal form, and
 the first independent two-boundary triangular obstruction are developed in
 [the controlled-boundary suspension note](CONTROLLED_BOUNDARY_SUSPENSIONS.md).
+
+The orientation-reversing reciprocal branch is now closed after its
+height-one link and boundary-noncontraction marking are supplied.  Unsliced
+Hensel rigidity in the whole source algebra forces the cancellation jet, a
+global slice, full Stein degree one, and the two primitive rank-two end flags.
+Thus the remaining cancellation-side problem is upstream: prove that an
+arbitrary divisor-minimal suspension supplies that reciprocal height-one
+link.  The orientation-preserving weighted chart classification remains
+separate; see the
+[log-geometric suspension bridge](LOG_GEOMETRY_OF_SUSPENSIONS.md).

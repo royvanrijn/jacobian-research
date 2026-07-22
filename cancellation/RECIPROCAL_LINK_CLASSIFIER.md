@@ -148,30 +148,52 @@ constant.  Therefore `bar(B)=q y^(m+1)` belongs to the base field, contradicting
 [`LOG_GEOMETRY_OF_SUSPENSIONS.md`](LOG_GEOMETRY_OF_SUSPENSIONS.md) proves it
 for every primitive displayed finite boundary extension.
 
-## No-hidden-cover log lemma
+## Unsliced Hensel closure of the hidden-cover gap
 
-The spectral equation collapses `bar(B)` to the base, but this alone does not
-exclude a larger Stein field.  The remaining argument is log-valuative.  If
-`L/k(y)` is the full finite Stein extension and `C_L` its normalization over
-`G_m`, then
+The spectral equation collapses `bar(B)` to the base, but its constant term
+alone does not exclude a larger Stein field.  Polynomiality of the full
+Keller primitive supplies more.  In `R[y^(-1)]`, put
+`H=B/y^(m+1)`.  It forces
 
 \[
- [L:k(y)]=\sum_{p\mid0}v_p(y)=-\sum_{p\mid\infty}v_p(y).
+ \Phi_{m,r}(A,H)\equiv0\pmod {A^{r+1}}.
 \]
 
-Consequently a cover of degree `f>1` either has more than two punctures over
-`{0,infinity}`, or—if there is one point over each end—the pulled-back unit
-has vector `(f,-f)`, which is not primitive.  Puncture-complete
-reconstruction data with vector `(1,-1)` therefore forces full Stein degree
-one.  This is Lemma 8.6a in
-[`LOG_GEOMETRY_OF_SUSPENSIONS.md`](LOG_GEOMETRY_OF_SUSPENSIONS.md).
+If `q=H mod A` and `h_q(A)` is the known cancellation jet, then
+
+\[
+ \Phi(A,H)-\Phi(A,h_q)=(H-h_q)U,qquad
+ U\bmod A=J'_{mr,r}(q)\ne0.
+\]
+
+The prime `A` therefore divides `H-h_q` to order at least `r+1`.  Descent
+from the `y`-localization gives
+
+\[
+ B=y^{m+1}h_q(A)+A^{r+1}z,qquad z\in R,qquad
+ \partial(z)\in k^*.
+\]
+
+Thus `z` is a global slice, the full Stein degree is one, and the two
+rank-two end flags with vector `(1,-1)` are automatic.  Proposition 8.6a and
+Corollary 8.6b in
+[`LOG_GEOMETRY_OF_SUSPENSIONS.md`](LOG_GEOMETRY_OF_SUSPENSIONS.md) give the
+general proof.  The verifier checks the exact divided-difference multiplier
+and Hensel jet on six bounded `(m,r)` branches.
+
+The full-Stein computation remains useful diagnostically: it detects exactly
+what a candidate would hide if only the spectral constant term were checked.
+But a detected hidden cover cannot coexist with a polynomial cancellation
+Keller core.
 
 ## Scope
 
 The current elimination backend expects rational coefficients, a rational
 one-parameter normalization chart of the base boundary, an integral generic
 fiber, and a nonzero induced primitive Jacobian LND.  It computes the full
-Stein field automatically under those hypotheses; it does not infer from an
-unmarked global compactification that every puncture has been recorded.
+Stein field automatically under those hypotheses.  The current candidate
+API treats polynomiality of the complete Keller primitive as a separate
+check; when that hypothesis holds, Proposition 8.6a eliminates every hidden
+cover without additional compactification data.
 Groebner elimination can become expensive for high-degree source formulas;
 the valuation, Jacobian, local-slice, and spectral stages remain inexpensive.

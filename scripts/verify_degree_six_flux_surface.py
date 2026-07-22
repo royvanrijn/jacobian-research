@@ -168,6 +168,19 @@ assert all(
     for exponent in range(4)
 )
 
+fixed_gamma_candidate = sp.factor(
+    (
+        6024 * sigma**2
+        + 5016 * sigma * tau
+        + 11088 * sigma
+        + 1056 * tau**2
+        + 4752 * tau
+        - 16929
+    )
+    / 2156
+)
+assert sp.factor(candidate.subs(a, -sp.Rational(8, 7)) - fixed_gamma_candidate) == 0
+
 # The shear is triangular and polynomially invertible on the parameter chart.
 W_back = sp.symbols("W_back")
 assert sp.expand(

@@ -37,3 +37,21 @@ assert sp.expand(C * theta - (g4 / X**4 + g3 / X**3 + g2 / X**2 + g1 / X)) == 0
 
 print("PASS: pole-order-four normalized residues form the universal theta line")
 print("theta = X^-4 + 6Q X^-3 + 45Q^2 X^-2/2 + 135Q^3 X^-1/2")
+
+# The kappa=-1 replacement chart has weights wt(X,Q,Z)=(1,-2,-1).
+# Its weight-minus-four, Z-independent principal part can only use X^-4 and
+# Q*X^-2.  Polynomiality for the replacement third Hamiltonian component
+# forces their ratio to be -4.
+theta_exceptional = X**-4 - 4 * Q * X**-2
+
+
+def exceptional_third_component(f):
+    return sp.expand(
+        2 * X**3 * sp.diff(f, X)
+        - (2 + 6 * X**2 * Q) * sp.diff(f, Q)
+    )
+
+
+assert exceptional_third_component(C * theta_exceptional) == 40 * C * Q
+print("PASS: kappa=-1 normalized residues form the exceptional theta line")
+print("theta_exceptional = X^-4 - 4Q X^-2")
