@@ -71,7 +71,8 @@ dR_{(L,Q)}(L,-Q)=(2-1)R(L,Q)=R(L,Q),
 \]
 
 which is nonzero.  Thus the differential of `Theta` has trivial kernel, and
-source and target both have dimension five.  Therefore it is an isomorphism.
+source and target both have dimension five.  Therefore
+\(d\Theta_{(L,Q)}\) is an isomorphism, so \(\Theta\) is etale at `(L,Q)`.
 
 In coordinates this is the determinant identity
 

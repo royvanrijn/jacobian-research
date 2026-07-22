@@ -363,6 +363,53 @@ the rational moduli map
  1\,\mathrm{boundary},1\,\mathrm{infinity}}.           \tag{5.1}
 \]
 
+This further open is nonempty for every `N>=4`; the ordinary and
+boundary-clean conditions are not merely formal genericity assumptions.  The
+[generic discriminant theorem](GENERIC_DISCRIMINANT_CURVE.md) proves that the
+ordinary nodal-cuspidal open meets the normalized admissible slice in every
+degree.  For the boundary condition, use the explicit normalized split seed
+
+\[
+ H_N^{\mathrm{split}}(W)
+ =\frac12W^2(1-W)(1+W^{N-3}).                         \tag{5.1a}
+\]
+
+It has exact degree `N`, satisfies
+
+\[
+ (H_N^{\mathrm{split}})'(1)=-1,
+ \qquad
+ (H_N^{\mathrm{split}})''(1)=-(N+1)\ne-2,
+ \qquad
+ (H_N^{\mathrm{split}})''(0)=1.                       \tag{5.1b}
+\]
+
+Writing `P_N=2H_N^split/W^2=(1-W)(1+W^(N-3))`, the polynomial
+`P_N` is squarefree and has no zero root.  At any root `alpha` of `P_N`,
+
+\[
+ \left.\frac{2(H_N^{\mathrm{split}})'(W)}W
+ \right|_{W=\alpha}
+ =\alpha P_N'(\alpha)\ne0.                            \tag{5.1c}
+\]
+
+Hence
+
+\[
+ \gcd(H_N^{\mathrm{split}},(H_N^{\mathrm{split}})')=W,
+\]
+
+so zero is the unique multiple primitive root.  Moreover the boundary mark
+`r=0` is not a cusp by (5.1b).  If it shared its discriminant image with an
+off-diagonal point `u`, then `H'(u)=H(u)=0`, contradicting (5.1c).  Thus it is
+not a node branch either.
+
+Boundary-cleanness and avoidance of the cusp/node schemes are open
+conditions.  The normalized seed space is irreducible, the ordinary open is
+nonempty by the generic discriminant theorem, and (5.1a) proves that the
+boundary-clean open is nonempty.  Their intersection is therefore a nonempty
+open for every `N>=4`.
+
 The target means decorated rational curves modulo `PGL_2`; the infinity mark
 reduces the acting group to `Aff_1`.  The Fitting divisor alone has `N-2`
 points modulo this two-dimensional group and therefore has expected image
@@ -402,6 +449,19 @@ at most `N-2` points.  Consequently
 
 on the generic ordinary locus.  This proves the image dimension; it does not
 claim that every abstract decorated configuration occurs.
+
+Because the decorated normalization is constant on stable polynomial
+left--right classes, generic finiteness has the following stronger
+degreewise consequence:
+
+\[
+ \boxed{\text{For every }N\ge4,\text{ weighted degree-}N\text{ maps contain
+ an }(N-3)\text{-dimensional family of stable classes.}}                 \tag{5.4}
+\]
+
+Here “dimension” means the dimension of the image of the generically finite
+decorated-invariant map.  The statement does not require the existence of a
+coarse moduli space for all Keller maps.
 
 ## 6. The full finite-cover boundary invariant
 
