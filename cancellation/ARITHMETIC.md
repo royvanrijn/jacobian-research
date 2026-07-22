@@ -42,13 +42,53 @@ standard form:
 \]
 
 It is precisely Filaseta--Moy's polynomial `p_(d,t)` with `(d,t)=(k,r)`.
-The three notational systems are therefore related by
+There are two further classical descriptions.  If
 
-| Cancellation notation | Truncated-binomial notation | Filaseta--Moy notation |
-|---|---|---|
-| `L=(m+1)r+1` | outer exponent `N` | `d+t+1` |
-| `n=mr` | truncation degree `k` | degree `d` |
-| `r` | omitted count minus one `N-k-1` | parameter `t` |
+\[
+ G_h(x)=1+x+\cdots+x^h,
+ \qquad h=N-1=(m+1)r,
+\]
+
+then termwise differentiation gives the exact identity
+
+\[
+ \boxed{B_{k,r}(x)=\frac1{r!}G_{N-1}^{(r)}(x).}        \tag{3a}
+\]
+
+Thus the cancellation problem is also the divisor-diagonal subfamily
+`h=(m+1)r` of the classical conjecture that every nontrivial derivative of a
+geometric polynomial is irreducible.  Moreover, in the one-parameter Jacobi
+family
+
+\[
+ J_d(x,y)=\sum_{j=0}^d\binom{y+j}{j}x^j
+\]
+
+one has simply
+
+\[
+ B_{k,r}(x)=J_k(x,r).                                  \tag{3b}
+\]
+
+The four notational systems are therefore related by
+
+| Cancellation notation | Truncated binomial | Geometric derivative | Jacobi / Filaseta--Moy |
+|---|---|---|---|
+| `L=(m+1)r+1` | outer exponent `N` | geometric degree `h=N-1` | `d+t+1=N` |
+| `n=mr` | truncation degree `k` | derivative degree `h-r=k` | Jacobi degree `d=k` |
+| `r` | omitted count minus one | derivative order `r` | `y=t=r` |
+
+The hypergeometric form used elsewhere in the cancellation calculation is
+equivalently the Jacobi-polynomial identity
+
+\[
+ {}_2F_1(-k,1;r+2;q)
+ =\frac{k!}{(r+2)_k}P_k^{(r+1,-N)}(1-2q).             \tag{3c}
+\]
+
+The parameter `-N` moves with the degree and lies outside the usual
+orthogonality range, so (3c) is structural rather than an immediate
+irreducibility theorem.
 
 A root `q` selects one normalized cancellation jet.  Its coefficient field
 is exactly `Q(q)`: the recurrence in
