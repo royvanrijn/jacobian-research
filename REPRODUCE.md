@@ -54,6 +54,7 @@ remain as a regression:
 
 ```bash
 .venv/bin/python scripts/verify_all_degree_rational_fibers.py
+.venv/bin/python scripts/verify_real_fiber_spectrum.py
 ```
 
 The remaining constant-`C` boundary has a separate exact Singular
@@ -369,8 +370,10 @@ first the standalone Gaussian--Lagrange identity for a nonlinear polynomial
 map with nonzero constant terms, then the exact pencil branch, polynomial
 determinant correction, and bounded Wick moments for canonical and split
 seeds.  It also reverts the mixed-moment generating series to recover a
-symbolic quartic and a concrete weighted quintic exactly, followed by a
-separate standard-library reconstruction.  The
+symbolic quartic and a concrete weighted quintic exactly, verifies the
+optimal `N-3` normalized moment coordinates through degree eight and the
+variable-scale `N-2` bound, and checks the determinantal reciprocal-series
+equations, followed by a separate standard-library reconstruction.  The
 all-order completed-ring and residue proof is
 [`FORMAL_GAUSSIAN_LAGRANGE_LEMMA.md`](extended-geometry/FORMAL_GAUSSIAN_LAGRANGE_LEMMA.md);
 the bounded exact script is explicitly a regression rather than a substitute

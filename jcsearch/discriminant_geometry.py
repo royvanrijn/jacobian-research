@@ -797,15 +797,90 @@ def maximal_two_three_partitions(degree: int):
     These are the minimal elements for ``collision_precedes`` because that
     order points from a finer partition toward a coarser collision.
     """
+    return maximal_threshold_partitions(degree, 2)
+
+
+def maximal_threshold_partitions(degree: int, minimum_multiplicity=2):
+    """Return the atomic threshold-``r`` partitions of ``degree``.
+
+    The atoms of ``{m >= r}`` are ``r,...,2*r-1``.  A partition labels a
+    maximal collision closure precisely when all of its parts are atoms.
+    """
     degree = int(degree)
-    if degree < 2:
+    minimum_multiplicity = int(minimum_multiplicity)
+    atoms = contact_semigroup_atoms(minimum_multiplicity)
+    if degree < minimum_multiplicity:
         return ()
+
     partitions = []
-    for threes in range(degree // 3 + 1):
-        remainder = degree - 3 * threes
-        if remainder % 2 == 0:
-            partitions.append((3,) * threes + (2,) * (remainder // 2))
+
+    def extend(atom_index, remainder, parts):
+        if atom_index == len(atoms):
+            if remainder == 0:
+                partitions.append(tuple(sorted(parts, reverse=True)))
+            return
+        atom = atoms[atom_index]
+        for count in range(remainder // atom + 1):
+            extend(
+                atom_index + 1,
+                remainder - count * atom,
+                parts + (atom,) * count,
+            )
+
+    extend(0, degree, ())
     return tuple(sorted(partitions, reverse=True))
+
+
+def threshold_component_count(degree: int, minimum_multiplicity=2):
+    """Count atomic threshold components by a restricted partition DP."""
+    degree = int(degree)
+    minimum_multiplicity = int(minimum_multiplicity)
+    if degree < 0:
+        raise ValueError("the degree must be nonnegative")
+    atoms = contact_semigroup_atoms(minimum_multiplicity)
+    counts = [1] + [0] * degree
+    for atom in atoms:
+        for total in range(atom, degree + 1):
+            counts[total] += counts[total - atom]
+    return counts[degree]
+
+
+def threshold_dominant_length(degree: int, minimum_multiplicity=2):
+    """Maximum number of parts in an atomic threshold partition.
+
+    For every ``degree >= r`` this is ``floor(degree/r)``: write
+    ``degree=q*r+s`` and absorb ``s<r`` into one of the ``q`` parts.
+    """
+    degree = int(degree)
+    minimum_multiplicity = int(minimum_multiplicity)
+    contact_semigroup_atoms(minimum_multiplicity)  # validate the threshold
+    if degree < minimum_multiplicity:
+        raise ValueError("a full-contact degree must meet the threshold")
+    return degree // minimum_multiplicity
+
+
+def threshold_mason_margin(
+    degree: int, minimum_multiplicity=2, difference_degree=1
+):
+    """Strict abc margin for two threshold-full degree-``n`` polynomials.
+
+    If their nonzero difference has degree at most ``d`` and the three
+    Mason--Stothers terms are pairwise coprime, its radical degree is at most
+    ``2*floor(n/r)+d``.  A positive returned margin is therefore an automatic
+    contradiction.
+    """
+    degree = int(degree)
+    minimum_multiplicity = int(minimum_multiplicity)
+    difference_degree = int(difference_degree)
+    contact_semigroup_atoms(minimum_multiplicity)  # validate the threshold
+    if degree < minimum_multiplicity:
+        raise ValueError("a full-contact degree must meet the threshold")
+    if difference_degree < 0:
+        raise ValueError("the difference-degree bound must be nonnegative")
+    radical_bound_minus_one = (
+        2 * (degree // minimum_multiplicity) + difference_degree - 1
+    )
+    return degree - radical_bound_minus_one
 
 
 def contact_semigroup_atoms(minimum_multiplicity=2):

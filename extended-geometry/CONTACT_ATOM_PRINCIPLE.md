@@ -162,44 +162,21 @@ every pair of distinct full-contact partitions.
 
 ## Threshold-`r` generalization
 
-The atom mechanism is universal, but the particular atoms two and three are
-not.  Suppose a different reconstruction problem allowed only multiplicities
-at least `r`.  Its additive contact semigroup would be
+The universal statement is now the standalone
+[threshold contact-atom theorem schema](THRESHOLD_CONTACT_ATOM_SCHEMA.md).
+It proves, under explicit reconstruction and collision hypotheses, that the
+atoms are `r,...,2r-1`, primitive components are their restricted partitions,
+dominant dimensions are a one-row integer program, component counts and
+codimensions are quasipolynomial, and Mason separation for bounded-degree
+differences is automatic in the precise range
 
 \[
-S_r=\{r,r+1,r+2,\ldots\},
+n-2\left\lfloor n/r\right\rfloor-d+1>0.
 \]
 
-with
-
-\[
-\operatorname{Atoms}(S_r)=\{r,r+1,\ldots,2r-1\}.
-\]
-
-Every `m>=2r` splits as `r+(m-r)`, while no smaller allowed multiplicity can
-split into two parts at least `r`.
-
-ABC separation depends only on radical support.  Two threshold-`r` contact
-polynomials satisfy
-
-\[
-\ell(\lambda)+\ell(\mu)\le {2n\over r}.
-\]
-
-For `r>=3` this is automatically less than `n`.  The present `r=2` theory is
-the critical borderline case: equality in the support bound is possible only
-for the unique all-double type, and the excess calculation separates every
-distinct pair.
-
-The general structural principle is therefore:
-
-> The atoms of the allowed contact semigroup label the primitive collision
-> types; the dimension function selects the dominant ones; and abc rigidity
-> controls whether different types can coexist away from collision.
-
-Turning this principle into a component theorem for another reconstruction
-problem would still require the geometric inputs proved here: nonempty
-incidences, collision deformation, irreducibility, and finite recovery.
+The present note is its `r=2`, affine-difference application.  This is the
+critical borderline case; the excess and square-factorization arguments above
+supply exactly what the abstract support estimate cannot.
 
 ## Executable certificate
 

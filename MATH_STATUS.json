@@ -422,6 +422,25 @@
       "priority": "derived"
     },
     {
+      "id": "RS1",
+      "kind": "corollary",
+      "state": "proved",
+      "title": "Exact real-sheet spectrum",
+      "scope": "For every N >= 3, the explicit rational weighted Keller map F_N realizes exactly the parity-compatible counts N,N-2,...,N mod 2 on nonempty complete regular real target chambers; every count has a rational witness, the minimum is 0 in even degree and 1 in odd degree, and a vertical fold chain realizes every wall crossing.",
+      "canonical_source": "verified/REAL_FIBER_SPECTRUM.md",
+      "dependencies": [
+        "W1",
+        "RF1"
+      ],
+      "checker": "scripts/verify_real_fiber_spectrum.py",
+      "review": "none",
+      "supersedes": [
+        "maximal-real-fiber chamber only"
+      ],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
       "id": "I1",
       "kind": "corollary",
       "state": "proved",
@@ -474,6 +493,22 @@
       "priority": "derived"
     },
     {
+      "id": "CA1",
+      "kind": "corollary",
+      "state": "proved",
+      "title": "Abstract threshold contact-atom schema",
+      "scope": "For every r >= 2, a reconstruction problem satisfying the stated exact-threshold, collision, irreducibility, and finite-recovery hypotheses has primitive components indexed by partitions using r,...,2r-1; dominant dimensions are a one-row integer program, component counts and standard codimensions are quasipolynomial, and bounded-difference Mason separation has an explicit strict range.",
+      "canonical_source": "extended-geometry/THRESHOLD_CONTACT_ATOM_SCHEMA.md",
+      "dependencies": [],
+      "checker": "scripts/verify_contact_atom_principle.py",
+      "review": "none",
+      "supersedes": [
+        "informal threshold-r closing remark"
+      ],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
       "id": "E1",
       "kind": "corollary",
       "state": "proved",
@@ -501,7 +536,8 @@
       "scope": "proved for every normalized exceptional seed locus in characteristic zero: maximal contact types use only multiplicities two and three, the nonsurjective locus has dimension floor(N/2)-1 and codimension floor((N-3)/2), generic quartics are exceptional, and generic seeds are surjective for every N >= 5",
       "canonical_source": "extended-geometry/CONTACT_ATOM_PRINCIPLE.md",
       "dependencies": [
-        "E1"
+        "E1",
+        "CA1"
       ],
       "checker": "scripts/verify_contact_atom_principle.py",
       "review": "none",
@@ -547,11 +583,47 @@
       "priority": "derived"
     },
     {
+      "id": "E5",
+      "kind": "corollary",
+      "state": "proved",
+      "title": "Enumerative skeleton of the nonsurjective locus",
+      "scope": "Every inverse degree N >= 3: period-six component count, refined dimension and codimension series, interval-controlled set-theoretic component intersections, binomial normalization-branch profiles, and the pre-projection coincident-root Chow package; projective normalized-seed closure degrees and scheme intersection multiplicities are explicitly excluded.",
+      "canonical_source": "extended-geometry/NONSURJECTIVE_ENUMERATIVE_GEOMETRY.md",
+      "dependencies": [
+        "E1",
+        "E3"
+      ],
+      "checker": "scripts/verify_nonsurjective_enumerative_geometry.py",
+      "review": "none",
+      "supersedes": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "E6",
+      "kind": "corollary",
+      "state": "proved",
+      "title": "Weighted minimal-intersection partition lattice",
+      "scope": "proved in characteristic zero for every pair of distinct atomic components: the unique minimal common coarsening is 6^t 3^min(b,d) 2^min(a,c), its generic transverse algebra is a product of t dual-number collision blocks and has length 2^t; the complete component-pair and first normalization-self-pair census is recorded through degree twenty",
+      "canonical_source": "extended-geometry/PARTITION_LATTICE_GEOMETRY.md",
+      "dependencies": [
+        "E5",
+        "E3"
+      ],
+      "checker": "scripts/verify_exceptional_partition_lattice.py",
+      "review": "none",
+      "supersedes": [
+        "unweighted common-coarsening intersection census"
+      ],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
       "id": "FF1",
       "kind": "corollary",
       "state": "proved",
-      "title": "Effective finite-field Chebotarev for weighted seeds",
-      "scope": "unconditional for every admissible number-field seed outside its explicit bad ideal; every good reduction retains geometric and arithmetic S_n monodromy",
+      "title": "Effective finite-field Chebotarev and fiber fingerprints",
+      "scope": "unconditional for every admissible number-field seed outside its explicit bad ideal; every good reduction retains geometric and arithmetic S_n monodromy, every prescribed squarefree factorization type occurs above an effective uniform threshold, fixed-point counts satisfy an effective Poisson(1) limit, and a deterministic modular witness generator is provided",
       "canonical_source": "extended-geometry/FINITE_FIELD_CHEBOTAREV.md",
       "dependencies": [
         "W1",
@@ -881,6 +953,25 @@
       "review": "none",
       "supersedes": [
         "bounded Wick-moment evidence for the weighted bridge"
+      ],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "WG2",
+      "kind": "corollary",
+      "state": "proved",
+      "title": "Optimal Gaussian mixed-moment coordinates",
+      "scope": "For fixed nonzero scale, M_3 through M_(N-1) are global triangular coordinates on the normalized degree-N seed slice, so exactly N-3 scalar moments are uniformly and generically minimal; variable scale requires exactly N-2. Fixed-support sparse slices and explicit Toeplitz-Hessenberg moment equations are also proved.",
+      "canonical_source": "extended-geometry/WEIGHTED_GAUSSIAN_BRIDGE.md",
+      "dependencies": [
+        "WG1",
+        "D1"
+      ],
+      "checker": "scripts/verify_gaussian_moment_fingerprint.py",
+      "review": "none",
+      "supersedes": [
+        "N+1 mixed-moment bound on the normalized seed slice"
       ],
       "replaced_by": [],
       "priority": "derived"
@@ -1322,7 +1413,8 @@
       "canonical_source": "extended-geometry/WEIGHTED_GAUSSIAN_BRIDGE.md",
       "dependencies": [
         "GL1",
-        "WG1"
+        "WG1",
+        "WG2"
       ],
       "checker": null,
       "review": "none",

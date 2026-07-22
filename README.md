@@ -6,8 +6,9 @@ develops weighted, cancellation, decorated-normalization, Hurwitz, and
 rank-two symplectic consequences.  In generic degree `N>=4`, the coarse
 decorated normalization already gives an `(N-3)`-dimensional family of stable
 classes.  Adding one affine root sheet generically recovers the seed exactly.
-The same parameters yield finitely fingerprinted four-real-Gaussian witnesses
-and inequivalent filtered Weyl endomorphisms.  The nonsurjective seed locus has
+The same parameters yield four-real-Gaussian witnesses with an optimal
+`(N-3)`-moment algebraic fingerprint and inequivalent filtered Weyl
+endomorphisms.  The nonsurjective seed locus has
 dimension `floor(N/2)-1`: quartics are generically exceptional, whereas
 generic seeds of every degree `N>=5` are surjective.
 The [exact degree-spectrum corollary](verified/GEOMETRIC_DEGREE_SPECTRUM.md)
@@ -71,11 +72,21 @@ gives, for every `N>=3`, a Keller map with a complete fiber of exactly `N`
 distinct rational points and an open real target neighborhood with `N` real
 sheets.  The construction uses explicit integer roots and is uniform in `N`;
 the former computation through degree 100 is retained only as a regression.
+The [real-sheet spectrum theorem](verified/REAL_FIBER_SPECTRUM.md) sharpens
+this to the exact chamber spectrum `N,N-2,...,N mod 2`, proves the minimum is
+zero in even degree and one in odd degree, supplies rational targets for every
+count, and exhibits the full parity chain by successive fold crossings.
 
 The separate [universal weighted-seed theorem](verified/WEIGHTED_SEED_THEOREM.md)
 proves geometric and arithmetic `S_N` monodromy for every polynomial pencil
 `H(W)-sW+t`, hence for every admissible weighted seed; no generic-seed
 hypothesis is present.
+Its [effective finite-field Chebotarev corollary](extended-geometry/FINITE_FIELD_CHEBOTAREV.md)
+realizes every prescribed cycle/factorization type over all sufficiently
+large certified good fields.  It gives the split density `1/N!`, irreducible
+density `1/N`, the random-permutation fixed-point law and its effective
+`Poisson(1)` limit, plus a deterministic generator for modular Keller-fiber
+witnesses and small rational lifts carrying the selected modular fingerprint.
 
 The primary dependency chain is:
 

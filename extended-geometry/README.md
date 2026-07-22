@@ -8,13 +8,17 @@ and external review are recorded only in
 | Results | Primary document |
 |---|---|
 | Generic discriminant geometry | [Generic discriminant curve](GENERIC_DISCRIMINANT_CURVE.md) |
+| Incidence-cover automorphisms | [Hessian-stabilizer classification and Ritt-imprimitive vertical slices](INCIDENCE_COVER_AUTOMORPHISMS.md) |
 | Weighted image and boundary | [Canonical-family image](CANONICAL_FAMILY_IMAGE.md) |
 | Omitted values | [Omitted-value classification](OMITTED_VALUE_CLASSIFICATION.md) |
 | Uniqueness of an omitted pencil value | [Unique omitted-value lemma](UNIQUE_OMITTED_VALUE.md) |
 | Contact strata and exceptional components | [Coincident-root rebuild](COINCIDENT_ROOT_REBUILD.md) |
 | Contact atoms and omitted-value phase diagram | [Contact-atom principle](CONTACT_ATOM_PRINCIPLE.md) |
+| Abstract threshold-`r` contact atoms, integer optimization, quasipolynomials, and application audit | [Threshold contact-atom theorem schema](THRESHOLD_CONTACT_ATOM_SCHEMA.md) |
 | Component normalizations | [Component normalization](COMPONENT_NORMALIZATION.md) |
+| Enumerative nonsurjective geometry | [Component counts, intersection series, branch profiles, and the projective-degree correction problem](NONSURJECTIVE_ENUMERATIVE_GEOMETRY.md) |
 | Degree-twelve local singularity | [Local singularity](DEGREE12_LOCAL_SINGULARITY.md) |
+| Weighted exceptional partition lattice | [Minimal common coarsenings, universal collision weights, and the degree-twenty census](PARTITION_LATTICE_GEOMETRY.md) |
 | Degree-eighteen triple intersection | [Three-sheet transverse gluing and the remaining conductor equalizer](DEGREE18_TRIPLE_INTERSECTION.md) |
 | Finite-field Chebotarev | [Effective theorem](FINITE_FIELD_CHEBOTAREV.md) |
 | Explicit quartic model | [Quartic weighted geometry](QUARTIC_WEIGHTED_GEOMETRY.md) |
@@ -32,7 +36,7 @@ and external review are recorded only in
 | Fixed-dimensional `GMC(2r) -> SIC(r) ->` cubic-Keller invertibility route | [Gaussian contraction, countable-union lemma, and formal inversion](FIXED_GMC_SIC_PROOF.md) |
 | Direct Image and Vanishing counterexamples | [`not SIC(20)`, generalized Laplacian and nonhomogeneous HN-VC failures in 40 variables, classical homogeneous quartic HN-VC failure in 42, and an all-order inverse recurrence](IMAGE_VANISHING_COUNTEREXAMPLES.md) |
 | Formal Gaussian--Lagrange lemma | [Constant-term-safe completed-ring, residue, determinant, and Wick proof](FORMAL_GAUSSIAN_LAGRANGE_LEMMA.md) |
-| Weighted-seed Gaussian bridge | [Uniform four-real-Gaussian witnesses, exact inverse-pencil branches, and finite `(N+1)`-moment fingerprints for `(N-3)`-dimensional families](WEIGHTED_GAUSSIAN_BRIDGE.md) |
+| Weighted-seed Gaussian bridge | [Uniform four-real-Gaussian witnesses, exact inverse-pencil branches, and optimal `(N-3)`-moment coordinates for normalized degree-`N` families](WEIGHTED_GAUSSIAN_BRIDGE.md) |
 | Weighted invariant-coordinate Jacobian reduction | [General weight-`(1,-1,-k)` determinant lemma reducing Keller equations to two invariant variables](WEIGHTED_INVARIANT_JACOBIAN_REDUCTION.md) |
 | Weighted tangent suspension and plane Poisson square | [Plane-core determinant rearrangement, explicit foundational pair, tangent-pencil identification, and weighted-Wronskian cascade](WEIGHTED_TANGENT_SUSPENSION.md) |
 | Foundational weighted coefficient scheme | [Exact sixteen-monomial rigidity, dual-number tangent, Wronskian obstruction, and complete two-component boundary decomposition](FOUNDATIONAL_WEIGHTED_COEFFICIENT_SCHEME.md) |

@@ -7,6 +7,8 @@
 \newtheorem{proposition}[theorem]{Proposition}
 \newtheorem{lemma}[theorem]{Lemma}
 \newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
 \newcommand{\A}{\mathbb A}
 \newcommand{\Pone}{\mathbb P^1}
 
@@ -32,6 +34,11 @@ same open set meets a natural normalized endpoint slice in every degree.
 The proof uses contact factorizations and dimension estimates; the genus
 formula is used only after all possible singularity types have been
 excluded.
+Over the reals we also prove a complementary chamber theorem: if one member
+of the pencil has $n$ simple real roots, then its chambers realize exactly
+$n,n-2,\ldots,n\bmod2$ real roots.  A single generic vertical line meets
+these chambers successively across ordinary folds, and rational input data
+admit rational witnesses in every chamber.
 \end{abstract}
 
 \section{Introduction}
@@ -296,6 +303,83 @@ Thus
 \]
 The genus formula counts the nodes left after the geometric exclusion; it is
 not used to infer that unclassified singularities must be nodes.
+
+\section{The real chamber spectrum}
+
+We finish with a real statement which does not require the genericity open
+$\mathcal U_n$.  Let
+\[
+ U_H(\mathbb R)=
+ \{(s,t)\in\mathbb R^2:\operatorname{Disc}_W(H(W)-sW+t)\ne0\}.
+\]
+The number of real roots is locally constant there and hence constant on
+each chamber.
+
+\begin{theorem}\label{thm:real-spectrum}
+Let $H\in\mathbb R[W]$ have degree $n\ge2$.  If some member of
+$H(W)-sW+t$ has $n$ distinct real roots, then the real-root counts occurring
+on the chambers of $U_H(\mathbb R)$ are exactly
+\[
+ n,n-2,n-4,\ldots,n\bmod2.                               \tag{7.1}
+\]
+Arbitrarily close to the slope of the split member there is one vertical
+line in the $(s,t)$-plane which encounters all these counts successively,
+with each consecutive pair separated by one smooth fold.  If $H$ and the
+split member are defined over $\mathbb Q$, that slope and a point in every
+chamber in this chain may be chosen rational.
+\end{theorem}
+
+\begin{proof}
+Complex conjugation pairs the nonreal roots of every squarefree real member,
+so a real-root count $r$ necessarily satisfies $0\le r\le n$ and
+$r\equiv n\pmod2$.
+
+After translating $t$, suppose the split member occurs at $(s_0,0)$ and put
+$P_s(W)=H(W)-sW$.  Having $n$ simple real roots is open in $s$.  In a small
+interval about $s_0$, avoid the slopes $H'(u)$ with $H''(u)=0$ and the slopes
+at which two distinct critical points have equal critical values.  The first
+set is finite.  The second is finite as well: equal critical values are
+distinct normalization points with the same image under
+\[
+ u\longmapsto\bigl(H'(u),uH'(u)-H(u)\bigr),              \tag{7.2}
+\]
+and the finite birational normalization map (7.2) is one-to-one away from
+finitely many points.  Denote a remaining slope by $s_1$.  Rolle's theorem
+shows that $P_{s_1}$ has exactly $n-1$ real critical points; they are
+nondegenerate and their critical values are pairwise distinct.
+
+Let $a$ be the leading coefficient of $H$ and $d=\operatorname{sign}(a)$.
+For $q\ge0$ consider
+\[
+ P_{s_1}(W)+dq.                                          \tag{7.3}
+\]
+After multiplying by $-1$ if necessary, the leading coefficient is positive
+and (7.3) raises the polynomial through its negative local minima.  Because
+$P_{s_1}$ has $n$ simple real zeros, every local minimum is negative and
+every local maximum is positive.  The relevant critical levels are positive
+and distinct.  Crossing each one annihilates precisely two real roots.  For
+large $q$ there are no real roots in even degree and one in odd degree.
+This gives every count in (7.1) in order, and the nondegenerate critical
+points give smooth folds.
+
+For rational data, the split-root condition holds on a real interval of
+slopes.  The finitely many excluded slopes leave a rational $s_1$.  The
+successive critical levels are distinct real algebraic numbers, so every
+open interval between them contains a rational $q$.  Equation (7.3) then
+gives the asserted rational witnesses.
+\end{proof}
+
+\begin{remark}[Exact chamber graph]
+For a fixed $H\in\mathbb Q[W]$, the entire adjacency graph is algorithmic.
+Form $D_H(s,t)=\operatorname{Disc}_W(H(W)-sW+t)$ and perform cylindrical
+algebraic decomposition with the leading coefficients and
+$\operatorname{Disc}_t(D_H)$ among the projection polynomials.  Between
+successive event slopes, exact real-root isolation orders the critical
+$t$-values and Sturm counting labels every band.  Gluing across the event
+fibers gives the dual chamber graph.  Theorem~\ref{thm:real-spectrum}
+extracts from it the universal path (7.1); additional same-count chambers
+and node-induced adjacencies remain seed-dependent.
+\end{remark}
 
 \section*{References}
 

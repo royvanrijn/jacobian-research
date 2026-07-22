@@ -248,6 +248,84 @@ For witness generation one may simply take `C=1`: a pencil witness `(s,t)`
 becomes the Keller target `(A,B,C)=(t/c,s,1)`.  Random search has asymptotic
 success probability `1/z_lambda`.
 
+### Headline densities and the Poisson limit
+
+The two extreme partitions give especially compact corollaries.  If
+`T_split(q)` counts completely split squarefree pencils and `T_irr(q)` counts
+irreducible pencils, then
+
+\[
+ \left|T_{\rm split}(q)-{q^2\over n!}\right|\le {L_n(q)\over n!},
+ \qquad
+ \left|T_{\rm irr}(q)-{q^2\over n}\right|\le {L_n(q)\over n}.   \tag{12d}
+\]
+
+Thus completely split fibers have limiting density `1/n!`, irreducible
+fibers have limiting density `1/n`, and fibers with exactly `j` rational
+points have limiting density
+
+\[
+ p_{n,j}={1\over j!}\sum_{i=0}^{n-j}{(-1)^i\over i!}.           \tag{12e}
+\]
+
+The latter is the fixed-point law of a uniform random permutation in `S_n`.
+The alternating-series estimate makes the Poisson statement effective:
+
+\[
+ \left|{C_j(q)\over q^2}-{e^{-1}\over j!}\right|
+ \le {L_n(q)\over q^2}+{1\over j!(n-j+1)!},\qquad 0\le j\le n. \tag{12f}
+\]
+
+Consequently, first letting a certified good `q` tend to infinity and then
+letting `n` tend to infinity, the number of rational preimages converges in
+law to `Poisson(1)`.  The same conclusion holds along any degree-dependent
+sequence of good fields for which `L_n(q)/q^2 -> 0`.  For the full Keller
+map, (17) below gives the identical limit after the explicitly separated
+discriminant and `C=0` terms.
+
+In particular, for every admissible number-field seed, every partition
+`lambda` of `n`, and every good residue field satisfying
+
+\[
+ q>6\delta_n^2,\qquad q^2>L_n(q),                              \tag{12g}
+\]
+
+there is a target whose inverse polynomial has squarefree factorization type
+`lambda`.  This is the promised effective "sufficiently large": both
+inequalities are decidable from `n`, and (5) decides whether the field is
+good.  Notice that the threshold is uniform in the seed; it is deliberately
+much coarser than actual searches.
+
+### Deterministic witnesses and small lifts
+
+The module `jcsearch.chebotarev` now exposes
+
+```python
+find_pencil_factorization_witness(H, W, q, cycle_type)
+```
+
+for prime fields.  It enumerates `(s,t)` lexicographically, rejects the
+discriminant, factors `H(W)-sW+t`, and returns the first requested cycle type,
+together with least-absolute integer representatives.  The command-line
+front end can request selected types or all partitions:
+
+```bash
+python scripts/generate_finite_field_fiber_witnesses.py \
+  --degree 5 --prime 31 --cycle-type 5 --cycle-type 2,2,1
+```
+
+For a general rational seed, replace `--degree 5` by, for example,
+`--polynomial 'w**4-w**5'`.  The output includes the finite-field factors,
+the lifted polynomial, and the rational Keller target `(t/c,s,1)`.
+
+The word *lift* here is arithmetic, not an assertion that factorization over
+`Q` equals factorization over `F_q`.  The small rational polynomial reduces
+to the selected Frobenius fingerprint.  An `n`-cycle does additionally prove
+that the lifted polynomial is irreducible over `Q`; general modular cycle
+types constrain rational factors but need not reproduce them.  Hensel lifting
+reproduces the factors over `Q_q`, while an exact prescribed factorization
+over `Q` requires a separate specialization argument or direct check.
+
 ## 5. Exact discriminant and `C=0` contributions
 
 Let `D_j(q)` count points on `V(Delta_H)(F_q)` for which `E` has exactly `j`
@@ -318,11 +396,38 @@ from the exact incidence identity
 after transfer to `C!=0`, (15) supplies precisely the missing boundary
 incidence and gives `q^3` source points in total.
 
+### Stable finite-field fingerprints
+
+For an etale quasi-finite polynomial map `F:A^d->A^d` over a finite field,
+record for every squarefree residue-degree partition `lambda` the number of
+targets having that fiber type, together with a bin for empty fibers.  This
+full target histogram is unchanged by left-right polynomial equivalence:
+source and target automorphisms merely relabel the two finite sets.  More
+generally one can add ramified and nonfinite bins for generically finite maps.
+After
+stabilization by `id_(A^r)`, every bin is multiplied by `q^r`; hence the
+normalized histogram obtained by dividing by `q^d` is a stable invariant.
+
+This gives a compact computational obstruction for integral models, and for
+rational models at every prime where a proposed equivalence and its inverse
+have good reduction.  A mismatch at such a prime disproves that equivalence.
+Without control of its denominators, one mismatching prime cannot by itself
+disprove an arbitrary rational equivalence, since that prime might be
+exceptional; a discrepancy persisting at infinitely many good primes can.
+
+Two cautions are important here.  First, the universal `S_n` leading term is
+the same for all degree-`n` weighted seeds, so discrimination can only occur
+in the exact lower-order histogram, not in the densities (12a)--(12f).
+Second, the fast `C=1` pencil histogram is a useful screening signature but
+is not invariant under an arbitrary target automorphism.  The full target
+histogram is the invariant object.
+
 Run
 
 ```bash
 python scripts/verify_effective_chebotarev.py
 python scripts/verify_weighted_chebotarev.py
+python scripts/generate_finite_field_fiber_witnesses.py --degree 4 --prime 31
 ```
 
 The first script computes certificate integers and discriminant degrees for

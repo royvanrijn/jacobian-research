@@ -13,8 +13,12 @@ from jcsearch.chebotarev import (  # noqa: E402
     cycle_type_centralizer_size,
     cycle_type_probability,
     derangement_count,
+    factorization_type_mod_prime,
+    find_pencil_factorization_witness,
     fixed_point_count,
     fixed_point_distribution,
+    integer_partitions,
+    pencil_factorization_histogram,
     pencil_simple_root_histogram,
 )
 from jcsearch.weighted import (  # noqa: E402
@@ -25,18 +29,7 @@ from jcsearch.weighted import (  # noqa: E402
 )
 
 
-# Exact symmetric-group combinatorics and factorial moments.
-def integer_partitions(total, largest=None):
-    if total == 0:
-        yield ()
-        return
-    if largest is None or largest > total:
-        largest = total
-    for part in range(largest, 0, -1):
-        for tail in integer_partitions(total - part, part):
-            yield (part,) + tail
-
-
+# Exact symmetric-group combinatorics, factorial moments, and Poisson truncation.
 for n in range(3, 9):
     distribution = fixed_point_distribution(n)
     assert sum(distribution.values(), Fraction()) == 1
@@ -66,6 +59,12 @@ for n in range(3, 9):
         by_fixed_points[fixed] = by_fixed_points.get(fixed, Fraction()) + probability
     assert total_cycle_probability == 1
     assert by_fixed_points == distribution
+    for fixed, probability in distribution.items():
+        truncated_poisson = Fraction(1, math.factorial(fixed)) * sum(
+            (Fraction(-1) ** index) / math.factorial(index)
+            for index in range(n - fixed + 1)
+        )
+        assert probability == truncated_poisson
 
 # The original limiting law is exactly the S_3 fixed-point distribution.
 assert fixed_point_distribution(3) == {
@@ -102,7 +101,30 @@ for label, model in models:
     scaled = discrepancy / prime ** Fraction(3, 2)
     print(f"PASS {label} over F_{prime}: max discrepancy/q^(3/2)={float(scaled):.4f}")
 
+# The deterministic cycle-type generator finds every partition in one audited
+# good field, and its balanced integer output reduces to the requested type.
+quartic = models[1][1]
+factorization_histogram = pencil_factorization_histogram(
+    quartic.primitive, w, prime
+)
+assert sum(factorization_histogram.values()) == prime**2
+for partition in integer_partitions(quartic.fiber_degree):
+    assert factorization_histogram.get(partition, 0) > 0
+    witness = find_pencil_factorization_witness(
+        quartic.primitive, w, prime, partition
+    )
+    assert witness is not None
+    assert factorization_type_mod_prime(
+        quartic.primitive,
+        w,
+        witness["lifted_slope"],
+        witness["lifted_intercept"],
+        prime,
+    ) == partition
+
 print("PASS: S_n fixed-point probabilities and factorial moments are exact")
 print("PASS: conjugacy-class probabilities 1/z_lambda refine the fixed-point law")
+print("PASS: fixed-point probabilities are the truncated Poisson(1) law")
 print("PASS: simple-root incidence is q(q-1) in every audited inverse pencil")
 print("PASS: finite samples align with the proved Chebotarev scaling")
+print("PASS: every degree-four cycle type has a generated modular/integer witness")

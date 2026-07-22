@@ -134,6 +134,20 @@ def cycle_type_probability(parts) -> Fraction:
     return Fraction(1, cycle_type_centralizer_size(parts))
 
 
+def integer_partitions(total: int, largest: int | None = None):
+    """Yield partitions of ``total`` as nonincreasing tuples."""
+    if total < 0:
+        raise ValueError("total must be nonnegative")
+    if total == 0:
+        yield ()
+        return
+    if largest is None or largest > total:
+        largest = total
+    for part in range(largest, 0, -1):
+        for tail in integer_partitions(total - part, part):
+            yield (part,) + tail
+
+
 def _coefficients_mod(polynomial, variable, prime):
     coefficients = {}
     for (exponent,), coefficient in sp.Poly(polynomial, variable).terms():
@@ -151,6 +165,102 @@ def _evaluate_mod(coefficients, value, prime):
         coefficient * pow(value, exponent, prime)
         for exponent, coefficient in coefficients.items()
     ) % prime
+
+
+def _pencil_mod_prime(primitive, variable, slope: int, intercept: int, prime: int):
+    """Construct ``H-sW+t`` over ``F_prime``, including rational inputs."""
+    if not sp.isprime(prime):
+        raise ValueError("the diagnostic routines currently expect a prime field")
+    H = sp.Poly(primitive, variable)
+    coefficients = _coefficients_mod(H.as_expr(), variable, prime)
+    if not coefficients or max(coefficients) != H.degree():
+        raise ValueError(f"inverse degree drops modulo {prime}")
+    coefficients[1] = (coefficients.get(1, 0) - int(slope)) % prime
+    coefficients[0] = (coefficients.get(0, 0) + int(intercept)) % prime
+    expression = sum(
+        coefficient * variable**exponent
+        for exponent, coefficient in coefficients.items()
+    )
+    return sp.Poly(expression, variable, modulus=prime)
+
+
+def factorization_type_mod_prime(
+    primitive, variable, slope: int, intercept: int, prime: int
+) -> tuple[int, ...] | None:
+    """Return the squarefree factor-degree partition of ``H-sW+t``.
+
+    ``None`` records a discriminant point (at least one repeated factor).
+    """
+    polynomial = _pencil_mod_prime(primitive, variable, slope, intercept, prime)
+    factors = polynomial.factor_list()[1]
+    if any(multiplicity != 1 for _, multiplicity in factors):
+        return None
+    return tuple(sorted((factor.degree() for factor, _ in factors), reverse=True))
+
+
+def pencil_factorization_histogram(primitive, variable, prime: int):
+    """Count every squarefree cycle type and the ramified locus over ``F_p``."""
+    histogram = Counter()
+    for slope in range(prime):
+        for intercept in range(prime):
+            cycle_type = factorization_type_mod_prime(
+                primitive, variable, slope, intercept, prime
+            )
+            histogram[cycle_type] += 1
+    return dict(histogram)
+
+
+def balanced_residue(value: int, prime: int) -> int:
+    """Return the least-absolute integer representative modulo ``prime``."""
+    residue = int(value) % prime
+    return residue - prime if residue > prime // 2 else residue
+
+
+def find_pencil_factorization_witness(
+    primitive, variable, prime: int, cycle_type
+):
+    """Find a deterministic finite-field witness for a prescribed cycle type.
+
+    The returned integer lift preserves the factorization fingerprint modulo
+    ``prime``.  It does not in general preserve factorization over Q.
+    """
+    H = sp.Poly(primitive, variable)
+    requested = tuple(sorted((int(part) for part in cycle_type), reverse=True))
+    if not requested or any(part < 1 for part in requested):
+        raise ValueError("cycle_type must be a nonempty partition")
+    if sum(requested) != H.degree():
+        raise ValueError(f"cycle_type must partition the inverse degree {H.degree()}")
+
+    for slope in range(prime):
+        for intercept in range(prime):
+            if factorization_type_mod_prime(
+                H.as_expr(), variable, slope, intercept, prime
+            ) != requested:
+                continue
+            polynomial = _pencil_mod_prime(
+                H.as_expr(), variable, slope, intercept, prime
+            )
+            unit, factor_data = polynomial.factor_list()
+            factors = tuple(
+                sp.Poly(factor, variable, modulus=prime).as_expr()
+                for factor, _ in factor_data
+            )
+            lifted_slope = balanced_residue(slope, prime)
+            lifted_intercept = balanced_residue(intercept, prime)
+            return {
+                "prime": prime,
+                "cycle_type": requested,
+                "slope": slope,
+                "intercept": intercept,
+                "factorization_unit": int(unit) % prime,
+                "factors": factors,
+                "lifted_slope": lifted_slope,
+                "lifted_intercept": lifted_intercept,
+                "lifted_polynomial": sp.expand(
+                    H.as_expr() - lifted_slope * variable + lifted_intercept
+                ),
+            }
+    return None
 
 
 def pencil_simple_root_histogram(primitive, variable, prime: int) -> dict[int, int]:

@@ -55,6 +55,7 @@ verify-theorems:
 	$(PYTHON) scripts/verify_weighted_seed_schema.py
 	$(PYTHON) scripts/verify_weighted_seed_theorem.py
 	$(PYTHON) scripts/verify_all_degree_rational_fibers.py
+	$(PYTHON) scripts/verify_real_fiber_spectrum.py
 	$(PYTHON) scripts/verify_weighted_marked_root_model.py
 	$(SYSTEM_PYTHON) scripts/audit_weighted_independent.py
 	$(PYTHON) scripts/verify_universal_discriminant_incidences.py
@@ -64,8 +65,10 @@ verify-theorems:
 	$(PYTHON) scripts/verify_contact_atom_principle.py
 	$(PYTHON) scripts/verify_unique_omitted_value.py
 	$(PYTHON) scripts/verify_component_normalization.py
+	$(PYTHON) scripts/verify_nonsurjective_enumerative_geometry.py
 	$(PYTHON) scripts/verify_degree12_branch_intersection.py
 	$(SYSTEM_PYTHON) scripts/audit_degree_twelve_independent.py
+	$(PYTHON) scripts/verify_exceptional_partition_lattice.py
 	$(PYTHON) scripts/verify_degree18_triple_intersection.py
 	$(PYTHON) scripts/verify_dicritical_divisors.py
 	$(PYTHON) scripts/verify_dicritical_blowup_geometry.py
@@ -188,6 +191,7 @@ verify-foundations: verify-core
 	$(PYTHON) scripts/verify_weighted_seed_schema.py
 	$(PYTHON) scripts/verify_weighted_seed_theorem.py
 	$(PYTHON) scripts/verify_all_degree_rational_fibers.py
+	$(PYTHON) scripts/verify_real_fiber_spectrum.py
 	$(PYTHON) scripts/verify_weighted_marked_root_model.py
 	$(SYSTEM_PYTHON) scripts/audit_weighted_independent.py
 

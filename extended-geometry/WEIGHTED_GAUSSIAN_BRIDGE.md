@@ -321,12 +321,163 @@ normalized admissible seed locus, however, `H'(1)=-1`, and therefore
 Thus the map `(H,lambda) -> (M_m)_(m>=0)` is injective on normalized seeds
 with `lambda!=0`.
 
+The bound (6.4) treats all coefficients of an arbitrary polynomial `h` as
+independent.  It is not minimal on the normalized seed slice.  The endpoint
+conditions remove exactly two more coefficients, and the moment map itself
+is triangular.
+
+### Theorem 6.2 — optimal moment coordinates on the normalized seed space
+
+Fix `N>=4` and `lambda!=0`, and write
+
+\[
+ H(z)=\sum_{j=2}^N c_jz^j,\qquad
+ h(z)=1+\lambda H(z)=1+\sum_{j=1}^N a_jz^j.          \tag{6.6}
+\]
+
+On the normalized degree-`N` slice
+
+\[
+ H(0)=H'(0)=H(1)=0,\qquad H'(1)=-1,                 \tag{6.7}
+\]
+
+the `N-3` mixed moments
+
+\[
+ \boxed{M_3,M_4,\ldots,M_{N-1}}                    \tag{6.8}
+\]
+
+recover `H` uniformly.  More precisely, after factorial normalization
+`mu_m=M_m/m!`,
+
+\[
+ \mu_{j+1}
+ =\frac1{j+1}[z^j]h(z)^{j+1}
+ =a_j+F_j(a_1,\ldots,a_{j-1}),                     \tag{6.9}
+\]
+
+where `F_j` is a universal polynomial.  Since `a_1=0`, the coordinates
+`mu_3,...,mu_(N-1)` recover successively
+`a_2,...,a_(N-2)`, hence `c_2,...,c_(N-2)`.  Put
+
+\[
+ A=-\sum_{j=2}^{N-2}c_j,
+ \qquad B=-1-\sum_{j=2}^{N-2}j c_j.                \tag{6.10}
+\]
+
+The two endpoint equations then give
+
+\[
+ c_{N-1}=NA-B,\qquad c_N=B-(N-1)A.                 \tag{6.11}
+\]
+
+Thus (6.8) is a global polynomial coordinate system on the ambient
+normalized affine slice.  Its Jacobian with respect to
+`c_2,...,c_(N-2)` is triangular with determinant
+
+\[
+ \lambda^{N-3}                                     \tag{6.12}
+\]
+
+for the factorial-normalized moments, or a nonzero constant multiple of
+this for the raw moments.  It restricts to a biregular coordinate chart on
+the open degree-`N` admissible locus, including every ordinary
+boundary-clean open used in the decorated-normalization theorem.
+
+This number of scalar algebraic observations is optimal both generically
+and uniformly.  Indeed, the normalized seed space has dimension `N-3`.  If
+any `r` mixed moments—or any `r` algebraic scalar functions at all—gave a
+generically injective rational map to affine `r`-space, the image would have
+dimension `N-3`, forcing `r>=N-3`.  Uniform injectivity implies generic
+injectivity, while (6.8) attains equality uniformly.
+
+If `lambda` is allowed to vary, the parameter space has dimension `N-2` and
+the optimal uniform list is
+
+\[
+ M_3,M_4,\ldots,M_N.                               \tag{6.13}
+\]
+
+These moments first recover `a_2,...,a_(N-1)`; the equation `h(1)=1`
+recovers `a_N`, after which
+`lambda=-h'(1)` and `H=(h-1)/lambda`.  The same dimension argument proves
+minimality on the locus `lambda!=0`.
+
+### Moment-image equations, sparse slices, and Padé form
+
+The triangular inverse in (6.9) also gives explicit equations for the
+nonminimal fingerprint.  Let
+
+\[
+ a_j=A_j(\mu_2,\ldots,\mu_{j+1})                   \tag{6.14}
+\]
+
+be the recursively recovered coefficient.  Inside the full jet space with
+coordinates `mu_2,...,mu_(N+1)`, the fixed-`lambda` normalized fingerprints
+are cut out by
+
+\[
+ A_1=0,\qquad \sum_{j=1}^N A_j=0,
+ \qquad \sum_{j=1}^N jA_j=-\lambda,                \tag{6.15}
+\]
+
+together with the open conditions expressing exact degree and whatever
+admissibility open is desired.  After projection to the minimal coordinates
+(6.8), there are no residual closed equations: the ambient normalized slice
+is affine `(N-3)`-space and admissibility only removes closed subsets.
+
+There is also a determinantal presentation of the infinite degree bound.
+Write
+
+\[
+ \eta=g^{\langle-1\rangle},\qquad
+ e(z)=\frac{\eta(z)}z=\sum_{n\ge0}e_nz^n=\frac1{h(z)}.            \tag{6.16}
+\]
+
+For `n>=1`, set
+
+\[
+ T_n(e)=
+ \begin{pmatrix}
+ e_1&1&0&\cdots&0\\
+ e_2&e_1&1&\ddots&\vdots\\
+ \vdots&\vdots&\ddots&\ddots&0\\
+ e_{n-1}&e_{n-2}&\cdots&e_1&1\\
+ e_n&e_{n-1}&\cdots&e_2&e_1
+ \end{pmatrix}.                                    \tag{6.17}
+\]
+
+The reciprocal-series identity gives
+
+\[
+ [z^n]\frac1{e(z)}=(-1)^n\det T_n(e)=a_n.          \tag{6.18}
+\]
+
+Consequently the moment sequence comes from a polynomial `h` of degree at
+most `N` exactly when these Toeplitz--Hessenberg determinants vanish for all
+`n>N`.  Equivalently, `e=1/h` satisfies the order-`N` constant-coefficient
+recurrence determined by `h`, so its infinite Hankel matrix has rank at most
+`N`.  This is the natural Padé/Prony avatar of the bridge.  It is useful when
+the degree is unknown or moments are supplied as a long sequence; for known
+normalized degree, the triangular coordinates (6.8) are strictly smaller.
+
+Finally, if the coefficient support `S subset {2,...,N}` is known in advance,
+has size `s`, and contains at least two indices, the corresponding normalized
+slice has dimension `s-2`.  Order the support and use the moments
+`M_(j+1)` for all but its two largest indices.  Triangular recovery finds the
+earlier supported coefficients (the gaps are known zeros), and the two
+endpoint equations recover the last two.  Hence `s-2` moments are again
+uniformly sufficient and dimensionally minimal on every fixed-support
+slice.  Recovering an *unknown* support uniformly is a separate sparse
+identification problem; the fixed-support statement does not silently assume
+that combinatorial step.
+
 This is an injective realization at the level of exact moment sequences.  It
 does not assert that the resulting polynomial pairs are inequivalent under
 arbitrary transformations of the Gaussian variables or under any broader
 notion of Gaussian-witness equivalence.
 
-### Corollary 6.2 — finite Gaussian fingerprints in positive-dimensional families
+### Corollary 6.3 — minimal Gaussian fingerprints in positive-dimensional families
 
 Fix `N>=4` and `lambda!=0`.  On the normalized admissible degree-`N` seed
 space, the bridge is an algebraic family of explicit `GMC(4)` witnesses, and
@@ -334,12 +485,12 @@ the finite moment vector
 
 \[
  \mathfrak f_N(H)=
- \bigl(M_1(H,\lambda),\ldots,M_{N+1}(H,\lambda)\bigr)             \tag{6.6}
+ \bigl(M_3(H,\lambda),\ldots,M_{N-1}(H,\lambda)\bigr)             \tag{6.19}
 \]
 
-is injective.  Indeed, `h=1+lambda H` has degree `N`, so the finite recovery
-statement (6.4) reconstructs `h` and fixed `lambda` then reconstructs `H`.
-Each entry of (6.6) is polynomial in the coefficients of `H`, by (1.6).
+is injective and has the smallest possible number `N-3` of scalar algebraic
+coordinates.  This is Theorem 6.2.  Each entry of (6.19) is polynomial in the
+coefficients of `H`, by (1.6).
 
 The decorated-normalization theorem supplies a nonempty ordinary
 boundary-clean seed open whose stable-moduli image has dimension `N-3`.
@@ -347,17 +498,18 @@ Restricting the bridge to that open therefore gives
 
 \[
  \boxed{\text{an explicit algebraic }(N-3)\text{-dimensional family of
- four-real-Gaussian GMC witnesses separated by }N+1\text{ mixed moments}.}
-                                                               \tag{6.7}
+ four-real-Gaussian GMC witnesses separated optimally by }N-3
+ \text{ mixed moments}.}                                      \tag{6.20}
 \]
 
-The separation in (6.7) is separation of the seed parameters by a finite
+The separation in (6.20) is separation of the seed parameters by a finite
 observable vector.  It is deliberately not phrased as inequivalence of the
 Gaussian polynomial pairs under an unspecified transformation group.
 Christopher D. Long's direct witness uses three real Gaussian variables and
-is therefore dimensionally smaller.  The point of (6.7) is instead the
-positive-dimensional, finitely fingerprinted family; no smallest-dimension
-claim is made here.
+is therefore dimensionally smaller.  The point of (6.20) is instead the
+positive-dimensional, finitely fingerprinted family; the optimality claim
+concerns the number of scalar algebraic moment coordinates, not the number of
+underlying Gaussian variables.
 
 ## 7. Three-real-variable obstruction through quadratic real chaos
 
@@ -449,9 +601,11 @@ verifies:
 - the original half-pair divisibility regression for the audited nonlinear
   seeds (now subsumed by the all-nonlinear proof in Section 7).
 
-The fingerprint checker directly reconstructs a symbolic quartic `h`
-from `M_1,...,M_5` by exact compositional reversion and also audits a concrete
-degree-five instance.
+The fingerprint checker directly reconstructs a symbolic quartic `h` by
+exact compositional reversion and audits a concrete degree-five instance.  It
+then verifies the optimal normalized coordinates `M_3,...,M_(N-1)` and their
+Jacobian in degrees four through eight, the variable-scale `N-2` bound, and
+the Toeplitz--Hessenberg determinant equations.
 
 The three-real search checker constructs exact pure- and mixed-moment ideals
 for finite polynomial supports involving `(Z,W,T)`.  Its unit-ideal results

@@ -22,6 +22,9 @@ This directory contains the stable proof chain:
 - [All-degree rational fibers](ALL_DEGREE_RATIONAL_FIBERS.md): explicit
   integer-root seeds giving a complete regular `N`-point rational fiber and
   `N` nearby real sheets for every `N>=3`.
+- [Exact real-sheet spectrum](REAL_FIBER_SPECTRUM.md): every count
+  `N,N-2,...,N mod 2` occurs on a nonempty complete regular real target
+  chamber, with rational witnesses and an explicit fold-adjacency chain.
 - [Exact geometric-degree spectrum](GEOMETRIC_DEGREE_SPECTRUM.md): the
   spectrum `3,4,5,...` for noninvertible Keller maps of complex affine
   three-space and its stable left--right degree separation.

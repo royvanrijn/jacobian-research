@@ -410,10 +410,12 @@ arbitrary JC(2) counterexamples.
    is the priority target for external specialist review.  Determine when two
    resulting pairs are equivalent and whether a different correction can
    descend uniformly to three real variables.  The raw mixed-moment question
-   is now settled internally: for a degree-`N` seed the first `N+1` mixed
-   moments recover `1+lambda*H` exactly—and on `H'(1)=-1` recover both
-   `lambda` and `H`.  Thus the bridge gives an explicit algebraic
-   `(N-3)`-dimensional family separated by finite moment vectors.  Long's
+   is now settled internally: for fixed nonzero `lambda`, the `N-3` moments
+   `M_3,...,M_(N-1)` recover every normalized degree-`N` seed uniformly and
+   are minimal by dimension.  If `lambda` varies, `M_3,...,M_N` are the
+   optimal `N-2` coordinates and recover both `lambda` and `H`.  Thus the
+   bridge gives an explicit algebraic `(N-3)`-dimensional family separated by
+   a smallest possible algebraic moment vector.  Long's
    three-real-variable witness remains dimensionally smaller; the family and
    its finite fingerprints, not smallest dimension, are the point here.  This
    does not yet imply inequivalence under transformations of Gaussian
