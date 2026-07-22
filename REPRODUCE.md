@@ -85,11 +85,18 @@ moments for canonical and split seeds, followed by a separate standard-library
 reconstruction.  These checks are part of
 `verify-regressions`, not `verify-minimal`.
 
-The same target runs the rank-two Poisson **pre-audit**.  It verifies that the
+The same target runs the rank-two Poisson pre-audit and the independent
+completion certificate.  The first verifies that the
 single displayed output `R=x(2-3xq)` is exactly the foundational third output
 after a polynomial source automorphism, and proves that the naive choices
-`S=F_1/2`, `T=F_2` have no polynomial `D`-completion.  It does not reconstruct
-or certify the unavailable manuscript formulas.
+`S=F_1/2`, `T=F_2` have no polynomial `D`-completion.  The second derives the
+pole-cancelling shear `Z -> Z-9Q^2`, constructs exact polynomial `T,D,S`,
+checks all six brackets and determinant one, and transports the complete
+three-point fiber.  A dependency-free sparse-polynomial implementation then
+rebuilds the formulas and separately checks all six brackets, the determinant,
+term counts, and collision.  This proves a repository rank-two Poisson
+theorem; it does not assert that these are the unavailable manuscript's
+formulas.
 
 The generated certificate is stored as
 [`artifacts/generated-results/long_bcw_79_counterexample.json`](artifacts/generated-results/long_bcw_79_counterexample.json).

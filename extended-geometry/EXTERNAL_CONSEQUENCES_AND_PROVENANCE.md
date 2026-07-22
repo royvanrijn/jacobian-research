@@ -284,7 +284,7 @@ includes a serialized artifact and independent replay.  The
 DVEZ/Zhao implication needed to deduce `not GMC(158)`, while retaining their
 authorship and the nonconstructive status of that final Gaussian step.
 
-## Rank-two Poisson and `DC(4)` manuscript: audit only
+## Rank-two Poisson and `DC(4)`: independent closure, provenance open
 
 A supplied abstract announces four polynomials
 
@@ -298,13 +298,9 @@ forming two canonical Poisson pairs, a nonautomorphic exact symplectic map of
 of the public Omniscience Project paper index did not locate an identifiable
 public paper, author list, version, or stable URL.  The separately published
 Omniscience/Pickhardt `A_3` paper is not the supplied rank-two manuscript.  The
-abstract omits the formulas for `T,D,S`.  Consequently the following have not
-yet been verified:
-
-1. all six displayed Poisson brackets;
-2. the claimed three-point fiber;
-3. the Hamiltonian-dual quantization and its ordering corrections;
-4. the exact construction of the missing three outputs.
+abstract omits the formulas for `T,D,S`.  Consequently its construction,
+term-by-term outputs, Hamiltonian-dual appendix, and exact dependency on the
+foundational map still cannot be audited or attributed.
 
 One provenance fingerprint is now exact.  After the polynomial source
 automorphism
@@ -320,27 +316,41 @@ the foundational map, although only the missing source can establish how the
 actual `T,D,S` are built.  Moreover, the naive choices
 `S=F_1/2`, `T=F_2` satisfy the first canonical-pair identities but admit no
 polynomial `D` completing all six brackets.  The repository proves this by an
-exact localized differential obstruction, so it does not fill the missing
-formulas by guesswork.
+exact localized differential obstruction.
+
+That obstruction has now led to a separate local construction.  For the
+one-parameter shear `Z -> Z+cQ^2`, the complete negative-power part of the
+forced primitive is proportional to `c+9`; the unique pole-free value is
+`c=-9`.  It produces compact exact formulas for all four outputs.  The
+repository independently proves all six brackets, determinant one, generic
+degree three, exact symplecticity, and a complete rational three-point fiber.
+The resulting four-dimensional map is polynomially right--left equivalent to
+the foundational map times an identity.  These statements and formulas are
+in the
+[quadratic-ladder and Poisson note](QUADRATIC_LADDER_AND_POISSON_AUDIT.md).
 
 The `A_2/A_4` terminology can also be narrowed.  Four Poisson coordinates
 have the symbol size of `A_2`; the abstract's separate use of the four outputs
 and four Hamiltonian duals instead has eight generators and naturally lands
-in `A_4`, as an inverse-Jacobian/cotangent construction would.  The actual
-appendix is still required to verify that interpretation and every operator
-identity.
+in `A_4`, as an inverse-Jacobian/cotangent construction would.  Applying the
+repository's general inverse-Jacobian theorem to the independent
+four-variable map does give an injective non-surjective endomorphism of
+`A_4`.  The external appendix is still required to decide whether that is
+also its construction.
 
-The repository's cotangent lift starts from an arbitrary three-dimensional
-Keller map and gives an exact symplectic map of \(\mathbb A^6\) and a Weyl
-endomorphism of `A_3`.  A verified four-dimensional symplectic
-counterexample would be sharper and structurally different; it should not be
-described as an automatic instance of that cotangent lift.  Until the missing
-source and output polynomials are available, the rank-two claim remains an
-**external announced manuscript under audit**, not a repository theorem and
-not an attributed Long result.  The detailed checklist is maintained in the
-[quadratic-ladder and Poisson audit](QUADRATIC_LADDER_AND_POISSON_AUDIT.md),
-with its exact pre-audit certificate.  Those local fingerprint and obstruction
-results do not promote the external announcement to a repository theorem.
+The repository's general cotangent lift starts from an arbitrary
+three-dimensional Keller map and gives an exact symplectic map of
+`A^6` and a Weyl endomorphism of `A_3`.  The independent rank-two result is
+sharper on the symplectic side: special foundational geometry completes a map
+already in `A^4`.  Its `A_4` Weyl consequence then uses the general
+inverse-Jacobian construction on that four-variable base map.
+
+The local formulas and consequences are now repository theorems with exact
+certificates.  They do not promote the supplied abstract to a sourced result.
+Until its missing source and outputs are available, that item remains an
+**external announced manuscript under provenance audit**, not an attributed
+Long result and not an external review.  Independent reproducibility is
+evidence for the mathematics, not evidence of provenance or priority.
 
 ## What these papers do and do not establish here
 
@@ -375,10 +385,11 @@ arbitrary JC(2) counterexamples.
 3. **Minimal dimensions.**  Determine why both the simple marked-point
    architecture and Long's direct GMC architecture begin naturally in
    dimension three.  Study GMC(2) without treating it as equivalent to JC(2).
-4. **Symplectic dimension descent.**  Ask whether the six-dimensional
-   cotangent lift admits an intrinsic four-dimensional replacement, and
-   compare any construction with the rank-two manuscript only after its full
-   formulas are available.
+4. **Symplectic dimension descent and families.**  The foundational map now
+   has an intrinsic four-dimensional rank-two completion.  Determine which
+   weighted seeds admit analogous pole-free flux corrections, whether their
+   stable moduli survive in dimension four, and compare the local formulas
+   with the external manuscript only after its full source is available.
 5. **Quantization.**  Compare inverse-Jacobian Weyl lifts,
    Hamiltonian-dual constructions, and associated-graded maps.  Keep ordinary
    Weyl equivalence distinct from filtration-preserving equivalence.

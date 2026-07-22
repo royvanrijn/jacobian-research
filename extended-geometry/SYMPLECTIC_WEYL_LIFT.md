@@ -301,17 +301,46 @@ No inequivalence claim for the resulting Weyl endomorphisms is made: arbitrary
 Weyl automorphisms need not preserve the differential-order filtration or the
 polynomial function subalgebra.
 
+## Corollary 5 — independent four-dimensional symplectic completion
+
+The [rank-two construction](QUADRATIC_LADDER_AND_POISSON_AUDIT.md) gives an
+explicit four-variable Keller map
+
+\[
+ G=(R,T,D,S):\mathbb A^4\longrightarrow\mathbb A^4
+\]
+
+over `Q` which preserves the standard rank-two Poisson bracket, has Jacobian
+one, generic degree three, and a complete rational three-point fiber.  It is
+therefore a noninjective exact symplectic etale map already in dimension four,
+not merely the six-dimensional cotangent lift of Corollary 3.
+
+Applying Theorem 2 with `n=4` gives
+
+\[
+ X_i\longmapsto G_i(X),\qquad
+ D_i\longmapsto\sum_r(DG^{-1})_{ri}(X)D_r,
+\]
+
+an injective non-surjective endomorphism of `A_4`.  The rank mismatch is
+intentional: the Poisson map has two canonical pairs, whereas this standard
+quantization treats its four outputs as base coordinates and adjoins four
+Hamiltonian duals.  No direct quantization in `A_2` is asserted.
+
 ## Reproduction
 
 Run
 
 ```bash
 .venv/bin/python scripts/verify_symplectic_weyl_lift.py
+.venv/bin/python scripts/verify_rank_two_poisson_completion.py
 ```
 
-The script checks the explicit determinant, polynomial inverse Jacobian,
+The first script checks the explicit determinant, polynomial inverse Jacobian,
 canonical one-form identity, commuting inverse-Jacobian vector fields, and the
-three-point collision over symbolic target momentum.
+three-point collision over symbolic target momentum.  The second checks the
+four-dimensional completion, including all six Poisson brackets and its
+transported complete fiber.
 
 ## Provenance and scope
 
@@ -329,14 +358,14 @@ three-point collision over symbolic target momentum.
 - The exact cotangent-lift formulation and the transfer of the repository's
   stable-class lower bounds are recorded here as elementary consequences.  No
   historical priority claim is made without a broader source audit.
-- A supplied rank-two Poisson abstract would, if fully verified, give a
-  sharper four-dimensional symplectic result by a structurally different
-  construction.  Its four Poisson coordinates have `A_2` symbol size, while
-  the separately advertised four outputs plus four Hamiltonian duals explain
-  how its Weyl construction could instead land in `A_4`.  The missing formulas,
-  exact foundational fingerprint, and obstruction to the naive completion are
-  recorded in the [Poisson audit](QUADRATIC_LADDER_AND_POISSON_AUDIT.md); the
-  announcement is not evidence for this theorem.
+- Prompted by a supplied rank-two Poisson abstract, the repository now has an
+  independent, fully checked four-dimensional completion.  Its four Poisson
+  coordinates have `A_2` symbol size, while the four outputs plus four
+  inverse-Jacobian duals land in `A_4`.  The external paper, authors, version,
+  and missing `T,D,S` remain unavailable, so equality with the independent
+  formulas is not claimed.  The construction, exact foundational fingerprint,
+  naive obstruction, and provenance boundary are recorded in the
+  [Poisson audit](QUADRATIC_LADDER_AND_POISSON_AUDIT.md).
 - Long's consequence papers do not review this cotangent-lift proof or the
   stable-moduli transfer.  Their precise relationship to the foundational map
   is recorded separately in the

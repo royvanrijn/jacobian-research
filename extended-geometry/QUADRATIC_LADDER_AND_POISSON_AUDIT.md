@@ -62,8 +62,10 @@ The first card claims a standard rank-two Poisson endomorphism on
  R=x(2-3xq).
 \]
 
-If correct, this would improve the repository's current cotangent-lift
-consequence from three canonical pairs to two.  It also needs a terminology
+This posed the problem of improving the repository's cotangent-lift
+consequence from three canonical pairs to two.  The independent construction
+below now solves that mathematical problem, while the card's provenance and
+actual missing outputs remain unaudited.  It also needs a terminology
 explanation.  In the usual convention `A_n` has `2n` associated-graded
 polynomial generators.  The four displayed Poisson coordinates have the
 symbol size of `A_2`.  The abstract does not say that their direct
@@ -167,19 +169,234 @@ choice or construction; they cannot responsibly be filled in by the naive
 foundational substitution.  The exact certificate is
 [`verify_rank_two_poisson_preaudit.py`](../scripts/verify_rank_two_poisson_preaudit.py).
 
+## The completion criterion
+
+The negative result above suggests the right intrinsic problem.  Work on the
+invariant quotient in coordinates `(X,Q,Z)`, where
+
+\[
+ Q=Y+XZ/3,\qquad R=2X-3X^2Q.
+\]
+
+For any Keller triple `A=(S,T,R)` with determinant `-1`, let `w_A` be the
+unique polynomial derivation satisfying
+
+\[
+ w_A(S)=w_A(T)=0,\qquad w_A(R)=1.
+\]
+
+In the adapted four-dimensional coordinates, put `w_E={E,-}`.  Every
+polynomial satisfying `{D,R}=1` has the form `D=E+f(X,Q,Z)`, because
+`{-,R}=partial_E`.  The two remaining mixed brackets vanish exactly when
+
+\[
+ w_A-w_E=\{f,-\}.                                      \tag{7}
+\]
+
+Thus polynomial Darboux completion is a relative Hamiltonian, or polynomial
+flux, problem.  This criterion is both necessary and sufficient; it avoids
+guessing `D` coefficient by coefficient.
+
+Apply it after the volume-preserving, `R`-fixing shear
+
+\[
+ Z\longmapsto Z+cQ^2.
+\]
+
+After integrating the first equation in (7), use
+`v=1/X` and `rho=R` as in (6).  The entire negative-`X` principal part of the
+forced remaining primitive is
+
+\[
+ (c+9)\left(
+ \frac1{135X^4}+\frac{2Q}{45X^3}
+ +\frac{Q^2}{6X^2}+\frac{Q^3}{2X}
+ \right).                                               \tag{8}
+\]
+
+Consequently `c=-9` is the unique pole-free member of this one-parameter
+family.  Unlike the naive case, its forced primitive is polynomial.  This is
+how the missing completion was found.
+
+## An independent rank-two Poisson completion
+
+The mathematical existence gap can now be closed without claiming to have
+recovered the unavailable manuscript.  Starting from (1), set
+
+\[
+ Q=q,\qquad W=Z-9Q^2,\qquad Y=Q-\frac{XW}{3},
+ \qquad U=1+XY.                                         \tag{9}
+\]
+
+Define
+
+\[
+ \begin{aligned}
+ R&=2X-3X^2Y-X^3W=x(2-3xq),\\
+ S&=\frac12\left(U^3W+Y^2U(4+3XY)\right),\\
+ T&=Y+3XU^2W+3XY^2(4+3XY),                              \tag{10}
+ \end{aligned}
+\]
+
+and put `D=E+K(X,Y,W)`, where
+
+\[
+\begin{aligned}
+60K={}&-10X^2W^3-90XYW^2-20W^2
+       +18X^3Y^5W+90X^2Y^4W\\
+     &+180XY^3W-90Y^2W
+       +54X^2Y^6+234XY^5+375Y^4.                       \tag{11}
+\end{aligned}
+\]
+
+All of (9)--(11) are polynomial expressions in the original variables.  In
+particular, these are compact exact formulas for all four outputs, not an
+existence ansatz.
+
+### Theorem
+
+With the bracket convention `{p,x}={z,q}=1`, the assignment
+
+\[
+ (x,q,p,z)\longmapsto(R,T,D,S)                          \tag{12}
+\]
+
+satisfies
+
+\[
+ \{D,R\}=1,\quad \{S,T\}=1,
+ \quad
+ \{R,S\}=\{R,T\}=\{D,S\}=\{D,T\}=0.                  \tag{13}
+\]
+
+It has Jacobian determinant one, is not injective, and has generic degree
+three.  The target `(R,T,D,S)=(0,0,0,-1/8)` has exactly the three points
+
+\[
+ \left(0,0,\frac1{24},-\frac18\right),\quad
+ \left(1,\frac23,\frac{247}{96},-\frac{89}{64}\right),\quad
+ \left(-1,-\frac23,\frac{247}{96},-\frac{89}{64}\right)                 \tag{14}
+\]
+
+in its fiber.  Hence (12) is a counterexample to the Poisson conjecture for
+two canonical pairs and a noninjective exact polynomial symplectic etale map
+of `A^4`.
+
+### Proof
+
+The coordinate system `(X,Q,Z,E)` is polynomial by (1)--(2).  The base change
+
+\[
+ (X,Q,Z)\longmapsto(X,Y,W)
+\]
+
+in (9) is also a polynomial automorphism, with inverse
+
+\[
+ Q=Y+XW/3,\qquad Z=W+9Q^2.                              \tag{15}
+\]
+
+Finally `E -> E+K` is triangular.  Therefore
+
+\[
+ H:(x,q,p,z)\longmapsto(X,Y,W,D)
+\]
+
+is a polynomial automorphism.  If `F=(F_1,F_2,F_3)` is the foundational map,
+then (10) gives the exact factorization
+
+\[
+ (S,T,R,D)=(F_1/2,F_2,F_3,\operatorname{id})\circ H.    \tag{16}
+\]
+
+Thus (12), after a target-coordinate permutation, is polynomially
+right--left equivalent to `(F_1/2,F_2,F_3) x id`.  It follows at once that its
+generic degree is three and that all its fiber schemes are the corresponding
+foundational fiber schemes.  Applying (15), then (2), to the complete
+foundational fiber over `(-1/4,0,0)` gives exactly (14), with `D=0`.
+
+It remains to prove that the particular source automorphism `H` makes (12)
+canonical.  In `(X,Q,Z)` the induced bracket is
+
+\[
+ \{X,Q\}=0,\qquad \{X,Z\}=-3X^2,
+ \qquad \{Q,Z\}=6XQ-2,
+\]
+
+and
+
+\[
+ \{E,X\}=\frac{1+3XQ}{2},\qquad
+ \{E,Q\}=-3Q^2,\qquad
+ \{E,Z\}=\frac92QZ.
+\]
+
+The determinant of `(S,T,R)` with respect to `(X,Q,Z)` is `-1`, which gives
+`{S,T}=1` and the two brackets with `R`.  Substitution of (11) into the flux
+identity (7) gives the remaining three relations in (13).  These are
+polynomial identities; hence `det d(R,T,D,S)=1`.  Preservation of the
+nondegenerate Poisson tensor is equivalent to preservation of the symplectic
+form.  The difference of the pulled-back and original polynomial canonical
+one-forms is closed and therefore exact on affine four-space by the polynomial
+Poincare lemma.  This proves the exact symplectic statement.
+
+Every algebraic step, all six brackets after full substitution into
+`Q[x,q,p,z]`, the determinant, the inverse coordinate changes, and (14) are
+checked by
+[`verify_rank_two_poisson_completion.py`](../scripts/verify_rank_two_poisson_completion.py).
+A separate standard-library sparse-polynomial implementation,
+[`audit_rank_two_poisson_completion_independent.py`](../scripts/audit_rank_two_poisson_completion_independent.py),
+rebuilds (9)--(11) over `Fraction` and independently checks all six brackets,
+the determinant, expanded term counts, and (14).
+
+## The `DC(4)` consequence and the classical implication direction
+
+Treat the four polynomials in (12) as a four-variable Keller map `G`.  The
+inverse-Jacobian construction sends the four multiplication generators of
+`A_4` to `G_i` and its four differential generators to
+
+\[
+ \delta_i=\sum_r(DG^{-1})_{ri}\partial_r.
+\]
+
+The eight images satisfy the Weyl relations.  Exact preservation of
+differential order shows that surjectivity would force a polynomial inverse
+to `G`; (14) excludes one.  Therefore this is an injective non-surjective
+endomorphism of `A_4`.  This explains why the Weyl rank is four, not two: it
+is the cotangent/inverse-Jacobian quantization of the four-variable base map,
+not an automatic ordering of the four Poisson coordinates inside `A_2`.
+The general proof is [Theorem 2 of the symplectic/Weyl note](SYMPLECTIC_WEYL_LIFT.md).
+
+The standard equivalence theorem does not itself produce this rank-two
+completion from JC(3).  Theorem 7 of Adjamagbo--van den Essen,
+[*On the equivalence of the Jacobian, Dixmier and Poisson Conjectures in any
+characteristic*](https://arxiv.org/abs/math/0608009), gives the fixed-dimension
+chain
+
+\[
+ CJC(2n)\Longrightarrow CPC(n)\Longrightarrow CDC(n)\Longrightarrow CJC(n).
+\]
+
+For `n=2`, its first arrow starts from `JC(4)`, not `JC(3)`.  Formulas
+(9)--(11) use the special marked-root structure of the foundational map and
+are not a formal corollary of that general theorem.
+
 ## What remains unavailable
 
-The complete audit must identify the paper and compare its actual formulas
-with (1)--(6).  Generic degree three and a three-point fiber alone still do
-not establish polynomial left--right equivalence or derivation.
+The **mathematical** existence, bracket, collision, symplectic, and `DC(4)`
+gaps are now closed by the independent construction above.  The
+**provenance** gap is not: the external paper, authors, version, and its actual
+`T,D,S` remain unavailable, so no equality between (9)--(11) and the announced
+manuscript is asserted.
 
 No public source matching the exact text was located on 22 July 2026 after
-exact-phrase and formula searches, arXiv metadata searches, and inspection of
-the public Omniscience Project papers index.  Its separately published `A_3`
-paper is not this manuscript.  Until the missing formulas or source are
-supplied, the rank-two claim remains a high-priority **external announced
-manuscript under audit**, not an active theorem, not an attributed Long
-result, and not a dependency of the boundary work.  The locally proved
-fingerprint and obstruction are repository results, not substitutes for the
-external audit.  The broader consequence comparison is in
+exact-phrase and formula searches, arXiv metadata searches, author/repository
+searches, and inspection of the public Omniscience Project papers index.  Its
+separately published `A_3` paper is not this manuscript.  The supplied item
+therefore remains an **external announced manuscript under provenance audit**,
+not an attributed Long result and not an external review of this repository.
+If its source appears, its outputs should be compared term-by-term with
+(9)--(11), and its Weyl appendix should be audited independently.
+
+The broader consequence comparison is in
 [External consequences and provenance](EXTERNAL_CONSEQUENCES_AND_PROVENANCE.md).

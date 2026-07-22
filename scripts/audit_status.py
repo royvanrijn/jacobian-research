@@ -28,7 +28,7 @@ expected = [
     "Foundational Keller map and rational collision",
     "Normalized factorization bridge and unequal-degree theorem",
     "Exact symplectic cotangent lift and Weyl quantization",
-    "Rank-two Poisson / `DC(4)` announcement",
+    "Rank-two Poisson / `DC(4)` construction and announcement audit",
     "Long's GMC, `(xz)`, and `SU(2)` counterexamples",
     "Weighted-seed Gaussian bridge",
     "Cubic marked-root realization",

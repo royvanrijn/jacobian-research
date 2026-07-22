@@ -80,6 +80,8 @@ verify-external-consequences:
 	$(PYTHON) scripts/verify_long_su2_haar.py
 	$(PYTHON) scripts/verify_long_foundational_normalization.py
 	$(PYTHON) scripts/verify_rank_two_poisson_preaudit.py
+	$(PYTHON) scripts/verify_rank_two_poisson_completion.py
+	$(SYSTEM_PYTHON) scripts/audit_rank_two_poisson_completion_independent.py
 	$(PYTHON) scripts/verify_long_bcw_79_route.py
 	$(SYSTEM_PYTHON) scripts/audit_long_bcw_79_independent.py
 	$(SYSTEM_PYTHON) scripts/verify_fixed_gmc_sic_bridge.py

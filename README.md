@@ -242,6 +242,17 @@ branch of `H(W)-sW+t=0`.  This construction was prompted by Long's method but
 is not one of Long's witnesses and has not received external specialist
 review.  See the [weighted Gaussian bridge](extended-geometry/WEIGHTED_GAUSSIAN_BRIDGE.md).
 
+There is also an independent internal closure of the supplied rank-two
+Poisson gap.  An exact flux calculation forces the shear `Z -> Z-9Q^2` and
+produces compact formulas for `R,T,D,S` with all six canonical brackets, a
+complete three-point fiber, and determinant one.  This gives a noninjective
+exact symplectic map of `A^4`, a counterexample to the Poisson conjecture for
+two canonical pairs, and an inverse-Jacobian `A_4` Weyl consequence.  The
+unidentified external abstract remains under provenance audit: the repository
+does not claim that its independently derived formulas are the manuscript's
+formulas or that the abstract reviews this work.  See the
+[rank-two construction and audit](extended-geometry/QUADRATIC_LADDER_AND_POISSON_AUDIT.md).
+
 ## What is genuinely new here?
 
 Subject to the provenance limitation above, the repository’s clearest new

@@ -23,7 +23,7 @@ in [STATUS.md](../STATUS.md).
 | Complete Long consequence reproductions | [`SU(2)` Haar proof and exact `3 -> 39 -> 79` BCW route](LONG_SU2_AND_BCW_REPRODUCTIONS.md) |
 | Fixed-dimensional `GMC(2r) -> SIC(r) ->` cubic-Keller invertibility route | [Gaussian contraction, countable-union lemma, and formal inversion](FIXED_GMC_SIC_PROOF.md) |
 | Weighted-seed Gaussian bridge | [Uniform four-real-Gaussian witnesses from exact inverse-pencil branches](WEIGHTED_GAUSSIAN_BRIDGE.md) |
-| Quadratic ladder and proposed rank-two Poisson lift | [Exact cancellation identification and evidence audit](QUADRATIC_LADDER_AND_POISSON_AUDIT.md) |
+| Quadratic ladder and rank-two Poisson completion | [Exact cancellation identification, four-dimensional construction, and external-source audit](QUADRATIC_LADDER_AND_POISSON_AUDIT.md) |
 | Positive-dimensional exact symplectic moduli | [Combined stable-moduli consequence](SYMPLECTIC_STABLE_MODULI.md) |
 | Stable normal-form consequences | [Consequences and audit](STABLE_NORMAL_FORM_AUDIT.md) |
 | Marked-point dimension barrier | [Why the universal marked-point construction starts in dimension three](MARKED_POINT_DIMENSION_BARRIER.md) |
