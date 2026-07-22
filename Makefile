@@ -118,7 +118,8 @@ verify-foundations: verify-core
 verify-foundations-formal: verify-foundations verify-lean-foundational
 
 # Optional independent bounded-degree comparison with Macaulay2's classical
-# CoincidentRootLoci package.  The wrapper uses a pinned Docker image if M2 is not installed locally.
+# CoincidentRootLoci package.  The wrapper uses a pinned Docker image if M2
+# is not installed locally.
 verify-coincident-root-loci:
 	bash scripts/verify_coincident_root_slices.sh
 
