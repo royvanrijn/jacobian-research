@@ -572,6 +572,13 @@ critical curve `G_m`, but its plane equation need not be (5.7).  Unit rank and
 two punctures distinguish the multiplicative branch; the primitive valuation
 vector is what selects the cancellation core inside that branch.
 
+This is not merely a hypothetical warning.  The affine-plane complement
+problem admits infinite characteristic-zero families of pairwise
+nonequivalent embeddings of `G_m` with isomorphic complements.  Therefore an
+isomorphism of complements, the abstract curve type, and the rank-one unit
+lattice cannot by themselves imply cancellation normal form.  The marked
+primitive functions and the suspension ledger are essential extra data.
+
 ## 7. Numerical compression for cancellation cores
 
 For cancellation type `(m,r)`, the known labels satisfy
@@ -754,6 +761,9 @@ Consequently the reciprocal equation in the cancellation bridge is not an
 extra coordinate hypothesis.  Once the two affine completions and their
 effective boundary generators are specified, it is exactly the
 orientation-reversing case of the intrinsic rank-one unit-lattice map.
+The sign is only a first prefilter: exceptional complement isomorphisms show
+that many inequivalent boundary embeddings can have the same unit lattice and
+the same orientation.
 
 ### Affine modifications after choosing a completion
 
@@ -935,6 +945,11 @@ global problem.
   automorphism group*, and its global form to
   [Dubouloz](https://arxiv.org/abs/math/0503142),
   *Quelques remarques sur la notion de modification affine*.
+- The need for more than complement type and unit rank is reinforced by
+  [Blanc--Furter--Hemmig](https://arxiv.org/abs/1609.06682),
+  *Exceptional isomorphisms between complements of affine plane curves*;
+  in characteristic zero they construct infinite families of nonequivalent
+  `G_m` embeddings with isomorphic complements.
 - The tame local model and the identity between tame different exponent and
   `e-1` are standard DVR facts; convenient references are the Stacks Project
   Tags [0EYF](https://stacks.math.columbia.edu/tag/0EYF),

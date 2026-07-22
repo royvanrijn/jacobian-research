@@ -523,16 +523,16 @@ Equivalently, over a rerooting-stable generic open the incidence
 `{(H,a):H(a)=0, a!=0, H'(a)!=0}` is the finite etale rerooting relation.
 Its quotient supplies an ordinary algebraic model for the generic moduli
 image, which is therefore reduced.  This statement concerns the decoration
-(3.5); the larger intrinsic affine-cover decoration discussed next may
-separate the rerootings if the missing cross-stratum lemma is proved.
+(3.5).  The larger intrinsic affine-cover decoration does separate the
+rerootings, as proved next.
 
-### The affine root-one stratum and the missing cross-stratum lemma
+### Full-cover rigidity on the exact-double-zero boundary-clean locus
 
-There is a tempting apparent improvement of the preceding argument.  Over
-`Z_0=V(C)`, the normalized incidence does intrinsically distinguish the
-simple root `W=1` from the additional simple roots.  This distinction is real,
-but it does **not** yet supply another point on the discriminant-normalization
-line.
+Over `Z_0=V(C)`, the normalized incidence intrinsically distinguishes the
+simple root `W=1` from the additional simple roots.  This distinction does
+not by itself supply another point on the discriminant-normalization line;
+the bridge is instead obtained by recovering the primitive pencil
+coordinates from their pole filtration.
 
 Assume throughout this paragraph that zero has exact multiplicity two, as it
 does on the generic open in `A_N`, and write

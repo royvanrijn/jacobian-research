@@ -265,8 +265,8 @@ where `p` is prime and `a>=1`.  The first case is the existing prime case
 The Jacobi form (3b) supplies a complementary fixed-degree theorem.
 Cullinan--Hajir--Sell prove that for every fixed `k>=6`, `J_k(x,y_0)` is
 irreducible for all but finitely many rational `y_0`.  For odd `k`, its
-Galois group is `S_k` outside a finite set; for even `k`, the exceptional
-Galois specializations form a thin set.  They also prove that the generic
+Galois group is `S_k` outside a finite set; for even `k`, the `A_k`
+specializations lie in a thin set.  They also prove that the generic
 group over `Q(y)` is `S_k`.  See
 [Cullinan--Hajir--Sell](https://doi.org/10.5802/jtnb.659).  This does not by
 itself settle the moving specialization `(k,y)=(mr,r)`, but it identifies the

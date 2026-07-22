@@ -1,4 +1,4 @@
-# Galois groups of cancellation parameter polynomials through degree thirty
+# Galois groups through degree thirty and two odd square-family cases
 
 This note classifies the arithmetic Galois group of `M_(m,r)` for every pair
 with parameter degree `mr<=30`.  It is an exact finite theorem, not a uniform
@@ -81,7 +81,34 @@ exact regression checks every certificate:
 .venv/bin/python scripts/verify_parameter_galois_jordan.py
 ```
 
+## Two higher odd square-family certificates
+
+The same script contains exact certificates for the next two members of the
+odd square-discriminant family after `(17,1)`:
+
+\[
+ \operatorname{Gal}(M_{49,1})=A_{49},\qquad
+ \operatorname{Gal}(M_{97,1})=A_{97}.
+\]
+
+For degree 49, the modular types
+
+\[
+ (22,13,9,3,2),\ (22,10,8,6,3),\ (24,15,10),\ (34,12,3)
+\]
+
+at primes `7,11,13,19` have subset-sum intersection `{0,49}`, proving
+irreducibility.  The first type isolates a 13-cycle.  A transitive
+imprimitive degree-49 group would embed in `S_7 wr S_7`, whose order is not
+divisible by 13, so the group is primitive.  Jordan's theorem gives
+containment of `A_49`, and the square discriminant gives equality.
+
+For degree 97, the types `(89,6,2)`, `(91,5,1)`, and `(83,12,2)` at primes
+`5,19,23` prove irreducibility.  Prime degree gives primitivity, the first
+type isolates an 89-cycle, and Jordan's theorem plus the square discriminant
+gives `A_97`.
+
 The table shows that parameter irreducibility alone does not force full
 symmetric Galois group.  A uniform theorem must account for the dihedral
-`(2,2)`, the exceptional degree-six families, and the six alternating cases
-before extrapolating from the symmetric cases.
+`(2,2)`, the exceptional degree-six families, and the alternating square
+locus before extrapolating from the symmetric cases.

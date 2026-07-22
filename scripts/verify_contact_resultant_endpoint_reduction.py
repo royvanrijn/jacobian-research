@@ -151,7 +151,12 @@ assert sp.factor(F3 - (d * z**3 + e)) == 0
 
 # Universal identity for Res_z(a*z^2+b*z+c, d*z^3+e).
 aa, bb, cc, dd, ee = sp.symbols("aa bb cc dd ee")
-compact_resultant = aa**3 * ee**2 + 3 * aa * bb * cc * dd * ee - bb**3 * dd * ee + cc**3 * dd**2
+compact_resultant = (
+    aa**3 * ee**2
+    + 3 * aa * bb * cc * dd * ee
+    - bb**3 * dd * ee
+    + cc**3 * dd**2
+)
 assert sp.factor(
     sp.resultant(aa * z**2 + bb * z + cc, dd * z**3 + ee, z)
     - compact_resultant
@@ -161,7 +166,9 @@ endpoint_resultant3 = sp.factor(
     compact_resultant.subs({aa: a, bb: b, cc: c, dd: d, ee: e})
 )
 eliminant3 = sp.cancel(endpoint_resultant3 / (y - 1) ** 3)
-eliminant3_numerator, eliminant3_denominator = sp.together(eliminant3).as_numer_denom()
+eliminant3_numerator, eliminant3_denominator = sp.together(
+    eliminant3
+).as_numer_denom()
 assert sp.degree(eliminant3_denominator, y) == 0
 H3 = sp.Poly(eliminant3_numerator, y, domain=sp.ZZ[m])
 assert H3.degree() == 6
@@ -177,7 +184,9 @@ assert sp.cancel(endpoint_resultant3 - (y - 1) ** 3 * eliminant3) == 0
 # regression of the general coefficient identity in the r=3 column.
 for m_value in range(1, 9):
     K3 = cancellation_branch_polynomial(m_value, 3, w)
-    beta3_value = sp.factorial(3) / sp.prod(3 * m_value + j for j in range(1, 5))
+    beta3_value = sp.factorial(3) / sp.prod(
+        3 * m_value + j for j in range(1, 5)
+    )
     negative_binomial_section = sum(
         sp.binomial(j + 3, 3) * y**j for j in range(3 * m_value + 1)
     )
@@ -192,7 +201,9 @@ for m_value in range(1, 9):
 # leading principal minors.  After a harmless common integral scaling, every
 # coefficient of every minor is strictly positive in m.
 rho = m / (m + 1)
-Q3_numerator = sp.together(u**6 * H3.as_expr().subs(y, rho / u)).as_numer_denom()[0]
+Q3_numerator = sp.together(
+    u**6 * H3.as_expr().subs(y, rho / u)
+).as_numer_denom()[0]
 Q3 = sp.Poly(Q3_numerator, u, domain=sp.ZZ[m]).primitive()[1]
 assert Q3.degree() == 6
 

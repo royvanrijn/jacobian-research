@@ -39,7 +39,8 @@ Equivalently, prove irreducibility of
 interior truncated binomial polynomials.  Classify the natural Galois group
 on the same diagonal; the discriminant has an infinite square locus, so the
 expected large groups must allow both alternating and symmetric cases.  The
-same polynomial is the normalized derivative
+affine-reciprocal form of the same irreducibility problem is the normalized
+derivative
 
 \[
  \sum_{j=0}^{mr}\binom{r+j}{r}x^j
