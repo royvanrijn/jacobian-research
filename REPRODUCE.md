@@ -188,11 +188,15 @@ identities are checked exactly by
 
 ```bash
 .venv/bin/python scripts/verify_stable_generator_rigidity.py
+.venv/bin/python scripts/verify_multicluster_ll_comparison.py
 ```
 
 The companion affine-stratum audit verifies that the root-one component is
 regular and that a nontrivial rerooting sends it to an extra-root boundary
-component.  Both commands are part of `make verify-regressions`.
+component.  The multicluster audit checks distinct tangent lines, all pairwise
+intersection numbers, the conductor exponent
+`e_i(sum_j e_j-1)`, and regularity of the full marked-root incidence at
+collisions.  All three commands are part of `make verify-regressions`.
 
 ## External consequence identities
 

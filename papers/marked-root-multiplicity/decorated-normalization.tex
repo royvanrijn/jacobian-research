@@ -429,6 +429,75 @@ divisors}}.}  Its finite part has degree $N-1$, after removing the fixed
 branch contribution $(N-1)[\infty]$.
 \end{proof}
 
+\begin{theorem}[formal comparison at arbitrary root collisions]
+\label{thm:admissible-formal-comparison}
+Pull the marked admissible-cover compactification of
+Proposition~\ref{prop:hurwitz-ll-compactification} back along the pencil
+$H-sW$ and mark a point over $-t$.  The normalized Stein factor of this
+incidence is the canonical finite cover
+\[
+ X_H=\operatorname{Spec}k[s,t,W]/(H(W)-sW+t),
+\]
+and the normalized Stein factor of its critical-point incidence is
+$\widetilde D_H=\operatorname{Spec}k[r]$ with map (6.1).  After contraction
+of all admissible source and target bubbles, their completed boundary charts
+and normalization--conductor square agree with the repository constructions,
+including at simultaneous collisions of arbitrarily many root clusters.
+
+More explicitly, if the distinct multiple roots are $\rho_i$, of
+multiplicity $m_i$, and
+\[
+ e_i=m_i-1,\qquad E=\sum_i e_i,
+\]
+then the conductor in the completed normalization over $(s,t)=(0,0)$ is
+\[
+ \overline{\mathfrak c}_{(0,0)}
+ =\bigoplus_i u_i^{e_i(E-1)}k[[u_i]].                 \tag{6.15}
+\]
+\end{theorem}
+
+\begin{proof}
+On the dense nondegenerate locus the marked-point incidence is
+$H(W)-sW+t=0$.  This hypersurface is smooth, since its $t$-derivative is one,
+and is finite of degree $N$ over $k[s,t]$.  Its coordinate ring and the
+normalized Stein algebra of the proper admissible incidence are finite normal
+$k[s,t]$-algebras with the same generic function algebra.\footnote{We use
+the Noetherian Stein factorization theorem in its relative-normalization form;
+see \href{https://stacks.math.columbia.edu/tag/03H0}{Stacks Project, Tag
+03H0}.}  By uniqueness of
+integral closure they coincide.  The identical argument for the critical
+marking gives $k[r]$ and the map
+$r\mapsto(H'(r),rH'(r)-H(r))$.
+
+At any primitive root $\alpha$, put $W=\alpha+u$.  Completion and elimination
+of $t$ give
+\[
+ \widehat{\mathcal O}_{X_H,(0,0,\alpha)}=k[[s,u]],
+ \qquad t=s(\alpha+u)-H(\alpha+u),                    \tag{6.16}
+\]
+so Hensel separation makes simultaneous distinct clusters a product of the
+same regular charts on both sides.
+
+For a multiple root $\rho_i$, write
+$H(\rho_i+u)=c_i u^{m_i}+O(u^{m_i+1})$.  On its discriminant branch,
+with $q_i=t-\rho_i s$, formula (6.1) gives
+\[
+ \operatorname{ord}_{u_i}s=e_i,\qquad
+ \operatorname{ord}_{u_i}q_i=e_i+1.                  \tag{6.17}
+\]
+Thus its intrinsic conductor exponent is $e_i(e_i-1)$.  Distinct roots give
+distinct tangent lines $t=\rho_i s$, hence
+$I(D_i,D_j)=e_i e_j$.  Applying the adjunction conductor formula (6.5a) to
+$f=\prod_i f_i$ adds these pairwise intersections on branch $i$ and yields
+\[
+ e_i(e_i-1)+\sum_{j\ne i}e_i e_j=e_i(E-1),
+\]
+which proves (6.15).  Since both constructions have the same finite
+normalization map, quotienting by this common conductor gives the same
+conductor square.  The argument descends from geometric branches by Galois
+invariance.
+\end{proof}
+
 \begin{corollary}[degreewise weighted stable moduli]
 \label{cor:weighted-stable-moduli}
 For every $N\ge4$, weighted degree-$N$ maps contain an

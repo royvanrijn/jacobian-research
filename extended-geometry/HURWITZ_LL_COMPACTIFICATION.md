@@ -286,7 +286,9 @@ proper morphism `Y -> S`, write
  =\operatorname{Norm}_S\operatorname{Spec}_S(f_*\mathcal O_Y)            \tag{6.1}
 \]
 
-for its normalized Stein factor.
+for its normalized Stein factor.  The finiteness and relative-normalization
+statement used here is the
+[Noetherian Stein factorization theorem](https://stacks.math.columbia.edu/tag/03H0).
 
 > **Theorem (formal admissible-cover comparison).**  Let `H` be any
 > normalized admissible seed.  Pull the marked admissible-cover closure back
@@ -385,8 +387,8 @@ distinct tangent lines, so two different clusters have intersection number
 
 One can see the conductor addition directly from the repository adjunction
 formula (3.2a): in the completed plane ring write the reduced equation as
-`f=product_i f_i`.  On branch `i`, the derivative `f_t` is
-`(f_i)_t product_(j!=i)f_j`; the extra factors contribute precisely the
+`f=\prod_i f_i`.  On branch `i`, the derivative `f_t` is
+`(f_i)_t\prod_{j\ne i}f_j`; the extra factors contribute precisely the
 intersection numbers (6.4).  Therefore the conductor pulled back to the
 completed normalization is
 

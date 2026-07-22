@@ -218,3 +218,15 @@ coefficient algebra is the full `M_20(Q)`, while a common invariant
 hyperplane is excluded by the zero common kernel of the 64 nilpotent
 coefficient matrices.  Thus no further collision-preserving linear quotient
 of this 21-dimensional map exists.
+
+There is also no affine-vector-field extension of the constant-kernel
+mechanism.  For an affine infinitesimal translation `V(x)=Ax+b`, cubic
+homogeneity separates `JH(x)V(x)=0` into `JH(x)b=0` and
+`JH(x)Ax=0`.  The first equation has only `b=0`.  The independent
+[`affine symmetry audit`](../scripts/audit_bcw_21_affine_vector_symmetries.py)
+expands the second into 2484 rational coefficient equations in the 441
+entries of `A`; their matrix has full column rank modulo the good prime
+1000003, hence full column rank over `Q`.  Therefore `A=0` as well.  This
+rules out affine translation symmetries as seeds for a nonlinear
+skew-product reduction, but it does not exclude general nonlinear
+decompositions.

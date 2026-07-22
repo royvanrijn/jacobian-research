@@ -780,6 +780,18 @@ the full cover with its reconstruction open.
 The proper Hurwitz-space package behind that groupoid—including the LL
 branch incidence, collision charts, and conductor boundary—is constructed in
 [HURWITZ_LL_COMPACTIFICATION.md](HURWITZ_LL_COMPACTIFICATION.md).
+Its formal comparison theorem identifies the normalized Stein factors with
+the canonical root cover and discriminant normalization.  If the distinct
+multiple roots have `e_i=ord_(rho_i)(H)-1` and `E=sum_i e_i`, the conductor
+on the `i`-th completed normalization branch is exactly
+
+\[
+ (u_i^{e_i(E-1)}).                                    \tag{5.3q}
+\]
+
+Thus simultaneous multicluster collisions introduce no uncomputed gluing:
+their completed rings and conductor square agree on the admissible-cover and
+repository sides.
 
 Because the decorated normalization is constant on stable polynomial
 left--right classes, generic finiteness has the following stronger
@@ -909,7 +921,7 @@ for a completed computation in every family.
 | ordered discriminant boundary and normalized pencil | complete under the stated intrinsic-completeness hypothesis | complete for the weighted seeds in the repository |
 | full Fitting divisor, including multiplicities | complete | complete |
 | saturated off-diagonal scheme and its `S_2` quotient | complete in characteristic zero | complete; quotient pullback and node transversality are checked |
-| conductor map | complete as an intrinsic finite-stratum construction | exact implicit-equation formula for arbitrary plane-curve singularities, checked against the ordinary factorization |
+| conductor map | complete as an intrinsic finite-stratum construction, including the admissible-cover contraction | exact implicit-equation formula for arbitrary plane-curve singularities; simultaneous multicluster exponent `e_i(sum_j e_j-1)` and normalized-Stein comparison checked separately |
 | infinity and second-boundary marks | complete | exact for the weighted seeds; the quartic zero-cluster chart is checked |
 | distinguished affine root-one stratum and full-cover faithfulness | complete for normalized admissible seeds with `ord_0(H)>=2`, including higher zero multiplicity and arbitrary extra-root collisions; low poles, stable plane descent, affine generator recovery, and deck rigidity give the proof | exact cover-stratum, LL incidence, affine target-pullback orientation, higher-zero, collision, scaling, and rerooting audits |
 | upstairs `(e,f)`, different, DVR, and inertia data | complete as invariant data | generic divisorial layer complete |

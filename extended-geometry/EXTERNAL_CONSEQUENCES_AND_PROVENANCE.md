@@ -433,14 +433,16 @@ arbitrary JC(2) counterexamples.
    is already an injective seed fingerprint; determine which functions of it
    descend to invariants for natural Gaussian-equivalence groups and whether
    the seed's decorated-normalization moduli remain visible after quotienting.
-8. **Hurwitz/LL local-to-global comparison.**  Full-cover generator rigidity
+8. **Hurwitz/LL comparison and boundary intersection theory.**  Full-cover generator rigidity
    now holds for every normalized admissible seed with `ord_0(H)>=2`, including
    higher zero multiplicity and arbitrary extra-root collisions.  The
    discriminant is the LL critical-value incidence of the line `H-sW`, and
    the normalized closure in the marked admissible-cover stack supplies a
-   proper compactified rerooting groupoid.  What remains is the exact
-   local-to-global comparison between its conductor square and every
-   simultaneous multicluster formal chart of the canonical affine cover.  See
+   proper compactified rerooting groupoid.  The normalized-Stein theorem now
+   identifies its contraction with the canonical affine root cover and gives
+   the exact multicluster conductor exponent `e_i(sum_j e_j-1)`, closing the
+   formal local-to-global comparison.  A next project is to compute boundary
+   divisor classes and LL degrees on this compactification.  See
    the [faithfulness proof](DECORATED_NORMALIZATION_INVARIANT.md) and the
    [Hurwitz--LL compactification](HURWITZ_LL_COMPACTIFICATION.md).
 9. **Rank-aware BCW circuit minimization.**  The reusable-factor certificate

@@ -235,4 +235,9 @@ The frozen generator and dependency-free replay now certify `not GMC(42)`.
 The exact invariant-row-module audit also proves that the only proper module
 is the homogenizing covector, which is constant on the collision, so this new
 map has no further collision-preserving linear quotient.
+Moreover, the 2484-by-441 coefficient system `JH(x)Ax=0` has full column
+rank modulo 1000003.  Together with the zero constant kernel, this excludes
+every nonzero affine vector field `Ax+b` tangent to all fibers of `H`.
+It prunes the most direct affine-symmetry route to a nonlinear skew product,
+without constituting a general nonlinear indecomposability theorem.
 No minimality claim is made.

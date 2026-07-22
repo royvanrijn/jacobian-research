@@ -116,6 +116,7 @@ verify-external-consequences:
 	$(SYSTEM_PYTHON) scripts/audit_identity_slice_counterexamples_independent.py
 	$(PYTHON) scripts/verify_inverse_coordinate_recurrence.py
 	$(PYTHON) scripts/audit_bcw_21_linear_quotients.py
+	$(SYSTEM_PYTHON) scripts/audit_bcw_21_affine_vector_symmetries.py
 	$(PYTHON) scripts/verify_two_parameter_bcw_obstruction.py
 	$(SYSTEM_PYTHON) scripts/verify_fixed_gmc_sic_bridge.py
 	$(PYTHON) scripts/verify_formal_gaussian_lagrange.py

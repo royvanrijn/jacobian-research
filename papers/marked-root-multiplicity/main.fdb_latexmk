@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1784742137 "main.tex" "main.pdf" "main" 1784742138
+["pdflatex"] 1784742820 "main.tex" "main.pdf" "main" 1784742821
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -129,10 +129,10 @@
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1655727831 2826444 fd9e7b2612ee6e1b790db0e41756cfcd ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
   "boundary-exhaustion.tex" 1784740395 20832 b1fd84f2c00445cbdc4419b1c0ddbc10 ""
-  "decorated-normalization.tex" 1784742127 19209 ab9eb34207257b56db320d53f8b24849 ""
-  "main.aux" 1784742138 3524 06d9c47675c392cd8d24cbaa46e9b3b4 "pdflatex"
-  "main.out" 1784742138 2033 b25c98b26bd0ceabfbe252e8ee384e4e "pdflatex"
-  "main.tex" 1784741714 14547 92563abdc9a9084d64ce4ce4822c0551 ""
+  "decorated-normalization.tex" 1784742785 22122 ca2a740100f760fc99fa682948f727c2 ""
+  "main.aux" 1784742821 3642 4cc6764e4c244ed44a40bc1cd44cf42d "pdflatex"
+  "main.out" 1784742821 2033 b25c98b26bd0ceabfbe252e8ee384e4e "pdflatex"
+  "main.tex" 1784742676 14695 38e2f8590588d6e9fa6ac25207db83b1 ""
   "stable-functoriality.tex" 1784659078 6133 f0347fe669d7215aff7dc070a9bd02ad ""
   "thick-intersection.tex" 1784658807 6538 cf77e2cb146e4c46f2849c5adc0428f7 ""
   (generated)

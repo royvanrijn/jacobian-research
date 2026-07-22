@@ -375,7 +375,7 @@ distinctions matter:
 | GMC, `(xz)`, and `SU(2)` counterexamples | Christopher D. Long's two arXiv papers | Exact local Gaussian and beta/binomial checks, a complete `SU(2)=S^3` Haar proof, all 18 steps of Long's conservative 79-variable route, and a repository 17-dimensional quadratic--cubic trace whose rank-compressed 24-variable homogenization has a 21-variable essential quotient and gives `not GMC(42)`; every sparse artifact has an independent replay, with no claim that the direct witnesses derive from our map |
 | Weighted-seed/Gaussian bridge | Long's Lagrange--Good search architecture and Good's inversion theorem | A repository-derived polynomial determinant correction turning every nonconstant normalized seed into an explicit four-real-Gaussian witness family; the exact mixed moments recover `1+lambda*H`, making the moment realization injective; supported by a standalone constant-term-safe formal Gaussian--Lagrange proof, locally checked and not externally reviewed |
 | Cancellation maps and canonical boundary invariants | No earlier source has been identified in the present audit | The finite cancellation operator, all-parameter reconstruction and collision, boundary-exhaustion theorem, thick intersections, and rigidity results |
-| Degreewise weighted stable moduli | No earlier source has been identified in the present audit | A degree-`N-2` decorated-normalization invariant with image dimension `N-3`, plus a faithful full marked-cover invariant for all normalized admissible seeds with `ord_0(H)>=2`; the Hurwitz/LL admissible-cover closure organizes collisions and compactified rerooting |
+| Degreewise weighted stable moduli | No earlier source has been identified in the present audit | A degree-`N-2` decorated-normalization invariant with image dimension `N-3`, plus a faithful full marked-cover invariant for all normalized admissible seeds with `ord_0(H)>=2`; the Hurwitz/LL admissible-cover closure organizes compactified rerooting and has the same formal conductor square at simultaneous multicluster collisions |
 | Cross-family stable multiplicity | No earlier source has been identified in the present audit | The complementary divisor-count theorem distinguishing one weighted class and `tau(N-1)-1` cancellation types in generic degree `N>=4` |
 
 “No earlier source identified” is a statement about the current search, not a
@@ -484,7 +484,10 @@ primitive coordinate from the low-pole filtration, uses the affine zero
 cluster to kill translation, and uses the root-one sheet to kill scaling.
 The [Hurwitz--LL compactification](extended-geometry/HURWITZ_LL_COMPACTIFICATION.md)
 realizes the discriminant as a universal critical-value incidence and places
-the compactified rerooting groupoid in a marked admissible-cover closure.
+the compactified rerooting groupoid in a marked admissible-cover closure.  Its
+normalized-Stein comparison identifies every contracted formal root chart and
+the complete multicluster conductor square with the canonical finite
+normalization.
 The exact cotangent lift is polynomially right-equivalent to adjoining three
 identity coordinates, so the same invariant and dimension transfer without
 loss:
