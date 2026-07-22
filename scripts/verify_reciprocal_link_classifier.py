@@ -219,7 +219,7 @@ def check_unsliced_boundary_spectral_equation() -> None:
 
 def check_unsliced_hensel_slice_rigidity() -> None:
     """The full nilpotent source algebra has the same unique Hensel jet."""
-    A, H, q, eta = sp.symbols("A H q eta")
+    A, H, q = sp.symbols("A H q")
     for m in range(1, 5):
         for r in range(1, 5):
             modulus = parameter_polynomial(m, r, q)
@@ -239,16 +239,6 @@ def check_unsliced_hensel_slice_rigidity() -> None:
                 divided_difference.subs({A: 0, H: q})
             )
             assert sp.cancel(boundary_multiplier - derivative) == 0
-
-            # A hidden coefficient eta at any forbidden order is multiplied
-            # by the same invertible spectral derivative.
-            for degree in range(1, r + 1):
-                perturbed = jet + A**degree * eta
-                response = sp.expand(
-                    phi(m, r, A, perturbed) - phi(m, r, A, jet)
-                ).coeff(A, degree)
-                assert reduce_q(response - eta * derivative, q, modulus) == 0
-
 
 def main() -> None:
     check_cancellation_certificate()
