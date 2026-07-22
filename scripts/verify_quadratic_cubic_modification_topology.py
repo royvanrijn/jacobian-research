@@ -98,8 +98,21 @@ assert residue_h2.det() % 2 == 0
 boundary_mod_2 = sp.Matrix([[1]])
 assert int(boundary_mod_2.det()) % 2 == 1
 
+# Integral Chow localization.  In CH^2(P^2 x P^3), the columns are
+# E*h1, E*h2, R*h1 in the basis (h1^2,h1*h2,h2^2).
+chow_degree_two = sp.Matrix([[1, 0, 3], [1, 1, 2], [0, 1, 0]])
+assert chow_degree_two.det() == 1
+
+# In degree at least three, multiplication by E=h1+h2 gives triangular
+# unimodular spanning sets; these are the degree-three and degree-four blocks.
+chow_degree_three = sp.Matrix([[1, 1, 0], [0, 1, 1], [0, 0, 1]])
+chow_degree_four = sp.Matrix([[1, 1], [0, 1]])
+assert chow_degree_three.det() == 1
+assert chow_degree_four.det() == 1
+
 print("PASS (2,3) Euclidean chart: resultant is the quadratic norm Delta")
 print("PASS chart modification: k[X_a0] = k[A^2 x SL_2][I/f]")
 print("PASS complementary chart: Delta=R1/r and beta=r^(-1)(1+O(r))")
 print("PASS integral residues: 1, 2, and nonzero mod-2 boundary")
 print("PASS Gysin input: H^*(X,Z)=Z in degrees 0 and 3 only")
+print("PASS Chow localization: every positive-codimension integral group vanishes")

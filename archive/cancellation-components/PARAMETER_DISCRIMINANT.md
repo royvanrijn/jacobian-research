@@ -141,9 +141,92 @@ Galois group is contained in `A_(mr)` whenever the corresponding polynomial
 is irreducible.  This shows that the alternating cases in the finite table
 belong to an infinite arithmetic phenomenon, not a sporadic low-degree list.
 
-The exact regression verifies (2), (4), the resultant formula, and the square
-criterion against direct discriminant calculations.  It also checks the
-converse parametrization (5)--(6) and the infinite family (7) in bounded
+For fixed `r`, (6) can also be viewed as a finite union of quadratic
+progressions.  Since `gcd(d,r)=1`, integrality is equivalent to
+
+\[
+ b^2\equiv a^2\pmod r,
+\]
+
+and the condition `4|d(b^2-a^2)` is a further congruence modulo four.  Thus
+the admissible `b` occupy finitely many residue classes modulo `4r`, and (6)
+maps each class to a quadratic sequence of square-discriminant parameters.
+
+## An odd-degree square family
+
+The odd part of the square locus is governed by the binomial coefficient in
+the criterion and need not admit the same two-square parametrization.  One
+infinite family is nevertheless immediate.  Set `r=1`.  For `n=m=1 mod 4`,
+the criterion becomes
+
+\[
+ 2\binom{m+1}{1}=2(m+1)\text{ is a square}.
+\]
+
+It follows that
+
+\[
+ m=2a^2-1,\qquad r=1,\qquad a\text{ odd}               \tag{8}
+\]
+
+always gives a rational-square discriminant.  Conversely, every square-
+discriminant pair with `r=1` and odd degree has this form: positivity forces
+`m=1 mod 4`, and writing `2(m+1)=c^2` forces `c=2a` and hence (8), with `a`
+odd.  The first values are
+
+\[
+ m=1,17,49,97,161,241,337,449,\ldots.
+\]
+
+Thus both parities contain infinite alternating-group candidates.
+The exact Frobenius--Jordan regression proves that the next two cases after
+`m=17` are not merely candidates:
+
+\[
+ \operatorname{Gal}(\mathcal M_{49,1})=A_{49},\qquad
+ \operatorname{Gal}(\mathcal M_{97,1})=A_{97}.          \tag{9}
+\]
+
+For degree 49 an isolated 13-cycle rules out the only possible nontrivial
+block size 7; for prime degree 97, irreducibility already implies
+primitivity.  Jordan's theorem and the square discriminants then give (9).
+
+## Fixed-row density of the square locus
+
+The two parity analyses give a useful quantitative simplification.  For
+fixed `r`, the even-degree solutions are a finite union of the quadratic
+sequences (6), so there are `O_r(sqrt(X))` of them with `m<=X`.
+
+For the odd-degree branch, `r` and `m` must both be odd and the criterion is
+
+\[
+ Y^2=(r+1)\binom{r(m+1)}r
+ =\frac{r+1}{r!}\prod_{i=0}^{r-1}(r(m+1)-i).           \tag{10}
+\]
+
+As a polynomial in `m`, the right side has degree `r` and `r` distinct
+roots.  For each fixed odd `r>=3`, (10) is therefore a squarefree
+hyperelliptic curve of genus `(r-1)/2>=1`.  Siegel's theorem makes its
+integral points finite.  This is the same integral-point mechanism used in
+[Filaseta--Moy](https://doi.org/10.4064/cm7474-3-2018), Lemma 4, for their
+fixed-degree square-discriminant analysis.  When `r=1`, the curve has genus
+zero and its integral square values are exactly the family (8).
+
+Consequently, for every fixed `r`,
+
+\[
+ \#\{m\le X:\operatorname{disc}(\mathcal M_{m,r})
+             \text{ is a square}\}=O_r(\sqrt X).       \tag{11}
+\]
+
+In particular, alternating containment has density zero on each fixed-`r`
+row even though it occurs infinitely often there.
+
+The exact regression verifies the geometric-derivative identity, (2), (4),
+the resultant formula, and the square criterion against direct discriminant
+calculations.  It also checks the converse parametrization (5)--(6), the
+infinite even family (7), and the odd family (8), including its converse for
+`r=1`, as well as the degree and squarefreeness of the curve (10), in bounded
 ranges:
 
 ```bash

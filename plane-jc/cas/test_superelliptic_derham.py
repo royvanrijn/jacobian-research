@@ -119,8 +119,25 @@ for matrix in connection.matrices:
             sp.Poly(denominator, u), sp.Poly(-discriminant, u)
         ) == 0
 
+# The actual plane-block rank also works without specializing to genus one.
+# This one-parameter degree-eight slice gives a dense 6x6 connection whose
+# denominators are scalar multiples of the slice discriminant.
+plane_u = sp.symbols("plane_u")
+plane_A = t**8 + plane_u * t**7 + t
+plane_curve = SuperellipticDeRham(t, plane_A, 2, check_squarefree=False)
+plane_connection = plane_curve.gauss_manin_connection((plane_u,), 1)
+plane_matrix = plane_connection.matrices[0]
+assert plane_curve.genus == 3
+assert plane_matrix.shape == (6, 6)
+assert all(value != 0 for value in plane_matrix)
+plane_discriminant = sp.factor(sp.discriminant(plane_A, t))
+for value in plane_matrix:
+    denominator = sp.factor(sp.denom(sp.cancel(value)))
+    assert not sp.cancel(denominator / plane_discriminant).has(plane_u)
+
 print("PASS: superelliptic Hermite/de Rham reduction")
 print("PASS: (72,108) gives 11 solved coefficients and 6 compact obstructions")
 print("PASS: character dimensions sum to compact H^1_deRham")
 print("PASS: trivial character descends to a rational quotient differential")
 print("PASS: elliptic Gauss--Manin matrices are flat with discriminant poles")
+print("PASS: genus-three plane slice has a dense 6x6 Gauss--Manin matrix")

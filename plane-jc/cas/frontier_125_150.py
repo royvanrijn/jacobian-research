@@ -18,6 +18,7 @@ class Case:
     chain: tuple[str, ...]
     mn: tuple[int, int]
     printed_max: int
+    source_caveat: str = ""
 
     @property
     def degrees(self) -> tuple[int, int]:
@@ -44,7 +45,17 @@ CASES = (
     Case("table-L1b", (9, 36), ("(17/9,4)",), (2, 3), 135),
     Case("table-L1", (11, 33), ("(19/4,8)",), (2, 3), 132),
     Case("table-L1", (12, 33), ("(11/3,8)",), (2, 3), 135),
-    Case("table-L2", (8, 40), ("(8,28)", "(11/4,7)"), (3, 2), 144),
+    Case(
+        "table-L2",
+        (8, 40),
+        ("(8,28)", "(11/4,7)"),
+        (3, 2),
+        144,
+        (
+            "reconcile with arXiv:1605.09430 remark after Proposition 3.29: "
+            "B0=(8,28), B1=(8,40) leads to impossible last lower corner (8,4)"
+        ),
+    ),
     Case("table-L2", (9, 36), ("(9,24)", "(11/3,8)"), (2, 3), 135),
     Case("table-L2a", (10, 40), ("(16/5,6)", "(23/10,3)"), (3, 2), 150),
     Case("table-L2b", (10, 40), ("(18/5,8)", "(8/5,3)"), (3, 2), 150),
@@ -71,11 +82,16 @@ def main() -> None:
         (63, 147), (98, 147), (100, 150),
     }
     assert set(by_pair) == expected
+    caveated = [case for case in CASES if case.source_caveat]
+    assert len(caveated) == 1
+    assert caveated[0].a0 == (8, 40)
+    assert caveated[0].chain == ("(8,28)", "(11/4,7)")
     print("PAIR|GCD|RATIO|REALIZATIONS")
     for pair in sorted(by_pair, key=lambda p: (p[1], p[0])):
         g = gcd(*pair)
         ratio = f"{pair[0] // g}:{pair[1] // g}"
         print(f"{pair[0]},{pair[1]}|{g}|{ratio}|{len(by_pair[pair])}")
+    print("SOURCE_RECONCILIATION|8,40->8,28->11/4,7|LOWER_SIDE_(8,4)")
     print("FRONTIER_125_150_PASS")
 
 

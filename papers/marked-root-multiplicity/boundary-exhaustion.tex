@@ -393,7 +393,7 @@ $mr\le30$, the entire column $m=1$, and the other uniform arithmetic
 criteria; direct resultants are additionally checked for $1\le m,r\le5$.
 In particular every rung of the quadratic stationary-point ladder is covered.
 
-There are also two uniform columns which do not use irreducibility.  Put
+There are also three uniform columns which do not use irreducibility.  Put
 $M_k=K_{m,k}$, including $M_0=1$.  Scaling $v=wt$ and expanding gives
 \[
  L_{m,r}=\sum_{k=0}^r(-1)^k\binom rk
@@ -426,4 +426,55 @@ The first root is $w=0$, where $K_{m,2}=1/3$.  At the second,
 $y=(m+2)^2/m^2>1$, while the braced factor in (4.27) equals
 $2(m+2)(5m^2+10m+4)/m^3>2$; since $z=y^m>1$, (4.27) is
 impossible.  Hence (4.22) holds for every $m$ when $r=2$ as well.
+
+For $r=3$, first note the complementary incomplete-beta identity
+\[
+ K_{m,r}(1-y)=\beta_r\sum_{j=0}^{mr}\binom{j+r}{r}y^j,
+ \qquad
+ \beta_r=\frac{r!}{\prod_{j=1}^{r+1}(mr+j)}.           \tag{4.29}
+\]
+The consecutive coefficient ratios are $j/(j+r)$, so the
+Enestrom--Kakeya theorem puts every zero in
+\[
+ |y|\le \frac{mr}{mr+r}=\frac{m}{m+1}.                \tag{4.30}
+\]
+
+At a common $K_{m,3},L_{m,3}$ root, $M_3=0$, and (4.24), after division by
+the nonzero $z$, becomes $z^2-3zM_1+3M_2=0$.  Put $D=1-y$ and let $T_k$
+denote the sum in (4.26).  Clearing the endpoint denominators gives
+\[
+ az^2+bz+c=0,\qquad dz^3+e=0,                         \tag{4.31}
+\]
+where
+\[
+ \begin{aligned}
+ a&=D^3+3yDT_1-3yT_2,&b&=-3\beta_1D,&c&=3\beta_2,\\
+ d&=-yT_3,&&e&=\beta_3.
+ \end{aligned}                                       \tag{4.32}
+\]
+Their resultant is
+\[
+ a^3e^2+3abcde-b^3de+c^3d^2.                         \tag{4.33}
+\]
+It factors as $(y-1)^3H_m(y)$ up to a nonzero element of $\mathbb Q(m)$, where
+$H_m$ has degree six.  Put $\rho=m/(m+1)$ and
+\[
+ Q_m(u)=u^6H_m(\rho/u)=q_0u^6+q_1u^5+\cdots+q_6.     \tag{4.34}
+\]
+Let $A_m,B_m$ be the lower triangular Toeplitz matrices with entries
+$(A_m)_{ij}=q_{i-j}$ and $(B_m)_{ij}=q_{6-i+j}$ for
+$0\le j\le i\le5$.  After clearing a common denominator in $Q_m$, the six
+leading principal minors of the Schur--Cohn matrix
+\[
+ A_mA_m^{\mathsf T}-B_mB_m^{\mathsf T}               \tag{4.35}
+\]
+are polynomials in $m$ of degrees $29,56,81,104,125,144$, respectively,
+and every coefficient of every minor is strictly positive.  The matrix is
+therefore positive definite for $m\ge1$.  Schur--Cohn gives
+\[
+ H_m(y)=0\quad\Longrightarrow\quad |y|>\frac{m}{m+1}. \tag{4.36}
+\]
+which is disjoint from (4.30).  Thus (4.22) also holds for every $m$ when
+$r=3$.  The exact coefficient-positivity certificate is reproduced by
+\path{scripts/verify_contact_resultant_endpoint_reduction.py}.
 \end{proof}

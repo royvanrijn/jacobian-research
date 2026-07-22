@@ -9,8 +9,9 @@ inventing equations from corner data.  A complete block is compiled to:
         -> supported primitive -> tail obstruction certificate.
 
 The normalized (72,108) first block is the golden fixture.  The (96,144)
-repeated-tail row is represented as an incomplete source record because the
-published table supplies corners, not the Laurent coefficient bands.
+repeated-tail row and the (75,125) F2 row are represented as incomplete source
+records because the published table supplies corners, not Laurent coefficient
+bands.
 """
 
 from dataclasses import dataclass
@@ -72,6 +73,8 @@ class TailObstructionCertificate:
     residual: sp.Expr
     residual_degrees: tuple[int, ...]
     tail_differentials: tuple[sp.Expr, ...]
+    tail_infinity_orders: tuple[int, ...]
+    tail_is_second_kind: bool
     de_rham_coordinates: tuple[sp.Expr, ...]
     low_operator_determinant: sp.Expr
     identity_holds: bool
@@ -193,9 +196,20 @@ def compile_weighted_wronskian(ir: WeightedWronskianIR) -> CompiledDeRhamBlock:
     low_determinant, triangular = _low_operator_determinant(ir)
     lower, upper = ir.full_primitive_bounds
     expected_tail = tuple(range(upper + 1, upper + 1 + curve.character_dimension(b)))
+    delta = curve.delta
+    infinity_orders = tuple(
+        (curve.n * (a + b) - a * (degree + 1)) // delta - 1
+        for degree in residual_degrees
+    )
+    # At a finite branch point the local exponents differ by a.  A dy/y term
+    # can occur only in the invariant character b == 0 mod a.  The displayed
+    # infinity orders then decide whether the tail representatives are
+    # regular there.
+    tail_is_second_kind = b % a != 0 and all(order >= 0 for order in infinity_orders)
     tail_basis_certified = (
         triangular
         and low_determinant != 0
+        and tail_is_second_kind
         and residual_degrees == expected_tail
         and len(residual_degrees) == curve.character_dimension(b)
     )
@@ -215,6 +229,8 @@ def compile_weighted_wronskian(ir: WeightedWronskianIR) -> CompiledDeRhamBlock:
         residual=residual.as_expr(),
         residual_degrees=residual_degrees,
         tail_differentials=tuple(t**degree / sp.Symbol("y") ** (a + b) for degree in residual_degrees),
+        tail_infinity_orders=infinity_orders,
+        tail_is_second_kind=tail_is_second_kind,
         de_rham_coordinates=de_rham_coordinates,
         low_operator_determinant=low_determinant,
         identity_holds=identity == 0,
@@ -291,10 +307,39 @@ def repeated_tail_96_144_record() -> NewtonChainIR:
     )
 
 
+def frontier_75_125_record() -> NewtonChainIR:
+    """The first numerical frontier row, still lacking Laurent bands."""
+
+    return NewtonChainIR(
+        name="75_125_F2",
+        corners=(
+            (sp.Rational(5), sp.Rational(20)),
+            (sp.Rational(7, 5), sp.Rational(2)),
+        ),
+        multiplicities=(3, 5),
+        enumeration_source="GGHV 2017 family F2 with j=1",
+        status="family/corner row only; not a derived Laurent system",
+        missing_frontend_data=(
+            "Laurent normalization for the F2 j=1 member",
+            "band supports for the 3:5 approximate-root expansion",
+            "weighted-Wronskian exponents and right-hand side",
+            "supported primitive exponents",
+            "residual diagonal scaling",
+        ),
+        source_reconciliation=(
+            "GGV 2014 Section 5 treats the F2 j=0 degree-(50,75) member "
+            "with ratio 2:3; its modified coefficient systems do not supply "
+            "the missing 3:5 bands for the j=1 degree-(75,125) member"
+        ),
+    )
+
+
 if __name__ == "__main__":
     compiled = compile_weighted_wronskian(normalized_72_108_block())
     repeated = repeated_tail_96_144_record()
+    frontier = frontier_75_125_record()
     print("genus/character dimension", compiled.genus, compiled.compact_dimension)
     print("tail degrees", compiled.certificate.residual_degrees)
     print("tail basis certified", compiled.certificate.tail_basis_certified)
     print("(96,144) front end complete", repeated.frontend_complete)
+    print("(75,125) front end complete", frontier.frontend_complete)

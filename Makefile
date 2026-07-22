@@ -32,6 +32,7 @@ verify-core: verify-minimal
 	$(PYTHON) scripts/audit_map_consistency.py
 	$(PYTHON) scripts/verify_normalized_factorization_slice.py
 	$(PYTHON) scripts/verify_quadratic_cubic_factorization_invariants.py
+	$(PYTHON) scripts/verify_quadratic_cubic_modification_topology.py
 	$(PYTHON) scripts/verify_weighted_invariant_jacobian_reduction.py
 	$(PYTHON) scripts/verify_weighted_tangent_suspension.py
 	$(PYTHON) scripts/verify_foundational_weighted_coefficient_scheme.py

@@ -39,9 +39,28 @@ Equivalently, prove irreducibility of
 interior truncated binomial polynomials.  Classify the natural Galois group
 on the same diagonal; the discriminant has an infinite square locus, so the
 expected large groups must allow both alternating and symmetric cases.  The
-complete range `mr<=30`, the full `m=1` column, and three additional uniform
-irreducibility criteria are recorded in [ARITHMETIC.md](ARITHMETIC.md), but
-they do not yet imply an all-parameter theorem.
+same polynomial is the normalized derivative
+
+\[
+ \sum_{j=0}^{mr}\binom{r+j}{r}x^j
+ =\frac1{r!}\left(\frac d{dx}\right)^r
+   (1+x+\cdots+x^{(m+1)r})
+\]
+
+and the Jacobi specialization `J_(mr)(x,r)`.  The derivative literature
+therefore proves irreducibility for density-one many `m` on every fixed-`r`
+row, but even the complete `r=1` row contains the classical open geometric-
+derivative conjecture.  The complete range `mr<=30`, the full `m=1` column,
+additional uniform criteria, quantitative density bounds, and known `r=1`
+subfamilies are recorded in [ARITHMETIC.md](ARITHMETIC.md).
+
+A sharper intermediate target is to combine fixed-`r` density-one
+irreducibility with Newton-polygon/Jordan-cycle arguments and prove that the
+natural group contains `A_(mr)` for density-one many `m`.  Square
+discriminants have count `O_r(sqrt(X))` for `m<=X`, so this containment would
+already imply the cleaner density-one conclusion `Gal(M_(m,r))=S_(mr)`.
+The alternating square locus and the remaining reducibility exceptions can
+then be attacked as separate thin sets.
 
 Determine also the minimal field over which the full symbolic collision is
 defined, rather than only the evident compositum of the parameter field and
@@ -66,14 +85,15 @@ parameter-irreducibility range: all `mr<=30`, the complete `m=1` ladder, and
 the uniform criteria in [ARITHMETIC.md](ARITHMETIC.md).  Direct resultants are
 also checked on the regression grid `1<=m,r<=5`.
 
-The [endpoint-moment reduction](CONTACT_RESULTANT.md) now gives two further
+The [endpoint-moment reduction](CONTACT_RESULTANT.md) now gives three further
 uniform theorems independent of parameter irreducibility.  It proves
-nonvanishing for every `m` in both columns `r=1` and `r=2`; for `r=1` it also
-gives the closed resultant `((m+1)(m+2))^(-m)`.  For fixed `r`, the same method
+nonvanishing for every `m` in the columns `r=1,2,3`; for `r=1` it also gives
+the closed resultant `((m+1)(m+2))^(-m)`.  For fixed `r`, the same method
 replaces the growing degree-`mr` Sylvester problem by two degree-`r` equations
-in `y=1-w` and `z=y^m`.
+in `y=1-w` and `z=y^m`.  In the `r=3` column, Schur--Cohn separates the
+degree-six endpoint eliminant from the uniform negative-binomial root disk.
 
-The remaining uniform theorem, now beginning at `r>=3`, is the nonvanishing
+The remaining uniform theorem, now beginning at `r>=4`, is the nonvanishing
 problem
 
 \[

@@ -14,6 +14,12 @@ source-aware `(96,144)` record are in
 [`cas/newton_derham_compiler.py`](cas/newton_derham_compiler.py).  The engine
 also computes character-wise Gauss--Manin connection matrices.
 
+Published Laurent polygons can now be compiled mechanically to the leading
+block by [`cas/laurent_band_frontend.py`](cas/laurent_band_frontend.py); see
+[`LAURENT_BAND_FRONTEND.md`](LAURENT_BAND_FRONTEND.md).  The principal missing
+interface has narrowed to deriving an exhaustive normalized polygon list from
+an admissible corner chain.
+
 This is an engine for a leading coefficient block once its Newton bands and
 supports have been derived.  It does **not** derive Laurent polygons from an
 admissible corner chain.  That is the principal missing interface for the
@@ -275,9 +281,11 @@ followed by the same Hermite reduction gives
 
 `SuperellipticDeRham.gauss_manin_connection(...)` returns these matrices in
 the deterministic compact basis.  A two-parameter elliptic regression checks
-flatness and discriminant-supported poles.  This promotes the fiberwise
-de Rham reducer to a family-level engine; the plane-JC obstruction itself is
-a generally non-horizontal section.
+flatness and discriminant-supported poles.  A one-parameter degree-eight
+plane-block slice additionally produces a dense `6x6` genus-three connection
+matrix with poles only on its discriminant.  This promotes the fiberwise de
+Rham reducer to a family-level engine; the plane-JC obstruction itself is a
+generally non-horizontal section.
 
 ## 8. Frontier experiments
 
@@ -334,6 +342,7 @@ PASS: (72,108) gives 11 solved coefficients and 6 compact obstructions
 PASS: character dimensions sum to compact H^1_deRham
 PASS: trivial character descends to a rational quotient differential
 PASS: elliptic Gauss--Manin matrices are flat with discriminant poles
+PASS: genus-three plane slice has a dense 6x6 Gauss--Manin matrix
 ```
 
 The compiler certificate is checked separately:
@@ -347,7 +356,7 @@ Expected output:
 ```text
 PASS: (72,108) support equations are certified de Rham tail coordinates
 PASS: the six tail classes have an exact triangular independence certificate
-PASS: compiler IR refuses to invent missing (96,144) Laurent bands
+PASS: compiler IR refuses to invent missing frontier Laurent bands
 ```
 
 The existing structural checker remains complementary:

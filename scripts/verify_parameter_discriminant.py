@@ -12,7 +12,7 @@ from master_cancellation import (
 )
 
 
-q, x = sp.symbols("q x")
+q, x, u = sp.symbols("q x u")
 square_pairs: set[tuple[int, int]] = set()
 checked = 0
 
@@ -24,6 +24,9 @@ for m in range(1, 31):
 
         polynomial = sp.Poly(parameter_polynomial(m, r, q), q, domain=sp.ZZ)
         reciprocal = sum(sp.binomial(j + r, r) * x**j for j in range(n + 1))
+        geometric = sum(x**j for j in range((m + 1) * r + 1))
+        normalized_derivative = sp.diff(geometric, x, r) / sp.factorial(r)
+        assert sp.expand(reciprocal - normalized_derivative) == 0
         assert sp.cancel(
             x**n * polynomial.as_expr().subs(q, 1 - 1 / x)
             - (-1) ** n * reciprocal
@@ -90,3 +93,32 @@ for r in range(1, 51):
         assert parameter_discriminant_is_square(m, r) == bool(represented)
 
 print("PASS: complete even-degree parametrization and infinite family for each r<=50")
+
+# Complete odd-degree square locus in the r=1 row.  It is exactly
+# m=2*a^2-1 with a odd.
+for a in range(1, 32, 2):
+    m = 2 * a * a - 1
+    assert m % 4 == 1
+    assert parameter_discriminant_is_square(m, 1)
+
+for m in range(1, 2001, 2):
+    represented = False
+    if m % 4 == 1:
+        a, exact = sp.integer_nthroot((m + 1) // 2, 2)
+        represented = bool(exact and a % 2 == 1)
+    assert parameter_discriminant_is_square(m, 1) == represented
+
+print("PASS: geometric-derivative identity and complete odd r=1 square family")
+
+# For fixed odd r>=3, the odd-degree square condition is an integral-point
+# problem on a squarefree hyperelliptic curve of degree r.  Clear the
+# denominator r! to obtain an integral model without changing its roots.
+for r in range(3, 22, 2):
+    curve_rhs = (r + 1) * sp.factorial(r) * sp.prod(
+        r * (u + 1) - index for index in range(r)
+    )
+    curve = sp.Poly(curve_rhs, u, domain=sp.ZZ)
+    assert curve.degree() == r
+    assert sp.gcd(curve, curve.diff()).degree() == 0
+
+print("PASS: odd fixed-r square locus has squarefree hyperelliptic model")

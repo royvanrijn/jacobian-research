@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Exact Frobenius--Jordan Galois certificates in parameter degrees 7--30."""
+"""Exact Frobenius--Jordan certificates, including two odd square-family cases."""
 from __future__ import annotations
 
 import math
@@ -201,3 +201,67 @@ assert set(CERTIFICATES) == {
     if 7 <= m * r <= 30
 }
 print("PASS: complete Frobenius--Jordan classification in degrees 7--30")
+
+# The next two members of the odd square-discriminant family
+# (m,r)=(2*a^2-1,1), after (17,1).  The listed unramified factorizations give
+# exact factor-degree sieves and isolate the displayed prime cycles.
+ODD_SQUARE_CERTIFICATES = {
+    (49, 1): {
+        "sieve": {
+            7: (22, 13, 9, 3, 2),
+            11: (22, 10, 8, 6, 3),
+            13: (24, 15, 10),
+            19: (34, 12, 3),
+        },
+        "jordan": (7, 13),
+    },
+    (97, 1): {
+        "sieve": {
+            5: (89, 6, 2),
+            19: (91, 5, 1),
+            23: (83, 12, 2),
+        },
+        "jordan": (5, 89),
+    },
+}
+
+for pair, certificate in ODD_SQUARE_CERTIFICATES.items():
+    m, r = pair
+    degree = m * r
+    polynomial = sp.Poly(parameter_polynomial(m, r, q), q, domain=sp.ZZ)
+    discriminant = int(parameter_discriminant(m, r))
+    possible = set(range(degree + 1))
+
+    for prime, expected_type in certificate["sieve"].items():
+        assert discriminant % prime != 0
+        actual_type = modular_factor_degrees(polynomial, prime)
+        assert actual_type == expected_type
+        possible &= subset_sums(actual_type)
+    assert possible == {0, degree}
+
+    jordan_prime, cycle_prime = certificate["jordan"]
+    jordan_type = certificate["sieve"][jordan_prime]
+    assert sp.isprime(cycle_prime) and cycle_prime <= degree - 3
+    assert jordan_type.count(cycle_prime) == 1
+    other_lengths = list(jordan_type)
+    other_lengths.remove(cycle_prime)
+    assert math.lcm(*other_lengths) % cycle_prime != 0
+
+    if degree == 49:
+        # A transitive imprimitive group of degree 7^2 embeds in S_7 wr S_7,
+        # whose order has no prime divisor 13.  The isolated 13-cycle therefore
+        # rules out the only possible nontrivial block size.
+        assert cycle_prime == 13 and degree == 7 * 7 and cycle_prime > 7
+        primitive_description = "13-cycle excludes the 7-by-7 block system"
+    else:
+        assert sp.isprime(degree)
+        primitive_description = "prime-degree transitivity"
+
+    assert parameter_discriminant_is_square(m, r)
+    print(
+        f"PASS (m,r)={pair}: exact modular degree sieve; "
+        f"{jordan_type} mod {jordan_prime} isolates a {cycle_prime}-cycle; "
+        f"{primitive_description}; Gal=A{degree}"
+    )
+
+print("PASS: odd square-family certificates Gal=A49 and Gal=A97")

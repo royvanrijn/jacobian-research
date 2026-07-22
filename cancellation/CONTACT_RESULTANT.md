@@ -16,8 +16,8 @@ and
 
 The full cancellation prime-intersection diagram requires
 `Res_w(K_{m,r},L_{m,r}) != 0`.  This note records a uniform endpoint
-reduction and proves the two complete columns `r=1,2`.  It does **not** claim
-the remaining all-parameter theorem for `r>=3`.
+reduction and proves the three complete columns `r=1,2,3`.  It does **not**
+claim the remaining all-parameter theorem for `r>=4`.
 
 ## 1. Triangular beta-primitive identity
 
@@ -75,12 +75,32 @@ The points `y=1` and `y=0` never give a common root: they are respectively
 `w=0`, where `K_{m,r}=1/(r+1)`, and `w=1`, where
 `K_{m,r}=Beta(r+1,mr+1)`.
 
+There is also a uniform root disk which will be decisive for `r=3`.  Put
+`n=mr`.  The complementary incomplete-beta identity gives
+
+\[
+ K_{m,r}(1-y)=\beta_r B_{n,r}(y),\qquad
+ B_{n,r}(y)=\sum_{j=0}^{n}\binom{j+r}{r}y^j.          \tag{5}
+\]
+
+The coefficients are positive, and their consecutive ratios are
+
+\[
+ \frac{\binom{j+r-1}{r}}{\binom{j+r}{r}}=\frac{j}{j+r}.
+\]
+
+Enestrom--Kakeya therefore puts every zero of `K_{m,r}(1-y)` in
+
+\[
+ \boxed{|y|\le \frac{n}{n+r}=\frac{m}{m+1}.}          \tag{6}
+\]
+
 ## 3. The complete column `r=1`
 
 Equation (1) becomes
 
 \[
- L_{m,1}+K_{m,1}=(1-w)^m.                             \tag{5}
+ L_{m,1}+K_{m,1}=(1-w)^m.                             \tag{7}
 \]
 
 A common root would therefore be `w=1`, but
@@ -94,7 +114,7 @@ More precisely,
 \[
  \boxed{
  \operatorname{Res}_w(K_{m,1},L_{m,1})
- =\big((m+1)(m+2)\big)^{-m}.}                         \tag{6}
+ =\big((m+1)(m+2)\big)^{-m}.}                         \tag{8}
 \]
 
 This also gives a literal Bézout certificate.  Let `U_m(w)` be the truncation
@@ -103,7 +123,7 @@ Then `U_mK_{m,1}-1` is divisible by `(1-w)^m=K_{m,1}+L_{m,1}`.  Dividing it
 produces explicit polynomials `A_m,B_m` with
 
 \[
- A_mK_{m,1}+B_mL_{m,1}=1.                             \tag{7}
+ A_mK_{m,1}+B_mL_{m,1}=1.                             \tag{9}
 \]
 
 ## 4. The complete column `r=2`
@@ -118,7 +138,7 @@ Neither `y` nor `z=y^m` is zero, so `L_{m,2}=0` forces `2M_1=z`.
 Using (3)--(4), this is
 
 \[
- zA_m(y)=2,                                           \tag{8}
+ zA_m(y)=2,                                           \tag{10}
 \]
 
 with
@@ -131,7 +151,7 @@ Substitute `z=2/A_m(y)` into `M_2=0` and clear the displayed nonzero
 denominators.  Direct simplification gives
 
 \[
- (m+1)^2(y-1)^3\bigl(m^2y-(m+2)^2\bigr)=0.            \tag{9}
+ (m+1)^2(y-1)^3\bigl(m^2y-(m+2)^2\bigr)=0.            \tag{11}
 \]
 
 The first candidate was excluded above.  The second is
@@ -146,24 +166,110 @@ At this value
  A_m(y)=\frac{2(m+2)(5m^2+10m+4)}{m^3}>2,
 \]
 
-while `z=y^m>1`; hence `zA_m(y)>2`, contradicting (8).  Therefore
+while `z=y^m>1`; hence `zA_m(y)>2`, contradicting (10).  Therefore
 
 \[
  \boxed{\operatorname{Res}_w(K_{m,2},L_{m,2})\ne0
- \quad\text{for every }m\ge1.}                       \tag{10}
+ \quad\text{for every }m\ge1.}                       \tag{12}
 \]
 
-## 5. Remaining step
+## 5. The complete column `r=3`
 
-For `r=3`, eliminating `z` factors off the excluded endpoint `y=1` but leaves
-a genuine degree-six polynomial in `y` with coefficients in `Q[m]`.  It does
-not reduce to the linear factor seen in (9).  The all-parameter problem is
-therefore narrowed, not closed: one must show that the fixed-`r` eliminant
-has no root compatible with `z=y^m`, uniformly for every `r>=3`.
+At a common root, `M_3=0`, and (1) gives
 
-Promising next steps are creative telescoping applied to (1)--(4), or a
-subresultant recurrence in `r` for the endpoint equations.  Raw interpolation
-of `Res_w(K,L)` obscures this structure because its degree grows with `mr`.
+\[
+ L_{m,3}=z^3-3z^2M_1+3zM_2-M_3.
+\]
+
+Since `z` is nonzero, `L_{m,3}=0` reduces to
+
+\[
+ z^2-3zM_1+3M_2=0.                                  \tag{13}
+\]
+
+Put `D=1-y`.  After inserting (3), clearing `D^3` in (13), and clearing
+`D^4` in `M_3=0`, the two equations have the sparse form
+
+\[
+ az^2+bz+c=0,\qquad dz^3+e=0,                         \tag{14}
+\]
+
+where
+
+\[
+ \begin{aligned}
+ a&=D^3+3yDT_1-3yT_2,& b&=-3\beta_1D,& c&=3\beta_2,\\
+ d&=-yT_3,&& e=\beta_3.
+ \end{aligned}                                       \tag{15}
+\]
+
+The quadratic--binomial-cubic resultant is
+
+\[
+ \operatorname{Res}_z(az^2+bz+c,dz^3+e)
+ =a^3e^2+3abcde-b^3de+c^3d^2.                        \tag{16}
+\]
+
+After substitution from (15), (16) factors as the excluded endpoint
+`(y-1)^3` times a degree-six polynomial `H_m(y)` in `Q[m][y]`.  There is no
+need to factor this sextic or to solve the additional equation `z=y^m`.
+Instead put
+
+\[
+ \rho=\frac{m}{m+1},\qquad Q_m(u)=u^6H_m(\rho/u).     \tag{17}
+\]
+
+Write
+`Q_m(u)=q_0u^6+q_1u^5+...+q_6`.  Let `A_m` and `B_m` be the lower triangular
+Toeplitz matrices
+
+\[
+ (A_m)_{ij}=q_{i-j},\qquad (B_m)_{ij}=q_{6-i+j}
+ \quad(0\le j\le i\le5).                             \tag{18}
+\]
+
+The Schur--Cohn criterion says that every zero of `Q_m` lies in the open
+unit disk precisely when
+
+\[
+ C_m=A_mA_m^{\mathsf T}-B_mB_m^{\mathsf T}
+\]
+
+is positive definite.  After clearing a harmless common denominator from
+`Q_m`, the six leading principal minors of `C_m` have degrees
+
+\[
+ 29,\ 56,\ 81,\ 104,\ 125,\ 144                     \tag{19}
+\]
+
+in `m`.  Every coefficient of all six minors is strictly positive.  Thus
+Sylvester's criterion gives `C_m>0` for every positive `m`, and hence
+
+\[
+ H_m(y)=0\quad\Longrightarrow\quad
+ \left|\frac{\rho}{y}\right|<1
+ \quad\Longrightarrow\quad |y|>\frac{m}{m+1}.        \tag{20}
+\]
+
+This is disjoint from the `K_{m,3}` root disk (6).  A common root of
+`K_{m,3}` and `L_{m,3}` is therefore impossible, proving
+
+\[
+ \boxed{\operatorname{Res}_w(K_{m,3},L_{m,3})\ne0
+ \quad\text{for every }m\ge1.}                       \tag{21}
+\]
+
+## 6. Remaining step
+
+The all-parameter problem now begins at `r=4`.  Formula (6) gives a fixed
+comparison disk for every column: it is enough to prove that the roots of a
+fixed-`r` endpoint eliminant lie strictly outside `|y|=m/(m+1)`.  For `r=3`
+this is exactly the Schur--Cohn certificate above.  For higher `r`, a
+subresultant recurrence may keep the eliminants and their Schur transforms
+smaller than a direct expansion.
+
+Raw interpolation of `Res_w(K,L)` still obscures this structure because its
+degree grows with `mr`.
 
 The exact symbolic certificate and bounded general-identity regression are
 [`verify_contact_resultant_endpoint_reduction.py`](../scripts/verify_contact_resultant_endpoint_reduction.py).

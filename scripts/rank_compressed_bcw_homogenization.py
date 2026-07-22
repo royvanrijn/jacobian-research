@@ -221,19 +221,23 @@ def constant_jacobian_kernel(
 ) -> sp.Matrix:
     """Compute the constant intersection of the kernels of ``JH(x)``."""
 
-    jacobian = sp.Matrix([poly.as_expr() for poly in components]).jacobian(variables)
+    jacobian = [
+        [sp.Poly(poly.as_expr(), *variables, domain=sp.QQ).diff(variable) for variable in variables]
+        for poly in components
+    ]
     monomials = sorted(
         {
             exponents
-            for entry in jacobian
-            for exponents, coefficient in sp.Poly(entry, *variables, domain=sp.QQ).terms()
+            for row in jacobian
+            for entry in row
+            for exponents, coefficient in entry.terms()
             if coefficient
         }
     )
     coefficient_matrix = sp.Matrix(
         [
             [
-                sp.Poly(jacobian[i, j], *variables, domain=sp.QQ).coeff_monomial(exponents)
+                jacobian[i][j].coeff_monomial(exponents)
                 for j in range(len(variables))
             ]
             for i in range(len(components))
@@ -242,6 +246,63 @@ def constant_jacobian_kernel(
     )
     basis = coefficient_matrix.nullspace()
     return sp.Matrix.hstack(*basis) if basis else sp.zeros(len(variables), 0)
+
+
+def modular_jacobian_coefficient_rank(
+    components: tuple[sp.Poly, ...],
+    variables: tuple[sp.Symbol, ...],
+    prime: int = 1_000_003,
+) -> int:
+    """Rank of the constant-kernel coefficient matrix over one good prime.
+
+    This is a lower bound for its characteristic-zero rank, hence a lower
+    bound for the final essential quotient dimension.  It is safe for pruning
+    candidates that cannot improve a smaller incumbent.
+    """
+
+    jacobian = [
+        [sp.Poly(poly.as_expr(), *variables, domain=sp.QQ).diff(variable) for variable in variables]
+        for poly in components
+    ]
+    monomials = sorted(
+        {
+            exponents
+            for row in jacobian
+            for entry in row
+            for exponents, coefficient in entry.terms()
+            if coefficient
+        }
+    )
+    rows = [
+        [
+            (
+                int(value.p) * pow(int(value.q), -1, prime) % prime
+                if (value := jacobian[i][j].coeff_monomial(exponents))
+                else 0
+            )
+            for j in range(len(variables))
+        ]
+        for i in range(len(components))
+        for exponents in monomials
+    ]
+    pivots: dict[int, list[int]] = {}
+    for row in rows:
+        reduced = row[:]
+        for pivot in sorted(pivots):
+            if reduced[pivot]:
+                factor = reduced[pivot]
+                reduced = [
+                    (left - factor * right) % prime
+                    for left, right in zip(reduced, pivots[pivot])
+                ]
+        pivot = next((index for index, value in enumerate(reduced) if value), None)
+        if pivot is None:
+            continue
+        inverse = pow(reduced[pivot], -1, prime)
+        pivots[pivot] = [value * inverse % prime for value in reduced]
+        if len(pivots) == len(variables):
+            break
+    return len(pivots)
 
 
 def constant_kernel_quotient(
@@ -289,12 +350,16 @@ def jacobian_coefficient_matrices(
 ) -> tuple[sp.Matrix, ...]:
     """Coefficient matrices of the polynomial matrix ``JH``."""
 
-    jacobian = sp.Matrix([poly.as_expr() for poly in components]).jacobian(variables)
+    jacobian = [
+        [sp.Poly(poly.as_expr(), *variables, domain=sp.QQ).diff(variable) for variable in variables]
+        for poly in components
+    ]
     monomials = sorted(
         {
             exponents
-            for entry in jacobian
-            for exponents, coefficient in sp.Poly(entry, *variables, domain=sp.QQ).terms()
+            for row in jacobian
+            for entry in row
+            for exponents, coefficient in entry.terms()
             if coefficient
         }
     )
@@ -302,7 +367,7 @@ def jacobian_coefficient_matrices(
         sp.Matrix(
             [
                 [
-                    sp.Poly(jacobian[i, j], *variables, domain=sp.QQ).coeff_monomial(exponents)
+                    jacobian[i][j].coeff_monomial(exponents)
                     for j in range(len(variables))
                 ]
                 for i in range(len(components))

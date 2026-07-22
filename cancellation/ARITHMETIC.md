@@ -90,6 +90,14 @@ The parameter `-N` moves with the degree and lies outside the usual
 orthogonality range, so (3c) is structural rather than an immediate
 irreducibility theorem.
 
+Filaseta--Moy also record two geometric origins of these same polynomials:
+they occur in passport-one tree dessins through associated Shabat
+polynomials, and the reciprocal truncated-binomial form occurs in Schubert
+calculus on Grassmannians.  These connections do not currently add a uniform
+arithmetic theorem, but they give two further communities standard entry
+points to the family; see
+[Filaseta--Moy](https://doi.org/10.4064/cm7474-3-2018), Section 1.
+
 A root `q` selects one normalized cancellation jet.  Its coefficient field
 is exactly `Q(q)`: the recurrence in
 [CONSTRUCTION.md](CONSTRUCTION.md) constructs every coefficient over this
@@ -154,6 +162,46 @@ subject to `k=mr` and `4|k`.  Taking `b=a+2rs` gives the infinite family
 Thus alternating containment is an infinite phenomenon on this diagonal,
 not a sporadic feature of the finite table below.
 
+There is also a particularly simple odd-degree family not visible in (8).
+For `r=1` and `k=m=1 mod 4`, the remaining square condition is
+
+\[
+ 2(m+1)\text{ is a square}.
+\]
+
+Consequently
+
+\[
+ \boxed{(m,r)=(2a^2-1,1),\qquad a\text{ odd}}          \tag{8a}
+\]
+
+has square discriminant.  This begins with
+`m=1,17,49,97,161,241,...` and supplies an odd-degree test family for the
+alternating-group branch of the Galois question.
+
+For fixed `r`, the even square locus is a finite union of quadratic
+sequences, hence contributes `O_r(sqrt(X))` parameters `m<=X`.  If `r` is
+odd and at least three, the odd square condition is the integral-point
+equation
+
+\[
+ Y^2=(r+1)\binom{r(m+1)}r,                             \tag{8b}
+\]
+
+whose squarefree right side has degree `r`; the resulting hyperelliptic
+curve has genus `(r-1)/2`.  Siegel's theorem makes this odd branch finite.
+For even `r` there is no odd-degree branch, while `r=1` is exactly (8a).
+Therefore
+
+\[
+ \#\{m\le X:\operatorname{disc}(M_{m,r})\text{ is a square}\}
+ =O_r(\sqrt X).                                        \tag{8c}
+\]
+
+Square discriminants are thus infinite but density zero on every fixed-`r`
+row.  A detailed derivation is retained in
+[the discriminant note](../archive/cancellation-components/PARAMETER_DISCRIMINANT.md).
+
 ## 2. Irreducibility: literature and proved diagonal ranges
 
 The general conjecture for truncated binomial polynomials is
@@ -181,6 +229,54 @@ Known general theorems intersect this diagonal but do not cover it:
   [their small-degree theorem](https://doi.org/10.1007/s12044-016-0325-0).
 - The fixed-`k`, sufficiently-large-`N` theorems do not settle (10), because
   `k=mr` grows with `N` along every infinite fixed-`m` or fixed-`r` row.
+
+The derivative form (3a) nevertheless gives a strong asymptotic theorem on
+every fixed-`r` row.  Borisov--Filaseta--Lam--Trifonov prove that, for each
+fixed derivative order `r`, all but
+
+\[
+ O\!\left(\frac{T\log\log T}{\log T}\right)
+\]
+
+geometric degrees `h<=T` give an irreducible `G_h^(r)`.  Restricting their
+exceptional set to `h=r(m+1)` yields
+
+\[
+ \boxed{\#\{m\le X:M_{m,r}\text{ reducible}\}
+ =O_r\!\left(\frac{X\log\log X}{\log X}\right).}       \tag{10a}
+\]
+
+In particular, for every fixed `r`, irreducibility holds for a density-one
+set of `m`.  For `r=1`, their sharper first-derivative theorem replaces the
+right side by `O_(epsilon)(X^(1/3+epsilon))`.  See
+[Borisov--Filaseta--Lam--Trifonov](https://doi.org/10.4064/aa-90-2-121-153).
+
+The same paper records additional proved first-derivative families.  Since
+the geometric degree is `h=m+1` when `r=1`, irreducibility is known if
+
+\[
+ h=p-1,\qquad h=p^a,\qquad h+1\text{ is squarefree},
+ \qquad\text{or}\qquad h=2p-1,                         \tag{10b}
+\]
+
+where `p` is prime and `a>=1`.  The first case is the existing prime case
+`N=p`; the other three enlarge the explicitly proved `r=1` subfamilies.
+
+The Jacobi form (3b) supplies a complementary fixed-degree theorem.
+Cullinan--Hajir--Sell prove that for every fixed `k>=6`, `J_k(x,y_0)` is
+irreducible for all but finitely many rational `y_0`.  For odd `k`, its
+Galois group is `S_k` outside a finite set; for even `k`, the exceptional
+Galois specializations form a thin set.  They also prove that the generic
+group over `Q(y)` is `S_k`.  See
+[Cullinan--Hajir--Sell](https://doi.org/10.5802/jtnb.659).  This does not by
+itself settle the moving specialization `(k,y)=(mr,r)`, but it identifies the
+relevant specialization geometry and explains why large Galois groups are
+the generic expectation.
+
+Combining (8c) and (10a) shows that, for every fixed `r`, a density-one set
+of `m` gives an irreducible polynomial with nonsquare discriminant.  Hence a
+density-one proof that the Galois group contains `A_k` would automatically
+upgrade to the sharper conclusion `Gal(P_(N,k))=S_k` for density-one `m`.
 
 In addition, the repository proves irreducibility on the cancellation
 diagonal in each of the following cases:
@@ -221,7 +317,9 @@ Uniformly producing such factors is a moving prime-factor problem rather
 than the fixed-degree Thue-equation problem treated in their paper.
 
 The natural Galois group is determined in this repository for every
-`mr<=30`.  Most cases are symmetric.  The exceptions are:
+`mr<=30`, and also for two further members of the odd square family.  Most
+cases in the complete degree range are symmetric.  The known non-symmetric
+groups are:
 
 | Pair(s) | Group |
 |---|---|
@@ -231,10 +329,14 @@ The natural Galois group is determined in this repository for every
 | `(2,8)`, `(16,1)` | `A_16` |
 | `(17,1)` | `A_17` |
 | `(1,24)`, `(12,2)` | `A_24` |
+| `(49,1)` | `A_49` |
+| `(97,1)` | `A_97` |
 
 The two degree-six exceptions reproduce the published Filaseta--Moy
 phenomenon.  Formula (5) explains every alternating entry and the infinite
-square families.  The finite data therefore suggest the sharpened
+square families.  The degree-49 and degree-97 entries are the next two
+members of the odd family (8a), proved by exact modular degree sieves and
+Jordan-cycle certificates.  The data therefore suggest the sharpened
 all-parameter question: apart from the displayed low-degree `D_4` and
 `PGL_2(F_5)` exceptions, does irreducibility imply
 
@@ -252,8 +354,12 @@ on the divisibility diagonal (2)?
 
 Uniform results establish separability, the specialized square criterion,
 the full `m=1` irreducibility column, and the three additional diagonal
-irreducibility criteria above.  Exact finite certificates establish
-irreducibility and the complete natural Galois group for `mr<=30`.
+irreducibility criteria above.  The geometric-derivative literature further
+establishes density-one irreducibility on every fixed-`r` row, with the
+quantitative bounds in (10a), and the extra `r=1` families (10b).  Exact
+finite certificates establish irreducibility and the complete natural
+Galois group for `mr<=30`, together with `A_49` and `A_97` on the odd square
+family.
 
 Open: prove (10) in the remaining cases and answer the large-group question
 (12).  Minimal fields of definition of the collision fibers are a separate
@@ -263,10 +369,11 @@ The exact regressions are:
 
 - `scripts/verify_parameter_irreducibility.py`, for the uniform diagonal
   criteria and modular degree-sieve certificates;
-- `scripts/verify_parameter_discriminant.py`, for (5)--(8) after
+- `scripts/verify_parameter_discriminant.py`, for (3a), (5)--(8a) after
   specialization;
 - `scripts/verify_parameter_galois_groups.py` and
-  `scripts/verify_parameter_galois_jordan.py`, for the range `mr<=30`.
+  `scripts/verify_parameter_galois_jordan.py`, for the range `mr<=30` and
+  the additional odd square-family groups `A_49` and `A_97`.
 
 Detailed component proofs and tables are retained in
 [the cancellation archive](../archive/cancellation-components/).

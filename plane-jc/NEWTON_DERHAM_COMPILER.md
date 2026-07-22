@@ -20,6 +20,13 @@ The implementation is
 derive Laurent bands from a corner chain.  An incomplete chain is rejected
 with a list of the missing front-end data.
 
+The preceding arrow from an already published Laurent polygon to exact band
+supports and bracket layers is now implemented in
+[`LAURENT_BAND_FRONTEND.md`](LAURENT_BAND_FRONTEND.md) and
+[`cas/laurent_band_frontend.py`](cas/laurent_band_frontend.py).  The remaining
+gap is specifically the theorem-heavy arrow from a corner chain to an
+exhaustive normalized polygon list.
+
 ## 1. The `(72,108)` obstruction certificate
 
 For
@@ -125,6 +132,9 @@ The regression family
 
 produces two exact `2x2` matrices, verifies zero curvature, and verifies that
 their poles are supported on `4u^3+27v^2=0`, the discriminant divisor.
+A degree-eight slice `y^2=t^8+ut^7+t` also produces a dense `6x6`
+genus-three matrix whose denominators are scalar multiples of
+`46656u^7+823543`, its discriminant up to sign.
 
 The obstruction section need not be horizontal.  Reusing a local system and
 reusing a plane-JC obstruction problem are therefore different claims.
@@ -169,7 +179,27 @@ comparison
 
 Primitive support and residual scaling must then be compared separately.
 
-## 5. Reproduction
+## 5. The `(75,125)` architecture row
+
+The first numerical frontier is family `F2` at `j=1`:
+
+\[
+ (5,20)\longrightarrow(7/5,2),\qquad(m,n)=(3,5).
+\]
+
+The 2017 paper supplies the family formula and corners, but not Laurent bands
+for this member.  The 2014 polynomial-system paper treats the `j=0` member
+with degrees `(50,75)` and ratio `2:3`; its two modified coefficient systems
+do not derive the `3:5` bands needed at `(75,125)`.  The compiler records five
+missing inputs and rejects this row too.  In particular, neither the covering
+exponent, character, genus, nor obstruction rank can yet be inferred
+faithfully from the family table.
+
+This makes `(75,125)` the clean next front-end derivation problem once the
+published normal-form machinery is formalized.  It is not yet a test vector
+for the de Rham middle end.
+
+## 6. Reproduction
 
 Run:
 
@@ -179,4 +209,4 @@ python3 plane-jc/cas/test_newton_derham_compiler.py
 ```
 
 The second command certifies the `(72,108)` tail basis and confirms that the
-incomplete `(96,144)` record cannot be compiled.
+incomplete `(96,144)` and `(75,125)` records cannot be compiled.

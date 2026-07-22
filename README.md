@@ -10,6 +10,52 @@ inequivalent maps in every generic degree.  The strongest degreewise result
 is now positive-dimensional: in generic degree `N>=4`, the weighted locus
 contains an `(N-3)`-dimensional family of stable classes.
 
+## What is new here: result snapshot
+
+> **Recorded 2026-07-22T19:10:02+02:00 (CEST).**  This timestamp fixes the
+> state of the claims summarized here; it is not a priority date.  “New here”
+> means that no earlier source has been identified in the current provenance
+> audit, not that priority has been established.  “Proved” means proved in the
+> repository, not externally reviewed; [STATUS.md](STATUS.md) is the detailed
+> evidence ledger.
+
+The per-result dates below are CEST Git commit timestamps for the first commit
+containing the stated theorem in its present form.  Where a result was
+completed in stages, each material stage is dated.  A working-tree date is
+identified as uncommitted and therefore is not represented as part of Git
+history.
+
+The original `JC(3)` map, the first marked-projective-root interpretation,
+and the first weighted-lift idea are credited to the public and independent
+sources below.  The main repository-first results are the theory and new
+counterexamples built from them:
+
+| Repository-first result | Added to repository | What was proved here | Why it matters |
+|---|---|---|---|
+| **Positive-dimensional stable moduli in every degree** | Stable theorem: `2026-07-22T13:40:46+02:00` ([`82ded4b`](https://github.com/royvanrijn/jacobian-research/commit/82ded4b2ecb59308266207aa537234073d0bd1f2)); symplectic transfer: `2026-07-22T13:45:04+02:00` ([`2b52cb9`](https://github.com/royvanrijn/jacobian-research/commit/2b52cb920ae4d714c5f734595077c2a7560ff96b)) | For every generic degree `N>=4`, weighted Keller maps contain an `(N-3)`-dimensional family of stable polynomial left--right classes; the same dimension transfers to exact symplectic maps of `A^6`. | This replaces a list of examples by moduli growing linearly with degree.  See the [decorated-normalization invariant](extended-geometry/DECORATED_NORMALIZATION_INVARIANT.md). |
+| **A second, cancellation family** | Degreewise count: `2026-07-21T18:57:58+02:00` ([`07eec55`](https://github.com/royvanrijn/jacobian-research/commit/07eec55222b5e8dce98a63f7dd6b156f3db470fb)); active construction note: `2026-07-21T19:20:10+02:00` ([`38ce4e0`](https://github.com/royvanrijn/jacobian-research/commit/38ce4e04ce2a83b8dc1e0097e276cd09a7d6931b)) | A uniform finite cancellation operator gives noninjective constant-Jacobian maps for all `m,r>=1`, with canonical thick boundary data.  Together with the weighted family it gives at least `tau(N-1)` pairwise stably inequivalent maps in every generic degree `N>=4`. | The bound counts genuinely different construction types, not just parameters inside one family.  See the [construction](cancellation/CONSTRUCTION.md) and [degreewise theorem](papers/marked-root-multiplicity/main.tex). |
+| **The first higher factorization slice classified** | Tangent slice: `2026-07-22T15:39:43+02:00` ([`5b2a581`](https://github.com/royvanrijn/jacobian-research/commit/5b2a581541f67dd9027dfd74f3166cc809b07114)); all hyperplanes: `2026-07-22T17:00:04+02:00` ([`a47a60a`](https://github.com/royvanrijn/jacobian-research/commit/a47a60a33214b6e0298888e33debdbd930ba8b84)); integral topology: working tree `2026-07-22T19:05:13+02:00`, not yet committed | No quadratic--cubic binary-form hyperplane complement is `A^5`.  The natural tangent slice is a new nonproper etale fivefold, homotopy equivalent to `S^3`, with vanishing positive-codimension integral Chow groups and `K_0=Z`. | It explains why the next normalized factorization does not automatically yield `JC(5)` while isolating a new cover whose remaining product question is algebraic, not topological.  See the [`(2,3)` slice audit](extended-geometry/QUADRATIC_CUBIC_FACTORIZATION_SLICE.md). |
+| **Uniform direct `GMC(4)` counterexamples** | `2026-07-22T13:12:08+02:00` ([`b341fd9`](https://github.com/royvanrijn/jacobian-research/commit/b341fd91e91f9eeea6105d9b3b289ffd22c23f04)) | Every nonconstant normalized weighted seed produces an explicit four-real-Gaussian witness family; its full mixed-moment sequence recovers the seed. | This is a new seed-to-moment construction, separate from Long's smaller independent `GMC(3)` witness.  See the [Gaussian bridge](extended-geometry/WEIGHTED_GAUSSIAN_BRIDGE.md). |
+| **Explicit Image and Vanishing counterexamples** | `2026-07-22T18:58:08+02:00` ([`1f06762`](https://github.com/royvanrijn/jacobian-research/commit/1f067624d59b708a661d7284c5613e6f195fa53d)) | A 21-variable cubic-homogeneous Keller collision gives `not SIC(21)` and an explicit 42-variable quartic giving both `not GVC_Delta(42)` and `not VC_(HN,4)(42)`. | The collision supplies an all-orders certificate and a specified inverse coordinate, not a bounded expansion.  See [Image and Vanishing counterexamples](extended-geometry/IMAGE_VANISHING_COUNTEREXAMPLES.md). |
+| **A smaller JC-to-GMC route bound** | `2026-07-22T18:58:08+02:00` ([`1f06762`](https://github.com/royvanrijn/jacobian-research/commit/1f067624d59b708a661d7284c5613e6f195fa53d)) | Rank compression and constant-kernel quotienting reduce the locally reproduced BCW route to a 21-variable cubic-homogeneous collision, hence `not GMC(42)`. | This improves the same route from `not GMC(158)`; it is a route-based dimension bound, not a direct Gaussian witness or a minimality claim.  See the [reproduction and optimization](extended-geometry/LONG_SU2_AND_BCW_REPRODUCTIONS.md). |
+| **Rank-two symplectic/Poisson descent** | `2026-07-22T13:35:11+02:00` ([`3f1452e`](https://github.com/royvanrijn/jacobian-research/commit/3f1452edc97655560a2cdd1eff36e0761c28169e)) | An explicit noninjective exact symplectic map of `A^4`, with all six brackets and a rational three-point fiber, gives the rank-two Poisson/`DC(4)` counterexample and an inverse-Jacobian `A_4` Weyl consequence. | It descends the foundational phenomenon from three canonical pairs to two; the formulas were derived here independently of an unavailable external abstract.  See the [rank-two audit](extended-geometry/QUADRATIC_LADDER_AND_POISSON_AUDIT.md). |
+
+Two other sharp numbers should be read with different provenance.  The
+repository locally reproduces the external Newton-polygon reduction giving
+`max(deg P,deg Q)>=125` for any hypothetical plane counterexample, subject to
+the published minimal/standard normal form; this is not `JC(2)`, does not say
+both degrees are at least 125, and does not assert attainability.  This result
+was added at `2026-07-22T16:28:54+02:00`
+([`eb08867`](https://github.com/royvanrijn/jacobian-research/commit/eb088670ab2cadb5f94625880085a3f019d86605)).
+Conversely, Long's independent direct witness proves the stronger dimension
+statement `not GMC(n)` for every `n>=3`; it was first documented here at
+`2026-07-22T13:12:08+02:00`
+([`b341fd9`](https://github.com/royvanrijn/jacobian-research/commit/b341fd91e91f9eeea6105d9b3b289ffd22c23f04)).
+The repository's novelty is the uniform
+seed-parametrized `GMC(4)` family and the separate JC-to-GMC route compression,
+not Long's result.  See the [plane frontier](plane-jc/DEGREE_FRONTIER_125.md)
+and [external-consequences provenance](extended-geometry/EXTERNAL_CONSEQUENCES_AND_PROVENANCE.md).
+
 The repository is both a proof project and a research diary that has now been
 cleaned into a small active theorem chain.  Mathematical completion and
 external review are deliberately kept separate in [STATUS.md](STATUS.md).
@@ -254,11 +300,18 @@ This rules out the natural product charts, but not an abstract isomorphism
 which mixes all coefficient functions.  A generic-plane/nodal-complement
 argument now proves that the complex fivefold is simply connected.  The top
 boundary homology of the incidence normalization also gives
-`H^2=0` and `H^3=Q(-2)` without a full normal-crossings resolution.  Thus all
-currently computed topology agrees with `A^2 x SL_2`; only possible
-cancelling cohomology in degrees four and five remains.  The
+`H^2=0` and `H^3=Q(-2)` without a full normal-crossings resolution.  A
+two-chart integral Gysin calculation finishes the topology: `H^*(X,Z)` is
+`Z` in degrees zero and three and vanishes otherwise, so the simply connected
+complex fivefold is homotopy equivalent to `S^3`.  Its positive-codimension
+integral Chow groups vanish and its algebraic `K_0` is `Z`.  The Euclidean
+chart is an explicit affine modification of `A^2 x SL_2`, with a two-component
+center and exceptional divisor, but that modification morphism has poles on
+the complementary coefficient chart.  Thus the remaining product question
+is algebraic rather than topological.  The
 [`(2,3)` slice audit](extended-geometry/QUADRATIC_CUBIC_FACTORIZATION_SLICE.md)
-records the calculation and the precise remaining cohomology question.
+records the calculation and the precise remaining modification and
+additive-invariant questions.
 
 ## Parallel discoveries and repository contributions
 
@@ -423,8 +476,10 @@ cancellation types from one another.
 The finer cancellation prime-intersection diagram depends on the contact
 resultant `Res(K_{m,r},L_{m,r})`.  Besides the irreducibility ranges and exact
 finite certificates, an endpoint-moment argument now proves uniform
-nonvanishing for every `m` in both columns `r=1,2`; the unrestricted problem
-for `r>=3` remains open.  See the
+nonvanishing for every `m` in all three columns `r=1,2,3`; the `r=3` proof
+uses Schur--Cohn separation of a degree-six endpoint eliminant from the
+negative-binomial root disk.  The unrestricted problem for `r>=4` remains
+open.  See the
 [contact-resultant reduction](cancellation/CONTACT_RESULTANT.md).
 
 The canonical statement and proof are in the standalone paper
@@ -523,32 +578,16 @@ former fixed-third-component family is the `kappa=-9` slice.  See the
 and the
 [full surface theorem](extended-geometry/ALL_DEGREE_RANK_TWO_DESCENT_PROGRAM.md).
 
-## What is genuinely new here?
+## Detailed novelty ledger
 
-Subject to the provenance limitation above, the repository’s clearest new
-mathematics is not the original map or the first marked-root and weighted
-ideas.  It is the theory built after them:
-
-- the global normalized-cover formulation with the affine source identified
-  as the regular-reconstruction open;
-- exact image and nonproperness theorems with denominator-safe projective
-  reconstruction;
-- functorial reduced, scheme-theoretic, and formal boundary invariants that
-  survive polynomial left–right equivalence and stabilization;
-- the uniform cancellation construction and its arithmetic parameter family;
-- complete normalization-boundary exhaustion for the weighted and
-  cancellation maps;
-- the uniform weighted-seed/Gaussian bridge, including its polynomial
-  determinant correction and exact mixed-moment formula, supported by the
-  standalone constant-term Gaussian--Lagrange lemma;
-- reduced versus nilpotently thick boundary intersections;
-- the `(N-3)`-dimensional weighted stable-class family in every generic degree
-  `N>=4`, transferred unchanged to exact symplectic maps of `A^6`; and
-- the complementary divisor-count lower bound `tau(N-1)`, which distinguishes
-  the weighted locus from multiple cancellation types.
-
-These claims should be read with [STATUS.md](STATUS.md): “proved in the
-repository” and “externally reviewed” are different assertions.
+The snapshot near the top gives the headline results.  The machinery behind
+them consists of the global regular-reconstruction open; exact image and
+nonproperness theorems; reduced, scheme-theoretic, and formal boundary
+invariants stable under left--right equivalence and stabilization; complete
+normalization-boundary exhaustion; and the distinction between reduced and
+nilpotently thick boundary intersections.  The contribution-by-source table
+above and [STATUS.md](STATUS.md) delimit these repository results from
+external discoveries and from locally reproduced work.
 
 ## Reading and reproduction
 

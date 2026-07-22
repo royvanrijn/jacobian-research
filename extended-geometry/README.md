@@ -17,7 +17,7 @@ in [STATUS.md](../STATUS.md).
 | Explicit quartic model | [Quartic weighted geometry](QUARTIC_WEIGHTED_GEOMETRY.md) |
 | Zhuang's external quartic islands | [Weighted-seed identification and boundary audit](EXTERNAL_QUARTIC_ISLANDS.md) |
 | Decorated normalization and degreewise stable moduli | [Scheme-theoretic Fitting, node pairing, conductor, quartic separation, the affine root-one cross-stratum audit, and the `(N-3)`-dimensional weighted moduli theorem](DECORATED_NORMALIZATION_INVARIANT.md) |
-| Cancellation contact resultant | [Endpoint-moment reduction and uniform `r=1,2` proofs](../cancellation/CONTACT_RESULTANT.md) |
+| Cancellation contact resultant | [Endpoint-moment reduction and uniform `r=1,2,3` proofs](../cancellation/CONTACT_RESULTANT.md) |
 | Degree-five positive-dimensional stable moduli | [Stable Hessian-root invariant and explicit family](DEGREE_FIVE_STABLE_MODULI.md) |
 | Degree-five rank-two symplectic descent | [Parameter-dependent residue cancellation and uncountable stable moduli in `A^4`](DEGREE_FIVE_RANK_TWO_DESCENT.md) |
 | Degree-five surface completion and all-degree rank-two descent programme | [Flux obstruction, exact full-surface theorem, degreewise elimination, and direct `A_2` quantization](ALL_DEGREE_RANK_TWO_DESCENT_PROGRAM.md) |
@@ -40,7 +40,7 @@ in [STATUS.md](../STATUS.md).
 | Relative-scaling/boundary-lattice theorem | [One weight map controls etaleness, normalization torsors, units, Picard torsion, canonical classes, and the multi-factor unit obstruction](RELATIVE_SCALING_BOUNDARY_LATTICE.md) |
 | Consecutive-factor contact reduction | [Universal coprime class, catalecticant term, exact gcd recursion, and contact-moduli programme for `V_p x V_(p+1)`](CONSECUTIVE_FACTOR_CONTACT_CLASSIFICATION.md) |
 | Plane degree frontier | [External Newton-polygon reduction and local exact reproduction of the larger-coordinate bound 125](../plane-jc/README.md) |
-| Normalized quadratic--cubic factorization slice | [The natural degree-ten source is factorial with trivial canonical class but has class `L^5-L^3`, so it is not `A^5`](QUADRATIC_CUBIC_FACTORIZATION_SLICE.md) |
+| Normalized quadratic--cubic factorization slice | [The natural degree-ten source is factorial with class `L^5-L^3`, trivial positive Chow groups, `K_0=Z`, and complex homotopy type `S^3`; its Euclidean chart is an explicit affine modification of `A^2 x SL_2`, while the global product question remains open](QUADRATIC_CUBIC_FACTORIZATION_SLICE.md) |
 | Naskręcki “Six Questions” take-away audit | [Closed items, the cubic vertical LND and slice, formal polynomial-orbit triviality, complete reduced boundary geometry, and the remaining algebraization gap](NASKRECKI_SIX_QUESTIONS_AUDIT.md) |
 | Dicritical boundary | [Dicritical compactification](DICRITICAL_COMPACTIFICATION.md) |
 

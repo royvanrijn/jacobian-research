@@ -1,0 +1,149 @@
+# Laurent-polygon to de Rham front end
+
+## Status
+
+[`cas/laurent_band_frontend.py`](cas/laurent_band_frontend.py) now implements
+the exact middle front end
+
+```text
+published Laurent polygons
+    -> lattice points
+    -> unimodular monomial chart
+    -> z-band supports
+    -> bracket layers
+    -> WeightedWronskianIR
+    -> de Rham compiler
+```
+
+It deliberately does not implement
+
+```text
+admissible corner chain -> published Laurent polygons.
+```
+
+That arrow uses the normal-form, predecessor/successor, approximate-root, and
+Laurent-translation theorems of the plane-JC reduction.  It is not determined
+by the corner list alone.
+
+## 1. Exact support compilation
+
+For the audited chart
+
+\[
+ t=xy^2,\qquad z=y^{-1},
+\]
+
+the inverse monomial data are
+
+\[
+ x=tz^2,\qquad y=z^{-1},
+\]
+
+so the exponent map is
+
+\[
+ (i,j)\longmapsto(i,2i-j).
+\]
+
+The exponent matrix is unimodular and `[t,z]_(x,y)=-1`.  The front end
+enumerates every lattice point in each convex polygon and groups the images
+by their `z` exponent.  It reproduces:
+
+| Case | `P` lattice points | `P` bands | `Q` lattice points | `Q` bands |
+| --- | ---: | --- | ---: | --- |
+| 1 | 61 | `2,1,0,...,-8` | 125 | `3,2,1,...,-12` |
+| 2 | 25 | `2,1,0` | 47 | `3,2,1,0` |
+
+Both top supports are
+
+\[
+ A:\ t^1,\ldots,t^8,
+ \qquad
+ D:\ t^2,\ldots,t^{12}.
+\]
+
+The normalization fixes the coefficients of `t` and `t^8` in `A` to one.
+Since `x^2=t^2z^4`, the top bracket layer compiles automatically to
+
+\[
+ 2AD'-3A'D=t^2.
+\]
+
+Feeding that result to the de Rham compiler gives the certified genus-three,
+six-coordinate obstruction for either polygon.
+
+## 2. Bracket-layer compiler
+
+For constant `J=[t,z]_(x,y)`, the implementation uses
+
+\[
+ [P_i(t)z^i,Q_j(t)z^j]_{x,y}
+ =Jz^{i+j-1}\bigl(jP_i'Q_j-iP_iQ_j'\bigr).
+\]
+
+On the audited upper bands it reproduces all five equations `J4,...,J0`,
+including their signs.  Zero formal layers such as the bracket of the two
+`z^0` bands are removed.  The current implementation intentionally requires
+a unimodular Laurent chart and constant `J`; a nonconstant Jacobian monomial
+would also shift band degrees and needs a larger IR.
+
+## 3. Why a corner chain is insufficient
+
+The audited example itself proves that the map from chains to polygon pairs
+is not a function of the printed corners alone.  The single chain
+
+\[
+ (8,28)\longrightarrow(11/4,7)
+\]
+
+produces two distinct Proposition 4.3 polygon pairs.  Their common upper
+bands happen to compile to the same first block, while their lower bands lead
+to different later systems.
+
+Therefore a compiler may not infer a unique Laurent polygon from a row of the
+2017 complete-chain table.  It needs a normal-form certificate containing at
+least:
+
+- the sequence of flips, Laurent translations, and monomial maps;
+- every polygon branch and the theorem making the branch list exhaustive;
+- exact vertex nonvanishing and coefficient normalizations;
+- the full lattice support or inequalities defining it;
+- the transformed bracket monomial.
+
+Once those items are supplied, the new front end performs the remaining
+support and bracket transcription mechanically.
+
+## 4. Consequence for `(75,125)`
+
+Family `F2` at `j=1` supplies only
+
+\[
+ (5,20)\longrightarrow(7/5,2),\qquad(m,n)=(3,5).
+\]
+
+The older `(50,75)` calculation concerns the `j=0`, `(2,3)` member and begins
+with two additional cases `gamma=2,3`; it explicitly says that the first
+normal-form part is not proved there because it is used only to revisit a
+known case.  Consequently it is neither a proof nor a template for the
+`(3,5)` member.
+
+The next genuine frontier task is therefore a new F2 `j=1` normal-form
+proposition producing an exhaustive list of Laurent polygon pairs.  Until
+that theorem is derived, `(75,125)` has no honest band input for either the
+front-end compiler or the de Rham engine.
+
+## 5. Reproduction
+
+Run:
+
+```bash
+python3 plane-jc/cas/test_laurent_band_frontend.py
+```
+
+Expected output:
+
+```text
+PASS: both audited polygons compile to their exact Laurent band supports
+PASS: polygon top bands compile to the certified genus-three first block
+PASS: the front end reproduces all five upper bracket layers J4,...,J0
+```

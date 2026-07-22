@@ -8,6 +8,7 @@ import sympy as sp
 
 from newton_derham_compiler import (
     compile_weighted_wronskian,
+    frontier_75_125_record,
     normalized_72_108_block,
     repeated_tail_96_144_record,
 )
@@ -24,6 +25,8 @@ assert compiled.compact_dimension == 6
 assert len(certificate.solved_coefficients) == 11
 assert len(certificate.compatibility) == 6
 assert certificate.residual_degrees == tuple(range(13, 19))
+assert certificate.tail_infinity_orders == (5, 4, 3, 2, 1, 0)
+assert certificate.tail_is_second_kind
 assert certificate.identity_holds
 assert certificate.tail_basis_certified
 assert all(
@@ -58,6 +61,11 @@ repeated = repeated_tail_96_144_record()
 assert not repeated.frontend_complete
 assert len(repeated.missing_frontend_data) == 5
 assert "impossible last lower corner (8,4)" in repeated.source_reconciliation
+frontier = frontier_75_125_record()
+assert not frontier.frontend_complete
+assert frontier.multiplicities == (3, 5)
+assert len(frontier.missing_frontend_data) == 5
+assert "j=0 degree-(50,75)" in frontier.source_reconciliation
 
 try:
     compile_weighted_wronskian(block.__class__(
@@ -77,4 +85,4 @@ else:
 
 print("PASS: (72,108) support equations are certified de Rham tail coordinates")
 print("PASS: the six tail classes have an exact triangular independence certificate")
-print("PASS: compiler IR refuses to invent missing (96,144) Laurent bands")
+print("PASS: compiler IR refuses to invent missing frontier Laurent bands")

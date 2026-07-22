@@ -16,8 +16,17 @@ certificate are documented in
 python3 plane-jc/cas/test_newton_derham_compiler.py
 ```
 
-This also verifies that the incomplete `(96,144)` table row is rejected until
-its Laurent bands and source-level lower-side conflict are resolved.
+This also verifies that the incomplete `(96,144)` and `(75,125)` table rows
+are rejected until their Laurent bands are derived; the former additionally
+has a source-level lower-side conflict to resolve.
+
+To compile both audited Proposition 4.3 polygons through lattice supports,
+the Laurent chart, all upper bracket layers, and the genus-three first block,
+run:
+
+```bash
+python3 plane-jc/cas/test_laurent_band_frontend.py
+```
 
 The exact 90 MB Zenodo attachment and its extracted source snapshot are pinned
 in the repository at

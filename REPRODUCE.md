@@ -29,9 +29,13 @@ multiplication, and the two explicit linear changes recovering the announced
 map.
 It also checks the normalized `(2,3)` factorization slice: the unimodular
 boundary lattice, class `L^5-L^3`, direct counts `q^5-q^3` for four small
-prime fields, and generic degree ten.  The script checks the algebraic and
-arithmetic certificates; it does not promote a virtual Hodge polynomial to
-individual cohomology groups.
+prime fields, and generic degree ten.  A separate two-chart certificate
+checks the Euclidean quadratic norm, its affine-modification presentation
+over `A^2 x SL_2`, the complementary-chart transition, and the integral
+residue coefficients `1`, `2`, and the nonzero mod-two boundary used to prove
+that integral cohomology is `Z` in degrees zero and three only.  The scripts
+check the algebraic, arithmetic, and Gysin inputs; the written audit supplies
+the localization sequences and homotopy argument.
 The same target verifies the general weight-`(1,-1,-k)` invariant-coordinate
 Jacobian reduction for `k=1,2,3,4`, including the foundational
 `(-2,-1,1)` output weights.  It then reconstructs the complete
@@ -112,8 +116,10 @@ make verify-master
 This runs the construction, parameter arithmetic, boundary, monodromy, and
 current-ansatz rigidity regressions.  It includes the endpoint-moment
 reduction of the cancellation contact resultant: the general triangular
-identity is checked exactly on a bounded grid, while the complete `r=1,2`
-columns are proved symbolically with `m` left as a parameter.
+identity is checked exactly on a bounded grid, while the complete `r=1,2,3`
+columns are proved symbolically with `m` left as a parameter.  The `r=3`
+certificate checks coefficientwise positivity of all six principal minors
+of the reciprocal eliminant's Schur--Cohn matrix.
 
 ## External quartic islands
 

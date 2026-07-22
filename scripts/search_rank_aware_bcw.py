@@ -25,6 +25,7 @@ from rank_compressed_bcw_homogenization import (
     extract_quadratic_cubic,
     factor_cubic_output,
     homogeneous_part,
+    modular_jacobian_coefficient_rank,
     rank_compressed_homogeneous_map,
 )
 from verify_shared_bcw_33_route import apply_shared_step, candidate_splits, high_terms
@@ -153,6 +154,15 @@ def essential_dimension(state: State) -> tuple[int, int]:
     return len(quotient.quotient_variables), quotient.kernel.cols
 
 
+def modular_essential_lower_bound(state: State) -> int:
+    quadratic, cubic = extract_quadratic_cubic(state.expressions, state.variables)
+    factorization = factor_cubic_output(cubic)
+    variables, homogeneous = rank_compressed_homogeneous_map(
+        state.variables, quadratic, factorization
+    )
+    return modular_jacobian_coefficient_rank(homogeneous, variables)
+
+
 def plan_json(
     state: State, rank: int, final_dimension: int, kernel_dimension: int
 ) -> dict[str, object]:
@@ -248,6 +258,8 @@ def main() -> None:
 
         for candidate in completed:
             rank = cubic_rank(candidate)
+            if modular_essential_lower_bound(candidate) >= best_objective:
+                continue
             objective, _ = essential_dimension(candidate)
             if objective < best_objective or (
                 objective == best_objective
