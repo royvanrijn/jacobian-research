@@ -3,12 +3,18 @@
 This audit covers only the foundational-through-weighted core paper. It does not treat later repository
 claims.
 
-## Remaining proof obligations
+## Resolved proof obligations
 
 1. **Root-one algebraization at `C=0`.** The weighted notes use the completed
-   expansion at `W=1` to show formally that `z` has no pole. The paper marks
-   the missing citation or lemma identifying this formal regularity with
-   regularity in the relevant algebraic local ring.
+   expansion at `W=1` to show formally that `z` has no pole. This is now
+   algebraized in the paper: faithful flatness of completion for the excellent
+   normal local ring gives
+   \[
+   K\cap\widehat{\mathcal O}=\mathcal O
+   \]
+   inside the completed fraction field. Obligation 1 is resolved.
+
+## Remaining proof obligations
 
 2. **Zero-cluster special points.** The chart `W=CR` proves the stated generic
    special-fiber equations. It does not classify repeated points of that chart,
@@ -41,8 +47,9 @@ claims.
 - The weighted affine source is no longer called the global simple-root locus.
 - Normality is attributed to taking the normalization; the raw incidence is
   only proved integral and finite flat.
-- The formal root-one expansion is not presented as a complete algebraic chart
-  without a check marker.
+- The root-one completed calculation is used algebraically via the explicit
+  faithful-flat-completion argument; it is not promoted to a classification
+  of the entire `C=0` fiber.
 - The zero-cluster equations are stated generically, not as a complete `C=0`
   fiber classification.
 - Exact images, omitted loci, and boundary decompositions for weighted seeds

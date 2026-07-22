@@ -109,16 +109,13 @@ jobs:
           sudo apt-get update
           sudo apt-get install --yes --no-install-recommends \
             latexmk texlive-fonts-recommended texlive-latex-extra
-      - name: Build all maintained papers
+      - name: Build all standalone papers
         run: make verify-papers
       - name: Archive compiled papers
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         with:
           name: papers-${{ github.sha }}
-          path: |
-            papers/core-counterexample/main.pdf
-            papers/discriminant-pencils/main.pdf
-            papers/marked-root-multiplicity/main.pdf
+          path: papers/*/main.pdf
           if-no-files-found: error
           retention-days: 14
 

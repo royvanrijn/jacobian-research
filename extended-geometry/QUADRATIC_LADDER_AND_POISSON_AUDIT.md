@@ -409,13 +409,14 @@ For `n=2`, its first arrow starts from `JC(4)`, not `JC(3)`.  Formulas
 (9)--(11) use the special marked-root structure of the foundational map and
 are not a formal corollary of that general theorem.
 
-## What remains unavailable
+## Provenance scope (`OP-QP-PROV`, parked)
 
 The **mathematical** existence, bracket, collision, symplectic, and `DC(4)`
 gaps are now closed by the independent construction above.  The
 **provenance** gap is not: the external paper, authors, version, and its actual
 `T,D,S` remain unavailable, so no equality between (9)--(11) and the announced
-manuscript is asserted.
+manuscript is asserted.  This provenance question is tracked only as parked
+item `OP-QP-PROV` in [STATUS.md](../STATUS.md).
 
 No public source matching the exact text was located on 22 July 2026 after
 exact-phrase and formula searches, arXiv metadata searches, author/repository

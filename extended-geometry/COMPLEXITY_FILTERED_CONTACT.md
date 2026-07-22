@@ -442,4 +442,5 @@ as is a Noetherian theorem saying that contact in one fixed full resource box
 at every order produces one exact rational equivalence.  The remaining
 family-theoretic issue is no escape at the base point, and the remaining
 degree-five computation is target-minimal coercivity, preferably in every
-fixed stabilization dimension.
+fixed stabilization dimension.  This continuation is tracked only as
+`OP-LR` in [STATUS.md](../STATUS.md).

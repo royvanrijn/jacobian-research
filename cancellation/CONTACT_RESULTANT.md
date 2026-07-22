@@ -1,5 +1,12 @@
 # Endpoint reduction for the cancellation contact resultant
 
+This note supplies refined projective-branch intersection geometry.  It is
+not a dependency of the degreewise multiplicity theorem, whose nilpotency
+index follows unconditionally from the two proofs in
+[`thick-intersection.tex`](../papers/marked-root-multiplicity/thick-intersection.tex).
+The concise paper appendix is
+[`refined-boundary-geometry.tex`](../papers/marked-root-multiplicity/refined-boundary-geometry.tex).
+
 For positive integers `m,r`, put
 
 \[
@@ -392,7 +399,7 @@ conjugate contradiction.  Therefore
  \quad\text{for every }m\ge1.}                      \tag{31}
 \]
 
-## 7. Remaining step
+## 7. Scope boundary (`OP-CR`)
 
 The all-parameter problem now begins at `r=5`.  Formula (6) still gives a
 fixed comparison disk, but the `r=4` analysis shows that demanding every
@@ -402,7 +409,8 @@ and separate `z` from `y^m` by modulus or argument.  Subresultant recurrences
 may keep the fixed-`r` eliminants and their Schur transforms smaller than a
 direct expansion.
 
-Raw interpolation of `Res_w(K,L)` still obscures this structure because its
+This continuation is tracked only as `OP-CR` in
+[`STATUS.md`](../STATUS.md).  Raw interpolation of `Res_w(K,L)` still obscures this structure because its
 degree grows with `mr`.
 
 The general reduction and `r<=3` certificate are in

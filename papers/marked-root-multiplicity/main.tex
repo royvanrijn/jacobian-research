@@ -89,12 +89,10 @@ containing $N$ distinct points.
 \end{theorem}
 
 The count comes from one weighted class and all $N-1-r$ parameter roots of
-the cancellation type belonging to each proper divisor $r\mid N-1$.  Five
-lemmas separate the construction, exhaustion, invariance, and intersection
-calculations; the parameter-faithfulness theorem then separates roots within
-a type.  This separation is important: a boundary component visible in a
-resolvent chart is not yet a canonical invariant until all boundary
-components have been found.
+the cancellation type belonging to each proper divisor $r\mid N-1$.  Its
+proof uses only four inputs: complete codimension-one boundary lists, stable
+functoriality, the unconditional thick-contact formula, and parameter
+faithfulness.  The refined pairwise intersection diagram is not a dependency.
 
 \section{Marked roots and canonical boundary}
 
@@ -347,12 +345,12 @@ and reconstruct to $N$ distinct source points.
 \begin{proof}[Proof of Theorem~\ref{thm:main}]
 Put $n=N-1$.  Every proper positive divisor $r$ of $n$ determines
 $m=n/r-1\ge1$, and every positive solution of $r(m+1)=n$ arises this way.
-There are $\tau(n)-1$ cancellation types.  Lemmas
-\ref{lem:cancellation}--\ref{lem:contact} attach to type $(m,r)$ the stable
+There are $\tau(n)-1$ cancellation types.  Boundary exhaustion, stable
+functoriality, and Lemma~\ref{lem:contact} attach to type $(m,r)$ the stable
 signature
 \[
  (e_\Delta,\mu)=
- \left(r+1,\,n\left(\frac nr-1\right)\right).             \tag{7.1}
+ \left(r+1,\,n\left(\frac nr-1\right)\right).             \tag{8.1}
 \]
 Distinct divisors give distinct first entries (and also distinct second
 entries), so cancellation maps of different types are pairwise stably
@@ -363,7 +361,7 @@ Thus the number of cancellation classes supplied by the construction is
 \[
  \sum_{\substack{r\mid n\\r<n}}(n-r)
  =n(\tau(n)-1)-\{\sigma(n)-n\}
- =n\tau(n)-\sigma(n).                                  \tag{7.2}
+ =n\tau(n)-\sigma(n).                                  \tag{8.2}
 \]
 
 Lemma~\ref{lem:weighted} supplies one more degree-$N$ map.  Its boundary

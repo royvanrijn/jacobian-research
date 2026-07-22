@@ -420,7 +420,7 @@ for `mr<=30`, together with `A_49` and `A_97` on the odd square family.
 
 Open: prove (10) in the remaining cases and answer the large-group question
 (12).  Minimal fields of definition of the collision fibers are a separate
-arithmetic problem; see the [research roadmap](RESEARCH_ROADMAP.md).
+arithmetic problem; see parked problem `OP-ARITH` in [STATUS.md](../STATUS.md).
 
 The exact regressions are:
 

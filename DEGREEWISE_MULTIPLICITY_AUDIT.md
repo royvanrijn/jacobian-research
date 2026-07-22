@@ -1,4 +1,4 @@
-# Degreewise stable multiplicity: five-lemma audit
+# Degreewise stable multiplicity: four-input audit
 
 This is the verification companion to the canonical standalone paper
 [`Marked-Root Keller Maps and Degreewise Stable Multiplicity`](papers/marked-root-multiplicity/main.tex).
@@ -13,13 +13,11 @@ work over `C`.  The audited conclusion is
 
 Here a *Keller map* is a polynomial map `A^3 -> A^3` with nonzero constant
 Jacobian, and stable left--right equivalence allows polynomial automorphisms
-of source and target after adjoining identity variables.  Each lemma below
-has its own input list; in particular, the construction lemmas do not use the
-boundary calculation, and the functoriality lemma does not use either family.
-The five lemmas give the original divisor-type count; the
-parameter-faithfulness supplement separates all roots within each type and
-gives the displayed strengthening.  Here `sigma` is the sum-of-divisors
-function.
+of source and target after adjoining identity variables.  Each expanded
+calculation below has its own input list.  The canonical M1 proof compresses
+them into four load-bearing packages: complete codimension-one boundary
+lists, stable functoriality, the unconditional thick-contact formula, and
+parameter faithfulness.  Here `sigma` is the sum-of-divisors function.
 
 ## Lemma 1 — the displayed weighted seed is admissible
 
@@ -44,8 +42,9 @@ Thus (1) satisfies the weighted-seed hypotheses.  Taking `b_0=1` and
 \]
 
 in the weighted construction gives a polynomial map `G_N:A^3->A^3` with
-constant nonzero Jacobian and generic fiber degree `N`.  Its explicit target
-`(A,B,C)=(pi,0,1)` has `N` distinct source points.
+constant nonzero Jacobian and generic fiber degree `N`.  Any target value
+outside the finite critical-value set gives `N` distinct source points; the
+choice `(A,B,C)=(pi,0,1)` is only a deterministic exact certificate.
 
 ### Check
 
@@ -66,8 +65,8 @@ Put `p=H'`, `q=(Wp-H)/c` and use
 \]
 
 The conditions at `0` and `1`, together with the displayed value of `a_0`,
-make both quotients in (3) polynomial; direct triangular differentiation
-gives `det DG_N=b_0c=2`.  The inverse equation
+make both quotients in (3) polynomial; the tangent-map core and its weighted
+suspension give `det DG_N=b_0c=2`.  The inverse equation
 
 \[
  H_N(W)-BCW+cAC^2=0                                      \tag{4}
@@ -316,9 +315,9 @@ It does not use the stable-invariance argument.
 
 There are `tau(n)-1` proper positive divisors of `n=N-1`.  For each such
 divisor, Lemma 2 supplies `mr=n-r` parameter branches.  The
-parameter-faithfulness supplement separates the branches within a type.
+parameter-faithfulness theorem separates the branches within a type.
 Distinct divisors `r` have distinct `e_Delta=r+1` (and also distinct values
-`mu=n(n/r-1)`), so Lemmas 3--5 separate different types.  Lemma 1 supplies
+`mu=n(n/r-1)`), so the boundary signature separates different types.  Lemma 1 supplies
 one weighted map; Lemma 5 separates it from every cancellation map by
 reducedness.  Therefore there are at least
 
@@ -330,7 +329,7 @@ reducedness.  Therefore there are at least
 stable left--right classes in generic degree `N`.  Cite the canonical paper,
 not this audit, for the theorem statement and proof.
 
-## Parameter-faithfulness supplement
+## Input 4 — parameter faithfulness
 
 For a fixed cancellation type `(m,r)`, the degree-`mr` squarefree polynomial
 `M_(m,r)` supplies `mr` normalized cancellation jets.  The canonical paper's
@@ -342,14 +341,14 @@ rigidity gives `P -> aP` and `Q -> uQ mod P`.  In the source UFD the two
 affine factors of `P=AB` have distinct residue degrees, so they cannot be
 exchanged.  The unique nondomain fiber of `A=1+xy^m` fixes the scalar of `A`,
 and factorization of `A-1=xy^m` recovers `y` up to the scalar `u`.  The full
-identity `Q=y+xB` then forces `a=u^(m+1)`.  Therefore the boundary residue
+identity `Q=y+xB` then forces `a=u^(m+1)`.  Therefore the cancellation
+reconstruction residue
 
 \[
  q=\left.\frac{B}{y^{m+1}}\right|_{A=0}
 \]
 
-is invariant.  This supplement strengthens the within-type conclusion but is
-not needed for the five-lemma lower bound above.
+is invariant.  This is the fourth required input for the full M1 count.
 
 ## Reproduction hooks
 
@@ -380,6 +379,7 @@ length calculation in
 python3 scripts/audit_thick_intersection_local.py
 ```
 
-These scripts are regressions, not substitutes for Lemmas 3 and 5.  The
+These scripts are regressions, not substitutes for boundary exhaustion and
+the unconditional contact proof.  The
 standalone paper is in
 [`papers/marked-root-multiplicity/`](papers/marked-root-multiplicity/).

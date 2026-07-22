@@ -7,17 +7,15 @@ first-order kernel, removes the 19-dimensional target-Hamiltonian gauge
 subspace, and projects the second-order Maurer--Cartan obstruction to the
 cokernel of the next linearized commutator operator.
 
-The large sparse calculation is performed over the good prime 32003.  Exact
-rational checks are retained for the dimensions which enter the statement.
+The kernel, gauge quotient, quadratic obstruction, and coordinate-axis
+continuation are computed exactly over Q.  The large quadratic projection is
+also repeated over the good prime 32003 as an independent rank check.
 """
 
 from __future__ import annotations
 
 from collections import defaultdict
 from fractions import Fraction
-import subprocess
-import sys
-import tempfile
 
 from sympy.polys.domains import GF, QQ
 from sympy.polys.matrices.sdm import sdm_irref, sdm_nullspace_from_rref
@@ -203,6 +201,20 @@ def second_obstruction(S, T, quotient_pairs, field):
         if any(equation.values())
     }
     obstruction_rref, obstruction_pivots, _ = sdm_irref(projected_rows)
+    # A basis selected from the original projected equations is dramatically
+    # sparser than the reduced basis and generates the same quadratic ideal.
+    ordered_rows = sorted(projected_rows.values(), key=len)
+    transposed_projected = {}
+    for equation_index, equation in enumerate(ordered_rows):
+        for monomial_index, coefficient in equation.items():
+            transposed_projected.setdefault(monomial_index, {})[
+                equation_index
+            ] = coefficient
+    _, sparse_pivots, _ = sdm_irref(transposed_projected)
+    sparse_basis = {
+        index: ordered_rows[pivot] for index, pivot in enumerate(sparse_pivots)
+    }
+    assert len(sparse_basis) == len(obstruction_pivots)
     return (
         quadratic_vectors,
         parameter_monomials,
@@ -211,6 +223,7 @@ def second_obstruction(S, T, quotient_pairs, field):
         len(pivots),
         len(left_kernel),
         len(projected_rows),
+        sparse_basis,
     )
 
 
@@ -316,95 +329,58 @@ def third_order_axis_test(S, T, first_pair, field):
     return False, "u is forced to zero", len(pivots), nullity
 
 
-def singular_chart(equations, parameter_monomials, chart):
-    """Ask Singular for the affine projective chart x_chart=1."""
-
-    variable_names = [f"x{index}" for index in range(38)]
-    polynomials = []
-    for equation in equations.values():
-        terms = []
-        for column, coefficient in equation.items():
-            left, right = parameter_monomials[column]
-            monomial = (
-                f"x{left}^2" if left == right else f"x{left}*x{right}"
-            )
-            terms.append(f"({int(coefficient)})*{monomial}")
-        polynomials.append("+".join(terms))
-    script = f"""
-ring r={PRIME},({','.join(variable_names)}),dp;
-ideal I={','.join(polynomials)},x{chart}-1;
-ideal G=slimgb(I);
-print(\"CHART {chart}\");
-print(\"DIM\"); dim(G);
-print(\"VDIM\"); vdim(G);
-print(\"SIZE\"); size(G);
-"""
-    completed = subprocess.run(
-        ["Singular", "-q"], input=script, text=True, capture_output=True, timeout=300
-    )
-    if completed.returncode:
-        raise RuntimeError(completed.stderr)
-    print(completed.stdout.strip())
-
-
-def msolve_chart(equations, parameter_monomials, chart):
-    """Compute one affine projective chart with the F4 implementation msolve."""
-
-    variable_names = [f"x{index}" for index in range(38)]
-    polynomials = []
-    for equation in equations.values():
-        terms = []
-        for column, coefficient in equation.items():
-            left, right = parameter_monomials[column]
-            monomial = (
-                f"x{left}^2" if left == right else f"x{left}*x{right}"
-            )
-            terms.append(f"({int(coefficient)})*{monomial}")
-        polynomials.append("+".join(terms))
-    polynomials.append(f"x{chart}-1")
-    payload = (
-        ",".join(variable_names)
-        + f"\n{PRIME}\n"
-        + ",\n".join(polynomials)
-        + "\n"
-    )
-    with tempfile.NamedTemporaryFile(mode="w", suffix=".msolve") as source:
-        with tempfile.NamedTemporaryFile(mode="r", suffix=".out") as output:
-            source.write(payload)
-            source.flush()
-            completed = subprocess.run(
-                [
-                    "msolve",
-                    "-f",
-                    source.name,
-                    "-o",
-                    output.name,
-                    "-t",
-                    "4",
-                    "-v",
-                    "1",
-                ],
-                text=True,
-                capture_output=True,
-                timeout=300,
-            )
-            if completed.returncode:
-                raise RuntimeError(completed.stderr)
-            print(completed.stdout.strip())
-            print(output.read().strip())
-
-
 def main():
-    # The rational pass certifies that the quoted 57 and 19 are not modular
-    # rank accidents.  The nonlinear branch exploration then uses GF(32003).
+    # Compute the complete kernel, gauge quotient, and next obstruction over Q.
     S_fraction, T_fraction = degree_five_sample()
     S_q = convert_poly(S_fraction, QQ)
     T_q = convert_poly(T_fraction, QQ)
-    _, _, _, kernel_q, output_count_q = first_kernel(S_q, T_q, QQ)
+    s_q_monomials, t_q_monomials, free_q, kernel_q, output_count_q = first_kernel(
+        S_q, T_q, QQ
+    )
     assert len(kernel_q) == 57
+    exact_gauge_pivots = gauge_pivots(
+        S_q,
+        T_q,
+        s_q_monomials,
+        t_q_monomials,
+        free_q,
+        kernel_q,
+        QQ,
+    )
+    exact_essential = [
+        index for index in range(57) if index not in exact_gauge_pivots
+    ]
+    exact_pairs = [
+        split_pair(kernel_q[index], s_q_monomials, t_q_monomials)
+        for index in exact_essential
+    ]
+    (
+        _,
+        exact_parameter_monomials,
+        exact_equations,
+        exact_equation_pivots,
+        _,
+        _,
+        _,
+        _,
+    ) = second_obstruction(S_q, T_q, exact_pairs, QQ)
+    exact_surviving_axes = [
+        index
+        for index in range(len(exact_essential))
+        if evaluate_equations(
+            exact_equations,
+            exact_parameter_monomials,
+            {index: QQ.one},
+            QQ,
+        )
+    ]
     print(
         "PASS: exact first operator has 2132 columns, rank 2075, "
         f"nullity 57, and {output_count_q} occupied output monomials"
+    )
+    print(
+        "PASS: exact target-Hamiltonian gauge rank=19 and exact quadratic "
+        f"obstruction rank={len(exact_equation_pivots)}"
     )
 
     field = GF(PRIME)
@@ -416,6 +392,7 @@ def main():
     pivots = gauge_pivots(
         S, T, s_monomials, t_monomials, free_columns, kernel, field
     )
+    assert pivots == exact_gauge_pivots
     essential = [index for index in range(57) if index not in pivots]
     assert len(essential) == 38
     quotient_pairs = [
@@ -433,6 +410,7 @@ def main():
         second_rank,
         second_cokernel,
         raw_equations,
+        sparse_equations,
     ) = second_obstruction(S, T, quotient_pairs, field)
     print(
         f"PASS: next linear operator rank={second_rank}; "
@@ -444,25 +422,22 @@ def main():
     )
     term_counts = sorted(len(equation) for equation in equations.values())
     print(f"reduced quadratic term-count range={term_counts[0]}..{term_counts[-1]}")
+    sparse_counts = sorted(len(equation) for equation in sparse_equations.values())
+    print(f"sparse quadratic term-count range={sparse_counts[0]}..{sparse_counts[-1]}")
 
     surviving_axes = []
     for index in range(len(essential)):
         if evaluate_equations(equations, parameter_monomials, {index: field.one}, field):
             surviving_axes.append(index)
+    assert surviving_axes == exact_surviving_axes
     print(
         f"coordinate-axis branches surviving the next obstruction: "
         f"{surviving_axes} ({len(surviving_axes)} of {len(essential)})"
     )
-    if len(sys.argv) == 3 and sys.argv[1] == "--singular-chart":
-        singular_chart(equations, parameter_monomials, int(sys.argv[2]))
-        return
-    if len(sys.argv) == 3 and sys.argv[1] == "--msolve-chart":
-        msolve_chart(equations, parameter_monomials, int(sys.argv[2]))
-        return
     third_order_survivors = []
     for axis in surviving_axes:
         survives, reason, rank, nullity = third_order_axis_test(
-            S, T, quotient_pairs[axis], field
+            S_q, T_q, exact_pairs[axis], QQ
         )
         print(
             f"axis {axis}: hbar^3 combined rank={rank} nullity={nullity}; "

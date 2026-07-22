@@ -266,7 +266,7 @@ and `30`, while the degrees of their radicals are `1` and `3`.  Thus (9) and
 (10) exhaust the reduced constant-`C` boundary, and every point there is an
 automorphism.
 
-## 6. Scope and next boundary calculation
+## 6. Scope boundary (`OP-FC`, parked)
 
 The dual-number result is a classification only inside (1) and after the
 diagonal normalization (3).  The boundary decomposition is for the full
@@ -327,7 +327,8 @@ decomposition
  \cup V(\mathfrak p_2).}                           \tag{16}
 \]
 
-What remains is purely scheme-theoretic: determine the nilpotent gluing of
+The parked problem `OP-FC` in [STATUS.md](../STATUS.md) is purely
+scheme-theoretic: determine the nilpotent gluing of
 the generically doubled toric component to the two nonreduced boundary
 components along (14).  A bounded Singular attempt at the full global
 standard basis still did not terminate; the radical and every reduced

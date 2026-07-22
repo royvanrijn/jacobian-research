@@ -29,7 +29,8 @@ The construction-independent canonical source for stabilization, including
 normalization, valuation, intersection, nilradical, relative-differential,
 Fitting, and conductor base change, is
 [`../../verified/STABLE_NORMALIZATION_FUNCTORIALITY.md`](../../verified/STABLE_NORMALIZATION_FUNCTORIALITY.md).
-The TeX section reproduces the part needed by this paper.
+The TeX section restates the clauses needed by this paper and cites that
+canonical proof.
 
 Build from this directory with:
 

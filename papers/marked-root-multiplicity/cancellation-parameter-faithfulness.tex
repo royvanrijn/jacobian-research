@@ -6,8 +6,8 @@ below is independent of the cancellation root $q$.  The root instead selects
 the unique nonzero projective branch over $P=0$ which belongs to the affine
 reconstruction open.  This section proves that the finite normalization
 together with that open remembers the selection, even after stabilization.
-The proof uses the reconstruction pole only through its intrinsic boundary
-residue.
+The proof uses the reconstruction pole only through the cancellation
+reconstruction residue introduced below.
 
 For a normalized cancellation jet write
 \[
@@ -30,11 +30,11 @@ The resolvent is
 The affine component $A=0$ is intrinsically distinguished from $B=0$ by its
 residue degree over $P=0$.  The function $y$ is a unit at its generic point,
 so the marked reconstruction open carries the canonical quantity
-\begin{equation}
+\[
  \operatorname{CRR}(F_q)
  :=\left.\frac{B}{y^{m+1}}\right|_{A=0}=q.              \tag{6.2a}
  \label{eq:cancellation-reconstruction-residue}
-\end{equation}
+\]
 We call this the \emph{cancellation reconstruction residue}.  On the inverse
 chart $D=A^{-1}$, where $B=PD$ and $y=Q-sP$, it is equivalently
 \[
@@ -71,8 +71,9 @@ The conclusion permits arbitrary mixing of the stable variables.
 
 \begin{proof}
 Preservation of the prime divisor $P=0$ gives $\beta^*P=aP$, since the
-only units of the polynomial ring are constants.  On the boundary plane the
-scheme-theoretic intersection with the discriminant is
+only units of the polynomial ring are constants.  On the boundary plane,
+Proposition~\ref{prop:thick-trace} gives the unconditional scheme-theoretic
+intersection
 \[
  Q^M G=0,
  \qquad
@@ -233,7 +234,7 @@ finite cancellation recursion gives a unique normalized
 degree-$r$ jet over each parameter root, so $h_{q'}=h_q$ as well.
 \end{proof}
 
-\begin{remark}[reconstruction-pole interpretation]
+\begin{remark}[cancellation reconstruction residue]
 The cancellation reconstruction residue is the first coefficient after the
 canonical leading pole
 in

@@ -1,8 +1,9 @@
 # Extended geometry
 
 These documents continue beyond the stable core.  Mathematical completion
-and external review are recorded in the [theorem index](../THEOREMS.yml),
-rendered in [STATUS.md](../STATUS.md).
+and external review are recorded only in
+[`MATH_STATUS.json`](../MATH_STATUS.json), rendered in
+[STATUS.md](../STATUS.md).
 
 | Results | Primary document |
 |---|---|
@@ -34,7 +35,7 @@ rendered in [STATUS.md](../STATUS.md).
 | Weighted tangent suspension and plane Poisson square | [Plane-core determinant rearrangement, explicit foundational pair, tangent-pencil identification, and weighted-Wronskian cascade](WEIGHTED_TANGENT_SUSPENSION.md) |
 | Foundational weighted coefficient scheme | [Exact sixteen-monomial rigidity, dual-number tangent, Wronskian obstruction, and complete two-component boundary decomposition](FOUNDATIONAL_WEIGHTED_COEFFICIENT_SCHEME.md) |
 | Formal polynomial-orbit triviality | [All-order Artin source triviality, finite special-jet interpolation in `A^3`, and the formal-to-algebraic moduli gap](FORMAL_ORBIT_TRIVIALITY.md) |
-| Complexity-filtered orbit contact | [Degree-filtered contact, canonical-jet lower bounds, source-algebraization obstruction, and the exact all-order degree-five law `b_m=34m+1`](COMPLEXITY_FILTERED_CONTACT.md) |
+| Complexity-filtered orbit contact | [Exact source-only profile `b_m=34m+1` in the determinant-normalized target gauge; not target-minimal and not yet a stable LR obstruction](COMPLEXITY_FILTERED_CONTACT.md) |
 | Quadratic ladder and rank-two Poisson completion | [Exact cancellation identification, four-dimensional construction, and external-source audit](QUADRATIC_LADDER_AND_POISSON_AUDIT.md) |
 | Degreewise positive-dimensional exact symplectic moduli | [`(N-3)`-dimensional weighted families in `A^6` via the cotangent lift](SYMPLECTIC_STABLE_MODULI.md) |
 | Stable normal-form consequences | [Consequences and audit](STABLE_NORMAL_FORM_AUDIT.md) |

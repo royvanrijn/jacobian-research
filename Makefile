@@ -74,6 +74,7 @@ verify-theorems:
 verify-master:
 	$(SYSTEM_PYTHON) scripts/audit_boundary_exhaustion_independent.py
 	$(SYSTEM_PYTHON) scripts/audit_thick_intersection_local.py
+	$(SYSTEM_PYTHON) scripts/verify_degreewise_multiplicity_count.py
 	$(PYTHON) scripts/verify_master_universal.py
 	$(PYTHON) scripts/verify_master_instances.py
 	$(PYTHON) scripts/verify_resolvent_ramification_signature.py
@@ -193,14 +194,14 @@ verify-coincident-root-loci:
 	bash scripts/verify_coincident_root_slices.sh
 
 verify-papers:
-	latexmk -cd -pdf -interaction=nonstopmode -halt-on-error papers/core-counterexample/main.tex
-	latexmk -cd -pdf -interaction=nonstopmode -halt-on-error papers/discriminant-pencils/main.tex
-	latexmk -cd -pdf -interaction=nonstopmode -halt-on-error papers/marked-root-multiplicity/main.tex
+	@set -e; for paper in papers/*/main.tex; do \
+		latexmk -cd -pdf -interaction=nonstopmode -halt-on-error "$$paper"; \
+	done
 
 clean-papers:
-	latexmk -cd -C papers/core-counterexample/main.tex
-	latexmk -cd -C papers/discriminant-pencils/main.tex
-	latexmk -cd -C papers/marked-root-multiplicity/main.tex
+	@set -e; for paper in papers/*/main.tex; do \
+		latexmk -cd -C "$$paper"; \
+	done
 	$(RM) papers/core-counterexample/main.bbl
 
 verify: check verify-plane-jc verify-core verify-theorems verify-regressions verify-derived

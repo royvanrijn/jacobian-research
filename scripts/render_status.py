@@ -1,9 +1,5 @@
 #!/usr/bin/env python3
-"""Render the compact mathematical status summary from THEOREMS.yml.
-
-THEOREMS.yml deliberately uses JSON syntax, which is a strict subset of YAML,
-so this repository does not need a YAML package merely to rebuild STATUS.md.
-"""
+"""Validate MATH_STATUS.json and render the public mathematical status page."""
 
 from __future__ import annotations
 
@@ -13,18 +9,19 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-INDEX_PATH = ROOT / "THEOREMS.yml"
+INDEX_PATH = ROOT / "MATH_STATUS.json"
 STATUS_PATH = ROOT / "STATUS.md"
 FIELDS = {
-    "id",
-    "theorem",
-    "status",
-    "canonical_source",
-    "dependencies",
-    "checker",
-    "external_review",
-    "supersedes",
+    "id", "kind", "state", "title", "scope", "canonical_source",
+    "dependencies", "checker", "review", "supersedes", "replaced_by",
+    "priority",
 }
+KINDS = {"theorem", "corollary", "example", "reproduction", "open_problem"}
+STATES = {"proved", "partial", "open", "parked", "archived"}
+REVIEWS = {"none", "independent-replay", "formalized", "external-reviewed"}
+PRIORITIES = {"core", "derived", "reference", "primary", "parked"}
+CORE_ORDER = ["F1", "W1", "S1", "C1", "B1", "P1", "M1", "D1", "F2", "H1", "R1", "R2"]
+ACTIVE_OPEN = {"OP-MARK", "OP-CR", "OP-LR"}
 
 
 def load_index() -> dict:
@@ -32,33 +29,47 @@ def load_index() -> dict:
 
 
 def validate_index(index: dict) -> None:
-    assert index.get("schema_version") == 1, "unsupported theorem-index schema"
-    theorems = index.get("theorems")
-    assert isinstance(theorems, list) and theorems, "the theorem index is empty"
+    assert index.get("schema_version") == 2, "unsupported status schema"
+    assert index.get("authority") == "MATH_STATUS.json"
+    entries = index.get("entries")
+    assert isinstance(entries, list) and entries, "the status registry is empty"
 
-    ids = [item.get("id") for item in theorems]
-    assert len(ids) == len(set(ids)), "theorem IDs must be unique"
+    ids = [item.get("id") for item in entries]
+    assert len(ids) == len(set(ids)), "status IDs must be unique"
     known = set(ids)
-
-    for item in theorems:
-        assert set(item) == FIELDS, f"{item.get('id', '?')}: unexpected schema"
-        theorem_id = item["id"]
-        assert theorem_id and item["theorem"] and item["status"]
-        assert item["external_review"] in {"none", "Lean certificate", "under audit"}
+    for item in entries:
+        item_id = item.get("id", "?")
+        assert set(item) == FIELDS, f"{item_id}: unexpected schema"
+        assert item["id"] and item["title"] and item["scope"]
+        assert item["kind"] in KINDS, f"{item_id}: invalid kind"
+        assert item["state"] in STATES, f"{item_id}: invalid state"
+        assert item["review"] in REVIEWS, f"{item_id}: invalid review"
+        assert item["priority"] in PRIORITIES, f"{item_id}: invalid priority"
         assert isinstance(item["dependencies"], list)
         assert isinstance(item["supersedes"], list)
+        assert isinstance(item["replaced_by"], list)
+        if item["kind"] == "open_problem":
+            assert item["state"] in {"open", "parked"}
+        else:
+            assert item["state"] not in {"open", "parked"}
         for dependency in item["dependencies"]:
             assert dependency in known or dependency.startswith("external: "), (
-                f"{theorem_id}: unresolved dependency {dependency}"
+                f"{item_id}: unresolved dependency {dependency}"
             )
-        source = ROOT / item["canonical_source"]
-        assert source.is_file(), (
-            f"{theorem_id}: missing canonical_source {item['canonical_source']}"
+        for replacement in item["replaced_by"]:
+            assert replacement in known, f"{item_id}: unresolved replacement {replacement}"
+        assert (ROOT / item["canonical_source"]).is_file(), (
+            f"{item_id}: missing canonical source {item['canonical_source']}"
         )
         checker = item["checker"]
-        assert checker is None or isinstance(checker, str)
-        if checker is not None:
-            assert (ROOT / checker).is_file(), f"{theorem_id}: missing checker {checker}"
+        assert checker is None or (ROOT / checker).is_file(), (
+            f"{item_id}: missing checker {checker}"
+        )
+
+    core = {x["id"] for x in entries if x["priority"] == "core"}
+    assert core == set(CORE_ORDER), "the canonical theorem backbone changed"
+    active = {x["id"] for x in entries if x["kind"] == "open_problem" and x["state"] == "open"}
+    assert active == ACTIVE_OPEN, "the primary continuation queue changed"
 
 
 def _link(label: str, path: str) -> str:
@@ -68,54 +79,60 @@ def _link(label: str, path: str) -> str:
 def _items(values: list[str]) -> str:
     if not values:
         return "—"
-    return ", ".join(f"`{value}`" if not value.startswith("external: ") else value for value in values)
+    return ", ".join(f"`{v}`" if not v.startswith("external: ") else v for v in values)
+
+
+def _table(lines: list[str], entries: list[dict], *, replacements: bool = False) -> None:
+    tail = " | Replaced by" if replacements else ""
+    lines.extend([
+        f"| ID | Result | Scope | Source | Dependencies | Checker | Review{tail} |",
+        f"|---|---|---|---|---|---|---{'|---' if replacements else ''}|",
+    ])
+    for item in entries:
+        source = _link("source", item["canonical_source"])
+        checker = _link("checker", item["checker"]) if item["checker"] else "—"
+        extra = f" | {_items(item['replaced_by'])}" if replacements else ""
+        lines.append(
+            f"| {item['id']} | {item['title']} | {item['scope']} | {source} | "
+            f"{_items(item['dependencies'])} | {checker} | {item['review']}{extra} |"
+        )
+    lines.append("")
 
 
 def render(index: dict) -> str:
+    by_id = {x["id"]: x for x in index["entries"]}
+    entries = index["entries"]
     lines = [
         "# Mathematical status",
         "",
-        "<!-- Generated by scripts/render_status.py from THEOREMS.yml; do not edit. -->",
+        "<!-- Generated by scripts/render_status.py from MATH_STATUS.json; do not edit. -->",
         "",
-        "This is a rendered summary of the active theorem chain. "
-        "[`THEOREMS.yml`](THEOREMS.yml) is the single source of truth for theorem "
-        "status, dependencies, checkers, and review state; full statements and "
-        "qualification live in the canonical sources.",
+        "[`MATH_STATUS.json`](MATH_STATUS.json) is the sole status authority. Canonical "
+        "sources contain the proofs; this page records their scope and dependency role. "
+        "A checker establishes reproducibility, not external review.",
         "",
-        "A repository checker is evidence for reproducibility, not external review. "
-        "“Proved” means that the canonical source contains a written argument.",
+        "## Core theorem chain",
         "",
-        "| ID | Theorem | Status | Canonical source | Dependencies | Checker | External review | Supersedes |",
-        "|---|---|---|---|---|---|---|---|",
     ]
-    for item in index["theorems"]:
-        source = _link("source", item["canonical_source"])
-        checker = _link("checker", item["checker"]) if item["checker"] else "—"
-        lines.append(
-            f"| {item['id']} | {item['theorem']} | {item['status']} | {source} | "
-            f"{_items(item['dependencies'])} | {checker} | {item['external_review']} | "
-            f"{_items(item['supersedes'])} |"
-        )
+    _table(lines, [by_id[i] for i in CORE_ORDER])
 
-    lines.extend(
-        [
-            "",
-            "The index covers the active dependency chain, not every consequence or "
-            "external reproduction in the repository. Those results remain scoped in "
-            "their own canonical notes and do not become dependencies unless listed here.",
-            "",
-        ]
-    )
+    sections = [
+        ("Derived corollaries", [x for x in entries if x["kind"] == "corollary" and x["state"] in {"proved", "partial"}], False),
+        ("Examples and regressions", [x for x in entries if x["kind"] == "example" and x["state"] in {"proved", "partial"}], True),
+        ("External reproductions", [x for x in entries if x["kind"] == "reproduction" and x["state"] in {"proved", "partial"}], False),
+        ("Active open problems", [x for x in entries if x["kind"] == "open_problem" and x["state"] == "open"], False),
+        ("Parked problems", [x for x in entries if x["kind"] == "open_problem" and x["state"] == "parked"], False),
+    ]
+    for heading, members, replacements in sections:
+        lines.extend([f"## {heading}", ""])
+        _table(lines, members, replacements=replacements)
     return "\n".join(lines)
 
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument(
-        "--check", action="store_true", help="fail if STATUS.md is not up to date"
-    )
+    parser.add_argument("--check", action="store_true", help="fail if STATUS.md is stale")
     args = parser.parse_args()
-
     index = load_index()
     validate_index(index)
     rendered = render(index)

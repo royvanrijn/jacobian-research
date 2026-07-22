@@ -154,8 +154,9 @@ make verify-lean-foundational
 ```
 
 GitHub Actions runs this target in the required `formal-lean` job using the
-pinned upstream commit and Lean action.  The `papers` job compiles all three
-maintained papers, and `macaulay2-independent-check` runs the pinned
+pinned upstream commit and Lean action.  The `papers` job compiles every
+standalone paper discovered at `papers/*/main.tex`, and
+`macaulay2-independent-check` runs the pinned
 Macaulay2 comparison.  Together with the four Python matrix jobs, these are
 the complete CI verification pipeline.  The final `verification-complete`
 job is the single aggregation check intended for GitHub branch protection.
@@ -361,7 +362,7 @@ make verify
 
 ## Canonical degreewise paper
 
-The canonical statement and proof are in the standalone paper; the five-lemma
+The canonical statement and proof are in the standalone paper; the four-input
 verification companion is
 [`DEGREEWISE_MULTIPLICITY_AUDIT.md`](DEGREEWISE_MULTIPLICITY_AUDIT.md).  Build
 the paper with:
@@ -371,7 +372,8 @@ cd papers/marked-root-multiplicity
 latexmk -pdf -interaction=nonstopmode -halt-on-error main.tex
 ```
 
-To compile every maintained paper with the same target used by CI, run:
+To compile every standalone paper with the same discovery rule used by CI,
+run:
 
 ```bash
 make verify-papers

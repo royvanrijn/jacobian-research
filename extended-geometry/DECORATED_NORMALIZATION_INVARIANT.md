@@ -841,6 +841,10 @@ for a completed computation in every family.
 | upstairs `(e,f)`, different, DVR, and inertia data | complete as invariant data | generic divisorial layer complete |
 | higher intersections and completed local extensions | complete as functorial invariant data | full cancellation prime diagram is exact under `Res(K,L) != 0`, proved for every `mr<=30`, every `m=1`, all four uniform columns `r=1,2,3,4`, and all uniform parameter-irreducibility cases; the remaining all-parameter problem starts at `r=5` |
 
+The valuative collision extension of the affine sheet is tracked only as
+`OP-MARK`, and the higher cancellation resultant only as `OP-CR`, in
+[STATUS.md](../STATUS.md).
+
 The stability inputs agree with standard base-change results: normalization
 commutes with smooth base change ([Stacks, Lemma 76.25.2](https://stacks.math.columbia.edu/tag/082F)),
 and the Kähler different is `Fitt_0 Omega` and commutes with arbitrary base

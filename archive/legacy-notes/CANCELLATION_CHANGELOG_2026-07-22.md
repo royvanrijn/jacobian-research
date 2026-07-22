@@ -20,7 +20,7 @@ the two affine factors `P=AB`; the source identities force
  A\mapsto A,\qquad y\mapsto uy,\qquad B\mapsto u^{m+1}B.
 \]
 
-It therefore fixes the reconstruction-pole residue
+It therefore fixes the cancellation reconstruction residue
 
 \[
  q=\left.\frac{B}{y^{m+1}}\right|_{A=0}.
@@ -29,6 +29,6 @@ It therefore fixes the reconstruction-pole residue
 Hence the `mr` distinct geometric roots of `M_(m,r)` give `mr` distinct
 stable left--right classes.  The proof, including stabilization and the
 `m=1` factor-swap exclusion, is the
-[cancellation-parameter faithfulness theorem](../papers/marked-root-multiplicity/cancellation-parameter-faithfulness.tex).
+[cancellation-parameter faithfulness theorem](../../papers/marked-root-multiplicity/cancellation-parameter-faithfulness.tex).
 Computing the target kernel itself remains an optional automorphism-group
 problem, not an input to parameter faithfulness.

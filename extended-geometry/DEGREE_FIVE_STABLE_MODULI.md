@@ -64,6 +64,18 @@ and work on the nonempty Zariski-open parameter set
  \Lambda=\{\lambda\in\mathbb C:\mathcal E(\lambda)\ne0\}.
 \]
 
+Let `U_obc` denote the ordinary boundary-clean seed open of `F2`, and set
+
+\[
+ \Lambda^\circ=\Lambda\cap\{\lambda:H_\lambda\in U_{\rm obc}\}. \tag{1.4a}
+\]
+
+This is a further nonempty Zariski open: the ordinary and boundary-clean
+conditions are open, and their defining generic conditions do not vanish
+identically on the displayed one-parameter family.  Exact affine-mark
+recovery below is asserted on `Lambda^circ`, not across its omitted collision
+parameters.
+
 For `lambda in Lambda`, put
 
 \[
@@ -131,14 +143,14 @@ with
 
 generic fiber degree five, and a fiber containing five distinct points.
 
-If `F_lambda` and `F_mu` are polynomially left--right equivalent after
-adjoining any number of identity variables, then
+If `lambda,mu in Lambda^circ` and `F_lambda` and `F_mu` are polynomially
+left--right equivalent after adjoining any number of identity variables, then
 
 \[
  \boxed{\lambda=\mu.}                               \tag{2.2}
 \]
 
-Consequently the maps `F_lambda`, `lambda in Lambda`, are an uncountable
+Consequently the maps `F_lambda`, `lambda in Lambda^circ`, are an uncountable
 family of pairwise stably polynomially left--right inequivalent Keller maps
 of generic degree five.
 
@@ -487,11 +499,10 @@ Normalize the seed by
  \qquad \widetilde H_\lambda'(1)=-1.
 \]
 
-The [faithfulness theorem for the full marked cover](DECORATED_NORMALIZATION_INVARIANT.md)
-applies because the seed has a double zero at `0`, a distinguished simple
-root at `1`, and the complete reconstruction open is part of the stable
-boundary object.  Stable equivalence therefore recovers the normalized seed
-itself:
+On `Lambda^circ`, the [generic affine-mark faithfulness theorem
+F2](DECORATED_NORMALIZATION_INVARIANT.md) applies: the decorated normalization
+together with the affine root-one sheet recovers the normalized seed itself.
+Thus stable equivalence on this open gives
 
 \[
  \widetilde H_\lambda=\widetilde H_\mu.
@@ -574,7 +585,7 @@ The first checker verifies the seed identities, admissibility, polynomial
 weighted map, constant Jacobian, inverse equation, split-root and boundary
 exceptional polynomials, exact `C^2` discriminant saturation, the reduced
 boundary conic, and the rational orbit invariant (2.7).  The latter two audit
-the affine root-one mark and reconstruction-pole calculation used by generic
+the affine root-one mark and regular-reconstruction calculation used by generic
 affine-mark faithfulness.
 
 No external specialist review of the Hessian/Fitting-divisor theorem or this

@@ -977,7 +977,8 @@ second coefficient chart.  Globally, (46)--(48) exhibit `X_(2,3)` as an
 trinomial threefold.  A different modification of `A^2 x SL_2` has not been
 constructed.  The ordinary Derksen algebra is the full coordinate ring by
 (58), exactly as for the proposed product; the Makar--Limanov invariant and
-flexibility remain open.  What is localized to `a=0` is the failure of the
+flexibility remain open and are tracked only as parked item `OP-PF` in
+[STATUS.md](../STATUS.md).  What is localized to `a=0` is the failure of the
 generic `Ga^2` product chart to extend, not a failure of the additive kernels
 to generate the ring.
 
