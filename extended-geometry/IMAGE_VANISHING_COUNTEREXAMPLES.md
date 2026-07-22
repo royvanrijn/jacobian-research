@@ -1,25 +1,27 @@
 # Image and Vanishing counterexamples from the essential cubic collision
 
-The repository's 21-variable cubic-homogeneous Keller collision produces three
-direct counterexamples, without passing through the Gaussian Moment
-Conjecture:
+The repository's 21-variable cubic-homogeneous Keller collision and its
+20-variable identity-output slice produce the following direct
+counterexamples, without passing through the Gaussian Moment Conjecture:
 
 \[
- \boxed{\neg\operatorname{SIC}(21)},\qquad
- \boxed{\neg\operatorname{GVC}_{\Delta}(42)},\qquad
- \boxed{\neg\operatorname{VC}_{\mathrm{HN},4}(42)}.
+ \boxed{\neg\operatorname{SIC}(20)},\qquad
+ \boxed{\neg\operatorname{GVC}_{\Delta}(40)},\qquad
+ \boxed{\neg\operatorname{VC}_{\mathrm{HN},4}^{\mathrm{hom}}(42)}.
 \]
 
-Here the first statement is the Special Image Conjecture, the second is the
-generalized Vanishing Conjecture for the ordinary Laplacian, and the third is
-the classical Vanishing Conjecture for quartic homogeneous
-Hessian-nilpotent polynomials.  The same explicit 42-variable quartic works in
-both Vanishing statements.
+Here the first statement is the Special Image Conjecture and the second is the
+generalized Vanishing Conjecture for the ordinary Laplacian.  The resulting
+40-variable polynomial has degrees two through four; it is Hessian nilpotent
+and also violates the nonhomogeneous HN vanishing property.  The final
+statement retains homogeneity: a separate 42-variable quartic violates the
+classical homogeneous Hessian-nilpotent Vanishing Conjecture.
 
 This improves the earlier 95-to-190 stable-normal-form witnesses in
 [STABLE_NORMAL_FORM_AUDIT.md](STABLE_NORMAL_FORM_AUDIT.md).  It also removes
 the previously unspecified inverse-coordinate index: the multiplier is the
-first coordinate `z_0`, certified directly by the stored collision.
+first coordinate `z_0`, certified directly by the stored collision.  Section
+7 also gives an all-order algebraic recurrence for that inverse coordinate.
 
 ## 1. Exact cubic input
 
