@@ -93,6 +93,36 @@ term Laurent obstruction, and proves that its unique quadratic shear makes
 the Hamiltonian polynomial.  It takes several minutes in the pinned symbolic
 environment.
 
+The exceptional `kappa=-1` chart and its pole-filtered monomial shear
+responses through cubic degree are replayed by
+
+```bash
+for degree in 0 1 2 3; do
+  .venv/bin/python scripts/explore_kappa_minus_one_flux.py --shear-degree "$degree"
+done
+```
+
+Each run verifies the replacement determinant and quotient brackets, all
+three Hamiltonian components, and every negative-`X` residue coefficient.
+The full exceptional-divisor completion is checked by
+
+```bash
+.venv/bin/python scripts/explore_kappa_minus_one_flux.py \
+  --x-degree 1 --shear-degree 1
+```
+
+It proves that the complete principal part is canceled by
+`2(2*tau^2-15*tau-18)*X*Q/105`.
+
+The degree-six fixed-`gamma` surface descent is checked by
+
+```bash
+.venv/bin/python scripts/verify_degree_six_fixed_gamma_descent.py
+```
+
+This verifies the full two-parameter seed slice, componentwise Hamiltonian
+identity, complete four-residue obstruction, and unique quadratic shear.
+
 The separately authored Lean certificate is optional because it downloads a
 pinned toolchain:
 
@@ -121,6 +151,22 @@ columns are proved symbolically with `m` left as a parameter.  The `r=3`
 certificate checks coefficientwise positivity of all six principal minors
 of the reciprocal eliminant's Schur--Cohn matrix.
 
+It also runs the log-geometric bridge regression, including the reciprocal
+determinant, canonical Jacobian-LND exponent, the degree-two plinth/Stein
+countermodel, spectral squarefreeness, and Laurent-tail descent.
+
+The arithmetic portion also checks the fixed-row Newton-ramification
+extraction:
+
+```bash
+.venv/bin/python scripts/verify_fixed_r_newton_ramification.py
+```
+
+It verifies the reciprocal numerator and prime-power congruence on a bounded
+grid and exact cyclotomic-cluster Newton edges for derivative orders one
+through eight.  The analytic density estimate is the cited external theorem
+input, not a finite computation.
+
 ## External quartic islands
 
 Juntang Zhuang's pinned `F4a`, `F4b`, and `F4c` examples have an independent
@@ -132,6 +178,21 @@ compact reconstruction and canonical-boundary audit:
 
 This command is also part of `make verify-regressions`.  It requires no
 network access and does not copy or execute the upstream checker.
+
+## Weighted full-cover rigidity
+
+The LL critical-value incidence, low-pole filtration, contravariant
+triangular target convention, affine pencil transport, higher-zero Newton
+polygons, nonzero multiple-root collisions, and normalized rerooting
+identities are checked exactly by
+
+```bash
+.venv/bin/python scripts/verify_stable_generator_rigidity.py
+```
+
+The companion affine-stratum audit verifies that the root-one component is
+regular and that a nontrivial rerooting sends it to an extra-root boundary
+component.  Both commands are part of `make verify-regressions`.
 
 ## External consequence identities
 
@@ -163,17 +224,22 @@ Finally, the essential-dimension search freezes a different 17-dimensional
 trace of cubic-output rank six, homogenizes it in 24 variables, removes its
 three-dimensional constant kernel, and independently replays the resulting
 21-variable collision from the original map using only the standard library.
-A final generator uses the first collision-coordinate values `0,1,-1` to fix
-the multiplier `z_0`, expands the direct 60-term Special Image witness, and
-expands the associated 42-variable Laplacian/Hessian-nilpotent quartic:
+A final group of checks uses the first collision-coordinate values `0,1,-1`
+to fix the multiplier, expands the homogeneous 42-variable quartic, descends
+the contraction to `SIC(20)`, independently reconstructs the 628-term
+40-variable Laplacian witness, and verifies an all-order inverse recurrence:
 
 ```bash
 .venv/bin/python scripts/generate_image_vanishing_counterexamples.py
+.venv/bin/python scripts/generate_identity_slice_counterexamples.py
+python3 scripts/audit_identity_slice_counterexamples_independent.py
+.venv/bin/python scripts/verify_inverse_coordinate_recurrence.py
 ```
 
 The all-order nonvanishing proof is written in
 [`IMAGE_VANISHING_COUNTEREXAMPLES.md`](extended-geometry/IMAGE_VANISHING_COUNTEREXAMPLES.md);
-the generator checks the finite artifact and change-of-variable identities.
+the generators check the finite artifacts and change-of-variable identities;
+the dependency-free audit re-expands the 40-variable witness from scratch.
 A local proof of the
 fixed-dimensional DVEZ/Zhao implication, including Gaussian contraction, the
 countable-union step, and formal inversion, completes the nonexplicit route to
@@ -215,7 +281,9 @@ and final
 together with the new
 [`21-variable essential quotient`](artifacts/generated-results/essential_bcw_21_counterexample.json)
 and its
-[`21/42-dimensional Image and Vanishing witnesses`](artifacts/generated-results/image_vanishing_counterexamples_21_42.json).
+[`20/40-dimensional identity-slice witnesses`](artifacts/generated-results/image_vanishing_counterexamples_20_40.json)
+and
+[`homogeneous 21/42-dimensional witnesses`](artifacts/generated-results/image_vanishing_counterexamples_21_42.json).
 They record the sparse cubic maps, every reduction-step choice, and the three
 exact collision points, together with the expanded contraction and quartic
 polynomials; regeneration is deterministic.

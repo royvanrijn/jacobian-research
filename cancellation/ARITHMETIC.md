@@ -278,6 +278,27 @@ of `m` gives an irreducible polynomial with nonsquare discriminant.  Hence a
 density-one proof that the Galois group contains `A_k` would automatically
 upgrade to the sharper conclusion `Gal(P_(N,k))=S_k` for density-one `m`.
 
+The proof of the geometric-derivative theorem contains one further uniform
+Galois consequence.  Extracting its `p`-adic clusters shows that, for fixed
+`r`, outside
+
+\[
+ O_r\!\left(\frac{X\log\log X}{\log X}\right)
+\]
+
+parameters `m<=X`, the transitive Galois group has order divisible by a prime
+
+\[
+ (\log X)^{10}<p\le mr-3.                              \tag{10c}
+\]
+
+Equivalently, it contains an order-`p` element of cycle type `p^t 1^f` with
+`t>=1` and `f>=p-1`.  This is genuine growing wild ramification, but it is not
+yet a Jordan-cycle theorem: several root-of-unity residue clusters may be
+ramified simultaneously, so the argument does not prove `t=1`.  The exact
+extraction and this support warning are proved in
+[FIXED_R_NEWTON_RAMIFICATION.md](FIXED_R_NEWTON_RAMIFICATION.md).
+
 In addition, the repository proves irreducibility on the cancellation
 diagonal in each of the following cases:
 
@@ -315,6 +336,14 @@ prime factors of numbers that become
 
 Uniformly producing such factors is a moving prime-factor problem rather
 than the fixed-degree Thue-equation problem treated in their paper.
+
+For a fixed omitted-term parameter `r`, (10c) now supplies large prime-order
+inertia on a density-one set.  What remains is sharper and more local than
+the earlier formulation suggested: isolate one `p`-cycle from the possibly
+simultaneous `p`-clusters, then rule out nontrivial block systems.  Only after
+both steps does Jordan's theorem yield `A_(mr)`.  In particular, a Newton
+edge of length `p` must not be described as a pure `p`-cycle without a support
+argument.
 
 The natural Galois group is determined in this repository for every
 `mr<=30`, and also for two further members of the odd square family.  Most
@@ -371,6 +400,8 @@ The exact regressions are:
   criteria and modular degree-sieve certificates;
 - `scripts/verify_parameter_discriminant.py`, for (3a), (5)--(8a) after
   specialization;
+- `scripts/verify_fixed_r_newton_ramification.py`, for the reciprocal
+  numerator, local congruence, and representative cyclotomic Newton edges;
 - `scripts/verify_parameter_galois_groups.py` and
   `scripts/verify_parameter_galois_jordan.py`, for the range `mr<=30` and
   the additional odd square-family groups `A_49` and `A_97`.

@@ -112,3 +112,24 @@ The table shows that parameter irreducibility alone does not force full
 symmetric Galois group.  A uniform theorem must account for the dihedral
 `(2,2)`, the exceptional degree-six families, and the alternating square
 locus before extrapolating from the symmetric cases.
+
+## Fixed-row growing ramification
+
+There is now a uniform asymptotic statement beyond the finite table.  For
+each fixed `r`, all but
+
+\[
+ O_r\!\left(\frac{X\log\log X}{\log X}\right)
+\]
+
+parameters `m<=X` give an irreducible degree-`mr` polynomial whose Galois
+group has order divisible by a prime `p>(log X)^10`.  This follows by
+retaining the root-of-unity Newton clusters in the proof of the
+Borisov--Filaseta--Lam--Trifonov fixed-derivative theorem.  The exact
+translation is in
+[the fixed-row ramification note](../../cancellation/FIXED_R_NEWTON_RAMIFICATION.md).
+
+This result deliberately stops short of calling the resulting order-`p`
+element a Jordan cycle.  Several clusters can contribute simultaneous
+`p`-cycles.  Isolating one cluster and proving primitivity are the two missing
+uniform steps toward density-one `A_(mr)` or `S_(mr)`.

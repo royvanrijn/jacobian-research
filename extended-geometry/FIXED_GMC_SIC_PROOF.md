@@ -337,9 +337,11 @@ If `GMC(42)` were true, (3.4) would give `SIC(21)`, and Section 5 would make
 The contrapositive used here can be sharpened for this stored collision: its
 first coordinate already identifies a nonpolynomial inverse coordinate.  The
 companion [Image and Vanishing note](IMAGE_VANISHING_COUNTEREXAMPLES.md) turns
-that observation into a specified direct `SIC(21)` counterexample and a
-42-variable quartic Laplacian/Hessian-nilpotent witness.  Those direct
-counterexamples do not use the countable-union Gaussian step.
+that observation into a specified direct `SIC(21)` counterexample, descends it
+through the identity output to `SIC(20)` and a 40-variable generalized
+Laplacian witness, and retains a homogeneous quartic HN witness in dimension
+42.  Those direct counterexamples do not use the countable-union Gaussian
+step.
 
 This is now a complete local proof of the route-based failure.  It is still
 nonexplicit as a Gaussian counterexample because Proposition 3.2 uses the

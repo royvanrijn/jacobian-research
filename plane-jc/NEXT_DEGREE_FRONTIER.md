@@ -28,6 +28,54 @@ It returns 13 normalized unordered pairs:
 In particular, 125 is an admissible **maximum** in the enumeration, through
 \((75,125)\); it is not a claim that a Keller counterexample exists.
 
+## Compiler handoff and loose ends — 2026-07-22
+
+The reusable middle end is now implemented and tested:
+
+```text
+published exhaustive Laurent normal form
+    -> Laurent lattice supports and bracket layers
+    -> weighted-Wronskian block
+    -> superelliptic character eigenspace
+    -> canonical de Rham obstruction coordinates
+    -> optional exact local-system reuse certificate
+```
+
+For `(72,108)`, one typed normal-form certificate expands the published chain
+to both Laurent polygon cases.  Both compile to the same genus-three first
+block, and the six compatibility equations are certified coordinates in the
+six-dimensional compact de Rham eigenspace.  The implementation and current
+boundary are documented in
+[`LAURENT_BAND_FRONTEND.md`](LAURENT_BAND_FRONTEND.md) and
+[`NEWTON_DERHAM_COMPILER.md`](NEWTON_DERHAM_COMPILER.md).
+
+Open work, in dependency order:
+
+1. **Coordinate before starting the F2 derivation.**  Another active agent may
+   already be working on the `(75,125)` F2 `j=1` normal form; inspect current
+   worktrees/branches and avoid duplicating that derivation.
+2. **Derive or obtain an exhaustive F2 `j=1` normal-form certificate.**  The
+   required output is every Laurent polygon branch, the normalizing
+   transformations, vertex nonvanishing, coefficient normalizations, full
+   supports, and transformed bracket monomial.  The compiler deliberately
+   rejects the current corner-only record.
+3. **Reconcile the `(96,144)` sources.**  Settle the relation between the 2016
+   lower-side exclusion of `(8,28),(8,40)` and the 2017 raw complete-chain row
+   before treating repeated-tail reuse as a live exclusion problem.
+4. **Test reuse only after a new band derivation exists.**  Derive the new
+   curve polynomial `A`, give an explicit base/coordinate map, pass the exact
+   cyclic-curve identity check, and then compare the forcing differential,
+   primitive support, residual scaling, and gauge/exact class.  Equal coarse
+   fingerprints alone are not evidence of reuse.
+5. **Optional engineering simplification.**  Emit one machine-readable report
+   per normal-form branch containing provenance, polygons, bands, bracket
+   layers, Wronskian data, de Rham certificate, and any reuse certificate.
+
+Scope guard: this handoff records a compiler programme, not a new family
+exclusion or bound.  The externally published bound remains 108; the local
+125 statement retains its explicit dependence on the published normal-form
+reduction and local `(72,108)` certificate.
+
 ## Ranked worklist
 
 “System” below means the coefficient system still to be derived; none is

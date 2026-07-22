@@ -4,20 +4,25 @@
 import sympy as sp
 
 from laurent_band_frontend import (
-    audited_72_108_laurent_case,
+    audited_72_108_normal_form,
     bracket_layers,
-    compile_laurent_leading_block,
+    compile_normal_form,
+    frontier_75_125_normal_form,
 )
 from newton_derham_compiler import compile_weighted_wronskian
 
 
 t = sp.symbols("t")
-compiled_cases = [
-    compile_laurent_leading_block(audited_72_108_laurent_case(case))
-    for case in (1, 2)
-]
+normal_form = audited_72_108_normal_form()
+compiled_cases = list(compile_normal_form(normal_form))
 case1, case2 = compiled_cases
 
+assert normal_form.frontend_complete
+assert normal_form.exhaustive
+assert len(normal_form.cases) == 2
+assert case1.source.chain == case2.source.chain == normal_form.chain
+assert case1.source.P_polygon != case2.source.P_polygon
+assert case1.source.Q_polygon != case2.source.Q_polygon
 assert case1.source.chart.exponent_determinant == -1
 
 assert len(case1.source.P_polygon.lattice_points()) == 61
@@ -78,6 +83,21 @@ expected = {
 assert tuple(layers) == (4, 3, 2, 1, 0)
 assert all(sp.expand(layers[layer] - expression) == 0 for layer, expression in expected.items())
 
+# A family-table row is not a normal-form certificate.  In particular, the
+# compiler must refuse to turn the F2 j=1 chain into guessed Laurent bands.
+frontier = frontier_75_125_normal_form()
+assert not frontier.frontend_complete
+assert not frontier.exhaustive
+assert frontier.cases == ()
+try:
+    compile_normal_form(frontier)
+except ValueError as error:
+    assert "normal form for 75_125_F2 is incomplete" in str(error)
+else:
+    raise AssertionError("an incomplete normal form must not compile")
+
 print("PASS: both audited polygons compile to their exact Laurent band supports")
+print("PASS: one chain expands to two exhaustive, distinct Laurent cases")
 print("PASS: polygon top bands compile to the certified genus-three first block")
 print("PASS: the front end reproduces all five upper bracket layers J4,...,J0")
+print("PASS: an unsupported F2 frontier cannot compile as a normal form")

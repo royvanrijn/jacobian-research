@@ -10,51 +10,96 @@ inequivalent maps in every generic degree.  The strongest degreewise result
 is now positive-dimensional: in generic degree `N>=4`, the weighted locus
 contains an `(N-3)`-dimensional family of stable classes.
 
-## What is new here: result snapshot
+## Discoveries so far: an ELI5 timeline
 
-> **Recorded 2026-07-22T19:10:02+02:00 (CEST).**  This timestamp fixes the
-> state of the claims summarized here; it is not a priority date.  “New here”
-> means that no earlier source has been identified in the current provenance
-> audit, not that priority has been established.  “Proved” means proved in the
-> repository, not externally reviewed; [STATUS.md](STATUS.md) is the detailed
-> evidence ledger.
+> **Snapshot: 22 July 2026.**  This is a timeline of public announcements,
+> external contributions, and results first recorded in this repository—not a
+> priority ruling or a claim of peer review.  The announcement appears as 19
+> or 20 July depending on timezone.  See the [evidence ledger](STATUS.md) and
+> [provenance audit](archive/legacy-notes/PROVENANCE_AUDIT.md) for the careful
+> version.
 
-The per-result dates below are CEST Git commit timestamps for the first commit
-containing the stated theorem in its present form.  Where a result was
-completed in stages, each material stage is dated.  A working-tree date is
-identified as uncommitted and therefore is not represented as part of Git
-history.
+- **19–20 July — the counterexample.**  After Akhil Mathew suggested the
+  problem, [Levent Alpöge posted](https://x.com/__alpoge__/status/2079028340955197566)
+  a formula credited to Fable.  It is a polynomial map of three-dimensional
+  space that is locally reversible everywhere, yet sends three different
+  points to the same point.  In one stroke this disproved the Jacobian
+  conjecture in every dimension at least three; the two-dimensional case is
+  still open.
 
-The original `JC(3)` map, the first marked-projective-root interpretation,
-and the first weighted-lift idea are credited to the public and independent
-sources below.  The main repository-first results are the theory and new
-counterexamples built from them:
+- **20 July — people checked it and explained why it works.**  [Dean Cureton
+  formalized the finite certificate in Lean](https://github.com/deancureton/jacobian),
+  [Andy Jiang](https://x.com/davikrehalt/status/2079175065695035442) explained
+  the map as “choose one root of a cubic, then forget which root was chosen,”
+  and Qiaochu Yuan connected that picture to the MathOverflow discussion.
+  [Alexis Gallagher](https://jacobianfun.org/jacobian-explained) found the
+  weighted-lift viewpoint and a proposed example in every generic fiber
+  degree.  A later geometric manuscript prompted by Semon Rezchikov supplied
+  the auxiliary-conic construction used here.
 
-| Repository-first result | Added to repository | What was proved here | Why it matters |
-|---|---|---|---|
-| **Positive-dimensional stable moduli in every degree** | Stable theorem: `2026-07-22T13:40:46+02:00` ([`82ded4b`](https://github.com/royvanrijn/jacobian-research/commit/82ded4b2ecb59308266207aa537234073d0bd1f2)); symplectic transfer: `2026-07-22T13:45:04+02:00` ([`2b52cb9`](https://github.com/royvanrijn/jacobian-research/commit/2b52cb920ae4d714c5f734595077c2a7560ff96b)) | For every generic degree `N>=4`, weighted Keller maps contain an `(N-3)`-dimensional family of stable polynomial left--right classes; the same dimension transfers to exact symplectic maps of `A^6`. | This replaces a list of examples by moduli growing linearly with degree.  See the [decorated-normalization invariant](extended-geometry/DECORATED_NORMALIZATION_INVARIANT.md). |
-| **A second, cancellation family** | Degreewise count: `2026-07-21T18:57:58+02:00` ([`07eec55`](https://github.com/royvanrijn/jacobian-research/commit/07eec55222b5e8dce98a63f7dd6b156f3db470fb)); active construction note: `2026-07-21T19:20:10+02:00` ([`38ce4e0`](https://github.com/royvanrijn/jacobian-research/commit/38ce4e04ce2a83b8dc1e0097e276cd09a7d6931b)) | A uniform finite cancellation operator gives noninjective constant-Jacobian maps for all `m,r>=1`, with canonical thick boundary data.  Together with the weighted family it gives at least `tau(N-1)` pairwise stably inequivalent maps in every generic degree `N>=4`. | The bound counts genuinely different construction types, not just parameters inside one family.  See the [construction](cancellation/CONSTRUCTION.md) and [degreewise theorem](papers/marked-root-multiplicity/main.tex). |
-| **The first higher factorization slice classified** | Tangent slice: `2026-07-22T15:39:43+02:00` ([`5b2a581`](https://github.com/royvanrijn/jacobian-research/commit/5b2a581541f67dd9027dfd74f3166cc809b07114)); all hyperplanes: `2026-07-22T17:00:04+02:00` ([`a47a60a`](https://github.com/royvanrijn/jacobian-research/commit/a47a60a33214b6e0298888e33debdbd930ba8b84)); integral topology: working tree `2026-07-22T19:05:13+02:00`, not yet committed | No quadratic--cubic binary-form hyperplane complement is `A^5`.  The natural tangent slice is a new nonproper etale fivefold, homotopy equivalent to `S^3`, with vanishing positive-codimension integral Chow groups and `K_0=Z`. | It explains why the next normalized factorization does not automatically yield `JC(5)` while isolating a new cover whose remaining product question is algebraic, not topological.  See the [`(2,3)` slice audit](extended-geometry/QUADRATIC_CUBIC_FACTORIZATION_SLICE.md). |
-| **Uniform direct `GMC(4)` counterexamples** | `2026-07-22T13:12:08+02:00` ([`b341fd9`](https://github.com/royvanrijn/jacobian-research/commit/b341fd91e91f9eeea6105d9b3b289ffd22c23f04)) | Every nonconstant normalized weighted seed produces an explicit four-real-Gaussian witness family; its full mixed-moment sequence recovers the seed. | This is a new seed-to-moment construction, separate from Long's smaller independent `GMC(3)` witness.  See the [Gaussian bridge](extended-geometry/WEIGHTED_GAUSSIAN_BRIDGE.md). |
-| **Explicit Image and Vanishing counterexamples** | `2026-07-22T18:58:08+02:00` ([`1f06762`](https://github.com/royvanrijn/jacobian-research/commit/1f067624d59b708a661d7284c5613e6f195fa53d)) | A 21-variable cubic-homogeneous Keller collision gives `not SIC(21)` and an explicit 42-variable quartic giving both `not GVC_Delta(42)` and `not VC_(HN,4)(42)`. | The collision supplies an all-orders certificate and a specified inverse coordinate, not a bounded expansion.  See [Image and Vanishing counterexamples](extended-geometry/IMAGE_VANISHING_COUNTEREXAMPLES.md). |
-| **A smaller JC-to-GMC route bound** | `2026-07-22T18:58:08+02:00` ([`1f06762`](https://github.com/royvanrijn/jacobian-research/commit/1f067624d59b708a661d7284c5613e6f195fa53d)) | Rank compression and constant-kernel quotienting reduce the locally reproduced BCW route to a 21-variable cubic-homogeneous collision, hence `not GMC(42)`. | This improves the same route from `not GMC(158)`; it is a route-based dimension bound, not a direct Gaussian witness or a minimality claim.  See the [reproduction and optimization](extended-geometry/LONG_SU2_AND_BCW_REPRODUCTIONS.md). |
-| **Rank-two symplectic/Poisson descent** | `2026-07-22T13:35:11+02:00` ([`3f1452e`](https://github.com/royvanrijn/jacobian-research/commit/3f1452edc97655560a2cdd1eff36e0761c28169e)) | An explicit noninjective exact symplectic map of `A^4`, with all six brackets and a rational three-point fiber, gives the rank-two Poisson/`DC(4)` counterexample and an inverse-Jacobian `A_4` Weyl consequence. | It descends the foundational phenomenon from three canonical pairs to two; the formulas were derived here independently of an unavailable external abstract.  See the [rank-two audit](extended-geometry/QUADRATIC_LADDER_AND_POISSON_AUDIT.md). |
+- **20 July — the first consequence roundup.**  [Zihan Zhang's audit](https://zzhang-iu.github.io/papers/direct-consequences-jacobian/index.html)
+  observed that known implications immediately force failures of the Mathieu
+  conjecture for `SU(3)` and of the Gaussian Moments, Vanishing, and Image
+  conjectures in some finite dimensions.  These were existence consequences,
+  not yet small displayed examples.
 
-Two other sharp numbers should be read with different provenance.  The
-repository locally reproduces the external Newton-polygon reduction giving
-`max(deg P,deg Q)>=125` for any hypothetical plane counterexample, subject to
-the published minimal/standard normal form; this is not `JC(2)`, does not say
-both degrees are at least 125, and does not assert attainability.  This result
-was added at `2026-07-22T16:28:54+02:00`
-([`eb08867`](https://github.com/royvanrijn/jacobian-research/commit/eb088670ab2cadb5f94625880085a3f019d86605)).
-Conversely, Long's independent direct witness proves the stronger dimension
-statement `not GMC(n)` for every `n>=3`; it was first documented here at
-`2026-07-22T13:12:08+02:00`
-([`b341fd9`](https://github.com/royvanrijn/jacobian-research/commit/b341fd91e91f9eeea6105d9b3b289ffd22c23f04)).
-The repository's novelty is the uniform
-seed-parametrized `GMC(4)` family and the separate JC-to-GMC route compression,
-not Long's result.  See the [plane frontier](plane-jc/DEGREE_FRONTIER_125.md)
-and [external-consequences provenance](extended-geometry/EXTERNAL_CONSEQUENCES_AND_PROVENANCE.md).
+- **20 July — `not GMC(158)`, followed by a much smaller direct witness.**
+  [Christopher D. Long](https://arxiv.org/abs/2607.18186) tracked the announced
+  map through a standard reduction to obtain the route-based bound
+  `not GMC(158)`.  In the same paper he gave unrelated explicit polynomials in
+  only three real Gaussians, proving the stronger statement `not GMC(n)` for
+  every `n>=3`.  In everyday terms: every power of one polynomial can average
+  to zero while multiplying by a second polynomial keeps producing a nonzero
+  average.
+
+- **20–21 July — the Dixmier conjecture fell too.**  Separate public write-ups
+  by [Omniscience Research Agent and Jeff Pickhardt](https://omniscienceproject.com/papers/an-explicit-counterexample-to-the-dixmier-conjecture-in-a-3-jfLENtXF)
+  and by [Fable 5 in a session directed and circulated by William
+  Mayner](https://github.com/wmayner/dixmier-counterexample) lifted the same
+  three-variable map to an injective but non-surjective endomorphism of the
+  third Weyl algebra.  Thus the analogous noncommutative Dixmier conjecture is
+  false in ranks `n>=3`.
+
+- **21 July — more explicit examples appeared.**  [Long's second
+  paper](https://arxiv.org/abs/2607.19012) gave tiny direct counterexamples to
+  the `(xz)` conjecture and the Mathieu conjecture for `SU(2)`.  Also,
+  [Juntang Zhuang](https://github.com/jzkay12/jacobian_conjecture) published
+  three checked degree-four Jacobian counterexamples, now called Islands A,
+  B, and C.
+
+- **21–22 July — this repository turned one map into whole families.**  Using
+  the public root and weighted-lift ideas above, it proved weighted and
+  cancellation constructions in every generic degree `N>=3`.  For `N>=4`
+  there are at least `tau(N-1)` stably different construction types and an
+  `(N-3)`-dimensional family of stable classes—not merely a growing list of
+  isolated formulas.  See the [degreewise theorem](papers/marked-root-multiplicity/main.tex)
+  and [decorated-normalization invariant](extended-geometry/DECORATED_NORMALIZATION_INVARIANT.md).
+
+- **22 July — the consequences became smaller and more explicit here.**  The
+  repository produced a seed-parametrized direct `GMC(4)` family, compressed
+  Long's map-derived route from `not GMC(158)` to `not GMC(42)`, constructed a
+  four-dimensional exact symplectic/Poisson counterexample, and wrote explicit
+  Image and Vanishing counterexamples in dimensions 20, 40, and 42.  These are
+  separate from Long's stronger direct `GMC(3)` result.  See the
+  [external-consequences note](extended-geometry/EXTERNAL_CONSEQUENCES_AND_PROVENANCE.md),
+  [Poisson audit](extended-geometry/QUADRATIC_LADDER_AND_POISSON_AUDIT.md), and
+  [Image/Vanishing note](extended-geometry/IMAGE_VANISHING_COUNTEREXAMPLES.md).
+
+- **22 July — the obvious five-dimensional sequel hit an obstruction.**  The
+  repository classified the next quadratic-times-cubic root construction.  Its
+  natural five-dimensional space is not ordinary affine five-space, even
+  though topologically it looks like a three-sphere.  In plain terms, the
+  elegant cubic trick does not automatically produce `JC(5)`; see the
+  [`(2,3)` slice audit](extended-geometry/QUADRATIC_CUBIC_FACTORIZATION_SLICE.md).
+
+- **22 July — dimension two was narrowed, not solved.**  Building on the
+  Guccione–Guccione–Horruitiner–Valqui Newton-polygon program, [Billel
+  Helali's exact certificates](https://doi.org/10.5281/zenodo.21479814) exclude
+  the last transcribed case below 125.  The local
+  reproduction therefore gives `max(deg P,deg Q)>=125` for any hypothetical
+  plane counterexample, subject to the published normal-form reduction.  It
+  does not prove `JC(2)` or say both degrees are at least 125; see the [plane
+  frontier](plane-jc/DEGREE_FRONTIER_125.md).
 
 The repository is both a proof project and a research diary that has now been
 cleaned into a small active theorem chain.  Mathematical completion and
@@ -330,7 +375,7 @@ distinctions matter:
 | GMC, `(xz)`, and `SU(2)` counterexamples | Christopher D. Long's two arXiv papers | Exact local Gaussian and beta/binomial checks, a complete `SU(2)=S^3` Haar proof, all 18 steps of Long's conservative 79-variable route, and a repository 17-dimensional quadratic--cubic trace whose rank-compressed 24-variable homogenization has a 21-variable essential quotient and gives `not GMC(42)`; every sparse artifact has an independent replay, with no claim that the direct witnesses derive from our map |
 | Weighted-seed/Gaussian bridge | Long's Lagrange--Good search architecture and Good's inversion theorem | A repository-derived polynomial determinant correction turning every nonconstant normalized seed into an explicit four-real-Gaussian witness family; the exact mixed moments recover `1+lambda*H`, making the moment realization injective; supported by a standalone constant-term-safe formal Gaussian--Lagrange proof, locally checked and not externally reviewed |
 | Cancellation maps and canonical boundary invariants | No earlier source has been identified in the present audit | The finite cancellation operator, all-parameter reconstruction and collision, boundary-exhaustion theorem, thick intersections, and rigidity results |
-| Degreewise weighted stable moduli | No earlier source has been identified in the present audit | A generically finite decorated-normalization invariant with image dimension `N-3`, on an explicitly proved nonempty ordinary boundary-clean open for every generic degree `N>=4` |
+| Degreewise weighted stable moduli | No earlier source has been identified in the present audit | A degree-`N-2` decorated-normalization invariant with image dimension `N-3`, plus a faithful full marked-cover invariant for all normalized admissible seeds with `ord_0(H)>=2`; the Hurwitz/LL admissible-cover closure organizes collisions and compactified rerooting |
 | Cross-family stable multiplicity | No earlier source has been identified in the present audit | The complementary divisor-count theorem distinguishing one weighted class and `tau(N-1)-1` cancellation types in generic degree `N>=4` |
 
 “No earlier source identified” is a statement about the current search, not a
@@ -430,11 +475,16 @@ preserved by stable polynomial left--right equivalence,
 
 This is the main degreewise moduli result.  Its proof is in the
 [decorated-normalization theorem](extended-geometry/DECORATED_NORMALIZATION_INVARIANT.md).
-The simple `W=1` sheet is intrinsic as an affine component over the second
-boundary divisor, but it is disjoint from the discriminant ramification
-divisor.  A cross-stratum generator-rigidity lemma would be needed to turn it
-into a `r=1` mark on the discriminant normalization and upgrade generic
-finiteness to generic injectivity; that lemma is not presently proved.
+The coarse decorated-normalization map remains generically etale of degree
+`N-2`, reflecting the finite rerooting groupoid.  The richer full marked
+incidence cover, including its regular-reconstruction open, is faithful for
+every normalized admissible seed with `ord_0(H)>=2`, even when the zero
+multiplicity increases or extra roots collide.  The proof recovers an affine
+primitive coordinate from the low-pole filtration, uses the affine zero
+cluster to kill translation, and uses the root-one sheet to kill scaling.
+The [Hurwitz--LL compactification](extended-geometry/HURWITZ_LL_COMPACTIFICATION.md)
+realizes the discriminant as a universal critical-value incidence and places
+the compactified rerooting groupoid in a marked admissible-cover closure.
 The exact cotangent lift is polynomially right-equivalent to adjoining three
 identity coordinates, so the same invariant and dimension transfer without
 loss:
@@ -520,15 +570,15 @@ much smaller direct witnesses were motivated by the JC(3) announcement but
 were not algebraically extracted from that map.  His papers do not review the
 repository's Hessian/Fitting-divisor or stable-moduli proofs.
 
-The same 21-variable cubic collision is also a direct counterexample
-generator.  Its first collision coordinate is `0,1,-1`, which proves that the
-first formal inverse coordinate has infinitely many nonzero homogeneous
-pieces.  This names an explicit `SIC(21)` witness and, after contraction and a
-complex orthogonal change of variables, an explicit 42-variable quartic that
-simultaneously defeats the generalized Laplacian Vanishing Conjecture and the
-classical Hessian-nilpotent quartic Vanishing Conjecture.  The formulas,
-all-order arguments, expanded 876-term quartic, and the remaining
-nonhomogeneous 20-variable optimization question are in the
+The same cubic collision is also a direct counterexample generator.  Its
+first collision coordinate is `0,1,-1`, which identifies the nonpolynomial
+inverse coordinate and gives an exact all-order recurrence for its homogeneous
+pieces.  Specializing the identity output descends the witness
+to `not SIC(20)` and produces an independently expanded 628-term,
+40-variable nonhomogeneous Hessian-nilpotent polynomial that defeats the
+generalized Laplacian Vanishing Conjecture.  The homogeneous classical
+quartic counterexample remains in 42 variables and has 876 terms.  The
+formulas, proofs, recurrences, and exact artifacts are in the
 [Image and Vanishing counterexample note](extended-geometry/IMAGE_VANISHING_COUNTEREXAMPLES.md).
 
 There is now a separate internal bridge from the weighted inverse pencil to
@@ -606,6 +656,7 @@ The stable-core reading path is:
 Further families continue in one sequence:
 [cancellation construction](cancellation/CONSTRUCTION.md),
 [boundary geometry](cancellation/BOUNDARY_GEOMETRY.md), and the
+[log-geometric suspension bridge](cancellation/LOG_GEOMETRY_OF_SUSPENSIONS.md), then the
 [marked-root framework](MARKED_ROOT_KELLER_MAPS.md), followed by the
 [canonical degreewise paper](papers/marked-root-multiplicity/main.tex).
 

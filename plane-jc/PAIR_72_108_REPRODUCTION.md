@@ -77,6 +77,12 @@ vertices:
 | 1 | 61 | \(z^2,z^1,z^0,\ldots,z^{-8}\) | 125 | \(z^3,z^2,z^1,\ldots,z^{-12}\) |
 | 2 | 25 | \(z^2,z^1,z^0\) | 47 | \(z^3,z^2,z^1,z^0\) |
 
+This transcription is executable in
+[`cas/laurent_band_frontend.py`](cas/laurent_band_frontend.py).  Its typed
+normal-form certificate records that Proposition 4.3 is exhaustive and maps
+the single printed chain to these two distinct Laurent cases; the compiler
+then enumerates the supports and derives the bracket layers below.
+
 For the common upper part, after subtracting irrelevant constants,
 
 \[

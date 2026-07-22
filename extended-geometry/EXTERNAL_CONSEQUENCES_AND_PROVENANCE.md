@@ -433,14 +433,16 @@ arbitrary JC(2) counterexamples.
    is already an injective seed fingerprint; determine which functions of it
    descend to invariants for natural Gaussian-equivalence groups and whether
    the seed's decorated-normalization moduli remain visible after quotienting.
-8. **Cross-stratum generator rigidity.**  The root-one sheet is intrinsically
-   distinguished inside the affine source over `Z_0`, but it is disjoint from
-   the ramification divisor.  Determine whether an isomorphism of normalized
-   incidence covers preserving the regular-reconstruction opens must identify
-   the primitive root generators compatibly across those strata.  A positive
-   theorem would turn the conditional argument in the
-   [decorated-normalization note](DECORATED_NORMALIZATION_INVARIANT.md) into
-   `F_H stable-equivalent F_G => H=G` for normalized boundary-clean seeds.
+8. **Hurwitz/LL local-to-global comparison.**  Full-cover generator rigidity
+   now holds for every normalized admissible seed with `ord_0(H)>=2`, including
+   higher zero multiplicity and arbitrary extra-root collisions.  The
+   discriminant is the LL critical-value incidence of the line `H-sW`, and
+   the normalized closure in the marked admissible-cover stack supplies a
+   proper compactified rerooting groupoid.  What remains is the exact
+   local-to-global comparison between its conductor square and every
+   simultaneous multicluster formal chart of the canonical affine cover.  See
+   the [faithfulness proof](DECORATED_NORMALIZATION_INVARIANT.md) and the
+   [Hurwitz--LL compactification](HURWITZ_LL_COMPACTIFICATION.md).
 9. **Rank-aware BCW circuit minimization.**  The reusable-factor certificate
    lowers the conservative route from 36 to 13 introduced degree-reduction
    variables.  Rank-compressed homogenization turns its exact cubic-output

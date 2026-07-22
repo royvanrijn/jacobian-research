@@ -197,7 +197,7 @@ Up to a nonzero parameter unit, the raw residue is
  \right).
 \]
 
-### Theorem — degree-five surface completion
+### Theorem — generic-chart degree-five completion
 
 On the chart `kappa != -2,-1`, the normalized Hamiltonian is polynomial
 exactly for `s_2=K(kappa,tau)`.  The resulting four coordinates have the six
@@ -208,7 +208,7 @@ the original map times `id_(A^1)`.
 
 Consequently:
 
-* the completable locus on `kappa != -2,-1` is the entire two-dimensional
+* the completable locus on `kappa != -2,-1` is the entire dense chart of the
   degree-five seed surface, not a divisor;
 * the completing quadratic shear is unique modulo constant and linear base
   gauge; and
@@ -248,9 +248,10 @@ The exact calculation separates four kinds of exceptional parameters:
    `tau`.
 2. `kappa=-2` is genuinely outside the weighted marked-root construction,
    because `a=-(1+kappa)/(2+kappa)` is undefined.
-3. `kappa=-1` gives `a=0`.  The shear itself remains regular,
-   `K(-1,tau)=45/4`, but the adapted source change divides by `a`.  This is a
-   chart exception; the calculation does not prove non-completability there.
+3. `kappa=-1` gives `a=0`.  The generic-chart shear remains regular,
+   `K(-1,tau)=45/4`, but that adapted source change divides by `a`.  The
+   replacement chart below completes the entire divisor by a different
+   `R`-preserving shear.
 4. The ordinary-cusp condition removes the divisor
 
 \[
@@ -269,15 +270,226 @@ nonordinary bitangencies.  Their complement is already known to be a nonempty
 open.  Intersecting it with
 
 \[
- \tau(\kappa+1)(\kappa+2)\Delta_{\rm cusp}\ne0
+ \tau(\kappa+2)\Delta_{\rm cusp}\ne0
 \]
 
 is therefore a nonempty two-dimensional open on which the maps have degree
 five, the rank-two completion is defined, and the stable invariant is
-generically finite.  No resolution of the chart divisor `kappa=-1` is needed
-for the two-dimensional theorem.
+generically finite.
 
-## 4. Degree-by-degree computation
+### The `kappa=-1` replacement chart
+
+At `kappa=-1`, the third component is
+
+\[
+ C=x(1+x^2z).
+\]
+
+Let `(X,Q,p,zeta)` have `{p,X}={zeta,Q}=1` and put
+
+\[
+\begin{aligned}
+R&=2X+2X^3Q,\\
+Z&=-2X^3p+(2+6X^2Q)\zeta,\\
+E&=\frac{1-3X^2Q}{2}p+\frac92XQ^2\zeta.
+\end{aligned}
+\]
+
+The momentum matrix has determinant `-1`, and
+
+\[
+\begin{gathered}
+\{E,R\}=1,\qquad \{X,Z\}=2X^3,
+\qquad \{Q,Z\}=-2(1+3X^2Q),\\
+\{E,X\}=\frac{1-3X^2Q}{2},\qquad
+\{E,Q\}=\frac92XQ^2,\qquad
+\{E,Z\}=-6XQZ.
+\end{gathered}
+\]
+
+Every polynomial automorphism of `A^3_(X,Q,Z)` preserving `R` fixes the two
+components of `R=0`: their coordinate rings are `K[Q,Z]` and
+`K[X,X^-1,Z]`, with different unit groups, so they cannot be interchanged.
+It follows successively that
+
+\[
+ X\longmapsto X,\qquad Q\longmapsto Q,
+ \qquad Z\longmapsto cZ+h(X,Q).
+\]
+
+Preservation of the quotient Poisson bracket (equivalently, preservation of
+volume together with `R`) forces `c=1`.  Hence the full `R`-preserving Poisson
+base group is
+
+\[
+ \boxed{Z\longmapsto Z+h(X,Q),\qquad h\in K[X,Q].}
+\]
+
+Use `W=Z+h(X,Q)` and the source change `(x,y,z)=(X,W,Q)`.  Then `2C=R`.
+With `S=A/2` and `T=B`, direct calculation gives
+
+\[
+ \det\frac{\partial(S,T,R)}{\partial(X,Q,Z)}=-1,
+ \qquad \{S,T\}=1,
+ \qquad \{R,S\}=\{R,T\}=0.
+\]
+
+Write `A_tau=2tau^2-15tau-18`.  For the unsheared chart, the complete
+negative principal part of the normalized Hamiltonian is
+
+\[
+ A_\tau\left(-\frac1{840}X^{-4}
+ +\frac{Q}{210}X^{-2}\right).
+\]
+
+Restricting to the smaller ansatz `h=cQ^m`, `0<=m<=3`, gives a strict pole
+filtration.  The highest new poles are
+
+\[
+ -\frac c4X^{-3},\quad
+ \frac c{20}X^{-5},\quad
+ -\frac c{112}X^{-7},\quad
+ \frac c{660}X^{-9}
+\]
+
+for `m=0,1,2,3`, respectively.  In the associated pole filtration,
+lower-degree shears cannot cancel the leading pole of a higher-degree shear.
+Thus the filtered cubic ansatz successively forces
+
+\[
+ s_3=s_2=s_1=s_0=0,
+\]
+
+and polynomiality would then force
+
+\[
+ \boxed{2\tau^2-15\tau-18=0.}
+\]
+
+This explains why the former `psi(Q)` search saw only the two seed parameters
+
+\[
+ \tau=\frac{15\pm3\sqrt{41}}4
+\]
+
+within the cubic shear ansatz.
+
+The full group contains the missing monomial `XQ`.  For
+
+\[
+ h(X,Q)=cXQ,
+\]
+
+the **complete** principal part is
+
+\[
+ \frac{105c-2A_\tau}{1680}
+ \left(X^{-4}-4QX^{-2}\right).
+\]
+
+It is therefore canceled uniquely in this one-monomial family by
+
+\[
+ \boxed{c_\tau=\frac{2A_\tau}{105}
+ =\frac{2(2\tau^2-15\tau-18)}{105}.}
+\]
+
+The source change `W=Z+c_tau XQ` is triangular and polynomially invertible.
+The normalized Hamiltonian is polynomial, so the four output coordinates
+have all six canonical brackets and are polynomially left--right equivalent
+to the original weighted map times an identity.
+
+### Theorem — complete degree-five surface descent
+
+Every normalized admissible degree-five seed (`kappa != -2`) has a rank-two
+exact symplectic completion in `A^4`.  For `kappa != -1,-2` use the quadratic
+`Q`-shear `K(kappa,tau)Q^2`; for `kappa=-1` use the replacement chart and the
+shear `c_tau XQ` above.  Thus `kappa=-1` is only a chart divisor, not a
+component of the flux obstruction locus.
+
+The exact monomial replay is
+[`explore_kappa_minus_one_flux.py`](../scripts/explore_kappa_minus_one_flux.py).
+The command `--x-degree 1 --shear-degree 1` is the exceptional-chart
+completion certificate.
+
+## 4. Degree-six fixed-`gamma` surface
+
+The normalized degree-six seed space has coordinates `(kappa,sigma,tau)`:
+
+\[
+H=W^2(W-1)\left(
+\sigma W^3+\tau W^2
++\left(\frac\kappa2-3\sigma-2\tau+2\right)W
+-\frac\kappa2+2\sigma+\tau-3
+\right).
+\]
+
+Fix `kappa=-9`, so again `a=-8/7` and the degree-five adapted coordinate
+system applies.  With `W=Z+s_2Q^2`, the complete degree-six Laurent principal
+part has the same universal four-residue direction as in degree five.  Its
+scalar obstruction is
+
+\[
+\begin{aligned}
+\mathcal O_6={}&2156s_2-6024\sigma^2-5016\sigma\tau
+-11088\sigma\\
+&-1056\tau^2-4752\tau+16929.
+\end{aligned}
+\]
+
+Therefore the unique completing shear is
+
+\[
+\boxed{
+s_2=\frac{
+6024\sigma^2+5016\sigma\tau+11088\sigma
++1056\tau^2+4752\tau-16929}{2156}.}
+\]
+
+### Theorem — degree-six fixed-`gamma` descent
+
+Every normalized degree-six seed on the `kappa=-9` slice has a polynomial
+rank-two Hamiltonian after the displayed quadratic shear.  For `sigma!=0`,
+the resulting exact symplectic maps `A^4 -> A^4` have generic degree six and
+form a two-dimensional algebraic family.  They are polynomially left--right
+equivalent to the weighted maps times `id_(A^1)`.
+
+This family contains a nonempty exact-double-zero boundary-clean open.  An
+explicit witness is
+
+\[
+ (\sigma,\tau)=(1,0),\qquad
+ H=\frac12W^2(W-1)(2W^3-11W+7),
+\]
+
+for which
+
+\[
+ \gcd(H,H')=W,qquad H''(0)=-7,qquad
+ \operatorname{disc}(H/W^2)=\frac{1339}{4},qquad
+ \operatorname{disc}(H'')=19184247360.
+\]
+
+On this open, the full-cover faithfulness theorem for decorated
+normalization says that stable left--right equivalence recovers the normalized
+seed itself.  Since rank-two completion is polynomially left--right
+equivalent to adjoining one identity coordinate, it follows that two
+completed maps are stably equivalent only when their `(sigma,tau)` parameters
+are equal.
+
+### Corollary — two-dimensional degree-six stable moduli in `A^4`
+
+There is a nonempty two-dimensional algebraic family of pairwise stably
+polynomially left--right inequivalent degree-six exact symplectic Keller maps
+
+\[
+ \boxed{G_{\sigma,\tau}:\mathbb A^4\longrightarrow\mathbb A^4.}
+\]
+
+The exact certificate is
+[`verify_degree_six_fixed_gamma_descent.py`](../scripts/verify_degree_six_fixed_gamma_descent.py).
+
+## 5. Degree-by-degree computation
 
 For each `N>=5`:
 
@@ -302,7 +514,7 @@ The degree-five result warns against assuming that fixed `gamma` contributes
 an additional completion equation: at least in degree five, `kappa` varies and
 the shear absorbs the flux throughout the surface.
 
-## 5. Quantization to the second Weyl algebra
+## 6. Quantization to the second Weyl algebra
 
 Once a polynomial exact symplectic map
 
@@ -337,3 +549,124 @@ lower filtration levels, and solve simultaneously for corrections.  Success
 would give a filtered endomorphism of `A_2`; injectivity follows from the
 injective associated-graded map, while non-surjectivity would still require a
 separate filtered argument.
+
+### Ore reduction and exact localized Darboux coordinates
+
+The adapted coordinates make three of the six quantum relations automatic.
+Put
+
+\[
+ \delta=3X^2\partial_X+(2-6XQ)\partial_Q
+\]
+
+and quantize `B=K[X,Q,Z]` as the Ore algebra
+
+\[
+ [Z,a]=\hbar\delta(a),\qquad a\in K[X,Q].
+\]
+
+Then `R=2X-3X^2Q` is central in this Ore algebra.  Consequently PBW-ordered
+quantizations of `S,T,f` satisfy
+
+\[
+ [R,S]=[R,T]=0,\qquad [E+f,R]=\hbar
+\]
+
+exactly.  Symmetric ordering in the original four Darboux variables hides
+this simplification and creates avoidable mixed commutator defects.
+
+After localizing at `X`, set
+
+\[
+ v=X^{-1},\qquad P=-Z/3,
+ \qquad U=E+\frac{(3-Rv)v^2}{2}P,
+\]
+
+with the coefficient placed to the left of `P`.  Direct first-order
+differential-operator calculation gives
+
+\[
+ [P,v]=[U,R]=\hbar,
+ \qquad [P,R]=[U,v]=[U,P]=0.                         \tag{Q1}
+\]
+
+Thus the localized problem is a rank-one fiber Weyl problem in `(v,P)` over
+the parameter `R`, followed by a quantum Hamiltonian connection in the
+`R`-direction.  If corrected fiber operators satisfy `[S_h,T_h]=hbar` and
+`D_h=U+A_h`, the remaining equations are
+
+\[
+ [A_h,S_h]=-\hbar\partial_RS_h,
+ \qquad [A_h,T_h]=-\hbar\partial_RT_h,               \tag{Q2}
+\]
+
+whose compatibility follows by differentiating the canonical commutator.
+The exact splitting certificate is
+[`verify_rank_two_quantum_darboux.py`](../scripts/verify_rank_two_quantum_darboux.py).
+
+### A degree-five parity obstruction
+
+The Ore reduction makes the first direct test finite.  At the admissible
+rational point
+
+\[
+ (\kappa,\tau)=(0,1),\qquad s_2=69/7,
+\]
+
+the classical fiber symbols have differential orders `(5,4)` and leading
+Bernstein degrees `(29,25)`.  Fiber Weyl ordering is the finite PBW operator
+
+\[
+ \operatorname{Weyl}_{v,P}(F)
+ =\exp\!\left(\frac{\hbar}{2}\delta\partial_Z\right)F.
+\]
+
+For parity-preserving symbols
+
+\[
+ S_h=S+\hbar^2S_2+\hbar^4S_4,
+ \qquad T_h=T+\hbar^2T_2+\hbar^4T_4,                \tag{Q3}
+\]
+
+the `hbar^3` equation is
+
+\[
+ \{S_2,T\}+\{S,T_2\}=-\frac1{24}\Pi^3(S,T),        \tag{Q4}
+\]
+
+where `Pi=partial_Z tensor delta-delta tensor partial_Z`.  In the complete
+filtered spaces
+
+\[
+ \begin{array}{c|cc}
+       &\text{maximum }Z\text{-order}&\text{maximum Bernstein degree}\\ \hline
+ S_2&3&25\\
+ T_2&2&21\\
+ S_4&1&21\\
+ T_4&0&17
+ \end{array}
+\]
+
+equation (Q4) has rank `1527`, nullity `42`, and exact rational solutions.
+Keeping the full 42-parameter solution space, the `hbar^5` equation projects
+to a 53-dimensional cokernel.  Exact row reduction over `Q` contains the
+constant equation `1=0`, independently of all 42 parameters.  Hence:
+
+\[
+ \boxed{\text{The standard parity-preserving filtered Weyl-symbol lift is
+ obstructed at }\hbar^5\text{ at }(\kappa,\tau)=(0,1).}
+\]
+
+The exact calculation is
+[`explore_degree_five_a2_subprincipal.py`](../scripts/explore_degree_five_a2_subprincipal.py).
+It also repeats the ranks modulo `32003` and obtains the same constant
+obstruction.  This closes the originally proposed symmetric-ordering test;
+it does **not** rule out lifts with odd powers of `hbar`, a nonstandard wider
+filtration, or quantization as a Weyl bimodule rather than an algebra
+endomorphism.  Because the fiber relation already fails in the declared
+ansatz, the connection equations (Q2) and quantum pole-descent test are not
+reached there.  The same exact audit finds that allowing odd powers begins
+with a rank-`2075` linear equation on `2132` coefficients, hence a
+57-dimensional first-order kernel.  Determining its nonlinear higher-order
+branches is the remaining direct-endomorphism problem; it is not hidden in
+the now-closed symmetric-ordering calculation.

@@ -526,7 +526,7 @@ image, which is therefore reduced.  This statement concerns the decoration
 (3.5).  The larger intrinsic affine-cover decoration does separate the
 rerootings, as proved next.
 
-### Full-cover rigidity on the exact-double-zero boundary-clean locus
+### Full-cover rigidity with higher zero multiplicity and root collisions
 
 Over `Z_0=V(C)`, the normalized incidence intrinsically distinguishes the
 simple root `W=1` from the additional simple roots.  This distinction does
@@ -638,15 +638,16 @@ the present decorated-normalization target, but it does not manufacture a
 point on that target.
 
 > **Theorem (faithfulness of the full marked cover).**  Let `H,G` be
-> normalized degree-`N` seeds over a characteristic-zero field, with
+> normalized admissible degree-`N` seeds over a characteristic-zero field,
+> with
 > \[
 >  H(0)=H'(0)=H(1)=0,\quad H'(1)=-1,
 > \]
-> and the analogous equations for `G`.  Assume that zero has exact
-> multiplicity two and is the unique multiple primitive root (the
-> boundary-clean condition).  If the full marked incidence covers, including
-> their regular-reconstruction opens, are stably left--right equivalent, then
-> `H=G`.  In particular
+> and the analogous equations for `G`.  Assume only that zero has
+> multiplicity at least two; its multiplicity may exceed two, and the other
+> roots may collide with arbitrary multiplicities.  If the full marked
+> incidence covers, including their regular-reconstruction opens, are stably
+> left--right equivalent, then `H=G`.  In particular
 > \[
 >  F_H\sim_{\mathrm{stable}}F_G\quad\Longrightarrow\quad H=G             \tag{5.3e}
 > \]
@@ -688,38 +689,49 @@ discriminant normalization.  Applying (5.3bb) first to `s_G` and then to
  \beta^*t_G=\mu t_H+d s_H+e,                           \tag{5.3m}
 \]
 
-with `lambda mu!=0`.  The intrinsic second-boundary mark is `r=0`, so
-`b=e=0`.  On the normalization `r=dt/ds`; hence (5.3m) sends
+with `lambda mu!=0`.  Every center above the second boundary is a multiple
+primitive root, and at every such center `s=t=0`.  Since zero supplies at
+least one center on each side, (5.3m) gives `b=e=0` without requiring that
+the center be unique.  On the normalization `r=dt/ds`; hence (5.3m) sends
 
 \[
  r_G\longmapsto \frac{\mu r_H+d}{\lambda}.
 \]
 
-The same mark forces `d=0`.  After composing with the inverse diagonal
-automorphism, the descended plane automorphism fixes `D_H` pointwise.
+After composing with the inverse triangular linear automorphism displayed in
+(5.3m), the descended plane automorphism fixes `D_H` pointwise.
 Blanc--Stampfli's fixed-curve theorem says that a nonidentity automorphism of
 the affine plane can fix pointwise only curves equivalent to lines.  Since
 `D_H` is singular, the composition is the identity.  (Jeremy Blanc and
 Immanuel Stampfli,
 [Automorphisms of the plane preserving a curve](https://arxiv.org/abs/1304.2549),
-2013.)  Consequently (5.3m) holds as a polynomial identity, with `d=b=e=0`.
+2013.)  Consequently (5.3m), with `b=e=0`, holds as a polynomial identity.
 
-Initially `lambda,mu` lie in `K^*`.  The localized target automorphism and its
-inverse show that each is a unit of `k[C,C^(-1)]`, hence a constant times a
-power of `C`.  The boundary valuations
-`v_(Z_0)(s)=1` and `v_(Z_0)(t)=2` force both powers to be zero.  Thus
-`lambda,mu in k^*`.  Put `a=lambda/mu`.  Restriction to the normalization and
-integration now give
+Put
 
 \[
- G'(r/a)=\lambda H'(r),\qquad G(w)=\mu H(aw),           \tag{5.3n}
+ a=\frac{\lambda}{\mu},\qquad p=\frac d\lambda.
 \]
 
-and the orientation is checked directly by
+Restriction to the normalization and integration now give over `K`
 
 \[
- \beta^*E_G(w)=G(w)-\lambda s_Hw+\mu t_H
-              =\mu E_H(aw;s_H,t_H).                   \tag{5.3o}
+ G'\!\left(\frac r a+p\right)=\lambda H'(r),
+ \qquad G(w)=\mu H\bigl(a(w-p)\bigr).                 \tag{5.3n}
+\]
+
+There is no integration constant: substituting into the `t` identity in
+(5.3m) makes it zero.  Moreover `a,p,mu` actually lie in `k`.  Indeed the
+affine map `w -> a(w-p)` carries the finite root multiset of `G` to that of
+`H`.  The distinct roots `0,1` of `G` therefore map to two distinct roots of
+`H`; their difference determines `a`, their first value determines `p`, and
+the leading coefficient determines `mu`.  A `K`-valued choice from this
+finite constant set is constant.  The orientation is checked directly by
+
+\[
+ \beta^*E_G(w)
+ =G(w)-\lambda s_Hw+\mu t_H+d s_H
+ =\mu E_H\bigl(a(w-p);s_H,t_H\bigr).                  \tag{5.3o}
 \]
 
 It remains to show that an abstract stabilized cover lift uses this same
@@ -727,16 +739,47 @@ generator.  The universal pencil has monodromy `S_N`.  Its degree-`N`
 incidence field corresponds to `S_(N-1)`, which is self-normalizing in
 `S_N`; hence the cover has no nontrivial deck automorphism.  Purely
 transcendental stabilization creates none.  Therefore the given cover lift
-is exactly `W_H=aW_G`.
+is exactly
 
-The distinguished affine root-one component for `G` consequently maps to
-the `H`-root `a`.  Since `G(1)=0`, (5.3n) gives `H(a)=0`.  If `a!=1`,
-boundary-cleanness makes `a` a simple extra root, whose sheet is a polar
-boundary component, contradicting preservation of the regular-reconstruction
-open.  Hence `a=1`; then `G=mu H`, and the two equations
+\[
+ W_H=a(W_G-p).                                      \tag{5.3p}
+\]
+
+Let `m=ord_0(G)>=2`.  Over the generic point of `Z_0`, the Newton polygon of
+
+\[
+ hW^m-BCW+AC^2
+\]
+
+has one slope-one root when `m>=3`, while for `m=2` both roots have slope
+one.  The reconstruction formulas show that these slope-one roots are in the
+affine open.  Thus the zero cluster of `G` contains an affine component.
+Under (5.3p) it maps to the `H`-root `-ap`, with the same multiplicity.  If
+`-ap!=0`, this is a nonzero multiple root.  All of its sheets are polar:
+locally `W-rho` has positive `C`-valuation while
+`y=(W-gamma)/C` has leading term `rho/C`.  Preservation of the affine open
+therefore forces `p=0`.
+
+The distinguished affine root-one component for `G` now maps to the
+`H`-root `a`.  It is simple.  Every simple extra root is polar.  Indeed
+`gamma -> -H'(a)`; if `a+H'(a)!=0`, already
+`y=(W-gamma)/C` has a pole.  If this leading pole cancels, then
+`gamma -> a`, `x ->0`, and the numerator in the reconstruction formula for
+`z` tends to `a-1`, which is nonzero unless `a=1`.  Preservation of the
+affine open therefore forces `a=1`.  Then `G=mu H`, and the two equations
 `G'(1)=H'(1)=-1` give `mu=1`.  This proves the theorem.  Notice that the
 coarser decorated-normalization map remains etale of degree `N-2`; it is the
 full cover together with its affine open that is faithful.
+
+The previous exact-double-zero boundary-clean theorem is the generic special
+case.  Higher multiplicity at zero and collisions among extra roots therefore
+do not create new stable identifications.  They change the boundary
+ramification and the compactified rerooting groupoid, but not faithfulness of
+the full cover with its reconstruction open.
+
+The proper Hurwitz-space package behind that groupoid—including the LL
+branch incidence, collision charts, and conductor boundary—is constructed in
+[HURWITZ_LL_COMPACTIFICATION.md](HURWITZ_LL_COMPACTIFICATION.md).
 
 Because the decorated normalization is constant on stable polynomial
 left--right classes, generic finiteness has the following stronger
@@ -868,7 +911,7 @@ for a completed computation in every family.
 | saturated off-diagonal scheme and its `S_2` quotient | complete in characteristic zero | complete; quotient pullback and node transversality are checked |
 | conductor map | complete as an intrinsic finite-stratum construction | exact implicit-equation formula for arbitrary plane-curve singularities, checked against the ordinary factorization |
 | infinity and second-boundary marks | complete | exact for the weighted seeds; the quartic zero-cluster chart is checked |
-| distinguished affine root-one stratum | complete on the exact-double-zero boundary-clean locus | exact cover-stratum and rerooting audit; no cross-stratum point on the discriminant normalization is claimed |
+| distinguished affine root-one stratum and full-cover faithfulness | complete for normalized admissible seeds with `ord_0(H)>=2`, including higher zero multiplicity and arbitrary extra-root collisions; low poles, stable plane descent, affine generator recovery, and deck rigidity give the proof | exact cover-stratum, LL incidence, affine target-pullback orientation, higher-zero, collision, scaling, and rerooting audits |
 | upstairs `(e,f)`, different, DVR, and inertia data | complete as invariant data | generic divisorial layer complete |
 | higher intersections and completed local extensions | complete as functorial invariant data | full cancellation prime diagram is exact under `Res(K,L) != 0`, proved for every `mr<=30`, every `m=1`, all three uniform columns `r=1,2,3`, and all uniform parameter-irreducibility cases; the remaining all-parameter problem starts at `r=4` |
 
@@ -890,6 +933,7 @@ Run
 ```bash
 .venv/bin/python scripts/verify_decorated_normalization.py
 .venv/bin/python scripts/verify_affine_branch_mark_audit.py
+.venv/bin/python scripts/verify_stable_generator_rigidity.py
 .venv/bin/python scripts/verify_full_boundary_diagram.py
 ```
 
@@ -903,7 +947,10 @@ boundary-cover `(e,f)`,
 different, completed-DVR, inertia, residue-factor, and degree-sum data for
 both weighted and cancellation profiles.
 
-The affine-branch audit separately verifies the unique unramified root-one
-stratum, its disjointness from the ramification divisor, and the exact
-rerooting identity (5.3d).  Its scope line records that cross-stratum
-generator rigidity remains open.
+The affine-branch audit separately verifies the unramified root-one stratum,
+its disjointness from the ramification divisor, and the bare rerooting
+identity (5.3d).  The stable-generator audit checks the LL incidence, the
+low-pole bases through pole order `N`, the contravariant triangular target
+convention, the affine identity (5.3o), higher zero clusters, nonzero
+multiple-root collisions, and the final `z`-coordinate obstruction which
+makes every simple extra root polar.

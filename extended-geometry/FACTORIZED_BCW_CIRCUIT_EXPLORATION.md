@@ -102,7 +102,7 @@ of the mixed residual has maximum degree six.  It has twelve terms above
 degree three and provisional cubic-output rank five in dimension nine.  A
 width-24 run of the old single-monomial cleanup from this seed finishes with
 twenty introduced variables and cubic-output rank eight, much worse than the
-certified objective `13+7=20`.  This is not evidence against the circuit
+certified objective `14+6=20`.  This is not evidence against the circuit
 approach; it shows that polynomial factors must remain first-class throughout
 the residual cleanup.
 

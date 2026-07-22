@@ -117,6 +117,81 @@ class CompiledDeRhamBlock:
         )
 
 
+@dataclass(frozen=True)
+class LocalSystemReuseCertificate:
+    """Exact cyclic-curve isomorphism underlying Gauss--Manin reuse."""
+
+    reference_chain: str
+    candidate_chain: str
+    base_substitution: tuple[tuple[sp.Symbol, sp.Expr], ...]
+    t_scale: sp.Expr
+    y_scale: sp.Expr
+    covering_exponent: int
+    character: int
+    curve_identity: sp.Expr
+
+
+def certify_local_system_reuse(
+    reference: WeightedWronskianIR,
+    candidate: WeightedWronskianIR,
+    *,
+    base_substitution: tuple[tuple[sp.Symbol, sp.Expr], ...] = (),
+    t_scale: sp.Expr = sp.S.One,
+    y_scale: sp.Expr = sp.S.One,
+) -> LocalSystemReuseCertificate:
+    """Certify ``t_candidate=t_scale*t`` and ``y_candidate=y_scale*y``.
+
+    The base substitution is applied to the candidate coefficients first.
+    A successful result proves
+
+        A_candidate(t_scale*t) = y_scale**a * A_reference(t),
+
+    together with equality of the cyclic exponent and character.  It says
+    nothing about the forcing term or supported primitive, which belong to
+    the stronger plane-JC obstruction problem rather than its local system.
+    """
+
+    a = int(reference.covering_exponent)
+    if int(candidate.covering_exponent) != a:
+        raise ValueError("covering exponents differ")
+    character = int(reference.primitive_weight) % a
+    if int(candidate.primitive_weight) % a != character:
+        raise ValueError("character eigenspaces differ")
+    t_scale = sp.sympify(t_scale)
+    y_scale = sp.sympify(y_scale)
+    if t_scale.is_zero is True or y_scale.is_zero is True:
+        raise ValueError("curve-coordinate scales must be nonzero")
+    substitution = dict(base_substitution)
+    if len(substitution) != len(base_substitution):
+        raise ValueError("base substitution contains a duplicate source parameter")
+    if candidate.t in substitution:
+        raise ValueError("put the candidate t-coordinate in t_scale, not the base map")
+    if any(
+        value.has(reference.t, candidate.t)
+        for value in map(sp.sympify, substitution.values())
+    ):
+        raise ValueError("a base substitution may not depend on the fiber coordinate")
+    pulled_back = candidate.A.subs(substitution, simultaneous=True)
+    pulled_back = pulled_back.subs(candidate.t, t_scale * reference.t)
+    identity = sp.factor(
+        sp.expand(pulled_back - y_scale**a * reference.A)
+    )
+    if identity != 0:
+        raise ValueError(
+            "the proposed base/coordinate change does not identify the curve families"
+        )
+    return LocalSystemReuseCertificate(
+        reference_chain=reference.chain.name,
+        candidate_chain=candidate.chain.name,
+        base_substitution=base_substitution,
+        t_scale=t_scale,
+        y_scale=y_scale,
+        covering_exponent=a,
+        character=character,
+        curve_identity=identity,
+    )
+
+
 def _substitute_in_order(expression: sp.Expr, substitutions: dict[sp.Symbol, sp.Expr]) -> sp.Expr:
     result = expression
     for variable, value in substitutions.items():

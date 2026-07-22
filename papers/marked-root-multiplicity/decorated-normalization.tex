@@ -237,6 +237,198 @@ Fitting-divisor quotient.  After one final shrinking they are isomorphic,
 which proves the asserted etaleness onto the normalized image.
 \end{proof}
 
+\begin{lemma}[low-pole filtration]
+\label{lem:low-pole}
+Let $\deg H=N$ and set
+$s=H'(r)$, $t=rH'(r)-H(r)$ and $R_H=k[s,t]\subset k[r]$.
+For the pole-order filtration at the unique point at infinity of the
+projective normalization,
+\[
+ L_m(R_H)=\{f\in R_H:\operatorname{ord}_\infty(f)\ge-m\},
+\]
+one has
+\[
+ L_{N-2}=k,\qquad L_{N-1}=k\oplus ks,
+ \qquad L_N=k\oplus ks\oplus kt.                       \tag{6.9}
+\]
+These equalities remain valid after an arbitrary field extension.
+\end{lemma}
+
+\begin{proof}
+The element $r$ is integral over $k[s]$, while
+$k(s,t)=k(r)$ and $[k(r):k(s)]=N-1$.  Thus the implicit equation of
+$D_H$ is monic of degree $N-1$ in $t$, so each class has a unique
+representative
+\[
+ \sum_{0\le j<N-1}p_j(s)t^j.
+\]
+The monomial $s^it^j$ has pole order $i(N-1)+jN$.  If two such orders
+are equal with $0\le j,j'<N-1$, reduction modulo $N-1$ gives $j=j'$ and
+then $i=i'$.  Hence leading poles cannot cancel, and (6.9) follows.
+The argument is coefficient-field independent.
+\end{proof}
+
+\begin{theorem}[full-cover faithfulness]
+\label{thm:full-cover-faithful}
+Let $k$ be a characteristic-zero field.  Let $H,G\in k[W]$ be normalized
+degree-$N$ seeds:
+\[
+ H(0)=H'(0)=H(1)=0,\quad H'(1)=-1,
+\]
+and similarly for $G$.  Suppose zero has multiplicity at least two, with no
+restriction on collisions or multiplicities among the other roots.  If their
+full marked incidence covers, including
+the regular-reconstruction opens, are stably left--right equivalent, then
+$H=G$.  Consequently,
+\[
+ F_H\sim_{\mathrm{stable\ LR}}F_G\quad\Longrightarrow\quad H=G.         \tag{6.10}
+\]
+\end{theorem}
+
+\begin{proof}
+Localize away from the second target boundary and put
+$K=k(C)$, $s=BC$, and $t=cAC^2$.  We first fix the variance convention.
+If the geometric target map is $\beta:Y_H\to Y_G$, its ring map is
+\[
+ \beta^*:K[s_G,t_G,z_1,\ldots,z_q]
+       \longrightarrow K[s_H,t_H,z_1,\ldots,z_q].       \tag{6.11}
+\]
+Thus the repository convention $G=\beta F\alpha$ uses $\beta^{-1}$ when
+old target coordinates are expressed in the new presentation, but uses
+$\beta^*$ in (6.11).  The latter takes an irreducible equation $f_G$ of the
+discriminant to a unit times $f_H$.
+
+The curve $D_H$ is geometrically irreducible by the universal-pencil theorem
+and is singular: $H''$ is nonconstant, and $d\nu_H$ vanishes at a root of
+$H''$.  In particular $f_H$ cannot lie in a one-variable coordinate
+subring, since geometric irreducibility would then make it linear in that
+coordinate and $D_H$ a smooth coordinate line.  Dry\l o's stable-equivalence
+theorem for $K[s,t]$ therefore implies that $\beta^*$ preserves the plane
+subring $K[s,t]$.\footnote{R. Dry\l o,
+\href{https://doi.org/10.4064/cm124-2-9}{\emph{On the stable equivalence
+problem for $k[x,y]$}}, Colloq. Math. 124 (2011), 247--253, Theorem 1.}
+
+The descended plane automorphism preserves the unique infinity place.
+Lemma~\ref{lem:low-pole}, applied in both directions, gives on $D_H$
+\[
+ \beta^*s_G=\lambda s_H+b,
+ \qquad \beta^*t_G=\mu t_H+d s_H+e,                    \tag{6.12}
+\]
+where $\lambda\mu\ne0$.  Every second-boundary center is a multiple
+primitive root and hence has $s=t=0$; since zero supplies a center on both
+sides, this gives $b=e=0$ without requiring uniqueness.
+Since $r=dt/ds$ on the normalization, (6.12) induces
+\[
+ r_G=\frac{\mu r_H+d}{\lambda};
+\]
+compose with the inverse triangular linear automorphism in (6.12).  The
+resulting plane automorphism fixes $D_H$
+pointwise.  The fixed-curve theorem of Blanc--Stampfli says that a
+nonidentity affine-plane automorphism can fix pointwise only a curve
+equivalent to a line.\footnote{J. Blanc and I. Stampfli,
+\href{https://arxiv.org/abs/1304.2549}{\emph{Automorphisms of the plane
+preserving a curve}}, 2013.}  Since $D_H$ is singular, the composition is
+the identity.  Hence (6.12), with $b=e=0$, holds in the entire plane ring.
+
+Put $a=\lambda/\mu$ and $p=d/\lambda$.  Restricting to the normalization
+and integrating gives
+\[
+ G'(r/a+p)=\lambda H'(r),
+ \qquad G(w)=\mu H(a(w-p)).                            \tag{6.13}
+\]
+The $t$ identity makes the integration constant zero.  The parameters
+$a,p,\mu$ lie in $k$: the affine map $w\mapsto a(w-p)$ carries the finite
+root multiset of $G$ to that of $H$, and the images of the distinct roots
+$0,1$ determine $a,p$ up to a finite constant choice; the leading
+coefficient then determines $\mu$.
+The pullback orientation is checked without convention by the identity
+\[
+ \beta^*E_G(w)=G(w)-\lambda s_Hw+\mu t_H+d s_H
+              =\mu E_H(a(w-p);s_H,t_H).               \tag{6.14}
+\]
+
+The universal pencil has monodromy $S_N$.  Its degree-$N$ incidence field
+corresponds to the self-normalizing subgroup $S_{N-1}$, so the cover has no
+nontrivial deck automorphism; purely transcendental stabilization adds none.
+Therefore the actual cover lift in (6.14) is
+$W_H=a(W_G-p)$.
+
+Let $m=\operatorname{ord}_0(G)\ge2$.  The Newton polygon of
+$hW^m-BCW+AC^2$ shows that the zero cluster has affine sheets: both sheets
+when $m=2$, and one slope-one sheet when $m\ge3$.  It maps to the $H$-root
+$-ap$ with multiplicity $m$.  If $-ap\ne0$, all sheets of this nonzero
+multiple-root cluster are polar, since $y=(W-\gamma)/C$ has leading term
+$(-ap)/C$.  Preservation of the reconstruction open forces $p=0$.
+
+The affine root-one component for $G$ now maps to the simple $H$-root $a$.
+Every simple extra root is polar.  If $H'(a)+a\ne0$, the coordinate
+$y=(W-\gamma)/C$ has a pole.  If that leading pole cancels, then
+$\gamma\to a$ and $x\to0$, while the numerator of the reconstruction formula
+for $z$ tends to $a-1$.  Thus regularity still forces $a=1$.  Now
+$G=\mu H$, and $G'(1)=H'(1)=-1$ forces $\mu=1$.
+\end{proof}
+
+\begin{remark}
+Theorem~\ref{thm:full-cover-faithful} concerns the full incidence cover with
+its affine open.  Proposition~\ref{prop:decorated-unramified} is unchanged:
+the coarser decorated-normalization map forgets that open and remains
+generically etale of degree $N-2$.  The exact-double-zero boundary-clean
+locus is its generic special case; higher zero multiplicity and arbitrary
+extra-root collisions alter the compactified rerooting groupoid but introduce
+no new full-cover identifications.
+\end{remark}
+
+\begin{proposition}[Hurwitz--LL compactification]
+\label{prop:hurwitz-ll-compactification}
+For $P_{H,s}(W)=H(W)-sW$, the curve $D_H$ is the pullback of the
+universal Lyashko--Looijenga point-in-branch-divisor incidence along
+$s\mapsto P_{H,s}$.  The normalized seed locus has a proper compactification
+$\overline{\mathcal S}^{\rm adm}_N$ obtained as the normalization of its
+closure in the stack of marked admissible polynomial covers.  The generic
+degree-$N-2$ rerooting relation extends to the proper forgetful groupoid on
+this stack, and a collision of $m$ zero-fiber points has local normalization
+parameter $\epsilon=\delta^m$.
+\end{proposition}
+
+\begin{proof}
+A critical point $r$ of $P_{H,s}$ satisfies $s=H'(r)$, and its critical value
+is
+\[
+ P_{H,s}(r)=H(r)-rH'(r)=-t.
+\]
+This proves the first assertion and recovers the normalization (6.1).
+On the exact-double distinct-root open,
+\[
+ H(W)=-\frac{W^2(W-1)\prod_{i=1}^{N-3}(W-\rho_i)}
+                  {\prod_{i=1}^{N-3}(1-\rho_i)},
+\]
+so the labelled source is the configuration space of the $N-3$ points
+$\rho_i$ on the thrice-marked rational curve.  Its collision-separating
+compactification is $\overline M_{0,N}$; quotienting by $S_{N-3}$ forgets
+their labels.  Equivalently, the seed defines a polynomial Hurwitz cover
+with total ramification over infinity, a marked ramified point $p_0$ over
+zero, and a marked unramified point $p_1$ over zero.  Taking the normalization
+of its closure in the proper admissible-cover stack gives
+$\overline{\mathcal S}^{\rm adm}_N$.\footnote{For the normalization and
+twisted-cover interpretation of the admissible-cover stack, see D. Abramovich,
+A. Corti and A. Vistoli,
+\href{https://arxiv.org/abs/math/0106211}{\emph{Twisted bundles and admissible
+covers}}.  Collision-allowing intermediate models are constructed in
+A. Deopurkar,
+\href{https://arxiv.org/abs/1206.4535}{\emph{Compactifications of Hurwitz
+spaces}}.}
+
+Forgetting $p_1$ has degree $N-2$ on the profile $(2,1^{N-2})$ locus and is
+the rerooting relation (6.8).  If $m$ choices collide, a transverse equation
+is $u^m=\epsilon$; normalization writes $\epsilon=\delta^m$ and the deck
+action cycles the $m$ choices.  Finally, the stable-map branch divisor extends
+in flat families, so the LL incidence extends over the closure.\footnote{B.
+Fantechi and R. Pandharipande,
+\href{https://arxiv.org/abs/math/9905104}{\emph{Stable maps and branch
+divisors}}.}  Its finite part has degree $N-1$, after removing the fixed
+branch contribution $(N-1)[\infty]$.
+\end{proof}
+
 \begin{corollary}[degreewise weighted stable moduli]
 \label{cor:weighted-stable-moduli}
 For every $N\ge4$, weighted degree-$N$ maps contain an

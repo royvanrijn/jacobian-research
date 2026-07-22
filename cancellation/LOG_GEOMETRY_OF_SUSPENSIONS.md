@@ -3,9 +3,12 @@
 This note recasts the determinant ledger as a relative-canonical-divisor
 identity, packages the canonical finite normalization as a marked log-crepant
 cover, and proves a marked `A^1/G_m` dichotomy for the plane core.  It also
-separates that plane theorem from the genuinely open problem of classifying
-the three-dimensional birational charts which lift the core to a polynomial
-Keller map.
+separates that plane theorem from the three-dimensional lift.  In the
+reciprocal `G_m` branch, valuation straightening and a canonical locally
+nilpotent derivation reduce the lift to the number of components in one
+general boundary fiber.  A degree-one Stein-factor marking forces a global
+slice.  The polynomial `A^1` branch retains a separate chart-straightening
+problem.
 
 The point of the reformulation is organizational.  It does not assert that
 every one-boundary suspension is weighted or cancellation-type.  Rather, it
@@ -14,10 +17,14 @@ identifies three layers:
 1. a formal log-Jacobian identity, valid for every suspension square;
 2. a plane-core classification once the primitive boundary coordinates are
    marked;
-3. a reciprocal-completion straightening problem for the vertical charts,
-   with affine modifications used only after choosing graph charts.
+3. a vertical-chart problem which, in the reciprocal branch, reduces to the
+   Stein degree of a canonical `G_a`-quotient boundary, with affine
+   modifications used only after choosing graph charts.
 
-Only the third layer remains substantially open.
+The completion-theoretic part of the third layer is settled here under the
+primitive boundary markings.  What remains is to derive those markings from
+an initially unmarked divisor-minimal suspension, and a polynomial-chart
+problem in the weighted branch.
 
 Work over a characteristic-zero field `k`.  All varieties are integral and
 all generically finite maps are generically separable.
@@ -765,13 +772,348 @@ The sign is only a first prefilter: exceptional complement isomorphisms show
 that many inequivalent boundary embeddings can have the same unit lattice and
 the same orientation.
 
+### Proposition 8.3 -- valuation straightening produces a canonical LND
+
+Let `k` be algebraically closed of characteristic zero, let
+
+\[
+ R=k[u,v,w],\qquad S=k[s,P,Q],
+\]
+
+and identify `S[D^(-1)]` with `R[A^(-1)]`.  Suppose
+
+\[
+ D=1-sY^m,\qquad Y=Q-sP,\qquad D=A^{-1},                \tag{8.12}
+\]
+
+where `A` and `D` are prime boundary equations.  Assume that the two primitive
+boundary markings are
+
+\[
+ v_A(Y)=0,\qquad v_A(P)=1.                              \tag{8.13}
+\]
+
+Then the three elements
+
+\[
+ x=As,\qquad y=Y,\qquad B=P/A                           \tag{8.14}
+\]
+
+belong to `R` and satisfy
+
+\[
+ \boxed{A=1+xy^m,\qquad P=AB,\qquad Q=y+xB.}            \tag{8.15}
+\]
+
+Moreover,
+
+\[
+ R[A^{-1}]=k[x,y,B,A^{-1}],
+ \qquad
+ \det {\partial(s,P,Q)\over\partial(x,y,B)}=-A^{-1}.   \tag{8.16}
+\]
+
+If the original chart determinant is
+
+\[
+ \det {\partial(s,P,Q)\over\partial(u,v,w)}=-cA^r,
+ \qquad c\in k^*,                                      \tag{8.17}
+\]
+
+then
+
+\[
+ \det {\partial(x,y,B)\over\partial(u,v,w)}=cA^{r+1}. \tag{8.18}
+\]
+
+Consequently the Jacobian derivation
+
+\[
+ \partial=\operatorname{Jac}_{u,v,w}(x,y,-)             \tag{8.19}
+\]
+
+is a nonzero locally nilpotent derivation of `R`, and
+
+\[
+ \partial(B)=cA^{r+1},\qquad
+ (\ker\partial)[A^{-1}]=k[x,y,A^{-1}].                  \tag{8.20}
+\]
+
+#### Proof
+
+Every element of `R[A^(-1)]` can have a pole only at `A`.  The valuations in
+(8.13), together with `v_A(s)=-1` forced by (8.12), therefore show that the
+three expressions in (8.14) are regular on `Spec R`; normality is enough for
+this step.  Multiplying `1-sY^m=A^(-1)` by `A` gives
+
+\[
+ A=1+(As)Y^m=1+xy^m,
+\]
+
+and the other identities in (8.15) are immediate.  The forward and inverse
+formulas in (8.14)--(8.15) prove the equality of localized rings.  A direct
+Jacobian calculation gives the second identity in (8.16), whence (8.18).
+
+On the localization, (8.18) says simply
+
+\[
+ \partial=cA^{r+1}{\partial\over\partial B}.             \tag{8.21}
+\]
+
+It is locally nilpotent there.  For every `f in R`, a sufficiently high
+iterate of `partial` vanishes after localization and hence already vanishes
+in the domain `R`.  Thus `partial` is locally nilpotent on `R`.  Since `A` is
+in its kernel, kernels commute with this localization, which proves (8.20).
+QED
+
+This proposition extracts the cancellation skeleton without assuming a
+triangular source coordinate.  The derivation (8.19) is canonical up to the
+choice of source volume form.  Its fixed-point scheme is supported on `A=0`,
+because `partial(B)=cA^(r+1)` is nonzero off that divisor.  Its divisorial
+content, if nontrivial, is therefore a power `A^a`; after dividing by this
+content one obtains the primitive LND with the same kernel.  The residual
+fixed scheme of that primitive action has codimension at least two.  Thus the
+ledger reduces the failure of straightening to one integer `a` and one
+boundary-supported codimension-two scheme.
+
+The integer `a` has a differential interpretation.  The coefficients of
+`partial` are the `2 by 2` minors of the Jacobian matrix of `(x,y)`, so their
+ideal is
+
+\[
+ \operatorname{Fitt}_1\Omega_{R/k[x,y]}.                \tag{8.21a}
+\]
+
+Its divisorial part is `A^a`.  Hence `a=0` is equivalent to generic
+smoothness of the quotient map `(x,y):A^3 -> A^2` along the marked boundary.
+If reconstruction-open status is required to include this generic
+smoothness, primitivity already forces unit content and only the residual
+codimension-two fixed scheme remains.
+
+### Proposition 8.4 -- the marked boundary recovers the plane coordinates
+
+Retain the hypotheses of Proposition 8.3 and put `K=ker(partial)`.  Suppose
+the unique divisor `E=V_K(A)` maps dominantly to `V(A) in A^2_(x,y)`; in the
+decorated-normalization language, the recorded boundary place is not
+contracted and has a residue-degree label.  Then
+
+\[
+ \boxed{K=k[x,y].}                                      \tag{8.22}
+\]
+
+#### Proof
+
+Miyanishi's kernel theorem gives `K isomorphic to k^[2]` for every nonzero
+locally nilpotent derivation of `k^[3]`.  Equation (8.20) defines a birational
+morphism
+
+\[
+ \phi:\operatorname{Spec}K\longrightarrow\mathbb A^2_{x,y}              \tag{8.23}
+\]
+
+which is an isomorphism off `A=0`.  The polynomial `A`, irreducible in `R`,
+is also irreducible in `K`, so `E` is the only curve that could occur in a
+positive-dimensional fibre.  It is not contracted by hypothesis.  Hence
+`phi` is quasi-finite.
+
+Zariski's Main Theorem, applied to the normal target with the same function
+field, makes `phi` an open immersion.  Its image contains `D(A)` and the
+generic point of `V(A)`, so its complement has codimension two.  Regular
+functions extend across such a subset of the normal affine plane.  Therefore
+
+\[
+ K=\Gamma(\operatorname{Spec}K,\mathcal O)
+  =\Gamma(\operatorname{im}\phi,\mathcal O)
+  =k[x,y].                                               \tag{8.24}
+\]
+
+QED
+
+This is exactly where the boundary labels remove the exceptional-complement
+ambiguity.  An abstract isomorphism of two `G_m` complements need not extend
+in either direction.  Here one direction is already the morphism (8.23), and
+the noncontraction marking makes it quasi-finite.
+
+### Proposition 8.5 -- a one-component boundary fiber forces a slice
+
+Retain Propositions 8.3--8.4 and let
+
+\[
+ \pi=(x,y):\operatorname{Spec}R\longrightarrow\operatorname{Spec}K.
+                                                               \tag{8.25}
+\]
+
+Suppose the general closed fiber of `pi` over `V_K(A)` is irreducible.  Then
+the canonical derivation (8.19) is fixed-point-free and
+
+\[
+ \boxed{R=K[z]=k[x,y,z]}                                 \tag{8.26}
+\]
+
+for a polynomial slice `z`.
+
+#### Proof
+
+Replace `partial` by its irreducible factor; this does not change its kernel.
+The quotient is surjective by the surjectivity theorem for locally nilpotent
+derivations of `k^[3]`.  It is equidimensional: off `A=0` this follows from
+(8.20), while a two-dimensional special fiber would contain the divisor
+`V_R(A)` and contract it to a point.  This is impossible because
+`(AR) intersect K=AK`, so `V_R(A)` dominates `V_K(A)`.
+
+The source and quotient are smooth factorial affine varieties, and (8.20)
+trivializes `pi` as an `A^1`-bundle over `D(A)`.  Masuda's principal-plinth
+theorem says that if the plinth ideal were nontrivial, the general closed
+fiber over each component of its zero divisor would be a disjoint union of at
+least two affine lines.  Every plinth component must lie in `A=0`, again by
+the trivialization.  The assumed irreducibility of the general boundary fiber
+therefore forces the plinth ideal to be the unit ideal.  The irreducible
+derivation has a slice and `R=K[z]`.
+
+Finally `(x,y,z)` is a polynomial coordinate system.  Since polynomial
+coordinate volume forms differ only by a nonzero scalar, the original
+Jacobian derivation (8.19) is itself a nonzero scalar multiple of
+`partial/partial z`.  It too is fixed-point-free.  QED
+
+The hypothesis has an intrinsic boundary formulation.  Let `E=V_R(A)`, let
+`L_A` be the algebraic closure of `k(V_K(A))` inside `k(E)`, and put
+
+\[
+ \sigma_A=[L_A:k(V_K(A))].                              \tag{8.27}
+\]
+
+This is the generic Stein degree of `E -> V_K(A)`.  In the present factorial
+`G_a` setting, Masuda's theorem identifies it with the number of affine-line
+components in a general closed boundary fiber.  Thus the hypothesis of
+Proposition 8.5 is precisely
+
+\[
+ \boxed{\sigma_A=1.}                                    \tag{8.28}
+\]
+
+This **quotient Stein degree** is the relative-dimension-one analogue of the
+residue-degree label for a generically finite boundary map.  It should be
+included in reconstruction-open status.  It is stable under a product with a
+trivial affine factor.
+
+In fact it is already present when the marked reconstruction generator is
+interpreted literally.  Let `partial_0` be the irreducible factor of
+`partial`.  It descends to a nonzero LND on `E`: an irreducible LND on the
+smooth threefold cannot vanish along the whole divisor.  If
+`partial_0(B)` is still divisible by `A`, the residue `bar(B) in k(E)` is
+invariant.  The invariant field of the induced boundary action is the
+relative algebraic closure `L_A`; if `bar(B)` is the marked primitive
+generator, then
+
+\[
+ L_A=k(V_K(A))(\bar B),\qquad
+ \boxed{\sigma_A=f_{\bar B}}.                           \tag{8.28a}
+\]
+
+If `partial_0(B)` is not divisible by `A`, it is already a boundary slice and
+`sigma_A=1`.  Consequently a primitive reconstruction residue with recorded
+degree `f_(bar B)=1` implies the hypothesis of Proposition 8.5.  No additional
+Stein label is needed; `sigma_A` is the correct interpretation of the
+existing residue-degree/reconstruction-open decoration in relative dimension
+one.
+
+### Theorem 8.6 -- completion of the marked cancellation branch
+
+In addition to Propositions 8.3--8.4, suppose that:
+
+1. the quotient Stein degree is `sigma_A=1`; and
+2. the plane-core primitive is the polynomial
+
+\[
+ T=C_0\int_0^s\{1-t(Q-Pt)^m\}^r\,dt\in R,
+ \qquad C_0\in k^*.                                    \tag{8.29}
+\]
+
+Then, after a polynomial source change and harmless nonzero scalings,
+
+\[
+ \boxed{
+ A=1+xy^m,\quad
+ B=A^{r+1}z+y^{m+1}h_q(A),\quad
+ P=AB,\quad Q=y+xB,}                                   \tag{8.30}
+\]
+
+where `q` is a root of the cancellation parameter polynomial and `h_q` is
+its unique finite cancellation jet.  Thus the reciprocal link is a
+cancellation construction, not merely a link with the same critical curve.
+
+#### Proof
+
+Proposition 8.5 supplies a slice `z`, and Proposition 8.4 gives
+
+\[
+ R=k[x,y,z],\qquad \partial={\partial\over\partial z}.
+\]
+
+After scaling `z`, equation (8.20) integrates to
+
+\[
+ B=A^{r+1}z+g(x,y)                                     \tag{8.31}
+\]
+
+for some `g in k[x,y]`.
+
+It remains to remove a restriction present in the earlier triangular
+rigidity argument: `g` need not initially be a polynomial in `(y,A)`.
+Localize at `y` and use `x=(A-1)/y^m`.  Then (8.27) becomes the generalized
+cancellation ansatz over `k[y,y^(-1),A]`.  Polynomiality of (8.25) implies
+the finite-cancellation congruence modulo `A^(r+1)`.  If
+
+\[
+ g_0(y)=g(-y^{-m},y),\qquad q(y)=g_0(y)/y^{m+1},         \tag{8.32}
+\]
+
+its constant term is
+
+\[
+ J_{mr,r}(q(y))=
+ \int_0^1u^r\{1-q(y)(1-u)\}^{mr}\,du=0.                \tag{8.33}
+\]
+
+The nonzero polynomial `J_(mr,r)` has coefficients in `k`.  Hence the
+rational function `q(y)` is algebraic over `k`, and therefore constant.
+The parameter polynomial is squarefree, so the localized Hensel jet is
+unique.  The known jet `y^(m+1)h_q(A)` supplies it, giving
+
+\[
+ g-y^{m+1}h_q(A)\in A^{r+1}k[y,y^{-1},A].               \tag{8.34}
+\]
+
+Since `A=1+xy^m` is coprime to `y`, divisibility by `A^(r+1)` descends from
+`k[x,y,y^(-1)]` to `k[x,y]`.  The quotient in (8.30) is removed by a
+polynomial shift of `z`.  This proves (8.26).  QED
+
+The theorem closes the former arbitrary-rational-chart gap in the marked
+category.  The remaining global supply question is
+
+\[
+ \boxed{
+ \text{unmarked divisor-minimal reconstruction}
+ \quad\Longrightarrow\quad
+ \begin{matrix}
+ \bar B\text{ generates }L_A,\\[-2pt]
+ f_{\bar B}=1.
+ \end{matrix}}                                         \tag{8.35}
+\]
+
+With the primitive degree-one residue marking proposed in this note, Theorem
+8.6 completes the cancellation branch as stated.  Without it, `sigma_A` must
+be added to the decorated boundary data.  Content and residual fixed schemes
+do not form further independent obstructions: Proposition 8.5 eliminates
+both when `sigma_A=1`.
+
 ### Affine modifications after choosing a completion
 
 An affine modification of `Spec A` with denominator `f` and center ideal `I`
 is
 
 \[
- \operatorname{Spec}A[I/f]\longrightarrow\operatorname{Spec}A. \tag{8.12}
+ \operatorname{Spec}A[I/f]\longrightarrow\operatorname{Spec}A. \tag{8.36}
 \]
 
 It is an affine chart of the blow-up of `(I,f)`.  The prime exceptional
@@ -781,10 +1123,11 @@ completion of (8.3), or the operation of replacing one completion boundary
 by another.  They remain the natural machinery, but only after this
 completion data has been chosen.
 
-### Bridge problem
+### Residual supply problem
 
-Classify elementary reciprocal-boundary links between affine three-spaces
-satisfying:
+Propositions 8.3--8.5 and Theorem 8.6 reduce the reciprocal bridge to the
+degree of one boundary Stein factor.  More explicitly, start with an
+elementary reciprocal-boundary link satisfying:
 
 1. there are prime boundary equations `A,D` and an isomorphism
    `X\V(A) = Z\V(D)`;
@@ -794,55 +1137,65 @@ satisfying:
    ledger at the two reciprocal valuations;
 4. one coordinate is preserved as the family parameter;
 5. the reconstruction field has one marked primitive generator whose
-   puncture valuation vector is primitive;
+   puncture valuation vector is primitive and whose boundary residue degree
+   is one;
 6. both affine completions are polynomial threefolds;
 7. the graph completion is divisor-minimal, with no unrecorded divisorial
    valuations or target ledger.
 
-The desired cancellation straightening conclusion is that, after source and
-target automorphisms, the link has
+The valuation markings already force, before any source-coordinate
+straightening,
 
 \[
  A=1+xf(y),
  \qquad
  s=x/A,
  \qquad
- Q=y+sP.                                                \tag{8.13}
+ Q=y+x(P/A).                                            \tag{8.37}
 \]
 
-Once (8.13) is reached, the existing rigidity theorem forces `f` to be a
-translated/scaled pure power and forces the finite cancellation jet.  The
-weighted branch has a separate polynomial-chart straightening problem.  The
-two branches unify at the level of the suspension square and its Jacobian
-`b`-divisors, not as one category of affine birational morphisms.
+In the normalized `G_m` case Theorem 5.1 makes `f` a translated/scaled pure
+power.  Boundary noncontraction recovers the invariant plane by Proposition
+8.4.  The degree-one Stein marking supplies the third coordinate by
+Proposition 8.5, and Theorem 8.6 forces the finite cancellation jet even when
+its initial tail is an arbitrary `g(x,y)`.
 
-It should initially be treated as a problem, not as a theorem or unrestricted
-conjecture.  Even after choosing a graph completion, affine modifications can
-have complicated or nonreduced centers.  The assumptions that both affine
-completions are `A^3`, that a family coordinate is preserved, and that
-reconstruction is primitive must all be used.
+Thus complicated or nonreduced graph centers are no longer the primary gap.
+They matter only insofar as they split the general boundary fiber, thereby
+changing `sigma_A`.  The weighted branch retains its separate polynomial-chart
+straightening problem.  The two branches unify at the level of the suspension
+square and its Jacobian `b`-divisors, not as one category of affine birational
+morphisms.
 
 ## 9. Falsification tests for the bridge
 
 A proposed straightening theorem should be tested against the following
 classes before an exhaustiveness claim is made.
 
-1. **Nonreduced completion centers.**  Let a graph-chart modification center
-   have one radical prime but nontrivial infinitesimal structure.  Test
-   whether the ledger sees only its divisorial valuation while the completed
-   link retains inequivalent contact data.
-2. **One Rees valuation but a nontriangular graph chart.**  Search ideals in
-   `k[x,y,z]` whose normalized blow-up has one exceptional prime and whose
-   relevant affine charts give two `A^3` completions of the same principal
-   open.
-3. **Laurent deformations.**  Use (6.2) to enumerate two-place critical
-   embeddings and test which admit a polynomial threefold lift.
-4. **Higher-power `A^1` cores.**  Test (6.1) for `r>=2` against low-weight
+1. **Boundary Stein splitting.**  Compute `sigma_A` directly for proposed
+   reciprocal links.  A value greater than one is the exact obstruction to
+   applying Proposition 8.5.
+2. **The standard plinth countermodel.**  The LND
+   `partial(x)=0, partial(y)=-2z, partial(z)=x^2` has kernel
+   `k[x,x^2y+z^2]`; its general special fiber is two affine lines and its
+   fixed locus lies over their collision.  Any proposed weakening of
+   `sigma_A=1` must reject this model.
+3. **Boundary contraction.**  Drop the residue-degree/noncontraction marking
+   in Proposition 8.4 and construct birational morphisms of affine planes
+   which are isomorphisms off one curve but contract that curve.  This tests
+   the exact necessity of the marking.
+4. **Nonreduced completion centers.**  Test whether a graph-chart center with
+   one radical prime but nontrivial infinitesimal structure produces precisely
+   a boundary-supported fixed scheme for (8.19).
+5. **Laurent deformations.**  Use (6.2) to enumerate two-place critical
+   embeddings and test which admit a polynomial threefold lift.  Theorem 8.6
+   shows that none survive once `sigma_A=1`.
+6. **Higher-power `A^1` cores.**  Test (6.1) for `r>=2` against low-weight
    polynomial and birational vertical ledgers.
-5. **Nontrivial target ledgers.**  Allow `R_beta` to absorb a divisor which
+7. **Nontrivial target ledgers.**  Allow `R_beta` to absorb a divisor which
    cannot be canceled by the source chart alone.  This is the most direct
    escape from the current triangular rigidity theorem.
-6. **Two primitive reconstruction variables.**  The existing third-divisor
+8. **Two primitive reconstruction variables.**  The existing third-divisor
    obstruction applies only when two source valuations share one primitive
    variable.
 
@@ -888,8 +1241,8 @@ replace an ad hoc contact label by a standard log-intersection construction.
 
 ## 11. Resulting classification target
 
-The realistic theorem can now be divided into a proved plane statement and
-one open lift statement.
+The realistic theorem now has a proved plane statement, a proved marked
+cancellation lift, and a separate weighted lift problem.
 
 ### Proved core statement
 
@@ -897,7 +1250,22 @@ A coordinate-preserving one-boundary plane core with normalized critical
 curve having at most two punctures is weighted or cancellation-type once the
 primitive boundary-coordinate valuation vectors of Theorem 5.1 are imposed.
 
-### Open suspension statement
+### Proved marked cancellation lift
+
+A divisor-minimal orientation-reversing suspension with the primitive
+`G_m` markings is cancellation-type provided:
+
+1. its marked boundary divisor is not contracted; and
+2. the boundary residue of `B=P/A` is the primitive reconstruction generator
+   and has residue degree one.
+
+The first condition is already part of the residue-degree/reconstruction-open
+decoration.  Equation (8.28a) identifies the second with `sigma_A=1`, and
+Proposition 8.5 turns it into fixed-point-freeness and a slice.  Under these
+conditions Propositions 8.3--8.5 and Theorem 8.6 prove the lift, including
+rigidity for an arbitrary initial correction `g(x,y)`.
+
+### Remaining open suspension statement
 
 Every divisor-minimal one-boundary Keller suspension with one primitive
 reconstruction generator admits, after polynomial left--right equivalence,
@@ -906,7 +1274,7 @@ one of two straightened chart mechanisms:
 1. an orientation-preserving polynomial chart supplying the one-place
    markings of Theorem 5.1;
 2. an orientation-reversing reciprocal boundary link supplying its two-place
-   markings and covered by the bridge problem.
+   markings and quotient Stein degree one.
 
 Proving the open suspension statement would yield the desired dichotomy:
 
@@ -921,11 +1289,12 @@ Proving the open suspension statement would yield the desired dichotomy:
  \end{array}                                            \tag{11.1}
 \]
 
-The current theory therefore stops at a sharply located bridge: the
-logarithmic ledger, stable decorated normalization, and marked plane-core
-dichotomy are formal or elementary; straightening the reciprocal completion
-link, together with the separate polynomial weighted chart, is the remaining
-global problem.
+The current theory therefore no longer stops at an unspecified rational-chart
+classification.  The marked cancellation branch is complete.  Equation
+(8.35) is only the supply problem for an initially unmarked suspension: does
+divisor-minimality force the primitive degree-one reconstruction residue?
+The orientation-preserving weighted branch still has its separate
+polynomial-chart straightening problem.
 
 ## References and repository links
 
@@ -936,6 +1305,9 @@ global problem.
 - The exact stable base-change proposition is in
   [`../papers/marked-root-multiplicity/stable-functoriality.tex`](../papers/marked-root-multiplicity/stable-functoriality.tex).
 - Rigidity after triangularization is in [`RIGIDITY.md`](RIGIDITY.md).
+- The finite-cancellation operator, its leading equation, and the Laurent
+  Hensel argument used in Theorem 8.6 are in
+  [`../archive/cancellation-components/GENERALIZED_CANCELLATION_MECHANISM.md`](../archive/cancellation-components/GENERALIZED_CANCELLATION_MECHANISM.md).
 - The tame logarithmic Jacobian, both marked plane cores, the reciprocal
   cancellation chart, and the numerical compression are checked exactly by
   [`../scripts/verify_log_geometry_of_suspensions.py`](../scripts/verify_log_geometry_of_suspensions.py).
@@ -950,6 +1322,21 @@ global problem.
   *Exceptional isomorphisms between complements of affine plane curves*;
   in characteristic zero they construct infinite families of nonequivalent
   `G_m` embeddings with isomorphic complements.
+- Miyanishi's kernel theorem and current structure results for locally
+  nilpotent derivations of `k^[3]` are summarized in
+  [Dasgupta--Gaifullin](https://arxiv.org/abs/2306.00510),
+  *On locally nilpotent derivations of polynomial algebra in three variables*.
+  The fixed-point-free translation theorem is due to
+  [Kaliman](https://arxiv.org/abs/math/0207156), and its characteristic-zero
+  field form appears in
+  [Daigle--Kaliman](https://doi.org/10.4153/CMB-2009-054-5).
+- The principal-plinth theorem used in Proposition 8.5 is
+  [Masuda](https://arxiv.org/abs/2312.05455),
+  *Factorial affine `G_a`-varieties with principal plinth ideals*; its
+  Corollary 3.11 turns irreducibility of the general boundary fiber into a
+  trivial `A^1`-bundle.
+- The quasi-finite step in Proposition 8.4 is the algebraic form of
+  [Zariski's Main Theorem, Stacks Project Tag 03GS](https://stacks.math.columbia.edu/tag/03GS).
 - The tame local model and the identity between tame different exponent and
   `e-1` are standard DVR facts; convenient references are the Stacks Project
   Tags [0EYF](https://stacks.math.columbia.edu/tag/0EYF),

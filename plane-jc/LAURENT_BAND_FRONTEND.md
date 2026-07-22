@@ -25,6 +25,12 @@ That arrow uses the normal-form, predecessor/successor, approximate-root, and
 Laurent-translation theorems of the plane-JC reduction.  It is not determined
 by the corner list alone.
 
+The code represents this boundary explicitly as a
+`NewtonNormalFormCertificate`.  A certificate maps one chain to zero or more
+Laurent cases, records the transformations and theorem source, and separately
+records whether the branch list is exhaustive.  Compilation is permitted only
+when the list is nonempty, exhaustive, and has no missing data.
+
 ## 1. Exact support compilation
 
 For the audited chart
@@ -113,6 +119,11 @@ least:
 Once those items are supplied, the new front end performs the remaining
 support and bracket transcription mechanically.
 
+This is also an executable distinction.  The audited `(72,108)` certificate
+contains exactly two distinct cases and compiles both.  The `(75,125)` F2
+record contains no cases, is marked non-exhaustive, and raises an error if a
+caller attempts to compile it.
+
 ## 4. Consequence for `(75,125)`
 
 Family `F2` at `j=1` supplies only
@@ -144,6 +155,8 @@ Expected output:
 
 ```text
 PASS: both audited polygons compile to their exact Laurent band supports
+PASS: one chain expands to two exhaustive, distinct Laurent cases
 PASS: polygon top bands compile to the certified genus-three first block
 PASS: the front end reproduces all five upper bracket layers J4,...,J0
+PASS: an unsupported F2 frontier cannot compile as a normal form
 ```

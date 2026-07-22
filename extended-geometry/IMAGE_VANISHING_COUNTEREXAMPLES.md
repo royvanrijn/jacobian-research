@@ -286,30 +286,183 @@ Hessian-nilpotent Vanishing Conjecture in dimension 42.  The precise
 HN/Laplacian equivalence and quartic VC are in
 [Zhao's Hessian-nilpotent paper](https://arxiv.org/abs/math/0409534).
 
-## 6. Identity output and the next dimension question
+## 6. Identity-output descent: `SIC(20)` and Laplacian GVC in dimension 40
 
-The 21-variable artifact still has
+The 21-variable artifact has
 
 \[
  \mathcal H_{20}=0,\qquad (a_{20},b_{20},c_{20})=(1,1,1).      \tag{6.1}
 \]
 
-Thus `V(q,s)=(G(q,s),s)`, and restriction to `s=1` gives a
-noninjective 20-variable Keller map.  The generator checks that its nonlinear
-terms have degrees one, two, and three.  It is not cubic homogeneous, so the
-degree-separation arguments in Sections 2 and 5 do not descend automatically.
+Write `q=(z_0,...,z_19)`, `s=z_20`, and
 
-This leaves concrete optimization questions rather than another proved VC
-bound:
+\[
+ V(q,s)=\bigl(q+\mathcal K(q,s),s\bigr).                       \tag{6.2}
+\]
 
-- find a rank-aware symmetric reduction of the 20-variable slice;
-- determine whether a direct generalized Image/Vanishing witness survives
-  without cubic degree separation;
-- rehomogenize the slice with fewer than 21 essential variables, if possible.
+Restriction to `s=1` gives a noninjective 20-variable Keller map; the three
+restricted points still have first coordinates `0,1,-1`.  Its correction
+`mathcal K(q,1)` has degrees one, two, and three.
 
-No dimension minimality is claimed for 21 or 42.
+The contraction witness nevertheless descends.  Treat `s` as a coefficient
+and put
 
-## 7. Reproduction and scope
+\[
+ \widehat p(w,q,s)=-\sum_{i=0}^{19}w_i\mathcal K_i(q,s).       \tag{6.3}
+\]
+
+This is exactly the 21-variable polynomial `p`: there is no `w_20` term.
+Every summand of the 21-variable contraction involving a positive
+`w_20`-exponent therefore vanishes, so that contraction is precisely the
+20-variable contraction in `q`, with coefficients in `C[s]`.  Hence
+
+\[
+ \mathcal E_{20}(\widehat p^m)=0.                              \tag{6.4}
+\]
+
+Moreover,
+
+\[
+ B_m(q,s)=\mathcal E_{20}(q_0\widehat p^m)                    \tag{6.5}
+\]
+
+is homogeneous of total `(q,s)`-degree `2m+1`.  Specialization at `s=1` is
+injective on homogeneous polynomials of a fixed degree: if homogeneous `B`
+has degree `d`, then on `s!=0`,
+
+\[
+ B(q,s)=s^dB(q/s,1).                                          \tag{6.6}
+\]
+
+Thus every nonzero `B_m(q,s)` stays nonzero at `s=1`.  Contraction in `q`
+commutes with specialization of the coefficient `s`.  Set
+
+\[
+ h(q)=-\mathcal K(q,1),\qquad p_{20}(w,q)=w\mathbin\cdot h(q).\tag{6.7}
+\]
+
+Sections 2--3 now specialize term by term to
+
+\[
+ \boxed{\mathcal E_{20}(p_{20}^m)=0\ (m\geq1),\qquad
+ \mathcal E_{20}(q_0p_{20}^m)\ne0\text{ infinitely often}}.  \tag{6.8}
+\]
+
+This proves `not SIC(20)`.  Applying (4.2) in 20 variables and using the
+unnormalized change
+
+\[
+ w=u+iv,\qquad q=u-iv,
+ \qquad \sum_i\partial_{w_i}\partial_{q_i}=\frac14\Delta_{40}\tag{6.9}
+\]
+
+gives the explicit degree-`2,3,4` polynomial
+
+\[
+ R_{20}(u,v)=-(u+iv)\mathbin\cdot\mathcal K(u-iv,1)            \tag{6.10}
+\]
+
+and `Q_0=u_0-iv_0` with
+
+\[
+ \boxed{\Delta^mR_{20}^m=0\ (m\geq1),\qquad
+ \Delta^m(Q_0R_{20}^m)\ne0\text{ infinitely often}}.         \tag{6.11}
+\]
+
+The [20/40 witness artifact](../artifacts/generated-results/image_vanishing_counterexamples_20_40.json)
+expands `R_20` into 628 terms over `Q(i)`.
+
+This polynomial is also Hessian nilpotent, as follows directly from the
+symmetric block construction.  Cubic homogeneity and the Keller identity give
+\(\det(I+tJ\mathcal H)=1\) for every scalar `t`, so \(J\mathcal H\) is
+nilpotent.  Its block form has zero bottom row, and hence its upper-left block
+\(J_q\mathcal K(q,s)\) is nilpotent.  For
+
+\[
+ f_t(x,y)=x^Ty+t\,y^T\mathcal K(x,1),                          \tag{6.12}
+\]
+
+the Hessian block determinant is
+
+\[
+ \det\operatorname{Hess}f_t
+ =(-1)^{20}\det(I+tJ_q\mathcal K)^2=1.                        \tag{6.13}
+\]
+
+After the change `x=u+iv`, `y=u-iv`, equation (6.13) becomes
+
+\[
+ \det(2I+t\operatorname{Hess}P_{20})=2^{40}.                  \tag{6.14}
+\]
+
+Thus the characteristic coefficients of `Hess P_20` vanish.  The relation
+
+\[
+ P_{20}(u,v)=(u-iv)\mathbin\cdot\mathcal K(u+iv,1)
+             =-R_{20}(u,-v)                                  \tag{6.15}
+\]
+
+then shows that `Hess R_20` is nilpotent.  Finally, Theorem 1.5 of
+[van den Essen--Zhao](https://arxiv.org/abs/0704.1690) says that for an HN
+polynomial, eventual vanishing of `Delta^m P^(m+1)` is equivalent to eventual
+vanishing of `Delta^m(fP^m)` for every polynomial `f`.  Taking `f=Q_0` in
+(6.11) gives
+
+\[
+ \boxed{\Delta^mR_{20}^{m+1}\ne0\text{ for infinitely many }m}.\tag{6.16}
+\]
+
+Thus dimension 40 already contains a nonhomogeneous HN Vanishing
+counterexample.  Homogenizing while preserving the ordinary nondegenerate
+Laplacian still uses the 42-variable quartic of Section 5.
+
+## 7. All-order recurrence for the actual homogeneous inverse
+
+Let \(\mathcal T\) be the symmetric trilinear polarization of the cubic map
+\(\mathcal H\), so
+
+\[
+ \mathcal H(z)=\mathcal T(z,z,z).                              \tag{7.1}
+\]
+
+Write the formal inverse of \(V=I+\mathcal H\) as
+
+\[
+ V^{-1}(z)=\sum_{m\geq0}g_m(z),\qquad \deg g_m=2m+1.          \tag{7.2}
+\]
+
+Coefficient comparison in \(V(V^{-1}(z))=z\) gives the exact all-order
+vector recurrence
+
+\[
+ g_0(z)=z,\qquad
+ g_m(z)=-\!\sum_{r+s+t=m-1}\mathcal T(g_r(z),g_s(z),g_t(z))
+ \quad(m\geq1).                                               \tag{7.3}
+\]
+
+This applies in particular to the already identified first coordinate:
+
+\[
+ (V^{-1})_0(z)=\sum_{m\geq0}(g_m)_0(z).                       \tag{7.4}
+\]
+
+The collision proof in Section 2 shows that infinitely many polynomials
+`(g_m)_0` are nonzero.  Thus (7.3) is an all-order recurrence for the named
+nonterminating inverse coordinate, not merely a bounded expansion.
+
+For a compact exact regression, specialize to the direction
+\(z=t(1,\ldots,1)\).  The checker obtains
+
+\[
+ (V^{-1})_0(t\mathbf1)
+ =t-2t^3+3t^5+13t^7-426t^9+2476t^{11}-\cdots .               \tag{7.5}
+\]
+
+It verifies every one of the 21 composition residuals through `m=15`.  This
+finite specialization is a regression for (7.3); the all-order
+nontermination statement comes from the exact collision argument.
+
+## 8. Reproduction and scope
 
 Run
 
@@ -317,16 +470,27 @@ Run
 .venv/bin/python scripts/verify_essential_bcw_21_route.py
 python3 scripts/audit_essential_bcw_21_independent.py
 .venv/bin/python scripts/generate_image_vanishing_counterexamples.py
+.venv/bin/python scripts/generate_identity_slice_counterexamples.py
+python3 scripts/audit_identity_slice_counterexamples_independent.py
+.venv/bin/python scripts/verify_inverse_coordinate_recurrence.py
 ```
 
-The last command verifies the source collision and coordinate separation,
-expands `p` and `R`, independently checks (5.8) coefficient by coefficient,
-and records the 20-dimensional identity-output slice.  The all-order steps
-are proofs in this note: finite computation alone cannot certify “infinitely
-many `m`.”
+The generators verify both source collisions and coordinate separation and
+expand all displayed witnesses.  The dependency-free slice audit reconstructs
+all 20 restricted components, the 40-variable contraction, and all 628 terms
+of `R_20` without SymPy.  The recurrence checker decodes the actual
+21-variable cubic map and replays (7.3) through bounded order.  The collision
+argument, rather than the finite prefix, proves all-order nontermination of
+coordinate zero.
+
+The 20-variable correction vector has full output span, so there is no
+further linear identity-output functional to restrict.  The homogeneous
+21-variable module audit likewise excludes another collision-preserving
+linear quotient.  Nonlinear reductions and dimension minimality remain open;
+no minimality is claimed for 20, 40, or 42.
 
 Primary credit for the Image and Vanishing frameworks remains with Zhao and
 the cited reduction literature.  The use of the repository's essential
-21-variable artifact, the named coordinate-zero certificate, and the
-21-to-42 witness optimization are repository-derived and have no external
-specialist review recorded.
+21-variable artifact, the identity-slice descent, the named recurrence, and
+the 20-to-40/21-to-42 witness optimizations are repository-derived and have no
+external specialist review recorded.

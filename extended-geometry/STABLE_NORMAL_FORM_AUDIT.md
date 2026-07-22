@@ -2,9 +2,9 @@
 
 The 190-variable Image and quartic HN witnesses below remain valid artifacts
 of the conservative 95-variable reduction.  They are no longer the best
-repository dimensions: the [essential 21-variable construction](IMAGE_VANISHING_COUNTEREXAMPLES.md)
-gives a direct `SIC(21)` witness and one explicit 42-variable quartic for both
-the generalized Laplacian and classical HN Vanishing Conjectures.
+repository dimensions: the [identity-slice construction](IMAGE_VANISHING_COUNTEREXAMPLES.md)
+gives a direct `SIC(20)` witness and a 40-variable generalized Laplacian/HN
+witness, while the homogeneous classical quartic witness has dimension 42.
 
 ## Corrected theorem
 

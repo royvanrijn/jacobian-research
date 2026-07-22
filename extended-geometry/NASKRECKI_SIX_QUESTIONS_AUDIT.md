@@ -327,6 +327,10 @@ the conductor are unnecessary for this differential statement.
 
 The remaining external-source task is bibliographic: locate the complete
 manuscript and compare its conventions and certificate with this independent
-reconstruction.  The separate internal problem is cross-stratum generator
-rigidity for the full intrinsic affine cover; that refinement could distinguish
-the finite rerootings but is not needed for generic unramifiedness.
+reconstruction.  The internal cross-stratum problem is now closed for the
+full intrinsic affine cover, including higher zero multiplicity and arbitrary
+extra-root collisions: the low-pole filtration recovers an affine primitive
+coordinate, the affine zero cluster kills its translation, and the root-one
+stratum kills its scaling.  The coarser decorated-normalization map remains
+etale of degree `N-2` on its generic locus; its proper collision boundary is
+the marked admissible-cover/LL closure.

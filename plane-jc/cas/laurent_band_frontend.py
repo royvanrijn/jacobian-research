@@ -12,7 +12,11 @@ from typing import Mapping
 
 import sympy as sp
 
-from newton_derham_compiler import NewtonChainIR, WeightedWronskianIR
+from newton_derham_compiler import (
+    NewtonChainIR,
+    WeightedWronskianIR,
+    frontier_75_125_record,
+)
 
 
 LatticePoint = tuple[int, int]
@@ -92,6 +96,29 @@ class LaurentPairIR:
     top_P_normalization: tuple[tuple[int, sp.Expr], ...]
     full_primitive_bounds: tuple[int, int]
     scaling_weights: tuple[tuple[sp.Symbol, int], ...] = ()
+
+
+@dataclass(frozen=True)
+class NewtonNormalFormCertificate:
+    """One-to-many bridge from a chain record to exhaustive Laurent cases."""
+
+    chain: NewtonChainIR
+    cases: tuple[LaurentPairIR, ...]
+    theorem_source: str
+    transformations: tuple[str, ...]
+    exhaustive: bool
+    missing_data: tuple[str, ...] = ()
+
+    @property
+    def frontend_complete(self) -> bool:
+        return (
+            self.chain.frontend_complete
+            and self.exhaustive
+            and bool(self.cases)
+            and bool(self.theorem_source)
+            and bool(self.transformations)
+            and not self.missing_data
+        )
 
 
 @dataclass(frozen=True)
@@ -197,6 +224,45 @@ def compile_laurent_leading_block(ir: LaurentPairIR) -> LaurentBandCompilation:
     )
 
 
+def compile_normal_form(
+    certificate: NewtonNormalFormCertificate,
+) -> tuple[LaurentBandCompilation, ...]:
+    """Validate an exhaustive normal-form certificate and compile every case."""
+
+    if not certificate.frontend_complete:
+        missing = ", ".join(certificate.missing_data) or "exhaustive Laurent cases"
+        raise ValueError(
+            f"normal form for {certificate.chain.name} is incomplete: {missing}"
+        )
+    expected = (
+        certificate.chain.corners,
+        certificate.chain.multiplicities,
+        certificate.chain.enumeration_source,
+    )
+    for case in certificate.cases:
+        actual = (
+            case.chain.corners,
+            case.chain.multiplicities,
+            case.chain.enumeration_source,
+        )
+        if actual != expected:
+            raise ValueError("a Laurent case does not belong to the certified chain")
+    return tuple(compile_laurent_leading_block(case) for case in certificate.cases)
+
+
+def _audited_72_108_chain() -> NewtonChainIR:
+    return NewtonChainIR(
+        name="72_108_last_chain",
+        corners=(
+            (sp.Rational(8), sp.Rational(28)),
+            (sp.Rational(11, 4), sp.Rational(7)),
+        ),
+        multiplicities=(3, 2),
+        enumeration_source="GGHV 2022 Proposition 4.3",
+        status="published exhaustive Laurent normal form and audited transcription",
+    )
+
+
 def audited_72_108_laurent_case(case: int) -> LaurentPairIR:
     """Return either published Proposition 4.3 polygon pair."""
 
@@ -207,16 +273,9 @@ def audited_72_108_laurent_case(case: int) -> LaurentPairIR:
     if case == 1:
         P_vertices.append((0, 8))
         Q_vertices.append((0, 12))
-    chain = NewtonChainIR(
-        name=f"72_108_laurent_case_{case}",
-        corners=((sp.Rational(8), sp.Rational(28)), (sp.Rational(11, 4), sp.Rational(7))),
-        multiplicities=(3, 2),
-        enumeration_source="GGHV 2022 Proposition 4.3",
-        status="published Laurent polygons and locally audited transcription",
-    )
     a2, a3, a4, a5, a6, a7 = sp.symbols("a2:8")
     return LaurentPairIR(
-        chain=chain,
+        chain=_audited_72_108_chain(),
         P_polygon=ConvexLatticePolygon(tuple(P_vertices)),
         Q_polygon=ConvexLatticePolygon(tuple(Q_vertices)),
         chart=MonomialChart((1, 2), (0, -1), sp.S.NegativeOne),
@@ -230,9 +289,40 @@ def audited_72_108_laurent_case(case: int) -> LaurentPairIR:
     )
 
 
+def audited_72_108_normal_form() -> NewtonNormalFormCertificate:
+    """The two exhaustive Proposition 4.3 Laurent branches."""
+
+    return NewtonNormalFormCertificate(
+        chain=_audited_72_108_chain(),
+        cases=tuple(audited_72_108_laurent_case(case) for case in (1, 2)),
+        theorem_source="GGHV 2022 Proposition 4.3",
+        transformations=(
+            "coordinate flip",
+            "Laurent triangular translations",
+            "edge reduction",
+            "monomial morphism x->x^-1, y->x^4*y",
+            "unimodular band chart t=x*y^2, z=y^-1",
+        ),
+        exhaustive=True,
+    )
+
+
+def frontier_75_125_normal_form() -> NewtonNormalFormCertificate:
+    """Typed refusal: the F2 j=1 row has no derived Laurent normal form."""
+
+    chain = frontier_75_125_record()
+    return NewtonNormalFormCertificate(
+        chain=chain,
+        cases=(),
+        theorem_source="not yet available for the F2 j=1 member",
+        transformations=(),
+        exhaustive=False,
+        missing_data=chain.missing_frontend_data,
+    )
+
+
 if __name__ == "__main__":
-    for case in (1, 2):
-        result = compile_laurent_leading_block(audited_72_108_laurent_case(case))
+    for case, result in enumerate(compile_normal_form(audited_72_108_normal_form()), 1):
         print(
             "case",
             case,

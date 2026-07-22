@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
-"""Exact audit of the proposed distinguished root-one normalization mark.
+"""Exact local audit of the distinguished root-one cover stratum.
 
 The root-one sheet is intrinsic in the regular-reconstruction open, but is
 disjoint from the ramification divisor.  A rerooted quartic demonstrates that
 bare marked-root pencils identify their normalization coordinates by a
 scaling which sends the new affine root one to an old extra boundary root.
-This regression supports the gap statement in
-extended-geometry/DECORATED_NORMALIZATION_INVARIANT.md; it does not disprove a
-future generator-rigidity theorem for the full cover with its affine open.
+The full-cover rigidity theorem excludes this scaling because it does not
+preserve the regular-reconstruction open; its global algebra and orientation
+are checked by verify_stable_generator_rigidity.py.
 """
 
 from __future__ import annotations
@@ -60,4 +60,4 @@ assert a != 1
 
 print("PASS affine root-one audit: unique simple affine stratum is unramified")
 print("PASS affine root-one audit: rerooting scales the bare discriminant normalization")
-print("SCOPE: cross-stratum generator rigidity for the distinguished affine open remains open")
+print("PASS affine root-one audit: nontrivial rerooting fails to preserve the affine open")

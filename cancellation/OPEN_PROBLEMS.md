@@ -55,13 +55,19 @@ derivative conjecture.  The complete range `mr<=30`, the full `m=1` column,
 additional uniform criteria, quantitative density bounds, and known `r=1`
 subfamilies are recorded in [ARITHMETIC.md](ARITHMETIC.md).
 
-A sharper intermediate target is to combine fixed-`r` density-one
-irreducibility with Newton-polygon/Jordan-cycle arguments and prove that the
-natural group contains `A_(mr)` for density-one many `m`.  Square
-discriminants have count `O_r(sqrt(X))` for `m<=X`, so this containment would
-already imply the cleaner density-one conclusion `Gal(M_(m,r))=S_(mr)`.
-The alternating square locus and the remaining reducibility exceptions can
-then be attacked as separate thin sets.
+A first part of the sharper fixed-row target is now proved.  The same
+Newton-polygon argument gives, for density-one many `m`, a prime
+`p>(log X)^10` dividing the Galois-group order and an order-`p` permutation
+of type `p^t 1^f` with `f>=p-1`; see
+[FIXED_R_NEWTON_RAMIFICATION.md](FIXED_R_NEWTON_RAMIFICATION.md).  It does not
+yet give a Jordan cycle, because inertia can act on several root-of-unity
+clusters at once.  The two precise remaining tasks are to isolate one
+`p`-cycle (`t=1`) and to prove primitivity.  Their combination would imply
+that the natural group contains `A_(mr)` for density-one many `m`.  Since
+square discriminants have count `O_r(sqrt(X))`, this would already give the
+cleaner density-one conclusion `Gal(M_(m,r))=S_(mr)`.  The alternating square
+locus and the remaining reducibility exceptions can then be attacked as
+separate thin sets.
 
 Determine also the minimal field over which the full symbolic collision is
 defined, rather than only the evident compositum of the parameter field and

@@ -1,12 +1,14 @@
 #!/usr/bin/env python3
 """Exact regressions for the Newton-chain/de Rham compiler IR."""
 
+from dataclasses import replace
 from functools import reduce
 from operator import mul
 
 import sympy as sp
 
 from newton_derham_compiler import (
+    certify_local_system_reuse,
     compile_weighted_wronskian,
     frontier_75_125_record,
     normalized_72_108_block,
@@ -57,6 +59,49 @@ assert sp.expand(residual - certificate.residual) == 0
 # fingerprint.  The proposed repeated-tail row honestly remains front-end
 # incomplete and records the lower-side source reconciliation.
 assert compiled.local_system_fingerprint[:5] == (2, 8, 1, 2, 6)
+
+# A fingerprint is only a screening invariant.  Reuse requires an exact
+# cyclic-curve identity after an explicit base/coordinate change.  The
+# forcing term may change without changing the Gauss--Manin local system.
+different_forcing = replace(block, R=t**3)
+reuse = certify_local_system_reuse(block, different_forcing)
+assert reuse.curve_identity == 0
+assert reuse.covering_exponent == 2
+assert reuse.character == 1
+
+# Exercise a nontrivial coordinate rescaling: s=2*t and y_candidate=3*y.
+s = sp.symbols("s")
+scaled_curve = replace(
+    block,
+    t=s,
+    A=9 * block.A.subs(t, s / 2),
+)
+scaled_reuse = certify_local_system_reuse(
+    block,
+    scaled_curve,
+    t_scale=2,
+    y_scale=3,
+)
+assert scaled_reuse.curve_identity == 0
+
+try:
+    certify_local_system_reuse(block, replace(block, A=block.A + 1))
+except ValueError as error:
+    assert "does not identify the curve families" in str(error)
+else:
+    raise AssertionError("a fingerprint-compatible but distinct curve must not certify")
+
+try:
+    certify_local_system_reuse(
+        block,
+        block,
+        base_substitution=((sp.Symbol("a2"), t),),
+    )
+except ValueError as error:
+    assert "may not depend on the fiber coordinate" in str(error)
+else:
+    raise AssertionError("a fiber-dependent substitution is not a base map")
+
 repeated = repeated_tail_96_144_record()
 assert not repeated.frontend_complete
 assert len(repeated.missing_frontend_data) == 5
@@ -85,4 +130,5 @@ else:
 
 print("PASS: (72,108) support equations are certified de Rham tail coordinates")
 print("PASS: the six tail classes have an exact triangular independence certificate")
+print("PASS: local-system reuse requires an exact curve-family identity")
 print("PASS: compiler IR refuses to invent missing frontier Laurent bands")

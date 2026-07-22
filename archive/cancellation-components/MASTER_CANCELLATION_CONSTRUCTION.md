@@ -251,48 +251,17 @@ factor of (13) give Galois-conjugate maps.  The displayed fields are:
 - `M_(2,2)`: `Q(q)` for a root of the displayed irreducible quartic; the four
   maps are conjugate and its splitting-field group is `D_4`.
 
-Uniform irreducibility and Galois group of (13) are **not** claimed.  An
-entire coordinate column is known: the classical truncated-binomial theorem
-proves (13) irreducible for every `(m,r)=(1,r)`.  In addition, if
-`mr+r+1=p^k` and
-`v_p(mr)=k-1`, then (13) is Eisenstein at `p`.  In particular it is
-irreducible whenever `mr+r+1` is prime.  See the exact
-[prime-power proof](PARAMETER_IRREDUCIBILITY.md).
-
-A second criterion handles composite values missed by Eisenstein.  If both
-`mr+1` and `mr+r+2` are prime and `mr+r+2` is primitive modulo `mr+1`, then
-reduction modulo `mr+r+2` turns (13) into the irreducible cyclotomic
-polynomial `Phi_(mr+1)`.  The same note proves this criterion.
-
-A third criterion uses the affine-reciprocal form
-`sum_(j=0)^(mr) binom(j+r,r)x^j`.  Its roots lie strictly inside the unit
-disk, so it is irreducible whenever its leading coefficient
-`binom(mr+r,r)` is prime.  In particular this proves every `r=1` case with
-`m+1` prime, including cases missed by both preceding criteria.
-
-The reciprocal is a truncated binomial polynomial, whose remaining general
-irreducibility is a genuine arithmetic problem; see
-[Filaseta--Kumchev--Pasechnik](https://arxiv.org/abs/math/0409523),
-[Khanduja--Khassa--Laishram](https://arxiv.org/abs/1306.0758), and the more
-recent [Laishram--Yadav](https://digitalcommons.isical.ac.in/journal-articles/4864/).
-For every pair with `mr<=30`, the exact regression now constructs a
-modular factor-degree sieve whose only surviving rational factor degrees are
-zero and the full degree.  This is an exact finite-range irreducibility proof,
-not a uniform theorem outside the four subfamilies above.
-
-The parameter-polynomial Galois groups are now classified exactly for every
-`mr<=30`; see [PARAMETER_GALOIS_GROUPS.md](PARAMETER_GALOIS_GROUPS.md).  Most
-are symmetric, but `(2,2)` has group `D_4`, `(2,3)` and `(6,1)` have the
-transitive degree-six `S_5=PGL_2(F_5)` action, `(4,3)` has group `A_12`, and
-`(2,8)` and `(16,1)` have group `A_16`, `(17,1)` has group `A_17`, and
-`(1,24)` and `(12,2)` have group `A_24`.  Thus no uniform full-symmetric
-assertion is made beyond that table.
-The exact [parameter-discriminant formula](PARAMETER_DISCRIMINANT.md) proves
-uniform separability and gives a complete rational-square criterion for all
-`m,r`.  Its even-degree square locus is completely parametrized and contains
-an explicit infinite family for each fixed `r`, so alternating containment is
-not a sporadic low-degree effect.  Only irreducibility and the permutation-
-group certificates remain finite-range inputs in the Galois table.
+The arithmetic status of (13) is no longer maintained in this construction
+archive.  The canonical overview is
+[ARITHMETIC.md](../../cancellation/ARITHMETIC.md), with the fixed-row local
+theorem and its exact limitation isolated in
+[FIXED_R_NEWTON_RAMIFICATION.md](../../cancellation/FIXED_R_NEWTON_RAMIFICATION.md).
+The component proofs remain in
+[PARAMETER_IRREDUCIBILITY.md](PARAMETER_IRREDUCIBILITY.md),
+[PARAMETER_DISCRIMINANT.md](PARAMETER_DISCRIMINANT.md), and
+[PARAMETER_GALOIS_GROUPS.md](PARAMETER_GALOIS_GROUPS.md).  In particular, no
+all-parameter irreducibility or large-group theorem is being imported into
+the construction.
 
 ## 4. Generic fiber degree and exact reconstruction
 

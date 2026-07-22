@@ -105,6 +105,22 @@ compatibility vector, exact residual identity, tail coordinates, and two
 fingerprints.  The local-system fingerprint deliberately omits `R` and
 primitive support; the supported-problem fingerprint includes them.
 
+Fingerprints are filters, not proofs of reuse.  The executable
+`certify_local_system_reuse` routine instead requires an explicit base map and
+nonzero coordinate scalings and checks the polynomial identity
+
+\[
+ A_{\rm candidate}(\lambda t)=\mu^a A_{\rm reference}(t).
+\]
+
+It also checks the covering exponent and character and forbids a purported
+base map from depending on the fiber coordinate.  A successful certificate
+identifies the base-changed cyclic curve families, hence the corresponding
+pulled-back character Gauss--Manin local systems on the locus where the two
+coordinate scales are nonzero.  It deliberately does not compare `R`,
+primitive support, or residual scaling: those belong to the stronger
+supported obstruction problem.
+
 ## 3. Gauss--Manin layer
 
 For parameters `u_j` and a compact basis representative
@@ -178,6 +194,10 @@ comparison
 \]
 
 Primitive support and residual scaling must then be compared separately.
+The new exact curve-identity checker implements the first of these gates for
+monomial coordinate scalings.  Since `(96,144)` still has no derived `A`, it
+cannot pass even that gate; matching fingerprints may not be substituted for
+the missing identity.
 
 ## 5. The `(75,125)` architecture row
 
@@ -209,4 +229,6 @@ python3 plane-jc/cas/test_newton_derham_compiler.py
 ```
 
 The second command certifies the `(72,108)` tail basis and confirms that the
-incomplete `(96,144)` and `(75,125)` records cannot be compiled.
+local-system checker accepts exact coordinate rescalings, rejects a distinct
+curve with the same coarse fingerprint, and confirms that the incomplete
+`(96,144)` and `(75,125)` records cannot be compiled.

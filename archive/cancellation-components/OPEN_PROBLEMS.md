@@ -1,5 +1,12 @@
 # Status and open problems
 
+> **Archived snapshot.**  This file preserves the component-era problem
+> ledger.  The current arithmetic overview and frontier are maintained in
+> [ARITHMETIC.md](../../cancellation/ARITHMETIC.md) and
+> [the active open-problem list](../../cancellation/OPEN_PROBLEMS.md).  The
+> fixed-row ramification advance is recorded separately in
+> [FIXED_R_NEWTON_RAMIFICATION.md](../../cancellation/FIXED_R_NEWTON_RAMIFICATION.md).
+
 ## Current open frontier
 
 The active questions are now sharply separated from completed milestones:
@@ -149,30 +156,10 @@ cover-lifting part of that residual kernel.
 
 ## Parameter-polynomial arithmetic
 
-The [prime-power Eisenstein theorem](PARAMETER_IRREDUCIBILITY.md) proves
-`M_(m,r)` irreducible whenever
-
-\[
- mr+r+1=p^k,\qquad v_p(mr)=k-1.
-\]
-
-This includes every pair for which `mr+r+1` is prime and shows that its maps
-form one arithmetic Galois-conjugacy class.  It does not settle
-irreducibility for arbitrary `(m,r)`.  Classical truncated-binomial theory
-does settle the complete column `m=1`.  A second theorem in the same note
-proves irreducibility when `mr+1` and `mr+r+2` are prime and `mr+r+2` is
-primitive modulo `mr+1`; reduction then gives `Phi_(mr+1)`.  A third theorem
-uses the unit-disk transform to cover `binom(mr+r,r)` prime, including every
-`r=1` case with `m+1` prime.  The remaining questions are the other
-truncated-binomial cases beyond the exact modularly certified range
-`mr<=30` and the additional pairs `(49,1),(97,1)`, higher Galois groups, and
-unrestricted polynomial left--right
-equivalence between conjugate roots over an algebraic closure. Fixed-target
-right-equivalence is already ruled out for distinct roots. The
-[closed discriminant formula](PARAMETER_DISCRIMINANT.md) already settles
-separability and alternating containment uniformly; square discriminants
-occur in an explicit infinite family for every fixed `r`.  The exact
-[Galois table](PARAMETER_GALOIS_GROUPS.md) shows that full symmetric groups
-coexist with `D_4`, the exceptional degree-six `S_5` action, and alternating
-groups `A_12`, `A_16`, `A_17`, `A_24`, `A_49`, and `A_97`, so the higher-group
-problem must allow genuine exceptional families.
+This archived section is superseded by the canonical
+[arithmetic overview](../../cancellation/ARITHMETIC.md) and
+[active arithmetic frontier](../../cancellation/OPEN_PROBLEMS.md).  Exact
+component proofs and finite certificates remain available in
+[PARAMETER_IRREDUCIBILITY.md](PARAMETER_IRREDUCIBILITY.md),
+[PARAMETER_DISCRIMINANT.md](PARAMETER_DISCRIMINANT.md), and
+[PARAMETER_GALOIS_GROUPS.md](PARAMETER_GALOIS_GROUPS.md).

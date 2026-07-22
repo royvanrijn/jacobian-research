@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 """Search shared-factor BCW traces for smaller essential dimension.
 
-The certified trace uses s=13 exposed variables and has cubic-output rank
-k=7.  The beam uses ``s+rank(C)`` as a cheap partial-state heuristic, but every
-completed trace is rank-compressed, homogenized, and constant-kernel
-quotiented before comparison.  It emits a JSON plan only when the final
-essential dimension strictly improves the incumbent; the emitted plan must
-still be frozen into a generator and independently replayed before changing
-any theorem statement.
+The certified trace uses s=14 exposed variables and has cubic-output rank
+k=6.  The beam can use ``s+rank(C)`` as a cheap partial-state heuristic or a
+modular estimate of the post-kernel essential dimension, but every completed
+trace is rank-compressed, homogenized, and constant-kernel quotiented before
+comparison.  It emits a JSON plan only when the final essential dimension
+strictly improves the incumbent; the emitted plan must still be frozen into a
+generator and independently replayed before changing any theorem statement.
 """
 
 from __future__ import annotations
@@ -163,6 +163,18 @@ def modular_essential_lower_bound(state: State) -> int:
     return modular_jacobian_coefficient_rank(homogeneous, variables)
 
 
+def partial_modular_essential_estimate(state: State) -> int:
+    """Kernel-aware heuristic from the current quadratic/cubic truncation."""
+
+    quadratic = [homogeneous_part(value, state.variables, 2) for value in state.expressions]
+    cubic = [homogeneous_part(value, state.variables, 3) for value in state.expressions]
+    factorization = factor_cubic_output(cubic)
+    variables, homogeneous = rank_compressed_homogeneous_map(
+        state.variables, quadratic, factorization
+    )
+    return modular_jacobian_coefficient_rank(homogeneous, variables)
+
+
 def plan_json(
     state: State, rank: int, final_dimension: int, kernel_dimension: int
 ) -> dict[str, object]:
@@ -221,9 +233,12 @@ def main() -> None:
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
     parser.add_argument(
         "--score-mode",
-        choices=("rank-first", "degree-first"),
+        choices=("rank-first", "degree-first", "kernel-aware"),
         default="rank-first",
-        help="rank-first directly prioritizes s+rank after maximum degree",
+        help=(
+            "rank-first prioritizes s+rank; kernel-aware reranks a bounded "
+            "prebeam by modular essential dimension of its Q/C truncation"
+        ),
     )
     parser.add_argument(
         "--check-two-parameter",
@@ -256,9 +271,21 @@ def main() -> None:
                 if previous is None or candidate.plan < previous.plan:
                     deduplicated[key] = candidate
 
+        modular_terminal_histogram: dict[int, int] = {}
         for candidate in completed:
             rank = cubic_rank(candidate)
-            if modular_essential_lower_bound(candidate) >= best_objective:
+            modular_bound = modular_essential_lower_bound(candidate)
+            modular_terminal_histogram[modular_bound] = (
+                modular_terminal_histogram.get(modular_bound, 0) + 1
+            )
+            if args.check_two_parameter:
+                values = two_parameter_values(candidate)
+                failures = sum(value != 1 for value in values)
+                two_parameter_tested += 1
+                two_parameter_best_failures = min(two_parameter_best_failures, failures)
+                if failures == 0 and two_parameter_candidate is None:
+                    two_parameter_candidate = candidate
+            if modular_bound >= best_objective:
                 continue
             objective, _ = essential_dimension(candidate)
             if objective < best_objective or (
@@ -267,16 +294,33 @@ def main() -> None:
             ):
                 best_objective = objective
                 best_complete = candidate
-            if args.check_two_parameter:
-                values = two_parameter_values(candidate)
-                failures = sum(value != 1 for value in values)
-                two_parameter_tested += 1
-                two_parameter_best_failures = min(two_parameter_best_failures, failures)
-                if failures == 0 and two_parameter_candidate is None:
-                    two_parameter_candidate = candidate
-
-        ranked = sorted(deduplicated.values(), key=lambda state: score(state, args.score_mode))
-        frontier = ranked[: args.width]
+        if args.score_mode == "kernel-aware":
+            prebeam = sorted(
+                deduplicated.values(), key=lambda state: score(state, "rank-first")
+            )[: 4 * args.width]
+            estimates = {
+                state_key(state): partial_modular_essential_estimate(state)
+                for state in prebeam
+            }
+            frontier = sorted(
+                prebeam,
+                key=lambda state: (
+                    high_terms(state.expressions, state.variables)[0][0],
+                    estimates[state_key(state)],
+                    score(state, "rank-first"),
+                ),
+            )[: args.width]
+        else:
+            ranked = sorted(
+                deduplicated.values(), key=lambda state: score(state, args.score_mode)
+            )
+            frontier = ranked[: args.width]
+        if modular_terminal_histogram:
+            print(
+                "terminal_modular_essential_histogram="
+                + json.dumps(dict(sorted(modular_terminal_histogram.items()))),
+                flush=True,
+            )
         if frontier:
             lead = frontier[0]
             lead_signature, _ = high_terms(lead.expressions, lead.variables)

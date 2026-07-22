@@ -33,6 +33,7 @@ verify-core: verify-minimal
 	$(PYTHON) scripts/verify_normalized_factorization_slice.py
 	$(PYTHON) scripts/verify_quadratic_cubic_factorization_invariants.py
 	$(PYTHON) scripts/verify_quadratic_cubic_modification_topology.py
+	$(PYTHON) scripts/verify_quadratic_cubic_additive_actions.py
 	$(PYTHON) scripts/verify_weighted_invariant_jacobian_reduction.py
 	$(PYTHON) scripts/verify_weighted_tangent_suspension.py
 	$(PYTHON) scripts/verify_foundational_weighted_coefficient_scheme.py
@@ -81,9 +82,11 @@ verify-master:
 	$(PYTHON) scripts/verify_counterexample_ladder.py
 	$(PYTHON) scripts/verify_parameter_irreducibility.py
 	$(PYTHON) scripts/verify_parameter_discriminant.py
+	$(PYTHON) scripts/verify_fixed_r_newton_ramification.py
 	$(PYTHON) scripts/verify_parameter_galois_groups.py
 	$(PYTHON) scripts/verify_parameter_galois_jordan.py
 	$(PYTHON) scripts/verify_generalized_cancellation.py
+	$(PYTHON) scripts/verify_log_geometry_of_suspensions.py
 	$(PYTHON) scripts/verify_three_weight_cancellation.py
 	$(PYTHON) scripts/verify_two_factor_resolvent.py
 	$(PYTHON) scripts/verify_target_dependent_resolvent.py
@@ -109,6 +112,9 @@ verify-external-consequences:
 	$(PYTHON) scripts/verify_essential_bcw_21_route.py
 	$(SYSTEM_PYTHON) scripts/audit_essential_bcw_21_independent.py
 	$(PYTHON) scripts/generate_image_vanishing_counterexamples.py
+	$(PYTHON) scripts/generate_identity_slice_counterexamples.py
+	$(SYSTEM_PYTHON) scripts/audit_identity_slice_counterexamples_independent.py
+	$(PYTHON) scripts/verify_inverse_coordinate_recurrence.py
 	$(PYTHON) scripts/audit_bcw_21_linear_quotients.py
 	$(PYTHON) scripts/verify_two_parameter_bcw_obstruction.py
 	$(SYSTEM_PYTHON) scripts/verify_fixed_gmc_sic_bridge.py
@@ -131,6 +137,8 @@ verify-regressions: verify-external-consequences
 	$(PYTHON) scripts/verify_external_quartic_islands.py
 	$(PYTHON) scripts/verify_decorated_normalization.py
 	$(PYTHON) scripts/verify_affine_branch_mark_audit.py
+	$(PYTHON) scripts/verify_stable_generator_rigidity.py
+	$(PYTHON) scripts/verify_multicluster_ll_comparison.py
 	$(PYTHON) scripts/verify_quartic_c0_fibers.py
 	$(PYTHON) scripts/verify_quartic_nonproperness_paths.py
 	$(PYTHON) scripts/verify_quartic_properness_converse.py
