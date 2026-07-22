@@ -36,12 +36,21 @@ for e_i in range(1, 5):
         assert root_valuation(on_branch_i, u, 0) == e_i * e_j
 
 
-# For normalized seeds with simultaneous clusters at 0 and 2, compute the
+# For normalized seeds with two and three simultaneous clusters, compute the
 # global implicit discriminant and its adjunction conductor.  On branch i the
 # predicted conductor exponent is e_i(E-1), where E=sum_j e_j.
-cluster_pairs = ((2, 2), (2, 3), (3, 3), (2, 4))
-for multiplicity_zero, multiplicity_two in cluster_pairs:
-    raw_seed = w**multiplicity_zero * (w - 2) ** multiplicity_two * (w - 1)
+cluster_profiles = (
+    ((0, 2), (2, 2)),
+    ((0, 2), (2, 3)),
+    ((0, 3), (2, 3)),
+    ((0, 2), (2, 4)),
+    ((0, 2), (2, 2), (3, 2)),
+    ((0, 3), (2, 2), (3, 2)),
+)
+for profile in cluster_profiles:
+    raw_seed = w - 1
+    for center, multiplicity in profile:
+        raw_seed *= (w - center) ** multiplicity
     scale = sp.cancel(-1 / sp.diff(raw_seed, w).subs(w, 1))
     seed = sp.expand(scale * raw_seed)
 
@@ -61,15 +70,16 @@ for multiplicity_zero, multiplicity_two in cluster_pairs:
     conductor_numerator, conductor_denominator = sp.together(conductor).as_numer_denom()
     assert sp.Poly(conductor_denominator, r).degree() == 0
 
-    e_zero = multiplicity_zero - 1
-    e_two = multiplicity_two - 1
-    total_e = e_zero + e_two
-    assert root_valuation(conductor_numerator, r, 0) == e_zero * (total_e - 1)
-    assert root_valuation(conductor_numerator, r, 2) == e_two * (total_e - 1)
+    total_e = sum(multiplicity - 1 for _, multiplicity in profile)
+    for center, multiplicity in profile:
+        ramification = multiplicity - 1
+        assert root_valuation(conductor_numerator, r, center) == (
+            ramification * (total_e - 1)
+        )
 
     # The local parameter orders are e_i and e_i+1, and the tangent slopes
     # are the root centers 0 and 2.
-    for center, multiplicity in ((0, multiplicity_zero), (2, multiplicity_two)):
+    for center, multiplicity in profile:
         local_s = sp.expand(parameter_s.subs(r, center + u))
         local_q = sp.expand((parameter_t - center * parameter_s).subs(r, center + u))
         assert root_valuation(local_s, u, 0) == multiplicity - 1

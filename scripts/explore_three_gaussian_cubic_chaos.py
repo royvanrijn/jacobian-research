@@ -58,6 +58,7 @@ def singular_program(
     chart: int,
     prime: int,
     low_coefficients: int | None,
+    algorithm: str,
 ) -> str:
     if not 0 <= chart <= degree:
         raise ValueError("chart must lie between zero and degree")
@@ -143,7 +144,7 @@ print(nc);
 print("used_coefficient_equations");
 print(nc-start+1);
 print("starting_groebner_basis");
-ideal G=std(I);
+ideal G={algorithm}(I);
 print("basis_size");
 print(size(G));
 print("normal_form_one");
@@ -158,6 +159,7 @@ def main() -> None:
     parser.add_argument("--chart", type=int, default=0)
     parser.add_argument("--prime", type=int, default=32003)
     parser.add_argument("--low-coefficients", type=int)
+    parser.add_argument("--algorithm", choices=("std", "slimgb"), default="slimgb")
     parser.add_argument("--timeout", type=int, default=300)
     parser.add_argument("--emit", action="store_true")
     args = parser.parse_args()
@@ -167,6 +169,7 @@ def main() -> None:
         args.chart,
         args.prime,
         args.low_coefficients,
+        args.algorithm,
     )
     if args.emit:
         print(program)

@@ -348,9 +348,11 @@ Let `alpha` be any primitive root of `H`, simple or multiple, put
 Consequently the semilocal completion over the second boundary is the product
 of the rings (6.2), one for each geometric root.  Hensel separation makes
 distinct root clusters independent.  Formula (6.2) is also the contracted
-local equation of the marked admissible cover, by Section 6.1.  The
-reconstruction marking merely declares which of these regular charts belongs
-to the affine open, so it is preserved by the comparison.
+local equation of the marked admissible cover, by Section 6.1.  The rational
+reconstruction coordinates are the same functions in their common function
+field.  Normality therefore gives the same pole divisors and the same maximal
+regularity open on both finite models, including the separate affine and
+polar valuations inside a higher root cluster.
 
 ### 6.3 The multicluster conductor
 
@@ -419,6 +421,6 @@ comparison before and after geometric splitting.
 
 The symbolic regression
 `scripts/verify_multicluster_ll_comparison.py` checks (6.3)--(6.5) on
-normalized seeds with several pairs of simultaneous clusters, including the
+normalized seeds with two and three simultaneous clusters, including the
 adjunction conductor obtained from the global implicit discriminant.  Thus
 the local-to-global comparison left open after (5.2) is complete.
