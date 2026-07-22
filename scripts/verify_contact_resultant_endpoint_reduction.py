@@ -58,6 +58,82 @@ for m_value in range(1, 7):
         assert sp.factor(triangular - L) == 0
 
 
+# The tails T_r(y)=integral_0^1 x^(m*r)(1-y*x)^r dx satisfy the contiguous
+# recurrence derived by integrating
+# d(x^(m*r+j+1)(1-y*x)^(r+1)) for j=0,...,m.  This bounded exact loop is a
+# regression of the all-parameter integration-by-parts proof in the note.
+def tail_polynomial(m_value: int, r_value: int) -> sp.Expr:
+    return sum(
+        (-1) ** j
+        * sp.binomial(r_value, j)
+        * y**j
+        / (m_value * r_value + j + 1)
+        for j in range(r_value + 1)
+    )
+
+
+for m_value in range(1, 7):
+    for r_value in range(7):
+        a_values = [m_value * r_value + j + 1 for j in range(m_value)]
+        b_values = [
+            (m_value + 1) * r_value + j + 2 for j in range(m_value + 1)
+        ]
+        A_value = sp.prod(a_values)
+
+        def B_value(index: int) -> sp.Expr:
+            return sp.prod(b_values[:index])
+
+        inhomogeneous = y**m_value * B_value(m_value) - (
+            r_value + 1
+        ) * sum(
+            y**index
+            * B_value(index)
+            * sp.prod(a_values[index + 1 :])
+            for index in range(m_value)
+        )
+        recurrence_residual = (
+            y**m_value
+            * B_value(m_value + 1)
+            * tail_polynomial(m_value, r_value + 1)
+            - (r_value + 1)
+            * A_value
+            * tail_polynomial(m_value, r_value)
+            - (1 - y) ** (r_value + 1) * inhomogeneous
+        )
+        assert sp.factor(recurrence_residual) == 0
+
+
+# The forcing P_{m,r}(y) has r-degree at most m.  Its alternating binomial
+# transform therefore vanishes above row m, leaving a homogeneous recurrence
+# for G_r=L_{m,r}/z^r.  Check the finite-difference cancellation exactly.
+for m_value in range(1, 7):
+
+    def contact_forcing(r_value: int) -> sp.Expr:
+        a_values = [m_value * r_value + j + 1 for j in range(m_value)]
+        b_values = [
+            (m_value + 1) * r_value + j + 2 for j in range(m_value + 1)
+        ]
+
+        def B_value(index: int) -> sp.Expr:
+            return sp.prod(b_values[:index])
+
+        return y**m_value * B_value(m_value) - (r_value + 1) * sum(
+            y**index
+            * B_value(index)
+            * sp.prod(a_values[index + 1 :])
+            for index in range(m_value)
+        )
+
+    for transform_row in range(m_value + 1, m_value + 4):
+        transformed_forcing = sum(
+            (-1) ** index
+            * sp.binomial(transform_row, index)
+            * contact_forcing(index)
+            for index in range(transform_row + 1)
+        )
+        assert sp.expand(transformed_forcing) == 0
+
+
 # Uniform r=1 proof.  Here L_{m,1}+K_{m,1}=(1-w)^m and
 # K_{m,1}(1)=Beta(2,m+1)=1/((m+1)(m+2)).
 m = sp.symbols("m", integer=True, positive=True)
@@ -231,7 +307,9 @@ assert minor_degrees == expected_minor_degrees
 
 
 print("PASS contact endpoint reduction: general moment identities on 1<=m,r<=6")
+print("PASS contact endpoint reduction: contiguous r-recurrence on 1<=m<=6, 0<=r<=6")
+print("PASS contact endpoint reduction: homogeneous contact recurrence above r=m")
 print("PASS contact resultant: uniform nonvanishing for every m and r=1")
 print("PASS contact resultant: uniform nonvanishing for every m and r=2")
 print("PASS contact resultant: Schur--Cohn separation for every m and r=3")
-print("SCOPE: this checker covers r<=3; the separate r=4 checker completes the next column")
+print("SCOPE: this checker covers r<=3; separate checkers complete r=4 and r=5")

@@ -315,9 +315,16 @@ separates all selected parameter roots within those types.
 
 Each such map also yields an injective non-surjective endomorphism of `A_3(k)`
 whose differential-order symbol map has the corresponding generic degree.
-No inequivalence claim for the resulting Weyl endomorphisms is made: arbitrary
-Weyl automorphisms need not preserve the differential-order filtration or the
-polynomial function subalgebra.
+Under stable left--right equivalence by differential-order-preserving Weyl
+automorphisms, associated graded recovers polynomial cotangent left--right
+equivalence.  The decorated-normalization invariant therefore also gives an
+`(N-3)`-dimensional family of inequivalent filtered Weyl endomorphisms, with
+exact seed recovery on the compatible affine-marked open.  The detailed
+argument is [Theorem 4.1 of the stable-moduli note](SYMPLECTIC_STABLE_MODULI.md#theorem-41--n-3-dimensional-filtered-weyl-moduli).
+
+No inequivalence claim is made under arbitrary Weyl automorphisms, which need
+not preserve the differential-order filtration or the polynomial function
+subalgebra.
 
 ## Corollary 5 — independent four-dimensional symplectic completion
 

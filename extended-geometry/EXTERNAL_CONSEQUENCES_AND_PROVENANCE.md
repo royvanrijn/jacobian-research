@@ -410,10 +410,14 @@ arbitrary JC(2) counterexamples.
    is the priority target for external specialist review.  Determine when two
    resulting pairs are equivalent and whether a different correction can
    descend uniformly to three real variables.  The raw mixed-moment question
-   is now settled internally: the full sequence recovers `1+lambda*H`
-   exactly—and on `H'(1)=-1` recovers both `lambda` and `H`—so seed moduli
-   survive as exact moment fingerprints, without yet implying inequivalence
-   under transformations of Gaussian variables.
+   is now settled internally: for a degree-`N` seed the first `N+1` mixed
+   moments recover `1+lambda*H` exactly—and on `H'(1)=-1` recover both
+   `lambda` and `H`.  Thus the bridge gives an explicit algebraic
+   `(N-3)`-dimensional family separated by finite moment vectors.  Long's
+   three-real-variable witness remains dimensionally smaller; the family and
+   its finite fingerprints, not smallest dimension, are the point here.  This
+   does not yet imply inequivalence under transformations of Gaussian
+   variables.
 3. **Minimal dimensions.**  Determine why both the simple marked-point
    architecture and Long's direct GMC architecture begin naturally in
    dimension three.  Study GMC(2) without treating it as equivalent to JC(2).
@@ -422,9 +426,12 @@ arbitrary JC(2) counterexamples.
    weighted seeds admit analogous pole-free flux corrections, whether their
    stable moduli survive in dimension four, and compare the local formulas
    with the external manuscript only after its full source is available.
-5. **Quantization.**  Compare inverse-Jacobian Weyl lifts,
-   Hamiltonian-dual constructions, and associated-graded maps.  Keep ordinary
-   Weyl equivalence distinct from filtration-preserving equivalence.
+5. **Quantization.**  The associated-graded map now transfers the full
+   `(N-3)` decorated-normalization dimension to inequivalent inverse-Jacobian
+   Weyl lifts under stable differential-order-preserving left--right
+   equivalence, with parameter faithfulness on the compatible marked open.
+   Compare these lifts with Hamiltonian-dual constructions, and determine
+   what, if anything, survives under arbitrary Weyl equivalence.
 6. **Cancellation taxonomy.**  Compare polynomial Jacobian cancellation in
    the foundational map, Long's Lagrange/determinant cancellation, and the
    beta/binomial cancellation in the `(xz)` example.

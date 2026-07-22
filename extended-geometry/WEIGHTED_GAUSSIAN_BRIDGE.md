@@ -326,6 +326,39 @@ does not assert that the resulting polynomial pairs are inequivalent under
 arbitrary transformations of the Gaussian variables or under any broader
 notion of Gaussian-witness equivalence.
 
+### Corollary 6.2 — finite Gaussian fingerprints in positive-dimensional families
+
+Fix `N>=4` and `lambda!=0`.  On the normalized admissible degree-`N` seed
+space, the bridge is an algebraic family of explicit `GMC(4)` witnesses, and
+the finite moment vector
+
+\[
+ \mathfrak f_N(H)=
+ \bigl(M_1(H,\lambda),\ldots,M_{N+1}(H,\lambda)\bigr)             \tag{6.6}
+\]
+
+is injective.  Indeed, `h=1+lambda H` has degree `N`, so the finite recovery
+statement (6.4) reconstructs `h` and fixed `lambda` then reconstructs `H`.
+Each entry of (6.6) is polynomial in the coefficients of `H`, by (1.6).
+
+The decorated-normalization theorem supplies a nonempty ordinary
+boundary-clean seed open whose stable-moduli image has dimension `N-3`.
+Restricting the bridge to that open therefore gives
+
+\[
+ \boxed{\text{an explicit algebraic }(N-3)\text{-dimensional family of
+ four-real-Gaussian GMC witnesses separated by }N+1\text{ mixed moments}.}
+                                                               \tag{6.7}
+\]
+
+The separation in (6.7) is separation of the seed parameters by a finite
+observable vector.  It is deliberately not phrased as inequivalence of the
+Gaussian polynomial pairs under an unspecified transformation group.
+Christopher D. Long's direct witness uses three real Gaussian variables and
+is therefore dimensionally smaller.  The point of (6.7) is instead the
+positive-dimensional, finitely fingerprinted family; no smallest-dimension
+claim is made here.
+
 ## 7. Three-real-variable obstruction through quadratic real chaos
 
 For the more economical ansatz

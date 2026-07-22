@@ -23,8 +23,8 @@ and
 
 The full cancellation prime-intersection diagram requires
 `Res_w(K_{m,r},L_{m,r}) != 0`.  This note records a uniform endpoint
-reduction and proves the four complete columns `r=1,2,3,4`.  It does **not**
-claim the remaining all-parameter theorem for `r>=5`.
+reduction and proves the five complete columns `r=1,2,3,4,5`.  It does **not**
+claim the remaining all-parameter theorem for `r>=6`.
 
 ## 1. Triangular beta-primitive identity
 
@@ -399,9 +399,255 @@ conjugate contradiction.  Therefore
  \quad\text{for every }m\ge1.}                      \tag{31}
 \]
 
-## 7. Scope boundary (`OP-CR`)
+## 7. The complete column `r=5`
 
-The all-parameter problem now begins at `r=5`.  Formula (6) still gives a
+At a common root, division of (1) by the nonzero `z` gives
+
+\[
+ z^4-5z^3M_1+10z^2M_2-10zM_3+5M_4=0.
+\]
+
+After endpoint denominators are cleared, this is a quartic
+`E_m(y,z)`, while `M_5=0` is a binomial quintic `F_m(y,z)`.  Their
+subresultant chain has `z`-degrees
+
+\[
+ 5,4,3,2,1,0.
+\]
+
+The sparse 26-term quartic--binomial-quintic resultant factors as
+
+\[
+ \operatorname{Res}_z(E_m,F_m)=(y-1)^5H_m(y),       \tag{32}
+\]
+
+up to a nonzero rational function of `m`; the primitive eliminant `H_m` has
+bidegree `(49,20)` in `(m,y)`.  The penultimate subresultant is again linear
+in `z`, and its two coefficients have explicit sparse formulas.  Direct exact
+substitution `z=y^m` gives
+
+\[
+ \gcd(E_m(y,y^m),F_m(y,y^m))=(y-1)^5
+ \qquad(1\le m\le19).
+\]
+
+This leaves only the excluded endpoint `y=1`, where `K_{m,5}(0)=1/6`.
+
+For `m>=20`, put `t=1/m`, `x=m(y-1)`, and
+
+\[
+ P_5(t,x)=t^{29}H_{1/t}(1+tx).
+\]
+
+This is a polynomial of degree twenty in `x`, degree forty-nine in `t`, with
+840 terms.  The exact Routh table of `P_5(0,-4/5-s)` has two sign changes.
+On the line `Re(x)=-4/5`, write
+
+\[
+ P_5(t,-4/5+i\omega)=R(t,\omega^2)+i\omega S(t,\omega^2).
+\]
+
+The crossing resultant `Res_{omega^2}(R,S)` has degree 931 in `t`.  After
+`t=T/(20(1+T))`, all 932 coefficients are strictly negative; the omitted
+zero-frequency factor has its own one-sign certificate.  Thus exactly two
+roots remain to the left of this line for `0<=t<=1/20`.  The `K`-disk is
+contained in that half-plane because
+
+\[
+ m-\frac45-\frac{m^2}{m+1}=\frac{m-4}{5(m+1)}>0.
+\]
+
+The upper exceptional member remains in the fixed rectangle
+
+\[
+ -\frac{13}{4}<\operatorname{Re}x<-\frac{29}{10},
+ \qquad
+ \frac95<\operatorname{Im}x<\frac{11}{5}.           \tag{33}
+\]
+
+At `t=0`, an exact complex root count gives one root in (33).  A root could
+leave only through one of its four boundary lines.  Each line-crossing
+resultant has degree 1911 in `t`, and its transformed coefficients have one
+strict sign.  The whole rectangle is inside the `K`-disk: after `m=n+20`,
+the numerator of the squared-radius difference has coefficients
+`380,22535,443330,2891275`.
+
+The binomial equation gives the branch-independent identity
+
+\[
+ z^5=\frac{\beta_5}{yT_5(y)}.
+\]
+
+Writing the right side as `N/D` after the `(t,x)` substitution, every
+tensor-product Bernstein coefficient of
+
+\[
+ 9^{10}|N|^2-|D|^2
+\]
+
+is strictly positive on the full rectangle and `0<=t<=1/20`.  Thus every
+possible `F_m` branch has `|z|>1/9`, including a hypothetical degeneration
+of the linear subresultant.  Meanwhile
+
+\[
+ \log|y^m|
+ \le -\frac{29}{10}
+ +\frac1{40}\left(\frac{169}{16}+\frac{121}{25}\right)
+ <-\frac52.
+\]
+
+The degree-seven Taylor lower bound already gives `exp(5/2)>12`, so
+`|y^m|<1/12`.  Therefore `z` cannot equal `y^m`.
+Complex conjugation handles the lower member, while all other eliminant roots
+are outside the `K`-disk.  Consequently
+
+\[
+ \boxed{\operatorname{Res}_w(K_{m,5},L_{m,5})\ne0
+ \quad\text{for every }m\ge1.}                      \tag{34}
+\]
+
+## 8. A contiguous recurrence in `r`
+
+The endpoint tails in (4) have the moment representation
+
+\[
+ T_r(y)=\int_0^1x^{mr}(1-yx)^r\,dx.                 \tag{35}
+\]
+
+There is a first-order, inhomogeneous recurrence in `r`.  For
+`0<=j<=m`, set
+
+\[
+ a_j=mr+j+1,\qquad b_j=(m+1)r+j+2,
+\]
+
+and use the empty-product convention.  Define
+
+\[
+ A_{m,r}=\prod_{j=0}^{m-1}a_j,
+ \qquad B_{i;m,r}=\prod_{j=0}^{i-1}b_j,             \tag{36}
+\]
+
+and
+
+\[
+ P_{m,r}(y)=y^mB_{m;m,r}
+ -(r+1)\sum_{i=0}^{m-1}y^iB_{i;m,r}
+                  \prod_{j=i+1}^{m-1}a_j.           \tag{37}
+\]
+
+Then
+
+\[
+ \boxed{
+ y^mB_{m+1;m,r}T_{r+1}(y)
+ =(r+1)A_{m,r}T_r(y)+(1-y)^{r+1}P_{m,r}(y).}         \tag{38}
+\]
+
+Indeed, if
+
+\[
+ U_j=\int_0^1x^{mr+j}(1-yx)^r\,dx,
+\]
+
+integration of the derivative of
+`x^{mr+j+1}(1-yx)^{r+1}` gives
+
+\[
+ a_jU_j-yb_jU_{j+1}=(1-y)^{r+1}.                   \tag{39}
+\]
+
+Iterating (39) through `j=m` and using
+`T_{r+1}=U_m-yU_{m+1}` yields (38).  At `y=1`, it specializes to the
+first-order hypergeometric recurrence
+
+\[
+ B_{m+1;m,r}\beta_{r+1}=(r+1)A_{m,r}\beta_r.       \tag{40}
+\]
+
+On the exponential surface `z=y^m`, the cleared moment equation
+`F_r=\beta_r-yz^rT_r=(1-y)^{r+1}M_r` therefore obeys
+
+\[
+B_{m+1;m,r}F_{r+1}
+ =(r+1)A_{m,r}F_r-yz^r(1-y)^{r+1}P_{m,r}(y).        \tag{41}
+\]
+
+The contact equation has a companion recurrence.  Normalize
+
+\[
+ N_k=M_k/z^k,\qquad
+ G_r=L_{m,r}/z^r=\sum_{k=0}^r(-1)^k\binom rkN_k.     \tag{42}
+\]
+
+Thus `G` is the alternating binomial transform of `N`.  If `S` is the forward
+shift on sequences and
+
+\[
+ \Theta=r(1-S^{-1}),
+\]
+
+then alternating binomial transform carries multiplication by `k` to
+`Theta`, and carries the shift `N_k -> N_{k+1}` to `1-S`.  Put
+
+\[
+ C_m(k)=\prod_{j=0}^{m}\bigl((m+1)k+j+2\bigr),
+ \qquad
+ Q_m(k)=(k+1)\prod_{j=0}^{m-1}(mk+j+1).             \tag{43}
+\]
+
+Dividing the moment recurrence corresponding to (41) by `z^k` and taking the
+alternating binomial transform gives
+
+\[
+ \boxed{
+ z(1-y)C_m(\Theta)(1-S)G-Q_m(\Theta)G
+ =-y\,\widehat P,}                                  \tag{44}
+\]
+
+where
+
+\[
+ \widehat P_r=\sum_{k=0}^r(-1)^k\binom rkP_{m,k}(y).
+\]
+
+For fixed `m`, (37) is a polynomial in `k` of degree at most `m`.  Hence
+`\widehat P_r=0` for every `r>m`, and (44) is then a homogeneous recurrence of
+order at most `m+2` for the second endpoint equation.  Equations (41) and
+(44) give the requested contiguous system in `r` without constructing a new
+Sylvester matrix in each column.
+
+The remaining uniform step is now precise: propagate the polynomial
+subresultant chain of the two endpoint equations under (41) and (44), and
+prove that its terminal member cannot vanish on `z=y^m`.  The recurrences
+alone do not yet establish that nonvanishing.
+
+## 9. Finite single-prime certificates
+
+As finite evidence, direct endpoint gcds modulo `1,000,003` give no common
+factor in the following grid:
+
+| `r` | certified `m` |
+|---:|---:|
+| 5 | `1<=m<=50` |
+| 6 | `1<=m<=40` |
+| 7 | `1<=m<=30` |
+| 8 | `1<=m<=25` |
+| 9 | `1<=m<=20` |
+| 10 | `1<=m<=16` |
+| 11 | `1<=m<=12` |
+| 12 | `1<=m<=10` |
+
+All endpoint denominators and both leading coefficients are units modulo the
+chosen prime.  Degree is therefore preserved, and a modular monic gcd equal
+to one certifies coprimality over `Q`.  These 203 certificates are reproduced
+by
+[`verify_contact_resultant_modular_grid.py`](../scripts/verify_contact_resultant_modular_grid.py).
+They are evidence only and do not replace the uniform argument.
+
+## 10. Scope boundary (`OP-CR`)
+
+The all-parameter problem now begins at `r=6`.  Formula (6) still gives a
 fixed comparison disk, but the `r=4` analysis shows that demanding every
 endpoint-eliminant root lie outside it is too strong.  The reusable strategy
 is instead: compute Schur--Cohn inertia, localize the exceptional branches,
@@ -417,3 +663,6 @@ The general reduction and `r<=3` certificate are in
 [`verify_contact_resultant_endpoint_reduction.py`](../scripts/verify_contact_resultant_endpoint_reduction.py).
 The exact inertia, Rouche, angle, and Bernstein certificates for `r=4` are in
 [`verify_contact_resultant_r4.py`](../scripts/verify_contact_resultant_r4.py).
+The exact sparse resultant, subresultant, Routh, boundary-resultant, and
+Bernstein certificates for `r=5` are in
+[`verify_contact_resultant_r5.py`](../scripts/verify_contact_resultant_r5.py).

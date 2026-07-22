@@ -4,6 +4,9 @@ This note makes Finite-Field Chebotarev Theorem effective seed by seed.  It give
 integer (or ideal over a number field), proves preservation of `S_n`
 monodromy at every remaining prime, separates the complete boundary
 contribution, and records an explicit—deliberately coarse—Chebotarev error.
+The characteristic-zero `S_n` statement is unconditional for every seed by
+the universal weighted-seed theorem, and the argument below independently
+proves the same group after every reduction outside the displayed bad ideal.
 
 Let `K` be a number field and let `H in K[W]` have degree `n>=3`.  Assume the
 weighted model is admissible:
@@ -97,7 +100,7 @@ double root.  Its tame inertia is a transposition.  The discriminant
 normalization
 
 \[
- r\longmapsto(s,t)=(H'(r),,rH'(r)-H(r))                          \tag{6}
+ r\longmapsto(s,t)=(H'(r),rH'(r)-H(r))                           \tag{6}
 \]
 
 is generically one-to-one by the pole-order argument from weighted marked-root theorem; that argument

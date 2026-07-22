@@ -13,9 +13,9 @@ This note combines three results already proved in the repository:
 
 The combination gives an `(N-3)`-dimensional stable-moduli theorem for exact
 symplectic etale endomorphisms of affine six-space in every generic degree
-`N>=4`.  The cotangent construction also produces parameterized injective
-non-surjective Weyl-algebra
-endomorphisms, while making no claim that the latter are pairwise inequivalent
+`N>=4`.  The cotangent construction also produces `(N-3)`-dimensional moduli
+of injective non-surjective Weyl-algebra endomorphisms under
+differential-order-preserving equivalence.  No corresponding claim is made
 under arbitrary Weyl automorphisms.
 
 ## 1. The degree-five family
@@ -217,7 +217,7 @@ family therefore has the same `N-3` lower bound on stable-class dimension.
 Exact symplecticity, Jacobian one, generic degree, fiber schemes, and
 nonproperness transfer by the general cotangent-lift theorem.
 
-## 4. Weyl-algebra shadows
+## 4. Filtered Weyl moduli
 
 For each `lambda`, the inverse-Jacobian derivations define an endomorphism of
 the third Weyl algebra:
@@ -243,23 +243,67 @@ producing injective non-surjective endomorphisms of `A_3(C)`, whose associated
 graded maps range through uncountably many stable polynomial left--right
 classes of exact symplectic maps.
 
-No pairwise inequivalence statement is made for the Weyl endomorphisms under
-arbitrary pre- and post-composition by Weyl automorphisms.  Such automorphisms
-need not preserve the differential-order filtration or the polynomial function
-subalgebra, so the stable symplectic invariant does not automatically descend
-to that larger equivalence relation.
+Call two Weyl endomorphisms **stably filtered left--right equivalent** if,
+after adjoining finitely many Weyl pairs on which both maps act identically,
+they differ by pre- and post-composition with automorphisms preserving the
+differential-order filtration in both directions.
+
+### Theorem 4.1 — `(N-3)`-dimensional filtered Weyl moduli
+
+For every `N>=4`, the inverse-Jacobian construction on the ordinary
+boundary-clean degree-`N` seed open gives an `(N-3)`-dimensional family of
+stable filtered left--right equivalence classes of injective non-surjective
+endomorphisms of `A_3(C)`.  On the affine-marked cover of that open, filtered
+equivalence compatible with the marked root sheet is parameter-faithful: it
+forces equality of the normalized seeds.
+
+To prove this, let `alpha` be a differential-order-preserving automorphism of
+`A_n`.  Its restriction to the order-zero algebra `C[X_1,...,X_n]` is a
+polynomial automorphism `a`.  Write the order-one symbol of `alpha(D_i)` as
+
+\[
+ \sum_r c_{ri}(x)\xi_r.
+\]
+
+The relations
+`[alpha(D_i),alpha(X_j)]=delta_(ij)` say exactly that the matrix `C` is the
+inverse-Jacobian matrix of `a`.  Hence
+
+\[
+ \operatorname{gr}(\alpha)=\widehat a^*,                       \tag{4.3}
+\]
+
+the polynomial cotangent lift of the base automorphism.  The same argument
+applies after adjoining Weyl pairs.  Consequently a stable filtered
+left--right equivalence between `Phi_H` and `Phi_K` induces a stable
+polynomial left--right equivalence between their associated-graded cotangent
+lifts `widehat F_H` and `widehat F_K`.  By the factorization (2.3), the base
+maps `F_H` and `F_K` are then stably equivalent.  Decorated normalization
+therefore gives the `N-3` lower bound, and generic affine-mark faithfulness
+recovers `H` exactly on the marked open.
+
+This conclusion is intentionally filtration-relative.  No pairwise
+inequivalence statement is made under arbitrary pre- and post-composition by
+Weyl automorphisms: such automorphisms need not preserve the
+differential-order filtration or the polynomial function subalgebra, so the
+associated-graded invariant need not descend to that larger equivalence
+relation.
 
 ## 5. What is new in the combination
 
 The inverse-Jacobian Weyl transfer is classical, and the cotangent lift is an
-elementary exact symplectic construction.  The main new consequence recorded
-here is the degreewise transfer
+elementary exact symplectic construction.  The main new consequences recorded
+here are the degreewise transfers
 
 \[
 \dim\overline{\operatorname{im}(\mathfrak M_N)}=N-3
 \quad\Longrightarrow\quad
+\begin{matrix}
 \text{an }(N-3)\text{-dimensional family of stable exact symplectic classes
-in dimension six}.
+in dimension six},\\
+\text{an }(N-3)\text{-dimensional family of stable filtered Weyl classes
+in rank three}.
+\end{matrix}
 \]
 
 This holds for every `N>=4`.  It is a moduli-dimension statement, distinct

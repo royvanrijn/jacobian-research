@@ -383,10 +383,15 @@ first order among divergence-free affine target fields; allowing quadratic
 target fields does not lower it further.  No assertion is yet made for target
 fields of arbitrary degree.
 
-The pair `(25,49)` suggests a new leading layer of degree `24m+1`, but this is
-only a conjectural all-order law until the root recurrence is redone in the
-torus gauge.  Even if that law holds, it would still be a gauge upper bound for
-the intrinsic LR profile, not a proof of target minimality.
+The root recurrence can be redone entirely in the invariant ring
+`k[xy,x^2z]`.  It gives the exact all-order leading layer `24m+1`, with
+nonzero forward and inverse coefficients at every order.  The same reduction
+computes an invariant-ring-saturated target-image quotient and shows that the
+resulting `N^m` vector class survives it.  See the
+[torus filtered-module note](TORUS_FILTERED_LR_MODULE.md).  This remains a
+gauge upper bound, rather than a proof of the intrinsic filtered LR minimum,
+because arbitrary lower-order target choices have not yet been included in a
+single filtered induction.
 
 ## 6. The target-minimality problem
 
@@ -421,9 +426,12 @@ candidate after the torus reduction is
  N^m=x^{14m}y^{6m}z^{4m}.                           \tag{6.3}
 \]
 
-Testing whether its vector coefficient survives the next target quotient is a
-concrete filtered-module or Gröbner problem.  It should be attacked first for
-`r=0`, then with the extra identity variables retained symbolically.
+Its vector coefficient survives the `k[xy,x^2z]`-saturated equivariant target
+quotient at every order.  The quotient is the elementary diagonal module
+displayed in the torus filtered-module note, and weight-zero identity
+variables do not kill the residue on the zero section.  What remains is to
+incorporate all lower-order target choices and the ordinary coordinate-degree
+filtration, rather than to enlarge the raw three-variable Gröbner search.
 
 If coordinate degree can be kept bounded, Theorem 4.1 says that parameter
 height or pole order must escape instead.  This is why all three complexity

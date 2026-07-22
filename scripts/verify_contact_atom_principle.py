@@ -74,8 +74,27 @@ for threshold in range(3, 8):
                 assert threshold * support_sum <= 2 * degree
                 assert support_sum < degree
 
+# Maximizing the atomic-stratum dimension a+b-1 over 2a+3b=n gives the
+# omitted-value phase diagram.  The normalized seed space has dimension n-3.
+for degree in range(4, 101):
+    atomic_types = [
+        (a, b)
+        for a in range(degree // 2 + 1)
+        for b in range(degree // 3 + 1)
+        if 2 * a + 3 * b == degree
+    ]
+    maximal_dimension = max(a + b - 1 for a, b in atomic_types)
+    expected_dimension = degree // 2 - 1
+    expected_codimension = (degree - 3) // 2
+    assert maximal_dimension == expected_dimension
+    assert degree - 3 - maximal_dimension == expected_codimension
+
+assert (4 - 3) // 2 == 0
+assert all((degree - 3) // 2 >= 1 for degree in range(5, 101))
+
 print("PASS: the atoms of {m>=r} are exactly r,...,2r-1")
 print("PASS: every allowed contact partition is a collision of atom partitions")
 print("PASS: the r=2 atoms are precisely the double and triple contacts")
 print("PASS: Mason separates every pair of distinct full-contact types")
 print("PASS: thresholds r>=3 satisfy the stronger automatic abc bound")
+print("PASS: nonsurjective dimension floor(n/2)-1 and phase transition at n=4")

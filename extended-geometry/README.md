@@ -11,7 +11,7 @@ and external review are recorded only in
 | Weighted image and boundary | [Canonical-family image](CANONICAL_FAMILY_IMAGE.md) |
 | Omitted values | [Omitted-value classification](OMITTED_VALUE_CLASSIFICATION.md) |
 | Contact strata and exceptional components | [Coincident-root rebuild](COINCIDENT_ROOT_REBUILD.md) |
-| Contact atoms | [Contact-atom principle](CONTACT_ATOM_PRINCIPLE.md) |
+| Contact atoms and omitted-value phase diagram | [Contact-atom principle](CONTACT_ATOM_PRINCIPLE.md) |
 | Component normalizations | [Component normalization](COMPONENT_NORMALIZATION.md) |
 | Degree-twelve local singularity | [Local singularity](DEGREE12_LOCAL_SINGULARITY.md) |
 | Finite-field Chebotarev | [Effective theorem](FINITE_FIELD_CHEBOTAREV.md) |
@@ -24,13 +24,13 @@ and external review are recorded only in
 | Rank-two symplectic descent in `A^4` | [The canonical all-degree two-chart residue theorem, coarse decorated transfer of `N-3` stable dimensions, and generated degree-five/six regressions](RANK_TWO_SYMPLECTIC_DESCENT.md) |
 | Degree-five rank-two regression | [The original fixed-`kappa=-9` line retained for explicit formulas and independent checking](DEGREE_FIVE_RANK_TWO_DESCENT.md) |
 | Filtered `A_2` quantization obstruction | [The separate `hbar^5` obstruction for the standard parity-preserving Weyl-symbol ansatz](RANK_TWO_FILTERED_QUANTIZATION_OBSTRUCTION.md) |
-| Exact symplectic and Weyl lifts | [Classical-quantum bridge](SYMPLECTIC_WEYL_LIFT.md) |
+| Exact symplectic and filtered Weyl moduli | [Classical-quantum bridge](SYMPLECTIC_WEYL_LIFT.md); [degreewise stable-moduli theorem](SYMPLECTIC_STABLE_MODULI.md) |
 | External GMC, `(xz)`, and `SU(2)` consequences | [Consequence graph, exact witnesses, provenance, and research trajectories](EXTERNAL_CONSEQUENCES_AND_PROVENANCE.md) |
 | Complete Long consequence reproductions | [`SU(2)` Haar proof, exact `3 -> 39 -> 79` BCW reproduction, repository reduction to dimension 16, and rank-compressed 24-variable homogenization](LONG_SU2_AND_BCW_REPRODUCTIONS.md) |
 | Fixed-dimensional `GMC(2r) -> SIC(r) ->` cubic-Keller invertibility route | [Gaussian contraction, countable-union lemma, and formal inversion](FIXED_GMC_SIC_PROOF.md) |
 | Direct Image and Vanishing counterexamples | [`not SIC(20)`, generalized Laplacian and nonhomogeneous HN-VC failures in 40 variables, classical homogeneous quartic HN-VC failure in 42, and an all-order inverse recurrence](IMAGE_VANISHING_COUNTEREXAMPLES.md) |
 | Formal Gaussian--Lagrange lemma | [Constant-term-safe completed-ring, residue, determinant, and Wick proof](FORMAL_GAUSSIAN_LAGRANGE_LEMMA.md) |
-| Weighted-seed Gaussian bridge | [Uniform four-real-Gaussian witnesses, exact inverse-pencil branches, and injective mixed-moment fingerprints](WEIGHTED_GAUSSIAN_BRIDGE.md) |
+| Weighted-seed Gaussian bridge | [Uniform four-real-Gaussian witnesses, exact inverse-pencil branches, and finite `(N+1)`-moment fingerprints for `(N-3)`-dimensional families](WEIGHTED_GAUSSIAN_BRIDGE.md) |
 | Weighted invariant-coordinate Jacobian reduction | [General weight-`(1,-1,-k)` determinant lemma reducing Keller equations to two invariant variables](WEIGHTED_INVARIANT_JACOBIAN_REDUCTION.md) |
 | Weighted tangent suspension and plane Poisson square | [Plane-core determinant rearrangement, explicit foundational pair, tangent-pencil identification, and weighted-Wronskian cascade](WEIGHTED_TANGENT_SUSPENSION.md) |
 | Foundational weighted coefficient scheme | [Exact sixteen-monomial rigidity, dual-number tangent, Wronskian obstruction, and complete two-component boundary decomposition](FOUNDATIONAL_WEIGHTED_COEFFICIENT_SCHEME.md) |

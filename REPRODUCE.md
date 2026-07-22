@@ -48,6 +48,13 @@ identities.  The leading layer exposes the quadratic obstruction directly,
 and two further unit-ideal checks eliminate both one-sided nonconstant-`C`
 boundary charts.
 `verify-foundations` adds the weighted construction and its clean-room checker.
+It also runs the all-degree rational-fiber checker, whose symbolic odd/even
+identities prove uniform admissibility and whose exact degrees `3,...,100`
+remain as a regression:
+
+```bash
+.venv/bin/python scripts/verify_all_degree_rational_fibers.py
+```
 
 The remaining constant-`C` boundary has a separate exact Singular
 certificate:
@@ -80,6 +87,16 @@ This exact calculation constructs the relative Hamiltonian over
 unique parameter-dependent shear cancels them, and verifies the normalized
 base brackets and polynomial source automorphism.  It normally takes roughly
 half a minute in the pinned symbolic environment.
+
+The degree-five filtered contact problem has a separate two-invariant audit:
+
+```bash
+.venv/bin/python scripts/verify_degree_five_torus_module.py
+```
+
+It verifies the torus-gauge root recurrence over `Q[u,gamma]`, proves the
+all-order profile `24m+1`, and checks survival of the candidate class in the
+invariant-ring-saturated equivariant target quotient.
 
 The full normalized degree-five seed surface is checked by
 
@@ -177,6 +194,21 @@ eliminant's Schur--Cohn matrix.  The heavier `r=4` certificate computes the
 degree-eleven eliminant's `(9,2)` Schur--Cohn inertia, runs a 228-cell rational
 Rouche localization, and proves the remaining argument separation by exact
 angle and Bernstein-sign certificates.
+
+The complete `r=5` column is a separate, substantially heavier exact replay.
+It requires Singular for its boundary resultants:
+
+```bash
+.venv/bin/python scripts/verify_contact_resultant_r5.py
+```
+
+The additional finite `5<=r<=12` endpoint grid is quick to replay.  It checks
+203 monic gcd certificates modulo `1,000,003`, including denominator and
+leading-coefficient unit conditions:
+
+```bash
+.venv/bin/python scripts/verify_contact_resultant_modular_grid.py
+```
 
 It also runs the log-geometric bridge regression, including the reciprocal
 determinant, canonical Jacobian-LND exponent, the degree-two plinth/Stein

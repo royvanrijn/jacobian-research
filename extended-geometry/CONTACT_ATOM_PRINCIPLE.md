@@ -81,6 +81,36 @@ The unique top-dimensional component minimizes `b`: it is all-double for even
 `n`, and has one triple part with all remaining parts double for odd `n`.
 Here the triple contact is the smallest permitted parity correction.
 
+## Omitted-value phase diagram
+
+The unique omitted-value theorem identifies the nonsurjective seed locus
+`N_n` with the disjoint union of the full-contact strata.  Maximizing
+`a+b-1` subject to `2a+3b=n` gives
+
+\[
+ \boxed{\dim N_n=\left\lfloor\frac n2\right\rfloor-1}.          \tag{1}
+\]
+
+Since the normalized admissible degree-`n` seed space `A_n` has dimension
+`n-3`, subtraction yields
+
+\[
+ \boxed{\operatorname{codim}_{A_n}N_n
+ =n-3-\left(\left\lfloor\frac n2\right\rfloor-1\right)
+ =\left\lfloor\frac{n-3}{2}\right\rfloor}.                     \tag{2}
+\]
+
+Thus degree four is the transition case: `dim A_4=dim N_4=1`, so the
+nonsurjective locus is dense and a generic normalized quartic seed is
+exceptional.  For every `n>=5`, (2) is positive; the nonsurjective locus lies
+in a proper closed subset, and a generic normalized degree-`n` seed is
+surjective.  In short,
+
+\[
+ \boxed{n=4:\ \text{generic nonsurjectivity};\qquad
+        n\ge5:\ \text{generic surjectivity}.}                  \tag{3}
+\]
+
 ## What Mason--Stothers does
 
 Mason does not select the atoms.  It prevents different contact types from

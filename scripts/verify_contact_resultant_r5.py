@@ -403,9 +403,9 @@ def univariate_bernstein_signs(polynomial: sp.Poly) -> tuple[int, int, int]:
         for index in range(degree + 1)
     ]
     return (
-        sum(coefficient > 0 for coefficient in coefficients),
-        sum(coefficient < 0 for coefficient in coefficients),
-        sum(coefficient == 0 for coefficient in coefficients),
+        sum(1 for coefficient in coefficients if coefficient > 0),
+        sum(1 for coefficient in coefficients if coefficient < 0),
+        sum(1 for coefficient in coefficients if coefficient == 0),
     )
 
 
@@ -489,6 +489,25 @@ assert rectangle_certificates == [
     (1911, 0, 1912, 0),
     (1911, 0, 1912, 0),
     (1911, 1912, 0, 0),
+]
+
+# The whole rectangle lies strictly inside the transformed K-root disk.  The
+# worst corner has Re(x)=-29/10 and |Im(x)|=11/5; after m=n+20 the numerator
+# of the squared-radius difference has strictly positive coefficients.
+tail_parameter = sp.symbols("tail_parameter", nonnegative=True)
+rectangle_disk_difference = sp.together(
+    m**4 / (m + 1) ** 2
+    - ((m - sp.Rational(29, 10)) ** 2 + sp.Rational(11, 5) ** 2)
+).as_numer_denom()[0]
+rectangle_disk_certificate = sp.Poly(
+    sp.expand(rectangle_disk_difference.subs(m, tail_parameter + 20)),
+    tail_parameter,
+)
+assert rectangle_disk_certificate.all_coeffs() == [
+    380,
+    22535,
+    443330,
+    2891275,
 ]
 
 

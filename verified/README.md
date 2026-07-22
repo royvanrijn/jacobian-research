@@ -19,6 +19,12 @@ This directory contains the stable proof chain:
 - [Cubic image and nonproperness theorem](IMAGE_AND_NONPROPERNESS.md): exact image, fibers, and nonproperness;
 - [Weighted marked-root theorem](WEIGHTED_SEED_THEOREM.md): weighted construction and symmetric
   monodromy.
+- [All-degree rational fibers](ALL_DEGREE_RATIONAL_FIBERS.md): explicit
+  integer-root seeds giving a complete regular `N`-point rational fiber and
+  `N` nearby real sheets for every `N>=3`.
+- [Exact geometric-degree spectrum](GEOMETRIC_DEGREE_SPECTRUM.md): the
+  spectrum `3,4,5,...` for noninvertible Keller maps of complex affine
+  three-space and its stable left--right degree separation.
 - [Stable normalization functoriality](STABLE_NORMALIZATION_FUNCTORIALITY.md):
   the construction-independent theorem for normalization, boundary valuations,
   intersections, nilpotents, relative differentials, Fitting ideals, and
@@ -38,4 +44,4 @@ Start with [FOUNDATIONAL_GEOMETRY.md](FOUNDATIONAL_GEOMETRY.md). The paper
 version is being assembled under
 [papers/core-counterexample](../papers/core-counterexample/main.tex).
 
-These nine documents are the primary core references.
+These documents are the primary core references.

@@ -6,6 +6,13 @@ develops weighted, cancellation, decorated-normalization, Hurwitz, and
 rank-two symplectic consequences.  In generic degree `N>=4`, the coarse
 decorated normalization already gives an `(N-3)`-dimensional family of stable
 classes.  Adding one affine root sheet generically recovers the seed exactly.
+The same parameters yield finitely fingerprinted four-real-Gaussian witnesses
+and inequivalent filtered Weyl endomorphisms.  The nonsurjective seed locus has
+dimension `floor(N/2)-1`: quartics are generically exceptional, whereas
+generic seeds of every degree `N>=5` are surjective.
+The [exact degree-spectrum corollary](verified/GEOMETRIC_DEGREE_SPECTRUM.md)
+shows that the geometric degrees of noninvertible Keller maps of
+`A^3_C -> A^3_C` are precisely `3,4,5,...`.
 
 ## The foundational map
 
@@ -58,6 +65,17 @@ pencil, generic degree, critical divisor, discriminant normalization, full
 Hessian Fitting divisor, incidence form, weighted suspension, and comparison
 with cancellation suspension.  Later papers cite this theorem instead of
 rederiving those calculations.
+
+Its [all-degree rational-fiber corollary](verified/ALL_DEGREE_RATIONAL_FIBERS.md)
+gives, for every `N>=3`, a Keller map with a complete fiber of exactly `N`
+distinct rational points and an open real target neighborhood with `N` real
+sheets.  The construction uses explicit integer roots and is uniform in `N`;
+the former computation through degree 100 is retained only as a regression.
+
+The separate [universal weighted-seed theorem](verified/WEIGHTED_SEED_THEOREM.md)
+proves geometric and arithmetic `S_N` monodromy for every polynomial pencil
+`H(W)-sW+t`, hence for every admissible weighted seed; no generic-seed
+hypothesis is present.
 
 The primary dependency chain is:
 
@@ -112,13 +130,16 @@ and independent Macaulay2 comparison are documented in
 There are three primary continuation problems:
 
 - `OP-MARK`: valuative affine-sheet extension through every collision stratum.
-- `OP-CR`: cancellation contact resultants for `r>=5`.
+- `OP-CR`: cancellation contact resultants for `r>=6`; the first five
+  columns are complete.
 - `OP-LR`: intrinsic target coercivity and no escape for filtered LR contact.
 
 In particular, `b_m=34m+1` is an exact source-only profile in one
 determinant-normalized target gauge.  It is not target-minimal and is not a
-stable LR obstruction.  The target torus lowers the first two degrees from
-`(35,69)` to `(25,49)`; the continuation `24m+1` remains conjectural.
+stable LR obstruction.  The better target torus has the exact all-order
+profile `24m+1`, and its `v^(6m)S^(4m)` class survives the
+invariant-ring-saturated equivariant target quotient.  Intrinsic filtered
+minimality and no escape remain open.
 
 Other questions—arithmetic Galois theory, controlled-boundary suspension
 classification, wider quantization, coefficient-scheme gluing,

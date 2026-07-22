@@ -274,6 +274,62 @@
       "priority": "derived"
     },
     {
+      "id": "UM1",
+      "kind": "corollary",
+      "state": "proved",
+      "title": "Universal symmetric monodromy",
+      "scope": "Every characteristic-zero polynomial H of degree n >= 2: Gal(H(W)-sW+t/k(s,t)) and its geometric monodromy group are S_n; for n >= 3 the generic inverse cover has trivial deck group.",
+      "canonical_source": "verified/WEIGHTED_SEED_THEOREM.md",
+      "dependencies": [
+        "W1",
+        "external: Zariski--Nagata purity and triviality of finite etale covers of affine space"
+      ],
+      "checker": "scripts/verify_weighted_seed_theorem.py",
+      "review": "none",
+      "supersedes": [
+        "generic-seed symmetric-monodromy hypothesis"
+      ],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "GD1",
+      "kind": "corollary",
+      "state": "proved",
+      "title": "Exact geometric-degree spectrum",
+      "scope": "The geometric degrees of noninvertible Keller maps A^3_C -> A^3_C are exactly 3,4,5,...; maps of different degrees are stably polynomially left--right inequivalent.",
+      "canonical_source": "verified/GEOMETRIC_DEGREE_SPECTRUM.md",
+      "dependencies": [
+        "W1",
+        "external: birational and Galois cases of the Jacobian theorem"
+      ],
+      "checker": null,
+      "review": "none",
+      "supersedes": [
+        "degree-three-only lower-bound observation"
+      ],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "RF1",
+      "kind": "corollary",
+      "state": "proved",
+      "title": "All-degree complete rational fibers",
+      "scope": "For every N >= 3, an explicit weighted Keller map over Q has a complete fiber of exactly N distinct rational points and an open real target neighborhood with N real sheets.",
+      "canonical_source": "verified/ALL_DEGREE_RATIONAL_FIBERS.md",
+      "dependencies": [
+        "W1"
+      ],
+      "checker": "scripts/verify_all_degree_rational_fibers.py",
+      "review": "none",
+      "supersedes": [
+        "bounded rational-fiber atlas through degree 100"
+      ],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
       "id": "I1",
       "kind": "corollary",
       "state": "proved",
@@ -330,8 +386,8 @@
       "id": "E2",
       "kind": "corollary",
       "state": "proved",
-      "title": "Contact-atom principle",
-      "scope": "proved for every normalized exceptional seed locus in characteristic zero; maximal contact types use only multiplicities two and three",
+      "title": "Contact-atom principle and omitted-value phase diagram",
+      "scope": "proved for every normalized exceptional seed locus in characteristic zero: maximal contact types use only multiplicities two and three, the nonsurjective locus has dimension floor(N/2)-1 and codimension floor((N-3)/2), generic quartics are exceptional, and generic seeds are surjective for every N >= 5",
       "canonical_source": "extended-geometry/CONTACT_ATOM_PRINCIPLE.md",
       "dependencies": [
         "E1"
@@ -384,10 +440,11 @@
       "kind": "corollary",
       "state": "proved",
       "title": "Effective finite-field Chebotarev for weighted seeds",
-      "scope": "proved seed by seed away from an explicit bad ideal, assuming the characteristic-zero seed has S_n monodromy",
+      "scope": "unconditional for every admissible number-field seed outside its explicit bad ideal; every good reduction retains geometric and arithmetic S_n monodromy",
       "canonical_source": "extended-geometry/FINITE_FIELD_CHEBOTAREV.md",
       "dependencies": [
         "W1",
+        "UM1",
         "external: effective finite-field Chebotarev estimates"
       ],
       "checker": "scripts/verify_effective_chebotarev.py",
@@ -475,6 +532,24 @@
       "priority": "derived"
     },
     {
+      "id": "CR2",
+      "kind": "corollary",
+      "state": "proved",
+      "title": "Fifth cancellation contact-resultant column",
+      "scope": "Every m>=1 in the complete resultant column r=5.",
+      "canonical_source": "cancellation/CONTACT_RESULTANT.md",
+      "dependencies": [
+        "CR1"
+      ],
+      "checker": "scripts/verify_contact_resultant_r5.py",
+      "review": "none",
+      "supersedes": [
+        "bounded direct evidence for r=5"
+      ],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
       "id": "D5",
       "kind": "example",
       "state": "proved",
@@ -539,7 +614,7 @@
       "kind": "corollary",
       "state": "proved",
       "title": "Exact symplectic and Weyl lifts",
-      "scope": "proved for every characteristic-zero Keller map: the polynomial cotangent lift and inverse-Jacobian Weyl embedding preserve fibers and generic degree",
+      "scope": "proved for every characteristic-zero Keller map: the polynomial cotangent lift and inverse-Jacobian Weyl embedding preserve fibers and generic degree; differential-order-preserving Weyl equivalence descends to polynomial cotangent equivalence",
       "canonical_source": "extended-geometry/SYMPLECTIC_WEYL_LIFT.md",
       "dependencies": [
         "F1"
@@ -629,8 +704,8 @@
       "id": "WG1",
       "kind": "corollary",
       "state": "proved",
-      "title": "Weighted-seed Gaussian bridge",
-      "scope": "proved for every nonconstant normalized seed, producing explicit four-real-Gaussian GMC counterexamples and injective mixed-moment fingerprints",
+      "title": "Weighted-seed Gaussian bridge and finite fingerprints",
+      "scope": "proved for every nonconstant normalized seed, producing explicit four-real-Gaussian GMC counterexamples; a degree-N seed is recovered from its first N+1 mixed moments, yielding an explicit algebraic (N-3)-dimensional finitely fingerprinted family for every N >= 4",
       "canonical_source": "extended-geometry/WEIGHTED_GAUSSIAN_BRIDGE.md",
       "dependencies": [
         "GL1"
@@ -718,6 +793,24 @@
       "priority": "reference"
     },
     {
+      "id": "O3",
+      "kind": "example",
+      "state": "proved",
+      "title": "Torus-gauge contact and invariant target module",
+      "scope": "Exact forward and inverse torus-gauge profile 24m+1; the class v^(6m)S^(4m) survives the invariant-ring-saturated equivariant target quotient in every order. This does not yet include arbitrary lower-order target choices in one filtered induction.",
+      "canonical_source": "extended-geometry/TORUS_FILTERED_LR_MODULE.md",
+      "dependencies": [
+        "O2"
+      ],
+      "checker": "scripts/verify_degree_five_torus_module.py",
+      "review": "none",
+      "supersedes": [
+        "conjectural torus-gauge continuation 24m+1"
+      ],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
       "id": "QP1",
       "kind": "example",
       "state": "proved",
@@ -741,8 +834,8 @@
       "id": "SM1",
       "kind": "corollary",
       "state": "proved",
-      "title": "Degreewise exact symplectic stable moduli",
-      "scope": "proved: an (N-3)-dimensional family of pairwise stably inequivalent exact symplectic etale maps of A^6 for every generic degree N >= 4",
+      "title": "Degreewise exact symplectic and filtered Weyl stable moduli",
+      "scope": "proved for every generic degree N >= 4: (N-3)-dimensional families of stable exact symplectic classes in A^6 and stable differential-order-preserving Weyl left-right classes in A_3, with exact seed recovery on the compatible affine-marked open; no arbitrary-Weyl inequivalence claim",
       "canonical_source": "extended-geometry/SYMPLECTIC_STABLE_MODULI.md",
       "dependencies": [
         "D1",
@@ -905,12 +998,12 @@
       "kind": "open_problem",
       "state": "open",
       "title": "Higher cancellation contact resultants",
-      "scope": "Prove the uniform cancellation contact resultant for r>=5.",
+      "scope": "Prove the uniform cancellation contact resultant for r>=6.",
       "canonical_source": "cancellation/CONTACT_RESULTANT.md",
       "dependencies": [
         "C1",
         "T1",
-        "CR1"
+        "CR2"
       ],
       "checker": null,
       "review": "none",
@@ -923,11 +1016,12 @@
       "kind": "open_problem",
       "state": "open",
       "title": "Intrinsic complexity-filtered LR coercivity",
-      "scope": "Prove intrinsic target coercivity and no escape at the base point; the target torus lowers the first two observed degrees from (35,69) to (25,49), while 24m+1 remains conjectural.",
+      "scope": "Incorporate arbitrary lower-order target choices and the ordinary degree filtration into the invariant-module induction, then prove no escape at the base point. The fixed torus gauge has exact profile 24m+1 and its candidate survives the saturated equivariant target quotient.",
       "canonical_source": "extended-geometry/COMPLEXITY_FILTERED_CONTACT.md",
       "dependencies": [
         "O1",
-        "O2"
+        "O2",
+        "O3"
       ],
       "checker": null,
       "review": "none",

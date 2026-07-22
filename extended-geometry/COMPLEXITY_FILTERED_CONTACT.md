@@ -404,9 +404,16 @@ rather than `(35,69)`.  Their leading monomial is
 
 Thus target-gauge minimality cannot be proved for the determinant-normalized
 gauge as stated.  The viable alternatives are intrinsic minimization over
-target strata, or a stronger canonical target slice.  The new degrees suggest
-`24m+1`, but only the first two orders are currently established in this
-torus gauge.
+target strata, or a stronger canonical target slice.  Redoing the root
+recurrence over the invariant ring `k[xy,x^2z]` proves the exact all-order law
+
+\[
+ \deg_x\widetilde V_m=\deg_x\widetilde W_m=24m+1.
+\]
+
+The recurrence seed is `29/14`, with the same Catalan convolution as above;
+see the [torus filtered-module note](TORUS_FILTERED_LR_MODULE.md).  This is
+still a gauge profile, not an intrinsic target-minimality theorem.
 
 The checker
 [`verify_degree_five_contact_profile.py`](../scripts/verify_degree_five_contact_profile.py)
@@ -416,8 +423,11 @@ verifies the first two determinant-one identities.  It also checks the
 leading terms (5.4)--(5.5), the Catalan recurrence and closed form through
 eight orders, and the nonvanishing binomial factors.  The all-order conclusion
 uses the degree separation in the proof above, not bounded symbolic expansion.
-The torus-gauge calculation is an additional exact symbolic audit and is not
-yet incorporated into that checker.
+The separate checker
+[`verify_degree_five_torus_module.py`](../scripts/verify_degree_five_torus_module.py)
+verifies the two-variable torus root equation, its first two exact
+coefficients, the all-order `24m+1` recurrence, and survival of the candidate
+class in the invariant-ring-saturated target quotient.
 
 ## 6. Current conclusion
 

@@ -166,7 +166,15 @@ The following data are now universal:
 - irreducible repeated-root discriminant and its normalization;
 - generic transposition ramification;
 - geometric and arithmetic monodromy `S_n`;
+- no nonidentity deck transformation of the generic inverse cover for
+  `n>=3`;
 - identification of repeated roots with reconstruction poles on `C!=0`.
+
+Indeed the sheet stabilizer in the natural `S_n` action is `S_(n-1)`.  For
+`n>=3` it is self-normalizing, so the deck group
+`N_(S_n)(S_(n-1))/S_(n-1)` is trivial.  This removes generic target-fixed
+sheet symmetries, but it does not by itself extend the affine root sheet
+through collision strata: that separate valuative problem is `OP-MARK`.
 
 The following still depend on the seed and must not be inferred from
 monodromy alone:

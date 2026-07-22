@@ -54,6 +54,7 @@ verify-theorems:
 	$(MAKE) verify-master
 	$(PYTHON) scripts/verify_weighted_seed_schema.py
 	$(PYTHON) scripts/verify_weighted_seed_theorem.py
+	$(PYTHON) scripts/verify_all_degree_rational_fibers.py
 	$(PYTHON) scripts/verify_weighted_marked_root_model.py
 	$(SYSTEM_PYTHON) scripts/audit_weighted_independent.py
 	$(PYTHON) scripts/verify_universal_discriminant_incidences.py
@@ -134,6 +135,7 @@ verify-external-consequences:
 verify-regressions: verify-external-consequences
 	$(PYTHON) scripts/verify_degree_five_stable_moduli.py
 	$(PYTHON) scripts/verify_degree_five_rank_two_descent.py
+	$(PYTHON) scripts/verify_degree_five_torus_module.py
 	$(SYSTEM_PYTHON) scripts/audit_quartic_independent.py
 	$(PYTHON) scripts/verify_generic_discriminant_geometry.py
 	$(PYTHON) scripts/verify_canonical_family_image.py
@@ -182,6 +184,7 @@ verify-formal: verify-lean-foundational
 verify-foundations: verify-core
 	$(PYTHON) scripts/verify_weighted_seed_schema.py
 	$(PYTHON) scripts/verify_weighted_seed_theorem.py
+	$(PYTHON) scripts/verify_all_degree_rational_fibers.py
 	$(PYTHON) scripts/verify_weighted_marked_root_model.py
 	$(SYSTEM_PYTHON) scripts/audit_weighted_independent.py
 
