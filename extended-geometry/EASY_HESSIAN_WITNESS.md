@@ -7,6 +7,12 @@ rational collision. Their stable inequivalence is visible before any
 cross-ratio calculation: the intrinsic Hessian-root support has three points
 for one map and two points for the other.
 
+The identification of `(H'')` with the scheme-theoretic Fitting divisor is
+the general [tangent-map core theorem](../verified/TANGENT_MAP_CORE.md), and
+its preservation after adjoining identity variables is the general
+[stable normalization functoriality theorem](../verified/STABLE_NORMALIZATION_FUNCTORIALITY.md).
+The present note only evaluates those invariants on two explicit seeds.
+
 ## 1. The two primitives
 
 Put

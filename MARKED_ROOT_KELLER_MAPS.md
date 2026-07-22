@@ -57,6 +57,10 @@ For an admissible degree-`N` seed `H`, the inverse equation is
 \Psi_H(W;A,B,C)=H(W)-BCW+cAC^2.
 \]
 
+The inverse-pencil, Jacobian, discriminant-normalization, reconstruction-pole,
+and Hessian-Fitting assertions for this equation are all consequences of the
+[tangent-map core theorem](verified/TANGENT_MAP_CORE.md).
+
 The generic cover has monodromy `S_N`.  Its discriminant has simple fold
 inertia, so its canonical ramified boundary prime has index two.  The global
 normalized incidence and reconstruction charts are summarized in the

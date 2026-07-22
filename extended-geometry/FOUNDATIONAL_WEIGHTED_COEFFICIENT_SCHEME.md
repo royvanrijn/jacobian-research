@@ -161,11 +161,18 @@ affine source and target vector fields:
 
 for affine-linear `V,W`.  This separates it from the affine left--right orbit.
 The tangent is trivial in the full polynomial source-orbit quotient, but not
-in the normalized finite-support slice.  Indeed, the
+in the normalized finite-support slice.  More generally,
+[formal orbit triviality](FORMAL_ORBIT_TRIVIALITY.md) shows that every
+finite-order deformation over a local Artin base is uniquely source-trivial.
+Thus the dual-number direction and its quadratic obstruction are properties
+of this bounded-support ansatz slice, not global deformation moduli.  At first
+order, the
 [orbit-tangency calculation](CUBIC_DUAL_NUMBER_ORBIT_TANGENCY.md) proves
 `H=DF V` with `V` polynomial and divergence-free, and realizes its tangent by
 133 locally nilpotent shears.  Its quadratic obstruction measures
-second-order departure from that slice, not genuine infinitesimal moduli.
+second-order departure from that slice.  The correct continuation is the
+[complexity-filtered contact problem](COMPLEXITY_FILTERED_CONTACT.md),
+algebraization of the formal trivializer, or global boundary invariants.
 
 ## 5. The omitted boundary is concentrated at `p=q=0`
 

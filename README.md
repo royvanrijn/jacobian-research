@@ -75,7 +75,7 @@ contains an `(N-3)`-dimensional family of stable classes.
   across the cancellation branches and one weighted class, as well as an
   `(N-3)`-dimensional family of stable classes—not merely a growing list of
   isolated formulas.  See the [degreewise theorem](papers/marked-root-multiplicity/main.tex)
-  and [decorated-normalization invariant](extended-geometry/DECORATED_NORMALIZATION_INVARIANT.md).
+  and [decorated-normalization paper](papers/decorated-discriminant-normalization/main.tex).
 
 - **22 July — the consequences became smaller and more explicit here.**  The
   repository produced a seed-parametrized direct `GMC(4)` family, compressed
@@ -378,7 +378,7 @@ distinctions matter:
 | GMC, `(xz)`, and `SU(2)` counterexamples | Christopher D. Long's two arXiv papers | Exact local Gaussian and beta/binomial checks, a complete `SU(2)=S^3` Haar proof, all 18 steps of Long's conservative 79-variable route, and a repository 17-dimensional quadratic--cubic trace whose rank-compressed 24-variable homogenization has a 21-variable essential quotient and gives `not GMC(42)`; every sparse artifact has an independent replay, with no claim that the direct witnesses derive from our map |
 | Weighted-seed/Gaussian bridge | Long's Lagrange--Good search architecture and Good's inversion theorem | A repository-derived polynomial determinant correction turning every nonconstant normalized seed into an explicit four-real-Gaussian witness family; the exact mixed moments recover `1+lambda*H`, making the moment realization injective; supported by a standalone constant-term-safe formal Gaussian--Lagrange proof, locally checked and not externally reviewed |
 | Cancellation maps and canonical boundary invariants | No earlier source has been identified in the present audit | The finite cancellation operator, all-parameter reconstruction and collision, boundary-exhaustion theorem, thick intersections, and rigidity results |
-| Degreewise weighted stable moduli | No earlier source has been identified in the present audit | A degree-`N-2` decorated-normalization invariant with image dimension `N-3`, plus a faithful full marked-cover invariant for all normalized admissible seeds with `ord_0(H)>=2`; the Hurwitz/LL admissible-cover closure organizes compactified rerooting and has the same formal conductor square at simultaneous multicluster collisions |
+| Degreewise weighted stable moduli | No earlier source has been identified in the present audit | A degree-`N-2` decorated-normalization invariant with image dimension `N-3`; full marked-cover faithfulness remains a repair target. The separate Hurwitz/LL paper organizes the admissible-cover closure and compactified rerooting and compares the formal conductor square at simultaneous multicluster collisions |
 | Cross-family stable multiplicity | No earlier source has been identified in the present audit | The complementary marked-open theorem distinguishes all cancellation parameter roots, all divisor types, and one weighted class, giving at least `1+(N-1)tau(N-1)-sigma(N-1)` stable classes in generic degree `N>=4` |
 
 “No earlier source identified” is a statement about the current search, not a
@@ -458,6 +458,15 @@ is the same band-bracket equation used in the plane `(72,108)` cascade, with
 different supports and a different forced layer.  See the
 [weighted tangent-suspension bridge](extended-geometry/WEIGHTED_TANGENT_SUSPENSION.md).
 
+Finite-order deformation theory gives no additional unfiltered moduli.
+The [formal orbit-triviality theorem](extended-geometry/FORMAL_ORBIT_TRIVIALITY.md)
+shows that every polynomial deformation of a Keller map over a local Artin
+base is uniquely trivialized by an unrestricted polynomial source
+automorphism.  Thus dual-number directions in bounded-support ansatz slices
+belong to the slice, not to global moduli.  The active continuation is
+[complexity-filtered contact](extended-geometry/COMPLEXITY_FILTERED_CONTACT.md),
+formal-to-algebraic descent, and global boundary invariants.
+
 The normalized admissible degree-`N` weighted seed space has dimension
 `N-3`.  For every `N>=4`, its ordinary boundary-clean locus is nonempty: the
 generic discriminant theorem supplies the ordinary nodal-cuspidal open, while
@@ -477,15 +486,12 @@ preserved by stable polynomial left--right equivalence,
 \]
 
 This is the main degreewise moduli result.  Its proof is in the
-[decorated-normalization theorem](extended-geometry/DECORATED_NORMALIZATION_INVARIANT.md).
+[decorated-normalization paper](papers/decorated-discriminant-normalization/main.tex).
 The coarse decorated-normalization map remains generically etale of degree
-`N-2`, reflecting the finite rerooting groupoid.  The richer full marked
-incidence cover, including its regular-reconstruction open, is faithful for
-every normalized admissible seed with `ord_0(H)>=2`, even when the zero
-multiplicity increases or extra roots collide.  The proof recovers an affine
-primitive coordinate from the low-pole filtration, uses the affine zero
-cluster to kill translation, and uses the root-one sheet to kill scaling.
-The [Hurwitz--LL compactification](extended-geometry/HURWITZ_LL_COMPACTIFICATION.md)
+`N-2`, reflecting the finite rerooting groupoid.  The proposed refinement by
+the full marked incidence cover and its regular-reconstruction open remains a
+repair target and is not used for this moduli theorem.
+The [Hurwitz--LL compactification](papers/hurwitz-ll-rerooting/main.tex)
 realizes the discriminant as a universal critical-value incidence and places
 the compactified rerooting groupoid in a marked admissible-cover closure.  Its
 normalized-Stein comparison identifies every contracted formal root chart and
@@ -563,6 +569,11 @@ The canonical statement and proof are in the standalone paper
 [Marked-root Keller maps](MARKED_ROOT_KELLER_MAPS.md) supplies the common
 framework, while the [five-lemma audit](DEGREEWISE_MULTIPLICITY_AUDIT.md) is a
 verification companion.  Neither is a competing canonical theorem source.
+
+The positive-dimensional theorem is now in
+[Decorated Discriminant Normalization and Stable Moduli](papers/decorated-discriminant-normalization/main.tex),
+and the compactification and specialized LL/boundary calculations are in
+[Hurwitz--LL Compactification of Rerooting](papers/hurwitz-ll-rerooting/main.tex).
 
 Three externally published quartic maps called Islands A, B, and C are
 classified in the [quartic-islands audit](extended-geometry/EXTERNAL_QUARTIC_ISLANDS.md).
@@ -694,7 +705,9 @@ Further families continue in one sequence:
 [boundary geometry](cancellation/BOUNDARY_GEOMETRY.md), and the
 [log-geometric suspension bridge](cancellation/LOG_GEOMETRY_OF_SUSPENSIONS.md), then the
 [marked-root framework](MARKED_ROOT_KELLER_MAPS.md), followed by the
-[canonical degreewise paper](papers/marked-root-multiplicity/main.tex).
+[finite degreewise paper](papers/marked-root-multiplicity/main.tex), the
+[decorated-moduli paper](papers/decorated-discriminant-normalization/main.tex),
+and the [Hurwitz--LL paper](papers/hurwitz-ll-rerooting/main.tex).
 Explicit reciprocal candidates can be audited with the
 [exact reciprocal-link classifier](cancellation/RECIPROCAL_LINK_CLASSIFIER.md).
 

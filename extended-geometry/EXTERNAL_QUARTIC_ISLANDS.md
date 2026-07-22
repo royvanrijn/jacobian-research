@@ -53,7 +53,10 @@ row is an instance of
  \qquad c=-H'(1).
 \]
 
-This proves generic degree four.  It also identifies the apparent islands:
+By the [tangent-map core theorem](../verified/TANGENT_MAP_CORE.md), this same
+pencil simultaneously supplies the Jacobian factor, discriminant
+normalization, reconstruction pole, and Hessian Fitting divisor.  In
+particular it proves generic degree four.  It also identifies the apparent islands:
 
 - `F4a` is the canonical triple-zero seed `W^3(W-1)`;
 - `F4b` is a split double-zero seed with extra root `rho=3`;

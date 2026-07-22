@@ -16,12 +16,12 @@ rendered in [STATUS.md](../STATUS.md).
 | Finite-field Chebotarev | [Effective theorem](FINITE_FIELD_CHEBOTAREV.md) |
 | Explicit quartic model | [Quartic weighted geometry](QUARTIC_WEIGHTED_GEOMETRY.md) |
 | Zhuang's external quartic islands | [Weighted-seed identification and boundary audit](EXTERNAL_QUARTIC_ISLANDS.md) |
-| Decorated normalization and degreewise stable moduli | [Scheme-theoretic Fitting, node pairing, conductor, quartic separation, collision-tolerant full-cover faithfulness, and the `(N-3)`-dimensional weighted moduli theorem](DECORATED_NORMALIZATION_INVARIANT.md) |
-| Hurwitz--LL compactification | [LL spectral incidence, marked admissible-cover closure, etale rerooting quotient and boundary pullbacks, exact multicluster comparison, restricted LL degree `(N-2)N^(N-3)`, and caustic/Maxwell boundary classes](HURWITZ_LL_COMPACTIFICATION.md) |
+| Decorated normalization and degreewise stable moduli | [Canonical paper](../papers/decorated-discriminant-normalization/main.tex); [extended audit and repair notes](DECORATED_NORMALIZATION_INVARIANT.md) |
+| Hurwitz--LL compactification | [Canonical paper](../papers/hurwitz-ll-rerooting/main.tex); [extended audit](HURWITZ_LL_COMPACTIFICATION.md) |
 | Cancellation contact resultant | [Endpoint-moment reduction and uniform `r=1,2,3,4` proofs](../cancellation/CONTACT_RESULTANT.md) |
 | Degree-five positive-dimensional stable moduli | [Stable Hessian-root invariant and explicit family](DEGREE_FIVE_STABLE_MODULI.md) |
-| Rank-two symplectic descent in `A^4` | [Complete degree-five and degree-six seed spaces, the all-degree two-chart theorem, and `N-3` stable dimensions for every `N>=5`](RANK_TWO_SYMPLECTIC_DESCENT.md) |
-| Degree-five rank-two worked example | [The original fixed-`kappa=-9` line with explicit parameter-dependent residue cancellation](DEGREE_FIVE_RANK_TWO_DESCENT.md) |
+| Rank-two symplectic descent in `A^4` | [The canonical all-degree two-chart residue theorem, coarse decorated transfer of `N-3` stable dimensions, and generated degree-five/six regressions](RANK_TWO_SYMPLECTIC_DESCENT.md) |
+| Degree-five rank-two regression | [The original fixed-`kappa=-9` line retained for explicit formulas and independent checking](DEGREE_FIVE_RANK_TWO_DESCENT.md) |
 | Filtered `A_2` quantization obstruction | [The separate `hbar^5` obstruction for the standard parity-preserving Weyl-symbol ansatz](RANK_TWO_FILTERED_QUANTIZATION_OBSTRUCTION.md) |
 | Exact symplectic and Weyl lifts | [Classical-quantum bridge](SYMPLECTIC_WEYL_LIFT.md) |
 | External GMC, `(xz)`, and `SU(2)` consequences | [Consequence graph, exact witnesses, provenance, and research trajectories](EXTERNAL_CONSEQUENCES_AND_PROVENANCE.md) |

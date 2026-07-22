@@ -13,6 +13,11 @@ For the associated weighted map `G_H`, a target `(A,B,C)` has inverse pencil
 E(W)=H(W)-BCW+cAC^2.                              \tag{1}
 \]
 
+The inverse pencil, reconstruction pole, discriminant normalization, and
+Hessian Fitting divisor used below are supplied uniformly by the
+[tangent-map core theorem](../verified/TANGENT_MAP_CORE.md).  This note begins
+only where its compactification analysis adds new boundary-at-infinity data.
+
 This note gives a compactification of the inverse correspondence and
 classifies every divisor at infinity which dominates a divisor in the target.
 

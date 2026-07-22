@@ -217,7 +217,7 @@ compact reconstruction and canonical-boundary audit:
 This command is also part of `make verify-regressions`.  It requires no
 network access and does not copy or execute the upstream checker.
 
-## Weighted full-cover rigidity
+## Decorated normalization, full-cover repair target, and Hurwitz--LL calculations
 
 The LL critical-value incidence, low-pole filtration, contravariant
 triangular target convention, affine pencil transport, higher-zero Newton
@@ -231,6 +231,12 @@ identities are checked exactly by
 .venv/bin/python scripts/verify_restricted_ll_degree.py
 .venv/bin/python scripts/verify_caustic_maxwell_boundary.py
 ```
+
+These checks support the individual identities and finite calculations.  The
+full-cover faithfulness statement remains a repair target; the checks do not
+promote it to an active theorem dependency.  The specialized restricted-LL
+degree and caustic/Maxwell boundary-class calculations have no recorded
+external review.
 
 The companion affine-stratum audit verifies that the root-one component is
 regular and that a nontrivial rerooting sends it to an extra-root boundary

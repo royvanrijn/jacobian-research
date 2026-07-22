@@ -112,8 +112,8 @@ p(0)=0,
 \quad p'(1)/c\ne-2.
 \]
 
-These conditions make the affine weighted lift polynomial with nonzero
-constant Jacobian.  Structurally, this is controlled by the plane tangent map
+These conditions make the affine weighted lift polynomial.  The
+[tangent-map core theorem](TANGENT_MAP_CORE.md) applies directly to the plane map
 
 \[
  \Phi_H(W,\gamma)=
@@ -121,18 +121,16 @@ constant Jacobian.  Structurally, this is controlled by the plane tangent map
  \qquad \det D\Phi_H=-c^2\gamma.
 \]
 
-The weighted threefold is a suspension of this ramified plane map: with
-`C=x gamma`, its defining identities are
+and proves at once its inverse pencil, critical divisor, discriminant
+normalization, Hessian Fitting divisor, and reconstruction pole.  It also
+identifies the weighted threefold as the suspension
 
 \[
  (BC,cAC^2,C)=(\Phi_H(W,\gamma),C).
 \]
 
-The two vertical coordinate maps have determinants `b_0 x^3 gamma^2` and
-`-cC^3`; since `C^3=x^3 gamma^3`, the lost boundary factor cancels and gives
-`det DG_H=b_0c`.  The full commutative diagram, including the inverse and
-Fitting-divisor consequences, is proved in the
-[tangent-map core theorem](TANGENT_MAP_CORE.md).
+Its determinant conclusion is therefore `det DG_H=b_0c`; no separate
+three-variable Jacobian calculation is needed here.
 
 Its inverse pencil is
 

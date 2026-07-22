@@ -215,5 +215,13 @@ is therefore precisely an orbit-tangency artifact: it is not a genuine
 infinitesimal moduli class, even when “geometric orbit” is required to mean a
 reduced algebraic curve rather than only a dual-number-valued point.
 
+The all-order version is the
+[formal orbit-triviality theorem](FORMAL_ORBIT_TRIVIALITY.md): modulo
+unrestricted polynomial source automorphisms, every deformation over a local
+Artin base is trivial.  Consequently further deformation searches must impose
+a complexity filtration, address algebraization over a reduced base, or use
+global normalization-boundary invariants; increasing the infinitesimal order
+inside this support ansatz cannot produce global moduli.
+
 The exact certificate is
 [`verify_cubic_orbit_tangency.py`](../scripts/verify_cubic_orbit_tangency.py).

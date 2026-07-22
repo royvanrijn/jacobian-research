@@ -187,9 +187,9 @@ are an exact symbolic formula for `f_lambda`.  Its expanded numerator is
 large and carries no additional mathematical information; the verifier
 constructs it exactly and checks the three components of (12).
 
-## 3. Four-dimensional theorem
+## 3. Four-dimensional regression
 
-### Theorem — degree-five rank-two descent
+### Exact specialization — degree-five rank-two descent
 
 For every `lambda in Lambda`, set
 
@@ -262,10 +262,12 @@ It verifies the fixed coordinate, determinant normalization, quotient
 brackets, all three relative-Hamiltonian equations, the complete principal
 part, uniqueness of (18), polynomiality, and the source automorphism.
 
-This is an internal repository theorem with no recorded external specialist
-review.  Its role is an explicit worked example for the original degree-five
-line.  The later [all-degree theorem](RANK_TWO_SYMPLECTIC_DESCENT.md) proves
+This is an internal regression with no recorded external specialist review.
+Its role is an explicit worked example for the original degree-five line, not
+a separately maintained theorem source.  The
+[all-degree theorem](RANK_TWO_SYMPLECTIC_DESCENT.md) proves
 completion for every normalized admissible seed in every degree `N>=5`, on
-both adapted charts.  Full-cover faithfulness transfers `N-3` stable
-dimensions to `A^4`; in degree five this gives the complete two-dimensional
-seed surface, with the present line as the `kappa=-9` specialization.
+both adapted charts.  Its coarse decorated-normalization corollary transfers
+`N-3` stable dimensions to `A^4` with generic degree `N-2`; in degree five
+this gives the complete two-dimensional seed surface, with the present line
+as the `kappa=-9` specialization.
