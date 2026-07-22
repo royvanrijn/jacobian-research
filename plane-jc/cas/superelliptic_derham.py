@@ -45,13 +45,27 @@ class ReductionResult:
         return all(value == 0 for value in self.affine_coordinates)
 
 
+@dataclass(frozen=True)
+class QuotientDifferentialResult:
+    """The invariant-character differential descended to the rational base."""
+
+    character: int
+    differential: sp.Expr
+
+    @property
+    def is_exact(self) -> bool:
+        # Exactness on the punctured rational quotient requires an ordinary
+        # rational Hermite/residue calculation, kept separate from the
+        # nontrivial superelliptic eigenspace reducer.
+        return self.differential == 0
+
+
 class SuperellipticDeRham:
     """Hermite reduction on the smooth model of ``y**a = A(t)``.
 
-    ``A`` must be squarefree and have positive degree.  Character zero is
-    deliberately rejected: Newton leading blocks of the form treated here
-    use a nontrivial character, while invariant differentials reduce to the
-    rational base and need a separate (simpler) interface.
+    ``A`` must be squarefree and have positive degree.  Nontrivial characters
+    are reduced in superelliptic eigenspaces.  Character zero is returned as
+    an ordinary rational differential on the quotient coordinate ``t``.
     """
 
     def __init__(
@@ -139,7 +153,9 @@ class SuperellipticDeRham:
             if i != pivot
         )
 
-    def reduce(self, numerator: sp.Expr, denominator_exponent: int) -> ReductionResult:
+    def reduce(
+        self, numerator: sp.Expr, denominator_exponent: int
+    ) -> ReductionResult | QuotientDifferentialResult:
         """Reduce ``numerator*dt/y**denominator_exponent`` exactly.
 
         The output remainder is in the affine basis t^i dt/y^r with
@@ -152,7 +168,11 @@ class SuperellipticDeRham:
             raise ValueError("the denominator exponent must be positive")
         r = m % self.a
         if r == 0:
-            raise ValueError("character-zero differentials are not handled")
+            quotient_power = m // self.a
+            return QuotientDifferentialResult(
+                character=0,
+                differential=sp.cancel(numerator / self.A.as_expr() ** quotient_power),
+            )
 
         P = sp.Poly(sp.cancel(numerator), self.t)
         Aprime = self.A.diff()
@@ -208,7 +228,9 @@ class SuperellipticDeRham:
             compact_coordinates=compact,
         )
 
-    def reduce_weighted_wronskian(self, R: sp.Expr, b: int) -> ReductionResult:
+    def reduce_weighted_wronskian(
+        self, R: sp.Expr, b: int
+    ) -> ReductionResult | QuotientDifferentialResult:
         """Reduce the differential attached to a*A*D' - b*A'D = R."""
 
         return self.reduce(sp.Rational(1, self.a) * R, self.a + int(b))

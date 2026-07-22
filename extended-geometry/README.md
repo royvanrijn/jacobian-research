@@ -20,6 +20,7 @@ in [STATUS.md](../STATUS.md).
 | Cancellation contact resultant | [Endpoint-moment reduction and uniform `r=1,2` proofs](../cancellation/CONTACT_RESULTANT.md) |
 | Degree-five positive-dimensional stable moduli | [Stable Hessian-root invariant and explicit family](DEGREE_FIVE_STABLE_MODULI.md) |
 | Degree-five rank-two symplectic descent | [Parameter-dependent residue cancellation and uncountable stable moduli in `A^4`](DEGREE_FIVE_RANK_TWO_DESCENT.md) |
+| All-degree rank-two descent programme | [Flux obstruction, full degree-five surface calculation, degreewise elimination, and direct `A_2` quantization](ALL_DEGREE_RANK_TWO_DESCENT_PROGRAM.md) |
 | Exact symplectic and Weyl lifts | [Classical-quantum bridge](SYMPLECTIC_WEYL_LIFT.md) |
 | External GMC, `(xz)`, and `SU(2)` consequences | [Consequence graph, exact witnesses, provenance, and research trajectories](EXTERNAL_CONSEQUENCES_AND_PROVENANCE.md) |
 | Complete Long consequence reproductions | [`SU(2)` Haar proof, exact `3 -> 39 -> 79` BCW reproduction, repository reduction to dimension 16, and rank-compressed 24-variable homogenization](LONG_SU2_AND_BCW_REPRODUCTIONS.md) |

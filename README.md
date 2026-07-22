@@ -274,7 +274,7 @@ distinctions matter:
 | Quartic Islands A/B/C | Juntang Zhuang's pinned compilation and exact collision checkers | Independent compact reconstruction showing one canonical and two split weighted seeds, complete boundary signatures, and exclusion from the cancellation normal forms |
 | Formal verification of the foundational map | Dean Cureton’s Lean project | Pinned attribution, scope audit, and an optional upstream build target |
 | Immediate consequences and source trail | Zihan Zhang’s audit | A separate proof architecture focused on inverse geometry, normalization, and stable equivalence |
-| GMC, `(xz)`, and `SU(2)` counterexamples | Christopher D. Long's two arXiv papers | Exact local Gaussian and beta/binomial checks, a complete `SU(2)=S^3` Haar proof, all 18 steps of Long's conservative 79-variable route, a repository shared-factor reduction to dimension 16, and rank-compressed homogenization to 24 variables and `not GMC(48)`; every sparse artifact has an independent replay, with no claim that the direct witnesses derive from our map |
+| GMC, `(xz)`, and `SU(2)` counterexamples | Christopher D. Long's two arXiv papers | Exact local Gaussian and beta/binomial checks, a complete `SU(2)=S^3` Haar proof, all 18 steps of Long's conservative 79-variable route, a repository shared-factor reduction to dimension 16, rank-compressed homogenization to 24 variables, and its constant-kernel quotient to 22 variables and `not GMC(44)`; every sparse artifact has an independent replay, with no claim that the direct witnesses derive from our map |
 | Weighted-seed/Gaussian bridge | Long's Lagrange--Good search architecture and Good's inversion theorem | A repository-derived polynomial determinant correction turning every nonconstant normalized seed into an explicit four-real-Gaussian witness family; the exact mixed moments recover `1+lambda*H`, making the moment realization injective; supported by a standalone constant-term-safe formal Gaussian--Lagrange proof, locally checked and not externally reviewed |
 | Cancellation maps and canonical boundary invariants | No earlier source has been identified in the present audit | The finite cancellation operator, all-parameter reconstruction and collision, boundary-exhaustion theorem, thick intersections, and rigidity results |
 | Degreewise weighted stable moduli | No earlier source has been identified in the present audit | A generically finite decorated-normalization invariant with image dimension `N-3`, on an explicitly proved nonempty ordinary boundary-clean open for every generic degree `N>=4` |
@@ -447,8 +447,10 @@ fixed-dimensional implication to `not GMC(158)`.  The proof architecture and
 authorship remain credited to BCW, DVEZ, and Zhao.  A separate repository
 optimization reuses exposed factors, reduces the route to dimension 16, and
 then rank-compresses the cubic output before homogenizing to 24 variables.
-This improves the nonexplicit bound to `not GMC(48)`; it is a certified upper
-bound, not a minimality claim or a result attributed to Long.  Long's
+Quotienting its two-dimensional constant Jacobian kernel gives a
+22-dimensional cubic-homogeneous Keller collision.  The JC-derived,
+nonconstructive-at-the-Gaussian-step route now gives `not GMC(44)`; it is a
+certified upper bound, not a minimality claim or a result attributed to Long.  Long's
 much smaller direct witnesses were motivated by the JC(3) announcement but
 were not algebraically extracted from that map.  His papers do not review the
 repository's Hessian/Fitting-divisor or stable-moduli proofs.

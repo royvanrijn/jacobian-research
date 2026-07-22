@@ -82,6 +82,12 @@ D3 = t**7 + 2 * t + 1
 R3 = sp.expand(3 * A3 * sp.diff(D3, t) - 2 * sp.diff(A3, t) * D3)
 assert curve3.reduce_weighted_wronskian(R3, 2).is_exact
 
+# The trivial character descends to an ordinary rational differential on the
+# quotient instead of entering one of the nontrivial eigenspace reducers.
+trivial = curve3.reduce_weighted_wronskian(1 + t, 3)
+assert trivial.character == 0
+assert sp.cancel(trivial.differential - (1 + t) / (3 * A3**2)) == 0
+
 # When gcd(a,deg A)>1, residue directions occur in selected characters only.
 A6 = t**6 + t + 1
 curve6 = SuperellipticDeRham(t, A6, 4)
@@ -95,3 +101,4 @@ assert curve6.compact_h1_dimension == 14
 print("PASS: superelliptic Hermite/de Rham reduction")
 print("PASS: (72,108) gives 11 solved coefficients and 6 compact obstructions")
 print("PASS: character dimensions sum to compact H^1_deRham")
+print("PASS: trivial character descends to a rational quotient differential")

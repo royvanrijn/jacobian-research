@@ -42,8 +42,8 @@ Taking determinants in (1) gives
  =u(D\circ\alpha)^r\det D\alpha.                       \tag{3}
 \]
 
-Thus `F` has constant nonzero Jacobian exactly when the following equality
-of principal Weil divisors holds:
+If `F` has constant nonzero Jacobian, the following equality of principal
+Weil divisors holds:
 
 \[
  \boxed{
@@ -55,6 +55,11 @@ of principal Weil divisors holds:
 We call (4) the **determinant ledger**.  Pullback through a rational chart is
 understood as the divisor of the pulled-back rational function, so its
 coefficients may be negative.
+
+Conversely, equality of the ledger says that `det DF` is a global unit.  It
+says that this unit is constant when `O(X)^*=k^*`, in particular for
+`X=A^3`.  On an arbitrary smooth threefold with nonconstant units, (4) alone
+does not strengthen “global unit” to “constant Jacobian.”
 
 For cancellation, `beta=id`, `D\circ\alpha=A^{-1}`, and
 `det D alpha=-A^r`; the two terms on the left of (4) cancel.  For the

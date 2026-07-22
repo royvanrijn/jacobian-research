@@ -1,4 +1,4 @@
-# Complete local reproductions: `SU(2)`, the BCW 79-variable route, and a 24-variable optimization
+# Complete local reproductions: `SU(2)`, the BCW 79-variable route, and a 22-variable optimization
 
 This note supplies the two proofs left deliberately conditional in the first
 external-consequences audit.  It has two distinct outcomes.
@@ -12,7 +12,9 @@ external-consequences audit.  It has two distinct outcomes.
 3. A repository-derived common-factor optimization replaces the conservative
    degree-lowering stage by `3 -> 16`.  The cubic component vector has exact
    rational rank seven, so rank-compressed homogenization needs only 24
-   variables and improves the route-based consequence to `not GMC(48)`.
+   variables.  Its two-dimensional constant-kernel quotient gives a
+   22-variable cubic-homogeneous collision and improves the route-based
+   consequence to `not GMC(44)`.
    This is not a formula or dimension claim attributed to Long.
 
 Neither local proof changes the provenance of Christopher D. Long's external
@@ -639,6 +641,8 @@ python3 scripts/audit_long_bcw_79_independent.py
 python3 scripts/audit_shared_bcw_33_independent.py
 .venv/bin/python scripts/verify_rank_compressed_bcw_24_route.py
 python3 scripts/audit_rank_compressed_bcw_24_independent.py
+.venv/bin/python scripts/verify_constant_kernel_bcw_22_route.py
+python3 scripts/audit_constant_kernel_bcw_22_independent.py
 .venv/bin/python scripts/verify_two_parameter_bcw_obstruction.py
 python3 scripts/verify_fixed_gmc_sic_bridge.py
 ```
@@ -647,7 +651,8 @@ The first two scripts jointly certify the complete `SU(2)` proof.  The next
 two construct and independently replay Long's conservative 79-variable
 route.  The next pair record and replay the repository's shared-factor
 baseline, and the following pair construct and independently replay its
-rank-compressed 24-variable homogenization.  The next script checks the
+rank-compressed 24-variable homogenization.  The next pair construct and
+independently replay its 22-variable constant-kernel quotient.  The next script checks the
 two-parameter shortcut obstruction; the final script checks the coefficient
 skeleton of the fixed-dimensional implication.  None of these
 replaces the repository's separate 95-variable cubic-homogeneous artifact.

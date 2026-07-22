@@ -101,6 +101,8 @@ verify-external-consequences:
 	$(SYSTEM_PYTHON) scripts/audit_shared_bcw_33_independent.py
 	$(PYTHON) scripts/verify_rank_compressed_bcw_24_route.py
 	$(SYSTEM_PYTHON) scripts/audit_rank_compressed_bcw_24_independent.py
+	$(PYTHON) scripts/verify_constant_kernel_bcw_22_route.py
+	$(SYSTEM_PYTHON) scripts/audit_constant_kernel_bcw_22_independent.py
 	$(PYTHON) scripts/verify_two_parameter_bcw_obstruction.py
 	$(SYSTEM_PYTHON) scripts/verify_fixed_gmc_sic_bridge.py
 	$(PYTHON) scripts/verify_formal_gaussian_lagrange.py

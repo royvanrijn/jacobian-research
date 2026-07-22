@@ -73,12 +73,24 @@ where
  P_1=\frac{P-AS'+(k/a)A'S}{A}.                          \tag{5}
 \]
 
-The numerator in (5) is exactly divisible by `A`.  Repetition lowers the
-denominator exponent to the character
+The numerator in (5) is exactly divisible by `A`.  For a nontrivial
+character, repetition lowers the denominator exponent to
 
 \[
  r\equiv m\equiv b\pmod a,\qquad 1\le r<a.              \tag{6}
 \]
+
+There is a separate invariant branch when `b=0 mod a`.  Then `r=0` and
+
+\[
+ \frac{P(t)}{y^m}\,dt
+ =\frac{P(t)}{A(t)^{m/a}}\,dt,
+\]
+
+so the differential descends to an ordinary rational differential on the
+quotient line.  It must be treated by rational Hermite reduction and residue
+tests there, rather than inserted into a nontrivial character space.  The
+implementation returns this descended quotient differential explicitly.
 
 For `(72,108)`, the two steps are `y^5 -> y^3 -> y`.  The first modular
 inverse is the coordinate-free version of the archived interpolation step;
@@ -112,6 +124,13 @@ The important correction to a naive generalization is that a fixed weighted
 Wronskian sees the single character `r=b mod a`, not all of compact
 `H^1_dR(C_A)`.  Hyperelliptic curves have only one nontrivial character, so
 the distinction is invisible in `(72,108)`.
+
+The displayed eigenspace language is literal after extending the ground
+field to contain `mu_a`.  Over a characteristic-zero field that need not
+contain those roots of unity, the construction is intrinsic: use the
+corresponding eigensheaves after finite étale scalar extension, with Galois
+descent.  None of the reduction formulas requires choosing a primitive
+`a`-th root of unity.
 
 ## 4. Compact cohomology and residues at infinity
 
@@ -269,6 +288,7 @@ Expected output:
 PASS: superelliptic Hermite/de Rham reduction
 PASS: (72,108) gives 11 solved coefficients and 6 compact obstructions
 PASS: character dimensions sum to compact H^1_deRham
+PASS: trivial character descends to a rational quotient differential
 ```
 
 The existing structural checker remains complementary:

@@ -14,6 +14,10 @@ reduced-curve interpolation theorem in Section 4.  Write
  \qquad \det DF=c\in k^\times.
 \]
 
+We distinguish
+`Aut_1(A^n)={A:det DA=1}` from
+`SAut(A^n)=<Ga-subgroups>`.  No equality of these groups is assumed.
+
 ## 1. First-order theorem
 
 For every polynomial deformation vector `H`, put
@@ -131,7 +135,7 @@ It continues uniquely to every order.  Therefore
 
 \[
  \widehat{\operatorname{Kell}}_{c,F}/
- \widehat{\operatorname{SAut}}_{\mathrm{id}}
+ \widehat{\operatorname{Aut}}_{1,\mathrm{id}}
 \]
 
 is the one-point functor.  In particular, ordinary second-order lifting in
@@ -148,7 +152,7 @@ hence a unique formal automorphism
  \qquad F_t=F\circ\widehat\alpha(t).                 \tag{3.1}
 \]
 
-For a fixed-Jacobian family it lies in formal `SAut`.  Equation (3.1) is a
+For a fixed-Jacobian family it lies in formal `Aut_1`.  Equation (3.1) is a
 coefficientwise statement: every coefficient of `t` is polynomial in the
 source variables.  It does not assert that the series terminates in `t`, is
 rational in `t`, or defines an automorphism over a reduced finite-type base.
@@ -161,7 +165,7 @@ Assume now that `char(k)=0`.  Let
 
 \[
  \bar\alpha\in
- \operatorname{SAut}_{k[t]/(t^{m+1})}(\mathbb A^3),
+ \operatorname{Aut}_{1,k[t]/(t^{m+1})}(\mathbb A^3),
  \qquad \bar\alpha_0=\mathrm{id}.
 \]
 

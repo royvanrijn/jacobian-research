@@ -137,10 +137,14 @@ dimension 16, and writes and replays a 33-variable baseline artifact.  It then
 computes the exact rational rank 7 of the cubic component vector, constructs
 the rank-compressed 24-variable cubic collision, and independently replays
 the factorization, sparse map, and collision using only the standard library.
+It then removes the two-dimensional constant Jacobian kernel, constructs the
+22-variable quotient, and independently replays `BK=0`, `BC=I`, `H=HCB`,
+cubic homogeneity, the descended collision, and the triangular determinant
+factorization using only the standard library.
 A local proof of the
 fixed-dimensional DVEZ/Zhao implication, including Gaussian contraction, the
 countable-union step, and formal inversion, completes the nonexplicit route to
-`not GMC(48)`; `not GMC(158)` remains the exact conservative Long-route bound.
+`not GMC(44)`; `not GMC(158)` remains the exact conservative Long-route bound.
 It also verifies the uniform weighted-seed Gaussian bridge:
 first the standalone Gaussian--Lagrange identity for a nonlinear polynomial
 map with nonzero constant terms, then the exact pencil branch, polynomial

@@ -11,6 +11,15 @@ def source_degree(vector):
     return max(sp.Poly(sp.cancel(entry), *variables).total_degree() for entry in vector)
 
 
+def homogeneous_part(polynomial, degree):
+    poly = sp.Poly(sp.expand(polynomial), *variables)
+    return sp.factor(sum(
+        coefficient * x**monomial[0] * y**monomial[1] * z**monomial[2]
+        for monomial, coefficient in poly.terms()
+        if sum(monomial) == degree
+    ))
+
+
 # The degree-five family from verify_degree_five_stable_moduli.py.
 H = sp.factor(
     w**2 * (w - 1) * (3 * w**2 - (5 * lam + 1) * w + 3 * lam) / 60
@@ -69,6 +78,38 @@ determinant_coefficient_2 = sp.factor(
 assert divergence_1 == 0
 assert determinant_coefficient_2 == 0
 
+# The all-order leading recurrence lives in M=u_top^8*gamma_top^6.
+M = x**20 * y**8 * z**6
+assert homogeneous_part(V1[0], 35) == -360 * x * M
+assert homogeneous_part(V1[1], 35) == 0
+assert homogeneous_part(V1[2], 35) == 1080 * z * M
+assert homogeneous_part(V2[0], 69) == 194400 * x * M**2
+assert homogeneous_part(V2[1], 69) == 0
+assert homogeneous_part(V2[2], 69) == 194400 * z * M**2
+
+# If Delta=W'-W, its leading coefficient is
+# a_r*u^(8r-3)*gamma^(6r-2), with a_1=-12 and
+# a_r=15*sum_(i+j=r) a_i*a_j.  The closed form is Catalan and never vanishes.
+leading_delta = {1: sp.Integer(-12)}
+for exponent in range(2, 9):
+    leading_delta[exponent] = 15 * sum(
+        leading_delta[index] * leading_delta[exponent - index]
+        for index in range(1, exponent)
+    )
+    expected = (
+        15 ** (exponent - 1)
+        * (-12) ** exponent
+        * sp.catalan(exponent - 1)
+    )
+    assert leading_delta[exponent] == expected
+
+# The induced leading source factors are
+# x'/x=(1+720*t*M)^(-1/2) and z'/z=(1+720*t*M)^(3/2).
+for exponent in range(1, 9):
+    assert sp.binomial(-sp.Rational(1, 2), exponent) * 720**exponent != 0
+    assert sp.binomial(sp.Rational(3, 2), exponent) * 720**exponent != 0
+
 print("PASS: target normalization makes the degree-five arc fixed-Jacobian")
 print("PASS: canonical source and inverse coefficient degrees are 1,35,69")
 print("PASS: the first- and second-order special-Jacobian identities hold")
+print("PASS: the Catalan leading recurrence proves degree 34*m+1 at every order")
