@@ -344,7 +344,34 @@ for m, r in ((1, 1), (1, 2), (2, 1), (2, 2)):
         for branch in intersection.branches
     ] == [(m, m * r), (1, m * r)]
 
+# Differential of the Hessian-divisor quotient.  For normalized symbolic
+# seeds in a degree range, verify the general integration primitive and the
+# two endpoint evaluations which kill the normalization-line orbit tangent.
+alpha, beta = sp.symbols("unramified_alpha unramified_beta")
+for degree in range(4, 10):
+    free = sp.symbols(f"unramified_h3:{degree}")
+    coefficients = dict(zip(range(3, degree), free))
+    top = sp.cancel(
+        (-1 - sum((j - 2) * coefficients[j] for j in range(3, degree)))
+        / (degree - 2)
+    )
+    coefficients[degree] = top
+    seed = sp.expand(
+        sum(coefficients[j] * (W**j - W**2) for j in range(3, degree + 1))
+    )
+    assert sp.expand(seed.subs(W, 1)) == 0
+    assert sp.expand(sp.diff(seed, W).subs(W, 1)) == -1
+    tangent = sp.expand(alpha * seed + beta * (W * sp.diff(seed, W) - 2 * seed))
+    assert sp.expand(
+        sp.diff(tangent, W, 2)
+        - alpha * sp.diff(seed, W, 2)
+        - beta * W * sp.diff(seed, W, 3)
+    ) == 0
+    assert sp.expand(tangent.subs(W, 1)) == -beta
+    assert sp.expand(sp.diff(tangent, W).subs(W, 1).subs(beta, 0)) == -alpha
+
 print("PASS: Fitt_0 Omega is extracted with its full Hessian-root multiplicities")
+print("PASS: the degree-uniform normalized Hessian-divisor tangent identity has zero kernel")
 print("PASS: diagonal saturation recovers the exact ordered and unordered node schemes")
 print("PASS: the ordinary conductor is cusp^2 times the node-branch divisor")
 print("PASS: the implicit-equation conductor handles nonordinary singularities")

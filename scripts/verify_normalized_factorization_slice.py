@@ -231,3 +231,60 @@ mu23 = r / m**3
 assert sp.cancel(lambda23 * mu23 * m - 1) == 0
 assert sp.cancel(lambda23**3 * mu23**2 * r - 1) == 0
 print("PASS: consecutive degrees (2,3) again have a unique normalized representative")
+
+# Direct finite-field audit of all three cubic hyperplane orbits.  We count
+# the projective marked-factor open U_ell, canonically isomorphic to X_ell.
+def projective_points(prime, dimension):
+    """Canonical representatives of P^dimension(F_prime)."""
+    points = []
+    for pivot in range(dimension + 1):
+        prefix = (0,) * pivot + (1,)
+        for tail in __import__("itertools").product(range(prime), repeat=dimension - pivot):
+            points.append(prefix + tail)
+    return points
+
+
+def mod_resultant_linear_quadratic(linear, quadratic, prime):
+    aa, bb = linear
+    cc, dd, ee = quadratic
+    return (aa * aa * ee - aa * bb * dd + bb * bb * cc) % prime
+
+
+def product_coefficients(linear, quadratic, prime):
+    aa, bb = linear
+    cc, dd, ee = quadratic
+    return (
+        aa * cc % prime,
+        (aa * dd + bb * cc) % prime,
+        (aa * ee + bb * dd) % prime,
+        bb * ee % prime,
+    )
+
+
+# Representatives ell=m1-m2, ell=m1, ell=m0 have contact types
+# (1,1,1), (2,1), and (3), respectively.
+orbit_functionals = {
+    "111": lambda coeffs, p: (coeffs[1] - coeffs[2]) % p,
+    "21": lambda coeffs, p: coeffs[1] % p,
+    "3": lambda coeffs, p: coeffs[0] % p,
+}
+# The chosen integral representative m1-m2 has bad reduction at 3 because its
+# restriction to the twisted cubic acquires the scalar factor 3.  Use good
+# primes for the three-orbit comparison.
+for prime in (2, 5, 7, 11):
+    linears = projective_points(prime, 1)
+    quadratics = projective_points(prime, 2)
+    counts = {}
+    for name, functional in orbit_functionals.items():
+        counts[name] = sum(
+            mod_resultant_linear_quadratic(linear, quadratic, prime) != 0
+            and functional(product_coefficients(linear, quadratic, prime), prime) != 0
+            for linear in linears
+            for quadratic in quadratics
+        )
+    assert counts == {
+        "111": prime**3 - prime,
+        "21": prime**3,
+        "3": prime**3 - prime**2,
+    }
+print("PASS: all cubic hyperplane orbits have the stated point-count classes")

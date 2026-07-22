@@ -37,8 +37,26 @@ Jacobian reduction for `k=1,2,3,4`, including the foundational
 `(-2,-1,1)` output weights.  It then reconstructs the complete
 sixteen-monomial coefficient ideal, proves the gauge-fixed dual-number
 presentation, extracts the infinitesimal deformation and its quadratic
-obstruction, and separates it from the affine left--right orbit.
+obstruction, and separates it from the affine left--right orbit.  The same
+target independently rewrites that normalized ideal as three univariate
+weighted-Wronskian layers and checks its exact Poisson-square and tangent-pencil
+identities.  The leading layer exposes the quadratic obstruction directly,
+and two further unit-ideal checks eliminate both one-sided nonconstant-`C`
+boundary charts.
 `verify-foundations` adds the weighted construction and its clean-room checker.
+
+The heavier regression target also checks the explicit degree-five family and
+its rank-two symplectic descent:
+
+```bash
+.venv/bin/python scripts/verify_degree_five_rank_two_descent.py
+```
+
+This exact calculation constructs the relative Hamiltonian over
+`Q(lambda)`, extracts all four negative-`X` residue coefficients, proves the
+unique parameter-dependent shear cancels them, and verifies the normalized
+base brackets and polynomial source automorphism.  It normally takes roughly
+half a minute in the pinned symbolic environment.
 
 The separately authored Lean certificate is optional because it downloads a
 pinned toolchain:
@@ -173,3 +191,24 @@ Generated outputs, bounded scans, and exploratory search programs are not
 part of the public proof navigation.  Existing generated artifacts live under
 `artifacts/generated-results/`; historical search tools are preserved under
 `archive/tooling/`.
+
+## Plane degree-frontier audit
+
+The small deterministic regression of the published candidate tables is:
+
+```bash
+python3 plane-jc/cas/frontier_125_150.py
+```
+
+The exact chart-aware boundary localization/Smith-normal-form prefilter is:
+
+```bash
+.venv/bin/python plane-jc/cas/boundary_lattice_prefilter.py
+```
+
+The exact 90 MB certificate archive and extracted replay source are pinned
+under `plane-jc/external/zenodo-21479814/`.  Attachment hashes, environment
+versions, the full replay command, and the independent hard-certificate
+command are in
+[`plane-jc/cas/README.md`](plane-jc/cas/README.md).  The independent checker
+does not import the primary CAS or generation modules.

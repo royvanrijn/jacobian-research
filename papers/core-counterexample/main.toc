@@ -4,19 +4,20 @@
 \contentsline {subsection}{\numberline {2.1}Unequal factor degrees}{5}{subsection.2.1}%
 \contentsline {section}{\numberline {3}The explicit Keller map}{6}{section.3}%
 \contentsline {section}{\numberline {4}Global coordinate certificate}{7}{section.4}%
-\contentsline {subsection}{\numberline {4.1}The chart $V\ne 0$}{7}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.1}The chart $V\ne 0$}{8}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}The chart $U\ne 0$}{8}{subsection.4.2}%
 \contentsline {subsection}{\numberline {4.3}Agreement on the overlap}{9}{subsection.4.3}%
 \contentsline {section}{\numberline {5}Fibers, image, and nonproperness}{9}{section.5}%
-\contentsline {section}{\numberline {6}The weighted polynomial construction}{10}{section.6}%
-\contentsline {section}{\numberline {7}The normalized incidence and reconstruction}{12}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Four distinct spaces}{12}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}The fiber over $C=0$}{14}{subsection.7.2}%
-\contentsline {section}{\numberline {8}Irreducibility and symmetric monodromy}{14}{section.8}%
-\contentsline {section}{\numberline {9}Examples and scope of the construction}{15}{section.9}%
-\contentsline {subsection}{\numberline {9.1}The cubic collision as three marked roots}{15}{subsection.9.1}%
-\contentsline {subsection}{\numberline {9.2}Canonical admissible polynomials}{16}{subsection.9.2}%
-\contentsline {subsection}{\numberline {9.3}Logical scope}{16}{subsection.9.3}%
-\contentsline {subsection}{\numberline {9.4}Comparison, verification, and provenance}{16}{subsection.9.4}%
-\contentsline {section}{\numberline {10}Further directions}{17}{section.10}%
-\contentsline {section}{\numberline {A}Theorem dependencies}{17}{appendix.A}%
+\contentsline {section}{\numberline {6}The weighted polynomial construction}{11}{section.6}%
+\contentsline {subsection}{\numberline {6.1}The tangent-map core and weighted suspension}{12}{subsection.6.1}%
+\contentsline {section}{\numberline {7}The normalized incidence and reconstruction}{14}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Four distinct spaces}{14}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}The fiber over $C=0$}{16}{subsection.7.2}%
+\contentsline {section}{\numberline {8}Irreducibility and symmetric monodromy}{16}{section.8}%
+\contentsline {section}{\numberline {9}Examples and scope of the construction}{17}{section.9}%
+\contentsline {subsection}{\numberline {9.1}The cubic collision as three marked roots}{17}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Canonical admissible polynomials}{18}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}Logical scope}{18}{subsection.9.3}%
+\contentsline {subsection}{\numberline {9.4}Comparison, verification, and provenance}{18}{subsection.9.4}%
+\contentsline {section}{\numberline {10}Further directions}{18}{section.10}%
+\contentsline {section}{\numberline {A}Theorem dependencies}{19}{appendix.A}%

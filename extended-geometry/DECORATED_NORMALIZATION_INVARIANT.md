@@ -450,6 +450,82 @@ at most `N-2` points.  Consequently
 on the generic ordinary locus.  This proves the image dimension; it does not
 claim that every abstract decorated configuration occurs.
 
+### Generic unramifiedness and the exact rerooting fiber
+
+The preceding finite-fiber argument has a differential strengthening which
+uses only the Fitting divisor and the marks at zero and infinity.  Put
+`d=N-2`, and let `U_d` be the open of squarefree effective degree-`d`
+divisors on `P^1` disjoint from zero and infinity.  Scaling the normalization
+coordinate gives the quotient stack
+
+\[
+ \mathcal Q_d=[U_d/G_m],\qquad r\longmapsto ar.        \tag{5.3f}
+\]
+
+The Fitting divisor defines a morphism from the ordinary boundary-clean seed
+open to `mathcal Q_d`.  Let `H+epsilon dot H` be a normalized first-order
+seed deformation in its tangent kernel.  Infinitesimal equality of the
+projective Fitting divisors, modulo normalization-line scaling, says
+
+\[
+ \dot H''(r)=\alpha H''(r)+\beta rH'''(r).             \tag{5.3g}
+\]
+
+Here `alpha` is the scalar ambiguity in a defining section and `beta r d/dr`
+is the infinitesimal automorphism of `(P^1;0,infinity)`.  Integrating twice
+and using `dot H(0)=dot H'(0)=0` gives
+
+\[
+ \dot H=\alpha H+\beta(rH'-2H).                        \tag{5.3h}
+\]
+
+The remaining normalized endpoint conditions give, successively,
+
+\[
+ 0=\dot H(1)=-\beta,\qquad
+ 0=\dot H'(1)=-\alpha.
+\]
+
+Thus `dot H=0`.  The Hessian-divisor quotient map is unramified; on the
+generic locus where the divisor has trivial scaling stabilizer, source and
+target are smooth of the same dimension `N-3`, so it is etale after
+shrinking.  Since the decorated-normalization map forgets to (5.3f), its
+differential is injective there as well.
+
+The generic degree is also exact.  If `a` is a nonzero simple root of `H`, set
+
+\[
+ \kappa_a=-\frac1{aH'(a)},\qquad G_a(w)=\kappa_aH(aw). \tag{5.3i}
+\]
+
+Then `G_a` is normalized and
+
+\[
+ E_{G_a}(w;s,t)=
+ \kappa_a E_H\!\left(aw;
+       \frac{s}{\kappa_a a},\frac{t}{\kappa_a}\right). \tag{5.3j}
+\]
+
+This transports the normalization morphism, Fitting divisor, node pairing,
+conductor, and the marks at zero and infinity, so all `G_a` have the same
+decoration as `H`.  Generically `H=w^2P` with `P` squarefree of degree
+`N-2`, and the `N-2` rerootings are distinct.  Conversely, (5.3) shows that
+every seed in the same decorated fiber is one of these rerootings.  Hence
+the normalized decorated image is generically birational to `mathcal Q_d`;
+after shrinking, this birational map is an isomorphism.  Therefore
+
+\[
+ \boxed{\mathfrak M_N\text{ is generically etale of degree }N-2
+        \text{ onto the normalization of its image}.} \tag{5.3k}
+\]
+
+Equivalently, over a rerooting-stable generic open the incidence
+`{(H,a):H(a)=0, a!=0, H'(a)!=0}` is the finite etale rerooting relation.
+Its quotient supplies an ordinary algebraic model for the generic moduli
+image, which is therefore reduced.  This statement concerns the decoration
+(3.5); the larger intrinsic affine-cover decoration discussed next may
+separate the rerootings if the missing cross-stratum lemma is proved.
+
 ### The affine root-one stratum and the missing cross-stratum lemma
 
 There is a tempting apparent improvement of the preceding argument.  Over

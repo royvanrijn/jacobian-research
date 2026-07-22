@@ -72,6 +72,134 @@ therefore equal to \eqref{eq:weighted-formulas} and explicitly exhibit all
 three coordinates as polynomials.
 \end{proof}
 
+\subsection{The tangent-map core and weighted suspension}
+
+The determinant calculation is governed by a two-dimensional map which also
+contains the inverse and discriminant geometry.  Define
+\begin{equation}\label{eq:tangent-core}
+ \Phi_H:\A^2_{W,\gamma}\longrightarrow\A^2_{s,t},\qquad
+ \Phi_H(W,\gamma)=
+ \bigl(H'(W)+c\gamma,\,W(H'(W)+c\gamma)-H(W)\bigr).
+\end{equation}
+
+\begin{theorem}[tangent-map core and weighted suspension]\label{thm:tangent-core}
+The map $\Phi_H$ is finite of generic degree $n$, with inverse equation
+\begin{equation}\label{eq:core-inverse}
+ H(W)-sW+t=0,\qquad \gamma=\frac{s-H'(W)}c,
+\end{equation}
+and
+\[
+ \det D\Phi_H=-c^2\gamma.
+\]
+Its critical divisor is $V(\gamma)$, and its restriction there is the
+discriminant normalization
+\[
+ W\longmapsto\bigl(H'(W),WH'(W)-H(W)\bigr).
+\]
+If $D_H$ is the reduced discriminant curve, this normalization satisfies
+\[
+ \Omega_{\A^1_W/D_H}\simeq k[W]/(H''(W))\,dW,
+ \qquad
+ \operatorname{Fitt}_0\Omega_{\A^1_W/D_H}=(H''(W)).
+\]
+
+Moreover $G_H$ is a weighted suspension of $\Phi_H$.  More precisely, if
+\[
+ \rho(x,y,z)=(W,\gamma,C),\qquad
+ \mu(A,B,C)=(BC,cAC^2,C),
+\]
+then
+\[
+ \mu\circ G_H=(\Phi_H\times\operatorname{id}_{\A^1_C})\circ\rho.
+\]
+Equivalently, the central structural diagram is
+\[
+ \begin{array}{ccc}
+ \A^3_{x,y,z}&\xrightarrow{\ G_H\ }&\A^3_{A,B,C}\\[3pt]
+ \big\downarrow{\rho}&&\big\downarrow{\mu}\\[3pt]
+ \A^3_{W,\gamma,C}&
+ \xrightarrow{\ \Phi_H\times\operatorname{id}_{\A^1_C}\ }&
+ \A^3_{s,t,C}.
+ \end{array}
+\]
+The determinants of the two vertical maps are
+\[
+ \det D\rho=b_0x^3\gamma^2,
+ \qquad \det D\mu=-cC^3.
+\]
+Consequently $\det DG_H=b_0c$.
+\end{theorem}
+
+\begin{proof}
+Eliminating $\gamma$ from \eqref{eq:tangent-core} gives
+\eqref{eq:core-inverse}; since its leading coefficient in $W$ is a nonzero
+constant, this also proves finiteness and generic degree $n$.  Directly,
+\[
+ D\Phi_H=
+ \begin{pmatrix}
+ H''(W)&c\\
+ c\gamma+WH''(W)&cW
+ \end{pmatrix},
+\]
+whose determinant is $-c^2\gamma$.  Restriction to $\gamma=0$ gives the
+displayed normalization parameterization; its two pole orders at infinity
+are $n-1$ and $n$, so it is birational onto the discriminant.
+The coordinate ring of that discriminant is
+$k[H'(W),WH'(W)-H(W)]\subset k[W]$.  Since
+\[
+ dH'=H''(W)dW,\qquad d(WH'-H)=WH''(W)dW,
+\]
+the transitivity sequence for differentials gives the displayed relative
+differential module and its zeroth Fitting ideal, including multiplicities.
+
+The commutative identity is precisely
+\[
+ BC=H'(W)+c\gamma,\qquad
+ cAC^2=W(H'(W)+c\gamma)-H(W).
+\]
+The first vertical determinant factors through $(x,v,S)$ and equals
+$x^3b_0\gamma^2$; the second is $-cC^3$.  Taking determinants in the square
+and using $C=x\gamma$ gives
+\[
+ (-cC^3)\det DG_H
+ =(-c^2\gamma)(b_0x^3\gamma^2)
+ =-b_0c^2C^3.
+\]
+Cancellation on the dense open $D(C)$ gives $\det DG_H=b_0c$, and the
+polynomial identity extends over all of $\A^3$.
+\end{proof}
+
+The core has a universal-incidence normal form.  The triangular source
+automorphism
+\[
+ \theta_H(W,\gamma)=(W,s)=(W,H'(W)+c\gamma)
+\]
+has determinant $c$, and
+\[
+ \Phi_H=\Psi_H\circ\theta_H,\qquad
+ \Psi_H(W,s)=(s,Ws-H(W)).
+\]
+The graph $t=sW-H(W)$ identifies $\A^2_{W,s}$ with the smooth incidence
+\[
+ \mathcal J_H=V(H(W)-sW+t)
+ \subset\A^2_{s,t}\times\A^1_W,
+\]
+under which $\Psi_H$ is simply the projection
+$\mathcal J_H\to\A^2_{s,t}$.  Furthermore the raw weighted incidence of
+Section~\ref{sec:weighted-incidence} is its base change along
+\[
+ \mu_0:\A^3_{A,B,C}\longrightarrow\A^2_{s,t},\qquad
+ (A,B,C)\longmapsto(BC,cAC^2).
+\]
+Thus normalization and regular reconstruction arise only after this
+ramified base change; the universal incidence itself is already affine,
+smooth, and normal.
+
+Thus the plane core ramifies to first order on $\gamma=0$, while the weighted
+third coordinate supplies exactly the boundary factors which make the
+three-dimensional Jacobian constant.  This is not a direct-product
+suspension: the ramified vertical maps are essential.
+
 \begin{proposition}[constant Jacobian]\label{prop:weighted-jacobian}
 For every $H,b_0$ satisfying \eqref{eq:admissible-H},
 \[
@@ -81,26 +209,11 @@ In particular $G_H$ is etale and quasi-finite.
 \end{proposition}
 
 \begin{proof}
-On the dense open $D(C)=D(x\gamma)$ introduce
-\begin{equation}\label{eq:s-t}
- s=BC=c\gamma+p(W),qquad
- t=cAC^2=cW\gamma+Wp(W)-H(W).
-\end{equation}
-The successive coordinate changes have Jacobian determinants
-\begin{align*}
-\det\frac{\partial(x,v,S)}{\partial(x,y,z)}&=x^3,&
-\det\frac{\partial(W,\gamma,C)}{\partial(x,v,S)}&=b_0\gamma^2,\\
-\det\frac{\partial(s,t,C)}{\partial(W,\gamma,C)}&=-c^2\gamma,&
-\det\frac{\partial(s,t,C)}{\partial(A,B,C)}&=-cC^3.
-\end{align*}
-The chain rule and $C=x\gamma$ give
-\[
- x^3b_0\gamma^2(-c^2\gamma)=(-cC^3)\det DG_H,
-\]
-and cancellation on $D(C)$ yields $\det DG_H=b_0c$.  Both sides are
-polynomials, so the equality extends to all of $\A^3_k$.  An etale morphism
-of finite type is quasi-finite.
+The final assertion of Theorem~\ref{thm:tangent-core} proves the determinant
+identity.  Since $b_0c\ne0$, the Jacobian criterion makes $G_H$ etale, and an
+etale morphism of finite type is quasi-finite.
 \end{proof}
+
 
 The word ``generic'' has not been used in this section: polynomiality and the
 Jacobian identity hold uniformly for every $H$ satisfying the explicit

@@ -286,20 +286,25 @@ is inferred from either quotient.
 
 ## 9. Priority
 
-The degreewise decorated-normalization theorem already proves an
-`(N-3)`-dimensional family of stable classes for every `N>=4` by a generically
-finite invariant map.  The useful unresolved deformation question is sharper:
+The degreewise decorated-normalization theorem proves an `(N-3)`-dimensional
+family of stable classes for every `N>=4`.  The formerly open deformation
+question
 
 \[
- \boxed{\text{Is the decorated-normalization map generically unramified,
- and is its image generically reduced?}}
+ \boxed{\text{Is the decorated-normalization map generically unramified?}}
 \]
+
+is now resolved affirmatively by the Fitting divisor with the marks zero and
+infinity.  If a normalized tangent deformation is trivial modulo scaling of
+the normalization line, then
+`dot H''=alpha H''+beta rH'''`.  Integration and the normalized endpoint
+conditions force first `beta=0` and then `alpha=0`.  The same argument,
+together with exact rerooting, shows that the map is generically etale of
+degree `N-2` onto the normalization of its reduced image.  Node pairing and
+the conductor are unnecessary for this differential statement.
 
 The remaining external-source task is bibliographic: locate the complete
 manuscript and compare its conventions and certificate with this independent
-reconstruction.  The immediate internal mathematical task is to compute the
-differential of the decorated-normalization data with respect to normalized
-seed coefficients.  That calculation can compare the proved cubic
-dual-number point with the positive-dimensional higher-degree loci without
-conflating set-theoretic generic finiteness with deformation-theoretic
-separation.
+reconstruction.  The separate internal problem is cross-stratum generator
+rigidity for the full intrinsic affine cover; that refinement could distinguish
+the finite rerootings but is not needed for generic unramifiedness.

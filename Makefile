@@ -5,7 +5,7 @@ SYSTEM_PYTHON ?= python3
 
 .PHONY: check verify verify-logged verify-minimal verify-core verify-geometry \
 	verify-theorems verify-regressions verify-derived verify-family \
-	verify-external-consequences \
+	verify-external-consequences verify-plane-jc \
 	verify-master \
 	verify-quartic verify-normal-forms verify-formal verify-lean-foundational \
 	verify-foundations verify-foundations-formal \
@@ -19,12 +19,17 @@ check:
 verify-minimal:
 	$(SYSTEM_PYTHON) scripts/verify_counterexample_independent.py
 
+verify-plane-jc:
+	$(SYSTEM_PYTHON) plane-jc/cas/frontier_125_150.py
+	$(PYTHON) plane-jc/cas/boundary_lattice_prefilter.py
+
 verify-core: verify-minimal
 	$(PYTHON) scripts/verify_counterexample.py
 	$(PYTHON) scripts/audit_map_consistency.py
 	$(PYTHON) scripts/verify_normalized_factorization_slice.py
 	$(PYTHON) scripts/verify_quadratic_cubic_factorization_invariants.py
 	$(PYTHON) scripts/verify_weighted_invariant_jacobian_reduction.py
+	$(PYTHON) scripts/verify_weighted_tangent_suspension.py
 	$(PYTHON) scripts/verify_foundational_weighted_coefficient_scheme.py
 	$(PYTHON) scripts/cubic_model.py
 	$(PYTHON) scripts/audit_foundational_invariance_regression.py
@@ -92,6 +97,7 @@ verify-external-consequences:
 	$(SYSTEM_PYTHON) scripts/audit_shared_bcw_33_independent.py
 	$(PYTHON) scripts/verify_rank_compressed_bcw_24_route.py
 	$(SYSTEM_PYTHON) scripts/audit_rank_compressed_bcw_24_independent.py
+	$(PYTHON) scripts/verify_two_parameter_bcw_obstruction.py
 	$(SYSTEM_PYTHON) scripts/verify_fixed_gmc_sic_bridge.py
 	$(PYTHON) scripts/verify_formal_gaussian_lagrange.py
 	$(PYTHON) scripts/verify_weighted_gaussian_bridge.py
@@ -99,6 +105,8 @@ verify-external-consequences:
 	$(SYSTEM_PYTHON) scripts/audit_weighted_gaussian_bridge_independent.py
 
 verify-regressions: verify-external-consequences
+	$(PYTHON) scripts/verify_degree_five_stable_moduli.py
+	$(PYTHON) scripts/verify_degree_five_rank_two_descent.py
 	$(SYSTEM_PYTHON) scripts/audit_quartic_independent.py
 	$(PYTHON) scripts/verify_generic_discriminant_geometry.py
 	$(PYTHON) scripts/verify_canonical_family_image.py
@@ -163,7 +171,7 @@ clean-papers:
 	latexmk -cd -C papers/marked-root-multiplicity/main.tex
 	$(RM) papers/core-counterexample/main.bbl
 
-verify: check verify-core verify-theorems verify-regressions verify-derived
+verify: check verify-plane-jc verify-core verify-theorems verify-regressions verify-derived
 
 verify-logged:
 	mkdir -p artifacts/verification

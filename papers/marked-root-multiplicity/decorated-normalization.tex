@@ -184,6 +184,59 @@ The condition $G(1)=0$ forces $H(a)=0$, leaving at most $N-2$ generic
 choices, and $G'(1)=-1$ determines $c$.  Thus the decorated-normalization
 moduli map is generically finite and its image has dimension $N-3$.
 
+\begin{proposition}[generic unramifiedness and rerooting degree]
+\label{prop:decorated-unramified}
+For every $N\ge4$, the decorated-normalization moduli map is generically
+unramified.  After restriction to a nonempty open it is etale of degree
+$N-2$ onto the normalization of its image, and its geometric fibers are
+exactly the rerootings at the nonzero simple roots of the seed.
+\end{proposition}
+
+\begin{proof}
+On the squarefree boundary-clean open, retain only the Fitting divisor on
+$(\P^1;0,\infty)$.  A normalized first-order seed deformation
+$H+\varepsilon\dot H$ which is trivial in the quotient of these divisors
+by normalization-line scaling satisfies
+\[
+ \dot H''(r)=\alpha H''(r)+\beta rH'''(r).             \tag{6.7}
+\]
+The first term is the scalar ambiguity in a defining section and the second
+is the infinitesimal action of $r\mapsto(1+\varepsilon\beta)r$; these are all
+infinitesimal automorphisms because zero and infinity are marked.  Twice
+integrating and using
+$\dot H(0)=\dot H'(0)=0$ gives
+\[
+ \dot H=\alpha H+\beta(rH'-2H).
+\]
+The tangent endpoint equations now give
+\[
+ 0=\dot H(1)=-\beta,
+ \qquad 0=\dot H'(1)=-\alpha,
+\]
+so $\dot H=0$.  The Fitting-divisor quotient, and therefore the full
+decorated map, is generically unramified.  On the locus with trivial divisor
+stabilizer, the seed space and the Fitting-divisor quotient are smooth of
+dimension $N-3$, hence the latter map is etale after shrinking.
+
+For the degree statement, if $a$ is a nonzero simple root of $H$, put
+\[
+ \kappa_a=-\frac1{aH'(a)},\qquad G_a(w)=\kappa_aH(aw).
+\]
+Then $G_a$ is normalized and
+\[
+ E_{G_a}(w;s,t)=\kappa_a E_H\left(aw;
+        \frac{s}{\kappa_a a},\frac{t}{\kappa_a}\right). \tag{6.8}
+\]
+Thus all parts of the decoration, including the node pairing and conductor,
+are transported.  Generically $H=w^2P$ with $P$ squarefree of degree $N-2$,
+and these $N-2$ rerootings are distinct.  Conversely, the integration
+argument preceding the proposition shows that every point of a decorated
+fiber has this form.  The generic degree is therefore exactly $N-2$, and the
+normalization of the decorated image is generically birational to the
+Fitting-divisor quotient.  After one final shrinking they are isomorphic,
+which proves the asserted etaleness onto the normalized image.
+\end{proof}
+
 \begin{corollary}[degreewise weighted stable moduli]
 \label{cor:weighted-stable-moduli}
 For every $N\ge4$, weighted degree-$N$ maps contain an

@@ -13,10 +13,11 @@ This note combines three results already proved in the repository:
 
 The combination gives an `(N-3)`-dimensional stable-moduli theorem for exact
 symplectic etale endomorphisms of affine six-space in every generic degree
-`N>=4`.  The degree-five family remains a particularly explicit
-one-parameter slice.  It also produces parameterized injective non-surjective
-Weyl-algebra endomorphisms, while making no claim that the latter are pairwise
-inequivalent under arbitrary Weyl automorphisms.
+`N>=4`.  A separate relative-flux calculation now descends the explicit
+degree-five parameter line to affine four-space.  The cotangent construction
+also produces parameterized injective non-surjective Weyl-algebra
+endomorphisms, while making no claim that the latter are pairwise inequivalent
+under arbitrary Weyl automorphisms.
 
 ## 1. The degree-five family
 
@@ -66,6 +67,38 @@ left--right equivalence implies
 \]
 
 Thus every stable class meets the parameter line in at most six points.
+
+## 1A. Rank-two descent of the explicit line
+
+The third output of this family is fixed:
+
+\[
+ C_\lambda=x\left(1-\frac87xy+x^2z\right).
+\]
+
+After one fixed diagonal source change, `2C_lambda` becomes the common
+coordinate `R=2X-3X^2Q`.  The
+[rank-two descent theorem](DEGREE_FIVE_RANK_TWO_DESCENT.md) computes the full
+relative Hamiltonian residue and proves that the unique pole-free quadratic
+shear is
+
+\[
+ Z\longmapsto Z+\kappa_\lambda Q^2,qquad
+ \kappa_\lambda=-{27(57\lambda^2-138\lambda+73)
+ \over196(\lambda-1)^2}.
+\]
+
+It constructs polynomial coordinates `(R,T_lambda,D_lambda,S_lambda)` with
+all six canonical brackets and an exact factorization
+
+\[
+ G_\lambda\sim_{\rm LR}F_\lambda\times\operatorname{id}_{\mathbb A^1}.
+\]
+
+Consequently there are uncountably many pairwise stably inequivalent exact
+symplectic maps of `A^4` of generic degree five.  This is stronger in
+dimension than the cotangent result below, but currently applies only to the
+explicit degree-five parameter line.
 
 ## 2. Exact cotangent lifts
 

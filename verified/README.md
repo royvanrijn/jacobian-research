@@ -6,12 +6,19 @@ This directory contains the stable proof chain:
 - [Normalized factorization model](NORMALIZED_FACTORIZATION_MODEL.md): three compact
   propositions giving the polynomial `A^3` source, coefficient--resultant
   étaleness, and exact relation to the foundational polynomial;
+- [Foundational incidence construction](FOUNDATIONAL_INCIDENCE_CONSTRUCTION.md):
+  three coordinate-free lemmas separating universal étaleness, projective
+  normalization and generic degree, and the exceptional `(2,1)` affine slice;
 - [Factorization bridge](NORMALIZED_FACTORIZATION_SLICE.md): projective normalization
   and the unequal-degree extension;
 - [Cubic marked-root model](MARKED_ROOT_MODEL.md): the cubic marked-root isomorphism;
 - [Cubic image and nonproperness theorem](IMAGE_AND_NONPROPERNESS.md): exact image, fibers, and nonproperness;
 - [Weighted marked-root theorem](WEIGHTED_SEED_THEOREM.md): weighted construction and symmetric
   monodromy.
+- [Tangent-map core](TANGENT_MAP_CORE.md): the central weighted-suspension
+  diagram unifying the determinant, inverse pencil, discriminant normalization,
+  reconstruction poles, and Hessian Fitting divisor, together with the
+  distinct controlled-boundary core of the cancellation maps.
 
 The external Lean certificate for the foundational map remains in
 [LEAN_FOUNDATIONAL_MAP.md](LEAN_FOUNDATIONAL_MAP.md).
@@ -23,4 +30,4 @@ Start with [FOUNDATIONAL_GEOMETRY.md](FOUNDATIONAL_GEOMETRY.md). The paper
 version is being assembled under
 [papers/core-counterexample](../papers/core-counterexample/main.tex).
 
-These six documents are the primary core references.
+These eight documents are the primary core references.

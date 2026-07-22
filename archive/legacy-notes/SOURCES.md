@@ -8,6 +8,49 @@ See [PROVENANCE_AUDIT.md](PROVENANCE_AUDIT.md) for the dated announcement
 trail, the timestamp discrepancy between same-day sources, and the discovery
 materials that have not yet been located.
 
+## Plane degree-frontier sources
+
+- [T. T. Moh, *On the Jacobian conjecture and the configurations of
+  roots*](https://doi.org/10.1515/crll.1983.340.140), J. Reine Angew. Math.
+  340 (1983), 140--212: the historical \(\max(\deg P,\deg Q)>100\)
+  result.  The publisher exposes the article's opening scan but restricts the
+  remaining text; later section-level claims were cross-checked through the
+  exact citations and caveats in the 2014, 2017, and 2022 GGV/GGHV sources.
+- [Raymond C. Heitmann, *On the Jacobian
+  conjecture*](https://www.sciencedirect.com/science/article/pii/002240499090042T),
+  J. Pure Appl. Algebra 64 (1990), 35--72, MR 1055020: primary source for
+  \(\gcd(\deg P,\deg Q)\ge16\), monomial-valuation restrictions, and the
+  same four computational cases.  Heitmann explicitly says his paper does not
+  reprove Moh's reduction-of-degree step.
+
+- [Zenodo record 21479814](https://doi.org/10.5281/zenodo.21479814), Billel
+  Helali, *Exact Computer-Assisted Exclusion of the (72,108) Frontier in the
+  Two-Dimensional Jacobian Problem*, version 1.0.1, 21 July 2026: manuscript,
+  exact coefficient ideals, explicit membership/unit certificates, and replay
+  code.  Exact archive/PDF hashes and the version comparison are in the
+  [plane-JC provenance record](../../plane-jc/PROVENANCE.md).
+- [Jorge Alberto Guccione, Juan José Guccione, Rodrigo Horruitiner, and
+  Christian Valqui, *Increasing the degree of a possible counterexample to the
+  Jacobian Conjecture from 100 to 108*](https://arxiv.org/abs/2204.14178):
+  Theorem 2.1 gives the below-125 list and Proposition 4.3 gives the two
+  remaining \((8,28)\) Laurent polygons.
+- [The same four authors, *Some algorithms related to the Jacobian
+  Conjecture*](https://arxiv.org/abs/1708.07936): admissible-complete-chain
+  algorithm, \((m,n)\)-families, and the 34 oriented cases through maximum
+  degree 150.
+- [Jorge Alberto Guccione, Juan José Guccione, and Christian Valqui, *On the
+  shape of possible counterexamples to the Jacobian Conjecture*](https://arxiv.org/abs/1401.1784):
+  minimal-pair and standard-\((m,n)\)-pair reduction.
+- [The same three authors, *The two-dimensional Jacobian conjecture and the
+  lower side of the Newton polygon*](https://arxiv.org/abs/1605.09430) and
+  [*A system of polynomial equations related to the Jacobian Conjecture*](https://arxiv.org/abs/1406.0886):
+  lower-corner restrictions and coefficient-system methods used by the 2022
+  reduction.
+- [Jorge Alberto Guccione, Juan José Guccione, Rodrigo Horruitiner, and
+  Christian Valqui, *The Jacobian Conjecture: Approximate roots and
+  intersection numbers*](https://arxiv.org/abs/1708.09367): intersection
+  inequality used for the degree-84 exclusion.
+
 - [The Jacobian counterexample, explained](https://jacobianfun.org/jacobian-explained):
   exact map, checks, weighted coordinates, inverse cubic, and proposed seed
   family.

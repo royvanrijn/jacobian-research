@@ -91,3 +91,30 @@ derivatives while retaining one triangular reconstruction variable.  A
 genuinely broader classification must change that skeleton—for example by
 adding another source function, source variable, or independent inverse
 variable—and then rebuild the cancellation and boundary analyses.
+
+## 6. Classify controlled-boundary suspensions
+
+The weighted and cancellation constructions now have explicit but distinct
+plane cores:
+
+\[
+ (W,s)\longmapsto(s,Ws-H(W)),
+ \qquad J=H'(W)-s,
+\]
+
+and, in a family over `P`,
+
+\[
+ (s,Q)\longmapsto
+ \left(Q,C\int_0^s\{1-t(Q-Pt)^m\}^r\,dt\right),
+ \qquad J=-C D^r.
+\]
+
+Classify plane maps whose Jacobian is a controlled boundary power and
+determine which admit a polynomial or birational suspension to a
+constant-Jacobian map in one higher dimension.  The first concrete questions
+are whether every one-boundary suspension is equivalent to one of these two
+normal forms, and which divisor, monodromy, and reconstruction data obstruct
+such an equivalence.  The precise comparison theorem and determinant ledgers
+are in the
+[tangent-map core note](../verified/TANGENT_MAP_CORE.md).

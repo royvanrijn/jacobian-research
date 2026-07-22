@@ -124,6 +124,13 @@ this is exactly
  \end{pmatrix}.
 \]
 
+When `C` is nonconstant affine linear, this three-row determinant admits a
+further rearrangement.  After an oriented affine change on the invariant
+plane and the substitutions `P=C^2A`, `Q=CB`, it becomes the Poisson-square
+equation `[P/2,Q]=C^2` at the foundational determinant.  The proof,
+orientation factor, explicit pair, and coefficient cascade are in the
+[weighted tangent-suspension note](WEIGHTED_TANGENT_SUSPENSION.md).
+
 ## What the reduction does and does not prove
 
 Equation (4) is useful for coefficient schemes because all coefficient
@@ -141,4 +148,3 @@ three supports, linear normalization, and coefficient labels.
 
 The exact checker is
 [`verify_weighted_invariant_jacobian_reduction.py`](../scripts/verify_weighted_invariant_jacobian_reduction.py).
-

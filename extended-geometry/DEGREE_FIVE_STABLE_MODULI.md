@@ -105,6 +105,18 @@ by
 The displayed quotients are polynomials in `x,y,z`; their coefficients are
 regular functions of `lambda` on `Lambda`.
 
+The family varies only through `A_lambda` and `B_lambda`.  Its weighted
+coordinate and third output are fixed:
+
+\[
+ \gamma=1-\frac87xy+x^2z,qquad C_\lambda=x\gamma.
+\]
+
+Equivalently, the weighted parameter is constantly `a_0=-8/7`.  This fixed
+component is the input that permits the common rank-two adapted-coordinate
+system constructed in the
+[degree-five symplectic descent](DEGREE_FIVE_RANK_TWO_DESCENT.md).
+
 ## 2. Main theorem
 
 ### Theorem 2.1 — degree-five stable moduli

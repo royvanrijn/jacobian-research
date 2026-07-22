@@ -200,7 +200,88 @@ Equivalently, (1) is a smooth codimension-two complete intersection in
 affine seven-space, and the Poincaré-residue form trivializes its canonical
 bundle.
 
-## 6. Consequence
+## 6. Test of the `A^2 x SL_2` guess
+
+The two positive formulations in the product question are not independent if
+``SL_2-bundle'' means a principal torsor.  An `SL_2`-torsor on `A^2` is the
+oriented-frame torsor of a rank-two vector bundle with a determinant
+trivialization.  Quillen--Suslin makes the vector bundle free, and the
+determinant trivialization can then be adjusted by a constant change of
+basis.  Thus
+
+\[
+ H^1_{\mathrm{fppf}}(\mathbb A^2,\mathrm{SL}_2)=1.       \tag{15}
+\]
+
+Consequently every Zariski, etale, or fppf locally trivial principal
+`SL_2`-bundle over `A^2` is the product.  This does not cover a fiber bundle
+whose structure group is the larger group `Aut(SL_2)`.
+
+There is a particularly natural determinant-one morphism in the opposite
+direction.  On the affine model (1), the equation `m=1` says
+
+\[
+ \det\begin{pmatrix}a_0&a_1\\-b_0&b_1\end{pmatrix}=1.
+\]
+
+It therefore defines
+
+\[
+ p:X_{2,3}\longrightarrow\mathrm{SL}_2.                \tag{16}
+\]
+
+This morphism is **not** an `A^2`-bundle.  Indeed, over the identity matrix we
+have `a_0=b_1=1` and `a_1=b_0=0`.  The resultant equation becomes
+
+\[
+ b_3^2-2a_2b_3+a_2b_2^2+a_2^2=1.
+\]
+
+With `x=b_3-a_2`, `y=b_2`, and `z=a_2`, the fiber is the smooth affine
+surface
+
+\[
+ S=\{x^2+zy^2=1\}\subset\mathbb A^3.                  \tag{17}
+\]
+
+Its `y!=0` part is `A^1 x G_m`, while its `y=0` part is the disjoint union of
+two affine lines.  Hence
+
+\[
+ [S]=L(L-1)+2L=L^2+L\ne L^2.                          \tag{18}
+\]
+
+Thus even the determinant-one coordinates which visibly account for the
+`SL_2`-shaped equation do not split off an `SL_2` factor.  This also explains
+why Euclidean division does not immediately produce the desired product.
+On `a_0!=0` one can write
+
+\[
+ B=(q_1T+q_0S)A+S^2(r_1T+r_0S),
+\]
+
+and the resultant is controlled by the norm of the linear remainder.  The
+chart does not extend regularly across `a_0=0`.  More intrinsically, replacing
+`B` by `B+(\ell_0T+\ell_1S)A` changes `m` by
+
+\[
+ a_0(2a_1\ell_0+a_0\ell_1).
+\]
+
+The space of such additions preserving `m` has rank one when `a_0!=0` and
+rank two when `a_0=0`.  The obvious additive quotient therefore jumps rank
+on a nonempty divisor and cannot supply a locally trivial `A^2` factor.
+
+Equations (17)--(18) and this rank jump are exact obstructions to the two
+natural splitting constructions.  They are not an abstract non-isomorphism
+theorem: an isomorphism `X_(2,3) = A^2 x SL_2` could mix all seven coefficient
+functions and need not respect (16).  In particular the computations do not
+yet separate `H^2` and `H^3`.  A decisive next invariant is either the
+fundamental group of the two-coloured divisor complement, or an intrinsic
+additive-group invariant strong enough to rule out the two translation
+directions of `A^2 x SL_2`; neither is computed here.
+
+## 7. Consequence
 
 The natural `(2,3)` multiplication map is an etale, generically degree-ten
 map
@@ -212,9 +293,16 @@ map
 but its source is not `A^5`.  It therefore does **not** produce a new `JC(5)`
 counterexample.  It is still a genuinely new nonproper etale cover model and
 its `SL_2`-shaped virtual motive suggests two next questions: compute the full
-boundary-resolution cohomology, and test whether a different binary-quintic
-hyperplane can remove the motivic obstruction.
+boundary-resolution cohomology, and decide whether the failure of the natural
+splittings in Section 6 can be upgraded to an abstract product obstruction.
 
 The exact class calculation and direct finite-field enumeration are checked
 by
 [`verify_quadratic_cubic_factorization_invariants.py`](../scripts/verify_quadratic_cubic_factorization_invariants.py).
+The determinant fiber and rank-jump calculations in Section 6 are checked by
+[`verify_quadratic_cubic_product_test.py`](../scripts/verify_quadratic_cubic_product_test.py).
+
+The determinant-one calculation, normalization uniqueness, Picard
+vanishing, and canonical-class identity are consolidated for arbitrary
+factor degrees in the
+[relative-scaling/boundary-lattice theorem](RELATIVE_SCALING_BOUNDARY_LATTICE.md).

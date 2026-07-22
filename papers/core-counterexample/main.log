@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.6.20)  22 JUL 2026 10:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.6.20)  22 JUL 2026 16:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -550,19 +550,19 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 
 {/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2])
 (./sections/00b-factorization-bridge.tex [3] [4] [5])
-(./sections/01-explicit-counterexample.tex)
-(./sections/02-exact-verification.tex [6] [7] [8])
+(./sections/01-explicit-counterexample.tex [6])
+(./sections/02-exact-verification.tex [7] [8])
 (./sections/03-marked-root-geometry.tex [9])
-(./sections/04-image-and-fibers.tex [10] [11])
-(./sections/05-weighted-generalisation.tex [12] [13])
-(./sections/06-monodromy.tex [14]) (./sections/07-examples.tex [15])
-(./sections/08-further-directions.tex [16]
+(./sections/04-image-and-fibers.tex [10] [11] [12])
+(./sections/05-weighted-generalisation.tex [13] [14] [15])
+(./sections/06-monodromy.tex [16]) (./sections/07-examples.tex [17])
+(./sections/08-further-directions.tex [18]
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 )
-(./sections/appendix-dependencies.tex [17]) (./main.bbl
+(./sections/appendix-dependencies.tex [19]) (./main.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 16--20
 []\OT1/cmr/m/n/10.95 (+20) Dean Cure-ton.  A lean 4 for-mal-iza-tion of the ja-
 co-bian coun-terex-am-
@@ -574,18 +574,18 @@ Underfull \hbox (badness 8000) in paragraph at lines 16--20
 / deancureton / jacobian$[]\OT1/cmr/m/n/10.95 (+20) , 2026.  Pinned com-mit
  []
 
-[18]) [19] (./main.aux)
+[20]) [21] (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 3A69244BC58A7D6F64C9F69B7C16D11A;4330.
+(rerunfilecheck)             Checksum: 962E26E500BA3E6A01017D76C3E35DE0;4623.
  ) 
 Here is how much of TeX's memory you used:
- 13284 strings out of 478268
- 211298 string characters out of 5846347
- 550934 words of memory out of 5000000
- 31009 multiletter control sequences out of 15000+600000
+ 13292 strings out of 478268
+ 211410 string characters out of 5846347
+ 551083 words of memory out of 5000000
+ 31012 multiletter control sequences out of 15000+600000
  486007 words of font info for 155 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 63i,13n,71p,1001b,459s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 63i,16n,71p,1001b,459s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
@@ -606,11 +606,12 @@ ive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2022/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2022/t
 exmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/20
-22/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on main.pdf (19 pages, 342873 bytes).
+22/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb></usr/local/texlive
+/2022/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb>
+Output written on main.pdf (21 pages, 355997 bytes).
 PDF statistics:
- 539 PDF objects out of 1000 (max. 8388607)
- 471 compressed objects within 5 object streams
- 110 named destinations out of 1000 (max. 500000)
- 33457 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 567 PDF objects out of 1000 (max. 8388607)
+ 495 compressed objects within 5 object streams
+ 115 named destinations out of 1000 (max. 500000)
+ 33465 words of extra memory for PDF output out of 35830 (max. 10000000)
 

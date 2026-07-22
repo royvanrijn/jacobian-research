@@ -60,6 +60,61 @@ Therefore
 
 Neither `h` nor its derivatives occur in (4).
 
+### Controlled-boundary plane core
+
+The determinant proof has a plane core analogous to, but different from, the
+weighted tangent-map core.  Put
+
+\[
+ D(s,P,Q)=1-s(Q-Ps)^m,
+ \qquad
+ R(s,P,Q)=C\int_0^s D(t,P,Q)^r\,dt.
+\]
+
+For each fixed `P`, define
+
+\[
+ \chi_{m,r;P}:\mathbb A^2_{s,Q}\longrightarrow\mathbb A^2_{Q,R},
+ \qquad
+ (s,Q)\longmapsto(Q,R(s,P,Q)).
+\]
+
+This is a polynomial plane map and
+
+\[
+ \boxed{\det D\chi_{m,r;P}=-C D(s,P,Q)^r.}               \tag{4a}
+\]
+
+Indeed `R_s=CD^r`, while the first target coordinate is `Q`.  Equivalently,
+the three-dimensional family over `P` has
+
+\[
+ \det\frac{\partial(P,Q,R)}{\partial(s,P,Q)}=CD^r.
+\]
+
+On the original source, `D=A^{-1}` and the birational chart has
+
+\[
+ \det\frac{\partial(s,P,Q)}{\partial(x,y,z)}
+ =-A^r=-D^{-r}.
+\]
+
+The two determinants multiply to `-C`, proving (4).  Hence the cancellation
+map is a birational suspension of a plane map whose Jacobian vanishes to
+order `r` on `D=0`.  The finite cancellation operator below has a precise
+role in this interpretation: it makes `R`, which is automatically polynomial
+in `(s,P,Q)`, polynomial after returning through the rational source chart to
+`(x,y,z)`.
+
+This should not be conflated with the weighted suspension.  There the
+vertical maps are polynomial and the plane core has simple ramification; here
+the compensating source chart is birational and cancels the arbitrary power
+`D^r`.
+
+The polynomial weighted analogue and the comparison of the two suspension
+types are recorded in the
+[tangent-map core theorem](../verified/TANGENT_MAP_CORE.md).
+
 ## 2. Finite cancellation operator
 
 Every positive `z`-degree term in (2) is automatically polynomial.  The only

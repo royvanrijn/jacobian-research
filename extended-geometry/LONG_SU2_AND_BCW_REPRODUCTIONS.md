@@ -594,6 +594,38 @@ independently recomputes the rational rank, replays (3.8) with sparse
 polynomials, reconstructs the map, and checks the collision using only the
 standard library.
 
+### 3.4 What remains after 48
+
+The bound 48 is still an upper bound, not a minimality theorem.  The executable
+[`search_rank_aware_bcw.py`](../scripts/search_rank_aware_bcw.py) reconstructs
+the monomial-factor beam search, deduplicates exact polynomial states, and
+scores the actual rational objective `s+rank(C)` after every candidate.  Both
+the legacy degree-first and genuinely rank-first orderings, at width 128,
+finish with `s+rank(C)=20`; neither finds a 23-variable map.  Across the 232
+completed traces retained by the degree-first run, no trace passes eight exact
+necessary samples of `det(I+sJQ+tJC)=1`.  These are finite search results, not
+lower-bound proofs.
+
+The present 16-variable map itself definitely cannot avoid doubling.  At
+`X=(1,...,1)` its known scaling family still has
+
+\[
+ \det(I+JQ+JC)=\det(I+2JQ+4JC)=1,
+\]
+
+but the independent specializations give
+
+\[
+ \det(I+JC)=-4160,\qquad \det(I+JQ)=-78.            \tag{3.11}
+\]
+
+Thus the desired two-parameter identity fails before homogenization.  The
+exact checker
+[`verify_two_parameter_bcw_obstruction.py`](../scripts/verify_two_parameter_bcw_obstruction.py)
+records this obstruction.  Further improvement now requires a broader
+equivalence class—most plausibly polynomial-factor reuse and multi-term
+cancellation—or a larger search that escapes the width-128 monomial beam.
+
 ## Reproduction
 
 Run
@@ -607,6 +639,7 @@ python3 scripts/audit_long_bcw_79_independent.py
 python3 scripts/audit_shared_bcw_33_independent.py
 .venv/bin/python scripts/verify_rank_compressed_bcw_24_route.py
 python3 scripts/audit_rank_compressed_bcw_24_independent.py
+.venv/bin/python scripts/verify_two_parameter_bcw_obstruction.py
 python3 scripts/verify_fixed_gmc_sic_bridge.py
 ```
 
@@ -614,8 +647,9 @@ The first two scripts jointly certify the complete `SU(2)` proof.  The next
 two construct and independently replay Long's conservative 79-variable
 route.  The next pair record and replay the repository's shared-factor
 baseline, and the following pair construct and independently replay its
-rank-compressed 24-variable homogenization.  The last script checks the
-coefficient skeleton of the fixed-dimensional implication.  None of these
+rank-compressed 24-variable homogenization.  The next script checks the
+two-parameter shortcut obstruction; the final script checks the coefficient
+skeleton of the fixed-dimensional implication.  None of these
 replaces the repository's separate 95-variable cubic-homogeneous artifact.
 
 The external theorem inputs and construction sources are:

@@ -14,6 +14,13 @@ The repository is both a proof project and a research diary that has now been
 cleaned into a small active theorem chain.  Mathematical completion and
 external review are deliberately kept separate in [STATUS.md](STATUS.md).
 
+The plane problem is tracked separately in the [JC(2) constraint
+program](plane-jc/README.md).  Its current scoped result is an external
+Newton-polygon reduction with a local exact reproduction showing that any
+hypothetical plane counterexample has larger coordinate degree at least 125,
+subject to the published minimal/standard normal form.  This neither proves
+JC(2) nor follows from the three-dimensional construction.
+
 ## Where the example came from
 
 The earliest public item located by the repository’s provenance audit is
@@ -170,8 +177,21 @@ Thus the algebraic route is
 \Rightarrow\text{announced polynomial}.}
 \]
 
+Here “exceptional” means tangent but nonosculating contact type `(2,1)` with
+the twisted cubic.  The three mechanisms are distinct:
+
+\[
+\begin{array}{rcl}
+\text{étaleness}&:&\text{universal coefficient--resultant geometry},\\
+\text{noninjectivity}&:&\text{three choices of a linear factor},\\
+X\simeq\mathbb A^3&:&\text{the special }(2,1)\text{ hyperplane orbit}.
+\end{array}
+\]
+
 The complete proof and exact symbolic certificate are in the
 [three-proposition factorization model](verified/NORMALIZED_FACTORIZATION_MODEL.md).
+The hyperplane-independent argument is isolated as three lemmas in the
+[foundational incidence construction](verified/FOUNDATIONAL_INCIDENCE_CONSTRUCTION.md).
 
 Coordinates turn that construction into the binary cubic
 
@@ -227,7 +247,11 @@ has a unique normalization for consecutive degrees.  The first new case,
 quadratic times cubic, is nevertheless not a new `JC(5)` example: its natural
 normalized source is a smooth factorial fivefold with trivial Picard and
 canonical classes, but its class is `L^5-L^3` rather than `L^5` (equivalently,
-its finite-field count is `q^5-q^3`).  The
+its finite-field count is `q^5-q^3`).  The visible determinant-one projection
+does not split it: its identity fiber is `x^2+zy^2=1`, of class `L^2+L`, and
+the associated Euclidean-addition distribution jumps rank along `a_0=0`.
+This rules out the natural product charts, but not an abstract isomorphism
+which mixes all coefficient functions.  The
 [`(2,3)` slice audit](extended-geometry/QUADRATIC_CUBIC_FACTORIZATION_SLICE.md)
 records the calculation and the precise remaining cohomology question.
 
@@ -272,6 +296,52 @@ C\int_0^T\{1-t(Q-Pt)^m\}^r\,dt-R
 \]
 
 and produces a distinguished boundary ramification index `r+1`.
+
+Every weighted seed has a two-dimensional tangent-map core
+
+\[
+(W,\gamma)\longmapsto
+\bigl(H'(W)+c\gamma,\,W(H'(W)+c\gamma)-H(W)\bigr),
+\qquad J=-c^2\gamma.
+\]
+
+On `gamma=0` this is exactly the discriminant normalization, its inverse
+equation is `H(W)-sW+t=0`, and its relative Fitting divisor is `(H'')`.  The
+three-dimensional Keller map is a weighted suspension of this ramified plane
+map: `C=x gamma` supplies the complementary boundary factors and leaves the
+constant Jacobian `b_0c`.  The determinant, inverse pencil, reconstruction
+poles, discriminant normalization, and Hessian divisor are unified in the
+[tangent-map core theorem](verified/TANGENT_MAP_CORE.md).
+
+After the triangular change `s=H'(W)+c gamma`, the core is simply
+
+\[
+(W,s)\longmapsto(s,Ws-H(W)),
+\]
+
+the projection of the smooth universal incidence `H(W)-sW+t=0`.  The raw
+weighted incidence is its ramified base change by
+`(A,B,C) -> (BC,cAC^2)`.
+
+The cancellation maps realize a second suspension mechanism.  For fixed `P`,
+
+\[
+(s,Q)\longmapsto
+\left(Q,C\int_0^s\{1-t(Q-Pt)^m\}^r\,dt\right)
+\]
+
+has Jacobian `-C D^r`, where `D=1-s(Q-Ps)^m`; the birational source chart has
+Jacobian `-D^{-r}` and cancels this boundary power.  Thus weighted maps use a
+polynomial suspension of simple ramification, while cancellation maps use a
+birational suspension of higher boundary ramification.
+
+For the foundational weights this suspension also has an exact
+Poisson-square normal form.  In oriented invariant-plane coordinates,
+`P=C^2A` and `Q=CB` satisfy `[P/2,Q]=C^2`; the normalized sixteen-monomial
+coefficient scheme becomes three univariate weighted-Wronskian layers.  This
+is the same band-bracket equation used in the plane `(72,108)` cascade, with
+different supports and a different forced layer.  See the
+[weighted tangent-suspension bridge](extended-geometry/WEIGHTED_TANGENT_SUSPENSION.md).
 
 The normalized admissible degree-`N` weighted seed space has dimension
 `N-3`.  For every `N>=4`, its ordinary boundary-clean locus is nonempty: the
@@ -406,6 +476,22 @@ unidentified external abstract remains under provenance audit: the repository
 does not claim that its independently derived formulas are the manuscript's
 formulas or that the abstract reviews this work.  See the
 [rank-two construction and audit](extended-geometry/QUADRATIC_LADDER_AND_POISSON_AUDIT.md).
+
+The same flux method now applies uniformly to the explicit degree-five
+stable-moduli line.  Its fixed third component uses
+`gamma=1-(8/7)xy+x^2z`; after a common adapted-coordinate change, cancellation
+of the complete negative-`X` principal part uniquely forces a rational
+parameter-dependent shear.  The resulting maps
+
+\[
+G_\lambda:\mathbb A^4\longrightarrow\mathbb A^4
+\]
+
+are exact symplectic, polynomially left--right equivalent to
+`F_lambda x id_(A^1)`, and contain uncountably many stable classes of generic
+degree five.  This descends the explicit moduli line from three canonical
+pairs to two.  See the
+[degree-five rank-two descent](extended-geometry/DEGREE_FIVE_RANK_TWO_DESCENT.md).
 
 ## What is genuinely new here?
 

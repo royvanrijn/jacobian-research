@@ -61,6 +61,7 @@ This proof is intentionally confined to the foundational map.  The
 nonduplicated continuation of the core chain is:
 
 - [Compact normalized factorization model](NORMALIZED_FACTORIZATION_MODEL.md);
+- [Foundational incidence construction](FOUNDATIONAL_INCIDENCE_CONSTRUCTION.md);
 - [Normalized factorization bridge and unequal-degree extension](NORMALIZED_FACTORIZATION_SLICE.md);
 - [Cubic marked-root model](MARKED_ROOT_MODEL.md);
 - [Exact image and nonproperness](IMAGE_AND_NONPROPERNESS.md);

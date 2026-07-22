@@ -202,8 +202,38 @@ for boundary_A, boundary_B, boundary_C in boundary_families:
     )
     assert sp.expand(boundary_matrix.det()) == -2
 
+# Diagonal gauge normalizes the two one-sided nonconstant-C boundary charts
+# to (C10,C01)=(0,-1) and (-3,0).  Both specialized Keller ideals are units.
+for one_sided_C in (2 - v, 2 - 3 * u):
+    one_sided_matrix = sp.Matrix(
+        [
+            (-2 * A, sp.diff(A, u), sp.diff(A, v)),
+            (-B, sp.diff(B, u), sp.diff(B, v)),
+            (
+                one_sided_C,
+                sp.diff(one_sided_C, u),
+                sp.diff(one_sided_C, v),
+            ),
+        ]
+    )
+    one_sided_equations = [
+        coefficient
+        for _monomial, coefficient in sp.Poly(
+            sp.expand(one_sided_matrix.det() + 2), u, v
+        ).terms()
+    ]
+    one_sided_ideal = sp.groebner(
+        one_sided_equations,
+        *coefficient_variables,
+        order="grevlex",
+        domain=sp.QQ,
+    )
+    assert len(one_sided_ideal.polys) == 1
+    assert one_sided_ideal.polys[0].as_expr() == 1
+
 print("PASS: weights, degree bounds, and z-linearity give exactly 16 monomials")
 print("PASS: normalized Keller scheme is Q[epsilon]/(epsilon^2)")
 print("PASS: explicit H is first-order Keller and has a nonzero quadratic obstruction")
 print("PASS: H is not tangent to the affine left-right orbit")
 print("PASS: two reduced triangular automorphism families lie on p=q=0")
+print("PASS: both one-sided nonconstant-C boundary charts have unit ideal")

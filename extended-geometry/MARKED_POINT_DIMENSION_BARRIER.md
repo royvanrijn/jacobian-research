@@ -223,8 +223,8 @@ exist while its quadratic analogue cannot.
 
 ## Classification inside the full marked-point family
 
-The independent cubic contact calculation in
-[the factorization-slice note](../archive/transfer-program/cubic-factorization-obstruction.md)
+The complete active cubic contact proof in the
+[foundational incidence construction](../verified/FOUNDATIONAL_INCIDENCE_CONSTRUCTION.md)
 classifies the three hyperplane contact types for `n=3`.  Only contact type
 `(2,1)`, tangent but nonosculating to the twisted cubic, gives `A^3`; the
 other two types have different motivic classes and finite-field point counts.
@@ -252,6 +252,11 @@ equations `h'(LQ)=1` and `Res(L,Q)=1` are restored.  This gives an explicit
 linear isomorphism `X_h -> X_(h')`.  Thus every tangent-nonosculating
 hyperplane gives the same `A^3` source as the representative in the
 [normalized factorization model](../verified/NORMALIZED_FACTORIZATION_MODEL.md).
+
+The determinant calculation here is the `(p,q)=(1,n-1)` specialization of
+the [relative-scaling/boundary-lattice theorem](RELATIVE_SCALING_BOUNDARY_LATTICE.md),
+which also identifies the normalization torsor and proves the corresponding
+multi-factor unit obstruction.
 
 The exact cubic fiber stratification gives the stronger motivic table
 
@@ -304,6 +309,25 @@ excludes that exact mechanism in dimension two.  It does not describe what
 all counterexamples must look like and does not exclude arbitrary JC(2)
 counterexamples.
 
+## Comparison with the plane degree frontier
+
+The independently audited [Newton-polygon degree frontier](../plane-jc/DEGREE_FRONTIER_125.md)
+has complementary scope:
+
+| This obstruction | Newton degree-frontier work |
+| --- | --- |
+| Excludes one complete marked-point construction | Restricts arbitrary hypothetical plane counterexamples after minimal/standard normalization |
+| Uses units, Picard groups, and boundary divisor classes | Uses Newton polygons, corners, valuations, and approximate roots |
+| Degree-independent | Gives a numerical lower bound for the larger coordinate degree |
+| Conceptual geometric obstruction | Detailed infinity classification and exact coefficient elimination |
+
+Consequently, any hypothetical JC(2) counterexample must avoid the
+marked-point/hyperplane-complement mechanism and must lie beyond the current
+degree frontier.  The two statements do not together prove JC(2).  The
+qualified Newton-to-boundary dictionary and the presently unsuccessful search
+for a general boundary-valuation replacement are recorded in
+[NEWTON_BOUNDARY_DICTIONARY.md](../plane-jc/NEWTON_BOUNDARY_DICTIONARY.md).
+
 ## Credits and provenance
 
 The explicit three-dimensional map follows the Alpoge/Fable public
@@ -314,9 +338,11 @@ is credited for the weighted marked-root and higher-degree seed exposition.
 The auxiliary-conic proof of the cubic affine source comes from the later
 geometric manuscript prompted by Semon Rezchikov.
 
-The universal factorization setup, the classes `(1,1)` and `(b,a)`, and the
-exact cubic contact classification were already recorded in the repository's
+The universal factorization setup, the classes `(1,1)` and `(b,a)`, and an
+earlier cubic contact calculation were recorded in the repository's archived
 [scoped factorization-slice note](../archive/transfer-program/cubic-factorization-obstruction.md).
+The active self-contained orbit and fiber-class proof is now the
+[foundational incidence construction](../verified/FOUNDATIONAL_INCIDENCE_CONSTRUCTION.md).
 The contribution isolated here is the uniform boundary-lattice calculation
 `det A_n=n-2`, its complete degree-two unit obstruction, and the resulting
 dimension barrier.  No earlier source for this exact formulation was located
