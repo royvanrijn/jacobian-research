@@ -123,7 +123,7 @@ boundary-plane restriction, forces
  A\mapsto A,\qquad y\mapsto uy,\qquad B\mapsto u^{m+1}B.
 \]
 
-Consequently the intrinsic reconstruction residue
+Consequently the **cancellation reconstruction residue**
 
 \[
  q=\left.\frac{B}{y^{m+1}}\right|_{A=0}

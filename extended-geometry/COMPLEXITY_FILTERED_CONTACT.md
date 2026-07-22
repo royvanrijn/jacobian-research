@@ -383,6 +383,31 @@ remain `34m+1`.  Thus stabilization introduces no new source-only gap; the
 open issue is cancellation by target automorphisms.  See Proposition 5.1 of
 [the constructibility note](IND_GROUP_CONSTRUCTIBILITY.md).
 
+The chosen target gauge is not minimal.  With
+
+\[
+ \tau=1+\frac{t}{28},\qquad
+ T_t(A,B,C)=(\tau^{40}A,\tau^{-23}B,\tau^{-17}C),
+\]
+
+the target automorphism has determinant one, target degree one, bounded
+parameter height, and is regular at zero.  The canonical source and inverse
+degrees for `T_t` composed with `G_t` are `(25,49)` through orders one and two, rather than
+`(35,69)`.  Their leading monomial is
+`N=x^14 y^6 z^4`, with leading vectors
+
+\[
+ (\widetilde V_1)_{25}=\frac{435}{7}N(x,0,-3z),
+ \qquad
+ (\widetilde V_2)_{49}=\frac{567675}{98}N^2(x,0,z).
+\]
+
+Thus target-gauge minimality cannot be proved for the determinant-normalized
+gauge as stated.  The viable alternatives are intrinsic minimization over
+target strata, or a stronger canonical target slice.  The new degrees suggest
+`24m+1`, but only the first two orders are currently established in this
+torus gauge.
+
 The checker
 [`verify_degree_five_contact_profile.py`](../scripts/verify_degree_five_contact_profile.py)
 constructs the target-normalized arc, computes both canonical source
@@ -404,12 +429,11 @@ The filtration repairs the defect of ordinary contact order:
 - the determinant-normalized degree-five family satisfies the exact law
   `b_m=34m+1`, giving a source-algebraization obstruction.
 
-What is not yet proved is target-gauge minimality or the
-boundedness/constructibility bridge from pointwise equivalence to a regular
-bounded-degree family.  Parameter numerator degree and pole order must also
-be controlled for a complete algebraization-complexity profile.  These are
-the remaining steps before this filtration itself becomes a left--right
-stable-moduli theorem.
+What is not yet proved is intrinsic target coercivity or the no-escape upgrade
+from a generic bounded incidence branch to a regular based family.  Parameter
+numerator/denominator degree and pole order must also be controlled in the
+actual lower bound.  These are the remaining steps before this filtration
+itself becomes a left--right stable-moduli theorem.
 
 More precisely, the constructible generic boundedness bridge is now complete,
 as is a Noetherian theorem saying that contact in one fixed full resource box

@@ -26,6 +26,26 @@ The resolvent is
  \label{eq:cancellation-resolvent}
 \end{equation}
 
+\paragraph{Cancellation reconstruction residue.}
+The affine component $A=0$ is intrinsically distinguished from $B=0$ by its
+residue degree over $P=0$.  The function $y$ is a unit at its generic point,
+so the marked reconstruction open carries the canonical quantity
+\begin{equation}
+ \operatorname{CRR}(F_q)
+ :=\left.\frac{B}{y^{m+1}}\right|_{A=0}=q.              \tag{6.2a}
+ \label{eq:cancellation-reconstruction-residue}
+\end{equation}
+We call this the \emph{cancellation reconstruction residue}.  On the inverse
+chart $D=A^{-1}$, where $B=PD$ and $y=Q-sP$, it is equivalently
+\[
+ \operatorname{CRR}(F_q)
+ =\operatorname{res}_{A=0}\frac{PD}{(Q-sP)^{m+1}}.
+\]
+The proof below first recovers $A$ and $B$, normalizes $A$ using its unique
+nondomain fiber, recovers the common weighted scaling of $y$ and $B$, and
+then invokes the weight-zero residue
+\eqref{eq:cancellation-reconstruction-residue}.
+
 We first record the part of the target-boundary calculation which remains
 valid in the presence of arbitrary stable variables.
 
@@ -103,6 +123,10 @@ faithfully remembers the selected cancellation root.
 \end{theorem}
 
 \begin{proof}
+The argument has four intrinsic steps.
+
+\smallskip
+\noindent\emph{Recover the two affine factors.}
 The case $mr=1$ has only one parameter root, so assume $mr>1$.  Then $P=0$
 is the intrinsically labelled unramified target-boundary vertex.  After
 adjoining the same tuple of identity variables to both maps, write the ring
@@ -136,6 +160,8 @@ $c\in k^*$ such that
  \label{eq:parameter-faithfulness-factors}
 \]
 
+\smallskip
+\noindent\emph{Normalize $A$.}
 The scalar $c$ is forced to be one.  Indeed, in the stabilized source the
 fiber $A=1$ has coordinate ring
 \[
@@ -150,6 +176,8 @@ after solving $x=(t-1)y^{-m}$, and is a domain.  The pullback of the unique
 nondomain fiber $A'=1$ under
 \eqref{eq:parameter-faithfulness-factors} is $A=c^{-1}$; hence $c=1$.
 
+\smallskip
+\noindent\emph{Recover the weighted scaling.}
 Put
 \[
  X=\alpha^*x',\qquad Y=\alpha^*y'.
@@ -191,36 +219,31 @@ $A\mid x$, which is false.  Therefore
  a=u^{m+1}.                                             \tag{6.17}
 \]
 
-At the affine prime $A=0$, the function $y$ is a unit and
-\[
- \left.\frac{B}{y^{m+1}}\right|_{A=0}=q.               \tag{6.18}
-\]
+\smallskip
+\noindent\emph{Read the reconstruction residue.}
+At the affine prime $A=0$, apply
+\eqref{eq:cancellation-reconstruction-residue}.
 Equations \eqref{eq:parameter-faithfulness-factors} and (6.14)--(6.17)
 carry the analogous residue for $F_{q'}$ to
 \[
  \left.\frac{u^{m+1}B}{(uy)^{m+1}}\right|_{A=0}=q.
 \]
-Thus $q'=q$.  The finite cancellation recursion gives a unique normalized
+Thus $\operatorname{CRR}(F_{q'})=\operatorname{CRR}(F_q)$ and $q'=q$.  The
+finite cancellation recursion gives a unique normalized
 degree-$r$ jet over each parameter root, so $h_{q'}=h_q$ as well.
 \end{proof}
 
 \begin{remark}[reconstruction-pole interpretation]
-On the inverse chart $D=A^{-1}$, $B=PD$, and $y=Q-sP$, so (6.18) is
-\[
- q=\operatorname{res}_{A=0}
- \frac{PD}{(Q-sP)^{m+1}}.                              \tag{6.19}
-\]
-Equivalently, $q$ is the first coefficient after the canonical leading pole
+The cancellation reconstruction residue is the first coefficient after the
+canonical leading pole
 in
 \[
  PD^{r+2}-z
  =(Q-sP)^{m+1}D^{r+1}
- \{q+h_1D^{-1}+\cdots+h_rD^{-r}\}.                     \tag{6.20}
+ \{q+h_1D^{-1}+\cdots+h_rD^{-r}\}.                     \tag{6.19}
 \]
-The proof above is the coordinate-free normalization needed before this
-Laurent coefficient can be used: the marked open recovers $A$ from the two
-affine factors of $P$, fixes its scalar by the unique nondomain fiber, and
-recovers $y$ up to the same scaling which acts on $B$ with weight $m+1$.
+The four-step proof is precisely the intrinsic normalization needed before
+this Laurent coefficient can be compared.
 \end{remark}
 
 \begin{corollary}[distinct roots give distinct stable classes]

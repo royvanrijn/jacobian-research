@@ -46,7 +46,7 @@ for m_value in range(1, 7):
     assert sp.cancel(discrepancy - expected) == 0
     assert sp.cancel(discrepancy.subs(a, u ** (m_value + 1))) == 0
 
-    # The reconstruction-pole residue has weight zero.
+    # The cancellation reconstruction residue has weight zero.
     scaled_residue = (u ** (m_value + 1) * B) / scaled_y ** (m_value + 1)
     assert sp.cancel(scaled_residue - B / y ** (m_value + 1)) == 0
 
@@ -62,4 +62,4 @@ for m_value in range(1, 9):
 
 print("PASS: stable boundary-plane weights preserve the cancellation trace")
 print("PASS: source UFD scaling forces B to have weight m+1")
-print("PASS: the reconstruction-pole residue B/y^(m+1) recovers q")
+print("PASS: the cancellation reconstruction residue B/y^(m+1) recovers q")

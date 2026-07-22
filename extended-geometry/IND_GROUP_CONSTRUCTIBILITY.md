@@ -11,8 +11,11 @@ fixed resource box after minimizing over target automorphisms.
 The first part is established below.  It sharpens the exact list of remaining
 steps in [complexity-filtered contact](COMPLEXITY_FILTERED_CONTACT.md).  The
 current degree-five calculation already supplies the source-only coercivity
-in every stabilization dimension, but target coercivity and a no-escape
-statement at the base point remain open.
+in every stabilization dimension.  An explicit torus calculation below shows
+that the determinant-normalized target gauge is not minimal: the first two
+canonical degrees drop from `(35,69)` to `(25,49)`.  Target coercivity after
+intrinsic minimization, and a no-escape statement at the base point, remain
+open.
 
 Work over a characteristic-zero field `k`.  The generic-uniformity theorem in
 Section 3 additionally assumes that `k` is algebraically closed and
@@ -316,6 +319,75 @@ gauge through a noninvertible Keller map can create source coefficients of
 unbounded degree.  Thus (5.1) by itself cannot distinguish high intrinsic LR
 complexity from complexity transferred into the target or parameter.
 
+### 5.1 The determinant-normalized gauge is not target-minimal
+
+Put
+
+\[
+ \tau=1+\frac{t}{28}
+\]
+
+and consider the based determinant-one target torus
+
+\[
+ T_t(A,B,C)=
+ \left(\tau^{40}A,\tau^{-23}B,\tau^{-17}C\right).  \tag{5.5}
+\]
+
+It has target coordinate degree one, parameter height forty, and no pole at
+`t=0`.  Its infinitesimal vector field is
+
+\[
+ U=\frac1{28}\left(40A\partial_A-23B\partial_B
+                         -17C\partial_C\right),    \tag{5.6}
+\]
+
+which is divergence-free.  Let
+
+\[
+ \widetilde G_t=T_t\circ G_t
+ =F_2\circ\widetilde\alpha_t.
+\]
+
+Exact coefficient calculation gives
+
+\[
+ \begin{array}{c|cc}
+  &r=1&r=2\\ \hline
+ \deg_x\widetilde V_r&25&49\\
+ \deg_x\widetilde W_r&25&49.
+ \end{array}                                       \tag{5.7}
+\]
+
+If
+
+\[
+ N=x^{14}y^6z^4=(xy)^6(x^2z)^4,                   \tag{5.8}
+\]
+
+the new leading terms are
+
+\[
+ (\widetilde V_1)_{25}
+ =\frac{435}{7}N(x,0,-3z),                         \tag{5.9}
+\]
+
+\[
+ (\widetilde V_2)_{49}
+ =\frac{567675}{98}N^2(x,0,z).                    \tag{5.10}
+\]
+
+Thus the law `34m+1` is conclusively **not** target-gauge minimal, already at
+first order.  A linear coefficient solve shows that degree `25` is minimal at
+first order among divergence-free affine target fields; allowing quadratic
+target fields does not lower it further.  No assertion is yet made for target
+fields of arbitrary degree.
+
+The pair `(25,49)` suggests a new leading layer of degree `24m+1`, but this is
+only a conjectural all-order law until the root recurrence is redone in the
+torus gauge.  Even if that law holds, it would still be a gauge upper bound for
+the intrinsic LR profile, not a proof of target minimality.
+
 ## 6. The target-minimality problem
 
 There are two viable routes.
@@ -356,11 +428,13 @@ coordinates belong in the final invariant.
 ### Route B: an intrinsic target slice
 
 Alternatively, impose canonical target conditions and prove that every LR
-equivalence has a bounded-complexity representative in that slice.  The two
-intrinsic boundary vertices and the marked-cover reconstruction suggest such
-a slice, but using them would make this route depend on the normalization
-boundary invariant.  It would prove target-gauge minimality efficiently, but
-would not yet produce a conceptually independent invariant.
+equivalence has a bounded-complexity representative in that slice.  The
+determinant normalization alone cannot be that slice, by (5.5)--(5.10).  The
+two intrinsic boundary vertices and the marked-cover reconstruction suggest a
+stronger slice, but using them would make this route depend on the
+normalization boundary invariant.  It could prove minimality of the stronger
+slice efficiently, but would not yet produce a conceptually independent
+invariant.
 
 Route A is therefore the route to a genuinely different stable invariant.
 Route B remains a useful intermediate theorem and a check on the computation.
@@ -396,7 +470,7 @@ The proposed stable invariant can now be developed in the following order.
    arbitrary finite contacts into one exact rational family.
 4. **Stable source coercivity -- proved by the degree-five calculation.**
    The law `34m+1` survives every fixed identity stabilization in the chosen
-   target gauge.
+   target gauge, but the torus (5.5) shows that this gauge is not minimal.
 5. **Target coercivity -- open.**  Prove an associated-graded lower bound for
    (6.1), or construct an intrinsic target slice.
 6. **No escape at the base -- open if a pointwise theorem is desired.**  Rule
