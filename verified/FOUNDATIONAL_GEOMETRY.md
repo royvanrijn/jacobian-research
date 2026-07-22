@@ -4,9 +4,9 @@ Put `u=1+xy` and define
 
 \[
 F(x,y,z)=\left(
-u^3z+y^2u(4+3xy),
-y+3xu^2z+3xy^2(4+3xy),
-2x-3x^2y-x^3z
+ u^3z+y^2u(4+3xy),
+ y+3xu^2z+3xy^2(4+3xy),
+ 2x-3x^2y-x^3z
 \right).
 \]
 
@@ -60,9 +60,15 @@ is exact substitution, and the three displayed source points are distinct.
 This proof is intentionally confined to the foundational map.  The
 nonduplicated continuation of the core chain is:
 
+- [Normalized factorization bridge](NORMALIZED_FACTORIZATION_SLICE.md);
 - [Cubic marked-root model](MARKED_ROOT_MODEL.md);
 - [Exact image and nonproperness](IMAGE_AND_NONPROPERNESS.md);
 - [Weighted marked-root theorem](WEIGHTED_SEED_THEOREM.md).
+
+The factorization bridge derives the displayed polynomial from multiplication
+of a normalized coprime linear and quadratic factor.  It proves étaleness by
+base change from the coefficient--resultant map and gives a global polynomial
+isomorphism between the normalized slice and `A^3`.
 
 ## Reproduction
 
@@ -74,8 +80,9 @@ make verify-core
 ```
 
 The minimal target uses a dependency-free exact implementation.  The full
-core target adds the marked-root and image regressions.  A separately authored
-pinned Lean certificate is documented in [LEAN_FOUNDATIONAL_MAP.md](LEAN_FOUNDATIONAL_MAP.md).
+core target adds the normalized factorization, marked-root, and image
+regressions.  A separately authored pinned Lean certificate is documented in
+[LEAN_FOUNDATIONAL_MAP.md](LEAN_FOUNDATIONAL_MAP.md).
 
 The former all-in-one derivation and presentation-invariance audit are
 retained in [archive/core-support](../archive/core-support/README.md).
