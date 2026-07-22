@@ -1,0 +1,148 @@
+\section{The scheme-theoretic decorated normalization}
+
+For a weighted primitive $H$, let $D_H$ be the reduced discriminant of
+$H(W)-sW+t$ and let
+\[
+ \nu_H:\A^1_r\longrightarrow D_H,
+ \qquad r\longmapsto(H'(r),rH'(r)-H(r))                 \tag{6.1}
+\]
+be its affine normalization.  Write
+$R_H=k[H'(r),rH'(r)-H(r)]\subset k[r]$.
+
+\begin{proposition}[full Fitting divisor]
+\label{prop:full-fitting}
+There is an equality of ideal sheaves on the normalization
+\[
+ \operatorname{Fitt}_0\Omega_{\widetilde D_H/D_H}=(H''(r)). \tag{6.2}
+\]
+This ideal, including every root multiplicity, is preserved by polynomial
+left--right equivalence and by adjoining identity variables.
+\end{proposition}
+
+\begin{proof}
+The images in $k[r]\,dr$ of the two generators of $R_H$ are
+\[
+ dH'(r)=H''(r)dr,
+ \qquad d(rH'(r)-H(r))=rH''(r)dr.
+\]
+Thus
+$\Omega_{k[r]/R_H}\simeq k[r]/(H'')\,dr$, proving (6.2).
+The stable boundary theorem identifies the finite normalization morphisms on
+the intrinsic discriminant vertex away from the second vertex, so it
+identifies their relative differential modules and Fitting ideals.  Under
+stabilization one has
+\[
+ \Omega_{(\widetilde D_H\times\A^q)/(D_H\times\A^q)}
+ \simeq\operatorname{pr}_1^*\Omega_{\widetilde D_H/D_H}.
+\]
+Zeroth Fitting ideals commute with this flat base change.  Equality of the
+ideal sheaves preserves their valuations at every height-one point, hence
+preserves the multiplicities in (6.2), not only the reduced support.
+\end{proof}
+
+If the support of (6.2) contains two points, the units of
+$k[r,\xi,\xi^{-1},z_1,\ldots,z_q]$ and subtraction of the two corresponding
+principal-prime equations force the induced coordinate change to have the
+form $r\mapsto ar+b$, $a\ne0$.  Proposition~\ref{prop:full-fitting} then says
+that the full effective Hessian divisor is carried affinely, with its
+coefficients.
+
+The self-intersection of (6.1) is also intrinsic.  In two normalization
+coordinates put
+\[
+ D_s(r,u)=\frac{H'(r)-H'(u)}{r-u},
+\]
+\[
+ D_t(r,u)=
+ \frac{rH'(r)-H(r)-uH'(u)+H(u)}{r-u}.
+\]
+The genuine off-diagonal closure is the scheme
+\[
+ \Gamma_H^{\rm off}
+ =V\bigl((D_s,D_t):(r-u)^\infty\bigr).                 \tag{6.3}
+\]
+The saturation in (6.3) is necessary: on the diagonal the divided equations
+specialize to $H''(r)$ and $rH''(r)$ and otherwise retain isolated cusp
+points.  The involution $(r,u)\leftrightarrow(u,r)$ is free on the ordinary
+off-diagonal locus; its characteristic-zero finite quotient exists in
+general and retains fixed diagonal limits in degenerations.  On the ordinary
+locus that quotient records the two normalization branches paired at each node.  An
+isomorphism of normalization morphisms preserves the fiber product, its
+diagonal, and the saturated complement, while stabilization takes their
+product with affine space.  Hence this node-pairing scheme is stable.
+In the exact extractor, ordinary-node status is certified by the Jacobian
+determinant
+\[
+ \det\frac{\partial(D_s,D_t)}{\partial(r,u)}
+\]
+being a unit on (6.3), rather than inferred only from the number of projected
+branch points.  Passing to
+$\sigma=r+u,\pi=ru$ gives the scheme quotient by the free involution; the
+implementation verifies that its equations pull back into the saturated
+ordered ideal.
+
+Finally, let
+\[
+ \mathfrak c_H=\operatorname{Ann}_{\mathcal O_{D_H}}
+ (\nu_{H*}\mathcal O_{\widetilde D_H}/\mathcal O_{D_H}) \tag{6.4}
+\]
+be the conductor.  It is functorial for the same reason.  On the open locus
+of ordinary cusps and nodes, if $P_H(r)$ cuts out all normalization branches
+appearing in (6.3), then the local models
+$k[[t^2,t^3]]\subset k[[t]]$ and
+$k[[x,y]]/(xy)\subset k[[x]]\oplus k[[y]]$ give
+\[
+ \mathfrak c_Hk[r]=(H''(r)^2P_H(r)).                   \tag{6.5}
+\]
+For arbitrary plane-curve singularities, let $f_H(S,T)=0$ be the primitive
+implicit equation.  Plane-curve adjunction gives the uniform generator
+\[
+ \mathfrak c_Hk[r]=
+ \left(
+ \frac{(\partial f_H/\partial T)
+ (H'(r),rH'(r)-H(r))}{H''(r)}
+ \right).                                             \tag{6.5a}
+\]
+This quotient is polynomial because (6.1) is the normalization.  The exact
+extractor uses (6.5a) without an ordinary-singularity hypothesis and checks
+(6.5) independently whenever the cusp/node criterion holds.
+The invariant retains the finite conductor morphism
+\[
+ \operatorname{Spec}(k[r]/\mathfrak c_Hk[r])
+ \longrightarrow
+ \operatorname{Spec}(R_H/(R_H\cap\mathfrak c_Hk[r])), \tag{6.6}
+\]
+not only its upstairs support.  It records the two branches over a node and
+the single thick branch over a cusp.  Together, (6.2)--(6.6), the point at infinity, and the labeled inverse image
+of the intersection with the second target boundary form the decorated
+normalization.  The full second-boundary center divisor upstairs is
+$\gcd(H,H')$; a point label is inferred only when its support is uniquely
+certified.  Every part is therefore preserved under stable polynomial
+left--right equivalence.
+
+For the split quartics, the boundary label on the normalization is also
+checked intrinsically.  If zero is the unique multiple primitive root and
+$H(r)=h_2r^2+O(r^3)$, the normalized discriminant boundary chart
+\[
+ B=\frac{H'(r)}C,\qquad
+ A=\frac{rH'(r)-H(r)}{cC^2},\qquad r=Ck
+\]
+specializes to
+\[
+ B=2h_2k,\qquad A=\frac{h_2}{c}k^2.
+\]
+A finite specialization centered at $r=\rho$ forces
+$H(\rho)=H'(\rho)=0$, hence $\rho=0$.  Thus the second-boundary intersection
+canonically marks $r=0$; it is not an auxiliary normalization convention.
+
+For completeness, this decoration gives an actual generic-dimension theorem,
+not only a parameter count.  In the normalized degree-$N$ seed space, an
+isomorphism preserving zero and infinity is $r\mapsto ar$.  Equality of
+Fitting divisors then has the form $G''(r)=cH''(ar)$.  Since the normalized
+seeds vanish together with their first derivatives at zero, integration gives
+\[
+ G(r)=\frac{c}{a^2}H(ar).
+\]
+The condition $G(1)=0$ forces $H(a)=0$, leaving at most $N-2$ generic
+choices, and $G'(1)=-1$ determines $c$.  Thus the decorated-normalization
+moduli map is generically finite and its image has dimension $N-3$.

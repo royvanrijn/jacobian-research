@@ -62,6 +62,8 @@ verify-master:
 	$(PYTHON) scripts/verify_target_fixed_parameter_rigidity.py
 	$(PYTHON) scripts/verify_boundary_intersection_obstruction.py
 	$(PYTHON) scripts/verify_scheme_boundary_all_parameters.py
+	$(PYTHON) scripts/verify_full_boundary_diagram.py
+	$(PYTHON) scripts/verify_counterexample_ladder.py
 	$(PYTHON) scripts/verify_parameter_irreducibility.py
 	$(PYTHON) scripts/verify_parameter_discriminant.py
 	$(PYTHON) scripts/verify_parameter_galois_groups.py
@@ -81,6 +83,7 @@ verify-regressions:
 	$(PYTHON) scripts/verify_quartic_discriminant.py
 	$(PYTHON) scripts/verify_quartic_monodromy.py
 	$(PYTHON) scripts/verify_external_quartic_islands.py
+	$(PYTHON) scripts/verify_decorated_normalization.py
 	$(PYTHON) scripts/verify_quartic_c0_fibers.py
 	$(PYTHON) scripts/verify_quartic_nonproperness_paths.py
 	$(PYTHON) scripts/verify_quartic_properness_converse.py

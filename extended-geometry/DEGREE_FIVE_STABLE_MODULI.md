@@ -360,13 +360,15 @@ Their generated ideal is exactly `(H'')`.  Therefore the ramification divisor
 of the normalization morphism is intrinsically the zero divisor of `H''` on
 the normalization line.
 
-### Proposition 5.1 — stable Hessian-root invariant
+### Proposition 5.1 — scheme-theoretic stable Hessian-root invariant
 
 Let `F_H` and `F_G` be split weighted marked-root maps for which the complete
 canonical target boundary consists of the intrinsically ordered pair
-`(Z_Delta,Z_0)`.  Assume `H''` and `G''` have distinct roots.  If `F_H` and
-`F_G` are stably polynomially left--right equivalent, then the unordered root
-sets of `H''` and `G''` are affinely equivalent subsets of `A^1`.
+`(Z_Delta,Z_0)`.  If `F_H` and `F_G` are stably polynomially left--right
+equivalent, then their full zeroth-Fitting divisors are isomorphic after
+stabilization.  In particular every Hessian-root multiplicity is preserved.
+If each divisor has at least two distinct support points, the effective
+divisors `div(H'')` and `div(G'')` are affinely equivalent on `A^1`.
 
 #### Proof
 
@@ -397,12 +399,20 @@ with coordinate ring
 Stable boundary functoriality identifies the two intrinsic vertices, restricts
 to an isomorphism of the opens (5.4), and lifts uniquely to an isomorphism of
 the normalizations.  The lifted isomorphism preserves the relative
-differential module and hence permutes the irreducible components of its
-support.  By (5.2), these components are
+differential module and therefore its zeroth Fitting ideal.  Fitting ideals
+commute with the flat base change used in stabilization.  By (5.2), the full
+effective divisor, with coefficients, is
+
+\[
+ \sum_{H''(\alpha)=0}\operatorname{ord}_\alpha(H'')[r=\alpha].
+                                                               \tag{5.6}
+\]
+
+Its irreducible support components are
 
 \[
  V(r-\alpha)\times\mathbb G_m\times\mathbb A^s,
- \qquad H''(\alpha)=0.                               \tag{5.6}
+ \qquad H''(\alpha)=0.                               \tag{5.7}
 \]
 
 The units of (5.5) are exactly
@@ -436,8 +446,10 @@ a nonzero complex constant.  Therefore
  \qquad u\in\mathbb C^*,\ v\in\mathbb C,            \tag{5.10}
 \]
 
-and the same affine transformation carries every component in (5.6).  This is
-the asserted affine equivalence of root sets.  QED.
+and the same affine transformation carries every component in (5.7).  Since
+the Fitting ideals, not only their radicals, are identified, the valuation
+along each component also agrees.  This is the asserted affine equivalence of
+effective divisors.  QED.
 
 ## 6. Proof of the orbit statement
 

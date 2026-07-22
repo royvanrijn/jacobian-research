@@ -30,20 +30,33 @@ Determine also the minimal field over which the full symbolic collision is
 defined, rather than only the evident compositum of the parameter field and
 the collision polynomial's splitting field.
 
-## 3. Compute the stronger upstairs invariant
+## 3. Prove the all-parameter contact resultant
 
-The target scheme intersection already separates the present examples, but
-the next layer should compute the full upstairs--downstairs object:
+The full reduced/scheme/formal invariant is now active, and the generic
+weighted divisorial profile has executable `(e,f)`, different, completed-DVR,
+residue-factor, inertia, and degree-sum extraction.  For cancellation maps,
+the generic completed contact over `P=Q=0` is also executable: it retains
+`k(R)[[P,Q]]`, its critical-normalization plane `k(R)[[Y,Q]]`, the pullback
+`P=(Q-Y)Y^m`, and the separate branch contributions `m^2r` and `mr`.
 
-- all boundary primes over each target stratum;
-- their multiple intersections and specialization relations;
-- residue-field covers;
-- completed local maps, conductors, differents, and valuation filtrations;
-- local monodromy around intersections.
+The full prime-intersection diagram is now executable.  With
+`K=K_{m,r}` and the critical coefficient `L=L_{m,r}`, the exact certificate
+`Res(K,L) != 0` proves that every geometric `K`-branch has critical contact
+length `m`; distinct `K`-branches meet in the common reduced central stratum.
+This closes the diagram for the complete `m=1` ladder and for every certified
+input, including the regression grid `1 <= m,r <= 5`.
 
-This will test whether the formal ladder in
-[BOUNDARY_GEOMETRY.md](BOUNDARY_GEOMETRY.md) remains computable after reduced
-target intersections cease to distinguish examples.
+The remaining uniform theorem is purely the all-parameter nonvanishing
+problem
+
+\[
+ \operatorname{Res}(K_{m,r},L_{m,r})\ne0.
+\]
+
+A proof would remove the last per-parameter certificate from the diagram.
+Completed finite-stratum conductors, restrictions of the different, valuation
+filtrations, and local monodromy are refinements of the now-known incidence
+graph rather than missing prime intersections.
 
 ## 4. Audit the remaining all-parameter inputs
 

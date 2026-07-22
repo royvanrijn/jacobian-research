@@ -348,4 +348,41 @@ primes.  The factor degrees are exactly their residue degrees, and (4.1)
 again rules out a new prime after descent.  This proves the complete boundary
 list and all asserted labels.  Since $mr=1$ only for $(m,r)=(1,1)$, both
 second target vertices occur throughout the range $N\ge4$.
+
+\smallskip
+\noindent\emph{The full intersection diagram.}
+Put $p(w)=w(1-w)^m$ and define the second degree-$mr$ polynomial
+\[
+ L_{m,r}(w)=w^{-(r+1)}\int_0^w\{p(w)-p(v)\}^r\,dv.       \tag{4.20}
+\]
+Let $S=\{P=Q=0\}$, with $R$ free.  The normalized contraction calculation
+restricts the critical prime to
+\[
+ Q^m L_{m,r}(w)\quad\hbox{in}\quad
+ \C(R)[w]/(K_{m,r})[[Q]].                               \tag{4.21}
+\]
+Consequently, whenever
+\[
+ \operatorname {Res}_w(K_{m,r},L_{m,r})\ne0,             \tag{4.22}
+\]
+the coefficient of $Q^m$ is a unit in the finite reduced branch algebra.
+After strict henselization every geometric $K$-branch therefore intersects
+the critical prime in
+\[
+ \C(R)[[Q]]/(Q^m).                                      \tag{4.23}
+\]
+One of these $mr$ branches is the affine divisor $A=0$ and the remaining
+$mr-1$ are boundary primes.  Thus the critical prime has total contact
+$m^2r$ with the complete $K$-cluster and contact $m(mr-1)$ with the boundary
+part.  Two distinct $K$-branches force $Q=0$ and meet in the reduced stratum
+$S$; adding the critical prime or any further $K$-branch does not thicken
+that intersection.  These are all intersections among boundary primes.
+
+Equation (4.22) is an exact, decidable certificate rather than a genericity
+shortcut.  The repository verifies it for $1\le m,r\le5$.  It also holds for
+the entire column $m=1$: the transformed $K_{1,r}$ is the irreducible
+parameter polynomial proved in the arithmetic theorem, while $K_{1,r}$ and
+$L_{1,r}$ have equal constant term $1/(r+1)$ but distinct linear terms, so
+they cannot be associates.  This includes every rung of the quadratic
+stationary-point ladder.
 \end{proof}

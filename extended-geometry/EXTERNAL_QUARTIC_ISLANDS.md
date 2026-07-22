@@ -104,10 +104,13 @@ After exact saturation, restriction of `Q_H` to `C=0` gives
 | `F4c` | `k[A,B]/(B^2-12A) ~= k[B]` | 1 |
 
 Here `mu=1` means that the intersection is reduced.  Hence the canonical
-boundary object separates Island A from Islands B and C.  The present
-invariants do not separate B from C; they retain the different normalized
-extra-root parameters `3` and `-1/2`, but no unrestricted polynomial
-left--right equivalence theorem for those weighted parameters is asserted.
+boundary object separates Island A from Islands B and C.  This numerical
+boundary signature does not separate B from C.  The stronger
+[decorated-normalization invariant](DECORATED_NORMALIZATION_INVARIANT.md)
+does: their unmarked cusp and node-pair configurations are affinely
+equivalent, but adding the canonical zero-cluster boundary mark gives the
+distinct exact invariants `2` and `3/19`.  Thus Islands B and C are not
+polynomially left--right equivalent, even after stabilization.
 
 ## 4. Monodromy and cancellation exclusion
 

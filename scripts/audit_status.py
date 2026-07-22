@@ -26,6 +26,7 @@ for line in status.splitlines():
 
 expected = [
     "Foundational Keller map and rational collision",
+    "Normalized factorization bridge and unequal-degree theorem",
     "Exact symplectic cotangent lift and Weyl quantization",
     "Cubic marked-root realization",
     "Exact cubic image, fibers, and nonproperness",
@@ -50,6 +51,7 @@ expected = [
     "Rigidity within the current ansatz",
     "Degreewise stable-multiplicity theorem",
     "Degree-five stable-moduli theorem",
+    "Scheme-theoretic decorated-normalization invariant",
 ]
 actual = [cells[0] for cells in rows]
 assert actual == expected, "STATUS.md result rows are missing, duplicated, or out of order"
