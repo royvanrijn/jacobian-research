@@ -1,0 +1,60 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools,microtype}
+\usepackage[hidelinks]{hyperref}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\A}{\mathbb A}
+\renewcommand{\P}{\mathbb P}
+\newcommand{\C}{\mathbb C}
+
+\title{Hurwitz--LL Compactification of Rerooting}
+\author{Repository working draft}
+\date{\today}
+
+\def\HurwitzLLPaper{1}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We compactify the rerooting relation for normalized marked-root pencils by
+passing to marked admissible polynomial covers.  The resulting quotient-stack
+description extends the generic degree-$N-2$ rerooting map, identifies its
+boundary pullbacks, and compares the normalized Stein factors and conductor
+square with the affine incidence constructions at arbitrary simultaneous root
+collisions.  We also compute the degree $(N-2)N^{N-3}$ of the marked-zero-
+fiber Lyashko--Looijenga morphism and the caustic and Maxwell divisor classes
+on the root-boundary compactification.
+\end{abstract}
+
+\section{Setup, provenance, and review status}
+
+Let $H$ be a normalized degree-$N$ seed with an exact double root at zero and
+otherwise simple zero-fiber points on the dense open under consideration.
+For
+\[
+ P_{H,s}(W)=H(W)-sW,
+\]
+a critical point $r$ has $s=H'(r)$ and critical value
+$H(r)-rH'(r)$.  Thus the discriminant normalization is
+\[
+ r\longmapsto \bigl(H'(r),rH'(r)-H(r)\bigr).
+\]
+The $N-2$ nonzero simple roots give the generic rerootings; collision strata
+are treated in the marked admissible-cover closure.
+
+The admissible-cover technology cited below from Abramovich--Corti--Vistoli
+and Deopurkar supplies an appropriate proper compactification framework.  It
+does not externally review the repository-specific restricted LL-degree,
+boundary-pullback, Picard, caustic, or Maxwell calculations.  No external
+review of those calculations is recorded, and the statements below should be
+read with that provenance distinction explicit.
+
+\input{../marked-root-multiplicity/decorated-normalization.tex}
+
+\end{document}

@@ -1,0 +1,66 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools,microtype}
+\usepackage[hidelinks]{hyperref}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\A}{\mathbb A}
+\renewcommand{\P}{\mathbb P}
+\newcommand{\C}{\mathbb C}
+
+\title{Decorated Discriminant Normalization and Stable Moduli}
+\author{Repository working draft}
+\date{\today}
+
+\def\DecoratedNormalizationPaper{1}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+For the weighted marked-root Keller maps attached to a normalized seed $H$,
+we study the normalization of the discriminant curve of the pencil
+$H(W)-sW+t$.  Its zeroth relative Fitting ideal is $(H''(r))$ with full
+multiplicity.  We retain the saturated off-diagonal node-pairing scheme, the
+conductor morphism, the point at infinity, and the scheme-valued boundary
+marks.  On a nonempty ordinary boundary-clean open, the resulting stable
+invariant is generically etale of degree $N-2$ onto a normalized image of
+dimension $N-3$.  Consequently degree-$N$ weighted maps contain an
+$(N-3)$-dimensional family of stable classes.  Full-cover faithfulness belongs
+to this package but is isolated below as a repair target and is not used in
+the decorated-normalization degree or stable-moduli proof.
+\end{abstract}
+
+\section{Setup and scope}
+
+Let $k$ be a characteristic-zero field and let $H\in k[W]$ be a normalized
+admissible degree-$N$ seed:
+\[
+ H(0)=H'(0)=H(1)=0,\qquad H'(1)=-1.
+\]
+The weighted construction associates to $H$ a polynomial Keller map $F_H$
+and the marked inverse equation
+\[
+ E_H(W;s,t)=H(W)-sW+t=0.
+\]
+Its finite incidence normalization is equipped with the maximal open on which
+the rational source reconstruction is regular.  The stable-normalization
+functoriality theorem in the degreewise-multiplicity paper identifies the
+intrinsic discriminant vertex, its finite normalization morphism, and its
+boundary marks under polynomial left--right equivalence and after adjoining
+identity variables.  Those facts are the functorial input used here.
+
+The decorated invariant deliberately forgets part of the regular-
+reconstruction open.  Its generic degree is therefore a rerooting degree,
+not a faithfulness assertion.  The separate full-cover argument later in this
+draft requires repair before it is promoted to an input for other results;
+none of the Fitting, node, conductor, generic-degree, or stable-moduli results
+depends on it.
+
+\input{../marked-root-multiplicity/decorated-normalization.tex}
+
+\end{document}
