@@ -4,6 +4,7 @@
 import math
 import sys
 from collections import defaultdict
+from functools import lru_cache
 from pathlib import Path
 
 import sympy as sp
@@ -35,6 +36,11 @@ def atomic_pairs(degree):
         if (degree - 3 * triple_count) % 2 == 0
         for double_count in ((degree - 3 * triple_count) // 2,)
     )
+
+
+@lru_cache(maxsize=None)
+def precedes(finer, coarser):
+    return collision_precedes(finer, coarser)
 
 
 # The component count is a period-six quasipolynomial.
@@ -90,19 +96,19 @@ for degree in range(3, INTERSECTION_CHECK_LIMIT + 1):
             assert right_a == left_a - 3 * gap
             assert right_b == left_b + 2 * gap
             top = tuple(sorted((2,) * right_a + (3,) * left_b + (6,) * gap, reverse=True))
-            assert collision_precedes(partitions[left_index], top)
-            assert collision_precedes(partitions[right_index], top)
+            assert precedes(partitions[left_index], top)
+            assert precedes(partitions[right_index], top)
             assert len(top) - 1 == left_a + left_b - 2 * gap - 1
             interval_counts[gap][degree] += 1
 
             for collision in all_contacts:
-                common_to_extremes = collision_precedes(
+                common_to_extremes = precedes(
                     partitions[left_index], collision
-                ) and collision_precedes(partitions[right_index], collision)
+                ) and precedes(partitions[right_index], collision)
                 if not common_to_extremes:
                     continue
                 for middle in partitions[left_index : right_index + 1]:
-                    assert collision_precedes(middle, collision)
+                    assert precedes(middle, collision)
 
             # The middle normalization fibers have the binomial profile.
             for offset in range(gap + 1):

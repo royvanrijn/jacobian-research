@@ -110,9 +110,10 @@ The number `2` is the primitive weight of the partition complex.
 
 ## 4. Affine-difference rigidity
 
-The normalized seed remembers a monic omitted polynomial only modulo its
-constant and linear coefficients.  It remains to check that this does not
-enlarge an intersection.  Let
+The leading seed coefficient recovers `D(M)`.  Equality of normalized seeds
+therefore makes their monic omitted polynomials differ by at most a constant
+and a linear term.  It remains to check that this does not enlarge an
+intersection.  Let
 
 \[
  M=Q^2R^3,\qquad P=S^2T^3,qquad M-P=\lambda W+\mu.
@@ -155,8 +156,11 @@ Complete on the ordered-root chart at the geometric generic point of
 The common double and triple atoms give smooth diagonal factors, while the
 `t` distinct sixfold roots give `t` independent copies of (2).  Equation
 (4) identifies the actual normalized-seed correspondence with this strong
-factorization correspondence.  Finally, `Phi=0` eliminates one smooth
-root-position parameter on a dense open and does not alter the transverse
+factorization correspondence.  Finally, the splitting-and-rescaling
+construction from the contact-strata theorem gives a point where `Phi=0` has
+nonzero derivative in the common scaling/root-position direction (the
+derivative is controlled by the unit `D`).  Thus on a dense open, `Phi=0`
+eliminates one smooth support parameter and does not alter the transverse
 Artin algebra.
 
 Therefore
