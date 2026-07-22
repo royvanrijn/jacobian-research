@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.6.20)  22 JUL 2026 21:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.6.20)  22 JUL 2026 21:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -498,7 +498,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
  [11])
 (./stable-functoriality.tex [12]
-LaTeX Font Info:    Trying to load font information for U+euf on input line 78.
+LaTeX Font Info:    Trying to load font information for U+euf on input line 85.
 
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/ueuf.fd
@@ -520,7 +520,7 @@ Here is how much of TeX's memory you used:
  30684 multiletter control sequences out of 15000+600000
  489696 words of font info for 180 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 63i,13n,71p,1001b,534s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 63i,13n,71p,1001b,496s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
@@ -542,10 +542,10 @@ ve/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive
 22/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/202
 2/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2
 022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (20 pages, 348697 bytes).
+Output written on main.pdf (20 pages, 349270 bytes).
 PDF statistics:
- 430 PDF objects out of 1000 (max. 8388607)
- 362 compressed objects within 4 object streams
+ 431 PDF objects out of 1000 (max. 8388607)
+ 363 compressed objects within 4 object streams
  156 named destinations out of 1000 (max. 500000)
  39513 words of extra memory for PDF output out of 42996 (max. 10000000)
 

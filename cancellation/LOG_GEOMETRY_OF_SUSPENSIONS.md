@@ -334,14 +334,11 @@ Under this identification:
 
 #### Proof
 
-Normalization commutes with adjoining polynomial variables because the
-polynomial ring over a normal domain is normal.  The assertions about
-height-one primes and `(e,f)` follow from the corresponding Gauss valuations.
-The relative differential module and its zeroth Fitting ideal commute with
-this flat base change, so the different and all of its divisorial orders are
-preserved as well.
-Flat base change sends every sum of boundary ideals to its polynomial
-extension.  Finally,
+Assertions 1--6 are direct applications of the
+[stable normalization functoriality theorem](../verified/STABLE_NORMALIZATION_FUNCTORIALITY.md):
+normalization, height-one Gauss valuations, relative differentials and
+Fitting ideals, scheme intersections, and nilradicals all commute with the
+polynomial base change.  In particular,
 
 \[
  \operatorname{Nil}(R[t_1,\ldots,t_s])
@@ -349,13 +346,12 @@ extension.  Finally,
 \]
 
 and the same equality holds for every power of the nilradical.  The
-distinguished open also base-changes, so the color is unchanged.  These are
-exactly the assertions proved in the existing stable-normalization
-proposition.  QED
+distinguished open also base-changes, so the color is unchanged.
 
 For assertion 7, if `R` is a domain then every unit of `R[t]` already lies
 in `R^*`.  Thus adjoining affine variables neither creates a boundary unit
 nor changes the induced automorphism of a rank-one unit lattice.
+This proves assertion 7 and the proposition.  QED
 
 The last assertion concerns the canonical affine boundary system.  If one
 instead compactifies the stabilizing `A^1` to `P^1`, an additional infinity

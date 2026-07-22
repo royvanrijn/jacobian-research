@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1784747306 "main.tex" "main.pdf" "main" 1784747307
+["pdflatex"] 1784747636 "main.tex" "main.pdf" "main" 1784747637
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1246382020 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy8.tfm" 1246382020 1120 200be8b775682cdf80acad4be5ef57e4 ""
@@ -130,10 +130,10 @@
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
   "boundary-exhaustion.tex" 1784744938 22678 94603f137d4034260f46b9680d4e34d7 ""
   "cancellation-parameter-faithfulness.tex" 1784745404 8633 327b8912a77a4e4ab2f2dc327fc87bef ""
-  "main.aux" 1784747307 4194 87f8769387616e2eebb6782e19322b5a "pdflatex"
-  "main.out" 1784747307 2026 56d31a1af65d43d3c6e842cce98d7a95 "pdflatex"
+  "main.aux" 1784747637 4194 03af9482c0cc761e7d1a23ff2c23d1d5 "pdflatex"
+  "main.out" 1784747637 2026 56d31a1af65d43d3c6e842cce98d7a95 "pdflatex"
   "main.tex" 1784747235 15084 04e204e4cf28565eb08f671dae9c52c8 ""
-  "stable-functoriality.tex" 1784659078 6133 f0347fe669d7215aff7dc070a9bd02ad ""
+  "stable-functoriality.tex" 1784747579 6482 758f775b6afa07d2011f0d4db9f9aa44 ""
   "thick-intersection.tex" 1784658807 6538 cf77e2cb146e4c46f2849c5adc0428f7 ""
   (generated)
   "main.aux"

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.6.20)  22 JUL 2026 21:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.6.20)  22 JUL 2026 21:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -502,11 +502,11 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: E7F23D0A119C8390A4422AFD122BF16B;396.
  ) 
 Here is how much of TeX's memory you used:
- 12777 strings out of 478268
- 201987 string characters out of 5846347
+ 12775 strings out of 478268
+ 201971 string characters out of 5846347
  541667 words of memory out of 5000000
  30634 multiletter control sequences out of 15000+600000
- 486501 words of font info for 150 fonts, out of 8000000 for 9000
+ 486450 words of font info for 149 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  63i,8n,71p,1001b,437s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
@@ -530,10 +530,10 @@ texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2022/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2022/tex
 mf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2022/t
 exmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (7 pages, 274285 bytes).
+Output written on main.pdf (7 pages, 274401 bytes).
 PDF statistics:
- 195 PDF objects out of 1000 (max. 8388607)
- 142 compressed objects within 2 object streams
+ 196 PDF objects out of 1000 (max. 8388607)
+ 143 compressed objects within 2 object streams
  35 named destinations out of 1000 (max. 500000)
  30737 words of extra memory for PDF output out of 35830 (max. 10000000)
 

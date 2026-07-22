@@ -6,6 +6,9 @@ generic degree-`N-2` decorated map, and the `(N-3)`-dimensional stable-moduli
 theorem. Full-cover faithfulness is retained as a clearly isolated repair
 target and is not a dependency of those results.
 
+All stabilization and Fitting/base-change steps cite the construction-independent
+[`../../verified/STABLE_NORMALIZATION_FUNCTORIALITY.md`](../../verified/STABLE_NORMALIZATION_FUNCTORIALITY.md).
+
 Build from this directory with:
 
 ```bash
