@@ -257,9 +257,10 @@ automorphism.
 
 ## 6. Scope and next boundary calculation
 
-The result is a classification only inside (1) and only after the diagonal
-normalization (3).  It does not classify all Keller maps of degree profile
-`(7,6,4)`.
+The dual-number result is a classification only inside (1) and after the
+diagonal normalization (3).  The boundary decomposition is for the full
+unnormalized ansatz (1).  Neither statement classifies all Keller maps of
+degree profile `(7,6,4)`.
 
 On the normalized chart (3), the further coordinates `s=-3u-v`, `t=-u` and
 the products `P=C^2A`, `Q=CB` turn the complete equation into three

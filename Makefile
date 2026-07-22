@@ -5,7 +5,7 @@ SYSTEM_PYTHON ?= python3
 
 .PHONY: check verify verify-logged verify-minimal verify-core verify-geometry \
 	verify-theorems verify-regressions verify-derived verify-family \
-	verify-external-consequences verify-plane-jc \
+	verify-external-consequences verify-plane-jc verify-weighted-boundary \
 	verify-master \
 	verify-quartic verify-normal-forms verify-formal verify-lean-foundational \
 	verify-foundations verify-foundations-formal \
@@ -22,6 +22,9 @@ verify-minimal:
 verify-plane-jc:
 	$(SYSTEM_PYTHON) plane-jc/cas/frontier_125_150.py
 	$(PYTHON) plane-jc/cas/boundary_lattice_prefilter.py
+
+verify-weighted-boundary:
+	Singular -q scripts/verify_foundational_constant_c_boundary.sing
 
 verify-core: verify-minimal
 	$(PYTHON) scripts/verify_counterexample.py

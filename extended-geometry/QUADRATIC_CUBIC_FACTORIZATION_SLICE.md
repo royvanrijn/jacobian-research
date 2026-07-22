@@ -338,14 +338,132 @@ standard generators of the normalization torus.  Hence
 \]
 
 Thus `U_(2,3)` and `A^2 x SL_2` agree also at the level of the complex
-fundamental group.  Equation (21) strengthens (11), but does not determine
-`H^2` or `H^3`.  The first remaining topological product test is now whether
-`H^2(U_(2,3),Q)` vanishes.  Algebraically, a complementary test is whether
-the coordinate ring admits two independent commuting locally nilpotent
-derivations with global slices, as the two affine translations on
-`A^2 x SL_2` do.
+fundamental group.  The next subsection extracts the two previously missing
+cohomology groups from the same small boundary model.
 
-## 8. Consequence
+## 8. The groups `H^2` and `H^3` without a full resolution
+
+Let `Y=P^2 x P^3`, `D=R union E`, and `Z=R intersect E`.  Since `Y` is a
+smooth compact complex fivefold, the cohomology sequence with supports and
+Poincare--Lefschetz duality give
+
+\[
+ H_8(D)\longrightarrow H^2(Y)\longrightarrow H^2(U)
+ \longrightarrow H_7(D)\longrightarrow H^3(Y)=0,      \tag{22}
+\]
+
+and
+
+\[
+ 0\longrightarrow H^3(U)\longrightarrow H_6(D)
+ \longrightarrow H^4(Y).                              \tag{23}
+\]
+
+All groups in this subsection have rational coefficients.
+
+Only the top two homology groups of the boundary are needed.  They can be
+computed from the incidence normalization.  The normalization of `R` is
+
+\[
+ I=\{(A,B,x):A(x)=B(x)=0\}\longrightarrow R.
+\]
+
+It is a `P^1 x P^2`-bundle over `P^1` and has only even cohomology.  The
+conductor is the gcd-two locus `P^2 x P^1`; its inverse image marks one of the
+two roots of the quadratic gcd and is connected.  The normalization exact
+sequence therefore gives
+
+\[
+ H_7(R)=0,\qquad \dim H_6(R)=3.                       \tag{24}
+\]
+
+Similarly, resolving the rational maps
+`[a_0:a_1]` and `[b_1:b_0]` turns `E` into a
+`P^1 x P^2`-bundle over `P^1`.  The exceptional locus is too small to affect
+degree six or seven, so
+
+\[
+ H_7(E)=0,\qquad \dim H_6(E)=3.                       \tag{25}
+\]
+
+The intersection `Z` has exactly two irreducible threefold components.  To
+see them, write a common linear factor as `L=vT-uS` and put
+
+\[
+ A=L(\alpha T+\beta S),\qquad
+ B=L(cT^2+dTS+eS^2).
+\]
+
+Then
+
+\[
+ m=v\bigl(v(\alpha d+\beta c)-2u\alpha c\bigr).       \tag{26}
+\]
+
+The factor `v=0` gives
+
+\[
+ Z_\infty=\{a_0=b_0=0\}\simeq\mathbb P^1\times\mathbb P^2,
+\]
+
+and the second factor in (26) has irreducible closure `Z_0`.  The incidence
+normalizations of `Z_0`, its self-conductor, and
+`Z_infinity intersect Z_0` again have connected rational components and only
+even top cohomology.  Concretely, the normalization of `Z_0` projects to
+`P^1 x P^1`; its fiber is `P^1` except at one point, where it is `P^2`, and
+the local equation there is the ordinary node `sc+td=0`.  A small resolution
+has an iterated projective-bundle paving.  The self-conductor has connected
+inverse image.  Moreover `Z_infinity intersect Z_0` is the union of the two
+rational surfaces `alpha=0` and `c=0`; their top classes are already
+independent in `H_4(Z_infinity)`.  The normalization and Mayer--Vietoris
+sequences therefore give
+
+\[
+ H_5(Z)=0,\qquad H_6(Z)=\mathbb Q[Z_\infty]
+                         \mathbin\oplus\mathbb Q[Z_0]. \tag{27}
+\]
+
+These two top classes inject into `H_6(R) direct-sum H_6(E)`.  Indeed, in the
+basis `(h_1^2,h_1h_2,h_2^2)` of `H^4(Y)`, their pushforward classes are
+
+\[
+ [Z_\infty]=(0,1,0),\qquad [Z_0]=(3,4,2),             \tag{28}
+\]
+
+because their sum is
+`[R][E]=(3h_1+2h_2)(h_1+h_2)`.  They are independent.
+Mayer--Vietoris now yields
+
+\[
+ H_7(D)=0,\qquad \dim H_6(D)=3+3-2=4.                \tag{29}
+\]
+
+The first map in (22) is the boundary-class matrix (3), hence is an
+isomorphism.  This proves `H^2(U)=0`.  The last map in (23) is surjective:
+for example the three boundary cycles `E h_1`, `E h_2`, and `R h_1` have
+classes
+
+\[
+ (1,1,0),\qquad(0,1,1),\qquad(3,2,0),
+\]
+
+which span `H^4(Y)`.  Equations (23) and (29) therefore leave a
+one-dimensional kernel.  Its generator is the difference of the two edge
+classes in the boundary dual graph and has the double-Gysin Tate twist.
+Consequently
+
+\[
+ \boxed{H^2(U_{2,3},\mathbb Q)=0,\qquad
+ H^3(U_{2,3},\mathbb Q)=\mathbb Q(-2).}               \tag{30}
+\]
+
+Thus the unresolved groups in the original audit have exactly the
+`A^2 x SL_2` values.  This calculation uses only normalizations, conductors,
+and top boundary homology; it does not require a full normal-crossings
+resolution.  It still does not exclude cancelling classes in degrees four
+and five, nor does it produce an algebraic product presentation.
+
+## 9. Consequence
 
 The natural `(2,3)` multiplication map is an etale, generically degree-ten
 map
@@ -356,10 +474,10 @@ map
 
 but its source is not `A^5`.  It therefore does **not** produce a new `JC(5)`
 counterexample.  It is still a genuinely new nonproper etale cover model and
-its `SL_2`-shaped virtual motive suggests two next questions: compute the
-low-degree cohomology starting with `H^2`, and decide whether the failure of
-the natural splittings in Section 6 can be upgraded to an abstract product
-obstruction.
+its motive, fundamental group, and cohomology through degree three all have
+the `A^2 x SL_2` shape.  The remaining questions are whether degrees four and
+five vanish and whether the failure of the natural splittings in Section 6
+can be upgraded to an abstract product obstruction.
 
 The exact class calculation and direct finite-field enumeration are checked
 by

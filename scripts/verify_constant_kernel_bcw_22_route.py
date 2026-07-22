@@ -139,6 +139,25 @@ def dependency_sccs(components: list[sp.Expr], variables: list[sp.Symbol]) -> li
     return result
 
 
+def output_span_rank(components: list[sp.Expr], variables: list[sp.Symbol]) -> int:
+    polynomials = [sp.Poly(value, *variables, domain=sp.QQ) for value in components]
+    monomials = sorted(
+        {
+            exponents
+            for polynomial in polynomials
+            for exponents, coefficient in polynomial.terms()
+            if coefficient
+        }
+    )
+    matrix = sp.Matrix(
+        [
+            [polynomial.coeff_monomial(exponents) for exponents in monomials]
+            for polynomial in polynomials
+        ]
+    )
+    return matrix.rank()
+
+
 def main() -> None:
     source = json.loads(SOURCE.read_text())
     variables, h = decode_h(source)
@@ -173,13 +192,17 @@ def main() -> None:
 
     # Exact GZ-type quotient identity: H(X)=H(CBX), hence f=BFC.
     cb_substitution = dict(zip(variables, list(C * B * sp.Matrix(variables))))
-    assert all(sp.expand(left - right.subs(cb_substitution)) == 0 for left, right in zip(h, h))
+    assert all(
+        sp.expand(left - right.subs(cb_substitution, simultaneous=True)) == 0
+        for left, right in zip(h, h)
+    )
 
     quotient_variables = list(sp.symbols("q0:22"))
     section_substitution = dict(zip(variables, list(C * sp.Matrix(quotient_variables))))
     quotient_h = [sp.expand(value) for value in B * sp.Matrix(h).subs(section_substitution)]
     assert all(
-        sp.Poly(value, *quotient_variables, domain=sp.QQ).total_degree() in (-sp.oo, 3)
+        value == 0
+        or sp.Poly(value, *quotient_variables, domain=sp.QQ).total_degree() == 3
         for value in quotient_h
     )
     assert constant_kernel(quotient_h, quotient_variables).cols == 0
@@ -218,6 +241,8 @@ def main() -> None:
     assert used_variables == list(range(22))
     assert nonzero_outputs == list(range(21))
     assert sorted(sccs, key=len) == [[21], list(range(21))]
+    assert output_span_rank(h, variables) == 23
+    assert output_span_rank(quotient_h, quotient_variables) == 21
 
     artifact = {
         "format": "constant-kernel-quotient-bcw-sparse-cubic-homogeneous-map-v1",
@@ -246,7 +271,12 @@ def main() -> None:
         "common_image": [qtext(value) for value in quotient_image],
         "diagnostics": {
             "source_constant_kernel_dimension": 2,
+            "source_coordinate_support_dimension": 24,
+            "source_essential_input_span_dimension": 22,
+            "source_H_output_span_dimension": 23,
             "quotient_constant_kernel_dimension": 0,
+            "quotient_essential_input_span_dimension": 22,
+            "quotient_H_output_span_dimension": 21,
             "variables_in_coordinate_support": used_variables,
             "nonzero_H_outputs": nonzero_outputs,
             "coordinate_dependency_sccs": sccs,

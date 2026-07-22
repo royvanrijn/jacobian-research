@@ -49,6 +49,37 @@ boundary_jacobian = sp.Matrix([
 ])
 assert boundary_jacobian.rank() == 2
 
+# On the incidence normalization, a common factor L=v*T-u*S splits m into
+# the root-at-infinity component and one residual component.
+u, v, alpha, beta, c, d, e = sp.symbols("u v alpha beta c d e")
+common_factor = v * T - u
+incidence_A = sp.expand(common_factor * (alpha * T + beta))
+incidence_B = sp.expand(common_factor * (c * T**2 + d * T + e))
+incidence_A_poly = sp.Poly(incidence_A, T)
+incidence_B_poly = sp.Poly(incidence_B, T)
+incidence_m = sp.expand(
+    incidence_A_poly.coeff_monomial(T**2)
+    * incidence_B_poly.coeff_monomial(T**2)
+    + incidence_A_poly.coeff_monomial(T)
+    * incidence_B_poly.coeff_monomial(T**3)
+)
+expected_incidence_m = v * (v * (alpha * d + beta * c) - 2 * u * alpha * c)
+assert sp.expand(incidence_m - expected_incidence_m) == 0
+
+# Cycle-class ranks used in the H^2/H^3 calculation.  Coordinates are
+# (h1^2, h1*h2, h2^2).
+z_infinity = sp.Matrix([0, 1, 0])
+z_residual = sp.Matrix([3, 4, 2])
+assert sp.Matrix.hstack(z_infinity, z_residual).rank() == 2
+boundary_spanning_cycles = sp.Matrix.hstack(
+    sp.Matrix([1, 1, 0]),  # E*h1
+    sp.Matrix([0, 1, 1]),  # E*h2
+    sp.Matrix([3, 2, 0]),  # R*h1
+)
+assert boundary_spanning_cycles.det() != 0
+
 print("PASS normalization torus: weights (1,1) and (3,2) are unimodular")
 print("PASS W = X_(2,3) x G_m^2 normalization formulas")
 print("PASS the tangent and resultant boundaries meet transversely")
+print("PASS R intersect E has the infinity and residual incidence components")
+print("PASS top boundary cycle ranks give H^2=0 and dim H^3=1")

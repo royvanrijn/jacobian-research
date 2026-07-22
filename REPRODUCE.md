@@ -49,7 +49,7 @@ The remaining constant-`C` boundary has a separate exact Singular
 certificate:
 
 ```bash
-Singular -q scripts/verify_foundational_constant_c_boundary.sing
+make verify-weighted-boundary
 ```
 
 It computes exactly two primary components, checks their declared radicals,
