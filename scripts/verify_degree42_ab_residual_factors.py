@@ -264,6 +264,17 @@ def main() -> None:
             / (512 * e2 * (6 * e1 - e2**2) ** 3)
         )
         assert sp.cancel(rho_a - expected_a) == 0
+        graph_a = (
+            7 * e1**3 * (3 * e1 - e2**2) * (4 * e1 - e2**2) ** 4
+            / (
+                2
+                * e2**4
+                * (5 * e1 - e2**2)
+                * (6 * e1 - e2**2) ** 2
+            )
+        )
+        assert sp.cancel(p_a.subs(w2, graph_a)) == 0
+        assert sp.factor(p_a.subs(e2**2, 5 * e1)) == -14 * e1**8
         print("A_RESIDUAL_FACTORIZATION")
         print(rho_a)
     if args.case == "B":
@@ -295,6 +306,10 @@ def main() -> None:
             * p_b
         )
         assert sp.cancel(rho_bn - expected_bn) == 0
+        q_b = p_b.subs(w2, 0)
+        graph_b = q_b / (5 * r - 3)
+        assert sp.cancel(p_b.subs(w2, graph_b)) == 0
+        assert q_b.subs(r, sp.Rational(3, 5)) == sp.Rational(-56, 78125)
         print("B_NORMALIZED_RESIDUAL_FACTORIZATION")
         print(rho_bn)
 

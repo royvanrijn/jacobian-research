@@ -55,13 +55,13 @@ Exact radical and intersection calculations over \(\mathbb Q\) give
 \tag{3}
 \]
 
-Hence the higher-gcd locus has four rational weighted curves.  The two
-shared curves \(P_3,P_4\) are the intersections of the \(A\)- and
+Hence the higher-gcd locus has four weighted curves over \(\mathbb Q\).
+The two shared curves \(P_3,P_4\) are the intersections of the \(A\)- and
 \(B\)-phenomena; \(P_2\) belongs only to \(A\), and \(P_1\) only to \(B\).
 
 ## 2. Geometric splitting
 
-Let \(\rho^2=-3\).  The rational curve \(P_1\) splits over
+Let \(\rho^2=-3\).  The \(\mathbb Q\)-irreducible curve \(P_1\) splits over
 \(\mathbb Q(\rho)\) into
 
 \[
@@ -147,19 +147,20 @@ quartic order; only their common vertex survives.}}
 \tag{8}
 \]
 
-## 5. Remaining limitation and next test
+## 5. Application to the remaining resultant divisors
 
-Equation (8) analyzes the higher-gcd locus \(S_1=0\).  It does not yet prove
-that the residual quartic scalars \(\rho_{L_A}\) and \(\rho_{L_B}\) vanish
-only on \(\mathcal H\).  The next exact calculation should therefore:
+The subsequent exact factorization shows that the higher-gcd locus is not
+the whole quartic-zero locus.  On normalization charts of \(A=0\) and
+\(B=0\), the remaining scalar residual has one additional factor,
+respectively \(P_A\) and \(P_B\), and both are affine-linear in \(w_2\).
+Their higher-gcd factors are precisely the already-closed \(P_3\) and
+\(P_4\) branches above.  Consequently the degree-one-gcd continuation
+problem consists of two explicit residual graphs, not unspecified
+subvarieties of the resultant divisors.
 
-1. compute cleared representatives of \(\rho_{L_A}\) modulo \(A\) and
-   \(\rho_{L_B}\) modulo \(B\);
-2. factor their zero divisors in the corresponding coordinate rings;
-3. compare those factors with \(P_1,\ldots,P_4\);
-4. isolate any additional quartic-zero curve before computing a fifth
-   Kuranishi term.
-
-If those zero divisors are supported on \(\mathcal H\), the entire
-\(A/B\) exceptional locus with \(w_2\ne0\) reduces to the single vertex
-(6).
+The formulas and exact certificate are in
+[Proposition 6.9 and Corollary 6.10 of the canonical synchronization
+note](COMMON_RIGHT_FACTOR_SYNCHRONIZATION.md#62-geometric-classification-of-the-support).
+The next local test is therefore a fifth-order common-line residual
+calculation after substituting the graph formulas.  The common vertex (6)
+and the separate odd core \(w_0=w_2=0\) remain distinct problems.

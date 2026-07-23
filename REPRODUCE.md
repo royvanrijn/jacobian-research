@@ -1210,7 +1210,9 @@ the normalization of `B=0` over `q^2=-3` is
 in `w2`.  The `e1=0`, `4*e1=e2^2`, `r=1`, and `r=1/2` factors are
 exactly the already-classified higher-gcd branches `P4` and `P3`.
 Thus the new degree-one-gcd support consists only of the residual graphs
-`P_A=0` and `P_B=0`.
+`P_A=0` and `P_B=0`.  The checker also certifies the solved graph
+identities for `w2` and verifies that the apparent coefficient-zero
+values `5*e1=e2^2` and `r=3/5` do not add vertical components.
 
 The complete cutoff chain—from the conormal open through the higher-gcd
 quartic strata—can be replayed with

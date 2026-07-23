@@ -118,7 +118,7 @@ negative counterexample probes:
 \[
 (e_1,e_2,t,w_0,w_1,w_2)=(1,2,3,0,5,0)
 \]
-on the sevenfold-power divisor \(w_2=0\) has an eight-element basis and
+on the odd-core divisor \(w_0=w_2=0\) has an eight-element basis and
 reduces the synchronization defect to zero.  The generic \(A=0\) rational
 probe
 \[

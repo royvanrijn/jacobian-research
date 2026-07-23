@@ -1,0 +1,17 @@
+name = "gmc2-lower-face"
+version = "0.1.0"
+keywords = ["math", "gaussian-moments"]
+defaultTargets = ["GMC2"]
+
+[leanOptions]
+pp.unicode.fun = true
+relaxedAutoImplicit = false
+weak.linter.mathlibStandardSet = true
+
+[[require]]
+name = "mathlib"
+path = "../../.cache/lean-foundational/.lake/packages/mathlib"
+
+[[lean_lib]]
+name = "GMC2"
+

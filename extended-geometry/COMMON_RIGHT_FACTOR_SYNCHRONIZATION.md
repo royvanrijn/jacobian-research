@@ -656,7 +656,9 @@ Thus \(w_2=0\) is not generically sevenfold.  The sevenfold monomial
 normal-cone degenerations, not new classical Ritt decomposition types.
 Proposition 6.7 below closes their generic points by the common-line
 residual theorem.  What may remain on them is confined to the proper
-quartic-zero loci \(V(A,\rho_{L_A})\) and \(V(B,\rho_{L_B})\).
+quartic-zero loci \(V(A,\rho_{L_A})\) and \(V(B,\rho_{L_B})\), which
+Proposition 6.9 and Corollary 6.10 reduce further to two explicit residual
+graphs and already-classified boundary strata.
 
 There is now one global algebraic target.  Let
 \[
@@ -885,6 +887,45 @@ Its discriminant in \(e_1\) is
 \(e_2=1\).  The corresponding statement on \(A\) follows immediately
 from its displayed normalization.  \(\square\)
 
+The affine-linearity has a useful geometric consequence that is easier to
+use than the factored residuals themselves.  Write
+\[
+ Q_B(r)=112r^7-560r^6+1176r^5-1344r^4+903r^3-357r^2
+ +77r-7.
+\]
+On the degree-one-gcd opens, the two genuinely new residual divisors are
+the graphs
+\[
+\begin{aligned}
+ w_2&=
+ \frac{7e_1^3(3e_1-e_2^2)(4e_1-e_2^2)^4}
+ {2e_2^4(5e_1-e_2^2)(6e_1-e_2^2)^2}
+ &&\text{on the normalization of }A=0,\\
+ w_2&=\frac{Q_B(r)}{5r-3}
+ &&\text{on either geometric normalization of }B=0.
+\end{aligned}                                               \tag{6.25}
+\]
+Neither formula hides a vertical component: at \(5e_1=e_2^2\), the
+\(w_2\)-independent term of \(P_A\) is nonzero away from the higher-gcd
+boundary, and \(Q_B(3/5)=-56/78125\).  Thus the apparent exceptional
+denominators in (6.25) do not contribute points of the degree-one-gcd
+residual divisor.
+
+> **Corollary 6.10 (graph reduction of the \(A/B\) frontier).**  Away
+> from \(w_2=0\), the four higher-gcd curves of Proposition 6.8, and the
+> common contact-five vertex, every \(A/B\) point not already closed by
+> the quartic cutoff lies in the union of the graphs (6.25).  Each graph
+> is a single section over its displayed normalization open.  In
+> particular, the next Kuranishi calculation has one fewer base parameter:
+> substitute (6.25) first and compute only the residual series along the
+> unique common line.
+
+**Proof.**  Proposition 6.9 lists all factors of the two quartic
+residuals.  Removing \(w_2=0\) and the factors mapping to \(P_3,P_4\)
+leaves \(P_A\) and \(P_B\).  Their coefficients of \(w_2\) are nonzero
+on their zero loci by the two evaluations above, so solving them gives
+(6.25) without losing a component.  \(\square\)
+
 [`verify_degree42_kuranishi_branches.py`](../scripts/verify_degree42_kuranishi_branches.py)
 certifies the implicit cubic coefficients (6.10), the binary-cubic
 resultant (6.12), and the common factors (6.18)--(6.19).
@@ -897,10 +938,39 @@ certifies the radical decompositions, the four punctured-curve Hilbert
 cutoffs, and the surviving common vertex in Proposition 6.8.
 [`verify_degree42_ab_residual_factors.py`](../scripts/verify_degree42_ab_residual_factors.py)
 certifies the normalization identities and the factorizations
-(6.22)--(6.24).
+(6.22)--(6.24), as well as the graph simplification (6.25).
 
-For the remaining calculation, the theorem removes the right factor from
-the elimination variables.  For each degree-forty-two row:
+### 6.3 Focused future exploration
+
+The preceding calculations reduce the degree-forty-two frontier to three
+geometrically different tests.
+
+1. **Residual graphs.**  Substitute (6.25) before expanding.  On either
+   graph the quartic coefficient of the one-variable residual series
+   vanishes by construction.  Solve the transverse implicit equation one
+   order further and compute its invariant quintic coefficient.  If that
+   coefficient is generically nonzero, the homogeneous envelope has
+   Hilbert vector \((1,2,3,2,1)\), hence fifth normal power zero; the
+   existing defect membership modulo \(\mathfrak m^5\) then closes the
+   graph exactly.  Factoring a vanishing quintic would isolate only a
+   finite or lower-dimensional continuation locus.
+2. **Odd core.**  On \(w_0=w_2=0\), use
+   \(U=z^3(z^2+w_1)^2\) and the involution \(z\mapsto-z\) to split the
+   normal equations into even and odd eigenspaces before elimination.
+   This is the natural place to exploit symmetry; it should be treated
+   separately from the sevenfold point \(w_1=0\).
+3. **Contact-five vertex.**  On \(w_0=w_1=0\), \(w_2\ne0\), normalize
+   \(w_2\) and make a weighted blow-up in \((e_1,e_2,t)\) at their common
+   vertex.  The known quartics \(uv^3\) and \(v^4\) identify the repeated
+   direction, so only the first term transverse to \(v^3\) is relevant.
+
+These local tests should precede another global saturation attempt.  Once
+they close, or isolate smaller exceptional loci, recompute the support
+ideal \(\mathfrak k\) with those loci removed and test
+\(I:\mathfrak k^\infty=I\) on the smaller module.
+
+Independently, the common-right-factor theorem removes the terminal right
+factor from the elimination variables.  For each degree-forty-two row:
 
 1. reconstruct the unique candidate \(R\) directly from the top \(r-1\)
    coefficients;
