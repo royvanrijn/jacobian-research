@@ -345,11 +345,10 @@ def excludes_zero(value: arb) -> bool:
 
 
 def phase_excludes_multiples_of_two_pi(value: arb) -> bool:
-    lower = float(value.lower())
-    upper = float(value.upper())
-    first = math.floor(lower / (2 * math.pi)) - 1
-    last = math.ceil(upper / (2 * math.pi)) + 1
     two_pi = 2 * arb.pi()
+    quotient = value / two_pi
+    first = int(quotient.lower().floor().unique_fmpz()) - 1
+    last = int(quotient.upper().ceil().unique_fmpz()) + 1
     return all(excludes_zero(value - k * two_pi) for k in range(first, last + 1))
 
 

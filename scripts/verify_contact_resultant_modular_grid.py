@@ -94,4 +94,4 @@ print(
 )
 for r, maximum_m in GRID.items():
     print(f"PASS contact resultant finite grid: r={r}, 1<=m<={maximum_m}")
-print("SCOPE: finite evidence only; the uniform continuation begins at r=6")
+print("SCOPE: finite evidence only; the unresolved uniform continuation begins at r=7")
