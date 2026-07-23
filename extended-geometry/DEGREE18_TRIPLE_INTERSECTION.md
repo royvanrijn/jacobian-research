@@ -3,9 +3,9 @@
 Work over a field of characteristic zero.  This note studies the component
 `C_(3,4)` over the exact collision stratum `E_(6,6,6)`.  It proves the
 pairwise and ordered-triple transverse intersection algebras on a nonempty
-open of the ordered-root chart.  The reconstruction of the entire completed
-three-branch component ring, and hence its total conductor equalizer, remains
-open.
+open of the ordered-root chart.  An excess-conormal calculation then proves
+the completed three-branch conductor equalizer on a possibly smaller
+nonempty open.
 
 ## 1. Three normalization branches
 
@@ -232,7 +232,7 @@ The cubic socle class
 is the first genuinely three-way infinitesimal datum.  It disappears from
 every pairwise transverse slice.
 
-## 6. What remains: the total conductor equalizer
+## 6. The total conductor equalizer
 
 Let `B_1,B_2,B_3` be the three completed regular normalization sheets.  The
 desired completed component ring should be recovered as the simultaneous
@@ -253,8 +253,8 @@ complex
 \bigoplus_{i<j}D_{ij}\longrightarrow D_{123}     \tag{12}
 \]
 
-requires a distributivity or effective-descent argument.  Establishing (12)
-for the completed coefficient ring is the genuinely new remaining theorem.
+requires a distributivity or effective-descent argument.  Section 7.2 proves
+this exactness generically by an excess-intersection calculation.
 
 This can be reduced to one explicit ideal identity.  Write
 `p_1,p_2,p_3` for the three minimal primes of `A`.  After gluing residues on
@@ -280,10 +280,10 @@ is the distributivity-defect module
 \]
 
 Away from `E_(6,6,6)` at most two of these three sheets remain, so
-`mathcal H` is supported on the triple stratum.  Computing `mathcal H` in
-the completed coefficient ring is the sharply formulated next step.
+`mathcal H` is supported on the triple stratum.  Section 7.2 proves that it
+vanishes on a nonempty open.
 
-If (12) is exact, the conductor component on the `i`-th normalization sheet
+By (12), the conductor component on the `i`-th normalization sheet
 is
 
 \[
@@ -297,8 +297,9 @@ determine the entire completed local ring.
 The tangent calculation makes the resulting conductor formula concrete.  On
 a fixed sheet `B_i`, the two pairwise common tangent spaces coincide with the
 projection of the five-dimensional triple common tangent space.  Hence the
-two pairwise quotient kernels have the same linear generator.  Conditional
-on the formal straightening implicit in (12), choose parameters
+two pairwise quotient kernels have the same linear generator.  After a
+simultaneous formal straightening of the two pairwise complete-intersection
+ideals, choose parameters
 
 \[
 B_i=k[[t_1,t_2,e_1,e_2,e_3,w_i]],
@@ -329,9 +330,11 @@ Their intersection gives the predicted conductor component
 =(w_i,e_i^2,e_j^2e_k^2).}                         \tag{17}
 \]
 
-Thus the equalizer theorem would immediately produce an explicit conductor,
+Thus the equalizer theorem gives the intrinsic conductor formula (15).  The
+simultaneous straightening displayed in (16) gives the monomial form (17),
 including the quartic equation where the two pairwise conductor components
-meet on one normalization sheet.
+meet on one normalization sheet.  The equalizer proof below does not require
+this choice of coordinates.
 
 The completed component ring itself is reduced; the nilpotents in (4) and
 (10) belong to its scheme-theoretic branch-intersection quotients.  The
@@ -485,11 +488,12 @@ Tor-independence statements for the intersection presentations.  Once this
 comparison is established, (18), `mathfrak n^4=0`, and (23) give
 `mathcal H=0` immediately.
 
-The Tor formulation is explicit.  Put
+The Tor formulation is explicit.  Let `S` be the completed regular local ring
+of the ambient normalized-coefficient space and let `I_i` be the ideal of the
+`i`-th branch, so `B_i=S/I_i`.  Put
 
 \[
-C_{12}=A/(\mathfrak p_1\cap\mathfrak p_2),\qquad
-D_{12}=A/(\mathfrak p_1+\mathfrak p_2).
+C_{12}=S/(I_1\cap I_2),\qquad D_{12}=S/(I_1+I_2).
 \]
 
 Tensor the two-branch Mayer--Vietoris sequence
@@ -499,11 +503,11 @@ Tensor the two-branch Mayer--Vietoris sequence
 \longrightarrow D_{12}\longrightarrow0
 \]
 
-with `B_3`.  The kernel of
+over `S` with `B_3`.  The kernel of
 
 \[
-C_{12}\otimes_A B_3\longrightarrow
-(B_1\otimes_A B_3)\oplus(B_2\otimes_A B_3)
+C_{12}\otimes_S B_3\longrightarrow
+(B_1\otimes_S B_3)\oplus(B_2\otimes_S B_3)
 \]
 
 is exactly (14).  The Tor long exact sequence therefore gives
@@ -511,10 +515,10 @@ is exactly (14).  The Tor long exact sequence therefore gives
 \[
 \boxed{
 \mathcal H\simeq\operatorname{coker}\!\left(
-\operatorname{Tor}_1^A(B_1,B_3)\oplus
-\operatorname{Tor}_1^A(B_2,B_3)
+\operatorname{Tor}_1^S(B_1,B_3)\oplus
+\operatorname{Tor}_1^S(B_2,B_3)
 \longrightarrow
-\operatorname{Tor}_1^A(D_{12},B_3)
+\operatorname{Tor}_1^S(D_{12},B_3)
 \right).}                                             \tag{26}
 \]
 
@@ -523,13 +527,89 @@ the Tor map in (26).  This pinpoints which Tor-independence statement is
 needed; asking for all pairwise Tor groups to vanish would be unnecessarily
 strong and is incompatible with the nontransverse pairwise intersections.
 
-The remaining proof obligation is now narrow.  One must show that formation
-of (14) is strict for the relative transverse filtration, or prove the
-equivalent generic Tor-surjectivity in (26).  Generic freeness and the
-constant-rank minors handle specialization from the ordered-root base to the
-rational witness for the finite truncation; they do not by themselves compare
-the completed defect with that truncation.  Without (25), (19)--(24) are exact
-finite-jet evidence rather than an all-order completed-ring theorem.
+### 7.2 Excess conormals prove the generic equalizer
+
+We use the following elementary Koszul lemma.  Let `S` be regular local, let
+`I=(f_1,...,f_a)` be generated by a regular sequence, and put `R=S/(I+J)`.
+Suppose that the image of `I` in `S/J` is a complete-intersection ideal of
+height `c`.  After an invertible change of the `f_i` over `S/J`, their images
+have the form
+
+\[
+g_1,\ldots,g_c,0,\ldots,0,
+\]
+
+where the `g_i` are a regular sequence.  Tensoring the Koszul resolution of
+`S/I` with `S/J` consequently gives
+
+\[
+\operatorname{Tor}_q^S(S/I,S/J)
+\simeq \bigwedge^q_R E,
+\qquad \operatorname{rank}_R E=a-c.              \tag{27}
+\]
+
+Here `E` is the kernel of the excess conormal map.  The construction is
+functorial for inclusions of complete-intersection ideals.  Therefore the map
+in (26) is the map of excess conormal modules
+
+\[
+E_{13}|_{D_{123}}\oplus E_{23}|_{D_{123}}
+\longrightarrow E_{(12),3}.                       \tag{28}
+\]
+
+Cut by the common etale coordinates `c_2,c_3` from (22) and work at the
+rational witness.  The ambient ring is `S=QQ[[y_1,...,y_15]]`.  The branch
+ideals have height eleven.  By (4), their pairwise sums have height fourteen
+and complete-intersection quotient
+
+\[
+QQ[[s,\epsilon_i,\epsilon_j]]/
+ (\epsilon_i^2,\epsilon_j^2).
+\]
+
+By (10), the triple sum has height fifteen and complete-intersection quotient
+
+\[
+QQ[[\epsilon_1,\epsilon_2,\epsilon_3]]/
+ (\epsilon_1^2,\epsilon_2^2,\epsilon_3^2).
+\]
+
+Thus (27) applies to every Tor module in (26).  The pair excess modules have
+rank eight over their pairwise rings, while `E_(12),3` has rank ten over the
+triple ring.
+
+The fibers of these conormal modules and all maps between them depend only on
+the branch two-jets.  Exact rational linear algebra at (1) gives
+
+\[
+\begin{array}{c|c}
+\text{conormal fiber}&\text{dimension}\\ \hline
+I_i/\mathfrak m I_i&11\\
+(I_i+I_j)/\mathfrak m(I_i+I_j)&14\\
+(I_1+I_2+I_3)/\mathfrak m(I_1+I_2+I_3)&15\\
+E_{ij}\otimes QQ&8\\
+E_{(12),3}\otimes QQ&10.
+\end{array}                                             \tag{29}
+\]
+
+The map (28) has rank ten; one exact maximal minor is
+
+\[
+\frac{2401}{256}\ne0.                                  \tag{30}
+\]
+
+It is therefore surjective on the residue field.  Since its target is free of
+rank ten over the local triple-intersection ring, Nakayama makes (28)
+surjective over that entire Artin ring.  Equations (26)--(28) give
+`mathcal H=0` at the witness.
+
+The branch, pair, and triple complete-intersection conditions and the
+nonvanishing minor (30) are open conditions on the ordered-root chart.
+Shrinking once more gives `mathcal H=0` throughout a nonempty open.  Hence
+(12) is exact there, proving the generic completed three-sheet conductor
+equalizer.  Notice that this argument bypasses the unproved filtered
+comparison (25); the relative cubic calculation (23) remains an independent
+check of the resulting theorem.
 
 Run the exploratory calculation with
 
