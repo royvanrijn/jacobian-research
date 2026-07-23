@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
-"""Explore the transported degree-42 ``{2,7}`` synchronization pair.
+"""Verify degree-42 ``{2,7}`` synchronization through normal order four.
 
 The primitive degree-14 power collision is composed on the right with a
 generic cubic.  Leading source-chart coefficients recover the six model
-parameters, leaving five refinement-normal coordinates.
+parameters, leaving five refinement-normal coordinates.  Exact reduction
+over ``QQ`` proves that the synchronization defect belongs to
+``I + (normal coordinates)^5``.
 """
 
 from __future__ import annotations
@@ -245,7 +247,7 @@ def transformed_problem() -> tuple[
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--prime", type=int, default=32003)
+    parser.add_argument("--prime", type=int, default=0)
     parser.add_argument("--order", default="(dp(5),dp(6))")
     parser.add_argument(
         "--algorithm",
@@ -257,7 +259,7 @@ def main() -> None:
     parser.add_argument(
         "--normal-order",
         type=int,
-        default=0,
+        default=4,
         help=(
             "work modulo the (normal-order + 1)-st power of the normal "
             "maximal ideal; zero requests the full ideal"

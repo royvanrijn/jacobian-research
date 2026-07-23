@@ -12,6 +12,7 @@ SYSTEM_PYTHON ?= python3
 	verify-coincident-root-loci verify-papers verify-ritt-boundary \
 	verify-ritt-2-complex verify-hessian-synchronization \
 	verify-common-right-factor-synchronization \
+	verify-degree42-hessian-normal-jets \
 	verify-degree30-hessian-pairs refresh-degree30-hessian-pairs \
 	verify-contact-r6 verify-contact-branch-schema verify-contact-r7-asymptotic \
 	verify-parameter-dusart-frontier verify-parameter-sharp-dusart-frontier \
@@ -80,6 +81,9 @@ verify-hessian-synchronization:
 
 verify-common-right-factor-synchronization:
 	$(PYTHON) scripts/verify_common_right_factor_synchronization.py
+
+verify-degree42-hessian-normal-jets:
+	$(PYTHON) scripts/verify_degree42_transported_27_normal_jets.py
 
 verify-degree30-hessian-pairs:
 	$(PYTHON) scripts/verify_cubic_remainder_synchronization.py
