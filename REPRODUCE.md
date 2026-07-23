@@ -237,7 +237,7 @@ It requires Singular for its boundary resultants:
 .venv/bin/python scripts/verify_contact_resultant_r5.py
 ```
 
-The first not-yet-complete fixed-`r` column has an exact bounded-degree
+The formerly first open fixed-`r` column has an exact bounded-degree
 reduction: the following Singular-backed checker constructs the
 quintic--sextic endpoint equations and verifies that their residual eliminant
 has degree 29 in `y` and degree 90 in `m`.

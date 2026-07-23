@@ -963,12 +963,14 @@ The exact inertia, Rouche, angle, and Bernstein certificates for `r=4` are in
 The exact sparse resultant, subresultant, Routh, boundary-resultant, and
 Bernstein certificates for `r=5` are in
 [`verify_contact_resultant_r5.py`](../scripts/verify_contact_resultant_r5.py).
-The exact degree-29 endpoint-eliminant reduction for the first open column
+The exact degree-29 endpoint-eliminant reduction for the former first open column
 `r=6` is in
 [`verify_contact_resultant_r6_reduction.py`](../scripts/verify_contact_resultant_r6_reduction.py).
 Its exact Newton edge, limiting subresultant, and eventual nonvanishing
 certificate are in
 [`verify_contact_resultant_r6_asymptotic.py`](../scripts/verify_contact_resultant_r6_asymptotic.py).
+The effective 29-tube continuation and finite-range completion are in
+[`verify_contact_resultant_r6_effective.py`](../scripts/verify_contact_resultant_r6_effective.py).
 The coefficient comparison and fractional-linear transfer behind (46)--(47)
 are checked by
 [`verify_contact_resultant_irreducible_ranges.py`](../scripts/verify_contact_resultant_irreducible_ranges.py).
