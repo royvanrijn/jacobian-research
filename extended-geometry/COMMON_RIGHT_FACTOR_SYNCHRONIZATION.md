@@ -211,8 +211,43 @@ characteristic-\(p\) obstruction.
 
 ## 6. The degree-forty-two computation to run
 
-The theorem removes the right factor from the elimination variables.  For
-each of the three degree-forty-two rows:
+The first degree-forty-two primary calculation is now exact.  For the
+\(\{2,7\}\) pair, transport the primitive degree-fourteen power collision
+through a generic cubic.  The common cubic has two coefficients, the power
+core has three coefficients and one translation parameter, and triangular
+recovery leaves
+\[
+ 5\text{ normal coordinates}\mid6\text{ base coordinates}.
+\]
+Let \(I\) be the nineteen pulled-back Hessian residuals, let
+\(\mathfrak m\) be the ideal of the five normal coordinates, and let
+\(\delta=\lambda_2-\lambda_7\).
+
+> **Proposition 6.1 (degree-forty-two fourth normal neighborhood).**
+> Over \(\mathbb Q\),
+> \[
+>  \delta\in I+\mathfrak m^5.
+> \]
+> Hence the transported \(\{2,7\}\) power component is
+> scheme-theoretically synchronized through normal order four, uniformly
+> over its six-dimensional base.
+
+The exact block-order Gröbner basis has size \(88\).
+[`verify_degree42_transported_27_normal_jets.py`](../scripts/verify_degree42_transported_27_normal_jets.py)
+reconstructs the chart, verifies its polynomial inverse and the primitive
+Ritt identity, adjoins every degree-five normal monomial, and reduces the
+defect to zero over \(\mathbb Q\).  The same calculation over
+\(\mathbb F_{32003}\) has the same basis size.  Exact normal orders one,
+two, and three have basis sizes \(8,19,55\); they also follow formally from
+the order-four membership.
+
+The untruncated modular full-basis calculation timed out after \(900\)
+seconds, and exact normal order five timed out after \(300\) seconds.  These
+are performance boundaries, not failed reductions.  Thus the current
+\(\{2,7\}\) gap begins at order five.
+
+For the remaining calculation, the theorem removes the right factor from
+the elimination variables.  For each degree-forty-two row:
 
 1. reconstruct the unique candidate \(R\) directly from the top \(r-1\)
    coefficients;

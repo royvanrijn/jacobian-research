@@ -1055,6 +1055,18 @@ the characteristic-two dual-number counterexample when the total outer
 degree is not invertible.  The theorem itself works over every ring in which
 that outer degree is a unit.
 
+The first degree-`42` primary transport certificate is:
+
+```bash
+make verify-degree42-hessian-normal-jets
+```
+
+On the `{2,7}` pair it constructs the `5 normal | 6 base` common-cubic
+power chart and proves over `QQ` that the synchronization defect belongs to
+the Hessian residual ideal plus the fifth power of the normal ideal.  Thus
+the full six-parameter component synchronizes through normal order four.
+The exact basis has size `88`.
+
 The generated certificates are stored as the conservative
 [`79-variable artifact`](artifacts/generated-results/long_bcw_79_counterexample.json)
 and optimized
