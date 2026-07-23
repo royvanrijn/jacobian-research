@@ -20,6 +20,7 @@ and external review are recorded only in
 | Degree-twelve local singularity | [Local singularity](DEGREE12_LOCAL_SINGULARITY.md) |
 | Weighted exceptional partition lattice | [Minimal common coarsenings, universal collision weights, and the degree-twenty census](PARTITION_LATTICE_GEOMETRY.md) |
 | Degree-eighteen triple intersection | [Three-sheet transverse gluing and the generic conductor equalizer](DEGREE18_TRIPLE_INTERSECTION.md) |
+| General omitted-component intersection algebra | [Primitive merger hypergraphs, the quadratic sandwich, cycle spaces, and the first merged-block failure](OMITTED_COMPONENT_INTERSECTION_ALGEBRA.md) |
 | Finite-field Chebotarev | [Effective theorem](FINITE_FIELD_CHEBOTAREV.md) |
 | Arithmetic indistinguishability | [Exact degree-five arithmetic twins and the degree-seven Davenport--Gassmann specialization](ARITHMETIC_INDISTINGUISHABILITY.md) |
 | Limits of finite-field detection | [No permutation reductions in the weighted family; adversarially identical reductions for inequivalent degree-five maps](FINITE_FIELD_DETECTION_LIMITS.md) |

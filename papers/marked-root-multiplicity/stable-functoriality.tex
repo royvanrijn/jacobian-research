@@ -9,9 +9,10 @@ boundary signature.
 
 \begin{proposition}[stable normalization functoriality]
 \label{prop:stable-normalization}
-Let $Y$ be a normal integral affine variety over $\C$, let $L/k(Y)$ be a
-finite extension, and put $X=\Norm_Y(L)$.  Let $U\subset X$ be a dense open
-and $\partial=(X\setminus U)_{\mathrm{red}}$.  For $s\ge0$, write
+Let $Y=\operatorname{Spec}A$ be an integral affine variety over $\C$, let
+$L/k(Y)$ be a finite extension, and let $B$ be the integral closure of $A$
+in $L$.  Put $X=\operatorname{Spec}B=\Norm_Y(L)$.  Let $U\subset X$ be a
+dense open and $\partial=(X\setminus U)_{\mathrm{red}}$.  For $s\ge0$, write
 \[
  Y_s=Y\times\A^s,\qquad U_s=U\times\A^s,
  \qquad L_s=L(t_1,\ldots,t_s).
@@ -35,8 +36,9 @@ Under (5.1) the following statements hold.
 \]
 and its prime divisors are exactly $E\times\A^s$, with $E$ a
 prime divisor of $\partial$.
-\item If a boundary prime $E$ lies over a target prime divisor $Z$, the
-corresponding stabilized primes are $E_s=E\times\A^s$ and
+\item If a boundary prime $E$ lies over a target prime divisor $Z$ whose
+generic local ring in $Y$ is a DVR---as it is for the normal targets used
+below---the corresponding stabilized primes are $E_s=E\times\A^s$ and
 $Z_s=Z\times\A^s$.  Their divisorial valuations are the Gauss extensions
 \[
  v_{E_s}|_L=v_E,\qquad v_{E_s}(t_i)=0,
@@ -63,6 +65,9 @@ then the stabilized ring is $R[t_1,\ldots,t_s]$ and
 \]
 Consequently reducedness and the exact nilpotency index of the nilradical
 are preserved.
+\item Scheme-theoretic images of finite stratum maps commute with
+stabilization.  Thus every target stratum reconstructed as such an image
+acquires exactly an $\A^s$ factor.
 \end{enumerate}
 \end{proposition}
 
@@ -70,8 +75,50 @@ are preserved.
 This is the specialization of the construction-independent
 \href{../../verified/STABLE_NORMALIZATION_FUNCTORIALITY.md}
 {stable-normalization functoriality theorem}.  Apply its normalization,
-boundary, valuation, intersection, and nilradical clauses to the pair
-$(X,U)$.
+boundary, valuation, intersection, nilradical, and scheme-image clauses to
+the pair $(X,U)$.
+\end{proof}
+
+\begin{proposition}[map-intrinsic normalization package]
+\label{prop:map-intrinsic-normalization}
+Let $F:U\to Y$ be dominant, separated, and quasi-finite, with $U$ and $Y$
+normal integral affine varieties.  Put
+\[
+ \overline X_F=\Norm_Y k(U),\qquad
+ \mathcal B(F)=
+ \bigl(\overline X_F\xrightarrow{\pi_F}Y,
+       j_F:U\hookrightarrow\overline X_F,
+       (\overline X_F\setminus j_F(U))_{\rm red}\bigr). \tag{5.6}
+\]
+Then $\mathcal B(F)$ is reconstructed functorially from $F$.  More precisely,
+every pair of isomorphisms $a:U\simeq U'$ and $b:Y\simeq Y'$ satisfying
+$G\circ a=b\circ F$ induces a unique isomorphism
+$\overline a:\overline X_F\simeq\overline X_G$ over $b$ satisfying
+$\overline a\circ j_F=j_G\circ a$.  It transports the boundary primes,
+their target scheme-images, valuation labels, and every finite stratum map
+selected uniquely from those data.  Moreover
+\[
+ \mathcal B(F\times\mathrm{id}_{\A^s})
+ \simeq \mathcal B(F)\times\A^s.                       \tag{5.7}
+\]
+Consequently every decoration constructed functorially from this package is
+invariant under stable polynomial left--right equivalence.
+\end{proposition}
+
+\begin{proof}
+Zariski's Main Theorem gives the canonical open immersion
+$j_F:U\hookrightarrow\overline X_F$.  The compatible function-field
+isomorphisms induced by $a$ and $b$ identify the two finite extensions and
+their integral closures.  This gives $\overline a$, and uniqueness of the
+factorization through the integral closure gives
+$\overline a\circ j_F=j_G\circ a$.  Complements, boundary primes, target
+scheme-images, valuations, and intrinsic selection rules are therefore
+transported.  Proposition~\ref{prop:stable-normalization} identifies the
+normalization after stabilization, and uniqueness of the Zariski--Main
+factorization identifies its open immersion with
+$j_F\times\mathrm{id}_{\A^s}$.  This proves (5.7).  Composing (5.7) with the
+isomorphism supplied by a left--right equivalence of stabilizations proves
+the last assertion.
 \end{proof}
 
 \begin{lemma}[stable boundary signature]\label{lem:stable}
@@ -81,11 +128,11 @@ adjoining any number of identity variables.
 \end{lemma}
 
 \begin{proof}
-A left--right equivalence identifies the corresponding finite function-field
-extensions over isomorphic targets.  Uniqueness and functoriality of
-normalization identify the finite covers, carry the distinguished affine
-open to the distinguished affine open, and preserve boundary valuations,
-their $e,f$ labels, and scheme-theoretic target intersections.  The intrinsic
+A left--right equivalence transports the map-intrinsic package of
+Proposition~\ref{prop:map-intrinsic-normalization}.  It therefore identifies
+the finite covers, carries the distinguished affine open to the
+distinguished affine open, and preserves boundary valuations, their $e,f$
+labels, and scheme-theoretic target intersections.  The intrinsic
 ramification marking from Lemma~\ref{lem:boundary} prevents the two target
 vertices from being exchanged.
 

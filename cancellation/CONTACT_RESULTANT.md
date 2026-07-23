@@ -805,7 +805,7 @@ that threshold, is the direct remaining task.  The exact Newton edge,
 squarefreeness, and linear reconstruction are replayed by
 [`verify_contact_resultant_r6_asymptotic.py`](../scripts/verify_contact_resultant_r6_asymptotic.py).
 
-A stronger effective certificate is available at the limiting edge.  The
+A stronger certificate is available at the limiting edge.  The
 29 roots consist of one positive real root and fourteen conjugate pairs.
 Their expansions `y=1+x_0/m+x_1/m^2+O(m^-3)` and
 `z=z_0+z_1/m+O(m^-2)` are reconstructed explicitly, and rational Rouche
@@ -816,7 +816,90 @@ complex-conjugation classes and replay are in
 [`R6_BRANCH_ATLAS.md`](R6_BRANCH_ATLAS.md) and
 [`explore_contact_resultant_r6_branch_atlas.py`](../scripts/explore_contact_resultant_r6_branch_atlas.py).
 
-## 12. Finite single-prime certificates
+## 12. Effective completion of the `r=6` column
+
+The limiting atlas can be continued effectively all the way to the existing
+finite certificates.  In the chart `t=1/m`, `y=1+tx`, cancellation of the
+common denominator in the normalized sixth-moment equation gives
+
+\[
+ z^6={10\over (1+tx)Q(t,x)},                         \tag{58}
+\]
+
+where
+
+\[
+\begin{aligned}
+Q={}&10t^6x^6+147t^5x^6-10t^5x^5
+ +812t^4x^6-137t^4x^5+10t^4x^4\\
+&+2205t^3x^6-675t^3x^5+125t^3x^4-10t^3x^3\\
+&+3150t^2x^6-1530t^2x^5+525t^2x^4-110t^2x^3+10t^2x^2\\
+&+2268tx^6-1620tx^5+900tx^4-360tx^3+90tx^2-10tx\\
+&+648x^6-648x^5+540x^4-360x^3+180x^2-60x+10.
+\end{aligned}                                       \tag{59}
+\]
+
+Thus a common root with `z=y^m` would satisfy the single scalar identity
+
+\[
+ 10=Q(t,x)(1+tx)^{6/t+1}.                            \tag{60}
+\]
+
+Partition `0<=t<=1/41` into 256 rational cells.  On each cell, numerical
+continuation proposes centers for the 29 roots of `P_6(t,x)`.  These centers
+are not trusted.  With 320-bit Arb balls, Taylor expansion in `x` verifies
+the strict Rouche inequality
+
+\[
+ |a_1(t)|r>|a_0(t)|+\sum_{j=2}^{29}|a_j(t)|r^j       \tag{61}
+\]
+
+uniformly on the cell, after `P_6(t,c+w)=sum a_j(t)w^j`.  The 29 resulting
+disks are pairwise disjoint.  Hence every cell has 29 certified root tubes,
+one root per tube, and these exhaust the eliminant.  There are
+`256*29=7424` such tubes.
+
+For every nonreal tube put
+
+\[
+ \Delta(t,x)=\log(Q(t,x)/10)
+ +(6+t){\log(1+tx)\over t}.                          \tag{62}
+\]
+
+The quotient in (62) is evaluated regularly at `t=0` by its convergent
+series
+
+\[
+ {\log(1+tx)\over t}
+ =x\sum_{k\ge0}{(-tx)^k\over k+1},                  \tag{63}
+\]
+
+with an explicit geometric tail.  All nonreal tubes have `|tx|<1`.
+Equation (60) would force `Re Delta=0` and `Im Delta` to be an integral
+multiple of `2*pi`.  Arb enclosures exclude the first condition on 5920
+tubes and exclude the second on the remaining 1504.  The unique positive
+real tube is invariant under conjugation and therefore contains a real root;
+direct real logarithmic bounds give `Delta>0` there.  This proves
+
+\[
+ \boxed{\operatorname{Res}_w(K_{m,6},L_{m,6})\ne0
+        \quad\text{for every integer }m\ge41.}       \tag{64}
+\]
+
+Finally, degree-preserving reduction modulo `1,000,003` gives monic gcd one
+for every `1<=m<=40`.  Combining the finite and tail certificates yields
+
+\[
+ \boxed{\operatorname{Res}_w(K_{m,6},L_{m,6})\ne0
+        \quad\text{for every integer }m\ge1.}        \tag{65}
+\]
+
+The complete replay is
+[`verify_contact_resultant_r6_effective.py`](../scripts/verify_contact_resultant_r6_effective.py).
+It requires `python-flint`; floating-point root finding supplies candidates
+only, while every accepted tube and inequality is certified by Arb.
+
+## 13. Finite single-prime certificates
 
 As finite evidence, direct endpoint gcds modulo `1,000,003` give no common
 factor in the following grid:
@@ -839,15 +922,14 @@ by
 [`verify_contact_resultant_modular_grid.py`](../scripts/verify_contact_resultant_modular_grid.py).
 They are evidence only and do not replace the uniform argument.
 
-## 13. Scope boundary (`OP-CR`)
+## 14. Scope boundary (`OP-CR`)
 
-The all-parameter problem now begins in the residual wedge `m>=7`, `r>=6`
+The all-parameter problem now begins in the residual wedge `m>=7`, `r>=7`
 not covered by (46) or another parameter-irreducibility theorem.  Formula
 (6) still gives a fixed comparison disk, but the `r=4` analysis shows that
 demanding every endpoint-eliminant root lie outside it is too strong.  For
-`r=6`, (50)--(57) supersede a whole-eliminant Schur--Cohn attack: the problem
-is now to make the 29 algebraic branches effective and close the finite
-range.
+`r=6`, (58)--(65) complete the whole column without a whole-eliminant
+Schur--Cohn attack.
 
 Two structural routes remain useful beyond that first column.  First,
 combine the factor-degree restriction after (47) with endpoint geometry.  A
@@ -860,13 +942,13 @@ natural inputs to such a bound.
 Second, the hypergeometric equation for `K=K_(m,r)` is
 
 \[
- w(1-w)K''+\{r+2-(r+2-mr)w\}K'+mr(r+1)K=0.          \tag{58}
+ w(1-w)K''+\{r+2-(r+2-mr)w\}K'+mr(r+1)K=0.          \tag{66}
 \]
 
 Its roots avoid `0,1` and are simple.  Hence any differential-operator
-formula for `L` reduces modulo (58) to `A_(m,r)(w)K'+B_(m,r)(w)K`; at a root
+formula for `L` reduces modulo (66) to `A_(m,r)(w)K'+B_(m,r)(w)K`; at a root
 of `K`, coprimality becomes the local nonvanishing of `A_(m,r)`.  The useful
-open step is not merely low differential order, which (58) supplies
+open step is not merely low differential order, which (66) supplies
 automatically, but a contiguous-relation formula keeping `A_(m,r)` of
 controlled algebraic complexity.
 

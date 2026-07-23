@@ -267,6 +267,16 @@ tail threshold in `t=1/m`.
 .venv/bin/python scripts/explore_contact_resultant_r6_branch_atlas.py
 ```
 
+The effective continuation requires the pinned `python-flint` dependency in
+`requirements.txt`.  It certifies 29 disjoint Rouche tubes on each of 256
+rational cells covering `0<=t<=1/41`, separates the sixth-power identity by
+modulus or phase on every tube, and checks the finite range `1<=m<=40`
+modulo `1,000,003`:
+
+```bash
+.venv/bin/python scripts/verify_contact_resultant_r6_effective.py
+```
+
 The additional finite `5<=r<=12` endpoint grid is quick to replay.  It checks
 203 monic gcd certificates modulo `1,000,003`, including denominator and
 leading-coefficient unit conditions:
@@ -433,6 +443,19 @@ moment-coordinate certificate:
 ```bash
 .venv/bin/python scripts/verify_degree_six_gaussian_moment_geometry.py
 ```
+
+The general primitive-merger theorem and its first failure have a separate
+exact certificate:
+
+```bash
+.venv/bin/python scripts/verify_omitted_intersection_algebra.py
+```
+
+It constructs the allocation hypergraph and merger-cycle spaces for the
+degree-twelve, degree-eighteen, and first degree-twenty-four faces.  It also
+derives the primitive dual-number block and proves that coalescing two such
+blocks gives `k[X,Y]/(X^3,XY,Y^2)`, which has the same length and Hilbert
+vector as two dual numbers but a two-dimensional socle.
 
 It derives the irreducible sextic equation of the all-double component,
 parametrizes the all-triple curve, and verifies that their four all-six

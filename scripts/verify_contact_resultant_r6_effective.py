@@ -50,7 +50,7 @@ m, y, z, t, x = sp.symbols("m y z t x")
 R = 6
 D = 1 - y
 TAIL_START = 41
-CELL_COUNT = 512
+CELL_COUNT = 256
 LOG_TERMS = 100
 
 
@@ -373,7 +373,8 @@ def certify_separation(t_ball: arb, tube: Tube) -> str:
         assert bool(difference.lower() > 0)
         return "modulus"
 
-    x_ball = tube.center + acb(radius, radius)
+    x_error = acb(arb(0, radius), arb(0, radius))
+    x_ball = tube.center + x_error
     q_ball = evaluate_bivariate(Q_COEFFICIENTS, t_ball, x_ball)
     assert isinstance(q_ball, acb) and not q_ball.contains(0)
     logarithm_ratio = regular_log_ratio(t_ball, x_ball)
@@ -449,3 +450,52 @@ print(
     "PASS contact resultant r=6 effective tail: "
     f"nonvanishing for every integer m>={TAIL_START}"
 )
+
+# Join the effective tail to an exact finite certificate.  Degree preservation
+# and a modular gcd equal to one prove coprimality over QQ.
+PRIME = 1_000_003
+
+
+def inverse_mod(value: int) -> int:
+    residue = value % PRIME
+    assert residue != 0
+    return pow(residue, -1, PRIME)
+
+
+def endpoint_moment_coefficients(parameter: int, k: int) -> list[int]:
+    denominator = math.prod(parameter * k + j for j in range(1, k + 2))
+    normalized_beta = math.factorial(k) * inverse_mod(denominator) % PRIME
+    return [
+        normalized_beta * math.comb(j + k, k) % PRIME
+        for j in range(parameter * k + 1)
+    ]
+
+
+def finite_endpoint_pair(parameter: int) -> tuple[sp.Poly, sp.Poly]:
+    degree = parameter * R
+    moments = [endpoint_moment_coefficients(parameter, k) for k in range(R + 1)]
+    k_coefficients = moments[R]
+    l_coefficients = [0] * (degree + 1)
+    for k, moment in enumerate(moments):
+        shift = parameter * (R - k)
+        multiplier = (-1) ** k * math.comb(R, k)
+        for index, coefficient in enumerate(moment):
+            l_coefficients[index + shift] = (
+                l_coefficients[index + shift] + multiplier * coefficient
+            ) % PRIME
+    K = sp.Poly.from_list(k_coefficients[::-1], gens=y, modulus=PRIME)
+    L = sp.Poly.from_list(l_coefficients[::-1], gens=y, modulus=PRIME)
+    assert K.degree() == L.degree() == degree
+    assert K.LC() % PRIME != 0 and L.LC() % PRIME != 0
+    return K, L
+
+
+for finite_m in range(1, TAIL_START):
+    finite_K, finite_L = finite_endpoint_pair(finite_m)
+    assert sp.gcd(finite_K, finite_L).degree() == 0
+
+print(
+    "PASS contact resultant r=6 finite range: "
+    f"40 modular gcd certificates modulo {PRIME}"
+)
+print("PASS contact resultant: uniform nonvanishing for every m>=1 and r=6")

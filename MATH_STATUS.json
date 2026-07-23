@@ -93,13 +93,32 @@
       "kind": "theorem",
       "state": "proved",
       "title": "Stable normalization functoriality",
-      "scope": "Polynomial stabilization preserves normalization, boundary primes and (e,f), scheme intersections and nilpotency indices, Fitting ideals, node pairings, and conductors.",
+      "scope": "The Zariski-Main normalization package is functorially reconstructed from a dominant quasi-finite map; polynomial stabilization preserves it, its boundary primes and (e,f), scheme intersections and nilpotency indices, Fitting ideals, node pairings, and conductors. Stable left-right invariance applies only to decorations intrinsically selected from that package.",
       "canonical_source": "verified/STABLE_NORMALIZATION_FUNCTORIALITY.md",
       "dependencies": [],
       "checker": null,
       "review": "none",
       "supersedes": [
         "construction-private stabilization arguments"
+      ],
+      "replaced_by": [],
+      "priority": "core"
+    },
+    {
+      "id": "WB1",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Weighted clean-locus intrinsic boundary",
+      "scope": "For weighted seeds with an exact double zero and otherwise simple primitive roots, the map-intrinsic normalization package has exactly two ordered target boundary images; removing the unramified vertex recovers the discriminant normalization, and the second-boundary center and affine root sheet are intrinsic on the stated clean loci.",
+      "canonical_source": "papers/decorated-discriminant-normalization/main.tex",
+      "dependencies": [
+        "S1",
+        "W1"
+      ],
+      "checker": "scripts/verify_decorated_normalization.py",
+      "review": "none",
+      "supersedes": [
+        "presentation-defined weighted boundary marks"
       ],
       "replaced_by": [],
       "priority": "core"
@@ -153,7 +172,8 @@
       "canonical_source": "papers/decorated-discriminant-normalization/main.tex",
       "dependencies": [
         "S1",
-        "W1"
+        "W1",
+        "WB1"
       ],
       "checker": "scripts/verify_decorated_normalization.py",
       "review": "none",
@@ -173,7 +193,8 @@
       "dependencies": [
         "D1",
         "S1",
-        "W1"
+        "W1",
+        "WB1"
       ],
       "checker": "scripts/verify_generic_affine_mark_faithfulness.py",
       "review": "none",
@@ -676,6 +697,24 @@
       "priority": "derived"
     },
     {
+      "id": "E8",
+      "kind": "corollary",
+      "state": "proved",
+      "title": "Primitive merger hypergraph and Boolean intersection criterion",
+      "scope": "For every finite ordered family of normalization sheets whose active allocation hyperedges are distinct sixfold collision clusters, the strong transverse common-polynomial algebra is k[e_1,...,e_t]/(e_1^2,...,e_t^2), with tangent excess t, length 2^t, binomial Hilbert vector, and nonzero top socle. Merger-cycle rank records path dependencies and does not alter t. A quadratic-sandwich criterion promotes the strong algebra to the actual normalized-seed intersection; it recovers E4 and E7. The first Boolean failure is the merged twelvefold block k[X,Y]/(X^3,XY,Y^2), whose length remains four but whose socle has dimension two.",
+      "canonical_source": "extended-geometry/OMITTED_COMPONENT_INTERSECTION_ALGEBRA.md",
+      "dependencies": [
+        "E3",
+        "E4",
+        "E7"
+      ],
+      "checker": "scripts/verify_omitted_intersection_algebra.py",
+      "review": "none",
+      "supersedes": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
       "id": "FF1",
       "kind": "corollary",
       "state": "proved",
@@ -817,7 +856,7 @@
       "kind": "corollary",
       "state": "proved",
       "title": "Scheme-theoretic decorated-normalization invariant",
-      "scope": "The intrinsic finite decorated-normalization cover with full Fitting, node-pairing, and conductor data; this is a stronger refinement of D1/F2, not an input to their generic moduli proof.",
+      "scope": "The map-intrinsic finite normalization stratum with full Fitting, node-pairing, and conductor data. Boundary-center labels are retained on the certified boundary-clean locus, and infinity is retained on the two-Fitting-support locus; outside those hypotheses no presentation-defined mark is asserted. This is a stronger refinement of D1/F2, not an input to their generic moduli proof.",
       "canonical_source": "extended-geometry/DECORATED_NORMALIZATION_INVARIANT.md",
       "dependencies": [
         "D1",
@@ -939,6 +978,24 @@
       "review": "none",
       "supersedes": [
         "whole-eliminant Schur--Cohn continuation for the r=6 asymptotic tail"
+      ],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "CR6",
+      "kind": "corollary",
+      "state": "proved",
+      "title": "Complete sixth cancellation contact-resultant column",
+      "scope": "For r=6 the cancellation contact resultant is nonzero for every integer m>=1. The effective tail m>=41 is certified by 7424 rigorous Arb Rouche tubes with modulus-or-phase separation of the sixth-power endpoint identity; 40 degree-preserving modular gcd certificates cover the finite remainder.",
+      "canonical_source": "cancellation/CONTACT_RESULTANT.md",
+      "dependencies": [
+        "CR4"
+      ],
+      "checker": "scripts/verify_contact_resultant_r6_effective.py",
+      "review": "none",
+      "supersedes": [
+        "noneffective r=6 asymptotic threshold"
       ],
       "replaced_by": [],
       "priority": "derived"
@@ -1454,7 +1511,7 @@
       "kind": "open_problem",
       "state": "open",
       "title": "Higher cancellation contact resultants",
-      "scope": "Complete r=6 by making its 29-branch asymptotic threshold effective and certifying the finite remainder, then prove the residual wedge r>=7 not covered by parameter irreducibility. Any unresolved pair has m>=7, composite N=(m+1)r+1, and at most one prime in (mr,N).",
+      "scope": "Prove the residual wedge r>=7 not covered by parameter irreducibility. The first six fixed-r columns are complete. Any unresolved pair has m>=7, r>=7, composite N=(m+1)r+1, and at most one prime in (mr,N).",
       "canonical_source": "cancellation/CONTACT_RESULTANT.md",
       "dependencies": [
         "C1",
@@ -1462,7 +1519,8 @@
         "CR2",
         "CR3",
         "CR4",
-        "CR5"
+        "CR5",
+        "CR6"
       ],
       "checker": null,
       "review": "none",

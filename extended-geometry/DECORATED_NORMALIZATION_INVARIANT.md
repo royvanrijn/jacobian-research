@@ -66,6 +66,73 @@ Consequently
 Thus a root of `H''` of order `m` occurs with coefficient `m` in the Fitting
 divisor.  Passing to `sqf(H'')` loses genuine invariant information.
 
+### Weighted intrinsic-boundary reconstruction
+
+Assume that zero is an exact double root of `H`, every nonzero root is
+simple, and the weighted reconstruction formulas are taken on their maximal
+regular open.  Form, directly from the map,
+
+\[
+ \mathcal B(F_H)=
+ (\overline X_{F_H}\to Y,
+  \mathbb A^3\hookrightarrow\overline X_{F_H},
+  \partial_{F_H})
+\]
+
+as in the map-intrinsic clause of the
+[stable normalization theorem](../verified/STABLE_NORMALIZATION_FUNCTORIALITY.md).
+The complete target images of its boundary divisors form an intrinsically
+ordered pair `(Z_Delta,Z_0)`: `Z_Delta` is the unique member receiving a
+ramified boundary prime, and `Z_0` is the other member.
+
+Indeed, on `C!=0`, regular reconstruction is equivalent to `E_W!=0`.  At the
+generic point of the reduced discriminant, the normalized double-root branch
+is outside the etale source and has `(e,f)=(2,1)`; the other `N-2` roots are
+simple affine branches.  The degree sum is therefore `2+(N-2)=N`.  At the
+generic point of `C=0`, the exact double root at zero supplies the
+residue-degree-two affine cluster and root one supplies a residue-degree-one
+affine branch.  For another simple root `rho`, the identity
+
+\[
+ y=(W-\gamma)/C,
+ \qquad \gamma\longrightarrow-H'(\rho)/c
+\]
+
+has a pole unless the numerator cancels; in that exceptional case the
+numerator of the reconstruction formula for `z` tends to `rho-1`, so the
+branch is still outside the source.  The remaining `N-3` branches are thus
+unramified boundary branches, and `2+1+(N-3)=N`.  Off these two target
+divisors every root is simple and reconstructs regularly.  The degree sums,
+therefore, exclude hidden height-one boundary primes over either divisor or
+over any other target divisor.  A boundary component supported only in
+higher codimension is also impossible.  After deleting the listed divisors,
+choose an affine neighborhood `V` of its hypothetical generic point.  The
+intersection of the affine opens `V` and `A^3` is affine because the
+normalization is separated, while normal Hartogs extension gives
+
+\[
+ \Gamma(V,O)=\Gamma(V\cap A^3,O).
+\]
+
+The corresponding inclusion of affine schemes would be an isomorphism, a
+contradiction.  Thus the two target vertices and their displayed branches
+are complete.
+
+On `C!=0`, the target change
+
+\[
+ (A,B,C)\longmapsto(s,t,C)=(BC,cAC^2,C)
+\]
+
+therefore identifies the intrinsic finite stratum map with
+
+\[
+ \widetilde D_H\times G_m\longrightarrow D_H\times G_m. \tag{1.1a}
+\]
+
+This is the family-specific step: the pencil coordinates calculate the
+stratum selected from `mathcal B(F_H)`; they do not define the invariant.
+
 ### Stable functoriality, including multiplicities
 
 All base-change assertions in this subsection are applications of the
@@ -74,8 +141,8 @@ construction-independent
 The present note supplies the family-specific identification of the intrinsic
 decorated normalization.
 
-Suppose two split weighted marked-root maps have the intrinsically ordered
-target-boundary pair `(Z_Delta,Z_0)` used in the stable boundary theorem.
+For two maps on this weighted clean locus, the preceding proposition
+reconstructs the ordered target-boundary pair `(Z_Delta,Z_0)` from the maps.
 Removing `Z_0` identifies the discriminant vertex and its normalization with
 
 \[
@@ -84,9 +151,10 @@ Removing `Z_0` identifies the discriminant vertex and its normalization with
  \widetilde D_H\times G_m.
 \]
 
-A polynomial left--right equivalence identifies these finite normalization
-morphisms.  It therefore identifies their relative differential modules and
-their zeroth Fitting ideal sheaves.  After adjoining `q` identity variables,
+The map-intrinsic functoriality theorem says that a polynomial left--right
+equivalence identifies these finite normalization morphisms.  It therefore
+identifies their relative differential modules and their zeroth Fitting ideal
+sheaves.  After adjoining `q` identity variables,
 
 \[
  \Omega_{(\widetilde D_H\times A^q)/(D_H\times A^q)}
@@ -238,7 +306,9 @@ six and its downstairs image algebra has length three.  The finite map,
 together with the off-diagonal relation, distinguishes the two preimages of a
 node from the single thick preimage of a cusp.
 
-The scheme-theoretic decorated normalization is the tuple
+On a locus where the ordered boundary pair is intrinsic and every displayed
+mark has the intrinsic characterization stated below, the scheme-theoretic
+decorated normalization is the tuple
 
 \[
  \mathcal Z(H)=
@@ -252,14 +322,22 @@ The scheme-theoretic decorated normalization is the tuple
  \bigr),                                               \tag{3.5}
 \]
 
-where the full center divisor underlying `b_H` is `gcd(H,H')`, including its
-multiplicities.  Point labels are inferred only when this divisor has a
-uniquely certified support point; the extractor never invents a mark at zero
-for an arbitrary polynomial.  For a normalized split weighted seed, the
-canonical zero-cluster mark is `r=0`.
+where the full center divisor underlying `b_H`, when retained, is the divisor
+reconstructed from the finite boundary incidence; in the pencil coordinate
+its executable presentation is `gcd(H,H')`, including multiplicities.  The
+polynomial gcd alone does not define an invariant.  Point labels are inferred
+only when the boundary incidence has a uniquely certified support point; the
+extractor never invents a mark at zero for an arbitrary polynomial.  For a
+normalized boundary-clean split weighted seed, the canonical zero-cluster
+mark is `r=0`.
 Further intrinsically labeled boundary branches may be retained as additional
-marks.  Every entry in (3.5) is constructed from the canonical normalization,
-its finite map, and the ordered boundary pair, so stable left--right
+marks.  When the Fitting divisor has at least two distinct support points, the
+unit argument above forces every stabilized normalization-coordinate change
+to be affine and hence also preserves the unique completion point `infinity`.
+Without this two-support condition, infinity must be independently
+characterized before it is retained.  Subject to these explicit mark
+hypotheses, every entry in (3.5) is constructed from the map-intrinsic
+normalization package and its finite stratum maps, so stable left--right
 equivalence preserves the decorated isomorphism class.
 
 The assertion that `r=0` is canonical is an exact boundary-chart statement,
@@ -800,7 +878,11 @@ normalization commutes with polynomial extension, giving
  \simeq\mathcal B(F)\times A^q.                         \tag{6.2}
 \]
 
+The map-intrinsic theorem proves the transport assertion here, including the
+open immersion; it is not an appeal to uniqueness of the finite cover alone.
 The active computable invariant is organized in three functorial layers.
+An item in these layers is retained only after its stratum and any label on
+it have been characterized uniquely from (6.1).
 
 1. The reduced layer retains the ordered target divisors, every upstairs
    boundary prime and finite edge map, geometric and arithmetic `(e,f)`, and
@@ -895,7 +977,7 @@ for a completed computation in every family.
 | full Fitting divisor, including multiplicities | complete | complete |
 | saturated off-diagonal scheme and its `S_2` quotient | complete in characteristic zero | complete; quotient pullback and node transversality are checked |
 | conductor map | complete as an intrinsic finite-stratum construction, including the admissible-cover contraction | exact implicit-equation formula for arbitrary plane-curve singularities; simultaneous multicluster exponent `e_i(sum_j e_j-1)` and normalized-Stein comparison checked separately |
-| infinity and second-boundary marks | complete | exact for the weighted seeds; the quartic zero-cluster chart is checked |
+| infinity and second-boundary marks | complete on the boundary-clean, two-Fitting-support locus; otherwise a mark is not retained without an independent intrinsic characterization | exact for the weighted clean locus; the quartic zero-cluster chart is checked |
 | stacky marked extension | complete at arbitrary simultaneous multicluster collisions | selected root retained on the marked admissible-cover stack; quotient map finite representable etale of degree `N-2`; normalized-Stein contractions, completed root-cover charts, and conductor squares identified |
 | coarse affine root-one descent | complete after contraction | the finite birational closure is an isomorphism over the normal marked coarse compactification; the local invariant ring is the universal monic-root incidence and its total-collision fiber `k[T]/(T^mu)` has one geometric point |
 | upstairs `(e,f)`, different, DVR, and inertia data | complete as invariant data | generic divisorial layer complete |

@@ -12,6 +12,86 @@ $H(W)-sW+t$ and let
 be its affine normalization.  Write
 $R_H=k[H'(r),rH'(r)-H(r)]\subset k[r]$.
 
+\begin{proposition}[weighted intrinsic-boundary reconstruction]
+\label{prop:weighted-intrinsic-boundary}
+Assume that zero is an exact double root of $H$, that every nonzero root is
+simple, and that the weighted reconstruction formulas are used on their
+maximal regular open.  In the map-intrinsic package
+$\mathcal B(F_H)$ of the construction-independent stable-normalization
+theorem, the complete set of
+target images of boundary divisors is a pair
+\[
+ (Z_\Delta,Z_0).
+\]
+It is intrinsically ordered: $Z_\Delta$ is the unique member receiving a
+ramified boundary prime, and $Z_0$ is the other member.  Removing $Z_0$
+recovers, from the map rather than from the chosen pencil coordinate, the
+finite normalization morphism
+\[
+ \widetilde D_H\times\mathbb G_m
+ \longrightarrow D_H\times\mathbb G_m.                \tag{6.1a}
+\]
+Consequently this ordered finite morphism is transported by polynomial
+left--right equivalence and acquires only an affine-space factor under
+stabilization.
+\end{proposition}
+
+\begin{proof}
+Write the weighted inverse equation as
+\[
+ E(W)=H(W)-BCW+cAC^2.
+\]
+On $C\ne0$, regular reconstruction is equivalent to $E_W\ne0$.  At the
+generic point of the reduced discriminant exactly one inverse root is double.
+Its normalized critical branch is outside the etale source open and has
+$(e,f)=(2,1)$; the other $N-2$ roots are simple affine branches.  Thus the
+local degree sum is $2+(N-2)=N$.
+
+At the generic point of $C=0$, the exact double root at zero gives the
+residue-degree-two affine cluster, and the normalized root at one gives a
+residue-degree-one affine branch.  If $\rho\ne0,1$ is another simple root,
+the reconstruction identity
+\[
+ y=(W-\gamma)/C,
+ \qquad \gamma\longrightarrow-H'(\rho)/c
+\]
+has a pole unless $-H'(\rho)/c=\rho$.  In the exceptional cancellation of
+that numerator, the numerator of the reconstruction formula for $z$ tends
+to $\rho-1$, so the branch is still outside the source open.  Hence the
+remaining $N-3$ branches are unramified boundary branches and the second
+degree sum is $2+1+(N-3)=N$.
+
+Off the discriminant and $C=0$, every inverse root is simple and all
+reconstruction coordinates are regular.  The two degree sums therefore
+exclude an additional height-one prime over either divisor.  They also
+exclude a height-one prime over any other target divisor, since regular
+reconstruction covers its generic point.  There is no complement component
+supported only in higher codimension: after removing the listed divisors,
+choose an affine neighborhood $V$ of its hypothetical generic point.  The
+intersection of the affine opens $V$ and $\A^3\subset\overline X_{F_H}$ is
+affine because the normalization is separated, and normal Hartogs extension
+gives
+\[
+ \Gamma(V,\mathcal O)=
+ \Gamma(V\cap\A^3,\mathcal O).
+\]
+The corresponding inclusion of affine schemes is therefore an isomorphism,
+a contradiction.  This proves completeness.  The discriminant member is
+uniquely characterized by its ramified boundary prime, so the ordering is
+intrinsic.
+
+Finally, on $C\ne0$ the target change
+\[
+ (A,B,C)\longmapsto(s,t,C)=(BC,cAC^2,C)
+\]
+identifies $Z_\Delta\setminus Z_0$ with
+$D_H\times\mathbb G_m$, and its normalized critical incidence is
+$\widetilde D_H\times\mathbb G_m$.  Because both vertices were selected
+inside $\mathcal B(F_H)$, this identification proves (6.1a) is the explicit
+form of an intrinsic finite stratum map.  The last assertion now follows
+from the map-intrinsic and stabilization clauses of that theorem.
+\end{proof}
+
 \begin{proposition}[full Fitting divisor]
 \label{prop:full-fitting}
 There is an equality of ideal sheaves on the normalization
@@ -26,9 +106,10 @@ left--right equivalence and by adjoining identity variables.
 The tangent-map core theorem identifies the critical restriction with
 $\nu_H$ and gives
 $\Omega_{k[r]/R_H}\simeq k[r]/(H'')\,dr$, proving (6.2).
-The construction-independent stable normalization theorem identifies the finite normalization morphisms on
-the intrinsic discriminant vertex away from the second vertex, so it
-identifies their relative differential modules and Fitting ideals.  Under
+Proposition~\ref{prop:weighted-intrinsic-boundary} identifies the displayed
+finite normalization morphism inside the map-intrinsic package.  The
+construction-independent stable normalization theorem therefore transports
+its relative differential module and Fitting ideals.  Under
 stabilization one has
 \[
  \Omega_{(\widetilde D_H\times\A^q)/(D_H\times\A^q)}
@@ -46,8 +127,45 @@ form $r\mapsto ar+b$, $a\ne0$.  Proposition~\ref{prop:full-fitting} then says
 that the full effective Hessian divisor is carried affinely, with its
 coefficients.
 
-On the boundary-clean seed locus the second target boundary canonically
-marks $r=0$, while projective completion marks $r=\infty$.  The minimal
+\begin{lemma}[intrinsic zero and infinity marks]
+\label{lem:weighted-boundary-marks}
+Assume zero is the unique multiple root of $H$ and is an exact double root.
+The closure of the normalized discriminant stratum over
+$Z_\Delta\cap Z_0$ has the unique finite valuation center $r=0$.  Thus the
+second target boundary intrinsically marks zero.  If the Fitting divisor has
+at least two support points, stable left--right equivalence also preserves
+the unique point at infinity of the projective normalization.
+\end{lemma}
+
+\begin{proof}
+On the normalized discriminant stratum,
+\[
+ B=\frac{H'(r)}C,
+ \qquad
+ A=\frac{rH'(r)-H(r)}{cC^2}.                           \tag{6.2a}
+\]
+If $C\to0$ and $r\to\rho$ has finite target limit, then
+$H'(\rho)=H(\rho)=0$.  The unique-multiple-root hypothesis forces
+$\rho=0$.  Conversely, writing $H(r)=h_2r^2+O(r^3)$ and setting $r=Ck$
+gives
+\[
+ B\to2h_2k,
+ \qquad A\to(h_2/c)k^2,
+ \qquad B^2=4ch_2A,                                   \tag{6.2b}
+\]
+so this center actually occurs.  Since it is defined as the valuation center
+of the closure of the intrinsic finite stratum (6.1a), it is transported by
+the map-intrinsic normalization theorem.
+
+With two Fitting-support points, the preceding unit argument makes the
+induced normalization-coordinate change affine.  It therefore extends to
+the projective completions and fixes their unique points outside the affine
+lines, proving the infinity assertion.
+\end{proof}
+
+On the boundary-clean seed locus with at least two Fitting-support points,
+Lemma~\ref{lem:weighted-boundary-marks} canonically marks $r=0$ and
+$r=\infty$.  The minimal
 stable invariant used for generic moduli is therefore
 \[
  \mathcal H_H=(\P^1;\operatorname{div}(H''),0,\infty).
@@ -279,9 +397,17 @@ D2 retains the finite conductor morphism
  \longrightarrow
  \operatorname{Spec}(R_H/(R_H\cap\mathfrak c_Hk[r])), \tag{6.14c}
 \]
-together with the full Fitting divisor, node pairing, infinity mark, and
-second-boundary center divisor $\gcd(H,H')$.  Every part is preserved under
-stable polynomial left--right equivalence.  The extended D2 audit records
+together with the full Fitting divisor and node pairing.  On the
+boundary-clean locus it also retains the second-boundary center divisor,
+whose pencil-coordinate presentation is $\gcd(H,H')$ but whose invariant
+definition is the corresponding finite boundary incidence.  If the Fitting
+support contains at least two points, the normalization-cylinder unit
+argument forces its coordinate change to be affine and therefore preserves
+the unique infinity point.  Without these intrinsic center and two-support
+hypotheses, the center label or infinity point is not included merely because
+it appears in a chosen pencil presentation.  With the stated hypotheses,
+every retained part is preserved under stable polynomial left--right
+equivalence.  The extended D2 audit records
 the exact saturation, quotient, transversality, conductor, and collision
 checks omitted from the minimal moduli proof.
 

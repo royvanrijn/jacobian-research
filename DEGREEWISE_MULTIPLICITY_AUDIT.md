@@ -237,10 +237,12 @@ adjoining identity variables.
 ### Check
 
 A left--right equivalence identifies the two function-field extensions over
-the corresponding targets.  Functoriality and uniqueness of normalization
-therefore identify the finite covers, their distinguished affine opens,
-their boundary primes, and the target scheme intersections.  Ramification
-indices and nilradicals are intrinsic under this isomorphism.
+the corresponding targets.  The map-intrinsic clause of the
+[stable normalization functoriality theorem](verified/STABLE_NORMALIZATION_FUNCTORIALITY.md)
+then identifies the finite covers and, by uniqueness of the Zariski--Main
+factorization, their distinguished affine opens.  It consequently transports
+their boundary primes and target scheme intersections.  Ramification indices
+and nilradicals are intrinsic under this isomorphism.
 
 The construction-independent
 [stable normalization functoriality theorem](verified/STABLE_NORMALIZATION_FUNCTORIALITY.md)

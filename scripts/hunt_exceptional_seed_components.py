@@ -99,10 +99,24 @@ class SingularProgram:
     def __init__(self, degree: int, deep: bool):
         self.degree = degree
         self.deep = deep
+        h_names = tuple(f"h{index}" for index in range(3, degree))
         self.lines = [
             'LIB "elim.lib";',
             'LIB "primdec.lib";',
             "option(redSB);",
+            f"ring target=0,({','.join(h_names)},z),dp;",
+            "proc sameIdeal(ideal a, ideal b)",
+            "{",
+            "  a=std(a); b=std(b);",
+            "  ideal left=simplify(reduce(a,b),2);",
+            "  ideal right=simplify(reduce(b,a),2);",
+            "  return(size(left)==0 && size(right)==0);",
+            "}",
+            "proc containedIdeal(ideal small, ideal large)",
+            "{",
+            "  ideal remainder=simplify(reduce(small,std(large)),2);",
+            "  return(size(remainder)==0);",
+            "}",
         ]
         self.sources: dict[tuple[tuple[int, ...], str], SourceIdeal] = {}
 
@@ -141,10 +155,7 @@ class SingularProgram:
         variables = nuisance + canonical_h
         ring_name = f"r_{tag(partition)}_{variant}"
         ideal_name = f"k_{tag(partition)}_{variant}"
-        self.lines.append(
-            f"ring {ring_name}=0,({','.join(map(str, variables))}),"
-            f"(lp({len(nuisance)}),dp({len(canonical_h)}));"
-        )
+        self.lines.append(f"ring {ring_name}=0,({','.join(map(str, variables))}),dp;")
         equation_strings = [singular_expression(equation, substitution) for equation in equations]
         self.lines.append(f"ideal j={','.join(equation_strings)};")
         self.lines.append(
@@ -160,59 +171,49 @@ class SingularProgram:
         )
         elimination_monomial = "*".join(map(str, nuisance))
         self.lines.append(
-            f"ideal {ideal_name}=eliminate(std(j),{elimination_monomial});"
+            f'ideal {ideal_name}=eliminate(j,{elimination_monomial},"slimgb");'
         )
         self.lines.append("kill j;")
+        if variant == "all" and set(partition) <= {2, 3}:
+            self.lines.extend(
+                [
+                    f'print("CHART|{self.degree}|{tag(partition)}|admissible|"+string(gcd(rootPhi,rootAdmissible)==1));',
+                    f'print("CHART|{self.degree}|{tag(partition)}|raw|"+string(gcd(rootPhi,rootAll)==1));',
+                ]
+            )
+        target_name = f"i_{tag(partition)}_{variant}"
+        self.lines.extend(
+            [
+                "setring target;",
+                f"ideal {target_name}=imap({ring_name},{ideal_name});",
+                f"{target_name}=homog({target_name},z);",
+                f"{target_name}=sat({target_name},ideal(z));",
+                f"{target_name}=std({target_name});",
+                f"kill {ring_name};",
+            ]
+        )
         self.sources[(partition, variant)] = SourceIdeal(ring_name, ideal_name)
 
     def finish(self, partitions: tuple[tuple[int, ...], ...]) -> str:
         degree = self.degree
         atoms = atomic_partitions(degree)
-        h_names = tuple(f"h{index}" for index in range(3, degree))
-        self.lines.extend(
-            [
-                f"ring target=0,({','.join(h_names)},z),dp;",
-                "proc sameIdeal(ideal a, ideal b)",
-                "{",
-                "  a=std(a); b=std(b);",
-                "  ideal left=simplify(reduce(a,b),2);",
-                "  ideal right=simplify(reduce(b,a),2);",
-                "  return(size(left)==0 && size(right)==0);",
-                "}",
-                "proc containedIdeal(ideal small, ideal large)",
-                "{",
-                "  ideal remainder=simplify(reduce(small,std(large)),2);",
-                "  return(size(remainder)==0);",
-                "}",
-            ]
-        )
-
-        for (partition, variant), source in self.sources.items():
-            name = f"i_{tag(partition)}_{variant}"
-            self.lines.extend(
-                [
-                    f"ideal {name}=imap({source.ring},{source.ideal});",
-                    f"{name}=homog({name},z);",
-                    f"{name}=sat({name},ideal(z));",
-                    f"{name}=std({name});",
-                ]
-            )
 
         for partition in atoms:
             name = f"i_{tag(partition)}_all"
-            source = self.sources[(partition, "all")]
-            self.lines.extend(
+            component_lines = [
+                    f'print("DATA|{degree}|{tag(partition)}|"+string(dim({name})-1)+"|"+string(mult({name}))+"|"+string(hilb({name},2)));'
+            ]
+            if (partition, "ordered") in self.sources:
+                component_lines.append(
+                    f'print("CHART|{degree}|{tag(partition)}|ordered|"+string(sameIdeal({name},i_{tag(partition)}_ordered)));'
+                )
+            component_lines.extend(
                 [
-                    f'print("DATA|{degree}|{tag(partition)}|"+string(dim({name})-1)+"|"+string(mult({name}))+"|"+string(hilb({name},2)));',
-                    f'print("CHART|{degree}|{tag(partition)}|ordered|"+string(sameIdeal({name},i_{tag(partition)}_ordered)));',
                     f"ideal boundary={name}+ideal(z); boundary=std(boundary);",
                     f'print("INFINITY|{degree}|{tag(partition)}|"+string(dim(boundary)-1));',
-                    f"setring {source.ring};",
-                    f'print("CHART|{degree}|{tag(partition)}|admissible|"+string(gcd(rootPhi,rootAdmissible)==1));',
-                    f'print("CHART|{degree}|{tag(partition)}|raw|"+string(gcd(rootPhi,rootAll)==1));',
-                    "setring target;",
                 ]
             )
+            self.lines.extend(component_lines)
             if self.deep:
                 self.lines.extend(
                     [
@@ -277,7 +278,7 @@ def run_degree(degree: int, deep_max_degree: int, timeout: int) -> list[str]:
     program = SingularProgram(degree, degree <= deep_max_degree)
     for partition in partitions:
         program.add_source(partition, "all")
-        if partition in atoms:
+        if partition in atoms and degree <= 6:
             program.add_source(partition, "ordered")
     source = program.finish(partitions)
     process = subprocess.run(

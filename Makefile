@@ -10,6 +10,7 @@ SYSTEM_PYTHON ?= python3
 	verify-quartic verify-normal-forms verify-formal verify-lean-foundational \
 	verify-foundations verify-foundations-formal \
 	verify-coincident-root-loci verify-papers verify-ritt-boundary \
+	verify-contact-r6 \
 	render-status clean-papers
 
 check:
@@ -33,6 +34,9 @@ verify-weighted-boundary:
 
 verify-ritt-boundary:
 	bash scripts/verify_degree_six_ritt_boundary_atlas.sh
+
+verify-contact-r6:
+	$(PYTHON) scripts/verify_contact_resultant_r6_effective.py
 
 verify-core: verify-minimal
 	$(PYTHON) scripts/verify_counterexample.py
@@ -75,6 +79,7 @@ verify-theorems:
 	$(SYSTEM_PYTHON) scripts/audit_degree_twelve_independent.py
 	$(PYTHON) scripts/verify_exceptional_partition_lattice.py
 	$(PYTHON) scripts/verify_degree18_triple_intersection.py
+	$(PYTHON) scripts/verify_omitted_intersection_algebra.py
 	$(PYTHON) scripts/verify_dicritical_divisors.py
 	$(PYTHON) scripts/verify_dicritical_blowup_geometry.py
 	$(PYTHON) scripts/verify_omitted_value_classification.py

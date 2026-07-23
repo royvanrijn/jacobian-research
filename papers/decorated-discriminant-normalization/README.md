@@ -12,7 +12,10 @@ descent after contraction is also complete: the finite birational closure is
 the normal marked coarse compactification and has one point over every DVR
 limit.
 
-All stabilization and Fitting/base-change steps cite the construction-independent
+The paper first proves the weighted clean-locus intrinsic-boundary theorem,
+which reconstructs the ordered discriminant vertex, normalized pencil, and
+marks from the map's canonical Zariski--Main package.  Only then do its
+stabilization and Fitting/base-change steps invoke the construction-independent
 [`../../verified/STABLE_NORMALIZATION_FUNCTORIALITY.md`](../../verified/STABLE_NORMALIZATION_FUNCTORIALITY.md).
 
 Build from this directory with:

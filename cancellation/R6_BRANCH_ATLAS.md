@@ -1,10 +1,10 @@
 # The first `r=6` branch atlas at `m=infinity`
 
-This note resolves the asymptotic branch search left open by the degree-29
-endpoint eliminant in [CONTACT_RESULTANT.md](CONTACT_RESULTANT.md).  It is a
-tail theorem, not yet a complete proof for every integer `m`: the argument
-proves separation for all sufficiently large `m`, but does not extract an
-explicit threshold to connect to the existing certificates through `m=40`.
+This note records the limiting branch atlas for the degree-29 endpoint
+eliminant in [CONTACT_RESULTANT.md](CONTACT_RESULTANT.md).  Its former
+noneffective tail has since been continued rigorously through `0<=t<=1/41`;
+the effective completion is checked by
+[`verify_contact_resultant_r6_effective.py`](../scripts/verify_contact_resultant_r6_effective.py).
 
 ## 1. The unique Newton chart
 
@@ -142,7 +142,7 @@ punctured neighborhood of `t=0` on which `|z(t)| != |y(t)^(1/t)|`.  Hence no
 `r=6` branch can satisfy `z=y^m` for all sufficiently large positive integer
 `m`.
 
-## 5. Reproduction and remaining task
+## 5. Reproduction and effective continuation
 
 Run
 
@@ -150,9 +150,9 @@ Run
 .venv/bin/python scripts/explore_contact_resultant_r6_branch_atlas.py
 ```
 
-The remaining useful computation is quantitative continuation in `t`: find
-an explicit rational `t_0` for which all 29 modulus separations persist on
-`0<t<=t_0`.  If `1/t_0<=41`, the existing exact finite grid closes the whole
-`r=6` column.  The closest limiting classes by modulus are 9, 13, 7, and 6;
-their large argument mismatches suggest that a mixed modulus/argument proof
-may give a much better cutoff than modulus alone.
+The effective checker partitions `0<=t<=1/41` into 256 rational cells and
+certifies 7424 disjoint Rouche tubes.  It uses modulus separation on 5920
+tubes and phase separation on the remaining 1504, then joins the result to
+the exact modular gcd certificates through `m=40`.  Thus the mixed
+modulus/argument strategy suggested by classes 9, 13, 7, and 6 closes the
+entire `r=6` column.

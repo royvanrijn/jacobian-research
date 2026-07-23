@@ -4,11 +4,16 @@ This paper contains the admissible-cover closure, rerooting quotient stack,
 marked-zero-fiber LL degree, formal collision comparison, and the boundary
 Picard and caustic/Maxwell calculations.
 
-The H1--H3 dependency chain is now assessed as partial/high-risk.  The
-standalone [DVR marking audit](dvr-marking-audit.tex) proves the abstract
-finite-cover valuative theorem and the quotient/coarse collision models, and
-isolates the missing global comparison with the repository-specific
-admissible-cover contraction.  It is the canonical status source for H1--H3.
+The missing global comparison is resolved negatively as stated by the
+[global comparison obstruction](global-comparison-obstruction.tex).  In
+degree five, the stable zero-root compactification forgets the target
+cross-ratio with leading term `x^3/y^2`; the admissible-cover model resolves
+it by the normalized blowup of `(x^3,y^2)`.  Thus there is no global morphism
+from the former compactification to the latter.  The correct package is their
+normalized graph correspondence followed by the normalization/Stein
+contraction to the finite incidence.  The standalone
+[DVR marking audit](dvr-marking-audit.tex) remains the canonical source for
+the abstract finite-cover valuative theorem and quotient collision models.
 
 ACV and Deopurkar provide the compactification technology cited in the paper.
 They do not externally review the repository's specialized LL-degree or

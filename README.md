@@ -116,14 +116,15 @@ The primary dependency chain is:
 1. `F1` — foundational Keller collision.
 2. `W1` — tangent-map core and weighted suspension.
 3. `S1` — stable normalization functoriality.
-4. `C1` — universal cancellation construction.
-5. `B1` — complete canonical boundary exhaustion.
-6. `P1` — cancellation reconstruction residue and parameter faithfulness.
-7. `M1` — finite degreewise stable multiplicity.
-8. `D1` — marked Hessian-divisor moduli of dimension `N-3`.
-9. `F2` — generic affine-mark faithfulness.
-10. `H1` — internal Hurwitz--LL compactification theorem.
-11. `R1`, `R2` — all-degree rank-two descent and parameter faithfulness.
+4. `WB1` — weighted clean-locus intrinsic boundary reconstruction.
+5. `C1` — universal cancellation construction.
+6. `B1` — complete canonical boundary exhaustion.
+7. `P1` — cancellation reconstruction residue and parameter faithfulness.
+8. `M1` — finite degreewise stable multiplicity.
+9. `D1` — marked Hessian-divisor moduli of dimension `N-3`.
+10. `F2` — generic affine-mark faithfulness.
+11. `H1` — internal Hurwitz--LL compactification theorem.
+12. `R1`, `R2` — all-degree rank-two descent and parameter faithfulness.
 
 The exact scopes, dependencies, checkers, and review states live only in [`MATH_STATUS.json`](MATH_STATUS.json).  [STATUS.md](STATUS.md) is generated
 from it.  A checker is reproducibility evidence; it is not external review.
@@ -173,11 +174,10 @@ The LR continuation is now split into three independent primary problems,
 alongside the cancellation and Hessian--Ritt frontiers:
 
 - `OP-CR`: cancellation contact resultants in the residual wedge `m>=7`,
-  `r>=6`; the first five fixed-`r` columns, the six all-`r` columns `m<=6`,
+  `r>=7`; the first six fixed-`r` columns, the six all-`r` columns `m<=6`,
   every fixed-`m` eventual tail, and all other parameter-irreducibility
-  ranges are complete.  The first open fixed column `r=6` is reduced exactly
-  to 29 algebraic branches and is proved for all sufficiently large `m`;
-  making that threshold effective and closing the finite range remain open.
+  ranges are complete.  The `r=6` column is closed by 7424 rigorous Arb
+  branch tubes on `0<=1/m<=1/41` and exact modular gcds for `m<=40`.
 - `OP-LR-REES`: linear target-lift Rees strictness as a finite module/SAGBI
   problem, including a structural cutoff to finitely many torus weights.
 - `OP-LR-II`: the minimal pair is now nonzero; classify the remaining
