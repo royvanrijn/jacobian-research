@@ -86,7 +86,11 @@ A decomposition \(f=A\circ B\) is equivalently an intermediate field
 or a block system of the polynomial monodromy action.  The block size is
 \(\deg B\).  Taking gcd refinements of several block systems produces prime
 factor words; equal prime occurrences retain their relative order, while
-coprime adjacent occurrences are related by Ritt moves.
+coprime adjacent occurrences are related by Ritt moves.  We use the
+complete-decomposition description of
+[Müller--Zieve](https://arxiv.org/abs/0807.3578) and the tame
+multi-collision normal forms of
+[Ziegler](https://arxiv.org/abs/1402.5945).
 
 For a requested outer cut \(a\mid N\), call a prime word a **carrier** if a
 prefix has product \(a\).  A polynomial carrying several decompositions

@@ -24,6 +24,12 @@ from typing import Sequence
 
 import sympy as sp
 
+from finite_normalization_signatures import (
+    ResidualDifferentAudit,
+    ResidualDifferentComponent,
+    audit_residual_different,
+)
+
 
 def _integral_matrix(matrix: Sequence[Sequence[int]] | sp.Matrix) -> sp.Matrix:
     result = sp.Matrix(matrix)
@@ -355,6 +361,82 @@ class KellerPoleAudit:
         }
 
 
+@dataclass(frozen=True)
+class KellerDicriticalDatum:
+    """Clean finite-chart input for one intrinsic dicritical component.
+
+    The pole audit determines the transverse ramification index and the
+    product ``residue_degree * target_curve_degree``.  Thus only the degree
+    of the image curve and its companion-sheet intersection must be supplied.
+    """
+
+    name: str
+    target_curve_degree: int
+    companion_intersection: int
+
+    def __post_init__(self) -> None:
+        if not self.name:
+            raise ValueError("a Keller dicritical datum needs a component name")
+        if self.target_curve_degree <= 0:
+            raise ValueError("the target curve degree must be positive")
+        if self.companion_intersection < 0:
+            raise ValueError("the companion intersection must be nonnegative")
+
+
+@dataclass(frozen=True)
+class KellerDicriticalBudget:
+    """Intrinsic reconstruction of one clean dicritical's finite-cover data."""
+
+    name: str
+    boundary_index: int
+    ramification_index: int
+    residue_degree: int
+    available_residual_intersection: int
+    forced_companion_intersection: int
+
+    @property
+    def feasible(self) -> bool:
+        return self.forced_companion_intersection >= 0
+
+
+@dataclass(frozen=True)
+class BoundaryContractionAudit:
+    """Exact intersection form after contracting a negative-definite block."""
+
+    original_names: tuple[str, ...]
+    contracted_names: tuple[str, ...]
+    surviving_names: tuple[str, ...]
+    contracted_inertia: tuple[int, int, int]
+    pullback_correction: sp.Matrix
+    finite_intersection_matrix: sp.Matrix
+    failures: tuple[str, ...]
+
+    @property
+    def passes(self) -> bool:
+        return not self.failures
+
+
+@dataclass(frozen=True)
+class FiniteModelDicriticalProjectionBudget:
+    """Projection/different comparison on the finite Stein model."""
+
+    name: str
+    target_curve_degree: int
+    ramification_index: int
+    residue_degree: int
+    finite_self_intersection: sp.Rational
+    surface_different_degree: sp.Rational
+    residual_forced_companion_intersection: sp.Rational
+    projection_forced_companion_intersection: sp.Rational
+    target_normalization_correction: int
+    corrected_budget_gap: sp.Rational
+    contraction: BoundaryContractionAudit
+
+    @property
+    def budgets_match(self) -> bool:
+        return self.corrected_budget_gap == 0
+
+
 def audit_keller_pole_vector(
     boundary_audit: A2BoundaryAudit,
     pole_vector: Sequence[int],
@@ -449,3 +531,274 @@ def audit_keller_pole_vector(
         failures=tuple(failures),
     )
 
+
+def contract_boundary_curves(
+    boundary: IntrinsicA2Boundary,
+    contracted_names: Sequence[str],
+) -> BoundaryContractionAudit:
+    """Contract a boundary block and compute the Mumford intersection form.
+
+    If ``Q_VV`` is the intersection block of the contracted curves, the
+    pullback of the surviving primes is corrected by
+    ``-Q_VV^{-1}Q_VH`` and their intersection matrix is
+
+    ``Q_HH-Q_HV Q_VV^{-1}Q_VH``.
+    """
+
+    requested = tuple(contracted_names)
+    if len(set(requested)) != len(requested):
+        raise ValueError("contracted boundary names must be distinct")
+    unknown = tuple(name for name in requested if name not in boundary.names)
+    if unknown:
+        raise ValueError(f"unknown contracted boundary names: {unknown}")
+    contracted_set = set(requested)
+    vertical = tuple(
+        index
+        for index, name in enumerate(boundary.names)
+        if name in contracted_set
+    )
+    horizontal = tuple(
+        index
+        for index, name in enumerate(boundary.names)
+        if name not in contracted_set
+    )
+    if not horizontal:
+        raise ValueError("at least one boundary curve must survive")
+    surviving_names = tuple(boundary.names[index] for index in horizontal)
+    contracted_ordered = tuple(boundary.names[index] for index in vertical)
+    q_hh = boundary.intersection_matrix.extract(horizontal, horizontal)
+    failures: list[str] = []
+    if not vertical:
+        return BoundaryContractionAudit(
+            original_names=boundary.names,
+            contracted_names=(),
+            surviving_names=surviving_names,
+            contracted_inertia=(0, 0, 0),
+            pullback_correction=sp.zeros(0, len(horizontal)),
+            finite_intersection_matrix=q_hh,
+            failures=(),
+        )
+
+    q_vv = boundary.intersection_matrix.extract(vertical, vertical)
+    inertia = symmetric_inertia(q_vv)
+    if inertia != (0, len(vertical), 0):
+        failures.append(
+            "the contracted intersection block is not negative definite: "
+            f"inertia={inertia}"
+        )
+    if q_vv.det() == 0:
+        failures.append("the contracted intersection block is singular")
+        correction = sp.zeros(len(vertical), len(horizontal))
+        finite = q_hh
+    else:
+        q_vh = boundary.intersection_matrix.extract(vertical, horizontal)
+        q_hv = q_vh.T
+        correction = (-q_vv.inv() * q_vh).applyfunc(sp.cancel)
+        finite = (q_hh - q_hv * q_vv.inv() * q_vh).applyfunc(sp.cancel)
+    return BoundaryContractionAudit(
+        original_names=boundary.names,
+        contracted_names=contracted_ordered,
+        surviving_names=surviving_names,
+        contracted_inertia=inertia,
+        pullback_correction=correction,
+        finite_intersection_matrix=finite,
+        failures=tuple(failures),
+    )
+
+
+def contract_keller_vertical_boundary(
+    pole_audit: KellerPoleAudit,
+) -> BoundaryContractionAudit:
+    """Contract exactly the boundary curves killed by ``f^*L``."""
+
+    boundary = pole_audit.boundary_audit.boundary
+    vertical = tuple(
+        name
+        for name, intersection in zip(
+            boundary.names,
+            pole_audit.hyperplane_intersections,
+        )
+        if intersection == 0
+    )
+    return contract_boundary_curves(boundary, vertical)
+
+
+def infer_keller_dicritical_budget(
+    pole_audit: KellerPoleAudit,
+    name: str,
+    target_curve_degree: int,
+) -> KellerDicriticalBudget:
+    """Infer ``(e,f,M.E)`` from ``Q``, ``p``, ``k``, and ``deg(C)``."""
+
+    if target_curve_degree <= 0:
+        raise ValueError("the target curve degree must be positive")
+    boundary = pole_audit.boundary_audit.boundary
+    name_to_index = {
+        component_name: index
+        for index, component_name in enumerate(boundary.names)
+    }
+    if name not in name_to_index:
+        raise ValueError(f"unknown boundary component {name!r}")
+    if name not in set(pole_audit.dicritical_candidates):
+        raise ValueError(f"boundary component {name!r} is not dicritical")
+    index = name_to_index[name]
+    line_intersection = pole_audit.hyperplane_intersections[index]
+    residue_degree, remainder = divmod(
+        line_intersection, target_curve_degree
+    )
+    if remainder:
+        raise ValueError(
+            f"(f^*L).{name}={line_intersection} is not "
+            f"divisible by deg(C)={target_curve_degree}"
+        )
+    if residue_degree <= 0:
+        raise ValueError("a dicritical residue degree must be positive")
+    matrix = boundary.intersection_matrix
+    coefficients = pole_audit.ramification_coefficients
+    available = sum(
+        coefficients[j] * int(matrix[j, index])
+        for j in range(boundary.rank)
+        if j != index
+    )
+    return KellerDicriticalBudget(
+        name=name,
+        boundary_index=index,
+        ramification_index=coefficients[index] + 1,
+        residue_degree=residue_degree,
+        available_residual_intersection=available,
+        forced_companion_intersection=available - 2 * residue_degree + 2,
+    )
+
+
+def infer_finite_model_dicritical_projection_budget(
+    pole_audit: KellerPoleAudit,
+    name: str,
+    target_curve_degree: int,
+) -> FiniteModelDicriticalProjectionBudget:
+    """Compare companion incidence on the finite Stein model.
+
+    The uncorrected residual-different calculation assumes a smooth target
+    curve.  A rational plane curve of degree ``c`` contributes normalization
+    correction ``f(c-1)(c-2)``.  The returned gap checks that this correction
+    exactly reconciles the residual and projection-formula budgets.
+    """
+
+    local = infer_keller_dicritical_budget(
+        pole_audit, name, target_curve_degree
+    )
+    contraction = contract_keller_vertical_boundary(pole_audit)
+    if not contraction.passes:
+        raise ValueError(
+            "the H-null boundary block is not contractible: "
+            + "; ".join(contraction.failures)
+        )
+    finite_index = contraction.surviving_names.index(name)
+    q_finite = contraction.finite_intersection_matrix
+    self_intersection = sp.cancel(q_finite[finite_index, finite_index])
+    original_names = pole_audit.boundary_audit.boundary.names
+    surviving_indices = tuple(
+        original_names.index(component_name)
+        for component_name in contraction.surviving_names
+    )
+    canonical = tuple(
+        pole_audit.boundary_audit.canonical_coefficients[index]
+        for index in surviving_indices
+    )
+    ramification = tuple(
+        pole_audit.ramification_coefficients[index]
+        for index in surviving_indices
+    )
+    canonical_intersection = sp.cancel(
+        sum(
+            canonical[j] * q_finite[j, finite_index]
+            for j in range(len(surviving_indices))
+        )
+    )
+    surface_different = sp.cancel(
+        canonical_intersection + self_intersection + 2
+    )
+    available = sp.cancel(
+        sum(
+            ramification[j] * q_finite[j, finite_index]
+            for j in range(len(surviving_indices))
+            if j != finite_index
+        )
+    )
+    residual_companion = sp.cancel(
+        available
+        - 2 * local.residue_degree
+        + 2
+        - surface_different
+    )
+    projection_companion = sp.cancel(
+        local.residue_degree * target_curve_degree**2
+        - local.ramification_index * self_intersection
+    )
+    target_correction = (
+        local.residue_degree
+        * (target_curve_degree - 1)
+        * (target_curve_degree - 2)
+    )
+    corrected_gap = sp.cancel(
+        residual_companion
+        + target_correction
+        - projection_companion
+    )
+    return FiniteModelDicriticalProjectionBudget(
+        name=name,
+        target_curve_degree=target_curve_degree,
+        ramification_index=local.ramification_index,
+        residue_degree=local.residue_degree,
+        finite_self_intersection=self_intersection,
+        surface_different_degree=surface_different,
+        residual_forced_companion_intersection=residual_companion,
+        projection_forced_companion_intersection=projection_companion,
+        target_normalization_correction=target_correction,
+        corrected_budget_gap=corrected_gap,
+        contraction=contraction,
+    )
+
+
+def audit_keller_residual_different(
+    pole_audit: KellerPoleAudit,
+    components: Sequence[KellerDicriticalDatum],
+) -> ResidualDifferentAudit:
+    """Apply the clean residual-different identity to intrinsic dicriticals.
+
+    For a component ``E_i`` mapping to a target curve ``C`` of degree ``c``,
+
+    ``(f^*L).E_i = f_i c`` and ``r_i = e_i-1``.
+
+    The intrinsic boundary package therefore supplies ``e_i`` and ``f_i``.
+    This adapter rejects non-dicritical names and nonintegral residue degrees
+    before forwarding the complete boundary graph to the exact weighted-edge
+    audit.
+    """
+
+    boundary = pole_audit.boundary_audit.boundary
+    residual_components: list[ResidualDifferentComponent] = []
+    seen_names: set[str] = set()
+    for component in components:
+        if component.name in seen_names:
+            raise ValueError("each dicritical component may be audited only once")
+        seen_names.add(component.name)
+        budget = infer_keller_dicritical_budget(
+            pole_audit,
+            component.name,
+            component.target_curve_degree,
+        )
+        residual_components.append(
+            ResidualDifferentComponent(
+                name=component.name,
+                boundary_index=budget.boundary_index,
+                ramification_index=budget.ramification_index,
+                residue_degree=budget.residue_degree,
+                companion_intersection=component.companion_intersection,
+            )
+        )
+
+    return audit_residual_different(
+        boundary.intersection_matrix.tolist(),
+        pole_audit.ramification_coefficients,
+        residual_components,
+    )

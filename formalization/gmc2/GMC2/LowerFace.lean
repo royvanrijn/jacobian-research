@@ -6,6 +6,7 @@ Authors: Roy van Rijn
 import GMC2.ConstantTerm
 import GMC2.DuistermaatVanDerKallen
 import GMC2.GaussianModel
+import GMC2.LowerFaceExtraction
 import GMC2.OneSided
 import GMC2.PrimeIsolation
 import GMC2.Specialization

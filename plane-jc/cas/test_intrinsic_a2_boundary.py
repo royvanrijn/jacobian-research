@@ -9,8 +9,13 @@ from boundary_lattice_prefilter import (
 )
 from intrinsic_a2_boundary import (
     IntrinsicA2Boundary,
+    KellerDicriticalDatum,
     audit_a2_boundary,
     audit_keller_pole_vector,
+    audit_keller_residual_different,
+    contract_keller_vertical_boundary,
+    infer_finite_model_dicritical_projection_budget,
+    infer_keller_dicritical_budget,
     symmetric_inertia,
 )
 
@@ -112,9 +117,76 @@ assert first_possible.ramification_coefficients == (6, 4, 2, 0)
 assert first_possible.log_ramification_coefficients == (4, 3, 2, 1)
 assert first_possible.dicritical_candidates == ("E3",)
 
+# The complete graph now feeds the finite-normalization residual-different
+# audit.  Here (f^*L).E3=1 forces residue degree one over a line, while the
+# adjacent coefficient two forces companion intersection two.  Declaring
+# no companion intersection therefore fails the exact identity.
+first_budget = infer_keller_dicritical_budget(first_possible, "E3", 1)
+assert first_budget.ramification_index == 1
+assert first_budget.residue_degree == 1
+assert first_budget.available_residual_intersection == 2
+assert first_budget.forced_companion_intersection == 2
+assert first_budget.feasible
+
+first_contraction = contract_keller_vertical_boundary(first_possible)
+assert first_contraction.passes
+assert first_contraction.contracted_names == ("E1", "E2")
+assert first_contraction.surviving_names == ("L", "E3")
+assert first_contraction.contracted_inertia == (0, 2, 0)
+
+# On the finite Stein model the surface different records the singularity
+# created where the contracted H-null chain met E3.  For a target line the
+# normalization correction is zero and the projection and corrected
+# residual budgets agree exactly.
+first_projection = infer_finite_model_dicritical_projection_budget(
+    first_possible, "E3", 1
+)
+assert first_projection.budgets_match
+assert first_projection.target_normalization_correction == 0
+assert (
+    first_projection.residual_forced_companion_intersection
+    == first_projection.projection_forced_companion_intersection
+)
+
+unpaid_first_possible = audit_keller_residual_different(
+    first_possible,
+    (KellerDicriticalDatum("E3", 1, 0),),
+)
+assert not unpaid_first_possible.all_identities_hold
+assert unpaid_first_possible.total_available_intersection == 2
+assert unpaid_first_possible.total_required_intersection == 0
+
+paid_first_possible = audit_keller_residual_different(
+    first_possible,
+    (KellerDicriticalDatum("E3", 1, 2),),
+)
+assert paid_first_possible.all_identities_hold
+assert paid_first_possible.component_audits[0].transverse_coefficient_matches
+
+try:
+    audit_keller_residual_different(
+        first_possible,
+        (KellerDicriticalDatum("E2", 1, 0),),
+    )
+except ValueError as error:
+    assert "not dicritical" in str(error)
+else:
+    raise AssertionError("a nondicritical component entered the residual audit")
+
+try:
+    audit_keller_residual_different(
+        first_possible,
+        (KellerDicriticalDatum("E3", 2, 0),),
+    )
+except ValueError as error:
+    assert "not divisible" in str(error)
+else:
+    raise AssertionError("a nonintegral residue degree entered the residual audit")
+
 
 print("PASS: exact inertia handles isotropic affine-plane boundary lattices")
 print("PASS: every compiled boundary blowup satisfies adjunction and K^2+rho=10")
 print("PASS: the Noether gate rejects a unimodular Hodge-signature fake tree")
 print("PASS: pole vectors reconstruct ordinary and logarithmic ramification")
 print("PASS: nonproper Keller resolutions require canonical free depth at least three")
+print("PASS: intrinsic dicriticals feed the finite residual-different budget")

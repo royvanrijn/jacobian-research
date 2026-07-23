@@ -82,7 +82,8 @@ theorem eventuallyMixedMomentsVanish_of_positive
   intro Q
   obtain ⟨M, hM⟩ := constantTerm_mul_pow_eq_zero_of_positive Q P hP
   refine ⟨M, fun m hm ↦ ?_⟩
-  simp [mixedMoment, circularExpectation, hM m hm, factorialFunctional]
+  rw [mixedMoment, circularExpectation, hM m hm]
+  simp [factorialFunctional]
 
 noncomputable def upperWeight
     {R : Type*} [CommRing R] (P : CircularPolynomial R) : WithBot ℤ :=
@@ -155,7 +156,8 @@ theorem eventuallyMixedMomentsVanish_of_negative
   intro Q
   obtain ⟨M, hM⟩ := constantTerm_mul_pow_eq_zero_of_negative Q P hP
   refine ⟨M, fun m hm ↦ ?_⟩
-  simp [mixedMoment, circularExpectation, hM m hm, factorialFunctional]
+  rw [mixedMoment, circularExpectation, hM m hm]
+  simp [factorialFunctional]
 
 theorem eventuallyMixedMomentsVanish_of_oneSided
     {R : Type*} [CommRing R] (P : CircularPolynomial R)

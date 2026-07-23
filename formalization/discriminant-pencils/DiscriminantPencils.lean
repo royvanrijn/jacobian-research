@@ -1,8 +1,10 @@
 import DiscriminantPencils.TangentPencil
+import DiscriminantPencils.ContactStrata
 import DiscriminantPencils.LocalSingularities
 import DiscriminantPencils.CuspCount
 import DiscriminantPencils.NumericalCount
 import DiscriminantPencils.ProjectiveParametrization
+import DiscriminantPencils.InfinityLocal
 
 /-!
 # Generic discriminants of polynomial tangent pencils

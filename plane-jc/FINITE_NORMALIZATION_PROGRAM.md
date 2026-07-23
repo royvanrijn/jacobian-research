@@ -772,3 +772,128 @@ structural task is to prove that a Pareto-minimal counterexample has such an
 extremal ramification leaf, or else that every leaf pays a positive
 residual-different cost whose sum exceeds the global ramification vector
 \(K_S+3\Pi^*L\).
+
+### Proposition 7.3 -- the global residual-different budget
+
+Let \(I\) be any collection of clean rational boundary components to which
+Proposition 7.1 applies, and write the full ramification divisor as
+
+\[
+ R_\pi=\sum_j r_jD_j.
+\]
+
+Then
+
+\[
+ \boxed{
+ \sum_{i\in I}\sum_{j\ne i}
+ r_j(D_j\cdot E_i)
+ =
+ \sum_{i\in I}M_i\cdot E_i
+ +2\sum_{i\in I}(f_i-1).
+ }
+\tag{7.7}
+\]
+
+On an SNC boundary tree, an edge \(i\!-\!j\) with both endpoints in \(I\)
+contributes \(r_i+r_j\) to the left side; an edge leaving \(I\) through
+\(i\) contributes the outside coefficient \(r_j\).  Thus (7.7) is a finite
+weighted-edge budget.  Any proposed atlas for which the right side exceeds
+this available neighbor weight is impossible.
+
+#### Proof
+
+For each \(i\), remove the transverse term
+\((e_i-1)E_i\) from \(R_\pi\).  The remaining intersection with \(E_i\) is
+
+\[
+ R_i'\cdot E_i
+ =
+ \sum_{j\ne i}r_j(D_j\cdot E_i).
+\]
+
+Apply (7.5) and sum over \(I\).
+
+The executable audit
+[`audit_residual_different`](cas/finite_normalization_signatures.py)
+checks both the component identities and (7.7).  It distinguishes:
+
+- an **exposed** component, with available neighbor weight zero;
+- a **paid** component, where adjacent ramification supplies the exact
+  residue and companion-sheet cost; and
+- an **overdrawn** component or collection, which is excluded before any
+  coefficient calculation.
+
+### Proposition 7.4 -- intrinsic reconstruction on a resolved boundary
+
+Let \(\bar F:X\to\mathbf P^2\) be a resolution of the rational extension of
+the Keller map.  Write \(Q=(D_i\cdot D_j)\), let \(p\) be the coefficient
+vector of \(H=\bar F^*L\), and let \(k\) be the coefficient vector of
+\(K_X\).  Suppose that \(E_i=D_i\) is a clean dicritical mapping onto the
+projective closure of a target curve \(C_i\), of degree \(c_i\).  Then
+
+\[
+ c_i\mid (Qp)_i,\qquad
+ f_i=\frac{(Qp)_i}{c_i},\qquad
+ e_i=(k_i+3p_i)+1.
+\tag{7.8}
+\]
+
+In particular, the residual-different identity becomes the entirely
+intrinsic boundary equation
+
+\[
+ \boxed{
+ \sum_{j\ne i}(k_j+3p_j)Q_{ji}
+ =
+ M_i\cdot E_i
+2\left(\frac{(Qp)_i}{c_i}-1\right).
+ }
+\tag{7.9}
+\]
+
+Thus, after the degrees of the image curves are specified, the complete
+resolved boundary graph determines every term in (7.9) except the
+companion-sheet incidence \(M_i\cdot E_i\).  A proposed image degree that
+does not divide \((Qp)_i\) is impossible; a proposed companion incidence
+that does not equal the resulting nonnegative integer budget is impossible.
+
+#### Proof
+
+The projection formula gives
+
+\[
+ H\cdot E_i
+ =
+ \deg(E_i\to C_i)\deg C_i
+ =
+ f_ic_i.
+\]
+
+Since \(H\cdot E_i=(Qp)_i\), this proves the first two formulas in (7.8).
+At the generic point of the smooth target curve, characteristic zero makes
+the transverse extension tame, so the coefficient of \(E_i\) in the
+ordinary ramification divisor is \(e_i-1\).  But the intrinsic canonical
+calculation gives that coefficient as \(k_i+3p_i\).  Substitute these two
+reconstructions into (7.5).
+
+The functions
+[`infer_keller_dicritical_budget`](cas/intrinsic_a2_boundary.py) and
+[`audit_keller_residual_different`](cas/intrinsic_a2_boundary.py)
+perform precisely this reconstruction.  The first computes the forced value
+
+\[
+ M_i\cdot E_i
+ =
+ \sum_{j\ne i}(k_j+3p_j)Q_{ji}-2(f_i-1)
+\tag{7.10}
+\]
+
+and marks the package infeasible if this is negative.  The second compares
+the forced value with geometric companion data.  Both refuse nondicritical
+components and nondivisible image degrees.
+For the first free-depth-three numerical package, the sole dicritical has
+\((Qp)_i=1\) and adjacent residual weight \(2\).  Equation (7.9) therefore
+forces \(f_i=1\) over a line and \(M_i\cdot E_i=2\): the package passes the
+older pole-vector gates but cannot be realized with an isolated companion
+sheet.

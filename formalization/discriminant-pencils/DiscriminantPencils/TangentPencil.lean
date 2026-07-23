@@ -92,7 +92,7 @@ theorem tangent_velocity (H : 𝕜[X]) (r : 𝕜) :
       (tangentMapPoly H).2.derivative.eval r) =
       (H.derivative.derivative.eval r,
         r * H.derivative.derivative.eval r) := by
-  simp [tangentMapPoly, derivative_tangentMapPoly_snd]
+  simp [tangentMapPoly]
 
 /-- The determinant of the tangent directions `(1,r)` and `(1,u)`. -/
 theorem tangent_direction_det (r u : 𝕜) :

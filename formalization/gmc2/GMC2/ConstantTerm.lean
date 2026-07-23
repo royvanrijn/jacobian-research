@@ -23,6 +23,11 @@ noncomputable def constantTerm {R : Type*} [Semiring R]
     (f : LaurentPolynomial R) : R :=
   constantTermHom f
 
+@[simp] theorem constantTerm_eq_coeff
+    {R : Type*} [Semiring R] (f : LaurentPolynomial R) :
+    constantTerm f = f.coeff 0 := by
+  rfl
+
 @[simp] theorem constantTermHom_single
     {R : Type*} [Semiring R] (n : ℤ) (a : R) :
     constantTermHom (AddMonoidAlgebra.single n a) =

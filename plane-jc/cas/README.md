@@ -33,7 +33,19 @@ signature atlas at fixed geometric degree: boundary rows `(e,f)`, positive
 affine-sheet partitions, puncture counts, and the residual
 Riemann--Hurwitz cost `f+s-2`.  It checks the forced ramified degree-three
 `2+1` row, the collapse `f=s=1` under residue immersion, and Pareto
-antichains through degree eight.
+antichains through degree eight.  The same regression audits the
+componentwise and global residual-different identity
+`available neighbor ramification = companion intersection + 2f-2`,
+detecting exposed, exactly paid, and overdrawn boundary leaves.
+The intrinsic boundary regression now feeds its complete intersection
+matrix, pole vector, and reconstructed ramification vector into the same
+audit.  For a dicritical over a target curve of degree `c`, it recovers
+`f=(Qp)_i/c` and `e=r_i+1`, rejects failure of the divisibility condition,
+and infers the forced companion-sheet intersection
+`M.E=available-2(f-1)`.  A negative value is a graph-level exclusion; known
+companion geometry can then be checked for exact equality.  The
+first free-depth-three package consequently forces companion intersection
+two on its degree-one dicritical.
 The next command turns certified monomial branch
 scales into regular toroidal
 blowups, a proximity graph, complete boundary and intersection matrices,

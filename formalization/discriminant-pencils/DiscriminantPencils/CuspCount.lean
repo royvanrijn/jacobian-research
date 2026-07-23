@@ -26,6 +26,7 @@ Under the separability hypothesis below, it has no repetitions. -/
 noncomputable def cuspParameters (H : 𝕜[X]) : Multiset 𝕜 :=
   H.derivative.derivative.roots
 
+omit [CharZero 𝕜] [IsAlgClosed 𝕜] in
 theorem ordinaryCuspParameter_iff (H : 𝕜[X])
     (hsep : H.derivative.derivative.Separable) (r : 𝕜) :
     IsOrdinaryCuspParameter H r ↔ H.derivative.derivative.eval r = 0 := by
@@ -37,6 +38,7 @@ theorem ordinaryCuspParameter_iff (H : 𝕜[X])
       simpa using hr
     simpa using hsep.eval₂_derivative_ne_zero (RingHom.id 𝕜) hr'
 
+omit [CharZero 𝕜] [IsAlgClosed 𝕜] in
 theorem cuspParameters_nodup (H : 𝕜[X])
     (hsep : H.derivative.derivative.Separable) :
     (cuspParameters H).Nodup :=

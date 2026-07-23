@@ -2,6 +2,8 @@
 """Regression tests for the bounded finite-normalization signature atlas."""
 
 from finite_normalization_signatures import (
+    ResidualDifferentComponent,
+    audit_residual_different,
     enumerate_target_signatures,
     pareto_minimal_signatures,
 )
@@ -111,8 +113,57 @@ for degree in range(2, 9):
                 and any(y < x for x, y in zip(left, right))
             )
 
+# The residual-different identity is an exact weighted-neighbor budget.
+# Component E0 has e=2, f=1 and no ramified neighbor, so it is an exposed
+# leaf and can carry no companion intersection.
+exposed = audit_residual_different(
+    ((-2, 1), (1, -2)),
+    (1, 0),
+    (ResidualDifferentComponent("E0", 0, 2, 1, 0),),
+)
+assert exposed.all_identities_hold
+assert exposed.component_audits[0].exposed_leaf
+
+# The same exposed leaf cannot have residue degree two: Riemann--Hurwitz
+# demands two units which no residual neighbor supplies.
+unpaid_residue = audit_residual_different(
+    ((-2, 1), (1, -2)),
+    (1, 0),
+    (ResidualDifferentComponent("E0", 0, 2, 2, 0),),
+)
+assert not unpaid_residue.all_identities_hold
+assert unpaid_residue.total_deficit == 2
+
+# A neighboring ramification coefficient two pays exactly for f=2.
+paid_residue = audit_residual_different(
+    ((-2, 1), (1, -2)),
+    (1, 2),
+    (ResidualDifferentComponent("E0", 0, 2, 2, 0),),
+)
+assert paid_residue.all_identities_hold
+assert paid_residue.total_available_intersection == 2
+
+# On a three-vertex chain, auditing both endpoints records the global sum
+# without losing the componentwise identities.
+global_chain = audit_residual_different(
+    (
+        (-2, 1, 0),
+        (1, -2, 1),
+        (0, 1, -2),
+    ),
+    (1, 2, 1),
+    (
+        ResidualDifferentComponent("left", 0, 2, 2, 0),
+        ResidualDifferentComponent("right", 2, 2, 1, 2),
+    ),
+)
+assert global_chain.all_identities_hold
+assert global_chain.total_available_intersection == 4
+assert global_chain.total_required_intersection == 4
+
 print("PASS: finite normalization signatures exhaust degrees two through eight")
 print("PASS: affine-sheet positivity removes every ramified degree-two row")
 print("PASS: the immersive ramified degree-three atlas is the forced 2+1 ledger")
 print("PASS: residue immersion collapses every boundary row to f=s=1")
 print("PASS: Pareto extraction leaves an antichain of normalization signatures")
+print("PASS: residual-different audits detect exposed and globally paid leaves")

@@ -23,6 +23,7 @@ import argparse
 import json
 from dataclasses import asdict, dataclass
 from functools import lru_cache
+from typing import Sequence
 
 
 @lru_cache(maxsize=None)
@@ -167,6 +168,139 @@ class TargetNormalizationSignature:
                 total_residue_ramification=2 * residue_degree - 2,
             )
         return result
+
+
+@dataclass(frozen=True)
+class ResidualDifferentComponent:
+    """Clean-chart data for one boundary curve in the different support."""
+
+    name: str
+    boundary_index: int
+    ramification_index: int
+    residue_degree: int
+    companion_intersection: int
+
+    def __post_init__(self) -> None:
+        if not self.name:
+            raise ValueError("a residual-different component needs a name")
+        if self.boundary_index < 0:
+            raise ValueError("boundary index must be nonnegative")
+        if self.ramification_index <= 0:
+            raise ValueError("ramification index must be positive")
+        if self.residue_degree <= 0:
+            raise ValueError("residue degree must be positive")
+        if self.companion_intersection < 0:
+            raise ValueError("companion intersection must be nonnegative")
+
+
+@dataclass(frozen=True)
+class ResidualDifferentComponentAudit:
+    name: str
+    boundary_index: int
+    transverse_coefficient_matches: bool
+    available_residual_intersection: int
+    required_residual_intersection: int
+    intersection_deficit: int
+    identity_holds: bool
+    exposed_leaf: bool
+
+    def as_dict(self) -> dict[str, object]:
+        return asdict(self)
+
+
+@dataclass(frozen=True)
+class ResidualDifferentAudit:
+    component_audits: tuple[ResidualDifferentComponentAudit, ...]
+    total_available_intersection: int
+    total_required_intersection: int
+    total_deficit: int
+    all_identities_hold: bool
+
+    def as_dict(self) -> dict[str, object]:
+        return asdict(self)
+
+
+def audit_residual_different(
+    intersection_matrix: Sequence[Sequence[int]],
+    ramification_coefficients: Sequence[int],
+    components: Sequence[ResidualDifferentComponent],
+) -> ResidualDifferentAudit:
+    """Audit ``R'.E = M.E + 2f-2`` on a clean SNC boundary chart.
+
+    The diagonal coefficient of the global ramification divisor on ``E`` must
+    be ``e-1``.  Removing that term leaves the weighted intersection with all
+    other ramification components.  An ``exposed_leaf`` is a component with
+    zero available residual intersection.
+    """
+
+    matrix = tuple(tuple(int(value) for value in row) for row in intersection_matrix)
+    size = len(matrix)
+    if size == 0 or any(len(row) != size for row in matrix):
+        raise ValueError("the intersection matrix must be nonempty and square")
+    if any(matrix[i][j] != matrix[j][i] for i in range(size) for j in range(size)):
+        raise ValueError("the intersection matrix must be symmetric")
+    if any(
+        matrix[i][j] < 0
+        for i in range(size)
+        for j in range(size)
+        if i != j
+    ):
+        raise ValueError("distinct effective boundary curves intersect nonnegatively")
+    coefficients = tuple(int(value) for value in ramification_coefficients)
+    if len(coefficients) != size:
+        raise ValueError("ramification coefficients must index the boundary")
+    if any(value < 0 for value in coefficients):
+        raise ValueError("ramification coefficients must be nonnegative")
+
+    audits: list[ResidualDifferentComponentAudit] = []
+    seen_indices: set[int] = set()
+    for component in components:
+        index = component.boundary_index
+        if index >= size:
+            raise ValueError(f"boundary index {index} is outside the matrix")
+        if index in seen_indices:
+            raise ValueError("each boundary index may be audited only once")
+        seen_indices.add(index)
+        available = sum(
+            coefficients[j] * matrix[j][index]
+            for j in range(size)
+            if j != index
+        )
+        required = (
+            component.companion_intersection
+            + 2 * component.residue_degree
+            - 2
+        )
+        coefficient_matches = (
+            coefficients[index] == component.ramification_index - 1
+        )
+        deficit = required - available
+        audits.append(
+            ResidualDifferentComponentAudit(
+                name=component.name,
+                boundary_index=index,
+                transverse_coefficient_matches=coefficient_matches,
+                available_residual_intersection=available,
+                required_residual_intersection=required,
+                intersection_deficit=deficit,
+                identity_holds=coefficient_matches and deficit == 0,
+                exposed_leaf=available == 0,
+            )
+        )
+
+    total_available = sum(
+        audit.available_residual_intersection for audit in audits
+    )
+    total_required = sum(
+        audit.required_residual_intersection for audit in audits
+    )
+    return ResidualDifferentAudit(
+        component_audits=tuple(audits),
+        total_available_intersection=total_available,
+        total_required_intersection=total_required,
+        total_deficit=total_required - total_available,
+        all_identities_hold=all(audit.identity_holds for audit in audits),
+    )
 
 
 def _boundary_row_types(maximum_contribution: int) -> tuple[BoundaryRow, ...]:

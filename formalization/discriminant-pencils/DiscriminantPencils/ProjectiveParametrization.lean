@@ -62,7 +62,7 @@ theorem eval_homogenize_at_infinity (p : 𝕜[X]) (n : ℕ) (R : 𝕜) :
 theorem coeff_X_mul_derivative_sub (H : 𝕜[X]) (n : ℕ) (hn : 1 ≤ n) :
     (X * H.derivative - H).coeff n = (n - 1 : ℕ) * H.coeff n := by
   obtain ⟨m, rfl⟩ := Nat.exists_eq_succ_of_ne_zero (by omega : n ≠ 0)
-  simp [coeff_derivative, Nat.cast_succ]
+  simp [coeff_derivative]
   ring
 
 /-- On the affine chart `U = 1`, the homogeneous coordinates recover the
