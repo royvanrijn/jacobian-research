@@ -14,6 +14,7 @@ SYSTEM_PYTHON ?= python3
 	verify-common-right-factor-synchronization \
 	verify-degree42-hessian-normal-jets \
 	verify-degree42-conormal-rees-synchronization \
+	verify-degree42-divisor-rees-reduction \
 	verify-degree30-hessian-pairs refresh-degree30-hessian-pairs \
 	verify-contact-r6 verify-contact-branch-schema verify-contact-r7-asymptotic \
 	verify-parameter-dusart-frontier verify-parameter-sharp-dusart-frontier \
@@ -89,6 +90,9 @@ verify-degree42-hessian-normal-jets:
 
 verify-degree42-conormal-rees-synchronization:
 	$(PYTHON) scripts/verify_degree42_conormal_rees_synchronization.py
+
+verify-degree42-divisor-rees-reduction:
+	$(PYTHON) scripts/verify_degree42_divisor_rees_reduction.py
 
 verify-degree30-hessian-pairs:
 	$(PYTHON) scripts/verify_cubic_remainder_synchronization.py
