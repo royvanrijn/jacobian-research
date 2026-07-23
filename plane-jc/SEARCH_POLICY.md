@@ -58,7 +58,17 @@ This policy applies only to searches for two-dimensional Keller maps.
    strata audit.  A basis containing `1` is not an adequate artifact without
    the input generators, field, order, saturation factors, and an explicit
    identity or independently checkable resultant chain.
-10. Rank future work by the tables in
+10. In parallel with degree-ordered coefficient searches, construct the
+    [canonical finite-normalization package](FINITE_NORMALIZATION_PROGRAM.md).
+    Its underlying module is automatically finite free in dimension two, so
+    do not introduce a closed-point flatness gate.  Instead record every
+    missing-boundary prime, its target curve, ramification and residue degrees,
+    the affine sheets over the same curve, the boundary class-group basis, and
+    the resolved projective log ledger.  Compile its coarse row through
+    `cas/finite_normalization_signatures.py` before treating it as a new
+    boundary type; use the resulting Pareto coordinates only as a bounded
+    classification device, not as an existence claim.
+11. Rank future degree-frontier work by the tables in
    [FRONTIER_CLOSING_ATTACKS.md](FRONTIER_CLOSING_ATTACKS.md) and
    [NEXT_DEGREE_FRONTIER.md](NEXT_DEGREE_FRONTIER.md).
    The pair \((75,125)\) is the first numerical maximum, but multiple chains at

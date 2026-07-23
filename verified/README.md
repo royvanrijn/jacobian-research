@@ -74,8 +74,8 @@ Expanded audit and normalization narratives are preserved under
 [archive/core-support](../archive/core-support/README.md), while their commands
 remain in the public [reproduction guide](../REPRODUCE.md).
 
-Start with [FOUNDATIONAL_GEOMETRY.md](FOUNDATIONAL_GEOMETRY.md). The paper
-version is being assembled under
-[papers/core-counterexample](../papers/core-counterexample/main.tex).
+Start with [FOUNDATIONAL_GEOMETRY.md](FOUNDATIONAL_GEOMETRY.md). The former
+omnibus paper has been retired; these focused theorem notes remain the
+canonical sources.
 
 These documents are the primary core references.

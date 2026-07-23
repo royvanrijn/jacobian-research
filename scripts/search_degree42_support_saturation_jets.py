@@ -21,6 +21,8 @@ import shutil
 import signal
 import subprocess
 
+import sympy as sp
+
 from verify_degree42_depth_certificate import support_factors
 from verify_degree42_transported_27_normal_jets import (
     serialize,
@@ -34,12 +36,27 @@ def main() -> None:
     parser.add_argument("--normal-power", type=int, default=6)
     parser.add_argument("--timeout", type=int, default=600)
     parser.add_argument(
+        "--base-values",
+        help="optional comma-separated specialization of e1,e2,t",
+    )
+    parser.add_argument(
+        "--transition",
+        action="store_true",
+        help="test whether the first class lifts to the next normal power",
+    )
+    parser.add_argument(
+        "--print-lift",
+        action="store_true",
+        help="with --transition, print one explicit next-order lift",
+    )
+    parser.add_argument(
         "--analyze-witness",
         action="store_true",
         help="also compute the cyclic annihilator and its radical",
     )
     args = parser.parse_args()
     assert args.normal_power >= 2
+    assert not args.print_lift or args.transition
 
     normals, bases, residuals, _defect = transformed_problem()
     variables = normals + bases
@@ -47,6 +64,29 @@ def main() -> None:
     factor_a, factor_b = support_factors(e1, e2, translation)
     normal_images = "u,v,0,0,0"
     characteristic = args.prime if args.prime else 0
+    if args.base_values:
+        base_values = tuple(
+            sp.Rational(value.strip())
+            for value in args.base_values.split(",")
+        )
+        assert len(base_values) == 3
+        base_substitution = dict(
+            zip((e1, e2, translation), base_values, strict=True)
+        )
+        factor_a = factor_a.subs(base_substitution)
+        factor_b = factor_b.subs(base_substitution)
+        coefficient_images = ",".join(map(str, base_values))
+        target_variables = f"u,v,{w0},{w1},{w2}"
+        target_order = "(dp(2),dp(3))"
+        map_images = (
+            f"{normal_images},{coefficient_images},{w0},{w1},{w2}"
+        )
+    else:
+        target_variables = f"u,v,{','.join(map(str, bases))}"
+        target_order = "(dp(2),dp(6))"
+        map_images = (
+            f"{normal_images},{','.join(map(str, bases))}"
+        )
 
     analysis = ""
     if args.analyze_witness:
@@ -57,6 +97,32 @@ ideal BaseRad=std(eliminate(Rad,u*v));
 print(size(Annih));
 print(size(Rad));
 print(BaseRad);
+"""
+    transition = ""
+    if args.transition:
+        lift_output = ""
+        if args.print_lift:
+            lift_output = """
+matrix LiftRep=lift(Snext+G,ideal(witness));
+poly liftedWitness=0;
+for (i=1;i<=size(Snext);i++)
+{
+  liftedWitness=liftedWitness+Snext[i]*LiftRep[i,1];
+}
+liftedWitness=reduce(liftedWitness,Gnext);
+print(liftedWitness);
+"""
+        transition = f"""
+ideal Jnext=phi(I5),M^{args.normal_power + 1};
+ideal Gnext=slimgb(Jnext);
+list saturationNext=sat(Gnext,K);
+ideal Snext=slimgb(saturationNext[1]);
+ideal Lift=slimgb(Snext+G);
+int lifts=(reduce(witness,Lift)==0);
+print(size(Gnext));
+print(size(Snext));
+print(lifts);
+{lift_output}
 """
 
     program = f"""
@@ -71,8 +137,8 @@ ideal I4=subst(I3,{normals[3]},p4);
 poly p5=subst(I4[17],{normals[4]},0);
 ideal I5=subst(I4,{normals[4]},p5);
 
-ring q={characteristic},(u,v,{",".join(map(str, bases))}),(dp(2),dp(6));
-map phi=source,{normal_images},{",".join(map(str, bases))};
+ring q={characteristic},({target_variables}),{target_order};
+map phi=source,{map_images};
 ideal M=u,v;
 ideal J=phi(I5),M^{args.normal_power};
 ideal G=slimgb(J);
@@ -102,6 +168,7 @@ print(size(S));
 print(first);
 print(witness);
 {analysis}
+{transition}
 """
     singular = shutil.which("Singular")
     assert singular is not None, "Singular is required"

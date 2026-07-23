@@ -1,6 +1,6 @@
 # Fixed-rank symmetric/Hessian frontier
 
-## Improved rank endpoint
+## Improved repository rank endpoint
 
 The rank-directed circuit search now gives a homogeneous quartic
 Hessian-nilpotent Vanishing counterexample in 44 variables with
@@ -15,8 +15,15 @@ different witnesses:
 
 | objective | quartic dimension | exact Hessian rank |
 |---|---:|---:|
-| smallest known homogeneous HN-VC witness | 42 | 38 |
-| smallest known Hessian rank | 44 | 37 |
+| smallest repository-certified homogeneous HN-VC witness | 42 | 38 |
+| smallest repository-certified Hessian rank | 44 | 37 |
+
+These are incumbents among the exact artifacts currently stored here.  The
+table is not a literature-wide best-known claim.  Nor is the rank-37 artifact
+a new logical disproof: the unrestricted quartic HN Vanishing Conjecture is
+already falsified by any one valid witness, including the 42-variable
+construction.  Its contribution is a different quantitative realization
+with lower certified Hessian rank.
 
 For the new source, the cubic circuit exposes the `qb` and `x2s` atoms,
 performs twenty shared-factor cleanups, rank-compresses a cubic-output space

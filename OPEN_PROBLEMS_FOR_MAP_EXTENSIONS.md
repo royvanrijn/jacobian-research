@@ -95,7 +95,13 @@ See
 and
 [`verified/SUPPORT_SATURATION_PRINCIPLE.md`](verified/SUPPORT_SATURATION_PRINCIPLE.md).
 
-## 3. Restricted Dixmier problem: invariant filtered obstruction
+## 3. Smallest false Dixmier rank and the `DC_2` obstruction program
+
+The inverse-Jacobian construction already gives a non-surjective endomorphism
+of `A_3`, hence of `A_n` for every `n>=3`.  Connecting the counterexample to
+Dixmier is therefore complete.  The dimensional problem is to determine the
+smallest false `DC_n`, with `DC_2` as the immediate target; `DC_1` remains a
+separate question.
 
 The rank-two constructions produce explicit classical symplectic symbols
 and symbol-specific failures of filtered Weyl quantization.  At correction
@@ -128,6 +134,10 @@ gauge-invariant obstruction.  It could prove that the displayed rank-two
 symbols admit no filtered Weyl quantization, or identify the exact extra
 hypothesis under which a boundary-clean family is conjugate to a canonical
 inverse-Jacobian lift.
+
+Even complete elimination of a displayed symbol does not settle `DC_2`;
+settling `DC_2` requires either a genuine non-surjective `A_2` endomorphism or
+a proof that every `A_2` endomorphism is an automorphism.
 
 Useful map extensions should keep the classical symbol family explicit while
 making the correction complex functorial in the family parameters.

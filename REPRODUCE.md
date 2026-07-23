@@ -803,6 +803,12 @@ atom cancels the first-coordinate circuit `x^2(3y+xz)`.  The expanded
 32-family Pareto search finds a separate 22-variable cubic source whose
 44-variable HN lift has exact generic Hessian rank 37:
 
+These computations form the now-frozen upper-bound track.  The commands below
+reproduce the recorded search; they are not an active broad-search queue.
+If the program is reopened, it should begin with a theorem-directed
+five-dimensional cubic classification or the invertibility-only question for
+arbitrary cubic-homogeneous Keller maps with `(JH)^3=0`.
+
 ```bash
 .venv/bin/python scripts/search_restricted_bcw_circuits.py \
   --width 64 --max-steps 24 --prebeam-factor 2 --partial-power-depth 8 \
@@ -905,6 +911,17 @@ The all-order nonvanishing proof is written in
 [`IMAGE_VANISHING_COUNTEREXAMPLES.md`](extended-geometry/IMAGE_VANISHING_COUNTEREXAMPLES.md);
 the generators check the finite artifacts and change-of-variable identities;
 the dependency-free audit re-expands the 40-variable witness from scratch.
+The dependency chain is `F1 -> LR1 -> IV1`: the foundational collision feeds
+the essential cubic quotient, whose named inverse coordinate gives the direct
+Image witness, identity slice, and the 40/42-variable Vanishing witnesses.
+The parallel `LR1 -> GS1` branch is instead the nonexplicit route to
+`not GMC(42)`.  The quantitative rank branch is
+`LR1 -> LR2 -> LR3`, with `IV1 -> LR3` supplying the HN consequence
+framework for the separate rank-37 realization.  These arrows record logical
+or construction dependence.
+Dimensions 20/40/42 and rank 37 are repository ledger values, and the exact
+artifacts are witness-specific data; neither is a literature-wide priority
+claim.
 A local proof of the
 fixed-dimensional DVEZ/Zhao implication, including Gaussian contraction, the
 countable-union step, and formal inversion, completes the nonexplicit route to
@@ -1321,17 +1338,11 @@ polynomials; regeneration is deterministic.
 make verify
 ```
 
-## Canonical degreewise paper
+## Degreewise theorem audit
 
-The canonical statement and proof are in the standalone paper; the four-input
-verification companion is
-[`DEGREEWISE_MULTIPLICITY_AUDIT.md`](DEGREEWISE_MULTIPLICITY_AUDIT.md).  Build
-the paper with:
-
-```bash
-cd papers/marked-root-multiplicity
-latexmk -pdf -interaction=nonstopmode -halt-on-error main.tex
-```
+The former standalone manuscript has been retired. The retained theorem
+statement, proof dependencies, and reproduction commands are in
+[`DEGREEWISE_MULTIPLICITY_AUDIT.md`](DEGREEWISE_MULTIPLICITY_AUDIT.md).
 
 To compile every standalone paper with the same discovery rule used by CI,
 run:

@@ -10,6 +10,7 @@ It is not a coefficient search for a plane Keller counterexample.
 """
 
 from dataclasses import asdict, dataclass
+from itertools import combinations
 from typing import Sequence
 
 from boundary_lattice_prefilter import (
@@ -246,8 +247,8 @@ class OneDicriticalNormalizationCertificate:
             raise ValueError("residue degree must be positive")
         if self.affine_degree <= 0:
             raise ValueError("affine degree must be positive")
-        if self.punctures not in (1, 2):
-            raise ValueError("the restricted gate accepts one or two punctures")
+        if self.punctures <= 0:
+            raise ValueError("the puncture count must be positive")
 
 
 @dataclass(frozen=True)
@@ -349,21 +350,26 @@ def audit_one_dicritical_normalization(
     if reasons:
         return finish("incomplete", reasons, None)
 
-    if certificate.punctures == 2:
-        budgets = two_puncture_budgets(certificate.residue_degree)
-        if certificate.residue_degree == 1:
-            # A finite map with two punctures cannot have degree one: both
-            # punctures must have positive pole order.
-            forced_affine_ramification = 1
-        else:
-            forced_affine_ramification = min(
-                budget.forced_affine_ramification for budget in budgets
-            )
+    if certificate.punctures >= 2:
+        budgets = puncture_profile_budgets(
+            certificate.residue_degree,
+            certificate.punctures,
+        )
+        # If s>f there is no positive pole profile at all.  Otherwise every
+        # profile forces f+s-2 affine ramification.
+        forced_affine_ramification = (
+            certificate.residue_degree + certificate.punctures - 2
+        )
         return finish(
             "excluded",
             (
-                "an immersive finite two-puncture residue cover contradicts "
-                "Riemann--Hurwitz",
+                (
+                    "no positive pole profile has the certified degree"
+                    if not budgets
+                    else
+                    "an immersive finite multi-puncture residue cover "
+                    "contradicts Riemann--Hurwitz"
+                ),
             ),
             forced_affine_ramification,
             immersion_certified=True,
@@ -451,12 +457,40 @@ def one_puncture_budget(degree: int) -> HurwitzBudget:
 def two_puncture_budgets(degree: int) -> tuple[HurwitzBudget, ...]:
     """All pole splits for a finite Gm -> A1 residue map."""
 
-    if degree < 2:
+    return puncture_profile_budgets(degree, 2)
+
+
+def puncture_profile_budgets(
+    degree: int,
+    punctures: int,
+) -> tuple[HurwitzBudget, ...]:
+    """Enumerate all ordered positive pole profiles over target infinity.
+
+    A degree-``degree`` map ``P1 -> P1`` whose affine source is obtained by
+    deleting ``punctures`` points has one positive pole order at each deleted
+    point.  Ordered compositions retain the boundary labels.  For every
+    profile Riemann--Hurwitz forces exactly
+
+        degree + punctures - 2
+
+    ramification away from infinity.
+    """
+
+    if degree <= 0:
+        raise ValueError("degree must be positive")
+    if punctures <= 0:
+        raise ValueError("puncture count must be positive")
+    if punctures > degree:
         return ()
-    return tuple(
-        hurwitz_budget(degree, (left, degree - left))
-        for left in range(1, degree)
-    )
+    profiles: list[HurwitzBudget] = []
+    for cuts in combinations(range(1, degree), punctures - 1):
+        endpoints = (0, *cuts, degree)
+        poles = tuple(
+            endpoints[index + 1] - endpoints[index]
+            for index in range(punctures)
+        )
+        profiles.append(hurwitz_budget(degree, poles))
+    return tuple(profiles)
 
 
 def conductor_collision_budget(

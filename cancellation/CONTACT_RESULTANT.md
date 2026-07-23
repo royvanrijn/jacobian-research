@@ -3,9 +3,10 @@
 This note supplies refined projective-branch intersection geometry.  It is
 not a dependency of the degreewise multiplicity theorem, whose nilpotency
 index follows unconditionally from the two proofs in
-[`thick-intersection.tex`](../papers/marked-root-multiplicity/thick-intersection.tex).
+the unconditional thick-contact theorem retained in the
+[degreewise audit](../DEGREEWISE_MULTIPLICITY_AUDIT.md).
 The concise paper appendix is
-[`refined-boundary-geometry.tex`](../papers/marked-root-multiplicity/refined-boundary-geometry.tex).
+the refined boundary calculations retained below.
 
 For positive integers `m,r`, put
 
@@ -23,8 +24,8 @@ and
 
 The full cancellation prime-intersection diagram requires
 `Res_w(K_{m,r},L_{m,r}) != 0`.  This note records a uniform endpoint
-reduction and proves the five complete columns `r=1,2,3,4,5`.  It does **not**
-claim the remaining all-parameter theorem for `r>=6`.
+reduction and proves the seven complete columns `r=1,2,3,4,5,6,7`.  It does
+**not** claim the remaining all-parameter theorem for `r>=8`.
 
 ## 1. Triangular beta-primitive identity
 
@@ -673,7 +674,7 @@ the six complete fixed-`r` columns: it supplies 1000 complete all-`r`
 columns in the transverse direction and an explicit effective tail in every
 fixed-`m` column.
 
-Consequently a still-unresolved pair in `OP-CR` must have `m>=1001`, `r>=7`,
+Consequently a still-unresolved pair in `OP-CR` must have `m>=1001`, `r>=8`,
 satisfy `r<=X_m/m`, have composite `N=(m+1)r+1`, and
 have at most one prime in
 `(mr,(m+1)r+1)`, unless another recorded irreducibility criterion applies.
@@ -927,13 +928,14 @@ chosen prime.  Degree is therefore preserved, and a modular monic gcd equal
 to one certifies coprimality over `Q`.  These 203 certificates are reproduced
 by
 [`verify_contact_resultant_modular_grid.py`](../scripts/verify_contact_resultant_modular_grid.py).
-For `r=6` this is the finite part of (65).  The rows with `r>=7` are evidence
-only and do not replace a uniform argument.
+For `r=6` and `r=7` these are subsets of the finite parts of the complete
+column certificates.  The rows with `r>=8` are evidence only and do not
+replace a uniform argument.
 
 ## 14. Scope boundary (`OP-CR`)
 
 The all-parameter problem is now confined to the finite staircase in each
-column given by `m>=1001`, `7<=r<=X_m/m`, after removing pairs covered by
+column given by `m>=1001`, `8<=r<=X_m/m`, after removing pairs covered by
 another parameter-irreducibility theorem.  Above the non-numerical threshold
 `K_0`, it is further confined by `r<5(mr)^(21/40)`.  Formula (6) still gives
 a fixed comparison disk, but the `r=4` analysis shows that demanding every
@@ -971,15 +973,39 @@ nonzero algebraic, Lindemann--Weierstrass separates that value from `exp(c)`.
 Consequently the `r=7` contact resultant is nonzero for every sufficiently
 large `m`.
 
-What does not generalize structurally is an effective positive-`t`
-continuation or any bound uniform in `r`; the branch count already rises from
-29 to 42.  Repeating the `r=6` atlas column by column is therefore a valid
-fixed-`r` computation, not a solution of the residual wedge.  The full
-bounded pilot and the smaller cross-column limiting audit are replayed by
+The positive-`t` continuation is also effective in this column.  Put
+`t=1/m`, `y=1+tx`, and let `P_7(t,x)` be the normalized degree-42 residual
+eliminant.  The seventh-moment equation reduces to
+
+\[
+ 720=Q_7(t,x)(1+tx)^{7/t+1},
+\]
+
+where `Q_7` is an explicit polynomial of bidegree `(7,7)`.  On the 512
+rational cells partitioning `0<=t<=1/101`, 320-bit Arb arithmetic certifies
+42 pairwise-disjoint Rouche tubes per cell.  These 21,504 tubes exhaust the
+eliminant.  There are no real branches.  Rigorous logarithmic enclosures
+exclude the scalar identity by its real part on 19,456 tubes and by its phase
+on the remaining 2,048.  Thus the contact resultant is nonzero for every
+`m>=101`.  Degree-preserving modular gcds modulo `1,000,003` certify
+`1<=m<=100`, and therefore
+
+\[
+ \boxed{\operatorname{Res}_w(K_{m,7},L_{m,7})\ne0
+        \quad\text{for every integer }m\ge1.}
+\]
+
+What does not yet generalize structurally is a bound uniform in `r`; the
+branch count already rises from 29 to 42.  Repeating the atlas column by
+column is therefore a valid fixed-`r` computation, not a solution of the
+residual wedge.  The full bounded pilot and the smaller cross-column limiting
+audit are replayed by
 [`verify_contact_resultant_r7_asymptotic.py`](../scripts/verify_contact_resultant_r7_asymptotic.py)
 and
 [`verify_contact_resultant_fixed_r_branch_schema.py`](../scripts/verify_contact_resultant_fixed_r_branch_schema.py),
-respectively.
+respectively.  The effective continuation and finite completion are replayed
+by
+[`verify_contact_resultant_r7_effective.py`](../scripts/verify_contact_resultant_r7_effective.py).
 
 Two structural routes remain useful beyond that first column.  First,
 combine the factor-degree restriction after (47) with endpoint geometry.  A
@@ -1025,6 +1051,8 @@ The bounded `r=7` limiting-edge generalization audit is in
 [`verify_contact_resultant_fixed_r_branch_schema.py`](../scripts/verify_contact_resultant_fixed_r_branch_schema.py).
 The exact full-eliminant connection and eventual `r=7` theorem are in
 [`verify_contact_resultant_r7_asymptotic.py`](../scripts/verify_contact_resultant_r7_asymptotic.py).
+The effective 42-tube continuation and finite-range completion are in
+[`verify_contact_resultant_r7_effective.py`](../scripts/verify_contact_resultant_r7_effective.py).
 The coefficient comparison and fractional-linear transfer behind (46)--(47)
 are checked by
 [`verify_contact_resultant_irreducible_ranges.py`](../scripts/verify_contact_resultant_irreducible_ranges.py).

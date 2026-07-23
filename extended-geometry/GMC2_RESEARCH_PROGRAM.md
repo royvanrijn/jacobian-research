@@ -36,8 +36,12 @@ classify minimal three-real-variable witnesses.  The
 Long's five-term quartic is the unique nontrivial template in the natural
 rank-one ansatz \(P=W(1+aZ)+(b_0+b_1Z+b_2Z^2)T^2\).  The first three pure
 moments cut out the family scheme-theoretically, and a forced formal square
-identity proves all-order vanishing.  Global degree and support minimality
-outside that ansatz remain open.
+identity proves all-order vanishing.  An exhaustive rational support search
+also proves the sparse Pareto theorem: no failure has both degree at most
+four and at most four circular-coordinate monomials.  The only null
+survivors are isotropic linear, Gaussian-shear, or orthogonal-product
+families, and all satisfy GMC.  Dense cubic exclusion and four-term
+exclusion without a degree bound remain open.
 
 ## Resolution of the former frontier
 

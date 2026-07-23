@@ -173,7 +173,7 @@ radial order \(\mu_i v(x_i)\).
 ## 2. Recovery of the degree-five blowup
 
 For the degree-five chart in
-[`global-comparison-obstruction.tex`](../papers/hurwitz-ll-rerooting/global-comparison-obstruction.tex),
+the [corrected Hurwitz--LL comparison](HURWITZ_LL_COMPACTIFICATION.md),
 the local cluster polynomials are
 
 \[

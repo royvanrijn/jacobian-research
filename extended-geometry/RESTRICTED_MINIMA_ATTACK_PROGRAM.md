@@ -1,6 +1,24 @@
-# Attack program for the restricted exact minima
+# Parked attack program for the restricted exact minima
 
-## 1. One coupled frontier, not four unrelated searches
+The broad computational search is frozen at the frontier documented in
+[`RESTRICTED_MINIMA_FRONTIER.md`](RESTRICTED_MINIMA_FRONTIER.md).  The items
+below are retained as theorem-directed restart points, not as an active queue.
+
+## 1. Primary target: arbitrary cubic index three
+
+The primary restricted-minima target is:
+
+> Every cubic-homogeneous Keller map \(F=X+H\) satisfying
+> \((JH)^3=0\) is invertible.
+
+This invertibility-only statement is the mathematical bottleneck.  It is the
+first open case capable of raising a lower endpoint, from
+`nu_cub>=3` to `nu_cub>=4`, and its tensor structure constrains the
+subsequent index and rank searches.  Circuit-level BCW search remains useful
+for improving upper bounds, but it is a parallel construction track rather
+than the lead target.
+
+## 2. One coupled frontier, not four unrelated searches
 
 The cubic rank and index questions are linked by an elementary but useful
 constraint.  If a nilpotent matrix has rank `r` and nilpotency index `nu`,
@@ -37,7 +55,7 @@ At the present frontier, proving this case would improve
 that rank bound.  A strict generic-rank improvement would require the
 index-four case or additional rank-three structure.
 
-## 2. Attack A: the full cubic index-three identity ideal
+## 3. Attack A: the full cubic index-three identity ideal
 
 Write the cubic correction as a symmetric vector-valued tensor
 
@@ -194,7 +212,7 @@ statement.  A useful next tree calculation would instead determine whether
 degrees above thirteen vanish universally or find higher-degree weak-index-
 three automorphisms before treating noninvertibility.
 
-## 3. Attack B: rank three through the kernel bundle
+## 4. Attack B: rank three through the kernel bundle
 
 For `rank(JH)=3`, the generic kernel has codimension three, and `(JH)^3=0`
 gives `im((JH)^2) subset ker(JH)`.  The known rank-two classification should
@@ -248,7 +266,7 @@ with artifact
 The next kernel-bundle step is to determine whether this family exhausts
 the Pluecker-degree-one stratum or to write the missing normal forms.
 
-## 4. Attack C: cotangent kernel excess
+## 5. Attack C: cotangent kernel excess
 
 For the cotangent potential `p(x,y)=y^T H(x)`, put
 
@@ -332,7 +350,7 @@ and
 New atoms should now be generated from the equations `K^TAK=0`, rather than
 guessed from terminal coordinates.
 
-## 5. Attack D: separate the quartic dimension problem
+## 6. Attack D: separate the quartic dimension problem
 
 Every cotangent lift doubles the cubic dimension.  Therefore beating the
 current 42-variable quartic by this route is exactly the problem of finding
@@ -352,7 +370,7 @@ linear kernel dimension.  The output must be a classification or a
 certificate that the relevant saturation is empty; a random HN scan cannot
 raise the lower bound.
 
-## 6. Promotion rules
+## 7. Promotion rules
 
 Each attack has three levels:
 
@@ -366,11 +384,14 @@ Only level three changes an endpoint.  Bounded failures are retained because
 they identify incompatible circuit factorizations, but they are never
 reported as lower bounds.
 
-The immediate order of work is:
+If the program is reopened, the preferred order is:
 
-1. synthesize circuit atoms from `K^TAK=0`;
-2. build the polarized index-three inverse-tree reducer;
+1. classify cubic-homogeneous Keller maps in dimension five;
+2. attack the full-class index-three invertibility-only statement;
 3. begin the rank-three kernel-bundle classification at Pluecker degrees
    zero and one;
 4. run the dimension-six direct-HN saturation independently of the
    cotangent program.
+
+Circuit synthesis from `K^TAK=0` is retained only as a specifically motivated
+upper-bound construction, not as a reason to resume broad beam search.

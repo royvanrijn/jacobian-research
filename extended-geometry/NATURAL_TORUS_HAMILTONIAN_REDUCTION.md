@@ -1,9 +1,10 @@
 # Natural torus Hamiltonian reduction of the foundational lift
 
-The foundational Keller map has a canonical algebraic torus symmetry.  This
-note determines exactly what its Hamiltonian reduction does and isolates the
-remaining rank-two Dixmier problem.  The result improves both the naive
-positive expectation and the naive singular-quotient obstruction:
+The foundational Keller map has a canonical algebraic torus symmetry.  Its
+inverse-Jacobian lift already disproves `DC_n` for every `n>=3`; the open
+fixed-rank target is `DC_2`.  This note determines exactly what Hamiltonian
+reduction does toward that smaller-rank problem.  The result improves both
+the naive positive expectation and the naive singular-quotient obstruction:
 
 * the full affine moment reduction is not affine four-space;
 * a primitive cotangent chart removes the stabilizer and retains the complete

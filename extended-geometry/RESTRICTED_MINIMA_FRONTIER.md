@@ -1,4 +1,21 @@
-# Exact restricted minima after the cubic counterexample
+# Restricted minima after the cubic counterexample
+
+## Status: documented and frozen
+
+The broad circuit search is closed at the reproducible frontier recorded
+below.  It should be resumed only for a theorem-directed classification or a
+specifically motivated construction, not by widening the existing beams.
+The cleanest theorem target, if this program is reopened, is:
+
+> Prove or disprove that every cubic-homogeneous Keller map
+> \(F=X+H\) with \((JH)^3=0\) is invertible.
+
+This is the first unresolved nilpotency index for the full class.  A positive
+solution raises the first meaningful lower endpoint,
+\(\nu_{\rm cub}\geq4\), and supplies the structural constraint needed before
+the higher-index and rank-three strata can be organized efficiently.  A
+negative solution would instead produce a much smaller-index
+cubic-homogeneous counterexample.
 
 ## 1. The four minima
 
@@ -6,28 +23,56 @@ Over characteristic zero, define
 
 \[
 \begin{aligned}
+n_{\rm cub}
+ &=\min\{n:X+H\text{ is a noninjective cubic-homogeneous Keller map on }
+      \mathbb A^n\},\\
 r_{\rm cub}
  &=\min\{\operatorname{rank}_{k(x)}JH:
       X+H\text{ is a noninjective cubic-homogeneous Keller map}\},\\
 \nu_{\rm cub}
  &=\min\{\nu:(JH)^\nu=0,\ 
       X+H\text{ is such a map}\},\\
-\rho_{\rm HN,4}
- &=\min\{\operatorname{rank}_{k(z)}\operatorname{Hess}P:
-      P\text{ is a homogeneous quartic HN Vanishing counterexample}\},\\
-n_{\rm HN,4}
- &=\min\{n:P\in k[z_1,\ldots,z_n]\text{ is such a counterexample}\}.
+\rho_{\rm cot}
+ &=\min\{\operatorname{rank}_{k(x,y)}\operatorname{Hess}(y^TH(x)):
+      X+H\text{ is such a map}\}.
 \end{aligned}
 \]
 
-The repository now records the rigorous intervals
+The repository now records the following rigorous intervals.  Their upper
+endpoints are repository-certified incumbents, not literature-wide
+best-known or priority claims.
 
 | minimum | lower bound | upper bound | upper witness |
 |---|---:|---:|---|
+| \(n_{\rm cub}\) | **5** | 21 | 21-variable essential BCW quotient |
 | \(r_{\rm cub}\) | 3 | **17** | 24-variable circuit-level BCW quotient |
 | \(\nu_{\rm cub}\) | 3 | **18** | 22-variable circuit-level BCW quotient |
-| \(\rho_{\rm HN,4}\) | 3 | **37** | 44-variable circuit cotangent/HN lift |
-| \(n_{\rm HN,4}\) | 6 | 42 | 42-variable cotangent/HN lift |
+| \(\rho_{\rm cot}\) | **6** | **37** | 44-variable circuit cotangent/HN lift |
+
+The dimension lower bound uses the known invertibility of
+cubic-homogeneous Keller maps through dimension four.  The cotangent lower
+bound is stronger than the unrestricted HN bound: if \(K\) spans
+\(\ker JH\), then
+
+\[
+\operatorname{rank}\operatorname{Hess}(y^TH)
+=2\operatorname{rank}JH+\operatorname{rank}(K^TAK)\ge6.
+\]
+
+Three companion minima belong to different classes and must not be folded
+into the four displayed above:
+
+| companion minimum | rigorous interval | scope |
+|---|---:|---|
+| \(n_{\rm Dru}\) | \(6\le n_{\rm Dru}\le451\) | noninjective Drużkowski maps |
+| \(\rho_{\rm HN,4}\) | \(3\le\rho_{\rm HN,4}\le37\) | unrestricted homogeneous quartic HN counterexamples |
+| \(n_{\rm HN,4}\) | \(6\le n_{\rm HN,4}\le42\) | unrestricted homogeneous quartic HN counterexamples |
+
+For \(n_{\rm Dru}\), the lower bound follows from Drużkowski's theorem for
+rank or corank below three, while the upper bound is the repository's
+explicit stable-normal-form construction.  The lower bound \(3\) for
+\(\rho_{\rm HN,4}\) applies only to the unrestricted HN class; using it for
+cotangent lifts would discard the block-rank identity above.
 
 These are intervals for exact minima, not claims that an endpoint is sharp.
 The machine-readable ledger is
@@ -41,8 +86,8 @@ failure criteria, are in
 The rank lower bound uses de Bondt--Sun's theorem that a
 cubic-homogeneous Keller map with `rank(JH)<=2` is invertible.  The same
 theorem applies to cubic gradient maps and gives the Hessian-rank lower bound.
-The dimension lower bound uses the known symmetric nilpotent-Jacobian result
-through dimension five.
+The quartic-HN dimension lower bound uses the known symmetric
+nilpotent-Jacobian result through dimension five.
 
 For the index lower bound, `(JH)^2=0` and Euler's identity give
 `JH H=0`.  The derivation `D=H dot partial` therefore satisfies `D(H)=0`;
@@ -177,9 +222,10 @@ Consequently
  \boxed{r_{\rm cub}\leq17,\qquad \nu_{\rm cub}\leq18}.
 \]
 
-The rank-17 witness is the stronger rank endpoint; the 22-variable rank-18
-witness is the smaller construction attaining index 18.  Neither supersedes
-the 21-variable witness as the smallest known ambient cubic counterexample.
+The rank-17 witness is the stronger repository rank endpoint; the 22-variable
+rank-18 witness is the smaller construction attaining index 18.  Neither
+supersedes the 21-variable witness as the smallest ambient cubic
+counterexample currently certified in this repository.
 
 ## 3. Circuit search and power-rank objective
 
@@ -315,9 +361,10 @@ has Hessian
  \end{pmatrix}.
 \]
 
-The existing 21-variable witness retains the best certified ambient bound
-`n_HN,4<=42` and has exact generic Hessian rank 38.  A different two-atom
-circuit now improves the rank endpoint.  It exposes the `qb` and `x2s`
+The existing 21-variable witness retains the repository-certified ambient
+bound `n_HN,4<=42` and has exact generic Hessian rank 38.  A different
+two-atom circuit lowers the repository's rank upper endpoint.  It exposes the
+`qb` and `x2s`
 atoms, reaches a 19-variable quadratic--cubic map of cubic-output rank eight,
 homogenizes in dimension 28, and has successive constant kernels of
 dimensions five and one.  The resulting 22-variable cubic collision gives a
@@ -366,31 +413,35 @@ Both sampled indices are search diagnostics only: congruence preserves Hessian
 rank but not powers, and zero at one specialization does not prove a
 polynomial-matrix power identity.
 
-The HN search therefore keeps two independent terminal objectives:
+The frozen HN search used two independent terminal objectives:
 
 - minimize exact generic cotangent-Hessian rank and final doubled dimension;
 - retain the transformed-Hessian power-rank tuple as a shortlist signal, not
   as a certified upper bound.
 
-Further progress on `rho_HN,4` or `n_HN,4` must change the rank-producing
-pairing in the circuit, not merely remove zero or constant-kernel directions.
+Further progress on \(\rho_{\rm cot}\) must change the rank-producing pairing
+in the circuit, not merely remove zero or constant-kernel directions.
 The exact block-rank decomposition that isolates this pairing is developed in
 the [attack program](RESTRICTED_MINIMA_ATTACK_PROGRAM.md): the rank-37 source
 has cotangent kernel excess one, while the rank-17 source has excess four.
 
-## 5. Standard restricted questions
+## 5. Parked exact questions
 
 The surviving questions can now be stated without reference to one
 construction:
 
-1. What is the largest `r>2` for which every cubic-homogeneous Keller map with
-   `rank(JH)<=r` is invertible?
-2. What is the largest `d>=2` for which every such map with `(JH)^d=0` is
-   invertible?  Resolve `d=3` first for the full class, separately from the
-   power-linear theorem.
-3. Determine the exact values of `rho_HN,4` and `n_HN,4`.
-4. Determine whether the two minima are attained by one quartic; minimizing
-   rank and minimizing dimension need not select the same witness.
+1. Is every cubic-homogeneous Keller map with `(JH)^3=0` invertible?  This is
+   the primary restricted-minima target and is separate from the known
+   power-linear and symmetric-Jacobian theorems.
+2. After the index-three case, what is the largest `d>=3` for which every such
+   map with `(JH)^d=0` is invertible, and what is the largest `r>2` for which
+   `rank(JH)<=r` forces invertibility?
+3. Determine \(n_{\rm cub}\), beginning with the five-dimensional
+   cubic-homogeneous class.
+4. Determine \(\rho_{\rm cot}\), separately from the unrestricted
+   \(\rho_{\rm HN,4}\) and \(n_{\rm HN,4}\) problems.
+5. Determine \(n_{\rm Dru}\); minimizing the Drużkowski stabilization is a
+   different problem from minimizing the cubic-homogeneous source.
 
 ## Reproduction
 

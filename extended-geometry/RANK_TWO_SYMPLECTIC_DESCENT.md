@@ -175,7 +175,7 @@ After shrinking to the marked ordinary boundary-clean open, the assignment
 
 is injective.  Indeed, `G_H` is polynomially left--right equivalent to
 `F_H times id_(A^1)`, while the
-[generic affine-mark faithfulness theorem](../papers/decorated-discriminant-normalization/main.tex)
+[generic affine-mark faithfulness theorem](DECORATED_NORMALIZATION_INVARIANT.md)
 recovers `H` from the stable class of `F_H`.  Thus the coarse theorem supplies
 the `N-3`-dimensional result without faithfulness, and the affine mark upgrades
 it to exact parameter separation on a nonempty open.

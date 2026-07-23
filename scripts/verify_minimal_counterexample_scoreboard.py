@@ -70,10 +70,16 @@ def main() -> None:
     assert gaussian_remaining_four_weight["support_count"] == 3
 
     frontiers = restricted["rigorous_frontiers"]
+    assert frontiers["n_cub"]["lower_bound"] == 5
+    assert frontiers["n_cub"]["upper_bound"] == 21
     assert frontiers["r_cub"]["lower_bound"] == 3
     assert frontiers["r_cub"]["upper_bound"] == 17
     assert frontiers["nu_cub"]["lower_bound"] == 3
     assert frontiers["nu_cub"]["upper_bound"] == 18
+    assert frontiers["rho_cot"]["lower_bound"] == 6
+    assert frontiers["rho_cot"]["upper_bound"] == 37
+    assert frontiers["n_Dru"]["lower_bound"] == 6
+    assert frontiers["n_Dru"]["upper_bound"] == 451
     assert frontiers["rho_HN4"]["lower_bound"] == 3
     assert frontiers["rho_HN4"]["upper_bound"] == 37
     assert frontiers["n_HN4"]["lower_bound"] == 6
@@ -89,15 +95,8 @@ def main() -> None:
                 "a one-variable Keller map is affine",
                 "the certified foundational determinant-nonzero collision uses 3 variables",
             ),
-            "cubic_homogeneous_Keller_noninvertibility": interval(
-                3,
-                21,
-                (
-                    "dimension at most 2 has rank(JH)<=2, and the "
-                    "de Bondt--Sun rank-two theorem gives invertibility"
-                ),
-                "the essential cubic-homogeneous collision uses 21 variables",
-            ),
+            "cubic_homogeneous_Keller_noninvertibility": frontiers["n_cub"],
+            "Druzkowski_Keller_noninvertibility": frontiers["n_Dru"],
             "GMC_failure_real_Gaussian_dimension": interval(
                 2,
                 3,
@@ -124,7 +123,8 @@ def main() -> None:
         "rank_and_index_frontiers": {
             "cubic_homogeneous_Jacobian_rank": frontiers["r_cub"],
             "cubic_homogeneous_Jacobian_nilpotency_index": frontiers["nu_cub"],
-            "homogeneous_quartic_Hessian_rank": frontiers["rho_HN4"],
+            "cotangent_lift_quartic_Hessian_rank": frontiers["rho_cot"],
+            "unrestricted_homogeneous_quartic_Hessian_rank": frontiers["rho_HN4"],
         },
         "bounded_structural_frontiers": {
             "two_real_cubic_four_weight_charts": {
@@ -186,14 +186,20 @@ def main() -> None:
             "Only exact identities or cited positive theorems change an endpoint; "
             "modular and bounded searches remain diagnostics."
         ),
+        "search_status": (
+            "frozen reproducible frontier; resume only for a theorem-directed "
+            "classification or a specifically motivated construction"
+        ),
     }
     OUTPUT.write_text(json.dumps(scoreboard, indent=2) + "\n")
     print("PASS scoreboard: ambient witness dimensions 21 / 20 / 40 / 42")
     print("PASS scoreboard: GMC failure dimension is in [2,3]")
     print("PASS scoreboard: exact minimum Gaussian counterexample degree is 3")
     print("PASS scoreboard: all 121 two-real cubic four-weight charts excluded")
-    print("PASS scoreboard: cubic rank/index intervals are [3,17] / [3,18]")
-    print("PASS scoreboard: homogeneous quartic Hessian-rank interval is [3,37]")
+    print("PASS scoreboard: cubic dimension/rank/index intervals are [5,21] / [3,17] / [3,18]")
+    print("PASS scoreboard: cotangent Hessian-rank interval is [6,37]")
+    print("PASS scoreboard: unrestricted quartic Hessian-rank interval is [3,37]")
+    print("PASS scoreboard: Druzkowski dimension interval is [6,451]")
     print(f"PASS scoreboard: wrote {OUTPUT.relative_to(ROOT)}")
 
 

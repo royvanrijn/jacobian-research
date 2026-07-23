@@ -52,7 +52,8 @@ This section is a summary.  The canonical paper contains the complete local
 proof, including the four generic DVRs, explicit uniformizers, every affine
 and boundary prime, geometric and arithmetic residue degrees, reduced prime
 discriminant equations, and the no-residual-component saturation argument;
-see [the extracted boundary-exhaustion section](../papers/marked-root-multiplicity/boundary-exhaustion.tex).
+see the proof retained here and the
+[degreewise audit](../DEGREEWISE_MULTIPLICITY_AUDIT.md).
 Its exact weighted-discriminant lemma proves for the displayed degreewise
 seed that `Disc_W(E_N)=lambda_N C^2 delta_N`, with `delta_N` prime, reduced,
 and nonzero modulo `C`.
@@ -201,7 +202,9 @@ nilpotent obstruction.
 
 The boundary-exhaustion and contact calculations above supply the boundary inputs to the degreewise result: cancellation type `(m,r)` has `e_Delta=r+1` and `mu=mr(m+1)`, whereas the split weighted contact is reduced.  The marked reconstruction open additionally separates all `mr` parameter roots within a type.  Combined with the two construction lemmas, this yields at least `1+(N-1)tau(N-1)-sigma(N-1)` stable classes in every generic degree `N>=4`.
 
-This section is only a component summary.  The canonical statement and proof are in [Marked-Root Keller Maps and Degreewise Stable Multiplicity](../papers/marked-root-multiplicity/main.tex); the [four-input audit](../DEGREEWISE_MULTIPLICITY_AUDIT.md) records the independent proof obligations.
+This section is the retained component summary; the
+[four-input audit](../DEGREEWISE_MULTIPLICITY_AUDIT.md) records the complete
+degreewise theorem and its independent proof obligations.
 
 ## 8. Independent audit notes
 
@@ -216,7 +219,7 @@ python3 scripts/audit_boundary_exhaustion_independent.py
 
 The scheme-intersection formula now has two independent all-parameter proofs
 in the canonical paper's
-[thick-intersection section](../papers/marked-root-multiplicity/thick-intersection.tex):
+[contact-resultant and thick-contact note](CONTACT_RESULTANT.md):
 a primitive monic-resultant calculation and a completed-local-ring length
 calculation.  The former is checked in bounded symbolic ranges by
 `scripts/verify_scheme_boundary_all_parameters.py`; the latter has a

@@ -465,7 +465,7 @@ The distinction in the last two rows is essential.  Marked-root geometry
 motivates the algebraization question, but it does not by itself prove a
 quantum obstruction.  The exact sources are
 [formal orbit triviality](extended-geometry/FORMAL_ORBIT_TRIVIALITY.md),
-[fixed-rank Dixmier reduction](extended-geometry/FIXED_RANK_DIXMIER_REDUCTION.md),
+[smallest-false-rank `DC_2` program](extended-geometry/FIXED_RANK_DIXMIER_REDUCTION.md),
 and the
 [quantum residue obstruction](extended-geometry/QUANTUM_RESIDUE_OBSTRUCTION.md).
 

@@ -1,114 +1,99 @@
 \documentclass[11pt]{article}
+
 \usepackage[margin=1in]{geometry}
-\usepackage{amsmath,amssymb,amsthm,mathtools,microtype}
+\usepackage{amsmath,amssymb,amsthm,microtype}
+\usepackage[T1]{fontenc}
 \usepackage[hidelinks]{hyperref}
 
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem{proposition}[theorem]{Proposition}
 \newtheorem{lemma}[theorem]{Lemma}
-\newtheorem{corollary}[theorem]{Corollary}
-\theoremstyle{remark}
-\newtheorem{remark}[theorem]{Remark}
 \newcommand{\A}{\mathbb A}
 \newcommand{\Pone}{\mathbb P^1}
+\makeatletter
+\renewcommand{\@seccntformat}[1]{\csname the#1\endcsname\hspace{0.75em}}
+\makeatother
 
-\title{Discriminants of the Pencils $H(W)-sW+t$}
-\author{Repository working draft}
-\date{\today}
+\title{Generic Discriminants of Polynomial Tangent Pencils}
+\author{Roy van Rijn\\{\small Independent researcher}}
+\date{24 July 2026}
+\hypersetup{
+  pdftitle={Generic Discriminants of Polynomial Tangent Pencils},
+  pdfauthor={Roy van Rijn},
+  pdfsubject={Singularities of the discriminant of H(W)-sW+t},
+  pdfkeywords={polynomial pencil, discriminant curve, cusp, node,
+    tangent line}
+}
 
 \begin{document}
 \maketitle
 
 \begin{abstract}
-Let $k$ be an algebraically closed field of characteristic zero and let
-$H\in k[W]$ have degree $n\geq3$.  The reduced discriminant of the pencil
-$H(W)-sW+t$ is parameterized by
+Let \(H\) be a polynomial of degree \(n\geq3\) over an algebraically
+closed field of characteristic zero.  The repeated-root locus of the pencil
 \[
- r\longmapsto \bigl(H'(r),rH'(r)-H(r)\bigr).
+  H(W)-sW+t
 \]
-We prove that for $H$ in a nonempty Zariski-open set its projective closure
-is a rational plane curve of degree $n$, smooth at its unique point at
-infinity, with exactly $n-2$ ordinary cusps and
-$\frac12(n-2)(n-3)$ ordinary nodes, and with no other singularities.  The
-same open set meets a natural normalized endpoint slice in every degree.
-The proof uses contact factorizations and dimension estimates; the genus
-formula is used only after all possible singularity types have been
-excluded.
-Over the reals we also prove a complementary chamber theorem: if one member
-of the pencil has $n$ simple real roots, then its chambers realize exactly
-$n,n-2,\ldots,n\bmod2$ real roots.  A single generic vertical line meets
-these chambers successively across ordinary folds, and rational input data
-admit rational witnesses in every chamber.
+is parameterized by
+\[
+  r\longmapsto\bigl(H'(r),rH'(r)-H(r)\bigr).
+\]
+We prove that, for \(H\) in a nonempty Zariski-open set, its projective
+closure is a rational plane curve of degree \(n\), smooth at its unique
+point at infinity, with exactly \(n-2\) ordinary cusps and
+\(\frac12(n-2)(n-3)\) ordinary nodes, and no other singularities.
+The proof uses the contact of the graph of \(H\) with affine lines to
+exclude every nongeneric singularity before the genus formula is applied.
 \end{abstract}
 
-\section{Introduction}
+\section{The theorem}
 
-Pencils of the form
+Let \(k\) be an algebraically closed field of characteristic zero and write
 \[
- E_{s,t}(W)=H(W)-sW+t                                      \tag{1.1}
+  H(W)=\sum_{j=2}^{n}h_jW^j,\qquad h_n\neq0.              \tag{1.1}
 \]
-occur when a polynomial inverse problem is reduced to choosing a marked
-root.  In the motivating Jacobian-map construction, the target coordinates
-specialize to $s=BC$ and $t=cAC^2$.  None of that construction is needed
-below: our subject is the intrinsic discriminant geometry of (1.1).
-
-The common organizing map is the
-\href{../../verified/TANGENT_MAP_CORE.md}{tangent-map core}.  In its normal
-coordinates it is
+Discarding the affine-linear part of \(H\) only changes coordinates in the
+\((s,t)\)-plane, so (1.1) entails no loss of generality.  Put
 \[
- (W,s)\longmapsto\bigl(s,Ws-H(W)\bigr),
+  E_{s,t}(W)=H(W)-sW+t.
 \]
-whose inverse equation is (1.1).  Its critical restriction gives at once
+A repeated root \(r\) satisfies
 \[
- s=H'(r),\qquad t=rH'(r)-H(r).                             \tag{1.2}
+  s=H'(r),\qquad t=rH'(r)-H(r).                           \tag{1.2}
 \]
-Thus the discriminant records tangent lines to the affine graph $Y=H(W)$.
-Its cusps correspond to flexes and its self-intersections to bitangent
-lines.  Rather than invoke a general theorem on generic dual curves, we use
-the special form (1.2) to control all bad contacts, including their behavior
-at infinity.
-
-Throughout, ``the discriminant curve'' means the reduced projective closure
-of the repeated-root locus.  Adding an affine-linear polynomial to $H$
-only applies an affine transformation to $(s,t)$, so we work in
+Thus the reduced discriminant curve is the image of
 \[
- \mathcal B_n=\operatorname{Spec}k[h_2,\ldots,h_n],\qquad
- H(W)=\sum_{j=2}^n h_jW^j,                                 \tag{1.3}
+  \nu_H:\A^1\longrightarrow\A^2,\qquad
+  r\longmapsto\bigl(H'(r),rH'(r)-H(r)\bigr).              \tag{1.3}
 \]
-and write $\mathcal B_n^\circ=D(h_n)$ for the exact-degree locus.
-
-\section{Statement of the theorem}
+Geometrically, \((s,-t)\) records the affine line of slope \(s\) tangent to
+the graph \(Y=H(W)\) at \(r\).  Cusps arise from flexes of the graph and
+nodes from lines tangent at two distinct points.  This is a special
+one-parameter instance of the classical geometry of dual plane
+curves; see, for example,~\cite{Yuran}.
 
 \begin{theorem}\label{thm:main}
-For every $n\geq3$ there is a nonempty Zariski-open subset
-$\mathcal U_n\subset\mathcal B_n^\circ$ such that for every
-$H\in\mathcal U_n$ the discriminant curve of $H(W)-sW+t$ has:
+For every \(n\geq3\), there is a nonempty Zariski-open subset of the
+degree-\(n\) polynomials such that the projective discriminant curve of
+\(H(W)-sW+t\) has:
 \begin{enumerate}
-\item degree $n$ and normalization $\Pone$;
+\item degree \(n\) and normalization \(\Pone\);
 \item one point at infinity, which is smooth;
-\item exactly $n-2$ ordinary cusps;
-\item exactly $\frac12(n-2)(n-3)$ ordinary nodes;
+\item exactly \(n-2\) ordinary cusps;
+\item exactly \(\frac12(n-2)(n-3)\) ordinary nodes;
 \item no other singularities.
 \end{enumerate}
-Moreover, $\mathcal U_n$ meets the normalized endpoint slice
-\[
- \mathcal A_n=\{H:\deg H=n,\ H(0)=H'(0)=H(1)=0,
-                   \ H'(1)=-1,\ H''(1)\ne-2\}.             \tag{2.1}
-\]
-Consequently the same conclusions hold on a nonempty open subset of
-$\mathcal A_n$.
 \end{theorem}
 
-The characteristic-zero assumption is used for derivatives, separability,
-and the local classification of the parameterized branches.  The theorem is
-not asserted in small positive characteristic.
+The result concerns the reduced discriminant.  No assertion is made here
+about the multiplicity with which a resultant defines it.
 
-\section{Normalization, degree, and infinity}
+\section{Normalization and infinity}
 
-Homogenizing (1.2) gives a morphism
+Homogenizing (1.3) gives
 \[
- \bar\nu_H:\Pone\longrightarrow\mathbb P^2,
- \qquad [R:U]\longmapsto[S_H:T_H:Z],                       \tag{3.1}
+  \bar\nu_H:\Pone\longrightarrow\mathbb P^2,\qquad
+  [R:U]\longmapsto[S_H:T_H:Z],                            \tag{2.1}
 \]
 where
 \begin{align*}
@@ -116,279 +101,154 @@ where
  T_H&=\sum_{j=2}^n (j-1)h_jR^jU^{n-j},\\
  Z&=U^n.
 \end{align*}
-These degree-$n$ forms have no common zero on $D(h_n)$.  The only parameter
-above the line at infinity is $[1:0]$, and its image is $[0:1:0]$.
+These forms have degree \(n\) and no common zero.
 
 \begin{proposition}\label{prop:normalization}
-For every $H\in\mathcal B_n^\circ$, the map $\bar\nu_H$ is finite and
-birational onto an integral plane curve of degree $n$.  It is a formal
-closed immersion at $[1:0]$; in particular its image is smooth there and no
-off-diagonal equal-image pair can specialize to that point while $h_n$
-remains nonzero.
+For every polynomial \(H\) of exact degree \(n\), the map
+\(\bar\nu_H\) is finite and birational onto an integral plane curve of
+degree \(n\).  Its image has a unique point at infinity, and that point is
+smooth.
 \end{proposition}
 
 \begin{proof}
 On the affine chart,
 \[
- \frac{ds}{dr}=H''(r),\qquad \frac{dt}{dr}=rH''(r).
+  \frac{ds}{dr}=H''(r),\qquad
+  \frac{dt}{dr}=rH''(r).
 \]
-At the generic point of the image, $r=dt/ds$; hence the map is birational.
-A nonconstant map from the proper curve $\Pone$ to its image is finite.
-The base-point-free forms in (3.1) pull a general line back to a divisor of
-degree $n$.  Birationality therefore makes the image degree $n$.
+At the generic point of the image this recovers \(r=dt/ds\), so
+\(\bar\nu_H\) is birational.  A nonconstant morphism from a proper curve to
+its image is finite.  Since (2.1) is given by base-point-free forms of
+degree \(n\), birationality makes the image a curve of degree \(n\).
 
-For the assertion at infinity, put $q=U/R$ and use the chart $T_H\ne0$.
-Uniformly over $k[h_2,\ldots,h_n,h_n^{-1}]$,
+The equation \(Z=0\) has the unique preimage \([1:0]\), whose image is
+\([0:1:0]\).  Put \(q=U/R\) and work in the target chart \(T_H\neq0\).
+Then
 \[
- x:=\frac{S_H}{T_H}=\frac n{n-1}q+O(q^2),\qquad
- y:=\frac Z{T_H}=\frac{q^n}{(n-1)h_n}+O(q^{n+1}).           \tag{3.2}
+  \frac{S_H}{T_H}=\frac{n}{n-1}q+O(q^2),\qquad
+  \frac{Z}{T_H}=\frac{q^n}{(n-1)h_n}+O(q^{n+1}).          \tag{2.2}
 \]
-The first series has unit linear coefficient, so the formal inverse theorem
-recovers $q$ uniquely from $x$.  The completed image is therefore the graph
-$y=f(x)$, proving formal closed immersion and smoothness.
-
-For completeness, consider the relative fiber product of two copies of
-$\Pone$ over the image while the coefficients vary in $D(h_n)$.  If an
-off-diagonal pair approached the infinity section, the uniqueness of the
-preimage of $Z=0$ forces both parameters to approach $q=0$.  In the completed
-neighborhood, equality of the two $x$-coordinates and formal invertibility
-in (3.2) force $q_1=q_2$.  Thus the off-diagonal locus has closure disjoint
-from the infinity section.
+The first series has nonzero linear coefficient.  It is therefore a local
+parameter on the image, which is formally the graph of the second series as
+a function of the first.  The point at infinity is smooth.
 \end{proof}
 
-\section{Contact strata and exclusion of bad singularities}
+\section{Contact strata}
 
-Let $\ell_r$ denote the tangent line to $Y=H(W)$ at $r$, and set
+Let \(\ell_r\) be the tangent line to the graph of \(H\) at \(r\), and put
 \[
- c(r)=\operatorname{ord}_{W=r}\bigl(H(W)-\ell_r(W)\bigr)\geq2.
+  c(r)=\operatorname{ord}_{W=r}\bigl(H(W)-\ell_r(W)\bigr).
 \]
-Differentiation of (1.2) gives
+One always has \(c(r)\geq2\).  Differentiating (1.3) gives
 \[
- \nu_H'(r)=H''(r)(1,r).                                    \tag{4.1}
+  \nu_H'(r)=H''(r)(1,r).                                 \tag{3.1}
 \]
-Thus $c(r)=2$ gives a smooth immersed branch.  If $c(r)=3$, then
-$H'''(r)\ne0$ and
+Thus \(c(r)=2\) gives a smooth immersed branch.  If \(c(r)=3\), then
+\(H'''(r)\neq0\), and
 \[
- \det\bigl(\nu_H''(r),\nu_H'''(r)\bigr)=2H'''(r)^2\ne0,   \tag{4.2}
+  \det\bigl(\nu_H''(r),\nu_H'''(r)\bigr)
+  =2H'''(r)^2\neq0.                                      \tag{3.2}
 \]
-so the image is an ordinary cusp.  Contact $c(r)\geq4$ is the first bad
-one-branch event.
+The image branch is therefore an ordinary cusp.  Contact of order at least
+four is the first bad one-branch event.
 
-If two distinct parameters $r,u$ have the same image, the graph has a common
-tangent line at both points.  When both branches are unramified their tangent
-directions are $(1,r)$ and $(1,u)$, with determinant $u-r\ne0$.  The
-intersection is automatically an ordinary transverse node.  The same
-determinant is the Jacobian of the equal-image equations with respect to the
-two parameters, so the tangent--chord coincidence is transverse as an
-incidence as well.  In particular a tacnode cannot occur from two distinct
-unramified normalization points.
+If two distinct parameters \(r\) and \(u\) have the same image and both
+branches are unramified, their tangent directions are \((1,r)\) and
+\((1,u)\).  Their determinant is \(u-r\neq0\), so the two branches meet in
+an ordinary node.
 
-It remains to show that all other events are nongeneric.  For a contact
-pattern $\mu=(\mu_1,\ldots,\mu_k)$, write
+It remains to show that every other event is nongeneric.  For a contact
+pattern \(\mu=(\mu_1,\ldots,\mu_k)\), write
 \[
- M_\mu(W)=\prod_{i=1}^k(W-r_i)^{\mu_i},\qquad
- m=\sum_i\mu_i.
+  M_\mu(W)=\prod_{i=1}^k(W-r_i)^{\mu_i},\qquad
+  m=\sum_i\mu_i.
 \]
-A line with these contacts gives the factorization
+An affine line having the prescribed contacts with the graph of \(H\)
+gives a factorization
 \[
- H(W)-\ell(W)=M_\mu(W)Q(W),\qquad \deg Q\le n-m.           \tag{4.3}
+  H(W)-\ell(W)=M_\mu(W)Q(W),\qquad \deg Q\leq n-m.        \tag{3.3}
 \]
-After discarding the affine-linear coefficients, (4.3) defines a polynomial
-map to $\mathcal B_n$ from a space of dimension
+After affine-linear terms are discarded, such polynomials vary in a family
+of dimension at most
 \[
- k+(n-m+1).                                                 \tag{4.4}
+  k+(n-m+1).                                             \tag{3.4}
 \]
-For each of the three patterns
-\[
- (4),\qquad(3,2),\qquad(2,2,2),                            \tag{4.5}
-\]
-this dimension equals $n-2$ whenever the pattern is possible.  The Zariski
-closure of the image of a finite-type morphism cannot have larger dimension
-than its source.  Hence the closed image $Z_\mu\subset\mathcal B_n$ of every
-pattern in (4.5) has codimension at least one.  This argument already takes
-the closure: collisions among marked roots, roots of $Q$ meeting a marked
-root, and degree drops in $Q$ cannot create a larger boundary component.
+The coefficient space in (1.1) has dimension \(n-1\).
 
-\begin{lemma}\label{lem:exhaustion}
-Outside $Z_{(4)}\cup Z_{(3,2)}\cup Z_{(2,2,2)}$, every affine singularity of
-the discriminant curve is an ordinary node or ordinary cusp.
+\begin{lemma}\label{lem:bad}
+Each of the contact patterns
+\[
+  (4),\qquad(3,2),\qquad(2,2,2)                          \tag{3.5}
+\]
+is contained in a proper closed subset of the degree-\(n\) coefficient
+space.
 \end{lemma}
 
 \begin{proof}
-A nonordinary single branch has contact at least four and is in $Z_{(4)}$.
-If a fiber of the normalization contains two points and one branch is
-ramified, the contact pattern dominates $(3,2)$.  If it contains at least
-three points, any three give $(2,2,2)$.  These statements include higher
-contact, cusp--cusp collisions, tritangents, and two nominal node pairs with
-the same image.  The only remaining case has exactly two unramified
-preimages, and (4.1) makes their branches transverse.
+For each pattern in (3.5), the dimension in (3.4) is \(n-2\), whenever the
+pattern is possible.  The closure of the image of the factorization family
+(3.3) therefore has dimension at most \(n-2\), hence is proper in the
+\((n-1)\)-dimensional coefficient space.  Taking the closure also includes
+collisions among the marked contact points and degree drops in \(Q\).
 \end{proof}
 
-The proposition at infinity is essential here: it prevents a missing
-projective bad stratum.  A ramification point cannot move to parameter
-infinity on $D(h_n)$ because the homogenization of $H''$ there has value
-$n(n-1)h_n$.  Nor can a finite branch share the image $[0:1:0]$.  Finally,
-the relative fiber-product statement in Proposition~\ref{prop:normalization}
-rules out two finite equal-image parameters escaping together to infinity.
-Thus (4.5) exhausts the projective, not merely affine, failure modes.
-
-The complement
-\[
- \mathcal U_n=\mathcal B_n^\circ\setminus
- (Z_{(4)}\cup Z_{(3,2)}\cup Z_{(2,2,2)})                  \tag{4.6}
-\]
-is nonempty and open.  On it, $H''$ is squarefree, so its $n-2$ roots give
-$n-2$ distinct ordinary cusps.  No cusp shares its image with another
-branch, and every other singularity is an ordinary node.
-
-\section{The endpoint slice is not trapped in the bad locus}
-
-We now prove the last genericity assertion in Theorem~\ref{thm:main}.  It is
-not enough to know that (4.6) is nonempty in the full coefficient space.
-
-For $G\in\mathcal B_n$ and $\alpha\ne\beta$, define the divided
-tangent--chord equation
-\[
- \Phi(G,\alpha,\beta)=
- \frac{G(\beta)-G(\alpha)-G'(\alpha)(\beta-\alpha)}
-      {(\beta-\alpha)^2}=0.                                \tag{5.1}
-\]
-It is polynomial, and the coefficient of $h_2$ in $\Phi$ is one.  Therefore
-the incidence $\mathcal T_n=V(\Phi)$ over $\alpha\ne\beta$ is an
-irreducible affine bundle.  Its projection to $\mathcal B_n^\circ$ is
-surjective: for any exact-degree $G$, choose $\alpha$ with
-$G''(\alpha)\ne0$.  As a polynomial in $\beta$, (5.1) has degree $n-2$ and
-does not vanish at $\beta=\alpha$, so it has a root distinct from $\alpha$.
-
-Put $d=\beta-\alpha$ and
-\[
- H(W)=G(\alpha+dW)-G(\alpha)-G'(\alpha)dW.                 \tag{5.2}
-\]
-Equation (5.1) gives $H(0)=H'(0)=H(1)=0$.  Source
-reparameterization and an invertible affine transformation of $(s,t)$ carry
-the discriminant of $G$ to that of $H$, preserving all projective
-singularity types, including the point at infinity.  Hence the inverse image
-of $\mathcal U_n$ in $\mathcal T_n$ is a nonempty open.
-
-The additional conditions
-\[
- \deg H=n,\qquad H'(1)\ne0,\qquad H''(1)-2H'(1)\ne0         \tag{5.3}
-\]
-also define a nonempty open in $\mathcal T_n$.  A uniform witness is
-\[
- H_n(W)=W^2+W^3+\cdots+W^{n-1}-(n-2)W^n,\qquad
- (\alpha,\beta)=(0,1),                                    \tag{5.4}
-\]
-for which $H_n(1)=0$, $H_n'(1)\ne0$, and
-$H_n''(1)/(-H_n'(1))=-4n/3\ne-2$.  Since $\mathcal T_n$ is irreducible, the
-two nonempty opens intersect.  Scaling (5.2) by $-1/H'(1)$ reaches
-$H'(1)=-1$ without changing any singularity type or the last inequality in
-(5.3).  This proves that $\mathcal A_n\cap\mathcal U_n$ is nonempty.
-
-\section{Counting the nodes}
-
-Only now do we use the genus formula.  For $H\in\mathcal U_n$, the curve is
-integral of degree $n$ with normalization $\Pone$.  Sections 3 and 4 have
-already excluded every singularity except ordinary nodes and the $n-2$
-ordinary cusps.  Both types have delta invariant one.  If $N$ denotes the
-number of nodes, then
-\[
- \frac{(n-1)(n-2)}2
- =p_a(C)=g(\Pone)+\sum_{x\in\operatorname{Sing}C}\delta_x
- =0+(n-2)+N.
-\]
-Thus
-\[
- \boxed{N=\frac{(n-2)(n-3)}2}.
-\]
-The genus formula counts the nodes left after the geometric exclusion; it is
-not used to infer that unclassified singularities must be nodes.
-
-\section{The real chamber spectrum}
-
-We finish with a real statement which does not require the genericity open
-$\mathcal U_n$.  Let
-\[
- U_H(\mathbb R)=
- \{(s,t)\in\mathbb R^2:\operatorname{Disc}_W(H(W)-sW+t)\ne0\}.
-\]
-The number of real roots is locally constant there and hence constant on
-each chamber.
-
-\begin{theorem}\label{thm:real-spectrum}
-Let $H\in\mathbb R[W]$ have degree $n\ge2$.  If some member of
-$H(W)-sW+t$ has $n$ distinct real roots, then the real-root counts occurring
-on the chambers of $U_H(\mathbb R)$ are exactly
-\[
- n,n-2,n-4,\ldots,n\bmod2.                               \tag{7.1}
-\]
-Arbitrarily close to the slope of the split member there is one vertical
-line in the $(s,t)$-plane which encounters all these counts successively,
-with each consecutive pair separated by one smooth fold.  If $H$ and the
-split member are defined over $\mathbb Q$, that slope and a point in every
-chamber in this chain may be chosen rational.
-\end{theorem}
+\begin{lemma}\label{lem:exhaustion}
+Outside the three closed loci in Lemma~\ref{lem:bad}, every affine
+singularity of the discriminant is an ordinary cusp or an ordinary node.
+\end{lemma}
 
 \begin{proof}
-Complex conjugation pairs the nonreal roots of every squarefree real member,
-so a real-root count $r$ necessarily satisfies $0\le r\le n$ and
-$r\equiv n\pmod2$.
-
-After translating $t$, suppose the split member occurs at $(s_0,0)$ and put
-$P_s(W)=H(W)-sW$.  Having $n$ simple real roots is open in $s$.  In a small
-interval about $s_0$, avoid the slopes $H'(u)$ with $H''(u)=0$ and the slopes
-at which two distinct critical points have equal critical values.  The first
-set is finite.  The second is finite as well: equal critical values are
-distinct normalization points with the same image under
-\[
- u\longmapsto\bigl(H'(u),uH'(u)-H(u)\bigr),              \tag{7.2}
-\]
-and the finite birational normalization map (7.2) is one-to-one away from
-finitely many points.  Denote a remaining slope by $s_1$.  Rolle's theorem
-shows that $P_{s_1}$ has exactly $n-1$ real critical points; they are
-nondegenerate and their critical values are pairwise distinct.
-
-Let $a$ be the leading coefficient of $H$ and $d=\operatorname{sign}(a)$.
-For $q\ge0$ consider
-\[
- P_{s_1}(W)+dq.                                          \tag{7.3}
-\]
-After multiplying by $-1$ if necessary, the leading coefficient is positive
-and (7.3) raises the polynomial through its negative local minima.  Because
-$P_{s_1}$ has $n$ simple real zeros, every local minimum is negative and
-every local maximum is positive.  The relevant critical levels are positive
-and distinct.  Crossing each one annihilates precisely two real roots.  For
-large $q$ there are no real roots in even degree and one in odd degree.
-This gives every count in (7.1) in order, and the nondegenerate critical
-points give smooth folds.
-
-For rational data, the split-root condition holds on a real interval of
-slopes.  The finitely many excluded slopes leave a rational $s_1$.  The
-successive critical levels are distinct real algebraic numbers, so every
-open interval between them contains a rational $q$.  Equation (7.3) then
-gives the asserted rational witnesses.
+A nonordinary single branch has contact at least four and belongs to the
+\((4)\)-locus.  If an image point has two normalization preimages and one
+branch is ramified, its contact pattern dominates \((3,2)\).  If it has at
+least three preimages, any three give the pattern \((2,2,2)\).  The only
+remaining singular image has exactly two unramified preimages, and (3.1)
+makes their tangent directions distinct.
 \end{proof}
 
-\begin{remark}[Exact chamber graph]
-For a fixed $H\in\mathbb Q[W]$, the entire adjacency graph is algorithmic.
-Form $D_H(s,t)=\operatorname{Disc}_W(H(W)-sW+t)$ and perform cylindrical
-algebraic decomposition with the leading coefficients and
-$\operatorname{Disc}_t(D_H)$ among the projection polynomials.  Between
-successive event slopes, exact real-root isolation orders the critical
-$t$-values and Sturm counting labels every band.  Gluing across the event
-fibers gives the dual chamber graph.  Theorem~\ref{thm:real-spectrum}
-extracts from it the universal path (7.1); additional same-count chambers
-and node-induced adjacencies remain seed-dependent.
-\end{remark}
+Proposition~\ref{prop:normalization} shows uniformly that no additional
+singularity occurs at infinity.  The complement of the three bad loci is
+therefore a nonempty Zariski-open set on which the discriminant has only
+ordinary cusps and nodes.
 
-\section*{References}
+\section{The count}
 
-The proof uses only standard facts about finite maps of proper curves,
-dimension of images, formal inversion, and the normalization-genus formula.
-For proper images see the Stacks Project, Tag
-\href{https://stacks.math.columbia.edu/tag/01W6}{01W6}.  For broader context
-on inflections and bitangents as singularities of dual curves, see
-A.~Yuran, \emph{Pl\"ucker formulas for plane algebraic curves with a given
-Newton polygon}, arXiv:\href{https://arxiv.org/abs/2204.04626}{2204.04626}.
+On the open set just constructed, \(H''\) is squarefree.  Its \(n-2\) roots
+are precisely the ramification points of (1.3), and (3.2) shows that their
+images are \(n-2\) distinct ordinary cusps.
+
+The discriminant is an integral plane curve of degree \(n\) with
+normalization \(\Pone\).  Its arithmetic genus is
+\[
+  p_a=\frac{(n-1)(n-2)}2,
+\]
+whereas its geometric genus is zero.  Ordinary nodes and ordinary cusps
+both have delta invariant one.  If \(N\) is the number of nodes, the genus
+formula gives
+\[
+  \frac{(n-1)(n-2)}2=(n-2)+N.
+\]
+Hence
+\[
+  N=\frac{(n-2)(n-3)}2,
+\]
+which proves Theorem~\ref{thm:main}.
+
+\section*{Acknowledgments and declaration of generative AI use}
+
+The author used OpenAI's ChatGPT and Codex during proof organization,
+adversarial checking, and preparation of this manuscript.  The author
+reviewed the mathematical claims and assumes full responsibility for the
+contents.
+
+\begin{thebibliography}{9}
+
+\bibitem{Yuran}
+A.~Yuran,
+\emph{Pl\"ucker formulas for plane algebraic curves with a given Newton
+polygon},
+arXiv:2204.04626.
+
+\end{thebibliography}
 
 \end{document}

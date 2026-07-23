@@ -35,7 +35,7 @@ For the weighted family take a boundary-clean degree-`N` seed `H`: zero is
 an exact double root and every nonzero root is simple.  Let `F_H^wt` be its
 weighted Keller map, with the maximal regular-reconstruction open.  These
 are precisely the hypotheses of the
-[weighted intrinsic-boundary theorem](../papers/decorated-discriminant-normalization/main.tex).
+[weighted intrinsic-boundary theorem](../extended-geometry/DECORATED_NORMALIZATION_INVARIANT.md).
 
 ## Stable separation theorem
 

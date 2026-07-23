@@ -31,9 +31,8 @@ This is kept as an imported algebraic-geometric interface until the relevant
 generic-freeness/Chevalley package is available in mathlib.
 -/
 axiom exists_goodReduction
-    (A : Type*) [CommRing A] [IsDomain A] [Algebra ℤ A]
+    (A : Type*) [CommRing A] [IsDomain A] [CharZero A] [Algebra ℤ A]
     [Algebra.FiniteType ℤ A] (c : A) (hc : c ≠ 0) (N : ℕ) :
     ∃ q : GoodReduction A c, N < q.p
 
 end GMC2
-

@@ -5,6 +5,7 @@ The log-boundary and Poisson-square prefilters are:
 ```bash
 .venv/bin/python plane-jc/cas/test_intrinsic_a2_boundary.py
 .venv/bin/python plane-jc/cas/test_plane_boundary_exclusion.py
+.venv/bin/python plane-jc/cas/test_finite_normalization_signatures.py
 .venv/bin/python plane-jc/cas/test_log_boundary_compiler.py
 .venv/bin/python plane-jc/cas/test_poisson_square_rigidity.py
 .venv/bin/python plane-jc/cas/log_boundary_compiler.py --frontier-72-108
@@ -15,8 +16,10 @@ The first reconstructs the canonical and log-canonical classes of a complete
 audits target pole vectors against nefness, degree, ramification, and the
 intrinsic dicritical condition.  It also verifies the sharp canonical
 free-depth-three obstruction.  The second checks the residue-immersion
-Riemann--Hurwitz budgets through degree eight and applies the resulting
-one-puncture obstruction to the first numerical degree-six package.  It also
+Riemann--Hurwitz budgets through degree eight, now for every ordered
+positive puncture profile rather than only one or two punctures, and applies
+the resulting one-puncture obstruction to the first numerical degree-six
+package.  It also
 checks that the primitive minimal-sheet formula `d=e+1` is incompatible
 with the `2e` fiber length forced by a conductor identification.  These are
 structural boundary regressions, not low-degree counterexample searches.
@@ -25,7 +28,13 @@ checks `d=e*f+a`, refuses to infer target transfer or exhaustive affine-sheet
 data from a source tree, excludes the sheet-deficient range `a<e`, and
 records why the `(72,108)` ledgers `29=3+26` and `29=5+24` do not yield a
 conductor contradiction.
-The third turns certified monomial branch
+The third command enumerates the complete coarse finite-normalization
+signature atlas at fixed geometric degree: boundary rows `(e,f)`, positive
+affine-sheet partitions, puncture counts, and the residual
+Riemann--Hurwitz cost `f+s-2`.  It checks the forced ramified degree-three
+`2+1` row, the collapse `f=s=1` under residue immersion, and Pareto
+antichains through degree eight.
+The next command turns certified monomial branch
 scales into regular toroidal
 blowups, a proximity graph, complete boundary and intersection matrices,
 valuation/different/conductor labels, and chart-aware Smith invariants.  It

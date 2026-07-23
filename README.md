@@ -405,22 +405,39 @@ compatibility condition and gives an exact nonsurjective quintic of omitted
 type `2^1 3^1` and trivial Hessian symmetry whose three allowed real
 signatures all occur with Frobenius types `(5)` at `7` and `(2,2,1)` at `11`.
 
-The primary dependency chain is:
+The geometric results form a dependency DAG rather than one linear chain:
 
-1. `F1` — foundational Keller collision.
-2. `W1` — tangent-map core and weighted suspension.
-3. `S1` — stable normalization functoriality.
-4. `WB1` — weighted clean-locus intrinsic boundary reconstruction.
-5. `C1` — universal cancellation construction.
-6. `B1` — complete canonical boundary exhaustion.
-7. `P1` — cancellation reconstruction residue and parameter faithfulness.
-8. `M1` — finite degreewise stable multiplicity.
-9. `D1` — marked Hessian-divisor moduli of dimension `N-3`.
-10. `F2` — generic affine-mark faithfulness.
-11. `H1-COARSE` — finite-normalization isomorphism with the wonderful
-    target graph.
-12. `H1-STACK` — explicit recursive logarithmic stack atlas.
-13. `R1`, `R2` — all-degree rank-two descent and parameter faithfulness.
+1. The stable-moduli spine is
+   `F1 -> W1 -> S1/WB1 -> D1 -> F2 -> R1 -> R2`.
+2. The cancellation spine is
+   `F1 -> C1 -> B1 -> P1 -> M1`, with the shared stable-normalization and
+   intrinsic-boundary inputs recorded in `MATH_STATUS.json`.
+3. The valuative spine is
+   `F2 + LN1 + SFG1 -> H2 -> H3`; it feeds `OP-LR-NE`.
+4. The coarse/logarithmic enrichment is
+   `H1-COARSE -> H1-STACK`.  It supplies the recursive admissible-cover atlas
+   and intersection theory, but is not a prerequisite for `R1`, `R2`, H2, or
+   H3.
+
+The counterexample-consequence side chain is separate from that geometric
+development:
+
+1. `F1 -> LR1` constructs and replays the 21-variable cubic-homogeneous
+   collision.
+2. `LR1 -> GS1` gives the nonexplicit fixed-dimensional route to
+   `not GMC(42)`.
+3. `LR1 -> IV1` gives direct `not SIC(21)`, descends to `not SIC(20)`, and
+   produces the 40-variable generalized Laplacian/nonhomogeneous HN witness
+   and the 42-variable homogeneous quartic HN witness.
+4. `LR1 -> LR2 -> LR3` constructs the separate 22-variable circuit source and
+   its 44-variable, Hessian-rank-37 lift; `IV1 -> LR3` supplies the HN
+   consequence framework used to interpret that lift.
+
+Only the arrows in this list are dependencies or implications.  The numbers
+20, 40, 42, and 37 are repository-certified upper endpoints, not additional
+logical steps or literature-wide records; the named multiplier, exact
+artifacts, and inverse recurrence are witness-level contributions without a
+priority claim.
 
 The exact scopes, dependencies, checkers, proof types, and assurance states
 live only in [`MATH_STATUS.json`](MATH_STATUS.json). [STATUS.md](STATUS.md) is
@@ -432,11 +449,11 @@ claims are first-class `falsified` entries rather than prose-only corrections.
 
 ## Main papers
 
-- [Foundational counterexample](papers/core-counterexample/main.pdf)
-- [Discriminant pencils](papers/discriminant-pencils/main.pdf)
-- [Decorated discriminant normalization](papers/decorated-discriminant-normalization/main.pdf)
-- [Marked-root degreewise multiplicity](papers/marked-root-multiplicity/main.pdf)
-- [Hurwitz--LL rerooting](papers/hurwitz-ll-rerooting/main.pdf)
+- [The Gaussian Moments Conjecture in Two Variables](papers/gaussian-moments-two-variables/main.tex)
+- [Generic Discriminants of Polynomial Tangent Pencils](papers/discriminant-pencils/main.tex)
+
+The remaining completed and exploratory results are maintained as theorem
+notes rather than presented as standalone papers.
 
 The degree-five and degree-six calculations are worked regressions generated
 from the all-degree results, not independent theorem authorities.  Quartic
@@ -472,9 +489,9 @@ wonderful target pullback and finite selected polynomial closure prove
 `H1-COARSE` and corrected H2, while finite normalization proves coarse H3.
 The `H1-STACK` theorem identifies the selected fs logarithmic factor by the
 saturated pushout \((P\oplus_{\mathbf N^E}Q)^{\mathrm{sat}}\); recursive
-source screens are charts of that stack.  The standalone
-[DVR marking audit](papers/hurwitz-ll-rerooting/dvr-marking-audit.tex)
-retains the historical conditional analysis and its post-repair resolution.
+source screens are charts of that stack.  The
+[Hurwitz--LL compactification audit](extended-geometry/HURWITZ_LL_COMPACTIFICATION.md)
+records the historical conditional analysis and its post-repair resolution.
 The subsequent [branch-scale fan experiment](extended-geometry/BRANCH_SCALE_FAN.md)
 proves that the degree-five weighted blowup is the first radial chart of a
 general weighted braid subdivision, but also finds a degree-six triple
@@ -546,15 +563,15 @@ the cancellation, Hessian--Ritt, restricted-minima, and minimal-boundary
 frontiers:
 
 - `OP-CR`: cancellation contact resultants in the residual staircase
-  `m>=1001`, `7<=r<=X_m/m`; the first six fixed-`r` columns, the 1000
+  `m>=1001`, `8<=r<=X_m/m`; the first seven fixed-`r` columns, the 1000
   all-`r` columns `m<=1000`,
   the exact effective Dusart region, the asymptotic region
   `r>=5(mr)^(21/40)`, and all other parameter-irreducibility ranges are
   complete.  The `r=6` column is closed by 7424 rigorous Arb
   branch tubes on `0<=1/m<=1/41` and exact modular gcds for `m<=40`.  An
-  exact `r=7` pilot shows that the branch schema survives for the next fixed
-  column and proves its eventual tail, but does not make that threshold
-  effective or provide a uniform continuation in `r`.
+  The `r=7` column is closed by 21,504 rigorous Arb branch tubes on
+  `0<=1/m<=1/101` and exact modular gcds for `m<=100`.  The branch method
+  still does not provide a continuation uniform in `r`.
 - `OP-LR-REES`: linear target-lift Rees strictness as a finite module/SAGBI
   problem, including a structural cutoff to finitely many torus weights.
 - `OP-LR-II`: the minimal pair is now nonzero; classify the remaining
@@ -569,7 +586,13 @@ frontiers:
   degree-thirty global all-six intersection and all fifteen pair schemes,
   including the transported pairs `{2,3}`, `{2,5}`, and `{3,5}`.  `HRCF`
   now proves the all-degree common-right-factor uniqueness step over every
-  characteristic-zero base ring.  In degree forty-two, `HR42J` supplies the
+  characteristic-zero base ring.  `HRLL` derives the generic LL profile
+  `b^(a-1) 1^(b-1)`, recovers codimension `N-a-b`, and proves that all 64
+  degree-thirty prime-refinement choices force the same fully bidirected
+  `2,3,5` relation graph.  Combined with global synchronization, this closes
+  reduced degree-thirty component completeness: the all-six reduced
+  intersection is the single Dickson component, with the power family on its
+  `z=0` boundary.  In degree forty-two, `HR42J` supplies the
   fourth-normal-order defect membership and `HR42K` promotes it to exact
   synchronization on the conormal, regular quadratic/cubic, discriminant,
   generic resultant, and punctured higher-gcd strata.  `HR42R` factors the
@@ -579,16 +602,22 @@ frontiers:
   subloci, the contact-five vertex, the odd `w2=0` core,
   uniform terminal-refinement existence through
   nonreduced thickenings,
-  component-completeness, coherence, and boundary gluing remain.
+  coherence and boundary gluing remain.  These are
+  now organized by the
+  [Hessian--Ritt deformation complex](extended-geometry/HESSIAN_RITT_DEFORMATION_COMPLEX.md):
+  reduced components come from relation-graph Ritt theory, while the
+  completed cellular cotangent complex is the proposed all-degree controller
+  for synchronization, nilpotent thickening, and braid obstructions.
 - `OP-RMIN`: the exact current intervals are
-  `3<=r_cub<=17`, `3<=nu_cub<=18`,
-  `3<=rho_HN,4<=37`, and `6<=n_HN,4<=42`.  Polynomial-gate BCW circuits
-  has lowered the rank upper bound from 18 to 17 and the index upper bound
-  from 19 to 18, while a separate 44-variable HN lift lowers the exact
-  quartic Hessian-rank upper bound from 38 to 37.  Continue circuit-level
-  rank/power-rank search and resolve the invertibility-only full-class
-  index-three case separately from the known power-linear and
-  symmetric-Jacobian theorems.  The
+  `5<=n_cub<=21`, `3<=r_cub<=17`, `3<=nu_cub<=18`, and
+  `6<=rho_cot<=37`.  Companion classes have
+  `6<=n_Dru<=451`, `3<=rho_HN,4<=37`, and `6<=n_HN,4<=42`.
+  The distinction matters: the lower Hessian-rank bound three is for
+  unrestricted quartic HN counterexamples, whereas the cotangent block-rank
+  identity forces `rho_cot>=6`.  The broad circuit search is frozen at this
+  reproducible frontier.  If reopened, the preferred theorem target is the
+  five-dimensional cubic-homogeneous class, followed by full-class
+  index-three invertibility.  The
   stronger inverse-degree-nine claim is already false by van den Essen's
   exact dimension-five rank-three example of inverse degree thirteen; see the
   [restricted-minima frontier](extended-geometry/RESTRICTED_MINIMA_FRONTIER.md).
@@ -636,10 +665,17 @@ escape is a separate marked-cover problem, not an automorphism-coefficient
 estimate.  None is a bottleneck for stable moduli, which already follow from
 decorated normalization and the affine sheet.
 
+The inverse-Jacobian Weyl lift already disproves `DC_n` for every `n>=3`.
+Accordingly, the quantization program is now framed as determining the
+smallest false Dixmier rank—especially settling `DC_2`—rather than connecting
+the counterexample to Dixmier.  Current filtered `A_2` calculations remain
+symbol-specific and do not by themselves settle `DC_2`.
+
 Other questions—arithmetic Galois theory, wider quantization,
-coefficient-scheme gluing, quadratic--cubic flexibility, and the plane degree
-frontier—are retained as parked side programmes in
-[STATUS.md](STATUS.md).
+coefficient-scheme gluing, quadratic--cubic flexibility, and the two plane
+programmes (the Newton degree frontier and the
+[finite-normalization/log-surface attack](plane-jc/FINITE_NORMALIZATION_PROGRAM.md))—
+are retained as parked side programmes in [STATUS.md](STATUS.md).
 
 ## Provenance
 

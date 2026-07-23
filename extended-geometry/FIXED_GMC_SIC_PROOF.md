@@ -348,7 +348,8 @@ nonexplicit as a Gaussian counterexample because Proposition 3.2 uses the
 uncountable-field countable-union argument.  Long's direct three-variable
 witness remains a separate and much stronger explicit external result.  The
 79-variable map and `not GMC(158)` remain the exact reproduction of Long's
-conservative route; the improvements to 21 and 42 are repository-derived.
+conservative route; the reductions to 21 and 42 improve this repository's
+reproduction route, with no literature-wide record or priority claim.
 
 ## 7. Reproduction
 

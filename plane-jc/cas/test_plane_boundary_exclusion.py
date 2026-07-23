@@ -18,6 +18,7 @@ from plane_boundary_exclusion import (
     conductor_packet_budget,
     first_free_depth_package,
     one_puncture_budget,
+    puncture_profile_budgets,
     two_puncture_budgets,
 )
 
@@ -38,6 +39,59 @@ for degree in range(2, 9):
     for budget in budgets:
         assert budget.forced_affine_ramification == degree
         assert budget.forced_affine_ramification > 0
+
+# The rational-boundary theorem makes the arbitrary-puncture profile
+# available.  For every ordered positive pole partition, Riemann--Hurwitz
+# forces f+s-2 affine ramification.  An immersive residue map can therefore
+# occur only for the one-puncture degree-one profile.
+for degree in range(1, 9):
+    for punctures in range(1, degree + 1):
+        budgets = puncture_profile_budgets(degree, punctures)
+        assert len(budgets) > 0
+        for budget in budgets:
+            assert (
+                budget.forced_affine_ramification
+                == degree + punctures - 2
+            )
+            assert (
+                budget.forced_affine_ramification == 0
+            ) == (degree == 1 and punctures == 1)
+
+assert puncture_profile_budgets(3, 4) == ()
+
+three_puncture_gate = audit_one_dicritical_normalization(
+    OneDicriticalNormalizationCertificate(
+        name="three-puncture rational boundary",
+        generic_degree=7,
+        transverse_index=2,
+        residue_degree=3,
+        affine_degree=1,
+        punctures=3,
+        single_normalization_boundary=True,
+        log_pure=True,
+        exhaustive_pullback=True,
+        target_transfer_certified=True,
+    )
+)
+assert three_puncture_gate.status == "excluded"
+assert three_puncture_gate.hurwitz_forced_affine_ramification == 4
+
+impossible_profile_gate = audit_one_dicritical_normalization(
+    OneDicriticalNormalizationCertificate(
+        name="too many punctures for residue degree",
+        generic_degree=4,
+        transverse_index=1,
+        residue_degree=2,
+        affine_degree=2,
+        punctures=3,
+        single_normalization_boundary=True,
+        log_pure=True,
+        exhaustive_pullback=True,
+        target_transfer_certified=True,
+    )
+)
+assert impossible_profile_gate.status == "excluded"
+assert "no positive pole profile" in impossible_profile_gate.reasons[0]
 
 
 # In a primitive minimal link, d=e+1.  A conductor identification costs two
@@ -351,6 +405,7 @@ assert "ramification" in case2_preview.reasons[-1]
 
 print("PASS: one-puncture residue immersion forces degree one")
 print("PASS: two-puncture residue immersion contradicts Riemann--Hurwitz")
+print("PASS: arbitrary puncture profiles force affine ramification f+s-2")
 print("PASS: minimal-sheet fiber length excludes conductor gluing")
 print("PASS: mixed and constant-index conductor packets obey the additive bound")
 print("PASS: target-transfer ledgers separate generic and special-fiber data")

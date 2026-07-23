@@ -11,12 +11,20 @@
       "upper_bound_reason": "the certified foundational determinant-nonzero collision uses 3 variables"
     },
     "cubic_homogeneous_Keller_noninvertibility": {
-      "lower_bound": 3,
+      "lower_bound": 5,
       "upper_bound": 21,
       "exact_value": null,
       "status": "open interval",
-      "lower_bound_reason": "dimension at most 2 has rank(JH)<=2, and the de Bondt--Sun rank-two theorem gives invertibility",
-      "upper_bound_reason": "the essential cubic-homogeneous collision uses 21 variables"
+      "lower_bound_reason": "cubic-homogeneous Keller maps are known invertible through ambient dimension four",
+      "upper_bound_reason": "the certified essential cubic-homogeneous collision uses 21 variables"
+    },
+    "Druzkowski_Keller_noninvertibility": {
+      "lower_bound": 6,
+      "upper_bound": 451,
+      "exact_value": null,
+      "status": "open interval",
+      "lower_bound_reason": "Druzkowski's rank-or-corank-below-three theorem makes every Druzkowski Keller map through dimension five invertible",
+      "upper_bound_reason": "the certified stable normal-form route gives a 451-variable Druzkowski collision"
     },
     "GMC_failure_real_Gaussian_dimension": {
       "lower_bound": 2,
@@ -68,7 +76,15 @@
       "lower_bound_reason": "index at most two gives a quasi-translation and hence an inverse; no full-class index-three theorem is recorded",
       "upper_bound_reason": "the certified 22-variable circuit-level collision has exact polynomial nilpotency index 18"
     },
-    "homogeneous_quartic_Hessian_rank": {
+    "cotangent_lift_quartic_Hessian_rank": {
+      "lower_bound": 6,
+      "upper_bound": 37,
+      "exact_value": null,
+      "status": "open interval",
+      "lower_bound_reason": "rank Hess(y^t H)=2 rank(JH)+rank(K^t A K), so the rank-two cubic theorem gives a lower bound of 6",
+      "upper_bound_reason": "the certified 44-variable cotangent HN quartic has exact generic Hessian rank 37"
+    },
+    "unrestricted_homogeneous_quartic_Hessian_rank": {
       "lower_bound": 3,
       "upper_bound": 37,
       "exact_value": null,
@@ -123,5 +139,6 @@
       "artifact": "image_vanishing_counterexamples_21_42.json"
     }
   },
-  "promotion_policy": "Only exact identities or cited positive theorems change an endpoint; modular and bounded searches remain diagnostics."
+  "promotion_policy": "Only exact identities or cited positive theorems change an endpoint; modular and bounded searches remain diagnostics.",
+  "search_status": "frozen reproducible frontier; resume only for a theorem-directed classification or a specifically motivated construction"
 }

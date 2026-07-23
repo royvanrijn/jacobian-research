@@ -206,10 +206,11 @@ def main() -> None:
     print(f"singleton rejections after W/Z quotient: {singleton_rejections}")
     print(f"active candidates sent to Singular: {len(candidates)}")
     survivors = modular_screen(candidates, args.prime, args.timeout)
-    print(
-        f"modular survivors at p={args.prime}, "
-        f"moments<= {args.moments}: {len(survivors)}"
-    )
+    if args.prime:
+        label = f"modular survivors at p={args.prime}"
+    else:
+        label = "exact rational survivors"
+    print(f"{label}, moments<= {args.moments}: {len(survivors)}")
     for candidate in survivors[: args.show]:
         print(format_support(candidate.support))
 

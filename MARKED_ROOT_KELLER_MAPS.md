@@ -181,7 +181,10 @@ gives an `(N-3)`-dimensional family of stable classes; neither statement
 subsumes the other because the finite count also distinguishes the
 cancellation branches from the weighted construction.
 
-The canonical statement and proof are the standalone paper [Marked-Root Keller Maps and Degreewise Stable Multiplicity](papers/marked-root-multiplicity/main.tex).  The [five-lemma audit](DEGREEWISE_MULTIPLICITY_AUDIT.md) is its verification companion.  This document is canonical for the marked-root framework, not for the degreewise theorem.
+The former standalone degreewise manuscript has been retired. The
+[five-lemma audit](DEGREEWISE_MULTIPLICITY_AUDIT.md) retains its theorem
+statement, proof dependencies, and reproduction record. This document remains
+canonical for the marked-root framework.
 
 ## 4. The degree-three `A_2` picture
 

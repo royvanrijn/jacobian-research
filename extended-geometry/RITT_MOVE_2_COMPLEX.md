@@ -422,17 +422,25 @@ literal equality of its two path fiber products.  It must retain at least
 the nilpotent comparison module, and a derived formulation should retain the
 corresponding excess conormal or Tor class.  In degree thirty the coherence
 defect is supported on the power--Chebyshev overlap \(z=0\).
+The proposed all-degree organization of these data is the
+[Hessian--Ritt deformation complex](HESSIAN_RITT_DEFORMATION_COMPLEX.md):
+the cellular tangent complex records the first-order defect, while its
+completed derived deformation algebra retains the sector-dependent
+nilpotence and higher coherence operations.
 
 The exact ideal and Hessian-transfer comparisons are now verified on all six
 complete-decomposition charts.  Independently, five factor-chart
 ideal-membership certificates form the cut spanning tree
 `2-6-3-15-5-10`, so the all-six degree-thirty Hessian intersection is
-globally synchronized even on components missing this atlas.  This is not
-yet a global component classification: the calculation does not exclude
-additional synchronized off-chart components and does not prove the general
-synchronization conjecture for arbitrary subintersections.  What it does
-prove is that any global formulation which remembers scheme structure needs labelled 2-cells
-together with nontrivial coherence data.
+globally synchronized.  The
+[LL/block-system carrier census](LYASHKO_LOOIJENGA_RITT_REDUCTION.md) proves
+that all 64 prime-refinement choices force the same fully bidirected
+relation graph; tame multi-collision theory then excludes additional reduced
+off-chart components.  This still does not determine every unreduced
+off-chart completion or prove the general synchronization conjecture for
+arbitrary subintersections.  Any global formulation which remembers scheme
+structure therefore needs labelled 2-cells together with nontrivial
+coherence data.
 
 ## Reproduction
 

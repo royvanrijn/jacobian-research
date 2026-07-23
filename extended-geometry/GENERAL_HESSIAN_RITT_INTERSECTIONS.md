@@ -482,8 +482,11 @@ nilpotents are therefore already present in synchronized ordinary
 composition; Hessian projection does not create them there.  Together with
 the independent spanning-tree certificate (6.5), this gives both an exact
 local transfer theorem for the Dickson component and global synchronization
-of the all-six intersection.  It does not classify the scheme structure of
-possible off-chart components.
+of the all-six intersection.  The
+[LL/block-system reduction](LYASHKO_LOOIJENGA_RITT_REDUCTION.md) further
+proves that every prime-refinement carrier choice has the same fully
+bidirected relation graph, so there is no additional reduced off-chart
+component.  This does not identify unreduced off-chart completions.
 At the monomial point, omitting any prime outer-degree cut leaves tangent
 dimension two, while omitting any composite outer-degree cut `6`, `10`, or
 `15` leaves dimension three; this gives the same asymmetry for all three
@@ -522,7 +525,18 @@ module (or its derived enhancement).
 
 ## 11. What remains to prove
 
-The experiments now point to a short, theorem-driven program.
+The organizing object for the remaining scheme theory is now the
+[Hessian--Ritt deformation complex](HESSIAN_RITT_DEFORMATION_COMPLEX.md).
+The relation graph and its power/Dickson normal forms classify reduced
+components.  The coefficient-decorated Ritt 2-complex carries a cellular
+cotangent complex whose completed derived deformation algebra is intended to
+recover synchronization, nilpotent thickening, and braid coherence
+uniformly in the total degree.  A tangent complex alone is insufficient:
+the filtration and higher operations are needed to recover the known
+degree-thirty nilpotence indices.
+
+With that replacement, the experiments point to a short, theorem-driven
+program.
 
 1. **Finish scheme synchronization.**  The Abhyankar--Moh missing-line
    argument proves generic synchronization for normalized square-free
@@ -541,19 +555,19 @@ The experiments now point to a short, theorem-driven program.
 2. **Transfer the normal form.**  Once synchronization holds, apply the
    relation-graph theorem blockwise and the finite marked-Hessian
    normalization to obtain the component classification and (5.3).
-3. **Control scheme structure.**  Ziegler's theorem classifies reduced
-   points/families.  The degree-thirty braid now has a complete sectorwise
-   table of nilpotence, conductor, transverse Artin algebras, conormal ranks,
-   cotangent homology, and local Tor ranks.  The transverse comparison
-   morphism is the explicit augmentation to the reduced point.  Its gluing
-   along the moving monomial divisor, and the analogous data on general
-   commuting and braid cells, remain to be organized functorially.
-4. **Globalize the degree-30 component classification.**  The degree-thirty tangent
-   asymmetry is now verified directly in polynomial and Hessian coefficient
-   space, and the exact ideal comparison agrees on all six
-   complete-decomposition charts.  Synchronization of the all-six scheme is
-   global, but a full ambient minimal-prime calculation is still needed to
-   exclude additional synchronized components not meeting any such chart.
+3. **Control scheme structure by the completed deformation complex.**
+   Ziegler's theorem classifies reduced points/families.  Present the formal
+   intersection as the homotopy limit of the coefficient-decorated factor,
+   move, and 2-cell diagram, with cotangent complex given by its
+   totalization.  Reconstruct the degree-thirty sector algebras from the
+   completed deformation algebra, then prove the universal commuting and
+   braid obstruction classes vanish relative to the full cell boundary.
+4. **Extend LL/block-system coverage.**  In degree thirty the carrier
+   enumeration plus global synchronization proves that the reduced all-six
+   intersection is the single Dickson component; no ambient minimal-prime
+   calculation is needed.  Extend this front end to arbitrary relation
+   graphs so coefficient algebra starts only after the finite block-system
+   census.
 5. **Produce clean witnesses blockwise.**  The Dickson blocks now have exact
    algebraic clean-open certificates in degrees 24 and 30.  Exponential
    blocks should admit a uniform specialization argument extending the

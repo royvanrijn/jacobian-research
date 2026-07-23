@@ -353,7 +353,38 @@ def main() -> None:
     frontier = {
         "format": "restricted-jacobian-minima-frontier-v1",
         "field": "characteristic zero",
+        "primary_target": {
+            "statement": (
+                "every cubic-homogeneous Keller map F=X+H with (JH)^3=0 "
+                "is invertible"
+            ),
+            "status": "open for arbitrary cubic-homogeneous H",
+            "role": (
+                "primary restricted-minima theorem target and first "
+                "meaningful lower-bound attack"
+            ),
+            "positive_consequence": "nu_cub>=4",
+            "scope_exclusions": [
+                "the known power-linear theorem does not settle this class",
+                (
+                    "the known symmetric-Jacobian theorem does not settle "
+                    "this class"
+                ),
+                (
+                    "the false uniform inverse-degree-nine bound is not part "
+                    "of the target"
+                ),
+            ],
+            "circuit_search_role": (
+                "secondary upper-bound track that changes the polynomial "
+                "computational circuit before BCW homogenization"
+            ),
+        },
         "definitions": {
+            "n_cub": (
+                "minimum ambient dimension over noninjective maps F=X+H "
+                "with H cubic homogeneous and det JF=1"
+            ),
             "r_cub": (
                 "minimum generic rank(JH) over noninjective maps F=X+H "
                 "with H cubic homogeneous and det JF=1"
@@ -361,6 +392,15 @@ def main() -> None:
             "nu_cub": (
                 "minimum polynomial-matrix nilpotency index nu with (JH)^nu=0 "
                 "over the same full cubic-homogeneous class"
+            ),
+            "rho_cot": (
+                "minimum generic Hessian rank among quartic cotangent "
+                "potentials y^t H(x) obtained from the same noninjective "
+                "cubic-homogeneous class"
+            ),
+            "n_Dru": (
+                "minimum ambient dimension over noninjective Druzkowski "
+                "maps X+(AX)^{*3}"
             ),
             "rho_HN4": (
                 "minimum generic Hessian rank among homogeneous quartic "
@@ -372,6 +412,18 @@ def main() -> None:
             ),
         },
         "rigorous_frontiers": {
+            "n_cub": interval(
+                5,
+                21,
+                (
+                    "cubic-homogeneous Keller maps are known invertible "
+                    "through ambient dimension four"
+                ),
+                (
+                    "the certified essential cubic-homogeneous collision "
+                    "uses 21 variables"
+                ),
+            ),
             "r_cub": interval(
                 3,
                 17,
@@ -394,6 +446,31 @@ def main() -> None:
                 (
                     "the certified 22-variable circuit-level collision has "
                     "exact polynomial nilpotency index 18"
+                ),
+            ),
+            "rho_cot": interval(
+                6,
+                37,
+                (
+                    "rank Hess(y^t H)=2 rank(JH)+rank(K^t A K), so the "
+                    "rank-two cubic theorem gives a lower bound of 6"
+                ),
+                (
+                    "the certified 44-variable cotangent HN quartic has "
+                    "exact generic Hessian rank 37"
+                ),
+            ),
+            "n_Dru": interval(
+                6,
+                451,
+                (
+                    "Druzkowski's rank-or-corank-below-three theorem makes "
+                    "every Druzkowski Keller map through dimension five "
+                    "invertible"
+                ),
+                (
+                    "the certified stable normal-form route gives a "
+                    "451-variable Druzkowski collision"
                 ),
             ),
             "rho_HN4": interval(
@@ -580,8 +657,15 @@ def main() -> None:
             "symmetric_low_dimension": (
                 "https://doi.org/10.1016/j.jpaa.2004.08.030"
             ),
+            "cubic_homogeneous_dimension_four": (
+                "https://arxiv.org/abs/1803.05551"
+            ),
+            "Druzkowski_rank_or_corank": (
+                "https://doi.org/10.1016/0022-4049(93)90140-O"
+            ),
         },
         "search_policy": {
+            "status": "frozen reproducible frontier; no broad search is active",
             "script": "scripts/search_restricted_bcw_circuits.py",
             "required_change": (
                 "alter the polynomial BCW gate circuit before homogenization"
@@ -716,10 +800,12 @@ def main() -> None:
     print("PASS restricted minima: HN quartic upper bounds are dimension 42 and rank 37")
     print("PASS restricted minima: full cubic and power-linear index-three scopes are separated")
     print("PASS restricted minima: van den Essen disproves the uniform degree-9 bound")
+    print("OPEN primary target: full cubic index-three invertibility")
     print(
         "OPEN exact intervals: "
-        "3<=r_cub<=17, 3<=nu_cub<=18, "
-        "3<=rho_HN4<=37, 6<=n_HN4<=42"
+        "5<=n_cub<=21, 3<=r_cub<=17, 3<=nu_cub<=18, "
+        "6<=rho_cot<=37; companion intervals "
+        "6<=n_Dru<=451, 3<=rho_HN4<=37, 6<=n_HN4<=42"
     )
     print(f"PASS restricted minima: wrote {OUTPUT.relative_to(ROOT)}")
 

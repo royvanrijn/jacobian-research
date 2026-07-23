@@ -6,6 +6,13 @@ repository dimensions: the [identity-slice construction](IMAGE_VANISHING_COUNTER
 gives a direct `SIC(20)` witness and a 40-variable generalized Laplacian/HN
 witness, while the homogeneous classical quartic witness has dimension 42.
 
+Their status is therefore historical and witness-specific.  Each valid
+artifact is enough to falsify the corresponding universally quantified
+conjecture, but it is another realization of the same underlying Keller
+collision rather than an independent logical disproof.  The dimensions are
+not literature-wide records, and “explicit” below means that exact formulas
+and replay data are supplied; it makes no external priority claim.
+
 ## Corrected theorem
 
 Over any characteristic-zero field, the normalized foundational Keller map is connected to an
@@ -107,7 +114,8 @@ The square roots cancel because `R` is quartic; the artifact expands it into
 Thus `Hess(R)` is nilpotent. The map `Z-grad(R)` has the transported collision
 `T^t(p_i,0)`, so it is not invertible. Zhao's Theorem 7.2 and formula (3.8)
 then imply that `Delta^m R^(m+1)` is not eventually zero. This is an explicit
-190-variable quartic witness. [Zhao's paper](https://arxiv.org/abs/math/0409534)
+190-variable quartic witness in the preceding artifact sense.
+[Zhao's paper](https://arxiv.org/abs/math/0409534)
 requires precisely a complex homogeneous quartic HN polynomial.
 
 ## Explicit Special Image-Conjecture witness
@@ -124,9 +132,11 @@ For `E(zeta^alpha z^beta)=partial_z^alpha z^beta`, one has
 [van den Essen--Wright--Zhao](https://arxiv.org/abs/1008.3962) identifies
 `ker E` with the image of the commuting operators `zeta_i-partial_i`.
 Therefore this pair explicitly violates the special Image Conjecture in
-dimension 190.
+dimension 190.  This states logical failure at a specified dimension, not
+minimality or priority for the particular pair.
 
-The least exceptional exponent and dimension minimality remain open.
+This audit does not determine the least exceptional exponent or the minimal
+dimension.
 
 ## Reproduction
 

@@ -437,3 +437,41 @@ def compose_factors(
     for factor in reversed(factors[:-1]):
         result = sp.expand(factor.subs(variable, result))
     return result
+
+
+def composition_differential(
+    factors: tuple[sp.Expr, ...],
+    variations: tuple[sp.Expr, ...],
+    variable: sp.Symbol,
+) -> sp.Expr:
+    """Differentiate an outer-to-inner polynomial composition.
+
+    This implements the tree-local formula
+
+    ``sum_i (A_i' o f_i o B_i) * (dot(f_i) o B_i)``,
+
+    where ``A_i`` and ``B_i`` are the compositions strictly outside and
+    inside the ``i``-th factor.  Leading coefficients and constant terms are
+    not treated specially here; callers choose the desired tangent slice by
+    choosing ``variations``.
+    """
+
+    assert factors and len(factors) == len(variations)
+    differential = sp.Integer(0)
+    for index, (factor, variation) in enumerate(zip(factors, variations)):
+        outer = (
+            compose_factors(factors[:index], variable)
+            if index
+            else variable
+        )
+        inner = (
+            compose_factors(factors[index + 1 :], variable)
+            if index + 1 < len(factors)
+            else variable
+        )
+        current_suffix = sp.expand(factor.subs(variable, inner))
+        outer_derivative = sp.diff(outer, variable).subs(
+            variable, current_suffix
+        )
+        differential += outer_derivative * variation.subs(variable, inner)
+    return sp.expand(differential)

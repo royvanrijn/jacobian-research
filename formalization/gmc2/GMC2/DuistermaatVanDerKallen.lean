@@ -26,7 +26,7 @@ Reference: J. J. Duistermaat and W. van der Kallen,
 *Constant terms in powers of a Laurent polynomial* (1998).
 -/
 axiom duistermaat_van_der_kallen
-    {K : Type*} [Field K] (f : LaurentPolynomial K)
+    {K : Type*} [Field K] [CharZero K] (f : LaurentPolynomial K)
     (hconv : SupportStraddlesZero f) :
     ∃ r : ℕ, 0 < r ∧ (f ^ r).coeff 0 ≠ 0
 

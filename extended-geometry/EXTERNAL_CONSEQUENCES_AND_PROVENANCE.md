@@ -26,6 +26,14 @@ flowchart TD
     R["not GMC(158)"]
     BO["Repository essential-dimension optimization: 21 variables"]
     RO["not GMC(42)"]
+    I21["Direct contraction: not SIC(21)"]
+    I20["Identity-output slice: not SIC(20)"]
+    V40["40 variables: generalized Laplacian VC and nonhomogeneous HN-VC fail"]
+    H42["42 variables: homogeneous quartic HN-VC fails"]
+    C22["Separate circuit source: 22 variables"]
+    HR37["44-variable quartic HN witness of Hessian rank 37"]
+    Q["Repository incumbents only: SIC 20 / generalized VC 40 / homogeneous HN-VC 42 / HN rank 37"]
+    E["Witness-specific data: named multiplier z_0, exact artifacts, inverse recurrence"]
     M["Motivation for Long's searches"]
     GP["Long's direct three-Gaussian polynomials"]
     G["not GMC(n) for every n at least 3"]
@@ -42,6 +50,17 @@ flowchart TD
     B -->|"route-based dimension bound"| R
     J -->|"locally optimized BCW route"| BO
     BO -->|"improved route-based dimension bound"| RO
+    BO -->|"named inverse coordinate and contraction"| I21
+    I21 -->|"identity-output descent"| I20
+    I20 -->|"Laplacian change of variables"| V40
+    BO -->|"cotangent/symmetric lift"| H42
+    BO -.->|"explicit realization data"| E
+    I20 -.->|"quantitative ledger"| Q
+    V40 -.->|"quantitative ledger"| Q
+    H42 -.->|"quantitative ledger"| Q
+    BO -->|"different circuit optimization"| C22
+    C22 -->|"cotangent lift and exact rank certificate"| HR37
+    HR37 -.->|"quantitative ledger"| Q
     J -.->|"motivated, did not algebraically generate"| M
     M -.-> GP
     M -.-> XP
@@ -59,6 +78,27 @@ record motivation only.  In particular, the graph does **not** contain arrows
 from the marked-root coordinates to Long's direct witness polynomials.
 The weighted-seed branch is a later repository construction, not an external
 result and not a reverse provenance arrow into Long's work.
+
+For the Image/Vanishing branch, dotted arrows have a second deliberately
+nonlogical use: they attach provenance or quantitative annotations.  The
+solid chain
+
+\[
+  21\text{-variable collision}\longrightarrow
+  \neg\mathrm{SIC}(21)\longrightarrow
+  \neg\mathrm{SIC}(20)\longrightarrow
+  \neg\mathrm{GVC}_{\Delta}(40)
+\]
+
+and the separate solid lift to
+\(\neg\mathrm{VC}^{\mathrm{hom}}_{\mathrm{HN},4}(42)\) are logical or
+constructive consequences.  The node listing \(20/40/42/37\) is only the
+repository's current witness ledger: it is not a disproof step, a proof of
+minimality, or a literature-wide record.  Likewise, the named multiplier,
+artifacts, and recurrence describe what is specific to this explicit
+realization; they do not assert first discovery.  The 44-variable rank-37
+witness is a different quantitative realization of the already-failed HN
+conjecture, not a second logical disproof.
 
 ## Christopher D. Long: Gaussian moments
 

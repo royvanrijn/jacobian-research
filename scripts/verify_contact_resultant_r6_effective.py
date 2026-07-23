@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Effective tail certificate for the cancellation contact resultant at r=6.
+"""Effective tail certificate for the cancellation contact resultant at r=6 or 7.
 
 This checker closes the gap between the asymptotic 29-branch theorem and the
 exact finite certificates through m=40.  Put
@@ -22,7 +22,9 @@ in phase.  The positive real branch is handled by a real logarithmic bound.
 Consequently no common root exists for m >= 41.  The separate modular-grid
 checker certifies 1 <= m <= 40.
 
-Requirements beyond the base repository environment: python-flint >= 0.9.
+Set ``CONTACT_R=7`` to run the seventh-column certificate; the default is
+the original sixth-column certificate.  Requirements beyond the base
+repository environment: python-flint >= 0.9.
 All Arb enclosures are rigorous; floating-point root finding only proposes
 the disks subsequently certified by Arb.
 """
@@ -30,6 +32,7 @@ the disks subsequently certified by Arb.
 from __future__ import annotations
 
 import math
+import os
 import re
 import shutil
 import subprocess
@@ -47,10 +50,37 @@ ctx.prec = 320
 mp.mp.dps = 90
 
 m, y, z, t, x = sp.symbols("m y z t x")
-R = 6
+R = int(os.environ.get("CONTACT_R", "6"))
+assert R in (6, 7)
 D = 1 - y
-TAIL_START = 41
-CELL_COUNT = 256
+CONFIG = {
+    6: {
+        "tail_start": 41,
+        "cell_count": 256,
+        "edge_weight": 61,
+        "m_degree": 90,
+        "chart_t_degree": 89,
+        "q_constant": 10,
+        "real_branches": 1,
+    },
+    7: {
+        "tail_start": 101,
+        "cell_count": 512,
+        "edge_weight": 84,
+        "m_degree": 126,
+        "chart_t_degree": 126,
+        "q_constant": 720,
+        "real_branches": 0,
+    },
+}
+TAIL_START = CONFIG[R]["tail_start"]
+CELL_COUNT = CONFIG[R]["cell_count"]
+EDGE_WEIGHT = CONFIG[R]["edge_weight"]
+M_DEGREE = CONFIG[R]["m_degree"]
+CHART_T_DEGREE = CONFIG[R]["chart_t_degree"]
+Q_CONSTANT = CONFIG[R]["q_constant"]
+REAL_BRANCHES = CONFIG[R]["real_branches"]
+BRANCH_DEGREE = 29 if R == 6 else 42
 LOG_TERMS = 100
 
 
@@ -104,7 +134,7 @@ poly F={singular_expression(integral_F6)};
 poly H=resultant(E,F,z)/(y-1)^7;
 matrix Cm=coeffs(H,m);
 "BEGIN";
-for (int j=90;j>=0;j--) {{
+    for (int j={M_DEGREE};j>=0;j--) {{
   if (Cm[j+1,1]<>0) {{ j; Cm[j+1,1]; }}
 }}
 "END";
@@ -128,34 +158,37 @@ for (int j=90;j>=0;j--) {{
         coefficients[degree] = sp.Poly(
             sp.sympify(serialized.replace("^", "**")), y, domain=QQ
         )
-    assert sorted(coefficients) == list(range(91))
+    assert sorted(coefficients) == list(range(M_DEGREE + 1))
 
     expression = 0
     for m_degree, coefficient in coefficients.items():
         transformed = sp.Poly(coefficient.as_expr().subs(y, 1 + t * x), t, x)
         for (t_degree, x_degree), value in transformed.terms():
-            total_t_degree = 61 - m_degree + t_degree
+            total_t_degree = EDGE_WEIGHT - m_degree + t_degree
             assert total_t_degree >= 0
             expression += value * t**total_t_degree * x**x_degree
     polynomial = sp.Poly(expression, x, t, domain=QQ)
-    assert (polynomial.degree(x), polynomial.degree(t)) == (29, 89)
+    assert (polynomial.degree(x), polynomial.degree(t)) == (
+        BRANCH_DEGREE,
+        CHART_T_DEGREE,
+    )
     return polynomial
 
 
 P6 = build_chart_polynomial()
 P0 = sp.Poly(P6.as_expr().subs(t, 0), x, domain=QQ)
-assert P0.degree() == 29 and sp.gcd(P0, P0.diff()).degree() == 0
+assert P0.degree() == BRANCH_DEGREE and sp.gcd(P0, P0.diff()).degree() == 0
 
 # The common denominator in the normalized F6 coefficients cancels.  This
 # produces the regular polynomial Q in 10 = Q*y^(6/t+1).
-F_chart = sp.cancel(F6.subs({m: 1 / t, y: 1 + t * x}) / t**7)
+F_chart = sp.cancel(F6.subs({m: 1 / t, y: 1 + t * x}) / t ** (R + 1))
 F_poly = sp.Poly(F_chart, z)
 B = sp.cancel(F_poly.coeff_monomial(1))
-C = sp.cancel(-F_poly.coeff_monomial(z**6))
-Q_expression = sp.factor(10 * C / (B * (1 + t * x)))
+C = sp.cancel(-F_poly.coeff_monomial(z**R))
+Q_expression = sp.factor(Q_CONSTANT * C / (B * (1 + t * x)))
 assert sp.denom(Q_expression) == 1
 Q_polynomial = sp.Poly(Q_expression, x, t, domain=QQ)
-assert (Q_polynomial.degree(x), Q_polynomial.degree(t)) == (6, 6)
+assert (Q_polynomial.degree(x), Q_polynomial.degree(t)) == (R, R)
 
 
 def to_fmpq(value: sp.Rational | int) -> fmpq:
@@ -365,10 +398,14 @@ def certify_separation(t_ball: arb, tube: Tube) -> str:
         y_ball = 1 + t_ball * x_ball
         assert bool(y_ball.lower() > 0)
         if bool(t_ball.lower() > 0):
-            difference = (q_ball / 10).log() + (6 / t_ball + 1) * y_ball.log()
+            difference = (q_ball / Q_CONSTANT).log() + (
+                R / t_ball + 1
+            ) * y_ball.log()
         else:
             logarithm_ratio = regular_log_ratio(t_ball, acb(x_ball))
-            difference = (q_ball / 10).log() + (6 + t_ball) * logarithm_ratio.real
+            difference = (q_ball / Q_CONSTANT).log() + (
+                R + t_ball
+            ) * logarithm_ratio.real
         assert bool(difference.lower() > 0)
         return "modulus"
 
@@ -377,7 +414,9 @@ def certify_separation(t_ball: arb, tube: Tube) -> str:
     q_ball = evaluate_bivariate(Q_COEFFICIENTS, t_ball, x_ball)
     assert isinstance(q_ball, acb) and not q_ball.contains(0)
     logarithm_ratio = regular_log_ratio(t_ball, x_ball)
-    difference = (q_ball / 10).log() + (6 + t_ball) * logarithm_ratio
+    difference = (q_ball / Q_CONSTANT).log() + (
+        R + t_ball
+    ) * logarithm_ratio
     if excludes_zero(difference.real):
         return "modulus"
     assert phase_excludes_multiples_of_two_pi(difference.imag)
@@ -424,7 +463,7 @@ for cell in range(CELL_COUNT):
         tubes.append(Tube(real, imaginary, radius, is_positive_real))
         max_radius = max(max_radius, radius)
 
-    assert sum(tube.is_positive_real for tube in tubes) == 1
+    assert sum(tube.is_positive_real for tube in tubes) == REAL_BRANCHES
     for left_index, first in enumerate(tubes):
         for second in tubes[left_index + 1 :]:
             distance = (first.center - second.center).abs_lower()
@@ -436,17 +475,17 @@ for cell in range(CELL_COUNT):
         phase_count += method == "phase"
         tube_count += 1
 
-assert tube_count == 29 * CELL_COUNT
+assert tube_count == BRANCH_DEGREE * CELL_COUNT
 print(
-    "PASS contact resultant r=6 effective tail: "
+    f"PASS contact resultant r={R} effective tail: "
     f"{tube_count} rigorous Rouche tubes on 0<=t<=1/{TAIL_START}"
 )
 print(
-    "PASS contact resultant r=6 effective tail: "
+    f"PASS contact resultant r={R} effective tail: "
     f"{modulus_count} modulus and {phase_count} phase separations"
 )
 print(
-    "PASS contact resultant r=6 effective tail: "
+    f"PASS contact resultant r={R} effective tail: "
     f"nonvanishing for every integer m>={TAIL_START}"
 )
 
@@ -494,7 +533,7 @@ for finite_m in range(1, TAIL_START):
     assert sp.gcd(finite_K, finite_L).degree() == 0
 
 print(
-    "PASS contact resultant r=6 finite range: "
-    f"40 modular gcd certificates modulo {PRIME}"
+    f"PASS contact resultant r={R} finite range: "
+    f"{TAIL_START - 1} modular gcd certificates modulo {PRIME}"
 )
-print("PASS contact resultant: uniform nonvanishing for every m>=1 and r=6")
+print(f"PASS contact resultant: uniform nonvanishing for every m>=1 and r={R}")

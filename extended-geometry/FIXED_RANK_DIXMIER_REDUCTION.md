@@ -1,4 +1,17 @@
-# Fixed-rank Dixmier reduction: the first invariant-pair search
+# Smallest false Dixmier rank: the `DC_2` reduction program
+
+The connection from the foundational Keller counterexample to the Dixmier
+conjecture is complete: its inverse-Jacobian lift is a non-surjective
+endomorphism of `A_3`, and adjoining identity Weyl pairs disproves `DC_n` for
+every `n>=3`.  The remaining dimension question is therefore:
+
+\[
+\boxed{\text{determine the smallest false Dixmier rank, or settle }DC_2.}
+\]
+
+`DC_1` and `DC_2` remain separate questions.  This note concerns possible
+descent from the known `A_3` witness to `A_2`; it is not an attempt to
+establish the already-known connection to Dixmier.
 
 The repository has two different lower-rank constructions which must not be
 conflated.

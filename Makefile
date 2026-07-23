@@ -10,7 +10,8 @@ SYSTEM_PYTHON ?= python3
 	verify-quartic verify-normal-forms verify-formal verify-lean-foundational \
 	verify-foundations verify-foundations-formal \
 	verify-coincident-root-loci verify-papers verify-ritt-boundary \
-	verify-ritt-2-complex verify-hessian-synchronization \
+	verify-ritt-2-complex verify-ll-ritt-reduction verify-ritt-deformation-complex \
+	verify-hessian-synchronization \
 	verify-common-right-factor-synchronization \
 	verify-degree42-hessian-normal-jets \
 	verify-degree42-conormal-rees-synchronization \
@@ -46,6 +47,7 @@ verify-plane-jc:
 	$(PYTHON) plane-jc/cas/boundary_lattice_prefilter.py
 	$(PYTHON) plane-jc/cas/test_intrinsic_a2_boundary.py
 	$(PYTHON) plane-jc/cas/test_plane_boundary_exclusion.py
+	$(PYTHON) plane-jc/cas/test_finite_normalization_signatures.py
 	$(PYTHON) plane-jc/cas/test_log_boundary_compiler.py
 	$(PYTHON) plane-jc/cas/test_poisson_square_rigidity.py
 	$(PYTHON) plane-jc/cas/test_poisson_square_filtered_modules.py
@@ -86,6 +88,12 @@ verify-ritt-boundary:
 
 verify-ritt-2-complex:
 	$(PYTHON) scripts/verify_degree30_ritt_2_complex.py
+
+verify-ll-ritt-reduction:
+	$(PYTHON) scripts/verify_ll_ritt_reduction.py
+
+verify-ritt-deformation-complex:
+	$(PYTHON) scripts/verify_hessian_ritt_deformation_complex.py
 
 verify-hessian-synchronization:
 	$(PYTHON) scripts/verify_hessian_synchronization_lifts.py
@@ -356,6 +364,8 @@ verify-regressions: verify-external-consequences
 	$(PYTHON) scripts/verify_hessian_ritt_degrees_eight_twelve.py
 	$(PYTHON) scripts/verify_hessian_synchronization_lifts.py
 	$(PYTHON) scripts/verify_degree30_ritt_2_complex.py
+	$(PYTHON) scripts/verify_ll_ritt_reduction.py
+	$(PYTHON) scripts/verify_hessian_ritt_deformation_complex.py
 	$(PYTHON) scripts/verify_stable_generator_rigidity.py
 	$(PYTHON) scripts/verify_multicluster_ll_comparison.py
 	$(PYTHON) scripts/verify_labelled_node_saturation.py

@@ -23,7 +23,7 @@ normalization determines the selected-root cover.”
    affine root sheet are selected from the map-intrinsic Zariski--Main
    package.  Stable functoriality then transports them.  This is the theorem
    proved in the
-   [decorated-normalization paper](../papers/decorated-discriminant-normalization/main.tex).
+   [decorated-normalization theorem note](DECORATED_NORMALIZATION_INVARIANT.md).
    The
    [intrinsic-selector attack](INTRINSIC_SELECTOR_ATTACK.md) verifies on the
    symmetric quintic that the coarse \(\mu_3\) symmetry cannot be promoted to

@@ -14,10 +14,23 @@ J=DF,\qquad \det J\in k^\times,\qquad B=J^{-1}\in M_n(k[x]).
 
 This note records two standard inverse-Jacobian constructions and the precise
 relation between them.  The Weyl-algebra transfer is classical and, for the
-foundational three-variable counterexample, was written out explicitly by
-Omniscience Research Agent and Jeff Pickhardt on 19 July 2026.  The purpose
-here is to integrate that transfer with the repository's exact symplectic and
-stable-equivalence geometry, not to claim discovery of the Weyl construction.
+foundational three-variable counterexample, was written out explicitly in
+contemporaneous public notes and discussion.  The purpose here is to integrate
+that already-complete transfer with the repository's exact symplectic and
+stable-equivalence geometry, not to claim discovery of the Weyl construction
+or to treat the connection to Dixmier as an open problem.
+
+With `DC_n` denoting the assertion that every endomorphism of `A_n(k)` is an
+automorphism, the foundational map gives
+
+\[
+\boxed{\neg DC_n\quad\text{for every }n\geq3.}
+\]
+
+Thus the fixed-rank Dixmier frontier is to determine the smallest false rank,
+in particular to settle `DC_2`.  The questions `DC_1` and `DC_2` remain
+separate; none of the rank-two symbol-specific obstruction calculations in
+this repository settles either one.
 
 ## Theorem 1 — exact polynomial cotangent lift
 
@@ -216,7 +229,7 @@ construction to `F^{-1}`.
 Strictly speaking, the associated graded *algebra homomorphism* is
 `widehat F^*`; the corresponding morphism of affine varieties is `widehat F`.
 
-## Corollary 3 — the foundational counterexample
+## Corollary 3 — the foundational counterexample and `DC_n` for `n>=3`
 
 For the map
 
@@ -270,6 +283,20 @@ D_i\mapsto-\frac12\sum_r\operatorname{adj}(DF)_{ri}(X)D_r
 is injective and not surjective.  This is an explicit counterexample to the
 Dixmier conjecture in rank three.
 
+For every `n>3`, extend this endomorphism by the identity on the remaining
+Weyl pairs.  The resulting endomorphism of
+
+\[
+A_n\simeq A_3\otimes A_{n-3}
+\]
+
+is still not surjective.  Indeed, if `Phi_F tensor id` were surjective, write
+a preimage of `a tensor 1` as `sum_i b_i tensor c_i`.  Applying any `k`-linear
+functional `lambda:A_{n-3}->k` with `lambda(1)=1` gives
+`a=sum_i lambda(c_i)Phi_F(b_i)`, making `Phi_F` surjective.
+Consequently `DC_n` is false for every `n>=3`.  This stabilization says
+nothing about `DC_1` or `DC_2`.
+
 ## Corollary 4 — transfer of the repository families
 
 Every three-variable Keller map in this repository has an exact symplectic
@@ -281,6 +308,11 @@ Consequently:
 \boxed{\text{For every }N\ge3\text{ there is a noninjective exact symplectic
 etale map }\mathbb A^6\to\mathbb A^6\text{ of generic degree }N.}
 \]
+
+Adjoining identity symplectic pairs gives the same conclusion in every even
+ambient dimension at least six.  The lift preserves the original collision
+fiber scheme and generic degree, so noninvertibility is not inferred only
+from a determinant calculation.
 
 For `N>=4`, the strongest degreewise statement comes from the weighted
 marked Hessian-divisor map.  On its explicitly nonempty Hessian-clean open,
@@ -380,6 +412,12 @@ transported complete fiber.
   to the Dixmier Conjecture in A_3* (19 July 2026), already carry the
   foundational map through this Weyl construction and prove injectivity,
   non-surjectivity, and exact preservation of differential order.
+- William G. P. Mayner posted a fixed-dimensional derivation in the
+  [Secret Blogging Seminar discussion](https://sbseminar.wordpress.com/2026/07/20/the-new-counterexample-to-the-jacobian-conjecture/)
+  immediately after the discovery, with a linked
+  [six-page note and exact-arithmetic audit](https://github.com/wmayner/dixmier-counterexample).
+  It explicitly obtains the non-surjective `A_3` endomorphism and its
+  extensions to every `A_n`, `n>=3`.
 - The exact cotangent-lift formulation and the transfer of the repository's
   stable-class lower bounds are recorded here as elementary consequences.  No
   historical priority claim is made without a broader source audit.

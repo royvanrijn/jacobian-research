@@ -1,4 +1,4 @@
-# Image and Vanishing counterexamples from the essential cubic collision
+# Image and Vanishing consequences of the essential cubic collision
 
 The repository's 21-variable cubic-homogeneous Keller collision and its
 20-variable identity-output slice produce the following direct
@@ -17,11 +17,34 @@ and also violates the nonhomogeneous HN vanishing property.  The final
 statement retains homogeneity: a separate 42-variable quartic violates the
 classical homogeneous Hessian-nilpotent Vanishing Conjecture.
 
-This improves the earlier 95-to-190 stable-normal-form witnesses in
-[STABLE_NORMAL_FORM_AUDIT.md](STABLE_NORMAL_FORM_AUDIT.md).  It also removes
-the previously unspecified inverse-coordinate index: the multiplier is the
-first coordinate `z_0`, certified directly by the stored collision.  Section
-7 also gives an all-order algebraic recurrence for that inverse coordinate.
+## Status of the claims
+
+Three different assertions must not be conflated.
+
+1. **Logical consequence.**  Conditional only on the correctness of the
+   explicit collision and the cited standard equivalences, (3.3), (6.11),
+   and (5.9)--(5.10) falsify the universally quantified Image, generalized
+   Vanishing, and homogeneous quartic HN Vanishing conjectures,
+   respectively.  These are consequences of the same noninvertible Keller
+   map; they are not logically independent disproofs of the Jacobian
+   Conjecture.
+2. **Quantitative status.**  Dimensions \(20,40,42\) are the smallest
+   witnesses currently certified in this repository for the three displayed
+   forms.  They improve the repository's earlier \(95\)-pair/\(190\)-variable
+   stable-normal-form constructions in
+   [STABLE_NORMAL_FORM_AUDIT.md](STABLE_NORMAL_FORM_AUDIT.md).  No claim is
+   made that they are literature-wide minima or records.  The proved lower
+   bounds and repository upper bounds are kept separately in
+   [MINIMAL_COUNTEREXAMPLE_SCOREBOARD.md](MINIMAL_COUNTEREXAMPLE_SCOREBOARD.md).
+3. **Witness-level contribution.**  What is specific to this construction is
+   the explicit essential \(21\)-variable input, its \(20\)-variable
+   identity slice, the named multiplier \(z_0\), and the all-order recurrence
+   for that inverse coordinate.  “Explicit” here means that artifacts and
+   exact replay scripts are supplied.  It is not a claim of first discovery
+   or priority in the external literature.
+
+Accordingly, later uses of “disproves” refer to the logical implication, and
+“improves” refers only to the repository's certified witness ledger.
 
 ## 1. Exact cubic input
 
@@ -118,9 +141,11 @@ Equations (2.2) and (2.5) now say
  \quad\text{for infinitely many }m.                           \tag{3.3}
 \]
 
-Hence this image is not a Mathieu--Zhao subspace.  This first gives an explicit
+Hence this image is not a Mathieu--Zhao subspace.  This gives an explicit
 counterexample to `SIC(21)`; Section 6 descends it further to `SIC(20)`.  Either
-one disproves the unrestricted Image Conjecture.  The image/kernel theorem and
+one disproves the unrestricted Image Conjecture because that conjecture is
+universally quantified over the pair dimension; this is a logical statement,
+not a dimension-minimality or priority claim.  The image/kernel theorem and
 the Image Conjecture are due to
 [Zhao](https://arxiv.org/abs/0902.0210); the repository proves the inversion
 input locally rather than treating it as a black box.
@@ -155,6 +180,8 @@ Therefore
 
 This already disproves the generalized constant-coefficient Vanishing
 Conjecture with a specified operator, polynomial, and linear multiplier.  The
+claim is the logical failure of the universal statement; no least dimension
+or literature priority is inferred from it.  The
 general second-order formulation is recorded in
 [Zhao's constant-coefficient paper](https://arxiv.org/abs/0704.1691).
 
@@ -197,8 +224,8 @@ satisfies
 \]
 
 This is a homogeneous generalized Laplacian-VC counterexample in 42
-variables.  Section 6 improves the generalized dimension to 40 after giving
-up homogeneity.
+variables.  Section 6 lowers the repository's generalized-dimension
+incumbent to 40 after giving up homogeneity.
 
 ## 5. The same quartic defeats the classical HN Vanishing Conjecture
 
@@ -282,7 +309,10 @@ collision rules that out.  Therefore
 \]
 
 Equations (5.9)--(5.10) are a direct counterexample to the classical quartic
-Hessian-nilpotent Vanishing Conjecture in dimension 42.  The precise
+Hessian-nilpotent Vanishing Conjecture in dimension 42.  Since that
+conjecture quantifies over every dimension, this one witness falsifies it;
+the statement neither makes 42 minimal nor asserts that this is the first
+such explicit witness in the literature.  The precise
 HN/Laplacian equivalence and quartic VC are in
 [Zhao's Hessian-nilpotent paper](https://arxiv.org/abs/math/0409534).
 
@@ -412,9 +442,10 @@ vanishing of `Delta^m(fP^m)` for every polynomial `f`.  Taking `f=Q_0` in
  \boxed{\Delta^mR_{20}^{m+1}\ne0\text{ for infinitely many }m}.\tag{6.16}
 \]
 
-Thus dimension 40 already contains a nonhomogeneous HN Vanishing
-counterexample.  Homogenizing while preserving the ordinary nondegenerate
-Laplacian still uses the 42-variable quartic of Section 5.
+Thus dimension 40 contains the repository's current nonhomogeneous HN
+Vanishing witness.  Homogenizing while preserving the ordinary nondegenerate
+Laplacian still uses the 42-variable quartic of Section 5 in this
+construction.
 
 ## 7. All-order recurrence for the actual homogeneous inverse
 
@@ -489,8 +520,11 @@ further linear identity-output functional to restrict.  The homogeneous
 linear quotient.  Nonlinear reductions and dimension minimality remain open;
 no minimality is claimed for 20, 40, or 42.
 
-Primary credit for the Image and Vanishing frameworks remains with Zhao and
-the cited reduction literature.  The use of the repository's essential
-21-variable artifact, the identity-slice descent, the named recurrence, and
-the 20-to-40/21-to-42 witness optimizations are repository-derived and have no
-external specialist review recorded.
+Primary credit for the Image and Vanishing frameworks and equivalences
+remains with Zhao and the cited reduction literature.  The
+repository-specific contribution claimed here is narrower: applying those
+frameworks to the essential 21-variable artifact, performing the
+identity-slice descent, naming the multiplier and inverse recurrence, and
+producing exact 20/40/42 artifacts.  No literature-wide priority, “first
+explicit witness,” or best-known record is claimed, and no external
+specialist review of these artifacts is recorded.

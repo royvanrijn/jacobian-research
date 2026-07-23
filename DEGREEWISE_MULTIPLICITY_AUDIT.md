@@ -1,9 +1,8 @@
 # Degreewise stable multiplicity: four-input audit
 
-This is the verification companion to the canonical standalone paper
-[`Marked-Root Keller Maps and Degreewise Stable Multiplicity`](papers/marked-root-multiplicity/main.tex).
-It splits that proof into independently checkable obligations; it is not a
-second canonical theorem source.  Fix an integer `N>=4`, put `n=N-1`, and
+This note retains the theorem statement and verification record of the former
+degreewise-multiplicity manuscript. It splits that proof into independently
+checkable obligations. Fix an integer `N>=4`, put `n=N-1`, and
 work over `C`.  The audited conclusion is
 
 \[
@@ -160,8 +159,8 @@ test, and reconstruction.  It does not use Lemmas 1 or 3--5.
 
 ## Lemma 3 — the boundary vertices and labels are exhaustive
 
-The canonical local-ring proof is the paper's
-[boundary-exhaustion section](papers/marked-root-multiplicity/boundary-exhaustion.tex).
+The canonical local-ring proof is retained in the
+[boundary-geometry theorem](cancellation/BOUNDARY_GEOMETRY.md).
 The discussion below is only its audit checklist.
 
 Let `U=A^3`, let `Y=A^3`, and for either map let
@@ -298,8 +297,8 @@ For (16), normalize the critical divisor of (9) with
  Y=Q-PT,\qquad T=Y^{-m},\qquad P=(Q-Y)Y^m.
 \]
 
-The canonical paper now proves the exponent twice in its
-[thick-intersection section](papers/marked-root-multiplicity/thick-intersection.tex).
+The exponent is proved twice in the retained
+[contact-resultant and thick-contact note](cancellation/CONTACT_RESULTANT.md).
 The eliminative proof forms the primitive monic resultant in `Y`; at `P=0`
 it factors as `G(0)^mG(Q)`, and two beta integrals give orders `m*mr` and
 `mr`.  Independently, the completed regular plane `C(R)[[Y,Q]]` has
@@ -334,8 +333,8 @@ not this audit, for the theorem statement and proof.
 ## Input 4 — parameter faithfulness
 
 For a fixed cancellation type `(m,r)`, the degree-`mr` squarefree polynomial
-`M_(m,r)` supplies `mr` normalized cancellation jets.  The canonical paper's
-[parameter-faithfulness theorem](papers/marked-root-multiplicity/cancellation-parameter-faithfulness.tex)
+`M_(m,r)` supplies `mr` normalized cancellation jets. The retained
+[parameter-faithfulness theorem](cancellation/RIGIDITY.md)
 proves that these jets define `mr` distinct stable left--right classes.
 
 The proof retains the full reconstruction open.  Stable target-boundary
@@ -382,6 +381,5 @@ python3 scripts/audit_thick_intersection_local.py
 ```
 
 These scripts are regressions, not substitutes for boundary exhaustion and
-the unconditional contact proof.  The
-standalone paper is in
-[`papers/marked-root-multiplicity/`](papers/marked-root-multiplicity/).
+the unconditional contact proof. The former standalone manuscript has been
+retired.

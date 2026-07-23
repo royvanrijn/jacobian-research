@@ -6,6 +6,10 @@
 > graph and the distinction between the nonexplicit `GMC(158)` route and the
 > direct `GMC(n>=3)` witness are maintained in
 > [External consequences and provenance](../../extended-geometry/EXTERNAL_CONSEQUENCES_AND_PROVENANCE.md).
+> The 190-variable Image/HN bullets below are also superseded quantitatively
+> by the repository's 20/40/42 artifacts.  They remain valid historical
+> witnesses, not best-known or priority claims; see
+> [Image and Vanishing consequences](../../extended-geometry/IMAGE_VANISHING_COUNTEREXAMPLES.md).
 
 This note audits the claims in Zihan Zhang's 20 July 2026 expository page.
 

@@ -1,14 +1,20 @@
-# Discriminants of the pencils `H(W)-sW+t`
+# Generic discriminants of polynomial tangent pencils
 
-This directory contains the standalone generic-discriminant paper and its
-adversarial audit.
+This directory contains the short replacement paper about the reduced
+discriminant curve of
 
-- [Paper source](main.tex)
-- [Proof audit](AUDIT.md)
-- [Compiled paper](../../output/pdf/discriminants-polynomial-pencils.pdf)
+\[
+H(W)-sW+t.
+\]
+
+The paper proves only the generic cusp--node theorem. The former real-chamber
+theorem and repository-specific endpoint slice have deliberately been left
+out so that the manuscript has one question and one main result.
 
 Build with:
 
 ```bash
 latexmk -pdf -interaction=nonstopmode -halt-on-error main.tex
 ```
+
+The internal adversarial proof audit remains in `AUDIT.md`.

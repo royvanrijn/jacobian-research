@@ -134,7 +134,7 @@ stably left--right equivalent.  This proves only that every lift preserving
 the marked open acts trivially on the parameter roots; the full residual
 target congruence kernel may still be nontrivial.  The canonical stable proof
 is Theorem 6.2 in
-[`cancellation-parameter-faithfulness.tex`](../papers/marked-root-multiplicity/cancellation-parameter-faithfulness.tex).
+the parameter-faithfulness proof retained in this note.
 
 ## 4. Scope and failure modes
 

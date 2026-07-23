@@ -1,0 +1,16 @@
+name = "discriminant-pencils"
+version = "0.1.0"
+keywords = ["math", "algebraic-geometry", "discriminants"]
+defaultTargets = ["DiscriminantPencils"]
+
+[leanOptions]
+pp.unicode.fun = true
+relaxedAutoImplicit = false
+weak.linter.mathlibStandardSet = true
+
+[[require]]
+name = "mathlib"
+path = "../../.cache/lean-foundational/.lake/packages/mathlib"
+
+[[lean_lib]]
+name = "DiscriminantPencils"

@@ -4,9 +4,8 @@
 
 This note isolates a plane theorem suggested by the repository's
 three-dimensional boundary-cancellation constructions.  It gives a complete
-exclusion of both the one- and two-puncture branches once "saturated
-rank-one link with no additional divisors" is expressed as an exact generic
-sheet budget.
+exclusion for every puncture number once "saturated rank-one link with no
+additional divisors" is expressed as an exact generic sheet budget.
 
 Work over an algebraically closed field \(k\) of characteristic zero.  Let
 
@@ -29,8 +28,7 @@ Assume:
 1. the reduced boundary \(\overline X\setminus U\) has one prime divisor
    \(D\);
 2. \(\overline X\) is regular along \(D\), and \(D\) is smooth;
-3. the smooth completion of \(D\) is \(\mathbb P^1\), with one or two
-   punctures;
+3. the smooth completion of \(D\) is \(\mathbb P^1\);
 4. no residual ramification divisor occurs in addition to the tame
    transverse ramification of \(D\);
 5. over the generic point of \(B=\pi(D)\), the exhaustive divisor
@@ -63,9 +61,9 @@ The nonproper-value theorem for plane nonsingular polynomial maps says that
 
 > **Puncture exclusion.**
 >
-> 1. \(D\simeq\mathbb G_m\) is impossible.
-> 2. If \(D\simeq\mathbb A^1\), then \(g\) has degree one.  Hence
->    \(D\to B\) is the normalization map and is immersive.
+> If \(D\) has two or more punctures, it is impossible.  If
+> \(D\simeq\mathbb A^1\), then \(g\) has degree one.  Hence
+> \(D\to B\) is the normalization map and is immersive.
 
 Consequently the only possible one-puncture survivor identifies two or more
 points of \(D\simeq\mathbb A^1\) in the target.  Equivalently, \(B\) must
@@ -111,7 +109,7 @@ There is no nonproper plane Keller map satisfying conditions 1--5.
 
 More sharply:
 
-- conditions 1--4 already exclude the two-puncture case;
+- conditions 1--4 already exclude every case with at least two punctures;
 - in the one-puncture case they force a degree-one immersive normalization;
 - the primitive minimal-sheet condition 5 excludes its only possible
   conductor gluing.
@@ -413,6 +411,33 @@ uniformly.  Without residue immersion the estimate can fail in the proposed
 form: a singular unibranch image may have only one normalization point, and
 the tangential differential can spend ramification at that point.
 
+### 4.4 Arbitrary-puncture residue budget
+
+The canonical finite-normalization programme supplies an additional input:
+every normalization-boundary curve has rational projective normalization.
+Suppose one such curve has residue degree \(f\) over a parametric target
+nonproperness curve and has \(s\) punctures over target infinity.  If the
+positive pole orders are \(m_1,\ldots,m_s\), then
+
+\[
+\sum_jm_j=f.
+\]
+
+Riemann--Hurwitz forces ramification on the affine residue curve of total
+degree
+
+\[
+(2f-2)-\sum_j(m_j-1)=f+s-2.
+\tag{13}
+\]
+
+Thus affine residue immersion is compatible only with \(f=s=1\).
+The former one- and two-puncture calculations are the first two cases of
+(13); no bounded puncture-rank assumption is needed once rationality and
+residue immersion have been transferred to the canonical normalization.
+The exact checker now enumerates every ordered positive pole profile through
+`puncture_profile_budgets`.
+
 ## 5. Smallest numerical test
 
 The intrinsic affine-plane boundary gate already contains the first
@@ -473,7 +498,7 @@ The proposed statement becomes a theorem if its terms are read as follows:
 | proposed phrase | operational requirement |
 | --- | --- |
 | one irreducible rational dicritical component | the Zariski--Main boundary has one prime \(D\), and \(B=\pi(D)\) is the unique nonproperness component |
-| normalization \(\mathbb A^1\) or \(\mathbb G_m\), at most two punctures | \(D\) is smooth with completion \(\mathbb P^1\) and one or two deleted points |
+| rational normalization with finitely many punctures | \(D\) is smooth with completion \(\mathbb P^1\); the canonical \(\mathbb A^2\) boundary theorem supplies this rationality |
 | tame generic ramification | logarithmic purity along every point of \(D\), not only generic tameness |
 | saturated rank-one valuation link | the linked affine prime is primitive in both normal and residue degree: \((e,f)_D=(e,1)\), \((e,f)_E=(1,1)\) |
 | no additional divisorial components | the generic pullback of \(B\) has exactly the linked pair \(D,E\), and the regular graph audit has no exceptional residual-ramification divisor |
@@ -486,7 +511,7 @@ does not follow.  The full operational dichotomy is
 \[
 \boxed{
 \begin{array}{c}
-\mathbb G_m\text{ boundary}\\
+\text{two-or-more-puncture boundary}\\
 \text{excluded by residue immersion + Riemann--Hurwitz}
 \end{array}
 }
@@ -530,8 +555,8 @@ primitive source pole vector certifies neither that the normalization
 boundary has one prime nor the affine contribution \(a\).
 
 Once the target transfer, exhaustive pullback, one-place theorem, and log
-purity are certified, the gate applies Riemann--Hurwitz.  Two punctures are
-excluded; one puncture forces \(f=1\).  The image is then either normal, in
+purity are certified, the gate applies Riemann--Hurwitz.  Every profile with
+two or more punctures is excluded; one puncture forces \(f=1\).  The image is then either normal, in
 which case the affine-line component theorem excludes it, or nonnormal, in
 which case a conductor collision requires
 

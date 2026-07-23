@@ -19,15 +19,16 @@
 \newcommand{\conv}{\operatorname{conv}}
 \newcommand{\Supp}{\operatorname{Supp}}
 
-\title{The Gaussian Moments Conjecture in Two Variables}
+\title{The Gaussian Moments Conjecture:\\
+Dimension Two and Sparse Minimality in Dimension Three}
 \author{Roy van Rijn\\{\small Independent researcher}}
-\date{23 July 2026}
+\date{24 July 2026}
 \hypersetup{
-  pdftitle={The Gaussian Moments Conjecture in Two Variables},
+  pdftitle={The Gaussian Moments Conjecture: Dimension Two and Sparse Minimality in Dimension Three},
   pdfauthor={Roy van Rijn},
-  pdfsubject={A proof of the Gaussian Moments Conjecture in two real variables},
+  pdfsubject={The dimension threshold and sparse minimal counterexamples for the Gaussian Moments Conjecture},
   pdfkeywords={Gaussian Moments Conjecture, Gaussian moments, constant terms,
-    Laurent polynomials}
+    Laurent polynomials, sparse polynomials, Groebner bases}
 }
 
 \begin{document}
@@ -46,7 +47,15 @@ isolate a nonzero lowest term.  This forces every polynomial with vanishing
 pure moments to have rotational weights of one strict sign, from which the
 mixed-moment conclusion is immediate.  Together with the recent
 counterexamples of Long in every dimension at least three, this determines
-the exact dimensional range of the conjecture.
+the exact dimensional range of the conjecture.  We then study minimal
+failure in the first failing dimension.  An exhaustive exact search over
+all \(59{,}535\) supports having degree at most four and at most four
+monomials shows that every pure-moment-null polynomial in this range still
+satisfies the conjectural mixed-moment conclusion.  Thus Long's five-term
+quartic is Pareto-minimal with respect to degree and circular-coordinate
+support size.  The sparse theorem is computer-assisted: saturated moment
+ideals through order twenty-four are computed over \(\mathbb Q\), and the
+three genuine surviving families are proved harmless at all orders.
 \end{abstract}
 
 \section{Introduction}
@@ -76,6 +85,42 @@ two-variable case was therefore the last undecided dimension.
 \begin{theorem}\label{thm:main}
 The Gaussian Moments Conjecture holds in two real variables.
 \end{theorem}
+
+Long's three-variable witness, in circular coordinates \(W,Z\) and an
+independent real Gaussian \(T\), is
+\begin{equation}\label{eq:long}
+ P_{\mathrm L}
+ =W+WZ-T^2-\frac32ZT^2-\frac12Z^2T^2.
+\end{equation}
+It has degree four and five monomials, all its pure moments vanish, and
+\(\E(ZP_{\mathrm L}^m)=m!\) for every \(m\geq1\)~\cite{Long}.  Our second
+main result places this witness at the first corner of the sparse
+degree--support plane.
+
+\begin{theorem}[Sparse Pareto minimality]\label{thm:sparse}
+Let \(W,Z,T\) be Gaussian Witt coordinates, so that
+\[
+ \E(W^iZ^jT^k)=
+ \begin{cases}
+   i!(k-1)!!,&i=j\text{ and }k\text{ is even},\\
+   0,&\text{otherwise}.
+ \end{cases}
+\]
+Suppose that \(P\in\C[W,Z,T]\) has total degree at most four and at most four
+nonzero monomials.  If \(\E(P^m)=0\) for every \(m\geq1\), then, for every
+\(Q\in\C[W,Z,T]\),
+\[
+ \E(QP^m)=0
+ \qquad\text{for all sufficiently large }m.
+\]
+Consequently no GMC counterexample has both degree at most four and support
+size at most four in a Gaussian Witt frame.
+\end{theorem}
+
+In particular, \eqref{eq:long} is minimal for the product partial order on
+\((\deg P,\#\Supp(P))\).  The theorem does not separately prove that degree
+four is globally minimal: a denser cubic is not excluded.  Nor does it
+exclude a four-term counterexample of degree greater than four.
 
 The proof is short once the right coordinates are chosen.  In two
 dimensions, rotation has a single integer weight and there is a single
@@ -325,6 +370,159 @@ Theorem~\ref{thm:main} proves the case \(d=2\).
 Long's examples disprove the conjecture for every \(d\geq3\)~\cite{Long}.
 \end{proof}
 
+\section{Sparse minimality in the first failing dimension}
+\label{sec:sparse}
+
+We prove Theorem~\ref{thm:sparse}.  The finite part is an exhaustive exact
+coefficient-scheme calculation; the all-order interpretation of its
+survivors is conceptual.
+
+\subsection{Moment ideals}
+
+Let
+\[
+ \mathcal M_4
+ =\{W^iZ^jT^k:i,j,k\geq0,\ i+j+k\leq4\}.
+\]
+This set has \(35\) elements.  Fix a support \(S\subset\mathcal M_4\), write
+\[
+ P_S=\sum_{s\in S}c_ss,
+\]
+and work on the coefficient torus \(\prod_{s\in S}c_s\neq0\).  For
+\(s=(i_s,j_s,k_s)\) and a multiplicity vector
+\(\nu=(\nu_s)_{s\in S}\in\mathbb N^S\), put
+\[
+ |\nu|=\sum_s\nu_s,\quad
+ I(\nu)=\sum_s\nu_si_s,\quad
+ J(\nu)=\sum_s\nu_sj_s,\quad
+ K(\nu)=\sum_s\nu_sk_s.
+\]
+Wick contraction gives the exact moment polynomial
+\begin{equation}\label{eq:sparse-moment}
+ \E(P_S^m)
+ =
+ \sum_{\substack{|\nu|=m,\ I(\nu)=J(\nu)\\K(\nu)\ {\rm even}}}
+ \frac{m!}{\prod_s\nu_s!}\,
+ I(\nu)!\,(K(\nu)-1)!!\prod_sc_s^{\nu_s}.
+\end{equation}
+Thus the truncated full-support coefficient scheme is defined by
+\begin{equation}\label{eq:saturated-ideal}
+ I_{S,M}
+ =
+ \left\langle\E(P_S),\ldots,\E(P_S^M)\right\rangle:
+ \left(\prod_{s\in S}c_s\right)^\infty.
+\end{equation}
+The equations are homogeneous, so one coefficient may be normalized to
+one before saturation.
+
+There are
+\[
+ \sum_{r=1}^4\binom{35}{r}=59{,}535
+\]
+raw supports.  We identify a support with its reflection under
+\(W\leftrightarrow Z\).  Two elementary filters precede the Groebner
+calculation.  If some moment in \eqref{eq:sparse-moment} has exactly one
+coefficient monomial, the coefficient torus contains no solution.  If no
+contraction occurs, all charges \(i_s-j_s\) have one strict sign and the
+mixed-moment conclusion follows by bounded weight.
+
+For completeness, the latter test is finite in this range.  A zero charge
+contracts in one or two copies, according to its \(T\)-parity.  Opposite
+nonzero charges \(q>0>r\), with \(|q|,|r|\leq4\), have a primitive
+zero-sum relation of length
+\[
+ \frac{q+|r|}{\gcd(q,|r|)}\leq8;
+\]
+doubling corrects odd \(T\)-parity.  Hence every support which is not
+strictly one-sided has a contraction by order sixteen.
+
+\subsection{Exact enumeration}
+
+After the preceding filters, the four-term stratum contains \(5{,}718\)
+coefficient-torus ideals requiring elimination.  Exact Groebner bases over
+\(\mathbb Q\) for \(I_{S,20}\) leave precisely the supports
+\[
+\begin{split}
+ &\{Z,ZT^2,WZ^2,W^3T\},\\
+ &\{ZT,Z^2,WT,W^2\},\\
+ &\{ZT,ZT^3,WZ^2T,W^3\}.
+\end{split}
+\]
+The first and third acquire the unit ideal after adjoining moments through
+order twenty-four.  The same exact search in the one-, two-, and three-term
+strata leaves no active one- or two-term family and two three-term
+families.  Including the four-term survivor, the genuine active null
+families are
+\begin{align}
+ P_{\rm lin}&=T+aZ+bW,&1+2ab&=0,                 \label{eq:null-linear}\\
+ P_{\rm sh}&=Z+aWT-\frac12a^2W^3,                \label{eq:null-shear}\\
+ P_{\rm pr}&=ZT+aZ^2+\frac1{2a^2}WT
+                    -\frac1{4a^3}W^2,\quad a\neq0. \label{eq:null-product}
+\end{align}
+The saturated lexicographic bases are triangular.  With the first
+coefficient normalized to one, their nontrivial equations are respectively
+\[
+ 1+2c_1c_2,\qquad
+ 2c_2+c_1^2,\qquad
+ 2c_1^2c_2-1,\quad c_3+c_1c_2^2.
+\]
+These formulas both classify the coefficient schemes and make the
+survivors easy to interpret.
+
+\subsection{All-order interpretation of the survivors}
+
+The family \eqref{eq:null-linear} is an isotropic linear form.  A complex
+orthogonal change takes it to a scalar multiple of \(Z\).  A fixed
+polynomial \(Q\) has bounded \(W\)-degree, so
+\(\E(QZ^m)=0\) for all sufficiently large \(m\).
+
+For \eqref{eq:null-shear}, define
+\[
+ D=W\partial_T-T\partial_Z.
+\]
+Then \(D(2WZ+T^2)=0\), \(D(W)=0\), and
+\[
+ P_{\rm sh}=\exp(-aWD)(Z).
+\]
+Gaussian integration by parts gives \(\E(DF)=0\) for every polynomial
+\(F\), and therefore also \(\E(WDF)=0\).  Since \(WD\) is locally nilpotent,
+\(\phi=\exp(-aWD)\) is a polynomial automorphism preserving the Gaussian
+functional.  For fixed \(Q\),
+\[
+ \E(QP_{\rm sh}^m)
+ =\E\bigl(\phi^{-1}(Q)Z^m\bigr),
+\]
+which vanishes eventually by the same bounded-weight argument.
+
+Finally,
+\begin{equation}\label{eq:product-factorization}
+ P_{\rm pr}
+ =
+ \left(Z+\frac1{2a^2}W\right)
+ \left(T+aZ-\frac1{2a}W\right).
+\end{equation}
+The second factor is isotropic and orthogonal to the first.  After an
+orthogonal Witt change, \eqref{eq:product-factorization} is a scalar
+multiple of \(TZ\).  Every \(P_{\rm pr}^m\) then has isotropic weight \(m\),
+which a fixed \(Q\) can balance only finitely often.  All three families
+satisfy GMC.  Together with the strictly one-sided supports, this proves
+Theorem~\ref{thm:sparse}.
+
+\subsection{Reproducibility and scope}
+
+The enumeration is implemented with exact integer Wick coefficients and
+Singular's rational Groebner bases.  The certificate script enumerates
+supports rather than reading a stored survivor list, repeats every
+saturation over \(\mathbb Q\), verifies the three displayed triangular
+bases, and checks \eqref{eq:product-factorization}.  It is run from the
+repository root by
+\begin{verbatim}
+.venv/bin/python scripts/verify_three_real_gmc_sparse_pareto.py
+\end{verbatim}
+The complete replay takes several minutes on a laptop.  Modular runs are
+used only as optional discovery filters and are not part of the exact
+certificate.
+
 \section{What the argument says}
 
 The proof gives a stronger structural statement than the mixed-moment
@@ -354,11 +552,13 @@ technical gap: counterexamples already occur in dimension three.
 \section{Formal verification}
 
 A companion Lean~4 development has been prepared as supplementary material
-for this paper.  It mechanically checks the factorial-quotient divisibility,
-prime-dilated factorial isolation, commutation of Frobenius with angular
-constant-term extraction, the final prime contradiction, and the eventual
-vanishing argument for both signs of the rotational support.  The
-development contains no \texttt{sorry} declarations.
+for the two-variable theorem.  It mechanically checks the
+factorial-quotient divisibility, prime-dilated factorial isolation,
+commutation of Frobenius with angular constant-term extraction, the final
+prime contradiction, and the eventual vanishing argument for both signs of
+the rotational support.  The development contains no \texttt{sorry}
+declarations.  The computer-assisted sparse theorem is certified separately
+by the exact rational script described in Section~\ref{sec:sparse}.
 
 The formalization exposes three external inputs as named axioms: the
 Duistermaat--van der Kallen constant-term theorem, rational supporting-face
@@ -374,8 +574,10 @@ process, including for conjecture formation, symbolic experimentation,
 proof exploration, consistency checks, and preparation of this manuscript.
 The lower-face and prime-isolation argument emerged from that collaborative
 process.  The author reviewed the mathematical claims and assumes full
-responsibility for the contents.  Computational experiments motivated the
-proof but are not logically required for it.
+responsibility for the contents.  The proof of Theorem~\ref{thm:main} is
+noncomputational.  Theorem~\ref{thm:sparse} uses the exhaustive exact
+coefficient-scheme calculation stated in the text and supplied with the
+paper.
 
 \bibliographystyle{plain}
 \bibliography{references}

@@ -1,13 +1,16 @@
 # Plane Jacobian constraint program
 
-This directory contains the audit and local reproduction of the current plane
-degree frontier.  It is separate from the repository's three-dimensional
-counterexample construction.
+This directory contains two complementary JC(2) programmes: the audit and
+local reproduction of the current plane degree frontier, and a structural
+programme based on the canonical finite normalization of an arbitrary
+hypothetical counterexample.  It is separate from the repository's
+three-dimensional counterexample construction.
 
 | Document | Purpose |
 | --- | --- |
 | [PROVENANCE.md](PROVENANCE.md) | Exact Zenodo/arXiv versions, files, licenses, and hashes |
 | [DEGREE_FRONTIER_125.md](DEGREE_FRONTIER_125.md) | Theorem scope, reduction chain, and historical frontier |
+| [FINITE_NORMALIZATION_PROGRAM.md](FINITE_NORMALIZATION_PROGRAM.md) | Unconditional surface finite-flatness theorem; canonical branch/missing-boundary cover; arbitrary-puncture rigidity, bounded Pareto signature atlas, residual-different identity, and log-surface programme |
 | [PAIR_72_108_REPRODUCTION.md](PAIR_72_108_REPRODUCTION.md) | Newton-to-coefficient reconstruction, exact ideals, certificates, and division audit |
 | [WEIGHTED_WRONSKIAN_FIRST_BLOCK.md](WEIGHTED_WRONSKIAN_FIRST_BLOCK.md) | Hyperelliptic/de Rham interpretation and residual-scaling quotient of the audited first block |
 | [SUPERELLIPTIC_DERHAM_ENGINE.md](SUPERELLIPTIC_DERHAM_ENGINE.md) | Reusable character-wise Hermite reduction, exact implementation, and frontier experiment design |
@@ -30,6 +33,12 @@ Current scoped conclusion:
 > Externally reduced and locally reproduced: subject to the exact published
 > minimal/standard normal-form reduction, a hypothetical plane Keller
 > counterexample has larger coordinate degree at least 125.
+>
+> Independently and unconditionally: the canonical finite normalization of
+> every plane Keller map is a finite free cover of \(\mathbb A^2\).  Its
+> missing-boundary primes freely generate the normalization's class group.
 
 This does not prove JC(2), require both degrees to be at least 125, or show
-that any candidate at or beyond 125 exists.
+that any candidate at or beyond 125 exists.  The finite-flatness theorem
+removes the module-theoretic obstruction but leaves the surface boundary
+classification open.

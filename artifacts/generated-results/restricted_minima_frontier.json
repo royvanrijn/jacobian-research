@@ -1,13 +1,36 @@
 {
   "format": "restricted-jacobian-minima-frontier-v1",
   "field": "characteristic zero",
+  "primary_target": {
+    "statement": "every cubic-homogeneous Keller map F=X+H with (JH)^3=0 is invertible",
+    "status": "open for arbitrary cubic-homogeneous H",
+    "role": "primary restricted-minima theorem target and first meaningful lower-bound attack",
+    "positive_consequence": "nu_cub>=4",
+    "scope_exclusions": [
+      "the known power-linear theorem does not settle this class",
+      "the known symmetric-Jacobian theorem does not settle this class",
+      "the false uniform inverse-degree-nine bound is not part of the target"
+    ],
+    "circuit_search_role": "secondary upper-bound track that changes the polynomial computational circuit before BCW homogenization"
+  },
   "definitions": {
+    "n_cub": "minimum ambient dimension over noninjective maps F=X+H with H cubic homogeneous and det JF=1",
     "r_cub": "minimum generic rank(JH) over noninjective maps F=X+H with H cubic homogeneous and det JF=1",
     "nu_cub": "minimum polynomial-matrix nilpotency index nu with (JH)^nu=0 over the same full cubic-homogeneous class",
+    "rho_cot": "minimum generic Hessian rank among quartic cotangent potentials y^t H(x) obtained from the same noninjective cubic-homogeneous class",
+    "n_Dru": "minimum ambient dimension over noninjective Druzkowski maps X+(AX)^{*3}",
     "rho_HN4": "minimum generic Hessian rank among homogeneous quartic Hessian-nilpotent Vanishing counterexamples",
     "n_HN4": "minimum ambient dimension among homogeneous quartic Hessian-nilpotent Vanishing counterexamples"
   },
   "rigorous_frontiers": {
+    "n_cub": {
+      "lower_bound": 5,
+      "upper_bound": 21,
+      "exact_value": null,
+      "status": "open interval",
+      "lower_bound_reason": "cubic-homogeneous Keller maps are known invertible through ambient dimension four",
+      "upper_bound_reason": "the certified essential cubic-homogeneous collision uses 21 variables"
+    },
     "r_cub": {
       "lower_bound": 3,
       "upper_bound": 17,
@@ -23,6 +46,22 @@
       "status": "open interval",
       "lower_bound_reason": "index at most two gives a quasi-translation and hence an inverse; no full-class index-three theorem is recorded",
       "upper_bound_reason": "the certified 22-variable circuit-level collision has exact polynomial nilpotency index 18"
+    },
+    "rho_cot": {
+      "lower_bound": 6,
+      "upper_bound": 37,
+      "exact_value": null,
+      "status": "open interval",
+      "lower_bound_reason": "rank Hess(y^t H)=2 rank(JH)+rank(K^t A K), so the rank-two cubic theorem gives a lower bound of 6",
+      "upper_bound_reason": "the certified 44-variable cotangent HN quartic has exact generic Hessian rank 37"
+    },
+    "n_Dru": {
+      "lower_bound": 6,
+      "upper_bound": 451,
+      "exact_value": null,
+      "status": "open interval",
+      "lower_bound_reason": "Druzkowski's rank-or-corank-below-three theorem makes every Druzkowski Keller map through dimension five invertible",
+      "upper_bound_reason": "the certified stable normal-form route gives a 451-variable Druzkowski collision"
     },
     "rho_HN4": {
       "lower_bound": 3,
@@ -153,9 +192,12 @@
     "symmetric_jacobian_index_three": "https://arxiv.org/abs/math/0511214",
     "index_three_degree_bound_counterexample": "https://eudml.org/doc/262620",
     "HN_vanishing_equivalence": "https://arxiv.org/abs/math/0409534",
-    "symmetric_low_dimension": "https://doi.org/10.1016/j.jpaa.2004.08.030"
+    "symmetric_low_dimension": "https://doi.org/10.1016/j.jpaa.2004.08.030",
+    "cubic_homogeneous_dimension_four": "https://arxiv.org/abs/1803.05551",
+    "Druzkowski_rank_or_corank": "https://doi.org/10.1016/0022-4049(93)90140-O"
   },
   "search_policy": {
+    "status": "frozen reproducible frontier; no broad search is active",
     "script": "scripts/search_restricted_bcw_circuits.py",
     "required_change": "alter the polynomial BCW gate circuit before homogenization",
     "partial_score": "rank and complete sampled power-rank tuple of J(F-id)",
