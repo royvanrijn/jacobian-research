@@ -1,4 +1,5 @@
 import Mathlib.Algebra.CharP.Lemmas
+import Mathlib.Algebra.CharP.Algebra
 import Mathlib.Algebra.Polynomial.Laurent
 
 /-!
@@ -22,15 +23,13 @@ theorem constantTerm_frobenius
     constantTerm (f ^ p) = constantTerm f ^ p := by
   classical
   letI : Fact p.Prime := ⟨hp⟩
+  letI : CharP (LaurentPolynomial R) p :=
+    charP_of_injective_ringHom (p := p) (f := LaurentPolynomial.C) (by
+      intro x y h
+      simpa using congrArg (fun g : LaurentPolynomial R ↦ g.coeff 0) h)
   rw [show f = ∑ k ∈ f.coeff.support, AddMonoidAlgebra.single k (f.coeff k) by
     simpa [Finsupp.sum] using (AddMonoidAlgebra.sum_coeff_single f).symm]
   rw [sum_pow_char]
-  simp only [constantTerm, AddMonoidAlgebra.single_pow,
-    AddMonoidAlgebra.coeff_sum, Finsupp.single_apply]
-  rw [Finset.sum_eq_single 0]
-  · simp
-  · intro b hb hb0
-    simp [hb0, hp.ne_zero]
-  · simp
+  simp [constantTerm, AddMonoidAlgebra.single_pow, hp.ne_zero]
 
 end GMC2
