@@ -183,6 +183,8 @@ has been found.
 
 The compiler and one-record-per-chart artifacts are
 [`verify_two_real_gmc_five_weight.py`](../scripts/verify_two_real_gmc_five_weight.py),
+with the proved rational frontier replayed independently by
+[`verify_two_real_gmc_five_weight_frontier.py`](../scripts/verify_two_real_gmc_five_weight_frontier.py),
 [`two_real_gmc_five_weight_systems.json`](../artifacts/generated-results/two_real_gmc_five_weight_systems.json),
 and
 [`two_real_gmc_five_weight.json`](../artifacts/generated-results/two_real_gmc_five_weight.json).

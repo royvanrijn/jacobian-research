@@ -666,6 +666,7 @@ charts and the cubic invariant-null-cone formulation, are in
 .venv/bin/python scripts/verify_two_real_gmc_symmetric_chart.py
 .venv/bin/python scripts/verify_two_real_gmc_remaining_four_weight.py
 .venv/bin/python scripts/verify_two_real_gmc_five_weight.py --discovery-only
+.venv/bin/python scripts/verify_two_real_gmc_five_weight_frontier.py
 ```
 
 The script checks (4.3), checks (5.2) through order seven for a nonlinear
