@@ -7,8 +7,9 @@ rank-two symplectic consequences.  In generic degree `N>=4`, the coarse
 decorated normalization already gives an `(N-3)`-dimensional family of stable
 classes.  Adding one affine root sheet generically recovers the seed exactly.
 The same parameters yield four-real-Gaussian witnesses with an optimal
-`(N-3)`-moment algebraic fingerprint and inequivalent filtered Weyl
-endomorphisms.  The nonsurjective seed locus has
+`(N-3)`-moment algebraic fingerprint; in those moment coordinates, the full
+affine nonsurjective partition-lattice geometry is preserved.  They also
+yield inequivalent filtered Weyl endomorphisms.  The nonsurjective seed locus has
 dimension `floor(N/2)-1`: quartics are generically exceptional, whereas
 generic seeds of every degree `N>=5` are surjective.
 The [exact degree-spectrum corollary](verified/GEOMETRIC_DEGREE_SPECTRUM.md)
@@ -87,6 +88,12 @@ large certified good fields.  It gives the split density `1/N!`, irreducible
 density `1/N`, the random-permutation fixed-point law and its effective
 `Poisson(1)` limit, plus a deterministic generator for modular Keller-fiber
 witnesses and small rational lifts carrying the selected modular fingerprint.
+Combining this with the real chambers by constructive weak approximation
+gives the
+[adelic complete-fiber theorem](verified/ADELIC_FIBER_ENGINEERING.md): every
+degree and signature occurs as a complete fiber field of the explicit `F_N`,
+and finitely many additional unramified splitting conditions may be imposed
+simultaneously at sufficiently large good primes.
 
 The primary dependency chain is:
 
@@ -97,7 +104,7 @@ The primary dependency chain is:
 5. `B1` — complete canonical boundary exhaustion.
 6. `P1` — cancellation reconstruction residue and parameter faithfulness.
 7. `M1` — finite degreewise stable multiplicity.
-8. `D1` — decorated-normalization moduli of dimension `N-3`.
+8. `D1` — marked Hessian-divisor moduli of dimension `N-3`.
 9. `F2` — generic affine-mark faithfulness.
 10. `H1` — internal Hurwitz--LL compactification theorem.
 11. `R1`, `R2` — all-degree rank-two descent and parameter faithfulness.
@@ -177,8 +184,9 @@ normalization and the affine sheet.
 
 Other questions—arithmetic Galois theory, controlled-boundary suspension
 classification, wider quantization, coefficient-scheme gluing,
-quadratic--cubic flexibility, the plane degree frontier, and Gaussian or
-Image/Vanishing consequences—are retained as parked side programmes in
+quadratic--cubic flexibility, the plane degree frontier, Gaussian-equivalence
+and three-real-variable descent, and further Image/Vanishing consequences—are
+retained as parked side programmes in
 [STATUS.md](STATUS.md).
 
 ## Provenance

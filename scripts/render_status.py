@@ -20,8 +20,8 @@ KINDS = {"theorem", "corollary", "example", "reproduction", "open_problem"}
 STATES = {"proved", "partial", "open", "parked", "archived"}
 REVIEWS = {"none", "independent-replay", "formalized", "external-reviewed"}
 PRIORITIES = {"core", "derived", "reference", "primary", "parked"}
-CORE_ORDER = ["F1", "W1", "S1", "C1", "B1", "P1", "M1", "D1", "F2", "H1", "H2", "H3", "R1", "R2"]
-ACTIVE_OPEN = {"OP-CR", "OP-LR"}
+CORE_ORDER = ["F1", "W1", "S1", "C1", "B1", "P1", "M1", "D1", "F2", "H1", "H2", "H3", "R1", "R2", "IA1"]
+ACTIVE_OPEN = {"OP-CR", "OP-LR", "OP-RITT"}
 
 
 def load_index() -> dict:

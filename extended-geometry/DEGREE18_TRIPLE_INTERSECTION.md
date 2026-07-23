@@ -417,13 +417,119 @@ This calculation includes the class
 `epsilon_1 epsilon_2 epsilon_3`; there is no hidden conductor relation at the
 first order where genuinely triple multiplication occurs.
 
+### 7.1 A relative transverse-jet refinement
+
+The constant-rank route is better served by jets relative to the ordered-root
+stratum than by the absolute jets in (19).  Write `c_d` for the normalized
+coefficient of `W^d`.  At the witness (1), the restrictions of `c_2,c_3` to
+`E_(6,6,6)` have independent differentials.  In the tangent basis obtained by
+solving `dPhi=0` for the first root coordinate, their exact Jacobian is
+
+\[
+\begin{pmatrix}
+-14&-11/4\\
+56/3&121/24
+\end{pmatrix},
+\qquad \det=-77/4.                              \tag{22}
+\]
+
+After shrinking the ordered-root chart, `c_2,c_3` are therefore etale base
+coordinates.  Cut all three normalization sheets by the same equations
+`c_2=c_2(M)` and `c_3=c_3(M)`, and truncate the resulting four transverse
+variables in degree four.  The exact calculation then gives
+
+\[
+\begin{array}{c|c|c|c|c}
+\text{jet order}&\dim B_i&\dim A&\dim\mathfrak p_i&
+\dim(\text{numerator})/\dim(\text{denominator})\\ \hline
+1&5&7&2&3/3\\
+2&15&28&13&19/19\\
+3&35&77&42&61/61.
+\end{array}                                                     \tag{23}
+\]
+
+Thus the relative transverse defect also vanishes through the cubic socle
+degree.  Its successive algebra dimensions are `1,6,21,49`, exactly the
+coefficients through degree three of the base-sliced Cech prediction
+
+\[
+\frac{3}{(1-z)^4}
+-\frac{3(1+z)^2}{1-z}
++(1+z)^3.                                         \tag{24}
+\]
+
+This relative calculation supports a clean generic-open argument.  Over the
+ordered-root coordinate ring, the degree-at-most-three branch jets are finite
+free after localizing the branch-coordinate Jacobians.  The generated
+algebra, its three branch kernels, every sum and intersection, and the final
+defect are kernels, images, and cokernels of finite matrices.  Localizing at
+the nonzero witness minors makes all these ranks constant.  Formation of the
+finite modules then commutes with residue-field base change, and (23) makes
+the universal *truncated* defect zero on a nonempty open.
+
+There is still one logically separate comparison to prove.  Let
+`mathcal H^{<=3}` denote the defect formed after relative transverse
+truncation.  One needs, at the geometric generic point, an injection
+
+\[
+\mathcal H\longrightarrow \mathcal H^{\le3},       \tag{25}
+\]
+
+or an equivalent strictness statement for the transverse filtration on the
+Cech complex.  Neither (18) nor the relation `mathfrak n^4=0` in the triple
+quotient alone implies (25): quotienting can enlarge intersections and can
+also enlarge the denominator in (14).  Sufficient replacements for (25)
+include strictness of the filtered kernels and images through degree three,
+vanishing of the relevant Rees-homology torsion, or the corresponding
+Tor-independence statements for the intersection presentations.  Once this
+comparison is established, (18), `mathfrak n^4=0`, and (23) give
+`mathcal H=0` immediately.
+
+The Tor formulation is explicit.  Put
+
+\[
+C_{12}=A/(\mathfrak p_1\cap\mathfrak p_2),\qquad
+D_{12}=A/(\mathfrak p_1+\mathfrak p_2).
+\]
+
+Tensor the two-branch Mayer--Vietoris sequence
+
+\[
+0\longrightarrow C_{12}\longrightarrow B_1\oplus B_2
+\longrightarrow D_{12}\longrightarrow0
+\]
+
+with `B_3`.  The kernel of
+
+\[
+C_{12}\otimes_A B_3\longrightarrow
+(B_1\otimes_A B_3)\oplus(B_2\otimes_A B_3)
+\]
+
+is exactly (14).  The Tor long exact sequence therefore gives
+
+\[
+\boxed{
+\mathcal H\simeq\operatorname{coker}\!\left(
+\operatorname{Tor}_1^A(B_1,B_3)\oplus
+\operatorname{Tor}_1^A(B_2,B_3)
+\longrightarrow
+\operatorname{Tor}_1^A(D_{12},B_3)
+\right).}                                             \tag{26}
+\]
+
+Thus one may replace the filtered comparison (25) by generic surjectivity of
+the Tor map in (26).  This pinpoints which Tor-independence statement is
+needed; asking for all pairwise Tor groups to vanish would be unnecessarily
+strong and is incompatible with the nontransverse pairwise intersections.
+
 The remaining proof obligation is now narrow.  One must show that formation
-of (14) commutes with a transverse base change to `E_(6,6,6)`, or directly
-prove that the two collision-stratum parameters are regular on the relevant
-kernel and cokernel modules.  Then (18), the transverse nilpotency bound, and
-the order-three vanishing in (19) imply `mathcal H=0` by Nakayama.  Without
-that base-change lemma, (19)--(21) are exact finite-jet evidence rather than
-an all-order completed-ring theorem.
+of (14) is strict for the relative transverse filtration, or prove the
+equivalent generic Tor-surjectivity in (26).  Generic freeness and the
+constant-rank minors handle specialization from the ordered-root base to the
+rational witness for the finite truncation; they do not by themselves compare
+the completed defect with that truncation.  Without (25), (19)--(24) are exact
+finite-jet evidence rather than an all-order completed-ring theorem.
 
 Run the exploratory calculation with
 
@@ -431,6 +537,9 @@ Run the exploratory calculation with
 python scripts/explore_degree18_conductor_equalizer.py --order 1
 python scripts/explore_degree18_conductor_equalizer.py --order 2
 python scripts/explore_degree18_conductor_equalizer.py --order 3
+python scripts/explore_degree18_conductor_equalizer.py --transverse --order 1
+python scripts/explore_degree18_conductor_equalizer.py --transverse --order 2
+python scripts/explore_degree18_conductor_equalizer.py --transverse --order 3
 ```
 
 The cubic calculation is intentionally not part of the default verification

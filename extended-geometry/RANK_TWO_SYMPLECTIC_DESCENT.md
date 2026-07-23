@@ -5,7 +5,7 @@ every degree `N>=5`.  The weighted Laurent theorem on the two adapted charts
 is the canonical source.  The degree-five and degree-six calculations are
 generated specializations retained as readable formulas and independent
 regressions; they are not separate theorem sources.  Stable moduli are
-transferred by the coarse decorated-normalization map, not by full-cover
+transferred by the marked Hessian-divisor map, not by full-cover
 faithfulness.
 These are internal repository theorems with exact certificates and no
 recorded external specialist review.
@@ -156,8 +156,8 @@ replacement chart `kappa=-1`, it lies on
 
 and is canceled by an `XQ` shear.
 
-On the ordinary boundary-clean seed open, the
-[coarse decorated-normalization map](DECORATED_NORMALIZATION_INVARIANT.md)
+On the Hessian-clean seed open, the
+[marked Hessian-divisor map](DECORATED_NORMALIZATION_INVARIANT.md)
 is generically etale of exact degree `N-2` onto the normalization of its
 image, and that image has the full source dimension `N-3`.  Because rank-two
 completion is an identity stabilization up to polynomial left--right
@@ -284,8 +284,8 @@ so the completing shear becomes
 \]
 
 The published theorem is therefore the generic fixed-`gamma` line inside this
-surface.  On the ordinary boundary-clean open, the coarse decorated-
-normalization map is generically etale of exact degree three and completion
+surface.  On the Hessian-clean open, the marked Hessian-divisor map is
+generically etale of exact degree three and completion
 transfers its full two-dimensional image to stable moduli of exact symplectic
 maps of `A^4`.  Thus degree
 five is stronger than the fixed-`gamma` target `N-4=1`: it gives `N-3=2`
@@ -605,12 +605,12 @@ polynomially left--right inequivalent degree-six exact symplectic Keller maps
 The exact certificate is
 [`verify_degree_six_fixed_gamma_descent.py`](../scripts/verify_degree_six_fixed_gamma_descent.py).
 
-The same witness proves that the marked ordinary boundary-clean open in the full
-\((\kappa,\sigma,\tau)\)-space is nonempty.  The coarse decorated map is
+The same witness proves that the affine-marked Hessian-clean open in the full
+\((\kappa,\sigma,\tau)\)-space is nonempty.  The marked Hessian-divisor map is
 generically etale of exact degree four onto a three-dimensional image, while
 the generic-chart completion covers a dense open.  Hence degree six also has
 a three-dimensional family of pairwise stably inequivalent exact symplectic
-maps in \(\mathbb A^4\).  The dimension statement uses only the coarse map;
+maps in \(\mathbb A^4\).  The dimension statement uses only the Hessian-divisor map;
 pairwise parameter separation uses its affine-marked refinement.
 
 The full-space and exceptional-divisor certificates are
@@ -734,7 +734,7 @@ nonzero \(\epsilon\).  The bad root, critical-discriminant, and boundary
 incidence conditions remove proper closed subsets; at \(\epsilon=0\), the
 critical discriminant is \(216\).
 
-The coarse decorated-normalization map has finite fibers on this open, so its
+The marked Hessian-divisor map has finite fibers on this open, so its
 restriction to the fixed slice has image dimension \(N-4\).  On the full seed
 open it is generically etale of exact degree \(N-2\) and has image dimension
 \(N-3\).  Since completion is polynomially left--right equivalent to identity
@@ -771,7 +771,7 @@ independent fixed-degree replay or regression at `N>=5`:
    relevant chart; an extra seed condition signals a failed replay.
 6. Repeat after imposing `kappa=kappa_0`.  Compare the rank of the shear
    response and the dimension of the resulting locus with `N-4`.
-7. Transfer stable separation through the coarse decorated-normalization map;
+7. Transfer stable separation through the marked Hessian-divisor map;
    its exact generic degree is `N-2`, so parameter recovery is unnecessary.
 
 The degree-five result warns against assuming that fixed `gamma` contributes

@@ -192,7 +192,7 @@ For smaller good `q`, direct enumeration is finite and the trivial bound
 equivariant embedding or cohomology calculation can make them dramatically
 smaller.
 
-### Corollary FF2: prescribed factorization and residue-degree types
+### Prescribed factorization and residue-degree types
 
 Let
 

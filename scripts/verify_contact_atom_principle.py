@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Exact combinatorial and Mason certificates for primitive contact orders."""
+"""Exact contact-atom certificates with optional legacy Mason regressions."""
 
 import sys
 from math import lcm
@@ -67,10 +67,11 @@ for threshold in range(2, 8):
             for partition in atomic_partitions
         )
 
-# In the actual reconstruction problem r=2.  The atoms are {2,3}, and the
-# Mason defect for any two degree-n types is exactly half their total excess
-# above double contact.  It is positive for every distinct pair because the
-# unique zero-excess partition is the all-double type.
+# Optional legacy comparison for r=2.  The atoms are {2,3}, and the Mason
+# defect for any two degree-n types is exactly half their total excess above
+# double contact.  This is a regression for the old distinct-type proof, not
+# the uniqueness input; verify_unique_omitted_value.py covers all pairs and
+# closes the all-double equality case.
 assert contact_semigroup_atoms(2) == (2, 3)
 for degree in range(3, 25):
     partitions = tuple(threshold_partitions(degree, 2))
@@ -165,7 +166,7 @@ print("PASS: the atoms of {m>=r} are exactly r,...,2r-1")
 print("PASS: every allowed contact partition is a collision of atom partitions")
 print("PASS: atomic partitions count the primitive threshold components")
 print("PASS: the r=2 atoms are precisely the double and triple contacts")
-print("PASS: Mason separates every pair of distinct full-contact types")
+print("PASS: optional Mason regression separates distinct r=2 contact types")
 print("PASS: thresholds r>=3 satisfy the stronger bounded-difference abc bound")
 print("PASS: component counts and dominant codimensions are quasipolynomial")
 print("PASS: nonsurjective dimension floor(n/2)-1 and phase transition at n=4")

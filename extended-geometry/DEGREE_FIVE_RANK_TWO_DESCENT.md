@@ -267,7 +267,7 @@ Its role is an explicit worked example for the original degree-five line, not
 a separately maintained theorem source.  The
 [all-degree theorem](RANK_TWO_SYMPLECTIC_DESCENT.md) proves
 completion for every normalized admissible seed in every degree `N>=5`, on
-both adapted charts.  Its coarse decorated-normalization corollary transfers
+both adapted charts.  Its marked Hessian-divisor corollary transfers
 `N-3` stable dimensions to `A^4` with generic degree `N-2`; in degree five
 this gives the complete two-dimensional seed surface, with the present line
 as the `kappa=-9` specialization.

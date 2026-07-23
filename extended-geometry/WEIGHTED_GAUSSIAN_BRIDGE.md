@@ -284,7 +284,7 @@ The reciprocal orientation in (6.2) is forced already by the linear example
 `h(z)=1+az`, for which `g(u)=u/(1-au)` and
 `eta(z)=z/(1+az)`.
 
-### Theorem 6.1 — injective mixed-moment fingerprint
+### Theorem 6.1 — infinite-sequence injectivity
 
 On the set of polynomials `h` with `h(0)=1`, the map
 
@@ -299,18 +299,10 @@ complete sequence determines `g` by (6.1), formal series reversion determines
 The same coefficientwise reconstruction remains valid for formal `h`, though
 then the bridge generally produces formal rather than polynomial `Phi`.
 
-If `h` has degree at most `d`, only the finite list
-
-\[
- M_1,M_2,\ldots,M_{d+1}                              \tag{6.4}
-\]
-
-is needed: these moments determine `g mod u^(d+2)`, hence
-`eta mod z^(d+2)` and `z/eta mod z^(d+1)`, which contains every coefficient
-of `h`.  Thus distinct polynomials `1+lambda H` have distinct mixed-moment
-sequences.  For fixed nonzero `lambda`, this recovers `H`; if `lambda` is also
-allowed to vary, the moments recover the product `lambda H`, not its two
-factors separately without a normalization on `H`.  On the repository's
+For `h=1+lambda H`, the complete sequence recovers the product `lambda H`.
+For fixed nonzero `lambda`, this recovers `H`; if `lambda` is also allowed to
+vary, it does not recover the two factors separately without a normalization
+on `H`.  On the repository's
 normalized admissible seed locus, however, `H'(1)=-1`, and therefore
 
 \[
@@ -321,12 +313,22 @@ normalized admissible seed locus, however, `H'(1)=-1`, and therefore
 Thus the map `(H,lambda) -> (M_m)_(m>=0)` is injective on normalized seeds
 with `lambda!=0`.
 
+### Theorem 6.2 — finite and optimal moment coordinates
+
+If `h` has degree at most `d`, only the finite list
+
+\[
+ M_1,M_2,\ldots,M_{d+1}                              \tag{6.4}
+\]
+
+is needed: these moments determine `g mod u^(d+2)`, hence
+`eta mod z^(d+2)` and `z/eta mod z^(d+1)`, which contains every coefficient
+of `h`.
+
 The bound (6.4) treats all coefficients of an arbitrary polynomial `h` as
 independent.  It is not minimal on the normalized seed slice.  The endpoint
 conditions remove exactly two more coefficients, and the moment map itself
 is triangular.
-
-### Theorem 6.2 — optimal moment coordinates on the normalized seed space
 
 Fix `N>=4` and `lambda!=0`, and write
 

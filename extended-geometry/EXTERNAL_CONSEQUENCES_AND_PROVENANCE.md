@@ -441,7 +441,7 @@ arbitrary JC(2) counterexamples.
    witnesses with the new weighted-seed families.  The mixed-moment sequence
    is already an injective seed fingerprint; determine which functions of it
    descend to invariants for natural Gaussian-equivalence groups and whether
-   the seed's decorated-normalization moduli remain visible after quotienting.
+   the seed's marked Hessian-divisor moduli remain visible after quotienting.
 8. **Hurwitz/LL comparison and boundary intersection theory.**  Full-cover generator rigidity
    now holds for every normalized admissible seed with `ord_0(H)>=2`, including
    higher zero multiplicity and arbitrary extra-root collisions.  The

@@ -204,6 +204,33 @@ Thus multiplicity factors over independent primitive collision clusters:
  I=\prod_{\rho=1}^t\operatorname{length}Z_1=2^t.                \tag{9}
 \]
 
+### Weighted interval series
+
+As a corollary, apply the transverse length `2^t` to the unweighted interval
+series (12) of the [enumerative skeleton](NONSURJECTIVE_ENUMERATIVE_GEOMETRY.md).
+In the notation of that series, `y` records the component-index gap `k`
+(equal to the transfer-block count called `t` above), while the exponent of
+the series variable `t` records the dimension of the top contact stratum
+plus one.  Retaining the labels that mark these as refinements of (12), the
+scheme-weighted refinement is
+
+\[
+ \boxed{
+ \sum_{N,k,i}2^k x^N t^{\dim\mathcal E_{\nu_i}+1}y^k
+ ={1\over(1-tx^2)(1-tx^3)}
+   {2ytx^6\over1-2ytx^6}.}                                    \tag{12a}
+\]
+
+More finely, (7) replaces the scalar weight `2^k` by the tangent-cone
+Hilbert polynomial `(1+z)^k`, giving
+
+\[
+ \boxed{
+ \sum_{N,k,i}(1+z)^k x^N t^{\dim\mathcal E_{\nu_i}+1}y^k
+ ={1\over(1-tx^2)(1-tx^3)}
+   {y(1+z)tx^6\over1-y(1+z)tx^6}.}                            \tag{12b}
+\]
+
 This is a generic statement on the exact minimal stratum.  If primitive
 sixfold clusters collide with one another, the relevant higher transfer
 block is not literally a tensor product of dual numbers; its multiplication

@@ -142,6 +142,54 @@ assert len(self_records) == 10
 assert len(records) == 46
 assert {record.transverse_intersection_length for record in records} == {2, 4, 8}
 
+# The weighted interval series belongs to this scheme-theoretic checker.
+# It is obtained from the enumerative interval series by decorating a gap-k
+# minimal intersection with its length 2^k, or more finely with its Hilbert
+# polynomial (1+z)^k.
+x, t, y, z = sp.symbols("x t y z")
+SERIES_LIMIT = 31
+weighted_interval_series = sp.series(
+    1
+    / ((1 - t * x**2) * (1 - t * x**3))
+    * (2 * y * t * x**6 / (1 - 2 * y * t * x**6)),
+    x,
+    0,
+    SERIES_LIMIT,
+).removeO().expand()
+hilbert_interval_series = sp.series(
+    1
+    / ((1 - t * x**2) * (1 - t * x**3))
+    * (y * (1 + z) * t * x**6 / (1 - y * (1 + z) * t * x**6)),
+    x,
+    0,
+    SERIES_LIMIT,
+).removeO().expand()
+for degree in range(3, SERIES_LIMIT):
+    components = atomic_components(degree)
+    for left_index, left in enumerate(components):
+        for right_index in range(left_index + 1, len(components)):
+            right = components[right_index]
+            gap = right_index - left_index
+            top_dimension = left.a + left.b - 2 * gap - 1
+            direct_count = sum(
+                1
+                for start, component in enumerate(components)
+                if start + gap < len(components)
+                and component.a + component.b - 2 * gap - 1 == top_dimension
+            )
+            weighted_coefficient = (
+                weighted_interval_series.coeff(x, degree)
+                .coeff(y, gap)
+                .coeff(t, top_dimension + 1)
+            )
+            assert weighted_coefficient == direct_count * 2**gap
+            hilbert_coefficient = (
+                hilbert_interval_series.coeff(x, degree)
+                .coeff(y, gap)
+                .coeff(t, top_dimension + 1)
+            )
+            assert sp.expand(hilbert_coefficient - direct_count * (1 + z) ** gap) == 0
+
 
 def main() -> None:
     parser = argparse.ArgumentParser()
@@ -167,6 +215,7 @@ def main() -> None:
     print("PASS: every minimal sixfold transfer contributes k[e]/(e^2) of length two")
     print("PASS: all 36 component pairs have I=2^t and binomial tangent cone")
     print("PASS: the 10 first normalization self-pairs have two independent clusters and I=4")
+    print("PASS: weighted interval and tangent-cone series follow from the E6 weights")
 
 
 if __name__ == "__main__":

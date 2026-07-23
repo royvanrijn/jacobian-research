@@ -263,6 +263,71 @@ def find_pencil_factorization_witness(
     return None
 
 
+def constructive_weak_approximation_lift(residue_data, intervals):
+    """Lift finite-prime residue vectors into a rational real box.
+
+    ``residue_data`` maps distinct rational primes to equal-length residue
+    vectors.  ``intervals`` is the corresponding sequence of open real
+    intervals with rational endpoints.  The returned vector has one common
+    denominator ``D`` satisfying ``D == 1`` modulo every selected prime.
+
+    This is the denominator-one CRT construction used by the adelic
+    complete-fiber theorem.  It is deterministic and does not use numerical
+    approximation.
+    """
+    intervals = tuple((Fraction(left), Fraction(right))
+                      for left, right in intervals)
+    if not intervals or any(left >= right for left, right in intervals):
+        raise ValueError("intervals must be a nonempty rational open box")
+
+    primes = tuple(int(prime) for prime in residue_data)
+    if not primes:
+        return tuple((left + right) / 2 for left, right in intervals)
+    if len(set(primes)) != len(primes) or any(not sp.isprime(p) for p in primes):
+        raise ValueError("residue_data keys must be distinct rational primes")
+
+    dimension = len(intervals)
+    vectors = {int(prime): tuple(int(value) for value in values)
+               for prime, values in residue_data.items()}
+    if any(len(vectors[prime]) != dimension for prime in primes):
+        raise ValueError("every residue vector must match the box dimension")
+
+    modulus = math.prod(primes)
+    residues = []
+    for coordinate in range(dimension):
+        residue = sum(
+            (vectors[prime][coordinate] % prime)
+            * (modulus // prime)
+            * pow(modulus // prime, -1, prime)
+            for prime in primes
+        ) % modulus
+        residues.append(residue)
+
+    # Mesh M/D strictly below every interval width guarantees that each
+    # translated lattice (r + M Z)/D meets its assigned open interval.
+    minimum_width = min(right - left for left, right in intervals)
+    denominator_bound = Fraction(modulus, 1) / minimum_width
+    guaranteed = max(1, math.floor((denominator_bound - 1) / modulus) + 1)
+    while 1 + guaranteed * modulus <= denominator_bound:
+        guaranteed += 1
+
+    # Search upward to keep the witness denominator small.  The final
+    # iteration is guaranteed to work by the mesh estimate above.
+    for multiplier in range(1, guaranteed + 1):
+        denominator = 1 + multiplier * modulus
+        result = []
+        for residue, (lower, upper) in zip(residues, intervals):
+            shift = math.floor((lower * denominator - residue) / modulus) + 1
+            candidate = Fraction(residue + shift * modulus, denominator)
+            if not lower < candidate < upper:
+                break
+            result.append(candidate)
+        else:
+            assert denominator % modulus == 1
+            return tuple(result)
+    raise AssertionError("guaranteed CRT mesh bound failed")
+
+
 def pencil_simple_root_histogram(primitive, variable, prime: int) -> dict[int, int]:
     """Enumerate simple F_p-roots of H(W)-sW+t over all ``(s,t)``."""
     if not sp.isprime(prime):

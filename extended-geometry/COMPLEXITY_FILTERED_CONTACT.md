@@ -1088,6 +1088,6 @@ at every order produces one exact rational equivalence.  The remaining
 family-theoretic issue is no escape at the base point, and the remaining
 degree-five computation is the universal associated-graded nonvanishing in
 every fixed stabilization dimension.  Stable moduli do not depend on this
-continuation: decorated normalization together with the affine sheet already
+continuation: the marked Hessian divisor together with the affine sheet already
 supplies them.  `OP-LR`, tracked in [STATUS.md](../STATUS.md), is therefore an
 independent theorem about filtered polynomial LR orbits.

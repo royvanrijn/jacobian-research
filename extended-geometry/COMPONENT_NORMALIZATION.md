@@ -1,5 +1,10 @@
 # Normalization of the exceptional components
 
+This note owns the smooth normalizations of the exceptional components and
+their generic branch fibers.  The strata, exact closure order, component
+classification, and set-theoretic intersections are supplied by the
+[Contact-Strata and Exceptional-Component Theorem](COINCIDENT_ROOT_REBUILD.md).
+
 Fix a maximal partition `lambda=2^a3^b` of inverse degree `n=2a+3b`.  Let
 `Q,R` be monic polynomials of degrees `a,b`, put
 
@@ -48,9 +53,9 @@ For every `a,b>=0` with `2a+3b=n>=3`,
 In particular, every exceptional component has an explicit smooth
 normalization.
 
-The common coincident-root proof of finiteness, birationality, and the exact
-component image is also given in
-[COINCIDENT_ROOT_REBUILD.md](COINCIDENT_ROOT_REBUILD.md#7-the-proposed-smooth-models-are-the-normalizations).
+The finite quotient model and the exact component image used here are proved
+in the
+[coincident-root theorem](COINCIDENT_ROOT_REBUILD.md#2-finiteness-of-the-coincident-root-map).
 
 ## Smoothness of the quotient hypersurface
 

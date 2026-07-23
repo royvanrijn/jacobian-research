@@ -5,6 +5,12 @@ stable invariant, computes the off-diagonal self-intersection of the
 discriminant normalization, and applies the resulting decoration to the two
 previously unresolved split quartic islands.
 
+The core results `D1` and `F2` use only the smaller marked Hessian-divisor
+invariant `(P^1; div(H''), 0, infinity)` and, for `F2`, the distinguished
+affine root sheet.  Node pairing and conductor are retained here as the
+strictly stronger `D2` invariant; they are not load-bearing in the generic
+dimension, unramifiedness, exact rerooting-degree, or affine-mark proofs.
+
 Work over an exact field `k` of characteristic zero; geometric point counts
 are taken after extension to an algebraic closure.  Irreducible factors are
 retained over `k`, so their degrees record residue extensions rather than
@@ -347,7 +353,7 @@ Therefore the decorated normalizations are not isomorphic and
 This resolves the quartic pair left open by the reduced boundary signature
 and by the unmarked two-point Hessian support.
 
-## 5. The moduli map and its generic dimension
+## 5. The minimal moduli map and its generic dimension
 
 Let `A_N` be the normalized admissible seed space
 
@@ -357,17 +363,24 @@ Let `A_N` be the normalized admissible seed space
 \]
 
 with the degree-drop and weighted exceptional divisors removed.  It has
-dimension `N-3`.  On the further open where the discriminant has only
-ordinary cusps and nodes and the boundary mark avoids them, (3.5) defines
-the rational moduli map
+dimension `N-3`.  Put `d=N-2`, and let `U_d` be the open of squarefree
+effective degree-`d` divisors on `P^1` disjoint from zero and infinity.
+Scaling the normalization coordinate gives the quotient
 
 \[
- \mathfrak M_N:\mathcal A_N\dashrightarrow
- \mathcal M^{\mathrm{dec}}_{0,
- (N-2)\,\mathrm{cusps},
- \binom{N-2}{2}\,\mathrm{paired\ nodes},
- 1\,\mathrm{boundary},1\,\mathrm{infinity}}.           \tag{5.1}
+ \mathcal Q_d=[U_d/G_m],\qquad r\longmapsto ar,
 \]
+
+and the minimal rational moduli map
+
+\[
+ \mathfrak h_N:\mathcal A_N\dashrightarrow\mathcal Q_d,
+ \qquad H\longmapsto(P^1;\operatorname{div}(H''),0,\infty). \tag{5.1}
+\]
+
+On the smaller ordinary cusp-node open, the full decoration (3.5) refines
+`mathfrak h_N` by adding node pairing and conductor.  That refinement is D2;
+the D1/F2 arguments below concern `mathfrak h_N`.
 
 This further open is nonempty for every `N>=4`; the ordinary and
 boundary-clean conditions are not merely formal genericity assumptions.  The
@@ -416,19 +429,13 @@ nonempty by the generic discriminant theorem, and (5.1a) proves that the
 boundary-clean open is nonempty.  Their intersection is therefore a nonempty
 open for every `N>=4`.
 
-The target means decorated rational curves modulo `PGL_2`; the infinity mark
-reduces the acting group to `Aff_1`.  The Fitting divisor alone has `N-2`
-points modulo this two-dimensional group and therefore has expected image
-dimension `N-4`, agreeing with the one-dimensional degree-five result.  The
-canonical boundary mark adds one point, so its configuration already has
-expected dimension
+The quotient `mathcal Q_d` has dimension
 
 \[
- (N-2)+1-2=N-3.                                       \tag{5.2}
+ d-1=N-3.                                             \tag{5.2}
 \]
 
-This equals `dim A_N`; node pairing and the conductor add structure but no
-new source parameters.  In fact the generic fiber is finite.  Suppose the
+This equals `dim A_N`.  In fact the generic fiber is finite.  Suppose the
 Fitting divisors and the marks at zero and infinity of two normalized seeds
 `H,G` are isomorphic.  The normalization-line isomorphism has the form
 `r -> ar`, and equality of effective Fitting divisors gives
@@ -450,26 +457,16 @@ normalization `G'(1)=-1` determines `c` uniquely.  Hence a generic fiber has
 at most `N-2` points.  Consequently
 
 \[
- \boxed{\dim\overline{\operatorname{im}(\mathfrak M_N)}=N-3}
+ \boxed{\dim\overline{\operatorname{im}(\mathfrak h_N)}=N-3}
 \]
 
-on the generic ordinary locus.  This proves the image dimension; it does not
-claim that every abstract decorated configuration occurs.
+on the generic Hessian-clean locus.
 
 ### Generic unramifiedness and the exact rerooting fiber
 
-The preceding finite-fiber argument has a differential strengthening which
-uses only the Fitting divisor and the marks at zero and infinity.  Put
-`d=N-2`, and let `U_d` be the open of squarefree effective degree-`d`
-divisors on `P^1` disjoint from zero and infinity.  Scaling the normalization
-coordinate gives the quotient stack
-
-\[
- \mathcal Q_d=[U_d/G_m],\qquad r\longmapsto ar.        \tag{5.3f}
-\]
-
-The Fitting divisor defines a morphism from the ordinary boundary-clean seed
-open to `mathcal Q_d`.  Let `H+epsilon dot H` be a normalized first-order
+The preceding finite-fiber argument has a differential strengthening using
+only the Fitting divisor and the marks at zero and infinity.  Let
+`H+epsilon dot H` be a normalized first-order
 seed deformation in its tangent kernel.  Infinitesimal equality of the
 projective Fitting divisors, modulo normalization-line scaling, says
 
@@ -492,11 +489,10 @@ The remaining normalized endpoint conditions give, successively,
  0=\dot H'(1)=-\alpha.
 \]
 
-Thus `dot H=0`.  The Hessian-divisor quotient map is unramified; on the
+Thus `dot H=0`.  The map `mathfrak h_N` is unramified; on the
 generic locus where the divisor has trivial scaling stabilizer, source and
 target are smooth of the same dimension `N-3`, so it is etale after
-shrinking.  Since the decorated-normalization map forgets to (5.3f), its
-differential is injective there as well.
+shrinking.
 
 The generic degree is also exact.  If `a` is a nonzero simple root of `H`, set
 
@@ -512,25 +508,22 @@ Then `G_a` is normalized and
        \frac{s}{\kappa_a a},\frac{t}{\kappa_a}\right). \tag{5.3j}
 \]
 
-This transports the normalization morphism, Fitting divisor, node pairing,
-conductor, and the marks at zero and infinity, so all `G_a` have the same
-decoration as `H`.  Generically `H=w^2P` with `P` squarefree of degree
+Since `G_a''(w)=kappa_a a^2H''(aw)`, all `G_a` have the same marked Hessian
+divisor as `H`.  Generically `H=w^2P` with `P` squarefree of degree
 `N-2`, and the `N-2` rerootings are distinct.  Conversely, (5.3) shows that
-every seed in the same decorated fiber is one of these rerootings.  Hence
-the normalized decorated image is generically birational to `mathcal Q_d`;
-after shrinking, this birational map is an isomorphism.  Therefore
+every seed in the same Hessian-divisor fiber is one of these rerootings.
+Therefore
 
 \[
- \boxed{\mathfrak M_N\text{ is generically etale of degree }N-2
-        \text{ onto the normalization of its image}.} \tag{5.3k}
+ \boxed{\mathfrak h_N\text{ is generically etale of degree }N-2
+        \text{ onto its image}.}                      \tag{5.3k}
 \]
 
 Equivalently, over a rerooting-stable generic open the incidence
 `{(H,a):H(a)=0, a!=0, H'(a)!=0}` is the finite etale rerooting relation.
 Its quotient supplies an ordinary algebraic model for the generic moduli
-image, which is therefore reduced.  This statement concerns the decoration
-(3.5).  The larger intrinsic affine-cover decoration does separate the
-rerootings, as proved next.
+image, which is therefore reduced.  The affine root sheet separates the
+rerootings, as proved next; node pairing and conductor are unnecessary.
 
 ### Generic affine-mark rigidity
 
@@ -565,7 +558,7 @@ This statement is preserved by stable left--right equivalence because the
 intrinsic cover retains the open immersion `X -> bar X_F`, not merely its
 function field.
 
-It is therefore safe to refine the coarse decoration by adjoining the
+It is therefore safe to refine the marked Hessian divisor by adjoining the
 
 \[
  \mathcal A_{1,H}\longrightarrow Z_0,                \tag{5.3aa}
@@ -573,9 +566,8 @@ It is therefore safe to refine the coarse decoration by adjoining the
 
 where `mathcal A_(1,H)` denotes this distinguished affine component together
 with its embedding in the regular-reconstruction open.  This is the intrinsic
-version of the “root-one branch.”  It is a genuine stable invariant, but it is
-a stratum of the normalized cover, not yet a mark on the rational curve in
-(3.5).
+version of the “root-one branch.”  It is a genuine stable invariant and a
+stratum of the normalized cover.
 
 The ramification divisor in the incidence is cut out by
 `E=partial_W E=0`.  On the root-one affine component,
@@ -612,19 +604,18 @@ Their discriminant normalizations are therefore linearly identified by
 to the root `a` of `H`, not necessarily to `1`.  When `a!=1`, (5.3d) does not
 identify the distinguished regular-reconstruction opens: it sends the affine
 root-one component for `G_a` to an extra-root boundary component for `H`.
-This shows exactly where the intrinsic open contains more information than
-the present decorated-normalization target, but it does not manufacture a
-point on that target.
+This shows exactly where the affine mark contains more information than the
+marked Hessian divisor.
 
-> **Theorem (generic affine-mark faithfulness).**  On the ordinary
-> boundary-clean open, the decorated normalization together with the unique
+> **Theorem (generic affine-mark faithfulness).**  On the Hessian-clean
+> open, the marked Hessian divisor together with the unique
 > unramified root sheet meeting the regular-reconstruction open recovers the
 > normalized seed exactly.  After shrinking, the normalized seed open is
-> isomorphic to the normalization of the marked decorated image, and
+> isomorphic to the normalization of the affine-marked Hessian-divisor image, and
 > forgetting the affine sheet is finite etale of degree `N-2`.
 
 The proof is now finite.  By the exact fiber theorem, two seeds with the same
-coarse decoration differ by one of the rerootings (5.3c).  Under (5.3d), the
+marked Hessian divisor differ by one of the rerootings (5.3c).  Under (5.3d), the
 root-one sheet of `G_a` maps to the root-`a` sheet of `H`.  The tangent-core
 reconstruction identities are
 

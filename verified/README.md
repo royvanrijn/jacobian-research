@@ -25,6 +25,10 @@ This directory contains the stable proof chain:
 - [Exact real-sheet spectrum](REAL_FIBER_SPECTRUM.md): every count
   `N,N-2,...,N mod 2` occurs on a nonempty complete regular real target
   chamber, with rational witnesses and an explicit fold-adjacency chain.
+- [Adelic complete-fiber engineering](ADELIC_FIBER_ENGINEERING.md): weak
+  approximation combines any allowed real signature with finitely many
+  squarefree local splitting types; one local `N`-cycle gives a complete
+  degree-`N` fiber field.
 - [Exact geometric-degree spectrum](GEOMETRIC_DEGREE_SPECTRUM.md): the
   spectrum `3,4,5,...` for noninvertible Keller maps of complex affine
   three-space and its stable left--right degree separation.

@@ -85,7 +85,9 @@ Here the triple contact is the smallest permitted parity correction.
 
 The [unique omitted-value lemma](UNIQUE_OMITTED_VALUE.md) identifies the
 nonsurjective seed locus `N_n` with the disjoint union of the full-contact
-strata.  Maximizing
+strata.  This is the separation input used here: it rules out two distinct
+omitted values uniformly, including the all-double borderline case and pairs
+having the same multiplicity type.  Maximizing
 `a+b-1` subject to `2a+3b=n` gives
 
 \[
@@ -112,10 +114,12 @@ surjective.  In short,
         n\ge5:\ \text{generic surjectivity}.}                  \tag{3}
 \]
 
-## What Mason--Stothers does
+## Optional comparison: the old Mason separation
 
-Mason does not select the atoms.  It prevents different contact types from
-coexisting away from collision.
+The following argument is not an additional input to the contact-atom theorem
+or the phase diagram.  It is retained as a shorter alternative proof for the
+special case of two distinct multiplicity types, and as motivation for the
+bounded-difference estimate in the abstract threshold theorem.
 
 Suppose two exact degree-`n` full-contact polynomials satisfy
 
@@ -157,14 +161,21 @@ contradicting Mason.  Therefore:
 > Two distinct exact full-contact multiplicity types never support distinct
 > omitted values away from collision.
 
-This strengthens the maximal-component separation theorem: it applies to
-every pair of distinct full-contact partitions.
+This is strictly weaker than the unique omitted-value lemma used above.  As
+recorded, it is only a distinct-type statement; the same excess estimate also
+handles equal non-all-double types, but remains borderline for a pair of
+all-double polynomials.  The square-factorization step in the unique
+omitted-value proof closes that case.  Thus the Mason calculation here is an
+optional type-separation proof, not a second dependency.
 
 ## Threshold-`r` generalization
 
-The universal statement is now the standalone
-[threshold contact-atom theorem schema](THRESHOLD_CONTACT_ATOM_SCHEMA.md).
-It proves, under explicit reconstruction and collision hypotheses, that the
+The direct `r=2` argument above uses the contact semigroup, the collision
+theorem, the stratum dimension formula, and the unique omitted-value lemma; it
+does not invoke a threshold theorem.  The standalone
+[threshold contact-atom theorem schema](THRESHOLD_CONTACT_ATOM_SCHEMA.md)
+abstracts the same mechanism.  Under explicit reconstruction and collision
+hypotheses it proves that the
 atoms are `r,...,2r-1`, primitive components are their restricted partitions,
 dominant dimensions are a one-row integer program, component counts and
 codimensions are quasipolynomial, and Mason separation for bounded-degree
@@ -174,9 +185,10 @@ differences is automatic in the precise range
 n-2\left\lfloor n/r\right\rfloor-d+1>0.
 \]
 
-The present note is its `r=2`, affine-difference application.  This is the
-critical borderline case; the excess and square-factorization arguments above
-supply exactly what the abstract support estimate cannot.
+The old type-separation calculation explains why that abstract Mason bound is
+strict for `r>=3` but borderline at `r=2`.  In the actual inverse-pencil
+problem, the unique omitted-value lemma supplies the stronger `r=2`
+separation independently of the schema.
 
 ## Executable certificate
 
@@ -184,9 +196,12 @@ Run:
 
 ```bash
 python scripts/verify_contact_atom_principle.py
+python scripts/verify_unique_omitted_value.py
 ```
 
-The script verifies the atoms of `S_r` for thresholds two through eight,
-constructs atomic refinements, checks the excess/Mason identity for every
-distinct full-contact pair through degree twenty-four, and audits the strict
-threshold-`r` support bound.
+The first script verifies the atoms of `S_r` for thresholds two through eight,
+constructs atomic refinements, and audits the dimension optimization.  It
+also retains the excess/Mason identity for distinct `r=2` types as an optional
+regression and checks the strict threshold-`r` support bound.  The second
+script verifies the load-bearing unique omitted-value lemma, including the
+all-double equality case.

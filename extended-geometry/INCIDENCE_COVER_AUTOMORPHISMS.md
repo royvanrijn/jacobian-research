@@ -183,7 +183,7 @@ followed by the open condition `AF''(1)!=-2`.  Equations (3.2)--(3.3)
 parametrize every symmetric admissible seed, including symmetries whose
 center is not the boundary mark zero.
 
-For the orbifold locus of the coarse decorated-normalization quotient, the
+For the orbifold locus of the marked Hessian-divisor quotient, the
 marks `0` and `infinity` force `c=0`.  If zero has exact multiplicity `e`,
 the strata simplify to
 

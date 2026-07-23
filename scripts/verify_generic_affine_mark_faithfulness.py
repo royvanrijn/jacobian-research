@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Exact regression for generic affine-mark faithfulness.
 
-The coarse decorated fiber is the rerooting orbit.  This checker verifies the
+The marked Hessian-divisor fiber is the rerooting orbit.  This checker verifies the
 degree-independent pencil transport and the reconstruction calculation which
 shows that only the root-one sheet can be both unramified and affine.
 """
@@ -43,7 +43,7 @@ assert sp.factor(gamma.subs({rho: 1, hprime: -c}) - 1) == 0
 assert sp.factor(z_numerator.subs({rho: 1, hprime: -c})) == 0
 
 
-# A generic normalized seed has N-2 nonzero simple roots.  Coarse decoration
+# A generic normalized seed has N-2 nonzero simple roots.  The Hessian divisor
 # forgets which one is the affine root, while the affine mark selects one.
 for degree in range(4, 20):
     assert degree - 2 > 0

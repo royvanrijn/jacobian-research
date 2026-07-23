@@ -283,8 +283,8 @@ etale map }\mathbb A^6\to\mathbb A^6\text{ of generic degree }N.}
 \]
 
 For `N>=4`, the strongest degreewise statement comes from the weighted
-decorated-normalization moduli map.  On its explicitly nonempty ordinary
-boundary-clean open, that map is generically finite with image dimension
+marked Hessian-divisor map.  On its explicitly nonempty Hessian-clean open,
+that map is generically finite with image dimension
 `N-3`.  Cotangent lifting preserves the stable class because `widehat F` is
 right-equivalent to `F x id`; hence
 
@@ -293,7 +293,7 @@ right-equivalent to `F x id`; hence
 (N-3)\text{-dimensional family of stable exact symplectic maps of }\mathbb A^6.}
 \]
 
-Here the dimension is realized by the image of the same decorated invariant;
+Here the dimension is realized by the image of the same Hessian-divisor invariant;
 no coarse moduli space for all exact symplectic maps is assumed.
 
 Separately, the degreewise multiplicity theorem transfers without loss:

@@ -174,7 +174,8 @@ Indeed the sheet stabilizer in the natural `S_n` action is `S_(n-1)`.  For
 `n>=3` it is self-normalizing, so the deck group
 `N_(S_n)(S_(n-1))/S_(n-1)` is trivial.  This removes generic target-fixed
 sheet symmetries, but it does not by itself extend the affine root sheet
-through collision strata: that separate valuative problem is `OP-MARK`.
+through collision strata.  That separate valuative problem is complete as
+`H3`: the coarse affine mark extends uniquely over every DVR limit.
 
 The following still depend on the seed and must not be inferred from
 monodromy alone:

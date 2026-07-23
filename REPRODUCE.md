@@ -55,7 +55,12 @@ remain as a regression:
 ```bash
 .venv/bin/python scripts/verify_all_degree_rational_fibers.py
 .venv/bin/python scripts/verify_real_fiber_spectrum.py
+.venv/bin/python scripts/verify_adelic_fiber_engineering.py
 ```
+
+The last command audits the constructive CRT/weak-approximation lift and an
+explicit totally imaginary quartic complete fiber that is inert at `7` and
+has unramified splitting type `(2,1,1)` at `11`.
 
 The remaining constant-`C` boundary has a separate exact Singular
 certificate:

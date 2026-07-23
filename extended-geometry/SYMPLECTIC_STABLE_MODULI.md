@@ -296,7 +296,7 @@ elementary exact symplectic construction.  The main new consequences recorded
 here are the degreewise transfers
 
 \[
-\dim\overline{\operatorname{im}(\mathfrak M_N)}=N-3
+\dim\overline{\operatorname{im}(\mathfrak h_N)}=N-3
 \quad\Longrightarrow\quad
 \begin{matrix}
 \text{an }(N-3)\text{-dimensional family of stable exact symplectic classes

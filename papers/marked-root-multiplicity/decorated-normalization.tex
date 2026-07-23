@@ -1,7 +1,7 @@
 \ifdefined\HurwitzLLPaper
 \else
 
-\section{The scheme-theoretic decorated normalization}
+\section{The marked Hessian-divisor quotient}
 
 For a weighted primitive $H$, let $D_H$ be the reduced discriminant of
 $H(W)-sW+t$ and let
@@ -46,107 +46,35 @@ form $r\mapsto ar+b$, $a\ne0$.  Proposition~\ref{prop:full-fitting} then says
 that the full effective Hessian divisor is carried affinely, with its
 coefficients.
 
-The self-intersection of (6.1) is also intrinsic.  In two normalization
-coordinates put
+On the boundary-clean seed locus the second target boundary canonically
+marks $r=0$, while projective completion marks $r=\infty$.  The minimal
+stable invariant used for generic moduli is therefore
 \[
- D_s(r,u)=\frac{H'(r)-H'(u)}{r-u},
+ \mathcal H_H=(\P^1;\operatorname{div}(H''),0,\infty).
 \]
+It remembers the full effective Hessian divisor, including multiplicities,
+but does not remember node pairing or the conductor.  Write $d=N-2$ and let
 \[
- D_t(r,u)=
- \frac{rH'(r)-H(r)-uH'(u)+H(u)}{r-u}.
+ \mathcal Q_d=[U_d/\mathbb G_m],\qquad r\longmapsto ar,
 \]
-The genuine off-diagonal closure is the scheme
-\[
- \Gamma_H^{\rm off}
- =V\bigl((D_s,D_t):(r-u)^\infty\bigr).                 \tag{6.3}
-\]
-The saturation in (6.3) is necessary: on the diagonal the divided equations
-specialize to $H''(r)$ and $rH''(r)$ and otherwise retain isolated cusp
-points.  The involution $(r,u)\leftrightarrow(u,r)$ is free on the ordinary
-off-diagonal locus; its characteristic-zero finite quotient exists in
-general and retains fixed diagonal limits in degenerations.  On the ordinary
-locus that quotient records the two normalization branches paired at each node.  An
-isomorphism of normalization morphisms preserves the fiber product, its
-diagonal, and the saturated complement, while stabilization takes their
-product with affine space.  Hence this node-pairing scheme is stable.
-In the exact extractor, ordinary-node status is certified by the Jacobian
-determinant
-\[
- \det\frac{\partial(D_s,D_t)}{\partial(r,u)}
-\]
-being a unit on (6.3), rather than inferred only from the number of projected
-branch points.  Passing to
-$\sigma=r+u,\pi=ru$ gives the scheme quotient by the free involution; the
-implementation verifies that its equations pull back into the saturated
-ordered ideal.
+where $U_d$ is the open of squarefree effective degree-$d$ divisors disjoint
+from zero and infinity.  The assignment $H\mapsto\mathcal H_H$ defines the
+marked Hessian-divisor map to $\mathcal Q_d$.
 
-Finally, let
-\[
- \mathfrak c_H=\operatorname{Ann}_{\mathcal O_{D_H}}
- (\nu_{H*}\mathcal O_{\widetilde D_H}/\mathcal O_{D_H}) \tag{6.4}
-\]
-be the conductor.  It is functorial for the same reason.  On the open locus
-of ordinary cusps and nodes, if $P_H(r)$ cuts out all normalization branches
-appearing in (6.3), then the local models
-$k[[t^2,t^3]]\subset k[[t]]$ and
-$k[[x,y]]/(xy)\subset k[[x]]\oplus k[[y]]$ give
-\[
- \mathfrak c_Hk[r]=(H''(r)^2P_H(r)).                   \tag{6.5}
-\]
-For arbitrary plane-curve singularities, let $f_H(S,T)=0$ be the primitive
-implicit equation.  Plane-curve adjunction gives the uniform generator
-\[
- \mathfrak c_Hk[r]=
- \left(
- \frac{(\partial f_H/\partial T)
- (H'(r),rH'(r)-H(r))}{H''(r)}
- \right).                                             \tag{6.5a}
-\]
-This quotient is polynomial because (6.1) is the normalization.  The exact
-extractor uses (6.5a) without an ordinary-singularity hypothesis and checks
-(6.5) independently whenever the cusp/node criterion holds.
-The invariant retains the finite conductor morphism
-\[
- \operatorname{Spec}(k[r]/\mathfrak c_Hk[r])
- \longrightarrow
- \operatorname{Spec}(R_H/(R_H\cap\mathfrak c_Hk[r])), \tag{6.6}
-\]
-not only its upstairs support.  It records the two branches over a node and
-the single thick branch over a cusp.  Together, (6.2)--(6.6), the point at infinity, and the labeled inverse image
-of the intersection with the second target boundary form the decorated
-normalization.  The full second-boundary center divisor upstairs is
-$\gcd(H,H')$; a point label is inferred only when its support is uniquely
-certified.  Every part is therefore preserved under stable polynomial
-left--right equivalence.
-
-For the split quartics, the boundary label on the normalization is also
-checked intrinsically.  If zero is the unique multiple primitive root and
-$H(r)=h_2r^2+O(r^3)$, the normalized discriminant boundary chart
-\[
- B=\frac{H'(r)}C,\qquad
- A=\frac{rH'(r)-H(r)}{cC^2},\qquad r=Ck
-\]
-specializes to
-\[
- B=2h_2k,\qquad A=\frac{h_2}{c}k^2.
-\]
-A finite specialization centered at $r=\rho$ forces
-$H(\rho)=H'(\rho)=0$, hence $\rho=0$.  Thus the second-boundary intersection
-canonically marks $r=0$; it is not an auxiliary normalization convention.
-
-\begin{proposition}[nonempty ordinary boundary-clean locus]
+\begin{proposition}[nonempty Hessian-clean locus]
 \label{prop:ordinary-boundary-clean}
 For every $N\ge4$, the normalized admissible degree-$N$ seed space contains
-a nonempty open on which the discriminant has only ordinary cusps and nodes,
-zero is the unique multiple primitive root, and the boundary mark $r=0$
-belongs to neither the cusp nor the node-branch scheme.
+a nonempty open on which $H''$ is squarefree and avoids zero and infinity,
+zero is the unique multiple primitive root, and all other roots of $H$ are
+simple.  On this locus $\mathcal H_H$ and the nonzero root sheets are defined
+without node-pairing or conductor data.
 \end{proposition}
 
 \begin{proof}
-The generic discriminant theorem proves that the ordinary nodal-cuspidal open
-meets the normalized admissible slice in every degree.  Boundary-cleanness and
-avoidance of the finite cusp and node-branch schemes are also open conditions.
-They are nonempty on the normalized slice, as witnessed by
+The generic discriminant theorem proves that the squarefree-Hessian open
+meets the normalized admissible slice in every degree.  The remaining
+conditions are open.  Boundary-cleanness is nonempty on the normalized slice,
+as witnessed by
 \[
  H_N^{\mathrm{split}}(W)=\frac12W^2(1-W)(1+W^{N-3}).
 \]
@@ -164,36 +92,21 @@ of $P_N$,
  =\alpha P_N'(\alpha)\ne0.
 \]
 Thus $\gcd(H_N^{\mathrm{split}},(H_N^{\mathrm{split}})')=W$.
-The nonzero second derivative at zero excludes a cusp there.  If an
-off-diagonal point $u$ had the same discriminant image as zero, then
-$H'(u)=H(u)=0$, contradicting the gcd calculation.  Hence the boundary mark
-is not a node branch.  The normalized seed space is irreducible, so its
-nonempty ordinary and boundary-clean opens intersect.
+The normalized seed space is irreducible, so its nonempty Hessian and
+boundary-clean opens intersect.
 \end{proof}
 
-For completeness, this decoration gives an actual generic-dimension theorem,
-not only a parameter count.  In the normalized degree-$N$ seed space, an
-isomorphism preserving zero and infinity is $r\mapsto ar$.  Equality of
-Fitting divisors then has the form $G''(r)=cH''(ar)$.  Since the normalized
-seeds vanish together with their first derivatives at zero, integration gives
-\[
- G(r)=\frac{c}{a^2}H(ar).
-\]
-The condition $G(1)=0$ forces $H(a)=0$, leaving at most $N-2$ generic
-choices, and $G'(1)=-1$ determines $c$.  Thus the decorated-normalization
-moduli map is generically finite and its image has dimension $N-3$.
-
-\begin{proposition}[generic unramifiedness and rerooting degree]
-\label{prop:decorated-unramified}
-For every $N\ge4$, the decorated-normalization moduli map is generically
-unramified.  After restriction to a nonempty open it is etale of degree
-$N-2$ onto the normalization of its image, and its geometric fibers are
-exactly the rerootings at the nonzero simple roots of the seed.
+\begin{proposition}[marked Hessian-divisor moduli]
+\label{prop:hessian-divisor-unramified}
+For every $N\ge4$, the marked Hessian-divisor map is generically unramified.
+After restriction to a nonempty open it is etale of exact degree $N-2$ onto
+its image, which has dimension $N-3$.  Its geometric fibers are exactly the
+rerootings at the nonzero simple roots of the seed.
 \end{proposition}
 
 \begin{proof}
-On the squarefree boundary-clean open, retain only the Fitting divisor on
-$(\P^1;0,\infty)$.  A normalized first-order seed deformation
+The stack $\mathcal Q_d$ is smooth of dimension $d-1=N-3$.  A normalized
+first-order seed deformation
 $H+\varepsilon\dot H$ which is trivial in the quotient of these divisors
 by normalization-line scaling satisfies
 \[
@@ -212,10 +125,8 @@ The tangent endpoint equations now give
  0=\dot H(1)=-\beta,
  \qquad 0=\dot H'(1)=-\alpha,
 \]
-so $\dot H=0$.  The Fitting-divisor quotient, and therefore the full
-decorated map, is generically unramified.  On the locus with trivial divisor
-stabilizer, the seed space and the Fitting-divisor quotient are smooth of
-dimension $N-3$, hence the latter map is etale after shrinking.
+so $\dot H=0$.  Thus the marked Hessian-divisor map is unramified; on the
+locus with trivial divisor stabilizer it is etale after shrinking.
 
 For the degree statement, if $a$ is a nonzero simple root of $H$, put
 \[
@@ -226,19 +137,18 @@ Then $G_a$ is normalized and
  E_{G_a}(w;s,t)=\kappa_a E_H\left(aw;
         \frac{s}{\kappa_a a},\frac{t}{\kappa_a}\right). \tag{6.8}
 \]
-Thus all parts of the decoration, including the node pairing and conductor,
-are transported.  Generically $H=w^2P$ with $P$ squarefree of degree $N-2$,
-and these $N-2$ rerootings are distinct.  Conversely, the integration
-argument preceding the proposition shows that every point of a decorated
-fiber has this form.  The generic degree is therefore exactly $N-2$, and the
-normalization of the decorated image is generically birational to the
-Fitting-divisor quotient.  After one final shrinking they are isomorphic,
-which proves the asserted etaleness onto the normalized image.
+Moreover $G_a''(w)=\kappa_a a^2H''(aw)$, so every rerooting has the same
+marked Hessian divisor.  Conversely, equality in $\mathcal Q_d$ gives
+$G''(r)=cH''(ar)$.  Twice integrating and using the double zero at the
+origin gives $G(r)=cH(ar)/a^2$; then $G(1)=0$ forces $H(a)=0$, and
+$G'(1)=-1$ forces $c/a^2=\kappa_a$.  Thus every fiber point is one of the
+$N-2$ distinct generic rerootings.  This proves the exact degree and the
+dimension claim using only $\mathcal H_H$.
 \end{proof}
 
 \begin{lemma}[the affine root sheet]
 \label{lem:affine-root-sheet}
-On the ordinary boundary-clean open, the root-one component over $C=0$ is
+On the Hessian-clean open, the root-one component over $C=0$ is
 the unique unramified component of the inverse incidence which meets the
 regular-reconstruction open outside the zero cluster.  The double-zero locus
 forms a residue-degree-two cluster rather than a simple root sheet, and every
@@ -271,10 +181,10 @@ only ramification and membership in the distinguished affine open, so it is
 intrinsic and is preserved by stabilization.
 \end{proof}
 
-\begin{theorem}[generic affine-mark faithfulness]
+\begin{theorem}[marked Hessian-divisor faithfulness]
 \label{thm:affine-mark-faithful}
-On the ordinary boundary-clean open, the decorated normalization together
-with the affine root sheet recovers the normalized seed exactly.  In
+On the Hessian-clean open, the marked Hessian divisor together with the
+affine root sheet recovers the normalized seed exactly.  In
 particular, for seeds $H,G$ on this open,
 \[
  F_H\sim_{\mathrm{stable\ LR}}F_G\quad\Longrightarrow\quad H=G.        \tag{6.11}
@@ -282,10 +192,10 @@ particular, for seeds $H,G$ on this open,
 \end{theorem}
 
 \begin{proof}
-Stable normalization functoriality identifies the decorated normalizations
+Stable normalization functoriality identifies the marked Hessian divisors
 and carries the regular-reconstruction open, hence the affine root sheet, to
-its counterpart.  Proposition~\ref{prop:decorated-unramified} says that two
-seeds in one geometric decorated fiber are related by a unique generic
+its counterpart.  Proposition~\ref{prop:hessian-divisor-unramified} says that two
+seeds in one geometric Hessian-divisor fiber are related by a unique generic
 rerooting
 \[
  G=G_a,\qquad G_a(w)=\kappa_aH(aw),
@@ -299,22 +209,81 @@ $a=1$.  Then $\kappa_1=1$ because $H'(1)=-1$, so $G=H$.
 
 \begin{theorem}[marked moduli normalization]
 \label{thm:marked-moduli-normalization}
-After shrinking the ordinary boundary-clean seed open, its marked decorated
-map is an isomorphism onto the normalization of its image.  Under this
+After shrinking the Hessian-clean seed open, its affine-marked
+Hessian-divisor map is an isomorphism onto the normalization of its image.
+Under this
 identification, forgetting the affine root sheet is finite etale of degree
-$N-2$ onto the normalized coarse decorated image.
+$N-2$ onto the marked Hessian-divisor image.
 \end{theorem}
 
 \begin{proof}
-The seed open is smooth and hence normal.  The marked map is generically
-unramified because its composite with the coarse decorated map is, and
+The seed open is smooth and hence normal.  The marked map is unramified
+because its composite with the Hessian-divisor map is, and
 Theorem~\ref{thm:affine-mark-faithful} makes it generically one-to-one.
 It is therefore birational and quasi-finite onto the normalization of its
 image.  Zariski's Main Theorem makes it an open immersion; shrinking the
 target image gives the asserted isomorphism.  Proposition
-\ref{prop:decorated-unramified} identifies the forgetful morphism with the
+\ref{prop:hessian-divisor-unramified} identifies the forgetful morphism with the
 $N-2$ rerooting cover and proves the final assertion.
 \end{proof}
+
+\section{The stronger scheme-theoretic decoration}
+
+The preceding D1 and F2 arguments use only $\mathcal H_H$ and the affine
+root sheet.  The node-pairing scheme and conductor are retained separately
+as the stronger D2 invariant; neither is an input to generic dimension,
+unramifiedness, rerooting degree, or affine-mark faithfulness.
+
+The self-intersection of (6.1) is intrinsic.  In two normalization
+coordinates put
+\[
+ D_s(r,u)=\frac{H'(r)-H'(u)}{r-u},
+\]
+\[
+ D_t(r,u)=
+ \frac{rH'(r)-H(r)-uH'(u)+H(u)}{r-u}.
+\]
+The genuine off-diagonal closure is the scheme
+\[
+ \Gamma_H^{\rm off}
+ =V\bigl((D_s,D_t):(r-u)^\infty\bigr).                 \tag{6.13}
+\]
+The saturation removes the diagonal while retaining its isolated cusp
+limits.  Its quotient by $(r,u)\leftrightarrow(u,r)$ records the two
+normalization branches paired at each ordinary node.  Isomorphisms of
+normalization morphisms preserve this construction, and stabilization takes
+its product with affine space, so the node-pairing scheme is stable.
+
+Let
+\[
+ \mathfrak c_H=\operatorname{Ann}_{\mathcal O_{D_H}}
+ (\nu_{H*}\mathcal O_{\widetilde D_H}/\mathcal O_{D_H}) \tag{6.14}
+\]
+be the conductor.  On the ordinary cusp-node locus, if $P_H(r)$ cuts out the
+normalization branches occurring in (6.13), then
+\[
+ \mathfrak c_Hk[r]=(H''(r)^2P_H(r)).                   \tag{6.14a}
+\]
+For arbitrary plane-curve singularities with primitive implicit equation
+$f_H(S,T)=0$, plane-curve adjunction gives
+\[
+ \mathfrak c_Hk[r]=
+ \left(
+ \frac{(\partial f_H/\partial T)
+ (H'(r),rH'(r)-H(r))}{H''(r)}
+ \right).                                             \tag{6.14b}
+\]
+D2 retains the finite conductor morphism
+\[
+ \operatorname{Spec}(k[r]/\mathfrak c_Hk[r])
+ \longrightarrow
+ \operatorname{Spec}(R_H/(R_H\cap\mathfrak c_Hk[r])), \tag{6.14c}
+\]
+together with the full Fitting divisor, node pairing, infinity mark, and
+second-boundary center divisor $\gcd(H,H')$.  Every part is preserved under
+stable polynomial left--right equivalence.  The extended D2 audit records
+the exact saturation, quotient, transversality, conductor, and collision
+checks omitted from the minimal moduli proof.
 
 \begin{remark}[coarse affine-mark descent]
 The selected root extends tautologically on the marked admissible-cover
@@ -628,7 +597,7 @@ with $q_i=t-\rho_i s$, formula (6.1) gives
 \]
 Thus its intrinsic conductor exponent is $e_i(e_i-1)$.  Distinct roots give
 distinct tangent lines $t=\rho_i s$, hence
-$I(D_i,D_j)=e_i e_j$.  Applying the adjunction conductor formula (6.5a) to
+$I(D_i,D_j)=e_i e_j$.  Applying the adjunction conductor formula (6.14b) to
 $f=\prod_i f_i$ adds these pairwise intersections on branch $i$ and yields
 \[
  e_i(e_i-1)+\sum_{j\ne i}e_i e_j=e_i(E-1),
@@ -721,8 +690,8 @@ $(N-3)$-dimensional family of stable polynomial left--right classes.
 \end{corollary}
 
 \begin{proof}
-By Proposition~\ref{prop:ordinary-boundary-clean}, the domain of the
-decorated-normalization moduli map contains a nonempty open in every degree.
+By Proposition~\ref{prop:ordinary-boundary-clean}, the domain of the marked
+Hessian-divisor map contains a nonempty open in every degree.
 The map is generically finite by the preceding argument and its invariant is
 constant on stable classes.  Its stable-class image therefore has dimension
 $N-3$.

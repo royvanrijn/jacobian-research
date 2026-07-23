@@ -1,10 +1,11 @@
 # Decorated discriminant normalization and stable moduli
 
-This paper contains the scheme-theoretic discriminant-normalization package:
-the full Fitting divisor, node pairing and conductor, boundary marks, the
-generic degree-`N-2` decorated map, and the `(N-3)`-dimensional stable-moduli
-theorem.  Adding the unique unramified affine root sheet makes the normalized
-seed open the normalization of the marked decorated image.  The selected
+The main moduli argument uses the minimal marked Hessian-divisor invariant
+`(P^1; div(H''), 0, infinity)`.  Its quotient map has generic degree `N-2`
+and image dimension `N-3`; adding the unique unramified affine root sheet
+recovers the normalized seed.  Node pairing and conductor are not inputs to
+those D1/F2 proofs.  They are retained as the stronger scheme-theoretic D2
+decoration, together with the full Fitting divisor and boundary marks.  The selected
 root already extends on the marked admissible-cover stack, including the
 normalized-Stein and conductor comparisons at arbitrary collisions.  Its
 descent after contraction is also complete: the finite birational closure is

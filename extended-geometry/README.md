@@ -16,18 +16,19 @@ and external review are recorded only in
 | Contact atoms and omitted-value phase diagram | [Contact-atom principle](CONTACT_ATOM_PRINCIPLE.md) |
 | Abstract threshold-`r` contact atoms, integer optimization, quasipolynomials, and application audit | [Threshold contact-atom theorem schema](THRESHOLD_CONTACT_ATOM_SCHEMA.md) |
 | Component normalizations | [Component normalization](COMPONENT_NORMALIZATION.md) |
-| Enumerative nonsurjective geometry | [Component counts, intersection series, branch profiles, and the projective-degree correction problem](NONSURJECTIVE_ENUMERATIVE_GEOMETRY.md) |
+| Enumerative nonsurjective geometry | [Component counts, intersection series, branch profiles, exact projective degrees, and graph Chow classes](NONSURJECTIVE_ENUMERATIVE_GEOMETRY.md) |
 | Degree-twelve local singularity | [Local singularity](DEGREE12_LOCAL_SINGULARITY.md) |
 | Weighted exceptional partition lattice | [Minimal common coarsenings, universal collision weights, and the degree-twenty census](PARTITION_LATTICE_GEOMETRY.md) |
 | Degree-eighteen triple intersection | [Three-sheet transverse gluing and the remaining conductor equalizer](DEGREE18_TRIPLE_INTERSECTION.md) |
 | Finite-field Chebotarev | [Effective theorem](FINITE_FIELD_CHEBOTAREV.md) |
+| Adelic complete-fiber engineering | [Simultaneous real signatures and finite-prime splitting conditions](../verified/ADELIC_FIBER_ENGINEERING.md) |
 | Explicit quartic model | [Quartic weighted geometry](QUARTIC_WEIGHTED_GEOMETRY.md) |
 | Zhuang's external quartic islands | [Weighted-seed identification and boundary audit](EXTERNAL_QUARTIC_ISLANDS.md) |
 | Decorated normalization and degreewise stable moduli | [Canonical paper](../papers/decorated-discriminant-normalization/main.tex); [extended affine-mark and collision audit](DECORATED_NORMALIZATION_INVARIANT.md) |
 | Hurwitz--LL compactification | [Canonical paper](../papers/hurwitz-ll-rerooting/main.tex); [extended audit](HURWITZ_LL_COMPACTIFICATION.md) |
-| Cancellation contact resultant | [Endpoint-moment reduction and uniform `r=1,2,3,4` proofs](../cancellation/CONTACT_RESULTANT.md) |
+| Cancellation contact resultant | [Endpoint-moment reduction and uniform `r=1,2,3,4,5` proofs](../cancellation/CONTACT_RESULTANT.md) |
 | Degree-five positive-dimensional stable moduli | [Stable Hessian-root invariant and explicit family](DEGREE_FIVE_STABLE_MODULI.md) |
-| Rank-two symplectic descent in `A^4` | [The canonical all-degree two-chart residue theorem, coarse decorated transfer of `N-3` stable dimensions, and generated degree-five/six regressions](RANK_TWO_SYMPLECTIC_DESCENT.md) |
+| Rank-two symplectic descent in `A^4` | [The canonical all-degree two-chart residue theorem, marked Hessian-divisor transfer of `N-3` stable dimensions, and generated degree-five/six regressions](RANK_TWO_SYMPLECTIC_DESCENT.md) |
 | Degree-five rank-two regression | [The original fixed-`kappa=-9` line retained for explicit formulas and independent checking](DEGREE_FIVE_RANK_TWO_DESCENT.md) |
 | Filtered `A_2` quantization obstruction | [The separate `hbar^5` obstruction for the standard parity-preserving Weyl-symbol ansatz](RANK_TWO_FILTERED_QUANTIZATION_OBSTRUCTION.md) |
 | Exact symplectic and filtered Weyl moduli | [Classical-quantum bridge](SYMPLECTIC_WEYL_LIFT.md); [degreewise stable-moduli theorem](SYMPLECTIC_STABLE_MODULI.md) |
@@ -37,6 +38,7 @@ and external review are recorded only in
 | Direct Image and Vanishing counterexamples | [`not SIC(20)`, generalized Laplacian and nonhomogeneous HN-VC failures in 40 variables, classical homogeneous quartic HN-VC failure in 42, and an all-order inverse recurrence](IMAGE_VANISHING_COUNTEREXAMPLES.md) |
 | Formal Gaussian--Lagrange lemma | [Constant-term-safe completed-ring, residue, determinant, and Wick proof](FORMAL_GAUSSIAN_LAGRANGE_LEMMA.md) |
 | Weighted-seed Gaussian bridge | [Uniform four-real-Gaussian witnesses, exact inverse-pencil branches, and optimal `(N-3)`-moment coordinates for normalized degree-`N` families](WEIGHTED_GAUSSIAN_BRIDGE.md) |
+| Gaussian exceptional moment geometry | [Affine partition-lattice strata and transverse algebras transported into mixed-moment coordinates](GAUSSIAN_EXCEPTIONAL_MOMENT_GEOMETRY.md) |
 | Weighted invariant-coordinate Jacobian reduction | [General weight-`(1,-1,-k)` determinant lemma reducing Keller equations to two invariant variables](WEIGHTED_INVARIANT_JACOBIAN_REDUCTION.md) |
 | Weighted tangent suspension and plane Poisson square | [Plane-core determinant rearrangement, explicit foundational pair, tangent-pencil identification, and weighted-Wronskian cascade](WEIGHTED_TANGENT_SUSPENSION.md) |
 | Foundational weighted coefficient scheme | [Exact sixteen-monomial rigidity, dual-number tangent, Wronskian obstruction, and complete two-component boundary decomposition](FOUNDATIONAL_WEIGHTED_COEFFICIENT_SCHEME.md) |
