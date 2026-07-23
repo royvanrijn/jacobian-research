@@ -4839,7 +4839,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:c9d300a0a77c6bd41447b90789429b1c5513af12c487017567980134ad6bb970",
+      "artifact_hash": "sha256:f5c5979f27299893c2b37b0d1f120f1e3a799eb9ca3219e0a1e7059684b959d2",
       "software_lock": [
         ".python-version",
         "requirements.txt"
@@ -4882,6 +4882,33 @@
       "priority": "derived"
     },
     {
+      "id": "HR42J",
+      "kind": "corollary",
+      "state": "proved",
+      "title": "Degree-forty-two common-cubic fourth normal synchronization",
+      "scope": "For the degree-42 outer-cut pair {2,7}, transport the primitive degree-14 power collision through a generic cubic. A triangular polynomial coordinate change gives five refinement-normal and six base coordinates. If I is the pulled-back Hessian residual ideal, m the normal ideal, and delta=lambda_2-lambda_7, exact characteristic-zero reduction proves delta lies in I+m^5. Thus the full six-parameter transported power component is synchronized through normal order four. The exact block-order Groebner basis has size 88. Full untruncated modular membership and exact normal order five remain open computationally.",
+      "canonical_source": "extended-geometry/COMMON_RIGHT_FACTOR_SYNCHRONIZATION.md",
+      "dependencies": [
+        "HRCF",
+        "HRSYNC"
+      ],
+      "checker": "scripts/verify_degree42_transported_27_normal_jets.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:3445058720c38dbc4e8a9110dc705d48208261bea6ce34e66336af39f65df05b",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [
+        "degree-42 first primary Hessian transport test"
+      ],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
       "id": "HR30C",
       "kind": "corollary",
       "state": "proved",
@@ -4919,6 +4946,7 @@
         "HR6B",
         "HRSYNC",
         "HRCF",
+        "HR42J",
         "HR30C"
       ],
       "checker": null,
