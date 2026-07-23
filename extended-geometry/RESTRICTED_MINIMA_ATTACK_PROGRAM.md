@@ -24,9 +24,18 @@ invertible would simultaneously give
 \]
 
 The first missing case is `d=3` for arbitrary cubic-homogeneous corrections.
-The published index-three theorem covers power-linear maps only, so it
-cannot be used at this step
-([Adamus--Bogdan--Crespo--Hajto](https://arxiv.org/abs/1508.02012)).
+Published index-three theorems cover narrower classes: homogeneous
+power-linear maps
+([de Bondt--Yan](https://arxiv.org/abs/1302.5864);
+[Adamus--Bogdan--Crespo--Hajto](https://arxiv.org/abs/1508.02012))
+and homogeneous maps with symmetric Jacobian
+([Wright](https://arxiv.org/abs/math/0511214)).  Neither settles the
+arbitrary tensor case.
+At the present frontier, proving this case would improve
+`nu_cub>=3` to `nu_cub>=4`, but it would only recover
+`r_cub>=3` from `nu<=r+1`; the independent rank-two theorem already gives
+that rank bound.  A strict generic-rank improvement would require the
+index-four case or additional rank-three structure.
 
 ## 2. Attack A: the full cubic index-three identity ideal
 
@@ -71,7 +80,7 @@ The useful intermediate theorem is narrower:
 It splits the full problem into a finite representation-theoretic
 calculation instead of asking directly for an inverse formula.
 
-The exact triangular calibration
+The elementary triangular calibration
 
 \[
 F=(x_0+x_1^3,\ x_1+x_2^3,\ x_2)
@@ -90,8 +99,43 @@ by
 [`verify_index_three_inverse_model.py`](../scripts/verify_index_three_inverse_model.py)
 and recorded in
 [`index_three_inverse_degree_model.json`](../artifacts/generated-results/index_three_inverse_degree_model.json).
-Thus “all inverse-tree covariants above degree nine vanish” is the first
-plausible sharp theorem target; degree-seven truncation is already false.
+It only shows that degree seven is too small.  It does **not** make degree
+nine a viable full-class bound.
+
+Indeed, van den Essen gave the following cubic-homogeneous automorphism in
+dimension five in 1995:
+
+\[
+\begin{aligned}
+H={}&(3x_4^2x_2-2x_4x_5x_3,\ x_4^2x_5,\ x_4^3,\ x_5^3,\ 0),\\
+F={}&X+H.
+\end{aligned}
+\]
+
+Exact calculation gives
+
+\[
+\operatorname{rank}JH=3,\qquad (JH)^2\ne0,\qquad (JH)^3=0,
+\qquad \deg F^{-1}=13.
+\]
+
+The inverse correction has nonzero homogeneous pieces in every odd degree
+`3,5,7,9,11,13`; its degree-eleven and degree-thirteen first components are
+respectively
+
+\[
+ -4y_4y_5^{10},\qquad y_5^{13}.
+\]
+
+Thus the proposed uniform degree-nine bound is already false, with the first
+failure in the proposed test range: dimension five and generic rank three.
+The exact replay is
+[`verify_index_three_degree_bound_counterexample.py`](../scripts/verify_index_three_degree_bound_counterexample.py),
+with artifact
+[`index_three_degree_bound_counterexample.json`](../artifacts/generated-results/index_three_degree_bound_counterexample.json).
+The source is van den Essen,
+[“A counterexample to a conjecture of Drużkowski and Rusek”](https://eudml.org/doc/262620),
+Ann. Polon. Math. 62 (1995), 173--176.
 
 The first universal tree reduction is now implemented in
 [`derive_index_three_tree_obstruction.py`](../scripts/derive_index_three_tree_obstruction.py).
@@ -121,22 +165,43 @@ form is
 where `B=D^2H` and `C=D^3H`.  The complete rational tree ledger is
 [`index_three_inverse_tree_obstruction.json`](../artifacts/generated-results/index_three_inverse_tree_obstruction.json).
 
-This replaces the broad index-three question by the first exact fork:
+Van den Essen's tensor resolves this fork in the second direction:
 
-- prove `Omega_11=0` using additional polarizations of the coefficient ideal
-  of `N^3=0`, then continue to degree 13;
-- or realize `Omega_11!=0` by an exact cubic tensor satisfying `N^3=0`,
-  disproving degree-nine truncation and exposing the next inverse term.
+\[
+ \Omega_{11}(H)=(-4x_4x_5^{10},0,0,0,0)\ne0.
+\]
 
-The computation does not claim that `Omega_11` survives the full
-nilpotency ideal.  It proves that Euler, first polarization, differentiation,
-and context closure alone are insufficient.
+Because this is an actual tensor satisfying `(JH)^3=0`, `Omega_11` is not in
+the radical of the complete coefficient ideal, hence cannot be killed by
+complete polarization.  In tensor notation, if
+`A(u,v)=3T(u,v,-)` so that `N(x)=A(x,x)`, the complete polarization is the
+endomorphism identity
+
+\[
+ \sum_{\{1,\ldots,6\}=P_1\sqcup P_2\sqcup P_3}
+ A(x_{P_1})A(x_{P_2})A(x_{P_3})=0,
+\]
+
+where the sum is over the 90 ordered partitions into three unordered pairs.
+Substituting van den Essen's tensor into every such identity cannot make the
+displayed nonzero covariant vanish.
+
+The remaining theorem target is therefore strictly the **invertibility-only**
+statement for arbitrary cubic-homogeneous maps with `(JH)^3=0`; no
+dimension-independent degree-nine bound can accompany it.  The example is
+itself an automorphism, so it gives no counterexample to that surviving
+statement.  A useful next tree calculation would instead determine whether
+degrees above thirteen vanish universally or find higher-degree weak-index-
+three automorphisms before treating noninvertibility.
 
 ## 3. Attack B: rank three through the kernel bundle
 
-For `rank(JH)=3`, the generic kernel has codimension three and contains the
-image because `JH` is nilpotent.  The known rank-two classification should
-not be extended by brute-force coefficients.  The new datum at rank three is
+For `rank(JH)=3`, the generic kernel has codimension three, and `(JH)^3=0`
+gives `im((JH)^2) subset ker(JH)`.  The known rank-two classification should
+not be extended by brute-force coefficients.  The van den Essen example shows that
+this stratum is already nonempty in dimension five and that rank three plus
+index three does not force degree-nine truncation.  The new datum at rank
+three is
 the rational kernel map
 
 \[

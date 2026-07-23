@@ -179,4 +179,7 @@ is known for homogeneous power-linear maps with `(JH)^3=0`
 ([de Bondt--Yan](https://arxiv.org/abs/1302.5864)).  These results concern
 different restricted classes.  The exact frontiers are now
 `3<=r_cub<=17` and `3<=nu_cub<=18`; the full cubic-homogeneous index-three
-case is not settled by the power-linear theorem.
+invertibility case is not settled by the power-linear or symmetric-Jacobian
+theorems.  The stronger
+uniform degree-nine bound is false already in dimension five: van den Essen's
+generic-rank-three weak-index-three automorphism has inverse degree thirteen.

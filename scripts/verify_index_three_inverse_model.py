@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Exact sharp-degree calibration for the cubic index-three attack.
+"""Exact lower-degree calibration for the cubic index-three attack.
 
 The triangular cubic map
 
@@ -128,7 +128,7 @@ def main() -> None:
     OUTPUT.write_text(json.dumps(payload, indent=2) + "\n")
     print("PASS index-three model: (JH)^2!=0 and (JH)^3=0")
     print("PASS index-three model: exact two-sided polynomial inverse")
-    print("SHARP TARGET index-three model: inverse degree is 9")
+    print("LOWER CALIBRATION index-three model: inverse degree is 9")
     print(f"PASS index-three model: wrote {OUTPUT.relative_to(ROOT)}")
 
 

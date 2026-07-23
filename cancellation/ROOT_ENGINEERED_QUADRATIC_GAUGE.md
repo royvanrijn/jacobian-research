@@ -28,6 +28,53 @@ The derivative of (2) is again exactly the reconstruction coordinate.  Thus
 the inverse pencil, ramification divisor, and Jacobian cancellation remain
 three aspects of one incidence.
 
+## What the second construction adds
+
+This is not merely another polynomial map with a collision.
+
+1. **A genuinely different construction mechanism.**  The weighted family
+   is a polynomial weighted suspension of the linear-tilt plane incidence
+   \[
+    H(W)-sW+t=0,
+   \]
+   whose affine discriminant normalization is `A^1`.  The present family
+   uses the quadratic-tilt incidence
+   \[
+    G_P(S)-\frac{g_1}{2}(BS^2+C)=0,
+   \]
+   together with a birational source chart whose Jacobian is the reciprocal
+   of the plane Jacobian factor.  Its affine discriminant normalization is
+   `G_m`.  Both constructions realize the same broad cancellation principle,
+   but their plane incidences and suspension geometries are different.
+
+2. **A programmable complete fiber.**  For any admissible squarefree rooted
+   seed
+   \[
+    G(S)=g_1S+\cdots+g_NS^N,\qquad g_1g_3g_N\ne0,
+   \]
+   the complete fiber over `(1,0,0)` is exactly the root set of `G`, with one
+   source point reconstructed from each root.  The reconstruction scales are
+   the barycentric weights `g_1/G'(r_i)` and obey the standard Lagrange
+   balance relations.  Choosing `G` therefore gives direct control over
+   rational or number-field fibers, symmetries, affine balance relations,
+   heights, and the arithmetic of the root configuration.  Section 8 explains
+   why every split squarefree configuration admits an admissible marking
+   after rerooting.
+
+3. **The foundational map as the first seed.**  The choice
+   `G(S)=S^3+S` recovers the foundational counterexample exactly.  The
+   quartic is therefore the next member of one explicit all-degree extension,
+   not an unrelated example.
+
+4. **A possible stable discriminator.**  In fixed degree `N>=4`, the weighted
+   and quadratic mechanisms have different affine discriminant
+   normalizations, `A^1` and `G_m`.  Determining whether this distinction,
+   together with its boundary marking, survives stable left--right
+   equivalence is a concrete route toward proving that the two families
+   occupy different stable components.  This is the principal potential gain
+   beyond producing another large fiber; it is a proposed invariant, not yet
+   a separation theorem.
+
 ## 1. The short chart for the four-point map
 
 On `t!=0`, put

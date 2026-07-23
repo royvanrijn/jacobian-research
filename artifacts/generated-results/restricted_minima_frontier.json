@@ -106,8 +106,9 @@
     "exact_hessian_certificate": "12 polynomial syzygy generators contain 7 generically independent kernel columns, while an exact rational specialization has rank 37"
   },
   "class_scope_warning": {
-    "full_cubic_index_three": "open in this ledger; do not infer it from a power-linear theorem",
-    "power_linear_index_three": "invertible by the cited power-linear results, a strictly narrower class than arbitrary cubic-homogeneous H"
+    "full_cubic_index_three": "invertibility is open in this ledger; the uniform degree-9 bound is false by van den Essen's dimension-5 example",
+    "power_linear_index_three": "invertible by the cited power-linear results, a strictly narrower class than arbitrary cubic-homogeneous H",
+    "symmetric_jacobian_index_three": "invertible by Wright's homogeneous symmetric theorem, also strictly narrower than the arbitrary tensor class"
   },
   "attack_reductions": {
     "rank_index_coupling": {
@@ -116,9 +117,11 @@
       "current_rank_witness_saturates": "18=17+1"
     },
     "index_three_inverse_degree": {
-      "artifact": "index_three_inverse_degree_model.json",
-      "exact_calibration": "a triangular cubic index-three map has inverse degree 9",
-      "first_possible_uniform_bound": 9
+      "lower_calibration_artifact": "index_three_inverse_degree_model.json",
+      "counterexample_artifact": "index_three_degree_bound_counterexample.json",
+      "exact_result": "van den Essen's dimension-5 generic-rank-3 cubic map has weak index 3 and inverse degree 13",
+      "proposed_uniform_bound_9": "false",
+      "invertibility_only_status": "open for the full class"
     },
     "index_three_degree_11_obstruction": {
       "artifact": "index_three_inverse_tree_obstruction.json",
@@ -126,7 +129,7 @@
       "known_relation_rank": 5,
       "quotient_dimension": 3,
       "normal_form": "-1/2 C(NH,H,H) -1/2 B(B(H,H),H) -1/6 N(C(H,H,H))",
-      "status": "not killed by Euler plus the implemented differential/context closure; full polarized ideal open"
+      "status": "realized nontrivially by van den Essen's exact tensor, so it is not killed by the full coefficient ideal"
     },
     "rank_three_index_three_normal_form_exclusion": {
       "artifact": "index_three_rank_normal_form_exclusion.json",
@@ -145,7 +148,10 @@
   },
   "primary_sources": {
     "rank_two_cubic": "https://arxiv.org/abs/1803.05551",
-    "power_linear_index_three": "https://arxiv.org/abs/1508.02012",
+    "power_linear_index_three": "https://arxiv.org/abs/1302.5864",
+    "cubic_linear_index_three": "https://arxiv.org/abs/1508.02012",
+    "symmetric_jacobian_index_three": "https://arxiv.org/abs/math/0511214",
+    "index_three_degree_bound_counterexample": "https://eudml.org/doc/262620",
     "HN_vanishing_equivalence": "https://arxiv.org/abs/math/0409534",
     "symmetric_low_dimension": "https://doi.org/10.1016/j.jpaa.2004.08.030"
   },

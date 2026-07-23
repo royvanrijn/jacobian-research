@@ -5,6 +5,41 @@ framework.  Their source formulas differ, but both affine sources are
 regular-reconstruction opens inside finite normalized covers obtained by
 marking one inverse root.
 
+## A unifying thesis
+
+The repository's organizing mechanism is developed in the standalone
+[unifying thesis](UNIFYING_THESIS.md).  In brief, a ramified marked-root
+incidence is suspended so that its core Jacobian zero is cancelled by a
+vertical or rational source-chart factor.  The resulting polynomial map is
+etale, but affine source space is only the regular-reconstruction open in
+the finite normalized root cover.  A boundary divisor is omitted exactly
+when some source reconstruction coordinate has negative valuation there.
+
+The two principal realizations are:
+
+- a polynomial weighted suspension of the ramified tangent incidence;
+- a birational cancellation suspension whose source chart contributes the
+  reciprocal boundary power.
+
+The foundational cubic is the smallest point at which the two realizations
+are polynomially left--right equivalent.  The standalone note proves the
+boundary--reconstruction criterion, identifies the nonproperness locus with
+the finite image of the normalization boundary, works out both cubic
+ledgers, and separates direct consequences from family-specific theorems and
+later analogies.
+
+The deepest recurring dichotomy is
+
+\[
+\boxed{\text{formal/local solvability}
+\quad\text{versus}\quad
+\text{global polynomial algebraization}.}
+\]
+
+The thesis is proved for the displayed weighted and cancellation families.
+Its use as an exhaustive description is the scoped
+[minimal-boundary classification conjecture](cancellation/MINIMAL_BOUNDARY_CLASSIFICATION.md).
+
 ## 1. Marked-root presentations
 
 Let `Y` be a normal affine variety over a characteristic-zero field `k`.  A

@@ -134,6 +134,7 @@ verify-theorems:
 	$(PYTHON) scripts/verify_real_fiber_spectrum.py
 	$(PYTHON) scripts/verify_hasse_keller_fiber.py
 	$(PYTHON) scripts/verify_weighted_marked_root_model.py
+	$(PYTHON) scripts/verify_intrinsic_selector_attack.py
 	$(SYSTEM_PYTHON) scripts/audit_weighted_independent.py
 	$(PYTHON) scripts/verify_universal_discriminant_incidences.py
 	$(PYTHON) scripts/verify_contact_partition_strata.py
@@ -242,6 +243,7 @@ verify-restricted-minima:
 	$(SYSTEM_PYTHON) scripts/audit_hessian_rank_reduced_bcw_22_independent.py
 	$(PYTHON) scripts/analyze_cotangent_kernel_excess.py
 	$(PYTHON) scripts/verify_index_three_inverse_model.py
+	$(PYTHON) scripts/verify_index_three_degree_bound_counterexample.py
 	$(PYTHON) scripts/derive_index_three_tree_obstruction.py
 	$(PYTHON) scripts/verify_index_three_rank_normal_form.py
 	$(PYTHON) scripts/verify_restricted_minima_frontier.py

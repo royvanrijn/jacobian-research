@@ -63,7 +63,11 @@ quartic HN lifts, the current exact intervals are
 The rank lower bound is the rank-two cubic theorem.  The index lower bound is
 elementary: if \((JH)^2=0\), then Euler's identity gives \(JH\,H=0\), so
 \(X+H\) is the quasi-translation with inverse \(X-H\).  No full-class
-index-three theorem is claimed; the known power-linear result is narrower.
+index-three invertibility theorem is claimed; the known power-linear and
+symmetric-Jacobian results are narrower.  A uniform inverse-degree-nine
+strengthening is impossible:
+van den Essen's dimension-five generic-rank-three automorphism has
+\((JH)^3=0\) and inverse degree thirteen.
 
 The upper endpoints are exact invariants of stored witnesses, not sampled
 matrix ranks.  Their construction and independent replays are documented in

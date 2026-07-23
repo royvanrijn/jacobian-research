@@ -72,6 +72,16 @@ The common geometric normal form is
 (W,s)\longmapsto (s,Ws-H(W)).
 \]
 
+The [unifying marked-root thesis](UNIFYING_THESIS.md)
+interprets the repository through one local--global mechanism.  A ramified
+finite root incidence is suspended so that its Jacobian zero is cancelled by
+a complementary vertical or source-chart factor.  The resulting polynomial
+map is etale, but its affine source is only the regular-reconstruction open
+of the finite normalization.  Noninvertibility is therefore carried by
+boundary poles and escape to infinity, not by finite ramification.  The same
+formal/local-versus-global-polynomial dichotomy reappears in the stable-orbit
+and quantization problems.
+
 The [tangent-map core](verified/TANGENT_MAP_CORE.md) supplies the inverse
 pencil, generic degree, critical divisor, discriminant normalization, full
 Hessian Fitting divisor, incidence form, weighted suspension, and comparison
@@ -477,8 +487,11 @@ frontiers:
   has lowered the rank upper bound from 18 to 17 and the index upper bound
   from 19 to 18, while a separate 44-variable HN lift lowers the exact
   quartic Hessian-rank upper bound from 38 to 37.  Continue circuit-level
-  rank/power-rank search and resolve the full-class index-three case
-  separately from the known power-linear theorem; see the
+  rank/power-rank search and resolve the invertibility-only full-class
+  index-three case separately from the known power-linear and
+  symmetric-Jacobian theorems.  The
+  stronger inverse-degree-nine claim is already false by van den Essen's
+  exact dimension-five rank-three example of inverse degree thirteen; see the
   [restricted-minima frontier](extended-geometry/RESTRICTED_MINIMA_FRONTIER.md).
 - `OP-SUSP`: minimal-boundary classification.  Extract the primitive
   quadratic conormal coefficient of the `G_m` critical boundary and the

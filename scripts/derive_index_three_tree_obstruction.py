@@ -16,7 +16,11 @@ by the universal differential/context closure of two consequences of
   direction ``H``.
 
 The reduction is a universal tensor identity, not a sampled calculation.
-An exact triangular model independently checks the tree expansion.
+Two exact triangular models independently check the tree expansion.  The
+three-variable model truncates in degree nine, while van den Essen's
+five-variable model realizes a nonzero degree-eleven term.  The latter proves
+that the degree-eleven class cannot be killed by the full coefficient ideal
+of ``(JH)^3=0``.
 """
 
 from __future__ import annotations
@@ -398,6 +402,58 @@ def main() -> None:
         ]
         assert evaluated == expected
 
+    # Van den Essen's exact rank-three, weak-index-three automorphism realizes
+    # the unresolved class: its inverse has K_11=(-4*y4*y5^10,0,0,0,0).
+    x5 = sp.symbols("x1:6")
+    y5 = sp.symbols("y1:6")
+    _, x2, x3, x4, x_5 = x5
+    h5 = [
+        3 * x4**2 * x2 - 2 * x4 * x_5 * x3,
+        x4**2 * x_5,
+        x4**3,
+        x_5**3,
+        sp.Integer(0),
+    ]
+    jacobian5 = sp.Matrix(h5).jacobian(x5)
+    assert jacobian5**2 != sp.zeros(5)
+    assert jacobian5**3 == sp.zeros(5)
+    u = y5[3] - y5[4] ** 3
+    inverse5 = [
+        y5[0]
+        - 3 * u**2 * (y5[1] - u**2 * y5[4])
+        + 2 * u * y5[4] * (y5[2] - u**3),
+        y5[1] - u**2 * y5[4],
+        y5[2] - u**3,
+        y5[3] - y5[4] ** 3,
+        y5[4],
+    ]
+    evaluated_degree_11 = [
+        sp.expand(value.subs(dict(zip(x5, y5)), simultaneous=True))
+        for value in evaluate_vector(parts[11], h5, x5)
+    ]
+    expected_degree_11 = [
+        sum(
+            coefficient
+            * sp.prod(
+                variable**power
+                for variable, power in zip(y5, exponents)
+            )
+            for exponents, coefficient in sp.Poly(
+                component - variable, *y5, domain=sp.QQ
+            ).terms()
+            if sum(exponents) == 11
+        )
+        for component, variable in zip(inverse5, y5)
+    ]
+    assert evaluated_degree_11 == expected_degree_11
+    assert evaluated_degree_11 == [
+        -4 * y5[3] * y5[4] ** 10,
+        0,
+        0,
+        0,
+        0,
+    ]
+
     payload = {
         "format": "cubic-index-three-inverse-tree-obstruction-v1",
         "field": "characteristic zero",
@@ -431,18 +487,28 @@ def main() -> None:
             str(coefficient) for coefficient in coefficients
         ],
         "interpretation": (
-            "if true, K_11 vanishes under the displayed universal closure; "
-            "otherwise its displayed quotient class is the first unresolved "
-            "inverse covariant and additional polarized identities are needed"
+            "K_11 is not in the displayed relation span and van den Essen's "
+            "exact weak-index-three tensor evaluates it nontrivially; hence "
+            "K_11 is not killed by the full coefficient ideal of (JH)^3=0"
         ),
         "triangular_model_check": (
             "all tree pieces through degree 11 agree with the exact "
             "degree-nine inverse"
         ),
+        "van_den_essen_realization": {
+            "dimension": 5,
+            "generic_rank_JH": 3,
+            "inverse_degree": 13,
+            "degree_11_evaluation": "(-4*y4*y5^10,0,0,0,0)",
+            "consequence": (
+                "the degree-11 class survives the full coefficient variety"
+            ),
+        },
     }
     OUTPUT.write_text(json.dumps(payload, indent=2) + "\n")
     print("PASS index-three trees: exact inverse recursion through degree 11")
     print("PASS index-three trees: triangular calibration agrees degree by degree")
+    print("PASS index-three trees: van den Essen realizes nonzero K_11")
     print(
         "RESULT index-three trees: "
         f"K_11 in Euler/differential/context span = {contained}"

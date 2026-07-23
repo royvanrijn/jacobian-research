@@ -226,6 +226,46 @@ primitive element, or branch label chosen only from a presentation.  A
 family-specific theorem must identify each such item by a unique property of
 `mathcal B(F)` before the stabilization theorem can be invoked.
 
+### Affine-versus-boundary selector lemma
+
+One uniqueness test is nevertheless uniform across all polynomial families.
+Let `v` be a divisorial valuation of
+
+\[
+ k(x_1,\ldots,x_n).
+\]
+
+Its center lies in the affine source `A^n` exactly when
+
+\[
+ v(f)\geq0\quad\text{for every }f\in k[x_1,\ldots,x_n],
+\]
+
+or equivalently when this holds for every coordinate generator `x_i`.  A
+polynomial automorphism and its polynomial inverse express either coordinate
+set in the other, so they preserve this condition in both directions.
+
+After adjoining identity variables, the stabilized boundary valuation is the
+Gauss extension with `v(t_i)=0`.  Applying the same argument to
+`k[x_1,...,x_n,t_1,...,t_s]` proves:
+
+\[
+ \boxed{\text{no stable polynomial source automorphism sends an affine
+ branch to a boundary branch or conversely.}}          \tag{11}
+\]
+
+This remains true when the automorphism mixes identity variables with boundary
+coordinates; a negative valuation may move between coordinate functions, but
+the polynomial inverse prevents all negative valuations from disappearing.
+Thus a family may select a presentation branch intrinsically by proving that
+it is the **unique** candidate branch meeting `j_F(U)`, provided candidate
+completeness and uniqueness are established from the package.  The
+[symmetric-quintic selector attack](../extended-geometry/INTRINSIC_SELECTOR_ATTACK.md)
+is the smallest explicit stress test: a coarse `mu_3` symmetry permutes the
+three primitive-root candidates, but moves the unique affine candidate to a
+pole-two boundary sheet and therefore cannot be a stable left--right
+self-equivalence of the full package.
+
 ## Use in the repository
 
 The theorem is deliberately independent of the weighted and cancellation

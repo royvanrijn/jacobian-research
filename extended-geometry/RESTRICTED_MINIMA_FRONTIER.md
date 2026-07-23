@@ -49,11 +49,17 @@ For the index lower bound, `(JH)^2=0` and Euler's identity give
 its exponential sends `X` to `X+tH`, so `X+H` is a quasi-translation with
 inverse `X-H`.  Thus a noninjective witness has index at least three.
 
-There is an important scope boundary at index three.  The published
-index-three result used here is for **power-linear** maps, not for arbitrary
+There is an important scope boundary at index three.  Published results cover
+**power-linear** maps and maps with symmetric Jacobian, not arbitrary
 cubic-homogeneous corrections.  Consequently this repository does not claim
 `nu_cub>=4`.  The full-class index-three question remains open in this
-ledger.
+ledger.  Moreover, the stronger degree-nine statement is false: van den
+Essen's dimension-five cubic-homogeneous automorphism has generic Jacobian
+rank three, `(JH)^3=0`, and inverse degree thirteen.  The exact certificate is
+[`index_three_degree_bound_counterexample.json`](../artifacts/generated-results/index_three_degree_bound_counterexample.json).
+Its nonzero degree-eleven inverse term realizes the previously unresolved
+tree class; this is a degree-bound counterexample, not a noninvertible Keller
+map.
 
 ## 2. Circuit changes lower the exact rank and index
 

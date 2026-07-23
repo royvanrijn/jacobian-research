@@ -571,6 +571,7 @@ identities are checked exactly by
 ```bash
 .venv/bin/python scripts/verify_stable_generator_rigidity.py
 .venv/bin/python scripts/verify_generic_affine_mark_faithfulness.py
+.venv/bin/python scripts/verify_intrinsic_selector_attack.py
 .venv/bin/python scripts/verify_hasse_typical_seed_recovery.py
 .venv/bin/python scripts/verify_multicluster_ll_comparison.py
 .venv/bin/python scripts/verify_labelled_node_saturation.py
@@ -808,8 +809,19 @@ python3 scripts/audit_index_reduced_bcw_22_independent.py
 python3 scripts/audit_rank_reduced_bcw_24_independent.py
 .venv/bin/python scripts/verify_hessian_rank_reduced_bcw_22_route.py
 python3 scripts/audit_hessian_rank_reduced_bcw_22_independent.py
+.venv/bin/python scripts/verify_index_three_inverse_model.py
+.venv/bin/python scripts/verify_index_three_degree_bound_counterexample.py
+.venv/bin/python scripts/derive_index_three_tree_obstruction.py
 .venv/bin/python scripts/verify_restricted_minima_frontier.py
 ```
+
+The second index-three command replays van den Essen's dimension-five
+generic-rank-three automorphism, proves `(JH)^3=0`, verifies both inverse
+compositions, and extracts the nonzero degree-eleven and degree-thirteen
+terms.  The tree command independently evaluates the degree-eleven normal
+form on the same tensor.  Together they disprove the proposed uniform
+inverse-degree-nine bound while leaving the full-class invertibility-only
+question open.
 
 The sharp remaining Gaussian dimension and the cross-conjecture minimum
 ledger have their own fast exact target:

@@ -1,0 +1,72 @@
+{
+  "format": "two-real-gmc-five-weight-chart-v1",
+  "key": "s_m3_m1_0_1_3__c_0_0_0_0_0",
+  "support": [
+    -3,
+    -1,
+    0,
+    1,
+    3
+  ],
+  "reflected_support": [
+    -3,
+    -1,
+    0,
+    1,
+    3
+  ],
+  "chart": [
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "selected_coefficients": [
+    "n3_0",
+    "n1_0",
+    "h0",
+    "p1_0",
+    "p3_0"
+  ],
+  "normalization": {
+    "n3_0": 1,
+    "n1_0": 1
+  },
+  "localization_factor": "h0*p1_0*p3_0",
+  "raw_charts_covered": 2,
+  "discovery_prime": 1000003,
+  "cutoffs": [
+    8,
+    10,
+    12
+  ],
+  "modular_discovery": [
+    {
+      "basis_size": 1,
+      "dimension": -1,
+      "is_unit": 1,
+      "vector_dimension": null,
+      "cutoff": 8,
+      "characteristic": 1000003,
+      "elapsed_seconds": 0.131
+    }
+  ],
+  "rational_promotion": {
+    "basis_size": 1,
+    "dimension": -1,
+    "is_unit": 1,
+    "vector_dimension": null,
+    "cutoff": 8,
+    "characteristic": 0,
+    "elapsed_seconds": 14.293
+  },
+  "status": "exact_unit",
+  "exact_certificate": {
+    "field": "QQ",
+    "moments_through": 8,
+    "reduced_basis": [
+      "1"
+    ]
+  }
+}

@@ -1,0 +1,390 @@
+{
+  "format": "cubic-index-three-degree-bound-counterexample-v1",
+  "field": "QQ",
+  "source": {
+    "author": "Arno van den Essen",
+    "title": "A counterexample to a conjecture of Druzkowski and Rusek",
+    "journal": "Annales Polonici Mathematici 62.2 (1995), 173-176",
+    "url": "https://eudml.org/doc/262620"
+  },
+  "dimension": 5,
+  "H": [
+    [
+      {
+        "monomial": [
+          [
+            1,
+            1
+          ],
+          [
+            3,
+            2
+          ]
+        ],
+        "coefficient": "3"
+      },
+      {
+        "monomial": [
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            4,
+            1
+          ]
+        ],
+        "coefficient": "-2"
+      }
+    ],
+    [
+      {
+        "monomial": [
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            1
+          ]
+        ],
+        "coefficient": "1"
+      }
+    ],
+    [
+      {
+        "monomial": [
+          [
+            3,
+            3
+          ]
+        ],
+        "coefficient": "1"
+      }
+    ],
+    [
+      {
+        "monomial": [
+          [
+            4,
+            3
+          ]
+        ],
+        "coefficient": "1"
+      }
+    ],
+    [
+      {
+        "monomial": [],
+        "coefficient": "0"
+      }
+    ]
+  ],
+  "generic_rank_JH": 3,
+  "rank_three_minor": "-9*x4^6",
+  "weak_nilpotency_index_JH": 3,
+  "strong_nilpotency_index_JH": 4,
+  "jacobian_determinant": "1",
+  "inverse": [
+    [
+      {
+        "monomial": [
+          [
+            0,
+            1
+          ]
+        ],
+        "coefficient": "1"
+      },
+      {
+        "monomial": [
+          [
+            1,
+            1
+          ],
+          [
+            3,
+            2
+          ]
+        ],
+        "coefficient": "-3"
+      },
+      {
+        "monomial": [
+          [
+            1,
+            1
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            4,
+            3
+          ]
+        ],
+        "coefficient": "6"
+      },
+      {
+        "monomial": [
+          [
+            1,
+            1
+          ],
+          [
+            4,
+            6
+          ]
+        ],
+        "coefficient": "-3"
+      },
+      {
+        "monomial": [
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            4,
+            1
+          ]
+        ],
+        "coefficient": "2"
+      },
+      {
+        "monomial": [
+          [
+            2,
+            1
+          ],
+          [
+            4,
+            4
+          ]
+        ],
+        "coefficient": "-2"
+      },
+      {
+        "monomial": [
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            1
+          ]
+        ],
+        "coefficient": "1"
+      },
+      {
+        "monomial": [
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            4
+          ]
+        ],
+        "coefficient": "-4"
+      },
+      {
+        "monomial": [
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            7
+          ]
+        ],
+        "coefficient": "6"
+      },
+      {
+        "monomial": [
+          [
+            3,
+            1
+          ],
+          [
+            4,
+            10
+          ]
+        ],
+        "coefficient": "-4"
+      },
+      {
+        "monomial": [
+          [
+            4,
+            13
+          ]
+        ],
+        "coefficient": "1"
+      }
+    ],
+    [
+      {
+        "monomial": [
+          [
+            1,
+            1
+          ]
+        ],
+        "coefficient": "1"
+      },
+      {
+        "monomial": [
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            1
+          ]
+        ],
+        "coefficient": "-1"
+      },
+      {
+        "monomial": [
+          [
+            3,
+            1
+          ],
+          [
+            4,
+            4
+          ]
+        ],
+        "coefficient": "2"
+      },
+      {
+        "monomial": [
+          [
+            4,
+            7
+          ]
+        ],
+        "coefficient": "-1"
+      }
+    ],
+    [
+      {
+        "monomial": [
+          [
+            2,
+            1
+          ]
+        ],
+        "coefficient": "1"
+      },
+      {
+        "monomial": [
+          [
+            3,
+            3
+          ]
+        ],
+        "coefficient": "-1"
+      },
+      {
+        "monomial": [
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            3
+          ]
+        ],
+        "coefficient": "3"
+      },
+      {
+        "monomial": [
+          [
+            3,
+            1
+          ],
+          [
+            4,
+            6
+          ]
+        ],
+        "coefficient": "-3"
+      },
+      {
+        "monomial": [
+          [
+            4,
+            9
+          ]
+        ],
+        "coefficient": "1"
+      }
+    ],
+    [
+      {
+        "monomial": [
+          [
+            3,
+            1
+          ]
+        ],
+        "coefficient": "1"
+      },
+      {
+        "monomial": [
+          [
+            4,
+            3
+          ]
+        ],
+        "coefficient": "-1"
+      }
+    ],
+    [
+      {
+        "monomial": [
+          [
+            4,
+            1
+          ]
+        ],
+        "coefficient": "1"
+      }
+    ]
+  ],
+  "inverse_degree": 13,
+  "nonzero_inverse_correction_degrees": [
+    3,
+    5,
+    7,
+    9,
+    11,
+    13
+  ],
+  "degree_eleven_term": "-4*y4*y5^10 in the first inverse component",
+  "degree_thirteen_term": "y5^13 in the first inverse component",
+  "omega_11_evaluation": "(-4*x4*x5^10,0,0,0,0)",
+  "consequences": [
+    "the proposed uniform inverse-degree bound 9 is false",
+    "the degree-11 inverse covariant survives the full coefficient variety (JH)^3=0",
+    "the surviving tensor is an automorphism and does not refute index-three invertibility",
+    "the first degree-bound failure occurs in dimension 5 at generic rank 3"
+  ]
+}

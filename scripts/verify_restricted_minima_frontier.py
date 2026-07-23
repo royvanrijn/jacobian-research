@@ -73,6 +73,9 @@ def main() -> None:
     )
     kernel_excess = load("cotangent_kernel_excess_frontier.json")
     index_three_model = load("index_three_inverse_degree_model.json")
+    index_three_degree_counterexample = load(
+        "index_three_degree_bound_counterexample.json"
+    )
     index_three_trees = load("index_three_inverse_tree_obstruction.json")
     index_three_normal_form = load(
         "index_three_rank_normal_form_exclusion.json"
@@ -262,6 +265,18 @@ def main() -> None:
         7,
         9,
     ]
+    assert index_three_degree_counterexample["format"] == (
+        "cubic-index-three-degree-bound-counterexample-v1"
+    )
+    assert index_three_degree_counterexample["dimension"] == 5
+    assert index_three_degree_counterexample["generic_rank_JH"] == 3
+    assert (
+        index_three_degree_counterexample["weak_nilpotency_index_JH"] == 3
+    )
+    assert index_three_degree_counterexample["inverse_degree"] == 13
+    assert index_three_degree_counterexample["omega_11_evaluation"] == (
+        "(-4*x4*x5^10,0,0,0,0)"
+    )
     assert index_three_trees["format"] == (
         "cubic-index-three-inverse-tree-obstruction-v1"
     )
@@ -287,6 +302,9 @@ def main() -> None:
         "B(B(H,H),H)": "-1/2",
         "N(C(H,H,H))": "-1/6",
     }
+    assert index_three_trees["van_den_essen_realization"][
+        "degree_11_evaluation"
+    ] == "(-4*y4*y5^10,0,0,0,0)"
     assert index_three_normal_form["format"] == (
         "cubic-index-three-rank-normal-form-exclusion-v1"
     )
@@ -471,11 +489,16 @@ def main() -> None:
         },
         "class_scope_warning": {
             "full_cubic_index_three": (
-                "open in this ledger; do not infer it from a power-linear theorem"
+                "invertibility is open in this ledger; the uniform degree-9 "
+                "bound is false by van den Essen's dimension-5 example"
             ),
             "power_linear_index_three": (
                 "invertible by the cited power-linear results, a strictly "
                 "narrower class than arbitrary cubic-homogeneous H"
+            ),
+            "symmetric_jacobian_index_three": (
+                "invertible by Wright's homogeneous symmetric theorem, also "
+                "strictly narrower than the arbitrary tensor class"
             ),
         },
         "attack_reductions": {
@@ -488,11 +511,18 @@ def main() -> None:
                 "current_rank_witness_saturates": "18=17+1",
             },
             "index_three_inverse_degree": {
-                "artifact": "index_three_inverse_degree_model.json",
-                "exact_calibration": (
-                    "a triangular cubic index-three map has inverse degree 9"
+                "lower_calibration_artifact": (
+                    "index_three_inverse_degree_model.json"
                 ),
-                "first_possible_uniform_bound": 9,
+                "counterexample_artifact": (
+                    "index_three_degree_bound_counterexample.json"
+                ),
+                "exact_result": (
+                    "van den Essen's dimension-5 generic-rank-3 cubic map "
+                    "has weak index 3 and inverse degree 13"
+                ),
+                "proposed_uniform_bound_9": "false",
+                "invertibility_only_status": "open for the full class",
             },
             "index_three_degree_11_obstruction": {
                 "artifact": "index_three_inverse_tree_obstruction.json",
@@ -504,8 +534,8 @@ def main() -> None:
                     "-1/6 N(C(H,H,H))"
                 ),
                 "status": (
-                    "not killed by Euler plus the implemented "
-                    "differential/context closure; full polarized ideal open"
+                    "realized nontrivially by van den Essen's exact tensor, "
+                    "so it is not killed by the full coefficient ideal"
                 ),
             },
             "rank_three_index_three_normal_form_exclusion": {
@@ -538,7 +568,14 @@ def main() -> None:
         },
         "primary_sources": {
             "rank_two_cubic": "https://arxiv.org/abs/1803.05551",
-            "power_linear_index_three": "https://arxiv.org/abs/1508.02012",
+            "power_linear_index_three": "https://arxiv.org/abs/1302.5864",
+            "cubic_linear_index_three": "https://arxiv.org/abs/1508.02012",
+            "symmetric_jacobian_index_three": (
+                "https://arxiv.org/abs/math/0511214"
+            ),
+            "index_three_degree_bound_counterexample": (
+                "https://eudml.org/doc/262620"
+            ),
             "HN_vanishing_equivalence": "https://arxiv.org/abs/math/0409534",
             "symmetric_low_dimension": (
                 "https://doi.org/10.1016/j.jpaa.2004.08.030"
@@ -678,6 +715,7 @@ def main() -> None:
     print("PASS restricted minima: circuit witness has exact nilpotency index 18")
     print("PASS restricted minima: HN quartic upper bounds are dimension 42 and rank 37")
     print("PASS restricted minima: full cubic and power-linear index-three scopes are separated")
+    print("PASS restricted minima: van den Essen disproves the uniform degree-9 bound")
     print(
         "OPEN exact intervals: "
         "3<=r_cub<=17, 3<=nu_cub<=18, "

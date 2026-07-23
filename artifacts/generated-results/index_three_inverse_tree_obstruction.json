@@ -86,6 +86,13 @@
     }
   },
   "relation_combination_coefficients": [],
-  "interpretation": "if true, K_11 vanishes under the displayed universal closure; otherwise its displayed quotient class is the first unresolved inverse covariant and additional polarized identities are needed",
-  "triangular_model_check": "all tree pieces through degree 11 agree with the exact degree-nine inverse"
+  "interpretation": "K_11 is not in the displayed relation span and van den Essen's exact weak-index-three tensor evaluates it nontrivially; hence K_11 is not killed by the full coefficient ideal of (JH)^3=0",
+  "triangular_model_check": "all tree pieces through degree 11 agree with the exact degree-nine inverse",
+  "van_den_essen_realization": {
+    "dimension": 5,
+    "generic_rank_JH": 3,
+    "inverse_degree": 13,
+    "degree_11_evaluation": "(-4*y4*y5^10,0,0,0,0)",
+    "consequence": "the degree-11 class survives the full coefficient variety"
+  }
 }

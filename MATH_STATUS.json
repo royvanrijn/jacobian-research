@@ -110,7 +110,7 @@
       "kind": "theorem",
       "state": "proved",
       "title": "Stable normalization functoriality",
-      "scope": "The Zariski-Main normalization package is functorially reconstructed from a dominant quasi-finite map; polynomial stabilization preserves it, its boundary primes and (e,f), scheme intersections and nilpotency indices, Fitting ideals, node pairings, and conductors. Stable left-right invariance applies only to decorations intrinsically selected from that package.",
+      "scope": "The Zariski-Main normalization package is functorially reconstructed from a dominant quasi-finite map; polynomial stabilization preserves it, its boundary primes and (e,f), scheme intersections and nilpotency indices, Fitting ideals, node pairings, and conductors. Affine-versus-boundary status of a divisorial branch survives arbitrary polynomial mixing with identity variables. Stable left-right invariance applies only to decorations intrinsically selected from that package.",
       "canonical_source": "verified/STABLE_NORMALIZATION_FUNCTORIALITY.md",
       "dependencies": [],
       "checker": null,
@@ -870,6 +870,26 @@
       ],
       "replaced_by": [],
       "priority": "core"
+    },
+    {
+      "id": "IS1",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Stable intrinsic-selector rigidity on the weighted clean locus",
+      "scope": "The canonical symmetric quintic H=(W^2-W^5)/3 has a coarse mu_3 incidence-cover symmetry which preserves the effective Fitting divisor and both reduced target boundary images while cyclically permuting the three primitive-root candidates. It is not realizable by a stable polynomial left-right self-equivalence of the full Zariski-Main package: only root one meets the affine source, the other two sheets have pole order two, and affine-versus-boundary status is preserved under arbitrary polynomial stabilization and source automorphisms. Zero, infinity, and the target-boundary order pass their stated intrinsic selectors; before the regular-sheet selector is included, the root data are only unordered or stacky.",
+      "canonical_source": "extended-geometry/INTRINSIC_SELECTOR_ATTACK.md",
+      "dependencies": [
+        "S1",
+        "WB1",
+        "IA1"
+      ],
+      "checker": "scripts/verify_intrinsic_selector_attack.py",
+      "review": "none",
+      "supersedes": [
+        "unchecked assumption that a presentation root is automatically selected by coarse normalization data"
+      ],
+      "replaced_by": [],
+      "priority": "reference"
     },
     {
       "id": "GD1",
@@ -3250,7 +3270,7 @@
       "kind": "open_problem",
       "state": "open",
       "title": "Restricted cubic and quartic-HN exact minima",
-      "scope": "Determine the exact values in the current intervals 3<=r_cub<=17, 3<=nu_cub<=18, 3<=rho_HN,4<=37, and 6<=n_HN,4<=42. The rank/index inequality nu<=rank+1 makes the full-class index program the master lower-bound attack. An exact triangular index-three calibration has inverse degree nine. The exact rooted-tree reduction through degree eleven has tree-space dimension eight; Euler, first-polarization, differential, and context consequences have rank five and leave Omega_11=-C(NH,H,H)/2-B(B(H,H),H)/2-N(C(H,H,H))/6 in a three-dimensional quotient. The next theorem step is to kill or realize this class using the full polarized ideal of (JH)^3=0. In the four-variable lambda plus two arbitrary binary-cubic normal-form family, exact coefficient extraction proves that index three forces lambda=0, rank at most two, and inverse degree at most five; every rank-three member has index at least four. On the quartic side, the exact cotangent formula rank Hess(y.H)=2 rank(JH)+rank(A restricted to ker JH) reduces the next upper-bound target to rank 18 with zero kernel excess or rank 17 with excess at most two. The current rank-37 source has exact generic excess one; the rank-17 source has sampled excess four. In the combined 140-terminal search the rank-37 source is uniquely excess one and no terminal has sampled excess zero. Continue with the remaining rank-three kernel-bundle strata, excess-directed circuit synthesis, and direct dimension-six HN saturation.",
+      "scope": "Determine the exact values in the current intervals 3<=r_cub<=17, 3<=nu_cub<=18, 3<=rho_HN,4<=37, and 6<=n_HN,4<=42. The rank/index inequality nu<=rank+1 makes the full-class index program the master lower-bound attack. The proposed index-three inverse-degree bound nine is false: van den Essen's exact dimension-five cubic automorphism has generic rank three, weak index three, and inverse degree thirteen. Its degree-eleven term realizes Omega_11=-C(NH,H,H)/2-B(B(H,H),H)/2-N(C(H,H,H))/6 nontrivially, so the class is not killed by the full coefficient ideal of (JH)^3=0; the invertibility-only full-class theorem remains open. In the four-variable lambda plus two arbitrary binary-cubic normal-form family, exact coefficient extraction proves that index three forces lambda=0, rank at most two, and inverse degree at most five; every rank-three member has index at least four. On the quartic side, the exact cotangent formula rank Hess(y.H)=2 rank(JH)+rank(A restricted to ker JH) reduces the next upper-bound target to rank 18 with zero kernel excess or rank 17 with excess at most two. The current rank-37 source has exact generic excess one; the rank-17 source has sampled excess four. In the combined 140-terminal search the rank-37 source is uniquely excess one and no terminal has sampled excess zero. Continue with the remaining rank-three kernel-bundle strata, excess-directed circuit synthesis, and direct dimension-six HN saturation.",
       "canonical_source": "extended-geometry/RESTRICTED_MINIMA_FRONTIER.md",
       "dependencies": [
         "LR2",
