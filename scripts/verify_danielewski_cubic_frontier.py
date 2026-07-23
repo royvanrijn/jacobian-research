@@ -103,9 +103,10 @@ print("PASS: the open immersion converts J to the opposite ordinary Jacobian")
 
 
 # The ambient-degree-at-most-three quotient has 35 monomials and the single
-# relation cw-x^3-x.  After fixing constants and the source-linear jet, each
-# target row has 29 nonlinear coefficients.
-exponents: list[tuple[int, int, int, int]] = []
+# relation cw-x^3-x.  After fixing constants and the source-linear jet, the
+# coefficient of x remains free because x=bc has zero source-linear jet.  Each
+# target row therefore has 30 residual coefficients.
+exponents: list[tuple[int, int, int, int]] = [(0, 0, 1, 0)]
 for total_degree in (2, 3):
     for a_power in range(total_degree, -1, -1):
         for c_power in range(total_degree - a_power, -1, -1):
@@ -119,9 +120,9 @@ for total_degree in (2, 3):
                 if exponent == (0, 1, 0, 1):
                     continue
                 exponents.append(exponent)
-assert len(exponents) == 29
-assert 1 + 4 + 29 == 34
-print("PASS: the normalized ambient-cubic ansatz has 87 coefficients")
+assert len(exponents) == 30
+assert 1 + 3 + 30 == 34
+print("PASS: the normalized ambient-cubic ansatz has 90 coefficients")
 
 
 # Compile the generic cubic flux sparsely.  Coefficient monomials are tuples of
@@ -138,7 +139,7 @@ for row, leading in enumerate(
     rows.append(
         [(leading, ())]
         + [
-            (exponent, (29 * row + column,))
+            (exponent, (30 * row + column,))
             for column, exponent in enumerate(exponents)
         ]
     )

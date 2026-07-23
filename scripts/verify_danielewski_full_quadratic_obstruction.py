@@ -12,7 +12,8 @@ import sympy as sp
 a, b, c = sp.symbols("a b c")
 x = b * c
 w = b * (x**2 + 1)
-quadratic_basis = (
+residual_basis = (
+    x,
     a * c,
     a * x,
     a * w,
@@ -24,13 +25,13 @@ quadratic_basis = (
     c * x,
     x * w,
 )
-width = len(quadratic_basis)
+width = len(residual_basis)
 coefficients = sp.symbols(f"z0:{3 * width}")
 targets = tuple(
     leading
     + sum(
         coefficients[width * row + column] * term
-        for column, term in enumerate(quadratic_basis)
+        for column, term in enumerate(residual_basis)
     )
     for row, leading in enumerate((a, c, w))
 )
@@ -62,20 +63,21 @@ free_variables = tuple(
         key=lambda variable: int(str(variable)[1:]),
     )
 )
-assert len(free_variables) == 27
+assert len(free_variables) == 30
 
 reduced_equations: list[sp.Expr] = []
+seen_equations: set[str] = set()
 for _, equation in error.terms():
     reduced = sp.factor(equation.xreplace(linear_substitution))
     if reduced == 0:
         continue
-    if all(
-        sp.expand(reduced - previous) != 0
-        for previous in reduced_equations
-    ):
-        reduced_equations.append(sp.expand(reduced))
+    reduced = sp.expand(reduced)
+    key = sp.srepr(reduced)
+    if key not in seen_equations:
+        seen_equations.add(key)
+        reduced_equations.append(reduced)
 assert len(reduced_equations) == 89
-print("PASS: the normalized ledger has 27 variables and 89 equations")
+print("PASS: the corrected normalized ledger has 30 variables and 89 equations")
 
 
 # Column-major order: quadratic monomial first, then target row.
@@ -100,7 +102,8 @@ program = (
     f"ring r=0,({','.join(map(str, column_major))}),dp;\n"
     "option(redSB);\n"
     f"ideal I={','.join(polynomials)};\n"
-    "ideal G=slimgb(I);\n"
+    'LIB "modstd.lib";\n'
+    'ideal G=modGB("slimgb",I,1);\n'
     "print(size(G));\n"
     "print(G[1]);\n"
 )
@@ -113,5 +116,5 @@ result = subprocess.run(
     timeout=300,
 )
 assert result.stdout.strip() == "1\n1"
-print("PASS: the exact rational Groebner basis is {1}")
+print("PASS: exact modular reconstruction over Q gives Groebner basis {1}")
 print("PASS full ambient-quadratic Danielewski obstruction")

@@ -16,7 +16,7 @@ The proved reductions now leave the following cubic problem.
 | at most two weights | — | one-sided |
 | exactly three mixed-sign weights | 27 supports / 72 charts | all excluded |
 | exactly four mixed-sign weights | 33 supports / 121 charts | all excluded |
-| five weights | 21 supports / 102 charts | open |
+| five weights | 21 supports / 102 charts | 18 supports and 92 charts excluded exactly |
 | six weights | 7 supports / 44 charts | open |
 | seven weights | 1 support / 8 charts | open |
 
@@ -126,8 +126,73 @@ Together with Attack G1 this closes all 121 four-weight charts.
 
 ## 4. Attack G3: close the five-to-seven-weight cubics
 
-Direct enumeration leaves 154 charts with five, six, or seven weights.  A
-better formulation uses invariant theory.
+### The exact five-weight census
+
+The five-weight pass is now resumable and separates discovery from proof.
+There are 21 supports and 102 ordinary nonvanishing coefficient charts.
+Reflection gives 12 support representatives.  Centering
+
+\[
+c_0+c_1ZW=c_1(ZW-1)
+\]
+
+on every support containing weight zero leaves 35 chart representatives
+(33 after also identifying the two self-reflective mixed chart pairs).
+Moments are generated directly from zero-weight multinomial compositions.
+
+At \(p=1\,000\,003\), every one of the 35 centered/reflected charts has
+unit saturated moment ideal already through order eight.  This is discovery
+evidence, not by itself a characteristic-zero exclusion.  Independent
+rational saturation promotes 31 of the 35 computed presentations to exact
+bases \([1]\).  Using chart reflection on the self-reflective balanced
+support, these certificates exclude 92 of the 102 ordinary charts and 18
+of the 21 supports.
+
+The suggested support
+
+\[
+\{-3,-1,0,1,3\}
+\]
+
+is completely excluded: all four centered coefficient charts have exact
+rational basis \([1]\) through order eight.  On
+
+\[
+\{-2,-1,0,1,2\},
+\]
+
+the radial/radial chart and the mixed chart orbit are exact; only the
+constant/constant \(\pm1\) chart remains.  The complete unresolved
+five-weight list, up to support and chart reflection, is therefore:
+
+1. the constant/constant chart on
+   \(\{-2,-1,0,1,2\}\);
+2. the two charts with the constant weight-\(-1\) coefficient selected on
+   \(\{-3,-1,0,1,2\}\), according as the selected weight-\(+1\)
+   coefficient is constant or radial.
+
+The second support represents its reflection
+\(\{-2,-1,0,1,3\}\), so these three chart orbits account for the ten
+ordinary charts not yet excluded exactly.  Modulo the discovery prime, the
+order-six saturated quotients on the last two charts have length 164 and
+the balanced chart has length 100; adjoining moments seven and eight makes
+each quotient zero.  The missing proof step is a good-reduction certificate
+for the corresponding rational order-six bases, or a direct rational unit
+certificate.  No finite-moment survivor remains, and no all-order witness
+has been found.
+
+The compiler and one-record-per-chart artifacts are
+[`verify_two_real_gmc_five_weight.py`](../scripts/verify_two_real_gmc_five_weight.py),
+[`two_real_gmc_five_weight_systems.json`](../artifacts/generated-results/two_real_gmc_five_weight_systems.json),
+and
+[`two_real_gmc_five_weight.json`](../artifacts/generated-results/two_real_gmc_five_weight.json).
+
+### Invariant formulation
+
+Direct enumeration originally left 154 charts with five, six, or seven
+weights.  The exact five-weight pass reduces the unclosed part to the three
+chart orbits above plus the 52 six- and seven-weight charts.  A better
+global formulation uses invariant theory.
 
 Write a cubic in Wick-chaos coordinates.  The coefficient space is a sum of
 one-dimensional \(\mathbb G_m\)-weight spaces, with the two radial
@@ -208,25 +273,20 @@ positive-dimensional component or a specific null-cone generator not yet
 controlled.  The program should never return to undirected coefficient
 optimization.
 
-## 7. Deferred dense-cubic census
+## 7. Remaining dense-cubic census
 
-The first compiler pass reduced the 29 five-to-seven-weight supports to 17
-representatives under \(Z\leftrightarrow W\), and their 154 coefficient
-charts to 92 representative chart jobs.  Moments were generated directly
-from zero-weight multinomial compositions, avoiding expansion of the full
-ten-coefficient cubic.
+The five-weight compiler now has all of the previously missing resumability
+features: normalized systems are serialized before Gröbner computation,
+each chart has its own result record, modular calculations are labeled as
+discovery, and support exclusions are counted only after rational
+promotion.
 
-The modular run was stopped after 60 of 92 representative jobs at the
-user-requested stopping point.  No partial unit-ideal count, survivor count,
-or modular conclusion is retained or promoted.  There is no artifact for
-this interrupted pass.
+The next finite tasks are:
 
-A later continuation should make the census resumable:
-
-1. serialize the 92 normalized moment systems before Gröbner computation;
-2. write one result record per completed chart, keyed by support and chart;
-3. resume only missing records;
-4. use modular results solely to choose between a rational unit certificate
-   and a good-prime multiplication certificate;
-5. promote a support only after every reflected chart has an exact
-   characteristic-zero certificate.
+1. certify good reduction of the three order-six quotients of lengths
+   \(164,164,100\), then use order-seven/eight multiplication matrices to
+   close the last ten ordinary five-weight charts;
+2. extend the same centered direct-saturation compiler to the 44 six-weight
+   and eight seven-weight charts;
+3. promote only exact rational unit ideals or rational-basis/good-prime
+   multiplication certificates.

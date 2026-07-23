@@ -122,6 +122,19 @@ complete root fiber in every degree.  The determinant, polynomial lift,
 inverse reconstruction, `G_m` discriminant normalization, and symmetric
 monodromy are proved in the
 [root-engineered quadratic-gauge theorem](ROOT_ENGINEERED_QUADRATIC_GAUGE.md).
+Its complete canonical boundary ledger and the resulting unit-rank
+obstruction prove that, in every degree at least four, it is not stably
+polynomially left--right equivalent to a boundary-clean weighted map; see the
+[quadratic-versus-weighted stable-separation theorem](../verified/QUADRATIC_WEIGHTED_STABLE_SEPARATION.md).
+On the coefficient-torus locus, its internal stable orbits are classified
+exactly by a two-dimensional scaling action, giving moduli dimension `N-4`;
+see the
+[quadratic-gauge stable-moduli theorem](../verified/QUADRATIC_GAUGE_STABLE_MODULI.md).
+The corresponding marked-line criterion and the complete
+root-preserving, `P`-fibration-preserving affine rechart search through
+`deg X<=4` are in the
+[degree-four incidence-suspension classification](../verified/INCIDENCE_SUSPENSION_DEGREE_FOUR_CLASSIFICATION.md);
+the rational `X=S^3,S^4` charts have unavoidable source poles.
 
 ## 2. Finite cancellation operator
 

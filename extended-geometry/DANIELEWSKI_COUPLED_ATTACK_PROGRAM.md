@@ -1,5 +1,12 @@
 # Closing the coupled Danielewski gap
 
+> **Quadratic normalization audit (2026-07-23).**  Restoring the three
+> residual coefficients of the ambient-linear function \(x\) changes the
+> final ledger from 27 to 30 variables.  Exact modular reconstruction over
+> \(\mathbb Q\) gives the unit Gröbner basis for the corrected ideal, so the
+> full quadratic obstruction remains closed.  See
+> [the all-degree audit](DANIELEWSKI_ALL_DEGREE_OBSTRUCTION_AUDIT.md).
+
 The two-dicritical arithmetic construction is now reduced to one explicit
 problem.  Put
 
@@ -161,20 +168,21 @@ obstruction.
 
 ## 3. Full quadratic coefficient ideal
 
-Normalize the source-linear part to \((a,c,w)\), and allow all ten
-quadratic ambient monomials
+Normalize the source-linear part to \((a,c,w)\), retain the residual
+ambient-linear direction \(x\), and allow all ten quadratic ambient
+monomials
 
 \[
 ac,ax,aw,a^2,c^2,x^2,w^2,cw,cx,xw.
 \]
 
 The determinant expansion has 102 source monomials.  Three independent
-linear coefficient equations eliminate three of the 30 target
+linear coefficient equations eliminate three of the 33 target
 coefficients.  After removing scalar-duplicate equations, the maximal
 quadratic system has
 
 \[
-\boxed{27\text{ variables and }89\text{ equations}.} \tag{10}
+\boxed{30\text{ variables and }89\text{ equations}.} \tag{10}
 \]
 
 The complete ideal reduces to \(\{1\}\) over each of
@@ -185,9 +193,10 @@ The complete ideal reduces to \(\{1\}\) over each of
 \mathbb F_{32027}.                                 \tag{11}
 \]
 
-The reductions in (11) originally supplied evidence.  Ordering the 27
-coefficient variables by quadratic monomial first and target row second
-subsequently makes the exact rational calculation terminate:
+The reductions in (11) originally supplied evidence.  Ordering the 30
+coefficient variables by residual monomial first and target row second,
+then using exact modular reconstruction over \(\mathbb Q\), makes the
+characteristic-zero calculation terminate:
 
 \[
 \boxed{1\in I_{\mathbb Q}.}                        \tag{12}
@@ -203,8 +212,8 @@ characteristic zero.
 The decisive optimization was coefficient-variable order:
 
 1. solve the three linear equations;
-2. order variables column-major in the three-by-ten coefficient matrix;
-3. run exact rational `slimgb`;
+2. order variables column-major in the three-by-eleven coefficient matrix;
+3. run exact modular-over-\(\mathbb Q\) `modGB("slimgb",I,1)`;
 4. obtain the reduced basis \(\{1\}\).
 
 This closes degree two without a modular inference.
@@ -229,7 +238,7 @@ B\,\omega\longrightarrow H^2_{\rm dR}(D)
 
 using the two vanishing-cycle periods.  Apply it coefficientwise to
 \(\eta(a)\).  This gives two linear flux equations before any nonlinear
-coefficient elimination and should sharply reduce both the 27-variable
+coefficient elimination and should sharply reduce both the 30-variable
 quadratic ideal and the leading-face descent.
 
 This attack is now implemented by the

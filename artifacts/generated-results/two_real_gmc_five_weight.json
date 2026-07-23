@@ -1,0 +1,369 @@
+{
+  "format": "two-real-gmc-five-weight-v1",
+  "scope": "all 21 exactly-five-weight cubic supports; six- and seven-weight cubics are outside this artifact",
+  "ordinary_supports": 21,
+  "ordinary_nonvanishing_charts": 102,
+  "reflection_support_representatives": 12,
+  "centered_reflection_chart_representatives": 35,
+  "completed_chart_records": 35,
+  "status_histogram": {
+    "exact_unit": 31,
+    "timeout": 4
+  },
+  "modular_unit_charts_through_order_eight": 35,
+  "exactly_excluded_ordinary_charts_including_partial_supports": 92,
+  "exactly_excluded_supports": 18,
+  "exactly_excluded_ordinary_charts": 78,
+  "unresolved_representative_chart_orbits": [
+    {
+      "support_representative": [
+        -3,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "chart": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "modular_status": [
+        {
+          "basis_size": 1,
+          "dimension": -1,
+          "is_unit": 1,
+          "vector_dimension": null,
+          "cutoff": 8,
+          "characteristic": 1000003,
+          "elapsed_seconds": 0.177
+        }
+      ]
+    },
+    {
+      "support_representative": [
+        -3,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "chart": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "modular_status": [
+        {
+          "basis_size": 1,
+          "dimension": -1,
+          "is_unit": 1,
+          "vector_dimension": null,
+          "cutoff": 8,
+          "characteristic": 1000003,
+          "elapsed_seconds": 0.153
+        }
+      ]
+    },
+    {
+      "support_representative": [
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "chart": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "modular_status": [
+        {
+          "basis_size": 1,
+          "dimension": -1,
+          "is_unit": 1,
+          "vector_dimension": null,
+          "cutoff": 8,
+          "characteristic": 1000003,
+          "elapsed_seconds": 0.15
+        }
+      ]
+    }
+  ],
+  "support_records": [
+    {
+      "representative": [
+        -3,
+        -2,
+        -1,
+        0,
+        1
+      ],
+      "reflected_support": [
+        -1,
+        0,
+        1,
+        2,
+        3
+      ],
+      "representative_charts": 4,
+      "completed_chart_records": 4,
+      "status_histogram": {
+        "exact_unit": 4
+      },
+      "exactly_excluded": true
+    },
+    {
+      "representative": [
+        -3,
+        -2,
+        -1,
+        0,
+        2
+      ],
+      "reflected_support": [
+        -2,
+        0,
+        1,
+        2,
+        3
+      ],
+      "representative_charts": 2,
+      "completed_chart_records": 2,
+      "status_histogram": {
+        "exact_unit": 2
+      },
+      "exactly_excluded": true
+    },
+    {
+      "representative": [
+        -3,
+        -2,
+        -1,
+        0,
+        3
+      ],
+      "reflected_support": [
+        -3,
+        0,
+        1,
+        2,
+        3
+      ],
+      "representative_charts": 2,
+      "completed_chart_records": 2,
+      "status_histogram": {
+        "exact_unit": 2
+      },
+      "exactly_excluded": true
+    },
+    {
+      "representative": [
+        -3,
+        -2,
+        -1,
+        1,
+        2
+      ],
+      "reflected_support": [
+        -2,
+        -1,
+        1,
+        2,
+        3
+      ],
+      "representative_charts": 4,
+      "completed_chart_records": 4,
+      "status_histogram": {
+        "exact_unit": 4
+      },
+      "exactly_excluded": true
+    },
+    {
+      "representative": [
+        -3,
+        -2,
+        -1,
+        1,
+        3
+      ],
+      "reflected_support": [
+        -3,
+        -1,
+        1,
+        2,
+        3
+      ],
+      "representative_charts": 4,
+      "completed_chart_records": 4,
+      "status_histogram": {
+        "exact_unit": 4
+      },
+      "exactly_excluded": true
+    },
+    {
+      "representative": [
+        -3,
+        -2,
+        -1,
+        2,
+        3
+      ],
+      "reflected_support": [
+        -3,
+        -2,
+        1,
+        2,
+        3
+      ],
+      "representative_charts": 2,
+      "completed_chart_records": 2,
+      "status_histogram": {
+        "exact_unit": 2
+      },
+      "exactly_excluded": true
+    },
+    {
+      "representative": [
+        -3,
+        -2,
+        0,
+        1,
+        2
+      ],
+      "reflected_support": [
+        -2,
+        -1,
+        0,
+        2,
+        3
+      ],
+      "representative_charts": 2,
+      "completed_chart_records": 2,
+      "status_histogram": {
+        "exact_unit": 2
+      },
+      "exactly_excluded": true
+    },
+    {
+      "representative": [
+        -3,
+        -2,
+        0,
+        1,
+        3
+      ],
+      "reflected_support": [
+        -3,
+        -1,
+        0,
+        2,
+        3
+      ],
+      "representative_charts": 2,
+      "completed_chart_records": 2,
+      "status_histogram": {
+        "exact_unit": 2
+      },
+      "exactly_excluded": true
+    },
+    {
+      "representative": [
+        -3,
+        -2,
+        0,
+        2,
+        3
+      ],
+      "reflected_support": [
+        -3,
+        -2,
+        0,
+        2,
+        3
+      ],
+      "representative_charts": 1,
+      "completed_chart_records": 1,
+      "status_histogram": {
+        "exact_unit": 1
+      },
+      "exactly_excluded": true
+    },
+    {
+      "representative": [
+        -3,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "reflected_support": [
+        -2,
+        -1,
+        0,
+        1,
+        3
+      ],
+      "representative_charts": 4,
+      "completed_chart_records": 4,
+      "status_histogram": {
+        "exact_unit": 2,
+        "timeout": 2
+      },
+      "exactly_excluded": false
+    },
+    {
+      "representative": [
+        -3,
+        -1,
+        0,
+        1,
+        3
+      ],
+      "reflected_support": [
+        -3,
+        -1,
+        0,
+        1,
+        3
+      ],
+      "representative_charts": 4,
+      "completed_chart_records": 4,
+      "status_histogram": {
+        "exact_unit": 4
+      },
+      "exactly_excluded": true
+    },
+    {
+      "representative": [
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "reflected_support": [
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "representative_charts": 4,
+      "completed_chart_records": 4,
+      "status_histogram": {
+        "exact_unit": 2,
+        "timeout": 2
+      },
+      "exactly_excluded": false
+    }
+  ],
+  "interpretation": "exact_unit is a characteristic-zero exclusion; finite_moment_survivor_mod_prime is only a discovery result and is not an all-order witness"
+}

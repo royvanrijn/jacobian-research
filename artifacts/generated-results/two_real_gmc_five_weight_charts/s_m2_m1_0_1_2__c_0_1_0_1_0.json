@@ -33,7 +33,11 @@
     "n2_0": 1,
     "n1_1": 1
   },
-  "localization_factor": "h0*p1_1*p2_0",
+  "localization_factor": "h0**3*p1_1 + 2*h0*n1_0*p1_0*p1_1 + 4*h0*n1_0*p1_1**2 + 4*h0*p1_0*p1_1 + 12*h0*p1_1**2",
+  "second_moment_elimination": {
+    "variable": "p2_0",
+    "solution": "-h0**2/4 - n1_0*p1_0/2 - n1_0*p1_1 - p1_0 - 3*p1_1"
+  },
   "raw_charts_covered": 2,
   "discovery_prime": 1000003,
   "cutoffs": [
@@ -49,9 +53,24 @@
       "vector_dimension": null,
       "cutoff": 8,
       "characteristic": 1000003,
-      "elapsed_seconds": 0.126
+      "elapsed_seconds": 0.08
     }
   ],
-  "status": "error",
-  "error": "RuntimeError: Singular error for s_m2_m1_0_1_2__c_0_1_0_1_0:\nG=slimgb(I);'\nabort after this command(a), abort immediately(r), print backtrace(b), continue(c) or quit Singular(q) ?// ** Interrupt at cmd:`slimgb` in line:'ideal G=slimgb(I);'\nabort after this command(a), abort immediately(r), print backtrace(b), continue(c) or quit Singular(q) ?// ** Interrupt at cmd:`slimgb` in line:'ideal G=slimgb(I);'\nabort after this command(a), abort immediately(r), print backtrace(b), continue(c) or quit Singular(q) ?// ** Interrupt at cmd:`slimgb` in line:'ideal G=slimgb(I);'\nabort after this command(a), abort immediately(r), print backtrace(b), continue(c) or quit Singular(q) ?// ** Interrupt at cmd:`slimgb` in line:'ideal G=slimgb(I);'\nabort after this command(a), abort immediately(r), print backtrace(b), continue(c) or quit Singular(q) ?// ** Interrupt at cmd:`slimgb` in line:'ideal G=slimgb(I);'\nabort after this command(a), abort immediately(r), print backtrace(b), continue(c) or quit Singular(q) ?// ** Interrupt at cmd:`slimgb` in line:'ideal G=slimgb(I);'\nabort after this command(a), abort immediately(r), print backtrace(b), continue(c) or quit Singular(q) ?// ** Interrupt at cmd:`slimgb` in line:'ideal G=slimgb(I);'\nabort after this command(a), abort immediately(r), print backtrace(b), continue(c) or quit Singular(q) ?// ** Interrupt at cmd:`slimgb` in line:'ideal G=slimgb(I);'\nabort after this command(a), abort immediately(r), print backtrace(b), continue(c) or quit Singular(q) ?// ** Interrupt at cmd:`slimgb` in line:'ideal G=slimgb(I);'\nabort after this command(a), abort immediately(r), print backtrace(b), continue(c) or quit Singular(q) ?// ** Interrupt at cmd:`slimgb` in line:'ideal G=slimgb(I);'\nabort after this command(a), abort immediately(r), print backtrace(b), continue(c) or quit Singular(q) ?// ** Interrupt at cmd:`slimgb` in line:'ideal G=slimgb(I);'\nabort after this command(a), abort immediately(r), print backtrace(b), continue(c) or quit Singular(q) ?// ** Interrupt at cmd:`slimgb` in line:'ideal G=slimgb(I);'\nabort after this command(a), abort immediately(r), print backtrace(b), continue(c) or quit Singular(q) ?// ** Interrupt at cmd:`slimgb` in line:'ideal G=slimgb(I);'\nabort after this command(a), abort immediately(r), print backtrace(b), continue(c) or quit Singular(q) ?// ** Interrupt at cmd:`slimgb` in line:'ideal G=slimgb(I);'\nabort after this command(a), abort immediately(r), print backtrace(b), continue(c) or quit Singular(q) ?// ** Interrupt at cmd:`slimgb` in line:'ideal G=slimgb(I);'\nabort after this command(a), abort immediately(r), print backtrace(b), continue(c) or quit Singular(q) ?// ** Interrupt at cmd:`slimgb` in line:'ideal G=slimgb(I);'\nabort after this command(a), abort immediately(r), print backtrace(b), continue(c) or quit Singular(q) ?// ** Interrupt at cmd:`slimgb` in line:'ideal G=slimgb(I);'\nabort after this command(a), abort immediately(r), print backtrace(b), continue(c) or quit Singular(q) ?// ** Interrupt at cmd:`slimgb` in line:'ideal G=slimgb(I);'\nabort after this command(a), abort immediately(r), print backtrace(b), continue(c) or quit Singular(q) ?// ** Interrupt at cmd:`slimgb` in line:'ideal G=slimgb(I);'\nabort after this command(a), abort immediately(r), print backtrace(b), continue(c) or quit Singular(q) ?// ** Interrupt at cmd:`slimgb` in line:'ideal G=slimgb(I);'\nabort after this command(a), abort immediately(r), print backtrace(b), continue(c) or quit Singular(q) ?// ** Interrupt at cmd:`slimgb` in line:'ideal G=slimgb(I);'\nabort after this command(a), abort immediately(r), print backtrace(b), continue(c) or quit Singular(q) ?// ** Interrupt at cmd:`slimgb` in line:'ideal G=slimgb(I);'\nabort after this command(a), abort immediately(r), print backtrace(b), continue(c) or quit Singular(q) ?// ** Interrupt at cmd:`slimgb` in line:'ideal G=slimgb(I);'\nabort after this command(a), abort immediately(r), print backtrace(b), continue(c) or quit Singular(q) ?** Warning: Singular should be restarted as soon as possible **\n0\nDIMENSION 6\nIS_UNIT \n"
+  "rational_promotion": {
+    "basis_size": 1,
+    "dimension": -1,
+    "is_unit": 1,
+    "vector_dimension": null,
+    "cutoff": 8,
+    "characteristic": 0,
+    "elapsed_seconds": 82.709
+  },
+  "status": "exact_unit",
+  "exact_certificate": {
+    "field": "QQ",
+    "moments_through": 8,
+    "reduced_basis": [
+      "1"
+    ]
+  }
 }

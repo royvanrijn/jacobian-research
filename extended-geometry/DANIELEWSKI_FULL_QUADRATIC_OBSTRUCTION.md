@@ -30,10 +30,10 @@ invertible linear coefficient matrix on \((a,c,w)\).  A constant target
 linear change normalizes it to
 
 \[
-(A,C,W)=(a,c,w)+\sum_{j=1}^{10}v_jN_j,             \tag{2}
+(A,C,W)=(a,c,w)+v_0x+\sum_{j=1}^{10}v_jN_j,        \tag{2}
 \]
 
-where each \(v_j\in\mathbb Q^3\) and
+where \(v_0,v_j\in\mathbb Q^3\) and
 
 \[
 (N_1,\ldots,N_{10})
@@ -49,15 +49,17 @@ identity is
 
 ## 2. Exact coefficient ideal
 
-Introduce 30 independent coefficients \(z_0,\ldots,z_{29}\) for the three
-rows in (2).  Expanding (4) gives 102 distinct source monomials.
+The coefficient \(v_0\) must be retained: \(x=bc\) has zero source-linear
+jet, so normalizing the coefficient matrix on \((a,c,w)\) does not remove
+it.  Introduce 33 independent coefficients \(z_0,\ldots,z_{32}\) for the
+three rows in (2).  Expanding (4) gives 102 distinct source monomials.
 
 Three independent linear coefficient equations have rank three.  Solving
 them exactly and removing scalar-duplicate nonzero equations leaves
 
 \[
 \boxed{
-27\text{ coefficient variables and }89\text{ equations}.
+30\text{ coefficient variables and }89\text{ equations}.
 }                                                    \tag{5}
 \]
 
@@ -65,11 +67,13 @@ Let \(I_{\mathbb Q}\) be their ideal.
 
 ## 3. Rational unit certificate
 
-Order the 27 remaining coefficient variables by quadratic monomial first
+Order the 30 remaining coefficient variables by residual monomial first
 and target row second.  In other words, use column-major order on the
-three-by-ten coefficient matrix after the three linear eliminations.
+three-by-eleven coefficient matrix after the three linear eliminations.
 
-Singular's exact rational `slimgb` algorithm gives
+Singular's exact modular-over-\(\mathbb Q\)
+`modGB("slimgb",I,1)` algorithm reconstructs the rational basis from
+prime-field calculations and gives
 
 \[
 \boxed{
@@ -77,9 +81,10 @@ Singular's exact rational `slimgb` algorithm gives
 }                                                    \tag{6}
 \]
 
-The calculation is performed directly in characteristic zero.  It does
-not infer (6) from finite-field reductions and does not rely on a
-bounded-height coefficient search.
+The returned basis is over \(\mathbb Q\); it is not an inference from the
+three exploratory finite-field reductions and does not rely on a
+bounded-height coefficient search.  An independent `msolve` computation
+over \(\mathbb Q\) also returns the empty variety.
 
 Equation (6) proves that the normalized coefficient scheme is empty.
 Since every nonzero constant-Jacobian triple admits the normalization
@@ -144,8 +149,9 @@ Run
 .venv/bin/python scripts/verify_danielewski_full_quadratic_obstruction.py
 ```
 
-The checker reconstructs the normalized target, expands all 102 source
-coefficients, performs the three exact linear eliminations, verifies the
-27-variable/89-equation ledger, invokes Singular over \(\mathbb Q\) in
-column-major coefficient order, and requires the returned basis to be
-exactly \(\{1\}\).
+The checker reconstructs the normalized target including all three
+residual \(x\)-coefficients, expands all 102 source coefficients, performs
+the three exact linear eliminations, verifies the
+30-variable/89-equation ledger, invokes Singular's exact modular
+reconstruction over \(\mathbb Q\) in column-major coefficient order, and
+requires the returned basis to be exactly \(\{1\}\).

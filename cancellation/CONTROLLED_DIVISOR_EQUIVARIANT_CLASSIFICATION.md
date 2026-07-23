@@ -185,8 +185,15 @@ The repository contains two nearby scoped theorems.
    proves that every straightened elementary quartic marked-root
    presentation is either a weighted quartic or standard cancellation type
    `(m,r)=(2,1)`.
+3. The
+   [degree-four incidence-suspension classification](../verified/INCIDENCE_SUSPENSION_DEGREE_FOUR_CLASSIFICATION.md)
+   exhausts every root-preserving, `P`-fibration-preserving affine rechart of
+   the quadratic reciprocal chart through `deg X<=4`.  The only controlled
+   divisors are the `S,S^2,S^3` coefficients giving `X=S^2,S^3,S^4`;
+   the latter two have unavoidable `Q/S` and `Q/S^2` pullback poles.  Hence
+   only the quadratic gauge polynomializes in this bounded class.
 
-Neither theorem extracts the suspension square from the bare canonical
+None of these theorems extracts the suspension square from the bare canonical
 finite normalization.  The missing implication is still:
 
 \[

@@ -172,7 +172,7 @@ Apply this to the normalized maximal ambient-quadratic ansatz
 \[
 (A,F,G)=(a,c,w)
 +\text{linear combinations of }
-(ac,ax,aw,a^2,c^2,x^2,w^2,cw,cx,xw).
+(x,ac,ax,aw,a^2,c^2,x^2,w^2,cw,cx,xw).
 \]
 
 Although the pointwise determinant has 102 source-monomial coefficients,
@@ -189,7 +189,8 @@ After ignoring the two arbitrary constant terms, (10) gives exactly
 \boxed{5\text{ nonconstant flux equations}.}       \tag{11}
 \]
 
-They consist of the coefficients
+They have coefficient degrees one, two, and three, and consist of the
+coefficients
 
 \[
 [\rho_0]_{a},\ [\rho_0]_{a^2},\

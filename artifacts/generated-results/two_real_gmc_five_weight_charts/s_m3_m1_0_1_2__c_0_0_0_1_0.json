@@ -1,8 +1,8 @@
 {
   "format": "two-real-gmc-five-weight-chart-v1",
-  "key": "s_m2_m1_0_1_2__c_0_0_0_0_0",
+  "key": "s_m3_m1_0_1_2__c_0_0_0_1_0",
   "support": [
-    -2,
+    -3,
     -1,
     0,
     1,
@@ -13,32 +13,29 @@
     -1,
     0,
     1,
-    2
+    3
   ],
   "chart": [
     0,
     0,
     0,
-    0,
+    1,
     0
   ],
   "selected_coefficients": [
-    "n2_0",
+    "n3_0",
     "n1_0",
     "h0",
-    "p1_0",
+    "p1_1",
     "p2_0"
   ],
   "normalization": {
-    "n2_0": 1,
+    "n3_0": 1,
     "n1_0": 1
   },
-  "localization_factor": "h0**3*p1_0 + 4*h0*n1_1*p1_0**2 + 12*h0*n1_1*p1_0*p1_1 + 2*h0*p1_0**2 + 4*h0*p1_0*p1_1",
-  "second_moment_elimination": {
-    "variable": "p2_0",
-    "solution": "-h0**2/4 - n1_1*p1_0 - 3*n1_1*p1_1 - p1_0/2 - p1_1"
-  },
-  "raw_charts_covered": 2,
+  "localization_factor": "h0*p1_1*p2_0",
+  "second_moment_elimination": null,
+  "raw_charts_covered": 4,
   "discovery_prime": 1000003,
   "cutoffs": [
     8,
@@ -53,18 +50,18 @@
       "vector_dimension": null,
       "cutoff": 8,
       "characteristic": 1000003,
-      "elapsed_seconds": 0.15
+      "elapsed_seconds": 0.153
     }
   ],
   "status": "timeout",
   "error": "timeout after 1 seconds at discovery",
   "order_six_modular_quotient": {
-    "basis_size": 51,
+    "basis_size": 81,
     "dimension": 0,
     "is_unit": 0,
-    "vector_dimension": 100,
+    "vector_dimension": 164,
     "cutoff": 6,
     "characteristic": 1000003,
-    "elapsed_seconds": 0.581
+    "elapsed_seconds": 0.821
   }
 }

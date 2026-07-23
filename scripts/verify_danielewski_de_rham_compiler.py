@@ -137,7 +137,8 @@ print("PASS: the compiled coordinates are separated by vanishing periods")
 
 
 # Compile the generic normalized maximal quadratic ansatz.
-quadratic_basis = (
+quadratic_residual_basis = (
+    x,
     a * c,
     a * x,
     a * w,
@@ -149,12 +150,13 @@ quadratic_basis = (
     c * x,
     x * w,
 )
-coefficients = sp.symbols("z0:30")
+quadratic_width = len(quadratic_residual_basis)
+coefficients = sp.symbols(f"z0:{3 * quadratic_width}")
 targets = tuple(
     leading
     + sum(
-        coefficients[10 * row + column] * term
-        for column, term in enumerate(quadratic_basis)
+        coefficients[quadratic_width * row + column] * term
+        for column, term in enumerate(quadratic_residual_basis)
     )
     for row, leading in enumerate((a, c, w))
 )
@@ -172,9 +174,10 @@ for coordinate, polynomial in enumerate(generic_flux):
         if equation != 0:
             flux_equations.append(equation)
 assert len(flux_equations) == 5
-assert {
+flux_coefficient_degrees = {
     sp.Poly(equation, *coefficients).total_degree()
     for equation in flux_equations
-} == {2, 3}
+}
+assert flux_coefficient_degrees == {2, 3}
 print("PASS: the maximal quadratic flux compiles to five exact equations")
 print("PASS cubic Danielewski de Rham compiler")

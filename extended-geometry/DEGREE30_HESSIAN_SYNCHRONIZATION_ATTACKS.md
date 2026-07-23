@@ -9,7 +9,7 @@ questions which should not be conflated:
 3. classification of every reduced and nonreduced component by the
    coefficient-decorated Ritt 2-complex.
 
-The first is proved.  The second has five remaining pairs.  The third remains
+The first is proved.  The second has three remaining pairs.  The third remains
 open even though the six complete-decomposition charts of the Dickson braid
 are classified scheme-theoretically.
 
@@ -61,8 +61,11 @@ Four further factor-chart reductions certify the non-tree pairs
  \{5,6\},\ \{6,10\},\ \{6,15\},\ \{10,15\}
 \]
 
-with basis sizes `502, 189, 12, 96`.  Thus ten of the fifteen degree-thirty
-pairs have exact characteristic-zero certificates.  The fast default
+with basis sizes `502, 189, 12, 96`.  Two primitive pairs have since been
+added.  A parity argument over arbitrary \(\mathbb Q\)-algebras proves
+\(\{2,15\}\), and exact reduction of the cubic free-module remainder proves
+\(\{3,10\}\) with basis size `184`.  Thus twelve of the fifteen
+degree-thirty pairs have exact characteristic-zero certificates.  The fast default
 regression uses only the spanning tree; the four larger reductions have the
 separate replay target
 
@@ -79,10 +82,10 @@ After the nested certificate, the unclosed pairs are
 | \(\{2,3\}\) | 5 | \(2\) versus \(3\), degree 6 | transport the complete degree-six collision through a generic quintic |
 | \(\{2,5\}\) | 3 | \(2\) versus \(5\), degree 10 | separate power and Dickson core ideals, then transport through a generic cubic |
 | \(\{3,5\}\) | 2 | \(3\) versus \(5\), degree 15 | separate power and Dickson core ideals, then transport through a generic quadratic |
-| \(\{2,15\}\) | 1 | \(2\) versus \(15\), degree 30 | direct coprime power/Dickson normal forms |
-| \(\{3,10\}\) | 1 | \(3\) versus \(10\), degree 30 | direct coprime power/Dickson normal forms |
 
-The common right degree is
+The primitive rows \(\{2,15\}\) and \(\{3,10\}\) are now closed by the
+quadratic parity lemma and cubic remainder certificate, respectively.  The
+common right degree in the remaining table is
 
 \[
  r=\gcd(30/d,30/e).
@@ -184,9 +187,10 @@ reduced relation graph, are the coefficient decoration required on 2-cells.
 
 ## 5. Completion criterion
 
-Degree thirty is closed only after all of the following hold:
+The pairwise synchronization part of degree thirty is closed only after all
+of the following hold:
 
-- the five frontier pair defects have exact characteristic-zero membership
+- the three frontier pair defects have exact characteristic-zero membership
   certificates;
 - the power/Dickson graph ideals exhaust every reduced pair component;
 - primary structures and conductors are compared on component overlaps;

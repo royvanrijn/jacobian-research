@@ -384,21 +384,27 @@ def singular_program(
     moments = system["moments"]
     assert isinstance(variables, tuple)
     assert isinstance(moments, dict)
-    generators = [system["localization_equation"]]
-    generators.extend(
+    generators = [
         moments[order]
         for order in sorted(moments)
         if order <= cutoff and moments[order] != 0
-    )
+    ]
     generator_text = ",\n".join(
         singular_expression(generator) for generator in generators
     )
-    variable_text = ",".join(str(variable) for variable in variables)
+    # Direct ideal saturation is dramatically smaller than adjoining a
+    # Rabinowitsch variable on the balanced five-weight charts.  The two
+    # constructions define the same localized open chart.
+    coefficient_variables = variables[:-1]
+    variable_text = ",".join(str(variable) for variable in coefficient_variables)
+    localization_text = singular_expression(system["localization_factor"])
     return f"""
+LIB "elim.lib";
 ring coefficient_ring={characteristic},({variable_text}),dp;
 option(redSB);
 ideal I={generator_text};
-ideal G=slimgb(I);
+ideal S=sat(I,ideal({localization_text}));
+ideal G=slimgb(S);
 int is_unit=0;
 if (size(G)==1)
 {{
@@ -525,6 +531,7 @@ def process_system(
     modular_timeout: int,
     rational_timeout: int,
     force: bool,
+    discovery_only: bool,
 ) -> dict[str, object]:
     """Discover modularly and promote a chart to an exact QQ certificate."""
 
@@ -547,6 +554,11 @@ def process_system(
             )
             modular_runs.append(modular)
             if modular["is_unit"] == 1:
+                if discovery_only:
+                    record["modular_discovery"] = modular_runs
+                    record["status"] = "modular_unit_candidate"
+                    atomic_write_json(path, record)
+                    return record
                 rational = run_basis(
                     singular,
                     system,
@@ -576,6 +588,19 @@ def process_system(
             f"timeout after {error.timeout} seconds at "
             f"{'QQ' if error.cmd and '0' in str(error.cmd) else 'discovery'}"
         )
+        if any(run.get("is_unit") == 1 for run in modular_runs):
+            try:
+                record["order_six_modular_quotient"] = run_basis(
+                    singular,
+                    system,
+                    6,
+                    PRIME,
+                    modular_timeout,
+                )
+            except Exception as residual_error:
+                record["order_six_modular_quotient_error"] = (
+                    f"{type(residual_error).__name__}: {residual_error}"
+                )
     except Exception as error:  # retain a resumable diagnostic record
         record["modular_discovery"] = modular_runs
         record["status"] = "error"
@@ -593,6 +618,25 @@ def aggregate(systems: list[dict[str, object]]) -> dict[str, object]:
         if path.exists():
             records.append(json.loads(path.read_text()))
     by_key = {record["key"]: record for record in records}
+    system_by_support_chart = {
+        (system["support"], system["chart"]): system for system in systems
+    }
+
+    def record_is_exact(system: dict[str, object]) -> bool:
+        record = by_key.get(system["key"])
+        if record is not None and record["status"] == "exact_unit":
+            return True
+        support = system["support"]
+        if reflected_support(support) != support:
+            return False
+        reflected_chart = tuple(reversed(system["chart"]))
+        reflected_system = system_by_support_chart[(support, reflected_chart)]
+        reflected_record = by_key.get(reflected_system["key"])
+        return (
+            reflected_record is not None
+            and reflected_record["status"] == "exact_unit"
+        )
+
     support_records = []
     exactly_excluded_supports = 0
     exactly_excluded_raw_charts = 0
@@ -607,7 +651,7 @@ def aggregate(systems: list[dict[str, object]]) -> dict[str, object]:
         ]
         all_exact = (
             len(completed) == len(relevant)
-            and all(record["status"] == "exact_unit" for record in completed)
+            and all(record_is_exact(system) for system in relevant)
         )
         orbit_size = int(relevant[0]["support_orbit_size"])
         if all_exact:
@@ -636,6 +680,42 @@ def aggregate(systems: list[dict[str, object]]) -> dict[str, object]:
         status: sum(record["status"] == status for record in records)
         for status in sorted({record["status"] for record in records})
     }
+    modular_unit_through_eight = sum(
+        any(
+            run.get("is_unit") == 1 and run.get("cutoff") == 8
+            for run in record.get("modular_discovery", [])
+        )
+        for record in records
+    )
+    exact_ordinary_charts = sum(
+        int(system["raw_charts_covered"])
+        for system in systems
+        if record_is_exact(system)
+    )
+    unresolved_chart_orbits = []
+    seen_unresolved: set[tuple[tuple[int, ...], tuple[int, ...]]] = set()
+    for system in systems:
+        if record_is_exact(system):
+            continue
+        support = system["support"]
+        chart = system["chart"]
+        if reflected_support(support) == support:
+            chart = min(chart, tuple(reversed(chart)))
+        key = (support, chart)
+        if key in seen_unresolved:
+            continue
+        seen_unresolved.add(key)
+        record = by_key.get(system["key"], {})
+        unresolved_chart_orbits.append(
+            {
+                "support_representative": list(support),
+                "chart": list(chart),
+                "modular_status": record.get("modular_discovery", []),
+                "order_six_modular_quotient": record.get(
+                    "order_six_modular_quotient"
+                ),
+            }
+        )
     return {
         "format": "two-real-gmc-five-weight-v1",
         "scope": (
@@ -648,8 +728,13 @@ def aggregate(systems: list[dict[str, object]]) -> dict[str, object]:
         "centered_reflection_chart_representatives": 35,
         "completed_chart_records": len(records),
         "status_histogram": status_histogram,
+        "modular_unit_charts_through_order_eight": modular_unit_through_eight,
+        "exactly_excluded_ordinary_charts_including_partial_supports": (
+            exact_ordinary_charts
+        ),
         "exactly_excluded_supports": exactly_excluded_supports,
         "exactly_excluded_ordinary_charts": exactly_excluded_raw_charts,
+        "unresolved_representative_chart_orbits": unresolved_chart_orbits,
         "support_records": support_records,
         "interpretation": (
             "exact_unit is a characteristic-zero exclusion; "
@@ -665,6 +750,11 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--modular-timeout", type=int, default=600)
     parser.add_argument("--rational-timeout", type=int, default=1800)
     parser.add_argument("--force", action="store_true")
+    parser.add_argument(
+        "--discovery-only",
+        action="store_true",
+        help="stop after modular discovery; do not claim exact exclusions",
+    )
     parser.add_argument(
         "--only-support",
         action="append",
@@ -709,6 +799,7 @@ def main() -> None:
                 args.modular_timeout,
                 args.rational_timeout,
                 args.force,
+                args.discovery_only,
             ): system
             for system in systems
         }

@@ -55,7 +55,7 @@
       "kind": "corollary",
       "state": "proved",
       "title": "Root-engineered quadratic cancellation gauge",
-      "scope": "For every seed G(S)=g_1 S+...+g_N S^N with g_1 g_3 g_N nonzero, an explicit denominator-free polynomial map of A3 has determinant -2, inverse pencil G_P(S)-(g_1/2)(B S^2+C), geometric and arithmetic monodromy S_N, and a complete fiber prescribed by the simple roots of G. The plane core is marked-line incidence on the curve (S^2,2G_P/g_1): its tangency divisor equals the inverse-equation derivative and cancels the reciprocal source-chart Jacobian. Its reduced discriminant is the affine dual curve and has normalization G_m. The seed S^3+S is exactly the foundational map; consecutive-root seeds give complete rational N-point fibers in every degree; the displayed quartic map and a smaller-coefficient quartic are explicit specializations.",
+      "scope": "For every seed G(S)=g_1 S+...+g_N S^N with g_1 g_3 g_N nonzero, an explicit denominator-free polynomial map of A3 has determinant -2, inverse pencil G_P(S)-(g_1/2)(B S^2+C), geometric and arithmetic monodromy S_N, and a complete fiber prescribed by the simple roots of G. The plane core is marked-line incidence on the curve (S^2,2G_P/g_1): its tangency divisor equals the inverse-equation derivative and cancels the reciprocal source-chart Jacobian. For fixed nonzero P, its reduced plane discriminant is the affine dual curve and has normalization G_m. The seed S^3+S is exactly the foundational map; consecutive-root seeds give complete rational N-point fibers in every degree; the displayed quartic map and a smaller-coefficient quartic are explicit specializations.",
       "canonical_source": "cancellation/ROOT_ENGINEERED_QUADRATIC_GAUGE.md",
       "dependencies": [
         "C1",
@@ -66,6 +66,64 @@
       "supersedes": [],
       "replaced_by": [],
       "priority": "derived"
+    },
+    {
+      "id": "RQG2",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Quadratic-versus-weighted stable boundary separation",
+      "scope": "For every N>=4, no admissible degree-N quadratic-gauge map is stably polynomially left-right equivalent to a boundary-clean weighted map. The quadratic canonical boundary has exactly two intrinsically ordered target images. Over P=0 its Newton ledger consists of affine rows (e,f)=(1,2),(1,1) and gcd(N-3,2) boundary primes of index (N-3)/gcd(N-3,2). After deleting the second vertex, the normalized ramified strata are G_m^2 for the quadratic family and A^1 x G_m for the weighted family; their geometric unit ranks two and one persist under affine stabilization.",
+      "canonical_source": "verified/QUADRATIC_WEIGHTED_STABLE_SEPARATION.md",
+      "dependencies": [
+        "RQG1",
+        "S1",
+        "WB1"
+      ],
+      "checker": "scripts/verify_quadratic_weighted_stable_separation.py",
+      "review": "none",
+      "supersedes": [
+        "quadratic-versus-weighted stable-distinction question"
+      ],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
+      "id": "RQG3",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Quadratic-gauge stable moduli",
+      "scope": "On the degree-N coefficient-torus locus a_3...a_N nonzero, stable polynomial left-right equivalence of quadratic-gauge maps is exactly the explicit two-torus action a_3 -> alpha^-2 beta^-1 a_3 and a_j -> alpha^(1-j) beta^-j a_j for j>=4. The intrinsic normalization Fitting polynomial orders the two toric punctures, removes every P^m twist, and recovers all coefficients modulo that action. The coarse stable-moduli quotient has dimension N-4, not N-3; it is a point with stack stabilizer mu_5 for N=4 and a torus of dimension N-4 for N>=5.",
+      "canonical_source": "verified/QUADRATIC_GAUGE_STABLE_MODULI.md",
+      "dependencies": [
+        "RQG1",
+        "RQG2",
+        "S1"
+      ],
+      "checker": "scripts/verify_quadratic_gauge_stable_moduli.py",
+      "review": "none",
+      "supersedes": [
+        "proposed N-3 quadratic-gauge stable-moduli count"
+      ],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
+      "id": "ICS1",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Incidence suspensions through horizontal degree four",
+      "scope": "The coordinate-preserving marked-line criterion is necessary and sufficient for a fixed reciprocal chart. Among all root-preserving, P-fibration-preserving determinant-one affine recharts of the quadratic reciprocal chart with polynomial controlled divisor and deg X<=4, the only possibilities are X=S^2,S^3,S^4. The cubic and quartic charts have unavoidable Q/S and Q/S^2 terms in the first incidence coordinate, so only X=S^2 pulls back to a polynomial Keller map of A3. Non-fibre-affine, root-changing, and multi-boundary charts remain outside the theorem.",
+      "canonical_source": "verified/INCIDENCE_SUSPENSION_DEGREE_FOUR_CLASSIFICATION.md",
+      "dependencies": [
+        "RQG1"
+      ],
+      "checker": "scripts/verify_incidence_suspension_degree_four.py",
+      "review": "none",
+      "supersedes": [
+        "cubic and degree-four diagonal incidence-rechart search"
+      ],
+      "replaced_by": [],
+      "priority": "reference"
     },
     {
       "id": "B1",
@@ -2282,6 +2340,24 @@
       "priority": "derived"
     },
     {
+      "id": "G2E",
+      "kind": "corollary",
+      "state": "partial",
+      "title": "Five-weight two-real cubic GMC census",
+      "scope": "Among the 21 five-weight cubic supports and 102 ordinary coefficient charts, centering and reflection leave 35 chart presentations. Every presentation has unit saturated moment ideal modulo 1000003 through order eight. Exact rational saturation promotes 31 presentations; chart reflection then excludes 92 ordinary charts and 18 supports. Three chart orbits remain without characteristic-zero promotion: the constant/constant chart on {-2,-1,0,1,2} and two constant-negative charts on {-3,-1,0,1,2}, representing ten ordinary charts on three supports. Their order-six modular quotient lengths are respectively 100, 164, and 164. Modular unit results are discovery only and no all-order survivor is claimed.",
+      "canonical_source": "extended-geometry/TWO_REAL_GMC_CLOSURE_PROGRAM.md",
+      "dependencies": [
+        "G2D"
+      ],
+      "checker": "scripts/verify_two_real_gmc_five_weight.py",
+      "review": "none",
+      "supersedes": [
+        "unstructured 21-support / 102-chart five-weight cubic frontier"
+      ],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
       "id": "WG1",
       "kind": "corollary",
       "state": "proved",
@@ -2934,9 +3010,9 @@
     {
       "id": "CL20",
       "kind": "corollary",
-      "state": "proved",
+      "state": "partial",
       "title": "Minimal coupled Danielewski ansatz obstruction",
-      "scope": "For P=x(x^2+1), Cauchy--Binet gives [x^2]J=3[1]J on span(1,a,c,x,w,ac,ax,aw), excluding the smallest genuinely coupled ansatz. Adjoining all diagonal ambient quadratics a^2,c^2,x^2,w^2,cw still gives the stronger lock [x^2]J-[x^4]J+[x^6]J=3[1]J. The only quadratic escape directions are cx and xw; after adding both without diagonal terms, normalization to linear part (a,c,w) yields five coefficient equations whose ideal is the unit ideal. Thus any full quadratic candidate must use an escape direction and a diagonal direction simultaneously.",
+      "scope": "For P=x(x^2+1), Cauchy--Binet gives [x^2]J=3[1]J on span(1,a,c,x,w,ac,ax,aw), excluding the smallest genuinely coupled ansatz. Adjoining all diagonal ambient quadratics a^2,c^2,x^2,w^2,cw gives the stronger lock [x^2]J-[x^4]J+[x^6]J=3[1]J. The normalized five-equation certificate for the cx,xw escape chart omits the three residual target coefficients of x, so that final chart conclusion is only proved on the zero-linear-x slice.",
       "canonical_source": "extended-geometry/DANIELEWSKI_MINIMAL_COUPLED_ANSATZ.md",
       "dependencies": [
         "CL19"
@@ -2952,7 +3028,7 @@
       "kind": "corollary",
       "state": "proved",
       "title": "Quadratic Danielewski interaction support bound",
-      "scope": "Normalize every ambient-quadratic constant-Jacobian candidate to linear part (a,c,w), allow the common directions ac,ax,aw, and partition the remaining directions into diagonals D={a^2,c^2,x^2,w^2,cw} and escapes E={cx,xw}. Exact coefficient-ideal calculations over Q give unit Groebner bases for all 68 charts S with 1<=|S|<=4 and S meeting E. Together with CL20, any quadratic survivor would have needed at least five extra directions. CL24 subsequently closes the remaining 28 larger charts simultaneously.",
+      "scope": "On the normalized slice with zero residual linear-x coefficients, allow the common directions ac,ax,aw and partition the remaining directions into diagonals D={a^2,c^2,x^2,w^2,cw} and escapes E={cx,xw}. Exact coefficient-ideal calculations over Q give unit Groebner bases for all 68 charts S with 1<=|S|<=4 and S meeting E. The later audit shows that normalization on (a,c,w) does not itself remove the three target coefficients of x, so this support bound is a slice statement.",
       "canonical_source": "extended-geometry/DANIELEWSKI_QUADRATIC_INTERACTION_FRONTIER.md",
       "dependencies": [
         "CL20"
@@ -2960,9 +3036,7 @@
       "checker": "scripts/verify_danielewski_quadratic_interaction_frontier.py",
       "review": "none",
       "supersedes": [],
-      "replaced_by": [
-        "CL24"
-      ],
+      "replaced_by": [],
       "priority": "derived"
     },
     {
@@ -2970,7 +3044,7 @@
       "kind": "corollary",
       "state": "proved",
       "title": "Coupled Danielewski leading-face and flux reduction",
-      "scope": "For every solution A,F,G of A_a{F,G}-F_a{A,G}+G_a{A,F}=1, let r,s,t be the a-degrees and choose r>0. The highest a-coefficient forces the weighted ratios F_s^r/A_r^s and G_t^r/A_r^t to Poisson-commute and hence be algebraically dependent in the Danielewski function field. Independently, the relative de Rham class satisfies d/da[A d_DF wedge d_DG]=[omega], so its flux is exactly a[omega]+constant and all higher a-coefficients vanish in H^2. These identities define an all-degree leading-face descent. CL24 supplies the exact characteristic-zero closure of the quadratic coefficient ideal.",
+      "scope": "For every solution A,F,G of A_a{F,G}-F_a{A,G}+G_a{A,F}=1, let r,s,t be the a-degrees and choose r>0. The highest a-coefficient forces the weighted ratios F_s^r/A_r^s and G_t^r/A_r^t to Poisson-commute and hence be algebraically dependent in the Danielewski function field. Independently, the relative de Rham class satisfies d/da[A d_DF wedge d_DG]=[omega], so its flux is exactly a[omega]+constant and all higher a-coefficients vanish in H^2. These identities are exact, but the all-degree descent remains open and a normalized cubic family shows that leading collapse plus correct flux alone is compatible.",
       "canonical_source": "extended-geometry/DANIELEWSKI_COUPLED_ATTACK_PROGRAM.md",
       "dependencies": [
         "CL19",
@@ -2987,7 +3061,7 @@
       "kind": "corollary",
       "state": "proved",
       "title": "Cubic Danielewski de Rham compiler",
-      "scope": "For D={cw=P(x)}, top de Rham cohomology is the Poisson-commutator quotient B/{B,B}, canonically represented by k[x]/d(Pk[x]). For P=x^3+x this has basis [1],[x] and recurrence [x^(m+2)]=-(m+1)/(m+3)[x^m]. The resulting exact compiler sends the coupled flux A{F,G} to two polynomial coordinates whose derivative must be (1,0). For the normalized maximal ambient-quadratic ansatz, the pointwise 102-coefficient determinant ledger compiles to exactly five nonconstant flux equations of coefficient degrees two and three. CL24 independently closes the full quadratic ideal by exact rational elimination.",
+      "scope": "For D={cw=P(x)}, top de Rham cohomology is the Poisson-commutator quotient B/{B,B}, canonically represented by k[x]/d(Pk[x]). For P=x^3+x this has basis [1],[x] and recurrence [x^(m+2)]=-(m+1)/(m+3)[x^m]. The resulting exact compiler sends the coupled flux A{F,G} to two polynomial coordinates whose derivative must be (1,0). For the corrected normalized maximal ambient-quadratic ansatz, including all three residual linear-x coefficients, the flux compiles to exactly five nonconstant equations of coefficient degrees one, two, and three.",
       "canonical_source": "extended-geometry/DANIELEWSKI_DE_RHAM_COMPILER.md",
       "dependencies": [
         "CL22"
@@ -3003,7 +3077,7 @@
       "kind": "corollary",
       "state": "proved",
       "title": "Full ambient-quadratic Danielewski obstruction",
-      "scope": "For P=x(x^2+1), no three ambient-degree-at-most-two target functions on A^1 times {cw=P(x)} pull back to a polynomial map A^3->A^3 with nonzero constant Jacobian. Every candidate normalizes to linear part (a,c,w). Its determinant ledger has 102 source coefficients; three exact linear eliminations leave a universal ideal with 27 variables and 89 equations. Ordering variables by quadratic monomial and then target row makes exact Singular elimination over Q return the reduced Groebner basis {1}. This closes all 127 quadratic support charts and forces every surviving coupled contraction to have ambient degree at least three.",
+      "scope": "For P=x(x^2+1), every ambient-quadratic candidate normalizes to (a,c,w) while retaining three residual coefficients of x=bc. The corrected determinant ledger has 33 coefficients; three exact linear eliminations leave 30 variables and 89 equations. Column-major exact modular reconstruction over Q gives the reduced Groebner basis {1}, closing the full ambient-quadratic coefficient scheme in characteristic zero.",
       "canonical_source": "extended-geometry/DANIELEWSKI_FULL_QUADRATIC_OBSTRUCTION.md",
       "dependencies": [
         "CL21",
@@ -3013,8 +3087,26 @@
       "checker": "scripts/verify_danielewski_full_quadratic_obstruction.py",
       "review": "none",
       "supersedes": [
-        "28 unresolved large-support quadratic charts"
+        "the zero-linear-x quadratic slice certificate"
       ],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "CL25",
+      "kind": "corollary",
+      "state": "partial",
+      "title": "All-degree Danielewski contraction audit",
+      "scope": "Any coupled solution on A^1 times {cw=x(x^2+1)} composes with the canonical A^3 open immersion to give a noninvertible three-dimensional Keller map. The corrected quadratic ideal is exactly unit over Q. Correct cubic normalization leaves 90 coefficients and the de Rham compiler gives 11 nonconstant flux equations. An explicit normalized cubic family satisfies the leading-face collapse and the complete compiled flux identity while failing J=1 pointwise, so those two gates alone cannot prove the all-degree obstruction. The two boundary roots have equal P'=-2, and one-boundary poles of the leading rational pencil are genuine.",
+      "canonical_source": "extended-geometry/DANIELEWSKI_ALL_DEGREE_OBSTRUCTION_AUDIT.md",
+      "dependencies": [
+        "CL22",
+        "CL23",
+        "CL24"
+      ],
+      "checker": "scripts/verify_danielewski_cubic_frontier.py",
+      "review": "none",
+      "supersedes": [],
       "replaced_by": [],
       "priority": "derived"
     },
@@ -3457,13 +3549,14 @@
       "kind": "open_problem",
       "state": "parked",
       "title": "Gaussian and Image/Vanishing consequences",
-      "scope": "Settle GMC(2), the only unresolved real Gaussian dimension. Any counterexample must pass the quadratic, two-weight, affine-circular-source, cubic three-weight, and complete four-weight theorems: it has degree at least three, at least three rotational weights containing both signs, and nonlinear dependence on both circular coordinates; a cubic counterexample needs at least five rotational weights. The remaining cubic frontier has 154 charts with five, six, or seven weights. A positive proof must control the same genuinely shared Wick self-contractions or prove the cubic invariant-null-cone containment. Also determine which transported exceptional invariants descend under natural equivalence groups of Gaussian polynomial pairs.",
+      "scope": "Settle GMC(2), the only unresolved real Gaussian dimension. Any counterexample must pass the quadratic, two-weight, affine-circular-source, cubic three-weight, and complete four-weight theorems: it has degree at least three, at least three rotational weights containing both signs, and nonlinear dependence on both circular coordinates; a cubic counterexample needs at least five rotational weights. The exactly-five-weight frontier is reduced to three chart orbits (ten ordinary charts on three supports), all modularly but not yet rationally excluded through order eight; the six- and seven-weight strata contain 52 ordinary charts. A positive proof must control the same genuinely shared Wick self-contractions or prove the cubic invariant-null-cone containment. Also determine which transported exceptional invariants descend under natural equivalence groups of Gaussian polynomial pairs.",
       "canonical_source": "extended-geometry/TWO_REAL_GMC_FRONTIER.md",
       "dependencies": [
         "GL1",
         "G2F",
         "G2C",
         "G2D",
+        "G2E",
         "WG1",
         "WG2",
         "WG3"

@@ -135,8 +135,10 @@ included in the chart-by-chart claim.
 
 The remaining 28 charts are now closed simultaneously by the
 [full quadratic obstruction](DANIELEWSKI_FULL_QUADRATIC_OBSTRUCTION.md):
-column-major coefficient order gives the exact rational Groebner basis
-\(\{1\}\) for the maximal 27-variable, 89-equation ideal.
+column-major coefficient order with exact modular reconstruction gives the
+rational Groebner basis \(\{1\}\) for the corrected maximal
+30-variable, 89-equation ideal, including the three residual
+linear-\(x\) coefficients.
 
 ## 5. Reproduction
 

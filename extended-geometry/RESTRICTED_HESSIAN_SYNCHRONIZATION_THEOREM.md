@@ -1,14 +1,16 @@
-# Restricted Hessian synchronization: the proved normal-form theorem and the square-free gap
+# Restricted Hessian synchronization: the generic theorem and exact frontier
 
-Work over an algebraically closed field \(k\) of characteristic zero.  This
-note audits the proposed restricted theorem:
+Work over an algebraically closed field \(k\) of characteristic zero.  For
+a proper decomposition word \(\mathbf d\) of \(N\), let \(H_{\mathbf d}\)
+be its canonical Hessian residual ideal and let
+\(\lambda_{\mathbf d}\) be the reconstructed coefficient of \(x\).  For a
+set \(D\) of requested words put
 
-> If the normalized relation graph has only singleton blocks and at most one
-> tame power/Dickson strongly connected block with square-free degree
-> multiset, then all canonical Hessian linear lifts agree modulo the summed
-> Hessian residual ideal.
+\[
+ H_D=\sum_{\mathbf d\in D}H_{\mathbf d}.
+\]
 
-The conclusion must be separated into two levels:
+There are two different synchronization statements:
 
 \[
 \begin{array}{rcl}
@@ -21,280 +23,274 @@ The conclusion must be separated into two levels:
 \end{array}                                                   \tag{0.1}
 \]
 
-The relation-graph normal forms prove the first statement once component
-completeness is known.  They do not, by themselves, prove either component
-completeness or the second statement.  In particular, the proposed
-restriction contains all five presently open degree-thirty pair
-memberships.  Thus it is a good theorem target, but it is not yet a theorem
-of the repository.
+The square-free relation-graph hypothesis proves the first statement
+completely.  It does not, without an additional infinitesimal theorem,
+prove the second.  This note gives the noncircular proof, then records the
+remaining exact frontier.
 
-## 1. Canonical setup
+## 1. The missing-line lemma
 
-Put
+The key observation is independent of Ritt normal forms.
 
-\[
- R_N=k[c_2,\ldots,c_{N-1}],\qquad
- F=W^N+\sum_{j=2}^{N-1}c_jW^j.
-\]
-
-For a proper outer cut \(a\mid N\), let \(H_a\subset R_N\) be the canonical
-Hessian residual ideal for a normalized \(a\circ(N/a)\) decomposition.
-Triangular reconstruction uses only the displayed coefficients and produces
-a regular function
-
-\[
- \lambda_a\in R_N
-\]
-
-whose value is the forced coefficient of \(W\) in the corresponding monic
-original polynomial lift.  For a collection \(D\) of requested cuts or
-words, write
-
-\[
- H_D=\sum_{\mathbf d\in D}H_{\mathbf d}.
-\]
-
-The full synchronized polynomial ideal is
-
-\[
- H_D+(\lambda_{\mathbf d}-c_1:\mathbf d\in D).                \tag{1.1}
-\]
-
-Consequently equality of all lifts modulo \(H_D\) is exactly the assertion
-that (1.1) is the graph of one regular function over the entire, possibly
-nonreduced, Hessian intersection.
-
-## 2. What the power/Dickson charts prove formally
-
-The useful theorem available without any further elimination is the
-following.
-
-> **Normal-form vanishing theorem.**  Let \(X\) be a reduced irreducible
-> \(k\)-scheme and let
+> **Lemma 1.1 (Abhyankar--Moh missing-line obstruction).**  Let \(K\) be
+> a characteristic-zero field and let
 > \[
->  f_X=W^N+\sum_{j=1}^{N-1}u_jW^j\in\Gamma(X,\mathcal O_X)[W]
+>  P=A\circ B,\qquad Q=C\circ E
 > \]
-> be one monic original polynomial family.  Suppose that, for every
-> requested word \(\mathbf d\in D\), the same \(f_X\) has a normalized
-> decomposition of degree word \(\mathbf d\).  Let
-> \(\phi_X:X\to\operatorname{Spec}R_N/H_D\) retain the coefficients of
-> degrees at least two.  Then
+> be monic polynomials of the same degree.  Suppose
 > \[
->  \phi_X^*(\lambda_{\mathbf d}-\lambda_{\mathbf e})=0
->  \qquad(\mathbf d,\mathbf e\in D).                           \tag{2.1}
+>  P-Q=\delta x+\epsilon,\qquad \delta\ne0.
 > \]
+> Then either \(\deg B\mid\deg E\) or \(\deg E\mid\deg B\).
 
-**Proof.**  Apply canonical triangular reconstruction to any one of the
-given normalized decompositions of \(f_X\).  Uniqueness of the reconstruction
-forces its reconstructed linear coefficient to be \(u_1\).  This is true for
-every requested word, so both terms in (2.1) pull back to \(u_1\).  \(\square\)
-
-This theorem applies integrally to every synchronized exponential or
-Dickson family supplied by the tame multi-collision normal form.  It also
-survives arbitrary common outer and inner composition decorations, because
-the chart starts with one polynomial family carrying all requested
-decompositions.
-
-The precise dense-component consequence is:
-
-> **Reduced transfer criterion.**  Suppose every minimal component of
-> \(V(H_D)\) is dominated by a synchronized power/Dickson relation-graph
-> chart.  Then
-> \[
->  \lambda_{\mathbf d}-\lambda_{\mathbf e}\in\sqrt{H_D}
-> \]
-> for every requested pair.  If \(H_D\) is radical, then the stronger
-> membership
-> \[
->  \lambda_{\mathbf d}-\lambda_{\mathbf e}\in H_D             \tag{2.2}
-> \]
-> follows.
-
-**Proof.**  Equation (2.1) gives vanishing at the generic point of every
-minimal component, hence membership in every minimal prime and therefore in
-\(\sqrt{H_D}\).  If \(H_D=\sqrt{H_D}\), this is (2.2).  \(\square\)
-
-This is the strongest restricted synchronization theorem that follows
-formally from the current relation-graph theory.  It makes the two missing
-inputs explicit:
-
-1. **component completeness:** no extra Hessian-projection component misses
-   all synchronized normal-form charts;
-2. **nilpotent control:** the lift difference vanishes in each primary
-   thickening, not only on its reduced support.
-
-## 3. Why Ziegler's theorem does not supply the missing inputs
-
-Ziegler's tame multi-collision theorem starts with one polynomial
+**Proof.**  The displayed identity gives
 
 \[
- f\in\bigcap_{\mathbf d\in D}\mathcal D_{\mathbf d}.
+ x=\delta^{-1}\bigl(A(B)-C(E)-\epsilon\bigr)\in K[B,E].
 \]
 
-Its relation graph classifies the decompositions of that already
-synchronized \(f\).  The compatibility of the original-shift parameters in
-the proof is likewise deduced from decompositions of one \(f\).  A point of
-the Hessian intersection gives instead a collection
+Thus \(K[B,E]=K[x]\).  The algebraic Abhyankar--Moh epimorphism
+theorem says that two nonconstant polynomials generating \(K[x]\) have
+comparable degrees.  Hence \(\deg B\mid\deg E\) or
+\(\deg E\mid\deg B\).  \(\square\)
+
+The point is that this argument starts with two potentially different
+linear lifts.  It therefore avoids the circular use of an ordinary
+collision theorem, which starts with one already synchronized polynomial.
+
+## 2. Generic square-free synchronization
+
+Assume that the requested incidences are the normalized decomposition words
+encoded by the relation graph: every displayed factor cut is part of the
+incidence data, rather than a refinement inferred from equality of two
+coarse lifts.  (Inferring such a refinement before synchronization would be
+circular.)  The strongly connected components form a chain.  A singleton
+component has one fixed position.  Inside a nontrivial square-free
+component, any two requested orders are joined by adjacent swaps of distinct
+vertices.
+
+Consider one such swap.  Cancel the common prefix and retain the common
+suffix \(S\).  The two right-component degrees at the swap are
 
 \[
- F+\lambda_{\mathbf d}W\in\mathcal D_{\mathbf d},
+ uS\quad\text{and}\quad vS,
 \]
 
-with no initial equality among the \(\lambda_{\mathbf d}\).  Applying the
-ordinary theorem before proving their equality is circular.
+where \(u\ne v\) are vertices in the square-free block.  Gcd refinement
+makes \(u\) and \(v\) coprime after common decorations have been removed.
+Consequently neither \(uS\) nor \(vS\) divides the other.  Lemma 1.1 says
+that two decomposable lifts differing by a nonzero linear term cannot
+realize this swap.  Their linear coefficients are therefore equal.
 
-The square-free assumption simplifies the gcd-refinement step in the
-ordinary collision theorem.  It does not change this logical boundary:
-forgetting the linear coefficient still need not commute with intersection.
-Nor does a valuation at infinity distinguish the missing linear terms
-directly, since all of them occur \(N-1\) orders below the leading term.
-An infinity argument must therefore be a new lemma about two distinct
-decomposable lifts whose difference is linear, not a quotation of the
-ordinary multi-collision theorem.
+Following a swap path and then the chain of singleton components proves:
 
-There is also a strict scheme-theoretic obstruction to concluding ideal
-membership from reduced normal forms.  The map
+> **Theorem 2.1 (restricted generic synchronization).**  Suppose every
+> requested incidence is a normalized decomposition word in the relation
+> graph, and every strongly connected component is either an acyclic
+> singleton or one tame power/Dickson block whose degree multiset is
+> square-free.  Then, for every requested pair,
+> \[
+>  \lambda_{\mathbf d}-\lambda_{\mathbf e}\in\sqrt{H_D}.       \tag{2.1}
+> \]
+> Equivalently, the Hessian intersection is generically synchronized.
+
+**Proof.**  Let \(\mathfrak p\) be any prime containing \(H_D\) and pass to
+the fraction field of \(R_N/\mathfrak p\), then to its algebraic closure.
+The canonical reconstructions give, for each requested word, a monic
+decomposable polynomial
 
 \[
- k[\epsilon]/(\epsilon^2)\longrightarrow k,\qquad\epsilon\longmapsto0,
+ F+\lambda_{\mathbf d}x
 \]
 
-kills \(\epsilon\) on the reduced chart although
-\(\epsilon\notin(\epsilon^2)\).  The degree-thirty braid calculations show
-that analogous nonreduced path thickenings genuinely occur in the Ritt
-geometry.  Relation-graph combinatorics alone cannot rule them out.
+with the same coefficients in degrees at least two.  The adjacent-swap
+argument above makes all of their linear coefficients equal.  Hence every
+difference belongs to every prime over \(H_D\), which is exactly (2.1).
+\(\square\)
 
-## 4. The square-free degree-thirty audit
+This proof also supplies component completeness for the reduced question:
+there cannot be an extra unsynchronized minimal component off the
+power/Dickson charts.  Ziegler's multi-collision theorem is needed only
+after synchronization, to classify the resulting field-valued collision.
 
-The proposed restriction does not leave degree thirty as a distant braid
-test.  It contains every currently open degree-thirty pair.
+The theorem is slightly stronger than the proposed “generically” clause:
+the Abhyankar--Moh obstruction applies at every field-valued point, not
+only at the generic points of the standard charts.
 
-| open cuts | normalized nontrivial block | remaining singleton decoration |
+For an intersection specified only by coarse outer cuts, Theorem 2.1 applies
+after the corresponding refined factor incidences have been established.
+The ordinary gcd-refinement theorem cannot establish them here, because it
+assumes that the two decompositions belong to one polynomial.  The direct
+degree-thirty arguments below do not make this assumption.
+
+## 3. Why radical membership is not ideal membership
+
+Theorem 2.1 proves
+
+\[
+ \lambda_{\mathbf d}-\lambda_{\mathbf e}\in\sqrt{H_D}.
+\]
+
+It proves membership in \(H_D\) if \(H_D\) is radical.  Without
+radicality, an additional infinitesimal argument is necessary.  A
+power/Dickson parametrization kills every nilpotent on its reduced support,
+so testing those parametrizations cannot by itself detect an embedded
+linear defect.
+
+The tempting formal argument has a real missing premise.  On a synchronized
+field-valued Ritt chart, write a common right decoration as \(T(x)\).  The
+free \(K[T]\)-module decomposition
+
+\[
+ K[x]=K[T]\oplus xK[T]\oplus\cdots\oplus x^{r-1}K[T]
+\]
+shows that the first-order missing-line equation lies in the \(x\)-summand.
+For an adjacent tame collision it has the form
+
+\[
+ A'(B)u-C'(E)v=\delta.                                       \tag{3.1}
+\]
+
+In both the power and Dickson normal forms, the two derivative factors in
+(3.1) have a common monic factor of positive degree, so \(\delta=0\).
+This proves transverse first-order rigidity on every smooth normal-form
+chart.
+
+What is not supplied by the field-valued Ritt theorem is formal
+completeness: every Artin-ring deformation of the synchronized
+intersection would have to come from those charts.  At a chart overlap or
+an embedded primary component, higher-order deformation terms need not be
+controlled by the first-order calculation.  Therefore (3.1) is not a
+proof that
+
+\[
+ \lambda_{\mathbf d}-\lambda_{\mathbf e}\in H_D              \tag{3.2}
+\]
+in complete generality.
+
+An all-degree proof of (3.2) needs one of the following genuinely new
+inputs:
+
+1. a scheme-theoretic Ritt normal-form theorem over local Artin
+   characteristic-zero algebras;
+2. radicality of the restricted Hessian intersections;
+3. a direct universal remainder identity showing that the linear defect
+   belongs to the Hessian residual ideal.
+
+## 4. A universal quadratic scheme lemma
+
+One substantial part of (3.2) does have a direct ring proof.
+
+> **Lemma 4.1 (quadratic edge over a ring).**  Let \(S\) be a
+> \(\mathbb Q\)-algebra.  Suppose \(P=A\circ B\) and \(Q=C\circ E\) are
+> monic of degree \(2m\), with outer degrees \(2\) and \(m\),
+> respectively.  If \(P-Q\) has degree at most one, then its linear
+> coefficient is zero.
+
+**Proof.**  Complete the square in the outer quadratic and translate the
+source so that the inner quadratic in the second decomposition is even.
+For a monic degree-\(m\) polynomial \(G(y)\), the equation becomes
+
+\[
+ G(y)^2-\text{an even polynomial}=\delta y+\epsilon.
+\]
+
+Writing \(G=G_{\mathrm{ev}}+G_{\mathrm{odd}}\) and subtracting the equation
+at \(-y\) from the equation at \(y\) gives
+
+\[
+ 4G_{\mathrm{ev}}G_{\mathrm{odd}}=2\delta y.                 \tag{4.1}
+\]
+
+If \(m\) is even, \(G_{\mathrm{ev}}\) is monic of degree \(m\); if \(m\)
+is odd, \(G_{\mathrm{odd}}\) is monic of degree \(m\).  Multiplication by
+a monic polynomial is degree-faithful over an arbitrary ring.  Since
+\(m\ge2\), (4.1) forces the other parity part to vanish and then
+\(\delta=0\).  \(\square\)
+
+Applied to degree thirty, Lemma 4.1 proves the exact membership for the
+primitive pair
+
+\[
+ \lambda_2-\lambda_{15}\in H_2+H_{15}.                       \tag{4.2}
+\]
+
+Unlike a reduced normal-form calculation, this proof is valid over every
+\(\mathbb Q\)-algebra and therefore controls all primary thickenings.
+
+## 5. The cubic remainder certificate
+
+The other primitive degree-thirty pair admits a compact exact remainder
+calculation.  Center the inner cubic and the outer cubic:
+
+\[
+ D(y)=y^3+py+q,\qquad T(G)=G^3+uG.
+\]
+
+Write the monic degree-ten polynomial \(G\) uniquely in the free
+\(\mathbb Q[D]\)-module basis \(1,y,y^2\):
+
+\[
+ G=g_0(D)+y\,g_1(D)+y^2g_2(D).
+\]
+
+The Hessian residual equations say that the entire \(y^2\)-remainder of
+\(G^3+uG\) vanishes and that all positive-\(D\) coefficients of its
+\(y\)-remainder vanish.  The possible synchronization defect is the
+remaining constant coefficient of that \(y\)-remainder.
+
+[`verify_cubic_remainder_synchronization.py`](../scripts/verify_cubic_remainder_synchronization.py)
+constructs these equations in thirteen variables and performs the exact
+characteristic-zero reduction.  Singular returns a basis of size \(184\)
+and reduces the defect to zero.  Hence
+
+\[
+ \lambda_3-\lambda_{10}\in H_3+H_{10}.                        \tag{5.1}
+\]
+
+This is a universal ideal identity, not a sample-point or radical test.
+
+## 6. Updated degree-thirty frontier
+
+The original five open pairs split as follows.
+
+| cuts | status | reason |
 |---|---|---|
-| \(\{2,3\}\) | \(\{2,3\}\) | common inner degree \(5\) |
-| \(\{2,5\}\) | \(\{2,5\}\) | common inner degree \(3\) |
-| \(\{3,5\}\) | \(\{3,5\}\) | common inner degree \(2\) |
-| \(\{2,15\}\) | \(\{2,3,5\}\), with words \((2,3,5)\) and \((3,5,2)\) | none |
-| \(\{3,10\}\) | \(\{2,3,5\}\), with words \((3,2,5)\) and \((2,5,3)\) | none |
+| \(\{2,15\}\) | exact | universal quadratic parity lemma |
+| \(\{3,10\}\) | exact | cubic free-module remainder certificate |
+| \(\{2,3\}\) | generically exact; scheme open | degree-six core transported through a quintic |
+| \(\{2,5\}\) | generically exact; scheme open | degree-ten core transported through a cubic |
+| \(\{3,5\}\) | generically exact; scheme open | degree-fifteen core transported through a quadratic |
 
-Every displayed multiset is square-free and pairwise coprime.  In the last
-two rows the union relation graph is strongly connected: the moved vertex
-has two-way relations with both other vertices, while the other two retain
-their order.
+Thus twelve of the fifteen degree-thirty pair memberships are now proved
+scheme-theoretically.  The remaining three all have a nontrivial common
+right decoration.  They would follow from the precise transport statement:
 
-Thus the proposed theorem would prove exactly the five memberships
+> **Required transport lemma.**  If two tame decomposable lifts differ by
+> a polynomial of degree below the common right degree, then the common
+> right factor furnished by Ritt theory on the reduced fiber lifts strongly
+> enough to force the difference to be a polynomial in that factor.
 
-\[
-\begin{aligned}
-\lambda_2-\lambda_3&\in H_2+H_3,&
-\lambda_2-\lambda_5&\in H_2+H_5,\\
-\lambda_3-\lambda_5&\in H_3+H_5,&
-\lambda_2-\lambda_{15}&\in H_2+H_{15},\\
-\lambda_3-\lambda_{10}&\in H_3+H_{10}.             \tag{4.1}
-\end{aligned}
-\]
+Over fields this follows indirectly from Theorem 2.1 and the ordinary
+greatest-common-right-component theorem.  Over nonreduced rings it is the
+unproved scheme-theoretic step.
 
-These are precisely the five pairs left open by the permanent exact
-degree-thirty audit.  Degrees eighteen and twenty-four are not open tests:
-all their pair memberships have already been proved over characteristic
-zero.  The all-six degree-thirty intersection is also synchronized by the
-certified spanning tree
+## 7. Reproducible status
 
-\[
- 2-6-3-15-5-10,
-\]
+The rigorous result is now:
 
-but that argument does not imply any of the five smaller-ideal memberships
-in (4.1).
+> The square-free relation-graph hypothesis proves generic Hessian
+> synchronization in all degrees.  The stronger ideal-membership theorem is
+> proved when the relevant Hessian ideal is radical, for every primitive
+> quadratic edge, and for the degree-thirty cubic remainder edge.  It is not
+> yet proved for arbitrary primary thickenings transported through
+> singleton blocks.
 
-## 5. A noncircular proof target
-
-A usable local theorem would have to begin before synchronization:
-
-> **Primitive Hessian edge lemma (needed).**  Let \(r,s\ge2\) be coprime and
-> let
-> \[
-> P=A\circ B,\qquad Q=C\circ D
-> \]
-> be monic original polynomials of degree \(rs\), with outer degrees \(r\)
-> and \(s\), respectively.  If \(P''=Q''\), then \(P=Q\), at least at the
-> generic points of every tame power/Dickson component; for
-> scheme-theoretic synchronization the same assertion must hold in the
-> corresponding infinitesimal families.
-
-Since \(P-Q=\delta W\), the differentiated equation is
-
-\[
- A'(B)B'-C'(D)D'=\delta.                              \tag{5.1}
-\]
-
-Ritt's theorem classifies (5.1) only after \(\delta=0\) has been proved.
-The proposed ramification/infinity strategy must show that a nonzero
-constant in (5.1) is incompatible with the two decomposition structures.
-For transported rows of the table, it must also prove that stripping a
-common decoration is legitimate for the Hessian equation; this is not
-formal because second derivatives do not commute with composition.
-
-The minimal successful proof package is therefore:
-
-1. prove the primitive edge lemma on the exponential and Dickson generic
-   points;
-2. prove a transport lemma through arbitrary singleton blocks;
-3. prove that the resulting charts exhaust every minimal prime of the
-   Hessian intersection;
-4. lift generic vanishing through the primary structures, or construct an
-   explicit syzygy for each difference in (4.1).
-
-Steps 1--3 prove generic synchronization.  Step 4 is additionally necessary
-for the ideal-membership statement.
-
-## 6. Exact falsification and certification protocol
-
-For each pair in (4.1), pull the target residuals to the canonical factor
-chart of the source cut and let \(I\) be the resulting exact ideal and
-\(\Delta\) the pulled-back lift difference.
-
-1. Saturate by the exact-degree and reconstruction denominators.
-2. Compute modular minimal primes at several good primes.
-3. Match their dimensions and degrees with the transported exponential and
-   Dickson graph ideals.
-4. Lift the candidate primes to characteristic zero and prove both ideal
-   containments.
-5. Compute a characteristic-zero primary decomposition
-   \(I=\bigcap Q_i\), or an equivalent certified primary filtration.
-6. Reduce \(\Delta\) modulo every \(Q_i\).
-
-A single \(Q_i\) with \(\Delta\notin\sqrt{Q_i}\) is a genuinely
-unsynchronized component.  If \(\Delta\in\sqrt{Q_i}\setminus Q_i\), generic
-synchronization holds there but the claimed ideal membership fails because
-of a nilpotent defect.  If \(\Delta\in Q_i\) for every \(i\), then
-\(\Delta\in I\).
-
-For discovery, a bounded-degree modular syzygy
-
-\[
- \Delta=\sum_j q_jR_j
-\]
-
-is likely cheaper than a full primary decomposition.  Rational
-reconstruction followed by direct expansion over \(\mathbb Q\) gives the
-smallest permanent certificate.
-
-## 7. Status
-
-The rigorous conclusion is:
-
-> Power/Dickson normal forms force equality of the canonical linear lifts on
-> every synchronized normal-form component.  If those components exhaust the
-> minimal primes, the restricted Hessian intersection is generically
-> synchronized.  Ideal membership additionally requires radicality or
-> primary-thickening control.  The square-free graph hypothesis alone does
-> not currently provide either input, and in degree thirty it specializes to
-> all five open pair certificates.
-
-The ordinary normal-form source is Konstantin Ziegler,
+The main external inputs are the algebraic
+[Abhyankar--Moh theorem](https://encyclopediaofmath.org/wiki/Abhyankar%E2%80%93Moh_theorem),
+Ziegler's
 [Tame Decompositions and Collisions](https://arxiv.org/abs/1402.5945),
-especially the relation-graph splitting and strongly connected block
-classification.  Its complete-decomposition background is Peter Müller and
-Michael Zieve,
-[On Ritt's Polynomial Decomposition Theorems](https://arxiv.org/abs/0807.3578).
+Müller--Zieve's
+[On Ritt's Polynomial Decomposition Theorems](https://arxiv.org/abs/0807.3578),
+and Bodin's ring-valued approximate-root construction in
+[Decomposition of polynomials and approximate roots](https://arxiv.org/abs/0910.1676).

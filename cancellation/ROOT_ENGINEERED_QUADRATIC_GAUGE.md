@@ -66,14 +66,15 @@ This is not merely another polynomial map with a collision.
    quartic is therefore the next member of one explicit all-degree extension,
    not an unrelated example.
 
-4. **A possible stable discriminator.**  In fixed degree `N>=4`, the weighted
+4. **A stable discriminator.**  In fixed degree `N>=4`, the weighted
    and quadratic mechanisms have different affine discriminant
-   normalizations, `A^1` and `G_m`.  Determining whether this distinction,
-   together with its boundary marking, survives stable left--right
-   equivalence is a concrete route toward proving that the two families
-   occupy different stable components.  This is the principal potential gain
-   beyond producing another large fiber; it is a proposed invariant, not yet
-   a separation theorem.
+   normalizations, `A^1` and `G_m`.  The complete canonical-boundary
+   calculation promotes this distinction to a stable left--right invariant:
+   after deleting the intrinsically selected second boundary vertex, the
+   full normalized strata are `A^1 x G_m` and `G_m^2`, whose unit ranks are
+   one and two.  Thus no quadratic-gauge map is stably polynomially
+   left--right equivalent to a boundary-clean weighted map of the same
+   degree.
 
 ## 1. The short chart for the four-point map
 
@@ -810,45 +811,210 @@ inverse equation with the reconstruction coordinate.  The standard and
 quadratic cancellation cores both cancel the plane Jacobian divisor against
 the reciprocal Jacobian of the chart (5).
 
-## 9. Next questions
+## 9. Stable separation from the weighted family
+
+The fixed-`P` normalization `G_m` from Section 7 is only the first indication
+of the distinction: a target automorphism need not preserve the displayed
+slice `P=1`.  The intrinsic comparison uses the complete Zariski--Main
+normalization boundary.
+
+For the quadratic family, the only target images of canonical boundary
+divisors are the reduced discriminant `Z_Delta` and `Z_0=V(P)`.  Over
+`Z_Delta` there is one boundary prime with `(e,f)=(2,1)`.  Put
+
+\[
+ d=N-3,\qquad h=\gcd(d,2).
+\]
+
+Over `Z_0`, the inverse Newton polygon has slopes
+
+\[
+ 0,\qquad 1,\qquad\frac{N-1}{N-3}.
+\]
+
+The first block is the residue-degree-two affine divisor `q=0`, the second
+is the residue-degree-one affine divisor `t=0`, and the last gives `h`
+boundary primes, each with
+
+\[
+ (e,f)=\left(\frac d h,1\right).
+\]
+
+The degree sum
+
+\[
+ 2+1+h\frac d h=N
+\]
+
+proves exhaustion.  These labels intrinsically order `(Z_Delta,Z_0)`.
+For `N>=6` the second-vertex ledger already differs from the weighted
+ledger of `N-3` unramified boundary primes.
+
+For every `N>=4`, delete the intrinsically selected second vertex and
+normalize the ramified target stratum.  The weighted intrinsic-boundary
+theorem and the quadratic calculation give
+
+\[
+ \begin{aligned}
+ \operatorname{Norm}(Z_\Delta^{\rm wt}\setminus Z_0^{\rm wt})
+   &\simeq\mathbb A^1\times\mathbb G_m,\\
+ \operatorname{Norm}(Z_\Delta^{\rm quad}\setminus Z_0^{\rm quad})
+   &\simeq\mathbb G_m^2.
+ \end{aligned}
+\]
+
+After adjoining any number `s` of identity variables, their unit groups are
+
+\[
+ k^\times\xi^{\mathbb Z}
+ \quad\text{and}\quad
+ k^\times P^{\mathbb Z}r^{\mathbb Z},
+\]
+
+of ranks one and two modulo `k^\times`.  Stable normalization functoriality
+preserves the ordered strata and stabilization adds only an `A^s` factor, so
+the unit-rank gap cannot disappear.  Therefore:
+
+\[
+ \boxed{\text{No quadratic-gauge map is stably polynomially
+ left--right equivalent to a boundary-clean weighted map.}}
+\]
+
+The complete boundary proof, Laurent normalization calculation, and precise
+scope of the resulting “two components” statement are in the
+[stable-separation theorem](../verified/QUADRATIC_WEIGHTED_STABLE_SEPARATION.md).
+
+## 10. Stable moduli inside the quadratic family
+
+The first moduli count suggested by the fixed-`P` pencil is `N-3`, but the
+full three-dimensional family has one additional equivalence.  After dividing
+by `g_1` and shearing away `g_2`, put `a_j=g_j/g_1`.  The source and target
+scalings
+
+\[
+ (x,y,z)\longmapsto(\alpha x,\alpha^{-1}y,\beta z),
+\qquad
+ (P,B,C)\longmapsto(\beta P,\alpha^{-1}B,\alpha C)
+\]
+
+identify the seeds
+
+\[
+ a_3\longmapsto\alpha^{-2}\beta^{-1}a_3,\qquad
+ a_j\longmapsto\alpha^{1-j}\beta^{-j}a_j\quad(j\ge4).
+\]
+
+The `beta` action is independent of root scaling because the cubic skeleton
+has `P`-weight one while the higher decorations have `P`-weight `j`.
+
+On the coefficient-torus locus `a_3a_4\cdots a_N!=0`, the intrinsic
+normalization Fitting ideal is
+
+\[
+ \boxed{
+ J=-1+3a_3Pr^2+\sum_{j=4}^Nj(j-2)a_jP^jr^{j-1}.
+ }
+\]
+
+Its Laurent support orders the two punctures, excludes a residual
+`r -> P^m r` ambiguity, and recovers all coefficients modulo exactly the
+two displayed scalings.  Hence stable equivalence and ordinary
+left--right equivalence have the same orbits on this locus, and
+
+\[
+ \boxed{\dim\mathcal M_N^{\rm quad}=N-4.}
+\]
+
+The degree-four coarse quotient is one point, with stack stabilizer `mu_5`;
+for `N>=5` the quotient is a torus of dimension `N-4`.  Thus the tempting
+`N-3` theorem is false: the weighted and quadratic loci are stably disjoint,
+but their dimensions are `N-3` and `N-4`, respectively.  The exact
+classification is proved in the
+[quadratic-gauge stable-moduli theorem](../verified/QUADRATIC_GAUGE_STABLE_MODULI.md).
+
+## 11. Incidence suspensions through horizontal degree four
+
+The abstract criterion (24g)--(24h) is an equivalence inside the
+coordinate-preserving marked-line ansatz: for a fixed reciprocal chart,
+`X_S=lambda*kappa` is forced, and the remaining equation for `Y` is linear.
+
+There is also a complete bounded rechart calculation.  Preserve the marked
+root and the `P`-fibration, and consider every determinant-one affine
+rechart
+
+\[
+ \widetilde P=A(S)P+E(S),\qquad
+ \widetilde Q=A(S)^{-1}Q+H(\widetilde P,S).
+\]
+
+Then
+
+\[
+ \widetilde\kappa=SA(S),\qquad
+ D_0=
+ 1+SAH+\frac{(\widetilde P-E)S^2}{A}.
+\]
+
+Polynomiality of `D_0` forces `A|S^2`.  Up to scale, the complete list is
+
+\[
+\begin{array}{c|c|c}
+A&\widetilde\kappa&X\\ \hline
+1&S&S^2\\
+S&S^2&S^3\\
+S^2&S^3&S^4.
+\end{array}
+\]
+
+The cubic and quartic cases are genuine reciprocal rational charts, but the
+first incidence coordinate contains respectively `Q/S` and `Q/S^2`.
+Neither the chart shear `H` nor the incidence correction `beta` depends on
+`Q`, so these poles cannot cancel.  On the source, `S=x/t` and `Q=y+xq`;
+the poles occur generically along `x=0`.  Hence only `X=S^2` produces a
+polynomial Keller map in this entire bounded class.
+
+The weighted case `X=S` remains separate: it is a polynomial vertical
+suspension, not a reciprocal rechart of the quadratic source chart.  The
+full proof and the precise remaining chart classes are in the
+[degree-four incidence-suspension classification](../verified/INCIDENCE_SUSPENSION_DEGREE_FOUR_CLASSIFICATION.md).
+
+## 12. Next questions
 
 The present formulas suggest several bounded follow-ups.
 
-1. **Incidence-chart search.**  Enumerate reciprocal-Jacobian charts for
-   which `D=D_0-kappa Q` is affine in a marked variable.  Criterion
-   (24g)--(24h) then determines `X` by one integration and reduces the
-   Keller problem to linear divisibility and pullback-regularity conditions
-   on `Y`.  This is a systematic route to new gauges, rather than a
-   coefficient-first search.
-2. **Stable equivalence.**  Determine which projective seeds, after removing
-   `g_2`, give stably left--right equivalent maps.  The `G_m` discriminant
-   normalization supplies a boundary marking different from the weighted
-   `A^1` marking.
-3. **Higher power tilts.**  The abstract pencil
-   `H(S)-uBS^d-uC` satisfies `dC/dB=-S^d` on its
-   discriminant.  The quadratic exponent is uniquely compatible with the
-   present divisor `D=1-SQ+PS^2`; higher powers require a different
-   controlled-boundary chart.
-4. **Degree reduction.**  Formula (30) is much larger than the weighted
+1. **Non-fibre-affine chart search.**  A new higher-power tilt must change
+   the marked root nontrivially, abandon the `P`-fibration, introduce a
+   second compensating boundary ledger, or use more than one marked-line
+   coefficient.  Search these classes separately; the diagonal reweighting
+   route is exhausted.
+2. **Degree reduction.**  Formula (30) is much larger than the weighted
    degree profile.  Search for alternate lifts of the coefficient weights
    in (21) that retain polynomiality but lower the `q` powers.
-5. **Fiber arithmetic.**  Use the barycentric relations (28b) to choose
+3. **Fiber arithmetic.**  Use the barycentric relations (28b) to choose
    rational root configurations with small reconstructed heights, or to
    impose extra linear relations on the complete fiber.
-6. **Intrinsic distinction.**  Compare the two missing normalization points
-   of the `G_m` discriminant with the cancellation and weighted boundary
-   primes.  This may give a direct stable invariant for the quadratic gauge.
 
-## 10. Exact verification
+## 13. Exact verification
 
 Run
 
 ```bash
 .venv/bin/python scripts/verify_root_engineered_quadratic_gauge.py
+.venv/bin/python scripts/verify_quadratic_weighted_stable_separation.py
+.venv/bin/python scripts/verify_quadratic_gauge_stable_moduli.py
+.venv/bin/python scripts/verify_incidence_suspension_degree_four.py
 ```
 
 The checker verifies the universal plane determinant, the coefficient-weight
 identity, the denominator-free pullback through degree six, the inverse
 derivative relation, the foundational specialization, both quartic maps and
 their complete fibers, the general discriminant differential identity, and
-the consecutive-root seeds through degree twelve.
+the consecutive-root seeds through degree twelve.  The stable-separation
+checker additionally verifies the two affine `P=0` branches, the complete
+Newton ledger and degree sum through degree 64, the high-branch source pole,
+and the Laurent recovery identities for the intrinsic `G_m^2` normalization.
+The stable-moduli checker verifies the independent two-torus left--right
+action, the intrinsic Fitting polynomial and support rigidity, and the exact
+`N-4` quotient dimension.  The incidence-suspension checker verifies the
+universal determinant criterion, all three degree-four reciprocal recharts,
+and the unavoidable cubic and quartic source poles.

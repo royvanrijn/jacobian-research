@@ -642,12 +642,18 @@ entire four-weight stratum is now empty: Theorem 7.2 excludes the symmetric
 support through moment ten, and Theorem 7.3 excludes the other three
 supports through moment six.
 
-The smallest unexplored structural classes are therefore a cubic with at
-least five weights and a three-weight quartic.  Their moment generating
-functions are not one-coordinate Lagrange determinants.  Progress there
-requires either finite quotient-algebra elimination or a new identity for
-shared Wick self-contractions, exactly the collapse not supplied by the
-four-real fixed-point architecture.
+The five-weight census now excludes 18 of the 21 supports and 92 of the 102
+ordinary charts exactly.  All 35 centered/reflected chart presentations
+are modular unit ideals through moment eight; only three chart orbits
+(ten ordinary charts) still lack characteristic-zero promotion.  They are
+the constant/constant chart on \(\{-2,-1,0,1,2\}\) and two charts on
+\(\{-3,-1,0,1,2\}\), together with the latter support's reflection.
+Thus the smallest unexplored structural classes are these three cubic
+five-weight chart orbits and a three-weight quartic.  Their moment
+generating functions are not one-coordinate Lagrange determinants.
+Progress there requires either finite quotient-algebra elimination or a
+new identity for shared Wick self-contractions, exactly the collapse not
+supplied by the four-real fixed-point architecture.
 
 The executable next attacks, including the 154 five-to-seven-weight cubic
 charts and the cubic invariant-null-cone formulation, are in
@@ -659,6 +665,7 @@ charts and the cubic invariant-null-cone formulation, are in
 .venv/bin/python scripts/verify_two_real_gmc_frontier.py
 .venv/bin/python scripts/verify_two_real_gmc_symmetric_chart.py
 .venv/bin/python scripts/verify_two_real_gmc_remaining_four_weight.py
+.venv/bin/python scripts/verify_two_real_gmc_five_weight.py --discovery-only
 ```
 
 The script checks (4.3), checks (5.2) through order seven for a nonlinear

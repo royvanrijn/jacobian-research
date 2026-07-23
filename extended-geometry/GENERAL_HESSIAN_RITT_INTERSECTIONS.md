@@ -344,18 +344,22 @@ degree-thirty intersection is scheme-theoretically synchronized, including
 components which miss the complete-decomposition braid charts.  This does
 not certify every degree-thirty subintersection.  The nested pair
 \(\{2,10\}\) is separately certified in `4 normal | 7 base` coordinates,
-with Groebner-basis size four.  The five two-cut pairs
+with Groebner-basis size four.  Two further primitive pairs are now exact:
+a universal quadratic parity argument proves \(\{2,15\}\), and an exact
+free-module cubic remainder calculation proves \(\{3,10\}\) with
+Groebner-basis size `184`.  The three two-cut pairs
 
 \[
- \{2,3\},\ \{2,5\},\ \{2,15\},\ \{3,5\},\ \{3,10\}
+ \{2,3\},\ \{2,5\},\ \{3,5\}
                                                                \tag{6.6}
 \]
 
-remain outside the permanent exact pair certificate.  Their core reductions
-and ranked attacks are recorded in
+remain outside the permanent exact pair certificate.  They are exactly the
+pairs with a nontrivial common right decoration.  Their core reductions and
+ranked attacks are recorded in
 [the degree-thirty synchronization attack note](DEGREE30_HESSIAN_SYNCHRONIZATION_ATTACKS.md).
 Four additional non-tree pairs have separate exact factor-chart
-certificates, so altogether ten of the fifteen degree-thirty pairs are
+certificates, so altogether twelve of the fifteen degree-thirty pairs are
 settled.
 
 ## 7. The low-degree diagrams in relation-graph form
@@ -521,13 +525,15 @@ module (or its derived enhancement).
 
 The experiments now point to a short, theorem-driven program.
 
-1. **Prove synchronization.**  Establish (6.2) generically on every minimal
-   prime, preferably by a differential or ramification argument rather than
-   degree-by-degree elimination.  Every multiple intersection through degree
-   `24` now satisfies it globally by (6.4).  The global all-six
+1. **Finish scheme synchronization.**  The Abhyankar--Moh missing-line
+   argument proves generic synchronization for normalized square-free
+   relation graphs.  Every multiple intersection through degree `24`
+   satisfies the stronger ideal statement by (6.4).  The global all-six
    degree-thirty intersection is also synchronized by the spanning tree
-   (6.5).  The five two-cut cases in (6.6), and subintersections whose
-   requested-cut graph does not contain a certified connecting path, remain.
+   (6.5), and the primitive pairs \(\{2,15\}\) and \(\{3,10\}\) are exact.
+   The three transported cases in (6.6), and subintersections whose
+   requested-cut graph does not contain a certified connecting path, remain
+   scheme-theoretically open.
 2. **Transfer the normal form.**  Once synchronization holds, apply the
    relation-graph theorem blockwise and the finite marked-Hessian
    normalization to obtain the component classification and (5.3).

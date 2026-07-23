@@ -29,11 +29,13 @@ J=
 A_a\{F,G\}-F_a\{A,G\}+G_a\{A,F\}=1.              \tag{1}
 \]
 
-The statement is still open.  The ambient-degree-at-most-two case is
-proved, but the presently known leading-face and de Rham identities do not
-imply the all-degree result.  This audit isolates the exact missing lemma,
-sets up the first cubic test, and records a cubic family showing why the
-current two structural gates are insufficient by themselves.
+The all-degree statement is still open.  The original quadratic
+normalization omitted three linear \(x\)-coefficients; restoring them gives
+a corrected 30-variable ideal.  Exact modular reconstruction over
+\(\mathbb Q\) now gives the unit Gröbner basis, closing the full quadratic
+space.  This audit records that repair, sets up the first cubic test, and
+gives a cubic family showing why the current two structural gates are
+insufficient by themselves.
 
 ## 1. This is a restricted Jacobian-conjecture problem
 
@@ -170,7 +172,48 @@ the pencil itself.  A rational parameter can have poles on \(E_+\) or
 \(E_-\), and arbitrary rational pencils on a rational surface are not
 reduced to finitely many forms by Lüroth's theorem.
 
-## 3. A normalized cubic compatibility witness
+## 3. Quadratic normalization gap
+
+The full ambient-quadratic space is
+
+\[
+\operatorname{span}
+\{1,a,c,x,w,a^2,c^2,x^2,w^2,ac,ax,aw,cx,cw,xw\}.
+\]
+
+Only \(a,c,w\) have nonzero source-linear terms after (2), so a target
+linear change normalizes their coefficient matrix.  It does not remove
+the coefficient of \(x\), because \(x=bc\) has zero source-linear jet.
+The correctly normalized target therefore has the form
+
+\[
+(A,F,G)=(a,c,w)
++v_xx+\sum_{j=1}^{10}v_jN_j,                      \tag{9}
+\]
+
+with \(v_x,v_j\in k^3\) and \(N_j\) the ten quadratic ambient
+monomials.  The existing exact calculation sets \(v_x=0\).
+
+Restoring \(v_x\) gives 33 coefficients before, and 30 variables after,
+the same three linear eliminations.  There are again 89 distinct reduced
+equations.  The ideal is the unit ideal modulo
+
+\[
+32003,\qquad 32009,\qquad 32027,                  \tag{10}
+\]
+
+and Singular's exact modular-over-\(\mathbb Q\)
+`modGB("slimgb",I,1)` reconstruction gives
+
+\[
+\operatorname{GB}(I_{\mathbb Q})=\{1\}.           \tag{11}
+\]
+
+An independent `msolve` calculation over \(\mathbb Q\) also reports the
+empty variety.  Thus the normalization gap is closed and the full
+ambient-quadratic no-go is restored.
+
+## 4. A normalized cubic compatibility witness
 
 The failure of a purely leading-face/de Rham contradiction already appears
 in ambient degree three.  Let \(K,L\ne0\) and put
@@ -180,7 +223,7 @@ in ambient degree three.  Let \(K,L\ne0\) and put
 A&=a+w+K a^2c,\\
 F&=-w+\frac{15}{4}a x^2+L a^2c,\\
 G&=c.
-\end{aligned}                                      \tag{9}
+\end{aligned}                                      \tag{12}
 \]
 
 The linear Jacobian of \((A,F,G)\) in the local coordinates
@@ -198,10 +241,10 @@ Nevertheless, the exact de Rham compiler gives
 
 \[
 \rho(A\{F,G\})=(a,0),\qquad
-\rho(J)=(1,0).                                     \tag{10}
+\rho(J)=(1,0).                                     \tag{13}
 \]
 
-So (9) satisfies every leading-face and compiled-flux condition.  But
+So (12) satisfies every leading-face and compiled-flux condition.  But
 direct expansion gives
 
 \[
@@ -210,7 +253,7 @@ J={}&1+\frac{45}{4}x^4+\frac{27}{4}x^2
 -15Ka^2c^2x\\
 &+(6K+6L)acx^2+(2K+2L)ac
 -\frac{15}{2}acx,
-\end{aligned}                                      \tag{11}
+\end{aligned}                                      \tag{14}
 \]
 
 which is not one.
@@ -220,13 +263,13 @@ counterexample to the missing implication
 
 \[
 \text{leading pencil collapse + correct de Rham flux}
-\Longrightarrow J=1\text{ is impossible}.          \tag{12}
+\Longrightarrow J=1\text{ is impossible}.          \tag{15}
 \]
 
 Any successful descent must retain a pointwise coefficient invariant that
-detects the exact error in (11).
+detects the exact error in (14).
 
-## 4. The full normalized cubic test
+## 5. The full normalized cubic test
 
 The space of ambient polynomials of degree at most three in
 \((a,c,x,w)\) has 35 monomials.  Its intersection with the hypersurface
@@ -239,16 +282,17 @@ cw-x^3-x,
 so its image in \(B[a]\) has dimension 34.
 
 After target translation and normalization of the invertible source-linear
-jet to \((a,c,w)\), each target row has
+jet to \((a,c,w)\), the linear \(x\)-coefficient again remains free.
+Each target row has
 
 \[
-10+20-1=29
+1+10+20-1=30
 \]
 
-nonlinear coefficients.  The universal cubic ansatz therefore begins with
+residual coefficients.  The universal cubic ansatz therefore begins with
 
 \[
-\boxed{87\text{ coefficient variables}.}           \tag{13}
+\boxed{90\text{ coefficient variables}.}           \tag{16}
 \]
 
 Applying the de Rham compiler before the pointwise determinant expansion
@@ -263,15 +307,15 @@ After discarding the two free constant terms, equation (7) gives
 
 \[
 \boxed{11\text{ nonconstant flux equations}:\
-5\text{ in }[1]\text{ and }6\text{ in }[x].}        \tag{14}
+5\text{ in }[1]\text{ and }6\text{ in }[x].}        \tag{17}
 \]
 
-These equations are necessary but, by (9)--(11), not sufficient.  The
+These equations are necessary but, by (12)--(14), not sufficient.  The
 next computation should combine them with the lowest pointwise
 coefficients of \(J-1\), then branch by \(a\)-degree profile.  A raw
-87-variable Gröbner elimination is not the appropriate first step.
+90-variable Gröbner elimination is not the appropriate first step.
 
-## 5. Boundary-root and pole audit
+## 6. Boundary-root and pole audit
 
 At a missing plane \(E_\alpha\), \(\alpha=\pm i\), the bracket restricts
 to
@@ -280,13 +324,13 @@ to
 \{H_1,H_2\}|_{E_\alpha}
 =P'(\alpha)
 (H_{1,c}H_{2,w}-H_{1,w}H_{2,c})
-+w(H_{1,x}H_{2,w}-H_{1,w}H_{2,x}).                \tag{15}
++w(H_{1,x}H_{2,w}-H_{1,w}H_{2,x}).                \tag{18}
 \]
 
 But
 
 \[
-P'(i)=P'(-i)=-2.                                   \tag{16}
+P'(i)=P'(-i)=-2.                                   \tag{19}
 \]
 
 Therefore the two local normal ledgers do not differ by a sign in their
@@ -302,7 +346,7 @@ H=u c+v x+q w+d,
 the condition that \(H\) vanish generically on \(E_\alpha\) is
 
 \[
-q=0,\qquad d=-v\alpha.                             \tag{17}
+q=0,\qquad d=-v\alpha.                             \tag{20}
 \]
 
 Thus an \(a^2\)-leading coefficient can already put a pole of the ratios
@@ -315,7 +359,7 @@ there are still more boundary-vanishing types.
 The pole scenario in the proposed lead is therefore genuine.  It is not
 removed by Lüroth reduction.
 
-## 6. Gauge caution
+## 7. Gauge caution
 
 Constant target \(\mathrm{SL}_3\) changes, target translations, and affine
 changes \(a\mapsto\lambda a+\mu\) preserve the ambient cubic filtration.
@@ -334,7 +378,7 @@ filtration-preserving stabilizer, or it must track the degree change
 explicitly.  Quotienting by the full Danielewski automorphism group before
 enumeration can remove or import cubic candidates.
 
-## 7. Verdict and next lemma
+## 8. Verdict and next lemma
 
 The proposed all-degree no-go theorem is plausible but unproved.  The
 current evidence supports the following narrower conclusion:
@@ -342,8 +386,8 @@ current evidence supports the following narrower conclusion:
 \[
 \boxed{
 \begin{gathered}
-\text{degree }\le2\text{ is excluded exactly};\\
-\text{degree }3\text{ has 87 normalized variables and 11 flux gates};\\
+\text{the corrected degree-2 ideal is exactly unit over }\mathbb Q;\\
+\text{degree }3\text{ has 90 normalized variables and 11 flux gates};\\
 \text{leading collapse and flux alone are compatible.}
 \end{gathered}}
 \]
@@ -358,22 +402,25 @@ The decisive missing statement must be pointwise.  A useful target is:
 This is finite, respects the potential one-boundary pole failure, and can
 be attacked before the full determinant ledger.  If it fails, its
 components provide structured cubic counterexample ansätze rather than an
-uninterpreted 87-variable search.
+uninterpreted 90-variable search.
 
-## 8. Reproduction
+## 9. Reproduction
 
 Run
 
 ```bash
 .venv/bin/python scripts/verify_danielewski_cubic_frontier.py
+.venv/bin/python scripts/verify_danielewski_full_quadratic_obstruction.py
 ```
 
-The checker verifies the open-immersion Jacobian identity, the 87-variable
+The first checker verifies the open-immersion Jacobian identity, the 90-variable
 cubic count, the 11 compiled flux equations, the normalized compatibility
-family (9), and the equal local \(P'\)-values versus independent global
-periods at \(x=\pm i\).
+family (12), and the equal local \(P'\)-values versus independent global
+periods at \(x=\pm i\).  The second restores the three omitted \(x\)
+coefficients, verifies the 30-variable/89-equation ledger, and reproduces
+the exact characteristic-zero unit basis.
 
-## 9. Literature context
+## 10. Literature context
 
 - A. Dubouloz, B. Kunyavskii, and A. Regeta,
   *Bracket Width of Simple Lie Algebras*, Documenta Mathematica 26

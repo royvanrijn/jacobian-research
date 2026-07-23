@@ -43,6 +43,18 @@ This directory contains the stable proof chain:
   the construction-independent theorem for normalization, boundary valuations,
   intersections, nilpotents, relative differentials, Fitting ideals, and
   conductor decorations after adjoining identity variables;
+- [Quadratic-versus-weighted stable separation](QUADRATIC_WEIGHTED_STABLE_SEPARATION.md):
+  complete quadratic boundary exhaustion, intrinsic ordering of the two
+  target boundary images, and the stable unit-rank obstruction
+  `G_m^2` versus `A^1 x G_m`;
+- [Quadratic-gauge stable moduli](QUADRATIC_GAUGE_STABLE_MODULI.md):
+  exact stable-orbit classification on the coefficient-torus locus; an
+  overlooked independent `P`-scaling makes the quotient dimension `N-4`,
+  rather than `N-3`;
+- [Incidence suspensions through degree four](INCIDENCE_SUSPENSION_DEGREE_FOUR_CLASSIFICATION.md):
+  exact marked-line criterion and complete root-preserving,
+  `P`-fibration-preserving affine rechart search; the cubic and quartic
+  reciprocal charts have unavoidable source poles, leaving only `X=S^2`;
 - [Constant-kernel quotient](CONSTANT_KERNEL_QUOTIENT.md): the general
   triangular-extension and fiber-scheme theorem, its GZ-type context, the
   verified 24-to-22 quotient, and the mandatory essential-dimension search
