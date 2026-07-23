@@ -5,8 +5,10 @@ argument involving canonical finite normalizations, their boundaries, and
 scheme-theoretic decorations.  Later stable-boundary theorems should cite this
 result instead of reproving polynomial-base-change statements locally.
 
-Let `k` be a field, let `Y=Spec(A)` be a normal integral affine `k`-variety,
-let `L/k(Y)` be a finite extension, and let
+Let `k` be a field, let `Y=Spec(A)` be an integral affine `k`-variety,
+let `L/k(Y)` be a finite extension, and assume that the integral closure
+`B` of `A` in `L` is finite over `A`.  (This finiteness is automatic for
+the finite-type `k`-algebras used in this repository.)  Put
 
 \[
  X=\operatorname{Norm}_Y(L)=\operatorname{Spec}(B).
@@ -72,11 +74,12 @@ Under (1):
    formed from the finite normalization morphism.  Hence node-pairing and
    conductor decorations simply acquire an `A^s` factor.
 
-Consequently any invariant functorially defined from the canonical pair
-`(X,U)`, its labeled divisorial valuations, scheme intersections, relative
+Consequently any invariant functorially defined from a fixed pair `(X,U)`,
+its labeled divisorial valuations, scheme intersections, relative
 differentials, Fitting ideals, fiber products, or conductor is preserved by
-adjoining identity variables.  Combined with uniqueness of normalization,
-the same data are invariant under stable polynomial left--right equivalence.
+adjoining identity variables.  The passage from this statement to stable
+polynomial left--right equivalence requires the map-intrinsic construction
+below; it does not follow from an arbitrary choice of `U`.
 
 ## Proof
 
