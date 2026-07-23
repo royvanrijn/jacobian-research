@@ -18,18 +18,19 @@ def constantTerm {R : Type*} [Semiring R] (f : LaurentPolynomial R) : R :=
 
 theorem constantTerm_frobenius
     {R : Type*} [CommRing R] {p : ℕ} [CharP R p]
-    (hp : 0 < p) (f : LaurentPolynomial R) :
+    (hp : p.Prime) (f : LaurentPolynomial R) :
     constantTerm (f ^ p) = constantTerm f ^ p := by
   classical
+  letI : Fact p.Prime := ⟨hp⟩
   rw [show f = ∑ k ∈ f.coeff.support, AddMonoidAlgebra.single k (f.coeff k) by
     simpa [Finsupp.sum] using (AddMonoidAlgebra.sum_coeff_single f).symm]
-  rw [Finset.sum_pow_char]
+  rw [sum_pow_char]
   simp only [constantTerm, AddMonoidAlgebra.single_pow,
     AddMonoidAlgebra.coeff_sum, Finsupp.single_apply]
   rw [Finset.sum_eq_single 0]
   · simp
   · intro b hb hb0
-    simp [hb0, hp.ne']
+    simp [hb0, hp.ne_zero]
   · simp
 
 end GMC2

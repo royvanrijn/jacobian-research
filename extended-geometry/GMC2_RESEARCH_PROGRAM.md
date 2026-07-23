@@ -30,6 +30,15 @@ dimension-by-dimension classification is therefore:
 \]
 Accordingly, there is no remaining Gaussian-dimension problem.
 
+The next finite problem is optimization in the first failing dimension:
+classify minimal three-real-variable witnesses.  The
+[minimal-failures program](THREE_REAL_GMC_MINIMAL_FAILURES.md) proves that
+Long's five-term quartic is the unique nontrivial template in the natural
+rank-one ansatz \(P=W(1+aZ)+(b_0+b_1Z+b_2Z^2)T^2\).  The first three pure
+moments cut out the family scheme-theoretically, and a forced formal square
+identity proves all-order vanishing.  Global degree and support minimality
+outside that ansatz remain open.
+
 ## Resolution of the former frontier
 
 For arbitrary
