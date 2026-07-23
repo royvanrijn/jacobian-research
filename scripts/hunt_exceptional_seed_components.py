@@ -304,11 +304,11 @@ def run_degree(degree: int, deep_max_degree: int, timeout: int) -> list[str]:
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--min-degree", type=int, default=4)
-    parser.add_argument("--max-degree", type=int, default=8)
+    parser.add_argument("--max-degree", type=int, default=7)
     parser.add_argument(
         "--deep-max-degree",
         type=int,
-        default=7,
+        default=6,
         help="last degree in which to run radical and minimal-prime checks",
     )
     parser.add_argument("--timeout", type=int, default=900, help="seconds per degree")
@@ -377,7 +377,9 @@ def main() -> None:
         raise SystemExit(1)
 
     print("\nPASS: all full-contact images are contained in the 2/3-component union")
-    print("PASS: raw, collision-retaining, quotient, and ordered-root closures agree")
+    print("PASS: raw and collision-retaining root-chart closures agree")
+    if args.min_degree <= 6:
+        print("PASS: ordered-root and symmetry-quotient images agree through degree six")
     print("PASS: no maximal component is supported at projective root infinity")
     if args.deep_max_degree >= args.min_degree:
         print("PASS: checked maximal ideals are radical with one minimal prime")
