@@ -21,7 +21,7 @@
 
 \title{The Gaussian Moments Conjecture in Two Variables}
 \author{Roy van Rijn\\{\small Independent researcher}}
-\date{Draft for verification --- 23 July 2026}
+\date{23 July 2026}
 \hypersetup{
   pdftitle={The Gaussian Moments Conjecture in Two Variables},
   pdfauthor={Roy van Rijn},
@@ -99,8 +99,7 @@ without needing separate case analyses.
 
 \section{Circular coordinates}
 
-Let \(X,Y\) be independent standard real Gaussian variables.  The invertible
-complex linear change of coordinates
+Let \(X,Y\) be independent standard real Gaussian variables.  Set
 \[
   Z=\frac{X+iY}{\sqrt2},\qquad
   W=\frac{X-iY}{\sqrt2}.
@@ -239,16 +238,26 @@ characteristic zero.  For all but finitely many rational primes \(p\),
 there is a homomorphism from \(R\) to a field of characteristic \(p\).
 Indeed, the finite-type morphism
 \(\operatorname{Spec}R\to\operatorname{Spec}\Z\) is dominant, and its image
-contains a nonempty open subset.  Because \(c\) is invertible in \(R\), its
+is constructible by Chevalley's theorem~\cite{StacksChevalley}.  Since it
+contains the generic point, it contains a nonempty open
+subset~\cite{StacksGeneric}.  Because \(c\) is invertible in \(R\), its
 image remains nonzero under every such homomorphism.
 
-Fix one of these primes and reduce all coefficients modulo \(p\).
-Lemma~\ref{lem:face} says that every term of \(F_{rp}\) has degree at least
-\(\rho rp=np\).  The assumed equality \(\mathcal L(F_{rp})=0\) may
-therefore be divided by the integer \((np)!\):
+Fix one of these primes.  Before reducing modulo \(p\), work in the
+characteristic-zero domain \(R\).  Lemma~\ref{lem:face} says that every term
+of \(F_{rp}\) has degree at least \(\rho rp=np\).  Hence
+\(\mathcal L(F_{rp})=0\) can be written in \(R\) as
+\[
+  0=(np)!\sum_{d\geq np}[U^d]F_{rp}\,\frac{d!}{(np)!}.
+\]
+Since \(R\) is a domain of characteristic zero, \((np)!\neq0\), so it may
+be cancelled to give
 \begin{equation}\label{eq:normalized}
   \sum_{d\geq np}[U^d]F_{rp}\,\frac{d!}{(np)!}=0.
 \end{equation}
+We now apply a homomorphism \(R\to\kappa\), where \(\kappa\) is a field of
+characteristic \(p\), and continue to use the same notation for the reduced
+polynomials.
 
 In characteristic \(p\), Frobenius and constant-term extraction give
 \begin{equation}\label{eq:frobenius}
@@ -257,6 +266,10 @@ In characteristic \(p\), Frobenius and constant-term extraction give
   =\bigl(\CT_T(P^r)\bigr)^p
   =F_r^p.
 \end{equation}
+Indeed, if \(H=\sum_i h_i(U)T^i\), then
+\(H^p=\sum_i h_i(U)^pT^{pi}\) in characteristic \(p\); because \(p>0\),
+the equality \(pi=0\) holds exactly when \(i=0\).  Thus
+\(\CT_T(H^p)=\CT_T(H)^p\).
 By~\eqref{eq:leading}, the coefficient of \(U^{np}\) in
 \eqref{eq:frobenius} is \(c^p\).  A term whose degree is not divisible by
 \(p\) has zero coefficient modulo \(p\).  A remaining term has degree
@@ -337,6 +350,22 @@ the single factorial \(j!\).  In higher dimension there are several radial
 directions, so the one-dimensional isolation step no longer applies.
 Corollary~\ref{cor:classification} shows that this is not merely a
 technical gap: counterexamples already occur in dimension three.
+
+\section{Formal verification}
+
+A companion Lean~4 development has been prepared as supplementary material
+for this paper.  It mechanically checks the factorial-quotient divisibility,
+prime-dilated factorial isolation, commutation of Frobenius with angular
+constant-term extraction, the final prime contradiction, and the eventual
+vanishing argument for both signs of the rotational support.  The
+development contains no \texttt{sorry} declarations.
+
+The formalization exposes three external inputs as named axioms: the
+Duistermaat--van der Kallen constant-term theorem, rational supporting-face
+extraction, and the existence of good finite-characteristic specializations
+of finite-type \(\Z\)-domains.  Thus the artifact gives a machine-checked
+verification of the arithmetic and constant-term core of the proof, with
+its remaining trust boundary stated explicitly.
 
 \section*{Acknowledgments and declaration of generative AI use}
 

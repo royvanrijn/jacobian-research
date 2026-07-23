@@ -18,3 +18,10 @@ The proof has four dependencies:
 
 The computational support classifications in the surrounding repository
 motivated the result but are not needed by the proof.
+
+A companion Lean 4 package is located at
+[`../../formalization/gmc2`](../../formalization/gmc2/README.md).  It checks
+the factorial-divisibility, prime-isolation, Frobenius/constant-term, and
+eventual one-sided-support modules without `sorry`.  The DvdK theorem,
+rational supporting-face extraction, and finite-type specialization remain
+explicit named axioms.

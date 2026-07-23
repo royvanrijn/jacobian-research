@@ -13,9 +13,22 @@ namespace GMC2
 
 open LaurentPolynomial
 
+/-- Angular constant-term extraction as an additive homomorphism. -/
+noncomputable def constantTermHom {R : Type*} [Semiring R] :
+    LaurentPolynomial R →+ R :=
+  (Finsupp.applyAddHom 0).comp AddMonoidAlgebra.coeffAddEquiv.toAddMonoidHom
+
 /-- Angular constant-term extraction. -/
-def constantTerm {R : Type*} [Semiring R] (f : LaurentPolynomial R) : R :=
-  f.coeff 0
+noncomputable def constantTerm {R : Type*} [Semiring R]
+    (f : LaurentPolynomial R) : R :=
+  constantTermHom f
+
+@[simp] theorem constantTermHom_single
+    {R : Type*} [Semiring R] (n : ℤ) (a : R) :
+    constantTermHom (AddMonoidAlgebra.single n a) =
+      if n = 0 then a else 0 := by
+  change (Finsupp.single n a) 0 = if n = 0 then a else 0
+  exact Finsupp.single_apply
 
 theorem constantTerm_frobenius
     {R : Type*} [CommRing R] {p : ℕ} [CharP R p]
@@ -30,11 +43,15 @@ theorem constantTerm_frobenius
   rw [show f = ∑ k ∈ f.coeff.support, AddMonoidAlgebra.single k (f.coeff k) by
     simpa [Finsupp.sum] using (AddMonoidAlgebra.sum_coeff_single f).symm]
   rw [sum_pow_char]
-  simp only [constantTerm, AddMonoidAlgebra.single_pow, AddMonoidAlgebra.coeff_sum,
-    Finset.sum_apply, Finsupp.single_apply]
   change
-    (∑ i ∈ f.coeff.support, if p • i = 0 then f.coeff i ^ p else 0) =
-      (∑ i ∈ f.coeff.support, if i = 0 then f.coeff i else 0) ^ p
-  simp [nsmul_eq_mul, hp.ne_zero]
+    constantTermHom
+      (∑ k ∈ f.coeff.support,
+        AddMonoidAlgebra.single k (f.coeff k) ^ p) =
+      constantTermHom
+        (∑ k ∈ f.coeff.support,
+          AddMonoidAlgebra.single k (f.coeff k)) ^ p
+  rw [map_sum, map_sum]
+  simp only [AddMonoidAlgebra.single_pow, constantTermHom_single]
+  simp [hp.ne_zero]
 
 end GMC2

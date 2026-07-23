@@ -20,6 +20,7 @@ SYSTEM_PYTHON ?= python3
 	verify-degree42-depth-reduction \
 	verify-degree42-ab-residual-quartics \
 	verify-degree42-ab-residual-factors \
+	verify-degree42-ab-residual-quintics \
 	verify-degree42-higher-gcd-strata \
 	verify-degree42-kuranishi-cutoff-chain \
 	verify-degree30-hessian-pairs refresh-degree30-hessian-pairs \
@@ -115,6 +116,9 @@ verify-degree42-ab-residual-quartics:
 
 verify-degree42-ab-residual-factors:
 	$(PYTHON) scripts/verify_degree42_ab_residual_factors.py
+
+verify-degree42-ab-residual-quintics:
+	$(PYTHON) scripts/verify_degree42_ab_residual_quintics.py
 
 verify-degree42-higher-gcd-strata:
 	$(PYTHON) scripts/verify_degree42_higher_gcd_strata.py
@@ -323,6 +327,7 @@ verify-two-real-gmc:
 	$(PYTHON) scripts/verify_two_real_gmc_resolvent_system.py
 
 verify-counterexample-scoreboard: verify-two-real-gmc
+	$(PYTHON) scripts/verify_three_real_gmc_rank_one_classification.py
 	$(PYTHON) scripts/verify_minimal_counterexample_scoreboard.py
 
 verify-regressions: verify-external-consequences

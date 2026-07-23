@@ -926,6 +926,75 @@ leaves \(P_A\) and \(P_B\).  Their coefficients of \(w_2\) are nonzero
 on their zero loci by the two evaluations above, so solving them gives
 (6.25) without losing a component.  \(\square\)
 
+On either graph, let \(p_{3,u}\) and \(q_{3,u}\) denote the transverse
+derivatives of the two terminal cubic forms at the common line.  Follow
+\(p=0\) through quartic order by taking transverse correction
+\(c_1=-p_4/p_{3,u}\), re-solve the three pivot equations through fourth
+order, and call the resulting fifth terminal coefficients \(p_5,q_5\).
+The next coordinate-invariant residual is
+\[
+ \rho_5=p_{3,u}q_5-q_{3,u}p_5.                            \tag{6.26}
+\]
+
+> **Proposition 6.11 (generic residual-graph closure).**  The invariant
+> quintic (6.26) is not identically zero on either residual graph in
+> (6.25).  Consequently the transported component is formally
+> synchronized on dense opens of both graphs.
+
+**Proof.**  On the \(A\)-normalization, take
+\[
+ (e_1,e_2,t,w_2)=(1,1,3/5,567/100).
+\]
+This lies on \(P_A=0\), off \(B=0\) and the higher-gcd locus.  Along
+\((u,v)=(1,-1)\), exact characteristic-zero elimination gives
+\[
+ c_1=\frac{25}{216},\qquad
+ p_5=-\frac{194341}{30720},\qquad
+ q_5=-\frac{8533}{6144},\qquad
+ \rho_5=-\frac{250011279}{8192000}.
+\]
+For \(B\), reduce modulo \(103\) and use the geometric normalization
+point \(q=10,\ r=0\).  Thus
+\[
+ (e_1,e_2,t,w_2)=(57,1,57,71)\pmod {103}.
+\]
+Here \(A=73\), \(\alpha_B=36\), \(\beta_B=0\), so the common direction
+is \((u,v)=(0,1)\) and has degree one.  Exact finite-field elimination
+gives
+\[
+ (c_1,p_5,q_5,\rho_5)=(-21,-46,-7,14)\pmod {103}.
+\]
+The nonzero good reduction excludes an identically zero
+characteristic-zero residual on this \(B\)-normalization chart, and Galois
+conjugacy gives the same conclusion on the other chart.
+
+At either generic point, nonzero \(\rho_5\) supplies a degree-five form
+not divisible by the common line.  The homogeneous envelope
+\((La_2,Lb_2,h_5)\) has Hilbert vector \((1,2,3,2,1)\), hence its fifth
+normal power is zero.  Proposition 6.1 puts the defect in that fifth
+power, so the Kuranishi nilpotence cutoff theorem gives exact
+synchronization.  \(\square\)
+
+> **Corollary 6.12 (optimized \(A/B\) frontier).**  On \(D(w_2)\), the
+> transported component is formally synchronized along the \(A/B\)
+> cubic-resultant locus except possibly at the common contact-five vertex
+> and on the proper quintic-zero subloci of the two residual graphs
+> (6.25).  Consequently the full remaining support is contained in
+> \[
+>  V(w_0,w_2)\ \cup\ \{\text{contact-five vertex}\}
+>  \ \cup\ Z(\rho_{5,A})\ \cup\ Z(\rho_{5,B}),              \tag{6.27}
+> \]
+> where \(Z(\rho_{5,A})\) and \(Z(\rho_{5,B})\) are taken inside their
+> respective normalization graphs.
+
+**Proof.**  Proposition 6.7 closes the complements of the quartic-zero
+divisors.  Proposition 6.9 and Corollary 6.10 decompose those divisors
+into \(w_2=0\), the higher-gcd curves, and the two residual graphs.
+Proposition 6.8 closes every punctured higher-gcd curve, while
+Proposition 6.11 closes the complements of the quintic-zero loci on the
+two graphs.  Their common higher-gcd vertex is the stated contact-five
+point.  \(\square\)
+
 [`verify_degree42_kuranishi_branches.py`](../scripts/verify_degree42_kuranishi_branches.py)
 certifies the implicit cubic coefficients (6.10), the binary-cubic
 resultant (6.12), and the common factors (6.18)--(6.19).
@@ -939,21 +1008,20 @@ cutoffs, and the surviving common vertex in Proposition 6.8.
 [`verify_degree42_ab_residual_factors.py`](../scripts/verify_degree42_ab_residual_factors.py)
 certifies the normalization identities and the factorizations
 (6.22)--(6.24), as well as the graph simplification (6.25).
+[`verify_degree42_ab_residual_quintics.py`](../scripts/verify_degree42_ab_residual_quintics.py)
+certifies the two nonzero values in Proposition 6.11.
 
 ### 6.3 Focused future exploration
 
 The preceding calculations reduce the degree-forty-two frontier to three
-geometrically different tests.
+geometrically different tasks.
 
-1. **Residual graphs.**  Substitute (6.25) before expanding.  On either
-   graph the quartic coefficient of the one-variable residual series
-   vanishes by construction.  Solve the transverse implicit equation one
-   order further and compute its invariant quintic coefficient.  If that
-   coefficient is generically nonzero, the homogeneous envelope has
-   Hilbert vector \((1,2,3,2,1)\), hence fifth normal power zero; the
-   existing defect membership modulo \(\mathfrak m^5\) then closes the
-   graph exactly.  Factoring a vanishing quintic would isolate only a
-   finite or lower-dimensional continuation locus.
+1. **Exceptional points of the residual graphs.**  Proposition 6.11 closes
+   the generic points.  Compute (6.26) symbolically after substituting
+   (6.25), take the rational norm on the two conjugate \(B\)-charts, and
+   factor the resulting numerators.  Comparing those factors with
+   \(P_1,\ldots,P_4\), \(w_2=0\), and the graph-intersection locus will
+   isolate the lower-dimensional set not covered by the quintic cutoff.
 2. **Odd core.**  On \(w_0=w_2=0\), use
    \(U=z^3(z^2+w_1)^2\) and the involution \(z\mapsto-z\) to split the
    normal equations into even and odd eigenspaces before elimination.
@@ -964,10 +1032,12 @@ geometrically different tests.
    vertex.  The known quartics \(uv^3\) and \(v^4\) identify the repeated
    direction, so only the first term transverse to \(v^3\) is relevant.
 
-These local tests should precede another global saturation attempt.  Once
-they close, or isolate smaller exceptional loci, recompute the support
-ideal \(\mathfrak k\) with those loci removed and test
-\(I:\mathfrak k^\infty=I\) on the smaller module.
+Thus the full \(A/B\) graphs no longer belong to the generic support:
+only their quintic-zero subloci do.  The remaining local tests should
+precede another global saturation attempt.  Once they close, or isolate
+smaller exceptional loci, recompute the support ideal \(\mathfrak k\)
+with those loci removed and test \(I:\mathfrak k^\infty=I\) on the
+smaller module.
 
 Independently, the common-right-factor theorem removes the terminal right
 factor from the elimination variables.  For each degree-forty-two row:

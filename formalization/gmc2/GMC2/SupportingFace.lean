@@ -14,11 +14,14 @@ namespace GMC2
 /-- A rational lower supporting face for radial orders indexed by integral
 angular weights. -/
 structure LowerFaceCertificate (S : Finset ℤ) (ν : ℤ → ℕ) where
-  ρ θ : ℚ
+  intercept : ℚ
+  slope : ℚ
   face : Finset ℤ
   face_subset : face ⊆ S
-  lower_bound : ∀ k ∈ S, ρ + θ * k ≤ ν k
-  eq_on_face : ∀ k ∈ face, ρ + θ * k = ν k
+  lower_bound : ∀ k, k ∈ S →
+    intercept + slope * (k : ℚ) ≤ (ν k : ℚ)
+  eq_on_face : ∀ k, k ∈ face →
+    intercept + slope * (k : ℚ) = (ν k : ℚ)
   has_nonpos : ∃ k ∈ face, k ≤ 0
   has_nonneg : ∃ k ∈ face, 0 ≤ k
 

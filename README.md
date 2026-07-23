@@ -574,8 +574,10 @@ frontiers:
   synchronization on the conormal, regular quadratic/cubic, discriminant,
   generic resultant, and punctured higher-gcd strata.  `HR42R` factors the
   remaining scalar quartic divisors and reduces them to the two explicit
-  residual graphs `P_A=0`, `P_B=0`.  Those graphs, their contact-five
-  vertex, the odd `w2=0` core, uniform terminal-refinement existence through
+  residual graphs `P_A=0`, `P_B=0`; `HR42Q` closes dense opens of both
+  graphs by a nonzero invariant quintic residual.  Their quintic-zero
+  subloci, the contact-five vertex, the odd `w2=0` core,
+  uniform terminal-refinement existence through
   nonreduced thickenings,
   component-completeness, coherence, and boundary gluing remain.
 - `OP-RMIN`: the exact current intervals are

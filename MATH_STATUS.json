@@ -3234,6 +3234,30 @@
       "priority": "derived"
     },
     {
+      "id": "G3M",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Rank-one classification of minimal three-real GMC failures",
+      "scope": "In the normalized rank-one ansatz P=W(1+aZ)+(b_0+b_1Z+b_2Z^2)T^2 on a!=0, vanishing of the first three pure moments is scheme-theoretically equivalent to b_0=-a, b_1=-(3/2)a^2, b_2=-(1/2)a^3. A forced formal-square identity proves all pure moments vanish and E[ZP^m]=m!a^(m-1) is nonzero for every m>=1. Thus the family is one complex-orthogonal orbit of Long's five-term quartic, and five terms and degree four are minimal inside this ansatz. No global degree-four or five-term minimality is claimed.",
+      "canonical_source": "extended-geometry/THREE_REAL_GMC_MINIMAL_FAILURES.md",
+      "dependencies": [],
+      "checker": "scripts/verify_three_real_gmc_rank_one_classification.py",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:d0d288577fa5c6ba4eb082706fc49fd58d51a38a120583c146a9ad062a6282fb",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [
+        "rank-one numerical search for minimal three-real GMC failures"
+      ],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
       "id": "G3X",
       "kind": "reproduction",
       "state": "proved",
@@ -3637,6 +3661,7 @@
       "scope": "For every P=sum_k T^k B_k(U), pure Gaussian moment vanishing forces 0 outside the convex hull of its rotational weights. Put nu_k=ord_U(B_k) and expose the lower convex face over weight zero by nu_k>=rho+theta*k. Duistermaat--van der Kallen supplies a power r whose face Laurent polynomial has nonzero constant term c; then CT(P^(rp))=CT(P^r)^p modulo p, every radial term has degree at least rho*r*p, and the normalized factorial functional isolates c^p. Hence the support is strictly one-sided and every fixed mixed moment eventually vanishes. Therefore GMC(2) is true; together with Long's counterexamples, GMC(n) holds exactly for n<=2.",
       "canonical_source": "extended-geometry/TWO_REAL_GMC_LOWER_FACE_THEOREM.md",
       "dependencies": [
+        "G3M",
         "external: Duistermaat--van der Kallen constant-term theorem"
       ],
       "checker": "scripts/audit_two_real_gmc_lower_face.py",
@@ -5099,7 +5124,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:a4ddc9fd5f5cc1fed154a18248feff1edef9b909dff36d2f6160c0e45138e93d",
+      "artifact_hash": "sha256:05a8f2373439eff35aa3076f40c30b4922e46b3233e49d726441df2d4787a494",
       "software_lock": [
         ".python-version",
         "requirements.txt"
@@ -5132,6 +5157,34 @@
       ],
       "supersedes": [
         "unspecified quartic-zero subloci on the degree-42 A/B divisors"
+      ],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "HR42Q",
+      "kind": "corollary",
+      "state": "proved",
+      "title": "Degree-forty-two residual-graph quintic closure",
+      "scope": "After substituting the explicit P_A=0 and P_B=0 residual graphs, solve one terminal equation through its quartic transverse correction and re-solve the three pivot equations through fourth order. The resulting invariant fifth common-line residual is nonzero at an exact characteristic-zero A witness and at a good-prime geometric B witness. Hence it is generically nonzero on both graphs. The homogeneous envelope has Hilbert vector (1,2,3,2,1), so the existing defect membership modulo the fifth normal power becomes exact on dense opens of both residual graphs. Only their quintic-zero subloci, the odd w2=0 core, and the common contact-five vertex remain.",
+      "canonical_source": "extended-geometry/COMMON_RIGHT_FACTOR_SYNCHRONIZATION.md",
+      "dependencies": [
+        "HR42J",
+        "HR42R",
+        "KNC1"
+      ],
+      "checker": "scripts/verify_degree42_ab_residual_quintics.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:c7d1670383f614998efc44d93185a2f41eaeac0a155ef2a68cfc244f8d15d010",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [
+        "generic continuation problem on the degree-42 residual graphs"
       ],
       "replaced_by": [],
       "priority": "derived"

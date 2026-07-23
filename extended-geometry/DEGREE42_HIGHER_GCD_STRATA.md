@@ -161,6 +161,8 @@ subvarieties of the resultant divisors.
 The formulas and exact certificate are in
 [Proposition 6.9 and Corollary 6.10 of the canonical synchronization
 note](COMMON_RIGHT_FACTOR_SYNCHRONIZATION.md#62-geometric-classification-of-the-support).
-The next local test is therefore a fifth-order common-line residual
-calculation after substituting the graph formulas.  The common vertex (6)
-and the separate odd core \(w_0=w_2=0\) remain distinct problems.
+The fifth-order common-line calculation after substituting those graphs is
+generically nonzero on both of them, so their dense opens also close.  The
+next graph calculation is to factor the symbolic quintic-zero subloci.
+The common vertex (6) and the separate odd core \(w_0=w_2=0\) remain
+distinct problems.

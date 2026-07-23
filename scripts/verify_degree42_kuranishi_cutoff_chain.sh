@@ -12,5 +12,6 @@ cd "$ROOT"
 "$PYTHON_BIN" scripts/verify_degree42_discriminant_quartics.py
 "$PYTHON_BIN" scripts/verify_degree42_ab_residual_quartics.py
 "$PYTHON_BIN" scripts/verify_degree42_higher_gcd_strata.py
+"$PYTHON_BIN" scripts/verify_degree42_ab_residual_quintics.py
 
 echo "PASS: degree-42 Kuranishi nilpotence cutoff chain"

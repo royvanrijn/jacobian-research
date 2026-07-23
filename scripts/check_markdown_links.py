@@ -6,7 +6,7 @@ import re
 
 
 root = Path(__file__).resolve().parents[1]
-excluded_parts = {".git", ".venv", ".cache", ".idea"}
+excluded_parts = {".git", ".venv", ".cache", ".idea", ".lake"}
 documents = sorted(
     path for path in root.rglob("*.md")
     if not excluded_parts.intersection(path.relative_to(root).parts)

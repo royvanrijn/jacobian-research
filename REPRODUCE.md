@@ -834,8 +834,9 @@ form on the same tensor.  Together they disprove the proposed uniform
 inverse-degree-nine bound while leaving the full-class invertibility-only
 question open.
 
-The sole unresolved Gaussian dimension, GMC(2), and the cross-conjecture
-minimum ledger have their own fast exact target:
+The resolved two-real theorem, the first classified three-real minimality
+island, and the cross-conjecture minimum ledger have their own fast exact
+target:
 
 ```bash
 make verify-counterexample-scoreboard
@@ -882,6 +883,11 @@ use bounded support enumeration to settle GMC(2): the accompanying
 lower-face theorem handles arbitrary rotational support.  Its audit checks
 supporting-line minima, Frobenius constant-term dilation, and normalized
 factorial isolation on representative stars, mixed semigroups, and cycles.
+The same target now verifies the normalized rank-one three-real ansatz:
+the first three moments cut out Long's family scheme-theoretically, a formal
+square identity proves all-order vanishing, and deletion saturation proves
+five-term and degree-four minimality inside that ansatz.  Global minimality
+outside the ansatz remains open.
 
 A final group of checks uses the first collision-coordinate values `0,1,-1`
 to fix the multiplier, expands the homogeneous 42-variable quartic, descends
@@ -1214,8 +1220,23 @@ Thus the new degree-one-gcd support consists only of the residual graphs
 identities for `w2` and verifies that the apparent coefficient-zero
 values `5*e1=e2^2` and `r=3/5` do not add vertical components.
 
+Dense opens of both residual graphs are closed by
+
+```bash
+make verify-degree42-ab-residual-quintics
+```
+
+The checker follows one terminal equation through its quartic transverse
+correction, re-solves the three pivot equations through fourth order, and
+computes the invariant fifth residual.  On the `A` graph its exact value is
+`-250011279/8192000` at
+`(e1,e2,t,w2)=(1,1,3/5,567/100)`.  On the geometric `B` normalization it
+is `14 mod 103` at `(q,r)=(10,0)`.  The resulting homogeneous envelope has
+Hilbert vector `(1,2,3,2,1)`, so the pre-existing defect membership modulo
+the fifth normal power becomes exact on both dense opens.
+
 The complete cutoff chain—from the conormal open through the higher-gcd
-quartic strata—can be replayed with
+quartic strata and residual-graph quintics—can be replayed with
 
 ```bash
 make verify-degree42-kuranishi-cutoff-chain

@@ -141,3 +141,19 @@ The constant-term theorem finds a nonzero angular moment on that face;
 prime dilation transports it to a Gaussian moment whose lowest factorial
 term cannot cancel.  Leaf removal, star rigidity, and toric tie analysis
 are finite presentations of this single lower-face obstruction.
+
+The same proof applies to a broad class of weighted constant-term
+functionals once factorial divisibility is replaced by normalized prime
+separation.  The abstract theorem, Gamma and factorial-ratio families,
+\(q\)-factorial extension, and limits of the method are recorded in
+[the companion weighted-functional note](PRIME_SEPARATING_RADIAL_MOMENTS.md).
+
+## 6. Lean formalization
+
+A modular Lean 4 development is available in
+[`formalization/gmc2`](../formalization/gmc2/README.md).  It mechanically
+checks the factorial-quotient divisibility, prime-dilated isolation,
+Frobenius/constant-term commutation, the final contradiction, and the
+eventual one-sided-weight argument.  DvdK, finite-type good reduction, and
+rational supporting-face extraction are exposed as named imported
+interfaces; they are not hidden behind `sorry`.
