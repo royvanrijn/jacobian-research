@@ -53,7 +53,10 @@ primitive merger edge** when
 \]
 
 The family is **Hensel-independent** when every active edge is a separated
-primitive merger edge.  Put
+primitive merger edge and every inactive edge has a common **pure**
+allocation `(i,0)` or `(0,j)`.  The purity clause excludes a hidden
+self-correspondence of coincident square/cube factors at a block where the
+selected sheets happen to carry the same mixed allocation.  Put
 
 \[
  t=t(\Sigma)=\#\{\rho:\rho\text{ is active}\}.       \tag{1}
@@ -135,9 +138,12 @@ the factors centered at the distinct `r_rho` are pairwise coprime.  Hence
 the strong equality of global polynomials is equivalent to equality of the
 monic cluster polynomials separately at every `rho`.
 
-At an inactive edge all sheets use the same allocation.  The corresponding
-factorization maps are formally injective after fixing the monic cluster
-polynomial, so this part of the correspondence is a smooth diagonal factor.
+At an inactive edge all sheets use the same pure allocation.  Equality of
+two monic squares (or two monic cubes) forces equality of their bases: after
+factoring the difference, multiplication by the remaining polynomial with
+unit leading coefficient is injective over every coefficient ring.  This
+part of the correspondence is therefore a smooth diagonal factor.  The
+purity condition is used here.
 
 At an active primitive edge there are only two allocation types.  Repeated
 occurrences of one type add diagonal copies and no new equation.  After

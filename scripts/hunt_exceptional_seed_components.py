@@ -222,8 +222,27 @@ class SingularProgram:
                         f'print("SCHEME|{degree}|{tag(partition)}|"+string(sameIdeal({name},rad))+"|"+string(size(ass)));',
                     ]
                 )
+                if self.deep:
+                    self.lines.extend(
+                        [
+                            f"ideal pairrad_{pair_tag}=radical(pair_{pair_tag});",
+                            f'print("INTERSECTION_SCHEME|{degree}|{tag(left_partition)}|{tag(right_partition)}|"+string(mult(pairrad_{pair_tag}))+"|"+string(size(minAssGTZ(pair_{pair_tag}))));',
+                        ]
+                    )
 
         atom_names = [f"i_{tag(partition)}_all" for partition in atoms]
+        for left_index, left_partition in enumerate(atoms):
+            for right_partition in atoms[left_index + 1 :]:
+                left_name = f"i_{tag(left_partition)}_all"
+                right_name = f"i_{tag(right_partition)}_all"
+                pair_tag = f"{tag(left_partition)}_{tag(right_partition)}"
+                self.lines.extend(
+                    [
+                        f"ideal pair_{pair_tag}=std({left_name}+{right_name});",
+                        f"ideal finite_{pair_tag}=sat(pair_{pair_tag},ideal(z));",
+                        f'print("INTERSECTION|{degree}|{tag(left_partition)}|{tag(right_partition)}|"+string(dim(pair_{pair_tag})-1)+"|"+string(mult(pair_{pair_tag}))+"|"+string(hilb(pair_{pair_tag},2))+"|"+string(mult(finite_{pair_tag})));',
+                    ]
+                )
         union_expression = atom_names[0]
         for name in atom_names[1:]:
             union_expression = f"intersect({union_expression},{name})"
@@ -297,7 +316,7 @@ def run_degree(degree: int, deep_max_degree: int, timeout: int) -> list[str]:
     return [
         line.strip()
         for line in process.stdout.splitlines()
-        if re.match(r"^(DATA|CHART|INFINITY|SCHEME|UNION|COVER|EDGE)\|", line.strip())
+        if re.match(r"^(DATA|CHART|INFINITY|SCHEME|INTERSECTION|INTERSECTION_SCHEME|UNION|COVER|EDGE)\|", line.strip())
     ]
 
 
@@ -355,6 +374,37 @@ def main() -> None:
                 f"N={degree}: dim={dimension}, degree={multiplicity}, "
                 f"Hilbert numerator={numerator}, P(m)={polynomial}"
             )
+
+    intersections = [record for record in records if record.startswith("INTERSECTION|")]
+    if intersections:
+        print("\npairwise scheme intersections")
+    for record in intersections:
+        (
+            _,
+            degree,
+            left,
+            right,
+            dimension,
+            multiplicity,
+            vector,
+            finite_multiplicity,
+        ) = record.split("|")
+        numerator = parse_vector(vector)
+        polynomial = hilbert_polynomial(numerator, int(dimension) + 1)
+        infinity_multiplicity = int(multiplicity) - int(finite_multiplicity)
+        print(
+            f"N={degree} {left[1:]} / {right[1:]}: dim={dimension}, "
+            f"length/degree={multiplicity}, finite={finite_multiplicity}, "
+            f"infinity={infinity_multiplicity}, P(m)={polynomial}"
+        )
+    for record in records:
+        if not record.startswith("INTERSECTION_SCHEME|"):
+            continue
+        _, degree, left, right, reduced_length, minimal_primes = record.split("|")
+        print(
+            f"  reduced support for N={degree} {left[1:]} / {right[1:]}: "
+            f"degree={reduced_length}, rational minimal primes={minimal_primes}"
+        )
 
     boolean_prefixes = ("CHART|", "SCHEME|", "COVER|", "EDGE|")
     for record in records:
