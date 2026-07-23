@@ -31,7 +31,9 @@ def serialize(expression: sp.Expr) -> str:
     )
 
 
-def transformed_problem() -> tuple[
+def transformed_problem(
+    model_base: bool = False,
+) -> tuple[
     tuple[sp.Symbol, ...],
     tuple[sp.Symbol, ...],
     list[sp.Expr],
@@ -113,15 +115,34 @@ def transformed_problem() -> tuple[
         inner_coefficients[3],
         outer_coefficients[0],
     )
-    graph_values = {
-        variable: sp.factor(coefficient_map[variable].subs(inverse))
-        for variable in solved_variables
-    }
     normal_coordinates = sp.symbols("sync30t_x1:6")
-    normal_change = {
-        variable: graph_values[variable] + normal
-        for variable, normal in zip(solved_variables, normal_coordinates)
-    }
+    if model_base:
+        normal_change = dict(coefficient_map)
+        normal_change.update(
+            {
+                variable: coefficient_map[variable] + normal
+                for variable, normal in zip(
+                    solved_variables, normal_coordinates
+                )
+            }
+        )
+        base_coordinates = (
+            quintic_coefficients + (translation, parameter)
+        )
+    else:
+        graph_values = {
+            variable: sp.factor(coefficient_map[variable].subs(inverse))
+            for variable in solved_variables
+        }
+        normal_change = {
+            variable: graph_values[variable] + normal
+            for variable, normal in zip(
+                solved_variables, normal_coordinates
+            )
+        }
+        base_coordinates = (
+            b5, b6, b7, b8, b9, outer_coefficients[1]
+        )
     transformed_residuals = [
         sp.together(
             residual.subs(normal_change, simultaneous=True)
@@ -137,7 +158,6 @@ def transformed_problem() -> tuple[
         for residual in transformed_residuals
     )
     assert sp.expand(transformed_defect.subs(zero_normal)) == 0
-    base_coordinates = (b5, b6, b7, b8, b9, outer_coefficients[1])
     return (
         normal_coordinates,
         base_coordinates,
@@ -152,8 +172,9 @@ def main() -> None:
     parser.add_argument("--order", default="(dp(5),dp(6))")
     parser.add_argument("--algorithm", choices=("std", "slimgb"), default="std")
     parser.add_argument("--timeout", type=int, default=300)
+    parser.add_argument("--model-base", action="store_true")
     args = parser.parse_args()
-    normals, bases, residuals, defect = transformed_problem()
+    normals, bases, residuals, defect = transformed_problem(args.model_base)
     characteristic = args.prime if args.prime else 0
     variables = normals + bases
     singular = shutil.which("Singular")

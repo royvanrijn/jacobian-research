@@ -178,6 +178,6 @@ flux_coefficient_degrees = {
     sp.Poly(equation, *coefficients).total_degree()
     for equation in flux_equations
 }
-assert flux_coefficient_degrees == {2, 3}
+assert flux_coefficient_degrees == {3}
 print("PASS: the maximal quadratic flux compiles to five exact equations")
 print("PASS cubic Danielewski de Rham compiler")

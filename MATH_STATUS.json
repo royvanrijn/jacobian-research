@@ -2349,7 +2349,7 @@
       "dependencies": [
         "G2D"
       ],
-      "checker": "scripts/verify_two_real_gmc_five_weight.py",
+      "checker": "scripts/verify_two_real_gmc_five_weight_frontier.py",
       "review": "none",
       "supersedes": [
         "unstructured 21-support / 102-chart five-weight cubic frontier"
@@ -3061,7 +3061,7 @@
       "kind": "corollary",
       "state": "proved",
       "title": "Cubic Danielewski de Rham compiler",
-      "scope": "For D={cw=P(x)}, top de Rham cohomology is the Poisson-commutator quotient B/{B,B}, canonically represented by k[x]/d(Pk[x]). For P=x^3+x this has basis [1],[x] and recurrence [x^(m+2)]=-(m+1)/(m+3)[x^m]. The resulting exact compiler sends the coupled flux A{F,G} to two polynomial coordinates whose derivative must be (1,0). For the corrected normalized maximal ambient-quadratic ansatz, including all three residual linear-x coefficients, the flux compiles to exactly five nonconstant equations of coefficient degrees one, two, and three.",
+      "scope": "For D={cw=P(x)}, top de Rham cohomology is the Poisson-commutator quotient B/{B,B}, canonically represented by k[x]/d(Pk[x]). For P=x^3+x this has basis [1],[x] and recurrence [x^(m+2)]=-(m+1)/(m+3)[x^m]. The resulting exact compiler sends the coupled flux A{F,G} to two polynomial coordinates whose derivative must be (1,0). For the corrected normalized maximal ambient-quadratic ansatz, including all three residual linear-x coefficients, the flux compiles to exactly five nonconstant equations, each of total coefficient degree three.",
       "canonical_source": "extended-geometry/DANIELEWSKI_DE_RHAM_COMPILER.md",
       "dependencies": [
         "CL22"

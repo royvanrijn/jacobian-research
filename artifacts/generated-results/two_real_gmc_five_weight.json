@@ -40,7 +40,16 @@
           "characteristic": 1000003,
           "elapsed_seconds": 0.177
         }
-      ]
+      ],
+      "order_six_modular_quotient": {
+        "basis_size": 81,
+        "dimension": 0,
+        "is_unit": 0,
+        "vector_dimension": 164,
+        "cutoff": 6,
+        "characteristic": 1000003,
+        "elapsed_seconds": 0.9
+      }
     },
     {
       "support_representative": [
@@ -67,7 +76,16 @@
           "characteristic": 1000003,
           "elapsed_seconds": 0.153
         }
-      ]
+      ],
+      "order_six_modular_quotient": {
+        "basis_size": 81,
+        "dimension": 0,
+        "is_unit": 0,
+        "vector_dimension": 164,
+        "cutoff": 6,
+        "characteristic": 1000003,
+        "elapsed_seconds": 0.821
+      }
     },
     {
       "support_representative": [
@@ -94,7 +112,16 @@
           "characteristic": 1000003,
           "elapsed_seconds": 0.15
         }
-      ]
+      ],
+      "order_six_modular_quotient": {
+        "basis_size": 51,
+        "dimension": 0,
+        "is_unit": 0,
+        "vector_dimension": 100,
+        "cutoff": 6,
+        "characteristic": 1000003,
+        "elapsed_seconds": 0.581
+      }
     }
   ],
   "support_records": [

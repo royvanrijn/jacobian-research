@@ -189,8 +189,8 @@ After ignoring the two arbitrary constant terms, (10) gives exactly
 \boxed{5\text{ nonconstant flux equations}.}       \tag{11}
 \]
 
-They have coefficient degrees one, two, and three, and consist of the
-coefficients
+All five have total coefficient degree three (with lower-degree terms),
+and consist of the coefficients
 
 \[
 [\rho_0]_{a},\ [\rho_0]_{a^2},\
