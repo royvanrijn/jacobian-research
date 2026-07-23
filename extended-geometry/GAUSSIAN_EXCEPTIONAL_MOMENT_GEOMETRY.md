@@ -46,9 +46,23 @@ Retaining exact degree, weighted admissibility, or any of the ordinary and
 boundary-clean conditions merely restricts (1) to the corresponding open
 subsets.
 
-## 2. Scheme-theoretic transport
+## 2. The Gaussian invariant-transport theorem
 
-For every locally closed subscheme `X subset S_N`, define its moment model by
+> **Theorem 2.1 (Gaussian invariant transport).**  The isomorphism
+> `Psi_(N,lambda)` transports every functorially defined seed-space locus to
+> the optimal mixed-moment space, in the category in which that locus is
+> defined.  In particular:
+>
+> 1. closed and locally closed subschemes, their intersections, and their
+>    local and formal scheme structures transport scheme-theoretically;
+> 2. constructible loci transport constructibly;
+> 3. over `R`, semialgebraic loci and their relative Euclidean boundaries
+>    transport semialgebraically; and
+> 4. after spreading out the triangular isomorphism, arithmetic conditions
+>    on the recovered seed or its associated covers transport over every
+>    good residue field.
+
+For a locally closed subscheme `X subset S_N`, define its moment model by
 
 \[
  X^{\mathrm{mom}}=\Psi_{N,\lambda}(X).               \tag{3}
@@ -83,6 +97,52 @@ is the normalization of the moment model.
 This assertion is affine.  A nonlinear polynomial coordinate isomorphism
 need not preserve the degree of a chosen projective closure, and no
 projective seed-closure degree is inferred here.
+
+For closed `X=V(I)`, the assertion is completely effective.  If
+
+\[
+ \Psi_{N,\lambda}^{\#}:
+ k[M_3,\ldots,M_{N-1}]\xrightarrow{\sim}k[\mathcal S_N]
+\]
+
+is the triangular coordinate-ring isomorphism, then
+
+\[
+ I(X^{\rm mom})=(\Psi_{N,\lambda}^{\#})^{-1}(I).   \tag{5a}
+\]
+
+Thus equations are obtained by finite triangular substitution, without a
+new elimination problem.  Constructible transport follows because an
+isomorphism preserves finite Boolean combinations of closed subsets.  Over
+`R`, `Psi` and its polynomial inverse are semialgebraic homeomorphisms, which
+also proves the boundary assertion.
+
+The same statement holds for loci with auxiliary parameters: for every
+parameter scheme `T`, use `Psi_(N,lambda) times id_T`.  This is the form
+needed for real root-count chambers in target space and for factorization or
+Frobenius conditions on specialized covers.
+
+For the arithmetic statement, choose a finitely generated coefficient ring
+for `lambda` and invert `lambda` and the finitely many denominators in the
+factorial-normalized formulas.  Equations (2) then spread `Psi` and its
+inverse to an isomorphism over that ring.  Reduction at every remaining good
+prime preserves rational points, residue-field extensions, and every
+splitting condition computed from the recovered seed.  This is the precise
+sense in which finite-field conditions transfer; it is not a claim at the
+excluded primes.
+
+The theorem also applies to stabilizer and orbifold strata by transporting
+their groupoid or inertia-locus presentation through `Psi`.  It does not by
+itself prove that an informally specified complexity class is algebraic or
+constructible.  An `LR`-complexity locus transfers once such a locus has
+first been defined in one of the categories above.
+
+> **Corollary 2.2.**  Hessian symmetry and orbifold loci, vertical Ritt
+> decomposition loci, real-sheet chambers and their walls, and good-prime
+> splitting conditions all have canonical optimal-moment models.  Any
+> explicit seed-coordinate equations or tests for these loci therefore give
+> explicit equations or tests on the corresponding four-real-Gaussian
+> witness family.
 
 ## 3. The nonsurjective locus in moment space
 
@@ -206,7 +266,8 @@ The first degree with two exceptional components is `N=6`:
  \mathcal C_{0,2}^{\mathrm{mom}}.
 \]
 
-Use factorial-normalized moment coordinates
+Set the bridge scale to `lambda=1` and use factorial-normalized moment
+coordinates
 
 \[
  u=\mu_3=\frac{M_3}{3!},\qquad
@@ -289,7 +350,107 @@ Thus each of the four intersection points has local length two.  Equation
 (19) is the first completely explicit Gaussian-moment realization of the
 primitive dual-number weight in the exceptional partition complex.
 
-## 7. Status and reproduction
+## 7. Vertical Ritt loci among degree-six Gaussian witnesses
+
+The degree-six solution of
+[vertical OP-RITT](HESSIAN_RITT_INCIDENCE.md) now gives the first application
+of Theorem 2.1 beyond the nonsurjective partition geometry.  Continue with
+`lambda=1` and the moment coordinates `(u,v,omega)` from (13).  In the
+normalized seed chart
+
+\[
+ H=\sum_{j=3}^6h_j(W^j-W^2),
+\]
+
+the triangular inverse is
+
+\[
+\begin{aligned}
+h_3&=v,\\
+h_4&=\omega-2u^2,\\
+h_5&=1-4u-3v-2\omega+4u^2,\\
+h_6&=\omega-2u^2+3u+2v-1.
+\end{aligned}                                      \tag{20}
+\]
+
+Let `R_(a,b)^mom` be the locus where some vertical specialization
+`H-s_0W` factors as `A o B` with `(deg A,deg B)=(a,b)`.  The two composite
+factor orders are hypersurfaces
+
+\[
+ \boxed{
+ \mathcal R_{2,3}^{\rm mom}=V(\mathscr F_6),\qquad
+ \mathcal R_{3,2}^{\rm mom}=V(\mathscr G_6),}       \tag{21}
+\]
+
+where `F_6` is exactly the polynomial in (16), and
+
+\[
+\begin{aligned}
+\mathscr G_6={}&
+-4\omega^3+24\omega^2u^2-60\omega^2u-27\omega^2v+6\omega^2\\
+&-48\omega u^4+240\omega u^3+108\omega u^2v-288\omega u^2
+ -252\omega uv+114\omega u\\
+&-54\omega v^2+36\omega v-12\omega
+ +32u^6-240u^5-108u^4v+552u^4\\
+&+504u^3v-548u^3+108u^2v^2-549u^2v+264u^2
+ -216uv^2+198uv-60u\\
+&-27v^3+27v^2-18v+5.
+\end{aligned}                                      \tag{22}
+\]
+
+This produces a sharper coincidence than transport alone predicts:
+
+\[
+ \boxed{\mathcal R_{2,3}^{\rm mom}
+ =\mathcal C_{3,0}^{\rm mom}}.                     \tag{23}
+\]
+
+Thus, for normalized sextic seeds, the entire all-double nonsurjective
+component is exactly the locus whose pencil has a quadratic-after-cubic
+imprimitive vertical specialization.  The other factor order gives the new
+sextic surface `V(G_6)`.
+
+Their exact-degree scheme intersection is
+
+\[
+ V(\mathscr F_6,\mathscr G_6).                     \tag{24}
+\]
+
+On the marked clean open it is the one-dimensional monomial/Chebyshev Ritt
+collision family.  An explicit incidence chart is obtained from
+
+\[
+ g_{c,q}(W)=((W-c)^3+q(W-c))^2
+\]
+
+subject to
+
+\[
+15c^4-20c^3+12c^2q+15c^2-8cq-6c+q^2+2q+1=0,       \tag{25}
+\]
+
+by normalizing
+
+\[
+ H_{c,q}(W)=
+ -\frac{g_{c,q}(W)-g_{c,q}(0)-g'_{c,q}(0)W}
+ {g'_{c,q}(1)-g'_{c,q}(0)}                         \tag{26}
+\]
+
+and then applying `(u,v,omega)=(c_2,c_3,c_4+2c_2^2)`.  The rational clean
+witness `(c,q)=(2/5,-1/5)` maps to
+
+\[
+ (u,v,\omega)=\left(-\frac14,4,-\frac{99}{8}\right),             \tag{27}
+\]
+
+which lies on both hypersurfaces in (21).  Consequently low-degree OP-RITT
+does not merely promise future Gaussian equations: degree six already gives
+explicit imprimitive-specialization equations among four-real-Gaussian
+`GMC` witnesses.
+
+## 8. Status and reproduction
 
 The transport theorem adds no independent geometric hypothesis: it is the
 functoriality of schemes, normalization, and completed local rings under the
@@ -301,8 +462,9 @@ polynomial isomorphism (1).  Its computational inputs are checked by
 .venv/bin/python scripts/verify_exceptional_partition_lattice.py
 .venv/bin/python scripts/verify_degree18_triple_intersection.py
 .venv/bin/python scripts/verify_degree_six_gaussian_moment_geometry.py
+.venv/bin/python scripts/verify_hessian_ritt_degree_six.py
 ```
 
 The first checker verifies the triangular moment isomorphism; the remaining
-checkers verify the geometric packages transported through it and the
-explicit degree-six equations (13)--(19).
+checkers verify the geometric packages transported through it, the explicit
+degree-six partition equations (13)--(19), and the Ritt equations (20)--(27).

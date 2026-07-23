@@ -328,14 +328,16 @@ Adding any such kernel field to `N(x,0,-3z)` leaves a quadratic order-two
 reconstruction with nonzero class; its third `R/(gamma)` residue alone cannot
 vanish.  Thus arbitrary weight-zero lower target choices do not kill the
 order-two leading obstruction.  The filtered-coset BCH descent lemma shows
-that opposite nonzero weights do not require pairwise expansion at order two
-provided the target-lift coset is Rees-strict at this face.  Proving that
-strictness is now the remaining order-two task.  Its quadratic obstruction is
-the second fundamental form
+that opposite nonzero weights would disappear at logarithmic order two under
+Rees-strict descent.  Its quadratic obstruction is the second fundamental form
 `II_F(Y_1,Y_2)=-(DF)^(-1)D^2F[ell_F(Y_1),ell_F(Y_2)]`, so the nonzero-weight
 problem is a family of invariant-module maps `II_(F,p,-p)`, not an arbitrary
-coefficient expansion.  The exact weight-zero
-calculation is Proposition 6.2 of the contact note and is checked by
+coefficient expansion.  The minimal pair is now known to be nonzero: for
+constant target fields `(partial_B,partial_C)` of weights `(1,-1)`, the third
+saturated normal summand has leading symbol `-146880u^5/7`.  Hence quadratic
+Rees strictness fails and this symbol replaces the former vanishing gap with a
+canonical invariant; linear target-lift Rees strictness remains separate.  The
+exact weight-zero calculation is Proposition 6.2 of the contact note and is checked by
 [`verify_order_two_weight_zero_lr_obstruction.py`](../scripts/verify_order_two_weight_zero_lr_obstruction.py).
 
 The exact checker is

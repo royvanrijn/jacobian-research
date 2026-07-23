@@ -523,7 +523,8 @@ target jet is chosen, they are forced by (6.5).  The complexity problem is the
 filtered distance from `widehat alpha_t^(-1)` to the lifted target subgroup
 `Lambda_F(widehat Aut_Y)`.  Notice that `Lambda_F(B_t)` is only coefficientwise
 polynomial a priori; its degrees can grow without bound even when `B_t` has
-small coordinate degree.  This is precisely the phenomenon OP-LR measures.
+small coordinate degree.  This is precisely the phenomenon measured by the
+algebraic branches `OP-LR-REES` and `OP-LR-II`.
 
 The first two coefficients make the nonlinear forcing explicit.  Write
 
@@ -950,6 +951,59 @@ of `II_(F,p,-p)`.  Higher orders are governed analogously by higher mixed BCH
 fundamental forms; unlike a raw coefficient recursion, every surviving term
 contains at least one deformation direction `X`.
 
+### Proposition 6.5 -- the minimal opposite-weight symbol is nonzero
+
+For the degree-five base map `F_2`, the quadratic target-lift symbol already
+fails to vanish on constant target fields.  The target coordinate weights are
+
+\[
+ \operatorname{wt}(A,B,C)=(-2,-1,1).
+\]
+
+Consequently the constant fields
+
+\[
+ Y_1=\partial_B,\qquad Y_{-1}=\partial_C
+\]
+
+have weights `1,-1`.  Their target lifts have ordinary source degrees `19`
+and `31`, and
+
+\[
+ \deg_x\operatorname{II}_{F_2}(\partial_B,\partial_C)=49.
+\]
+
+Transport this weight-zero source field through the logarithmic differential
+matrix (3.4) of the torus-module note and project to the third saturated normal
+summand `R/(gamma)`.  The exact residue is
+
+\[
+ -\frac{30}{7}
+ \left(4896u^5-25092u^4+15232u^3-1887u^2+126u-21\right).       \tag{6.11u}
+\]
+
+For `deg(u)=2` and `deg(gamma)=3`, its associated-graded normal symbol is
+
+\[
+ \boxed{-\frac{146880}{7}u^5\ne0
+ \quad\text{in }\operatorname{gr}(R/(\gamma)).}                \tag{6.11v}
+\]
+
+This is minimal twice over: target degree zero is the smallest possible
+coordinate degree, and `|p|=1` is the smallest nonzero integral torus weight.
+Among constant target fields it is the unique opposite nonzero-weight pair.
+Because the quotient used here is the invariant-ring-saturated enlargement of
+the actual target image, nonvanishing survives in the actual normal module.
+Thus quadratic Rees strictness does not hold for `F_2`; the class (6.11v) is a
+canonical quadratic LR invariant rather than a remaining vanishing condition.
+The separate linear target-lift Rees/SAGBI problem is not decided by this
+calculation.
+
+The checker
+[`search_rees_torsion_witnesses.py`](../scripts/search_rees_torsion_witnesses.py)
+computes (6.11u)--(6.11v) from the Hessian formula and independently verifies
+the symmetric pre-Lie-defect formula (6.11q).
+
 Now expand arbitrary based source and target gauges and suppose their
 coefficients through order `m-1` solve the LR equations through that order.
 At order `m` the equation has the form
@@ -994,7 +1048,55 @@ strictness, an apparent cancellation by lower gauges is measured by Rees
 torsion of the coset action and cannot be decided from the linear cokernel
 alone.
 
-### Proposed OP-LR theorem
+### Three independent LR continuation theorems
+
+The former single `OP-LR` combined three logically separate assertions.  They
+are now tracked independently; failure of one does not block useful progress
+on either of the others.
+
+#### OP-LR-REES -- linear target-lift Rees strictness
+
+For every relevant filtered face, form the graded target-field modules by
+torus weight, the initial lifted submodule inside `h_F`, and the corresponding
+normal module.  Prove that the initial module of the target lift is generated
+by the initial lifts of a finite module generating set.  Equivalently, taking
+the selected Rees special fiber commutes with the **linear** target lift.
+
+This is a finite module/SAGBI problem.  An implementation should construct
+presentations of the graded source and target modules, the lifted submodule,
+and the normal quotient, and then use Gröbner module membership on generators.
+It should not expand more arbitrary target jets.
+
+The same presentation is the input to the quadratic problem: for each
+relevant opposite-weight pair it should produce a generator matrix for
+`II_(F,p,-p)`.  A structural part of the theorem is a finite-weight cutoff.
+The degree-five torus grading should be used to prove that, beyond an explicit
+bound on `|p|`, the modules are free shifts on which the initial symbol
+vanishes automatically.  Thus the remaining calculation is finite face by
+face, rather than merely finite after imposing an ad hoc coefficient box.
+
+#### OP-LR-II -- quadratic target-lift symbol classification
+
+Determine the initial normal classes of the finitely many generator matrices
+
+\[
+ \operatorname{II}_{F,p,-p}:
+ \mathfrak g_{Y,p}\otimes\mathfrak g_{Y,-p}
+ \longrightarrow(\mathfrak g_X/\mathfrak h_F)_0.             \tag{6.14a}
+\]
+
+Proposition 6.5 settles the dichotomy in the nonvanishing direction at the
+smallest possible pair: `p=1`, target degree zero.  The remaining useful task
+is classification rather than a vanishing theorem: compute the other
+generator matrices, prove a finite-weight cutoff, and determine whether the
+minimal class generates the full quadratic normal image.  The class records
+the intrinsic failure of the target-lift Rees graph to specialize strictly.
+
+This problem uses the normal-module presentation from the preceding paragraph
+when available, but its invariant is defined by Proposition 6.4 and can be
+computed independently of a proof of `OP-LR-REES`.
+
+#### Universal associated-graded consequence
 
 For the degree-five arc, choose an ordinary-degree-compatible Rees filtration.
 There are constants `c>0` and `C` such that, for every `m` and every choice of
@@ -1004,8 +1106,10 @@ class (6.14) cannot be killed by an order-`m` correction below that degree.
 Equivalently, the arc leaves every fixed coordinate-degree stratum of the
 polynomial LR ind-group.
 
-The torus computation supplies the candidate restriction of this universal
-class.  In its invariant coordinates
+This is the intended algebraic consequence of strict descent, rather than a
+third input bundled into either strictness theorem.  The torus computation
+supplies the candidate restriction of this universal class.  In its invariant
+coordinates
 
 \[
  v=xy,\qquad S=x^2z,\qquad
@@ -1014,7 +1118,7 @@ class.  In its invariant coordinates
 
 the source vector with coefficient `N^m` survives the
 invariant-ring-saturated equivariant target quotient.  Exact equality with
-the torus-gauge profile `24m+1` is stronger than OP-LR needs.
+the torus-gauge profile `24m+1` is stronger than this consequence needs.
 
 There is already a simple comparison with ordinary source degree on this
 candidate quotient.  Modulo
@@ -1046,22 +1150,32 @@ theorem, unbounded intrinsic coordinate degree forces escape from every fixed
 full resource box and rules out one exact rational LR equivalence in such a
 box.  Neither the coefficient `24` nor an exact target-minimal slope is needed.
 
-### A geometric route to no escape
+### OP-LR-NE -- marked-cover valuative no escape
 
 The pole-at-the-base issue is logically separate from the associated-graded
-degree obstruction.  A promising valuative formulation uses the proper marked
-finite-cover object supplied by the
-[Hurwitz--LL compactification](HURWITZ_LL_COMPACTIFICATION.md) and decorated
-normalization.  A meromorphic LR equivalence over a punctured DVR should
-induce an isomorphism of the two proper marked objects over the generic point.
-Coarse affine-mark descent now supplies the unique specialization of each mark
-over every DVR limit.  What remains for no escape is to prove that the generic
-LR-induced isomorphism belongs to a finite proper `Isom` closure compatible
-with those marks.  The valuative criterion would then extend it over the DVR,
-and rigidity would identify its special fiber.  This could exclude pole escape
-without coefficientwise pole estimates.  The required functorial `Isom`
-statement is still a proposed no-escape lemma; uniqueness of the individual
-marked specializations alone does not prove it.
+degree obstruction.  Construct the closure of the `Isom` relation first at the
+level of marked normalized incidence covers, before attempting to reconstruct
+source and target automorphisms.  The inputs are already available:
+
+- `F2` gives exact seed recovery from the marked Hessian divisor plus one
+  affine sheet;
+- `H2` supplies the marked admissible-cover extension through simultaneous
+  collisions;
+- `H3` gives unique coarse specialization of the mark over every DVR limit,
+  with special collision fiber `k[T]/(T^mu)`;
+- `IA1` gives trivial generic deck group.
+
+On the clean locus these facts should make the marked `Isom` scheme
+quasi-finite, and the task is to prove that its closure in the
+Hurwitz/admissible-cover compactification is proper, hence finite.  Every
+polynomial LR equivalence maps to this finite proper object, so the valuative
+criterion prevents its marked invariant from escaping.  Only after extension
+of the marked isomorphism should one invoke exact recovery to reconstruct the
+seed and then the LR equivalence.
+
+This avoids coefficientwise pole control.  The still-open point is functorial
+finiteness and properness of the marked `Isom` closure: uniqueness of each
+individual marked specialization alone does not establish it.
 
 ## 7. Current conclusion
 
@@ -1075,19 +1189,20 @@ The filtration repairs the defect of ordinary contact order:
 - the determinant-normalized degree-five family satisfies the exact law
   `b_m=34m+1`, giving a source-algebraization obstruction.
 
-What is not yet proved is Rees-strictness of the target-lift coset and
-subsequent survival of its class after every lower-order target choice, or the
-no-escape upgrade from a generic bounded incidence branch to a regular based
-family.  Parameter numerator/denominator degree and pole order remain part of
-the full resource spectrum, but a linear intrinsic coordinate-degree
-obstruction would already force escape from every fixed box.
+What is not yet proved is linear Rees strictness (`OP-LR-REES`), the
+vanishing-or-obstruction theorem for its quadratic symbol (`OP-LR-II`), or the
+marked-cover no-escape theorem (`OP-LR-NE`).  Parameter numerator/denominator
+degree and pole order remain part of the full resource spectrum, but a linear
+intrinsic coordinate-degree obstruction would already force escape from every
+fixed box.
 
 More precisely, the constructible generic boundedness bridge is now complete,
 as is a Noetherian theorem saying that contact in one fixed full resource box
 at every order produces one exact rational equivalence.  The remaining
 family-theoretic issue is no escape at the base point, and the remaining
 degree-five computation is the universal associated-graded nonvanishing in
-every fixed stabilization dimension.  Stable moduli do not depend on this
-continuation: the marked Hessian divisor together with the affine sheet already
-supplies them.  `OP-LR`, tracked in [STATUS.md](../STATUS.md), is therefore an
-independent theorem about filtered polynomial LR orbits.
+every fixed stabilization dimension.  Stable moduli do not depend on these
+continuations: the marked Hessian divisor together with the affine sheet
+already supplies them.  `OP-LR-REES`, `OP-LR-II`, and `OP-LR-NE`, tracked in
+[STATUS.md](../STATUS.md), are therefore independent theorems about filtered
+polynomial LR orbits and their marked valuative closure.

@@ -496,21 +496,33 @@ The filtered LR theorem can now be developed in the following order.
    calculation.**
    The law `34m+1` survives every fixed identity stabilization in the chosen
    target gauge, but the torus (5.5) shows that this gauge is not minimal.
-5. **Universal associated-graded coercivity -- open.**  Prove that the
-   order-`m` Rees-cokernel class survives arbitrary lower source and target
-   choices.  Any positive linear ordinary-degree bound suffices.
-6. **No escape at the base -- open if a pointwise theorem is desired.**  Rule
-   out poles in a bounded-degree dominating incidence branch, potentially by
-   valuative rigidity of the proper affine-marked boundary object.
+5. **Linear Rees strictness -- open as `OP-LR-REES`.**  Present the graded
+   target-field, lifted, and normal modules weight by weight and prove linear
+   strictness by finite SAGBI/module membership.
+6. **Quadratic target-lift symbol -- open as `OP-LR-II`.**  Compute the
+   generator matrices of `II_(F,p,-p)` after proving a finite-weight cutoff.
+   Vanishing gives quadratic strict descent; nonvanishing gives a canonical
+   quadratic LR invariant.
+7. **Universal associated-graded coercivity -- conditional consequence.**
+   Under strict descent, prove that the order-`m` Rees-cokernel class survives
+   arbitrary lower source and target choices.  Any positive linear
+   ordinary-degree bound suffices.
+8. **No escape at the base -- independently open as `OP-LR-NE`.**  Map a
+   punctured-DVR LR equivalence to the marked normalized incidence covers,
+   prove their compatible `Isom` closure finite and proper, and reconstruct
+   the equivalence only after extension of the marked object.
 
 This ladder is independent of the stable-moduli theorem.  Decorated
-normalization plus the affine sheet already gives stable moduli; OP-LR is a
-separate statement about the polynomial automorphism ind-group.
+normalization plus the affine sheet already gives stable moduli.  The former
+`OP-LR` is now split into linear Rees strictness (`OP-LR-REES`), the quadratic
+second-fundamental-form symbol (`OP-LR-II`), and marked-cover valuative no
+escape (`OP-LR-NE`).
 
 Items 1--4 already define a rigorous asymptotic complexity framework.  Items
-5--6 complete the independent filtered-orbit theorem.  Once item 5 holds for
-every fixed stabilization dimension, the escape spectrum (4.4) is a stable LR
-invariant genuinely different in construction from boundary normalization.
+5--7 form the algebraic strict-descent branch, while item 8 is the independent
+valuative branch.  Once item 7 holds for every fixed stabilization dimension,
+the escape spectrum (4.4) is a stable LR invariant genuinely different in
+construction from boundary normalization.
 
 ## 9. References for the ind-group input
 

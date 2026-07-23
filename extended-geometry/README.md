@@ -8,7 +8,7 @@ and external review are recorded only in
 | Results | Primary document |
 |---|---|
 | Generic discriminant geometry | [Generic discriminant curve](GENERIC_DISCRIMINANT_CURVE.md) |
-| Incidence-cover automorphisms | [Hessian-stabilizer classification and Ritt-imprimitive vertical slices](INCIDENCE_COVER_AUTOMORPHISMS.md) |
+| Incidence-cover automorphisms | [Hessian-stabilizer classification and Ritt-imprimitive vertical slices](INCIDENCE_COVER_AUTOMORPHISMS.md); [all-degree Hessian atlas and complete degree-six/eight/twelve Ritt diagrams](HESSIAN_RITT_INCIDENCE.md); [normalized sextic omitted-value and affine-sheet atlas](DEGREE_SIX_RITT_ATLAS.md) |
 | Weighted image and boundary | [Canonical-family image](CANONICAL_FAMILY_IMAGE.md) |
 | Omitted values | [Omitted-value classification](OMITTED_VALUE_CLASSIFICATION.md) |
 | Uniqueness of an omitted pencil value | [Unique omitted-value lemma](UNIQUE_OMITTED_VALUE.md) |
@@ -21,7 +21,11 @@ and external review are recorded only in
 | Weighted exceptional partition lattice | [Minimal common coarsenings, universal collision weights, and the degree-twenty census](PARTITION_LATTICE_GEOMETRY.md) |
 | Degree-eighteen triple intersection | [Three-sheet transverse gluing and the generic conductor equalizer](DEGREE18_TRIPLE_INTERSECTION.md) |
 | Finite-field Chebotarev | [Effective theorem](FINITE_FIELD_CHEBOTAREV.md) |
+| Arithmetic indistinguishability | [Exact degree-five arithmetic twins and the degree-seven Davenport--Gassmann specialization](ARITHMETIC_INDISTINGUISHABILITY.md) |
+| Limits of finite-field detection | [No permutation reductions in the weighted family; adversarially identical reductions for inequivalent degree-five maps](FINITE_FIELD_DETECTION_LIMITS.md) |
+| Arithmetic density of exceptional seeds | [Lang--Weil counts for omitted-partition strata, quantitative nonsurjective rarity, joint Frobenius statistics, and transport to Gaussian moments](ARITHMETIC_DENSITY_OF_EXCEPTIONAL_SEEDS.md) |
 | Adelic complete-fiber engineering | [Simultaneous real signatures and finite-prime splitting conditions](../verified/ADELIC_FIBER_ENGINEERING.md) |
+| Stratified adelic engineering | [Simultaneous seed-stratum, Hessian-symmetry, real-chamber, and finite-prime conditions](STRATIFIED_ADELIC_FIBER_ENGINEERING.md) |
 | Explicit quartic model | [Quartic weighted geometry](QUARTIC_WEIGHTED_GEOMETRY.md) |
 | Zhuang's external quartic islands | [Weighted-seed identification and boundary audit](EXTERNAL_QUARTIC_ISLANDS.md) |
 | Decorated normalization and degreewise stable moduli | [Canonical paper](../papers/decorated-discriminant-normalization/main.tex); [extended affine-mark and collision audit](DECORATED_NORMALIZATION_INVARIANT.md) |
@@ -38,7 +42,7 @@ and external review are recorded only in
 | Direct Image and Vanishing counterexamples | [`not SIC(20)`, generalized Laplacian and nonhomogeneous HN-VC failures in 40 variables, classical homogeneous quartic HN-VC failure in 42, and an all-order inverse recurrence](IMAGE_VANISHING_COUNTEREXAMPLES.md) |
 | Formal Gaussian--Lagrange lemma | [Constant-term-safe completed-ring, residue, determinant, and Wick proof](FORMAL_GAUSSIAN_LAGRANGE_LEMMA.md) |
 | Weighted-seed Gaussian bridge | [Uniform four-real-Gaussian witnesses, exact inverse-pencil branches, and optimal `(N-3)`-moment coordinates for normalized degree-`N` families](WEIGHTED_GAUSSIAN_BRIDGE.md) |
-| Gaussian exceptional moment geometry | [Affine partition-lattice strata transported into mixed-moment coordinates, with explicit degree-six component equations and length-two intersections](GAUSSIAN_EXCEPTIONAL_MOMENT_GEOMETRY.md) |
+| Gaussian invariant transport | [Scheme, semialgebraic, and arithmetic seed loci transported into optimal mixed moments, with explicit degree-six partition and Ritt equations](GAUSSIAN_EXCEPTIONAL_MOMENT_GEOMETRY.md) |
 | Weighted invariant-coordinate Jacobian reduction | [General weight-`(1,-1,-k)` determinant lemma reducing Keller equations to two invariant variables](WEIGHTED_INVARIANT_JACOBIAN_REDUCTION.md) |
 | Weighted tangent suspension and plane Poisson square | [Plane-core determinant rearrangement, explicit foundational pair, tangent-pencil identification, and weighted-Wronskian cascade](WEIGHTED_TANGENT_SUSPENSION.md) |
 | Foundational weighted coefficient scheme | [Exact sixteen-monomial rigidity, dual-number tangent, Wronskian obstruction, and complete two-component boundary decomposition](FOUNDATIONAL_WEIGHTED_COEFFICIENT_SCHEME.md) |

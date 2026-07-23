@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Exact degree-six exceptional geometry in Gaussian moment coordinates."""
+"""Exact degree-six exceptional and Ritt geometry in Gaussian moments."""
 
 from __future__ import annotations
 
@@ -104,6 +104,70 @@ assert sp.expand(transported_primitive - moment_surface) == 0
 assert sp.Poly(moment_surface, u, v, m).total_degree() == 6
 assert len(sp.factor_list(moment_surface)[1]) == 1
 
+# Transport the two vertical Ritt hypersurfaces through the same triangular
+# inverse.  The 2 o 3 equation coincides exactly with the all-double
+# exceptional surface; the 3 o 2 equation gives the second displayed sextic.
+h3_mom = v
+h4_mom = m - 2 * u**2
+h5_mom = 1 - 4 * u - 3 * v - 2 * m + 4 * u**2
+h6_mom = m - 2 * u**2 + 3 * u + 2 * v - 1
+
+ritt_32_seed = (
+    27 * h3_mom * h6_mom**2
+    - 18 * h4_mom * h5_mom * h6_mom
+    + 5 * h5_mom**3
+)
+ritt_23_seed = (
+    32 * h3_mom * h5_mom * h6_mom**2
+    + 64 * h3_mom * h6_mom**3
+    + 16 * h4_mom**2 * h6_mom**2
+    - 24 * h4_mom * h5_mom**2 * h6_mom
+    + 64 * h4_mom * h6_mom**3
+    + 5 * h5_mom**4
+    + 64 * h5_mom * h6_mom**3
+    + 64 * h6_mom**4
+)
+assert sp.expand(ritt_23_seed - moment_surface) == 0
+
+ritt_32_moment = sp.expand(
+    -4 * m**3
+    + 24 * m**2 * u**2
+    - 60 * m**2 * u
+    - 27 * m**2 * v
+    + 6 * m**2
+    - 48 * m * u**4
+    + 240 * m * u**3
+    + 108 * m * u**2 * v
+    - 288 * m * u**2
+    - 252 * m * u * v
+    + 114 * m * u
+    - 54 * m * v**2
+    + 36 * m * v
+    - 12 * m
+    + 32 * u**6
+    - 240 * u**5
+    - 108 * u**4 * v
+    + 552 * u**4
+    + 504 * u**3 * v
+    - 548 * u**3
+    + 108 * u**2 * v**2
+    - 549 * u**2 * v
+    + 264 * u**2
+    - 216 * u * v**2
+    + 198 * u * v
+    - 60 * u
+    - 27 * v**3
+    + 27 * v**2
+    - 18 * v
+    + 5
+)
+assert sp.expand(ritt_32_seed - ritt_32_moment) == 0
+assert sp.Poly(ritt_32_moment, u, v, m).total_degree() == 6
+
+clean_ritt_witness = {u: -sp.Rational(1, 4), v: 4, m: -sp.Rational(99, 8)}
+assert moment_surface.subs(clean_ritt_witness) == 0
+assert ritt_32_moment.subs(clean_ritt_witness) == 0
+
 # Parametrize the all-triple component C_(0,2), compute its first three
 # normalized Gaussian moments directly, and compare with the closed formulas.
 all_triple = contact_partition_incidence(6, (3, 3))
@@ -175,3 +239,5 @@ print("PASS degree-six moments: (mu_3,mu_4,mu_5) invert the normalized seed")
 print("PASS degree-six moments: C_(3,0) is the displayed irreducible sextic surface")
 print("PASS degree-six moments: C_(0,2) has the displayed rational parameterization")
 print("PASS degree-six moments: the four all-six points have intersection length two")
+print("PASS degree-six moments: both vertical Ritt loci have explicit equations")
+print("PASS degree-six moments: the 2o3 Ritt locus equals C_(3,0)")

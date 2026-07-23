@@ -265,9 +265,22 @@ Thus the imprimitive-specialization locus is
  \qquad ab=N.                                        \tag{4.3}
 \]
 
-It is computable by normalizing the inner polynomial `B`, comparing
-coefficients, and eliminating the coefficients of `A,B` and `s_0`.
-Ritt moves describe intersections between the different `(a,b)` strata.
+The efficient computation does not eliminate the coefficients of
+`A,B,s_0` simultaneously.  Twice differentiation forgets exactly the free
+linear term `s_0W` and an irrelevant constant.  Thus (4.3) is the pullback of
+the projective Hessian incidence
+
+\[
+ \overline{\{\operatorname{div}((A\circ B)'')\}}
+ \subset \mathcal Q_{N-2}.
+\]
+
+The [Hessian-incidence note](HESSIAN_RITT_INCIDENCE.md) proves this reduction,
+the exact all-degree codimension `N-a-b`, generic nonexistence in every
+composite degree `N>=6`, and the finite-etale pullback statement on the D1/F2
+clean open.  It also gives the complete degree-six, degree-eight, and
+degree-twelve Ritt diagrams.  Ritt moves describe intersections between the
+different `(a,b)` strata.
 In particular:
 
 * if `N` is prime, no vertical specialization is imprimitive;
@@ -321,10 +334,18 @@ effective divisor `(H'')`, or equivalently use the centered congruence normal
 forms (2.10).  For normalized coarse moduli, equations (3.4)--(3.5) give the
 orbifold strata explicitly.
 
-The imprimitive half should be organized independently by the factor pairs
-`ab=N` and the elimination loci (4.3).  A practical next step is to compute
-their defining ideals and Ritt-intersection diagram degree by degree, then
-intersect those loci with the boundary-degeneration conditions governing the
-distinguished affine root sheet.  That intersection, rather than the whole
-Hessian symmetry locus, is the candidate exceptional locus for marked
-decorated-normalization faithfulness.
+The imprimitive half is organized by the factor pairs `ab=N` and their
+Hessian-composition incidences.  Canonical coefficient reconstruction proves
+that every `(a,b)` incidence is rational of exact codimension `N-a-b`.
+Degrees six, eight, and twelve are complete.  In degree eight the intersection
+is the excess `2 o 2 o 2` refinement locus.  In degree twelve the six pair
+intersections consist of three common refinements, two transported
+degree-six Ritt components, and the power/Chebyshev pair; the intersection of
+all four factor orders is exactly the Chebyshev component.
+
+The remaining step is to extend these explicit diagrams beyond degree twelve
+and restrict the existing root/Hessian collision equations to each incidence.
+H3 then controls the coarse specialization at the deleted boundary points.
+That boundary intersection, rather than the whole Hessian symmetry locus, is
+the candidate exceptional locus for marked decorated-normalization
+faithfulness.

@@ -1,0 +1,118 @@
+// Exact primary-decomposition audit for the degree-six Ritt boundary atlas.
+// Run with: Singular -q scripts/verify_degree_six_ritt_boundary_atlas.sing
+
+LIB "primdec.lib";
+
+// The auxiliary inverse t localizes at the exact-degree coefficient z=h6.
+ring R = 0,(t,x,y,z),dp;
+
+// Normalized seed coordinates are h4=x, h5=y, h6=z and
+// h3=-1-2x-3y-4z, h2=1+x+2y+3z.
+poly phi23 =
+  16*x2*z2-24*x*y2*z-64*x*y*z2-64*x*z3+5*y4
+  -96*y2*z2-256*y*z3-32*y*z2-192*z4-64*z3;
+poly phi32 =
+  -18*x*y*z-54*x*z2+5*y3-81*y*z2-108*z3-27*z2;
+poly zero_cluster = x+2*y+3*z+1;
+poly extra_root =
+  -4*x3*z+x2*y2-28*x2*y*z-56*x2*z2+6*x*y3-48*x*y2*z
+  -240*x*y*z2-18*x*y*z-240*x*z3-72*x*z2+9*y4+4*y3
+  -180*y2*z2-6*y2*z-432*y*z3-132*y*z2-288*z4-176*z3-27*z2;
+
+// Saturate by z through localization and eliminate t.
+ideal K23_boundary = eliminate(
+  ideal(phi23,zero_cluster*extra_root,t*z-1),t
+);
+ideal K32_boundary = eliminate(
+  ideal(phi32,zero_cluster*extra_root,t*z-1),t
+);
+ideal Kcommon_zero = eliminate(
+  ideal(phi23,phi32,zero_cluster,t*z-1),t
+);
+ideal Kcommon_extra = eliminate(
+  ideal(phi23,phi32,extra_root,t*z-1),t
+);
+
+ring r = 0,(x,y,z),dp;
+ideal I23_boundary = imap(R,K23_boundary);
+ideal I32_boundary = imap(R,K32_boundary);
+ideal Icommon_zero = imap(R,Kcommon_zero);
+ideal Icommon_extra = imap(R,Kcommon_extra);
+
+list P23 = primdecGTZ(I23_boundary);
+list P32 = primdecGTZ(I32_boundary);
+list Pzero = primdecGTZ(Icommon_zero);
+list Pextra = primdecGTZ(Icommon_extra);
+
+if (size(P23) != 2)
+{
+  ERROR("2o3 affine boundary must have exactly two irreducible curves");
+}
+if (size(P32) != 3)
+{
+  ERROR("3o2 affine boundary must have exactly three irreducible curves");
+}
+for (int i=1; i<=size(P23); i++)
+{
+  if (dim(std(P23[i][2])) != 1)
+  {
+    ERROR("every 2o3 affine-boundary component must be a curve");
+  }
+}
+for (int j=1; j<=size(P32); j++)
+{
+  if (dim(std(P32[j][2])) != 1)
+  {
+    ERROR("every 3o2 affine-boundary component must be a curve");
+  }
+}
+
+// On the common Ritt curve, the zero-cluster boundary is one irreducible
+// degree-six orbit and is reduced scheme-theoretically.
+if (size(Pzero) != 1)
+{
+  ERROR("common zero-cluster cut must be one rational irreducible orbit");
+}
+if (vdim(std(Icommon_zero)) != 6)
+{
+  ERROR("common zero-cluster cut must have total length six");
+}
+if (vdim(std(Pzero[1][1])) != vdim(std(Pzero[1][2])))
+{
+  ERROR("common zero-cluster cut must be reduced");
+}
+
+// The extra-root cut splits over Q into two rational points and one reduced
+// quartic orbit.
+if (size(Pextra) != 3)
+{
+  ERROR("common extra-root cut must have three rational components");
+}
+if (vdim(std(Icommon_extra)) != 6)
+{
+  ERROR("common extra-root cut must have total length six");
+}
+int rational_points = 0;
+int quartic_orbits = 0;
+int primary_length;
+int reduced_length;
+for (int k=1; k<=size(Pextra); k++)
+{
+  primary_length = vdim(std(Pextra[k][1]));
+  reduced_length = vdim(std(Pextra[k][2]));
+  if (primary_length != reduced_length)
+  {
+    ERROR("every common extra-root component must be reduced");
+  }
+  if (reduced_length == 1) { rational_points++; }
+  if (reduced_length == 4) { quartic_orbits++; }
+}
+if (rational_points != 2 || quartic_orbits != 1)
+{
+  ERROR("extra-root cut must split as 1+1+4 over Q");
+}
+
+print("PASS degree-six Ritt boundary: D23 has two exact affine-boundary curves");
+print("PASS degree-six Ritt boundary: D32 has three exact affine-boundary curves");
+print("PASS degree-six Ritt boundary: common zero-cluster cut is reduced of length six");
+print("PASS degree-six Ritt boundary: common extra-root cut is reduced with splitting 1+1+4");

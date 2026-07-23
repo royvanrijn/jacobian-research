@@ -29,6 +29,9 @@ This directory contains the stable proof chain:
   approximation combines any allowed real signature with finitely many
   squarefree local splitting types; one local `N`-cycle gives a complete
   degree-`N` fiber field.
+- [Hasse-principle failure for a Keller fiber](HASSE_PRINCIPLE_KELLER_FIBER.md):
+  an explicit degree-eight complete regular fiber has points over `R` and
+  every `Q_p`, but no rational point.
 - [Exact geometric-degree spectrum](GEOMETRIC_DEGREE_SPECTRUM.md): the
   spectrum `3,4,5,...` for noninvertible Keller maps of complex affine
   three-space and its stable left--right degree separation.

@@ -56,6 +56,7 @@ verify-theorems:
 	$(PYTHON) scripts/verify_weighted_seed_theorem.py
 	$(PYTHON) scripts/verify_all_degree_rational_fibers.py
 	$(PYTHON) scripts/verify_real_fiber_spectrum.py
+	$(PYTHON) scripts/verify_hasse_keller_fiber.py
 	$(PYTHON) scripts/verify_weighted_marked_root_model.py
 	$(SYSTEM_PYTHON) scripts/audit_weighted_independent.py
 	$(PYTHON) scripts/verify_universal_discriminant_incidences.py
@@ -75,6 +76,7 @@ verify-theorems:
 	$(PYTHON) scripts/verify_omitted_value_classification.py
 	$(PYTHON) scripts/verify_repeated_root_boundary.py
 	$(PYTHON) scripts/verify_effective_chebotarev.py
+	$(PYTHON) scripts/verify_stratified_adelic_engineering.py
 
 verify-master:
 	$(SYSTEM_PYTHON) scripts/audit_boundary_exhaustion_independent.py
@@ -141,6 +143,7 @@ verify-regressions: verify-external-consequences
 	$(PYTHON) scripts/verify_degree_five_stable_moduli.py
 	$(PYTHON) scripts/verify_degree_five_rank_two_descent.py
 	$(PYTHON) scripts/verify_degree_five_torus_module.py
+	$(PYTHON) scripts/search_rees_torsion_witnesses.py --max-target-degree 0
 	$(SYSTEM_PYTHON) scripts/audit_quartic_independent.py
 	$(PYTHON) scripts/verify_generic_discriminant_geometry.py
 	$(PYTHON) scripts/verify_canonical_family_image.py
@@ -153,6 +156,10 @@ verify-regressions: verify-external-consequences
 	$(PYTHON) scripts/verify_decorated_normalization.py
 	$(PYTHON) scripts/verify_affine_branch_mark_audit.py
 	$(PYTHON) scripts/verify_generic_affine_mark_faithfulness.py
+	$(PYTHON) scripts/verify_degree_six_gaussian_moment_geometry.py
+	$(PYTHON) scripts/verify_hessian_ritt_degree_six.py
+	$(PYTHON) scripts/verify_degree_six_ritt_atlas.py
+	$(PYTHON) scripts/verify_hessian_ritt_degrees_eight_twelve.py
 	$(PYTHON) scripts/verify_stable_generator_rigidity.py
 	$(PYTHON) scripts/verify_multicluster_ll_comparison.py
 	$(PYTHON) scripts/verify_rerooting_groupoid_boundary.py

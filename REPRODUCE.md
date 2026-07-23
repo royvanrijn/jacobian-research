@@ -56,11 +56,21 @@ remain as a regression:
 .venv/bin/python scripts/verify_all_degree_rational_fibers.py
 .venv/bin/python scripts/verify_real_fiber_spectrum.py
 .venv/bin/python scripts/verify_adelic_fiber_engineering.py
+.venv/bin/python scripts/verify_hasse_keller_fiber.py
+.venv/bin/python scripts/verify_stratified_adelic_engineering.py
 ```
 
+The Hasse-fiber command expands an explicit degree-eight weighted map, checks
+its determinant `-38`, proves that its complete target fiber has no rational
+point, and audits roots over `R` and every `Q_p` through the elementary
+quadratic-residue covering and the two exceptional Hensel lifts.
+
 The last command audits the constructive CRT/weak-approximation lift and an
-explicit totally imaginary quartic complete fiber that is inert at `7` and
-has unramified splitting type `(2,1,1)` at `11`.
+explicit nonsurjective type-`(3,2)` quintic seed with trivial Hessian
+stabilizer and complete fibers of all three quintic signatures, each with
+cycle types `(5)` at `7` and `(2,2,1)` at `11`. The preceding adelic command
+audits an explicit totally imaginary quartic complete fiber that is inert at
+`7` and has unramified splitting type `(2,1,1)` at `11`.
 
 The remaining constant-`C` boundary has a separate exact Singular
 certificate:
@@ -103,6 +113,17 @@ The degree-five filtered contact problem has a separate two-invariant audit:
 It verifies the torus-gauge root recurrence over `Q[u,gamma]`, proves the
 all-order profile `24m+1`, and checks survival of the candidate class in the
 invariant-ring-saturated equivariant target quotient.
+
+The minimal opposite-weight quadratic Rees witness is reproduced by
+
+```bash
+.venv/bin/python scripts/search_rees_torsion_witnesses.py --max-target-degree 0
+```
+
+It finds the unique constant opposite-weight pair
+`(partial_B,partial_C)` of weights `(1,-1)`, computes its exact second
+fundamental form by two independent formulas, and returns the nonzero leading
+normal symbol `-146880u^5/7` in the third saturated summand `R/(gamma)`.
 
 The full normalized degree-five seed surface is checked by
 
@@ -216,13 +237,34 @@ It requires Singular for its boundary resultants:
 .venv/bin/python scripts/verify_contact_resultant_r5.py
 ```
 
-The first still-open fixed-`r` column has an exact bounded-degree reduction:
-the following Singular-backed checker constructs the quintic--sextic
-endpoint equations and verifies that their residual eliminant has degree 29
-in `y` and degree 90 in `m`.  It does not assert uniform nonvanishing.
+The first not-yet-complete fixed-`r` column has an exact bounded-degree
+reduction: the following Singular-backed checker constructs the
+quintic--sextic endpoint equations and verifies that their residual eliminant
+has degree 29 in `y` and degree 90 in `m`.
 
 ```bash
 .venv/bin/python scripts/verify_contact_resultant_r6_reduction.py
+```
+
+The branch-at-infinity replay then proves eventual nonvanishing in that
+column.  It checks the complete Newton edge after `y=1+c/m`, the squarefree
+degree-29 edge polynomial, and the linear reconstruction of the limiting
+`z`.  Lindemann--Weierstrass separates algebraic `z` from `exp(c)`.  The
+argument does not yet provide an explicit threshold in `m`.
+
+```bash
+.venv/bin/python scripts/verify_contact_resultant_r6_asymptotic.py
+```
+
+For an effective certificate on the limiting edge itself, the following
+atlas computes the first two `y` terms and first two `z` terms for all 29
+branches (compressed to 15 complex-conjugation classes).  It uses 29 disjoint rational
+Rouche disks and rational exponential enclosures to prove the strict modulus
+gap `|z_0|!=|exp(c)|` branch by branch.  It still does not extract a positive
+tail threshold in `t=1/m`.
+
+```bash
+.venv/bin/python scripts/explore_contact_resultant_r6_branch_atlas.py
 ```
 
 The additional finite `5<=r<=12` endpoint grid is quick to replay.  It checks
@@ -394,7 +436,21 @@ moment-coordinate certificate:
 
 It derives the irreducible sextic equation of the all-double component,
 parametrizes the all-triple curve, and verifies that their four all-six
-collision points have scheme-theoretic intersection length two.
+collision points have scheme-theoretic intersection length two.  It now also
+transports both degree-six vertical Ritt hypersurfaces into optimal moment
+coordinates, verifies the second displayed sextic, and proves that the
+`2 o 3` Ritt surface is exactly the all-double exceptional component.  The
+underlying Hessian-incidence and Ritt-intersection calculation is replayed by
+
+```bash
+.venv/bin/python scripts/verify_hessian_ritt_degree_six.py
+.venv/bin/python scripts/verify_degree_six_ritt_atlas.py
+```
+
+The second checker refines the Hessian-incidence result on the normalized
+seed chart: it computes the `2^3` and `3^2` omitted-value intersections, the
+four doubled type-`(6)` collision points, factored affine-sheet boundary cuts,
+and clean rational witnesses for all open pieces.
 
 The same target runs the rank-two Poisson pre-audit and the independent
 completion certificate.  The first verifies that the

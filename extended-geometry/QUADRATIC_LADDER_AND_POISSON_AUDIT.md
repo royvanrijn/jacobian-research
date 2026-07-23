@@ -377,6 +377,79 @@ A separate standard-library sparse-polynomial implementation,
 rebuilds (9)--(11) over `Fraction` and independently checks all six brackets,
 the determinant, expanded term counts, and (14).
 
+## The completion as a four-dimensional cotangent-graph restriction
+
+There is a direct relation with the six-dimensional cotangent lift, stronger
+than the left--right equivalence (16).  It is a restriction to two
+four-dimensional symplectic graphs, not an invariant hypersurface or a
+Marsden--Weinstein quotient.
+
+Write
+
+\[
+ F_0=(S_0,T_0,R_0)=(F_1/2,F_2,F_3),\qquad
+ J_0=D F_0,
+\]
+
+on the base `A^3_b`, and use fiber coordinates `alpha` on its cotangent
+bundle.  On the target cotangent bundle use base coordinates `(s,t,r)` and
+fiber coordinates `beta`.  Define closed embeddings
+
+\[
+\begin{aligned}
+ i_{\rm src}(b,\lambda)&=\left(b,J_0(b)^T(0,S_0(b),\lambda)^T\right),\\
+ i_{\rm tgt}(s,t,r,\lambda)&=((s,t,r),(0,s,\lambda)).
+\end{aligned}                                                    \tag{17}
+\]
+
+They are closed because `det J_0=-1`: on the source image one recovers
+`(0,S_0,lambda)^T=J_0^{-T}alpha`, while the target image is cut out by
+`beta_s=0`, `beta_t=s`.  If `widehat F_0` is the cotangent lift, then
+
+\[
+ \boxed{
+ \widehat F_0\circ i_{\rm src}
+ =i_{\rm tgt}\circ(F_0\times\operatorname{id}_{\mathbb A^1}).}
+                                                                  \tag{18}
+\]
+
+Indeed, the momentum component of the left side is
+`J_0^{-T}J_0^T(0,S_0,lambda)^T=(0,S_0,lambda)^T`.
+
+This restriction is symplectic.  For the cotangent one-form `theta`,
+
+\[
+ i_{\rm src}^*\theta=S_0\,dT_0+\lambda\,dR_0,
+ \qquad
+ i_{\rm tgt}^*\theta=s\,dt+\lambda\,dr.              \tag{19}
+\]
+
+Their exterior derivatives are nondegenerate: the square of the first is a
+nonzero constant multiple of
+`dS_0 wedge dT_0 wedge d(lambda) wedge dR_0`, because `det J_0=-1`; the target
+statement is immediate.  Equation (18) preserves the one-forms in (19)
+exactly.
+
+Thus every three-variable Keller map has a canonical four-dimensional
+cotangent-graph restriction, but generally its source symplectic form need
+not admit a polynomial Darboux trivialization.  For the foundational map,
+the relative-flux calculation (7)--(11) supplies exactly such a
+trivialization: the unique pole-canceling shear `Z -> Z-9Q^2` and the
+Hamiltonian `K` turn the source graph form into the standard form on
+`A^4_(x,q,p,z)`.  After the target permutation
+`(s,t,r,lambda) -> (r,t,lambda,s)`,
+equation (18) is precisely the map `(R,T,D,S)` in (12).
+
+This locates the successful route among the proposed reductions:
+
+\[
+ \boxed{\text{cotangent graph restriction}
+ \; + \; \text{polynomial relative-Hamiltonian trivialization}.}
+                                                                  \tag{20}
+\]
+
+The same exact checker verifies (18)--(19) symbolically.
+
 ## The `DC(4)` consequence and the classical implication direction
 
 Treat the four polynomials in (12) as a four-variable Keller map `G`.  The

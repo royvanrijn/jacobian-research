@@ -234,10 +234,43 @@ for point in collision_points:
     assert values == target
 assert len(set(collision_points)) == 3
 
+# The four-dimensional construction is a symplectic graph restriction of the
+# six-dimensional cotangent lift.  In independent base variables (Xb,Yb,Wb),
+# take F0=(F1/2,F2,F3).  The target cotangent graph has momentum (0,F1/2,Db),
+# and its inverse image under the cotangent lift has momentum J(F0)^T times
+# that vector.  Both restricted canonical one-forms are F1/2*dF2+Db*dF3.
+base_variables = (Xb, Yb, Wb)
+Ub = 1 + Xb * Yb
+F0 = sp.Matrix(
+    [
+        (Ub**3 * Wb + Yb**2 * Ub * (4 + 3 * Xb * Yb)) / 2,
+        Yb + 3 * Xb * Ub**2 * Wb + 3 * Xb * Yb**2 * (4 + 3 * Xb * Yb),
+        2 * Xb - 3 * Xb**2 * Yb - Xb**3 * Wb,
+    ]
+)
+J0 = F0.jacobian(base_variables)
+assert sp.factor(J0.det()) == -1
+target_graph_momentum = sp.Matrix([0, F0[0], Db])
+source_graph_momentum = (J0.T * target_graph_momentum).applyfunc(sp.expand)
+cotangent_output_momentum = (J0.inv().T * source_graph_momentum).applyfunc(sp.expand)
+assert (cotangent_output_momentum - target_graph_momentum).applyfunc(sp.expand) == sp.zeros(3, 1)
+
+# Coefficients of the restricted source one-form in d(Xb,Yb,Wb) agree with
+# those of F0[0] dF0[1] + Db dF0[2].  This is the one-form identity behind
+# the graph restriction, before the polynomial Darboux trivialization.
+restricted_one_form = sp.Matrix(
+    [
+        sp.expand(F0[0] * sp.diff(F0[1], variable) + Db * sp.diff(F0[2], variable))
+        for variable in base_variables
+    ]
+)
+assert (source_graph_momentum - restricted_one_form).applyfunc(sp.expand) == sp.zeros(3, 1)
+
 print("PASS: c=-9 is the unique pole-free shear in the family Z -> Z+cQ^2")
 print("PASS: induced quotient bracket and ker{-,R}=Q[X,Q,Z] are exact")
 print("PASS: all six rank-two Poisson brackets hold exactly over Q")
 print("PASS: det d(R,T,D,S)=1 and the displayed R is x(2-3xq)")
 print("PASS: the complete foundational three-point fiber transports to (0,0,0,-1/8)")
+print("PASS: the map is a four-dimensional symplectic graph restriction of the cotangent lift")
 print("PASS: the construction yields PC(2), exact symplectic A^4, and cotangent/Weyl A_4 consequences")
 print("SCOPE: equality with the unavailable announced manuscript formulas is not asserted")

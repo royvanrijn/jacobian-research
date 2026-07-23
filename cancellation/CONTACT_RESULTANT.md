@@ -711,7 +711,112 @@ and rule out `z=y^m` on all 29 branches.  The exact construction and degree
 certificate are replayed by
 [`verify_contact_resultant_r6_reduction.py`](../scripts/verify_contact_resultant_r6_reduction.py).
 
-## 11. Finite single-prime certificates
+## 11. The 29 branches at `m=infinity`
+
+The reduction (49) changes the first open column into a fixed-degree
+algebraic-function problem.  Put `t=1/m` and use the boundary-layer scale
+
+\[
+ y=1+ct.
+\]
+
+For `k>=1`, define
+
+\[
+ b_k=\frac{k!}{k^{k+1}},\qquad
+ U_k(c)=\sum_{j=0}^k\binom kj(-c)^{k-j}\frac{j!}{k^{j+1}}
+       =\int_0^\infty e^{-ks}(s-c)^k\,ds.             \tag{50}
+\]
+
+These are exactly the limits
+
+\[
+ m^{k+1}\beta_k\longrightarrow b_k,\qquad
+ m^{k+1}T_k(1+c/m)\longrightarrow U_k(c).
+\]
+
+Consequently `m^6 E_6` and `m^7 F_6` tend to the fixed equations
+
+\[
+ \begin{aligned}
+ e_6(c,z)&=c^6z^5+\sum_{k=1}^5(-1)^k\binom6k
+ z^{5-k}\bigl(b_k-z^kU_k(c)\bigr)(-c)^{5-k},\\
+ f_6(c,z)&=b_6-z^6U_6(c).                            \tag{51}
+ \end{aligned}
+\]
+
+Exact elimination gives
+
+\[
+ \boxed{\operatorname{Res}_z(e_6,f_6)=\lambda c^7P_{29}(c)},\qquad
+ \lambda\in\mathbb Q^\*,                            \tag{52}
+\]
+
+where `P_29` is squarefree of degree 29, `P_29(0)!=0`, and
+`gcd(P_29,U_6)=1`.  The last equality excludes a limiting solution at
+`z=infinity`.  This is not merely a formal limit of the endpoint equations.
+If
+
+\[
+ H_6(m,1+x)=\sum h_{a,b}x^am^b,
+\]
+
+then `b-a<=61` for every nonzero coefficient, and the complete top edge is
+
+\[
+ \sum_{b-a=61}h_{a,b}c^a=\lambda'P_{29}(c),
+ \qquad \lambda'\in\mathbb Q^\*.                    \tag{53}
+\]
+
+Thus all 29 branches, counted with multiplicity, are ordinary analytic
+branches at `t=0`:
+
+\[
+ \boxed{y_i(m)=1+\frac{c_i}{m}+O(m^{-2}),\qquad
+        P_{29}(c_i)=0.}                              \tag{54}
+\]
+
+The penultimate subresultant of (51) is `A(c)z+B(c)`, and exact arithmetic
+gives `gcd(P_29,A)=1`.  It therefore reconstructs one algebraic value
+
+\[
+ d_i=-B(c_i)/A(c_i),\qquad z_i(m)=d_i+O(m^{-1})       \tag{55}
+\]
+
+on every branch.  On the other hand,
+
+\[
+ y_i(m)^m\longrightarrow e^{c_i}.                   \tag{56}
+\]
+
+Every `c_i` is nonzero algebraic, so Lindemann--Weierstrass makes `e^(c_i)`
+transcendental, whereas `d_i` is algebraic.  Hence `d_i!=e^(c_i)` on all
+29 branches.  Finiteness of the branch set now gives
+
+\[
+ \boxed{\operatorname{Res}_w(K_{m,6},L_{m,6})\ne0
+        \quad\hbox{for every sufficiently large integer }m.} \tag{57}
+\]
+
+This is an eventual theorem, not yet the complete `r=6` column: the proof
+does not record an explicit threshold.  An effective root-isolation and
+remainder estimate for (54)--(56), followed by finite modular gcds below
+that threshold, is the direct remaining task.  The exact Newton edge,
+squarefreeness, and linear reconstruction are replayed by
+[`verify_contact_resultant_r6_asymptotic.py`](../scripts/verify_contact_resultant_r6_asymptotic.py).
+
+A stronger effective certificate is available at the limiting edge.  The
+29 roots consist of one positive real root and fourteen conjugate pairs.
+Their expansions `y=1+x_0/m+x_1/m^2+O(m^-3)` and
+`z=z_0+z_1/m+O(m^-2)` are reconstructed explicitly, and rational Rouche
+disks plus exact exponential bounds prove `|z_0|!=|exp(x_0)|` on every
+branch.  This removes the transcendence input from the limiting separation,
+but still does not supply a uniform positive-`t` threshold.  The 15
+complex-conjugation classes and replay are in
+[`R6_BRANCH_ATLAS.md`](R6_BRANCH_ATLAS.md) and
+[`explore_contact_resultant_r6_branch_atlas.py`](../scripts/explore_contact_resultant_r6_branch_atlas.py).
+
+## 12. Finite single-prime certificates
 
 As finite evidence, direct endpoint gcds modulo `1,000,003` give no common
 factor in the following grid:
@@ -734,16 +839,36 @@ by
 [`verify_contact_resultant_modular_grid.py`](../scripts/verify_contact_resultant_modular_grid.py).
 They are evidence only and do not replace the uniform argument.
 
-## 12. Scope boundary (`OP-CR`)
+## 13. Scope boundary (`OP-CR`)
 
 The all-parameter problem now begins in the residual wedge `m>=7`, `r>=6`
 not covered by (46) or another parameter-irreducibility theorem.  Formula
-(6) still gives a fixed comparison disk, but the `r=4` analysis shows that demanding every
-endpoint-eliminant root lie outside it is too strong.  The reusable strategy
-is instead: compute Schur--Cohn inertia, localize the exceptional branches,
-and separate `z` from `y^m` by modulus or argument.  Subresultant recurrences
-may keep the fixed-`r` eliminants and their Schur transforms smaller than a
-direct expansion.
+(6) still gives a fixed comparison disk, but the `r=4` analysis shows that
+demanding every endpoint-eliminant root lie outside it is too strong.  For
+`r=6`, (50)--(57) supersede a whole-eliminant Schur--Cohn attack: the problem
+is now to make the 29 algebraic branches effective and close the finite
+range.
+
+Two structural routes remain useful beyond that first column.  First,
+combine the factor-degree restriction after (47) with endpoint geometry.  A
+bound, depending only on `r`, for the degree of a common factor would exclude
+the `mr-u` option immediately and leave the small degree `u` option for a
+finite recurrence or moment-rank classification.  Valuations at `w=0,1` and
+`infinity`, and the linear recurrences forced by a degree-`d` divisor, are
+natural inputs to such a bound.
+
+Second, the hypergeometric equation for `K=K_(m,r)` is
+
+\[
+ w(1-w)K''+\{r+2-(r+2-mr)w\}K'+mr(r+1)K=0.          \tag{58}
+\]
+
+Its roots avoid `0,1` and are simple.  Hence any differential-operator
+formula for `L` reduces modulo (58) to `A_(m,r)(w)K'+B_(m,r)(w)K`; at a root
+of `K`, coprimality becomes the local nonvanishing of `A_(m,r)`.  The useful
+open step is not merely low differential order, which (58) supplies
+automatically, but a contiguous-relation formula keeping `A_(m,r)` of
+controlled algebraic complexity.
 
 This continuation is tracked only as `OP-CR` in
 [`STATUS.md`](../STATUS.md).  Raw interpolation of `Res_w(K,L)` still obscures this structure because its
@@ -759,6 +884,9 @@ Bernstein certificates for `r=5` are in
 The exact degree-29 endpoint-eliminant reduction for the first open column
 `r=6` is in
 [`verify_contact_resultant_r6_reduction.py`](../scripts/verify_contact_resultant_r6_reduction.py).
+Its exact Newton edge, limiting subresultant, and eventual nonvanishing
+certificate are in
+[`verify_contact_resultant_r6_asymptotic.py`](../scripts/verify_contact_resultant_r6_asymptotic.py).
 The coefficient comparison and fractional-linear transfer behind (46)--(47)
 are checked by
 [`verify_contact_resultant_irreducible_ranges.py`](../scripts/verify_contact_resultant_irreducible_ranges.py).

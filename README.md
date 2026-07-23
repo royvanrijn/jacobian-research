@@ -8,8 +8,11 @@ decorated normalization already gives an `(N-3)`-dimensional family of stable
 classes.  Adding one affine root sheet generically recovers the seed exactly.
 The same parameters yield four-real-Gaussian witnesses with an optimal
 `(N-3)`-moment algebraic fingerprint; in those moment coordinates, the full
-affine nonsurjective partition-lattice geometry is preserved.  They also
-yield inequivalent filtered Weyl endomorphisms.  The nonsurjective seed locus has
+affine nonsurjective partition-lattice geometry and every other functorially
+defined seed locus are preserved in their native categories.  In degree six,
+the two vertical Ritt loci become explicit sextic moment hypersurfaces, one
+coinciding with the all-double nonsurjective component.  The same parameters
+also yield inequivalent filtered Weyl endomorphisms.  The nonsurjective seed locus has
 dimension `floor(N/2)-1`: quartics are generically exceptional, whereas
 generic seeds of every degree `N>=5` are surjective.
 The [exact degree-spectrum corollary](verified/GEOMETRIC_DEGREE_SPECTRUM.md)
@@ -94,6 +97,17 @@ gives the
 degree and signature occurs as a complete fiber field of the explicit `F_N`,
 and finitely many additional unramified splitting conditions may be imposed
 simultaneously at sufficiently large good primes.
+The [Hasse-principle fiber theorem](verified/HASSE_PRINCIPLE_KELLER_FIBER.md)
+goes in the complementary arithmetic direction: one explicit degree-eight
+complete regular fiber has points over `R` and every `Q_p` but no rational
+point.  Its integral target is `(12138,-308652,1)`, and the full fiber is the
+finite etale scheme cut out by an elementary intersective polynomial.
+The [stratified extension](extended-geometry/STRATIFIED_ADELIC_FIBER_ENGINEERING.md)
+moves the seed and target together on any rational chart of a selected locally
+closed seed stratum. It isolates geometric nonemptiness as the only extra
+compatibility condition and gives an exact nonsurjective quintic of omitted
+type `2^1 3^1` and trivial Hessian symmetry whose three allowed real
+signatures all occur with Frobenius types `(5)` at `7` and `(2,2,1)` at `11`.
 
 The primary dependency chain is:
 
@@ -149,14 +163,28 @@ The former `OP-MARK` is now complete as `H3`: the coarse affine mark extends
 uniquely over every DVR limit.  The collision fiber at multiplicity `mu` is
 `k[T]/(T^mu)`, which is nonreduced but has one geometric point.
 
-There are two primary continuation problems:
+The LR continuation is now split into three independent primary problems,
+alongside the cancellation and Hessian--Ritt frontiers:
 
 - `OP-CR`: cancellation contact resultants in the residual wedge `m>=7`,
   `r>=6`; the first five fixed-`r` columns, the six all-`r` columns `m<=6`,
   every fixed-`m` eventual tail, and all other parameter-irreducibility
   ranges are complete.  The first open fixed column `r=6` is reduced exactly
-  to a degree-29 endpoint eliminant.
-- `OP-LR`: universal associated-graded LR obstruction and valuative no escape.
+  to 29 algebraic branches and is proved for all sufficiently large `m`;
+  making that threshold effective and closing the finite range remain open.
+- `OP-LR-REES`: linear target-lift Rees strictness as a finite module/SAGBI
+  problem, including a structural cutoff to finitely many torus weights.
+- `OP-LR-II`: the minimal pair is now nonzero; classify the remaining
+  generator matrices of `II_(F,p,-p)`, prove the finite-weight cutoff, and
+  determine whether the minimal class generates the quadratic normal image.
+- `OP-LR-NE`: valuative no escape through the finite proper closure of the
+  marked normalized-cover `Isom` relation, using `F2`, `H2`, `H3`, and generic
+  deck rigidity before reconstructing automorphisms.
+- `OP-RITT`: `HR12` now proves the exact all-degree codimension formula and
+  completes the degree-eight and degree-twelve diagrams, including the
+  all-four Chebyshev intersection in degree twelve.  What remains is to extend
+  the explicit diagrams beyond degree twelve and restrict the H3 boundary
+  equations to their incidence components.
 
 In particular, `b_m=34m+1` is an exact source-only profile in one
 determinant-normalized target gauge.  It is not target-minimal and is not a
@@ -173,14 +201,20 @@ explicit quadratic coordinate reconstruction.  The entire five-parameter
 degree-25 homogeneous weight-zero kernel has now been audited: its order-two
 quadratic residue never vanishes.  A filtered-coset BCH lemma now shows that
 pairwise opposite-weight expansion is unnecessary at order two if the Rees
-degeneration of the target-lift coset is strict.  Establishing that strictness,
-rather than enlarging the symbolic calculation, is the next algebraic task.
-Its quadratic obstruction is now the explicit second fundamental form
+degeneration of the target-lift coset is strict.  The next implementation is
+to construct the graded target-field, lifted, and normal modules and test
+their generators by Gröbner/module membership, not to enlarge the symbolic
+jet calculation.  Its quadratic obstruction is the explicit second
+fundamental form
 `II_F(Y_1,Y_2)=-(DF)^(-1)D^2F[ell_F(Y_1),ell_F(Y_2)]`; opposite weights reduce
-to invariant-module maps `II_(F,p,-p)` into the weight-zero normal module.
-Valuative no escape is a separate geometric problem.
-Neither is a bottleneck for stable moduli, which already follow from decorated
-normalization and the affine sheet.
+to invariant-module maps `II_(F,p,-p)` into the weight-zero normal module.  The
+smallest possible pair is already nonzero: the constant fields
+`(partial_B,partial_C)` have weights `(1,-1)` and saturated normal symbol
+`-146880u^5/7`.  Quadratic strict descent therefore fails, and this class is
+the canonical quadratic LR invariant anticipated by `OP-LR-II`.  Valuative no
+escape is a separate marked-cover problem, not an automorphism-coefficient
+estimate.  None is a bottleneck for stable moduli, which already follow from
+decorated normalization and the affine sheet.
 
 Other questions—arithmetic Galois theory, controlled-boundary suspension
 classification, wider quantization, coefficient-scheme gluing,

@@ -267,7 +267,7 @@
       "checker": null,
       "review": "none",
       "supersedes": [
-        "independent lower source and target jet search in OP-LR"
+        "independent lower source and target jet search in the LR strictness problems"
       ],
       "replaced_by": [],
       "priority": "derived"
@@ -277,7 +277,7 @@
       "kind": "corollary",
       "state": "proved",
       "title": "Filtered-coset BCH descent lemma",
-      "scope": "Formal LR source representatives form the right coset alpha^(-1)H_F of the lifted target subgroup. Excess degree makes the pre-Lie and BCH operations filtered. On the homogeneous-space quotient the order-two class is [-X_2+{X_1,D_1}/2]; under Rees-strict specialization its weight-zero part depends only on the weight-zero target direction, so opposite nonzero weights first occur in mixed BCH words at order three. Concrete OP-LR application is reduced to Rees strictness of the target-lift coset.",
+      "scope": "Formal LR source representatives form the right coset alpha^(-1)H_F of the lifted target subgroup. Excess degree makes the pre-Lie and BCH operations filtered. On the homogeneous-space quotient the order-two class is [-X_2+{X_1,D_1}/2]; under Rees-strict specialization its weight-zero part depends only on the weight-zero target direction, so opposite nonzero weights first occur in mixed BCH words at order three. The concrete OP-LR-REES application is reduced to linear Rees strictness of the target-lift coset.",
       "canonical_source": "extended-geometry/COMPLEXITY_FILTERED_CONTACT.md",
       "dependencies": [
         "O4"
@@ -304,6 +304,25 @@
       "review": "none",
       "supersedes": [
         "arbitrary-coefficient formulation of opposite-weight order-two terms"
+      ],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "O8",
+      "kind": "example",
+      "state": "proved",
+      "title": "Minimal quadratic Rees-torsion witness",
+      "scope": "For F_2 the unique constant opposite-weight target pair (partial_B,partial_C), of weights (1,-1), has lift degrees (19,31) and second-fundamental-form degree 49. Its third invariant-ring-saturated normal residue is -30(4896u^5-25092u^4+15232u^3-1887u^2+126u-21)/7, with nonzero associated-graded symbol -146880u^5/7 in gr(R/(gamma)). Thus quadratic target-lift Rees strictness fails at the smallest target degree and smallest nonzero weight; linear target-lift Rees strictness remains separate.",
+      "canonical_source": "extended-geometry/COMPLEXITY_FILTERED_CONTACT.md",
+      "dependencies": [
+        "O3",
+        "O7"
+      ],
+      "checker": "scripts/search_rees_torsion_witnesses.py",
+      "review": "none",
+      "supersedes": [
+        "vanishing branch of the quadratic target-lift strictness dichotomy"
       ],
       "replaced_by": [],
       "priority": "derived"
@@ -678,6 +697,29 @@
       "priority": "derived"
     },
     {
+      "id": "AD1",
+      "kind": "corollary",
+      "state": "proved",
+      "title": "Arithmetic density of exceptional seeds",
+      "scope": "For every fixed N >= 4 outside a finite degreewise set of characteristics, every geometrically integral omitted-partition normalization of dimension d has q^d + O(q^(d-1/2)) rational points; every atomic component has leading constant one. For N >= 5 the nonsurjective normalized seed density is q^(-floor((N-3)/2))(1+O(q^(-1/2))). Jointly prescribing a squarefree Frobenius type mu multiplies the main term by |C_mu|/N!, and all counts transport unchanged to the optimal Gaussian mixed-moment coordinates.",
+      "canonical_source": "extended-geometry/ARITHMETIC_DENSITY_OF_EXCEPTIONAL_SEEDS.md",
+      "dependencies": [
+        "E1",
+        "E2",
+        "E3",
+        "E5",
+        "UM1",
+        "FF1",
+        "WG3",
+        "external: Lang--Weil and finite-field Chebotarev"
+      ],
+      "checker": null,
+      "review": "none",
+      "supersedes": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
       "id": "AF1",
       "kind": "corollary",
       "state": "proved",
@@ -692,6 +734,43 @@
       "review": "none",
       "supersedes": [
         "separate real and modular fiber witnesses"
+      ],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "HP1",
+      "kind": "corollary",
+      "state": "proved",
+      "title": "Hasse-principle failure for a complete Keller fiber",
+      "scope": "One explicit degree-eight weighted Keller map over Q with determinant -38 has the integral target (12138,-308652,1) whose complete regular fiber is Spec(Q[W]/(P)): it has no Q-point, exactly six real points, and at least one Q_p-point for every prime p. The intersective polynomial P has an integral root modulo every positive integer, and the C=1 reconstruction proves that no boundary point contributes an additional preimage.",
+      "canonical_source": "verified/HASSE_PRINCIPLE_KELLER_FIBER.md",
+      "dependencies": [
+        "W1"
+      ],
+      "checker": "scripts/verify_hasse_keller_fiber.py",
+      "review": "none",
+      "supersedes": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "SAF1",
+      "kind": "corollary",
+      "state": "proved",
+      "title": "Stratified adelic seed-and-fiber engineering",
+      "scope": "For any locally closed normalized seed stratum having a rational affine chart, one rational seed and target simultaneously realize a prescribed nonempty real root chamber and finitely many squarefree modular factorization types whenever compatible local points exist on that chart. This covers omitted-component membership or nonmembership and exact Hessian-symmetry conditions on rational charts; geometric nonemptiness of their intersection remains a separate hypothesis. One exact type-(3,2) quintic seed with trivial Hessian stabilizer realizes all three quintic signatures while retaining a 5-cycle at 7 and type (2,2,1) at 11.",
+      "canonical_source": "extended-geometry/STRATIFIED_ADELIC_FIBER_ENGINEERING.md",
+      "dependencies": [
+        "AF1",
+        "E1",
+        "E3",
+        "IA1"
+      ],
+      "checker": "scripts/verify_stratified_adelic_engineering.py",
+      "review": "none",
+      "supersedes": [
+        "separate geometric-stratum and arithmetic-fiber witnesses"
       ],
       "replaced_by": [],
       "priority": "derived"
@@ -842,6 +921,25 @@
       "review": "none",
       "supersedes": [
         "raw degree-6m Sylvester-resultant formulation for the first open column"
+      ],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "CR5",
+      "kind": "corollary",
+      "state": "proved",
+      "title": "Sixth contact-resultant asymptotic branches",
+      "scope": "For r=6 all 29 endpoint-eliminant branches satisfy y=1+c/m+O(m^-2), with squarefree nonzero algebraic c and a uniquely reconstructed algebraic limiting z. Lindemann--Weierstrass separates z from exp(c), so the contact resultant is nonzero for all sufficiently large m. No explicit threshold is claimed.",
+      "canonical_source": "cancellation/CONTACT_RESULTANT.md",
+      "dependencies": [
+        "CR4",
+        "external: Lindemann--Weierstrass theorem"
+      ],
+      "checker": "scripts/verify_contact_resultant_r6_asymptotic.py",
+      "review": "none",
+      "supersedes": [
+        "whole-eliminant Schur--Cohn continuation for the r=6 asymptotic tail"
       ],
       "replaced_by": [],
       "priority": "derived"
@@ -1051,6 +1149,26 @@
       "review": "none",
       "supersedes": [
         "dimension-only Gaussian seed-family statement"
+      ],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "WG4",
+      "kind": "corollary",
+      "state": "proved",
+      "title": "Gaussian invariant-transport theorem",
+      "scope": "At fixed nonzero scale, the optimal N-3 moment isomorphism transports every functorially defined seed locus in its native category: schemes and formal neighborhoods, constructible sets, real semialgebraic chambers and boundaries, and arithmetic conditions at good reductions. In degree six the two vertical Ritt loci become explicit sextic moment hypersurfaces among four-real-Gaussian GMC witnesses; the 2-o-3 locus coincides exactly with the all-double nonsurjective component, and the Ritt intersection has an explicit clean rational point.",
+      "canonical_source": "extended-geometry/GAUSSIAN_EXCEPTIONAL_MOMENT_GEOMETRY.md",
+      "dependencies": [
+        "WG2",
+        "WG3",
+        "HR6"
+      ],
+      "checker": "scripts/verify_degree_six_gaussian_moment_geometry.py",
+      "review": "none",
+      "supersedes": [
+        "partition-only interpretation of the Gaussian moment bridge"
       ],
       "replaced_by": [],
       "priority": "derived"
@@ -1337,14 +1455,15 @@
       "kind": "open_problem",
       "state": "open",
       "title": "Higher cancellation contact resultants",
-      "scope": "Prove the uniform cancellation contact resultant in the residual wedge m>=7 and r>=6 not covered by a parameter-irreducibility theorem; a remaining pair must have composite N=(m+1)r+1 and at most one prime in (mr,N).",
+      "scope": "Complete r=6 by making its 29-branch asymptotic threshold effective and certifying the finite remainder, then prove the residual wedge r>=7 not covered by parameter irreducibility. Any unresolved pair has m>=7, composite N=(m+1)r+1, and at most one prime in (mr,N).",
       "canonical_source": "cancellation/CONTACT_RESULTANT.md",
       "dependencies": [
         "C1",
         "T1",
         "CR2",
         "CR3",
-        "CR4"
+        "CR4",
+        "CR5"
       ],
       "checker": null,
       "review": "none",
@@ -1353,34 +1472,107 @@
       "priority": "primary"
     },
     {
-      "id": "OP-LR",
+      "id": "OP-LR-REES",
       "kind": "open_problem",
       "state": "open",
-      "title": "Associated-graded LR obstruction and no escape",
-      "scope": "Prove Rees strictness of the formal target-lift coset and then show that its universal associated-graded class has a positive linear ordinary-degree lower bound. The homogeneous weight-zero order-two sector is complete; the remaining quadratic strictness question is the invariant-module vanishing of the second-fundamental-form symbols II_(F,p,-p), not pairwise coefficient expansion. Separately prove valuative no escape via a finite proper marked Isom closure. Exact slope 24 is unnecessary, and stable moduli do not depend on this problem.",
+      "title": "Linear target-lift Rees strictness",
+      "scope": "For every relevant filtered face, construct the target-field modules weight by weight, their lifted initial submodule in h_F, and the normal quotient, and prove that taking the initial face commutes with the linear target lift. Treat this as a finite module/SAGBI problem, not a further target-jet expansion; the same presentation should expose the finite set of weights used by the quadratic calculation.",
       "canonical_source": "extended-geometry/COMPLEXITY_FILTERED_CONTACT.md",
       "dependencies": [
-        "O5",
-        "O7",
-        "H3"
+        "O6"
       ],
       "checker": null,
       "review": "none",
       "supersedes": [],
       "replaced_by": [],
       "priority": "primary"
+    },
+    {
+      "id": "OP-LR-II",
+      "kind": "open_problem",
+      "state": "open",
+      "title": "Quadratic target-lift LR symbol classification",
+      "scope": "The minimal pair p=1 is already nonzero as O8, so quadratic strict descent fails. Compute the remaining generator matrices for II_(F,p,-p), prove a structural finite-weight cutoff, and determine whether the minimal class generates the full quadratic normal image.",
+      "canonical_source": "extended-geometry/COMPLEXITY_FILTERED_CONTACT.md",
+      "dependencies": [
+        "O5",
+        "O7",
+        "O8"
+      ],
+      "checker": null,
+      "review": "none",
+      "supersedes": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "OP-LR-NE",
+      "kind": "open_problem",
+      "state": "open",
+      "title": "Marked-cover valuative no escape",
+      "scope": "Construct the proper closure of the LR-induced Isom relation first on marked normalized incidence covers. Use exact recovery from the marked Hessian divisor and affine sheet, unique coarse specialization at every DVR collision, and generic deck rigidity to prove that this marked Isom object is finite and proper on the clean locus; extend over a Hurwitz/admissible-cover compactification and reconstruct the LR equivalence only afterwards.",
+      "canonical_source": "extended-geometry/COMPLEXITY_FILTERED_CONTACT.md",
+      "dependencies": [
+        "F2",
+        "H2",
+        "H3",
+        "IA1"
+      ],
+      "checker": null,
+      "review": "none",
+      "supersedes": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "HR6",
+      "kind": "corollary",
+      "state": "proved",
+      "title": "Hessian-Ritt reduction and degree-six incidence classification",
+      "scope": "Vertical (a,b)-decomposability is the pullback of the projective Hessian-composition incidence and is finite etale over that incidence on the D1/F2 clean open. Its codimension is at least N-a-b, proving that generic seeds in every composite degree N>=6 have no imprimitive vertical specialization. In degree six the 3-o-2 and 2-o-3 incidences are explicit cubic and quartic hypersurfaces of exact expected codimension one; their intersection is exactly the monomial/Chebyshev Ritt collision, its normalized marked seed curve and clean-boundary exclusions are explicit, and a rational clean witness is given.",
+      "canonical_source": "extended-geometry/HESSIAN_RITT_INCIDENCE.md",
+      "dependencies": [
+        "D1",
+        "F2",
+        "H3",
+        "IA1"
+      ],
+      "checker": "scripts/verify_hessian_ritt_degree_six.py",
+      "review": "none",
+      "supersedes": [
+        "degree-six full coefficient elimination for OP-RITT"
+      ],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "HR12",
+      "kind": "corollary",
+      "state": "proved",
+      "title": "All-degree Hessian atlas and degree-eight/twelve Ritt diagrams",
+      "scope": "For every factor pair ab=N, canonical monic coefficient reconstruction makes the Hessian-composition incidence rational of exact codimension N-a-b. In degree eight the two factor-order loci meet in the irreducible excess 2-o-2-o-2 refinement locus of marked dimension two. In degree twelve all six pair intersections and all higher intersections are classified: three common-refinement components, two transported degree-six Ritt components, power and Chebyshev components for 3-o-4 versus 4-o-3, and the all-four intersection is exactly the Chebyshev component. Every component meets the D1/F2 clean open.",
+      "canonical_source": "extended-geometry/HESSIAN_RITT_INCIDENCE.md",
+      "dependencies": [
+        "HR6"
+      ],
+      "checker": "scripts/verify_hessian_ritt_degrees_eight_twelve.py",
+      "review": "none",
+      "supersedes": [
+        "generic-finiteness and expected-codimension part of OP-RITT",
+        "degree-eight and degree-twelve Ritt-intersection diagrams"
+      ],
+      "replaced_by": [],
+      "priority": "derived"
     },
     {
       "id": "OP-RITT",
       "kind": "open_problem",
       "state": "open",
       "title": "Vertical imprimitive-specialization loci",
-      "scope": "For every composite inverse degree N, compute the elimination loci where a vertical specialization H-s_0W decomposes as A composed with B, determine their Ritt-intersection diagram across factor pairs, and intersect them with the boundary-degeneration conditions for the distinguished affine root sheet.",
-      "canonical_source": "extended-geometry/INCIDENCE_COVER_AUTOMORPHISMS.md",
+      "scope": "Extend the explicit Ritt-intersection diagrams beyond degree twelve using the proved all-degree canonical Hessian atlas, and restrict the marked-root/Hessian collision equations to those incidence components to classify the H3 boundary degenerations of the distinguished affine sheet.",
+      "canonical_source": "extended-geometry/HESSIAN_RITT_INCIDENCE.md",
       "dependencies": [
-        "IA1",
-        "F2",
-        "H3"
+        "HR12"
       ],
       "checker": null,
       "review": "none",
