@@ -5091,7 +5091,7 @@
       "kind": "corollary",
       "state": "proved",
       "title": "Degree-forty-two Kuranishi cutoff closures",
-      "scope": "For the transported degree-42 {2,7} power component, the fourth-normal-order membership HR42J becomes exact on the conormal-open locus, the regular binary-quadratic and binary-cubic loci, the full discriminant branch on D(w1*w2), and dense opens of both cubic-resultant divisors. On D(w2), the higher-gcd locus is four weighted curves; quartic envelopes with Hilbert vectors (1,2,3,2) or (1,2,3,3,1) close every punctured curve. Exact function-field factorization of the scalar quartic residuals shows that their higher-gcd factors are precisely the already-classified P3/P4 branches and that the only new degree-one-gcd zero divisors are two explicit affine-linear residual graphs P_A=0 and P_B=0 on the normalized A/B bases. The common contact-five vertex survives at quartic order, and the odd/deeper w2=0 core remains.",
+      "scope": "For the transported degree-42 {2,7} power component, the fourth-normal-order membership HR42J becomes exact on the conormal-open locus, the regular binary-quadratic and binary-cubic loci, the full discriminant branch on D(w1*w2), and dense opens of both cubic-resultant divisors. On D(w2), the higher-gcd locus is four weighted curves; quartic envelopes with Hilbert vectors (1,2,3,2) or (1,2,3,3,1) close every punctured curve. The common contact-five vertex survives at quartic order. Before HR42R, additional zero divisors of the scalar quartic residual away from the higher-gcd locus were not excluded, and the odd/deeper w2=0 core remains.",
       "canonical_source": "extended-geometry/COMMON_RIGHT_FACTOR_SYNCHRONIZATION.md",
       "dependencies": [
         "HR42J",
@@ -5102,13 +5102,39 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": null,
+      "artifact_hash": "sha256:a4ddc9fd5f5cc1fed154a18248feff1edef9b909dff36d2f6160c0e45138e93d",
       "software_lock": [
         ".python-version",
         "requirements.txt"
       ],
       "supersedes": [
         "separate degree-42 quadratic, cubic, and quartic finite-jet closure arguments"
+      ],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "HR42R",
+      "kind": "corollary",
+      "state": "proved",
+      "title": "Degree-forty-two residual-divisor factorization",
+      "scope": "On normalization charts of the degree-42 A=0 and B=0 cubic-resultant divisors, the scalar quartic residuals factor exactly. Their higher-gcd factors are precisely the already-classified P3/P4 branches, while the only new degree-one-gcd zero divisors are two explicit graphs P_A=0 and P_B=0, each affine-linear in w2. Thus the A/B continuation problem reduces to those two residual graphs and the common contact-five vertex; the odd/deeper w2=0 core remains separate.",
+      "canonical_source": "extended-geometry/COMMON_RIGHT_FACTOR_SYNCHRONIZATION.md",
+      "dependencies": [
+        "HR42K"
+      ],
+      "checker": "scripts/verify_degree42_ab_residual_factors.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:359924b6d7dd49c3c3614a76ef58842cdcd210d41a4b7857a3e8d8bce9d6248b",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [
+        "unspecified quartic-zero subloci on the degree-42 A/B divisors"
       ],
       "replaced_by": [],
       "priority": "derived"
@@ -5153,6 +5179,7 @@
         "HRCF",
         "HR42J",
         "HR42K",
+        "HR42R",
         "HR30C"
       ],
       "checker": null,

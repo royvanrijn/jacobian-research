@@ -572,9 +572,11 @@ frontiers:
   characteristic-zero base ring.  In degree forty-two, `HR42J` supplies the
   fourth-normal-order defect membership and `HR42K` promotes it to exact
   synchronization on the conormal, regular quadratic/cubic, discriminant,
-  generic resultant, and punctured higher-gcd strata.  The residual scalar
-  quartic divisors, their contact-five vertex, the odd `w2=0` core, uniform
-  terminal-refinement existence through nonreduced thickenings,
+  generic resultant, and punctured higher-gcd strata.  `HR42R` factors the
+  remaining scalar quartic divisors and reduces them to the two explicit
+  residual graphs `P_A=0`, `P_B=0`.  Those graphs, their contact-five
+  vertex, the odd `w2=0` core, uniform terminal-refinement existence through
+  nonreduced thickenings,
   component-completeness, coherence, and boundary gluing remain.
 - `OP-RMIN`: the exact current intervals are
   `3<=r_cub<=17`, `3<=nu_cub<=18`,

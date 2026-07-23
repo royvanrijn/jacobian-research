@@ -834,12 +834,9 @@ On the rational normalization of \(A=0\),
 \]
 put
 \[
-\begin{aligned}
-P_A={}&5376e_1^8-7168e_1^7e_2^2+3808e_1^6e_2^4
--1008e_1^5e_2^6+133e_1^4e_2^8-7e_1^3e_2^{10}\\
-&+w_2(-360e_1^3e_2^4+192e_1^2e_2^6
--34e_1e_2^8+2e_2^{10}).
-\end{aligned}
+ P_A=
+ 7e_1^3(3e_1-e_2^2)(4e_1-e_2^2)^4
+ -2e_2^4w_2(5e_1-e_2^2)(6e_1-e_2^2)^2.
 \]
 Exact function-field reduction gives
 \[
