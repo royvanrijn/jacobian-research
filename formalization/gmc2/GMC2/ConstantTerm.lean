@@ -21,8 +21,8 @@ theorem constantTerm_frobenius
     (hp : 0 < p) (f : LaurentPolynomial R) :
     constantTerm (f ^ p) = constantTerm f ^ p := by
   classical
-  rw [show f = ∑ k ∈ f.support, AddMonoidAlgebra.single k (f.coeff k) by
-    simpa using f.sum_single.symm]
+  rw [show f = ∑ k ∈ f.coeff.support, AddMonoidAlgebra.single k (f.coeff k) by
+    simpa [Finsupp.sum] using (AddMonoidAlgebra.sum_coeff_single f).symm]
   rw [Finset.sum_pow_char]
   simp only [constantTerm, AddMonoidAlgebra.single_pow,
     AddMonoidAlgebra.coeff_sum, Finsupp.single_apply]
@@ -33,4 +33,3 @@ theorem constantTerm_frobenius
   · simp
 
 end GMC2
-

@@ -17,7 +17,7 @@ open LaurentPolynomial
 containing an exponent on each weak side of zero. -/
 def SupportStraddlesZero {R : Type*} [Semiring R]
     (f : LaurentPolynomial R) : Prop :=
-  (∃ i ∈ f.support, i ≤ 0) ∧ (∃ j ∈ f.support, 0 ≤ j)
+  (∃ i ∈ f.coeff.support, i ≤ 0) ∧ (∃ j ∈ f.coeff.support, 0 ≤ j)
 
 /-- Imported Duistermaat--van der Kallen constant-term theorem, in exactly
 the form consumed by the lower-face proof.
@@ -31,4 +31,3 @@ axiom duistermaat_van_der_kallen
     ∃ r : ℕ, 0 < r ∧ (f ^ r).coeff 0 ≠ 0
 
 end GMC2
-

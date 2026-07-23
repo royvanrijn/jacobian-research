@@ -1,4 +1,4 @@
-import Mathlib.Data.Rat.Order
+import Mathlib.Data.Rat.Lemmas
 import Mathlib.Data.Finset.Basic
 
 /-!
@@ -34,4 +34,3 @@ axiom rational_supportingFace
     LowerFaceCertificate S ν
 
 end GMC2
-
