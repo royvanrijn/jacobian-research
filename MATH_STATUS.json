@@ -649,7 +649,7 @@
         "E3",
         "E6"
       ],
-      "checker": "scripts/explore_degree18_excess_conormal.py",
+      "checker": "scripts/verify_degree18_conductor_equalizer.py",
       "review": "none",
       "supersedes": [
         "pairwise-only description of the degree-eighteen three-sheet face"

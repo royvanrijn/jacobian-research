@@ -677,7 +677,7 @@ python scripts/explore_degree18_conductor_equalizer.py --order 3
 python scripts/explore_degree18_conductor_equalizer.py --transverse --order 1
 python scripts/explore_degree18_conductor_equalizer.py --transverse --order 2
 python scripts/explore_degree18_conductor_equalizer.py --transverse --order 3
-python scripts/explore_degree18_excess_conormal.py
+python scripts/verify_degree18_conductor_equalizer.py
 ```
 
 The cubic calculation is intentionally not part of the default verification
