@@ -98,6 +98,8 @@ def build_system(
             if weight > 0
         )
         normalized = {negative: 1, positive: 1}
+    elif normalization == "all_selected":
+        normalized = {coefficient: 1 for coefficient in selected}
     else:
         raise ValueError(f"unknown normalization {normalization!r}")
     assert len(normalized) == 2
@@ -179,9 +181,30 @@ def build_system(
 
 
 def closure_systems() -> list[dict[str, object]]:
-    """Return the 20 new characteristic-zero closure systems."""
+    """Return the 31 finite characteristic-zero closure systems."""
 
     systems: list[dict[str, object]] = []
+
+    # The earlier two-weight argument used the whole circuit-moment sequence.
+    # These eleven presentations certify the claimed finite cutoff ten.
+    two_weight_supports = sorted(
+        {
+            min(support, reflected_support(support))
+            for support in itertools.product(range(-3, 0), range(1, 4))
+        }
+    )
+    for support in two_weight_supports:
+        components, _, _ = support_data(support)
+        for chart in chart_choices(components, support):
+            system = build_system(
+                support,
+                chart,
+                cutoff=10,
+                normalization="all_selected",
+                eliminate_second_moment=False,
+            )
+            system["stratum"] = "two_weight_finite"
+            systems.append(system)
 
     # The three chart orbits not promoted over QQ in the earlier five-weight
     # census.  Reflection makes them account for ten ordinary charts.
@@ -236,7 +259,8 @@ def closure_systems() -> list[dict[str, object]]:
         system["stratum"] = "seven_weight"
         systems.append(system)
 
-    assert len(systems) == 20
+    assert len(systems) == 31
+    assert sum(system["stratum"] == "two_weight_finite" for system in systems) == 11
     assert sum(system["stratum"] == "five_weight_promotion" for system in systems) == 3
     assert sum(system["stratum"] == "six_weight" for system in systems) == 14
     assert sum(system["stratum"] == "seven_weight" for system in systems) == 3
@@ -310,7 +334,8 @@ def main() -> None:
         "format": "cubic-gaussian-null-cone-closure-v1",
         "field": "QQ",
         "certificate": "literal reduced Groebner basis [1]",
-        "new_exact_chart_orbits": len(records),
+        "finite_closure_presentations": len(records),
+        "two_weight_finite_presentations": 11,
         "five_weight_promotions": 3,
         "five_weight_ordinary_charts_newly_closed": 10,
         "six_weight_presentations": 14,

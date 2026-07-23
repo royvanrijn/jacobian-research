@@ -188,7 +188,7 @@ def main() -> None:
         choices=("std", "slimgb", "modstd"),
         default="modstd",
     )
-    parser.add_argument("--timeout", type=int, default=1800)
+    parser.add_argument("--timeout", type=int, default=3600)
     parser.add_argument("--recovered-base", action="store_true")
     parser.add_argument("--refresh", action="store_true")
     parser.add_argument("--fingerprint-only", action="store_true")

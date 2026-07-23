@@ -82,6 +82,7 @@ characteristic-zero calculations are:
 
 | stratum | reduced presentations | ordinary charts covered | cutoff | result over \(\mathbb Q\) |
 |---|---:|---:|---:|---|
+| finite two-weight audit | 11 | all mixed-sign two-weight charts | 10 | \([1]\) on every normalization |
 | remaining five-weight charts | 3 | 10 | 8 | \([1]\) on every localization |
 | all six-weight charts | 14 | 44 | 8 | \([1]\) on every localization |
 | full seven-weight support | 3 | 8 | 10 | \([1]\) on every localization |
@@ -102,7 +103,7 @@ The reductions used in the table are exact:
    the literal reduced grevlex basis \([1]\); no finite-field promotion is
    being used.
 
-The replay and the input hashes for all 20 new systems are produced by
+The replay and the input hashes for all 31 finite systems are produced by
 [`verify_cubic_gaussian_null_cone_closure.py`](../scripts/verify_cubic_gaussian_null_cone_closure.py).
 Its machine-readable record is
 [`cubic_gaussian_null_cone_closure.json`](../artifacts/generated-results/cubic_gaussian_null_cone_closure.json).

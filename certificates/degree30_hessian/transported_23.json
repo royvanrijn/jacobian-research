@@ -1,0 +1,13 @@
+{
+  "algorithm": "modStd",
+  "basis_size": 1677,
+  "characteristic": 0,
+  "coordinate_mode": "model",
+  "membership": true,
+  "order": "(dp(5),dp(6))",
+  "pair": "{2,3}",
+  "program_sha256": "6d78dd51cc441050d203c409c2211d3b25e6c888ccb3896c8898b7ec855449f2",
+  "schema": 1,
+  "singular_version": "Singular for arm64-Darwin version 4.4.1 (44105, 64 bit) Nov 11 2025 16:12:34",
+  "verified_at": "2026-07-23T17:36:34Z"
+}

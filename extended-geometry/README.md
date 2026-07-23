@@ -54,6 +54,7 @@ recorded separately only in
 | Complete Long consequence reproductions | [`SU(2)` Haar proof, exact `3 -> 39 -> 79` BCW reproduction, repository reduction to dimension 16, and rank-compressed 24-variable homogenization](LONG_SU2_AND_BCW_REPRODUCTIONS.md) |
 | Two-real-variable GMC frontier | [Quadratic GMC in every dimension, two-weight and affine-source theorems, exact exclusion of every three- and four-weight cubic, and bounded Long-style exclusions](TWO_REAL_GMC_FRONTIER.md) |
 | Two-real-variable GMC closure program | [Invariant null-cone and finite-chart attacks for the five-to-seven-weight cubic frontier, plus all-degree routes](TWO_REAL_GMC_CLOSURE_PROGRAM.md) |
+| Cubic Gaussian null-cone theorem | [Exact radical containment through moment ten, closure of every five-to-seven-weight chart, and GMC for all cubics in two real variables](CUBIC_GAUSSIAN_NULL_CONE_THEOREM.md) |
 | Minimal counterexample scoreboard | [Ambient-dimension, rank, nilpotency-index, and exact degree frontiers](MINIMAL_COUNTEREXAMPLE_SCOREBOARD.md) |
 | Restricted cubic/HN minima frontier | [Exact intervals, the circuit-level rank-17 and index-18 cubic witnesses, the rank-37 homogeneous quartic HN witness, and rank/dimension questions](RESTRICTED_MINIMA_FRONTIER.md) |
 | Restricted-minima attack program | [Coupled index/rank strategy, rank-three kernel bundle, cotangent kernel excess, and direct dimension-six HN program](RESTRICTED_MINIMA_ATTACK_PROGRAM.md) |

@@ -276,6 +276,15 @@ The permanent checkers are:
 - [`verify_degree30_transported_25_synchronization.py`](../scripts/verify_degree30_transported_25_synchronization.py);
 - [`verify_degree30_transported_35_synchronization.py`](../scripts/verify_degree30_transported_35_synchronization.py).
 
+Their exact results are stored in content-addressed JSON records under
+[`certificates/degree30_hessian`](../certificates/degree30_hessian).
+The default `make verify-degree30-hessian-pairs` regenerates each complete
+Singular input, checks its SHA-256 against the record, and reports
+`CACHED PASS`; a change to the ring, coordinates, residual ideal, or defect
+invalidates the cache.  Use `make refresh-degree30-hessian-pairs` (or pass
+`--refresh` to one checker) to force rational basis reconstruction and
+atomically replace the matching record.
+
 Thus all fifteen degree-thirty pair memberships are proved
 scheme-theoretically.
 

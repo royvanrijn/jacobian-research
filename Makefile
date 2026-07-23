@@ -12,7 +12,7 @@ SYSTEM_PYTHON ?= python3
 	verify-coincident-root-loci verify-papers verify-ritt-boundary \
 	verify-ritt-2-complex verify-hessian-synchronization \
 	verify-common-right-factor-synchronization \
-	verify-degree30-hessian-pairs \
+	verify-degree30-hessian-pairs refresh-degree30-hessian-pairs \
 	verify-contact-r6 verify-contact-branch-schema verify-contact-r7-asymptotic \
 	verify-parameter-dusart-frontier verify-parameter-sharp-dusart-frontier \
 	verify-parameter-adaptive-dusart-frontier \
@@ -86,6 +86,12 @@ verify-degree30-hessian-pairs:
 	$(PYTHON) scripts/verify_degree30_transported_23_synchronization.py
 	$(PYTHON) scripts/verify_degree30_transported_25_synchronization.py
 	$(PYTHON) scripts/verify_degree30_transported_35_synchronization.py
+
+refresh-degree30-hessian-pairs:
+	$(PYTHON) scripts/verify_cubic_remainder_synchronization.py
+	$(PYTHON) scripts/verify_degree30_transported_23_synchronization.py --refresh
+	$(PYTHON) scripts/verify_degree30_transported_25_synchronization.py --refresh
+	$(PYTHON) scripts/verify_degree30_transported_35_synchronization.py --refresh
 
 audit-degree30-hessian-synchronization-pairs:
 	$(PYTHON) scripts/audit_degree30_hessian_synchronization_pairs.py
@@ -265,6 +271,8 @@ verify-two-real-gmc:
 	$(PYTHON) scripts/verify_two_real_gmc_frontier.py
 	$(PYTHON) scripts/verify_two_real_gmc_symmetric_chart.py
 	$(PYTHON) scripts/verify_two_real_gmc_remaining_four_weight.py
+	$(PYTHON) scripts/verify_two_real_gmc_five_weight_frontier.py
+	$(PYTHON) scripts/verify_cubic_gaussian_null_cone_closure.py
 
 verify-counterexample-scoreboard: verify-two-real-gmc
 	$(PYTHON) scripts/verify_minimal_counterexample_scoreboard.py

@@ -9,6 +9,7 @@ parameters, leaving five refinement-normal coordinates.
 from __future__ import annotations
 
 import argparse
+import itertools
 import os
 import re
 import signal
@@ -253,7 +254,17 @@ def main() -> None:
     )
     parser.add_argument("--timeout", type=int, default=900)
     parser.add_argument("--prepare-only", action="store_true")
+    parser.add_argument(
+        "--normal-order",
+        type=int,
+        default=0,
+        help=(
+            "work modulo the (normal-order + 1)-st power of the normal "
+            "maximal ideal; zero requests the full ideal"
+        ),
+    )
     args = parser.parse_args()
+    assert args.normal_order >= 0
     normals, bases, residuals, defect = transformed_problem()
     print(
         "PREPARED: degree-42 pair {2,7}; "
@@ -271,11 +282,21 @@ def main() -> None:
         "modStd(I)" if args.algorithm == "modstd"
         else f"{args.algorithm}(I)"
     )
+    truncation_generators = []
+    if args.normal_order:
+        truncation_generators = [
+            sp.prod(monomial)
+            for monomial in itertools.combinations_with_replacement(
+                normals,
+                args.normal_order + 1,
+            )
+        ]
+    ideal_generators = residuals + truncation_generators
     program = (
         ('LIB "modstd.lib";\n' if args.algorithm == "modstd" else "")
         + f'ring q={characteristic},({",".join(map(str, variables))}),'
         f"{args.order};\n"
-        f'ideal I={",".join(serialize(item) for item in residuals)};\n'
+        f'ideal I={",".join(serialize(item) for item in ideal_generators)};\n'
         f"ideal G={basis_command};\n"
         'print("TRANSPORTED_SYNC42_27");\n'
         f"print(reduce({serialize(defect)},G)==0);\n"
@@ -303,9 +324,14 @@ def main() -> None:
     marker = compact.index("TRANSPORTED_SYNC42_27")
     assert compact[marker + 1] == "1", stdout + stderr
     field = f"GF({characteristic})" if characteristic else "QQ"
+    neighborhood = (
+        f", normal order {args.normal_order}"
+        if args.normal_order
+        else ""
+    )
     print(
         "PASS: degree-42 pair {2,7} synchronizes in transported "
-        f"power coordinates over {field}; basis size "
+        f"power coordinates over {field}{neighborhood}; basis size "
         f"{compact[marker + 2]}"
     )
 

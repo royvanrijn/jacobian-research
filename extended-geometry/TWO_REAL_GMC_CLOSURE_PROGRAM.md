@@ -1,5 +1,18 @@
 # Closure program for GMC in two real variables
 
+> **Resolved cubic frontier (July 23, 2026).**  The program below records the
+> route that led to the computation.  The remaining five-weight charts, every
+> six-weight chart, and the full seven-weight support now have exact
+> characteristic-zero unit certificates.  The corrected result is
+> \[
+> I_{\rm null}\subseteq
+> \sqrt{\langle M_1,\ldots,M_{10}\rangle};
+> \]
+> literal containment without the radical is false.  See
+> [The cubic Gaussian null-cone theorem](CUBIC_GAUSSIAN_NULL_CONE_THEOREM.md)
+> and its
+> [exact replay](../scripts/verify_cubic_gaussian_null_cone_closure.py).
+
 ## 1. The finite cubic frontier
 
 Use circular coordinates

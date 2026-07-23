@@ -3449,6 +3449,36 @@
       "supersedes": [
         "unstructured 21-support / 102-chart five-weight cubic frontier"
       ],
+      "replaced_by": [
+        "G2N"
+      ],
+      "priority": "derived"
+    },
+    {
+      "id": "G2N",
+      "kind": "corollary",
+      "state": "proved",
+      "title": "Finite cubic Gaussian null-cone theorem",
+      "scope": "For every complex polynomial of total degree at most three in two real Gaussian variables, the torus null-cone ideal is contained in the radical of the first ten pure moments. A finite audit of all 11 two-weight presentations, the last three five-weight chart orbits, all 44 six-weight charts, and all eight seven-weight charts has exact characteristic-zero reduced bases [1]; moments through order eight suffice on the new five- and six-weight systems. Hence pure-moment vanishing forces strictly one-sided rotational support and GMC holds for every two-real-variable cubic. Literal ideal containment without the radical is false already in coefficient degree two.",
+      "canonical_source": "extended-geometry/CUBIC_GAUSSIAN_NULL_CONE_THEOREM.md",
+      "dependencies": [
+        "G2D",
+        "G2E"
+      ],
+      "checker": "scripts/verify_cubic_gaussian_null_cone_closure.py",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:f8591894dc6574d8db50ad86655a9e98f9e43df8437db19fdb41016da463b3a6",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [
+        "five-to-seven-weight cubic GMC frontier",
+        "literal cubic moment-ideal containment conjecture"
+      ],
       "replaced_by": [],
       "priority": "derived"
     },
@@ -4798,7 +4828,7 @@
       "kind": "corollary",
       "state": "proved",
       "title": "Canonical Hessian linear lifts and low-degree global synchronization",
-      "scope": "For every normalized factor pair ab=N in characteristic zero, triangular reconstruction uses only coefficients of degrees at least two and defines a canonical missing linear coefficient lambda_(a,b) on the Hessian-composition scheme. A multiple intersection is scheme-theoretically synchronized exactly when all lift differences lie in the summed Hessian residual ideal. Exact ambient, canonical-factor-chart, and transported Dickson normal-coordinate Groebner reduction proves every pair, hence every multiple intersection, through degree 24. In degree 30, five exact pair certificates form the spanning tree 2-6-3-15-5-10 and prove that the global all-six intersection is scheme-theoretically synchronized. The nested pair {2,10} is separately certified. The primitive pairs {2,15} and {3,10} are exact by a universal quadratic parity argument and a cubic remainder basis of size 184. The three transported pairs {2,3}, {2,5}, and {3,5} remain outside the accepted exact pair certificate.",
+      "scope": "For every normalized factor pair ab=N in characteristic zero, triangular reconstruction uses only coefficients of degrees at least two and defines a canonical missing linear coefficient lambda_(a,b) on the Hessian-composition scheme. A multiple intersection is scheme-theoretically synchronized exactly when all lift differences lie in the summed Hessian residual ideal. Exact ambient, canonical-factor-chart, and transported Dickson normal-coordinate Groebner reduction proves every pair, hence every multiple intersection, through degree 24. In degree 30, five exact pair certificates form the spanning tree 2-6-3-15-5-10 and prove that the global all-six intersection is scheme-theoretically synchronized. The nested pair {2,10} is separately certified. The primitive pairs {2,15} and {3,10} are exact by a universal quadratic parity argument and a cubic remainder basis of size 184. Exact transported model-coordinate reductions prove the final pairs {2,3}, {2,5}, and {3,5}, with characteristic-zero basis sizes 1677, 344, and 1896. Thus all fifteen degree-30 pair schemes, and hence every degree-30 multiple intersection, are synchronized.",
       "canonical_source": "extended-geometry/GENERAL_HESSIAN_RITT_INTERSECTIONS.md",
       "dependencies": [
         "HR6",
@@ -4809,7 +4839,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:f5c5979f27299893c2b37b0d1f120f1e3a799eb9ca3219e0a1e7059684b959d2",
+      "artifact_hash": "sha256:c9d300a0a77c6bd41447b90789429b1c5513af12c487017567980134ad6bb970",
       "software_lock": [
         ".python-version",
         "requirements.txt"
@@ -4817,7 +4847,8 @@
       "supersedes": [
         "global synchronization part of OP-RITT through degree 24",
         "global synchronization of the degree-30 all-six intersection",
-        "primitive degree-30 pair gaps {2,15} and {3,10}"
+        "primitive degree-30 pair gaps {2,15} and {3,10}",
+        "all degree-30 pair synchronization gaps"
       ],
       "replaced_by": [],
       "priority": "derived"
@@ -4881,7 +4912,7 @@
       "kind": "open_problem",
       "state": "open",
       "title": "Vertical imprimitive-specialization loci",
-      "scope": "Prove synchronization for the three uncertified transported degree-30 two-cut intersections {2,3}, {2,5}, and {3,5}, and then uniformly in all degrees; prove the reduced Ritt-complex component conjecture; exclude or classify additional synchronized degree-30 all-cut components missing the complete-decomposition atlas; glue the now-explicit degree-30 transverse augmentations and cotangent/Tor signatures along the monomial divisor; organize analogous coherence data on commuting and mixed power-Chebyshev cells; and extend the degree-six affine-sheet boundary atlas to later incidence components.",
+      "scope": "Prove synchronization uniformly in all degrees; prove the reduced Ritt-complex component conjecture; exclude or classify additional degree-30 all-cut components missing the complete-decomposition atlas; glue the now-explicit degree-30 transverse augmentations and cotangent/Tor signatures along the monomial divisor; organize analogous coherence data on commuting and mixed power-Chebyshev cells; and extend the degree-six affine-sheet boundary atlas to later incidence components.",
       "canonical_source": "extended-geometry/GENERAL_HESSIAN_RITT_INTERSECTIONS.md",
       "dependencies": [
         "HR12",
@@ -5167,14 +5198,15 @@
       "kind": "open_problem",
       "state": "parked",
       "title": "Gaussian and Image/Vanishing consequences",
-      "scope": "Settle GMC(2), the only unresolved real Gaussian dimension. Any counterexample must pass the quadratic, two-weight, affine-circular-source, cubic three-weight, and complete four-weight theorems: it has degree at least three, at least three rotational weights containing both signs, and nonlinear dependence on both circular coordinates; a cubic counterexample needs at least five rotational weights. The exactly-five-weight frontier is reduced to three chart orbits (ten ordinary charts on three supports), all modularly but not yet rationally excluded through order eight; the six- and seven-weight strata contain 52 ordinary charts. A positive proof must control the same genuinely shared Wick self-contractions or prove the cubic invariant-null-cone containment. Also determine which transported exceptional invariants descend under natural equivalence groups of Gaussian polynomial pairs.",
-      "canonical_source": "extended-geometry/TWO_REAL_GMC_FRONTIER.md",
+      "scope": "Settle GMC(2) in degrees at least four, the only unresolved real Gaussian dimension. The cubic Gaussian null-cone theorem proves GMC for every polynomial of total degree at most three in two real variables, so any counterexample has degree at least four, mixed-sign rotational support, and nonlinear dependence on both circular coordinates. The next positive target is a degree-uniform null-cone theorem separating radial factorial coefficients from zero-sum weight combinatorics. Also determine which transported exceptional invariants descend under natural equivalence groups of Gaussian polynomial pairs.",
+      "canonical_source": "extended-geometry/CUBIC_GAUSSIAN_NULL_CONE_THEOREM.md",
       "dependencies": [
         "GL1",
         "G2F",
         "G2C",
         "G2D",
         "G2E",
+        "G2N",
         "WG1",
         "WG2",
         "WG3"

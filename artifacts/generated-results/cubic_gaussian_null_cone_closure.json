@@ -2,7 +2,8 @@
   "format": "cubic-gaussian-null-cone-closure-v1",
   "field": "QQ",
   "certificate": "literal reduced Groebner basis [1]",
-  "new_exact_chart_orbits": 20,
+  "finite_closure_presentations": 31,
+  "two_weight_finite_presentations": 11,
   "five_weight_promotions": 3,
   "five_weight_ordinary_charts_newly_closed": 10,
   "six_weight_presentations": 14,
@@ -16,6 +17,381 @@
   },
   "theorem": "Together with the existing exact at-most-four-weight and five-weight certificates, every mixed-sign cubic coefficient support is excluded by moments through order ten.  Equivalently, the cubic torus null-cone ideal is contained in the radical of <M1,...,M10>.",
   "records": [
+    {
+      "stratum": "two_weight_finite",
+      "support": [
+        -3,
+        1
+      ],
+      "chart": [
+        0,
+        0
+      ],
+      "cutoff": 10,
+      "normalization_kind": "all_selected",
+      "normalization": {
+        "n3_0": 1,
+        "p1_0": 1
+      },
+      "selected_coefficients": [
+        "n3_0",
+        "p1_0"
+      ],
+      "variables": [
+        "p1_1",
+        "rho"
+      ],
+      "equation_count": 3,
+      "localization_factor": "1",
+      "second_moment_elimination": null,
+      "input_sha256": "9ac2488481434d0c51cab96175af276b5a73680472517d734090394f212006dc",
+      "field": "QQ",
+      "reduced_basis": [
+        "1"
+      ],
+      "elapsed_seconds": 0.011
+    },
+    {
+      "stratum": "two_weight_finite",
+      "support": [
+        -3,
+        1
+      ],
+      "chart": [
+        0,
+        1
+      ],
+      "cutoff": 10,
+      "normalization_kind": "all_selected",
+      "normalization": {
+        "n3_0": 1,
+        "p1_1": 1
+      },
+      "selected_coefficients": [
+        "n3_0",
+        "p1_1"
+      ],
+      "variables": [
+        "p1_0",
+        "rho"
+      ],
+      "equation_count": 3,
+      "localization_factor": "1",
+      "second_moment_elimination": null,
+      "input_sha256": "78f4aea23461352276446409370ee82591a312613d029865c3d7924a282744dc",
+      "field": "QQ",
+      "reduced_basis": [
+        "1"
+      ],
+      "elapsed_seconds": 0.009
+    },
+    {
+      "stratum": "two_weight_finite",
+      "support": [
+        -3,
+        2
+      ],
+      "chart": [
+        0,
+        0
+      ],
+      "cutoff": 10,
+      "normalization_kind": "all_selected",
+      "normalization": {
+        "n3_0": 1,
+        "p2_0": 1
+      },
+      "selected_coefficients": [
+        "n3_0",
+        "p2_0"
+      ],
+      "variables": [
+        "rho"
+      ],
+      "equation_count": 3,
+      "localization_factor": "1",
+      "second_moment_elimination": null,
+      "input_sha256": "b9f7cf1acd113c5f18384c4949f6453caff097b769ad2df8f294670a318ec76f",
+      "field": "QQ",
+      "reduced_basis": [
+        "1"
+      ],
+      "elapsed_seconds": 0.007
+    },
+    {
+      "stratum": "two_weight_finite",
+      "support": [
+        -3,
+        3
+      ],
+      "chart": [
+        0,
+        0
+      ],
+      "cutoff": 10,
+      "normalization_kind": "all_selected",
+      "normalization": {
+        "n3_0": 1,
+        "p3_0": 1
+      },
+      "selected_coefficients": [
+        "n3_0",
+        "p3_0"
+      ],
+      "variables": [
+        "rho"
+      ],
+      "equation_count": 6,
+      "localization_factor": "1",
+      "second_moment_elimination": null,
+      "input_sha256": "4148a2c3768693fd5256ac85b5cc818bd90e0575e4a216ac1c6821bc1d7566fc",
+      "field": "QQ",
+      "reduced_basis": [
+        "1"
+      ],
+      "elapsed_seconds": 0.007
+    },
+    {
+      "stratum": "two_weight_finite",
+      "support": [
+        -2,
+        1
+      ],
+      "chart": [
+        0,
+        0
+      ],
+      "cutoff": 10,
+      "normalization_kind": "all_selected",
+      "normalization": {
+        "n2_0": 1,
+        "p1_0": 1
+      },
+      "selected_coefficients": [
+        "n2_0",
+        "p1_0"
+      ],
+      "variables": [
+        "p1_1",
+        "rho"
+      ],
+      "equation_count": 4,
+      "localization_factor": "1",
+      "second_moment_elimination": null,
+      "input_sha256": "57c728e47928ad74e99c497e685b8a19e3cfb3198a842f5718a8d74f1a46f7fd",
+      "field": "QQ",
+      "reduced_basis": [
+        "1"
+      ],
+      "elapsed_seconds": 0.01
+    },
+    {
+      "stratum": "two_weight_finite",
+      "support": [
+        -2,
+        1
+      ],
+      "chart": [
+        0,
+        1
+      ],
+      "cutoff": 10,
+      "normalization_kind": "all_selected",
+      "normalization": {
+        "n2_0": 1,
+        "p1_1": 1
+      },
+      "selected_coefficients": [
+        "n2_0",
+        "p1_1"
+      ],
+      "variables": [
+        "p1_0",
+        "rho"
+      ],
+      "equation_count": 4,
+      "localization_factor": "1",
+      "second_moment_elimination": null,
+      "input_sha256": "106bd4d62289045e9dea466b831bbb40b2d767adb76644fc2b566a861c45d7e4",
+      "field": "QQ",
+      "reduced_basis": [
+        "1"
+      ],
+      "elapsed_seconds": 0.008
+    },
+    {
+      "stratum": "two_weight_finite",
+      "support": [
+        -2,
+        2
+      ],
+      "chart": [
+        0,
+        0
+      ],
+      "cutoff": 10,
+      "normalization_kind": "all_selected",
+      "normalization": {
+        "n2_0": 1,
+        "p2_0": 1
+      },
+      "selected_coefficients": [
+        "n2_0",
+        "p2_0"
+      ],
+      "variables": [
+        "rho"
+      ],
+      "equation_count": 6,
+      "localization_factor": "1",
+      "second_moment_elimination": null,
+      "input_sha256": "809585f6da9577d848681c1b0340e8e592fb6dc39c5a3f3f8c2e7ef43cb5a841",
+      "field": "QQ",
+      "reduced_basis": [
+        "1"
+      ],
+      "elapsed_seconds": 0.007
+    },
+    {
+      "stratum": "two_weight_finite",
+      "support": [
+        -1,
+        1
+      ],
+      "chart": [
+        0,
+        0
+      ],
+      "cutoff": 10,
+      "normalization_kind": "all_selected",
+      "normalization": {
+        "n1_0": 1,
+        "p1_0": 1
+      },
+      "selected_coefficients": [
+        "n1_0",
+        "p1_0"
+      ],
+      "variables": [
+        "n1_1",
+        "p1_1",
+        "rho"
+      ],
+      "equation_count": 6,
+      "localization_factor": "1",
+      "second_moment_elimination": null,
+      "input_sha256": "3d338988cdf2a23613ac3855a3a44cc1f3688a82dce056582a6f04c872138695",
+      "field": "QQ",
+      "reduced_basis": [
+        "1"
+      ],
+      "elapsed_seconds": 0.017
+    },
+    {
+      "stratum": "two_weight_finite",
+      "support": [
+        -1,
+        1
+      ],
+      "chart": [
+        0,
+        1
+      ],
+      "cutoff": 10,
+      "normalization_kind": "all_selected",
+      "normalization": {
+        "n1_0": 1,
+        "p1_1": 1
+      },
+      "selected_coefficients": [
+        "n1_0",
+        "p1_1"
+      ],
+      "variables": [
+        "n1_1",
+        "p1_0",
+        "rho"
+      ],
+      "equation_count": 6,
+      "localization_factor": "1",
+      "second_moment_elimination": null,
+      "input_sha256": "d897ea7fa31f7f2864a2addb7060089c449df8bcc300c31a99bc815facdf917a",
+      "field": "QQ",
+      "reduced_basis": [
+        "1"
+      ],
+      "elapsed_seconds": 0.015
+    },
+    {
+      "stratum": "two_weight_finite",
+      "support": [
+        -1,
+        1
+      ],
+      "chart": [
+        1,
+        0
+      ],
+      "cutoff": 10,
+      "normalization_kind": "all_selected",
+      "normalization": {
+        "n1_1": 1,
+        "p1_0": 1
+      },
+      "selected_coefficients": [
+        "n1_1",
+        "p1_0"
+      ],
+      "variables": [
+        "n1_0",
+        "p1_1",
+        "rho"
+      ],
+      "equation_count": 6,
+      "localization_factor": "1",
+      "second_moment_elimination": null,
+      "input_sha256": "613e039ae6658337fd3b689fbf7c8e3ae542d8d3795fad41cd7cf62acb0bf55f",
+      "field": "QQ",
+      "reduced_basis": [
+        "1"
+      ],
+      "elapsed_seconds": 0.015
+    },
+    {
+      "stratum": "two_weight_finite",
+      "support": [
+        -1,
+        1
+      ],
+      "chart": [
+        1,
+        1
+      ],
+      "cutoff": 10,
+      "normalization_kind": "all_selected",
+      "normalization": {
+        "n1_1": 1,
+        "p1_1": 1
+      },
+      "selected_coefficients": [
+        "n1_1",
+        "p1_1"
+      ],
+      "variables": [
+        "n1_0",
+        "p1_0",
+        "rho"
+      ],
+      "equation_count": 6,
+      "localization_factor": "1",
+      "second_moment_elimination": null,
+      "input_sha256": "b48895e34fa88c67ed3e77a7299a5db72bcbbc1f2fb8809c6e7293867f649fd0",
+      "field": "QQ",
+      "reduced_basis": [
+        "1"
+      ],
+      "elapsed_seconds": 0.015
+    },
     {
       "stratum": "five_weight_promotion",
       "support": [
@@ -61,7 +437,7 @@
       "reduced_basis": [
         "1"
       ],
-      "elapsed_seconds": 0.209
+      "elapsed_seconds": 0.099
     },
     {
       "stratum": "five_weight_promotion",
@@ -108,7 +484,7 @@
       "reduced_basis": [
         "1"
       ],
-      "elapsed_seconds": 0.108
+      "elapsed_seconds": 0.065
     },
     {
       "stratum": "five_weight_promotion",
@@ -157,7 +533,7 @@
       "reduced_basis": [
         "1"
       ],
-      "elapsed_seconds": 0.227
+      "elapsed_seconds": 0.14
     },
     {
       "stratum": "six_weight",
@@ -208,7 +584,7 @@
       "reduced_basis": [
         "1"
       ],
-      "elapsed_seconds": 3.443
+      "elapsed_seconds": 1.331
     },
     {
       "stratum": "six_weight",
@@ -259,7 +635,7 @@
       "reduced_basis": [
         "1"
       ],
-      "elapsed_seconds": 3.477
+      "elapsed_seconds": 1.306
     },
     {
       "stratum": "six_weight",
@@ -310,7 +686,7 @@
       "reduced_basis": [
         "1"
       ],
-      "elapsed_seconds": 3.073
+      "elapsed_seconds": 1.351
     },
     {
       "stratum": "six_weight",
@@ -361,7 +737,7 @@
       "reduced_basis": [
         "1"
       ],
-      "elapsed_seconds": 3.21
+      "elapsed_seconds": 1.363
     },
     {
       "stratum": "six_weight",
@@ -412,7 +788,7 @@
       "reduced_basis": [
         "1"
       ],
-      "elapsed_seconds": 1.933
+      "elapsed_seconds": 0.935
     },
     {
       "stratum": "six_weight",
@@ -463,7 +839,7 @@
       "reduced_basis": [
         "1"
       ],
-      "elapsed_seconds": 2.05
+      "elapsed_seconds": 0.876
     },
     {
       "stratum": "six_weight",
@@ -514,7 +890,7 @@
       "reduced_basis": [
         "1"
       ],
-      "elapsed_seconds": 1.921
+      "elapsed_seconds": 0.864
     },
     {
       "stratum": "six_weight",
@@ -565,7 +941,7 @@
       "reduced_basis": [
         "1"
       ],
-      "elapsed_seconds": 1.903
+      "elapsed_seconds": 0.866
     },
     {
       "stratum": "six_weight",
@@ -615,7 +991,7 @@
       "reduced_basis": [
         "1"
       ],
-      "elapsed_seconds": 0.108
+      "elapsed_seconds": 0.069
     },
     {
       "stratum": "six_weight",
@@ -665,7 +1041,7 @@
       "reduced_basis": [
         "1"
       ],
-      "elapsed_seconds": 0.097
+      "elapsed_seconds": 0.062
     },
     {
       "stratum": "six_weight",
@@ -716,7 +1092,7 @@
       "reduced_basis": [
         "1"
       ],
-      "elapsed_seconds": 2.867
+      "elapsed_seconds": 1.24
     },
     {
       "stratum": "six_weight",
@@ -767,7 +1143,7 @@
       "reduced_basis": [
         "1"
       ],
-      "elapsed_seconds": 2.921
+      "elapsed_seconds": 1.244
     },
     {
       "stratum": "six_weight",
@@ -818,7 +1194,7 @@
       "reduced_basis": [
         "1"
       ],
-      "elapsed_seconds": 2.874
+      "elapsed_seconds": 1.206
     },
     {
       "stratum": "six_weight",
@@ -869,7 +1245,7 @@
       "reduced_basis": [
         "1"
       ],
-      "elapsed_seconds": 2.917
+      "elapsed_seconds": 1.241
     },
     {
       "stratum": "seven_weight",
@@ -924,7 +1300,7 @@
       "reduced_basis": [
         "1"
       ],
-      "elapsed_seconds": 31.418
+      "elapsed_seconds": 16.384
     },
     {
       "stratum": "seven_weight",
@@ -979,7 +1355,7 @@
       "reduced_basis": [
         "1"
       ],
-      "elapsed_seconds": 33.878
+      "elapsed_seconds": 16.288
     },
     {
       "stratum": "seven_weight",
@@ -1034,7 +1410,7 @@
       "reduced_basis": [
         "1"
       ],
-      "elapsed_seconds": 26.982
+      "elapsed_seconds": 16.503
     }
   ]
 }
