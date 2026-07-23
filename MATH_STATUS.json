@@ -682,7 +682,7 @@
       "kind": "corollary",
       "state": "proved",
       "title": "Adelic realization of complete Keller fibers",
-      "scope": "For every N >= 3, every parity-compatible real root count, and every finite collection of squarefree factorization partitions at good primes admitting local witnesses, one rational target of the explicit F_N realizes all conditions simultaneously. Every prescribed partition is guaranteed at sufficiently large good primes; adding one local N-cycle produces a degree-N number field of the chosen signature, with arbitrarily many further unramified splitting conditions.",
+      "scope": "For every N >= 3, every parity-compatible real root count, and every finite collection of squarefree factorization partitions at good primes admitting local witnesses, one rational target of the explicit F_N realizes all conditions simultaneously, with a constructive denominator-one CRT lift and an explicit height bound from any certified real chamber box. Every prescribed partition is guaranteed at sufficiently large good primes; adding one local N-cycle produces a degree-N number field of the chosen signature, with arbitrarily many further unramified splitting conditions.",
       "canonical_source": "verified/ADELIC_FIBER_ENGINEERING.md",
       "dependencies": [
         "RS1",
@@ -1039,7 +1039,7 @@
       "kind": "corollary",
       "state": "proved",
       "title": "Exceptional partition geometry in Gaussian moment space",
-      "scope": "At every fixed nonzero Gaussian scale and degree N >= 4, the optimal mixed-moment vector transports the full affine nonsurjective-seed stratification into an explicit closed family of four-real-Gaussian GMC witnesses. Component counts, dimension staircases, normalizations, common-coarsening intersections, the generic 2^t transverse algebras, and the proved degree-eighteen ordered-triple algebra are preserved scheme-theoretically; projective closure degrees, the open degree-eighteen conductor equalizer, and Gaussian-equivalence claims are excluded.",
+      "scope": "At every fixed nonzero Gaussian scale and degree N >= 4, the optimal mixed-moment vector transports the full affine nonsurjective-seed stratification inside an explicit closed family of four-real-Gaussian GMC witnesses. Component counts, dimension staircases, normalizations, common-coarsening intersections, the generic 2^t transverse algebras, and the proved degree-eighteen ordered-triple algebra are preserved scheme-theoretically. In degree six the two components, four all-six intersection points, and their length-two local intersections have explicit moment-coordinate equations. Projective closure degrees, the open degree-eighteen conductor equalizer, and Gaussian-equivalence claims are excluded.",
       "canonical_source": "extended-geometry/GAUSSIAN_EXCEPTIONAL_MOMENT_GEOMETRY.md",
       "dependencies": [
         "WG2",
@@ -1047,7 +1047,7 @@
         "E6",
         "E7"
       ],
-      "checker": "scripts/verify_gaussian_moment_fingerprint.py",
+      "checker": "scripts/verify_degree_six_gaussian_moment_geometry.py",
       "review": "none",
       "supersedes": [
         "dimension-only Gaussian seed-family statement"

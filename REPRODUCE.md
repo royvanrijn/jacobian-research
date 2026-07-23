@@ -385,6 +385,17 @@ the bounded exact script is explicitly a regression rather than a substitute
 for that proof.  These checks are part of
 `verify-regressions`, not `verify-minimal`.
 
+The first nontrivial exceptional partition complex has a separate exact
+moment-coordinate certificate:
+
+```bash
+.venv/bin/python scripts/verify_degree_six_gaussian_moment_geometry.py
+```
+
+It derives the irreducible sextic equation of the all-double component,
+parametrizes the all-triple curve, and verifies that their four all-six
+collision points have scheme-theoretic intersection length two.
+
 The same target runs the rank-two Poisson pre-audit and the independent
 completion certificate.  The first verifies that the
 single displayed output `R=x(2-3xq)` is exactly the foundational third output

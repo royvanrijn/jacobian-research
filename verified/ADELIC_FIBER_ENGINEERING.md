@@ -99,6 +99,43 @@ generator once the real rectangle and the finite-field witnesses are known.
 It is implemented as
 `jcsearch.chebotarev.constructive_weak_approximation_lift`.
 
+### An explicit height bound
+
+Let `delta` be the smaller side length of the chosen rectangle and let
+
+\[
+ R=\max\{|x|:x\text{ is an endpoint of }I_s\text{ or }I_t\}.
+\]
+
+The construction may take the first `D=1+kM` satisfying
+
+\[
+ \frac{M}{D}<\delta.
+\]
+
+In particular it gives the elementary bound
+
+\[
+ \boxed{D\le 1+M+\frac{M}{\delta}.}                 \tag{4a}
+\]
+
+Writing the resulting coordinates in lowest terms, their naive heights are
+at most
+
+\[
+ \boxed{
+ H(s,t)\le
+ \left\lceil\left(1+M+\frac{M}{\delta}\right)
+ \max(1,R)\right\rceil.}                            \tag{4b}
+\]
+
+Thus the realization theorem is effective once a rational chamber rectangle
+and the modular witnesses are supplied.  The real-spectrum algorithm obtains
+such rectangles by exact discriminant-root isolation, while the finite-field
+witness generator supplies the residue pairs.  The height estimate is coarse
+but depends only on the selected primes and the certified distance to the
+real discriminant.
+
 ## 3. The complete fiber algebra and local splitting
 
 Membership in `Omega_j` makes `E_(s,t)` squarefree over `Q`.  In the quotient

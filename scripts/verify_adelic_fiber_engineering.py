@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 from fractions import Fraction
+import math
 from pathlib import Path
 import sys
 import warnings
@@ -59,6 +60,21 @@ s_fraction, t_fraction = constructive_weak_approximation_lift(
     residue_data, intervals
 )
 assert (s_fraction, t_fraction) == (Fraction(-308, 103), Fraction(617, 309))
+
+modulus = 7 * 11
+minimum_width = Fraction(1, 50)
+endpoint_radius = Fraction(301, 100)
+height_bound = math.ceil(
+    (1 + modulus + Fraction(modulus, 1) / minimum_width)
+    * max(Fraction(1), endpoint_radius)
+)
+actual_height = max(
+    abs(s_fraction.numerator),
+    s_fraction.denominator,
+    abs(t_fraction.numerator),
+    t_fraction.denominator,
+)
+assert actual_height <= height_bound
 
 for prime, residue_vector in residue_data.items():
     for value, residue in zip((s_fraction, t_fraction), residue_vector):

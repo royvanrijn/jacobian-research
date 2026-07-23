@@ -38,7 +38,7 @@ and external review are recorded only in
 | Direct Image and Vanishing counterexamples | [`not SIC(20)`, generalized Laplacian and nonhomogeneous HN-VC failures in 40 variables, classical homogeneous quartic HN-VC failure in 42, and an all-order inverse recurrence](IMAGE_VANISHING_COUNTEREXAMPLES.md) |
 | Formal Gaussian--Lagrange lemma | [Constant-term-safe completed-ring, residue, determinant, and Wick proof](FORMAL_GAUSSIAN_LAGRANGE_LEMMA.md) |
 | Weighted-seed Gaussian bridge | [Uniform four-real-Gaussian witnesses, exact inverse-pencil branches, and optimal `(N-3)`-moment coordinates for normalized degree-`N` families](WEIGHTED_GAUSSIAN_BRIDGE.md) |
-| Gaussian exceptional moment geometry | [Affine partition-lattice strata and transverse algebras transported into mixed-moment coordinates](GAUSSIAN_EXCEPTIONAL_MOMENT_GEOMETRY.md) |
+| Gaussian exceptional moment geometry | [Affine partition-lattice strata transported into mixed-moment coordinates, with explicit degree-six component equations and length-two intersections](GAUSSIAN_EXCEPTIONAL_MOMENT_GEOMETRY.md) |
 | Weighted invariant-coordinate Jacobian reduction | [General weight-`(1,-1,-k)` determinant lemma reducing Keller equations to two invariant variables](WEIGHTED_INVARIANT_JACOBIAN_REDUCTION.md) |
 | Weighted tangent suspension and plane Poisson square | [Plane-core determinant rearrangement, explicit foundational pair, tangent-pencil identification, and weighted-Wronskian cascade](WEIGHTED_TANGENT_SUSPENSION.md) |
 | Foundational weighted coefficient scheme | [Exact sixteen-monomial rigidity, dual-number tangent, Wronskian obstruction, and complete two-component boundary decomposition](FOUNDATIONAL_WEIGHTED_COEFFICIENT_SCHEME.md) |
