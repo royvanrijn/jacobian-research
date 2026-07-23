@@ -1138,6 +1138,18 @@ where the quadratic ideal becomes a single square.  Consequently the
 whole discriminant branch synchronizes on `D(w1*w2)`.  The remaining
 support is only `V(w0,w2)` together with `V(w0,w1,A*B)`.
 
+The two pieces are combined by the single support ideal
+
+```text
+k = (w0, w1*w2, A*B*w2).
+```
+
+The global non-jet target is `I:k^infinity = I`.  By the shared
+[support-saturation principle](verified/SUPPORT_SATURATION_PRINCIPLE.md),
+this is equivalent to excluding associated primes of the residual algebra
+over `V(k)` and is sufficient after normal completion.  It is strictly
+weaker than proving the residual algebra flat over the full Ritt base.
+
 The next normal order has an exact good-prime certificate, and one rational
 point on the remaining divisor has an exact untruncated characteristic-zero
 certificate:

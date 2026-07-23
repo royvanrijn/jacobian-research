@@ -34,9 +34,11 @@ The repository's only active Gaussian frontier is the
 high-dimensional implication chains and weighted families remain as examples
 of logical transport.
 
-## The foundational map
+## The foundational map in two forms
 
-Put `u=1+xy` and define
+The same counterexample appears naturally in two polynomial coordinate
+systems.  The first is the compact expanded form used in the original
+announcement.  Put `u=1+xy` and define
 
 \[
 F(x,y,z)=\left(
@@ -66,10 +68,51 @@ so `det DF=-2` polynomially everywhere.  Exact substitution gives
 F(0,0,-1/4)=F(1,-3/2,13/2)=F(-1,3/2,13/2)=(-1/4,0,0).
 \]
 
-The minimal independent replay is:
+The second is the normalized factorization form.  For coordinates `(a,y,z)`,
+set
+
+\[
+\begin{aligned}
+b&=1+ay,\\
+c&=1-\frac32ay+a^2z,\\
+d&=\frac12y-az+\frac32ay^2-a^2yz,\\
+e&=-2z+4y^2-4ayz+3ay^3-2a^2y^2z
+\end{aligned}
+\]
+
+and define
+
+\[
+G(a,y,z)=(ac,\ ae+bd,\ be).
+\]
+
+Then `det DG=-1`, and
+
+\[
+\begin{aligned}
+G(0,0,1/2)
+&=G(1,-3/2,-13)\\
+&=G(-1,3/2,-13)
+=(0,0,-1/4).
+\end{aligned}
+\]
+
+These are two forms of the same map, not two inequivalent counterexamples.
+Indeed, with
+
+\[
+A(x,y,z)=(x,y,-z/2),\qquad B(p,q,r)=(r,2q,2p),
+\]
+
+one has \(F=B\circ G\circ A\).  The expanded form makes the low-degree
+formula and collision immediate; the factorization form exposes the
+coprime linear-times-quadratic construction and its resultant.
+
+The independent replays are:
 
 ```bash
 python3 scripts/verify_counterexample_independent.py
+python3 scripts/verify_normalized_factorization_slice.py
 ```
 
 ## Canonical proof path
@@ -160,6 +203,11 @@ closed-point torsion `H_Z^0(Omega_{B/A})`.  For a presentation with image
 `N` and `I=Fitt_3(B)`, this torsion is the explicit saturation quotient
 `(N:I^infinity)/N`.  Certificate E is now one canonical-bidual test and
 one module-saturation test.
+The same algebraic mechanism controls the remaining degree-forty-two
+Hessian synchronization support.  The shared
+[support-saturation principle](verified/SUPPORT_SATURATION_PRINCIPLE.md)
+identifies local-cohomology torsion, associated-prime avoidance, positive
+grade, and presentation saturation; flatness is only a stronger shortcut.
 The active
 [cubic closure protocol](cancellation/CUBIC_CLOSURE_ATTACKS.md)
 organizes the remaining work into three certificates: those two Ext
