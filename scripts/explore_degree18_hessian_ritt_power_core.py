@@ -108,6 +108,30 @@ def assert_one_threefold(output: str) -> None:
     assert "COMPONENT 1 3" in compact, output
 
 
+def normalized_clean_seed(polynomial: sp.Expr) -> sp.Expr | None:
+    tangent = sp.diff(polynomial, W).subs(W, 0)
+    endpoint = sp.factor(
+        polynomial.subs(W, 1) - polynomial.subs(W, 0) - tangent
+    )
+    if endpoint != 0:
+        return None
+    derivative_gap = sp.factor(sp.diff(polynomial, W).subs(W, 1) - tangent)
+    if derivative_gap == 0:
+        return None
+    H = sp.factor(
+        -(polynomial - polynomial.subs(W, 0) - tangent * W) / derivative_gap
+    )
+    K = sp.diff(H, W, 2)
+    Q = sp.cancel(H / W**2)
+    clean_quantities = (
+        sp.discriminant(K, W),
+        K.subs(W, 0),
+        sp.discriminant(Q, W),
+        K.subs(W, 1) + 2,
+    )
+    return None if any(quantity == 0 for quantity in clean_quantities) else H
+
+
 def main() -> None:
     y = W - s
     R = y**8 + r3 * y**6 + r2 * y**4 + r1 * y**2 + r0
@@ -132,6 +156,11 @@ def main() -> None:
     A_of_B = B**3 + v * B
     assert sp.factor((h - A_of_B).subs(nested_substitution)) == 0
 
+    clean_y = W + 3
+    clean_B = clean_y**3 + 5 * clean_y
+    clean_A = clean_B**3 - sp.Rational(721476, 31) * clean_B
+    assert normalized_clean_seed(sp.expand(clean_A**2)) is not None
+
     print(f"C_36 residuals: {len(residuals_36)}")
     output_36 = singular_minimal_primes(residuals_36)
     assert_one_threefold(output_36)
@@ -144,7 +173,8 @@ def main() -> None:
     output_all = singular_minimal_primes(residuals_36 + residuals_63)
     assert_one_threefold(output_all)
     print(output_all)
-    print("PASS: both middle factor orders cut out the same prime nested-power threefold")
+    print("PASS: both middle factor orders have the same unique nested-power minimal prime")
+    print("PASS: the nested-power threefold meets the marked clean open")
 
 
 if __name__ == "__main__":

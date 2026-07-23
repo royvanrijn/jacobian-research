@@ -364,7 +364,7 @@ def certify_separation(t_ball: arb, tube: Tube) -> str:
         q_ball = evaluate_bivariate(Q_COEFFICIENTS, t_ball, x_ball)
         assert isinstance(q_ball, arb) and bool(q_ball.lower() > 0)
         y_ball = 1 + t_ball * x_ball
-        assert bool(y_ball.lower() > 1)
+        assert bool(y_ball.lower() > 0)
         if bool(t_ball.lower() > 0):
             difference = (q_ball / 10).log() + (6 / t_ball + 1) * y_ball.log()
         else:

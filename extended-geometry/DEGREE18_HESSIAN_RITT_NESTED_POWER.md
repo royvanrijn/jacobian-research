@@ -106,7 +106,17 @@ Equations (5)--(6) give the chains
 and therefore all four two-factor cuts.  Conversely, the normal form for the
 extreme pair and the exact pullback calculation show that every point of the
 all-four intersection has (5).  On the affine monic chart its dimension is
-three; after the marked source-dilation quotient its dimension is two.
+three; the normalized endpoint incidence cuts its marked dimension to two.
+
+The component meets the marked clean open.  One rational witness in (5) is
+
+\[
+ s=-3,\qquad u=5,\qquad v=-\frac{721476}{31}.     \tag{8}
+\]
+
+Its endpoint incidence vanishes, while the endpoint derivative gap, marked
+Hessian value, both Hessian and primitive-root discriminants, and the
+`H''(1)+2` condition are all nonzero.
 
 ## 3. Counterexample verdict
 
