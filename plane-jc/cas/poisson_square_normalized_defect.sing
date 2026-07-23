@@ -1,0 +1,1115 @@
+// Normalized d0=1 associated-prime filtration for [P,Q]=X^2.
+//
+// The full coefficient ideal is d0-saturated and the G_m action identifies
+// D(d0) with this slice times G_m.  Separator defects and the d3,d2
+// multiplication filtration may therefore be computed here without losing
+// associated support.
+
+LIB "primdec.lib";
+
+ring r = 0,
+  (a0,a1,a2,a3,b0,b1,b2,b3,b4,c0,c1,c2,d1,d2,d3),
+  dp;
+
+ideal I =
+  2*a2*c2-3*a3*c1,
+  4*a1*c2-a2*c1-6*a3*c0,
+  6*a0*c2+a1*c1-4*a2*c0,
+  3*a0*c1-2*a1*c0,
+  -4*b4*c2+6*a3*d3,
+  -2*b3*c2-6*b4*c1+7*a2*d3+3*a3*d2,
+  -4*b3*c1-8*b4*c0+8*a1*d3+4*a2*d2,
+  2*b1*c2-2*b2*c1-6*b3*c0+9*a0*d3+5*a1*d2+a2*d1-3*a3,
+  4*b0*c2-4*b2*c0+6*a0*d2+2*a1*d1-2*a2,
+  2*b0*c1-2*b1*c0+3*a0*d1-a1,
+  2*b4*d3,
+  3*b3*d3,
+  4*b2*d3+b3*d2-2*b4*d1,
+  5*b1*d3+2*b2*d2-b3*d1-4*b4,
+  6*b0*d3+3*b1*d2-3*b3,
+  4*b0*d2+b1*d1-2*b2,
+  2*b0*d1-b1-1;
+
+proc sameIdeal(ideal first, ideal second)
+{
+  if (size(reduce(first,std(second))) != 0)
+  {
+    return(0);
+  }
+  if (size(reduce(second,std(first))) != 0)
+  {
+    return(0);
+  }
+  return(1);
+}
+
+proc radicalMatchCount(list decomposition, ideal expected)
+{
+  int count = 0;
+  int index;
+  for (index=1; index<=size(decomposition); index++)
+  {
+    if (sameIdeal(decomposition[index][2],expected) == 1)
+    {
+      count++;
+    }
+  }
+  return(count);
+}
+
+proc primaryForRadical(list decomposition, ideal expected)
+{
+  int index;
+  for (index=1; index<=size(decomposition); index++)
+  {
+    if (sameIdeal(decomposition[index][2],expected) == 1)
+    {
+      return(decomposition[index][1]);
+    }
+  }
+  ERROR("primary radical not found");
+}
+
+proc printLocalHilbertVector(string label, ideal primarySlice, ideal reducedSlice, ideal maximalIdeal, int expectedLength)
+{
+  ideal primaryBasis = std(primarySlice);
+  int reducedLength = vdim(std(reducedSlice));
+  int primaryLength = vdim(primaryBasis);
+  if ((reducedLength != 1) || (primaryLength != expectedLength))
+  {
+    "FAIL: transverse slice length changed";
+    label;
+    reducedLength;
+    primaryLength;
+    exit(1);
+  }
+  ideal maximalPower = maximalIdeal;
+  int cumulative = 0;
+  int previous = 0;
+  int hilbertEntry = 0;
+  int hilbertSignature = 0;
+  int order;
+  label;
+  "hilbert-vector";
+  for (order=1; order<=12; order++)
+  {
+    maximalPower = reduce(maximalPower,primaryBasis);
+    cumulative = vdim(std(primaryBasis+maximalPower));
+    hilbertEntry = cumulative-previous;
+    hilbertEntry;
+    hilbertSignature = 16*hilbertSignature+hilbertEntry;
+    previous = cumulative;
+    if (cumulative == expectedLength)
+    {
+      return(hilbertSignature);
+    }
+    maximalPower = maximalPower*maximalIdeal;
+  }
+  "FAIL: local Hilbert vector exceeded order twelve";
+  exit(1);
+}
+
+proc localSocleDimension(ideal primaryIdeal, ideal maximalIdeal)
+{
+  return(
+    vdim(std(primaryIdeal))
+    - vdim(std(quotient(primaryIdeal,maximalIdeal)))
+  );
+}
+
+poly tangentForC0 =
+  8*b2^2*c0-4*b1*b2*c1+2*b1^2*c2+3*a3;
+poly tangentForA0 =
+  -4*b1*c0+2*b0*c1+3*a0*d1;
+
+ideal QT = sat(I,ideal(a0*c0));
+ideal QC0 = sat(I,ideal(a0*tangentForC0));
+ideal QA0 = sat(I,ideal(c0*tangentForA0));
+ideal J = intersect(QT,QC0);
+J = intersect(J,QA0);
+
+"normalized-separator-defect";
+"I-dimension";
+dim(std(I));
+"J-dimension";
+dim(std(J));
+"I-standard-basis-size";
+size(std(I));
+"J-standard-basis-size";
+size(std(J));
+"I-contained-in-J";
+size(reduce(I,std(J))) == 0;
+"I-equals-J";
+sameIdeal(I,J);
+"J-equals-I-plus-d3";
+int cyclicDefect = sameIdeal(I+ideal(d3),J);
+cyclicDefect;
+ideal defectRemainders = reduce(J,std(I));
+"nonzero-defect-remainder-count";
+size(defectRemainders);
+
+int start = timer;
+ideal d3Annihilator = quotient(I,ideal(d3));
+"d3-annihilator";
+"dimension";
+int defectDimension = dim(std(d3Annihilator));
+defectDimension;
+"standard-basis-size";
+int defectBasisSize = size(std(d3Annihilator));
+defectBasisSize;
+"milliseconds";
+timer-start;
+if ((defectDimension != 2) || (defectBasisSize != 134))
+{
+  "FAIL: the normalized d3 annihilator changed";
+  exit(1);
+}
+
+start = timer;
+ideal defectSupport = radical(d3Annihilator);
+"reduced-d3-torsion-support";
+"dimension";
+int supportDimension = dim(std(defectSupport));
+supportDimension;
+"standard-basis-size";
+int supportBasisSize = size(std(defectSupport));
+supportBasisSize;
+"milliseconds";
+timer-start;
+if ((supportDimension != 2) || (supportBasisSize != 18))
+{
+  "FAIL: the normalized reduced d3-torsion support changed";
+  exit(1);
+}
+
+ideal coreBranch =
+  d3,d2,c2,c1,c0,b4,b3,a3,a2,a1,a0,
+  -b0*d1^2+b2+1/2*d1,
+  -2*b0*d1+b1+1;
+ideal constantDBranch =
+  d3,d2,d1,c2,c1,c0,b4,b3,b2,b1+1,a3,a2,a1;
+ideal constantBCBranch =
+  2*b0*d1-1,d3,d2,c2,c1,b4,b3,
+  -b0*d1^2+b2+1/2*d1,
+  -2*b0*d1+b1+1,a3,a2,a1,a0;
+ideal coreConstantBCIntersection =
+  2*b0*d1-1,d3,d2,c2,c1,c0,b4,b3,b2,
+  -2*b0*d1+b1+1,a3,a2,a1,a0;
+ideal coreConstantDIntersection =
+  d3,d2,d1,c2,c1,c0,b4,b3,b2,
+  -2*b0*d1+b1+1,a3,a2,a1,a0;
+ideal expectedSupport = intersect(coreBranch,constantDBranch);
+expectedSupport = intersect(expectedSupport,constantBCBranch);
+"support-equals-three-known-collision-branches";
+int expectedSupportExact = sameIdeal(defectSupport,expectedSupport);
+expectedSupportExact;
+if (expectedSupportExact != 1)
+{
+  "FAIL: the d3-torsion escaped the known collision branches";
+  exit(1);
+}
+
+"d3-annihilator-is-radical";
+int annihilatorRadical = sameIdeal(d3Annihilator,defectSupport);
+annihilatorRadical;
+
+ideal supportPower = defectSupport;
+int supportExponent = 0;
+int exponent;
+for (exponent=1; exponent<=6; exponent++)
+{
+  supportPower = reduce(supportPower,std(d3Annihilator));
+  if (size(supportPower) == 0)
+  {
+    supportExponent = exponent;
+    break;
+  }
+  supportPower = supportPower*defectSupport;
+}
+"least-tested-support-power-annihilating-d3";
+supportExponent;
+if (supportExponent != 4)
+{
+  "FAIL: the reduced support no longer has exact d3-torsion exponent four";
+  exit(1);
+}
+
+start = timer;
+ideal d3CoreClosure =
+  sat(d3Annihilator,ideal(d1*(2*b0*d1-1)));
+ideal d3ConstantDClosure = sat(d3Annihilator,ideal(a0));
+ideal d3ConstantBCClosure = sat(d3Annihilator,ideal(c0));
+"d3-branch-primary-closure-basis-sizes";
+size(std(d3CoreClosure));
+size(std(d3ConstantDClosure));
+size(std(d3ConstantBCClosure));
+"d3-branch-primary-closure-radicals";
+sameIdeal(radical(d3CoreClosure),coreBranch);
+sameIdeal(radical(d3ConstantDClosure),constantDBranch);
+sameIdeal(radical(d3ConstantBCClosure),constantBCBranch);
+ideal d3BranchIntersection =
+  intersect(d3CoreClosure,d3ConstantDClosure);
+d3BranchIntersection =
+  intersect(d3BranchIntersection,d3ConstantBCClosure);
+"d3-branch-closures-reconstruct-annihilator";
+int d3BranchExact =
+  sameIdeal(d3Annihilator,d3BranchIntersection);
+d3BranchExact;
+if (d3BranchExact != 0)
+{
+  "FAIL: the second gluing layer unexpectedly disappeared";
+  exit(1);
+}
+"d3-branch-intersection-dimension";
+dim(std(d3BranchIntersection));
+"d3-branch-intersection-basis-size";
+size(std(d3BranchIntersection));
+"milliseconds";
+timer-start;
+
+if (d3BranchExact == 0)
+{
+  start = timer;
+  ideal secondAnnihilator =
+    quotient(d3Annihilator,d3BranchIntersection);
+  ideal secondSupport = radical(secondAnnihilator);
+  "second-gluing-annihilator-dimension";
+  int secondAnnihilatorDimension = dim(std(secondAnnihilator));
+  secondAnnihilatorDimension;
+  "second-gluing-annihilator-basis-size";
+  int secondAnnihilatorBasisSize = size(std(secondAnnihilator));
+  secondAnnihilatorBasisSize;
+  "second-gluing-support-dimension";
+  int secondSupportDimension = dim(std(secondSupport));
+  secondSupportDimension;
+  "second-gluing-support-basis-size";
+  int secondSupportBasisSize = size(std(secondSupport));
+  secondSupportBasisSize;
+  if (
+    (secondAnnihilatorDimension != 1)
+    || (secondAnnihilatorBasisSize != 16)
+    || (secondSupportDimension != 1)
+    || (secondSupportBasisSize != 15)
+  )
+  {
+    "FAIL: the second gluing dimensions or bases changed";
+    exit(1);
+  }
+  ideal expectedSecondSupport =
+    intersect(coreConstantBCIntersection,coreConstantDIntersection);
+  "second-support-equals-two-core-intersection-curves";
+  int secondSupportExact =
+    sameIdeal(secondSupport,expectedSecondSupport);
+  secondSupportExact;
+  if (secondSupportExact != 1)
+  {
+    "FAIL: the second gluing escaped the two core-intersection curves";
+    exit(1);
+  }
+  "second-gluing-annihilator-is-radical";
+  int secondAnnihilatorRadical =
+    sameIdeal(secondAnnihilator,secondSupport);
+  secondAnnihilatorRadical;
+  if (secondAnnihilatorRadical != 0)
+  {
+    "FAIL: the second gluing unexpectedly became radical";
+    exit(1);
+  }
+  ideal secondConstantBCClosure =
+    sat(secondAnnihilator,ideal(d1));
+  ideal secondConstantDClosure =
+    sat(secondAnnihilator,ideal(2*b0*d1-1));
+  "second-branch-closure-radicals";
+  sameIdeal(
+    radical(secondConstantBCClosure),
+    coreConstantBCIntersection
+  );
+  sameIdeal(
+    radical(secondConstantDClosure),
+    coreConstantDIntersection
+  );
+  ideal secondBranchIntersection =
+    intersect(secondConstantBCClosure,secondConstantDClosure);
+  "second-branch-closures-reconstruct-annihilator";
+  int secondBranchExact =
+    sameIdeal(secondAnnihilator,secondBranchIntersection);
+  secondBranchExact;
+  if (secondBranchExact != 1)
+  {
+    "FAIL: the disjoint second-level branch closures did not reconstruct";
+    exit(1);
+  }
+  list secondConstantBCPrimary =
+    primdecGTZ(secondConstantBCClosure);
+  list secondConstantDPrimary =
+    primdecGTZ(secondConstantDClosure);
+  "second-branch-primary-decomposition-counts";
+  int secondBCPrimaryCount = size(secondConstantBCPrimary);
+  int secondDPrimaryCount = size(secondConstantDPrimary);
+  secondBCPrimaryCount;
+  secondDPrimaryCount;
+  if ((secondBCPrimaryCount != 1) || (secondDPrimaryCount != 1))
+  {
+    "FAIL: the second-level curve ideals are no longer primary";
+    exit(1);
+  }
+  list secondBranches = minAssGTZ(secondSupport);
+  "second-gluing-branch-count";
+  size(secondBranches);
+  int secondBranch;
+  for (secondBranch=1; secondBranch<=size(secondBranches); secondBranch++)
+  {
+    "second-gluing-branch";
+    secondBranch;
+    "dimension";
+    dim(std(secondBranches[secondBranch]));
+    "prime";
+    secondBranches[secondBranch];
+  }
+  "milliseconds";
+  timer-start;
+}
+
+start = timer;
+list defectBranches = minAssGTZ(defectSupport);
+"reduced-defect-branch-count";
+int defectBranchCount = size(defectBranches);
+defectBranchCount;
+if (defectBranchCount != 3)
+{
+  "FAIL: expected exactly three reduced d3-torsion branches";
+  exit(1);
+}
+int branch;
+for (branch=1; branch<=size(defectBranches); branch++)
+{
+  "defect-branch";
+  branch;
+  "dimension";
+  dim(std(defectBranches[branch]));
+  "prime";
+  defectBranches[branch];
+}
+"milliseconds";
+timer-start;
+"direct-d3-annihilator-primary-decomposition";
+start = timer;
+list directD3Primary = primdecGTZ(d3Annihilator);
+"component-count";
+int directD3Count = size(directD3Primary);
+directD3Count;
+int primaryIndex;
+int directD3SurfaceCount = 0;
+int directD3CurveCount = 0;
+int directD3Dimension;
+for (
+  primaryIndex=1;
+  primaryIndex<=size(directD3Primary);
+  primaryIndex++
+)
+{
+  "component";
+  primaryIndex;
+  "primary-dimension";
+  dim(std(directD3Primary[primaryIndex][1]));
+  "radical-dimension";
+  directD3Dimension =
+    dim(std(directD3Primary[primaryIndex][2]));
+  directD3Dimension;
+  if (directD3Dimension == 2)
+  {
+    directD3SurfaceCount++;
+  }
+  if (directD3Dimension == 1)
+  {
+    directD3CurveCount++;
+  }
+}
+"radicals-match-S-SC-SA-and-two-core-intersection-curves";
+radicalMatchCount(directD3Primary,coreBranch);
+radicalMatchCount(directD3Primary,constantDBranch);
+radicalMatchCount(directD3Primary,constantBCBranch);
+radicalMatchCount(directD3Primary,coreConstantBCIntersection);
+radicalMatchCount(directD3Primary,coreConstantDIntersection);
+if (
+  (directD3Count != 5)
+  || (directD3SurfaceCount != 3)
+  || (directD3CurveCount != 2)
+  || (radicalMatchCount(directD3Primary,coreBranch) != 1)
+  || (radicalMatchCount(directD3Primary,constantDBranch) != 1)
+  || (radicalMatchCount(directD3Primary,constantBCBranch) != 1)
+  || (
+    radicalMatchCount(
+      directD3Primary,coreConstantBCIntersection
+    ) != 1
+  )
+  || (
+    radicalMatchCount(
+      directD3Primary,coreConstantDIntersection
+    ) != 1
+  )
+)
+{
+  "FAIL: the five d3-annihilator primary components changed";
+  exit(1);
+}
+"d3-primary-transverse-lengths";
+ideal d3CorePrimary =
+  primaryForRadical(directD3Primary,coreBranch);
+ideal d3ConstantDPrimary =
+  primaryForRadical(directD3Primary,constantDBranch);
+ideal d3ConstantBCPrimary =
+  primaryForRadical(directD3Primary,constantBCBranch);
+ideal d3CoreConstantDPrimary =
+  primaryForRadical(directD3Primary,coreConstantDIntersection);
+ideal d3CoreConstantBCPrimary =
+  primaryForRadical(directD3Primary,coreConstantBCIntersection);
+int d3CoreLength =
+  vdim(std(d3CorePrimary+ideal(b0-3,d1-2)));
+int d3ConstantDLength =
+  vdim(std(d3ConstantDPrimary+ideal(a0-5,b0-3)));
+int d3ConstantBCLength =
+  vdim(std(d3ConstantBCPrimary+ideal(c0-7,d1-2)));
+int d3CoreConstantDLength =
+  vdim(std(d3CoreConstantDPrimary+ideal(b0-3)));
+int d3CoreConstantBCLength =
+  vdim(std(d3CoreConstantBCPrimary+ideal(d1-2)));
+d3CoreLength;
+d3ConstantDLength;
+d3ConstantBCLength;
+d3CoreConstantDLength;
+d3CoreConstantBCLength;
+ideal d3CoreSlice =
+  d3CorePrimary+ideal(b0-3,d1-2);
+ideal d3ConstantDSlice =
+  d3ConstantDPrimary+ideal(a0-5,b0-3);
+ideal d3ConstantBCSlice =
+  d3ConstantBCPrimary+ideal(c0-7,d1-2);
+ideal d3CoreConstantDSlice =
+  d3CoreConstantDPrimary+ideal(b0-3);
+ideal d3CoreConstantBCSlice =
+  d3CoreConstantBCPrimary+ideal(d1-2);
+int d3CoreHilbert = printLocalHilbertVector(
+  "S",
+  d3CoreSlice,
+  coreBranch+ideal(b0-3,d1-2),
+  ideal(
+    a0,a1,a2,a3,b0-3,b1-11,b2-11,b3,b4,
+    c0,c1,c2,d1-2,d2,d3
+  ),
+  3
+);
+int d3ConstantDHilbert = printLocalHilbertVector(
+  "S_C",
+  d3ConstantDSlice,
+  constantDBranch+ideal(a0-5,b0-3),
+  ideal(
+    a0-5,a1,a2,a3,b0-3,b1+1,b2,b3,b4,
+    c0,c1,c2,d1,d2,d3
+  ),
+  5
+);
+int d3ConstantBCHilbert = printLocalHilbertVector(
+  "S_A",
+  d3ConstantBCSlice,
+  constantBCBranch+ideal(c0-7,d1-2),
+  ideal(
+    a0,a1,a2,a3,b0-1/4,b1,b2,b3,b4,
+    c0-7,c1,c2,d1-2,d2,d3
+  ),
+  7
+);
+int d3CoreConstantDHilbert = printLocalHilbertVector(
+  "K_C",
+  d3CoreConstantDSlice,
+  coreConstantDIntersection+ideal(b0-3),
+  ideal(
+    a0,a1,a2,a3,b0-3,b1+1,b2,b3,b4,
+    c0,c1,c2,d1,d2,d3
+  ),
+  25
+);
+int d3CoreConstantBCHilbert = printLocalHilbertVector(
+  "K_A",
+  d3CoreConstantBCSlice,
+  coreConstantBCIntersection+ideal(d1-2),
+  ideal(
+    a0,a1,a2,a3,b0-1/4,b1,b2,b3,b4,
+    c0,c1,c2,d1-2,d2,d3
+  ),
+  30
+);
+if (
+  (d3CoreHilbert != 18)
+  || (d3ConstantDHilbert != 290)
+  || (d3ConstantBCHilbert != 4657)
+  || (d3CoreConstantDHilbert != 1267555)
+  || (d3CoreConstantBCHilbert != 1346145)
+)
+{
+  "FAIL: a d3-primary local Hilbert vector changed";
+  exit(1);
+}
+"milliseconds";
+timer-start;
+"next-filtration-stage-d2";
+start = timer;
+ideal d3ZeroQuotient = I+ideal(d3);
+ideal d2Annihilator = quotient(d3ZeroQuotient,ideal(d2));
+"annihilator-dimension";
+dim(std(d2Annihilator));
+"annihilator-basis-size";
+size(std(d2Annihilator));
+list directD2Primary = primdecGTZ(d2Annihilator);
+"annihilator-primary-component-count";
+int directD2Count = size(directD2Primary);
+directD2Count;
+int directD2ThreefoldCount = 0;
+int directD2SurfaceCount = 0;
+int directD2Dimension;
+ideal tangentPrime;
+for (
+  primaryIndex=1;
+  primaryIndex<=size(directD2Primary);
+  primaryIndex++
+)
+{
+  "d2-annihilator-component";
+  primaryIndex;
+  "dimension";
+  directD2Dimension =
+    dim(std(directD2Primary[primaryIndex][2]));
+  directD2Dimension;
+  if (directD2Dimension == 3)
+  {
+    directD2ThreefoldCount++;
+    tangentPrime = directD2Primary[primaryIndex][2];
+  }
+  if (directD2Dimension == 2)
+  {
+    directD2SurfaceCount++;
+  }
+  "radical";
+  directD2Primary[primaryIndex][2];
+}
+if (
+  (directD2Count != 4)
+  || (directD2ThreefoldCount != 1)
+  || (directD2SurfaceCount != 3)
+  || (radicalMatchCount(directD2Primary,coreBranch) != 1)
+  || (radicalMatchCount(directD2Primary,constantDBranch) != 1)
+  || (radicalMatchCount(directD2Primary,constantBCBranch) != 1)
+)
+{
+  "FAIL: the four d2-annihilator primary components changed";
+  exit(1);
+}
+"d2-primary-transverse-lengths";
+ideal d2TangentPrimary =
+  primaryForRadical(directD2Primary,tangentPrime);
+ideal d2CorePrimary =
+  primaryForRadical(directD2Primary,coreBranch);
+ideal d2ConstantDPrimary =
+  primaryForRadical(directD2Primary,constantDBranch);
+ideal d2ConstantBCPrimary =
+  primaryForRadical(directD2Primary,constantBCBranch);
+int d2TangentLength = vdim(std(
+  d2TangentPrimary+ideal(a3-1,a2+3,d1-2)
+));
+int d2CoreLength = vdim(std(
+  d2CorePrimary+ideal(b0-3,d1-2)
+));
+int d2ConstantDLength = vdim(std(
+  d2ConstantDPrimary+ideal(a0-5,b0-3)
+));
+int d2ConstantBCLength = vdim(std(
+  d2ConstantBCPrimary+ideal(c0-7,d1-2)
+));
+d2TangentLength;
+d2CoreLength;
+d2ConstantDLength;
+d2ConstantBCLength;
+int d2TangentHilbert = printLocalHilbertVector(
+  "T",
+  d2TangentPrimary+ideal(a3-1,a2+3,d1-2),
+  tangentPrime+ideal(a3-1,a2+3,d1-2),
+  ideal(
+    a0+1,a1-3,a2+3,a3-1,
+    b0-2/9,b1+1/9,b2+1/9,b3,b4,
+    c0+27/2,c1-27,c2+27/2,d1-2,d2,d3
+  ),
+  1
+);
+int d2CoreHilbert = printLocalHilbertVector(
+  "S",
+  d2CorePrimary+ideal(b0-3,d1-2),
+  coreBranch+ideal(b0-3,d1-2),
+  ideal(
+    a0,a1,a2,a3,b0-3,b1-11,b2-11,b3,b4,
+    c0,c1,c2,d1-2,d2,d3
+  ),
+  8
+);
+int d2ConstantDHilbert = printLocalHilbertVector(
+  "S_C",
+  d2ConstantDPrimary+ideal(a0-5,b0-3),
+  constantDBranch+ideal(a0-5,b0-3),
+  ideal(
+    a0-5,a1,a2,a3,b0-3,b1+1,b2,b3,b4,
+    c0,c1,c2,d1,d2,d3
+  ),
+  4
+);
+int d2ConstantBCHilbert = printLocalHilbertVector(
+  "S_A",
+  d2ConstantBCPrimary+ideal(c0-7,d1-2),
+  constantBCBranch+ideal(c0-7,d1-2),
+  ideal(
+    a0,a1,a2,a3,b0-1/4,b1,b2,b3,b4,
+    c0-7,c1,c2,d1-2,d2,d3
+  ),
+  2
+);
+if (
+  (d2TangentHilbert != 1)
+  || (d2CoreHilbert != 4913)
+  || (d2ConstantDHilbert != 289)
+  || (d2ConstantBCHilbert != 17)
+)
+{
+  "FAIL: a d2-primary local Hilbert vector changed";
+  exit(1);
+}
+"milliseconds";
+timer-start;
+"next-filtration-stage-b4";
+start = timer;
+ideal d2ZeroQuotient = d3ZeroQuotient+ideal(d2);
+ideal b4Annihilator = quotient(d2ZeroQuotient,ideal(b4));
+"annihilator-dimension";
+dim(std(b4Annihilator));
+"annihilator-basis-size";
+size(std(b4Annihilator));
+"b4-is-zero-in-d2-quotient";
+int b4AlreadyZero = reduce(b4,std(d2ZeroQuotient)) == 0;
+b4AlreadyZero;
+"b3-is-zero-in-d2-quotient";
+int b3AlreadyZero = reduce(b3,std(d2ZeroQuotient)) == 0;
+b3AlreadyZero;
+if ((b4AlreadyZero != 1) || (b3AlreadyZero != 1))
+{
+  "FAIL: b4 and b3 are no longer forced after d3=d2=0";
+  exit(1);
+}
+"milliseconds";
+timer-start;
+"d3-d2-zero-quotient-primary-decomposition";
+start = timer;
+list directD3D2ZeroPrimary = primdecGTZ(d2ZeroQuotient);
+"component-count";
+int finalPrimaryCount = size(directD3D2ZeroPrimary);
+finalPrimaryCount;
+int finalThreefoldCount = 0;
+int finalDimension;
+for (
+  primaryIndex=1;
+  primaryIndex<=size(directD3D2ZeroPrimary);
+  primaryIndex++
+)
+{
+  "component";
+  primaryIndex;
+  "primary-dimension";
+  dim(std(directD3D2ZeroPrimary[primaryIndex][1]));
+  "radical-dimension";
+  finalDimension =
+    dim(std(directD3D2ZeroPrimary[primaryIndex][2]));
+  finalDimension;
+  if (finalDimension == 3)
+  {
+    finalThreefoldCount++;
+  }
+}
+"tangent-prime-count-in-final-quotient";
+int finalTangentCount =
+  radicalMatchCount(directD3D2ZeroPrimary,tangentPrime);
+finalTangentCount;
+if (
+  (finalPrimaryCount != 3)
+  || (finalThreefoldCount != 3)
+  || (finalTangentCount != 1)
+)
+{
+  "FAIL: the d3=d2=0 quotient decomposition changed";
+  exit(1);
+}
+"milliseconds";
+timer-start;
+
+"generic-normal-fiber-replay";
+ring genericD3S = (0,u,v),
+  (a0,a1,a2,a3,b1,b2,b3,b4,c0,c1,c2,d2,d3),dp;
+map mapD3S = r,
+  a0,a1,a2,a3,u,b1,b2,b3,b4,c0,c1,c2,v,d2,d3;
+ideal genericD3SPrimary = mapD3S(d3CorePrimary);
+ideal genericD3SPrime = mapD3S(coreBranch);
+int genericD3SHilbert = printLocalHilbertVector(
+  "generic_d3_S",
+  genericD3SPrimary,
+  genericD3SPrime,
+  genericD3SPrime,
+  3
+);
+int genericD3SSocle =
+  localSocleDimension(genericD3SPrimary,genericD3SPrime);
+"generic_d3_S_socle-dimension";
+genericD3SSocle;
+"generic_d3_S_standard-monomials";
+kbase(std(genericD3SPrimary));
+"generic_d3_S_two-generator-relations";
+ideal genericD3SRelations = std(eliminate(
+  genericD3SPrimary,
+  a0*a1*a2*a3*b1*b2*b3*b4*c2*d2*d3
+));
+genericD3SRelations;
+int genericD3SSquareZero = sameIdeal(
+  genericD3SRelations,
+  ideal(c0^2,c0*c1,c1^2)
+);
+"generic_d3_S-is-square-zero";
+genericD3SSquareZero;
+setring r;
+
+ring genericD3SC = (0,u,v),
+  (a1,a2,a3,b1,b2,b3,b4,c0,c1,c2,d1,d2,d3),dp;
+map mapD3SC = r,
+  u,a1,a2,a3,v,b1,b2,b3,b4,c0,c1,c2,d1,d2,d3;
+ideal genericD3SCPrimary = mapD3SC(d3ConstantDPrimary);
+ideal genericD3SCPrime = mapD3SC(constantDBranch);
+int genericD3SCHilbert = printLocalHilbertVector(
+  "generic_d3_S_C",
+  genericD3SCPrimary,
+  genericD3SCPrime,
+  genericD3SCPrime,
+  5
+);
+int genericD3SCSocle =
+  localSocleDimension(genericD3SCPrimary,genericD3SCPrime);
+"generic_d3_S_C_socle-dimension";
+genericD3SCSocle;
+"generic_d3_S_C_standard-monomials";
+kbase(std(genericD3SCPrimary));
+"generic_d3_S_C-four-generator-relations";
+ideal genericD3SCRelations = std(eliminate(
+  genericD3SCPrimary,
+  a1*a2*a3*b1*b3*b4*c2*d2*d3
+));
+genericD3SCRelations;
+"generic_d3_S_C-two-generator-relations";
+ideal genericD3SCTwoGeneratorRelations = std(eliminate(
+  genericD3SCPrimary,
+  a1*a2*a3*b1*b2*b3*b4*c1*c2*d2*d3
+));
+genericD3SCTwoGeneratorRelations;
+ring genericD3SCPresentationRing = (0,u,v),(c0,d1),dp;
+ideal genericD3SCPresentation =
+  imap(genericD3SC,genericD3SCTwoGeneratorRelations);
+int genericD3SCPresentationLength =
+  vdim(std(genericD3SCPresentation));
+"generic_d3_S_C-presentation-length";
+genericD3SCPresentationLength;
+setring r;
+
+ring genericD3SA = (0,u,v),
+  (a0,a1,a2,a3,b0,b1,b2,b3,b4,c1,c2,d2,d3),dp;
+map mapD3SA = r,
+  a0,a1,a2,a3,b0,b1,b2,b3,b4,u,c1,c2,v,d2,d3;
+ideal genericD3SAPrimary = mapD3SA(d3ConstantBCPrimary);
+ideal genericD3SAPrime = mapD3SA(constantBCBranch);
+int genericD3SAHilbert = printLocalHilbertVector(
+  "generic_d3_S_A",
+  genericD3SAPrimary,
+  genericD3SAPrime,
+  genericD3SAPrime,
+  7
+);
+int genericD3SASocle =
+  localSocleDimension(genericD3SAPrimary,genericD3SAPrime);
+"generic_d3_S_A_socle-dimension";
+genericD3SASocle;
+"generic_d3_S_A_standard-monomials";
+kbase(std(genericD3SAPrimary));
+"generic_d3_S_A-six-generator-relations";
+ideal genericD3SARelations = std(eliminate(
+  genericD3SAPrimary,
+  a0*a1*a2*a3*b0*b3*b4
+));
+genericD3SARelations;
+"generic_d3_S_A-two-generator-relations";
+ideal genericD3SATwoGeneratorRelations = std(eliminate(
+  genericD3SAPrimary,
+  a0*a1*a2*a3*b0*b2*b3*b4*c2*d2*d3
+));
+genericD3SATwoGeneratorRelations;
+ring genericD3SAPresentationRing = (0,u,v),(b1,c1),dp;
+ideal genericD3SAPresentation =
+  imap(genericD3SA,genericD3SATwoGeneratorRelations);
+int genericD3SAPresentationLength =
+  vdim(std(genericD3SAPresentation));
+"generic_d3_S_A-presentation-length";
+genericD3SAPresentationLength;
+setring r;
+
+ring genericD3KC = (0,u),
+  (a0,a1,a2,a3,b1,b2,b3,b4,c0,c1,c2,d1,d2,d3),dp;
+map mapD3KC = r,
+  a0,a1,a2,a3,u,b1,b2,b3,b4,c0,c1,c2,d1,d2,d3;
+ideal genericD3KCPrimary = mapD3KC(d3CoreConstantDPrimary);
+ideal genericD3KCPrime = mapD3KC(coreConstantDIntersection);
+int genericD3KCHilbert = printLocalHilbertVector(
+  "generic_d3_K_C",
+  genericD3KCPrimary,
+  genericD3KCPrime,
+  genericD3KCPrime,
+  25
+);
+int genericD3KCSocle =
+  localSocleDimension(genericD3KCPrimary,genericD3KCPrime);
+"generic_d3_K_C_socle-dimension";
+genericD3KCSocle;
+"generic_d3_K_C_standard-monomials";
+kbase(std(genericD3KCPrimary));
+"generic_d3_K_C-three-generator-presentation";
+ideal genericD3KCThreeGeneratorRelations = std(eliminate(
+  genericD3KCPrimary,
+  a1*a2*a3*b1*b2*b3*b4*c1*c2*d2*d3
+));
+ring genericD3KCPresentationRing = (0,u),(a0,c0,d1),dp;
+ideal genericD3KCPresentation =
+  imap(genericD3KC,genericD3KCThreeGeneratorRelations);
+int genericD3KCPresentationLength =
+  vdim(std(genericD3KCPresentation));
+int genericD3KCPresentationBasisSize =
+  size(std(genericD3KCPresentation));
+"length";
+genericD3KCPresentationLength;
+"standard-basis-size";
+genericD3KCPresentationBasisSize;
+setring r;
+
+ring genericD3KA = (0,u),
+  (a0,a1,a2,a3,b0,b1,b2,b3,b4,c0,c1,c2,d2,d3),dp;
+map mapD3KA = r,
+  a0,a1,a2,a3,b0,b1,b2,b3,b4,c0,c1,c2,u,d2,d3;
+ideal genericD3KAPrimary = mapD3KA(d3CoreConstantBCPrimary);
+ideal genericD3KAPrime = mapD3KA(coreConstantBCIntersection);
+int genericD3KAHilbert = printLocalHilbertVector(
+  "generic_d3_K_A",
+  genericD3KAPrimary,
+  genericD3KAPrime,
+  genericD3KAPrime,
+  30
+);
+int genericD3KASocle =
+  localSocleDimension(genericD3KAPrimary,genericD3KAPrime);
+"generic_d3_K_A_socle-dimension";
+genericD3KASocle;
+"generic_d3_K_A_standard-monomials";
+kbase(std(genericD3KAPrimary));
+"generic_d3_K_A-four-generator-presentation";
+ideal genericD3KAFourGeneratorRelations = std(eliminate(
+  genericD3KAPrimary,
+  a1*a2*a3*b0*b2*b3*b4*c1*c2*d3
+));
+ring genericD3KAPresentationRing = (0,u),(a0,b1,c0,d2),dp;
+ideal genericD3KAPresentation =
+  imap(genericD3KA,genericD3KAFourGeneratorRelations);
+int genericD3KAPresentationLength =
+  vdim(std(genericD3KAPresentation));
+int genericD3KAPresentationBasisSize =
+  size(std(genericD3KAPresentation));
+"length";
+genericD3KAPresentationLength;
+"standard-basis-size";
+genericD3KAPresentationBasisSize;
+setring r;
+
+ring genericD2T = (0,u,v,w),
+  (a0,a1,b0,b1,b2,b3,b4,c0,c1,c2,d2,d3),dp;
+map mapD2T = r,
+  a0,a1,u,v,b0,b1,b2,b3,b4,c0,c1,c2,w,d2,d3;
+ideal genericD2TPrimary = mapD2T(d2TangentPrimary);
+ideal genericD2TPrime = mapD2T(tangentPrime);
+int genericD2THilbert = printLocalHilbertVector(
+  "generic_d2_T",
+  genericD2TPrimary,
+  genericD2TPrime,
+  genericD2TPrime,
+  1
+);
+int genericD2TSocle =
+  localSocleDimension(genericD2TPrimary,genericD2TPrime);
+"generic_d2_T_socle-dimension";
+genericD2TSocle;
+setring r;
+
+ring genericD2S = (0,u,v),
+  (a0,a1,a2,a3,b1,b2,b3,b4,c0,c1,c2,d2,d3),dp;
+map mapD2S = r,
+  a0,a1,a2,a3,u,b1,b2,b3,b4,c0,c1,c2,v,d2,d3;
+ideal genericD2SPrimary = mapD2S(d2CorePrimary);
+ideal genericD2SPrime = mapD2S(coreBranch);
+int genericD2SHilbert = printLocalHilbertVector(
+  "generic_d2_S",
+  genericD2SPrimary,
+  genericD2SPrime,
+  genericD2SPrime,
+  8
+);
+int genericD2SSocle =
+  localSocleDimension(genericD2SPrimary,genericD2SPrime);
+"generic_d2_S_socle-dimension";
+genericD2SSocle;
+"generic_d2_S_standard-monomials";
+kbase(std(genericD2SPrimary));
+"generic_d2_S_three-generator-relations";
+ideal genericD2SRelations = std(eliminate(
+  genericD2SPrimary,
+  a0*a1*a2*a3*b1*b2*b3*b4*d2*d3
+));
+genericD2SRelations;
+ideal genericD2SQuadrics =
+  genericD2SRelations[1],
+  genericD2SRelations[2],
+  genericD2SRelations[3];
+"generic_d2_S-generated-by-three-quadrics";
+int genericD2SCompleteIntersection =
+  sameIdeal(genericD2SRelations,genericD2SQuadrics);
+genericD2SCompleteIntersection;
+ideal genericD2SFourRelations =
+  genericD2SQuadrics,
+  genericD2SRelations[4];
+ideal genericD2SFiveRelations =
+  genericD2SFourRelations,
+  genericD2SRelations[5];
+"generic_d2_S-generated-by-three-quadrics-one-cubic";
+int genericD2SFourExact =
+  sameIdeal(genericD2SRelations,genericD2SFourRelations);
+genericD2SFourExact;
+"generic_d2_S-generated-by-three-quadrics-two-cubics";
+int genericD2SFiveExact =
+  sameIdeal(genericD2SRelations,genericD2SFiveRelations);
+genericD2SFiveExact;
+setring r;
+
+ring genericD2SC = (0,u,v),
+  (a1,a2,a3,b1,b2,b3,b4,c0,c1,c2,d1,d2,d3),dp;
+map mapD2SC = r,
+  u,a1,a2,a3,v,b1,b2,b3,b4,c0,c1,c2,d1,d2,d3;
+ideal genericD2SCPrimary = mapD2SC(d2ConstantDPrimary);
+ideal genericD2SCPrime = mapD2SC(constantDBranch);
+int genericD2SCHilbert = printLocalHilbertVector(
+  "generic_d2_S_C",
+  genericD2SCPrimary,
+  genericD2SCPrime,
+  genericD2SCPrime,
+  4
+);
+int genericD2SCSocle =
+  localSocleDimension(genericD2SCPrimary,genericD2SCPrime);
+"generic_d2_S_C_socle-dimension";
+genericD2SCSocle;
+"generic_d2_S_C_standard-monomials";
+kbase(std(genericD2SCPrimary));
+"generic_d2_S_C_three-generator-relations";
+ideal genericD2SCRelations = std(eliminate(
+  genericD2SCPrimary,
+  a1*a2*a3*b1*b2*b3*b4*c2*d2*d3
+));
+genericD2SCRelations;
+ideal genericD2SCPresentation =
+  5*c1+6*u*d1^2,
+  2*c0*d1-c1,
+  c0^2,
+  d1^3;
+"generic_d2_S_C_has-four-relation-presentation";
+int genericD2SCPresentationExact =
+  sameIdeal(genericD2SCRelations,genericD2SCPresentation);
+genericD2SCPresentationExact;
+if (
+  (genericD2SCPresentationExact != 1)
+)
+{
+  "FAIL: the generic d2 S_C presentation changed";
+}
+setring r;
+
+ring genericD2SA = (0,u,v),
+  (a0,a1,a2,a3,b0,b1,b2,b3,b4,c1,c2,d2,d3),dp;
+map mapD2SA = r,
+  a0,a1,a2,a3,b0,b1,b2,b3,b4,u,c1,c2,v,d2,d3;
+ideal genericD2SAPrimary = mapD2SA(d2ConstantBCPrimary);
+ideal genericD2SAPrime = mapD2SA(constantBCBranch);
+int genericD2SAHilbert = printLocalHilbertVector(
+  "generic_d2_S_A",
+  genericD2SAPrimary,
+  genericD2SAPrime,
+  genericD2SAPrime,
+  2
+);
+int genericD2SASocle =
+  localSocleDimension(genericD2SAPrimary,genericD2SAPrime);
+"generic_d2_S_A_socle-dimension";
+genericD2SASocle;
+"generic_d2_S_A_standard-monomials";
+kbase(std(genericD2SAPrimary));
+"generic_d2_S_A_one-generator-relations";
+ideal genericD2SARelations = std(eliminate(
+  genericD2SAPrimary,
+  a0*a1*a2*a3*b0*b1*b2*b3*b4*c1*d2*d3
+));
+genericD2SARelations;
+"generic_d2_S_A-is-dual-numbers";
+int genericD2SADualNumbers =
+  sameIdeal(genericD2SARelations,ideal(c2^2));
+genericD2SADualNumbers;
+if (genericD2SADualNumbers != 1)
+{
+  "FAIL: the generic d2 S_A fiber is no longer dual numbers";
+}
+setring r;
+
+if (
+  (genericD3SHilbert != 18)
+  || (genericD3SCHilbert != 290)
+  || (genericD3SAHilbert != 4657)
+  || (genericD3KCHilbert != 1267555)
+  || (genericD3KAHilbert != 1346145)
+  || (genericD2THilbert != 1)
+  || (genericD2SHilbert != 4913)
+  || (genericD2SCHilbert != 289)
+  || (genericD2SAHilbert != 17)
+  || (genericD3SSocle != 2)
+  || (genericD3SCSocle != 2)
+  || (genericD3SASocle != 2)
+  || (genericD3KCSocle != 4)
+  || (genericD3KASocle != 6)
+  || (genericD2TSocle != 1)
+  || (genericD2SSocle != 2)
+  || (genericD2SCSocle != 1)
+  || (genericD2SASocle != 1)
+  || (genericD2SCompleteIntersection != 0)
+  || (genericD2SFourExact != 1)
+  || (genericD2SCPresentationExact != 1)
+  || (genericD2SADualNumbers != 1)
+  || (genericD3SSquareZero != 1)
+  || (genericD3SCPresentationLength != 5)
+  || (genericD3SAPresentationLength != 7)
+  || (genericD3KCPresentationLength != 25)
+  || (genericD3KAPresentationLength != 30)
+)
+{
+  "FAIL: a generic normal-fiber Hilbert vector changed";
+  exit(1);
+}
+"PASS: the coefficient filtration certifies exactly eight associated primes";

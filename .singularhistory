@@ -1,0 +1,6 @@
+ring r=0,(x,y),dp;
+ideal I=x2,y2;
+I=std(I);
+hilb(I);
+hilb(I,1);
+$;

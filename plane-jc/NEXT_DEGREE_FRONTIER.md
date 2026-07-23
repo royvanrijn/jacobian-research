@@ -51,22 +51,90 @@ boundary are documented in
 
 Open work, in dependency order:
 
-1. **Finish the F2 lower-boundary theorem.**  The chain arithmetic, Puiseux
+1. **Exploit the completed `(72,108)` log replay.**  The primary proof yields the
+   smooth-branch rays `(2,1),(3,1),(4,1)`, while the Laurent transformations
+   have longer adapted base ideals `(t,x^4),(t,x^6),(t,x^8)`.  Their residual
+   source chains compile in `4,6,8` blowups, and additive composition proves
+   that all three cases share the order-four eight-blowup graph.  Its
+   `F_4` transition and affine-plane fill give a unimodular `10 x 10` source
+   boundary passing adjunction.  Alternative residue labels are encoded
+   symbolically, and the unselected order-three factor is proved to separate
+   from the common order-four center and the filled divisor.  Target-infinity
+   pole orders are exact on all eight exceptionals.  The full common-graph
+   pole vector has no dicritical component, so at least one additional
+   global cluster is forced.  The first weighted-Wronskian equation now
+   selects a base-order-ten crossing blowup at `E3 intersect E4` followed by
+   ten simple children, and excludes the formerly numerical smooth-`E3`
+   candidate.  In terminal Case 2, two further target-infinity blowups have
+   poles `12,0` and produce a degree-twelve dicritical; the combined intrinsic
+   package passes with remaining self-intersection `29`.  On the final
+   plane-return edge, the top bracket forces `A=a*r^2,C=c*r^3` for a quartic
+   `r`.  The edge alone permits five homogeneous root partitions, and every
+   corresponding intrinsic model passes.  The primary split-factor formula
+   is sharper: it forces `r=(s-beta)^4`.  Selecting the other order-three
+   factor gives the exact adapted transverse parameter and resolves the
+   second blowup with poles `12,0` and degree-twelve residue.  Thus Case 1
+   selects the same 23-component numerical package as Case 2.  The
+   chain-to-boundary translation is complete, but the resulting package is
+   allowed by every current intrinsic gate;
+   see [`FRONTIER_LOG_SCALE_AUDIT.md`](FRONTIER_LOG_SCALE_AUDIT.md).
+   The transformed pair has `[P,Q]=X^2`, so its actual ramification is
+   `K+3H+div(X^2)`, not the boundary-supported `K+3H` representative.
+   The corrected dicritical normal indices are `3` in Case 1 and `5` in
+   Case 2; the total ramification intersection remains `35`.  The exact
+   degree-twelve residue has a priori normalization-cover degree `1,2,4`,
+   with image degrees `12,6,3`.  Case 1 retains all three rows, with
+   degree-29 valuation contributions `3,6,12`; its composition sieve first
+   requires the omitted bands `P:z^-6,...,z^-8` and
+   `Q:z^-5,...,z^-12`, or a proof that they cannot affect the remainder
+   equations.  In Case 2, general
+   polynomial-right-component remainder ideals exclude cover degrees `2`
+   and `4` already from `(J3),(J2)` and the determined part of `(J1)`.
+   The remaining degree-twelve row is also empty: after localization at its
+   forced endpoint `G_12 != 0`, the seven residual `(J1)` compatibility
+   cubics generate the unit ideal, without `(J0)`.  Thus the former
+   contribution `5` and remainder `24` are no longer live rows.  The earlier
+   bottom-equation reduction, writing
+   `H=gcd(C',G')`, `C'=H*c`, `G'=H*g` reduces `(J0),(J1)` to
+   `B=K*c,F=K*g` and
+   `2H(Ag-cE)+K^2(cg'-c'g)=0`, with `deg(K)<=deg(H)+1` and `K=0` or `t|K`.
+   Its initial coefficients force `t|H`, eliminating gcd degree zero.  The
+   maximal gcd degree `7` is also excluded: three coefficients of
+   `remainder(G',C')` plus the terminal `(J0)` coefficient generate the unit
+   ideal over the exact degree-35 field, with no residual `(J1)`
+   compatibility equation.  Its six exact gcd degrees `1,...,6` are now
+   retired as pre-compatibility strata.  The
+   degree-one row is already reduced to the single origin pattern
+   `ord(B),ord(E),ord(G'),ord(F)=(1,2,3,3)`; its only other valuation pattern
+   is excluded by `(J1)`.  After those coefficient checks comes an accounting
+   of the remaining divisorial valuation degrees.
+2. **Finish the F2 lower-boundary theorem.**  The chain arithmetic, Puiseux
    translation, transformed bracket, forced vertices, common-power band, and
    terminal type-I normalization are now exact and machine-readable; see
    [`F2_75_125_DERIVATION.md`](F2_75_125_DERIVATION.md).  What remains is to
    prove the `gamma` branches exhaustive and determine every lower Laurent
    boundary and band through bracket layer 4.  The compiler deliberately
    rejects the partial record.
-2. **Reconcile the `(96,144)` sources.**  Settle the relation between the 2016
-   lower-side exclusion of `(8,28),(8,40)` and the 2017 raw complete-chain row
-   before treating repeated-tail reuse as a live exclusion problem.
-3. **Test reuse only after a new band derivation exists.**  Derive the new
+3. **Retire the excluded `(96,144)` repeated-tail branch.**  The source
+   statements are now reconciled in
+   [`FRONTIER_CLOSING_ATTACKS.md`](FRONTIER_CLOSING_ATTACKS.md).  The 2017
+   table is a necessary over-approximation whose source leaves the
+   lower-corner filter commented out; the 2016 full transition is stated only
+   in a remark.  Reusing the proved common-tail part of the 2022 `(8,32)`
+   calculation gives `q1=d0=4` and reduces the `(8,40)` vertical factor to a
+   cubic.  Every cubic root partition containing a simple root yields the
+   forbidden corner `(8,4)`.  The remaining factor
+   `R=kappa*x^2*y^7*(y-lambda)^3` translates the initial edge to
+   `(8,40)->(8,12)`.  Its maximum complete-chain length is three; even with a
+   permissive superset of possible lower corners, the open-chain counts are
+   `1,6,3,0` and no final corner occurs.  This repeated-tail row is excluded
+   before Laurent compilation.  The other five `(96,144)` rows remain live.
+4. **Test reuse only after a new band derivation exists.**  Derive the new
    curve polynomial `A`, give an explicit base/coordinate map, pass the exact
    cyclic-curve identity check, and then compare the forcing differential,
    primitive support, residual scaling, and gauge/exact class.  Equal coarse
    fingerprints alone are not evidence of reuse.
-4. **Optional engineering simplification.**  Emit one machine-readable report
+5. **Optional engineering simplification.**  Emit one machine-readable report
    per normal-form branch containing provenance, polygons, bands, bracket
    layers, Wronskian data, de Rham certificate, and any reuse certificate.
 
@@ -89,7 +157,7 @@ silently treated as solved.
 | \((90,135)\) | 45; \(2:3\) | \((9,36)\to(17/9,4)\) with \((m,n)=(3,2),(2,3)\); \((9,36)\to(9,24)\to(11/3,8)\); and \((12,33)\to(11/3,8)\), both with \((2,3)\) | four published realizations; their Laurent polygons and coefficient systems remain to be derived | very high | no |
 | \((56,140)\) | 28; \(2:5\) | F11, \((7,21)\to(13/7,3)\) | different approximate-root multiplicities | high | no |
 | \((84,140)\) | 28; \(3:5\) | F9, \((7,21)\to(11/7,2)\) | family companion to the previously excluded \((56,84)\) | medium-to-high; prior \((7,21)\) work may help | no, but older \((7,21)\) reductions may be reusable |
-| \((96,144)\) | 48; \(2:3\) | \((8,40)\to(8,28)\to(11/4,7)\), \((m,n)=(3,2)\); four \((2,3)\) chains from \((12,36)\), through respectively \((12,33)\to(11/3,8)\), \((9,24)\to(11/3,8)\), \((21/4,9)\to(19/4,8)\), and \((21/4,9)\to(12/4,5)\); and \((12,36)\to(12,30)\to(16/3,10)\to(11/6,3)\), \((m,n)=(3,2)\) | six rows in the 2017 table; no Laurent systems derived.  The repeated-tail row must first be reconciled with the 2016 lower-side remark that discards \(B_0=(8,28),B_1=(8,40)\) via the impossible corner \((8,4)\) | source reconciliation first | not unchanged; reuse is presently an architecture experiment, not a live exclusion |
+| \((96,144)\) | 48; \(2:3\) | \((8,40)\to(8,28)\to(11/4,7)\), \((m,n)=(3,2)\); four \((2,3)\) chains from \((12,36)\), through respectively \((12,33)\to(11/3,8)\), \((9,24)\to(11/3,8)\), \((21/4,9)\to(19/4,8)\), and \((21/4,9)\to(12/4,5)\); and \((12,36)\to(12,30)\to(16/3,10)\to(11/6,3)\), \((m,n)=(3,2)\) | The repeated-tail row is excluded: simple-root partitions give `(8,4)`, and the triple-root translation `(8,40)->(8,12)` has no complete chain.  The other five rows still have no Laurent systems. | five high-difficulty rows remain | no |
 | \((108,144)\) | 36; \(3:4\) | \((8,28)\to(7/4,3)\) | same first corner as the audited case but a different final corner and exponent ratio | high | no |
 | \((42,147)\) | 21; \(2:7\) | F7, \((6,15)\to(7/3,4)\) | large degree ratio and approximate-root exponent | high | no |
 | \((63,147)\) | 21; \(3:7\) | F8, \((6,15)\to(8/3,5)\) | companion chain to F7 | high | no |
@@ -132,9 +200,10 @@ the length-two complete chain.  The formal proposition proves the
 impossibility of the relevant class of last lower corners; the application to
 this particular `B_0,B_1` pair is stated in the remark as straightforward.
 
-The two source statements must therefore be reconciled before the row is
-treated as a live frontier case.  It remains a useful synthetic test of a
-source-aware compiler: [`cas/newton_derham_compiler.py`](cas/newton_derham_compiler.py)
-records the five missing band-level inputs and refuses to copy the old
-genus-three block into the new row.  See
-[`NEWTON_DERHAM_COMPILER.md`](NEWTON_DERHAM_COMPILER.md).
+The reconciliation is now complete.  The common tail forces a cubic residual
+factor.  Simple-root partitions give `(8,4)`; the sole triple-root partition
+gives the translated edge `(8,40)->(8,12)`, whose permissive complete-chain
+enumeration has counts `1,6,3,0` and no final corner.  The source-aware
+compiler records the row as pre-excluded and refuses to manufacture a Laurent
+block.  See [`NEWTON_DERHAM_COMPILER.md`](NEWTON_DERHAM_COMPILER.md) and
+[`cas/complete_chain_no_escape.py`](cas/complete_chain_no_escape.py).

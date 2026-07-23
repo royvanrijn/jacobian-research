@@ -1,0 +1,185 @@
+{
+  "format": "cotangent-kernel-excess-frontier-v1",
+  "field_for_identity": "arbitrary field of characteristic not two",
+  "identity": "rank([[A,N^t],[N,0]]) = 2*rank(N) + rank(K^t*A*K), columns(K)=ker(N)",
+  "proof": "choose invertible row and column bases reducing N to diag(I_r,0); congruent block elimination splits off two rank-r hyperbolic blocks and leaves precisely the restriction of A to ker(N)",
+  "specialization_prime": 1000003,
+  "specialization_status": "the block identity is exact; reported kernel-excess values are stable diagnostics at three good-prime points",
+  "profiles": [
+    {
+      "label": "ambient-21",
+      "artifact": "low_complexity_bcw_21_counterexample.json",
+      "dimension": 21,
+      "certified_generic_rank_JH": 18,
+      "sampled_kernel_dimension": 3,
+      "sampled_kernel_excess": 2,
+      "sampled_cotangent_hessian_rank": 38,
+      "samples": [
+        {
+          "seed": 20260723,
+          "rank_JH": 18,
+          "kernel_dimension": 3,
+          "kernel_excess": 2,
+          "cotangent_hessian_rank": 38,
+          "identity_rhs": 38
+        },
+        {
+          "seed": 20260730,
+          "rank_JH": 18,
+          "kernel_dimension": 3,
+          "kernel_excess": 2,
+          "cotangent_hessian_rank": 38,
+          "identity_rhs": 38
+        },
+        {
+          "seed": 20260737,
+          "rank_JH": 18,
+          "kernel_dimension": 3,
+          "kernel_excess": 2,
+          "cotangent_hessian_rank": 38,
+          "identity_rhs": 38
+        }
+      ]
+    },
+    {
+      "label": "index-18",
+      "artifact": "index_reduced_bcw_22_counterexample.json",
+      "dimension": 22,
+      "certified_generic_rank_JH": 18,
+      "sampled_kernel_dimension": 4,
+      "sampled_kernel_excess": 2,
+      "sampled_cotangent_hessian_rank": 38,
+      "samples": [
+        {
+          "seed": 20260723,
+          "rank_JH": 18,
+          "kernel_dimension": 4,
+          "kernel_excess": 2,
+          "cotangent_hessian_rank": 38,
+          "identity_rhs": 38
+        },
+        {
+          "seed": 20260730,
+          "rank_JH": 18,
+          "kernel_dimension": 4,
+          "kernel_excess": 2,
+          "cotangent_hessian_rank": 38,
+          "identity_rhs": 38
+        },
+        {
+          "seed": 20260737,
+          "rank_JH": 18,
+          "kernel_dimension": 4,
+          "kernel_excess": 2,
+          "cotangent_hessian_rank": 38,
+          "identity_rhs": 38
+        }
+      ]
+    },
+    {
+      "label": "rank-17",
+      "artifact": "rank_reduced_bcw_24_counterexample.json",
+      "dimension": 24,
+      "certified_generic_rank_JH": 17,
+      "sampled_kernel_dimension": 7,
+      "sampled_kernel_excess": 4,
+      "sampled_cotangent_hessian_rank": 38,
+      "samples": [
+        {
+          "seed": 20260723,
+          "rank_JH": 17,
+          "kernel_dimension": 7,
+          "kernel_excess": 4,
+          "cotangent_hessian_rank": 38,
+          "identity_rhs": 38
+        },
+        {
+          "seed": 20260730,
+          "rank_JH": 17,
+          "kernel_dimension": 7,
+          "kernel_excess": 4,
+          "cotangent_hessian_rank": 38,
+          "identity_rhs": 38
+        },
+        {
+          "seed": 20260737,
+          "rank_JH": 17,
+          "kernel_dimension": 7,
+          "kernel_excess": 4,
+          "cotangent_hessian_rank": 38,
+          "identity_rhs": 38
+        }
+      ]
+    },
+    {
+      "label": "hessian-rank-37",
+      "artifact": "hessian_rank_reduced_bcw_22_counterexample.json",
+      "dimension": 22,
+      "certified_generic_rank_JH": 18,
+      "sampled_kernel_dimension": 4,
+      "sampled_kernel_excess": 1,
+      "sampled_cotangent_hessian_rank": 37,
+      "samples": [
+        {
+          "seed": 20260723,
+          "rank_JH": 18,
+          "kernel_dimension": 4,
+          "kernel_excess": 1,
+          "cotangent_hessian_rank": 37,
+          "identity_rhs": 37
+        },
+        {
+          "seed": 20260730,
+          "rank_JH": 18,
+          "kernel_dimension": 4,
+          "kernel_excess": 1,
+          "cotangent_hessian_rank": 37,
+          "identity_rhs": 37
+        },
+        {
+          "seed": 20260737,
+          "rank_JH": 18,
+          "kernel_dimension": 4,
+          "kernel_excess": 1,
+          "cotangent_hessian_rank": 37,
+          "identity_rhs": 37
+        }
+      ]
+    }
+  ],
+  "exact_rank_37_excess": {
+    "generic_rank_JH": 18,
+    "generic_cotangent_hessian_rank": 37,
+    "kernel_excess": 1,
+    "exactness_reason": "the two characteristic-zero generic ranks are independently certified, so their difference is exact"
+  },
+  "combined_nine_atom_search": {
+    "artifact": "restricted_bcw_circuit_search_all_w64.json",
+    "terminal_count": 140,
+    "sampled_excess_histogram": {
+      "1": 1,
+      "2": 8,
+      "3": 17,
+      "4": 31,
+      "5": 41,
+      "6": 23,
+      "7": 15,
+      "8": 4
+    },
+    "unique_excess_one_terminal": "qb+x2s",
+    "excess_zero_terminals": 0,
+    "status": "bounded finite-field diagnostic, not a lower bound"
+  },
+  "strict_improvement_targets": {
+    "current_cotangent_hessian_rank": 37,
+    "fixed_rank_18": "kernel excess 0 gives Hessian rank 36; no larger improvement is possible without lowering rank(JH)",
+    "rank_17": "kernel excess at most 2 gives Hessian rank at most 36; the current rank-17 source has excess 4",
+    "cotangent_dimension": "beating quartic dimension 42 requires a cubic source in dimension at most 20"
+  },
+  "rank_index_coupling": {
+    "identity": "a nilpotent matrix of rank r has nilpotency index at most r+1",
+    "proof": "a Jordan block of length nu already contributes nu-1 to the rank",
+    "frontier_consequence": "a positive theorem for all cubic-homogeneous maps of index at most d implies nu_cub>=d+1 and r_cub>=d",
+    "current_saturation": "the rank-17 witness has index 18, so it saturates index=rank+1"
+  }
+}

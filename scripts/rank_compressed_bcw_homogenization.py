@@ -42,6 +42,19 @@ class EssentialQuotient:
     quotient_h: tuple[sp.Poly, ...]
 
 
+@dataclass(frozen=True)
+class EssentialQuotientTower:
+    """Iterate constant-kernel removal until the quotient is a fixed point."""
+
+    stages: tuple[EssentialQuotient, ...]
+    quotient_variables: tuple[sp.Symbol, ...]
+    quotient_h: tuple[sp.Poly, ...]
+
+    @property
+    def total_kernel_dimension(self) -> int:
+        return sum(stage.kernel.cols for stage in self.stages)
+
+
 def monomial_expression(exponents: tuple[int, ...], variables: list[sp.Symbol]) -> sp.Expr:
     return sp.prod(variable**exponent for variable, exponent in zip(variables, exponents))
 
@@ -176,7 +189,8 @@ def verify_parametric_factorization(
     jq = sp.Matrix([poly.as_expr() for poly in quadratic]).jacobian(variables)
     jc = sp.Matrix([poly.as_expr() for poly in c]).jacobian(variables)
     de = sp.Matrix(e_first).jacobian(variables)
-    assert de == sp.eye(n) + t * jq + t**2 * B * jc
+    residual = de - (sp.eye(n) + t * jq + t**2 * B * jc)
+    assert all(sp.expand(entry) == 0 for entry in residual)
 
 
 def rank_compressed_homogeneous_map(
@@ -343,6 +357,33 @@ def constant_kernel_quotient(
         quotient_variables=q,
         quotient_h=quotient_h,
     )
+
+
+def iterated_constant_kernel_quotient(
+    variables: tuple[sp.Symbol, ...],
+    components: tuple[sp.Poly, ...],
+) -> EssentialQuotientTower:
+    """Remove newly exposed constant kernels until none remain.
+
+    A quotient can acquire a new constant kernel even when the first ambient
+    kernel was removed exactly.  Search code must therefore iterate to a
+    fixed point instead of assuming that one quotient pass is terminal.
+    """
+
+    stages: list[EssentialQuotient] = []
+    current_variables = variables
+    current_components = components
+    while True:
+        stage = constant_kernel_quotient(current_variables, current_components)
+        if stage.kernel.cols == 0:
+            return EssentialQuotientTower(
+                stages=tuple(stages),
+                quotient_variables=current_variables,
+                quotient_h=current_components,
+            )
+        stages.append(stage)
+        current_variables = stage.quotient_variables
+        current_components = stage.quotient_h
 
 
 def jacobian_coefficient_matrices(

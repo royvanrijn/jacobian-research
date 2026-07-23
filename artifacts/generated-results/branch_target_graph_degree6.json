@@ -1,0 +1,159 @@
+{
+  "arrangement": {
+    "double_points": {
+      "(0, 1, 1)": [
+        "A=0",
+        "B=C"
+      ],
+      "(1, 0, 1)": [
+        "A=C",
+        "B=0"
+      ],
+      "(1, 1, 0)": [
+        "A=B",
+        "C=0"
+      ]
+    },
+    "triple_points": {
+      "(0, 0, 1)": [
+        "A=0",
+        "A=B",
+        "B=0"
+      ],
+      "(0, 1, 0)": [
+        "A=0",
+        "A=C",
+        "C=0"
+      ],
+      "(1, 0, 0)": [
+        "B=0",
+        "B=C",
+        "C=0"
+      ],
+      "(1, 1, 1)": [
+        "A=B",
+        "A=C",
+        "B=C"
+      ]
+    }
+  },
+  "boundary_adjacency": {
+    "E:(0, 0, 1)": [
+      "L:A=0",
+      "L:A=B",
+      "L:B=0"
+    ],
+    "E:(0, 1, 0)": [
+      "L:A=0",
+      "L:A=C",
+      "L:C=0"
+    ],
+    "E:(1, 0, 0)": [
+      "L:B=0",
+      "L:B=C",
+      "L:C=0"
+    ],
+    "E:(1, 1, 1)": [
+      "L:A=B",
+      "L:A=C",
+      "L:B=C"
+    ],
+    "L:A=0": [
+      "E:(0, 0, 1)",
+      "E:(0, 1, 0)",
+      "L:B=C"
+    ],
+    "L:A=B": [
+      "E:(0, 0, 1)",
+      "E:(1, 1, 1)",
+      "L:C=0"
+    ],
+    "L:A=C": [
+      "E:(0, 1, 0)",
+      "E:(1, 1, 1)",
+      "L:B=0"
+    ],
+    "L:B=0": [
+      "E:(0, 0, 1)",
+      "E:(1, 0, 0)",
+      "L:A=C"
+    ],
+    "L:B=C": [
+      "E:(1, 0, 0)",
+      "E:(1, 1, 1)",
+      "L:A=0"
+    ],
+    "L:C=0": [
+      "E:(0, 1, 0)",
+      "E:(1, 0, 0)",
+      "L:A=B"
+    ]
+  },
+  "boundary_self_intersections": {
+    "E:(0, 0, 1)": -1,
+    "E:(0, 1, 0)": -1,
+    "E:(1, 0, 0)": -1,
+    "E:(1, 1, 1)": -1,
+    "L:A=0": -1,
+    "L:A=B": -1,
+    "L:A=C": -1,
+    "L:B=0": -1,
+    "L:B=C": -1,
+    "L:C=0": -1
+  },
+  "compactifications": {
+    "boundary_curve_count": 10,
+    "boundary_dual_graph": "Petersen graph",
+    "canonical_square": 5,
+    "radial": "Blow up the three coordinate points of P^2",
+    "stable_target": "Blow up the three coordinate points and [1:1:1]",
+    "stable_target_identification": "Mbar_0,5"
+  },
+  "experiment": "complete degree-six stable-target graph",
+  "open_target_moduli": {
+    "coordinates": "[lambda_x:lambda_y:lambda_z] in P^2",
+    "removed_lines": [
+      "A=0",
+      "B=0",
+      "C=0",
+      "A=B",
+      "A=C",
+      "B=C"
+    ]
+  },
+  "source_pullback": {
+    "conclusion": "after the radial modification, blow up the four separated triple-Maxwell branches to obtain the complete stable-target graph",
+    "diagonal_preimages": [
+      [
+        "1",
+        "-3/2",
+        "-1/2"
+      ],
+      [
+        "1",
+        "-3/2",
+        "1/2"
+      ],
+      [
+        "1",
+        "3/2",
+        "-1/2"
+      ],
+      [
+        "1",
+        "3/2",
+        "1/2"
+      ]
+    ],
+    "diagonal_target_point": [
+      1,
+      1,
+      1
+    ],
+    "exact_resonance_ideal_on_critical_chart": [
+      "lambda_x-lambda_y",
+      "lambda_z-lambda_y"
+    ],
+    "leading_map": "[x:y:z] -> [-9/4*x^2:-y^2:-9*z^2]"
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "boundary_divisor_counts": {
+    "4": 3,
+    "5": 10,
+    "6": 25,
+    "7": 56
+  },
+  "building_set": "subsets S of finite target marks with 2<=|S|<=n-2; the omitted mark is infinity",
+  "compatibility": "S subset T, T subset S, or S disjoint T",
+  "degree_five_recovery": {
+    "branch_ratio": "[lambda_1:lambda_2]=[unit*x^3:unit*y^2]",
+    "normalized_graph": "normalized blowup of (x^3,y^2)",
+    "target": "Mbar_0,4=P1"
+  },
+  "degree_six_recovery": {
+    "arrangement_lines": 6,
+    "boundary_divisors": 10,
+    "exceptional_triple_centers": 4,
+    "sample_pullback_ideals": {
+      "01": [
+        "A"
+      ],
+      "012": [
+        "A",
+        "B"
+      ],
+      "013": [
+        "A",
+        "C"
+      ],
+      "02": [
+        "B"
+      ],
+      "023": [
+        "B",
+        "C"
+      ],
+      "03": [
+        "C"
+      ],
+      "12": [
+        "B-A"
+      ],
+      "123": [
+        "B-A",
+        "C-A"
+      ],
+      "13": [
+        "C-A"
+      ],
+      "23": [
+        "C-B"
+      ]
+    }
+  },
+  "expected_zero_strata_formula": "(2*n-5)!!",
+  "experiment": "wonderful pullback of the labelled stable-target graph",
+  "label_equivariance_checks": 152,
+  "pullback_rule": {
+    "consequence": "radial valuation walls are the first layer; residue collisions are later pulled-back diagonal centers in the same building set",
+    "source_model": "normalization of the principal component of the iterated blowups of the pulled-back diagonal ideals I_S",
+    "target_model": "the wonderful compactification Mbar_0,n of the labelled critical-value configuration",
+    "tropical_model": "saturated pullback of the tropical Mbar_0,n tree fan"
+  },
+  "scope": "complete labelled stable-target graph and its nested-set and permutation combinatorics; the recursive resonance atlas separately constructs the polynomial admissible-cover component over it",
+  "verified_mark_counts": [
+    4,
+    7
+  ],
+  "zero_stratum_counts": {
+    "4": 3,
+    "5": 15,
+    "6": 105,
+    "7": 945
+  }
+}

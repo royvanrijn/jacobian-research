@@ -1,0 +1,238 @@
+{
+  "format": "two-real-gmc-remaining-four-weight-v1",
+  "supports_excluded": [
+    [
+      -2,
+      -1,
+      0,
+      1
+    ],
+    [
+      -2,
+      -1,
+      1,
+      2
+    ],
+    [
+      -1,
+      0,
+      1,
+      2
+    ]
+  ],
+  "support_count": 3,
+  "input_chart_count": 20,
+  "representative_ideal_count": 7,
+  "maximum_moment_order": 6,
+  "representative_certificates": [
+    {
+      "representative": "centered_constant_constant",
+      "support_orbit": [
+        [
+          -2,
+          -1,
+          0,
+          1
+        ],
+        [
+          -1,
+          0,
+          1,
+          2
+        ]
+      ],
+      "normalization": "W^2 coefficient and selected weight -1 coefficient normalized to one",
+      "localization_factor": "c*h",
+      "second_moment_elimination": null,
+      "moments_imposed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "original_charts_covered": 4,
+      "exact_reduced_basis_over_QQ": [
+        "1"
+      ]
+    },
+    {
+      "representative": "centered_constant_radial",
+      "support_orbit": [
+        [
+          -2,
+          -1,
+          0,
+          1
+        ],
+        [
+          -1,
+          0,
+          1,
+          2
+        ]
+      ],
+      "normalization": "W^2 coefficient and selected weight -1 coefficient normalized to one",
+      "localization_factor": "d*h",
+      "second_moment_elimination": null,
+      "moments_imposed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "original_charts_covered": 4,
+      "exact_reduced_basis_over_QQ": [
+        "1"
+      ]
+    },
+    {
+      "representative": "centered_radial_constant",
+      "support_orbit": [
+        [
+          -2,
+          -1,
+          0,
+          1
+        ],
+        [
+          -1,
+          0,
+          1,
+          2
+        ]
+      ],
+      "normalization": "W^2 coefficient and selected weight -1 coefficient normalized to one",
+      "localization_factor": "c*h",
+      "second_moment_elimination": null,
+      "moments_imposed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "original_charts_covered": 4,
+      "exact_reduced_basis_over_QQ": [
+        "1"
+      ]
+    },
+    {
+      "representative": "centered_radial_radial",
+      "support_orbit": [
+        [
+          -2,
+          -1,
+          0,
+          1
+        ],
+        [
+          -1,
+          0,
+          1,
+          2
+        ]
+      ],
+      "normalization": "W^2 coefficient and selected weight -1 coefficient normalized to one",
+      "localization_factor": "d*h",
+      "second_moment_elimination": null,
+      "moments_imposed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "original_charts_covered": 4,
+      "exact_reduced_basis_over_QQ": [
+        "1"
+      ]
+    },
+    {
+      "representative": "balanced_constant_constant",
+      "support_orbit": [
+        [
+          -2,
+          -1,
+          1,
+          2
+        ]
+      ],
+      "normalization": "W^2 coefficient and selected weight -1 coefficient normalized to one",
+      "localization_factor": "2*a*c**2 + 6*a*c*d + c**2 + 2*c*d",
+      "second_moment_elimination": "e = -a*c - 3*a*d - c/2 - d",
+      "moments_imposed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "original_charts_covered": 1,
+      "exact_reduced_basis_over_QQ": [
+        "1"
+      ]
+    },
+    {
+      "representative": "balanced_constant_radial",
+      "support_orbit": [
+        [
+          -2,
+          -1,
+          1,
+          2
+        ]
+      ],
+      "normalization": "W^2 coefficient and selected weight -1 coefficient normalized to one",
+      "localization_factor": "2*a*c*d + 6*a*d**2 + c*d + 2*d**2",
+      "second_moment_elimination": "e = -a*c - 3*a*d - c/2 - d",
+      "moments_imposed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "original_charts_covered": 2,
+      "exact_reduced_basis_over_QQ": [
+        "1"
+      ]
+    },
+    {
+      "representative": "balanced_radial_radial",
+      "support_orbit": [
+        [
+          -2,
+          -1,
+          1,
+          2
+        ]
+      ],
+      "normalization": "W^2 coefficient and selected weight -1 coefficient normalized to one",
+      "localization_factor": "b*c*d + 2*b*d**2 + 2*c*d + 6*d**2",
+      "second_moment_elimination": "e = -b*c/2 - b*d - c - 3*d",
+      "moments_imposed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "original_charts_covered": 1,
+      "exact_reduced_basis_over_QQ": [
+        "1"
+      ]
+    }
+  ],
+  "conclusion": "no total-degree-three pure-moment-zero polynomial has exactly four nonzero rotational weights containing both signs",
+  "combined_cubic_frontier": "a cubic GMC(2) counterexample must have at least five nonzero rotational weights",
+  "scope": "the five-, six-, and seven-weight cubic strata remain open"
+}

@@ -297,25 +297,27 @@ The 2017 table contains the chain
  (8,40)\longrightarrow(8,28)\longrightarrow(11/4,7)
 \]
 
-as a raw length-two complete-chain row.  Before treating it as a live reuse
-test, a source-level conflict must be resolved: the 2016 lower-side paper says
-that `B_0=(8,28), B_1=(8,40)` leads to the impossible last lower corner
-`(8,4)` and can be discarded.  The compiler therefore records the row as
-incomplete and possibly pre-excluded.
+as a raw length-two complete-chain row.  The common-tail
+divisibility calculation forces `q1=d0=4` and a residual cubic vertical
+factor.  The two root partitions containing a simple root yield the forbidden
+last lower corner `(8,4)`.  The only remaining row is
 
-If the row survives that reconciliation, the next work item is to perform the
-new first descent `(8,40)->(8,28)` and record:
+```text
+R=kappa*x^2*y^7*(y-lambda)^3.
+```
+
+Translating that root gives the edge `(8,40)->(8,12)`.  Its complete-chain
+length is at most three, and the permissive exact enumeration has open counts
+`1,6,3,0` with no final corner.  Thus this repeated-tail row is excluded
+before the following reuse data need to be recorded:
 
 - the Laurent coordinate change and exact band supports at `(8,28)`;
 - the leading pair `(a,b)` and right-hand monomial `R`;
 - which coefficients have already been fixed by the added predecessor;
 - the residual diagonal scaling weights.
 
-Only after these data are known can one determine whether the old genus-three
-block is literally inherited, inherited with prescribed principal parts, or
-replaced by a different character on the same curve.  The other five
-published `(96,144)` chains require separate band derivations and cannot be
-eliminated by success of this one test.
+The other five published `(96,144)` chains require separate band derivations
+and are not eliminated by this no-escape result.
 
 ### `(75,125)`
 

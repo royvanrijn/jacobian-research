@@ -1,0 +1,264 @@
+{
+  "distinction": {
+    "actual_inertia_test": "intersect the candidate diagonal with cover automorphisms preserving every source-root label",
+    "candidate_diagonal_on_one_branch": "mu_lcm(indices)",
+    "conclusion": "full radial chain matching gives trivial normalized labelled inertia; Maxwell square tails leave diagonal mu_2",
+    "normalization_branches": "product(indices)/lcm(indices)"
+  },
+  "experiment": "degree-six stack inertia audit",
+  "maxwell_types": {
+    "pairwise": {
+      "colliding_branch_values": 2,
+      "normalization_branches": 2,
+      "normalized_labelled_inertia": "mu_2",
+      "normalized_labelled_inertia_order": 2,
+      "quadratic_square_tails": 2,
+      "reason": "all colliding square tails admit deck flips and their diagonal subgroup stabilizes one normalized sign-ratio branch",
+      "source_node_sign_group_order": 4
+    },
+    "triple": {
+      "colliding_branch_values": 3,
+      "normalization_branches": 4,
+      "normalized_labelled_inertia": "mu_2",
+      "normalized_labelled_inertia_order": 2,
+      "quadratic_square_tails": 3,
+      "reason": "all colliding square tails admit deck flips and their diagonal subgroup stabilizes one normalized sign-ratio branch",
+      "source_node_sign_group_order": 8
+    }
+  },
+  "normalization_rule": "for source-node indices e_j over one target node, normalization has product(e_j)/lcm(e_j) branches and diagonal inertia mu_lcm(e_j) on each branch",
+  "radial_types": {
+    "xyz": {
+      "anchor_rule": "full cycle matching between the anchored zero screen and rigid stationary root makes every nontrivial connector sign change at least one simultaneous normalized branch",
+      "connector_sign_group_before_normalized_lift": "(mu_2)^0",
+      "connector_sign_group_order": 1,
+      "node_index_two_counts": [
+        3
+      ],
+      "node_kummer_branches": [
+        4
+      ],
+      "normalized_labelled_inertia": "trivial",
+      "normalized_labelled_inertia_order": 1,
+      "target_node_count": 1,
+      "total_kummer_branches": 4
+    },
+    "xy|z": {
+      "anchor_rule": "full cycle matching between the anchored zero screen and rigid stationary root makes every nontrivial connector sign change at least one simultaneous normalized branch",
+      "connector_sign_group_before_normalized_lift": "(mu_2)^1",
+      "connector_sign_group_order": 2,
+      "node_index_two_counts": [
+        3,
+        1
+      ],
+      "node_kummer_branches": [
+        4,
+        1
+      ],
+      "normalized_labelled_inertia": "trivial",
+      "normalized_labelled_inertia_order": 1,
+      "target_node_count": 2,
+      "total_kummer_branches": 4
+    },
+    "xz|y": {
+      "anchor_rule": "full cycle matching between the anchored zero screen and rigid stationary root makes every nontrivial connector sign change at least one simultaneous normalized branch",
+      "connector_sign_group_before_normalized_lift": "(mu_2)^1",
+      "connector_sign_group_order": 2,
+      "node_index_two_counts": [
+        3,
+        1
+      ],
+      "node_kummer_branches": [
+        4,
+        1
+      ],
+      "normalized_labelled_inertia": "trivial",
+      "normalized_labelled_inertia_order": 1,
+      "target_node_count": 2,
+      "total_kummer_branches": 4
+    },
+    "x|yz": {
+      "anchor_rule": "full cycle matching between the anchored zero screen and rigid stationary root makes every nontrivial connector sign change at least one simultaneous normalized branch",
+      "connector_sign_group_before_normalized_lift": "(mu_2)^2",
+      "connector_sign_group_order": 4,
+      "node_index_two_counts": [
+        3,
+        2
+      ],
+      "node_kummer_branches": [
+        4,
+        2
+      ],
+      "normalized_labelled_inertia": "trivial",
+      "normalized_labelled_inertia_order": 1,
+      "target_node_count": 2,
+      "total_kummer_branches": 8
+    },
+    "x|y|z": {
+      "anchor_rule": "full cycle matching between the anchored zero screen and rigid stationary root makes every nontrivial connector sign change at least one simultaneous normalized branch",
+      "connector_sign_group_before_normalized_lift": "(mu_2)^3",
+      "connector_sign_group_order": 8,
+      "node_index_two_counts": [
+        3,
+        2,
+        1
+      ],
+      "node_kummer_branches": [
+        4,
+        2,
+        1
+      ],
+      "normalized_labelled_inertia": "trivial",
+      "normalized_labelled_inertia_order": 1,
+      "target_node_count": 3,
+      "total_kummer_branches": 8
+    },
+    "x|z|y": {
+      "anchor_rule": "full cycle matching between the anchored zero screen and rigid stationary root makes every nontrivial connector sign change at least one simultaneous normalized branch",
+      "connector_sign_group_before_normalized_lift": "(mu_2)^3",
+      "connector_sign_group_order": 8,
+      "node_index_two_counts": [
+        3,
+        2,
+        1
+      ],
+      "node_kummer_branches": [
+        4,
+        2,
+        1
+      ],
+      "normalized_labelled_inertia": "trivial",
+      "normalized_labelled_inertia_order": 1,
+      "target_node_count": 3,
+      "total_kummer_branches": 8
+    },
+    "yz|x": {
+      "anchor_rule": "full cycle matching between the anchored zero screen and rigid stationary root makes every nontrivial connector sign change at least one simultaneous normalized branch",
+      "connector_sign_group_before_normalized_lift": "(mu_2)^1",
+      "connector_sign_group_order": 2,
+      "node_index_two_counts": [
+        3,
+        1
+      ],
+      "node_kummer_branches": [
+        4,
+        1
+      ],
+      "normalized_labelled_inertia": "trivial",
+      "normalized_labelled_inertia_order": 1,
+      "target_node_count": 2,
+      "total_kummer_branches": 4
+    },
+    "y|xz": {
+      "anchor_rule": "full cycle matching between the anchored zero screen and rigid stationary root makes every nontrivial connector sign change at least one simultaneous normalized branch",
+      "connector_sign_group_before_normalized_lift": "(mu_2)^2",
+      "connector_sign_group_order": 4,
+      "node_index_two_counts": [
+        3,
+        2
+      ],
+      "node_kummer_branches": [
+        4,
+        2
+      ],
+      "normalized_labelled_inertia": "trivial",
+      "normalized_labelled_inertia_order": 1,
+      "target_node_count": 2,
+      "total_kummer_branches": 8
+    },
+    "y|x|z": {
+      "anchor_rule": "full cycle matching between the anchored zero screen and rigid stationary root makes every nontrivial connector sign change at least one simultaneous normalized branch",
+      "connector_sign_group_before_normalized_lift": "(mu_2)^3",
+      "connector_sign_group_order": 8,
+      "node_index_two_counts": [
+        3,
+        2,
+        1
+      ],
+      "node_kummer_branches": [
+        4,
+        2,
+        1
+      ],
+      "normalized_labelled_inertia": "trivial",
+      "normalized_labelled_inertia_order": 1,
+      "target_node_count": 3,
+      "total_kummer_branches": 8
+    },
+    "y|z|x": {
+      "anchor_rule": "full cycle matching between the anchored zero screen and rigid stationary root makes every nontrivial connector sign change at least one simultaneous normalized branch",
+      "connector_sign_group_before_normalized_lift": "(mu_2)^3",
+      "connector_sign_group_order": 8,
+      "node_index_two_counts": [
+        3,
+        2,
+        1
+      ],
+      "node_kummer_branches": [
+        4,
+        2,
+        1
+      ],
+      "normalized_labelled_inertia": "trivial",
+      "normalized_labelled_inertia_order": 1,
+      "target_node_count": 3,
+      "total_kummer_branches": 8
+    },
+    "z|xy": {
+      "anchor_rule": "full cycle matching between the anchored zero screen and rigid stationary root makes every nontrivial connector sign change at least one simultaneous normalized branch",
+      "connector_sign_group_before_normalized_lift": "(mu_2)^2",
+      "connector_sign_group_order": 4,
+      "node_index_two_counts": [
+        3,
+        2
+      ],
+      "node_kummer_branches": [
+        4,
+        2
+      ],
+      "normalized_labelled_inertia": "trivial",
+      "normalized_labelled_inertia_order": 1,
+      "target_node_count": 2,
+      "total_kummer_branches": 8
+    },
+    "z|x|y": {
+      "anchor_rule": "full cycle matching between the anchored zero screen and rigid stationary root makes every nontrivial connector sign change at least one simultaneous normalized branch",
+      "connector_sign_group_before_normalized_lift": "(mu_2)^3",
+      "connector_sign_group_order": 8,
+      "node_index_two_counts": [
+        3,
+        2,
+        1
+      ],
+      "node_kummer_branches": [
+        4,
+        2,
+        1
+      ],
+      "normalized_labelled_inertia": "trivial",
+      "normalized_labelled_inertia_order": 1,
+      "target_node_count": 3,
+      "total_kummer_branches": 8
+    },
+    "z|y|x": {
+      "anchor_rule": "full cycle matching between the anchored zero screen and rigid stationary root makes every nontrivial connector sign change at least one simultaneous normalized branch",
+      "connector_sign_group_before_normalized_lift": "(mu_2)^3",
+      "connector_sign_group_order": 8,
+      "node_index_two_counts": [
+        3,
+        2,
+        1
+      ],
+      "node_kummer_branches": [
+        4,
+        2,
+        1
+      ],
+      "normalized_labelled_inertia": "trivial",
+      "normalized_labelled_inertia_order": 1,
+      "target_node_count": 3,
+      "total_kummer_branches": 8
+    }
+  },
+  "scope": "normalization branches and node-sign cover automorphisms in the fully source-root-labelled degree-six atlas; full root-label quotient inertia is separate"
+}

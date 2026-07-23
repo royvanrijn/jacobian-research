@@ -166,24 +166,37 @@ The 2017 Section 7 table contains
 
 That table supplies no Laurent coordinate change, band supports, leading
 Wronskian, fixed predecessor coefficients, or residual scaling.  The compiler
-records all five items as missing and refuses to assign the old genus-three
-block to the new chain.
+does not assign the old genus-three block to the new chain.
 
-There is also a source-level issue that must be reconciled first.  The 2016
+There was also a source-level issue.  The 2016
 paper *The two-dimensional Jacobian conjecture and the lower side of the
 Newton polygon*, in the remark following Proposition 3.29, says that
 `B_0=(8,28), B_1=(8,40)` leads to the impossible last lower corner `(8,4)`
 and can be discarded.  The impossibility of points of the relevant form is
 proved in Proposition 3.29, but the application to this `B_0,B_1` pair is
 stated as a straightforward remark.  The later table nevertheless retains
-the length-two row.
+the length-two row because its program is a necessary over-approximation and
+the Proposition-3.29 filter is commented out in the published source.
 
-Consequently `(96,144)` is currently useful as a compiler-reuse thought
-experiment, but it should not be called the first live frontier case until
-the two source statements are reconciled.  No `(96,144)` Laurent system can
-be faithfully derived from the table alone.
+The common tail can nevertheless be reconciled exactly.  Reusing the
+divisibility calculation proved for the companion `(8,32)` row gives
+`q1=d0=4`, hence
 
-If the row survives that reconciliation, the required reuse certificate is
+\[
+ \ell_{1,0}(P)=R^{4m},\qquad R=\kappa x^2y^7p(y),\quad \deg p=3.
+\]
+
+Every root partition containing a simple root produces the forbidden corner
+`(8,4)`.  Thus `(2,1)` and `(1,1,1)` are removed, leaving only
+`R=kappa*x^2*y^7*(y-lambda)^3`.  Translating it gives
+`(8,40)->(8,12)`.  The maximum complete-chain length is three; a permissive
+enumeration containing every true possible lower corner has open counts
+`1,6,3,0` and no final corner.  Hence this repeated-tail row is source-excluded
+before Laurent compilation.  The exact audits are
+[`cas/frontier_96_144_source_audit.py`](cas/frontier_96_144_source_audit.py)
+and [`cas/complete_chain_no_escape.py`](cas/complete_chain_no_escape.py).
+
+For any of the other five `(96,144)` rows, the required reuse certificate is
 a base map `phi`, an equivariant curve-family isomorphism, and a gauge/exact
 comparison
 

@@ -1,0 +1,91 @@
+{
+  "format": "cubic-index-three-inverse-tree-obstruction-v1",
+  "field": "characteristic zero",
+  "inverse_tree_counts_by_degree": {
+    "3": 1,
+    "5": 1,
+    "7": 2,
+    "9": 4,
+    "11": 8
+  },
+  "degree_11_tree_coefficients": {
+    "((((()))))": "-1",
+    "(((())),())": "-1",
+    "(((()),()))": "-1",
+    "((((),())))": "-1/2",
+    "((()),(()))": "-1/2",
+    "((()),(),())": "-1/2",
+    "(((),()),())": "-1/2",
+    "(((),(),()))": "-1/6"
+  },
+  "universal_relation_counts_by_degree": {
+    "7": 1,
+    "9": 2,
+    "11": 7
+  },
+  "universal_degree_11_relations": [
+    {
+      "(((())),())": "1",
+      "(((()),()))": "1",
+      "((((),())))": "1"
+    },
+    {
+      "((((()))))": "1",
+      "(((()),()))": "1",
+      "((()),(()))": "1"
+    },
+    {
+      "(((())),())": "1"
+    },
+    {
+      "((((()))))": "1",
+      "(((())),())": "2",
+      "(((()),()))": "3",
+      "((((),())))": "1",
+      "((()),(()))": "1",
+      "((()),(),())": "1",
+      "(((),()),())": "2",
+      "(((),(),()))": "1"
+    },
+    {
+      "((((()))))": "1",
+      "(((()),()))": "1",
+      "((((),())))": "1"
+    },
+    {
+      "((((()))))": "1",
+      "(((())),())": "1",
+      "(((()),()))": "1",
+      "((((),())))": "1"
+    },
+    {
+      "((((()))))": "1"
+    }
+  ],
+  "degree_11_lies_in_relation_span": false,
+  "degree_11_quotient": {
+    "tree_space_dimension": 8,
+    "relation_rank": 5,
+    "quotient_dimension": 3,
+    "pivot_tree_indices": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "target_normal_form": {
+      "((()),(),())": "-1/2",
+      "(((),()),())": "-1/2",
+      "(((),(),()))": "-1/6"
+    },
+    "target_normal_form_formula": {
+      "C(N(H),H,H)": "-1/2",
+      "B(B(H,H),H)": "-1/2",
+      "N(C(H,H,H))": "-1/6"
+    }
+  },
+  "relation_combination_coefficients": [],
+  "interpretation": "if true, K_11 vanishes under the displayed universal closure; otherwise its displayed quotient class is the first unresolved inverse covariant and additional polarized identities are needed",
+  "triangular_model_check": "all tree pieces through degree 11 agree with the exact degree-nine inverse"
+}

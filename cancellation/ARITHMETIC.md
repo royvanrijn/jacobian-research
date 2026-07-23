@@ -311,12 +311,23 @@ theorem in the other direction.  If `m>=2` and the interval
 contains two primes, the two corresponding translated Newton polygons force
 two different and incompatible factor-degree pairs.  Hence the polynomial is
 irreducible.  The prime number theorem shows that, for every fixed `m`, this
-criterion holds for all sufficiently large `r`.  An explicit prime-interval
-theorem of Rohrbach--Weis, combined with finite exact certificates below
-degree `118`, proves the complete columns
+criterion holds for all sufficiently large `r`.  More generally, an abstract
+prime-window transfer theorem shows that a one-prime bound `(x,x+H(x)]`
+implies irreducibility whenever
+`H(mr)+H(mr+H(mr))<=r`.  Baker--Harman--Pintz therefore give an absolute
+threshold `K_0` for the polynomial-scale region
 
 \[
- \boxed{1\le m\le6,\qquad r\ge1.}                    \tag{10d}
+ mr\ge K_0,\qquad r\ge5(mr)^{21/40}.                 \tag{10d}
+\]
+
+Dusart's explicit interval theorem gives the fully effective curved region
+`mr>=89693`, `m Delta(mr)<=1`, with `Delta` defined in the detailed note.
+Combined with finite exact prime enumeration and modular certificates, it
+also proves the complete columns
+
+\[
+ \boxed{1\le m\le1000,\qquad r\ge1.}                 \tag{10e}
 \]
 
 More precisely, if a counterexample with `m>=2` exists, then `N` is composite
@@ -337,8 +348,9 @@ diagonal in each of the following cases:
    of `B_(k,r)`;
 5. the interval `(mr,(m+1)r+1)` contains at least two primes, by incompatible
    translated Newton polygons; and
-6. every pair with `mr<=30`, together with every finite endpoint
-   `2<=m<=6`, `mr<118`, by exact modular factor-degree certificates; and
+6. every pair with `mr<=30`, together with all 11024 residual endpoint pairs
+   needed to complete `2<=m<=1000`, by exact modular factor-degree
+   certificates; and
 7. every odd square-family pair `(2a^2-1,1)` with `3<=a<=23` odd, by exact
    Frobenius degree sieves.
 
@@ -423,14 +435,14 @@ local-separation obstacles are in
 ## 4. Known boundary and verification
 
 Uniform results establish separability, the specialized square criterion,
-the six complete columns `1<=m<=6`, and the additional diagonal
+the 1000 complete columns `1<=m<=1000`, and the additional diagonal
 irreducibility criteria above.  The geometric-derivative literature further
 establishes density-one irreducibility on every fixed-`r` row, with the
 quantitative bounds in (10a), and the extra `r=1` families (10b).  Exact
-finite certificates establish irreducibility for `mr<=30`, for the finite
-endpoints `2<=m<=6`, `mr<118`, and for the odd square series through
-`m=1057`.  The complete natural Galois group is known for `mr<=30`, together
-with every `A_(2a^2-1)` for odd `3<=a<=23`.
+finite certificates establish irreducibility for `mr<=30`, for the 11024
+residual endpoints needed to complete `1<=m<=1000`, and for the odd square
+series through `m=1057`.  The complete natural Galois group is known for
+`mr<=30`, together with every `A_(2a^2-1)` for odd `3<=a<=23`.
 
 Open: prove (10) in the remaining cases and answer the large-group question
 (12).  Minimal fields of definition of the collision fibers are a separate

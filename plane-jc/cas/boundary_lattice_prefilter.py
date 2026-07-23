@@ -16,6 +16,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Sequence
@@ -45,6 +46,158 @@ class LocalizationInvariants:
             and self.picard_free_rank == 0
             and not self.picard_torsion
         )
+
+
+@dataclass(frozen=True)
+class BoundaryConfiguration:
+    """A complete boundary in a fixed total-transform Picard basis.
+
+    ``class_matrix`` has boundary-prime classes as columns.  ``intersections``
+    records the unordered pairs of boundary primes which currently meet.
+    A one-parent blowup is understood to take place at a smooth point of that
+    component away from all recorded boundary crossings.
+    """
+
+    class_matrix: sp.Matrix
+    names: tuple[str, ...]
+    intersections: frozenset[frozenset[str]]
+
+    def __post_init__(self) -> None:
+        if self.class_matrix.cols != len(self.names):
+            raise ValueError("boundary names must index the class-matrix columns")
+        if len(set(self.names)) != len(self.names):
+            raise ValueError("boundary-prime names must be distinct")
+        known = set(self.names)
+        for edge in self.intersections:
+            if len(edge) != 2 or not set(edge) <= known:
+                raise ValueError(f"invalid boundary intersection {set(edge)}")
+
+    def blow_up(
+        self,
+        center: Sequence[str],
+        exceptional: str | None = None,
+    ) -> "BoundaryConfiguration":
+        """Blow up a smooth boundary point with one or two boundary parents."""
+
+        parents = tuple(center)
+        if not 1 <= len(parents) <= 2:
+            raise ValueError("a boundary center meets one or two primes")
+        if len(set(parents)) != len(parents):
+            raise ValueError("a boundary center cannot repeat a prime")
+        missing = [name for name in parents if name not in self.names]
+        if missing:
+            raise ValueError(f"unknown boundary components {missing}")
+        crossing = frozenset(parents)
+        if len(parents) == 2 and crossing not in self.intersections:
+            raise ValueError(f"components {parents} do not meet in the current boundary")
+
+        name = exceptional or f"E{self.class_matrix.rows}"
+        if name in self.names:
+            raise ValueError(f"exceptional name {name!r} is already in use")
+
+        old = self.class_matrix
+        matrix = sp.zeros(old.rows + 1, old.cols + 1)
+        matrix[: old.rows, : old.cols] = old
+        for parent in parents:
+            matrix[old.rows, self.names.index(parent)] = -1
+        matrix[old.rows, old.cols] = 1
+
+        intersections = set(self.intersections)
+        if len(parents) == 2:
+            intersections.remove(crossing)
+        for parent in parents:
+            intersections.add(frozenset((parent, name)))
+        return BoundaryConfiguration(
+            class_matrix=matrix,
+            names=self.names + (name,),
+            intersections=frozenset(intersections),
+        )
+
+    def fill_boundary_component(self, name: str) -> "BoundaryConfiguration":
+        """Put one temporary boundary divisor back into the open surface."""
+
+        if name not in self.names:
+            raise ValueError(f"unknown boundary component {name!r}")
+        index = self.names.index(name)
+        matrix = self.class_matrix.copy()
+        matrix.col_del(index)
+        return BoundaryConfiguration(
+            class_matrix=matrix,
+            names=tuple(
+                boundary_name
+                for boundary_name in self.names
+                if boundary_name != name
+            ),
+            intersections=frozenset(
+                edge for edge in self.intersections if name not in edge
+            ),
+        )
+
+
+def standard_completion(chart: str) -> tuple[BoundaryConfiguration, sp.Matrix, int]:
+    """Return a standard completion, its intersection form, and unit rank.
+
+    Supported charts are ``A2`` compactified by ``P^2``, ``GmA1``
+    compactified by ``P^1 x P^1``, and ``GmA1_Fn`` compactified by the
+    Hirzebruch surface whose retained infinity section has self-intersection
+    ``n``.
+    """
+
+    if chart == "A2":
+        return (
+            BoundaryConfiguration(sp.Matrix([[1]]), ("L",), frozenset()),
+            sp.Matrix([[1]]),
+            0,
+        )
+    if chart == "GmA1":
+        names = ("X0", "Xinf", "Yinf")
+        intersections = frozenset(
+            (frozenset(("X0", "Yinf")), frozenset(("Xinf", "Yinf")))
+        )
+        return (
+            BoundaryConfiguration(
+                sp.Matrix([[1, 1, 0], [0, 0, 1]]),
+                names,
+                intersections,
+            ),
+            sp.Matrix([[0, 1], [1, 0]]),
+            1,
+        )
+    hirzebruch = re.fullmatch(r"GmA1_F([0-9]+)", chart)
+    if hirzebruch:
+        degree = int(hirzebruch.group(1))
+        names = ("X0", "Xinf", "Yinf")
+        intersections = frozenset(
+            (frozenset(("X0", "Yinf")), frozenset(("Xinf", "Yinf")))
+        )
+        return (
+            BoundaryConfiguration(
+                sp.Matrix([[1, 1, 0], [0, 0, 1]]),
+                names,
+                intersections,
+            ),
+            sp.Matrix([[0, 1], [1, degree]]),
+            1,
+        )
+    raise ValueError(
+        "chart must be 'A2', 'GmA1', or 'GmA1_Fn' for n>=0"
+    )
+
+
+def boundary_intersection_matrix(
+    configuration: BoundaryConfiguration,
+    initial_intersection_form: sp.Matrix,
+) -> sp.Matrix:
+    """Compute the full boundary intersection matrix after point blowups."""
+
+    initial_rank = initial_intersection_form.rows
+    if initial_intersection_form.cols != initial_rank:
+        raise ValueError("the initial intersection form must be square")
+    exceptional_count = configuration.class_matrix.rows - initial_rank
+    if exceptional_count < 0:
+        raise ValueError("the class matrix is smaller than its initial completion")
+    form = sp.diag(initial_intersection_form, *([-1] * exceptional_count))
+    return configuration.class_matrix.T * form * configuration.class_matrix
 
 
 def localization_invariants(
@@ -87,38 +240,13 @@ def boundary_blowup_matrix(
     final strict transforms followed by exceptional primes in creation order.
     """
 
-    components: dict[str, list[int]] = {"L": [1]}
-    order = ["L"]
-    intersections: set[frozenset[str]] = set()
+    configuration, _, _ = standard_completion("A2")
     for index, raw_center in enumerate(centers, start=1):
-        center = tuple(raw_center)
-        if not 1 <= len(center) <= 2:
-            raise ValueError(f"blowup {index}: a boundary center meets one or two primes")
-        if len(set(center)) != len(center):
-            raise ValueError(f"blowup {index}: repeated component in center")
-        missing = [name for name in center if name not in components]
-        if missing:
-            raise ValueError(f"blowup {index}: unknown components {missing}")
-        if len(center) == 2 and frozenset(center) not in intersections:
-            raise ValueError(
-                f"blowup {index}: components {center} do not meet in the current boundary"
-            )
-
-        for vector in components.values():
-            vector.append(0)
-        for name in center:
-            components[name][-1] -= 1
-
-        exceptional = f"E{index}"
-        components[exceptional] = [0] * index + [1]
-        order.append(exceptional)
-        if len(center) == 2:
-            intersections.remove(frozenset(center))
-        for name in center:
-            intersections.add(frozenset((name, exceptional)))
-
-    matrix = sp.Matrix.hstack(*(sp.Matrix(components[name]) for name in order))
-    return matrix, tuple(order)
+        try:
+            configuration = configuration.blow_up(raw_center, f"E{index}")
+        except ValueError as error:
+            raise ValueError(f"blowup {index}: {error}") from error
+    return configuration.class_matrix, configuration.names
 
 
 def _format_report(name: str, matrix: sp.Matrix, expected_unit_rank: int) -> str:
@@ -153,6 +281,9 @@ def run_regressions() -> None:
     marked_n3 = sp.Matrix([[2, 1], [1, 1]])
     wrong_multiplicity = sp.Matrix([[2, 0], [-2, 1]])
     laurent_chart = sp.Matrix([[1, 1, 0], [0, 0, 1]])
+    hirzebruch, hirzebruch_form, hirzebruch_units = standard_completion(
+        "GmA1_F4"
+    )
 
     for matrix in (base, once, crossing, marked_n3):
         assert localization_invariants(matrix.tolist()).passes(expected_unit_rank=0)
@@ -160,12 +291,30 @@ def run_regressions() -> None:
     assert not localization_invariants(wrong_multiplicity.tolist()).passes(0)
     assert localization_invariants(laurent_chart.tolist()).passes(expected_unit_rank=1)
     assert not localization_invariants(laurent_chart.tolist()).passes(0)
+    assert hirzebruch.class_matrix == laurent_chart
+    assert hirzebruch_form == sp.Matrix([[0, 1], [1, 4]])
+    assert hirzebruch_units == 1
+    assert boundary_intersection_matrix(
+        hirzebruch, hirzebruch_form
+    ) == sp.Matrix(
+        [
+            [0, 0, 1],
+            [0, 0, 1],
+            [1, 1, 4],
+        ]
+    )
+    filled_hirzebruch = hirzebruch.fill_boundary_component("X0")
+    assert filled_hirzebruch.names == ("Xinf", "Yinf")
+    assert localization_invariants(
+        filled_hirzebruch.class_matrix.tolist()
+    ).passes(expected_unit_rank=0)
 
     print(_format_report("A2 after two boundary blowups", crossing, 0))
     print(_format_report("marked-point n=2 matrix", marked_n2, 0))
     print(_format_report("marked-point n=3 matrix", marked_n3, 0))
     print(_format_report("incorrect doubled boundary class", wrong_multiplicity, 0))
     print(_format_report("Gm x A1 standard completion", laurent_chart, 1))
+    print(_format_report("Gm x A1 Hirzebruch F4 completion", hirzebruch.class_matrix, 1))
     print("PASS boundary-lattice regressions: chart-aware localization invariants agree")
 
 

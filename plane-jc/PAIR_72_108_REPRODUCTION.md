@@ -462,9 +462,36 @@ These observations compress the computation but do not yet replace it by an
 intersection, conductor, semigroup, or lattice contradiction.  In particular,
 the admissible chain already passes the known determinant and divisibility
 tests; the surviving obstruction depends on coefficient moduli over a
-degree-five field.  No Smith-normal-form obstruction of the boundary
-intersection matrix, no incompatible ramification/residue-degree equation,
-and no conductor inequality recovering the hard identity has been found.
+degree-five field.
+
+The log-boundary audit now narrows the missing conceptual step further.  One
+must correct the final transformed bracket by
+`R_actual=K+3H+div(X^2)`; the two terminal dicriticals then have normal
+indices three and five, not zero ramification.  Their exact degree-twelve
+residues have a priori normalization-cover degree `1,2,4`.  General
+polynomial-decomposition remainder ideals exclude degrees `2,4` in Case 2
+without using `(J0)` or the `(J1)` compatibility equations, so that residue
+is birational at that intermediate stage.  The remaining degree-twelve row
+is now empty as well: the seven residual `(J1)` compatibility cubics,
+localized at the forced endpoint `G_12 != 0`, generate the unit ideal over
+the exact degree-35 field without `(J0)`.  Separately, `(J0)` and `(J1)`
+reduce through
+`H=gcd(C',G')`, and the initial coefficients force `t|H`; the degree-one gcd
+row has only one possible origin-order pattern.  At the opposite end, three
+low coefficients of `remainder(G',C')` and the terminal `(J0)` coefficient
+generate an exact unit ideal, excluding gcd degree seven without a residual
+`(J1)` compatibility equation.  These reductions are proved and checked in
+[FRONTIER_LOG_SCALE_AUDIT.md](FRONTIER_LOG_SCALE_AUDIT.md).  The Case-2
+endpoint certificate is a smaller coefficient contradiction, not yet a
+pure ramification/residue-degree replacement.
+
+The analogous Case-1 decomposition sieve requires data not present in the
+archived necessary truncation: the full polygons continue from the recorded
+`P:z^-5,Q:z^-4` bands down to `P:z^-8,Q:z^-12`, and those terms enter the
+alternate-chart residue.  They must be derived, not silently set to zero.
+
+No Smith-normal-form obstruction of the boundary intersection matrix and no
+conductor inequality recovering the hard identity has been found.
 
 The promising repository-original question is whether the order-seven grading
 and the two approximate-root filtrations define incompatible value semigroups.

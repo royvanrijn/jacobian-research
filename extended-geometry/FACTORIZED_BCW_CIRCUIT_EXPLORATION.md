@@ -213,7 +213,8 @@ degree-reduced candidate `K=X+Q+C` is scored by the mandatory pipeline in the
 [constant-kernel quotient theorem](../verified/CONSTANT_KERNEL_QUOTIENT.md):
 
 1. form the rank-compressed homogenization of dimension `n+rank(C)+1`;
-2. quotient the constant kernel of its homogeneous `JH` to a fixed point;
+2. iterate constant-kernel quotients of its homogeneous `JH` to a fixed
+   point—a first quotient can expose a new constant kernel;
 3. verify separation of the projected collision and compute invariant-row
    module diagnostics;
 4. compare the final quotient dimension.
@@ -241,3 +242,9 @@ every nonzero affine vector field `Ax+b` tangent to all fibers of `H`.
 It prunes the most direct affine-symmetry route to a nonlinear skew product,
 without constituting a general nonlinear indecomposability theorem.
 No minimality claim is made.
+
+The subsequent circuit-level search implements this fixed-point rule and
+shows that it matters: its two certified winners have kernel-dimension towers
+`(4,1)` and `(4,2)`.  The latter is a 24-variable cubic-homogeneous collision
+of exact generic Jacobian rank 17 and index 18.  See the
+[restricted-minima frontier](RESTRICTED_MINIMA_FRONTIER.md).

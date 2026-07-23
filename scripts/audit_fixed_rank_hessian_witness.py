@@ -229,7 +229,12 @@ def singular_polynomial(poly: SparsePoly) -> str:
     return "+".join(terms).replace("+-", "-") or "0"
 
 
-def exact_singular_certificate(matrix: SparseMatrix, point: list[int]) -> tuple[int, int, bool]:
+def exact_singular_certificate(
+    matrix: SparseMatrix,
+    point: list[int],
+    *,
+    expected_kernel_rank: int = 4,
+) -> tuple[int, int, bool]:
     executable = shutil.which("Singular")
     if executable is None:
         raise RuntimeError("Singular is required for the exact rank-upper-bound certificate")
@@ -276,7 +281,8 @@ def exact_singular_certificate(matrix: SparseMatrix, point: list[int]) -> tuple[
     return (
         int(lines[syzygy_marker + 1]),
         int(lines[ranks_marker + 1]),
-        "PRODUCT_ZERO" in lines and int(lines[ranks_marker + 2]) == 4,
+        "PRODUCT_ZERO" in lines
+        and int(lines[ranks_marker + 2]) == expected_kernel_rank,
     )
 
 

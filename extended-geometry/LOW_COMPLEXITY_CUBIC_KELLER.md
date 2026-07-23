@@ -148,23 +148,35 @@ Run the bounded search with
 .venv/bin/python scripts/search_low_rank_bcw.py --width 24 --max-steps 17
 ```
 
-## 5. Consequence for the next attack
+## 5. Circuit-level successor
 
 The current architecture carries a length-19 generic Jordan chain through
 all stored reductions.  The dimensions 21, 22, and 24 differ mainly by zero
 directions and triangular quotient data; optimizing the final basis cannot
 shorten that chain.
 
-The useful next search must therefore alter the stable reduction itself.  In
-particular, it should score partial circuit states by a sampled power-rank
-profile before terminal homogenization and allow balanced polynomial-DAG
-rewrites, rather than only shared monomial-factor cancellation.  A candidate
-with sampled index below 19 is more significant than another one-variable
-dimension improvement and should be frozen immediately for exact checking.
+That search has now been implemented.  Exposing the two polynomial gates
+`A=w+xy`, `Q=s+xy^2` and applying the multi-term target shear
+`F_1 <- F_1-12 Q(2+3A)` before monomial cleanup produces a different
+22-variable cubic-homogeneous collision.  Exact computation gives
+
+\[
+ \operatorname{rank}JH=18,\qquad
+ (JH)^{17}\ne0,\qquad (JH)^{18}=0.
+\]
+
+Thus the circuit change lowers the certified upper bound for the minimum
+nilpotency index from 19 to 18.  It does not lower the rank or the best
+ambient dimension.  A second two-atom circuit gives a 24-variable collision
+with exact generic rank 17 and the same exact index 18, lowering the rank
+upper bound as well.  The constructions, exact polynomial-power
+certificates, and search architecture are in the
+[restricted-minima frontier](RESTRICTED_MINIMA_FRONTIER.md).
 
 For context, the rank-two cubic-homogeneous Keller case is known invertible
 ([de Bondt--Sun](https://arxiv.org/abs/1803.05551)), while an inverse formula
 is known for homogeneous power-linear maps with `(JH)^3=0`
 ([de Bondt--Yan](https://arxiv.org/abs/1302.5864)).  These results concern
-different restricted classes.  They make rank 18/index 19 a baseline, not a
-counterexample near either theorem boundary.
+different restricted classes.  The exact frontiers are now
+`3<=r_cub<=17` and `3<=nu_cub<=18`; the full cubic-homogeneous index-three
+case is not settled by the power-linear theorem.

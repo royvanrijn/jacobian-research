@@ -60,16 +60,35 @@ def assert_clean_dickson_open(degree: int) -> None:
     assert sp.gcd(endpoint, deleted).degree() < endpoint.degree()
 
 
-def canonical_residuals(polynomial: sp.Expr, a: int, b: int) -> list[sp.Expr]:
-    """Pull the canonical C_(a,b) residuals back to ``polynomial``."""
+def canonical_reconstruction(
+    polynomial: sp.Expr,
+    a: int,
+    b: int,
+) -> tuple[sp.Poly, sp.Poly, dict[sp.Symbol, sp.Expr], set[int]]:
+    """Triangularly reconstruct the unique normalized ``a o b`` factors.
 
+    All coefficients used in the reconstruction have degree at least two.
+    Thus the reconstructed coefficient of ``W`` depends only on the Hessian
+    coefficient vector and is the canonical linear lift of that vector on
+    the composition locus.
+    """
+
+    assert a >= 2 and b >= 2
     degree = a * b
     source = sp.Poly(sp.expand(polynomial), W)
+    assert source.degree() == degree and source.LC() == 1
     inner = {j: sp.symbols(f"b{a}{b}_{j}") for j in range(1, b)}
     outer = {j: sp.symbols(f"a{a}{b}_{j}") for j in range(1, a)}
     B = W**b + sum(inner[j] * W**j for j in inner)
     A = Z**a + sum(outer[j] * Z**j for j in outer)
     composition = sp.Poly(sp.expand(A.subs(Z, B)), W)
+
+    def solve_linear(equation: sp.Expr, variable: sp.Symbol) -> sp.Expr:
+        """Solve a reconstruction equation without multivariate factoring."""
+
+        linear = sp.Poly(equation, variable)
+        assert linear.degree() == 1
+        return sp.cancel(-linear.nth(0) / linear.nth(1))
 
     reconstruction: dict[sp.Symbol, sp.Expr] = {}
     used_degrees = set()
@@ -79,7 +98,7 @@ def canonical_residuals(polynomial: sp.Expr, a: int, b: int) -> list[sp.Expr]:
             composition.nth(coefficient_degree).subs(reconstruction)
             - source.nth(coefficient_degree)
         )
-        reconstruction[inner[j]] = sp.factor(sp.solve(equation, inner[j])[0])
+        reconstruction[inner[j]] = solve_linear(equation, inner[j])
         used_degrees.add(coefficient_degree)
     for j in range(a - 1, 0, -1):
         coefficient_degree = j * b
@@ -87,23 +106,66 @@ def canonical_residuals(polynomial: sp.Expr, a: int, b: int) -> list[sp.Expr]:
             composition.nth(coefficient_degree).subs(reconstruction)
             - source.nth(coefficient_degree)
         )
-        reconstruction[outer[j]] = sp.factor(sp.solve(equation, outer[j])[0])
+        reconstruction[outer[j]] = solve_linear(equation, outer[j])
         used_degrees.add(coefficient_degree)
 
+    assert min(used_degrees) >= 2
+    return source, composition, reconstruction, used_degrees
+
+
+def canonical_linear_lift(
+    polynomial: sp.Expr,
+    a: int,
+    b: int,
+) -> sp.Expr:
+    """Return the forced linear coefficient of the canonical ``a o b`` lift."""
+
+    _, composition, reconstruction, _ = canonical_reconstruction(
+        polynomial, a, b
+    )
+    return sp.factor(composition.nth(1).subs(reconstruction))
+
+
+def canonical_synchronization_defect(
+    polynomial: sp.Expr,
+    a: int,
+    b: int,
+) -> sp.Expr:
+    """Compare the canonical Hessian lift with the polynomial's linear term."""
+
+    source, _, _, _ = canonical_reconstruction(polynomial, a, b)
+    return sp.factor(canonical_linear_lift(polynomial, a, b) - source.nth(1))
+
+
+def canonical_residuals(
+    polynomial: sp.Expr,
+    a: int,
+    b: int,
+    parameters: tuple[sp.Symbol, ...] = PARAMETERS,
+    factor_output: bool = True,
+    minimum_coefficient_degree: int = 2,
+) -> list[sp.Expr]:
+    """Pull the canonical C_(a,b) residuals back to ``polynomial``."""
+
+    degree = a * b
+    source, composition, reconstruction, used_degrees = canonical_reconstruction(
+        polynomial, a, b
+    )
     residuals = []
-    for coefficient_degree in range(2, degree):
+    assert minimum_coefficient_degree in (1, 2)
+    for coefficient_degree in range(minimum_coefficient_degree, degree):
         if coefficient_degree in used_degrees:
             continue
-        residual = sp.factor(
-            sp.together(
-                composition.nth(coefficient_degree).subs(reconstruction)
-                - source.nth(coefficient_degree)
-            ).as_numer_denom()[0]
-        )
+        residual = sp.together(
+            composition.nth(coefficient_degree).subs(reconstruction)
+            - source.nth(coefficient_degree)
+        ).as_numer_denom()[0]
+        if factor_output:
+            residual = sp.factor(residual)
         if residual == 0:
             continue
-        primitive = sp.primitive(sp.Poly(residual, *PARAMETERS))[1].as_expr()
-        residuals.append(sp.factor(primitive))
+        primitive = sp.primitive(sp.Poly(residual, *parameters))[1].as_expr()
+        residuals.append(sp.factor(primitive) if factor_output else primitive)
     return residuals
 
 

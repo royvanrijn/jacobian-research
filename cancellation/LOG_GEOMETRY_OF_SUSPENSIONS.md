@@ -1377,6 +1377,15 @@ replace an ad hoc contact label by a standard log-intersection construction.
 The realistic theorem now has a proved plane statement, a proved marked
 cancellation lift, and a separate weighted lift problem.
 
+The central intrinsic formulation and its exact degree-three branch collapse
+are stated in
+[`MINIMAL_BOUNDARY_CLASSIFICATION.md`](MINIMAL_BOUNDARY_CLASSIFICATION.md).
+The present section supplies the log-geometric proof skeleton for that
+conjecture.
+The one-place cubic core marking is made automatic, and the remaining
+two-place defect is isolated, in
+[`CUBIC_MARKING_EXTRACTION.md`](CUBIC_MARKING_EXTRACTION.md).
+
 ### Proved core statement
 
 A coordinate-preserving one-boundary plane core with normalized critical

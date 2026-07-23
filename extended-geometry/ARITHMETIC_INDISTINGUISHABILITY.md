@@ -8,6 +8,13 @@ genuinely Gassmann version: degree-seven Davenport polynomials give
 nonisomorphic, arithmetically equivalent vertical fibers after seed
 normalization and Hilbert specialization.
 
+The later
+[global Sunada theorem](GLOBAL_SUNADA_KELLER_COVERS.md) retains the Davenport
+parameter `T`, computes the common branch surface, and simultaneously lifts
+the two covers to stably inequivalent relative weighted Keller maps after a
+finite tangent-mark base change.  The fixed-`T` treatment below remains the
+number-field specialization of that result.
+
 The distinction matters.  The degree-five incidence covers below are
 isomorphic after an affine change of the pencil target, even though the
 weighted Keller maps are not.  The degree-seven covers are not isomorphic;
@@ -346,6 +353,12 @@ certify all weighted clean-open conditions, and search a Hilbert parameter
 `z` whose specialized group has order `168`.  Factorization at a few good
 primes can certify the required Frobenius classes; a resolvent or direct
 Galois-group computation then completes the certificate.
+
+For the global cover, rather than one number-field specialization, see
+[the relative Keller construction](GLOBAL_SUNADA_KELLER_COVERS.md).  It
+proves equality of every good fiber zeta function over the common
+two-dimensional target.  It deliberately does not claim an absolute
+three-dimensional Cox-ledger suspension.
 
 ## References
 

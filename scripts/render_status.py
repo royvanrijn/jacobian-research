@@ -27,6 +27,8 @@ ACTIVE_OPEN = {
     "OP-LR-II",
     "OP-LR-NE",
     "OP-RITT",
+    "OP-RMIN",
+    "OP-SUSP",
 }
 
 
@@ -124,6 +126,7 @@ def render(index: dict) -> str:
 
     sections = [
         ("Audited high-risk claims", [x for x in entries if x["kind"] == "theorem" and x["state"] == "partial" and x["priority"] == "reference"], False),
+        ("Completed reference theorems", [x for x in entries if x["kind"] == "theorem" and x["state"] == "proved" and x["priority"] == "reference"], False),
         ("Derived corollaries", [x for x in entries if x["kind"] == "corollary" and x["state"] in {"proved", "partial"}], False),
         ("Examples and regressions", [x for x in entries if x["kind"] == "example" and x["state"] in {"proved", "partial"}], True),
         ("External reproductions", [x for x in entries if x["kind"] == "reproduction" and x["state"] in {"proved", "partial"}], False),

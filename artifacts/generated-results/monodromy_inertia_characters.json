@@ -1,0 +1,98 @@
+{
+  "anchored_inertia_occurrences": {
+    "1": 43614
+  },
+  "collision_nodes_checked": 43614,
+  "connector_checks": {
+    "2": {
+      "one_sheet_anchored_order": 1,
+      "unanchored_deck_order": 2
+    },
+    "3": {
+      "one_sheet_anchored_order": 1,
+      "unanchored_deck_order": 3
+    },
+    "4": {
+      "one_sheet_anchored_order": 1,
+      "unanchored_deck_order": 4
+    },
+    "5": {
+      "one_sheet_anchored_order": 1,
+      "unanchored_deck_order": 5
+    },
+    "6": {
+      "one_sheet_anchored_order": 1,
+      "unanchored_deck_order": 6
+    },
+    "7": {
+      "one_sheet_anchored_order": 1,
+      "unanchored_deck_order": 7
+    },
+    "8": {
+      "one_sheet_anchored_order": 1,
+      "unanchored_deck_order": 8
+    }
+  },
+  "consequence": "local radial and simple-resonance character tables are determined by monodromy centralizers; the recursive resonance checker performs the required full-chain matching and verifies radial order product_j L_j/M_j, which can be nontrivial for unequal multiplicities",
+  "degree_range": [
+    2,
+    8
+  ],
+  "degree_six": {
+    "pairwise_maxwell_unanchored": 2,
+    "pairwise_same_partition_anchored": 1,
+    "triple_maxwell_unanchored": 2,
+    "triple_same_partition_anchored": 1,
+    "two_edge_caustic": 1
+  },
+  "distinct_node_partitions": 28,
+  "experiment": "monodromy centralizers and labelled node inertia",
+  "node_partition_occurrences": {
+    "1+1": 1,
+    "1+1+1": 3,
+    "1+1+1+1": 16,
+    "1+1+1+1+1": 125,
+    "1+1+1+1+1+1": 1296,
+    "1+1+1+1+2": 6480,
+    "1+1+1+2": 500,
+    "1+1+1+3": 6480,
+    "1+1+2": 48,
+    "1+1+2+2": 6480,
+    "1+1+3": 450,
+    "1+1+4": 5760,
+    "1+2": 6,
+    "1+2+2": 300,
+    "1+2+3": 6480,
+    "1+3": 36,
+    "1+4": 320,
+    "1+5": 3750,
+    "2": 1,
+    "2+2": 12,
+    "2+2+2": 720,
+    "2+3": 180,
+    "2+4": 1920,
+    "3": 3,
+    "3+3": 810,
+    "4": 16,
+    "5": 125,
+    "6": 1296
+  },
+  "rules": {
+    "power_connector": "an unanchored k-cycle connector has cyclic deck group mu_k; one labelled sheet on that connector kills it directly",
+    "resonance_node": "only unanchored size-two forest components contribute phases; intersect their flips with the diagonal mu_lcm",
+    "simple_branch_component": "a connected k-sheet transposition tree has deck centralizer mu_2 for k=2 and trivial centralizer for k>=3",
+    "zero_flag_anchor": "if the target zero flag lies on the bubble, the fully labelled regular zero fiber kills every quadratic flip"
+  },
+  "scope": "deck and node inertia for radial connectors and simple finite branch resonance components; higher non-simple branch profiles use the same centralizer-character algorithm but are not exhausted here",
+  "simultaneous_inertia": {
+    "independent_pair_triple_maxwell": 4,
+    "off_diagonal_flip_rejected": 1,
+    "one_flip_coupled_across_two_nodes": 2,
+    "rule": "compose local character tables with multiplicity, then require the phase segment at every target node to lie in its diagonal mu_lcm"
+  },
+  "tree_centralizer_checks": 1441,
+  "unanchored_inertia_occurrences": {
+    "1": 22407,
+    "2": 21207
+  }
+}

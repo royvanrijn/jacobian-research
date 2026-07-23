@@ -1,0 +1,23 @@
+{
+  "degree_six_instances": {
+    "central": "W^2*(W-1)^2*(W-3)^2",
+    "cyclic_square_tail": "W^2",
+    "quadratic_cluster_tail": "W*(W-1)"
+  },
+  "degrees_checked": [
+    1,
+    7
+  ],
+  "divisor_profiles_checked": 2024,
+  "experiment": "genus-zero source-vertex two-fiber rigidity",
+  "modular_consequence": "once the source curve and inverse-image divisors of target flags are fixed, there is no residual vertexwise Hurwitz-class choice; the recursive resonance atlas separately constructs that flag-complete enhancement and proves contraction compatibility",
+  "permutation_checks": 2512,
+  "reconstruction": {
+    "formula": "f(W)=c*product(W-a_i)^(m_i)/product(W-b_j)^(n_j), with the degree difference recording the orders at infinity",
+    "input": "two disjoint effective degree-d divisors D_0 and D_infinity on a fixed P1 source component",
+    "normalization": "one source point over a third target flag fixes c; the rest of that third fiber is then an existence/compatibility test",
+    "uniqueness": "two maps with the same zero and pole divisors have constant ratio"
+  },
+  "scope": "componentwise reconstruction on genus-zero source curves; it does not construct the source tree or its target-flag pullback divisors over every wonderful boundary stratum",
+  "third_flag_checks": 2024
+}

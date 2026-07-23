@@ -1,0 +1,205 @@
+{
+  "codimension_two_inertia_audit": {
+    "conclusion": "all codimension-two boundary crossings have exactly the product inertia predicted by the Maxwell divisor roots",
+    "pair_triple": {
+      "constraint_rank": 3,
+      "deck_sign_variables": [
+        "c_x",
+        "c_y",
+        "t_z",
+        "o_x",
+        "o_y"
+      ],
+      "inertia": "(mu_2)^2",
+      "kernel_rank": 2
+    },
+    "radial_maxwell": {
+      "constraint_rank": 2,
+      "deck_sign_variables": [
+        "radial_connector",
+        "maxwell_tail_1",
+        "maxwell_tail_2"
+      ],
+      "inertia": "mu_2",
+      "kernel_rank": 1
+    }
+  },
+  "conclusion": "the labelled ACV graph on this chart is the iterated second-root construction along the four Maxwell boundary divisors; radial Kummer saturation is already carried by the normalized branch graph",
+  "experiment": "degree-six Maxwell-boundary root-stack descent",
+  "face_rule": "specialization to an intersection adds the root generator of each Maxwell boundary divisor containing the stratum",
+  "local_root_chart": {
+    "atlas": "Spec k[[s]]",
+    "coarse_parameter": "tau=s^2",
+    "inertia_action": "mu_2 acts by s -> -s",
+    "interpretation": "the diagonal deck flip of all square tails over one Maxwell target node"
+  },
+  "maxwell_divisors": [
+    "M:xy",
+    "M:xz",
+    "M:yz",
+    "M:xyz"
+  ],
+  "maxwell_quotient_orbits": [
+    {
+      "cluster_label_stabilizer_order": 2,
+      "orbit_size": 3,
+      "representative": "M:xy",
+      "root_inertia": "mu_2"
+    },
+    {
+      "cluster_label_stabilizer_order": 6,
+      "orbit_size": 1,
+      "representative": "M:xyz",
+      "root_inertia": "mu_2"
+    },
+    {
+      "cluster_label_stabilizer_order": 2,
+      "orbit_size": 3,
+      "representative": "M:xy&M:xyz",
+      "root_inertia": "(mu_2)^2"
+    }
+  ],
+  "maxwell_strata": [
+    {
+      "inertia": "mu_2",
+      "inertia_rank": 1,
+      "normalization_branches": 2,
+      "present_divisors": [
+        "M:xy"
+      ],
+      "root_generators": [
+        "M:xy"
+      ],
+      "stratum": "M:xy"
+    },
+    {
+      "inertia": "mu_2",
+      "inertia_rank": 1,
+      "normalization_branches": 2,
+      "present_divisors": [
+        "M:xz"
+      ],
+      "root_generators": [
+        "M:xz"
+      ],
+      "stratum": "M:xz"
+    },
+    {
+      "inertia": "mu_2",
+      "inertia_rank": 1,
+      "normalization_branches": 2,
+      "present_divisors": [
+        "M:yz"
+      ],
+      "root_generators": [
+        "M:yz"
+      ],
+      "stratum": "M:yz"
+    },
+    {
+      "inertia": "mu_2",
+      "inertia_rank": 1,
+      "normalization_branches": 4,
+      "present_divisors": [
+        "M:xyz"
+      ],
+      "root_generators": [
+        "M:xyz"
+      ],
+      "stratum": "M:xyz"
+    },
+    {
+      "inertia": "(mu_2)^2",
+      "inertia_rank": 2,
+      "normalization_branches": 8,
+      "present_divisors": [
+        "M:xy",
+        "M:xyz"
+      ],
+      "root_generators": [
+        "M:xy",
+        "M:xyz"
+      ],
+      "stratum": "M:xy&M:xyz"
+    },
+    {
+      "inertia": "(mu_2)^2",
+      "inertia_rank": 2,
+      "normalization_branches": 8,
+      "present_divisors": [
+        "M:xyz",
+        "M:xz"
+      ],
+      "root_generators": [
+        "M:xyz",
+        "M:xz"
+      ],
+      "stratum": "M:xyz&M:xz"
+    },
+    {
+      "inertia": "(mu_2)^2",
+      "inertia_rank": 2,
+      "normalization_branches": 8,
+      "present_divisors": [
+        "M:xyz",
+        "M:yz"
+      ],
+      "root_generators": [
+        "M:xyz",
+        "M:yz"
+      ],
+      "stratum": "M:xyz&M:yz"
+    }
+  ],
+  "pair_root_rule": "forgetting the order inside each of the three source-root pairs adds the separate label quotient (S_2)^3 semidirect S_3; it is not part of the Maxwell node-root inertia",
+  "radial_quotient_orbits": [
+    {
+      "label_stabilizer_order": 6,
+      "normalized_labelled_node_inertia": "trivial",
+      "orbit_size": 1,
+      "representative": "xyz"
+    },
+    {
+      "label_stabilizer_order": 2,
+      "normalized_labelled_node_inertia": "trivial",
+      "orbit_size": 3,
+      "representative": "xy|z"
+    },
+    {
+      "label_stabilizer_order": 2,
+      "normalized_labelled_node_inertia": "trivial",
+      "orbit_size": 3,
+      "representative": "x|yz"
+    },
+    {
+      "label_stabilizer_order": 1,
+      "normalized_labelled_node_inertia": "trivial",
+      "orbit_size": 6,
+      "representative": "x|y|z"
+    }
+  ],
+  "radial_rule": "all thirteen fully source-root-labelled radial lifts have trivial node inertia because full-chain cycle matching makes every nontrivial connector sign change a normalized branch",
+  "scope": "local completed charts, all divisorial and codimension-two inertia, boundary incidence, face maps, and S_3 descent in the labelled (2,2,2) chart; the identification with the ACV graph additionally uses ACV smoothness, the coarse comparison, and the bottom-up tame stack theorem; gluing other root partitions under S_6 remains open",
+  "symmetric_group_rule": "S_3 permutes the three pairwise Maxwell roots and fixes the triple-Maxwell root",
+  "transverse_order_audit": {
+    "pairwise_maxwell": {
+      "branch_difference": "2*a*d+d^2 with a a unit",
+      "conclusion": "s^2=tau requires one second-root stack",
+      "order": 1,
+      "transverse_parameter": "d"
+    },
+    "radial": {
+      "conclusion": "source smoothing root already lies on B_6",
+      "order_in_root_scale": 2,
+      "target_smoothing": "tau=t^2*unit"
+    },
+    "triple_maxwell": {
+      "blowup_difference_ideal": [
+        "rho",
+        "rho*u"
+      ],
+      "conclusion": "s^2=tau requires one second root of D_xyz",
+      "exceptional_normal_order": 1
+    }
+  }
+}

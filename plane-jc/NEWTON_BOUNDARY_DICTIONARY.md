@@ -43,20 +43,41 @@ whereas the boundary theorem eliminates one architecture in every degree.
 
 ## Boundary-valuation research tests
 
-The following are open tests, not results:
+The source-side gluing test for `(72,108)` is complete.  The three adapted
+base ideals compile into one source graph, the Wronskian selects the actual
+terminal cluster, and both terminal cases give complete 23-component
+packages.  They pass the intrinsic `A^2` gates.  This proves that a source
+boundary tree, even with `Q,k,p`, is not a strong enough classification
+object.
 
-1. Build a log resolution realizing the \((8,28)\to(11/4,7)\) chain and
-   compute its complete boundary-class and intersection matrices using the
-   chart-aware [boundary-lattice prefilter](BOUNDARY_LATTICE_PREFILTER.md).
-   The published corner divisibility tests suggest Smith normal form alone
-   will not contradict existence.
-2. Compute the value semigroups of the two sign branches after the forced
-   affine relation.  Test whether the order-seven grading forces a missing
-   conductor value.
-3. Interpret the degree-five subfield as moduli of residue coefficients on a
-   dicritical component and ask whether two approximate-root filtrations give
-   incompatible ramification indices or differents.
-4. Search for a determinant identity whose expansion is the hard membership
-   certificate.  No such determinant is currently known.
-5. Compare residue degrees and boundary covering degrees only after a target
-   compactification is fixed; monodromy language is premature before then.
+The open tests must use a map-decorated package:
+
+1. Recover the omitted lower Case-1 bands before running the general
+   polynomial-right-component sieve on its alternate-chart residue.  The
+   archive stops at `P:z^-5,Q:z^-4`, while the polygons continue to
+   `P:z^-8,Q:z^-12`; guessed zero coefficients are not valid.  The same
+   sieve already excludes Case-2 cover degrees `2,4`.
+2. Retire the Case-2 target-resolution branch.  Its forced endpoint
+   `G_12 != 0` is incompatible with the seven residual `(J1)` equations:
+   their localization is the unit ideal before `(J0)`.
+3. Add the three-section boundary linear series only to Case-1 survivors.
+   For reference, on the retired Case-2 degree-one gcd row,
+   the forced Pluecker weights are `3` at the affine critical point and `13`
+   at infinity, leaving exactly `14`.  At the opposite end, an exact
+   four-equation unit certificate excludes gcd degree `7`, leaving degrees
+   `1,...,6`.
+4. Compute the localized second Chern class of the logarithmic differential
+   from its generic and nodal Smith profiles.  This is the next invariant
+   after the determinant divisor.
+5. Search for a determinant or localized-Chern identity whose expansion is
+   the hard membership certificate.  No such identity is currently known.
+
+The executable order and kill criteria are in
+[FRONTIER_CLOSING_ATTACKS.md](FRONTIER_CLOSING_ATTACKS.md).
+
+Separately, the entire geometric reduced weighted-tangent three-layer
+support box has now been classified.  It has the cubic tangent-pencil
+closure and two explicit degenerate components `C=0` and `A=0`; see
+[POISSON_SQUARE_RIGIDITY.md](POISSON_SQUARE_RIGIDITY.md).  Only the
+nonreduced structure at component intersections remains a separate input in
+a Newton application; the generic component multiplicities are `2,3,1`.

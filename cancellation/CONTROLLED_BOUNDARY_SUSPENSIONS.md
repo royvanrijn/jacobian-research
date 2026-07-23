@@ -284,5 +284,26 @@ affine-modification problem.  That is the point at which this pathway reaches
 diminishing returns unless a new structural theorem or a surviving low-degree
 example supplies additional leverage.
 
+The first target-ledger example now exists after leaving affine space:
+the [three-linear-factor Cox ledger](../extended-geometry/COX_LEDGER_THREE_FACTOR.md)
+keeps its rank-one boundary unit and cancels it with one primitive coordinate,
+giving a constant-Jacobian finite etale morphism between affine fourfold
+boundary complements.  Its reciprocal coordinate does not extend across the
+collision divisor, so it does not solve the polynomial `A^4` chart problem.
+The [all-arity extension](../extended-geometry/COX_LEDGER_LINEAR_FACTORS.md)
+constructs the corresponding separated ledger for every `s>=3` and shows
+that the unit-rank dimension bound is false without the separate-character
+reconstruction requirement.
+In the first arity, the
+[oriented cubic target chart](../extended-geometry/ORIENTED_CUBIC_COX_CHART.md)
+absorbs the primitive discriminant character polynomially, extends across
+one collision divisor, and leaves the other two ordered collision branches
+as distinct dicritical divisors.
+
 The exact determinant identities and bounded exponent audit are checked by
 [`verify_controlled_boundary_suspensions.py`](../scripts/verify_controlled_boundary_suspensions.py).
+The later
+[minimal-boundary classification note](MINIMAL_BOUNDARY_CLASSIFICATION.md)
+incorporates the saturated-link, boundary-monotonicity, and reciprocal-branch
+advances and is now the canonical statement of the open classification
+problem.

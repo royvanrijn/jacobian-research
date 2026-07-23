@@ -1,0 +1,73 @@
+{
+  "cluster_count_range": [
+    1,
+    4
+  ],
+  "cluster_profiles_checked": 780,
+  "component_rule": {
+    "after_active_scale": "mu degree-one identity strands",
+    "at_active_scale": "one degree-mu local polynomial tail, reconstructed from its root divisor and the mu-fold outer-node fiber",
+    "before_active_scale": "one degree-mu power connector, with both node fibers mu-fold"
+  },
+  "consequence": "the harmonic source tree, component degrees, local rational maps, and saturated node-branch counts are canonical on every radial ordered-scale stratum; full-chain radial inertia is product_j L_j/M_j; the recursive resonance atlas separately constructs all residue-resonance refinements and contractions",
+  "distinct_radial_inertia_orders": 81,
+  "experiment": "general radial admissible-source atlas",
+  "label_permutations_checked": 15805,
+  "maximum_radial_inertia_order": 3000,
+  "multiplicity_range": [
+    2,
+    6
+  ],
+  "node_rule": "at a radial node, an inactive multiplicity-mu cluster contributes one index mu and an active cluster contributes mu indices 1",
+  "nontrivial_radial_inertia_types": 42158,
+  "ordered_scale_type_counts": {
+    "1": 1,
+    "2": 3,
+    "3": 13,
+    "4": 75
+  },
+  "ordered_scale_types_checked": 48580,
+  "radial_inertia_rule": "for ordered blocks B_j, order is product_j L_j/M_j, where M_j is the lcm on B_j and L_j is the lcm on the suffix from B_j",
+  "scope": "radial source combinatorics and vertex maps for labelled clusters; nonradial smoothing and the full stack comparison are verified by the separate recursive resonance atlas",
+  "target_bubbles_checked": 149630,
+  "target_nodes_checked": 149630,
+  "unequal_multiplicity_example": {
+    "multiplicities": [
+      2,
+      3,
+      4
+    ],
+    "normalization_branch_counts": [
+      2,
+      1,
+      1
+    ],
+    "radial_inertia_factors": [
+      6,
+      4,
+      1
+    ],
+    "radial_inertia_order": 24,
+    "strict_node_indices": [
+      [
+        2,
+        3,
+        4
+      ],
+      [
+        1,
+        1,
+        3,
+        4
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        1,
+        4
+      ]
+    ]
+  }
+}

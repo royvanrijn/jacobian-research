@@ -1,16 +1,49 @@
 # Fixed-rank symmetric/Hessian frontier
 
-## Computed baseline
+## Improved rank endpoint
 
-The homogeneous quartic Hessian-nilpotent witness in 42 variables has
+The rank-directed circuit search now gives a homogeneous quartic
+Hessian-nilpotent Vanishing counterexample in 44 variables with
 
 \[
- \boxed{\operatorname{rank}_{\mathbb C(u,v)}\operatorname{Hess}P=38}.
+ \boxed{\operatorname{rank}_{\mathbb C(u,v)}\operatorname{Hess}P=37}.
 \]
 
-This is the first invariant to optimize.  Dimension 42 substantially
-overstates neither the generic Hessian rank nor a hidden low-rank phenomenon:
-the generic corank is only four.
+The separate 42-variable witness remains smaller in ambient dimension and
+has exact Hessian rank 38.  Rank and dimension are therefore attained by
+different witnesses:
+
+| objective | quartic dimension | exact Hessian rank |
+|---|---:|---:|
+| smallest known homogeneous HN-VC witness | 42 | 38 |
+| smallest known Hessian rank | 44 | 37 |
+
+For the new source, the cubic circuit exposes the `qb` and `x2s` atoms,
+performs twenty shared-factor cleanups, rank-compresses a cubic-output space
+of dimension eight, and removes constant kernels of dimensions five and one.
+The resulting cubic-homogeneous collision has dimension 22, exact generic
+Jacobian rank 18, and exact polynomial nilpotency index 18.
+
+Its cotangent Hessian has block ranks
+
+\[
+ \operatorname{rank}JH=18,\qquad
+ \operatorname{rank}\sum_i y_i\operatorname{Hess}H_i=16,\qquad
+ \operatorname{rank}\operatorname{Hess}(y^TH)=37.             \tag{0}
+\]
+
+Twelve exact polynomial syzygy generators contain seven generically
+independent kernel columns, giving rank at most 37.  A rational
+specialization has rank 37, giving the opposite inequality.  The generator
+and an independent final-artifact replay are
+[`verify_hessian_rank_reduced_bcw_22_route.py`](../scripts/verify_hessian_rank_reduced_bcw_22_route.py)
+and
+[`audit_hessian_rank_reduced_bcw_22_independent.py`](../scripts/audit_hessian_rank_reduced_bcw_22_independent.py).
+
+## The 42-variable dimension baseline
+
+For comparison, the homogeneous quartic Hessian-nilpotent witness in 42
+variables has exact rank 38 and generic corank four.
 
 It is best computed before expanding the orthogonal change.  For the
 21-variable cubic-homogeneous collision `V=x+H`, put
@@ -97,7 +130,20 @@ This is a negative search result only for the enumerated monomial
 shared-factor traces.  It is not a lower bound for arbitrary symmetric
 reductions.
 
-The next search should therefore optimize the operations that increase rank:
+The circuit-level successor
+[`search_restricted_bcw_circuits.py`](../scripts/search_restricted_bcw_circuits.py)
+now implements polynomial DAG gates, multi-term target shears, partial
+rank and index winners lower the cubic Jacobian rank to 17 and index to 18.
+A wider width-64 beam evaluated 396 terminal traces and found the separate
+22-variable source certified above,
+lowering the quartic Hessian rank from 38 to 37.  Its 44-variable HN lift is
+larger than the 42-variable dimension incumbent.  The earlier index winner
+has sampled Hessian index 34 rather than 35, but this remains a
+specialization diagnostic.
+See the [restricted-minima frontier](RESTRICTED_MINIMA_FRONTIER.md).
+
+The next rank-directed search should therefore optimize the operations that
+increase rank:
 
 1. track the exact block rank (1) after every candidate stable circuit;
 2. allow polynomial DAG gates and multi-term target shears, rather than only
@@ -106,7 +152,7 @@ The next search should therefore optimize the operations that increase rank:
    `rank Hess(p)` is controlled by both `rank JH` and that residual pairing;
 4. test direct two-parameter quadratic--cubic homogenizations before adding
    the six cubic-output variables;
-5. freeze and independently replay only candidates with rank below 38.
+5. freeze and independently replay only candidates with rank below 37.
 
 ## Literature boundary
 
@@ -131,8 +177,11 @@ counterexample to a specific published fixed-rank theorem.
 
 ```bash
 .venv/bin/python scripts/audit_fixed_rank_hessian_witness.py
+.venv/bin/python scripts/verify_hessian_rank_reduced_bcw_22_route.py
+python3 scripts/audit_hessian_rank_reduced_bcw_22_independent.py
 .venv/bin/python scripts/search_fixed_rank_hessian.py --width 64 --max-steps 24
 ```
 
-The first command is an exact rank certificate and a bounded diagnostic.  The
-second is an exploratory search and takes several minutes.
+The first three commands give exact certificates for the rank-38 dimension
+baseline and the rank-37 circuit witness.  The final command is an
+exploratory search and takes several minutes.

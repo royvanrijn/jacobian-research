@@ -237,6 +237,58 @@ logarithmic/toroidal modification $\Gamma_N$ that records relative
 branch-value scales.  In the local chart (2.2), the first required
 subdivision is the normalized blowup of $(x^3,y^2)$.
 
+The degree-six three-cluster computation in
+\href{../../extended-geometry/BRANCH_SCALE_FAN.md}{the branch-scale fan
+note} shows how this begins to generalize.  For cluster multiplicities
+$\mu_i$, the first critical-value weights are $\mu_i v(x_i)$ and their
+pairwise comparisons give a saturated weighted braid subdivision.  That
+subdivision is only the radial first layer: when three leading critical
+values coincide, their second-scale cross-ratio varies at fixed radial fan
+data.  Thus the full candidate for $\Gamma_N$ is the recursive pullback of
+the tropical stable-target/admissible-cover fan, including nested resonance
+centers, rather than the fan cut out by the first equality hyperplanes alone.
+In that degree-six chart the stable-target part is now explicit: fixing
+$0,\infty$ identifies the three-value configuration with the complement of
+six lines in $\mathbb P^2$; the radial target is the blowup of the three
+coordinate points and $\overline M_{0,5}$ is the further blowup of
+$[1:1:1]$.  Its root-scale pullback has four reduced triple-Maxwell branches.
+On the generic equal-scale face, the admissible source is the central map
+$W^2(W-1)^2(W-3)^2$ together with three quadratic tails.  The common target
+node has three index-two source nodes, and its deformation ring normalizes
+into exactly the same four Kummer branches; the first diagonal refinement
+has the same square-node model.  All thirteen ordered radial scale types
+have verified degree-six source-component decompositions, node-index
+partitions, and saturated Kummer branch counts.  The three pairwise Maxwell
+source-node rings have two normalization branches each, the triple ring has
+four, and their residual radial intersections are transverse.  The remaining
+central Hurwitz ambiguity consists of two ambient cover classes; the labelled
+source-root cross-ratio selects the polynomial class as a reduced local
+branch.  Standard admissible-cover deformation theory then identifies the
+labelled coarse graph in this chart.  The remaining comparison problem is
+stack-theoretic.  Connector flips permute normalized radial lifts and
+labelled radial inertia is trivial.  Each pairwise or triple Maxwell node
+retains one diagonal $\mu_2$, giving the iterated second-root stack along
+the four Maxwell boundary divisors.  Its face maps and codimension-two
+inertia agree with the normalized cover stack, so smooth tame-stack
+reconstruction identifies it with the labelled ACV graph on this chart.
+The separate $(S_2)^3\rtimes S_3$ pair-root quotient is explicit.  Gluing
+under the full root-label action is canonical after defining the global
+labelled normalized graph closure.  Its stable-target half on every
+collision type is the normalized wonderful pullback of the branch-diagonal
+building set.  The source-vertex rigidity theorem further shows that two
+target-flag fibers and one third-fiber equation uniquely reconstruct every
+rational source-component map.  The general radial source theorem constructs
+those components and node partitions on every ordered first-scale stratum.
+Polynomial monodromy subforests determine the source dual trees and node
+indices on every nested simple-branch resonance stratum.  Finiteness of the
+fully marked admissible-cover branch morphism then makes the normalized
+polynomial closure finite birational over the normal wonderful graph, so its
+coarse space is that graph.  The recursive resonance atlas constructs the
+explicit logarithmic presentation: normalized initial forms place all flag
+divisors in framed residue screens, affine composition proves contraction
+descent, and full vertex centralizers give the simultaneous inertia
+characters on higher-codimension nested resonance components.
+
 \section{Construction of the incidence contraction}
 
 The second comparison arrow is formal once the generic algebra and the base
@@ -359,8 +411,28 @@ arrows.  The correct global package is
  \mathcal C_N .}
 \]
 Downstream statements using only the finite selected-root cover and its DVR
-extension survive.  Statements identifying the entire root-stable and
+extension survive.  More precisely, on the fully labelled graph the subgroup
+inclusion $S_{n-1}\subset S_n$ gives the corrected finite representable
+etale map
+\[
+ [\Gamma_N^{\rm lab}/S_{n-1}]
+   \longrightarrow
+ [\Gamma_N^{\rm lab}/S_n]
+\]
+of degree $n=N-2$; this is the normalization in the generic selected-root
+algebra.  Thus the abstract H2 quotient and finite contraction are formal
+over $\Gamma_N$.  Statements identifying the entire root-stable and
 branch-stable compactifications must either use $\Gamma_N$ or forget enough
 target branch-scale data for the obstruction to disappear.
+
+The later wonderful-pullback and finite-normalization theorems make this
+package canonical.  The normal target graph is the wonderful pullback of the
+branch-diagonal building set.  Pulling the finite fully marked
+admissible-cover branch morphism back to it and normalizing the generic
+polynomial closure gives a finite birational coarse map, hence an
+isomorphism.  Therefore no source-side coarse blowup remains after
+$\Gamma_N$ is corrected in this way, and the corrected H2 quotient above is
+unconditional.  The recursive resonance atlas supplies the explicit
+logarithmic presentation of the boundary stack.
 
 \end{document}

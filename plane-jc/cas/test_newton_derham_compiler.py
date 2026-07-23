@@ -104,8 +104,12 @@ else:
 
 repeated = repeated_tail_96_144_record()
 assert not repeated.frontend_complete
-assert len(repeated.missing_frontend_data) == 5
+assert len(repeated.missing_frontend_data) == 1
 assert "impossible last lower corner (8,4)" in repeated.source_reconciliation
+assert "q1=d0=4" in repeated.source_reconciliation
+assert "remaining triple-root partition" in repeated.source_reconciliation
+assert "open counts 1,6,3,0" in repeated.source_reconciliation
+assert "source-excluded" in repeated.missing_frontend_data[0]
 frontier = frontier_75_125_record()
 assert not frontier.frontend_complete
 assert frontier.multiplicities == (3, 5)

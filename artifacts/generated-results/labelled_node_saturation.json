@@ -1,0 +1,210 @@
+{
+  "corrected_graph_quotient": {
+    "label_count_to_degree": {
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7,
+      "8": 8
+    },
+    "rule": "for any S_n-equivariant labelled normalized graph Gamma, [Gamma/S_(n-1)] -> [Gamma/S_n] is finite representable etale of degree n"
+  },
+  "equivariance": "the phase quotient and inertia test commute with every permutation of labelled source nodes",
+  "experiment": "general labelled admissible-node saturation",
+  "families": {
+    "one_labelled_anchor": {
+      "e=2,r=2": {
+        "labelled_inertia_order": 1,
+        "normalization_branches": 2
+      },
+      "e=2,r=3": {
+        "labelled_inertia_order": 1,
+        "normalization_branches": 4
+      },
+      "e=2,r=4": {
+        "labelled_inertia_order": 1,
+        "normalization_branches": 8
+      },
+      "e=2,r=5": {
+        "labelled_inertia_order": 1,
+        "normalization_branches": 16
+      },
+      "e=3,r=2": {
+        "labelled_inertia_order": 1,
+        "normalization_branches": 3
+      },
+      "e=3,r=3": {
+        "labelled_inertia_order": 1,
+        "normalization_branches": 9
+      },
+      "e=3,r=4": {
+        "labelled_inertia_order": 1,
+        "normalization_branches": 27
+      },
+      "e=3,r=5": {
+        "labelled_inertia_order": 1,
+        "normalization_branches": 81
+      },
+      "e=4,r=2": {
+        "labelled_inertia_order": 1,
+        "normalization_branches": 4
+      },
+      "e=4,r=3": {
+        "labelled_inertia_order": 1,
+        "normalization_branches": 16
+      },
+      "e=4,r=4": {
+        "labelled_inertia_order": 1,
+        "normalization_branches": 64
+      },
+      "e=4,r=5": {
+        "labelled_inertia_order": 1,
+        "normalization_branches": 256
+      },
+      "e=5,r=2": {
+        "labelled_inertia_order": 1,
+        "normalization_branches": 5
+      },
+      "e=5,r=3": {
+        "labelled_inertia_order": 1,
+        "normalization_branches": 25
+      },
+      "e=5,r=4": {
+        "labelled_inertia_order": 1,
+        "normalization_branches": 125
+      },
+      "e=5,r=5": {
+        "labelled_inertia_order": 1,
+        "normalization_branches": 625
+      },
+      "e=6,r=2": {
+        "labelled_inertia_order": 1,
+        "normalization_branches": 6
+      },
+      "e=6,r=3": {
+        "labelled_inertia_order": 1,
+        "normalization_branches": 36
+      },
+      "e=6,r=4": {
+        "labelled_inertia_order": 1,
+        "normalization_branches": 216
+      },
+      "e=6,r=5": {
+        "labelled_inertia_order": 1,
+        "normalization_branches": 1296
+      }
+    },
+    "unanchored_cyclic_tails": {
+      "e=2,r=2": {
+        "labelled_inertia_order": 2,
+        "normalization_branches": 2
+      },
+      "e=2,r=3": {
+        "labelled_inertia_order": 2,
+        "normalization_branches": 4
+      },
+      "e=2,r=4": {
+        "labelled_inertia_order": 2,
+        "normalization_branches": 8
+      },
+      "e=2,r=5": {
+        "labelled_inertia_order": 2,
+        "normalization_branches": 16
+      },
+      "e=3,r=2": {
+        "labelled_inertia_order": 3,
+        "normalization_branches": 3
+      },
+      "e=3,r=3": {
+        "labelled_inertia_order": 3,
+        "normalization_branches": 9
+      },
+      "e=3,r=4": {
+        "labelled_inertia_order": 3,
+        "normalization_branches": 27
+      },
+      "e=3,r=5": {
+        "labelled_inertia_order": 3,
+        "normalization_branches": 81
+      },
+      "e=4,r=2": {
+        "labelled_inertia_order": 4,
+        "normalization_branches": 4
+      },
+      "e=4,r=3": {
+        "labelled_inertia_order": 4,
+        "normalization_branches": 16
+      },
+      "e=4,r=4": {
+        "labelled_inertia_order": 4,
+        "normalization_branches": 64
+      },
+      "e=4,r=5": {
+        "labelled_inertia_order": 4,
+        "normalization_branches": 256
+      },
+      "e=5,r=2": {
+        "labelled_inertia_order": 5,
+        "normalization_branches": 5
+      },
+      "e=5,r=3": {
+        "labelled_inertia_order": 5,
+        "normalization_branches": 25
+      },
+      "e=5,r=4": {
+        "labelled_inertia_order": 5,
+        "normalization_branches": 125
+      },
+      "e=5,r=5": {
+        "labelled_inertia_order": 5,
+        "normalization_branches": 625
+      },
+      "e=6,r=2": {
+        "labelled_inertia_order": 6,
+        "normalization_branches": 6
+      },
+      "e=6,r=3": {
+        "labelled_inertia_order": 6,
+        "normalization_branches": 36
+      },
+      "e=6,r=4": {
+        "labelled_inertia_order": 6,
+        "normalization_branches": 216
+      },
+      "e=6,r=5": {
+        "labelled_inertia_order": 6,
+        "normalization_branches": 1296
+      }
+    },
+    "unequal_single_constrained_phase": {
+      "anchor=0": 3,
+      "anchor=1": 2
+    }
+  },
+  "inertia_theorem": {
+    "character": "chi: Aut_labelled(cover) -> product_j mu_(e_j)",
+    "inertia_on_a_normalized_lift": "chi^(-1)(diagonal mu_L)",
+    "warning": "the diagonal phase subgroup is a reparametrization group; it is inertia only to the extent that labelled cover automorphisms realize it"
+  },
+  "normalization_theorem": {
+    "branch_count": "product_j(e_j)/L",
+    "common_index": "L=lcm(e_j)",
+    "diagonal_reparametrization": "mu_L -> product_j mu_(e_j), zeta maps to (zeta^(L/e_j))_j",
+    "phase_group": "product_j mu_(e_j)"
+  },
+  "profile_range": {
+    "indices": [
+      1,
+      6
+    ],
+    "source_node_count": [
+      1,
+      4
+    ]
+  },
+  "profiles_checked": 1554,
+  "scope": "local node normalization, label-preserving inertia, permutation equivariance, and the formal subgroup quotient; construction of the global corrected graph and its explicit recursive fan remain separate",
+  "unequal_anchor_checks": 5904
+}

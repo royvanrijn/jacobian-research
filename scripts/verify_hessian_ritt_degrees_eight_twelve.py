@@ -33,6 +33,11 @@ def canonical_atlas(a: int, b: int, prefix: str = "") -> dict:
     A = z**a + sum(outer[m] * z**m for m in outer)
     composition = sp.Poly(sp.expand(A.subs(z, B)), w)
 
+    def solve_linear(equation: sp.Expr, variable: sp.Symbol) -> sp.Expr:
+        linear = sp.Poly(equation, variable)
+        assert linear.degree() == 1
+        return sp.cancel(-linear.nth(0) / linear.nth(1))
+
     reconstruction: dict[sp.Symbol, sp.Expr] = {}
     used_degrees: list[int] = []
     for j in range(b - 1, 0, -1):
@@ -41,7 +46,7 @@ def canonical_atlas(a: int, b: int, prefix: str = "") -> dict:
             composition.nth(coefficient_degree).subs(reconstruction)
             - coefficients[coefficient_degree]
         )
-        reconstruction[inner[j]] = sp.factor(sp.solve(equation, inner[j])[0])
+        reconstruction[inner[j]] = solve_linear(equation, inner[j])
         used_degrees.append(coefficient_degree)
 
     for m in range(a - 1, 0, -1):
@@ -50,7 +55,7 @@ def canonical_atlas(a: int, b: int, prefix: str = "") -> dict:
             composition.nth(coefficient_degree).subs(reconstruction)
             - coefficients[coefficient_degree]
         )
-        reconstruction[outer[m]] = sp.factor(sp.solve(equation, outer[m])[0])
+        reconstruction[outer[m]] = solve_linear(equation, outer[m])
         used_degrees.append(coefficient_degree)
 
     residuals: list[tuple[int, sp.Expr]] = []
@@ -99,6 +104,29 @@ def pulled_equations(source: dict, target: dict) -> list[sp.Expr]:
         primitive = sp.primitive(sp.Poly(pulled, *source["parameters"]))[1]
         equations.append(primitive.as_expr())
     return equations
+
+
+def canonical_linear_lift(atlas: dict) -> sp.Expr:
+    """Recover the missing linear coefficient from one Hessian atlas."""
+
+    return sp.factor(
+        atlas["composition"].nth(1).subs(atlas["reconstruction"])
+    )
+
+
+def pulled_synchronization_defect(source: dict, target: dict) -> sp.Expr:
+    """Compare source and target linear lifts on the source factor chart."""
+
+    substitution = {
+        target["coefficients"][j]: source["composition"].nth(j)
+        for j in range(2, source["degree"])
+    }
+    target_lift = canonical_linear_lift(target).subs(
+        substitution, simultaneous=True
+    )
+    return sp.together(
+        source["composition"].nth(1) - target_lift
+    ).as_numer_denom()[0]
 
 
 def singular_summary(
@@ -207,6 +235,12 @@ assert sp.factor(pulled_42[1] + degree_eight_intersection) == 0
 assert sp.factor(
     pulled_42[0] - (u3**2 - u2) * degree_eight_intersection
 ) == 0
+degree_eight_defect = pulled_synchronization_defect(D24, D42)
+assert sp.rem(
+    degree_eight_defect,
+    degree_eight_intersection,
+    u1,
+) == 0
 
 center = -u3 / 4
 completed_quartic = sp.expand(D24["B"] + ua1 / 2)
@@ -248,6 +282,16 @@ for ordered_pair, expected in pair_expectations.items():
     equations = pulled_equations(atlases[source_pair], atlases[target_pair])
     pair_equations[ordered_pair] = equations
     assert singular_summary(atlases[source_pair]["parameters"], equations) == expected
+    synchronization_basis = sp.groebner(
+        equations,
+        *atlases[source_pair]["parameters"],
+        order="grevlex",
+        domain=sp.QQ,
+    )
+    synchronization_defect = pulled_synchronization_defect(
+        atlases[source_pair], atlases[target_pair]
+    )
+    assert synchronization_basis.reduce(synchronization_defect)[1] == 0
 
 # The easy common-refinement charts collapse to compact equations.
 source_34 = atlases[(3, 4)]
@@ -418,6 +462,7 @@ for bad_factor in cheb_bad_factors:
 print("PASS: the canonical Hessian atlas has exact codimension N-a-b in every factor pair")
 print("PASS: degree eight has one excess 2o2o2 intersection of marked dimension two")
 print("PASS: all six degree-twelve pair intersections and their dimensions are exact")
+print("PASS: every degree-eight and degree-twelve pair synchronizes scheme-theoretically")
 print("PASS: the 3o4/4o3 intersection has exactly power and Chebyshev components")
 print("PASS: the all-four degree-twelve intersection is exactly the Chebyshev component")
 print("PASS: every degree-eight and degree-twelve component meets the marked clean locus")

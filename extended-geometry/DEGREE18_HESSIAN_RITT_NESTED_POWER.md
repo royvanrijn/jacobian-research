@@ -155,8 +155,11 @@ sharpens this verdict.  Ziegler's tame multi-collision theorem already gives
 the relation-graph normal form for synchronized ordinary polynomial
 compositions.  The new issue specific to this project is Hessian transfer:
 one must prove that projection away from the linear term creates no
-unsynchronized minimal primes.  The family (5) is exactly the exponential
-block predicted by that relation graph.
+unsynchronized minimal primes.  This issue is now closed in degree eighteen:
+canonical linear-lift ideal membership holds scheme-theoretically on all six
+pairs of the four factor loci, and therefore on every higher intersection.
+The family (5) is exactly the exponential block predicted by that relation
+graph, with no remaining Hessian-synchronization caveat.
 
 Degree `24` is the next compatibility test: its prime-refinement shadow is the
 four-vertex path obtained by moving the cubic through three quadratic

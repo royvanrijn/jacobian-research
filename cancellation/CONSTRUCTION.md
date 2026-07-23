@@ -115,6 +115,14 @@ The polynomial weighted analogue and the comparison of the two suspension
 types are recorded in the
 [tangent-map core theorem](../verified/TANGENT_MAP_CORE.md).
 
+The same `(m,r)=(1,1)` divisor also admits a second polynomial plane gauge.
+Its inverse equation has a quadratic target tilt, it contains the
+foundational map as the seed `G(S)=S^3+S`, and it engineers a prescribed
+complete root fiber in every degree.  The determinant, polynomial lift,
+inverse reconstruction, `G_m` discriminant normalization, and symmetric
+monodromy are proved in the
+[root-engineered quadratic-gauge theorem](ROOT_ENGINEERED_QUADRATIC_GAUGE.md).
+
 ## 2. Finite cancellation operator
 
 Every positive `z`-degree term in (2) is automatically polynomial.  The only

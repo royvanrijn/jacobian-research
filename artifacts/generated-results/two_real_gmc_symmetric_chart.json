@@ -1,0 +1,134 @@
+{
+  "format": "two-real-gmc-symmetric-support-v2",
+  "support": [
+    -3,
+    -1,
+    1,
+    3
+  ],
+  "sign_reflection": "swapping Z and W identifies the constant_radial and radial_constant charts",
+  "representative_certificates": [
+    {
+      "representative": "constant_constant",
+      "chart": "constant coefficient selected in weights -1 and +1",
+      "charts_covered": [
+        "constant_constant"
+      ],
+      "normalized_polynomial": "W^3 + W + a*Z*W^2 + c*Z + d*Z^2*W + e*Z^3",
+      "nonvanishing_condition": "c*e != 0",
+      "second_moment_elimination": "e = -a*c/3 - a*d - c/6 - d/3",
+      "localization_factor_after_elimination": "2*a*c**2 + 6*a*c*d + c**2 + 2*c*d",
+      "moment_term_counts_after_elimination": {
+        "4": 23,
+        "6": 43,
+        "8": 105,
+        "10": 159
+      },
+      "order_eight_quotient": {
+        "rational_reduced_basis_size": 53,
+        "dimension": 0,
+        "vector_space_dimension": 84
+      },
+      "good_prime_certificate": {
+        "prime": 1000003,
+        "modular_reduced_basis_size": 53,
+        "modular_vector_space_dimension": 84,
+        "same_leading_monomials": true,
+        "reduced_rational_generators_have_zero_modular_remainder": true
+      },
+      "tenth_moment_multiplication": {
+        "matrix_size": 84,
+        "rank_mod_prime": 84,
+        "determinant_mod_prime": "nonzero (certified by full matrix rank)"
+      },
+      "conclusion": "the tenth moment is a unit in the characteristic-zero localized order-eight quotient; this nonvanishing chart is empty through moment order ten"
+    },
+    {
+      "representative": "constant_radial",
+      "chart": "constant coefficient in weight -1 and radial coefficient in weight +1",
+      "charts_covered": [
+        "constant_radial",
+        "radial_constant"
+      ],
+      "normalized_polynomial": "W^3 + W + a*Z*W^2 + c*Z + d*Z^2*W + e*Z^3",
+      "nonvanishing_condition": "d*e != 0",
+      "second_moment_elimination": "e = -a*c/3 - a*d - c/6 - d/3",
+      "localization_factor_after_elimination": "2*a*c*d + 6*a*d**2 + c*d + 2*d**2",
+      "moment_term_counts_after_elimination": {
+        "4": 23,
+        "6": 43,
+        "8": 105,
+        "10": 159
+      },
+      "order_eight_quotient": {
+        "rational_reduced_basis_size": 53,
+        "dimension": 0,
+        "vector_space_dimension": 84
+      },
+      "good_prime_certificate": {
+        "prime": 1000003,
+        "modular_reduced_basis_size": 53,
+        "modular_vector_space_dimension": 84,
+        "same_leading_monomials": true,
+        "reduced_rational_generators_have_zero_modular_remainder": true
+      },
+      "tenth_moment_multiplication": {
+        "matrix_size": 84,
+        "rank_mod_prime": 84,
+        "determinant_mod_prime": "nonzero (certified by full matrix rank)"
+      },
+      "conclusion": "the tenth moment is a unit in the characteristic-zero localized order-eight quotient; this nonvanishing chart is empty through moment order ten"
+    },
+    {
+      "representative": "radial_radial",
+      "chart": "radial coefficient selected in weights -1 and +1",
+      "charts_covered": [
+        "radial_radial"
+      ],
+      "normalized_polynomial": "W^3 + b*W + Z*W^2 + c*Z + d*Z^2*W + e*Z^3",
+      "nonvanishing_condition": "d*e != 0",
+      "second_moment_elimination": "e = -b*c/6 - b*d/3 - c/3 - d",
+      "localization_factor_after_elimination": "b*c*d + 2*b*d**2 + 2*c*d + 6*d**2",
+      "moment_term_counts_after_elimination": {
+        "4": 23,
+        "6": 43,
+        "8": 105,
+        "10": 159
+      },
+      "order_eight_quotient": {
+        "rational_reduced_basis_size": 53,
+        "dimension": 0,
+        "vector_space_dimension": 84
+      },
+      "good_prime_certificate": {
+        "prime": 1000003,
+        "modular_reduced_basis_size": 53,
+        "modular_vector_space_dimension": 84,
+        "same_leading_monomials": true,
+        "reduced_rational_generators_have_zero_modular_remainder": true
+      },
+      "tenth_moment_multiplication": {
+        "matrix_size": 84,
+        "rank_mod_prime": 84,
+        "determinant_mod_prime": "nonzero (certified by full matrix rank)"
+      },
+      "conclusion": "the tenth moment is a unit in the characteristic-zero localized order-eight quotient; this nonvanishing chart is empty through moment order ten"
+    }
+  ],
+  "charts_in_support": 4,
+  "charts_excluded": 4,
+  "exceptional_four_weight_charts_before": 24,
+  "exceptional_four_weight_charts_remaining": 20,
+  "order_eight_quotient": {
+    "rational_reduced_basis_size": 53,
+    "dimension": 0,
+    "vector_space_dimension": 84
+  },
+  "tenth_moment_multiplication": {
+    "matrix_size": 84,
+    "rank_mod_prime": 84,
+    "determinant_mod_prime": "nonzero (certified by full matrix rank)"
+  },
+  "conclusion": "all four nonvanishing charts of the symmetric support are empty through moment order ten",
+  "scope": "one of four exceptional four-weight supports is excluded; this is not a proof of GMC in two real variables"
+}

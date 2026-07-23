@@ -1,0 +1,45 @@
+// Exact module calibrations for the cubic double-saturation ledger.
+
+LIB "primdec.lib";
+
+ring r = 0,(x,y,z),dp;
+
+// Q=A/(x) direct-sum A/(x,y,z).  The first summand is the pure
+// two-dimensional cotangent part; the second is closed-point torsion.
+module presentation =
+  [x,0],
+  [0,x],
+  [0,y],
+  [0,z];
+
+ideal collision = x,y,z;
+list saturationData = sat(presentation,collision);
+module saturatedPresentation = saturationData[1];
+
+// Saturation adds exactly the second basis vector.  Its residue is nonzero
+// modulo the original presentation and is killed by the collision ideal.
+vector pointTorsion = [0,1];
+if (reduce(pointTorsion,std(presentation)) == 0)
+{
+  ERROR("point-torsion generator vanished before saturation");
+}
+if (reduce(pointTorsion,std(saturatedPresentation)) != 0)
+{
+  ERROR("collision saturation did not recover point torsion");
+}
+if (reduce(x*pointTorsion,std(presentation)) != 0 ||
+    reduce(y*pointTorsion,std(presentation)) != 0 ||
+    reduce(z*pointTorsion,std(presentation)) != 0)
+{
+  ERROR("the recovered torsion is not supported at the closed collision");
+}
+
+// The pure surface generator is not collision torsion.
+vector surfaceGenerator = [1,0];
+if (reduce(surfaceGenerator,std(saturatedPresentation)) == 0)
+{
+  ERROR("collision saturation incorrectly removed the surface summand");
+}
+
+print("PASS: module saturation extracts exactly the closed-point cotangent torsion");
+quit;

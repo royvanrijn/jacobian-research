@@ -18,6 +18,42 @@ and put
  P_{H,s}(W)=H(W)-sW.
 \]
 
+> **Corrected scope (23 July 2026).**
+> The root-stable quotient
+> `[\overline M_(0,N)/S_\bullet]` is not the admissible-cover graph: degree
+> five already requires the normalized blowup of `(x^3,y^2)`.  Every
+> quotient, Stein-factor, root-collision, and conductor statement below is
+> therefore to be read over the corrected labelled normalized graph
+> `Gamma_N^lab`, not as an identification of that graph with
+> `\overline M_(0,N)`.  The precise replacement and the general
+> normalization/inertia formula are in
+> [Labelled node saturation and the corrected H2
+> quotient](LABELLED_NODE_SATURATION.md).  The stable-target half of the
+> corrected graph is constructed in
+> [The stable-target graph as a wonderful
+> pullback](BRANCH_GRAPH_WONDERFUL_PULLBACK.md).
+> Once its source tree and target-flag pullback divisors are constructed,
+> [source-vertex rigidity](SOURCE_VERTEX_RIGIDITY.md) reconstructs every
+> component map uniquely.
+> The [general radial source atlas](GENERAL_RADIAL_SOURCE_ATLAS.md)
+> constructs this enhancement on every ordered first-scale stratum and for
+> arbitrary cluster multiplicities, leaving only the later
+> residue-resonance strata.  The
+> [polynomial monodromy-forest theorem](POLYNOMIAL_MONODROMY_FORESTS.md)
+> determines their source dual graphs and node indices.  The
+> [recursive resonance atlas](RECURSIVE_RESONANCE_ATLAS.md) constructs the
+> algebraic flag divisors by normalized initial forms in framed residue
+> screens, proves every contraction formula, and extracts the simultaneous
+> full-centralizer characters.  This completes the explicit corrected H1
+> stack atlas.
+> Finally, the
+> [source-graph finite-normalization
+> theorem](SOURCE_GRAPH_FINITE_NORMALIZATION.md) proves that the wonderful
+> graph is already the complete coarse polynomial source graph.  Corrected
+> H1, H2, and coarse H3 are therefore unconditional.  The
+> [monodromy-centralizer theorem](MONODROMY_INERTIA_CHARACTERS.md) also
+> closes all radial and generic simple-resonance inertia.
+
 ## 1. The discriminant is an LL spectral incidence
 
 For a degree-`N` polynomial `P`, its Lyashko--Looijenga divisor is the
@@ -130,8 +166,8 @@ forgetful map; the coarser decorated normalization forgets it and has generic
 degree `N-2`.
 
 Put `n=N-2` and label the simple zero-fiber points temporarily as
-`p_1,...,p_n`.  On the collision-separating compactification the marked and
-unmarked stacks are
+`p_1,...,p_n`.  On the **root-only** collision-separating compactification
+the marked and unmarked stacks are
 
 \[
  \overline{\mathfrak S}^{\mathrm{root}}_N
@@ -151,7 +187,10 @@ where `S_(n-1)` fixes `p_1`.  The rerooting morphism
 
 is induced by `S_(n-1) subset S_n`.  It is finite, representable, and etale
 of degree `[S_n:S_(n-1)]=n=N-2`.  This subgroup index, rather than an LL
-degree, is the precise source of the generic fiber count.
+degree, is the precise source of the generic fiber count.  The same formal
+quotient holds on the corrected graph after replacing
+`\overline M_(0,N)` by `Gamma_N^lab`; unlike the root-only formula, that
+replacement also retains target branch scales.
 
 ## 3. Root-collision and admissible-cover compactifications
 
@@ -172,7 +211,8 @@ Define the marked and unmarked quotient stacks
 \]
 
 Their coarse spaces are obtained by replacing the quotient-stack brackets by
-ordinary finite quotients.
+ordinary finite quotients.  These are source-root compactifications, not the
+full branch-stabilization graph.
 
 This maximal model replaces every collision by a rational bubble and retains
 the complete collision tree.  Hassett weights on the extra roots contract
@@ -210,12 +250,14 @@ provides intermediate models in which branch points may collide to a
 prescribed extent; these are the Hurwitz analogue of the Hassett contractions
 above.
 
-The morphism from the marked stack in (3.1) to (3.2) is obtained by stable
-reduction of the polynomial map determined by (2.1).  It remembers
-root-collision directions
-on the source, while the admissible target also separates colliding critical
-values.  Taking its normalization is essential: it retains the roots of the
-smoothing parameters which appear as boundary inertia.
+In general there is only a rational map from the root-stable stack (3.1) to
+(3.2).  Its corrected domain is the normalized graph closure
+`\Gamma_N^lab`; degree five proves that the projection from this graph to
+(3.1) need not be finite.  The graph remembers source-root collision
+directions and the additional scales needed to stabilize colliding critical
+values.  Its normalization separates Kummer branches, while actual inertia
+is computed only after intersecting the diagonal phase group with
+label-preserving cover automorphisms.
 
 ## 4. Local collision models and the compactified rerooting groupoid
 
@@ -645,7 +687,7 @@ for its normalized Stein factor.  The finiteness and relative-normalization
 statement used here is the
 [Noetherian Stein factorization theorem](https://stacks.math.columbia.edu/tag/03H0).
 
-> **Theorem (formal admissible-cover comparison).**  Let `H` be any
+> **Theorem (finite-factor comparison over the corrected graph).**  Let `H` be any
 > normalized admissible seed.  Pull the marked admissible-cover closure back
 > along the pencil `s -> H-sW` and mark a point over the target value `-t`.
 > Then:
@@ -665,6 +707,11 @@ statement used here is the
 >
 > These assertions remain true at simultaneous collisions of arbitrarily
 > many distinct root clusters.
+
+This theorem compares the contracted finite factors once the family has
+been placed over `\Gamma_N^lab`.  It does not identify the root-stable base
+with the admissible-cover graph and does not remove the branch-scale
+modification.
 
 ### 6.1 Uniqueness of the finite normal contraction
 
@@ -778,46 +825,60 @@ The symbolic regression
 `scripts/verify_multicluster_ll_comparison.py` checks (6.3)--(6.5) on
 normalized seeds with two and three simultaneous clusters, including the
 adjunction conductor obtained from the global implicit discriminant.  Thus
-the local-to-global comparison left open after (5.2) is complete.
+the finite-factor conductor comparison left open after (5.2) is complete;
+the construction of the corrected branch-scale base is separate.
 
-### 6.4 Stacky marked extension
+### 6.4 Stacky marked extension over the corrected graph
 
-Combining (2.5) with the formal comparison gives the following completed
-statement.
+Let `\Gamma_N^lab` be the fully labelled normalized graph closure and put
 
-> **Theorem (stacky marked extension).**  The selected unramified zero-fiber
-> root extends as the tautological marked point on the collision-separating
-> admissible-cover stack.  Forgetting it is the finite, representable, etale
+\[
+ \Gamma_N^{mark}=[\Gamma_N^{lab}/S_{n-1}],
+ \qquad
+ \Gamma_N^{unmark}=[\Gamma_N^{lab}/S_n].             \tag{6.6}
+\]
+
+> **Theorem (corrected stacky marked extension).**  The selected unramified
+> zero-fiber root extends as the tautological marked point on
+> `\Gamma_N^(mark)`.  Forgetting it is the finite, representable, etale
 > morphism
 > \[
->  [\overline M_{0,N}/S_{n-1}]
->    \longrightarrow[\overline M_{0,N}/S_n]
+>  \Gamma_N^{mark}\longrightarrow\Gamma_N^{unmark}
 > \]
-> of degree `n=N-2`.  After contraction, its normalized Stein factors,
-> completed root-cover charts, and normalization--conductor squares are the
-> repository constructions at every simultaneous multicluster collision.
+> of degree `n=N-2`.  It is the normalization of the unmarked graph in the
+> generic selected-root algebra.  After contraction, its completed
+> root-cover charts and normalization--conductor squares are the repository
+> finite factors at every simultaneous multicluster collision.
 
-The mark persists because it is part of the object parametrized by the
-marked stack.  The quotient properties follow from the subgroup inclusion
-`S_(n-1) subset S_n`, and Sections 6.1--6.3 give the assertions after
-contraction.  No arbitrary-collision local geometry remains open at the
-stack level.
+The quotient properties follow formally from
+`S_(n-1) subset S_n`; graph closure and normalization make the full
+`S_n`-action canonical.  Sections 6.1--6.3 give the finite-factor assertions
+after contraction.  No arbitrary-collision local geometry remains open for
+that finite factor.  The stable-target graph is the normalized wonderful
+pullback of the branch-diagonal building set, and finite normalization
+identifies it with the coarse polynomial source graph.  Corrected H2 is
+therefore unconditional.  The
+[recursive resonance atlas](RECURSIVE_RESONANCE_ATLAS.md) supplies the
+explicit logarithmic stack presentation on higher-codimension resonance
+components: flag-divisor coordinates, residue compatibility, contraction
+descent, and simultaneous inertia characters.  Corrected H1 is therefore
+unconditional as well.
 
 ### 6.5 Coarse affine-mark descent
 
-The stack theorem has the following coarse consequence.
+The corrected graph theorem has the following coarse consequence.
 
 > **Theorem (coarse affine-mark descent).**  After contraction, take the
 > relative Hilbert point of degree one selected generically by the
 > distinguished regular-reconstruction component.  Its closure is finite and
-> separated over the normal marked coarse compactification and is isomorphic
+> separated over the normal marked coarse corrected graph and is isomorphic
 > to the base.  It therefore has exactly one point over every DVR limit,
 > independently of the admissible-cover lift.
 
 Indeed, the relative Hilbert space of length-one subschemes of a finite
 separated cover is the cover itself.  The closure is therefore integral,
 finite, and generically degree one.  The
-marked coarse compactification is normal because its local rings are
+marked coarse corrected graph is normal because its local rings are
 finite-group invariant subrings of normal collision charts.  The
 [finite-birational criterion](https://stacks.math.columbia.edu/tag/0AB1)
 therefore makes the closure an isomorphism.  The categorical property of the
@@ -832,7 +893,7 @@ criterion.  If `R=k[x_1,...,x_mu]` and `T=x_1` is selected, then
 \[
  R^{S_{\mu-1}}
  \simeq R^{S_\mu}[T]/
- \left(T^\mu-e_1T^{\mu-1}+\cdots+(-1)^\mu e_\mu\right). \tag{6.6}
+ \left(T^\mu-e_1T^{\mu-1}+\cdots+(-1)^\mu e_\mu\right). \tag{6.7}
 \]
 
 The recursion `e'_j=e_j-T e'_(j-1)` for the elementary symmetric functions
@@ -840,4 +901,6 @@ of the unselected roots proves the presentation.  The total-collision fiber
 is `k[T]/(T^mu)`, which has length `mu` but one geometric point.  Hence pair
 and triple collisions do not produce counterexamples; nor does any higher
 collision.  Together with the completed-chart identification of Section 6,
-this proves coarse affine-mark descent and closes the former `OP-MARK`.
+this proves coarse affine-mark descent over the corrected graph and closes
+the former local `OP-MARK`; descent to the unmodified root-stable space is
+neither needed nor generally possible.

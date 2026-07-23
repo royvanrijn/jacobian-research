@@ -8,10 +8,10 @@ inventing equations from corner data.  A complete block is compiled to:
     superelliptic curve -> character -> compact de Rham data
         -> supported primitive -> tail obstruction certificate.
 
-The normalized (72,108) first block is the golden fixture.  The (96,144)
-repeated-tail row and the (75,125) F2 row are represented as incomplete source
-records because the published table supplies corners, not Laurent coefficient
-bands.
+The normalized (72,108) first block is the golden fixture.  The repeated-tail
+(96,144) row is represented as source-excluded after its complete-chain
+audit, while the (75,125) F2 row remains incomplete because the published
+table supplies corners, not Laurent coefficient bands.
 """
 
 from dataclasses import dataclass
@@ -354,7 +354,7 @@ def normalized_72_108_block() -> WeightedWronskianIR:
 
 
 def repeated_tail_96_144_record() -> NewtonChainIR:
-    """The table row, including the unresolved source-level reconciliation."""
+    """The raw table row after its source-level complete-chain exclusion."""
 
     return NewtonChainIR(
         name="96_144_repeated_tail",
@@ -365,19 +365,27 @@ def repeated_tail_96_144_record() -> NewtonChainIR:
         ),
         multiplicities=(3, 2),
         enumeration_source="GGHV 2017 Section 7 length-two complete-chain table",
-        status="table row only; not a derived Laurent system",
+        status=(
+            "source-excluded before Laurent compilation: simple-root "
+            "partitions yield (8,4), and the triple-root translated edge "
+            "(8,40)->(8,12) has no complete chain"
+        ),
         missing_frontend_data=(
-            "Laurent coordinate change for (8,40)->(8,28)",
-            "band supports at (8,28)",
-            "weighted-Wronskian exponents and right-hand side",
-            "fixed predecessor coefficients",
-            "residual diagonal scaling",
+            "no Laurent IR: this repeated-tail row is source-excluded",
         ),
         source_reconciliation=(
-            "GGV 2016 Remark after Proposition 3.29 says B0=(8,28), "
-            "B1=(8,40) leads to the impossible last lower corner (8,4); "
-            "the relation of that exclusion to the later raw table row must "
-            "be settled before treating this as a live frontier case"
+            "The 2017 table is a necessary over-approximation whose source "
+            "comments out the Proposition-3.29 lower-corner filter. The 2016 "
+            "remark claims the whole row leads to the impossible last lower "
+            "corner (8,4), while the 2022 proof establishes that transition "
+            "for the degree-one companion row (8,32). Reusing its common-tail "
+            "calculation gives q1=d0=4 here. The residual vertical factor has "
+            "degree three; partitions (2,1) and (1,1,1) contain a simple root "
+            "and yield (8,4). The remaining triple-root partition translates "
+            "to edge (8,40)->(8,12); the permissive complete-chain enumeration "
+            "has open counts 1,6,3,0 and no final corner within maximum length "
+            "three. See cas/frontier_96_144_source_audit.py and "
+            "cas/complete_chain_no_escape.py"
         ),
     )
 

@@ -1,0 +1,6205 @@
+{
+  "format": "restricted-bcw-circuit-search-v2",
+  "certification_status": "bounded modular search record; any improvement requires an exact QQ generator and independent replay",
+  "search_scope": {
+    "source": "three-variable determinant-one collision",
+    "circuit_moves": "polynomial gate exposure, grouped multi-term target shears, then exact shared-factor cleanup",
+    "partial_objective": "maximum degree followed by the sampled rank and complete power-rank tuple of J(F-id)",
+    "terminal_objective": "Pareto archive for cubic rank, cubic sampled nilpotency index, cotangent-Hessian rank, quotient dimension, and transformed quartic-Hessian sampled nilpotency index",
+    "terminal_pipeline": "rank-compressed cubic homogenization, constant-kernel quotient, collision-separation check, cubic and cotangent-Hessian profiles",
+    "width": 22,
+    "max_steps": 28,
+    "prebeam_factor": 2,
+    "partial_power_depth": 8,
+    "max_circuit_gates": 7,
+    "beam_mode": "structural",
+    "required_atoms": [
+      "yvyb"
+    ],
+    "terminal_hessian_power_profiled": false,
+    "circuit_atoms": [
+      "x2s",
+      "xxs",
+      "v2r",
+      "qb",
+      "v2h",
+      "y2vb",
+      "yvyb"
+    ]
+  },
+  "incumbents": {
+    "cubic_rank": 17,
+    "cubic_sampled_index": 18,
+    "cubic_dimension": 21,
+    "quartic_hessian_rank": 37,
+    "quartic_dimension": 42,
+    "quartic_sampled_index": 34
+  },
+  "depth_log": [
+    {
+      "depth": 1,
+      "generated": 564,
+      "unique": 564,
+      "prebeam_profiled": 44,
+      "kept": 22,
+      "terminal_count": 0,
+      "lead_high_signature": [
+        5,
+        46,
+        22
+      ],
+      "lead_partial_power_ranks_mod_1000003": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "depth": 2,
+      "generated": 786,
+      "unique": 786,
+      "prebeam_profiled": 44,
+      "kept": 22,
+      "terminal_count": 0,
+      "lead_high_signature": [
+        5,
+        59,
+        29
+      ],
+      "lead_partial_power_ranks_mod_1000003": [
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ]
+    },
+    {
+      "depth": 3,
+      "generated": 848,
+      "unique": 848,
+      "prebeam_profiled": 44,
+      "kept": 22,
+      "terminal_count": 0,
+      "lead_high_signature": [
+        5,
+        36,
+        18
+      ],
+      "lead_partial_power_ranks_mod_1000003": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7
+      ]
+    },
+    {
+      "depth": 4,
+      "generated": 682,
+      "unique": 682,
+      "prebeam_profiled": 44,
+      "kept": 22,
+      "terminal_count": 0,
+      "lead_high_signature": [
+        5,
+        25,
+        19
+      ],
+      "lead_partial_power_ranks_mod_1000003": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "depth": 5,
+      "generated": 578,
+      "unique": 578,
+      "prebeam_profiled": 44,
+      "kept": 22,
+      "terminal_count": 0,
+      "lead_high_signature": [
+        5,
+        22,
+        19
+      ],
+      "lead_partial_power_ranks_mod_1000003": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "depth": 6,
+      "generated": 584,
+      "unique": 584,
+      "prebeam_profiled": 44,
+      "kept": 22,
+      "terminal_count": 0,
+      "lead_high_signature": [
+        4,
+        19,
+        19
+      ],
+      "lead_partial_power_ranks_mod_1000003": [
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ]
+    },
+    {
+      "depth": 7,
+      "generated": 609,
+      "unique": 609,
+      "prebeam_profiled": 44,
+      "kept": 22,
+      "terminal_count": 0,
+      "lead_high_signature": [
+        4,
+        18,
+        18
+      ],
+      "lead_partial_power_ranks_mod_1000003": [
+        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ]
+    },
+    {
+      "depth": 8,
+      "generated": 555,
+      "unique": 555,
+      "prebeam_profiled": 44,
+      "kept": 22,
+      "terminal_count": 0,
+      "lead_high_signature": [
+        4,
+        17,
+        17
+      ],
+      "lead_partial_power_ranks_mod_1000003": [
+        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ]
+    },
+    {
+      "depth": 9,
+      "generated": 456,
+      "unique": 456,
+      "prebeam_profiled": 44,
+      "kept": 22,
+      "terminal_count": 0,
+      "lead_high_signature": [
+        4,
+        16,
+        16
+      ],
+      "lead_partial_power_ranks_mod_1000003": [
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ]
+    },
+    {
+      "depth": 10,
+      "generated": 622,
+      "unique": 622,
+      "prebeam_profiled": 44,
+      "kept": 22,
+      "terminal_count": 0,
+      "lead_high_signature": [
+        4,
+        15,
+        15
+      ],
+      "lead_partial_power_ranks_mod_1000003": [
+        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ]
+    },
+    {
+      "depth": 11,
+      "generated": 604,
+      "unique": 604,
+      "prebeam_profiled": 44,
+      "kept": 22,
+      "terminal_count": 0,
+      "lead_high_signature": [
+        4,
+        18,
+        18
+      ],
+      "lead_partial_power_ranks_mod_1000003": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7
+      ]
+    },
+    {
+      "depth": 12,
+      "generated": 622,
+      "unique": 622,
+      "prebeam_profiled": 44,
+      "kept": 22,
+      "terminal_count": 0,
+      "lead_high_signature": [
+        4,
+        21,
+        21
+      ],
+      "lead_partial_power_ranks_mod_1000003": [
+        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ]
+    },
+    {
+      "depth": 13,
+      "generated": 785,
+      "unique": 785,
+      "prebeam_profiled": 44,
+      "kept": 22,
+      "terminal_count": 0,
+      "lead_high_signature": [
+        4,
+        15,
+        15
+      ],
+      "lead_partial_power_ranks_mod_1000003": [
+        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ]
+    },
+    {
+      "depth": 14,
+      "generated": 734,
+      "unique": 734,
+      "prebeam_profiled": 44,
+      "kept": 22,
+      "terminal_count": 0,
+      "lead_high_signature": [
+        4,
+        22,
+        22
+      ],
+      "lead_partial_power_ranks_mod_1000003": [
+        8,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ]
+    },
+    {
+      "depth": 15,
+      "generated": 736,
+      "unique": 736,
+      "prebeam_profiled": 44,
+      "kept": 22,
+      "terminal_count": 0,
+      "lead_high_signature": [
+        4,
+        21,
+        21
+      ],
+      "lead_partial_power_ranks_mod_1000003": [
+        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ]
+    },
+    {
+      "depth": 16,
+      "generated": 820,
+      "unique": 820,
+      "prebeam_profiled": 44,
+      "kept": 22,
+      "terminal_count": 0,
+      "lead_high_signature": [
+        4,
+        17,
+        17
+      ],
+      "lead_partial_power_ranks_mod_1000003": [
+        8,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7
+      ]
+    },
+    {
+      "depth": 17,
+      "generated": 772,
+      "unique": 772,
+      "prebeam_profiled": 44,
+      "kept": 22,
+      "terminal_count": 0,
+      "lead_high_signature": [
+        4,
+        11,
+        11
+      ],
+      "lead_partial_power_ranks_mod_1000003": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ]
+    },
+    {
+      "depth": 18,
+      "generated": 718,
+      "unique": 718,
+      "prebeam_profiled": 44,
+      "kept": 22,
+      "terminal_count": 0,
+      "lead_high_signature": [
+        4,
+        23,
+        23
+      ],
+      "lead_partial_power_ranks_mod_1000003": [
+        8,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7
+      ]
+    },
+    {
+      "depth": 19,
+      "generated": 718,
+      "unique": 718,
+      "prebeam_profiled": 44,
+      "kept": 22,
+      "terminal_count": 0,
+      "lead_high_signature": [
+        4,
+        14,
+        14
+      ],
+      "lead_partial_power_ranks_mod_1000003": [
+        9,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ]
+    },
+    {
+      "depth": 20,
+      "generated": 667,
+      "unique": 667,
+      "prebeam_profiled": 44,
+      "kept": 22,
+      "terminal_count": 0,
+      "lead_high_signature": [
+        4,
+        13,
+        13
+      ],
+      "lead_partial_power_ranks_mod_1000003": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ]
+    },
+    {
+      "depth": 21,
+      "generated": 615,
+      "unique": 615,
+      "prebeam_profiled": 44,
+      "kept": 22,
+      "terminal_count": 0,
+      "lead_high_signature": [
+        4,
+        4,
+        4
+      ],
+      "lead_partial_power_ranks_mod_1000003": [
+        9,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ]
+    },
+    {
+      "depth": 22,
+      "generated": 564,
+      "unique": 564,
+      "prebeam_profiled": 44,
+      "kept": 22,
+      "terminal_count": 0,
+      "lead_high_signature": [
+        4,
+        3,
+        3
+      ],
+      "lead_partial_power_ranks_mod_1000003": [
+        9,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ]
+    },
+    {
+      "depth": 23,
+      "generated": 510,
+      "unique": 510,
+      "prebeam_profiled": 44,
+      "kept": 22,
+      "terminal_count": 0,
+      "lead_high_signature": [
+        4,
+        2,
+        2
+      ],
+      "lead_partial_power_ranks_mod_1000003": [
+        10,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ]
+    },
+    {
+      "depth": 24,
+      "generated": 458,
+      "unique": 458,
+      "prebeam_profiled": 44,
+      "kept": 22,
+      "terminal_count": 0,
+      "lead_high_signature": [
+        4,
+        4,
+        4
+      ],
+      "lead_partial_power_ranks_mod_1000003": [
+        9,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ]
+    },
+    {
+      "depth": 25,
+      "generated": 409,
+      "unique": 404,
+      "prebeam_profiled": 44,
+      "kept": 22,
+      "terminal_count": 5,
+      "lead_high_signature": [
+        4,
+        3,
+        3
+      ],
+      "lead_partial_power_ranks_mod_1000003": [
+        9,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ]
+    },
+    {
+      "depth": 26,
+      "generated": 359,
+      "unique": 350,
+      "prebeam_profiled": 44,
+      "kept": 22,
+      "terminal_count": 14,
+      "lead_high_signature": [
+        4,
+        3,
+        3
+      ],
+      "lead_partial_power_ranks_mod_1000003": [
+        9,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ]
+    },
+    {
+      "depth": 27,
+      "generated": 323,
+      "unique": 323,
+      "prebeam_profiled": 44,
+      "kept": 22,
+      "terminal_count": 14,
+      "lead_high_signature": [
+        4,
+        2,
+        2
+      ],
+      "lead_partial_power_ranks_mod_1000003": [
+        10,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ]
+    },
+    {
+      "depth": 28,
+      "generated": 268,
+      "unique": 253,
+      "prebeam_profiled": 44,
+      "kept": 22,
+      "terminal_count": 29,
+      "lead_high_signature": [
+        4,
+        13,
+        13
+      ],
+      "lead_partial_power_ranks_mod_1000003": [
+        9,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ]
+    }
+  ],
+  "terminal_histogram": [
+    {
+      "cubic_rank": 18,
+      "cubic_sampled_index": 18,
+      "quartic_hessian_rank": 38,
+      "quotient_dimension": 23,
+      "count": 1
+    },
+    {
+      "cubic_rank": 18,
+      "cubic_sampled_index": 18,
+      "quartic_hessian_rank": 40,
+      "quotient_dimension": 24,
+      "count": 1
+    },
+    {
+      "cubic_rank": 18,
+      "cubic_sampled_index": 18,
+      "quartic_hessian_rank": 40,
+      "quotient_dimension": 25,
+      "count": 4
+    },
+    {
+      "cubic_rank": 19,
+      "cubic_sampled_index": 18,
+      "quartic_hessian_rank": 40,
+      "quotient_dimension": 25,
+      "count": 2
+    },
+    {
+      "cubic_rank": 19,
+      "cubic_sampled_index": 18,
+      "quartic_hessian_rank": 42,
+      "quotient_dimension": 26,
+      "count": 2
+    },
+    {
+      "cubic_rank": 19,
+      "cubic_sampled_index": 18,
+      "quartic_hessian_rank": 42,
+      "quotient_dimension": 27,
+      "count": 2
+    },
+    {
+      "cubic_rank": 19,
+      "cubic_sampled_index": 18,
+      "quartic_hessian_rank": 44,
+      "quotient_dimension": 26,
+      "count": 1
+    },
+    {
+      "cubic_rank": 19,
+      "cubic_sampled_index": 19,
+      "quartic_hessian_rank": 42,
+      "quotient_dimension": 26,
+      "count": 4
+    },
+    {
+      "cubic_rank": 19,
+      "cubic_sampled_index": 19,
+      "quartic_hessian_rank": 44,
+      "quotient_dimension": 27,
+      "count": 3
+    },
+    {
+      "cubic_rank": 20,
+      "cubic_sampled_index": 19,
+      "quartic_hessian_rank": 44,
+      "quotient_dimension": 27,
+      "count": 1
+    },
+    {
+      "cubic_rank": 20,
+      "cubic_sampled_index": 19,
+      "quartic_hessian_rank": 44,
+      "quotient_dimension": 28,
+      "count": 2
+    },
+    {
+      "cubic_rank": 20,
+      "cubic_sampled_index": 19,
+      "quartic_hessian_rank": 46,
+      "quotient_dimension": 27,
+      "count": 1
+    },
+    {
+      "cubic_rank": 20,
+      "cubic_sampled_index": 19,
+      "quartic_hessian_rank": 46,
+      "quotient_dimension": 28,
+      "count": 1
+    },
+    {
+      "cubic_rank": 20,
+      "cubic_sampled_index": 19,
+      "quartic_hessian_rank": 47,
+      "quotient_dimension": 29,
+      "count": 1
+    },
+    {
+      "cubic_rank": 20,
+      "cubic_sampled_index": 19,
+      "quartic_hessian_rank": 48,
+      "quotient_dimension": 28,
+      "count": 1
+    },
+    {
+      "cubic_rank": 21,
+      "cubic_sampled_index": 19,
+      "quartic_hessian_rank": 48,
+      "quotient_dimension": 30,
+      "count": 1
+    },
+    {
+      "cubic_rank": 22,
+      "cubic_sampled_index": 19,
+      "quartic_hessian_rank": 51,
+      "quotient_dimension": 32,
+      "count": 1
+    }
+  ],
+  "best_terminal": {
+    "profile": {
+      "circuit_atoms": [
+        "qb",
+        "yvyb"
+      ],
+      "circuit_gate_count": 4,
+      "introduced_variables": 17,
+      "monomial_cleanup_steps": 25,
+      "cubic_output_rank": 8,
+      "homogeneous_dimension": 29,
+      "constant_kernel_dimensions": [
+        5,
+        1
+      ],
+      "total_constant_kernel_dimension": 6,
+      "quotient_dimension": 23,
+      "projected_collision_separated": true,
+      "cubic_power_ranks_mod_1000003": [
+        18,
+        16,
+        15,
+        14,
+        13,
+        12,
+        11,
+        10,
+        9,
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1,
+        0
+      ],
+      "cubic_power_profile_terminated": true,
+      "cubic_sampled_index": 18,
+      "cubic_rank_mod_1000003": 18,
+      "cotangent_hessian_rank_mod_1000003": 38,
+      "quartic_dimension": 46
+    },
+    "plan": {
+      "circuit_atoms": [
+        "qb",
+        "yvyb"
+      ],
+      "monomial_plan": [
+        {
+          "component": 2,
+          "first_factor": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "second_factor": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        },
+        {
+          "component": 1,
+          "first_factor": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "second_factor": [
+            [
+              0,
+              2
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        },
+        {
+          "component": 5,
+          "first_factor": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "second_factor": [
+            [
+              0,
+              2
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        },
+        {
+          "component": 6,
+          "first_factor": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "second_factor": [
+            [
+              0,
+              2
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        },
+        {
+          "component": 2,
+          "first_factor": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "second_factor": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        },
+        {
+          "component": 2,
+          "first_factor": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              4,
+              1
+            ]
+          ],
+          "second_factor": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        {
+          "component": 1,
+          "first_factor": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ],
+          "second_factor": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        {
+          "component": 5,
+          "first_factor": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ],
+          "second_factor": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        {
+          "component": 6,
+          "first_factor": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ],
+          "second_factor": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        {
+          "component": 7,
+          "first_factor": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ],
+          "second_factor": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        {
+          "component": 0,
+          "first_factor": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ],
+          "second_factor": [
+            [
+              0,
+              2
+            ]
+          ]
+        },
+        {
+          "component": 1,
+          "first_factor": [
+            [
+              0,
+              1
+            ],
+            [
+              4,
+              1
+            ]
+          ],
+          "second_factor": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        },
+        {
+          "component": 5,
+          "first_factor": [
+            [
+              0,
+              1
+            ],
+            [
+              4,
+              1
+            ]
+          ],
+          "second_factor": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        },
+        {
+          "component": 6,
+          "first_factor": [
+            [
+              0,
+              1
+            ],
+            [
+              4,
+              1
+            ]
+          ],
+          "second_factor": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        },
+        {
+          "component": 1,
+          "first_factor": [
+            [
+              1,
+              1
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          "second_factor": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        {
+          "component": 2,
+          "first_factor": [
+            [
+              1,
+              1
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          "second_factor": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        },
+        {
+          "component": 5,
+          "first_factor": [
+            [
+              1,
+              1
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          "second_factor": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        {
+          "component": 6,
+          "first_factor": [
+            [
+              1,
+              1
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          "second_factor": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        {
+          "component": 1,
+          "first_factor": [
+            [
+              1,
+              1
+            ],
+            [
+              8,
+              1
+            ]
+          ],
+          "second_factor": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        {
+          "component": 5,
+          "first_factor": [
+            [
+              1,
+              1
+            ],
+            [
+              8,
+              1
+            ]
+          ],
+          "second_factor": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        {
+          "component": 6,
+          "first_factor": [
+            [
+              1,
+              1
+            ],
+            [
+              8,
+              1
+            ]
+          ],
+          "second_factor": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        {
+          "component": 2,
+          "first_factor": [
+            [
+              1,
+              1
+            ],
+            [
+              5,
+              1
+            ]
+          ],
+          "second_factor": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        {
+          "component": 2,
+          "first_factor": [
+            [
+              1,
+              1
+            ],
+            [
+              6,
+              1
+            ]
+          ],
+          "second_factor": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        {
+          "component": 2,
+          "first_factor": [
+            [
+              1,
+              1
+            ],
+            [
+              7,
+              1
+            ]
+          ],
+          "second_factor": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        {
+          "component": 2,
+          "first_factor": [
+            [
+              3,
+              1
+            ],
+            [
+              4,
+              1
+            ]
+          ],
+          "second_factor": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    "beats_a_current_incumbent_diagnostically": false
+  },
+  "pareto_terminals": [
+    {
+      "objective": [
+        18,
+        18,
+        38,
+        23,
+        1000000000
+      ],
+      "profile": {
+        "circuit_atoms": [
+          "qb",
+          "yvyb"
+        ],
+        "circuit_gate_count": 4,
+        "introduced_variables": 17,
+        "monomial_cleanup_steps": 25,
+        "cubic_output_rank": 8,
+        "homogeneous_dimension": 29,
+        "constant_kernel_dimensions": [
+          5,
+          1
+        ],
+        "total_constant_kernel_dimension": 6,
+        "quotient_dimension": 23,
+        "projected_collision_separated": true,
+        "cubic_power_ranks_mod_1000003": [
+          18,
+          16,
+          15,
+          14,
+          13,
+          12,
+          11,
+          10,
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ],
+        "cubic_power_profile_terminated": true,
+        "cubic_sampled_index": 18,
+        "cubic_rank_mod_1000003": 18,
+        "cotangent_hessian_rank_mod_1000003": 38,
+        "quartic_dimension": 46
+      },
+      "plan": {
+        "circuit_atoms": [
+          "qb",
+          "yvyb"
+        ],
+        "monomial_plan": [
+          {
+            "component": 2,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                2
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 1,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                2
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                2
+              ],
+              [
+                2,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 5,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                2
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                2
+              ],
+              [
+                2,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 6,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                2
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                2
+              ],
+              [
+                2,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 2,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 2,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                4,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 1,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 5,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 6,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 7,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 0,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                2
+              ]
+            ]
+          },
+          {
+            "component": 1,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                4,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 5,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                4,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 6,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                4,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 1,
+            "first_factor": [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 2,
+            "first_factor": [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 5,
+            "first_factor": [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 6,
+            "first_factor": [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 1,
+            "first_factor": [
+              [
+                1,
+                1
+              ],
+              [
+                8,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 5,
+            "first_factor": [
+              [
+                1,
+                1
+              ],
+              [
+                8,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 6,
+            "first_factor": [
+              [
+                1,
+                1
+              ],
+              [
+                8,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 2,
+            "first_factor": [
+              [
+                1,
+                1
+              ],
+              [
+                5,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 2,
+            "first_factor": [
+              [
+                1,
+                1
+              ],
+              [
+                6,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 2,
+            "first_factor": [
+              [
+                1,
+                1
+              ],
+              [
+                7,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 2,
+            "first_factor": [
+              [
+                3,
+                1
+              ],
+              [
+                4,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ]
+          }
+        ]
+      },
+      "beats_a_current_incumbent_diagnostically": false
+    }
+  ],
+  "terminal_family_leaders": [
+    {
+      "circuit_atoms": [
+        "qb",
+        "v2r",
+        "xxs",
+        "yvyb"
+      ],
+      "terminal_count": 2,
+      "objective": [
+        21,
+        19,
+        48,
+        30,
+        1000000000
+      ],
+      "profile": {
+        "circuit_atoms": [
+          "qb",
+          "v2r",
+          "xxs",
+          "yvyb"
+        ],
+        "circuit_gate_count": 7,
+        "introduced_variables": 20,
+        "monomial_cleanup_steps": 26,
+        "cubic_output_rank": 9,
+        "homogeneous_dimension": 33,
+        "constant_kernel_dimensions": [
+          3
+        ],
+        "total_constant_kernel_dimension": 3,
+        "quotient_dimension": 30,
+        "projected_collision_separated": true,
+        "cubic_power_ranks_mod_1000003": [
+          21,
+          18,
+          16,
+          15,
+          14,
+          13,
+          12,
+          11,
+          10,
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ],
+        "cubic_power_profile_terminated": true,
+        "cubic_sampled_index": 19,
+        "cubic_rank_mod_1000003": 21,
+        "cotangent_hessian_rank_mod_1000003": 48,
+        "quartic_dimension": 60
+      },
+      "plan": {
+        "circuit_atoms": [
+          "qb",
+          "v2r",
+          "xxs",
+          "yvyb"
+        ],
+        "monomial_plan": [
+          {
+            "component": 2,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                2
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 1,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 8,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 9,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 2,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                2
+              ]
+            ]
+          },
+          {
+            "component": 1,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                4,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 8,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                4,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 9,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                4,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 2,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                5,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 10,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 0,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                6,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 6,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                6,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 1,
+            "first_factor": [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 8,
+            "first_factor": [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 9,
+            "first_factor": [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 1,
+            "first_factor": [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                4,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 8,
+            "first_factor": [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                4,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 9,
+            "first_factor": [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                4,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 1,
+            "first_factor": [
+              [
+                3,
+                2
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 8,
+            "first_factor": [
+              [
+                3,
+                2
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 9,
+            "first_factor": [
+              [
+                3,
+                2
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 2,
+            "first_factor": [
+              [
+                1,
+                1
+              ],
+              [
+                4,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 2,
+            "first_factor": [
+              [
+                1,
+                1
+              ],
+              [
+                4,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                5,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 2,
+            "first_factor": [
+              [
+                1,
+                1
+              ],
+              [
+                8,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 2,
+            "first_factor": [
+              [
+                1,
+                1
+              ],
+              [
+                9,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 2,
+            "first_factor": [
+              [
+                1,
+                1
+              ],
+              [
+                10,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "circuit_atoms": [
+        "qb",
+        "v2r",
+        "yvyb"
+      ],
+      "terminal_count": 2,
+      "objective": [
+        19,
+        19,
+        44,
+        27,
+        1000000000
+      ],
+      "profile": {
+        "circuit_atoms": [
+          "qb",
+          "v2r",
+          "yvyb"
+        ],
+        "circuit_gate_count": 5,
+        "introduced_variables": 18,
+        "monomial_cleanup_steps": 25,
+        "cubic_output_rank": 8,
+        "homogeneous_dimension": 30,
+        "constant_kernel_dimensions": [
+          3
+        ],
+        "total_constant_kernel_dimension": 3,
+        "quotient_dimension": 27,
+        "projected_collision_separated": true,
+        "cubic_power_ranks_mod_1000003": [
+          19,
+          17,
+          16,
+          15,
+          14,
+          13,
+          12,
+          11,
+          10,
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ],
+        "cubic_power_profile_terminated": true,
+        "cubic_sampled_index": 19,
+        "cubic_rank_mod_1000003": 19,
+        "cotangent_hessian_rank_mod_1000003": 44,
+        "quartic_dimension": 54
+      },
+      "plan": {
+        "circuit_atoms": [
+          "qb",
+          "v2r",
+          "yvyb"
+        ],
+        "monomial_plan": [
+          {
+            "component": 2,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                2
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 1,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 6,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 7,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 2,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                2
+              ]
+            ]
+          },
+          {
+            "component": 1,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                4,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 6,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                4,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 7,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                4,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 2,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                5,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 8,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 0,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                2
+              ]
+            ]
+          },
+          {
+            "component": 1,
+            "first_factor": [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 6,
+            "first_factor": [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 7,
+            "first_factor": [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 1,
+            "first_factor": [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                4,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 6,
+            "first_factor": [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                4,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 7,
+            "first_factor": [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                4,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 1,
+            "first_factor": [
+              [
+                3,
+                2
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 6,
+            "first_factor": [
+              [
+                3,
+                2
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 7,
+            "first_factor": [
+              [
+                3,
+                2
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 2,
+            "first_factor": [
+              [
+                1,
+                1
+              ],
+              [
+                4,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 2,
+            "first_factor": [
+              [
+                1,
+                1
+              ],
+              [
+                4,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                5,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 2,
+            "first_factor": [
+              [
+                1,
+                1
+              ],
+              [
+                6,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 2,
+            "first_factor": [
+              [
+                1,
+                1
+              ],
+              [
+                7,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 2,
+            "first_factor": [
+              [
+                1,
+                1
+              ],
+              [
+                8,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "circuit_atoms": [
+        "qb",
+        "xxs",
+        "yvyb"
+      ],
+      "terminal_count": 7,
+      "objective": [
+        19,
+        18,
+        40,
+        25,
+        1000000000
+      ],
+      "profile": {
+        "circuit_atoms": [
+          "qb",
+          "xxs",
+          "yvyb"
+        ],
+        "circuit_gate_count": 6,
+        "introduced_variables": 19,
+        "monomial_cleanup_steps": 26,
+        "cubic_output_rank": 8,
+        "homogeneous_dimension": 31,
+        "constant_kernel_dimensions": [
+          5,
+          1
+        ],
+        "total_constant_kernel_dimension": 6,
+        "quotient_dimension": 25,
+        "projected_collision_separated": true,
+        "cubic_power_ranks_mod_1000003": [
+          19,
+          17,
+          15,
+          14,
+          13,
+          12,
+          11,
+          10,
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ],
+        "cubic_power_profile_terminated": true,
+        "cubic_sampled_index": 18,
+        "cubic_rank_mod_1000003": 19,
+        "cotangent_hessian_rank_mod_1000003": 40,
+        "quartic_dimension": 50
+      },
+      "plan": {
+        "circuit_atoms": [
+          "qb",
+          "xxs",
+          "yvyb"
+        ],
+        "monomial_plan": [
+          {
+            "component": 2,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                2
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 1,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                2
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                2
+              ],
+              [
+                2,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 7,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                2
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                2
+              ],
+              [
+                2,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 8,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                2
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                2
+              ],
+              [
+                2,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 2,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 2,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                4,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 1,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 7,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 8,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 9,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 0,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                5,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 5,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                5,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 1,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                4,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 7,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                4,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 8,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                4,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 1,
+            "first_factor": [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 2,
+            "first_factor": [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 7,
+            "first_factor": [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 8,
+            "first_factor": [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 1,
+            "first_factor": [
+              [
+                1,
+                1
+              ],
+              [
+                10,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 7,
+            "first_factor": [
+              [
+                1,
+                1
+              ],
+              [
+                10,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 8,
+            "first_factor": [
+              [
+                1,
+                1
+              ],
+              [
+                10,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 2,
+            "first_factor": [
+              [
+                1,
+                1
+              ],
+              [
+                7,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 2,
+            "first_factor": [
+              [
+                1,
+                1
+              ],
+              [
+                8,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 2,
+            "first_factor": [
+              [
+                1,
+                1
+              ],
+              [
+                9,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 2,
+            "first_factor": [
+              [
+                3,
+                1
+              ],
+              [
+                4,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "circuit_atoms": [
+        "qb",
+        "yvyb"
+      ],
+      "terminal_count": 3,
+      "objective": [
+        18,
+        18,
+        38,
+        23,
+        1000000000
+      ],
+      "profile": {
+        "circuit_atoms": [
+          "qb",
+          "yvyb"
+        ],
+        "circuit_gate_count": 4,
+        "introduced_variables": 17,
+        "monomial_cleanup_steps": 25,
+        "cubic_output_rank": 8,
+        "homogeneous_dimension": 29,
+        "constant_kernel_dimensions": [
+          5,
+          1
+        ],
+        "total_constant_kernel_dimension": 6,
+        "quotient_dimension": 23,
+        "projected_collision_separated": true,
+        "cubic_power_ranks_mod_1000003": [
+          18,
+          16,
+          15,
+          14,
+          13,
+          12,
+          11,
+          10,
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ],
+        "cubic_power_profile_terminated": true,
+        "cubic_sampled_index": 18,
+        "cubic_rank_mod_1000003": 18,
+        "cotangent_hessian_rank_mod_1000003": 38,
+        "quartic_dimension": 46
+      },
+      "plan": {
+        "circuit_atoms": [
+          "qb",
+          "yvyb"
+        ],
+        "monomial_plan": [
+          {
+            "component": 2,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                2
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 1,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                2
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                2
+              ],
+              [
+                2,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 5,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                2
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                2
+              ],
+              [
+                2,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 6,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                2
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                2
+              ],
+              [
+                2,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 2,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 2,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                4,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 1,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 5,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 6,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 7,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 0,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                2
+              ]
+            ]
+          },
+          {
+            "component": 1,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                4,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 5,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                4,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 6,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                4,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 1,
+            "first_factor": [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 2,
+            "first_factor": [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 5,
+            "first_factor": [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 6,
+            "first_factor": [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 1,
+            "first_factor": [
+              [
+                1,
+                1
+              ],
+              [
+                8,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 5,
+            "first_factor": [
+              [
+                1,
+                1
+              ],
+              [
+                8,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 6,
+            "first_factor": [
+              [
+                1,
+                1
+              ],
+              [
+                8,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 2,
+            "first_factor": [
+              [
+                1,
+                1
+              ],
+              [
+                5,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 2,
+            "first_factor": [
+              [
+                1,
+                1
+              ],
+              [
+                6,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 2,
+            "first_factor": [
+              [
+                1,
+                1
+              ],
+              [
+                7,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 2,
+            "first_factor": [
+              [
+                3,
+                1
+              ],
+              [
+                4,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "circuit_atoms": [
+        "v2r",
+        "yvyb"
+      ],
+      "terminal_count": 12,
+      "objective": [
+        18,
+        18,
+        40,
+        25,
+        1000000000
+      ],
+      "profile": {
+        "circuit_atoms": [
+          "v2r",
+          "yvyb"
+        ],
+        "circuit_gate_count": 4,
+        "introduced_variables": 18,
+        "monomial_cleanup_steps": 28,
+        "cubic_output_rank": 8,
+        "homogeneous_dimension": 30,
+        "constant_kernel_dimensions": [
+          5
+        ],
+        "total_constant_kernel_dimension": 5,
+        "quotient_dimension": 25,
+        "projected_collision_separated": true,
+        "cubic_power_ranks_mod_1000003": [
+          18,
+          16,
+          15,
+          14,
+          13,
+          12,
+          11,
+          10,
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ],
+        "cubic_power_profile_terminated": true,
+        "cubic_sampled_index": 18,
+        "cubic_rank_mod_1000003": 18,
+        "cotangent_hessian_rank_mod_1000003": 40,
+        "quartic_dimension": 50
+      },
+      "plan": {
+        "circuit_atoms": [
+          "v2r",
+          "yvyb"
+        ],
+        "monomial_plan": [
+          {
+            "component": 2,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                2
+              ]
+            ]
+          },
+          {
+            "component": 1,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 5,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 6,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 2,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 1,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                4,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 5,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                4,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 6,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                4,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 1,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                2
+              ]
+            ]
+          },
+          {
+            "component": 5,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                2
+              ]
+            ]
+          },
+          {
+            "component": 6,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                2
+              ]
+            ]
+          },
+          {
+            "component": 2,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                7,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 8,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 0,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                2
+              ]
+            ]
+          },
+          {
+            "component": 1,
+            "first_factor": [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 2,
+            "first_factor": [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 5,
+            "first_factor": [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 6,
+            "first_factor": [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 1,
+            "first_factor": [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                4,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 5,
+            "first_factor": [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                4,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 6,
+            "first_factor": [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                4,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 1,
+            "first_factor": [
+              [
+                3,
+                2
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 5,
+            "first_factor": [
+              [
+                3,
+                2
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 6,
+            "first_factor": [
+              [
+                3,
+                2
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 2,
+            "first_factor": [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                7,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 2,
+            "first_factor": [
+              [
+                1,
+                1
+              ],
+              [
+                5,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 2,
+            "first_factor": [
+              [
+                1,
+                1
+              ],
+              [
+                6,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 2,
+            "first_factor": [
+              [
+                2,
+                1
+              ],
+              [
+                8,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "circuit_atoms": [
+        "yvyb"
+      ],
+      "terminal_count": 3,
+      "objective": [
+        19,
+        18,
+        44,
+        26,
+        1000000000
+      ],
+      "profile": {
+        "circuit_atoms": [
+          "yvyb"
+        ],
+        "circuit_gate_count": 2,
+        "introduced_variables": 17,
+        "monomial_cleanup_steps": 28,
+        "cubic_output_rank": 8,
+        "homogeneous_dimension": 29,
+        "constant_kernel_dimensions": [
+          3
+        ],
+        "total_constant_kernel_dimension": 3,
+        "quotient_dimension": 26,
+        "projected_collision_separated": true,
+        "cubic_power_ranks_mod_1000003": [
+          19,
+          16,
+          15,
+          14,
+          13,
+          12,
+          11,
+          10,
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ],
+        "cubic_power_profile_terminated": true,
+        "cubic_sampled_index": 18,
+        "cubic_rank_mod_1000003": 19,
+        "cotangent_hessian_rank_mod_1000003": 44,
+        "quartic_dimension": 52
+      },
+      "plan": {
+        "circuit_atoms": [
+          "yvyb"
+        ],
+        "monomial_plan": [
+          {
+            "component": 2,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                2
+              ]
+            ]
+          },
+          {
+            "component": 1,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 3,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 4,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 1,
+            "first_factor": [
+              [
+                1,
+                2
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 3,
+            "first_factor": [
+              [
+                1,
+                2
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 4,
+            "first_factor": [
+              [
+                1,
+                2
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 2,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 2,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                5,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 6,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 1,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 3,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 4,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 0,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                2
+              ]
+            ]
+          },
+          {
+            "component": 1,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                5,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 3,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                5,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 4,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                5,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 1,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                8,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 3,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                8,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 4,
+            "first_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                8,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 1,
+            "first_factor": [
+              [
+                1,
+                1
+              ],
+              [
+                7,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 3,
+            "first_factor": [
+              [
+                1,
+                1
+              ],
+              [
+                7,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 4,
+            "first_factor": [
+              [
+                1,
+                1
+              ],
+              [
+                7,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 2,
+            "first_factor": [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 2,
+            "first_factor": [
+              [
+                1,
+                1
+              ],
+              [
+                4,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 2,
+            "first_factor": [
+              [
+                1,
+                1
+              ],
+              [
+                9,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 2,
+            "first_factor": [
+              [
+                1,
+                1
+              ],
+              [
+                9,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                5,
+                1
+              ]
+            ]
+          },
+          {
+            "component": 2,
+            "first_factor": [
+              [
+                2,
+                1
+              ],
+              [
+                6,
+                1
+              ]
+            ],
+            "second_factor": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

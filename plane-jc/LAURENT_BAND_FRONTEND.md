@@ -119,6 +119,22 @@ least:
 Once those items are supplied, the new front end performs the remaining
 support and bracket transcription mechanically.
 
+There is now a complementary
+[log-boundary compiler](LOG_BOUNDARY_COMPILER.md).  It consumes certified
+positive local branch scales and builds the toroidal proximity/boundary
+package.  It does not weaken the refusal above: neither polygons nor positive
+local scales are functions of the printed corners alone.  A normal-form
+theorem must supply both exhaustive branch lists before the Laurent-band and
+log-boundary compilers can be used together.
+
+When a compiled Poisson-square truncation lands in the three-layer degree
+box `(3,4;2,3)`, the
+[Poisson-square rigidity theorem](POISSON_SQUARE_RIGIDITY.md) replaces its
+geometric reduced coefficient locus by three classified components: the
+four-parameter tangent closure, `C=0`, and `A=0`.  Only the nonreduced
+intersection structure remains a separate input; the three generic
+multiplicities are already `2,3,1`.
+
 This is also an executable distinction.  The audited `(72,108)` certificate
 contains exactly two distinct cases and compiles both.  The `(75,125)` F2
 record contains no cases, is marked non-exhaustive, and raises an error if a

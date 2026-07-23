@@ -1,0 +1,80 @@
+{
+  "central_component": {
+    "degree": 6,
+    "map": "W^2(W-1)^2(W-3)^2",
+    "ramification_contributions": {
+      "cluster_nodes": 3,
+      "infinity": 5,
+      "stationary_critical_points": 2
+    },
+    "riemann_hurwitz_total": 10
+  },
+  "diagonal_bubble": {
+    "local_equations": [
+      "S-lambda_x=9*U_x^2",
+      "S-lambda_y=4*U_y^2",
+      "S-lambda_z=36*U_z^2"
+    ],
+    "node_indices": [
+      2,
+      2,
+      2
+    ]
+  },
+  "experiment": "degree-six equal-scale admissible source expansion",
+  "first_target_bubble": {
+    "degree_over_bubble": 6,
+    "moving_branch_values": [
+      "-9/4",
+      "-1",
+      "-9"
+    ],
+    "node_indices": [
+      2,
+      2,
+      2
+    ],
+    "tail_degrees": [
+      2,
+      2,
+      2
+    ],
+    "tail_maps": [
+      "9*X*(X - 1)",
+      "4*X*(X - 1)",
+      "36*X*(X - 1)"
+    ]
+  },
+  "node_deformation": {
+    "interpretation": "the saturated source-node choices equal the four Kummer preimages of the diagonal target blowup center",
+    "normalization_branch_count": 4,
+    "normalization_branches": [
+      {
+        "sx": "q",
+        "sy": "-1*q",
+        "sz": "-1*q",
+        "tau": "q^2"
+      },
+      {
+        "sx": "q",
+        "sy": "-1*q",
+        "sz": "1*q",
+        "tau": "q^2"
+      },
+      {
+        "sx": "q",
+        "sy": "1*q",
+        "sz": "-1*q",
+        "tau": "q^2"
+      },
+      {
+        "sx": "q",
+        "sy": "1*q",
+        "sz": "1*q",
+        "tau": "q^2"
+      }
+    ],
+    "ring": "k[[tau,sx,sy,sz]]/(sx^2-tau,sy^2-tau,sz^2-tau)"
+  },
+  "scope": "equal-scale and first diagonal-resonance source charts only; extension to the selected admissible-cover component and label descent are not proved"
+}

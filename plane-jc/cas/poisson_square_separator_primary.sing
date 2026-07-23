@@ -1,0 +1,191 @@
+// Generic-primary separator attack for the bounded equation [P,Q]=X^2.
+//
+// The three separators below vanish on two of the three reduced components
+// and are generically nonzero on the remaining component.  Saturation
+// therefore extracts the corresponding generic primary closure without
+// asking Singular for a full primary decomposition.
+
+LIB "primdec.lib";
+
+ring r = 0,
+  (a0,a1,a2,a3,b0,b1,b2,b3,b4,c0,c1,c2,d0,d1,d2,d3),
+  dp;
+
+ideal I =
+  2*a2*c2-3*a3*c1,
+  4*a1*c2-a2*c1-6*a3*c0,
+  6*a0*c2+a1*c1-4*a2*c0,
+  3*a0*c1-2*a1*c0,
+  -4*b4*c2+6*a3*d3,
+  -2*b3*c2-6*b4*c1+7*a2*d3+3*a3*d2,
+  -4*b3*c1-8*b4*c0+8*a1*d3+4*a2*d2,
+  2*b1*c2-2*b2*c1-6*b3*c0+9*a0*d3+5*a1*d2+a2*d1-3*a3*d0,
+  4*b0*c2-4*b2*c0+6*a0*d2+2*a1*d1-2*a2*d0,
+  2*b0*c1-2*b1*c0+3*a0*d1-a1*d0,
+  2*b4*d3,
+  3*b3*d3,
+  4*b2*d3+b3*d2-2*b4*d1,
+  5*b1*d3+2*b2*d2-b3*d1-4*b4*d0,
+  6*b0*d3+3*b1*d2-3*b3*d0,
+  4*b0*d2+b1*d1-2*b2*d0,
+  2*b0*d1-b1*d0-1;
+
+proc sameIdeal(ideal first, ideal second)
+{
+  if (size(reduce(first,std(second))) != 0)
+  {
+    return(0);
+  }
+  if (size(reduce(second,std(first))) != 0)
+  {
+    return(0);
+  }
+  return(1);
+}
+
+// T is the nondegenerate tangent-pencil component, C0 is the C=0
+// component, and A0 is the A=0 component.
+poly tangentForC0 =
+  8*b2^2*c0-4*b1*b2*c1+2*b1^2*c2+3*a3;
+poly tangentForA0 =
+  -4*b1*c0+2*b0*c1+3*a0*d1;
+poly separatorT = a0*c0;
+poly separatorC0 = a0*tangentForC0;
+poly separatorA0 = c0*tangentForA0;
+ideal baseBasis = std(I);
+
+int start = timer;
+ideal QT = sat(I,ideal(separatorT));
+"tangent-primary-closure";
+"dimension";
+int tangentDimension = dim(std(QT));
+tangentDimension;
+"standard-basis-size";
+int tangentBasisSize = size(std(QT));
+tangentBasisSize;
+"milliseconds";
+timer-start;
+
+start = timer;
+ideal QC0 = sat(I,ideal(separatorC0));
+"C-zero-primary-closure";
+"dimension";
+int cZeroDimension = dim(std(QC0));
+cZeroDimension;
+"standard-basis-size";
+int cZeroBasisSize = size(std(QC0));
+cZeroBasisSize;
+"milliseconds";
+timer-start;
+
+start = timer;
+ideal QA0 = sat(I,ideal(separatorA0));
+"A-zero-primary-closure";
+"dimension";
+int aZeroDimension = dim(std(QA0));
+aZeroDimension;
+"standard-basis-size";
+int aZeroBasisSize = size(std(QA0));
+aZeroBasisSize;
+"milliseconds";
+timer-start;
+
+start = timer;
+ideal genericIntersection = intersect(QT,QC0);
+genericIntersection = intersect(genericIntersection,QA0);
+"generic-primary-intersection";
+"dimension";
+int intersectionDimension = dim(std(genericIntersection));
+intersectionDimension;
+"standard-basis-size";
+int intersectionBasisSize = size(std(genericIntersection));
+intersectionBasisSize;
+"equals-full-ideal";
+int exact = sameIdeal(I,genericIntersection);
+exact;
+"equals-I-plus-d3";
+int cyclicDefect = sameIdeal(I+ideal(d3),genericIntersection);
+cyclicDefect;
+"milliseconds";
+timer-start;
+
+if (exact == 1)
+{
+  "FAIL: the separator defect unexpectedly disappeared";
+  exit(1);
+}
+else
+{
+  "DEFECT: separator closures do not reconstruct I";
+  "I-contained-in-generic-intersection";
+  size(reduce(I,std(genericIntersection))) == 0;
+  ideal defectRemainders = reduce(genericIntersection,std(I));
+  "nonzero-defect-remainder-count";
+  int defectRemainderCount = size(defectRemainders);
+  defectRemainderCount;
+  if (
+    (tangentDimension != 4)
+    || (cZeroDimension != 4)
+    || (aZeroDimension != 4)
+    || (intersectionDimension != 4)
+    || (tangentBasisSize != 49)
+    || (cZeroBasisSize != 104)
+    || (aZeroBasisSize != 18)
+    || (intersectionBasisSize != 187)
+    || (defectRemainderCount != 112)
+    || (cyclicDefect != 0)
+  )
+  {
+    "FAIL: the generic-primary separator data changed";
+    exit(1);
+  }
+}
+
+proc printTorsionWitness(string label, ideal closure, poly separator)
+{
+  ideal remainders = reduce(closure,baseBasis);
+  int bestIndex = 0;
+  int bestDegree = 1000000;
+  int index;
+  for (index=1; index<=size(remainders); index++)
+  {
+    if (
+      (remainders[index] != 0)
+      && (deg(remainders[index]) < bestDegree)
+    )
+    {
+      bestIndex = index;
+      bestDegree = deg(remainders[index]);
+    }
+  }
+  if (bestIndex == 0)
+  {
+    ERROR("separator closure supplied no torsion witness");
+  }
+  poly witness = remainders[bestIndex];
+  int exponent = 1;
+  while (
+    (reduce(separator^exponent*witness,baseBasis) != 0)
+    && (exponent <= 8)
+  )
+  {
+    exponent++;
+  }
+  if (exponent > 8)
+  {
+    ERROR("torsion exponent exceeded the audit bound");
+  }
+  label;
+  "witness-degree";
+  bestDegree;
+  "separator-exponent";
+  exponent;
+  "witness";
+  witness;
+}
+
+"explicit-separator-torsion-witnesses";
+printTorsionWitness("tangent",QT,separatorT);
+printTorsionWitness("C-zero",QC0,separatorC0);
+printTorsionWitness("A-zero",QA0,separatorA0);
+"PASS: every generic-primary separator exposes exact torsion";

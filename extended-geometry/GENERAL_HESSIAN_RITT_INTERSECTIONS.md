@@ -279,6 +279,85 @@ intersection,
 for all requested words.  Thus (6.2), rather than another full coefficient
 elimination, is the next general symbolic target.
 
+There is a chart-independent version of this test.  Triangular reconstruction
+of a normalized \(a\circ b\) decomposition uses only coefficients of degrees
+at least two.  It therefore defines a canonical regular function
+
+\[
+ \lambda_{a,b}(c_2,\ldots,c_{N-1})
+\]
+
+on the Hessian-composition scheme.  If \(H_D\) is the sum of the Hessian
+residual ideals for a collection \(D\) of cuts, then the full synchronized
+polynomial ideal is
+
+\[
+ H_D+
+ \bigl(\lambda_d-c_1:d\in D\bigr).                            \tag{6.3}
+\]
+
+Consequently synchronization is equivalent, scheme-theoretically, to the
+finite ideal-membership test
+
+\[
+ \lambda_d-\lambda_{d_0}\in H_D
+ \qquad(d\in D).                                               \tag{6.4}
+\]
+
+When (6.4) holds, (6.3) is just
+\(H_D+(\lambda_{d_0}-c_1)\): the polynomial intersection is the graph of one
+regular function over the Hessian intersection, with no change to its
+nilpotent structure.
+
+Exact ambient Groebner reduction proves (6.4) for the collection of all
+proper cuts in degrees `6`, `8`, `10`, and `12`.  Pulling the same test back
+to the canonical factor chart of one incidence makes the larger pairwise
+problems much smaller.  Exact factor-chart reduction proves every pair in
+degrees `12`, `14`, `15`, `16`, and `18`; because the factor chart is
+canonically inverse to coefficient reconstruction on its incidence, these
+are scheme-theoretic statements in Hessian coefficient space, not merely
+tests on selected parametrized components.  Consequently every multiple
+Hessian-composition intersection through degree `18` is synchronized.
+
+In degree `24`, all fifteen pairs satisfy (6.4).  Fourteen reduce directly
+on a canonical factor chart.  The remaining outer-cut pair `{2,3}` is the
+degree-six `3 o 2` Dickson collision transported on the right by a generic
+quartic.  Five model parameters are recovered polynomially from the source
+chart; after replacing the other four coefficients by graph-normal
+coordinates, exact reduction in a `4 normal | 5 base` block ring gives a
+Groebner basis of size `63` and reduces the lift difference to zero.  Hence
+every multiple Hessian-composition intersection through degree `24` is
+scheme-theoretically synchronized.
+
+In degree `30`, five further factor-chart reductions form the spanning tree
+
+\[
+ 2\mathbin{-}6\mathbin{-}3\mathbin{-}15\mathbin{-}5\mathbin{-}10
+                                                               \tag{6.5}
+\]
+
+on the six proper outer cuts.  With each edge oriented from its smaller
+source chart, the exact Groebner-basis sizes are `11, 6, 95, 6, 11`.
+Every edge difference belongs to the sum of its two Hessian ideals, hence to
+the all-six ideal.  Transitivity along (6.5) proves that the global all-six
+degree-thirty intersection is scheme-theoretically synchronized, including
+components which miss the complete-decomposition braid charts.  This does
+not certify every degree-thirty subintersection.  The nested pair
+\(\{2,10\}\) is separately certified in `4 normal | 7 base` coordinates,
+with Groebner-basis size four.  The five two-cut pairs
+
+\[
+ \{2,3\},\ \{2,5\},\ \{2,15\},\ \{3,5\},\ \{3,10\}
+                                                               \tag{6.6}
+\]
+
+remain outside the permanent exact pair certificate.  Their core reductions
+and ranked attacks are recorded in
+[the degree-thirty synchronization attack note](DEGREE30_HESSIAN_SYNCHRONIZATION_ATTACKS.md).
+Four additional non-tree pairs have separate exact factor-chart
+certificates, so altogether ten of the fifteen degree-thirty pairs are
+settled.
+
 ## 7. The low-degree diagrams in relation-graph form
 
 | degree | normalized basis / graph | dominant all-order family | affine dimension | marked dimension |
@@ -368,23 +447,103 @@ image; there is no path-labelled second component.  The same exact clean-open
 gcd test as in degree twenty-four proves that (9.2) meets the marked clean
 open.
 
-## 10. What remains to prove
+## 10. Scheme structure of the braid 2-cell
+
+The graph-level conclusion in Section 9 is correct only after reduction.
+The exact follow-up calculation in
+[the Ritt move 2-complex note](RITT_MOVE_2_COMPLEX.md) fills the six-vertex
+graph by its braid hexagon and compares the two path ideals on the
+`2 o 3 o 5` chart.
+
+Both paths have the same smooth normalization
+\(\mathbb A^2_{t,z}\) and the same reduced Dickson image.  Their unreduced
+schemes differ.  One path is already the reduced Dickson surface; the other
+has nilpotence index four, one excess tangent direction along `z=0`, and
+normalization-defect annihilator `(z^2)`, with reduced support `(z)`.  The
+discrepancy is supported exactly where the Dickson family degenerates to the
+monomial/power family.
+The same tangent dimensions occur after computing directly in the
+29-dimensional polynomial coefficient space and its 28-dimensional Hessian
+projection, so the first-order discrepancy is not created by the chosen
+complete-decomposition chart.  Natural coordinate and annihilator slices
+have respectively the curvilinear algebras
+`QQ[epsilon]/(epsilon^2)` and `QQ[epsilon]/(epsilon^5)`; in the latter, the
+reduced-image ideal pulls back to `(epsilon^2)`.
+At both the generic and monomial test points, projection identifies the
+common polynomial tangent intersection with the common Hessian tangent
+intersection.  Thus there is no first-order synchronization defect on these
+certified Dickson opens.
+In fact, restoring the degree-one residual gives exactly the same endpoint,
+path, and boundary ideals on both opposite endpoint charts.  The braid
+nilpotents are therefore already present in synchronized ordinary
+composition; Hessian projection does not create them there.  Together with
+the independent spanning-tree certificate (6.5), this gives both an exact
+local transfer theorem for the Dickson component and global synchronization
+of the all-six intersection.  It does not classify the scheme structure of
+possible off-chart components.
+At the monomial point, omitting any prime outer-degree cut leaves tangent
+dimension two, while omitting any composite outer-degree cut `6`, `10`, or
+`15` leaves dimension three; this gives the same asymmetry for all three
+rotations of the braid.
+The full ideal, nilpotence, and doubled-annihilator calculation also agrees
+on the opposite `5 o 3 o 2` endpoint chart.
+Across all six charts, the thick half-braids omitting composite cuts
+`10`, `15`, and `6` have respectively
+
+\[
+(\text{nilpotence index},\text{annihilator})
+=(4,(z^2)),\quad(3,(z^2)),\quad(4,(z^4)).
+\]
+
+The complementary half-braids omitting prime cuts `3`, `2`, and `5` are
+reduced.  Opposite endpoint charts agree exactly, so this is labelled-sector
+data of the braid 2-cell rather than a chart artifact.
+
+The corresponding annihilator slices have
+
+| omitted cut | exact slice algebra | Hilbert vector | conormal rank | Tor ranks |
+|---:|---|---|---:|---|
+| 10 | \(\mathbb Q[u]/(u^5)\) | `(1,1,1,1,1)` | 1 | `(1,1)` |
+| 15 | \(\mathbb Q[u,v]/(u^2,v^2)\) | `(1,2,1)` | 2 | `(1,2,1)` |
+| 6 | \(\mathbb Q[u,v]/(u^4,v^2)\) | `(1,2,2,2,1)` | 2 | `(1,2,1)` |
+
+Each has one-dimensional socle.  Exact elimination gives the last two
+presentations after polynomial changes of local coordinates, so their
+complete-intersection and Tor assertions do not rely only on the Hilbert
+vectors.  The internal generator orders `(5)`, `(2,2)`, and `(4,2)` refine
+both the nilpotence exponent and the ungraded Tor ranks.
+
+Thus relation graphs classify the reduced dense family on this chart, while
+scheme-theoretic path coherence requires 2-cells carrying a comparison
+module (or its derived enhancement).
+
+## 11. What remains to prove
 
 The experiments now point to a short, theorem-driven program.
 
 1. **Prove synchronization.**  Establish (6.2) generically on every minimal
    prime, preferably by a differential or ramification argument rather than
-   degree-by-degree elimination.
+   degree-by-degree elimination.  Every multiple intersection through degree
+   `24` now satisfies it globally by (6.4).  The global all-six
+   degree-thirty intersection is also synchronized by the spanning tree
+   (6.5).  The five two-cut cases in (6.6), and subintersections whose
+   requested-cut graph does not contain a certified connecting path, remain.
 2. **Transfer the normal form.**  Once synchronization holds, apply the
    relation-graph theorem blockwise and the finite marked-Hessian
    normalization to obtain the component classification and (5.3).
 3. **Control scheme structure.**  Ziegler's theorem classifies reduced
-   points/families; nilpotents, embedded primes, and excess conormal modules
-   remain separate intersection-theoretic questions.
-4. **Globalize the degree-24/30 certificates.**  The new computations are on
-   one prime-word chart.  A full Hessian-space calculation, or the general
-   synchronization theorem, is needed to exclude components not meeting that
-   chart.
+   points/families.  The degree-thirty braid now has a complete sectorwise
+   table of nilpotence, conductor, transverse Artin algebras, conormal ranks,
+   cotangent homology, and local Tor ranks.  The transverse comparison
+   morphism is the explicit augmentation to the reduced point.  Its gluing
+   along the moving monomial divisor, and the analogous data on general
+   commuting and braid cells, remain to be organized functorially.
+4. **Globalize the degree-30 component classification.**  The degree-thirty tangent
+   asymmetry is now verified directly in polynomial and Hessian coefficient
+   space, and the exact ideal comparison agrees on all six
+   complete-decomposition charts.  Synchronization of the all-six scheme is
+   global, but a full ambient minimal-prime calculation is still needed to
+   exclude additional synchronized components not meeting any such chart.
 5. **Produce clean witnesses blockwise.**  The Dickson blocks now have exact
    algebraic clean-open certificates in degrees 24 and 30.  Exponential
    blocks should admit a uniform specialization argument extending the
@@ -408,4 +567,5 @@ additive block dimension formula (5.3).
 .venv/bin/python scripts/explore_degree18_hessian_ritt_power_core.py
 .venv/bin/python scripts/explore_degree24_hessian_ritt_all_orders.py
 .venv/bin/python scripts/explore_degree30_hessian_ritt_braid.py
+.venv/bin/python scripts/verify_degree30_ritt_2_complex.py
 ```

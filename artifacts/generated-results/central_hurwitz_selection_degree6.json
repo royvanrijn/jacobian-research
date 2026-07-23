@@ -1,0 +1,51 @@
+{
+  "conclusion": "the ambient central Hurwitz problem has two cover classes, but the labelled source-root cross-ratio selects the polynomial class etale-locally at a=3",
+  "experiment": "degree-six central Hurwitz component selection",
+  "monodromy": {
+    "classes_after_unordering_simple_branch_points": 2,
+    "classes_with_ordered_simple_branch_points": 2,
+    "factorizations_with_fixed_six_cycle": 12
+  },
+  "ramification_profiles": [
+    [
+      6
+    ],
+    [
+      2,
+      2,
+      2
+    ],
+    [
+      2,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      2,
+      1,
+      1,
+      1,
+      1
+    ]
+  ],
+  "scope": "central vertex component selection in the labelled degree-six (2,2,2) chart; construction of the global comparison morphism, stack inertia, and label descent remain open",
+  "square_cubic_model": {
+    "a=3_is_reduced": true,
+    "fiber_factor_at_a=3": "64*(a - 3)*(a + 2)*(2*a - 3)*(2*a + 1)*(3*a - 2)*(3*a - 1)*(9*a**6 - 27*a**5 + 79*a**4 - 113*a**3 + 79*a**2 - 27*a + 9)",
+    "map": "(W(W-1)(W-a))^2",
+    "other_cover_factor": "9*a**6 - 27*a**5 + 79*a**4 - 113*a**3 + 79*a**2 - 27*a + 9",
+    "other_cover_factor_irreducible_over_Q": true,
+    "source_relabelling_orbit": [
+      "-2",
+      "-1/2",
+      "1/3",
+      "2/3",
+      "3/2",
+      "3"
+    ],
+    "unordered_scaled_branch_invariant": "4*(8*a**6 - 24*a**5 + 21*a**4 - 2*a**3 + 21*a**2 - 24*a + 8)**2/(729*a**4*(a - 1)**4)",
+    "value_at_a=3": "784996/59049"
+  }
+}

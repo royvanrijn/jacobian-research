@@ -1,0 +1,18 @@
+{
+  "format": "cubic-index-three-rank-normal-form-exclusion-v1",
+  "field": "characteristic zero",
+  "family": "H=(0,lambda*x1^3,x2*(x1*x3-x2*x4)+p,x1*(x1*x3-x2*x4)+q), p,q arbitrary binary cubics",
+  "coefficient_equations_of_JH_cube": [
+    "-3*lambda",
+    "-9*b3*lambda",
+    "3*a1*lambda",
+    "3*lambda",
+    "3*lambda*(2*a2 - b1)",
+    "3*lambda*(3*a3 - 2*b2)"
+  ],
+  "index_three_condition": "lambda=0",
+  "index_three_locus_rank_bound": 2,
+  "index_three_locus_inverse_degree_bound": 5,
+  "rank_three_consequence": "the lambda!=0 branch has (JH)^3!=0, hence index at least 4",
+  "frontier_consequence": "the entire displayed normal-form family contains no map simultaneously on the rank-three and index-three open strata"
+}

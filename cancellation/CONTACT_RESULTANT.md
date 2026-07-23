@@ -656,21 +656,28 @@ gives the following contact-resultant theorem immediately:
  \boxed{
  \begin{gathered}
   \operatorname{Res}(K_{m,r},L_{m,r})\ne0
-       \quad(1\le m\le6,\ r\ge1),\\
-  \text{and for every fixed }m,\text{ the same holds for all sufficiently
-  large }r.
+       \quad(1\le m\le1000,\ r\ge1),\\
+  \text{and for every }m\ge2,\text{ the same holds whenever }r>X_m/m,
+  \\
+  \text{and whenever }mr\ge K_0,\quad r\ge5(mr)^{21/40}.
  \end{gathered}}                                    \tag{47}
 \]
 
+Here `X_m` is the explicit Dusart threshold (8f), while `K_0` is the
+non-numerical Baker--Harman--Pintz threshold, in the linked arithmetic
+theorem.
+
 More generally, (46) transfers every proved parameter-irreducibility range,
 including the prime and two-prime interval criteria.  This is independent of
-the five complete fixed-`r` columns: it supplies six complete all-`r`
-columns in the transverse direction and an eventual tail in every fixed
-`m` column.
+the six complete fixed-`r` columns: it supplies 1000 complete all-`r`
+columns in the transverse direction and an explicit effective tail in every
+fixed-`m` column.
 
-Consequently a still-unresolved pair in `OP-CR` must have `m>=7`, `r>=7`,
-composite `N=(m+1)r+1`, and at most one prime in
+Consequently a still-unresolved pair in `OP-CR` must have `m>=1001`, `r>=7`,
+satisfy `r<=X_m/m`, have composite `N=(m+1)r+1`, and
+have at most one prime in
 `(mr,(m+1)r+1)`, unless another recorded irreducibility criterion applies.
+If `mr>=K_0`, it must additionally satisfy `r<5(mr)^(21/40)`.
 If that interval contains exactly one prime `N-u`, the only possible factor
 degrees of `K` are `u` and `mr-u`; hence any common factor with `L` must have
 one of those degrees.  This factor-degree restriction is the useful bridge
@@ -925,12 +932,13 @@ only and do not replace a uniform argument.
 
 ## 14. Scope boundary (`OP-CR`)
 
-The all-parameter problem now begins in the residual wedge `m>=7`, `r>=7`
-not covered by (46) or another parameter-irreducibility theorem.  Formula
-(6) still gives a fixed comparison disk, but the `r=4` analysis shows that
-demanding every endpoint-eliminant root lie outside it is too strong.  For
-`r=6`, (58)--(65) complete the whole column without a whole-eliminant
-Schur--Cohn attack.
+The all-parameter problem is now confined to the finite staircase in each
+column given by `m>=1001`, `7<=r<=X_m/m`, after removing pairs covered by
+another parameter-irreducibility theorem.  Above the non-numerical threshold
+`K_0`, it is further confined by `r<5(mr)^(21/40)`.  Formula (6) still gives
+a fixed comparison disk, but the `r=4` analysis shows that demanding every
+endpoint-eliminant root lie outside it is too strong.  For `r=6`, (58)--(65)
+complete the whole column without a whole-eliminant Schur--Cohn attack.
 
 The branch mechanism is structural for a fixed `r`, but it is not presently
 uniform in `r`.  For arbitrary fixed `r` the boundary-layer limit has the

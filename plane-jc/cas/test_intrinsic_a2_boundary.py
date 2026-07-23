@@ -1,0 +1,120 @@
+#!/usr/bin/env python3
+"""Regression tests for the intrinsic affine-plane boundary gates."""
+
+import sympy as sp
+
+from boundary_lattice_prefilter import (
+    boundary_intersection_matrix,
+    standard_completion,
+)
+from intrinsic_a2_boundary import (
+    IntrinsicA2Boundary,
+    audit_a2_boundary,
+    audit_keller_pole_vector,
+    symmetric_inertia,
+)
+
+
+def package(configuration, initial_form):
+    return IntrinsicA2Boundary(
+        names=configuration.names,
+        intersection_matrix=boundary_intersection_matrix(
+            configuration, initial_form
+        ),
+        genera=(0,) * len(configuration.names),
+    )
+
+
+assert symmetric_inertia(sp.Matrix([[0, 1], [1, 0]])) == (1, 1, 0)
+assert symmetric_inertia(sp.diag(1, -1, -2, 0)) == (1, 2, 1)
+
+
+# Every honest boundary blowup of the standard completion satisfies not only
+# SNF/unimodularity but also the adjunction and rational-surface identities.
+base, initial_form, _ = standard_completion("A2")
+configurations = [base]
+current = base
+for center in (("L",), ("E1",), ("E1", "E2"), ("E3",)):
+    current = current.blow_up(center)
+    configurations.append(current)
+
+for configuration in configurations:
+    audit = audit_a2_boundary(package(configuration, initial_form))
+    assert audit.passes, audit.failures
+    assert audit.canonical_square == 10 - len(configuration.names)
+
+
+# Unimodularity and Hodge signature alone do not characterize an A2
+# boundary.  This rational star has det=-1 and inertia (1,3), but adjunction
+# gives K^2=-2 instead of 6.
+fake_star = IntrinsicA2Boundary(
+    names=("C", "A", "B", "D"),
+    intersection_matrix=sp.Matrix(
+        [
+            [-1, 1, 1, 1],
+            [1, -5, 0, 0],
+            [1, 0, -3, 0],
+            [1, 0, 0, -2],
+        ]
+    ),
+    genera=(0, 0, 0, 0),
+)
+fake_audit = audit_a2_boundary(fake_star)
+assert fake_audit.determinant == -1
+assert fake_audit.inertia == (1, 3, 0)
+assert fake_audit.canonical_square == -2
+assert not fake_audit.passes
+assert any("K_X^2=-2" in failure for failure in fake_audit.failures)
+
+
+# The identity P2 -> P2 has pole vector (1), degree one, and zero ordinary
+# and logarithmic ramification.  It is proper, so it has no dicritical.
+base_audit = audit_a2_boundary(package(base, initial_form))
+identity = audit_keller_pole_vector(
+    base_audit, (1,), require_nonproper=False
+)
+assert identity.passes
+assert identity.geometric_degree == 1
+assert identity.ramification_coefficients == (0,)
+assert identity.log_ramification_coefficients == (0,)
+assert identity.dicritical_candidates == ()
+assert not audit_keller_pole_vector(
+    base_audit, (1,), require_nonproper=True
+).passes
+
+
+# Canonical coefficients under free boundary blowups begin
+# -3,-2,-1,0.  Hence fewer than three successive one-parent blowups cannot
+# contain a dicritical prime of a nonproper Keller resolution.
+free = base
+free_audits = []
+for parent in ("L", "E1", "E2"):
+    free = free.blow_up((parent,))
+    free_audits.append(audit_a2_boundary(package(free, initial_form)))
+
+assert free_audits[0].canonical_coefficients == (-3, -2)
+assert free_audits[1].canonical_coefficients == (-3, -2, -1)
+assert not free_audits[1].can_support_nonproper_keller_boundary
+assert free_audits[2].canonical_coefficients == (-3, -2, -1, 0)
+assert free_audits[2].nonnegative_canonical_components == ("E3",)
+
+
+# The first numerically possible free-depth package has a pole vector meeting
+# every exact canonical, nefness, degree, ramification, and dicritical gate.
+# This is a consistency witness, not an existence claim for a Keller map.
+first_possible = audit_keller_pole_vector(
+    free_audits[2], (3, 2, 1, 0), require_nonproper=True
+)
+assert first_possible.passes, first_possible.failures
+assert first_possible.hyperplane_intersections == (2, 0, 0, 1)
+assert first_possible.geometric_degree == 6
+assert first_possible.ramification_coefficients == (6, 4, 2, 0)
+assert first_possible.log_ramification_coefficients == (4, 3, 2, 1)
+assert first_possible.dicritical_candidates == ("E3",)
+
+
+print("PASS: exact inertia handles isotropic affine-plane boundary lattices")
+print("PASS: every compiled boundary blowup satisfies adjunction and K^2+rho=10")
+print("PASS: the Noether gate rejects a unimodular Hodge-signature fake tree")
+print("PASS: pole vectors reconstruct ordinary and logarithmic ramification")
+print("PASS: nonproper Keller resolutions require canonical free depth at least three")

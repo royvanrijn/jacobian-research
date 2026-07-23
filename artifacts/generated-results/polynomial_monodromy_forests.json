@@ -1,0 +1,90 @@
+{
+  "collision_subsets_checked": 43614,
+  "consequence": "the source dual tree, component degrees, node indices, and normalization branch counts on every nested simple-branch resonance stratum are determined by the labelled polynomial monodromy tree",
+  "degree_range": [
+    2,
+    6
+  ],
+  "degree_six_recovery": {
+    "factorization_edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        5
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        4,
+        5
+      ]
+    ],
+    "pairwise_maxwell": {
+      "node_indices": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "normalization_branches": 2,
+      "selected_edge_positions": [
+        0,
+        3
+      ]
+    },
+    "triple_maxwell": {
+      "node_indices": [
+        2,
+        2,
+        2
+      ],
+      "normalization_branches": 4,
+      "selected_edge_positions": [
+        0,
+        3,
+        4
+      ]
+    },
+    "two-edge_caustic": {
+      "node_indices": [
+        1,
+        1,
+        1,
+        3
+      ],
+      "normalization_branches": 1,
+      "selected_edge_positions": [
+        0,
+        1
+      ]
+    }
+  },
+  "expected_count_formula": "degree^(degree-2)",
+  "experiment": "polynomial monodromy forest source rule",
+  "factorizations_checked": 1441,
+  "nested_subset_pairs_checked": 325515,
+  "reduced_factorization_counts": {
+    "2": 1,
+    "3": 3,
+    "4": 16,
+    "5": 125,
+    "6": 1296
+  },
+  "riemann_hurwitz_components_checked": 151499,
+  "scope": "combinatorial source enhancement for simple finite branch cycles; the separate recursive resonance atlas verifies algebraic target-flag positions, residue equations, and the global stack",
+  "theorem": {
+    "collision_subset": "source components over its target bubble are the connected components of the selected edge subforest",
+    "global_monodromy": "the d-1 simple finite branch transpositions of a degree-d polynomial factor a d-cycle and form the edges of a labelled tree",
+    "nested_compatibility": "subforest components refine under inclusion of nested branch subsets",
+    "node_indices": "the source-node expansion indices are the subforest component sizes, equivalently the cycle lengths of the boundary monodromy product"
+  }
+}

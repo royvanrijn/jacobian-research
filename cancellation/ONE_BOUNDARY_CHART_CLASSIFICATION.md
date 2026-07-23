@@ -566,6 +566,14 @@ and the reciprocal reconstruction theorem applies.  Similarly, the
 degree-one statement in the `A^1` case supplies the coordinate marking used
 by the weighted plane-core theorem.
 
+In geometric degree three this last `A^1` marking is automatic for every
+coordinate-preserving core: the Abhyankar--Moh degree reduction in
+[`CUBIC_MARKING_EXTRACTION.md`](CUBIC_MARKING_EXTRACTION.md) straightens the
+degree-two boundary projection by triangular shears preserving the core
+coordinate.  The `G_m` residue and lifting problem remains; the same note
+gives an infinite cubic toric defect atlas showing that puncture count alone
+cannot settle it.
+
 The exact remaining tangential problem is therefore:
 
 > Prove that a nontrivial divisor-minimal Keller suspension makes the image

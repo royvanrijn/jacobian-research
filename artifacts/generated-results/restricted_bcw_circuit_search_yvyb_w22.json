@@ -1,0 +1,595 @@
+{
+  "format": "restricted-bcw-circuit-search-v2",
+  "certification_status": "bounded modular search record; any improvement requires an exact QQ generator and independent replay",
+  "search_scope": {
+    "source": "three-variable determinant-one collision",
+    "circuit_moves": "polynomial gate exposure, grouped multi-term target shears, then exact shared-factor cleanup",
+    "partial_objective": "maximum degree followed by the sampled rank and complete power-rank tuple of J(F-id)",
+    "terminal_objective": "Pareto archive for cubic rank, cubic sampled nilpotency index, cotangent-Hessian rank, quotient dimension, and transformed quartic-Hessian sampled nilpotency index",
+    "terminal_pipeline": "rank-compressed cubic homogenization, constant-kernel quotient, collision-separation check, cubic and cotangent-Hessian profiles",
+    "width": 22,
+    "max_steps": 24,
+    "prebeam_factor": 2,
+    "partial_power_depth": 8,
+    "max_circuit_gates": 7,
+    "required_atoms": [
+      "yvyb"
+    ],
+    "terminal_hessian_power_profiled": false,
+    "circuit_atoms": [
+      "x2s",
+      "xxs",
+      "v2r",
+      "qb",
+      "v2h",
+      "y2vb",
+      "yvyb"
+    ]
+  },
+  "incumbents": {
+    "cubic_rank": 17,
+    "cubic_sampled_index": 18,
+    "cubic_dimension": 21,
+    "quartic_hessian_rank": 37,
+    "quartic_dimension": 42,
+    "quartic_sampled_index": 34
+  },
+  "depth_log": [
+    {
+      "depth": 1,
+      "generated": 564,
+      "unique": 564,
+      "prebeam_profiled": 44,
+      "kept": 22,
+      "terminal_count": 0,
+      "lead_high_signature": [
+        5,
+        46,
+        22
+      ],
+      "lead_partial_power_ranks_mod_1000003": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "depth": 2,
+      "generated": 786,
+      "unique": 786,
+      "prebeam_profiled": 44,
+      "kept": 22,
+      "terminal_count": 0,
+      "lead_high_signature": [
+        5,
+        43,
+        22
+      ],
+      "lead_partial_power_ranks_mod_1000003": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "depth": 3,
+      "generated": 850,
+      "unique": 850,
+      "prebeam_profiled": 44,
+      "kept": 22,
+      "terminal_count": 0,
+      "lead_high_signature": [
+        5,
+        38,
+        20
+      ],
+      "lead_partial_power_ranks_mod_1000003": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7
+      ]
+    },
+    {
+      "depth": 4,
+      "generated": 684,
+      "unique": 684,
+      "prebeam_profiled": 44,
+      "kept": 22,
+      "terminal_count": 0,
+      "lead_high_signature": [
+        5,
+        25,
+        19
+      ],
+      "lead_partial_power_ranks_mod_1000003": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "depth": 5,
+      "generated": 580,
+      "unique": 580,
+      "prebeam_profiled": 44,
+      "kept": 22,
+      "terminal_count": 0,
+      "lead_high_signature": [
+        5,
+        22,
+        19
+      ],
+      "lead_partial_power_ranks_mod_1000003": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "depth": 6,
+      "generated": 584,
+      "unique": 584,
+      "prebeam_profiled": 44,
+      "kept": 22,
+      "terminal_count": 0,
+      "lead_high_signature": [
+        4,
+        19,
+        19
+      ],
+      "lead_partial_power_ranks_mod_1000003": [
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ]
+    },
+    {
+      "depth": 7,
+      "generated": 607,
+      "unique": 607,
+      "prebeam_profiled": 44,
+      "kept": 22,
+      "terminal_count": 0,
+      "lead_high_signature": [
+        4,
+        18,
+        18
+      ],
+      "lead_partial_power_ranks_mod_1000003": [
+        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ]
+    },
+    {
+      "depth": 8,
+      "generated": 553,
+      "unique": 553,
+      "prebeam_profiled": 44,
+      "kept": 22,
+      "terminal_count": 0,
+      "lead_high_signature": [
+        4,
+        17,
+        17
+      ],
+      "lead_partial_power_ranks_mod_1000003": [
+        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ]
+    },
+    {
+      "depth": 9,
+      "generated": 454,
+      "unique": 454,
+      "prebeam_profiled": 44,
+      "kept": 22,
+      "terminal_count": 0,
+      "lead_high_signature": [
+        4,
+        16,
+        16
+      ],
+      "lead_partial_power_ranks_mod_1000003": [
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ]
+    },
+    {
+      "depth": 10,
+      "generated": 622,
+      "unique": 622,
+      "prebeam_profiled": 44,
+      "kept": 22,
+      "terminal_count": 0,
+      "lead_high_signature": [
+        4,
+        15,
+        15
+      ],
+      "lead_partial_power_ranks_mod_1000003": [
+        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ]
+    },
+    {
+      "depth": 11,
+      "generated": 604,
+      "unique": 604,
+      "prebeam_profiled": 44,
+      "kept": 22,
+      "terminal_count": 0,
+      "lead_high_signature": [
+        4,
+        18,
+        18
+      ],
+      "lead_partial_power_ranks_mod_1000003": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7
+      ]
+    },
+    {
+      "depth": 12,
+      "generated": 619,
+      "unique": 619,
+      "prebeam_profiled": 44,
+      "kept": 22,
+      "terminal_count": 0,
+      "lead_high_signature": [
+        4,
+        21,
+        21
+      ],
+      "lead_partial_power_ranks_mod_1000003": [
+        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ]
+    },
+    {
+      "depth": 13,
+      "generated": 781,
+      "unique": 781,
+      "prebeam_profiled": 44,
+      "kept": 22,
+      "terminal_count": 0,
+      "lead_high_signature": [
+        4,
+        15,
+        15
+      ],
+      "lead_partial_power_ranks_mod_1000003": [
+        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ]
+    },
+    {
+      "depth": 14,
+      "generated": 730,
+      "unique": 730,
+      "prebeam_profiled": 44,
+      "kept": 22,
+      "terminal_count": 0,
+      "lead_high_signature": [
+        4,
+        22,
+        22
+      ],
+      "lead_partial_power_ranks_mod_1000003": [
+        8,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ]
+    },
+    {
+      "depth": 15,
+      "generated": 733,
+      "unique": 733,
+      "prebeam_profiled": 44,
+      "kept": 22,
+      "terminal_count": 0,
+      "lead_high_signature": [
+        4,
+        21,
+        21
+      ],
+      "lead_partial_power_ranks_mod_1000003": [
+        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ]
+    },
+    {
+      "depth": 16,
+      "generated": 817,
+      "unique": 817,
+      "prebeam_profiled": 44,
+      "kept": 22,
+      "terminal_count": 0,
+      "lead_high_signature": [
+        4,
+        17,
+        17
+      ],
+      "lead_partial_power_ranks_mod_1000003": [
+        8,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7
+      ]
+    },
+    {
+      "depth": 17,
+      "generated": 771,
+      "unique": 771,
+      "prebeam_profiled": 44,
+      "kept": 22,
+      "terminal_count": 0,
+      "lead_high_signature": [
+        4,
+        11,
+        11
+      ],
+      "lead_partial_power_ranks_mod_1000003": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ]
+    },
+    {
+      "depth": 18,
+      "generated": 718,
+      "unique": 718,
+      "prebeam_profiled": 44,
+      "kept": 22,
+      "terminal_count": 0,
+      "lead_high_signature": [
+        4,
+        23,
+        23
+      ],
+      "lead_partial_power_ranks_mod_1000003": [
+        8,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7
+      ]
+    },
+    {
+      "depth": 19,
+      "generated": 719,
+      "unique": 719,
+      "prebeam_profiled": 44,
+      "kept": 22,
+      "terminal_count": 0,
+      "lead_high_signature": [
+        4,
+        14,
+        14
+      ],
+      "lead_partial_power_ranks_mod_1000003": [
+        9,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ]
+    },
+    {
+      "depth": 20,
+      "generated": 668,
+      "unique": 668,
+      "prebeam_profiled": 44,
+      "kept": 22,
+      "terminal_count": 0,
+      "lead_high_signature": [
+        4,
+        13,
+        13
+      ],
+      "lead_partial_power_ranks_mod_1000003": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ]
+    },
+    {
+      "depth": 21,
+      "generated": 615,
+      "unique": 615,
+      "prebeam_profiled": 44,
+      "kept": 22,
+      "terminal_count": 0,
+      "lead_high_signature": [
+        4,
+        7,
+        7
+      ],
+      "lead_partial_power_ranks_mod_1000003": [
+        9,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ]
+    },
+    {
+      "depth": 22,
+      "generated": 563,
+      "unique": 563,
+      "prebeam_profiled": 44,
+      "kept": 22,
+      "terminal_count": 0,
+      "lead_high_signature": [
+        4,
+        19,
+        19
+      ],
+      "lead_partial_power_ranks_mod_1000003": [
+        9,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ]
+    },
+    {
+      "depth": 23,
+      "generated": 509,
+      "unique": 509,
+      "prebeam_profiled": 44,
+      "kept": 22,
+      "terminal_count": 0,
+      "lead_high_signature": [
+        4,
+        5,
+        5
+      ],
+      "lead_partial_power_ranks_mod_1000003": [
+        10,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ]
+    },
+    {
+      "depth": 24,
+      "generated": 456,
+      "unique": 456,
+      "prebeam_profiled": 44,
+      "kept": 22,
+      "terminal_count": 0,
+      "lead_high_signature": [
+        4,
+        4,
+        4
+      ],
+      "lead_partial_power_ranks_mod_1000003": [
+        9,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ]
+    }
+  ],
+  "terminal_histogram": [],
+  "best_terminal": null,
+  "pareto_terminals": [],
+  "terminal_family_leaders": []
+}

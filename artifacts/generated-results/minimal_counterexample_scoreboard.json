@@ -1,0 +1,127 @@
+{
+  "format": "minimal-counterexample-scoreboard-v1",
+  "field": "complex coefficients / characteristic zero as appropriate",
+  "ambient_dimension_frontiers": {
+    "general_Keller_noninvertibility": {
+      "lower_bound": 2,
+      "upper_bound": 3,
+      "exact_value": null,
+      "status": "open interval",
+      "lower_bound_reason": "a one-variable Keller map is affine",
+      "upper_bound_reason": "the certified foundational determinant-nonzero collision uses 3 variables"
+    },
+    "cubic_homogeneous_Keller_noninvertibility": {
+      "lower_bound": 3,
+      "upper_bound": 21,
+      "exact_value": null,
+      "status": "open interval",
+      "lower_bound_reason": "dimension at most 2 has rank(JH)<=2, and the de Bondt--Sun rank-two theorem gives invertibility",
+      "upper_bound_reason": "the essential cubic-homogeneous collision uses 21 variables"
+    },
+    "GMC_failure_real_Gaussian_dimension": {
+      "lower_bound": 2,
+      "upper_bound": 3,
+      "exact_value": null,
+      "status": "open interval",
+      "lower_bound_reason": "GMC(1) is proved",
+      "upper_bound_reason": "Long gives an explicit counterexample in 3 real Gaussian variables"
+    },
+    "SIC_failure_pair_dimension": {
+      "lower_bound": 2,
+      "upper_bound": 20,
+      "exact_value": null,
+      "status": "open interval",
+      "lower_bound_reason": "the one-pair Image Conjecture is proved",
+      "upper_bound_reason": "the identity-output slice gives an explicit SIC(20) counterexample"
+    },
+    "ordinary_Laplacian_GVC_failure_dimension": {
+      "lower_bound": 2,
+      "upper_bound": 40,
+      "exact_value": null,
+      "status": "open interval",
+      "lower_bound_reason": "in one variable Delta(P)=0 forces deg(P)<=1, after which every fixed mixed derivative eventually vanishes",
+      "upper_bound_reason": "the identity-output slice gives a 40-variable counterexample"
+    },
+    "homogeneous_quartic_HN_VC_failure_dimension": {
+      "lower_bound": 6,
+      "upper_bound": 42,
+      "exact_value": null,
+      "status": "open interval",
+      "lower_bound_reason": "the homogeneous symmetric nilpotent-Jacobian case is known through dimension five",
+      "upper_bound_reason": "the certified homogeneous HN quartic counterexample uses 42 variables"
+    }
+  },
+  "rank_and_index_frontiers": {
+    "cubic_homogeneous_Jacobian_rank": {
+      "lower_bound": 3,
+      "upper_bound": 17,
+      "exact_value": null,
+      "status": "open interval",
+      "lower_bound_reason": "de Bondt--Sun prove every cubic-homogeneous Keller map with rank(JH)<=2 is invertible",
+      "upper_bound_reason": "the certified 24-variable circuit-level collision has exact generic rank(JH)=17"
+    },
+    "cubic_homogeneous_Jacobian_nilpotency_index": {
+      "lower_bound": 3,
+      "upper_bound": 18,
+      "exact_value": null,
+      "status": "open interval",
+      "lower_bound_reason": "index at most two gives a quasi-translation and hence an inverse; no full-class index-three theorem is recorded",
+      "upper_bound_reason": "the certified 22-variable circuit-level collision has exact polynomial nilpotency index 18"
+    },
+    "homogeneous_quartic_Hessian_rank": {
+      "lower_bound": 3,
+      "upper_bound": 37,
+      "exact_value": null,
+      "status": "open interval",
+      "lower_bound_reason": "rank at most two reduces to the invertible cubic-homogeneous gradient case",
+      "upper_bound_reason": "the certified 44-variable HN quartic has exact generic Hessian rank 37"
+    }
+  },
+  "bounded_structural_frontiers": {
+    "two_real_cubic_four_weight_charts": {
+      "all_mixed_sign_charts": 121,
+      "excluded_by_support_census": 97,
+      "excluded_inside_exceptional_supports": 24,
+      "remaining": 0,
+      "remaining_supports": 0,
+      "certificates": [
+        "two_real_gmc_symmetric_chart.json",
+        "two_real_gmc_remaining_four_weight.json"
+      ],
+      "consequence": "a cubic GMC(2) counterexample has at least five rotational weights",
+      "status": "exact closure of the four-weight cubic stratum"
+    }
+  },
+  "exact_degree_minima": {
+    "general_Keller_counterexample_total_degree": {
+      "exact_value": 3,
+      "lower_reason": "Wang's theorem proves every quadratic Keller map invertible",
+      "upper_reason": "the certified 21-variable cubic-homogeneous collision has degree 3"
+    },
+    "Gaussian_moment_counterexample_total_degree": {
+      "exact_value": 3,
+      "lower_reason": "the quadratic Gaussian theorem in TWO_REAL_GMC_FRONTIER proves GMC for every polynomial of degree at most 2",
+      "upper_reason": "Long's explicit four-real-variable Gaussian counterexample is cubic"
+    }
+  },
+  "smallest_certified_witnesses": {
+    "cubic_homogeneous_Keller": {
+      "dimension": 21,
+      "artifact": "essential_bcw_21_counterexample.json"
+    },
+    "SIC": {
+      "pair_dimension": 20,
+      "polynomial_ring_variable_count": 40,
+      "artifact": "image_vanishing_counterexamples_20_40.json"
+    },
+    "ordinary_Laplacian_GVC": {
+      "dimension": 40,
+      "artifact": "image_vanishing_counterexamples_20_40.json"
+    },
+    "homogeneous_quartic_HN_VC": {
+      "dimension": 42,
+      "artifact": "image_vanishing_counterexamples_21_42.json"
+    }
+  },
+  "promotion_policy": "Only exact identities or cited positive theorems change an endpoint; modular and bounded searches remain diagnostics."
+}

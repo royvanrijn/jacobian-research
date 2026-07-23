@@ -1,0 +1,97 @@
+{
+  "deformation_initial_form_checks": 63,
+  "degree_six_inertia_distribution": {
+    "1": 5,
+    "2": 34,
+    "4": 42,
+    "8": 8
+  },
+  "degree_six_nested_families": 89,
+  "degree_six_radial_global_automorphism_distribution": {
+    "1": 1,
+    "2": 3,
+    "4": 3,
+    "8": 6
+  },
+  "degree_six_radial_inertia_order": 1,
+  "degree_six_radial_types": 13,
+  "experiment": "recursive root-residue screens and automatic nested resonance character extraction",
+  "flag_fiber_equation_checks": 84,
+  "general_cycle_profile_checks": 208,
+  "general_radial_charts": 76,
+  "general_radial_inertia_distribution": {
+    "1": 36,
+    "2": 13,
+    "3": 13,
+    "4": 2,
+    "6": 6,
+    "9": 6
+  },
+  "general_radial_profiles": 12,
+  "group_law_atlases_checked": 180,
+  "initial_form_checks": 84,
+  "initial_form_degree_range": [
+    1,
+    7
+  ],
+  "initial_form_transitivity_checks": 84,
+  "maximum_global_automorphisms": 128,
+  "pair_triple_maxwell": {
+    "global_automorphisms": 32,
+    "inertia_order": 4,
+    "inertia_structure": "mu_2 x mu_2",
+    "node_profiles": [
+      [
+        2,
+        2,
+        1,
+        1
+      ],
+      [
+        2,
+        2,
+        2
+      ]
+    ]
+  },
+  "rules": {
+    "character_extraction": "take full vertex centralizers, match their permutations of source-node cycles across every target node, add the two half-node rotations, then impose every diagonal Kummer phase",
+    "flag_divisor": "on a normalized source screen R(U), the inverse image of a target flag a is the effective divisor R(U)-a=0",
+    "radial_inertia": "for ordered blocks B_j, the full-chain order is the product of L_j/M_j, where M_j is the lcm on B_j and L_j is the lcm on the suffix B_j union ... union B_k",
+    "screen_blowdown": "u_parent=a_cluster+q_cluster*u_cluster",
+    "screen_contraction": "delete a screen by composing its two adjacent affine maps",
+    "screen_frame_change": "independent affine frame changes act by q_C -> d_parent*q_C/d_C and a_(parent,C) -> c_parent+d_parent*a_(parent,C)-q'_C*c_C"
+  },
+  "scope": "all nested tame branch charts after choosing a collision-adapted Hurwitz system; exhaustive bounded checks cover simple polynomial trees, every pair of cycle profiles through degree six, and a mixed unrigidified tame chain; bounded unequal-multiplicity radial profiles and all thirteen equal-multiplicity sextic radial scale types are checked separately",
+  "screen_contractions_checked": 1453,
+  "screen_family_counts": {
+    "2": 2,
+    "3": 8,
+    "4": 52,
+    "5": 472
+  },
+  "screen_frame_equivariance_checks": 534,
+  "screen_leaf_range": [
+    2,
+    5
+  ],
+  "sheet_label_equivariance_checks": 720,
+  "single_node_character_checks": 801,
+  "source_frame_equivariance_checks": 84,
+  "two_step_contractions_checked": 2926,
+  "unequal_radial_examples": {
+    "2,3:0|1": 3,
+    "2,3:1|0": 2,
+    "2,4:0|1": 2
+  },
+  "unrigidified_tame_chain_inertia_order": 6,
+  "unrigidified_tame_chain_node_profiles": [
+    [
+      4,
+      2
+    ],
+    [
+      6
+    ]
+  ]
+}

@@ -1,0 +1,232 @@
+{
+  "atlas": {
+    "xyz": {
+      "bubbles": [
+        "active=xyz; connectors=0; identity_strands=0; quadratic_tails=3; degree=6"
+      ],
+      "node_indices": [
+        "2+2+2"
+      ],
+      "node_kummer_branches": [
+        4
+      ],
+      "total_kummer_branches": 4
+    },
+    "xy|z": {
+      "bubbles": [
+        "active=xy; connectors=1; identity_strands=0; quadratic_tails=2; degree=6",
+        "active=z; connectors=0; identity_strands=4; quadratic_tails=1; degree=6"
+      ],
+      "node_indices": [
+        "2+2+2",
+        "1+1+1+1+2"
+      ],
+      "node_kummer_branches": [
+        4,
+        1
+      ],
+      "total_kummer_branches": 4
+    },
+    "xz|y": {
+      "bubbles": [
+        "active=xz; connectors=1; identity_strands=0; quadratic_tails=2; degree=6",
+        "active=y; connectors=0; identity_strands=4; quadratic_tails=1; degree=6"
+      ],
+      "node_indices": [
+        "2+2+2",
+        "1+1+1+1+2"
+      ],
+      "node_kummer_branches": [
+        4,
+        1
+      ],
+      "total_kummer_branches": 4
+    },
+    "x|yz": {
+      "bubbles": [
+        "active=x; connectors=2; identity_strands=0; quadratic_tails=1; degree=6",
+        "active=yz; connectors=0; identity_strands=2; quadratic_tails=2; degree=6"
+      ],
+      "node_indices": [
+        "2+2+2",
+        "1+1+2+2"
+      ],
+      "node_kummer_branches": [
+        4,
+        2
+      ],
+      "total_kummer_branches": 8
+    },
+    "x|y|z": {
+      "bubbles": [
+        "active=x; connectors=2; identity_strands=0; quadratic_tails=1; degree=6",
+        "active=y; connectors=1; identity_strands=2; quadratic_tails=1; degree=6",
+        "active=z; connectors=0; identity_strands=4; quadratic_tails=1; degree=6"
+      ],
+      "node_indices": [
+        "2+2+2",
+        "1+1+2+2",
+        "1+1+1+1+2"
+      ],
+      "node_kummer_branches": [
+        4,
+        2,
+        1
+      ],
+      "total_kummer_branches": 8
+    },
+    "x|z|y": {
+      "bubbles": [
+        "active=x; connectors=2; identity_strands=0; quadratic_tails=1; degree=6",
+        "active=z; connectors=1; identity_strands=2; quadratic_tails=1; degree=6",
+        "active=y; connectors=0; identity_strands=4; quadratic_tails=1; degree=6"
+      ],
+      "node_indices": [
+        "2+2+2",
+        "1+1+2+2",
+        "1+1+1+1+2"
+      ],
+      "node_kummer_branches": [
+        4,
+        2,
+        1
+      ],
+      "total_kummer_branches": 8
+    },
+    "yz|x": {
+      "bubbles": [
+        "active=yz; connectors=1; identity_strands=0; quadratic_tails=2; degree=6",
+        "active=x; connectors=0; identity_strands=4; quadratic_tails=1; degree=6"
+      ],
+      "node_indices": [
+        "2+2+2",
+        "1+1+1+1+2"
+      ],
+      "node_kummer_branches": [
+        4,
+        1
+      ],
+      "total_kummer_branches": 4
+    },
+    "y|xz": {
+      "bubbles": [
+        "active=y; connectors=2; identity_strands=0; quadratic_tails=1; degree=6",
+        "active=xz; connectors=0; identity_strands=2; quadratic_tails=2; degree=6"
+      ],
+      "node_indices": [
+        "2+2+2",
+        "1+1+2+2"
+      ],
+      "node_kummer_branches": [
+        4,
+        2
+      ],
+      "total_kummer_branches": 8
+    },
+    "y|x|z": {
+      "bubbles": [
+        "active=y; connectors=2; identity_strands=0; quadratic_tails=1; degree=6",
+        "active=x; connectors=1; identity_strands=2; quadratic_tails=1; degree=6",
+        "active=z; connectors=0; identity_strands=4; quadratic_tails=1; degree=6"
+      ],
+      "node_indices": [
+        "2+2+2",
+        "1+1+2+2",
+        "1+1+1+1+2"
+      ],
+      "node_kummer_branches": [
+        4,
+        2,
+        1
+      ],
+      "total_kummer_branches": 8
+    },
+    "y|z|x": {
+      "bubbles": [
+        "active=y; connectors=2; identity_strands=0; quadratic_tails=1; degree=6",
+        "active=z; connectors=1; identity_strands=2; quadratic_tails=1; degree=6",
+        "active=x; connectors=0; identity_strands=4; quadratic_tails=1; degree=6"
+      ],
+      "node_indices": [
+        "2+2+2",
+        "1+1+2+2",
+        "1+1+1+1+2"
+      ],
+      "node_kummer_branches": [
+        4,
+        2,
+        1
+      ],
+      "total_kummer_branches": 8
+    },
+    "z|xy": {
+      "bubbles": [
+        "active=z; connectors=2; identity_strands=0; quadratic_tails=1; degree=6",
+        "active=xy; connectors=0; identity_strands=2; quadratic_tails=2; degree=6"
+      ],
+      "node_indices": [
+        "2+2+2",
+        "1+1+2+2"
+      ],
+      "node_kummer_branches": [
+        4,
+        2
+      ],
+      "total_kummer_branches": 8
+    },
+    "z|x|y": {
+      "bubbles": [
+        "active=z; connectors=2; identity_strands=0; quadratic_tails=1; degree=6",
+        "active=x; connectors=1; identity_strands=2; quadratic_tails=1; degree=6",
+        "active=y; connectors=0; identity_strands=4; quadratic_tails=1; degree=6"
+      ],
+      "node_indices": [
+        "2+2+2",
+        "1+1+2+2",
+        "1+1+1+1+2"
+      ],
+      "node_kummer_branches": [
+        4,
+        2,
+        1
+      ],
+      "total_kummer_branches": 8
+    },
+    "z|y|x": {
+      "bubbles": [
+        "active=z; connectors=2; identity_strands=0; quadratic_tails=1; degree=6",
+        "active=y; connectors=1; identity_strands=2; quadratic_tails=1; degree=6",
+        "active=x; connectors=0; identity_strands=4; quadratic_tails=1; degree=6"
+      ],
+      "node_indices": [
+        "2+2+2",
+        "1+1+2+2",
+        "1+1+1+1+2"
+      ],
+      "node_kummer_branches": [
+        4,
+        2,
+        1
+      ],
+      "total_kummer_branches": 8
+    }
+  },
+  "cluster_profile": [
+    2,
+    2,
+    2
+  ],
+  "component_rule": {
+    "after_cluster_scale": "two degree-one identity strands",
+    "at_cluster_scale": "one degree-two tail S=u_i*X*(X-1)",
+    "before_cluster_scale": "one degree-two connector S=V^2"
+  },
+  "experiment": "degree-six radial admissible-cover atlas",
+  "node_rule": {
+    "activated_cluster": "two nodes of index one",
+    "normalization_branches": "2^(number_of_index_two_nodes-1)",
+    "unactivated_cluster": "one node of index two"
+  },
+  "ordered_partition_count": 13,
+  "scope": "all radial cones and equality faces for the labelled (2,2,2) profile; the extension morphism, component selection, and label descent remain separate"
+}

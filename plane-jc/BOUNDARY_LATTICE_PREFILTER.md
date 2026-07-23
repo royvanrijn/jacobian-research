@@ -6,6 +6,12 @@
 > `(8,28) -> (11/4,7)` chain has not yet been translated into the complete
 > proximity data required by the filter.
 
+The mechanical half of that translation is now implemented by the
+[log-boundary compiler](LOG_BOUNDARY_COMPILER.md).  It accepts certified
+positive local branch scales, constructs their regular toroidal blowups, and
+feeds the resulting complete matrix to this checker.  It deliberately does
+not infer those scales from corners.
+
 Let `X` be a smooth projective rational surface and let
 
 \[
@@ -144,6 +150,15 @@ chart.  It does not prove that the indicated centers exist with the required
 Newton initial forms, that the map extends with the claimed multiplicities,
 or that the Keller coefficient equations are soluble.
 
+For an `A2` chart, the full intersection matrix now has a strictly stronger
+second gate: adjunction reconstructs the canonical class and requires
+`K_X^2+rho(X)=10`; a target pole vector then reconstructs the ordinary and
+logarithmic ramification divisors and selects dicritical components without
+an external marking.  See
+[`INTRINSIC_A2_BOUNDARY_GATE.md`](INTRINSIC_A2_BOUNDARY_GATE.md) and its
+exact checker.  This rejects some unimodular matrices which the localization
+test necessarily accepts.
+
 ## Application boundary for `(72,108)`
 
 The published reduction begins with
@@ -155,10 +170,45 @@ The published reduction begins with
 The primitive normal obtained by equating the weights of these two endpoints
 is `(4,-1)`.  This identifies one monomial valuation sector, but it does not
 identify every boundary component, the shared prefixes of later valuation
-resolutions, or a global proximity graph.  The reduction later moves to
-`k[x,x^{-1},y]`.  The two corners therefore do not determine a full
-merged cluster of infinitely near points, and the Laurent stage must satisfy
-(3), not (2).  A valid application therefore requires:
+resolutions, or a global proximity graph.  The primary proof later moves to
+`k[x,x^{-1},y]` and exposes Laurent translations of orders `2,3,4`.  At the
+transformed `x=0,1/y=0` crossing these give the positive local rays
+`(2,1),(3,1),(4,1)`, as audited in
+[FRONTIER_LOG_SCALE_AUDIT.md](FRONTIER_LOG_SCALE_AUDIT.md).  Those resolve
+the smooth equality branches, not the rational transformations: their
+adapted base ideals are `(t,x^4),(t,x^6),(t,x^8)`, and the compiler resolves
+their isolated source graphs in `4,6,8` blowups.  Additive composition with
+the common order-four step proves that all cases have the same eight-blowup
+translation graph.  The alternative factor residue is separated exactly.
+The final monomial involution itself is absorbed by the
+Hirzebruch `F_4` transition, which swaps the two base divisors.  Filling
+pre-transition `Xinf` (post-transition `X0`) after the common eight-blowup
+graph leaves a unimodular `10 x 10` boundary matrix with
+unit rank zero, trivial Picard group, and a passing adjunction/Noether audit.
+The full target pole vector on that graph has no dicritical component, so the
+graph is provably nonexhaustive and at least one additional global cluster is
+required.  A smooth point of `E3` is the unique one-blowup zero-pole
+extension, but exact two-step witnesses show that positive-pole preparatory
+chains are not selected by the lattice data alone.  The coefficient geometry
+does select them.  The first weighted Wronskian forces a base-order-ten
+blowup at `E3 intersect E4` followed by ten simple children.  At the other
+corner the top bracket forces `A=a*r^2,C=c*r^3` for a quartic `r`.  All five
+root-partition fans compile and pass the lattice and divisor-class gates; the
+primary split-factor formula further forces the quadruple-root member in
+Case 1 and supplies its transverse chart.  Thus both source-selected
+terminal cases have the same 23-component boundary package, remaining
+self-intersection `29`, and one degree-twelve dicritical.  The complete
+matrices and local different/conductor data are in
+[FRONTIER_LOG_SCALE_AUDIT.md](FRONTIER_LOG_SCALE_AUDIT.md).
+That audit also applies the necessary correction for the final transformed
+bracket `[P,Q]=X^2`: `K+3H` is only a boundary-supported class
+representative there, while the actual ramification is
+`K+3H+div(X^2)`.  The corrected dicritical normal indices are three and
+five in the two terminal cases.
+The two corners
+therefore do not determine a full merged cluster of infinitely near points,
+and the Laurent stage must satisfy (3), not (2).  A valid application
+therefore requires:
 
 1. reconstruct the divisorial valuations before the Laurent localization;
 2. resolve them into blowup clusters and merge their common prefixes;

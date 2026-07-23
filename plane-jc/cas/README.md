@@ -1,5 +1,121 @@
 # Exact replay commands
 
+The log-boundary and Poisson-square prefilters are:
+
+```bash
+.venv/bin/python plane-jc/cas/test_intrinsic_a2_boundary.py
+.venv/bin/python plane-jc/cas/test_log_boundary_compiler.py
+.venv/bin/python plane-jc/cas/test_poisson_square_rigidity.py
+.venv/bin/python plane-jc/cas/log_boundary_compiler.py --frontier-72-108
+```
+
+The first reconstructs the canonical and log-canonical classes of a complete
+`A2` boundary from its intersection matrix, checks `K_X^2+rho(X)=10`, and
+audits target pole vectors against nefness, degree, ramification, and the
+intrinsic dicritical condition.  It also verifies the sharp canonical
+free-depth-three obstruction.  The second turns certified monomial branch
+scales into regular toroidal
+blowups, a proximity graph, complete boundary and intersection matrices,
+valuation/different/conductor labels, and chart-aware Smith invariants.  It
+extracts the local `(2,1),(3,1),(4,1)` rays proved by the `(72,108)` Laurent
+case tree and separately audits the longer map-base ideals
+`(t,x^4),(t,x^6),(t,x^8)`, compiling their isolated nested source chains of
+lengths `4,6,8`.  Additive composition proves that cases `a,b,c` share the
+same eight-blowup graph.  `F_4` absorbs the final involution and records its
+swap of the two base divisors; filling pre-transition `Xinf`, which is
+post-transition `X0`, gives a unimodular `10 x 10` affine-plane boundary
+passing the intrinsic adjunction/Noether audit.  The unselected order-three
+factor is a unit at the common order-four center and avoids the filled
+post-transition `X0` divisor.  Target-infinity pole orders are exact on all eight
+exceptionals.  Together with the original-boundary orders they give the full
+common-graph pole vector `(1,24,1,1,1,12,9,6,3,2)`.  Its intrinsic audit has
+no dicritical component, proving that at least one additional global cluster
+is required.  The first weighted-Wronskian equation forces the actual source
+cluster at `E3 intersect E4`: one pole-three exceptional and ten simple
+pole-two children.  The low monomial excludes the numerical smooth-`E3`
+candidate.  Terminal Case 2 then forces a `12,0` target cluster and a
+degree-twelve dicritical; the combined 23-component boundary passes all
+intrinsic gates with remaining self-intersection `29`.  The final upper edge
+forces `A=a*r^2,C=c*r^3` with quartic `r`.  Its five multiplicity partitions
+form an exhaustive edge-only comparison family.  The compiler emits every
+regular fan, full boundary and intersection matrix, target pole and
+ramification vector, normalization different, and source/image conductor.
+All five packages pass with remaining self-intersection `29`.  The primary
+split-factor formula then forces `r=(s-beta)^4`; the alternate legal factor
+supplies an exact transverse chart, so Terminal Case 1 selects and resolves
+the same 23-component `(4)` package as Terminal Case 2.  The legacy aggregate
+record is rejected only because the generic IR cannot serialize the
+nonmonomial first-block cluster.  Because the final pair has `[P,Q]=X^2`,
+the compiler now corrects the boundary-supported `K+3H` representative by
+`div(X^2)`: the actual dicritical normal indices are `3` in Case 1 and `5`
+in Case 2, while the total ramification intersection remains `35`.  The
+a priori exact residue cover degrees are `1,2,4`.
+[`audit_case2_residue_strata.py`](audit_case2_residue_strata.py) excludes
+the Case-2 degree-two and degree-four polynomial-composition strata exactly,
+using neither `J0` nor the residual `J1` compatibility equations.  Thus
+only the degree-twelve row remains at that stage.
+[`case2_infinity_resolution.py`](case2_infinity_resolution.py) then
+localizes the seven residual `J1` compatibility cubics at the forced
+endpoint `G_12 != 0`; the resulting exact ideal is the unit ideal, without
+`J0`.  Terminal Case 2 is therefore excluded.  Before compatibility, its
+generic infinity branch has characteristic `(4,13)` and a seven-ray regular
+toric resolution, also recorded by that audit.  The compiler also rewrites
+the Case-2 bottom equations as
+`B=K*c,F=K*g`,
+`2*H*(A*g-c*E)+K^2*(c*g'-c'*g)=0`, where
+`H=gcd(C',G')`.  The first coefficients force `t|H`, so the degree-zero
+gcd stratum is already excluded.  If `deg(H)=1`, the only surviving origin
+orders are `ord(B),ord(E),ord(G'),ord(F)=(1,2,3,3)`.
+At the opposite end,
+[`audit_case2_maximal_gcd.py`](audit_case2_maximal_gcd.py) excludes
+`deg(H)=7` exactly: three low coefficients of `remainder(G',C')` and the
+terminal `t^19` coefficient of `J0` generate the unit ideal, without any
+residual `J1` compatibility equation.  The standalone exact audits are:
+
+```bash
+make verify-plane-case2-residue-strata
+make verify-plane-case2-j1-endpoint
+make verify-plane-case2-maximal-gcd
+```
+
+The third proves that the entire
+geometric reduced weighted-tangent three-layer support box has exactly three
+components: the cubic tangent-pencil closure and the explicit `C=0` and
+`A=0` components.  Exact transverse families and tangent ranks show that
+their generic multiplicities are respectively `2,3,1`.  Their pairwise
+reduced intersections have branch counts `(2,2,1)`: a common lower-Wronskian
+core plus one constant-`D` tangent/`C=0` branch and one constant-`B,C`
+tangent/`A=0` branch.  Dense-chart scheme tangent dimensions are `8,7,6`;
+chosen tangent-kernel slices on the two extra branches both have length five
+but Hilbert/socle data `(1,4;4)` and `(1,3,1;1)`.  The exact saturation
+identity `I:d0^infinity=I` proves that no associated prime is supported on
+`d0=0`; a `G_m` normalization reduces the primary problem to `d0=1`.
+An exact `d3,d2` colon filtration then gives the complete associated-prime
+set: three minimal components, the three intersection surfaces, and the two
+core/intersection curves.  Their normalized dimensions are `(3,3,3)`,
+`(2,2,2)`, and `(1,1)`.
+
+An optional exact Singular audit independently computes the radical and its
+three minimal primes, and checks that every pairwise and triple reduced
+component intersection has dimension three.  A second fast audit verifies
+the principal-chart saturation and reconstruction identities:
+
+```bash
+Singular -q plane-jc/cas/poisson_square_radical.sing
+Singular -q plane-jc/cas/poisson_square_primary_charts.sing
+Singular -q plane-jc/cas/poisson_square_separator_primary.sing
+Singular -q plane-jc/cas/poisson_square_normalized_defect.sing
+.venv/bin/python plane-jc/cas/test_poisson_square_filtered_modules.py
+```
+
+The third command proves that generic primary closures leave a genuine
+separator defect and prints exact torsion witnesses.  The fourth decomposes
+`I:d3`, `(I+(d3)):d2`, and `I+(d3,d2)` and certifies exactly eight associated
+primes.  It also resolves the second gluing layer into two primary curve
+components and computes exact transverse Hilbert vectors on all associated
+strata.  The final command checks the reusable lower-band filter, including
+localized `preserved/cut/eliminated` decisions.
+
 The reusable superelliptic leading-block reducer is documented in
 [`../SUPERELLIPTIC_DERHAM_ENGINE.md`](../SUPERELLIPTIC_DERHAM_ENGINE.md).
 Its fast regression is:
@@ -16,9 +132,9 @@ certificate are documented in
 python3 plane-jc/cas/test_newton_derham_compiler.py
 ```
 
-This also verifies that the incomplete `(96,144)` and `(75,125)` table rows
-are rejected until their Laurent bands are derived; the former additionally
-has a source-level lower-side conflict to resolve.
+This also verifies that the source-excluded repeated-tail `(96,144)` row and
+the incomplete `(75,125)` row are rejected rather than assigned invented
+Laurent bands.
 
 The exact forced F2 `j=1` skeleton and its machine-readable residual
 obligations are tested separately:
@@ -30,6 +146,26 @@ python3 plane-jc/cas/f2_75_125_frontend.py
 
 The second command emits JSON.  Its `frontend_complete` field is intentionally
 false until the lower Laurent boundary has been classified exhaustively.
+
+The source reconciliation for the repeated-tail `(96,144)` row is:
+
+```bash
+python3 plane-jc/cas/test_frontier_96_144_source_audit.py
+python3 plane-jc/cas/frontier_96_144_source_audit.py
+```
+
+It proves `q1=d0=4`, reduces the vertical residual factor to a cubic, removes
+the two root partitions containing a simple root, and passes the remaining
+triple-root factor to:
+
+```bash
+python3 plane-jc/cas/test_complete_chain_no_escape.py
+python3 plane-jc/cas/complete_chain_no_escape.py
+```
+
+The latter reproduces the published companion final corner and proves that
+the triple-root edge has open-chain counts `1,6,3,0`, hence no complete-chain
+escape.
 
 To compile both audited Proposition 4.3 polygons through lattice supports,
 the Laurent chart, all upper bracket layers, and the genus-three first block,

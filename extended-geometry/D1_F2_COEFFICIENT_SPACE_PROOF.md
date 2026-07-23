@@ -267,6 +267,21 @@ are not models of the characteristic-zero cover.  The uniform theorem
 should be stated in characteristic zero (or over `Z[1/N!]`), not over an
 unspecified base.
 
+The coefficient-recovery failure itself has a sharp positive-characteristic
+repair: the
+[`p`-typical Hasse reconstruction theorem](HASSE_TYPICAL_SEED_RECOVERY.md)
+recovers every degree-at-most-`N` polynomial modulo constants from the
+`floor(log_p(N))+1` channels
+`D^[1],D^[p],...,D^[p^floor(log_p(N))]`, and proves that every one of those
+orders is necessary among families of raw Hasse derivatives.  This does not
+repair the separate map-intrinsic problem.  In fact, the same note proves a
+clean degree-twelve no-go theorem: distinct normalized `F_5` seeds can have
+the same ordinary derivative and therefore define the identical weighted
+polynomial map, while their fifth Hasse channels differ.  It then constructs
+a dimension-preserving Frobenius correction of that map and proves exact
+stable seed recovery on the odd-characteristic tame clean locus using the
+full second-boundary factor data.
+
 ## 6. Exhaustive low-degree audit
 
 [`verify_d1_f2_coefficient_reconstruction.py`](../scripts/verify_d1_f2_coefficient_reconstruction.py)
