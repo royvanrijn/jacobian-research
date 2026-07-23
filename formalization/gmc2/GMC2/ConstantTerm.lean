@@ -30,6 +30,6 @@ theorem constantTerm_frobenius
   rw [show f = ∑ k ∈ f.coeff.support, AddMonoidAlgebra.single k (f.coeff k) by
     simpa [Finsupp.sum] using (AddMonoidAlgebra.sum_coeff_single f).symm]
   rw [sum_pow_char]
-  simp [constantTerm, AddMonoidAlgebra.single_pow, hp.ne_zero]
+  simp [constantTerm, mul_pow, hp.ne_zero]
 
 end GMC2
