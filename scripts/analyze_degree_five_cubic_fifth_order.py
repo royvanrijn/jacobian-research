@@ -1713,6 +1713,7 @@ def eliminate_seventh_order_reduced_component(
     parameter_names = tuple(f"v{index}" for index in range(1, 28))
     parameter_field = field.frac_field(*parameter_names)
     parameter_ring = parameter_field.get_ring()
+    ground_polynomial = parameter_ring.ring.ground_new
     variables = parameter_field.gens
 
     parameters = []
@@ -1775,7 +1776,7 @@ def eliminate_seventh_order_reduced_component(
         if set(denominator_terms) != {zero_exponent}:
             raise AssertionError("unexpected parameter denominator")
         inverse = field.one / denominator_terms[zero_exponent]
-        return numerator * parameter_ring.ground_new(inverse)
+        return numerator * ground_polynomial(inverse)
 
     polynomial_parameters = [
         as_polynomial(parameter) for parameter in parameters
@@ -1783,7 +1784,7 @@ def eliminate_seventh_order_reduced_component(
 
     def promote_polynomial(poly):
         return {
-            monomial: parameter_ring.ground_new(coefficient)
+            monomial: ground_polynomial(coefficient)
             for monomial, coefficient in poly.items()
             if coefficient
         }
@@ -1852,27 +1853,27 @@ def eliminate_seventh_order_reduced_component(
     seventh_constant = add(
         seventh_constant,
         GENERIC_PROFILE.pi_power(s4, promote_polynomial(T), 3),
-        parameter_ring.ground_new(field.one / field(24)),
+        ground_polynomial(field.one / field(24)),
     )
     seventh_constant = add(
         seventh_constant,
         GENERIC_PROFILE.pi_power(s2, t2, 3),
-        parameter_ring.ground_new(field.one / field(24)),
+        ground_polynomial(field.one / field(24)),
     )
     seventh_constant = add(
         seventh_constant,
         GENERIC_PROFILE.pi_power(promote_polynomial(S), t4, 3),
-        parameter_ring.ground_new(field.one / field(24)),
+        ground_polynomial(field.one / field(24)),
     )
     seventh_constant = add(
         seventh_constant,
         GENERIC_PROFILE.pi_power(s2, promote_polynomial(T), 5),
-        parameter_ring.ground_new(field.one / field(1920)),
+        ground_polynomial(field.one / field(1920)),
     )
     seventh_constant = add(
         seventh_constant,
         GENERIC_PROFILE.pi_power(promote_polynomial(S), t2, 5),
-        parameter_ring.ground_new(field.one / field(1920)),
+        ground_polynomial(field.one / field(1920)),
     )
     seventh_constant = add(
         seventh_constant,
@@ -1881,14 +1882,14 @@ def eliminate_seventh_order_reduced_component(
             promote_polynomial(T),
             7,
         ),
-        parameter_ring.ground_new(field.one / field(322560)),
+        ground_polynomial(field.one / field(322560)),
     )
 
     seventh_variations = []
     for kernel_vector in correction_kernel:
         direction_s4, direction_t4 = split_correction(
             kernel_vector,
-            parameter_ring.ground_new,
+            ground_polynomial,
         )
         variation = GENERIC_PROFILE.poisson(s2, direction_t4)
         variation = add(
@@ -1902,7 +1903,7 @@ def eliminate_seventh_order_reduced_component(
                 promote_polynomial(T),
                 3,
             ),
-            parameter_ring.ground_new(field.one / field(24)),
+            ground_polynomial(field.one / field(24)),
         )
         variation = add(
             variation,
@@ -1911,7 +1912,7 @@ def eliminate_seventh_order_reduced_component(
                 direction_t4,
                 3,
             ),
-            parameter_ring.ground_new(field.one / field(24)),
+            ground_polynomial(field.one / field(24)),
         )
         seventh_variations.append(variation)
 

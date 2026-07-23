@@ -63,9 +63,9 @@ The open tests must use a map-decorated package:
 3. Add the three-section boundary linear series only to Case-1 survivors.
    For reference, on the retired Case-2 degree-one gcd row,
    the forced Pluecker weights are `3` at the affine critical point and `13`
-   at infinity, leaving exactly `14`.  At the opposite end, an exact
-   four-equation unit certificate excludes gcd degree `7`, leaving degrees
-   `1,...,6`.
+   at infinity, leaving exactly `14`.  At the opposite end, exact compact
+   unit certificates exclude gcd degrees `7` and `6`, leaving only degrees
+   `1,...,5` in the pre-compatibility family.
 4. Compute the localized second Chern class of the logarithmic differential
    from its generic and nodal Smith profiles.  This is the next invariant
    after the determinant divisor.

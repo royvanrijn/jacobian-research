@@ -589,12 +589,76 @@ Consequently **every nonzero-scale branch in the residual
 \(\mathbf P^4\) is obstructed at fourth order**, including all higher-support
 points of that residual family.
 
-The remaining unrestricted-odd problem for this symbol is now solely to
-classify components of the original 41-quadric locus whose general point
-has essential support at least four outside \(L_1\cup L_2\), then continue
-any such components through the filtered equations.  Even eliminating all
-of them would prove only that this classical symbol does not furnish a
-counterexample; it would not prove \((DC_2)\).
+## A first high-support normal branch
+
+The residual calculation does not exhaust the classical quadratic locus.
+Indeed the four previously recorded reduced vanishings imply a fifth:
+after \(x_6=x_7=x_{19}=x_{34}=0\), one obstruction equation becomes a
+nonzero multiple of \(x_5^2\).  After also putting \(x_5=0\), only 24 of the
+41 quadrics remain nonzero in 33 active variables.  Krull's height theorem
+therefore forces every affine-cone component to have dimension at least
+nine.  The two seven-dimensional affine coordinate spaces \(L_1,L_2\)
+cannot themselves be components; genuinely higher-support components must
+leave them.
+
+At a generic point of \(L_1\), the Jacobian has rank 12.  After quotienting
+the seven tangent directions along \(L_1\), the 14-dimensional normal
+Kuranishi cone has the single exact equation
+
+\[
+ 45u_8^2+180u_8u_{10}+181u_{10}^2=0.
+\tag{Q11o}
+\]
+
+At a generic point of \(L_2\), the Jacobian has rank 8 and the
+18-dimensional normal cone has two exact equations
+
+\[
+ (3u_{10}+10u_{11})^2=0,\qquad
+ 45u_{13}^2+180u_{13}u_{15}+181u_{15}^2=0.
+\tag{Q11p}
+\]
+
+Thus both reduced normal cones have two branches over
+\(\mathbf Q(\sqrt{-5})\), while the \(L_2\) cone retains a nonreduced
+transverse equation.  These calculations are reproduced by
+[`explore_rank_two_odd_normal_cones.py`](../scripts/explore_rank_two_odd_normal_cones.py).
+A generic \(L_1\) normal-branch direction is itself an exact
+26-support solution of all classical quadrics; its line with the chosen
+\(L_1\) base point needs no higher classical correction.  The analogous
+generic \(L_2\) direction has a genuine next Kuranishi obstruction,
+with continuation rank \(9\to10\).  See
+[`explore_rank_two_odd_normal_branch_lifts.py`](../scripts/explore_rank_two_odd_normal_branch_lifts.py).
+
+The generic 26-support \(L_1\) direction is inconsistent at the filtered
+third-order equation already at \(u=0\).  An exact linear relaxation cuts
+to a nine-dimensional section; intersecting either branch of (Q11o) gives
+an eight-dimensional linear family over \(\mathbf Q(\sqrt{-5})\).  On this
+family the same two-coordinate correction (Q11l) solves the zero-scale
+affine equation globally.  In branch coordinates \(z_0,\ldots,z_7\), the
+coupling depends only on \(z_4,z_5\); its union has rank 12 and a generic
+member rank 11.  Modulo that union, all 329 cubic scale coordinates generate
+exactly
+
+\[
+ (z_4^3).
+\tag{Q11q}
+\]
+
+On \(z_4=0,z_5\ne0\), the cubic column lies identically in the fixed
+rank-11 \(z_5B\)-image.  On the rank-zero boundary \(z_4=z_5=0\), the cubic
+column itself vanishes identically.  Consequently the entire projective
+\(\mathbf P^6=V(z_4)\) reaches nonzero scale at third order.  This is checked
+by
+[`explore_rank_two_odd_l1_high_support.py`](../scripts/explore_rank_two_odd_l1_high_support.py).
+
+The next symbol-specific task is a uniform fourth-order obstruction or lift
+on this explicit high-support \(\mathbf P^6\), followed by the exceptional
+subschemes of the \(L_2\) normal cone and any components not meeting the two
+generic normal charts.  A global filtered nonsurjective lift here would
+disprove \((DC_2)\).  Conversely, eliminating this \(\mathbf P^6\), or even
+every branch of this displayed symbol, would show only that this symbol
+does not furnish a counterexample; it would not prove \((DC_2)\).
 
 ## A surviving formal-local quantization
 

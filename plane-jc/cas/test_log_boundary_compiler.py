@@ -12,6 +12,7 @@ from log_boundary_compiler import (
     compile_log_boundary,
     corner_direction,
     frontier_72_108_case1_boundary_package_audit,
+    frontier_72_108_case2_gcd_six_audit,
     frontier_72_108_case2_maximal_gcd_audit,
     frontier_72_108_case2_j1_endpoint_audit,
     frontier_72_108_case2_lower_jet_audit,
@@ -565,6 +566,32 @@ assert case2_maximal_gcd.singular_input_sha256 == (
     "1ac0b4db7ddd0b50fcbef6c93d49c28f"
     "7f80cb4133a73b5f2158af6c78f3b069"
 )
+case2_gcd_six = frontier_72_108_case2_gcd_six_audit()
+assert case2_gcd_six.gcd_degree == 6
+assert case2_gcd_six.selected_factor_conditions == ("C'(0)=0", "H(0)=0")
+assert case2_gcd_six.selected_g_remainder_degrees == (4, 5)
+assert case2_gcd_six.selected_constraint_term_counts == (
+    5,
+    30,
+    656,
+    352,
+    9,
+)
+assert case2_gcd_six.selected_constraint_parameter_degrees == (
+    2,
+    7,
+    16,
+    15,
+    4,
+)
+assert case2_gcd_six.excluded_exact_gcd_degrees == (6,)
+assert case2_gcd_six.surviving_precompatibility_gcd_degrees == (
+    1,
+    2,
+    3,
+    4,
+    5,
+)
 case2_lower_jet = frontier_72_108_case2_lower_jet_audit()
 assert case2_lower_jet.j0_conclusion == ("B=K*c", "F=K*g")
 assert case2_lower_jet.multiplier_degree_bound == "deg(K)<=deg(H)+1"
@@ -886,6 +913,12 @@ assert frontier_report["terminal_case2_maximal_gcd_exclusion"][
 assert frontier_report["terminal_case2_maximal_gcd_exclusion"][
     "surviving_exact_gcd_degrees"
 ] == [1, 2, 3, 4, 5, 6]
+assert frontier_report["terminal_case2_gcd_six_exclusion"][
+    "excluded_exact_gcd_degrees"
+] == [6]
+assert frontier_report["terminal_case2_gcd_six_exclusion"][
+    "surviving_precompatibility_gcd_degrees"
+] == [1, 2, 3, 4, 5]
 return_boundaries = frontier_report["plane_return_partition_boundaries"]
 assert [item["partition"] for item in return_boundaries] == [
     [4],
@@ -988,6 +1021,7 @@ print("PASS: terminal Case 2 compiles to a complete intrinsic boundary package")
 print("PASS: the alternate q=3 chart selects and resolves Case-1 partition [4]")
 print("PASS: div(X^2) corrects the terminal ramification indices to 3 and 5")
 print("PASS: J1 compatibility excludes the forced Case-2 degree-twelve endpoint")
+print("PASS: compact J0 certificates exclude precompatibility gcd degrees six,seven")
 print("PASS: the degree-one gcd row leaves fourteen Pluecker weights")
 print("PASS: all five edge-only quartic models compile intrinsically")
 print("PASS: E3 is only the numerical one-blowup zero-pole candidate")

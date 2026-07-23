@@ -489,6 +489,53 @@ vertical_G_poly = sp.Poly(vertical_G, y0)
 assert vertical_G_poly.degree() == 3
 assert vertical_G_poly.LC() != 0
 
+# The only degree not excluded by dominance in x=T+p(Y) is quadratic.
+# Its exact high-y coefficient ideal is the unit ideal.
+qc, qd, qe = sp.symbols("qc qd qe")
+quadratic_p = qc * y0**2 + qd * y0 + qe
+quadratic_G = sp.expand(
+    davenport_g.subs(
+        {DT: x0 - quadratic_p, DY: y0, A: root_a}
+    )
+)
+quadratic_G_poly = sp.Poly(quadratic_G, y0)
+quadratic_equations = []
+for y_power in range(3, 8):
+    coefficient_in_x = sp.Poly(
+        sp.expand(quadratic_G_poly.coeff_monomial(y0**y_power)),
+        x0,
+    )
+    quadratic_equations.extend(
+        coefficient
+        for coefficient in coefficient_in_x.all_coeffs()
+        if coefficient != 0
+    )
+assert len(quadratic_equations) == 9
+quadratic_groebner = sp.groebner(
+    quadratic_equations,
+    qc,
+    qd,
+    qe,
+    order="lex",
+    extension=sp.sqrt(-7),
+)
+assert len(quadratic_groebner.polys) == 1
+assert quadratic_groebner.polys[0].as_expr() == 1
+
+# Degree dominance for both triangular orientations.
+for degree in range(3, 30):
+    assert 3 * degree + 1 > max(
+        2 * degree + 3,
+        degree + 5,
+        7,
+    )
+for degree in range(1, 30):
+    assert 7 * degree > max(
+        5 * degree + 1,
+        3 * degree + 2,
+        degree + 3,
+    )
+
 print("PASS: the variable determinant family is an A4-to-A4 polynomial map")
 print("PASS: its Jacobian is D^2 and its reduced center is A2")
 print("PASS: the parabola chart contributes the additional factor D/2")
@@ -508,4 +555,6 @@ print("PASS: every T-dependent projective U-coefficient curve is excluded")
 print("PASS: every (T+Y^2)-dependent U-coefficient curve is excluded")
 print("PASS: the invariant pencil factorization and unit gate are exact")
 print("PASS: every affine-linear mixed coefficient pencil fails the unit gate")
+print("PASS: the exceptional quadratic triangular coefficient ideal is one")
+print("PASS: both one-triangular coordinate families fail the unit gate")
 print("PASS Davenport post-coordinate attack audit")

@@ -239,6 +239,16 @@ PYTHONPATH=scripts .venv/bin/python \
   scripts/verify_rank_two_odd_residual_support_three.py
 PYTHONPATH=scripts .venv/bin/python \
   scripts/verify_rank_two_odd_residual_fourth_identity.py
+PYTHONPATH=scripts .venv/bin/python \
+  scripts/explore_rank_two_odd_normal_cones.py L1 --exact
+PYTHONPATH=scripts .venv/bin/python \
+  scripts/explore_rank_two_odd_normal_cones.py L2 --exact
+PYTHONPATH=scripts .venv/bin/python \
+  scripts/explore_rank_two_odd_normal_branch_lifts.py L1 --order 8
+PYTHONPATH=scripts .venv/bin/python \
+  scripts/explore_rank_two_odd_normal_branch_lifts.py L2 --order 8
+PYTHONPATH=scripts .venv/bin/python \
+  scripts/explore_rank_two_odd_l1_high_support.py
 ```
 
 The first constructs a fixed three-monomial residue over `QQ(r)`, finds its
@@ -264,8 +274,12 @@ already-closed residual line and twelve closed points result, and all twelve
 points have exact `626->627` next-order rank.  Thus exact support three is
 closed even inside the coordinate planes contained in `L_1 union L_2`, and
 the final command eliminates every nonzero-scale branch in the residual
-projective four-space, in every support.  Higher-support components outside
-those linear spaces remain open.
+projective four-space, in every support.  The final five commands attack
+higher support: they compute the exact `L1` and `L2` normal cones; show that
+a generic `L1` normal branch is an exact 26-support classical solution while
+the analogous `L2` branch is obstructed at its next Kuranishi equation; and
+isolate a projective high-support `P6` that reaches nonzero filtered scale.
+Uniform fourth-order continuation on that `P6` is the next open calculation.
 These are statements about the displayed classical symbol only; they do not
 prove `(DC_2)`.
 

@@ -362,9 +362,9 @@ K^2*(C'*G''-C''*G') = -2*H^3*(A*g-c*E).
 ```
 
 The seven a priori gcd degrees `1,...,7` leave relative-Wronskian degrees
-`15,13,11,9,7,5,3`.  Attack D4 now excludes the last row exactly, so the
-complete remaining list is `deg(H)=1,...,6`, with degrees
-`15,13,11,9,7,5`.
+`15,13,11,9,7,5,3`.  Attack D4 now excludes the last two rows exactly, so
+the remaining pre-compatibility list is `deg(H)=1,...,5`, with degrees
+`15,13,11,9,7`.
 
 **Kill criterion.**  On the degree-one gcd row, the forced node/contact
 weights exceed `14`, or every partition of `14` violates local Hurwitz.
@@ -392,9 +392,15 @@ pinned in
 [`cas/audit_case2_maximal_gcd.py`](cas/audit_case2_maximal_gcd.py), and no
 residual `(J1)` compatibility equation is used.
 
-**Next calculation.**  Compute certificates for the six exact degrees
-`deg(H)=1,...,6`; in the first stratum impose the forced origin orders
-`(1,2,3,3)`.
+The degree-six row is now complete too.  Write `C'=H*(t+v)` with
+`deg(H)=6,H(0)=0`.  The five equations `C'(0),H(0)`, the last two
+coefficients of `remainder(G',H)`, and `(J0)_{19}` generate the unit ideal.
+The exact input is pinned in
+[`cas/audit_case2_gcd6.py`](cas/audit_case2_gcd6.py).
+
+**Next calculation.**  Compute certificates for the five
+pre-compatibility degrees `deg(H)=1,...,5`; in the first stratum impose the
+forced origin orders `(1,2,3,3)`.
 
 **Success criterion.** Replace the archived four-residual unit ideal by
 smaller stratum-aware identities whose factors have geometric meaning.

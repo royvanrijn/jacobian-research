@@ -301,6 +301,7 @@ Run
 make verify-plane-case2-residue-strata
 make verify-plane-case2-j1-endpoint
 make verify-plane-case2-maximal-gcd
+make verify-plane-case2-gcd6
 ```
 
 For Case 2, set `H=gcd(C',G')`, `C'=H*c`, `G'=H*g`.  Equation `(J0)` forces
@@ -339,10 +340,16 @@ The affine Wronskian has degree `17`, so exact gcd degrees `1,...,7` would
 leave relative degrees `15,13,11,9,7,5,3`.  The maximal row is now excluded
 exactly: for `deg(H)=7`, three coefficients of `remainder(G',C')` and the
 coefficient of `t^19` in `(J0)` generate the unit ideal over the pinned
-degree-35 field, without any residual `(J1)` compatibility equation.  Thus
-the sole birational cover has six remaining gcd/Wronskian rows
-`deg(H)=1,...,6`, with relative degrees `15,13,11,9,7,5`.  The pinned data
-are emitted by `frontier_72_108_case2_maximal_gcd_audit()`.
+degree-35 field, without any residual `(J1)` compatibility equation.  The
+degree-six row is also empty.  Writing `C'=H*(t+v)`, the two factor
+conditions `C'(0)=H(0)=0`, the last two coefficients of
+`remainder(G',H)`, and `(J0)_{19}` generate a second pinned unit ideal,
+again without residual `(J1)` compatibility.  Hence only the five
+pre-compatibility rows `deg(H)=1,...,5` remain, with relative degrees
+`15,13,11,9,7`; all are globally retired by the endpoint certificate.
+The pinned data are emitted by
+`frontier_72_108_case2_maximal_gcd_audit()` and
+`frontier_72_108_case2_gcd_six_audit()`.
 
 The old one-step enumeration and four two-step witnesses remain in the
 report as counterfactual numerical controls.  They demonstrate what

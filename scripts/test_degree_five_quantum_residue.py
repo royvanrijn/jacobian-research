@@ -15,7 +15,10 @@ from explore_degree_five_quantum_residue import (
     laurent_monomials,
     third_order_family,
 )
-from analyze_degree_five_cubic_fifth_order import cubic_number_field
+from analyze_degree_five_cubic_fifth_order import (
+    cubic_number_field,
+    reduced_component_parameters,
+)
 
 
 def _qq(poly):
@@ -26,6 +29,66 @@ def _qq(poly):
 
 
 class QuantumResidueRegression(unittest.TestCase):
+    def test_cubic_fifth_order_reduced_component_is_affine_27_space(self):
+        field, a, _ = cubic_number_field()
+        free_indices, base, directions = reduced_component_parameters(
+            field,
+            a,
+        )
+        self.assertEqual(len(free_indices), 27)
+        self.assertEqual(len(directions), 27)
+        self.assertEqual(
+            free_indices[-10:],
+            (26, 28, 30, 32, 35, 36, 37, 38, 39, 40),
+        )
+
+        def assert_radical_relations(parameters):
+            self.assertEqual(
+                field(3) * parameters[34]
+                + field(4) * parameters[35],
+                field.zero,
+            )
+            self.assertEqual(
+                field(4194304) * parameters[33]
+                + field(203337542430) * a**2
+                + field(487549466415) * a
+                + field(295586113680),
+                field.zero,
+            )
+            self.assertEqual(
+                field(3) * parameters[31]
+                + field(10) * parameters[32],
+                field.zero,
+            )
+            self.assertEqual(
+                field(9) * parameters[29]
+                + field(24) * parameters[30]
+                + (field(872) * a + field(1856)) * parameters[40],
+                field.zero,
+            )
+            self.assertEqual(
+                field(9) * parameters[27]
+                + field(18) * parameters[28]
+                + (field(392) * a + field(752)) * parameters[38]
+                + (field(848) * a + field(1496)) * parameters[39],
+                field.zero,
+            )
+            self.assertEqual(
+                field(27) * parameters[25]
+                + field(36) * parameters[26]
+                + (field(456) * a + field(672)) * parameters[36]
+                + (field(896) * a + field(1184)) * parameters[37],
+                field.zero,
+            )
+
+        assert_radical_relations(base)
+        for direction in directions:
+            point = [
+                value + delta
+                for value, delta in zip(base, direction, strict=True)
+            ]
+            assert_radical_relations(point)
+
     def test_reconstructed_cubic_fifth_order_branch_coordinates(self):
         field, a, tau = cubic_number_field()
         self.assertEqual(

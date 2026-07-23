@@ -775,8 +775,27 @@ run
 make verify-plane-case2-maximal-gcd
 ```
 
-Hence only the six exact gcd degrees `1,...,6` remain.  Their
-relative-Wronskian degrees are `15,13,11,9,7,5`.
+The next row is empty as well.  For `h=6`, write
+
+```text
+C'=H*(t+v),  deg(H)=6,  H(0)=0.
+```
+
+Synthetic division reconstructs `H`.  The five consequences `C'(0)=0`,
+`H(0)=0`, the degree-`4,5` coefficients of `remainder(G',H)`, and the
+coefficient of `t^19` in `(J0)` generate the unit ideal over the exact
+degree-35 field.  Their term counts are `(5,30,656,352,9)` and parameter
+degrees `(2,7,16,15,4)`.  Again no residual `(J1)` compatibility equation
+is used.  The pinned checker is
+[`cas/audit_case2_gcd6.py`](cas/audit_case2_gcd6.py); run
+
+```bash
+make verify-plane-case2-gcd6
+```
+
+Thus the compact pre-compatibility stratification has only degrees
+`1,...,5` left, with relative-Wronskian degrees `15,13,11,9,7`.  Globally,
+the endpoint certificate has already excluded all of Case 2.
 
 For context, arbitrary numerical positive-pole preparatory blowups on the
 unextended common graph give four connected witnesses:

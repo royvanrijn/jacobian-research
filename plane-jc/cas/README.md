@@ -70,12 +70,17 @@ At the opposite end,
 [`audit_case2_maximal_gcd.py`](audit_case2_maximal_gcd.py) excludes
 `deg(H)=7` exactly: three low coefficients of `remainder(G',C')` and the
 terminal `t^19` coefficient of `J0` generate the unit ideal, without any
-residual `J1` compatibility equation.  The standalone exact audits are:
+residual `J1` compatibility equation.
+[`audit_case2_gcd6.py`](audit_case2_gcd6.py) similarly excludes
+`deg(H)=6`: write `C'=H*(t+v)` and use `C'(0),H(0)`, the last two
+coefficients of `G' mod H`, and `J0` at `t^19`.  The standalone exact audits
+are:
 
 ```bash
 make verify-plane-case2-residue-strata
 make verify-plane-case2-j1-endpoint
 make verify-plane-case2-maximal-gcd
+make verify-plane-case2-gcd6
 ```
 
 The third proves that the entire

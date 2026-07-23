@@ -655,6 +655,22 @@
       "priority": "reference"
     },
     {
+      "id": "RSE4",
+      "kind": "corollary",
+      "state": "proved",
+      "title": "Case-2 derivative-gcd degree-six exclusion",
+      "scope": "On the pre-compatibility terminal Case-2 family of the certified (72,108) replay, derivative-gcd degree six permits C'=H(t+v) with deg(H)=6 and H(0)=0. The five consequences C'(0)=0, H(0)=0, the degree-4 and degree-5 coefficients of remainder(G',H), and the t^19 coefficient of J0 generate the unit ideal over the exact degree-35 first-block field. Their term counts are (5,30,656,352,9) and parameter degrees (2,7,16,15,4); no residual J1 compatibility equation is used. Hence gcd degree six is already empty before the stronger RSE3 endpoint exclusion.",
+      "canonical_source": "plane-jc/FRONTIER_LOG_SCALE_AUDIT.md",
+      "dependencies": [
+        "RSE1"
+      ],
+      "checker": "plane-jc/cas/audit_case2_gcd6.py",
+      "review": "none",
+      "supersedes": [],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
       "id": "A2B1",
       "kind": "corollary",
       "state": "proved",
@@ -1551,6 +1567,25 @@
       "priority": "derived"
     },
     {
+      "id": "AS17",
+      "kind": "corollary",
+      "state": "proved",
+      "title": "One-triangular coefficient-pencil obstruction",
+      "scope": "The invariant unit gate eliminates both one-triangular polynomial-coordinate families. For x=T+p(Y), degrees greater than two have the T^3Y term uniquely dominant, while degrees zero and one are affine. In the remaining quadratic case p=cY^2+dY+e, making the fiber derivative a unit would require g_(x-p(y))(y) to have y-degree at most two; the nine coefficients of y^3 through y^7 generate the unit ideal over K. For x=Y+p(T), every nonconstant p makes Y^7 uniquely dominant along the fiber. Hence no one-triangular polynomial coordinate supports the translated coefficient pencil; only alternating triangular polydegree at least two or nonlinear U-dependence remains.",
+      "canonical_source": "extended-geometry/DAVENPORT_POST_COORDINATE_ATTACKS.md",
+      "dependencies": [
+        "AS15",
+        "AS16"
+      ],
+      "checker": "scripts/verify_davenport_post_coordinate_attacks.py",
+      "review": "none",
+      "supersedes": [
+        "one-triangular Jung coordinates as translated coefficient-pencil candidates"
+      ],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
       "id": "AD1",
       "kind": "corollary",
       "state": "proved",
@@ -2018,6 +2053,23 @@
         "QO7"
       ],
       "checker": "scripts/verify_rank_two_odd_residual_fourth_identity.py",
+      "review": "none",
+      "supersedes": [],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
+      "id": "QO9",
+      "kind": "example",
+      "state": "proved",
+      "title": "High-support normal branches and nonzero-scale P6",
+      "scope": "The four known reduced coordinate vanishings force x5=0 as well, leaving 24 nonzero quadrics in 33 active variables, so the two affine 7-dimensional coordinate spaces cannot be components. At a generic L1 point the exact 14-variable normal cone is the rank-two quadric 45u8^2+180u8u10+181u10^2; at a generic L2 point the 18-variable cone is cut by (3u10+10u11)^2 and 45u13^2+180u13u15+181u15^2. Both reduced cones split over Q(sqrt(-5)). A generic L1 normal direction is an exact 26-support classical solution, while the analogous L2 direction has a rank 9->10 cubic Kuranishi obstruction. On an exact eight-dimensional L1 branch section, the global zero-scale correction from QO8 persists, the coupling is a rank-11 two-form pencil with union rank 12, and all 329 cubic coordinates outside the union generate (z4^3). The fixed-pencil cokernel vanishes on z4=0 and the cubic itself vanishes on z4=z5=0. Hence an explicit high-support projective P6 reaches nonzero scale at third order. Its fourth-order continuation is open. This concerns one displayed symbol and does not prove DC_2.",
+      "canonical_source": "extended-geometry/RANK_TWO_FILTERED_QUANTIZATION_OBSTRUCTION.md",
+      "dependencies": [
+        "QO2",
+        "QO8"
+      ],
+      "checker": "scripts/explore_rank_two_odd_l1_high_support.py",
       "review": "none",
       "supersedes": [],
       "replaced_by": [],
@@ -3217,7 +3269,7 @@
       "kind": "open_problem",
       "state": "parked",
       "title": "Absolute global Sunada Keller maps",
-      "scope": "Replace the Cox-Keller boundary-complement and relative affine-bundle realizations by two absolute polynomial Keller maps over one affine-space target. AS2 rules out stable straightening and coordinate-preserving suspension; AS3-AS5 exhaust the fixed-mark and standard weighted-gluing routes. AS6 matches the doubled modification Jacobian with J^2 but finds a center unit-rank mismatch. AS7 constructs the unique puncture-merging quotient on the normalization and isolates its node-conductor failure. AS8 separates that conductor in affine planes, finds the unique torus-clean parabola chart with exact doubled derivative pullback, proves that its complementary gluing creates a complete exceptional P1, and excludes every polynomial-coordinate one-chart separation. AS9-AS12 eliminate the direct determinant splice, exposed exceptional parameter, affine and canonical nonlinear masks, and the unshifted determinant output. AS13 normalizes the translated incidence Sigma=S+D^2U-CR. AS14-AS15 eliminate coefficient dependence through T, Y, or T+Y^2. AS16 gives the invariant factorization for any polynomial coefficient pencil and excludes all affine-linear pencils via the necessary unit gate a*G_y-b*T_y in K*. The leading unresolved gate is therefore a translated incidence replacing T whose three-variable block uses a nonlinear polynomial pencil passing that unit gate or nonlinear U-dependence, while the residue ledger and Gassmann closure survive. If that fails, the remaining routes are a coupled affine modification of the explicit exceptional P1, finite-algebra descent without an ambient involution, or a new non-symmetric monodromy core.",
+      "scope": "Replace the Cox-Keller boundary-complement and relative affine-bundle realizations by two absolute polynomial Keller maps over one affine-space target. AS2 rules out stable straightening and coordinate-preserving suspension; AS3-AS5 exhaust the fixed-mark and standard weighted-gluing routes. AS6 matches the doubled modification Jacobian with J^2 but finds a center unit-rank mismatch. AS7 constructs the unique puncture-merging quotient on the normalization and isolates its node-conductor failure. AS8 separates that conductor in affine planes, finds the unique torus-clean parabola chart with exact doubled derivative pullback, proves that its complementary gluing creates a complete exceptional P1, and excludes every polynomial-coordinate one-chart separation. AS9-AS12 eliminate the direct determinant splice, exposed exceptional parameter, affine and canonical nonlinear masks, and the unshifted determinant output. AS13 normalizes the translated incidence Sigma=S+D^2U-CR. AS14-AS15 eliminate coefficient dependence through T, Y, or T+Y^2. AS16 gives the invariant unit gate for arbitrary coefficient pencils, and AS17 uses it to eliminate both one-triangular Jung families, including the exceptional quadratic coefficient ideal. The leading unresolved gate is therefore a translated incidence whose affine-in-U coefficient coordinate has alternating triangular polydegree at least two, or whose U-dependence is nonlinear, while the residue ledger and Gassmann closure survive. If that fails, the remaining routes are a coupled affine modification of the explicit exceptional P1, finite-algebra descent without an ambient involution, or a new non-symmetric monodromy core.",
       "canonical_source": "extended-geometry/DAVENPORT_POST_COORDINATE_ATTACKS.md",
       "dependencies": [
         "AS1",
@@ -3236,6 +3288,7 @@
         "AS14",
         "AS15",
         "AS16",
+        "AS17",
         "CL1",
         "OP-SUSP"
       ],
@@ -3290,7 +3343,7 @@
       "kind": "open_problem",
       "state": "parked",
       "title": "Wider quantization lifts and residue comparison",
-      "scope": "The hbar^3 obstruction vanishes uniformly. Four complete generic bounded hbar^5 periods have a zero-dimensional common scheme of exact length 44: exact local algebras plus a modular upper bound exhaust its six closed components. A fifth function-field period lowers the length to 43 without changing support. Off the replacement and degree-drop boundaries only (a,tau)=(-1/2,-3) and the cubic component 94a^3+335a^2+400a+160=0, 8tau+658a^2+1593a+976=0 remain. The rational point has an exact vertical 15-term dual functional of value one which survives the full X-Laurent lower-lift space; it is not the specialization of the generic syzygy. On the cubic component the genuine quadratic equations have an explicit Q(a)-rational lower lift and a 14-term hbar^5 correction. That branch is obstructed at hbar^7 for every one of the 20 fifth-order gauge directions by a one-term X^18 period; a second point on an explicit hbar^5 solution line also has a 6-to-7 rank jump. Two primitive replacement-chart periods have gcd tau^2, proving bounded obstruction everywhere there for tau!=0. Formulate the coherent dual-sheaf/Fitting invariant, extend the generic period conditions to every Laurent lower direction, prove the hbar^7 obstruction on the full 27-dimensional cubic hbar^5 solution scheme, and invariantize the formal X-adic tail. On the unrestricted odd branch, exact support two, the complete residual line, every exact-support-three branch, and every nonzero-scale branch in the residual five-space are now eliminated. The remaining symbol-specific task is to classify components of the 41-quadric locus whose general point has essential support at least four outside L1 union L2 and continue any such component through the filtered equations. Eliminating this symbol would still not prove DC_2.",
+      "scope": "The hbar^3 obstruction vanishes uniformly. Four complete generic bounded hbar^5 periods have a zero-dimensional common scheme of exact length 44: exact local algebras plus a modular upper bound exhaust its six closed components. A fifth function-field period lowers the length to 43 without changing support. Off the replacement and degree-drop boundaries only (a,tau)=(-1/2,-3) and the cubic component 94a^3+335a^2+400a+160=0, 8tau+658a^2+1593a+976=0 remain. The rational point has an exact vertical 15-term dual functional of value one which survives the full X-Laurent lower-lift space; it is not the specialization of the generic syzygy. On the cubic component the genuine quadratic equations have an explicit Q(a)-rational lower lift and a 14-term hbar^5 correction. That branch is obstructed at hbar^7 for every one of the 20 fifth-order gauge directions by a one-term X^18 period; a second point on an explicit hbar^5 solution line also has a 6-to-7 rank jump. Two primitive replacement-chart periods have gcd tau^2, proving bounded obstruction everywhere there for tau!=0. Formulate the coherent dual-sheaf/Fitting invariant, extend the generic period conditions to every Laurent lower direction, prove the hbar^7 obstruction on the full 27-dimensional cubic hbar^5 solution scheme, and invariantize the formal X-adic tail. On the unrestricted odd branch, exact support two, the complete residual line, every exact-support-three branch, and every nonzero-scale branch in the residual five-space are eliminated. A high-support normal-cone attack now isolates an explicit projective P6 over Q(sqrt(-5)) that reaches nonzero scale at third order. The next symbol-specific task is its uniform fourth-order continuation, followed by exceptional L2 normal-cone subschemes and components outside the two generic normal charts. Eliminating this symbol would still not prove DC_2.",
       "canonical_source": "extended-geometry/QUANTUM_RESIDUE_OBSTRUCTION.md",
       "dependencies": [
         "QO1",
@@ -3300,7 +3353,8 @@
         "QO5",
         "QO6",
         "QO7",
-        "QO8"
+        "QO8",
+        "QO9"
       ],
       "checker": "scripts/verify_degree_five_laurent_quantum_obstruction.py",
       "review": "none",

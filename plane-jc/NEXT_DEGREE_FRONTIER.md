@@ -102,8 +102,10 @@ Open work, in dependency order:
    maximal gcd degree `7` is also excluded: three coefficients of
    `remainder(G',C')` plus the terminal `(J0)` coefficient generate the unit
    ideal over the exact degree-35 field, with no residual `(J1)`
-   compatibility equation.  Its six exact gcd degrees `1,...,6` are now
-   retired as pre-compatibility strata.  The
+   compatibility equation.  The same extreme-stratum method excludes gcd
+   degree `6` using a reconstructed linear cofactor, two terminal
+   `G' mod H` coefficients, and `(J0)_{19}`.  Its remaining exact gcd
+   degrees `1,...,5` are now retired as pre-compatibility strata.  The
    degree-one row is already reduced to the single origin pattern
    `ord(B),ord(E),ord(G'),ord(F)=(1,2,3,3)`; its only other valuation pattern
    is excluded by `(J1)`.  After those coefficient checks comes an accounting

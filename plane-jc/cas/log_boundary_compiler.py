@@ -2715,9 +2715,9 @@ def frontier_72_108_case2_lower_jet_audit() -> Case2LowerJetAudit:
             gcd_wronskian_degrees
         ),
         unresolved_input=(
-            "place the remaining fourteen Plucker weights and test the "
-            "six surviving exact gcd-degree strata against the remaining "
-            "coefficients"
+            "none globally after the J1 endpoint exclusion; exact gcd "
+            "degrees one through five remain only as precompatibility "
+            "compact-certificate refinements"
         ),
     )
 
@@ -3119,6 +3119,7 @@ def frontier_72_108_local_report() -> dict[str, object]:
     )
     case2_j1_endpoint = frontier_72_108_case2_j1_endpoint_audit()
     case2_maximal_gcd = frontier_72_108_case2_maximal_gcd_audit()
+    case2_gcd_six = frontier_72_108_case2_gcd_six_audit()
     case2_lower_jet = frontier_72_108_case2_lower_jet_audit()
     minimal_dicritical = (
         frontier_72_108_minimal_dicritical_extension_audit()
@@ -3495,6 +3496,40 @@ def frontier_72_108_local_report() -> dict[str, object]:
             ),
             "certificate_command": case2_maximal_gcd.certificate_command,
             "conclusion": case2_maximal_gcd.conclusion,
+        },
+        "terminal_case2_gcd_six_exclusion": {
+            "gcd_degree": case2_gcd_six.gcd_degree,
+            "linear_cofactor_parameter": (
+                case2_gcd_six.linear_cofactor_parameter
+            ),
+            "selected_factor_conditions": list(
+                case2_gcd_six.selected_factor_conditions
+            ),
+            "total_g_remainder_coefficients": (
+                case2_gcd_six.total_g_remainder_coefficients
+            ),
+            "selected_g_remainder_degrees": list(
+                case2_gcd_six.selected_g_remainder_degrees
+            ),
+            "j0_coefficient_degree": case2_gcd_six.j0_coefficient_degree,
+            "selected_constraint_term_counts": list(
+                case2_gcd_six.selected_constraint_term_counts
+            ),
+            "selected_constraint_parameter_degrees": list(
+                case2_gcd_six.selected_constraint_parameter_degrees
+            ),
+            "equation_scope": case2_gcd_six.equation_scope,
+            "singular_input_sha256": (
+                case2_gcd_six.singular_input_sha256
+            ),
+            "excluded_exact_gcd_degrees": list(
+                case2_gcd_six.excluded_exact_gcd_degrees
+            ),
+            "surviving_precompatibility_gcd_degrees": list(
+                case2_gcd_six.surviving_precompatibility_gcd_degrees
+            ),
+            "certificate_command": case2_gcd_six.certificate_command,
+            "conclusion": case2_gcd_six.conclusion,
         },
         "terminal_case2_lower_jet_reduction": {
             "equations": list(case2_lower_jet.equations),

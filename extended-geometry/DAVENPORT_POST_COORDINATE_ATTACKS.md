@@ -701,6 +701,64 @@ search begins with nonlinear polynomial coordinates beyond the already
 excluded parabola \(T+Y^2\), and applies the unit gate (35) before solving
 for \(h\).
 
+The gate also eliminates both one-triangular polynomial-coordinate
+families.
+
+First let
+
+\[
+x=T+p(Y),\qquad y=Y.
+\]
+
+If \(m=\deg p>2\), then in
+\[
+G(x,y)=g_{x-p(y)}(y)
+\]
+the \(T^3Y\) term has degree \(3m+1\) in \(y\), strictly greater than
+\[
+2m+3,\qquad m+5,\qquad 7,
+\]
+the degrees of the other outer terms.  Hence \(G_y\) has degree \(3m\),
+while \(T_y=-p'(y)\) has degree \(m-1\); the unit gate (35) fails.
+Degrees zero and one are affine-linear and already excluded.
+
+For the only exceptional case
+\[
+p(y)=cy^2+dy+e,                                     \tag{36}
+\]
+the gate could be a unit only if \(G_y\) had degree at most one, equivalently
+if \(G\) had degree at most two in \(y\).  Expanding the coefficients of
+\(y^3,\ldots,y^7\), then their coefficients in \(x\), gives nine equations
+in \(c,d,e\).  Exact Gröbner reduction over \(K\) gives
+
+\[
+\langle\text{those nine coefficients}\rangle=(1).   \tag{37}
+\]
+
+Thus no quadratic \(p\) passes the gate, including but not limited to the
+clean parabola \(p(Y)=Y^2\).
+
+For the reverse triangular family
+
+\[
+x=Y+p(T),\qquad y=T,
+\]
+
+let \(m=\deg p\ge1\).  The \(Y^7/7\) term has degree \(7m\) in \(y\),
+strictly greater than the degrees \(5m+1,3m+2,m+3\) of all terms involving
+\(T\).  Therefore \(G_y\) has degree \(7m-1\), whereas \(T_y=1\), and
+(35) again fails.
+
+Consequently:
+
+\[
+\boxed{\text{No one-triangular polynomial coordinate supports the
+translated coefficient pencil.}}                    \tag{38}
+\]
+
+Only an alternating triangular coordinate of polydegree at least two, or
+genuinely nonlinear dependence on \(U\), remains in Attack A.
+
 ## 3. Attack B: coupled affine replacement of the exceptional line
 
 A plain stabilization of \(B\) cannot help: \(E\times\mathbb A^m\) still
@@ -711,7 +769,7 @@ Zariski-locally trivial \(\mathbb A^1\)-bundle \(Q\to B\) has
 
 \[
 [Q]=\mathbb L[B]
-=\mathbb L^3+\mathbb L^2\ne\mathbb L^3.              \tag{36}
+=\mathbb L^3+\mathbb L^2\ne\mathbb L^3.              \tag{39}
 \]
 
 Thus even when \(Q\) is affine, it is not affine three-space.
@@ -741,7 +799,7 @@ such that:
 5. the construction is compatible with the transition
    \(z=4/(w-2)\).
 
-Equation (36) is a quick rejection test: any proposal which is merely an
+Equation (39) is a quick rejection test: any proposal which is merely an
 affine bundle over \(B\) fails before Jacobians are considered.
 
 ## 4. Attack C: descend a finite correspondence, not an ambient involution
@@ -806,8 +864,9 @@ The concrete order is:
    affine-linear mask classes (8) and (11), use the nonlinear placements
    (13) and (16), fall into the plane reductions (21)--(22), or return to
    any one-coordinate coefficient curve (23)--(29), or use the exceptional
-   parabola pencil (30)--(32) or any affine-linear pencil (33)--(35).
-2. **B — coupled exceptional-fiber modification.**  Use (1) and (36) as
+   parabola pencil (30)--(32), any affine-linear pencil (33)--(35), or any
+   one-triangular pencil (36)--(38).
+2. **B — coupled exceptional-fiber modification.**  Use (1) and (39) as
    class filters before any coefficient search.
 3. **C — finite algebra descent.**  Attempt this only if ambient
    equivariance remains the sole obstruction after A.
@@ -822,4 +881,5 @@ affine-mask theorems (8)--(12), the nonlinear obstructions (13)--(16), the
 critical-axis obstruction (18), and the plane reductions (21)--(22).  The
 first live affine-in-\(U\) coefficient map must also have simultaneous
 \(T,Y\)-dependence beyond the three natural pencils \(T\), \(Y\), and
-\(T+Y^2\), and beyond every affine-linear pencil, by (23)--(35).
+\(T+Y^2\), and must have alternating triangular polydegree at least two,
+by (23)--(38).

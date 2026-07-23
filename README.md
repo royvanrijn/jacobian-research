@@ -309,6 +309,10 @@ For an arbitrary polynomial coefficient pencil `(x,y)`, the translated
 Jacobian now factors through the necessary unit
 `a(x) G_y-b(x) T_y`.  Every affine-linear pencil fails this gate, so future
 searches can reject them before solving any coefficient equations.
+Both one-triangular Jung families fail as well: degree dominance handles
+every case except `x=T+cY^2+dY+e`, whose nine high-degree coefficient
+equations have unit Gröbner ideal.  An affine-in-`U` candidate must now
+start at alternating triangular polydegree two.
 The [stratified extension](extended-geometry/STRATIFIED_ADELIC_FIBER_ENGINEERING.md)
 moves the seed and target together on any rational chart of a selected locally
 closed seed stratum. It isolates geometric nonemptiness as the only extra
