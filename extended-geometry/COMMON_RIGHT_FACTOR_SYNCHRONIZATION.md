@@ -153,31 +153,31 @@ on the formal neighborhood of that component.
 
 > **Theorem 3.1 (finite-flat synchronization criterion).**  Assume:
 >
-> 1. \(A\) is finite over \(B\);
-> 2. \(A\) is Cohen--Macaulay, pure of dimension \(\dim B\);
-> 3. the generic fiber \(A_K=A\otimes_BK\) is finite etale over \(K\); and
-> 4. the relation graph synchronizes the missing linear coefficients at
+> 1. \(A\) is a finite maximal Cohen--Macaulay \(B\)-module;
+> 2. the generic fiber \(A_K=A\otimes_BK\) is geometrically reduced; and
+> 3. the relation graph synchronizes the missing linear coefficients at
 >    all geometric field-valued points.
 >
 > Then every lift difference vanishes in \(A\).  Equivalently, all lift
 > differences belong to the summed Hessian residual ideal.
 
-**Proof.**  Work locally on \(B\).  Since \(A\) is finite and has the same
-pure dimension, a regular system of parameters of \(B\) is a system of
-parameters in every local factor of \(A\).  Cohen--Macaulayness makes it a
-regular sequence.  Thus \(A\), regarded as a finite \(B\)-module, has depth
-\(\dim B\).  Auslander--Buchsbaum over the regular local ring \(B\) gives
-projective dimension zero.  Hence \(A\) is locally free and in particular
-\(B\)-torsion-free.
-
-The generic fiber is etale and therefore reduced.  Field-valued
+**Proof.**  Work locally on \(B\).  Auslander--Buchsbaum over the regular
+local ring \(B\) makes the finite maximal Cohen--Macaulay module \(A\)
+free.  Hence \(A\) is \(B\)-torsion-free.  Field-valued
 synchronization makes every lift difference \(\delta\) vanish at every
-geometric point of \(A_K\), hence \(\delta=0\) in \(A_K\).  Torsion-freeness
-makes \(A\to A_K\) injective, so \(\delta=0\) already in \(A\).  \(\square\)
+geometric point of the reduced algebra \(A_K\), hence \(\delta=0\) in
+\(A_K\).  Torsion-freeness makes \(A\to A_K\) injective, so
+\(\delta=0\) already in \(A\).  \(\square\)
+
+The familiar geometric hypotheses imply condition 1: if \(A\) is finite
+over \(B\), Cohen--Macaulay and pure of dimension \(\dim B\), and every
+minimal component dominates \(\operatorname{Spec}B\), miracle flatness
+makes \(A\) maximal Cohen--Macaulay over \(B\).
 
 This criterion replaces an order-by-order Krull-intersection argument by
-miracle flatness.  Its etaleness hypothesis must concern the actual generic
-fiber of the possibly nonreduced residual algebra, not only its reduction.
+miracle flatness.  Its reducedness hypothesis must concern the actual
+geometric generic fiber of the possibly nonreduced residual algebra, not
+only its reduction.
 Otherwise \(B[\epsilon]/(\epsilon^2)\) is a Cohen--Macaulay countermodel:
 its reduced parametrization is etale, while \(\epsilon\) vanishes on the
 reduction but not scheme-theoretically.  Likewise, Cohen--Macaulayness only
