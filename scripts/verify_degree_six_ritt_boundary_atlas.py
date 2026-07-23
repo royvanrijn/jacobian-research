@@ -33,6 +33,7 @@ phi23 = sp.expand(
 phi32 = (
     27 * h3 * h6**2 - 18 * h4 * h5 * h6 + 5 * h5**3
 ).subs({h3: h3_normal, h4: x, h5: y, h6: z})
+psi33 = 9 * h2_normal * z**2 - 3 * x**2 * z + x * y**2
 
 P_generic = sp.cancel(H_generic / w**2)
 affine_boundary = sp.factor(
@@ -157,11 +158,13 @@ for name in ("D32-extra-X", "D32-extra-Z"):
     assert h2_normal.subs(substitutions[name]) != 0
     assert extra_root.subs(substitutions[name]) == 0
     assert phi23.subs(substitutions[name]) != 0
+    assert psi33.subs(substitutions[name]) != 0
 
 assert phi32.subs(substitutions["D32-zero"]) == 0
 assert h2_normal.subs(substitutions["D32-zero"]) == 0
 assert extra_root.subs(substitutions["D32-zero"]) != 0
 assert phi23.subs(substitutions["D32-zero"]) != 0
+assert psi33.subs(substitutions["D32-zero"]) != 0
 
 # Verify the chart factors at the same points.
 assert U23.subs({p: 0, q: 0}) == 0

@@ -1,0 +1,24 @@
+\contentsline {section}{\numberline {1}Verdict and logical shape}{2}{section.1}%
+\contentsline {section}{\numberline {2}The moduli functors}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Stable root configurations}{3}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}The open normalized-seed functors}{3}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Admissible polynomial covers}{4}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}The contracted root incidence}{4}{subsection.2.4}%
+\contentsline {section}{\numberline {3}The quotient-stack theorem}{5}{section.3}%
+\contentsline {section}{\numberline {4}Coarse root charts and simultaneous collisions}{5}{section.4}%
+\contentsline {section}{\numberline {5}The finite-cover DVR lemma}{6}{section.5}%
+\contentsline {section}{\numberline {6}The comparison package actually required}{7}{section.6}%
+\contentsline {section}{\numberline {7}Adversarial audit of H1--H3}{8}{section.7}%
+\contentsline {subsection}{\numberline {7.1}H1: the compactification is not specified enough}{9}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}H2: tautological persistence versus comparison}{9}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}H3: the finite-birational argument starts after the gap}{9}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}Risk matrix}{10}{subsection.7.4}%
+\contentsline {section}{\numberline {8}Consequences for OP-LR-NE}{10}{section.8}%
+\contentsline {section}{\numberline {9}A proof checklist that would close H1--H3}{11}{section.9}%
+\contentsline {section}{\numberline {10}Final theorem status}{12}{section.10}%
+\contentsline {section}{\numberline {A}Explicit pair, triple, and mixed-cluster traits}{12}{appendix.A}%
+\contentsline {subsection}{\numberline {A.1}A pair collision}{12}{subsection.A.1}%
+\contentsline {subsection}{\numberline {A.2}A triple collision}{13}{subsection.A.2}%
+\contentsline {subsection}{\numberline {A.3}Two simultaneous clusters}{13}{subsection.A.3}%
+\contentsline {section}{\numberline {B}Stack points, coarse points, and sections}{14}{appendix.B}%
+\contentsline {section}{\numberline {C}Why completion does not supply the missing global morphism}{14}{appendix.C}%

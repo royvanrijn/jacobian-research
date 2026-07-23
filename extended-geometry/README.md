@@ -8,7 +8,7 @@ and external review are recorded only in
 | Results | Primary document |
 |---|---|
 | Generic discriminant geometry | [Generic discriminant curve](GENERIC_DISCRIMINANT_CURVE.md) |
-| Incidence-cover automorphisms | [Hessian-stabilizer classification and Ritt-imprimitive vertical slices](INCIDENCE_COVER_AUTOMORPHISMS.md); [all-degree Hessian atlas and complete degree-six/eight/twelve Ritt diagrams](HESSIAN_RITT_INCIDENCE.md); [normalized sextic omitted-value and affine-sheet atlas](DEGREE_SIX_RITT_ATLAS.md) |
+| Incidence-cover automorphisms | [Hessian-stabilizer classification and Ritt-imprimitive vertical slices](INCIDENCE_COVER_AUTOMORPHISMS.md); [all-degree Hessian atlas and complete degree-six/eight/twelve Ritt diagrams](HESSIAN_RITT_INCIDENCE.md); [degree-eighteen nested-power component and degree-pattern census](DEGREE18_HESSIAN_RITT_NESTED_POWER.md); [normalized sextic omitted-value atlas](DEGREE_SIX_RITT_ATLAS.md); [degree-six affine-sheet boundary atlas](DEGREE_SIX_RITT_BOUNDARY_ATLAS.md) |
 | Weighted image and boundary | [Canonical-family image](CANONICAL_FAMILY_IMAGE.md) |
 | Omitted values | [Omitted-value classification](OMITTED_VALUE_CLASSIFICATION.md) |
 | Uniqueness of an omitted pencil value | [Unique omitted-value lemma](UNIQUE_OMITTED_VALUE.md) |

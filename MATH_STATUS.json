@@ -187,56 +187,56 @@
     {
       "id": "H1",
       "kind": "theorem",
-      "state": "proved",
+      "state": "partial",
       "title": "Hurwitz--LL compactification of rerooting",
-      "scope": "Internal admissible-cover/Hurwitz--LL compactification theorem; repository proof is complete but externally unreviewed.",
-      "canonical_source": "papers/hurwitz-ll-rerooting/main.tex",
+      "scope": "High-risk partial claim. Ambient admissible-cover compactification technology is available, but the seed Hurwitz functor, its boundary component, and its asserted identification with the quotient of the stable zero-root configuration have not been constructed. The audit isolates an explicit global comparison package needed to complete H1.",
+      "canonical_source": "papers/hurwitz-ll-rerooting/dvr-marking-audit.tex",
       "dependencies": [
         "external: admissible-cover compactification technology"
       ],
-      "checker": "scripts/verify_restricted_ll_degree.py",
+      "checker": null,
       "review": "none",
       "supersedes": [],
       "replaced_by": [],
-      "priority": "core"
+      "priority": "reference"
     },
     {
       "id": "H2",
       "kind": "theorem",
-      "state": "proved",
+      "state": "partial",
       "title": "Stacky marked extension",
-      "scope": "The selected root extends tautologically on the marked admissible-cover stack; the marked-to-unmarked morphism is finite, representable, and étale of degree N-2, and its normalized Stein contractions, completed root-cover charts, and conductor squares agree with the repository constructions at arbitrary simultaneous multicluster collisions.",
-      "canonical_source": "papers/hurwitz-ll-rerooting/main.tex",
+      "scope": "High-risk partial claim. The abstract quotient map [Mbar_0,N/S_(N-3)] -> [Mbar_0,N/S_(N-2)] is representable finite étale and the local multicluster algebra is correct. Its identification with the repository-specific admissible-cover closure, normalized Stein contractions, and conductor squares lacks a constructed global comparison morphism.",
+      "canonical_source": "papers/hurwitz-ll-rerooting/dvr-marking-audit.tex",
       "dependencies": [
         "F2",
         "H1"
       ],
-      "checker": "scripts/verify_rerooting_groupoid_boundary.py",
+      "checker": null,
       "review": "none",
       "supersedes": [
         "former stacky portion of OP-MARK"
       ],
       "replaced_by": [],
-      "priority": "core"
+      "priority": "reference"
     },
     {
       "id": "H3",
       "kind": "theorem",
-      "state": "proved",
+      "state": "partial",
       "title": "Coarse affine-mark descent",
-      "scope": "The closure of the distinguished degree-one regular-reconstruction component is isomorphic to the normal marked coarse compactification and has a unique specialization over every DVR limit.  At a collision of multiplicity mu the coarse marked chart is the universal monic-root incidence with special fiber k[T]/(T^mu), so pair, triple, and arbitrary simultaneous collisions have one geometric coarse mark.",
-      "canonical_source": "papers/hurwitz-ll-rerooting/main.tex",
+      "scope": "Plausible but high-risk. The audit proves unique scheme-valued DVR extension for any constructed finite marked cover and proves the universal monic-root collision charts, simultaneous-cluster compatibility, and absence of relative stabilizer ambiguity. Application to the distinguished regular-reconstruction component remains conditional on the missing H1/H2 global comparison package.",
+      "canonical_source": "papers/hurwitz-ll-rerooting/dvr-marking-audit.tex",
       "dependencies": [
         "F2",
         "H2"
       ],
-      "checker": "scripts/verify_coarse_affine_mark_descent.py",
+      "checker": null,
       "review": "none",
       "supersedes": [
         "OP-MARK"
       ],
       "replaced_by": [],
-      "priority": "core"
+      "priority": "reference"
     },
     {
       "id": "O1",
@@ -390,10 +390,9 @@
       "state": "proved",
       "title": "Universal symmetric monodromy",
       "scope": "Every characteristic-zero polynomial H of degree n >= 2: Gal(H(W)-sW+t/k(s,t)) and its geometric monodromy group are S_n; for n >= 3 the generic inverse cover has trivial deck group.",
-      "canonical_source": "verified/WEIGHTED_SEED_THEOREM.md",
+      "canonical_source": "verified/UNIVERSAL_SYMMETRIC_MONODROMY.md",
       "dependencies": [
-        "W1",
-        "external: Zariski--Nagata purity and triviality of finite etale covers of affine space"
+        "external: classical Morse-polynomial monodromy theorem (Serre, Topics in Galois Theory, Theorem 4.4.5)"
       ],
       "checker": "scripts/verify_weighted_seed_theorem.py",
       "review": "none",
@@ -1546,6 +1545,25 @@
       "priority": "derived"
     },
     {
+      "id": "HR6B",
+      "kind": "corollary",
+      "state": "proved",
+      "title": "Degree-six Ritt affine-sheet boundary atlas",
+      "scope": "After exact-degree saturation, the degree-six 2-o-3 and 3-o-2 Ritt surfaces meet the affine-sheet reconstruction boundary in respectively two and three irreducible curves, each with a rational Hessian-clean admissible witness. On their common marked Ritt curve the zero-cluster cut is one reduced sextic orbit, the extra-root cut is reduced with rational splitting 1+1+4, and the four remaining Hessian collisions are exactly the type-(6) omitted-component support and are disjoint from the affine boundary.",
+      "canonical_source": "extended-geometry/DEGREE_SIX_RITT_BOUNDARY_ATLAS.md",
+      "dependencies": [
+        "HR6",
+        "H3"
+      ],
+      "checker": "scripts/verify_degree_six_ritt_boundary_atlas.sh",
+      "review": "none",
+      "supersedes": [
+        "degree-six affine-sheet boundary part of OP-RITT"
+      ],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
       "id": "HR12",
       "kind": "corollary",
       "state": "proved",
@@ -1569,10 +1587,11 @@
       "kind": "open_problem",
       "state": "open",
       "title": "Vertical imprimitive-specialization loci",
-      "scope": "Extend the explicit Ritt-intersection diagrams beyond degree twelve using the proved all-degree canonical Hessian atlas, and restrict the marked-root/Hessian collision equations to those incidence components to classify the H3 boundary degenerations of the distinguished affine sheet.",
+      "scope": "Extend the explicit Ritt-intersection diagrams beyond degree twelve using the proved all-degree canonical Hessian atlas, and extend the proved degree-six affine-sheet boundary atlas to the degree-eight, degree-twelve, and later incidence components.",
       "canonical_source": "extended-geometry/HESSIAN_RITT_INCIDENCE.md",
       "dependencies": [
-        "HR12"
+        "HR12",
+        "HR6B"
       ],
       "checker": null,
       "review": "none",

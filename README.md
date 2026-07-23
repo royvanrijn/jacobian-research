@@ -81,10 +81,12 @@ this to the exact chamber spectrum `N,N-2,...,N mod 2`, proves the minimum is
 zero in even degree and one in odd degree, supplies rational targets for every
 count, and exhibits the full parity chain by successive fold crossings.
 
-The separate [universal weighted-seed theorem](verified/WEIGHTED_SEED_THEOREM.md)
+The [standalone universal-monodromy theorem](verified/UNIVERSAL_SYMMETRIC_MONODROMY.md)
 proves geometric and arithmetic `S_N` monodromy for every polynomial pencil
-`H(W)-sW+t`, hence for every admissible weighted seed; no generic-seed
-hypothesis is present.
+`H(W)-sW+t`, including monomial, Chebyshev, decomposable, symmetric, and
+critical-value-collision cases; no generic-seed hypothesis is present.  The
+[universal weighted-seed theorem](verified/WEIGHTED_SEED_THEOREM.md) applies
+it to every admissible weighted map.
 Its [effective finite-field Chebotarev corollary](extended-geometry/FINITE_FIELD_CHEBOTAREV.md)
 realizes every prescribed cycle/factorization type over all sufficiently
 large certified good fields.  It gives the split density `1/N!`, irreducible
@@ -159,9 +161,13 @@ and independent Macaulay2 comparison are documented in
 
 ## Research status
 
-The former `OP-MARK` is now complete as `H3`: the coarse affine mark extends
-uniquely over every DVR limit.  The collision fiber at multiplicity `mu` is
-`k[T]/(T^mu)`, which is nonreduced but has one geometric point.
+The H1--H3 chain has been adversarially audited.  The finite-cover valuative
+lemma, quotient-stack map, and local collision algebra are proved, including
+simultaneous clusters and relative stabilizers.  However, the global
+comparison with the repository-specific admissible-cover contraction is not
+yet constructed.  H1 and H2 are therefore partial, and H3 is plausible but
+high-risk rather than foundational infrastructure.  See the standalone
+[DVR marking audit](papers/hurwitz-ll-rerooting/dvr-marking-audit.tex).
 
 The LR continuation is now split into three independent primary problems,
 alongside the cancellation and Hessian--Ritt frontiers:

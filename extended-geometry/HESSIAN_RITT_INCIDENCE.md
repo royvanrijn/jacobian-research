@@ -597,3 +597,11 @@ By (1.3), every marked dimension in Sections 7--9 transfers unchanged to the
 vertical decomposition loci in normalized seed space.  F2 reconstructs the
 seed after adjoining the affine sheet, and H3 gives the unique coarse marked
 specialization at the deleted boundary points.
+
+The [degree-six boundary atlas](DEGREE_SIX_RITT_BOUNDARY_ATLAS.md) carries out
+that deleted-boundary calculation completely in the first composite degree.
+The two Ritt surfaces have respectively two and three irreducible
+affine-boundary curves.  On their common marked curve the zero-cluster and
+extra-root cuts are reduced of lengths six and six, while the four Hessian
+collisions are exactly the type-`(6)` omitted-component support and do not lie
+on the affine boundary.

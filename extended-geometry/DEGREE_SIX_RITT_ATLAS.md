@@ -405,3 +405,7 @@ resultants, and witness exclusions:
 
 This completes the requested degree-six atlas.  `OP-RITT` remains open in
 general composite degree.
+
+The exact primary decomposition, rational component witnesses, and finite
+boundary cuts on the common Ritt curve are computed in the companion
+[degree-six Ritt boundary atlas](DEGREE_SIX_RITT_BOUNDARY_ATLAS.md).

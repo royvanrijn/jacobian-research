@@ -9,7 +9,8 @@ SYSTEM_PYTHON ?= python3
 	verify-master \
 	verify-quartic verify-normal-forms verify-formal verify-lean-foundational \
 	verify-foundations verify-foundations-formal \
-	verify-coincident-root-loci verify-papers render-status clean-papers
+	verify-coincident-root-loci verify-papers verify-ritt-boundary \
+	render-status clean-papers
 
 check:
 	$(PYTHON) -m compileall -q jcsearch scripts
@@ -29,6 +30,9 @@ verify-plane-jc:
 verify-weighted-boundary:
 	Singular -q scripts/verify_foundational_constant_c_boundary.sing
 	Singular -q scripts/verify_foundational_reduced_gluing.sing
+
+verify-ritt-boundary:
+	bash scripts/verify_degree_six_ritt_boundary_atlas.sh
 
 verify-core: verify-minimal
 	$(PYTHON) scripts/verify_counterexample.py
@@ -159,6 +163,7 @@ verify-regressions: verify-external-consequences
 	$(PYTHON) scripts/verify_degree_six_gaussian_moment_geometry.py
 	$(PYTHON) scripts/verify_hessian_ritt_degree_six.py
 	$(PYTHON) scripts/verify_degree_six_ritt_atlas.py
+	$(PYTHON) scripts/verify_degree_six_ritt_boundary_atlas.py
 	$(PYTHON) scripts/verify_hessian_ritt_degrees_eight_twelve.py
 	$(PYTHON) scripts/verify_stable_generator_rigidity.py
 	$(PYTHON) scripts/verify_multicluster_ll_comparison.py

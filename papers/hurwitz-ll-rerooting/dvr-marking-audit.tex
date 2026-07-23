@@ -1,0 +1,911 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathrsfs,mathtools,microtype,array,booktabs}
+\usepackage[hidelinks]{hyperref}
+\usepackage[T1]{fontenc}
+\linespread{1.04}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{warning}[theorem]{Warning}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{example}[theorem]{Example}
+\newcommand{\A}{\mathbb A}
+\newcommand{\Pp}{\mathbb P}
+\newcommand{\Spec}{\operatorname{Spec}}
+\newcommand{\Aut}{\operatorname{Aut}}
+\newcommand{\Isom}{\operatorname{Isom}}
+\newcommand{\Hilb}{\operatorname{Hilb}}
+\newcommand{\ol}{\overline}
+
+\title{The Distinguished Affine Root at the Boundary:\\
+An Adversarial Audit and a Correct Valuative Theorem}
+\author{Repository audit draft}
+\date{23 July 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We audit the chain H1--H3 concerning the Hurwitz compactification of
+rerooting, stacky extension of a selected zero-fiber root, and descent of
+that root to coarse moduli.  We distinguish three assertions that the
+current repository conflates: the elementary valuative extension of a
+rational point through a finite cover; the quotient-stack description of
+choosing one element of an unordered divisor; and the comparison of that
+quotient stack with the repository-specific admissible-cover contraction
+and regular-reconstruction component.  The first two assertions are proved
+here, including arbitrary simultaneous collisions and stabilizers.  The
+third is isolated as an explicit comparison hypothesis.  Under that
+hypothesis we give a complete proof that the distinguished affine-root
+marking extends uniquely over every DVR, as a scheme-valued marking and not
+merely as a geometric point.  We then show why the present H1--H3 text does
+not prove the comparison hypothesis.  In particular, properness of an
+ambient admissible-cover stack, equality of generic function algebras, and
+isomorphisms of completed collision charts do not by themselves construct
+the required global finite marked cover.  The resulting verdict is that the
+valuative statement is correct conditionally and locally well supported,
+but H2 and H3 are not presently available as foundational infrastructure.
+\end{abstract}
+
+\tableofcontents
+
+\section{Verdict and logical shape}
+
+Fix a field $k$ of characteristic zero and an integer $N\geq 4$, and put
+$n=N-2$.  On the clean seed locus a normalized polynomial
+\[
+ H(W)=-\frac{W^2(W-1)\prod_{i=1}^{n-1}(W-\rho_i)}
+ {\prod_{i=1}^{n-1}(1-\rho_i)}
+\]
+has an exact double zero at $0$, a distinguished simple zero at $1$, and
+$n-1$ further simple nonzero zeros.  The open rerooting cover forgets which
+of the $n$ simple zeros was normalized to $1$.  The repository asks whether
+the root selected by the regular-reconstruction chart continues uniquely
+when some or all of these roots collide.
+
+There is a short correct answer once the right finite morphism has actually
+been constructed.  If $R$ is a DVR with fraction field $K$, if
+$Y\to X$ is finite, and if an $R$-point of $X$ has a $K$-rational lift to
+$Y$, that lift extends uniquely to $R$ whenever $R$ is integrally closed.
+This is the entire scheme-valued valuative argument.  It works for a
+nonreduced collision fiber and does not infer uniqueness from the number of
+geometric points.
+
+The hard point is therefore upstream:
+\begin{quote}
+construct a global finite marked object over the precise compactification,
+and identify its generic section with the distinguished
+regular-reconstruction component.
+\end{quote}
+The current H2/H3 proof assumes this in the phrases ``the contracted ambient
+root cover'' and ``the closure of the distinguished component.''  H1 cites
+proper admissible-cover technology but does not define the repository
+subfunctor, construct its contraction, or prove that it is the quotient
+compactification used in the later invariant-ring calculation.
+
+Our conclusion is consequently two-part.
+\begin{enumerate}
+\item The quotient-stack and coarse collision model has the desired DVR
+extension theorem.  We prove it in Sections~\ref{sec:functors}--\ref{sec:dvr}.
+\item Application to the claimed Hurwitz--LL compactification is conditional
+on the global comparison package in Definition~\ref{def:comparison}.  The
+repository does not yet prove that package; Section~\ref{sec:audit} records
+the precise gaps.
+\end{enumerate}
+
+This distinction matters for OP-LR-NE.  Unique specialization of one point
+of a finite cover is not properness of a relative $\Isom$ functor.  Even
+after the comparison package is proved, OP-LR-NE still requires a bounded,
+representable, closed extension of isomorphisms and a proof that its
+projection is proper and quasi-finite.
+
+\section{The moduli functors}\label{sec:functors}
+
+We define all objects used in the valuative statement.  The definitions are
+deliberately independent of any chosen presentation by coefficients.
+
+\subsection{Stable root configurations}
+
+Let $L=\{0,\infty,1,\ldots,n\}$, a set of $n+2=N$ labels.  Write
+$\ol M_{0,L}$ for the fine moduli scheme of stable genus-zero curves with
+pairwise disjoint sections $(p_\ell)_{\ell\in L}$.  Thus an object over a
+scheme $T$ is a proper flat nodal curve $C\to T$ of arithmetic genus zero,
+together with sections through the smooth locus, such that every geometric
+component has at least three special points.  The symmetric group $S_n$
+permutes the labels $1,\ldots,n$ and fixes $0,\infty$.
+
+For a finite constant group $G$ acting on a scheme $U$, we use the following
+functorial definition of the quotient stack.  An object of $[U/G](T)$ is a
+right $G$-torsor $P\to T$ in the etale topology together with a
+$G$-equivariant morphism $P\to U$.  A morphism is an isomorphism of torsors
+compatible with the maps to $U$.  Set
+\[
+ \mathscr B_n=[\ol M_{0,L}/S_n],\qquad
+ \mathscr S_n=[\ol M_{0,L}/S_{n-1}],                 \tag{2.1}
+\]
+where $S_{n-1}\subset S_n$ fixes the label $1$.  We call $\mathscr B_n$ the
+unmarked collision-separating root stack and $\mathscr S_n$ the marked one.
+The morphism
+\[
+ q:\mathscr S_n\longrightarrow\mathscr B_n           \tag{2.2}
+\]
+forgets which simple-root label is $1$.
+
+The word ``marked'' in (2.1) does not mean that every label is globally
+ordered on the base.  It means that one element of the unordered degree-$n$
+divisor is selected; the other $n-1$ elements remain unordered.  Stable
+bubbles keep all labelled points disjoint even when their contraction has a
+multiple root.
+
+\subsection{The open normalized-seed functors}
+
+Let $\mathscr U_n\subset\mathscr B_n$ be the open on which the source curve
+is smooth and the points $p_0,p_\infty,p_1,\ldots,p_n$ are distinct.  On an
+etale cover where the $n$ simple points are labelled, the unique coordinate
+$W$ satisfying $p_0=0$ and $p_\infty=\infty$ is still subject to scaling.
+Choosing one simple point as $p_1=1$ removes that scaling.  The corresponding
+polynomial is, up to the endpoint derivative normalization,
+\[
+ W^2\prod_{i=1}^{n}(W-p_i).
+\]
+We denote the marked open by $\mathscr U_n^{\rm mark}=q^{-1}(\mathscr U_n)$.
+The repository's clean normalized seed space maps to
+$\mathscr U_n^{\rm mark}$ by sending $H$ to its zero divisor with $0$,
+$\infty$, and the root $1$ distinguished.
+
+This map is elementary on the open.  Nothing in its formula constructs an
+extension to a boundary compactification: when points collide, a stable
+configuration acquires bubbles, while a coefficient model contracts them.
+Relating those two operations is a separate theorem.
+
+\subsection{Admissible polynomial covers}
+
+We next give a sufficiently precise functor for the external compactification
+technology.  Fix the ramification profile consisting of total ramification
+over a target section $b_\infty$ and profile $(2,1^n)$ over a target section
+$b_0$.  Let $\mathscr H_N^{\rm adm}(T)$ be the groupoid of data
+\[
+ (C\xrightarrow{f}P; b_0,b_\infty; p_0,p_\infty; D),              \tag{2.3}
+\]
+where $P\to T$ is a stable pointed nodal genus-zero target (possibly twisted
+at nodes and markings), $C\to T$ is a nodal source, $f$ is a finite flat
+degree-$N$ admissible cover, $p_\infty$ is the totally ramified point over
+$b_\infty$, $p_0$ has ramification index two over $b_0$, and $D$ is the
+residual degree-$n$ unramified divisor in $f^{-1}(b_0)$.  At nodes the two
+branch indices agree, and the usual stability condition makes automorphism
+groups finite.  Branch data away from $b_0,b_\infty$ must also be fixed in a
+given connected Hurwitz component; omitting it does not define a finite-type
+Hurwitz stack.
+
+The marked functor $\mathscr H_N^{\rm adm,mark}$ adds a section
+$p_1:T\to D$.  In the collision-separating model $D$ is represented by
+disjoint markings on the expanded source.  Forgetting $p_1$ gives
+\[
+ q_{\rm adm}:\mathscr H_N^{\rm adm,mark}
+       \longrightarrow\mathscr H_N^{\rm adm}.                         \tag{2.4}
+\]
+To obtain a compactification of the seed locus one must specify: the Hurwitz
+component, all branch markings or their allowed collisions, the target
+stability weights, and the closure of the normalized pencil locus.  ACV and
+Deopurkar provide ambient stacks after these choices; their properness does
+not choose the repository-specific component.
+
+\subsection{The contracted root incidence}
+
+For a monic degree-$n$ polynomial
+\[
+ F(T)=T^n-e_1T^{n-1}+\cdots+(-1)^ne_n,
+\]
+the universal root incidence is
+\[
+ \mathcal R_n=\Spec
+ k[e_1,\ldots,e_n,T]/(F(T))
+ \longrightarrow \A^n_{e_1,\ldots,e_n}.                            \tag{2.5}
+\]
+It is finite flat of degree $n$.  It is not etale along the discriminant.
+For a family of zero divisors, the contracted root cover is obtained by
+base change from (2.5), with the fixed double root removed before forming the
+degree-$n$ residual polynomial.  A marking is a section of this finite cover,
+equivalently a factorization $F=(T-a)G$ over the base.
+
+The inverse-pencil incidence
+\[
+ X_H=\Spec k[s,t,W]/(H(W)-sW+t)\longrightarrow\A^2_{s,t}             \tag{2.6}
+\]
+is instead finite flat of degree $N$.  It parametrizes every point in the
+fiber of $H(W)-sW$ over $-t$.  It must not be identified without argument
+with the degree-$n$ cover (2.5), which only selects residual simple roots of
+the zero fiber after removing the fixed double root.
+
+\section{The quotient-stack theorem}
+
+\begin{proposition}\label{prop:quotient}
+The morphism $q$ in (2.2) is representable, finite, and etale of constant
+degree $n$.  For every geometric point $x:\Spec\Omega\to\mathscr B_n$, its
+base change is the discrete $n$-element scheme of choices of one label.
+\end{proposition}
+
+\begin{proof}
+Let $X=\ol M_{0,L}$, $G=S_n$, and $H=S_{n-1}$.  Given a scheme
+$T\to[X/G]$, let $P\to T$ be the associated $G$-torsor.  A reduction of its
+structure group to $H$ is a section of the associated bundle
+\[
+ P\times^G(G/H)\longrightarrow T.                                    \tag{3.1}
+\]
+The fiber product $T\times_{[X/G]}[X/H]$ is canonically this associated
+bundle, with the compatibility map to $X$ carried along.  Since $G/H$ is a
+constant etale scheme with $n$ elements, (3.1) is finite etale of degree
+$n$.  The base change by every scheme is a scheme, proving representability.
+\end{proof}
+
+\begin{remark}
+Proposition~\ref{prop:quotient} is not contradicted by ramification on coarse
+spaces.  The stack map remembers stabilizers.  The coarse map forgets them
+and is ramified at collisions.  Conflating these two maps is one of the main
+hazards in H2/H3.
+\end{remark}
+
+\begin{proposition}[relative automorphisms]\label{prop:aut}
+Let $y$ be an object of $\mathscr S_n$ with image $x$ in $\mathscr B_n$.
+Then
+\[
+ \Aut_{\mathscr S_n}(y)\longrightarrow\Aut_{\mathscr B_n}(x)
+\]
+is injective.  Hence an automorphism of a marked lift inducing the identity
+on the unmarked object is the identity.
+\end{proposition}
+
+\begin{proof}
+This is the inertia criterion for representability, or directly the torsor
+description: an automorphism of an $H$-reduction that is the identity on the
+underlying $G$-torsor is the identity.  Equivalently, the relative inertia of
+$q$ is trivial.
+\end{proof}
+
+At a collision, the unmarked object can still have nontrivial absolute
+stabilizer.  For example, a symmetric cluster of $\mu$ labels can carry an
+$S_\mu$ stabilizer, while a choice of one label reduces it to
+$S_{\mu-1}$.  Proposition~\ref{prop:aut} says that this does not create a
+hidden automorphism of the lift over the fixed unmarked object.  It does not
+say that the coarse space remembers the labelled point.
+
+\section{Coarse root charts and simultaneous collisions}
+
+We now prove the invariant-ring calculation used by H3 and state exactly
+what it does and does not imply.
+
+\begin{proposition}[one cluster]\label{prop:invariants}
+Let $A=k[x_1,\ldots,x_\mu]$, with $S_\mu$ permuting the variables and
+$S_{\mu-1}$ fixing $x_1$.  If $e_j$ denotes the elementary symmetric
+function in all variables, then
+\[
+ A^{S_{\mu-1}}
+ \cong A^{S_\mu}[T]/
+ (T^\mu-e_1T^{\mu-1}+\cdots+(-1)^\mu e_\mu),          \tag{4.1}
+\]
+with $T\mapsto x_1$.  In particular the coarse forgetful map is finite flat
+of degree $\mu$, is generically etale, and has total-collision fiber
+$k[T]/(T^\mu)$.
+\end{proposition}
+
+\begin{proof}
+Put $e'_j=e_j(x_2,\ldots,x_\mu)$.  Then
+$e_j=e'_j+Te'_{j-1}$, with $e'_0=1$.  Recursively, every $e'_j$ belongs to
+$k[e_1,\ldots,e_\mu,T]$.  Hence $A^{S_{\mu-1}}=k[T,e'_1,\ldots,e'_{\mu-1}]$
+is generated over $A^{S_\mu}=k[e_1,\ldots,e_\mu]$ by $T$.  Conversely the
+formulas $e_j=e'_j+Te'_{j-1}$ define the inverse change of generators.  The
+last recursion equation $e_\mu=Te'_{\mu-1}$ becomes exactly the displayed
+monic equation after eliminating $e'_1,\ldots,e'_{\mu-1}$.  Thus the two
+presentations are inverse isomorphisms.  Since the equation is monic, the
+map is finite flat of rank $\mu$.  Setting every $e_j$ to zero gives the
+stated fiber.
+\end{proof}
+
+\begin{warning}
+The special fiber in Proposition~\ref{prop:invariants} has one geometric
+point but $\mu$ scheme-theoretic length.  The fact that its topological space
+has one point does not prove uniqueness of a section over a DVR.  Uniqueness
+is instead a consequence of separatedness after the generic section has
+been fixed; existence uses integrality, as in Section~\ref{sec:dvr}.
+\end{warning}
+
+\begin{proposition}[simultaneous multicluster chart]\label{prop:multi}
+Suppose the special divisor has disjoint clusters of sizes
+$\mu_1,\ldots,\mu_r$, together with simple spectator roots.  After an etale
+localization separating the cluster centers, the completed coarse root cover
+is a disjoint union, over the possible cluster containing the selected root,
+of completed tensor products of the corresponding rings (4.1) with formal
+power-series rings in spectator and center parameters.  Its fiber over the
+deepest collision stratum has one geometric selected point for each distinct
+cluster, and length $\mu_i$ on the component selecting cluster $i$.
+\end{proposition}
+
+\begin{proof}
+Choose pairwise disjoint etale neighborhoods of the distinct cluster centers.
+Hensel factorization writes the residual monic polynomial uniquely as a
+product $F_1\cdots F_rF_{\rm sp}$, where $F_i$ has degree $\mu_i$ and
+$F_{\rm sp}$ is etale.  The functor of choosing a root is the disjoint union
+of the functors of choosing a root of one factor.  Completion commutes with
+finite products and with the finite base changes in (4.1).  The parameters
+of the other factors are formally independent, giving the asserted completed
+tensor products.  Specializing each $F_i$ to $T^{\mu_i}$ gives the length and
+geometric-point statements.
+\end{proof}
+
+The proposition corrects an imprecision in the phrase ``simultaneous
+clusters have one geometric coarse mark.''  There is one point within a
+chosen cluster, but different cluster centers remain different geometric
+points.  A generic distinguished root determines which component is chosen;
+the collision alone does not.
+
+\section{The finite-cover DVR lemma}\label{sec:dvr}
+
+We now prove the scheme-valued extension result in the generality actually
+needed.
+
+\begin{lemma}[finite valuative extension]\label{lem:finite-dvr}
+Let $R$ be a DVR with fraction field $K$, let $X$ be an algebraic space, and
+let $f:Y\to X$ be finite and representable.  Given a commutative generic
+diagram
+\[
+\begin{array}{ccc}
+ \Spec K&\longrightarrow&Y\\
+ \downarrow&&\downarrow f\\
+ \Spec R&\longrightarrow&X,
+\end{array}                                                          \tag{5.1}
+\]
+there is a unique dotted arrow $\Spec R\to Y$ completing the diagram.
+The same assertion holds after arbitrary extension of DVRs.
+\end{lemma}
+
+\begin{proof}
+Base change by $\Spec R\to X$.  Because $f$ is representable and finite, the
+fiber product is a finite algebraic space over $\Spec R$, hence an affine
+scheme $\Spec B$ with $B$ finite over $R$.  The generic lift is an
+$R$-algebra map $B\to K$.  Every element of $B$ is integral over $R$, so its
+image in $K$ is integral over $R$.  A DVR is integrally closed in $K$;
+therefore the image lies in $R$.  This gives an $R$-algebra map $B\to R$ and
+hence the extension.  Since a finite morphism is separated, two extensions
+agree if they agree on the dense generic point.  The proof applies verbatim
+to any DVR extension.
+\end{proof}
+
+\begin{remark}
+Etaleness is unnecessary in Lemma~\ref{lem:finite-dvr}.  This is important
+for the coarse map, which is ramified at collisions.  Properness alone would
+give existence only in the usual valuative sense and may require attention
+to field extensions for stacks.  Finiteness plus a $K$-rational lift gives
+the stronger extension over the original DVR.
+\end{remark}
+
+\begin{corollary}[stacky marking]\label{cor:stack-dvr}
+For every DVR map $\Spec R\to\mathscr B_n$, every lift of its generic point
+to $\mathscr S_n$ extends uniquely, up to a unique 2-isomorphism, to
+$\Spec R\to\mathscr S_n$.  There is no relative stabilizer ambiguity.
+\end{corollary}
+
+\begin{proof}
+Apply Proposition~\ref{prop:quotient} and
+Lemma~\ref{lem:finite-dvr}.  Representability turns the lifting problem into
+one for a finite scheme.  Proposition~\ref{prop:aut} makes the relative
+2-automorphism group trivial.
+\end{proof}
+
+\begin{corollary}[coarse marking]\label{cor:coarse-dvr}
+Let $B_n$ and $S_n$ be the coarse spaces of $\mathscr B_n$ and
+$\mathscr S_n$, and suppose the induced map $S_n\to B_n$ is finite.  Then a
+$K$-rational generic marked lift of an $R$-point of $B_n$ extends uniquely to
+an $R$-point of $S_n$.  In the local collision charts this extension is the
+unique integral root of the universal monic polynomial that equals the given
+generic root.
+\end{corollary}
+
+\begin{proof}
+Apply Lemma~\ref{lem:finite-dvr} to $S_n\to B_n$.  In chart (4.1), the
+generic marking is a map sending $T$ to an element $a\in K$ integral over
+$R$.  Thus $a\in R$, and the factorization by $T-a$ extends.  This proves
+existence as a scheme-valued section.  Separatedness proves uniqueness.
+\end{proof}
+
+\begin{example}
+The family $F(T)=T^2-\pi^2$ over a DVR has two generic roots $\pm\pi$ and
+both specialize to the unique geometric point of $k[T]/(T^2)$.  Once the
+generic root $+\pi$ is fixed, only the section $T\mapsto\pi$ extends it.  This
+shows simultaneously why one geometric special point is insufficient for
+scheme-valued uniqueness and why the finite-cover lemma gives the right
+answer.
+\end{example}
+
+\section{The comparison package actually required}
+
+The preceding results apply to the repository only after the following data
+are constructed.  We state them as a package so that no conclusion is hidden
+inside notation.
+
+\begin{definition}[global comparison package]\label{def:comparison}
+A Hurwitz compactification of the normalized seed locus satisfies
+\textup{(CMP)} if it comes with:
+\begin{enumerate}
+\item a proper normal Deligne--Mumford stack $\ol{\mathscr B}^{\rm seed}_N$
+containing the unmarked clean seed stack, and a proper normal marked stack
+$\ol{\mathscr S}^{\rm seed}_N$ containing the distinguished marked seed
+stack;
+\item a representable finite morphism
+$q_{\rm seed}:\ol{\mathscr S}^{\rm seed}_N\to
+\ol{\mathscr B}^{\rm seed}_N$ restricting to the degree-$n$ rerooting cover;
+\item a global contraction to a finite degree-$n$ residual-root cover
+$\mathcal R^{\rm seed}_N$ and a morphism
+$\ol{\mathscr S}^{\rm seed}_N\to\mathcal R^{\rm seed}_N$ whose open
+restriction is the selected nonzero zero-fiber root;
+\item an identification of the open section in item 3 with the unique
+regular-reconstruction component supplied by F2;
+\item compatibility of items 1--4 with coarse spaces and base change,
+including a finite coarse marked map and the invariant charts of
+Propositions~\ref{prop:invariants} and~\ref{prop:multi};
+\item if normalized Stein factors or conductor squares are to be used later,
+a constructed global comparison morphism identifying those finite models,
+not only their generic fields or completed local rings.
+\end{enumerate}
+\end{definition}
+
+\begin{theorem}[distinguished affine-root extension, conditional form]
+\label{thm:main}
+Assume \textup{(CMP)}.  Let $R$ be any DVR with fraction field $K$, and let
+$\Spec R\to\ol{\mathscr B}^{\rm seed}_N$ be a degeneration whose generic
+point lies in the clean locus.  Suppose the distinguished affine root gives
+a $K$-lift to $\ol{\mathscr S}^{\rm seed}_N$.  Then:
+\begin{enumerate}
+\item the lift extends over $R$;
+\item it is unique as a scheme-valued lift, up to a unique 2-isomorphism;
+\item its image on coarse moduli is the unique extension of the coarse
+generic mark;
+\item the assertion commutes with arbitrary DVR base change;
+\item at simultaneous clusters of sizes $\mu_1,\ldots,\mu_r$, the extension
+lies in the component determined by the generic root and has special
+scheme-theoretic length $\mu_i$ if that root enters cluster $i$;
+\item no automorphism acting trivially on the unmarked degeneration can
+change the extended mark.
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+Item 1 follows from Lemma~\ref{lem:finite-dvr} applied to
+$q_{\rm seed}$.  Item 2 follows from separatedness and representability; the
+latter kills relative inertia exactly as in Proposition~\ref{prop:aut}.
+By item 5 of (CMP), the induced coarse marked map is finite, so
+Corollary~\ref{cor:coarse-dvr} gives item 3.  Both the integral-closure proof
+and the uniqueness proof survive DVR extension, giving item 4.
+
+For item 5, pass etale-locally to the Hensel-separated factorization used in
+Proposition~\ref{prop:multi}.  The generic root selects exactly one factor.
+Its closure cannot jump to another open-and-closed factor, and the chosen
+factor has collision algebra $k[T]/(T^{\mu_i})$.  This proves compatibility
+with all simultaneous clusters, including mixed pair, triple, and higher
+collisions.  Finally, item 6 is the injectivity on stabilizers implied by
+representability.  Item 4 of (CMP) identifies this abstractly extended mark
+with the distinguished regular-reconstruction component rather than an
+arbitrary root label.
+\end{proof}
+
+\begin{corollary}
+Under \textup{(CMP)}, the closure of the graph of the distinguished section
+inside the finite marked cover is isomorphic to the normal DVR base along
+every trait.  If the same graph is globally finite and birational over a
+normal integral marked coarse compactification, then it is globally
+isomorphic to that compactification.
+\end{corollary}
+
+\begin{proof}
+The trait statement is Theorem~\ref{thm:main}.  The global statement is the
+finite-birational criterion.  Notice that global finiteness and the existence
+of the morphism are hypotheses; they do not follow from a completed-local
+description alone.
+\end{proof}
+
+\section{Adversarial audit of H1--H3}\label{sec:audit}
+
+We compare the current manuscript with the hypotheses used above.  The point
+is not that the desired comparison is false.  It is that several nontrivial
+morphisms are invoked before they are defined.
+
+\subsection{H1: the compactification is not specified enough}
+
+The current proof says that taking the normalization of the closure in
+``the proper admissible-cover stack'' gives the desired compactification.
+There is no single such stack.  One must fix the Hurwitz component, all
+ramification profiles, branch markings, allowed branch collisions, target
+weights, and rigidifications.  Deopurkar's construction explicitly varies
+with the compactification of the branch divisor.  Ambient properness proves
+properness of a closed substack after it has been defined; it does not prove
+that the closure equals $[\ol M_{0,N}/S_n]$ or that a coefficient contraction
+exists.
+
+The displayed normalized polynomial is determined by its zero divisor on
+the smooth locus.  At the boundary, however, a stable pointed source and an
+admissible map carry node indices, target expansions, and possibly twisted
+structure not encoded by the stabilized zero divisor alone.  A proof of H1
+must construct mutually inverse functors, or at least a finite birational
+morphism with a verified normal target, between the relevant closure and the
+claimed quotient stack.  The manuscript currently passes from one to the
+other with the word ``equivalently.''
+
+The LL assertion introduces an additional mismatch.  A polynomial cover is
+compactified by branch data, while $\ol M_{0,N}$ in H1 records zero-fiber
+source points.  These are related by the polynomial, but their stable limits
+need not be identical compactifications.  The stable branch-divisor theorem
+extends the branch divisor of a family; it does not identify the closure of
+the zero-root configuration with a prescribed Hurwitz component.
+
+\subsection{H2: tautological persistence versus comparison}
+
+On a marked admissible-cover stack, the marked section persists by
+definition.  This proves no descent statement and no identification with the
+repository reconstruction cover.  The quotient calculation in
+Proposition~\ref{prop:quotient} is correct if the marked and unmarked stacks
+really are the two quotient stacks in (2.1).  That identification is the
+missing H1 comparison, not a consequence of subgroup index.
+
+The formal-comparison proof uses two finite normal algebras with the same
+generic function algebra and invokes uniqueness of integral closure.  This
+argument is valid only after proving all of the following: the proper
+incidence has a coherent Stein algebra finite over the stated base; its
+generic algebra is the full algebra of (2.6), with the correct product of
+components; the normalization is taken in that algebra; and a global
+comparison map to the repository incidence has been constructed.  None of
+these is supplied by the phrase ``pull back and mark a point over $-t$.''
+
+Moreover, that phrase defines the degree-$N$ incidence (2.6), whereas H2's
+rerooting morphism has degree $n=N-2$.  Removing the fixed length-two zero
+cluster and restricting to the zero fiber are operations that must be made
+functorial in a degeneration.  Equality of generic fields cannot silently
+change the degree.
+
+The completed chart $k[[s,u]]$ is a correct chart for the smooth hypersurface
+$X_H$.  An isomorphism of this chart with a contracted admissible chart is
+asserted, not derived from an explicit contraction.  Even isomorphisms at
+every completion would not automatically glue to a global isomorphism
+without a global morphism and suitable finiteness.  The conductor calculation
+similarly compares two conductor squares only after the downstairs finite
+subalgebras have been identified; equality of normalizations and numerical
+conductor exponents is insufficient.
+
+\subsection{H3: the finite-birational argument starts after the gap}
+
+The finite-birational criterion used by H3 is correct.  Its application is
+circular.  The proof places a closure $Z$ in ``the contracted finite root
+cover,'' declares it finite over the marked coarse compactification, and
+then uses normality.  A closure in a finite ambient space is finite only when
+that ambient space and its map over the same base have already been
+constructed.  This is item 3 of (CMP), the main missing comparison.
+
+There is also a base mismatch in the statement.  The universal root
+incidence $S_n\to B_n$ is the coarse marked-to-unmarked map.  A graph of the
+tautological selected root over $S_n$ lives in the pullback of the root cover
+to $S_n$.  Saying that its closure is finite birational over $S_n$ is useful
+only after constructing this graph and proving that the generic
+regular-reconstruction component maps to it.  The relative Hilbert scheme
+of length-one subschemes of a finite scheme is indeed the finite scheme
+itself, but this identity does not choose the desired component or prove the
+comparison with the admissible contraction.
+
+Finally, the categorical property of a coarse moduli space only factors
+maps from the stack to algebraic spaces.  It does not turn a stack section
+of a universal curve into a section of a coarse universal curve when no such
+universal curve exists, nor does it prove independence of distinct stacky
+lifts of the same coarse trait.  Here independence can be proved from the
+explicit finite coarse root incidence and Lemma~\ref{lem:finite-dvr}, but the
+coarse map must first be identified globally.
+
+\subsection{Risk matrix}
+
+\begin{center}
+\small
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.19\textwidth}
+                >{\raggedright\arraybackslash}p{0.31\textwidth}
+                >{\raggedright\arraybackslash}p{0.39\textwidth}}
+\toprule
+Claim & What is valid & What is not yet proved \\
+\midrule
+Marked/unmarked quotient & $[X/S_{n-1}]\to[X/S_n]$ is representable finite
+etale of degree $n$ & The seed admissible-cover closures are these quotient
+stacks \\
+Coarse collision chart & The invariant ring is the universal monic-root
+incidence and is ramified & This chart is the coarse contraction of the
+repository's global Hurwitz closure \\
+Stein comparison & A finite normal model is determined by a fixed generic
+algebra & The proper incidence has that exact generic algebra and admits the
+claimed global comparison map \\
+Completed charts & Hensel factorization separates distinct clusters & The
+local identifications arise from and glue to one global contraction \\
+Conductor & Formulae can be checked once the finite downstairs algebra is
+fixed & Equal exponents alone identify the conductor square \\
+DVR uniqueness & A fixed generic lift through a finite map extends uniquely
+over a DVR & One geometric point implies a unique scheme-valued lift, or an
+ambient proper stack makes a specific $\Isom$ relation proper \\
+Stabilizers & Representability kills relative automorphisms & Coarse descent
+by itself remembers all stacky choices \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section{Consequences for OP-LR-NE}
+
+Theorem~\ref{thm:main}, once unconditional, supplies exactly one ingredient
+for OP-LR-NE: a chosen affine sheet cannot jump between components of the
+finite marked root cover along a DVR.  It does not establish valuative
+properness of an isomorphism relation.
+
+Let $\mathcal X$ and $\mathcal Y$ be two families of marked normalized
+incidence covers over a base $T$.  A candidate functor
+\[
+ \mathcal I=\Isom_T^{\rm dec}(\mathcal X,\mathcal Y)                 \tag{8.1}
+\]
+must specify which decorations are preserved: the finite cover, Hessian
+divisor, affine sheet, conductor, node pairing, and any target/source
+polarizations needed for boundedness.  To infer that the closure of
+$\mathcal I$ is finite and proper, one still needs:
+\begin{enumerate}
+\item representability of (8.1), including control of automorphisms at
+stacky boundary points;
+\item finite type or a boundedness theorem for the allowed isomorphisms;
+\item separatedness, usually from a rigid enough decoration;
+\item existence of extensions over DVRs, not only extension of the selected
+root;
+\item quasi-finiteness at every boundary point, not merely generic deck
+rigidity.
+\end{enumerate}
+Generic triviality of a deck group gives generic quasi-finiteness.  It does
+not exclude new automorphisms on special fibers.  Properness of the ambient
+Hurwitz stack does not imply properness of an open or locally closed
+$\Isom$ subfunctor.  Thus OP-LR-NE remains genuinely open after the marking
+theorem, exactly as the repository's own final paragraph suggests.
+
+\section{A proof checklist that would close H1--H3}
+
+The following finite list turns the comparison package into verifiable
+lemmas.
+\begin{enumerate}
+\item Define the fully labelled seed Hurwitz functor, including every branch
+profile, target marking, stability weight, and rigidification.
+\item Construct the morphism from the clean labelled zero-root
+configuration to that functor and prove it is an open immersion into one
+specified connected component.
+\item Extend the construction over $\ol M_{0,N}$, or construct a proper
+birational morphism from the normalization of the Hurwitz closure to
+$\ol M_{0,N}$ and prove it is an isomorphism.  Check node indices and twisted
+stabilizers on every boundary graph.
+\item Prove equivariance for $S_n$ and $S_{n-1}$ before taking quotients.
+This yields the finite representable etale stack map without ambiguity.
+\item Construct, over the unmarked closure, the residual zero-fiber divisor
+of degree $n$ after removing the fixed ramification-length-two summand.
+Prove it is finite flat and commutes with base change.
+\item Construct the contraction from the expanded source to that residual
+root cover.  Verify that the selected section maps to its tautological root.
+\item Identify the F2 regular-reconstruction component with this section on
+the clean open, then take its scheme-theoretic closure.
+\item Prove the induced coarse map is finite and establish the local
+invariant presentation (4.1) from the global map.  Do not reverse this
+implication.
+\item For the degree-$N$ inverse incidence and critical incidence, construct
+separate proper objects and global Stein comparison morphisms.  Verify the
+generic algebras component by component before invoking integral closure.
+\item Derive the conductor-square comparison from equality of the downstairs
+finite algebras; use completed exponent calculations as checks, not as the
+definition of the global isomorphism.
+\end{enumerate}
+
+Once items 1--8 are complete, Theorem~\ref{thm:main} gives the requested DVR
+extension immediately and without further admissible-cover technology.
+Items 9--10 are needed only for the stronger normalized-Stein and conductor
+claims bundled into H2.
+
+\section{Final theorem status}
+
+The requested sentence
+\begin{quote}
+``The distinguished affine-root marking extends uniquely across every DVR
+degeneration in the claimed compactification''
+\end{quote}
+has two readings.  For the explicitly defined quotient compactification
+$\mathscr S_n\to\mathscr B_n$, it is proved by
+Corollary~\ref{cor:stack-dvr}, Corollary~\ref{cor:coarse-dvr}, and
+Proposition~\ref{prop:multi}.  For the repository-specific
+Hurwitz/admissible-cover compactification and its regular-reconstruction
+contraction, it follows from Theorem~\ref{thm:main} only after (CMP) is
+proved.
+
+Accordingly, the adversarial status is:
+\begin{itemize}
+\item H1: partial; ambient compactification technology is available, but the
+seed component and quotient identification are not constructed.
+\item H2: partial; the abstract quotient-stack assertion is correct, while
+the normalized-Stein, contraction, and conductor comparisons are not proved
+globally.
+\item H3: plausible but high-risk; the local coarse chart and the finite-map
+DVR lemma are correct, but their application to the distinguished repository
+component depends on the missing global comparison.
+\item OP-LR-NE: open; it requires properness of a specific decorated
+$\Isom$ relation, which does not follow from H3 or from ambient properness.
+\end{itemize}
+
+This is not a counterexample to the intended theorem.  It is a separation of
+the theorem's elementary valuative core from the global moduli comparison
+that must be supplied before the theorem can carry downstream dependencies.
+
+\appendix
+\section{Explicit pair, triple, and mixed-cluster traits}
+
+This appendix checks the valuative mechanism in coordinates.  These examples
+are not substitutes for the global comparison package, but they prevent the
+local statement from hiding a residue-field or nilpotent ambiguity.
+
+\subsection{A pair collision}
+
+Let $R=k[[\pi]]$ and consider
+\[
+ F(T)=(T-a-\pi)(T-a+\pi)
+     =T^2-2aT+(a^2-\pi^2).
+\]
+The unmarked coefficient trait meets the discriminant at $\pi=0$.  The
+marked cover is
+\[
+ R[T]/((T-a)^2-\pi^2).
+\]
+It has two $R$-sections, $T=a+\pi$ and $T=a-\pi$, corresponding to the two
+generic roots.  Both have the same special geometric value $a$.  If the
+generic distinguished root is $a+\pi$, separatedness rules out the other
+section because they differ over $K$.  Thus special geometric coincidence
+does not erase the generic label.
+
+The stack picture contains more information.  At the collision the
+unmarked configuration has a transposition exchanging the two colliding
+labels.  Choosing one label replaces this stabilizer by the subgroup fixing
+that label, which is trivial inside the transposition group.  The stack map
+remains etale: the ramification visible in the coarse equation is absorbed
+by this change of inertia.  Consequently ``finite etale'' is correct for the
+stack map and false for its coarse counterpart.
+
+\subsection{A triple collision}
+
+Let
+\[
+ F(T)=(T-a-\pi)(T-a)(T-a+\pi).
+\]
+Writing $U=T-a$ gives $F=U^3-\pi^2U$.  The three generic markings extend as
+$U=\pi,0,-\pi$.  The total-collision fiber is $k[U]/(U^3)$, with one
+geometric point and length three.  Again there are three different
+scheme-valued sections of the family, but no two extend the same generic
+section.  At the symmetric special object the unmarked permutation group is
+$S_3$, while the stabilizer of a selected label is $S_2$; the relative
+inertia kernel remains trivial.
+
+A cyclic transverse presentation such as $U^3=\epsilon$ behaves differently
+over the unextended DVR $k[[\epsilon]]$: it has no generic $K$-rational root
+in general.  After the ramified base change $\epsilon=\delta^3$ it acquires
+the roots $\delta,\zeta\delta,\zeta^2\delta$ when the cube roots of unity are
+present.  This does not contradict Lemma~\ref{lem:finite-dvr}.  That lemma
+starts with a $K$-rational generic lift.  Properness of a stack may produce a
+lift only after a finite base change, whereas H3's strong wording asserts an
+extension over the given DVR.  The distinguished normalized root $1$ is
+$K$-rational on the clean marked seed, so the stronger conclusion is
+available only after the marked finite cover has been globally identified.
+
+\subsection{Two simultaneous clusters}
+
+Let
+\[
+ F(T)=\prod_{i=1}^{\mu}(T-a-\alpha_i\pi)
+       \prod_{j=1}^{\nu}(T-b-\beta_j\pi),\qquad a-b\in R^\times.
+\]
+Hensel factorization separates the degree-$\mu$ and degree-$\nu$ factors
+over $R$.  A generic root in the $a$-cluster cannot specialize into the
+$b$-cluster because the two factors define open-and-closed pieces of the
+finite root cover.  Inside the $a$-piece all $\mu$ geometric roots can merge,
+leaving special algebra $k[U]/(U^\mu)$ after a total collision.  The
+distinguished section still exists uniquely because its generic value is
+fixed.  This proves the multicluster assertion without pretending that the
+entire special root cover has one geometric point: it has at least the two
+points $a$ and $b$.
+
+The same argument works when the cluster centers have nontrivial residue
+fields.  After a finite separable extension of the residue field, Hensel
+factorization produces geometric factors permuted by Galois.  A
+$K$-rational selected root defines a Galois-stable section, and the
+integral-closure argument descends it to $R$.  If the root is defined only
+after a field extension, the conclusion is correspondingly a section only
+after normalization in that extension; one must not call it an $R$-valued
+mark.
+
+\section{Stack points, coarse points, and sections}
+
+For reference, we spell out the four notions of uniqueness used in the
+audit.
+
+\begin{enumerate}
+\item \emph{One geometric coarse point} means that the reduced special fiber
+of a coarse finite scheme is a singleton.  It ignores nilpotents, tangent
+directions, and all generic information.
+\item \emph{One geometric stack lift} means one isomorphism class in a
+geometric fiber.  Its object can still have a nontrivial automorphism group.
+\item \emph{A unique scheme-valued section} means that two morphisms
+$\Spec R\to Y$ over the base which agree on $\Spec K$ are equal.  This is a
+separatedness statement.
+\item \emph{A unique stack-valued lift} means uniqueness up to a specified
+2-isomorphism, together with uniqueness of that 2-isomorphism.  The second
+part requires trivial relative inertia, which follows here from
+representability.
+\end{enumerate}
+
+These implications do not reverse in general.  The algebra
+$k[T]/(T^\mu)$ has one geometric point but remembers length $\mu$.  The
+classifying stack $BG$ has one geometric isomorphism class over an
+algebraically closed field but nontrivial automorphisms.  A separated finite
+scheme can have many sections with different generic values.  H3 needs the
+third notion, while its current last paragraph explicitly proves only the
+first and then invokes categorical coarse descent for the rest.
+
+In the quotient model all four levels can be controlled.  The stack map is
+representable, so relative automorphisms vanish.  The coarse map is finite,
+so a fixed rational generic section extends uniquely.  The invariant ring
+computes its nonreduced special fiber.  What remains missing is not a fifth
+notion of uniqueness, but the global theorem saying that this quotient model
+is the repository's chosen Hurwitz contraction.
+
+\section{Why completion does not supply the missing global morphism}
+
+Suppose $Y$ and $Z$ are finite over a normal base $S$, and suppose their
+completed local rings happen to be isomorphic at corresponding closed
+points.  To conclude $Y\cong Z$ one normally needs a global $S$-morphism
+$Y\to Z$ (or compatible formal isomorphisms satisfying effectivity and
+descent), plus hypotheses such as finiteness and birationality.  An
+unindexed collection of local isomorphisms does not specify how generic
+components are permuted and need not glue on overlaps.
+
+The same warning applies to conductor squares.  For a finite birational
+extension $A\subset\ol A$, the conductor is
+\[
+ \mathfrak c_A=\{x\in\ol A:x\ol A\subset A\}.
+\]
+It depends on the embedded subring $A\subset\ol A$, not only on $\ol A$ and
+the valuation of an ideal on each branch.  Two different subrings of one
+normalization may have the same conductor exponent while imposing different
+gluing conditions on residue classes.  Therefore the multicluster exponent
+calculation in H2 is valuable evidence but cannot identify the full
+normalization--conductor pushout until the contracted downstairs algebra has
+been identified.
+
+There is a clean route once a morphism exists.  If $Y\to Z$ is finite
+birational and $Z$ is normal, then it is an isomorphism.  If both are finite
+normal $S$-schemes and a generic isomorphism identifies them with the
+integral closure of $S$ in the same fixed generic algebra, that generic
+isomorphism extends uniquely.  In both arguments the phrase ``same generic
+algebra'' includes an actual identification, and the global morphism or
+common embedding is essential.  This is exactly what item 6 of (CMP) asks
+H2 to construct.
+
+\begin{thebibliography}{9}
+\bibitem{ACV}
+D. Abramovich, A. Corti, and A. Vistoli,
+\emph{Twisted bundles and admissible covers}, Comm. Algebra 31 (2003),
+3547--3618, \href{https://arxiv.org/abs/math/0106211}{arXiv:math/0106211}.
+
+\bibitem{Deopurkar}
+A. Deopurkar, \emph{Compactifications of Hurwitz spaces}, Int. Math. Res.
+Not. (2014), \href{https://arxiv.org/abs/1206.4535}{arXiv:1206.4535}.
+
+\bibitem{StacksFinite}
+The Stacks Project, chapters on finite morphisms, quotient stacks, coarse
+moduli spaces, and Stein factorization,
+\href{https://stacks.math.columbia.edu}{stacks.math.columbia.edu}.
+
+\bibitem{FP}
+B. Fantechi and R. Pandharipande, \emph{Stable maps and branch divisors},
+Compos. Math. 130 (2002), 345--364,
+\href{https://arxiv.org/abs/math/9905104}{arXiv:math/9905104}.
+\end{thebibliography}
+
+\end{document}

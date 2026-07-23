@@ -1,0 +1,1051 @@
+{
+  "format": "low-complexity-essential-bcw-sparse-cubic-homogeneous-map-v1",
+  "source": "artifacts/generated-results/essential_bcw_21_counterexample.json",
+  "dimension": 21,
+  "linear_part": "identity",
+  "jacobian_determinant": "1",
+  "jacobian_certificate": "linear conjugate of the certified essential BCW 21 map",
+  "conjugation_shears": [
+    {
+      "i": 4,
+      "j": 6,
+      "a": "-3/2",
+      "terms_before": 60,
+      "terms_after": 58
+    },
+    {
+      "i": 5,
+      "j": 8,
+      "a": "-3",
+      "terms_before": 58,
+      "terms_after": 56
+    },
+    {
+      "i": 10,
+      "j": 8,
+      "a": "1",
+      "terms_before": 56,
+      "terms_after": 55
+    },
+    {
+      "i": 4,
+      "j": 3,
+      "a": "-3",
+      "terms_before": 55,
+      "terms_after": 55
+    },
+    {
+      "i": 13,
+      "j": 7,
+      "a": "6/7",
+      "terms_before": 55,
+      "terms_after": 53
+    }
+  ],
+  "H": [
+    [
+      {
+        "coefficient": "1",
+        "monomial": [
+          [
+            6,
+            1
+          ],
+          [
+            9,
+            1
+          ],
+          [
+            20,
+            1
+          ]
+        ]
+      },
+      {
+        "coefficient": "1",
+        "monomial": [
+          [
+            14,
+            1
+          ],
+          [
+            20,
+            2
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "coefficient": "3",
+        "monomial": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            20,
+            1
+          ]
+        ]
+      },
+      {
+        "coefficient": "-12",
+        "monomial": [
+          [
+            3,
+            1
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            20,
+            1
+          ]
+        ]
+      },
+      {
+        "coefficient": "12",
+        "monomial": [
+          [
+            6,
+            1
+          ],
+          [
+            10,
+            1
+          ],
+          [
+            20,
+            1
+          ]
+        ]
+      },
+      {
+        "coefficient": "36",
+        "monomial": [
+          [
+            8,
+            1
+          ],
+          [
+            11,
+            1
+          ],
+          [
+            20,
+            1
+          ]
+        ]
+      },
+      {
+        "coefficient": "1",
+        "monomial": [
+          [
+            15,
+            1
+          ],
+          [
+            20,
+            2
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "coefficient": "8",
+        "monomial": [
+          [
+            1,
+            2
+          ],
+          [
+            20,
+            1
+          ]
+        ]
+      },
+      {
+        "coefficient": "-8",
+        "monomial": [
+          [
+            3,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            20,
+            1
+          ]
+        ]
+      },
+      {
+        "coefficient": "8",
+        "monomial": [
+          [
+            5,
+            1
+          ],
+          [
+            7,
+            1
+          ],
+          [
+            20,
+            1
+          ]
+        ]
+      },
+      {
+        "coefficient": "-8",
+        "monomial": [
+          [
+            6,
+            1
+          ],
+          [
+            12,
+            1
+          ],
+          [
+            20,
+            1
+          ]
+        ]
+      },
+      {
+        "coefficient": "-28",
+        "monomial": [
+          [
+            8,
+            1
+          ],
+          [
+            13,
+            1
+          ],
+          [
+            20,
+            1
+          ]
+        ]
+      },
+      {
+        "coefficient": "1",
+        "monomial": [
+          [
+            16,
+            1
+          ],
+          [
+            20,
+            2
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "coefficient": "1",
+        "monomial": [
+          [
+            17,
+            1
+          ],
+          [
+            20,
+            2
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "coefficient": "3/2",
+        "monomial": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            20,
+            1
+          ]
+        ]
+      },
+      {
+        "coefficient": "-1",
+        "monomial": [
+          [
+            6,
+            1
+          ],
+          [
+            8,
+            1
+          ],
+          [
+            20,
+            1
+          ]
+        ]
+      },
+      {
+        "coefficient": "3",
+        "monomial": [
+          [
+            17,
+            1
+          ],
+          [
+            20,
+            2
+          ]
+        ]
+      },
+      {
+        "coefficient": "1",
+        "monomial": [
+          [
+            18,
+            1
+          ],
+          [
+            20,
+            2
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "coefficient": "3",
+        "monomial": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            20,
+            1
+          ]
+        ]
+      },
+      {
+        "coefficient": "1",
+        "monomial": [
+          [
+            19,
+            1
+          ],
+          [
+            20,
+            2
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "coefficient": "1",
+        "monomial": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            20,
+            1
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "coefficient": "1",
+        "monomial": [
+          [
+            1,
+            1
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            20,
+            1
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "coefficient": "1",
+        "monomial": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            20,
+            1
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "coefficient": "1",
+        "monomial": [
+          [
+            0,
+            2
+          ],
+          [
+            20,
+            1
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "coefficient": "-1",
+        "monomial": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            20,
+            1
+          ]
+        ]
+      },
+      {
+        "coefficient": "1",
+        "monomial": [
+          [
+            0,
+            1
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            20,
+            1
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "coefficient": "1/3",
+        "monomial": [
+          [
+            1,
+            1
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            20,
+            1
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "coefficient": "1",
+        "monomial": [
+          [
+            0,
+            1
+          ],
+          [
+            7,
+            1
+          ],
+          [
+            20,
+            1
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "coefficient": "1",
+        "monomial": [
+          [
+            1,
+            2
+          ],
+          [
+            20,
+            1
+          ]
+        ]
+      },
+      {
+        "coefficient": "-2/7",
+        "monomial": [
+          [
+            1,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            20,
+            1
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "coefficient": "3",
+        "monomial": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      },
+      {
+        "coefficient": "-1",
+        "monomial": [
+          [
+            0,
+            2
+          ],
+          [
+            6,
+            1
+          ]
+        ]
+      },
+      {
+        "coefficient": "-1",
+        "monomial": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            9,
+            1
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "coefficient": "-24",
+        "monomial": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ]
+        ]
+      },
+      {
+        "coefficient": "36",
+        "monomial": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            3,
+            1
+          ]
+        ]
+      },
+      {
+        "coefficient": "12",
+        "monomial": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            6,
+            1
+          ]
+        ]
+      },
+      {
+        "coefficient": "-36",
+        "monomial": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            11,
+            1
+          ]
+        ]
+      },
+      {
+        "coefficient": "-12",
+        "monomial": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            10,
+            1
+          ]
+        ]
+      },
+      {
+        "coefficient": "-12",
+        "monomial": [
+          [
+            0,
+            1
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            6,
+            1
+          ]
+        ]
+      },
+      {
+        "coefficient": "-12",
+        "monomial": [
+          [
+            1,
+            1
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            8,
+            1
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "coefficient": "-6",
+        "monomial": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            1
+          ]
+        ]
+      },
+      {
+        "coefficient": "-24",
+        "monomial": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            7,
+            1
+          ]
+        ]
+      },
+      {
+        "coefficient": "28",
+        "monomial": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            13,
+            1
+          ]
+        ]
+      },
+      {
+        "coefficient": "12",
+        "monomial": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            1
+          ]
+        ]
+      },
+      {
+        "coefficient": "8",
+        "monomial": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            12,
+            1
+          ]
+        ]
+      },
+      {
+        "coefficient": "8",
+        "monomial": [
+          [
+            0,
+            1
+          ],
+          [
+            6,
+            1
+          ],
+          [
+            7,
+            1
+          ]
+        ]
+      },
+      {
+        "coefficient": "28",
+        "monomial": [
+          [
+            1,
+            2
+          ],
+          [
+            8,
+            1
+          ]
+        ]
+      },
+      {
+        "coefficient": "-8",
+        "monomial": [
+          [
+            1,
+            1
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            5,
+            1
+          ]
+        ]
+      },
+      {
+        "coefficient": "-8",
+        "monomial": [
+          [
+            1,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            8,
+            1
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "coefficient": "-1",
+        "monomial": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "coefficient": "1",
+        "monomial": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            6,
+            1
+          ]
+        ]
+      },
+      {
+        "coefficient": "1",
+        "monomial": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            8,
+            1
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "coefficient": "-1",
+        "monomial": [
+          [
+            0,
+            2
+          ],
+          [
+            2,
+            1
+          ]
+        ]
+      }
+    ],
+    []
+  ],
+  "collision_points": [
+    [
+      "0",
+      "0",
+      "-1/8",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "1"
+    ],
+    [
+      "1",
+      "-3/4",
+      "13/4",
+      "-9/16",
+      "-33/8",
+      "-1",
+      "-13/4",
+      "-27/64",
+      "3/4",
+      "-1",
+      "-3/16",
+      "-1/4",
+      "27/64",
+      "9/28",
+      "-17/4",
+      "-45/16",
+      "99/32",
+      "9/16",
+      "-39/8",
+      "13/4",
+      "1"
+    ],
+    [
+      "-1",
+      "3/4",
+      "13/4",
+      "9/16",
+      "33/8",
+      "-1",
+      "13/4",
+      "-27/64",
+      "3/4",
+      "-1",
+      "-3/16",
+      "1/4",
+      "-27/64",
+      "9/28",
+      "17/4",
+      "45/16",
+      "99/32",
+      "-9/16",
+      "39/8",
+      "13/4",
+      "1"
+    ]
+  ],
+  "common_image": [
+    "0",
+    "0",
+    "-1/8",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1"
+  ],
+  "statistics": {
+    "component_monomial_terms": 53,
+    "distinct_scalar_monomials": 45,
+    "nonzero_components": 20,
+    "generic_rank_JH_over_QQ_x": 18,
+    "nilpotency_index_JH": 19,
+    "exact_point_power_ranks": [
+      18,
+      17,
+      16,
+      15,
+      14,
+      13,
+      12,
+      11,
+      10,
+      9,
+      8,
+      7,
+      6,
+      5,
+      4,
+      3,
+      2,
+      1,
+      0
+    ],
+    "component_flattening_rank": 20,
+    "derivative_flattening_rank": 42,
+    "vector_waring_rank_lower_bound": 42,
+    "vector_waring_rank_constructive_upper_bound": 164
+  }
+}

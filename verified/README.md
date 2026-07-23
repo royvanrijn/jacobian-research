@@ -19,6 +19,10 @@ This directory contains the stable proof chain:
 - [Cubic image and nonproperness theorem](IMAGE_AND_NONPROPERNESS.md): exact image, fibers, and nonproperness;
 - [Weighted marked-root theorem](WEIGHTED_SEED_THEOREM.md): weighted construction and symmetric
   monodromy.
+- [Universal symmetric monodromy](UNIVERSAL_SYMMETRIC_MONODROMY.md): the
+  standalone classical proof that every characteristic-zero pencil
+  `H(W)-sW+t`, including all exceptional polynomial types, has geometric and
+  arithmetic monodromy `S_n`.
 - [All-degree rational fibers](ALL_DEGREE_RATIONAL_FIBERS.md): explicit
   integer-root seeds giving a complete regular `N`-point rational fiber and
   `N` nearby real sheets for every `N>=3`.

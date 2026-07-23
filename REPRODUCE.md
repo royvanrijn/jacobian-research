@@ -452,6 +452,18 @@ seed chart: it computes the `2^3` and `3^2` omitted-value intersections, the
 four doubled type-`(6)` collision points, factored affine-sheet boundary cuts,
 and clean rational witnesses for all open pieces.
 
+The complete degree-six boundary atlas requires both SymPy and Singular:
+
+```bash
+make verify-ritt-boundary
+```
+
+It proves that the two Ritt surfaces have respectively two and three exact
+affine-boundary curves, supplies a rational Hessian-clean witness on every
+curve, and computes the common-curve deletions: one reduced sextic
+zero-cluster orbit, two rational plus four conjugate extra-root points, and
+four Hessian/type-`(6)` collisions disjoint from the affine boundary.
+
 The same target runs the rank-two Poisson pre-audit and the independent
 completion certificate.  The first verifies that the
 single displayed output `R=x(2-3xq)` is exactly the foundational third output

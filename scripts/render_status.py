@@ -20,7 +20,7 @@ KINDS = {"theorem", "corollary", "example", "reproduction", "open_problem"}
 STATES = {"proved", "partial", "open", "parked", "archived"}
 REVIEWS = {"none", "independent-replay", "formalized", "external-reviewed"}
 PRIORITIES = {"core", "derived", "reference", "primary", "parked"}
-CORE_ORDER = ["F1", "W1", "S1", "C1", "B1", "P1", "M1", "D1", "F2", "H1", "H2", "H3", "R1", "R2", "IA1"]
+CORE_ORDER = ["F1", "W1", "S1", "C1", "B1", "P1", "M1", "D1", "F2", "R1", "R2", "IA1"]
 ACTIVE_OPEN = {
     "OP-CR",
     "OP-LR-REES",
@@ -123,6 +123,7 @@ def render(index: dict) -> str:
     _table(lines, [by_id[i] for i in CORE_ORDER])
 
     sections = [
+        ("Audited high-risk claims", [x for x in entries if x["kind"] == "theorem" and x["state"] == "partial" and x["priority"] == "reference"], False),
         ("Derived corollaries", [x for x in entries if x["kind"] == "corollary" and x["state"] in {"proved", "partial"}], False),
         ("Examples and regressions", [x for x in entries if x["kind"] == "example" and x["state"] in {"proved", "partial"}], True),
         ("External reproductions", [x for x in entries if x["kind"] == "reproduction" and x["state"] in {"proved", "partial"}], False),
