@@ -601,7 +601,12 @@ Equivalently, over a rerooting-stable generic open the incidence
 `{(H,a):H(a)=0, a!=0, H'(a)!=0}` is the finite etale rerooting relation.
 Its quotient supplies an ordinary algebraic model for the generic moduli
 image, which is therefore reduced.  The affine root sheet separates the
-rerootings, as proved next; node pairing and conductor are unnecessary.
+rerootings, as proved next.  In fact node pairing, the complete conductor
+morphism, and full Fitting multiplicities cannot replace that sheet: equation
+(5.3j) transports the entire decorated finite normalization.  Exact generic
+quartic/quintic examples and the first nonordinary Hessian-collision
+calculation are recorded in the
+[conductor-rerooting counterexample](CONDUCTOR_REROOTING_AMBIGUITY.md).
 
 ### Generic affine-mark rigidity
 

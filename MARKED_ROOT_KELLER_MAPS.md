@@ -1,9 +1,9 @@
 # Marked-root Keller maps
 
-The weighted and cancellation constructions share one inverse-geometric
-framework.  Their source formulas differ, but both affine sources are
-regular-reconstruction opens inside finite normalized covers obtained by
-marking one inverse root.
+The weighted, cancellation, and root-engineered quadratic-gauge
+constructions share one inverse-geometric framework. Their source formulas
+differ, but all three affine sources are regular-reconstruction opens inside
+finite normalized covers obtained by marking one inverse root.
 
 ## A unifying thesis
 
@@ -15,18 +15,25 @@ etale, but affine source space is only the regular-reconstruction open in
 the finite normalized root cover.  A boundary divisor is omitted exactly
 when some source reconstruction coordinate has negative valuation there.
 
-The two principal realizations are:
+The three established realizations are:
 
 - a polynomial weighted suspension of the ramified tangent incidence;
-- a birational cancellation suspension whose source chart contributes the
-  reciprocal boundary power.
+- a birational cancellation suspension whose source chart contributes an
+  arbitrary reciprocal boundary power; and
+- a birational quadratic-gauge suspension of a marked-line incidence whose
+  source chart contributes one reciprocal boundary factor.
 
-The foundational cubic is the smallest point at which the two realizations
-are polynomially left--right equivalent.  The standalone note proves the
+Their common proof is the
+[boundary-cancelled incidence lemma](cancellation/CONTROLLED_BOUNDARY_SUSPENSIONS.md#1-boundary-cancelled-incidence-lemma).
+It makes polynomiality a separate hypothesis, so a rational determinant
+ledger cannot be mistaken for a polynomial Keller construction.
+
+The foundational cubic is the smallest point at which all three
+constructions meet, with cancellation and quadratic gauge representing the
+same reciprocal suspension type. The standalone note proves the
 boundary--reconstruction criterion, identifies the nonproperness locus with
-the finite image of the normalization boundary, works out both cubic
-ledgers, and separates direct consequences from family-specific theorems and
-later analogies.
+the finite image of the normalization boundary, and separates direct
+consequences from family-specific theorems and later analogies.
 
 The deepest recurring dichotomy is
 
@@ -36,9 +43,13 @@ The deepest recurring dichotomy is
 \text{global polynomial algebraization}.}
 \]
 
-The thesis is proved for the displayed weighted and cancellation families.
-Its use as an exhaustive description is the scoped
-[minimal-boundary classification conjecture](cancellation/MINIMAL_BOUNDARY_CLASSIFICATION.md).
+The thesis is proved for the displayed weighted, cancellation, and
+quadratic-gauge families.
+Its use as an exhaustive description is the
+[minimal-boundary gateway and classification conjecture](cancellation/MINIMAL_BOUNDARY_CLASSIFICATION.md).
+That conjecture is relative to proposed intrinsic gateway conditions which
+are not yet an independently checkable criterion on an arbitrary canonical
+finite-normalization package.
 
 ## 1. Marked-root presentations
 
@@ -82,7 +93,7 @@ The resulting boundary primes, their ramification and residue degrees, and
 their upstairs and downstairs intersections form the invariant developed in
 [BOUNDARY_GEOMETRY.md](cancellation/BOUNDARY_GEOMETRY.md).
 
-## 2. The two principal realizations
+## 2. The three established realizations
 
 ### Weighted marked roots
 
@@ -120,9 +131,32 @@ Thus the distinguished critical divisor has intrinsic ramification index
 `r+1`.  Exact reconstruction and polynomial cancellation are proved in
 [the cancellation construction](cancellation/CONSTRUCTION.md).
 
-The foundational Keller map is the minimal cubic marked-root map.  It is the degree-three point at
-which the weighted and cancellation descriptions coincide up to linear
-reparametrization.
+### Root-engineered quadratic-gauge marked roots
+
+For a squarefree rooted seed
+
+\[
+ G(S)=g_1S+\cdots+g_NS^N,\qquad g_1g_3g_N\ne0,
+\]
+
+the normalized inverse equation is
+
+\[
+ E_G(S;P,B,C)
+ =G_P(S)-\frac{g_1}{2}(BS^2+C).
+\]
+
+Its derivative is `g_1D` for `D=1-SQ+PS^2`; the marked-line core contributes
+`-2D` and the reciprocal source chart contributes `D^{-1}`. The
+coefficient-weight identity is its polynomiality gate. For fixed `P!=0`,
+the reduced discriminant normalization is `G_m`, and the fibre over
+`(1,0,0)` is exactly the prescribed root set of `G`. These statements are
+proved in the
+[root-engineered quadratic-gauge theorem](cancellation/ROOT_ENGINEERED_QUADRATIC_GAUGE.md).
+
+The foundational Keller map is the minimal cubic marked-root map. It is the
+degree-three point at which the weighted, cancellation, and quadratic-gauge
+descriptions coincide up to polynomial left--right reparametrization.
 
 ## 3. Degreewise stable-multiplicity consequence
 

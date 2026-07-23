@@ -6,12 +6,18 @@ queue is generated in [`STATUS.md`](../STATUS.md) from
 
 The primary cancellation continuations are `OP-CR` and `OP-SUSP`.
 The latter is now the
-[minimal-boundary classification conjecture](MINIMAL_BOUNDARY_CLASSIFICATION.md),
-with geometric degree three as its first target.  Its cubic work is organized
-as two alternative gateways: either extract the marked suspension package,
-or prove intrinsic curvilinearity (hence point-flatness), exclude a second
-unramified nonproperness divisor, and straighten the
-Deligne--Faddeev coefficient orbit.  Completing either gateway gives the
+[minimal-boundary gateway and classification conjecture](MINIMAL_BOUNDARY_CLASSIFICATION.md),
+with geometric degree three as its first target.  `MBP1` now formalizes
+selected critical boundary, saturated link, boundary monotonicity, ledger
+completeness, puncture rank, primitive conormal, noncontraction, and chart
+straightenability as predicates on a finite-normalization diagram.  The open
+step is to construct that diagram canonically from a numerically minimal
+unmarked normalization and prove its predicates.  The subsequent cubic work
+is organized as two alternatives: either extract the marked suspension
+package, or prove intrinsic
+curvilinearity (hence point-flatness), exclude a second unramified
+nonproperness divisor, and straighten the
+Deligne--Faddeev coefficient orbit.  Completing either cubic route gives the
 foundational map and reconstructs the other package, so they should not be
 pursued as cumulative independent requirements.
 For a reduced minimal point defect, fiber-minimality is now the concrete
@@ -27,7 +33,7 @@ visible in the intrinsic scheme package.
 In the existing conormal language, the same condition says that the
 primitive conormal class generates the full nilradical after every
 closed-point specialization.  This closed-point saturation statement is
-the common missing lemma in the normalization and branchwise gateways.
+the common missing lemma in the normalization and branchwise frontends.
 It follows from the exact Hartogs package: pure two-dimensional `S_2`
 scheme-theoretic ramification support, a rank-one full-support `S_1`
 cotangent module, and codimension-one primitive generation.  Equivalently,

@@ -1,87 +1,135 @@
 # Controlled-boundary suspensions
 
-This note formalizes the common determinant mechanism behind the weighted
-and cancellation constructions, proves the elementary plane-core normal
-forms that can already be classified, and isolates the first obstruction to
-a genuinely independent two-boundary cancellation chart.  It is a scoped
-starting point, not a classification of all polynomial Keller maps.
+This note formalizes the common determinant mechanism behind the weighted,
+cancellation, and quadratic-gauge constructions, proves the elementary
+plane-core normal forms that can already be classified, and isolates the
+first obstruction to a genuinely independent two-boundary cancellation
+chart. It is a scoped starting point, not a classification of all polynomial
+Keller maps.
 
 Work over a characteristic-zero field `k`.
 
-## 1. A suspension is a square, not only a composition
+## 1. Boundary-cancelled incidence lemma
 
-The weighted and cancellation constructions fit a common commutative square
+The reusable object is more than a Jacobian identity.
 
-```text
- X = A^3  -------- F -------->  Y = A^3
-    |                              |
-    | alpha                        | beta
-    v                              v
-    Z  -------- Phi -------->      T
-```
+### Definition 1.1 -- boundary-cancelled incidence datum
 
-where `alpha` and `beta` are dominant rational maps between smooth
-threefolds, `Phi` is the product of a plane core with a parameter coordinate,
-and
+Let `X` and `Y` be smooth affine `d`-folds, with
+`\mathcal O(X)^*=k^*`, and let `F_rat:X dashrightarrow Y` be dominant. A
+**boundary-cancelled incidence datum** for `F_rat` consists of the following
+seven pieces.
+
+1. **Finite root cover.** A separable degree-`N` equation
+   \[
+    E(\tau;y)=0
+   \]
+   over `k(Y)`, the finite normalization
+   `pi:Xbar->Y` in `k(Y)[tau]/(E)`, and rational reconstruction functions
+   with two-sided inverse identities identifying `k(X)` with that
+   marked-root extension.
+2. **Source chart valuation.** Dominant rational charts in a commutative
+   square
+
+   ```text
+   X  -------- F_rat ------>  Y
+   |                          |
+   | alpha                    | beta
+   v                          v
+   Z  -------- Phi -------->  T
+   ```
+
+   together with the height-one valuations of `J_alpha` and
+   `J_beta o F_rat`.
+3. **Controlled divisor.** An irreducible equation `Delta` on `Z`, an
+   integer `e>=1`, and a constant `u in k^*` such that
+   \[
+    J_\Phi=u\Delta^e.                                  \tag{1.1}
+   \]
+   In marked-root coordinates this is the derivative identity
+   `partial_tau E = unit times Delta^e`.
+4. **Polynomiality condition.** An explicit regularity or divisibility
+   condition `P` under which every coordinate of `F_rat` extends to `X` and
+   the reconstruction functions identify `X` with their common regularity
+   locus in `Xbar`. The determinant ledger alone does not imply `P`.
+5. **Determinant ledger.** A constant `kappa in k^*` for which
+   \[
+    (\Delta\circ\alpha)^eJ_\alpha
+      =\kappa(J_\beta\circ F_{\rm rat})                \tag{1.2}
+   \]
+   in `k(X)`. Equivalently, at every height-one prime `A` of `X`,
+   \[
+    \operatorname{ord}_A(J_\alpha)
+    +e\operatorname{ord}_A(\Delta\circ\alpha)
+    =\operatorname{ord}_A(J_\beta\circ F_{\rm rat}).   \tag{1.3}
+   \]
+6. **Boundary normalization.** A proof that the normalization of
+   `V(Delta)` maps finitely and birationally to the reduced repeated-root
+   discriminant. A prime on which a reconstruction function has negative
+   valuation is then a prime of `Xbar-X`, rather than an affine critical
+   divisor of the Keller map.
+7. **Collision fibre.** A target `y_0` for which `E(tau;y_0)` is squarefree,
+   all of its roots lie in the regular-reconstruction open, and the
+   reconstruction formulas give one source point for each root.
+
+The word “condition” in item 4 is deliberate. For cancellation it is a
+finite jet congruence; for the weighted and quadratic-gauge families it is a
+support or denominator-clearing identity. A rational zero--pole
+cancellation without this step is not a polynomial Keller construction.
+
+### Lemma 1.2 -- boundary-cancelled incidence
+
+For a datum as above, assume the polynomiality condition `P`. Then `F_rat`
+extends to a polynomial morphism `F:X->Y` and
 
 \[
- \beta\circ F=\Phi\circ\alpha.                         \tag{1}
+ \boxed{J_F=u\kappa\in k^*.}                            \tag{1.4}
 \]
 
-Let `E=(D=0)` be the sole nonunit divisor in the core Jacobian and suppose
+The map `F` is the restriction of the finite root cover to its
+regular-reconstruction open. The normalized controlled divisor is the
+normalization of the reduced repeated-root discriminant. At the declared
+collision target,
 
 \[
- \det D\Phi=uD^r,
- \qquad u\in k^*.                                     \tag{2}
+ \boxed{F^{-1}(y_0)\longleftrightarrow
+        \{\tau:E(\tau;y_0)=0\},}                        \tag{1.5}
 \]
 
-Taking determinants in (1) gives
+so the collision fibre has exactly `N` reduced points.
+
+#### Proof
+
+On the common domain of the square, the chain rule gives
 
 \[
- (\det D\beta\circ F)\det DF
- =u(D\circ\alpha)^r\det D\alpha.                       \tag{3}
+ (J_\beta\circ F)J_F=(J_\Phi\circ\alpha)J_\alpha.
 \]
 
-If `F` has constant nonzero Jacobian, the following equality of principal
-Weil divisors holds:
+Substituting (1.1) and (1.2) gives `J_F=u kappa`. Polynomiality extends this
+identity from the dense chart to all of `X`. The root equation and
+reconstruction identify the generic function-field extension. Item 6 is
+exactly the finite birational criterion for normalization. At `y_0`,
+squarefreeness makes the `N` roots reduced, regular reconstruction supplies
+one source point for each, and the inverse identities exclude any additional
+source point. QED
+
+### Divisor form
+
+Taking divisors in (1.2) gives the presentation-independent ledger
 
 \[
  \boxed{
  \operatorname{div}(\det D\alpha)
- +r\operatorname{div}(D\circ\alpha)
- =F^*\operatorname{div}(\det D\beta).}                 \tag{4}
+ +e\operatorname{div}(\Delta\circ\alpha)
+ =F^*\operatorname{div}(\det D\beta).}                 \tag{1.6}
 \]
 
-We call (4) the **determinant ledger**.  Pullback through a rational chart is
-understood as the divisor of the pulled-back rational function, so its
-coefficients may be negative.
-
-Conversely, equality of the ledger says that `det DF` is a global unit.  It
-says that this unit is constant when `O(X)^*=k^*`, in particular for
-`X=A^3`.  On an arbitrary smooth threefold with nonconstant units, (4) alone
-does not strengthen “global unit” to “constant Jacobian.”
-
-For cancellation, `beta=id`, `D\circ\alpha=A^{-1}`, and
-`det D alpha=-A^r`; the two terms on the left of (4) cancel.  For the
-weighted square,
-
-\[
- \det D\alpha=b_0x^3\gamma^2,
- \quad D\circ\alpha=\gamma,
- \quad \det D\beta=-cC^3,
- \quad C=x\gamma,
-\]
-
-so (4) is the identity
-
-\[
- 3\operatorname{div}(x)+3\operatorname{div}(\gamma)
- =3\operatorname{div}(C).
-\]
-
-Consequently a datum `(Phi,D,r,alpha)` describes cancellation, but a common
-definition covering the weighted construction must also retain the target
-chart `beta`.
+Pullback through a rational chart is understood in the common function
+field, so negative coefficients record chart poles. Conversely, divisor
+equality makes the quotient in (1.2) a global unit. It is a constant when
+`\mathcal O(X)^*=k^*`; on a smooth affine variety with nonconstant units,
+the conclusion is only that `J_F` is a unit.
 
 ## 2. Coordinate-preserving plane cores
 
@@ -151,39 +199,116 @@ Formula (8) classifies coordinate-preserving cores once `D` is fixed, but
 does not classify the divisors `D` that admit a polynomial Keller suspension.
 That suspension condition is the restrictive part of the problem.
 
-## 3. The first intrinsic split
+## 3. The three established families are instances
 
-For the weighted core, `D=q-H'(w)`, so `E` is a graph and
+The lemma separates the common proof from the family-specific input. The
+complete dictionaries are as follows.
 
-\[
- E\simeq\mathbb A^1,
- \qquad \mathcal O(E)^*=k^*.
-\]
+### 3.1 Weighted tangent family
 
-For the cancellation core at fixed `P`, put
+- The finite root cover is
+  \[
+   E_H(W;A,B,C)=H(W)-BCW+cAC^2=0.
+  \]
+- The controlled divisor is `Delta=gamma=-E_H'/c`, with exponent `e=1`,
+  and the tangent core has `J_Phi=-c^2 gamma`.
+- For
+  \[
+   \alpha=(W,\gamma,C),\qquad
+   \beta=(BC,cAC^2,C),
+  \]
+  one has
+  \[
+   J_\alpha=b_0x^3\gamma^2,\qquad
+   J_\beta=-cC^3,\qquad C=x\gamma.
+  \]
+  Hence
+  \[
+   \gamma J_\alpha
+    =-\frac{b_0}{c}(J_\beta\circ F),
+  \]
+  so `u=-c^2`, `kappa=-b_0/c`, and Lemma 1.2 gives
+  `J_F=b_0c`.
+- Admissibility of the weighted seed is the polynomiality condition.
+  After suppressing the free suspension coordinate `C`, the critical graph
+  `s=H'(W)` is an affine line, and
+  \[
+   W\longmapsto(H'(W),WH'(W)-H(W))
+  \]
+  is its finite birational discriminant parameterization. Thus the
+  plane critical normalization is `A^1`; the full controlled divisor is its
+  product with the free `C`-line.
+- Whenever the specialized pencil is squarefree and its roots satisfy the
+  reconstruction condition `C/E_H'(W)` regular, the fibre consists exactly
+  of those roots. The explicit rational collision in every degree is the
+  [all-degree rational-fibre theorem](../verified/ALL_DEGREE_RATIONAL_FIBERS.md).
 
-\[
- D=1-s(Q-Ps)^m,
- \qquad Y=Q-Ps.
-\]
+### 3.2 Cancellation family
 
-On `D=0` one has `sY^m=1`, and conversely
+- The finite root cover is
+  \[
+   E_{m,r}(s;P,Q,R)
+    =C\int_0^s(1-t(Q-Pt)^m)^r\,dt-R=0.
+  \]
+- Put
+  \[
+   \Delta=D=1-s(Q-Ps)^m.
+  \]
+  Then `partial_s E=C D^r`, so `e=r` and `u=C`.
+- The rational source chart
+  `alpha=(s,P,Q)` has
+  \[
+   J_\alpha=-A^r=-D^{-r},
+  \]
+  while `beta=id`. Thus `D^rJ_alpha=-1`, `kappa=-1`, and
+  Lemma 1.2 gives `J_F=-C`.
+- The finite congruence `L_(m,r)(h)=0` is exactly the polynomiality
+  condition. At fixed `P`, the plane controlled divisor has normalization
+  \[
+   s=Y^{-m},\qquad Q=Y+PY^{-m},
+  \]
+  hence `G_m`; the full divisor carries the free `P`-parameter, and the
+  exponent `r` gives ramification index `r+1`.
+- At `(P,Q,R)=(1,0,0)`, the specialized root polynomial is squarefree and
+  every root has `D!=0`. The reconstruction formulas therefore give the
+  complete `N=r(m+1)+1` point collision fibre.
 
-\[
- s=Y^{-m},\qquad Q=Y+PY^{-m}.
-\]
+### 3.3 Root-engineered quadratic gauge
 
-Therefore
+- The finite root cover is
+  \[
+   E_G(S;P,B,C)
+    =G_P(S)-\frac{g_1}{2}(BS^2+C)=0.
+  \]
+- In the reciprocal chart
+  \[
+   D=1-SQ+PS^2,\qquad J_\alpha=D^{-1},
+  \]
+  and on the incidence `partial_S E_G=g_1D`. After the normalized target
+  scaling, the marked-line core has `J_Phi=-2D`; hence `e=1`, `u=-2`,
+  `beta=id`, and `kappa=1`. Lemma 1.2 gives `J_F=-2`.
+- The coefficient-weight identity defining `G_P` is the polynomiality
+  condition: it removes every apparent reciprocal-chart denominator.
+  For fixed `P!=0`, the tangent-line parameter has missing points
+  `S=0,infinity`, so the reduced plane discriminant normalization is `G_m`;
+  over the punctured `P`-base the full normalization is `G_m x G_m`.
+- At `(P,B,C)=(1,0,0)`, the root equation is `G(S)=0`. If `G` is
+  squarefree, all roots have `D=G'(S)/g_1!=0`, and reconstruction gives the
+  complete prescribed root fibre.
 
-\[
- k[E]=k[Y,Y^{-1}],
- \qquad E\simeq\mathbb G_m.                            \tag{9}
-\]
+The table makes the shared mechanism and the genuine classification
+variables visible:
 
-The affine type, unit rank, and number of places at infinity of the critical
-normalization separate the two plane cores before any threefold boundary
-calculation.  The ramification index at the generic discriminant point is
-`r+1`; the two pole vectors in (9) retain the cancellation exponent `m`.
+| family | controlled exponent | chart cancellation | polynomiality gate | critical normalization |
+|---|---:|---|---|---|
+| weighted | `1` | distributed source/target ledger | weighted admissibility | `A^1` |
+| cancellation | `r` | reciprocal source valuation `D^{-r}` | finite jet congruence | `G_m` |
+| quadratic gauge | `1` | reciprocal source valuation `D^{-1}` | coefficient-weight identity | `G_m` |
+
+Thus determinant cancellation itself is no longer the classification
+problem. The remaining problem is to classify controlled divisors, normalized
+critical curves with their marked valuations, and polynomial algebraizations
+of their source/target ledgers.
 
 ## 4. A first independent two-boundary ansatz
 
@@ -303,7 +428,8 @@ as distinct dicritical divisors.
 The exact determinant identities and bounded exponent audit are checked by
 [`verify_controlled_boundary_suspensions.py`](../scripts/verify_controlled_boundary_suspensions.py).
 The later
-[minimal-boundary classification note](MINIMAL_BOUNDARY_CLASSIFICATION.md)
+[minimal-boundary gateway and classification note](MINIMAL_BOUNDARY_CLASSIFICATION.md)
 incorporates the saturated-link, boundary-monotonicity, and reciprocal-branch
-advances and is now the canonical statement of the open classification
-problem.
+advances and is now the canonical statement of the open program.  Its
+gateway conditions are proposed intrinsic hypotheses, not yet an
+independently checkable classification criterion.

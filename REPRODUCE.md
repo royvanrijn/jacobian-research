@@ -315,8 +315,16 @@ job is the single aggregation check intended for GitHub branch protection.
 make verify-master
 ```
 
-The minimal-boundary classification target has a separate fast cubic
-certificate:
+This target includes the exact quadratic-gauge/cancellation intersection
+regression.  To run its symbolic `N=4,5,6,7` discriminant and all-factorization
+checks directly:
+
+```bash
+.venv/bin/python scripts/verify_quadratic_cancellation_intersection.py
+```
+
+The minimal-boundary gateway and classification program has a separate fast
+cubic certificate:
 
 ```bash
 make verify-minimal-boundary
@@ -332,9 +340,11 @@ It also checks the positive quotient tower and the target-polynomiality jet
 that forces `gamma=1-3xy/2 mod x^2`; the written LND/Stein argument supplies
 the slice under explicit intrinsic saturation labels.  On the reciprocal
 side it checks the coefficient valuations `(n-1,2n-1)` and the extraction of
-`Y=Q-Ps` from a primitive quadratic conormal coefficient.  This does not
-verify the open extraction of a suspension or those finite labels from the
-bare package.
+`Y=Q-Ps` from a primitive quadratic conormal coefficient.  The eight
+minimal-boundary predicates are formalized in the accompanying note, but
+this checker does not construct their finite-normalization witness, verify
+`PC`, `NC`, or `CS` for an arbitrary boundary-minimal map, or extract a
+suspension from the unmarked canonical normalization.
 
 The same target also checks the finite-normalization frontend: the
 Deligne--Faddeev cubic-algebra table and discriminant, the codimension-three
@@ -1030,6 +1040,20 @@ rebuilds the formulas and separately checks all six brackets, the determinant,
 term counts, and collision.  This proves a repository rank-two Poisson
 theorem; it does not assert that these are the unavailable manuscript's
 formulas.
+
+The all-degree rigidity step behind the transported Hessian cases is
+replayed by
+
+```bash
+make verify-common-right-factor-synchronization
+```
+
+It verifies the triangular top-jet reconstruction for every common-right
+degree occurring in degrees `30` and `42`, checks that the two degree
+censuses each have exactly three decorated incomparable pairs, and verifies
+the characteristic-two dual-number counterexample when the total outer
+degree is not invertible.  The theorem itself works over every ring in which
+that outer degree is a unit.
 
 The generated certificates are stored as the conservative
 [`79-variable artifact`](artifacts/generated-results/long_bcw_79_counterexample.json)

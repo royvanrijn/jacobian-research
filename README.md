@@ -82,24 +82,41 @@ boundary poles and escape to infinity, not by finite ramification.  The same
 formal/local-versus-global-polynomial dichotomy reappears in the stable-orbit
 and quantization problems.
 
-The [tangent-map core](verified/TANGENT_MAP_CORE.md) supplies the inverse
-pencil, generic degree, critical divisor, discriminant normalization, full
-Hessian Fitting divisor, incidence form, weighted suspension, and comparison
-with cancellation suspension.  Later papers cite this theorem instead of
-rederiving those calculations.
+The
+[boundary-cancelled incidence lemma](cancellation/CONTROLLED_BOUNDARY_SUSPENSIONS.md#1-boundary-cancelled-incidence-lemma)
+now supplies the common finite-root, chart-valuation, controlled-divisor,
+polynomiality, determinant, boundary-normalization, and collision-fibre
+mechanism. Weighted, cancellation, and quadratic-gauge maps are three
+explicit instances. Their determinant proofs are centralized there; the
+family notes retain only their different polynomiality and boundary data.
+The [stable-intersection theorem](verified/QUADRATIC_CANCELLATION_STABLE_INTERSECTION.md)
+shows that the cancellation and root-engineered quadratic-gauge families
+share exactly one stable polynomial left--right class: the foundational
+cubic.
 
-The [minimal-boundary classification target](cancellation/MINIMAL_BOUNDARY_CLASSIFICATION.md)
-now organizes the two constructions into one conjecture.  Its exact cubic
-reduction proves that the weighted degree-three branch and the `(m,r)=(1,1)`
+The [tangent-map core](verified/TANGENT_MAP_CORE.md) supplies the weighted
+inverse pencil, generic degree, critical divisor, discriminant normalization,
+full Hessian Fitting divisor, and incidence form.
+
+The [minimal-boundary gateway and classification program](cancellation/MINIMAL_BOUNDARY_CLASSIFICATION.md)
+now defines eight predicates on a finite-normalization diagram: selected
+critical boundary, saturated link, boundary monotonicity, ledger completeness,
+puncture rank, primitive conormal, noncontraction, and chart
+straightenability.  The conditional implications from this package to a
+plane core and from a marked plane core to a suspension are theorems.  The
+conjectural step is that every numerically boundary-minimal map canonically
+supplies a diagram satisfying the package.
+
+Inside the two already identified branches, the exact cubic reduction is
+unconditional: the weighted degree-three branch and the `(m,r)=(1,1)`
 cancellation branch are both polynomially left--right equivalent to the
-foundational map.  Thus cubic uniqueness follows once the remaining
-suspension extraction, two-place ambient marking, and positive-chart
-label-extraction statements are proved.  The one-place cubic core marking is
-now automatic; an infinite toric `G_m` core atlas shows why the two-place
-marking still needs threefold boundary input.  On the positive branch,
-primitive quotient and Stein labels now imply the weighted chart, with
-polynomiality forcing its `-3/2` coefficient.  Extraction of those labels
-from the bare package is not assumed complete.
+foundational map.  The one-place cubic core marking is automatic; an
+infinite toric `G_m` core atlas shows why the two-place marking still needs
+threefold boundary input.  On the positive branch, primitive quotient and
+Stein labels imply the weighted chart, with polynomiality forcing its
+`-3/2` coefficient.  Thus the cubic calculation collapses the candidate
+branches but does not extract them from the canonical finite-normalization
+package.
 
 The [cubic normalization frontend](cancellation/CUBIC_NORMALIZATION_FRONTEND.md)
 now gives a second route which does not begin with a suspension.  The
@@ -345,8 +362,13 @@ The primary dependency chain is:
 11. `H1` — internal Hurwitz--LL compactification theorem.
 12. `R1`, `R2` — all-degree rank-two descent and parameter faithfulness.
 
-The exact scopes, dependencies, checkers, and review states live only in [`MATH_STATUS.json`](MATH_STATUS.json).  [STATUS.md](STATUS.md) is generated
-from it.  A checker is reproducibility evidence; it is not external review.
+The exact scopes, dependencies, checkers, proof types, and assurance states
+live only in [`MATH_STATUS.json`](MATH_STATUS.json). [STATUS.md](STATUS.md) is
+generated from it. Independent replay, formal verification, and external
+review are separate booleans. `artifact_hash` pins the registered checker
+content, while `software_lock` names the repository lock manifests used for
+its replay; neither field upgrades a claim's review status. False historical
+claims are first-class `falsified` entries rather than prose-only corrections.
 
 ## Main papers
 
@@ -478,9 +500,14 @@ frontiers:
   deck rigidity before reconstructing automorphisms.
 - `OP-RITT`: `HR12` now proves the exact all-degree codimension formula and
   completes the degree-eight and degree-twelve diagrams, including the
-  all-four Chebyshev intersection in degree twelve.  What remains is to extend
-  the explicit diagrams beyond degree twelve and restrict the H3 boundary
-  equations to their incidence components.
+  all-four Chebyshev intersection in degree twelve.  `HRSYNC` closes the
+  degree-thirty global all-six intersection and the primitive pairs
+  `{2,15}` and `{3,10}`.  The three transported pairs `{2,3}`, `{2,5}`, and
+  `{3,5}` remain uncertified, together with the uniform all-degree transport,
+  component-completeness, coherence, and boundary-gluing problems.  `HRCF`
+  now proves the all-degree common-right-factor uniqueness step over every
+  characteristic-zero base ring; the uniform gap is existence of the
+  terminal refinement through nonreduced Hessian thickenings.
 - `OP-RMIN`: the exact current intervals are
   `3<=r_cub<=17`, `3<=nu_cub<=18`,
   `3<=rho_HN,4<=37`, and `6<=n_HN,4<=42`.  Polynomial-gate BCW circuits
@@ -493,13 +520,15 @@ frontiers:
   stronger inverse-degree-nine claim is already false by van den Essen's
   exact dimension-five rank-three example of inverse degree thirteen; see the
   [restricted-minima frontier](extended-geometry/RESTRICTED_MINIMA_FRONTIER.md).
-- `OP-SUSP`: minimal-boundary classification.  Extract the primitive
-  quadratic conormal coefficient of the `G_m` critical boundary and the
-  coordinate-preserving suspension from the intrinsic Zariski--Main package,
-  together with the primitive quotient and Stein labels of the positive
-  chart.  Both cubic core markings are then automatic, both chart branches
-  are complete once their stated intrinsic labels are present, and the two
-  branches collapse to the foundational map in geometric degree three.
+- `OP-SUSP`: minimal-boundary gateway and classification.  Starting from a
+  numerically boundary-minimal canonical normalization, construct the
+  intrinsic finite-normalization diagram and prove its eight `MBPkg`
+  predicates.  In degree three this means extracting the
+  coordinate-preserving suspension, primitive conormal and noncontraction
+  marks, and positive chart-straightening labels.  The formal package-to-core
+  and marked-core-to-suspension implications are already separated in
+  `MBP1`; once the witness exists, the two cubic branches collapse to the
+  foundational map.
   Alternatively, the cubic-normalization frontend reduces uniqueness to a
   cubic fiber-minimality (equivalently no zero-dimensional flatness defect),
   affine-linearity of the intrinsic binary-cubic coefficient map, and

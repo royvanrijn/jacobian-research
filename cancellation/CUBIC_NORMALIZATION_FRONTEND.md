@@ -7,9 +7,10 @@ only possible failure of flatness is zero-dimensional, extracts the
 Deligne--Faddeev binary cubic when that defect is absent, and classifies the
 case in which the resulting coefficient morphism is affine-linear.
 
-The result does **not** prove the bare minimal-boundary classification
-conjecture.  It replaces the undifferentiated phrase “extract a suspension”
-by two concrete intrinsic obligations:
+The result does **not** make the proposed minimal-boundary gateway
+operational or prove the resulting classification conjecture.  It replaces
+one part of the undifferentiated phrase “extract a suspension” by two
+concrete intrinsic obligations:
 
 1. remove the zero-dimensional flatness defect of the finite normalization;
 2. prove that its binary-cubic coefficient morphism is affine-linear (or
@@ -1474,9 +1475,10 @@ foundational triple-root fiber.
 
 ## 4. What remains open
 
-Theorem 3.1 does not show that the minimal-boundary hypotheses imply all of
-its assumptions.  The cubic extraction problem is now split into exact
-tests:
+Theorem 3.1 does not construct the finite-normalization witness of
+`MINIMAL_BOUNDARY_CLASSIFICATION.md` or prove its eight predicates from an
+unmarked boundary-minimal map.  Within this finite-normalization frontend,
+the cubic extraction problem is split into exact tests:
 
 1. **point-flatness:** prove `Fitt_3^A(B)=A`, excluding a defect supported at
    finitely many target points.  Equivalently, prove cubic fiber-minimality

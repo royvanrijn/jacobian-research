@@ -171,7 +171,7 @@ Indeed, the two nontrivial bottom coordinates are
 \tag{8}
 \]
 
-The four relevant determinants are
+The four family-specific inputs are
 
 \[
  \det\frac{\partial(x,v,S)}{\partial(x,y,z)}=x^3,
@@ -185,16 +185,17 @@ The four relevant determinants are
  \det D\mu=-cC^3.
 \]
 
-Taking determinants in the square and using `C=x gamma` gives
+They form the weighted dictionary in the
+[boundary-cancelled incidence lemma](../cancellation/CONTROLLED_BOUNDARY_SUSPENSIONS.md#31-weighted-tangent-family).
+Indeed its ledger is the single identity
 
 \[
- (-cC^3)\det DG_H
- =(-c^2\gamma)(b_0x^3\gamma^2)
- =-b_0c^2C^3.
+ \gamma(b_0x^3\gamma^2)
+ =-\frac{b_0}{c}(-cC^3),
 \]
 
-Cancellation on the dense open `C!=0`, followed by polynomial continuation,
-yields
+because `C=x gamma`. The lemma, followed by the already established weighted
+polynomiality condition, now yields
 
 \[
  \boxed{\det DG_H=b_0c.}
@@ -256,56 +257,29 @@ normalization (4), and differentiating that restriction produces the Fitting
 divisor (5).  These are therefore different faces of one plane-core
 factorization, rather than separate features of the weighted construction.
 
-## A second suspension type: cancellation maps
+## The two reciprocal suspension types
 
-The cancellation construction has a parallel controlled-boundary core.  Put
-
-\[
- D(s,P,Q)=1-s(Q-Ps)^m,
-\qquad
- R(s,P,Q)=C\int_0^s D(t,P,Q)^r\,dt.
-\]
-
-For each fixed `P`, the polynomial plane map
+The standard cancellation and root-engineered quadratic-gauge families use
+the same lemma with a reciprocal source chart. In the first case the
+controlled divisor is
 
 \[
- \chi_{m,r;P}:\mathbb A^2_{s,Q}\longrightarrow\mathbb A^2_{Q,R},
- \qquad (s,Q)\longmapsto(Q,R(s,P,Q))
+ D=1-s(Q-Ps)^m,
 \]
 
-has
+the core exponent is `r`, the source chart contributes `D^{-r}`, and the
+finite jet congruence is the polynomiality condition. In the quadratic gauge
+the exponent is one, the marked-line core contributes `-2D`, the source
+chart contributes `D^{-1}`, and the coefficient-weight identity clears the
+denominators. Their complete dictionaries are now centralized in the
+[three-family incidence table](../cancellation/CONTROLLED_BOUNDARY_SUSPENSIONS.md#3-the-three-established-families-are-instances).
 
-\[
- \det D\chi_{m,r;P}=-C D(s,P,Q)^r.                       \tag{10}
-\]
-
-The full three-dimensional map is the family of these plane maps over `P`.
-Its source chart satisfies
-
-\[
- \det\frac{\partial(s,P,Q)}{\partial(x,y,z)}
- =-A^r=-D^{-r},
-\]
-
-whereas
-
-\[
- \det\frac{\partial(P,Q,R)}{\partial(s,P,Q)}
- =C D^r.
-\]
-
-Their product is `-C`.  Thus cancellation maps are a second, birational
-suspension type: a core loses the boundary power `D^r`, and a rational source
-chart contributes its inverse.  The finite cancellation condition on `h`
-is exactly what makes the resulting coordinate `R` polynomial back in
-`(x,y,z)`.
-
-This differs essentially from the weighted construction.  The weighted
-square uses polynomial vertical maps and a simple core ramification divisor;
-the cancellation chart is birational and cancels an arbitrary boundary
-power.  A broader classification problem is now concrete: classify
-controlled-boundary plane maps and their polynomial or birational
-constant-Jacobian suspensions.
-
-The full polynomiality and reconstruction theorem for this second type is in
-the [cancellation construction](../cancellation/CONSTRUCTION.md).
+This makes the broader classification problem concrete: the determinant is
+formal once the ledger is supplied. What remains is to classify controlled
+divisors, their marked critical normalizations, and the rational charts that
+admit polynomial algebraization. The full cancellation polynomiality and
+reconstruction theorem remains in the
+[cancellation construction](../cancellation/CONSTRUCTION.md); the prescribed
+collision fibres and `G_m` dual normalization of the second reciprocal type
+remain in the
+[quadratic-gauge theorem](../cancellation/ROOT_ENGINEERED_QUADRATIC_GAUGE.md).

@@ -9,7 +9,7 @@ questions which should not be conflated:
 3. classification of every reduced and nonreduced component by the
    coefficient-decorated Ritt 2-complex.
 
-The first is proved.  The second has three remaining pairs.  The third remains
+The first and second are proved.  The third remains
 open even though the six complete-decomposition charts of the Dickson braid
 are classified scheme-theoretically.
 
@@ -61,11 +61,13 @@ Four further factor-chart reductions certify the non-tree pairs
  \{5,6\},\ \{6,10\},\ \{6,15\},\ \{10,15\}
 \]
 
-with basis sizes `502, 189, 12, 96`.  Two primitive pairs have since been
+with basis sizes `502, 189, 12, 96`.  Two primitive pairs were then
 added.  A parity argument over arbitrary \(\mathbb Q\)-algebras proves
 \(\{2,15\}\), and exact reduction of the cubic free-module remainder proves
-\(\{3,10\}\) with basis size `184`.  Thus twelve of the fifteen
-degree-thirty pairs have exact characteristic-zero certificates.  The fast default
+\(\{3,10\}\) with basis size `184`.  Finally, transported model-coordinate
+reductions prove \(\{2,3\},\{2,5\},\{3,5\}\) with exact basis sizes
+`1677, 344, 1896`.  Thus all fifteen degree-thirty pairs have exact
+characteristic-zero certificates.  The fast default
 regression uses only the spanning tree; the four larger reductions have the
 separate replay target
 
@@ -73,15 +75,15 @@ separate replay target
 make audit-degree30-hessian-synchronization-pairs
 ```
 
-## 2. Exact remaining pair frontier
+## 2. Closed transported pair frontier
 
-After the nested certificate, the unclosed pairs are
+The final transported pairs were
 
-| outer cuts | common right degree | primitive Ritt core | first normal-form attack |
+| outer cuts | common right degree | primitive Ritt core | exact model chart |
 |---|---:|---:|---|
-| \(\{2,3\}\) | 5 | \(2\) versus \(3\), degree 6 | transport the complete degree-six collision through a generic quintic |
-| \(\{2,5\}\) | 3 | \(2\) versus \(5\), degree 10 | separate power and Dickson core ideals, then transport through a generic cubic |
-| \(\{3,5\}\) | 2 | \(3\) versus \(5\), degree 15 | separate power and Dickson core ideals, then transport through a generic quadratic |
+| \(\{2,3\}\) | 5 | \(2\) versus \(3\), degree 6 | five normal, six model-base coordinates; basis `1677` |
+| \(\{2,5\}\) | 3 | \(2\) versus \(5\), degree 10 | four normal, five power-base coordinates; basis `344` |
+| \(\{3,5\}\) | 2 | \(3\) versus \(5\), degree 15 | six normal, three power-base coordinates; basis `1896` |
 
 The primitive rows \(\{2,15\}\) and \(\{3,10\}\) are now closed by the
 quadratic parity lemma and cubic remainder certificate, respectively.  The
@@ -92,8 +94,13 @@ common right degree in the remaining table is
 \]
 
 Stripping the generic degree-\(r\) right factor produces the primitive core
-listed in the table.  This gives a finite componentwise problem rather than
-five unrelated ambient eliminations.
+listed in the table.  In each row, the Ritt parameters and common-right
+coefficients are recovered triangularly from leading source-chart
+coefficients.  The remaining source coefficients are graph-normal
+coordinates.  This is a polynomial coordinate change on the full source
+factor chart, not a restriction to one reduced component.  Singular's
+verified modular characteristic-zero algorithm reconstructs each rational
+basis and reduces the lift defect to zero.
 
 ## 3. Rejected raw attacks
 
@@ -185,18 +192,24 @@ The degree-thirty braid already shows that different paths can have the same
 normalization but different nilpotent structures.  These data, not only the
 reduced relation graph, are the coefficient decoration required on 2-cells.
 
-## 5. Completion criterion
+## 5. Remaining structural criterion
 
-The pairwise synchronization part of degree thirty is closed only after all
-of the following hold:
+Pairwise synchronization is closed.  Full coefficient-decorated
+relation-graph geometry still requires:
 
-- the three frontier pair defects have exact characteristic-zero membership
-  certificates;
 - the power/Dickson graph ideals exhaust every reduced pair component;
 - primary structures and conductors are compared on component overlaps;
 - the six-chart braid data glue independently of chart;
 - any off-chart all-cut components are excluded or classified.
 
-The first global synchronization obstruction has been removed.  The current
-frontier is now component completeness and scheme-theoretic coherence, not
-set-theoretic braid connectivity.
+The synchronization obstruction has been removed for every degree-thirty
+subintersection.  The current frontier is component classification and
+scheme-theoretic coherence, not equality of the canonical linear lifts.
+
+The structural reason for the three transported rows is now isolated in the
+[common-right-factor synchronization theorem](COMMON_RIGHT_FACTOR_SYNCHRONIZATION.md).
+Once normalized terminal factors of degree \(r>1\) exist over the base ring,
+their equality follows from the top \(r-1\) coefficients of the composite,
+and the linear defect vanishes formally.  Thus the all-degree transport
+frontier is precisely the lifting of the reduced gcd refinement through
+primary thickenings, not the subsequent comparison of two right factors.

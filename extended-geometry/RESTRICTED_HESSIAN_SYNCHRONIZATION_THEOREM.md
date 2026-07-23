@@ -250,30 +250,54 @@ and reduces the defect to zero.  Hence
 
 This is a universal ideal identity, not a sample-point or radical test.
 
-## 6. Updated degree-thirty frontier
+## 6. Degree thirty is pairwise exact
 
-The original five open pairs split as follows.
+The original five open pairs are now exact.
 
 | cuts | status | reason |
 |---|---|---|
 | \(\{2,15\}\) | exact | universal quadratic parity lemma |
 | \(\{3,10\}\) | exact | cubic free-module remainder certificate |
-| \(\{2,3\}\) | generically exact; scheme open | degree-six core transported through a quintic |
-| \(\{2,5\}\) | generically exact; scheme open | degree-ten core transported through a cubic |
-| \(\{3,5\}\) | generically exact; scheme open | degree-fifteen core transported through a quadratic |
+| \(\{2,3\}\) | exact | degree-six core transported through a quintic; basis size \(1677\) |
+| \(\{2,5\}\) | exact | degree-ten power core transported through a cubic; basis size \(344\) |
+| \(\{3,5\}\) | exact | degree-fifteen power core transported through a quadratic; basis size \(1896\) |
 
-Thus twelve of the fifteen degree-thirty pair memberships are now proved
-scheme-theoretically.  The remaining three all have a nontrivial common
-right decoration.  They would follow from the precise transport statement:
+The transported certificates use the Ritt parameters and the coefficients
+of the common right factor as base coordinates, with all remaining source
+factor coefficients replaced by graph-normal coordinates.  Each change is
+triangular with a polynomial inverse over \(\mathbb Q\), so reduction in the
+model chart is equivalent to membership on the full canonical source
+factor chart.  Singular's verified modular characteristic-zero algorithm
+reconstructs the rational bases and reduces each defect to zero.
 
-> **Required transport lemma.**  If two tame decomposable lifts differ by
-> a polynomial of degree below the common right degree, then the common
-> right factor furnished by Ritt theory on the reduced fiber lifts strongly
-> enough to force the difference to be a polynomial in that factor.
+The permanent checkers are:
 
-Over fields this follows indirectly from Theorem 2.1 and the ordinary
-greatest-common-right-component theorem.  Over nonreduced rings it is the
-unproved scheme-theoretic step.
+- [`verify_degree30_transported_23_synchronization.py`](../scripts/verify_degree30_transported_23_synchronization.py);
+- [`verify_degree30_transported_25_synchronization.py`](../scripts/verify_degree30_transported_25_synchronization.py);
+- [`verify_degree30_transported_35_synchronization.py`](../scripts/verify_degree30_transported_35_synchronization.py).
+
+Thus all fifteen degree-thirty pair memberships are proved
+scheme-theoretically.
+
+The rigidity half of the proposed all-degree transport statement is now
+elementary.  The
+[common-right-factor synchronization theorem](COMMON_RIGHT_FACTOR_SYNCHRONIZATION.md)
+proves over every \(\mathbb Q\)-algebra that if the two lifts possess
+normalized terminal factors of the same degree \(r>1\), then their top
+\(r-1\) coefficients force those factors to be equal.  A difference of
+degree below \(r\) is consequently constant, so a Hessian linear defect
+vanishes.
+
+The remaining uniform issue is existence, not uniqueness:
+
+> **Required refinement-lifting lemma.**  The greatest common right
+> component furnished by Ritt theory on each reduced generic fiber extends
+> to normalized terminal factors over the full possibly nonreduced Hessian
+> intersection.
+
+Ordinary Ritt theory cannot supply this statement before synchronization,
+and a reduced factor does not automatically lift through nilpotents.  Every
+degree-thirty instance nevertheless has an exact certificate.
 
 ## 7. Reproducible status
 
@@ -282,9 +306,10 @@ The rigorous result is now:
 > The square-free relation-graph hypothesis proves generic Hessian
 > synchronization in all degrees.  The stronger ideal-membership theorem is
 > proved when the relevant Hessian ideal is radical, for every primitive
-> quadratic edge, and for the degree-thirty cubic remainder edge.  It is not
-> yet proved for arbitrary primary thickenings transported through
-> singleton blocks.
+> quadratic edge, for the degree-thirty cubic remainder edge, and for every
+> degree-thirty transported pair.  It is not yet proved uniformly for
+> arbitrary primary thickenings transported through singleton blocks in all
+> degrees.
 
 The main external inputs are the algebraic
 [Abhyankar--Moh theorem](https://encyclopediaofmath.org/wiki/Abhyankar%E2%80%93Moh_theorem),

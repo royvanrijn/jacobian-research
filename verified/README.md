@@ -51,6 +51,10 @@ This directory contains the stable proof chain:
   exact stable-orbit classification on the coefficient-torus locus; an
   overlooked independent `P`-scaling makes the quotient dimension `N-4`,
   rather than `N-3`;
+- [Quadratic-gauge/cancellation stable intersection](QUADRATIC_CANCELLATION_STABLE_INTERSECTION.md):
+  the two families have exactly one common stable class, the foundational
+  cubic; the all-degree separation is certified independently by the
+  ramified-stratum Fitting support and by boundary-contact nilpotency;
 - [Incidence suspensions through degree four](INCIDENCE_SUSPENSION_DEGREE_FOUR_CLASSIFICATION.md):
   exact marked-line criterion and complete root-preserving,
   `P`-fibration-preserving affine rechart search; the cubic and quartic

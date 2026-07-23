@@ -1,0 +1,1040 @@
+{
+  "format": "cubic-gaussian-null-cone-closure-v1",
+  "field": "QQ",
+  "certificate": "literal reduced Groebner basis [1]",
+  "new_exact_chart_orbits": 20,
+  "five_weight_promotions": 3,
+  "five_weight_ordinary_charts_newly_closed": 10,
+  "six_weight_presentations": 14,
+  "six_weight_ordinary_charts_closed": 44,
+  "seven_weight_chart_orbits": 3,
+  "seven_weight_ordinary_charts_closed": 8,
+  "moment_cutoff": {
+    "five_weight": 8,
+    "six_weight": 8,
+    "seven_weight": 10
+  },
+  "theorem": "Together with the existing exact at-most-four-weight and five-weight certificates, every mixed-sign cubic coefficient support is excluded by moments through order ten.  Equivalently, the cubic torus null-cone ideal is contained in the radical of <M1,...,M10>.",
+  "records": [
+    {
+      "stratum": "five_weight_promotion",
+      "support": [
+        -3,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "chart": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "cutoff": 8,
+      "normalization_kind": "two_negative",
+      "normalization": {
+        "n3_0": 1,
+        "n1_0": 1
+      },
+      "selected_coefficients": [
+        "n3_0",
+        "n1_0",
+        "h0",
+        "p1_0",
+        "p2_0"
+      ],
+      "variables": [
+        "n1_1",
+        "h0",
+        "p1_0",
+        "p1_1",
+        "p2_0",
+        "rho"
+      ],
+      "equation_count": 8,
+      "localization_factor": "h0*p1_0*p2_0",
+      "second_moment_elimination": null,
+      "input_sha256": "f12aef69a794f55355166602a6595ec51465ee49a678496e256ce0ec7dff5c4c",
+      "field": "QQ",
+      "reduced_basis": [
+        "1"
+      ],
+      "elapsed_seconds": 0.209
+    },
+    {
+      "stratum": "five_weight_promotion",
+      "support": [
+        -3,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "chart": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "cutoff": 8,
+      "normalization_kind": "two_negative",
+      "normalization": {
+        "n3_0": 1,
+        "n1_0": 1
+      },
+      "selected_coefficients": [
+        "n3_0",
+        "n1_0",
+        "h0",
+        "p1_1",
+        "p2_0"
+      ],
+      "variables": [
+        "n1_1",
+        "h0",
+        "p1_0",
+        "p1_1",
+        "p2_0",
+        "rho"
+      ],
+      "equation_count": 8,
+      "localization_factor": "h0*p1_1*p2_0",
+      "second_moment_elimination": null,
+      "input_sha256": "e09eb4a1d13ad59b62edbd754a3bd18ff20ab82b581349c826e81c140c1f0d9a",
+      "field": "QQ",
+      "reduced_basis": [
+        "1"
+      ],
+      "elapsed_seconds": 0.108
+    },
+    {
+      "stratum": "five_weight_promotion",
+      "support": [
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "chart": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "cutoff": 8,
+      "normalization_kind": "two_negative",
+      "normalization": {
+        "n2_0": 1,
+        "n1_0": 1
+      },
+      "selected_coefficients": [
+        "n2_0",
+        "n1_0",
+        "h0",
+        "p1_0",
+        "p2_0"
+      ],
+      "variables": [
+        "n1_1",
+        "h0",
+        "p1_0",
+        "p1_1",
+        "rho"
+      ],
+      "equation_count": 7,
+      "localization_factor": "h0**3*p1_0 + 4*h0*n1_1*p1_0**2 + 12*h0*n1_1*p1_0*p1_1 + 2*h0*p1_0**2 + 4*h0*p1_0*p1_1",
+      "second_moment_elimination": {
+        "variable": "p2_0",
+        "solution": "-h0**2/4 - n1_1*p1_0 - 3*n1_1*p1_1 - p1_0/2 - p1_1"
+      },
+      "input_sha256": "e9e521d744672f4c6c440e557fd9b8fb5bca68c80fd7cd3f1094279e35b80695",
+      "field": "QQ",
+      "reduced_basis": [
+        "1"
+      ],
+      "elapsed_seconds": 0.227
+    },
+    {
+      "stratum": "six_weight",
+      "support": [
+        -3,
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "chart": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "cutoff": 8,
+      "normalization_kind": "mixed",
+      "normalization": {
+        "n3_0": 1,
+        "p1_0": 1
+      },
+      "selected_coefficients": [
+        "n3_0",
+        "n2_0",
+        "n1_0",
+        "h0",
+        "p1_0",
+        "p2_0"
+      ],
+      "variables": [
+        "n2_0",
+        "n1_0",
+        "n1_1",
+        "h0",
+        "p1_1",
+        "p2_0",
+        "rho"
+      ],
+      "equation_count": 8,
+      "localization_factor": "h0*n1_0*n2_0*p2_0",
+      "second_moment_elimination": null,
+      "input_sha256": "49fb6966d761658cd84dc81a0ceaf7a0ea0c4b12f9219050d97d8142eb6a3dec",
+      "field": "QQ",
+      "reduced_basis": [
+        "1"
+      ],
+      "elapsed_seconds": 3.443
+    },
+    {
+      "stratum": "six_weight",
+      "support": [
+        -3,
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "chart": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "cutoff": 8,
+      "normalization_kind": "mixed",
+      "normalization": {
+        "n3_0": 1,
+        "p1_1": 1
+      },
+      "selected_coefficients": [
+        "n3_0",
+        "n2_0",
+        "n1_0",
+        "h0",
+        "p1_1",
+        "p2_0"
+      ],
+      "variables": [
+        "n2_0",
+        "n1_0",
+        "n1_1",
+        "h0",
+        "p1_0",
+        "p2_0",
+        "rho"
+      ],
+      "equation_count": 8,
+      "localization_factor": "h0*n1_0*n2_0*p2_0",
+      "second_moment_elimination": null,
+      "input_sha256": "d506d3a7481db8b464f29f34dc43a4c309291c50550151394049198174746d7f",
+      "field": "QQ",
+      "reduced_basis": [
+        "1"
+      ],
+      "elapsed_seconds": 3.477
+    },
+    {
+      "stratum": "six_weight",
+      "support": [
+        -3,
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "chart": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "cutoff": 8,
+      "normalization_kind": "mixed",
+      "normalization": {
+        "n3_0": 1,
+        "p1_0": 1
+      },
+      "selected_coefficients": [
+        "n3_0",
+        "n2_0",
+        "n1_1",
+        "h0",
+        "p1_0",
+        "p2_0"
+      ],
+      "variables": [
+        "n2_0",
+        "n1_0",
+        "n1_1",
+        "h0",
+        "p1_1",
+        "p2_0",
+        "rho"
+      ],
+      "equation_count": 8,
+      "localization_factor": "h0*n1_1*n2_0*p2_0",
+      "second_moment_elimination": null,
+      "input_sha256": "d0c71d8564f20ace148af3e55b09f0abddeb55146b33cb96710cc8bbf2c46d54",
+      "field": "QQ",
+      "reduced_basis": [
+        "1"
+      ],
+      "elapsed_seconds": 3.073
+    },
+    {
+      "stratum": "six_weight",
+      "support": [
+        -3,
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "chart": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "cutoff": 8,
+      "normalization_kind": "mixed",
+      "normalization": {
+        "n3_0": 1,
+        "p1_1": 1
+      },
+      "selected_coefficients": [
+        "n3_0",
+        "n2_0",
+        "n1_1",
+        "h0",
+        "p1_1",
+        "p2_0"
+      ],
+      "variables": [
+        "n2_0",
+        "n1_0",
+        "n1_1",
+        "h0",
+        "p1_0",
+        "p2_0",
+        "rho"
+      ],
+      "equation_count": 8,
+      "localization_factor": "h0*n1_1*n2_0*p2_0",
+      "second_moment_elimination": null,
+      "input_sha256": "ed430f1962a43b2eceeda2cf2832d5c2c4af8a4172399c89ac4e621f296f927c",
+      "field": "QQ",
+      "reduced_basis": [
+        "1"
+      ],
+      "elapsed_seconds": 3.21
+    },
+    {
+      "stratum": "six_weight",
+      "support": [
+        -3,
+        -2,
+        -1,
+        0,
+        1,
+        3
+      ],
+      "chart": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "cutoff": 8,
+      "normalization_kind": "mixed",
+      "normalization": {
+        "n3_0": 1,
+        "p1_0": 1
+      },
+      "selected_coefficients": [
+        "n3_0",
+        "n2_0",
+        "n1_0",
+        "h0",
+        "p1_0",
+        "p3_0"
+      ],
+      "variables": [
+        "n2_0",
+        "n1_0",
+        "n1_1",
+        "h0",
+        "p1_1",
+        "p3_0",
+        "rho"
+      ],
+      "equation_count": 8,
+      "localization_factor": "h0*n1_0*n2_0*p3_0",
+      "second_moment_elimination": null,
+      "input_sha256": "29d3b95fd41155c9401fe7774912ad16a94fbccf1b10cfea603a3aac254580db",
+      "field": "QQ",
+      "reduced_basis": [
+        "1"
+      ],
+      "elapsed_seconds": 1.933
+    },
+    {
+      "stratum": "six_weight",
+      "support": [
+        -3,
+        -2,
+        -1,
+        0,
+        1,
+        3
+      ],
+      "chart": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "cutoff": 8,
+      "normalization_kind": "mixed",
+      "normalization": {
+        "n3_0": 1,
+        "p1_1": 1
+      },
+      "selected_coefficients": [
+        "n3_0",
+        "n2_0",
+        "n1_0",
+        "h0",
+        "p1_1",
+        "p3_0"
+      ],
+      "variables": [
+        "n2_0",
+        "n1_0",
+        "n1_1",
+        "h0",
+        "p1_0",
+        "p3_0",
+        "rho"
+      ],
+      "equation_count": 8,
+      "localization_factor": "h0*n1_0*n2_0*p3_0",
+      "second_moment_elimination": null,
+      "input_sha256": "421b23362fbfc289104a158a0e3457ca79e96dbb7609498d7d5c6964204c5dae",
+      "field": "QQ",
+      "reduced_basis": [
+        "1"
+      ],
+      "elapsed_seconds": 2.05
+    },
+    {
+      "stratum": "six_weight",
+      "support": [
+        -3,
+        -2,
+        -1,
+        0,
+        1,
+        3
+      ],
+      "chart": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "cutoff": 8,
+      "normalization_kind": "mixed",
+      "normalization": {
+        "n3_0": 1,
+        "p1_0": 1
+      },
+      "selected_coefficients": [
+        "n3_0",
+        "n2_0",
+        "n1_1",
+        "h0",
+        "p1_0",
+        "p3_0"
+      ],
+      "variables": [
+        "n2_0",
+        "n1_0",
+        "n1_1",
+        "h0",
+        "p1_1",
+        "p3_0",
+        "rho"
+      ],
+      "equation_count": 8,
+      "localization_factor": "h0*n1_1*n2_0*p3_0",
+      "second_moment_elimination": null,
+      "input_sha256": "0e778a27504ea0cd46cc1efc8c06e27bd315f045b8e676099ad2678980e1c5f3",
+      "field": "QQ",
+      "reduced_basis": [
+        "1"
+      ],
+      "elapsed_seconds": 1.921
+    },
+    {
+      "stratum": "six_weight",
+      "support": [
+        -3,
+        -2,
+        -1,
+        0,
+        1,
+        3
+      ],
+      "chart": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "cutoff": 8,
+      "normalization_kind": "mixed",
+      "normalization": {
+        "n3_0": 1,
+        "p1_1": 1
+      },
+      "selected_coefficients": [
+        "n3_0",
+        "n2_0",
+        "n1_1",
+        "h0",
+        "p1_1",
+        "p3_0"
+      ],
+      "variables": [
+        "n2_0",
+        "n1_0",
+        "n1_1",
+        "h0",
+        "p1_0",
+        "p3_0",
+        "rho"
+      ],
+      "equation_count": 8,
+      "localization_factor": "h0*n1_1*n2_0*p3_0",
+      "second_moment_elimination": null,
+      "input_sha256": "fad16331adf2286ccc2eadeb299a1164ad546950b98fb85e177a40b9410935e0",
+      "field": "QQ",
+      "reduced_basis": [
+        "1"
+      ],
+      "elapsed_seconds": 1.903
+    },
+    {
+      "stratum": "six_weight",
+      "support": [
+        -3,
+        -2,
+        -1,
+        0,
+        2,
+        3
+      ],
+      "chart": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "cutoff": 8,
+      "normalization_kind": "mixed",
+      "normalization": {
+        "n3_0": 1,
+        "p2_0": 1
+      },
+      "selected_coefficients": [
+        "n3_0",
+        "n2_0",
+        "n1_0",
+        "h0",
+        "p2_0",
+        "p3_0"
+      ],
+      "variables": [
+        "n2_0",
+        "n1_0",
+        "n1_1",
+        "h0",
+        "p3_0",
+        "rho"
+      ],
+      "equation_count": 8,
+      "localization_factor": "h0*n1_0*n2_0*p3_0",
+      "second_moment_elimination": null,
+      "input_sha256": "5ccf760033e25c2360c85599c7b7a0f2107783bf9763d740038b032b3011017f",
+      "field": "QQ",
+      "reduced_basis": [
+        "1"
+      ],
+      "elapsed_seconds": 0.108
+    },
+    {
+      "stratum": "six_weight",
+      "support": [
+        -3,
+        -2,
+        -1,
+        0,
+        2,
+        3
+      ],
+      "chart": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "cutoff": 8,
+      "normalization_kind": "mixed",
+      "normalization": {
+        "n3_0": 1,
+        "p2_0": 1
+      },
+      "selected_coefficients": [
+        "n3_0",
+        "n2_0",
+        "n1_1",
+        "h0",
+        "p2_0",
+        "p3_0"
+      ],
+      "variables": [
+        "n2_0",
+        "n1_0",
+        "n1_1",
+        "h0",
+        "p3_0",
+        "rho"
+      ],
+      "equation_count": 8,
+      "localization_factor": "h0*n1_1*n2_0*p3_0",
+      "second_moment_elimination": null,
+      "input_sha256": "45c7072c4cc4642f8d34f06cc50f4397301e0f8238e4351f26270dfd94efce09",
+      "field": "QQ",
+      "reduced_basis": [
+        "1"
+      ],
+      "elapsed_seconds": 0.097
+    },
+    {
+      "stratum": "six_weight",
+      "support": [
+        -3,
+        -2,
+        -1,
+        1,
+        2,
+        3
+      ],
+      "chart": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "cutoff": 8,
+      "normalization_kind": "mixed",
+      "normalization": {
+        "n3_0": 1,
+        "p1_0": 1
+      },
+      "selected_coefficients": [
+        "n3_0",
+        "n2_0",
+        "n1_0",
+        "p1_0",
+        "p2_0",
+        "p3_0"
+      ],
+      "variables": [
+        "n2_0",
+        "n1_0",
+        "n1_1",
+        "p1_1",
+        "p2_0",
+        "p3_0",
+        "rho"
+      ],
+      "equation_count": 8,
+      "localization_factor": "n1_0*n2_0*p2_0*p3_0",
+      "second_moment_elimination": null,
+      "input_sha256": "2c240a8d633322e53b90cfb9425fa9f055c2fb5c3fc3c9203095442cfec6e509",
+      "field": "QQ",
+      "reduced_basis": [
+        "1"
+      ],
+      "elapsed_seconds": 2.867
+    },
+    {
+      "stratum": "six_weight",
+      "support": [
+        -3,
+        -2,
+        -1,
+        1,
+        2,
+        3
+      ],
+      "chart": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "cutoff": 8,
+      "normalization_kind": "mixed",
+      "normalization": {
+        "n3_0": 1,
+        "p1_1": 1
+      },
+      "selected_coefficients": [
+        "n3_0",
+        "n2_0",
+        "n1_0",
+        "p1_1",
+        "p2_0",
+        "p3_0"
+      ],
+      "variables": [
+        "n2_0",
+        "n1_0",
+        "n1_1",
+        "p1_0",
+        "p2_0",
+        "p3_0",
+        "rho"
+      ],
+      "equation_count": 8,
+      "localization_factor": "n1_0*n2_0*p2_0*p3_0",
+      "second_moment_elimination": null,
+      "input_sha256": "16af54565b263421d35f988e83c8b63579d84e87bdfa2a2cbee1e2f2311f2cab",
+      "field": "QQ",
+      "reduced_basis": [
+        "1"
+      ],
+      "elapsed_seconds": 2.921
+    },
+    {
+      "stratum": "six_weight",
+      "support": [
+        -3,
+        -2,
+        -1,
+        1,
+        2,
+        3
+      ],
+      "chart": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "cutoff": 8,
+      "normalization_kind": "mixed",
+      "normalization": {
+        "n3_0": 1,
+        "p1_0": 1
+      },
+      "selected_coefficients": [
+        "n3_0",
+        "n2_0",
+        "n1_1",
+        "p1_0",
+        "p2_0",
+        "p3_0"
+      ],
+      "variables": [
+        "n2_0",
+        "n1_0",
+        "n1_1",
+        "p1_1",
+        "p2_0",
+        "p3_0",
+        "rho"
+      ],
+      "equation_count": 8,
+      "localization_factor": "n1_1*n2_0*p2_0*p3_0",
+      "second_moment_elimination": null,
+      "input_sha256": "f026fca94f7084699150de81af4cae6370355ab74bcb0345c0e8051ceca53fca",
+      "field": "QQ",
+      "reduced_basis": [
+        "1"
+      ],
+      "elapsed_seconds": 2.874
+    },
+    {
+      "stratum": "six_weight",
+      "support": [
+        -3,
+        -2,
+        -1,
+        1,
+        2,
+        3
+      ],
+      "chart": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "cutoff": 8,
+      "normalization_kind": "mixed",
+      "normalization": {
+        "n3_0": 1,
+        "p1_1": 1
+      },
+      "selected_coefficients": [
+        "n3_0",
+        "n2_0",
+        "n1_1",
+        "p1_1",
+        "p2_0",
+        "p3_0"
+      ],
+      "variables": [
+        "n2_0",
+        "n1_0",
+        "n1_1",
+        "p1_0",
+        "p2_0",
+        "p3_0",
+        "rho"
+      ],
+      "equation_count": 8,
+      "localization_factor": "n1_1*n2_0*p2_0*p3_0",
+      "second_moment_elimination": null,
+      "input_sha256": "91971b0c898c388fae8d2c66bff0bbe82972e3e557028dd8417c78274bbfab79",
+      "field": "QQ",
+      "reduced_basis": [
+        "1"
+      ],
+      "elapsed_seconds": 2.917
+    },
+    {
+      "stratum": "seven_weight",
+      "support": [
+        -3,
+        -2,
+        -1,
+        0,
+        1,
+        2,
+        3
+      ],
+      "chart": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "cutoff": 10,
+      "normalization_kind": "two_negative",
+      "normalization": {
+        "n3_0": 1,
+        "n2_0": 1
+      },
+      "selected_coefficients": [
+        "n3_0",
+        "n2_0",
+        "n1_0",
+        "h0",
+        "p1_0",
+        "p2_0",
+        "p3_0"
+      ],
+      "variables": [
+        "n1_0",
+        "n1_1",
+        "h0",
+        "p1_0",
+        "p1_1",
+        "p2_0",
+        "p3_0",
+        "rho"
+      ],
+      "equation_count": 10,
+      "localization_factor": "h0*n1_0*p1_0*p2_0*p3_0",
+      "second_moment_elimination": null,
+      "input_sha256": "b0ffe2661de8d59a11cfc768f317bc94b7a6d48e21e3fc8c8a8cf1d32ae4ebe9",
+      "field": "QQ",
+      "reduced_basis": [
+        "1"
+      ],
+      "elapsed_seconds": 31.418
+    },
+    {
+      "stratum": "seven_weight",
+      "support": [
+        -3,
+        -2,
+        -1,
+        0,
+        1,
+        2,
+        3
+      ],
+      "chart": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "cutoff": 10,
+      "normalization_kind": "two_negative",
+      "normalization": {
+        "n3_0": 1,
+        "n2_0": 1
+      },
+      "selected_coefficients": [
+        "n3_0",
+        "n2_0",
+        "n1_0",
+        "h0",
+        "p1_1",
+        "p2_0",
+        "p3_0"
+      ],
+      "variables": [
+        "n1_0",
+        "n1_1",
+        "h0",
+        "p1_0",
+        "p1_1",
+        "p2_0",
+        "p3_0",
+        "rho"
+      ],
+      "equation_count": 10,
+      "localization_factor": "h0*n1_0*p1_1*p2_0*p3_0",
+      "second_moment_elimination": null,
+      "input_sha256": "90eb004ef9857a09a3b445171970f99098c0f4843f7a8a2c0daabd9256925f99",
+      "field": "QQ",
+      "reduced_basis": [
+        "1"
+      ],
+      "elapsed_seconds": 33.878
+    },
+    {
+      "stratum": "seven_weight",
+      "support": [
+        -3,
+        -2,
+        -1,
+        0,
+        1,
+        2,
+        3
+      ],
+      "chart": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "cutoff": 10,
+      "normalization_kind": "two_negative",
+      "normalization": {
+        "n3_0": 1,
+        "n2_0": 1
+      },
+      "selected_coefficients": [
+        "n3_0",
+        "n2_0",
+        "n1_1",
+        "h0",
+        "p1_1",
+        "p2_0",
+        "p3_0"
+      ],
+      "variables": [
+        "n1_0",
+        "n1_1",
+        "h0",
+        "p1_0",
+        "p1_1",
+        "p2_0",
+        "p3_0",
+        "rho"
+      ],
+      "equation_count": 10,
+      "localization_factor": "h0*n1_1*p1_1*p2_0*p3_0",
+      "second_moment_elimination": null,
+      "input_sha256": "568b1ccb7027a17b73b537007eef5ee8d96e97e27832c9234284dba0168eaf5c",
+      "field": "QQ",
+      "reduced_basis": [
+        "1"
+      ],
+      "elapsed_seconds": 26.982
+    }
+  ]
+}

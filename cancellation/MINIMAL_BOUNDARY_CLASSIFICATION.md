@@ -1,14 +1,24 @@
-# Minimal-boundary Keller classification
+# Minimal-boundary Keller classification program
 
-This note states the central classification target for the two suspension
-mechanisms in this repository and proves the degree-three reduction that is
-available before the final chart theorems.  It is deliberately split into:
+This note states the central structural conjecture connecting the two
+suspension mechanisms in this repository.  It also records exactly what is
+conditional and proves the degree-three reduction available before the
+missing package-extraction theorem.  The logical layers are:
 
-1. an intrinsic conjecture about arbitrary nonproper Keller maps;
-2. the conditional suspension theorem already supplied by the log and
-   one-boundary chart results;
-3. an unconditional calculation showing that the two resulting branches
-   have the same unique model in geometric degree three.
+1. eight formal predicates on a finite-normalization diagram and a
+   conjecture that numerically minimal maps canonically satisfy them;
+2. conditional chart theorems that apply once a controlled suspension and
+   its boundary markings have been extracted; and
+3. an unconditional calculation showing that the two candidate branches
+   have the same model in geometric degree three.
+
+The first layer is now a list of named predicates.  This removes the earlier
+ambiguity in which “minimal-boundary” sometimes meant a numerical property
+of the canonical normalization and sometimes meant all of the geometry one
+hoped to extract from it.  The predicates are operational once a
+finite-normalization diagram has been supplied.  What remains conjectural is
+that an arbitrary numerically minimal map canonically supplies such a
+diagram.
 
 Work over an algebraically closed field `k` of characteristic zero.  Two
 polynomial maps `F,G:A^3 -> A^3` are **left--right equivalent** if
@@ -26,7 +36,7 @@ for polynomial automorphisms `L,R` of the target and source.  Write
 
 This degree is invariant under polynomial left--right equivalence.
 
-## 1. The intrinsic minimal-boundary package
+## 1. Finite-normalization diagrams and eight predicates
 
 For a dominant quasi-finite map `F:U=A^3 -> Y=A^3`, let
 
@@ -39,68 +49,382 @@ j_F:U\hookrightarrow\bar X_F,\qquad
 
 The finite cover, the distinguished affine open, its boundary primes, their
 valuations, ramification and residue degrees, critical Fitting ideals, and
-scheme intersections form the intrinsic Zariski--Main package.  This package
-is functorial under polynomial left--right equivalence by `S1`; none of its
-markings may be chosen from a preferred formula for `F`.
+scheme intersections form the intrinsic Zariski--Main object
+`\mathcal L(F)`.  It is functorial under polynomial left--right equivalence
+by `S1`.
 
-The phrase **minimal-boundary hypotheses** in the conjecture below means:
+### Definition 1.1 -- finite-normalization diagram
 
-1. the package selects one geometrically integral rational critical-boundary
-   normalization `E`;
-2. the affine links cut out by its height-one boundary primes are saturated:
-   the two coordinate rings identify after inverting exactly the declared
-   prime equations, including saturation of their zero and pole supports;
-3. every positive-oriented link is boundary-monotone, so every affine target
-   coordinate has nonnegative valuation at the corresponding source
-   boundary;
-4. the smooth completion of `E` has at most two places outside `E`;
-5. the divisor ledger is minimal: no unrecorded divisorial valuation occurs
-   on a normal graph model, and deleting the recorded boundary destroys the
-   saturated link or the ledger.
-
-The word “intrinsic” is essential.  Conditions imposed only after choosing
-coordinates on a known weighted or cancellation formula would make the
-classification circular.
-
-Because a positive-dimensional affine curve is not proper, a smooth rational
-`E` in (4) has either one or two places.  Over `k` these cases are
+A **finite-normalization diagram** `\mathscr D` over `F` is the canonical
+object `\mathcal L(F)` together with the following finite witness:
 
 \[
-E\simeq\mathbb A^1\qquad\text{or}\qquad E\simeq\mathbb G_m.
+\mathscr D=
+(\mathcal L(F),q_X,q_Y,\Phi,\{(R_i,a_i;S_i,d_i)\}_i,
+ \Gamma,\mathcal V,E,\tau).
 \tag{1.2}
 \]
 
-## 2. Central conjecture
+Here `q_X,q_Y` and `\Phi` form a commuting rational quotient square with
+normal affine plane core `\Phi`, `(R_i,a_i;S_i,d_i)` are its affine
+height-one links inside the relevant function fields, `\Gamma` is the
+normalization of the closure of the graphs of all rational arrows,
+`\mathcal V` is a finite list of prime divisors on `\Gamma`, `E` is the
+normalization of the selected reduced critical curve of `\Phi`, and `\tau`
+is a conormal class induced by the completed stratum maps of
+`\mathcal L(F)`.
 
-### Minimal-boundary classification conjecture
+An isomorphism of diagrams must preserve every displayed arrow, prime,
+valuation, and completed stratum map.  The witness is **intrinsic** if its
+isomorphism class is fixed by every automorphism of `\mathcal L(F)` and is
+functorial under isomorphisms of canonical finite-normalization objects.
+Thus “there exists a preferred coordinate formula” is not an intrinsic
+witness.  Each predicate below is a property of (1.2); the open extraction
+problem is the existence and intrinsicness of the witness.
 
-Let `F:A^3 -> A^3` be a nonproper Keller map whose intrinsic Zariski--Main
-package satisfies the minimal-boundary hypotheses of Section 1.  Then `F` is
-polynomially left--right equivalent to at least one of the following
-suspension types:
+Write
 
-1. a **weighted tangent suspension**, whose marked plane core is
-   \[
-   (W,s)\longmapsto (s,Ws-H(W));
-   \tag{2.1}
-   \]
-2. a **cancellation suspension**, whose plane core over the parameter `P` is
-   \[
-   (s,Q)\longmapsto
-   \left(
-     Q,\,
-     C\int_0^s\{1-t(Q-Pt)^m\}^r\,dt
-   \right),
-   \qquad m,r\ge1.
-   \tag{2.2}
-   \]
+\[
+\mathfrak r_F=\operatorname{Fitt}_0^B\Omega_{B/A},\qquad
+\partial_F=(\bar X_F\setminus U)_{\mathrm{red}},
+\tag{1.3}
+\]
 
-The two alternatives can coincide in geometric degree three.  In every
-noncubic clean case their intrinsic boundary packages distinguish them.
+where `A=\mathcal O(Y)` and `B=\mathcal O(\bar X_F)`.
 
-This is stronger than the proved marked-core theorem.  In particular, the
-conjecture asserts that the markings needed to recognize (2.1)--(2.2) are
-extracted from (1.1), rather than supplied as external coordinates.
+### Definition 1.2 -- selected critical boundary
+
+Let `D_*` be the boundary prime in (1.2) whose completed stratum map induces
+`E`.  Define
+
+\[
+\operatorname{SCB}(\mathscr D)
+\Longleftrightarrow
+\begin{cases}
+D_*\subset\partial_F\cap V(\mathfrak r_F),\\
+\overline{q_X(D_*)}\subset\operatorname{Crit}(\Phi),\\
+\{D\in\operatorname{Irr}(\partial_F):
+ D\subset V(\mathfrak r_F),\
+ \overline{q_X(D)}=\overline{q_X(D_*)}\}=\{D_*\},\\
+\sigma(D_*)\text{ is fixed by }\operatorname{Aut}\mathcal L(F).
+\end{cases}
+\tag{1.4}
+\]
+
+Here `\sigma(D)` is the finite signature consisting of the color, ramification
+index, residue extension, different order, and completed incidence maps
+already contained in `\mathcal L(F)`.  Thus `SCB` is a uniqueness and
+invariance test on finite-normalization data; it is not permission to choose
+the boundary component visible in a desired normal form.
+
+### Definition 1.3 -- saturated link
+
+For a declared link `(R,a;S,d)`, put
+
+\[
+L=R[a^{-1}]=S[d^{-1}].
+\tag{1.5}
+\]
+
+It is **saturated** when `R,S` are normal affine UFDs with scalar units,
+`a,d` are prime, and
+
+\[
+\begin{aligned}
+&L^*/k^*\simeq\mathbb Z,\\
+&\{\mathfrak p\in\operatorname{Ht}_1(R):v_{\mathfrak p}(d)\ne0\}
+  =\{(a)\},\\
+&\{\mathfrak q\in\operatorname{Ht}_1(S):v_{\mathfrak q}(a)\ne0\}
+  =\{(d)\}.
+\end{aligned}
+\tag{1.6}
+\]
+
+Define `\operatorname{SAT}(\mathscr D)` to mean that (1.5)--(1.6) hold for
+every declared link.  The induced automorphism of the rank-one unit lattice
+then gives
+
+\[
+d=c\,a^\varepsilon,\qquad c\in k^*,\quad
+\varepsilon\in\{1,-1\}.
+\tag{1.7}
+\]
+
+This equation defines the orientation; no separate prose choice of
+orientation is allowed.
+
+### Definition 1.4 -- boundary monotonicity
+
+A saturated link is **forward boundary-monotone** when
+
+\[
+v_{(a)}(f)\ge0\quad\text{for every }f\in S.
+\tag{1.8}
+\]
+
+It suffices to test a finite algebra generating set of `S`.  Define
+`\operatorname{BM}(\mathscr D)` by requiring (1.8) for every link with
+`\varepsilon=1`, and the symmetric condition for every reversed
+positive-oriented link.  Equivalently, the corresponding positive rational
+chart extends across its declared boundary by normality.
+
+### Definition 1.5 -- ledger completeness
+
+On `\Gamma`, let `\mathscr R(\mathscr D)` be the union of the strict
+transforms of the declared source, target, and core divisors and all primes
+in `\mathcal V`.  Define `\operatorname{LC}(\mathscr D)` by
+
+\[
+\begin{aligned}
+\operatorname{Exc}(\Gamma)&\subset\mathscr R(\mathscr D),\\
+\operatorname{Supp}\bigl(
+ |R_{q_X}|+|q_X^*R_\Phi|+|F^*R_{q_Y}|
+\bigr)&\subset\mathscr R(\mathscr D),\\
+\operatorname{coeff}_V
+\bigl(R_{q_X}+q_X^*R_\Phi-F^*R_{q_Y}\bigr)&=0
+\quad\text{for every prime }V\subset\Gamma,
+\end{aligned}
+\tag{1.9}
+\]
+
+and by requiring every member of `\mathcal V` to occur either as an
+exceptional prime, a localization boundary, or with nonzero coefficient in
+one of the three absolute divisors in (1.9).  Thus a recorded prime cannot
+be deleted and an unrecorded Rees valuation cannot be hidden by cancellation
+in the signed equality.  On a `Q`-factorial graph, the first line is the
+finite relative-Picard-rank audit of Proposition 3.1 in the one-boundary
+chart note.
+
+### Definition 1.6 -- puncture rank
+
+Let `\widetilde E` be the smooth projective completion of `E` and put
+`P_E=\widetilde E\setminus E`.  The **puncture rank** is
+
+\[
+\operatorname{prk}(\mathscr D)
+=\operatorname{rank}_{\mathbb Z}
+  \bigl(\mathcal O(E)^*/k^*\bigr).
+\tag{1.10}
+\]
+
+When `E` is smooth rational,
+
+\[
+\operatorname{prk}(\mathscr D)=|P_E|-1.
+\tag{1.11}
+\]
+
+The minimal-boundary predicate is `\operatorname{PR}_{\le1}(\mathscr D)`,
+meaning that `E` is geometrically integral and smooth rational and
+`\operatorname{prk}(\mathscr D)\le1`.  Hence
+
+\[
+E\simeq\mathbb A^1\quad\text{or}\quad E\simeq\mathbb G_m.
+\tag{1.12}
+\]
+
+### Definition 1.7 -- primitive conormal
+
+Let `I_*` be the ideal of the strict transform of `D_*` on `\Gamma` and
+
+\[
+\mathcal N_*=
+\left((I_*/I_*^2)/\operatorname{tors}\right)^{**}.
+\tag{1.13}
+\]
+
+The completed stratum map gives the marked class
+`\tau\in H^0(D_*,\mathcal N_*)` and its residue coefficient
+`\zeta_\tau\in k(E)`.  It is **primitive** when
+
+\[
+\left(\mathcal O_{D_*}\tau\right)^{\mathrm{sat}}
+=\mathcal N_*,
+\qquad
+\operatorname{Nil}\mathcal O_{\pi^{-1}(y)}
+=\mathcal O_{\pi^{-1}(y)}\bar\tau
+\quad\text{for every recorded collision point }y.
+\tag{1.14}
+\]
+
+The first equality is the height-one content test; the second is its
+closed-collision specialization.  In addition require
+
+\[
+\mathcal O(E)=k[\zeta_\tau]\quad\text{if }\operatorname{prk}=0,
+\qquad
+[\zeta_\tau]\text{ generates }\mathcal O(E)^*/k^*
+\quad\text{if }\operatorname{prk}=1.
+\tag{1.14a}
+\]
+
+Define `\operatorname{PC}(\mathscr D)` by (1.14)--(1.14a).  In the
+reciprocal cubic branch it is exactly the primitive quadratic conormal
+coefficient; in the flat cubic frontend it is cotangent cyclicity.
+
+### Definition 1.8 -- noncontraction
+
+The selected boundary is **noncontracted** by the quotient when
+
+\[
+\operatorname{trdeg}_k
+\operatorname{Frac}\!\left(
+\operatorname{im}\{\mathcal O(E)\longrightarrow k(D_*)\}
+\right)=1.
+\tag{1.15}
+\]
+
+Define `\operatorname{NC}(\mathscr D)` by (1.15).  Equivalently,
+`D_*\dashrightarrow E` is dominant.  This is a residue-field calculation;
+rationality or the number of punctures does not imply it.
+
+### Definition 1.9 -- chart straightenability
+
+Let `\mathscr D_{\mathrm{wt}}(H,b)` and
+`\mathscr D_{\mathrm{can}}(m,r,C)` denote the fully marked
+finite-normalization diagrams of the weighted and cancellation
+constructions, and let `\operatorname{Ch}(\mathscr D)` retain only the
+affine chart rings and arrows, their declared boundary equations, and the
+marked graph neighborhoods of those boundaries.  Define
+
+\[
+\operatorname{CS}(\mathscr D)
+\Longleftrightarrow
+\begin{cases}
+\operatorname{Ch}(\mathscr D)\simeq
+ \operatorname{Ch}(\mathscr D_{\mathrm{wt}}(H,b))
+  &\text{if every link has }\varepsilon=1,\\
+\operatorname{Ch}(\mathscr D)\simeq
+ \operatorname{Ch}(\mathscr D_{\mathrm{can}}(m,r,C))
+  &\text{if a selected link has }\varepsilon=-1,
+\end{cases}
+\tag{1.16}
+\]
+
+where the isomorphism is induced by polynomial source and target
+automorphisms and preserves `q_X,q_Y,D_*,E,\tau` and the divisor list
+`\mathcal V`.  Formula (1.16) is an existence predicate in the category of
+marked diagrams, not rational conjugacy on the common principal open.
+
+Finally set
+
+\[
+\begin{aligned}
+\operatorname{CorePkg}(\mathscr D)
+&=\operatorname{SCB}\wedge\operatorname{SAT}\wedge
+  \operatorname{BM}\wedge\operatorname{LC}\wedge
+  \operatorname{PR}_{\le1},\\
+\operatorname{PlanePkg}(\mathscr D)
+&=\operatorname{CorePkg}\wedge\operatorname{PC}\wedge
+  \operatorname{NC},\\
+\operatorname{MarkPkg}(\mathscr D)
+&=\operatorname{PC}\wedge\operatorname{NC}\wedge
+  \operatorname{CS},\\
+\operatorname{MBPkg}(\mathscr D)
+&=\operatorname{CorePkg}(\mathscr D)\wedge
+  \operatorname{MarkPkg}(\mathscr D).
+\end{aligned}
+\tag{1.17}
+\]
+
+No later theorem uses the bare phrase “minimal boundary” as a hypothesis.
+
+## 2. Theorems and conjecture
+
+### Theorem 2.1 -- package implies plane core
+
+If an intrinsic finite-normalization diagram `\mathscr D` satisfies
+`\operatorname{PlanePkg}(\mathscr D)`, then its marked plane core is
+polynomially left--right equivalent to at least one of the forms
+
+\[
+(W,s)\longmapsto(s,Ws-H(W))
+\tag{2.1}
+\]
+
+or
+
+\[
+(s,Q)\longmapsto
+\left(
+Q,\,
+C\int_0^s\{1-t(Q-Pt)^m\}^r\,dt
+\right),
+\qquad m,r\ge1.
+\tag{2.2}
+\]
+
+#### Proof
+
+`SAT` gives the two signs (1.7), `BM` extends every positive chart, and `LC`
+excludes a hidden graph divisor or target ledger.  By `PR_{\le1}`, the
+critical normalization is `A^1` or `G_m`.  `PC` supplies the primitive
+residue/conormal marking and `NC` rules out contraction of the invariant
+boundary.  The marked `A^1/G_m` core theorem in
+[`LOG_GEOMETRY_OF_SUSPENSIONS.md`](LOG_GEOMETRY_OF_SUSPENSIONS.md), with the
+finite graph audit of
+[`ONE_BOUNDARY_CHART_CLASSIFICATION.md`](ONE_BOUNDARY_CHART_CLASSIFICATION.md),
+then gives (2.1)--(2.2).  QED
+
+### Theorem 2.2 -- plane core plus suspension marking implies suspension
+
+Suppose the plane core of `\mathscr D` is one of (2.1)--(2.2) and
+`\operatorname{MarkPkg}(\mathscr D)` holds.  Then `F` is polynomially
+left--right equivalent respectively to a weighted tangent suspension or a
+cancellation suspension.
+
+#### Proof
+
+In the two-place case, `PC` and `NC` are the transverse saturation and
+noncontraction hypotheses of the completed reciprocal-branch theorem; its
+valuation straightening and unsliced Hensel argument produce the
+cancellation suspension.  In the one-place case, `PC` supplies the marked
+quotient tower and `CS` is precisely polynomial weighted-chart
+straightenability.  Because the isomorphism in (1.16) preserves the quotient
+and conormal marking, it lifts the plane-core equivalence to the full
+threefold diagram.  QED
+
+These are conditional theorems with finite predicates.  Neither theorem says
+that an unmarked canonical normalization supplies the witness (1.2).
+
+### Definition 2.3 -- numerical boundary minimality
+
+Let `B_F` be the reduced union of the codimension-one branch divisors of
+`\pi` and the divisorial images of `\partial_F`.
+For a nonproper Keller map of fixed geometric degree `n`, define
+
+\[
+\mu(F)=
+\left(
+\#\operatorname{Irr}(B_F),\
+\#\operatorname{Irr}(\partial_F),\
+\sum_{D\subset\partial_F}
+ \operatorname{ord}_D(\mathfrak r_F)
+\right)\in\mathbb N^3,
+\tag{2.3}
+\]
+
+ordered lexicographically.  The map is **boundary-minimal in degree `n`** if
+`\mu(F)` is minimal among nonproper degree-`n` Keller maps.  Every term in
+(2.3) belongs to the canonical finite-normalization object and is invariant
+under polynomial left--right equivalence and affine stabilization.  This
+definition does not contain any of the eight predicates.
+
+### Conjecture 2.4 -- minimal maps satisfy the package
+
+Every boundary-minimal nonproper Keller map admits a unique intrinsic
+finite-normalization diagram `\mathscr D` satisfying
+
+\[
+\boxed{\operatorname{MBPkg}(\mathscr D).}
+\tag{2.4}
+\]
+
+Theorems 2.1 and 2.2 would then classify it as a weighted tangent or
+cancellation suspension.  The two alternatives coincide in geometric degree
+three.  The conjectural content is exactly the existence, uniqueness, and
+verification of the marked witness; the implications after the witness are
+theorems.
 
 ## 3. What the repository already proves
 
@@ -175,16 +499,19 @@ In the positive branch, the plane core is known but an arbitrary positive
 polynomial vertical chart has not been straightened to the explicit weighted
 formulas.  The genuinely open implications are therefore:
 
-1. **suspension and two-place marking extraction:** recover the
+1. **diagram extraction:** prove that numerical boundary minimality
+   canonically produces the witness (1.2), then verify `SCB`, `SAT`, `BM`,
+   `LC`, and `PR_{\le1}` on that witness;
+2. **suspension and two-place marking extraction:** recover the
    coordinate-preserving core from the Zariski--Main package and, in the
    `G_m` branch, identify its quadratic coefficient as the primitive
-   transverse conormal class and prove noncontraction; Theorem 3.3 of the
-   cubic marking note then produces the primitive residue coordinate and its
-   affine-linear lift automatically;
-2. **positive-chart straightening:** identify every resulting positive
-   polynomial Keller square with the weighted vertical chart.
+   transverse conormal class, including (1.14a), and prove `NC`; Theorem 3.3
+   of the cubic marking note then produces the primitive residue coordinate
+   and its affine-linear lift automatically;
+3. **positive-chart straightening:** prove `CS` for every resulting positive
+   polynomial Keller square.
 
-In degree three the second item now has a positive straightening theorem
+In degree three the third item now has a positive straightening theorem
 under explicit intrinsic saturation labels.  Once the ledger gives
 `x=C/gamma`, it remains to extract
 
@@ -205,10 +532,11 @@ determinant ledger.  The countermodels in
 [`ONE_BOUNDARY_CHART_CLASSIFICATION.md`](ONE_BOUNDARY_CHART_CLASSIFICATION.md)
 show why those weaker statements are false.
 
-Consequently the bare conjecture in Section 2 remains open.  The proved
-one-boundary theorem gives the conjectured dichotomy after adding the
-primitive boundary markings and, in the positive branch, weighted-chart
-straightenability.
+Consequently Conjecture 2.4 remains open at the witness-extraction and
+predicate-verification stages.  Theorems 2.1--2.2 give the dichotomy only
+after the finite-normalization diagram and its primitive boundary markings
+have been supplied; in the positive branch `CS` remains the substantive
+weighted-chart assertion.
 
 ### 3.4 A finite-normalization frontend in degree three
 
@@ -242,22 +570,23 @@ would have to map to a distinct second nonproperness divisor.
 The first is a codimension-three condition and therefore cannot be read from
 the height-one ledger alone.
 
-### 3.5 The two cubic gateways
+### 3.5 Two conditional cubic frontends
 
 The branchwise and finite-normalization programs should not be run as a
-single cumulative checklist.  They are alternative gateways.
+single cumulative checklist.  They are alternative sufficient packages once
+their stated inputs are available.
 
-#### Theorem 3.5 -- cubic gateway reduction
+#### Theorem 3.5 -- cubic frontend reduction
 
 Let `F:A^3 -> A^3` have geometric degree three.  Either of the following
 packages implies that `F` is polynomially left--right equivalent to the
 foundational map:
 
-1. **suspension gateway:** the intrinsic package extracts a
+1. **suspension frontend:** the intrinsic package extracts a
    coordinate-preserving one-boundary suspension, the two-place branch has
    the primitive quadratic conormal marking, and the positive branch has
    the quotient/Stein labels of the cubic positive-chart theorem;
-2. **normalization gateway:** the canonical rank-three normalization has
+2. **normalization frontend:** the canonical rank-three normalization has
    curvilinear closed collision fibers (or, more generally, empty
    point-flatness defect); curvilinearity follows, in particular, from the
    ramification/cotangent extension package of Proposition 1.13 in the
@@ -273,11 +602,11 @@ foundational map:
 
 #### Proof
 
-For the first gateway, the cubic marking theorem supplies the weighted or
+For the first frontend, the cubic marking theorem supplies the weighted or
 cancellation normal form, and Theorem 4.1 below identifies both with the
 foundational map.
 
-For the second, intrinsic curvilinearity gives flatness by the local
+For the second frontend, intrinsic curvilinearity gives flatness by the local
 monogenicity theorem (or flatness is assumed directly).  Affine Hartogs
 maximality and the absence of an unramified boundary prime identify the
 Keller source with the full simple-root locus.  Deligne--Faddeev gives the
@@ -286,14 +615,16 @@ hyperplane theorem gives the foundational map.  Invariant unipotent gauges
 are removed by the gauge-straightening theorem.
 QED
 
-Once either gateway is crossed, the other structure exists automatically:
+Once either frontend applies, the other structure exists automatically:
 the foundational map has both its weighted/cancellation presentations and
 its flat tangent-hyperplane cubic normalization, and these properties
 transport under polynomial left--right equivalence.  Thus the open program
-is to prove **one** gateway from the bare package.  Proving suspension labels
-and coefficient gauge-linearity independently would duplicate work.
+is first to extract an intrinsic diagram satisfying the eight predicates and
+then to prove **one** of these two cubic routes from the canonical
+finite-normalization data.  Proving suspension labels and coefficient gauge-linearity
+independently would duplicate work.
 
-There is one important non-implication before a gateway is complete.
+There is one important non-implication before either frontend is complete.
 Height-one saturation in the current suspension theorem compares affine
 models only after inverting their boundary equations.  It does not control
 the finitely many closed points of the canonical normalization and therefore
@@ -567,9 +898,8 @@ foundational map.
 
 ### Corollary 4.2 -- conditional minimal-boundary cubic classification
 
-Assume the minimal-boundary classification conjecture.  If
-`F:A^3 -> A^3` is a nonproper Keller map satisfying its intrinsic hypotheses
-and `gdeg(F)=3`, then
+Assume Conjecture 2.4.  If `F:A^3 -> A^3` is a boundary-minimal nonproper
+Keller map with `gdeg(F)=3`, then
 
 \[
 \boxed{F\ \text{is polynomially left--right equivalent to}\ F_0.}
@@ -581,26 +911,24 @@ conjecture for any `F` to which the existing marked one-boundary dichotomy
 applies and whose positive chart, if present, is known to be weighted
 straightenable.
 
-The distinction matters: Theorem 4.1 proves that the two candidate branches
-collapse; it does not by itself extract those branches from the stated
-intrinsic hypotheses.
+The distinction matters: Theorem 4.1 proves only that the two candidate
+branches collapse.  It neither proves Conjecture 2.4 nor extracts either
+branch from the canonical finite-normalization object.
 
 ## 5. The degree-three proof target
 
 The first classification milestone can now be stated without quantifying over
 all degrees:
 
-> **Cubic extraction theorem (open).** Every geometric-degree-three
-> nonproper Keller map satisfying the intrinsic minimal-boundary hypotheses
-> supplies a coordinate-preserving suspension core; in the two-place case
-> its ambient boundary algebra selects the primitive quadratic conormal
-> coefficient (hence the cancellation marking),
-> and in the positive case its polynomial chart straightens to a weighted
-> chart.
+> **Cubic package-extraction theorem (open).** For every boundary-minimal
+> geometric-degree-three nonproper Keller map, construct the intrinsic
+> witness (1.2) and prove `MBPkg`.  Concretely, verify the eight predicates
+> of Definitions 1.2--1.9 from the canonical object `\mathcal L(F)`, rather
+> than from a recognized formula.
 
-Theorem 4.1 would then finish the classification immediately.  A proof should
-therefore target the two extraction assertions, not repeat the cubic normal
-form calculation.
+Theorems 2.1, 2.2, and 4.1 would then finish the classification immediately.
+A proof should therefore target witness extraction, `PC`, `NC`, and `CS`,
+not repeat the cubic normal-form calculation.
 
 Useful degree-three specializations are:
 
@@ -633,8 +961,9 @@ Items 1--4 compress the marking problem substantially, but none alone proves
 that the `G_m` ambient function is intrinsically selected, that the
 coordinate-preserving suspension exists, or that a positive vertical chart
 is polynomially conjugate to the weighted one.  Items 6--9 give an
-alternative frontend, but the minimal-boundary hypotheses have not yet been
-shown to eliminate the point defect or force coefficient linearity.
+alternative frontend, but they have not yet been shown to construct a
+diagram satisfying `MBPkg`, eliminate the point defect, and force coefficient
+linearity.
 
 ## 6. Exact verification
 

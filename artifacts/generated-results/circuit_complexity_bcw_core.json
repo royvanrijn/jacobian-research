@@ -1,0 +1,293 @@
+{
+  "format": "circuit-complexity-bcw-output-core-v1",
+  "theorem": {
+    "factorization": "H=Bp with B constant of full column rank s",
+    "feedback_core": "R=Jp*B",
+    "power_identity": "(JH)^k=B*R^(k-1)*Jp for k>=1",
+    "rank_bound": "rank(JH)<=s",
+    "index_bound": "nilpotency_index(JH)<=nilpotency_index(R)+1<=s+1"
+  },
+  "foundational_circuit": {
+    "multiplication_gates": 10,
+    "multiplication_depth": 4,
+    "output_roots": 3,
+    "factorization": {
+      "a": "x*y",
+      "r": "x*z",
+      "x2": "x*x",
+      "p0": "x2*(3*y+r)",
+      "v2": "(1+2*a)^2",
+      "v2z": "v2*z",
+      "y2": "y*y",
+      "y2b": "y2*(2+3*a)",
+      "w": "v2z+4*y2b",
+      "xw": "x*w",
+      "vw": "(1+2*a)*w",
+      "outputs": [
+        "x-p0",
+        "y+3*xw",
+        "vw"
+      ]
+    },
+    "determinant": "1",
+    "collision_size": 3,
+    "naive_graph_compilation": {
+      "dimension": 13,
+      "affine_jet_rank": 12,
+      "affine_jet_determinant": "0",
+      "conclusion": "agreement on the circuit graph does not preserve the Jacobian determinant on the ambient stabilization"
+    }
+  },
+  "endpoint_cores": [
+    {
+      "label": "rank_endpoint",
+      "source_artifact": "rank_reduced_bcw_24_counterexample.json",
+      "ambient_dimension": 24,
+      "generic_rank_JH": 17,
+      "nilpotency_index_JH": 18,
+      "output_core_dimension": 22,
+      "basis_components": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "feedback_edges": 83,
+      "feedback_scc_sizes": [
+        22
+      ],
+      "feedback_core_nilpotency_index": 17,
+      "identity": "(JH)^k = B*(Jp*B)^(k-1)*Jp",
+      "power_profile": [
+        {
+          "power": 1,
+          "nonzero_entries": 83,
+          "scalar_terms": 146
+        },
+        {
+          "power": 2,
+          "nonzero_entries": 231,
+          "scalar_terms": 725
+        },
+        {
+          "power": 3,
+          "nonzero_entries": 358,
+          "scalar_terms": 1487
+        },
+        {
+          "power": 4,
+          "nonzero_entries": 434,
+          "scalar_terms": 2171
+        },
+        {
+          "power": 5,
+          "nonzero_entries": 469,
+          "scalar_terms": 2867
+        },
+        {
+          "power": 6,
+          "nonzero_entries": 481,
+          "scalar_terms": 3532
+        },
+        {
+          "power": 7,
+          "nonzero_entries": 483,
+          "scalar_terms": 3988
+        },
+        {
+          "power": 8,
+          "nonzero_entries": 480,
+          "scalar_terms": 4272
+        },
+        {
+          "power": 9,
+          "nonzero_entries": 472,
+          "scalar_terms": 4210
+        },
+        {
+          "power": 10,
+          "nonzero_entries": 453,
+          "scalar_terms": 3812
+        },
+        {
+          "power": 11,
+          "nonzero_entries": 419,
+          "scalar_terms": 3245
+        },
+        {
+          "power": 12,
+          "nonzero_entries": 360,
+          "scalar_terms": 2227
+        },
+        {
+          "power": 13,
+          "nonzero_entries": 280,
+          "scalar_terms": 1304
+        },
+        {
+          "power": 14,
+          "nonzero_entries": 185,
+          "scalar_terms": 605
+        },
+        {
+          "power": 15,
+          "nonzero_entries": 92,
+          "scalar_terms": 223
+        },
+        {
+          "power": 16,
+          "nonzero_entries": 32,
+          "scalar_terms": 48
+        },
+        {
+          "power": 17,
+          "nonzero_entries": 0,
+          "scalar_terms": 0
+        }
+      ]
+    },
+    {
+      "label": "index_endpoint",
+      "source_artifact": "index_reduced_bcw_22_counterexample.json",
+      "ambient_dimension": 22,
+      "generic_rank_JH": 18,
+      "nilpotency_index_JH": 18,
+      "output_core_dimension": 21,
+      "basis_components": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "feedback_edges": 84,
+      "feedback_scc_sizes": [
+        21
+      ],
+      "feedback_core_nilpotency_index": 17,
+      "identity": "(JH)^k = B*(Jp*B)^(k-1)*Jp",
+      "power_profile": [
+        {
+          "power": 1,
+          "nonzero_entries": 84,
+          "scalar_terms": 130
+        },
+        {
+          "power": 2,
+          "nonzero_entries": 233,
+          "scalar_terms": 643
+        },
+        {
+          "power": 3,
+          "nonzero_entries": 323,
+          "scalar_terms": 1207
+        },
+        {
+          "power": 4,
+          "nonzero_entries": 387,
+          "scalar_terms": 1732
+        },
+        {
+          "power": 5,
+          "nonzero_entries": 417,
+          "scalar_terms": 2292
+        },
+        {
+          "power": 6,
+          "nonzero_entries": 431,
+          "scalar_terms": 2750
+        },
+        {
+          "power": 7,
+          "nonzero_entries": 438,
+          "scalar_terms": 3164
+        },
+        {
+          "power": 8,
+          "nonzero_entries": 438,
+          "scalar_terms": 3398
+        },
+        {
+          "power": 9,
+          "nonzero_entries": 432,
+          "scalar_terms": 3380
+        },
+        {
+          "power": 10,
+          "nonzero_entries": 416,
+          "scalar_terms": 3013
+        },
+        {
+          "power": 11,
+          "nonzero_entries": 388,
+          "scalar_terms": 2502
+        },
+        {
+          "power": 12,
+          "nonzero_entries": 332,
+          "scalar_terms": 1695
+        },
+        {
+          "power": 13,
+          "nonzero_entries": 257,
+          "scalar_terms": 961
+        },
+        {
+          "power": 14,
+          "nonzero_entries": 170,
+          "scalar_terms": 462
+        },
+        {
+          "power": 15,
+          "nonzero_entries": 82,
+          "scalar_terms": 167
+        },
+        {
+          "power": 16,
+          "nonzero_entries": 30,
+          "scalar_terms": 40
+        },
+        {
+          "power": 17,
+          "nonzero_entries": 0,
+          "scalar_terms": 0
+        }
+      ]
+    }
+  ],
+  "conclusion": "nilpotency is controlled by the post-placement output-feedback core; the raw multiplication DAG alone omits this feedback data"
+}

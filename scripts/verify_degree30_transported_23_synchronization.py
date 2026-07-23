@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
-"""Explore monomial orders for the transported degree-30 ``{2,3}`` pair."""
+"""Verify the transported degree-30 ``{2,3}`` pair over ``QQ``."""
 
 from __future__ import annotations
 
 import argparse
+import os
+import signal
 import shutil
 import subprocess
 import sys
@@ -21,6 +23,11 @@ from explore_degree30_hessian_ritt_braid import (  # noqa: E402
     Z,
     canonical_linear_lift,
     canonical_residuals,
+)
+from exact_membership_cache import (  # noqa: E402
+    cached_basis_size,
+    program_sha256,
+    write_exact_membership_cache,
 )
 from jcsearch.ritt_complex import dickson_vertex_factors  # noqa: E402
 
@@ -107,6 +114,12 @@ def transformed_problem(
         translation: translation_inverse,
         parameter: parameter_inverse,
     }
+    assert all(
+        sp.expand(
+            recovered.subs(coefficient_map, simultaneous=True) - variable
+        ) == 0
+        for variable, recovered in inverse.items()
+    )
 
     solved_variables = (
         inner_coefficients[0],
@@ -168,36 +181,106 @@ def transformed_problem(
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--prime", type=int, default=32003)
+    parser.add_argument("--prime", type=int, default=0)
     parser.add_argument("--order", default="(dp(5),dp(6))")
-    parser.add_argument("--algorithm", choices=("std", "slimgb"), default="std")
-    parser.add_argument("--timeout", type=int, default=300)
-    parser.add_argument("--model-base", action="store_true")
+    parser.add_argument(
+        "--algorithm",
+        choices=("std", "slimgb", "modstd"),
+        default="modstd",
+    )
+    parser.add_argument("--timeout", type=int, default=1800)
+    parser.add_argument("--recovered-base", action="store_true")
+    parser.add_argument("--refresh", action="store_true")
+    parser.add_argument("--fingerprint-only", action="store_true")
     args = parser.parse_args()
-    normals, bases, residuals, defect = transformed_problem(args.model_base)
+    normals, bases, residuals, defect = transformed_problem(
+        not args.recovered_base
+    )
     characteristic = args.prime if args.prime else 0
     variables = normals + bases
-    singular = shutil.which("Singular")
-    assert singular is not None
+    basis_command = (
+        "modStd(I)" if args.algorithm == "modstd"
+        else f"{args.algorithm}(I)"
+    )
     program = (
+        ('LIB "modstd.lib";\n' if args.algorithm == "modstd" else "")
+        +
         f'ring q={characteristic},({",".join(map(str, variables))}),'
         f"{args.order};\n"
         f'ideal I={",".join(serialize(item) for item in residuals)};\n'
-        f"ideal G={args.algorithm}(I);\n"
+        f"ideal G={basis_command};\n"
         'print("TRANSPORTED_SYNC30_23");\n'
         f"print(reduce({serialize(defect)},G)==0);\n"
         "print(size(G));\n"
     )
-    result = subprocess.run(
-        [singular, "-q"],
-        input=program,
-        text=True,
-        capture_output=True,
-        timeout=args.timeout,
+    cache_path = (
+        ROOT / "certificates/degree30_hessian/transported_23.json"
     )
-    print(result.stdout, end="")
-    if result.stderr:
-        print(result.stderr, file=sys.stderr, end="")
+    cache_metadata = {
+        "pair": "{2,3}",
+        "characteristic": 0,
+        "algorithm": "modStd",
+        "order": "(dp(5),dp(6))",
+        "coordinate_mode": "model",
+    }
+    cache_eligible = (
+        characteristic == 0
+        and args.algorithm == "modstd"
+        and args.order == "(dp(5),dp(6))"
+        and not args.recovered_base
+    )
+    if args.fingerprint_only:
+        print(program_sha256(program))
+        return
+    cached = (
+        None
+        if args.refresh or not cache_eligible
+        else cached_basis_size(cache_path, program, cache_metadata)
+    )
+    if cached is not None:
+        print(
+            "CACHED PASS: degree-30 pair {2,3} synchronizes in exact "
+            f"transported model coordinates; basis size {cached}"
+        )
+        return
+    singular = shutil.which("Singular")
+    assert singular is not None
+    process = subprocess.Popen(
+        [singular, "-q"],
+        stdin=subprocess.PIPE,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+        text=True,
+        start_new_session=True,
+    )
+    try:
+        stdout, stderr = process.communicate(program, timeout=args.timeout)
+    except subprocess.TimeoutExpired:
+        os.killpg(process.pid, signal.SIGTERM)
+        try:
+            process.wait(timeout=5)
+        except subprocess.TimeoutExpired:
+            os.killpg(process.pid, signal.SIGKILL)
+            process.wait()
+        raise
+    compact = stdout.split()
+    marker = compact.index("TRANSPORTED_SYNC30_23")
+    assert compact[marker + 1] == "1", stdout + stderr
+    basis_size = int(compact[marker + 2])
+    if cache_eligible:
+        version = subprocess.run(
+            [singular, "--version"],
+            text=True,
+            capture_output=True,
+            check=True,
+        ).stdout.splitlines()[0]
+        write_exact_membership_cache(
+            cache_path, program, cache_metadata, basis_size, version
+        )
+    print(
+        "PASS: degree-30 pair {2,3} synchronizes in exact transported "
+        f"model coordinates; basis size {basis_size}"
+    )
 
 
 if __name__ == "__main__":

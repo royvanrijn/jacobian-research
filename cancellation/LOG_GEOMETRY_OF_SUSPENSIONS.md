@@ -43,6 +43,11 @@ all generically finite maps are generically separable.
 
 ## 1. The determinant ledger is a relative-canonical identity
 
+The affine determinant statement itself is the
+[boundary-cancelled incidence lemma](CONTROLLED_BOUNDARY_SUSPENSIONS.md#1-boundary-cancelled-incidence-lemma).
+This section does not re-prove the three family Jacobians; it upgrades that
+common ledger to arbitrary rational top forms and birational models.
+
 Consider a commutative square of smooth equidimensional varieties and
 dominant rational maps
 

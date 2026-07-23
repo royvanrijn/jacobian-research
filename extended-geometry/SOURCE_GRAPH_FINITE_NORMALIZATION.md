@@ -24,9 +24,11 @@ be the normalized wonderful target graph.  Let
 \]
 
 be a fully marked tame admissible-cover stack with the polynomial discrete
-data.  Its branch morphism is finite.  The generic polynomial determines a
-section of the pullback of (0.2) over \(X^\circ\).  Take its reduced closure
-and normalize:
+data.  Its branch morphism is proper with finite geometric fibers, and its
+coarse branch morphism is finite.  The stack morphism itself need not be
+representable at a boundary cover with relative inertia.  The generic
+polynomial determines a section of the pullback of (0.2) over
+\(X^\circ\).  Take its reduced closure and normalize:
 
 \[
  \mathcal G_N^{\mathrm{poly}}
@@ -70,7 +72,13 @@ both abstractly and explicitly.
 
 For fixed degree, genera, ramification profiles, and fully marked branch
 points, an admissible cover has no continuous moduli over a fixed stable
-target.  The branch morphism (0.2) is proper and quasi-finite, hence finite.
+target.  The branch morphism (0.2) is proper and has finite geometric
+fibers.  On coarse spaces it is proper and quasi-finite, hence finite.  This
+is the finiteness used below; representability of (0.2) is not required.
+Formation of the coarse space commutes with this base change because the
+stack is tame in characteristic zero; see Abramovich--Olsson--Vistoli,
+[Tame stacks in positive
+characteristic](https://arxiv.org/abs/math/0703310), Corollary 3.3.
 
 The Abramovich--Corti--Vistoli twisted-cover stack gives the normalization of
 the Harris--Mumford admissible-cover space; see
@@ -98,15 +106,17 @@ Base change (0.2) along
  \overline{\mathcal H}^{\mathrm{adm,lab}}_N              \tag{2.1}
 \]
 
-is finite over \(B_N^{\mathrm{tgt}}\).
+is proper over \(B_N^{\mathrm{tgt}}\) and has finite geometric fibers.  Its
+coarse morphism is finite.
 
 The normalized polynomial determines one point of the generic Hurwitz fiber,
 not the whole Hurwitz fiber.  Its graph over \(X^\circ\) is integral and is
 generically isomorphic to \(X^\circ\).  Its reduced closure in
-\mathcal Z_N\) remains finite over \(B_N^{\mathrm{tgt}}\).  Normalization is
-finite because these stacks are of finite type over a characteristic-zero
-field.  Consequently (0.3) is a finite, generically degree-one stack over
-\(B_N^{\mathrm{tgt}}\).
+\(\mathcal Z_N\) remains proper with finite geometric fibers over
+\(B_N^{\mathrm{tgt}}\).  Normalization is finite because these stacks are of
+finite type over a characteristic-zero field.  Consequently the coarse
+morphism associated to (0.3) is proper, quasi-finite, and generically of
+degree one over \(B_N^{\mathrm{tgt}}\).
 
 Pass to coarse spaces.  The induced morphism
 

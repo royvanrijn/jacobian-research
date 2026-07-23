@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
-"""Exact checks for cancellation/CONTROLLED_BOUNDARY_SUSPENSIONS.md.
+"""Exact checks for the boundary-cancelled incidence lemma and its examples.
 
-The symbolic identities certify the stated propositions.  The finite
+The symbolic identities certify the three family ledgers and the stated
+propositions.  The finite
 exponent box is only a regression against transcription errors; Proposition
 4.1 itself is proved by the three coefficient equations in the note.
 """
@@ -27,6 +28,21 @@ def check_cancellation_ledger() -> None:
     jac_alpha = -A**r
     jac_core = C * D_on_source**r
     assert sp.cancel(jac_alpha * jac_core) == -C
+
+
+def check_quadratic_gauge_ledger() -> None:
+    P, S, Q = sp.symbols("P S Q")
+    D = 1 - S * Q + P * S**2
+    # The foundational normalized seed G_P=S+P*S^3 already contains the
+    # universal marked-line ledger; coefficient decorations do not change it.
+    Y = 2 * (S + P * S**3)
+    B = Q + 2 * P * S
+    C = Y - B * S**2
+    jac_core = sp.factor(
+        sp.det(sp.Matrix([P, B, C]).jacobian((P, S, Q)))
+    )
+    assert sp.factor(jac_core + 2 * D) == 0
+    assert sp.cancel(jac_core / D) == -2
 
 
 def check_simple_section_normal_form() -> None:
@@ -104,11 +120,16 @@ def check_third_divisor_classification() -> None:
 def main() -> None:
     check_weighted_ledger()
     check_cancellation_ledger()
+    check_quadratic_gauge_ledger()
     check_simple_section_normal_form()
     check_critical_normalizations()
     check_two_boundary_jacobian_formula()
     check_third_divisor_classification()
-    print("PASS controlled-boundary suspension ledgers and two-boundary obstruction")
+    print(
+        "PASS boundary-cancelled incidence ledgers for weighted, "
+        "cancellation, and quadratic-gauge families"
+    )
+    print("PASS controlled-boundary plane forms and two-boundary obstruction")
 
 
 if __name__ == "__main__":

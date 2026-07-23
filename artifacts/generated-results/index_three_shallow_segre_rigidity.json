@@ -1,0 +1,36 @@
+{
+  "format": "index-three-shallow-segre-rigidity-v1",
+  "field": "characteristic zero",
+  "classified_class": "H(x,y,t)=(t*Q(x)-t^2*y,C(x),0), Q homogeneous quadratic and C homogeneous cubic",
+  "exact_index_three_equivalence": "(JH)^3=0 iff JC=(JQ)^2 and (JQ)^3=0",
+  "integrability_consequence": "the constant coefficient matrices of JQ commute and are simultaneously strictly triangular",
+  "classification_conclusion": "every map in the classified index-three class is a polynomial automorphism; hence the class contains no collision",
+  "collision_gauge": "distinct collision points are linearly independent and may be sent to e1,e2 by linear conjugacy; translations are not used",
+  "rank_compressed_residual": [
+    "E*U=0",
+    "D*E=0",
+    "D*A*U=0",
+    "A^3-R*A-A*R=0",
+    "E*Q=0",
+    "D*A*Q=0",
+    "where R=U*D and E=A^2-R"
+  ],
+  "calibration": {
+    "dimension": 7,
+    "generic_rank_JH": 4,
+    "nilpotency_index_JH": 3,
+    "jacobian_determinant": 1,
+    "Q": [
+      "0",
+      "x1^2/2",
+      "x1*x2"
+    ],
+    "C": [
+      "0",
+      "0",
+      "x1^3/3"
+    ],
+    "inverse_verified": true
+  },
+  "status": "exhaustive theorem for the displayed shallow circuit class; not a lower bound for arbitrary cubic-homogeneous maps"
+}

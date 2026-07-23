@@ -210,17 +210,21 @@ the form
  F(b+sU)-a=\sum_{k\ge0}d_kU^k.                      \tag{2.2}
 \]
 
-The source graph chart is the saturation of the coefficient relations
+On the pullback of the selected normalized admissible-cover chart, regularity
+of the universal map is equivalent to the coefficient relations
 
 \[
  d_k=qh_k\qquad(k\ge0).                             \tag{2.3}
 \]
 
 These relations are the Rees-chart form of initial-form divisibility.  They
-hold on the selected admissible-cover closure because the map to the
-expanded target is regular; conversely, adjoining the \(h_k\), the node
-relation (2.1), and then normalizing gives that graph chart.  Tame local
-admissibility says on the boundary that
+hold because the universal map to the expanded target is regular.  They are
+not being used here to define the normalization: the comparison theorem in
+Section 7 identifies the chart first from the standard admissible-cover
+deformation ring, after which (2.3) extracts regular functions on that
+chart.  This avoids assuming that coefficientwise divisibility by itself
+generates the full integral closure.  Tame local admissibility says on the
+boundary that
 
 \[
  \bar h_0=\cdots=\bar h_{e-1}=0,
@@ -493,37 +497,251 @@ cycle profile—among the local branch cycles and mark the vertex carrying the
 zero flag as anchored.  The same full-centralizer fiber product then joins
 the radial and resonance charts.  No separate mixed rule is necessary.
 
-## 7. Global identification
+## 7. Global comparison and descent
 
-The local construction has four descent symmetries:
+This section proves the comparison with the normalized selected
+admissible-cover closure.  In particular, it does not infer equality of two
+atlases merely from agreement of their displayed formulas.
 
-- changing a target or source affine frame;
-- permuting root and critical-value labels;
-- changing the collision-adapted Hurwitz paths; and
-- changing a Kummer generator \(s\) by a root of unity.
+### 7.1 The globally defined stack
 
-Target-frame equivariance is (1.2a)--(1.2b).  Under source and target
-changes \(U'=c+dU\), \(T'=a+bT\), a vertex map changes by
+Let
 
 \[
- R'(U')=a+bR\!\left(\frac{U'-c}{d}\right).          \tag{7.1}
+ B=B_N^{\mathrm{tgt}}
 \]
 
-Consequently its flag equations and pole divisor transform by pullback.
-This proves frame descent of (0.3)--(0.4); label equivariance is literal
-permutation of the indexed placements and divisors.  Section 5 proves
-Hurwitz invariance.  The Kummer-generator symmetry is exactly the node
-character and is retained as stack inertia.
+be the normal wonderful target graph, and let
 
-The constructed family agrees with the generic polynomial cover.  At every
-boundary node it has the standard admissible equation \(q=us^e\), and its
-source components, degrees, and flag fibers exhaust the monodromy cycles.
-Thus it maps to the normalized selected polynomial closure in the ACV stack.
-Conversely every point of that closure has, étale-locally, the same
-Weierstrass factors, Kummer scales, and normalized initial forms.  The two
-atlases are therefore identical.
+\[
+ \operatorname{br}:
+ \overline{\mathcal H}^{\mathrm{adm,lab}}_N
+ \longrightarrow \overline M_{0,m}
+\]
 
-Combining this with the source-graph finite-normalization theorem gives:
+be the fully branch- and fiber-marked tame admissible-cover stack with the
+polynomial discrete data.  Put
+
+\[
+ \mathcal Z
+ =
+ B\times_{\overline M_{0,m}}
+ \overline{\mathcal H}^{\mathrm{adm,lab}}_N.
+                                                               \tag{7.1}
+\]
+
+The branch morphism is proper with finite geometric fibers; after passing
+to coarse spaces its branch morphism is finite.  (It need not be
+representable at a boundary cover with relative inertia.)  Let
+\(\mathcal W\subset\mathcal Z\) be the reduced closure of the generic
+polynomial section and define
+
+\[
+ \mathcal G=\operatorname{Norm}(\mathcal W).        \tag{7.2}
+\]
+
+All stacks here are of finite type in characteristic zero.  Normalization is
+therefore finite.  It follows that \(\mathcal G\) is a proper, separated,
+tame Deligne--Mumford stack over \(B\), with finite coarse morphism.  Its
+generic stabilizer is trivial.  The finite-normalization theorem proves
+that its coarse space is \(B\).
+Thus algebraicity, the DM property, separatedness, and the underlying coarse
+comparison are consequences of the global construction (7.2), not of a
+formal gluing assertion.
+
+### 7.2 Local comparison theorem
+
+Fix a geometric point \(x\to\mathcal G\), with target nodes indexed by
+\(\eta\).  Write \(q_\eta\) for the corresponding target smoothing
+functions on an étale neighborhood of its image in \(B\).  Suppose the
+source nodes over \(\eta\) have expansion indices
+
+\[
+ e_{\eta1},\ldots,e_{\eta r_\eta}.
+\]
+
+After strict étale localization, pull the Harris--Mumford deformation
+algebra back to the completed local ring \(A\) of \(B\).  It is
+
+\[
+ A[[s_{\eta j}]]\Big/
+ \left(s_{\eta j}^{e_{\eta j}}-u_{\eta j}q_\eta\right)_{\eta,j},
+ \qquad u_{\eta j}\in A^\times .                   \tag{7.3}
+\]
+
+There are no further relative deformation parameters: with all branch
+points marked, a local Hurwitz class over a fixed target is discrete.  This
+is the standard admissible-cover deformation theorem.  Its normalization
+is the ACV twisted-cover chart.  Equivalently, the branch morphism is
+étale-locally toroidal, and (7.3) is its characteristic-monoid chart.
+See Abramovich--Corti--Vistoli,
+[Twisted bundles and admissible
+covers](https://arxiv.org/abs/math/0106211), and
+Cavalieri--Markwig--Ranganathan,
+[Tropicalizing the space of admissible
+covers](https://arxiv.org/abs/1401.4626), Sections 4.2.1--4.2.2.
+
+For one target node, put
+
+\[
+ L_\eta=\operatorname{lcm}_j(e_{\eta j}).
+\]
+
+Before this base change, over the universal target deformation ring, the
+normalized factors of the one-node algebra are parametrized by
+
+\[
+ q_\eta=\rho_\eta^{L_\eta},\qquad
+ s_{\eta j}
+ =\omega_{\eta j}\rho_\eta^{L_\eta/e_{\eta j}},
+ \qquad
+ \omega_{\eta j}\in\mu_{e_{\eta j}},               \tag{7.4}
+\]
+
+modulo simultaneous reparametrization of \(\rho_\eta\).  Roots of the units
+have been absorbed after strict henselization.  After base change to \(A\),
+one must normalize
+\(A[\rho_\eta]/(\rho_\eta^{L_\eta}-q_\eta)\); this incorporates any further
+monoid saturation forced by the wonderful pullback.  For several target
+nodes, take the tensor product of these node factors over \(A\) and
+normalize.  A geometric point \(x\) selects one factor at every node and
+one of the finitely many local Hurwitz classes.
+
+Choose an actual étale toroidal chart of the admissible-cover stack at the
+image of \(x\), pull it back to \(B\), take the reduced polynomial closure,
+and normalize each component meeting the generic polynomial section.
+Normalization commutes with étale localization, so these normalized schemes
+map étale to \(\mathcal G\); allowing \(x\) to vary makes them jointly
+surjective.  Excellence identifies their completed local rings with the
+selected normalized factors of (7.3).  Conversely every selected factor
+that meets the generic polynomial section occurs in \(\mathcal G\), by the
+definition of reduced closure.  This proves chart exhaustion and rules out
+additional integral equations or unrecorded normalization branches.
+
+### 7.3 Identification with the recursive formulas
+
+On one of the étale charts above, split the relevant source points and
+choose affine coordinates on every source and target component, with the
+parent flag at infinity.  The stable-target chart then has
+
+\[
+ T_{\operatorname{par}(S)}=a_S+q_ST_S.
+                                                               \tag{7.5}
+\]
+
+At a source node of index \(e\), (7.3)--(7.4) give
+\(q_S=us^e\).  Regularity of the universal admissible-cover map to the
+expanded target says coefficientwise that
+
+\[
+ F(b+sU)-a_S\in q_S A[U].
+\]
+
+Therefore its expression on the child screen is exactly
+
+\[
+ R_{\mathrm{child}}(U)
+ =\frac{F(b+sU)-a_S}{q_S}.                          \tag{7.6}
+\]
+
+This proves (0.3) on an actual étale chart of \(\mathcal G\), rather than on
+a separately postulated formal chart.  Pulling back a finite target flag
+\(\alpha_h\) gives
+
+\[
+ D_h=V(R_{\mathrm{child}}-\alpha_h),                \tag{7.7}
+\]
+
+and the parent flag gives the pole divisor.  Thus the flag equations
+(0.4), the third-fiber compatibility, and the vertex maps are restrictions
+of the universal cover on \(\mathcal G\).  The monodromy-forest theorem
+identifies the source components and their degrees; source-vertex rigidity
+then shows that (7.7) leaves no second component map with the same
+flag-complete data.
+
+Every point of \(\mathcal G\) admits the construction above, so
+(7.5)--(7.7), together with the saturated node equations (7.3), are an
+étale logarithmic atlas of \(\mathcal G\).
+
+### 7.4 Overlaps and effective descent
+
+The charts of Section 7.3 are restrictions of étale charts of the single
+global stack \(\mathcal G\).  Their overlap groupoids and cocycles are
+therefore effective automatically.  The explicit transition functions are
+as follows.
+
+- A change of target or source frame is affine because it preserves the
+  parent flag.  Under \(U'=c+dU\), \(T'=a+bT\), the vertex map becomes
+  \[
+   R'(U')=a+bR\!\left(\frac{U'-c}{d}\right).         \tag{7.8}
+  \]
+  Equations (1.2a)--(1.2b) give the corresponding screen transitions.
+- Changing splitting labels permutes the indexed placements, source
+  factors, and flag divisors.
+- A change of collision-adapted paths changes only the topological
+  trivialization of the same finite étale cover.  Hurwitz moves and
+  simultaneous conjugation transport the monodromy centralizers and node
+  cycles, so no new algebraic branch is introduced.
+- Replacing a Kummer generator by a root-of-unity multiple is the phase
+  action in (7.4).
+
+Affine composition proves compatibility under contraction.  Since \(B\) is
+defined as a normalized graph closure, and the building-set blowup and
+normalization are functorial, this descent is independent of the ordering of
+the wonderful centers and of every auxiliary splitting order.
+
+### 7.5 Actual inertia
+
+The fully marked stable target has no automorphisms.  On the normalization
+of a source component over the punctured target vertex, an automorphism of
+the cover is exactly a permutation of sheets centralizing the local
+monodromy.  Taking the centralizer in the full symmetric group retains
+permutations of isomorphic disconnected components.  A global
+automorphism is exactly a tuple of such vertex automorphisms whose
+permutations of incident node cycles agree on both sides of every edge,
+together with the balanced half-node rotations.  This is the
+full-centralizer fiber product of Section 5.
+Restriction to the punctured source components is injective because those
+opens are dense in the nodal source.  Conversely, compatible vertex
+automorphisms with matched half-node actions glue uniquely across the
+completed node rings.  Thus the fiber product is neither a subgroup estimate
+nor merely an equality of orders: it is the full automorphism group of the
+admissible cover.
+
+Its action on the source smoothing parameters gives
+
+\[
+ \chi:
+ \operatorname{Aut}_{\mathrm{lab}}(C/P)
+ \longrightarrow
+ \prod_{\eta,j}\mu_{e_{\eta j}}.                   \tag{7.9}
+\]
+
+An automorphism fixes the selected normalized factor (7.4) precisely when,
+at every target node \(\eta\), its phase vector lies in
+
+\[
+ \Delta_{\eta}(\mu_{L_\eta})
+ \subset\prod_j\mu_{e_{\eta j}}.
+\]
+
+Consequently the stabilizer of \(x\) in the actual normalized stack is
+
+\[
+ I_x
+ =
+ \chi^{-1}\!\left(
+   \prod_\eta\Delta_\eta(\mu_{L_\eta})
+ \right).                                          \tag{7.10}
+\]
+
+This is exactly the simultaneous character rule implemented in Section 5.
+It is not merely a stabilizer calculation for a candidate chart: (7.10)
+is the stabilizer of the selected factor in the local quotient presentation
+of \(\mathcal G\).
+
+Combining Sections 7.1--7.5 with the source-graph
+finite-normalization theorem gives:
 
 > **Corrected H1 theorem.**  
 > The polynomial Hurwitz--LL graph is the normalized selected

@@ -4,6 +4,7 @@ The log-boundary and Poisson-square prefilters are:
 
 ```bash
 .venv/bin/python plane-jc/cas/test_intrinsic_a2_boundary.py
+.venv/bin/python plane-jc/cas/test_plane_boundary_exclusion.py
 .venv/bin/python plane-jc/cas/test_log_boundary_compiler.py
 .venv/bin/python plane-jc/cas/test_poisson_square_rigidity.py
 .venv/bin/python plane-jc/cas/log_boundary_compiler.py --frontier-72-108
@@ -13,7 +14,13 @@ The first reconstructs the canonical and log-canonical classes of a complete
 `A2` boundary from its intersection matrix, checks `K_X^2+rho(X)=10`, and
 audits target pole vectors against nefness, degree, ramification, and the
 intrinsic dicritical condition.  It also verifies the sharp canonical
-free-depth-three obstruction.  The second turns certified monomial branch
+free-depth-three obstruction.  The second checks the residue-immersion
+Riemann--Hurwitz budgets through degree eight and applies the resulting
+one-puncture obstruction to the first numerical degree-six package.  It also
+checks that the primitive minimal-sheet formula `d=e+1` is incompatible
+with the `2e` fiber length forced by a conductor identification.  These are
+structural boundary regressions, not low-degree counterexample searches.
+The third turns certified monomial branch
 scales into regular toroidal
 blowups, a proximity graph, complete boundary and intersection matrices,
 valuation/different/conductor labels, and chart-aware Smith invariants.  It

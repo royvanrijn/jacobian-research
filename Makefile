@@ -11,6 +11,8 @@ SYSTEM_PYTHON ?= python3
 	verify-foundations verify-foundations-formal \
 	verify-coincident-root-loci verify-papers verify-ritt-boundary \
 	verify-ritt-2-complex verify-hessian-synchronization \
+	verify-common-right-factor-synchronization \
+	verify-degree30-hessian-pairs \
 	verify-contact-r6 verify-contact-branch-schema verify-contact-r7-asymptotic \
 	verify-parameter-dusart-frontier verify-parameter-sharp-dusart-frontier \
 	verify-parameter-adaptive-dusart-frontier \
@@ -76,6 +78,15 @@ verify-ritt-2-complex:
 verify-hessian-synchronization:
 	$(PYTHON) scripts/verify_hessian_synchronization_lifts.py
 
+verify-common-right-factor-synchronization:
+	$(PYTHON) scripts/verify_common_right_factor_synchronization.py
+
+verify-degree30-hessian-pairs:
+	$(PYTHON) scripts/verify_cubic_remainder_synchronization.py
+	$(PYTHON) scripts/verify_degree30_transported_23_synchronization.py
+	$(PYTHON) scripts/verify_degree30_transported_25_synchronization.py
+	$(PYTHON) scripts/verify_degree30_transported_35_synchronization.py
+
 audit-degree30-hessian-synchronization-pairs:
 	$(PYTHON) scripts/audit_degree30_hessian_synchronization_pairs.py
 
@@ -126,6 +137,7 @@ verify-core: verify-minimal
 verify-geometry: verify-core
 
 verify-theorems:
+	$(PYTHON) scripts/verify_controlled_boundary_suspensions.py
 	$(MAKE) verify-master
 	$(MAKE) verify-minimal-boundary
 	$(PYTHON) scripts/verify_weighted_seed_schema.py
@@ -177,6 +189,7 @@ verify-master:
 	$(SYSTEM_PYTHON) scripts/verify_degreewise_multiplicity_count.py
 	$(PYTHON) scripts/verify_master_universal.py
 	$(PYTHON) scripts/verify_root_engineered_quadratic_gauge.py
+	$(PYTHON) scripts/verify_quadratic_cancellation_intersection.py
 	$(PYTHON) scripts/verify_master_instances.py
 	$(PYTHON) scripts/verify_resolvent_ramification_signature.py
 	$(PYTHON) scripts/verify_target_fixed_parameter_rigidity.py

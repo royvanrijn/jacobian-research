@@ -45,20 +45,28 @@ and
  z=PD^{r+2}-(Q-sP)^{m+1}D^{r+1}h(D^{-1}).                 \tag{3}
 \]
 
-The change `(x,y,z)->(s,P,Q)` has determinant `-A^r`, while at fixed
-`P,Q`,
+These are precisely the cancellation inputs to the
+[boundary-cancelled incidence lemma](CONTROLLED_BOUNDARY_SUSPENSIONS.md#1-boundary-cancelled-incidence-lemma).
+The controlled divisor and the two chart factors are
 
 \[
- R_s=C\bigl(1-s(Q-Ps)^m\bigr)^r=CA^{-r}.
+ D=1-s(Q-Ps)^m=A^{-1},\qquad
+ R_s=CD^r,
 \]
 
-Therefore
+\[
+ J_\alpha=
+ \det\frac{\partial(s,P,Q)}{\partial(x,y,z)}
+ =-A^r=-D^{-r},\qquad J_\beta=1.
+\]
+
+Thus the lemma has `u=C` and `kappa=-1`, and gives
 
 \[
  \boxed{\det\frac{\partial(P,Q,R)}{\partial(x,y,z)}=-C}.   \tag{4}
 \]
 
-Neither `h` nor its derivatives occur in (4).
+Neither `h` nor its derivatives enter this determinant ledger.
 
 ### Controlled-boundary plane core
 
@@ -79,41 +87,28 @@ For each fixed `P`, define
  (s,Q)\longmapsto(Q,R(s,P,Q)).
 \]
 
-This is a polynomial plane map and
+This is the coordinate-preserving plane core in the lemma. Its Jacobian is
+the inverse-equation derivative, up to orientation:
 
 \[
  \boxed{\det D\chi_{m,r;P}=-C D(s,P,Q)^r.}               \tag{4a}
 \]
 
-Indeed `R_s=CD^r`, while the first target coordinate is `Q`.  Equivalently,
-the three-dimensional family over `P` has
-
-\[
- \det\frac{\partial(P,Q,R)}{\partial(s,P,Q)}=CD^r.
-\]
-
-On the original source, `D=A^{-1}` and the birational chart has
-
-\[
- \det\frac{\partial(s,P,Q)}{\partial(x,y,z)}
- =-A^r=-D^{-r}.
-\]
-
-The two determinants multiply to `-C`, proving (4).  Hence the cancellation
-map is a birational suspension of a plane map whose Jacobian vanishes to
-order `r` on `D=0`.  The finite cancellation operator below has a precise
-role in this interpretation: it makes `R`, which is automatically polynomial
-in `(s,P,Q)`, polynomial after returning through the rational source chart to
-`(x,y,z)`.
+The common lemma now supplies the three-dimensional determinant; no second
+chain-rule calculation is needed here. The family-specific issue is instead
+the polynomiality gate: `R` is automatically polynomial in `(s,P,Q)`, while
+the finite cancellation operator below decides whether it remains
+polynomial after returning through the rational chart to `(x,y,z)`.
 
 This should not be conflated with the weighted suspension.  There the
 vertical maps are polynomial and the plane core has simple ramification; here
 the compensating source chart is birational and cancels the arbitrary power
 `D^r`.
 
-The polynomial weighted analogue and the comparison of the two suspension
-types are recorded in the
-[tangent-map core theorem](../verified/TANGENT_MAP_CORE.md).
+The weighted and quadratic-gauge dictionaries, including their distinct
+boundary normalizations and collision-fibre clauses, are recorded alongside
+this one in the
+[common incidence lemma](CONTROLLED_BOUNDARY_SUSPENSIONS.md#3-the-three-established-families-are-instances).
 
 The same `(m,r)=(1,1)` divisor also admits a second polynomial plane gauge.
 Its inverse equation has a quadratic target tilt, it contains the
@@ -130,6 +125,11 @@ On the coefficient-torus locus, its internal stable orbits are classified
 exactly by a two-dimensional scaling action, giving moduli dimension `N-4`;
 see the
 [quadratic-gauge stable-moduli theorem](../verified/QUADRATIC_GAUGE_STABLE_MODULI.md).
+Its stable intersection with the full cancellation family is now exact:
+the foundational cubic is the only common class.  In every degree at least
+four, the ramified-stratum Fitting support and the thick boundary contact
+give independent obstructions; see the
+[quadratic-gauge/cancellation stable-intersection theorem](../verified/QUADRATIC_CANCELLATION_STABLE_INTERSECTION.md).
 The corresponding marked-line criterion and the complete
 root-preserving, `P`-fibration-preserving affine rechart search through
 `deg X<=4` are in the

@@ -8,14 +8,48 @@ every noninvertible Keller map has already been classified.
 
 The thesis is:
 
-> A noninvertible Keller map in the present families is built from a finite
-> marked-root incidence whose plane core has an apparent ramification
-> divisor.  A vertical map or rational source chart contributes the
-> complementary Jacobian factor, so the suspended polynomial map is etale.
-> Global invertibility still fails because affine source space is only the
-> regular-reconstruction open in the finite normalized root cover.  At its
-> omitted boundary, a reconstruction coordinate has negative valuation and
-> source points escape to infinity.
+> **Boundary-cancelled marked-root algebraization.**  Begin with the finite
+> normalization of a polynomial incidence cover whose generic inverse is
+> obtained by selecting a root of an equation `Psi(T;y)=0`.  Choose a
+> weighted, birational, or reciprocal source chart in which that root is a
+> coordinate.  Along the selected ramified boundary, the marked-root
+> derivative `partial_T Psi` supplies the ramification zero and the chart
+> and reconstruction functions supply the complementary pole.  After the
+> target chart is included, their valuations balance in the determinant
+> ledger, so the algebraized polynomial map has constant nonzero Jacobian.
+> Global polynomial inversion nevertheless fails because affine source
+> space is only the regular-reconstruction open in the normalized root
+> cover.  Across its omitted boundary, the marked root may remain finite
+> while another reconstruction coordinate has negative valuation.
+
+Thus “opposite valuation” means opposite **net** valuation in the full
+source--core--target ledger; it need not be a literal two-factor identity in
+every presentation.  In the reciprocal cancellation chart it is the direct
+product `D^r D^{-r}=1`.  In the weighted chart the source and target vertical
+weights distribute the same cancellation among three determinants.
+
+Once the controlled suspension square and its selected critical
+normalization have been intrinsically identified, the two verified branches
+have different logarithmic types:
+
+| branch | selected critical normalization | logarithmic type | status |
+|---|---|---|---|
+| weighted tangent | `A^1` | one puncture in its `P^1` completion | verified |
+| cancellation/quadratic | `G_m` | two punctures in its `P^1` completion | verified |
+| possible new mechanisms | a rational curve with at least three punctures, several selected boundary components, a nonrational normalization, or nontrivial conductor gluing | higher or nonclassical logarithmic boundary | open |
+
+This is a taxonomy of the selected ramified locus after suspension
+extraction.  It is not the claim that a presentation-dependent plane slice
+is itself a stable invariant; the canonical three-dimensional boundary
+strata and their decorations are the objects used for stable comparison.
+
+The package directly explains the constant Jacobian and nonproperness, and
+it organizes the additional family-specific results on complete collision
+fibres, monodromy, stable inequivalence, and moduli.  It also explains why
+formal or local inverses can exist while a global polynomial inverse fails,
+and why conductor and nonreduced collision data can distinguish cases that
+have the same reduced discriminant.  Section 6 records exactly which of
+these consequences are direct and which require extra theorems.
 
 The recurring dichotomy is therefore
 
@@ -105,7 +139,13 @@ distinguished open.
 
 ## 2. Controlled-boundary suspensions
 
-The determinant mechanism is most naturally a commutative square
+The exact reusable statement is the
+[boundary-cancelled incidence lemma](cancellation/CONTROLLED_BOUNDARY_SUSPENSIONS.md#1-boundary-cancelled-incidence-lemma).
+It packages seven obligations: finite root cover, source-chart valuation,
+controlled divisor, polynomiality, determinant ledger, boundary
+normalization, and collision fibre.
+
+Its determinant square is
 
 ```text
  U = A^3  -------- F -------->  Y = A^3
@@ -115,30 +155,7 @@ The determinant mechanism is most naturally a commutative square
  Z -------------- Phi ----------> T
 ```
 
-in which `alpha` and `beta` are dominant rational maps of smooth
-threefolds, `Phi` is a plane map with one parameter coordinate, and
-
-\[
-\beta\circ F=\Phi\circ\alpha.
-\tag{2.1}
-\]
-
-Suppose the only nonunit factor of the core Jacobian is a divisor `D=0` and
-
-\[
-\det D\Phi=uD^r,\qquad u\in k^\times.
-\tag{2.2}
-\]
-
-Taking determinants in (2.1) gives
-
-\[
-(\det D\beta\circ F)\det DF
-=u(D\circ\alpha)^r\det D\alpha.
-\tag{2.3}
-\]
-
-The corresponding equality of principal Weil divisors is
+If `J_Phi=uD^r`, its one common determinant condition is
 
 \[
 \boxed{
@@ -146,28 +163,21 @@ The corresponding equality of principal Weil divisors is
 +r\operatorname{div}(D\circ\alpha)
 =F^*\operatorname{div}(\det D\beta).
 }
-\tag{2.4}
+\tag{2.1}
 \]
 
-This is the **determinant ledger**.  Pullback through a rational chart is
-interpreted in the common function field, so negative coefficients are
-allowed.  When (2.4) holds, `det DF` is a global unit; on affine space it is
-a nonzero constant.
+Pullback through a rational chart is interpreted in the common function
+field, so negative coefficients record source-chart poles. The lemma proves
+the constant determinant only after the polynomiality obligation has also
+been discharged, and it proves completeness of a collision only after every
+specialized root has been shown to lie in the reconstruction open.
 
-A **controlled-boundary marked-root suspension** consists of:
-
-1. a marked-root package (1.1)--(1.5);
-2. a square (2.1) with core factorization (2.2);
-3. the balanced determinant ledger (2.4);
-4. a finite list of boundary valuations supporting all poles of the rational
-   charts and reconstruction functions; and
-5. a polynomial-algebraization proof showing that the displayed target
-   coordinates pulled back to `U` are polynomials.
-
-The ledger proves local etaleness of the final map.  The fifth condition is
-logically separate.  In the cancellation family it is a finite jet
-congruence; without it, the same rational determinant identity does not
-produce a polynomial map of affine spaces.
+The weighted, cancellation, and quadratic-gauge families are now derived as
+three explicit dictionaries under that lemma. Their determinant arguments
+are identical at this level; their genuine differences are respectively a
+distributed polynomial ledger, a reciprocal `D^{-r}` chart with a finite
+jet gate, and a reciprocal `D^{-1}` marked-line chart with a
+coefficient-weight gate.
 
 ## 3. Boundary--reconstruction and nonproperness theorem
 
@@ -269,155 +279,38 @@ nonempty finite-normalization boundary.  In particular,
 The obstruction is a pole of global reconstruction, not a zero of `det DF`
 at a finite source point.
 
-## 4. The two verified realizations
+## 4. The three verified realizations
 
-The framework above is a theorem for the weighted and cancellation families.
-Exhaustiveness beyond the stated families is not asserted.
+The framework above is a theorem for the weighted, cancellation, and
+root-engineered quadratic-gauge families. Exhaustiveness beyond the stated
+families is not asserted.
 
 ### Theorem 4.1 -- realization theorem
 
-Every admissible weighted marked-root map and every polynomial cancellation
-map is a controlled-boundary marked-root suspension.
+Every admissible weighted marked-root map, every polynomial cancellation
+map, and every root-engineered quadratic-gauge map is a
+boundary-cancelled incidence in the sense of Lemma 1.2.
 
-#### Weighted suspension
+The proof is the three-family dictionary in the
+[common lemma](cancellation/CONTROLLED_BOUNDARY_SUSPENSIONS.md#3-the-three-established-families-are-instances).
+The determinant part is now one argument. The remaining proof obligations
+are family-specific:
 
-For a seed `H`, the plane tangent core is
+| family | polynomiality input | normalized critical curve | collision input |
+|---|---|---|---|
+| weighted | admissible weighted support | `A^1` | a squarefree specialized tangent pencil with regular reconstruction |
+| cancellation | `L_(m,r)(h)=0` | `G_m` | the squarefree integral pencil at `(1,0,0)` |
+| quadratic gauge | coefficient-weight identity for `G_P` | `G_m` | the prescribed squarefree seed `G` at `(1,0,0)` |
 
-\[
-\Phi_H(W,\gamma)
-=\bigl(H'(W)+c\gamma,\,
-W(H'(W)+c\gamma)-H(W)\bigr)
-\tag{4.1}
-\]
+The exact weighted incidence and Fitting calculation is in the
+[tangent-map core](verified/TANGENT_MAP_CORE.md). The finite jet gate and
+reconstruction are in the
+[cancellation construction](cancellation/CONSTRUCTION.md). The marked-line
+polynomiality identity, dual normalization, and programmable fibre are in the
+[quadratic-gauge theorem](cancellation/ROOT_ENGINEERED_QUADRATIC_GAUGE.md).
+QED
 
-with
-
-\[
-\det D\Phi_H=-c^2\gamma.
-\tag{4.2}
-\]
-
-For
-
-\[
-\gamma=1+a_0xy+b_0x^2z,\qquad
-W=(1+xy)\gamma,\qquad C=x\gamma,
-\]
-
-the source and target vertical determinants are
-
-\[
-\det D\alpha=b_0x^3\gamma^2,\qquad
-\det D\beta=-cC^3.
-\tag{4.3}
-\]
-
-Since `C=x gamma`, the three powers of `gamma` in the core/source product
-match the three powers in the target ledger, and
-
-\[
-\det DF=b_0c.
-\tag{4.4}
-\]
-
-The inverse incidence is
-
-\[
-\Psi_H(W;A,B,C)=H(W)-BCW+cAC^2=0,
-\tag{4.5}
-\]
-
-and
-
-\[
-\partial_W\Psi_H=H'(W)-BC=-c\gamma,\qquad
-x=-\frac{cC}{\partial_W\Psi_H}.
-\tag{4.6}
-\]
-
-Thus the repeated-root equation, the core Jacobian zero, and the generic
-reconstruction pole are one divisor viewed in three coordinate systems.
-The exact normalization, including the additional `C=0` charts, is proved in
-the [weighted marked-root theorem](verified/WEIGHTED_SEED_THEOREM.md).
-
-#### Cancellation suspension
-
-Put
-
-\[
-D(s,P,Q)=1-s(Q-Ps)^m
-\]
-
-and
-
-\[
-R(s,P,Q)=C\int_0^sD(t,P,Q)^r\,dt.
-\tag{4.7}
-\]
-
-The plane core over `P` has
-
-\[
-\det\frac{\partial(P,Q,R)}{\partial(s,P,Q)}=CD^r.
-\tag{4.8}
-\]
-
-On the rational source chart,
-
-\[
-D=A^{-1},\qquad
-\det\frac{\partial(s,P,Q)}{\partial(x,y,z)}
-=-A^r=-D^{-r}.
-\tag{4.9}
-\]
-
-The factors cancel directly and give
-
-\[
-\det DF=-C.
-\tag{4.10}
-\]
-
-The inverse equation and reconstruction are
-
-\[
-\Psi_{m,r}(T)
-=C\int_0^T\{1-t(Q-Pt)^m\}^r\,dt-R=0,
-\tag{4.11}
-\]
-
-\[
-y=Q-TP,\qquad A=D^{-1},\qquad x=TD^{-1},
-\tag{4.12}
-\]
-
-with the displayed formula for `z` in the
-[cancellation construction](cancellation/CONSTRUCTION.md).  Here
-
-\[
-\partial_T\Psi_{m,r}=CD^r.
-\tag{4.13}
-\]
-
-The determinant identity holds for every parameter polynomial `h`, but the
-last target coordinate is polynomial on `A^3` exactly when the finite
-cancellation operator satisfies
-
-\[
-\mathcal L_{m,r}(h)=0.
-\tag{4.14}
-\]
-
-Equation (4.14) is therefore a literal polynomial-algebraization condition:
-it cancels the possible pole left by the rational chart, not a remaining
-Jacobian zero.
-
-The formulas (4.1)--(4.14) prove the theorem.  Their canonical sources are
-the [tangent-map core](verified/TANGENT_MAP_CORE.md), the
-[controlled-boundary ledger](cancellation/CONTROLLED_BOUNDARY_SUSPENSIONS.md),
-and the [cancellation construction](cancellation/CONSTRUCTION.md).  QED
-
-## 5. The foundational cubic in both charts
+## 5. The foundational cubic in all three families
 
 Put `u=1+xy` and
 
@@ -433,8 +326,9 @@ F_0(x,y,z)=
 \tag{5.1}
 \]
 
-This is the smallest example in which the two suspension types give the same
-polynomial Keller map up to polynomial left--right equivalence.
+This is the smallest example in which the polynomial weighted type and both
+reciprocal constructions give the same polynomial Keller map up to
+polynomial left--right equivalence.
 
 ### Weighted chart
 
@@ -516,7 +410,16 @@ v_E(D)=1,\qquad v_E(x)=-1.
 \tag{5.9}
 \]
 
-In both charts the unique ramified boundary prime over the cubic
+### Quadratic gauge
+
+The root-engineered seed `G(S)=S^3+S` makes the normalized all-degree
+quadratic-gauge formula exactly `F_0`. Its marked-line core has derivative
+`D`, its reciprocal source chart contributes `D^{-1}`, and its
+coefficient-weight polynomiality sum is empty. Thus it is a third incidence
+presentation of the same cubic, but it belongs to the same reciprocal
+suspension type as the cancellation chart.
+
+In the weighted and cancellation charts the unique ramified boundary prime over the cubic
 discriminant has ramification index two and carries a simple source pole.
 The left--right equivalence (5.8), together with functoriality of the finite
 normalization package, identifies these as the same intrinsic boundary
@@ -525,6 +428,15 @@ vertical weights in (5.3), a reciprocal rational chart in (5.7).
 
 The complete branch-collapse calculation is
 [Theorem 4.1 of the minimal-boundary note](cancellation/MINIMAL_BOUNDARY_CLASSIFICATION.md#4-cubic-collapse-inside-the-two-branches).
+
+This cubic overlap is exhaustive for the cancellation and root-engineered
+quadratic-gauge families.  In every degree at least four, the
+ramified-stratum Fitting supports have affine ranks one and two,
+respectively; independently, the target-boundary contact has nilpotency
+index `mr(m+1)` and `2`.  Thus even the higher `m=1` stationary-point
+ladder does not meet the root-engineered quadratic-gauge family stably.  See
+the
+[quadratic-gauge/cancellation stable-intersection theorem](verified/QUADRATIC_CANCELLATION_STABLE_INTERSECTION.md).
 
 ## 6. What follows, and what only echoes the thesis
 
@@ -570,9 +482,24 @@ geometry:
 \]
 
 The open direction is to reconstruct the formula from the intrinsic
-Zariski--Main package.
+Zariski--Main package.  The sharpened classification strategy is therefore
 
-### Minimal-boundary suspension conjecture
+\[
+\boxed{
+\text{operational intrinsic boundary invariants}
+\Longrightarrow
+\text{verified gateway and controlled suspension square}
+\Longrightarrow
+\text{formula and polynomial algebraization}.
+}
+\tag{7.2}
+\]
+
+In particular, one should classify the selected normalization, its
+punctures, boundary valuations, multiple components, and conductor gluing
+before classifying coordinate formulas.
+
+### Minimal-boundary gateway and suspension conjecture
 
 Let
 
@@ -580,32 +507,52 @@ Let
 F:\mathbb A^3\longrightarrow\mathbb A^3
 \]
 
-be a nonproper Keller map whose intrinsic finite-normalization package has:
+be a nonproper Keller map whose canonical finite-normalization package passes
+the following proposed intrinsic gateway tests:
 
-1. one geometrically integral rational critical-boundary normalization;
+1. a canonical, left--right-functorial rule selects one geometrically
+   integral rational critical-boundary normalization;
 2. saturated affine links with no undeclared zero or pole support;
-3. boundary-monotone positive links;
+3. an intrinsically oriented positive link is boundary-monotone;
 4. at most two places at infinity on the critical normalization; and
-5. a divisor-minimal ledger with no unrecorded graph valuation.
+5. a divisor-minimal ledger has no unrecorded graph valuation, and deleting
+   a recorded boundary destroys the saturated link or ledger.
 
 Then `F` is polynomially left--right equivalent to either a weighted tangent
 suspension or a cancellation suspension.
 
 This is the existing
-[minimal-boundary classification conjecture](cancellation/MINIMAL_BOUNDARY_CLASSIFICATION.md),
-restated here to show its role in the thesis.  It is deliberately not a
-conjecture about every arbitrary Keller map without hypotheses.
+[minimal-boundary gateway and classification conjecture](cancellation/MINIMAL_BOUNDARY_CLASSIFICATION.md),
+restated here to show its role in the thesis.  The five items are proposed
+gateway conditions, not a currently available decision procedure.  In
+particular, the repository still has to define or extract canonically the
+selector, orientation, graph audit, and deletion test without first
+recognizing one of the desired suspension formulas.  The statement is
+therefore a classification conjecture relative to a conjectural intrinsic
+gateway, not a classification theorem with independently checkable
+hypotheses and not a conjecture about every nonproper Keller map.
 
-The first extraction theorem to prove is:
+The required implication chain is:
 
 \[
 \boxed{
-\text{intrinsic minimal boundary package}
+\text{operational invariants of the canonical finite normalization}
 \Longrightarrow
-\text{coordinate-preserving controlled suspension square}.
+\text{verified gateway conditions}
+\Longrightarrow
+\text{coordinate-preserving controlled suspension square}
+\Longrightarrow
+\text{suspension formula}.
 }
-\tag{7.2}
+\tag{7.3}
 \]
+
+The first arrow includes canonical marking selection and an exhaustive
+graph-divisor audit.  The second includes noncontraction and primitive
+conormal extraction.  The last is conditional on positive-chart
+straightening in the positive branch.  None of these steps may use
+coordinates obtained from an already recognized weighted or cancellation
+presentation.
 
 Once the square is extracted, the number of places on the normalized
 critical curve separates the expected branches:
@@ -617,7 +564,7 @@ critical curve separates the expected branches:
 \mathbb G_m
 \rightsquigarrow
 \text{reciprocal cancellation core}.
-\tag{7.3}
+\tag{7.4}
 \]
 
 The remaining algebraization problem is then branch-specific:
@@ -631,9 +578,10 @@ The remaining algebraization problem is then branch-specific:
 
 In geometric degree three, the two extracted branches already collapse to
 the same foundational map by Section 5.  The active task is therefore not to
-compare two cubic answers, but to prove either intrinsic cubic gateway:
-suspension extraction, or flat binary-cubic normalization followed by
-coefficient-gauge straightening.
+compare two cubic answers.  After making the overarching intrinsic gateway
+operational, it is enough to complete either cubic frontend: suspension
+extraction, or flat binary-cubic normalization followed by coefficient-gauge
+straightening.
 
 ## 8. A practical claim discipline
 

@@ -344,23 +344,22 @@ degree-thirty intersection is scheme-theoretically synchronized, including
 components which miss the complete-decomposition braid charts.  This does
 not certify every degree-thirty subintersection.  The nested pair
 \(\{2,10\}\) is separately certified in `4 normal | 7 base` coordinates,
-with Groebner-basis size four.  Two further primitive pairs are now exact:
+with Groebner-basis size four.  Two further primitive pairs are exact:
 a universal quadratic parity argument proves \(\{2,15\}\), and an exact
 free-module cubic remainder calculation proves \(\{3,10\}\) with
-Groebner-basis size `184`.  The three two-cut pairs
+Groebner-basis size `184`.  Exact transported model-coordinate reductions
+also prove the three two-cut pairs
 
 \[
  \{2,3\},\ \{2,5\},\ \{3,5\}
                                                                \tag{6.6}
 \]
 
-remain outside the permanent exact pair certificate.  They are exactly the
-pairs with a nontrivial common right decoration.  Their core reductions and
-ranked attacks are recorded in
+with reconstructed characteristic-zero basis sizes `1677, 344, 1896`.
+Their coordinate construction is recorded in
 [the degree-thirty synchronization attack note](DEGREE30_HESSIAN_SYNCHRONIZATION_ATTACKS.md).
 Four additional non-tree pairs have separate exact factor-chart
-certificates, so altogether twelve of the fifteen degree-thirty pairs are
-settled.
+certificates, so all fifteen degree-thirty pairs are settled.
 
 ## 7. The low-degree diagrams in relation-graph form
 
@@ -530,10 +529,15 @@ The experiments now point to a short, theorem-driven program.
    relation graphs.  Every multiple intersection through degree `24`
    satisfies the stronger ideal statement by (6.4).  The global all-six
    degree-thirty intersection is also synchronized by the spanning tree
-   (6.5), and the primitive pairs \(\{2,15\}\) and \(\{3,10\}\) are exact.
-   The three transported cases in (6.6), and subintersections whose
-   requested-cut graph does not contain a certified connecting path, remain
-   scheme-theoretically open.
+   (6.5), the primitive pairs \(\{2,15\}\) and \(\{3,10\}\) are exact, and
+   all three transported cases in (6.6) have exact model-coordinate
+   certificates.  The remaining goal is a uniform all-degree transport
+   theorem for arbitrary square-free relation graphs.  The
+   [common-right-factor synchronization theorem](COMMON_RIGHT_FACTOR_SYNCHRONIZATION.md)
+   now proves the uniqueness half over every \(\mathbb Q\)-algebra: once
+   equal-degree terminal refinements exist, their top jets coincide and the
+   linear defect vanishes.  What remains is to lift the reduced gcd
+   refinement through arbitrary primary thickenings.
 2. **Transfer the normal form.**  Once synchronization holds, apply the
    relation-graph theorem blockwise and the finite marked-Hessian
    normalization to obtain the component classification and (5.3).

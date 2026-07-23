@@ -1,7 +1,7 @@
 # Cubic critical-boundary marking extraction
 
 This note advances the geometric-degree-three case of the
-[minimal-boundary classification conjecture](MINIMAL_BOUNDARY_CLASSIFICATION.md).
+[minimal-boundary gateway and classification conjecture](MINIMAL_BOUNDARY_CLASSIFICATION.md).
 It proves that the primitive marking on a one-place cubic plane core is
 automatic, constructs the exact two-place defect atlas showing why the same
 argument cannot work from puncture count alone, and excludes the most direct
@@ -231,9 +231,10 @@ been selected.  Thus:
 \]
 
 The maps (2.2) are plane cores, not Keller maps of `A^3`.  They do not
-disprove the minimal-boundary classification conjecture.  Instead, they show
-that the missing marking must use the threefold boundary package and its
-ambient embedding, rather than only degree, ramification, and punctures.
+disprove the gateway and classification conjecture.  Instead, they show
+that `PC` cannot be proved from degree, ramification, and puncture rank
+alone: its witness must use the threefold boundary package and its ambient
+embedding.
 
 ## 3. Reciprocal polynomiality excludes the toric defects
 
@@ -747,7 +748,8 @@ gauge and there is no second unramified boundary divisor, the
 hyperplane-orbit theorem gives the foundational map directly.  This
 replaces the branch markings in that subcase, but leaves cotangent
 cyclicity, coefficient straightening, and exclusion of the second divisor
-to be derived from the bare package.
+to be used to construct and verify the `PC`, `CS`, and `LC` parts of the
+finite-normalization witness.
 
 The Hartogs extension criterion narrows the first item further: it is enough
 that the pure two-dimensional scheme-theoretic ramification support satisfy

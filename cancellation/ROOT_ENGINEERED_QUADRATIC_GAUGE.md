@@ -101,7 +101,7 @@ and direct substitution turns (1) into
  \end{aligned}
 \]
 
-The two determinant factors are
+The reciprocal chart and controlled-divisor factors are
 
 \[
  \det\frac{\partial(P,S,Q)}{\partial(x,y,z)}=t=D^{-1}
@@ -115,14 +115,16 @@ and
  =-18(1-SQ+PS^2)=-18D.                                  \tag{6}
 \]
 
-Their product is `-18`.  Since (1) is polynomial, equality on the dense
-chart `t!=0` proves
+These are the degree-four quadratic-gauge inputs to the
+[boundary-cancelled incidence lemma](CONTROLLED_BOUNDARY_SUSPENSIONS.md#33-root-engineered-quadratic-gauge).
+Here `D=t^{-1}`, the polynomiality condition is already visible in (1), and
+the lemma gives
 
 \[
  \boxed{\det DF=-18}
 \]
 
-everywhere.
+everywhere, without a separate three-variable Jacobian expansion.
 
 Eliminating `Q` from (4) gives the inverse equation over a target `(P,B,C)`:
 
@@ -210,8 +212,8 @@ Then
  \end{aligned}
 \]
 
-Together with (5), this gives a constant three-dimensional determinant
-`-2a^2`.
+Together with the reciprocal source chart (5), this is the ledger in
+Lemma 1.2 and gives the constant three-dimensional determinant `-2a^2`.
 
 This is an exact gauge of the standard `(m,r)=(1,1)` plane core.  Indeed put
 
@@ -408,45 +410,20 @@ uses the ramified horizontal coordinate `X=S^2`.  This is the geometric
 reason that the two constructions have parallel inverse, discriminant, and
 reconstruction formulas.
 
-This observation can be packaged as a general incidence-suspension
-criterion.  Suppose a birational source chart has Jacobian `D^{-1}`, where
-
-\[
- D=D_0(P,S)-\kappa(P,S)Q.
-\]
-
-Choose a nonzero constant `lambda` and functions `X(P,S),Y(P,S)` such that
-
-\[
- X_S=\lambda\kappa,\qquad
- \beta=\frac{Y_S-\lambda D_0}{X_S}
-\]
-
-is regular in the desired chart.  Then
-
-\[
- B=Q+\beta,\qquad C=Y-BX                              \tag{24g}
-\]
-
-satisfy
-
-\[
- Y_S-BX_S=\lambda D,\qquad
- \det\frac{\partial(P,B,C)}{\partial(x,y,z)}=-\lambda. \tag{24h}
-\]
-
-For the present chart,
+The general implication in the preceding paragraph is now Lemma 1.2 rather
+than a family-local criterion. For the present application its design data
+are
 
 \[
  D_0=1+PS^2,\qquad \kappa=S,\qquad
  \lambda=2,\qquad X=S^2,\qquad Y=2G_P/g_1.             \tag{24i}
 \]
 
-This criterion separates the construction into three independent design
-problems: find a reciprocal-Jacobian chart, integrate its `Q`-coefficient
-to obtain the horizontal curve coordinate `X`, and choose `Y` so that
-`beta` and its pullback are polynomial.  Equations (18)--(21) solve the
-third problem while prescribing the fiber polynomial.
+The common lemma separates construction into three independent design
+problems: find a reciprocal-Jacobian chart, integrate its `Q`-coefficient to
+obtain the horizontal curve coordinate `X`, and choose `Y` so that the
+resulting slope correction and its pullback are polynomial. Equations
+(18)--(21) solve the third problem while prescribing the fibre polynomial.
 
 ## 4. The denominator-free all-degree map
 
@@ -474,7 +451,8 @@ Then define
  }                                                        \tag{26}
 \]
 
-Formula (26) is the pullback of the normalized form of (14).  Consequently
+Formula (26) is the polynomial algebraization required by the common lemma.
+Consequently
 
 \[
  \boxed{\det DF_G=-2.}                                   \tag{27}
@@ -932,11 +910,23 @@ but their dimensions are `N-3` and `N-4`, respectively.  The exact
 classification is proved in the
 [quadratic-gauge stable-moduli theorem](../verified/QUADRATIC_GAUGE_STABLE_MODULI.md).
 
+The comparison with the standard cancellation family is also complete.
+Although the stationary-point ladder is the `m=1` cancellation column, only
+its first rung belongs to the root-engineered quadratic-gauge family up to
+stable polynomial left--right equivalence.  The foundational cubic is the
+unique common stable class.  For every `N>=4`, the cancellation
+ramified-stratum Fitting generator is binomial while the quadratic generator
+has two-dimensional Laurent support; independently, their thick
+boundary-intersection nilpotency indices are `mr(m+1)` and `2`.  See the
+[quadratic-gauge/cancellation stable-intersection theorem](../verified/QUADRATIC_CANCELLATION_STABLE_INTERSECTION.md).
+
 ## 11. Incidence suspensions through horizontal degree four
 
-The abstract criterion (24g)--(24h) is an equivalence inside the
-coordinate-preserving marked-line ansatz: for a fixed reciprocal chart,
-`X_S=lambda*kappa` is forced, and the remaining equation for `Y` is linear.
+The marked-line specialization of the
+[boundary-cancelled incidence lemma](CONTROLLED_BOUNDARY_SUSPENSIONS.md#33-root-engineered-quadratic-gauge)
+is an equivalence inside the coordinate-preserving ansatz: for a fixed
+reciprocal chart, `X_S=lambda*kappa` is forced, and the remaining equation
+for `Y` is linear.
 
 There is also a complete bounded rechart calculation.  Preserve the marked
 root and the `P`-fibration, and consider every determinant-one affine

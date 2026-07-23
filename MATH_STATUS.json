@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "authority": "MATH_STATUS.json",
   "entries": [
     {
@@ -11,10 +11,42 @@
       "canonical_source": "verified/FOUNDATIONAL_GEOMETRY.md",
       "dependencies": [],
       "checker": "scripts/verify_counterexample_independent.py",
-      "review": "formalized",
+      "proof_type": "formal",
+      "independent_replay": false,
+      "formal_verification": true,
+      "external_review": false,
+      "artifact_hash": "sha256:7ee27ca8dea223b2db1927e3bcc928a22410fa3d92a279fe9f51bcb755ac6c11",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [],
       "replaced_by": [],
       "priority": "core"
+    },
+    {
+      "id": "BCI1",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Boundary-cancelled incidence lemma",
+      "scope": "A finite marked-root cover with explicit reconstruction, a controlled core divisor J_Phi=u*Delta^e, an exact source/target valuation ledger, and a separately proved polynomiality condition yields determinant u*kappa. A finite birational controlled divisor normalizes the reduced repeated-root discriminant, and any squarefree specialized root polynomial whose roots remain in the reconstruction open gives the complete reduced collision fibre. Weighted tangent, cancellation, and root-engineered quadratic-gauge maps are the three explicit applications; their classification data are the polynomiality gate and marked boundary normalization, not another Jacobian expansion.",
+      "canonical_source": "cancellation/CONTROLLED_BOUNDARY_SUSPENSIONS.md",
+      "dependencies": [],
+      "checker": "scripts/verify_controlled_boundary_suspensions.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:9ca0f02d89ae116871634fca3148ea2f672511c08816d4166f4dd43ced433edd",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [
+        "family-local determinant chain-rule derivations"
+      ],
+      "replaced_by": [],
+      "priority": "reference"
     },
     {
       "id": "W1",
@@ -24,10 +56,19 @@
       "scope": "Every polynomial core and admissible weighted seed; inverse pencil, Jacobian/critical divisor, discriminant normalization, Hessian Fitting divisor, incidence normal form, and suspension comparison.",
       "canonical_source": "verified/TANGENT_MAP_CORE.md",
       "dependencies": [
-        "F1"
+        "F1",
+        "BCI1"
       ],
       "checker": "scripts/verify_weighted_seed_theorem.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:8ea08cc93993b6a5c49ca3ac7241d141f700cd6b8bb70d193d482c0df48e6fd9",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "local Jacobian/discriminant derivations"
       ],
@@ -41,9 +82,19 @@
       "title": "Cancellation construction",
       "scope": "All cancellation parameters m,r: universal Jacobian, polynomiality criterion, unique parameter-root jet, reconstruction degree, and symbolic collision.",
       "canonical_source": "cancellation/CONSTRUCTION.md",
-      "dependencies": [],
+      "dependencies": [
+        "BCI1"
+      ],
       "checker": "scripts/verify_master_universal.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:224dcccd4c7410eb0b0a65f9bc922e5e60a27993ae5fd1860eadbd063f929309",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "case tables"
       ],
@@ -58,11 +109,20 @@
       "scope": "For every seed G(S)=g_1 S+...+g_N S^N with g_1 g_3 g_N nonzero, an explicit denominator-free polynomial map of A3 has determinant -2, inverse pencil G_P(S)-(g_1/2)(B S^2+C), geometric and arithmetic monodromy S_N, and a complete fiber prescribed by the simple roots of G. The plane core is marked-line incidence on the curve (S^2,2G_P/g_1): its tangency divisor equals the inverse-equation derivative and cancels the reciprocal source-chart Jacobian. For fixed nonzero P, its reduced plane discriminant is the affine dual curve and has normalization G_m. The seed S^3+S is exactly the foundational map; consecutive-root seeds give complete rational N-point fibers in every degree; the displayed quartic map and a smaller-coefficient quartic are explicit specializations.",
       "canonical_source": "cancellation/ROOT_ENGINEERED_QUADRATIC_GAUGE.md",
       "dependencies": [
+        "BCI1",
         "C1",
         "external: classical Morse-polynomial monodromy theorem"
       ],
       "checker": "scripts/verify_root_engineered_quadratic_gauge.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:0d78508262af05090f6ef9c39bbcfb29d0d2a31109017f7d6aa25b95ad6b35de",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [],
       "replaced_by": [],
       "priority": "derived"
@@ -80,7 +140,15 @@
         "WB1"
       ],
       "checker": "scripts/verify_quadratic_weighted_stable_separation.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:3a6f63dfcbb12e4d67b3d733548683039bdebce7ddb69a467356eaac41785758",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "quadratic-versus-weighted stable-distinction question"
       ],
@@ -100,9 +168,47 @@
         "S1"
       ],
       "checker": "scripts/verify_quadratic_gauge_stable_moduli.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:e6f03882ad4c1fc0dc2ffa512503c473f462a59cf10f3bca235dd60889798ba8",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "proposed N-3 quadratic-gauge stable-moduli count"
+      ],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
+      "id": "RQG4",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Quadratic-gauge/cancellation stable intersection",
+      "scope": "The root-engineered quadratic-gauge family and the full normalized (m,r) cancellation family have exactly one common stable polynomial left-right class: the foundational cubic. For every N>=4, the normalized ramified-stratum Fitting generator is binomial for cancellation but has affine-rank-two Laurent support for every admissible quadratic seed. Independently, the two target-boundary images meet with nilpotency index mr(m+1)>=4 for cancellation and exactly 2 for a quadratic gauge. The result includes all factorizations N-1=(m+1)r, all cancellation parameter roots and tails, seeds with vanishing intermediate coefficients, and an exact symbolic audit in degrees 4 through 7.",
+      "canonical_source": "verified/QUADRATIC_CANCELLATION_STABLE_INTERSECTION.md",
+      "dependencies": [
+        "RQG1",
+        "RQG2",
+        "S1",
+        "B1",
+        "T1"
+      ],
+      "checker": "scripts/verify_quadratic_cancellation_intersection.py",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:70d0a31848eb83242a495832a74ebc85cb356ae305bdc182ecb21e12e206ce71",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [
+        "quadratic-gauge versus cancellation stable-intersection question"
       ],
       "replaced_by": [],
       "priority": "reference"
@@ -118,7 +224,15 @@
         "RQG1"
       ],
       "checker": "scripts/verify_incidence_suspension_degree_four.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:614dfa258f2e63a4a6de81f45731f6b0136ca9ddfe7ec15b136c762bad9855a0",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "cubic and degree-four diagonal incidence-rechart search"
       ],
@@ -137,7 +251,15 @@
         "C1"
       ],
       "checker": "scripts/audit_boundary_exhaustion_independent.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:3af0f9a74510bf21912267e560ea856e2cabe7a40b026239c80edc821dc5a924",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "chart-only arguments"
       ],
@@ -156,7 +278,15 @@
         "C1"
       ],
       "checker": "scripts/audit_thick_intersection_local.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:1d6b772aad0ce78150bda9e8e60a6874be4cd06c24aeef3ca87d9f73cc80c712",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "conditional contact-resultant input for the total contact length"
       ],
@@ -172,7 +302,12 @@
       "canonical_source": "verified/STABLE_NORMALIZATION_FUNCTORIALITY.md",
       "dependencies": [],
       "checker": null,
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": null,
+      "software_lock": [],
       "supersedes": [
         "construction-private stabilization arguments"
       ],
@@ -191,7 +326,15 @@
         "W1"
       ],
       "checker": "scripts/verify_decorated_normalization.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:ef2d714efbf5d2ef856330ebf802e2ea20015266e7d0ede89a16ebf416422287",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "presentation-defined weighted boundary marks"
       ],
@@ -212,7 +355,15 @@
         "T1"
       ],
       "checker": "scripts/verify_cancellation_parameter_faithfulness.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:d5e4367461ced5491ea428e2f7686e608e797176c3168efb2800099543b83064",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [],
       "replaced_by": [],
       "priority": "core"
@@ -231,7 +382,15 @@
         "P1"
       ],
       "checker": "scripts/verify_degreewise_multiplicity_count.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:d411b1f9f4f9c2d067bd54e47537edbc37b219dedeafd3a584add9ef24073a3e",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "tau(N-1)"
       ],
@@ -251,7 +410,15 @@
         "WB1"
       ],
       "checker": "scripts/verify_decorated_normalization.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:ef2d714efbf5d2ef856330ebf802e2ea20015266e7d0ede89a16ebf416422287",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "degree-five-only moduli"
       ],
@@ -263,7 +430,7 @@
       "kind": "theorem",
       "state": "proved",
       "title": "Generic affine-mark faithfulness and marked normalization",
-      "scope": "On the Hessian-clean open, the marked Hessian divisor plus one affine root sheet recovers the seed exactly; after shrinking, the seed open normalizes the marked image and forgetting the sheet is finite étale of degree N-2.",
+      "scope": "On the Hessian-clean open, the marked Hessian divisor plus one affine root sheet recovers the seed exactly; after shrinking, the seed open normalizes the marked image and forgetting the sheet is finite \u00e9tale of degree N-2.",
       "canonical_source": "papers/decorated-discriminant-normalization/main.tex",
       "dependencies": [
         "D1",
@@ -272,7 +439,15 @@
         "WB1"
       ],
       "checker": "scripts/verify_generic_affine_mark_faithfulness.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:2f4a8575f0577c76ec30714a82bf21d0de64c04500b566b176782e23443579b2",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "six-orbit bound",
         "legacy global-faithfulness proof"
@@ -281,11 +456,37 @@
       "priority": "core"
     },
     {
+      "id": "H1-UNMODIFIED",
+      "kind": "theorem",
+      "state": "falsified",
+      "title": "Unmodified root-stable Hurwitz--LL quotient identification",
+      "scope": "Falsified in degree five: the local comparison requires the normalized blowup of (x^3,y^2), so the unmodified root-stable quotient is not the Hurwitz--LL compactification.",
+      "canonical_source": "extended-geometry/RECURSIVE_RESONANCE_ATLAS.md",
+      "dependencies": [
+        "MFS1"
+      ],
+      "checker": "scripts/verify_recursive_resonance_atlas.py",
+      "proof_type": "counterexample",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:ad63ef86aceb162506897c2867c11a43911561e79314487f6ef66bea6bf6e0e6",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [],
+      "replaced_by": [
+        "H1"
+      ],
+      "priority": "reference"
+    },
+    {
       "id": "H1",
       "kind": "theorem",
       "state": "proved",
       "title": "Hurwitz--LL compactification of rerooting",
-      "scope": "The original identification with the unmodified root-stable quotient is false: degree five requires the normalized blowup of (x^3,y^2). The corrected polynomial Hurwitz--LL graph is the normalized selected admissible-cover stack over the normalized wonderful pullback of the labelled branch-diagonal building set. Its coarse space is the wonderful graph. On every nested chart, framed target screens have affine-composition contractions; source maps are normalized initial forms of the polynomial map after the Kummer equations q=u*s^e; every weighted target-flag fiber is cut out by R(U)-a=0; and initial-form transitivity proves contraction compatibility. Full vertex centralizers, including permutations of isomorphic disconnected components, are matched across source-node cycles and then intersected with every diagonal Kummer phase, giving all simultaneous inertia. Collision-adapted Hurwitz changes and label permutations transport these charts equivariantly. This supplies the explicit logarithmic atlas and completes corrected H1 in characteristic zero.",
+      "scope": "The corrected polynomial Hurwitz--LL graph is the normalized selected admissible-cover stack over the normalized wonderful pullback of the labelled branch-diagonal building set. Its coarse space is the wonderful graph. On every nested chart, framed target screens have affine-composition contractions; source maps are normalized initial forms of the polynomial map after the Kummer equations q=u*s^e; every weighted target-flag fiber is cut out by R(U)-a=0; and initial-form transitivity proves contraction compatibility. Full vertex centralizers, including permutations of isomorphic disconnected components, are matched across source-node cycles and then intersected with every diagonal Kummer phase, giving all simultaneous inertia. Collision-adapted Hurwitz changes and label permutations transport these charts equivariantly. This supplies the explicit logarithmic atlas and completes corrected H1 in characteristic zero.",
       "canonical_source": "extended-geometry/RECURSIVE_RESONANCE_ATLAS.md",
       "dependencies": [
         "BW1",
@@ -299,9 +500,17 @@
         "external: admissible-cover compactification technology"
       ],
       "checker": "scripts/verify_recursive_resonance_atlas.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:ad63ef86aceb162506897c2867c11a43911561e79314487f6ef66bea6bf6e0e6",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
-        "unmodified root-stable quotient as the Hurwitz--LL compactification",
+        "H1-UNMODIFIED",
         "explicit H1 stack atlas as an open gap"
       ],
       "replaced_by": [],
@@ -320,7 +529,12 @@
         "SFG1"
       ],
       "checker": null,
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": null,
+      "software_lock": [],
       "supersedes": [
         "former stacky portion of OP-MARK"
       ],
@@ -339,7 +553,12 @@
         "H2"
       ],
       "checker": null,
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": null,
+      "software_lock": [],
       "supersedes": [
         "OP-MARK"
       ],
@@ -355,7 +574,15 @@
       "canonical_source": "extended-geometry/BRANCH_SCALE_FAN.md",
       "dependencies": [],
       "checker": "scripts/verify_branch_scale_fan.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:522ac1583dfba0bd88438b4afd347cc65944181dfcb0bc0e147fae6bbd8bd8cb",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [],
       "replaced_by": [],
       "priority": "reference"
@@ -372,7 +599,15 @@
         "external: wonderful compactification of configuration spaces"
       ],
       "checker": "scripts/verify_branch_wonderful_pullback.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:cd16b67d5b0a114bdc77654550d843a994388e535b29c183b70b4d1c901e98ad",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "target half of the recursive branch-scale fan conjecture"
       ],
@@ -391,7 +626,15 @@
         "LN1"
       ],
       "checker": "scripts/verify_source_vertex_rigidity.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:3d6e866618f9e3076d879121e3a90b4d59599691f69830d6970a642a5250713e",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "independent Hurwitz-class enumeration at every source vertex"
       ],
@@ -412,7 +655,15 @@
         "LN1"
       ],
       "checker": "scripts/verify_general_radial_source_atlas.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:b5a72189b5047da78560b393aea226cbb0ab57eb01f1345cf1d42145a81dc6fa",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "degree-six-only radial source rule as the general model",
         "arbitrary-multiplicity radial inertia is always trivial"
@@ -434,7 +685,15 @@
         "external: Riemann existence and minimal transposition factorization theory"
       ],
       "checker": "scripts/verify_polynomial_monodromy_forests.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:ae7557fa55bcbfac3679b69e5971d1b270e3c68f64cf20076cd6b79e9150e17e",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "separate Maxwell and caustic node-partition rules"
       ],
@@ -453,7 +712,12 @@
         "external: finiteness and normalization of fully marked admissible-cover branch morphisms"
       ],
       "checker": null,
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": null,
+      "software_lock": [],
       "supersedes": [
         "general coarse polynomial Hurwitz-component selection as a separate problem",
         "possible source-side coarse modifications after the wonderful graph"
@@ -474,7 +738,15 @@
         "GRS1"
       ],
       "checker": "scripts/verify_monodromy_inertia_characters.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:c3dac5298183f82f4b105bc4503604500a6c4ecd2ee6fd9e86a6d0b49f4fcf94",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "degree-six-only radial versus Maxwell inertia rule",
         "generic resonance inertia by chart-specific automorphism guesses"
@@ -500,7 +772,15 @@
         "external: wonderful screen charts, tame Weierstrass preparation, and admissible-cover local deformation theory"
       ],
       "checker": "scripts/verify_recursive_resonance_atlas.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:ad63ef86aceb162506897c2867c11a43911561e79314487f6ef66bea6bf6e0e6",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "higher-codimension flag-divisor coordinates as an open H1 gap",
         "manual simultaneous inertia tables on nested resonance charts"
@@ -520,7 +800,15 @@
         "external: Kapranov's blowup construction of Mbar_0,n"
       ],
       "checker": "scripts/verify_degree_six_branch_target_graph.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:92a88b2b1805b88848160cbdeeee0d4f54651ce53cc304a17a9bc28c1a918460",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [],
       "replaced_by": [],
       "priority": "reference"
@@ -536,7 +824,15 @@
         "BT1"
       ],
       "checker": "scripts/verify_degree_six_admissible_equal_scale.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:57ad3b811df578f8f1f5fc6e8294dc00d403c1dc557f5b2239788a042d14c034",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [],
       "replaced_by": [],
       "priority": "reference"
@@ -553,7 +849,15 @@
         "BT1"
       ],
       "checker": "scripts/verify_degree_six_admissible_radial_atlas.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:8f2d4e116d2e25fd106f1acff288f3cb0488c41df7a3d553857f71d265e04e00",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [],
       "replaced_by": [],
       "priority": "reference"
@@ -570,7 +874,15 @@
         "BT1"
       ],
       "checker": "scripts/verify_degree_six_admissible_maxwell_atlas.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:04a150acca6a29611c87111ee473bef0c29fe11e6d619d16958a1f0f68d1c00e",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [],
       "replaced_by": [],
       "priority": "reference"
@@ -588,7 +900,15 @@
         "external: admissible-cover compactification technology"
       ],
       "checker": "scripts/verify_degree_six_central_hurwitz_selection.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:cdb95d91ea990e61116254615e271eb901a0f0c1add8f6e9aa59a881851f781a",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [],
       "replaced_by": [],
       "priority": "reference"
@@ -605,7 +925,15 @@
         "BM1"
       ],
       "checker": "scripts/verify_degree_six_stack_inertia.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:09f08227528af36ecb6da1ad61656ca56c805d677c5f3b3bbd6743b1a13c15aa",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [],
       "replaced_by": [],
       "priority": "reference"
@@ -622,7 +950,15 @@
         "external: bottom-up characterization of smooth tame Deligne-Mumford stacks"
       ],
       "checker": "scripts/verify_degree_six_stacky_fan_descent.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:e1c82d5ba1281f871868c0131f2d465b94931dd6d9c3fb93532e291a998551f1",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [],
       "replaced_by": [],
       "priority": "reference"
@@ -638,7 +974,15 @@
         "external: admissible-cover normalization and deformation theory"
       ],
       "checker": "scripts/verify_labelled_node_saturation.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:a419c7572dca8fe572b17dad6a9c79ccd909683701e146587056a4474c86666b",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "root-stable quotient as the base of the compactified H2 map",
         "independent root-label gluing cocycle"
@@ -657,7 +1001,15 @@
         "BF1"
       ],
       "checker": "plane-jc/cas/test_log_boundary_compiler.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:785ef16dda041071b68ae37b442698291678a015662c7f68028fdb73366fc9c6",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [],
       "replaced_by": [],
       "priority": "reference"
@@ -673,7 +1025,15 @@
         "LBC1"
       ],
       "checker": "plane-jc/cas/audit_case2_residue_strata.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:5c7405ca35b1a48ca8a05aae1f820a41ad270a51b2fc0d97b2b5fc96c9979792",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [],
       "replaced_by": [],
       "priority": "reference"
@@ -689,7 +1049,15 @@
         "RSE1"
       ],
       "checker": "plane-jc/cas/audit_case2_maximal_gcd.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:d547b11e04813863f61aed9ca0da03868eb69d3343d9a1c1a7e9740577d63d5f",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [],
       "replaced_by": [],
       "priority": "reference"
@@ -705,7 +1073,15 @@
         "LBC1"
       ],
       "checker": "plane-jc/cas/case2_infinity_resolution.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:111b39fc3ab4326d9413119ee244871d1117d03c85e6a75eb857ae120881d679",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "surviving Case-2 row conclusions of RSE1 and RSE2"
       ],
@@ -723,7 +1099,15 @@
         "RSE1"
       ],
       "checker": "plane-jc/cas/audit_case2_gcd6.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:c94e2bd4d58d1bf1df713fd6bd0eba22fd9d6b334b55f7cdf79e4a963409bc1f",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [],
       "replaced_by": [],
       "priority": "reference"
@@ -740,7 +1124,15 @@
         "external: smooth SNC compactification theorem for the affine plane"
       ],
       "checker": "plane-jc/cas/test_intrinsic_a2_boundary.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:1c39c201c315d581152f18fdd5329eb07c13a473af8fbb3c02a5f2b321ca8c37",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [],
       "replaced_by": [],
       "priority": "derived"
@@ -754,7 +1146,15 @@
       "canonical_source": "extended-geometry/FORMAL_ORBIT_TRIVIALITY.md",
       "dependencies": [],
       "checker": "scripts/verify_formal_orbit_triviality.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:5fae4348c5ec8103f594469ab7fd38989c8d8fa9a965f80a9ebacc3e3dfae751",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "bounded-support infinitesimal-moduli language"
       ],
@@ -772,7 +1172,12 @@
         "O1"
       ],
       "checker": null,
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": null,
+      "software_lock": [],
       "supersedes": [
         "independent lower source and target jet search in the LR strictness problems"
       ],
@@ -790,7 +1195,12 @@
         "O4"
       ],
       "checker": null,
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": null,
+      "software_lock": [],
       "supersedes": [
         "pair-by-pair opposite-weight expansion at order two"
       ],
@@ -808,7 +1218,12 @@
         "O6"
       ],
       "checker": null,
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": null,
+      "software_lock": [],
       "supersedes": [
         "arbitrary-coefficient formulation of opposite-weight order-two terms"
       ],
@@ -827,7 +1242,15 @@
         "O7"
       ],
       "checker": "scripts/search_rees_torsion_witnesses.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:a57dd1d5834bc7ae932fc4556502acc95ebaf9036d6319247247d38433b43355",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "vanishing branch of the quadratic target-lift strictness dichotomy"
       ],
@@ -846,7 +1269,15 @@
         "D1"
       ],
       "checker": "scripts/verify_four_residue_recurrence.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:aaad41081a2f05764d46d2d5541c7444a4cb52f145a84f8abcbe6e966e1666f2",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "degree-five/six theorem sources",
         "faithfulness as a prerequisite for the principal rank-two dimension theorem"
@@ -866,7 +1297,15 @@
         "F2"
       ],
       "checker": "scripts/verify_generic_affine_mark_faithfulness.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:2f4a8575f0577c76ec30714a82bf21d0de64c04500b566b176782e23443579b2",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "dimension-only rank-two separation"
       ],
@@ -884,7 +1323,15 @@
         "W1"
       ],
       "checker": "scripts/verify_generic_discriminant_geometry.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:05ebc63d47d177c56bd7d9ae7c89233ad9f91403dcbd08034198de64c13f07c2",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "bounded generic-discriminant experiments"
       ],
@@ -902,7 +1349,15 @@
         "external: classical Morse-polynomial monodromy theorem (Serre, Topics in Galois Theory, Theorem 4.4.5)"
       ],
       "checker": "scripts/verify_weighted_seed_theorem.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:8ea08cc93993b6a5c49ca3ac7241d141f700cd6b8bb70d193d482c0df48e6fd9",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "generic-seed symmetric-monodromy hypothesis"
       ],
@@ -922,7 +1377,12 @@
         "F2"
       ],
       "checker": null,
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": null,
+      "software_lock": [],
       "supersedes": [
         "conflation of target-fixed deck transformations, pencil self-equivalences, and vertical imprimitivity"
       ],
@@ -942,7 +1402,15 @@
         "IA1"
       ],
       "checker": "scripts/verify_intrinsic_selector_attack.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:be0ce71cea2cb96d9add580ef12efb32b496762de1fc844b78d54b938d94bb09",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "unchecked assumption that a presentation root is automatically selected by coarse normalization data"
       ],
@@ -961,7 +1429,12 @@
         "external: birational and Galois cases of the Jacobian theorem"
       ],
       "checker": null,
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": null,
+      "software_lock": [],
       "supersedes": [
         "degree-three-only lower-bound observation"
       ],
@@ -969,18 +1442,51 @@
       "priority": "derived"
     },
     {
+      "id": "MBP1",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Formal minimal-boundary package implications",
+      "scope": "Selected critical boundary, saturated link, boundary monotonicity, ledger completeness, puncture rank, primitive conormal, noncontraction, and chart straightenability are defined as predicates on a finite-normalization diagram. PlanePkg implies one of the marked A1/G_m plane cores, and a classified plane core plus MarkPkg implies respectively a weighted or cancellation suspension. Numerical boundary minimality is a separate invariant of the unmarked canonical normalization. The assertion that every boundary-minimal map canonically admits a diagram satisfying MBPkg remains conjectural.",
+      "canonical_source": "cancellation/MINIMAL_BOUNDARY_CLASSIFICATION.md",
+      "dependencies": [
+        "W1",
+        "S1",
+        "C1"
+      ],
+      "checker": null,
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": null,
+      "software_lock": [],
+      "supersedes": [
+        "prose-only minimal-boundary gateway"
+      ],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
       "id": "MB3",
       "kind": "corollary",
       "state": "proved",
       "title": "Cubic suspension branch collapse",
-      "scope": "Inside the union of weighted tangent and cancellation suspensions, every geometric-degree-three map is polynomially left--right equivalent to the foundational map. Hence the minimal-boundary classification conjecture implies uniqueness of the foundational cubic; the intrinsic marking-extraction and positive-chart straightening hypotheses remain open.",
+      "scope": "Inside the union of weighted tangent and cancellation suspensions, every geometric-degree-three map is polynomially left--right equivalent to the foundational map. This is a branch-collapse theorem only. Applying it to an arbitrary boundary-minimal cubic still requires construction of an MBP1 finite-normalization witness and verification of its primitive conormal, noncontraction, and chart-straightenability predicates.",
       "canonical_source": "cancellation/MINIMAL_BOUNDARY_CLASSIFICATION.md",
       "dependencies": [
         "W1",
         "C1"
       ],
       "checker": "scripts/verify_minimal_boundary_cubic.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:89d7717e3722d966766843678d33ead4295a1a3562bdfe3a046f6aed71d2d4c5",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "uncertified assertion that the first cancellation rung and weighted cubic are the same model"
       ],
@@ -992,13 +1498,21 @@
       "kind": "corollary",
       "state": "proved",
       "title": "Cubic critical-boundary marking frontier",
-      "scope": "For a coordinate-preserving geometric-degree-three plane core with one reduced A^1 critical divisor, the primitive core marking is automatic and the core is tangent type. In the G_m branch, reciprocal polynomiality forces coefficient valuations (n-1,2n-1); a primitive quadratic conormal coefficient forces n=1 and automatically extracts the affine-linear cancellation unit Y=Q-Ps. The infinite toric atlas D_b=1-s^2q^b shows why transverse saturation is necessary and is excluded from every reciprocal polynomial lift. In the positive branch, localized chart equality, primitive Jacobian content, noncontraction, boundary Stein degree one, and normalized target quotients force a slice and the foundational weighted chart. Extracting the suspension and these finite intrinsic labels from the bare package remains open.",
+      "scope": "For a coordinate-preserving geometric-degree-three plane core with one reduced A^1 critical divisor, the primitive core marking is automatic and the core is tangent type. In the G_m branch, reciprocal polynomiality forces coefficient valuations (n-1,2n-1); a primitive quadratic conormal coefficient forces n=1 and automatically extracts the affine-linear cancellation unit Y=Q-Ps. The infinite toric atlas D_b=1-s^2q^b shows why transverse saturation is necessary and is excluded from every reciprocal polynomial lift. In the positive branch, localized chart equality, primitive Jacobian content, noncontraction, boundary Stein degree one, and normalized target quotients force a slice and the foundational weighted chart. Constructing the MBP1 witness and proving its PC, NC, and CS predicates from an unmarked boundary-minimal normalization remain open.",
       "canonical_source": "cancellation/CUBIC_MARKING_EXTRACTION.md",
       "dependencies": [
         "external: Abhyankar--Moh epimorphism degree theorem"
       ],
       "checker": "scripts/verify_cubic_marking_frontier.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:baa196de8d3159418f270893c812dea3914595a63fa7d02315956a8edddd0470",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "one-place cubic primitive marking as an external hypothesis"
       ],
@@ -1020,7 +1534,15 @@
         "external: affine-open complement purity and normal Hartogs extension"
       ],
       "checker": "scripts/verify_cubic_normalization_frontend.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:d20b547e38a224841ab3bd1496dbe2e87096c448e90f60d86dae22b191964b53",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "undifferentiated cubic suspension-extraction gap in the finite-flat affine-linear case"
       ],
@@ -1038,7 +1560,15 @@
         "CF3"
       ],
       "checker": "scripts/verify_cubic_gauge_straightening.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:56d5baa1ecc4022e898f2ec25b230246ec7dbf3414c911282bfb2d8eb1159b8c",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "raw or invariant-parameter multicoefficient nonlinearity as a cubic-classification obstruction"
       ],
@@ -1056,7 +1586,15 @@
         "W1"
       ],
       "checker": "scripts/verify_all_degree_rational_fibers.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:6979d5599cec0d92494b8c7662bfb024c5712c53a6e279937d7d4b38ed81c031",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "bounded rational-fiber atlas through degree 100"
       ],
@@ -1075,7 +1613,15 @@
         "RF1"
       ],
       "checker": "scripts/verify_real_fiber_spectrum.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:49bf36be9b6f8602adfac14b844db18cc5c0d6614bf3073ad8f51d1971d28d1e",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "maximal-real-fiber chamber only"
       ],
@@ -1093,7 +1639,15 @@
         "W1"
       ],
       "checker": "scripts/verify_canonical_family_image.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:040299c071f403e15749a39dc819765aed62c665896deabb895e938093c95a3e",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [],
       "replaced_by": [],
       "priority": "derived"
@@ -1109,7 +1663,15 @@
         "W1"
       ],
       "checker": "scripts/verify_omitted_value_classification.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:474d5eadb0750071fb42c602d5abd6523fc739e5d7b25caeee8327a039301f78",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "singular-locus-only omitted-value tests"
       ],
@@ -1127,7 +1689,15 @@
         "I2"
       ],
       "checker": "scripts/verify_unique_omitted_value.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:faaacc05cedf5d732b786fcaef64553cd7b6ab6cb72f9c5ec53ddd01bb700726",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "distinct-multiplicity-type-only Mason separation"
       ],
@@ -1143,7 +1713,15 @@
       "canonical_source": "extended-geometry/THRESHOLD_CONTACT_ATOM_SCHEMA.md",
       "dependencies": [],
       "checker": "scripts/verify_contact_atom_principle.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:d9429ab82e1d6a50901328e4448fd512ecbded8da2af6197f5a002eb27d768ce",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "informal threshold-r closing remark"
       ],
@@ -1163,7 +1741,15 @@
         "I3"
       ],
       "checker": "scripts/verify_maximal_phi_irreducibility.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:f1d7114ea8b7fadef99a89c9486d6aceaaf4091a896bf7f9e2c1be154341d877",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "chart-only contact-stratum arguments"
       ],
@@ -1182,7 +1768,15 @@
         "I3"
       ],
       "checker": "scripts/verify_contact_atom_principle.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:d9429ab82e1d6a50901328e4448fd512ecbded8da2af6197f5a002eb27d768ce",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "Mason--Stothers as the source of the two-three classification"
       ],
@@ -1201,7 +1795,15 @@
         "E2"
       ],
       "checker": "scripts/verify_component_normalization.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:dfdf5cc33c5cdba30196975bf334fec2a04ed1205bbd23b25fd43183987cc51b",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [],
       "replaced_by": [],
       "priority": "derived"
@@ -1217,7 +1819,15 @@
         "E3"
       ],
       "checker": "scripts/audit_degree_twelve_independent.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:b42ffd14a1c1601552734e013b2fc9e10a3e9be385583602ab54cac625c0ab26",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "nodal model for the generic degree-twelve branch intersection"
       ],
@@ -1236,7 +1846,15 @@
         "E3"
       ],
       "checker": "scripts/verify_nonsurjective_enumerative_geometry.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:733e97c779ba9b58b3008a944b29856f33273e3002bbbf0aef5650bdaebc4413",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [],
       "replaced_by": [],
       "priority": "derived"
@@ -1253,7 +1871,15 @@
         "E3"
       ],
       "checker": "scripts/verify_exceptional_partition_lattice.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:da73acf5936526f2c8069cdcdc645851ed4640c8d1697cf29b3ffee55c853c15",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "unweighted common-coarsening intersection census"
       ],
@@ -1272,7 +1898,15 @@
         "E6"
       ],
       "checker": "scripts/verify_degree18_conductor_equalizer.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:9a71a2c1bc277c95ad3c398faf2e71b345950315b53f26e894a7cce3a9308dbd",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "pairwise-only description of the degree-eighteen three-sheet face"
       ],
@@ -1292,7 +1926,15 @@
         "E7"
       ],
       "checker": "scripts/verify_omitted_intersection_algebra.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:baf77b222ea9b5bd81d7d3392c623c3de01b132d117f6da3b930542b972ea372",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [],
       "replaced_by": [],
       "priority": "derived"
@@ -1309,7 +1951,15 @@
         "external: Ferrand norm functor for finite locally free algebras"
       ],
       "checker": "scripts/verify_maximally_collided_transfer_cones.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:488e617ba81651aa733152358f9be71aad054781141eb3666bbed4a025311dd7",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [],
       "replaced_by": [],
       "priority": "derived"
@@ -1327,7 +1977,15 @@
         "external: effective finite-field Chebotarev estimates"
       ],
       "checker": "scripts/verify_effective_chebotarev.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:95a85fcf5f28e67bb77558e426658a99db7d7e4c3ef74aba21c6583868580cd6",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "unspecified good-reduction exclusions"
       ],
@@ -1349,7 +2007,15 @@
         "external: Davenport cover and Sunada-Gassmann theory"
       ],
       "checker": "scripts/verify_global_sunada_keller.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:481075e296d2e2cb68ee50f9725fa6db529817be219ab7bb2ccdb05606b21984",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "specialization-only formulation of the degree-seven arithmetic-indistinguishability result"
       ],
@@ -1368,7 +2034,15 @@
         "CL1"
       ],
       "checker": "scripts/verify_davenport_cox_boundary.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:485a462b1686cabf8f98f96493d31146f1f63225fc8ed0a82c0fdbb59ef54822",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "unspecified affine-space straightening step for the global Cox-Sunada pair"
       ],
@@ -1386,7 +2060,15 @@
         "AS1"
       ],
       "checker": "scripts/verify_davenport_tangent_mark_curve.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:d55bb4e0d2dd471e7c13b2bf16313c6c5b78aad99081b98393883e9735b2885f",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "unanalysed degree-five tangent-mark extension in the global relative Sunada construction"
       ],
@@ -1406,7 +2088,15 @@
         "W1"
       ],
       "checker": "scripts/verify_davenport_proportional_tangent_sections.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:0805e90044823192be426dda54503da3d56444f0603bd98bfd8a2dfec33cc30e",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "finite tangent-mark cover as the only explicit weighted realization of the Davenport pair"
       ],
@@ -1425,7 +2115,15 @@
         "W1"
       ],
       "checker": "scripts/verify_davenport_weighted_glue_obstruction.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:a5d61a2a106eddcf63aca2ed7b34e83e69d11df9b88abd9268113d8b135bbfc7",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "unspecified affine modification for gluing the two Davenport weighted charts"
       ],
@@ -1444,7 +2142,15 @@
         "AS5"
       ],
       "checker": "scripts/verify_davenport_derivative_center_mismatch.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:141398054e1a8068bef1520df4cbc78babf007c3af72cbc05a8027539e6f7652",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "unexamined identification of the split determinant center with the doubled Davenport derivative boundary"
       ],
@@ -1462,7 +2168,15 @@
         "AS6"
       ],
       "checker": "scripts/verify_davenport_boundary_involution.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:a228ff76db43e1e02994b3cc0223dd91413e80a3965e27965db1224a09752e18",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "unspecified puncture-merging quotient for matching the Davenport derivative center to G_m"
       ],
@@ -1482,7 +2196,15 @@
         "AS7"
       ],
       "checker": "scripts/verify_davenport_node_separation.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:509d9857f60e677f5c73a9c9a34236a592ae8c41214f84953546849370715bee",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "unspecified ambient conductor-separation step for the normalized Davenport derivative boundary"
       ],
@@ -1501,7 +2223,15 @@
         "AS8"
       ],
       "checker": "scripts/verify_davenport_post_coordinate_attacks.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:9e50bcbf2cf95e1a2a499498a8be03c2707daf560d73750cfa34d648abe5ade8",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "direct product of the variable determinant family with the parabola chart as a Keller candidate"
       ],
@@ -1520,7 +2250,15 @@
         "AS9"
       ],
       "checker": "scripts/verify_davenport_post_coordinate_attacks.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:9e50bcbf2cf95e1a2a499498a8be03c2707daf560d73750cfa34d648abe5ade8",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "exposing T+Y^2 as a stabilized common target coordinate",
         "any fixed-T affine-linear multi-mask coupling as a nontrivial Kellerization"
@@ -1540,7 +2278,15 @@
         "AS10"
       ],
       "checker": "scripts/verify_davenport_post_coordinate_attacks.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:9e50bcbf2cf95e1a2a499498a8be03c2707daf560d73750cfa34d648abe5ade8",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "shifted exceptional mask as a nonlinear Keller target coordinate",
         "boundary-multiple correction of the Davenport value"
@@ -1560,7 +2306,15 @@
         "AS11"
       ],
       "checker": "scripts/verify_davenport_post_coordinate_attacks.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:9e50bcbf2cf95e1a2a499498a8be03c2707daf560d73750cfa34d648abe5ade8",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "unshifted variable determinant parameter as an absolute Keller target coordinate"
       ],
@@ -1579,7 +2333,15 @@
         "AS12"
       ],
       "checker": "scripts/verify_davenport_post_coordinate_attacks.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:9e50bcbf2cf95e1a2a499498a8be03c2707daf560d73750cfa34d648abe5ade8",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "translated determinant incidence retaining the old base as a new cancellation mechanism",
         "parameter-linear U coupling as a genuinely higher-dimensional attack"
@@ -1599,7 +2361,15 @@
         "AS13"
       ],
       "checker": "scripts/verify_davenport_post_coordinate_attacks.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:9e50bcbf2cf95e1a2a499498a8be03c2707daf560d73750cfa34d648abe5ade8",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "any one-coordinate projective U-coefficient curve as a translated determinant candidate"
       ],
@@ -1618,7 +2388,15 @@
         "AS14"
       ],
       "checker": "scripts/verify_davenport_post_coordinate_attacks.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:9e50bcbf2cf95e1a2a499498a8be03c2707daf560d73750cfa34d648abe5ade8",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "the clean parabola coordinate as a sheet-dependent translated coefficient pencil"
       ],
@@ -1637,7 +2415,15 @@
         "AS15"
       ],
       "checker": "scripts/verify_davenport_post_coordinate_attacks.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:9e50bcbf2cf95e1a2a499498a8be03c2707daf560d73750cfa34d648abe5ade8",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "coefficient-by-coefficient search for affine-linear translated pencils"
       ],
@@ -1656,7 +2442,15 @@
         "AS16"
       ],
       "checker": "scripts/verify_davenport_post_coordinate_attacks.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:9e50bcbf2cf95e1a2a499498a8be03c2707daf560d73750cfa34d648abe5ade8",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "one-triangular Jung coordinates as translated coefficient-pencil candidates"
       ],
@@ -1681,7 +2475,12 @@
         "external: Lang--Weil and finite-field Chebotarev"
       ],
       "checker": null,
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": null,
+      "software_lock": [],
       "supersedes": [],
       "replaced_by": [],
       "priority": "derived"
@@ -1698,7 +2497,15 @@
         "FF1"
       ],
       "checker": "scripts/verify_adelic_fiber_engineering.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:f9c518edd820d70ff0c05b979093b1b9529356089da74ec84fbe4b9f700c68fd",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "separate real and modular fiber witnesses"
       ],
@@ -1716,7 +2523,15 @@
         "W1"
       ],
       "checker": "scripts/verify_hasse_keller_fiber.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:3aeba1f8c70d71290baf4c166e7b7debbff6c10c058f2ba993556008c268097b",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [],
       "replaced_by": [],
       "priority": "derived"
@@ -1735,7 +2550,15 @@
         "IA1"
       ],
       "checker": "scripts/verify_stratified_adelic_engineering.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:480136054c1d6495cd81cff1b26bbd0330415da574154c05223d6ed367a5ccae",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "separate geometric-stratum and arithmetic-fiber witnesses"
       ],
@@ -1753,7 +2576,15 @@
         "W1"
       ],
       "checker": "scripts/audit_quartic_independent.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:6807bac52d3160a63397cc4bf846f7e8fc1c5bb752d9ae19985ab8511f0e0bf4",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "bounded quartic seed scan as theorem evidence"
       ],
@@ -1773,7 +2604,15 @@
         "external: pinned Zhuang quartic formulas"
       ],
       "checker": "scripts/verify_external_quartic_islands.py",
-      "review": "independent-replay",
+      "proof_type": "reproduction",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:6ad996273b62beae46120944907d1d01c9e9c2e20608f41724add1e523649831",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "treating the three quartic islands as unrelated constructions"
       ],
@@ -1793,7 +2632,15 @@
         "H1"
       ],
       "checker": "scripts/verify_decorated_normalization.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:ef2d714efbf5d2ef856330ebf802e2ea20015266e7d0ede89a16ebf416422287",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "reduced-discriminant-only stable invariant"
       ],
@@ -1809,7 +2656,15 @@
       "canonical_source": "extended-geometry/HASSE_TYPICAL_SEED_RECOVERY.md",
       "dependencies": [],
       "checker": "scripts/verify_hasse_typical_seed_recovery.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:7f28c6352cf1227b6eb042967128336f2510405b1c98cab0980d35bbb2cbfb93",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [],
       "replaced_by": [],
       "priority": "derived"
@@ -1825,7 +2680,15 @@
         "C1"
       ],
       "checker": "scripts/verify_contact_resultant_endpoint_reduction.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:b65e9e51d3dd1268c99bd3a01cf473816e8cd9cf8bf59a12b6538a152adc1059",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "bounded resultant table for r <= 4"
       ],
@@ -1843,7 +2706,15 @@
         "CR1"
       ],
       "checker": "scripts/verify_contact_resultant_r5.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:5abf809dfe8c400828e57d61d80cc164b859a1977ecf04e9183541410639f0e9",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "bounded direct evidence for r=5"
       ],
@@ -1861,7 +2732,15 @@
         "external: prime number theorem, Dusart's explicit prime-interval theorem, and the Baker--Harman--Pintz prime-gap theorem"
       ],
       "checker": "scripts/verify_parameter_irreducibility_adaptive_dusart_frontier.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:a54a7c725e46ff7cbe8529d98c6a2570d586db780c91737a4aa0767a8354ba1c",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "bounded diagonal irreducibility table"
       ],
@@ -1880,7 +2759,15 @@
         "AR1"
       ],
       "checker": "scripts/verify_contact_resultant_irreducible_ranges.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:3da7ef1e231a628270a076e4665df3abf12413a527b1da328444a8c78c180b98",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "treating parameter irreducibility as merely finite contact-resultant evidence"
       ],
@@ -1899,7 +2786,15 @@
         "CR2"
       ],
       "checker": "scripts/verify_contact_resultant_r6_reduction.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:d6c75aca06a6ae899ec26816e4d905da1e2d2c8a2c776aeaed5830d63d23832f",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "raw degree-6m Sylvester-resultant formulation for the first open column"
       ],
@@ -1918,7 +2813,15 @@
         "external: Lindemann--Weierstrass theorem"
       ],
       "checker": "scripts/verify_contact_resultant_r6_asymptotic.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:7bc6a7fa658e7083909b49d336004cb32adfe24fd7bb23db1116a14f0efb7ecb",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "whole-eliminant Schur--Cohn continuation for the r=6 asymptotic tail"
       ],
@@ -1936,7 +2839,15 @@
         "CR4"
       ],
       "checker": "scripts/verify_contact_resultant_r6_effective.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:a005cc5949ef8d83f8e5091c42decfff7d2531a6a57f7f6d90d930e1bb45c2db",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "noneffective r=6 asymptotic threshold"
       ],
@@ -1955,7 +2866,15 @@
         "external: Lindemann--Weierstrass theorem"
       ],
       "checker": "scripts/verify_contact_resultant_r7_asymptotic.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:c91626648977e83096edf9d0ccaf0744a96d56f6996425f5b63b8280b7753b03",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [],
       "replaced_by": [],
       "priority": "derived"
@@ -1973,7 +2892,15 @@
         "F2"
       ],
       "checker": "scripts/verify_degree_five_stable_moduli.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:3b46379a31198b395097913152b8e08be498ccbc92231d29378c434db3b09fc9",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "six-element coarse orbit as the degree-five separation theorem"
       ],
@@ -1995,7 +2922,15 @@
         "R1"
       ],
       "checker": "scripts/verify_degree_five_rank_two_descent.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:4dff339aff8d301ec2868773a31944f673b0ecdd8ed2684896bc96ba1017a63b",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [],
       "replaced_by": [
         "R1"
@@ -2013,7 +2948,15 @@
         "R1"
       ],
       "checker": "scripts/explore_degree_five_a2_subprincipal.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:b84eccd013a068832dbffabd2b4d8e2547577e39c9845c70c6bdd96830a25fb1",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "unresolved symmetric-ordering test"
       ],
@@ -2031,7 +2974,15 @@
         "QO1"
       ],
       "checker": "scripts/explore_rank_two_odd_mixed_quantization.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:36335afd247200094ce99e57bfeaf98049a19a6e9cc8c786e47a435fd7ddfc58",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [],
       "replaced_by": [],
       "priority": "reference"
@@ -2047,7 +2998,15 @@
         "QO2"
       ],
       "checker": "scripts/verify_rank_two_odd_mixed_function_field.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:896f350e834c6331bcbe8ab01668ada49ff7c718799844e7349b70f99b68c1eb",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [],
       "replaced_by": [],
       "priority": "reference"
@@ -2063,7 +3022,15 @@
         "QO2"
       ],
       "checker": "scripts/verify_rank_two_odd_support_three_points.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:4e2ad4a7a49381dd9fe57298070b68dccac3256f085ec3538ffa983c797dadc2",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [],
       "replaced_by": [],
       "priority": "reference"
@@ -2079,7 +3046,15 @@
         "QO4"
       ],
       "checker": "scripts/verify_rank_two_odd_support_three_curves.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:ab8f54343f437c645880c017aa7d24ef1a0297735bb301a3d37cac5cebdefc23",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [],
       "replaced_by": [],
       "priority": "reference"
@@ -2096,7 +3071,15 @@
         "QO3"
       ],
       "checker": "scripts/explore_rank_two_odd_residual_five_space.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:9441aeac99aaa16ccf20f9bf75631cc063bd7721fecf768129270bab8af92196",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [],
       "replaced_by": [],
       "priority": "reference"
@@ -2114,7 +3097,15 @@
         "QO6"
       ],
       "checker": "scripts/verify_rank_two_odd_residual_support_three.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:f4dade0af505d3e122fcdb64e30c6a7b6de039d8c3de4cac8472cb625541f476",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [],
       "replaced_by": [],
       "priority": "reference"
@@ -2131,7 +3122,15 @@
         "QO7"
       ],
       "checker": "scripts/verify_rank_two_odd_residual_fourth_identity.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:e7306eb5bf98850dcc879d8c9c5f6d0c640a4469429e3657b3f38587bf822d24",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [],
       "replaced_by": [],
       "priority": "reference"
@@ -2148,7 +3147,15 @@
         "QO8"
       ],
       "checker": "scripts/explore_rank_two_odd_l1_high_support.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:bf1ebb4b971e6ce35e4254d3223819329838426971e3d029d7b6c20a672b93ed",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [],
       "replaced_by": [],
       "priority": "reference"
@@ -2164,7 +3171,15 @@
         "F1"
       ],
       "checker": "scripts/verify_symplectic_weyl_lift.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:a625431366cf26200bb19baea0108ceb98021ec0d85aa4b34016040fdee36865",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "construction-specific cotangent-lift arguments"
       ],
@@ -2183,7 +3198,15 @@
         "external: Bass--Connell--Wright reduction and Long's formulas"
       ],
       "checker": "scripts/audit_essential_bcw_21_independent.py",
-      "review": "independent-replay",
+      "proof_type": "reproduction",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:a07e3dbae6a5de21972f7367d548da82f8d78a0567debcacbb56b37d9ad11aaf",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "conditional local reproduction of the SU(2) and BCW routes"
       ],
@@ -2202,7 +3225,15 @@
         "external: Bass--Connell--Wright reduction"
       ],
       "checker": "scripts/audit_rank_reduced_bcw_24_independent.py",
-      "review": "independent-replay",
+      "proof_type": "reproduction",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:4e5fa9faefe0440d28cd6028499ce2301ffbaf9cd4001b0de878048635f4058b",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "rank upper bound 18 and nilpotency-index upper bound 19 from the 21-variable essential quotient"
       ],
@@ -2222,7 +3253,15 @@
         "external: symmetric Hessian-nilpotent reduction"
       ],
       "checker": "scripts/audit_hessian_rank_reduced_bcw_22_independent.py",
-      "review": "independent-replay",
+      "proof_type": "reproduction",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:913e7247b1959b06d3ae5ef999384283aa70904f674a7fcc057214de68c6207c",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "homogeneous quartic HN Hessian-rank upper bound 38"
       ],
@@ -2241,7 +3280,15 @@
         "external: Derksen--van den Essen--Zhao and Zhao implication architecture"
       ],
       "checker": "scripts/verify_fixed_gmc_sic_bridge.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:d9d6e697c912ecd31ae2a7ce3d98ab93235d99528524826aae84f5096e42214c",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "unstated fixed-dimension Gaussian implication"
       ],
@@ -2260,7 +3307,15 @@
         "GS1"
       ],
       "checker": "scripts/audit_identity_slice_counterexamples_independent.py",
-      "review": "independent-replay",
+      "proof_type": "unclassified",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:6cac1858517324c6b499ef7c4343975657976cab7da2a0f2420987bc78722c96",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "95-to-190 stable-normal-form dimensions for Image and Vanishing witnesses"
       ],
@@ -2276,7 +3331,15 @@
       "canonical_source": "extended-geometry/FORMAL_GAUSSIAN_LAGRANGE_LEMMA.md",
       "dependencies": [],
       "checker": "scripts/verify_formal_gaussian_lagrange.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:095c5432f7af8babe7b8118e00f1ffc02dd0f65f6a8bdc7d118560c20ea7ff45",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "zero-constant-term-only bridge lemma"
       ],
@@ -2296,7 +3359,15 @@
         "external: one-variable Factorial Theorem"
       ],
       "checker": "scripts/verify_two_real_gmc_frontier.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:1b2d63891be692815e17737d67fd7743f9cc035d26f9b0d01a402553037df86f",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "unstructured dimension-two Gaussian coefficient search"
       ],
@@ -2314,7 +3385,15 @@
         "G2F"
       ],
       "checker": "scripts/verify_two_real_gmc_symmetric_chart.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:674d74ccf365a18e7dff0ba6dbcf49dff16c7e2b950a0b3cd5e8697d065a68ef",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "four-support / 24-chart exceptional four-weight cubic GMC frontier"
       ],
@@ -2332,7 +3411,15 @@
         "G2C"
       ],
       "checker": "scripts/verify_two_real_gmc_remaining_four_weight.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:68ca31de09bc4bd755ce4f718d2fb445992dfcb692e5babf846afda8d7b2b429",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "three-support / 20-chart four-weight cubic GMC frontier"
       ],
@@ -2350,7 +3437,15 @@
         "G2D"
       ],
       "checker": "scripts/verify_two_real_gmc_five_weight_frontier.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:cd4e9b61f62949a2028d1b5e08b9a65debd8f7132384ce4ce678c4fde1506f32",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "unstructured 21-support / 102-chart five-weight cubic frontier"
       ],
@@ -2368,7 +3463,15 @@
         "GL1"
       ],
       "checker": "scripts/audit_weighted_gaussian_bridge_independent.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:33a72e6acb881b6b2f5ed45ff7eacf57ddd7e6b362d777e561eebd47f00045fe",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "bounded Wick-moment evidence for the weighted bridge"
       ],
@@ -2387,7 +3490,15 @@
         "D1"
       ],
       "checker": "scripts/verify_gaussian_moment_fingerprint.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:bd85869a4502c1e163b0a36e490c9d7fc100922ef1b483888e71a68c18fe9ec7",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "N+1 mixed-moment bound on the normalized seed slice"
       ],
@@ -2408,7 +3519,15 @@
         "E7"
       ],
       "checker": "scripts/verify_degree_six_gaussian_moment_geometry.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:3db2274504feef812ea109a98ce0bfea9903cf189d81d62b1b18dceec6066c14",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "dimension-only Gaussian seed-family statement"
       ],
@@ -2428,7 +3547,15 @@
         "HR6"
       ],
       "checker": "scripts/verify_degree_six_gaussian_moment_geometry.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:3db2274504feef812ea109a98ce0bfea9903cf189d81d62b1b18dceec6066c14",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "partition-only interpretation of the Gaussian moment bridge"
       ],
@@ -2448,7 +3575,15 @@
         "HR12"
       ],
       "checker": "scripts/verify_moment_prony_determinantal_geometry.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:d40dc70a2a1fd17185abd4a67478aa1aba0df5814f4988c6382c705084a3de84",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "equation-by-equation triangular transport for pure partition and Ritt loci"
       ],
@@ -2464,7 +3599,15 @@
       "canonical_source": "extended-geometry/WEIGHTED_INVARIANT_JACOBIAN_REDUCTION.md",
       "dependencies": [],
       "checker": "scripts/verify_weighted_invariant_jacobian_reduction.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:df044edec2f49858d9ce2d87770902f8a623e6ccab6a06e4521e65b802b5294d",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "map-specific weighted Jacobian expansions"
       ],
@@ -2483,7 +3626,15 @@
         "WI1"
       ],
       "checker": "scripts/verify_weighted_tangent_suspension.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:9d023ad1ca767a652863fb85beab8ffd3d099e27deaae3487b65b53c4ef1bc3a",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "orientation-free plane-core formula"
       ],
@@ -2501,7 +3652,12 @@
         "WT1"
       ],
       "checker": "plane-jc/cas/poisson_square_normalized_defect.sing",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:98ab6dcad265ef31685b345903616001bdfb5d4de65b857a1ae3a6c5b2c6bb93",
+      "software_lock": [],
       "supersedes": [],
       "replaced_by": [],
       "priority": "derived"
@@ -2519,7 +3675,15 @@
         "WT1"
       ],
       "checker": "scripts/verify_foundational_weighted_coefficient_scheme.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:2d9f6d945afbde6d03618826bb02d7904ceeee5c9b8f2efd45b1895f6c87132b",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "informal weighted-coefficient rigidity summary"
       ],
@@ -2538,7 +3702,15 @@
         "D5"
       ],
       "checker": "scripts/verify_degree_five_contact_profile.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:1f72012fd18367750befbd024ae62e55ac1a04264e06cfae7b50b17f94ba50b2",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "unfiltered infinite contact as a moduli invariant"
       ],
@@ -2556,7 +3728,15 @@
         "O2"
       ],
       "checker": "scripts/verify_degree_five_torus_module.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:8d47a087475b9d5516564818213a6fd7ea34298cfc1a693a52fa804122a17ab4",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "conjectural torus-gauge continuation 24m+1"
       ],
@@ -2575,7 +3755,15 @@
         "O4"
       ],
       "checker": "scripts/verify_order_two_weight_zero_lr_obstruction.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:3715b820cc8a3bc159a8d174c777fe46af1c73801127a46e210708b33259a244",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "diagonal-torus-only order-two audit"
       ],
@@ -2595,7 +3783,15 @@
         "SW1"
       ],
       "checker": "scripts/audit_rank_two_poisson_completion_independent.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:c2d1745338b3d19c62492d02accb560c4e7f58e06cd08aee9e6894c0289ed1f2",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "existence gap left by the incomplete rank-two Poisson card"
       ],
@@ -2615,7 +3811,15 @@
         "SW1"
       ],
       "checker": "scripts/verify_symplectic_weyl_lift.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:a625431366cf26200bb19baea0108ceb98021ec0d85aa4b34016040fdee36865",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "degree-five-only exact symplectic moduli"
       ],
@@ -2634,7 +3838,15 @@
         "external: Campbell and Gorni--Zampieri stable reductions"
       ],
       "checker": "scripts/audit_stable_normal_form_independent.py",
-      "review": "independent-replay",
+      "proof_type": "reproduction",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:8ac94ae4e41b0dccdda719a21d2b3d328bcec296852a3047670d22480d642113",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "510-variable fixed-column Druzkowski reduction",
         "polynomial-stable label for the Segre step"
@@ -2651,7 +3863,12 @@
       "canonical_source": "extended-geometry/MARKED_POINT_DIMENSION_BARRIER.md",
       "dependencies": [],
       "checker": null,
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": null,
+      "software_lock": [],
       "supersedes": [
         "unqualified extension of the marked-point construction to dimension two"
       ],
@@ -2667,7 +3884,12 @@
       "canonical_source": "extended-geometry/RELATIVE_SCALING_BOUNDARY_LATTICE.md",
       "dependencies": [],
       "checker": null,
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": null,
+      "software_lock": [],
       "supersedes": [
         "separate scaling, unit, and Picard calculations"
       ],
@@ -2685,7 +3907,15 @@
         "BL1"
       ],
       "checker": "scripts/classify_consecutive_factor_34.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:a2da219e6ebe9674ffdd047b9cb6ab35ff33ccba59381f40438980fa20b8fd8b",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "quadratic--cubic row as the only tested consecutive-factor obstruction"
       ],
@@ -2703,7 +3933,15 @@
         "BL1"
       ],
       "checker": "scripts/verify_three_factor_cox_ledger.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:ad6de76cfb1a3912d17b8b472674307002061a8679fa1ec4ac32d0cf1a364267",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [],
       "replaced_by": [],
       "priority": "reference"
@@ -2720,7 +3958,15 @@
         "CL1"
       ],
       "checker": "scripts/verify_linear_factor_cox_ledgers.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:e3051ae7c89f2c906b2f9233229ad82ea98cac24d72d921f8b7191859ef047db",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [],
       "replaced_by": [],
       "priority": "derived"
@@ -2737,7 +3983,15 @@
         "CL1"
       ],
       "checker": "scripts/verify_oriented_cubic_cox_chart.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:ecf0de29f8dbed3b7674ea0d9acf91a5e68180c322cd49c5f4bcc28318e918b1",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [],
       "replaced_by": [],
       "priority": "reference"
@@ -2753,7 +4007,15 @@
         "CL2"
       ],
       "checker": "scripts/verify_toric_cox_permutations.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:aeb718ee75921b079ca464746578e9caa3d87c16d36f0403bf34147738d20b16",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [],
       "replaced_by": [],
       "priority": "reference"
@@ -2771,7 +4033,15 @@
         "PF1"
       ],
       "checker": "scripts/verify_oriented_cubic_affine_descent.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:ffc758089b80b28236eb63413a8faf3fed9388c8172419d8f4c591647c222dd4",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [],
       "replaced_by": [],
       "priority": "derived"
@@ -2789,7 +4059,15 @@
         "CL5"
       ],
       "checker": "scripts/verify_oriented_linear_factor_cox_maps.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:0d83bbd7d76a3ac7ac069fcac78987456358eda3c20d48401e315ba74368bea9",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [],
       "replaced_by": [],
       "priority": "derived"
@@ -2806,7 +4084,15 @@
         "CL6"
       ],
       "checker": "scripts/verify_oriented_davenport_cox_maps.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:4428da407de02c7711040aefa08fd08f4cb3fe9cc94a1bec7a7a3b1790b4f3f6",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [],
       "replaced_by": [],
       "priority": "derived"
@@ -2823,7 +4109,15 @@
         "CL5"
       ],
       "checker": "scripts/verify_oriented_cubic_quotient_rigidity.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:081bce8c2d9ca12acc3eaa174399c77a2ca31df4cb933126cb5582d8a7aef142",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [],
       "replaced_by": [],
       "priority": "derived"
@@ -2839,7 +4133,15 @@
         "CL7"
       ],
       "checker": "scripts/verify_davenport_exceptional_twist_obstruction.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:3b551cf96ad9a4a391ebe20e6ede092c6d8f86f9f0a3093a0c740e6a95f29841",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [],
       "replaced_by": [],
       "priority": "derived"
@@ -2856,7 +4158,15 @@
         "CL8"
       ],
       "checker": "scripts/verify_linear_hyperplane_cox_classification.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:63ac17e9ca42085c1232b69c4ca034d8eb38427435b6be18d4a6cc218561880a",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [],
       "replaced_by": [],
       "priority": "derived"
@@ -2872,7 +4182,15 @@
         "CL10"
       ],
       "checker": "scripts/verify_coefficient_hypersurface_cox_obstruction.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:89e022fdcb3b55f5175b53206d18d5d3f092571e40db0150494e4cdbcf916af9",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [],
       "replaced_by": [],
       "priority": "derived"
@@ -2889,7 +4207,15 @@
         "CL11"
       ],
       "checker": "scripts/verify_cox_vector_bundle_stabilization.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:731d3774d1d9baca330343bf2d12eff1b53ea79f8652957a94911a96cdfa853c",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [],
       "replaced_by": [],
       "priority": "derived"
@@ -2906,7 +4232,15 @@
         "CL12"
       ],
       "checker": "scripts/verify_triple_root_affine_completion.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:62fe4d78cad8fce7abb4c46e2a3d439ea499c665a532ed64b349d3ae01d1984c",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [],
       "replaced_by": [],
       "priority": "derived"
@@ -2922,7 +4256,15 @@
         "CL13"
       ],
       "checker": "scripts/verify_affine_source_triple_root_cox_map.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:128fb0c39c1246a70e23dc4cd0c8bc1e82ad95cbbf1cc46ccc35f64f2dee3d2b",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [],
       "replaced_by": [],
       "priority": "derived"
@@ -2938,7 +4280,15 @@
         "CL14"
       ],
       "checker": "scripts/verify_primitive_multiplicity_triple_root_map.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:6faa5f194a2d90edd98451c90b938760bb5e6e04ac1f4fcb8ca65d5da842ceba",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [],
       "replaced_by": [],
       "priority": "derived"
@@ -2954,7 +4304,15 @@
         "CL15"
       ],
       "checker": "scripts/verify_triple_root_affine_modification_chain.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:1d91a091c53acefb3c6106f147320d9927d548e3b8d090695b95ef34ddb85ee5",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [],
       "replaced_by": [],
       "priority": "derived"
@@ -2970,7 +4328,15 @@
         "CL16"
       ],
       "checker": "scripts/verify_smooth_danielewski_triple_root_map.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:c463e87b9a73c131f84d144dea08c2ea6fbd9c0abfa88fc2daf982ce44fc5baa",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [],
       "replaced_by": [],
       "priority": "derived"
@@ -2986,7 +4352,15 @@
         "CL17"
       ],
       "checker": "scripts/verify_danielewski_multi_dicritical_family.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:470b3d8a462bf80ef61ba3f8897d3a362530e3569bfe27f6708e6b118071a94f",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [],
       "replaced_by": [],
       "priority": "derived"
@@ -3002,7 +4376,15 @@
         "CL18"
       ],
       "checker": "scripts/verify_danielewski_poisson_contraction.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:92a1cc26f4e24d42aa18000bc72ffdf75bd90b85697436ac6eb94c7a08fc3058",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [],
       "replaced_by": [],
       "priority": "derived"
@@ -3018,7 +4400,15 @@
         "CL19"
       ],
       "checker": "scripts/verify_danielewski_minimal_coupled_ansatz.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:fb8c48db78fc60af87a29a35fef01c9b2ed7b165b34a621da084f4a95d1daab9",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [],
       "replaced_by": [],
       "priority": "derived"
@@ -3034,7 +4424,15 @@
         "CL20"
       ],
       "checker": "scripts/verify_danielewski_quadratic_interaction_frontier.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:dd95cd4ad25e9bb155cd79115f97c1146f3559b4da104a6918d087b94cc948bd",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [],
       "replaced_by": [],
       "priority": "derived"
@@ -3051,7 +4449,15 @@
         "CL21"
       ],
       "checker": "scripts/verify_danielewski_coupled_attack_program.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:93a5a957cbe1e161d1de7d9ac642ecf4c86a6b3c06fa23e6a0b3997d2763dc33",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [],
       "replaced_by": [],
       "priority": "derived"
@@ -3067,7 +4473,15 @@
         "CL22"
       ],
       "checker": "scripts/verify_danielewski_de_rham_compiler.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:b8b9d362ceebf5fc8ee8224f2d54ea5dd3bfa406c7394016b98c00cb49de2c6b",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [],
       "replaced_by": [],
       "priority": "derived"
@@ -3085,7 +4499,15 @@
         "CL23"
       ],
       "checker": "scripts/verify_danielewski_full_quadratic_obstruction.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:86576c4f012fd0bfb9d0b6d15b2645052693e3e812b98e00703a710392d4e9a4",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "the zero-linear-x quadratic slice certificate"
       ],
@@ -3105,7 +4527,15 @@
         "CL24"
       ],
       "checker": "scripts/verify_danielewski_cubic_frontier.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:99824a7308a0990bcbeae650e71e5989ff8821150960241e5c1b0c827dcf0617",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [],
       "replaced_by": [],
       "priority": "derived"
@@ -3122,7 +4552,15 @@
         "CF1"
       ],
       "checker": "scripts/verify_quadratic_cubic_factorization_invariants.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:05382a893598eeaa35a462575212da1d75c722500ad2c07bf50fb238ca51aa8f",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "affine-five-space candidate for the tangent quadratic--cubic slice"
       ],
@@ -3140,7 +4578,12 @@
         "external: published minimal-standard-pair reductions and exact (72,108) certificates"
       ],
       "checker": null,
-      "review": "none",
+      "proof_type": "reproduction",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": null,
+      "software_lock": [],
       "supersedes": [
         "larger-coordinate frontier 108"
       ],
@@ -3159,7 +4602,15 @@
         "I2"
       ],
       "checker": "scripts/verify_dicritical_divisors.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:21ed3d5b32e1567b769caa561db6e03a0ad5135e80fabecaeaf2208de8fdab67",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "unresolved boundary-at-infinity divisor list"
       ],
@@ -3184,7 +4635,12 @@
         "CR7"
       ],
       "checker": null,
-      "review": "none",
+      "proof_type": "not-applicable",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": null,
+      "software_lock": [],
       "supersedes": [],
       "replaced_by": [],
       "priority": "primary"
@@ -3200,7 +4656,12 @@
         "O6"
       ],
       "checker": null,
-      "review": "none",
+      "proof_type": "not-applicable",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": null,
+      "software_lock": [],
       "supersedes": [],
       "replaced_by": [],
       "priority": "primary"
@@ -3218,7 +4679,12 @@
         "O8"
       ],
       "checker": null,
-      "review": "none",
+      "proof_type": "not-applicable",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": null,
+      "software_lock": [],
       "supersedes": [],
       "replaced_by": [],
       "priority": "primary"
@@ -3237,7 +4703,12 @@
         "IA1"
       ],
       "checker": null,
-      "review": "none",
+      "proof_type": "not-applicable",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": null,
+      "software_lock": [],
       "supersedes": [],
       "replaced_by": [],
       "priority": "primary"
@@ -3256,7 +4727,15 @@
         "IA1"
       ],
       "checker": "scripts/verify_hessian_ritt_degree_six.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:8d8c8c4f096a1e84a88f9df7908fcac300298ba25598930131877ae3584c1d4f",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "degree-six full coefficient elimination for OP-RITT"
       ],
@@ -3275,7 +4754,12 @@
         "H3"
       ],
       "checker": "scripts/verify_degree_six_ritt_boundary_atlas.sh",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:63072871aa9e766c221b7ca07151b4187cd331e254a3ae591ac9cfb3eb0a2461",
+      "software_lock": [],
       "supersedes": [
         "degree-six affine-sheet boundary part of OP-RITT"
       ],
@@ -3293,7 +4777,15 @@
         "HR6"
       ],
       "checker": "scripts/verify_hessian_ritt_degrees_eight_twelve.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:707527fdf780145cd49be77ea3a376282a1dc90e1e63fb3a0eac048dd93d29b3",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "generic-finiteness and expected-codimension part of OP-RITT",
         "degree-eight and degree-twelve Ritt-intersection diagrams"
@@ -3306,17 +4798,54 @@
       "kind": "corollary",
       "state": "proved",
       "title": "Canonical Hessian linear lifts and low-degree global synchronization",
-      "scope": "For every normalized factor pair ab=N in characteristic zero, triangular reconstruction uses only coefficients of degrees at least two and defines a canonical missing linear coefficient lambda_(a,b) on the Hessian-composition scheme. A multiple intersection is scheme-theoretically synchronized exactly when all lift differences lie in the summed Hessian residual ideal. Exact ambient, canonical-factor-chart, and transported Dickson normal-coordinate Groebner reduction proves every pair, hence every multiple intersection, through degree 24. The final degree-24 pair {2,3} reduces in a 4-normal/5-base block ring with Groebner basis size 63. In degree 30, five exact pair certificates with basis sizes 11,6,95,6,11 form the spanning tree 2-6-3-15-5-10 and prove that the global all-six intersection is scheme-theoretically synchronized. The nested pair {2,10} is separately certified in a 4-normal/7-base ring with basis size 4. Five incomparable degree-30 two-cut subintersections remain uncertified.",
+      "scope": "For every normalized factor pair ab=N in characteristic zero, triangular reconstruction uses only coefficients of degrees at least two and defines a canonical missing linear coefficient lambda_(a,b) on the Hessian-composition scheme. A multiple intersection is scheme-theoretically synchronized exactly when all lift differences lie in the summed Hessian residual ideal. Exact ambient, canonical-factor-chart, and transported Dickson normal-coordinate Groebner reduction proves every pair, hence every multiple intersection, through degree 24. In degree 30, five exact pair certificates form the spanning tree 2-6-3-15-5-10 and prove that the global all-six intersection is scheme-theoretically synchronized. The nested pair {2,10} is separately certified. The primitive pairs {2,15} and {3,10} are exact by a universal quadratic parity argument and a cubic remainder basis of size 184. The three transported pairs {2,3}, {2,5}, and {3,5} remain outside the accepted exact pair certificate.",
       "canonical_source": "extended-geometry/GENERAL_HESSIAN_RITT_INTERSECTIONS.md",
       "dependencies": [
         "HR6",
         "HR12"
       ],
       "checker": "scripts/verify_hessian_synchronization_lifts.py",
-      "review": "none",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:f5c5979f27299893c2b37b0d1f120f1e3a799eb9ca3219e0a1e7059684b959d2",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "global synchronization part of OP-RITT through degree 24",
-        "global synchronization of the degree-30 all-six intersection"
+        "global synchronization of the degree-30 all-six intersection",
+        "primitive degree-30 pair gaps {2,15} and {3,10}"
+      ],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "HRCF",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Common-right-factor top-jet synchronization",
+      "scope": "Let N=mr with m,r>1 over a commutative ring in which m is invertible. If two monic degree-N composites have monic-original terminal right factors of degree r and differ by a polynomial of degree below r, their top r-1 coefficients force the terminal factors to coincide, and the difference is constant. Hence original Hessian lifts synchronize scheme-theoretically whenever their equal-degree terminal refinements exist over the base ring. For reduced characteristic-zero components with incomparable cuts, Abhyankar--Moh first forces synchronization and Engstrom refinement then supplies the common factor. The nontrivial incomparable common-right patterns are exactly {2,3}:5, {2,5}:3, {3,5}:2 in degree 30 and {2,3}:7, {2,7}:3, {3,7}:2 in degree 42. A characteristic-two dual-number example proves outer-degree invertibility is necessary.",
+      "canonical_source": "extended-geometry/COMMON_RIGHT_FACTOR_SYNCHRONIZATION.md",
+      "dependencies": [
+        "HRSYNC",
+        "external: Abhyankar--Moh epimorphism theorem",
+        "external: Engstrom greatest-common-right-component theorem"
+      ],
+      "checker": "scripts/verify_common_right_factor_synchronization.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:1d1a9c42bbd9dc94b922b653e3f5c1e07a81f3cd389bb98777df190c8e451147",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [
+        "right-factor uniqueness half of the all-degree Hessian transport problem"
       ],
       "replaced_by": [],
       "priority": "derived"
@@ -3332,7 +4861,15 @@
         "HR12"
       ],
       "checker": "scripts/verify_degree30_ritt_2_complex.py",
-      "review": "none",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:c5dfd817bf5dcec501ac3510989acb10de35668da74331fee32c5502f564f408",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [
         "set-theoretic degree-thirty braid comparison"
       ],
@@ -3344,34 +4881,71 @@
       "kind": "open_problem",
       "state": "open",
       "title": "Vertical imprimitive-specialization loci",
-      "scope": "Prove synchronization for the five uncertified incomparable degree-30 two-cut intersections {2,3}, {2,5}, {2,15}, {3,5}, and {3,10}, and then uniformly in all degrees; prove the reduced Ritt-complex component conjecture; exclude or classify additional synchronized degree-30 all-cut components missing the complete-decomposition atlas; glue the now-explicit degree-30 transverse augmentations and cotangent/Tor signatures along the monomial divisor; organize analogous coherence data on commuting and mixed power-Chebyshev cells; and extend the degree-six affine-sheet boundary atlas to later incidence components.",
+      "scope": "Prove synchronization for the three uncertified transported degree-30 two-cut intersections {2,3}, {2,5}, and {3,5}, and then uniformly in all degrees; prove the reduced Ritt-complex component conjecture; exclude or classify additional synchronized degree-30 all-cut components missing the complete-decomposition atlas; glue the now-explicit degree-30 transverse augmentations and cotangent/Tor signatures along the monomial divisor; organize analogous coherence data on commuting and mixed power-Chebyshev cells; and extend the degree-six affine-sheet boundary atlas to later incidence components.",
       "canonical_source": "extended-geometry/GENERAL_HESSIAN_RITT_INTERSECTIONS.md",
       "dependencies": [
         "HR12",
         "HR6B",
+        "HRSYNC",
+        "HRCF",
         "HR30C"
       ],
       "checker": null,
-      "review": "none",
+      "proof_type": "not-applicable",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": null,
+      "software_lock": [],
       "supersedes": [],
       "replaced_by": [],
       "priority": "primary"
+    },
+    {
+      "id": "RMIN-ID9",
+      "kind": "theorem",
+      "state": "falsified",
+      "title": "Uniform index-three inverse-degree-nine bound",
+      "scope": "Falsified by van den Essen's exact dimension-five cubic automorphism, which has generic rank three, weak nilpotency index three, and inverse degree thirteen; its degree-eleven inverse tensor is nonzero.",
+      "canonical_source": "extended-geometry/RESTRICTED_MINIMA_FRONTIER.md",
+      "dependencies": [
+        "external: van den Essen index-three counterexample"
+      ],
+      "checker": "scripts/verify_index_three_degree_bound_counterexample.py",
+      "proof_type": "counterexample",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:5bb460dc9ee1e6dcbfaccd82c60b24e860e979436c14bdc061e6b951cd14b10b",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [],
+      "replaced_by": [],
+      "priority": "reference"
     },
     {
       "id": "OP-RMIN",
       "kind": "open_problem",
       "state": "open",
       "title": "Restricted cubic and quartic-HN exact minima",
-      "scope": "Determine the exact values in the current intervals 3<=r_cub<=17, 3<=nu_cub<=18, 3<=rho_HN,4<=37, and 6<=n_HN,4<=42. The rank/index inequality nu<=rank+1 makes the full-class index program the master lower-bound attack. The proposed index-three inverse-degree bound nine is false: van den Essen's exact dimension-five cubic automorphism has generic rank three, weak index three, and inverse degree thirteen. Its degree-eleven term realizes Omega_11=-C(NH,H,H)/2-B(B(H,H),H)/2-N(C(H,H,H))/6 nontrivially, so the class is not killed by the full coefficient ideal of (JH)^3=0; the invertibility-only full-class theorem remains open. In the four-variable lambda plus two arbitrary binary-cubic normal-form family, exact coefficient extraction proves that index three forces lambda=0, rank at most two, and inverse degree at most five; every rank-three member has index at least four. On the quartic side, the exact cotangent formula rank Hess(y.H)=2 rank(JH)+rank(A restricted to ker JH) reduces the next upper-bound target to rank 18 with zero kernel excess or rank 17 with excess at most two. The current rank-37 source has exact generic excess one; the rank-17 source has sampled excess four. In the combined 140-terminal search the rank-37 source is uniquely excess one and no terminal has sampled excess zero. Continue with the remaining rank-three kernel-bundle strata, excess-directed circuit synthesis, and direct dimension-six HN saturation.",
+      "scope": "Determine the exact values in the current intervals 3<=r_cub<=17, 3<=nu_cub<=18, 3<=rho_HN,4<=37, and 6<=n_HN,4<=42. The rank/index inequality nu<=rank+1 makes the full-class index program the master lower-bound attack. RMIN-ID9 records the falsified index-three inverse-degree-nine bound; the invertibility-only full-class theorem remains open. In the four-variable lambda plus two arbitrary binary-cubic normal-form family, exact coefficient extraction proves that index three forces lambda=0, rank at most two, and inverse degree at most five; every rank-three member has index at least four. On the quartic side, the exact cotangent formula rank Hess(y.H)=2 rank(JH)+rank(A restricted to ker JH) reduces the next upper-bound target to rank 18 with zero kernel excess or rank 17 with excess at most two. The current rank-37 source has exact generic excess one; the rank-17 source has sampled excess four. In the combined 140-terminal search the rank-37 source is uniquely excess one and no terminal has sampled excess zero. Continue with the remaining rank-three kernel-bundle strata, excess-directed circuit synthesis, and direct dimension-six HN saturation.",
       "canonical_source": "extended-geometry/RESTRICTED_MINIMA_FRONTIER.md",
       "dependencies": [
         "LR2",
         "LR3",
         "IV1",
-        "external: fixed-rank and low-dimensional positive results"
+        "external: fixed-rank and low-dimensional positive results",
+        "RMIN-ID9"
       ],
       "checker": null,
-      "review": "none",
+      "proof_type": "not-applicable",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": null,
+      "software_lock": [],
       "supersedes": [],
       "replaced_by": [],
       "priority": "primary"
@@ -3405,7 +4979,12 @@
         "OP-SUSP"
       ],
       "checker": null,
-      "review": "none",
+      "proof_type": "not-applicable",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": null,
+      "software_lock": [],
       "supersedes": [],
       "replaced_by": [],
       "priority": "parked"
@@ -3421,7 +5000,12 @@
         "C1"
       ],
       "checker": null,
-      "review": "none",
+      "proof_type": "not-applicable",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": null,
+      "software_lock": [],
       "supersedes": [],
       "replaced_by": [],
       "priority": "parked"
@@ -3430,20 +5014,26 @@
       "id": "OP-SUSP",
       "kind": "open_problem",
       "state": "open",
-      "title": "Minimal-boundary Keller classification",
-      "scope": "Extract the suspension and branch labels from the intrinsic Zariski--Main package. The active cubic closure protocol has three certificates. E: local cohomology reduces the two Ext obstructions to support saturation T^[2]/T=0 and absence of closed-point cotangent torsion H_Z^0(Omega_{B/A})=0; the latter is the explicit module saturation N:I^infinity=N for I=Fitt_3(B). Their vanishing gives curvilinear fibers and flatness. P: the reduced nonproperness equation is the unique branch equation times a phantom-boundary factor, which is a unit exactly when no second unramified divisor exists; irreducibility of the nonproperness hypersurface suffices. G: single and Borel gauges, transported alternating gauges, every normalized linear cancellation, and every two-monomial cancellation are classified or excluded; a general multi-monomial two-shear equation has one possible scalar discriminant obstruction every four degrees, but the entire first bilinear obstruction vanishes identically. Vanishing E should supply a saturated Tschirnhausen flag with scalar mixed coefficient, reducing G to the proved Borel theorem and a foundational base-change rigidity problem for G=(C0,C2,C3); then P controls the sole extra target divisor. Cubic-recursion and Newton-face calculations are fallbacks, not the primary closure route. Either gateway reaches the foundational map by CM3 and MB3 or by the cubic hyperplane theorem.",
+      "title": "Minimal-boundary gateway and Keller classification",
+      "scope": "Prove that every numerically boundary-minimal nonproper Keller map canonically produces a finite-normalization witness satisfying the eight predicates formalized in MBP1: SCB, SAT, BM, LC, PR<=1, PC, NC, and CS. The implication PlanePkg => marked A1/G_m plane core and the lift from a marked core to a weighted or cancellation suspension are already conditional theorems; existence, uniqueness, and verification of the witness are conjectural. In degree three the active alternatives are: derive the suspension witness and its conormal/noncontraction/straightening marks, or close the finite-normalization frontend by support saturation, absence of closed-point cotangent torsion, a unit phantom-boundary factor, coefficient gauge-linearity, and foundational base-change rigidity. Either completed frontend reaches the foundational map by CM3 and MB3 or by the cubic hyperplane theorem.",
       "canonical_source": "cancellation/MINIMAL_BOUNDARY_CLASSIFICATION.md",
       "dependencies": [
         "W1",
         "S1",
         "C1",
+        "MBP1",
         "MB3",
         "CM3",
         "CF3",
         "CG3"
       ],
       "checker": null,
-      "review": "none",
+      "proof_type": "not-applicable",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": null,
+      "software_lock": [],
       "supersedes": [
         "unscoped controlled-boundary suspension classification"
       ],
@@ -3469,7 +5059,15 @@
         "QO9"
       ],
       "checker": "scripts/verify_degree_five_laurent_quantum_obstruction.py",
-      "review": "none",
+      "proof_type": "not-applicable",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:6f734d345b6c390a9160843da22c553fa244cc63a4464fa2b31128ac53088867",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
       "supersedes": [],
       "replaced_by": [],
       "priority": "parked"
@@ -3485,7 +5083,12 @@
         "FC1"
       ],
       "checker": null,
-      "review": "none",
+      "proof_type": "not-applicable",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": null,
+      "software_lock": [],
       "supersedes": [],
       "replaced_by": [],
       "priority": "parked"
@@ -3501,7 +5104,12 @@
         "PF1"
       ],
       "checker": null,
-      "review": "none",
+      "proof_type": "not-applicable",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": null,
+      "software_lock": [],
       "supersedes": [],
       "replaced_by": [],
       "priority": "parked"
@@ -3517,7 +5125,12 @@
         "QP1"
       ],
       "checker": null,
-      "review": "none",
+      "proof_type": "not-applicable",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": null,
+      "software_lock": [],
       "supersedes": [],
       "replaced_by": [],
       "priority": "parked"
@@ -3539,7 +5152,12 @@
         "PS1"
       ],
       "checker": null,
-      "review": "none",
+      "proof_type": "not-applicable",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": null,
+      "software_lock": [],
       "supersedes": [],
       "replaced_by": [],
       "priority": "parked"
@@ -3562,7 +5180,12 @@
         "WG3"
       ],
       "checker": null,
-      "review": "none",
+      "proof_type": "not-applicable",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": null,
+      "software_lock": [],
       "supersedes": [],
       "replaced_by": [],
       "priority": "parked"

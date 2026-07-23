@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
-"""Explore the power-chart certificate for degree-30 ``{2,5}``."""
+"""Verify the transported degree-30 ``{2,5}`` pair over ``QQ``."""
 
 from __future__ import annotations
 
 import argparse
+import os
+import signal
 import shutil
 import subprocess
 import sys
@@ -21,6 +23,11 @@ from explore_degree30_hessian_ritt_braid import (  # noqa: E402
     Z,
     canonical_linear_lift,
     canonical_residuals,
+)
+from exact_membership_cache import (  # noqa: E402
+    cached_basis_size,
+    program_sha256,
+    write_exact_membership_cache,
 )
 
 
@@ -88,6 +95,35 @@ def transformed_problem() -> tuple[
             for power in range(1, 5)
         }
     )
+    b3, b4, b5 = inner_coefficients[2:]
+    a3, a4 = outer_coefficients[2:]
+    recovered_e2 = b5 / 2
+    recovered_e1 = (b4 - recovered_e2**2) / 2
+    recovered_translation = (
+        b3 - 2 * recovered_e2 * recovered_e1
+    ) / 2
+    recovered_w1 = (
+        a4 - 5 * recovered_translation**2
+    ) / 2
+    recovered_w0 = (
+        a3
+        - 10 * recovered_translation**4
+        - 8 * recovered_w1 * recovered_translation**2
+        - recovered_w1**2
+    ) / 2
+    inverse = {
+        e1: recovered_e1,
+        e2: recovered_e2,
+        translation: recovered_translation,
+        w0: recovered_w0,
+        w1: recovered_w1,
+    }
+    assert all(
+        sp.expand(
+            recovered.subs(coefficient_map, simultaneous=True) - variable
+        ) == 0
+        for variable, recovered in inverse.items()
+    )
 
     solved_variables = (
         inner_coefficients[0],
@@ -131,35 +167,102 @@ def transformed_problem() -> tuple[
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--prime", type=int, default=32003)
+    parser.add_argument("--prime", type=int, default=0)
     parser.add_argument("--order", default="dp")
-    parser.add_argument("--algorithm", choices=("std", "slimgb"), default="std")
-    parser.add_argument("--timeout", type=int, default=300)
+    parser.add_argument(
+        "--algorithm",
+        choices=("std", "slimgb", "modstd"),
+        default="modstd",
+    )
+    parser.add_argument("--timeout", type=int, default=900)
+    parser.add_argument("--refresh", action="store_true")
+    parser.add_argument("--fingerprint-only", action="store_true")
     args = parser.parse_args()
     normals, bases, residuals, defect = transformed_problem()
     characteristic = args.prime if args.prime else 0
     variables = normals + bases
-    singular = shutil.which("Singular")
-    assert singular is not None
+    basis_command = (
+        "modStd(I)" if args.algorithm == "modstd"
+        else f"{args.algorithm}(I)"
+    )
     program = (
+        ('LIB "modstd.lib";\n' if args.algorithm == "modstd" else "")
+        +
         f'ring q={characteristic},({",".join(map(str, variables))}),'
         f"{args.order};\n"
         f'ideal I={",".join(serialize(item) for item in residuals)};\n'
-        f"ideal G={args.algorithm}(I);\n"
+        f"ideal G={basis_command};\n"
         'print("TRANSPORTED_SYNC30_25");\n'
         f"print(reduce({serialize(defect)},G)==0);\n"
         "print(size(G));\n"
     )
-    result = subprocess.run(
-        [singular, "-q"],
-        input=program,
-        text=True,
-        capture_output=True,
-        timeout=args.timeout,
+    cache_path = (
+        ROOT / "certificates/degree30_hessian/transported_25.json"
     )
-    print(result.stdout, end="")
-    if result.stderr:
-        print(result.stderr, file=sys.stderr, end="")
+    cache_metadata = {
+        "pair": "{2,5}",
+        "characteristic": 0,
+        "algorithm": "modStd",
+        "order": "dp",
+        "coordinate_mode": "power",
+    }
+    cache_eligible = (
+        characteristic == 0
+        and args.algorithm == "modstd"
+        and args.order == "dp"
+    )
+    if args.fingerprint_only:
+        print(program_sha256(program))
+        return
+    cached = (
+        None
+        if args.refresh or not cache_eligible
+        else cached_basis_size(cache_path, program, cache_metadata)
+    )
+    if cached is not None:
+        print(
+            "CACHED PASS: degree-30 pair {2,5} synchronizes in exact "
+            f"transported power coordinates; basis size {cached}"
+        )
+        return
+    singular = shutil.which("Singular")
+    assert singular is not None
+    process = subprocess.Popen(
+        [singular, "-q"],
+        stdin=subprocess.PIPE,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+        text=True,
+        start_new_session=True,
+    )
+    try:
+        stdout, stderr = process.communicate(program, timeout=args.timeout)
+    except subprocess.TimeoutExpired:
+        os.killpg(process.pid, signal.SIGTERM)
+        try:
+            process.wait(timeout=5)
+        except subprocess.TimeoutExpired:
+            os.killpg(process.pid, signal.SIGKILL)
+            process.wait()
+        raise
+    compact = stdout.split()
+    marker = compact.index("TRANSPORTED_SYNC30_25")
+    assert compact[marker + 1] == "1", stdout + stderr
+    basis_size = int(compact[marker + 2])
+    if cache_eligible:
+        version = subprocess.run(
+            [singular, "--version"],
+            text=True,
+            capture_output=True,
+            check=True,
+        ).stdout.splitlines()[0]
+        write_exact_membership_cache(
+            cache_path, program, cache_metadata, basis_size, version
+        )
+    print(
+        "PASS: degree-30 pair {2,5} synchronizes in exact transported "
+        f"power coordinates; basis size {basis_size}"
+    )
 
 
 if __name__ == "__main__":
