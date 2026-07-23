@@ -1177,6 +1177,22 @@ PYTHONPATH=scripts .venv/bin/python \
 PYTHONPATH=scripts .venv/bin/python \
   scripts/analyze_degree_five_cubic_fifth_order.py \
   --exact-cubic --seventh-order --u36 1
+PYTHONPATH=scripts .venv/bin/python \
+  scripts/analyze_degree_five_cubic_fifth_order.py \
+  --exact-cubic --seventh-line
+PYTHONPATH=scripts .venv/bin/python \
+  scripts/analyze_degree_five_cubic_fifth_order.py \
+  --exact-cubic --print-radical-basis
+PYTHONPATH=scripts .venv/bin/python \
+  scripts/analyze_degree_five_cubic_fifth_order.py \
+  --seventh-component-profile --seventh-component-samples 200
+PYTHONPATH=scripts .venv/bin/python \
+  scripts/analyze_degree_five_cubic_fifth_order.py \
+  --seventh-component-elimination
+PYTHONPATH=scripts .venv/bin/python \
+  scripts/analyze_degree_five_cubic_fifth_order.py \
+  --prime 31991 --a 109 --tau 28672 \
+  --seventh-component-elimination
 ```
 
 Extract and verify the vertical all-pole period at the rational common
@@ -1189,6 +1205,9 @@ PYTHONPATH=scripts .venv/bin/python \
 PYTHONPATH=scripts .venv/bin/python \
   scripts/verify_degree_five_laurent_quantum_obstruction.py \
   --rational-common-point
+PYTHONPATH=scripts .venv/bin/python \
+  scripts/verify_degree_five_laurent_quantum_obstruction.py \
+  --kappa 2 --tau 3/2 --compare-constraint-modules
 ```
 
 Regression test:
@@ -1214,15 +1233,19 @@ four-period cubic locus.  The remaining useful directions are:
    the dual kernel does not commute with specialization.  Formulate the
    period invariant as a coherent cokernel/dual-sheaf section with its
    Fitting strata rather than as one rational scalar.
-3. **Parameter-uniform Laurent periods.** Enlarge the 41 bounded conditions
-   to the finite all-pole lower-lift superspace used in (QR18).  This is the
-   missing descent step between the bounded period stratification and a
-   full statement in localized \(H^2\).
-4. **Uniform seventh order on the cubic component.** The branch (QR19l) and
-   a second point on its \(u_{36}\)-line are obstructed by \(6\to7\) rank
-   jumps, with the one-term period (QR19n) at the first point.  Compute the
-   order-seven residue on the complete 27-dimensional fifth-order solution
-   scheme, including its other components and vertical strata.
+3. **Parameter-uniform Laurent periods.** Lift the now explicit
+   41-by-16 equality between bounded and all-pole constraint modules from
+   the three exact fibers to \(\mathbb Q(a,\tau)\), then calculate its
+   Fitting ideals and repeat on the four alternate supports and the
+   replacement chart.  This is no longer a 4065-variable search.
+4. **Lift the final cubic \(h^7\) unit identity.** The reduced fifth-order
+   scheme is one affine 27-space, its order-seven matrix has constant rank
+   six, and consistency is a 401-generator ideal in only ten coordinates.
+   This ideal is the unit ideal at two good primes.  Finish the
+   characteristic-zero Singular computation over \(K=\mathbb Q(a)\), or
+   reconstruct a short Nullstellensatz combination from the two modular
+   bases.  This is the only remaining order-seven step on the cubic
+   component.
 
 Only after one of these steps should a scalar or finite vector be called
 the quantum residue of the degree-five family.

@@ -198,12 +198,23 @@ The decisive exact cubic-field check is
 
 ```bash
 PYTHONPATH=scripts .venv/bin/python \
-  scripts/analyze_degree_five_cubic_fifth_order.py --exact-cubic --groebner
+  scripts/analyze_degree_five_cubic_fifth_order.py \
+  --exact-cubic --print-radical-basis --seventh-line
+PYTHONPATH=scripts .venv/bin/python \
+  scripts/analyze_degree_five_cubic_fifth_order.py \
+  --seventh-component-elimination
 ```
 
 It verifies all 680 projected quadratic equations at an explicit
 two-coordinate lower lift and solves the unreduced fifth-order correction
-equation with a 14-term particular solution.
+equation with a 14-term particular solution.  The exact radical is one
+affine 27-space with a six-linear-form nonlinear core, and the entire
+explicit one-parameter line is obstructed at order seven.  The second
+command proves over `GF(32003)` that the full 20-column order-seven matrix
+has constant rank six and that its 401-polynomial consistency ideal, in
+only ten effective parameters, is the unit ideal.  Repeat it with
+`--prime 31991 --a 109 --tau 28672` for the second good-prime certificate.
+The characteristic-zero lift of that final unit identity remains open.
 
 The low-support unrestricted odd audit is replayed by
 
