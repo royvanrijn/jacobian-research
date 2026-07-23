@@ -328,9 +328,10 @@ ordered triple intersection has transverse algebra
 \]
 
 of length eight.  That is a genuinely higher face of the weighted complex:
-its cubic socle class is invisible in every pairwise slice.  Recovering the
-entire three-sheet completed component ring still requires the conductor
-equalizer theorem described in the degree-eighteen note.
+its cubic socle class is invisible in every pairwise slice.  The
+excess-conormal theorem in the degree-eighteen note proves that the pairwise
+data recover the entire three-sheet completed component ring on a nonempty
+open.
 
 ## 9. Proof boundary and next theorem
 

@@ -642,14 +642,14 @@
       "id": "E7",
       "kind": "corollary",
       "state": "proved",
-      "title": "Degree-eighteen ordered triple transverse algebra",
-      "scope": "On a nonempty open of the ordered (6,6,6) collision chart of C_(3,4), the three normalization branches have pairwise transverse length four and ordered-triple transverse algebra k[e_1,e_2,e_3]/(e_1^2,e_2^2,e_3^2) of length eight, with nonzero cubic socle. Reconstruction of the entire completed three-branch component ring and its conductor equalizer is explicitly excluded.",
+      "title": "Degree-eighteen ordered triple algebra and conductor equalizer",
+      "scope": "On a nonempty open of the ordered (6,6,6) collision chart of C_(3,4), the three normalization branches have pairwise transverse length four and ordered-triple transverse algebra k[e_1,e_2,e_3]/(e_1^2,e_2^2,e_3^2) of length eight, with nonzero cubic socle. The completed three-branch Cech equalizer is exact there; an exact excess-conormal map of ranks 16 to 10 has maximal minor 2401/256, and simultaneous complete-intersection generators give conductor (w_i,e_i^2,e_j^2e_k^2) on each sheet.",
       "canonical_source": "extended-geometry/DEGREE18_TRIPLE_INTERSECTION.md",
       "dependencies": [
         "E3",
         "E6"
       ],
-      "checker": "scripts/verify_degree18_triple_intersection.py",
+      "checker": "scripts/explore_degree18_excess_conormal.py",
       "review": "none",
       "supersedes": [
         "pairwise-only description of the degree-eighteen three-sheet face"

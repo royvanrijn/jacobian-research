@@ -19,7 +19,7 @@ and external review are recorded only in
 | Enumerative nonsurjective geometry | [Component counts, intersection series, branch profiles, exact projective degrees, and graph Chow classes](NONSURJECTIVE_ENUMERATIVE_GEOMETRY.md) |
 | Degree-twelve local singularity | [Local singularity](DEGREE12_LOCAL_SINGULARITY.md) |
 | Weighted exceptional partition lattice | [Minimal common coarsenings, universal collision weights, and the degree-twenty census](PARTITION_LATTICE_GEOMETRY.md) |
-| Degree-eighteen triple intersection | [Three-sheet transverse gluing and the remaining conductor equalizer](DEGREE18_TRIPLE_INTERSECTION.md) |
+| Degree-eighteen triple intersection | [Three-sheet transverse gluing and the generic conductor equalizer](DEGREE18_TRIPLE_INTERSECTION.md) |
 | Finite-field Chebotarev | [Effective theorem](FINITE_FIELD_CHEBOTAREV.md) |
 | Adelic complete-fiber engineering | [Simultaneous real signatures and finite-prime splitting conditions](../verified/ADELIC_FIBER_ENGINEERING.md) |
 | Explicit quartic model | [Quartic weighted geometry](QUARTIC_WEIGHTED_GEOMETRY.md) |

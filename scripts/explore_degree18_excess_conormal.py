@@ -11,7 +11,9 @@ constructs those fibers directly and tests the map
 
 between the corresponding excess-conormal spaces.  Surjectivity is the
 residue-field version of the Tor-surjectivity criterion for the conductor
-equalizer.
+equalizer.  It also checks that the two pairwise conductor ideals on one
+normalization sheet have a two-generator common complete-intersection core,
+which yields the quartic generator in their intersection.
 """
 
 import itertools
@@ -83,16 +85,16 @@ def ideal_kernel(evaluation):
     return sp.Matrix.hstack(*kernel) if kernel else sp.zeros(evaluation.cols, 0)
 
 
-def maximal_ideal_multiple_space(ideal, target_basis):
+def maximal_ideal_multiple_space(ideal, target_basis, variable_count):
     """Return the degree-at-most-two part of m times a truncated ideal."""
-    linear_count = TARGET_COUNT
+    linear_count = variable_count
     linear_parts = column_space(ideal[:linear_count, :])
     basis_index = {exponent: index for index, exponent in enumerate(target_basis)}
     columns = []
     for generator in range(linear_parts.cols):
-        for variable in range(TARGET_COUNT):
+        for variable in range(variable_count):
             column = sp.zeros(len(target_basis), 1)
-            for source in range(TARGET_COUNT):
+            for source in range(variable_count):
                 coefficient = linear_parts[source, generator]
                 if not coefficient:
                     continue
@@ -108,9 +110,11 @@ def maximal_ideal_multiple_space(ideal, target_basis):
 class ConormalFiber:
     """The quotient I/mI and reduction maps in a two-jet presentation."""
 
-    def __init__(self, ideal, target_basis):
+    def __init__(self, ideal, target_basis, variable_count=TARGET_COUNT):
         self.ideal = column_space(ideal)
-        self.multiple = maximal_ideal_multiple_space(self.ideal, target_basis)
+        self.multiple = maximal_ideal_multiple_space(
+            self.ideal, target_basis, variable_count
+        )
         assert column_space(self.ideal.row_join(self.multiple)).cols == self.ideal.cols
 
         if self.multiple.cols:
@@ -164,7 +168,7 @@ def main():
     evaluations = [evaluation_matrix(branch, target_basis) for branch in branches]
     branch_ideals = [ideal_kernel(evaluation) for evaluation in evaluations]
     for evaluation, ideal in zip(evaluations, branch_ideals):
-        multiple = maximal_ideal_multiple_space(ideal, target_basis)
+        multiple = maximal_ideal_multiple_space(ideal, target_basis, TARGET_COUNT)
         assert evaluation * multiple == sp.zeros(evaluation.rows, multiple.cols)
     pair_ideals = {
         (left, right): column_space(
@@ -218,6 +222,62 @@ def main():
     minor_columns = independent_columns(induced_coordinates)
     maximal_minor = induced_coordinates[:, list(minor_columns)].det()
 
+    # On the third branch, pull back the first and second branch ideals.  The
+    # resulting height-three ideals are the two pairwise conductor kernels.
+    branch_basis = exponent_basis(4, ORDER)[1:]
+    conductor_13 = evaluations[2] * branch_conormals[0].representatives
+    conductor_23 = evaluations[2] * branch_conormals[1].representatives
+    conductor_sum = column_space(conductor_13.row_join(conductor_23))
+    conductor_conormal_13 = ConormalFiber(
+        conductor_13, branch_basis, variable_count=4
+    )
+    conductor_conormal_23 = ConormalFiber(
+        conductor_23, branch_basis, variable_count=4
+    )
+    conductor_sum_conormal = ConormalFiber(
+        conductor_sum, branch_basis, variable_count=4
+    )
+    conductor_sum_map = inclusion(
+        conductor_conormal_13, conductor_sum_conormal
+    ).row_join(inclusion(conductor_conormal_23, conductor_sum_conormal))
+    conductor_excess = kernel_basis(conductor_sum_map)
+    left_excess_coordinates = conductor_excess[
+        : conductor_conormal_13.dimension, :
+    ]
+    right_excess_coordinates = conductor_excess[
+        conductor_conormal_13.dimension :, :
+    ]
+    left_projection_rank = left_excess_coordinates.rank()
+    right_projection_rank = right_excess_coordinates.rank()
+    left_common_generators = (
+        conductor_conormal_13.representatives * left_excess_coordinates
+    )
+    right_common_generators = (
+        conductor_conormal_23.representatives * right_excess_coordinates
+    )
+    common_linear_ranks = (
+        left_common_generators[:4, :].rank(),
+        right_common_generators[:4, :].rank(),
+    )
+
+    assert tuple(item.dimension for item in branch_conormals) == (11, 11, 11)
+    assert tuple(
+        pair_conormals[pair].dimension for pair in sorted(pair_conormals)
+    ) == (14, 14, 14)
+    assert triple_conormal.dimension == 15
+    assert tuple(pair_excess[pair].cols for pair in sorted(pair_excess)) == (8, 8, 8)
+    assert target_excess.cols == 10
+    assert induced_rank == target_excess.cols
+    assert maximal_minor != 0
+    assert (
+        conductor_conormal_13.dimension,
+        conductor_conormal_23.dimension,
+        conductor_sum_conormal.dimension,
+    ) == (3, 3, 4)
+    assert conductor_excess.cols == 2
+    assert (left_projection_rank, right_projection_rank) == (2, 2)
+    assert common_linear_ranks == (1, 1)
+
     print("branch conormal dimensions:", tuple(item.dimension for item in branch_conormals))
     print(
         "pair conormal dimensions:",
@@ -231,11 +291,21 @@ def main():
     print("target excess dimension:", target_excess.cols)
     print("induced excess-map rank:", induced_rank)
     print("nonzero maximal minor:", maximal_minor)
-    assert induced_rank <= target_excess.cols
-    if induced_rank == target_excess.cols:
-        print("PASS: the residue excess-conormal map is surjective")
-    else:
-        print("WITNESS: the residue excess-conormal map has a cokernel")
+    print(
+        "one-sheet conductor conormal dimensions:",
+        (
+            conductor_conormal_13.dimension,
+            conductor_conormal_23.dimension,
+            conductor_sum_conormal.dimension,
+        ),
+    )
+    print("one-sheet common-core dimension:", conductor_excess.cols)
+    print(
+        "common-core projection ranks:",
+        (left_projection_rank, right_projection_rank),
+    )
+    print("common-core linear ranks:", common_linear_ranks)
+    print("PASS: the residue excess-conormal map is surjective")
 
 
 if __name__ == "__main__":
