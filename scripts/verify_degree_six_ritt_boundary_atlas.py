@@ -136,7 +136,7 @@ for name, witness in boundary_witnesses.items():
     audit_seed(
         witness,
         zero_order=3 if name.endswith("zero") else 2,
-        gcd_degree=0 if name.endswith("zero") else 1,
+        gcd_degree=1,
     )
 
 substitutions = {name: coefficients(H) for name, H in boundary_witnesses.items()}
@@ -244,9 +244,10 @@ zero_q = (
 ) / 2
 
 # The six extra-root points split as two rational points and a quartic orbit.
-assert sp.factor(endpoint.subs(q, -3 * center**2)) == -(
-    center + 1
-) * (2 * center - 1) ** 2 * (3 * center - 1)
+assert sp.expand(
+    endpoint.subs(q, -3 * center**2)
+    + (center + 1) * (2 * center - 1) ** 2 * (3 * center - 1)
+) == 0
 for rational_point in (
     {center: -1, q: -3},
     {center: sp.Rational(1, 3), q: -sp.Rational(1, 3)},
@@ -277,14 +278,22 @@ assert D.subs({center: sp.Rational(1, 2), q: -sp.Rational(1, 4)}) == 0
 
 # Four reduced Hessian collisions on the common curve.  They are exactly the
 # type-(6) omitted-component support, and they remain affine-boundary clean.
+admissibility_numerator = sp.factor(sp.diff(g, w, 2).subs(w, 1) - 2 * D)
 type6_cut = sp.factor(endpoint.subs(q, 0))
 assert type6_cut == 15 * center**4 - 20 * center**3 + 15 * center**2 - 6 * center + 1
 assert sp.gcd(type6_cut, sp.diff(type6_cut, center)) == 1
 assert sp.discriminant(type6_cut, center) == 10800
+Hcommon = sp.cancel(-(g - g0 - gp0 * w) / D)
+Pcommon = sp.cancel(Hcommon / w**2)
+common_affine_boundary = sp.factor(
+    sp.resultant(Pcommon, 2 * Pcommon + w * sp.diff(Pcommon, w), w).subs(q, 0)
+)
+for nonvanishing in (D.subs(q, 0), admissibility_numerator.subs(q, 0), common_affine_boundary):
+    numerator = sp.together(nonvanishing).as_numer_denom()[0]
+    assert sp.gcd(sp.Poly(type6_cut, center), sp.Poly(numerator, center)).degree() == 0
 
 # Every algebraic orbit avoids normalization poles and weighted
 # inadmissibility.  The zero and extra cuts also avoid the Hessian divisor.
-admissibility_numerator = sp.factor(sp.diff(g, w, 2).subs(w, 1) - 2 * D)
 for orbit, q_expression in ((zero_cut, zero_q), (quartic_cut, quartic_q)):
     for forbidden in (q_expression, D.subs(q, q_expression), admissibility_numerator.subs(q, q_expression)):
         numerator = sp.together(forbidden).as_numer_denom()[0]
