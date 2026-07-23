@@ -8,13 +8,14 @@ and external review are recorded only in
 | Results | Primary document |
 |---|---|
 | Generic discriminant geometry | [Generic discriminant curve](GENERIC_DISCRIMINANT_CURVE.md) |
-| Incidence-cover automorphisms | [Hessian-stabilizer classification and Ritt-imprimitive vertical slices](INCIDENCE_COVER_AUTOMORPHISMS.md); [all-degree Hessian atlas and complete degree-six/eight/twelve Ritt diagrams](HESSIAN_RITT_INCIDENCE.md); [degree-eighteen nested-power component and degree-pattern census](DEGREE18_HESSIAN_RITT_NESTED_POWER.md); [normalized sextic omitted-value atlas](DEGREE_SIX_RITT_ATLAS.md); [degree-six affine-sheet boundary atlas](DEGREE_SIX_RITT_BOUNDARY_ATLAS.md) |
+| Incidence-cover automorphisms | [Hessian-stabilizer classification and Ritt-imprimitive vertical slices](INCIDENCE_COVER_AUTOMORPHISMS.md); [general relation-graph theorem and Hessian-transfer problem](GENERAL_HESSIAN_RITT_INTERSECTIONS.md); [all-degree Hessian atlas and complete degree-six/eight/twelve Ritt diagrams](HESSIAN_RITT_INCIDENCE.md); [degree-eighteen nested-power component and degree-pattern census](DEGREE18_HESSIAN_RITT_NESTED_POWER.md); [normalized sextic omitted-value atlas](DEGREE_SIX_RITT_ATLAS.md); [degree-six affine-sheet boundary atlas](DEGREE_SIX_RITT_BOUNDARY_ATLAS.md) |
 | Weighted image and boundary | [Canonical-family image](CANONICAL_FAMILY_IMAGE.md) |
 | Omitted values | [Omitted-value classification](OMITTED_VALUE_CLASSIFICATION.md) |
 | Uniqueness of an omitted pencil value | [Unique omitted-value lemma](UNIQUE_OMITTED_VALUE.md) |
 | Contact strata and exceptional components | [Coincident-root rebuild](COINCIDENT_ROOT_REBUILD.md) |
 | Contact atoms and omitted-value phase diagram | [Contact-atom principle](CONTACT_ATOM_PRINCIPLE.md) |
 | Abstract threshold-`r` contact atoms, integer optimization, quasipolynomials, and application audit | [Threshold contact-atom theorem schema](THRESHOLD_CONTACT_ATOM_SCHEMA.md) |
+| Scheme-level low-degree search for hidden exceptional-seed components and closure multiplicities | [Exceptional-seed component hunt](EXCEPTIONAL_SEED_COMPONENT_HUNT.md) |
 | Component normalizations | [Component normalization](COMPONENT_NORMALIZATION.md) |
 | Enumerative nonsurjective geometry | [Component counts, intersection series, branch profiles, exact projective degrees, and graph Chow classes](NONSURJECTIVE_ENUMERATIVE_GEOMETRY.md) |
 | Degree-twelve local singularity | [Local singularity](DEGREE12_LOCAL_SINGULARITY.md) |

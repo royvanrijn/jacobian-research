@@ -668,7 +668,7 @@ the five complete fixed-`r` columns: it supplies six complete all-`r`
 columns in the transverse direction and an eventual tail in every fixed
 `m` column.
 
-Consequently a still-unresolved pair in `OP-CR` must have `m>=7`, `r>=6`,
+Consequently a still-unresolved pair in `OP-CR` must have `m>=7`, `r>=7`,
 composite `N=(m+1)r+1`, and at most one prime in
 `(mr,(m+1)r+1)`, unless another recorded irreducibility criterion applies.
 If that interval contains exactly one prime `N-u`, the only possible factor
@@ -920,7 +920,8 @@ chosen prime.  Degree is therefore preserved, and a modular monic gcd equal
 to one certifies coprimality over `Q`.  These 203 certificates are reproduced
 by
 [`verify_contact_resultant_modular_grid.py`](../scripts/verify_contact_resultant_modular_grid.py).
-They are evidence only and do not replace the uniform argument.
+For `r=6` this is the finite part of (65).  The rows with `r>=7` are evidence
+only and do not replace a uniform argument.
 
 ## 14. Scope boundary (`OP-CR`)
 
@@ -930,6 +931,47 @@ not covered by (46) or another parameter-irreducibility theorem.  Formula
 demanding every endpoint-eliminant root lie outside it is too strong.  For
 `r=6`, (58)--(65) complete the whole column without a whole-eliminant
 Schur--Cohn attack.
+
+The branch mechanism is structural for a fixed `r`, but it is not presently
+uniform in `r`.  For arbitrary fixed `r` the boundary-layer limit has the
+same form
+
+\[
+ \begin{aligned}
+ e_r(c,z)&=(-c)^rz^{r-1}+\sum_{k=1}^{r-1}(-1)^k\binom rk
+ z^{r-k-1}\bigl(b_k-z^kU_k(c)\bigr)(-c)^{r-k-1},\\
+ f_r(c,z)&=b_r-z^rU_r(c).
+ \end{aligned}                                      \tag{66}
+\]
+
+As a bounded pilot, exact elimination at `r=7` gives a residual endpoint
+eliminant `H_7` of bidegree `(42,126)` in `(y,m)`.  Its complete top Newton
+edge is
+
+\[
+ \operatorname{Res}_z(e_7,f_7)=\lambda c^7P_{42}(c),
+ \qquad \lambda\in\mathbb Q^*,                     \tag{67}
+\]
+
+where `P_42` is squarefree, `P_42(0)!=0`,
+`gcd(P_42,U_7)=1`, and the penultimate subresultant is linear in `z` with
+leading coefficient coprime to `P_42`.  Thus the limiting separation and
+unique finite `z` reconstruction used for `r=6` survive structurally in the
+next column.  The Newton-edge identity proves that all 42 branches of `H_7`
+have `y=1+c/m+O(m^-2)` and a unique algebraic limiting `z`.  Since `c` is
+nonzero algebraic, Lindemann--Weierstrass separates that value from `exp(c)`.
+Consequently the `r=7` contact resultant is nonzero for every sufficiently
+large `m`.
+
+What does not generalize structurally is an effective positive-`t`
+continuation or any bound uniform in `r`; the branch count already rises from
+29 to 42.  Repeating the `r=6` atlas column by column is therefore a valid
+fixed-`r` computation, not a solution of the residual wedge.  The full
+bounded pilot and the smaller cross-column limiting audit are replayed by
+[`verify_contact_resultant_r7_asymptotic.py`](../scripts/verify_contact_resultant_r7_asymptotic.py)
+and
+[`verify_contact_resultant_fixed_r_branch_schema.py`](../scripts/verify_contact_resultant_fixed_r_branch_schema.py),
+respectively.
 
 Two structural routes remain useful beyond that first column.  First,
 combine the factor-degree restriction after (47) with endpoint geometry.  A
@@ -942,13 +984,13 @@ natural inputs to such a bound.
 Second, the hypergeometric equation for `K=K_(m,r)` is
 
 \[
- w(1-w)K''+\{r+2-(r+2-mr)w\}K'+mr(r+1)K=0.          \tag{66}
+ w(1-w)K''+\{r+2-(r+2-mr)w\}K'+mr(r+1)K=0.          \tag{68}
 \]
 
 Its roots avoid `0,1` and are simple.  Hence any differential-operator
-formula for `L` reduces modulo (66) to `A_(m,r)(w)K'+B_(m,r)(w)K`; at a root
+formula for `L` reduces modulo (68) to `A_(m,r)(w)K'+B_(m,r)(w)K`; at a root
 of `K`, coprimality becomes the local nonvanishing of `A_(m,r)`.  The useful
-open step is not merely low differential order, which (66) supplies
+open step is not merely low differential order, which (68) supplies
 automatically, but a contiguous-relation formula keeping `A_(m,r)` of
 controlled algebraic complexity.
 
@@ -971,6 +1013,10 @@ certificate are in
 [`verify_contact_resultant_r6_asymptotic.py`](../scripts/verify_contact_resultant_r6_asymptotic.py).
 The effective 29-tube continuation and finite-range completion are in
 [`verify_contact_resultant_r6_effective.py`](../scripts/verify_contact_resultant_r6_effective.py).
+The bounded `r=7` limiting-edge generalization audit is in
+[`verify_contact_resultant_fixed_r_branch_schema.py`](../scripts/verify_contact_resultant_fixed_r_branch_schema.py).
+The exact full-eliminant connection and eventual `r=7` theorem are in
+[`verify_contact_resultant_r7_asymptotic.py`](../scripts/verify_contact_resultant_r7_asymptotic.py).
 The coefficient comparison and fractional-linear transfer behind (46)--(47)
 are checked by
 [`verify_contact_resultant_irreducible_ranges.py`](../scripts/verify_contact_resultant_irreducible_ranges.py).

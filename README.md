@@ -177,7 +177,10 @@ alongside the cancellation and Hessian--Ritt frontiers:
   `r>=7`; the first six fixed-`r` columns, the six all-`r` columns `m<=6`,
   every fixed-`m` eventual tail, and all other parameter-irreducibility
   ranges are complete.  The `r=6` column is closed by 7424 rigorous Arb
-  branch tubes on `0<=1/m<=1/41` and exact modular gcds for `m<=40`.
+  branch tubes on `0<=1/m<=1/41` and exact modular gcds for `m<=40`.  An
+  exact `r=7` pilot shows that the branch schema survives for the next fixed
+  column and proves its eventual tail, but does not make that threshold
+  effective or provide a uniform continuation in `r`.
 - `OP-LR-REES`: linear target-lift Rees strictness as a finite module/SAGBI
   problem, including a structural cutoff to finitely many torus weights.
 - `OP-LR-II`: the minimal pair is now nonzero; classify the remaining

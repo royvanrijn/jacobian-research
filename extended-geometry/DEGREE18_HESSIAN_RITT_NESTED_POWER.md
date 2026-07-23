@@ -136,7 +136,7 @@ pairwise additions to a common-refinement lattice.  No single ordered degree
 word carries all four cuts, but (5) is a positive-dimensional all-four
 component obtained by two compatible power moves.
 
-The reusable conjecture should therefore be phrased in terms of **Ritt
+The reusable formulation should therefore be phrased in terms of **Ritt
 diagrams**, not just common refinement trees:
 
 > Irreducible components of multiple Hessian-composition intersections are
@@ -149,6 +149,14 @@ This is consistent with the global description of complete decompositions by
 [Mueller and Zieve](https://arxiv.org/abs/0807.3578), but the irreducibility and
 diagram-identification statement is additional algebraic geometry, not a
 formal restatement of Ritt's theorems.
+
+The later [general-intersection note](GENERAL_HESSIAN_RITT_INTERSECTIONS.md)
+sharpens this verdict.  Ziegler's tame multi-collision theorem already gives
+the relation-graph normal form for synchronized ordinary polynomial
+compositions.  The new issue specific to this project is Hessian transfer:
+one must prove that projection away from the linear term creates no
+unsynchronized minimal primes.  The family (5) is exactly the exponential
+block predicted by that relation graph.
 
 Degree `24` is the next compatibility test: its prime-refinement shadow is the
 four-vertex path obtained by moving the cubic through three quadratic

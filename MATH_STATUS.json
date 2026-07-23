@@ -701,7 +701,7 @@
       "kind": "corollary",
       "state": "proved",
       "title": "Primitive merger hypergraph and Boolean intersection criterion",
-      "scope": "For every finite ordered family of normalization sheets whose active allocation hyperedges are distinct sixfold collision clusters, the strong transverse common-polynomial algebra is k[e_1,...,e_t]/(e_1^2,...,e_t^2), with tangent excess t, length 2^t, binomial Hilbert vector, and nonzero top socle. Merger-cycle rank records path dependencies and does not alter t. A quadratic-sandwich criterion promotes the strong algebra to the actual normalized-seed intersection; it recovers E4 and E7. The first Boolean failure is the merged twelvefold block k[X,Y]/(X^3,XY,Y^2), whose length remains four but whose socle has dimension two.",
+      "scope": "For every finite ordered family of normalization sheets whose active allocation hyperedges are distinct sixfold collision clusters and whose inactive clusters have pure allocations, the strong transverse common-polynomial algebra is k[e_1,...,e_t]/(e_1^2,...,e_t^2), with tangent excess t, length 2^t, binomial Hilbert vector, and nonzero top socle. Merger-cycle rank records path dependencies and does not alter t. A quadratic-sandwich criterion promotes the strong algebra to the actual normalized-seed intersection; it recovers E4 and E7. The first nonminimal failure is k[t]/(t^3) at the degree-eight collision of a transfer root with a common double atom; the first length-preserving pure-transfer failure is the merged twelvefold block k[X,Y]/(X^3,XY,Y^2), whose socle has dimension two.",
       "canonical_source": "extended-geometry/OMITTED_COMPONENT_INTERSECTION_ALGEBRA.md",
       "dependencies": [
         "E3",
@@ -997,6 +997,23 @@
       "supersedes": [
         "noneffective r=6 asymptotic threshold"
       ],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "CR7",
+      "kind": "corollary",
+      "state": "proved",
+      "title": "Seventh contact-resultant asymptotic branches",
+      "scope": "For r=7 the residual endpoint eliminant has bidegree (42,126), and all 42 branches satisfy y=1+c/m+O(m^-2) with squarefree nonzero algebraic c and a uniquely reconstructed algebraic limiting z. Lindemann--Weierstrass separates z from exp(c), so the contact resultant is nonzero for all sufficiently large m. No explicit threshold is claimed.",
+      "canonical_source": "cancellation/CONTACT_RESULTANT.md",
+      "dependencies": [
+        "C1",
+        "external: Lindemann--Weierstrass theorem"
+      ],
+      "checker": "scripts/verify_contact_resultant_r7_asymptotic.py",
+      "review": "none",
+      "supersedes": [],
       "replaced_by": [],
       "priority": "derived"
     },
@@ -1511,7 +1528,7 @@
       "kind": "open_problem",
       "state": "open",
       "title": "Higher cancellation contact resultants",
-      "scope": "Prove the residual wedge r>=7 not covered by parameter irreducibility. The first six fixed-r columns are complete. Any unresolved pair has m>=7, r>=7, composite N=(m+1)r+1, and at most one prime in (mr,N).",
+      "scope": "Prove the residual wedge r>=7 not covered by parameter irreducibility. The first six fixed-r columns are complete, and r=7 is proved for all sufficiently large m without an effective threshold. Any unresolved pair has m>=7, r>=7, composite N=(m+1)r+1, and at most one prime in (mr,N).",
       "canonical_source": "cancellation/CONTACT_RESULTANT.md",
       "dependencies": [
         "C1",
@@ -1520,7 +1537,8 @@
         "CR3",
         "CR4",
         "CR5",
-        "CR6"
+        "CR6",
+        "CR7"
       ],
       "checker": null,
       "review": "none",

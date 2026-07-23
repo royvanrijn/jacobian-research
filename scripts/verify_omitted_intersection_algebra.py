@@ -71,6 +71,48 @@ assert all(
 )
 
 
+# First boundary failure: in degree eight a primitive sixfold transfer meets
+# a common double atom.  Fix the common root at zero and slice away the
+# reduced (6,2)-support direction.  The actual affine-difference equations
+# (coefficients of degrees at least two) give k[t]/(t^3), of length three.
+r8 = sp.symbols("r8")
+phi8 = sp.expand((1 - r8) ** 8 - r8**8 + 8 * r8**7)
+denominator8 = sp.expand(8 * ((1 - r8) ** 7 + r8**7))
+assert sp.factor(phi8) == (
+    28 * r8**6
+    - 56 * r8**5
+    + 70 * r8**4
+    - 56 * r8**3
+    + 28 * r8**2
+    - 8 * r8
+    + 1
+)
+assert sp.gcd(phi8, sp.diff(phi8, r8)) == 1
+assert sp.gcd(phi8, denominator8) == 1
+
+u0_8, u1_8, u2_8, u3_8, t0_8 = sp.symbols("u0_8 u1_8 u2_8 u3_8 t0_8")
+U8 = Z**4 + u3_8 * Z**3 + u2_8 * Z**2 + u1_8 * Z + u0_8
+T8 = Z**2 + t0_8
+difference8 = sp.Poly(sp.expand(U8**2 - Z**2 * T8**3), Z)
+affine8_equations = [
+    difference8.coeff_monomial(Z**degree) for degree in range(2, 9)
+]
+candidate8 = (
+    u3_8,
+    u1_8,
+    2 * u2_8 - 3 * t0_8,
+    8 * u0_8 - 3 * t0_8**2,
+    t0_8**3,
+)
+variables8 = (u0_8, u1_8, u2_8, u3_8, t0_8)
+affine8 = sp.groebner(affine8_equations, *variables8, order="lex", domain=sp.QQ)
+expected8 = sp.groebner(candidate8, *variables8, order="lex", domain=sp.QQ)
+assert all(expected8.reduce(relation)[1] == 0 for relation in affine8_equations)
+assert all(affine8.reduce(relation)[1] == 0 for relation in candidate8)
+assert expected8.reduce(t0_8**2)[1] == t0_8**2
+assert expected8.reduce(t0_8**3)[1] == 0
+
+
 # First merged block.  Eliminate the six nonleading coefficients of U from
 # U^2=V^3, then adapt V to V=S^2+XZ+Y.
 v3, v2, v1, v0 = sp.symbols("v3 v2 v1 v0")
@@ -130,4 +172,5 @@ assert boolean.reduce(e1 * e2 * e2)[1] == 0
 print("PASS: active sixfold hyperedges, not merger-cycle rank, give the Boolean exponent")
 print("PASS: degree 12, degree 18, and the strong degree-24 face have lengths 4, 8, 16")
 print("PASS: one primitive block is k[e]/(e^2)")
+print("PASS: the first nonminimal failure is the degree-8 algebra k[t]/(t^3)")
 print("PASS: the first merged block is k[X,Y]/(X^3,XY,Y^2), not the Boolean B_2")

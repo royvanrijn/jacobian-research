@@ -100,11 +100,36 @@ class SingularProgram:
         self.degree = degree
         self.deep = deep
         h_names = tuple(f"h{index}" for index in range(3, degree))
+        h_symbols = sp.symbols(f"h3:{degree}")
+        z_symbol = sp.Symbol("z")
+        top = sp.cancel(
+            (
+                -z_symbol
+                - sum(
+                    (index - 2) * coefficient
+                    for index, coefficient in zip(range(3, degree), h_symbols)
+                )
+            )
+            / (degree - 2)
+        )
+        all_h = h_symbols + (top,)
+        second = sp.expand(
+            sum(
+                (index * (index - 1) - 2) * coefficient
+                for index, coefficient in zip(range(3, degree + 1), all_h)
+            )
+        )
+        seed_leading = sp.together(top).as_numer_denom()[0]
+        seed_weighted = sp.together(second + 2 * z_symbol).as_numer_denom()[0]
+        seed_open = sp.expand(z_symbol * seed_leading * seed_weighted)
         self.lines = [
             'LIB "elim.lib";',
             'LIB "primdec.lib";',
             "option(redSB);",
             f"ring target=0,({','.join(h_names)},z),dp;",
+            f"poly seedLeading={singular_expression(seed_leading, {})};",
+            f"poly seedWeighted={singular_expression(seed_weighted, {})};",
+            f"poly seedOpen={singular_expression(seed_open, {})};",
             "proc sameIdeal(ideal a, ideal b)",
             "{",
             "  a=std(a); b=std(b);",
@@ -222,14 +247,6 @@ class SingularProgram:
                         f'print("SCHEME|{degree}|{tag(partition)}|"+string(sameIdeal({name},rad))+"|"+string(size(ass)));',
                     ]
                 )
-                if self.deep:
-                    self.lines.extend(
-                        [
-                            f"ideal pairrad_{pair_tag}=radical(pair_{pair_tag});",
-                            f'print("INTERSECTION_SCHEME|{degree}|{tag(left_partition)}|{tag(right_partition)}|"+string(mult(pairrad_{pair_tag}))+"|"+string(size(minAssGTZ(pair_{pair_tag}))));',
-                        ]
-                    )
-
         atom_names = [f"i_{tag(partition)}_all" for partition in atoms]
         for left_index, left_partition in enumerate(atoms):
             for right_partition in atoms[left_index + 1 :]:
@@ -240,9 +257,20 @@ class SingularProgram:
                     [
                         f"ideal pair_{pair_tag}=std({left_name}+{right_name});",
                         f"ideal finite_{pair_tag}=sat(pair_{pair_tag},ideal(z));",
-                        f'print("INTERSECTION|{degree}|{tag(left_partition)}|{tag(right_partition)}|"+string(dim(pair_{pair_tag})-1)+"|"+string(mult(pair_{pair_tag}))+"|"+string(hilb(pair_{pair_tag},2))+"|"+string(mult(finite_{pair_tag})));',
+                        f"ideal exactDegree_{pair_tag}=sat(pair_{pair_tag},ideal(z*seedLeading));",
+                        f"ideal weightedOpen_{pair_tag}=sat(pair_{pair_tag},ideal(z*seedWeighted));",
+                        f"ideal admissible_{pair_tag}=sat(pair_{pair_tag},ideal(seedOpen));",
+                        f'print("INTERSECTION|{degree}|{tag(left_partition)}|{tag(right_partition)}|"+string(dim(pair_{pair_tag})-1)+"|"+string(mult(pair_{pair_tag}))+"|"+string(hilb(pair_{pair_tag},2))+"|"+string(mult(finite_{pair_tag}))+"|"+string(mult(exactDegree_{pair_tag}))+"|"+string(mult(weightedOpen_{pair_tag}))+"|"+string(mult(admissible_{pair_tag})));',
                     ]
                 )
+                if self.deep:
+                    self.lines.extend(
+                        [
+                            f"ideal pairrad_{pair_tag}=radical(pair_{pair_tag});",
+                            f"ideal admissiblerad_{pair_tag}=radical(admissible_{pair_tag});",
+                            f'print("INTERSECTION_SCHEME|{degree}|{tag(left_partition)}|{tag(right_partition)}|"+string(mult(pairrad_{pair_tag}))+"|"+string(mult(admissiblerad_{pair_tag}))+"|"+string(size(minAssGTZ(pair_{pair_tag}))));',
+                        ]
+                    )
         union_expression = atom_names[0]
         for name in atom_names[1:]:
             union_expression = f"intersect({union_expression},{name})"
@@ -388,6 +416,9 @@ def main() -> None:
             multiplicity,
             vector,
             finite_multiplicity,
+            exact_degree_multiplicity,
+            weighted_open_multiplicity,
+            admissible_multiplicity,
         ) = record.split("|")
         numerator = parse_vector(vector)
         polynomial = hilbert_polynomial(numerator, int(dimension) + 1)
@@ -395,15 +426,26 @@ def main() -> None:
         print(
             f"N={degree} {left[1:]} / {right[1:]}: dim={dimension}, "
             f"length/degree={multiplicity}, finite={finite_multiplicity}, "
-            f"infinity={infinity_multiplicity}, P(m)={polynomial}"
+            f"infinity={infinity_multiplicity}, exact-degree={exact_degree_multiplicity}, "
+            f"weighted-open={weighted_open_multiplicity}, admissible={admissible_multiplicity}, "
+            f"P(m)={polynomial}"
         )
     for record in records:
         if not record.startswith("INTERSECTION_SCHEME|"):
             continue
-        _, degree, left, right, reduced_length, minimal_primes = record.split("|")
+        (
+            _,
+            degree,
+            left,
+            right,
+            reduced_length,
+            admissible_reduced_length,
+            minimal_primes,
+        ) = record.split("|")
         print(
             f"  reduced support for N={degree} {left[1:]} / {right[1:]}: "
-            f"degree={reduced_length}, rational minimal primes={minimal_primes}"
+            f"degree={reduced_length}, admissible degree={admissible_reduced_length}, "
+            f"rational minimal primes={minimal_primes}"
         )
 
     boolean_prefixes = ("CHART|", "SCHEME|", "COVER|", "EDGE|")

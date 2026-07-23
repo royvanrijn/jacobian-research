@@ -29,6 +29,37 @@ def dickson(degree: int, variable: sp.Expr, parameter: sp.Expr) -> sp.Expr:
     return current
 
 
+def assert_clean_dickson_open(degree: int) -> None:
+    """Certify a nonempty algebraic clean open on the parameter-one family."""
+
+    translation = sp.symbols("translation")
+    base = dickson(degree, W, sp.Integer(1))
+    polynomial = sp.expand(
+        base.subs(W, W + translation) - base.subs(W, translation)
+    )
+    tangent = sp.diff(polynomial, W).subs(W, 0)
+    endpoint = sp.Poly(sp.factor(polynomial.subs(W, 1) - tangent), translation)
+    derivative_gap = sp.factor(sp.diff(polynomial, W).subs(W, 1) - tangent)
+    marked_hessian = sp.factor(sp.diff(polynomial, W, 2).subs(W, 0))
+    endpoint_hessian = sp.factor(
+        2 * derivative_gap - sp.diff(polynomial, W, 2).subs(W, 1)
+    )
+    primitive = sp.cancel((polynomial - tangent * W) / W**2)
+    primitive_discriminant = sp.factor(sp.discriminant(primitive, W))
+    hessian_discriminant = sp.discriminant(sp.diff(base, W, 2), W)
+
+    assert hessian_discriminant != 0
+    assert sp.gcd(endpoint, endpoint.diff()).degree() == 0
+    deleted = sp.Poly(
+        derivative_gap
+        * marked_hessian
+        * endpoint_hessian
+        * primitive_discriminant,
+        translation,
+    )
+    assert sp.gcd(endpoint, deleted).degree() < endpoint.degree()
+
+
 def canonical_residuals(polynomial: sp.Expr, a: int, b: int) -> list[sp.Expr]:
     """Pull the canonical C_(a,b) residuals back to ``polynomial``."""
 
@@ -142,6 +173,7 @@ def main() -> None:
         dickson(30, W + t, parameter) - dickson(30, t, parameter)
     )
     assert sp.expand(polynomial.subs(dickson_substitution) - expected) == 0
+    assert_clean_dickson_open(30)
 
     output = singular_minimal_primes(all_equations)
     compact = " ".join(output.split())
@@ -150,6 +182,7 @@ def main() -> None:
     assert "COMPONENT 1 2" in compact, output
     print(output)
     print("PASS: the degree-30 all-order braid has one Dickson/Chebyshev component")
+    print("PASS: its parameter-one family meets the marked clean open")
 
 
 if __name__ == "__main__":

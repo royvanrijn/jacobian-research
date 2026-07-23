@@ -249,8 +249,9 @@ has degree 29 in `y` and degree 90 in `m`.
 The branch-at-infinity replay then proves eventual nonvanishing in that
 column.  It checks the complete Newton edge after `y=1+c/m`, the squarefree
 degree-29 edge polynomial, and the linear reconstruction of the limiting
-`z`.  Lindemann--Weierstrass separates algebraic `z` from `exp(c)`.  The
-argument does not yet provide an explicit threshold in `m`.
+`z`.  Lindemann--Weierstrass separates algebraic `z` from `exp(c)`.  This
+intermediate argument does not by itself provide an explicit threshold in
+`m`.
 
 ```bash
 .venv/bin/python scripts/verify_contact_resultant_r6_asymptotic.py
@@ -260,8 +261,8 @@ For an effective certificate on the limiting edge itself, the following
 atlas computes the first two `y` terms and first two `z` terms for all 29
 branches (compressed to 15 complex-conjugation classes).  It uses 29 disjoint rational
 Rouche disks and rational exponential enclosures to prove the strict modulus
-gap `|z_0|!=|exp(c)|` branch by branch.  It still does not extract a positive
-tail threshold in `t=1/m`.
+gap `|z_0|!=|exp(c)|` branch by branch.  This limiting-edge atlas does not by
+itself extract a positive tail threshold in `t=1/m`.
 
 ```bash
 .venv/bin/python scripts/explore_contact_resultant_r6_branch_atlas.py
@@ -275,6 +276,21 @@ modulo `1,000,003`:
 
 ```bash
 .venv/bin/python scripts/verify_contact_resultant_r6_effective.py
+```
+
+A separate bounded structural audit constructs the limiting endpoint systems
+for `r=5,6,7`.  At `r=7` it verifies a squarefree degree-42 branch polynomial,
+excludes `c=0` and `z=infinity`, and reconstructs a unique finite `z`.  This
+shows that the branch-at-infinity mechanism survives for the next fixed
+column.  The first command is the quick limiting-system audit.  The second
+also constructs the full bidegree-`(42,126)` endpoint eliminant, identifies
+its complete top Newton edge, and proves eventual nonvanishing for `r=7`.
+Neither command claims an effective `r=7` threshold or a uniform theorem in
+`r`:
+
+```bash
+.venv/bin/python scripts/verify_contact_resultant_fixed_r_branch_schema.py
+.venv/bin/python scripts/verify_contact_resultant_r7_asymptotic.py
 ```
 
 The additional finite `5<=r<=12` endpoint grid is quick to replay.  It checks
@@ -453,9 +469,11 @@ exact certificate:
 
 It constructs the allocation hypergraph and merger-cycle spaces for the
 degree-twelve, degree-eighteen, and first degree-twenty-four faces.  It also
-derives the primitive dual-number block and proves that coalescing two such
-blocks gives `k[X,Y]/(X^3,XY,Y^2)`, which has the same length and Hilbert
-vector as two dual numbers but a two-dimensional socle.
+derives the primitive dual-number block, finds the first nonminimal failure
+`k[t]/(t^3)` when its root meets a common double atom in degree eight, and
+proves that coalescing two pure transfer blocks gives
+`k[X,Y]/(X^3,XY,Y^2)`, which has the same length and Hilbert vector as two
+dual numbers but a two-dimensional socle.
 
 It derives the irreducible sextic equation of the all-double component,
 parametrizes the all-triple curve, and verifies that their four all-six

@@ -34,7 +34,9 @@ def tail_limit(k: int) -> sp.Expr:
 
 
 def limiting_system(r: int) -> tuple[sp.Expr, sp.Expr]:
-    endpoint = c**r * z ** (r - 1)
+    # The k=0 term is (-c)^r.  Its sign is invisible in the r=6 column but
+    # essential in every odd column.
+    endpoint = (-c) ** r * z ** (r - 1)
     for k in range(1, r):
         endpoint += (
             (-1) ** k

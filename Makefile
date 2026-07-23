@@ -10,7 +10,7 @@ SYSTEM_PYTHON ?= python3
 	verify-quartic verify-normal-forms verify-formal verify-lean-foundational \
 	verify-foundations verify-foundations-formal \
 	verify-coincident-root-loci verify-papers verify-ritt-boundary \
-	verify-contact-r6 verify-contact-branch-schema \
+	verify-contact-r6 verify-contact-branch-schema verify-contact-r7-asymptotic \
 	render-status clean-papers
 
 check:
@@ -40,6 +40,9 @@ verify-contact-r6:
 
 verify-contact-branch-schema:
 	$(PYTHON) scripts/verify_contact_resultant_fixed_r_branch_schema.py
+
+verify-contact-r7-asymptotic:
+	$(PYTHON) scripts/verify_contact_resultant_r7_asymptotic.py
 
 verify-core: verify-minimal
 	$(PYTHON) scripts/verify_counterexample.py
