@@ -1,10 +1,21 @@
 #!/usr/bin/env python3
 """Regression tests for the plane residue/conductor obstruction."""
 
+from math import gcd
+
+import sympy as sp
+
 from plane_boundary_exclusion import (
+    AffinePrimeLedgerEntry,
+    BoundaryPrimeLedgerEntry,
+    ConductorPacketPoint,
     OneDicriticalNormalizationCertificate,
+    TargetComponentLedger,
+    TargetFiberPacket,
     audit_one_dicritical_normalization,
+    audit_target_component_ledger,
     conductor_collision_budget,
+    conductor_packet_budget,
     first_free_depth_package,
     one_puncture_budget,
     two_puncture_budgets,
@@ -53,6 +64,150 @@ for transverse_index in range(2, 8):
         assert (budget.length_deficit <= 0) == (
             affine_degree >= transverse_index
         )
+
+# A packet is local to one closed target fiber.  Its transverse lengths add,
+# while its comparison degree is the full generic boundary contribution plus
+# the affine contribution over the same target component.
+mixed_packet = conductor_packet_budget(
+    transverse_indices=(2, 3, 4),
+    generic_boundary_degree=5,
+    affine_degree=3,
+)
+assert mixed_packet.minimum_packet_length == 9
+assert mixed_packet.generic_degree == 8
+assert mixed_packet.minimum_affine_degree == 4
+assert mixed_packet.length_deficit == 1
+assert "excluded" in mixed_packet.verdict
+
+paid_mixed_packet = conductor_packet_budget(
+    transverse_indices=(2, 3, 4),
+    generic_boundary_degree=5,
+    affine_degree=4,
+)
+assert paid_mixed_packet.generic_degree == 9
+assert paid_mixed_packet.length_deficit == 0
+
+# For one boundary prime of residue degree one and constant index e, an
+# r-point packet requires a >= (r-1)e.
+for transverse_index in range(1, 6):
+    for packet_size in range(2, 6):
+        required_affine_degree = (packet_size - 1) * transverse_index
+        packet = conductor_packet_budget(
+            transverse_indices=(transverse_index,) * packet_size,
+            generic_boundary_degree=transverse_index,
+            affine_degree=required_affine_degree,
+        )
+        assert packet.minimum_affine_degree == required_affine_degree
+        assert packet.length_deficit == 0
+
+# The target-transfer ledger keeps generic divisor degrees separate from
+# special-fiber packets.  This is the primitive d=3, e=2, a=1 exclusion.
+primitive_ledger = TargetComponentLedger(
+    name="primitive two-point conductor packet",
+    generic_degree=3,
+    boundary_primes=(
+        BoundaryPrimeLedgerEntry("D", transverse_index=2, residue_degree=1),
+    ),
+    affine_primes=(AffinePrimeLedgerEntry("E", residue_degree=1),),
+    packets=(
+        TargetFiberPacket(
+            name="node fiber",
+            points=(
+                ConductorPacketPoint("p", "D", 2, residue_immersive=True),
+                ConductorPacketPoint("q", "D", 2, residue_immersive=True),
+            ),
+            same_target_fiber_certified=True,
+        ),
+    ),
+    finite_flat_certified=True,
+    target_transfer_certified=True,
+    exhaustive_generic_pullback=True,
+)
+primitive_ledger_audit = audit_target_component_ledger(primitive_ledger)
+assert primitive_ledger_audit.generic_boundary_degree == 2
+assert primitive_ledger_audit.affine_degree == 1
+assert primitive_ledger_audit.degree_identity_holds
+assert primitive_ledger_audit.status == "excluded"
+assert primitive_ledger_audit.packet_audits[0].length_deficit == 1
+
+# Multiple normalization-boundary primes and affine sheets can pay exactly
+# for a mixed packet.
+mixed_ledger = TargetComponentLedger(
+    name="paid mixed packet",
+    generic_degree=9,
+    boundary_primes=(
+        BoundaryPrimeLedgerEntry("D2", transverse_index=2, residue_degree=1),
+        BoundaryPrimeLedgerEntry("D3", transverse_index=3, residue_degree=1),
+    ),
+    affine_primes=(
+        AffinePrimeLedgerEntry("A1", residue_degree=1),
+        AffinePrimeLedgerEntry("A2", residue_degree=3),
+    ),
+    packets=(
+        TargetFiberPacket(
+            name="three-point fiber",
+            points=(
+                ConductorPacketPoint("p2", "D2", 2, residue_immersive=True),
+                ConductorPacketPoint("p3a", "D3", 3, residue_immersive=True),
+                ConductorPacketPoint("p3b", "D3", 3, residue_immersive=True),
+            ),
+            same_target_fiber_certified=True,
+        ),
+    ),
+    finite_flat_certified=True,
+    target_transfer_certified=True,
+    exhaustive_generic_pullback=True,
+)
+mixed_ledger_audit = audit_target_component_ledger(mixed_ledger)
+assert mixed_ledger_audit.generic_boundary_degree == 5
+assert mixed_ledger_audit.affine_degree == 4
+assert mixed_ledger_audit.status == "survives_packet_budget"
+assert mixed_ledger_audit.packet_audits[0].minimum_packet_length == 8
+assert mixed_ledger_audit.packet_audits[0].length_deficit == -1
+
+# A numerical packet is deliberately refused when target grouping or
+# pointwise residue immersion has not been certified.
+untransferred_ledger = TargetComponentLedger(
+    name="source-only packet preview",
+    generic_degree=3,
+    boundary_primes=(
+        BoundaryPrimeLedgerEntry("D", transverse_index=2, residue_degree=1),
+    ),
+    affine_primes=(AffinePrimeLedgerEntry("E", residue_degree=1),),
+    packets=(
+        TargetFiberPacket(
+            name="uncertified collision",
+            points=(
+                ConductorPacketPoint("p", "D", 2, residue_immersive=True),
+                ConductorPacketPoint("q", "D", 2, residue_immersive=False),
+            ),
+            same_target_fiber_certified=False,
+        ),
+    ),
+    finite_flat_certified=True,
+    target_transfer_certified=False,
+    exhaustive_generic_pullback=True,
+)
+untransferred_ledger_audit = audit_target_component_ledger(untransferred_ledger)
+assert untransferred_ledger_audit.status == "incomplete"
+assert not untransferred_ledger_audit.packet_audits[0].applicable
+assert "one target fiber" in untransferred_ledger_audit.packet_audits[0].reasons[0]
+
+# Large curve conductor does not force a large point packet.  These immersed
+# one-place parametrizations have two points over the origin and arbitrary
+# branch contact m.
+t, c = sp.symbols("t c")
+for contact_order in range(2, 8):
+    x = t**2 - 1
+    y = c * x + t * x**contact_order
+    implicit_pullback = sp.expand(
+        (y - c * x) ** 2 - x ** (2 * contact_order) * (x + 1)
+    )
+    assert implicit_pullback == 0
+    assert (x.subs(t, 1), y.subs(t, 1)) == (0, 0)
+    assert (x.subs(t, -1), y.subs(t, -1)) == (0, 0)
+    assert sp.diff(y, t).subs(t, 0) == (-1) ** contact_order
+    assert gcd(2, 2 * contact_order + 1) == 1
 
 
 # The existing intersection gate accepts its first numerical package in
@@ -197,6 +352,9 @@ assert "ramification" in case2_preview.reasons[-1]
 print("PASS: one-puncture residue immersion forces degree one")
 print("PASS: two-puncture residue immersion contradicts Riemann--Hurwitz")
 print("PASS: minimal-sheet fiber length excludes conductor gluing")
+print("PASS: mixed and constant-index conductor packets obey the additive bound")
+print("PASS: target-transfer ledgers separate generic and special-fiber data")
+print("PASS: arbitrary conductor tangency can remain a two-point packet")
 print("PASS: the first numerical degree-six package is residue-excluded")
 print("PASS: typed normalization gate refuses source-only (72,108) data")
 print("PASS: the Case-1 sheet budget permits conductor gluing")

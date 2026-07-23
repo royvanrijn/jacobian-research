@@ -347,6 +347,32 @@ assert degree_three_constraint_matrix * ternary_symbol_matrix == sp.zeros(
 )
 assert ternary_symbol_matrix.rank() == 10
 
+# On the exceptional plane of the blowup at the Koszul defect, the saturated
+# transform is the universal quotient k^3/<r>.  Cross product identifies this
+# quotient with r-perp, so the exceptional order-three divisor is the incidence
+# pullback {(r,q): r.q=0, h(q)=0} of the ternary cubic.
+exceptional_r = sp.Matrix(sp.symbols("exceptional_r0:3"))
+exceptional_u = sp.Matrix(sp.symbols("exceptional_u0:3"))
+exceptional_cross = exceptional_r.cross(exceptional_u)
+assert sp.expand(exceptional_r.dot(exceptional_cross)) == 0
+assert exceptional_r.cross(exceptional_r) == sp.zeros(3, 1)
+exceptional_cross_matrix = sp.Matrix(
+    (
+        (0, -exceptional_r[2], exceptional_r[1]),
+        (exceptional_r[2], 0, -exceptional_r[0]),
+        (-exceptional_r[1], exceptional_r[0], 0),
+    )
+)
+assert exceptional_cross_matrix * exceptional_r == sp.zeros(3, 1)
+assert any(
+    minor != 0
+    for minor in (
+        sp.factor(exceptional_cross_matrix.extract(rows, cols).det())
+        for rows in itertools.combinations(range(3), 2)
+        for cols in itertools.combinations(range(3), 2)
+    )
+)
+
 # Double-saturation calibration.  Put C=A/(x) and take the rank-one
 # codimension-one-full submodule T=(y,z)C.  Its S2 hull is C and C/T=k at
 # the origin.  As an A-module, T has the exact length-two presentation
@@ -593,6 +619,7 @@ print("PASS: the reflexive rank-two warning is supported only in codimension thr
 print("PASS: its rank-three unit extension has excess special-fiber length four")
 print("PASS: the model defect has Fitt_3=(x,y,z)")
 print("PASS: the first Koszul cubic-cover symbol is a ternary cubic in order three")
+print("PASS: its exceptional divisor is the incidence pullback of that cubic")
 print("PASS: the S2-hull quotient and Ext^2 defect have the same length")
 print("PASS: after S2 saturation the conormal defect is exactly point torsion")
 print("PASS: the s=2 determinantal rung is origin-primary with fiber length five")

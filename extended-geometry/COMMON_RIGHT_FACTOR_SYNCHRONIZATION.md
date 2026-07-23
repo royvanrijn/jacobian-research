@@ -194,6 +194,38 @@ algebras are isomorphic, which is the precise Rees-strict conclusion of
 Theorem 3.1.  Strictness for an unrelated filtration is stronger and does
 not follow merely from synchronization.
 
+### 3.2 The weaker support-saturation criterion
+
+Finite flatness is more than synchronization needs.  Let \(C\) be a
+Noetherian residual algebra, let \(\mathfrak a\subset C\) be an ideal, and
+let \(\delta\in C\) vanish on
+\(\operatorname{Spec}C\setminus V(\mathfrak a)\).  Then
+\[
+ \delta\in H^0_{\mathfrak a}(C)=0:_C\mathfrak a^\infty.     \tag{3.1}
+\]
+Hence any one of the equivalent conditions
+\[
+\boxed{
+\begin{aligned}
+H^0_{\mathfrak a}(C)&=0,\\
+\operatorname{Ass}(C)\cap V(\mathfrak a)&=\varnothing,\\
+\operatorname{grade}(\mathfrak a,C)&\ge1
+\end{aligned}}
+                                                               \tag{3.2}
+\]
+forces \(\delta=0\).  If \(C=R/I\), the presentation form is simply
+\[
+ \boxed{I:\mathfrak a^\infty=I.}                            \tag{3.3}
+\]
+The same statement holds after flat adic completion; it is enough to
+prove (3.3) before completing.
+
+This is the
+[support-saturation principle](../verified/SUPPORT_SATURATION_PRINCIPLE.md).
+Theorem 3.1 is its finite-flat shortcut: local freeness over the integral
+Ritt base supplies a regular base element in every nonzero support ideal.
+Conversely, (3.3) can hold even when the residual algebra is not flat.
+
 ## 4. Degrees thirty and forty-two
 
 For outer cuts \(a,c\) of degree \(N\), the expected terminal degree is
@@ -377,10 +409,9 @@ remaining locus.  Modulo \(w_0\), all \(4\)-by-\(4\) conormal minors vanish
 while the \(3\)-by-\(3\) minors generate the unit ideal.  Thus
 \(\kappa\) has rank exactly \(3\) everywhere on \(w_0=0\); two normal
 directions cease to be controlled at first order.  Proposition 6.1 still
-kills the defect through Rees degree four on that divisor, but no
-conormal/Nakayama argument can promote those four jets to all orders.
-The all-order primary frontier is therefore supported scheme-theoretically
-on \(w_0=0\), rather than on the full six-parameter component.
+kills the defect through Rees degree four on that divisor.  First-order
+conormal/Nakayama alone cannot promote those four jets to all orders, so
+one must inspect the quadratic normal cone.
 
 Theorem 3.1 gives a second way to close this divisor without further normal
 jets: prove that the completed residual algebra is finite
@@ -392,6 +423,252 @@ including the ramified fiber over \(w_0=0\).
 [`verify_degree42_conormal_rees_synchronization.py`](../scripts/verify_degree42_conormal_rees_synchronization.py)
 checks \(I,\delta\subset\mathfrak m\), the Fitting identity (6.3), and the
 rank-three degeneration on \(w_0=0\).
+
+Set
+\[
+ \Delta=(t+e_1e_2)^2-4e_1^3.                               \tag{6.5}
+\]
+On \(w_0=0\), residuals \(5,11,17\) have a unit-triangular
+normal Jacobian in \(x_3,x_4,x_5\), with diagonal
+\((-1,-1,-1)\).  Formal implicit elimination leaves only \(x_1,x_2\).
+The last two residuals have zero differential, and their quadratic forms
+on this tangent plane are
+\[
+\begin{aligned}
+ q={}&w_1\left[
+ -\frac92e_2x_1^2+
+ \left(9e_2^2+\frac32e_1\right)x_1x_2+
+ \left(-\frac92e_2^3+\frac{15}{4}e_1e_2+\frac34t\right)x_2^2
+ \right],\\
+ r={}&w_1\left[
+ -\frac34x_1^2+\frac32e_2x_1x_2+
+ \left(-\frac34e_2^2+\frac34e_1\right)x_2^2
+ \right].
+                                                               \tag{6.6}
+\end{aligned}
+\]
+Their binary resultant is
+\[
+ \operatorname{Res}(q,r)=\frac{81}{256}w_1^4\Delta.           \tag{6.7}
+\]
+
+> **Proposition 6.3 (quadratic-cone synchronization).**  On
+> \(V(w_0)\cap D(w_1\Delta)\), the transported \(\{2,7\}\) power
+> component is formally synchronized to every normal order.
+
+**Proof.**  The unit pivots remove three normal variables without changing
+the completed quotient.  By (6.7), \(q,r\) are a regular sequence of
+binary quadrics.  The residual associated graded is therefore a quotient
+of their complete intersection, whose Hilbert vector is \((1,2,1)\).
+If \(J\) is the completed normal ideal, then \(J^3/J^4=0\).
+Complete Nakayama applied to \(J^3\) gives \(J^3=0\).
+Proposition 6.1 gives \(\delta\in I+\mathfrak m^5\), hence
+\(\delta=0\) in the completed quotient.  \(\square\)
+
+The unresolved all-order locus is thus confined to
+\[
+ V(w_0,w_1)\ \cup\ V(w_0,\Delta).                            \tag{6.8}
+\]
+On the first branch the quadratic Kuranishi map vanishes; on the second
+the quadrics acquire a common tangent direction.  These are distinct
+degeneration mechanisms and should be treated separately.
+
+[`verify_degree42_divisor_rees_reduction.py`](../scripts/verify_degree42_divisor_rees_reduction.py)
+certifies the unit-triangular elimination, the quadratic forms, and the
+resultant identity.
+
+Both branches in (6.8) admit one more intrinsic initial-form step.
+First normalize the discriminant branch by
+\[
+ e_1=a^2,\qquad t=2a^3-a^2e_2.
+\]
+On this normalization the quadrics factor as
+\[
+\begin{aligned}
+q&=-\frac32\bigl(x_1+(a-e_2)x_2\bigr)
+ \bigl(3e_2x_1-(a^2+3ae_2+3e_2^2)x_2\bigr),\\
+r&=-\frac34\bigl(x_1+(a-e_2)x_2\bigr)
+ \bigl(x_1-(a+e_2)x_2\bigr).                                \tag{6.9}
+\end{aligned}
+\]
+The determinant of the two complementary linear forms is \(a^2\).
+Along the escaping tangent
+\(\ell=x_1+(a-e_2)x_2=0\), implicit differentiation of the three pivot
+residuals through order two gives terminal cubic coefficients
+\[
+\begin{aligned}
+c_{19}&=-\frac58w_2a^2(e_2-2a)^2,\\
+c_{18}&=(7e_2-a)c_{19}.                                     \tag{6.10}
+\end{aligned}
+\]
+
+> **Proposition 6.4 (common-tangent cubic closure).**  On
+> \[
+> V(w_0,\Delta)\cap D(w_1w_2t),
+> \]
+> the transported component is formally synchronized to every order.
+
+**Proof.**  On \(\Delta=0\), inverting \(t\) also inverts \(e_1=a^2\),
+and \(e_2-2a=-t/e_1\).  Thus the complementary quadratic factors span
+the tangent ideal and (6.10) is nonzero.  In coordinates \((\ell,s)\)
+the initial Kuranishi ideal contains
+\[
+ (\ell^2,\ell s,s^3).
+\]
+Its maximal ideal has cube zero, so Proposition 6.1 again kills
+\(\delta\) exactly.  \(\square\)
+
+The apparent \(t=0\) exception in Proposition 6.4 is removed one order
+later.  On the discriminant normalization, \(t=0\) and \(e_1\ne0\)
+give \(e_2=2a\).  The common-tangent cubic vanishes, but the two terminal
+quartic coefficients are
+\[
+ c_{18}^{(4)}=\frac{15}{16}w_2a,\qquad
+ c_{19}^{(4)}=\frac{5}{64}w_2.
+\]
+At the cusp \(e_1=t=0\), where the quadratic ideal collapses to the
+single square \(\ell^2\), they specialize to
+\[
+ c_{18}^{(4)}=\frac58e_2w_2,\qquad
+ c_{19}^{(4)}=\frac{5}{64}w_2.
+\]
+
+> **Proposition 6.5 (discriminant quartic closure).**  The entire stratum
+> \[
+> V(w_0,\Delta)\cap D(w_1w_2)
+> \]
+> is formally synchronized to every normal order.
+
+**Proof.**  Proposition 6.4 treats \(t\ne0\).  When \(t=0\) and
+\(e_1\ne0\), the initial ideal contains
+\((\ell^2,\ell s,s^4)\), whose maximal ideal has fourth power zero.
+At \(e_1=0\), the specialized initial ideal contains
+\((\ell^2,s^4)\), whose maximal ideal has fifth power zero.  The
+coefficient \(5w_2/64\) is a unit at every point under consideration,
+so the latter statement lifts over the local base, including its
+nilpotent discriminant thickening.  Proposition 6.1 then makes the
+synchronization defect zero.  \(\square\)
+
+For the other branch define
+\[
+\begin{aligned}
+A={}&4e_1^3-e_1^2e_2^2+e_2^3t-6e_1e_2t,\\
+B={}&e_1^4e_2^4-2e_1^2e_2^5t+e_2^6t^2-8e_1^5e_2^2
+{}+20e_1^3e_2^3t-12e_1e_2^4t^2\\
+&+16e_1^6-48e_1^4e_2t+27e_1^2e_2^2t^2+9e_2^3t^3
+{}+36e_1^3t^2-54e_1e_2t^3+27t^4.                          \tag{6.11}
+\end{aligned}
+\]
+When \(w_1=0\), the quadratic Kuranishi map vanishes.  After the same
+unit-pivot elimination, the two terminal binary cubics \(p_3,q_3\)
+satisfy
+\[
+ \operatorname{Res}(p_3,q_3)
+ =-\frac{15625}{262144}w_2^6AB.                             \tag{6.12}
+\]
+
+> **Proposition 6.6 (cubic-cone synchronization).**  On
+> \[
+> V(w_0,w_1)\cap D(w_2AB),
+> \]
+> the transported component is formally synchronized to every order.
+
+**Proof.**  Equation (6.12) makes \(p_3,q_3\) a regular sequence of
+binary cubics.  Their complete-intersection Hilbert vector is
+\((1,2,3,2,1)\), so the fifth power of the completed normal ideal is
+zero.  The membership \(\delta\in I+\mathfrak m^5\) from Proposition
+6.1 is therefore exact.  \(\square\)
+
+Consequently the remaining all-order problem is supported on
+\[
+ V(w_0,w_2)\ \cup\ V(w_0,w_1,AB).                           \tag{6.13}
+\]
+This replaces the two full Kuranishi branches by one coefficient divisor
+and the two cubic-resultant divisors inside \(w_1=0\).
+
+There is now one global algebraic target.  Let
+\[
+ S=\mathbb Q[e_1,e_2,t,w_0,w_1,w_2],\qquad
+ C=R/I,\qquad
+ \widehat C=\widehat{C}^{\,\mathfrak m},
+\]
+where \(\mathfrak m=(x_1,\ldots,x_5)\), and put
+\[
+ \mathfrak k=(w_0,\;w_1w_2,\;ABw_2)\subset S.               \tag{6.14}
+\]
+Then
+\[
+ V(\mathfrak k)
+ =V(w_0,w_2)\cup V(w_0,w_1,AB).
+\]
+The preceding propositions say exactly that the completed defect is
+supported there:
+\[
+ \delta\in
+ H^0_{\mathfrak k\widehat C}(\widehat C)
+ =0:_{\widehat C}\mathfrak k^\infty.                        \tag{6.15}
+\]
+Therefore the strongest efficient target is not another normal jet or
+full flatness, but
+\[
+ \boxed{I:\mathfrak k^\infty=I.}                            \tag{6.16}
+\]
+By the support-saturation principle and flatness of completion, (6.16)
+implies \(\delta=0\) on the entire completed residual algebra.
+Equivalently, it is enough to prove that no associated prime of \(C\)
+contains \(\mathfrak k\).  Operationally one should compute the saturation,
+identify any associated prime of its quotient if it is nonzero, and only
+then return to higher Rees symbols.
+
+On the discriminant normalization their overlap factors further:
+\[
+\begin{aligned}
+A|_{\Delta}
+ &=a^2(2a-e_2)^2(a^2-2ae_2-e_2^2),\\
+B|_{\Delta}
+ &=a^4(2a-e_2)^4
+ (37a^4-22a^3e_2-7a^2e_2^2+4ae_2^3+e_2^4).
+                                                               \tag{6.17}
+\end{aligned}
+\]
+Thus the next calculations are localized to \(w_2=0\) or to one of the
+two displayed residual factors; no point of the discriminant branch with
+\(w_1w_2\ne0\), and no generic point of the cubic branch, remains.
+
+There is also a useful generic subresultant refinement on the cubic branch.
+Write the tangent coordinates as \((u,v)\).  At the generic point of
+\(A=0\), the two terminal cubics share
+\[
+ L_A=e_2u+(2e_1-e_2^2)v.                                   \tag{6.18}
+\]
+At the generic point of \(B=0\), they share
+\(L_B=\alpha_Bu+\beta_Bv\), where
+\[
+\begin{aligned}
+\alpha_B={}&8e_1^5-2e_1^4e_2^2-20e_1^3e_2t
+ +4e_1^2e_2^3t+6e_1^2t^2+12e_1e_2^2t^2
+ -2e_2^4t^2-9e_2t^3,\\
+\beta_B={}&-4e_1^5e_2+e_1^4e_2^3+4e_1^4t
+ +9e_1^3e_2^2t-2e_1^2e_2^4t-9e_1^2e_2t^2\\
+&\hspace{2.9em}-5e_1e_2^3t^2+e_2^5t^2+6e_2^2t^3.
+                                                               \tag{6.19}
+\end{aligned}
+\]
+These are the linear first-subresultant factors.  The certificate works on
+\(D(e_2(6e_1-e_2^2))\subset V(A)\) and
+\(D(\alpha_B)\subset V(B)\); these opens contain the respective generic
+points.  Since \(A\) and \(B\) are irreducible and occur to the first power
+in (6.12), either generic point has exactly one common projective root.
+The next calculation on each divisor is therefore again one-dimensional:
+restrict the quartic Kuranishi terms to \(L_A=0\) or \(L_B=0\).  The
+component \(w_2=0\), where both cubics vanish, remains the genuinely
+deeper sevenfold power collision.
+
+[`verify_degree42_kuranishi_branches.py`](../scripts/verify_degree42_kuranishi_branches.py)
+certifies the implicit cubic coefficients (6.10), the binary-cubic
+resultant (6.12), and the common factors (6.18)--(6.19).
+[`verify_degree42_discriminant_quartics.py`](../scripts/verify_degree42_discriminant_quartics.py)
+certifies both terminal quartic formulas and the discriminant closure.
 
 For the remaining calculation, the theorem removes the right factor from
 the elimination variables.  For each degree-forty-two row:

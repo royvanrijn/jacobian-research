@@ -52,6 +52,13 @@ normalized-initial-form formulas for source flag divisors in framed residue
 screens, contraction descent, and simultaneous centralizer characters.  Its
 selected-factor/log-étale comparison supplies all-degree coverage and
 effective descent, proving `H1-STACK`.  The
+[stacky-skeleton and toroidal-invariants
+note](../../extended-geometry/HURWITZ_LL_STACKY_SKELETON.md) extracts the
+conditional log-regular consequences: the stacky cone complex, logarithmic
+canonical identity, diagonal tangent characters, inertia ages, and a
+degree-six Maxwell orbifold pilot.  It also records the four stack-level
+proof obligations that must be checked before these consequences are
+promoted to unconditional completion entries.  The
 degree-six `(2,2,2)` boundary has the predicted six-cone radial braid fan, but
 a triple leading-value resonance retains a second-scale cross-ratio.  Thus
 the radial fan is only the first toric layer; the full logarithmic graph needs

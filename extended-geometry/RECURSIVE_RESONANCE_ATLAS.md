@@ -840,6 +840,37 @@ It is not merely a stabilizer calculation for a candidate chart: (7.10)
 is the stabilizer of the selected factor in the local quotient presentation
 of \(\mathcal G\).
 
+The same calculation retains more than the abstract group \(I_x\).  The
+diagonal map
+\[
+ \Delta_\eta:\mu_{L_\eta}\longrightarrow
+ \prod_j\mu_{e_{\eta j}},
+ \qquad
+ \zeta\longmapsto
+ \left(\zeta^{L_\eta/e_{\eta j}}\right)_j             \tag{7.11}
+\]
+is injective: the integers \(L_\eta/e_{\eta j}\) have greatest common
+divisor one.  Hence every \(g\in I_x\) has a unique diagonal phase
+\(\theta_\eta(g)\in\mu_{L_\eta}\).  This defines the **diagonal tangent
+character**
+\[
+ \theta_x:I_x\longrightarrow\prod_\eta\mu_{L_\eta}.
+                                                               \tag{7.12}
+\]
+On the selected normalized factor (7.4), it is the actual action
+\[
+ \rho_\eta\longmapsto\theta_\eta(g)\rho_\eta.
+\]
+All strict target-deformation directions are fixed because an automorphism
+of the admissible cover is taken over the fully marked target, and the
+fixed-target Hurwitz class has no further relative deformation parameters.
+Thus, on every smooth selected chart, the age of \(g\) is obtained by
+summing the fractional weights of the characters
+\(\theta_\eta(g)\).  The
+[stacky-skeleton consequence note](HURWITZ_LL_STACKY_SKELETON.md)
+records the resulting canonical-class, inertia-age, and
+orbifold-intersection package.
+
 Combining Theorem 7.2 and Sections 7.3--7.5 with the source-graph
 finite-normalization theorem gives:
 

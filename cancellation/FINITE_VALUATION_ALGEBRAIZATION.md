@@ -4,7 +4,7 @@ This note tests the proposed principle that polynomiality in a
 controlled-boundary incidence diagram should be decidable from finitely many
 valuation, residue, and Rees-module conditions.
 
-The conclusion is two-part.
+The conclusion is three-part.
 
 1. For a **fixed finite reconstruction ansatz with a complete polar ledger**,
    the principle is true and elementary at its core. Normality reduces
@@ -15,6 +15,12 @@ The conclusion is two-part.
    boundary-value semigroup, the associated graded algebra, or a divisorial
    Rees algebra. The needed finite-generation and strictness properties must
    be hypotheses or compiler certificates.
+3. There is a structural positive class between these two extremes.  On a
+   toroidal chart whose reconstruction module splits into saturated
+   polyhedral contact-character modules, finite Khovanskii data and Rees
+   strictness follow from the monoid presentation.  Polynomiality is then
+   decided by finitely many facet inequalities and character-residue
+   equations.
 
 Thus the useful general theorem is a **finite valuation/Hilbert-basis
 criterion with a strict Rees presentation**, not an automatic
@@ -550,7 +556,191 @@ Without them, the compiler remains a correct evaluator of supplied charts
 but cannot infer that an unlisted divisor, initial generator, or Rees
 relation does not exist.
 
-## 7. External framework
+## 7. A structural toroidal class
+
+Theorem 3.1 is a certificate theorem: it explains what finite data suffice,
+but does not say when the initial and Rees certificates exist.  There is,
+however, a natural class in which both certificates are forced by the
+geometry.  The essential hypothesis is stronger than saturation of the
+contact monoid.  The reconstruction module must split into contact-character
+pieces.
+
+Let \(R\) be a noetherian normal domain, let \(P\) be a fine, saturated,
+sharp, torsion-free affine monoid, and put
+
+\[
+ L=P^{\mathrm{gp}},\qquad \sigma=\operatorname{cone}(P).
+\]
+
+For a rational polyhedron \(Q\subset L_{\mathbb R}\) with recession cone
+\(\sigma\), write
+
+\[
+ \Delta=Q\cap L.
+\]
+
+Then \(R[\Delta]\) denotes the free \(R\)-module with basis
+\(\{\chi^u:u\in\Delta\}\), with its natural \(R[P]\)-module structure.
+Gordan's lemma for modules makes \(R[\Delta]\) a finite \(R[P]\)-module.
+This is the precise meaning used below for a saturated polyhedral character
+module.  Bare saturation of an abstract module, without the character
+splitting, is not enough.
+
+### Theorem 7.1 -- toroidal character-module algebraization
+
+Let \(X=\operatorname{Spec}A\) be normal affine, and fix a finite
+reconstruction ansatz with a complete polar ledger
+\(E_1,\ldots,E_s\) and fixed pole bounds.  Suppose that, at every boundary
+stratum meeting the polar ledger, after strict henselization and completion:
+
+1. the boundary chart, up to a formal power-series factor, is
+   \[
+      R[[P]];
+   \]
+2. the valuations of the boundary components are the primitive integral
+   facet functionals
+   \[
+      \ell_i:L\longrightarrow\mathbb Z
+   \]
+   of \(\sigma\);
+3. on the character factor, the chart algebra used by reconstruction is
+   \(R[P]\), up to localization in degree-zero coefficients; and
+4. the reconstruction module embeds homogeneously into the Laurent
+   character module and is a finite direct sum
+   \[
+      \bigoplus_{j=1}^d R[\Delta_j]e_j,
+      \qquad
+      \Delta_j=Q_j\cap L,
+   \tag{7.1}
+   \]
+   for rational \(P\)-polyhedra \(Q_j\), with flat coefficient modules if
+   \(R\) is replaced by a finite module on the stratum.
+
+Then polynomial algebraization of the ansatz is decided by finitely many
+facet inequalities and finitely many negative character-residue equations.
+Moreover, a Hilbert basis of \(P\), together with finite generators of the
+\(\Delta_j\), gives a finite algebra-and-module Khovanskii basis, and its
+homogenized module presentation is Rees-strict.  Thus the
+initial-completeness and strictness clauses of Theorem 3.1 are automatic in
+this class.
+
+#### Proof
+
+Since \(P\) is saturated,
+
+\[
+ P=\sigma\cap L
+   =\{u\in L:\ell_i(u)\ge0\text{ for every facet }i\}.
+\tag{7.2}
+\]
+
+The finitely many facet functionals therefore decide whether a character is
+regular on the toroidal chart.  The Laurent character module has the direct
+decomposition
+
+\[
+ R[L]^d=\bigoplus_{j=1}^d\ \bigoplus_{u\in L}R\chi^u e_j.
+\tag{7.3}
+\]
+
+After terms with the same full character have been collected, cancellation
+can occur only inside one summand of (7.3).  In particular, equality of the
+numerical divisorial value vectors is not by itself enough: distinct
+tangential characters remain distinct initial forms.  For the fixed pole
+bounds, only finitely many negative degrees occur, so regularity is
+equivalent to the vanishing of their finitely many coefficients.  If a
+coefficient has its own boundary expansion, the same argument in successive
+graded pieces gives the finite principal-part residue equations of Section
+2.
+
+Each \(\Delta_j\) is a finitely generated \(P\)-module by the rational
+polyhedral form of Gordan's lemma.  Hence (7.1) has a finite homogeneous
+semigroup-module presentation.  Its filtration is split by (7.3).
+Homogenizing the complete monomial and binomial relations therefore presents
+the actual multi-Rees module.  Equivalently, its kernel is saturated with
+respect to the product of the homogenizing variables: localization embeds
+the presentation into the free Laurent character module, where those
+variables are nonzerodivisors.  Thus a graded cancellation is exactly the
+initial form of a filtered cancellation, proving Rees strictness.
+
+The finite inequalities and residues now give nonnegative order at every
+prime in the polar ledger.  Proposition 1.1 converts these local conditions
+into membership in \(A\). QED
+
+### 7.2 What the contact-monoid theorem already supplies
+
+The
+[saturated contact-monoid theorem](../extended-geometry/COMBINATORIAL_COMPLETED_LOCAL_RINGS.md)
+gives, on every selected phase branch and up to formally smooth factors,
+
+\[
+ \widehat{\mathcal O}^{\,\mathrm{norm}}_{x,\beta}
+ \simeq k'[[Q_{x,\beta}^{\mathrm{sat}}]].
+\tag{7.4}
+\]
+
+Thus it already proves hypotheses 1 and 2 of Theorem 7.1 for the normalized
+completed atlas.  The remaining structural problem is narrower:
+
+> prove that the universal reconstruction coordinates are finite sums of
+> contact characters and that their relation module is a homogeneous,
+> stratum-flat module of the form (7.1).
+
+This is the direct bridge from the contact-monoid theorem to polynomiality.
+The contact theorem constructs \(P\); the new calculation must construct the
+exponent modules \(\Delta_j\).
+
+The complete polar ledger remains necessary.  Formula (7.4) controls the
+chosen boundary chart, not an affine polar divisor omitted from that chart.
+
+### 7.3 Hierarchy of candidate structural classes
+
+The proposed classes do not all supply the same part of Theorem 7.1.
+
+| class | finite structure supplied | remaining obstruction |
+|---|---|---|
+| toric | saturated monoid, facet valuations, character basis, binomial relations | polar completeness and character form of the reconstruction |
+| toroidal | the toric package étale-locally | descent, chart monodromy, and flatness over boundary strata |
+| complexity-one \(T\)-variety | polyhedral-divisor and weight-space descriptions | vertical valuations on the base curve, round-down in section spaces, and module strictness |
+| spherical | multiplicity-free weight data and available toric degenerations | compatibility of the chosen boundary valuation with a finite basis and with the reconstruction module |
+| Mori dream/Cox chart | finite Cox generators and finitely many GIT chambers | a Cox generating set need not be a Khovanskii basis for the boundary valuation |
+| finite-type cluster algebra | finitely many clusters and cluster variables | Laurentness is not regularity on the affine reconstruction chart; upper-cluster and polar-completeness issues remain |
+| finitely generated Khovanskii degeneration | the algebra-side finite initial presentation | a module Khovanskii basis and Rees-strict lifting still have to be proved |
+
+Consequently the classification target should concern filtered pairs, not
+varieties alone:
+
+> classify controlled-boundary reconstruction pairs \((C,M,\nu)\) for
+> which the contact valuation has a finite algebra-and-module Khovanskii
+> basis and the module degeneration is strict.
+
+Theorem 7.1 gives the first nontrivial positive class.  Complexity-one
+\(T\)-varieties are the natural next class because their weight spaces are
+controlled by polyhedral divisors on a curve; the extra vertical valuations
+make them the smallest test of whether the toric proof survives a
+nontrivial coefficient base.
+
+### 7.4 Minimal falsification suite
+
+Any proposed extension of Theorem 7.1 should first survive five tests:
+
+1. **omitted pole:** add an affine denominator divisor not represented by
+   the toroidal boundary;
+2. **same value, different character:** use two Laurent characters having
+   the same selected divisorial values but different tangential weights;
+3. **semigroup hole:** replace \(P\) by a nonsaturated affine semigroup and
+   test an exponent in its saturation but not in \(P\);
+4. **nonstrict module:** use \((x^2,y^2)\subset k[x,y]\), where valuation
+   inequalities admit \(xy\) but module membership does not;
+5. **monodromy:** glue toroidal charts with monodromy permuting character
+   generators and test whether the local split modules descend.
+
+These distinguish polar completeness, full initial-form completeness,
+normality of the monoid, Rees strictness, and toroidal descent.  Passing
+them would justify moving from the split toroidal theorem to a genuine
+toroidal or complexity-one structural theorem.
+
+## 8. External framework
 
 The relevant external facts are:
 
@@ -571,9 +761,26 @@ The relevant external facts are:
 - valuation semigroups need not be finitely generated even in smooth toric
   geometry; see Altmann--Haase--Küronya--Schaller--Walter,
   [*On the finite generation of valuation semigroups on toric surfaces*](https://arxiv.org/abs/2209.06044).
+- finite Khovanskii bases connect higher-rank valuations, tropical data,
+  and toric degenerations; see Kaveh--Manon,
+  [*Khovanskii bases, higher rank valuations and tropical geometry*](https://arxiv.org/abs/1610.00298);
+- normal affine \(T\)-varieties are described by proper polyhedral divisors;
+  see Altmann--Hausen,
+  [*Polyhedral Divisors and Algebraic Torus Actions*](https://arxiv.org/abs/math/0306285);
+- affine and polarized projective spherical varieties admit toric
+  degenerations; see Alexeev--Brion,
+  [*Toric degenerations of spherical varieties*](https://arxiv.org/abs/math/0403379);
+- Mori dream spaces are controlled by finitely generated Cox/GIT data, but
+  that result concerns the Cox grading rather than an arbitrary selected
+  boundary valuation; see Hu--Keel,
+  [*Mori Dream Spaces and GIT*](https://arxiv.org/abs/math/0004017);
+- finite-type cluster algebras have finitely many clusters and are
+  classified by finite root systems; see Fomin--Zelevinsky,
+  [*Cluster Algebras II: Finite Type Classification*](https://arxiv.org/abs/math/0208229).
 
 The resulting research target is therefore not “prove Rees finite
-generation from SNC.” It is:
+generation from SNC.”  Theorem 7.1 handles the split toroidal case.  Beyond
+that case, the target is:
 
 > identify the controlled-boundary diagrams for which the reconstruction
 > algebra has a finite Khovanskii presentation and the reconstruction module

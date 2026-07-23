@@ -112,9 +112,10 @@ print(quadrics);
         * v**2
     )
     discriminant = (translation + e1 * e2) ** 2 - 4 * e1**3
-    assert sp.factor(sp.resultant(q.subs(v, 1), r.subs(v, 1), u)) == (
-        sp.Rational(81, 256) * discriminant
-    )
+    assert sp.factor(
+        sp.resultant(q.subs(v, 1), r.subs(v, 1), u)
+        - sp.Rational(81, 256) * discriminant
+    ) == 0
     print(
         "PASS: on w0=0 three unit pivots leave two normal variables; "
         "their quadratic Rees resultant is (81/256)*w1^4*Delta"

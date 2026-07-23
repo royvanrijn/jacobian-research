@@ -49,6 +49,170 @@ class ConductorCollisionBudget:
 
 
 @dataclass(frozen=True)
+class ConductorPacketBudget:
+    """Finite-flat length budget for several boundary points in one fiber.
+
+    ``generic_boundary_degree`` is the full generic contribution
+    ``sum_D e_D f_D`` of the boundary primes lying over the chosen target
+    component.  It is deliberately separate from ``transverse_indices``:
+    the latter are local contributions of distinct boundary points over one
+    closed target point.
+    """
+
+    transverse_indices: tuple[int, ...]
+    generic_boundary_degree: int
+    affine_degree: int
+    generic_degree: int
+    minimum_packet_length: int
+    minimum_affine_degree: int
+    length_deficit: int
+    verdict: str
+
+    def as_dict(self) -> dict[str, object]:
+        return asdict(self)
+
+
+@dataclass(frozen=True)
+class BoundaryPrimeLedgerEntry:
+    """Generic degree data for one normalization-boundary prime over B."""
+
+    name: str
+    transverse_index: int
+    residue_degree: int
+
+    def __post_init__(self) -> None:
+        if not self.name:
+            raise ValueError("a boundary-prime ledger entry needs a name")
+        if self.transverse_index <= 0:
+            raise ValueError("transverse index must be positive")
+        if self.residue_degree <= 0:
+            raise ValueError("residue degree must be positive")
+
+
+@dataclass(frozen=True)
+class AffinePrimeLedgerEntry:
+    """Generic contribution of one affine prime over B.
+
+    Affine primes have transverse index one on the Keller open, so only
+    their residue degree is recorded.
+    """
+
+    name: str
+    residue_degree: int
+
+    def __post_init__(self) -> None:
+        if not self.name:
+            raise ValueError("an affine-prime ledger entry needs a name")
+        if self.residue_degree <= 0:
+            raise ValueError("residue degree must be positive")
+
+
+@dataclass(frozen=True)
+class ConductorPacketPoint:
+    """One certified boundary point in a closed target fiber."""
+
+    name: str
+    boundary_prime: str
+    transverse_index: int
+    residue_immersive: bool
+
+    def __post_init__(self) -> None:
+        if not self.name:
+            raise ValueError("a packet point needs a name")
+        if not self.boundary_prime:
+            raise ValueError("a packet point needs a boundary-prime label")
+        if self.transverse_index <= 0:
+            raise ValueError("local transverse index must be positive")
+
+
+@dataclass(frozen=True)
+class TargetFiberPacket:
+    """Distinct boundary points certified to lie over one closed target point."""
+
+    name: str
+    points: tuple[ConductorPacketPoint, ...]
+    same_target_fiber_certified: bool
+
+    def __post_init__(self) -> None:
+        if not self.name:
+            raise ValueError("a target-fiber packet needs a name")
+        if not self.points:
+            raise ValueError("a target-fiber packet needs at least one point")
+        point_names = tuple(point.name for point in self.points)
+        if len(set(point_names)) != len(point_names):
+            raise ValueError("packet point labels must be distinct")
+
+
+@dataclass(frozen=True)
+class TargetComponentLedger:
+    """Target-side data that cannot be inferred from ``(Q, p)`` alone."""
+
+    name: str
+    generic_degree: int
+    boundary_primes: tuple[BoundaryPrimeLedgerEntry, ...]
+    affine_primes: tuple[AffinePrimeLedgerEntry, ...]
+    packets: tuple[TargetFiberPacket, ...]
+    finite_flat_certified: bool
+    target_transfer_certified: bool
+    exhaustive_generic_pullback: bool
+
+    def __post_init__(self) -> None:
+        if not self.name:
+            raise ValueError("a target-component ledger needs a name")
+        if self.generic_degree <= 0:
+            raise ValueError("generic degree must be positive")
+        if not self.boundary_primes:
+            raise ValueError("a nonproperness component needs a boundary prime")
+        boundary_names = tuple(prime.name for prime in self.boundary_primes)
+        affine_names = tuple(prime.name for prime in self.affine_primes)
+        if len(set(boundary_names)) != len(boundary_names):
+            raise ValueError("boundary-prime labels must be distinct")
+        if len(set(affine_names)) != len(affine_names):
+            raise ValueError("affine-prime labels must be distinct")
+        if set(boundary_names) & set(affine_names):
+            raise ValueError("boundary and affine prime labels must be disjoint")
+        known_boundary_names = set(boundary_names)
+        for packet in self.packets:
+            for point in packet.points:
+                if point.boundary_prime not in known_boundary_names:
+                    raise ValueError(
+                        f"packet point {point.name!r} refers to unknown "
+                        f"boundary prime {point.boundary_prime!r}"
+                    )
+
+
+@dataclass(frozen=True)
+class TargetFiberPacketAudit:
+    name: str
+    point_names: tuple[str, ...]
+    transverse_indices: tuple[int, ...]
+    minimum_packet_length: int
+    length_deficit: int
+    applicable: bool
+    status: str
+    reasons: tuple[str, ...]
+
+    def as_dict(self) -> dict[str, object]:
+        return asdict(self)
+
+
+@dataclass(frozen=True)
+class TargetComponentLedgerAudit:
+    name: str
+    generic_degree: int
+    generic_boundary_degree: int
+    affine_degree: int
+    expected_generic_degree: int
+    degree_identity_holds: bool
+    packet_audits: tuple[TargetFiberPacketAudit, ...]
+    status: str
+    reasons: tuple[str, ...]
+
+    def as_dict(self) -> dict[str, object]:
+        return asdict(self)
+
+
+@dataclass(frozen=True)
 class OneDicriticalNormalizationCertificate:
     """Finite-normalization data needed by the conductor theorem.
 
@@ -328,6 +492,157 @@ def conductor_collision_budget(
     )
 
 
+def conductor_packet_budget(
+    transverse_indices: Sequence[int],
+    generic_boundary_degree: int,
+    affine_degree: int,
+) -> ConductorPacketBudget:
+    """Audit the general conductor-packet inequality.
+
+    At distinct boundary points ``p_i`` in one finite-flat fiber, assume the
+    boundary germ is smooth, the residue map is immersive, and the transverse
+    pullback multiplicity is ``e_i``.  The local fiber algebra at ``p_i`` then
+    has length at least ``e_i``.  Hence
+
+        d >= sum_i e_i.
+
+    The generic degree decomposition is
+
+        d = generic_boundary_degree + affine_degree.
+
+    This function only checks the resulting arithmetic; it does not infer
+    immersion, flatness, exhaustiveness, or the target-side grouping from a
+    source boundary graph.
+    """
+
+    indices = tuple(transverse_indices)
+    if not indices or any(index <= 0 for index in indices):
+        raise ValueError("a conductor packet needs positive transverse indices")
+    if generic_boundary_degree <= 0:
+        raise ValueError("generic boundary degree must be positive")
+    if affine_degree < 0:
+        raise ValueError("affine degree must be nonnegative")
+
+    generic_degree = generic_boundary_degree + affine_degree
+    packet_length = sum(indices)
+    minimum_affine_degree = max(0, packet_length - generic_boundary_degree)
+    deficit = packet_length - generic_degree
+    verdict = (
+        "excluded by finite-flat fiber length"
+        if deficit > 0
+        else "fiber length permits this packet; further data are required"
+    )
+    return ConductorPacketBudget(
+        transverse_indices=indices,
+        generic_boundary_degree=generic_boundary_degree,
+        affine_degree=affine_degree,
+        generic_degree=generic_degree,
+        minimum_packet_length=packet_length,
+        minimum_affine_degree=minimum_affine_degree,
+        length_deficit=deficit,
+        verdict=verdict,
+    )
+
+
+def audit_target_component_ledger(
+    ledger: TargetComponentLedger,
+) -> TargetComponentLedgerAudit:
+    """Audit generic degree accounting and every certified closed-fiber packet."""
+
+    boundary_degree = sum(
+        prime.transverse_index * prime.residue_degree
+        for prime in ledger.boundary_primes
+    )
+    affine_degree = sum(prime.residue_degree for prime in ledger.affine_primes)
+    expected_degree = boundary_degree + affine_degree
+    degree_identity = ledger.generic_degree == expected_degree
+    global_reasons: list[str] = []
+
+    if not ledger.finite_flat_certified:
+        global_reasons.append("finite flatness over the target is not certified")
+    if not ledger.target_transfer_certified:
+        global_reasons.append(
+            "source dicriticals have not been transferred to the finite "
+            "normalization over the original target"
+        )
+    if not ledger.exhaustive_generic_pullback:
+        global_reasons.append(
+            "the generic boundary and affine pullback ledger is not exhaustive"
+        )
+    if not degree_identity:
+        global_reasons.append(
+            "generic degree does not equal boundary plus affine contributions"
+        )
+
+    packet_audits: list[TargetFiberPacketAudit] = []
+    for packet in ledger.packets:
+        indices = tuple(point.transverse_index for point in packet.points)
+        packet_length = sum(indices)
+        deficit = packet_length - ledger.generic_degree
+        reasons: list[str] = []
+        if not packet.same_target_fiber_certified:
+            reasons.append(
+                "the listed points are not certified to lie in one target fiber"
+            )
+        nonimmersive = tuple(
+            point.name for point in packet.points if not point.residue_immersive
+        )
+        if nonimmersive:
+            reasons.append(
+                "residue immersion is missing at " + ", ".join(nonimmersive)
+            )
+        if global_reasons:
+            reasons.extend(global_reasons)
+
+        applicable = not reasons
+        if not applicable:
+            status = "incomplete"
+        elif deficit > 0:
+            status = "excluded"
+        else:
+            status = "survives_packet_budget"
+        packet_audits.append(
+            TargetFiberPacketAudit(
+                name=packet.name,
+                point_names=tuple(point.name for point in packet.points),
+                transverse_indices=indices,
+                minimum_packet_length=packet_length,
+                length_deficit=deficit,
+                applicable=applicable,
+                status=status,
+                reasons=tuple(reasons),
+            )
+        )
+
+    if any(packet.status == "excluded" for packet in packet_audits):
+        status = "excluded"
+        reasons = ("a certified packet exceeds the finite-flat fiber length",)
+    elif global_reasons or any(
+        packet.status == "incomplete" for packet in packet_audits
+    ):
+        status = "incomplete"
+        reasons = tuple(global_reasons) or (
+            "at least one target-fiber packet is not fully certified",
+        )
+    else:
+        status = "survives_packet_budget"
+        reasons = (
+            "every certified packet fits within the generic fiber length",
+        )
+
+    return TargetComponentLedgerAudit(
+        name=ledger.name,
+        generic_degree=ledger.generic_degree,
+        generic_boundary_degree=boundary_degree,
+        affine_degree=affine_degree,
+        expected_generic_degree=expected_degree,
+        degree_identity_holds=degree_identity,
+        packet_audits=tuple(packet_audits),
+        status=status,
+        reasons=reasons,
+    )
+
+
 def first_free_depth_package() -> dict[str, object]:
     """Replay the accepted degree-six source-boundary package."""
 
@@ -384,6 +699,18 @@ if __name__ == "__main__":
                 affine_degree=1,
             ).as_dict()
             for degree in range(2, 9)
+        ],
+        "conductor_packet_examples": [
+            conductor_packet_budget(
+                transverse_indices=(3, 3, 3),
+                generic_boundary_degree=3,
+                affine_degree=5,
+            ).as_dict(),
+            conductor_packet_budget(
+                transverse_indices=(2, 3, 4),
+                generic_boundary_degree=5,
+                affine_degree=4,
+            ).as_dict(),
         ],
         "typed_normalization_examples": [
             audit_one_dicritical_normalization(certificate).as_dict()

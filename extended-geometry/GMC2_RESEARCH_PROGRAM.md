@@ -35,11 +35,12 @@ total degree at most three.  Therefore any counterexample must have:
 - mixed-sign rotational support; and
 - nonlinear dependence on both circular coordinates.
 
-At degree four, the exact three-level family
+Through total degree six, the exact three-level family
 \(P=WA(U)+C(U)+ZB(U)\) with rotational support \(\{-1,0,1\}\) is also
-closed: centering gives a Bessel--factorial functional equation, and moments
-two through six generate the unit ideal on all four coefficient charts.  See
-the [support-graph analysis](TWO_REAL_GMC_SUPPORT_GRAPH_EXPLORATION.md).
+closed: centering gives a Bessel--factorial functional equation, and exact
+characteristic-zero calculations exclude all 6, 10, and 15 invariant
+coefficient charts in degrees four, five, and six.  See the
+[support-graph analysis](TWO_REAL_GMC_SUPPORT_GRAPH_EXPLORATION.md).
 
 The next positive target is a degree-uniform null-cone theorem that separates
 the radial factorial coefficients from zero-sum rotational-weight
@@ -48,6 +49,16 @@ three-level Bessel--factorial rigidity: prove that the functional equation in
 the support-graph analysis forces both invariant polynomials to vanish.  New
 Gaussian search code must either address this two-real frontier directly or
 provide a finite, theorem-directed certificate for it.
+
+The current leading route is differential rather than Gröbner-theoretic.
+For \(G=((1-tC)^2-4t^2D)^{-1/2}\), integration by parts reduces every radial
+moment \(\mathcal L(U^kG)\) to finitely many initial radial moments and turns
+the two algebraic differential identities for \(G\) into a finite
+meromorphic Pfaffian system.  Three-level rigidity becomes the assertion
+that its distinguished factorial initial-value solution cannot remain in
+the hyperplane \(\mathcal L(G)=1\).  The support-graph analysis gives the
+exact recurrence, a degree-\((2,3)\) regression, and the associated
+Laplace--Bessel and Laguerre interpretations.
 
 ## Retained high-dimensional material
 

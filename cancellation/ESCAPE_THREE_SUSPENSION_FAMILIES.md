@@ -215,6 +215,24 @@ components.  The reliable filters are the normalized critical curve
 the marked Fitting divisor, and the scheme-theoretic boundary-contact
 index.
 
+The old-boundary contacts of (4.1) are classified before coefficient
+elimination in
+[`FOURTH_SUSPENSION_VALUATION_FAN.md`](FOURTH_SUSPENSION_VALUATION_FAN.md).
+For coefficient degrees at most two, only six effective-degree pairs
+survive; the sole exceptional derivative-cancellation row fails its initial
+residue-shape test unless the proposed root degenerates to a function of
+`P`.
+
+Imposing that `T` is itself a primitive root variable collapses those six
+rows further; see
+[`FOURTH_SUSPENSION_PRIMITIVE_ROOT_REDUCTION.md`](FOURTH_SUSPENSION_PRIMITIVE_ROOT_REDUCTION.md).
+The one-prime affine and reciprocal-scaling cases fail respectively at the
+controlled-divisor coefficient and the forced incidence residue.  A
+unimodular nonmonomial Möbius denominator requires a nonpolynomial
+third-order shear.  The smallest remaining search therefore has either a
+determinant-supported multi-prime ledger or one additional primitive
+reconstruction variable.
+
 ## Exact regression
 
 Run

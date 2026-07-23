@@ -308,7 +308,200 @@ The next genuinely open bounded ansatz must therefore alter the source
 chart or mix the root with \(P\), rather than enlarge the second incidence
 coordinate inside the fixed reciprocal chart.
 
-## 5. Relation to the surrounding program
+## 5. Formal conormal integration
+
+The primitive conormal data have two distinct parts.  The class itself is
+transverse:
+
+\[
+ \tau\in H^0(D_\Delta,\mathcal N_\Delta).
+\tag{5.1}
+\]
+
+Its residue coefficient is longitudinal:
+
+\[
+ \zeta_\tau\in k(E),
+\tag{5.2}
+\]
+
+where \(E\) is the normalized ramified stratum.  Primitivity and
+noncontraction give
+
+\[
+ \mathcal O(E)=k[\zeta_\tau]
+ \quad\text{for }E\simeq\mathbb A^1,
+\qquad
+ [\zeta_\tau]\text{ generates }\mathcal O(E)^*/k^*
+ \quad\text{for }E\simeq\mathbb G_m.
+\tag{5.3}
+\]
+
+Thus the boundary root is already \(\zeta_\tau\), up to the orientation
+and scalar normalization retained by the marked boundary link.  The formal
+problem is to extend this residue root, with its prescribed first conormal
+jet, into the marked chart.
+
+### Proposition 5.1 -- unobstructed formal lifting
+
+Let \(X\) be Noetherian, let \(D\subset X\) be an affine effective Cartier
+divisor with ideal \(I\), and put
+
+\[
+ D_n=V(I^{n+1}).
+\tag{5.4}
+\]
+
+Every function on \(D_n\) lifts to \(D_{n+1}\).  Consequently every
+function on \(D\), together with any compatible prescribed finite jet,
+admits a lift
+
+\[
+ \widehat s\in
+ \Gamma(\widehat X_D,\mathcal O_{\widehat X_D})
+ =
+ \varprojlim_n\Gamma(D_n,\mathcal O_{D_n}).
+\tag{5.5}
+\]
+
+If the initial function is a unit, it admits a formal unit lift.  At the
+\((n+1)\)-st step the set of lifts, when nonempty, is a torsor under
+
+\[
+ H^0(D,I^{n+1}/I^{n+2}).
+\tag{5.6}
+\]
+
+#### Proof
+
+There is an exact sequence
+
+\[
+ 0\longrightarrow I^{n+1}/I^{n+2}
+ \longrightarrow\mathcal O_{D_{n+1}}
+ \longrightarrow\mathcal O_{D_n}
+ \longrightarrow0.
+\tag{5.7}
+\]
+
+Because \(D\) is affine and \(I^{n+1}/I^{n+2}\) is quasi-coherent,
+
+\[
+ H^1(D,I^{n+1}/I^{n+2})=0.
+\tag{5.8}
+\]
+
+The restriction map on global sections is therefore surjective.  Induction
+gives (5.5), while its kernel gives (5.6).  A lift of a unit through a
+nilpotent ideal is again a unit.  QED
+
+If only the normalization of \(D\) is initially presented as affine, the
+same conclusion applies once finite conductor descent has been checked:
+a finite surjective image of an affine Noetherian scheme is affine.
+Equivalently, one may work on the normalization and require at every order
+that the lifted sections agree on the conductor equalizer.
+
+Proposition 5.1 proves existence, not canonicity.  Even the primitive
+conormal and a fixed first jet leave infinitely many higher choices.  For
+example, on
+
+\[
+ X=\operatorname{Spec}k[x,y],\qquad D=(x),
+\tag{5.9}
+\]
+
+the two formal parameters
+
+\[
+ x,\qquad \frac{x}{1-x}=x+x^2+x^3+\cdots
+\tag{5.10}
+\]
+
+have the same primitive conormal class.  Likewise \(y\) and
+\(y+x^2h(x,y)\) have the same restriction to \(D\) and the same first
+normal jet.  The ambiguity is exactly the \(H^0\)-torsor in (5.6), not an
+\(H^1\)-obstruction.
+
+### Definition 5.2 -- formal incidence rigidity
+
+Fix the oriented residue root, quotient flag, controlled divisor, and
+allowed target-shear group.  Linearize the controlled-incidence and Keller
+identities at Rees order \(n\):
+
+\[
+ L_n:
+ H^0(D,I^n/I^{n+1})
+ \longrightarrow \operatorname{Def}_n(F).
+\tag{5.11}
+\]
+
+The marked presentation is **formally incidence-rigid** when, for every
+\(n\ge2\),
+
+1. the order-\(n\) obstruction lies in the image of \(L_n\); and
+2. \(\ker L_n\) consists exactly of the order-\(n\) jets of declared target
+   shears and marking-preserving gauges.
+
+Under formal incidence rigidity, Proposition 5.1 gives a unique formal
+marked-root **gauge class**.  The orientation and collision normalization
+must then select a representative.  This is the precise uniqueness
+statement that conormal primitivity alone cannot supply.
+
+### 5.3 Formal effectivity and polynomiality
+
+Finite generation of the boundary Rees algebra does not by itself
+algebraize a formal function.  In (5.9), the Rees algebra of the principal
+ideal \((x)\) is finitely generated, but the second expression in (5.10)
+has a pole on the affine divisor \(x=1\).  More generally the completion
+contains arbitrary power series that are neither rational nor polynomial.
+
+The algebraization step must therefore be split into:
+
+\[
+ \boxed{
+ \text{formal gauge class}
+ \Longrightarrow
+ \text{rational effectivity}
+ \Longrightarrow
+ \text{polynomial membership}.
+ }
+\tag{5.12}
+\]
+
+Here **rational effectivity** means that the selected formal class is the
+completion of an element \(s\in k(\mathbb A^3)\).  Once such an \(s\) is
+known, polar completeness excludes an undeclared divisor such as \(x=1\)
+in (5.10), and saturation/Rees strictness upgrades divisorial
+nonnegativity to membership in the actual reconstruction module.  Finite
+Khovanskii/Rees generation makes these last tests finite; it does not
+produce the rational representative.
+
+This gives the corrected conditional extraction theorem:
+
+> **Formal marked-root extraction criterion.**  Suppose the canonical
+> boundary data determine an oriented primitive residue root and an affine
+> Cartier formal neighborhood.  If the controlled-incidence equations are
+> formally incidence-rigid, their unique formal gauge class has a rational
+> representative, and the complete reconstruction ledger is polar-complete
+> and Rees-strict, then the marked-root coordinate algebraizes.  Together
+> with the intrinsic quotient flag, this proves \(\operatorname{MLE}(F)\).
+
+The first new proof target is consequently not another unrestricted
+coefficient search.  It is the homogeneous calculation
+
+\[
+ \boxed{
+ \ker L_n
+ =
+ \{\text{target-shear and marking-preserving gauge jets}\}
+ \quad(n\ge2).
+ }
+\tag{5.13}
+\]
+
+After (5.13), rational effectivity is the only genuinely nonformal step.
+
+## 6. Relation to the surrounding program
 
 The finite filtered-presentation requirement is developed in
 [`FINITE_VALUATION_ALGEBRAIZATION.md`](FINITE_VALUATION_ALGEBRAIZATION.md).

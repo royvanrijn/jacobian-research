@@ -19,6 +19,15 @@ control polynomiality or descent across `X=0`.
 This note starts a complementary search inside the explicit `A_3`
 endomorphism itself.
 
+There is also a first-class localized route.  The foundational map is
+equivariant for a natural `G_m` action.  Its full affine moment reductions
+are singular, but the primitive target-momentum chart has target quotient
+`A^4`, a smooth explicit source hypersurface, and retains all three collision
+points as distinct quotient points.  The remaining questions are polynomial
+triviality of that source fourfold and its localized quantum normalizer
+quotient.  See
+[Natural torus Hamiltonian reduction](NATURAL_TORUS_HAMILTONIAN_REDUCTION.md).
+
 ## 1. What an invariant pair would have to prove
 
 Write the foundational Keller map as `F` and its inverse-Jacobian Weyl lift as

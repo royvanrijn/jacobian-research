@@ -854,10 +854,15 @@ supplies the fourth chart.  Seven further exact rational unit-ideal
 calculations exclude the last three supports and 20 charts through moment
 six.  Thus all 121 mixed-sign four-weight cubic charts are closed and a
 cubic GMC(2) counterexample needs at least five rotational weights.  The
-target also proves the Bessel--factorial moment formula for the quartic
-three-level family with support `{-1,0,1}` and computes four exact rational
-unit ideals through moment six, closing that family in total degree at most
-four.  It recomputes three unit Groebner bases for the direct Long-style
+target also proves the Bessel--factorial moment formula for the three-level
+family with support `{-1,0,1}` and computes 31 exact rational unit ideals:
+6 charts in degree four through moment six, 10 charts in degree five through
+moment eight, and 15 charts in degree six through moment nine.  This closes
+that family through total degree six.  A companion exact regression derives
+the finite radial-moment recurrence, constructs the four-dimensional
+resolvent differential system for a centered degree-\((2,3)\) pair, and
+checks it against the factorial series.  The target also recomputes three
+unit Groebner bases for the direct Long-style
 collapse and writes the dimension/rank/index/degree scoreboard.  It does not
 claim to settle GMC(2); the all-degree three-level Bessel--factorial rigidity
 problem remains open.
@@ -1087,6 +1092,51 @@ completed residual and normal ideals, and the synchronization defect
 vanishes at every Rees order.  On `w0=0` the conormal rank is exactly
 three, so the existing fourth-order certificate remains the correct global
 statement and the all-order primary frontier is confined to that divisor.
+
+The divisor itself has a two-normal-variable Rees reduction:
+
+```bash
+make verify-degree42-divisor-rees-reduction
+```
+
+Three unit residual pivots eliminate `x3,x4,x5`.  The remaining binary
+quadrics have resultant
+`(81/256)*w1^4*((t+e1*e2)^2-4*e1^3)`.  Off this resultant their Hilbert
+vector is `(1,2,1)`, so the completed normal ideal has cube zero and the
+fourth-order defect certificate becomes exact.  The unresolved all-order
+locus is reduced to `V(w0,w1)` together with
+`V(w0,(t+e1*e2)^2-4*e1^3)`.
+
+Dense opens of both residual branches are closed by
+
+```bash
+make verify-degree42-kuranishi-branches
+```
+
+On the discriminant branch, normalization exposes one common quadratic
+tangent; its cubic obstruction is nonzero on `D(w1*w2*t)`, giving the
+initial ideal `(ell^2,ell*s,s^3)`.  On `w1=0`, the two binary cubic
+Kuranishi forms have resultant
+`-15625/262144*w2^6*A*B`, with `A,B` displayed in the canonical note.
+On `D(w2*A*B)` their complete-intersection Hilbert vector is
+`(1,2,3,2,1)`.  In both cases the existing membership modulo the fifth
+normal power is therefore exact.  The same checker computes the first
+subresultant on the exceptional divisors: generically the cubics share
+exactly one explicit linear factor on each of `A=0` and `B=0`.  Their
+next obstruction is consequently a one-variable quartic restriction,
+whereas `w2=0` is the separate sevenfold power collision.
+
+The degenerate part of the discriminant branch is closed by
+
+```bash
+make verify-degree42-discriminant-quartics
+```
+
+When `t=0`, the common-tangent cubic vanishes but the terminal quartic
+coefficient is `5*w2/64`.  This remains true at the cusp `e1=t=0`,
+where the quadratic ideal becomes a single square.  Consequently the
+whole discriminant branch synchronizes on `D(w1*w2)`.  The remaining
+support is only `V(w0,w2)` together with `V(w0,w1,A*B)`.
 
 The next normal order has an exact good-prime certificate, and one rational
 point on the remaining divisor has an exact untruncated characteristic-zero

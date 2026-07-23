@@ -3532,19 +3532,19 @@
       "id": "G2Q",
       "kind": "corollary",
       "state": "proved",
-      "title": "Quartic three-level GMC(2) exclusion",
-      "scope": "For every two-real Gaussian polynomial P=W*A(U)+C(U)+Z*B(U) of total degree at most four with all three rotational components -1,0,1 nonzero, centering reduces the pure moments to the Bessel--factorial functional equation sum_r m!/(r!^2(m-2r)!) L(C^(m-2r)(UAB)^r)=0. On all four nonvanishing coefficient charts, moments two through six generate the unit ideal over Q. Hence no such quartic polynomial has all pure moments zero. The all-degree three-level Bessel--factorial rigidity problem remains open.",
+      "title": "Degree-six three-level GMC(2) exclusion",
+      "scope": "For every two-real Gaussian polynomial P=W*A(U)+C(U)+Z*B(U) of total degree at most six with all three rotational components -1,0,1 nonzero, centering reduces the pure moments to the Bessel--factorial functional equation sum_r m!/(r!^2(m-2r)!) L(C^(m-2r)(UAB)^r)=0. Exact characteristic-zero coefficient-chart calculations cover degrees four, five, and six: respectively 6, 10, and 15 nonvanishing charts, with moments through orders 6, 8, and 9, all have reduced basis [1]. Hence no such polynomial through total degree six has all pure moments zero. The all-degree three-level Bessel--factorial rigidity problem remains open.",
       "canonical_source": "extended-geometry/TWO_REAL_GMC_SUPPORT_GRAPH_EXPLORATION.md",
       "dependencies": [
         "G2N",
         "external: one-variable Factorial Theorem"
       ],
-      "checker": "scripts/verify_two_real_gmc_three_weight_quartic.py",
+      "checker": "scripts/verify_two_real_gmc_three_weight_low_degree.py",
       "proof_type": "unclassified",
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:1c48d157d3f42bfb72a190eb7fe21a73b25a3c38b6d7812078a26349e0f8545f",
+      "artifact_hash": "sha256:5de3bd0c39bb76524d89964d79d93ab599c22f270e10cb722da49298c206de70",
       "software_lock": [
         ".python-version",
         "requirements.txt"

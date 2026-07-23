@@ -341,6 +341,78 @@ using \(d=e+1\), one gets \(2e\le e+1\), impossible for \(e\ge2\).
 
 This closes the conductor case and proves the theorem.
 
+### 4.3 Conductor packets
+
+The two-point estimate is the first case of a local finite-flat statement.
+Let \(b\in B\), and let
+
+\[
+ p_1,\ldots,p_r\in \overline X\setminus U
+\]
+
+be distinct boundary points over \(b\).  At \(p_i\), assume:
+
+1. the source and boundary germ are regular;
+2. the corresponding analytic branch of \(B\) is smooth;
+3. the residue map is immersive; and
+4. the pullback of a transverse equation of that branch has order \(e_i\).
+
+Then the local fiber algebra at \(p_i\) has length at least \(e_i\).
+The local algebras are distinct summands of the finite flat fiber over
+\(b\), and therefore
+
+\[
+\boxed{d\ge \sum_{i=1}^r e_i.}
+\tag{9}
+\]
+
+This is the **conductor-packet inequality**.  It is more accurately a
+finite-flat packet inequality: the conductor is what supplies several
+normalization points in one target fiber, while flatness and transverse
+multiplicity supply the estimate.
+
+The generic and special-fiber data must be kept separate.  If the complete
+generic boundary contribution over \(B\) is
+
+\[
+ E_B=\sum_D e_Df_D
+\]
+
+and the total affine contribution is \(a_B\), then
+
+\[
+ d=E_B+a_B,\qquad
+ a_B\ge \sum_{p_i\mid b}e_i-E_B.
+\tag{10}
+\]
+
+For one boundary divisor of generic index \(e\) and residue degree \(f\),
+with a constant-index \(r\)-point packet, this becomes
+
+\[
+ d=ef+a_B,\qquad a_B\ge (r-f)e.
+\tag{11}
+\]
+
+After residue immersion and the one-puncture Riemann--Hurwitz argument force
+\(f=1\), the useful form is
+
+\[
+\boxed{a_B\ge(r-1)e.}
+\tag{12}
+\]
+
+Here \(r\) is the number of normalization points over one *closed* singular
+value; it is not the generic residue degree \(f\).  For \(r=2\), (12)
+recovers the current estimate \(a_B\ge e\).
+
+No logarithmic-purity hypothesis is logically needed once assumptions
+1--4 above are supplied point by point.  In the boundary theorem,
+logarithmic purity is the mechanism that proves those local assumptions
+uniformly.  Without residue immersion the estimate can fail in the proposed
+form: a singular unibranch image may have only one normalization point, and
+the tangential differential can spend ramification at that point.
+
 ## 5. Smallest numerical test
 
 The intrinsic affine-plane boundary gate already contains the first
@@ -524,3 +596,168 @@ As of July 23, 2026, the unrestricted complex plane Jacobian problem remains
 open.  The recently announced three-dimensional counterexample and the
 classification of graded plane Keller maps do not settle this ungraded
 two-dimensional conductor problem.
+
+## 8. What a boundary-leaf reduction would have to prove
+
+The conductor packet gives a precise target for a global reduction, but the
+weighted source tree and pole vector do not by themselves contain all of its
+inputs.  For a target nonproperness component \(B\), define the packet
+deficiency at \(b\in B\) by
+
+\[
+ \Delta(B,b)=
+ \sum_{p\in(\overline X\setminus U)\cap\pi^{-1}(b)}e_p-d.
+\tag{13}
+\]
+
+A positive value is an immediate contradiction.  Equivalently, using the
+generic decomposition, the packet demands more affine degree than the
+available budget:
+
+\[
+ \sum_{p\mid b}e_p-E_B>a_B.
+\tag{14}
+\]
+
+Thus a useful boundary-leaf theorem for a minimal counterexample would need
+to force one component \(B\) for which:
+
+1. the relevant source dicriticals are transported to the finite
+   Zariski--Main normalization and grouped over \(B\);
+2. the residue curve has one puncture and the pointwise logarithmic
+   differential is pure, so its normalization map is immersive;
+3. the generic factors \(e_D,f_D\) and the affine remainder
+   \(a_B=d-E_B\) are exhaustive; and
+4. some singular value has packet weight greater than \(d\).
+
+The complete source intersection matrix \(Q\) and pole vector \(p\) do
+provide important parts of this ledger:
+
+\[
+ d=p^tQp,\qquad
+ R_f=K_X+3f^*L,
+\]
+
+and, on a genuine resolved morphism, the coefficient of a dicritical in
+\(R_f\) recovers its generic transverse index minus one.  They also identify
+dicritical candidates by \(p_i=0\), \((Qp)_i>0\).
+
+Three required pieces are not numerical invariants of \((Q,p)\):
+
+- the factorization of the restriction degree into residue degree and
+  projective image degree;
+- the grouping of dicriticals over the same target component and of their
+  special points over the same \(b\); and
+- pointwise residual ramification, which is a section-level condition rather
+  than only a divisor coefficient at the generic point.
+
+Consequently the next compiler layer should be a **target-transfer ledger**,
+not another source-lattice inequality.  It should record for each
+dicritical:
+
+\[
+(B;\ e_D,f_D;\ \text{punctures};\
+ \text{residual-Jacobian divisor};\
+ \{(b,p,e_p)\}),
+\]
+
+together with the affine primes above \(B\).  The packet checker can then
+evaluate (13) exactly.
+
+Minimality alone presently gives no known reason for \(a_B=1\), nor for a
+packet large enough to violate (14).  In particular, rationality and the
+one-place-at-infinity theorem force a singularity when the image is not an
+affine line, and immersion forces that singularity to have at least two
+normalization branches; they do not force more than the already proved
+two-packet bound.  The genuinely new global lemma must therefore constrain
+the affine remainder \(a_B\), force a larger coincident packet, or relate the
+two through monodromy or the boundary intersection pairing.
+
+### 8.1 Conductor length does not enlarge the packet
+
+It is tempting to replace the number of normalization points by the
+conductor length or the \(\delta\)-invariant.  That does not strengthen the
+finite-fiber estimate without an additional surface-level argument.
+
+For every \(m\ge2\) and \(c\in k\), consider
+
+\[
+ t\longmapsto
+ \left(
+ x=t^2-1,\quad
+ y=c(t^2-1)+t(t^2-1)^m
+ \right).
+\tag{15}
+\]
+
+Its image has equation
+
+\[
+ (y-cx)^2=x^{2m}(x+1).
+\tag{16}
+\]
+
+The parametrization is birational: away from \(x=0\),
+
+\[
+ t=\frac{y-cx}{x^m}.
+\]
+
+It is also immersive everywhere.  Since \(x'=2t\), only \(t=0\) needs
+checking, and there \(y'=(-1)^m\ne0\).  The two points \(t=1,-1\) map to
+the origin.  Their smooth image branches have common tangent \(y=cx\) and
+intersection multiplicity \(m\).  Thus
+\(\delta=\operatorname{length}(\widetilde{\mathcal O}/\mathcal O)=m\);
+because this is a plane-curve singularity, the conductor has colength
+\(2m\) in the normalization.  Both grow arbitrarily while the conductor
+packet still has only two points.
+
+The coordinate degrees \(2\) and \(2m+1\) are coprime, so the projective
+closure has one place at infinity.  This family therefore has exactly the
+qualitative curve features available in the plane-Jacobian reduction:
+rational normalization, one point at infinity, residue immersion, and a
+large conductor.  Nevertheless its packet bound remains only
+
+\[
+ d\ge e_{+}+e_{-},
+\]
+
+or \(d\ge2e\) at constant transverse index.
+
+Consequently neither the arithmetic genus of the image curve nor total
+conductor length can by itself produce the desired sheet deficit.  Any
+stronger inequality would have to show that tangency of target branches
+forces extra length in the *surface-map fiber*.  The local normal form used
+in Section 4.3 shows that this is not a formal consequence of residue
+immersion: after choosing a parameter along either branch, its local fiber
+contribution can still be exactly \(e_i\).
+
+### 8.2 Executable target-transfer ledger
+
+The checker now implements the proposed target-side object as a
+`TargetComponentLedger`.  It keeps four kinds of data separate:
+
+1. generic boundary primes \((D,e_D,f_D)\);
+2. generic affine primes and their residue degrees;
+3. named, distinct boundary points grouped into certified closed target
+   fibers; and
+4. the finite-flatness, target-transfer, exhaustiveness, and pointwise
+   residue-immersion certificates required to apply the inequality.
+
+For each component it checks
+
+\[
+d=\sum_D e_Df_D+\sum_A f_A
+\]
+
+and, independently for every certified packet over \(b\),
+
+\[
+\sum_{p\mid b}e_p\le d.
+\]
+
+It deliberately reports `incomplete` when a source-only packet has not been
+transported, when the points are not known to share one target fiber, or
+when residue immersion is missing at even one listed point.  The regression
+contains an excluded primitive \(d=3,e=2,a=1\) ledger, a paid multi-boundary
+packet, and an uncertified source-only preview.

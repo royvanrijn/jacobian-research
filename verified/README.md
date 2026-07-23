@@ -63,6 +63,10 @@ This directory contains the stable proof chain:
   triangular-extension and fiber-scheme theorem, its GZ-type context, the
   verified 24-to-22 quotient, and the mandatory essential-dimension search
   protocol.
+- [Support-saturation principle](SUPPORT_SATURATION_PRINCIPLE.md): the
+  equivalent local-cohomology, associated-prime, grade, regular-element,
+  and presentation-saturation criteria that extend a defect across its
+  possible support.
 
 The external Lean certificate for the foundational map remains in
 [LEAN_FOUNDATIONAL_MAP.md](LEAN_FOUNDATIONAL_MAP.md).

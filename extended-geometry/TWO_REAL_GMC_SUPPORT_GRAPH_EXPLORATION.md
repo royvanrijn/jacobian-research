@@ -290,3 +290,271 @@ constant-term theorem and the one-variable Factorial Theorem.  A
 nontrivial solution would be comparably significant: it would pass the
 pure-moment gate in the only unresolved Gaussian dimension, after which
 (4.4) tests whether it is an actual GMC counterexample.
+
+## 8. All-degree proof program
+
+The low-degree theorem changes the role of computation.  Degree seven is a
+useful regression target for a new method, but repeating dense localized
+Gröbner calculations is not the primary program.  The following three
+reformulations isolate more structural attacks.
+
+### 8.1 Laplace--Bessel saddles and the formal-series caveat
+
+On polynomials,
+
+\[
+ \mathcal L(f)=\int_0^\infty e^{-u}f(u)\,du.
+\]
+
+If
+
+\[
+ c=\deg C,\qquad d=\deg D,\qquad q=\max(c,d/2),
+\]
+
+the two large-argument Bessel phases are formally
+
+\[
+ \Phi_\pm(u,t)=-u+tC(u)\pm2t\sqrt{D(u)}.           \tag{8.1}
+\]
+
+For \(q>1\), a generic saddle has
+
+\[
+ u\asymp t^{-1/(q-1)},\qquad
+ \Phi_\pm(u,t)\asymp t^{-1/(q-1)}.                \tag{8.2}
+\]
+
+Thus the leading saddle slopes are separated unless \(d=2c\).  On that
+balanced line the first collision occurs precisely when one of the leading
+coefficients
+
+\[
+ c_c\pm2\sqrt{d_{2c}}
+\]
+
+vanishes, equivalently \(c_c^2=4d_{2c}\).  Subsequent collisions are read
+from the Newton polygon of
+
+\[
+ C(U)^2-4D(U).                                    \tag{8.3}
+\]
+
+There is an important analytic qualification.  Equations (4.1)--(4.3) are
+identities of formal moment series; in radial degree at least two those
+series generally have zero radius of convergence.  All moments vanishing
+therefore says that a sectorial Laplace integral has asymptotic expansion
+\(1\), not automatically that the analytic integral is identically \(1\).
+Nontrivial saddle terms may be exponentially flat at \(t=0\).  A complete
+asymptotic proof must consequently establish that every nonzero pair
+\((C,D)\) has a nonzero Stokes contribution on some admissible \(t\)-ray.
+The Newton classification above gives the finite list of leading collisions
+that such a proof must resolve.
+
+### 8.2 Bessel ODE and creative telescoping
+
+Put
+
+\[
+ F(t,U)=e^{tC(U)}I_0(2t\sqrt{D(U)}).
+\]
+
+The Bessel equation gives the exact differential identity
+
+\[
+ \left[
+ t^2\partial_t^2+(t-2t^2C)\partial_t
+ +t^2(C^2-4D)-tC
+ \right]F=0.                                      \tag{8.4}
+\]
+
+The factorial functional has the adjoint relation
+
+\[
+ \mathcal L(Uf)=\mathcal L((U\partial_U+1)f).      \tag{8.5}
+\]
+
+More generally, multiplication by \(U^k\) can be transferred one factor at
+a time, producing the rising Euler operator
+
+\[
+ (U\partial_U+1)(U\partial_U+2)\cdots
+ (U\partial_U+k).                                 \tag{8.6}
+\]
+
+For symbolic elimination it is preferable to use the algebraic resolvent
+
+\[
+ G(t,U)=Q(t,U)^{-1/2},\qquad
+ Q=(1-tC)^2-4t^2D,
+\]
+
+which satisfies
+
+\[
+ 2Q\,\partial_tG+Q_tG=0,\qquad
+ 2Q\,\partial_UG+Q_UG=0.                          \tag{8.7}
+\]
+
+The concrete creative-telescoping target is an operator
+\(T(t,\partial_t)\) and an algebraic certificate \(R(t,U)G\) such that
+
+\[
+ T(G)=(\partial_U-1)(R\,G)+B(t,U).                \tag{8.8}
+\]
+
+After integration against \(e^{-U}dU\), the first term is a boundary term.
+Substituting the proposed solution \(\mathcal L(G)=1\) into the resulting
+ODE gives algebraic conditions on the coefficients of \(C,D\).  This route
+also exposes the irregular singularities where exponentially flat solutions
+can occur.  Formal substitution alone does not rule those solutions out;
+boundary conditions and Stokes data must still be tracked.  A useful next
+computation is to derive the minimal telescoper for generic symbolic degrees
+\((c,d)=(2,3)\), then \((3,5)\), and identify the coefficient pattern before
+attempting arbitrary degree.
+
+There is already a finite first-order closure before scalar telescoping.
+Write
+
+\[
+ Q(t,U)=\sum_{j=0}^s q_j(t)U^j,\qquad
+ M_k(t)=\mathcal L(U^kG(t,U)).
+\]
+
+Integration by parts in the \(U\)-equation of (8.7) gives, for every
+\(k\geq0\),
+
+\[
+\boxed{
+ 2\sum_{j=0}^s q_jM_{k+j}
+ -\sum_{j=0}^s(2k+j)q_jM_{k+j-1}
+ =2\delta_{k,0}Q(t,0)G(t,0),
+}                                                  \tag{8.9}
+\]
+
+where terms with negative subscripts are omitted.  The coefficient of
+\(M_{k+s}\) is \(2q_s\).  Hence, after localizing at the leading coefficient,
+every radial moment reduces recursively to
+
+\[
+ M_0,\ldots,M_{s-1}.                              \tag{8.10}
+\]
+
+Multiplying the \(t\)-equation of (8.7) by \(U^k\) and applying
+\(\mathcal L\) gives
+
+\[
+ 2\sum_{j=0}^s q_jM'_{k+j}
+ +\sum_{j=0}^s q'_jM_{k+j}=0.                    \tag{8.11}
+\]
+
+Differentiate the reductions (8.9), substitute them into (8.11) for
+\(0\leq k<s\), and solve the resulting linear system.  This produces an
+explicit meromorphic Pfaffian system
+
+\[
+ \partial_t
+ \begin{pmatrix}M_0\\ \vdots\\ M_{s-1}\end{pmatrix}
+ =
+ A(t)
+ \begin{pmatrix}M_0\\ \vdots\\ M_{s-1}\end{pmatrix}
+ +b(t).                                           \tag{8.12}
+\]
+
+The initial data are \(M_k(0)=k!\).  Three-level rigidity is therefore
+equivalent to showing that this distinguished formal horizontal section
+cannot remain in the affine hyperplane \(M_0=1\) unless \(C=D=0\).
+Eliminating the other \(s-1\) coordinates yields the scalar telescoper in
+(8.8).  The poles introduced by \(q_s(t)\), which normally vanishes at
+\(t=0\), make the expected irregular singularity explicit rather than
+hiding it in moment growth.
+
+The exact regression
+[`verify_two_real_gmc_resolvent_system.py`](../scripts/verify_two_real_gmc_resolvent_system.py)
+constructs the four-dimensional system for a centered degree-\((2,3)\)
+pair and checks it against the factorial moment series.
+
+### 8.3 Laguerre operator form
+
+Let \(L_n(U)\) denote the ordinary Laguerre polynomials.  They satisfy
+
+\[
+ \int_0^\infty e^{-U}L_n(U)L_m(U)\,dU=\delta_{n,m},
+\]
+
+so \(\mathcal L\) selects the \(L_0\)-coefficient.  Multiplication by \(U\)
+is the tridiagonal Jacobi operator
+
+\[
+ U L_n=(2n+1)L_n-(n+1)L_{n+1}-nL_{n-1}.           \tag{8.13}
+\]
+
+If \(J\) denotes this operator and
+
+\[
+ H_m(C,D)=
+ \sum_{r=0}^{\lfloor m/2\rfloor}
+ \frac{m!}{(r!)^2(m-2r)!}C^{m-2r}D^r,
+\]
+
+then the moment equations become
+
+\[
+ \langle e_0,H_m(C(J),D(J))e_0\rangle=0
+ \quad(m\geq1).                                  \tag{8.14}
+\]
+
+Here \(C(J)\) and \(D(J)\) are commuting finite-band operators.  This turns
+all-degree rigidity into a boundary spectral-moment problem for one fixed
+Jacobi matrix.  It also supplies a sparse exact computational basis: the
+outermost Laguerre bands and their unique extremal paths can be studied
+before any coefficient-chart localization.
+
+Of these approaches, (8.7)--(8.8) is the most concrete theorem engine.
+The saddle analysis identifies its irregular singularities and exceptional
+Newton polygons; the Laguerre form is the best candidate for exposing a
+triangular or positivity-free band argument.
+
+## 9. The first genuine circuit cycle
+
+For discovery beyond the three-level forest, omit weight zero initially and
+write the \(K_{2,2}\) support as
+
+\[
+ P=T^2B_2+TB_1+T^{-1}UA_1+T^{-2}U^2A_2.
+\]
+
+Its four primitive circuit invariants are
+
+\[
+\begin{aligned}
+ X_{11}&=UA_1B_1,&
+ X_{12}&=U^2A_2B_1^2,\\
+ X_{21}&=U^2B_2A_1^2,&
+ X_{22}&=U^2A_2B_2.
+\end{aligned}                                    \tag{9.1}
+\]
+
+They obey the toric cycle relation
+
+\[
+ \boxed{X_{12}X_{21}=X_{11}^2X_{22}.}             \tag{9.2}
+\]
+
+The first constant terms are already sparse:
+
+\[
+\begin{aligned}
+ \operatorname{CT}_T(P^2)&=2(X_{11}+X_{22}),\\
+ \operatorname{CT}_T(P^3)&=3(X_{12}+X_{21}).
+\end{aligned}                                    \tag{9.3}
+\]
+
+Thus a first-cycle search should use the invariant coordinates (9.1) and
+the single toric relation (9.2), rather than the four coefficient
+polynomials \(A_1,A_2,B_1,B_2\) with their redundant scalings.  Equation
+(9.2) is the algebraic feature absent from the three-level forest and is
+the natural location for genuinely new cancellation.  A useful finite
+experiment is to enumerate the constant-term polynomials in the
+\(X_{ij}\), reduce them modulo (9.2), apply \(\mathcal L\), and only then
+introduce bounded radial coefficients.

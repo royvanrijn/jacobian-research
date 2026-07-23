@@ -447,3 +447,95 @@ vertex coefficient maps and edge identities, builds the four ideals in
 (4.1) on all six vertex charts, certifies (5.1)--(5.4) and the complete
 sector table, and computes both path intersections in the ambient polynomial
 and Hessian tangent spaces exactly.
+
+## 8. Spectator independence: the first degree-forty-two test
+
+A first test of a stronger universality proposal compares the cut-`6`
+sector in degrees thirty and forty-two.  Write the degree-thirty endpoint
+word as `2 o 5 o 3` and the degree-forty-two endpoint word as
+`2 o 7 o 3`.  In both cases the outer pair is `{2,3}`.  The two half-braids
+omit respectively the composite cut `6` and the middle prime cut (`5` or
+`7`).  Thus changing degree thirty to degree forty-two changes only the
+middle, or spectator, prime.
+
+The naive global spectator-independence statement is false.  Exact
+calculation on the normalized `2 o 7 o 3` chart gives, for the
+composite-omitting path ideal \(I_6\), the prime-omitting path ideal \(I_7\),
+the full boundary ideal \(I_\partial\), and the Dickson graph ideal \(K\),
+
+\[
+ I_6\subsetneq K,\qquad
+ I_7\subsetneq K,\qquad
+ I_\partial\subsetneq K.
+                                                               \tag{8.1}
+\]
+
+These containments use the ideal convention of the rest of the note:
+scheme-theoretically the Dickson surface is contained in all three path
+schemes.  In contrast, degree thirty has a reduced prime-omitting path and
+reduced full boundary.  Moreover,
+
+\[
+ K^2\not\subset I_6,\qquad
+ K^3\not\subset I_6,\qquad
+ K^4\not\subset I_6,                                          \tag{8.2}
+\]
+
+so the degree-thirty cut-`6` nilpotence bound does not transfer to the raw
+degree-forty-two ideal.
+
+The discrepancy is invisible at a generic Dickson point.  At
+\((t,z)=(1,2)\), all four schemes in (8.1), including the Dickson graph,
+have tangent dimension two.  At the monomial point \((1,0)\), their tangent
+dimensions are
+
+\[
+\begin{array}{c|cccc}
+ & I_6&I_7&I_\partial&K\\
+\hline
+\dim T&4&3&3&2.
+\end{array}                                                    \tag{8.3}
+\]
+
+Restoring the degree-one polynomial residual does not change (8.1)--(8.3);
+the extra layer is an ordinary Ritt-incidence phenomenon, not an artifact
+of Hessian projection.
+
+The relative first-order defect nevertheless survives unchanged.  In
+degree thirty the cut-`6` thick path and full boundary have tangent
+dimensions `3` and `2`; in degree forty-two they have dimensions `4` and
+`3`.  Hence in both degrees
+
+\[
+ \dim T(I_{\rm composite\text{-}omit})
+ -\dim T(I_\partial)=1,
+ \qquad
+ \dim T(I_{\rm prime\text{-}omit})
+ =\dim T(I_\partial).                                         \tag{8.4}
+\]
+
+This rules out universality of the **raw global path ideals**, but supports
+universality of the path-to-boundary comparison.  It leaves two more precise
+possibilities:
+
+1. after isolating the \(K\)-primary formal neighborhood, the relative
+   difference between the two paths is independent of the spectator; or
+2. the degree-forty-two structure is an extension of a universal outer-pair
+   defect by a common spectator-dependent layer, visible in the extra
+   tangent direction shared by \(I_7\) and \(I_\partial\).
+
+The second formulation is especially compatible with a Soergel-style
+picture: comparison should retain a top Dickson piece, a common lower layer,
+   and the sector-dependent relative defect, rather than identify a raw path
+scheme with a single universal algebra.  The next calculation should
+construct the completed \(K\)-primary ideals and compare the relative
+cotangent complexes
+
+\[
+ L_{K/I_6}\longrightarrow L_{K/I_\partial},
+ \qquad
+ L_{K/I_7}\longrightarrow L_{K/I_\partial}.                  \tag{8.5}
+\]
+
+The exact exploratory checker is
+[`explore_degree42_ritt_spectator_universality.py`](../scripts/explore_degree42_ritt_spectator_universality.py).
