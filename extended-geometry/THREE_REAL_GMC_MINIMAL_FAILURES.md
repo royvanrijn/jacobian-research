@@ -86,7 +86,8 @@ Saturating these three equations by \(a\), equivalently adjoining
 \]
 
 Thus the first three moments already give (2) scheme-theoretically on this
-chart.  Adding any deletion equation
+normalized chart, where the coefficient of \(W\) is fixed to one.  Adding
+any remaining deletion equation
 \(a=0,b_0=0,b_1=0\), or \(b_2=0\) gives the unit ideal after saturation.
 The equation \(b_2=0\) is also the degree-at-most-three subchart.  This proves
 both minimality assertions within the ansatz without relying on a numerical

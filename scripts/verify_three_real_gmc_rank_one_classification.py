@@ -130,8 +130,9 @@ def main() -> None:
         assert pure_coefficient == 0
         assert mixed_coefficient == a ** (m - 1)
 
-    # Every coefficient in the displayed five-term support is nonzero on
-    # a != 0.  Adding any deletion equation makes the saturated ideal one.
+    # Every variable coefficient in the displayed normalized support is
+    # nonzero on a != 0.  (The coefficient of W was fixed to one.)  Adding
+    # any available deletion equation makes the saturated ideal one.
     deletion_coefficients = [a, b0, b1, b2]
     for coefficient in deletion_coefficients:
         deletion_basis = sp.groebner(
@@ -149,7 +150,7 @@ def main() -> None:
     print("PASS rank-one GMC: first three moments give the saturated Long family")
     print("PASS rank-one GMC: formal square identity proves all pure moments vanish")
     print("PASS rank-one GMC: E[Z P^m] = m! a^(m-1) for every m >= 1")
-    print("PASS rank-one GMC: no four-term deletion or degree-three member on a != 0")
+    print("PASS rank-one GMC: no variable-term deletion or cubic member on a != 0")
 
 
 if __name__ == "__main__":

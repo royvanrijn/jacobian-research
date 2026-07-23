@@ -29,9 +29,9 @@ The proved reductions now leave the following cubic problem.
 | at most two weights | — | one-sided |
 | exactly three mixed-sign weights | 27 supports / 72 charts | all excluded |
 | exactly four mixed-sign weights | 33 supports / 121 charts | all excluded |
-| five weights | 21 supports / 102 charts | 18 supports and 92 charts excluded exactly |
-| six weights | 7 supports / 44 charts | open |
-| seven weights | 1 support / 8 charts | open |
+| five weights | 21 supports / 102 charts | all closed by the cubic null-cone theorem |
+| six weights | 7 supports / 44 charts | all closed by the cubic null-cone theorem |
+| seven weights | 1 support / 8 charts | closed by the cubic null-cone theorem |
 
 The remaining four-weight supports are
 

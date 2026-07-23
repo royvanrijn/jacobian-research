@@ -1,5 +1,12 @@
 # The two-real-variable Gaussian frontier
 
+> **Historical frontier.**  The lower-face prime theorem now proves GMC in
+> two real variables for arbitrary degree and support.  This note retains
+> the earlier finite reductions and exact certificates as independent
+> regressions; statements below describing dimension two as unresolved are
+> historical.  See
+> [the complete theorem](TWO_REAL_GMC_LOWER_FACE_THEOREM.md).
+
 ## 1. Result
 
 Let \(X,Y\) be independent standard real Gaussians and put

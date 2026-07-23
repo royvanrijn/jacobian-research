@@ -10,7 +10,7 @@ is most valuable when it supplies one of the missing modules, obstruction
 classes, support reductions, or saturation certificates described here,
 rather than only adding another bounded coefficient calculation.
 
-## 1. GMC(2): all-degree three-level rigidity
+## 1. Resolved GMC(2) module and retained design lesson
 
 For circular coordinates \(Z,W\), put \(U=ZW\) and consider
 
@@ -27,31 +27,25 @@ the vanishing of every pure Gaussian moment to
  \qquad \mathcal L(U^j)=j!.
 \]
 
-The primary theorem target is:
+The former primary theorem target was:
 
 > **Three-level rigidity.**  If the displayed formal identity holds for
 > polynomials \(C,D\), then \(C=D=0\).
 
-This is known in the repository through total degree six.  The one-variable
-Factorial Theorem settles the axes \(C=0\) and \(D=0\), but not their coupled
-cancellation.  A leaf-removal argument for larger support trees therefore
-needs a genuine **factorial leaf lemma**; the factorial functional is neither
-multiplicative nor injective, so an extremal weight cannot simply be deleted.
-
-The most concrete current route is the meromorphic Pfaffian system for
+This target is now proved in every degree by the prime-endpoint theorem, and
+the lower-face prime theorem proves the stronger arbitrary-support statement
+and hence all of GMC(2).  The meromorphic Pfaffian system
 
 \[
  G(t,U)=\bigl((1-tC)^2-4t^2D\bigr)^{-1/2}.
 \]
 
-One should prove that its distinguished factorial initial-value solution
-cannot remain in the hyperplane \(\mathcal L(G)=1\) unless \(C=D=0\).  After
-the three-level theorem, extend the argument from path supports to circuit
-forests or trees by removing one extremal rotational level at a time.
-
-Useful map extensions should expose invariant pairs analogous to \((C,D)\),
-a triangular Pfaffian system, or a support-tree leaf whose elimination
-reduces to the one-variable Factorial Theorem.
+is therefore retained as a structural interpretation, not an open proof
+route.  The reusable design lesson is to expose a finite weight decomposition,
+take the lower radial-order Newton face over weight zero, and combine a
+nonzero face constant term with prime dilation and factorial divisibility.
+This replaces support-tree leaf removal and automatically includes mixed
+Hilbert-basis relations.
 
 See
 [`extended-geometry/GMC2_RESEARCH_PROGRAM.md`](extended-geometry/GMC2_RESEARCH_PROGRAM.md)
@@ -184,13 +178,12 @@ and
 
 ## Suggested priority
 
-1. Prove all-degree GMC(2) three-level rigidity.
-2. Prove the cubic presentation saturation \(N:I^\infty=N\).
-3. Build the restricted filtered deformation complex for the rank-two
+1. Prove the cubic presentation saturation \(N:I^\infty=N\).
+2. Build the restricted filtered deformation complex for the rank-two
    quantization obstruction.
-4. Recover the missing Case-1 bands and construct the plane boundary module.
+3. Recover the missing Case-1 bands and construct the plane boundary module.
 
-The first is the clearest famous-conjecture target; the second is the
-smallest exact algebraic certificate already exposed by the repository; the
-third has a strong invariant reformulation; and the fourth is the broadest
-conceptual unification but still has a prerequisite data gap.
+The first is the smallest exact algebraic certificate already exposed by
+the repository; the second has a strong invariant reformulation; and the
+third is the broadest conceptual unification but still has a prerequisite
+data gap.
