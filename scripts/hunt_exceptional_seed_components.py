@@ -141,7 +141,10 @@ class SingularProgram:
         variables = nuisance + canonical_h
         ring_name = f"r_{tag(partition)}_{variant}"
         ideal_name = f"k_{tag(partition)}_{variant}"
-        self.lines.append(f"ring {ring_name}=0,({','.join(map(str, variables))}),lp;")
+        self.lines.append(
+            f"ring {ring_name}=0,({','.join(map(str, variables))}),"
+            f"(lp({len(nuisance)}),dp({len(canonical_h)}));"
+        )
         equation_strings = [singular_expression(equation, substitution) for equation in equations]
         self.lines.append(f"ideal j={','.join(equation_strings)};")
         self.lines.append(

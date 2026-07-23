@@ -116,10 +116,114 @@ here with the faithfully flat polynomial extension.  Finally the conductor
 is the annihilator of the finite quotient `nu_*O_X/O_D`; flat base change
 extends that annihilator.  These observations prove the last assertion.
 
+## The map-intrinsic normalization package
+
+Let
+
+\[
+ F:U\longrightarrow Y
+\]
+
+be a dominant, separated, quasi-finite morphism of normal integral affine
+`k`-varieties.  Define
+
+\[
+ \overline X_F=\operatorname{Norm}_Y k(U),\qquad
+ j_F:U\hookrightarrow\overline X_F,
+ \qquad
+ \partial_F=(\overline X_F\setminus j_F(U))_{\rm red}. \tag{6}
+\]
+
+Here `j_F` is not auxiliary data.  Zariski's Main Theorem gives the displayed
+open immersion through the normalization of `Y` in `k(U)`, and the factor is
+unique over `Y`.  Thus
+
+\[
+ \mathcal B(F)=
+ (\overline X_F\xrightarrow{\pi_F}Y,
+  j_F:U\hookrightarrow\overline X_F,\partial_F)       \tag{7}
+\]
+
+is reconstructed from the morphism `F`.
+
+### Functoriality under left--right isomorphism
+
+Suppose `F:U->Y` and `G:U'->Y'` fit into a commutative square
+
+```text
+ U  ----a----> U'
+ |             |
+ F             G
+ |             |
+ v             v
+ Y  ----b----> Y'
+```
+
+with `a` and `b` isomorphisms.  The induced compatible isomorphisms of
+function fields identify `k(U)/k(Y)` with `k(U')/k(Y')`.  Integrality is
+preserved by ring isomorphism, so they identify the two integral closures.
+There is therefore a unique isomorphism
+
+\[
+ \overline a:\overline X_F\xrightarrow{\sim}\overline X_G
+\]
+
+over `b`.  Both `\overline a\circ j_F` and `j_G\circ a` are the factorization
+of `G\circ a=b\circ F` through that integral closure, hence uniqueness gives
+
+\[
+ \overline a\circ j_F=j_G\circ a.                    \tag{8}
+\]
+
+It follows that `overline a` transports `partial_F` to `partial_G`.  It also
+transports, without choices:
+
+1. every boundary prime and its target image;
+2. ramification and residue degrees and all valuation-theoretic labels;
+3. reduced target images and, when retained, their scheme-theoretic images;
+4. any ordering or marking characterized uniquely by those intrinsic data;
+5. every finite stratum map obtained from this package, together with its
+   relative differentials, Fitting ideals, fiber products, diagonals,
+   saturated off-diagonal closure, and conductor.
+
+The third item uses the scheme-theoretic image of the relevant finite or
+quasi-compact stratum map, rather than a presentation-dependent equation.
+Thus a primitive inverse equation, a chosen root coordinate, or a named
+target coordinate is not itself part of the invariant.
+
+### Stabilization and stable equivalence
+
+For `F_s=F x id_(A^s)`, equation (1) gives a canonical isomorphism
+
+\[
+ \overline X_{F_s}\simeq\overline X_F\times\mathbb A^s. \tag{9}
+\]
+
+Under (9), the Zariski--Main open immersion is exactly
+`j_F x id_(A^s)`: both are the unique factorization of `F_s` through the
+normalization.  Hence
+
+\[
+ \boxed{\mathcal B(F_s)\simeq\mathcal B(F)\times\mathbb A^s.} \tag{10}
+\]
+
+Now a stable polynomial left--right equivalence is a left--right isomorphism
+between stabilizations of two maps.  Apply (10) to the two stabilizations and
+then (8) to that isomorphism square.  This proves precisely that every
+decoration first reconstructed functorially from `mathcal B(F)` and its
+intrinsic finite stratum maps is invariant under stable polynomial
+left--right equivalence.
+
+This conclusion does **not** apply to a dense open, compactification point,
+primitive element, or branch label chosen only from a presentation.  A
+family-specific theorem must identify each such item by a unique property of
+`mathcal B(F)` before the stabilization theorem can be invoked.
+
 ## Use in the repository
 
 The theorem is deliberately independent of the weighted and cancellation
-constructions.  Family-specific stable-boundary results need only establish
-that their boundary or decoration is intrinsic to the canonical finite
-normalization.  All stabilization, Fitting/base-change, valuation, and
-nilpotency claims then follow from this note.
+constructions.  Family-specific stable-boundary results must establish that
+their boundary vertices and every retained decoration are reconstructed from
+`mathcal B(F)` by the intrinsic rules above.  All subsequent stabilization,
+left--right transport, Fitting/base-change, valuation, and nilpotency claims
+then follow from this note.
