@@ -477,30 +477,54 @@
       ],
       "supersedes": [],
       "replaced_by": [
-        "H1"
+        "H1-COARSE",
+        "H1-STACK"
       ],
       "priority": "reference"
     },
     {
-      "id": "H1",
+      "id": "H1-COARSE",
       "kind": "theorem",
       "state": "proved",
-      "title": "Hurwitz--LL compactification of rerooting",
-      "scope": "The corrected polynomial Hurwitz--LL graph is the normalized selected admissible-cover stack over the normalized wonderful pullback of the labelled branch-diagonal building set. Its coarse space is the wonderful graph. On every nested chart, framed target screens have affine-composition contractions; source maps are normalized initial forms of the polynomial map after the Kummer equations q=u*s^e; every weighted target-flag fiber is cut out by R(U)-a=0; and initial-form transitivity proves contraction compatibility. Full vertex centralizers, including permutations of isomorphic disconnected components, are matched across source-node cycles and then intersected with every diagonal Kummer phase, giving all simultaneous inertia. Collision-adapted Hurwitz changes and label permutations transport these charts equivariantly. This supplies the explicit logarithmic atlas and completes corrected H1 in characteristic zero.",
+      "title": "Coarse Hurwitz--LL compactification of rerooting",
+      "scope": "Let B be the normal wonderful stable-target graph and let G be the coarse space of the normalization of the selected polynomial admissible-cover closure over B. The branch morphism makes G -> B finite, and the selected generic polynomial component makes it generically degree one. Hence G -> B is finite birational with normal target and is an isomorphism. This is the complete coarse comparison; it asserts no explicit logarithmic stack atlas.",
+      "canonical_source": "extended-geometry/SOURCE_GRAPH_FINITE_NORMALIZATION.md",
+      "dependencies": [
+        "SFG1"
+      ],
+      "checker": null,
+      "proof_type": "formal",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": null,
+      "software_lock": [],
+      "supersedes": [
+        "H1-UNMODIFIED"
+      ],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
+      "id": "H1-STACK",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Explicit recursive logarithmic stack atlas",
+      "scope": "The selected-factor normalization lemma shows that the normalization of the closure of a generic section in a Kummer log-etale cover is exactly its selected saturated toroidal factor. Applied to the standard admissible-cover deformation chart, this identifies the normalized selected polynomial closure strict-etale locally with (P +_(N^E) Q)^sat. Hence the recursive screen charts are exhaustive, algebraic, and equipped with effective descent independently of finite enumeration. Their universal maps are the normalized initial-form formulas, and the simultaneous full-centralizer phase preimage is the actual inertia. Thus the explicit recursive atlas is the normalized selected admissible-cover stack, with coarse space B.",
       "canonical_source": "extended-geometry/RECURSIVE_RESONANCE_ATLAS.md",
       "dependencies": [
+        "H1-COARSE",
         "BW1",
         "SVR1",
         "GRS1",
         "MFS1",
-        "SFG1",
         "MIC1",
         "RRA1",
         "LN1",
-        "external: admissible-cover compactification technology"
+        "external: wonderful screen charts, tame Weierstrass preparation, and admissible-cover local deformation theory"
       ],
       "checker": "scripts/verify_recursive_resonance_atlas.py",
-      "proof_type": "unclassified",
+      "proof_type": "hybrid",
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
@@ -510,7 +534,6 @@
         "requirements.txt"
       ],
       "supersedes": [
-        "H1-UNMODIFIED",
         "explicit H1 stack atlas as an open gap"
       ],
       "replaced_by": [],
@@ -521,7 +544,7 @@
       "kind": "theorem",
       "state": "proved",
       "title": "Stacky marked extension",
-      "scope": "For the repository-specific corrected graph constructed as the normalized polynomial closure over the wonderful target graph, the marked/unmarked map [Gamma_N^lab/S_(N-3)] -> [Gamma_N^lab/S_(N-2)] is canonically finite, representable, etale, and of degree N-2. It is the normalization in the generic selected-root algebra. Uniqueness of finite normalization and the proved multicluster conductor formulas identify the contracted finite factors. Thus corrected H2 is unconditional; no separate label-gluing, collision algebra, or explicit H1 stack atlas is required. The former statement over the unmodified root-stable quotient is superseded.",
+      "scope": "For the repository-specific corrected graph constructed as the normalized polynomial closure over the wonderful target graph, the marked/unmarked map [Gamma_N^lab/S_(N-3)] -> [Gamma_N^lab/S_(N-2)] is canonically finite, representable, etale, and of degree N-2. It is the normalization in the generic selected-root algebra. Uniqueness of finite normalization and the proved multicluster conductor formulas identify the contracted finite factors. Thus corrected H2 is unconditional; no separate label-gluing, collision algebra, or H1-STACK atlas theorem is required. The former statement over the unmodified root-stable quotient is superseded.",
       "canonical_source": "extended-geometry/SOURCE_GRAPH_FINITE_NORMALIZATION.md",
       "dependencies": [
         "F2",
@@ -618,8 +641,8 @@
       "id": "SVR1",
       "kind": "corollary",
       "state": "proved",
-      "title": "Genus-zero source-vertex rigidity and H1 reduction",
-      "scope": "On a fixed rational source component, two disjoint effective fibers of equal degree determine the component map to a rational target up to one scalar; a prescribed point or full divisor over a third target flag fixes that scalar. The statement is relative over a connected base and preserves the actual cover automorphism group. Hence a flag-complete source enhancement has at most one admissible-cover realization. RRA1 constructs the source tree and weighted target-flag pullback divisors over every wonderful stratum, makes the third-fiber equations automatic, and proves contraction compatibility. The degree-six central, quadratic-cluster, and cyclic-square maps are direct instances.",
+      "title": "Genus-zero source-vertex rigidity and H1-STACK reduction",
+      "scope": "On a fixed rational source component, two disjoint effective fibers of equal degree determine the component map to a rational target up to one scalar; a prescribed point or full divisor over a third target flag fixes that scalar. The statement is relative over a connected base and preserves the actual cover automorphism group. Hence a flag-complete source enhancement has at most one admissible-cover realization. RRA1 constructs the source trees and weighted target-flag pullback divisors, makes the third-fiber equations automatic, and proves contraction compatibility; its log-etale comparison supplies the all-strata global atlas. The degree-six central, quadratic-cluster, and cyclic-square maps are direct instances.",
       "canonical_source": "extended-geometry/SOURCE_VERTEX_RIGIDITY.md",
       "dependencies": [
         "BW1",
@@ -705,7 +728,7 @@
       "kind": "corollary",
       "state": "proved",
       "title": "Polynomial source graph by finite normalization",
-      "scope": "Let B be the normal wonderful stable-target graph and pull the fully marked admissible-cover stack back to B. Its branch morphism is finite. The reduced closure of the generic polynomial cover, followed by normalization, is therefore finite and generically degree one over B. On coarse spaces it is finite birational to the normal space B and hence isomorphic to B. Thus the wonderful target graph is the complete coarse polynomial admissible-cover graph in every degree: source covers add a canonical stack and inertia but no further coarse blowup. This makes corrected H2 and coarse H3 unconditional. RRA1 supplies the explicit general logarithmic stack presentation.",
+      "scope": "Let B be the normal wonderful stable-target graph and pull the fully marked admissible-cover stack back to B. Its branch morphism is finite. The reduced closure of the generic polynomial cover, followed by normalization, is therefore finite and generically degree one over B. On coarse spaces it is finite birational to the normal space B and hence isomorphic to B. Thus the wonderful target graph is the complete coarse polynomial admissible-cover graph in every degree: source covers add a canonical stack and inertia but no further coarse blowup. This proves H1-COARSE and makes corrected H2 and coarse H3 unconditional. RRA1 supplies the explicit general logarithmic stack presentation.",
       "canonical_source": "extended-geometry/SOURCE_GRAPH_FINITE_NORMALIZATION.md",
       "dependencies": [
         "BW1",
@@ -730,7 +753,7 @@
       "kind": "corollary",
       "state": "proved",
       "title": "Monodromy centralizers and generic resonance inertia",
-      "scope": "Deck transformations of a labelled cover component are the centralizer of its monodromy group, restricted by source labels and node cycles. A connected k-sheet simple-branch tree has trivial deck group for k>=3 and one quadratic flip for k=2; one labelled regular-fiber sheet on that component kills the flip. At a simple-resonance node, only unanchored size-two forest components contribute phases, and intersection with the diagonal mu_lcm gives inertia order L/M in {1,2}, where M is the lcm of all constrained indices. This recovers trivial zero-anchored resonance vertices, diagonal mu_2 on pairwise and triple Maxwell divisors, and trivial caustic inertia. A downstream label alone does not kill a rotation on a separate connector component. RRA1 performs the necessary full-chain matching: it automatically extracts full vertex tables, component permutations, edge matchings, and simultaneous characters from arbitrary tame nested monodromy data. For a first-active ordered radial scale partition B_0|...|B_k it gives inertia order product_j L_j/M_j, with M_j the lcm on B_j and L_j the lcm on the suffix. Equal multiplicities give trivial inertia; unequal multiplicities can retain a finite subgroup.",
+      "scope": "Deck transformations of a labelled cover component are the centralizer of its monodromy group, restricted by source labels and node cycles. A connected k-sheet simple-branch tree has trivial deck group for k>=3 and one quadratic flip for k=2; one labelled regular-fiber sheet on that component kills the flip. At a simple-resonance node, only unanchored size-two forest components contribute phases, and intersection with the diagonal mu_lcm gives inertia order L/M in {1,2}, where M is the lcm of all constrained indices. This recovers trivial zero-anchored resonance vertices, diagonal mu_2 on pairwise and triple Maxwell divisors, and trivial caustic inertia. A downstream label alone does not kill a rotation on a separate connector component. RRA1 performs the necessary full-chain matching and identifies the resulting simultaneous character group with the actual inertia through the log-etale comparison. For a first-active ordered radial scale partition B_0|...|B_k it gives inertia order product_j L_j/M_j, with M_j the lcm on B_j and L_j the lcm on the suffix. Equal multiplicities give trivial inertia; unequal multiplicities can retain a finite subgroup.",
       "canonical_source": "extended-geometry/MONODROMY_INERTIA_CHARACTERS.md",
       "dependencies": [
         "LN1",
@@ -759,7 +782,7 @@
       "kind": "theorem",
       "state": "proved",
       "title": "Recursive resonance source and stack atlas",
-      "scope": "On every nested tame collision chart, retain affine frames on the wonderful target screens, so a child coordinate embeds as u_parent=a+q*u_child and deleting a screen is exact affine composition. Independent Aff_1 frame changes act explicitly on placements and scales, and their quotient is the ordinary stable-screen chart. After etale separation of source points and the Kummer equation q=u*s^e at a node of index e, coefficientwise Rees divisibility makes the source-vertex map (R(b+sU)-a)/q regular without requiring exact factorization over the smoothing base. Every weighted target-flag fiber is therefore cut out by the single equation R(U)-alpha=0; third-fiber compatibility is automatic, and initial-form transitivity proves all contraction formulas. Full vertex monodromy centralizers, including permutations of isomorphic disconnected source components, are matched across oriented node cycles; their two half-node rotations are added and intersected simultaneously with all diagonal Kummer groups. The compiler retains the actual compatible vertex-permutation tuples and their inertia subgroup, not only its order. This automatically gives arbitrary tame, radial, resonance, and mixed inertia, including the radial product formula product_j L_j/M_j, is invariant under collision-adapted Hurwitz changes and label actions, and identifies the resulting explicit tame stack with the normalized selected polynomial admissible-cover closure.",
+      "scope": "Framed target screens make nested contractions exact affine composition. The selected-factor normalization lemma and standard tame admissible-cover deformation theory identify the normalized pullback at every geometric point with (P +_(N^E) Q)^sat, so the recursive charts are Kummer log-etale, jointly exhaustive, algebraic, and equipped with effective overlap descent. After etale separation, their universal cover maps are the regular normalized initial forms (R(b+sU)-a)/q, and every weighted target-flag fiber is R(U)-alpha=0. Initial-form transitivity gives all contractions. Full vertex centralizers glue across node cycles, and intersection with the diagonal Kummer phases gives the actual simultaneous inertia. The checker is regression evidence, not the source of all-degree coverage.",
       "canonical_source": "extended-geometry/RECURSIVE_RESONANCE_ATLAS.md",
       "dependencies": [
         "BW1",
@@ -772,7 +795,7 @@
         "external: wonderful screen charts, tame Weierstrass preparation, and admissible-cover local deformation theory"
       ],
       "checker": "scripts/verify_recursive_resonance_atlas.py",
-      "proof_type": "unclassified",
+      "proof_type": "hybrid",
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
@@ -968,7 +991,7 @@
       "kind": "corollary",
       "state": "proved",
       "title": "General labelled-node saturation and corrected H2 quotient",
-      "scope": "For source-node indices e_j over one target node, normalized branches form (product mu_(e_j))/mu_L with L=lcm(e_j), while inertia of a labelled normalized lift is the inverse image of diagonal mu_L under the label-preserving cover-automorphism character. This rule is permutation-equivariant and composes node by node. The repository-specific labelled normalized polynomial graph is constructed by finite closure over the wonderful target graph and has a canonical S_(N-2)-action. Subgroup inclusion therefore gives the corrected marked/unmarked map of degree N-2, equal to normalization in the generic selected-root algebra. RRA1 supplies the formerly missing explicit H1 stack atlas and its simultaneous characters.",
+      "scope": "For source-node indices e_j over one target node, normalized branches form (product mu_(e_j))/mu_L with L=lcm(e_j), while inertia of a labelled normalized lift is the inverse image of diagonal mu_L under the label-preserving cover-automorphism character. This rule is permutation-equivariant and composes node by node. The repository-specific labelled normalized polynomial graph is constructed by finite closure over the wonderful target graph and has a canonical S_(N-2)-action. Subgroup inclusion therefore gives the corrected marked/unmarked map of degree N-2, equal to normalization in the generic selected-root algebra. RRA1 supplies the explicit H1 stack atlas and its simultaneous characters.",
       "canonical_source": "extended-geometry/LABELLED_NODE_SATURATION.md",
       "dependencies": [
         "external: admissible-cover normalization and deformation theory"
@@ -2629,7 +2652,7 @@
       "dependencies": [
         "D1",
         "F2",
-        "H1"
+        "H1-COARSE"
       ],
       "checker": "scripts/verify_decorated_normalization.py",
       "proof_type": "unclassified",
@@ -3187,6 +3210,29 @@
       "priority": "derived"
     },
     {
+      "id": "G3X",
+      "kind": "reproduction",
+      "state": "proved",
+      "title": "Five-term GMC witnesses in every dimension n>=3",
+      "scope": "Long's explicit three-real polynomial P=W+WZ-T^2-(3/2)ZT^2-(1/2)Z^2T^2 has all pure Gaussian moments zero while Q=Z has nonzero mixed moments. Exact Wick regressions and finite truncations of the all-order coefficient identity are replayed locally. Adjoining unused independent Gaussian coordinates gives an explicit witness in every real dimension n>=3, so broad searches in those dimensions are closed.",
+      "canonical_source": "extended-geometry/GMC2_RESEARCH_PROGRAM.md",
+      "dependencies": [
+        "external: Long's three-real Gaussian counterexample"
+      ],
+      "checker": "scripts/verify_long_gaussian_moments.py",
+      "proof_type": "reproduction",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:f57c5878943d1c7b51f53374ec89ad75a4473816c2d4e87bea6f0b450277a437",
+      "software_lock": [],
+      "supersedes": [
+        "broad GMC witness searches in real dimensions n>=3"
+      ],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
       "id": "LR1",
       "kind": "reproduction",
       "state": "proved",
@@ -3478,6 +3524,33 @@
       "supersedes": [
         "five-to-seven-weight cubic GMC frontier",
         "literal cubic moment-ideal containment conjecture"
+      ],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "G2Q",
+      "kind": "corollary",
+      "state": "proved",
+      "title": "Quartic three-level GMC(2) exclusion",
+      "scope": "For every two-real Gaussian polynomial P=W*A(U)+C(U)+Z*B(U) of total degree at most four with all three rotational components -1,0,1 nonzero, centering reduces the pure moments to the Bessel--factorial functional equation sum_r m!/(r!^2(m-2r)!) L(C^(m-2r)(UAB)^r)=0. On all four nonvanishing coefficient charts, moments two through six generate the unit ideal over Q. Hence no such quartic polynomial has all pure moments zero. The all-degree three-level Bessel--factorial rigidity problem remains open.",
+      "canonical_source": "extended-geometry/TWO_REAL_GMC_SUPPORT_GRAPH_EXPLORATION.md",
+      "dependencies": [
+        "G2N",
+        "external: one-variable Factorial Theorem"
+      ],
+      "checker": "scripts/verify_two_real_gmc_three_weight_quartic.py",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:1c48d157d3f42bfb72a190eb7fe21a73b25a3c38b6d7812078a26349e0f8545f",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [
+        "smallest three-level quartic GMC(2) search"
       ],
       "replaced_by": [],
       "priority": "derived"
@@ -5224,20 +5297,15 @@
     {
       "id": "OP-GAUSS",
       "kind": "open_problem",
-      "state": "parked",
-      "title": "Gaussian and Image/Vanishing consequences",
-      "scope": "Settle GMC(2) in degrees at least four, the only unresolved real Gaussian dimension. The cubic Gaussian null-cone theorem proves GMC for every polynomial of total degree at most three in two real variables, so any counterexample has degree at least four, mixed-sign rotational support, and nonlinear dependence on both circular coordinates. The next positive target is a degree-uniform null-cone theorem separating radial factorial coefficients from zero-sum weight combinatorics. Also determine which transported exceptional invariants descend under natural equivalence groups of Gaussian polynomial pairs.",
-      "canonical_source": "extended-geometry/CUBIC_GAUSSIAN_NULL_CONE_THEOREM.md",
+      "state": "open",
+      "title": "GMC(2)",
+      "scope": "Settle GMC(2) in degrees at least four, the only unresolved real Gaussian dimension. The cubic Gaussian null-cone theorem proves GMC for every polynomial of total degree at most three in two real variables, so any counterexample has degree at least four, mixed-sign rotational support, and nonlinear dependence on both circular coordinates. The next positive target is a degree-uniform null-cone theorem separating radial factorial coefficients from zero-sum weight combinatorics. Broad searches in dimensions n>=3 are archived because the five-term explicit witness settles all of them.",
+      "canonical_source": "extended-geometry/GMC2_RESEARCH_PROGRAM.md",
       "dependencies": [
         "GL1",
-        "G2F",
-        "G2C",
-        "G2D",
-        "G2E",
         "G2N",
-        "WG1",
-        "WG2",
-        "WG3"
+        "G2Q",
+        "G3X"
       ],
       "checker": null,
       "proof_type": "not-applicable",
@@ -5248,7 +5316,7 @@
       "software_lock": [],
       "supersedes": [],
       "replaced_by": [],
-      "priority": "parked"
+      "priority": "primary"
     }
   ]
 }

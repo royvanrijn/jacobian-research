@@ -13,6 +13,7 @@ SYSTEM_PYTHON ?= python3
 	verify-ritt-2-complex verify-hessian-synchronization \
 	verify-common-right-factor-synchronization \
 	verify-degree42-hessian-normal-jets \
+	verify-degree42-conormal-rees-synchronization \
 	verify-degree30-hessian-pairs refresh-degree30-hessian-pairs \
 	verify-contact-r6 verify-contact-branch-schema verify-contact-r7-asymptotic \
 	verify-parameter-dusart-frontier verify-parameter-sharp-dusart-frontier \
@@ -35,6 +36,7 @@ verify-plane-jc:
 	$(SYSTEM_PYTHON) plane-jc/cas/frontier_125_150.py
 	$(PYTHON) plane-jc/cas/boundary_lattice_prefilter.py
 	$(PYTHON) plane-jc/cas/test_intrinsic_a2_boundary.py
+	$(PYTHON) plane-jc/cas/test_plane_boundary_exclusion.py
 	$(PYTHON) plane-jc/cas/test_log_boundary_compiler.py
 	$(PYTHON) plane-jc/cas/test_poisson_square_rigidity.py
 	$(PYTHON) plane-jc/cas/test_poisson_square_filtered_modules.py
@@ -84,6 +86,9 @@ verify-common-right-factor-synchronization:
 
 verify-degree42-hessian-normal-jets:
 	$(PYTHON) scripts/verify_degree42_transported_27_normal_jets.py
+
+verify-degree42-conormal-rees-synchronization:
+	$(PYTHON) scripts/verify_degree42_conormal_rees_synchronization.py
 
 verify-degree30-hessian-pairs:
 	$(PYTHON) scripts/verify_cubic_remainder_synchronization.py
@@ -277,6 +282,7 @@ verify-two-real-gmc:
 	$(PYTHON) scripts/verify_two_real_gmc_remaining_four_weight.py
 	$(PYTHON) scripts/verify_two_real_gmc_five_weight_frontier.py
 	$(PYTHON) scripts/verify_cubic_gaussian_null_cone_closure.py
+	$(PYTHON) scripts/verify_two_real_gmc_three_weight_quartic.py
 
 verify-counterexample-scoreboard: verify-two-real-gmc
 	$(PYTHON) scripts/verify_minimal_counterexample_scoreboard.py

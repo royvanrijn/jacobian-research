@@ -83,7 +83,8 @@ partition.  The
 radial and generic simple-resonance inertia.  The
 [recursive resonance atlas](RECURSIVE_RESONANCE_ATLAS.md) supplies all
 higher-codimension flag-divisor coordinates, contraction maps, and
-simultaneous characters, completing the explicit corrected H1 stack atlas.
+simultaneous characters; its selected-factor/log-étale comparison supplies
+the global coverage and descent required for `H1-STACK`.
 
 The exact checker is
 [`scripts/verify_branch_scale_fan.py`](../scripts/verify_branch_scale_fan.py),
@@ -1127,12 +1128,13 @@ Monodromy centralizers compute their generic inertia, and the recursive
 resonance theorem supplies their higher-codimension algebraic flag-divisor
 placement, descent, and simultaneous characters.
 
-## 8. Consequences for H1/H2
+## 8. Consequences for H1-COARSE, H1-STACK, and H2
 
 The labelled coarse and stack target/source comparisons are complete in the
-degree-six `(2,2,2)` chart.  In general the corrected coarse H1 comparison,
-the explicit normalized polynomial admissible-cover stack, H2, and coarse H3
-are complete.
+degree-six `(2,2,2)` chart.  In general `H1-COARSE`, `H1-STACK`, H2, and
+coarse H3 are complete.  The two H1 claims remain separate because the
+all-degree stack atlas has substantially greater proof obligations than the
+finite-normalization comparison.
 
 The logarithmic comparison object is built as follows.
 

@@ -1,4 +1,11 @@
-# Three-real-variable weighted Gaussian search
+# Three-real-variable weighted Gaussian search (archived)
+
+> **Archive notice.**  This note predates the five-term explicit
+> three-variable witness, which settles GMC negatively in every real Gaussian
+> dimension \(n\geq3\) after adjoining unused coordinates.  Its finite
+> weighted-family exclusions are retained for provenance only; the surviving
+> ansatzes below are not an active research frontier.  See the
+> [current GMC(2) program](../../extended-geometry/GMC2_RESEARCH_PROGRAM.md).
 
 ## 1. Outcome and scope
 
@@ -45,7 +52,7 @@ arbitrary polynomial in `(Z,W,T)`.
 ## 2. Clean-room audit of the Gaussian--Lagrange lemma
 
 The standalone
-[formal Gaussian--Lagrange lemma](FORMAL_GAUSSIAN_LAGRANGE_LEMMA.md) was
+[formal Gaussian--Lagrange lemma](../../extended-geometry/FORMAL_GAUSSIAN_LAGRANGE_LEMMA.md) was
 treated as read-only.  A clean-room pass reconstructed its proof in the
 following order.
 
@@ -219,7 +226,7 @@ support searches are nevertheless decisive when their moment ideal is the
 unit ideal.
 
 The script
-[`search_three_real_weighted_ansatz.py`](../scripts/search_three_real_weighted_ansatz.py)
+[`search_three_real_weighted_ansatz.py`](../tooling/search_three_real_weighted_ansatz.py)
 uses the first nonlinear canonical seed
 
 \[
@@ -256,7 +263,7 @@ all-order construction; it explains why extrapolating the quadratic divisor
 argument would be unsafe.
 
 The separate cubic-Hermite connection search
-[`explore_three_gaussian_cubic_chaos.py`](../scripts/explore_three_gaussian_cubic_chaos.py)
+[`explore_three_gaussian_cubic_chaos.py`](../tooling/explore_three_gaussian_cubic_chaos.py)
 is useful on the more normalized ansatz without an independent zeroth
 Hermite term.  Over `Q`, all genuine-cubic charts with coefficient degree at
 most one give a unit compatibility ideal for `h=1+z^2-z^3`.  Degree two is
@@ -270,17 +277,17 @@ Run:
 ```bash
 .venv/bin/python scripts/verify_formal_gaussian_lagrange.py
 python3 scripts/verify_long_gaussian_moments.py
-.venv/bin/python scripts/search_three_real_weighted_ansatz.py \
+.venv/bin/python archive/tooling/search_three_real_weighted_ansatz.py \
   --z-degree 1 --w-degree 1 --moment-order 5
-.venv/bin/python scripts/search_three_real_weighted_ansatz.py \
+.venv/bin/python archive/tooling/search_three_real_weighted_ansatz.py \
   --seed affine --z-degree 2 --w-degree 0 --moment-order 5 --print-basis
-.venv/bin/python scripts/search_three_real_weighted_ansatz.py \
+.venv/bin/python archive/tooling/search_three_real_weighted_ansatz.py \
   --z-degree 2 --w-degree 1 --moment-order 4
-.venv/bin/python scripts/search_three_real_weighted_ansatz.py \
+.venv/bin/python archive/tooling/search_three_real_weighted_ansatz.py \
   --z-degree 1 --w-degree 0 --t-degrees 1,2,3 --moment-order 6
-.venv/bin/python scripts/explore_three_gaussian_cubic_chaos.py \
+.venv/bin/python archive/tooling/explore_three_gaussian_cubic_chaos.py \
   --degree 1 --chart 0 --prime 0
-.venv/bin/python scripts/explore_three_gaussian_cubic_chaos.py \
+.venv/bin/python archive/tooling/explore_three_gaussian_cubic_chaos.py \
   --degree 1 --chart 1 --prime 0
 ```
 
@@ -291,9 +298,13 @@ elimination.  In parallel, `W`-dependent corrections need a normal form under
 Gaussian linear changes before support-by-support searches can become a
 classification.
 
-At present the answer to the title question is therefore:
+At the time of this search, its internal answer was:
 
 \[
  \boxed{\text{no separated quadratic bridge for any nonlinear seed; the
- unrestricted three-real polynomial problem remains open.}}
+ unrestricted weighted-family ansatz was not closed by these calculations.}}
 \]
+
+That historical search gap is now moot for GMC witness existence in dimension
+three: the five-term explicit witness settles it without using this weighted
+family.

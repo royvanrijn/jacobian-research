@@ -2,10 +2,11 @@
 
 ## Verdict
 
-The proposed statement has a correct toroidal core, but it is false as
-written for arbitrary tame degenerations.  The missing datum is not an
-arbitrary analytic modulus.  It is the **integral contact monoid** of the
-map from the root-cluster chart to the target-screen chart.
+The ambient collision-tree local algebra and the local algebra of the
+repository's corrected selected polynomial graph are now determined.
+The stronger assertion for an arbitrary, unmodified root-parameter
+degeneration is false: there one must also retain the **integral contact
+monoid** of the map from the root-cluster chart to the target-screen chart.
 
 The collision forest and the special-fiber vertex maps determine:
 
@@ -14,13 +15,14 @@ The collision forest and the special-fiber vertex maps determine:
 - the expansion-index profile over every target edge; and
 - the phase matching and inertia of a normalized lift.
 
-They do not, without a primitivity hypothesis, determine the orders with
-which the target smoothing parameters and the successive Rees generators
-vanish in the root parameters.  Those orders determine the normalized
-blowups.  They therefore cannot be discarded from a theorem about the
-completed local ring of the **selected polynomial graph**.
+The forest data do not, without a primitivity hypothesis, determine the
+orders with which the target smoothing parameters and the successive Rees
+generators vanish in the root parameters.  Those orders determine the
+normalized blowups.  They therefore cannot be discarded from a theorem
+about the completed local ring of a graph constructed directly over that
+root chart.
 
-The corrected invariant is
+For such a direct presentation, the corrected invariant is
 
 \[
  \boxed{\text{collision forest}+
@@ -28,6 +30,15 @@ The corrected invariant is
         \text{vertex covers}+
         \text{node-cycle character}.}
 \]
+
+The repository avoids this ambiguity in its corrected graph.  It first
+forms the normalized wonderful target graph \(B\), then takes the reduced
+generic polynomial closure inside the finite admissible-cover pullback over
+\(B\), and finally normalizes.  At a point of this selected closure, the
+standard admissible-cover deformation ring pulled back to
+\(\widehat{\mathcal O}_{B}\) determines the completed local algebra.
+Consequently the contact monoid is the characteristic monoid already
+present on \(B\); it is not reconstructed from collision tables.
 
 Here "expansion indices" means the full multiset
 \((e_{\epsilon,j})_j\) of source-edge indices over every target edge
@@ -85,50 +96,172 @@ primitive root-separation parameters, this counterexample is excluded.
 Then the contact monoid may be reconstructible from the forest and the
 coefficientwise initial-form filtration, but that reconstruction is a
 lemma that must be stated and proved; it is not a consequence of the
-special-fiber initial maps alone.
+special-fiber initial maps alone.  This is Route B of Section 6, not an
+obstruction to the corrected normalized-graph construction.
 
-## 2. The exact ambient admissible-cover ring
+## 2. Collision-tree local-algebra theorem
 
-At one target node with source-node indices \(e_1,\ldots,e_r\), the
-Harris--Mumford completed factor is
+The finite collision tables are instances of one edgewise
+complete-intersection calculation.
+
+Let \(\Gamma_{\rm tgt}\) be a stable target tree and, for every target edge
+\(\epsilon\), let
 
 \[
- A_{\mathbf e}
+ \mathbf e_\epsilon=(e_{\epsilon,1},\ldots,e_{\epsilon,r_\epsilon})
+\]
+
+be the expansion indices of the source edges above \(\epsilon\).  Assume
+that the residue characteristic is prime to every expansion index.  Fix the
+vertex covers and their marked branch positions, and suppose that they are
+etale points of their fully marked Hurwitz spaces.  Write \(z_1,\ldots,z_m\)
+for the resulting unobstructed vertex-deformation parameters.
+
+The completed ambient admissible-cover algebra is
+
+\[
+ A_\Gamma =
+ k[[z_1,\ldots,z_m,\,
+        (q_\epsilon)_\epsilon,\,
+        (s_{\epsilon,j})_{\epsilon,j}]]
+ \big/
+ \left(s_{\epsilon,j}^{e_{\epsilon,j}}-q_\epsilon\right)_{\epsilon,j}.
+                                                               \tag{2.1}
+\]
+
+For each edge put
+
+\[
+ L_\epsilon=\operatorname{lcm}_j(e_{\epsilon,j}),\qquad
+ n_{\epsilon,j}=L_\epsilon/e_{\epsilon,j},\qquad
+ \Phi_\epsilon=
+ \left(\prod_j\mu_{e_{\epsilon,j}}\right)/\mu_{L_\epsilon}.
+                                                               \tag{2.2}
+\]
+
+> **Collision-tree local-algebra theorem.**
+> After a finite separable residue-field extension containing the required
+> roots of unity:
+>
+> 1. \(A_\Gamma\) is a reduced finite flat complete intersection over
+>    \(B=k[[z_1,\ldots,z_m,(q_\epsilon)_\epsilon]]\).
+> 2. Its normalization is
+>    \[
+>      \widetilde A_\Gamma
+>      \cong
+>      \prod_{\beta\in\prod_\epsilon\Phi_\epsilon}
+>      k[[z_1,\ldots,z_m,(t_\epsilon)_\epsilon]],               \tag{2.3}
+>    \]
+>    where on the factor labelled by
+>    \(\beta=(\beta_\epsilon)_\epsilon\),
+>    \[
+>      q_\epsilon=t_\epsilon^{L_\epsilon},\qquad
+>      s_{\epsilon,j}
+>      =\omega_{\beta,\epsilon,j}
+>       t_\epsilon^{n_{\epsilon,j}}.                            \tag{2.4}
+>    \]
+> 3. The number of normalization branches is
+>    \[
+>      M_\Gamma
+>      =\prod_\epsilon
+>       \frac{\prod_j e_{\epsilon,j}}{L_\epsilon}.              \tag{2.5}
+>    \]
+> 4. On every normalization branch,
+>    \[
+>    \begin{aligned}
+>      \operatorname{Fitt}_0\Omega_{A_\Gamma/B}\,
+>        \widetilde A_{\Gamma,\beta}
+>        &=
+>        \left(
+>          \prod_\epsilon
+>          t_\epsilon^{
+>            \sum_j(e_{\epsilon,j}-1)n_{\epsilon,j}}
+>        \right),\\
+>      \operatorname{Fitt}_0
+>        \Omega_{\widetilde A_{\Gamma,\beta}/B}
+>        &=
+>        \left(
+>          \prod_\epsilon t_\epsilon^{L_\epsilon-1}
+>        \right),\\
+>      \mathfrak c_\Gamma\widetilde A_{\Gamma,\beta}
+>        &=
+>        \left(
+>          \prod_\epsilon t_\epsilon^{c_\epsilon}
+>        \right),
+>    \end{aligned}                                               \tag{2.6}
+>    \]
+>    with
+>    \[
+>      c_\epsilon
+>      =\sum_j(e_{\epsilon,j}-1)n_{\epsilon,j}
+>       -(L_\epsilon-1)
+>      =(r_\epsilon-1)L_\epsilon
+>       -\sum_jn_{\epsilon,j}+1.                                \tag{2.7}
+>    \]
+> 5. The dual tree and vertex covers enter the algebra through the edge
+>    profiles and the smooth variables.  The node-cycle character does not
+>    add equations to (2.1): it selects the subgroup of the vertex
+>    centralizer stabilizing a branch \(\beta\), hence the stack quotient
+>    and its coarse invariant ring.
+
+### Proof
+
+For one edge, eliminate any variables of index one.  The remaining ring is
+finite free over \(k[[q_\epsilon]]\), with basis given by the monomials
+\(\prod_j s_{\epsilon,j}^{a_j}\), \(0\leq a_j<e_{\epsilon,j}\).
+It is a complete intersection.  Tameness makes the polynomials
+\(X^{e_{\epsilon,j}}-q_\epsilon\) separable over \(k((q_\epsilon))\);
+hence the ring is generically reduced and, being finite flat over the
+reduced base, is reduced.
+
+Every common Puiseux parametrization has the form (2.4).  Its choices of
+roots of unity are \(\prod_j\mu_{e_{\epsilon,j}}\), while changing
+\(t_\epsilon\) by an \(L_\epsilon\)-th root of unity acts diagonally.
+Thus the branches are indexed by \(\Phi_\epsilon\), of cardinality
+\(\prod_j e_{\epsilon,j}/L_\epsilon\).  The integral closure of each branch
+is \(k[[t_\epsilon]]\): the gcd of the integers
+\(L_\epsilon,n_{\epsilon,1},\ldots,n_{\epsilon,r_\epsilon}\) is one.
+
+Distinct target nodes have disjoint smoothing variables.  The global ring
+(2.1) is their completed tensor product, followed by the formally smooth
+factor \(k[[z_1,\ldots,z_m]]\).  Normalization branches and their
+parametrizations therefore take Cartesian products.  This proves
+(2.3)--(2.5).
+
+The relative Jacobian matrix for \(A_\Gamma/B\) is diagonal by edge and
+source node, with diagonal entries
+\(e_{\epsilon,j}s_{\epsilon,j}^{e_{\epsilon,j}-1}\).
+The integers \(e_{\epsilon,j}\) are units, so its determinant gives the
+first line of (2.6).  On a normalized branch, the map to the smoothing base
+is the product of the maps \(q_\epsilon=t_\epsilon^{L_\epsilon}\); its
+Jacobian gives the second line.
+
+Finally \(A_\Gamma/B\) is a finite flat Gorenstein complete intersection.
+Complete-intersection duality compares its Kähler different with the
+different of its normalization:
+
+\[
+ \mathfrak D_{A_\Gamma/B}\widetilde A_\Gamma
  =
- k[[q,s_1,\ldots,s_r]]/
- (s_1^{e_1}-q,\ldots,s_r^{e_r}-q).                 \tag{2.1}
+ \mathfrak c_\Gamma\,
+ \mathfrak D_{\widetilde A_\Gamma/B}.             \tag{2.8}
 \]
 
-Put \(L=\operatorname{lcm}(e_1,\ldots,e_r)\).  After adjoining the required
-roots of unity, a normalization branch has
+Subtracting the normalized different exponent \(L_\epsilon-1\) from the
+raw exponent on every independent edge gives (2.7), and multiplying the
+edge contributions gives the conductor in (2.6).  The last assertion is
+the definition of the stabilizer of a chosen normalization factor under
+the vertex centralizer. \(\square\)
 
-\[
- q=t^L,\qquad s_j=\omega_jt^{L/e_j}.               \tag{2.2}
-\]
+Thus every Maxwell, caustic, radial, or mixed table is a substitution into
+(2.2)--(2.7), not a separate case proof.  Tree topology matters for matching
+the vertex automorphisms and node cycles, but the ambient local algebra
+factorizes over its edges.
 
-The branches form
-
-\[
- \left(\prod_j\mu_{e_j}\right)/\mu_L
-\]
-
-and hence have number
-
-\[
- M_{\mathbf e}=\frac{\prod_j e_j}{L}.              \tag{2.3}
-\]
-
-For several target nodes these factors take completed tensor products.
-After choosing one phase branch, the normalized ambient admissible-cover
-ring is a power-series ring in one \(t_\epsilon\) per target edge, together
-with the unobstructed vertex-deformation parameters.  This is the precise
-sense in which the ambient ACV normalization is combinatorial.  The
-matching-permutation character determines the stabilizer of the stack
-chart, not additional equations in its smooth atlas.
-
-This ambient statement does not prove the corresponding assertion for a
-selected graph cut out inside a root-parameter space.  The latter also
-remembers how its parameters map to the \(q_\epsilon\)'s.
+This theorem does **not** prove the corresponding assertion for a selected
+graph cut out inside a root-parameter space.  The latter also remembers how
+its primitive parameters map to the \(q_\epsilon\)'s.  That additional
+integral contact datum is the subject of the next theorem.
 
 ## 3. Saturated contact-monoid theorem
 
@@ -204,17 +337,33 @@ Formula (3.2) specializes correctly in both directions:
 
 - for the ambient ACV space, \(P_x=T\), and each selected normalized branch
   is smooth;
-- for the polynomial graph, \(P_x\) is the monoid supplied by the normalized
-  multi-Rees construction, so weighted blowups and resonance subdivisions
-  remain visible.
+- for a graph presented directly over a root chart, \(P_x\) is the monoid
+  supplied by the normalized multi-Rees construction, so weighted blowups
+  and resonance subdivisions remain visible.
 
-The repository's recursive screen formulas give the generators expected in
-\(P_x\), and initial-form transitivity gives functoriality under contraction.
-The remaining repository-specific problem is now exactly hypothesis 2:
-prove simultaneous monomialization of all coefficientwise Rees-divisibility
-ideals in primitive root parameters.  Equivalently, show that after removing
-smooth vertex parameters the divisibility algebra has no non-toric formal
-relations.
+> **Corrected-graph corollary.**
+> For the repository's selected graph constructed by normalized closure
+> over the normal wonderful target graph \(B\), the conclusion (3.2) holds
+> with \(P_x\) equal to the characteristic monoid of \(B\).  No
+> coefficient-divisibility monomialization hypothesis is required.
+
+Indeed, pull the Harris--Mumford algebra back to
+\(\widehat{\mathcal O}_{B,x}\).  Selecting the factors met by the generic
+polynomial section and normalizing gives exactly (3.1)--(3.2).
+Normalization commutes with etale localization and with completion for
+these excellent finite algebras.  The
+[finite-normalization theorem](SOURCE_GRAPH_FINITE_NORMALIZATION.md)
+constructs the selected closure, while the
+[recursive resonance atlas](RECURSIVE_RESONANCE_ATLAS.md) records the same
+local node pushout.  Hence simultaneous monomialization of
+coefficient-divisibility ideals is not needed to determine these completed
+local rings. \(\square\)
+
+The recursive screen formulas still give valuable explicit coordinates.
+On the already constructed normalized chart, regularity of the universal
+admissible cover implies coefficientwise divisibility; normalized initial
+forms and their contraction identities are consequences of the chart,
+rather than equations used to define it.
 
 ## 4. The four smallest tests
 
@@ -401,34 +550,43 @@ so its nilpotency index is \(\mu\).  More general nilpotency indices require
 the quotient ideal defining the contraction.  They do not follow from the
 normalized local ring without that extra morphism.
 
-## 6. Proof program
+## 6. Two construction routes and present status
 
-The induction on nested-set depth can now be made precise.
+There are two logically different routes.
 
-1. Use tame Weierstrass preparation to split the source points and identify
-   the smooth vertex-deformation factors.
-2. Define \(P_x\) as the value monoid of the multi-Rees algebra of all
-   dominant transforms of branch-diagonal and coefficient-divisibility
-   ideals.
-3. Prove a **simultaneous monomial-contact lemma**: after removing smooth
-   parameters, all transformed coefficientwise-divisibility ideals are
-   generated by monomials times units.  The monomial-contact theorem then
-   supplies normalization by saturation.
-4. Form the node pushout (3.1), separate its torsion characters, and
-   saturate.  This recovers the Harris--Mumford/ACV branch count.
-5. Use initial-form transitivity to show that the monoids and their phase
-   branches commute with contraction of an intermediate screen.
-6. Apply the full vertex-centralizer character to recover inertia and coarse
-   invariant rings.
-7. Compute node conductors by (5.2), general Rees conductors by (5.1),
-   Fitting ideals from the monoid/Jacobian presentation, and nilpotency only
-   after adjoining the specified contraction algebra.
+### Route A: corrected normalized graph
 
-The first likely genuine failure of this corrected theorem is no longer a
-cross-ratio omitted from radial data: the full vertex initial maps already
-retain that cross-ratio.  It would be a failure of simultaneous
-monomialization, namely two selected families with the same contact monoid
-and the same vertex covers but different non-toric formal relations.
+This route is complete for local algebras.
+
+1. Construct the normal wonderful target graph \(B\).
+2. Pull the finite admissible-cover stack back to \(B\).
+3. Take the reduced closure of the generic polynomial section and normalize.
+4. Etale locally, use the standard Harris--Mumford deformation algebra.
+5. Form the node pushout (3.1), select its phase factors, and saturate.
+6. Apply the simultaneous vertex-centralizer character to recover inertia.
+7. Compute conductors and differents from (2.6)--(2.7), and treat contraction
+   nilpotency only after specifying its quotient algebra.
+
+This proves the collision-tree local-algebra theorem at every point of the
+corrected selected graph.  It does not by itself provide one global explicit
+coordinate atlas or prove effective descent of independently written screen
+charts; those are separate `H1-STACK` tasks.
+
+### Route B: direct equations in primitive root parameters
+
+To recover the same normalization without first using the finite
+admissible-cover pullback, one would:
+
+1. define \(P_x\) as the value monoid of the multi-Rees algebra of all
+   transformed branch-diagonal and coefficient-divisibility ideals;
+2. prove simultaneous monomial contact after removing smooth parameters;
+3. apply the saturated contact-monoid theorem.
+
+This remains an optional presentation problem.  Its failure would mean that
+two families with the same proposed contact monoid and vertex covers retain
+different non-toric formal relations.  Such a failure would obstruct that
+direct presentation, but not the completed-local-ring classification of
+Route A.
 
 ## 7. Relation to the literature
 
@@ -453,17 +611,19 @@ monoid, rather than the real cone or forest alone, is the correct invariant:
 normalization replaces a monoid by its saturation, while the conductor
 remembers the inclusion of the original monoid.
 
-The resulting breakthrough is therefore a sharpened target:
+The conceptual conclusion is therefore:
 
 \[
-\boxed{\text{prove simultaneous monomial contact for the universal
-primitive root chart}.}
+\boxed{\text{collision tree}+\text{wonderful contact monoid}
+       +\text{vertex cover}+\text{node-cycle character}
+       \Longrightarrow\text{completed local algebra}.}
 \]
 
-That lemma would turn the repository's recursive atlas from a set of
-compatible formulas into the desired completed-local-ring classification.
-If it fails, its failure ideal is the precise "resonance decoration" that
-must be added.
+Simultaneous monomial contact for the universal primitive root chart would
+give a shorter direct equation-level presentation.  It is no longer needed
+for the completed-local-ring classification itself.  If it fails, its
+failure ideal is the extra decoration required only by that direct
+presentation.
 
 ## Reproduction
 

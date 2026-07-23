@@ -434,6 +434,60 @@ meaning omits primitive residue degree or permits further affine primes over
 one-place curve together with enough extra generic sheets to satisfy
 \(d\ge2e\).
 
+### 6.1 Typed finite-normalization gate
+
+The executable audit now separates source-resolution data from the
+finite-normalization hypotheses.  A
+`OneDicriticalNormalizationCertificate` records
+
+\[
+(d,e,f,a;\ \text{punctures},\text{one normalization boundary},
+  \text{log purity},\text{exhaustiveness},\text{target transfer}),
+\]
+
+and first checks the generic degree identity
+
+\[
+d=ef+a.
+\]
+
+It refuses to apply the theorem when a source dicritical has not been
+transported through the resolved target graph to the finite Zariski--Main
+normalization over the original affine target.  This is intentional: a
+primitive source pole vector certifies neither that the normalization
+boundary has one prime nor the affine contribution \(a\).
+
+Once the target transfer, exhaustive pullback, one-place theorem, and log
+purity are certified, the gate applies Riemann--Hurwitz.  Two punctures are
+excluded; one puncture forces \(f=1\).  The image is then either normal, in
+which case the affine-line component theorem excludes it, or nonnormal, in
+which case a conductor collision requires
+
+\[
+2e\le d=e+a.
+\]
+
+Thus \(a<e\) is the exact sheet-deficient kill condition.
+
+The source-selected `(72,108)` packages are included only as typed previews.
+Their ledgers are
+
+\[
+29=3+26\quad\text{and}\quad29=5+24.
+\]
+
+The audit reports the source records as incomplete because the target
+transfer is not yet certified.  Even if that transfer is supplied for the
+locally log-pure Case 1 row, its affine contribution satisfies \(a\ge e\),
+so it survives the conductor budget.  Case 2 additionally has a residual
+special-point ramification factor and fails log purity.
+
+Run the combined regression with
+
+```bash
+.venv/bin/python plane-jc/cas/test_plane_boundary_exclusion.py
+```
+
 ## 7. Sources and status
 
 - Nguyen Van Chau,

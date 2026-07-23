@@ -505,3 +505,49 @@ remove all three Case-2 cover rows.  Only the three Case-1 rows remain.  No
 chain-to-boundary geometry remains missing.
 For `(75,125)`, even the
 exhaustive Laurent branches and their local scales have not yet been derived.
+
+## 6. From compiled experiments to a finite theorem
+
+The conceptual algebraization step is now isolated in the
+[finite valuation/Hilbert-basis criterion](../cancellation/FINITE_VALUATION_ALGEBRAIZATION.md).
+Once a reconstruction ansatz is fixed, normality says that it is polynomial
+exactly when its orders at every prime in a complete polar ledger are
+nonnegative.  A fixed pole bound then leaves only finitely many negative
+principal-part residues.  Equal-order terms are tested together in the
+appropriate residue field, so cancellation is part of the criterion rather
+than an exception to it.
+
+For expanded rational formulas, completeness itself is finite: declare a
+common denominator for every reconstructed coordinate, list the height-one
+components of those denominator divisors, and resolve their support.  The
+strict transforms give the necessary and sufficient source valuations;
+exceptional divisors additionally test regularity on the chosen resolved
+chart.  No Hilbert basis is needed at this fixed-formula level.
+
+For one symbolic certificate covering an entire ansatz, the finite
+valuation list must be supplemented by:
+
+1. a Hilbert basis in the saturated case, or a presentation of the actual
+   affine value semigroup and the holes relevant to the bounded ansatz;
+2. a finite Khovanskii/SAGBI presentation of the associated graded algebra
+   and reconstruction module;
+3. saturation of the homogenized relation module, proving Rees strictness.
+
+Under those hypotheses, the compiler's finite residue table is a proof:
+the associated graded presentation detects every negative initial form,
+strictness lifts each graded cancellation, and the complete polar ledger
+turns the resulting valuation inequalities into global regularity.
+
+The present executable already supplies the finite divisorial geometry and
+the valuation/pole data for a supplied chart.  It does **not** yet certify
+that every possible polar divisor has been captured for an arbitrary
+reconstruction ansatz, nor does it compute a Khovanskii basis or Rees
+saturation.  Accordingly, it is theorem-producing only when those inputs
+come from the accompanying normal-form and algebraization proofs; SNC
+boundary data alone do not imply them.
+
+This closes the conceptual boundary-compiler problem.  The remaining
+extension is implementation work: add declared reconstruction denominators,
+residue maps, semigroup presentations, and Rees-saturation witnesses to the
+compiler IR.  It is not needed for the existing fixed-family proofs, whose
+expanded formulas already satisfy the finite operational criterion.

@@ -508,6 +508,129 @@ point.  If that point lay in the Keller open, the fiber local algebra would
 be reduced of length one because `F` is étale.  Hence it lies in the
 boundary, and there is no other fiber point in `U`, proving (1.17).  QED
 
+### Proposition 1.8a -- the first multiplication symbol is a ternary cubic
+
+Retain the completed reduced-defect model
+
+\[
+ R=k[[x,y,z]],\qquad
+ M=\operatorname{coker}\left(
+ R\mathop{\longrightarrow}^{(z,-y,x)^{\mathsf T}}R^3
+ \right).
+\tag{1.16a}
+\]
+
+A nonflat triple-cover multiplication with trace module `M` is encoded by
+the generalized Miranda--Tan tensor
+
+\[
+ \phi:\operatorname{Sym}^3(M)\longrightarrow\det(M)\simeq R.
+\tag{1.16b}
+\]
+
+Choose the displayed generators `e_1,e_2,e_3` of `M` and write
+
+\[
+ c_{ijk}=\phi(e_i,e_j,e_k).
+\]
+
+Then every `c_ijk` lies in `m^3`.  The degree-three initial symbols form a
+ten-dimensional vector space.  More precisely, put
+
+\[
+ r=(z,-y,x)\in R_1\otimes k^3.
+\]
+
+After choosing a volume form on `k^3`, every degree-three symbol is uniquely
+of the form
+
+\[
+ \boxed{
+ \operatorname{in}_3(\phi)(u,v,w)
+ =
+ h(r\times u,r\times v,r\times w)
+ }
+\tag{1.16c}
+\]
+
+for a ternary cubic `h`, where the right side means the symmetric
+trilinear polarization of `h`.  Thus, up to the harmless determinant twist,
+the first multiplication-symbol space is
+
+\[
+ \operatorname{Sym}^3(k^3)^\vee.
+\tag{1.16d}
+\]
+
+#### Proof
+
+The relation in (1.16a) makes well-definedness of `phi` equivalent to
+
+\[
+ zc_{1jk}-yc_{2jk}+xc_{3jk}=0
+\tag{1.16e}
+\]
+
+for every symmetric pair `(j,k)`.  Taking homogeneous degree `d` symbols,
+the solution space is the kernel of the natural contraction map
+
+\[
+ K_d=
+ \ker\left[
+ \operatorname{Sym}^d(V^\vee)\otimes\operatorname{Sym}^3(V^\vee)
+ \longrightarrow
+ \operatorname{Sym}^{d+1}(V^\vee)
+ \otimes\operatorname{Sym}^2(V^\vee)
+ \right],
+\tag{1.16f}
+\]
+
+where `V=k^3`.  The Pieri decomposition shows that the displayed map has
+zero kernel for `d=0,1,2`.  For `d>=3`, its kernel is the Schur module
+
+\[
+ K_d\simeq\mathbb S_{(d,3)}(V^\vee).
+\tag{1.16g}
+\]
+
+In particular,
+
+\[
+ \dim K_3=\dim\mathbb S_{(3,3)}(V^\vee)=10.
+\]
+
+For every ternary cubic `h`, formula (1.16c) annihilates `r` in each
+argument and therefore satisfies (1.16e).  Polarizing the ten ternary
+monomials gives ten linearly independent elements of `K_3`.  Since `K_3`
+has dimension ten, these exhaust it and prove (1.16c)--(1.16d).  QED
+
+This removes a large false search space.  At a reduced defect, one should
+not enumerate arbitrary bilinear multiplication tables and then impose
+associativity: the generalized triple-cover correspondence already packages
+associativity, and its first nonzero local datum is just a ternary cubic.
+The initial counterexample search therefore begins with the classical
+`GL_3` strata
+
+\[
+ \text{smooth},\quad
+ \text{nodal},\quad
+ \text{cuspidal},\quad
+ \text{reducible}
+\tag{1.16h}
+\]
+
+of plane cubics, followed by higher-order lifts of (1.16c).
+
+There is also a geometric warning.  Ordinary trace and discriminant
+identities are built into (1.16b), and the tame different/log-crepancy
+ledger is codimension-one automatic.  They cannot eliminate the Koszul
+defect.  The genuinely Keller-specific gates begin only after (1.16c):
+rationality of the cubic function field, the colored
+`(2,1)+(1,1)` boundary decomposition, and an open complement isomorphic to
+`A^3`.  If such an `A^3` complement exists and the finite map is étale on
+it, its Jacobian is automatically a nonzero constant because every unit of
+`k[A^3]` is constant.
+
 ### Corollary 1.9 -- reduced point-flatness becomes sheet separation
 
 Let `D` be the target divisor of the critical boundary prime and let
@@ -1558,7 +1681,8 @@ External structural inputs:
 - the cubic-algebra/binary-cubic equivalence over an arbitrary base:
   Wood, *Parametrizing quartic algebras over an arbitrary base*,
   [Theorem 2.1](https://msp.org/ant/2011/5-8/ant-v5-n8-p05-p.pdf);
-- nonflat triple covers with prescribed reflexive trace-free sheaf:
+- nonflat triple covers with prescribed reflexive trace-free sheaf,
+  including the generalized cubic tensor used in Proposition 1.8a:
   Tan, *Triple covers on smooth algebraic varieties*,
   [Theorem 7.6](https://math.ecnu.edu.cn/~sltan/Triple-Cover.pdf);
 - the canonical bidual characterization of the `S_2` condition for modules:

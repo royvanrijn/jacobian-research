@@ -190,6 +190,163 @@ nonzero_minors = {minor for minor in minors if minor != 0}
 assert {x**2, -y**2, z**2}.issubset(nonzero_minors)
 assert all(sp.Poly(minor, x, y, z).total_degree() == 2 for minor in nonzero_minors)
 
+# A nonflat triple-cover multiplication on the Koszul module is encoded by
+# a symmetric cubic tensor phi: Sym^3(M) -> det(M)=R.  If
+#
+#   c_ijk=phi(e_i,e_j,e_k),
+#
+# well-definedness against the relation r=(z,-y,x) says
+#
+#   z*c_1jk-y*c_2jk+x*c_3jk=0
+#
+# for every symmetric pair (j,k).  Compute the homogeneous solution spaces
+# exactly.  There are no symbols in orders zero, one, or two; the first
+# symbol space occurs in order three and has dimension ten.
+cubic_index_triples = list(
+    itertools.combinations_with_replacement(range(3), 3)
+)
+cubic_index_pairs = list(
+    itertools.combinations_with_replacement(range(3), 2)
+)
+
+
+def homogeneous_exponents(degree: int) -> list[tuple[int, int, int]]:
+    """Exponent triples for homogeneous polynomials in x,y,z."""
+
+    return [
+        (x_degree, y_degree, degree - x_degree - y_degree)
+        for x_degree in range(degree + 1)
+        for y_degree in range(degree - x_degree + 1)
+    ]
+
+
+def koszul_cubic_constraint_matrix(degree: int) -> sp.MutableSparseMatrix:
+    """Matrix of the relation constraints on degree-degree cubic tensors."""
+
+    input_exponents = homogeneous_exponents(degree)
+    output_exponents = homogeneous_exponents(degree + 1)
+    columns = {
+        (triple, exponent): index
+        for index, (triple, exponent) in enumerate(
+            itertools.product(cubic_index_triples, input_exponents)
+        )
+    }
+    rows = {
+        (pair, exponent): index
+        for index, (pair, exponent) in enumerate(
+            itertools.product(cubic_index_pairs, output_exponents)
+        )
+    }
+    matrix = sp.MutableSparseMatrix(len(rows), len(columns), {})
+    relation_terms = (
+        ((0, 0, 1), 1),
+        ((0, 1, 0), -1),
+        ((1, 0, 0), 1),
+    )
+    for pair in cubic_index_pairs:
+        second, third = pair
+        for first, (relation_exponent, sign) in enumerate(relation_terms):
+            triple = tuple(sorted((first, second, third)))
+            for exponent in input_exponents:
+                output_exponent = tuple(
+                    exponent[index] + relation_exponent[index]
+                    for index in range(3)
+                )
+                matrix[
+                    rows[(pair, output_exponent)],
+                    columns[(triple, exponent)],
+                ] += sign
+    return matrix
+
+
+koszul_cubic_symbol_dimensions = []
+for symbol_degree in range(4):
+    constraint_matrix = koszul_cubic_constraint_matrix(symbol_degree)
+    koszul_cubic_symbol_dimensions.append(
+        constraint_matrix.cols - constraint_matrix.rank()
+    )
+assert koszul_cubic_symbol_dimensions == [0, 0, 0, 10]
+
+# A chosen volume form identifies the order-three kernel explicitly with
+# ternary cubics.  For r=(z,-y,x), send a ternary cubic h to
+#
+#   phi_h(u,v,w)=h(r cross u, r cross v, r cross w),
+#
+# where the right side denotes the symmetric trilinear polarization of h.
+# The ten ternary monomials give ten independent constraint solutions, so
+# they exhaust the order-three symbol space.
+ternary_variables = sp.symbols("ternary_0:3")
+polarization_variables = sp.symbols("polarization_0:3")
+standard_basis = [sp.eye(3).col(index) for index in range(3)]
+cross_product_columns = [
+    relation.cross(vector)
+    for vector in standard_basis
+]
+degree_three_exponents = homogeneous_exponents(3)
+degree_three_monomials = [
+    sp.prod(
+        ternary_variables[index] ** exponent[index]
+        for index in range(3)
+    )
+    for exponent in degree_three_exponents
+]
+
+
+def polarized_ternary_value(
+    polynomial: sp.Expr,
+    first: sp.Matrix,
+    second: sp.Matrix,
+    third: sp.Matrix,
+) -> sp.Expr:
+    """Symmetric trilinear polarization of a ternary cubic."""
+
+    substitution = {
+        ternary_variables[index]: (
+            polarization_variables[0] * first[index]
+            + polarization_variables[1] * second[index]
+            + polarization_variables[2] * third[index]
+        )
+        for index in range(3)
+    }
+    expanded = sp.Poly(
+        sp.expand(polynomial.subs(substitution)),
+        *polarization_variables,
+    )
+    return sp.expand(
+        expanded.coeff_monomial(sp.prod(polarization_variables)) / 6
+    )
+
+
+degree_three_columns = {
+    (triple, exponent): index
+    for index, (triple, exponent) in enumerate(
+        itertools.product(cubic_index_triples, degree_three_exponents)
+    )
+}
+ternary_symbol_vectors = []
+for ternary_monomial in degree_three_monomials:
+    vector = sp.zeros(len(degree_three_columns), 1)
+    for triple in cubic_index_triples:
+        coefficient = polarized_ternary_value(
+            ternary_monomial,
+            *(cross_product_columns[index] for index in triple),
+        )
+        coefficient_polynomial = sp.Poly(coefficient, x, y, z)
+        for exponent in degree_three_exponents:
+            monomial = x ** exponent[0] * y ** exponent[1] * z ** exponent[2]
+            vector[degree_three_columns[(triple, exponent)]] = (
+                coefficient_polynomial.coeff_monomial(monomial)
+            )
+    ternary_symbol_vectors.append(vector)
+
+ternary_symbol_matrix = sp.Matrix.hstack(*ternary_symbol_vectors)
+degree_three_constraint_matrix = koszul_cubic_constraint_matrix(3)
+assert degree_three_constraint_matrix * ternary_symbol_matrix == sp.zeros(
+    degree_three_constraint_matrix.rows,
+    ternary_symbol_matrix.cols,
+)
+assert ternary_symbol_matrix.rank() == 10
+
 # Double-saturation calibration.  Put C=A/(x) and take the rank-one
 # codimension-one-full submodule T=(y,z)C.  Its S2 hull is C and C/T=k at
 # the origin.  As an A-module, T has the exact length-two presentation
@@ -435,6 +592,7 @@ print("PASS: trace splitting and binary-cubic discriminant are exact")
 print("PASS: the reflexive rank-two warning is supported only in codimension three")
 print("PASS: its rank-three unit extension has excess special-fiber length four")
 print("PASS: the model defect has Fitt_3=(x,y,z)")
+print("PASS: the first Koszul cubic-cover symbol is a ternary cubic in order three")
 print("PASS: the S2-hull quotient and Ext^2 defect have the same length")
 print("PASS: after S2 saturation the conormal defect is exactly point torsion")
 print("PASS: the s=2 determinantal rung is origin-primary with fiber length five")

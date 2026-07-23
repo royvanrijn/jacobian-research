@@ -396,33 +396,36 @@ Likewise, JC(3) exposes a concrete marked-point mechanism.  The current
 dimension barrier excludes that exact mechanism in dimension two, not
 arbitrary JC(2) counterexamples.
 
-## Forward research trajectories
+## Research disposition
 
-1. **Systematic consequence mining.**  Build a directed graph of conjectures
-   known to imply JC and record which fixed-dimensional failures follow by
-   contraposition, keeping route bounds separate from direct witnesses.
-2. **Weighted-seed Gaussian families and equivalence.**  The
+Long's five-term three-real witness, followed by adjoining unused Gaussian
+coordinates, closes the witness-existence question in every dimension
+`n>=3`.  The repository therefore archives broad searches in those dimensions.
+The following high-dimensional material is retained as completed logical
+transport, not as an optimization queue.
+
+1. **Consequence transport.**  The directed graph of conjectures implying JC
+   and the fixed-dimensional failures obtained by contraposition distinguish
+   route bounds from direct witnesses.  They remain useful examples of
+   implication architecture.
+2. **Weighted-seed Gaussian transport.**  The
    [four-real-Gaussian bridge](WEIGHTED_GAUSSIAN_BRIDGE.md) now turns every
    nonconstant normalized seed into an explicit witness family by an exact
    polynomial determinant correction.  Its
    [formal Gaussian--Lagrange lemma](FORMAL_GAUSSIAN_LAGRANGE_LEMMA.md), now
    proved with arbitrary constant terms and a coefficientwise residue change,
-   is the priority target for external specialist review.  Determine when two
-   resulting pairs are equivalent and whether a different correction can
-   descend uniformly to three real variables.  The raw mixed-moment question
-   is now settled internally: for fixed nonzero `lambda`, the `N-3` moments
+   supports the transport.  For fixed nonzero `lambda`, the `N-3` moments
    `M_3,...,M_(N-1)` recover every normalized degree-`N` seed uniformly and
    are minimal by dimension.  If `lambda` varies, `M_3,...,M_N` are the
    optimal `N-2` coordinates and recover both `lambda` and `H`.  Thus the
    bridge gives an explicit algebraic `(N-3)`-dimensional family separated by
    a smallest possible algebraic moment vector.  Long's
    three-real-variable witness remains dimensionally smaller; the family and
-   its finite fingerprints, not smallest dimension, are the point here.  This
-   does not yet imply inequivalence under transformations of Gaussian
-   variables.
-3. **Minimal dimensions.**  Determine why both the simple marked-point
-   architecture and Long's direct GMC architecture begin naturally in
-   dimension three.  Study GMC(2) without treating it as equivalent to JC(2).
+   its finite fingerprints, not witness discovery or dimension minimization,
+   are the point here.
+3. **Sole active Gaussian frontier.**  Work on
+   [GMC(2)](GMC2_RESEARCH_PROGRAM.md) in degree at least four, without treating
+   it as equivalent to JC(2).  No new broad `n>=3` Gaussian search is in scope.
 4. **Symplectic dimension descent and families.**  The foundational map now
    has an intrinsic four-dimensional rank-two completion.  Determine which
    weighted seeds admit analogous pole-free flux corrections, whether their

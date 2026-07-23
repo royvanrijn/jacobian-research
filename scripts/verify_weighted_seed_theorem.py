@@ -40,8 +40,9 @@ def audit_model(name, seed):
     assert sp.Poly(E, w, domain=field).is_irreducible
 
     # Repeated-root normalization: E(r)=E'(r)=0 at
-    # (s,t)=(p(r), r*p(r)-H(r)).  Its coordinate degrees n-1 and n are
-    # coprime, certifying generic birationality of this polynomial parameter.
+    # (s,t)=(p(r), r*p(r)-H(r)).  The coprime coordinate-degree lemma says
+    # that its function-field degree divides both coordinate degrees n-1
+    # and n, and therefore equals one.
     branch_s = p.subs(w, r)
     branch_t = (w * p - H).subs(w, r)
     branch = {s: branch_s, t: branch_t, w: r}

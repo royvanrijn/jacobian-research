@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Search the three-real-Gaussian cubic-Hermite correction exactly.
+"""Archived search for the three-real-Gaussian cubic-Hermite correction.
 
 For
 
@@ -30,6 +30,10 @@ By default all coefficients of the compatibility polynomial are used.  The
 ``--low-coefficients`` option retains only that many lowest-z coefficients;
 this is a search prefilter, not an all-orders certificate unless the full
 coefficient ideal is subsequently checked.
+
+GMC is already false in every dimension n >= 3 by the explicit five-term
+three-real witness.  This program is retained only as historical
+weighted-family reconnaissance; it is not part of the active GMC(2) program.
 
 The current seed is the first nonlinear canonical bridge seed
 h=1+z^2-z^3.  Computations are modular reconnaissance unless ``--prime 0``

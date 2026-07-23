@@ -248,7 +248,15 @@ def transformed_problem() -> tuple[
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--prime", type=int, default=0)
-    parser.add_argument("--order", default="(dp(5),dp(6))")
+    parser.add_argument(
+        "--order",
+        default=None,
+        help=(
+            "Singular monomial order; defaults to the 5-normal | 6-base "
+            "block order, or dp when a generic-base, w0=0, or base-value "
+            "mode leaves only the five normal variables in the ring"
+        ),
+    )
     parser.add_argument(
         "--algorithm",
         choices=("std", "slimgb", "modstd"),
@@ -256,6 +264,38 @@ def main() -> None:
     )
     parser.add_argument("--timeout", type=int, default=900)
     parser.add_argument("--prepare-only", action="store_true")
+    parser.add_argument(
+        "--generic-base",
+        action="store_true",
+        help=(
+            "treat the six base coordinates as transcendental coefficient "
+            "parameters, leaving only the five normal coordinates in the "
+            "polynomial ring"
+        ),
+    )
+    parser.add_argument(
+        "--base-values",
+        help=(
+            "comma-separated specialization of the six base coordinates; "
+            "use for exact diagnostics and boundary certificates"
+        ),
+    )
+    parser.add_argument(
+        "--generic-rank-witness",
+        action="store_true",
+        help=(
+            "evaluate the first 5-by-5 normal Jacobian minor at "
+            "--base-values; a nonzero value certifies generic normal rank 5"
+        ),
+    )
+    parser.add_argument(
+        "--w0-zero",
+        action="store_true",
+        help=(
+            "restrict to the unresolved conormal divisor w0=0; the other "
+            "five base coordinates remain transcendental parameters"
+        ),
+    )
     parser.add_argument(
         "--normal-order",
         type=int,
@@ -267,7 +307,58 @@ def main() -> None:
     )
     args = parser.parse_args()
     assert args.normal_order >= 0
+    assert not (args.base_values and args.w0_zero)
     normals, bases, residuals, defect = transformed_problem()
+    active_bases = bases
+    if args.w0_zero:
+        w0 = bases[3]
+        residuals = [
+            residual.subs(w0, 0)
+            for residual in residuals
+        ]
+        defect = defect.subs(w0, 0)
+        active_bases = bases[:3] + bases[4:]
+    specialization = None
+    if args.base_values:
+        values = tuple(
+            sp.Rational(value.strip())
+            for value in args.base_values.split(",")
+        )
+        assert len(values) == len(bases)
+        specialization = dict(zip(bases, values))
+    if args.generic_rank_witness:
+        assert specialization is not None
+        witness_point = (
+            {normal: 0 for normal in normals} | specialization
+        )
+        jacobian_minor = sp.Matrix(
+            [
+                [
+                    sp.cancel(
+                        sp.diff(residual, normal).subs(
+                            witness_point,
+                            simultaneous=True,
+                        )
+                    )
+                    for normal in normals
+                ]
+                for residual in residuals[:len(normals)]
+            ]
+        )
+        determinant = sp.det(jacobian_minor)
+        assert determinant != 0
+        print(
+            "PASS: exact generic normal rank is 5; first residual "
+            f"Jacobian minor at ({args.base_values}) has determinant "
+            f"{determinant}"
+        )
+        return
+    if specialization is not None:
+        residuals = [
+            residual.subs(specialization, simultaneous=True)
+            for residual in residuals
+        ]
+        defect = defect.subs(specialization, simultaneous=True)
     print(
         "PREPARED: degree-42 pair {2,7}; "
         f"{len(normals)} normal, {len(bases)} base, "
@@ -277,7 +368,13 @@ def main() -> None:
         return
 
     characteristic = args.prime if args.prime else 0
-    variables = normals + bases
+    parameter_base = (
+        (args.generic_base or args.w0_zero) and not args.base_values
+    )
+    variables = normals if parameter_base or args.base_values else normals + bases
+    monomial_order = args.order or (
+        "dp" if parameter_base or args.base_values else "(dp(5),dp(6))"
+    )
     singular = shutil.which("Singular")
     assert singular is not None
     basis_command = (
@@ -294,10 +391,16 @@ def main() -> None:
             )
         ]
     ideal_generators = residuals + truncation_generators
+    if parameter_base:
+        coefficient_field = (
+            f"({characteristic},{','.join(map(str, active_bases))})"
+        )
+    else:
+        coefficient_field = str(characteristic)
     program = (
         ('LIB "modstd.lib";\n' if args.algorithm == "modstd" else "")
-        + f'ring q={characteristic},({",".join(map(str, variables))}),'
-        f"{args.order};\n"
+        + f'ring q={coefficient_field},({",".join(map(str, variables))}),'
+        f"{monomial_order};\n"
         f'ideal I={",".join(serialize(item) for item in ideal_generators)};\n'
         f"ideal G={basis_command};\n"
         'print("TRANSPORTED_SYNC42_27");\n'
@@ -331,9 +434,19 @@ def main() -> None:
         if args.normal_order
         else ""
     )
+    if parameter_base:
+        base_mode = (
+            ", generic base on w0=0"
+            if args.w0_zero
+            else ", generic base"
+        )
+    elif args.base_values:
+        base_mode = f", base specialization ({args.base_values})"
+    else:
+        base_mode = ""
     print(
         "PASS: degree-42 pair {2,7} synchronizes in transported "
-        f"power coordinates over {field}{neighborhood}; basis size "
+        f"power coordinates over {field}{base_mode}{neighborhood}; basis size "
         f"{compact[marker + 2]}"
     )
 

@@ -1,0 +1,622 @@
+{
+  "format": "two-real-gmc-three-weight-low-degree-v1",
+  "support": [
+    -1,
+    0,
+    1
+  ],
+  "ordinary_moment_series": "L(((1-t*C)^2-4*t^2*D)^(-1/2))",
+  "exponential_moment_series": "L(exp(t*C)*I_0(2*t*sqrt(D)))",
+  "degrees": {
+    "4": {
+      "moment_cutoff": 6,
+      "chart_count": 6,
+      "all_reduced_bases": "[1]"
+    },
+    "5": {
+      "moment_cutoff": 8,
+      "chart_count": 10,
+      "all_reduced_bases": "[1]"
+    },
+    "6": {
+      "moment_cutoff": 9,
+      "chart_count": 15,
+      "all_reduced_bases": "[1]"
+    }
+  },
+  "charts": [
+    {
+      "degree": 4,
+      "selected_c": "c1",
+      "selected_d": "d1",
+      "variables": [
+        "c2",
+        "d1",
+        "d2",
+        "rho"
+      ],
+      "moment_cutoff": 6,
+      "characteristic": 0,
+      "eliminated_coefficient": "d3",
+      "elimination_solution": "-5*c2**2/3 - 2*c2/3 - d1/6 - d2/3 - 1/12",
+      "reduced_basis": "[1]",
+      "input_sha256": "377190ef60adc4f2b7c937c68452d5a439c91238582649278ea6a578eb004772"
+    },
+    {
+      "degree": 4,
+      "selected_c": "c1",
+      "selected_d": "d2",
+      "variables": [
+        "c2",
+        "d1",
+        "d2",
+        "rho"
+      ],
+      "moment_cutoff": 6,
+      "characteristic": 0,
+      "eliminated_coefficient": "d3",
+      "elimination_solution": "-5*c2**2/3 - 2*c2/3 - d1/6 - d2/3 - 1/12",
+      "reduced_basis": "[1]",
+      "input_sha256": "5d3652d0eb85423dbcf62e9f2985bfeb0c3dc0a9fddd3105d34d771d29031f07"
+    },
+    {
+      "degree": 4,
+      "selected_c": "c1",
+      "selected_d": "d3",
+      "variables": [
+        "c2",
+        "d1",
+        "d2",
+        "rho"
+      ],
+      "moment_cutoff": 6,
+      "characteristic": 0,
+      "eliminated_coefficient": "d3",
+      "elimination_solution": "-5*c2**2/3 - 2*c2/3 - d1/6 - d2/3 - 1/12",
+      "reduced_basis": "[1]",
+      "input_sha256": "48a1af9a2401d1b986c6dd1963251c58f3ac7438124e8d5b68707be3a6a3ea29"
+    },
+    {
+      "degree": 4,
+      "selected_c": "c2",
+      "selected_d": "d1",
+      "variables": [
+        "c1",
+        "d1",
+        "d2",
+        "rho"
+      ],
+      "moment_cutoff": 6,
+      "characteristic": 0,
+      "eliminated_coefficient": "d3",
+      "elimination_solution": "-c1**2/12 - 2*c1/3 - d1/6 - d2/3 - 5/3",
+      "reduced_basis": "[1]",
+      "input_sha256": "af8bf431c81d831a4264a122eec8bd80ca8b8e8aac797bbd17c2ce1a4c6e224a"
+    },
+    {
+      "degree": 4,
+      "selected_c": "c2",
+      "selected_d": "d2",
+      "variables": [
+        "c1",
+        "d1",
+        "d2",
+        "rho"
+      ],
+      "moment_cutoff": 6,
+      "characteristic": 0,
+      "eliminated_coefficient": "d3",
+      "elimination_solution": "-c1**2/12 - 2*c1/3 - d1/6 - d2/3 - 5/3",
+      "reduced_basis": "[1]",
+      "input_sha256": "787dd75b2638fd4c897ab82db469ae835893682544c29543992e565aadd84446"
+    },
+    {
+      "degree": 4,
+      "selected_c": "c2",
+      "selected_d": "d3",
+      "variables": [
+        "c1",
+        "d1",
+        "d2",
+        "rho"
+      ],
+      "moment_cutoff": 6,
+      "characteristic": 0,
+      "eliminated_coefficient": "d3",
+      "elimination_solution": "-c1**2/12 - 2*c1/3 - d1/6 - d2/3 - 5/3",
+      "reduced_basis": "[1]",
+      "input_sha256": "75e142c699f9441573d9c2c563a25438174dc22c81dcc0dd845773964fb7b3d7"
+    },
+    {
+      "degree": 5,
+      "selected_c": "c1",
+      "selected_d": "d1",
+      "variables": [
+        "c2",
+        "d1",
+        "d2",
+        "d3",
+        "d4",
+        "rho"
+      ],
+      "moment_cutoff": 8,
+      "characteristic": 0,
+      "eliminated_coefficient": "d5",
+      "elimination_solution": "-c2**2/12 - c2/30 - d1/120 - d2/60 - d3/20 - d4/5 - 1/240",
+      "reduced_basis": "[1]",
+      "input_sha256": "723877f463c629ef89114c761183e8ec3884c630ee12fb7056000837cee54609"
+    },
+    {
+      "degree": 5,
+      "selected_c": "c1",
+      "selected_d": "d2",
+      "variables": [
+        "c2",
+        "d1",
+        "d2",
+        "d3",
+        "d4",
+        "rho"
+      ],
+      "moment_cutoff": 8,
+      "characteristic": 0,
+      "eliminated_coefficient": "d5",
+      "elimination_solution": "-c2**2/12 - c2/30 - d1/120 - d2/60 - d3/20 - d4/5 - 1/240",
+      "reduced_basis": "[1]",
+      "input_sha256": "65281f0393e02d615c32ca193cb8f7090741289653feb2aafc6f7169f92bd041"
+    },
+    {
+      "degree": 5,
+      "selected_c": "c1",
+      "selected_d": "d3",
+      "variables": [
+        "c2",
+        "d1",
+        "d2",
+        "d3",
+        "d4",
+        "rho"
+      ],
+      "moment_cutoff": 8,
+      "characteristic": 0,
+      "eliminated_coefficient": "d5",
+      "elimination_solution": "-c2**2/12 - c2/30 - d1/120 - d2/60 - d3/20 - d4/5 - 1/240",
+      "reduced_basis": "[1]",
+      "input_sha256": "663f7f471dcc3cf8f970e511701318331a06490c68498c2a38556f1d92a06055"
+    },
+    {
+      "degree": 5,
+      "selected_c": "c1",
+      "selected_d": "d4",
+      "variables": [
+        "c2",
+        "d1",
+        "d2",
+        "d3",
+        "d4",
+        "rho"
+      ],
+      "moment_cutoff": 8,
+      "characteristic": 0,
+      "eliminated_coefficient": "d5",
+      "elimination_solution": "-c2**2/12 - c2/30 - d1/120 - d2/60 - d3/20 - d4/5 - 1/240",
+      "reduced_basis": "[1]",
+      "input_sha256": "30b9d8e3d3fffa224f1272d1ae096dae0a35b1dbf609c7cf78b55ab6fc96bbc2"
+    },
+    {
+      "degree": 5,
+      "selected_c": "c1",
+      "selected_d": "d5",
+      "variables": [
+        "c2",
+        "d1",
+        "d2",
+        "d3",
+        "d4",
+        "rho"
+      ],
+      "moment_cutoff": 8,
+      "characteristic": 0,
+      "eliminated_coefficient": "d5",
+      "elimination_solution": "-c2**2/12 - c2/30 - d1/120 - d2/60 - d3/20 - d4/5 - 1/240",
+      "reduced_basis": "[1]",
+      "input_sha256": "13957adafc271501b44f0171bce63b645fd9ce91a4b355469b2b45791527afd0"
+    },
+    {
+      "degree": 5,
+      "selected_c": "c2",
+      "selected_d": "d1",
+      "variables": [
+        "c1",
+        "d1",
+        "d2",
+        "d3",
+        "d4",
+        "rho"
+      ],
+      "moment_cutoff": 8,
+      "characteristic": 0,
+      "eliminated_coefficient": "d5",
+      "elimination_solution": "-c1**2/240 - c1/30 - d1/120 - d2/60 - d3/20 - d4/5 - 1/12",
+      "reduced_basis": "[1]",
+      "input_sha256": "f952f11aabe191f4725676fcbc8f8f0818d888e381b013cdc7eb42ab10becc18"
+    },
+    {
+      "degree": 5,
+      "selected_c": "c2",
+      "selected_d": "d2",
+      "variables": [
+        "c1",
+        "d1",
+        "d2",
+        "d3",
+        "d4",
+        "rho"
+      ],
+      "moment_cutoff": 8,
+      "characteristic": 0,
+      "eliminated_coefficient": "d5",
+      "elimination_solution": "-c1**2/240 - c1/30 - d1/120 - d2/60 - d3/20 - d4/5 - 1/12",
+      "reduced_basis": "[1]",
+      "input_sha256": "586b698bffe7467ad39d32a2430880670b2b1405b8a57edcd0d99880299625a3"
+    },
+    {
+      "degree": 5,
+      "selected_c": "c2",
+      "selected_d": "d3",
+      "variables": [
+        "c1",
+        "d1",
+        "d2",
+        "d3",
+        "d4",
+        "rho"
+      ],
+      "moment_cutoff": 8,
+      "characteristic": 0,
+      "eliminated_coefficient": "d5",
+      "elimination_solution": "-c1**2/240 - c1/30 - d1/120 - d2/60 - d3/20 - d4/5 - 1/12",
+      "reduced_basis": "[1]",
+      "input_sha256": "7c6a1523e6ac5c959da3d80b210efa18b02244d0ac117ccfb6cc8c743ce013bd"
+    },
+    {
+      "degree": 5,
+      "selected_c": "c2",
+      "selected_d": "d4",
+      "variables": [
+        "c1",
+        "d1",
+        "d2",
+        "d3",
+        "d4",
+        "rho"
+      ],
+      "moment_cutoff": 8,
+      "characteristic": 0,
+      "eliminated_coefficient": "d5",
+      "elimination_solution": "-c1**2/240 - c1/30 - d1/120 - d2/60 - d3/20 - d4/5 - 1/12",
+      "reduced_basis": "[1]",
+      "input_sha256": "f42947ead3297e114d843e355096458eb93d4bfe58c5f48ae010b51655607f1e"
+    },
+    {
+      "degree": 5,
+      "selected_c": "c2",
+      "selected_d": "d5",
+      "variables": [
+        "c1",
+        "d1",
+        "d2",
+        "d3",
+        "d4",
+        "rho"
+      ],
+      "moment_cutoff": 8,
+      "characteristic": 0,
+      "eliminated_coefficient": "d5",
+      "elimination_solution": "-c1**2/240 - c1/30 - d1/120 - d2/60 - d3/20 - d4/5 - 1/12",
+      "reduced_basis": "[1]",
+      "input_sha256": "65c407dbc17f662a8bff1056ddb8ee290299f0a98e11fc1f5a36f34c3627842d"
+    },
+    {
+      "degree": 6,
+      "selected_c": "c1",
+      "selected_d": "d1",
+      "variables": [
+        "c2",
+        "c3",
+        "d1",
+        "d2",
+        "d3",
+        "d4",
+        "rho"
+      ],
+      "moment_cutoff": 9,
+      "characteristic": 0,
+      "eliminated_coefficient": "d5",
+      "elimination_solution": "-c2**2/12 - 9*c2*c3/10 - c2/30 - 57*c3**2/20 - 3*c3/20 - d1/120 - d2/60 - d3/20 - d4/5 - 1/240",
+      "reduced_basis": "[1]",
+      "input_sha256": "dbd62d7e5bf43fb8f2a10cb2fbf2e450a8bb0f20f595ece7b01013e706d234c9"
+    },
+    {
+      "degree": 6,
+      "selected_c": "c1",
+      "selected_d": "d2",
+      "variables": [
+        "c2",
+        "c3",
+        "d1",
+        "d2",
+        "d3",
+        "d4",
+        "rho"
+      ],
+      "moment_cutoff": 9,
+      "characteristic": 0,
+      "eliminated_coefficient": "d5",
+      "elimination_solution": "-c2**2/12 - 9*c2*c3/10 - c2/30 - 57*c3**2/20 - 3*c3/20 - d1/120 - d2/60 - d3/20 - d4/5 - 1/240",
+      "reduced_basis": "[1]",
+      "input_sha256": "cf7e496ede07f8119dc56cc339bc84e7b01ec87013f1bea20e6ba4ffdf1e6c88"
+    },
+    {
+      "degree": 6,
+      "selected_c": "c1",
+      "selected_d": "d3",
+      "variables": [
+        "c2",
+        "c3",
+        "d1",
+        "d2",
+        "d3",
+        "d4",
+        "rho"
+      ],
+      "moment_cutoff": 9,
+      "characteristic": 0,
+      "eliminated_coefficient": "d5",
+      "elimination_solution": "-c2**2/12 - 9*c2*c3/10 - c2/30 - 57*c3**2/20 - 3*c3/20 - d1/120 - d2/60 - d3/20 - d4/5 - 1/240",
+      "reduced_basis": "[1]",
+      "input_sha256": "33853b83b455d9f8e46223d43edb79dc676359142f7042445a61b7af36dbcada"
+    },
+    {
+      "degree": 6,
+      "selected_c": "c1",
+      "selected_d": "d4",
+      "variables": [
+        "c2",
+        "c3",
+        "d1",
+        "d2",
+        "d3",
+        "d4",
+        "rho"
+      ],
+      "moment_cutoff": 9,
+      "characteristic": 0,
+      "eliminated_coefficient": "d5",
+      "elimination_solution": "-c2**2/12 - 9*c2*c3/10 - c2/30 - 57*c3**2/20 - 3*c3/20 - d1/120 - d2/60 - d3/20 - d4/5 - 1/240",
+      "reduced_basis": "[1]",
+      "input_sha256": "405d0d7c00b2dfa6ee369ac1c85ce8fd415d97590f65c46fac7cdbb657c7a6d0"
+    },
+    {
+      "degree": 6,
+      "selected_c": "c1",
+      "selected_d": "d5",
+      "variables": [
+        "c2",
+        "c3",
+        "d1",
+        "d2",
+        "d3",
+        "d4",
+        "rho"
+      ],
+      "moment_cutoff": 9,
+      "characteristic": 0,
+      "eliminated_coefficient": "d5",
+      "elimination_solution": "-c2**2/12 - 9*c2*c3/10 - c2/30 - 57*c3**2/20 - 3*c3/20 - d1/120 - d2/60 - d3/20 - d4/5 - 1/240",
+      "reduced_basis": "[1]",
+      "input_sha256": "097a6312460522d95b67b1bedc5c119dab95260a5fa23e4b66c57981da68658c"
+    },
+    {
+      "degree": 6,
+      "selected_c": "c2",
+      "selected_d": "d1",
+      "variables": [
+        "c1",
+        "c3",
+        "d1",
+        "d2",
+        "d3",
+        "d4",
+        "rho"
+      ],
+      "moment_cutoff": 9,
+      "characteristic": 0,
+      "eliminated_coefficient": "d5",
+      "elimination_solution": "-c1**2/240 - 3*c1*c3/20 - c1/30 - 57*c3**2/20 - 9*c3/10 - d1/120 - d2/60 - d3/20 - d4/5 - 1/12",
+      "reduced_basis": "[1]",
+      "input_sha256": "df4814cb6e69473cb3f5a81759cf81a356359b18dc5aaf90a8ef60a7ee9a8e98"
+    },
+    {
+      "degree": 6,
+      "selected_c": "c2",
+      "selected_d": "d2",
+      "variables": [
+        "c1",
+        "c3",
+        "d1",
+        "d2",
+        "d3",
+        "d4",
+        "rho"
+      ],
+      "moment_cutoff": 9,
+      "characteristic": 0,
+      "eliminated_coefficient": "d5",
+      "elimination_solution": "-c1**2/240 - 3*c1*c3/20 - c1/30 - 57*c3**2/20 - 9*c3/10 - d1/120 - d2/60 - d3/20 - d4/5 - 1/12",
+      "reduced_basis": "[1]",
+      "input_sha256": "91480e55d185935898df67297c0861eff54754b16b7a3a6f2b74c2df04decbb4"
+    },
+    {
+      "degree": 6,
+      "selected_c": "c2",
+      "selected_d": "d3",
+      "variables": [
+        "c1",
+        "c3",
+        "d1",
+        "d2",
+        "d3",
+        "d4",
+        "rho"
+      ],
+      "moment_cutoff": 9,
+      "characteristic": 0,
+      "eliminated_coefficient": "d5",
+      "elimination_solution": "-c1**2/240 - 3*c1*c3/20 - c1/30 - 57*c3**2/20 - 9*c3/10 - d1/120 - d2/60 - d3/20 - d4/5 - 1/12",
+      "reduced_basis": "[1]",
+      "input_sha256": "7c9af1998bd71eb76655d3042c6d4411421cbe8da757185e84738b5adf7bedea"
+    },
+    {
+      "degree": 6,
+      "selected_c": "c2",
+      "selected_d": "d4",
+      "variables": [
+        "c1",
+        "c3",
+        "d1",
+        "d2",
+        "d3",
+        "d4",
+        "rho"
+      ],
+      "moment_cutoff": 9,
+      "characteristic": 0,
+      "eliminated_coefficient": "d5",
+      "elimination_solution": "-c1**2/240 - 3*c1*c3/20 - c1/30 - 57*c3**2/20 - 9*c3/10 - d1/120 - d2/60 - d3/20 - d4/5 - 1/12",
+      "reduced_basis": "[1]",
+      "input_sha256": "34c85c6c63f576e6d64a2ba664038172e44c70e7894d54c412bfb02056a80d0c"
+    },
+    {
+      "degree": 6,
+      "selected_c": "c2",
+      "selected_d": "d5",
+      "variables": [
+        "c1",
+        "c3",
+        "d1",
+        "d2",
+        "d3",
+        "d4",
+        "rho"
+      ],
+      "moment_cutoff": 9,
+      "characteristic": 0,
+      "eliminated_coefficient": "d5",
+      "elimination_solution": "-c1**2/240 - 3*c1*c3/20 - c1/30 - 57*c3**2/20 - 9*c3/10 - d1/120 - d2/60 - d3/20 - d4/5 - 1/12",
+      "reduced_basis": "[1]",
+      "input_sha256": "420c9953f1299866a4d460f22f026e442cbf29568a8ab96a1d1661f6d5147933"
+    },
+    {
+      "degree": 6,
+      "selected_c": "c3",
+      "selected_d": "d1",
+      "variables": [
+        "c1",
+        "c2",
+        "d1",
+        "d2",
+        "d3",
+        "d4",
+        "rho"
+      ],
+      "moment_cutoff": 9,
+      "characteristic": 0,
+      "eliminated_coefficient": "d5",
+      "elimination_solution": "-c1**2/240 - c1*c2/30 - 3*c1/20 - c2**2/12 - 9*c2/10 - d1/120 - d2/60 - d3/20 - d4/5 - 57/20",
+      "reduced_basis": "[1]",
+      "input_sha256": "62ec0753ee93b2543f779e76c0cbf1fa12857aa49d7da1fea61ee768bd2b56f1"
+    },
+    {
+      "degree": 6,
+      "selected_c": "c3",
+      "selected_d": "d2",
+      "variables": [
+        "c1",
+        "c2",
+        "d1",
+        "d2",
+        "d3",
+        "d4",
+        "rho"
+      ],
+      "moment_cutoff": 9,
+      "characteristic": 0,
+      "eliminated_coefficient": "d5",
+      "elimination_solution": "-c1**2/240 - c1*c2/30 - 3*c1/20 - c2**2/12 - 9*c2/10 - d1/120 - d2/60 - d3/20 - d4/5 - 57/20",
+      "reduced_basis": "[1]",
+      "input_sha256": "bec4ba065c1cf970ae5bdd8185dfb431f3a0e8040bd62463d0453ec432ba56bd"
+    },
+    {
+      "degree": 6,
+      "selected_c": "c3",
+      "selected_d": "d3",
+      "variables": [
+        "c1",
+        "c2",
+        "d1",
+        "d2",
+        "d3",
+        "d4",
+        "rho"
+      ],
+      "moment_cutoff": 9,
+      "characteristic": 0,
+      "eliminated_coefficient": "d5",
+      "elimination_solution": "-c1**2/240 - c1*c2/30 - 3*c1/20 - c2**2/12 - 9*c2/10 - d1/120 - d2/60 - d3/20 - d4/5 - 57/20",
+      "reduced_basis": "[1]",
+      "input_sha256": "d9b7e3bfe36db7fea70684b42d745fb05b43b93d2af0388ee20acd454d45ac04"
+    },
+    {
+      "degree": 6,
+      "selected_c": "c3",
+      "selected_d": "d4",
+      "variables": [
+        "c1",
+        "c2",
+        "d1",
+        "d2",
+        "d3",
+        "d4",
+        "rho"
+      ],
+      "moment_cutoff": 9,
+      "characteristic": 0,
+      "eliminated_coefficient": "d5",
+      "elimination_solution": "-c1**2/240 - c1*c2/30 - 3*c1/20 - c2**2/12 - 9*c2/10 - d1/120 - d2/60 - d3/20 - d4/5 - 57/20",
+      "reduced_basis": "[1]",
+      "input_sha256": "c14e8d42f98058ec7e1edf942111c18f4ddc93da0be85cdb9337186f5c9c766f"
+    },
+    {
+      "degree": 6,
+      "selected_c": "c3",
+      "selected_d": "d5",
+      "variables": [
+        "c1",
+        "c2",
+        "d1",
+        "d2",
+        "d3",
+        "d4",
+        "rho"
+      ],
+      "moment_cutoff": 9,
+      "characteristic": 0,
+      "eliminated_coefficient": "d5",
+      "elimination_solution": "-c1**2/240 - c1*c2/30 - 3*c1/20 - c2**2/12 - 9*c2/10 - d1/120 - d2/60 - d3/20 - d4/5 - 57/20",
+      "reduced_basis": "[1]",
+      "input_sha256": "f760c2ebf14ddafd12b3c75b4a4b12cf685dea548c8650704063aa5dd29cfeb2"
+    }
+  ],
+  "conclusion": "no total-degree-at-most-six pure-moment-zero polynomial has all three weight components -1,0,1 nonzero"
+}

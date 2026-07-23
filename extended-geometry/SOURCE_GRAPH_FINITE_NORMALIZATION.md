@@ -61,12 +61,12 @@ modification.  In particular:
 - in every degree, any missing correction after the wonderful target graph
   is stacky, not another coarse fan subdivision.
 
-This closes the corrected coarse H1 comparison abstractly.  The subsequent
-[recursive resonance atlas](RECURSIVE_RESONANCE_ATLAS.md) gives the explicit
-logarithmic presentation of \(\mathcal G_N^{\mathrm{poly}}\): flag divisors
-as normalized initial-form equations, node-root indices, full simultaneous
-inertia characters, and contraction charts.  Thus corrected H1 is complete
-both abstractly and explicitly.
+This proves `H1-COARSE`.  The subsequent
+[recursive resonance atlas](RECURSIVE_RESONANCE_ATLAS.md) proves the
+separate `H1-STACK` theorem: flag divisors as normalized initial-form
+equations, node-root indices, simultaneous inertia characters, contraction
+charts, and a selected-factor/log-étale comparison supplying global coverage
+and descent.  None of that stronger theorem is used here.
 
 ## 1. Finiteness input
 
@@ -198,7 +198,7 @@ Subgroup inclusion gives
 \]
 
 finite, representable, etale, and of degree \(n=N-2\).  It is the
-normalization in the generic selected-root algebra.  No H1 identification
+normalization in the generic selected-root algebra.  No `H1-STACK` identification
 is now being assumed: (0.3) constructs the repository-specific corrected
 graph, while the finite-normalization theorem identifies its coarse base.
 
@@ -219,7 +219,7 @@ finite selected-root statement.
 
 ## 6. Simplified completion ledger
 
-The H1/H2 package now separates cleanly:
+The `H1-COARSE`/`H1-STACK`/H2 package now separates cleanly:
 
 | Layer | Status |
 |---|---|
@@ -230,10 +230,10 @@ The H1/H2 package now separates cleanly:
 | source-component uniqueness | complete by two-fiber rigidity |
 | local node normalization and inertia test | complete |
 | generic radial/resonance automorphism characters | complete |
-| explicit higher-codimension flag coordinates and simultaneous characters | complete by recursive normalized initial forms and full-centralizer matching |
+| `H1-STACK`: explicit higher-codimension flag coordinates and simultaneous characters | complete by selected-factor normalization and the log-étale screen comparison |
 | corrected H2 subgroup quotient | complete |
 | corrected coarse H3 specialization | complete |
 
-This closes the H1/H2 compactification ledger.  Rechecking coarse source
-selection or H2 label gluing would duplicate formal consequences of finite
-normalization.
+This closes `H1-COARSE`, `H1-STACK`, and the H2 compactification ledger.
+Rechecking coarse source selection or H2 label gluing would duplicate formal
+consequences of finite normalization.

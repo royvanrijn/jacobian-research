@@ -26,6 +26,14 @@ The [exact degree-spectrum corollary](verified/GEOMETRIC_DEGREE_SPECTRUM.md)
 shows that the geometric degrees of noninvertible Keller maps of
 `A^3_C -> A^3_C` are precisely `3,4,5,...`.
 
+For Gaussian moments, Long's explicit five-term polynomial settles GMC
+negatively in three real variables and, by adjoining unused coordinates, in
+every dimension `n>=3`.  Broad high-dimensional searches are archived.
+The repository's only active Gaussian frontier is the
+[GMC(2) research program](extended-geometry/GMC2_RESEARCH_PROGRAM.md);
+high-dimensional implication chains and weighted families remain as examples
+of logical transport.
+
 ## The foundational map
 
 Put `u=1+xy` and define
@@ -359,8 +367,10 @@ The primary dependency chain is:
 8. `M1` — finite degreewise stable multiplicity.
 9. `D1` — marked Hessian-divisor moduli of dimension `N-3`.
 10. `F2` — generic affine-mark faithfulness.
-11. `H1` — internal Hurwitz--LL compactification theorem.
-12. `R1`, `R2` — all-degree rank-two descent and parameter faithfulness.
+11. `H1-COARSE` — finite-normalization isomorphism with the wonderful
+    target graph.
+12. `H1-STACK` — explicit recursive logarithmic stack atlas.
+13. `R1`, `R2` — all-degree rank-two descent and parameter faithfulness.
 
 The exact scopes, dependencies, checkers, proof types, and assurance states
 live only in [`MATH_STATUS.json`](MATH_STATUS.json). [STATUS.md](STATUS.md) is
@@ -407,10 +417,12 @@ The H1--H3 chain has been adversarially audited.  The finite-cover valuative
 lemma, quotient-stack map, and local collision algebra are proved, including
 simultaneous clusters and relative stabilizers.  The audit exposed that the
 original comparison with the unmodified root-stable quotient is false.  The
-corrected graph is now constructed: the normalized wonderful target
-pullback, finite selected polynomial closure, and recursive source-screen
-atlas prove corrected H1 and H2, while finite normalization proves coarse
-H3.  The standalone
+corrected graph is now constructed at the coarse level: the normalized
+wonderful target pullback and finite selected polynomial closure prove
+`H1-COARSE` and corrected H2, while finite normalization proves coarse H3.
+The recursive source-screen construction is identified with the normalized
+admissible-cover closure by the log-étale comparison theorem, proving
+`H1-STACK`.  The standalone
 [DVR marking audit](papers/hurwitz-ll-rerooting/dvr-marking-audit.tex)
 retains the historical conditional analysis and its post-repair resolution.
 The subsequent [branch-scale fan experiment](extended-geometry/BRANCH_SCALE_FAN.md)
@@ -456,11 +468,14 @@ theorem](extended-geometry/POLYNOMIAL_MONODROMY_FORESTS.md) also determines
 the source dual graphs, component degrees, and node indices on every nested
 simple-branch resonance stratum, unifying Maxwell and caustic.  The
 [recursive resonance atlas
-theorem](extended-geometry/RECURSIVE_RESONANCE_ATLAS.md) now places every
+theorem](extended-geometry/RECURSIVE_RESONANCE_ATLAS.md) gives formulas that place
 weighted source flag by normalized initial-form equations in framed
 root-residue screens, proves contraction compatibility by affine
 composition, and automatically matches full vertex centralizers across all
-nested nodes.  This completes the explicit corrected H1 stack atlas.  The
+nested nodes.  Its log-étale comparison identifies these screens with the
+fs-saturated base change of standard admissible-cover charts.  This supplies
+all-degree coverage, algebraization, overlap descent, and the actual
+stabilizers independently of the bounded regression checks.  The
 [finite-normalization theorem](extended-geometry/SOURCE_GRAPH_FINITE_NORMALIZATION.md)
 shows that this does not obstruct the coarse comparison: the wonderful graph
 is already the complete coarse polynomial admissible-cover graph.  It also
@@ -472,9 +487,9 @@ the full-chain radial formula
 \operatorname{lcm}(\mu_i:i\in B_j)\): equal multiplicities give trivial
 inertia, while unequal multiplicities can retain a finite subgroup.  It also
 gives the generic anchored/unanchored inertia formula for every simple
-resonance node.  Together these results prove corrected H1, H2, and coarse
-H3; the original comparison with the unmodified root-stable quotient remains
-false.
+resonance node.  Together these results prove `H1-COARSE`, `H1-STACK`, H2,
+and coarse H3.  The original comparison with the unmodified root-stable
+quotient remains false.
 
 The active continuation queue consists of three LR problems together with
 the cancellation, Hessian--Ritt, restricted-minima, and minimal-boundary
@@ -564,10 +579,9 @@ escape is a separate marked-cover problem, not an automorphism-coefficient
 estimate.  None is a bottleneck for stable moduli, which already follow from
 decorated normalization and the affine sheet.
 
-Other questions—arithmetic Galois theory, wider quantization, coefficient-scheme gluing,
-quadratic--cubic flexibility, the plane degree frontier, Gaussian-equivalence
-and three-real-variable descent, and further Image/Vanishing consequences—are
-retained as parked side programmes in
+Other questions—arithmetic Galois theory, wider quantization,
+coefficient-scheme gluing, quadratic--cubic flexibility, and the plane degree
+frontier—are retained as parked side programmes in
 [STATUS.md](STATUS.md).
 
 ## Provenance

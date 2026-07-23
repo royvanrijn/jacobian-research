@@ -41,12 +41,13 @@ wonderful target graph.  Together with the
 the source dual tree, component degrees, and node indices on every stratum
 whose generic finite branching is simple.
 
-The algebraic half of the explicit H1 stack atlas is supplied by the
+The algebraic half of `H1-STACK` is supplied by the
 [recursive resonance atlas](RECURSIVE_RESONANCE_ATLAS.md): normalized
 initial forms place the actual target-flag divisors in framed root-residue
 coordinates, make the third-fiber equations automatic, prove contractions,
-and extract the simultaneous labelled-node character.  The root-side coarse
-graph is independently identified by
+and extract the simultaneous labelled-node character.  Its selected-factor
+log-étale comparison supplies all-degree coverage and effective descent.
+The root-side coarse graph is independently identified by
 [finite normalization](SOURCE_GRAPH_FINITE_NORMALIZATION.md).
 
 ## 1. The Dénes tree
@@ -222,12 +223,12 @@ The stronger algebraic-family statement is:
 > root-cluster graph, express its flag divisors by the recursive residue
 > coordinates, and prove compatibility with every wonderful contraction.
 
-That statement is established by the recursive resonance theorem.  The
-component maps are therefore unique and the
+The recursive resonance theorem establishes that statement; the component
+maps are therefore unique and the
 [labelled-node theorem](LABELLED_NODE_SATURATION.md) supplies normalized
 branches and actual inertia.
 
-## 6. Optimized H1 pipeline
+## 6. H1-STACK pipeline
 
 The current comparison can be organized with no repeated case-by-case
 Hurwitz search:
@@ -240,8 +241,9 @@ Hurwitz search:
 6. saturate node monoids and compute inertia characters; and
 7. take the formal H2 subgroup quotient.
 
-All seven steps are now general: the recursive resonance atlas implements
-step 4 and feeds its full vertex-centralizer tables into step 6.
+All seven steps are general.  The recursive resonance atlas implements step
+4, its selected-factor log-étale comparison supplies global coverage and
+descent, and its vertex-centralizer tables feed into step 6.
 
 ## Reproduction
 

@@ -229,7 +229,7 @@ coordinates live on the base \(\Gamma_N\) and are not discarded.
 
 ## 5. Simplified dependency structure
 
-The corrected H1/H2 logic is:
+The corrected `H1-COARSE`/H2 logic is:
 
 \[
 \boxed{
@@ -263,13 +263,14 @@ Accordingly:
   unconditional;
 - monodromy centralizers compute every radial and generic simple-resonance
   label-preserving character;
-- recursive normalized initial forms construct the algebraic flag positions,
-  make residue compatibility automatic, prove contraction descent, and
-  extract simultaneous inertia characters at higher-codimension nested
-  resonances.
+- recursive normalized initial forms give the algebraic flag positions,
+  residue compatibility, contraction formulas, and simultaneous inertia
+  characters at higher-codimension nested resonances; the selected-factor
+  log-étale comparison supplies the global coverage and descent for
+  `H1-STACK`.
 
-This closes both the former separate “H2 gluing” problem and the explicit
-stack-atlas part of corrected H1.
+This closes the former separate “H2 gluing” problem.  It does not require
+`H1-STACK`, which is a separate theorem with stronger proof obligations.
 
 ## Reproduction
 

@@ -32,10 +32,10 @@ claims.
    out, but it has not been independently reviewed in an algebraic-geometry
    proof environment.
 
-5. **External monodromy inputs.** The proof depends on Zariski--Nagata purity
-   and the triviality of finite etale covers of affine space over an
-   algebraically closed characteristic-zero field. The paper states the exact
-   reduction and cites these theorems; it does not independently reprove them.
+5. **External monodromy input.** The generic Morse-slice lemma is proved in
+   the paper from the discriminant normalization.  The remaining external
+   input is the classical theorem that a Morse polynomial has full symmetric
+   monodromy; the paper states the branch-cycle reduction and cites Serre.
 
 6. **Provenance record.** The public formula and contemporaneous attribution
    are corroborated, but the original model conversation, discovery search,

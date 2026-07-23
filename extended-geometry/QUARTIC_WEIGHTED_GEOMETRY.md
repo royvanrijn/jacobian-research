@@ -149,14 +149,17 @@ Run:
 
 ## Monodromy of the inverse cover
 
-The polynomial `E` is irreducible over `Q(s,t)`: viewed in
-`Q[s,W][t]`, it is linear and monic in `t`, so any factor independent of `t`
-would divide its unit leading coefficient. Thus the four-sheet cover over the
-discriminant complement is connected and its geometric monodromy is a
-transitive subgroup of `S_4`.
+Apply the
+[generic Morse-slice lemma](../verified/UNIVERSAL_SYMMETRIC_MONODROMY.md#the-generic-morse-slice-lemma)
+to the quartic `H`.  Some vertical line `s=sigma` is the cover of a Morse
+quartic, hence has monodromy `S_4`; its monodromy embeds in that of the
+two-parameter pencil.  Therefore the geometric monodromy of `E` over
+`bar(Q)(s,t)` is `S_4`, and the arithmetic monodromy over `Q(s,t)` is also
+`S_4`.
 
-The normalization gives exact representatives for all three relevant local
-branch types:
+The following exact local branch types are useful consistency checks and
+describe the special discriminant strata, but they are no longer separate
+inputs to the monodromy proof:
 
 - at the smooth point `r=1`, `(s,t)=(-1,-2)`, the factorization is
   `-(W-1)^2(W^2+2W+2)`; a transverse `t`-slice splits the double root and gives
@@ -167,18 +170,6 @@ branch types:
 - at the node, `s=0`, `t=-1/4+epsilon` gives
   `-(W^2-1/2)^2+epsilon`, so the two double roots split simultaneously and
   give a double transposition.
-
-If `G<=S_4` is the geometric monodromy group, transitivity implies `4` divides
-`|G|`, while the cusp 3-cycle implies `3` divides `|G|`. Hence `|G|` is `12`
-or `24`. The smooth-point transposition is odd, excluding the unique
-index-two subgroup `A_4`; therefore
-
-\[
-G=S_4.
-\]
-
-The arithmetic monodromy over `Q(s,t)` contains the geometric group and is
-also `S_4`.
 
 Run:
 

@@ -2,6 +2,8 @@
 """Regression tests for the plane residue/conductor obstruction."""
 
 from plane_boundary_exclusion import (
+    OneDicriticalNormalizationCertificate,
+    audit_one_dicritical_normalization,
     conductor_collision_budget,
     first_free_depth_package,
     one_puncture_budget,
@@ -66,7 +68,135 @@ assert package["dicritical_candidates"] == ("E3",)
 assert package["dicritical_target_line_degree"] == 1
 
 
+minimal_link = audit_one_dicritical_normalization(
+    OneDicriticalNormalizationCertificate(
+        name="minimal link",
+        generic_degree=3,
+        transverse_index=2,
+        residue_degree=1,
+        affine_degree=1,
+        punctures=1,
+        single_normalization_boundary=True,
+        log_pure=True,
+        exhaustive_pullback=True,
+        target_transfer_certified=True,
+    )
+)
+assert minimal_link.status == "excluded"
+assert minimal_link.sheet_deficient
+assert minimal_link.conductor_length_deficit == 1
+
+two_puncture = audit_one_dicritical_normalization(
+    OneDicriticalNormalizationCertificate(
+        name="two punctures",
+        generic_degree=7,
+        transverse_index=2,
+        residue_degree=2,
+        affine_degree=3,
+        punctures=2,
+        single_normalization_boundary=True,
+        log_pure=True,
+        exhaustive_pullback=True,
+        target_transfer_certified=True,
+    )
+)
+assert two_puncture.status == "excluded"
+assert two_puncture.hurwitz_forced_affine_ramification == 2
+
+nontrivial_one_puncture_cover = audit_one_dicritical_normalization(
+    OneDicriticalNormalizationCertificate(
+        name="nontrivial one-puncture residue cover",
+        generic_degree=7,
+        transverse_index=2,
+        residue_degree=2,
+        affine_degree=3,
+        punctures=1,
+        single_normalization_boundary=True,
+        log_pure=True,
+        exhaustive_pullback=True,
+        target_transfer_certified=True,
+    )
+)
+assert nontrivial_one_puncture_cover.status == "excluded"
+assert nontrivial_one_puncture_cover.hurwitz_forced_affine_ramification == 1
+
+index_one = audit_one_dicritical_normalization(
+    OneDicriticalNormalizationCertificate(
+        name="index-one boundary",
+        generic_degree=2,
+        transverse_index=1,
+        residue_degree=1,
+        affine_degree=1,
+        punctures=1,
+        single_normalization_boundary=True,
+        log_pure=True,
+        exhaustive_pullback=True,
+        target_transfer_certified=True,
+    )
+)
+assert index_one.status == "excluded"
+assert "etale" in index_one.reasons[0]
+
+case1_untransferred = audit_one_dicritical_normalization(
+    OneDicriticalNormalizationCertificate(
+        name="72,108 Case 1 source package",
+        generic_degree=29,
+        transverse_index=3,
+        residue_degree=1,
+        affine_degree=26,
+        punctures=1,
+        single_normalization_boundary=False,
+        log_pure=True,
+        exhaustive_pullback=True,
+        target_transfer_certified=False,
+    )
+)
+assert case1_untransferred.status == "incomplete"
+assert not case1_untransferred.residue_immersion_certified
+assert "finite normalization" in case1_untransferred.reasons[0]
+
+# This is a numerical preview, not a claim that the missing target transfer
+# has been proved.  Even after supplying it, the large affine remainder pays
+# for a two-point conductor collision.
+case1_preview = audit_one_dicritical_normalization(
+    OneDicriticalNormalizationCertificate(
+        name="72,108 Case 1 transferred preview",
+        generic_degree=29,
+        transverse_index=3,
+        residue_degree=1,
+        affine_degree=26,
+        punctures=1,
+        single_normalization_boundary=True,
+        log_pure=True,
+        exhaustive_pullback=True,
+        target_transfer_certified=True,
+    )
+)
+assert case1_preview.status == "survives_conductor_budget"
+assert not case1_preview.sheet_deficient
+assert case1_preview.conductor_length_deficit == -23
+
+case2_preview = audit_one_dicritical_normalization(
+    OneDicriticalNormalizationCertificate(
+        name="72,108 Case 2 source package",
+        generic_degree=29,
+        transverse_index=5,
+        residue_degree=1,
+        affine_degree=24,
+        punctures=1,
+        single_normalization_boundary=False,
+        log_pure=False,
+        exhaustive_pullback=True,
+        target_transfer_certified=False,
+    )
+)
+assert case2_preview.status == "incomplete"
+assert "ramification" in case2_preview.reasons[-1]
+
+
 print("PASS: one-puncture residue immersion forces degree one")
 print("PASS: two-puncture residue immersion contradicts Riemann--Hurwitz")
 print("PASS: minimal-sheet fiber length excludes conductor gluing")
 print("PASS: the first numerical degree-six package is residue-excluded")
+print("PASS: typed normalization gate refuses source-only (72,108) data")
+print("PASS: the Case-1 sheet budget permits conductor gluing")

@@ -143,6 +143,57 @@ For nonreduced intersections, existence of the ring-valued refinements is
 the genuine all-degree frontier.  A reduced normal form does not by itself
 lift through nilpotents.
 
+### 3.1 A finite-flat criterion for the primary upgrade
+
+There is a short commutative-algebra route when the residual scheme is
+controlled over its Ritt base.  Let \(B\) be a regular integral
+\(\mathbb Q\)-algebra parametrizing a normalized tame Ritt component, put
+\(K=\operatorname{Frac}(B)\), and let \(A\) be the Hessian residual algebra
+on the formal neighborhood of that component.
+
+> **Theorem 3.1 (finite-flat synchronization criterion).**  Assume:
+>
+> 1. \(A\) is finite over \(B\);
+> 2. \(A\) is Cohen--Macaulay, pure of dimension \(\dim B\);
+> 3. the generic fiber \(A_K=A\otimes_BK\) is finite etale over \(K\); and
+> 4. the relation graph synchronizes the missing linear coefficients at
+>    all geometric field-valued points.
+>
+> Then every lift difference vanishes in \(A\).  Equivalently, all lift
+> differences belong to the summed Hessian residual ideal.
+
+**Proof.**  Work locally on \(B\).  Since \(A\) is finite and has the same
+pure dimension, a regular system of parameters of \(B\) is a system of
+parameters in every local factor of \(A\).  Cohen--Macaulayness makes it a
+regular sequence.  Thus \(A\), regarded as a finite \(B\)-module, has depth
+\(\dim B\).  Auslander--Buchsbaum over the regular local ring \(B\) gives
+projective dimension zero.  Hence \(A\) is locally free and in particular
+\(B\)-torsion-free.
+
+The generic fiber is etale and therefore reduced.  Field-valued
+synchronization makes every lift difference \(\delta\) vanish at every
+geometric point of \(A_K\), hence \(\delta=0\) in \(A_K\).  Torsion-freeness
+makes \(A\to A_K\) injective, so \(\delta=0\) already in \(A\).  \(\square\)
+
+This criterion replaces an order-by-order Krull-intersection argument by
+miracle flatness.  Its etaleness hypothesis must concern the actual generic
+fiber of the possibly nonreduced residual algebra, not only its reduction.
+Otherwise \(B[\epsilon]/(\epsilon^2)\) is a Cohen--Macaulay countermodel:
+its reduced parametrization is etale, while \(\epsilon\) vanishes on the
+reduction but not scheme-theoretically.  Likewise, Cohen--Macaulayness only
+at a minimal generic point is insufficient; the required hypothesis is on
+the formal neighborhood under consideration.
+
+Once the lift differences vanish,
+\[
+ I_{\rm full}=I_{\rm Hess}+(c_1-\lambda).
+\]
+Projection is therefore the graph isomorphism of one regular function.  For
+the component-adic filtrations transported by this isomorphism, the Rees
+algebras are isomorphic, which is the precise Rees-strict conclusion of
+Theorem 3.1.  Strictness for an unrelated filtration is stronger and does
+not follow merely from synchronization.
+
 ## 4. Degrees thirty and forty-two
 
 For outer cuts \(a,c\) of degree \(N\), the expected terminal degree is
@@ -244,7 +295,103 @@ the order-four membership.
 The untruncated modular full-basis calculation timed out after \(900\)
 seconds, and exact normal order five timed out after \(300\) seconds.  These
 are performance boundaries, not failed reductions.  Thus the current
-\(\{2,7\}\) gap begins at order five.
+\(\{2,7\}\) characteristic-zero gap begins at order five.
+
+A good-prime order-five calculation gives
+\[
+ \delta\in I+\mathfrak m^6
+ \qquad\text{over }\mathbb F_{32003}.
+\]
+The truncated basis has size \(179\).  Hence the degree-five normal symbol
+vanishes uniformly over the six-dimensional base in this fiber.  This is
+strong evidence, but it is not by itself a characteristic-zero membership
+certificate.  The obstruction class belongs to
+\[
+ \frac{I+\mathfrak m^5}{I+\mathfrak m^6},
+\]
+not the quotient with numerator and denominator reversed.
+
+On the unresolved divisor, the rational specialization
+\[
+ (e_1,e_2,t,w_0,w_1,w_2)=(1,2,3,0,5,6)
+\]
+passes the stronger untruncated characteristic-zero membership test: the
+full basis has size \(8\) and reduces \(\delta\) to zero.  Thus no primary
+obstruction is present at this boundary point.  This specialization does
+not prove generic membership on \(w_0=0\); the corresponding calculation
+over \(\mathbb Q(e_1,e_2,t,w_1,w_2)\) still exceeds the current timeout.
+The checker option `--w0-zero` performs exactly that remaining
+function-field test, while `--base-values` supports exact rational boundary
+probes.
+
+### 6.1 Conormal and Rees interpretation
+
+The normal-jet calculation has a sharper conceptual form.  Put
+\[
+ A=\mathbb Q[e_1,e_2,t,w_0,w_1,w_2],\qquad
+ R=A[x_1,\ldots,x_5],\qquad \mathfrak m=(x_1,\ldots,x_5),
+\]
+and retain \(I\) and \(\delta\) from Proposition 6.1.  The zero section is
+the transported power component, so \(I\subset\mathfrak m\) and
+\(\delta\in\mathfrak m\).  Taking normal-linear terms gives the residual
+conormal map
+\[
+ \kappa:(I+\mathfrak m^2)/\mathfrak m^2
+       \longrightarrow \mathfrak m/\mathfrak m^2.           \tag{6.2}
+\]
+It is represented by the \(19\)-by-\(5\) normal Jacobian of the residuals
+on the zero section.
+
+> **Proposition 6.2 (dense all-order Rees synchronization).**  The ideal
+> of maximal minors of \(\kappa\) is
+> \[
+>  \operatorname{Fitt}_0(\operatorname{coker}\kappa)=(w_0^2).
+>                                                               \tag{6.3}
+> \]
+> Consequently, over \(D(w_0)\), the completed residual ideal equals the
+> completed normal ideal:
+> \[
+>  I\widehat R=\mathfrak m\widehat R.
+>                                                               \tag{6.4}
+> \]
+> In particular \(\delta=0\) in the formal completion along the entire
+> \(D(w_0)\) part of the six-parameter component.  Equivalently, every
+> positive Rees symbol of the synchronization defect vanishes there.
+
+**Proof.**  Exact maximal-minor reduction gives (6.3).  After inverting
+\(w_0\), (6.2) is onto, hence
+\[
+ \mathfrak m=I+\mathfrak m^2.
+\]
+Modulo \(I\), the finitely generated ideal
+\(J=\mathfrak m(R/I)\) satisfies \(J=J^2\).  In the
+\(J\)-adic completion, complete Nakayama gives \(J\widehat{(R/I)}=0\),
+which is (6.4).  Since \(\delta\in\mathfrak m\), its completed class is
+zero.  This kills all graded pieces of the \(\mathfrak m\)-adic Rees
+filtration at once.  \(\square\)
+
+This is the conceptual replacement for further jet expansion on the dense
+chart: conormal surjectivity implies Rees strictness, and Rees strictness
+implies synchronization at every order.  It also identifies the exact
+remaining locus.  Modulo \(w_0\), all \(4\)-by-\(4\) conormal minors vanish
+while the \(3\)-by-\(3\) minors generate the unit ideal.  Thus
+\(\kappa\) has rank exactly \(3\) everywhere on \(w_0=0\); two normal
+directions cease to be controlled at first order.  Proposition 6.1 still
+kills the defect through Rees degree four on that divisor, but no
+conormal/Nakayama argument can promote those four jets to all orders.
+The all-order primary frontier is therefore supported scheme-theoretically
+on \(w_0=0\), rather than on the full six-parameter component.
+
+Theorem 3.1 gives a second way to close this divisor without further normal
+jets: prove that the completed residual algebra is finite
+Cohen--Macaulay over the full six-dimensional Ritt base.  Its generic fiber
+is already the reduced zero section over \(D(w_0)\), so finite flatness would
+make the generic vanishing of \(\delta\) inject into the whole algebra,
+including the ramified fiber over \(w_0=0\).
+
+[`verify_degree42_conormal_rees_synchronization.py`](../scripts/verify_degree42_conormal_rees_synchronization.py)
+checks \(I,\delta\subset\mathfrak m\), the Fitting identity (6.3), and the
+rank-three degeneration on \(w_0=0\).
 
 For the remaining calculation, the theorem removes the right factor from
 the elimination variables.  For each degree-forty-two row:

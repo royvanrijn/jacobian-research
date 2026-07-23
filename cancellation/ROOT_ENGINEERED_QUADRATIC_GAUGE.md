@@ -664,7 +664,7 @@ finitely many values of `B`, its `N-1` critical points are simple, and
 birationality of (35) makes their critical values distinct.  A generic
 vertical `C`-line is therefore the cover of a Morse polynomial.  The
 classical branch-cycle theorem, in the same form used by the
-[universal linear-tilt proof](../verified/UNIVERSAL_SYMMETRIC_MONODROMY.md),
+[generic Morse-slice lemma](../verified/UNIVERSAL_SYMMETRIC_MONODROMY.md#the-generic-morse-slice-lemma),
 gives
 
 \[

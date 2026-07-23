@@ -197,6 +197,23 @@ The local verifier regenerates the 25 equations, checks the four saved
 generators byte-for-byte at the algebraic-coefficient level, and evaluates
 the displayed identity exactly.
 
+The unit-ideal computation has also been isolated as a direct proof rather
+than a standard-basis observation.  Projectivizing `(r,s)` makes the first
+two residuals affine-linear in `h` and the radial square.  Cramer elimination
+leaves degree-eight univariate pairs on two charts; explicit Euclidean
+identities after good reduction at `p=101,u=55` prove their resultants are
+nonzero, including the determinant-degenerate branches and the origin.  The
+four generators also have degrees
+`3,3,4,4`; a degree-eight Macaulay system has 165 coefficient rows and 182
+multiplier columns, and its exact rank-151 solution gives multipliers with
+`23,20,14,11` terms.  The standalone checker multiplies out
+`1=T_0 R_0+T_1 R_1+T_7 R_7+T_9 R_9` using only arithmetic in
+`Q[u]/(H)`.  See
+[CASE2_EXPLICIT_SYZYGY_PROOF.md](CASE2_EXPLICIT_SYZYGY_PROOF.md) and
+[cas/verify_case2_resultant_proof.py](cas/verify_case2_resultant_proof.py),
+as well as
+[cas/verify_case2_syzygy_independent.py](cas/verify_case2_syzygy_independent.py).
+
 ## 6. Case 1 descent and exhaustive branches — local reproduction
 
 The five added bracket layers solve linear band coefficients and leave 13

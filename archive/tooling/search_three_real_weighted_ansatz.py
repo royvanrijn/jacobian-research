@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Exact bounded search for one-complex-plus-one-real weighted witnesses.
+"""Archived bounded search for one-complex-plus-one-real weighted witnesses.
 
 The target branch is g=u*h(g), with h=1+z^2-z^3 by default.  For
 
@@ -13,6 +13,10 @@ the script forms exact necessary equations
 through a requested order and computes their Groebner basis.  A unit basis is
 an exact obstruction to that finite-support ansatz; a nonunit basis is only a
 bounded survivor, not an all-orders witness.
+
+GMC is already false in every dimension n >= 3 by the explicit five-term
+three-real witness.  This program is retained only to reproduce the historical
+weighted-family reconnaissance; it is not part of the active GMC(2) program.
 
 The default support is the first genuinely W-dependent extension of the
 half-pair correction, T^2(v_0(Z)+W v_1(Z)).  Use --t-degrees to include higher

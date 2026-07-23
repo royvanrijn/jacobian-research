@@ -186,16 +186,38 @@ at the boundary.  For `c=0`, the remaining projective root is the regular
 
 ## Monodromy
 
-Local monodromy around a smooth point of `V(Q)` exchanges the two roots that
-form its double root, hence is a transposition.  These transpositions generate
-the full `S_3`: for example, in the slice `c=1`, take roots
+On `c!=0`, divide `P(T)` by `c` and translate
+
+\[
+ T=W+\frac{2}{3c}.
+\]
+
+The inverse equation becomes
+
+\[
+ W^3-sW+t=0,
+\qquad
+ s=\frac{4}{3c^2}-\frac bc,
+\qquad
+ t=-\frac{16}{27c^3}+\frac{2b}{3c^2}-\frac{2a}{c}.
+\]
+
+Moreover `C(a,b,c)=C(s,t,c)`.  The
+[generic Morse-slice lemma](UNIVERSAL_SYMMETRIC_MONODROMY.md#the-generic-morse-slice-lemma)
+therefore applies with `H(W)=W^3` and proves the geometric and arithmetic
+generic monodromy groups are `S_3`.
+
+The local calculation still records which inertia occurs on the special
+strata.  Around a smooth point of `V(Q)`, monodromy exchanges the two roots
+that form its double root, hence is a transposition.  For example, in the
+slice `c=1`, take roots
 
 \[
 m+\sqrt\epsilon,\quad m-\sqrt\epsilon,\quad2-2m.
 \]
 
 Their sum is fixed at `2`, so they define targets in this family.  A loop of
-`epsilon` around zero exchanges the first pair.  Choosing different collision
-centers supplies adjacent transpositions, and therefore the monodromy group is
-`S_3`.  At the triple-root curve, the transverse discriminant has cusp type;
-the corresponding braid products give three-cycles.
+`epsilon` around zero exchanges the first pair.  At the triple-root curve,
+the transverse discriminant has cusp type; the corresponding braid products
+give three-cycles.  These computations describe local inertia and agree with,
+but are not needed to prove, the generic `S_3` conclusion.

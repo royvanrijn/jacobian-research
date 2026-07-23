@@ -27,7 +27,7 @@ polynomials, decomposable polynomials, polynomials with affine symmetries, and
 polynomials with colliding critical values may have exceptional *vertical
 slices*.  None is exceptional for the two-parameter pencil.
 
-## 1. A generic linear tilt is Morse
+## 1. The generic Morse-slice lemma
 
 Work first over an algebraically closed characteristic-zero field `K`.  Put
 
@@ -38,8 +38,9 @@ Work first over an algebraically closed characteristic-zero field `K`.  Put
 Recall that a degree-`n` polynomial is **Morse** if its `n-1` critical points
 are simple and their critical values are pairwise distinct.
 
-> **Lemma.** There is a finite set `Sigma_H subset K` such that `f_sigma` is
-> Morse for every `sigma` outside `Sigma_H`.
+> **Generic Morse-slice lemma.** There is a finite set
+> `Sigma_H subset K` such that `f_sigma` is Morse for every `sigma` outside
+> `Sigma_H`.
 
 Indeed, the repeated-root discriminant of the two-parameter pencil is
 parametrized by
@@ -80,7 +81,8 @@ variation of the coefficients of `H` is involved.
 
 ## 2. Classical proof of full monodromy
 
-Choose `sigma outside Sigma_H`.  The classical Morse-polynomial theorem says
+Choose `sigma outside Sigma_H` by the generic Morse-slice lemma.  The
+classical Morse-polynomial theorem says
 that
 
 \[

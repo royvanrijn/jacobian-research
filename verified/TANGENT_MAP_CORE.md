@@ -17,6 +17,35 @@ Work over a characteristic-zero field `k`.  Let `c in k^*` and let
  \tag{1}
 \]
 
+### Lemma (coprime coordinate degrees)
+
+Let `f,g in k[T]` be nonconstant, put `L=k(f,g) subset k(T)`, and let
+`d=[k(T):L]`, the generic degree of the parameterization
+`T -> (f(T),g(T))` onto its image.  Then
+
+\[
+ d\mid\deg f
+ \qquad\text{and}\qquad
+ d\mid\deg g.
+\]
+
+In particular, if `deg f` and `deg g` are coprime, the parameterization is
+birational onto its image.
+
+Indeed, let `infinity` be the place at infinity of `k(T)` and let `P` be its
+restriction to `L`.  Since `f` has no finite pole, `infinity` is the unique
+place of `k(T)` above the pole `P` of `f`; its residue degree over `P` is one.
+The fundamental equality for places therefore gives
+`d=e(infinity/P)`.  Taking valuations yields
+
+\[
+ \deg f=-v_{\infty}(f)
+ =e(\infty/P)\bigl(-v_P(f)\bigr),
+\]
+
+so `d` divides `deg f`.  The same argument with `g` gives the second
+divisibility.
+
 ## Core theorem
 
 The map `Phi_H` has the following properties.
@@ -61,9 +90,10 @@ linearly.  The two rows of the differential of (1) are
 \]
 
 which proves (3).  On `gamma=0`, equations (1) give (4).  A repeated root of
-(2) satisfies exactly these two equations.  The coordinate degrees `n-1`
-and `n` in (4) are coprime, so the parameterization is birational; its
-finiteness makes it the normalization.  Finally,
+(2) satisfies exactly these two equations.  The coprime coordinate-degree
+lemma applies to (4), whose coordinate degrees are `n-1` and `n`; hence the
+parameterization is birational.  Its finiteness makes it the normalization.
+Finally,
 
 \[
  dH'=H''(W)dW,

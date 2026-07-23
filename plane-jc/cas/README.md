@@ -20,6 +20,11 @@ one-puncture obstruction to the first numerical degree-six package.  It also
 checks that the primitive minimal-sheet formula `d=e+1` is incompatible
 with the `2e` fiber length forced by a conductor identification.  These are
 structural boundary regressions, not low-degree counterexample searches.
+The same regression now exercises a typed finite-normalization gate.  It
+checks `d=e*f+a`, refuses to infer target transfer or exhaustive affine-sheet
+data from a source tree, excludes the sheet-deficient range `a<e`, and
+records why the `(72,108)` ledgers `29=3+26` and `29=5+24` do not yield a
+conductor contradiction.
 The third turns certified monomial branch
 scales into regular toroidal
 blowups, a proximity graph, complete boundary and intersection matrices,
@@ -232,6 +237,32 @@ For the independent hard-certificate check, run from the repository root:
 This checker shares only the serialized four-polynomial input and the text
 certificate with the primary computation.  It does not import the generating
 code or a CAS.
+
+For the primary Case-2 unit ideal, the following independent checker replaces
+the standard-basis output by a projective Cramer/resultant proof:
+
+```bash
+.venv/bin/python plane-jc/cas/verify_case2_resultant_proof.py
+```
+
+The support shape reduces the four residuals to degree-eight univariate
+eliminants on two charts.  Extended-gcd identities at the good place
+`p=101,u=55` certify that their characteristic-zero resultants are nonzero;
+the same checker excludes the singular Cramer branches and the origin.
+
+The larger characteristic-zero Bézout identity remains as an independent
+fallback:
+
+```bash
+.venv/bin/python plane-jc/cas/verify_case2_syzygy_independent.py
+```
+
+It pins the serialized certificate, verifies the stored degree-35 field
+polynomial is irreducible, and checks
+`1=T_0 R_0+T_1 R_1+T_7 R_7+T_9 R_9` coefficient by coefficient without
+importing the equation generator, `exact_core`, or Singular.  The mathematical
+argument and Macaulay dimensions are recorded in
+[CASE2_EXPLICIT_SYZYGY_PROOF.md](../CASE2_EXPLICIT_SYZYGY_PROOF.md).
 
 To verify that the hard membership identity and the specialized \(h=0\)
 identity compose to a single unit certificate for the seven pre-division

@@ -574,9 +574,12 @@ Thus no nonlinear weighted seed admits a polynomial correction of the form
 but it is still not an obstruction to every polynomial in `(Z,W,T)`.
 Higher powers of `T`, corrections involving `W`, and the obstruction to
 importing a second Lagrange--Good fixed-point coordinate into an odd Gaussian
-dimension are analyzed in the
-[three-real-variable search note](THREE_REAL_WEIGHTED_GAUSSIAN_SEARCH.md).
-The unrestricted three-real polynomial problem remains open.
+dimension were analyzed in the now
+[archived three-real-variable search note](../archive/high-dimensional-gmc/THREE_REAL_WEIGHTED_GAUSSIAN_SEARCH.md).
+They are no longer an active witness search: Long's five-term example settles
+GMC negatively in three variables, and hence in every dimension `n>=3`.
+This bridge remains active reference material only for its family-level
+logical transport and moment-coordinate geometry.
 
 ## 8. Reproduction and status
 
@@ -586,8 +589,6 @@ Run
 .venv/bin/python scripts/verify_formal_gaussian_lagrange.py
 .venv/bin/python scripts/verify_weighted_gaussian_bridge.py
 .venv/bin/python scripts/verify_gaussian_moment_fingerprint.py
-.venv/bin/python scripts/search_three_real_weighted_ansatz.py \
-  --z-degree 1 --w-degree 1 --moment-order 5
 python3 scripts/audit_weighted_gaussian_bridge_independent.py
 ```
 
@@ -609,13 +610,9 @@ then verifies the optimal normalized coordinates `M_3,...,M_(N-1)` and their
 Jacobian in degrees four through eight, the variable-scale `N-2` bound, and
 the Toeplitz--Hessenberg determinant equations.
 
-The three-real search checker constructs exact pure- and mixed-moment ideals
-for finite polynomial supports involving `(Z,W,T)`.  Its unit-ideal results
-are exact exclusions of the specified supports; nonunit truncations are
-reported only as survivors, not witnesses.  The companion search note records
-the all-orders separated-quadratic theorem, the odd-dimensional polarization
-obstruction for the existing determinant architecture, and the remaining
-higher-chaos frontier.
+The former three-real search checkers and their scoped finite-support
+exclusions are preserved under `archive/`; they are intentionally absent from
+the active reproduction sequence.
 
 The second checker reconstructs the correction using only sparse `Fraction`
 arithmetic, independently solves the fixed branch through order 14, and

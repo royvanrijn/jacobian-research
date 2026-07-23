@@ -44,13 +44,14 @@ and put
 > [recursive resonance atlas](RECURSIVE_RESONANCE_ATLAS.md) constructs the
 > algebraic flag divisors by normalized initial forms in framed residue
 > screens, proves every contraction formula, and extracts the simultaneous
-> full-centralizer characters.  This completes the explicit corrected H1
-> stack atlas.
+> full-centralizer characters.  Its selected-factor/log-étale comparison
+> supplies global coverage and descent, proving `H1-STACK`.
 > Finally, the
 > [source-graph finite-normalization
 > theorem](SOURCE_GRAPH_FINITE_NORMALIZATION.md) proves that the wonderful
-> graph is already the complete coarse polynomial source graph.  Corrected
-> H1, H2, and coarse H3 are therefore unconditional.  The
+> graph is already the complete coarse polynomial source graph.
+> `H1-COARSE`, `H1-STACK`, H2, and coarse H3 are therefore complete, with
+> the two H1 claims carrying separate proofs and dependencies.  The
 > [monodromy-centralizer theorem](MONODROMY_INERTIA_CHARACTERS.md) also
 > closes all radial and generic simple-resonance inertia.
 
@@ -859,10 +860,12 @@ pullback of the branch-diagonal building set, and finite normalization
 identifies it with the coarse polynomial source graph.  Corrected H2 is
 therefore unconditional.  The
 [recursive resonance atlas](RECURSIVE_RESONANCE_ATLAS.md) supplies the
-explicit logarithmic stack presentation on higher-codimension resonance
-components: flag-divisor coordinates, residue compatibility, contraction
-descent, and simultaneous inertia characters.  Corrected H1 is therefore
-unconditional as well.
+logarithmic stack presentation on
+higher-codimension resonance components: flag-divisor coordinates, residue
+compatibility, contraction descent, and simultaneous inertia characters,
+with global coverage and descent supplied by its log-étale comparison.  This
+is the separate `H1-STACK` theorem; corrected H2 uses only the much shorter
+`H1-COARSE` comparison.
 
 ### 6.5 Coarse affine-mark descent
 

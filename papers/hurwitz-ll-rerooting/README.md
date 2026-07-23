@@ -47,10 +47,11 @@ trivial inertia, whereas unequal multiplicities can retain a finite
 subgroup.  It also computes generic simple-resonance inertia from anchors
 and node partitions.  The
 [recursive resonance atlas
-theorem](../../extended-geometry/RECURSIVE_RESONANCE_ATLAS.md) constructs
-all source flag divisors by normalized initial forms in framed residue
-screens, proves contraction descent, and extracts the full simultaneous
-centralizer characters.  This completes corrected H1.  The
+theorem](../../extended-geometry/RECURSIVE_RESONANCE_ATLAS.md) gives
+normalized-initial-form formulas for source flag divisors in framed residue
+screens, contraction descent, and simultaneous centralizer characters.  Its
+selected-factor/log-étale comparison supplies all-degree coverage and
+effective descent, proving `H1-STACK`.  The
 degree-six `(2,2,2)` boundary has the predicted six-cone radial braid fan, but
 a triple leading-value resonance retains a second-scale cross-ratio.  Thus
 the radial fan is only the first toric layer; the full logarithmic graph needs
@@ -75,8 +76,8 @@ tame-stack reconstruction identifies it with the labelled ACV graph on this
 chart.  The three-pair wreath-product quotient remains separate.  Gluing
 under the full root-label action is canonical on the global labelled graph,
 and the corrected H2 marked/unmarked quotient is formal there.  Corrected
-H1, H2, and coarse H3 are therefore complete; the comparison with the
-unmodified root-stable quotient remains false.
+`H1-COARSE`, `H1-STACK`, H2, and coarse H3 are therefore complete, while the
+comparison with the unmodified root-stable quotient remains false.
 
 ACV and Deopurkar provide the compactification technology cited in the paper.
 They do not externally review the repository's specialized LL-degree or

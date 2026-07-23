@@ -745,7 +745,8 @@ general labelled-node checker exhausts 1,554 index profiles, proves the
 phase-quotient and label-preserving inertia formulas, checks permutation
 equivariance, and verifies that the corrected marked/unmarked quotient over
 any labelled normalized graph has degree `N-2`.  This makes label gluing and
-the finite H2 factor formal over the corrected H1 graph.  The
+the finite H2 factor formal over the `H1-COARSE` graph, independently of the
+substantially stronger `H1-STACK` theorem.  The
 rerooting-groupoid
 audit separately checks the quotient degree `N-2`,
 the selected-in/selected-out boundary pullbacks, generic transposition
@@ -833,8 +834,8 @@ form on the same tensor.  Together they disprove the proposed uniform
 inverse-degree-nine bound while leaving the full-class invertibility-only
 question open.
 
-The sharp remaining Gaussian dimension and the cross-conjecture minimum
-ledger have their own fast exact target:
+The sole unresolved Gaussian dimension, GMC(2), and the cross-conjecture
+minimum ledger have their own fast exact target:
 
 ```bash
 make verify-counterexample-scoreboard
@@ -853,9 +854,13 @@ supplies the fourth chart.  Seven further exact rational unit-ideal
 calculations exclude the last three supports and 20 charts through moment
 six.  Thus all 121 mixed-sign four-weight cubic charts are closed and a
 cubic GMC(2) counterexample needs at least five rotational weights.  The
-target also recomputes three unit Groebner bases for the direct Long-style
+target also proves the Bessel--factorial moment formula for the quartic
+three-level family with support `{-1,0,1}` and computes four exact rational
+unit ideals through moment six, closing that family in total degree at most
+four.  It recomputes three unit Groebner bases for the direct Long-style
 collapse and writes the dimension/rank/index/degree scoreboard.  It does not
-claim to settle GMC(2).
+claim to settle GMC(2); the all-degree three-level Bessel--factorial rigidity
+problem remains open.
 
 A final group of checks uses the first collision-coordinate values `0,1,-1`
 to fix the multiplier, expands the homogeneous 42-variable quartic, descends
@@ -877,6 +882,9 @@ A local proof of the
 fixed-dimensional DVEZ/Zhao implication, including Gaussian contraction, the
 countable-union step, and formal inversion, completes the nonexplicit route to
 `not GMC(42)`; `not GMC(158)` remains the exact conservative Long-route bound.
+These high-dimensional bounds are retained as logical-transport regressions,
+not active witness searches: Long's five-term three-real example already
+settles all dimensions `n>=3`.
 It also verifies the uniform weighted-seed Gaussian bridge:
 first the standalone Gaussian--Lagrange identity for a nonlinear polynomial
 map with nonzero constant terms, then the exact pencil branch, polynomial
@@ -1066,6 +1074,42 @@ power chart and proves over `QQ` that the synchronization defect belongs to
 the Hessian residual ideal plus the fifth power of the normal ideal.  Thus
 the full six-parameter component synchronizes through normal order four.
 The exact basis has size `88`.
+
+The conceptual all-order upgrade on the dense power chart is replayed by
+
+```bash
+make verify-degree42-conormal-rees-synchronization
+```
+
+The normal Jacobian has maximal-minor ideal `(w0^2)`.  Hence away from
+`w0=0` the residual conormal map is onto, complete Nakayama identifies the
+completed residual and normal ideals, and the synchronization defect
+vanishes at every Rees order.  On `w0=0` the conormal rank is exactly
+three, so the existing fourth-order certificate remains the correct global
+statement and the all-order primary frontier is confined to that divisor.
+
+The next normal order has an exact good-prime certificate, and one rational
+point on the remaining divisor has an exact untruncated characteristic-zero
+certificate:
+
+```bash
+.venv/bin/python scripts/verify_degree42_transported_27_normal_jets.py \
+  --prime 32003 --normal-order 5 --timeout 240
+.venv/bin/python scripts/verify_degree42_transported_27_normal_jets.py \
+  --base-values 1,2,3,0,5,6 --normal-order 0 --timeout 240
+```
+
+They return basis sizes `179` and `8`, respectively.  To attempt the
+remaining generic characteristic-zero calculation directly on the
+conormal divisor, use
+
+```bash
+.venv/bin/python scripts/verify_degree42_transported_27_normal_jets.py \
+  --w0-zero --normal-order 5
+```
+
+That function-field calculation currently exceeds 300 seconds; the timeout
+is a performance boundary, not a failed reduction.
 
 The generated certificates are stored as the conservative
 [`79-variable artifact`](artifacts/generated-results/long_bcw_79_counterexample.json)

@@ -85,6 +85,32 @@ contains the inverse and discriminant geometry.  Define
  \bigl(H'(W)+c\gamma,\,W(H'(W)+c\gamma)-H(W)\bigr).
 \end{equation}
 
+\begin{lemma}[coprime coordinate degrees]
+\label{lem:coprime-coordinate-degrees}
+Let $f,g\in k[T]$ be nonconstant, set $L=k(f,g)\subset k(T)$, and let
+$d=[k(T):L]$, the generic degree of $T\mapsto(f(T),g(T))$ onto its image.
+Then
+\[
+ d\mid\deg f,\qquad d\mid\deg g.
+\]
+Consequently the parameterization is birational onto its image whenever
+$\deg f$ and $\deg g$ are coprime.
+\end{lemma}
+
+\begin{proof}
+Let $\infty$ be the place at infinity of $k(T)$ and let $P$ be its
+restriction to $L$.  Since $f$ has no finite pole, $\infty$ is the unique
+place of $k(T)$ above the pole $P$ of $f$; moreover its residue degree over
+$P$ is one.  The fundamental equality for places therefore gives
+$d=e(\infty/P)$.  Hence
+\[
+ \deg f=-v_\infty(f)
+ =e(\infty/P)\bigl(-v_P(f)\bigr),
+\]
+so $d\mid\deg f$.  Applying the same argument to $g$ gives
+$d\mid\deg g$.
+\end{proof}
+
 \begin{theorem}[tangent-map core and weighted suspension]\label{thm:tangent-core}
 The map $\Phi_H$ is finite of generic degree $n$, with inverse equation
 \begin{equation}\label{eq:core-inverse}
@@ -145,8 +171,9 @@ constant, this also proves finiteness and generic degree $n$.  Directly,
  \end{pmatrix},
 \]
 whose determinant is $-c^2\gamma$.  Restriction to $\gamma=0$ gives the
-displayed normalization parameterization; its two pole orders at infinity
-are $n-1$ and $n$, so it is birational onto the discriminant.
+displayed normalization parameterization.  Its coordinate degrees are
+$n-1$ and $n$, so Lemma~\ref{lem:coprime-coordinate-degrees} makes it
+birational onto the discriminant.
 The coordinate ring of that discriminant is
 $k[H'(W),WH'(W)-H(W)]\subset k[W]$.  Since
 \[

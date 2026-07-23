@@ -1,10 +1,13 @@
-# Recursive resonance screens and the explicit H1 stack atlas
+# Recursive resonance screens and the log-étale H1-STACK comparison
 
 ## Result
 
-The formerly missing explicit-stack part of corrected H1 has a uniform
-construction.  No closed formula for every source point and no new
-vertexwise Hurwitz search is required.
+This document proves `H1-STACK` by identifying the recursive screen
+construction with the fs-saturated logarithmic base change of the
+admissible-cover stack.  The bounded chart families in the reproduction
+section test the formulas; exhaustive coverage and effective descent follow
+instead from the selected-factor normalization lemma and the log-étale
+comparison theorem.
 
 Work in characteristic zero on a labelled splitting chart of the polynomial
 root space.  Let \(\mathcal N\) be the laminar family of critical-value
@@ -53,7 +56,7 @@ cover.  Radial root collisions are the anchored instances already described
 by the general radial atlas; nonradial Maxwell and caustic refinements are
 the transposition-tree instances; mixed strata use the same recursion.
 
-> **Recursive polynomial atlas theorem.**  
+> **Recursive polynomial atlas theorem (`H1-STACK`).**
 > The normalized closure of the labelled generic polynomial cover over the
 > normalized wonderful target graph is the tame Deligne--Mumford stack
 > obtained from (0.1)--(0.4), admissible node saturation, and the simultaneous
@@ -61,10 +64,12 @@ the transposition-tree instances; mixed strata use the same recursion.
 > nested-set contraction and descends from collision-adapted splitting charts.
 > Its coarse space is the wonderful target graph.
 
-Together with the previous finite-normalization theorem, this proves the
-corrected H1 compactification, not the original false identification with
-the unmodified root-stable quotient.  The degree-five chart still requires
-the normalized blowup of \((x^3,y^2)\).
+The selected-factor lemma and log-étale comparison in Section 7 prove the
+global identification, exhaustive coverage, and effective descent at once.
+The previous finite-normalization theorem independently proves
+`H1-COARSE`.  The original identification with the unmodified root-stable
+quotient remains false, and the degree-five chart still requires the
+normalized blowup of \((x^3,y^2)\).
 
 The target-screen construction is the local “screen” form of the
 Fulton--MacPherson/wonderful compactification.  Li's arrangement theorem
@@ -549,7 +554,83 @@ Thus algebraicity, the DM property, separatedness, and the underlying coarse
 comparison are consequences of the global construction (7.2), not of a
 formal gluing assertion.
 
-### 7.2 Local comparison theorem
+### 7.2 Log-étale comparison theorem
+
+Give \(B\) the divisorial fs log structure of its wonderful boundary and
+give the admissible-cover stack the divisorial fs log structure of its
+nodal boundary.  At a geometric point, let \(P\) be the characteristic
+monoid of \(B\), let \(E\) be the set of target nodes, and write
+\(\mathbf N^E\to P\) for the target smoothing map.  If the source nodes
+over \(\eta\in E\) have indices \(e_{\eta1},\ldots,e_{\eta r_\eta}\), set
+
+\[
+ Q_\eta
+ =
+ \left\langle
+   \delta_\eta,\sigma_{\eta1},\ldots,\sigma_{\eta r_\eta}
+   \ \middle|\
+   \delta_\eta=e_{\eta j}\sigma_{\eta j}\ (1\le j\le r_\eta)
+ \right\rangle
+\]
+
+and \(Q=\bigoplus_{\eta\in E}Q_\eta\), where the \(\eta\)-th generator of
+\(\mathbf N^E\) maps to \(\delta_\eta\).  The normalized pullback monoid is
+
+\[
+ P_{\mathrm{cov}}
+ =
+ \left(P\oplus_{\mathbf N^E}Q\right)^{\mathrm{sat}}. \tag{7.2a}
+\]
+
+The following toroidal lemma is the point that turns the screen formulas
+into a comparison proof.
+
+> **Lemma 7.1 (selected-factor normalization).**
+> Let \(X\) be a normal excellent fs logarithmic stack, let \(Y\to X\)
+> be Kummer log-étale and finite on coarse spaces, and let
+> \(U\subset X\) be the dense trivial-log locus.  If a section
+> \(U\to Y_U\) selects a generic factor, then the normalization of its
+> reduced closure in \(Y\) is Kummer log-étale over \(X\).  Strict étale
+> locally, it is exactly the normal toroidal factor of the saturated
+> pushout chart selected by the generic factor.
+
+### Proof
+
+Pass to a strict henselian toroidal chart
+\(\operatorname{Spec}A\to X\).  Strict étale locally, a Kummer log-étale
+map is strict étale over a Kummer toric chart.  Its unsaturated coordinate
+ring has the form
+\[
+ A\otimes_{\mathbf Z[P]}\mathbf Z[P']
+\]
+for a Kummer map \(P\to P'\).  The normalization of an affine monoid
+algebra is the algebra of the saturated monoid, so normalizing this chart
+replaces the monoid pushout by its saturation.  Normalization commutes with
+strict étale base change.  Finally, the normalization of a reduced ring is
+the product of the normalizations in the function fields of its minimal
+primes.  The generic section selects one of those fields; its reduced
+closure has exactly that function field, and its normalization is therefore
+the corresponding saturated toroidal factor.  Selection introduces neither
+extra integral equations nor extra normalization branches.  The
+construction is invariant under strict étale change and hence descends.
+\(\square\)
+
+For the two normalization steps used here, see the Stacks Project on
+[normalization by generic factors](https://stacks.math.columbia.edu/tag/035P)
+and [normalization under smooth, hence strict étale, base
+change](https://stacks.math.columbia.edu/tag/082D).  The monoid statement is
+the standard affine-toric normalization theorem; for example, it is
+Proposition 1.3.8 in Cox--Little--Schenck,
+[Toric Varieties](https://web.ma.utexas.edu/users/ikmartin/pages/blog/toric-page/documents/Toric-Varieties_Cox-Little-Schenck.pdf).
+
+> **Theorem 7.2 (log-étale comparison).**
+> Strict étale locally at every geometric point of \(\mathcal G\), each
+> selected polynomial factor is the toroidal chart associated with
+> \(P\to P_{\mathrm{cov}}\), together with one discrete Hurwitz class.
+> These charts are Kummer log-étale over \(B\), are jointly surjective, and
+> have no additional integral equations or normalization branches.
+
+### Proof
 
 Fix a geometric point \(x\to\mathcal G\), with target nodes indexed by
 \(\eta\).  Write \(q_\eta\) for the corresponding target smoothing
@@ -580,6 +661,23 @@ covers](https://arxiv.org/abs/math/0106211), and
 Cavalieri--Markwig--Ranganathan,
 [Tropicalizing the space of admissible
 covers](https://arxiv.org/abs/1401.4626), Sections 4.2.1--4.2.2.
+There the Harris--Mumford chart is explicitly possibly nonnormal toric, its
+normalization has
+\(\prod_j e_{\eta j}/\operatorname{lcm}_j(e_{\eta j})\) branches at
+\(\eta\), and the branch morphism is toroidal.  Its cone map is an
+isomorphism after forgetting the integral structures; hence the
+characteristic-monoid map is Kummer, while the remaining strict part is
+étale.  This is the Kummer log-étale assertion used below.
+
+Normalization of a toroidal base change is saturation of its pushout
+monoid.  Thus the completed local ring of the normalized pullback is the
+completed monoid algebra of (7.2a), with the same strict-étale parameters
+as \(A\).  In other words, it is the fs logarithmic fiber product.  The
+admissible-cover chart is Kummer log-étale over the target chart, and this
+property is preserved by fs base change.  After strict henselization, the
+generic polynomial section selects a union of normal local factors.  That
+selection changes neither the characteristic monoid nor the deformation
+equations, by Lemma 7.1.
 
 For one target node, put
 
@@ -616,7 +714,9 @@ surjective.  Excellence identifies their completed local rings with the
 selected normalized factors of (7.3).  Conversely every selected factor
 that meets the generic polynomial section occurs in \(\mathcal G\), by the
 definition of reduced closure.  This proves chart exhaustion and rules out
-additional integral equations or unrecorded normalization branches.
+additional integral equations or unrecorded normalization branches:
+Lemma 7.1 identifies each normalized closure with its selected saturated
+toroidal factor.  This proves Theorem 7.2. \(\square\)
 
 ### 7.3 Identification with the recursive formulas
 
@@ -740,19 +840,21 @@ It is not merely a stabilizer calculation for a candidate chart: (7.10)
 is the stabilizer of the selected factor in the local quotient presentation
 of \(\mathcal G\).
 
-Combining Sections 7.1--7.5 with the source-graph
+Combining Theorem 7.2 and Sections 7.3--7.5 with the source-graph
 finite-normalization theorem gives:
 
-> **Corrected H1 theorem.**  
+> **H1-STACK theorem.**
 > The polynomial Hurwitz--LL graph is the normalized selected
 > admissible-cover stack over the normalized wonderful pullback of the
 > labelled branch-diagonal building set.  Its coarse space is that wonderful
 > graph.  Its explicit logarithmic charts are (0.1)--(0.4), and its complete
 > inertia is the simultaneous full-centralizer character of Section 5.
 
-The theorem does not revive the original map from the unmodified root-stable
-space.  It identifies the corrected graph object forced by the degree-five
-obstruction.
+The computations below verify coordinate identities and sample the
+character compiler; they are not used for exhaustive coverage or descent.
+Those follow from Theorem 7.2 at arbitrary geometric points.  The coarse
+comparison is also the independent `H1-COARSE` theorem.  Neither theorem
+revives the original map from the unmodified root-stable space.
 
 ## Reproduction
 

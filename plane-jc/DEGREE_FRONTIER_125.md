@@ -93,8 +93,13 @@ This is a lower bound for the **larger** coordinate degree.  It neither says
 5. **Two Laurent polygons to contradiction.**  The coordinate change
    \(t=xy^2,z=y^{-1}\), the full lattice supports, the five bracket equations,
    all compatibility equations used, both sign branches, and the exact ideal
-   certificates are reconstructed in the companion note.  Case 2 has an
-   exact unit certificate.  Case 1 splits exhaustively as \(s=\pm c\); the
+   certificates are reconstructed in the companion note.  In Case 2,
+   projectivizing the two residual scale variables and applying Cramer's rule
+   leaves two degree-eight univariate eliminants on each chart.  Their
+   resultants, the determinant-degenerate resultants, and the origin
+   resultant are all certified nonzero at the good reduction
+   \(p=101,U=55\); an independent characteristic-zero unit syzygy gives a
+   second proof.  Case 1 splits exhaustively as \(s=\pm c\); the
    pre-division \(h=0\) strata have unit certificates, while on \(h\ne0\) an
    exact identity forces \(h=0\).  Hence neither polygon can occur.
 

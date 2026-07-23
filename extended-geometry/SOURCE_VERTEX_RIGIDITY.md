@@ -30,7 +30,7 @@ third fiber \(D_c=f^*[c]\), or merely one prescribed point of that fiber,
 fixes the scalar.  Hence the source component and the inverse-image data of
 three target flags determine the component map uniquely.
 
-An explicit logarithmic presentation of the source half of H1 is therefore
+An explicit logarithmic presentation of the source half of `H1-STACK` is therefore
 reduced to one exact problem:
 
 > **Flag-extension problem.**  
@@ -204,7 +204,7 @@ the source labels do not kill it.  The theorem does not incorrectly identify
 the diagonal phase group with inertia; the character test in the
 labelled-node theorem still decides which automorphisms survive.
 
-## 4. Consequence for the H1 comparison
+## 4. Consequence for H1-STACK
 
 Let \(B_N^{\mathrm{tgt}}\) be the
 [normalized wonderful pullback](BRANCH_GRAPH_WONDERFUL_PULLBACK.md), and
@@ -319,7 +319,7 @@ For each nested target stratum:
 6. apply the node phase/inertia rule only after the coarse source
    enhancement has passed.
 
-This is the smallest modular certificate that can complete H1.  It avoids
+This is the smallest modular certificate that can complete `H1-STACK`.  It avoids
 re-enumerating ambient Hurwitz classes and keeps the target fan, algebraic
 residue realizability, and stack inertia as separate verifiable layers.
 
