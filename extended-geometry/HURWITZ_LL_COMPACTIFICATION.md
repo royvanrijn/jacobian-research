@@ -41,11 +41,13 @@ and put
 > residue-resonance strata.  The
 > [polynomial monodromy-forest theorem](POLYNOMIAL_MONODROMY_FORESTS.md)
 > determines their source dual graphs and node indices.  The
-> [recursive resonance atlas](RECURSIVE_RESONANCE_ATLAS.md) constructs the
-> algebraic flag divisors by normalized initial forms in framed residue
-> screens, proves every contraction formula, and extracts the simultaneous
-> full-centralizer characters.  Its selected-factor/log-étale comparison
-> supplies global coverage and descent, proving `H1-STACK`.
+> [fs logarithmic H1-STACK theorem](RECURSIVE_RESONANCE_ATLAS.md) defines
+> the selected factor by
+> \((P\oplus_{\mathbf N^E}Q)^{\mathrm{sat}}\) and proves compatibility of
+> normalization with the generic selection.  Framed residue screens,
+> normalized initial forms, contractions, and simultaneous
+> full-centralizer characters are consequences of this log chart, which
+> also supplies global coverage and descent.
 > Finally, the
 > [source-graph finite-normalization
 > theorem](SOURCE_GRAPH_FINITE_NORMALIZATION.md) proves that the wonderful

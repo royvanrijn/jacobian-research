@@ -245,13 +245,10 @@ Then
 ### Proof
 
 The closed immersion (10) gives a surjection `A -> B_t`, so
-`length(A)>=2^t`.  The regular sequence of `t` quadrics has quotient length
-`2^t`.  Since the associated graded ring of `A` is a quotient of that
-quadratic complete intersection,
-
-\[
- \operatorname{length}A=\operatorname{length}\operatorname{gr}A\le2^t.
-\]
+`length(A)>=2^t`.  The
+[Kuranishi nilpotence cutoff theorem](DEFECT_SYMBOL_APOLARITY.md#2-kuranishi-nilpotence-cutoff-theorem),
+applied to the regular sequence of `t` quadrics, gives
+`length(A)<=2^t` (and also `m_A^(t+1)=0`).
 
 The surjection has equal finite lengths and is therefore an isomorphism.
 `square`

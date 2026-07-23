@@ -22,43 +22,73 @@ coefficient identity used in Long's proof are transcribed and checked in
 finite ranges by
 [`verify_long_gaussian_moments.py`](../scripts/verify_long_gaussian_moments.py).
 
-Accordingly, the repository will not start or extend broad witness searches
-in dimensions \(n\geq3\).  The sole active Gaussian-dimension problem is
-\(\mathrm{GMC}(2)\).
+The lower-face prime theorem now proves \(\mathrm{GMC}(2)\).  Together with
+the known one-dimensional result and Long's counterexamples, the
+dimension-by-dimension classification is therefore:
+\[
+\operatorname{GMC}(n)\quad\Longleftrightarrow\quad n\leq2.
+\]
+Accordingly, there is no remaining Gaussian-dimension problem.
 
-## Active frontier
+## Resolution of the former frontier
 
-The cubic Gaussian null-cone theorem proves GMC(2) for every polynomial of
-total degree at most three.  Therefore any counterexample must have:
+For arbitrary
+\[
+P=\sum_kT^kB_k(U),
+\]
+form the radial-order Newton points
+\((k,\operatorname{ord}_U B_k)\).  If the rotational support straddles
+zero, the lower convex envelope over weight zero has an exposed contact
+face whose Laurent polynomial also has zero in its Newton interval.  The
+Duistermaat--van der Kallen theorem supplies a nonzero constant term \(c\)
+in some power of that face.  At the corresponding prime-dilated moment,
+Frobenius and factorial divisibility isolate \(c^p\), contradicting
+pure-moment vanishing.  Thus every pure-moment-zero polynomial has strictly
+one-sided rotational support, which gives GMC(2).  See the
+[lower-face theorem](TWO_REAL_GMC_LOWER_FACE_THEOREM.md).
 
-- total degree at least four;
-- mixed-sign rotational support; and
-- nonlinear dependence on both circular coordinates.
-
-Through total degree six, the exact three-level family
-\(P=WA(U)+C(U)+ZB(U)\) with rotational support \(\{-1,0,1\}\) is also
-closed: centering gives a Bessel--factorial functional equation, and exact
-characteristic-zero calculations exclude all 6, 10, and 15 invariant
-coefficient charts in degrees four, five, and six.  See the
+The route to the theorem produced several independently useful intermediate
+results.  The exact three-level family
+\(P=WA(U)+C(U)+ZB(U)\) with rotational support \(\{-1,0,1\}\) is now closed
+in every degree.  After centering, its Bessel--factorial functional equation
+has a two-case prime-endpoint proof: the moments of orders \(p\) and \(2p\)
+isolate the two endpoint invariants according as
+\(\operatorname{ord}_U D\geq2\operatorname{ord}_U C\) or the reverse
+inequality, where \(D=UAB\).  A direct reduction of the finitely generated
+coefficient ring replaces the preliminary algebraic-coefficient
+specialization.  The earlier 6, 10, and 15 chart calculations in degrees
+four, five, and six remain finite-cutoff regressions.  See the
+[standalone theorem](PRIME_ENDPOINT_BESSEL_FACTORIAL_RIGIDITY.md) and
 [support-graph analysis](TWO_REAL_GMC_SUPPORT_GRAPH_EXPLORATION.md).
 
-The next positive target is a degree-uniform null-cone theorem that separates
-the radial factorial coefficients from zero-sum rotational-weight
-combinatorics.  Its sharpest current subproblem is all-degree
-three-level Bessel--factorial rigidity: prove that the functional equation in
-the support-graph analysis forces both invariant polynomials to vanish.  New
-Gaussian search code must either address this two-real frontier directly or
-provide a finite, theorem-directed certificate for it.
+The same prime method also closes the first genuine circuit
+\(\{-2,-1,1,2\}\).  Frobenius gives
+\(\operatorname{CT}(P^{kp})\equiv\operatorname{CT}(P^k)^p\pmod p\).
+The toric relation leaves only unique minima, adjacent two-way ties, and a
+four-way tie; invariant moments through degrees 12 separate all of them.
+There is no surviving valuation cone.
 
-The current leading route is differential rather than Gröbner-theoretic.
+It also closes every unit star
+\(\{0,1,-d_1,\ldots,-d_q\}\) and its reflection.  The zero-weight relation
+monoid is free on the leaf invariants, and minimum normalized \(U\)-order
+plus prime dilation isolates one of them.  This includes the smallest star
+\(\{-2,-1,0,1\}\) in all degrees.
+
+The unit-star proof also identifies why literal graph leaf removal is not
+the final formulation: arbitrary weights have mixed Hilbert-basis relations
+such as \(5-2-3=0\).  The lower-face theorem packages all such relations at
+once, so no arbitrary-star or multi-cycle case remains.
+
+The differential systems remain structural interpretations rather than an
+active proof route.
 For \(G=((1-tC)^2-4t^2D)^{-1/2}\), integration by parts reduces every radial
 moment \(\mathcal L(U^kG)\) to finitely many initial radial moments and turns
 the two algebraic differential identities for \(G\) into a finite
-meromorphic Pfaffian system.  Three-level rigidity becomes the assertion
+meromorphic Pfaffian system.  In the three-level case the prime theorem says
 that its distinguished factorial initial-value solution cannot remain in
 the hyperplane \(\mathcal L(G)=1\).  The support-graph analysis gives the
 exact recurrence, a degree-\((2,3)\) regression, and the associated
-Laplace--Bessel and Laguerre interpretations.
+Laplace--Bessel and Laguerre interpretations for possible reuse.
 
 ## Retained high-dimensional material
 

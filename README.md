@@ -29,10 +29,12 @@ shows that the geometric degrees of noninvertible Keller maps of
 For Gaussian moments, Long's explicit five-term polynomial settles GMC
 negatively in three real variables and, by adjoining unused coordinates, in
 every dimension `n>=3`.  Broad high-dimensional searches are archived.
-The repository's only active Gaussian frontier is the
-[GMC(2) research program](extended-geometry/GMC2_RESEARCH_PROGRAM.md);
-high-dimensional implication chains and weighted families remain as examples
-of logical transport.
+The [lower-face prime theorem](extended-geometry/TWO_REAL_GMC_LOWER_FACE_THEOREM.md)
+proves GMC in two real variables, completing the classification:
+`GMC(n)` holds exactly for `n<=2`.  The former
+[GMC(2) research program](extended-geometry/GMC2_RESEARCH_PROGRAM.md) now
+records the proof route; high-dimensional implication chains and weighted
+families remain as examples of logical transport.
 
 ## The foundational map in two forms
 
@@ -468,9 +470,9 @@ original comparison with the unmodified root-stable quotient is false.  The
 corrected graph is now constructed at the coarse level: the normalized
 wonderful target pullback and finite selected polynomial closure prove
 `H1-COARSE` and corrected H2, while finite normalization proves coarse H3.
-The recursive source-screen construction is identified with the normalized
-admissible-cover closure by the log-étale comparison theorem, proving
-`H1-STACK`.  The standalone
+The `H1-STACK` theorem identifies the selected fs logarithmic factor by the
+saturated pushout \((P\oplus_{\mathbf N^E}Q)^{\mathrm{sat}}\); recursive
+source screens are charts of that stack.  The standalone
 [DVR marking audit](papers/hurwitz-ll-rerooting/dvr-marking-audit.tex)
 retains the historical conditional analysis and its post-repair resolution.
 The subsequent [branch-scale fan experiment](extended-geometry/BRANCH_SCALE_FAN.md)
@@ -564,13 +566,16 @@ frontiers:
 - `OP-RITT`: `HR12` now proves the exact all-degree codimension formula and
   completes the degree-eight and degree-twelve diagrams, including the
   all-four Chebyshev intersection in degree twelve.  `HRSYNC` closes the
-  degree-thirty global all-six intersection and the primitive pairs
-  `{2,15}` and `{3,10}`.  The three transported pairs `{2,3}`, `{2,5}`, and
-  `{3,5}` remain uncertified, together with the uniform all-degree transport,
-  component-completeness, coherence, and boundary-gluing problems.  `HRCF`
+  degree-thirty global all-six intersection and all fifteen pair schemes,
+  including the transported pairs `{2,3}`, `{2,5}`, and `{3,5}`.  `HRCF`
   now proves the all-degree common-right-factor uniqueness step over every
-  characteristic-zero base ring; the uniform gap is existence of the
-  terminal refinement through nonreduced Hessian thickenings.
+  characteristic-zero base ring.  In degree forty-two, `HR42J` supplies the
+  fourth-normal-order defect membership and `HR42K` promotes it to exact
+  synchronization on the conormal, regular quadratic/cubic, discriminant,
+  generic resultant, and punctured higher-gcd strata.  The residual scalar
+  quartic divisors, their contact-five vertex, the odd `w2=0` core, uniform
+  terminal-refinement existence through nonreduced thickenings,
+  component-completeness, coherence, and boundary gluing remain.
 - `OP-RMIN`: the exact current intervals are
   `3<=r_cub<=17`, `3<=nu_cub<=18`,
   `3<=rho_HN,4<=37`, and `6<=n_HN,4<=42`.  Polynomial-gate BCW circuits

@@ -131,10 +131,8 @@ for every \(m\geq1\),
 \]
 
 This is the desired finite-alphabet functional equation: it depends only on
-the two invariant polynomials \(C,D\).  If \(C=0\), the even equations and
-the one-variable Factorial Theorem give \(D=0\).  If \(D=0\), the same
-theorem gives \(C=0\).  Hence any new phenomenon must be a coupled
-cancellation between \(C\) and \(D\).
+the two invariant polynomials \(C,D\).  The prime-endpoint theorem below
+closes both axes and rules out every coupled cancellation between them.
 
 The ordinary moment series is even simpler:
 
@@ -157,6 +155,69 @@ of
 This algebraic resolvent is preferable to the Bessel series for
 classification.  It also shows that the three-level problem depends only on
 \(C\) and \(D\), not on the individual factorization \(D=UAB\).
+
+### 4.1 All-degree Bessel--factorial rigidity
+
+The functional equation admits a direct prime-endpoint proof.  No
+differential equation, degree bound, algebraic-coefficient specialization,
+or external one-variable theorem is needed.
+
+> **Bessel--factorial rigidity theorem.** Let \(C,D\in\mathbb C[U]\), and put
+> \[
+> H_m(C,D)=
+> \sum_{r=0}^{\lfloor m/2\rfloor}
+> \frac{m!}{(r!)^2(m-2r)!}C^{m-2r}D^r.
+> \]
+> If
+> \[
+> \mathcal L(H_m(C,D))=0\qquad(m\geq1),
+> \]
+> then \(C=D=0\).
+
+The essential congruence is the following reusable statement:
+
+> **Prime-endpoint lemma.** For every odd prime \(p\),
+> \[
+> H_p(C,D)\equiv C^p,\qquad
+> H_{2p}(C,D)\equiv C^{2p}+2D^p\pmod p.           \tag{4.5}
+> \]
+
+Put the coefficients of \(C,D\), together with the inverses of their lowest
+nonzero coefficients, in their literal finite-type subring
+\(R\subset\mathbb C\).  For every sufficiently large prime \(p\),
+\(\operatorname{Spec}R\) has a characteristic-\(p\) fiber, and the selected
+coefficients remain units after reduction.  If
+\(e=\operatorname{ord}_U D\geq2\operatorname{ord}_U C=2a\), cancel
+\((ap)!\) from the \(p\)-th factorial moment and reduce (4.5); only the
+lowest coefficient of \(C^p\) survives.  If \(e<2a\), cancel \((ep)!\) from
+the \(2p\)-th moment; only twice the lowest coefficient of \(D^p\) survives.
+Both are units, a contradiction.  The same two arguments directly cover
+the axes.
+
+The standalone note
+[Prime-endpoint rigidity for the Bessel--factorial transform](PRIME_ENDPOINT_BESSEL_FACTORIAL_RIGIDITY.md)
+gives the finite-type reduction lemma, all coefficient valuations, the
+factorial-normalization audit, and the complete proof.
+
+For the original three-level polynomial, \(D=UAB\).  Consequently:
+
+> **All-degree three-level support theorem.** If
+> \[
+> P=WA(U)+C(U)+ZB(U)
+> \]
+> has \(\mathbb E(P^m)=0\) for every \(m\geq1\), then
+> \[
+> C=0,\qquad A=0\ \text{or}\ B=0.
+> \]
+> Thus its rotational support is one-sided, and \(P\) satisfies
+> \(\operatorname{GMC}(2)\).
+
+Two independent arithmetic regressions check the endpoint congruences and
+both order cases:
+[`verify_two_real_gmc_three_level_rigidity.py`](../scripts/verify_two_real_gmc_three_level_rigidity.py)
+uses SymPy, while
+[`audit_prime_endpoint_rigidity_independent.py`](../scripts/audit_prime_endpoint_rigidity_independent.py)
+uses a separate pure-Python polynomial implementation.
 
 The mixed GMC moments have an equally useful marked form.  For
 \(Q=T^\ell R(U)\), only indices with the appropriate weight imbalance
@@ -208,51 +269,84 @@ characteristic-zero calculations give:
 
 Therefore:
 
-> **Low-degree three-level theorem.** No polynomial of total degree at most six
-> with all three weight components \(-1,0,1\) nonzero has all pure Gaussian
-> moments zero.
+> **Bounded certificate regression.** In total degrees four, five, and six,
+> the first \(6,8,9\) moments, respectively, already exclude every chart
+> with all three weight components \(-1,0,1\) nonzero.
 
 The exact replay is
 [`verify_two_real_gmc_three_weight_low_degree.py`](../scripts/verify_two_real_gmc_three_weight_low_degree.py).
 
-This closes the proposed smallest test through degree six.  It does not prove the
-circuit-forest conjecture for arbitrary radial degree.
+These calculations are now finite-cutoff certificates and independent
+regressions for the all-degree theorem.  They remain useful because the
+prime-endpoint proof uses arbitrarily large prime-indexed moments and does
+not give the displayed small cutoffs.
 
-## 6. Next finite searches
+## 6. Unit-star rigidity and the forest boundary
 
-The two graph interpretations lead to different next computations.
+The prime method proves the smallest genuine star, and every star whose
+unique weight on one side is \(1\).  For
+\[
+P=TB_1+C+T^{-1}UA_1+T^{-2}U^2A_2,
+\]
+the primitive invariants are
+\[
+X=UA_1B_1,\qquad Y=U^2A_2B_1^2.
+\]
+Their first prime-indexed endpoints are
+\[
+\begin{aligned}
+H_p&\equiv C^p,\\
+H_{2p}&\equiv C^{2p}+2X^p,\\
+H_{3p}&\equiv C^{3p}+6C^pX^p+3Y^p\pmod p.
+\end{aligned}
+\]
+Comparing
+\[
+\operatorname{ord}_U(C),\qquad
+\frac{\operatorname{ord}_U(X)}2,\qquad
+\frac{\operatorname{ord}_U(Y)}3
+\]
+isolates one invariant; ties belong to the shorter circuit.
 
-1. **Test the circuit-forest conjecture.** Fix a star support, beginning with
-   \(\{-2,-1,0,1\}\) or its reflection, and increase radial degree.  This
-   tests a genuinely new forest beyond a single positive/negative pair.
-2. **Test the first circuit cycle.** Use four nonzero levels, beginning with
-   \(\{-2,-1,1,2\}\), optionally with weight zero.  The circuit graph is
-   \(K_{2,2}\), with first Betti number one.
-3. **Test two independent graph cycles.** The smallest canonical graph has
-   \((p,q)=(2,3)\) or \((3,2)\), giving
-   \[
-   b_1(K_{p,q})=pq-p-q+1=2.
-   \]
-   A minimal weight choice is
-   \(\{-3,-2,-1,1,2\}\), up to reflection.
-4. **Classify the three-level functional equation.** Seek a theorem that
-   (4.1) forces \(C=D=0\).  This would prove the whole
-   \(\{-1,0,1\}\) family in all degrees and isolate a reusable
-   Bessel-factorial rigidity statement.
+For general support \(\{0,1,-d_1,\ldots,-d_q\}\), the relation monoid is
+free on \(X_d=U^dA_dB^d\), of circuit length \(\ell_d=d+1\).  Choose a
+nonzero invariant of minimum
+\(\operatorname{ord}_U(X_d)/\ell_d\), breaking ties by minimum length.
+The \(\ell_dp\)-th moment isolates it after prime reduction and the
+factorial functional.  Hence every unit star and its reflection has
+one-sided support and satisfies GMC(2).
 
-The most promising theorem target is item 4.  It is stronger than the
-low-degree eliminations, has no graph-definition ambiguity, and turns a
-counterexample into two explicit univariate polynomials satisfying (4.2).
-Degree seven is the next finite test, but after the invariant reductions its
-localized systems still have nine variables.  A sparse coefficient-exponent
-generator computes its moments through order ten in seconds, so moment
-generation is no longer the obstruction.  On the representative chart
-\(c_1d_1\ne0\), however, the nine-equation cutoff-ten system did not finish
-modulo \(p=1\,000\,003\) within five minutes.  This timeout is not evidence
-of a solution or nonemptiness.  It identifies the next required method:
-multihomogeneous elimination, a better variable order, or a theorem based on
-the algebraic resolvent (4.3).  Repeating the same dense Gröbner calculation
-on the other 20 charts has no evidentiary value.
+The literal graph-only leaf-removal statement needs additional semigroup
+data.  For weights \(\{5,-2,-3\}\), the pairwise circuit graph is a star,
+but the mixed relation \(5-2-3=0\) produces a length-three invariant
+invisible in that graph.
+
+There is, however, a stronger way around this obstruction.  For arbitrary
+\[
+P=\sum_kT^kB_k(U),
+\]
+plot the points
+\[
+(k,\operatorname{ord}_U B_k).
+\]
+The lower convex envelope over weight zero has a supporting line
+\[
+\operatorname{ord}_U B_k\geq\rho+\theta k.
+\]
+Every zero-weight monomial of length \(m\) has radial order at least
+\(\rho m\).  The contact-face Laurent polynomial has weight zero in its
+Newton interval, so the Duistermaat--van der Kallen theorem supplies a
+power \(r\) with nonzero constant term \(c\).  At moment \(rp\), Frobenius
+and the factorial functional isolate \(c^p\), a contradiction.
+
+This lower-face argument proves that every pure-moment-zero polynomial has
+strictly one-sided rotational support.  Thus it proves all of GMC(2), not
+only the circuit-forest conjecture.
+
+The proof and precise boundary are in
+[`UNIT_STAR_GAUSSIAN_RIGIDITY.md`](UNIT_STAR_GAUSSIAN_RIGIDITY.md); the
+general theorem is
+[`TWO_REAL_GMC_LOWER_FACE_THEOREM.md`](TWO_REAL_GMC_LOWER_FACE_THEOREM.md).
 
 ## 7. Literature connection
 
@@ -276,7 +370,8 @@ but is not currently implied by any of them.
 3. [van den Essen--Wright--Zhao](https://arxiv.org/abs/1008.3962)
    introduced the Factorial Conjecture and proved its one-variable case
    (Theorem 4.9).  That result closes the axes \(C=0\) and \(D=0\) in
-   (4.1), but does not address their Bessel-weighted coupling.
+   (4.1); the prime-endpoint argument in Section 4.1 closes their
+   Bessel-weighted coupling.
 4. [Long](https://arxiv.org/abs/2607.18186) gives explicit failures in
    every dimension at least three and leaves dimension two as the only
    unresolved dimension.  His examples show that Lagrange/determinant
@@ -284,19 +379,17 @@ but is not currently implied by any of them.
    source has no analogue in (4.1).  The Bessel-factorial equation is the
    exact two-real-variable replacement problem.
 
-Accordingly, a proof that (4.1) forces \(C=D=0\) would be a new rigidity
-theorem interpolating between the Duistermaat--van der Kallen
-constant-term theorem and the one-variable Factorial Theorem.  A
-nontrivial solution would be comparably significant: it would pass the
-pure-moment gate in the only unresolved Gaussian dimension, after which
-(4.4) tests whether it is an actual GMC counterexample.
+The theorem in Section 4.1 was the first rigidity result interpolating
+between the Duistermaat--van der Kallen constant-term theorem and the
+factorial functional.  Section 6 upgrades the same prime mechanism to the
+complete two-real-variable theorem.
 
-## 8. All-degree proof program
+## 8. Alternative structure behind the theorem
 
-The low-degree theorem changes the role of computation.  Degree seven is a
-useful regression target for a new method, but repeating dense localized
-Gröbner calculations is not the primary program.  The following three
-reformulations isolate more structural attacks.
+The prime proof settles the three-level family, so the following
+reformulations are no longer required for rigidity.  They remain useful as
+possible templates for genuine stars and circuits, and as explanations of
+the analytic structure hidden by the elementary valuation argument.
 
 ### 8.1 Laplace--Bessel saddles and the formal-series caveat
 
@@ -461,9 +554,9 @@ explicit meromorphic Pfaffian system
  +b(t).                                           \tag{8.12}
 \]
 
-The initial data are \(M_k(0)=k!\).  Three-level rigidity is therefore
-equivalent to showing that this distinguished formal horizontal section
-cannot remain in the affine hyperplane \(M_0=1\) unless \(C=D=0\).
+The initial data are \(M_k(0)=k!\).  Equivalently, the prime theorem says
+that this distinguished formal horizontal section cannot remain in the
+affine hyperplane \(M_0=1\) unless \(C=D=0\).
 Eliminating the other \(s-1\) coordinates yields the scalar telescoper in
 (8.8).  The poles introduced by \(q_s(t)\), which normally vanishes at
 \(t=0\), make the expected irregular singularity explicit rather than
@@ -510,15 +603,16 @@ Jacobi matrix.  It also supplies a sparse exact computational basis: the
 outermost Laguerre bands and their unique extremal paths can be studied
 before any coefficient-chart localization.
 
-Of these approaches, (8.7)--(8.8) is the most concrete theorem engine.
+For related factorial transforms in higher radial dimension,
+(8.7)--(8.8) remains a concrete theorem engine.
 The saddle analysis identifies its irregular singularities and exceptional
-Newton polygons; the Laguerre form is the best candidate for exposing a
-triangular or positivity-free band argument.
+Newton polygons; the Laguerre form may expose a triangular or
+positivity-free band argument.
 
 ## 9. The first genuine circuit cycle
 
-For discovery beyond the three-level forest, omit weight zero initially and
-write the \(K_{2,2}\) support as
+Before the general lower-face theorem, the first test beyond the
+three-level forest was the \(K_{2,2}\) support
 
 \[
  P=T^2B_2+TB_1+T^{-1}UA_1+T^{-2}U^2A_2.
@@ -550,11 +644,128 @@ The first constant terms are already sparse:
 \end{aligned}                                    \tag{9.3}
 \]
 
-Thus a first-cycle search should use the invariant coordinates (9.1) and
-the single toric relation (9.2), rather than the four coefficient
-polynomials \(A_1,A_2,B_1,B_2\) with their redundant scalings.  Equation
-(9.2) is the algebraic feature absent from the three-level forest and is
-the natural location for genuinely new cancellation.  A useful finite
-experiment is to enumerate the constant-term polynomials in the
-\(X_{ij}\), reduce them modulo (9.2), apply \(\mathcal L\), and only then
-introduce bounded radial coefficients.
+The prime-valuation method in fact survives this first cycle.
+
+### 9.1 Frobenius before coefficient bounds
+
+Put
+\[
+ K_m=\operatorname{CT}_T(P^m).
+\]
+For every prime \(p\) and fixed \(k\), Frobenius in
+\(\mathbb F_p[U][T,T^{-1}]\) gives the universal identity
+\[
+ \boxed{K_{kp}\equiv K_k^p\pmod p.}               \tag{9.4}
+\]
+This is the correct reduction to make before introducing any radial
+coefficient bounds.
+
+Give the four invariants their circuit lengths
+\[
+ d_{11}=d_{22}=2,\qquad d_{12}=d_{21}=3.
+\]
+For a nonzero invariant put
+\[
+ \alpha_{ij}=\operatorname{ord}_U X_{ij},\qquad
+ \rho_{ij}=\frac{\alpha_{ij}}{d_{ij}}.             \tag{9.5}
+\]
+Every monomial of \(K_m\) has weighted degree \(m\), so its radial order is
+at least \(m\rho\), where \(\rho=\min\rho_{ij}\).
+
+The same finite-type coefficient reduction and prime-valuation argument as
+in Section 4.1 turns (9.4) into the following initial-form rule.  If
+\(k\rho\) is an integer, then
+\[
+ \mathcal L(K_{kp})=0\quad\text{for all sufficiently large primes }p
+ \quad\Longrightarrow\quad
+ [U^{k\rho}]K_k=0.                                \tag{9.6}
+\]
+Indeed, every term of \(K_{kp}\) has order at least \(kp\rho\).  After
+division by \((kp\rho)!\), the \(p\)-divisible error in (9.4) disappears
+modulo \(p\), while every higher term of \(K_k^p\) crosses a new multiple
+of \(p\).  Only the \(p\)-th power of the coefficient in (9.6) remains.
+
+### 9.2 Classification of valuation ties
+
+When all four invariants are nonzero, (9.2) gives
+\[
+ \alpha_{12}+\alpha_{21}=2\alpha_{11}+\alpha_{22},
+\]
+or, in normalized slopes,
+\[
+ 3\rho_{12}+3\rho_{21}
+ =4\rho_{11}+2\rho_{22}.                          \tag{9.7}
+\]
+Equation (9.7) leaves only three types of minimum:
+
+1. one circuit has a unique minimum;
+2. exactly one length-two circuit and one adjacent length-three circuit
+   tie for the minimum;
+3. all four circuits tie.
+
+Two length-two minima force both length-three slopes to be minimal, and
+two length-three minima force both length-two slopes to be minimal.  Any
+three-way tie similarly forces the fourth.  Thus the list is exhaustive.
+
+A unique minimum is impossible by (9.6), taking \(k=2\) or \(3\): its
+lowest coefficient survives alone.
+
+For an adjacent two-way tie, write \(x\) for the lowest coefficient of the
+length-two invariant and \(y\) for that of the length-three invariant.
+The initial equations at \(k=6\) and \(k=12\) are
+\[
+ 20x^3+15y^2=0,                                   \tag{9.8}
+\]
+and one of
+\[
+\begin{aligned}
+ 924x^6+7920x^3y^2+495y^4&=0,\\
+ 924x^6+27720x^3y^2+495y^4&=0.                   \tag{9.9}
+\end{aligned}
+\]
+The first line occurs for \(X_{11}\), the second for \(X_{22}\).
+Substituting \(y^2=-4x^3/3\) into (9.9) gives respectively
+\[
+ -8756x^6=0,\qquad -35156x^6=0.                  \tag{9.10}
+\]
+Hence \(x=y=0\), contradicting the definition of the tied face.
+
+For the four-way tie, let \(a,b,c,d\) be the lowest coefficients of
+\(X_{11},X_{12},X_{21},X_{22}\).  Equations (9.3), the fourth moment, and
+the initial form of (9.2) give
+\[
+\begin{aligned}
+ a+d&=0,& b+c&=0,\\
+ a^2+4ad+d^2&=0,& bc&=a^2d.                      \tag{9.11}
+\end{aligned}
+\]
+The first and third equations give \(a=d=0\); the remaining two give
+\(b=c=0\), again impossible.
+
+Boundary faces of the toric hypersurface cause no exception.  Their
+nonzero supports consist of single circuits or pairs.  Adjacent pairs are
+covered by (9.8)--(9.10).  A tied pair \(X_{11},X_{22}\) is killed by
+\(K_2,K_4\), and a tied pair \(X_{12},X_{21}\) by \(K_3,K_6\).
+
+Consequently:
+
+> **First-cycle rigidity theorem.** Let
+> \[
+> P=T^2B_2(U)+TB_1(U)+T^{-1}UA_1(U)+T^{-2}U^2A_2(U).
+> \]
+> If \(\mathcal L(\operatorname{CT}_T P^m)=0\) for every \(m\geq1\), then
+> \[
+> X_{11}=X_{12}=X_{21}=X_{22}=0.
+> \]
+> Hence all nonzero rotational weights of \(P\) have the same sign, and
+> \(P\) satisfies \(\operatorname{GMC}(2)\).
+
+Thus the first toric cycle produces no surviving valuation cone.  The
+prime method extends beyond forests; the next obstruction must involve a
+larger circuit semigroup whose minimal face is not separated by finitely
+many low invariant moments.
+
+The exact regression
+[`verify_two_real_gmc_first_cycle_rigidity.py`](../scripts/verify_two_real_gmc_first_cycle_rigidity.py)
+enumerates the toric moments, verifies (9.4), and checks every tied-face
+elimination above.

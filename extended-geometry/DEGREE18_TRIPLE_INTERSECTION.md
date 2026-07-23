@@ -120,7 +120,10 @@ block ideal
 
 so the stronger-equality pairwise slice is already a tensor product of two
 dual numbers and has length four.  The quadratic upper bound and this closed
-length-four subsystem agree.  Therefore, for all three pairs,
+length-four subsystem agree.  Equivalently, the
+[Kuranishi nilpotence cutoff theorem](DEFECT_SYMBOL_APOLARITY.md#2-kuranishi-nilpotence-cutoff-theorem)
+supplies the upper bound and the stronger-equality subsystem supplies the
+matching lower bound.  Therefore, for all three pairs,
 
 \[
 \boxed{
@@ -182,8 +185,9 @@ The initial monomials are `z^3,x^2,y^2,yz`.  Hence the standard monomials are
 \]
 
 and the quadratic tangent-cone quotient has length eight.  It follows that
-the full affine-difference triple intersection has transverse length at most
-eight.
+the Kuranishi nilpotence cutoff theorem gives transverse length at most
+eight and fourth-power-zero transverse maximal ideal for the full
+affine-difference triple intersection.
 
 ## 5. The length-eight sandwich
 
@@ -211,7 +215,9 @@ Equality of normalized seeds is weaker than equality of the `M_i`: it only
 requires every difference `M_i-M_j` to be affine in `W`.  Thus (9) is a
 closed subscheme of the full triple intersection and supplies a length-eight
 lower bound.  The second-jet calculation (6)--(8) supplies the matching upper
-bound.  The induced surjection of transverse Artin rings is an isomorphism.
+bound through the cutoff theorem.  The induced surjection of transverse
+Artin rings is an isomorphism.  This is the three-variable quadratic
+sandwich.
 
 Therefore, on a nonempty open of the ordered `(6,6,6)` chart,
 

@@ -17,6 +17,11 @@ SYSTEM_PYTHON ?= python3
 	verify-degree42-divisor-rees-reduction \
 	verify-degree42-kuranishi-branches \
 	verify-degree42-discriminant-quartics \
+	verify-degree42-depth-reduction \
+	verify-degree42-ab-residual-quartics \
+	verify-degree42-ab-residual-factors \
+	verify-degree42-higher-gcd-strata \
+	verify-degree42-kuranishi-cutoff-chain \
 	verify-degree30-hessian-pairs refresh-degree30-hessian-pairs \
 	verify-contact-r6 verify-contact-branch-schema verify-contact-r7-asymptotic \
 	verify-parameter-dusart-frontier verify-parameter-sharp-dusart-frontier \
@@ -101,6 +106,21 @@ verify-degree42-kuranishi-branches:
 
 verify-degree42-discriminant-quartics:
 	$(PYTHON) scripts/verify_degree42_discriminant_quartics.py
+
+verify-degree42-depth-reduction:
+	$(PYTHON) scripts/verify_degree42_depth_certificate.py --method pivots
+
+verify-degree42-ab-residual-quartics:
+	$(PYTHON) scripts/verify_degree42_ab_residual_quartics.py
+
+verify-degree42-ab-residual-factors:
+	$(PYTHON) scripts/verify_degree42_ab_residual_factors.py
+
+verify-degree42-higher-gcd-strata:
+	$(PYTHON) scripts/verify_degree42_higher_gcd_strata.py
+
+verify-degree42-kuranishi-cutoff-chain:
+	PYTHON=$(PYTHON) scripts/verify_degree42_kuranishi_cutoff_chain.sh
 
 verify-degree30-hessian-pairs:
 	$(PYTHON) scripts/verify_cubic_remainder_synchronization.py
@@ -294,6 +314,11 @@ verify-two-real-gmc:
 	$(PYTHON) scripts/verify_two_real_gmc_remaining_four_weight.py
 	$(PYTHON) scripts/verify_two_real_gmc_five_weight_frontier.py
 	$(PYTHON) scripts/verify_cubic_gaussian_null_cone_closure.py
+	$(PYTHON) scripts/audit_prime_endpoint_rigidity_independent.py
+	$(PYTHON) scripts/audit_two_real_gmc_lower_face.py
+	$(PYTHON) scripts/verify_two_real_gmc_unit_star_rigidity.py
+	$(PYTHON) scripts/verify_two_real_gmc_three_level_rigidity.py
+	$(PYTHON) scripts/verify_two_real_gmc_first_cycle_rigidity.py
 	$(PYTHON) scripts/verify_two_real_gmc_three_weight_low_degree.py
 	$(PYTHON) scripts/verify_two_real_gmc_resolvent_system.py
 

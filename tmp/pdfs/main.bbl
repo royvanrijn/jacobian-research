@@ -1,0 +1,20 @@
+\begin{thebibliography}{1}
+
+\bibitem{DVZ}
+Harm Derksen, Arno van~den Essen, and Wenhua Zhao.
+\newblock The {Gaussian Moments Conjecture} and the {Jacobian Conjecture}.
+\newblock {\em Israel Journal of Mathematics}, 219(2):917--928, 2017.
+\newblock \href{https://doi.org/10.1007/s11856-017-1502-2}{DOI}.
+
+\bibitem{DK}
+J.~J. Duistermaat and W.~van~der Kallen.
+\newblock Constant terms in powers of a laurent polynomial.
+\newblock {\em Indagationes Mathematicae}, 9(2):221--231, 1998.
+\newblock \href{https://doi.org/10.1016/S0019-3577(98)80020-7}{DOI}.
+
+\bibitem{Long}
+Christopher~D. Long.
+\newblock Small counterexamples to the {Gaussian Moments Conjecture}, 2026.
+\newblock \href{https://arxiv.org/abs/2607.18186}{arXiv:2607.18186}.
+
+\end{thebibliography}

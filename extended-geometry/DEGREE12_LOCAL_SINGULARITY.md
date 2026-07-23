@@ -156,10 +156,13 @@ therefore a quotient of
 k[\epsilon,\eta]/(\epsilon^2,\eta^2),
 \]
 
-and has length at most four.  But the stronger-equality algebra `D_0` is a
-closed subscheme of the full double scheme and has length four.  The induced
-surjection of local Artin rings has equal finite lengths, so it is an
-isomorphism.  This proves
+so the
+[Kuranishi nilpotence cutoff theorem](DEFECT_SYMBOL_APOLARITY.md#2-kuranishi-nilpotence-cutoff-theorem)
+gives transverse length at most four and cube-zero maximal ideal.  But the
+stronger-equality algebra `D_0` is a closed subscheme of the full double
+scheme and has length four.  The induced surjection of local Artin rings has
+equal finite lengths, so it is an isomorphism.  This is the two-variable
+quadratic-sandwich argument and proves
 
 \[
 D=D_0

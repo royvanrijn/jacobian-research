@@ -34,7 +34,6 @@ HASH_PATTERN = re.compile(r"sha256:[0-9a-f]{64}")
 CORE_ORDER = ["F1", "W1", "S1", "WB1", "C1", "B1", "P1", "M1", "D1", "F2", "R1", "R2", "IA1"]
 ACTIVE_OPEN = {
     "OP-CR",
-    "OP-GAUSS",
     "OP-LR-REES",
     "OP-LR-II",
     "OP-LR-NE",

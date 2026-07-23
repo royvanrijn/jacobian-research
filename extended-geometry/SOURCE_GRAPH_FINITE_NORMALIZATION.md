@@ -62,11 +62,12 @@ modification.  In particular:
   is stacky, not another coarse fan subdivision.
 
 This proves `H1-COARSE`.  The subsequent
-[recursive resonance atlas](RECURSIVE_RESONANCE_ATLAS.md) proves the
-separate `H1-STACK` theorem: flag divisors as normalized initial-form
-equations, node-root indices, simultaneous inertia characters, contraction
-charts, and a selected-factor/log-étale comparison supplying global coverage
-and descent.  None of that stronger theorem is used here.
+[fs logarithmic theorem](RECURSIVE_RESONANCE_ATLAS.md) proves the separate
+`H1-STACK` statement from the selected saturated monoid
+\((P\oplus_{\mathbf N^E}Q)^{\mathrm{sat}}\).  Its node-root indices,
+simultaneous inertia characters, contraction charts, and normalized
+initial-form equations are consequences of that log chart.  None of the
+stronger stack theorem is used here.
 
 ## 1. Finiteness input
 
@@ -230,7 +231,7 @@ The `H1-COARSE`/`H1-STACK`/H2 package now separates cleanly:
 | source-component uniqueness | complete by two-fiber rigidity |
 | local node normalization and inertia test | complete |
 | generic radial/resonance automorphism characters | complete |
-| `H1-STACK`: explicit higher-codimension flag coordinates and simultaneous characters | complete by selected-factor normalization and the log-étale screen comparison |
+| `H1-STACK`: selected fs logarithmic admissible-cover factor | complete by saturated monoid pushout and normalization commuting with generic selection; screen coordinates and simultaneous characters are derived |
 | corrected H2 subgroup quotient | complete |
 | corrected coarse H3 specialization | complete |
 

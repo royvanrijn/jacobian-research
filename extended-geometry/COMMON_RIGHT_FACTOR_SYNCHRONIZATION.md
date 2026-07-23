@@ -226,6 +226,53 @@ Theorem 3.1 is its finite-flat shortcut: local freeness over the integral
 Ritt base supplies a regular base element in every nonzero support ideal.
 Conversely, (3.3) can hold even when the residual algebra is not flat.
 
+### 3.3 The common-line residual theorem
+
+Let \((F,G)\subset K[[x,y]]\) have order \(d\), with initial forms
+\[
+ f_d=La,\qquad g_d=Lb,                                     \tag{3.4}
+\]
+where \(L\) is reduced and is their unique common linear factor.  At the
+point \(p=[L=0]\in\mathbb P^1\), both \(a(p)\) and \(b(p)\) are nonzero.
+Blow up the normal-plane origin, complete at \(p\), and use a radial
+coordinate \(r\) and transverse coordinate \(s\).  After removing the
+exceptional factor \(r^d\), write
+\[
+\begin{aligned}
+ \widetilde F&=s\,a_0(s)+r a_1(s)+r^2a_2(s)+\cdots,\\
+ \widetilde G&=s\,b_0(s)+r b_1(s)+r^2b_2(s)+\cdots,
+\end{aligned}                                               \tag{3.5}
+\]
+where \(a_0(0)=a(p)\) and \(b_0(0)=b(p)\).
+
+> **Theorem 3.2 (common-line residual intersection).**  There is a
+> unique \(s=\sigma(r)\in rK[[r]]\) with
+> \(\widetilde F(r,\sigma(r))=0\).  For
+> \(\Omega(r)=\widetilde G(r,\sigma(r))\),
+> \[
+>  K[[r,s]]/(\widetilde F,\widetilde G)
+>  \simeq K[[r]]/(\Omega).                                  \tag{3.6}
+> \]
+> Up to a unit, \(\Omega\) is independent of all choices.  If its first
+> nonzero term is \(\rho_jr^j\), the residual intersection has length
+> \(j\).  In particular,
+> \[
+>  \rho_1=a(p)b_1(0)-b(p)a_1(0)                             \tag{3.7}
+> \]
+> up to a unit.
+
+**Proof.**  Since \(a_0(0)\) is a unit, the formal implicit-function
+theorem solves the first weak transform for \(s\).  Substitution gives
+(3.6); changes of generator or local blow-up coordinates multiply the
+resulting one-variable equation by a unit.  \(\square\)
+
+Thus “divide by the common factor and restrict to the exceptional
+divisor” means removing the radial factor, eliminating the transverse
+coordinate, and taking the first nonzero coefficient of \(\Omega\).
+Merely dividing the two initial forms by \(L\) loses this coefficient.
+The construction works relatively on the open where the common line is
+reduced and unique.
+
 ## 4. Degrees thirty and forty-two
 
 For outer cuts \(a,c\) of degree \(N\), the expected terminal degree is
@@ -460,8 +507,8 @@ Their binary resultant is
 the completed quotient.  By (6.7), \(q,r\) are a regular sequence of
 binary quadrics.  The residual associated graded is therefore a quotient
 of their complete intersection, whose Hilbert vector is \((1,2,1)\).
-If \(J\) is the completed normal ideal, then \(J^3/J^4=0\).
-Complete Nakayama applied to \(J^3\) gives \(J^3=0\).
+The [Kuranishi nilpotence cutoff theorem](DEFECT_SYMBOL_APOLARITY.md#2-kuranishi-nilpotence-cutoff-theorem)
+therefore gives \(J^3=0\) for the completed normal ideal \(J\).
 Proposition 6.1 gives \(\delta\in I+\mathfrak m^5\), hence
 \(\delta=0\) in the completed quotient.  \(\square\)
 
@@ -515,8 +562,9 @@ the initial Kuranishi ideal contains
 \[
  (\ell^2,\ell s,s^3).
 \]
-Its maximal ideal has cube zero, so Proposition 6.1 again kills
-\(\delta\) exactly.  \(\square\)
+Its homogeneous quotient has top degree two, so the Kuranishi nilpotence
+cutoff theorem makes the cube of the completed normal ideal zero, and
+Proposition 6.1 again kills \(\delta\) exactly.  \(\square\)
 
 The apparent \(t=0\) exception in Proposition 6.4 is removed one order
 later.  On the discriminant normalization, \(t=0\) and \(e_1\ne0\)
@@ -546,8 +594,9 @@ At \(e_1=0\), the specialized initial ideal contains
 \((\ell^2,s^4)\), whose maximal ideal has fifth power zero.  The
 coefficient \(5w_2/64\) is a unit at every point under consideration,
 so the latter statement lifts over the local base, including its
-nilpotent discriminant thickening.  Proposition 6.1 then makes the
-synchronization defect zero.  \(\square\)
+nilpotent discriminant thickening.  The relative Kuranishi nilpotence
+cutoff theorem and Proposition 6.1 then make the synchronization defect
+zero.  \(\square\)
 
 For the other branch define
 \[
@@ -576,8 +625,9 @@ satisfy
 **Proof.**  Equation (6.12) makes \(p_3,q_3\) a regular sequence of
 binary cubics.  Their complete-intersection Hilbert vector is
 \((1,2,3,2,1)\), so the fifth power of the completed normal ideal is
-zero.  The membership \(\delta\in I+\mathfrak m^5\) from Proposition
-6.1 is therefore exact.  \(\square\)
+zero by the Kuranishi nilpotence cutoff theorem.  The membership
+\(\delta\in I+\mathfrak m^5\) from Proposition 6.1 is therefore exact.
+\(\square\)
 
 Consequently the remaining all-order problem is supported on
 \[
@@ -585,6 +635,28 @@ Consequently the remaining all-order problem is supported on
 \]
 This replaces the two full Kuranishi branches by one coefficient divisor
 and the two cubic-resultant divisors inside \(w_1=0\).
+
+### 6.2 Geometric classification of the support
+
+For
+\[
+ W(z)=z^3+w_2z^2+w_1z+w_0,\qquad U(z)=zW(z)^2,
+\]
+the remaining pieces are strata inside one transported Ritt power
+component:
+
+| stratum | generic power core | meaning |
+|---|---|---|
+| \(V(w_0,w_2)\) | \(z^3(z^2+w_1)^2\) | triple marked root and reflection symmetry; \(U\) is odd |
+| \(V(w_0,w_1,A)\) | \(z^5(z+w_2)^2\) | contact-five core with exceptional cubic direction \(L_A\) |
+| \(V(w_0,w_1,B)\) | \(z^5(z+w_2)^2\) | contact-five core with exceptional cubic direction \(L_B\) |
+
+Thus \(w_2=0\) is not generically sevenfold.  The sevenfold monomial
+\(U=z^7\) occurs only at \(w_0=w_1=w_2=0\).  The factors \(A,B\) describe
+normal-cone degenerations, not new classical Ritt decomposition types.
+Proposition 6.7 below closes their generic points by the common-line
+residual theorem.  What may remain on them is confined to the proper
+quartic-zero loci \(V(A,\rho_{L_A})\) and \(V(B,\rho_{L_B})\).
 
 There is now one global algebraic target.  Let
 \[
@@ -661,14 +733,174 @@ points.  Since \(A\) and \(B\) are irreducible and occur to the first power
 in (6.12), either generic point has exactly one common projective root.
 The next calculation on each divisor is therefore again one-dimensional:
 restrict the quartic Kuranishi terms to \(L_A=0\) or \(L_B=0\).  The
-component \(w_2=0\), where both cubics vanish, remains the genuinely
-deeper sevenfold power collision.
+further divisor \(w_2=0\) inside this \(w_0=w_1=0\) branch, where both
+cubics vanish, is the genuinely deeper sevenfold monomial collision.
+
+Let \(p_3=La_2\) and \(q_3=Lb_2\) at either generic resultant divisor,
+and let \(p_4,q_4\) be the quartic terms after the three pivot variables
+have been eliminated through cubic order.  At the exceptional point
+\(p=[L=0]\), Theorem 3.2 gives the residual scalar
+\[
+ \rho_L=a_2(p)q_4(p)-b_2(p)p_4(p).                         \tag{6.20}
+\]
+
+> **Proposition 6.7 (generic \(A/B\) quartic closure).**  Neither
+> \(\rho_{L_A}\) on \(A=0\) nor \(\rho_{L_B}\) on \(B=0\) is identically
+> zero.  Consequently the transported component is formally synchronized
+> at the generic points of both cubic-resultant divisors.
+
+**Proof.**  On \(A=0\), the characteristic-zero point
+\[
+ (e_1,e_2,t,w_2)=(1,1,3/5,1)
+\]
+lies off \(B=0\) and the subresultant denominators.  The direction
+\((u,v)=(1,-1)\) spans \(L_A=0\), and exact implicit differentiation gives
+\[
+ \rho_{L_A}=-\frac{4203}{1280}.
+\]
+For \(B\), reduce at the good prime \(103\).  The point
+\[
+ (e_1,e_2,t,w_2)=(1,1,21,1)
+\]
+satisfies \(B=0\), \(A=1\), \(\alpha_B=9\), and \(\beta_B=3\).  Along
+\((u,v)=(3,-9)\), exact finite-field differentiation gives
+\[
+ \rho_{L_B}=47\pmod {103}.
+\]
+If the characteristic-zero restriction vanished identically on the
+irreducible divisor \(B\), its cleared polynomial numerator would be
+divisible by \(B\), and the same identity would hold after this good
+reduction.  The displayed value excludes that possibility.
+
+For either divisor, \(a_2,b_2\) are coprime binary quadrics.  A nonzero
+quartic residual supplies a form \(h_4\) not divisible by \(L\).  The
+homogeneous envelope
+\[
+ (La_2,Lb_2,h_4)
+\]
+has Hilbert vector \((1,2,3,2)\), hence its fourth normal power vanishes.
+Proposition 6.1 already puts the defect in the fifth normal power, so the
+Kuranishi nilpotence cutoff theorem makes the synchronization exact on the
+dense opens where \(\rho_L\ne0\).  \(\square\)
+
+The higher-gcd part of the exceptional locus can also be closed away from
+its common vertex.  Put
+\[
+\begin{aligned}
+ P_1&=(e_2^4-6e_1e_2^2+12e_1^2,\;
+        e_2^3-4e_1e_2+6t),\\
+ P_2&=(e_1,e_2),\qquad
+ P_3=(t,4e_1-e_2^2),\qquad
+ P_4=(e_1,t).
+\end{aligned}                                               \tag{6.21}
+\]
+
+> **Proposition 6.8 (higher-gcd quartic closure).**  On \(D(w_2)\), the
+> reduced locus where the terminal cubics have gcd of degree at least two
+> is the union of the four weighted curves \(V(P_i)\).  Every punctured
+> curve is formally synchronized.  More precisely, its quartic Kuranishi
+> envelope has Hilbert vector \((1,2,3,2)\), except on \(V(P_4)\), where
+> it has Hilbert vector \((1,2,3,3,1)\).  At their common vertex
+> \(e_1=e_2=t=0\), both cubics vanish and the terminal quartics retain a
+> common cubic factor, so the quartic envelope is not Artinian.
+
+**Proof.**  Exact radical decomposition gives
+\[
+\begin{aligned}
+ \sqrt{(A,\alpha_B,\beta_B)}&=P_2\cap P_3\cap P_4,\\
+ \sqrt{(B,\alpha_B,\beta_B)}&=P_1\cap P_3\cap P_4.
+\end{aligned}
+\]
+The curve \(P_1\) splits into two conjugate weighted lines over
+\(\mathbb Q(\sqrt{-3})\).  Exact characteristic-zero representatives of
+\(P_2,P_3,P_4\), and a good-prime representative of \(P_1\), give the
+stated quartic Hilbert vectors.  Weighted homogeneity and Galois conjugacy
+make each such representative certify the entire punctured geometric
+curve.  Their maximal ideals therefore have fourth power zero, or fifth
+power zero on \(P_4\).  Proposition 6.1 and the Kuranishi nilpotence cutoff
+theorem close all four punctured curves.
+At the common vertex the cubics are zero, the quartics have gcd of degree
+three, and their quotient has positive dimension.  \(\square\)
+
+Proposition 6.8 concerns the subresultant locus where the cubic gcd has
+degree at least two.  It does not assert that the scalar residuals
+\(\rho_{L_A}\) and \(\rho_{L_B}\) have no additional zero divisors while
+the cubic gcd still has degree one.  Factoring those two residual divisors
+gives the following refinement.
+
+On the rational normalization of \(A=0\),
+\[
+ t=\frac{e_1^2(e_2^2-4e_1)}{e_2(e_2^2-6e_1)},
+\]
+put
+\[
+\begin{aligned}
+P_A={}&5376e_1^8-7168e_1^7e_2^2+3808e_1^6e_2^4
+-1008e_1^5e_2^6+133e_1^4e_2^8-7e_1^3e_2^{10}\\
+&+w_2(-360e_1^3e_2^4+192e_1^2e_2^6
+-34e_1e_2^8+2e_2^{10}).
+\end{aligned}
+\]
+Exact function-field reduction gives
+\[
+ \rho_{L_A}=
+ -\frac{75e_1^2w_2(4e_1-e_2^2)P_A}
+ {512e_2(6e_1-e_2^2)^3}.                                  \tag{6.22}
+\]
+
+For \(B\), work on \(e_2=1\), adjoin \(q^2=-3\), and normalize by the
+common-root slope \(r=u/v\):
+\[
+ e_1=\frac{1-r+q(r-1)(2r-1)}2,\qquad
+ t=-\frac{1+q}{2}(r-1)^2(2r-1).                            \tag{6.23}
+\]
+If
+\[
+ P_B=112r^7-560r^6+1176r^5-1344r^4+903r^3-357r^2
+ +77r-7+(3-5r)w_2,
+\]
+then
+\[
+ \rho_{L_B}=
+ \frac{75}{1024}w_2(q-1)(r-1)^2(2r-1)P_B.                  \tag{6.24}
+\]
+The conjugate \(q\mapsto-q\) gives the other geometric normalization
+chart.
+
+> **Proposition 6.9 (degree-one-gcd residual divisors).**  On the
+> displayed normalization charts, the residual zero divisors consist of
+> \(w_2=0\), the already classified higher-gcd branches, and the two
+> residual graphs \(P_A=0\) and \(P_B=0\).  Indeed, the factors
+> \(e_1=0\) and \(4e_1-e_2^2=0\) in (6.22), and
+> \(r=1,\frac12\) in (6.24), map to the \(P_4\) and \(P_3\) branches of
+> Proposition 6.8.  Both \(P_A\) and \(P_B\) are affine-linear in \(w_2\).
+
+**Proof.**  Equations (6.22) and (6.24) are the exact factorization of
+(6.20) in the two function fields.  Eliminating \(t\) from \(B=0\) and
+\(\alpha_Br+\beta_B=0\) gives
+\[
+ 3r^4-9r^3+10r^2+re_1-5r+e_1^2-e_1+1=0.
+\]
+Its discriminant in \(e_1\) is
+\(-3(r-1)^2(2r-1)^2\), which yields (6.23).  At
+\(r=1,\frac12\), formula (6.23) gives respectively
+\((e_1,t)=(0,0)\) and \((1/4,0)\), exactly \(P_4\) and \(P_3\) on
+\(e_2=1\).  The corresponding statement on \(A\) follows immediately
+from its displayed normalization.  \(\square\)
 
 [`verify_degree42_kuranishi_branches.py`](../scripts/verify_degree42_kuranishi_branches.py)
 certifies the implicit cubic coefficients (6.10), the binary-cubic
 resultant (6.12), and the common factors (6.18)--(6.19).
 [`verify_degree42_discriminant_quartics.py`](../scripts/verify_degree42_discriminant_quartics.py)
 certifies both terminal quartic formulas and the discriminant closure.
+[`verify_degree42_ab_residual_quartics.py`](../scripts/verify_degree42_ab_residual_quartics.py)
+certifies the two nonzero values in Proposition 6.7.
+[`verify_degree42_higher_gcd_strata.py`](../scripts/verify_degree42_higher_gcd_strata.py)
+certifies the radical decompositions, the four punctured-curve Hilbert
+cutoffs, and the surviving common vertex in Proposition 6.8.
+[`verify_degree42_ab_residual_factors.py`](../scripts/verify_degree42_ab_residual_factors.py)
+certifies the normalization identities and the factorizations
+(6.22)--(6.24).
 
 For the remaining calculation, the theorem removes the right factor from
 the elimination variables.  For each degree-forty-two row:

@@ -857,15 +857,31 @@ cubic GMC(2) counterexample needs at least five rotational weights.  The
 target also proves the Bessel--factorial moment formula for the three-level
 family with support `{-1,0,1}` and computes 31 exact rational unit ideals:
 6 charts in degree four through moment six, 10 charts in degree five through
-moment eight, and 15 charts in degree six through moment nine.  This closes
-that family through total degree six.  A companion exact regression derives
+moment eight, and 15 charts in degree six through moment nine.  A
+prime-endpoint theorem now closes that family in every degree: at odd
+prime \(p\), the orders \(p\) and \(2p\) isolate the \(C^p\) and \(D^p\)
+endpoints according to the two possible \(U\)-adic order inequalities.
+The bounded charts remain finite-cutoff regressions.  A companion exact
+arithmetic check verifies the prime coefficient and factorial congruences;
+an independent pure-Python audit reconstructs both polynomial endpoint
+identities and both normalized factorial cases.  The unit-star regression
+then checks the primitive invariants, the \(p,2p,3p\) endpoints, and all
+three normalized-order cases for the smallest star; the theorem covers
+every support `{0,1,-d_1,...,-d_q}` and its reflection.  Another regression derives
 the finite radial-moment recurrence, constructs the four-dimensional
 resolvent differential system for a centered degree-\((2,3)\) pair, and
-checks it against the factorial series.  The target also recomputes three
+checks it against the factorial series.  The same target now verifies the
+all-degree first-cycle theorem for support `{-2,-1,1,2}`: it enumerates the
+toric invariant moments, checks
+`CT(P^(kp)) = CT(P^k)^p (mod p)`, and eliminates every unique, adjacent-tie,
+four-way-tie, and boundary valuation face using invariant moments through
+degree twelve.  The target also recomputes three
 unit Groebner bases for the direct Long-style
 collapse and writes the dimension/rank/index/degree scoreboard.  It does not
-claim to settle GMC(2); the all-degree three-level Bessel--factorial rigidity
-problem remains open.
+use bounded support enumeration to settle GMC(2): the accompanying
+lower-face theorem handles arbitrary rotational support.  Its audit checks
+supporting-line minima, Frobenius constant-term dilation, and normalized
+factorial isolation on representative stars, mixed semigroups, and cycles.
 
 A final group of checks uses the first collision-coordinate values `0,1,-1`
 to fix the multiplier, expands the homogeneous 42-variable quartic, descends
@@ -1124,7 +1140,8 @@ normal power is therefore exact.  The same checker computes the first
 subresultant on the exceptional divisors: generically the cubics share
 exactly one explicit linear factor on each of `A=0` and `B=0`.  Their
 next obstruction is consequently a one-variable quartic restriction,
-whereas `w2=0` is the separate sevenfold power collision.
+whereas, on this `w0=w1=0` branch, the further equation `w2=0` is the
+sevenfold monomial collision.
 
 The degenerate part of the discriminant branch is closed by
 
@@ -1138,6 +1155,70 @@ where the quadratic ideal becomes a single square.  Consequently the
 whole discriminant branch synchronizes on `D(w1*w2)`.  The remaining
 support is only `V(w0,w2)` together with `V(w0,w1,A*B)`.
 
+Geometrically, for `W(z)=z^3+w2*z^2+w1*z+w0` and
+`U(z)=z*W(z)^2`, the generic `V(w0,w2)` core is the odd polynomial
+`z^3*(z^2+w1)^2`, while `V(w0,w1)` has the contact-five core
+`z^5*(z+w2)^2`; only their deepest intersection is the sevenfold monomial
+`z^7`.  On the `A` and `B` divisors the unique common tangent line is
+handled by the common-line residual-intersection theorem: blow up the
+normal plane, eliminate the transverse coordinate, and read the first
+nonzero coefficient of the resulting one-variable residual series.
+
+The generic `A/B` quartic restrictions are closed by
+
+```bash
+make verify-degree42-ab-residual-quartics
+```
+
+At the exact characteristic-zero point
+`(e1,e2,t,w2)=(1,1,3/5,1)` on `A=0`, the residual scalar is
+`-4203/1280`.  At the good-prime point `(1,1,21,1)` on `B=0` modulo
+`103`, it is `47`; here `A=1` and the subresultant coefficient
+`alphaB=9`.  The latter nonzero reduction excludes an identically zero
+characteristic-zero restriction on the irreducible divisor `B`.  Hence
+both generic resultant divisors synchronize.  Only the proper quartic-zero
+subloci, together with the odd core `V(w0,w2)`, can remain.
+
+The part of the proper quartic-zero analysis supported on the higher-gcd
+locus is resolved by
+
+```bash
+make verify-degree42-higher-gcd-strata
+```
+
+The reduced higher-gcd locus on `D(w2)` is the union of four weighted
+curves.  Quartic envelopes close every punctured curve: their Hilbert
+vectors are `(1,2,3,2)`, except for one `(1,2,3,3,1)` curve.  The only
+point of this locus not closed by the nilpotence cutoff is their common
+contact-five vertex `e1=e2=t=0`; there the cubics vanish and the quartics
+retain a common cubic factor.  This does not yet exclude additional zero
+divisors of the scalar quartic residual away from the higher-gcd locus.
+
+Those scalar residual divisors are factored by
+
+```bash
+make verify-degree42-ab-residual-factors
+```
+
+On the rational normalization of `A=0`, the residual is
+`-75/512*e1^2*w2*(4*e1-e2^2)*P_A/
+(e2*(6*e1-e2^2)^3)`, where `P_A` is affine-linear in `w2`.  On `e2=1`,
+the normalization of `B=0` over `q^2=-3` is
+`e1=(1-r+q*(r-1)*(2*r-1))/2`,
+`t=-(1+q)*(r-1)^2*(2*r-1)/2`; there the residual is
+`75/1024*w2*(q-1)*(r-1)^2*(2*r-1)*P_B`, with `P_B` also affine-linear
+in `w2`.  The `e1=0`, `4*e1=e2^2`, `r=1`, and `r=1/2` factors are
+exactly the already-classified higher-gcd branches `P4` and `P3`.
+Thus the new degree-one-gcd support consists only of the residual graphs
+`P_A=0` and `P_B=0`.
+
+The complete cutoff chain—from the conormal open through the higher-gcd
+quartic strata—can be replayed with
+
+```bash
+make verify-degree42-kuranishi-cutoff-chain
+```
+
 The two pieces are combined by the single support ideal
 
 ```text
@@ -1149,6 +1230,26 @@ The global non-jet target is `I:k^infinity = I`.  By the shared
 this is equivalent to excluding associated primes of the residual algebra
 over `V(k)` and is sufficient after normal completion.  It is strictly
 weaker than proving the residual algebra flat over the full Ritt base.
+
+The first exact compression of this target is:
+
+```bash
+make verify-degree42-depth-reduction
+```
+
+Residuals 5, 11, and 17 are global unit-triangular pivots, not only pivots
+on `w0=0`.  They eliminate `x3,x4,x5` exactly and present the same residual
+algebra using only `x1,x2` over the six-dimensional base.  The checker also
+has exploratory `--method height` and `--method colon` modes for
+
+```text
+f = w0 + w1*w2 + A*B*w2.
+```
+
+The height mode searches for a codimension-two perfect reduced ideal and a
+one-step dimension drop after adjoining `f`; the colon mode tests `I:f=I`
+directly.  Neither mode is part of the verified target until its
+characteristic-zero computation completes.
 
 The next normal order has an exact good-prime certificate, and one rational
 point on the remaining divisor has an exact untruncated characteristic-zero

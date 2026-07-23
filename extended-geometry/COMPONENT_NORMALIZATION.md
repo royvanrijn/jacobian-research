@@ -319,11 +319,14 @@ quotient of
 k[\epsilon,\eta]/(\epsilon^2,\eta^2),
 \]
 
-so its length is at most four.  On the other hand, the stronger-equality
-subscheme (3) is a closed subscheme of it and already has length four.  The
-surjection of local Artin rings is consequently an isomorphism.  This
-length sandwich proves that the omitted affine coefficients create neither
-extra nilpotents nor embedded components.
+so the
+[Kuranishi nilpotence cutoff theorem](DEFECT_SYMBOL_APOLARITY.md#2-kuranishi-nilpotence-cutoff-theorem)
+gives length at most four and cube-zero transverse maximal ideal.  On the
+other hand, the stronger-equality subscheme (3) is a closed subscheme of it
+and already has length four.  The surjection of local Artin rings is
+consequently an isomorphism.  This quadratic sandwich proves that the
+omitted affine coefficients create neither extra nilpotents nor embedded
+components.
 
 Consequently the full off-diagonal double scheme along the dense open set is
 

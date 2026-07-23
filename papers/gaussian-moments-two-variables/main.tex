@@ -1,0 +1,354 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools,microtype}
+\usepackage[T1]{fontenc}
+\usepackage[hidelinks]{hyperref}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\C}{\mathbb C}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\N}{\mathbb N}
+\newcommand{\E}{\mathbb E}
+\newcommand{\CT}{\operatorname{CT}}
+\newcommand{\ord}{\operatorname{ord}}
+\newcommand{\conv}{\operatorname{conv}}
+\newcommand{\Supp}{\operatorname{Supp}}
+
+\title{The Gaussian Moments Conjecture in Two Variables}
+\author{Roy van Rijn\\{\small Independent researcher}}
+\date{Draft for verification --- 23 July 2026}
+\hypersetup{
+  pdftitle={The Gaussian Moments Conjecture in Two Variables},
+  pdfauthor={Roy van Rijn},
+  pdfsubject={A proof of the Gaussian Moments Conjecture in two real variables},
+  pdfkeywords={Gaussian Moments Conjecture, Gaussian moments, constant terms,
+    Laurent polynomials}
+}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+The Gaussian Moments Conjecture asks whether a polynomial whose positive
+powers all have Gaussian integral zero must eventually remain zero after
+multiplication by any fixed polynomial.  We prove the conjecture for two
+real Gaussian variables.  The proof uses circular coordinates to separate
+rotation from radius.  The angular part becomes a constant-term problem,
+while the radial part becomes the simple functional \(U^j\mapsto j!\).
+An exposed lower face of the resulting Newton diagram, the constant-term
+theorem of Duistermaat and van der Kallen, and reduction modulo a prime then
+isolate a nonzero lowest term.  This forces every polynomial with vanishing
+pure moments to have rotational weights of one strict sign, from which the
+mixed-moment conclusion is immediate.  Together with the recent
+counterexamples of Long in every dimension at least three, this determines
+the exact dimensional range of the conjecture.
+\end{abstract}
+
+\section{Introduction}
+
+Let \(X_1,\ldots,X_d\) be independent standard real Gaussian random
+variables.  The Gaussian Moments Conjecture, introduced by Derksen, van den
+Essen, and Zhao~\cite{DVZ}, is the following statement.
+
+\medskip
+\noindent
+\textbf{Gaussian Moments Conjecture \(\operatorname{GMC}(d)\).}
+If \(P\in\C[X_1,\ldots,X_d]\) satisfies
+\[
+  \E(P^m)=0\qquad\text{for every }m\geq 1,
+\]
+then, for every \(Q\in\C[X_1,\ldots,X_d]\),
+\[
+  \E(QP^m)=0\qquad\text{for all sufficiently large }m.
+\]
+
+\medskip
+The conjecture was motivated in part by its connection with the Jacobian
+Conjecture~\cite{DVZ}.  Long recently found explicit counterexamples to
+\(\operatorname{GMC}(d)\) for every \(d\geq3\)~\cite{Long}.  The
+two-variable case was therefore the last undecided dimension.
+
+\begin{theorem}\label{thm:main}
+The Gaussian Moments Conjecture holds in two real variables.
+\end{theorem}
+
+The proof is short once the right coordinates are chosen.  In two
+dimensions, rotation has a single integer weight and there is a single
+radial variable.  Thus every polynomial can be displayed schematically as
+\[
+  P=\sum_k \underbrace{T^k}_{\text{rotation}}\,
+                  \underbrace{B_k(U)}_{\text{radius}}.
+\]
+Gaussian integration first takes the constant term in \(T\), then replaces
+\(U^j\) by \(j!\).  If both positive and negative rotational weights occur,
+the lowest radial orders have a supporting line above weight zero.  The
+polynomial carried by that lower face has a nonzero constant term in some
+power, by a theorem of Duistermaat and van der Kallen~\cite{DK}.  Raising
+that power to a suitable prime and reducing modulo the prime makes the
+lowest term impossible to cancel after the factorial substitution.  This
+contradicts the assumed moment vanishing.
+
+The argument is conceptual rather than computational.  In particular, it
+contains the previously studied three-level and star-shaped supports
+without needing separate case analyses.
+
+\section{Circular coordinates}
+
+Let \(X,Y\) be independent standard real Gaussian variables.  The invertible
+complex linear change of coordinates
+\[
+  Z=\frac{X+iY}{\sqrt2},\qquad
+  W=\frac{X-iY}{\sqrt2}.
+\]
+Wick's formula gives
+\begin{equation}\label{eq:wick}
+  \E(Z^aW^b)=
+  \begin{cases}
+    a!,&a=b,\\
+    0,&a\neq b.
+  \end{cases}
+\end{equation}
+Introduce a radial variable \(U\) and a Laurent variable \(T\) through the
+injective substitution
+\[
+  Z\longmapsto T,\qquad W\longmapsto UT^{-1}.
+\]
+Thus \(Z^aW^b\) becomes \(T^{a-b}U^b\).  Every polynomial \(P(Z,W)\)
+therefore has a unique expression
+\begin{equation}\label{eq:weight-decomposition}
+  P=\sum_{k\in S}T^kB_k(U),
+\end{equation}
+where \(S\subset\Z\) is finite and every \(B_k\in\C[U]\) is nonzero.  The
+integer \(k\) is the rotational weight.
+
+Define the factorial functional
+\[
+  \mathcal L:\C[U]\longrightarrow\C,\qquad
+  \mathcal L(U^j)=j!.
+\]
+Equation~\eqref{eq:wick} is exactly the identity
+\begin{equation}\label{eq:expectation-factorization}
+  \E(F)=\mathcal L\bigl(\CT_T F\bigr)
+  \qquad(F\in\C[Z,W]).
+\end{equation}
+This is the feature special to two variables: there is one angular
+constant-term operation and one radial factorial.
+
+\section{The exposed lower face}
+
+For each \(k\in S\), write
+\[
+  \nu_k=\ord_U B_k,\qquad
+  b_k=[U^{\nu_k}]B_k\neq0.
+\]
+The points \((k,\nu_k)\) record the smallest radial degree at each
+rotational weight.  We now extract the lower face visible from weight zero.
+
+\begin{lemma}[Lower face]\label{lem:face}
+Suppose \(0\in\conv(S)\).  There are rational numbers \(\rho,\theta\), a
+subset
+\[
+  S_0=\{k\in S:\nu_k=\rho+\theta k\},
+\]
+and an integer \(r\geq1\) with the following properties:
+\[
+  \nu_k\geq\rho+\theta k\quad(k\in S),\qquad
+  0\in\conv(S_0),
+\]
+and, for
+\[
+  P_0(T)=\sum_{k\in S_0}b_kT^k,\qquad
+  F_m(U)=\CT_T(P^m),
+\]
+there are \(n\in\Z_{\geq0}\) and \(c\in\C^\times\) such that
+\begin{align}
+  &\text{every term of }F_m\text{ has degree at least }\rho m,
+       \label{eq:global-bound}\\
+  &n=\rho r,\qquad F_r(U)=cU^n+\text{terms of degree greater than }n.
+       \label{eq:leading}
+\end{align}
+\end{lemma}
+
+\begin{proof}
+Minimize
+\[
+  \sum_{k\in S}\lambda_k\nu_k
+\]
+subject to
+\[
+  \lambda_k\geq0,\qquad
+  \sum_k\lambda_k=1,\qquad
+  \sum_k k\lambda_k=0.
+\]
+The feasible set is nonempty because \(0\in\conv(S)\).  Let the minimum be
+\(\rho\).  Elementary linear-programming duality supplies
+\(\theta\in\mathbb Q\) such that
+\[
+  \nu_k\geq\rho+\theta k.
+\]
+An optimal solution is supported on the equality set \(S_0\), so
+\(0\in\conv(S_0)\).
+
+We use the constant-term theorem of Duistermaat and van der
+Kallen~\cite{DK}: if every positive power of a complex Laurent polynomial
+has zero constant term, then zero does not lie in the convex hull of its
+support.  Applied contrapositively to \(P_0\), it gives an \(r\geq1\) for
+which
+\[
+  c:=\CT_T(P_0^r)\neq0.
+\]
+
+Consider a weight-zero product of \(m\) terms selected from
+\eqref{eq:weight-decomposition}.  If the selected weights are
+\(k_1,\ldots,k_m\), then its radial degree is at least
+\[
+  \sum_{a=1}^m\nu_{k_a}
+  \geq \rho m+\theta\sum_{a=1}^m k_a
+  =\rho m.
+\]
+This proves~\eqref{eq:global-bound}.  When \(m=r\), equality can occur only
+by taking the lowest coefficient from weights on \(S_0\), and the sum of
+all equality terms is \(c\).  Hence the lowest term of \(F_r\) is
+\(cU^{\rho r}\).  Its exponent is necessarily a nonnegative integer; call
+it \(n\).
+\end{proof}
+
+\section{Prime isolation}
+
+The next lemma is the arithmetic step.  Its role is simple: after a prime
+dilation, Frobenius preserves only \(p\)-th powers, while the factorial
+functional kills every radial level above the lowest one.
+
+\begin{lemma}[Prime--factorial isolation]\label{lem:prime}
+Let \(P\) and \(F_m\) be as in Lemma~\ref{lem:face}.  If
+\[
+  \mathcal L(F_m)=0\qquad(m\geq1),
+\]
+then the conclusion~\eqref{eq:leading} is impossible.
+\end{lemma}
+
+\begin{proof}
+Let \(R\subset\C\) be the \(\Z\)-algebra generated by the coefficients of
+\(P\) and by \(c^{-1}\).  It is a finitely generated domain of
+characteristic zero.  For all but finitely many rational primes \(p\),
+there is a homomorphism from \(R\) to a field of characteristic \(p\).
+Indeed, the finite-type morphism
+\(\operatorname{Spec}R\to\operatorname{Spec}\Z\) is dominant, and its image
+contains a nonempty open subset.  Because \(c\) is invertible in \(R\), its
+image remains nonzero under every such homomorphism.
+
+Fix one of these primes and reduce all coefficients modulo \(p\).
+Lemma~\ref{lem:face} says that every term of \(F_{rp}\) has degree at least
+\(\rho rp=np\).  The assumed equality \(\mathcal L(F_{rp})=0\) may
+therefore be divided by the integer \((np)!\):
+\begin{equation}\label{eq:normalized}
+  \sum_{d\geq np}[U^d]F_{rp}\,\frac{d!}{(np)!}=0.
+\end{equation}
+
+In characteristic \(p\), Frobenius and constant-term extraction give
+\begin{equation}\label{eq:frobenius}
+  F_{rp}
+  =\CT_T\bigl((P^r)^p\bigr)
+  =\bigl(\CT_T(P^r)\bigr)^p
+  =F_r^p.
+\end{equation}
+By~\eqref{eq:leading}, the coefficient of \(U^{np}\) in
+\eqref{eq:frobenius} is \(c^p\).  A term whose degree is not divisible by
+\(p\) has zero coefficient modulo \(p\).  A remaining term has degree
+\(jp\) for some \(j>n\), and its multiplier in~\eqref{eq:normalized} is
+\[
+  \frac{(jp)!}{(np)!}.
+\]
+This integer is divisible by \(p\), since its product contains
+\((n+1)p\).  Consequently, reducing~\eqref{eq:normalized} modulo \(p\)
+leaves only
+\[
+  c^p=0,
+\]
+contrary to the choice of the reduction.
+\end{proof}
+
+\section{Proof of the theorem}
+
+\begin{proof}[Proof of Theorem~\ref{thm:main}]
+Write \(P\) as in~\eqref{eq:weight-decomposition} and suppose that
+\(\E(P^m)=0\) for every \(m\geq1\).  By
+\eqref{eq:expectation-factorization}, this says
+\[
+  \mathcal L(F_m)=0\qquad(m\geq1).
+\]
+If \(0\in\conv(S)\), Lemma~\ref{lem:face} produces a nonzero lowest
+coefficient and Lemma~\ref{lem:prime} gives a contradiction.  Therefore
+\[
+  0\notin\conv(S).
+\]
+Since \(S\subset\Z\), either every weight of \(P\) is strictly positive or
+every weight is strictly negative.
+
+Now fix a polynomial \(Q\).  Its rotational weights form a bounded finite
+set.  Every weight of \(P^m\), on the other hand, tends uniformly toward
+the same strict side as \(m\to\infty\).  Hence \(QP^m\) has no
+weight-zero term once \(m\) is sufficiently large:
+\[
+  \CT_T(QP^m)=0.
+\]
+Equation~\eqref{eq:expectation-factorization} then gives
+\(\E(QP^m)=0\), as required.
+\end{proof}
+
+\begin{corollary}\label{cor:classification}
+The Gaussian Moments Conjecture holds in dimension \(d\) exactly when
+\(d\leq2\).
+\end{corollary}
+
+\begin{proof}
+The case \(d=1\) is known~\cite[Proposition~4.2]{DVZ}.
+Theorem~\ref{thm:main} proves the case \(d=2\).
+Long's examples disprove the conjecture for every \(d\geq3\)~\cite{Long}.
+\end{proof}
+
+\section{What the argument says}
+
+The proof gives a stronger structural statement than the mixed-moment
+conclusion alone:
+\[
+  \E(P^m)=0\ \text{for all }m\geq1
+  \quad\Longrightarrow\quad
+  \text{all rotational weights of \(P\) have one strict sign.}
+\]
+Thus vanishing in two variables is not caused by a complicated balance
+among positive, zero, and negative angular modes.  Such a balance always
+has a lowest radial face, and a prime moment detects it.
+
+This also explains why support-by-support calculations quickly appeared to
+show rigidity.  A three-level support, a star support, or a tree of
+primitive weight relations is only a finite presentation of the same lower
+face.  Leaf removal is unnecessary: the supporting line exposes all
+relevant leaves at once.
+
+The proof is genuinely two-dimensional.  With one circular pair there is
+one weight coordinate and one radial order, and the latter is measured by
+the single factorial \(j!\).  In higher dimension there are several radial
+directions, so the one-dimensional isolation step no longer applies.
+Corollary~\ref{cor:classification} shows that this is not merely a
+technical gap: counterexamples already occur in dimension three.
+
+\section*{Acknowledgments and declaration of generative AI use}
+
+The author used OpenAI's ChatGPT and Codex extensively during the research
+process, including for conjecture formation, symbolic experimentation,
+proof exploration, consistency checks, and preparation of this manuscript.
+The lower-face and prime-isolation argument emerged from that collaborative
+process.  The author reviewed the mathematical claims and assumes full
+responsibility for the contents.  Computational experiments motivated the
+proof but are not logically required for it.
+
+\bibliographystyle{plain}
+\bibliography{references}
+
+\end{document}
