@@ -17,7 +17,8 @@ Define $F_G=(\Pi,B,C):\A^3_K\to\A^3_K$ by
 \begin{align}
  \Pi={}&tq,\notag\\
  B={}&y+3\frac{g_3}{g_1}xq+2\frac{g_2}{g_1}tq
-       +\sum_{k=4}^N k\frac{g_k}{g_1}t^2x^{k-2}q^k,\notag\\
+       +\sum_{k=4}^N k\frac{g_k}{g_1}
+          t^2x^{k-2}q^k,\notag\\
  C={}&x(5-3t)-\frac{g_3}{g_1}x^3z
        -\sum_{k=4}^N(k-2)\frac{g_k}{g_1}(xq)^k.
  \label{eq:gauge-map}
@@ -41,13 +42,13 @@ The map $F_G$ satisfies
 \[
  \det DF_G=-2.
 \]
-Its generic inverse equation is $E_{\Pi,B,C}(S)=0$.  On the chart
-$\Pi\neq0$, every simple root reconstructs one and only one source point.
-If $E_{\Pi,B,C}$ is squarefree of degree $N$, then scheme-theoretically
+Its generic inverse equation is $E_{\Pi,B,C}(S)=0$.  Let
+$(\pi,b,c)\in K^*\times K^2$.  If $E_{\pi,b,c}$ is squarefree of degree
+$N$, then scheme-theoretically
 \[
- F_G^{-1}(\Pi,B,C)\simeq\Spec K[S]/(E_{\Pi,B,C}),
+ F_G^{-1}(\pi,b,c)\simeq\Spec K[S]/(E_{\pi,b,c}).
 \]
-so the fiber is a Keller fiber of rank $N$.
+In particular, this is a Keller fiber of rank $N$.
 \end{proposition}
 
 \begin{proof}
@@ -69,51 +70,88 @@ Now set
  \label{eq:beta}
 \end{equation}
 The numerator is divisible by $S$.  Substitution in
-\eqref{eq:gauge-map} gives the two simple identities
+\eqref{eq:gauge-map} gives the two identities
 \begin{equation}
  B=Q+\beta(\Pi,S),
  \qquad
  C=\frac{2G_\Pi(S)}{g_1}-BS^2.
  \label{eq:marked-line-identities}
 \end{equation}
-The second identity is exactly $E_{\Pi,B,C}(S)=0$, while the first gives
+The second identity is exactly $E_{\Pi,B,C}(S)=0$, while differentiation
+gives
 \begin{equation}
- D=\frac{G_\Pi'(S)}{g_1}-BS.
+ D=\frac{G_\Pi'(S)}{g_1}-BS
+  =\frac{E_{\Pi,B,C}'(S)}{g_1}.
  \label{eq:D-derivative}
 \end{equation}
-At fixed $\Pi$, differentiate \eqref{eq:marked-line-identities} with respect
-to $(S,Q)$.  The terms containing $\partial_S\beta$ cancel, leaving
+At fixed $\Pi$, differentiating \eqref{eq:marked-line-identities} with
+respect to $(S,Q)$ gives
 \begin{equation}
  \det\frac{\partial(B,C)}{\partial(S,Q)}=-2D.
  \label{eq:plane-jacobian}
 \end{equation}
 Combining \eqref{eq:source-chart-jacobian} and
-\eqref{eq:plane-jacobian} proves
-\[
- \det\frac{\partial(\Pi,B,C)}{\partial(x,y,z)}=-2
-\]
-on the dense chart $t\neq0$, hence polynomially everywhere.
+\eqref{eq:plane-jacobian} proves $\det DF_G=-2$ on the dense chart
+$t\neq0$, hence polynomially everywhere.
 
-Conversely, let $S$ be a root of \eqref{eq:inverse}.  Equations
-\eqref{eq:beta} and \eqref{eq:D-derivative} recover
+It remains to prove the fiber statement on coordinate rings.  Fix
+$(\pi,b,c)$ as in the proposition and abbreviate
 \[
- Q=B-\beta(\Pi,S),
+ E=E_{\pi,b,c},
+ \qquad R=K[S]/(E),
+ \qquad s=S\bmod E.
+\]
+Squarefreeness gives $\gcd(E,E')=1$.  Thus there are $U,V\in K[S]$ with
+\[
+ UE+VE'=1,
+\]
+so $E'(s)$ is a unit of $R$, with inverse $V(s)$.  In particular no
+localization has been hidden in the reconstruction.  Put
+\[
+ d=\frac{E'(s)}{g_1},
+ \qquad q_0=b-\beta(\pi,s),
+\]
+and define in $R$
+\begin{equation}
+ \begin{aligned}
+  t_0&=d^{-1},& x_0&=s\,d^{-1},& y_0&=q_0-\pi s,\\
+  q_1&=\pi d,&
+  z_0&=d^2\left(q_1-\frac{g_1}{g_3}y_0^2(1+3t_0)\right).
+ \end{aligned}
+ \label{eq:ring-reconstruction}
+\end{equation}
+Equations \eqref{eq:marked-line-identities}--\eqref{eq:D-derivative}
+show directly in $R$ that
+\[
+ 1+x_0y_0=t_0,
  \qquad
- D=\frac{E_{\Pi,B,C}'(S)}{g_1}.
+ t_0^2z_0+\frac{g_1}{g_3}y_0^2(1+3t_0)=q_1,
 \]
-For a simple root, $D\neq0$, and the source point is uniquely recovered by
+and that $F_G(x_0,y_0,z_0)=(\pi,b,c)$.  Hence
+\eqref{eq:ring-reconstruction} defines a homomorphism from the coordinate
+ring of the fiber to $R$.
+
+Conversely, in the coordinate ring of the fiber one has
 \[
- t=D^{-1},\qquad x=\frac{S}{D},\qquad
- y=Q-\Pi S,
+ tq=\Pi=\pi\in K^*.
 \]
+Therefore both $t$ and $q$ are units on the entire fiber scheme, not merely
+at its geometric points.  The elements
 \[
- q=\Pi D,
- \qquad
- z=\frac{q-(g_1/g_3)y^2(1+3t)}{t^2}.
+ S=\frac{x}{t},
+ \qquad Q=y+xq
 \]
-If $E_{\Pi,B,C}$ is squarefree, its derivative is a unit in
-$K[S]/(E_{\Pi,B,C})$.  The same formulas therefore define an inverse on
-coordinate rings, proving the asserted scheme isomorphism rather than only a
-bijection of geometric points.  Generically \eqref{eq:inverse} has degree
-$N$ and is separable, so the reconstruction also gives $\gdeg(F_G)=N$.
+are consequently global there, and \eqref{eq:marked-line-identities} gives
+$E(S)=0$.  This defines the reverse homomorphism $R$ to the fiber ring.
+Under the two maps,
+\[
+ D=t^{-1},\qquad x=S/D,\qquad y=Q-\pi S,
+ \qquad q=\pi D,
+\]
+and the defining equation for $q$ recovers $z$.  Both compositions are the
+identity.  This proves the asserted scheme isomorphism.
+
+Finally, the generic polynomial \eqref{eq:inverse} has degree $N$ and is
+separable, and the same reconstruction works at every generic root.  Hence
+$\gdeg(F_G)=N$.
 \end{proof}

@@ -14,7 +14,7 @@ point over every $\Q_p$ has a rational point.
 \begin{proof}
 Let $X$ be such a scheme and let $L$ split it.  For every unramified prime,
 $X(\Q_p)\neq\varnothing$ exactly when the Frobenius element fixes a point of
-the finite $\Gal(L/\Q)$-set $X(L)$.
+the finite $\operatorname{Gal}(L/\Q)$-set $X(L)$.
 
 If $X$ is connected of degree greater than one, this action is transitive and
 contains a derangement.  Indeed, Burnside's lemma says that the average
@@ -72,13 +72,32 @@ $\Spec\Q[T]/(P_5)$, so it has the same local and global points.
 Lemma~\ref{lem:degree-four-barrier} proves minimality.
 \end{proof}
 
-Here is a denominator-free form of the map in Theorem~\ref{thm:hasse}.  Put
+We now derive the displayed map from the normalized gauge, including the
+scaling rather than treating its determinant as a separate computation.  Put
 \[
- t=1+xy,
- \qquad
+ G(T)=P_5(T)-P_5(0)=T^5+T^4+T^3-19T^2-19T.
+\]
+Thus
+\[
+ (g_1,g_2,g_3,g_4,g_5)=(-19,-19,1,1,1).
+\]
+With $t=1+xy$ and
+\[
  q=t^2z-19y^2(1+3t),
 \]
-and define
+Proposition~\ref{prop:gauge} gives the normalized map
+\begin{align*}
+ \Pi={}&tq,\\
+ B_0={}&y-\frac3{19}xq+2tq
+       -\frac4{19}t^2x^2q^4-\frac5{19}t^2x^3q^5,\\
+ C_0={}&x(5-3t)+\frac1{19}x^3z
+       +\frac2{19}(xq)^4+\frac3{19}(xq)^5,
+\end{align*}
+with $\det D(\Pi,B_0,C_0)=-2$.  Apply the target linear automorphism
+\[
+ L(\Pi,B_0,C_0)=(\Pi,19B_0,19C_0).
+\]
+The resulting denominator-free map $F=L\circ F_G$ is
 \begin{equation}
 \begin{aligned}
  F_1={}&tq,\\
@@ -87,23 +106,19 @@ and define
 \end{aligned}
 \label{eq:explicit-hasse-map}
 \end{equation}
-Then
+Consequently
 \[
- \det DF=-722.
+ \boxed{\det DF=\det(L)(-2)=19^2(-2)=-722.}
 \]
-The map is obtained from Proposition~\ref{prop:gauge} using
+The normalized target $(1,0,-2)$ is carried by $L$ to
 \[
- G(T)=P_5(T)-P_5(0)=T^5+T^4+T^3-19T^2-19T
+ y=(1,0,-38).
 \]
-and scaling its last two target coordinates by $19$.  At
+At the normalized target, the inverse equation is
 \[
- y=(1,0,-38)
+ G(T)-\frac{-19}{2}(-2)=G(T)-19=P_5(T).
 \]
-the inverse equation is exactly
-\[
- T^5+T^4+T^3-19T^2-19T-19=P_5(T),
-\]
-so
+Proposition~\ref{prop:gauge} therefore gives the scheme-theoretic identity
 \begin{equation}
  \boxed{F^{-1}(1,0,-38)\simeq
  \Spec\Q[T]/\bigl((T^3-19)(T^2+T+1)\bigr).}

@@ -26,6 +26,12 @@ This directory contains the stable proof chain:
 - [All-degree rational fibers](ALL_DEGREE_RATIONAL_FIBERS.md): explicit
   integer-root seeds giving a complete regular `N`-point rational fiber and
   `N` nearby real sheets for every `N>=3`.
+- [Finite étale Keller fibers](FINITE_ETALE_KELLER_FIBERS.md): every finite
+  étale algebra over a characteristic-zero field occurs as a full Keller fiber
+  unless its rank is two; ranks `N>=3` are realized explicitly in `A^3` with
+  determinant `-2`. The note includes the exact Bass--Connell--Wright
+  degree-two exclusion, quotient-ring reconstruction, optimal quintic Hasse
+  fiber, and the updated arithmetic transfer chain.
 - [Exact real-sheet spectrum](REAL_FIBER_SPECTRUM.md): every count
   `N,N-2,...,N mod 2` occurs on a nonempty complete regular real target
   chamber, with rational witnesses and an explicit fold-adjacency chain.
