@@ -1,0 +1,91 @@
+name: finite-etale-paper-branch
+
+on:
+  push:
+    branches:
+      - agent/finite-etale-lean
+    paths:
+      - papers/common-arithmetic-fibers/**
+      - .github/workflows/finite-etale-paper-branch.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  paper:
+    name: build-finite-etale-paper
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+      - name: Install TeX toolchain
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes --no-install-recommends \
+            cm-super latexmk texlive-fonts-recommended texlive-latex-extra
+      - name: Compile the finite-etale Keller paper
+        id: paper_build
+        continue-on-error: true
+        shell: bash
+        run: |
+          mkdir -p artifacts/verification
+          set -o pipefail
+          latexmk -cd -pdf -interaction=nonstopmode -halt-on-error \
+            papers/common-arithmetic-fibers/main.tex \
+            2>&1 | tee artifacts/verification/finite-etale-paper.log
+      - name: Report paper build to issue 11
+        if: ${{ always() }}
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BUILD_RESULT: ${{ steps.paper_build.outcome }}
+          RUN_ID: ${{ github.run_id }}
+          HEAD_SHA: ${{ github.sha }}
+          REPOSITORY: ${{ github.repository }}
+        run: |
+          python3 - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+          import urllib.request
+
+          repository = os.environ["REPOSITORY"]
+          result = os.environ["BUILD_RESULT"]
+          run_id = os.environ["RUN_ID"]
+          head_sha = os.environ["HEAD_SHA"]
+          token = os.environ["GH_TOKEN"]
+          log_path = Path("artifacts/verification/finite-etale-paper.log")
+          lines = log_path.read_text(errors="replace").splitlines() if log_path.exists() else []
+          tail = "\n".join(lines[-80:])
+          if len(tail) > 20000:
+              tail = tail[-20000:]
+          body = (
+              "<!-- finite-etale-paper-ci -->\n"
+              f"Finite-étale paper branch CI: **{result}**. "
+              f"Run ID `{run_id}`, head `{head_sha}`.\n\n"
+              "<details><summary>LaTeX tail</summary>\n\n"
+              f"```text\n{tail}\n```\n\n</details>"
+          )
+          request = urllib.request.Request(
+              f"https://api.github.com/repos/{repository}/issues/11/comments",
+              data=json.dumps({"body": body}).encode(),
+              headers={
+                  "Authorization": f"Bearer {token}",
+                  "Accept": "application/vnd.github+json",
+                  "X-GitHub-Api-Version": "2022-11-28",
+                  "Content-Type": "application/json",
+              },
+              method="POST",
+          )
+          with urllib.request.urlopen(request) as response:
+              response.read()
+          PY
+      - name: Require a clean paper build
+        if: ${{ always() }}
+        env:
+          BUILD_RESULT: ${{ steps.paper_build.outcome }}
+        run: test "$BUILD_RESULT" = success
