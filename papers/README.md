@@ -12,9 +12,10 @@ corrections that are deliberately carried into a new deposited version.
 
 ## Active
 
-- `common-arithmetic-fibers`
+- `common-arithmetic-fibers` — *Finite Étale Algebras as Keller Fibers*
 
-This manuscript remains under active development.
+This manuscript remains under active development. The directory name is a
+stable path retained from its earlier draft.
 
 ## Parked
 

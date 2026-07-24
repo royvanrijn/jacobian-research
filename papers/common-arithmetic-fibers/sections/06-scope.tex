@@ -1,0 +1,84 @@
+\section{Consequences and scope}
+
+Theorem~\ref{thm:main} is a realization theorem, not merely a source of
+counterexamples.  Some immediate applications are:
+
+\begin{enumerate}
+\item Every squarefree polynomial of degree at least three is, after one
+      translation of its variable, the exact inverse polynomial of a full
+      Keller fiber.
+\item Every intersective polynomial of degree at least three transfers to a
+      Hasse-failing Keller fiber without stabilization or auxiliary factors.
+\item Any prescribed real signature, splitting field, or finite list of local
+      factorization patterns already carried by a finite \'etale algebra is
+      carried by the corresponding Keller fiber.
+\item Connected fibers require no additional geometry: start with an
+      irreducible polynomial.
+\end{enumerate}
+
+The realization is not unique.  Separate boundary calculations in the
+accompanying research repository show that the same finite \'etale algebra
+can occur in stably inequivalent weighted, cancellation, and quadratic-gauge
+Keller maps.  That stable-classification problem is logically independent of
+the realization theorem and is best treated separately.
+
+\paragraph{Verification.}
+The companion checker
+\[
+ \texttt{scripts/verify\_common\_arithmetic\_fibers.py}
+\]
+verifies the explicit degree-five map and its determinant, the inverse
+polynomial identities, and the fixed-map infinite family.  The universal
+proof is the calculation in Proposition~\ref{prop:gauge}, not a bounded
+computer search.
+
+\paragraph{Provenance.}
+The recent three-dimensional counterexample was publicly attributed to
+Alp\"oge and Fable; Gallagher developed a weighted all-degree viewpoint and
+an exact public atlas of complete rational fibers \cite{Gallagher}.  The
+quadratic-gauge construction and the finite-\'etale realization theorem are
+the contributions used here.  Berend and Bilu are credited for the minimal
+intersective quintic and its optimality.  No priority claim is made beyond the
+dated sources cited below.
+
+\paragraph{AI assistance.}
+Generative AI tools were used for symbolic experimentation, exact checker
+development, adversarial proof review, and manuscript preparation.  The
+author reviewed the mathematical claims and assumes full responsibility for
+the contents.
+
+\begin{thebibliography}{9}
+\small
+
+\bibitem{BerendBilu}
+D.~Berend and Y.~Bilu,
+\emph{Polynomials with roots modulo every integer},
+Proc. Amer. Math. Soc. \textbf{124} (1996), 1663--1671,
+\href{https://doi.org/10.1090/S0002-9939-96-03210-8}
+{doi:10.1090/S0002-9939-96-03210-8}.
+
+\bibitem{Campbell}
+L.~A. Campbell,
+\emph{A condition for a polynomial map to be invertible},
+Math. Ann. \textbf{205} (1973), 243--248,
+\href{https://doi.org/10.1007/BF01349234}
+{doi:10.1007/BF01349234}.
+
+\bibitem{Gallagher}
+A.~Gallagher,
+\emph{Counterexample atlas: generic fiber degrees 3 through 100},
+online exact certificate atlas, 2026,
+\href{https://jacobianfun.org/counterexamples}{jacobianfun.org}.
+
+\bibitem{Razar}
+M.~Razar,
+\emph{Polynomial maps with constant Jacobian},
+Israel J. Math. \textbf{32} (1979), 97--106.
+
+\bibitem{Wright}
+D.~Wright,
+\emph{On the Jacobian conjecture},
+Illinois J. Math. \textbf{25} (1981), 423--440.
+
+\end{thebibliography}
+
