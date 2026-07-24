@@ -10,6 +10,10 @@ permissions:
   contents: read
   issues: write
 
+concurrency:
+  group: finite-etale-lean-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   build:
     name: build-finite-etale-lean
