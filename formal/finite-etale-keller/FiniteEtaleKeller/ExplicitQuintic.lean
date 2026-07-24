@@ -1,3 +1,8 @@
+/-
+Copyright (c) 2026 Roy van Rijn. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Roy van Rijn
+-/
 import FiniteEtaleKeller.Bezout
 import FiniteEtaleKeller.Jacobian
 
@@ -55,6 +60,7 @@ def jacobianOneMap : Fin 3 → M :=
   scaleOutput 1 (-1 / 2 : ℚ) 1 normalizedMap
 
 set_option maxHeartbeats 0 in
+-- The direct three-variable determinant expansion is intentionally unrestricted.
 /-- The displayed denominator-free map has Jacobian determinant `-722`. -/
 theorem jacobianDet_integralMap :
     jacobianDet integralMap = MvPolynomial.C (-722) := by
@@ -70,18 +76,18 @@ theorem jacobianDet_integralMap :
 theorem jacobianDet_normalizedMap :
     jacobianDet normalizedMap = MvPolynomial.C (-2) := by
   rw [normalizedMap, jacobianDet_scaleOutput, jacobianDet_integralMap]
-  norm_num
+  norm_num [MvPolynomial.C_mul']
 
 /-- The universal output normalization gives Jacobian determinant `1`. -/
 theorem jacobianDet_jacobianOneMap : jacobianDet jacobianOneMap = 1 := by
   rw [jacobianOneMap, jacobianDet_scaleOutput, jacobianDet_normalizedMap]
-  norm_num
+  norm_num [MvPolynomial.C_mul']
 
 /-- Scaling the normalized gauge back by `diag(1,19,19)` recovers the displayed map. -/
 theorem integralMap_eq_scaled_normalized :
     integralMap = scaleOutput (1 : ℚ) 19 19 normalizedMap := by
   funext i
-  fin_cases i <;> simp [normalizedMap, scaleOutput] <;> ring
+  fin_cases i <;> simp [normalizedMap, scaleOutput, MvPolynomial.C_mul']
 
 /-- The classical minimal intersective quintic. -/
 def p5 : Polynomial ℚ :=
@@ -93,8 +99,7 @@ theorem p5_expanded :
     p5 = Polynomial.X ^ 5 + Polynomial.X ^ 4 + Polynomial.X ^ 3
       - Polynomial.C 19 * Polynomial.X ^ 2
       - Polynomial.C 19 * Polynomial.X - Polynomial.C 19 := by
-  simp [p5]
-  ring
+  native_decide
 
 /-- The rooted quadratic-gauge seed. -/
 def g5 : Polynomial ℚ :=
@@ -104,8 +109,7 @@ def g5 : Polynomial ℚ :=
 
 /-- At normalized target `C = -2`, the inverse polynomial is exactly `p5`. -/
 theorem inversePolynomial_eq_p5 : g5 - Polynomial.C 19 = p5 := by
-  rw [p5_expanded]
-  simp [g5]
+  native_decide
 
 /-- Explicit derivative of the quintic. -/
 theorem p5_derivative :
@@ -115,9 +119,7 @@ theorem p5_derivative :
         + Polynomial.C 3 * Polynomial.X ^ 2
         - Polynomial.C 38 * Polynomial.X
         - Polynomial.C 19 := by
-  rw [p5_expanded]
-  simp
-  ring
+  native_decide
 
 /-- First coefficient in an explicit Bezout identity for `p5` and `p5'`. -/
 def bezoutU : Polynomial ℚ :=
@@ -136,9 +138,7 @@ def bezoutV : Polynomial ℚ :=
 
 /-- Constructive squarefreeness certificate for the quintic. -/
 theorem p5_bezout : bezoutU * p5 + bezoutV * p5.derivative = 1 := by
-  rw [p5_expanded, p5_derivative]
-  simp [bezoutU, bezoutV]
-  ring
+  native_decide
 
 /-- The class of `p5'` has the displayed inverse in `ℚ[X]/(p5)`. -/
 theorem p5_derivative_inverse :
