@@ -3,6 +3,17 @@
 This project formalizes *Finite Étale Algebras as Keller Fibers* in stages.
 It uses Lean `v4.33.0-rc1` and Mathlib at the matching release candidate.
 
+## Proof status
+
+| Stage | Scope | Status |
+|---|---|---|
+| 1 | Explicit quintic, output scaling, Bézout inverse | implemented |
+| 2 | Universal marked-line and Jacobian identities | next |
+| 3 | Two-sided scheme reconstruction | planned |
+| 4 | Translated polynomial realization | planned |
+| 5 | Monogenic finite étale algebras | planned |
+| 6 | Historical degree-two exclusion | external input pending formalization |
+
 ## Completed in stage 1
 
 The current files contain no `sorry` and certify:
