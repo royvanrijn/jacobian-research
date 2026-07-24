@@ -39,18 +39,18 @@ If `gdeg(F)=2`, then
 \mathbb C(x_1,x_2,x_3)/\mathbb C(F_1,F_2,F_3)
 \]
 
-is a separable quadratic extension and is therefore Galois. The Galois case
-of the Jacobian theorem makes `F` a polynomial automorphism.
+is a separable quadratic extension and is therefore Galois. Campbell's
+Galois theorem makes `F` a polynomial automorphism. Razar and independently
+Wright gave subsequent algebraic treatments.
 
-The exact field generality is stronger than needed here. Bass--Connell--Wright,
-Chapter I, Theorem 2.1, state the Galois implication over an arbitrary ground
-field; characteristic zero is the field hypothesis needed for the implication.
-Thus the geometric-degree-two exclusion works for Keller maps over every
-characteristic-zero field, with no algebraic-closedness assumption. Campbell
-proved the complex case, followed by algebraic treatments of Razar and
-Wright.
+The same exclusion works over every characteristic-zero ground field. The
+[finite-étale Keller-fiber note](FINITE_ETALE_KELLER_FIBERS.md) gives the
+explicit descent: move the coefficients to a finitely generated subfield,
+embed it into `C`, use stability of generic degree under scalar extension,
+and descend the unique formal/polynomial inverse. Thus no
+algebraic-closedness assumption is required.
 
-Thus every noninvertible Keller map has geometric degree at least three.
+Every noninvertible Keller map therefore has geometric degree at least three.
 
 ### Realization of every degree at least three
 
@@ -118,16 +118,15 @@ left--right, inequivalent.
 
 ## Classical input
 
-- H. Bass, E. Connell, D. Wright,
-  [*The Jacobian conjecture: reduction of degree and formal expansion of the inverse*](https://doi.org/10.1090/S0273-0979-1982-15032-7),
-  Bull. Amer. Math. Soc. (N.S.) 7 (1982), 287--330.
 - L. Andrew Campbell,
   [*A condition for a polynomial map to be invertible*](https://doi.org/10.1007/BF01349234),
   Math. Ann. 205 (1973), 243--248.
-- Michael Razar, *Polynomial maps with constant Jacobian*, Israel J. Math.
-  32 (1979), 97--106.
-- David Wright, *On the Jacobian conjecture*, Illinois J. Math. 25 (1981),
-  423--440.
+- Michael Razar,
+  [*Polynomial maps with constant Jacobian*](https://doi.org/10.1007/BF02764906),
+  Israel J. Math. 32 (1979), 97--106.
+- David Wright,
+  [*On the Jacobian conjecture*](https://doi.org/10.1215/ijm/1256047158),
+  Illinois J. Math. 25 (1981), 423--440.
 
 The internal existence and degree inputs are the
 [foundational geometry](FOUNDATIONAL_GEOMETRY.md), the
