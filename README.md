@@ -450,8 +450,16 @@ claims are first-class `falsified` entries rather than prose-only corrections.
 ## Main papers
 
 - [The Gaussian Moments Conjecture in Two Variables](papers/gaussian-moments-two-variables/main.tex)
+  ([Zenodo record 21534699](https://zenodo.org/records/21534699),
+  DOI `10.5281/zenodo.21534699`)
 - [Sparse Minimality of Gaussian-Moments Counterexamples in Dimension Three](papers/sparse-minimality-gaussian-moments-dimension-three/main.tex)
+  ([Zenodo record 21534917](https://zenodo.org/records/21534917),
+  DOI `10.5281/zenodo.21534917`)
 - [Generic Discriminants of Polynomial Tangent Pencils](papers/discriminant-pencils/main.tex)
+
+Publication status as of 24 July 2026: the first two manuscripts have been
+deposited on Zenodo, but their arXiv submissions are awaiting endorsement and
+have not yet been posted on arXiv.
 
 The remaining completed and exploratory results are maintained as theorem
 notes rather than presented as standalone papers.
