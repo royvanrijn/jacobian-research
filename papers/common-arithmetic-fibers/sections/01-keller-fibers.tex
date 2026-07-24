@@ -39,16 +39,29 @@ $F:\A^m_K\to\A^m_K$ of geometric degree two is a polynomial automorphism.
 
 \begin{proof}
 Put $L=K(x_1,\ldots,x_m)$ and $M=K(F_1,\ldots,F_m)$.  The extension
-$L/M$ has degree two.  It is separable because $K$ has characteristic zero,
-and every separable quadratic extension is Galois.  Bass--Connell--Wright
-state the Galois case over an arbitrary ground field: for a polynomial
-endomorphism with invertible Jacobian, Galoisness of $L/M$ implies polynomial
-invertibility when the ground field has characteristic zero
-\cite[Chapter~I, Theorem~2.1]{BCW}.  Hence $F$ is an automorphism.
-
-No algebraic-closedness assumption is used here.  Campbell established the
-complex case, and Razar and Wright supplied subsequent algebraic treatments
+$L/M$ has degree two, hence is separable and Galois.  The Galois case of the
+Jacobian theorem was proved over $\mathbb C$ by Campbell and subsequently by
+Razar and independently Wright in algebraic form
 \cite{Campbell,Razar,Wright}.
+
+For completeness, we spell out why this gives the exact ground-field
+generality used here.  Choose a finitely generated subfield
+$K_0\subset K$ containing all coefficients of $F$.  Generic degree is
+preserved by extension of the ground field for a dominant generically finite
+map between geometrically integral affine spaces, so
+\[
+ [K_0(x_1,\ldots,x_m):K_0(F_1,\ldots,F_m)]=2.
+\]
+Choose an embedding $K_0\hookrightarrow\mathbb C$.  After this base change
+the function-field extension is still quadratic and therefore Galois, so
+Campbell's theorem makes $F_{\mathbb C}$ a polynomial automorphism.
+
+The formal inverse of $F$ at the point $F(0)$ is unique.  Its coefficients
+are obtained recursively from the coefficients of $F$ and the inverse of its
+linear Jacobian, and hence lie in $K_0$.  The polynomial inverse over
+$\mathbb C$ agrees with this formal inverse, so all of its coefficients lie
+in $K_0$.  It therefore descends to $K$, proving the assertion without any
+algebraic-closedness assumption.
 \end{proof}
 
 \begin{theorem}[Finite-\'etale realization]\label{thm:main}
