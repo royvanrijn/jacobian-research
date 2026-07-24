@@ -20,28 +20,29 @@ jobs:
       - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
         with:
           persist-credentials: false
-      - name: Build the finite-etale Keller certificate
+      - name: Install Lean and prime the Mathlib cache
         uses: leanprover/lean-action@38fbc41a8c28c4cbaec22d7f7de508ec2e7c0dd9 # v1
         with:
           lake-package-directory: formal/finite-etale-keller
           auto-config: false
-          build: true
+          build: false
           test: false
           lint: false
           use-mathlib-cache: true
-
-  report:
-    name: report-finite-etale-lean
-    if: ${{ always() }}
-    needs: build
-    runs-on: ubuntu-latest
-    timeout-minutes: 5
-
-    steps:
+      - name: Compile the finite-etale Keller certificate
+        id: lean_build
+        continue-on-error: true
+        shell: bash
+        run: |
+          mkdir -p artifacts/verification
+          set -o pipefail
+          cd formal/finite-etale-keller
+          lake build 2>&1 | tee ../../artifacts/verification/finite-etale-lean.log
       - name: Report branch build to issue 11
+        if: ${{ always() }}
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BUILD_RESULT: ${{ needs.build.result }}
+          BUILD_RESULT: ${{ steps.lean_build.outcome }}
           RUN_ID: ${{ github.run_id }}
           HEAD_SHA: ${{ github.sha }}
           REPOSITORY: ${{ github.repository }}
@@ -49,6 +50,7 @@ jobs:
           python3 - <<'PY'
           import json
           import os
+          from pathlib import Path
           import urllib.request
 
           repository = os.environ["REPOSITORY"]
@@ -56,10 +58,17 @@ jobs:
           run_id = os.environ["RUN_ID"]
           head_sha = os.environ["HEAD_SHA"]
           token = os.environ["GH_TOKEN"]
+          log_path = Path("artifacts/verification/finite-etale-lean.log")
+          lines = log_path.read_text(errors="replace").splitlines() if log_path.exists() else []
+          tail = "\n".join(lines[-120:])
+          if len(tail) > 30000:
+              tail = tail[-30000:]
           body = (
               "<!-- finite-etale-lean-ci -->\n"
               f"Finite-étale Lean branch CI: **{result}**. "
-              f"Run ID `{run_id}`, head `{head_sha}`."
+              f"Run ID `{run_id}`, head `{head_sha}`.\n\n"
+              "<details><summary>Compiler tail</summary>\n\n"
+              f"```text\n{tail}\n```\n\n</details>"
           )
           request = urllib.request.Request(
               f"https://api.github.com/repos/{repository}/issues/11/comments",
@@ -75,3 +84,8 @@ jobs:
           with urllib.request.urlopen(request) as response:
               response.read()
           PY
+      - name: Require a clean Lean build
+        if: ${{ always() }}
+        env:
+          BUILD_RESULT: ${{ steps.lean_build.outcome }}
+        run: test "$BUILD_RESULT" = success
