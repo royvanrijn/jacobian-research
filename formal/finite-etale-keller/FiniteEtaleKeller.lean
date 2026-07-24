@@ -3,4 +3,5 @@ import FiniteEtaleKeller.MarkedLine
 import FiniteEtaleKeller.Reconstruction
 import FiniteEtaleKeller.QuotientReconstruction
 import FiniteEtaleKeller.Translation
+import FiniteEtaleKeller.TranslationQuotient
 import FiniteEtaleKeller.ExplicitQuintic
