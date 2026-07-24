@@ -74,7 +74,7 @@ jobs:
               f"```text\n{tail}\n```\n\n</details>"
           )
           request = urllib.request.Request(
-              f"https://api.github.com/repos/{repository}/issues/11/comments",
+              f"https://api.github.com/repos/{repository}/issues/comments/5073755913",
               data=json.dumps({"body": body}).encode(),
               headers={
                   "Authorization": f"Bearer {token}",
@@ -82,7 +82,7 @@ jobs:
                   "X-GitHub-Api-Version": "2022-11-28",
                   "Content-Type": "application/json",
               },
-              method="POST",
+              method="PATCH",
           )
           with urllib.request.urlopen(request) as response:
               response.read()
