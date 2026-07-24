@@ -59,7 +59,7 @@ theorem normalizedDerivative_eq_chartFactor
     (S Q pi β h : R) (hβ : S * β = h - 1 - pi * S ^ 2) :
     h - (Q + β) * S = 1 - S * Q + pi * S ^ 2 := by
   have hh : h = 1 + pi * S ^ 2 + S * β := by
-    linear_combination hβ
+    linear_combination -hβ
   rw [hh]
   ring
 
