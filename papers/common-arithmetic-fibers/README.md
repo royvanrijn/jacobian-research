@@ -19,7 +19,7 @@ draft.
 Run the exact checker from the repository root:
 
 ```bash
-.venv/bin/python scripts/verify_common_arithmetic_fibers.py
+.venv/bin/python scripts/verify_finite_etale_keller_fibers.py
 ```
 
 Build the paper with:
