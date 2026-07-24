@@ -31,7 +31,7 @@ The construction can be summarized in one line:
  \ \longmapsto\
  G(S)=P(a+S)-P(a)
  \ \longmapsto\
- \widetilde F_G^{-1}(\widetilde y_{P,a})\simeq\Spec K[T]/(P).}
+ \widetilde F_G^{-1}(y_{P,a})\simeq\Spec K[T]/(P).}
 \]
 
 \begin{lemma}[The degree-two exclusion over $K$]\label{lem:degree-two}
@@ -82,7 +82,7 @@ Let $F_G=(\Pi,B,C)$ be the quadratic-gauge map of
 \[
  \widetilde F_G=L\circ F_G,
  \qquad
- L(\Pi,B,C)=\left(-\frac{\Pi}{2},B,C\right).
+ L(\Pi,B,C)=\left(\Pi,-\frac{B}{2},C\right).
 \]
 Then
 \[
@@ -92,13 +92,12 @@ Then
 \]
 At
 \begin{equation}
- \widetilde y_{P,a}
- =\left(-\frac12,0,-\frac{2P(a)}{P'(a)}\right)
+ y_{P,a}=\left(1,0,-\frac{2P(a)}{P'(a)}\right)
  \label{eq:main-target}
 \end{equation}
 its full fiber is
 \[
- \boxed{\widetilde F_G^{-1}(\widetilde y_{P,a})
+ \boxed{\widetilde F_G^{-1}(y_{P,a})
  \simeq\Spec K[T]/(P).}
 \]
 Consequently every finite \'etale $K$-algebra of rank at least three is a
@@ -108,22 +107,18 @@ Keller fiber.
 \begin{proof}
 The translation makes the linear and cubic coefficients of $G$ equal to
 $P'(a)$ and $P'''(a)/6$, respectively, so the quadratic gauge of
-Section~\ref{sec:gauge} applies.  At the unnormalized target
-\[
- y_{P,a}=\left(1,0,-\frac{2P(a)}{P'(a)}\right),
-\]
-its inverse polynomial is
+Section~\ref{sec:gauge} applies.  At the target \eqref{eq:main-target}, its
+inverse polynomial is
 \[
  G(S)-\frac{P'(a)}2\left(-\frac{2P(a)}{P'(a)}\right)
  =P(a+S).
 \]
 Proposition~\ref{prop:gauge} identifies the full scheme fiber with
 $\Spec K[S]/(P(a+S))$, which is $\Spec K[T]/(P)$ after $T=a+S$.
-The linear automorphism $L$ carries $y_{P,a}$ to
-\eqref{eq:main-target}, multiplies the Jacobian determinant by $-1/2$, and
-does not alter geometric degree or coordinate degrees.  The determinant-one
-claim and the effective bound follow from
-Corollary~\ref{cor:effective-gauge}.
+The linear automorphism $L$ fixes this target because its second coordinate
+is zero, multiplies the Jacobian determinant by $-1/2$, and does not alter
+geometric degree or coordinate degrees.  The determinant-one claim and the
+effective bound follow from Corollary~\ref{cor:effective-gauge}.
 
 For an arbitrary finite \'etale algebra of rank at least three, apply the
 monogenicity lemma in Section~\ref{sec:realization}.  Rank one is realized by
