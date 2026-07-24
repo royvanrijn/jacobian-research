@@ -24,7 +24,7 @@ jobs:
       - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
         with:
           persist-credentials: false
-      - name: Install Lean, prime Mathlib, and attempt the first build
+      - name: Install Lean, prime Mathlib, and build the lightweight certificate
         id: lean_action
         continue-on-error: true
         uses: leanprover/lean-action@38fbc41a8c28c4cbaec22d7f7de508ec2e7c0dd9 # v1
@@ -32,19 +32,27 @@ jobs:
           lake-package-directory: formal/finite-etale-keller
           auto-config: false
           build: true
+          build-args: FiniteEtaleKeller.ExplicitPolynomial
           test: false
           lint: false
           use-mathlib-cache: true
-      - name: Compile the finite-etale Keller certificate with captured output
+      - name: Compile the relevant certificate with captured output
         id: lean_build
         if: ${{ always() }}
         continue-on-error: true
         shell: bash
+        env:
+          LIGHT_RESULT: ${{ steps.lean_action.outcome }}
         run: |
           mkdir -p artifacts/verification
           set -o pipefail
           cd formal/finite-etale-keller
-          lake build 2>&1 | tee ../../artifacts/verification/finite-etale-lean.log
+          if [ "$LIGHT_RESULT" = success ]; then
+            lake build 2>&1 | tee ../../artifacts/verification/finite-etale-lean.log
+          else
+            lake build FiniteEtaleKeller.ExplicitPolynomial \
+              2>&1 | tee ../../artifacts/verification/finite-etale-lean.log
+          fi
       - name: Report branch build to issue 11
         if: ${{ always() }}
         env:
