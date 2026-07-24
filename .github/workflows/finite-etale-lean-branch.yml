@@ -38,6 +38,7 @@ jobs:
             FiniteEtaleKeller.Reconstruction
             FiniteEtaleKeller.QuotientReconstruction
             FiniteEtaleKeller.Translation
+            FiniteEtaleKeller.TranslationQuotient
           test: false
           lint: false
           use-mathlib-cache: true
@@ -62,6 +63,7 @@ jobs:
               FiniteEtaleKeller.Reconstruction \
               FiniteEtaleKeller.QuotientReconstruction \
               FiniteEtaleKeller.Translation \
+              FiniteEtaleKeller.TranslationQuotient \
               2>&1 | tee ../../artifacts/verification/finite-etale-lean.log
           fi
       - name: Report branch build to issue 11
