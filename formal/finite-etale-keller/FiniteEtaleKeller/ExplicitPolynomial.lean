@@ -47,9 +47,15 @@ theorem p5_derivative :
         + 3 * Polynomial.X ^ 2 - 38 * Polynomial.X - 19 := by
   rw [p5_expanded]
   simp
-  have h2 : Polynomial.C (2 : ℚ) = (2 : Polynomial ℚ) := by norm_num
-  have h3 : Polynomial.C (3 : ℚ) = (3 : Polynomial ℚ) := by norm_num
-  have h4 : Polynomial.C (4 : ℚ) = (4 : Polynomial ℚ) := by norm_num
+  have h2 : Polynomial.C (2 : ℚ) = (2 : Polynomial ℚ) := by
+    ext n
+    simp
+  have h3 : Polynomial.C (3 : ℚ) = (3 : Polynomial ℚ) := by
+    ext n
+    simp
+  have h4 : Polynomial.C (4 : ℚ) = (4 : Polynomial ℚ) := by
+    ext n
+    simp
   rw [h2, h3, h4]
   ring
 
