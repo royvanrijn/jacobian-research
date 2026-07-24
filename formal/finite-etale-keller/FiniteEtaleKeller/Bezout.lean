@@ -29,10 +29,43 @@ theorem adjoinRoot_bezout_inverse (E U V W : K[X])
   simpa only [map_add, map_mul, map_one, AdjoinRoot.mk_self, mul_zero,
     zero_add] using hq
 
+/-- Package the two-sided quotient inverse supplied by a Bezout identity as an
+actual unit. -/
+def adjoinRootUnitOfBezout (E U V W : K[X])
+    (h : U * E + V * W = 1) : (AdjoinRoot E)ˣ where
+  val := AdjoinRoot.mk E W
+  inv := AdjoinRoot.mk E V
+  val_inv := by
+    simpa [mul_comm] using adjoinRoot_bezout_inverse E U V W h
+  inv_val := adjoinRoot_bezout_inverse E U V W h
+
 /-- Specialization to the derivative class used in the fiber reconstruction. -/
 theorem adjoinRoot_derivative_inverse (E U V : K[X])
     (h : U * E + V * E.derivative = 1) :
     AdjoinRoot.mk E V * AdjoinRoot.mk E E.derivative = 1 :=
   adjoinRoot_bezout_inverse E U V E.derivative h
+
+/-- The derivative class as an explicit unit of `K[S]/(E)`. -/
+def adjoinRootDerivativeUnit (E U V : K[X])
+    (h : U * E + V * E.derivative = 1) : (AdjoinRoot E)ˣ :=
+  adjoinRootUnitOfBezout E U V E.derivative h
+
+@[simp]
+theorem adjoinRootDerivativeUnit_val (E U V : K[X])
+    (h : U * E + V * E.derivative = 1) :
+    (adjoinRootDerivativeUnit E U V h : AdjoinRoot E) =
+      AdjoinRoot.mk E E.derivative := rfl
+
+@[simp]
+theorem adjoinRootDerivativeUnit_inv_val (E U V : K[X])
+    (h : U * E + V * E.derivative = 1) :
+    ((adjoinRootDerivativeUnit E U V h)⁻¹ : AdjoinRoot E) =
+      AdjoinRoot.mk E V := rfl
+
+/-- In particular, the derivative class is a unit in the quotient ring. -/
+theorem adjoinRoot_derivative_isUnit (E U V : K[X])
+    (h : U * E + V * E.derivative = 1) :
+    IsUnit (AdjoinRoot.mk E E.derivative) := by
+  simpa using (adjoinRootDerivativeUnit E U V h).isUnit
 
 end FiniteEtaleKeller
