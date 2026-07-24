@@ -6,7 +6,7 @@
 
 The manuscript proves that every finite étale algebra over a
 characteristic-zero field, except one of rank two, occurs as a full fiber of a
-polynomial Keller map.  In rank at least three the realization is explicit in
+polynomial Keller map. In rank at least three the realization is explicit in
 `A^3` and has determinant `-2`.
 
 The priority language in the manuscript is deliberately qualified:
@@ -14,7 +14,7 @@ The priority language in the manuscript is deliberately qualified:
 > To our knowledge, no earlier source states this finite-étale realization
 > theorem or the resulting rank classification.
 
-This file records the search supporting that sentence.  It is not a substitute
+This file records the search supporting that sentence. It is not a substitute
 for MathSciNet/zbMATH review or direct expert consultation.
 
 ## Queries
@@ -36,20 +36,36 @@ arbitrary number field fiber Keller map
 Repository and coefficient-string searches were also used for the phrases
 `finite étale Keller fiber`, `prescribed fiber`, and `full fiber`.
 
-## Closest located sources
+## Degree-two source audit
 
-### Bass--Connell--Wright: the degree-two exclusion
+The audit corrected one initially over-specific citation. Chapter I,
+Theorem 2.1 of Bass--Connell--Wright concerns the implication from bijectivity
+to a polynomial inverse; it is not the primary source for the Galois case used
+here.
 
-H. Bass, E. Connell, and D. Wright,
-*The Jacobian conjecture: reduction of degree and formal expansion of the
-inverse*, Bull. Amer. Math. Soc. (N.S.) 7 (1982), 287--330,
-[DOI](https://doi.org/10.1090/S0273-0979-1982-15032-7).
+The relevant historical sources are:
 
-Chapter I, Theorem 2.1 gives the Galois case over an arbitrary ground field;
-characteristic zero is the field hypothesis needed for the implication used
-in the paper.  This supports the exclusion of geometric degree two over the
-same generality as the realization theorem.  It is an input, not an overlap
-with finite-étale fiber realization.
+- L. A. Campbell,
+  *A condition for a polynomial map to be invertible*, Math. Ann. 205
+  (1973), 243--248,
+  [DOI](https://doi.org/10.1007/BF01349234), for the complex Galois case;
+- M. Razar,
+  *Polynomial maps with constant Jacobian*, Israel J. Math. 32 (1979),
+  97--106,
+  [DOI](https://doi.org/10.1007/BF02764906);
+- D. Wright,
+  *On the Jacobian conjecture*, Illinois J. Math. 25 (1981), 423--440,
+  [DOI](https://doi.org/10.1215/ijm/1256047158).
+
+The manuscript does not rely on an unverified field-general formulation of
+one of these sources. Instead it derives the arbitrary characteristic-zero
+field statement from Campbell's complex theorem: descend the coefficients to
+a finitely generated subfield, embed it into `C`, use stability of generic
+degree under scalar extension, and then descend the unique formal/polynomial
+inverse. This supplies exactly the ground-field generality required for the
+rank-two exclusion.
+
+## Closest located sources to the realization theorem
 
 ### Gallagher: split complete fibers
 
@@ -58,7 +74,7 @@ A. Gallagher,
 2026.
 
 The atlas gives explicit Keller maps in every generic degree and complete
-split rational fibers.  It realizes the split algebra `K^N`, not arbitrary
+split rational fibers. It realizes the split algebra `K^N`, not arbitrary
 finite étale `K`-algebras, and does not state the rank classification.
 
 ### Miranda--Neto: ideals of existing fibers
@@ -69,8 +85,8 @@ C. B. Miranda--Neto,
 [DOI](https://doi.org/10.1017/S0013091519000099).
 
 This work studies radicality and maximal-ideal decomposition for fibers of a
-Keller map already given.  It does not construct a Keller map from a
-prescribed finite étale algebra.
+Keller map already given. It does not construct a Keller map from a prescribed
+finite étale algebra.
 
 ### Lipton--Markakis: rational images and Hilbert irreducibility
 
@@ -78,7 +94,7 @@ R. J. Lipton and E. Markakis,
 [Some remarks on the Jacobian conjecture and connections with Hilbert's
 irreducibility theorem](https://arxiv.org/abs/math/0507525), 2005.
 
-This studies rational images and Hilbert subsets under Keller maps.  Its
+This studies rational images and Hilbert subsets under Keller maps. Its
 quantifier order starts with a map and studies its values; the realization
 theorem starts with a finite étale algebra and constructs the map.
 
@@ -95,8 +111,8 @@ No prescribed finite-étale fiber theorem was located there.
 
 General work on specialization of finite covers, Hilbert irreducibility, and
 prescribed local behavior can realize finite étale algebras inside suitable
-covers.  Those results do not impose that the cover is a polynomial
-constant-Jacobian self-map of affine space.  They are therefore adjacent
+covers. Those results do not impose that the cover is a polynomial
+constant-Jacobian self-map of affine space. They are therefore adjacent
 arithmetic inputs, not prior versions of the Keller-fiber theorem.
 
 ## Negative-search conclusion
@@ -111,7 +127,7 @@ No located source states any of the following:
    `1,3,4,5,...`.
 
 The manuscript should retain the phrase **“to our knowledge”** and should not
-claim that the search proves absolute priority.  Before journal submission,
+claim that the search proves absolute priority. Before journal submission,
 the statement should also be sent to specialists in Keller maps and finite
 cover arithmetic, and checked in MathSciNet and zbMATH by a reader with full
 access.
