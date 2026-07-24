@@ -46,15 +46,15 @@ Razar and independently Wright in algebraic form
 
 For completeness, we spell out why this gives the exact ground-field
 generality used here.  Choose a finitely generated subfield
-$K_0\subset K$ containing all coefficients of $F$.  Generic degree is
-preserved by extension of the ground field for a dominant generically finite
-map between geometrically integral affine spaces, so
-\[
- [K_0(x_1,\ldots,x_m):K_0(F_1,\ldots,F_m)]=2.
-\]
-Choose an embedding $K_0\hookrightarrow\mathbb C$.  After this base change
-the function-field extension is still quadratic and therefore Galois, so
-Campbell's theorem makes $F_{\mathbb C}$ a polynomial automorphism.
+$K_0\subset K$ containing all coefficients of $F$, and regard $F$ as a map
+over $K_0$.  After shrinking the target, this map is finite locally free; its
+rank is its generic degree.  Flat base change preserves that rank.  Since its
+base change to $K$ has generic degree two, the map over $K_0$ also has generic
+degree two, and so does every further scalar extension.
+
+Choose an embedding $K_0\hookrightarrow\mathbb C$.  The complexified
+function-field extension is therefore quadratic and Galois, so Campbell's
+theorem makes $F_{\mathbb C}$ a polynomial automorphism.
 
 The formal inverse of $F$ at the point $F(0)$ is unique.  Its coefficients
 are obtained recursively from the coefficients of $F$ and the inverse of its
