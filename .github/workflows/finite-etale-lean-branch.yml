@@ -82,9 +82,9 @@ jobs:
           token = os.environ["GH_TOKEN"]
           log_path = Path("artifacts/verification/finite-etale-lean.log")
           lines = log_path.read_text(errors="replace").splitlines() if log_path.exists() else []
-          tail = "\n".join(lines[-120:])
-          if len(tail) > 30000:
-              tail = tail[-30000:]
+          tail = "\n".join(lines[-60:])
+          if len(tail) > 15000:
+              tail = tail[-15000:]
           body = (
               "<!-- finite-etale-lean-ci -->\n"
               f"Finite-étale Lean branch CI: **{result}**. "
