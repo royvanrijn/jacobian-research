@@ -341,6 +341,7 @@ verify-two-real-gmc:
 
 verify-counterexample-scoreboard: verify-two-real-gmc
 	$(PYTHON) scripts/verify_three_real_gmc_rank_one_classification.py
+	$(PYTHON) scripts/audit_dvorsky_gvc5_counterexample.py
 	$(PYTHON) scripts/verify_minimal_counterexample_scoreboard.py
 
 verify-regressions: verify-external-consequences

@@ -1,5 +1,15 @@
 # Plane boundary exclusion: residue immersion and the conductor gap
 
+> **Correction (July 24, 2026).**  The residue-immersion theorem below is
+> valid on the smooth locus of the target image \(B\), but not at an
+> arbitrary singular point of \(B\).  The rank-three finite-flat map
+> \(v=t^3+ut\) has pure tame ramification \(u+3t^2=0\), whose smooth
+> ramification curve maps non-immersively to the cusp
+> \(4u^3+27v^2=0\).  Thus conditions 1--5 as written do not prove the stated
+> global exclusion.  The conductor-packet inequalities remain valid under
+> their explicit pointwise regularity and immersion hypotheses.  See
+> [the corrected frontier audit](JC2_FINITE_NORMALIZATION_FRONTIER.md).
+
 ## Result
 
 This note isolates a plane theorem suggested by the repository's
@@ -47,7 +57,10 @@ give a curve meeting \(U\), where \(F\) is etale.
 
 Put \(B=\pi(D)\).  Then:
 
-> **Residue-immersion theorem.**
+> **Smooth-target residue-immersion lemma.**
+> At every point mapping to the smooth locus of \(B\), the residue map is
+> immersive.  If \(B\) is smooth along the full image of \(D\), the following
+> former conclusion holds globally:
 > The finite residue map \(D\to B\) is immersive everywhere.  If
 > \(\widetilde B\) is the normalization of \(B\), the induced finite map
 > \[
@@ -103,14 +116,18 @@ line-component theorem.
 
 We therefore obtain the following precise restricted theorem.
 
-### Plane boundary-exclusion theorem
+### Former plane boundary-exclusion claim
 
-There is no nonproper plane Keller map satisfying conditions 1--5.
+The assertion that there is no nonproper plane Keller map satisfying
+conditions 1--5 is not established: a further hypothesis excluding
+singular unibranch target images is required.
 
 More sharply:
 
-- conditions 1--4 already exclude every case with at least two punctures;
-- in the one-puncture case they force a degree-one immersive normalization;
+- conditions 1--4 plus global unramifiedness of the normalized residue map
+  exclude every case with at least two punctures;
+- in the one-puncture case they force a degree-one map of normalizations,
+  but not immersion into a singular embedded target curve;
 - the primitive minimal-sheet condition 5 excludes its only possible
   conductor gluing.
 
@@ -131,6 +148,11 @@ Exceptional divisors over special boundary points are precisely where the
 Riemann--Hurwitz deficit could otherwise hide.
 
 ## 2. Proof of residue immersion
+
+The argument in this section applies when \(B\) is smooth at \(\pi(p)\).
+At a singular point the choice of target parameters made below is
+unavailable, and the conclusion is false; see the cubic cusp model in the
+correction above.
 
 Fix \(p\in D\).  Since \(\overline X\) is regular at \(p\), let \(z=0\) be a
 local equation of \(D\), and choose a parameter \(t\) along \(D\).  Let \(e\)
@@ -509,24 +531,28 @@ regression
 Actual coefficient searches in generic degree \(3\)--\(8\) are unnecessary:
 the published Newton reductions already place any plane counterexample far
 above this range.  Low degree remains useful here as a structural regression
-for the new boundary obstruction.  Under condition 5, a conductor collision
-in generic degree \(d\) would require
+for the packet inequality.  Conditional on two distinct regular immersive
+boundary points in one target fiber, condition 5 would require
 
 \[
  2(d-1)\le d.
 \]
 
-Thus every degree \(3\)--\(8\) row is rejected before coefficient solving.
+Thus every such certified packet in degree \(3\)--\(8\) is rejected before
+coefficient solving.  A unibranch cusp packet has only one boundary point
+and is not rejected by this calculation.
 
 ## 6. Relation to the proposed statement
 
-The proposed statement becomes a theorem if its terms are read as follows:
+The proposed statement becomes a theorem only after adding smoothness of the
+target image along \(D\), or directly assuming embedded residue immersion,
+to the following operational requirements:
 
 | proposed phrase | operational requirement |
 | --- | --- |
 | one irreducible rational dicritical component | the Zariski--Main boundary has one prime \(D\), and \(B=\pi(D)\) is the unique nonproperness component |
 | rational normalization with finitely many punctures | \(D\) is smooth with completion \(\mathbb P^1\); the canonical \(\mathbb A^2\) boundary theorem supplies this rationality |
-| tame generic ramification | logarithmic purity along every point of \(D\), not only generic tameness |
+| tame generic ramification | logarithmic purity along every point of \(D\), not only generic tameness; this does not itself imply immersion at a singular point of \(B\) |
 | saturated rank-one valuation link | the linked affine prime is primitive in both normal and residue degree: \((e,f)_D=(e,1)\), \((e,f)_E=(1,1)\) |
 | no additional divisorial components | the generic pullback of \(B\) has exactly the linked pair \(D,E\), and the regular graph audit has no exceptional residual-ramification divisor |
 
@@ -551,12 +577,13 @@ does not follow.  The full operational dichotomy is
 }.
 \]
 
-The theorem therefore proves the proposed statement under a checkable
-meaning of "saturated" and "no additional divisors."  If the intended
-meaning omits primitive residue degree or permits further affine primes over
-\(B\), the remaining escape is equally precise: a nodal or multi-branch
-one-place curve together with enough extra generic sheets to satisfy
-\(d\ge2e\).
+With the added embedded-immersion hypothesis, the displayed argument proves
+the proposed statement under a checkable meaning of "saturated" and "no
+additional divisors."  Without it, the cubic cusp packet is an additional
+escape even when the generic residue degree is one.  If the intended meaning
+also omits primitive residue degree or permits further affine primes over
+\(B\), a nodal or multi-branch one-place curve with enough extra generic
+sheets to satisfy \(d\ge2e\) remains as well.
 
 ### 6.1 Typed finite-normalization gate
 
@@ -566,7 +593,8 @@ finite-normalization hypotheses.  A
 
 \[
 (d,e,f,a;\ \text{punctures},\text{one normalization boundary},
-  \text{log purity},\text{exhaustiveness},\text{target transfer}),
+  \text{log purity},\text{normalized-residue unramifiedness},
+  \text{exhaustiveness},\text{target transfer}),
 \]
 
 and first checks the generic degree identity
@@ -581,9 +609,10 @@ normalization over the original affine target.  This is intentional: a
 primitive source pole vector certifies neither that the normalization
 boundary has one prime nor the affine contribution \(a\).
 
-Once the target transfer, exhaustive pullback, one-place theorem, and log
-purity are certified, the gate applies Riemann--Hurwitz.  Every profile with
-two or more punctures is excluded; one puncture forces \(f=1\).  The image is then either normal, in
+Once the target transfer, exhaustive pullback, one-place theorem, and
+unramifiedness of the normalized residue map are certified, the gate applies
+Riemann--Hurwitz.  Every profile with two or more punctures is excluded; one
+puncture forces \(f=1\).  The image is then either normal, in
 which case the affine-line component theorem excludes it, or nonnormal, in
 which case a conductor collision requires
 

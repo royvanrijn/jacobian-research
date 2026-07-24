@@ -52,6 +52,7 @@ def main() -> None:
     gaussian_remaining_four_weight = load(
         "two_real_gmc_remaining_four_weight.json"
     )
+    dvorsky = load("dvorsky_gvc5_counterexample.json")
 
     assert cubic["dimension"] == 21
     assert image_20["source_dimension"] == 20
@@ -68,6 +69,12 @@ def main() -> None:
     assert gaussian_symmetric_chart["exceptional_four_weight_charts_remaining"] == 20
     assert gaussian_remaining_four_weight["input_chart_count"] == 20
     assert gaussian_remaining_four_weight["support_count"] == 3
+    assert dvorsky["variables"] == ["t", "a", "b", "c", "d"]
+    assert (
+        dvorsky["consequences"]["unrestricted_constant_coefficient_GVC"]
+        == "fails in 5 variables"
+    )
+    assert dvorsky["consequences"]["SIC"] == "fails in 5 contraction pairs"
 
     frontiers = restricted["rigorous_frontiers"]
     assert frontiers["n_cub"]["lower_bound"] == 5
@@ -86,7 +93,7 @@ def main() -> None:
     assert frontiers["n_HN4"]["upper_bound"] == 42
 
     scoreboard = {
-        "format": "minimal-counterexample-scoreboard-v1",
+        "format": "minimal-counterexample-scoreboard-v2",
         "field": "complex coefficients / characteristic zero as appropriate",
         "ambient_dimension_frontiers": {
             "general_Keller_noninvertibility": interval(
@@ -105,9 +112,21 @@ def main() -> None:
             ),
             "SIC_failure_pair_dimension": interval(
                 2,
-                20,
+                5,
                 "the one-pair Image Conjecture is proved",
-                "the identity-output slice gives an explicit SIC(20) counterexample",
+                (
+                    "Dvorsky's homogenized Long seed gives an explicit "
+                    "SIC(5) counterexample"
+                ),
+            ),
+            "unrestricted_constant_coefficient_GVC_failure_dimension": interval(
+                2,
+                5,
+                "GVC(1) is proved",
+                (
+                    "Dvorsky's third-order constant-coefficient operator gives "
+                    "an explicit GVC(5) counterexample"
+                ),
             ),
             "ordinary_Laplacian_GVC_failure_dimension": interval(
                 2,
@@ -169,9 +188,14 @@ def main() -> None:
                 "artifact": "essential_bcw_21_counterexample.json",
             },
             "SIC": {
-                "pair_dimension": 20,
-                "polynomial_ring_variable_count": 40,
-                "artifact": "image_vanishing_counterexamples_20_40.json",
+                "pair_dimension": 5,
+                "polynomial_ring_variable_count": 10,
+                "artifact": "dvorsky_gvc5_counterexample.json",
+            },
+            "unrestricted_constant_coefficient_GVC": {
+                "dimension": 5,
+                "operator_order": 3,
+                "artifact": "dvorsky_gvc5_counterexample.json",
             },
             "ordinary_Laplacian_GVC": {
                 "dimension": 40,
@@ -192,7 +216,10 @@ def main() -> None:
         ),
     }
     OUTPUT.write_text(json.dumps(scoreboard, indent=2) + "\n")
-    print("PASS scoreboard: ambient witness dimensions 21 / 20 / 40 / 42")
+    print(
+        "PASS scoreboard: ambient witness dimensions "
+        "21 / SIC 5 / GVC 5 / Laplacian 40 / HN 42"
+    )
     print("PASS scoreboard: GMC failure dimension is in [2,3]")
     print("PASS scoreboard: exact minimum Gaussian counterexample degree is 3")
     print("PASS scoreboard: all 121 two-real cubic four-weight charts excluded")

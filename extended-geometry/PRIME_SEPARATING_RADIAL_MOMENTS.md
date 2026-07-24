@@ -33,10 +33,29 @@ and, more strongly, for every positive **rational** Gamma shape.
 The natural publishable statement is first an abstract sufficient criterion
 for prime-separating weight sequences, followed by Stieltjes, Gamma,
 Gamma-product, factorial-ratio, and \(q\)-factorial corollaries.  It should
-not yet be advertised as a classification: prime separation is not
-necessary, and even its restriction to \(T\)-independent polynomials
-contains the general problem of classifying moment kernels in
-\(\mathbb C[U]\).
+not be advertised as a classification: prime separation is not necessary,
+and even its restriction to \(T\)-independent polynomials contains the
+general problem of classifying moment kernels in \(\mathbb C[U]\).
+
+There is now also a sharp negative theorem.  If \(w(U)\) is any nonzero
+polynomial, then the kernel of
+\[
+ F\longmapsto\int_0^1\operatorname{CT}_T F(U,T)\,w(U)\,dU
+\]
+is not Mathieu--Zhao.  Long's \((xz)\)-counterexample is the case \(w=1\).
+The integer-Beta family gives the moment sequences
+\[
+ a_d=\frac{(s)_d}{(s+t)_d}
+     =\frac{(s)_t}{(d+s)_t},
+ \qquad s,t\in\mathbb Z_{>0}.
+\]
+Every one of these kernels is therefore non-Mathieu.  Thus failure of prime
+separation is not merely a defect of the proof: compact polynomial radial
+weights and reciprocal Gamma ratios support exact two-sided cancellations.
+On the other hand, geometric weights show that prime separation is not
+necessary.  The correct status is therefore a strong sufficient theorem
+with examples on both sides of its boundary, not an if-and-only-if
+criterion.
 
 ## 1. Abstract weighted constant-term problem
 
@@ -62,8 +81,9 @@ The theorem below gives a broad sufficient class.  Its conclusion is
 stronger than the Mathieu--Zhao property:
 
 > **Abstract lower-face conclusion.** If \(a\) is prime-separating and
-> \(\Phi_a(F^m)=0\) for every \(m\geq1\), then the nonzero \(T\)-weights of
-> \(F\) all have the same strict sign.  Consequently
+> \(\Phi_a(F^m)=0\) for all sufficiently large \(m\) (in particular, for
+> every \(m\geq1\)), then the \(T\)-weights of \(F\) all have the same
+> strict sign.  Consequently
 > \(\Phi_a(GF^m)=0\) for every fixed \(G\) and all \(m\gg0\).
 
 Thus the arithmetic task is to recognize prime-separating sequences.  The
@@ -103,11 +123,12 @@ degrees not divisible by \(p\) vanish modulo \(p\).  A negative \(p\)-adic
 valuation in their moment ratios could undo that vanishing.  The proof needs
 integrality of all intermediate ratios as well.
 
-### Definition (rational prime separation)
+### Definition (normalized rational prime separation)
 
-A sequence \(a=(a_d)_{d\geq0}\) of nonzero rational numbers is
-**prime-separating** if, for every pair \(0\leq n<M\), there are infinitely
-many rational primes \(p\) such that
+A sequence \(a=(a_d)_{d\geq0}\) of nonzero rational numbers has
+**normalized prime separation** (or is **prime-separating**) if, for every
+pair \(0\leq n<M\), there are infinitely many rational primes \(p\) such
+that
 \[
  \frac{a_d}{a_{np}}\in\mathbb Z_{(p)}
  \quad(np\leq d\leq Mp),                                      \tag{PS1}
@@ -119,21 +140,43 @@ and
 \]
 It is enough to have arbitrarily large such primes.  One may replace
 \(\mathbb Q\) and \(\mathbb Z_{(p)}\) by a fixed number field and suitable
-degree-one prime ideals, but the rational version contains the cleanest
+prime ideals, but the rational version contains the cleanest
 applications.
 
-### Theorem (weighted prime-separating lower-face theorem)
+More precisely, if \(K\) is a number field and \(a_d\in K^\times\), require
+infinitely many prime ideals \(\mathfrak p\) of residue characteristic \(p\)
+such that
+\[
+ \frac{a_d}{a_{np}}\in\mathcal O_{K,\mathfrak p}
+ \quad(np\leq d\leq Mp),                                      \tag{PS1K}
+\]
+and
+\[
+ \frac{a_{jp}}{a_{np}}\in\mathfrak p\mathcal O_{K,\mathfrak p}
+ \quad(n<j\leq M).                                             \tag{PS2K}
+\]
+The proof below works verbatim over this integral model.  Degree-one primes
+are needed only in applications, such as \(q\)-factorials, where the size of
+the residue field controls a multiplicative order.
+
+### Theorem (normalized prime-separation forces one-sided support)
 
 If \(a=(a_d)_{d\geq0}\) is a prime-separating rational sequence, then
 \(\ker\Phi_a\) is a Mathieu--Zhao subspace.  More precisely, if
 \[
- \Phi_a(P^m)=0\qquad(m\geq1),
+ \Phi_a(P^m)=0\qquad(m\gg0),
 \]
-then \(0\notin\operatorname{conv}(S)\), where \(S\) is the nonzero
-rotational-weight support of \(P\).
+then \(0\notin\operatorname{conv}(S)\), where
+\(S=\{k:B_k\ne0\}\) is the rotational-weight support of \(P\).
 
 In particular, every rotationally invariant measure whose radial moment
 sequence is prime-separating has PMP.
+
+The same conclusion holds for a number-field sequence satisfying
+(PS1K)--(PS2K).  This is the promised reusable form of the GMC(2) method:
+
+> **Any one-angular-variable constant-term functional with normalized
+> prime separation forces one-sided angular support.**
 
 ### Proof
 
@@ -155,11 +198,15 @@ The same supporting-line inequality says that every term of
 \[
  F_{rp}(U)=\operatorname{CT}_T(P^{rp})
 \]
-has degree at least \(np\).  Let \(M p\) bound its degree.
+has degree at least \(np\).  Choose an integer \(M>n\), independent of
+\(p\), such that \(Mp\) bounds its degree.
 
 Work in the finite-type characteristic-zero domain generated by the
-coefficients of \(P\), with \(c^{-1}\) adjoined.  Exclude the finitely many
-bad residue characteristics.  Divide
+coefficients of \(P\), with \(c^{-1}\) adjoined.  Its morphism to the
+relevant arithmetic base has a nonempty fiber away from finitely many
+primes; after passing to an algebraic residue field, \(c\) remains nonzero.
+Choose a sufficiently large prime supplied by prime separation, so that
+the assumed eventual vanishing includes the exponent \(rp\), and divide
 \(\Phi_a(P^{rp})=0\) by \(a_{np}\).  Condition (PS1) makes the
 resulting identity \(p\)-integral.  In characteristic \(p\),
 \[
@@ -324,6 +371,19 @@ prime-isolation proof cannot decide them.  General integer-valued
 hypergeometric sequences must likewise be separated according to their
 \(p\)-adic excess rather than integrality alone.
 
+Factorial excess therefore gives the following useful, but not complete,
+frontier:
+
+* positive integral excess plus Landau integrality implies prime separation;
+* slope-balanced integral ratios such as \(\binom{2n}{n}\) are not decided
+  by endpoint isolation;
+* balanced Gamma ratios with a positive shift deficit can already fail.
+  The integer-Beta sequence
+  \[
+   \frac{(s)_n}{(s+t)_n}=\frac{(s)_t}{(n+s)_t}
+  \]
+  gives an infinite counterexample family by the theorem below.
+
 ### \(q\)-factorials
 
 Let
@@ -331,9 +391,11 @@ Let
  a_n=(q;q)_n=\prod_{k=1}^n(1-q^k)                             \tag{6.5}
 \]
 with nonzero algebraic \(q\) that is not a root of unity.  Use the
-number-field version of prime separation and choose primes that split
-completely in \(\mathbb Q(q)\).  Away from finitely many primes,
-\(\bar q\in\mathbb F_p^\times\).  The normalized ratio
+number-field version (PS1K)--(PS2K) and choose rational primes that split
+completely in \(\mathbb Q(q)\).  Chebotarev supplies infinitely many such
+primes.  Away from finitely many of them,
+\(\bar q\in\mathbb F_p^\times\), and \(q\) and \(q^{-1}\) are integral
+units.  The normalized ratio
 \[
  \frac{a_d}{a_{np}}=\prod_{k=np+1}^{d}(1-q^k)                 \tag{6.6}
 \]
@@ -356,7 +418,9 @@ require an additional quantum-Frobenius structure.
 | Products of rational rising factorials | Prime-separating |
 | \(\prod_{k<n}H(k)\), nonconstant \(H\in\mathbb Q[k]\) | Prime-separating when all terms are nonzero |
 | Integral factorial ratios with \(\Delta>0\) | Prime-separating |
-| Balanced factorial/hypergeometric ratios | Not decided by prime isolation |
+| Balanced integral factorial ratios such as \(\binom{2n}{n}\) | Not decided by prime isolation |
+| Integer-Beta ratios \((s)_n/(s+t)_n\) | Not Mathieu--Zhao; explicit two-sided circuit |
+| Moments of any nonzero polynomial density on \([0,1]\) | Not Mathieu--Zhao |
 | Algebraic non-torsion \(q\)-factorials | Prime-separating over a number-field integral model |
 | Geometric sequences \(c\lambda^n\) | Mathieu--Zhao by evaluation, not by prime separation |
 
@@ -392,25 +456,193 @@ family.  Consequently, the arithmetic object to classify is the radial
 moment functional, not the measure itself; all representing circular
 measures then share the same polynomial integrals.
 
-### The unit disk is outside this method
+### No polynomial interval density has a Mathieu kernel
 
-For normalized area measure on the unit disk,
+Let \(0\ne w\in\mathbb C[U]\), and define
 \[
- \mu_n=\frac1{n+1},\qquad
- \frac{\mu_{jp}}{\mu_{np}}=\frac{np+1}{jp+1}\equiv1\pmod p.
+ \Phi_w(F)=\int_0^1\operatorname{CT}_T F(U,T)\,w(U)\,dU.       \tag{7.2}
 \]
-The prime-separation mechanism gives no information.  This is a useful
-boundary example rather than evidence against PMP.  The original GMC paper
-explicitly identified the centered disk as an open instance of the broader
-integral conjecture (Remark 1.3 in
-[Derksen--van den Essen--Zhao](https://arxiv.org/abs/1506.05192)).
+Write
+\[
+ w(U)=(1-U)^{t-1}h(U),\qquad h(1)\ne0,                       \tag{7.3}
+\]
+where \(t\geq1\), and put \(D=\deg h\).  For the same three-weight circuit
+\[
+ f(U,T)=(1-T^{-1})((1-U)+UT),                                \tag{7.4}
+\]
+one has, for every \(m\geq D+t\),
+\[
+ \Phi_w(f^m)=0,\qquad
+ \Phi_w(T^{-t}f^m)
+ =(-1)^{m+t}\frac{h(1)}{t\binom{m+t}{t}}\ne0.                \tag{7.5}
+\]
+
+Indeed, expand \(h(U)=\sum_{r=0}^Dc_rU^r\).  The coefficient of \(T^k\)
+in \(((1-U)+UT)^m\), integrated against
+\(U^r(1-U)^{t-1}\), is
+\[
+ \binom mk B(k+r+1,m-k+t).                                   \tag{7.6}
+\]
+As a function of \(k\), after removing a nonzero factor depending only on
+\(m,r,t\), this is a polynomial of degree \(r+t-1\).  The pure constant
+term is its \(m\)-th alternating finite difference and vanishes for
+\(m\geq r+t\).
+
+The mixed calculation is the unnormalized \(s=r+1\) case of the
+integer-Beta identity below.  Its value is
+\[
+ (-1)^{m+t}\frac{1}{t\binom{m+t}{t}},                         \tag{7.7}
+\]
+independent of \(r\).  Summing over \(r\) replaces \(1\) by
+\(\sum_rc_r=h(1)\), proving (7.5).
+
+Set \(N=D+t\), \(P=f^N\), and \(Q=T^{-t}\).  Then
+\[
+ \Phi_w(P^\ell)=0,\qquad \Phi_w(QP^\ell)\ne0
+ \quad(\ell\geq1).                                            \tag{7.8}
+\]
+
+> **Polynomial-density counterexample theorem.** The kernel of
+> \(\Phi_w\) is not a Mathieu--Zhao subspace for any nonzero polynomial
+> interval weight \(w\).  The witness always comes from a power of the
+> same three-weight circuit (7.4).
+
+The result includes every positive polynomial probability density on the
+interval and, after \(U=|z|^2\), every circular disk law with nonzero
+polynomial radial density.  It gives a broad negative answer for
+one-angular-weight Mathieu problems with compact polynomial radial weights.
+
+### Integer-Beta Gamma ratios as an exact subfamily
+
+Let \(s,t\in\mathbb Z_{>0}\), and define the normalized Beta functional
+\[
+ \mathcal B_{s,t}(h)
+ =\frac1{B(s,t)}\int_0^1h(U)U^{s-1}(1-U)^{t-1}\,dU.           \tag{7.9}
+\]
+Its moments are the balanced Gamma ratios
+\[
+ a_d=\mathcal B_{s,t}(U^d)
+ =\frac{(s)_d}{(s+t)_d}
+ =\frac{(s)_t}{(d+s)_t}.                                     \tag{7.10}
+\]
+For every sufficiently large prime \(p\),
+\[
+ \frac{a_{jp}}{a_{np}}
+ =\frac{(np+s)_t}{(jp+s)_t}\equiv1\pmod p,                   \tag{7.11}
+\]
+so endpoint prime separation fails maximally.
+
+Put
+\[
+ N=s+t-1.                                                     \tag{7.12}
+\]
+Then for every \(m\geq N\),
+\[
+ \Phi_{s,t}(f^m)=0,\qquad
+ \Phi_{s,t}(T^{-t}f^m)
+ =(-1)^{m+t}
+   \frac{\binom{s+t-1}{t}}{\binom{m+t}{t}}\ne0,               \tag{7.13}
+\]
+where \(\Phi_{s,t}=\mathcal B_{s,t}\circ\operatorname{CT}_T\).
+Consequently, with \(P=f^N\) and \(Q=T^{-t}\),
+\[
+ \Phi_{s,t}(P^\ell)=0,\qquad
+ \Phi_{s,t}(QP^\ell)\ne0
+ \quad(\ell\geq1).                                            \tag{7.14}
+\]
+
+> **Integer-Beta counterexample theorem.** For every
+> \(s,t\in\mathbb Z_{>0}\), the kernel of \(\Phi_{s,t}\) is not a
+> Mathieu--Zhao subspace.  Equivalently, every circular disk law for which
+> \(U=|Z|^2\) has a \(\operatorname{Beta}(s,t)\) distribution fails PMP.
+
+To prove (7.13), the coefficient of \(T^k\) in
+\(((1-U)+UT)^m\), after applying \(\mathcal B_{s,t}\), is
+\[
+ \frac{m!}{(s+t)_m}
+ \binom{k+s-1}{s-1}
+ \binom{m-k+t-1}{t-1}.                                      \tag{7.15}
+\]
+Apart from the first factor, this is a polynomial in \(k\) of degree
+\(s+t-2=N-1\).  Taking the constant term after multiplication by
+\((1-T^{-1})^m\) is its \(m\)-th alternating finite difference, hence is
+zero for \(m\geq N\).
+
+For the mixed moment, the angular equation is \(k=j+t\).  Apply the same
+finite-difference identity to
+\[
+ \binom{j+t+s-1}{s-1}\binom{m-j-1}{t-1}.                    \tag{7.16}
+\]
+The omitted values \(j=m-t+1,\ldots,m-1\) vanish, while the polynomial
+value at \(j=m\) uses
+\(\binom{-1}{t-1}=(-1)^{t-1}\).  The remaining boundary term simplifies
+to the nonzero expression in (7.13).
+
+For \(s=t=1\), \(N=1\), this is exactly Long's counterexample:
+\[
+ a_d=\frac1{d+1},\qquad
+ \Phi_{1,1}(T^{-1}f^m)=\frac{(-1)^{m-1}}{m+1}.
+\]
+Under \(U=|z|^2\), this first member is normalized area measure on the
+complex unit disk.  The general theorem shows that the failure persists
+for every integer Jacobi/Beta radial density, not only uniform area.
+
+Consequently, every mixed one-interval/one-or-more-angular-variable
+\((xz)\) problem with uniform interval weight also fails by padding Long's
+first example.  More generally, the theorem supplies failures for all
+integer-Beta interval weights.  This sharply
+limits any attempted extension based only on the existence of one angular
+weight: arithmetic separation of the radial functional is essential.
+
+### A general Bernstein finite-difference obstruction
+
+The preceding counterexamples admit an abstract formulation dual to prime
+separation.  For a radial functional \(\mathcal L\), put
+\[
+ b_{m,k}
+ =\binom mk\mathcal L\!\left(U^k(1-U)^{m-k}\right)
+ \qquad(0\leq k\leq m).                                      \tag{7.17}
+\]
+For the circuit \(f\) in (7.4), direct angular extraction gives
+\[
+ \Phi(f^m)=\sum_{k=0}^m(-1)^k\binom mk b_{m,k},                \tag{7.18}
+\]
+and, for a fixed \(q\geq1\),
+\[
+ \Phi(T^{-q}f^m)
+ =\sum_{j=0}^{m-q}(-1)^j\binom mj b_{m,j+q}.                  \tag{7.19}
+\]
+
+> **Bernstein finite-difference criterion.** Suppose that, for all large
+> \(m\), the values \(b_{m,k}\) are the restrictions of polynomials
+> \(R_m(k)\) of uniformly bounded degree.  Then \(f\) lies in the radical
+> of \(\ker\Phi\).  If, for some fixed \(q\), the truncated difference
+> (7.19) is nonzero for infinitely many \(m\), then \(\ker\Phi\) is not
+> Mathieu--Zhao.
+
+The first assertion is simply the vanishing of a sufficiently high finite
+difference.  The second is the definition of the Mathieu obstruction.  For
+polynomial interval densities, (7.6) makes the Bernstein degree uniformly
+bounded and (7.7) computes a surviving boundary term.
+
+This criterion identifies a second structural axis for the classification
+problem:
+
+* prime separation prevents cancellation by isolating one radial layer;
+* bounded Bernstein complexity creates cancellation by turning the pure
+  moment into a high finite difference.
+
+Nonintegral Beta laws, arcsine/central-binomial moments, and more general
+balanced hypergeometric sequences usually have unbounded Bernstein
+complexity and no prime gap.  They lie between the two theorems and form the
+next genuine frontier.
 
 ### The univariate obstruction to a complete classification
 
 Restricting \(\Phi_a\) to \(T\)-independent polynomials gives the moment
 functional
 \[
- \mathcal L_a\!\left(\sum f_nU^n\right)=\sum f_na_n.           \tag{7.2}
+ \mathcal L_a\!\left(\sum f_nU^n\right)=\sum f_na_n.           \tag{7.20}
 \]
 Therefore any full classification of the weighted constant-term kernels
 contains, as a necessary subproblem, the classification of codimension-one
@@ -429,8 +661,8 @@ A concise companion section or note could be organized as follows:
 3. state the positive-rational-shape circular Gamma corollary;
 4. give the polynomial-ratio, positive-excess factorial-ratio,
    Gamma-product, powered-Gamma, and algebraic \(q\)-factorial families;
-5. include the geometric and disk examples to make clear that the criterion is
-   sufficient rather than a classification of PMP;
+5. contrast the geometric positive example (no prime separation needed)
+   with the polynomial-density and integer-Beta counterexample theorems;
 6. pose the genuine classification problem:
    characterize sequences \(a\) for which \(\ker\Phi_a\) is a
    Mathieu--Zhao subspace.
@@ -458,3 +690,6 @@ paper.
   [*Mathieu Subspaces of Univariate Polynomial Algebras*](https://arxiv.org/abs/1012.2017).
 - J. W. Bober,
   [*Factorial ratios, hypergeometric series, and a family of step functions*](https://arxiv.org/abs/0709.1977).
+- C. D. Long,
+  [*Counterexamples to the \(xz\)-Conjecture and the Mathieu Conjecture for
+  \(SU(2)\)*](https://arxiv.org/abs/2607.19012).

@@ -80,8 +80,13 @@ make verify-core
 
 The minimal target uses a dependency-free exact implementation.  The full
 core target adds the normalized factorization, marked-root, and image
-regressions.  A separately authored pinned Lean certificate is documented in
-[LEAN_FOUNDATIONAL_MAP.md](LEAN_FOUNDATIONAL_MAP.md).
+regressions.  External formal verification is supplied both by the separately
+authored pinned [Lean certificate](LEAN_FOUNDATIONAL_MAP.md) and by the
+refereed [Archive of Formal Proofs Isabelle/HOL
+entry](https://isa-afp.org/entries/Jacobian_Counterexample.html).  The AFP
+entry independently verifies the determinant, exact collision,
+determinant-one normalization, identity-padded stabilization in every finite
+dimension at least three, and nonexistence of a polynomial inverse.
 
 The former all-in-one derivation and presentation-invariance audit are
 retained in [archive/core-support](../archive/core-support/README.md).

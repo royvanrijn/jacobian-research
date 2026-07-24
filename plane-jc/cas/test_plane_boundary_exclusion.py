@@ -14,6 +14,8 @@ from plane_boundary_exclusion import (
     TargetFiberPacket,
     audit_one_dicritical_normalization,
     audit_target_component_ledger,
+    clean_tangential_defect_budget,
+    cubic_closed_fiber_atlas,
     conductor_collision_budget,
     conductor_packet_budget,
     first_free_depth_package,
@@ -21,6 +23,38 @@ from plane_boundary_exclusion import (
     puncture_profile_budgets,
     two_puncture_budgets,
 )
+
+# At a clean nonimmersive point of tangent order m, local integration of the
+# pure Jacobian factor gives fiber length m+1.  Rank three forces m=2 and the
+# point consumes the complete fiber.
+cubic_clean_cusp = clean_tangential_defect_budget(3, 2)
+assert cubic_clean_cusp.local_fiber_length == 3
+assert cubic_clean_cusp.residual_fiber_budget == 0
+assert cubic_clean_cusp.status == "consumes_full_fiber"
+
+for tangent_order in range(3, 8):
+    assert (
+        clean_tangential_defect_budget(3, tangent_order).status
+        == "excluded_by_flat_length"
+    )
+
+assert (
+    clean_tangential_defect_budget(5, 2).status
+    == "leaves_residual_budget"
+)
+
+# A length-three local algebra has embedding dimension one or two, giving
+# exactly the curvilinear and square-zero collision algebras.
+cubic_atlas = cubic_closed_fiber_atlas()
+assert tuple(entry["partition"] for entry in cubic_atlas) == (
+    (1, 1, 1),
+    (2, 1),
+    (3,),
+    (3,),
+)
+assert sum(entry["ramified"] for entry in cubic_atlas) == 3
+assert cubic_atlas[2]["curvilinear"]
+assert not cubic_atlas[3]["curvilinear"]
 
 
 # An immersive finite A1 -> A1 map has no affine ramification.  The exact
@@ -69,6 +103,7 @@ three_puncture_gate = audit_one_dicritical_normalization(
         punctures=3,
         single_normalization_boundary=True,
         log_pure=True,
+        normalized_residue_unramified=True,
         exhaustive_pullback=True,
         target_transfer_certified=True,
     )
@@ -86,6 +121,7 @@ impossible_profile_gate = audit_one_dicritical_normalization(
         punctures=3,
         single_normalization_boundary=True,
         log_pure=True,
+        normalized_residue_unramified=True,
         exhaustive_pullback=True,
         target_transfer_certified=True,
     )
@@ -287,6 +323,7 @@ minimal_link = audit_one_dicritical_normalization(
         punctures=1,
         single_normalization_boundary=True,
         log_pure=True,
+        normalized_residue_unramified=True,
         exhaustive_pullback=True,
         target_transfer_certified=True,
     )
@@ -294,6 +331,25 @@ minimal_link = audit_one_dicritical_normalization(
 assert minimal_link.status == "excluded"
 assert minimal_link.sheet_deficient
 assert minimal_link.conductor_length_deficit == 1
+
+cusp_packet = audit_one_dicritical_normalization(
+    OneDicriticalNormalizationCertificate(
+        name="cubic cusp packet",
+        generic_degree=3,
+        transverse_index=2,
+        residue_degree=1,
+        affine_degree=1,
+        punctures=1,
+        single_normalization_boundary=True,
+        log_pure=True,
+        normalized_residue_unramified=False,
+        exhaustive_pullback=True,
+        target_transfer_certified=True,
+    )
+)
+assert cusp_packet.status == "incomplete"
+assert not cusp_packet.residue_immersion_certified
+assert "unramifiedness" in cusp_packet.reasons[-1]
 
 two_puncture = audit_one_dicritical_normalization(
     OneDicriticalNormalizationCertificate(
@@ -305,6 +361,7 @@ two_puncture = audit_one_dicritical_normalization(
         punctures=2,
         single_normalization_boundary=True,
         log_pure=True,
+        normalized_residue_unramified=True,
         exhaustive_pullback=True,
         target_transfer_certified=True,
     )
@@ -322,6 +379,7 @@ nontrivial_one_puncture_cover = audit_one_dicritical_normalization(
         punctures=1,
         single_normalization_boundary=True,
         log_pure=True,
+        normalized_residue_unramified=True,
         exhaustive_pullback=True,
         target_transfer_certified=True,
     )
@@ -339,6 +397,7 @@ index_one = audit_one_dicritical_normalization(
         punctures=1,
         single_normalization_boundary=True,
         log_pure=True,
+        normalized_residue_unramified=True,
         exhaustive_pullback=True,
         target_transfer_certified=True,
     )
@@ -356,6 +415,7 @@ case1_untransferred = audit_one_dicritical_normalization(
         punctures=1,
         single_normalization_boundary=False,
         log_pure=True,
+        normalized_residue_unramified=False,
         exhaustive_pullback=True,
         target_transfer_certified=False,
     )
@@ -377,6 +437,7 @@ case1_preview = audit_one_dicritical_normalization(
         punctures=1,
         single_normalization_boundary=True,
         log_pure=True,
+        normalized_residue_unramified=True,
         exhaustive_pullback=True,
         target_transfer_certified=True,
     )
@@ -395,15 +456,18 @@ case2_preview = audit_one_dicritical_normalization(
         punctures=1,
         single_normalization_boundary=False,
         log_pure=False,
+        normalized_residue_unramified=False,
         exhaustive_pullback=True,
         target_transfer_certified=False,
     )
 )
 assert case2_preview.status == "incomplete"
-assert "ramification" in case2_preview.reasons[-1]
+assert any("ramification" in reason for reason in case2_preview.reasons)
 
 
 print("PASS: one-puncture residue immersion forces degree one")
+print("PASS: clean cubic nonimmersion is exactly a full cusp packet")
+print("PASS: cubic closed fibers have the complete four-type algebra atlas")
 print("PASS: two-puncture residue immersion contradicts Riemann--Hurwitz")
 print("PASS: arbitrary puncture profiles force affine ramification f+s-2")
 print("PASS: minimal-sheet fiber length excludes conductor gluing")

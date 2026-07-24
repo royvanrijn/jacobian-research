@@ -29,6 +29,11 @@ This directory contains the stable proof chain:
 - [Exact real-sheet spectrum](REAL_FIBER_SPECTRUM.md): every count
   `N,N-2,...,N mod 2` occurs on a nonempty complete regular real target
   chamber, with rational witnesses and an explicit fold-adjacency chain.
+- [All-degree scalar vacua](ALL_DEGREE_SCALAR_VACUA.md): Zhu's flat
+  unit-volume scalar pullback applied to the complete rational fibers gives,
+  for every `N>=3`, an explicit three-scalar theory with exactly `N`
+  rational isolated vacua, together with metric incompleteness and the
+  varying-multiplicity quantum obstruction.
 - [Adelic complete-fiber engineering](ADELIC_FIBER_ENGINEERING.md): weak
   approximation combines any allowed real signature with finitely many
   squarefree local splitting types; one local `N`-cycle gives a complete
@@ -68,8 +73,10 @@ This directory contains the stable proof chain:
   and presentation-saturation criteria that extend a defect across its
   possible support.
 
-The external Lean certificate for the foundational map remains in
-[LEAN_FOUNDATIONAL_MAP.md](LEAN_FOUNDATIONAL_MAP.md).
+External formal certificates for the foundational map are the pinned
+[Lean development](LEAN_FOUNDATIONAL_MAP.md) and the independently authored,
+refereed [Archive of Formal Proofs Isabelle/HOL
+entry](https://isa-afp.org/entries/Jacobian_Counterexample.html).
 Expanded audit and normalization narratives are preserved under
 [archive/core-support](../archive/core-support/README.md), while their commands
 remain in the public [reproduction guide](../REPRODUCE.md).

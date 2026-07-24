@@ -48,6 +48,19 @@ The proof below is uniform in `n`.  Its logical order is:
 No bounded computation and no generic projective-duality theorem is used in
 this implication chain.
 
+### Provenance and scope
+
+The cusp/node formula was independently observed by Jonas Stein and
+computationally verified through degree thirteen in a
+[public discussion on July 22, 2026](https://sbseminar.wordpress.com/2026/07/20/the-new-counterexample-to-the-jacobian-conjecture/#comment-27972).
+David Speyer separately described the associated tangent-envelope construction
+underlying Alexis Gallagher's family in the
+[same discussion](https://sbseminar.wordpress.com/2026/07/20/the-new-counterexample-to-the-jacobian-conjecture/#comment-27973)
+and in an
+[accompanying note](https://sbseminar.wordpress.com/wp-content/uploads/2026/07/jacobiantangentsweep.pdf).
+The contribution here is an all-degree geometric proof, including genericity
+and the exclusion of all other singularities.
+
 ## Complete all-degree proof
 
 Fix an algebraically closed field `k` of characteristic zero.  Work in the

@@ -1,5 +1,5 @@
 {
-  "schema_version": 3,
+  "schema_version": 4,
   "authority": "MATH_STATUS.json",
   "entries": [
     {
@@ -7,14 +7,30 @@
       "kind": "theorem",
       "state": "proved",
       "title": "Foundational Keller collision",
-      "scope": "A concrete Keller map with the asserted collision and noninjectivity properties.",
+      "scope": "The explicit three-dimensional polynomial map has determinant -2 and an exact three-point rational collision. A linear output normalization gives determinant one while preserving noninjectivity; identity padding gives the same phenomenon in every dimension n>=3; consequently none of these maps has a polynomial inverse.",
       "canonical_source": "verified/FOUNDATIONAL_GEOMETRY.md",
       "dependencies": [],
       "checker": "scripts/verify_counterexample_independent.py",
       "proof_type": "formal",
-      "independent_replay": false,
+      "independent_replay": true,
       "formal_verification": true,
-      "external_review": false,
+      "external_review": true,
+      "external_formal_certificates": [
+        {
+          "name": "Lean 4 certificate",
+          "url": "https://github.com/deancureton/jacobian/commit/0d4a9212d874226ad81ce5a926becddfa94e6a88",
+          "prover": "Lean 4",
+          "scope": "Determinant, exact collision, determinant-one normalization, and failure of the injectivity implication.",
+          "refereed": false
+        },
+        {
+          "name": "AFP Isabelle/HOL entry",
+          "url": "https://isa-afp.org/entries/Jacobian_Counterexample.html",
+          "prover": "Isabelle/HOL",
+          "scope": "Determinant -2, exact three-point collision, determinant-one normalization, identity-padded stabilization in every finite dimension n>=3, and nonexistence of a polynomial inverse.",
+          "refereed": true
+        }
+      ],
       "artifact_hash": "sha256:7ee27ca8dea223b2db1927e3bcc928a22410fa3d92a279fe9f51bcb755ac6c11",
       "software_lock": [
         ".python-version",
@@ -3416,6 +3432,30 @@
       ],
       "replaced_by": [],
       "priority": "derived"
+    },
+    {
+      "id": "DVG1",
+      "kind": "reproduction",
+      "state": "proved",
+      "title": "Dvorsky--Long five-variable GVC and SIC counterexample",
+      "scope": "Over characteristic zero, P=(t+c)(ad+bt), Lambda=partial_t(partial_a partial_d-partial_b partial_c), and Q=-c satisfy Lambda^m(P^m)=0 for every m>=1 and Lambda^m(QP^m)=(-1)^(m+1)(m+1)!(m!)^2 t for every m>=2. Thus unrestricted constant-coefficient GVC fails in five variables and SIC fails in five contraction pairs. The third-order operator does not lower the ordinary-Laplacian or homogeneous quartic HN witness dimensions. Credit is Long's SU(2) seed and Dvorsky's homogenized GVC/SIC lift.",
+      "canonical_source": "extended-geometry/DVORSKY_GVC5_COUNTEREXAMPLE.md",
+      "dependencies": [
+        "external: Christopher D. Long SU(2) seed",
+        "external: Alexander Dvorsky five-variable lift"
+      ],
+      "checker": "scripts/audit_dvorsky_gvc5_counterexample.py",
+      "proof_type": "reproduction",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:f20e8a74cb02f2386f30aebe9e8004e539c8176a1a51bdcfeb22924f8ce9a0ad",
+      "software_lock": [],
+      "supersedes": [
+        "SIC(20) as the overall repository-certified SIC upper witness"
+      ],
+      "replaced_by": [],
+      "priority": "reference"
     },
     {
       "id": "GL1",

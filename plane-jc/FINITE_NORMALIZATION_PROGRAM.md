@@ -435,8 +435,12 @@ Immersion on the affine normalization makes this number zero.  Since
 \(f_i,s_i\ge1\), the only solution is (3.7).
 
 This removes the former one- and two-puncture restriction from the residue
-budget.  Once a boundary theorem supplies affine residue immersion, every
-number of punctures is handled uniformly.  The exact regression is
+budget, conditional on unramifiedness of the map between normalizations.
+Pure transverse ramification does not supply that hypothesis at a singular
+target image; the cubic cusp audit in
+[`JC2_FINITE_NORMALIZATION_FRONTIER.md`](JC2_FINITE_NORMALIZATION_FRONTIER.md)
+records the obstruction.  Once unramifiedness is independently supplied,
+every number of punctures is handled uniformly.  The exact regression is
 `cas/puncture_profile_budgets` in
 [`cas/plane_boundary_exclusion.py`](cas/plane_boundary_exclusion.py).
 
@@ -1102,16 +1106,19 @@ in the deleted boundary while at least one affine prime supplies the
 distinguished Keller sheet.  This is a local algebra/monodromy problem, not
 a further global intersection inequality.
 
-### Proposition 7.7 -- residue immersion removes the unibranch face
+### Conditional Proposition 7.7 -- embedded immersion removes the unibranch face
 
-Under the logarithmic-purity hypotheses of the plane boundary-exclusion
-theorem, the residue map
+Assume, in addition to the logarithmic-purity hypotheses, that the residue
+map
 
 \[
  \varphi:E\longrightarrow C
 \]
 
-is immersive at every point.  Factor it through normalization:
+is immersive at every point.  This is an extra hypothesis, not a consequence
+of transverse logarithmic purity when \(C\) is singular: the cubic cusp
+model \(v=t^3+ut\) is a counterexample to that implication.  Factor it
+through normalization:
 
 \[
  E\xrightarrow{g}\widetilde C\xrightarrow{\nu}C.
@@ -1145,8 +1152,9 @@ entire delta invariant.  Their contact can be arbitrarily high, so even
 after immersion the conductor degree does not force three or more
 normalization points.
 
-This reduction reconnects the global finite-normalization programme to the
-existing closed-fiber theorem.  If the two normalization points lift to
+Conditional on embedded immersion, this reduction reconnects the global
+finite-normalization programme to the existing closed-fiber theorem.  If
+the two normalization points lift to
 distinct immersive points on a boundary prime of transverse index \(e\),
 finite flatness gives
 

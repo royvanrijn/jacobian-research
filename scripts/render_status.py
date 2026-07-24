@@ -13,12 +13,13 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 INDEX_PATH = ROOT / "MATH_STATUS.json"
 STATUS_PATH = ROOT / "STATUS.md"
-FIELDS = {
+REQUIRED_FIELDS = {
     "id", "kind", "state", "title", "scope", "canonical_source",
     "dependencies", "checker", "proof_type", "independent_replay",
     "formal_verification", "external_review", "artifact_hash",
     "software_lock", "supersedes", "replaced_by", "priority",
 }
+OPTIONAL_FIELDS = {"external_formal_certificates"}
 KINDS = {"theorem", "corollary", "example", "reproduction", "open_problem"}
 STATES = {"proved", "partial", "open", "parked", "archived", "falsified"}
 PROOF_TYPES = {
@@ -47,7 +48,7 @@ def load_index() -> dict:
 
 
 def validate_index(index: dict) -> None:
-    assert index.get("schema_version") == 3, "unsupported status schema"
+    assert index.get("schema_version") == 4, "unsupported status schema"
     assert index.get("authority") == "MATH_STATUS.json"
     entries = index.get("entries")
     assert isinstance(entries, list) and entries, "the status registry is empty"
@@ -57,7 +58,9 @@ def validate_index(index: dict) -> None:
     known = set(ids)
     for item in entries:
         item_id = item.get("id", "?")
-        assert set(item) == FIELDS, f"{item_id}: unexpected schema"
+        assert REQUIRED_FIELDS <= set(item) <= REQUIRED_FIELDS | OPTIONAL_FIELDS, (
+            f"{item_id}: unexpected schema"
+        )
         assert item["id"] and item["title"] and item["scope"]
         assert item["kind"] in KINDS, f"{item_id}: invalid kind"
         assert item["state"] in STATES, f"{item_id}: invalid state"
@@ -68,6 +71,28 @@ def validate_index(index: dict) -> None:
             "external_review",
         ):
             assert isinstance(item[field], bool), f"{item_id}: {field} must be boolean"
+        certificates = item.get("external_formal_certificates", [])
+        assert isinstance(certificates, list)
+        for certificate in certificates:
+            assert set(certificate) == {
+                "name", "url", "prover", "scope", "refereed",
+            }, f"{item_id}: invalid external formal certificate"
+            assert all(
+                isinstance(certificate[field], str) and certificate[field]
+                for field in ("name", "url", "prover", "scope")
+            ), f"{item_id}: incomplete external formal certificate"
+            assert certificate["url"].startswith("https://"), (
+                f"{item_id}: external formal certificate requires an HTTPS URL"
+            )
+            assert isinstance(certificate["refereed"], bool)
+        if certificates:
+            assert item["formal_verification"], (
+                f"{item_id}: external formal certificate requires formal verification"
+            )
+        if item["external_review"]:
+            assert any(certificate["refereed"] for certificate in certificates), (
+                f"{item_id}: external review requires identified refereed evidence"
+            )
         assert item["priority"] in PRIORITIES, f"{item_id}: invalid priority"
         assert isinstance(item["dependencies"], list)
         assert isinstance(item["software_lock"], list)
@@ -147,6 +172,13 @@ def _evidence(item: dict) -> str:
         parts.append("formal verification")
     if item["external_review"]:
         parts.append("external review")
+    certificates = item.get("external_formal_certificates", [])
+    if certificates:
+        links = ", ".join(
+            _link(certificate["name"], certificate["url"])
+            for certificate in certificates
+        )
+        parts.append(f"external formal certificates: {links}")
     if item["artifact_hash"]:
         parts.append(f"`{item['artifact_hash'][:19]}…`")
     if item["software_lock"]:
@@ -182,7 +214,9 @@ def render(index: dict) -> str:
         "[`MATH_STATUS.json`](MATH_STATUS.json) is the sole status authority. Canonical "
         "sources contain the proofs; this page records their scope, dependency role, "
         "proof classification, and separate assurance signals. A checker establishes "
-        "reproducibility, not independent replay, formal verification, or external review.",
+        "reproducibility, not independent replay, formal verification, or external review. "
+        "External review includes identified refereeing by a formal-proof archive as well "
+        "as conventional publication review.",
         "",
         "## Core theorem chain",
         "",

@@ -884,7 +884,9 @@ toric invariant moments, checks
 four-way-tie, and boundary valuation face using invariant moments through
 degree twelve.  The target also recomputes three
 unit Groebner bases for the direct Long-style
-collapse and writes the dimension/rank/index/degree scoreboard.  It does not
+collapse, checks the Dvorsky--Long five-variable GVC and five-pair SIC
+identities by dependency-free exact sparse arithmetic, and writes the
+dimension/rank/index/degree scoreboard.  It does not
 use bounded support enumeration to settle GMC(2): the accompanying
 lower-face theorem handles arbitrary rotational support.  Its audit checks
 supporting-line minima, Frobenius constant-term dilation, and normalized
@@ -907,6 +909,17 @@ python3 scripts/audit_identity_slice_counterexamples_independent.py
 .venv/bin/python scripts/verify_inverse_coordinate_recurrence.py
 ```
 
+The independent small-witness audit can also be run directly:
+
+```bash
+python3 scripts/audit_dvorsky_gvc5_counterexample.py
+```
+
+It verifies the two pre-\(\partial_t\) identities and the resulting GVC(5)
+and SIC(5) failures through order eight.  The all-order binomial proof and
+the separation from ordinary-Laplacian GVC are documented in
+[`DVORSKY_GVC5_COUNTEREXAMPLE.md`](extended-geometry/DVORSKY_GVC5_COUNTEREXAMPLE.md).
+
 The all-order nonvanishing proof is written in
 [`IMAGE_VANISHING_COUNTEREXAMPLES.md`](extended-geometry/IMAGE_VANISHING_COUNTEREXAMPLES.md);
 the generators check the finite artifacts and change-of-variable identities;
@@ -919,9 +932,11 @@ The parallel `LR1 -> GS1` branch is instead the nonexplicit route to
 `LR1 -> LR2 -> LR3`, with `IV1 -> LR3` supplying the HN consequence
 framework for the separate rank-37 realization.  These arrows record logical
 or construction dependence.
-Dimensions 20/40/42 and rank 37 are repository ledger values, and the exact
-artifacts are witness-specific data; neither is a literature-wide priority
-claim.
+The collision route retains witness sizes 20/40/42 and rank 37.  The
+independent Dvorsky--Long formulas lower the overall certified SIC and
+unrestricted GVC entries to 5/5, but do not change the ordinary-Laplacian
+40 or homogeneous HN 42 entries.  These are witness-ledger values, not
+literature-wide minimality claims.
 A local proof of the
 fixed-dimensional DVEZ/Zhao implication, including Gaussian contraction, the
 countable-union step, and formal inversion, completes the nonexplicit route to

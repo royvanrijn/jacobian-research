@@ -50,6 +50,83 @@ class ConductorCollisionBudget:
 
 
 @dataclass(frozen=True)
+class CleanTangentialDefectBudget:
+    """Closed-fiber cost of a clean nonimmersive boundary point.
+
+    If the boundary parameter has first target order ``m >= 2`` and the
+    residual Jacobian is a unit, local integration gives fiber length
+    ``m + 1``.
+    """
+
+    generic_degree: int
+    tangent_order: int
+    local_fiber_length: int
+    residual_fiber_budget: int
+    status: str
+
+    def as_dict(self) -> dict[str, object]:
+        return asdict(self)
+
+
+def clean_tangential_defect_budget(
+    generic_degree: int,
+    tangent_order: int,
+) -> CleanTangentialDefectBudget:
+    """Audit the local length formula ``length = tangent_order + 1``."""
+
+    if generic_degree <= 0:
+        raise ValueError("the generic degree must be positive")
+    if tangent_order < 2:
+        raise ValueError("a tangential nonimmersion has order at least two")
+    local_length = tangent_order + 1
+    residual = generic_degree - local_length
+    if residual < 0:
+        status = "excluded_by_flat_length"
+    elif residual == 0:
+        status = "consumes_full_fiber"
+    else:
+        status = "leaves_residual_budget"
+    return CleanTangentialDefectBudget(
+        generic_degree=generic_degree,
+        tangent_order=tangent_order,
+        local_fiber_length=local_length,
+        residual_fiber_budget=residual,
+        status=status,
+    )
+
+
+def cubic_closed_fiber_atlas() -> tuple[dict[str, object], ...]:
+    """Return the complete algebraically closed rank-three fiber atlas."""
+
+    return (
+        {
+            "partition": (1, 1, 1),
+            "local_algebras": ("k", "k", "k"),
+            "ramified": False,
+        },
+        {
+            "partition": (2, 1),
+            "local_algebras": ("k[epsilon]/(epsilon^2)", "k"),
+            "ramified": True,
+        },
+        {
+            "partition": (3,),
+            "local_algebras": ("k[epsilon]/(epsilon^3)",),
+            "ramified": True,
+            "curvilinear": True,
+        },
+        {
+            "partition": (3,),
+            "local_algebras": (
+                "k[epsilon,eta]/(epsilon,eta)^2",
+            ),
+            "ramified": True,
+            "curvilinear": False,
+        },
+    )
+
+
+@dataclass(frozen=True)
 class ConductorPacketBudget:
     """Finite-flat length budget for several boundary points in one fiber.
 
@@ -231,6 +308,7 @@ class OneDicriticalNormalizationCertificate:
     punctures: int
     single_normalization_boundary: bool
     log_pure: bool
+    normalized_residue_unramified: bool
     exhaustive_pullback: bool
     target_transfer_certified: bool
     one_place_at_infinity: bool = True
@@ -298,7 +376,7 @@ def audit_one_dicritical_normalization(
         certificate.affine_degree < certificate.transverse_index
     )
     residue_immersion = (
-        certificate.log_pure
+        certificate.normalized_residue_unramified
         and certificate.exhaustive_pullback
         and certificate.target_transfer_certified
     )
@@ -346,6 +424,11 @@ def audit_one_dicritical_normalization(
         reasons.append("the one-place-at-infinity input is not certified")
     if not certificate.log_pure:
         reasons.append("residual special-point ramification is present")
+    if not certificate.normalized_residue_unramified:
+        reasons.append(
+            "unramifiedness of the map between boundary and target "
+            "normalizations is not certified"
+        )
 
     if reasons:
         return finish("incomplete", reasons, None)
@@ -758,6 +841,7 @@ if __name__ == "__main__":
                     punctures=1,
                     single_normalization_boundary=True,
                     log_pure=True,
+                    normalized_residue_unramified=True,
                     exhaustive_pullback=True,
                     target_transfer_certified=True,
                 ),
@@ -770,6 +854,7 @@ if __name__ == "__main__":
                     punctures=1,
                     single_normalization_boundary=False,
                     log_pure=True,
+                    normalized_residue_unramified=False,
                     exhaustive_pullback=True,
                     target_transfer_certified=False,
                 ),
@@ -782,6 +867,7 @@ if __name__ == "__main__":
                     punctures=1,
                     single_normalization_boundary=False,
                     log_pure=False,
+                    normalized_residue_unramified=False,
                     exhaustive_pullback=True,
                     target_transfer_certified=False,
                 ),

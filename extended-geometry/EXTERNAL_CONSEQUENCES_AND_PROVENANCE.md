@@ -28,11 +28,14 @@ flowchart TD
     RO["not GMC(42)"]
     I21["Direct contraction: not SIC(21)"]
     I20["Identity-output slice: not SIC(20)"]
+    D5["Dvorsky homogenization of Long's SU(2) seed"]
+    I5["Direct five-pair witness: not SIC(5)"]
+    U5["Third-order constant-coefficient witness: not unrestricted GVC(5)"]
     V40["40 variables: generalized Laplacian VC and nonhomogeneous HN-VC fail"]
     H42["42 variables: homogeneous quartic HN-VC fails"]
     C22["Separate circuit source: 22 variables"]
     HR37["44-variable quartic HN witness of Hessian rank 37"]
-    Q["Repository incumbents only: SIC 20 / generalized VC 40 / homogeneous HN-VC 42 / HN rank 37"]
+    Q["Certified ledger: SIC 5 / unrestricted GVC 5 / Laplacian GVC 40 / homogeneous HN-VC 42 / HN rank 37"]
     E["Witness-specific data: named multiplier z_0, exact artifacts, inverse recurrence"]
     M["Motivation for Long's searches"]
     GP["Long's direct three-Gaussian polynomials"]
@@ -53,9 +56,14 @@ flowchart TD
     BO -->|"named inverse coordinate and contraction"| I21
     I21 -->|"identity-output descent"| I20
     I20 -->|"Laplacian change of variables"| V40
+    SP -->|"homogenized differential lift"| D5
+    D5 -->|"direct contraction"| I5
+    D5 -->|"all-order binomial identity"| U5
     BO -->|"cotangent/symmetric lift"| H42
     BO -.->|"explicit realization data"| E
     I20 -.->|"quantitative ledger"| Q
+    I5 -.->|"quantitative ledger"| Q
+    U5 -.->|"quantitative ledger"| Q
     V40 -.->|"quantitative ledger"| Q
     H42 -.->|"quantitative ledger"| Q
     BO -->|"different circuit optimization"| C22
@@ -92,13 +100,41 @@ solid chain
 
 and the separate solid lift to
 \(\neg\mathrm{VC}^{\mathrm{hom}}_{\mathrm{HN},4}(42)\) are logical or
-constructive consequences.  The node listing \(20/40/42/37\) is only the
-repository's current witness ledger: it is not a disproof step, a proof of
-minimality, or a literature-wide record.  Likewise, the named multiplier,
-artifacts, and recurrence describe what is specific to this explicit
-realization; they do not assert first discovery.  The 44-variable rank-37
+constructive consequences.  The separate Long--Dvorsky branch gives
+\(\neg\mathrm{SIC}(5)\) and unrestricted \(\neg\mathrm{GVC}(5)\) directly;
+it is not a consequence of the repository's collision route.  The
+third-order Dvorsky operator does not lower the ordinary-Laplacian endpoint.
+The node listing \(5/5/40/42/37\) is only the current certified witness
+ledger: it is not a proof of minimality or a literature-wide record.
+Likewise, named multipliers, artifacts, and recurrences describe explicit
+realizations; they do not assert first discovery.  The 44-variable rank-37
 witness is a different quantitative realization of the already-failed HN
 conjecture, not a second logical disproof.
+
+## Comparison of consequence routes and direct witnesses
+
+The relevant constructions optimize different objects, so their dimensions
+are not entries in a single minimum problem.
+
+| Source | Input | Output | Status |
+|---|---|---|---|
+| Long | BCW route, 79 variables | route-based \(\neg\mathrm{GMC}(158)\) | external |
+| Long | direct Gaussian polynomial | \(\neg\mathrm{GMC}(n)\), \(n\ge3\) | external |
+| Santibañez-Leal | cubic homogeneous, 24 variables | explicit HN quartic, 48 variables | external |
+| Repository | essential cubic, 21 variables | SIC/GVC/HN witnesses in 20/40/42 | internal |
+| Long--Dvorsky | Long's \(SU(2)\) seed and Dvorsky's homogenization | explicit \(\neg\mathrm{GVC}(5)\) and \(\neg\mathrm{SIC}(5)\) | external; [exact local audit](DVORSKY_GVC5_COUNTEREXAMPLE.md) |
+
+In particular, Santibañez-Leal's
+[independent explicit construction](https://doi.org/10.5281/zenodo.21503372)
+starts from a 24-variable cubic-homogeneous map and gives a 48-variable
+homogeneous Hessian-nilpotent quartic with an exact collision and
+Vanishing-Conjecture failure.  The repository's collision-derived
+\(20/40/42\) dimensions and rank \(37\) come from different optimized routes.
+The Dvorsky--Long formulas independently lower the certified SIC pair
+dimension to five and the unrestricted constant-coefficient GVC dimension to
+five, while leaving the ordinary-Laplacian and homogeneous HN entries at
+40 and 42.  The table therefore does not rank all five rows by a common
+notion of “smallest.”
 
 ## Christopher D. Long: Gaussian moments
 
@@ -422,9 +458,10 @@ JC(3) has generated two distinct bodies of work:
 - **internal geometry:** the repository's marked-root, boundary,
   decorated-normalization, and stable-moduli programme;
 - **external consequences:** Long's direct GMC, `(xz)`, and `SU(2)`
-  counterexamples and his tracked GMC(158) route, together with the
-  repository's later shared-factor, rank-compressed, and constant-kernel
-  improvement of that route to GMC(42).
+  counterexamples, Dvorsky's homogenized GVC(5)/SIC(5) lift of the `SU(2)`
+  seed, and Long's tracked GMC(158) route, together with the repository's
+  later shared-factor, rank-compressed, and constant-kernel improvement of
+  that route to GMC(42).
 
 The existence of explicit consequence-level counterexamples supports studying
 the JC(3) map as a generator of new mathematics.  It does not make every

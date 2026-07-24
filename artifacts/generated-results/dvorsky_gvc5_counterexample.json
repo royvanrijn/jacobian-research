@@ -1,0 +1,50 @@
+{
+  "format": "dvorsky-gvc5-counterexample-v1",
+  "field": "characteristic zero",
+  "variables": [
+    "t",
+    "a",
+    "b",
+    "c",
+    "d"
+  ],
+  "P": "(t+c)(ad+bt)",
+  "Lambda": "d/dt (d/da d/dd - d/db d/dc)",
+  "Q": "-c",
+  "all_order_identities": {
+    "D^m(P^m)": "(m!)^2 c^m",
+    "D^m(Q P^m)": "(m!)^2 [(-1)^(m+1) t^(m+1) - c^m(c-t)]",
+    "Lambda^m(P^m)": "0 for every m>=1",
+    "Lambda^m(Q P^m)": "(-1)^(m+1) (m+1)! (m!)^2 t for every m>=2"
+  },
+  "bounded_sparse_polynomial_replay": {
+    "orders": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "implementation": "Python standard library sparse exact arithmetic"
+  },
+  "consequences": {
+    "unrestricted_constant_coefficient_GVC": "fails in 5 variables",
+    "SIC": "fails in 5 contraction pairs",
+    "ordinary_Laplacian_GVC": "not affected; Lambda has order 3",
+    "homogeneous_quartic_HN_VC": "not affected"
+  },
+  "provenance": {
+    "SU2_seed": {
+      "author": "Christopher D. Long",
+      "url": "https://arxiv.org/abs/2607.19012"
+    },
+    "five_variable_GVC_SIC_lift": {
+      "author": "Alexander Dvorsky",
+      "date": "2026-07-23",
+      "url": "https://sbseminar.wordpress.com/2026/07/20/the-new-counterexample-to-the-jacobian-conjecture/"
+    }
+  }
+}

@@ -1,0 +1,350 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools,microtype}
+\usepackage[T1]{fontenc}
+\usepackage[hidelinks]{hyperref}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\A}{\mathbb A}
+\newcommand{\R}{\mathbb R}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\C}{\mathbb C}
+\newcommand{\SpecR}{\operatorname{Spec}_{\R}}
+\newcommand{\Disc}{\operatorname{Disc}}
+\numberwithin{equation}{section}
+
+\title{Exact Real Chamber Spectra of Explicit Keller Maps}
+\author{Roy van Rijn\\{\small Independent researcher}}
+\date{24 July 2026}
+\hypersetup{
+  pdftitle={Exact Real Chamber Spectra of Explicit Keller Maps},
+  pdfauthor={Roy van Rijn},
+  pdfsubject={Real fibers of explicit Keller maps},
+  pdfkeywords={Keller map, real fiber, chamber, generic degree,
+    discriminant, fold}
+}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Migus classified the generic degrees of real polynomial Keller maps with
+non-dense Euclidean image: in every dimension at least three they are exactly
+the even integers at least four.  We refine the realization side inside one
+explicit weighted family.  For every \(N\geq3\) we give a rational Keller map
+\(F_N:\A^3\to\A^3\) of generic degree \(N\) whose complete regular real
+fibers have exactly
+\[
+  N,N-2,N-4,\ldots,N\bmod 2
+\]
+points, and no other cardinalities.  Every value occurs on a nonempty open
+target chamber, every chamber contains a rational target, and selected
+chambers with the displayed cardinalities form a chain whose successive
+walls are smooth folds of the inverse polynomial pencil.  In even degree the
+last chamber is disjoint from the image, recovering the non-dense examples
+in Migus's classification with their full real sheet spectrum.
+\end{abstract}
+
+\section{Context and statement}
+
+A real polynomial map with nonzero constant Jacobian determinant will be
+called a real Keller map.  Migus proved that, for \(m\geq3\), the possible
+generic degrees of such maps \(\R^m\to\R^m\) with non-dense Euclidean image
+are precisely the even integers \(N\geq4\)~\cite{Migus}.  His lower bound
+combines conjugation parity with Campbell's exclusion of generic degree two;
+his construction proves that every permitted degree occurs.
+
+The examples used here belong to the weighted-lift construction developed by
+Gallagher, who also gave the first explicit quartic member with an empty real
+fiber chamber and a member of every generic degree \(N\geq3\)
+~\cite{Gallagher}.  All-degree families also occur in the earlier base
+manuscript~\cite{Base}.  The point of this note is different: for one
+explicit rational member in every degree, we determine all real sheet
+numbers on the natural complete regular locus, give rational witnesses, and
+exhibit the full parity chain by adjacent fold crossings.
+
+We first define the maps.  For \(N=2k+1\) and \(N=2k\), respectively, put
+\begin{align}
+ S_{2k+1}
+   &=\{2\}\cup\{j,1-j:3\leq j\leq k+1\}, \notag\\
+ S_{2k}
+   &=\{3,4\}\cup\{j,1-j:5\leq j\leq k+2\},\label{eq:seeds}\\
+ G_N(W)&=W(W+1)\prod_{\rho\in S_N}(W-\rho),\notag\\
+ \lambda_N&=G_N'(0)-G_N'(1),\qquad
+ H_N(W)=\frac{G_N(W)-G_N'(0)W}{\lambda_N}.              \notag
+\end{align}
+Empty ranges are omitted, so these formulas include \(N=3,4\).  The roots
+of \(G_N\) are \(N\) distinct integers, and
+\begin{equation}
+ \lambda_{2k+1}=(-1)^k k(k!)^2,\qquad
+ \lambda_{2k}=\frac{(-1)^k}{144}(7k+2)((k+1)!)^2.
+ \label{eq:lambda}
+\end{equation}
+so \(\lambda_N\neq0\).
+
+For a polynomial \(H=H_N\), let
+\[
+ \kappa=H''(1),\qquad a_0=-\frac{1+\kappa}{2+\kappa}.
+\]
+The construction below uses \(\kappa\neq-2\), verified in
+Proposition~\ref{prop:explicit-map}.  In source coordinates set
+\[
+ v=xy,\quad S=x^2z,\quad u=1+v,\quad
+ \gamma=1+a_0v+S,\quad W=u\gamma,
+\]
+and write \(p=H'\) and \(q(W)=Wp(W)-H(W)\).  Define
+\begin{equation}
+ F_N(x,y,z)=(A,B,C),\qquad
+ C=x\gamma,\quad
+ B=\frac{1+p(W)/\gamma}{x},\quad
+ A=\frac{u+q(W)/\gamma^2}{x^2}. \label{eq:map}
+\end{equation}
+Although (1.3) displays quotients, the endpoint identities for \(H_N\)
+make \(A\) and \(B\) polynomials over \(\Q\).
+
+For a target \((A,B,C)\), put
+\begin{equation}
+ E_{A,B,C}(W)=H_N(W)-BCW+AC^2. \label{eq:pencil}
+\end{equation}
+and define the complete regular locus
+\begin{equation}
+ \Omega_N=\{(A,B,C)\in\R^3:
+ C\neq0,\ \Disc_W(E_{A,B,C})\neq0\}. \label{eq:omega}
+\end{equation}
+Its connected components will be called real target chambers.
+
+\begin{theorem}[Exact chamber spectrum]\label{thm:spectrum}
+For every \(N\geq3\), the map \(F_N\) in \emph{\eqref{eq:map}} is a polynomial Keller
+map over \(\Q\), with
+\[
+ \det DF_N=1,\qquad \deg_{\mathrm{gen}}F_N=N.
+\]
+On \(\Omega_N\), the possible real-fiber cardinalities are exactly
+\begin{equation}
+ \boxed{N,N-2,N-4,\ldots,N\bmod2}. \label{eq:spectrum}
+\end{equation}
+Each cardinality in \emph{\eqref{eq:spectrum}} occurs on a nonempty open chamber.  Every
+chamber of \(\Omega_N\) contains a rational target.  Moreover, there are
+chambers carrying the successive values in \emph{(1.6)} which form an
+adjacency chain
+\[
+ N\;--\;N-2\;--\;\cdots\;--\;(N\bmod2),
+\]
+each edge crossing a single smooth fold of the discriminant of
+\emph{(1.4)}.
+\end{theorem}
+
+\begin{corollary}[Migus refinement]\label{cor:migus}
+For every even \(N\geq4\), \(F_N(\R^3)\) is not Euclidean dense and \(F_N\)
+has generic degree \(N\).  Thus the realization half of Migus's
+classification can be chosen so that the complete regular real-fiber
+spectrum is \(N,N-2,\ldots,0\), with rational witnesses and a full fold
+adjacency chain.
+\end{corollary}
+
+\section{The explicit weighted maps}
+
+\begin{proposition}\label{prop:explicit-map}
+The polynomials \(H_N\) satisfy
+\[
+ H_N(0)=H_N'(0)=H_N(1)=0,\qquad H_N'(1)=-1,\qquad
+ H_N''(1)\neq-2.
+\]
+Consequently \eqref{eq:map} is polynomial, has Jacobian determinant one, and its
+inverse equation over \(C\neq0\) is \eqref{eq:pencil}.  Every simple root of
+\eqref{eq:pencil}
+reconstructs one and only one source point.
+\end{proposition}
+
+\begin{proof}
+The paired factors in \eqref{eq:seeds} give \(G_N(1)=G_N'(0)\); the first four
+identities follow immediately from the definition of \(H_N\).
+Logarithmic differentiation gives
+\[
+ H_{2k+1}''(1)
+ =-\frac{2(k+1)}{k}\sum_{i=1}^k\frac1{i^2}<-2.
+\]
+In even degree, if
+\[
+ D=\frac5{12}+\frac1{k+2},\qquad
+ Q=\frac{29}{18}+
+ \sum_{j=5}^{k+2}\left(\frac1{(j-1)^2}+\frac1{j^2}\right),
+\]
+then
+\[
+ H_{2k}''(1)=\frac{D^2-Q}{1-D}<-2,
+\]
+because \(5/12<D\leq2/3\) and
+\(Q\geq29/18>1+(7/12)^2\geq1+(1-D)^2\).
+
+The divisibilities forced by the endpoint identities cancel the displayed
+denominators in \eqref{eq:map}.  The standard weighted Jacobian calculation gives
+\(\det DF_N=1\).  For completeness, its essential identities are
+\[
+ BC=H_N'(W)+\gamma,\qquad
+ AC^2=W\bigl(H_N'(W)+\gamma\bigr)-H_N(W).
+\]
+Eliminating \(\gamma\) yields \eqref{eq:pencil}.  Conversely, at a simple root \(W\),
+\[
+ \gamma=BC-H_N'(W)=-E_{A,B,C}'(W),\qquad x=C/\gamma,
+\]
+and then \(y=(W-\gamma)/C\), while \(z\) follows uniquely from
+\(\gamma=1+a_0xy+x^2z\).  If \(C\neq0\), all these quantities are finite
+exactly when the root is simple.  This gives the claimed bijection.
+\end{proof}
+
+Taking
+\[
+ (A,B,C)=\left(0,-\frac{G_N'(0)}{\lambda_N},1\right)
+\]
+turns \eqref{eq:pencil} into \(G_N(W)/\lambda_N\), which has \(N\) simple roots.
+Proposition~\ref{prop:explicit-map} therefore also proves that the generic
+degree is \(N\).
+
+\section{A real pencil lemma}
+
+The real geometry is isolated in the following elementary statement.
+
+\begin{proposition}[Pencil spectrum]\label{prop:pencil}
+Let \(H\in\R[W]\) have degree \(N\geq2\), and consider
+\[
+ E_{s,t}(W)=H(W)-sW+t.
+\]
+If one member \(E_{s_0,t_0}\) has \(N\) distinct real roots, then the root
+counts on the complement of its discriminant are exactly
+\[
+ N,N-2,\ldots,N\bmod2.
+\]
+Arbitrarily close to \(s_0\) there is a vertical line \(s=s_1\) which meets
+chambers with these counts in order, consecutive chambers being separated
+by one smooth fold.  If the input data are rational, \(s_1\) and a target in
+each selected chamber may be chosen rational.
+\end{proposition}
+
+\begin{proof}
+Off the discriminant all roots are simple, and nonreal roots occur in
+conjugate pairs.  Hence every root count has the parity of \(N\).
+
+Translate \(t\) so that \(t_0=0\), and put \(P_s(W)=H(W)-sW\).
+Having \(N\) simple real zeros is open in \(s\).  In a sufficiently small
+interval about \(s_0\), avoid the finitely many slopes for which \(P_s\) has
+a degenerate critical point or two critical points with the same critical
+value.  Finiteness follows from the normalization of the discriminant,
+\[
+ r\longmapsto\bigl(H'(r),rH'(r)-H(r)\bigr):
+\]
+cusps and multiple normalization fibers occur over only finitely many
+points.  Thus a suitable \(s_1\) exists, and it may be taken rational when
+the data are rational.
+
+Rolle's theorem gives \(N-1\) real critical points of \(P_{s_1}\); all are
+nondegenerate and have distinct critical values.  Multiply the polynomial by
+the sign of its leading coefficient, which does not change its roots.
+Starting from level zero and translating vertically in the direction which
+passes the local minima, each crossing removes exactly two real roots.
+The critical values are distinct, so the losses occur one pair at a time.
+There are \(\lfloor N/2\rfloor\) such crossings.  At the end there are no
+real roots in even degree and one in odd degree.  The open intervals between
+successive critical values give every asserted count.  Each interval
+contains a rational translation.
+
+At a crossed wall the polynomial has one double root \(r\), with
+\(E''(r)\neq0\), and all other roots are simple.  In local coordinates the
+incidence is
+\[
+ \alpha+\beta(W-r)^2+\text{higher terms},\qquad
+ \alpha\beta\neq0,
+\]
+which is a smooth fold of the pencil projection.
+\end{proof}
+
+\section{Proof of the spectrum and rational witnesses}
+
+\begin{proof}[Proof of Theorem~\ref{thm:spectrum}]
+On a slice \(C=C_0\neq0\), the target-coordinate change
+\[
+ (A,B,C_0)\longmapsto(s,t)
+   =(BC_0,AC_0^2)
+\]
+is a real analytic isomorphism.  Proposition~\ref{prop:explicit-map}
+identifies the real source fiber over every point of \(\Omega_N\) with the
+real roots of \(H_N(W)-sW+t\).
+
+At the rational target
+\[
+ (s_0,t_0)=\left(-\frac{G_N'(0)}{\lambda_N},0\right)
+\]
+this polynomial is \(G_N/\lambda_N\), with \(N\) distinct integer roots.
+Proposition~\ref{prop:pencil} now proves the spectrum, nonempty chambers,
+rational witnesses for one chamber of every sheet number, and the fold
+adjacency chain.
+
+The fiber count is locally constant throughout \(\Omega_N\), since all roots
+are simple there.  Every connected component of \(\Omega_N\) is a nonempty
+open subset of \(\R^3\), and \(\Q^3\) is dense in \(\R^3\); consequently
+every chamber, not merely the selected chain, contains a rational target.
+\end{proof}
+
+\begin{proof}[Proof of Corollary~\ref{cor:migus}]
+If \(N\) is even, Theorem~\ref{thm:spectrum} supplies a nonempty open chamber
+on which the real fiber is empty.  This chamber is disjoint from
+\(F_N(\R^3)\), so the image is not Euclidean dense.  The generic degree was
+computed in Proposition~\ref{prop:explicit-map}.
+\end{proof}
+
+\begin{remark}
+The folds in Theorem~\ref{thm:spectrum} belong to the projection of the
+one-variable incidence \eqref{eq:pencil}, not to the Keller map itself.  The latter has
+no critical points.  At a wall, the two colliding polynomial roots satisfy
+\(\gamma=-E'(W)=0\), so their reconstructed source points escape to infinity.
+\end{remark}
+
+\section*{Credit and provenance}
+
+The division of contributions used in this note is as follows.  Gallagher
+developed the all-degree weighted family and exhibited the first quartic
+empty-real-fiber example~\cite{Gallagher}; all-degree families also appear in
+the earlier base manuscript~\cite{Base}.  Migus classified the possible
+generic degrees of real Keller maps with non-dense Euclidean image
+~\cite{Migus}.  The new result here is the complete parity chamber spectrum,
+rational target witnesses, and a fold-adjacency chain for one explicit
+rational map in every degree.
+
+\section*{Verification and declaration of generative AI use}
+
+The exact arithmetic construction and audited sample witnesses can be
+checked with
+\begin{verbatim}
+.venv/bin/python scripts/verify_real_fiber_spectrum.py --show-witnesses
+\end{verbatim}
+The author used OpenAI's ChatGPT and Codex during proof organization,
+adversarial checking, and preparation of this manuscript.  The author
+reviewed the mathematical claims and assumes full responsibility for the
+contents.
+
+\begin{thebibliography}{9}
+
+\bibitem{Base}
+\emph{A counterexample to the Jacobian Conjecture},
+anonymous manuscript, 20 July 2026,
+\url{https://www.ulam.ai/research/jacobian.pdf}.
+
+\bibitem{Gallagher}
+A.~Gallagher,
+\emph{The Jacobian counterexample, explained},
+online note, updated 22 July 2026,
+\url{https://jacobianfun.org/jacobian-explained}.
+
+\bibitem{Migus}
+P.~Migus,
+\emph{Generic degrees of real polynomial Keller maps with non-dense image},
+arXiv:2607.21572 [math.AG], 2026,
+\url{https://arxiv.org/abs/2607.21572}.
+
+\end{thebibliography}
+
+\end{document}

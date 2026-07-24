@@ -272,6 +272,11 @@ The dual-number result is a classification only inside (1) and after the
 diagonal normalization (3).  The boundary decomposition is for the full
 unnormalized ansatz (1).  Neither statement classifies all Keller maps of
 degree profile `(7,6,4)`.
+In particular, this finite-support scheme is not the full bounded-degree
+scheme `X(3,d)`.  Jelonek's theorem, its immediate component corollary for
+the explicit maps, and the proposed full tangent/LR-normal calculation are
+recorded separately in
+[the coefficient-component note](JELONEK_COEFFICIENT_COMPONENTS.md).
 
 On the normalized chart (3), the further coordinates `s=-3u-v`, `t=-u` and
 the products `P=C^2A`, `Q=CB` turn the complete equation into three

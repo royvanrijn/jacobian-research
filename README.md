@@ -25,6 +25,18 @@ generic seeds of every degree `N>=5` are surjective.
 The [exact degree-spectrum corollary](verified/GEOMETRIC_DEGREE_SPECTRUM.md)
 shows that the geometric degrees of noninvertible Keller maps of
 `A^3_C -> A^3_C` are precisely `3,4,5,...`.
+Jelonek's bounded-degree closedness theorem gives a complementary
+[coefficient-space corollary](extended-geometry/JELONEK_COEFFICIENT_COMPONENTS.md):
+for every explicit `F_N`, every irreducible component of the full
+determinant-one coefficient scheme containing `F_N` is generically
+noninvertible and has dimension at least eight.  This is Jelonek's theorem
+applied to the family, not a new component theorem here.  The genuinely new
+next calculation is to linearize the full coefficient scheme at `F_N` and
+analyze its local components and obstructions.  The unrestricted
+infinitesimal left--right quotient is identically zero: every tangent is
+source-trivial over the dual numbers.  Connecting this local calculation to
+the `N-3` stable parameters therefore requires the filtered
+formal-to-algebraic contact problem, not an ordinary tangent quotient.
 
 For Gaussian moments, Long's explicit five-term polynomial settles GMC
 negatively in three real variables and, by adjoining unused coordinates, in
@@ -267,6 +279,11 @@ The [real-sheet spectrum theorem](verified/REAL_FIBER_SPECTRUM.md) sharpens
 this to the exact chamber spectrum `N,N-2,...,N mod 2`, proves the minimum is
 zero in even degree and one in odd degree, supplies rational targets for every
 count, and exhibits the full parity chain by successive fold crossings.
+The standalone
+[short paper](papers/exact-real-chamber-spectra/main.tex) presents this as a
+refinement of Migus's classification of the generic degrees of real Keller
+maps with non-dense Euclidean image, with explicit credit to Gallagher's
+all-degree weighted family and quartic empty-fiber example.
 
 The [standalone universal-monodromy theorem](verified/UNIVERSAL_SYMMETRIC_MONODROMY.md)
 proves geometric and arithmetic `S_N` monodromy for every polynomial pencil
@@ -291,6 +308,24 @@ goes in the complementary arithmetic direction: one explicit degree-eight
 complete regular fiber has points over `R` and every `Q_p` but no rational
 point.  Its integral target is `(12138,-308652,1)`, and the full fiber is the
 finite etale scheme cut out by an elementary intersective polynomial.
+The [minimal-degree sharpening](verified/MINIMAL_HASSE_PRINCIPLE_KELLER_FIBER.md)
+affinely tangent-normalizes the classical Berend--Bilu quintic
+`(X^3-19)(X^2+X+1)`.  It gives a degree-five Keller map with an everywhere
+locally soluble, nowhere-rational complete regular fiber.  Since no
+intersective polynomial without a rational root has degree below five, the
+minimal Hasse-failing geometric degree is exactly `d_HP=5`.  The surrounding
+[arithmetic Keller-fiber programme](ARITHMETIC_KELLER_FIBER_ENGINEERING.md)
+records the exact transfer criterion, the remaining normalization question,
+and the fixed-map infinite-family and Galois-engineering targets.
+The [intersective transfer theorem](verified/INTERSECTIVE_POLYNOMIAL_TRANSFER.md)
+now proves that every nontrivially intersective polynomial over a number
+field transfers after adjoining one irreducible quadratic factor, with
+degree overhead two.  It also proves that the minimal quintic pencil has a
+rank-one common-discriminant elliptic slice and exhibits two further
+Hasse-failing targets on the same weighted map.  Independently, the
+[fixed-map infinite theorem](verified/INFINITE_HASSE_KELLER_FIBERS.md)
+uses a root-engineered quadratic-tilt pencil to give one Keller map with
+infinitely many Hasse-failing rational fibers and an asymptotic target count.
 The [global Sunada construction](extended-geometry/GLOBAL_SUNADA_KELLER_COVERS.md)
 uses the point and line actions of `GL_3(F_2)` to give two nonisomorphic
 degree-seven inverse covers over one two-dimensional target, with identical
@@ -432,12 +467,16 @@ development:
 4. `LR1 -> LR2 -> LR3` constructs the separate 22-variable circuit source and
    its 44-variable, Hessian-rank-37 lift; `IV1 -> LR3` supplies the HN
    consequence framework used to interpret that lift.
+5. Independently, `DVG1` audits Dvorsky's homogenization of Long's
+   \(SU(2)\) seed, giving `not SIC(5)` and unrestricted `not GVC(5)`.
+   Its third-order operator does not lower the 40-variable ordinary-Laplacian
+   entry.
 
-Only the arrows in this list are dependencies or implications.  The numbers
-20, 40, 42, and 37 are repository-certified upper endpoints, not additional
-logical steps or literature-wide records; the named multiplier, exact
-artifacts, and inverse recurrence are witness-level contributions without a
-priority claim.
+Only the arrows in this list are dependencies or implications.  The certified
+upper endpoints are now SIC 5, unrestricted GVC 5, ordinary-Laplacian GVC 40,
+homogeneous quartic HN-VC 42, and HN Hessian rank 37.  They are not additional
+logical steps, proofs of minimality, or literature-wide records; named
+multipliers, exact artifacts, and inverse recurrences are witness-level data.
 
 The exact scopes, dependencies, checkers, proof types, and assurance states
 live only in [`MATH_STATUS.json`](MATH_STATUS.json). [STATUS.md](STATUS.md) is

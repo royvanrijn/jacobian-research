@@ -11,13 +11,14 @@ three-dimensional counterexample construction.
 | [PROVENANCE.md](PROVENANCE.md) | Exact Zenodo/arXiv versions, files, licenses, and hashes |
 | [DEGREE_FRONTIER_125.md](DEGREE_FRONTIER_125.md) | Theorem scope, reduction chain, and historical frontier |
 | [FINITE_NORMALIZATION_PROGRAM.md](FINITE_NORMALIZATION_PROGRAM.md) | Unconditional surface finite-flatness theorem; canonical branch/missing-boundary cover; arbitrary-puncture rigidity, bounded Pareto signature atlas, residual-different identity, and log-surface programme |
+| [JC2_FINITE_NORMALIZATION_FRONTIER.md](JC2_FINITE_NORMALIZATION_FRONTIER.md) | Audit of the four finite-normalization targets; cubic cusp countermodel to automatic residue immersion; corrected degree-three conductor/class-group frontier |
 | [PAIR_72_108_REPRODUCTION.md](PAIR_72_108_REPRODUCTION.md) | Newton-to-coefficient reconstruction, exact ideals, certificates, and division audit |
 | [WEIGHTED_WRONSKIAN_FIRST_BLOCK.md](WEIGHTED_WRONSKIAN_FIRST_BLOCK.md) | Hyperelliptic/de Rham interpretation and residual-scaling quotient of the audited first block |
 | [SUPERELLIPTIC_DERHAM_ENGINE.md](SUPERELLIPTIC_DERHAM_ENGINE.md) | Reusable character-wise Hermite reduction, exact implementation, and frontier experiment design |
 | [NEWTON_BOUNDARY_DICTIONARY.md](NEWTON_BOUNDARY_DICTIONARY.md) | Qualified comparison with boundary/valuation language |
 | [BOUNDARY_LATTICE_PREFILTER.md](BOUNDARY_LATTICE_PREFILTER.md) | Chart-aware localization/SNF gate and exact checker for complete proposed boundaries |
 | [INTRINSIC_A2_BOUNDARY_GATE.md](INTRINSIC_A2_BOUNDARY_GATE.md) | Adjunction/Noether reconstruction, pole-vector ramification gate, and intrinsic dicritical depth obstruction |
-| [PLANE_BOUNDARY_EXCLUSION.md](PLANE_BOUNDARY_EXCLUSION.md) | Residue immersion, Riemann--Hurwitz, and the finite-flat conductor-packet inequality exclude the one- and two-puncture sheet-deficient branches and isolate the target-transfer data needed for a global boundary-leaf reduction |
+| [PLANE_BOUNDARY_EXCLUSION.md](PLANE_BOUNDARY_EXCLUSION.md) | Conditional smooth-target residue calculation and finite-flat conductor-packet inequality; the former residue-immersion claim for singular target curves is corrected by the cubic cusp audit |
 | [LOG_BOUNDARY_COMPILER.md](LOG_BOUNDARY_COMPILER.md) | Certified branch scales to regular toroidal proximity graphs, complete boundary matrices, differents, and conductors |
 | [FRONTIER_LOG_SCALE_AUDIT.md](FRONTIER_LOG_SCALE_AUDIT.md) | Fixed-completion replay of the `(72,108)` rays, the Wronskian-forced `E3∩E4` cluster, all five plane-return root-partition fans, the two 23-component terminal packages, their corrected `X^2` ramification, and the finite residue-cover split |
 | [FRONTIER_CLOSING_ATTACKS.md](FRONTIER_CLOSING_ATTACKS.md) | Map-decorated boundary package, completed Case-2 composition sieve, and finite harmonic-cover, Pluecker, and log-Chern closure attacks |

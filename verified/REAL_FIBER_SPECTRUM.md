@@ -1,6 +1,17 @@
-# Exact real-sheet spectrum of the weighted pencils
+# Exact real chamber spectra of explicit Keller maps
 
 This note strengthens the [all-degree rational-fiber theorem](ALL_DEGREE_RATIONAL_FIBERS.md).
+In the terminology of
+[Migus's generic-degree classification](https://arxiv.org/abs/2607.21572),
+it refines the realization side inside the explicit weighted family:
+Migus proves that non-dense real Keller images have even generic degree at
+least four and that every such degree occurs, while the result below
+determines the complete parity chamber spectrum, rational witnesses, and a
+fold-adjacency chain for one explicit map in every degree.  The all-degree
+weighted family and the first quartic empty-real-fiber example are due to
+[Gallagher](https://jacobianfun.org/jacobian-explained); all-degree families
+also occur in the earlier base manuscript.
+
 The input is elementary real univariate geometry: once one member of a
 degree-`N` pencil has `N` simple real roots, a generic parallel pencil line
 loses those roots two at a time.

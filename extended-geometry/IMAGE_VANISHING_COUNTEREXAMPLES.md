@@ -28,10 +28,13 @@ Three different assertions must not be conflated.
    respectively.  These are consequences of the same noninvertible Keller
    map; they are not logically independent disproofs of the Jacobian
    Conjecture.
-2. **Quantitative status.**  Dimensions \(20,40,42\) are the smallest
-   witnesses currently certified in this repository for the three displayed
-   forms.  They improve the repository's earlier \(95\)-pair/\(190\)-variable
-   stable-normal-form constructions in
+2. **Quantitative status.**  Dimensions \(20,40,42\) are the witness sizes
+   produced by this collision-derived route.  The independent Dvorsky--Long
+   formulas subsequently lowered the certified SIC pair dimension to five
+   and gave unrestricted GVC failure in five variables; their third-order
+   operator does not lower this route's 40-variable ordinary-Laplacian
+   witness.  The present construction improves the repository's earlier
+   \(95\)-pair/\(190\)-variable stable-normal-form constructions in
    [STABLE_NORMAL_FORM_AUDIT.md](STABLE_NORMAL_FORM_AUDIT.md).  No claim is
    made that they are literature-wide minima or records.  The proved lower
    bounds and repository upper bounds are kept separately in
@@ -519,6 +522,10 @@ further linear identity-output functional to restrict.  The homogeneous
 21-variable module audit likewise excludes another collision-preserving
 linear quotient.  Nonlinear reductions and dimension minimality remain open;
 no minimality is claimed for 20, 40, or 42.
+
+The separate five-pair SIC and five-variable unrestricted GVC witness is
+proved and credited in
+[`DVORSKY_GVC5_COUNTEREXAMPLE.md`](DVORSKY_GVC5_COUNTEREXAMPLE.md).
 
 Primary credit for the Image and Vanishing frameworks and equivalences
 remains with Zhao and the cited reduction literature.  The

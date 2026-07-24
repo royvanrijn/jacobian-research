@@ -1,5 +1,5 @@
 {
-  "format": "minimal-counterexample-scoreboard-v1",
+  "format": "minimal-counterexample-scoreboard-v2",
   "field": "complex coefficients / characteristic zero as appropriate",
   "ambient_dimension_frontiers": {
     "general_Keller_noninvertibility": {
@@ -36,11 +36,19 @@
     },
     "SIC_failure_pair_dimension": {
       "lower_bound": 2,
-      "upper_bound": 20,
+      "upper_bound": 5,
       "exact_value": null,
       "status": "open interval",
       "lower_bound_reason": "the one-pair Image Conjecture is proved",
-      "upper_bound_reason": "the identity-output slice gives an explicit SIC(20) counterexample"
+      "upper_bound_reason": "Dvorsky's homogenized Long seed gives an explicit SIC(5) counterexample"
+    },
+    "unrestricted_constant_coefficient_GVC_failure_dimension": {
+      "lower_bound": 2,
+      "upper_bound": 5,
+      "exact_value": null,
+      "status": "open interval",
+      "lower_bound_reason": "GVC(1) is proved",
+      "upper_bound_reason": "Dvorsky's third-order constant-coefficient operator gives an explicit GVC(5) counterexample"
     },
     "ordinary_Laplacian_GVC_failure_dimension": {
       "lower_bound": 2,
@@ -126,9 +134,14 @@
       "artifact": "essential_bcw_21_counterexample.json"
     },
     "SIC": {
-      "pair_dimension": 20,
-      "polynomial_ring_variable_count": 40,
-      "artifact": "image_vanishing_counterexamples_20_40.json"
+      "pair_dimension": 5,
+      "polynomial_ring_variable_count": 10,
+      "artifact": "dvorsky_gvc5_counterexample.json"
+    },
+    "unrestricted_constant_coefficient_GVC": {
+      "dimension": 5,
+      "operator_order": 3,
+      "artifact": "dvorsky_gvc5_counterexample.json"
     },
     "ordinary_Laplacian_GVC": {
       "dimension": 40,
