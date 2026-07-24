@@ -20,17 +20,20 @@ jobs:
       - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
         with:
           persist-credentials: false
-      - name: Install Lean and prime the Mathlib cache
+      - name: Install Lean, prime Mathlib, and attempt the first build
+        id: lean_action
+        continue-on-error: true
         uses: leanprover/lean-action@38fbc41a8c28c4cbaec22d7f7de508ec2e7c0dd9 # v1
         with:
           lake-package-directory: formal/finite-etale-keller
           auto-config: false
-          build: false
+          build: true
           test: false
           lint: false
           use-mathlib-cache: true
-      - name: Compile the finite-etale Keller certificate
+      - name: Compile the finite-etale Keller certificate with captured output
         id: lean_build
+        if: ${{ always() }}
         continue-on-error: true
         shell: bash
         run: |
