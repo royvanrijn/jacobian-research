@@ -1,3 +1,8 @@
+/-
+Copyright (c) 2026 Roy van Rijn. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Roy van Rijn
+-/
 import Mathlib.RingTheory.AdjoinRoot
 
 /-!
