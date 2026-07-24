@@ -5,17 +5,20 @@ counterexamples.  Some immediate applications are:
 \begin{enumerate}
 \item Every squarefree polynomial of degree at least three is, after one
       translation of its variable, the exact inverse polynomial of a full
-      Keller fiber.
+      Jacobian-one Keller fiber.
+\item A degree-$N$ input has an explicit realization in $\A^3$ of coordinate
+      degree at most $6N+2$.
 \item Every intersective polynomial of degree at least three transfers to a
       Hasse-failing Keller fiber without stabilization or auxiliary factors.
 \item Any real signature, splitting field, or collection of local
       factorization patterns already carried by a finite \'etale algebra is
-      carried by the corresponding Keller fiber.
+      carried by the corresponding Keller fiber, compatibly with extension of
+      the ground field.
 \item Connected fibers require no additional geometric argument: start with
       an irreducible polynomial.
 \end{enumerate}
 
-The third item is deliberately a transfer statement.  It does not solve an
+The fourth item is deliberately a transfer statement.  It does not solve an
 inverse Galois problem or assert that arbitrary independently prescribed
 local algebras globalize; it says that every arithmetic realization which
 already exists is preserved exactly by the Keller construction.
@@ -48,16 +51,31 @@ Lipton and Markakis study rational images and Hilbert irreducibility
 thinness phenomena \cite{Shaska}.  None of these sources states the
 finite-\'etale realization theorem proved here.
 
-\paragraph{Verification.}
+\paragraph{Exact verification.}
 The companion checker
 \[
  \texttt{scripts/verify\_finite\_etale\_keller\_fibers.py}
 \]
 verifies the source-chart and marked-line identities, two-sided
-scheme-theoretic reconstruction in quotient rings, the exact scaling of the
-explicit degree-five map, its determinant, the inverse polynomial identities,
-and the fixed-map infinite family.  The universal proof is the calculation in
-Proposition~\ref{prop:gauge}, not a bounded computer search.
+scheme-theoretic reconstruction in quotient rings, the fixed Jacobian-one
+normalization, the effective coordinate-degree bound on independent translated
+examples, the exact scaling of the explicit degree-five map, its determinant,
+the inverse-polynomial identities, and the fixed-map infinite family.  The
+universal proof is the calculation in Proposition~\ref{prop:gauge} and
+Corollary~\ref{cor:effective-gauge}, not a bounded computer search.
+
+\paragraph{Lean formalization.}
+The repository contains a staged, axiom-free Lean project at
+\[
+ \texttt{formal/finite-etale-keller}.
+\]
+Its first stage certifies the explicit quintic Jacobian determinant, both
+output normalizations, the inverse-polynomial identity, and a constructive
+B\'ezout inverse for the derivative class in the quotient algebra.  The next
+formal stages are the universal marked-line identities, the two-sided
+coordinate-ring reconstruction, and the translated polynomial-realization
+theorem.  The historical degree-two Galois case is kept separate from the new
+constructive core until that classical input is itself formalized.
 
 \paragraph{Provenance.}
 The recent three-dimensional counterexample was publicly attributed to
@@ -73,9 +91,9 @@ argument needed for an arbitrary characteristic-zero ground field.
 
 \paragraph{AI assistance.}
 Generative AI tools were used for symbolic experimentation, exact checker
-development, adversarial proof review, literature search, and manuscript
-preparation.  The author reviewed the mathematical claims and assumes full
-responsibility for the contents.
+development, adversarial proof review, literature search, formalization, and
+manuscript preparation.  The author reviewed the mathematical claims and
+assumes full responsibility for the contents.
 
 \begin{thebibliography}{11}
 \small
