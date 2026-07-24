@@ -28,7 +28,8 @@ theorem p5_expanded :
     p5 = Polynomial.X ^ 5 + Polynomial.X ^ 4 + Polynomial.X ^ 3
       - Polynomial.C 19 * Polynomial.X ^ 2
       - Polynomial.C 19 * Polynomial.X - Polynomial.C 19 := by
-  native_decide
+  unfold p5
+  ring
 
 /-- The rooted quadratic-gauge seed. -/
 def g5 : Polynomial ℚ :=
@@ -38,7 +39,8 @@ def g5 : Polynomial ℚ :=
 
 /-- At normalized target `C = -2`, the inverse polynomial is exactly `p5`. -/
 theorem inversePolynomial_eq_p5 : g5 - Polynomial.C 19 = p5 := by
-  native_decide
+  rw [p5_expanded]
+  unfold g5
 
 /-- Explicit derivative of the quintic. -/
 theorem p5_derivative :
@@ -48,7 +50,9 @@ theorem p5_derivative :
         + Polynomial.C 3 * Polynomial.X ^ 2
         - Polynomial.C 38 * Polynomial.X
         - Polynomial.C 19 := by
-  native_decide
+  rw [p5_expanded]
+  simp [Polynomial.derivative_X_pow, Polynomial.derivative_C_mul]
+  ring_nf
 
 /-- First coefficient in an explicit Bézout identity for `p5` and `p5'`. -/
 def bezoutU : Polynomial ℚ :=
@@ -67,7 +71,9 @@ def bezoutV : Polynomial ℚ :=
 
 /-- Constructive squarefreeness certificate for the quintic. -/
 theorem p5_bezout : bezoutU * p5 + bezoutV * p5.derivative = 1 := by
-  native_decide
+  rw [p5_derivative, p5_expanded]
+  unfold bezoutU bezoutV
+  ring
 
 /-- The class of `p5'` has the displayed inverse in `ℚ[X]/(p5)`. -/
 theorem p5_derivative_inverse :
