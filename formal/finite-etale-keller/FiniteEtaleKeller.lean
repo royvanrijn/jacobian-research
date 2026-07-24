@@ -1,4 +1,5 @@
 import FiniteEtaleKeller.Bezout
 import FiniteEtaleKeller.MarkedLine
 import FiniteEtaleKeller.Reconstruction
+import FiniteEtaleKeller.Translation
 import FiniteEtaleKeller.ExplicitQuintic
