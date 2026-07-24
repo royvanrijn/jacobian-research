@@ -18,8 +18,9 @@ draft.
 
 The four focused audits accompanying the active draft are:
 
-1. the exact arbitrary-characteristic-zero-field scope of the
-   Bass--Connell--Wright Galois theorem;
+1. the exact arbitrary-characteristic-zero-field scope of the degree-two
+   Galois exclusion, with Campbell--Razar--Wright provenance and an explicit
+   descent proof;
 2. two-sided coordinate-ring reconstruction using a Bézout inverse of `E'`;
 3. the scaling identity `F_displayed = diag(1,19,19) F_normalized` for the
    optimal quintic example;
