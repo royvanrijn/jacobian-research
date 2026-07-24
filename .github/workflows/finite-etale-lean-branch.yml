@@ -36,6 +36,7 @@ jobs:
             FiniteEtaleKeller.ExplicitPolynomial
             FiniteEtaleKeller.MarkedLine
             FiniteEtaleKeller.Reconstruction
+            FiniteEtaleKeller.QuotientReconstruction
             FiniteEtaleKeller.Translation
           test: false
           lint: false
@@ -59,6 +60,7 @@ jobs:
               FiniteEtaleKeller.ExplicitPolynomial \
               FiniteEtaleKeller.MarkedLine \
               FiniteEtaleKeller.Reconstruction \
+              FiniteEtaleKeller.QuotientReconstruction \
               FiniteEtaleKeller.Translation \
               2>&1 | tee ../../artifacts/verification/finite-etale-lean.log
           fi
