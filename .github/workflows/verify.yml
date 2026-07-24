@@ -50,6 +50,9 @@ jobs:
         run: |
           set -o pipefail
           make PYTHON=python SYSTEM_PYTHON=python check verify-${{ matrix.suite }} 2>&1 | tee artifacts/verification/verify-${{ matrix.suite }}.log
+      - name: Audit finite-etale Keller fibers
+        if: ${{ matrix.suite == 'theorems' }}
+        run: python scripts/verify_finite_etale_keller_fibers.py
       - name: Archive verification logs
         if: always()
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
