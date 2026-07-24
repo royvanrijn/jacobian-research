@@ -4,13 +4,39 @@ For a number field $K$, call a Keller fiber $A$ a \emph{Hasse failure} if
 $\Spec A$ has a point over every completion of $K$ but no $K$-rational
 point.
 
-Berend and Bilu proved that the polynomial
+We first isolate the elementary lower bound.
+
+\begin{lemma}[Degree-four barrier]\label{lem:degree-four-barrier}
+A nonempty finite \'etale $\Q$-scheme of degree at most four which has a
+point over every $\Q_p$ has a rational point.
+\end{lemma}
+
+\begin{proof}
+Let $X$ be such a scheme and let $L$ split it.  For every unramified prime,
+$X(\Q_p)\neq\varnothing$ exactly when the Frobenius element fixes a point of
+the finite $\Gal(L/\Q)$-set $X(L)$.
+
+If $X$ is connected of degree greater than one, this action is transitive and
+contains a derangement.  Indeed, Burnside's lemma says that the average
+number of fixed points is one, while the identity fixes more than one point;
+hence some element fixes none.  Chebotarev supplies an unramified prime with
+that Frobenius class, contradicting local solubility.
+
+It remains to consider disconnected schemes without a rational component.
+In total degree at most four the only possibility is the disjoint union of
+two quadratic fields.  If they coincide, any inert prime works.  If they are
+distinct, their compositum has Galois group $C_2\times C_2$ and contains an
+element nontrivial in both quadratic quotients.  Chebotarev again supplies a
+prime inert in both components.  Thus an everywhere locally soluble scheme
+of degree at most four must contain $\Spec\Q$.
+\end{proof}
+
+Berend and Bilu's classical example is
 \begin{equation}
- P_5(T)=(T^3-19)(T^2+T+1)
+ P_5(T)=(T^3-19)(T^2+T+1).
  \label{eq:BB}
 \end{equation}
-is intersective and that degree five is minimal for a squarefree polynomial
-with a root in every completion of $\Q$ but no rational root
+They use it in their study of polynomials with roots modulo every integer
 \cite{BerendBilu}.
 
 \begin{theorem}[Optimal Hasse-failing Keller fiber]\label{thm:hasse}
@@ -42,9 +68,8 @@ cubic factor has a real root.  Thus \eqref{eq:BB} has a root over every
 completion of $\Q$.
 
 The explicit map is given below.  Its fiber over the stated target is exactly
-$\Spec\Q[T]/(P_5)$, so it has the same local and global points.  Berend and
-Bilu's lower bound for intersective polynomials applies to every finite
-\'etale fiber and proves minimality.
+$\Spec\Q[T]/(P_5)$, so it has the same local and global points.
+Lemma~\ref{lem:degree-four-barrier} proves minimality.
 \end{proof}
 
 Here is a denominator-free form of the map in Theorem~\ref{thm:hasse}.  Put
