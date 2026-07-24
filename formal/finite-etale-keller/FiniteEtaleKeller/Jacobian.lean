@@ -31,7 +31,7 @@ def evalMap [CommSemiring R] (F : σ → MvPolynomial σ R) (p : σ → R) : σ 
   fun i => eval p (F i)
 
 /-- Scale the three output coordinates of a polynomial map. -/
-def scaleOutput (a b c : R) [CommSemiring R]
+def scaleOutput [CommSemiring R] (a b c : R)
     (F : Fin 3 → MvPolynomial (Fin 3) R) :
     Fin 3 → MvPolynomial (Fin 3) R :=
   ![C a * F 0, C b * F 1, C c * F 2]
@@ -42,7 +42,7 @@ theorem jacobianDet_scaleOutput [CommRing R] (a b c : R)
     jacobianDet (scaleOutput a b c F) = C (a * b * c) * jacobianDet F := by
   simp only [jacobianDet, jacobianMatrix, scaleOutput, det_fin_three, of_apply,
     cons_val_zero, cons_val_one, cons_val_two, head_cons, tail_cons, pderiv_mul,
-    pderiv_C, zero_mul, add_zero]
+    pderiv_C, zero_mul, zero_add, add_zero, map_mul]
   ring
 
 end FiniteEtaleKeller
