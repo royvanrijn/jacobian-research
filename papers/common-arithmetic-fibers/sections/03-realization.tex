@@ -32,10 +32,35 @@ Consequently $K[\theta]=A$, and its minimal polynomial is the required
 squarefree polynomial $P$.
 \end{proof}
 
+\begin{proposition}[Compatibility with extension of scalars]
+\label{prop:base-change}
+Let $K\hookrightarrow K'$ be an extension of characteristic-zero fields.
+For a squarefree $P\in K[T]$ and an admissible translation parameter $a\in K$,
+the map $\widetilde F_G$ of Theorem~\ref{thm:main}, after coefficientwise
+extension to $K'$, is exactly the map obtained by applying the same construction
+to $P$ over $K'$.  Its distinguished fiber satisfies
+\[
+ \widetilde F_{G,K'}^{-1}(\widetilde y_{P,a})
+ \simeq
+ \Spec\bigl((K[T]/(P))\otimes_KK'\bigr)
+ \simeq
+ \Spec K'[T]/(P).
+\]
+\end{proposition}
+
+\begin{proof}
+The formulas \eqref{eq:tq}--\eqref{eq:gauge-map}, the linear normalization
+$L$, and the target \eqref{eq:main-target} use only field operations on the
+coefficients of $P$ and the chosen element $a$.  They therefore commute with
+coefficientwise scalar extension.  The displayed fiber identity is the usual
+base-change isomorphism for a polynomial quotient, and
+Proposition~\ref{prop:gauge} identifies it with the full scheme fiber.
+\end{proof}
+
 \begin{corollary}[Number fields as connected Keller fibers]\label{cor:fields}
 Every finite separable field extension $L/K$ of degree at least three occurs
-as a connected full fiber of an explicit Keller map
-$\A^3_K\to\A^3_K$ with determinant $-2$.
+as a connected full fiber of an explicit Jacobian-one polynomial map
+$\A^3_K\to\A^3_K$ of coordinate degree at most $6[L:K]+2$.
 \end{corollary}
 
 \begin{proof}
@@ -56,5 +81,6 @@ algebra $A$ itself.  In particular it preserves:
 \item the existence or nonexistence of rational and local points.
 \end{itemize}
 Thus any arithmetic construction of a finite \'etale algebra of rank at
-least three transfers verbatim to a Keller fiber.
+least three transfers verbatim to a Keller fiber.  Proposition~\ref{prop:base-change}
+makes the assertions about local algebras and splitting data functorial.
 \end{corollary}
