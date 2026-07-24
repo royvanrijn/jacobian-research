@@ -39,18 +39,24 @@ polynomial \eqref{eq:inverse} is
  G(S)-\frac{g_1}{2}\left(-\frac{2P(a)}{g_1}\right)=P(a+S).
 \]
 Translation identifies $K[S]/(P(a+S))$ with $K[T]/(P(T))$.
-Proposition~\ref{prop:gauge} now gives the displayed complete fiber,
-constant Jacobian, and geometric degree.
+Proposition~\ref{prop:gauge} now gives the displayed full fiber, constant
+Jacobian, and geometric degree.
 
-For the assertion about all finite \'etale algebras, apply
-Lemma~\ref{lem:monogenic}; rank one and rank two were handled after the
-statement of the theorem.
+For an arbitrary finite \'etale algebra of rank at least three, apply
+Lemma~\ref{lem:monogenic}.  The rank-one and rank-two cases were handled
+after the statement of the theorem.
 \end{proof}
+
+\begin{corollary}[Number fields as connected Keller fibers]\label{cor:fields}
+Every finite separable field extension $L/K$ of degree at least three occurs
+as a connected full fiber of an explicit Keller map
+$\A^3_K\to\A^3_K$ with determinant $-2$.
+\end{corollary}
 
 \begin{corollary}[Arithmetic data are preserved]\label{cor:transfer}
 Let $A$ be a finite \'etale algebra of rank at least three over a number
 field.  The realization supplied by Theorem~\ref{thm:main} preserves the
-algebra $A$ itself.  In particular it preserves, without translation:
+algebra $A$ itself.  In particular it preserves:
 \begin{itemize}
 \item connectedness and field decomposition;
 \item real signature;
