@@ -89,7 +89,14 @@ theorem unitReconstruction_identities
     rw [← mul_pow]
     simp
   constructor
-  · linear_combination -hunit
+  · calc
+      1 + S * (↑d⁻¹ : R) * (Q - pi * S)
+          = (↑d⁻¹ : R) * (d : R)
+              + (↑d⁻¹ : R) * (S * Q - pi * S ^ 2) := by
+                rw [hunit]
+                ring
+      _ = (↑d⁻¹ : R) * ((d : R) + S * Q - pi * S ^ 2) := by ring
+      _ = (↑d⁻¹ : R) := by rw [hsum, mul_one]
   constructor
   · calc
       (↑d⁻¹ : R) ^ 2
