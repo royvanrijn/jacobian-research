@@ -34,6 +34,11 @@ jobs:
         with:
           python-version-file: .python-version
           cache: pip
+      - name: Install system CAS dependencies
+        if: ${{ matrix.suite == 'theorems' || matrix.suite == 'regressions' }}
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes --no-install-recommends singular
       - name: Install pinned dependencies
         run: python -m pip install --requirement requirements.txt
       - name: Record environment
@@ -108,7 +113,7 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install --yes --no-install-recommends \
-            latexmk texlive-fonts-recommended texlive-latex-extra
+            cm-super latexmk texlive-fonts-recommended texlive-latex-extra
       - name: Build finalized and active papers
         shell: bash
         run: |
