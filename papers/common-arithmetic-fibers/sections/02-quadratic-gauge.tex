@@ -1,0 +1,119 @@
+\section{The universal quadratic gauge}\label{sec:gauge}
+
+Let
+\begin{equation}
+ G(S)=g_1S+g_2S^2+\cdots+g_NS^N\in K[S],
+ \qquad g_1g_3g_N\neq0.
+ \label{eq:seed}
+\end{equation}
+In source coordinates $(x,y,z)$ put
+\begin{equation}
+ t=1+xy,
+ \qquad
+ q=t^2z+\frac{g_1}{g_3}y^2(1+3t).
+ \label{eq:tq}
+\end{equation}
+Define $F_G=(\Pi,B,C):\A^3_K\to\A^3_K$ by
+\begin{align}
+ \Pi={}&tq,\notag\\
+ B={}&y+3\frac{g_3}{g_1}xq+2\frac{g_2}{g_1}tq
+       +\sum_{k=4}^N k\frac{g_k}{g_1}t^2x^{k-2}q^k,\notag\\
+ C={}&x(5-3t)-\frac{g_3}{g_1}x^3z
+       -\sum_{k=4}^N(k-2)\frac{g_k}{g_1}(xq)^k.
+ \label{eq:gauge-map}
+\end{align}
+The formula is polynomial and uses only the coefficients of $G$.
+
+For a target $(\Pi,B,C)$ define
+\begin{equation}
+ G_\Pi(S)=g_1S+\Pi(g_2S^2+g_3S^3)
+          +\sum_{k=4}^Ng_k\Pi^kS^k
+ \label{eq:Gpi}
+\end{equation}
+and
+\begin{equation}
+ E_{\Pi,B,C}(S)=G_\Pi(S)-\frac{g_1}{2}(BS^2+C).
+ \label{eq:inverse}
+\end{equation}
+
+\begin{proposition}[Quadratic-gauge fiber theorem]\label{prop:gauge}
+The map $F_G$ satisfies
+\[
+ \det DF_G=-2.
+\]
+Its generic inverse equation is $E_{\Pi,B,C}(S)=0$.  On the chart
+$\Pi\neq0$, every simple root reconstructs one and only one source point.
+If $E_{\Pi,B,C}$ is squarefree of degree $N$, then scheme-theoretically
+\[
+ F_G^{-1}(\Pi,B,C)\simeq\Spec K[S]/(E_{\Pi,B,C}),
+\]
+so the fiber is a Keller fiber of rank $N$.
+\end{proposition}
+
+\begin{proof}
+On $t\neq0$ introduce
+\[
+ S=\frac{x}{t},
+ \qquad Q=y+xq,
+ \qquad D=1-SQ+\Pi S^2=t^{-1}.
+\]
+A direct differentiation gives
+\begin{equation}
+ \det\frac{\partial(\Pi,S,Q)}{\partial(x,y,z)}=D^{-1}.
+ \label{eq:source-chart-jacobian}
+\end{equation}
+Now set
+\begin{equation}
+ \beta(\Pi,S)
+ =\frac{G_\Pi'(S)/g_1-1-\Pi S^2}{S}.
+ \label{eq:beta}
+\end{equation}
+The numerator is divisible by $S$.  Substitution in
+\eqref{eq:gauge-map} gives the two simple identities
+\begin{equation}
+ B=Q+\beta(\Pi,S),
+ \qquad
+ C=\frac{2G_\Pi(S)}{g_1}-BS^2.
+ \label{eq:marked-line-identities}
+\end{equation}
+The second identity is exactly $E_{\Pi,B,C}(S)=0$, while the first gives
+\begin{equation}
+ D=\frac{G_\Pi'(S)}{g_1}-BS.
+ \label{eq:D-derivative}
+\end{equation}
+At fixed $\Pi$, differentiate \eqref{eq:marked-line-identities} with respect
+to $(S,Q)$.  The terms containing $\partial_S\beta$ cancel, leaving
+\begin{equation}
+ \det\frac{\partial(B,C)}{\partial(S,Q)}=-2D.
+ \label{eq:plane-jacobian}
+\end{equation}
+Combining \eqref{eq:source-chart-jacobian} and
+\eqref{eq:plane-jacobian} proves
+\[
+ \det\frac{\partial(\Pi,B,C)}{\partial(x,y,z)}=-2
+\]
+on the dense chart $t\neq0$, hence polynomially everywhere.
+
+Conversely, let $S$ be a root of \eqref{eq:inverse}.  Equations
+\eqref{eq:beta} and \eqref{eq:D-derivative} recover
+\[
+ Q=B-\beta(\Pi,S),
+ \qquad
+ D=\frac{E_{\Pi,B,C}'(S)}{g_1}.
+\]
+For a simple root, $D\neq0$, and the source point is uniquely recovered by
+\[
+ t=D^{-1},\qquad x=\frac{S}{D},\qquad
+ y=Q-\Pi S,
+\]
+\[
+ q=\Pi D,
+ \qquad
+ z=\frac{q-(g_1/g_3)y^2(1+3t)}{t^2}.
+\]
+If $E_{\Pi,B,C}$ is squarefree, its derivative is a unit in
+$K[S]/(E_{\Pi,B,C})$.  The same formulas therefore define an inverse on
+coordinate rings, proving the asserted scheme isomorphism rather than only a
+bijection of geometric points.  Generically \eqref{eq:inverse} has degree
+$N$ and is separable, so the reconstruction also gives $\gdeg(F_G)=N$.
+\end{proof}
