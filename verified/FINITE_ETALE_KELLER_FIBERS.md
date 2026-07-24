@@ -25,15 +25,14 @@ The possible ranks of nonzero Keller fibers over a characteristic-zero field
 are exactly
 
 \[
-oxed{1,3,4,5,\ldots}.
+\boxed{1,3,4,5,\ldots}.
 \]
 
 More precisely, let \(P\in K[T]\) be squarefree of degree \(N\ge3\). Choose
 \(a\in K\) with
 
 \[
-P'(a)P'''(a)
-e0
+P'(a)P'''(a)\ne0
 \]
 
 and put
@@ -52,8 +51,8 @@ F_G:\mathbb A^3_K\longrightarrow\mathbb A^3_K,\qquad
 with full fiber
 
 \[
-oxed{
-F_G^{-1}\left(1,0,-rac{2P(a)}{P'(a)}ight)\simeq
+\boxed{
+F_G^{-1}\left(1,0,-\frac{2P(a)}{P'(a)}\right)\simeq
 \operatorname{Spec}K[T]/(P).
 }
 \]
@@ -61,41 +60,55 @@ F_G^{-1}\left(1,0,-rac{2P(a)}{P'(a)}ight)\simeq
 Every finite étale algebra over an infinite field is monogenic, so this
 realizes every finite étale \(K\)-algebra of rank at least three.
 
-Rank one is realized by the identity. Rank two is impossible by the exact
-Galois case below.
+Rank one is realized by the identity. Rank two is impossible by the Galois
+case below.
 
 ## 3. Exact generality of the degree-two exclusion
 
-Let \(F:\mathbb A^m_K	o\mathbb A^m_K\) be Keller with geometric degree two.
+Let \(F:\mathbb A^m_K\to\mathbb A^m_K\) be Keller with geometric degree two.
 Then
 
 \[
 K(x_1,\ldots,x_m)/K(F_1,\ldots,F_m)
 \]
 
-is a separable quadratic extension and hence Galois. Bass--Connell--Wright,
-Chapter I, Theorem 2.1, states the Galois implication over an arbitrary ground
-field: in characteristic zero, a polynomial map with invertible Jacobian and
-Galois function-field extension is a polynomial automorphism. Thus no
-algebraic-closedness assumption is required.
+is a separable quadratic extension and hence Galois. Campbell proved the
+complex Galois case; Razar and independently Wright gave subsequent algebraic
+treatments.
 
-Reference:
+The exact arbitrary-\(K\) statement follows without assuming a field-general
+formulation in any one source. Descend the coefficients of \(F\) to a finitely
+generated subfield \(K_0\subset K\). Generic degree is invariant under scalar
+extension for a dominant generically finite map between geometrically
+integral affine spaces. Embed \(K_0\) into \(\mathbb C\); the complexified map
+still has geometric degree two, hence Galois function-field extension, and is
+therefore a polynomial automorphism by Campbell.
 
-- H. Bass, E. Connell, D. Wright,
-  [*The Jacobian conjecture: reduction of degree and formal expansion of the inverse*](https://doi.org/10.1090/S0273-0979-1982-15032-7),
-  Bull. Amer. Math. Soc. (N.S.) 7 (1982), 287--330.
+The formal inverse at \(F(0)\) is unique and is obtained recursively using
+only the coefficients of \(F\) and the inverse of its linear Jacobian. Its
+coefficients therefore lie in \(K_0\). The complex polynomial inverse agrees
+with this formal inverse, so it descends to \(K_0\), and hence to \(K\).
+Thus no algebraic-closedness assumption is required.
 
-Campbell proved the complex case; Razar and Wright gave later algebraic
-accounts.
+References:
+
+- L. A. Campbell,
+  [*A condition for a polynomial map to be invertible*](https://doi.org/10.1007/BF01349234),
+  Math. Ann. 205 (1973), 243--248.
+- M. Razar,
+  [*Polynomial maps with constant Jacobian*](https://doi.org/10.1007/BF02764906),
+  Israel J. Math. 32 (1979), 97--106.
+- D. Wright,
+  [*On the Jacobian conjecture*](https://doi.org/10.1215/ijm/1256047158),
+  Illinois J. Math. 25 (1981), 423--440.
 
 ## 4. Scheme-theoretic reconstruction
 
-For a quadratic-gauge target \((\pi,b,c)\) with \(\pi
-e0\), write
+For a quadratic-gauge target \((\pi,b,c)\) with \(\pi\ne0\), write
 
 \[
-E(S)=G_\pi(S)-rac{g_1}{2}(bS^2+c),\qquad
-R=K[S]/(E),\qquad s=Smod E.
+E(S)=G_\pi(S)-\frac{g_1}{2}(bS^2+c),\qquad
+R=K[S]/(E),\qquad s=S\bmod E.
 \]
 
 If \(E\) is squarefree, Bézout gives \(U,V\in K[S]\) with
@@ -107,19 +120,19 @@ UE+VE'=1.
 Hence \(E'(s)\) is a unit in \(R\); its inverse is explicitly \(V(s)\). Put
 
 \[
-d=rac{E'(s)}{g_1},\qquad
-eta(\pi,s)=rac{G_\pi'(s)/g_1-1-\pi s^2}{s},\qquad
-Q=b-eta(\pi,s),
+d=\frac{E'(s)}{g_1},\qquad
+\beta(\pi,s)=\frac{G_\pi'(s)/g_1-1-\pi s^2}{s},\qquad
+Q=b-\beta(\pi,s),
 \]
 
 and reconstruct
 
 \[
- t=d^{-1},\quad x=sd^{-1},\quad y=Q-\pi s,\quad q=\pi d,
+t=d^{-1},\quad x=sd^{-1},\quad y=Q-\pi s,\quad q=\pi d,
 \]
 
 \[
- z=d^2\left(q-rac{g_1}{g_3}y^2(1+3t)ight).
+z=d^2\left(q-\frac{g_1}{g_3}y^2(1+3t)\right).
 \]
 
 These are elements of \(R\), not rational functions on geometric points. They
@@ -184,7 +197,7 @@ and normalized target \((1,0,-2)\) becomes displayed target
 \((1,0,-38)\). At the normalized target,
 
 \[
-G(T)-rac{-19}{2}(-2)=G(T)-19=P_5(T).
+G(T)-\frac{-19}{2}(-2)=G(T)-19=P_5(T).
 \]
 
 Hence the complete fiber is
@@ -223,7 +236,7 @@ This changes the earlier arithmetic chain:
    needed for Keller-fiber existence.
 4. The open arithmetic questions now concern realization inside one fixed map,
    bounded coordinate complexity, stable-equivalence multiplicity, and
-   additional geometric restrictions on the ambient map—not abstract
+   additional geometric restrictions on the ambient map--not abstract
    occurrence.
 
 ## 7. Verification and novelty audit
