@@ -64,7 +64,6 @@ theorem rootedTranslate_inverse_at_target [CharZero K]
   have hscalar : g₁ / 2 * realizationTargetC P a g₁ = -P.eval a := by
     unfold realizationTargetC
     field_simp [hg₁]
-    ring
   rw [hscalar]
   simp [rootedTranslate]
 
