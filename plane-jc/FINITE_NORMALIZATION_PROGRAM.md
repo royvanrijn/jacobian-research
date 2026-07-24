@@ -261,7 +261,7 @@ The Keller condition makes every affine row unramified.  Applying the
 fundamental equality for the finite flat cover over the generic point of
 \(C\) gives (2.10), and (2.11) follows.
 
-### Corollary 2.4 -- the first geometric-degree exclusions
+### Corollary 2.4 -- the internal geometric-degree exclusion
 
 A hypothetical plane Keller counterexample has geometric degree
 
@@ -287,6 +287,59 @@ Proposition 2.3 gives \(a_C\ge1\).  Thus \(d\ge3\).
 When \(d=3\), equality forces \(b_C=2\) and \(a_C=1\).  The only ramified
 boundary row of contribution two is \((2,1)\), and the only affine ledger of
 total degree one is the single row \((1,1)\).
+
+### Corollary 2.4A -- Orevkov closes degrees two and three
+
+In fact a hypothetical plane Keller counterexample has
+
+\[
+\boxed{d\ge4.}
+\tag{2.12a}
+\]
+
+Orevkov proved that a locally invertible polynomial map
+\(\mathbb C^2\to\mathbb C^2\) cannot have generic multiplicity two or three.
+His Euler-multiplicity identity gives a particularly transparent interface
+with Corollary 2.4.  In degree three the generic boundary row
+\((e,f)=(2,1)\) already consumes the full boundary-multiplicity budget
+\(d-1=2\); any special increase of local multiplicity is impossible.  Thus
+the clean curvilinear cusp packet, whose local multiplicity jumps from two
+to three, is excluded immediately.  The rest of Orevkov's proof excludes
+the no-jump survivor as well.
+
+See Section 12 of
+[`JC2_FINITE_NORMALIZATION_FRONTIER.md`](JC2_FINITE_NORMALIZATION_FRONTIER.md)
+for the exact identity and its translation into the cubic packet notation.
+The characteristic-zero statement follows by spreading out and embedding
+the coefficient field in \(\mathbb C\).
+
+### Corollary 2.4B -- the quartic packet frontier
+
+In geometric degree four, Orevkov's global identity and his exclusion of a
+dicritical component of multiplicity \(d-1\) leave exactly two boundary
+packets:
+
+\[
+\boxed{
+\begin{array}{ll}
+\text{one boundary:} & \mu_E=2
+\text{ with one exceptional jump }2\to3,\\
+\text{two boundaries:} & (\mu_E,\mu_D)=(2,1)
+\text{ with no exceptional jumps.}
+\end{array}}
+\tag{2.12b}
+\]
+
+In the clean one-boundary row the jump is an ordinary cusp with fiber
+partition \(3+1\).  If there is no \(2+2\) self-collision of the boundary
+normalization, Lin--Zaidenberg reduces its target image to the standard
+cusp.  The braid-group complement has no transitive four-letter
+representation sending meridians to transpositions, so that subcase is
+impossible.  Every surviving clean one-boundary quartic packet therefore
+has at least one full \(2+2\) boundary self-collision.
+
+The proof, the two packet ledgers, and the exact \(S_4\) enumeration are in
+[`JC2_QUARTIC_PACKET_FRONTIER.md`](JC2_QUARTIC_PACKET_FRONTIER.md).
 
 This is a geometric-degree statement, not the total-coordinate degree
 frontier at \(125\).

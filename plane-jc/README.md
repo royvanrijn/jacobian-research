@@ -11,7 +11,8 @@ three-dimensional counterexample construction.
 | [PROVENANCE.md](PROVENANCE.md) | Exact Zenodo/arXiv versions, files, licenses, and hashes |
 | [DEGREE_FRONTIER_125.md](DEGREE_FRONTIER_125.md) | Theorem scope, reduction chain, and historical frontier |
 | [FINITE_NORMALIZATION_PROGRAM.md](FINITE_NORMALIZATION_PROGRAM.md) | Unconditional surface finite-flatness theorem; canonical branch/missing-boundary cover; arbitrary-puncture rigidity, bounded Pareto signature atlas, residual-different identity, and log-surface programme |
-| [JC2_FINITE_NORMALIZATION_FRONTIER.md](JC2_FINITE_NORMALIZATION_FRONTIER.md) | Audit of the four finite-normalization targets; cubic cusp countermodel to automatic residue immersion; corrected degree-three conductor/class-group frontier |
+| [JC2_FINITE_NORMALIZATION_FRONTIER.md](JC2_FINITE_NORMALIZATION_FRONTIER.md) | Cubic cusp countermodel to automatic residue immersion; clean-packet classification; Orevkov Euler-budget closure of the cusp and all geometric degree three |
+| [JC2_QUARTIC_PACKET_FRONTIER.md](JC2_QUARTIC_PACKET_FRONTIER.md) | Orevkov's exact quartic jump/two-boundary dichotomy; \(3+1\) cusp and \(2+2\) collision atlas; monodromy exclusion of the lone-cusp packet |
 | [PAIR_72_108_REPRODUCTION.md](PAIR_72_108_REPRODUCTION.md) | Newton-to-coefficient reconstruction, exact ideals, certificates, and division audit |
 | [WEIGHTED_WRONSKIAN_FIRST_BLOCK.md](WEIGHTED_WRONSKIAN_FIRST_BLOCK.md) | Hyperelliptic/de Rham interpretation and residual-scaling quotient of the audited first block |
 | [SUPERELLIPTIC_DERHAM_ENGINE.md](SUPERELLIPTIC_DERHAM_ENGINE.md) | Reusable character-wise Hermite reduction, exact implementation, and frontier experiment design |
@@ -38,6 +39,11 @@ Current scoped conclusion:
 > Independently and unconditionally: the canonical finite normalization of
 > every plane Keller map is a finite free cover of \(\mathbb A^2\).  Its
 > missing-boundary primes freely generate the normalization's class group.
+> Orevkov's three-sheeted theorem excludes geometric degrees two and three,
+> so the global finite-normalization classification starts at degree four.
+> In degree four, Orevkov's budget leaves exactly a one-boundary \(3+1\)
+> jump packet or a ramified-plus-unramified two-boundary packet; the lone
+> cusp without a \(2+2\) self-collision is excluded by monodromy.
 
 This does not prove JC(2), require both degrees to be at least 125, or show
 that any candidate at or beyond 125 exists.  The finite-flatness theorem

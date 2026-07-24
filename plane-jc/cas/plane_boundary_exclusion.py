@@ -68,6 +68,306 @@ class CleanTangentialDefectBudget:
         return asdict(self)
 
 
+@dataclass(frozen=True)
+class OrevkovMultiplicityBudget:
+    """Euler-multiplicity budget for dicritical curves at infinity."""
+
+    generic_degree: int
+    component_generic_multiplicities: tuple[int, ...]
+    exceptional_multiplicity_jumps: tuple[tuple[int, ...], ...]
+    total_cost: int
+    available_budget: int
+    status: str
+
+    def as_dict(self) -> dict[str, object]:
+        return asdict(self)
+
+
+@dataclass(frozen=True)
+class QuarticOrevkovPacket:
+    """One global degree-four boundary packet allowed by Orevkov's budget."""
+
+    name: str
+    component_generic_multiplicities: tuple[int, ...]
+    exceptional_local_multiplicities: tuple[tuple[int, ...], ...]
+    ramified_components: int
+    unramified_components: int
+    forced_clean_special_fiber: tuple[int, ...] | None
+    allowed_coincident_boundary_fiber: tuple[int, ...]
+    status: str
+
+    def as_dict(self) -> dict[str, object]:
+        return asdict(self)
+
+
+def orevkov_multiplicity_budget(
+    generic_degree: int,
+    components: Sequence[tuple[int, Sequence[int]]],
+) -> OrevkovMultiplicityBudget:
+    """Evaluate Orevkov's identity ``sum(mu_l + sum(mu_x-mu_l))=N-1``.
+
+    Each component is supplied as its generic local multiplicity followed
+    by the exceptional local multiplicities at its finite special points.
+    """
+
+    if generic_degree <= 0:
+        raise ValueError("the generic degree must be positive")
+    generic_multiplicities: list[int] = []
+    component_jumps: list[tuple[int, ...]] = []
+    total_cost = 0
+    for generic_multiplicity, exceptional_multiplicities in components:
+        if generic_multiplicity <= 0:
+            raise ValueError("local multiplicities must be positive")
+        jumps = tuple(
+            exceptional - generic_multiplicity
+            for exceptional in exceptional_multiplicities
+        )
+        if any(jump < 0 for jump in jumps):
+            raise ValueError(
+                "special local multiplicity cannot be below the generic value"
+            )
+        generic_multiplicities.append(generic_multiplicity)
+        component_jumps.append(jumps)
+        total_cost += generic_multiplicity + sum(jumps)
+    available = generic_degree - 1
+    if total_cost > available:
+        status = "excluded_by_orevkov_budget"
+    elif total_cost == available:
+        status = "saturates_orevkov_budget"
+    else:
+        status = "incomplete_boundary_ledger"
+    return OrevkovMultiplicityBudget(
+        generic_degree=generic_degree,
+        component_generic_multiplicities=tuple(generic_multiplicities),
+        exceptional_multiplicity_jumps=tuple(component_jumps),
+        total_cost=total_cost,
+        available_budget=available,
+        status=status,
+    )
+
+
+def quartic_orevkov_packet_atlas() -> tuple[QuarticOrevkovPacket, ...]:
+    """Return the two exact quartic packets after Orevkov's global gate.
+
+    A ramified component is required.  Its generic local multiplicity cannot
+    be three by Orevkov's ``N-1`` component exclusion, hence it is two.
+    The remaining unit in the Euler budget is either one exceptional jump or
+    one additional unramified dicritical component.
+    """
+
+    jump_budget = orevkov_multiplicity_budget(4, ((2, (3,)),))
+    two_boundary_budget = orevkov_multiplicity_budget(
+        4,
+        ((2, ()), (1, ())),
+    )
+    assert jump_budget.status == "saturates_orevkov_budget"
+    assert two_boundary_budget.status == "saturates_orevkov_budget"
+    return (
+        QuarticOrevkovPacket(
+            name="one_boundary_one_jump",
+            component_generic_multiplicities=(2,),
+            exceptional_local_multiplicities=((3,),),
+            ramified_components=1,
+            unramified_components=0,
+            forced_clean_special_fiber=(3, 1),
+            allowed_coincident_boundary_fiber=(2, 2),
+            status="survives_global_budget",
+        ),
+        QuarticOrevkovPacket(
+            name="two_boundaries_no_jump",
+            component_generic_multiplicities=(2, 1),
+            exceptional_local_multiplicities=((), ()),
+            ramified_components=1,
+            unramified_components=1,
+            forced_clean_special_fiber=None,
+            allowed_coincident_boundary_fiber=(2, 2),
+            status="survives_global_budget",
+        ),
+    )
+
+
+def _compose_permutations(
+    left: tuple[int, ...],
+    right: tuple[int, ...],
+) -> tuple[int, ...]:
+    """Return ``left after right`` for zero-based permutation tuples."""
+
+    return tuple(left[right[index]] for index in range(len(left)))
+
+
+def _transpositions(degree: int) -> tuple[tuple[int, ...], ...]:
+    result: list[tuple[int, ...]] = []
+    for first, second in combinations(range(degree), 2):
+        permutation = list(range(degree))
+        permutation[first], permutation[second] = (
+            permutation[second],
+            permutation[first],
+        )
+        result.append(tuple(permutation))
+    return tuple(result)
+
+
+def _generated_orbit(
+    generators: Sequence[tuple[int, ...]],
+    start: int,
+) -> tuple[int, ...]:
+    orbit = {start}
+    frontier = [start]
+    while frontier:
+        point = frontier.pop()
+        for generator in generators:
+            image = generator[point]
+            if image not in orbit:
+                orbit.add(image)
+                frontier.append(image)
+    return tuple(sorted(orbit))
+
+
+def _generated_group(
+    generators: Sequence[tuple[int, ...]],
+) -> tuple[tuple[int, ...], ...]:
+    degree = len(generators[0])
+    identity = tuple(range(degree))
+    group = {identity}
+    frontier = [identity]
+    while frontier:
+        element = frontier.pop()
+        for generator in generators:
+            product = _compose_permutations(generator, element)
+            if product not in group:
+                group.add(product)
+                frontier.append(product)
+    return tuple(sorted(group))
+
+
+def quartic_cusp_braid_monodromy_audit() -> dict[str, object]:
+    """Enumerate transposition representations of the trefoil braid group.
+
+    For a clean one-cusp branch with no self-collision, Lin--Zaidenberg
+    straightens the branch to ``y^2=x^3``.  Its complement group has
+    presentation ``<a,b | aba=bab>``, with ``a,b`` meridians.  Simple
+    ramification sends both to transpositions.  This audit verifies that no
+    such representation is transitive on four letters.
+    """
+
+    transpositions = _transpositions(4)
+    braid_pairs: list[tuple[tuple[int, ...], tuple[int, ...]]] = []
+    orbit_sizes: list[int] = []
+    for left in transpositions:
+        for right in transpositions:
+            left_right_left = _compose_permutations(
+                left,
+                _compose_permutations(right, left),
+            )
+            right_left_right = _compose_permutations(
+                right,
+                _compose_permutations(left, right),
+            )
+            if left_right_left != right_left_right:
+                continue
+            braid_pairs.append((left, right))
+            orbit_sizes.append(
+                max(
+                    len(_generated_orbit((left, right), point))
+                    for point in range(4)
+                )
+            )
+    return {
+        "transposition_count": len(transpositions),
+        "braid_pair_count": len(braid_pairs),
+        "maximum_orbit_size": max(orbit_sizes),
+        "transitive_pair_count": sum(size == 4 for size in orbit_sizes),
+        "verdict": (
+            "excluded_without_2_plus_2_self_collision"
+            if all(size < 4 for size in orbit_sizes)
+            else "survives"
+        ),
+    }
+
+
+def quartic_cusp_with_self_collision_monodromy_audit() -> dict[str, int | str]:
+    """Add one 2+2 perfect matching to the nondegenerate cusp monodromy."""
+
+    transpositions = _transpositions(4)
+    cusp_pairs: list[tuple[tuple[int, ...], tuple[int, ...]]] = []
+    for left in transpositions:
+        for right in transpositions:
+            if left == right:
+                continue
+            if _compose_permutations(
+                left,
+                _compose_permutations(right, left),
+            ) != _compose_permutations(
+                right,
+                _compose_permutations(left, right),
+            ):
+                continue
+            cusp_pairs.append((left, right))
+
+    perfect_matchings: list[tuple[tuple[int, ...], tuple[int, ...]]] = []
+    for left, right in combinations(transpositions, 2):
+        if _compose_permutations(left, right) != _compose_permutations(
+            right,
+            left,
+        ):
+            continue
+        perfect_matchings.append((left, right))
+
+    group_sizes: list[int] = []
+    transitive_count = 0
+    for cusp_left, cusp_right in cusp_pairs:
+        for node_left, node_right in perfect_matchings:
+            generators = (
+                cusp_left,
+                cusp_right,
+                node_left,
+                node_right,
+            )
+            orbit_size = len(_generated_orbit(generators, 0))
+            transitive_count += orbit_size == 4
+            group_sizes.append(len(_generated_group(generators)))
+
+    return {
+        "nondegenerate_cusp_pair_count": len(cusp_pairs),
+        "perfect_matching_count": len(perfect_matchings),
+        "combined_packet_count": len(group_sizes),
+        "transitive_packet_count": transitive_count,
+        "minimum_group_order": min(group_sizes),
+        "maximum_group_order": max(group_sizes),
+        "verdict": "one_2_plus_2_collision_generates_S4",
+    }
+
+
+def quartic_one_boundary_euler_defect(
+    self_collision_count: int,
+) -> dict[str, int]:
+    """Euler-integrate the missing-sheet defect on the quartic target curve.
+
+    The curve has one unibranch cusp and ``r`` identifications of two
+    normalization points.  Its normalization is A1.  The defect is two on
+    the regular stratum, three at the cusp, and four at every 2+2
+    self-collision.
+    """
+
+    if self_collision_count < 0:
+        raise ValueError("the self-collision count must be nonnegative")
+    curve_euler = 1 - self_collision_count
+    regular_stratum_euler = (
+        curve_euler - 1 - self_collision_count
+    )
+    integrated_defect = (
+        2 * regular_stratum_euler
+        + 3
+        + 4 * self_collision_count
+    )
+    return {
+        "curve_euler": curve_euler,
+        "regular_stratum_euler": regular_stratum_euler,
+        "integrated_defect": integrated_defect,
+        "global_required_defect": 3,
+    }
+
+
 def clean_tangential_defect_budget(
     generic_degree: int,
     tangent_order: int,

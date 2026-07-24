@@ -1,0 +1,254 @@
+{
+  "format": "dvorsky-gvc4-bounded-search-v1",
+  "field": "integers (exact arithmetic)",
+  "family": {
+    "P": "(r*t+u*a+v*b+w*d)(a*d+b*t)",
+    "Lambda": "d/dt R(d/da,d/db,d/dd)",
+    "R": "A*a^2+B*a*b+C*a*d+D*b^2+E*b*d+F*d^2",
+    "interpretation": "c is identified with (r-1)t+u*a+v*b+w*d in the Dvorsky--Long polynomial"
+  },
+  "boxes": {
+    "linear_coefficients_r_u_v_w": [
+      -1,
+      0,
+      1
+    ],
+    "quadratic_coefficients_A_through_F": [
+      -2,
+      -1,
+      0,
+      1,
+      2
+    ],
+    "normalization": "both coefficient vectors are sign-normalized; R is primitive"
+  },
+  "cutoffs": {
+    "pure_moments": [
+      1,
+      12
+    ],
+    "required_initial_scheme": [
+      1,
+      4
+    ],
+    "coordinate_mixed_window": [
+      5,
+      12
+    ]
+  },
+  "counts": {
+    "linear_forms": 40,
+    "primitive_ternary_quadratic_forms": 7448,
+    "pairs_tested": 297920,
+    "pure_m1_through_m4_survivors": 7152,
+    "pure_m1_through_m12_survivors": 7120,
+    "m1_through_m12_survivors_admitting_a_fixed_linear_multiplier_nonzero_at_every_m5_through_m12": 0
+  },
+  "first_pure_failure_after_m4": {
+    "6": 32
+  },
+  "delayed_resonance_examples": [
+    {
+      "linear_coefficients_r_u_v_w": [
+        1,
+        1,
+        -1,
+        -1
+      ],
+      "R_coefficients_a2_ab_ad_b2_bd_d2": [
+        0,
+        1,
+        -2,
+        -1,
+        1,
+        -1
+      ],
+      "pure_values_through_first_failure": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        -22394880000
+      ],
+      "first_failure": 6
+    },
+    {
+      "linear_coefficients_r_u_v_w": [
+        1,
+        1,
+        -1,
+        -1
+      ],
+      "R_coefficients_a2_ab_ad_b2_bd_d2": [
+        0,
+        1,
+        -2,
+        0,
+        -1,
+        -1
+      ],
+      "pure_values_through_first_failure": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        -22394880000
+      ],
+      "first_failure": 6
+    },
+    {
+      "linear_coefficients_r_u_v_w": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "R_coefficients_a2_ab_ad_b2_bd_d2": [
+        0,
+        1,
+        -2,
+        0,
+        1,
+        1
+      ],
+      "pure_values_through_first_failure": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        -22394880000
+      ],
+      "first_failure": 6
+    },
+    {
+      "linear_coefficients_r_u_v_w": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "R_coefficients_a2_ab_ad_b2_bd_d2": [
+        0,
+        1,
+        -2,
+        1,
+        -1,
+        1
+      ],
+      "pure_values_through_first_failure": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        -22394880000
+      ],
+      "first_failure": 6
+    },
+    {
+      "linear_coefficients_r_u_v_w": [
+        1,
+        -1,
+        -1,
+        1
+      ],
+      "R_coefficients_a2_ab_ad_b2_bd_d2": [
+        0,
+        1,
+        0,
+        -1,
+        -1,
+        -1
+      ],
+      "pure_values_through_first_failure": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        -22394880000
+      ],
+      "first_failure": 6
+    },
+    {
+      "linear_coefficients_r_u_v_w": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "R_coefficients_a2_ab_ad_b2_bd_d2": [
+        0,
+        1,
+        0,
+        -1,
+        1,
+        -1
+      ],
+      "pure_values_through_first_failure": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        -22394880000
+      ],
+      "first_failure": 6
+    },
+    {
+      "linear_coefficients_r_u_v_w": [
+        1,
+        -1,
+        1,
+        -1
+      ],
+      "R_coefficients_a2_ab_ad_b2_bd_d2": [
+        0,
+        1,
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "pure_values_through_first_failure": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        -22394880000
+      ],
+      "first_failure": 6
+    },
+    {
+      "linear_coefficients_r_u_v_w": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "R_coefficients_a2_ab_ad_b2_bd_d2": [
+        0,
+        1,
+        0,
+        0,
+        -1,
+        1
+      ],
+      "pure_values_through_first_failure": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        -22394880000
+      ],
+      "first_failure": 6
+    }
+  ],
+  "conclusion": "No four-variable witness occurs in this declared lattice slice through the stated cutoffs. This is a bounded negative search, not an all-order nonexistence theorem.",
+  "provenance": "Search descends Long's SU(2) seed via Dvorsky's homogenization/lift."
+}

@@ -20,9 +20,85 @@ from plane_boundary_exclusion import (
     conductor_packet_budget,
     first_free_depth_package,
     one_puncture_budget,
+    orevkov_multiplicity_budget,
     puncture_profile_budgets,
+    quartic_cusp_braid_monodromy_audit,
+    quartic_cusp_with_self_collision_monodromy_audit,
+    quartic_one_boundary_euler_defect,
+    quartic_orevkov_packet_atlas,
     two_puncture_budgets,
 )
+
+# Orevkov's global Euler identity has budget N-1.  The generic cubic
+# ramification multiplicity two saturates it, so the cusp jump from two to
+# three is impossible.
+orevkov_cubic_no_jump = orevkov_multiplicity_budget(3, ((2, ()),))
+assert orevkov_cubic_no_jump.total_cost == 2
+assert orevkov_cubic_no_jump.status == "saturates_orevkov_budget"
+
+orevkov_cubic_cusp = orevkov_multiplicity_budget(3, ((2, (3,)),))
+assert orevkov_cubic_cusp.exceptional_multiplicity_jumps == ((1,),)
+assert orevkov_cubic_cusp.total_cost == 3
+assert orevkov_cubic_cusp.available_budget == 2
+assert orevkov_cubic_cusp.status == "excluded_by_orevkov_budget"
+
+# In degree four Orevkov's maximal-component remark removes generic
+# multiplicity three.  The remaining global budget has exactly two
+# realizations: one multiplicity-two component with one 2->3 jump, or one
+# multiplicity-two and one multiplicity-one component with no jumps.
+quartic_packets = quartic_orevkov_packet_atlas()
+assert tuple(packet.name for packet in quartic_packets) == (
+    "one_boundary_one_jump",
+    "two_boundaries_no_jump",
+)
+assert all(packet.status == "survives_global_budget" for packet in quartic_packets)
+assert quartic_packets[0].forced_clean_special_fiber == (3, 1)
+assert quartic_packets[0].allowed_coincident_boundary_fiber == (2, 2)
+assert quartic_packets[1].component_generic_multiplicities == (2, 1)
+
+# If the clean one-boundary row has no 2+2 self-collision, its sole singular
+# image is the ordinary cusp.  The complement group is B_3.  Every pair of
+# transposition images satisfying aba=bab acts on at most three of four
+# sheets, contradicting connected quartic monodromy.
+quartic_cusp_monodromy = quartic_cusp_braid_monodromy_audit()
+assert quartic_cusp_monodromy["transposition_count"] == 6
+assert quartic_cusp_monodromy["braid_pair_count"] == 30
+assert quartic_cusp_monodromy["maximum_orbit_size"] == 3
+assert quartic_cusp_monodromy["transitive_pair_count"] == 0
+assert (
+    quartic_cusp_monodromy["verdict"]
+    == "excluded_without_2_plus_2_self_collision"
+)
+
+# Conversely one 2+2 collision supplies a perfect matching of the four
+# sheets.  Together with either nondegenerate cusp braid pair it always
+# generates the full S4, so sheet transitivity alone cannot exclude the
+# first surviving packet.
+quartic_connected_monodromy = (
+    quartic_cusp_with_self_collision_monodromy_audit()
+)
+assert quartic_connected_monodromy["nondegenerate_cusp_pair_count"] == 24
+assert quartic_connected_monodromy["perfect_matching_count"] == 3
+assert quartic_connected_monodromy["combined_packet_count"] == 72
+assert quartic_connected_monodromy["transitive_packet_count"] == 72
+assert quartic_connected_monodromy["minimum_group_order"] == 24
+assert quartic_connected_monodromy["maximum_group_order"] == 24
+assert (
+    quartic_connected_monodromy["verdict"]
+    == "one_2_plus_2_collision_generates_S4"
+)
+
+# Every number of 2+2 self-collisions is Euler-neutral: the drop in the
+# target curve's Euler characteristic cancels their larger point defect.
+for self_collision_count in range(9):
+    quartic_euler = quartic_one_boundary_euler_defect(self_collision_count)
+    assert quartic_euler["curve_euler"] == 1 - self_collision_count
+    assert quartic_euler["regular_stratum_euler"] == -2 * self_collision_count
+    assert quartic_euler["integrated_defect"] == 3
+    assert (
+        quartic_euler["integrated_defect"]
+        == quartic_euler["global_required_defect"]
+    )
 
 # At a clean nonimmersive point of tangent order m, local integration of the
 # pure Jacobian factor gives fiber length m+1.  Rank three forces m=2 and the
@@ -466,6 +542,11 @@ assert any("ramification" in reason for reason in case2_preview.reasons)
 
 
 print("PASS: one-puncture residue immersion forces degree one")
+print("PASS: Orevkov's Euler budget excludes the clean cubic cusp")
+print("PASS: Orevkov's quartic budget has exactly two global packets")
+print("PASS: a lone quartic cusp cannot connect the spectator sheet")
+print("PASS: one quartic 2+2 collision generates full S4 monodromy")
+print("PASS: quartic 2+2 self-collisions are Euler-neutral")
 print("PASS: clean cubic nonimmersion is exactly a full cusp packet")
 print("PASS: cubic closed fibers have the complete four-type algebra atlas")
 print("PASS: two-puncture residue immersion contradicts Riemann--Hurwitz")

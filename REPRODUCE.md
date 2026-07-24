@@ -54,11 +54,17 @@ remain as a regression:
 
 ```bash
 .venv/bin/python scripts/verify_all_degree_rational_fibers.py
+.venv/bin/python scripts/verify_common_arithmetic_fibers.py
 .venv/bin/python scripts/verify_real_fiber_spectrum.py
 .venv/bin/python scripts/verify_adelic_fiber_engineering.py
 .venv/bin/python scripts/verify_hasse_keller_fiber.py
 .venv/bin/python scripts/verify_stratified_adelic_engineering.py
 ```
+
+The common-fiber checker synthesizes the arithmetic transfer and stable
+boundary results.  It verifies the fixed all-degree pair over `Q`, the
+fixed quartic triple over `Q(sqrt(-2))`, the small rational quartic, and the
+mod-`17` irreducibility certificate for the connected triple fiber.
 
 The Hasse-fiber command expands an explicit degree-eight weighted map, checks
 its determinant `-38`, proves that its complete target fiber has no rational
@@ -919,6 +925,18 @@ It verifies the two pre-\(\partial_t\) identities and the resulting GVC(5)
 and SIC(5) failures through order eight.  The all-order binomial proof and
 the separation from ordinary-Laplacian GVC are documented in
 [`DVORSKY_GVC5_COUNTEREXAMPLE.md`](extended-geometry/DVORSKY_GVC5_COUNTEREXAMPLE.md).
+
+The bounded four-variable descendant search can be replayed separately:
+
+```bash
+python3 scripts/search_dvorsky_gvc4_bounded.py
+```
+
+It exhausts the declared \(40\)-by-\(7{,}448\) normalized lattice slice,
+checks pure contractions through order twelve, and screens the full space
+of fixed linear multipliers on orders five through twelve.  It finds no
+witness in that slice; this is a finite negative search, not a GVC(4) or
+SIC(4) theorem.
 
 The all-order nonvanishing proof is written in
 [`IMAGE_VANISHING_COUNTEREXAMPLES.md`](extended-geometry/IMAGE_VANISHING_COUNTEREXAMPLES.md);

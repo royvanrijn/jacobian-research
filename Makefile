@@ -207,6 +207,7 @@ verify-theorems:
 	$(PYTHON) scripts/verify_weighted_seed_schema.py
 	$(PYTHON) scripts/verify_weighted_seed_theorem.py
 	$(PYTHON) scripts/verify_all_degree_rational_fibers.py
+	$(PYTHON) scripts/verify_common_arithmetic_fibers.py
 	$(PYTHON) scripts/verify_real_fiber_spectrum.py
 	$(PYTHON) scripts/verify_hasse_keller_fiber.py
 	$(PYTHON) scripts/verify_weighted_marked_root_model.py
@@ -448,6 +449,8 @@ verify-papers:
 		output/pdf/sparse-minimality-gaussian-moments-dimension-three.pdf
 	cp papers/discriminant-pencils/main.pdf \
 		output/pdf/generic-discriminants-polynomial-tangent-pencils.pdf
+	cp papers/common-arithmetic-fibers/main.pdf \
+		output/pdf/common-arithmetic-fibers.pdf
 
 prepare-arxiv-uploads:
 	bash scripts/prepare_arxiv_uploads.sh

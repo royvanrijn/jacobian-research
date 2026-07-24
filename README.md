@@ -308,6 +308,13 @@ goes in the complementary arithmetic direction: one explicit degree-eight
 complete regular fiber has points over `R` and every `Q_p` but no rational
 point.  Its integral target is `(12138,-308652,1)`, and the full fiber is the
 finite etale scheme cut out by an elementary intersective polynomial.
+The [common-arithmetic-fiber theorem](verified/COMMON_ARITHMETIC_FIBERS.md)
+shows that the fiber does not determine the surrounding map: for every
+`N>=4`, two fixed stably inequivalent `Q`-defined maps share a Hilbert family
+of connected complete degree-`N` fibers.  Over `Q(sqrt(-2))`, three fixed
+pairwise inequivalent quartic maps share one Hilbert family.  The
+[standalone paper](papers/common-arithmetic-fibers/main.tex) gives the
+optimized proof and explicit quartic certificates.
 The [minimal-degree sharpening](verified/MINIMAL_HASSE_PRINCIPLE_KELLER_FIBER.md)
 affinely tangent-normalizes the classical Berend--Bilu quintic
 `(X^3-19)(X^2+X+1)`.  It gives a degree-five Keller map with an everywhere
@@ -495,6 +502,7 @@ claims are first-class `falsified` entries rather than prose-only corrections.
   ([Zenodo record 21534917](https://zenodo.org/records/21534917),
   DOI `10.5281/zenodo.21534917`)
 - [Generic Discriminants of Polynomial Tangent Pencils](papers/discriminant-pencils/main.tex)
+- [Common Arithmetic Fibers of Stably Inequivalent Keller Maps](papers/common-arithmetic-fibers/main.tex)
 
 Publication status as of 24 July 2026: the first two manuscripts have been
 deposited on Zenodo, but their arXiv submissions are awaiting endorsement and

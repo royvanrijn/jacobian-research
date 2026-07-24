@@ -14,6 +14,13 @@ is Keller and \(B\) is the normalization of \(k[P,Q]\) in \(k(x,y)\), then
 fiber has the generic length.  This removes the closed-point module-flatness
 defect which remains possible for a normal threefold.
 
+**Closure update.**  The degree-three frontier is already closed by
+Orevkov's theorem on three-sheeted polynomial maps.  More precisely, the
+Euler-multiplicity identity in his proof directly excludes the clean cusp
+packet isolated below: its generic transverse multiplicity two exhausts the
+entire degree-three boundary budget, while the curvilinear triple collision
+would contribute a forbidden positive jump.  See Section 12.
+
 This note audits the four proposed next targets.  Its main conclusion is
 that the first and fourth targets need a correction:
 
@@ -23,10 +30,9 @@ that the first and fourth targets need a correction:
 
 The obstruction is already present in the universal cubic cusp cover.  In
 geometric degree three it is the minimal local model left by the generic
-sheet ledger.  The next useful theorem is therefore not an abstract
-Riemann--Hurwitz or unit-rank statement.  It is a global exclusion of this
-cusp packet using the fact that the distinguished complement is
-\(\mathbb A^2\).
+sheet ledger.  Sections 2--11 determine exactly what a direct
+finite-normalization exclusion would have had to rule out.  Section 12
+identifies that exclusion inside Orevkov's topology-at-infinity argument.
 
 ## 1. What finite freeness gives
 
@@ -346,14 +352,15 @@ specializations among the affine companions \(A_C\).
 
 The 2024 arXiv preprint *There are no Keller maps having prime degree field
 extensions* claims, in particular, to exclude geometric degree three.  It
-cannot currently be used as a closure theorem for this programme.
+is not needed as a closure theorem for this programme.
 
 Its first case invokes a MathOverflow answer as proving that the “rare
 property” forces extension degree two.  The cited answer instead constructs
 a quadratic example having the rare property; it does not prove that every
 such extension is quadratic.  The implication used in the preprint is
 therefore unsupported.  This does not prove the preprint's conclusion
-false, but it leaves degree three open for the present boundary programme.
+false.  Independently, Orevkov's published theorem cited in Section 12
+excludes geometric degree three by a different argument.
 
 References:
 
@@ -365,6 +372,10 @@ References:
 - [Stacks Project miracle flatness](https://stacks.math.columbia.edu/tag/00R4).
 
 ## 8. Recommended order of attack
+
+This was the recommended order before applying Orevkov's theorem.  It is
+retained because the local classification remains useful in higher-degree
+packets, but it is no longer an open degree-three programme.
 
 1. **Cubic local classification.**  Classify completed normal finite-flat
    cubic algebras over \(k[[u,v]]\) with the generic row
@@ -392,6 +403,7 @@ a plane Keller map.}}
 
 It simultaneously attacks the degree-three ledger, the conductor escape,
 and the only local countermodel to automatic residue immersion.
+Proposition 12.1 supplies exactly this theorem.
 
 ## 9. Clean nonimmersion consumes the cubic fiber
 
@@ -616,6 +628,10 @@ There are now two independent ways to close the clean cubic case:
 The remaining non-clean case is routed to the lattice attack through
 (9.8), rather than being incorrectly declared immersive.
 
+Section 12 carries out the second closure by using Orevkov's global
+Euler-multiplicity identity.  It does not require a separate computation of
+the individual atypical fibers of \(H\).
+
 ## 11. Complete cubic closed-fiber algebra atlas
 
 Finite freeness makes the scheme-theoretic closed-fiber enumeration exact.
@@ -729,7 +745,8 @@ level.  The remaining infinitude is only in:
   boundary loci; and
 - the resolved surface tree carrying the dirty vertices.
 
-Thus degree three has been reduced to two global frontiers:
+Before applying the global Euler budget, the local atlas reduces degree
+three to two apparent frontiers:
 
 \[
 \boxed{
@@ -743,3 +760,144 @@ Thus degree three has been reduced to two global frontiers:
 \]
 
 The atlas is encoded by `cubic_closed_fiber_atlas` in the boundary checker.
+Section 12 closes both rows simultaneously.
+
+## 12. Orevkov's Euler budget closes the cubic cusp
+
+The topology-at-infinity closure sought in Section 10 is contained in a
+stronger classical theorem.
+
+### Proposition 12.1 -- the clean cubic packet is impossible
+
+Let
+
+\[
+ F:\mathbb C^2\longrightarrow\mathbb C^2
+\]
+
+be a polynomial local biholomorphism of geometric degree \(N\).  Resolve its
+rational extension at infinity.  Write \(L_F\) for the union of boundary
+curves that map nonconstantly to the affine target.  After contracting the
+boundary over target infinity and the connected constant boundary chains,
+Orevkov obtains a constant-multiplicity map
+
+\[
+ F^*:X^*\longrightarrow (\mathbb C^2)^*
+\]
+
+between compact spaces, of multiplicity \(N\).  For an irreducible component
+\(\ell\subset L_F\), let \(\mu_\ell\) be its generic local multiplicity and
+let \(\mu_x\) be the local multiplicity at
+\(x\in\ell^\circ=\ell\setminus L_\infty\).  His Euler-characteristic
+calculation gives
+
+\[
+\boxed{
+\sum_{\ell\subset L_F}
+\left(
+ \mu_\ell+
+ \sum_{x\in\ell^\circ}(\mu_x-\mu_\ell)
+\right)=N-1.
+}
+\tag{12.1}
+\]
+
+Only finitely many terms in the inner sums are nonzero, and upper
+semicontinuity gives
+
+\[
+\mu_x-\mu_\ell\ge0.
+\tag{12.2}
+\]
+
+Now suppose the clean packet (9.7) occurred in degree three.  The resolved
+dicritical \(\ell\) carrying \(E\) has
+
+\[
+N=3,\qquad \mu_\ell=2.
+\tag{12.3}
+\]
+
+At the cusp point \(p\), the local fiber is
+\(k[t]/(t^3)\).  Equivalently, the local mapping multiplicity is
+
+\[
+\mu_p=3.
+\tag{12.4}
+\]
+
+The contribution of this one component and this one exceptional point to
+the left side of (12.1) is therefore at least
+
+\[
+2+(3-2)=3,
+\]
+
+whereas the right side is \(N-1=2\).  This contradiction excludes the clean
+cubic cusp packet.  In particular, neither the class-group relation
+\(\operatorname{div}_B(g)=2E+A\) nor a separate Suzuki computation for
+\(H=g(P,Q)\) is needed.
+
+### Why the class-group relation alone does not close the packet
+
+The localization isomorphism
+
+\[
+\operatorname{Cl}(B)\simeq\bigoplus_i\mathbb Z[E_i]
+\]
+
+does not by itself contradict
+
+\[
+\operatorname{div}_B(g)=2E+A.
+\]
+
+Indeed \(A\) is the closure of an affine divisor, not a missing-boundary
+prime, and the principal-divisor relation merely says
+
+\[
+[A]=-2[E]\quad\text{in }\operatorname{Cl}(B).
+\tag{12.5}
+\]
+
+That is compatible with the free boundary basis.  The contact
+\(I_p(E,A)=2\) is the local multiplicity jump detected by (12.1); it is the
+topological budget, rather than freeness alone, that supplies the
+contradiction.
+
+### Stronger degree-three closure
+
+Orevkov continues beyond (12.1).  If \(N=3\), the only numerical survivor
+has one component of generic multiplicity two and no multiplicity jumps.
+His local link argument makes its affine image nonsingular; the
+Abhyankar--Moh theorem then straightens that image to a line.  The resulting
+unbranched three-fold cover of its complement has monodromy whose extension
+branches with order three, contradicting the surviving generic order two.
+Thus:
+
+\[
+\boxed{\text{A plane Keller map cannot have geometric degree }2
+\text{ or }3.}
+\tag{12.6}
+\]
+
+The statement over an arbitrary algebraically closed field of
+characteristic zero follows by spreading the finitely many coefficients to
+a finitely generated field and embedding that field in \(\mathbb C\).
+Geometric degree and the nonzero constant Jacobian are preserved by this
+base change.
+
+Consequently the square-zero/dirty cubic branch in Section 11 is also
+globally impossible.  Its rational-triple-point classification remains a
+valid local atlas, but it is not needed to close geometric degree three.
+The finite-normalization programme now begins globally at degree four.
+Its first global reduction is carried out in
+[`JC2_QUARTIC_PACKET_FRONTIER.md`](JC2_QUARTIC_PACKET_FRONTIER.md).
+
+Reference:
+
+- S. Yu. Orevkov,
+  [*On three-sheeted polynomial mappings of
+  \(\mathbb C^2\)*](https://doi.org/10.1070/IM1987v029n03ABEH000984),
+  *Math. USSR-Izv.* **29** (1987), 587--596; see especially Lemma 4.2,
+  Corollary 4.3, Lemmas 5.2--5.3, and the proof of Theorem 1.1.

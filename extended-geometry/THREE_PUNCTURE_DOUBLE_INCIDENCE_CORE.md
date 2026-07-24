@@ -220,10 +220,13 @@ frontier, but it does not use the Davenport polynomial, a Gassmann pair, a
 marked root, or conductor gluing.  It supplies a smaller universal test
 core for the proposed dimension-four surgery.
 
-The next finite search should replace \(u\) (or \(v\)) by an output
-nonlinear in \((r,u,z)\), impose constant determinant coefficient by
-coefficient, and reject every solution whose target algebra recovers
-\((r,z)\).  Retaining all of \(L,u,v\) should not be searched further.
+The next finite search should replace \(u\) (or \(v\)) and deform the
+primitive coordinate, impose constant determinant coefficient by
+coefficient, and reject every solution whose target algebra recovers the
+source variables.  Retaining all of \(L,u,v\) should not be searched
+further.  The first nonlinear \(\mathbb A^5\) gates and the coupled
+\(\mathbb A^6\) degree-three screen are carried out in
+[Three-puncture nonlinear completion frontier](THREE_PUNCTURE_NONLINEAR_COMPLETION_FRONTIER.md).
 
 ## 6. Verification
 

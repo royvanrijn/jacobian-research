@@ -80,7 +80,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:8ea08cc93993b6a5c49ca3ac7241d141f700cd6b8bb70d193d482c0df48e6fd9",
+      "artifact_hash": "sha256:f6f335bd0db9fe55bbcf93e2644e78d16cd73c6d763e5f94faf083f4707b3ebb",
       "software_lock": [
         ".python-version",
         "requirements.txt"
@@ -1044,7 +1044,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:785ef16dda041071b68ae37b442698291678a015662c7f68028fdb73366fc9c6",
+      "artifact_hash": "sha256:a6efc8e8fbc3afb7625b07d12567097ef8aaba12678f7a8eff63772aa1fa3f58",
       "software_lock": [
         ".python-version",
         "requirements.txt"
@@ -1167,7 +1167,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:1c39c201c315d581152f18fdd5329eb07c13a473af8fbb3c02a5f2b321ca8c37",
+      "artifact_hash": "sha256:bf8ef40c433987a200e0de2554f424b703b9e135ce3f3a678e743a5f065ec6b0",
       "software_lock": [
         ".python-version",
         "requirements.txt"
@@ -1392,7 +1392,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:8ea08cc93993b6a5c49ca3ac7241d141f700cd6b8bb70d193d482c0df48e6fd9",
+      "artifact_hash": "sha256:f6f335bd0db9fe55bbcf93e2644e78d16cd73c6d763e5f94faf083f4707b3ebb",
       "software_lock": [
         ".python-version",
         "requirements.txt"
@@ -1577,7 +1577,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:d20b547e38a224841ab3bd1496dbe2e87096c448e90f60d86dae22b191964b53",
+      "artifact_hash": "sha256:26101bfae215f6711afb0844e8c9d78409b457211640fac194ed0b073fb3af89",
       "software_lock": [
         ".python-version",
         "requirements.txt"
@@ -3874,7 +3874,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:df044edec2f49858d9ce2d87770902f8a623e6ccab6a06e4521e65b802b5294d",
+      "artifact_hash": "sha256:6f1f309d1258c06dc3096ee70b4edb8ac5e03402a923aa5fc5502d6bbbaebc34",
       "software_lock": [
         ".python-version",
         "requirements.txt"
@@ -4883,6 +4883,63 @@
       "priority": "reference"
     },
     {
+      "id": "PCC3",
+      "kind": "corollary",
+      "state": "proved",
+      "title": "Plane geometric-degree-three and clean-cusp exclusion",
+      "scope": "Orevkov's Euler-multiplicity identity at infinity gives sum_l(mu_l+sum_x(mu_x-mu_l))=N-1 with nonnegative special-point jumps. In geometric degree three the forced ramified boundary row has generic local multiplicity two and already exhausts the budget. A clean cusp has local multiplicity three, from its curvilinear length-three fiber, and would contribute 2+(3-2)>2. Thus the clean cusp packet is impossible. Orevkov's full theorem also excludes the no-jump and dirty survivors, so every noninvertible plane Keller map in characteristic zero has geometric degree at least four.",
+      "canonical_source": "plane-jc/JC2_FINITE_NORMALIZATION_FRONTIER.md",
+      "dependencies": [
+        "PFN2",
+        "external: Orevkov's theorem on three-sheeted polynomial mappings of C2"
+      ],
+      "checker": "plane-jc/cas/test_plane_boundary_exclusion.py",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:3175d22b6d99cb08cb4e0805e9042739b6b98265f37110ec709314a84675b88f",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [
+        "open clean cubic cusp packet",
+        "degree-three rational-triple-point lattice enumeration"
+      ],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
+      "id": "QPK4",
+      "kind": "corollary",
+      "state": "proved",
+      "title": "Quartic Orevkov packet dichotomy and lone-cusp exclusion",
+      "scope": "For a hypothetical geometric-degree-four plane Keller map, Orevkov's N-1 component exclusion removes transverse multiplicity three and his Euler identity leaves exactly one ramified dicritical of multiplicity two. The remaining budget is either one 2-to-3 jump on that sole dicritical or one additional unramified dicritical with no jumps. In the clean one-boundary row the jump is an ordinary cusp with fiber partition 3+1; every other double-boundary coincidence has partition 2+2. If no 2+2 self-collision occurs, Lin--Zaidenberg identifies the target curve with the standard cusp and its complement group is B3. Exhaustion of transposition images satisfying aba=bab shows maximum orbit size three in S4, contradicting connected quartic monodromy. Thus every surviving clean one-boundary packet has at least one 2+2 self-collision. Conversely, all 72 combinations of a nondegenerate cusp braid pair and a 2+2 perfect matching generate S4, so one collision saturates sheet transitivity. Euler integration is neutral for any number of such collisions. The remaining obstruction must therefore use global meridian relations with conductor or the rank-one boundary class relation.",
+      "canonical_source": "plane-jc/JC2_QUARTIC_PACKET_FRONTIER.md",
+      "dependencies": [
+        "PFN2",
+        "PCC3",
+        "external: Orevkov's topology-at-infinity identity and maximal-component exclusion",
+        "external: Lin--Zaidenberg theorem for contractible plane curves"
+      ],
+      "checker": "plane-jc/cas/test_plane_boundary_exclusion.py",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:3175d22b6d99cb08cb4e0805e9042739b6b98265f37110ec709314a84675b88f",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [
+        "unfiltered degree-four finite-normalization signature atlas"
+      ],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
       "id": "DC1",
       "kind": "corollary",
       "state": "proved",
@@ -5159,7 +5216,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:3445058720c38dbc4e8a9110dc705d48208261bea6ce34e66336af39f65df05b",
+      "artifact_hash": "sha256:8ed9aa43d9be8f8971c71725d4217126a812375058acf96cc67445bed1355a1d",
       "software_lock": [
         ".python-version",
         "requirements.txt"
@@ -5629,10 +5686,12 @@
       "kind": "open_problem",
       "state": "parked",
       "title": "Plane finite-normalization and log-surface classification",
-      "scope": "Starting from the unconditional finite-free normalization PFN2, classify all ramified and unramified missing-boundary divisors and their affine companion sheets. Use the bounded Pareto signature atlas (degree, boundary and affine row counts, punctures, residual ramification cost) as the finite combinatorial frontend; then normalize over P2, resolve the distinguished A2 boundary, and seek an exposed ramification leaf or a global excess contradiction from the residual-different identity, free boundary class group, unimodular intersection matrix, units, Riemann--Hurwitz, and K+D=-2 Pi*L_infinity+sum e_i E_i.",
+      "scope": "Starting from PFN2, PCC3, and the quartic packet theorem QPK4, close the two remaining geometric-degree-four rows. First exclude the one-boundary clean 3+1 cusp together with one or more 2+2 boundary self-collisions by combining its transposition-pairing graph and conductor degree with the rank-one boundary class relation. Then compile the one-ramified-plus-one-unramified no-jump packet, including same-target and different-target groupings, into the two-generator unimodular boundary lattice. Beyond degree four, classify all ramified and unramified missing-boundary divisors and affine companions using the bounded signature atlas, residual different, free class group, units, Riemann--Hurwitz, and K+D=-2 Pi*L_infinity+sum e_i E_i.",
       "canonical_source": "plane-jc/FINITE_NORMALIZATION_PROGRAM.md",
       "dependencies": [
-        "PFN2"
+        "PFN2",
+        "PCC3",
+        "QPK4"
       ],
       "checker": null,
       "proof_type": "not-applicable",

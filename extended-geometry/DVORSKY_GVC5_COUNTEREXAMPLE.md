@@ -184,3 +184,92 @@ The resulting ambient-dimension ledger is
 The lower endpoints use GVC(1) and SIC(1).  The last two upper endpoints
 remain the repository's ordinary-Laplacian and homogeneous quartic HN
 witnesses.
+
+## 6. A bounded four-variable descent search
+
+The first finite descent attempted here keeps the architecture of Long's
+\(SU(2)\) seed and Dvorsky's homogenization visible.  Identify \(c\) with a
+linear form so that, up to an irrelevant scalar sign,
+
+\[
+ P=(rt+ua+vb+wd)(ad+bt),                                   \tag{6.1}
+\]
+
+and replace the quadratic part of the symbol by the general ternary
+quadratic form
+
+\[
+\begin{aligned}
+ \Lambda&=\partial_tR(\partial_a,\partial_b,\partial_d),\\
+ R&=A\partial_a^2+B\partial_a\partial_b+C\partial_a\partial_d
+   +D\partial_b^2+E\partial_b\partial_d+F\partial_d^2.       \tag{6.2}
+\end{aligned}
+\]
+
+Thus (6.2), rather than a selected diagonal or binomial subfamily, is the
+full order-three symbol in the symmetry-preserving slice
+\(\partial_t\operatorname{Sym}^2\langle\partial_a,\partial_b,\partial_d\rangle\).
+The exact lattice search uses
+
+\[
+ (r,u,v,w)\in\{-1,0,1\}^4,\qquad
+ (A,B,C,D,E,F)\in\{-2,-1,0,1,2\}^6,                        \tag{6.3}
+\]
+
+with sign normalization on both vectors and primitive normalization on the
+second.  It checks all \(297{,}920\) resulting pairs.  There are \(7{,}152\)
+solutions of the initial scalar scheme
+
+\[
+ \Lambda^m(P^m)=0,\qquad 1\leq m\leq4.
+\]
+
+Only \(7{,}120\) survive through \(m=12\): all \(32\) delayed failures occur
+first at \(m=6\).  For example,
+
+\[
+\begin{aligned}
+ P&=(t-a-b+d)(ad+bt),\\
+ \Lambda&=\partial_t(
+ \partial_a\partial_b-\partial_b^2
+ -\partial_b\partial_d-\partial_d^2)
+\end{aligned}
+\]
+
+has zero pure contractions for \(1\leq m\leq5\), but
+
+\[
+ \Lambda^6(P^6)=-22{,}394{,}880{,}000.
+\]
+
+This is a concrete warning that the requested \(m\leq4\) scheme has
+resonant false positives.
+
+For every one of the \(7{,}120\) order-twelve survivors, the search also
+computes the full linear map
+
+\[
+ Q\longmapsto\Lambda^m(QP^m),\qquad
+ Q\in\langle t,a,b,d\rangle,
+\]
+
+for \(5\leq m\leq12\).  No survivor admits a fixed linear multiplier that
+is nonzero at every order in that window.  This uses the whole multiplier
+space: over characteristic zero a fixed generic \(Q\) avoids finitely many
+nonzero kernels, so it is enough to test whether the map itself is nonzero
+at each order.
+
+Run
+
+```bash
+python3 scripts/search_dvorsky_gvc4_bounded.py
+```
+
+The generated certificate is
+[`dvorsky_gvc4_bounded_search.json`](../artifacts/generated-results/dvorsky_gvc4_bounded_search.json).
+This is an exhaustive negative result only in the declared lattice slice.
+It does not exclude rational points outside the coefficient boxes, symbols
+outside (6.2), nonlinear multipliers, or later behavior of the cutoff
+survivors.  In particular it does **not** establish GVC(4) or SIC(4), and
+the certified frontier remains the five-variable/five-pair
+Long--Dvorsky witness.
