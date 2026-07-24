@@ -8,7 +8,8 @@ This first formalization stage certifies:
 
 * the denominator-free degree-five map has Jacobian determinant `-722`;
 * it is `diag(1,19,19)` of the determinant-`-2` quadratic gauge;
-* a further fixed output scaling gives Jacobian determinant `1`;
+* a further fixed output scaling gives Jacobian determinant `1` while fixing
+  the distinguished target because its second coordinate is zero;
 * the inverse polynomial at the distinguished target is the Berend--Bilu
   quintic;
 * an explicit Bezout identity supplies the inverse of its derivative in the
@@ -45,7 +46,7 @@ def normalizedMap : Fin 3 → M :=
 
 /-- The fixed determinant-one normalization used by the main realization theorem. -/
 def jacobianOneMap : Fin 3 → M :=
-  scaleOutput (-1 / 2 : ℚ) 1 1 normalizedMap
+  scaleOutput 1 (-1 / 2 : ℚ) 1 normalizedMap
 
 set_option maxHeartbeats 0 in
 /-- The displayed denominator-free map has Jacobian determinant `-722`. -/
