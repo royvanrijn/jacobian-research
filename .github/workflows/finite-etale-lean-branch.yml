@@ -50,10 +50,11 @@ jobs:
           mkdir -p artifacts/verification
           set -o pipefail
           cd formal/finite-etale-keller
+          LAKE="$HOME/.elan/bin/lake"
           if [ "$CORE_RESULT" = success ]; then
-            lake build 2>&1 | tee ../../artifacts/verification/finite-etale-lean.log
+            "$LAKE" build 2>&1 | tee ../../artifacts/verification/finite-etale-lean.log
           else
-            lake build \
+            "$LAKE" build \
               FiniteEtaleKeller.ExplicitPolynomial \
               FiniteEtaleKeller.MarkedLine \
               FiniteEtaleKeller.Reconstruction \
