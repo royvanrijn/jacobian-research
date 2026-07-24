@@ -38,6 +38,7 @@ def g5 : Polynomial ℚ :=
 theorem inversePolynomial_eq_p5 : g5 - 19 = p5 := by
   rw [p5_expanded]
   unfold g5
+  rfl
 
 /-- Explicit derivative of the quintic. -/
 theorem p5_derivative :
@@ -46,6 +47,7 @@ theorem p5_derivative :
         + 3 * Polynomial.X ^ 2 - 38 * Polynomial.X - 19 := by
   rw [p5_expanded]
   simp
+  simp only [Polynomial.C_eq_natCast]
   ring
 
 /-- Integral numerator of the first Bézout coefficient. -/
@@ -84,7 +86,9 @@ theorem p5_bezout : bezoutU * p5 + bezoutV * p5.derivative = 1 := by
     _ = Polynomial.C (1 / 9234) * (9234 : Polynomial ℚ) := by
           rw [p5_bezout_integral]
     _ = Polynomial.C ((1 / 9234 : ℚ) * 9234) := by
-          rw [← Polynomial.C_eq_natCast, ← Polynomial.C_mul]
+          change Polynomial.C (1 / 9234) * Polynomial.C (9234 : ℚ) =
+            Polynomial.C ((1 / 9234 : ℚ) * 9234)
+          exact Polynomial.C_mul.symm
     _ = 1 := by norm_num
 
 /-- The class of `p5'` has the displayed inverse in `ℚ[X]/(p5)`. -/
