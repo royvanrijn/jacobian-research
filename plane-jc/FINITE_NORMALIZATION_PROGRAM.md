@@ -897,3 +897,282 @@ For the first free-depth-three numerical package, the sole dicritical has
 forces \(f_i=1\) over a line and \(M_i\cdot E_i=2\): the package passes the
 older pole-vector gates but cannot be realized with an isolated companion
 sheet.
+
+### Proposition 7.5 -- contraction and the two adjunction corrections
+
+Let \(\mu:\widetilde X\to X_{\mathrm{fin}}\) be the contraction from a
+smooth resolved source to the normal finite Stein model.  Partition the
+resolved boundary into the surviving curves \(H\) and the curves \(V\)
+contracted by the target morphism.  Equivalently, \(D_j\in V\) exactly when
+
+\[
+ \bar F^*L\cdot D_j=0.
+\]
+
+Write the resolved intersection matrix in blocks.  The Mumford intersection
+matrix on the finite model is
+
+\[
+ \boxed{
+ Q_{\mathrm{fin}}
+ =
+ Q_{HH}-Q_{HV}Q_{VV}^{-1}Q_{VH}.
+ }
+\tag{7.11}
+\]
+
+Indeed, the numerical pullback of a surviving prime must be orthogonal to
+every contracted curve.  Its exceptional correction is therefore
+\(-Q_{VV}^{-1}Q_{VH}\), and intersecting two such pullbacks gives (7.11).
+The Hodge index theorem makes \(Q_{VV}\) negative definite.
+
+For a surviving rational dicritical \(E\), put
+
+\[
+ \delta_X(E)
+ :=
+ (K_{X_{\mathrm{fin}}}+E)\cdot E+2.
+\tag{7.12}
+\]
+
+This is the degree of the surface adjunction different on \(E\); it need
+not vanish because contracting a vertical chain may create singularities on
+\(E\).  If the projective image \(C\) is a rational plane curve of degree
+\(c\), normalization of \(C\) contributes
+
+\[
+ \delta_C=(c-1)(c-2)=2p_a(C).
+\tag{7.13}
+\]
+
+Consequently the corrected residual-different formula is
+
+\[
+ R'\cdot E
+ =
+ M\cdot E+2f-2+\delta_X(E)-f\delta_C,
+\tag{7.14}
+\]
+
+whereas the projection formula gives independently
+
+\[
+ \boxed{
+ M\cdot E=fc^2-eE^2.
+ }
+\tag{7.15}
+\]
+
+Equations (7.11)--(7.15) are executable from \(Q,p,k\) and \(c\).
+
+#### What the first computation shows
+
+The correction terms are essential.  On the first free-depth-three package,
+contracting the two \(H\)-null curves gives
+
+\[
+ Q_{\mathrm{fin}}
+ =
+ \begin{pmatrix}
+ 2/3&1/3\\
+ 1/3&-1/3
+ \end{pmatrix}.
+\]
+
+The dicritical has \(E^2=-1/3\) and
+\(\delta_X(E)=2/3\).  For a line image, both corrected calculations force
+
+\[
+ M\cdot E=4/3.
+\]
+
+After scaling the same pole ray so that the dicritical has hyperplane degree
+three, interpreting it as a birational cubic image produces an uncorrected
+gap of \(2\).  This is exactly
+
+\[
+ (3-1)(3-2)=2,
+\]
+
+the normalization-conductor degree of a rational plane cubic.  Thus the
+naive projection comparison does **not** by itself exclude higher-degree
+image curves: after the surface and target adjunction differents are
+included, the equality is an identity.  Its value is organizational rather
+than immediately contradictory: it isolates the exact conductor cost that
+must be realized over the singularities of \(C\).
+
+The exact implementation is
+[`contract_keller_vertical_boundary`](cas/intrinsic_a2_boundary.py) and
+[`infer_finite_model_dicritical_projection_budget`](cas/intrinsic_a2_boundary.py).
+On each of the two existing 23-component terminal graphs it contracts nine
+\(H\)-null curves and gives \(E^2=33/8\).  Formally applying the Keller
+class \(K+3H\), the Case-1 image-degree rows \(c=3,6,12\) have
+
+\[
+ (f,f\delta_C)=(4,8),(2,40),(1,110),
+\]
+
+and the Case-2 row has \((c,f,f\delta_C)=(12,1,110)\).  All corrected
+budgets agree.  These are formal finite-model ledgers only: the terminal
+Newton frontend itself has transformed bracket \(X^2\), not constant
+Jacobian, so its separately computed actual ramification coefficients
+cannot be imported into a Keller normalization argument.
+
+The new obstruction target is therefore sharper than the naive
+self-intersection comparison: split the total conductor divisor of \(C\)
+among its singular points and prove that the distinguished affine sheet,
+boundary sheets, and punctures cannot realize the required local packets.
+
+### Proposition 7.6 -- the conductor Pareto face is unibranch
+
+Let \(C\subset\mathbf P^2\) be a rational curve of degree \(c\ge3\).  Write
+
+\[
+ \delta_{\mathrm{tot}}
+ =
+ \sum_{q\in\operatorname{Sing}C}\delta_q
+ =
+ \frac{(c-1)(c-2)}2.
+\tag{7.16}
+\]
+
+If \(q\) has \(r_q\) analytic branches, then
+
+\[
+ \delta_q\ge {r_q\choose2}.
+\tag{7.17}
+\]
+
+At fixed \(c\), consider the coarse complexity vector
+
+\[
+ \bigl(
+ \#\operatorname{Sing}C,
+ \#\nu^{-1}(\operatorname{Sing}C),\
+ \sum_q(r_q-1),\
+ \max_qr_q
+ \bigr).
+\tag{7.18}
+\]
+
+Its unique coordinatewise-minimal value is
+
+\[
+ \boxed{(1,1,0,1),}
+\tag{7.19}
+\]
+
+obtained by placing all of \(\delta_{\mathrm{tot}}\) at one unibranch
+singularity.  This face is geometrically nonempty for every \(c\): the curve
+
+\[
+ y^{c-1}z=x^c
+\tag{7.20}
+\]
+
+is rational, smooth at infinity, and has a single affine branch of type
+\((c-1,c)\), whose delta invariant is exactly
+\((c-1)(c-2)/2\).
+
+#### Consequence
+
+Neither the total conductor degree \((c-1)(c-2)\) nor its lift
+\(f(c-1)(c-2)\) forces two distinct normalization points over any target
+fiber.  Therefore the existing conductor-collision inequality cannot attack
+the Pareto-minimal target profile.  Any proof which converts total conductor
+degree directly into a packet of many distinct points is false without an
+additional reducedness, immersion, or branch-separation input.
+
+The bounded executable atlas
+[`target_conductor_atlas.py`](cas/target_conductor_atlas.py) enumerates
+partitions of \(\delta_{\mathrm{tot}}\), all branch counts allowed by
+(7.17), and the necessary branchwise conductor-weight partitions.  The
+low-degree regression is exhaustive through \(c=5\); the direct
+construction (7.20) certifies the minimal face through the current degree
+frontier \(125\) without enumerating exponentially many dominated profiles.
+For a cubic the two coarse faces are exactly:
+
+- a cusp: \((\delta,r)=(1,1)\), conductor weight \((2)\);
+- a node: \((\delta,r)=(1,2)\), conductor weights \((1,1)\).
+
+Thus the next local theorem should target the unibranch face itself.  In
+finite-normalization language, one must exclude a finite flat local algebra
+over a plane branch \(k[[t^{c-1},t^c]]\) whose ramified prime lies entirely
+in the deleted boundary while at least one affine prime supplies the
+distinguished Keller sheet.  This is a local algebra/monodromy problem, not
+a further global intersection inequality.
+
+### Proposition 7.7 -- residue immersion removes the unibranch face
+
+Under the logarithmic-purity hypotheses of the plane boundary-exclusion
+theorem, the residue map
+
+\[
+ \varphi:E\longrightarrow C
+\]
+
+is immersive at every point.  Factor it through normalization:
+
+\[
+ E\xrightarrow{g}\widetilde C\xrightarrow{\nu}C.
+\]
+
+If \(q\in C\) were a singular unibranch point and
+\(\widetilde q\in\widetilde C\) its unique preimage, then
+
+\[
+ d\nu_{\widetilde q}=0.
+\]
+
+Indeed, a plane branch is singular precisely when both coordinate functions
+of a normalization parametrization have order at least two.  Therefore
+\(d\varphi=d\nu\circ dg\) would vanish at every point of \(E\) over
+\(\widetilde q\), contradicting residue immersion.
+
+Consequently every singular point used by an immersive residue image has at
+least two normalization branches.  Applying this constraint to (7.18)
+changes the unique coarse Pareto minimum from
+
+\[
+ (1,1,0,1)
+\quad\hbox{to}\quad
+ \boxed{(1,2,1,2).}
+\tag{7.21}
+\]
+
+It consists of one target singularity with two smooth branches carrying the
+entire delta invariant.  Their contact can be arbitrarily high, so even
+after immersion the conductor degree does not force three or more
+normalization points.
+
+This reduction reconnects the global finite-normalization programme to the
+existing closed-fiber theorem.  If the two normalization points lift to
+distinct immersive points on a boundary prime of transverse index \(e\),
+finite flatness gives
+
+\[
+ d\ge2e.
+\tag{7.22}
+\]
+
+For one boundary row of residue degree one, \(d=e+a\), hence
+
+\[
+ \boxed{a\ge e.}
+\tag{7.23}
+\]
+
+Thus every primitive or sheet-deficient row \(a<e\) is excluded,
+independently of the degree and tangency order of the target curve.
+
+What remains is exactly delimited.  One must handle ledgers in which:
+
+- the affine contribution satisfies \(a\ge e\);
+- several boundary primes share the conductor packet;
+- the two target branches lift to points on different source primes; or
+- logarithmic purity/target transfer has not yet been certified.
+
+The conductor atlas now implements both Pareto faces.  Exhaustive
+enumeration through degree five and the direct formulas through degree 125
+verify that residue immersion always moves the minimum from the concentrated
+unibranch profile to the concentrated two-branch profile.

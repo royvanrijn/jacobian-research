@@ -5267,11 +5267,38 @@
       "priority": "derived"
     },
     {
+      "id": "HR42C",
+      "kind": "corollary",
+      "state": "proved",
+      "title": "Degree-forty-two completed Ritt conormal flag",
+      "scope": "On the normalized 2 o 7 o 3 chart, exact graph-normal coordinates give the completed ideal flag I_6 strictly contained in I_7=I_boundary strictly contained in K, with all three quotient schemes of dimension two. At the monomial point their conormal ranks are 5,6,7, so the path-to-boundary sector and boundary-to-Dickson spectator each contribute one direction. The relative sector module I_boundary/I_6 is killed minimally by z^8, while the common spectator module K/I_boundary is killed minimally by z. Completed jet lengths through order three are respectively (1,5,14), (1,4,9), and (1,3,6). Thus orientation, rank, and monomial support persist from degree thirty, but the cut-6 sector thickness changes from z^4 to z^8. No splitting of the cotangent transitivity triangle or full L-infinity model is claimed.",
+      "canonical_source": "extended-geometry/DEGREE42_RITT_RELATIVE_COTANGENT_CONE.md",
+      "dependencies": [
+        "HR30C",
+        "HRSYNC"
+      ],
+      "checker": "scripts/verify_degree42_ritt_relative_cotangent_cone.py",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:061f97b600080d60a01009176920d36948a356709c1e9c8802eb168f75edc350",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [
+        "degree-forty-two raw spectator-independence alternatives"
+      ],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
       "id": "OP-RITT",
       "kind": "open_problem",
       "state": "open",
       "title": "Vertical imprimitive-specialization loci",
-      "scope": "Replace degree-by-degree elimination by the completed Hessian--Ritt deformation complex. Use tame Ritt--Engstrom relation graphs for reduced power/Dickson components; present the formal intersection as the homotopy limit of the coefficient-decorated factor, move, and labelled 2-cell diagram and compute its cotangent complex by cellular totalization; prove the Hessian lift defect is null-homotopic on every filtered layer; prove relative obstruction vanishing for universal commuting and braid cells; and recover nilpotent thickenings and their power--Dickson boundary gluing from the completed deformation algebra. The first tests are reconstruction of the degree-30 sector Artin algebras and separation of the universal relative defect from the common spectator layer in degree 42. HRLL closes reduced degree-30 component completeness, leaving nonreduced terminal-refinement existence, coherence, power--Dickson boundary gluing, and later affine-sheet compactification.",
+      "scope": "Replace degree-by-degree elimination by the completed Hessian--Ritt deformation complex. Use tame Ritt--Engstrom relation graphs for reduced power/Dickson components; present the formal intersection as the homotopy limit of the coefficient-decorated factor, move, and labelled 2-cell diagram and compute its cotangent complex by cellular totalization; prove the Hessian lift defect is null-homotopic on every filtered layer; prove relative obstruction vanishing for universal commuting and braid cells; and recover nilpotent thickenings and their power--Dickson boundary gluing from the completed deformation algebra. HR42C separates the degree-42 conormal flag into a z^8 sector layer and a z spectator layer, while HRLL closes reduced degree-30 component completeness. The next tasks are module presentations and the extension class for the HR42C transitivity triangle, nonreduced terminal-refinement existence, universal commuting/mixed cells, power--Dickson boundary gluing, and later affine-sheet compactification.",
       "canonical_source": "extended-geometry/HESSIAN_RITT_DEFORMATION_COMPLEX.md",
       "dependencies": [
         "HR12",
@@ -5281,6 +5308,7 @@
         "HR42J",
         "HR42K",
         "HR42R",
+        "HR42C",
         "HR30C",
         "HRLL"
       ],

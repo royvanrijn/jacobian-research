@@ -1,1 +1,1 @@
-import GMC2.LowerFace
+import GMC2.BivariateGaussian

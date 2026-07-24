@@ -167,11 +167,13 @@ structure ExposedLowestTerm
   coeff_ne_zero : (constantTerm (P ^ r)).coeff n ≠ 0
   coeff_below_eq_zero :
     ∀ j < n, (constantTerm (P ^ r)).coeff j = 0
+  scaled_coeff_below_eq_zero :
+    ∀ q j, j < n * q → (constantTerm (P ^ (r * q))).coeff j = 0
 
 /-- The lower-face lemma of the paper, including the DvdK step and the
 associated-graded identification of the exposed coefficient. -/
 noncomputable def exposedLowestTerm_of_straddles
-    {K : Type*} [Field K] [CharZero K]
+    {K : Type*} [CommRing K] [IsDomain K] [CharZero K]
     (P : CircularPolynomial K) (hconv : SupportStraddlesZero P) :
     ExposedLowestTerm P := by
   classical
@@ -180,7 +182,7 @@ noncomputable def exposedLowestTerm_of_straddles
   let P₀ := lowerFacePolynomial P C
   have hP₀conv : SupportStraddlesZero P₀ :=
     lowerFacePolynomial_straddles P C
-  have hdvk := duistermaat_van_der_kallen P₀ hP₀conv
+  have hdvk := duistermaat_van_der_kallen_domain P₀ hP₀conv
   let r := Classical.choose hdvk
   have hrSpec := Classical.choose_spec hdvk
   have hr : 0 < r := hrSpec.1
@@ -266,21 +268,42 @@ noncomputable def exposedLowestTerm_of_straddles
       r_pos := hr
       n := n
       coeff_ne_zero := hcoeff
-      coeff_below_eq_zero := ?_ }
-  intro j hj
-  by_contra hjcoeff
-  have hsupport :
-      (0, j) ∈ (f ^ r).coeff.support := by
-    apply Finsupp.mem_support_iff.mpr
-    have hmap : f ^ r = circularBigradedEquiv K (P ^ r) := by
-      simp [f]
-    rw [hmap, circularBigradedEquiv_coeff]
-    simpa using hjcoeff
-  have hlower :=
-    hasLowerBidegreeWeight_pow C.slope C.intercept f
-      (certificate_lower_weight P C) r (0, j) hsupport
-  simp [bidegreeWeight] at hlower
-  have hjQ : (j : ℚ) < (n : ℚ) := by exact_mod_cast hj
-  linarith
+      coeff_below_eq_zero := ?_
+      scaled_coeff_below_eq_zero := ?_ }
+  · intro j hj
+    by_contra hjcoeff
+    have hsupport :
+        (0, j) ∈ (f ^ r).coeff.support := by
+      apply Finsupp.mem_support_iff.mpr
+      have hmap : f ^ r = circularBigradedEquiv K (P ^ r) := by
+        simp [f]
+      rw [hmap, circularBigradedEquiv_coeff]
+      simpa using hjcoeff
+    have hlower :=
+      hasLowerBidegreeWeight_pow C.slope C.intercept f
+        (certificate_lower_weight P C) r (0, j) hsupport
+    have hlower' : (r : ℚ) * C.intercept ≤ (j : ℚ) := by
+      simpa only [bidegreeWeight, Int.cast_zero, mul_zero, sub_zero] using hlower
+    have hjQ : (j : ℚ) < (n : ℚ) := by exact_mod_cast hj
+    linarith
+  · intro q j hj
+    by_contra hjcoeff
+    have hsupport :
+        (0, j) ∈ (f ^ (r * q)).coeff.support := by
+      apply Finsupp.mem_support_iff.mpr
+      have hmap :
+          f ^ (r * q) = circularBigradedEquiv K (P ^ (r * q)) := by
+        simp [f]
+      rw [hmap, circularBigradedEquiv_coeff]
+      simpa using hjcoeff
+    have hlower :=
+      hasLowerBidegreeWeight_pow C.slope C.intercept f
+        (certificate_lower_weight P C) (r * q) (0, j) hsupport
+    have hlower' :
+        ((r * q : ℕ) : ℚ) * C.intercept ≤ (j : ℚ) := by
+      simpa only [bidegreeWeight, Int.cast_zero, mul_zero, sub_zero] using hlower
+    have hjQ : (j : ℚ) < ((n * q : ℕ) : ℚ) := by exact_mod_cast hj
+    push_cast at hlower' hjQ
+    nlinarith
 
 end GMC2

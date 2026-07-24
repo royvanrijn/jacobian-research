@@ -10,8 +10,16 @@ to five harmless families across term counts three and four; moments through
 24 remove two finite-cutoff four-term artifacts.  The three genuine
 survivors are then identified symbolically.
 
-The four-term pass takes several minutes because it replays 5,718 saturated
-coefficient-torus ideals over Q.
+Each support is first replaced by its exact charge/parity contraction
+semigroup.  A Pottier-bounded Hilbert-basis computation rejects rank-one
+semigroups before Wick coefficients are expanded, and charge/parity-
+equivalent supports share their contraction-vector enumeration.
+
+The four-term pass replays 5,718 coefficient-torus ideals over Q directly
+in Laurent coordinates, without an auxiliary saturation variable.
+Whenever a support has two distinct Gaussian charges, overall scaling and
+the Gaussian-preserving torus action reduce its four coefficient variables
+to a two-dimensional orbit slice before Gröbner elimination.
 """
 
 from __future__ import annotations
@@ -23,10 +31,15 @@ import sympy as sp
 from explore_three_real_gmc_sparse_supports import (
     Candidate,
     canonical_support,
+    coefficient_charge,
+    contraction_hilbert_basis,
     enumerate_candidates,
     format_support,
+    free_coefficient_indices,
+    invariant_ratio_exponents,
     monomials,
-    modular_screen,
+    laurent_screen,
+    normalization_anchors,
     wick_moment_terms,
 )
 
@@ -65,6 +78,7 @@ def check_inactive_supports() -> int:
             if all(charge > 0 for charge in charges) or all(
                 charge < 0 for charge in charges
             ):
+                assert contraction_hilbert_basis(support) == ()
                 inactive_count += 1
                 continue
 
@@ -84,17 +98,39 @@ def check_inactive_supports() -> int:
                 ) // gcd(positive, abs(negative))
                 bound = 2 * primitive_length
             assert bound <= 16
+            primitive_contractions = contraction_hilbert_basis(support)
+            assert primitive_contractions
+            assert min(sum(vector) for vector in primitive_contractions) <= bound
     return inactive_count
+
+
+def check_coefficient_symmetries() -> None:
+    """Check the normalization rank on every support."""
+    for term_count in range(1, 5):
+        for support in combinations(monomials(4), term_count):
+            anchors = normalization_anchors(support)
+            assert anchors[0] == 0
+            assert len(anchors) in (1, 2)
+            if len(anchors) == 2:
+                assert coefficient_charge(support[anchors[0]]) != coefficient_charge(
+                    support[anchors[1]]
+                )
+                for free_index in free_coefficient_indices(support):
+                    invariant_ratio_exponents(support, free_index)
+            else:
+                assert len({coefficient_charge(monomial) for monomial in support}) == 1
+            assert len(free_coefficient_indices(support)) == term_count - len(anchors)
 
 
 def exact_survivors(term_count: int) -> tuple[Candidate, ...]:
     _, _, candidates = enumerate_candidates(4, term_count, 20)
-    return modular_screen(candidates, prime=0, timeout=1200)
+    return laurent_screen(candidates, prime=0, timeout=1200)
 
 
 def survivor_groebner(
     support: tuple[tuple[int, int, int], ...], bound: int
 ) -> list[sp.Expr]:
+    """Export a polynomial certificate after the Laurent search is complete."""
     x1, x2, x3, inverse = sp.symbols("x1 x2 x3 inverse")
     variables = (x1, x2, x3)
     equations: list[sp.Expr] = []
@@ -120,6 +156,7 @@ def survivor_groebner(
 
 
 def main() -> None:
+    check_coefficient_symmetries()
     inactive_count = check_inactive_supports()
 
     def assert_basis_equal(actual: list[sp.Expr], expected: list[sp.Expr]) -> None:
@@ -164,7 +201,7 @@ def main() -> None:
         ARTIFACT_SUPPORTS[1],
     )
 
-    four_term_at_24 = modular_screen(
+    four_term_at_24 = laurent_screen(
         tuple(candidate(item.support, 24) for item in four_term_at_20),
         prime=0,
         timeout=300,
@@ -195,6 +232,8 @@ def main() -> None:
     assert sp.simplify(covariance) == 0
 
     print(f"PASS sparse Pareto: {inactive_count} termwise-null orbit supports are one-sided")
+    print("PASS sparse Pareto: exact contraction Hilbert bases precede moment expansion")
+    print("PASS sparse Pareto: coefficient ideals are tested directly on the Laurent torus")
     print("PASS sparse Pareto: exact Q search covers degree<=4 and terms<=4")
     print("PASS sparse Pareto: moments<=24 leave exactly three genuine null families")
     print("PASS sparse Pareto: linear, shear, and product families all satisfy GMC")

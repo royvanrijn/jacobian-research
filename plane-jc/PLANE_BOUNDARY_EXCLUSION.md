@@ -329,6 +329,33 @@ In general, \(d=e+a\) turns this into the necessary inequality
  \boxed{a\ge e.}
 \]
 
+### 4.3 Why total conductor reduces to two points under immersion
+
+For a rational plane curve of degree \(c\), the normalization conductor has
+total degree
+
+\[
+ (c-1)(c-2).
+\]
+
+This number alone does not force many distinct points: it can all be
+concentrated at one unibranch cusp.  Such a cusp is unavailable here,
+however, because the normalization map of a singular plane branch has zero
+differential at its unique preimage, whereas Section 2 proves that the
+boundary residue map is immersive everywhere.
+
+The least complicated remaining conductor profile is therefore one
+singular target point with two smooth normalization branches.  Arbitrarily
+large conductor can still be stored in their contact order, so no
+three-point bound follows.  But the two distinct normalization points are
+exactly the packet used in Section 4.2.  Hence the inequality \(a\ge e\)
+applies to the entire immersion-compatible Pareto-minimal conductor face,
+not merely to an ordinary node.
+
+The executable enumeration and the direct degree-independent Pareto proof
+are in
+[`cas/target_conductor_atlas.py`](cas/target_conductor_atlas.py).
+
 If \(e=1\), the finite map is etale on \(U\), and the residue-Jacobian
 argument proves it etale along \(D\) as well.  Hence \(\pi\) is a connected
 finite etale cover of \(\mathbb A^2\), so it has degree one; this is

@@ -148,6 +148,26 @@ assert (
     == first_projection.projection_forced_companion_intersection
 )
 
+# Scaling the same pole ray makes (f^*L).E3=3.  Interpreting the image as a
+# rational cubic leaves a naive budget gap two, exactly the degree of the
+# normalization conductor, (c-1)(c-2).  Including that target correction
+# restores equality.
+cubic_image_package = audit_keller_pole_vector(
+    free_audits[2], (9, 6, 3, 0), require_nonproper=True
+)
+assert cubic_image_package.passes
+cubic_projection = infer_finite_model_dicritical_projection_budget(
+    cubic_image_package, "E3", 3
+)
+assert cubic_projection.residue_degree == 1
+assert cubic_projection.target_normalization_correction == 2
+assert (
+    cubic_projection.projection_forced_companion_intersection
+    - cubic_projection.residual_forced_companion_intersection
+    == 2
+)
+assert cubic_projection.budgets_match
+
 unpaid_first_possible = audit_keller_residual_different(
     first_possible,
     (KellerDicriticalDatum("E3", 1, 0),),

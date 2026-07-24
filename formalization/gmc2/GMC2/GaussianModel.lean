@@ -22,6 +22,16 @@ noncomputable def factorialFunctional
     {R : Type*} [CommRing R] (f : R[X]) : R :=
   f.sum fun j a ↦ a * (Nat.factorial j : R)
 
+@[simp] theorem factorialFunctional_add
+    {R : Type*} [CommRing R] (f g : R[X]) :
+    factorialFunctional (f + g) =
+      factorialFunctional f + factorialFunctional g := by
+  rw [factorialFunctional, factorialFunctional, factorialFunctional]
+  exact Polynomial.sum_add_index f g
+    (fun j a ↦ a * (Nat.factorial j : R))
+    (fun _ ↦ zero_mul _)
+    (fun _ _ _ ↦ add_mul _ _ _)
+
 @[simp] theorem factorialFunctional_monomial
     {R : Type*} [CommRing R] (j : ℕ) (a : R) :
     factorialFunctional (Polynomial.monomial j a) =

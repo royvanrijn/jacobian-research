@@ -534,10 +534,28 @@ possibilities:
 
 The second formulation is especially compatible with a Soergel-style
 picture: comparison should retain a top Dickson piece, a common lower layer,
-   and the sector-dependent relative defect, rather than identify a raw path
-scheme with a single universal algebra.  The next calculation should
-construct the completed \(K\)-primary ideals and compare the relative
-cotangent complexes
+and the sector-dependent relative defect, rather than identify a raw path
+scheme with a single universal algebra.
+
+The [degree-forty-two relative-cone calculation](DEGREE42_RITT_RELATIVE_COTANGENT_CONE.md)
+now makes this separation exact.  In `7 normal | 2 base` completed
+coordinates,
+
+\[
+ I_6\subsetneq I_7=I_\partial\subsetneq K.
+\]
+
+All three schemes have dimension two.  The two successive conormal
+quotients have dimension one at the monomial point.  The spectator module
+\(K/I_\partial\) is killed minimally by \(z\), while the relative sector
+module \(I_\partial/I_6\) is killed minimally by \(z^8\).  Thus the
+prime-omitting path is exactly the common spectator layer and the
+composite-omitting path adds a separate eightfold \(z\)-adic sector layer.
+The degree-thirty cut-`6` exponent is \(4\), so relative tangent rank and
+support are spectator-independent but the completed thickness is not.
+
+The remaining derived calculation is to present the two modules and compute
+the extension class in the transitivity triangle
 
 \[
  L_{K/I_6}\longrightarrow L_{K/I_\partial},
@@ -545,5 +563,7 @@ cotangent complexes
  L_{K/I_7}\longrightarrow L_{K/I_\partial}.                  \tag{8.5}
 \]
 
-The exact exploratory checker is
+The original raw-ideal exploration is
 [`explore_degree42_ritt_spectator_universality.py`](../scripts/explore_degree42_ritt_spectator_universality.py).
+The exact completed-flag checker is
+[`verify_degree42_ritt_relative_cotangent_cone.py`](../scripts/verify_degree42_ritt_relative_cotangent_cone.py).

@@ -3,6 +3,9 @@
 
 import sympy as sp
 
+from intrinsic_a2_boundary import (
+    infer_finite_model_dicritical_projection_budget,
+)
 from log_boundary_compiler import (
     BranchScale,
     NewtonBoundaryCertificate,
@@ -414,6 +417,43 @@ assert case1_package.boundary_audit.passes
 assert case1_package.pole_audit.passes
 assert case1_package.pole_audit.geometric_degree == 29
 assert case1_package.pole_audit.dicritical_candidates == ("R1_1",)
+
+# Contracting the nine H-null boundary curves in either terminal graph gives
+# the same formal finite Stein-model row.  These use the Keller class
+# K+3H; the later transformed-Poisson correction [P,Q]=X^2 is deliberately
+# a separate, nonconstant-Jacobian audit.
+case1_finite_budgets = tuple(
+    infer_finite_model_dicritical_projection_budget(
+        case1_package.pole_audit, "R1_1", image_degree
+    )
+    for image_degree in (3, 6, 12)
+)
+case2_finite_budget = infer_finite_model_dicritical_projection_budget(
+    case2_package.pole_audit, "T2", 12
+)
+assert all(budget.budgets_match for budget in case1_finite_budgets)
+assert case2_finite_budget.budgets_match
+assert all(
+    len(budget.contraction.contracted_names) == 9
+    for budget in (*case1_finite_budgets, case2_finite_budget)
+)
+assert all(
+    budget.finite_self_intersection == sp.Rational(33, 8)
+    for budget in (*case1_finite_budgets, case2_finite_budget)
+)
+assert tuple(
+    (
+        budget.target_curve_degree,
+        budget.residue_degree,
+        budget.target_normalization_correction,
+    )
+    for budget in case1_finite_budgets
+) == ((3, 4, 8), (6, 2, 40), (12, 1, 110))
+assert (
+    case2_finite_budget.residue_degree,
+    case2_finite_budget.target_normalization_correction,
+) == (1, 110)
+
 poisson_ramification = {
     audit.terminal_case: audit
     for audit in frontier_72_108_poisson_ramification_audits()
@@ -1019,6 +1059,7 @@ print("PASS: the common graph has no dicritical and cannot be globally exhaustiv
 print("PASS: J4 forces the E3-E4 cluster and excludes a smooth E3 basepoint")
 print("PASS: terminal Case 2 compiles to a complete intrinsic boundary package")
 print("PASS: the alternate q=3 chart selects and resolves Case-1 partition [4]")
+print("PASS: terminal graphs contract to corrected finite-model conductor budgets")
 print("PASS: div(X^2) corrects the terminal ramification indices to 3 and 5")
 print("PASS: J1 compatibility excludes the forced Case-2 degree-twelve endpoint")
 print("PASS: compact J0 certificates exclude precompatibility gcd degrees six,seven")

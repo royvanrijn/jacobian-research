@@ -11,6 +11,7 @@ SYSTEM_PYTHON ?= python3
 	verify-foundations verify-foundations-formal \
 	verify-coincident-root-loci verify-papers verify-ritt-boundary \
 	verify-ritt-2-complex verify-ll-ritt-reduction verify-ritt-deformation-complex \
+	verify-degree42-ritt-relative-cone \
 	verify-hessian-synchronization \
 	verify-common-right-factor-synchronization \
 	verify-degree42-hessian-normal-jets \
@@ -48,6 +49,7 @@ verify-plane-jc:
 	$(PYTHON) plane-jc/cas/test_intrinsic_a2_boundary.py
 	$(PYTHON) plane-jc/cas/test_plane_boundary_exclusion.py
 	$(PYTHON) plane-jc/cas/test_finite_normalization_signatures.py
+	$(PYTHON) plane-jc/cas/test_target_conductor_atlas.py
 	$(PYTHON) plane-jc/cas/test_log_boundary_compiler.py
 	$(PYTHON) plane-jc/cas/test_poisson_square_rigidity.py
 	$(PYTHON) plane-jc/cas/test_poisson_square_filtered_modules.py
@@ -94,6 +96,9 @@ verify-ll-ritt-reduction:
 
 verify-ritt-deformation-complex:
 	$(PYTHON) scripts/verify_hessian_ritt_deformation_complex.py
+
+verify-degree42-ritt-relative-cone:
+	$(PYTHON) scripts/verify_degree42_ritt_relative_cotangent_cone.py
 
 verify-hessian-synchronization:
 	$(PYTHON) scripts/verify_hessian_synchronization_lifts.py

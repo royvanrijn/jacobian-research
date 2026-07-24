@@ -213,9 +213,45 @@ The principal commands are
   --transition --print-lift
 ```
 
-The next decisive computation is rational reconstruction of the modular
-order-seven lift followed by direct exact membership, which avoids another
-full characteristic-zero saturation.
+The next decisive computation was initially expected to be rational
+reconstruction of the modular order-seven lift.  The subsequent search
+replaced it by the simpler single-colon test below.
+
+The reconstruction search sharpens this substantially.  The fixed integer
+characteristic-zero witness reduces to an order-seven class represented by
+the same normal-form polynomial in characteristic \(101\), and
+\[
+ c_6\ne0\pmod {I+\mathfrak m^7},\qquad
+ w_0c_6=0\pmod {I+\mathfrak m^7}.
+\]
+Both the original `slimgb` basis and an independently re-standardized basis
+give the same annihilation result.  Equivalently, the transition problem is
+the single-colon membership
+\[
+ c_6\in (I+\mathfrak m^7:w_0)+(I+\mathfrak m^6).
+\]
+This modular calculation has basis sizes \(39\) at order six and \(44\) at
+order seven; the \(w_0\)-colon has size \(24\), and all four direct checks
+(lift, nonvanishing, transition, and annihilation) return one.
+
+This also explains why naive coefficientwise CRT failed.  Different primes
+select different representatives in the nontrivial transition kernel; even
+the pure sixth-layer corrections are not canonical.  The correct exact
+target is therefore the displayed single-colon identity, not reconstruction
+of arbitrary saturation representatives.
+
+Two characteristic-zero direct attempts were made: first with the redundant
+order-six basis and then with only the order-seven basis and the fixed
+integer polynomial \(c_6\).  Both hit a twenty-minute cap.  Thus order seven
+is still modular rather than an exact characteristic-zero theorem.  The
+remaining exact computation is the fixed direct identity
+\(w_0c_6\in I+\mathfrak m^7\) and no longer requires support saturation or
+an unknown lift.  The direct-identity regression is
+[`scripts/verify_degree42_order7_known_witness.py`](scripts/verify_degree42_order7_known_witness.py).
+The colon-transition and graded-correction diagnostics are
+[`scripts/verify_degree42_order7_colon_lift.py`](scripts/verify_degree42_order7_colon_lift.py)
+and
+[`scripts/search_degree42_order7_graded_lift.py`](scripts/search_degree42_order7_graded_lift.py).
 
 ## C. Three-boundary Keller suspensions
 

@@ -46,6 +46,33 @@ and infers the forced companion-sheet intersection
 companion geometry can then be checked for exact equality.  The
 first free-depth-three package consequently forces companion intersection
 two on its degree-one dicritical.
+The same intrinsic module now contracts every `H`-null boundary curve by an
+exact Schur complement, producing the Mumford intersection form on the
+normal finite Stein model.  Its projection audit keeps both adjunction
+corrections visible: the surface different created by contracted chains and
+the normalization conductor `(c-1)(c-2)` of a rational plane image curve.
+The free-depth-three example gives `E^2=-1/3`, surface different `2/3`, and
+corrected companion intersection `4/3`.  On the two terminal 23-component
+graphs the formal Keller-class audit contracts nine curves and gives
+`E^2=33/8`; every candidate image-degree row balances after its target
+conductor cost is included.  Because those terminal Newton pairs have
+bracket `X^2`, these last values are comparison ledgers, not a Keller-map
+exclusion.
+[`target_conductor_atlas.py`](target_conductor_atlas.py) performs the next
+bounded reduction.  For a rational plane curve it distributes
+`delta=(c-1)(c-2)/2` among singular points, enumerates every branch count
+allowed by `delta_q >= binomial(r_q,2)`, and records necessary branchwise
+conductor weights.  Exhaustive degrees three through five show that the
+unique Pareto-minimal profile concentrates the entire conductor at one
+unibranch point.  The explicit curve `y^(c-1)z=x^c` proves this face exists
+in every degree, so total conductor cannot by itself force a collision of
+distinct normalization points.  The direct minimal-face regression scales
+through degree 125.  Applying the already-proved residue-immersion gate
+removes every singular unibranch packet.  The unique remaining Pareto
+minimum is one two-branch singularity, with complexity `(1,2,1,2)`;
+arbitrary conductor remains possible through branch tangency, but the two
+normalization points now activate the finite-flat packet inequality
+`d>=2e`, equivalently `a>=e` for one residue-degree-one boundary row.
 The next command turns certified monomial branch
 scales into regular toroidal
 blowups, a proximity graph, complete boundary and intersection matrices,

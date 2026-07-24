@@ -49,16 +49,18 @@ theorem duistermaat_van_der_kallen_domain
       change (AddMonoidAlgebra.mapRingHom ℤ ι f).coeff a ≠ 0
       rw [AddMonoidAlgebra.coeff_mapRingHom]
       intro h
-      apply Finsupp.mem_support_iff.mp ha
-      apply IsFractionRing.injective A (FractionRing A)
-      simpa using h
+      have hzero : f.coeff a = 0 :=
+        (IsFractionRing.injective A (FractionRing A))
+          (h.trans (map_zero ι).symm)
+      exact (Finsupp.mem_support_iff.mp ha) hzero
     · apply Finsupp.mem_support_iff.mpr
       change (AddMonoidAlgebra.mapRingHom ℤ ι f).coeff b ≠ 0
       rw [AddMonoidAlgebra.coeff_mapRingHom]
       intro h
-      apply Finsupp.mem_support_iff.mp hb
-      apply IsFractionRing.injective A (FractionRing A)
-      simpa using h
+      have hzero : f.coeff b = 0 :=
+        (IsFractionRing.injective A (FractionRing A))
+          (h.trans (map_zero ι).symm)
+      exact (Finsupp.mem_support_iff.mp hb) hzero
   obtain ⟨r, hr, hcoeff⟩ := duistermaat_van_der_kallen f' hconv'
   refine ⟨r, hr, ?_⟩
   intro hzero

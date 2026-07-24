@@ -1,5 +1,4 @@
-# The Gaussian Moments Conjecture:
-# Dimension Two and Sparse Minimality in Dimension Three
+# The Gaussian Moments Conjecture in Two Variables
 
 Standalone source for the paper by Roy van Rijn.
 
@@ -15,27 +14,12 @@ The proof has four dependencies:
    \(\mathbb E(F)=\mathcal L(\operatorname{CT}_T F)\);
 2. an elementary supporting-line argument for the lowest radial orders;
 3. the Duistermaat--van der Kallen constant-term theorem;
-4. Frobenius and factorial isolation after reduction modulo a prime.
-
-The paper now has two main results:
-
-1. a conceptual proof of GMC(2), requiring no support computation; and
-2. an exhaustive exact sparse Pareto theorem in dimension three: no GMC
-   failure has both degree at most four and at most four monomials in a
-   Gaussian Witt frame.
-
-Replay the computer-assisted second theorem from the repository root with:
-
-```sh
-.venv/bin/python scripts/verify_three_real_gmc_sparse_pareto.py
-```
-
-The script recomputes all rational saturated moment ideals and takes several
-minutes.
+4. the filtered Frobenius isolation lemma after reduction modulo a prime.
 
 A companion Lean 4 package is located at
 [`../../formalization/gmc2`](../../formalization/gmc2/README.md).  It checks
-the factorial-divisibility, prime-isolation, Frobenius/constant-term, and
-eventual one-sided-support modules without `sorry`.  The DvdK theorem,
-rational supporting-face extraction, and finite-type specialization remain
-explicit named axioms.
+the full bivariate theorem, from the circular substitution and Wick formula
+through lower-face extraction, finite coefficient-ring descent,
+prime-isolation, and eventual one-sided support, without `sorry`.  The
+rational supporting-face extraction is proved directly; the DvdK theorem
+and finite-type specialization remain explicit named axioms.

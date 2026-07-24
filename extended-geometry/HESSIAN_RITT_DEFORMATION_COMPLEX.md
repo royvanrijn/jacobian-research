@@ -305,10 +305,11 @@ Before claiming the theorem, the following tests are decisive.
 * Reconstruct the three degree-thirty transverse Artin algebras from
   \(H^0\widehat{\mathrm{CE}}(\mathfrak g)\), including generator orders
   \((5)\), \((2,2)\), and \((4,2)\).
-* Compute the completed relative cones
-  \(L_{K/I_{\rm path}}\to L_{K/I_\partial}\) in degree forty-two and separate
-  the universal one-dimensional sector defect from the common spectator
-  layer.
+* The completed degree-forty-two ideal flag and first conormal layers are now
+  computed: the prime-omitting path equals the boundary, the spectator
+  quotient has minimal \(z\)-annihilation exponent one, and the relative
+  sector quotient has exponent eight.  Compute their module presentations
+  and the extension class in the cotangent transitivity triangle.
 * Verify a commuting square with both power and Dickson labels; a bare
   topological square has no scheme-theoretic content.
 * Show that the lift cocycle is null-homotopic, rather than merely zero on

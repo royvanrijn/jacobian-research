@@ -19,16 +19,15 @@
 \newcommand{\conv}{\operatorname{conv}}
 \newcommand{\Supp}{\operatorname{Supp}}
 
-\title{The Gaussian Moments Conjecture:\\
-Dimension Two and Sparse Minimality in Dimension Three}
+\title{The Gaussian Moments Conjecture in Two Variables}
 \author{Roy van Rijn\\{\small Independent researcher}}
-\date{24 July 2026}
+\date{23 July 2026}
 \hypersetup{
-  pdftitle={The Gaussian Moments Conjecture: Dimension Two and Sparse Minimality in Dimension Three},
+  pdftitle={The Gaussian Moments Conjecture in Two Variables},
   pdfauthor={Roy van Rijn},
-  pdfsubject={The dimension threshold and sparse minimal counterexamples for the Gaussian Moments Conjecture},
+  pdfsubject={The Gaussian Moments Conjecture in two real variables},
   pdfkeywords={Gaussian Moments Conjecture, Gaussian moments, constant terms,
-    Laurent polynomials, sparse polynomials, Groebner bases}
+    Laurent polynomials, constant-term theorem}
 }
 
 \begin{document}
@@ -47,15 +46,7 @@ isolate a nonzero lowest term.  This forces every polynomial with vanishing
 pure moments to have rotational weights of one strict sign, from which the
 mixed-moment conclusion is immediate.  Together with the recent
 counterexamples of Long in every dimension at least three, this determines
-the exact dimensional range of the conjecture.  We then study minimal
-failure in the first failing dimension.  An exhaustive exact search over
-all \(59{,}535\) supports having degree at most four and at most four
-monomials shows that every pure-moment-null polynomial in this range still
-satisfies the conjectural mixed-moment conclusion.  Thus Long's five-term
-quartic is Pareto-minimal with respect to degree and circular-coordinate
-support size.  The sparse theorem is computer-assisted: saturated moment
-ideals through order twenty-four are computed over \(\mathbb Q\), and the
-three genuine surviving families are proved harmless at all orders.
+the exact dimensional range of the conjecture.
 \end{abstract}
 
 \section{Introduction}
@@ -85,42 +76,6 @@ two-variable case was therefore the last undecided dimension.
 \begin{theorem}\label{thm:main}
 The Gaussian Moments Conjecture holds in two real variables.
 \end{theorem}
-
-Long's three-variable witness, in circular coordinates \(W,Z\) and an
-independent real Gaussian \(T\), is
-\begin{equation}\label{eq:long}
- P_{\mathrm L}
- =W+WZ-T^2-\frac32ZT^2-\frac12Z^2T^2.
-\end{equation}
-It has degree four and five monomials, all its pure moments vanish, and
-\(\E(ZP_{\mathrm L}^m)=m!\) for every \(m\geq1\)~\cite{Long}.  Our second
-main result places this witness at the first corner of the sparse
-degree--support plane.
-
-\begin{theorem}[Sparse Pareto minimality]\label{thm:sparse}
-Let \(W,Z,T\) be Gaussian Witt coordinates, so that
-\[
- \E(W^iZ^jT^k)=
- \begin{cases}
-   i!(k-1)!!,&i=j\text{ and }k\text{ is even},\\
-   0,&\text{otherwise}.
- \end{cases}
-\]
-Suppose that \(P\in\C[W,Z,T]\) has total degree at most four and at most four
-nonzero monomials.  If \(\E(P^m)=0\) for every \(m\geq1\), then, for every
-\(Q\in\C[W,Z,T]\),
-\[
- \E(QP^m)=0
- \qquad\text{for all sufficiently large }m.
-\]
-Consequently no GMC counterexample has both degree at most four and support
-size at most four in a Gaussian Witt frame.
-\end{theorem}
-
-In particular, \eqref{eq:long} is minimal for the product partial order on
-\((\deg P,\#\Supp(P))\).  The theorem does not separately prove that degree
-four is globally minimal: a denser cubic is not excluded.  Nor does it
-exclude a four-term counterexample of degree greater than four.
 
 The proof is short once the right coordinates are chosen.  In two
 dimensions, rotation has a single integer weight and there is a single
@@ -219,24 +174,34 @@ there are \(n\in\Z_{\geq0}\) and \(c\in\C^\times\) such that
 \end{lemma}
 
 \begin{proof}
-Minimize
+Let
 \[
-  \sum_{k\in S}\lambda_k\nu_k
+  C=\conv\{(k,\nu_k):k\in S\}\subset\mathbb R^2.
 \]
-subject to
+Since \(0\in\conv(S)\), the polygon \(C\) meets the vertical line \(k=0\).
+Let \((0,\rho)\) be the lowest point of this intersection.  The lower
+boundary of \(C\) admits a supporting line through this point; write it as
 \[
-  \lambda_k\geq0,\qquad
-  \sum_k\lambda_k=1,\qquad
-  \sum_k k\lambda_k=0.
+  \nu=\rho+\theta k.
 \]
-The feasible set is nonempty because \(0\in\conv(S)\).  Let the minimum be
-\(\rho\).  Elementary linear-programming duality supplies
-\(\theta\in\mathbb Q\) such that
+Thus
 \[
   \nu_k\geq\rho+\theta k.
 \]
-An optimal solution is supported on the equality set \(S_0\), so
-\(0\in\conv(S_0)\).
+The vertices of \(C\) are integral, so its lower edges have rational
+slopes.  If \((0,\rho)\) is a vertex, choose a rational slope between the
+slopes of its adjacent lower edges; at an endpoint, choose a rational
+finite slope beyond the single adjacent slope.  If \(C\) is a single point,
+take \(\theta=0\).  Thus \(\rho,\theta\in\mathbb Q\).
+
+The supporting line cuts out a face of \(C\), and this face contains
+\((0,\rho)\).  Every point of the face is a convex combination of its
+vertices, which are among the points indexed by
+\[
+  S_0=\{k\in S:\nu_k=\rho+\theta k\}.
+\]
+Taking first coordinates in such a convex combination for \((0,\rho)\)
+gives \(0\in\conv(S_0)\).
 
 We use the constant-term theorem of Duistermaat and van der
 Kallen~\cite{DK}: if every positive power of a complex Laurent polynomial
@@ -262,73 +227,61 @@ all equality terms is \(c\).  Hence the lowest term of \(F_r\) is
 it \(n\).
 \end{proof}
 
-\section{Prime isolation}
+\section{Filtered Frobenius isolation}
 
-The next lemma is the arithmetic step.  Its role is simple: after a prime
-dilation, Frobenius preserves only \(p\)-th powers, while the factorial
-functional kills every radial level above the lowest one.
-
-\begin{lemma}[Prime--factorial isolation]\label{lem:prime}
-Let \(P\) and \(F_m\) be as in Lemma~\ref{lem:face}.  If
+For any characteristic-zero ring \(R\), write
 \[
-  \mathcal L(F_m)=0\qquad(m\geq1),
+  \mathcal L_R:R[U]\longrightarrow R,\qquad
+  \mathcal L_R(U^j)=j!.
 \]
-then the conclusion~\eqref{eq:leading} is impossible.
+The arithmetic heart of the proof is independent of circular coordinates.
+
+\begin{lemma}[Filtered Frobenius isolation]
+\label{lem:filtered-frobenius}
+Let \(R\) be a characteristic-zero domain, let \(\kappa\) be a field of
+characteristic \(p>0\), and let \(R\to\kappa\), \(a\mapsto\bar a\), be a
+ring homomorphism.  Suppose \(F_m\in R[U]\) satisfy, for some
+\(\rho\in\mathbb Q\), \(r\geq1\), \(n\in\mathbb Z_{\geq0}\), and
+\(c\in R\setminus\{0\}\),
+\[
+  \ord_UF_m\geq\rho m,\qquad
+  n=\rho r,\qquad
+  F_r=cU^n+\text{terms of degree greater than }n.
+\]
+If
+\[
+  \bar c\neq0,\qquad
+  \overline{F_{rp}}=\overline{F_r}^{\,p},
+\]
+then the values \(\mathcal L_R(F_m)\) cannot all vanish.
 \end{lemma}
 
 \begin{proof}
-Let \(R\subset\C\) be the \(\Z\)-algebra generated by the coefficients of
-\(P\) and by \(c^{-1}\).  It is a finitely generated domain of
-characteristic zero.  For all but finitely many rational primes \(p\),
-there is a homomorphism from \(R\) to a field of characteristic \(p\).
-Indeed, the finite-type morphism
-\(\operatorname{Spec}R\to\operatorname{Spec}\Z\) is dominant, and its image
-is constructible by Chevalley's theorem~\cite{StacksChevalley}.  Since it
-contains the generic point, it contains a nonempty open
-subset~\cite{StacksGeneric}.  Because \(c\) is invertible in \(R\), its
-image remains nonzero under every such homomorphism.
+Suppose they do.  The order bound at \(m=rp\), together with
+\(n=\rho r\), gives
+\[
+  \ord_UF_{rp}\geq \rho rp=np.
+\]
+Thus \((np)!\) is a common factor of all factorial weights in
+\(\mathcal L_R(F_{rp})=0\).  It is nonzero in the characteristic-zero
+domain \(R\), so it may be cancelled before reduction.
 
-Fix one of these primes.  Before reducing modulo \(p\), work in the
-characteristic-zero domain \(R\).  Lemma~\ref{lem:face} says that every term
-of \(F_{rp}\) has degree at least \(\rho rp=np\).  Hence
-\(\mathcal L(F_{rp})=0\) can be written in \(R\) as
+Write \(F_r=cU^n+U^{n+1}G(U)\).  After reduction, the Frobenius hypothesis
+gives
 \[
-  0=(np)!\sum_{d\geq np}[U^d]F_{rp}\,\frac{d!}{(np)!}.
+  \overline{F_{rp}}
+  =\overline{F_r}^{\,p}
+  =\bar c^{\,p}U^{np}+U^{(n+1)p}\overline{G}(U)^p.
 \]
-Since \(R\) is a domain of characteristic zero, \((np)!\neq0\), so it may
-be cancelled to give
-\begin{equation}\label{eq:normalized}
-  \sum_{d\geq np}[U^d]F_{rp}\,\frac{d!}{(np)!}=0.
-\end{equation}
-We now apply a homomorphism \(R\to\kappa\), where \(\kappa\) is a field of
-characteristic \(p\), and continue to use the same notation for the reduced
-polynomials.
-
-In characteristic \(p\), Frobenius and constant-term extraction give
-\begin{equation}\label{eq:frobenius}
-  F_{rp}
-  =\CT_T\bigl((P^r)^p\bigr)
-  =\bigl(\CT_T(P^r)\bigr)^p
-  =F_r^p.
-\end{equation}
-Indeed, if \(H=\sum_i h_i(U)T^i\), then
-\(H^p=\sum_i h_i(U)^pT^{pi}\) in characteristic \(p\); because \(p>0\),
-the equality \(pi=0\) holds exactly when \(i=0\).  Thus
-\(\CT_T(H^p)=\CT_T(H)^p\).
-By~\eqref{eq:leading}, the coefficient of \(U^{np}\) in
-\eqref{eq:frobenius} is \(c^p\).  A term whose degree is not divisible by
-\(p\) has zero coefficient modulo \(p\).  A remaining term has degree
-\(jp\) for some \(j>n\), and its multiplier in~\eqref{eq:normalized} is
+Writing the second term as
+\(\sum_{j\geq n+1}a_jU^{jp}\), the cancelled moment identity reduces to
 \[
-  \frac{(jp)!}{(np)!}.
+  0=\bar c^{\,p}
+    +\sum_{j\geq n+1}a_j\frac{(jp)!}{(np)!}.
 \]
-This integer is divisible by \(p\), since its product contains
-\((n+1)p\).  Consequently, reducing~\eqref{eq:normalized} modulo \(p\)
-leaves only
-\[
-  c^p=0,
-\]
-contrary to the choice of the reduction.
+Every factorial quotient in the sum contains the factor \((n+1)p\), hence
+vanishes in characteristic \(p\).  Therefore \(\bar c^{\,p}=0\), contrary
+to \(\bar c\neq0\).
 \end{proof}
 
 \section{Proof of the theorem}
@@ -340,21 +293,45 @@ Write \(P\) as in~\eqref{eq:weight-decomposition} and suppose that
 \[
   \mathcal L(F_m)=0\qquad(m\geq1).
 \]
+If \(P=0\), the conclusion is immediate, so assume \(P\neq0\).
 If \(0\in\conv(S)\), Lemma~\ref{lem:face} produces a nonzero lowest
-coefficient and Lemma~\ref{lem:prime} gives a contradiction.  Therefore
+coefficient \(c\).  Let \(R\subset\C\) be the \(\Z\)-algebra generated by
+the coefficients of \(P\) and by \(c^{-1}\).  Choose a maximal ideal
+\(\mathfrak m\subset R\).  Its residue field \(\kappa\) is finite by the
+weak Nullstellensatz for finite-type \(\Z\)-algebras; write
+\(p=\operatorname{char}\kappa\).  The image of \(c\) is nonzero because
+\(c\) is a unit in \(R\).  Moreover, in characteristic \(p\),
+\[
+  \overline{F_{rp}}
+  =\CT_T\bigl((\bar P^r)^p\bigr)
+  =\bigl(\CT_T(\bar P^r)\bigr)^p
+  =\overline{F_r}^{\,p},
+\]
+since Frobenius sends \(T^i\) to \(T^{pi}\).  Lemma
+\ref{lem:filtered-frobenius}, with the bounds from Lemma~\ref{lem:face},
+now gives a contradiction.  Therefore
 \[
   0\notin\conv(S).
 \]
 Since \(S\subset\Z\), either every weight of \(P\) is strictly positive or
 every weight is strictly negative.
 
-Now fix a polynomial \(Q\).  Its rotational weights form a bounded finite
-set.  Every weight of \(P^m\), on the other hand, tends uniformly toward
-the same strict side as \(m\to\infty\).  Hence \(QP^m\) has no
-weight-zero term once \(m\) is sufficiently large:
+Now fix a polynomial \(Q\).  If \(Q=0\), there is nothing to prove, so let
+\(S_Q\) be its nonempty finite set of rotational weights.  Suppose first
+that all weights of \(P\) are positive, and put
 \[
-  \CT_T(QP^m)=0.
+  a=\min S>0,\qquad b=\min S_Q,\qquad
+  N=\max\left\{0,\left\lfloor\frac{-b}{a}\right\rfloor+1\right\}.
 \]
+Every weight of \(QP^m\) is at least \(b+ma>0\) for \(m\geq N\).
+
+If instead all weights of \(P\) are negative, put
+\[
+  a=-\max S>0,\qquad b=\max S_Q,\qquad
+  N=\max\left\{0,\left\lfloor\frac{b}{a}\right\rfloor+1\right\}.
+\]
+Then every weight of \(QP^m\) is at most \(b-ma<0\) for \(m\geq N\).
+Thus in either case \(\CT_T(QP^m)=0\) for every \(m\geq N\).
 Equation~\eqref{eq:expectation-factorization} then gives
 \(\E(QP^m)=0\), as required.
 \end{proof}
@@ -369,159 +346,6 @@ The case \(d=1\) is known~\cite[Proposition~4.2]{DVZ}.
 Theorem~\ref{thm:main} proves the case \(d=2\).
 Long's examples disprove the conjecture for every \(d\geq3\)~\cite{Long}.
 \end{proof}
-
-\section{Sparse minimality in the first failing dimension}
-\label{sec:sparse}
-
-We prove Theorem~\ref{thm:sparse}.  The finite part is an exhaustive exact
-coefficient-scheme calculation; the all-order interpretation of its
-survivors is conceptual.
-
-\subsection{Moment ideals}
-
-Let
-\[
- \mathcal M_4
- =\{W^iZ^jT^k:i,j,k\geq0,\ i+j+k\leq4\}.
-\]
-This set has \(35\) elements.  Fix a support \(S\subset\mathcal M_4\), write
-\[
- P_S=\sum_{s\in S}c_ss,
-\]
-and work on the coefficient torus \(\prod_{s\in S}c_s\neq0\).  For
-\(s=(i_s,j_s,k_s)\) and a multiplicity vector
-\(\nu=(\nu_s)_{s\in S}\in\mathbb N^S\), put
-\[
- |\nu|=\sum_s\nu_s,\quad
- I(\nu)=\sum_s\nu_si_s,\quad
- J(\nu)=\sum_s\nu_sj_s,\quad
- K(\nu)=\sum_s\nu_sk_s.
-\]
-Wick contraction gives the exact moment polynomial
-\begin{equation}\label{eq:sparse-moment}
- \E(P_S^m)
- =
- \sum_{\substack{|\nu|=m,\ I(\nu)=J(\nu)\\K(\nu)\ {\rm even}}}
- \frac{m!}{\prod_s\nu_s!}\,
- I(\nu)!\,(K(\nu)-1)!!\prod_sc_s^{\nu_s}.
-\end{equation}
-Thus the truncated full-support coefficient scheme is defined by
-\begin{equation}\label{eq:saturated-ideal}
- I_{S,M}
- =
- \left\langle\E(P_S),\ldots,\E(P_S^M)\right\rangle:
- \left(\prod_{s\in S}c_s\right)^\infty.
-\end{equation}
-The equations are homogeneous, so one coefficient may be normalized to
-one before saturation.
-
-There are
-\[
- \sum_{r=1}^4\binom{35}{r}=59{,}535
-\]
-raw supports.  We identify a support with its reflection under
-\(W\leftrightarrow Z\).  Two elementary filters precede the Groebner
-calculation.  If some moment in \eqref{eq:sparse-moment} has exactly one
-coefficient monomial, the coefficient torus contains no solution.  If no
-contraction occurs, all charges \(i_s-j_s\) have one strict sign and the
-mixed-moment conclusion follows by bounded weight.
-
-For completeness, the latter test is finite in this range.  A zero charge
-contracts in one or two copies, according to its \(T\)-parity.  Opposite
-nonzero charges \(q>0>r\), with \(|q|,|r|\leq4\), have a primitive
-zero-sum relation of length
-\[
- \frac{q+|r|}{\gcd(q,|r|)}\leq8;
-\]
-doubling corrects odd \(T\)-parity.  Hence every support which is not
-strictly one-sided has a contraction by order sixteen.
-
-\subsection{Exact enumeration}
-
-After the preceding filters, the four-term stratum contains \(5{,}718\)
-coefficient-torus ideals requiring elimination.  Exact Groebner bases over
-\(\mathbb Q\) for \(I_{S,20}\) leave precisely the supports
-\[
-\begin{split}
- &\{Z,ZT^2,WZ^2,W^3T\},\\
- &\{ZT,Z^2,WT,W^2\},\\
- &\{ZT,ZT^3,WZ^2T,W^3\}.
-\end{split}
-\]
-The first and third acquire the unit ideal after adjoining moments through
-order twenty-four.  The same exact search in the one-, two-, and three-term
-strata leaves no active one- or two-term family and two three-term
-families.  Including the four-term survivor, the genuine active null
-families are
-\begin{align}
- P_{\rm lin}&=T+aZ+bW,&1+2ab&=0,                 \label{eq:null-linear}\\
- P_{\rm sh}&=Z+aWT-\frac12a^2W^3,                \label{eq:null-shear}\\
- P_{\rm pr}&=ZT+aZ^2+\frac1{2a^2}WT
-                    -\frac1{4a^3}W^2,\quad a\neq0. \label{eq:null-product}
-\end{align}
-The saturated lexicographic bases are triangular.  With the first
-coefficient normalized to one, their nontrivial equations are respectively
-\[
- 1+2c_1c_2,\qquad
- 2c_2+c_1^2,\qquad
- 2c_1^2c_2-1,\quad c_3+c_1c_2^2.
-\]
-These formulas both classify the coefficient schemes and make the
-survivors easy to interpret.
-
-\subsection{All-order interpretation of the survivors}
-
-The family \eqref{eq:null-linear} is an isotropic linear form.  A complex
-orthogonal change takes it to a scalar multiple of \(Z\).  A fixed
-polynomial \(Q\) has bounded \(W\)-degree, so
-\(\E(QZ^m)=0\) for all sufficiently large \(m\).
-
-For \eqref{eq:null-shear}, define
-\[
- D=W\partial_T-T\partial_Z.
-\]
-Then \(D(2WZ+T^2)=0\), \(D(W)=0\), and
-\[
- P_{\rm sh}=\exp(-aWD)(Z).
-\]
-Gaussian integration by parts gives \(\E(DF)=0\) for every polynomial
-\(F\), and therefore also \(\E(WDF)=0\).  Since \(WD\) is locally nilpotent,
-\(\phi=\exp(-aWD)\) is a polynomial automorphism preserving the Gaussian
-functional.  For fixed \(Q\),
-\[
- \E(QP_{\rm sh}^m)
- =\E\bigl(\phi^{-1}(Q)Z^m\bigr),
-\]
-which vanishes eventually by the same bounded-weight argument.
-
-Finally,
-\begin{equation}\label{eq:product-factorization}
- P_{\rm pr}
- =
- \left(Z+\frac1{2a^2}W\right)
- \left(T+aZ-\frac1{2a}W\right).
-\end{equation}
-The second factor is isotropic and orthogonal to the first.  After an
-orthogonal Witt change, \eqref{eq:product-factorization} is a scalar
-multiple of \(TZ\).  Every \(P_{\rm pr}^m\) then has isotropic weight \(m\),
-which a fixed \(Q\) can balance only finitely often.  All three families
-satisfy GMC.  Together with the strictly one-sided supports, this proves
-Theorem~\ref{thm:sparse}.
-
-\subsection{Reproducibility and scope}
-
-The enumeration is implemented with exact integer Wick coefficients and
-Singular's rational Groebner bases.  The certificate script enumerates
-supports rather than reading a stored survivor list, repeats every
-saturation over \(\mathbb Q\), verifies the three displayed triangular
-bases, and checks \eqref{eq:product-factorization}.  It is run from the
-repository root by
-\begin{verbatim}
-.venv/bin/python scripts/verify_three_real_gmc_sparse_pareto.py
-\end{verbatim}
-The complete replay takes several minutes on a laptop.  Modular runs are
-used only as optional discovery filters and are not part of the exact
-certificate.
 
 \section{What the argument says}
 
@@ -552,20 +376,28 @@ technical gap: counterexamples already occur in dimension three.
 \section{Formal verification}
 
 A companion Lean~4 development has been prepared as supplementary material
-for the two-variable theorem.  It mechanically checks the
-factorial-quotient divisibility, prime-dilated factorial isolation,
-commutation of Frobenius with angular constant-term extraction, the final
-prime contradiction, and the eventual vanishing argument for both signs of
+for the two-variable theorem.  Its exported bivariate statement starts
+with an ordinary polynomial in two variables, verifies the circular
+substitution and Wick monomial formula, and proves the full mixed-moment
+conclusion from vanishing of all positive pure moments.  Internally, it
+checks rational supporting-face extraction, the weighted
+associated-graded identification of the lowest radial coefficient, descent
+to the finite coefficient \(\Z\)-algebra, normalized factorial
+cancellation, Frobenius and constant-term commutation, prime-dilated
+factorial isolation, and the eventual vanishing argument for both signs of
 the rotational support.  The development contains no \texttt{sorry}
-declarations.  The computer-assisted sparse theorem is certified separately
-by the exact rational script described in Section~\ref{sec:sparse}.
+declarations.
 
-The formalization exposes three external inputs as named axioms: the
-Duistermaat--van der Kallen constant-term theorem, rational supporting-face
-extraction, and the existence of good finite-characteristic specializations
-of finite-type \(\Z\)-domains.  Thus the artifact gives a machine-checked
-verification of the arithmetic and constant-term core of the proof, with
-its remaining trust boundary stated explicitly.
+The formalization exposes two external inputs as named axioms: the
+Duistermaat--van der Kallen constant-term theorem and the existence of good
+finite-characteristic specializations of finite-type \(\Z\)-domains.  The
+rational supporting face is proved directly from the finite
+two-dimensional polygon.  An axiom audit of the exported theorem therefore
+lists precisely these two mathematical inputs (besides Lean's standard
+logical quotient and choice principles).  Thus the artifact gives a
+machine-checked verification of the complete proof of
+Theorem~\ref{thm:main}, with its remaining trust boundary stated
+explicitly.
 
 \section*{Acknowledgments and declaration of generative AI use}
 
@@ -575,9 +407,7 @@ proof exploration, consistency checks, and preparation of this manuscript.
 The lower-face and prime-isolation argument emerged from that collaborative
 process.  The author reviewed the mathematical claims and assumes full
 responsibility for the contents.  The proof of Theorem~\ref{thm:main} is
-noncomputational.  Theorem~\ref{thm:sparse} uses the exhaustive exact
-coefficient-scheme calculation stated in the text and supplied with the
-paper.
+noncomputational.
 
 \bibliographystyle{plain}
 \bibliography{references}

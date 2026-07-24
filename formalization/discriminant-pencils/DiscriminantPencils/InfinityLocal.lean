@@ -5,6 +5,8 @@ Authors: Roy van Rijn
 -/
 import DiscriminantPencils.ProjectiveParametrization
 import Mathlib.RingTheory.PowerSeries.Inverse
+import Mathlib.RingTheory.PowerSeries.Order
+import Mathlib.RingTheory.PowerSeries.Substitution
 
 /-!
 # Local coordinates at infinity
@@ -50,7 +52,7 @@ theorem infinityPolynomial_eq_aeval_homogenize (p : 𝕜[X]) (n : ℕ) :
       split_ifs with h
       · omega
       · rfl
-    · simp [hmn]
+    · simp
   · rw [if_neg hmn]
     symm
     apply Finset.sum_eq_zero
@@ -110,5 +112,161 @@ theorem infinity_t_isUnit [CharZero 𝕜] (H : 𝕜[X]) (n : ℕ) (hn : 2 ≤ n)
   have hlc : H.coeff n ≠ 0 := by
     simpa [leadingCoeff, hdeg] using leadingCoeff_ne_zero.mpr hH
   exact mul_ne_zero (by exact_mod_cast (show n - 1 ≠ 0 by omega)) hlc
+
+/-- The first affine coordinate `S/T` in the target chart `T ≠ 0`. -/
+noncomputable def infinitySOverT (H : 𝕜[X]) (n : ℕ) : PowerSeries 𝕜 :=
+  (infinityCoordinates H n 0 : PowerSeries 𝕜) *
+    (infinityCoordinates H n 1 : PowerSeries 𝕜)⁻¹
+
+/-- The second affine coordinate `Z/T` in the target chart `T ≠ 0`. -/
+noncomputable def infinityZOverT (H : 𝕜[X]) (n : ℕ) : PowerSeries 𝕜 :=
+  (PowerSeries.X : PowerSeries 𝕜) ^ n *
+    (infinityCoordinates H n 1 : PowerSeries 𝕜)⁻¹
+
+theorem exactDegree_coeff_ne_zero (H : 𝕜[X]) (n : ℕ)
+    (hdeg : H.natDegree = n) (hn : 0 < n) :
+    H.coeff n ≠ 0 := by
+  have hH : H ≠ 0 := by
+    intro h
+    subst H
+    simp at hdeg
+    omega
+  simpa [leadingCoeff, hdeg] using leadingCoeff_ne_zero.mpr hH
+
+/-- Exact degree `n` makes the constant coefficient of the `S` numerator
+zero. -/
+theorem infinity_s_coeff_zero_of_exactDegree (H : 𝕜[X]) (n : ℕ)
+    (hdeg : H.natDegree = n) :
+    (infinityCoordinates H n 0).coeff 0 = 0 := by
+  rw [infinity_s_coeff_zero]
+  rw [coeff_derivative]
+  have hcoeff : H.coeff (n + 1) = 0 := by
+    apply coeff_eq_zero_of_natDegree_lt
+    omega
+  simp [hcoeff]
+
+/-- The chart coordinate `S/T` vanishes at the point at infinity. -/
+theorem infinitySOverT_coeff_zero (H : 𝕜[X]) (n : ℕ)
+    (hdeg : H.natDegree = n) :
+    PowerSeries.coeff 0 (infinitySOverT H n) = 0 := by
+  simp [infinitySOverT, infinity_s_coeff_zero_of_exactDegree H n hdeg]
+
+/-- The linear coefficient of `S/T` is `n/(n-1)`, the first expansion in
+equation (2.2). -/
+theorem infinitySOverT_coeff_one [CharZero 𝕜] (H : 𝕜[X]) (n : ℕ)
+    (hn : 2 ≤ n) (hdeg : H.natDegree = n) :
+    PowerSeries.coeff 1 (infinitySOverT H n) =
+      (n : 𝕜) / (n - 1 : ℕ) := by
+  rw [infinitySOverT, PowerSeries.coeff_mul]
+  rw [Finset.Nat.sum_antidiagonal_eq_sum_range_succ_mk]
+  simp [Finset.sum_range_succ, infinity_s_coeff_zero_of_exactDegree H n hdeg,
+    infinity_s_coeff_one H n (by omega), PowerSeries.constantCoeff_inv,
+    infinity_t_coeff_zero H n (by omega)]
+  have hlc := exactDegree_coeff_ne_zero H n hdeg (by omega)
+  have hn1 : ((n - 1 : ℕ) : 𝕜) ≠ 0 := by
+    exact_mod_cast (show n - 1 ≠ 0 by omega)
+  field_simp
+
+theorem infinitySOverT_coeff_one_ne_zero [CharZero 𝕜] (H : 𝕜[X]) (n : ℕ)
+    (hn : 2 ≤ n) (hdeg : H.natDegree = n) :
+    PowerSeries.coeff 1 (infinitySOverT H n) ≠ 0 := by
+  rw [infinitySOverT_coeff_one H n hn hdeg]
+  apply div_ne_zero
+  · exact_mod_cast (show n ≠ 0 by omega)
+  · exact_mod_cast (show n - 1 ≠ 0 by omega)
+
+/-- Consequently `S/T` is a uniformizing parameter: it has formal order
+exactly one. -/
+theorem infinitySOverT_order [CharZero 𝕜] (H : 𝕜[X]) (n : ℕ)
+    (hn : 2 ≤ n) (hdeg : H.natDegree = n) :
+    PowerSeries.order (infinitySOverT H n) = 1 := by
+  change PowerSeries.order (infinitySOverT H n) = (↑(1 : ℕ) : ℕ∞)
+  apply PowerSeries.order_eq_nat.mpr
+  refine ⟨infinitySOverT_coeff_one_ne_zero H n hn hdeg, ?_⟩
+  intro i hi
+  have hi0 : i = 0 := by omega
+  subst i
+  exact infinitySOverT_coeff_zero H n hdeg
+
+theorem infinitySOverT_constantCoeff (H : 𝕜[X]) (n : ℕ)
+    (hdeg : H.natDegree = n) :
+    (infinitySOverT H n).constantCoeff = 0 := by
+  rw [← PowerSeries.coeff_zero_eq_constantCoeff_apply]
+  exact infinitySOverT_coeff_zero H n hdeg
+
+/-- `Z/T` has no terms below degree `n`. -/
+theorem infinityZOverT_coeff_of_lt (H : 𝕜[X]) (n m : ℕ) (hm : m < n) :
+    PowerSeries.coeff m (infinityZOverT H n) = 0 := by
+  simp [infinityZOverT, PowerSeries.coeff_X_pow_mul', hm.not_ge]
+
+/-- The coefficient of `q^n` in `Z/T` is
+`1 / ((n-1)h_n)`, the second expansion in equation (2.2). -/
+theorem infinityZOverT_coeff_degree [CharZero 𝕜] (H : 𝕜[X]) (n : ℕ)
+    (hn : 2 ≤ n) (hdeg : H.natDegree = n) :
+    PowerSeries.coeff n (infinityZOverT H n) =
+      ((n - 1 : ℕ) * H.coeff n)⁻¹ := by
+  rw [infinityZOverT, PowerSeries.coeff_X_pow_mul']
+  simp [PowerSeries.constantCoeff_inv, infinity_t_coeff_zero H n (by omega)]
+
+/-- The second chart coordinate has formal order exactly `n`. -/
+theorem infinityZOverT_order [CharZero 𝕜] (H : 𝕜[X]) (n : ℕ)
+    (hn : 2 ≤ n) (hdeg : H.natDegree = n) :
+    PowerSeries.order (infinityZOverT H n) = n := by
+  rw [PowerSeries.order_eq_nat]
+  constructor
+  · rw [infinityZOverT_coeff_degree H n hn hdeg]
+    apply inv_ne_zero
+    exact mul_ne_zero
+      (by exact_mod_cast (show n - 1 ≠ 0 by omega))
+      (exactDegree_coeff_ne_zero H n hdeg (by omega))
+  · intro i hi
+    exact infinityZOverT_coeff_of_lt H n i hi
+
+/-- The order-one chart coordinate admits a two-sided compositional inverse.
+This is the formal inverse lemma used implicitly in the paper's smoothness
+argument at infinity. -/
+theorem infinitySOverT_has_compositional_inverse [CharZero 𝕜]
+    (H : 𝕜[X]) (n : ℕ) (hn : 2 ≤ n) (hdeg : H.natDegree = n) :
+    ∃ Q : PowerSeries 𝕜,
+      Q.constantCoeff = 0 ∧
+      PowerSeries.HasSubst Q ∧
+      (infinitySOverT H n).subst Q = PowerSeries.X ∧
+      Q.subst (infinitySOverT H n) = PowerSeries.X := by
+  let P := infinitySOverT H n
+  have hP : P.constantCoeff = 0 :=
+    infinitySOverT_constantCoeff H n hdeg
+  have hunit : IsUnit (P.coeff 1) :=
+    isUnit_iff_ne_zero.mpr (infinitySOverT_coeff_one_ne_zero H n hn hdeg)
+  let Q := P.substInvOfIsUnit hunit
+  refine ⟨Q, ?_, ?_, ?_, ?_⟩
+  · exact PowerSeries.constantCoeff_substInvOfIsUnit P hunit
+  · exact PowerSeries.HasSubst.substInvOfIsUnit P hunit
+  · exact PowerSeries.subst_substInvOfIsUnit_right P hP hunit
+  · exact PowerSeries.subst_substInvOfIsUnit_left P hP hunit
+
+/-- In the completed local chart, `Z/T` is a formal graph over the
+uniformizing coordinate `S/T`. -/
+theorem infinity_is_formal_graph [CharZero 𝕜]
+    (H : 𝕜[X]) (n : ℕ) (hn : 2 ≤ n) (hdeg : H.natDegree = n) :
+    ∃ G : PowerSeries 𝕜,
+      G.constantCoeff = 0 ∧
+      G.subst (infinitySOverT H n) = infinityZOverT H n := by
+  obtain ⟨Q, hQ0, hQ, _, hQP⟩ :=
+    infinitySOverT_has_compositional_inverse H n hn hdeg
+  let G : PowerSeries 𝕜 := (infinityZOverT H n).subst Q
+  refine ⟨G, ?_, ?_⟩
+  · change ((infinityZOverT H n).subst Q).constantCoeff = 0
+    apply PowerSeries.constantCoeff_subst_eq_zero hQ0
+    rw [← PowerSeries.coeff_zero_eq_constantCoeff_apply]
+    exact infinityZOverT_coeff_of_lt H n 0 (by omega)
+  · change PowerSeries.subst (R := 𝕜) (S := 𝕜) (τ := Unit)
+      (infinitySOverT H n)
+      (PowerSeries.subst (R := 𝕜) (S := 𝕜) (τ := Unit)
+        Q (infinityZOverT H n)) = infinityZOverT H n
+    rw [PowerSeries.subst_comp_subst_apply hQ
+      (PowerSeries.HasSubst.of_constantCoeff_zero
+        (infinitySOverT_constantCoeff H n hdeg))]
+    rw [hQP]
+    exact PowerSeries.X_subst _
 
 end DiscriminantPencils

@@ -4,6 +4,7 @@ Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Roy van Rijn
 -/
 import GMC2.ConstantTerm
+import GMC2.CoefficientRing
 import GMC2.DuistermaatVanDerKallen
 import GMC2.GaussianModel
 import GMC2.LowerFaceExtraction
@@ -89,5 +90,15 @@ theorem eventually_no_zero_weight_of_oneSided
   rcases hS with hpos | hneg
   · exact eventually_no_zero_weight S Q hpos
   · exact eventually_no_zero_weight_neg S Q hneg
+
+/-- The complete two-variable Gaussian Moments Conjecture in circular
+coordinates.  The characteristic-zero field generality includes the
+complex case used in the paper. -/
+theorem gaussianMomentsConjecture_two_variables
+    {K : Type*} [Field K] [CharZero K]
+    (P : CircularPolynomial K) (hvan : PureMomentsVanish P) :
+    EventuallyMixedMomentsVanish P :=
+  eventuallyMixedMomentsVanish_of_not_straddles P
+    (not_supportStraddlesZero_of_pureMoments P hvan)
 
 end GMC2

@@ -450,6 +450,7 @@ claims are first-class `falsified` entries rather than prose-only corrections.
 ## Main papers
 
 - [The Gaussian Moments Conjecture in Two Variables](papers/gaussian-moments-two-variables/main.tex)
+- [Sparse Minimality of Gaussian-Moments Counterexamples in Dimension Three](papers/sparse-minimality-gaussian-moments-dimension-three/main.tex)
 - [Generic Discriminants of Polynomial Tangent Pencils](papers/discriminant-pencils/main.tex)
 
 The remaining completed and exploratory results are maintained as theorem
@@ -598,7 +599,12 @@ frontiers:
   generic resultant, and punctured higher-gcd strata.  `HR42R` factors the
   remaining scalar quartic divisors and reduces them to the two explicit
   residual graphs `P_A=0`, `P_B=0`; `HR42Q` closes dense opens of both
-  graphs by a nonzero invariant quintic residual.  Their quintic-zero
+  graphs by a nonzero invariant quintic residual.  `HR42C` constructs the
+  completed braid conormal flag
+  `I_6 < I_7=I_boundary < K`: the relative sector and common spectator have
+  one conormal direction each and minimal base annihilators `z^8` and `z`.
+  This separates the spectator exactly and shows that the degree-thirty
+  cut-`6` thickness `z^4` is not spectator-independent.  Their quintic-zero
   subloci, the contact-five vertex, the odd `w2=0` core,
   uniform terminal-refinement existence through
   nonreduced thickenings,

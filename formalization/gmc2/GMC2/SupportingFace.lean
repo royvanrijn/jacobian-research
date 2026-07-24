@@ -45,8 +45,8 @@ private def crossingPairs (S : Finset ℤ) : Finset (ℤ × ℤ) :=
 /-- Rational supporting-face extraction for a finite weighted set.
 
 The assumptions are the one-dimensional form of `0 ∈ conv(S)`.
-The proof is the elementary one-dimensional linear program: when points
-occur strictly on both sides, minimize the height at zero among all crossing
+The proof constructs the lower convex hull directly: when points occur
+strictly on both sides, minimize the height at zero among all crossing
 chords.  If zero is an endpoint of the convex hull, an explicit steep line
 supports the singleton face at zero.
 -/
