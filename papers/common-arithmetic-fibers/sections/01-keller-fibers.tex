@@ -32,6 +32,25 @@ The construction can be summarized in one line:
  F_G^{-1}(y_{P,a})\simeq\Spec K[T]/(P).}
 \]
 
+\begin{lemma}[The degree-two exclusion over $K$]\label{lem:degree-two}
+Let $K$ be any field of characteristic zero.  A Keller map
+$F:\A^m_K\to\A^m_K$ of geometric degree two is a polynomial automorphism.
+\end{lemma}
+
+\begin{proof}
+Put $L=K(x_1,\ldots,x_m)$ and $M=K(F_1,\ldots,F_m)$.  The extension
+$L/M$ has degree two.  It is separable because $K$ has characteristic zero,
+and every separable quadratic extension is Galois.  Bass--Connell--Wright
+state the Galois case over an arbitrary ground field: for a polynomial
+endomorphism with invertible Jacobian, Galoisness of $L/M$ implies polynomial
+invertibility when the ground field has characteristic zero
+\cite[Chapter~I, Theorem~2.1]{BCW}.  Hence $F$ is an automorphism.
+
+No algebraic-closedness assumption is used here.  Campbell established the
+complex case, and Razar and Wright supplied subsequent algebraic treatments
+\cite{Campbell,Razar,Wright}.
+\end{proof}
+
 \begin{theorem}[Finite-\'etale realization]\label{thm:main}
 Over a field of characteristic zero, the possible ranks of nonzero Keller
 fibers are exactly
@@ -62,11 +81,19 @@ Consequently every finite \'etale $K$-algebra of rank at least three is a
 Keller fiber.
 \end{theorem}
 
-The rank statement is sharp.  Rank one is realized by the identity.  Rank
-two is impossible: a Keller map of geometric degree two induces a separable
-quadratic, hence Galois, function-field extension, and the Galois case of the
-Jacobian theorem makes the map a polynomial automorphism
-\cite{Campbell,Razar,Wright}.  Squarefreeness is also necessary, because all
-Keller fibers are \'etale.  Finally, for $N\geq3$ the polynomial $P'P'''$ is
-nonzero in characteristic zero, so the translation parameter required by
-the theorem always exists.
+\begin{proof}
+The translation makes the linear and cubic coefficients of $G$ equal to
+$P'(a)$ and $P'''(a)/6$, respectively, so the quadratic gauge of
+Section~\ref{sec:gauge} applies.  At the target \eqref{eq:main-target}, its
+inverse polynomial is
+\[
+ G(S)-\frac{P'(a)}2\left(-\frac{2P(a)}{P'(a)}\right)
+ =P(a+S).
+\]
+Proposition~\ref{prop:gauge} identifies the complete scheme fiber with
+$\Spec K[S]/(P(a+S))$, which is $\Spec K[T]/(P)$ after $T=a+S$.
+
+Rank one is realized by the identity.  Lemma~\ref{lem:degree-two} excludes
+rank two.  Finally, $P'P'''$ is nonzero for $N\geq3$ in characteristic zero,
+and $K$ is infinite, so the required $a$ always exists.
+\end{proof}
