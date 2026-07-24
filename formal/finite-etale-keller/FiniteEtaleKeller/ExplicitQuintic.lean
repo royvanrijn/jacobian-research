@@ -58,11 +58,11 @@ set_option maxHeartbeats 0 in
 /-- The displayed denominator-free map has Jacobian determinant `-722`. -/
 theorem jacobianDet_integralMap :
     jacobianDet integralMap = MvPolynomial.C (-722) := by
-  simp only [jacobianDet, jacobianMatrix, det_fin_three, Matrix.of_apply,
-    integralMap, t, q, Matrix.cons_val_zero, Matrix.cons_val_one,
-    Matrix.cons_val_two, Matrix.head_cons, Matrix.tail_cons, map_add, map_sub,
-    Derivation.map_one_eq_zero, pderiv_mul, pderiv_pow, pderiv_C,
-    pderiv_X_self, pderiv_X_of_ne, ne_eq, Fin.reduceEq, not_false_eq_true]
+  simp only [jacobianDet, jacobianMatrix, det_fin_three, of_apply,
+    integralMap, t, q, cons_val_zero, cons_val_one, cons_val_two, head_cons,
+    tail_cons, map_add, map_sub, Derivation.map_one_eq_zero, pderiv_mul,
+    pderiv_pow, pderiv_C, pderiv_X_self, pderiv_X_of_ne, ne_eq,
+    Fin.reduceEq, not_false_eq_true]
   simp only [map_neg, map_ofNat]
   ring
 
@@ -84,7 +84,7 @@ theorem integralMap_eq_scaled_normalized :
   fin_cases i <;> simp [normalizedMap, scaleOutput] <;> ring
 
 /-- The classical minimal intersective quintic. -/
-def p5 : ℚ[Polynomial.X] :=
+def p5 : Polynomial ℚ :=
   (Polynomial.X ^ 3 - Polynomial.C 19)
     * (Polynomial.X ^ 2 + Polynomial.X + 1)
 
@@ -97,7 +97,7 @@ theorem p5_expanded :
   ring
 
 /-- The rooted quadratic-gauge seed. -/
-def g5 : ℚ[Polynomial.X] :=
+def g5 : Polynomial ℚ :=
   Polynomial.X ^ 5 + Polynomial.X ^ 4 + Polynomial.X ^ 3
     - Polynomial.C 19 * Polynomial.X ^ 2
     - Polynomial.C 19 * Polynomial.X
@@ -120,14 +120,14 @@ theorem p5_derivative :
   ring
 
 /-- First coefficient in an explicit Bezout identity for `p5` and `p5'`. -/
-def bezoutU : ℚ[Polynomial.X] :=
+def bezoutU : Polynomial ℚ :=
   Polynomial.C (50 / 4617) * Polynomial.X ^ 3
     + Polynomial.C (5 / 1539) * Polynomial.X ^ 2
     - Polynomial.C (25 / 3078) * Polynomial.X
     - Polynomial.C (338 / 4617)
 
 /-- Second coefficient in an explicit Bezout identity for `p5` and `p5'`. -/
-def bezoutV : ℚ[Polynomial.X] :=
+def bezoutV : Polynomial ℚ :=
   -Polynomial.C (10 / 4617) * Polynomial.X ^ 4
     - Polynomial.C (5 / 4617) * Polynomial.X ^ 3
     + Polynomial.C (1 / 1026) * Polynomial.X ^ 2
