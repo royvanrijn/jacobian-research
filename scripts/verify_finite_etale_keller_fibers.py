@@ -165,11 +165,6 @@ def check_polynomial_to_fiber_transfer() -> None:
         target_c = sp.cancel(-2 * P.subs(S, a) / g1)
         inverse = sp.expand(G - g1 * target_c / 2)
         assert sp.expand(inverse - P.subs(S, S + a)) == 0
-        assert (sp.Rational(-1, 2), 0, target_c) == (
-            sp.Rational(-1, 2),
-            0,
-            target_c,
-        )
         check_scheme_reconstruction(P, a)
 
 
