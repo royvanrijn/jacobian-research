@@ -308,8 +308,9 @@ make verify-lean-foundational
 ```
 
 GitHub Actions runs this target in the required `formal-lean` job using the
-pinned upstream commit and Lean action.  The `papers` job compiles every
-standalone paper discovered at `papers/*/main.tex`, and
+pinned upstream commit and Lean action.  The `papers` job compiles the
+finalized and active manuscripts listed in `papers/README.md`, while parked
+manuscripts remain available for direct local builds.  The
 `macaulay2-independent-check` runs the pinned
 Macaulay2 comparison.  Together with the four Python matrix jobs, these are
 the complete CI verification pipeline.  The final `verification-complete`

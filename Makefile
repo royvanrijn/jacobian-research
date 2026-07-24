@@ -3,6 +3,16 @@ SHELL := /bin/bash
 PYTHON ?= .venv/bin/python
 SYSTEM_PYTHON ?= python3
 
+FINALIZED_PAPERS := \
+	papers/gaussian-moments-two-variables \
+	papers/sparse-minimality-gaussian-moments-dimension-three
+ACTIVE_PAPERS := papers/common-arithmetic-fibers
+PARKED_PAPERS := \
+	papers/exact-real-chamber-spectra \
+	papers/discriminant-pencils
+VERIFIED_PAPERS := $(FINALIZED_PAPERS) $(ACTIVE_PAPERS)
+ALL_PAPERS := $(VERIFIED_PAPERS) $(PARKED_PAPERS)
+
 .PHONY: check verify verify-logged verify-minimal verify-core verify-geometry \
 	verify-theorems verify-regressions verify-derived verify-family \
 	verify-external-consequences verify-restricted-minima verify-two-real-gmc verify-counterexample-scoreboard verify-plane-jc verify-plane-case2-residue-strata verify-plane-case2-j1-endpoint verify-plane-case2-maximal-gcd verify-plane-case2-gcd6 verify-plane-poisson-radical verify-plane-poisson-primary-charts verify-plane-poisson-separators verify-plane-poisson-primary-filtration verify-plane-poisson-filtered-modules verify-weighted-boundary \
@@ -439,16 +449,14 @@ verify-coincident-root-loci:
 	bash scripts/verify_coincident_root_slices.sh
 
 verify-papers:
-	@set -e; for paper in papers/*/main.tex; do \
-		latexmk -cd -pdf -interaction=nonstopmode -halt-on-error "$$paper"; \
+	@set -e; for paper_dir in $(VERIFIED_PAPERS); do \
+		latexmk -cd -pdf -interaction=nonstopmode -halt-on-error "$$paper_dir/main.tex"; \
 	done
 	mkdir -p output/pdf
 	cp papers/gaussian-moments-two-variables/main.pdf \
 		output/pdf/gaussian-moments-two-variables.pdf
 	cp papers/sparse-minimality-gaussian-moments-dimension-three/main.pdf \
 		output/pdf/sparse-minimality-gaussian-moments-dimension-three.pdf
-	cp papers/discriminant-pencils/main.pdf \
-		output/pdf/generic-discriminants-polynomial-tangent-pencils.pdf
 	cp papers/common-arithmetic-fibers/main.pdf \
 		output/pdf/common-arithmetic-fibers.pdf
 
@@ -456,8 +464,8 @@ prepare-arxiv-uploads:
 	bash scripts/prepare_arxiv_uploads.sh
 
 clean-papers:
-	@set -e; for paper in papers/*/main.tex; do \
-		latexmk -cd -C "$$paper"; \
+	@set -e; for paper_dir in $(ALL_PAPERS); do \
+		latexmk -cd -C "$$paper_dir/main.tex"; \
 	done
 	$(RM) papers/core-counterexample/main.bbl
 

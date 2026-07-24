@@ -1,6 +1,9 @@
 # Generic discriminants of polynomial tangent pencils
 
-This directory contains the short replacement paper about the reduced
+**Status: parked.** This manuscript is retained as a research archive and is
+excluded from the normal paper build and publication pipeline.
+
+This directory contains the short replacement manuscript about the reduced
 discriminant curve of
 
 \[

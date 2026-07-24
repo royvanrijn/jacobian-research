@@ -279,8 +279,8 @@ The [real-sheet spectrum theorem](verified/REAL_FIBER_SPECTRUM.md) sharpens
 this to the exact chamber spectrum `N,N-2,...,N mod 2`, proves the minimum is
 zero in even degree and one in odd degree, supplies rational targets for every
 count, and exhibits the full parity chain by successive fold crossings.
-The standalone
-[short paper](papers/exact-real-chamber-spectra/main.tex) presents this as a
+The parked
+[short manuscript](papers/exact-real-chamber-spectra/main.tex) presents this as a
 refinement of Migus's classification of the generic degrees of real Keller
 maps with non-dense Euclidean image, with explicit credit to Gallagher's
 all-degree weighted family and quartic empty-fiber example.
@@ -493,7 +493,9 @@ content, while `software_lock` names the repository lock manifests used for
 its replay; neither field upgrades a claim's review status. False historical
 claims are first-class `falsified` entries rather than prose-only corrections.
 
-## Main papers
+## Papers
+
+### Finalized / frozen / preprint
 
 - [The Gaussian Moments Conjecture in Two Variables](papers/gaussian-moments-two-variables/main.tex)
   ([Zenodo record 21534699](https://zenodo.org/records/21534699),
@@ -501,10 +503,20 @@ claims are first-class `falsified` entries rather than prose-only corrections.
 - [Sparse Minimality of Gaussian-Moments Counterexamples in Dimension Three](papers/sparse-minimality-gaussian-moments-dimension-three/main.tex)
   ([Zenodo record 21534917](https://zenodo.org/records/21534917),
   DOI `10.5281/zenodo.21534917`)
-- [Generic Discriminants of Polynomial Tangent Pencils](papers/discriminant-pencils/main.tex)
+
+### Active
+
 - [Common Arithmetic Fibers of Stably Inequivalent Keller Maps](papers/common-arithmetic-fibers/main.tex)
 
-Publication status as of 24 July 2026: the first two manuscripts have been
+### Parked
+
+- [Exact Real Chamber Spectra of Explicit Keller Maps](papers/exact-real-chamber-spectra/main.tex)
+- [Generic Discriminants of Polynomial Tangent Pencils](papers/discriminant-pencils/main.tex)
+
+The parked manuscripts are retained as research archives, but are excluded
+from the normal paper build and publication pipeline.
+
+Publication status as of 24 July 2026: the two finalized manuscripts have been
 deposited on Zenodo, but their arXiv submissions are awaiting endorsement and
 have not yet been posted on arXiv.
 
@@ -527,8 +539,9 @@ make check verify-minimal verify-master verify-theorems verify-papers
 the Python standard library.  `verify-master` covers the cancellation chain,
 including the unconditional all-`(m,r)` thick-contact formula.  The conditional
 contact-resultant refinements are separate from the `M1` proof path.
-`verify-papers` discovers and compiles every `papers/*/main.tex`; CI uses the
-same discovery rule and archives every resulting PDF.
+`verify-papers` compiles the finalized and active manuscripts listed in
+[the paper registry](papers/README.md); CI archives those resulting PDFs.
+Parked manuscripts can still be built directly from their source directories.
 
 The full command catalogue, heavier symbolic runs, optional Lean certificate,
 and independent Macaulay2 comparison are documented in

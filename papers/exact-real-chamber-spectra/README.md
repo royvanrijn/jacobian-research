@@ -1,5 +1,8 @@
 # Exact Real Chamber Spectra of Explicit Keller Maps
 
+**Status: parked.** This manuscript is retained as a research archive and is
+excluded from the normal paper build and publication pipeline.
+
 This short paper reframes `verified/REAL_FIBER_SPECTRUM.md` as a refinement
 of Migus's classification of generic degrees of real Keller maps with
 non-dense Euclidean image.
@@ -12,5 +15,5 @@ latexmk -pdf -interaction=nonstopmode -halt-on-error \
   papers/exact-real-chamber-spectra/main.tex
 ```
 
-The stable PDF artifact is written to
-`output/pdf/exact-real-chamber-spectra.pdf` after verification.
+Because the manuscript is parked, its PDF is not copied into `output/pdf/` by
+the normal verification target.
