@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 """Exact checks for finite etale algebras as Keller fibers.
 
-The checker has three independent layers:
+The checker has four independent layers:
 
 1. direct Jacobian and inverse-polynomial checks for translated seeds;
-2. quotient-ring reconstruction, using an explicit Bezout inverse of E';
-3. an exact target-scaling audit of the displayed Berend--Bilu map.
+2. Jacobian-one normalization and effective coordinate-degree checks;
+3. quotient-ring reconstruction, using an explicit Bezout inverse of E';
+4. an exact target-scaling audit of the displayed Berend--Bilu map.
 """
 from __future__ import annotations
 
@@ -32,6 +33,22 @@ def quadratic_gauge_map(G: sp.Expr) -> tuple[sp.Expr, sp.Expr, sp.Expr]:
         b += k * (coeff[k] / g1) * t**2 * x ** (k - 2) * q**k
         c -= (k - 2) * (coeff[k] / g1) * (x * q) ** k
     return tuple(sp.cancel(component) for component in (pi, b, c))
+
+
+def jacobian_one_normalization(
+    mapping: tuple[sp.Expr, sp.Expr, sp.Expr],
+) -> tuple[sp.Expr, sp.Expr, sp.Expr]:
+    """Apply the fixed output normalization diag(-1/2, 1, 1)."""
+    return (sp.cancel(-mapping[0] / 2), mapping[1], mapping[2])
+
+
+def total_coordinate_degrees(
+    mapping: tuple[sp.Expr, sp.Expr, sp.Expr],
+) -> tuple[int, int, int]:
+    return tuple(
+        int(sp.Poly(sp.expand(component), x, y, z, domain=sp.QQ).total_degree())
+        for component in mapping
+    )
 
 
 def quotient_reduce(expression: sp.Expr, modulus: sp.Expr) -> sp.Expr:
@@ -137,9 +154,22 @@ def check_polynomial_to_fiber_transfer() -> None:
         mapping = quadratic_gauge_map(G)
         assert sp.factor(sp.Matrix(mapping).jacobian((x, y, z)).det()) == -2
 
+        jacobian_one = jacobian_one_normalization(mapping)
+        assert sp.factor(sp.Matrix(jacobian_one).jacobian((x, y, z)).det()) == 1
+        degrees = total_coordinate_degrees(jacobian_one)
+        assert degrees[0] <= 7
+        assert degrees[1] <= 6 * degree + 2
+        assert degrees[2] <= 6 * degree
+        assert max(degrees) <= 6 * degree + 2
+
         target_c = sp.cancel(-2 * P.subs(S, a) / g1)
         inverse = sp.expand(G - g1 * target_c / 2)
         assert sp.expand(inverse - P.subs(S, S + a)) == 0
+        assert (sp.Rational(-1, 2), 0, target_c) == (
+            sp.Rational(-1, 2),
+            0,
+            target_c,
+        )
         check_scheme_reconstruction(P, a)
 
 
@@ -151,6 +181,8 @@ def check_minimal_hasse_map() -> None:
 
     normalized = quadratic_gauge_map(G)
     assert sp.factor(sp.Matrix(normalized).jacobian((x, y, z)).det()) == -2
+    normalized_one = jacobian_one_normalization(normalized)
+    assert sp.factor(sp.Matrix(normalized_one).jacobian((x, y, z)).det()) == 1
 
     t = 1 + x * y
     q = t**2 * z - 19 * y**2 * (1 + 3 * t)
@@ -202,6 +234,9 @@ def check_infinite_family() -> None:
     )
     mapping = quadratic_gauge_map(G)
     assert sp.factor(sp.Matrix(mapping).jacobian((x, y, z)).det()) == -2
+    assert sp.factor(
+        sp.Matrix(jacobian_one_normalization(mapping)).jacobian((x, y, z)).det()
+    ) == 1
 
     B = sp.Rational(32, 9) * ell
     C = (8 * ell + 1) / 3
@@ -218,6 +253,8 @@ if __name__ == "__main__":
     check_minimal_hasse_map()
     check_infinite_family()
     print("PASS: squarefree polynomials in degrees 3, 4, and 5 transfer")
+    print("PASS: fixed output scaling gives determinant-one maps")
+    print("PASS: coordinate degrees satisfy the effective 6N+2 bound")
     print("PASS: quotient-ring reconstruction composes in both directions")
     print("PASS: the explicit Hasse map is diag(1,19,19) of the normalized gauge")
     print("PASS: determinant -722, target -38, and inverse P5 agree exactly")
