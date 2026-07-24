@@ -110,7 +110,19 @@ jobs:
           sudo apt-get install --yes --no-install-recommends \
             latexmk texlive-fonts-recommended texlive-latex-extra
       - name: Build finalized and active papers
-        run: make verify-papers
+        shell: bash
+        run: |
+          mkdir -p artifacts/verification
+          set -o pipefail
+          make verify-papers 2>&1 | tee artifacts/verification/papers.log
+      - name: Archive paper build log
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: paper-build-log-${{ github.sha }}
+          path: artifacts/verification/papers.log
+          if-no-files-found: error
+          retention-days: 14
       - name: Archive compiled papers
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         with:

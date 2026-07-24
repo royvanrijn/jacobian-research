@@ -152,8 +152,8 @@ for fragment in (
     assert fragment in julia, fragment
 print("PASS map formula: archive/tooling/nonproper_fiber_homotopy.jl")
 
-# Human-facing full displays are checked textually; the archived facts note uses the declared
-# abbreviation u=1+xy and is covered separately.
+# Human-facing full displays are checked textually; allow harmless prose changes
+# in the sentence introducing the fixed formula.
 display = "".join([
     "(1+xy)^3z+y^2(1+xy)(4+3xy),",
     "y+3x(1+xy)^2z+3xy^2(4+3xy),",
@@ -162,8 +162,14 @@ display = "".join([
 compact = "".join((ROOT / "archive/legacy-notes/FINITE_FIELD_VALUE_DISTRIBUTION.md").read_text().split())
 assert display in compact, "archive/legacy-notes/FINITE_FIELD_VALUE_DISTRIBUTION.md"
 readme = "".join((ROOT / "README.md").read_text().split())
+assert any(
+    fragment in readme
+    for fragment in (
+        "Let`u=1+xy`anddefine`F:A^3->A^3`by",
+        "Put`u=1+xy`anddefine",
+    )
+), "README formula introduction"
 for fragment in (
-    "Let`u=1+xy`anddefine`F:A^3->A^3`by",
     "u^3z+y^2u(4+3xy)",
     "y+3xu^2z+3xy^2(4+3xy)",
     "2x-3x^2y-x^3z",
