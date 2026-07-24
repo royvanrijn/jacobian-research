@@ -16,99 +16,117 @@ F^{-1}(y)\simeq\operatorname{Spec}A,\qquad
 \dim_KA=\operatorname{gdeg}(F).
 \]
 
-The equality means that the fiber is full: every generic inverse sheet is
-present, with none lost at the finite-normalization boundary.
+The equality says that the fiber is **full**: every generic inverse sheet is
+present. A shorter special fiber can occur when sheets escape through the
+nonproperness boundary; fullness excludes precisely that loss.
 
-## 2. Rank-classification theorem
+## 2. Effective Jacobian-one realization
 
-The possible ranks of nonzero Keller fibers over a characteristic-zero field
-are exactly
-
-\[
-\boxed{1,3,4,5,\ldots}.
-\]
-
-More precisely, let \(P\in K[T]\) be squarefree of degree \(N\ge3\). Choose
-\(a\in K\) with
+Let \(P\in K[T]\) be squarefree of degree \(N\ge3\). Choose \(a\in K\) with
 
 \[
-P'(a)P'''(a)\ne0
+P'(a)P'''(a)
+e0
 \]
 
 and put
 
 \[
-G(S)=P(a+S)-P(a).
+G(S)=P(a+S)-P(a)=g_1S+\cdots+g_NS^N.
 \]
 
-The root-engineered quadratic gauge attached to \(G\) is an explicit map
+Then \(g_1=P'(a)\), \(g_3=P'''(a)/6\), and \(g_N
+e0\), so the
+root-engineered quadratic gauge applies. Its normalized map
 
 \[
-F_G:\mathbb A^3_K\longrightarrow\mathbb A^3_K,\qquad
-\det DF_G=-2,\qquad \operatorname{gdeg}(F_G)=N,
+F_G=(\Pi,B,C):\mathbb A^3_K\longrightarrow\mathbb A^3_K
 \]
 
-with full fiber
+has determinant \(-2\). Compose with
 
 \[
-\boxed{
-F_G^{-1}\left(1,0,-\frac{2P(a)}{P'(a)}\right)\simeq
-\operatorname{Spec}K[T]/(P).
-}
+L(\Pi,B,C)=\left(-rac{\Pi}{2},B,Cight)
 \]
 
-Every finite étale algebra over an infinite field is monogenic, so this
-realizes every finite étale \(K\)-algebra of rank at least three.
-
-Rank one is realized by the identity. Rank two is impossible by the Galois
-case below.
-
-## 3. Exact generality of the degree-two exclusion
-
-Let \(F:\mathbb A^m_K\to\mathbb A^m_K\) be Keller with geometric degree two.
-Then
+and write \(\widetilde F_G=L\circ F_G\). Then
 
 \[
-K(x_1,\ldots,x_m)/K(F_1,\ldots,F_m)
+oxed{\det D\widetilde F_G=1},\qquad
+\operatorname{gdeg}(\widetilde F_G)=N.
 \]
 
-is a separable quadratic extension and hence Galois. Campbell proved the
-complex Galois case; Razar and independently Wright gave subsequent algebraic
-treatments.
+At
 
-The exact arbitrary-\(K\) statement follows without assuming a field-general
-formulation in any one source. Descend the coefficients of \(F\) to a finitely
-generated subfield \(K_0\subset K\). Generic degree is invariant under scalar
-extension for a dominant generically finite map between geometrically
-integral affine spaces. Embed \(K_0\) into \(\mathbb C\); the complexified map
-still has geometric degree two, hence Galois function-field extension, and is
-therefore a polynomial automorphism by Campbell.
+\[
+\widetilde y_{P,a}
+=\left(-rac12,0,-rac{2P(a)}{P'(a)}ight)
+\]
 
-The formal inverse at \(F(0)\) is unique and is obtained recursively using
-only the coefficients of \(F\) and the inverse of its linear Jacobian. Its
-coefficients therefore lie in \(K_0\). The complex polynomial inverse agrees
-with this formal inverse, so it descends to \(K_0\), and hence to \(K\).
-Thus no algebraic-closedness assumption is required.
+the full fiber is
 
-References:
+\[
+oxed{\widetilde F_G^{-1}(\widetilde y_{P,a})\simeq
+\operatorname{Spec}K[T]/(P).}
+\]
 
-- L. A. Campbell,
-  [*A condition for a polynomial map to be invertible*](https://doi.org/10.1007/BF01349234),
-  Math. Ann. 205 (1973), 243--248.
-- M. Razar,
-  [*Polynomial maps with constant Jacobian*](https://doi.org/10.1007/BF02764906),
-  Israel J. Math. 32 (1979), 97--106.
-- D. Wright,
-  [*On the Jacobian conjecture*](https://doi.org/10.1215/ijm/1256047158),
-  Illinois J. Math. 25 (1981), 423--440.
+The construction is effective. With total degree,
+
+\[
+\deg\Pi\le7,\qquad
+\deg B\le6N+2,\qquad
+\deg C\le6N,
+\]
+
+so
+
+\[
+oxed{\max_i\deg(\widetilde F_G)_i\le6N+2.}
+\]
+
+The estimates use \(\deg t=2\), \(\deg q\le5\), and the bounds
+
+\[
+\degigl(t^2x^{k-2}q^kigr)\le6k+2,\qquad
+\degigl((xq)^kigr)\le6k.
+\]
+
+## 3. Complete rank classification
+
+Every finite étale algebra over an infinite field is monogenic. Indeed, after
+extension to a separable closure, the algebra is a product of \(N\) copies of
+the field; the primitive elements are the nonempty open set on which the
+Vandermonde discriminant
+
+\[
+\prod_{i<j}(X_i-X_j)^2
+\]
+
+is nonzero. Thus every finite étale \(K\)-algebra of rank \(N\) is
+\(K[T]/(P)\) for a squarefree degree-\(N\) polynomial.
+
+Consequently every rank at least three occurs by the construction above.
+Rank one is realized by the identity. Rank two is impossible: a degree-two
+Keller map has a separable quadratic and hence Galois function-field
+extension; the Campbell--Razar--Wright Galois case makes it an automorphism.
+For an arbitrary characteristic-zero ground field, descend to a finitely
+generated subfield, embed it in \(\mathbb C\), apply the complex theorem, and
+descend the unique formal inverse.
+
+Hence the possible ranks of nonzero Keller fibers are exactly
+
+\[
+oxed{1,3,4,5,\ldots}.
+\]
 
 ## 4. Scheme-theoretic reconstruction
 
-For a quadratic-gauge target \((\pi,b,c)\) with \(\pi\ne0\), write
+For a quadratic-gauge target \((\pi,b,c)\) with \(\pi
+e0\), set
 
 \[
-E(S)=G_\pi(S)-\frac{g_1}{2}(bS^2+c),\qquad
-R=K[S]/(E),\qquad s=S\bmod E.
+E(S)=G_\pi(S)-rac{g_1}{2}(bS^2+c),\qquad
+R=K[S]/(E),\qquad s=Smod E.
 \]
 
 If \(E\) is squarefree, Bézout gives \(U,V\in K[S]\) with
@@ -117,50 +135,69 @@ If \(E\) is squarefree, Bézout gives \(U,V\in K[S]\) with
 UE+VE'=1.
 \]
 
-Hence \(E'(s)\) is a unit in \(R\); its inverse is explicitly \(V(s)\). Put
+Therefore \(E'(s)\) is a unit in \(R\), with explicit inverse \(V(s)\). Put
 
 \[
-d=\frac{E'(s)}{g_1},\qquad
-\beta(\pi,s)=\frac{G_\pi'(s)/g_1-1-\pi s^2}{s},\qquad
-Q=b-\beta(\pi,s),
+d=rac{E'(s)}{g_1},\qquad
+Q=b-eta(\pi,s),\qquad
+eta(\pi,S)=rac{G_\pi'(S)/g_1-1-\pi S^2}{S},
 \]
 
-and reconstruct
+and reconstruct in \(R\)
 
 \[
-t=d^{-1},\quad x=sd^{-1},\quad y=Q-\pi s,\quad q=\pi d,
+t=d^{-1},\qquad x=sd^{-1},\qquad y=Q-\pi s,\qquad q=\pi d,
 \]
 
 \[
-z=d^2\left(q-\frac{g_1}{g_3}y^2(1+3t)\right).
+z=d^2\left(q-rac{g_1}{g_3}y^2(1+3t)ight).
 \]
 
-These are elements of \(R\), not rational functions on geometric points. They
-satisfy the source equations and map to \((\pi,b,c)\), defining one ring map
-from the fiber algebra to \(R\).
-
-Conversely, on the entire fiber scheme,
+These are elements of the quotient ring, not pointwise rational functions.
+Conversely, on the entire fiber ring,
 
 \[
-tq=\pi\in K^*.
+tq=\pi\in K^*,
 \]
 
-Therefore \(t\) and \(q\) are units globally, and
+so \(t\) and \(q\) are units globally and
 
 \[
 S=x/t,\qquad Q=y+xq
 \]
 
-are global fiber-ring elements satisfying \(E(S)=0\). The two constructions
-are inverse on coordinate rings. Thus
+are global fiber-ring elements satisfying \(E(S)=0\). The two maps are inverse
+on coordinate rings. Thus
 
 \[
 F_G^{-1}(\pi,b,c)\simeq\operatorname{Spec}K[S]/(E)
 \]
 
-scheme-theoretically, not merely as a set of geometric points.
+scheme-theoretically.
 
-## 5. Explicit optimal Hasse fiber and scaling ledger
+## 5. Scalar-extension compatibility
+
+For every characteristic-zero field extension \(K\hookrightarrow K'\), the
+construction commutes with coefficientwise scalar extension:
+
+\[
+\widetilde F_{G,K'}=\widetilde F_G\otimes_KK'.
+\]
+
+The distinguished fiber becomes
+
+\[
+(K[T]/(P))\otimes_KK'\simeq K'[T]/(P).
+\]
+
+Hence connectedness, field decomposition, real signatures, splitting fields,
+Galois actions, and all local algebras are transported functorially.
+
+In particular, every finite separable field extension \(L/K\) of degree at
+least three occurs as a connected full fiber of a Jacobian-one map of
+\(\mathbb A^3_K\), with coordinate degree at most \(6[L:K]+2\).
+
+## 6. Explicit optimal Hasse fiber
 
 Let
 
@@ -197,49 +234,41 @@ and normalized target \((1,0,-2)\) becomes displayed target
 \((1,0,-38)\). At the normalized target,
 
 \[
-G(T)-\frac{-19}{2}(-2)=G(T)-19=P_5(T).
+G(T)-rac{-19}{2}(-2)=G(T)-19=P_5(T).
 \]
 
-Hence the complete fiber is
+Hence
 
 \[
+F^{-1}(1,0,-38)\simeq
 \operatorname{Spec}\mathbb Q[T]/((T^3-19)(T^2+T+1)).
 \]
 
-It has points over every completion of \(\mathbb Q\) but no rational point.
-A Chebotarev argument excludes such finite étale schemes in total degree at
-most four, so the minimum Hasse-failing Keller-fiber rank is exactly five.
+This fiber has points over every completion of \(\mathbb Q\) but no rational
+point. A Chebotarev argument excludes such finite étale schemes in total
+degree at most four, so the minimum Hasse-failing Keller-fiber rank is
+exactly five.
 
-## 6. Consequences and chain update
-
-The theorem immediately preserves the whole input algebra, including:
-
-- connectedness and field decomposition;
-- signatures at real places;
-- splitting fields and the Galois action on geometric points;
-- all local algebras \(A\otimes_KK_v\);
-- good-prime factorization types;
-- rational points, local points, and intersectivity.
-
-In particular every finite separable field extension of degree at least three
-is a connected Keller fiber.
-
-This changes the earlier arithmetic chain:
+## 7. Consequences for the earlier chain
 
 1. **Absolute occurrence is settled.** Every finite étale algebra of rank at
-   least three occurs directly, without tangent normalization, Hilbert
-   irreducibility, or auxiliary factors.
-2. The weighted tangent-admissibility theorem remains useful for occurrence
-   inside the specific linear-tilt weighted family.
-3. The quadratic-stabilized intersective transfer theorem remains valid as a
-   weighted-presentation result, but its degree-two overhead is no longer
-   needed for Keller-fiber existence.
-4. The open arithmetic questions now concern realization inside one fixed map,
-   bounded coordinate complexity, stable-equivalence multiplicity, and
-   additional geometric restrictions on the ambient map--not abstract
-   occurrence.
+   least three occurs directly, with determinant one and an effective degree
+   bound.
+2. Weighted tangent-admissibility remains useful for occurrence inside the
+   specific weighted linear-pencil family, but it is not an absolute
+   existence condition.
+3. Quadratic-stabilized intersective transfer remains valid as a
+   weighted-presentation theorem, but its degree-two overhead is unnecessary
+   for general Keller-fiber existence.
+4. The remaining arithmetic questions concern one fixed map, minimal
+   coordinate complexity, stable-equivalence multiplicity, and additional
+   restrictions on the ambient map.
 
-## 7. Verification and novelty audit
+The geometric-degree spectrum theorem now also has a second direct existence
+proof: apply this realization to any squarefree polynomial of degree
+\(N\ge3\).
+
+## 8. Verification and formalization
 
 Run
 
@@ -247,15 +276,19 @@ Run
 .venv/bin/python scripts/verify_finite_etale_keller_fibers.py
 ```
 
-The checker verifies:
+The exact checker verifies translated examples in degrees three, four, and
+five, determinant-one normalization, the \(6N+2\) degree bound, Bézout
+inversion, both quotient-ring reconstruction compositions, the explicit
+quintic scaling, determinant \(-722\), target \(-38\), and the fixed-map
+infinite Hasse-family identity.
 
-- determinant \(-2\) for translated examples in degrees three, four, and five;
-- explicit Bézout inversion and quotient-ring reconstruction;
-- both compositions of the reconstruction identities;
-- the exact target scaling of the Berend--Bilu map;
-- determinant \(-722\), target \(-38\), and inverse polynomial \(P_5\);
-- the fixed-map infinite Hasse-family identity.
+A staged Lean project is stored in
+[`formal/finite-etale-keller`](../formal/finite-etale-keller). Stage one
+formalizes the explicit quintic Jacobian, output normalizations,
+inverse-polynomial identity, and a constructive Bézout inverse in the quotient
+algebra. The universal marked-line identities and full scheme reconstruction
+are the next formal modules. The historical degree-two theorem remains a
+separate external input until formalized.
 
-The dated literature search supporting the qualified novelty statement is
-recorded in
+The dated qualified novelty search is recorded in
 [`papers/common-arithmetic-fibers/LITERATURE_AUDIT.md`](../papers/common-arithmetic-fibers/LITERATURE_AUDIT.md).
