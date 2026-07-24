@@ -47,12 +47,17 @@ def originalToTranslated (P : K[X]) (a : K) :
       change Polynomial.aeval
         (AdjoinRoot.root (translatePolynomial P a)
           + algebraMap K (AdjoinRoot (translatePolynomial P a)) a) P = 0
-      have hzero : Polynomial.aeval
-          (AdjoinRoot.root (translatePolynomial P a))
-          (translatePolynomial P a) = 0 := by
-        rw [AdjoinRoot.aeval_eq, AdjoinRoot.mk_self]
-      rw [translatePolynomial, Polynomial.aeval_comp] at hzero
-      simpa using hzero)
+      calc
+        Polynomial.aeval
+            (AdjoinRoot.root (translatePolynomial P a)
+              + algebraMap K (AdjoinRoot (translatePolynomial P a)) a) P
+          = Polynomial.aeval (AdjoinRoot.root (translatePolynomial P a))
+              (P.comp (X + C a)) := by
+                rw [Polynomial.aeval_comp]
+                simp
+        _ = Polynomial.aeval (AdjoinRoot.root (translatePolynomial P a))
+              (translatePolynomial P a) := rfl
+        _ = 0 := by simp)
 
 @[simp]
 theorem translatedToOriginal_root (P : K[X]) (a : K) :
@@ -83,13 +88,13 @@ theorem translationQuotientEquiv_root (P : K[X]) (a : K) :
     translationQuotientEquiv P a
         (AdjoinRoot.root (translatePolynomial P a)) =
       AdjoinRoot.root P - algebraMap K (AdjoinRoot P) a := by
-  rfl
+  simpa [translationQuotientEquiv] using translatedToOriginal_root P a
 
 @[simp]
 theorem translationQuotientEquiv_symm_root (P : K[X]) (a : K) :
     (translationQuotientEquiv P a).symm (AdjoinRoot.root P) =
       AdjoinRoot.root (translatePolynomial P a)
         + algebraMap K (AdjoinRoot (translatePolynomial P a)) a := by
-  rfl
+  simpa [translationQuotientEquiv] using originalToTranslated_root P a
 
 end FiniteEtaleKeller
