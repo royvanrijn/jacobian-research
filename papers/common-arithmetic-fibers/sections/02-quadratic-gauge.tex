@@ -155,3 +155,49 @@ Finally, the generic polynomial \eqref{eq:inverse} has degree $N$ and is
 separable, and the same reconstruction works at every generic root.  Hence
 $\gdeg(F_G)=N$.
 \end{proof}
+
+\begin{corollary}[Jacobian-one effective form]\label{cor:effective-gauge}
+Let
+\[
+ L(\Pi,B,C)=\left(-\frac{\Pi}{2},B,C\right),
+ \qquad \widetilde F_G=L\circ F_G.
+\]
+Then
+\[
+ \det D\widetilde F_G=1,
+ \qquad \gdeg(\widetilde F_G)=N.
+\]
+For every $(\pi,b,c)\in K^*\times K^2$ for which $E_{\pi,b,c}$ is
+squarefree of degree $N$,
+\[
+ \widetilde F_G^{-1}\left(-\frac{\pi}{2},b,c\right)
+ \simeq\Spec K[S]/(E_{\pi,b,c}).
+\]
+Moreover, in total degree,
+\[
+ \deg\Pi\leq7,
+ \qquad \deg B\leq6N+2,
+ \qquad \deg C\leq6N,
+\]
+and therefore
+\[
+ \boxed{\max_i\deg(\widetilde F_G)_i\leq6N+2.}
+\]
+\end{corollary}
+
+\begin{proof}
+The map $L$ is a linear automorphism of determinant $-1/2$.  The determinant,
+geometric-degree, and fiber statements therefore follow from
+Proposition~\ref{prop:gauge}.
+
+For the degree estimate, $\deg t=2$ and $\deg q\leq5$, hence
+$\deg\Pi\leq7$.  The summand of $B$ indexed by $k\geq4$ has degree at most
+\[
+ 2\deg t+(k-2)+k\deg q\leq4+(k-2)+5k=6k+2,
+\]
+while the three terms preceding the sum have degrees at most $1$, $6$, and
+$7$.  Thus $\deg B\leq6N+2$.  Similarly, the summand $(xq)^k$ in $C$ has
+degree at most $6k$, while the preceding terms have degrees at most $3$ and
+$4$, so $\deg C\leq6N$.  Linear output normalization does not change these
+bounds.
+\end{proof}
