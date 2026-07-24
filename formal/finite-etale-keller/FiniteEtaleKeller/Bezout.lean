@@ -59,7 +59,7 @@ theorem adjoinRootDerivativeUnit_val (E U V : K[X])
 @[simp]
 theorem adjoinRootDerivativeUnit_inv_val (E U V : K[X])
     (h : U * E + V * E.derivative = 1) :
-    ((adjoinRootDerivativeUnit E U V h)⁻¹ : AdjoinRoot E) =
+    (↑((adjoinRootDerivativeUnit E U V h)⁻¹) : AdjoinRoot E) =
       AdjoinRoot.mk E V := rfl
 
 /-- In particular, the derivative class is a unit in the quotient ring. -/
