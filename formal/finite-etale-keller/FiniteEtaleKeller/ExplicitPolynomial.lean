@@ -47,7 +47,6 @@ theorem p5_derivative :
         + 3 * Polynomial.X ^ 2 - 38 * Polynomial.X - 19 := by
   rw [p5_expanded]
   simp
-  simp only [Polynomial.C_eq_natCast]
   ring
 
 /-- Integral numerator of the first Bézout coefficient. -/
