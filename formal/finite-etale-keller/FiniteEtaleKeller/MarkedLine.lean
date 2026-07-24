@@ -23,28 +23,28 @@ section SourceChart
 variable {K : Type*} [Field K]
 
 /-- On the chart `t = 1 + x*y ≠ 0`, the source factor
-`D = 1 - S*Q + Π*S^2` is exactly `t⁻¹`. -/
+`D = 1 - S*Q + pi*S^2` is exactly `t⁻¹`. -/
 theorem sourceChart_reciprocal (x y q : K) (ht : 1 + x * y ≠ 0) :
     let t := 1 + x * y
     let S := x / t
-    let Π := t * q
+    let pi := t * q
     let Q := y + x * q
-    1 - S * Q + Π * S ^ 2 = 1 / t := by
+    1 - S * Q + pi * S ^ 2 = 1 / t := by
   dsimp
   field_simp [ht]
   ring
 
-/-- If `t*q = Π` and `Π` is nonzero, then both chart factors are nonzero.
+/-- If `t*q = pi` and `pi` is nonzero, then both chart factors are nonzero.
 This is the pointwise algebra behind the scheme-theoretic observation that
 `t` and `q` are units on a fiber with nonzero first target coordinate. -/
-theorem sourceChart_factors_ne_zero {t q Π : K} (hΠ : Π ≠ 0) (htq : t * q = Π) :
+theorem sourceChart_factors_ne_zero {t q pi : K} (hpi : pi ≠ 0) (htq : t * q = pi) :
     t ≠ 0 ∧ q ≠ 0 := by
   constructor
   · intro ht
-    apply hΠ
+    apply hpi
     simpa [ht] using htq.symm
   · intro hq
-    apply hΠ
+    apply hpi
     simpa [hq] using htq.symm
 
 end SourceChart
@@ -56,9 +56,9 @@ variable {R : Type*} [CommRing R]
 /-- The defining relation for `β` converts the normalized derivative into the
 same factor `D` that appears in the source chart. -/
 theorem normalizedDerivative_eq_chartFactor
-    (S Q Π β h : R) (hβ : S * β = h - 1 - Π * S ^ 2) :
-    h - (Q + β) * S = 1 - S * Q + Π * S ^ 2 := by
-  have hh : h = 1 + Π * S ^ 2 + S * β := by
+    (S Q pi β h : R) (hβ : S * β = h - 1 - pi * S ^ 2) :
+    h - (Q + β) * S = 1 - S * Q + pi * S ^ 2 := by
+  have hh : h = 1 + pi * S ^ 2 + S * β := by
     linear_combination hβ
   rw [hh]
   ring
@@ -75,16 +75,16 @@ theorem markedLine_planeJacobian
 the marked-line Jacobian with `-2D`, ready to cancel the reciprocal source
 Jacobian. -/
 theorem markedLine_planeJacobian_eq_chartFactor
-    (S Q Π β h β' : R) (hβ : S * β = h - 1 - Π * S ^ 2) :
+    (S Q pi β h β' : R) (hβ : S * β = h - 1 - pi * S ^ 2) :
     β' * (-S ^ 2)
         - (2 * h - β' * S ^ 2 - 2 * (Q + β) * S)
-      = -2 * (1 - S * Q + Π * S ^ 2) := by
+      = -2 * (1 - S * Q + pi * S ^ 2) := by
   calc
     β' * (-S ^ 2)
           - (2 * h - β' * S ^ 2 - 2 * (Q + β) * S)
         = -2 * (h - (Q + β) * S) := by ring
-    _ = -2 * (1 - S * Q + Π * S ^ 2) := by
-      rw [normalizedDerivative_eq_chartFactor S Q Π β h hβ]
+    _ = -2 * (1 - S * Q + pi * S ^ 2) := by
+      rw [normalizedDerivative_eq_chartFactor S Q pi β h hβ]
 
 end MarkedLine
 
