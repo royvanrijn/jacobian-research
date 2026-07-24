@@ -47,12 +47,10 @@ theorem p5_derivative :
         + 3 * Polynomial.X ^ 2 - 38 * Polynomial.X - 19 := by
   rw [p5_expanded]
   simp
-  change
-    (4 : Polynomial ℚ) * Polynomial.X ^ 4 - Polynomial.X * 38
-          + Polynomial.X ^ 2 + Polynomial.X ^ 2 * 2
-          + Polynomial.X ^ 3 + Polynomial.X ^ 3 * 3 + Polynomial.X ^ 4
-      = -(Polynomial.X * 38) + Polynomial.X ^ 2 * 3
-          + Polynomial.X ^ 3 * 4 + Polynomial.X ^ 4 * 5
+  have h2 : Polynomial.C (2 : ℚ) = (2 : Polynomial ℚ) := by norm_num
+  have h3 : Polynomial.C (3 : ℚ) = (3 : Polynomial ℚ) := by norm_num
+  have h4 : Polynomial.C (4 : ℚ) = (4 : Polynomial ℚ) := by norm_num
+  rw [h2, h3, h4]
   ring
 
 /-- Integral numerator of the first Bézout coefficient. -/
