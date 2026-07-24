@@ -1,3 +1,8 @@
+/-
+Copyright (c) 2026 Roy van Rijn. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Roy van Rijn
+-/
 import Mathlib
 
 /-!
@@ -42,7 +47,7 @@ theorem jacobianDet_scaleOutput [CommRing R] (a b c : R)
     jacobianDet (scaleOutput a b c F) = C (a * b * c) * jacobianDet F := by
   simp only [jacobianDet, jacobianMatrix, scaleOutput, det_fin_three, of_apply,
     cons_val_zero, cons_val_one, cons_val_two, head_cons, tail_cons, pderiv_mul,
-    pderiv_C, zero_mul, zero_add, add_zero, map_mul]
+    pderiv_C, zero_mul, zero_add, map_mul]
   ring
 
 end FiniteEtaleKeller
