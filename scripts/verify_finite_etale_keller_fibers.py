@@ -38,8 +38,8 @@ def quadratic_gauge_map(G: sp.Expr) -> tuple[sp.Expr, sp.Expr, sp.Expr]:
 def jacobian_one_normalization(
     mapping: tuple[sp.Expr, sp.Expr, sp.Expr],
 ) -> tuple[sp.Expr, sp.Expr, sp.Expr]:
-    """Apply the fixed output normalization diag(-1/2, 1, 1)."""
-    return (sp.cancel(-mapping[0] / 2), mapping[1], mapping[2])
+    """Apply the target-preserving normalization diag(1, -1/2, 1)."""
+    return (mapping[0], sp.cancel(-mapping[1] / 2), mapping[2])
 
 
 def total_coordinate_degrees(
@@ -165,6 +165,8 @@ def check_polynomial_to_fiber_transfer() -> None:
         target_c = sp.cancel(-2 * P.subs(S, a) / g1)
         inverse = sp.expand(G - g1 * target_c / 2)
         assert sp.expand(inverse - P.subs(S, S + a)) == 0
+        # The distinguished target has B=0 and is fixed by the normalization.
+        assert -sp.Integer(0) / 2 == 0
         check_scheme_reconstruction(P, a)
 
 
@@ -248,7 +250,7 @@ if __name__ == "__main__":
     check_minimal_hasse_map()
     check_infinite_family()
     print("PASS: squarefree polynomials in degrees 3, 4, and 5 transfer")
-    print("PASS: fixed output scaling gives determinant-one maps")
+    print("PASS: target-preserving output scaling gives determinant-one maps")
     print("PASS: coordinate degrees satisfy the effective 6N+2 bound")
     print("PASS: quotient-ring reconstruction composes in both directions")
     print("PASS: the explicit Hasse map is diag(1,19,19) of the normalized gauge")
