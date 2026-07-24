@@ -1,8 +1,7 @@
-\section{Consequences and scope}
+\section{Consequences, provenance, and literature boundary}
 
 Theorem~\ref{thm:main} is a realization theorem, not merely a source of
 counterexamples.  Some immediate applications are:
-
 \begin{enumerate}
 \item Every squarefree polynomial of degree at least three is, after one
       translation of its variable, the exact inverse polynomial of a full
@@ -28,34 +27,65 @@ Keller maps.  That stable-classification problem is logically independent of
 the present theorem and is best treated in a sequel, tentatively titled
 \emph{One Fiber, Many Keller Maps}.
 
+\paragraph{Literature boundary.}
+A dated search completed on 24 July 2026 found no earlier statement that every
+finite \'etale algebra of rank at least three is a full fiber of a polynomial
+Keller map, nor the resulting rank classification.  This is necessarily a
+qualified priority statement: bibliographic searches can miss unpublished
+work, differently phrased results, and sources not indexed electronically.
+The appropriate claim is therefore ``to our knowledge'', not an absolute
+firstness assertion.  A reproducible search ledger is included with the
+paper sources.
+
+The closest results located have different scopes.  Gallagher gives explicit
+Keller maps in every geometric degree and complete split rational fibers
+\cite{Gallagher}; this realizes $K^N$, rather than an arbitrary finite
+\'etale $K$-algebra.  Miranda--Neto proves radicality and maximal-ideal
+decomposition properties for fibers already arising from a Keller map
+\cite{Miranda}; this is not a prescribed-fiber realization theorem.
+Lipton and Markakis study rational images and Hilbert irreducibility
+\cite{LiptonMarkakis}, while Shaska studies graded Keller maps and arithmetic
+thinness phenomena \cite{Shaska}.  None of these sources states the
+finite-\'etale realization theorem proved here.
+
 \paragraph{Verification.}
 The companion checker
 \[
  \texttt{scripts/verify\_finite\_etale\_keller\_fibers.py}
 \]
-verifies the explicit degree-five map and its determinant, the inverse
-polynomial identities, and the fixed-map infinite family.  The universal
-proof is the calculation in Proposition~\ref{prop:gauge}, not a bounded
-computer search.
+verifies the source-chart and marked-line identities, two-sided
+scheme-theoretic reconstruction in quotient rings, the exact scaling of the
+explicit degree-five map, its determinant, the inverse polynomial identities,
+and the fixed-map infinite family.  The universal proof is the calculation in
+Proposition~\ref{prop:gauge}, not a bounded computer search.
 
 \paragraph{Provenance.}
 The recent three-dimensional counterexample was publicly attributed to
 Alp\"oge and Fable.  Gallagher independently developed a weighted all-degree
 viewpoint and an exact public atlas of complete rational fibers
 \cite{Gallagher}.  The proof here instead uses the root-engineered
-quadratic-gauge construction and the finite-\'etale realization theorem
-proved above.  Berend and Bilu are credited for the minimal intersective
-quintic and its optimality.  No priority claim is made beyond the dated
-sources cited below.
+quadratic-gauge construction and the finite-\'etale realization theorem.
+Berend and Bilu are credited for the classical intersective quintic.  The
+rank-two exclusion uses the Galois theorem of Bass--Connell--Wright in its
+arbitrary characteristic-zero ground-field form \cite{BCW}; Campbell, Razar,
+and Wright are included for the historical development of that case
+\cite{Campbell,Razar,Wright}.
 
 \paragraph{AI assistance.}
 Generative AI tools were used for symbolic experimentation, exact checker
-development, adversarial proof review, and manuscript preparation.  The
-author reviewed the mathematical claims and assumes full responsibility for
-the contents.
+development, adversarial proof review, literature search, and manuscript
+preparation.  The author reviewed the mathematical claims and assumes full
+responsibility for the contents.
 
-\begin{thebibliography}{9}
+\begin{thebibliography}{12}
 \small
+
+\bibitem{BCW}
+H.~Bass, E.~Connell, and D.~Wright,
+\emph{The Jacobian conjecture: reduction of degree and formal expansion of the inverse},
+Bull. Amer. Math. Soc. (N.S.) \textbf{7} (1982), 287--330,
+\href{https://doi.org/10.1090/S0273-0979-1982-15032-7}
+{doi:10.1090/S0273-0979-1982-15032-7}.
 
 \bibitem{BerendBilu}
 D.~Berend and Y.~Bilu,
@@ -77,10 +107,28 @@ A.~Gallagher,
 online exact certificate atlas, 2026,
 \href{https://jacobianfun.org/counterexamples}{jacobianfun.org}.
 
+\bibitem{LiptonMarkakis}
+R.~J. Lipton and E.~Markakis,
+\emph{Some remarks on the Jacobian conjecture and connections with
+Hilbert's irreducibility theorem},
+\href{https://arxiv.org/abs/math/0507525}{arXiv:math/0507525}, 2005.
+
+\bibitem{Miranda}
+C.~B. Miranda--Neto,
+\emph{An ideal-theoretic approach to Keller maps},
+Proc. Edinburgh Math. Soc. \textbf{62} (2019), 1033--1044,
+\href{https://doi.org/10.1017/S0013091519000099}
+{doi:10.1017/S0013091519000099}.
+
 \bibitem{Razar}
 M.~Razar,
 \emph{Polynomial maps with constant Jacobian},
 Israel J. Math. \textbf{32} (1979), 97--106.
+
+\bibitem{Shaska}
+T.~Shaska,
+\emph{Graded Keller maps and the Jacobian conjecture},
+\href{https://arxiv.org/abs/2607.20210}{arXiv:2607.20210}, 2026.
 
 \bibitem{Wright}
 D.~Wright,
@@ -88,4 +136,3 @@ D.~Wright,
 Illinois J. Math. \textbf{25} (1981), 423--440.
 
 \end{thebibliography}
-
