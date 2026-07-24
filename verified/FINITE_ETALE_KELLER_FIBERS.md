@@ -12,7 +12,8 @@ F:\mathbb A^m_K\longrightarrow\mathbb A^m_K
 and a point \(y\in\mathbb A^m(K)\) such that
 
 \[
-F^{-1}(y)\simeq\operatorname{Spec}A,\qquad
+F^{-1}(y)\simeq\operatorname{Spec}A,
+\qquad
 \dim_KA=\operatorname{gdeg}(F).
 \]
 
@@ -25,8 +26,7 @@ nonproperness boundary; fullness excludes precisely that loss.
 Let \(P\in K[T]\) be squarefree of degree \(N\ge3\). Choose \(a\in K\) with
 
 \[
-P'(a)P'''(a)
-e0
+P'(a)P'''(a)\ne0
 \]
 
 and put
@@ -35,67 +35,72 @@ and put
 G(S)=P(a+S)-P(a)=g_1S+\cdots+g_NS^N.
 \]
 
-Then \(g_1=P'(a)\), \(g_3=P'''(a)/6\), and \(g_N
-e0\), so the
+Then \(g_1=P'(a)\), \(g_3=P'''(a)/6\), and \(g_N\ne0\), so the
 root-engineered quadratic gauge applies. Its normalized map
 
 \[
 F_G=(\Pi,B,C):\mathbb A^3_K\longrightarrow\mathbb A^3_K
 \]
 
-has determinant \(-2\). Compose with
+has determinant \(-2\). Compose with the target automorphism
 
 \[
-L(\Pi,B,C)=\left(-rac{\Pi}{2},B,Cight)
+L(\Pi,B,C)=\left(\Pi,-\frac{B}{2},C\right)
 \]
 
 and write \(\widetilde F_G=L\circ F_G\). Then
 
 \[
-oxed{\det D\widetilde F_G=1},\qquad
+\boxed{\det D\widetilde F_G=1},
+\qquad
 \operatorname{gdeg}(\widetilde F_G)=N.
 \]
 
-At
+The distinguished target has second coordinate zero, so it is fixed by this
+normalization:
 
 \[
-\widetilde y_{P,a}
-=\left(-rac12,0,-rac{2P(a)}{P'(a)}ight)
+y_{P,a}=\left(1,0,-\frac{2P(a)}{P'(a)}\right).
 \]
 
-the full fiber is
+At this target the full fiber is
 
 \[
-oxed{\widetilde F_G^{-1}(\widetilde y_{P,a})\simeq
-\operatorname{Spec}K[T]/(P).}
+\boxed{
+\widetilde F_G^{-1}(y_{P,a})\simeq
+\operatorname{Spec}K[T]/(P).
+}
 \]
 
 The construction is effective. With total degree,
 
 \[
-\deg\Pi\le7,\qquad
-\deg B\le6N+2,\qquad
+\deg\Pi\le7,
+\qquad
+\deg B\le6N+2,
+\qquad
 \deg C\le6N,
 \]
 
 so
 
 \[
-oxed{\max_i\deg(\widetilde F_G)_i\le6N+2.}
+\boxed{\max_i\deg(\widetilde F_G)_i\le6N+2.}
 \]
 
-The estimates use \(\deg t=2\), \(\deg q\le5\), and the bounds
+The estimates use \(\deg t=2\), \(\deg q\le5\), and
 
 \[
-\degigl(t^2x^{k-2}q^kigr)\le6k+2,\qquad
-\degigl((xq)^kigr)\le6k.
+\deg\bigl(t^2x^{k-2}q^k\bigr)\le6k+2,
+\qquad
+\deg\bigl((xq)^k\bigr)\le6k.
 \]
 
 ## 3. Complete rank classification
 
-Every finite étale algebra over an infinite field is monogenic. Indeed, after
+Every finite étale algebra over an infinite field is monogenic. After
 extension to a separable closure, the algebra is a product of \(N\) copies of
-the field; the primitive elements are the nonempty open set on which the
+the field; the primitive elements form the nonempty open set on which the
 Vandermonde discriminant
 
 \[
@@ -107,26 +112,28 @@ is nonzero. Thus every finite étale \(K\)-algebra of rank \(N\) is
 
 Consequently every rank at least three occurs by the construction above.
 Rank one is realized by the identity. Rank two is impossible: a degree-two
-Keller map has a separable quadratic and hence Galois function-field
-extension; the Campbell--Razar--Wright Galois case makes it an automorphism.
-For an arbitrary characteristic-zero ground field, descend to a finitely
-generated subfield, embed it in \(\mathbb C\), apply the complex theorem, and
-descend the unique formal inverse.
+Keller map has a separable quadratic, hence Galois, function-field extension;
+the Campbell--Razar--Wright Galois case makes it an automorphism. For an
+arbitrary characteristic-zero ground field, descend to a finitely generated
+subfield, embed it in \(\mathbb C\), apply the complex theorem, and descend the
+unique formal inverse.
 
 Hence the possible ranks of nonzero Keller fibers are exactly
 
 \[
-oxed{1,3,4,5,\ldots}.
+\boxed{1,3,4,5,\ldots}.
 \]
 
 ## 4. Scheme-theoretic reconstruction
 
-For a quadratic-gauge target \((\pi,b,c)\) with \(\pi
-e0\), set
+For a quadratic-gauge target \((\pi,b,c)\) with \(\pi\ne0\), set
 
 \[
-E(S)=G_\pi(S)-rac{g_1}{2}(bS^2+c),\qquad
-R=K[S]/(E),\qquad s=Smod E.
+E(S)=G_\pi(S)-\frac{g_1}{2}(bS^2+c),
+\qquad
+R=K[S]/(E),
+\qquad
+s=S\bmod E.
 \]
 
 If \(E\) is squarefree, Bézout gives \(U,V\in K[S]\) with
@@ -138,19 +145,27 @@ UE+VE'=1.
 Therefore \(E'(s)\) is a unit in \(R\), with explicit inverse \(V(s)\). Put
 
 \[
-d=rac{E'(s)}{g_1},\qquad
-Q=b-eta(\pi,s),\qquad
-eta(\pi,S)=rac{G_\pi'(S)/g_1-1-\pi S^2}{S},
+d=\frac{E'(s)}{g_1},
+\qquad
+Q=b-\beta(\pi,s),
+\qquad
+\beta(\pi,S)=\frac{G_\pi'(S)/g_1-1-\pi S^2}{S},
 \]
 
 and reconstruct in \(R\)
 
 \[
-t=d^{-1},\qquad x=sd^{-1},\qquad y=Q-\pi s,\qquad q=\pi d,
+t=d^{-1},
+\qquad
+x=sd^{-1},
+\qquad
+y=Q-\pi s,
+\qquad
+q=\pi d,
 \]
 
 \[
-z=d^2\left(q-rac{g_1}{g_3}y^2(1+3t)ight).
+z=d^2\left(q-\frac{g_1}{g_3}y^2(1+3t)\right).
 \]
 
 These are elements of the quotient ring, not pointwise rational functions.
@@ -163,7 +178,9 @@ tq=\pi\in K^*,
 so \(t\) and \(q\) are units globally and
 
 \[
-S=x/t,\qquad Q=y+xq
+S=x/t,
+\qquad
+Q=y+xq
 \]
 
 are global fiber-ring elements satisfying \(E(S)=0\). The two maps are inverse
@@ -217,8 +234,8 @@ The normalized quadratic gauge has coefficient vector
 (g_1,g_2,g_3,g_4,g_5)=(-19,-19,1,1,1)
 \]
 
-and determinant \(-2\). If its target coordinates are
-\((\Pi,B_0,C_0)\), the denominator-free displayed map is exactly
+and determinant \(-2\). If its target coordinates are \((\Pi,B_0,C_0)\), the
+denominator-free displayed map is exactly
 
 \[
 (\Pi,19B_0,19C_0).
@@ -230,11 +247,11 @@ Therefore its determinant is
 19^2(-2)=-722,
 \]
 
-and normalized target \((1,0,-2)\) becomes displayed target
-\((1,0,-38)\). At the normalized target,
+and normalized target \((1,0,-2)\) becomes displayed target \((1,0,-38)\).
+At the normalized target,
 
 \[
-G(T)-rac{-19}{2}(-2)=G(T)-19=P_5(T).
+G(T)-\frac{-19}{2}(-2)=G(T)-19=P_5(T).
 \]
 
 Hence
@@ -246,8 +263,8 @@ F^{-1}(1,0,-38)\simeq
 
 This fiber has points over every completion of \(\mathbb Q\) but no rational
 point. A Chebotarev argument excludes such finite étale schemes in total
-degree at most four, so the minimum Hasse-failing Keller-fiber rank is
-exactly five.
+degree at most four, so the minimum Hasse-failing Keller-fiber rank is exactly
+five.
 
 ## 7. Consequences for the earlier chain
 
