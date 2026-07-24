@@ -4,4 +4,5 @@ import FiniteEtaleKeller.Reconstruction
 import FiniteEtaleKeller.QuotientReconstruction
 import FiniteEtaleKeller.Translation
 import FiniteEtaleKeller.TranslationQuotient
+import FiniteEtaleKeller.Admissibility
 import FiniteEtaleKeller.ExplicitQuintic
