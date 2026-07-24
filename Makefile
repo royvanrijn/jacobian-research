@@ -440,6 +440,13 @@ verify-papers:
 	@set -e; for paper in papers/*/main.tex; do \
 		latexmk -cd -pdf -interaction=nonstopmode -halt-on-error "$$paper"; \
 	done
+	mkdir -p output/pdf
+	cp papers/gaussian-moments-two-variables/main.pdf \
+		output/pdf/gaussian-moments-two-variables.pdf
+	cp papers/sparse-minimality-gaussian-moments-dimension-three/main.pdf \
+		output/pdf/sparse-minimality-gaussian-moments-dimension-three.pdf
+	cp papers/discriminant-pencils/main.pdf \
+		output/pdf/generic-discriminants-polynomial-tangent-pencils.pdf
 
 clean-papers:
 	@set -e; for paper in papers/*/main.tex; do \
