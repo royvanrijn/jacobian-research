@@ -30,7 +30,7 @@ SYSTEM_PYTHON ?= python3
 	verify-parameter-dusart-frontier verify-parameter-sharp-dusart-frontier \
 	verify-parameter-adaptive-dusart-frontier \
 	verify-minimal-boundary \
-	render-status clean-papers
+	render-status prepare-arxiv-uploads clean-papers
 
 check:
 	$(PYTHON) -m compileall -q jcsearch scripts
@@ -447,6 +447,9 @@ verify-papers:
 		output/pdf/sparse-minimality-gaussian-moments-dimension-three.pdf
 	cp papers/discriminant-pencils/main.pdf \
 		output/pdf/generic-discriminants-polynomial-tangent-pencils.pdf
+
+prepare-arxiv-uploads:
+	bash scripts/prepare_arxiv_uploads.sh
 
 clean-papers:
 	@set -e; for paper in papers/*/main.tex; do \

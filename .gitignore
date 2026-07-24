@@ -32,6 +32,10 @@ artifacts/verification/
 /papers/**/*.blg
 /papers/**/main.pdf
 
+# arXiv upload copies intentionally include their precompiled bibliographies.
+!/papers/**/arxiv-upload/
+!/papers/**/arxiv-upload/main.bbl
+
 .lake/
 
 # Julia local environment products
