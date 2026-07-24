@@ -1,2 +1,3 @@
 import FiniteEtaleKeller.Bezout
+import FiniteEtaleKeller.MarkedLine
 import FiniteEtaleKeller.ExplicitQuintic
