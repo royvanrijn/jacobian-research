@@ -1,42 +1,78 @@
 # Lean formalization: finite étale Keller fibers
 
-This project formalizes *Finite Étale Algebras as Keller Fibers* in stages.
-It uses Lean `v4.33.0-rc1` and Mathlib at the matching release candidate.
+This project formalizes the scheme-theoretic core of *Finite Étale Algebras as
+Keller Fibers*. It uses Lean `v4.33.0-rc1` and Mathlib at the matching release
+candidate.
 
 ## Proof status
 
 | Stage | Scope | Status |
 |---|---|---|
-| 1 | Explicit quintic, output scaling, Bézout inverse | implemented |
-| 2 | Universal marked-line and Jacobian identities | next |
-| 3 | Two-sided scheme reconstruction | planned |
-| 4 | Translated polynomial realization | planned |
-| 5 | Monogenic finite étale algebras | planned |
-| 6 | Historical degree-two exclusion | external input pending formalization |
+| 1 | Explicit quintic map, output scaling, and Bézout inverse | implemented |
+| 2 | Universal marked-line identities and Jacobian cancellation core | implemented |
+| 3 | Two-sided source/chart reconstruction over arbitrary commutative rings | implemented |
+| 4 | Roots versus full source-fiber points, including naturality | implemented |
+| 5 | Representation by `K[S]/(E)` and transport to `K[T]/(P)` | implemented |
+| 6 | All-degree displayed map assembly and coordinate-degree bound | paper and exact checker; partial Lean |
+| 7 | Monogenicity and the complete rank classification | paper proof; not yet Lean |
+| 8 | Historical degree-two Galois exclusion | external theorem; not yet Lean |
 
-## Completed in stage 1
+## Central formal theorem
 
-The current files contain no `sorry` and certify:
+For a field `K`, a separable polynomial `E`, a unit `g₁`, and the derivative
+factorization required by the quadratic gauge, the project constructs, for every
+commutative test `K`-algebra `A`, an equivalence
 
-- the displayed denominator-free quintic map has Jacobian determinant `-722`;
-- its determinant-`-2` quadratic-gauge normalization and determinant-one output normalization;
-- the exact output scaling `diag(1,19,19)` and target conversion `-2 -> -38`;
-- the inverse-polynomial identity for
-  `(T^3 - 19)(T^2 + T + 1)`;
-- an explicit Bézout identity for the quintic and its derivative;
-- the resulting derivative inverse in `Q[T]/(P_5)`.
+```text
+(AdjoinRoot E →ₐ[K] A) ≃ GaugeFiberPoint E β pi b a A
+```
 
-## Planned stages
+and proves that it commutes with every algebra homomorphism `A →ₐ[K] B`. Thus
+the source-fiber functor is naturally represented by `K[S]/(E)`; this is not
+only a bijection on field-valued points.
 
-1. **Universal marked-line identities.** Formalize the determinant cancellation
-   from the source chart and the marked-line map for a general seed.
-2. **Scheme reconstruction.** Construct the two coordinate-ring homomorphisms
-   and prove the full fiber algebra is `K[S]/(E)` when `E` is squarefree.
-3. **Polynomial realization.** Formalize translation
-   `G(S)=P(a+S)-P(a)` and the prescribed fiber theorem.
-4. **Finite étale realization.** Add monogenicity over infinite fields.
-5. **Rank classification.** Add the historical degree-two Galois theorem or
-   retain it as an explicitly named external hypothesis until formalized.
+`RealizationFiber.lean` then instantiates the datum for
+
+```text
+E(S) = P(a + S)
+```
+
+and composes the represented-fiber equivalence with the canonical translation
+of quotients
+
+```text
+K[S]/(P(a+S)) ≃ K[T]/(P(T)).
+```
+
+The resulting theorem is
+`translatedFiberRepresentingEquiv_natural`.
+
+The project contains no `sorry` and introduces no project-specific axioms.
+`#print axioms` for the final theorem reports only the standard Lean foundations
+`propext`, `Classical.choice`, and `Quot.sound`.
+
+## What the formalization clarifies
+
+The reconstruction works over arbitrary commutative test algebras. Units are
+carried explicitly, so there is no hidden localization and no omitted component.
+Separability makes the derivative class invertible by Bézout; the unit first
+target coordinate makes the source chart global on the fiber.
+
+The abstract represented-fiber argument needs a fixed source coefficient and a
+derivative factorization. Nonvanishing of the cubic Taylor coefficient is used
+to connect that abstract coefficient to the displayed polynomial gauge
+`g₁/g₃`; it is not an additional scheme-reconstruction step. The characteristic-
+free cubic coefficient is the third Hasse derivative, equal to `P'''(a)/3!` in
+characteristic zero.
+
+## Scope boundary
+
+The Lean certificate now covers the difficult scheme-structure, reconstruction,
+naturality, representability, and translation steps. It does not yet package the
+entire general displayed polynomial map, its all-degree determinant calculation,
+the `6N+2` degree estimate, monogenicity, or the Campbell--Razar--Wright
+rank-two exclusion into one Lean theorem. The explicit optimal quintic map and
+its determinant-one normalization are formalized separately.
 
 ## Build
 
@@ -45,5 +81,5 @@ cd formal/finite-etale-keller
 lake build
 ```
 
-The repository CI runs this build independently of the existing external Lean
-certificate for the foundational three-dimensional map.
+Repository CI builds this project independently of the external Lean certificate
+for the foundational three-dimensional map.
