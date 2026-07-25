@@ -25,8 +25,10 @@ namespace FiniteEtaleKeller
 variable {K : Type*} [Field K]
 
 set_option maxHeartbeats 0 in
-/-- The actual all-degree quadratic-gauge map has constant Jacobian `-2`. -/
-theorem jacobianDet_generalGaugeMap (G : K[X]) :
+/-- The actual all-degree quadratic-gauge map has constant Jacobian `-2` under
+the two nonvanishing hypotheses used by the construction. -/
+theorem jacobianDet_generalGaugeMap
+    (G : K[X]) (h₁ : G.coeff 1 ≠ 0) (h₃ : G.coeff 3 ≠ 0) :
     jacobianDet (generalGaugeMap G) = MvPolynomial.C (-2) := by
   classical
   simp only [jacobianDet, jacobianMatrix, det_fin_three, of_apply,
@@ -37,13 +39,14 @@ theorem jacobianDet_generalGaugeMap (G : K[X]) :
     pderiv_mul, pderiv_pow, pderiv_C, pderiv_X_self, pderiv_X_of_ne,
     ne_eq, Fin.reduceEq, not_false_eq_true]
   simp only [map_neg, map_ofNat]
-  ring
+  field_simp [h₁, h₃] <;> ring
 
 /-- The fixed target-preserving output normalization has Jacobian one. -/
-theorem jacobianDet_generalGaugeJacobianOneMap [CharZero K] (G : K[X]) :
+theorem jacobianDet_generalGaugeJacobianOneMap [CharZero K]
+    (G : K[X]) (h₁ : G.coeff 1 ≠ 0) (h₃ : G.coeff 3 ≠ 0) :
     jacobianDet (generalGaugeJacobianOneMap G) = 1 := by
   rw [generalGaugeJacobianOneMap, jacobianDet_scaleOutput,
-    jacobianDet_generalGaugeMap]
+    jacobianDet_generalGaugeMap G h₁ h₃]
   rw [← MvPolynomial.C_mul]
   norm_num
 
