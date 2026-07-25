@@ -84,6 +84,7 @@ private theorem generalGauge_low_derivative
         G.coeff 1 * pi +
           G.coeff 1 * ((3 * (G.coeff 3 / G.coeff 1) - 1) * pi) := by
     field_simp [h₁]
+    ring
   have h₂ :
       C pi * C (G.coeff 2) * C (2 : K) =
         C (G.coeff 1) * C (2 * (G.coeff 2 / G.coeff 1) * pi) := by
@@ -118,10 +119,10 @@ theorem generalGaugeInversePolynomial_derivative [CharZero K]
     (G : K[X]) (pi b c : K) (h₁ : G.coeff 1 ≠ 0) :
     (generalGaugeInversePolynomial G pi b c).derivative =
       C (G.coeff 1) * markedChartPolynomial pi b (generalGaugeBeta G pi) := by
-  have hhalfScalar : G.coeff 1 * (1 / 2 : K) * 2 = G.coeff 1 := by
+  have hhalfScalar : (G.coeff 1 / 2) * 2 = G.coeff 1 := by
     field_simp
   have hhalf :
-      C (G.coeff 1 * (1 / 2 : K)) * C (2 : K) = C (G.coeff 1) := by
+      C (G.coeff 1 / 2) * C (2 : K) = C (G.coeff 1) := by
     simpa only [Polynomial.C_mul] using
       congrArg (C : K → K[X]) hhalfScalar
   rw [generalGaugeInversePolynomial, Polynomial.derivative_sub,
