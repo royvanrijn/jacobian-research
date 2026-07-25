@@ -156,7 +156,12 @@ theorem GaugeChart.toSource_toChart {pi : R} (p : GaugeChart R pi) (a : R) :
   dsimp only at h
   apply GaugeChart.ext
   · simpa [GaugeSource.S, GaugeChart.toSource] using h.2.2.1
-  · simpa [GaugeSource.Q, GaugeSource.q, GaugeChart.toSource] using h.2.2.2.1
+  · have hq : (p.toSource a).q = pi * (p.d : R) := by
+      simpa [GaugeSource.q, GaugeChart.toSource] using h.2.1
+    rw [GaugeSource.toChart_Q]
+    simp only [GaugeSource.Q]
+    rw [hq]
+    simpa [GaugeChart.toSource] using h.2.2.2.1
   · rw [GaugeSource.toChart_d, GaugeChart.toSource_t]
     simp
 
