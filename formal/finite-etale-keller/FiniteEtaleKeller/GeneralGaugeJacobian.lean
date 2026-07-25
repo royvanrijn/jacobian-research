@@ -9,9 +9,9 @@ import FiniteEtaleKeller.GeneralGaugeMap
 # Jacobian determinant of the all-degree quadratic gauge
 
 This module proves the constant determinant directly for the single general
-`MvPolynomial` map.  The proof expands the three-by-three determinant, all
-partial derivatives, and the complete finite coefficient sums before invoking
-ring normalization.
+`MvPolynomial` map.  The arbitrary high-degree part is first packaged as a
+univariate tail in the recurrent polynomial `u = x*q`; its formal derivative
+relations are then separated from the universal determinant cancellation.
 -/
 
 noncomputable section
@@ -23,6 +23,53 @@ open Polynomial
 namespace FiniteEtaleKeller
 
 variable {K : Type*} [Field K]
+
+private def quadraticGaugeQ (a : K) : GaugePolynomial K :=
+  generalGaugeT ^ 2 * MvPolynomial.X 2 +
+    MvPolynomial.C a * MvPolynomial.X 1 ^ 2 *
+      (1 + MvPolynomial.C 3 * generalGaugeT)
+
+private def quadraticGaugePi (a : K) : GaugePolynomial K :=
+  generalGaugeT * quadraticGaugeQ a
+
+private def quadraticGaugeU (a : K) : GaugePolynomial K :=
+  MvPolynomial.X 0 * quadraticGaugeQ a
+
+private def quadraticGaugeWithTail
+    (a c : K) (R Rp : GaugePolynomial K) : Fin 3 → GaugePolynomial K :=
+  ![
+    quadraticGaugePi a,
+    MvPolynomial.X 1 +
+      MvPolynomial.C (3 * a⁻¹) * quadraticGaugeU a +
+      MvPolynomial.C (2 * c) * quadraticGaugePi a +
+      quadraticGaugePi a ^ 2 *
+        (MvPolynomial.C 2 * R + quadraticGaugeU a * Rp),
+    MvPolynomial.X 0 * (MvPolynomial.C 5 - MvPolynomial.C 3 * generalGaugeT) -
+      MvPolynomial.C a⁻¹ * MvPolynomial.X 0 ^ 3 * MvPolynomial.X 2 -
+      quadraticGaugeU a ^ 3 * Rp]
+
+set_option maxHeartbeats 0 in
+private theorem jacobianDet_quadraticGaugeWithTail
+    (a c : K) (ha : a ≠ 0)
+    (R Rp Rpp : GaugePolynomial K)
+    (hR : ∀ i, pderiv i R = Rp * pderiv i (quadraticGaugeU a))
+    (hRp : ∀ i, pderiv i Rp = Rpp * pderiv i (quadraticGaugeU a)) :
+    jacobianDet (quadraticGaugeWithTail a c R Rp) = MvPolynomial.C (-2) := by
+  classical
+  simp only [jacobianDet, jacobianMatrix, det_fin_three, of_apply,
+    quadraticGaugeWithTail, quadraticGaugePi, quadraticGaugeU, quadraticGaugeQ,
+    generalGaugeT,
+    cons_val_zero, cons_val_one, cons_val_two, head_cons, tail_cons,
+    map_add, map_sub, Derivation.map_one_eq_zero,
+    pderiv_mul, pderiv_pow, pderiv_C, pderiv_X_self, pderiv_X_of_ne,
+    ne_eq, Fin.reduceEq, not_false_eq_true]
+  rw [hR 0, hR 1, hR 2, hRp 0, hRp 1, hRp 2]
+  simp only [quadraticGaugeU, quadraticGaugeQ, generalGaugeT,
+    map_add, Derivation.map_one_eq_zero, pderiv_mul, pderiv_pow,
+    pderiv_C, pderiv_X_self, pderiv_X_of_ne, ne_eq, Fin.reduceEq,
+    not_false_eq_true, map_neg, map_ofNat]
+  field_simp [ha]
+  ring
 
 set_option maxHeartbeats 0 in
 /-- The actual all-degree quadratic-gauge map has constant Jacobian `-2` under
