@@ -65,8 +65,8 @@ theorem generalGaugeT_totalDegree :
   · simp
   · simpa using
       (totalDegree_mul_le_bound
-        (p := MvPolynomial.X 0 : GaugePolynomial K)
-        (q := MvPolynomial.X 1 : GaugePolynomial K)
+        (p := (MvPolynomial.X 0 : GaugePolynomial K))
+        (q := (MvPolynomial.X 1 : GaugePolynomial K))
         (a := 1) (b := 1) (by simp) (by simp))
 
 /-- The recurrent polynomial `q` has total degree at most five. -/
@@ -83,12 +83,12 @@ theorem generalGaugeQ_totalDegree (G : K[X]) :
       ((generalGaugeT (K := K)) ^ 2 * MvPolynomial.X 2).totalDegree ≤ 5 := by
     simpa using
       (totalDegree_mul_le_bound ht2
-        (q := MvPolynomial.X 2 : GaugePolynomial K)
+        (q := (MvPolynomial.X 2 : GaugePolynomial K))
         (a := 4) (b := 1) (by simp))
   have hx2 :
       ((MvPolynomial.X 1 : GaugePolynomial K) ^ 2).totalDegree ≤ 2 := by
     have h := totalDegree_pow_le_bound
-      (p := MvPolynomial.X 1 : GaugePolynomial K)
+      (p := (MvPolynomial.X 1 : GaugePolynomial K))
       (a := 1) (n := 2) (by simp)
     norm_num at h ⊢
     exact h
@@ -140,7 +140,7 @@ private theorem generalGaugeB_tail_totalDegree
       ((MvPolynomial.X 0 : GaugePolynomial K) ^ (k - 2)).totalDegree ≤ k - 2 := by
     simpa using
       (totalDegree_pow_le_bound
-        (p := MvPolynomial.X 0 : GaugePolynomial K)
+        (p := (MvPolynomial.X 0 : GaugePolynomial K))
         (a := 1) (n := k - 2) (by simp))
   have hq : ((generalGaugeQ G) ^ k).totalDegree ≤ 5 * k := by
     have h := totalDegree_pow_le_bound (p := generalGaugeQ G)
@@ -239,13 +239,13 @@ theorem generalGaugeC_totalDegree (G : K[X]) (hdeg : 3 ≤ G.natDegree) :
         (MvPolynomial.C (5 : K) - MvPolynomial.C 3 * generalGaugeT)).totalDegree ≤
         6 * G.natDegree := by
     have h := totalDegree_mul_le_bound
-      (p := MvPolynomial.X 0 : GaugePolynomial K) (a := 1) (b := 2)
+      (p := (MvPolynomial.X 0 : GaugePolynomial K)) (a := 1) (b := 2)
       (by simp) hparen
     omega
   have hx3 :
       ((MvPolynomial.X 0 : GaugePolynomial K) ^ 3).totalDegree ≤ 3 := by
     have h := totalDegree_pow_le_bound
-      (p := MvPolynomial.X 0 : GaugePolynomial K)
+      (p := (MvPolynomial.X 0 : GaugePolynomial K))
       (a := 1) (n := 3) (by simp)
     norm_num at h ⊢
     exact h
@@ -258,7 +258,7 @@ theorem generalGaugeC_totalDegree (G : K[X]) (hdeg : 3 ≤ G.natDegree) :
           (MvPolynomial.X 0 : GaugePolynomial K) ^ 3 *
           MvPolynomial.X 2).totalDegree ≤ 6 * G.natDegree := by
     have h := totalDegree_mul_le_bound hcx3
-      (q := MvPolynomial.X 2 : GaugePolynomial K)
+      (q := (MvPolynomial.X 2 : GaugePolynomial K))
       (a := 3) (b := 1) (by simp)
     omega
   have htail := generalGaugeC_tail_totalDegree G
@@ -271,6 +271,7 @@ theorem generalGaugeC_totalDegree (G : K[X]) (hdeg : 3 ≤ G.natDegree) :
 
 /-- Every coordinate of the all-degree quadratic-gauge map satisfies the paper's
 uniform `6N+2` bound. -/
+set_option maxHeartbeats 0 in
 theorem generalGaugeMap_totalDegree (G : K[X]) (hdeg : 3 ≤ G.natDegree)
     (i : Fin 3) :
     (generalGaugeMap G i).totalDegree ≤ 6 * G.natDegree + 2 := by
@@ -287,15 +288,23 @@ theorem generalGaugeMap_totalDegree (G : K[X]) (hdeg : 3 ≤ G.natDegree)
 
 /-- The target-preserving determinant-one normalization has the same effective
 coordinate-degree bound. -/
+set_option maxHeartbeats 0 in
 theorem generalGaugeJacobianOneMap_totalDegree
     (G : K[X]) (hdeg : 3 ≤ G.natDegree) (i : Fin 3) :
     (generalGaugeJacobianOneMap G i).totalDegree ≤ 6 * G.natDegree + 2 := by
-  fin_cases i <;>
-    simpa [generalGaugeJacobianOneMap, scaleOutput] using
+  fin_cases i
+  · simpa [generalGaugeJacobianOneMap, scaleOutput] using
       totalDegree_C_mul_le_bound
-        (K := K)
-        (if i = 0 then (1 : K) else if i = 1 then (-1 / 2 : K) else 1)
-        (generalGaugeMap_totalDegree G hdeg i)
+        (K := K) (1 : K)
+        (generalGaugeMap_totalDegree G hdeg (0 : Fin 3))
+  · simpa [generalGaugeJacobianOneMap, scaleOutput] using
+      totalDegree_C_mul_le_bound
+        (K := K) (-1 / 2 : K)
+        (generalGaugeMap_totalDegree G hdeg (1 : Fin 3))
+  · simpa [generalGaugeJacobianOneMap, scaleOutput] using
+      totalDegree_C_mul_le_bound
+        (K := K) (1 : K)
+        (generalGaugeMap_totalDegree G hdeg (2 : Fin 3))
 
 #print axioms generalGaugeMap_totalDegree
 #print axioms generalGaugeJacobianOneMap_totalDegree
