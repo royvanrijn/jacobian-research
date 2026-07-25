@@ -42,6 +42,7 @@ jobs:
             FiniteEtaleKeller.RootPoints
             FiniteEtaleKeller.MarkedFiberPoints
             FiniteEtaleKeller.GaugeFiberPoints
+            FiniteEtaleKeller.FiberNaturality
             FiniteEtaleKeller.Translation
             FiniteEtaleKeller.TranslationQuotient
             FiniteEtaleKeller.Admissibility
@@ -73,6 +74,7 @@ jobs:
               FiniteEtaleKeller.RootPoints \
               FiniteEtaleKeller.MarkedFiberPoints \
               FiniteEtaleKeller.GaugeFiberPoints \
+              FiniteEtaleKeller.FiberNaturality \
               FiniteEtaleKeller.Translation \
               FiniteEtaleKeller.TranslationQuotient \
               FiniteEtaleKeller.Admissibility \
