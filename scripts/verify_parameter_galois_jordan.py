@@ -3,10 +3,8 @@
 from __future__ import annotations
 
 import math
-import warnings
 
 import sympy as sp
-from sympy.utilities.exceptions import SymPyDeprecationWarning
 
 from master_cancellation import (
     parameter_discriminant,
@@ -121,12 +119,15 @@ CERTIFICATES = {
 
 
 def modular_factor_degrees(polynomial: sp.Poly, prime: int) -> tuple[int, ...]:
-    with warnings.catch_warnings():
-        warnings.simplefilter("ignore", SymPyDeprecationWarning)
-        factors = sp.factor_list(polynomial.as_expr(), modulus=prime)[1]
+    # Use Poly.factor_list directly. The expression-level factor_list wrapper
+    # re-sorts factors by coefficient lists; with the python-flint finite-field
+    # backend those coefficients are nmod values, which intentionally have no
+    # total ordering. The Poly API returns the same exact factorization without
+    # that presentation-only sort.
+    factors = polynomial.set_modulus(prime).factor_list()[1]
     degrees: list[int] = []
     for factor, multiplicity in factors:
-        degrees.extend([int(sp.degree(factor, q))] * multiplicity)
+        degrees.extend([int(factor.degree())] * multiplicity)
     return tuple(sorted(degrees, reverse=True))
 
 
