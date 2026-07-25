@@ -36,6 +36,23 @@ and
  E_{\Pi,B,C}(S)=G_\Pi(S)-\frac{g_1}{2}(BS^2+C).
  \label{eq:inverse}
 \end{equation}
+For $(\pi,b,c)\in K^*\times K^2$, let $\mathcal F_{\pi,b,c}$ denote the
+fiber functor
+\[
+ \mathcal F_{\pi,b,c}(A)
+ =\{(x,y,z)\in A^3:F_G(x,y,z)=(\pi,b,c)\}
+\]
+on commutative $K$-algebras.
+
+\begin{lemma}[Derivative units over test algebras]\label{lem:derivative-unit}
+Let $E\in K[S]$ be separable, let $A$ be a commutative $K$-algebra, and let
+$s\in A$ satisfy $E(s)=0$.  Then $E'(s)$ is a unit of $A$.
+\end{lemma}
+
+\begin{proof}
+Choose $U,V\in K[S]$ with $UE+VE'=1$.  Evaluating at $s$ gives
+$V(s)E'(s)=1$.  Since $A$ is commutative, $V(s)$ is the inverse of $E'(s)$.
+\end{proof}
 
 \begin{proposition}[Quadratic-gauge fiber theorem]\label{prop:gauge}
 The map $F_G$ satisfies
@@ -43,10 +60,16 @@ The map $F_G$ satisfies
  \det DF_G=-2.
 \]
 Its generic inverse equation is $E_{\Pi,B,C}(S)=0$.  Let
-$(\pi,b,c)\in K^*\times K^2$.  If $E_{\pi,b,c}$ is squarefree of degree
-$N$, then scheme-theoretically
+$(\pi,b,c)\in K^*\times K^2$.  If $E=E_{\pi,b,c}$ is squarefree of degree
+$N$, then for every commutative $K$-algebra $A$ there is a natural bijection
+\begin{equation}
+ \operatorname{Hom}_{K\text{-alg}}(K[S]/(E),A)
+ \simeq \mathcal F_{\pi,b,c}(A).
+ \label{eq:natural-fiber-equivalence}
+\end{equation}
+Consequently, scheme-theoretically,
 \[
- F_G^{-1}(\pi,b,c)\simeq\Spec K[S]/(E_{\pi,b,c}).
+ F_G^{-1}(\pi,b,c)\simeq\Spec K[S]/(E).
 \]
 In particular, this is a Keller fiber of rank $N$.
 \end{proposition}
@@ -95,23 +118,20 @@ Combining \eqref{eq:source-chart-jacobian} and
 $t\neq0$, hence polynomially everywhere.
 
 It remains to identify the full fiber.  Fix $(\pi,b,c)$ and abbreviate
-\[
- E=E_{\pi,b,c}.
-\]
-We prove the stronger functor-of-points statement.  Let $A$ be an arbitrary
-commutative $K$-algebra, and denote the images of $\pi,b,c$ in $A$ by the
-same letters.  An $A$-point $(x,y,z)$ of the fiber satisfies
+$E=E_{\pi,b,c}$.  Let $A$ be an arbitrary commutative $K$-algebra, and
+denote the images of $\pi,b,c$ in $A$ by the same letters.  An $A$-point
+$(x,y,z)$ of the fiber satisfies
 \[
  tq=\pi.
 \]
-Since $\pi$ is a unit, both $t$ and $q$ are units in $A$.  Thus the formulas
+Since $\pi$ is a unit, both $t$ and $q$ are units in $A$.  Thus
 \[
  S=xt^{-1},
  \qquad Q=y+xq,
  \qquad D=t^{-1}
 \]
-are global on the whole fiber, not merely on its geometric points.  The
-polynomial identities \eqref{eq:marked-line-identities} and
+are defined globally on the whole fiber, not merely on its field-valued
+points.  The polynomial identities \eqref{eq:marked-line-identities} and
 \eqref{eq:D-derivative} give
 \[
  Q+\beta(\pi,S)=b,
@@ -120,12 +140,9 @@ polynomial identities \eqref{eq:marked-line-identities} and
 \]
 Hence every fiber point determines a root of $E$ in $A$.
 
-Conversely, let $s\in A$ satisfy $E(s)=0$.  Because $K$ has characteristic
-zero and $E$ is squarefree, $E$ is separable.  Choose $U,V\in K[S]$ with
-\[
- UE+VE'=1.
-\]
-Evaluation at $s$ shows that $E'(s)$ is a unit in $A$.  Therefore
+Conversely, let $s\in A$ satisfy $E(s)=0$.  In characteristic zero,
+squarefreeness implies separability, so Lemma~\ref{lem:derivative-unit} makes
+$E'(s)$ a unit.  Therefore
 \[
  d=\frac{E'(s)}{g_1}
 \]
@@ -159,30 +176,45 @@ A direct ring calculation, valid in every commutative ring, now gives
 The first marked identity gives $B=b$.  Since $E(s)=0$, the second gives
 $C=c$.  Thus these formulas reconstruct an $A$-point of the fiber.
 
-The two constructions are inverse: one recovers
+The two constructions are inverse.  Starting from a source point one recovers
 \[
  D=t^{-1},\qquad x=S/D,\qquad y=Q-\pi S,\qquad q=\pi D,
 \]
-and the defining equation for $q$ recovers $z$.  Every formula commutes with
-a morphism of commutative $K$-algebras.  We have therefore obtained a natural
-bijection
-\[
- F_G^{-1}(\pi,b,c)(A)
- \simeq
- \{s\in A:E(s)=0\}.
-\]
-The functor on the right is represented by $\Spec K[S]/(E)$.  Yoneda's
-lemma proves
-\[
- F_G^{-1}(\pi,b,c)\simeq\Spec K[S]/(E).
-\]
-This also makes explicit why no localization or omitted component is hidden
-in the reconstruction.
+and the defining equation for $q$ recovers $z$.  Starting from a root, the
+recovered marked coordinate is again $s$.
 
-Finally, the generic polynomial \eqref{eq:inverse} has degree $N$ and is
-separable, and the same reconstruction works at every generic root.  Hence
+Finally, every displayed formula uses only ring operations, algebra maps, and
+inversion of an explicitly supplied unit.  If $f:A\to A'$ is a morphism of
+commutative $K$-algebras, then $f(d^{-1})=f(d)^{-1}$, so both constructions
+commute with $f$.  The universal property of the quotient identifies roots of
+$E$ in $A$ with $K$-algebra maps $K[S]/(E)\to A$ and turns the preceding
+bijection into the natural equivalence \eqref{eq:natural-fiber-equivalence}.
+Yoneda's lemma gives the asserted scheme isomorphism.  In particular, no
+localization, nilpotent structure, or additional component is hidden by the
+reconstruction.
+
+The generic polynomial \eqref{eq:inverse} has degree $N$.  It is separable
+over $K(\Pi,B,C)$: its derivative is independent of the transcendental
+parameter $C$, whereas the polynomial itself is affine-linear in $C$ with
+nonzero coefficient.  Thus it cannot share a nonconstant factor with its
+derivative.  The same reconstruction works at every generic root, and hence
 $\gdeg(F_G)=N$.
 \end{proof}
+
+\begin{remark}[Logical separation of the hypotheses]\label{rem:gauge-hypotheses}
+The represented-fiber argument has a smaller logical core than the displayed
+map.  It uses that $\pi$ is a unit, that $E$ is separable, and that
+\[
+ E'(S)=g_1\bigl(1-bS+S\beta(\pi,S)+\pi S^2\bigr).
+\]
+Once the source coefficient $g_1/g_3$ is supplied, the root/source
+reconstruction itself does not use a further polynomial identity.  The
+condition $g_3\neq0$ is needed to obtain that coefficient from the explicit
+quadratic gauge.  For a translated polynomial $P(a+S)-P(a)$, the natural
+cubic coefficient is the third Hasse derivative at $a$; in characteristic
+zero it is $P'''(a)/3!$.  This separation is also the organization used by
+the Lean formalization.
+\end{remark}
 
 \begin{corollary}[Jacobian-one effective form]\label{cor:effective-gauge}
 Let
