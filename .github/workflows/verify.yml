@@ -124,6 +124,7 @@ jobs:
           build-args: >-
             FiniteEtaleKeller.ExplicitPolynomial
             FiniteEtaleKeller.MarkedLine
+            FiniteEtaleKeller.GaugeAssembly
             FiniteEtaleKeller.Reconstruction
             FiniteEtaleKeller.SourceEquivalence
             FiniteEtaleKeller.QuotientReconstruction
@@ -155,6 +156,7 @@ jobs:
               "$LAKE" build \
                 FiniteEtaleKeller.ExplicitPolynomial \
                 FiniteEtaleKeller.MarkedLine \
+                FiniteEtaleKeller.GaugeAssembly \
                 FiniteEtaleKeller.Reconstruction \
                 FiniteEtaleKeller.SourceEquivalence \
                 FiniteEtaleKeller.QuotientReconstruction \
