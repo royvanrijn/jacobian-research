@@ -22,13 +22,14 @@ squarefree polynomial of degree at least three; no translation parameter or
 nonvanishing witness remains as an external hypothesis.
 
 The displayed all-degree polynomial map is proved coefficientwise in the
-paper. Lean now checks the generic high-degree monomial transport, the
-low-degree second-coordinate identity, and the cubic cancellation producing
-the third coordinate over arbitrary commutative rings. The remaining finite-sum
-packaging and `6N+2` degree estimate are paper proofs. The exact symbolic
-checker independently constructs and audits the complete map in degrees three,
-four, and five, together with the explicit arithmetic examples; these are
-regression certificates rather than a replacement for the uniform proof.
+paper. Lean checks the low-degree identities and the complete finite sums of
+all high-degree terms `4 ≤ k ≤ N`, with an arbitrary coefficient family, over
+arbitrary commutative rings. The remaining map-level step is to instantiate
+these identities as one general `MvPolynomial (Fin 3) K` object and prove its
+Jacobian and `6N+2` coordinate-degree bound there. The exact symbolic checker
+independently constructs and audits the complete map in degrees three, four,
+and five, together with the explicit arithmetic examples; these are regression
+certificates rather than a replacement for the uniform proof.
 
 The arithmetic applications include:
 
@@ -52,7 +53,7 @@ The focused audits accompanying the active draft are:
 3. existence of an admissible translation and the canonical quotient
    translation `K[S]/(P(a+S)) ≃ K[T]/(P(T))`;
 4. a coefficientwise derivation of the displayed all-degree gauge identities,
-   with its monomial and cubic cancellations formalized in Lean;
+   including the complete finite sums formalized in Lean;
 5. the scaling identity `F_displayed = diag(1,19,19) F_normalized` for the
    optimal quintic example;
 6. the dated and qualified [literature audit](LITERATURE_AUDIT.md).
