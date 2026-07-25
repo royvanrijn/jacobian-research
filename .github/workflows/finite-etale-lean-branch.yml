@@ -9,6 +9,7 @@ on:
   pull_request:
     paths:
       - formal/finite-etale-keller/**
+      - scripts/check_lean_placeholders.py
       - .github/workflows/finite-etale-lean-branch.yml
   workflow_dispatch:
 
@@ -30,6 +31,8 @@ jobs:
       - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
         with:
           persist-credentials: false
+      - name: Reject Lean placeholders and explicit axioms
+        run: python3 scripts/check_lean_placeholders.py
       - name: Install Lean and prime the Mathlib cache
         id: lean_action
         continue-on-error: true
