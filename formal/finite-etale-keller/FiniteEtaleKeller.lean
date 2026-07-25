@@ -11,6 +11,7 @@ import FiniteEtaleKeller.GeneralGaugeRawFiber
 import FiniteEtaleKeller.GeneralGaugeNormalization
 import FiniteEtaleKeller.GeneralGaugeRealization
 import FiniteEtaleKeller.GeneralGaugeRealizationDegree
+import FiniteEtaleKeller.GeneralGaugeFiberRank
 import FiniteEtaleKeller.Reconstruction
 import FiniteEtaleKeller.SourceEquivalence
 import FiniteEtaleKeller.QuotientReconstruction
