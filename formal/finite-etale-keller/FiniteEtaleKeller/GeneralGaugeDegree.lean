@@ -78,7 +78,6 @@ theorem generalGaugeQ_totalDegree (G : K[X]) :
     have h := totalDegree_pow_le_bound (p := generalGaugeT (K := K))
       (a := 2) (n := 2) ht
     norm_num at h ⊢
-    exact h
   have hfirst :
       ((generalGaugeT (K := K)) ^ 2 * MvPolynomial.X 2).totalDegree ≤ 5 := by
     simpa using
@@ -122,7 +121,7 @@ theorem generalGaugePi_totalDegree (G : K[X]) :
     (generalGaugeQ_totalDegree G)
 
 private theorem generalGaugeB_tail_totalDegree
-    (G : K[X]) (hdeg : 3 ≤ G.natDegree) :
+    (G : K[X]) (_hdeg : 3 ≤ G.natDegree) :
     (∑ k ∈ Finset.Icc 4 G.natDegree,
       MvPolynomial.C ((k : K) * (G.coeff k / G.coeff 1)) *
         generalGaugeT ^ 2 * MvPolynomial.X 0 ^ (k - 2) *
@@ -248,7 +247,6 @@ theorem generalGaugeC_totalDegree (G : K[X]) (hdeg : 3 ≤ G.natDegree) :
       (p := (MvPolynomial.X 0 : GaugePolynomial K))
       (a := 1) (n := 3) (by simp)
     norm_num at h ⊢
-    exact h
   have hcx3 :
       (MvPolynomial.C (G.coeff 3 / G.coeff 1) *
         (MvPolynomial.X 0 : GaugePolynomial K) ^ 3).totalDegree ≤ 3 :=
@@ -271,7 +269,6 @@ theorem generalGaugeC_totalDegree (G : K[X]) (hdeg : 3 ≤ G.natDegree) :
 
 /-- Every coordinate of the all-degree quadratic-gauge map satisfies the paper's
 uniform `6N+2` bound. -/
-set_option maxHeartbeats 0 in
 theorem generalGaugeMap_totalDegree (G : K[X]) (hdeg : 3 ≤ G.natDegree)
     (i : Fin 3) :
     (generalGaugeMap G i).totalDegree ≤ 6 * G.natDegree + 2 := by
@@ -288,7 +285,6 @@ theorem generalGaugeMap_totalDegree (G : K[X]) (hdeg : 3 ≤ G.natDegree)
 
 /-- The target-preserving determinant-one normalization has the same effective
 coordinate-degree bound. -/
-set_option maxHeartbeats 0 in
 theorem generalGaugeJacobianOneMap_totalDegree
     (G : K[X]) (hdeg : 3 ≤ G.natDegree) (i : Fin 3) :
     (generalGaugeJacobianOneMap G i).totalDegree ≤ 6 * G.natDegree + 2 := by
