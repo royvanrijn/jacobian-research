@@ -22,10 +22,13 @@ squarefree polynomial of degree at least three; no translation parameter or
 nonvanishing witness remains as an external hypothesis.
 
 The displayed all-degree polynomial map is proved coefficientwise in the
-paper. The exact symbolic checker independently constructs and audits the map
-in degrees three, four, and five, together with the explicit arithmetic
-examples. These checks are regression certificates rather than a replacement
-for the uniform proof.
+paper. Lean now checks the generic high-degree monomial transport, the
+low-degree second-coordinate identity, and the cubic cancellation producing
+the third coordinate over arbitrary commutative rings. The remaining finite-sum
+packaging and `6N+2` degree estimate are paper proofs. The exact symbolic
+checker independently constructs and audits the complete map in degrees three,
+four, and five, together with the explicit arithmetic examples; these are
+regression certificates rather than a replacement for the uniform proof.
 
 The arithmetic applications include:
 
@@ -48,7 +51,8 @@ The focused audits accompanying the active draft are:
    Bézout inverse of `E'` and proving naturality;
 3. existence of an admissible translation and the canonical quotient
    translation `K[S]/(P(a+S)) ≃ K[T]/(P(T))`;
-4. a coefficientwise derivation of the displayed all-degree gauge identities;
+4. a coefficientwise derivation of the displayed all-degree gauge identities,
+   with its monomial and cubic cancellations formalized in Lean;
 5. the scaling identity `F_displayed = diag(1,19,19) F_normalized` for the
    optimal quintic example;
 6. the dated and qualified [literature audit](LITERATURE_AUDIT.md).
