@@ -1,9 +1,11 @@
 import FiniteEtaleKeller.Bezout
 import FiniteEtaleKeller.MarkedLine
 import FiniteEtaleKeller.GaugeAssembly
+import FiniteEtaleKeller.GaugeInverseAssembly
 import FiniteEtaleKeller.GeneralGaugeMap
 import FiniteEtaleKeller.GeneralGaugeDegree
 import FiniteEtaleKeller.GeneralGaugeInverse
+import FiniteEtaleKeller.GeneralGaugeDisplayedFiber
 import FiniteEtaleKeller.Reconstruction
 import FiniteEtaleKeller.SourceEquivalence
 import FiniteEtaleKeller.QuotientReconstruction
