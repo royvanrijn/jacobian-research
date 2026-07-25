@@ -37,6 +37,7 @@ jobs:
             FiniteEtaleKeller.MarkedLine
             FiniteEtaleKeller.Reconstruction
             FiniteEtaleKeller.QuotientReconstruction
+            FiniteEtaleKeller.SeparableReconstruction
             FiniteEtaleKeller.Translation
             FiniteEtaleKeller.TranslationQuotient
             FiniteEtaleKeller.Admissibility
@@ -63,6 +64,7 @@ jobs:
               FiniteEtaleKeller.MarkedLine \
               FiniteEtaleKeller.Reconstruction \
               FiniteEtaleKeller.QuotientReconstruction \
+              FiniteEtaleKeller.SeparableReconstruction \
               FiniteEtaleKeller.Translation \
               FiniteEtaleKeller.TranslationQuotient \
               FiniteEtaleKeller.Admissibility \
