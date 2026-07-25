@@ -26,7 +26,7 @@ private theorem quadraticGauge_inverseCTail
         (∑ k ∈ Finset.Icc 4 N, (k : R) * a k * pi ^ k * S ^ (k - 2)) * S ^ 2 =
       -∑ k ∈ Finset.Icc 4 N,
         ((k - 2 : ℕ) : R) * a k * pi ^ k * S ^ k := by
-  rw [Finset.mul_sum, Finset.sum_mul]
+  rw [Finset.mul_sum, Finset.sum_mul, ← Finset.sum_sub_distrib]
   rw [← Finset.sum_neg_distrib]
   apply Finset.sum_congr rfl
   intro k hk
