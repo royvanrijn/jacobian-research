@@ -53,6 +53,19 @@ theorem derivativeUnitOfSeparable_val (E : K[X]) (hE : E.Separable) :
     (derivativeUnitOfSeparable E hE : AdjoinRoot E) =
       AdjoinRoot.mk E E.derivative := rfl
 
+/-- Normalize the derivative class by an arbitrary nonzero scalar.  In the
+quadratic gauge this scalar is the linear seed coefficient `g₁`, so the value
+of this unit is `E'(S)/g₁`. -/
+def normalizedDerivativeUnitOfSeparable
+    (E : K[X]) (hE : E.Separable) (g₁ : Kˣ) : (AdjoinRoot E)ˣ :=
+  (Units.map (AdjoinRoot.of E) g₁)⁻¹ * derivativeUnitOfSeparable E hE
+
+@[simp]
+theorem normalizedDerivativeUnitOfSeparable_val
+    (E : K[X]) (hE : E.Separable) (g₁ : Kˣ) :
+    (normalizedDerivativeUnitOfSeparable E hE g₁ : AdjoinRoot E) =
+      AdjoinRoot.of E (↑g₁⁻¹ : K) * AdjoinRoot.mk E E.derivative := rfl
+
 /-- Separability alone supplies the quotient-ring reconstruction; no explicit
 Bézout coefficients or localization are required in the theorem statement. -/
 theorem separableQuotientReconstruction_identities
@@ -76,6 +89,28 @@ theorem separableQuotientReconstruction_identities
   exact unitReconstruction_identities S Q pi a
     (derivativeUnitOfSeparable E hE) hD
 
+/-- The scalar-normalized reconstruction used by the general quadratic gauge. -/
+theorem normalizedSeparableQuotientReconstruction_identities
+    (E : K[X]) (hE : E.Separable) (g₁ : Kˣ)
+    (S Q pi a : AdjoinRoot E)
+    (hD : (normalizedDerivativeUnitOfSeparable E hE g₁ : AdjoinRoot E) =
+      1 - S * Q + pi * S ^ 2) :
+    let d := normalizedDerivativeUnitOfSeparable E hE g₁
+    let t : AdjoinRoot E := ↑d⁻¹
+    let x := S * t
+    let y := Q - pi * S
+    let q := pi * (d : AdjoinRoot E)
+    let z := (d : AdjoinRoot E) ^ 2 *
+      (q - a * y ^ 2 * (1 + 3 * t))
+    (1 + x * y = t)
+      ∧ (t ^ 2 * z + a * y ^ 2 * (1 + 3 * t) = q)
+      ∧ (x * (d : AdjoinRoot E) = S)
+      ∧ (y + x * q = Q)
+      ∧ (t * q = pi)
+      ∧ (t * (d : AdjoinRoot E) = 1) := by
+  exact unitReconstruction_identities S Q pi a
+    (normalizedDerivativeUnitOfSeparable E hE g₁) hD
+
 /-- Over a characteristic-zero field, squarefreeness is enough to construct
 the derivative unit. -/
 def derivativeUnitOfSquarefree [CharZero K]
@@ -88,6 +123,19 @@ theorem derivativeUnitOfSquarefree_val [CharZero K]
     (E : K[X]) (hE : Squarefree E) :
     (derivativeUnitOfSquarefree E hE : AdjoinRoot E) =
       AdjoinRoot.mk E E.derivative := rfl
+
+/-- The normalized derivative unit in the exact squarefree form used by the
+paper. -/
+def normalizedDerivativeUnitOfSquarefree [CharZero K]
+    (E : K[X]) (hE : Squarefree E) (g₁ : Kˣ) : (AdjoinRoot E)ˣ :=
+  normalizedDerivativeUnitOfSeparable E
+    ((PerfectField.separable_iff_squarefree).2 hE) g₁
+
+@[simp]
+theorem normalizedDerivativeUnitOfSquarefree_val [CharZero K]
+    (E : K[X]) (hE : Squarefree E) (g₁ : Kˣ) :
+    (normalizedDerivativeUnitOfSquarefree E hE g₁ : AdjoinRoot E) =
+      AdjoinRoot.of E (↑g₁⁻¹ : K) * AdjoinRoot.mk E E.derivative := rfl
 
 /-- The reconstruction theorem in exactly the squarefree form used by the
 paper. -/
@@ -111,5 +159,27 @@ theorem squarefreeQuotientReconstruction_identities [CharZero K]
       ∧ (t * (d : AdjoinRoot E) = 1) := by
   exact unitReconstruction_identities S Q pi a
     (derivativeUnitOfSquarefree E hE) hD
+
+/-- The fully normalized squarefree reconstruction used by the paper. -/
+theorem normalizedSquarefreeQuotientReconstruction_identities [CharZero K]
+    (E : K[X]) (hE : Squarefree E) (g₁ : Kˣ)
+    (S Q pi a : AdjoinRoot E)
+    (hD : (normalizedDerivativeUnitOfSquarefree E hE g₁ : AdjoinRoot E) =
+      1 - S * Q + pi * S ^ 2) :
+    let d := normalizedDerivativeUnitOfSquarefree E hE g₁
+    let t : AdjoinRoot E := ↑d⁻¹
+    let x := S * t
+    let y := Q - pi * S
+    let q := pi * (d : AdjoinRoot E)
+    let z := (d : AdjoinRoot E) ^ 2 *
+      (q - a * y ^ 2 * (1 + 3 * t))
+    (1 + x * y = t)
+      ∧ (t ^ 2 * z + a * y ^ 2 * (1 + 3 * t) = q)
+      ∧ (x * (d : AdjoinRoot E) = S)
+      ∧ (y + x * q = Q)
+      ∧ (t * q = pi)
+      ∧ (t * (d : AdjoinRoot E) = 1) := by
+  exact unitReconstruction_identities S Q pi a
+    (normalizedDerivativeUnitOfSquarefree E hE g₁) hD
 
 end FiniteEtaleKeller
