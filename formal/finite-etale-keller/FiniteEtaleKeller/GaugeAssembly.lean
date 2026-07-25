@@ -50,8 +50,8 @@ theorem quadraticGauge_highCMonomial
       _ = x * q := by simp
   calc
     (((t : R) * q) ^ k) * (x * (↑t⁻¹ : R)) ^ k =
-        (((t : R) * q) * (x * (↑t⁻¹ : R))) ^ k := by
-          rw [mul_pow]
+        (((t : R) * q) * (x * (↑t⁻¹ : R))) ^ k :=
+      (mul_pow ((t : R) * q) (x * (↑t⁻¹ : R)) k).symm
     _ = (x * q) ^ k := by rw [hbase]
 
 /-- Writing the exponent as `m+2`, the high-degree monomial occurring in the
@@ -74,8 +74,9 @@ theorem quadraticGauge_highBMonomial
             rw [pow_add]
             ring
     _ = ((((t : R) * q) * (x * (↑t⁻¹ : R))) ^ m) *
-          (((t : R) * q) ^ 2) := by
-            rw [mul_pow]
+          (((t : R) * q) ^ 2) :=
+      congrArg (fun u : R => u * (((t : R) * q) ^ 2))
+        (mul_pow ((t : R) * q) (x * (↑t⁻¹ : R)) m).symm
     _ = (x * q) ^ m * (((t : R) * q) ^ 2) := by rw [hbase]
     _ = (t : R) ^ 2 * x ^ m * q ^ (m + 2) := by
       rw [mul_pow, mul_pow, pow_add]
@@ -91,6 +92,7 @@ theorem quadraticGauge_highBSum
         d k * ((t : R) ^ 2 * x ^ (k - 2) * q ^ k) := by
   apply Finset.sum_congr rfl
   intro k hk
+  have hk4 : 4 ≤ k := (Finset.mem_Icc.mp hk).1
   have hk2 : 2 ≤ k := by omega
   simpa [Nat.sub_add_cancel hk2] using
     congrArg (fun u : R => d k * u)
@@ -122,8 +124,14 @@ theorem quadraticGauge_lowBIdentity
       ((t : R) * q) * (x * (↑t⁻¹ : R)) =
           x * q * ((t : R) * (↑t⁻¹ : R)) := by ring
       _ = x * q := by simp
-  rw [hmarked]
-  ring
+  calc
+    (y + x * q) + 2 * c * ((t : R) * q) +
+          (3 * r - 1) * ((t : R) * q) * (x * (↑t⁻¹ : R)) =
+        (y + x * q) + 2 * c * ((t : R) * q) +
+          (3 * r - 1) * (((t : R) * q) * (x * (↑t⁻¹ : R))) := by ring
+    _ = (y + x * q) + 2 * c * ((t : R) * q) +
+          (3 * r - 1) * (x * q) := by rw [hmarked]
+    _ = y + 3 * r * x * q + 2 * c * ((t : R) * q) := by ring
 
 /-- The complete second-coordinate assembly, including all coefficients with
 index at least four. -/
