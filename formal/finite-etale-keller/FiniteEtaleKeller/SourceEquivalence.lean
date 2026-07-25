@@ -129,18 +129,22 @@ def toChart (p : GaugeSource R pi a) : GaugeChart R pi := by
       d := p.t⁻¹
       chart_eq := ?_ }
   change d = 1 - (p.x * d) * (p.y + p.x * p.q) + pi * (p.x * d) ^ 2
-  rw [← p.t_mul_q, p.t_eq]
-  have hunit' : d * (1 + p.x * p.y) = 1 := by simpa [p.t_eq] using hunit
-  linear_combination (1 - p.x ^ 2 * d * p.q) * hunit'
+  linear_combination
+    (1 - p.x ^ 2 * d * p.q) * hunit
+      - d * p.t_eq
+      + d ^ 2 * p.x ^ 2 * p.t_mul_q
 
 @[simp]
-theorem toChart_S (p : GaugeSource R pi a) : p.toChart.S = p.S := rfl
+theorem toChart_S (p : GaugeSource R pi a) : p.toChart.S = p.S := by
+  simp [toChart]
 
 @[simp]
-theorem toChart_Q (p : GaugeSource R pi a) : p.toChart.Q = p.Q := rfl
+theorem toChart_Q (p : GaugeSource R pi a) : p.toChart.Q = p.Q := by
+  simp [toChart]
 
 @[simp]
-theorem toChart_d (p : GaugeSource R pi a) : p.toChart.d = p.t⁻¹ := rfl
+theorem toChart_d (p : GaugeSource R pi a) : p.toChart.d = p.t⁻¹ := by
+  simp [toChart]
 
 end GaugeSource
 
@@ -151,10 +155,10 @@ theorem GaugeChart.toSource_toChart {pi : R} (p : GaugeChart R pi) (a : R) :
   have h := unitReconstruction_identities p.S p.Q pi a p.d p.chart_eq
   dsimp only at h
   apply GaugeChart.ext
-  · simpa [GaugeSource.S, GaugeChart.toSource, GaugeSource.toChart] using h.2.2.1
-  · simpa [GaugeSource.Q, GaugeSource.q, GaugeChart.toSource, GaugeSource.toChart]
-      using h.2.2.2.1
-  · simp [GaugeChart.toSource, GaugeSource.toChart]
+  · simpa [GaugeSource.S, GaugeChart.toSource] using h.2.2.1
+  · simpa [GaugeSource.Q, GaugeSource.q, GaugeChart.toSource] using h.2.2.2.1
+  · rw [GaugeSource.toChart_d, GaugeChart.toSource_t]
+    simp
 
 /-- Passing to marked-line coordinates and reconstructing recovers every
 source coordinate, including `z`. -/
