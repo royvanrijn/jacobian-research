@@ -39,6 +39,7 @@ jobs:
             FiniteEtaleKeller.SourceEquivalence
             FiniteEtaleKeller.QuotientReconstruction
             FiniteEtaleKeller.SeparableReconstruction
+            FiniteEtaleKeller.RootPoints
             FiniteEtaleKeller.Translation
             FiniteEtaleKeller.TranslationQuotient
             FiniteEtaleKeller.Admissibility
@@ -67,6 +68,7 @@ jobs:
               FiniteEtaleKeller.SourceEquivalence \
               FiniteEtaleKeller.QuotientReconstruction \
               FiniteEtaleKeller.SeparableReconstruction \
+              FiniteEtaleKeller.RootPoints \
               FiniteEtaleKeller.Translation \
               FiniteEtaleKeller.TranslationQuotient \
               FiniteEtaleKeller.Admissibility \
