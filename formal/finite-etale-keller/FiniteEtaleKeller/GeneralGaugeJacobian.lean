@@ -37,7 +37,7 @@ theorem jacobianDet_generalGaugeMap (G : K[X]) :
     pderiv_mul, pderiv_pow, pderiv_C, pderiv_X_self, pderiv_X_of_ne,
     ne_eq, Fin.reduceEq, not_false_eq_true]
   simp only [map_neg, map_ofNat]
-  ring
+  ring_nf
 
 /-- The fixed target-preserving output normalization has Jacobian one. -/
 theorem jacobianDet_generalGaugeJacobianOneMap [CharZero K] (G : K[X]) :
