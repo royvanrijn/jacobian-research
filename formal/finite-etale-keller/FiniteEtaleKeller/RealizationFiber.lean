@@ -89,7 +89,7 @@ theorem translatePolynomial_derivative_eq_markedChartPolynomial
       C (P.derivative.eval a) *
         markedChartPolynomial 1 0 (realizationBeta P a) := by
   rw [markedChartPolynomial]
-  simp only [C_zero, zero_mul, sub_zero, C_one, one_mul]
+  simp only [map_zero, zero_mul, sub_zero, map_one, one_mul]
   have hβ := X_mul_realizationBeta P a h₁
   rw [realizationDerivativeRemainder] at hβ
   have hg :
@@ -120,7 +120,7 @@ an admissible translation parameter.  Its inverse polynomial is `P(a+S)`. -/
 def realizationDatum
     (P : K[X]) (a : K) (hP : Squarefree P)
     (h₁ : P.derivative.eval a ≠ 0)
-    (h₃ : (Polynomial.hasseDeriv 3 P).eval a ≠ 0) :
+    (_h₃ : (Polynomial.hasseDeriv 3 P).eval a ≠ 0) :
     QuadraticGaugeFiberDatum K where
   E := translatePolynomial P a
   β := realizationBeta P a
@@ -216,10 +216,13 @@ theorem translatedFiberRepresentingEquiv_natural
       (realizationDatum P a hP h₁ h₃).representingEquiv B
         ((f.comp φ).comp (translationQuotientEquiv P a).toAlgHom)
   rw [(realizationDatum P a hP h₁ h₃).representingEquiv_natural]
-  apply ((realizationDatum P a hP h₁ h₃).representingEquiv B).injective
-  apply DFunLike.ext _ _
-  intro x
-  rfl
+  have hcomp :
+      f.comp (φ.comp (translationQuotientEquiv P a).toAlgHom) =
+        (f.comp φ).comp (translationQuotientEquiv P a).toAlgHom := by
+    apply DFunLike.ext _ _
+    intro x
+    rfl
+  rw [hcomp]
 
 #print axioms translatedFiberRepresentingEquiv_natural
 
