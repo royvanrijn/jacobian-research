@@ -1,6 +1,7 @@
 import FiniteEtaleKeller.Bezout
 import FiniteEtaleKeller.MarkedLine
 import FiniteEtaleKeller.Reconstruction
+import FiniteEtaleKeller.SourceEquivalence
 import FiniteEtaleKeller.QuotientReconstruction
 import FiniteEtaleKeller.SeparableReconstruction
 import FiniteEtaleKeller.Translation
