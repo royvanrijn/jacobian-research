@@ -1,0 +1,39 @@
+name: finite-etale-structural-audit
+
+on:
+  pull_request:
+    paths:
+      - scripts/verify_universal_quadratic_gauge.py
+      - scripts/verify_finite_etale_keller_fibers.py
+      - formal/finite-etale-keller/**
+      - papers/common-arithmetic-fibers/**
+      - .github/workflows/finite-etale-structural-audit.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: finite-etale-structural-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  structural-audit:
+    name: all-degree-structural-audit
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6.2.0
+        with:
+          python-version-file: .python-version
+          cache: pip
+      - name: Install pinned dependencies
+        run: python -m pip install --requirement requirements.txt
+      - name: Run the universal structural certificate
+        run: python scripts/verify_universal_quadratic_gauge.py
+      - name: Run the concrete finite-etale regressions
+        run: python scripts/verify_finite_etale_keller_fibers.py
