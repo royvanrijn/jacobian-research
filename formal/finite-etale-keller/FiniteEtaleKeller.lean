@@ -2,6 +2,7 @@ import FiniteEtaleKeller.Bezout
 import FiniteEtaleKeller.MarkedLine
 import FiniteEtaleKeller.Reconstruction
 import FiniteEtaleKeller.QuotientReconstruction
+import FiniteEtaleKeller.SeparableReconstruction
 import FiniteEtaleKeller.Translation
 import FiniteEtaleKeller.TranslationQuotient
 import FiniteEtaleKeller.Admissibility
