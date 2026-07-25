@@ -106,7 +106,11 @@ def rootEquivMarkedFiberPoint
     intro p
     have hQ :
         algebraMap K A b - Polynomial.aeval p.chart.S β = p.chart.Q := by
-      linear_combination p.marked_eq
+      calc
+        algebraMap K A b - Polynomial.aeval p.chart.S β =
+            (p.chart.Q + Polynomial.aeval p.chart.S β) -
+              Polynomial.aeval p.chart.S β := by rw [p.marked_eq]
+        _ = p.chart.Q := by ring
     apply MarkedFiberPoint.ext
     apply GaugeChart.ext
     · rfl
@@ -115,7 +119,16 @@ def rootEquivMarkedFiberPoint
       change
         (p.toRoot.normalizedDerivativeUnit E hE g₁ : A) =
           (p.chart.d : A)
-      rw [PolynomialRoot.normalizedDerivativeUnit_eq_chartFactor hE g₁ hderiv]
+      have hd :=
+        PolynomialRoot.normalizedDerivativeUnit_eq_chartFactor
+          (E := E) (β := β) (pi := pi) (b := b)
+          hE g₁ hderiv p.toRoot
+      rw [hd]
+      change
+        1 - p.chart.S *
+              (algebraMap K A b - Polynomial.aeval p.chart.S β)
+            + algebraMap K A pi * p.chart.S ^ 2 =
+          (p.chart.d : A)
       rw [hQ, ← p.chart.chart_eq]
 
 /-- Characteristic-zero squarefreeness gives the paper's public form of the
