@@ -62,10 +62,13 @@ private theorem generalGauge_tail_derivative
       (X : K[X]) * X ^ (k - 2) = X ^ 1 * X ^ (k - 2) := by simp
       _ = X ^ (1 + (k - 2)) := (pow_add X 1 (k - 2)).symm
       _ = X ^ (k - 1) := by congr; omega
-  rw [Polynomial.derivative_C_mul_X_pow, hpow]
-  rw [← C_mul]
-  congr 1
-  field_simp [h₁]
+  have hcoeff :
+      G.coeff k * pi ^ k * (k : K) =
+        G.coeff 1 * ((k : K) * (G.coeff k / G.coeff 1) * pi ^ k) := by
+    field_simp [h₁]
+    ring
+  rw [Polynomial.derivative_C_mul_X_pow, ← hpow, hcoeff]
+  simp only [C_mul]
   ring
 
 private theorem generalGauge_low_derivative
@@ -81,7 +84,7 @@ private theorem generalGauge_low_derivative
     Polynomial.derivative_X, Polynomial.derivative_X_pow,
     Polynomial.derivative_C, zero_mul, add_zero, mul_one]
   field_simp [h₁]
-  ring
+  ring_nf
 
 /-- The explicit `β` has exactly the normalized-derivative relation stated in
 the paper. -/
@@ -108,7 +111,7 @@ theorem generalGaugeInversePolynomial_derivative [CharZero K]
     Polynomial.derivative_C, Polynomial.derivative_X_pow, zero_mul, add_zero]
   rw [markedChartPolynomial]
   field_simp [h₁]
-  ring
+  ring_nf
 
 section RepresentedFiber
 
