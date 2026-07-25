@@ -42,7 +42,7 @@ def liftAlgHom (s : PolynomialRoot E A) : AdjoinRoot E →ₐ[K] A :=
 @[simp]
 theorem liftAlgHom_root (s : PolynomialRoot E A) :
     s.liftAlgHom (AdjoinRoot.root E) = s.1 := by
-  simp [liftAlgHom]
+  exact AdjoinRoot.liftAlgHom_root E (Algebra.ofId K A) s.1 s.2
 
 /-- An algebra homomorphism out of the quotient is determined by the image of
 the distinguished root. -/
@@ -62,11 +62,11 @@ def algHomEquiv (E : K[X]) (A : Type*) [CommRing A] [Algebra K A] :
   left_inv := by
     intro f
     apply AdjoinRoot.algHom_ext
-    simp [ofAlgHom, liftAlgHom]
+    exact liftAlgHom_root (ofAlgHom f)
   right_inv := by
     intro s
     apply PolynomialRoot.ext
-    simp [ofAlgHom, liftAlgHom]
+    exact liftAlgHom_root s
 
 @[simp]
 theorem algHomEquiv_apply (f : AdjoinRoot E →ₐ[K] A) :
@@ -113,8 +113,9 @@ theorem normalizedDerivativeUnit_val
     (s.normalizedDerivativeUnit E hE g₁ : A) =
       algebraMap K A (↑g₁⁻¹ : K) * Polynomial.aeval s.1 E.derivative := by
   rw [normalizedDerivativeUnit, Units.coe_map,
-    normalizedDerivativeUnitOfSeparable_val]
-  simp [liftAlgHom, Polynomial.aeval_def]
+    normalizedDerivativeUnitOfSeparable_val, map_mul]
+  rw [AdjoinRoot.liftAlgHom_of, AdjoinRoot.liftAlgHom_mk]
+  rfl
 
 end PolynomialRoot
 
