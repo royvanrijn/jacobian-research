@@ -117,6 +117,16 @@ def realizationGaugeCoefficient (P : K[X]) (a : K)
     (h₃ : (Polynomial.hasseDeriv 3 P).eval a ≠ 0) : K :=
   P.derivative.eval a / (realizationCubicUnit P a h₃ : K)
 
+/-- The source coefficient is exactly the ratio of the linear and cubic
+coefficients of the rooted translated seed. -/
+@[simp]
+theorem realizationGaugeCoefficient_eq_seedRatio
+    (P : K[X]) (a : K)
+    (h₃ : (Polynomial.hasseDeriv 3 P).eval a ≠ 0) :
+    realizationGaugeCoefficient P a h₃ =
+      (rootedTranslate P a).coeff 1 / (rootedTranslate P a).coeff 3 := by
+  simp [realizationGaugeCoefficient, realizationCubicUnit]
+
 section CharacteristicZero
 
 variable [CharZero K]
