@@ -1,4 +1,4 @@
-\section{Keller fibers and the rank theorem}
+\section{Keller fibers and the classification theorem}
 
 Let $K$ be a field of characteristic zero.  A polynomial map
 \[
@@ -66,9 +66,10 @@ in $K_0$.  It therefore descends to $K$, proving the assertion without any
 algebraic-closedness assumption.
 \end{proof}
 
-\begin{theorem}[Finite-\'etale realization]\label{thm:main}
-Over a field of characteristic zero, the possible ranks of nonzero Keller
-fibers are exactly
+\begin{theorem}[Finite-\'etale realization and classification]\label{thm:main}
+A nonzero finite \'etale algebra over a characteristic-zero field is a Keller
+fiber if and only if its rank is not two.  Equivalently, the possible ranks are
+exactly
 \[
  \boxed{1,3,4,5,\ldots}.
 \]
@@ -101,7 +102,7 @@ its full fiber is
  \simeq\Spec K[T]/(P).}
 \]
 Consequently every finite \'etale $K$-algebra of rank at least three is a
-Keller fiber.
+Keller fiber in affine three-space.
 \end{theorem}
 
 \begin{proof}
@@ -141,6 +142,7 @@ fiber is full.
 For an arbitrary finite \'etale algebra of rank at least three, apply the
 monogenicity lemma in Section~\ref{sec:realization}.  Rank one is realized by
 the identity, and Lemma~\ref{lem:degree-two} excludes rank two.  Finally,
-$P'P'''$ is nonzero for $N\geq3$ in characteristic zero, and $K$ is infinite,
-so the required $a$ always exists.
+$P'$ and $P'''$ are nonzero polynomials when $N\geq3$ in characteristic zero,
+so their product is nonzero.  A nonzero polynomial has only finitely many
+zeros, while $K$ is infinite; hence the required $a$ always exists.
 \end{proof}
