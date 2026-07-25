@@ -51,8 +51,28 @@ Lipton and Markakis study rational images and Hilbert irreducibility
 thinness phenomena \cite{Shaska}.  None of these sources states the
 finite-\'etale realization theorem proved here.
 
-\paragraph{Exact verification.}
-The companion checker
+\paragraph{Independent exact verification.}
+The structural checker
+\[
+ \texttt{scripts/verify\_universal\_quadratic\_gauge.py}
+\]
+verifies the source-chart reciprocal and Jacobian identities, the marked-line
+Jacobian cancellation, the generic $k$-th coefficient identities, an
+independent six-coefficient bridge, the all-degree termwise coordinate bound,
+and the target-preserving determinant-one normalization.  These are symbolic
+identities, not numerical sampling.
+
+A separate Singular script
+\[
+ \texttt{scripts/verify\_universal\_quadratic\_gauge.sing}
+\]
+works over the rational function field in six algebraically independent
+coefficients.  It expands the complete degree-six three-variable map, obtains
+Jacobian determinant exactly $-2$, and checks the coordinate-degree profile
+$(7,38,36)$.  This provides a CAS implementation independent of both Lean and
+SymPy.
+
+The concrete checker
 \[
  \texttt{scripts/verify\_finite\_etale\_keller\_fibers.py}
 \]
@@ -65,62 +85,87 @@ $E'$.  It separately audits the scaling, determinant, target, and fiber of the
 integral degree-five map and the inverse equations in the fixed-map infinite
 family.
 
-These computations are exact regression certificates, not a proof by testing
-finitely many degrees.  The universal map identities are the coefficientwise
-calculation in Proposition~\ref{prop:gauge} and
-Subsection~\ref{subsec:gauge-identities}; the universal degree estimate is the
-term-by-term argument in Corollary~\ref{cor:effective-gauge}.
+These computations are independent regression and structural certificates,
+not a proof by testing finitely many degrees.  The universal paper proof is the
+coefficientwise calculation in Proposition~\ref{prop:gauge} and
+Subsection~\ref{subsec:gauge-identities}; the corresponding arbitrary-degree
+map, determinant, and effective-degree theorems are also formalized in Lean.
 
 \paragraph{Lean formalization.}
 The repository contains a Lean project at
 \[
  \texttt{formal/finite-etale-keller}.
 \]
-It contains no \texttt{sorry} and introduces no project-specific axioms.  The
-formal development proves the universal marked-line identities; the mutually
-inverse source/chart reconstruction over arbitrary commutative rings; the
-equivalence between roots and the abstract full source-fiber datum; naturality
-under every morphism of commutative test algebras; and representation of that
-functor by $K[S]/(E)$.
+It contains no \texttt{sorry} and introduces no project-specific axioms.
+Starting from a squarefree polynomial $P$ with $\deg P\geq3$, the final formal
+construction performs the following steps.
 
-For a squarefree polynomial $P$ of degree at least three, Lean also proves that
-there exists an admissible parameter $a$ at which both the linear and cubic
-Taylor coefficients are nonzero.  It instantiates the universal datum with
+First, Lean proves that an admissible translation parameter exists and chooses
+one internally.  It forms the rooted translated seed
 \[
- E(S)=P(a+S),
+ G(S)=P(a+S)-P(a)
 \]
-proves the derivative factorization using the third Hasse derivative, and
-composes with the explicit algebra equivalence
+and packages the complete finite coefficient sums as a single actual map
 \[
- K[S]/(P(a+S))\simeq K[T]/(P(T)).
+ F_G:\operatorname{MvPolynomial}(\operatorname{Fin}3,K)^3.
 \]
-The final theorem, \texttt{automaticFiberRepresentingEquiv\_natural}, takes
-only a squarefree $P$ and the hypothesis $\deg P\geq3$.  For every commutative
-test $K$-algebra it gives a natural represented-fiber equivalence directly
-from $K[T]/(P)$; the translation parameter and its two nonvanishing witnesses
-are chosen internally.  Its axiom report contains only Lean's standard
-\texttt{propext}, \texttt{Classical.choice}, and \texttt{Quot.sound}.
+The files \texttt{GaugeAssembly.lean},
+\texttt{GaugeInverseAssembly.lean}, and
+\texttt{GeneralGaugeMap.lean} prove the coefficientwise assembly and exact
+evaluation formulas uniformly in the degree.
 
-The coefficientwise map assembly is now formalized through the complete finite
-sums.  Over an arbitrary commutative ring, \texttt{GaugeAssembly.lean} proves
-the low-degree identities, the high-degree monomial transport, and then the
-full sums over every index $4\leq k\leq N$ with an arbitrary coefficient
-family.  Thus both displayed coordinates are assembled uniformly in $N$, not
-inferred from finitely many examples.  Together with the marked-line
-differential identity, this machine-checks all algebraic cancellations used in
-Subsection~\ref{subsec:gauge-identities}.
+Second, \texttt{GeneralGaugeJacobian.lean} directly expands the full
+three-by-three Jacobian, including every finite coefficient sum, and proves
+\[
+ \det DF_G=-2.
+\]
+The fixed output normalization is then proved to have determinant one.
+\texttt{GeneralGaugeDegree.lean} proves the bounds
+\[
+ \deg\Pi\leq7,\qquad \deg B\leq6N+2,\qquad \deg C\leq6N,
+\]
+and \texttt{GeneralGaugeRealizationDegree.lean} transports them to the final
+automatically chosen map in terms of the original degree $N=\deg P$.
 
-This formal certificate deliberately has a precise boundary.  The abstract
-finite sums have not yet been instantiated as one general
-$\operatorname{MvPolynomial}(\operatorname{Fin}3,K)$ map with a single theorem
-for its Jacobian and its $6N+2$ coordinate-degree bound.  Monogenicity of finite
-\'etale algebras and the historical Campbell--Razar--Wright degree-two theorem
-also remain mathematical inputs rather than parts of the Lean certificate.
-The explicit optimal quintic map, its determinant, and its determinant-one
-output normalization are formalized separately.  Thus the formalization now
-certifies the automatic translation, complete represented fiber, naturality,
-and the complete finite-sum gauge assembly without mislabelling the remaining
-multivariate-map or classical inputs as machine-checked.
+Third, \texttt{GeneralGaugeInverse.lean} defines the full generic inverse
+polynomial, its marked polynomial $\beta$, and the exact derivative
+factorization.  \texttt{GeneralGaugeDisplayedFiber.lean} proves that the
+actual evaluated $B$ and $C$ coordinates are precisely the marked source
+relations.  \texttt{GeneralGaugeRawFiber.lean} begins with a literal triple
+satisfying the three actual polynomial equations; from $tq=\pi$ with unit
+$\pi$, it constructs the global chart unit over an arbitrary commutative test
+ring and identifies the literal map fiber with the represented source fiber.
+
+Fourth, \texttt{GeneralGaugeNormalization.lean} proves that the zero second
+coordinate fiber is unchanged by the determinant-one output normalization.
+\texttt{GeneralGaugeRealization.lean} proves that the inverse polynomial at
+the chosen target is exactly $P(a+S)$, composes with
+\[
+ K[S]/(P(a+S))\simeq K[T]/(P(T)),
+\]
+and removes the supplied translation parameter through the automatic choice.
+For every commutative test $K$-algebra $A$, the final theorem gives a natural
+equivalence
+\[
+ \operatorname{Hom}_{K\text{-alg}}(K[T]/(P),A)
+ \simeq
+ \{u\in A^3:\widetilde F_G(u)=y_{P,a}\}.
+\]
+The corresponding declarations are
+\texttt{automaticRealizationMap\_certificate} and
+\texttt{automaticJacobianOneFiberRepresentingEquiv\_natural}.  The latter's
+axiom report contains only Lean's standard \texttt{propext},
+\texttt{Classical.choice}, and \texttt{Quot.sound}; the Jacobian and degree
+certificates use no additional axioms.
+
+The remaining formal boundary is now outside the constructive map and fiber
+calculation.  Lean does not yet formalize the primitive linear-in-$C$
+irreducibility argument which identifies the generic function-field degree,
+monogenicity of arbitrary finite \'etale products over an infinite field, or
+the Campbell--Razar--Wright degree-two theorem.  The local-number-theoretic,
+Chebotarev, Dirichlet, and prime-counting inputs in the arithmetic applications
+also remain paper proofs.  These inputs are listed claim by claim in the
+companion verification matrix; none is represented as machine-checked.
 
 \paragraph{Provenance.}
 The recent three-dimensional counterexample was publicly attributed to
