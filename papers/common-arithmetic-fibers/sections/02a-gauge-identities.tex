@@ -1,0 +1,90 @@
+\subsection{The all-degree identities coefficient by coefficient}
+\label{subsec:gauge-identities}
+
+For clarity, we record the uniform calculation invoked in the proof of
+Proposition~\ref{prop:gauge}.  This is the point at which the displayed map
+\eqref{eq:gauge-map} is assembled from an arbitrary degree-$N$ seed; no
+bounded-degree pattern recognition is involved.
+
+From \eqref{eq:Gpi} and \eqref{eq:beta},
+\begin{equation}
+ \beta(\Pi,S)
+ =2\frac{g_2}{g_1}\Pi
+  +\left(3\frac{g_3}{g_1}-1\right)\Pi S
+  +\sum_{k=4}^N k\frac{g_k}{g_1}\Pi^kS^{k-2}.
+ \label{eq:beta-expanded}
+\end{equation}
+On the source chart,
+\[
+ S=\frac{x}{t},\qquad \Pi=tq,\qquad Q=y+xq,
+\]
+and therefore, for every $k\geq4$,
+\begin{equation}
+ \Pi^kS^{k-2}=t^2x^{k-2}q^k.
+ \label{eq:high-degree-B-monomial}
+\end{equation}
+Substituting \eqref{eq:beta-expanded} gives
+\begin{align*}
+ Q+\beta(\Pi,S)
+ &=y+xq+2\frac{g_2}{g_1}tq
+   +\left(3\frac{g_3}{g_1}-1\right)xq
+   +\sum_{k=4}^N k\frac{g_k}{g_1}t^2x^{k-2}q^k\\
+ &=y+3\frac{g_3}{g_1}xq+2\frac{g_2}{g_1}tq
+   +\sum_{k=4}^N k\frac{g_k}{g_1}t^2x^{k-2}q^k,
+\end{align*}
+which is exactly the displayed coordinate $B$.
+
+Now define temporarily
+\[
+ C_*=\frac{2G_\Pi(S)}{g_1}-BS^2.
+\]
+Using $B=Q+\beta(\Pi,S)$ and the defining equation for $\beta$, one obtains
+\begin{equation}
+ C_*=2S-QS^2+\left(1-\frac{g_3}{g_1}\right)\Pi S^3
+ -\sum_{k=4}^N(k-2)\frac{g_k}{g_1}\Pi^kS^k.
+ \label{eq:C-separated}
+\end{equation}
+The terms indexed by $k\geq4$ already have the required form because
+\begin{equation}
+ \Pi^kS^k=(xq)^k.
+ \label{eq:high-degree-C-monomial}
+\end{equation}
+For the remaining terms, write $r=g_3/g_1$.  Then
+\begin{align*}
+ 2S-QS^2+(1-r)\Pi S^3
+ &=\frac{2xt-x^2y-rx^3q}{t^2}\\
+ &=\frac{x(t+1)-rx^3q}{t^2},
+ \label{eq:C-low-before-q}
+\end{align*}
+where $xy=t-1$ was used in the second line.  Since
+\[
+ q=t^2z+\frac1r y^2(1+3t),
+\]
+the right-hand side of \eqref{eq:C-low-before-q} becomes
+\[
+ -rx^3z+rac{x\bigl(t+1-(t-1)^2(1+3t)\bigr)}{t^2}.
+\]
+The elementary identity
+\begin{equation}
+ t+1-(t-1)^2(1+3t)=t^2(5-3t)
+ \label{eq:cubic-cancellation}
+\end{equation}
+therefore gives
+\[
+ 2S-QS^2+(1-r)\Pi S^3=x(5-3t)-\frac{g_3}{g_1}x^3z.
+\]
+Together with \eqref{eq:C-separated} and
+\eqref{eq:high-degree-C-monomial}, this is precisely the displayed coordinate
+$C$.
+
+These calculations were made after inverting $t$.  Both resulting sides are
+polynomials in $K[x,y,z]$, and localization at the nonzero polynomial $t$ is
+injective, so the two marked-line identities hold polynomially everywhere.
+At fixed $\Pi$, their differential has determinant
+\[
+ \det\frac{\partial(B,C)}{\partial(S,Q)}
+ =-2\left(\frac{G_\Pi'(S)}{g_1}-BS\right)=-2D.
+\]
+The source-chart determinant is $D^{-1}$, hence the chain rule gives
+$\det DF_G=-2$.  This also shows explicitly why every coefficient $g_k$
+contributes independently and why the cancellation is uniform in $N$.
