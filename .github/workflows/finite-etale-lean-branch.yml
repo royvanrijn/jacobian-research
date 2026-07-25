@@ -40,6 +40,7 @@ jobs:
             FiniteEtaleKeller.QuotientReconstruction
             FiniteEtaleKeller.SeparableReconstruction
             FiniteEtaleKeller.RootPoints
+            FiniteEtaleKeller.MarkedFiberPoints
             FiniteEtaleKeller.Translation
             FiniteEtaleKeller.TranslationQuotient
             FiniteEtaleKeller.Admissibility
@@ -69,6 +70,7 @@ jobs:
               FiniteEtaleKeller.QuotientReconstruction \
               FiniteEtaleKeller.SeparableReconstruction \
               FiniteEtaleKeller.RootPoints \
+              FiniteEtaleKeller.MarkedFiberPoints \
               FiniteEtaleKeller.Translation \
               FiniteEtaleKeller.TranslationQuotient \
               FiniteEtaleKeller.Admissibility \
