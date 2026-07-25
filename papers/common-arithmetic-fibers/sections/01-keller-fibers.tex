@@ -105,20 +105,38 @@ Keller fiber.
 \end{theorem}
 
 \begin{proof}
-The translation makes the linear and cubic coefficients of $G$ equal to
-$P'(a)$ and $P'''(a)/6$, respectively, so the quadratic gauge of
+The linear and cubic Taylor coefficients of $G$ are $P'(a)$ and
+$P'''(a)/3!$, respectively, so the quadratic gauge of
 Section~\ref{sec:gauge} applies.  At the target \eqref{eq:main-target}, its
 inverse polynomial is
 \[
  G(S)-\frac{P'(a)}2\left(-\frac{2P(a)}{P'(a)}\right)
  =P(a+S).
 \]
-Proposition~\ref{prop:gauge} identifies the full scheme fiber with
-$\Spec K[S]/(P(a+S))$, which is $\Spec K[T]/(P)$ after $T=a+S$.
-The linear automorphism $L$ fixes this target because its second coordinate
-is zero, multiplies the Jacobian determinant by $-1/2$, and does not alter
-geometric degree or coordinate degrees.  The determinant-one claim and the
-effective bound follow from Corollary~\ref{cor:effective-gauge}.
+Translation preserves squarefreeness.  Proposition~\ref{prop:gauge} therefore
+identifies the full scheme fiber with $\Spec K[S]/(P(a+S))$.
+
+The translation isomorphism is completely explicit:
+\[
+ K[S]/(P(a+S))\longrightarrow K[T]/(P(T)),
+ \qquad \overline S\longmapsto\overline T-a,
+\]
+with inverse $\overline T\mapsto\overline S+a$.  Equivalently, for every
+commutative $K$-algebra $A$, composition with this isomorphism and the natural
+equivalence of Proposition~\ref{prop:gauge} gives
+\[
+ \operatorname{Hom}_{K\text{-alg}}(K[T]/(P),A)
+ \simeq \widetilde F_G^{-1}(y_{P,a})(A),
+\]
+naturally in $A$.  Thus the displayed isomorphism includes the complete
+scheme structure and is compatible with every base change.
+
+The linear automorphism $L$ fixes the chosen target because its second
+coordinate is zero, multiplies the Jacobian determinant by $-1/2$, and does
+not alter geometric degree or coordinate degrees.  The determinant-one claim
+and the effective bound follow from Corollary~\ref{cor:effective-gauge}.
+Both the quotient algebra and the geometric degree have rank $N$, so this
+fiber is full.
 
 For an arbitrary finite \'etale algebra of rank at least three, apply the
 monogenicity lemma in Section~\ref{sec:realization}.  Rank one is realized by
