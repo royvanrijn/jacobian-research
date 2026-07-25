@@ -37,8 +37,14 @@ private theorem quadraticGauge_inverseCTail
     rw [← pow_add]
     congr
     omega
-  rw [hpow, Nat.cast_sub hk2]
-  ring
+  calc
+    2 * (a k * pi ^ k * S ^ k) -
+        (k : R) * a k * pi ^ k * S ^ (k - 2) * S ^ 2 =
+      2 * (a k * pi ^ k * S ^ k) -
+        ((k : R) * a k * pi ^ k) * (S ^ (k - 2) * S ^ 2) := by ring
+    _ = -(((k - 2 : ℕ) : R) * a k * pi ^ k * S ^ k) := by
+      rw [hpow, Nat.cast_sub hk2]
+      ring
 
 /-- Complete coefficientwise expansion of the marked third coordinate. -/
 theorem quadraticGauge_inverseCExpansion
