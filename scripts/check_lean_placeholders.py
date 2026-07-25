@@ -12,14 +12,13 @@ LEAN_ROOT = ROOT / "formal" / "finite-etale-keller"
 FORBIDDEN = re.compile(r"\b(sorry|admit|axiom)\b")
 
 
-def strip_comments_and_literals(source: str) -> str:
-    """Replace Lean comments and literals by spaces while preserving newlines."""
+def strip_comments_and_strings(source: str) -> str:
+    """Replace nested Lean comments and strings while preserving line numbers."""
     out: list[str] = []
     i = 0
     block_depth = 0
     in_line_comment = False
     in_string = False
-    in_char = False
     escaped = False
 
     while i < len(source):
@@ -49,22 +48,19 @@ def strip_comments_and_literals(source: str) -> str:
                 i += 1
             continue
 
-        if in_string or in_char:
-            delimiter = '"' if in_string else "'"
+        if in_string:
             if ch == "\n" and not escaped:
                 # Keep line numbering stable even for malformed literals.
                 out.append("\n")
                 in_string = False
-                in_char = False
             else:
                 out.append(" ")
                 if escaped:
                     escaped = False
                 elif ch == "\\":
                     escaped = True
-                elif ch == delimiter:
+                elif ch == '"':
                     in_string = False
-                    in_char = False
             i += 1
             continue
 
@@ -80,17 +76,6 @@ def strip_comments_and_literals(source: str) -> str:
             in_string = True
             out.append(" ")
             i += 1
-        elif ch == "'" and nxt and nxt != " ":
-            # Lean uses apostrophes in identifiers, so only treat a quote as a
-            # character literal when a closing quote occurs before whitespace.
-            closing = source.find("'", i + 1, min(len(source), i + 8))
-            if closing != -1 and "\n" not in source[i + 1 : closing]:
-                in_char = True
-                out.append(" ")
-                i += 1
-            else:
-                out.append(ch)
-                i += 1
         else:
             out.append(ch)
             i += 1
@@ -106,7 +91,7 @@ def main() -> int:
         return 2
 
     for path in files:
-        cleaned = strip_comments_and_literals(path.read_text(encoding="utf-8"))
+        cleaned = strip_comments_and_strings(path.read_text(encoding="utf-8"))
         for match in FORBIDDEN.finditer(cleaned):
             line = cleaned.count("\n", 0, match.start()) + 1
             failures.append(f"{path.relative_to(ROOT)}:{line}: forbidden `{match.group(1)}`")
