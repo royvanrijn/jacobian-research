@@ -24,12 +24,19 @@ nonvanishing witness remains as an external hypothesis.
 The displayed all-degree polynomial map is proved coefficientwise in the
 paper. Lean checks the low-degree identities and the complete finite sums of
 all high-degree terms `4 ≤ k ≤ N`, with an arbitrary coefficient family, over
-arbitrary commutative rings. The remaining map-level step is to instantiate
-these identities as one general `MvPolynomial (Fin 3) K` object and prove its
-Jacobian and `6N+2` coordinate-degree bound there. The exact symbolic checker
-independently constructs and audits the complete map in degrees three, four,
-and five, together with the explicit arithmetic examples; these are regression
-certificates rather than a replacement for the uniform proof.
+arbitrary commutative rings. `GeneralGaugeMap.lean` now packages these sums as
+one `MvPolynomial (Fin 3) K` map and certifies its three coordinate evaluations
+over every commutative test algebra. The remaining map-level steps are its
+general Jacobian theorem, `6N+2` `totalDegree` bound, and a direct equivalence
+between the raw polynomial-map fiber and the represented-fiber datum.
+
+Two independent exact checkers audit the construction. The structural checker
+verifies the source and marked-line Jacobians, the generic `k`-th coefficient,
+a six-coefficient bridge, and the termwise degree bound. The concrete checker
+fully expands degrees three, four, and five, reconstructs the quotient fiber in
+both directions, and audits the arithmetic examples. These are regression and
+independence certificates, not replacements for the uniform paper and Lean
+proofs.
 
 The arithmetic applications include:
 
@@ -46,17 +53,20 @@ draft.
 The focused audits accompanying the active draft are:
 
 1. the exact arbitrary-characteristic-zero-field scope of the degree-two
-   Galois exclusion, with Campbell--Razar--Wright provenance and an explicit
-   descent proof;
+   Galois exclusion, with Campbell--Razar--Wright provenance and a faithfully
+   flat descent proof;
 2. two-sided reconstruction over arbitrary commutative test algebras, using a
    Bézout inverse of `E'` and proving naturality;
 3. existence of an admissible translation and the canonical quotient
    translation `K[S]/(P(a+S)) ≃ K[T]/(P(T))`;
 4. a coefficientwise derivation of the displayed all-degree gauge identities,
-   including the complete finite sums formalized in Lean;
+   including the complete finite sums and the general `MvPolynomial` object;
 5. the scaling identity `F_displayed = diag(1,19,19) F_normalized` for the
    optimal quintic example;
 6. the dated and qualified [literature audit](LITERATURE_AUDIT.md).
+
+The [verification matrix](VERIFICATION.md) records the proof layer supporting
+every load-bearing statement and the exact remaining formal boundary.
 
 The Lean project contains no `sorry` and no project-specific axioms. Its final
 automatic represented-fiber theorem reports only Lean's standard `propext`,
@@ -64,9 +74,10 @@ automatic represented-fiber theorem reports only Lean's standard `propext`,
 nonformalized parts of the paper are listed in
 [`formal/finite-etale-keller/README.md`](../../formal/finite-etale-keller/README.md).
 
-Run the exact checker from the repository root:
+Run the exact checkers from the repository root:
 
 ```bash
+.venv/bin/python scripts/verify_universal_quadratic_gauge.py
 .venv/bin/python scripts/verify_finite_etale_keller_fibers.py
 ```
 
