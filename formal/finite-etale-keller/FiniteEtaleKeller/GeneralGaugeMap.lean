@@ -98,7 +98,7 @@ theorem eval₂_generalGaugeQ (G : K[X]) (p : Fin 3 → A) :
         algebraMap K A (G.coeff 1 / G.coeff 3) * p 1 ^ 2 *
           (1 + 3 * (1 + p 0 * p 1)) := by
   simp [generalGaugeQ, generalGaugeT]
-  norm_num
+  rw [map_ofNat (algebraMap K A) 3]
 
 @[simp]
 theorem eval₂_generalGaugePi (G : K[X]) (p : Fin 3 → A) :
@@ -135,7 +135,7 @@ theorem eval₂_generalGaugeC (G : K[X]) (p : Fin 3 → A) :
           algebraMap K A (((k - 2 : ℕ) : K) * (G.coeff k / G.coeff 1)) *
             (p 0 * MvPolynomial.eval₂ (algebraMap K A) p (generalGaugeQ G)) ^ k := by
   simp [generalGaugeC, generalGaugeT]
-  norm_num
+  rw [map_ofNat (algebraMap K A) 5, map_ofNat (algebraMap K A) 3]
 
 @[simp]
 theorem eval₂Map_generalGaugeMap_zero (G : K[X]) (p : Fin 3 → A) :
