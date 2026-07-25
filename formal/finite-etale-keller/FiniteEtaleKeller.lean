@@ -1,5 +1,6 @@
 import FiniteEtaleKeller.Bezout
 import FiniteEtaleKeller.MarkedLine
+import FiniteEtaleKeller.GaugeAssembly
 import FiniteEtaleKeller.Reconstruction
 import FiniteEtaleKeller.SourceEquivalence
 import FiniteEtaleKeller.QuotientReconstruction
@@ -13,4 +14,5 @@ import FiniteEtaleKeller.Translation
 import FiniteEtaleKeller.TranslationQuotient
 import FiniteEtaleKeller.Admissibility
 import FiniteEtaleKeller.RealizationFiber
+import FiniteEtaleKeller.AutomaticRealization
 import FiniteEtaleKeller.ExplicitQuintic
