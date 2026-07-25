@@ -6,6 +6,17 @@ occurs as a full fiber of a polynomial Keller map. For rank at least three,
 the realization is explicit in affine three-space, has Jacobian determinant
 `1`, and has coordinate degree at most `6N+2` in rank `N`.
 
+The scheme-theoretic core is stated as a natural equivalence on every
+commutative test algebra:
+
+```text
+Hom_K-alg(K[T]/(P), A) ≃ distinguished source-fiber points over A.
+```
+
+Thus the theorem controls the complete represented fiber, not merely its
+geometric or rational points. The reconstruction, naturality, representation by
+the polynomial quotient, and quotient translation are formalized in Lean.
+
 The arithmetic applications include:
 
 - an explicit degree-five Keller fiber that is everywhere locally soluble
@@ -18,15 +29,24 @@ The arithmetic applications include:
 The directory name is retained as a stable repository path from the earlier
 draft.
 
-The four focused audits accompanying the active draft are:
+The focused audits accompanying the active draft are:
 
 1. the exact arbitrary-characteristic-zero-field scope of the degree-two
    Galois exclusion, with Campbell--Razar--Wright provenance and an explicit
    descent proof;
-2. two-sided coordinate-ring reconstruction using a Bézout inverse of `E'`;
-3. the scaling identity `F_displayed = diag(1,19,19) F_normalized` for the
+2. two-sided reconstruction over arbitrary commutative test algebras, using a
+   Bézout inverse of `E'` and proving naturality;
+3. the canonical quotient translation
+   `K[S]/(P(a+S)) ≃ K[T]/(P(T))`;
+4. the scaling identity `F_displayed = diag(1,19,19) F_normalized` for the
    optimal quintic example;
-4. the dated and qualified [literature audit](LITERATURE_AUDIT.md).
+5. the dated and qualified [literature audit](LITERATURE_AUDIT.md).
+
+The Lean project contains no `sorry` and no project-specific axioms. Its final
+represented-fiber theorem reports only Lean's standard `propext`,
+`Classical.choice`, and `Quot.sound`. The formal scope and the remaining
+nonformalized parts of the paper are listed in
+[`formal/finite-etale-keller/README.md`](../../formal/finite-etale-keller/README.md).
 
 Run the exact checker from the repository root:
 
@@ -34,7 +54,7 @@ Run the exact checker from the repository root:
 .venv/bin/python scripts/verify_finite_etale_keller_fibers.py
 ```
 
-Build the staged Lean certificate with:
+Build the Lean certificate with:
 
 ```bash
 cd formal/finite-etale-keller
