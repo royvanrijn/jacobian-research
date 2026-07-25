@@ -36,6 +36,7 @@ jobs:
             FiniteEtaleKeller.ExplicitPolynomial
             FiniteEtaleKeller.MarkedLine
             FiniteEtaleKeller.Reconstruction
+            FiniteEtaleKeller.SourceEquivalence
             FiniteEtaleKeller.QuotientReconstruction
             FiniteEtaleKeller.SeparableReconstruction
             FiniteEtaleKeller.Translation
@@ -63,6 +64,7 @@ jobs:
               FiniteEtaleKeller.ExplicitPolynomial \
               FiniteEtaleKeller.MarkedLine \
               FiniteEtaleKeller.Reconstruction \
+              FiniteEtaleKeller.SourceEquivalence \
               FiniteEtaleKeller.QuotientReconstruction \
               FiniteEtaleKeller.SeparableReconstruction \
               FiniteEtaleKeller.Translation \
