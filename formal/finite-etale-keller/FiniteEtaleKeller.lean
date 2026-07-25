@@ -6,6 +6,7 @@ import FiniteEtaleKeller.QuotientReconstruction
 import FiniteEtaleKeller.SeparableReconstruction
 import FiniteEtaleKeller.RootPoints
 import FiniteEtaleKeller.MarkedFiberPoints
+import FiniteEtaleKeller.GaugeFiberPoints
 import FiniteEtaleKeller.Translation
 import FiniteEtaleKeller.TranslationQuotient
 import FiniteEtaleKeller.Admissibility
