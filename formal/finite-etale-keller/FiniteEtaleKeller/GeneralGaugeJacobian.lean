@@ -101,7 +101,7 @@ private theorem quadraticGaugeTail_B
       _ = (x * q) ^ (k - 2) := by congr; omega
   have hnat : 2 + (k - 2) = k := by omega
   have hcast : (2 : K) + ((k - 2 : ℕ) : K) = (k : K) := by
-    exact_mod_cast hnat
+    rw [← Nat.cast_add, hnat]
   have hcoeff :
       (2 : K) * d k + ((k - 2 : ℕ) : K) * d k = (k : K) * d k := by
     rw [← add_mul, hcast]
@@ -111,6 +111,20 @@ private theorem quadraticGaugeTail_B
         MvPolynomial.C ((k : K) * d k) := by
     rw [← MvPolynomial.C_mul, ← MvPolynomial.C_add]
     exact congrArg (fun z : K => (MvPolynomial.C z : GaugePolynomial K)) hcoeff
+  have hpowUC :
+      (x * q) *
+          (MvPolynomial.C (((k - 2 : ℕ) : K) * d k) *
+            (x * q) ^ (k - 3)) =
+        MvPolynomial.C (((k - 2 : ℕ) : K) * d k) *
+          (x * q) ^ (k - 2) := by
+    calc
+      (x * q) *
+          (MvPolynomial.C (((k - 2 : ℕ) : K) * d k) *
+            (x * q) ^ (k - 3)) =
+        MvPolynomial.C (((k - 2 : ℕ) : K) * d k) *
+          ((x * q) * (x * q) ^ (k - 3)) := by ring
+      _ = MvPolynomial.C (((k - 2 : ℕ) : K) * d k) *
+          (x * q) ^ (k - 2) := by rw [hpowU]
   have hPpow :
       (t * q) ^ 2 * (x * q) ^ (k - 2) =
         t ^ 2 * x ^ (k - 2) * q ^ k := by
@@ -134,15 +148,22 @@ private theorem quadraticGaugeTail_B
         (((MvPolynomial.C 2 : GaugePolynomial K) * MvPolynomial.C (d k) +
             MvPolynomial.C (((k - 2 : ℕ) : K) * d k)) *
           (x * q) ^ (k - 2)) := by
-            rw [hpowU]
+            rw [hpowUC]
             ring
     _ = (t * q) ^ 2 *
         (MvPolynomial.C ((k : K) * d k) * (x * q) ^ (k - 2)) := by
           rw [hcoeffPoly]
     _ = MvPolynomial.C ((k : K) * d k) *
         t ^ 2 * x ^ (k - 2) * q ^ k := by
-          rw [hPpow]
-          ring
+          calc
+            (t * q) ^ 2 *
+                (MvPolynomial.C ((k : K) * d k) * (x * q) ^ (k - 2)) =
+              MvPolynomial.C ((k : K) * d k) *
+                ((t * q) ^ 2 * (x * q) ^ (k - 2)) := by ring
+            _ = MvPolynomial.C ((k : K) * d k) *
+                (t ^ 2 * x ^ (k - 2) * q ^ k) := by rw [hPpow]
+            _ = MvPolynomial.C ((k : K) * d k) *
+                t ^ 2 * x ^ (k - 2) * q ^ k := by ring
 
 private theorem quadraticGaugeTail_C
     (d : ℕ → K) (N : ℕ) (u : GaugePolynomial K) :
@@ -206,6 +227,7 @@ private theorem jacobianDet_quadraticGaugeBase
     map_add, map_sub, Derivation.map_one_eq_zero,
     pderiv_mul, pderiv_pow, pderiv_C, pderiv_X_self, pderiv_X_of_ne,
     ne_eq, Fin.reduceEq, not_false_eq_true, map_neg, map_ofNat]
+  simp only [Derivation.map_natCast]
   field_simp [ha]
   ring
 
@@ -227,6 +249,7 @@ private theorem quadraticGauge_crossDet
     map_add, map_sub, Derivation.map_one_eq_zero,
     pderiv_mul, pderiv_pow, pderiv_C, pderiv_X_self, pderiv_X_of_ne,
     ne_eq, Fin.reduceEq, not_false_eq_true, map_neg, map_ofNat]
+  simp only [Derivation.map_natCast]
   field_simp [ha]
   ring
 
@@ -243,7 +266,8 @@ private theorem pderiv_quadraticGaugeTailB
           (MvPolynomial.C 3 * Rp + quadraticGaugeU a * Rpp) *
             pderiv i (quadraticGaugeU a) := by
   simp only [quadraticGaugeTailB, map_add, pderiv_mul, pderiv_pow,
-    pderiv_C, Derivation.map_natCast, zero_mul, zero_add, hR i, hRp i, map_ofNat]
+    pderiv_C, zero_mul, zero_add, hR i, hRp i, map_ofNat]
+  simp only [Derivation.map_natCast]
   ring
 
 private theorem pderiv_quadraticGaugeTailC
