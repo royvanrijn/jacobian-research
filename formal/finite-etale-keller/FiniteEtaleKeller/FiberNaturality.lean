@@ -74,7 +74,8 @@ def map (f : A →ₐ[K] B)
         (f (p.t : A) ^ 2 * f p.z
           + algebraMap K B a * (f p.y) ^ 2 * (1 + 3 * f (p.t : A))) =
       algebraMap K B pi
-    simpa using congrArg f p.pi_eq
+    simpa only [map_mul, map_add, map_pow, map_one, map_ofNat,
+      AlgHom.commutes] using congrArg f p.pi_eq
 
 @[simp]
 theorem map_t (f : A →ₐ[K] B)
@@ -100,7 +101,7 @@ theorem map_z (f : A →ₐ[K] B)
 theorem map_q (f : A →ₐ[K] B)
     (p : GaugeSource A (algebraMap K A pi) (algebraMap K A a)) :
     (p.map f).q = f p.q := by
-  simp [GaugeSource.map, GaugeSource.q]
+  simp [GaugeSource.map, GaugeSource.q, map_ofNat]
 
 @[simp]
 theorem map_S (f : A →ₐ[K] B)
@@ -149,7 +150,8 @@ theorem map_toRoot (f : A →ₐ[K] B)
     (p : GaugeFiberPoint E β pi b a A) :
     (p.map f).toRoot = p.toRoot.map f := by
   apply PolynomialRoot.ext
-  simp [GaugeFiberPoint.toRoot]
+  change (p.source.map f).S = f p.source.S
+  exact GaugeSource.map_S f p.source
 
 end GaugeFiberPoint
 
@@ -160,6 +162,17 @@ theorem rootEquivGaugeFiberPoint_symm_apply
     (hderiv : E.derivative = C (g₁ : K) * markedChartPolynomial pi b β)
     (p : GaugeFiberPoint E β pi b a A) :
     (rootEquivGaugeFiberPoint (A := A) a hE g₁ hderiv).symm p = p.toRoot := rfl
+
+@[simp]
+theorem rootEquivGaugeFiberPoint_toRoot_apply
+    {E β : K[X]} {pi b : K} (a : K)
+    (hE : E.Separable) (g₁ : Kˣ)
+    (hderiv : E.derivative = C (g₁ : K) * markedChartPolynomial pi b β)
+    (s : PolynomialRoot E A) :
+    (rootEquivGaugeFiberPoint (A := A) a hE g₁ hderiv s).toRoot = s := by
+  have h :=
+    (rootEquivGaugeFiberPoint (A := A) a hE g₁ hderiv).symm_apply_apply s
+  simpa using h
 
 /-- The root/source-point equivalence is natural in every commutative test
 `K`-algebra. -/
@@ -172,7 +185,11 @@ theorem rootEquivGaugeFiberPoint_natural
         (rootEquivGaugeFiberPoint (A := A) a hE g₁ hderiv s) =
       rootEquivGaugeFiberPoint (A := B) a hE g₁ hderiv (s.map f) := by
   apply (rootEquivGaugeFiberPoint (A := B) a hE g₁ hderiv).symm.injective
-  simp
+  rw [rootEquivGaugeFiberPoint_symm_apply,
+    GaugeFiberPoint.map_toRoot,
+    rootEquivGaugeFiberPoint_toRoot_apply,
+    rootEquivGaugeFiberPoint_symm_apply,
+    rootEquivGaugeFiberPoint_toRoot_apply]
 
 /-- The naturality theorem in the characteristic-zero squarefree form used by
 the paper. -/
