@@ -88,7 +88,8 @@ private theorem quadraticGaugeTail_B
       ∑ k ∈ Finset.Icc 4 N,
         MvPolynomial.C ((k : K) * d k) * t ^ 2 * x ^ (k - 2) * q ^ k := by
   rw [quadraticGaugeTail, quadraticGaugeTailDeriv]
-  simp only [Finset.mul_sum, mul_add, Finset.sum_add_distrib]
+  simp only [Finset.mul_sum, mul_add]
+  rw [← Finset.sum_add_distrib]
   apply Finset.sum_congr rfl
   intro k hk
   have hk4 : 4 ≤ k := (Finset.mem_Icc.mp hk).1
@@ -193,6 +194,7 @@ private def quadraticGaugeWithTail
     quadraticGaugeBaseC a + quadraticGaugeTailC a Rp]
 
 set_option maxHeartbeats 0 in
+set_option maxRecDepth 100000 in
 private theorem jacobianDet_quadraticGaugeBase
     (a c : K) (ha : a ≠ 0) :
     jacobianDet (quadraticGaugeBaseMap a c) = MvPolynomial.C (-2) := by
@@ -208,6 +210,7 @@ private theorem jacobianDet_quadraticGaugeBase
   ring
 
 set_option maxHeartbeats 0 in
+set_option maxRecDepth 100000 in
 private theorem quadraticGauge_crossDet
     (a c : K) (ha : a ≠ 0) :
     quadraticGaugePi a ^ 2 *
@@ -240,7 +243,7 @@ private theorem pderiv_quadraticGaugeTailB
           (MvPolynomial.C 3 * Rp + quadraticGaugeU a * Rpp) *
             pderiv i (quadraticGaugeU a) := by
   simp only [quadraticGaugeTailB, map_add, pderiv_mul, pderiv_pow,
-    pderiv_C, zero_mul, zero_add, hR i, hRp i, map_ofNat]
+    pderiv_C, Derivation.map_natCast, zero_mul, zero_add, hR i, hRp i, map_ofNat]
   ring
 
 private theorem pderiv_quadraticGaugeTailC
