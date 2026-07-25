@@ -5,6 +5,7 @@ import FiniteEtaleKeller.SourceEquivalence
 import FiniteEtaleKeller.QuotientReconstruction
 import FiniteEtaleKeller.SeparableReconstruction
 import FiniteEtaleKeller.RootPoints
+import FiniteEtaleKeller.MarkedFiberPoints
 import FiniteEtaleKeller.Translation
 import FiniteEtaleKeller.TranslationQuotient
 import FiniteEtaleKeller.Admissibility
