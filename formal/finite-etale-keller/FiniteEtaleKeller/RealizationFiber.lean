@@ -187,6 +187,31 @@ section RepresentedRealization
 
 variable [CharZero K]
 
+/-- The quotient-hom equivalence with its translated source type exposed through
+the realization datum.  Keeping this dependent type explicit makes subsequent
+naturality statements robust under elaboration. -/
+def realizationQuotientHomEquiv
+    (P : K[X]) (a : K) (hP : Squarefree P)
+    (h₁ : P.derivative.eval a ≠ 0)
+    (h₃ : (Polynomial.hasseDeriv 3 P).eval a ≠ 0) :
+    (AdjoinRoot P →ₐ[K] A) ≃
+      (AdjoinRoot (realizationDatum P a hP h₁ h₃).E →ₐ[K] A) := by
+  change (AdjoinRoot P →ₐ[K] A) ≃
+    (AdjoinRoot (translatePolynomial P a) →ₐ[K] A)
+  exact translatedQuotientHomEquiv P a
+
+/-- Translation of the representing quotient commutes with postcomposition. -/
+theorem realizationQuotientHomEquiv_natural
+    (P : K[X]) (a : K) (hP : Squarefree P)
+    (h₁ : P.derivative.eval a ≠ 0)
+    (h₃ : (Polynomial.hasseDeriv 3 P).eval a ≠ 0)
+    (f : A →ₐ[K] B) (φ : AdjoinRoot P →ₐ[K] A) :
+    f.comp (realizationQuotientHomEquiv (A := A) P a hP h₁ h₃ φ) =
+      realizationQuotientHomEquiv (A := B) P a hP h₁ h₃ (f.comp φ) := by
+  apply DFunLike.ext _ _
+  intro x
+  rfl
+
 /-- The translated finite-étale realization theorem in represented
 functor-of-points form.  The source fiber is represented directly by
 `K[T]/(P)`, not merely by the translated quotient. -/
@@ -196,7 +221,7 @@ def translatedFiberRepresentingEquiv
     (h₃ : (Polynomial.hasseDeriv 3 P).eval a ≠ 0) :
     (AdjoinRoot P →ₐ[K] A) ≃
       (realizationDatum P a hP h₁ h₃).Point A :=
-  (translatedQuotientHomEquiv (A := A) P a).trans
+  (realizationQuotientHomEquiv (A := A) P a hP h₁ h₃).trans
     ((realizationDatum P a hP h₁ h₃).representingEquiv A)
 
 /-- The represented realization equivalence is natural under every morphism of
@@ -212,17 +237,11 @@ theorem translatedFiberRepresentingEquiv_natural
   change
     GaugeFiberPoint.map f
         ((realizationDatum P a hP h₁ h₃).representingEquiv A
-          (φ.comp (translationQuotientEquiv P a).toAlgHom)) =
+          (realizationQuotientHomEquiv (A := A) P a hP h₁ h₃ φ)) =
       (realizationDatum P a hP h₁ h₃).representingEquiv B
-        ((f.comp φ).comp (translationQuotientEquiv P a).toAlgHom)
+        (realizationQuotientHomEquiv (A := B) P a hP h₁ h₃ (f.comp φ))
   rw [(realizationDatum P a hP h₁ h₃).representingEquiv_natural]
-  have hcomp :
-      f.comp (φ.comp (translationQuotientEquiv P a).toAlgHom) =
-        (f.comp φ).comp (translationQuotientEquiv P a).toAlgHom := by
-    apply DFunLike.ext _ _
-    intro x
-    rfl
-  rw [hcomp]
+  rw [realizationQuotientHomEquiv_natural]
 
 #print axioms translatedFiberRepresentingEquiv_natural
 
