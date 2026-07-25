@@ -5,6 +5,7 @@ on:
     branches:
       - agent/finite-etale-lean
       - agent/formal-realization-fiber
+      - agent/admissible-translation-and-paper-clarity
   pull_request:
     paths:
       - formal/finite-etale-keller/**
@@ -53,6 +54,7 @@ jobs:
             FiniteEtaleKeller.TranslationQuotient
             FiniteEtaleKeller.Admissibility
             FiniteEtaleKeller.RealizationFiber
+            FiniteEtaleKeller.AutomaticRealization
           test: false
           lint: false
           use-mathlib-cache: true
@@ -87,6 +89,7 @@ jobs:
               FiniteEtaleKeller.TranslationQuotient \
               FiniteEtaleKeller.Admissibility \
               FiniteEtaleKeller.RealizationFiber \
+              FiniteEtaleKeller.AutomaticRealization \
               2>&1 | tee ../../artifacts/verification/finite-etale-lean.log
           fi
       - name: Archive Lean compiler log
