@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - agent/finite-etale-lean
+      - agent/formal-realization-fiber
   workflow_dispatch:
 
 permissions:
@@ -47,6 +48,7 @@ jobs:
             FiniteEtaleKeller.Translation
             FiniteEtaleKeller.TranslationQuotient
             FiniteEtaleKeller.Admissibility
+            FiniteEtaleKeller.RealizationFiber
           test: false
           lint: false
           use-mathlib-cache: true
@@ -80,6 +82,7 @@ jobs:
               FiniteEtaleKeller.Translation \
               FiniteEtaleKeller.TranslationQuotient \
               FiniteEtaleKeller.Admissibility \
+              FiniteEtaleKeller.RealizationFiber \
               2>&1 | tee ../../artifacts/verification/finite-etale-lean.log
           fi
       - name: Report branch build to issue 11
