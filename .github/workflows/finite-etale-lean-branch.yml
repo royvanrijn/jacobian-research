@@ -10,6 +10,7 @@ on:
     paths:
       - formal/finite-etale-keller/**
       - scripts/check_lean_placeholders.py
+      - scripts/check_lean_axiom_log.py
       - .github/workflows/finite-etale-lean-branch.yml
   workflow_dispatch:
 
@@ -71,8 +72,13 @@ jobs:
           mkdir -p artifacts/verification
           set -o pipefail
           cd formal/finite-etale-keller
-          "$HOME/.elan/bin/lake" build \
+          "$HOME/.elan/bin/lake" build FiniteEtaleKeller.VerificationSurface \
             2>&1 | tee ../../artifacts/verification/finite-etale-lean.log
+      - name: Audit public theorem axiom reports
+        id: axiom_audit
+        if: ${{ always() && steps.lean_build.outcome == 'success' }}
+        continue-on-error: true
+        run: python3 scripts/check_lean_axiom_log.py artifacts/verification/finite-etale-lean.log
       - name: Archive Lean compiler log
         if: ${{ always() }}
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
@@ -86,6 +92,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BUILD_RESULT: ${{ steps.lean_build.outcome }}
+          AXIOM_RESULT: ${{ steps.axiom_audit.outcome }}
           RUN_ID: ${{ github.run_id }}
           HEAD_SHA: ${{ github.sha }}
           REPOSITORY: ${{ github.repository }}
@@ -98,6 +105,7 @@ jobs:
 
           repository = os.environ["REPOSITORY"]
           result = os.environ["BUILD_RESULT"]
+          axiom_result = os.environ.get("AXIOM_RESULT", "skipped")
           run_id = os.environ["RUN_ID"]
           head_sha = os.environ["HEAD_SHA"]
           token = os.environ["GH_TOKEN"]
@@ -108,8 +116,9 @@ jobs:
               tail = tail[-15000:]
           body = (
               "<!-- finite-etale-lean-ci -->\n"
-              f"Finite-étale Lean branch CI: **{result}**. "
-              f"Run ID `{run_id}`, head `{head_sha}`.\n\n"
+              f"Finite-étale Lean branch CI: build **{result}**, "
+              f"axiom audit **{axiom_result}**. Run ID `{run_id}`, "
+              f"head `{head_sha}`.\n\n"
               "<details><summary>Compiler tail</summary>\n\n"
               f"```text\n{tail}\n```\n\n</details>"
           )
@@ -127,8 +136,11 @@ jobs:
           with urllib.request.urlopen(request) as response:
               response.read()
           PY
-      - name: Require a clean Lean build
+      - name: Require a clean Lean build and axiom audit
         if: ${{ always() }}
         env:
           BUILD_RESULT: ${{ steps.lean_build.outcome }}
-        run: test "$BUILD_RESULT" = success
+          AXIOM_RESULT: ${{ steps.axiom_audit.outcome }}
+        run: |
+          test "$BUILD_RESULT" = success
+          test "$AXIOM_RESULT" = success
