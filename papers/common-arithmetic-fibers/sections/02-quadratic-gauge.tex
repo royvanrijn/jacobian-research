@@ -193,25 +193,29 @@ Yoneda's lemma gives the asserted scheme isomorphism.  In particular, no
 localization, nilpotent structure, or additional component is hidden by the
 reconstruction.
 
-The generic polynomial \eqref{eq:inverse} has degree $N$.  To see that it is
-separable over $K(\Pi,B,C)$, write
+It remains to compute the geometric degree.  Put
 \[
- E_{\Pi,B,C}(S)=H_{\Pi,B}(S)-\frac{g_1}{2}C.
+ L=K(\Pi,B),\qquad \lambda=\frac{g_1}{2},
 \]
-Its derivative is $H_{\Pi,B}'(S)$ and has degree $N-1$.  The resultant
+and write
 \[
- \operatorname{Res}_S(E_{\Pi,B,C},E_{\Pi,B,C}')
+ E_{\Pi,B,C}(S)=H_{\Pi,B}(S)-\lambda C\in L[C][S].
 \]
-is a polynomial in the transcendental parameter $C$ of degree $N-1$.  Up to
-sign, its leading coefficient is
-\[
- \operatorname{lc}(E_{\Pi,B,C}')^N
- \left(\frac{g_1}{2}\right)^{N-1}.
-\]
-This is nonzero: the derivative has leading coefficient $3g_3\Pi$ when
-$N=3$, and $Ng_N\Pi^N$ when $N\geq4$.  Hence the resultant is nonzero, so the
-generic inverse polynomial is separable.  The same reconstruction works at
-every generic root, and therefore $\gdeg(F_G)=N$.
+This polynomial has degree $N$ in $S$.  Its leading coefficient is
+$g_3\Pi$ when $N=3$ and $g_N\Pi^N$ when $N\geq4$; in either case it is a
+unit of $L[C]$.  Hence $E_{\Pi,B,C}$ is primitive as a polynomial in $S$
+over the UFD $L[C]$.
+
+Suppose that it factored nontrivially over $L(C)[S]$.  Gauss's lemma would
+give a nontrivial factorization in $L[C][S]$.  Since its degree in $C$ is one,
+one factor, say $A(S)$, would be independent of $C$.  Comparing coefficients
+of $C$ would then show that $A(S)$ divides the nonzero scalar $-\lambda$ in
+$L[S]$.  Thus $A$ is a unit, a contradiction.  Therefore
+$E_{\Pi,B,C}$ is irreducible of degree $N$ over $K(\Pi,B,C)$; in
+characteristic zero it is automatically separable.  The generic version of
+the reconstruction identifies the generic source algebra with
+$K(\Pi,B,C)[S]/(E_{\Pi,B,C})$, a field extension of degree $N$.  Hence
+$\gdeg(F_G)=N$.
 \end{proof}
 
 \begin{remark}[Logical separation of the hypotheses]\label{rem:gauge-hypotheses}
