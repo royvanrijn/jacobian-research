@@ -14,8 +14,10 @@ Hom_K-alg(K[T]/(P), A) ≃ distinguished source-fiber points over A.
 ```
 
 Thus the theorem controls the complete represented fiber, not merely its
-geometric or rational points. The reconstruction, naturality, representation by
-the polynomial quotient, and quotient translation are formalized in Lean.
+geometric or rational points. Lean formalizes the abstract source-equation
+functor, its two-sided reconstruction and naturality, representation by the
+polynomial quotient, and quotient translation. The paper identities and exact
+symbolic checker connect that datum to the general displayed polynomial map.
 
 The arithmetic applications include:
 
@@ -43,7 +45,7 @@ The focused audits accompanying the active draft are:
 5. the dated and qualified [literature audit](LITERATURE_AUDIT.md).
 
 The Lean project contains no `sorry` and no project-specific axioms. Its final
-represented-fiber theorem reports only Lean's standard `propext`,
+abstract represented-fiber theorem reports only Lean's standard `propext`,
 `Classical.choice`, and `Quot.sound`. The formal scope and the remaining
 nonformalized parts of the paper are listed in
 [`formal/finite-etale-keller/README.md`](../../formal/finite-etale-keller/README.md).
