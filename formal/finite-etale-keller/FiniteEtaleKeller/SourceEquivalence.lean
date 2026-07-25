@@ -96,6 +96,23 @@ def toSource (p : GaugeChart R pi) (a : R) : GaugeSource R pi a where
           = (↑p.d⁻¹ : R) * (pi * (p.d : R)) := by rw [h.2.1]
       _ = pi := h.2.2.2.2.1
 
+@[simp]
+theorem toSource_t (p : GaugeChart R pi) (a : R) : (p.toSource a).t = p.d⁻¹ := rfl
+
+@[simp]
+theorem toSource_x (p : GaugeChart R pi) (a : R) :
+    (p.toSource a).x = p.S * (↑p.d⁻¹ : R) := rfl
+
+@[simp]
+theorem toSource_y (p : GaugeChart R pi) (a : R) :
+    (p.toSource a).y = p.Q - pi * p.S := rfl
+
+@[simp]
+theorem toSource_z (p : GaugeChart R pi) (a : R) :
+    (p.toSource a).z = (p.d : R) ^ 2 *
+      (pi * (p.d : R)
+        - a * (p.Q - pi * p.S) ^ 2 * (1 + 3 * (↑p.d⁻¹ : R))) := rfl
+
 end GaugeChart
 
 namespace GaugeSource
@@ -116,6 +133,15 @@ def toChart (p : GaugeSource R pi a) : GaugeChart R pi := by
   have hunit' : d * (1 + p.x * p.y) = 1 := by simpa [p.t_eq] using hunit
   linear_combination (1 - p.x ^ 2 * d * p.q) * hunit'
 
+@[simp]
+theorem toChart_S (p : GaugeSource R pi a) : p.toChart.S = p.S := rfl
+
+@[simp]
+theorem toChart_Q (p : GaugeSource R pi a) : p.toChart.Q = p.Q := rfl
+
+@[simp]
+theorem toChart_d (p : GaugeSource R pi a) : p.toChart.d = p.t⁻¹ := rfl
+
 end GaugeSource
 
 /-- Reconstructing and then returning to marked-line coordinates is the
@@ -125,8 +151,9 @@ theorem GaugeChart.toSource_toChart {pi : R} (p : GaugeChart R pi) (a : R) :
   have h := unitReconstruction_identities p.S p.Q pi a p.d p.chart_eq
   dsimp only at h
   apply GaugeChart.ext
-  · exact h.2.2.1
-  · exact h.2.2.2.1
+  · simpa [GaugeSource.S, GaugeChart.toSource, GaugeSource.toChart] using h.2.2.1
+  · simpa [GaugeSource.Q, GaugeSource.q, GaugeChart.toSource, GaugeSource.toChart]
+      using h.2.2.2.1
   · simp [GaugeChart.toSource, GaugeSource.toChart]
 
 /-- Passing to marked-line coordinates and reconstructing recovers every
@@ -136,17 +163,20 @@ theorem GaugeSource.toChart_toSource {pi a : R} (p : GaugeSource R pi a) :
   let d : R := ↑p.t⁻¹
   have htd : (p.t : R) * d = 1 := by simp [d]
   have hdt : d * (p.t : R) = 1 := by simp [d]
+  have hpi : pi = (p.t : R) * p.q := p.t_mul_q.symm
   have hq : pi * d = p.q := by
-    rw [← p.t_mul_q]
     calc
-      (p.t : R) * p.q * d = p.q * ((p.t : R) * d) := by ring
+      pi * d = ((p.t : R) * p.q) * d := congrArg (fun r : R => r * d) hpi
+      _ = p.q * ((p.t : R) * d) := by ring
       _ = p.q := by rw [htd, mul_one]
   have hy : p.Q - pi * p.S = p.y := by
     simp only [GaugeSource.Q, GaugeSource.S]
-    rw [← p.t_mul_q]
+    change p.y + p.x * p.q - pi * (p.x * d) = p.y
     calc
-      p.y + p.x * p.q - (p.t : R) * p.q * (p.x * d)
-          = p.y + p.x * p.q * (1 - (p.t : R) * d) := by ring
+      p.y + p.x * p.q - pi * (p.x * d) =
+          p.y + p.x * p.q - ((p.t : R) * p.q) * (p.x * d) :=
+        congrArg (fun r : R => p.y + p.x * p.q - r * (p.x * d)) hpi
+      _ = p.y + p.x * p.q * (1 - (p.t : R) * d) := by ring
       _ = p.y := by rw [htd]; ring
   have hsq : d ^ 2 * (p.t : R) ^ 2 = 1 := by
     rw [← mul_pow, hdt, one_pow]
@@ -155,12 +185,15 @@ theorem GaugeSource.toChart_toSource {pi a : R} (p : GaugeSource R pi a) :
     simp only [GaugeSource.q]
     ring
   apply GaugeSource.ext
-  · simp [GaugeChart.toSource, GaugeSource.toChart]
-  · change (p.x * d) * (p.t : R) = p.x
-    rw [mul_assoc, hdt, mul_one]
-  · change p.Q - pi * p.S = p.y
+  · rw [GaugeChart.toSource_t, GaugeSource.toChart_d]
+    simp
+  · rw [GaugeChart.toSource_x, GaugeSource.toChart_S, GaugeSource.toChart_d]
+    simp [GaugeSource.S, mul_assoc]
+  · rw [GaugeChart.toSource_y, GaugeSource.toChart_Q, GaugeSource.toChart_S]
     exact hy
-  · change d ^ 2 *
+  · rw [GaugeChart.toSource_z, GaugeSource.toChart_d,
+      GaugeSource.toChart_Q, GaugeSource.toChart_S]
+    change d ^ 2 *
         (pi * d - a * (p.Q - pi * p.S) ^ 2 * (1 + 3 * (p.t : R))) = p.z
     rw [hq, hy, hdiff]
     calc
