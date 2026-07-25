@@ -1,5 +1,6 @@
 import FiniteEtaleKeller.Bezout
 import FiniteEtaleKeller.MarkedLine
+import FiniteEtaleKeller.GaugeAssembly
 import FiniteEtaleKeller.Reconstruction
 import FiniteEtaleKeller.SourceEquivalence
 import FiniteEtaleKeller.QuotientReconstruction
