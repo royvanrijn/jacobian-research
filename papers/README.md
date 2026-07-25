@@ -12,15 +12,16 @@ corrections that are deliberately carried into a new deposited version.
 
 ## Active
 
-- `common-arithmetic-fibers` — *Every Finite Étale Algebra Except Rank Two Is a Keller Fiber*
+- `common-arithmetic-fibers` — *Every Nonzero Finite Étale Algebra Except Rank Two Is a Keller Fiber*
 
 This manuscript remains under active development. The directory name is a
-stable path retained from its earlier draft. Its scheme-reconstruction core,
-existence of an admissible translation, quotient transport, and naturality are
-formalized in `formal/finite-etale-keller`. The manuscript and its README state
-the exact boundary between that Lean certificate, the coefficientwise
-all-degree displayed-map proof, its exact regression checks, and the classical
-rank-two input.
+stable path retained from its earlier draft. The complete constructive
+polynomial-presentation layer is formalized in `formal/finite-etale-keller`:
+automatic translation choice, the actual arbitrary-degree map, its Jacobian
+and effective degree bound, the literal scheme fiber, quotient transport, and
+naturality. The manuscript and its verification matrix state the remaining
+boundary precisely: generic function-field degree, monogenicity, the classical
+rank-two input, and the number-theoretic applications.
 
 ## Parked
 

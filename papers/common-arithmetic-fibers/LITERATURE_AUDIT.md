@@ -7,7 +7,8 @@
 The manuscript proves that every finite étale algebra over a
 characteristic-zero field, except one of rank two, occurs as a full fiber of a
 polynomial Keller map. In rank at least three the realization is explicit in
-`A^3` and has determinant `-2`.
+`A^3` and has determinant `1` after a fixed target-preserving linear output
+normalization.
 
 The priority language in the manuscript is deliberately qualified:
 
@@ -60,10 +61,11 @@ The relevant historical sources are:
 The manuscript does not rely on an unverified field-general formulation of
 one of these sources. Instead it derives the arbitrary characteristic-zero
 field statement from Campbell's complex theorem: descend the coefficients to
-a finitely generated subfield, embed it into `C`, use stability of generic
-degree under scalar extension, and then descend the unique formal/polynomial
-inverse. This supplies exactly the ground-field generality required for the
-rank-two exclusion.
+a finitely generated subfield, embed it into `C`, and use stability of generic
+degree under scalar extension. The resulting coordinate-ring map becomes an
+isomorphism over `C`, hence was already an isomorphism by faithful flatness.
+This supplies exactly the ground-field generality required for the rank-two
+exclusion.
 
 ## Closest located sources to the realization theorem
 

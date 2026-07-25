@@ -33,6 +33,8 @@ The construction can be summarized in one line:
  \ \longmapsto\
  \widetilde F_G^{-1}(y_{P,a})\simeq\Spec K[T]/(P).}
 \]
+The assertion is scheme-theoretic and functorial: it identifies the complete
+represented fiber, rather than only its geometric or rational points.
 
 \begin{lemma}[The degree-two exclusion over $K$]\label{lem:degree-two}
 Let $K$ be any field of characteristic zero.  A Keller map
@@ -56,17 +58,20 @@ degree two, and so does every further scalar extension.
 
 Choose an embedding $K_0\hookrightarrow\mathbb C$.  The complexified
 function-field extension is therefore quadratic and Galois, so Campbell's
-theorem makes $F_{\mathbb C}$ a polynomial automorphism.
-
-The formal inverse of $F$ at the point $F(0)$ is unique.  Its coefficients
-are obtained recursively from the coefficients of $F$ and the inverse of its
-linear Jacobian, and hence lie in $K_0$.  The polynomial inverse over
-$\mathbb C$ agrees with this formal inverse, so all of its coefficients lie
-in $K_0$.  It therefore descends to $K$, proving the assertion without any
-algebraic-closedness assumption.
+theorem makes $F_{\mathbb C}$ a polynomial automorphism.  Equivalently, the
+coordinate-ring homomorphism
+\[
+ \varphi:K_0[Y_1,\ldots,Y_m]\longrightarrow K_0[X_1,\ldots,X_m],
+ \qquad Y_i\longmapsto F_i,
+\]
+becomes an isomorphism after tensoring with $\mathbb C$.  The extension
+$K_0\to\mathbb C$ is faithfully flat, so $\ker\varphi$ and
+$\operatorname{coker}\varphi$ already vanish over $K_0$.  Hence $\varphi$ is
+an isomorphism, and base change gives a polynomial inverse over $K$.
 \end{proof}
 
-\begin{theorem}[Finite-\'etale realization and classification]\label{thm:main}
+\begin{theorem}[Exact finite-\'etale realization and classification]
+\label{thm:main}
 A nonzero finite \'etale algebra over a characteristic-zero field is a Keller
 fiber if and only if its rank is not two.  Equivalently, the possible ranks are
 exactly
@@ -101,8 +106,14 @@ its full fiber is
  \boxed{\widetilde F_G^{-1}(y_{P,a})
  \simeq\Spec K[T]/(P).}
 \]
-Consequently every finite \'etale $K$-algebra of rank at least three is a
-Keller fiber in affine three-space.
+More explicitly, for every commutative $K$-algebra $R$ there is a bijection
+\[
+ \operatorname{Hom}_{K\text{-alg}}(K[T]/(P),R)
+ \simeq
+ \{u\in R^3:\widetilde F_G(u)=y_{P,a}\},
+\]
+natural in $R$.  Consequently every finite \'etale $K$-algebra of rank at
+least three is a Keller fiber in affine three-space.
 \end{theorem}
 
 \begin{proof}
@@ -123,13 +134,13 @@ The translation isomorphism is completely explicit:
  \qquad \overline S\longmapsto\overline T-a,
 \]
 with inverse $\overline T\mapsto\overline S+a$.  Equivalently, for every
-commutative $K$-algebra $A$, composition with this isomorphism and the natural
+commutative $K$-algebra $R$, composition with this isomorphism and the natural
 equivalence of Proposition~\ref{prop:gauge} gives
 \[
- \operatorname{Hom}_{K\text{-alg}}(K[T]/(P),A)
- \simeq \widetilde F_G^{-1}(y_{P,a})(A),
+ \operatorname{Hom}_{K\text{-alg}}(K[T]/(P),R)
+ \simeq \widetilde F_G^{-1}(y_{P,a})(R),
 \]
-naturally in $A$.  Thus the displayed isomorphism includes the complete
+naturally in $R$.  Thus the displayed isomorphism includes the complete
 scheme structure and is compatible with every base change.
 
 The linear automorphism $L$ fixes the chosen target because its second

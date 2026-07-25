@@ -1,8 +1,8 @@
 # Lean formalization: finite étale Keller fibers
 
-This project formalizes the scheme-theoretic core of *Every Finite Étale
-Algebra Except Rank Two Is a Keller Fiber*. It uses Lean `v4.33.0-rc1` and
-Mathlib at the matching release candidate.
+This project formalizes the polynomial-presentation construction in *Every
+Nonzero Finite Étale Algebra Except Rank Two Is a Keller Fiber*. It uses Lean
+`v4.33.0-rc1` and Mathlib at the matching release candidate.
 
 ## Proof status
 
@@ -11,102 +11,131 @@ Mathlib at the matching release candidate.
 | 1 | Explicit quintic map, output scaling, and Bézout inverse | implemented |
 | 2 | Universal marked-line identities and Jacobian cancellation core | implemented |
 | 3 | Two-sided source/chart reconstruction over arbitrary commutative rings | implemented |
-| 4 | Roots versus full source-fiber points, including naturality | implemented |
+| 4 | Roots versus full abstract source-fiber points, including naturality | implemented |
 | 5 | Representation by `K[S]/(E)` and transport to `K[T]/(P)` | implemented |
 | 6 | Existence and automatic choice of an admissible translation | implemented |
-| 7 | Polynomial-level represented-fiber theorem with no supplied parameter | implemented |
-| 8 | Complete finite-sum all-degree gauge assembly identities | implemented |
-| 9 | One `MvPolynomial` object for the full map, its Jacobian, and degree bound | paper and exact checker; not yet Lean |
-| 10 | Monogenicity and the complete rank classification | paper proof; not yet Lean |
-| 11 | Historical degree-two Galois exclusion | external theorem; not yet Lean |
+| 7 | Complete finite-sum all-degree gauge assembly identities | implemented |
+| 8 | One arbitrary-degree `MvPolynomial (Fin 3) K` map and exact evaluations | implemented |
+| 9 | Generic inverse polynomial, explicit `β`, and derivative factorization | implemented |
+| 10 | Actual displayed equations versus represented source equations | implemented |
+| 11 | Literal raw map fiber and naturality over arbitrary test algebras | implemented |
+| 12 | Determinant-one normalization of the literal fiber | implemented |
+| 13 | General arbitrary-degree Jacobian `-2`, normalized Jacobian `1` | implemented |
+| 14 | General and final `6N+2` coordinate-degree bounds | implemented |
+| 15 | Final automatic actual-map realization from squarefree `P` | implemented |
+| 16 | Generic inverse irreducibility and geometric degree | paper proof; not yet Lean |
+| 17 | Monogenicity and the passage from arbitrary finite étale algebras | paper proof; not yet Lean |
+| 18 | Historical degree-two Galois exclusion | external theorem; not yet Lean |
 
-## Central formal theorem
+## Final polynomial-presentation theorem
 
-For a field `K`, a separable polynomial `E`, a unit `g₁`, and the derivative
-factorization required by the quadratic gauge, the project constructs, for every
-commutative test `K`-algebra `A`, an equivalence
-
-```text
-(AdjoinRoot E →ₐ[K] A) ≃ GaugeFiberPoint E β pi b a A
-```
-
-and proves that it commutes with every algebra homomorphism `A →ₐ[K] B`. Thus
-the source-fiber functor is naturally represented by `K[S]/(E)`; this is not
-only a bijection on field-valued points.
-
-`RealizationFiber.lean` instantiates this datum for a supplied admissible
-translation parameter:
+Let `K` be a characteristic-zero field, let `P : K[X]` be squarefree, and
+assume `3 ≤ P.natDegree`. Lean now chooses an admissible translation parameter
+internally and defines
 
 ```text
-E(S) = P(a + S),
+automaticRealizationMap P hdeg : Fin 3 → MvPolynomial (Fin 3) K
 ```
 
-and composes the represented-fiber equivalence with the canonical translation
-of quotients
+together with its distinguished target. The formal development proves:
 
 ```text
-K[S]/(P(a+S)) ≃ K[T]/(P(T)).
+jacobianDet (automaticRealizationMap P hdeg) = 1
 ```
 
-`Admissibility.lean` then proves that every polynomial of degree at least three
-over a characteristic-zero field has a parameter where both its first and
-third Hasse derivatives evaluate nontrivially. `AutomaticRealization.lean`
-chooses such a parameter internally. Its final theorem is
+and, for every coordinate `i`,
 
 ```text
-automaticFiberRepresentingEquiv_natural
+(automaticRealizationMap P hdeg i).totalDegree ≤ 6 * P.natDegree + 2.
 ```
 
-and requires only a squarefree polynomial `P` and `3 ≤ P.natDegree`. It gives,
-naturally in every commutative test algebra `A`, a represented-fiber equivalence
-from `AdjoinRoot P`; no translation parameter or nonvanishing witness remains
-as an external hypothesis.
+For every commutative test `K`-algebra `A`, it constructs an equivalence
 
-`GaugeAssembly.lean` formalizes the coefficientwise algebra used to turn the
-marked coordinates into the displayed all-degree polynomial map. It proves the
-high-degree monomial transport identities, the low-degree second-coordinate
-combination, and the complete cubic cancellation in the third coordinate over
-an arbitrary commutative ring. It then sums those identities over every index
-`4 ≤ k ≤ N` with an arbitrary coefficient family. Thus the complete finite
-coefficient sums in both displayed coordinates are machine-checked uniformly
-in `N`, rather than inferred from representative degrees.
+```text
+(AdjoinRoot P →ₐ[K] A) ≃
+  GeneralGaugeJacobianOneFiberPoint ... A
+```
+
+where the right side is the literal fiber of the three actual
+`MvPolynomial` coordinates at the chosen target. The equivalence commutes with
+every algebra homomorphism `A →ₐ[K] B`.
+
+The principal final declarations are:
+
+```text
+automaticRealizationMap_certificate
+automaticJacobianOneFiberRepresentingEquiv
+automaticJacobianOneFiberRepresentingEquiv_natural
+```
+
+No translation parameter, coefficient nonvanishing proof, chart unit, or
+auxiliary abstract-fiber hypothesis remains as an external input.
+
+## Formal chain
+
+`GaugeAssembly.lean` and `GaugeInverseAssembly.lean` prove the low-degree and
+complete finite high-degree coefficient identities over arbitrary commutative
+rings. `GeneralGaugeMap.lean` packages them as one actual arbitrary-degree
+three-variable polynomial map.
+
+`GeneralGaugeJacobian.lean` expands the complete three-by-three Jacobian,
+including all finite coefficient sums, and proves the determinant is exactly
+`-2`. The fixed output scaling then has determinant `1`.
+
+`GeneralGaugeInverse.lean` defines `G_π`, `β(π,S)`, and `E_{π,b,c}` and proves
+the exact derivative factorization required by the represented-fiber theorem.
+`GeneralGaugeDisplayedFiber.lean` proves that evaluating the actual `B` and
+`C` coordinates gives precisely the marked equations.
+
+`GeneralGaugeRawFiber.lean` starts from a literal triple satisfying the three
+polynomial equations. From `t*q = π` with unit `π`, it constructs the source
+chart unit over an arbitrary commutative test ring and proves that the literal
+fiber is naturally represented by the generic inverse quotient.
+`GeneralGaugeNormalization.lean` transports this theorem to the determinant-one
+output normalization at the zero second target coordinate.
+
+`GeneralGaugeRealization.lean` specializes to
+`G(S) = P(a+S)-P(a)`, proves that the chosen inverse polynomial is exactly
+`P(a+S)`, translates the quotient back to `K[T]/(P)`, and then removes the
+supplied parameter through `chosenAdmissibleTranslation`.
+`GeneralGaugeRealizationDegree.lean` transports both the Jacobian and degree
+certificates to the final automatically chosen map in terms of the original
+input degree.
+
+## Foundations and axioms
 
 The project contains no `sorry` and introduces no project-specific axioms.
-`#print axioms` for the final represented-fiber theorem reports only the
-standard Lean foundations `propext`, `Classical.choice`, and `Quot.sound`; the
-gauge-assembly certificate is proved by ring algebra, finite-sum congruence, and
-unit identities.
-
-## What the formalization clarifies
+The final functor-of-points theorem uses only Lean's standard foundations
+`propext`, `Classical.choice`, and `Quot.sound`. The determinant and degree
+certificates are algebraic theorems with no additional axioms.
 
 The reconstruction works over arbitrary commutative test algebras. Units are
-carried explicitly, so there is no hidden localization and no omitted component.
-Separability makes the derivative class invertible by Bézout; the unit first
-target coordinate makes the source chart global on the fiber.
+carried explicitly, so there is no hidden localization, omitted component, or
+reduction to field-valued points. Separability makes the derivative class
+invertible by Bézout; the unit first target coordinate makes the chart global
+on the entire fiber functor.
 
-The abstract represented-fiber argument needs a fixed source coefficient and a
-derivative factorization. Nonvanishing of the cubic Taylor coefficient is used
-to connect that abstract coefficient to the displayed polynomial gauge
-`g₁/g₃`; it is not an additional scheme-reconstruction step. The characteristic-
-free cubic coefficient is the third Hasse derivative, equal to `P'''(a)/3!` in
-characteristic zero.
+## Remaining formal boundary
 
-The admissible-parameter proof is also logically independent of squarefreeness:
-degree at least three makes `P'` and the third Hasse derivative nonzero
-polynomials, and a nonzero product cannot vanish at every point of an infinite
-field. Squarefreeness enters later, where it supplies separability of the
-translated inverse polynomial.
+The actual map, determinant, effective degree, literal fiber, quotient
+translation, and naturality are formalized. The remaining steps required for
+a single Lean theorem matching the complete paper statement are:
 
-## Scope boundary
+1. prove the primitive linear-in-the-target-coordinate irreducibility theorem
+   for the generic inverse and connect it to the function-field definition of
+   geometric degree;
+2. formalize monogenicity of arbitrary finite étale algebras over an infinite
+   field and compose it with the polynomial-presentation theorem;
+3. formalize, or explicitly isolate as a classical theorem interface, the
+   Campbell--Razar--Wright degree-two Galois case;
+4. formalize the local-number-theoretic and prime-distribution inputs in the
+   Hasse-principle applications if those corollaries are to be machine-checked
+   end to end.
 
-The Lean certificate now covers admissible-parameter existence, difficult
-scheme structure, reconstruction, naturality, representability, quotient
-translation, and the complete finite sums assembling the second and third
-displayed coordinates. Those sums have not yet been instantiated as one general
-`MvPolynomial (Fin 3) K` map with a single theorem for its Jacobian and `6N+2`
-coordinate-degree bound. Monogenicity and the Campbell--Razar--Wright rank-two
-exclusion also remain outside the Lean certificate. The explicit optimal
-quintic map and its determinant-one normalization are formalized separately.
+The current certificate therefore proves the complete constructive and
+scheme-theoretic polynomial-presentation layer, while keeping geometric degree,
+monogenicity, the classical rank-two obstruction, and arithmetic inputs
+explicitly separated.
 
 ## Build
 

@@ -1,6 +1,17 @@
 import FiniteEtaleKeller.Bezout
 import FiniteEtaleKeller.MarkedLine
 import FiniteEtaleKeller.GaugeAssembly
+import FiniteEtaleKeller.GaugeInverseAssembly
+import FiniteEtaleKeller.GeneralGaugeMap
+import FiniteEtaleKeller.GeneralGaugeDegree
+import FiniteEtaleKeller.GeneralGaugeJacobian
+import FiniteEtaleKeller.GeneralGaugeInverse
+import FiniteEtaleKeller.GeneralGaugeDisplayedFiber
+import FiniteEtaleKeller.GeneralGaugeRawFiber
+import FiniteEtaleKeller.GeneralGaugeNormalization
+import FiniteEtaleKeller.GeneralGaugeRealization
+import FiniteEtaleKeller.GeneralGaugeRealizationDegree
+import FiniteEtaleKeller.GeneralGaugeFiberRank
 import FiniteEtaleKeller.Reconstruction
 import FiniteEtaleKeller.SourceEquivalence
 import FiniteEtaleKeller.QuotientReconstruction
