@@ -3,6 +3,7 @@ import FiniteEtaleKeller.MarkedLine
 import FiniteEtaleKeller.GaugeAssembly
 import FiniteEtaleKeller.GeneralGaugeMap
 import FiniteEtaleKeller.GeneralGaugeDegree
+import FiniteEtaleKeller.GeneralGaugeInverse
 import FiniteEtaleKeller.Reconstruction
 import FiniteEtaleKeller.SourceEquivalence
 import FiniteEtaleKeller.QuotientReconstruction
