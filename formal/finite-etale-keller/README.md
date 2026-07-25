@@ -16,9 +16,11 @@ Mathlib at the matching release candidate.
 | 6 | Existence and automatic choice of an admissible translation | implemented |
 | 7 | Polynomial-level represented-fiber theorem with no supplied parameter | implemented |
 | 8 | Complete finite-sum all-degree gauge assembly identities | implemented |
-| 9 | One `MvPolynomial` object for the full map, its Jacobian, and degree bound | paper and exact checker; not yet Lean |
-| 10 | Monogenicity and the complete rank classification | paper proof; not yet Lean |
-| 11 | Historical degree-two Galois exclusion | external theorem; not yet Lean |
+| 9 | One all-degree `MvPolynomial (Fin 3) K` map and coordinate evaluation | implemented on the active verification branch |
+| 10 | General-map Jacobian and `6N+2` coordinate-degree bound | in progress |
+| 11 | Generic-degree/resultant theorem | paper proof; not yet Lean |
+| 12 | Monogenicity and the complete rank classification | paper proof; not yet Lean |
+| 13 | Historical degree-two Galois exclusion | external theorem; not yet Lean |
 
 ## Central formal theorem
 
@@ -71,11 +73,19 @@ an arbitrary commutative ring. It then sums those identities over every index
 coefficient sums in both displayed coordinates are machine-checked uniformly
 in `N`, rather than inferred from representative degrees.
 
+`GeneralGaugeMap.lean` packages those sums as a single
+`MvPolynomial (Fin 3) K` map for an arbitrary seed polynomial and proves exact
+evaluation formulas for all three coordinates after extension to every
+commutative test `K`-algebra. This removes the previous object-level gap between
+the paper's displayed map and the uniform finite-sum certificate. The next
+formal step is to prove the map-level Jacobian and `totalDegree` bounds and then
+connect the evaluated map directly to the represented-fiber type.
+
 The project contains no `sorry` and introduces no project-specific axioms.
 `#print axioms` for the final represented-fiber theorem reports only the
 standard Lean foundations `propext`, `Classical.choice`, and `Quot.sound`; the
-gauge-assembly certificate is proved by ring algebra, finite-sum congruence, and
-unit identities.
+gauge-assembly and general-map certificates are proved by ring algebra,
+finite-sum congruence, unit identities, and the `MvPolynomial` evaluation API.
 
 ## What the formalization clarifies
 
@@ -99,12 +109,15 @@ translated inverse polynomial.
 
 ## Scope boundary
 
-The Lean certificate now covers admissible-parameter existence, difficult
-scheme structure, reconstruction, naturality, representability, quotient
-translation, and the complete finite sums assembling the second and third
-displayed coordinates. Those sums have not yet been instantiated as one general
-`MvPolynomial (Fin 3) K` map with a single theorem for its Jacobian and `6N+2`
-coordinate-degree bound. Monogenicity and the Campbell--Razar--Wright rank-two
+The Lean certificate covers admissible-parameter existence, difficult scheme
+structure, reconstruction, naturality, representability, quotient translation,
+the complete finite sums assembling the displayed coordinates, and the actual
+all-degree multivariate polynomial object with its coordinate evaluations.
+
+The remaining map-level work is a single general theorem for the Jacobian,
+the `6N+2` coordinate-degree bound, and the direct equivalence between the raw
+`MvPolynomial` fiber and the existing represented-fiber datum. The generic
+resultant argument, monogenicity, and the Campbell--Razar--Wright rank-two
 exclusion also remain outside the Lean certificate. The explicit optimal
 quintic map and its determinant-one normalization are formalized separately.
 
