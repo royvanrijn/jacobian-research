@@ -193,12 +193,25 @@ Yoneda's lemma gives the asserted scheme isomorphism.  In particular, no
 localization, nilpotent structure, or additional component is hidden by the
 reconstruction.
 
-The generic polynomial \eqref{eq:inverse} has degree $N$.  It is separable
-over $K(\Pi,B,C)$: its derivative is independent of the transcendental
-parameter $C$, whereas the polynomial itself is affine-linear in $C$ with
-nonzero coefficient.  Thus it cannot share a nonconstant factor with its
-derivative.  The same reconstruction works at every generic root, and hence
-$\gdeg(F_G)=N$.
+The generic polynomial \eqref{eq:inverse} has degree $N$.  To see that it is
+separable over $K(\Pi,B,C)$, write
+\[
+ E_{\Pi,B,C}(S)=H_{\Pi,B}(S)-\frac{g_1}{2}C.
+\]
+Its derivative is $H_{\Pi,B}'(S)$ and has degree $N-1$.  The resultant
+\[
+ \operatorname{Res}_S(E_{\Pi,B,C},E_{\Pi,B,C}')
+\]
+is a polynomial in the transcendental parameter $C$ of degree $N-1$.  Up to
+sign, its leading coefficient is
+\[
+ \operatorname{lc}(E_{\Pi,B,C}')^N
+ \left(\frac{g_1}{2}\right)^{N-1},
+\]
+which is nonzero because
+$\operatorname{lc}(E_{\Pi,B,C}')=Ng_N\Pi^N$.  Hence the resultant is nonzero,
+so the generic inverse polynomial is separable.  The same reconstruction works
+at every generic root, and therefore $\gdeg(F_G)=N$.
 \end{proof}
 
 \begin{remark}[Logical separation of the hypotheses]\label{rem:gauge-hypotheses}
