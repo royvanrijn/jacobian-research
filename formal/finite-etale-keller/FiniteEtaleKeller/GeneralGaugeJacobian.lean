@@ -56,18 +56,24 @@ private theorem jacobianDet_quadraticGaugeWithTail
     (hRp : ∀ i, pderiv i Rp = Rpp * pderiv i (quadraticGaugeU a)) :
     jacobianDet (quadraticGaugeWithTail a c R Rp) = MvPolynomial.C (-2) := by
   classical
+  have hR0 := hR (0 : Fin 3)
+  have hR1 := hR (1 : Fin 3)
+  have hR2 := hR (2 : Fin 3)
+  have hRp0 := hRp (0 : Fin 3)
+  have hRp1 := hRp (1 : Fin 3)
+  have hRp2 := hRp (2 : Fin 3)
+  simp only [quadraticGaugeU, quadraticGaugeQ, generalGaugeT,
+    map_add, Derivation.map_one_eq_zero, pderiv_mul, pderiv_pow,
+    pderiv_C, pderiv_X_self, pderiv_X_of_ne, ne_eq, Fin.reduceEq,
+    not_false_eq_true, map_ofNat] at hR0 hR1 hR2 hRp0 hRp1 hRp2
   simp only [jacobianDet, jacobianMatrix, det_fin_three, of_apply,
     quadraticGaugeWithTail, quadraticGaugePi, quadraticGaugeU, quadraticGaugeQ,
     generalGaugeT,
     cons_val_zero, cons_val_one, cons_val_two, head_cons, tail_cons,
     map_add, map_sub, Derivation.map_one_eq_zero,
     pderiv_mul, pderiv_pow, pderiv_C, pderiv_X_self, pderiv_X_of_ne,
-    ne_eq, Fin.reduceEq, not_false_eq_true]
-  rw [hR 0, hR 1, hR 2, hRp 0, hRp 1, hRp 2]
-  simp only [quadraticGaugeU, quadraticGaugeQ, generalGaugeT,
-    map_add, Derivation.map_one_eq_zero, pderiv_mul, pderiv_pow,
-    pderiv_C, pderiv_X_self, pderiv_X_of_ne, ne_eq, Fin.reduceEq,
-    not_false_eq_true, map_neg, map_ofNat]
+    ne_eq, Fin.reduceEq, not_false_eq_true, map_neg, map_ofNat]
+  rw [hR0, hR1, hR2, hRp0, hRp1, hRp2]
   field_simp [ha]
   ring
 
