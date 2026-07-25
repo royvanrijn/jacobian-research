@@ -103,6 +103,26 @@ jobs:
           if-no-files-found: error
           retention-days: 14
 
+  formal-finite-etale:
+    name: formal-finite-etale
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    steps:
+      - name: Check out this repository
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+      - name: Build the finite-etale Keller certificate
+        uses: leanprover/lean-action@38fbc41a8c28c4cbaec22d7f7de508ec2e7c0dd9 # v1
+        with:
+          lake-package-directory: formal/finite-etale-keller
+          auto-config: false
+          build: true
+          test: false
+          lint: false
+          use-mathlib-cache: true
+
   papers:
     name: papers
     runs-on: ubuntu-latest
@@ -176,7 +196,7 @@ jobs:
   verification-complete:
     name: verification-complete
     if: ${{ always() }}
-    needs: [verify, formal-lean, papers, macaulay2]
+    needs: [verify, formal-lean, formal-finite-etale, papers, macaulay2]
     runs-on: ubuntu-latest
     timeout-minutes: 5
 
@@ -185,10 +205,12 @@ jobs:
         env:
           PYTHON_RESULT: ${{ needs.verify.result }}
           LEAN_RESULT: ${{ needs.formal-lean.result }}
+          FINITE_ETALE_LEAN_RESULT: ${{ needs.formal-finite-etale.result }}
           PAPERS_RESULT: ${{ needs.papers.result }}
           MACAULAY2_RESULT: ${{ needs.macaulay2.result }}
         run: |
           test "$PYTHON_RESULT" = success
           test "$LEAN_RESULT" = success
+          test "$FINITE_ETALE_LEAN_RESULT" = success
           test "$PAPERS_RESULT" = success
           test "$MACAULAY2_RESULT" = success

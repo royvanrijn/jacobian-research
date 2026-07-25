@@ -28,10 +28,11 @@ This directory contains the stable proof chain:
   `N` nearby real sheets for every `N>=3`.
 - [Finite étale Keller fibers](FINITE_ETALE_KELLER_FIBERS.md): every finite
   étale algebra over a characteristic-zero field occurs as a full Keller fiber
-  unless its rank is two; ranks `N>=3` are realized explicitly in `A^3` with
-  determinant `-2`. The note includes the exact Bass--Connell--Wright
-  degree-two exclusion, quotient-ring reconstruction, optimal quintic Hasse
-  fiber, and the updated arithmetic transfer chain.
+  unless its rank is two. Ranks `N>=3` are realized explicitly in `A^3` by
+  Jacobian-one maps of coordinate degree at most `6N+2`, compatibly with scalar
+  extension. The note includes the degree-two descent, scheme-theoretic
+  quotient reconstruction, optimal quintic Hasse fiber, updated arithmetic
+  chain, and staged Lean certificate.
 - [Exact real-sheet spectrum](REAL_FIBER_SPECTRUM.md): every count
   `N,N-2,...,N mod 2` occurs on a nonempty complete regular real target
   chamber, with rational witnesses and an explicit fold-adjacency chain.
