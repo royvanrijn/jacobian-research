@@ -69,7 +69,6 @@ private theorem generalGauge_tail_derivative
     ring
   rw [Polynomial.derivative_C_mul_X_pow, ← hpow, hcoeff]
   simp only [C_mul]
-  ring
 
 private theorem generalGauge_low_derivative
     (G : K[X]) (pi : K) (h₁ : G.coeff 1 ≠ 0) :
@@ -83,8 +82,30 @@ private theorem generalGauge_low_derivative
   simp only [Polynomial.derivative_add, Polynomial.derivative_C_mul,
     Polynomial.derivative_X, Polynomial.derivative_X_pow,
     Polynomial.derivative_C, zero_mul, add_zero, mul_one]
-  field_simp [h₁]
-  ring_nf
+  have h₂scalar :
+      pi * G.coeff 2 * 2 =
+        G.coeff 1 * (2 * (G.coeff 2 / G.coeff 1) * pi) := by
+    field_simp [h₁]
+    ring
+  have h₂ :
+      C pi * C (G.coeff 2) * C (2 : K) =
+        C (G.coeff 1) * C (2 * (G.coeff 2 / G.coeff 1) * pi) := by
+    simpa only [← C_mul] using
+      congrArg (fun u : K => (C u : K[X])) h₂scalar
+  have h₃scalar :
+      pi * G.coeff 3 * 3 =
+        G.coeff 1 * ((3 * (G.coeff 3 / G.coeff 1) - 1) * pi) +
+          G.coeff 1 * pi := by
+    field_simp [h₁]
+    ring
+  have h₃ :
+      C pi * C (G.coeff 3) * C (3 : K) =
+        C (G.coeff 1) *
+            C ((3 * (G.coeff 3 / G.coeff 1) - 1) * pi) +
+          C (G.coeff 1) * C pi := by
+    simpa only [← C_mul, ← C_add] using
+      congrArg (fun u : K => (C u : K[X])) h₃scalar
+  linear_combination h₂ * X + h₃ * X ^ 2
 
 /-- The explicit `β` has exactly the normalized-derivative relation stated in
 the paper. -/
@@ -110,8 +131,16 @@ theorem generalGaugeInversePolynomial_derivative [CharZero K]
   simp only [Polynomial.derivative_C_mul, Polynomial.derivative_add,
     Polynomial.derivative_C, Polynomial.derivative_X_pow, zero_mul, add_zero]
   rw [markedChartPolynomial]
-  field_simp [h₁]
-  ring_nf
+  have h₂scalar :
+      (G.coeff 1 / 2) * b * 2 = G.coeff 1 * b := by
+    field_simp
+    ring
+  have h₂ :
+      C (G.coeff 1 / 2) * C b * C (2 : K) =
+        C (G.coeff 1) * C b := by
+    simpa only [← C_mul] using
+      congrArg (fun u : K => (C u : K[X])) h₂scalar
+  linear_combination h₂ * X
 
 section RepresentedFiber
 
