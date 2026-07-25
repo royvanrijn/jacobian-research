@@ -101,19 +101,25 @@ from $K[T]/(P)$; the translation parameter and its two nonvanishing witnesses
 are chosen internally.  Its axiom report contains only Lean's standard
 \texttt{propext}, \texttt{Classical.choice}, and \texttt{Quot.sound}.
 
-This formal certificate deliberately has a precise boundary.  The polynomial
-identities proved in Proposition~\ref{prop:gauge} identify the abstract datum
-with the displayed map's fiber functor $\mathcal F_{\pi,b,c}$, but the complete
-all-degree map has not yet been assembled as one multivariate Lean object.
-Consequently the universal determinant calculation and the $6N+2$ coordinate-
-degree bound remain coefficientwise paper proofs, backed by exact regression
-checks.  Monogenicity of finite \'etale algebras and the historical
+The coefficientwise map assembly is now formalized as well.  Over an arbitrary
+commutative ring, \texttt{GaugeAssembly.lean} proves the high-degree monomial
+transport identities, the low-degree second-coordinate combination, and the
+cubic cancellation that produces the third displayed coordinate.  Together
+with the marked-line differential identity, this machine-checks the uniform
+algebraic cancellations used in Subsection~\ref{subsec:gauge-identities}.
+
+This formal certificate deliberately has a precise boundary.  The complete
+all-degree map has not yet been packaged as one finite-sum multivariate Lean
+object, so the final chain-rule statement for that object and the $6N+2$
+coordinate-degree bound remain coefficientwise paper proofs, backed by exact
+regression checks.  Monogenicity of finite \'etale algebras and the historical
 Campbell--Razar--Wright degree-two theorem also remain mathematical inputs
 rather than parts of the Lean certificate.  The explicit optimal quintic map,
 its determinant, and its determinant-one output normalization are formalized
-separately.  Thus the formalization certifies the new reconstruction and
-automatic-translation arguments without mislabelling the classical or
-coefficientwise inputs as machine-checked.
+separately.  Thus the formalization now certifies the automatic translation,
+complete represented fiber, naturality, and the generic coefficientwise gauge
+assembly without mislabelling the remaining classical or finite-sum inputs as
+machine-checked.
 
 \paragraph{Provenance.}
 The recent three-dimensional counterexample was publicly attributed to
