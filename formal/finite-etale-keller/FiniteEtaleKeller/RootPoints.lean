@@ -31,19 +31,17 @@ namespace PolynomialRoot
 
 variable {E : K[X]}
 
-instance : Coe (PolynomialRoot E A) A := ⟨Subtype.val⟩
-
 @[ext]
-theorem ext {s t : PolynomialRoot E A} (h : (s : A) = t) : s = t :=
+theorem ext {s t : PolynomialRoot E A} (h : s.1 = t.1) : s = t :=
   Subtype.ext h
 
 /-- A root defines the corresponding algebra homomorphism out of the quotient. -/
 def liftAlgHom (s : PolynomialRoot E A) : AdjoinRoot E →ₐ[K] A :=
-  AdjoinRoot.liftAlgHom E (Algebra.ofId K A) (s : A) s.property
+  AdjoinRoot.liftAlgHom E (Algebra.ofId K A) s.1 s.2
 
 @[simp]
 theorem liftAlgHom_root (s : PolynomialRoot E A) :
-    s.liftAlgHom (AdjoinRoot.root E) = (s : A) := by
+    s.liftAlgHom (AdjoinRoot.root E) = s.1 := by
   simp [liftAlgHom]
 
 /-- An algebra homomorphism out of the quotient is determined by the image of
@@ -53,7 +51,7 @@ def ofAlgHom (f : AdjoinRoot E →ₐ[K] A) : PolynomialRoot E A :=
 
 @[simp]
 theorem ofAlgHom_val (f : AdjoinRoot E →ₐ[K] A) :
-    ((ofAlgHom f : PolynomialRoot E A) : A) = f (AdjoinRoot.root E) := rfl
+    (ofAlgHom f : PolynomialRoot E A).1 = f (AdjoinRoot.root E) := rfl
 
 /-- The universal property of `K[S]/(E)`, as an explicit equivalence of
 points. -/
@@ -80,26 +78,25 @@ theorem algHomEquiv_symm_apply (s : PolynomialRoot E A) :
 
 /-- Roots are functorial in the test algebra. -/
 def map (f : A →ₐ[K] B) (s : PolynomialRoot E A) : PolynomialRoot E B where
-  val := f s
+  val := f s.1
   property := by
-    rw [Polynomial.aeval_algHom_apply f]
-    simp [s.property]
+    rw [Polynomial.aeval_algHom_apply f s.1 E, s.2, map_zero]
 
 @[simp]
 theorem map_val (f : A →ₐ[K] B) (s : PolynomialRoot E A) :
-    ((s.map f : PolynomialRoot E B) : B) = f s := rfl
+    (s.map f).1 = f s.1 := rfl
 
 @[simp]
 theorem map_id (s : PolynomialRoot E A) :
     s.map (AlgHom.id K A) = s := by
-  ext
+  apply PolynomialRoot.ext
   rfl
 
 @[simp]
 theorem map_comp {C : Type*} [CommRing C] [Algebra K C]
     (f : A →ₐ[K] B) (g : B →ₐ[K] C) (s : PolynomialRoot E A) :
     (s.map f).map g = s.map (g.comp f) := by
-  ext
+  apply PolynomialRoot.ext
   rfl
 
 /-- Evaluate the canonical normalized derivative unit at a root. -/
@@ -114,7 +111,7 @@ theorem normalizedDerivativeUnit_val
     (E : K[X]) (hE : E.Separable) (g₁ : Kˣ)
     (s : PolynomialRoot E A) :
     (s.normalizedDerivativeUnit E hE g₁ : A) =
-      algebraMap K A (↑g₁⁻¹ : K) * Polynomial.aeval (s : A) E.derivative := by
+      algebraMap K A (↑g₁⁻¹ : K) * Polynomial.aeval s.1 E.derivative := by
   rw [normalizedDerivativeUnit, Units.coe_map,
     normalizedDerivativeUnitOfSeparable_val]
   simp [liftAlgHom, Polynomial.aeval_def]
