@@ -48,8 +48,13 @@ present in a finite \'etale algebra survives unchanged in its Keller fiber.
 This yields the optimal rank-five failure of the Hasse principle and an
 infinite family of such failures inside one fixed map.
 
-The scheme-reconstruction layer, quotient translation, admissible-parameter
-existence, and naturality are formalized in Lean.  Exact symbolic checkers
-independently audit the displayed maps and concrete arithmetic examples.  The
-precise division between machine-checked, coefficientwise, and classical
-inputs is recorded in the final section.
+The construction through the polynomial-presentation stage is formalized in
+Lean.  Starting from a squarefree $P$ of degree at least three, Lean chooses an
+admissible translation, constructs the actual all-degree
+$\operatorname{MvPolynomial}(\operatorname{Fin}3,K)$ map and normalized target,
+proves its Jacobian is one and its coordinate degrees are at most $6N+2$, and
+identifies its literal fiber functor naturally with maps from $K[T]/(P)$ over
+every commutative test algebra.  Exact SymPy and Singular certificates provide
+independent expansions.  Monogenicity, the generic-function-field degree
+argument, the historical degree-two theorem, and the arithmetic applications
+remain explicitly separated mathematical inputs.
