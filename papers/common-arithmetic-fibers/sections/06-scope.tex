@@ -65,17 +65,43 @@ universal proof is the calculation in Proposition~\ref{prop:gauge} and
 Corollary~\ref{cor:effective-gauge}, not a bounded computer search.
 
 \paragraph{Lean formalization.}
-The repository contains a staged, axiom-free Lean project at
+The repository contains a Lean project at
 \[
  \texttt{formal/finite-etale-keller}.
 \]
-Its first stage certifies the explicit quintic Jacobian determinant, both
-output normalizations, the inverse-polynomial identity, and a constructive
-B\'ezout inverse for the derivative class in the quotient algebra.  The next
-formal stages are the universal marked-line identities, the two-sided
-coordinate-ring reconstruction, and the translated polynomial-realization
-theorem.  The historical degree-two Galois case is kept separate from the new
-constructive core until that classical input is itself formalized.
+It contains no \texttt{sorry} and introduces no project-specific axioms.  The
+formal development proves the universal marked-line identities; the mutually
+inverse source/chart reconstruction over arbitrary commutative rings; the
+equivalence between roots and the abstract full source-fiber datum; naturality
+under every morphism of commutative test algebras; and representation of that
+functor by $K[S]/(E)$.  It then instantiates the universal datum with
+\[
+ E(S)=P(a+S),
+\]
+proves the derivative factorization using the third Hasse derivative, and
+composes with the explicit algebra equivalence
+\[
+ K[S]/(P(a+S))\simeq K[T]/(P(T)).
+\]
+The final Lean theorem is a natural represented-fiber equivalence for the
+abstract source equations, already transported to the original quotient
+$K[T]/(P)$.  The polynomial identities in Proposition~\ref{prop:gauge} identify
+that abstract datum with the displayed map's fiber functor
+$\mathcal F_{\pi,b,c}$; those general displayed-map identities are checked by
+the companion symbolic verifier rather than encoded as one all-degree Lean
+map.  The axiom report for the final formal theorem contains only Lean's
+standard \texttt{propext}, \texttt{Classical.choice}, and
+\texttt{Quot.sound}.
+
+This formal certificate deliberately has a precise boundary.  It covers the
+difficult scheme-reconstruction core: explicit units, absence of hidden
+localization, two-sided inversion, naturality, representability, and quotient
+translation.  The general displayed polynomial map, its all-degree determinant
+assembly and $6N+2$ estimate, monogenicity, and the historical degree-two
+Galois theorem are not yet combined into one Lean statement.  The explicit
+optimal quintic map and its determinant-one output normalization are formalized
+separately.  Thus the formalization certifies the new reconstruction argument
+without mislabelling the classical or computational inputs as machine-checked.
 
 \paragraph{Provenance.}
 The recent three-dimensional counterexample was publicly attributed to

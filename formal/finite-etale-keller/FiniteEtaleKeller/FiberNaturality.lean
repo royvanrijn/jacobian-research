@@ -170,9 +170,12 @@ theorem rootEquivGaugeFiberPoint_toRoot_apply
     (hderiv : E.derivative = C (g₁ : K) * markedChartPolynomial pi b β)
     (s : PolynomialRoot E A) :
     (rootEquivGaugeFiberPoint (A := A) a hE g₁ hderiv s).toRoot = s := by
-  have h :=
-    (rootEquivGaugeFiberPoint (A := A) a hE g₁ hderiv).symm_apply_apply s
-  simpa using h
+  apply PolynomialRoot.ext
+  change
+    ((rootEquivGaugeFiberPoint (A := A) a hE g₁ hderiv).symm
+      (rootEquivGaugeFiberPoint (A := A) a hE g₁ hderiv s)).1 = s.1
+  exact congrArg (fun r : PolynomialRoot E A => r.1)
+    ((rootEquivGaugeFiberPoint (A := A) a hE g₁ hderiv).symm_apply_apply s)
 
 /-- The root/source-point equivalence is natural in every commutative test
 `K`-algebra. -/

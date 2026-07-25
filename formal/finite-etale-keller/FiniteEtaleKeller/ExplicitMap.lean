@@ -68,12 +68,14 @@ theorem jacobianDet_integralMap :
 theorem jacobianDet_normalizedMap :
     jacobianDet normalizedMap = MvPolynomial.C (-2) := by
   rw [normalizedMap, jacobianDet_scaleOutput, jacobianDet_integralMap]
-  norm_num [MvPolynomial.C_mul']
+  rw [← MvPolynomial.C_mul]
+  norm_num
 
 /-- The universal target-preserving output normalization has determinant `1`. -/
 theorem jacobianDet_jacobianOneMap : jacobianDet jacobianOneMap = 1 := by
   rw [jacobianOneMap, jacobianDet_scaleOutput, jacobianDet_normalizedMap]
-  norm_num [MvPolynomial.C_mul']
+  rw [← MvPolynomial.C_mul]
+  norm_num
 
 /-- Scaling the normalized gauge back by `diag(1,19,19)` recovers the displayed map. -/
 theorem integralMap_eq_scaled_normalized :

@@ -71,8 +71,12 @@ theorem representingEquiv_natural (D : QuadraticGaugeFiberDatum K)
       D.representingEquiv B (f.comp φ) := by
   change
     GaugeFiberPoint.map f
-        (D.rootEquivPoint A (PolynomialRoot.ofAlgHom φ)) =
-      D.rootEquivPoint B (PolynomialRoot.ofAlgHom (f.comp φ))
+        (rootEquivGaugeFiberPoint (A := A)
+          D.a D.separable D.g₁ D.derivative_eq
+          (PolynomialRoot.ofAlgHom φ)) =
+      rootEquivGaugeFiberPoint (A := B)
+        D.a D.separable D.g₁ D.derivative_eq
+        (PolynomialRoot.ofAlgHom (f.comp φ))
   rw [rootEquivGaugeFiberPoint_natural]
   rw [D.rootOfAlgHom_natural f φ]
 
