@@ -107,9 +107,15 @@ theorem translatePolynomial_derivative_eq_markedChartPolynomial
     _ = C (P.derivative.eval a) *
           (1 + X * realizationBeta P a + X ^ 2) := by rw [hβ]; ring
 
+/-- The nonzero cubic Taylor coefficient, carried as a unit. -/
+def realizationCubicUnit (P : K[X]) (a : K)
+    (h₃ : (Polynomial.hasseDeriv 3 P).eval a ≠ 0) : Kˣ :=
+  Units.mk0 ((Polynomial.hasseDeriv 3 P).eval a) h₃
+
 /-- The source coefficient `g₁/g₃` used by the quadratic-gauge reconstruction. -/
-def realizationGaugeCoefficient (P : K[X]) (a : K) : K :=
-  P.derivative.eval a / (Polynomial.hasseDeriv 3 P).eval a
+def realizationGaugeCoefficient (P : K[X]) (a : K)
+    (h₃ : (Polynomial.hasseDeriv 3 P).eval a ≠ 0) : K :=
+  P.derivative.eval a / (realizationCubicUnit P a h₃ : K)
 
 section CharacteristicZero
 
@@ -120,13 +126,13 @@ an admissible translation parameter.  Its inverse polynomial is `P(a+S)`. -/
 def realizationDatum
     (P : K[X]) (a : K) (hP : Squarefree P)
     (h₁ : P.derivative.eval a ≠ 0)
-    (_h₃ : (Polynomial.hasseDeriv 3 P).eval a ≠ 0) :
+    (h₃ : (Polynomial.hasseDeriv 3 P).eval a ≠ 0) :
     QuadraticGaugeFiberDatum K where
   E := translatePolynomial P a
   β := realizationBeta P a
   pi := 1
   b := 0
-  a := realizationGaugeCoefficient P a
+  a := realizationGaugeCoefficient P a h₃
   g₁ := Units.mk0 (P.derivative.eval a) h₁
   separable := translatePolynomial_separable P a
     ((PerfectField.separable_iff_squarefree).2 hP)
