@@ -1,0 +1,55 @@
+\section{Introduction}
+
+A polynomial map with nonzero constant Jacobian is \'etale, so every one of
+its fibers is a finite \'etale scheme.  The converse realization problem is
+much less formal: which finite \'etale algebras can occur as a \emph{full}
+fiber, with no generic inverse sheet lost at infinity?  The answer is as sharp
+as possible.  Apart from the classical obstruction in geometric degree two,
+there is no restriction at all.
+
+The main theorem proves that every nonzero finite \'etale algebra of rank
+$N\neq2$ is a Keller fiber.  Rank one is trivial.  For every $N\geq3$, a
+squarefree presentation $A\simeq K[T]/(P)$ is converted directly into a
+three-variable Jacobian-one map whose distinguished full fiber is
+$\Spec A$.  The construction is uniform in $P$, commutes with extension of
+the ground field, and has coordinate degree at most $6N+2$.
+
+The mechanism is a quadratic gauge built around the marked variable
+$S=x/(1+xy)$.  Its target coordinates are designed so that the generic inverse
+problem reduces to one polynomial equation
+\[
+ E_{\Pi,B,C}(S)=0.
+\]
+At the distinguished target this equation is exactly $P(a+S)=0$.  Two facts
+then make the rational chart global on the whole scheme fiber.  First, the
+unit first target coordinate forces both chart factors to be units.  Second,
+separability makes $E'(S)$ invertible in every commutative test algebra by a
+B\'ezout identity.  This gives mutually inverse formulas between roots of $E$
+and source points, naturally in the test algebra.  Thus the argument identifies
+the complete fiber functor, including nilpotents and all base changes, rather
+than only its geometric points.
+
+The proof has four logically separate layers:
+\begin{enumerate}
+\item a coefficientwise all-degree calculation gives the displayed polynomial
+      map, constant Jacobian, generic inverse equation, and degree bound;
+\item the functor-of-points reconstruction proves that a separable inverse
+      polynomial represents the entire source fiber;
+\item translation identifies $K[S]/(P(a+S))$ with $K[T]/(P)$, while an
+      admissible $a$ always exists because $P'P'''$ is nonzero;
+\item monogenicity passes from squarefree polynomials to arbitrary finite
+      \'etale algebras, and the Campbell--Razar--Wright theorem excludes rank
+      two.
+\end{enumerate}
+
+The arithmetic consequences require no further geometry.  Any connectedness,
+Galois action, local factorization, or local--global obstruction already
+present in a finite \'etale algebra survives unchanged in its Keller fiber.
+This yields the optimal rank-five failure of the Hasse principle and an
+infinite family of such failures inside one fixed map.
+
+The scheme-reconstruction layer, quotient translation, admissible-parameter
+existence, and naturality are formalized in Lean.  Exact symbolic checkers
+independently audit the displayed maps and concrete arithmetic examples.  The
+precise division between machine-checked, coefficientwise, and classical
+inputs is recorded in the final section.
