@@ -1,23 +1,31 @@
-# Finite Étale Algebras as Keller Fibers
+# Every Finite Étale Algebra Except Rank Two Is a Keller Fiber
 
-This paper introduces **Keller fibers** and proves a complete rank
-classification: every nonzero finite étale algebra of rank other than two
-occurs as a full fiber of a polynomial Keller map. For rank at least three,
-the realization is explicit in affine three-space, has Jacobian determinant
-`1`, and has coordinate degree at most `6N+2` in rank `N`.
+This paper proves a complete classification: every nonzero finite étale
+algebra of rank other than two occurs as a full fiber of a polynomial Keller
+map. For rank at least three, the realization is explicit in affine
+three-space, has Jacobian determinant `1`, and has coordinate degree at most
+`6N+2` in rank `N`.
 
-The scheme-theoretic core is stated as a natural equivalence on every
-commutative test algebra:
+The scheme-theoretic core is a natural equivalence on every commutative test
+algebra:
 
 ```text
 Hom_K-alg(K[T]/(P), A) ≃ distinguished source-fiber points over A.
 ```
 
 Thus the theorem controls the complete represented fiber, not merely its
-geometric or rational points. Lean formalizes the abstract source-equation
-functor, its two-sided reconstruction and naturality, representation by the
-polynomial quotient, and quotient translation. The paper identities and exact
-symbolic checker connect that datum to the general displayed polynomial map.
+geometric or rational points. Lean formalizes the existence and automatic
+choice of an admissible translation, the abstract source-equation functor, its
+two-sided reconstruction and naturality, representation by the polynomial
+quotient, and translation back to `K[T]/(P)`. Its final theorem takes only a
+squarefree polynomial of degree at least three; no translation parameter or
+nonvanishing witness remains as an external hypothesis.
+
+The displayed all-degree polynomial map is proved coefficientwise in the
+paper. The exact symbolic checker independently constructs and audits the map
+in degrees three, four, and five, together with the explicit arithmetic
+examples. These checks are regression certificates rather than a replacement
+for the uniform proof.
 
 The arithmetic applications include:
 
@@ -38,14 +46,15 @@ The focused audits accompanying the active draft are:
    descent proof;
 2. two-sided reconstruction over arbitrary commutative test algebras, using a
    Bézout inverse of `E'` and proving naturality;
-3. the canonical quotient translation
-   `K[S]/(P(a+S)) ≃ K[T]/(P(T))`;
-4. the scaling identity `F_displayed = diag(1,19,19) F_normalized` for the
+3. existence of an admissible translation and the canonical quotient
+   translation `K[S]/(P(a+S)) ≃ K[T]/(P(T))`;
+4. a coefficientwise derivation of the displayed all-degree gauge identities;
+5. the scaling identity `F_displayed = diag(1,19,19) F_normalized` for the
    optimal quintic example;
-5. the dated and qualified [literature audit](LITERATURE_AUDIT.md).
+6. the dated and qualified [literature audit](LITERATURE_AUDIT.md).
 
 The Lean project contains no `sorry` and no project-specific axioms. Its final
-abstract represented-fiber theorem reports only Lean's standard `propext`,
+automatic represented-fiber theorem reports only Lean's standard `propext`,
 `Classical.choice`, and `Quot.sound`. The formal scope and the remaining
 nonformalized parts of the paper are listed in
 [`formal/finite-etale-keller/README.md`](../../formal/finite-etale-keller/README.md).
