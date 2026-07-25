@@ -119,32 +119,32 @@ namespace GaugeSource
 
 variable {pi a : R}
 
-/-- Recover marked-line chart data from a source point. -/
-def toChart (p : GaugeSource R pi a) : GaugeChart R pi := by
+/-- The reciprocal chart identity derived from the two source equations. -/
+theorem toChart_chart_eq (p : GaugeSource R pi a) :
+    (↑p.t⁻¹ : R) = 1 - p.S * p.Q + pi * p.S ^ 2 := by
   let d : R := ↑p.t⁻¹
   have hunit : d * (p.t : R) = 1 := by simp [d]
-  refine
-    { S := p.S
-      Q := p.Q
-      d := p.t⁻¹
-      chart_eq := ?_ }
   change d = 1 - (p.x * d) * (p.y + p.x * p.q) + pi * (p.x * d) ^ 2
   linear_combination
     (1 - p.x ^ 2 * d * p.q) * hunit
       - d * p.t_eq
       + d ^ 2 * p.x ^ 2 * p.t_mul_q
 
-@[simp]
-theorem toChart_S (p : GaugeSource R pi a) : p.toChart.S = p.S := by
-  simp [toChart]
+/-- Recover marked-line chart data from a source point. -/
+def toChart (p : GaugeSource R pi a) : GaugeChart R pi where
+  S := p.S
+  Q := p.Q
+  d := p.t⁻¹
+  chart_eq := p.toChart_chart_eq
 
 @[simp]
-theorem toChart_Q (p : GaugeSource R pi a) : p.toChart.Q = p.Q := by
-  simp [toChart]
+theorem toChart_S (p : GaugeSource R pi a) : p.toChart.S = p.S := rfl
 
 @[simp]
-theorem toChart_d (p : GaugeSource R pi a) : p.toChart.d = p.t⁻¹ := by
-  simp [toChart]
+theorem toChart_Q (p : GaugeSource R pi a) : p.toChart.Q = p.Q := rfl
+
+@[simp]
+theorem toChart_d (p : GaugeSource R pi a) : p.toChart.d = p.t⁻¹ := rfl
 
 end GaugeSource
 
