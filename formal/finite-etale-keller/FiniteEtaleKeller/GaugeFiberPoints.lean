@@ -65,7 +65,7 @@ def toGaugeFiberPoint
     rw [GaugeChart.toSource_S]
     exact p.root_eq
   marked_eq := by
-    rw [GaugeChart.toSource_Q]
+    rw [GaugeChart.toSource_Q, GaugeChart.toSource_S]
     exact p.marked_eq
 
 end MarkedFiberPoint
