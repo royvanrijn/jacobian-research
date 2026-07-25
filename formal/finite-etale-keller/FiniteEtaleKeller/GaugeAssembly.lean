@@ -20,9 +20,9 @@ that do not depend on a degree bound:
 * the low-degree part of the third coordinate collapses by the cubic identity
   `t + 1 - (t - 1)^2 * (1 + 3*t) = t^2 * (5 - 3*t)`.
 
-The finite polynomial sum and the complete multivariate Jacobian are left to a
-later module, but the coefficientwise algebra used by the paper is proved here
-over an arbitrary commutative ring.
+The final lemmas package these coefficientwise identities over the complete
+finite sums indexed by `4 ≤ k ≤ N`.  The complete multivariate polynomial map
+and its coordinate-degree estimate are left to a later module.
 -/
 
 noncomputable section
@@ -81,6 +81,34 @@ theorem quadraticGauge_highBMonomial
       rw [mul_pow, mul_pow, pow_add]
       ring
 
+/-- The high-degree second-coordinate identity summed over all indices
+`4 ≤ k ≤ N`, with an arbitrary coefficient family. -/
+theorem quadraticGauge_highBSum
+    (t : Rˣ) (x q : R) (d : ℕ → R) (N : ℕ) :
+    (∑ k ∈ Finset.Icc 4 N,
+        d k * ((((t : R) * q) ^ k) * (x * (↑t⁻¹ : R)) ^ (k - 2))) =
+      ∑ k ∈ Finset.Icc 4 N,
+        d k * ((t : R) ^ 2 * x ^ (k - 2) * q ^ k) := by
+  apply Finset.sum_congr rfl
+  intro k hk
+  have hk2 : 2 ≤ k := by omega
+  simpa [Nat.sub_add_cancel hk2] using
+    congrArg (fun u : R => d k * u)
+      (quadraticGauge_highBMonomial t x q (k - 2))
+
+/-- The high-degree third-coordinate identity summed over all indices
+`4 ≤ k ≤ N`, with an arbitrary coefficient family. -/
+theorem quadraticGauge_highCSum
+    (t : Rˣ) (x q : R) (d : ℕ → R) (N : ℕ) :
+    (∑ k ∈ Finset.Icc 4 N,
+        d k * ((((t : R) * q) ^ k) * (x * (↑t⁻¹ : R)) ^ k)) =
+      ∑ k ∈ Finset.Icc 4 N, d k * (x * q) ^ k := by
+  apply Finset.sum_congr rfl
+  intro k hk
+  simpa using
+    congrArg (fun u : R => d k * u)
+      (quadraticGauge_highCMonomial t x q k)
+
 /-- The linear and cubic contributions to the second coordinate combine with
 `Q = y + x*q` to give the displayed coefficient `3*r*x*q`. -/
 theorem quadraticGauge_lowBIdentity
@@ -96,6 +124,20 @@ theorem quadraticGauge_lowBIdentity
       _ = x * q := by simp
   rw [hmarked]
   ring
+
+/-- The complete second-coordinate assembly, including all coefficients with
+index at least four. -/
+theorem quadraticGauge_fullBIdentity
+    (t : Rˣ) (x y q c r : R) (d : ℕ → R) (N : ℕ) :
+    (y + x * q) + 2 * c * ((t : R) * q) +
+        (3 * r - 1) * ((t : R) * q) * (x * (↑t⁻¹ : R)) +
+        (∑ k ∈ Finset.Icc 4 N,
+          d k * ((((t : R) * q) ^ k) * (x * (↑t⁻¹ : R)) ^ (k - 2))) =
+      y + 3 * r * x * q + 2 * c * ((t : R) * q) +
+        ∑ k ∈ Finset.Icc 4 N,
+          d k * ((t : R) ^ 2 * x ^ (k - 2) * q ^ k) := by
+  rw [quadraticGauge_lowBIdentity]
+  rw [quadraticGauge_highBSum]
 
 /-- The complete low-degree part of the third coordinate.  Here `a` is the
 source coefficient `g₁/g₃` and `r` is its inverse `g₃/g₁`. -/
@@ -164,6 +206,24 @@ theorem quadraticGauge_lowCIdentity
       rw [hsq]
       ring
 
-#print axioms quadraticGauge_lowCIdentity
+/-- The complete third-coordinate assembly, including all coefficients with
+index at least four. -/
+theorem quadraticGauge_fullCIdentity
+    (t : Rˣ) (x y z q a r : R) (d : ℕ → R) (N : ℕ)
+    (ht : (t : R) = 1 + x * y)
+    (hq : q = (t : R) ^ 2 * z + a * y ^ 2 * (1 + 3 * (t : R)))
+    (hra : r * a = 1) :
+    2 * (x * (↑t⁻¹ : R))
+        - (y + x * q) * (x * (↑t⁻¹ : R)) ^ 2
+        + (1 - r) * ((t : R) * q) * (x * (↑t⁻¹ : R)) ^ 3
+        - (∑ k ∈ Finset.Icc 4 N,
+          d k * ((((t : R) * q) ^ k) * (x * (↑t⁻¹ : R)) ^ k)) =
+      x * (5 - 3 * (t : R)) - r * x ^ 3 * z
+        - ∑ k ∈ Finset.Icc 4 N, d k * (x * q) ^ k := by
+  rw [quadraticGauge_lowCIdentity t x y z q a r ht hq hra]
+  rw [quadraticGauge_highCSum]
+
+#print axioms quadraticGauge_fullBIdentity
+#print axioms quadraticGauge_fullCIdentity
 
 end FiniteEtaleKeller
