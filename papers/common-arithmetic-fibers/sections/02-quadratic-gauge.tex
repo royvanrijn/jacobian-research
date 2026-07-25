@@ -70,7 +70,7 @@ Now set
  \label{eq:beta}
 \end{equation}
 The numerator is divisible by $S$.  Substitution in
-\eqref{eq:gauge-map} gives the two identities
+\eqref{eq:gauge-map} gives the two polynomial identities
 \begin{equation}
  B=Q+\beta(\Pi,S),
  \qquad
@@ -94,62 +94,90 @@ Combining \eqref{eq:source-chart-jacobian} and
 \eqref{eq:plane-jacobian} proves $\det DF_G=-2$ on the dense chart
 $t\neq0$, hence polynomially everywhere.
 
-It remains to prove the fiber statement on coordinate rings.  Fix
-$(\pi,b,c)$ as in the proposition and abbreviate
+It remains to identify the full fiber.  Fix $(\pi,b,c)$ and abbreviate
 \[
- E=E_{\pi,b,c},
- \qquad R=K[S]/(E),
- \qquad s=S\bmod E.
+ E=E_{\pi,b,c}.
 \]
-Squarefreeness gives $\gcd(E,E')=1$.  Thus there are $U,V\in K[S]$ with
+We prove the stronger functor-of-points statement.  Let $A$ be an arbitrary
+commutative $K$-algebra, and denote the images of $\pi,b,c$ in $A$ by the
+same letters.  An $A$-point $(x,y,z)$ of the fiber satisfies
 \[
- UE+VE'=1,
+ tq=\pi.
 \]
-so $E'(s)$ is a unit of $R$, with inverse $V(s)$.  In particular no
-localization has been hidden in the reconstruction.  Put
+Since $\pi$ is a unit, both $t$ and $q$ are units in $A$.  Thus the formulas
 \[
- d=\frac{E'(s)}{g_1},
- \qquad q_0=b-\beta(\pi,s),
+ S=xt^{-1},
+ \qquad Q=y+xq,
+ \qquad D=t^{-1}
 \]
-and define in $R$
-\begin{equation}
- \begin{aligned}
-  t_0&=d^{-1},& x_0&=s\,d^{-1},& y_0&=q_0-\pi s,\\
-  q_1&=\pi d,&
-  z_0&=d^2\left(q_1-\frac{g_1}{g_3}y_0^2(1+3t_0)\right).
- \end{aligned}
- \label{eq:ring-reconstruction}
-\end{equation}
-Equations \eqref{eq:marked-line-identities}--\eqref{eq:D-derivative}
-show directly in $R$ that
+are global on the whole fiber, not merely on its geometric points.  The
+polynomial identities \eqref{eq:marked-line-identities} and
+\eqref{eq:D-derivative} give
 \[
- 1+x_0y_0=t_0,
- \qquad
- t_0^2z_0+\frac{g_1}{g_3}y_0^2(1+3t_0)=q_1,
+ Q+\beta(\pi,S)=b,
+ \qquad E(S)=0,
+ \qquad D=\frac{E'(S)}{g_1}.
 \]
-and that $F_G(x_0,y_0,z_0)=(\pi,b,c)$.  Hence
-\eqref{eq:ring-reconstruction} defines a homomorphism from the coordinate
-ring of the fiber to $R$.
+Hence every fiber point determines a root of $E$ in $A$.
 
-Conversely, in the coordinate ring of the fiber one has
+Conversely, let $s\in A$ satisfy $E(s)=0$.  Because $K$ has characteristic
+zero and $E$ is squarefree, $E$ is separable.  Choose $U,V\in K[S]$ with
 \[
- tq=\Pi=\pi\in K^*.
+ UE+VE'=1.
 \]
-Therefore both $t$ and $q$ are units on the entire fiber scheme, not merely
-at its geometric points.  The elements
+Evaluation at $s$ shows that $E'(s)$ is a unit in $A$.  Therefore
 \[
- S=\frac{x}{t},
- \qquad Q=y+xq
+ d=\frac{E'(s)}{g_1}
 \]
-are consequently global there, and \eqref{eq:marked-line-identities} gives
-$E(S)=0$.  This defines the reverse homomorphism $R$ to the fiber ring.
-Under the two maps,
+is a unit as well.  Put
 \[
- D=t^{-1},\qquad x=S/D,\qquad y=Q-\pi S,
- \qquad q=\pi D,
+ Q=b-\beta(\pi,s),
+ \qquad
+ t=d^{-1},
+ \qquad
+ x=sd^{-1},
+ \qquad
+ y=Q-\pi s,
 \]
-and the defining equation for $q$ recovers $z$.  Both compositions are the
-identity.  This proves the asserted scheme isomorphism.
+and then
+\[
+ q=\pi d,
+ \qquad
+ z=d^2\left(q-\frac{g_1}{g_3}y^2(1+3t)\right).
+\]
+The derivative identity is precisely
+\[
+ d=1-sQ+\pi s^2.
+\]
+A direct ring calculation, valid in every commutative ring, now gives
+\[
+ 1+xy=t,
+ \qquad
+ t^2z+\frac{g_1}{g_3}y^2(1+3t)=q,
+ \qquad tq=\pi.
+\]
+The first marked identity gives $B=b$.  Since $E(s)=0$, the second gives
+$C=c$.  Thus these formulas reconstruct an $A$-point of the fiber.
+
+The two constructions are inverse: one recovers
+\[
+ D=t^{-1},\qquad x=S/D,\qquad y=Q-\pi S,\qquad q=\pi D,
+\]
+and the defining equation for $q$ recovers $z$.  Every formula commutes with
+a morphism of commutative $K$-algebras.  We have therefore obtained a natural
+bijection
+\[
+ F_G^{-1}(\pi,b,c)(A)
+ \simeq
+ \{s\in A:E(s)=0\}.
+\]
+The functor on the right is represented by $\Spec K[S]/(E)$.  Yoneda's
+lemma proves
+\[
+ F_G^{-1}(\pi,b,c)\simeq\Spec K[S]/(E).
+\]
+This also makes explicit why no localization or omitted component is hidden
+in the reconstruction.
 
 Finally, the generic polynomial \eqref{eq:inverse} has degree $N$ and is
 separable, and the same reconstruction works at every generic root.  Hence
