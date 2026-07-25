@@ -57,8 +57,17 @@ theorem realizationSeed_natDegree
 theorem automaticRealizationMap_jacobianDet
     (P : K[X]) (hdeg : 3 ≤ P.natDegree) :
     jacobianDet (automaticRealizationMap P hdeg) = 1 := by
-  unfold automaticRealizationMap
-  exact jacobianDet_generalGaugeJacobianOneMap _
+  let a := chosenAdmissibleTranslation P hdeg
+  have h₁ : (realizationSeed P a).coeff 1 ≠ 0 := by
+    simpa [a, realizationSeed] using
+      rootedTranslate_linear_ne_zero P (chosenAdmissibleTranslation P hdeg)
+        (chosenAdmissibleTranslation_linear_ne_zero P hdeg)
+  have h₃ : (realizationSeed P a).coeff 3 ≠ 0 := by
+    simpa [a, realizationSeed] using
+      rootedTranslate_cubic_ne_zero P (chosenAdmissibleTranslation P hdeg)
+        (chosenAdmissibleTranslation_cubic_ne_zero P hdeg)
+  change jacobianDet (generalGaugeJacobianOneMap (realizationSeed P a)) = 1
+  exact jacobianDet_generalGaugeJacobianOneMap (realizationSeed P a) h₁ h₃
 
 /-- Every coordinate of the final automatically chosen determinant-one map has
 total degree at most `6 * P.natDegree + 2`. -/
