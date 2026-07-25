@@ -1,25 +1,26 @@
 \begin{abstract}
-A \emph{Keller fiber} is the coordinate algebra of a full fiber of a
-polynomial map with nonzero constant Jacobian, where full means that the
-fiber length equals the geometric degree.  Over every field $K$ of
-characteristic zero, we classify these algebras by rank: rank one and every
-rank at least three occur, already for maps $\A^3_K\to\A^3_K$, while rank two
-is impossible.  The realization is explicit and effective.  Given any
-squarefree polynomial $P$ of degree $N\geq3$, choose a translation parameter
-outside the finite zero set of $P'P'''$.  A universal quadratic-gauge formula,
-followed by a fixed linear output normalization, gives a Jacobian-one map of
-coordinate degree at most $6N+2$ whose distinguished fiber is naturally
-represented by $K[T]/(P)$.
+Let $K$ be a field of characteristic zero.  We determine exactly which
+nonzero finite \'etale $K$-algebras occur as coordinate algebras of full fibers
+of polynomial maps with nonzero constant Jacobian: every rank occurs except
+rank two, and every realizable algebra already occurs for a map
+$\A^3_K\to\A^3_K$.  Here full means that the fiber length equals the geometric
+degree of the map.
 
-Thus every number field of degree at least three occurs as a connected
-Keller fiber, the construction commutes with extension of the ground field,
-and arithmetic properties of arbitrary finite \'etale algebras transfer
-without alteration.  Over $\Q$ we give an explicit degree-five fiber with
-points over $\R$ and every $\Q_p$ but no rational point, and prove that five
-is the smallest possible degree.  We also exhibit one fixed Keller map with
-infinitely many such fibers, indexed by primes $\ell\equiv1\pmod{27}$.  The
-abstract source-equation reconstruction, its naturality on all commutative
-test algebras, and the translation of the representing quotient are
-formalized in Lean; the general displayed-map identities are verified
-separately by exact symbolic calculation.
+The realization is explicit and effective.  Given a squarefree polynomial
+$P$ of degree $N\geq3$, choose $a\in K$ with $P'(a)P'''(a)\neq0$.  A universal
+quadratic-gauge formula, followed by a fixed linear output normalization,
+gives a Jacobian-one map of coordinate degree at most $6N+2$ whose
+distinguished fiber is naturally represented by $K[T]/(P)$.  Such an $a$
+always exists.
+
+Consequently every number field of degree at least three occurs as a connected
+Keller fiber, and all arithmetic information carried by an arbitrary finite
+\'etale algebra transfers unchanged.  Over $\Q$ we exhibit an explicit
+rank-five fiber with points over $\R$ and every $\Q_p$ but no rational point,
+and prove that rank five is minimal.  One fixed Keller map carries infinitely
+many such fibers.  Lean formalizes the existence of the admissible translation,
+the source-equation reconstruction over every commutative test algebra, its
+naturality, and representation by the original quotient $K[T]/(P)$.  The
+displayed all-degree map identities are proved coefficientwise and independently
+checked by exact symbolic computation in representative degrees.
 \end{abstract}
