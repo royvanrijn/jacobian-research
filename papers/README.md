@@ -15,7 +15,11 @@ corrections that are deliberately carried into a new deposited version.
 - `common-arithmetic-fibers` — *Finite Étale Algebras as Keller Fibers*
 
 This manuscript remains under active development. The directory name is a
-stable path retained from its earlier draft.
+stable path retained from its earlier draft. Its scheme-reconstruction core is
+now formalized as a natural represented-fiber theorem in
+`formal/finite-etale-keller`; the manuscript and its README state the exact
+boundary between the Lean certificate, the general displayed-map identities,
+and the classical rank-two input.
 
 ## Parked
 
