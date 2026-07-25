@@ -5,14 +5,16 @@ Authors: Roy van Rijn
 -/
 import FiniteEtaleKeller.GeneralGaugeRealization
 import FiniteEtaleKeller.GeneralGaugeDegree
+import FiniteEtaleKeller.GeneralGaugeJacobian
 
 /-!
-# Effective degree of the final automatic realization map
+# Jacobian and effective degree of the final automatic realization map
 
 Translation preserves polynomial degree, and removing the constant term does
-not change it in positive degree.  Combining this with the all-degree map bound
-gives the paper's `6N+2` estimate directly for the actual automatically chosen
-map attached to the original polynomial `P`.
+not change it in positive degree.  Combining this with the all-degree map
+certificates gives both the determinant-one theorem and the paper's `6N+2`
+estimate directly for the actual automatically chosen map attached to the
+original polynomial `P`.
 -/
 
 noncomputable section
@@ -51,6 +53,13 @@ theorem realizationSeed_natDegree
     (realizationSeed P a).natDegree = P.natDegree := by
   exact rootedTranslate_natDegree P a hpos
 
+/-- The final automatically chosen map has Jacobian determinant one. -/
+theorem automaticRealizationMap_jacobianDet
+    (P : K[X]) (hdeg : 3 ≤ P.natDegree) :
+    jacobianDet (automaticRealizationMap P hdeg) = 1 := by
+  unfold automaticRealizationMap
+  exact jacobianDet_generalGaugeJacobianOneMap _
+
 /-- Every coordinate of the final automatically chosen determinant-one map has
 total degree at most `6 * P.natDegree + 2`. -/
 theorem automaticRealizationMap_totalDegree
@@ -70,7 +79,20 @@ theorem automaticRealizationMap_totalDegree
     (realizationSeed P a) hseeddeg i
   rwa [hseed] at h
 
+/-- Construction-level certificate for the final automatic map: constant
+Jacobian one together with the uniform coordinate-degree bound. -/
+theorem automaticRealizationMap_certificate
+    (P : K[X]) (hdeg : 3 ≤ P.natDegree) :
+    jacobianDet (automaticRealizationMap P hdeg) = 1 ∧
+      ∀ i : Fin 3,
+        (automaticRealizationMap P hdeg i).totalDegree ≤
+          6 * P.natDegree + 2 := by
+  exact ⟨automaticRealizationMap_jacobianDet P hdeg,
+    automaticRealizationMap_totalDegree P hdeg⟩
+
 #print axioms rootedTranslate_natDegree
+#print axioms automaticRealizationMap_jacobianDet
 #print axioms automaticRealizationMap_totalDegree
+#print axioms automaticRealizationMap_certificate
 
 end FiniteEtaleKeller
