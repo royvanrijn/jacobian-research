@@ -108,8 +108,8 @@ def toDisplayed (p : GeneralGaugeRawFiberPoint G pi b c A) :
               algebraMap K A (G.coeff 1 / G.coeff 3) * p.point 1 ^ 2 *
                 (1 + 3 * p.t) := by
           change MvPolynomial.eval₂ (algebraMap K A) p.point (generalGaugeQ G) = _
-          simpa only [t] using
-            (FiniteEtaleKeller.eval₂_generalGaugeQ (A := A) G p.point)
+          rw [FiniteEtaleKeller.eval₂_generalGaugeQ]
+          rfl
         simpa only [hq] using p.t_mul_q }
   b_eq := p.b_eq
   c_eq := p.c_eq
