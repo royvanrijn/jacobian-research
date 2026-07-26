@@ -223,6 +223,10 @@ private theorem jacobianDet_quadraticGaugeBase
     (a c : K) (ha : a ≠ 0) :
     jacobianDet (quadraticGaugeBaseMap a c) = MvPolynomial.C (-2) := by
   classical
+  have hunit :
+      (MvPolynomial.C a : GaugePolynomial K) * MvPolynomial.C a⁻¹ = 1 := by
+    rw [← MvPolynomial.C_mul]
+    simp [ha]
   simp only [jacobianDet, jacobianMatrix, det_fin_three, of_apply,
     quadraticGaugeBaseMap, quadraticGaugeBaseB, quadraticGaugeBaseC,
     quadraticGaugePi, quadraticGaugeU, quadraticGaugeQ, generalGaugeT,
@@ -230,12 +234,9 @@ private theorem jacobianDet_quadraticGaugeBase
     map_add, map_sub, Derivation.map_one_eq_zero,
     pderiv_mul, pderiv_pow, pderiv_C, pderiv_X_self, pderiv_X_of_ne,
     ne_eq, Fin.reduceEq, not_false_eq_true]
-  simp only [map_neg, map_ofNat]
-  field_simp [ha]
-  simp only [← MvPolynomial.C_mul, ← MvPolynomial.C_pow,
-    ← MvPolynomial.C_eq_coe_nat]
-  simp [ha, pow_two]
-  ring_nf
+  simp only [map_neg, map_ofNat, MvPolynomial.C_mul,
+    MvPolynomial.C_eq_coe_nat]
+  grobner
 
 set_option maxHeartbeats 0 in
 set_option maxRecDepth 100000 in
@@ -248,6 +249,10 @@ private theorem quadraticGauge_crossDet
         jacobianDet ![
           quadraticGaugePi a, quadraticGaugeBaseB a c, quadraticGaugeU a] := by
   classical
+  have hunit :
+      (MvPolynomial.C a : GaugePolynomial K) * MvPolynomial.C a⁻¹ = 1 := by
+    rw [← MvPolynomial.C_mul]
+    simp [ha]
   simp only [jacobianDet, jacobianMatrix, det_fin_three, of_apply,
     quadraticGaugeBaseB, quadraticGaugeBaseC,
     quadraticGaugePi, quadraticGaugeU, quadraticGaugeQ, generalGaugeT,
@@ -255,12 +260,9 @@ private theorem quadraticGauge_crossDet
     map_add, map_sub, Derivation.map_one_eq_zero,
     pderiv_mul, pderiv_pow, pderiv_C, pderiv_X_self, pderiv_X_of_ne,
     ne_eq, Fin.reduceEq, not_false_eq_true]
-  simp only [map_neg, map_ofNat]
-  field_simp [ha]
-  simp only [← MvPolynomial.C_mul, ← MvPolynomial.C_pow,
-    ← MvPolynomial.C_eq_coe_nat]
-  simp [ha, pow_two]
-  ring_nf
+  simp only [map_neg, map_ofNat, MvPolynomial.C_mul,
+    MvPolynomial.C_eq_coe_nat]
+  grobner
 
 private theorem pderiv_quadraticGaugeTailB
     (a : K) (R Rp Rpp : GaugePolynomial K)
