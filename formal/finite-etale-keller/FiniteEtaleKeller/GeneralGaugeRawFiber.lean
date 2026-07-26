@@ -108,8 +108,13 @@ def toDisplayed (p : GeneralGaugeRawFiberPoint G pi b c A) :
               algebraMap K A (G.coeff 1 / G.coeff 3) * p.point 1 ^ 2 *
                 (1 + 3 * p.t) := by
           simp [q, t]
-        rw [← hq]
-        exact p.t_mul_q }
+        calc
+          p.t *
+              (p.t ^ 2 * p.point 2 +
+                algebraMap K A (G.coeff 1 / G.coeff 3) * p.point 1 ^ 2 *
+                  (1 + 3 * p.t)) =
+            p.t * p.q := congrArg (fun u : A => p.t * u) hq.symm
+          _ = algebraMap K A (pi : K) := p.t_mul_q }
   b_eq := p.b_eq
   c_eq := p.c_eq
 
@@ -154,6 +159,20 @@ def generalGaugeRawFiberEquivDisplayed
     · rfl
     · rfl
 
+private theorem eval₂_map_algHom
+    (f : A →ₐ[K] B) (point : Fin 3 → A) (P : GaugePolynomial K) :
+    MvPolynomial.eval₂ (algebraMap K B) (fun i => f (point i)) P =
+      f (MvPolynomial.eval₂ (algebraMap K A) point P) := by
+  have hcomp : f.toRingHom.comp (algebraMap K A) = algebraMap K B := by
+    ext r
+    exact f.commutes r
+  calc
+    MvPolynomial.eval₂ (algebraMap K B) (fun i => f (point i)) P =
+        MvPolynomial.eval₂ (f.toRingHom.comp (algebraMap K A))
+          (fun i => f (point i)) P := by rw [hcomp]
+    _ = f (MvPolynomial.eval₂ (algebraMap K A) point P) :=
+      (MvPolynomial.hom_eval₂ P (algebraMap K A) f.toRingHom point).symm
+
 namespace GeneralGaugeRawFiberPoint
 
 variable {G : K[X]} {pi : Kˣ} {b c : K}
@@ -165,17 +184,29 @@ def map (f : A →ₐ[K] B)
     GeneralGaugeRawFiberPoint G pi b c B where
   point := fun i => f (p.point i)
   pi_eq := by
-    have h := congrArg f p.pi_eq
-    rw [MvPolynomial.hom_eval₂] at h
-    simpa [RingHom.comp_apply] using h
+    calc
+      MvPolynomial.eval₂ (algebraMap K B) (fun i => f (p.point i))
+          (generalGaugePi G) =
+        f (MvPolynomial.eval₂ (algebraMap K A) p.point (generalGaugePi G)) :=
+          eval₂_map_algHom f p.point (generalGaugePi G)
+      _ = f (algebraMap K A (pi : K)) := congrArg f p.pi_eq
+      _ = algebraMap K B (pi : K) := f.commutes _
   b_eq := by
-    have h := congrArg f p.b_eq
-    rw [MvPolynomial.hom_eval₂] at h
-    simpa [RingHom.comp_apply] using h
+    calc
+      MvPolynomial.eval₂ (algebraMap K B) (fun i => f (p.point i))
+          (generalGaugeB G) =
+        f (MvPolynomial.eval₂ (algebraMap K A) p.point (generalGaugeB G)) :=
+          eval₂_map_algHom f p.point (generalGaugeB G)
+      _ = f (algebraMap K A b) := congrArg f p.b_eq
+      _ = algebraMap K B b := f.commutes _
   c_eq := by
-    have h := congrArg f p.c_eq
-    rw [MvPolynomial.hom_eval₂] at h
-    simpa [RingHom.comp_apply] using h
+    calc
+      MvPolynomial.eval₂ (algebraMap K B) (fun i => f (p.point i))
+          (generalGaugeC G) =
+        f (MvPolynomial.eval₂ (algebraMap K A) p.point (generalGaugeC G)) :=
+          eval₂_map_algHom f p.point (generalGaugeC G)
+      _ = f (algebraMap K A c) := congrArg f p.c_eq
+      _ = algebraMap K B c := f.commutes _
 
 @[simp]
 theorem map_point (f : A →ₐ[K] B)
