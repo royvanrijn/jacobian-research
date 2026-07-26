@@ -101,7 +101,7 @@ private theorem quadraticGaugeTail_B
       _ = (x * q) ^ (k - 2) := by congr; omega
   have hnat : 2 + (k - 2) = k := by omega
   have hcast : (2 : K) + ((k - 2 : ℕ) : K) = (k : K) := by
-    exact_mod_cast hnat
+    rw [← Nat.cast_add, hnat]
   have hcoeff :
       (2 : K) * d k + ((k - 2 : ℕ) : K) * d k = (k : K) * d k := by
     rw [← add_mul, hcast]
@@ -226,7 +226,8 @@ private theorem jacobianDet_quadraticGaugeBase
     cons_val_zero, cons_val_one, cons_val_two, head_cons, tail_cons,
     map_add, map_sub, Derivation.map_one_eq_zero,
     pderiv_mul, pderiv_pow, pderiv_C, pderiv_X_self, pderiv_X_of_ne,
-    ne_eq, Fin.reduceEq, not_false_eq_true, map_neg, map_ofNat]
+    Derivation.map_natCast, ne_eq, Fin.reduceEq, not_false_eq_true,
+    map_neg, map_ofNat]
   field_simp [ha]
   ring
 
@@ -247,7 +248,8 @@ private theorem quadraticGauge_crossDet
     cons_val_zero, cons_val_one, cons_val_two, head_cons, tail_cons,
     map_add, map_sub, Derivation.map_one_eq_zero,
     pderiv_mul, pderiv_pow, pderiv_C, pderiv_X_self, pderiv_X_of_ne,
-    ne_eq, Fin.reduceEq, not_false_eq_true, map_neg, map_ofNat]
+    Derivation.map_natCast, ne_eq, Fin.reduceEq, not_false_eq_true,
+    map_neg, map_ofNat]
   field_simp [ha]
   ring
 
@@ -264,7 +266,8 @@ private theorem pderiv_quadraticGaugeTailB
           (MvPolynomial.C 3 * Rp + quadraticGaugeU a * Rpp) *
             pderiv i (quadraticGaugeU a) := by
   simp only [quadraticGaugeTailB, map_add, pderiv_mul, pderiv_pow,
-    pderiv_C, zero_mul, zero_add, hR i, hRp i, map_ofNat]
+    pderiv_C, Derivation.map_natCast, zero_mul, zero_add, hR i, hRp i,
+    map_ofNat]
   ring
 
 private theorem pderiv_quadraticGaugeTailC
