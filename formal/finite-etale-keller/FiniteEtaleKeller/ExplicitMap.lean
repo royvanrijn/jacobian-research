@@ -60,8 +60,7 @@ theorem normalizedMap_eq_generalGaugeMap :
     normalizedMap = generalGaugeMap g5 := by
   have hdeg : g5.natDegree = 5 := by
     unfold g5
-    compute_degree!
-    norm_num [Polynomial.coeff_X]
+    compute_degree! <;> norm_num [Polynomial.coeff_X]
   funext i
   fin_cases i <;>
     simp [normalizedMap, integralMap, scaleOutput, generalGaugeMap,
