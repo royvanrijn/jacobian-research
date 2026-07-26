@@ -40,3 +40,5 @@ artifacts/verification/
 
 # Julia local environment products
 .julia/
+
+tmp/
