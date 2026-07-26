@@ -58,16 +58,14 @@ def jacobianOneMap : Fin 3 → M :=
 all-degree quadratic gauge attached to the seed `g5`. -/
 theorem normalizedMap_eq_generalGaugeMap :
     normalizedMap = generalGaugeMap g5 := by
-  have hdeg : g5.natDegree = 5 := by
-    unfold g5
-    compute_degree! <;> norm_num [Polynomial.coeff_X]
   funext i
   fin_cases i <;>
     simp [normalizedMap, integralMap, scaleOutput, generalGaugeMap,
       generalGaugePi, generalGaugeB, generalGaugeC, generalGaugeQ,
-      generalGaugeT, t, q, g5, hdeg, Polynomial.coeff_X,
+      generalGaugeT, t, q, g5, Polynomial.coeff_X,
       MvPolynomial.C_mul'] <;>
-    ring
+    ring_nf <;>
+    simp
 
 /-- The normalized quadratic gauge has Jacobian determinant `-2`. -/
 theorem jacobianDet_normalizedMap :
