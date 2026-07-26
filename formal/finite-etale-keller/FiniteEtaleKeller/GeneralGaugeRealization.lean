@@ -43,9 +43,11 @@ theorem generalGaugeSeedPolynomial_one_eq
   · subst n
     simp [generalGaugeSeedPolynomial]
   have hn4 : 4 ≤ n := by omega
+  have hX : (X : K[X]).coeff n = 0 := by simp [h1]
   by_cases hnN : n ≤ G.natDegree
-  · have hnmem : n ∈ Finset.Icc 4 G.natDegree := Finset.mem_Icc.mpr ⟨hn4, hnN⟩
-    simp [generalGaugeSeedPolynomial, h0, h1, h2, h3, hnmem,
+  · have hnmem : n ∈ Finset.Icc 4 G.natDegree :=
+      Finset.mem_Icc.mpr ⟨hn4, hnN⟩
+    simp [generalGaugeSeedPolynomial, h0, h1, h2, h3, hX, hnmem,
       Finset.sum_eq_single n]
   · have hcoeff : G.coeff n = 0 := by
       by_contra hne
@@ -53,7 +55,7 @@ theorem generalGaugeSeedPolynomial_one_eq
       omega
     have hnmem : n ∉ Finset.Icc 4 G.natDegree := by
       simp [Finset.mem_Icc, hn4, hnN]
-    simp [generalGaugeSeedPolynomial, h0, h1, h2, h3, hnmem, hcoeff]
+    simp [generalGaugeSeedPolynomial, h0, h1, h2, h3, hX, hnmem, hcoeff]
 
 /-- For the rooted translated seed and the paper's chosen third target, the
 literal generic inverse polynomial is exactly `P(a+S)`. -/
@@ -79,6 +81,78 @@ variable [CommRing B] [Algebra K B]
 def realizationSeed (P : K[X]) (a : K) : K[X] :=
   rootedTranslate P a
 
+@[simp]
+theorem realizationSeed_coeff_one
+    (P : K[X]) (a : K) :
+    (realizationSeed P a).coeff 1 = P.derivative.eval a := by
+  simp [realizationSeed, rootedTranslate]
+
+@[simp]
+theorem realizationSeed_coeff_three
+    (P : K[X]) (a : K) :
+    (realizationSeed P a).coeff 3 = (Polynomial.hasseDeriv 3 P).eval a := by
+  simp [realizationSeed, rootedTranslate]
+
+/-- The linear and cubic hypotheses of the general map are exactly the two
+admissibility conditions on the translation parameter. -/
+theorem realizationSeed_linear_ne_zero
+    (P : K[X]) (a : K) (h₁ : P.derivative.eval a ≠ 0) :
+    (realizationSeed P a).coeff 1 ≠ 0 := by
+  simpa using h₁
+
+theorem realizationSeed_cubic_ne_zero
+    (P : K[X]) (a : K)
+    (h₃ : (Polynomial.hasseDeriv 3 P).eval a ≠ 0) :
+    (realizationSeed P a).coeff 3 ≠ 0 := by
+  simpa using h₃
+
+/-- The inverse polynomial attached to the actual displayed map is separable
+whenever the prescribed polynomial is squarefree. -/
+theorem generalGaugeInversePolynomial_realization_separable
+    (P : K[X]) (a : K) (hP : Squarefree P)
+    (h₁ : P.derivative.eval a ≠ 0) :
+    (generalGaugeInversePolynomial
+      (realizationSeed P a) 1 0
+      (realizationTargetC P a (P.derivative.eval a))).Separable := by
+  change (generalGaugeInversePolynomial
+    (rootedTranslate P a) 1 0
+    (realizationTargetC P a (P.derivative.eval a))).Separable
+  rw [generalGaugeInversePolynomial_realization P a h₁]
+  exact translatePolynomial_separable P a
+    ((PerfectField.separable_iff_squarefree).2 hP)
+
+/-- The quotient transport used by the literal realization theorem, with the
+actual inverse polynomial exposed in the target type.  Making this equality
+transport a named equivalence prevents hidden dependent casts in naturality
+proofs. -/
+def generalGaugeRealizationQuotientHomEquiv
+    (P : K[X]) (a : K) (h₁ : P.derivative.eval a ≠ 0) :
+    (AdjoinRoot P →ₐ[K] A) ≃
+      (AdjoinRoot
+        (generalGaugeInversePolynomial
+          (realizationSeed P a) 1 0
+          (realizationTargetC P a (P.derivative.eval a))) →ₐ[K] A) := by
+  change (AdjoinRoot P →ₐ[K] A) ≃
+    (AdjoinRoot
+      (generalGaugeInversePolynomial
+        (rootedTranslate P a) 1 0
+        (realizationTargetC P a (P.derivative.eval a))) →ₐ[K] A)
+  rw [generalGaugeInversePolynomial_realization P a h₁]
+  exact translatedQuotientHomEquiv P a
+
+/-- The explicit quotient transport commutes with postcomposition in the test
+algebra. -/
+theorem generalGaugeRealizationQuotientHomEquiv_natural
+    (P : K[X]) (a : K) (h₁ : P.derivative.eval a ≠ 0)
+    (f : A →ₐ[K] B) (φ : AdjoinRoot P →ₐ[K] A) :
+    f.comp (generalGaugeRealizationQuotientHomEquiv
+      (A := A) P a h₁ φ) =
+      generalGaugeRealizationQuotientHomEquiv
+        (A := B) P a h₁ (f.comp φ) := by
+  apply DFunLike.ext _ _
+  intro x
+  rfl
+
 /-- The literal determinant-one map fiber realizing `K[T]/(P)`, for a supplied
 admissible translation parameter. -/
 def realizationJacobianOneFiberRepresentingEquiv
@@ -88,23 +162,14 @@ def realizationJacobianOneFiberRepresentingEquiv
     (AdjoinRoot P →ₐ[K] A) ≃
       GeneralGaugeJacobianOneFiberPoint
         (realizationSeed P a) 1
-        (realizationTargetC P a (P.derivative.eval a)) A := by
-  let G := realizationSeed P a
-  let c := realizationTargetC P a (P.derivative.eval a)
-  have hG₁ : G.coeff 1 ≠ 0 := by
-    simpa [G, realizationSeed] using rootedTranslate_linear_ne_zero P a h₁
-  have hG₃ : G.coeff 3 ≠ 0 := by
-    simpa [G, realizationSeed] using rootedTranslate_cubic_ne_zero P a h₃
-  have hinv : generalGaugeInversePolynomial G 1 0 c = translatePolynomial P a := by
-    simpa [G, c, realizationSeed] using
-      generalGaugeInversePolynomial_realization P a h₁
-  have hsep : (generalGaugeInversePolynomial G 1 0 c).Separable := by
-    rw [hinv]
-    exact translatePolynomial_separable P a
-      ((PerfectField.separable_iff_squarefree).2 hP)
-  refine (translatedQuotientHomEquiv (A := A) P a).trans ?_
-  rw [← hinv]
-  exact generalGaugeJacobianOneRepresentingEquiv G 1 c hG₁ hG₃ hsep A
+        (realizationTargetC P a (P.derivative.eval a)) A :=
+  (generalGaugeRealizationQuotientHomEquiv (A := A) P a h₁).trans
+    (generalGaugeJacobianOneRepresentingEquiv
+      (realizationSeed P a) 1
+      (realizationTargetC P a (P.derivative.eval a))
+      (realizationSeed_linear_ne_zero P a h₁)
+      (realizationSeed_cubic_ne_zero P a h₃)
+      (generalGaugeInversePolynomial_realization_separable P a hP h₁) A)
 
 /-- Naturality of the supplied-translation literal determinant-one
 realization. -/
@@ -118,29 +183,25 @@ theorem realizationJacobianOneFiberRepresentingEquiv_natural
           (A := A) P a hP h₁ h₃ φ) =
       realizationJacobianOneFiberRepresentingEquiv
         (A := B) P a hP h₁ h₃ (f.comp φ) := by
-  let G := realizationSeed P a
-  let c := realizationTargetC P a (P.derivative.eval a)
-  have hG₁ : G.coeff 1 ≠ 0 := by
-    simpa [G, realizationSeed] using rootedTranslate_linear_ne_zero P a h₁
-  have hG₃ : G.coeff 3 ≠ 0 := by
-    simpa [G, realizationSeed] using rootedTranslate_cubic_ne_zero P a h₃
-  have hinv : generalGaugeInversePolynomial G 1 0 c = translatePolynomial P a := by
-    simpa [G, c, realizationSeed] using
-      generalGaugeInversePolynomial_realization P a h₁
-  have hsep : (generalGaugeInversePolynomial G 1 0 c).Separable := by
-    rw [hinv]
-    exact translatePolynomial_separable P a
-      ((PerfectField.separable_iff_squarefree).2 hP)
   change GeneralGaugeJacobianOneFiberPoint.map f
-      (generalGaugeJacobianOneRepresentingEquiv G 1 c hG₁ hG₃ hsep A
-        (translatedQuotientHomEquiv (A := A) P a φ)) =
-    generalGaugeJacobianOneRepresentingEquiv G 1 c hG₁ hG₃ hsep B
-      (translatedQuotientHomEquiv (A := B) P a (f.comp φ))
+      (generalGaugeJacobianOneRepresentingEquiv
+        (realizationSeed P a) 1
+        (realizationTargetC P a (P.derivative.eval a))
+        (realizationSeed_linear_ne_zero P a h₁)
+        (realizationSeed_cubic_ne_zero P a h₃)
+        (generalGaugeInversePolynomial_realization_separable P a hP h₁) A
+        (generalGaugeRealizationQuotientHomEquiv (A := A) P a h₁ φ)) =
+    generalGaugeJacobianOneRepresentingEquiv
+      (realizationSeed P a) 1
+      (realizationTargetC P a (P.derivative.eval a))
+      (realizationSeed_linear_ne_zero P a h₁)
+      (realizationSeed_cubic_ne_zero P a h₃)
+      (generalGaugeInversePolynomial_realization_separable P a hP h₁) B
+      (generalGaugeRealizationQuotientHomEquiv
+        (A := B) P a h₁ (f.comp φ))
   rw [generalGaugeJacobianOneRepresentingEquiv_natural]
   congr 1
-  apply DFunLike.ext _ _
-  intro x
-  rfl
+  exact generalGaugeRealizationQuotientHomEquiv_natural P a h₁ f φ
 
 end SuppliedTranslation
 
@@ -193,6 +254,7 @@ theorem automaticJacobianOneFiberRepresentingEquiv_natural
     (chosenAdmissibleTranslation_cubic_ne_zero P hdeg) f φ
 
 #print axioms generalGaugeInversePolynomial_realization
+#print axioms generalGaugeRealizationQuotientHomEquiv_natural
 #print axioms realizationJacobianOneFiberRepresentingEquiv_natural
 #print axioms automaticJacobianOneFiberRepresentingEquiv_natural
 
