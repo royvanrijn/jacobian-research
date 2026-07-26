@@ -54,7 +54,8 @@ theorem generalGaugeSeedPolynomial_one_eq
     rw [Polynomial.coeff_add, htail]
     simp [Polynomial.coeff_C_mul_X, Polynomial.coeff_C_mul_X_pow]
   have hn4 : 4 ≤ n := by omega
-  have hX : (X : K[X]).coeff n = 0 := by simp [h1]
+  have hX : (X : K[X]).coeff n = 0 :=
+    Polynomial.coeff_X_of_ne_one h1
   by_cases hnN : n ≤ G.natDegree
   · have hnmem : n ∈ Finset.Icc 4 G.natDegree :=
       Finset.mem_Icc.mpr ⟨hn4, hnN⟩
@@ -240,7 +241,6 @@ theorem realizationJacobianOneFiberRepresentingEquiv_natural
         (A := B) P a h₁ (f.comp φ))
   rw [generalGaugeJacobianOneRepresentingEquiv_natural]
   congr 1
-  exact generalGaugeRealizationQuotientHomEquiv_natural P a h₁ f φ
 
 end SuppliedTranslation
 
