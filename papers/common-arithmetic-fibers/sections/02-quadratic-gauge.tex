@@ -26,8 +26,30 @@ The associated map $F_G=(\Pi,B,C):\A^3_K\to\A^3_K$ is
 Although the formula is long, it is polynomial and completely mechanical in
 the coefficients of $G$.
 
-The point of this particular arrangement appears in the inverse problem.  For
-a target $(\Pi,B,C)$ put
+The smallest seed recovers the counterexample that motivated this work.  Take
+\[
+ G(S)=S+S^3.
+\]
+Then
+\[
+ q=(1+xy)^2z+y^2(4+3xy),
+\]
+and \eqref{eq:gauge-map} becomes, coordinate for coordinate,
+\begin{equation}
+\begin{aligned}
+ \Pi={}&(1+xy)^3z+y^2(1+xy)(4+3xy),\\
+ B={}&y+3x(1+xy)^2z+3xy^2(4+3xy),\\
+ C={}&2x-3x^2y-x^3z.
+\end{aligned}
+\label{eq:announced-counterexample}
+\end{equation}
+This is exactly the map announced by Alp\"oge \cite{Alpoge}: there is no
+change of source coordinates, target coordinates, or scaling hidden in the
+comparison.  In particular, the general determinant theorem below specializes
+directly to its Jacobian determinant $-2$.
+
+The point of the construction appears in the inverse problem.  For a target
+$(\Pi,B,C)$ put
 \begin{equation}
  G_\Pi(S)=g_1S+\Pi(g_2S^2+g_3S^3)
           +\sum_{k=4}^Ng_k\Pi^kS^k
@@ -38,7 +60,7 @@ and
  E_{\Pi,B,C}(S)=G_\Pi(S)-\frac{g_1}{2}(BS^2+C).
  \label{eq:inverse}
 \end{equation}
-Thus a three-variable inverse problem will reduce to the single equation
+Thus a three-variable inverse problem reduces to the single equation
 $E_{\Pi,B,C}(S)=0$.
 
 For $(\pi,b,c)\in K^*\times K^2$, write $\mathcal F_{\pi,b,c}$ for the fiber
@@ -59,24 +81,43 @@ Choose $U,V\in K[S]$ with $UE+VE'=1$.  Evaluating at $s$ gives
 $V(s)E'(s)=1$.  Since $A$ is commutative, this is a two-sided inverse.
 \end{proof}
 
-\begin{proposition}[Quadratic-gauge fiber theorem]\label{prop:gauge}
+\begin{proposition}[Quadratic-gauge and localized-fiber theorem]
+\label{prop:gauge}
 The map $F_G$ satisfies
 \[
  \det DF_G=-2.
 \]
-Its generic inverse equation is $E_{\Pi,B,C}(S)=0$.  Let
-$(\pi,b,c)\in K^*\times K^2$.  If $E=E_{\pi,b,c}$ is squarefree of degree
-$N$, then for every commutative $K$-algebra $A$ there is a natural bijection
+Its generic inverse equation is $E_{\Pi,B,C}(S)=0$.  Fix
+$(\pi,b,c)\in K^*\times K^2$, put $E=E_{\pi,b,c}$, and let
+$\overline{E'}$ be the class of $E'$ in $K[S]/(E)$.  Then
+\begin{equation}
+ \boxed{
+ F_G^{-1}(\pi,b,c)
+ \simeq
+ \operatorname{Spec}\left((K[S]/(E))[1/\overline{E'}]\right).}
+ \label{eq:localized-fiber}
+\end{equation}
+Equivalently, for every commutative $K$-algebra $A$ there is a natural
+bijection
+\begin{equation}
+ \operatorname{Hom}_{K\text{-alg}}
+ \left((K[S]/(E))[1/\overline{E'}],A\right)
+ \simeq \mathcal F_{\pi,b,c}(A).
+ \label{eq:localized-natural-fiber-equivalence}
+\end{equation}
+
+If $E$ is squarefree of degree $N$, then $\overline{E'}$ is already a unit in
+$K[S]/(E)$.  The localization disappears and we obtain
 \begin{equation}
  \operatorname{Hom}_{K\text{-alg}}(K[S]/(E),A)
- \simeq \mathcal F_{\pi,b,c}(A).
+ \simeq \mathcal F_{\pi,b,c}(A),
  \label{eq:natural-fiber-equivalence}
 \end{equation}
-Consequently,
+together with
 \[
- F_G^{-1}(\pi,b,c)\simeq\Spec K[S]/(E)
+ F_G^{-1}(\pi,b,c)\simeq\Spec K[S]/(E).
 \]
-as schemes.  This is a full Keller fiber of rank $N$.
+This is a full Keller fiber of rank $N$.
 \end{proposition}
 
 \begin{proof}
@@ -120,9 +161,8 @@ to $(S,Q)$ is
 The factors $D^{-1}$ and $-2D$ cancel.  Hence $\det DF_G=-2$ on the dense open
 set $t\neq0$, and therefore everywhere.
 
-We now identify the entire fiber, not just its field-valued points.  Fix
-$(\pi,b,c)$ and abbreviate $E=E_{\pi,b,c}$.  Let $A$ be an arbitrary
-commutative $K$-algebra.  An $A$-point $(x,y,z)$ of the fiber satisfies
+We now identify the entire fiber.  Let $A$ be an arbitrary commutative
+$K$-algebra.  An $A$-point $(x,y,z)$ above $(\pi,b,c)$ satisfies
 \[
  tq=\pi.
 \]
@@ -139,11 +179,9 @@ are therefore defined on every point of the fiber.  Equations
  \qquad E(S)=0,
  \qquad D=\frac{E'(S)}{g_1}.
 \]
-Thus every source point gives a root of $E$ in $A$.
+Thus every source point gives a root $S$ of $E$ for which $E'(S)$ is a unit.
 
-Conversely, suppose $s\in A$ satisfies $E(s)=0$.  Squarefreeness and
-characteristic zero make $E$ separable, so Lemma~\ref{lem:derivative-unit}
-shows that $E'(s)$ is a unit.  Set
+Conversely, suppose $s\in A$ satisfies $E(s)=0$ and $E'(s)\in A^*$.  Put
 \[
  d=\frac{E'(s)}{g_1},
 \]
@@ -184,15 +222,20 @@ recovers
  D=t^{-1},\qquad x=S/D,\qquad y=Q-\pi S,\qquad q=\pi D,
 \]
 and then $z$ from the definition of $q$.  Starting with a root, the marked
-coordinate is again $s$.
+coordinate is again $s$.  All formulas use ring operations and the inverse of
+the explicitly specified unit $E'(s)$, so they commute with homomorphisms of
+test algebras.
 
-All formulas use ring operations and the inverse of the explicitly proved unit
-$d$.  They therefore commute with homomorphisms $A\to A'$ of commutative
-$K$-algebras.  The universal property of $K[S]/(E)$ identifies its algebra maps
-to $A$ with roots of $E$ in $A$, giving the natural equivalence
-\eqref{eq:natural-fiber-equivalence}.  Yoneda's lemma turns this into the
-claimed scheme isomorphism.  In particular, no localization or nilpotent
-structure has been discarded.
+The universal property of $K[S]/(E)$ identifies its maps to $A$ with roots of
+$E$ in $A$.  Localizing at $\overline{E'}$ imposes exactly the additional
+condition that $E'(s)$ be a unit.  This proves
+\eqref{eq:localized-natural-fiber-equivalence}, and Yoneda's lemma gives
+\eqref{eq:localized-fiber}.  If $E$ is squarefree, choose $U,V$ with
+$UE+VE'=1$.  Modulo $E$, the class of $V$ is an inverse for
+$\overline{E'}$, so the localization is just $K[S]/(E)$.  This proves the
+squarefree form \eqref{eq:natural-fiber-equivalence}.  Notice that the
+localized statement itself requires no separability hypothesis: it removes
+precisely the ramified part of the inverse equation.
 
 It remains to check the generic degree.  Put
 \[
@@ -217,17 +260,17 @@ $\gdeg(F_G)=N$.
 \end{proof}
 
 \begin{remark}[Which hypotheses are used where]\label{rem:gauge-hypotheses}
-The fiber reconstruction uses less than the construction of the displayed
-map.  It needs $\pi$ to be a unit, $E$ to be separable, and the identity
+The localized fiber theorem uses only that $\pi$, $g_1$, and $g_3$ are
+nonzero, together with the identity
 \[
  E'(S)=g_1\bigl(1-bS+S\beta(\pi,S)+\pi S^2\bigr).
 \]
-Once the coefficient $g_1/g_3$ in the source formula is available, no further
-polynomial identity is needed for the root-to-source reconstruction.  The
-condition $g_3\neq0$ is what makes that source coefficient meaningful.  For a
-translated polynomial $P(a+S)-P(a)$, the cubic coefficient is the third Hasse
-derivative at $a$, equal to $P'''(a)/3!$ in characteristic zero.  The Lean
-development follows the same separation.
+Squarefreeness is needed only to conclude that $E'$ is invertible at every root
+and hence that no localization remains.  The condition $g_3\neq0$ is what
+makes the source coefficient $g_1/g_3$ meaningful.  For a translated
+polynomial $P(a+S)-P(a)$, the cubic coefficient is the third Hasse derivative
+at $a$, equal to $P'''(a)/3!$ in characteristic zero.  The Lean development
+follows the same separation.
 \end{remark}
 
 \begin{corollary}[Jacobian-one effective form]\label{cor:effective-gauge}
@@ -241,8 +284,15 @@ Then
  \det D\widetilde F_G=1,
  \qquad \gdeg(\widetilde F_G)=N.
 \]
-For every $(\pi,b,c)\in K^*\times K^2$ for which $E_{\pi,b,c}$ is
-squarefree of degree $N$,
+For every $(\pi,b,c)\in K^*\times K^2$,
+\[
+ \widetilde F_G^{-1}\left(\pi,-\frac b2,c\right)
+ \simeq
+ \operatorname{Spec}\left(
+   (K[S]/(E_{\pi,b,c}))[1/\overline{E_{\pi,b,c}'}]
+ \right).
+\]
+If $E_{\pi,b,c}$ is squarefree of degree $N$, this reduces to
 \[
  \widetilde F_G^{-1}\left(\pi,-\frac b2,c\right)
  \simeq\Spec K[S]/(E_{\pi,b,c}).
