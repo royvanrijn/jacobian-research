@@ -118,7 +118,7 @@ A_numerator_to_first_order = sp.series(
     0,
     2,
 ).removeO()
-assert sp.expand(A_numerator_to_first_order) == 0
+assert sp.factor(A_numerator_to_first_order) == 0
 assert sp.factor(1 + kappa + a_endpoint * (2 + kappa)) == 0
 
 
