@@ -78,6 +78,7 @@ theorem generalGaugeQ_totalDegree (G : K[X]) :
     have h := totalDegree_pow_le_bound (p := generalGaugeT (K := K))
       (a := 2) (n := 2) ht
     norm_num at h ⊢
+    exact h
   have hfirst :
       ((generalGaugeT (K := K)) ^ 2 * MvPolynomial.X 2).totalDegree ≤ 5 := by
     simpa using
@@ -90,7 +91,6 @@ theorem generalGaugeQ_totalDegree (G : K[X]) :
       (p := (MvPolynomial.X 1 : GaugePolynomial K))
       (a := 1) (n := 2) (by simp)
     norm_num at h ⊢
-    exact h
   have hct :
       (MvPolynomial.C (3 : K) * generalGaugeT).totalDegree ≤ 2 :=
     totalDegree_C_mul_le_bound 3 ht

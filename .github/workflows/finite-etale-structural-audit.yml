@@ -6,6 +6,10 @@ on:
       - scripts/verify_universal_quadratic_gauge.py
       - scripts/verify_universal_quadratic_gauge.sing
       - scripts/verify_finite_etale_keller_fibers.py
+      - scripts/verify_weighted_tangent_formula.py
+      - scripts/verify_same_degree_stable_inequivalence.py
+      - scripts/verify_quadratic_weighted_stable_separation.py
+      - scripts/verify_quadratic_cancellation_intersection.py
       - formal/finite-etale-keller/**
       - papers/common-arithmetic-fibers/**
       - .github/workflows/finite-etale-structural-audit.yml
@@ -37,8 +41,15 @@ jobs:
           python -m pip install --requirement requirements.txt
           sudo apt-get update
           sudo apt-get install --yes --no-install-recommends singular
-      - name: Run the universal structural certificate
+      - name: Run the universal quadratic-gauge certificate
         run: python scripts/verify_universal_quadratic_gauge.py
+      - name: Run the weighted tangent formula audit
+        run: python scripts/verify_weighted_tangent_formula.py
+      - name: Recheck the stable-separation invariants
+        run: |
+          python scripts/verify_same_degree_stable_inequivalence.py
+          python scripts/verify_quadratic_weighted_stable_separation.py
+          python scripts/verify_quadratic_cancellation_intersection.py
       - name: Run the independent generic degree-six Singular audit
         run: Singular -q scripts/verify_universal_quadratic_gauge.sing
       - name: Run the concrete finite-etale regressions

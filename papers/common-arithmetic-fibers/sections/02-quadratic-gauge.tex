@@ -1,19 +1,19 @@
-\section{The universal quadratic gauge}\label{sec:gauge}
+\section{The quadratic gauge}\label{sec:gauge}
 
-Let
+The realization theorem rests on one explicit construction.  Let
 \begin{equation}
  G(S)=g_1S+g_2S^2+\cdots+g_NS^N\in K[S],
  \qquad g_1g_3g_N\neq0.
  \label{eq:seed}
 \end{equation}
-In source coordinates $(x,y,z)$ put
+In source coordinates $(x,y,z)$ define
 \begin{equation}
  t=1+xy,
  \qquad
  q=t^2z+\frac{g_1}{g_3}y^2(1+3t).
  \label{eq:tq}
 \end{equation}
-Define $F_G=(\Pi,B,C):\A^3_K\to\A^3_K$ by
+The associated map $F_G=(\Pi,B,C):\A^3_K\to\A^3_K$ is
 \begin{align}
  \Pi={}&tq,\notag\\
  B={}&y+3\frac{g_3}{g_1}xq+2\frac{g_2}{g_1}tq
@@ -23,9 +23,33 @@ Define $F_G=(\Pi,B,C):\A^3_K\to\A^3_K$ by
        -\sum_{k=4}^N(k-2)\frac{g_k}{g_1}(xq)^k.
  \label{eq:gauge-map}
 \end{align}
-The formula is polynomial and uses only the coefficients of $G$.
+Although the formula is long, it is polynomial and completely mechanical in
+the coefficients of $G$.
 
-For a target $(\Pi,B,C)$ define
+The smallest seed recovers the counterexample that motivated this work.  Take
+\[
+ G(S)=S+S^3.
+\]
+Then
+\[
+ q=(1+xy)^2z+y^2(4+3xy),
+\]
+and \eqref{eq:gauge-map} becomes, coordinate for coordinate,
+\begin{equation}
+\begin{aligned}
+ \Pi={}&(1+xy)^3z+y^2(1+xy)(4+3xy),\\
+ B={}&y+3x(1+xy)^2z+3xy^2(4+3xy),\\
+ C={}&2x-3x^2y-x^3z.
+\end{aligned}
+\label{eq:announced-counterexample}
+\end{equation}
+This is exactly the map announced by Alp\"oge \cite{Alpoge}: there is no
+change of source coordinates, target coordinates, or scaling hidden in the
+comparison.  In particular, the general determinant theorem below specializes
+directly to its Jacobian determinant $-2$.
+
+The point of the construction appears in the inverse problem.  For a target
+$(\Pi,B,C)$ put
 \begin{equation}
  G_\Pi(S)=g_1S+\Pi(g_2S^2+g_3S^3)
           +\sum_{k=4}^Ng_k\Pi^kS^k
@@ -36,8 +60,11 @@ and
  E_{\Pi,B,C}(S)=G_\Pi(S)-\frac{g_1}{2}(BS^2+C).
  \label{eq:inverse}
 \end{equation}
-For $(\pi,b,c)\in K^*\times K^2$, let $\mathcal F_{\pi,b,c}$ denote the
-fiber functor
+Thus a three-variable inverse problem reduces to the single equation
+$E_{\Pi,B,C}(S)=0$.
+
+For $(\pi,b,c)\in K^*\times K^2$, write $\mathcal F_{\pi,b,c}$ for the fiber
+functor
 \[
  \mathcal F_{\pi,b,c}(A)
  =\{(x,y,z)\in A^3:F_G(x,y,z)=(\pi,b,c)\}
@@ -51,31 +78,50 @@ $s\in A$ satisfy $E(s)=0$.  Then $E'(s)$ is a unit of $A$.
 
 \begin{proof}
 Choose $U,V\in K[S]$ with $UE+VE'=1$.  Evaluating at $s$ gives
-$V(s)E'(s)=1$.  Since $A$ is commutative, $V(s)$ is the inverse of $E'(s)$.
+$V(s)E'(s)=1$.  Since $A$ is commutative, this is a two-sided inverse.
 \end{proof}
 
-\begin{proposition}[Quadratic-gauge fiber theorem]\label{prop:gauge}
+\begin{proposition}[Quadratic-gauge and localized-fiber theorem]
+\label{prop:gauge}
 The map $F_G$ satisfies
 \[
  \det DF_G=-2.
 \]
-Its generic inverse equation is $E_{\Pi,B,C}(S)=0$.  Let
-$(\pi,b,c)\in K^*\times K^2$.  If $E=E_{\pi,b,c}$ is squarefree of degree
-$N$, then for every commutative $K$-algebra $A$ there is a natural bijection
+Its generic inverse equation is $E_{\Pi,B,C}(S)=0$.  Fix
+$(\pi,b,c)\in K^*\times K^2$, put $E=E_{\pi,b,c}$, and let
+$\overline{E'}$ be the class of $E'$ in $K[S]/(E)$.  Then
+\begin{equation}
+ \boxed{
+ F_G^{-1}(\pi,b,c)
+ \simeq
+ \operatorname{Spec}\left((K[S]/(E))[1/\overline{E'}]\right).}
+ \label{eq:localized-fiber}
+\end{equation}
+Equivalently, for every commutative $K$-algebra $A$ there is a natural
+bijection
+\begin{equation}
+ \operatorname{Hom}_{K\text{-alg}}
+ \left((K[S]/(E))[1/\overline{E'}],A\right)
+ \simeq \mathcal F_{\pi,b,c}(A).
+ \label{eq:localized-natural-fiber-equivalence}
+\end{equation}
+
+If $E$ is squarefree of degree $N$, then $\overline{E'}$ is already a unit in
+$K[S]/(E)$.  The localization disappears and we obtain
 \begin{equation}
  \operatorname{Hom}_{K\text{-alg}}(K[S]/(E),A)
- \simeq \mathcal F_{\pi,b,c}(A).
+ \simeq \mathcal F_{\pi,b,c}(A),
  \label{eq:natural-fiber-equivalence}
 \end{equation}
-Consequently, scheme-theoretically,
+together with
 \[
  F_G^{-1}(\pi,b,c)\simeq\Spec K[S]/(E).
 \]
-In particular, this is a Keller fiber of rank $N$.
+This is a full Keller fiber of rank $N$.
 \end{proposition}
 
 \begin{proof}
-On $t\neq0$ introduce
+We begin on the open set $t\neq0$.  Introduce the coordinates
 \[
  S=\frac{x}{t},
  \qquad Q=y+xq,
@@ -86,67 +132,60 @@ A direct differentiation gives
  \det\frac{\partial(\Pi,S,Q)}{\partial(x,y,z)}=D^{-1}.
  \label{eq:source-chart-jacobian}
 \end{equation}
-Now set
+Next define
 \begin{equation}
  \beta(\Pi,S)
  =\frac{G_\Pi'(S)/g_1-1-\Pi S^2}{S}.
  \label{eq:beta}
 \end{equation}
-The numerator is divisible by $S$.  Substitution in
-\eqref{eq:gauge-map} gives the two polynomial identities
+The numerator is divisible by $S$.  Substituting the definitions into
+\eqref{eq:gauge-map} gives the two identities
 \begin{equation}
  B=Q+\beta(\Pi,S),
  \qquad
  C=\frac{2G_\Pi(S)}{g_1}-BS^2.
  \label{eq:marked-line-identities}
 \end{equation}
-The second identity is exactly $E_{\Pi,B,C}(S)=0$, while differentiation
-gives
+The second identity is precisely $E_{\Pi,B,C}(S)=0$.  Differentiating it gives
 \begin{equation}
  D=\frac{G_\Pi'(S)}{g_1}-BS
   =\frac{E_{\Pi,B,C}'(S)}{g_1}.
  \label{eq:D-derivative}
 \end{equation}
-At fixed $\Pi$, differentiating \eqref{eq:marked-line-identities} with
-respect to $(S,Q)$ gives
+At fixed $\Pi$, the Jacobian of \eqref{eq:marked-line-identities} with respect
+to $(S,Q)$ is
 \begin{equation}
  \det\frac{\partial(B,C)}{\partial(S,Q)}=-2D.
  \label{eq:plane-jacobian}
 \end{equation}
-Combining \eqref{eq:source-chart-jacobian} and
-\eqref{eq:plane-jacobian} proves $\det DF_G=-2$ on the dense chart
-$t\neq0$, hence polynomially everywhere.
+The factors $D^{-1}$ and $-2D$ cancel.  Hence $\det DF_G=-2$ on the dense open
+set $t\neq0$, and therefore everywhere.
 
-It remains to identify the full fiber.  Fix $(\pi,b,c)$ and abbreviate
-$E=E_{\pi,b,c}$.  Let $A$ be an arbitrary commutative $K$-algebra, and
-denote the images of $\pi,b,c$ in $A$ by the same letters.  An $A$-point
-$(x,y,z)$ of the fiber satisfies
+We now identify the entire fiber.  Let $A$ be an arbitrary commutative
+$K$-algebra.  An $A$-point $(x,y,z)$ above $(\pi,b,c)$ satisfies
 \[
  tq=\pi.
 \]
-Since $\pi$ is a unit, both $t$ and $q$ are units in $A$.  Thus
+Because $\pi$ is a unit, both $t$ and $q$ are units.  The chart coordinates
 \[
  S=xt^{-1},
  \qquad Q=y+xq,
  \qquad D=t^{-1}
 \]
-are defined globally on the whole fiber, not merely on its field-valued
-points.  The polynomial identities \eqref{eq:marked-line-identities} and
-\eqref{eq:D-derivative} give
+are therefore defined on every point of the fiber.  Equations
+\eqref{eq:marked-line-identities} and \eqref{eq:D-derivative} give
 \[
  Q+\beta(\pi,S)=b,
  \qquad E(S)=0,
  \qquad D=\frac{E'(S)}{g_1}.
 \]
-Hence every fiber point determines a root of $E$ in $A$.
+Thus every source point gives a root $S$ of $E$ for which $E'(S)$ is a unit.
 
-Conversely, let $s\in A$ satisfy $E(s)=0$.  In characteristic zero,
-squarefreeness implies separability, so Lemma~\ref{lem:derivative-unit} makes
-$E'(s)$ a unit.  Therefore
+Conversely, suppose $s\in A$ satisfies $E(s)=0$ and $E'(s)\in A^*$.  Put
 \[
- d=\frac{E'(s)}{g_1}
+ d=\frac{E'(s)}{g_1},
 \]
-is a unit as well.  Put
+and define
 \[
  Q=b-\beta(\pi,s),
  \qquad
@@ -156,44 +195,49 @@ is a unit as well.  Put
  \qquad
  y=Q-\pi s,
 \]
-and then
+followed by
 \[
  q=\pi d,
  \qquad
  z=d^2\left(q-\frac{g_1}{g_3}y^2(1+3t)\right).
 \]
-The derivative identity is precisely
+The derivative identity says exactly that
 \[
  d=1-sQ+\pi s^2.
 \]
-A direct ring calculation, valid in every commutative ring, now gives
+A calculation in the ring $A$ now gives
 \[
  1+xy=t,
  \qquad
  t^2z+\frac{g_1}{g_3}y^2(1+3t)=q,
  \qquad tq=\pi.
 \]
-The first marked identity gives $B=b$.  Since $E(s)=0$, the second gives
-$C=c$.  Thus these formulas reconstruct an $A$-point of the fiber.
+The first identity in \eqref{eq:marked-line-identities} gives $B=b$, and the
+root equation gives $C=c$.  We have reconstructed a point of the original
+fiber.
 
-The two constructions are inverse.  Starting from a source point one recovers
+The two procedures undo one another.  Starting with a source point, one
+recovers
 \[
  D=t^{-1},\qquad x=S/D,\qquad y=Q-\pi S,\qquad q=\pi D,
 \]
-and the defining equation for $q$ recovers $z$.  Starting from a root, the
-recovered marked coordinate is again $s$.
+and then $z$ from the definition of $q$.  Starting with a root, the marked
+coordinate is again $s$.  All formulas use ring operations and the inverse of
+the explicitly specified unit $E'(s)$, so they commute with homomorphisms of
+test algebras.
 
-Finally, every displayed formula uses only ring operations, algebra maps, and
-inversion of an explicitly supplied unit.  If $f:A\to A'$ is a morphism of
-commutative $K$-algebras, then $f(d^{-1})=f(d)^{-1}$, so both constructions
-commute with $f$.  The universal property of the quotient identifies roots of
-$E$ in $A$ with $K$-algebra maps $K[S]/(E)\to A$ and turns the preceding
-bijection into the natural equivalence \eqref{eq:natural-fiber-equivalence}.
-Yoneda's lemma gives the asserted scheme isomorphism.  In particular, no
-localization, nilpotent structure, or additional component is hidden by the
-reconstruction.
+The universal property of $K[S]/(E)$ identifies its maps to $A$ with roots of
+$E$ in $A$.  Localizing at $\overline{E'}$ imposes exactly the additional
+condition that $E'(s)$ be a unit.  This proves
+\eqref{eq:localized-natural-fiber-equivalence}, and Yoneda's lemma gives
+\eqref{eq:localized-fiber}.  If $E$ is squarefree, choose $U,V$ with
+$UE+VE'=1$.  Modulo $E$, the class of $V$ is an inverse for
+$\overline{E'}$, so the localization is just $K[S]/(E)$.  This proves the
+squarefree form \eqref{eq:natural-fiber-equivalence}.  Notice that the
+localized statement itself requires no separability hypothesis: it removes
+precisely the ramified part of the inverse equation.
 
-It remains to compute the geometric degree.  Put
+It remains to check the generic degree.  Put
 \[
  L=K(\Pi,B),\qquad \lambda=\frac{g_1}{2},
 \]
@@ -201,36 +245,32 @@ and write
 \[
  E_{\Pi,B,C}(S)=H_{\Pi,B}(S)-\lambda C\in L[C][S].
 \]
-This polynomial has degree $N$ in $S$.  Its leading coefficient is
-$g_3\Pi$ when $N=3$ and $g_N\Pi^N$ when $N\geq4$; in either case it is a
-unit of $L[C]$.  Hence $E_{\Pi,B,C}$ is primitive as a polynomial in $S$
-over the UFD $L[C]$.
+This polynomial has degree $N$ in $S$.  Its leading coefficient is $g_3\Pi$
+when $N=3$ and $g_N\Pi^N$ when $N\geq4$, so it is a unit of $L[C]$.  Hence
+$E_{\Pi,B,C}$ is primitive over the UFD $L[C]$.
 
-Suppose that it factored nontrivially over $L(C)[S]$.  Gauss's lemma would
-give a nontrivial factorization in $L[C][S]$.  Since its degree in $C$ is one,
-one factor, say $A(S)$, would be independent of $C$.  Comparing coefficients
-of $C$ would then show that $A(S)$ divides the nonzero scalar $-\lambda$ in
-$L[S]$.  Thus $A$ is a unit, a contradiction.  Therefore
-$E_{\Pi,B,C}$ is irreducible of degree $N$ over $K(\Pi,B,C)$; in
-characteristic zero it is automatically separable.  The generic version of
-the reconstruction identifies the generic source algebra with
-$K(\Pi,B,C)[S]/(E_{\Pi,B,C})$, a field extension of degree $N$.  Hence
+Assume it factors nontrivially over $L(C)[S]$.  Gauss's lemma then gives a
+factorization in $L[C][S]$.  Since the polynomial is linear in $C$, one factor,
+say $A(S)$, is independent of $C$.  Comparing the coefficient of $C$ shows
+that $A(S)$ divides the nonzero scalar $-\lambda$ in $L[S]$.  Thus $A$ is a
+unit, a contradiction.  Therefore $E_{\Pi,B,C}$ is irreducible of degree $N$
+over $K(\Pi,B,C)$.  The generic reconstruction identifies the source function
+field with the corresponding degree-$N$ extension, and hence
 $\gdeg(F_G)=N$.
 \end{proof}
 
-\begin{remark}[Logical separation of the hypotheses]\label{rem:gauge-hypotheses}
-The represented-fiber argument has a smaller logical core than the displayed
-map.  It uses that $\pi$ is a unit, that $E$ is separable, and that
+\begin{remark}[Which hypotheses are used where]\label{rem:gauge-hypotheses}
+The localized fiber theorem uses only that $\pi$, $g_1$, and $g_3$ are
+nonzero, together with the identity
 \[
  E'(S)=g_1\bigl(1-bS+S\beta(\pi,S)+\pi S^2\bigr).
 \]
-Once the source coefficient $g_1/g_3$ is supplied, the root/source
-reconstruction itself does not use a further polynomial identity.  The
-condition $g_3\neq0$ is needed to obtain that coefficient from the explicit
-quadratic gauge.  For a translated polynomial $P(a+S)-P(a)$, the natural
-cubic coefficient is the third Hasse derivative at $a$; in characteristic
-zero it is $P'''(a)/3!$.  This separation is also the organization used by
-the Lean formalization.
+Squarefreeness is needed only to conclude that $E'$ is invertible at every root
+and hence that no localization remains.  The condition $g_3\neq0$ is what
+makes the source coefficient $g_1/g_3$ meaningful.  For a translated
+polynomial $P(a+S)-P(a)$, the cubic coefficient is the third Hasse derivative
+at $a$, equal to $P'''(a)/3!$ in characteristic zero.  The Lean development
+follows the same separation.
 \end{remark}
 
 \begin{corollary}[Jacobian-one effective form]\label{cor:effective-gauge}
@@ -244,38 +284,43 @@ Then
  \det D\widetilde F_G=1,
  \qquad \gdeg(\widetilde F_G)=N.
 \]
-For every $(\pi,b,c)\in K^*\times K^2$ for which $E_{\pi,b,c}$ is
-squarefree of degree $N$,
+For every $(\pi,b,c)\in K^*\times K^2$,
+\[
+ \widetilde F_G^{-1}\left(\pi,-\frac b2,c\right)
+ \simeq
+ \operatorname{Spec}\left(
+   (K[S]/(E_{\pi,b,c}))[1/\overline{E_{\pi,b,c}'}]
+ \right).
+\]
+If $E_{\pi,b,c}$ is squarefree of degree $N$, this reduces to
 \[
  \widetilde F_G^{-1}\left(\pi,-\frac b2,c\right)
  \simeq\Spec K[S]/(E_{\pi,b,c}).
 \]
-In particular, every target with $b=0$ is fixed by the normalization.
-Moreover, in total degree,
+In particular, a target with $b=0$ is unchanged by the normalization.
+Moreover,
 \[
  \deg\Pi\leq7,
  \qquad \deg B\leq6N+2,
  \qquad \deg C\leq6N,
 \]
-and therefore
+so
 \[
  \boxed{\max_i\deg(\widetilde F_G)_i\leq6N+2.}
 \]
 \end{corollary}
 
 \begin{proof}
-The map $L$ is a linear automorphism of determinant $-1/2$.  The determinant,
-geometric-degree, and fiber statements therefore follow from
-Proposition~\ref{prop:gauge}.
+The linear map $L$ has determinant $-1/2$, so the determinant, geometric
+degree, and fiber statements follow from Proposition~\ref{prop:gauge}.
 
 For the degree estimate, $\deg t=2$ and $\deg q\leq5$, hence
-$\deg\Pi\leq7$.  The summand of $B$ indexed by $k\geq4$ has degree at most
+$\deg\Pi\leq7$.  A summand of $B$ indexed by $k\geq4$ has degree at most
 \[
- 2\deg t+(k-2)+k\deg q\leq4+(k-2)+5k=6k+2,
+ 2\deg t+(k-2)+k\deg q\leq4+(k-2)+5k=6k+2.
 \]
-while the three terms preceding the sum have degrees at most $1$, $6$, and
-$7$.  Thus $\deg B\leq6N+2$.  Similarly, the summand $(xq)^k$ in $C$ has
-degree at most $6k$, while the preceding terms have degrees at most $3$ and
-$4$, so $\deg C\leq6N$.  Linear output normalization does not change these
-bounds.
+The preceding terms have degrees at most $1$, $6$, and $7$, so
+$\deg B\leq6N+2$.  Similarly, $(xq)^k$ has degree at most $6k$, while the
+remaining terms of $C$ have degree at most $4$.  Thus $\deg C\leq6N$.
+A linear output normalization does not change these bounds.
 \end{proof}

@@ -35,7 +35,7 @@ theorem rootedTranslate_natDegree
     calc
       (Polynomial.taylor a P - C (P.eval a)).natDegree ≤
           max (Polynomial.taylor a P).natDegree (C (P.eval a)).natDegree :=
-        Polynomial.natDegree_sub_le
+        Polynomial.natDegree_sub_le (Polynomial.taylor a P) (C (P.eval a))
       _ = P.natDegree := by simp
   have hP : P ≠ 0 := by
     intro h
@@ -44,7 +44,10 @@ theorem rootedTranslate_natDegree
     change (Polynomial.taylor a P - C (P.eval a)).coeff P.natDegree ≠ 0
     rw [Polynomial.coeff_sub, Polynomial.coeff_taylor_natDegree]
     have hne : P.natDegree ≠ 0 := Nat.ne_of_gt hpos
-    simp [hne, Polynomial.leadingCoeff_ne_zero.mpr hP]
+    have hconstant : (C (P.eval a)).coeff P.natDegree = 0 :=
+      Polynomial.coeff_C_of_ne_zero hne
+    rw [hconstant, sub_zero]
+    exact Polynomial.leadingCoeff_ne_zero.mpr hP
   exact le_antisymm hupper (Polynomial.le_natDegree_of_ne_zero hcoeff)
 
 @[simp]

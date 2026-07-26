@@ -1,193 +1,151 @@
-\section{Consequences, verification, provenance, and literature boundary}
+\section{Consequences, checks, and scope}
 
-Theorem~\ref{thm:main} is a realization theorem, not merely a source of
-counterexamples.  Some immediate applications are:
-\begin{enumerate}
-\item Every squarefree polynomial of degree at least three is, after one
-      translation of its variable, the exact inverse polynomial of a full
-      Jacobian-one Keller fiber.
-\item A degree-$N$ input has an explicit realization in $\A^3$ of coordinate
-      degree at most $6N+2$.
-\item Every squarefree intersective polynomial over $\Q$ of degree at least
-      three, with no rational root but with a real root, transfers to a
-      Hasse-failing Keller fiber without stabilization or auxiliary factors.
-\item Any real signature, splitting field, or collection of local
-      factorization patterns already carried by a finite \'etale algebra is
-      carried by the corresponding Keller fiber, compatibly with extension of
-      the ground field.
-\item Connected fibers require no additional geometric argument: start with
-      an irreducible polynomial.
-\end{enumerate}
+The main theorem is a prescribed-fiber realization result.  Given a finite
+\'etale algebra, it builds a Keller map whose full fiber is that algebra.  The
+classification by rank is a useful corollary, but it is not the main point: two
+finite \'etale algebras of the same rank can have completely different field
+decompositions, Galois actions, signatures, and local behavior, and the
+construction distinguishes all of that data.
 
-The fourth item is deliberately a transfer statement.  It does not solve an
-inverse Galois problem or assert that arbitrary independently prescribed
-local algebras globalize; it says that every arithmetic realization which
-already exists is preserved exactly by the Keller construction.
+Several consequences are immediate.  A squarefree polynomial of degree at
+least three becomes an exact inverse polynomial after one translation; an
+irreducible polynomial gives a connected fiber; and a degree-$N$ input is
+realized in $\A^3$ with coordinate degree at most $6N+2$.
 
-The realization is not unique.  Separate boundary calculations in the
-accompanying research repository show that the same finite \'etale algebra
-can occur in stably inequivalent weighted, cancellation, and quadratic-gauge
-Keller maps.  That stable-classification problem is logically independent of
-the present theorem and is best treated in a sequel, tentatively titled
-\emph{One Fiber, Many Keller Maps}.
+More importantly, the construction does not forget the arithmetic structure.
+If the original algebra has a particular real signature, splitting field,
+Galois action, or collection of local factorizations, the fiber has the same
+data.  The same applies to local and rational points.  Thus an intersective
+polynomial with no rational root gives a Hasse-failing Keller fiber directly,
+without adding auxiliary factors or extra variables.
 
-\paragraph{Literature boundary.}
-A dated search completed on 24 July 2026 found no earlier statement that every
-finite \'etale algebra of rank at least three is a full fiber of a polynomial
-Keller map, nor the resulting rank classification.  This is necessarily a
-qualified priority statement: bibliographic searches can miss unpublished
-work, differently phrased results, and sources not indexed electronically.
-The appropriate claim is therefore ``to our knowledge'', not an absolute
-firstness assertion.  A reproducible search ledger is included with the
-paper sources.
+This is a transfer statement, not an inverse Galois theorem.  It does not claim
+that arbitrary local specifications can always be globalized.  It says that
+once a finite \'etale algebra with the desired arithmetic properties exists,
+the Keller construction preserves it exactly.
 
-The closest results located have different scopes.  Gallagher gives explicit
-Keller maps in every geometric degree and complete split rational fibers
-\cite{Gallagher}; this realizes $K^N$, rather than an arbitrary finite
-\'etale $K$-algebra.  Miranda--Neto proves radicality and maximal-ideal
-decomposition properties for fibers already arising from a Keller map
-\cite{Miranda}; this is not a prescribed-fiber realization theorem.
-Lipton and Markakis study rational images and Hilbert irreducibility
-\cite{LiptonMarkakis}, while Shaska studies graded Keller maps and arithmetic
-thinness phenomena \cite{Shaska}.  None of these sources states the
-finite-\'etale realization theorem proved here.
+The realization is also far from unique.  Other constructions in the
+accompanying repository place the same finite \'etale algebra inside weighted,
+cancellation, and quadratic-gauge Keller maps that need not be stably
+equivalent.  That is a different question, and I leave it for a separate
+paper.
 
-\paragraph{Independent exact verification.}
-The structural checker
+\paragraph{Relation to earlier work.}
+To my knowledge, the following prescribed-algebra statement has not appeared
+before: every finite \'etale $K$-algebra of rank at least three occurs as a
+\emph{full scheme fiber} of an explicit Keller map $\A^3_K\to\A^3_K$.  The
+rank set $\{1,3,4,\ldots\}$ follows from this theorem together with the known
+degree-two obstruction.  I searched for earlier results up to 24 July 2026,
+but this priority statement is necessarily qualified: searches can miss
+unpublished work or a theorem stated in different language.
+
+The closest constructions have a different scope.  Gallagher gives explicit
+Keller maps in every geometric degree together with complete split rational
+fibers \cite{Gallagher}; these realize $K^N$, rather than an arbitrary finite
+\'etale $K$-algebra.  Miranda--Neto studies radicality and maximal-ideal
+decompositions of fibers that already come from Keller maps \cite{Miranda}.
+Lipton and Markakis connect rational images with Hilbert irreducibility
+\cite{LiptonMarkakis}, and Shaska studies graded Keller maps and arithmetic
+thinness \cite{Shaska}.  None of these results states the prescribed-fiber
+realization theorem used here.
+
+\paragraph{Independent computer checks.}
+The formulas are uniform in the degree, but expanding them by hand is not a
+pleasant way to find a sign error.  I therefore checked the construction in
+three independent ways.
+
+The SymPy script
 \[
  \texttt{scripts/verify\_universal\_quadratic\_gauge.py}
 \]
-verifies the source-chart reciprocal and Jacobian identities, the marked-line
-Jacobian cancellation, the generic $k$-th coefficient identities, an
-independent six-coefficient bridge, the all-degree termwise coordinate bound,
-and the target-preserving determinant-one normalization.  These are symbolic
-identities, not numerical sampling.
+verifies the source-chart identity, the marked-line formulas, the Jacobian
+cancellation, every generic coefficient contribution, and the degree bound.
+These are symbolic identities with arbitrary coefficients, not numerical
+tests at a few sample points.
 
-A separate Singular script
+The Singular script
 \[
  \texttt{scripts/verify\_universal\_quadratic\_gauge.sing}
 \]
-works over the rational function field in six algebraically independent
-coefficients.  It expands the complete degree-six three-variable map, obtains
-Jacobian determinant exactly $-2$, and checks the coordinate-degree profile
-$(7,38,36)$.  This provides a CAS implementation independent of both Lean and
-SymPy.
+starts again over a rational function field in six independent coefficients.
+It expands the complete degree-six map, obtains determinant exactly $-2$, and
+checks the degree profile $(7,38,36)$.  This gives a separate CAS
+implementation of the same construction.
 
-The concrete checker
+Finally,
 \[
  \texttt{scripts/verify\_finite\_etale\_keller\_fibers.py}
 \]
-independently constructs the quadratic-gauge map from translated seeds of
-degrees three, four, and five.  For each seed it expands the three-variable
-Jacobian exactly, checks the determinant-one normalization and coordinate-degree
-bounds, recovers the prescribed inverse polynomial, and verifies both directions
-of the source reconstruction in the quotient ring using an explicit inverse of
-$E'$.  It separately audits the scaling, determinant, target, and fiber of the
-integral degree-five map and the inverse equations in the fixed-map infinite
-family.
-
-These computations are independent regression and structural certificates,
-not a proof by testing finitely many degrees.  The universal paper proof is the
-coefficientwise calculation in Proposition~\ref{prop:gauge} and
-Subsection~\ref{subsec:gauge-identities}; the corresponding arbitrary-degree
-map, determinant, and effective-degree theorems are also formalized in Lean.
+builds translated seeds in degrees three, four, and five, expands the actual
+maps, reconstructs the prescribed quotient rings, and checks the explicit
+rank-five Hasse example and the fixed-map family.  These bounded examples are
+regression tests.  The proof for arbitrary degree is the coefficientwise
+argument in Proposition~\ref{prop:gauge} and
+Subsection~\ref{subsec:gauge-identities}.
 
 \paragraph{Lean formalization.}
-The repository contains a Lean project at
+The Lean project lives in
 \[
  \texttt{formal/finite-etale-keller}.
 \]
-It contains no \texttt{sorry} and introduces no project-specific axioms.
-Starting from a squarefree polynomial $P$ with $\deg P\geq3$, the final formal
-construction performs the following steps.
+It contains no \texttt{sorry} and introduces no project-specific axioms.  The
+formal development covers the constructive core of the paper.  Given a
+squarefree polynomial $P$ of degree at least three, it:
+\begin{enumerate}
+\item proves that an admissible translation exists and chooses one;
+\item constructs the complete all-degree map as an actual
+      $\operatorname{MvPolynomial}(\operatorname{Fin}3,K)$ expression;
+\item proves that its normalized Jacobian is one and that all coordinate
+      degrees are at most $6\deg P+2$;
+\item proves that the inverse polynomial at the selected target is
+      $P(a+S)$; and
+\item identifies the literal map fiber naturally with
+      $\operatorname{Hom}_{K\text{-alg}}(K[T]/(P),A)$ for every commutative
+      test algebra $A$.
+\end{enumerate}
+It also checks that the seed $G(S)=S+S^3$ gives exactly the three coordinates
+of the announced map \eqref{eq:announced-counterexample}.
 
-First, Lean proves that an admissible translation parameter exists and chooses
-one internally.  It forms the rooted translated seed
-\[
- G(S)=P(a+S)-P(a)
-\]
-and packages the complete finite coefficient sums as a single actual map
-\[
- F_G:\operatorname{MvPolynomial}(\operatorname{Fin}3,K)^3.
-\]
-The files \texttt{GaugeAssembly.lean},
-\texttt{GaugeInverseAssembly.lean}, and
-\texttt{GeneralGaugeMap.lean} prove the coefficientwise assembly and exact
-evaluation formulas uniformly in the degree.
+The final construction and degree certificate are exposed as
+\texttt{automaticRealizationMap\_certificate}; the natural fiber equivalence
+is \texttt{automaticJacobianOneFiberRepresentingEquiv\_natural}.  Their axiom
+reports contain only Lean's standard logical principles
+\texttt{propext}, \texttt{Classical.choice}, and \texttt{Quot.sound}.
 
-Second, \texttt{GeneralGaugeJacobian.lean} directly expands the full
-three-by-three Jacobian, including every finite coefficient sum, and proves
-\[
- \det DF_G=-2.
-\]
-The fixed output normalization is then proved to have determinant one.
-\texttt{GeneralGaugeDegree.lean} proves the bounds
-\[
- \deg\Pi\leq7,\qquad \deg B\leq6N+2,\qquad \deg C\leq6N,
-\]
-and \texttt{GeneralGaugeRealizationDegree.lean} transports them to the final
-automatically chosen map in terms of the original degree $N=\deg P$.
+Lean does not currently cover every theorem used in the final classification.
+The generic irreducibility argument for the function-field degree,
+monogenicity of arbitrary finite \'etale products, and the
+Campbell--Razar--Wright degree-two theorem remain ordinary mathematical proofs.
+The Chebotarev, Dirichlet, Hensel, and prime-counting arguments in the
+arithmetic applications are likewise outside the formal development.  I list
+this boundary explicitly because a green Lean build should not be read as a
+claim that those external inputs have also been formalized.
 
-Third, \texttt{GeneralGaugeInverse.lean} defines the full generic inverse
-polynomial, its marked polynomial $\beta$, and the exact derivative
-factorization.  \texttt{GeneralGaugeDisplayedFiber.lean} proves that the
-actual evaluated $B$ and $C$ coordinates are precisely the marked source
-relations.  \texttt{GeneralGaugeRawFiber.lean} begins with a literal triple
-satisfying the three actual polynomial equations; from $tq=\pi$ with unit
-$\pi$, it constructs the global chart unit over an arbitrary commutative test
-ring and identifies the literal map fiber with the represented source fiber.
+\paragraph{Provenance and AI assistance.}
+The recent three-dimensional counterexample was announced by Alp\"oge, who
+credited Akhil Mathew for suggesting the problem and Fable for producing the
+example \cite{Alpoge}.  Gallagher independently developed a weighted
+all-degree viewpoint and a public atlas of complete rational fibers
+\cite{Gallagher}.  The present proof uses a root-engineered quadratic gauge
+that contains the announced map as the seed $S+S^3$.  Berend and Bilu supplied
+the classical intersective quintic, while Campbell, Razar, and Wright supplied
+the degree-two obstruction \cite{Campbell,Razar,Wright}.
 
-Fourth, \texttt{GeneralGaugeNormalization.lean} proves that the zero second
-coordinate fiber is unchanged by the determinant-one output normalization.
-\texttt{GeneralGaugeRealization.lean} proves that the inverse polynomial at
-the chosen target is exactly $P(a+S)$, composes with
-\[
- K[S]/(P(a+S))\simeq K[T]/(P(T)),
-\]
-and removes the supplied translation parameter through the automatic choice.
-For every commutative test $K$-algebra $A$, the final theorem gives a natural
-equivalence
-\[
- \operatorname{Hom}_{K\text{-alg}}(K[T]/(P),A)
- \simeq
- \{u\in A^3:\widetilde F_G(u)=y_{P,a}\}.
-\]
-The corresponding declarations are
-\texttt{automaticRealizationMap\_certificate} and
-\texttt{automaticJacobianOneFiberRepresentingEquiv\_natural}.  The latter's
-axiom report contains only Lean's standard \texttt{propext},
-\texttt{Classical.choice}, and \texttt{Quot.sound}; the Jacobian and degree
-certificates use no additional axioms.
+I used generative AI tools during exploration, symbolic-checker development,
+proof review, literature search, Lean formalization, and manuscript editing.
+They were useful as fast but fallible collaborators.  I checked the stated
+mathematical claims, rewrote the exposition, and take responsibility for the
+paper.
 
-The remaining formal boundary is now outside the constructive map and fiber
-calculation.  Lean does not yet formalize the primitive linear-in-$C$
-irreducibility argument which identifies the generic function-field degree,
-monogenicity of arbitrary finite \'etale products over an infinite field, or
-the Campbell--Razar--Wright degree-two theorem.  The local-number-theoretic,
-Chebotarev, Dirichlet, and prime-counting inputs in the arithmetic applications
-also remain paper proofs.  These inputs are listed claim by claim in the
-companion verification matrix; none is represented as machine-checked.
-
-\paragraph{Provenance.}
-The recent three-dimensional counterexample was publicly attributed to
-Alp\"oge and Fable.  Gallagher independently developed a weighted all-degree
-viewpoint and an exact public atlas of complete rational fibers
-\cite{Gallagher}.  The proof here instead uses the root-engineered
-quadratic-gauge construction and the finite-\'etale realization theorem.
-Berend and Bilu are credited for the classical intersective quintic.  The
-rank-two exclusion is the Galois case proved over $\mathbb C$ by Campbell and
-subsequently treated algebraically by Razar and independently Wright
-\cite{Campbell,Razar,Wright}; Lemma~\ref{lem:degree-two} includes the descent
-argument needed for an arbitrary characteristic-zero ground field.
-
-\paragraph{AI assistance.}
-Generative AI tools were used for symbolic experimentation, exact checker
-development, adversarial proof review, literature search, formalization, and
-manuscript preparation.  The author reviewed the mathematical claims and
-assumes full responsibility for the contents.
-
-\begin{thebibliography}{11}
+\begin{thebibliography}{12}
 \small
+
+\bibitem{Alpoge}
+L.~Alp\"oge,
+\emph{Public announcement of a counterexample to the Jacobian conjecture},
+20 July 2026,
+\href{https://x.com/__alpoge__/status/2079028340955197566}
+{X post 2079028340955197566}.
 
 \bibitem{BerendBilu}
 D.~Berend and Y.~Bilu,

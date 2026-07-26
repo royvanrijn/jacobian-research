@@ -10,6 +10,11 @@ REQUIRED = (
     "FiniteEtaleKeller.jacobianDet_generalGaugeMap",
     "FiniteEtaleKeller.jacobianDet_generalGaugeJacobianOneMap",
     "FiniteEtaleKeller.generalGaugeInversePolynomial_derivative",
+    "FiniteEtaleKeller.LocalizedPolynomialRoot.localizedAlgHomEquiv",
+    "FiniteEtaleKeller.generalGaugeLocalizedRawRepresentingEquiv",
+    "FiniteEtaleKeller.generalGaugeLocalizedRawRepresentingEquiv_natural",
+    "FiniteEtaleKeller.generalGaugeLocalizedJacobianOneRepresentingEquiv_natural",
+    "FiniteEtaleKeller.generalGaugeMap_announcedSeed",
     "FiniteEtaleKeller.automaticRealizationMap_certificate",
     "FiniteEtaleKeller.automaticJacobianOneFiberRepresentingEquiv_natural",
 )

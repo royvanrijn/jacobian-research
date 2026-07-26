@@ -24,6 +24,51 @@ variable {K A B : Type*} [Field K] [CharZero K]
 variable [CommRing A] [Algebra K A]
 variable [CommRing B] [Algebra K B]
 
+/-- Evaluation of the first normalized coordinate is unchanged. -/
+@[simp]
+theorem eval₂_generalGaugeJacobianOneMap_zero
+    (G : K[X]) (point : Fin 3 → A) :
+    MvPolynomial.eval₂ (algebraMap K A) point
+        (generalGaugeJacobianOneMap G 0) =
+      MvPolynomial.eval₂ (algebraMap K A) point (generalGaugePi G) := by
+  simp [generalGaugeJacobianOneMap, scaleOutput, generalGaugeMap]
+
+/-- Evaluation of the second normalized coordinate is multiplication by
+`-1/2`. -/
+@[simp]
+theorem eval₂_generalGaugeJacobianOneMap_one
+    (G : K[X]) (point : Fin 3 → A) :
+    MvPolynomial.eval₂ (algebraMap K A) point
+        (generalGaugeJacobianOneMap G 1) =
+      algebraMap K A (-1 / 2 : K) *
+        MvPolynomial.eval₂ (algebraMap K A) point (generalGaugeB G) := by
+  simp [generalGaugeJacobianOneMap, scaleOutput, generalGaugeMap]
+
+/-- Evaluation of the third normalized coordinate is unchanged. -/
+@[simp]
+theorem eval₂_generalGaugeJacobianOneMap_two
+    (G : K[X]) (point : Fin 3 → A) :
+    MvPolynomial.eval₂ (algebraMap K A) point
+        (generalGaugeJacobianOneMap G 2) =
+      MvPolynomial.eval₂ (algebraMap K A) point (generalGaugeC G) := by
+  simp [generalGaugeJacobianOneMap, scaleOutput, generalGaugeMap]
+
+/-- Evaluation of a multivariate polynomial commutes with a morphism of test
+algebras. -/
+private theorem eval₂_map_algHom
+    (f : A →ₐ[K] B) (point : Fin 3 → A) (P : GaugePolynomial K) :
+    MvPolynomial.eval₂ (algebraMap K B) (fun i => f (point i)) P =
+      f (MvPolynomial.eval₂ (algebraMap K A) point P) := by
+  have hcomp : f.toRingHom.comp (algebraMap K A) = algebraMap K B := by
+    ext r
+    exact f.commutes r
+  calc
+    MvPolynomial.eval₂ (algebraMap K B) (fun i => f (point i)) P =
+        MvPolynomial.eval₂ (f.toRingHom.comp (algebraMap K A))
+          (fun i => f (point i)) P := by rw [hcomp]
+    _ = f (MvPolynomial.eval₂ (algebraMap K A) point P) :=
+      (MvPolynomial.hom_eval₂ P (algebraMap K A) f.toRingHom point).symm
+
 /-- A literal point of the determinant-one normalized map over target
 `(pi,0,c)`. -/
 @[ext]
@@ -49,11 +94,12 @@ def toJacobianOne
     GeneralGaugeJacobianOneFiberPoint G pi c A where
   point := p.point
   pi_eq := by
-    simpa [generalGaugeJacobianOneMap, scaleOutput, generalGaugeMap] using p.pi_eq
+    simpa only [eval₂_generalGaugeJacobianOneMap_zero] using p.pi_eq
   b_eq := by
-    simp [generalGaugeJacobianOneMap, scaleOutput, generalGaugeMap, p.b_eq]
+    rw [eval₂_generalGaugeJacobianOneMap_one, p.b_eq]
+    simp
   c_eq := by
-    simpa [generalGaugeJacobianOneMap, scaleOutput, generalGaugeMap] using p.c_eq
+    simpa only [eval₂_generalGaugeJacobianOneMap_two] using p.c_eq
 
 end GeneralGaugeRawFiberPoint
 
@@ -69,11 +115,12 @@ def toRaw
     GeneralGaugeRawFiberPoint G pi 0 c A where
   point := p.point
   pi_eq := by
-    simpa [generalGaugeJacobianOneMap, scaleOutput, generalGaugeMap] using p.pi_eq
+    simpa only [eval₂_generalGaugeJacobianOneMap_zero] using p.pi_eq
   b_eq := by
-    have hb := p.b_eq
-    change algebraMap K A (-1 / 2 : K) *
-      MvPolynomial.eval₂ (algebraMap K A) p.point (generalGaugeB G) = 0 at hb
+    have hb :
+        algebraMap K A (-1 / 2 : K) *
+          MvPolynomial.eval₂ (algebraMap K A) p.point (generalGaugeB G) = 0 := by
+      simpa only [eval₂_generalGaugeJacobianOneMap_one] using p.b_eq
     have hscale :
         algebraMap K A (-2 : K) * algebraMap K A (-1 / 2 : K) = 1 := by
       rw [← map_mul]
@@ -88,10 +135,11 @@ def toRaw
       _ = algebraMap K A (-2 : K) *
           (algebraMap K A (-1 / 2 : K) *
             MvPolynomial.eval₂ (algebraMap K A) p.point (generalGaugeB G)) := by
-              ring
-      _ = 0 := by rw [hb]; ring
+              rw [mul_assoc]
+      _ = 0 := by rw [hb, mul_zero]
+      _ = algebraMap K A (0 : K) := by simp
   c_eq := by
-    simpa [generalGaugeJacobianOneMap, scaleOutput, generalGaugeMap] using p.c_eq
+    simpa only [eval₂_generalGaugeJacobianOneMap_two] using p.c_eq
 
 /-- Normalized literal fibers are functorial in the test algebra. -/
 def map (f : A →ₐ[K] B)
@@ -99,17 +147,32 @@ def map (f : A →ₐ[K] B)
     GeneralGaugeJacobianOneFiberPoint G pi c B where
   point := fun i => f (p.point i)
   pi_eq := by
-    have h := congrArg f p.pi_eq
-    rw [MvPolynomial.hom_eval₂] at h
-    simpa [RingHom.comp_apply] using h
+    calc
+      MvPolynomial.eval₂ (algebraMap K B) (fun i => f (p.point i))
+          (generalGaugeJacobianOneMap G 0) =
+        f (MvPolynomial.eval₂ (algebraMap K A) p.point
+          (generalGaugeJacobianOneMap G 0)) :=
+            eval₂_map_algHom f p.point (generalGaugeJacobianOneMap G 0)
+      _ = f (algebraMap K A (pi : K)) := congrArg f p.pi_eq
+      _ = algebraMap K B (pi : K) := f.commutes _
   b_eq := by
-    have h := congrArg f p.b_eq
-    rw [MvPolynomial.hom_eval₂] at h
-    simpa [RingHom.comp_apply] using h
+    calc
+      MvPolynomial.eval₂ (algebraMap K B) (fun i => f (p.point i))
+          (generalGaugeJacobianOneMap G 1) =
+        f (MvPolynomial.eval₂ (algebraMap K A) p.point
+          (generalGaugeJacobianOneMap G 1)) :=
+            eval₂_map_algHom f p.point (generalGaugeJacobianOneMap G 1)
+      _ = f 0 := congrArg f p.b_eq
+      _ = 0 := map_zero f
   c_eq := by
-    have h := congrArg f p.c_eq
-    rw [MvPolynomial.hom_eval₂] at h
-    simpa [RingHom.comp_apply] using h
+    calc
+      MvPolynomial.eval₂ (algebraMap K B) (fun i => f (p.point i))
+          (generalGaugeJacobianOneMap G 2) =
+        f (MvPolynomial.eval₂ (algebraMap K A) p.point
+          (generalGaugeJacobianOneMap G 2)) :=
+            eval₂_map_algHom f p.point (generalGaugeJacobianOneMap G 2)
+      _ = f (algebraMap K A c) := congrArg f p.c_eq
+      _ = algebraMap K B c := f.commutes _
 
 end GeneralGaugeJacobianOneFiberPoint
 

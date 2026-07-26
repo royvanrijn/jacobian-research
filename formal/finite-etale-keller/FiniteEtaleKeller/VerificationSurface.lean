@@ -4,6 +4,8 @@ Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Roy van Rijn
 -/
 import FiniteEtaleKeller.GeneralGaugeRealizationDegree
+import FiniteEtaleKeller.AnnouncedCounterexample
+import FiniteEtaleKeller.GeneralGaugeLocalizedFiber
 
 /-!
 # Public verification surface
@@ -39,6 +41,26 @@ example (G : K[X]) (pi b c : K) (h₁ : G.coeff 1 ≠ 0) :
       C (G.coeff 1) * markedChartPolynomial pi b (generalGaugeBeta G pi) :=
   generalGaugeInversePolynomial_derivative G pi b c h₁
 
+/-- The localization away from the derivative represents roots at which the
+derivative is invertible, without any separability hypothesis. -/
+example (E : K[X]) (A : Type*) [CommRing A] [Algebra K A] :
+    (LocalizedAdjoinRoot E →ₐ[K] A) ≃ LocalizedPolynomialRoot E A :=
+  LocalizedPolynomialRoot.localizedAlgHomEquiv E A
+
+/-- Full signature guard for the paper's localized-fiber theorem. -/
+example (G : K[X]) (pi : Kˣ) (b c : K)
+    (h₁ : G.coeff 1 ≠ 0) (h₃ : G.coeff 3 ≠ 0)
+    (A : Type*) [CommRing A] [Algebra K A] :
+    (LocalizedAdjoinRoot
+        (generalGaugeInversePolynomial G (pi : K) b c) →ₐ[K] A) ≃
+      GeneralGaugeRawFiberPoint G pi b c A :=
+  generalGaugeLocalizedRawRepresentingEquiv G pi b c h₁ h₃ A
+
+/-- The cubic seed must remain exactly, not merely linearly equivalent to, the
+map in the original announcement. -/
+example : generalGaugeMap announcedSeed = announcedCounterexampleMap :=
+  generalGaugeMap_announcedSeed
+
 /-- Signature guard for the final construction-level certificate. -/
 example (P : K[X]) (hdeg : 3 ≤ P.natDegree) :
     jacobianDet (automaticRealizationMap P hdeg) = 1 ∧
@@ -50,6 +72,11 @@ example (P : K[X]) (hdeg : 3 ≤ P.natDegree) :
 #print axioms jacobianDet_generalGaugeMap
 #print axioms jacobianDet_generalGaugeJacobianOneMap
 #print axioms generalGaugeInversePolynomial_derivative
+#print axioms LocalizedPolynomialRoot.localizedAlgHomEquiv
+#print axioms generalGaugeLocalizedRawRepresentingEquiv
+#print axioms generalGaugeLocalizedRawRepresentingEquiv_natural
+#print axioms generalGaugeLocalizedJacobianOneRepresentingEquiv_natural
+#print axioms generalGaugeMap_announcedSeed
 #print axioms automaticRealizationMap_certificate
 #print axioms automaticJacobianOneFiberRepresentingEquiv_natural
 

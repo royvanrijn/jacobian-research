@@ -20,7 +20,6 @@ noncomputable section
 open Polynomial
 
 namespace FiniteEtaleKeller
-
 variable {K : Type*} [Field K]
 
 /-- The inverse polynomial before imposing the `B,C` target coordinates. -/
@@ -56,9 +55,9 @@ private theorem generalGauge_tail_derivative
   intro k hk
   have hk4 : 4 ≤ k := (Finset.mem_Icc.mp hk).1
   have hpow : (X : K[X]) * X ^ (k - 2) = X ^ (k - 1) := by
-    rw [← pow_add]
-    congr
-    omega
+    calc
+      (X : K[X]) * X ^ (k - 2) = X ^ (1 + (k - 2)) := by rw [pow_add]; simp
+      _ = X ^ (k - 1) := by congr; omega
   have hcoeff :
       G.coeff k * pi ^ k * (k : K) =
         G.coeff 1 * ((k : K) * (G.coeff k / G.coeff 1) * pi ^ k) := by
@@ -76,30 +75,30 @@ private theorem generalGauge_low_derivative
           (C (2 * (G.coeff 2 / G.coeff 1) * pi) +
             C ((3 * (G.coeff 3 / G.coeff 1) - 1) * pi) * X) +
           C pi * X ^ 2) := by
-  simp only [Polynomial.derivative_add, Polynomial.derivative_C_mul,
-    Polynomial.derivative_X, Polynomial.derivative_X_pow, mul_one]
   have h₂scalar :
       pi * G.coeff 2 * 2 =
         G.coeff 1 * (2 * (G.coeff 2 / G.coeff 1) * pi) := by
     field_simp [h₁]
+  have h₃scalar :
+      pi * G.coeff 3 * 3 =
+        G.coeff 1 * pi +
+          G.coeff 1 * ((3 * (G.coeff 3 / G.coeff 1) - 1) * pi) := by
+    field_simp [h₁]
+    ring
   have h₂ :
       C pi * C (G.coeff 2) * C (2 : K) =
         C (G.coeff 1) * C (2 * (G.coeff 2 / G.coeff 1) * pi) := by
-    simpa only [← C_mul] using
-      congrArg (fun u : K => (C u : K[X])) h₂scalar
-  have h₃scalar :
-      pi * G.coeff 3 * 3 =
-        G.coeff 1 * ((3 * (G.coeff 3 / G.coeff 1) - 1) * pi) +
-          G.coeff 1 * pi := by
-    field_simp [h₁]
+    simpa only [Polynomial.C_mul] using
+      congrArg (C : K → K[X]) h₂scalar
   have h₃ :
       C pi * C (G.coeff 3) * C (3 : K) =
-        C (G.coeff 1) * C ((3 * (G.coeff 3 / G.coeff 1) - 1) * pi) +
-          C (G.coeff 1) * C pi := by
-    simpa only [← C_mul, ← C_add] using
-      congrArg (fun u : K => (C u : K[X])) h₃scalar
-  rw [h₂, h₃]
-  ring
+        C (G.coeff 1) * C pi +
+          C (G.coeff 1) * C ((3 * (G.coeff 3 / G.coeff 1) - 1) * pi) := by
+    simpa only [Polynomial.C_mul, Polynomial.C_add] using
+      congrArg (C : K → K[X]) h₃scalar
+  simp only [Polynomial.derivative_add, Polynomial.derivative_C_mul,
+    Polynomial.derivative_X, Polynomial.derivative_X_pow, mul_one]
+  linear_combination X * h₂ + X ^ 2 * h₃
 
 /-- The explicit `β` has exactly the normalized-derivative relation stated in
 the paper. -/
@@ -120,21 +119,18 @@ theorem generalGaugeInversePolynomial_derivative [CharZero K]
     (G : K[X]) (pi b c : K) (h₁ : G.coeff 1 ≠ 0) :
     (generalGaugeInversePolynomial G pi b c).derivative =
       C (G.coeff 1) * markedChartPolynomial pi b (generalGaugeBeta G pi) := by
+  have hhalfScalar : (G.coeff 1 / 2) * 2 = G.coeff 1 := by
+    field_simp
+  have hhalf :
+      C (G.coeff 1 / 2) * C (2 : K) = C (G.coeff 1) := by
+    simpa only [Polynomial.C_mul] using
+      congrArg (C : K → K[X]) hhalfScalar
   rw [generalGaugeInversePolynomial, Polynomial.derivative_sub,
     generalGaugeSeedPolynomial_derivative G pi h₁]
   simp only [Polynomial.derivative_C_mul, Polynomial.derivative_add,
     Polynomial.derivative_C, Polynomial.derivative_X_pow, add_zero]
   rw [markedChartPolynomial]
-  have h₂scalar :
-      (G.coeff 1 / 2) * b * 2 = G.coeff 1 * b := by
-    field_simp
-  have h₂ :
-      C (G.coeff 1 / 2) * C b * C (2 : K) =
-        C (G.coeff 1) * C b := by
-    simpa only [← C_mul] using
-      congrArg (fun u : K => (C u : K[X])) h₂scalar
-  rw [h₂]
-  ring
+  linear_combination -(X * C b) * hhalf
 
 section RepresentedFiber
 
