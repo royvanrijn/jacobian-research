@@ -106,7 +106,8 @@ def ofLocalizedAlgHom
   root_eq := AdjoinRoot.aeval_algHom_eq_zero E (localizedBaseAlgHom φ)
   derivativeUnit :=
     Units.map φ.toRingHom
-      (IsLocalization.Away.algebraMap_isUnit (derivativeClass E)).unit
+      (IsLocalization.Away.algebraMap_isUnit
+        (S := LocalizedAdjoinRoot E) (derivativeClass E)).unit
   derivativeUnit_eq := by
     simp only [Units.coe_map, IsUnit.unit_spec]
     change
@@ -124,8 +125,17 @@ def toLocalizedAlgHom
       change IsUnit
         (s.toPolynomialRoot.liftAlgHom (AdjoinRoot.mk E E.derivative))
       rw [PolynomialRoot.liftAlgHom_mk]
+      change IsUnit (Polynomial.aeval s.val E.derivative)
       rw [← s.derivativeUnit_eq]
       exact s.derivativeUnit.isUnit)
+
+@[simp]
+theorem toLocalizedAlgHom_algebraMap
+    (s : LocalizedPolynomialRoot E A) (r : AdjoinRoot E) :
+    s.toLocalizedAlgHom
+        (algebraMap (AdjoinRoot E) (LocalizedAdjoinRoot E) r) =
+      s.toPolynomialRoot.liftAlgHom r := by
+  simp [toLocalizedAlgHom, IsLocalization.Away.liftAlgHom_apply]
 
 /-- The universal property of `(K[S]/E)[1/E']`, in functor-of-points form. -/
 def localizedAlgHomEquiv (E : K[X])
@@ -137,11 +147,11 @@ def localizedAlgHomEquiv (E : K[X])
     intro φ
     apply Localization.algHom_ext (Submonoid.powers (derivativeClass E))
     apply AdjoinRoot.algHom_ext
-    simp [toLocalizedAlgHom, ofLocalizedAlgHom, Algebra.algHom]
+    simp [ofLocalizedAlgHom, localizedBaseAlgHom]
   right_inv := by
     intro s
     apply LocalizedPolynomialRoot.ext
-    simp [toLocalizedAlgHom, ofLocalizedAlgHom, localizedBaseAlgHom]
+    simp [ofLocalizedAlgHom]
 
 /-- The localized quotient universal property is natural under
 postcomposition of test-algebra maps. -/
@@ -150,6 +160,12 @@ theorem localizedAlgHomEquiv_natural
     (localizedAlgHomEquiv E B) (f.comp φ) =
       ((localizedAlgHomEquiv E A) φ).map f := by
   apply LocalizedPolynomialRoot.ext
+  change f
+      (φ (algebraMap (AdjoinRoot E) (LocalizedAdjoinRoot E)
+        (AdjoinRoot.root E))) =
+    f
+      (φ (algebraMap (AdjoinRoot E) (LocalizedAdjoinRoot E)
+        (AdjoinRoot.root E)))
   rfl
 
 end LocalizedPolynomialRoot
