@@ -88,11 +88,25 @@ theorem integralMap_eq_scaled_normalized :
   funext i
   fin_cases i
   · simp [integralMap, scaleOutput, generalGaugeMap, generalGaugePi]
-  · simp [integralMap, scaleOutput, generalGaugeMap, generalGaugeB,
-      g5_natDegree, g5, Polynomial.coeff_X, Algebra.smul_def]
+  · change
+      MvPolynomial.C 19 * MvPolynomial.X 1
+          - MvPolynomial.C 3 * MvPolynomial.X 0 * q
+          + MvPolynomial.C 38 * t * q
+          - MvPolynomial.C 4 * t ^ 2 * MvPolynomial.X 0 ^ 2 * q ^ 4
+          - MvPolynomial.C 5 * t ^ 2 * MvPolynomial.X 0 ^ 3 * q ^ 5 =
+        MvPolynomial.C 19 * generalGaugeB g5
+    rw [q_eq_generalGaugeQ, t_eq_generalGaugeT, generalGaugeB, g5_natDegree]
+    norm_num [g5, Polynomial.coeff_X]
     ring
-  · simp [integralMap, scaleOutput, generalGaugeMap, generalGaugeC,
-      g5_natDegree, g5, Polynomial.coeff_X, Algebra.smul_def]
+  · change
+      MvPolynomial.C 19 * MvPolynomial.X 0 *
+            (MvPolynomial.C 5 - MvPolynomial.C 3 * t)
+          + MvPolynomial.X 0 ^ 3 * MvPolynomial.X 2
+          + MvPolynomial.C 2 * (MvPolynomial.X 0 * q) ^ 4
+          + MvPolynomial.C 3 * (MvPolynomial.X 0 * q) ^ 5 =
+        MvPolynomial.C 19 * generalGaugeC g5
+    rw [q_eq_generalGaugeQ, t_eq_generalGaugeT, generalGaugeC, g5_natDegree]
+    norm_num [g5, Polynomial.coeff_X]
     ring
 
 /-- The displayed denominator-free map has Jacobian determinant `-722`. -/
