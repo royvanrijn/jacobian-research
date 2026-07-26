@@ -1,12 +1,16 @@
 \section{Consequences, checks, and scope}
 
-The main theorem is a realization result.  It does more than produce a large
-collection of examples: given a finite \'etale algebra, it builds a Keller map
-whose full fiber is that algebra.  Several consequences are then immediate.
-A squarefree polynomial of degree at least three becomes an exact inverse
-polynomial after one translation; an irreducible polynomial gives a connected
-fiber; and a degree-$N$ input is realized in $\A^3$ with coordinate degree at
-most $6N+2$.
+The main theorem is a prescribed-fiber realization result.  Given a finite
+\'etale algebra, it builds a Keller map whose full fiber is that algebra.  The
+classification by rank is a useful corollary, but it is not the main point: two
+finite \'etale algebras of the same rank can have completely different field
+decompositions, Galois actions, signatures, and local behavior, and the
+construction distinguishes all of that data.
+
+Several consequences are immediate.  A squarefree polynomial of degree at
+least three becomes an exact inverse polynomial after one translation; an
+irreducible polynomial gives a connected fiber; and a degree-$N$ input is
+realized in $\A^3$ with coordinate degree at most $6N+2$.
 
 More importantly, the construction does not forget the arithmetic structure.
 If the original algebra has a particular real signature, splitting field,
@@ -27,10 +31,13 @@ equivalent.  That is a different question, and I leave it for a separate
 paper.
 
 \paragraph{Relation to earlier work.}
-To my knowledge, the exact rank classification proved here has not appeared
-before.  I searched for earlier results up to 24 July 2026, but this is
-necessarily a qualified statement: searches can miss unpublished work or a
-theorem stated in different language.
+To my knowledge, the following prescribed-algebra statement has not appeared
+before: every finite \'etale $K$-algebra of rank at least three occurs as a
+\emph{full scheme fiber} of an explicit Keller map $\A^3_K\to\A^3_K$.  The
+rank set $\{1,3,4,\ldots\}$ follows from this theorem together with the known
+degree-two obstruction.  I searched for earlier results up to 24 July 2026,
+but this priority statement is necessarily qualified: searches can miss
+unpublished work or a theorem stated in different language.
 
 The closest constructions have a different scope.  Gallagher gives explicit
 Keller maps in every geometric degree together with complete split rational
@@ -96,6 +103,8 @@ squarefree polynomial $P$ of degree at least three, it:
       $\operatorname{Hom}_{K\text{-alg}}(K[T]/(P),A)$ for every commutative
       test algebra $A$.
 \end{enumerate}
+It also checks that the seed $G(S)=S+S^3$ gives exactly the three coordinates
+of the announced map \eqref{eq:announced-counterexample}.
 
 The final construction and degree certificate are exposed as
 \texttt{automaticRealizationMap\_certificate}; the natural fiber equivalence
@@ -113,13 +122,14 @@ this boundary explicitly because a green Lean build should not be read as a
 claim that those external inputs have also been formalized.
 
 \paragraph{Provenance and AI assistance.}
-The recent three-dimensional counterexample was publicly attributed to
-Alp\"oge and Fable.  Gallagher independently developed a weighted all-degree
-viewpoint and a public atlas of complete rational fibers \cite{Gallagher}.
-The present proof uses a different, root-engineered quadratic gauge.  Berend
-and Bilu supplied the classical intersective quintic, while Campbell, Razar,
-and Wright supplied the degree-two obstruction
-\cite{Campbell,Razar,Wright}.
+The recent three-dimensional counterexample was announced by Alp\"oge, who
+credited Akhil Mathew for suggesting the problem and Fable for producing the
+example \cite{Alpoge}.  Gallagher independently developed a weighted
+all-degree viewpoint and a public atlas of complete rational fibers
+\cite{Gallagher}.  The present proof uses a root-engineered quadratic gauge
+that contains the announced map as the seed $S+S^3$.  Berend and Bilu supplied
+the classical intersective quintic, while Campbell, Razar, and Wright supplied
+the degree-two obstruction \cite{Campbell,Razar,Wright}.
 
 I used generative AI tools during exploration, symbolic-checker development,
 proof review, literature search, Lean formalization, and manuscript editing.
@@ -127,8 +137,15 @@ They were useful as fast but fallible collaborators.  I checked the stated
 mathematical claims, rewrote the exposition, and take responsibility for the
 paper.
 
-\begin{thebibliography}{11}
+\begin{thebibliography}{12}
 \small
+
+\bibitem{Alpoge}
+L.~Alp\"oge,
+\emph{Public announcement of a counterexample to the Jacobian conjecture},
+20 July 2026,
+\href{https://x.com/__alpoge__/status/2079028340955197566}
+{X post 2079028340955197566}.
 
 \bibitem{BerendBilu}
 D.~Berend and Y.~Bilu,
