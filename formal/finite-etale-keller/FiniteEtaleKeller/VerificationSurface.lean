@@ -5,6 +5,7 @@ Authors: Roy van Rijn
 -/
 import FiniteEtaleKeller.GeneralGaugeRealizationDegree
 import FiniteEtaleKeller.AnnouncedCounterexample
+import FiniteEtaleKeller.LocalizedFiberPoints
 
 /-!
 # Public verification surface
@@ -40,6 +41,12 @@ example (G : K[X]) (pi b c : K) (h₁ : G.coeff 1 ≠ 0) :
       C (G.coeff 1) * markedChartPolynomial pi b (generalGaugeBeta G pi) :=
   generalGaugeInversePolynomial_derivative G pi b c h₁
 
+/-- The localization away from the derivative represents roots at which the
+derivative is invertible, without any separability hypothesis. -/
+example (E : K[X]) (A : Type*) [CommRing A] [Algebra K A] :
+    (LocalizedAdjoinRoot E →ₐ[K] A) ≃ LocalizedPolynomialRoot E A :=
+  LocalizedPolynomialRoot.localizedAlgHomEquiv E A
+
 /-- The cubic seed must remain exactly, not merely linearly equivalent to, the
 map in the original announcement. -/
 example : generalGaugeMap announcedSeed = announcedCounterexampleMap :=
@@ -56,6 +63,7 @@ example (P : K[X]) (hdeg : 3 ≤ P.natDegree) :
 #print axioms jacobianDet_generalGaugeMap
 #print axioms jacobianDet_generalGaugeJacobianOneMap
 #print axioms generalGaugeInversePolynomial_derivative
+#print axioms LocalizedPolynomialRoot.localizedAlgHomEquiv
 #print axioms generalGaugeMap_announcedSeed
 #print axioms automaticRealizationMap_certificate
 #print axioms automaticJacobianOneFiberRepresentingEquiv_natural
