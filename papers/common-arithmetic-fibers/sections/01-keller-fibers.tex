@@ -68,16 +68,10 @@ already over $K_0$.  Thus $\varphi$ is an isomorphism, and base change gives a
 polynomial inverse over $K$.
 \end{proof}
 
-\begin{theorem}[Exact finite-\'etale realization and classification]
+\begin{theorem}[Prescribed finite-\'etale realization]
 \label{thm:main}
-A nonzero finite \'etale algebra over a characteristic-zero field is a Keller
-fiber if and only if its rank is not two.  Equivalently, the possible ranks are
-exactly
-\[
- \boxed{1,3,4,5,\ldots}.
-\]
-More precisely, let $P\in K[T]$ be squarefree of degree $N\geq3$.  Choose
-$a\in K$ outside the finite zero set of $P'P'''$, and put
+Let $P\in K[T]$ be squarefree of degree $N\geq3$.  Choose $a\in K$ outside
+the finite zero set of $P'P'''$, and put
 \[
  G(S)=P(a+S)-P(a).
 \]
@@ -110,15 +104,20 @@ More explicitly, for every commutative $K$-algebra $R$ there is a bijection
  \simeq
  \{u\in R^3:\widetilde F_G(u)=y_{P,a}\},
 \]
-natural in $R$.  Consequently every finite \'etale $K$-algebra of rank at
-least three is a Keller fiber in affine three-space.
+natural in $R$.
+
+Consequently, every finite \'etale $K$-algebra of rank at least three occurs
+as a full fiber of a Jacobian-one map in affine three-space.
 \end{theorem}
 
 \begin{proof}
-The linear and cubic Taylor coefficients of $G$ are $P'(a)$ and
-$P'''(a)/3!$.  Our choice of $a$ therefore makes the quadratic gauge of
-Section~\ref{sec:gauge} available.  At the target \eqref{eq:main-target}, its
-inverse polynomial is
+The polynomials $P'$ and $P'''$ are nonzero in characteristic zero when
+$N\geq3$.  Their product has only finitely many roots, while $K$ is infinite,
+so an admissible $a$ exists.  The linear and cubic Taylor coefficients of $G$
+are $P'(a)$ and $P'''(a)/3!$, and the quadratic gauge of
+Section~\ref{sec:gauge} is therefore defined.
+
+At the target \eqref{eq:main-target}, its inverse polynomial is
 \[
  G(S)-\frac{P'(a)}2\left(-\frac{2P(a)}{P'(a)}\right)
  =P(a+S).
@@ -149,9 +148,21 @@ quotient algebra and the generic inverse problem have degree $N$, the fiber is
 full.
 
 For a general finite \'etale algebra of rank at least three, use the
-monogenicity lemma in Section~\ref{sec:realization}.  The identity map handles
-rank one, and Lemma~\ref{lem:degree-two} excludes rank two.  Finally, $P'$ and
-$P'''$ are nonzero in characteristic zero when $N\geq3$.  Their product has
-only finitely many roots, while $K$ is infinite, so an admissible $a$ always
-exists.
+monogenicity lemma in Section~\ref{sec:realization} and apply the polynomial
+case just proved.
+\end{proof}
+
+\begin{corollary}[Rank classification]\label{cor:rank-classification}
+A nonzero finite \'etale algebra over a characteristic-zero field is a Keller
+fiber if and only if its rank is not two.  Equivalently, the possible ranks are
+exactly
+\[
+ \boxed{1,3,4,5,\ldots}.
+\]
+\end{corollary}
+
+\begin{proof}
+The identity map realizes rank one.  Theorem~\ref{thm:main} realizes every
+finite \'etale algebra of rank at least three, while
+Lemma~\ref{lem:degree-two} excludes rank two.
 \end{proof}
