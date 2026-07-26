@@ -88,23 +88,45 @@ def tUnit (p : GeneralGaugeRawFiberPoint G pi b c A) : Aˣ :=
 theorem tUnit_val (p : GeneralGaugeRawFiberPoint G pi b c A) :
     (p.tUnit : A) = p.t := rfl
 
-set_option maxHeartbeats 0 in
+/-- The source-chart datum extracted from a literal polynomial-map fiber
+point.  Keeping this structure separate avoids dependent reduction through the
+outer displayed-fiber structure. -/
+def toGaugeSource (p : GeneralGaugeRawFiberPoint G pi b c A) :
+    GaugeSource A (algebraMap K A (pi : K))
+      (algebraMap K A (G.coeff 1 / G.coeff 3)) where
+  t := p.tUnit
+  x := p.point 0
+  y := p.point 1
+  z := p.point 2
+  t_eq := rfl
+  pi_eq := by
+    have h := p.pi_eq
+    rw [FiniteEtaleKeller.eval₂_generalGaugePi] at h
+    change (p.tUnit : A) *
+      ((p.tUnit : A) ^ 2 * p.point 2 +
+        algebraMap K A (G.coeff 1 / G.coeff 3) * p.point 1 ^ 2 *
+          (1 + 3 * (p.tUnit : A))) = algebraMap K A (pi : K)
+    rw [tUnit_val]
+    simpa only [t] using h
+
+@[simp]
+theorem toGaugeSource_point
+    (p : GeneralGaugeRawFiberPoint G pi b c A) :
+    p.toGaugeSource.point = p.point := by
+  funext i
+  fin_cases i <;> rfl
+
 /-- Convert a literal polynomial-map fiber point into the displayed source
 fiber with its reciprocal chart. -/
 def toDisplayed (p : GeneralGaugeRawFiberPoint G pi b c A) :
     GeneralGaugeDisplayedFiberPoint G (pi : K) b c A where
-  source :=
-    { t := p.tUnit
-      x := p.point 0
-      y := p.point 1
-      z := p.point 2
-      t_eq := rfl
-      pi_eq := by
-        have h := p.pi_eq
-        rw [FiniteEtaleKeller.eval₂_generalGaugePi] at h
-        simpa only [t] using h }
-  b_eq := p.b_eq
-  c_eq := p.c_eq
+  source := p.toGaugeSource
+  b_eq := by
+    rw [toGaugeSource_point]
+    exact p.b_eq
+  c_eq := by
+    rw [toGaugeSource_point]
+    exact p.c_eq
 
 end GeneralGaugeRawFiberPoint
 
