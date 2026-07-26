@@ -12,8 +12,9 @@ import FiniteEtaleKeller.ExplicitPolynomial
 This module certifies the three-variable polynomial map, its denominator-free
 Jacobian `-722`, its determinant-`-2` quadratic-gauge normalization, and the
 fixed determinant-one output normalization.  The determinant calculation is a
-specialization of the all-degree theorem; a closed polynomial identity checks
-that the displayed quintic map is exactly that specialization.
+specialization of the all-degree theorem.  The displayed integral map is then
+identified with the output scaling `diag(1,19,19)` of that specialization,
+without expanding the high powers of the recurrent polynomial `q`.
 -/
 
 noncomputable section
@@ -46,26 +47,30 @@ def integralMap : Fin 3 → M :=
       + MvPolynomial.C 2 * (MvPolynomial.X 0 * q) ^ 4
       + MvPolynomial.C 3 * (MvPolynomial.X 0 * q) ^ 5]
 
-/-- The determinant-`-2` quadratic-gauge normalization. -/
-def normalizedMap : Fin 3 → M :=
-  scaleOutput (1 : ℚ) (1 / 19 : ℚ) (1 / 19 : ℚ) integralMap
+/-- The determinant-`-2` quadratic-gauge normalization.  Defining it from the
+universal map keeps the expensive Jacobian calculation entirely general. -/
+def normalizedMap : Fin 3 → M := generalGaugeMap g5
 
 /-- The target-preserving determinant-one normalization from the main theorem. -/
 def jacobianOneMap : Fin 3 → M :=
   scaleOutput 1 (-1 / 2 : ℚ) 1 normalizedMap
 
+@[simp]
+private theorem t_eq_generalGaugeT : t = (generalGaugeT : M) := rfl
+
+@[simp]
+private theorem q_eq_generalGaugeQ : q = generalGaugeQ g5 := by
+  simp [q, generalGaugeQ, t, generalGaugeT, g5, Polynomial.coeff_X]
+  ring
+
+private theorem g5_natDegree : g5.natDegree = 5 := by
+  unfold g5
+  compute_degree!
+
 /-- The explicitly displayed normalized quintic map is literally the
 all-degree quadratic gauge attached to the seed `g5`. -/
 theorem normalizedMap_eq_generalGaugeMap :
-    normalizedMap = generalGaugeMap g5 := by
-  funext i
-  fin_cases i <;>
-    simp [normalizedMap, integralMap, scaleOutput, generalGaugeMap,
-      generalGaugePi, generalGaugeB, generalGaugeC, generalGaugeQ,
-      generalGaugeT, t, q, g5, Polynomial.coeff_X,
-      MvPolynomial.C_mul'] <;>
-    ring_nf <;>
-    simp
+    normalizedMap = generalGaugeMap g5 := rfl
 
 /-- The normalized quadratic gauge has Jacobian determinant `-2`. -/
 theorem jacobianDet_normalizedMap :
@@ -75,11 +80,20 @@ theorem jacobianDet_normalizedMap :
   · norm_num [g5, Polynomial.coeff_X]
   · norm_num [g5, Polynomial.coeff_X]
 
-/-- Scaling the normalized gauge back by `diag(1,19,19)` recovers the displayed map. -/
+/-- Scaling the normalized gauge by `diag(1,19,19)` recovers the displayed
+integer-coefficient map. -/
 theorem integralMap_eq_scaled_normalized :
     integralMap = scaleOutput (1 : ℚ) 19 19 normalizedMap := by
+  rw [normalizedMap_eq_generalGaugeMap]
   funext i
-  fin_cases i <;> simp [normalizedMap, scaleOutput, MvPolynomial.C_mul']
+  fin_cases i
+  · simp [integralMap, scaleOutput, generalGaugeMap, generalGaugePi]
+  · simp [integralMap, scaleOutput, generalGaugeMap, generalGaugeB,
+      g5_natDegree, g5, Polynomial.coeff_X, Algebra.smul_def]
+    ring
+  · simp [integralMap, scaleOutput, generalGaugeMap, generalGaugeC,
+      g5_natDegree, g5, Polynomial.coeff_X, Algebra.smul_def]
+    ring
 
 /-- The displayed denominator-free map has Jacobian determinant `-722`. -/
 theorem jacobianDet_integralMap :
@@ -96,6 +110,7 @@ theorem jacobianDet_jacobianOneMap : jacobianDet jacobianOneMap = 1 := by
   norm_num
 
 #print axioms normalizedMap_eq_generalGaugeMap
+#print axioms integralMap_eq_scaled_normalized
 #print axioms jacobianDet_integralMap
 #print axioms jacobianDet_jacobianOneMap
 
