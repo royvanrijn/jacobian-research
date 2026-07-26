@@ -1,61 +1,72 @@
 \section{Introduction}
 
-A polynomial map with nonzero constant Jacobian is \'etale, so every one of
-its fibers is a finite \'etale scheme.  The converse realization problem is
-much less formal: which finite \'etale algebras can occur as a \emph{full}
-fiber, with no generic inverse sheet lost at infinity?  The answer is as sharp
-as possible.  Apart from the classical obstruction in geometric degree two,
-there is no restriction at all.
+A polynomial map with nonzero constant Jacobian is \'etale.  Its fibers are
+therefore finite \'etale schemes, possibly empty.  This raises a simple reverse
+question: given a finite \'etale algebra $A/K$, can we build a Keller map with
+$\Spec A$ as one of its fibers?
 
-The main theorem proves that every nonzero finite \'etale algebra of rank
-$N\neq2$ is a Keller fiber.  Rank one is trivial.  For every $N\geq3$, a
-squarefree presentation $A\simeq K[T]/(P)$ is converted directly into a
-three-variable Jacobian-one map whose distinguished full fiber is
-$\Spec A$.  The formulas are uniform in $P$; once an admissible translation
-parameter is fixed, they commute with extension of the ground field and have
-coordinate degree at most $6N+2$.
+There is one important word in that question.  The fiber should be \emph{full}:
+its length must equal the geometric degree of the map.  Otherwise some generic
+inverse sheets may have escaped to infinity, and the special fiber records
+only part of the inverse problem.  With this requirement, the answer is as
+sharp as it can be.  Every nonzero finite \'etale algebra occurs, except those
+of rank two.
 
-The mechanism is a quadratic gauge built around the marked variable
-$S=x/(1+xy)$.  Its target coordinates are designed so that the generic inverse
-problem reduces to one polynomial equation
+For rank $N\geq3$, the construction starts from a squarefree presentation
+\[
+ A\simeq K[T]/(P).
+\]
+Choose $a\in K$ with $P'(a)P'''(a)\neq0$ and set
+\[
+ G(S)=P(a+S)-P(a).
+\]
+The polynomial $G$ is inserted into one explicit three-variable
+quadratic-gauge map.  A fixed linear change in the target makes its Jacobian
+one.  The resulting coordinate degrees are bounded by $6N+2$.
+
+The displayed map is fairly large, but its inverse problem is deliberately
+small.  It is organized around the marked coordinate
+\[
+ S=\frac{x}{1+xy},
+\]
+and reduces to a single polynomial equation
 \[
  E_{\Pi,B,C}(S)=0.
 \]
-At the distinguished target this equation is exactly $P(a+S)=0$.  Two facts
-then make the rational chart global on the whole scheme fiber.  First, the
-unit first target coordinate forces both chart factors to be units.  Second,
-separability makes $E'(S)$ invertible in every commutative test algebra by a
-B\'ezout identity.  This gives mutually inverse formulas between roots of $E$
-and source points, naturally in the test algebra.  Thus the argument identifies
-the complete fiber functor, including nilpotents and all base changes, rather
-than only its geometric points.
+At the chosen target this equation becomes $P(a+S)=0$.  The two chart factors
+that occur in the reconstruction are automatically units because the first
+target coordinate is one.  Since $P$ is squarefree, a B\'ezout identity makes
+$E'(S)$ invertible in every commutative test algebra.  This gives explicit
+inverse formulas between roots of $E$ and points of the source fiber.
 
-The proof has four logically separate layers:
-\begin{enumerate}
-\item a coefficientwise all-degree calculation gives the displayed polynomial
-      map, constant Jacobian, generic inverse equation, and degree bound;
-\item the functor-of-points reconstruction proves that a separable inverse
-      polynomial represents the entire source fiber;
-\item translation identifies $K[S]/(P(a+S))$ with $K[T]/(P)$, while an
-      admissible $a$ always exists because $P'P'''$ is nonzero;
-\item monogenicity passes from squarefree polynomials to arbitrary finite
-      \'etale algebras, and the Campbell--Razar--Wright theorem excludes rank
-      two.
-\end{enumerate}
+That last statement is stronger than a count of geometric points.  The
+formulas are natural in the test algebra, so they identify the entire fiber
+functor, including nilpotents and every scalar extension.  After translating
+back from $S$ to $T$, the literal fiber is the original algebra $K[T]/(P)$.
+Nothing arithmetic has been replaced by a numerical proxy.
 
-The arithmetic consequences require no further geometry.  Any connectedness,
-Galois action, local factorization, or local--global obstruction already
-present in a finite \'etale algebra survives unchanged in its Keller fiber.
-This yields the optimal rank-five failure of the Hasse principle and an
-infinite family of such failures inside one fixed map.
+The proof splits into four steps.  First, a coefficientwise calculation builds
+the all-degree map and proves its constant Jacobian and degree bound.  Second,
+the root-to-source formulas identify a separable inverse polynomial with the
+whole scheme fiber.  Third, translation turns the inverse polynomial into the
+prescribed $P$.  Finally, monogenicity handles arbitrary finite \'etale
+algebras, while the Campbell--Razar--Wright theorem rules out geometric degree
+two.
 
-The construction through the polynomial-presentation stage is formalized in
-Lean.  Starting from a squarefree $P$ of degree at least three, Lean chooses an
-admissible translation, constructs the actual all-degree
-$\operatorname{MvPolynomial}(\operatorname{Fin}3,K)$ map and normalized target,
-proves its Jacobian is one and its coordinate degrees are at most $6N+2$, and
-identifies its literal fiber functor naturally with maps from $K[T]/(P)$ over
-every commutative test algebra.  Exact SymPy and Singular certificates provide
-independent expansions.  Monogenicity, the generic-function-field degree
-argument, the historical degree-two theorem, and the arithmetic applications
-remain explicitly separated mathematical inputs.
+Once the realization theorem is proved, the arithmetic applications are
+immediate.  An irreducible polynomial gives a connected fiber; a product gives
+the same field decomposition; local points, real signature, and Galois action
+are inherited from the original algebra.  In particular, the classical
+Berend--Bilu quintic produces the smallest possible Hasse-principle failure,
+and a second construction places infinitely many such failures inside one
+fixed Keller map.
+
+The constructive part is formalized in Lean.  Starting from squarefree $P$ of
+degree at least three, Lean chooses an admissible translation, constructs the
+actual $\operatorname{MvPolynomial}(\operatorname{Fin}3,K)$ map and target,
+proves the Jacobian-one identity and the $6N+2$ bound, and identifies the
+literal fiber naturally with maps from $K[T]/(P)$ into every commutative test
+algebra.  The remaining inputs---monogenicity, the generic irreducibility
+argument, the degree-two theorem, and the number-theoretic applications---are
+kept separate and proved in the paper rather than presented as formalized
+results.
