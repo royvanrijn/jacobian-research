@@ -135,6 +135,7 @@ theorem eval₂_generalGaugeB_eq_marked
       simp only [ι, map_mul, map_sub, map_pow]
       rw [map_ofNat (algebraMap K A) 2, map_ofNat (algebraMap K A) 3]
       simp only [map_one]
+      ring
 
 /-- On the same chart, the third displayed coordinate is the inverse-equation
 expression `2*G_π/g₁ - B*S²`. -/
@@ -218,7 +219,6 @@ theorem eval₂_generalGaugeC_eq_inverse
       simp [ι, map_mul, map_pow]
       apply Finset.sum_congr rfl
       intro k hk
-      rw [mul_comm (G.coeff k) (G.coeff 1)⁻¹]
       ring
     _ = 2 *
           (p.S + ι (G.coeff 2 / G.coeff 1) * ι pi * p.S ^ 2 +
@@ -236,10 +236,10 @@ theorem eval₂_generalGaugeC_eq_inverse
       simp only [aeval_generalGaugeSeedPolynomial, aeval_generalGaugeBeta]
       simp only [ι, map_mul, map_sub, map_pow, map_natCast, map_ofNat, map_one]
       linear_combination
-        p.S * hscale_one +
-        (ι pi * p.S ^ 2) * hscale_two +
-        (ι pi * p.S ^ 3) * hscale_three +
-        htail
+        (-p.S) * hscale_one +
+        (-(ι pi * p.S ^ 2)) * hscale_two +
+        (-(ι pi * p.S ^ 3)) * hscale_three +
+        (-1 : A) * htail
     _ = algebraMap K A (2 / G.coeff 1) *
           Polynomial.aeval p.S (generalGaugeSeedPolynomial G pi) -
         MvPolynomial.eval₂ (algebraMap K A) p.point (generalGaugeB G) * p.S ^ 2 := by
