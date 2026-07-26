@@ -62,10 +62,11 @@ def map (f : A →ₐ[K] B) (s : LocalizedPolynomialRoot E A) :
   val := f s.val
   root_eq := by
     rw [Polynomial.aeval_algHom_apply f s.val E, s.root_eq, map_zero]
-  derivativeUnit := Units.map f.toMonoidHom s.derivativeUnit
+  derivativeUnit := Units.map f.toRingHom s.derivativeUnit
   derivativeUnit_eq := by
     simp only [Units.coe_map]
     rw [s.derivativeUnit_eq, Polynomial.aeval_algHom_apply]
+    rfl
 
 @[simp]
 theorem map_val (f : A →ₐ[K] B) (s : LocalizedPolynomialRoot E A) :
@@ -104,18 +105,15 @@ def ofLocalizedAlgHom
   val := φ (algebraMap (AdjoinRoot E) (LocalizedAdjoinRoot E) (AdjoinRoot.root E))
   root_eq := AdjoinRoot.aeval_algHom_eq_zero E (localizedBaseAlgHom φ)
   derivativeUnit :=
-    Units.map φ.toMonoidHom
+    Units.map φ.toRingHom
       (IsLocalization.Away.algebraMap_isUnit (derivativeClass E)).unit
   derivativeUnit_eq := by
     simp only [Units.coe_map, IsUnit.unit_spec]
     change
-      φ (algebraMap (AdjoinRoot E) (LocalizedAdjoinRoot E)
-        (AdjoinRoot.mk E E.derivative)) =
-      Polynomial.aeval
-        (φ (algebraMap (AdjoinRoot E) (LocalizedAdjoinRoot E)
-          (AdjoinRoot.root E))) E.derivative
-    rw [Polynomial.aeval_algHom_apply]
-    simp [localizedBaseAlgHom, AdjoinRoot.aeval_eq]
+      (localizedBaseAlgHom φ) (AdjoinRoot.mk E E.derivative) =
+        Polynomial.aeval
+          ((localizedBaseAlgHom φ) (AdjoinRoot.root E)) E.derivative
+    rw [← AdjoinRoot.aeval_eq, Polynomial.aeval_algHom_apply]
 
 /-- A root with invertible derivative extends uniquely to the localization. -/
 def toLocalizedAlgHom
@@ -123,6 +121,8 @@ def toLocalizedAlgHom
   IsLocalization.Away.liftAlgHom (derivativeClass E)
     (f := s.toPolynomialRoot.liftAlgHom)
     (by
+      change IsUnit
+        (s.toPolynomialRoot.liftAlgHom (AdjoinRoot.mk E E.derivative))
       rw [PolynomialRoot.liftAlgHom_mk]
       rw [← s.derivativeUnit_eq]
       exact s.derivativeUnit.isUnit)
@@ -137,16 +137,24 @@ def localizedAlgHomEquiv (E : K[X])
     intro φ
     apply Localization.algHom_ext (Submonoid.powers (derivativeClass E))
     apply AdjoinRoot.algHom_ext
-    simp [toLocalizedAlgHom, ofLocalizedAlgHom, localizedBaseAlgHom,
-      Algebra.algHom]
+    simp [toLocalizedAlgHom, ofLocalizedAlgHom, Algebra.algHom]
   right_inv := by
     intro s
     apply LocalizedPolynomialRoot.ext
-    simp [toLocalizedAlgHom, ofLocalizedAlgHom, localizedBaseAlgHom,
-      Algebra.algHom]
+    simp [toLocalizedAlgHom, ofLocalizedAlgHom, localizedBaseAlgHom]
+
+/-- The localized quotient universal property is natural under
+postcomposition of test-algebra maps. -/
+theorem localizedAlgHomEquiv_natural
+    (f : A →ₐ[K] B) (φ : LocalizedAdjoinRoot E →ₐ[K] A) :
+    (localizedAlgHomEquiv E B) (f.comp φ) =
+      ((localizedAlgHomEquiv E A) φ).map f := by
+  apply LocalizedPolynomialRoot.ext
+  rfl
 
 end LocalizedPolynomialRoot
 
 #print axioms LocalizedPolynomialRoot.localizedAlgHomEquiv
+#print axioms LocalizedPolynomialRoot.localizedAlgHomEquiv_natural
 
 end FiniteEtaleKeller
