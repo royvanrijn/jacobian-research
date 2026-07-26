@@ -44,6 +44,11 @@ private theorem announcedSeed_natDegree : announcedSeed.natDegree = 3 := by
   unfold announcedSeed
   compute_degree!
 
+private tactic | `($tactic| normalize_coefficients) =>
+  `(tactic|
+    simp only [map_ofNat, MvPolynomial.C_eq_coe_nat]
+    ring)
+
 /-- Substituting `G(S)=S+S^3` into the all-degree construction recovers the
 announced map coordinate for coordinate. -/
 theorem generalGaugeMap_announcedSeed :
@@ -52,7 +57,7 @@ theorem generalGaugeMap_announcedSeed :
   fin_cases i
   · simp [generalGaugeMap, announcedCounterexampleMap, generalGaugePi,
       generalGaugeQ, generalGaugeT, announcedSeed, Polynomial.coeff_X]
-    ring_nf
+    normalize_coefficients
   · change generalGaugeB announcedSeed =
       (let t : GaugePolynomial ℚ := 1 + MvPolynomial.X 0 * MvPolynomial.X 1
        MvPolynomial.X 1 +
@@ -62,7 +67,7 @@ theorem generalGaugeMap_announcedSeed :
              MvPolynomial.X 0 * MvPolynomial.X 1))
     rw [generalGaugeB, announcedSeed_natDegree]
     norm_num [announcedSeed, generalGaugeQ, generalGaugeT, Polynomial.coeff_X]
-    ring_nf
+    normalize_coefficients
   · change generalGaugeC announcedSeed =
       (let t : GaugePolynomial ℚ := 1 + MvPolynomial.X 0 * MvPolynomial.X 1
        MvPolynomial.C 2 * MvPolynomial.X 0 -
@@ -70,7 +75,7 @@ theorem generalGaugeMap_announcedSeed :
          MvPolynomial.X 0 ^ 3 * MvPolynomial.X 2)
     rw [generalGaugeC, announcedSeed_natDegree]
     norm_num [announcedSeed, generalGaugeT, Polynomial.coeff_X]
-    ring_nf
+    normalize_coefficients
 
 /-- The constant Jacobian of the announced map is inherited from the general
 theorem. -/
