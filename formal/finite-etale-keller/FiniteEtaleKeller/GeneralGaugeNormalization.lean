@@ -137,6 +137,7 @@ def toRaw
             MvPolynomial.eval₂ (algebraMap K A) p.point (generalGaugeB G)) := by
               rw [mul_assoc]
       _ = 0 := by rw [hb, mul_zero]
+      _ = algebraMap K A (0 : K) := by simp
   c_eq := by
     simpa only [eval₂_generalGaugeJacobianOneMap_two] using p.c_eq
 
