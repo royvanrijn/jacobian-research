@@ -8,9 +8,11 @@ $\Spec A$ as one of its fibers?
 There is one important word in that question.  The fiber should be \emph{full}:
 its length must equal the geometric degree of the map.  Otherwise some generic
 inverse sheets may have escaped to infinity, and the special fiber records
-only part of the inverse problem.  With this requirement, the answer is as
-sharp as it can be.  Every nonzero finite \'etale algebra occurs, except those
-of rank two.
+only part of the inverse problem.  Our main result answers this prescribed
+algebra question: every finite \'etale $K$-algebra of rank at least three occurs
+as a full fiber of an explicit Keller map in three variables.  The statement
+about possible ranks---all nonzero ranks except two---is a consequence, not the
+main content of the theorem.
 
 For rank $N\geq3$, the construction starts from a squarefree presentation
 \[
@@ -24,6 +26,15 @@ The polynomial $G$ is inserted into one explicit three-variable
 quadratic-gauge map.  A fixed linear change in the target makes its Jacobian
 one.  The resulting coordinate degrees are bounded by $6N+2$.
 
+The family begins with the announced counterexample itself.  Substituting
+\[
+ G(S)=S+S^3
+\]
+recovers Alp\"oge's three coordinates exactly, with no conjugation or output
+rescaling.  The higher-degree construction is therefore an extension of the
+announced map rather than a separate template that happens to share its
+Jacobian.
+
 The displayed map is fairly large, but its inverse problem is deliberately
 small.  It is organized around the marked coordinate
 \[
@@ -33,25 +44,28 @@ and reduces to a single polynomial equation
 \[
  E_{\Pi,B,C}(S)=0.
 \]
-At the chosen target this equation becomes $P(a+S)=0$.  The two chart factors
-that occur in the reconstruction are automatically units because the first
-target coordinate is one.  Since $P$ is squarefree, a B\'ezout identity makes
-$E'(S)$ invertible in every commutative test algebra.  This gives explicit
-inverse formulas between roots of $E$ and points of the source fiber.
+At an arbitrary target with nonzero first coordinate, the whole fiber is
+\[
+ \operatorname{Spec}\left((K[S]/(E))[1/\overline{E'}]\right).
+\]
+This is the natural answer even when $E$ has repeated factors: the source map
+is \'etale, so only roots at which $E'$ is invertible can occur.  At the target
+used for realization, $E=P(a+S)$ is squarefree, hence $E'$ is already a unit
+modulo $E$ and the localization disappears.
 
-That last statement is stronger than a count of geometric points.  The
-formulas are natural in the test algebra, so they identify the entire fiber
-functor, including nilpotents and every scalar extension.  After translating
-back from $S$ to $T$, the literal fiber is the original algebra $K[T]/(P)$.
-Nothing arithmetic has been replaced by a numerical proxy.
+The reconstruction is stronger than a count of geometric points.  Its formulas
+are natural in the test algebra, so they identify the entire fiber functor,
+including nilpotents and every scalar extension.  After translating back from
+$S$ to $T$, the literal fiber is the original algebra $K[T]/(P)$.  Nothing
+arithmetic has been replaced by a numerical proxy.
 
 The proof splits into four steps.  First, a coefficientwise calculation builds
 the all-degree map and proves its constant Jacobian and degree bound.  Second,
-the root-to-source formulas identify a separable inverse polynomial with the
-whole scheme fiber.  Third, translation turns the inverse polynomial into the
-prescribed $P$.  Finally, monogenicity handles arbitrary finite \'etale
-algebras, while the Campbell--Razar--Wright theorem rules out geometric degree
-two.
+the root-to-source formulas prove the localized-fiber theorem and, in the
+squarefree case, identify the quotient $K[S]/(E)$ with the whole scheme fiber.
+Third, translation turns the inverse polynomial into the prescribed $P$.
+Finally, monogenicity handles arbitrary finite \'etale algebras, while the
+Campbell--Razar--Wright theorem rules out geometric degree two.
 
 Once the realization theorem is proved, the arithmetic applications are
 immediate.  An irreducible polynomial gives a connected fiber; a product gives
@@ -66,7 +80,7 @@ degree at least three, Lean chooses an admissible translation, constructs the
 actual $\operatorname{MvPolynomial}(\operatorname{Fin}3,K)$ map and target,
 proves the Jacobian-one identity and the $6N+2$ bound, and identifies the
 literal fiber naturally with maps from $K[T]/(P)$ into every commutative test
-algebra.  The remaining inputs---monogenicity, the generic irreducibility
-argument, the degree-two theorem, and the number-theoretic applications---are
-kept separate and proved in the paper rather than presented as formalized
-results.
+algebra.  It also verifies the exact specialization $G(S)=S+S^3$.  The
+remaining inputs---monogenicity, the generic irreducibility argument, the
+degree-two theorem, and the number-theoretic applications---are kept separate
+and proved in the paper rather than presented as formalized results.
