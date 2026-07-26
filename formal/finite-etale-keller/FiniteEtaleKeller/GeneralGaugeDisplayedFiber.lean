@@ -74,8 +74,10 @@ theorem eval₂_generalGaugeQ
     (p : GaugeSource A (algebraMap K A pi)
       (algebraMap K A (G.coeff 1 / G.coeff 3))) :
     MvPolynomial.eval₂ (algebraMap K A) p.point (generalGaugeQ G) = p.q := by
-  simp [point, generalGaugeQ, generalGaugeT, GaugeSource.q, p.t_eq]
-  rw [map_ofNat (algebraMap K A) 3]
+  rw [FiniteEtaleKeller.eval₂_generalGaugeQ]
+  simp only [point_zero, point_one, point_two]
+  rw [← p.t_eq]
+  rfl
 
 /-- The first displayed coordinate is exactly the first source-fiber equation. -/
 @[simp]
@@ -84,7 +86,7 @@ theorem eval₂_generalGaugePi
       (algebraMap K A (G.coeff 1 / G.coeff 3))) :
     MvPolynomial.eval₂ (algebraMap K A) p.point (generalGaugePi G) =
       algebraMap K A pi := by
-  simp only [generalGaugePi, map_mul]
+  rw [generalGaugePi, MvPolynomial.eval₂_mul]
   rw [eval₂_generalGaugeQ]
   rw [FiniteEtaleKeller.eval₂_generalGaugeT]
   simp only [point_zero, point_one]
@@ -118,7 +120,6 @@ theorem eval₂_generalGaugeB_eq_marked
       rw [← p.t_eq]
       simp only [ι, map_mul]
       rw [map_ofNat (algebraMap K A) 3, map_ofNat (algebraMap K A) 2]
-      ring
     _ = (p.y + p.x * p.q) +
           2 * ι (G.coeff 2 / G.coeff 1) * ((p.t : A) * p.q) +
           (3 * ι (G.coeff 3 / G.coeff 1) - 1) *
@@ -133,7 +134,7 @@ theorem eval₂_generalGaugeB_eq_marked
       rw [p.t_mul_q]
       simp only [ι, map_mul, map_sub, map_pow]
       rw [map_ofNat (algebraMap K A) 2, map_ofNat (algebraMap K A) 3]
-      ring
+      simp only [map_one]
 
 /-- On the same chart, the third displayed coordinate is the inverse-equation
 expression `2*G_π/g₁ - B*S²`. -/
@@ -163,6 +164,38 @@ theorem eval₂_generalGaugeC_eq_inverse
     (ι (G.coeff 3 / G.coeff 1))
     (fun k => ι (G.coeff k / G.coeff 1))
     G.natDegree
+  have hscale (r : K) :
+      ι (2 / G.coeff 1) * ι r =
+        (2 : A) * ι (r / G.coeff 1) := by
+    have hr : (2 / G.coeff 1) * r = 2 * (r / G.coeff 1) := by
+      rw [div_eq_mul_inv, div_eq_mul_inv]
+      ring
+    rw [← map_mul, hr, map_mul]
+    rw [map_ofNat (algebraMap K A) 2]
+  have hscale_one :
+      ι (2 / G.coeff 1) * ι (G.coeff 1) = (2 : A) := by
+    simpa [h₁] using hscale (G.coeff 1)
+  have hscale_two := hscale (G.coeff 2)
+  have hscale_three := hscale (G.coeff 3)
+  have htail :
+      ι (2 / G.coeff 1) *
+          (∑ k ∈ Finset.Icc 4 G.natDegree,
+            ι (G.coeff k) * ι pi ^ k * p.S ^ k) =
+        (2 : A) *
+          (∑ k ∈ Finset.Icc 4 G.natDegree,
+            ι (G.coeff k / G.coeff 1) * ι pi ^ k * p.S ^ k) := by
+    simp only [Finset.mul_sum]
+    apply Finset.sum_congr rfl
+    intro k hk
+    calc
+      ι (2 / G.coeff 1) *
+          (ι (G.coeff k) * ι pi ^ k * p.S ^ k) =
+        (ι (2 / G.coeff 1) * ι (G.coeff k)) *
+          ι pi ^ k * p.S ^ k := by ring
+      _ = ((2 : A) * ι (G.coeff k / G.coeff 1)) *
+          ι pi ^ k * p.S ^ k := by rw [hscale]
+      _ = (2 : A) *
+          (ι (G.coeff k / G.coeff 1) * ι pi ^ k * p.S ^ k) := by ring
   calc
     MvPolynomial.eval₂ (algebraMap K A) p.point (generalGaugeC G) =
         p.x * (5 - 3 * (p.t : A)) -
@@ -174,7 +207,6 @@ theorem eval₂_generalGaugeC_eq_inverse
       rw [eval₂_generalGaugeQ]
       simp only [point_zero, point_one, point_two]
       rw [← p.t_eq]
-      simp [ι, map_mul]
     _ = 2 * p.S - p.Q * p.S ^ 2 +
           (1 - ι (G.coeff 3 / G.coeff 1)) * ι pi * p.S ^ 3 -
           ∑ k ∈ Finset.Icc 4 G.natDegree,
@@ -184,6 +216,9 @@ theorem eval₂_generalGaugeC_eq_inverse
       rw [p.t_mul_q]
       simp only [GaugeSource.S, GaugeSource.Q]
       simp [ι, map_mul, map_pow]
+      apply Finset.sum_congr rfl
+      intro k hk
+      rw [mul_comm (G.coeff k) (G.coeff 1)⁻¹]
       ring
     _ = 2 *
           (p.S + ι (G.coeff 2 / G.coeff 1) * ι pi * p.S ^ 2 +
@@ -199,9 +234,12 @@ theorem eval₂_generalGaugeC_eq_inverse
           Polynomial.aeval p.S (generalGaugeSeedPolynomial G pi) -
         (p.Q + Polynomial.aeval p.S (generalGaugeBeta G pi)) * p.S ^ 2 := by
       simp only [aeval_generalGaugeSeedPolynomial, aeval_generalGaugeBeta]
-      simp [ι, map_mul, map_sub, map_pow]
-      field_simp [h₁]
-      ring_nf
+      simp only [ι, map_mul, map_sub, map_pow, map_natCast, map_ofNat, map_one]
+      linear_combination
+        p.S * hscale_one +
+        (ι pi * p.S ^ 2) * hscale_two +
+        (ι pi * p.S ^ 3) * hscale_three +
+        htail
     _ = algebraMap K A (2 / G.coeff 1) *
           Polynomial.aeval p.S (generalGaugeSeedPolynomial G pi) -
         MvPolynomial.eval₂ (algebraMap K A) p.point (generalGaugeB G) * p.S ^ 2 := by
