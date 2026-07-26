@@ -88,6 +88,7 @@ def tUnit (p : GeneralGaugeRawFiberPoint G pi b c A) : Aˣ :=
 theorem tUnit_val (p : GeneralGaugeRawFiberPoint G pi b c A) :
     (p.tUnit : A) = p.t := rfl
 
+set_option maxHeartbeats 0 in
 /-- Convert a literal polynomial-map fiber point into the displayed source
 fiber with its reciprocal chart. -/
 def toDisplayed (p : GeneralGaugeRawFiberPoint G pi b c A) :
