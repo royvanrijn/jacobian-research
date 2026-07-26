@@ -1,28 +1,29 @@
 \begin{abstract}
-Let $K$ be a field of characteristic zero.  We determine exactly which
-nonzero finite \'etale $K$-algebras occur as coordinate algebras of full fibers
-of polynomial maps with nonzero constant Jacobian: every rank occurs except
-rank two, and every realizable algebra already occurs for a map
-$\A^3_K\to\A^3_K$.  Here full means that the fiber length equals the geometric
-degree of the map.
+Let $K$ be a field of characteristic zero.  A fiber of a polynomial map with
+nonzero constant Jacobian is finite and \'etale, but the converse question is
+not automatic: which finite \'etale $K$-algebras can occur as a \emph{full}
+fiber, containing all generic inverse sheets?  We prove that every nonzero
+rank occurs except rank two.  Every algebra of rank at least three is already
+realized by a map $\A^3_K\to\A^3_K$.
 
-The realization is explicit and effective.  Given a squarefree polynomial
-$P$ of degree $N\geq3$, choose $a\in K$ with $P'(a)P'''(a)\neq0$.  A universal
-quadratic-gauge formula, followed by a fixed linear output normalization,
-gives a Jacobian-one map of coordinate degree at most $6N+2$ whose
-distinguished fiber is naturally represented by $K[T]/(P)$.  Such an $a$
-always exists.
+The construction is explicit.  Start with a squarefree polynomial $P$ of
+degree $N\geq3$, translate the variable so that $P'(a)P'''(a)\neq0$, and feed
+$G(S)=P(a+S)-P(a)$ into a universal quadratic-gauge formula.  After a fixed
+linear normalization, the resulting map has Jacobian one and coordinate
+degree at most $6N+2$.  At one distinguished target its inverse equation is
+exactly $P(a+S)=0$, and the full fiber is naturally isomorphic to
+$\Spec K[T]/(P)$.
 
-Consequently every number field of degree at least three occurs as a connected
-Keller fiber.  More generally, field decomposition, geometric Galois action,
-real signature, and every scalar extension of a finite \'etale algebra are
-preserved by the realization.  Over $\Q$ we exhibit an explicit rank-five
-fiber with points over $\R$ and every $\Q_p$ but no rational point, and prove
-that rank five is minimal.  One fixed Keller map carries infinitely many such
-fibers.  Lean formalizes the automatic choice of $a$, the actual all-degree
-three-variable polynomial map, its determinant-one identity and $6N+2$ degree
-bound, and a natural equivalence between the literal map fiber over every
-commutative test algebra and the original quotient $K[T]/(P)$.  Independent
-exact SymPy and Singular calculations audit the universal identities and
-expanded maps.
+The useful point is that the construction remembers the algebra, not just the
+number of geometric points.  Connectedness, field decomposition, Galois
+action, real signature, local points, and scalar extension therefore pass to
+the Keller fiber unchanged.  Over $\Q$ this gives an explicit rank-five fiber
+with points over $\R$ and every $\Q_p$ but no rational point; rank five is
+minimal, and one fixed Keller map contains infinitely many such fibers.
+
+The constructive part of the argument is formalized in Lean: the automatic
+choice of $a$, the actual three-variable polynomial map, its Jacobian-one
+identity, the $6N+2$ degree bound, and the natural equivalence between the
+literal map fiber and $K[T]/(P)$.  Independent SymPy and Singular calculations
+check the same identities from separate implementations.
 \end{abstract}
