@@ -231,8 +231,9 @@ private theorem jacobianDet_quadraticGaugeBase
     pderiv_mul, pderiv_pow, pderiv_C, pderiv_X_self, pderiv_X_of_ne,
     ne_eq, Fin.reduceEq, not_false_eq_true]
   simp only [map_neg, map_ofNat]
+  simp only [← MvPolynomial.C_mul, ← MvPolynomial.C_pow]
   field_simp [ha]
-  ring
+  ring_nf
 
 set_option maxHeartbeats 0 in
 set_option maxRecDepth 100000 in
@@ -253,8 +254,9 @@ private theorem quadraticGauge_crossDet
     pderiv_mul, pderiv_pow, pderiv_C, pderiv_X_self, pderiv_X_of_ne,
     ne_eq, Fin.reduceEq, not_false_eq_true]
   simp only [map_neg, map_ofNat]
+  simp only [← MvPolynomial.C_mul, ← MvPolynomial.C_pow]
   field_simp [ha]
-  ring
+  ring_nf
 
 private theorem pderiv_quadraticGaugeTailB
     (a : K) (R Rp Rpp : GaugePolynomial K)
