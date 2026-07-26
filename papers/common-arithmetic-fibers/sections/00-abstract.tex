@@ -1,24 +1,52 @@
 \begin{abstract}
-Let $K$ be a field of characteristic zero.  We prove a prescribed-fiber
-realization theorem: every finite \'etale $K$-algebra of rank at least three
+Let $K$ be a field of characteristic zero.  We first prove a prescribed
+finite-\'etale algebra realization theorem: every finite \'etale $K$-algebra
+of rank at least three
 occurs as the full fiber of an explicit polynomial map
 $\A^3_K\to\A^3_K$ with Jacobian one.  The construction preserves the algebra
-itself, not only its rank or its geometric points.  As a consequence, the
-possible nonzero ranks of full Keller fibers are exactly
-$1,3,4,5,\ldots$; rank two is excluded by the known degree-two theorem.
+itself, not only its rank or its geometric points.  As a corollary, the
+result gives an exact fixed-degree classification: for every $N\geq3$, the
+full fibers of geometric-degree-$N$ Keller maps in $\A^3_K$ are precisely the
+rank-$N$ finite \'etale $K$-schemes.  Rank one is realized by the identity,
+whereas rank two is excluded by the known degree-two theorem.  Thus the
+attainable nonzero ranks are exactly $1,3,4,5,\ldots$.
 
-Start with a squarefree polynomial $P$ of degree $N\geq3$, translate the
-variable so that $P'(a)P'''(a)\neq0$, and feed
-$G(S)=P(a+S)-P(a)$ into a universal quadratic-gauge formula.  The resulting
-map has coordinate degree at most $6N+2$.  At one distinguished target its
-inverse equation is exactly $P(a+S)=0$, and the full fiber is naturally
-isomorphic to $\Spec K[T]/(P)$.  More generally, for an arbitrary target with
-inverse polynomial $E$, the fiber is
+The scheme-theoretic engine is a general localized quadratic-gauge fiber
+theorem.  For an arbitrary target with inverse polynomial $E$, it identifies
+the fiber as
 \[
  \operatorname{Spec}\left((K[S]/(E))[1/\overline{E'}]\right).
 \]
-The cubic seed $G(S)=S+S^3$ recovers the recently announced
-three-dimensional counterexample exactly, coordinate for coordinate.
+Its finite-\'etale, or squarefree, corollary says that when $E$ is squarefree
+of degree $N$, the localization disappears and the quotient is a full fiber
+of rank $N$.  To prescribe an algebra, start with a squarefree polynomial
+$P$ of degree $N\geq3$, translate the variable so that
+$P'(a)P'''(a)\neq0$, and feed $G(S)=P(a+S)-P(a)$ into the gauge.  The resulting
+map has coordinate degree at most $6N+2$; at a distinguished target
+$E=P(a+S)$, and the full fiber is naturally isomorphic to
+$\Spec K[T]/(P)$.  The cubic seed $G(S)=S+S^3$ gives the recently announced
+three-dimensional map coordinate for coordinate.
+
+We compute the nonproperness set of every quadratic-gauge map exactly.  It is
+the hypersurface
+\[
+ S_{F_G}=V\!\left(\operatorname{Disc}_S(E_{\Pi,B,C})\right).
+\]
+Every repeated-root block records exactly the sheets lost from the affine
+fiber.  The slice $\Pi=0$ has a separate Newton-polygon stratification: its
+generic fiber has three affine sheets and $N-3$ sheets at infinity.  In degree
+three the raw resultant has an extraneous factor $\Pi$, whereas in degree at
+least four the plane $\Pi=0$ is a genuine nonproperness component.  Explicit
+Laurent arcs and their valuations represent every missing branch.  Since the
+distinguished inverse polynomial is the squarefree polynomial $P(a+S)$, the
+prescribed fiber lies structurally in the maximal finite-\'etale locus.
+
+For every admissible seed, not merely for a generic one, the splitting field
+of the generic inverse polynomial over $K(\Pi,B,C)$ has geometric and
+arithmetic Galois group $S_N$.  Thus every prescribed algebra occurs as a
+special fiber of a maximally symmetric generic cover.  Over a Hilbertian
+field, each constructed map also has infinitely many connected full fibers
+whose splitting fields have group $S_N$.
 
 Connectedness, field decomposition, Galois action, real signature, local
 points, and scalar extension therefore pass to the Keller fiber unchanged.

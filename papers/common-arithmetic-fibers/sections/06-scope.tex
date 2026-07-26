@@ -10,7 +10,20 @@ construction distinguishes all of that data.
 Several consequences are immediate.  A squarefree polynomial of degree at
 least three becomes an exact inverse polynomial after one translation; an
 irreducible polynomial gives a connected fiber; and a degree-$N$ input is
-realized in $\A^3$ with coordinate degree at most $6N+2$.
+realized in $\A^3$ with coordinate degree at most $6N+2$.  Moreover, every
+map produced by the construction has geometric and arithmetic generic
+monodromy $S_N$.  Over a Hilbertian field, each such fixed map has infinitely
+many connected full fibers with splitting-field group $S_N$.
+
+The fullness condition also has an intrinsic geometric interpretation for
+this family.  Theorem~\ref{thm:exact-nonproperness} computes the exact
+nonproperness hypersurface, and Corollary~\ref{cor:intrinsic-fullness} shows
+that every prescribed target lies in its complement.  Thus fullness is not
+only a length equality checked at the selected target: it is equivalent there
+to membership in the maximal finite-\'etale locus.  The partition formula
+\eqref{eq:partition-sheet-loss} and the special table
+\eqref{eq:pi-zero-fiber-table} describe exactly how fullness fails on every
+boundary stratum.
 
 More importantly, the construction does not forget the arithmetic structure.
 If the original algebra has a particular real signature, splitting field,
@@ -22,7 +35,11 @@ without adding auxiliary factors or extra variables.
 This is a transfer statement, not an inverse Galois theorem.  It does not claim
 that arbitrary local specifications can always be globalized.  It says that
 once a finite \'etale algebra with the desired arithmetic properties exists,
-the Keller construction preserves it exactly.
+the Keller construction preserves it exactly.  Nor does the monodromy theorem
+claim that one fixed seed realizes every rank-$N$ finite \'etale algebra: the
+prescribed algebra is used to choose the seed.  Its precise strengthening is
+that every resulting cover, including one built for a highly special algebra,
+has maximal generic monodromy.
 
 The realization is also far from unique.  Other constructions in the
 accompanying repository place the same finite \'etale algebra inside weighted,
@@ -46,8 +63,16 @@ fibers \cite{Gallagher}; these realize $K^N$, rather than an arbitrary finite
 decompositions of fibers that already come from Keller maps \cite{Miranda}.
 Lipton and Markakis connect rational images with Hilbert irreducibility
 \cite{LiptonMarkakis}, and Shaska studies graded Keller maps and arithmetic
-thinness \cite{Shaska}.  None of these results states the prescribed-fiber
-realization theorem used here.
+thinness \cite{Shaska}.  None of these results states the prescribed-algebra
+realization theorem used here.  The monodromy argument uses the classical
+theorem that a Morse polynomial has symmetric Galois group over the
+value-function field \cite[Theorem~4.4.5]{Serre}.
+The global boundary argument uses Jelonek's fiber-multiplicity criterion and
+is consistent with his theorem that the nonproperness locus of a dominant
+complex polynomial self-map is a uniruled hypersurface
+\cite{Jelonek1993}.  Jelonek and Laso\'n later bounded the degrees of
+polynomial curves covering such a locus \cite{JelonekLason}; in the present
+family the curves and missing source arcs are explicit.
 
 \paragraph{Independent computer checks.}
 The formulas are uniform in the degree, but expanding them by hand is not a
@@ -80,8 +105,23 @@ builds translated seeds in degrees three, four, and five, expands the actual
 maps, reconstructs the prescribed quotient rings, and checks the explicit
 rank-five Hasse example and the fixed-map family.  These bounded examples are
 regression tests.  The proof for arbitrary degree is the coefficientwise
-argument in Proposition~\ref{prop:gauge} and
+argument in the general localized quadratic-gauge fiber theorem,
+Theorem~\ref{thm:localized-gauge}, and
 Subsection~\ref{subsec:gauge-identities}.
+
+The additional checker
+\[
+ \texttt{scripts/verify\_quadratic\_gauge\_nonproperness.py}
+\]
+independently verifies the degree-three and degree-four discriminant and
+resultant factors, the exact \(\Pi\)-adic discriminant order through degree
+ten, the uniform Newton-polygon formula through degree sixty-four, the
+\(q=0\) and \(t=0\) special-fiber charts, and all displayed boundary
+valuations.  The pre-existing normalization checker
+\[
+ \texttt{scripts/verify\_quadratic\_weighted\_stable\_separation.py}
+\]
+derives the same all-degree boundary ledger from the finite normalization.
 
 \paragraph{Lean formalization.}
 The Lean project lives in
@@ -101,25 +141,71 @@ squarefree polynomial $P$ of degree at least three, it:
       $P(a+S)$; and
 \item identifies the literal map fiber naturally with
       $\operatorname{Hom}_{K\text{-alg}}(K[T]/(P),A)$ for every commutative
-      test algebra $A$.
+      test algebra $A$, while recording that the representing quotient has
+      $K$-dimension $\deg P$ and is finite \'etale over $K$.
 \end{enumerate}
-It also checks that the seed $G(S)=S+S^3$ gives exactly the three coordinates
-of the announced map \eqref{eq:announced-counterexample}.
+It also checks that the seed $G(S)=S+S^3$ gives the announced map
+\eqref{eq:announced-counterexample} coordinate for coordinate.  It proves
+that the three map coordinates are algebraically independent and constructs
+the induced injective pullback on rational function fields.  Promoting $\Pi$
+and $B$ to independent parameters, it also proves irreducibility and degree
+$\deg G$ of the full inverse equation over the iterated presentation
+$K(\Pi,B)(C)$, and proves that its root quotient has that finrank.  For the
+optimal quintic example it goes further: the exact denominator-free map
+\eqref{eq:explicit-hasse-map}, at the exact target $(1,0,-38)$, has a literal
+fiber naturally represented over every commutative rational test algebra by
+\[
+ \Q[T]/\bigl((T^3-19)(T^2+T+1)\bigr),
+\]
+and Lean proves that this quotient is finite \'etale and has rank five.
+It also proves that the literal fiber has no rational point and constructs a
+real point and a three-adic point, the latter by an explicit Hensel argument
+at the approximate root $-2$.
 
 The final construction and degree certificate are exposed as
-\texttt{automaticRealizationMap\_certificate}; the natural fiber equivalence
-is \texttt{automaticJacobianOneFiberRepresentingEquiv\_natural}.  Their axiom
-reports contain only Lean's standard logical principles
+\begin{center}
+\small\texttt{automaticRealizationMap\_certificate},
+\end{center}
+the full independent-parameter inverse certificates are
+\begin{center}
+\small\texttt{generalGaugeFullyGenericInversePolynomial\_certificate}
+\quad\text{and}\quad
+\small\texttt{generalGaugeFullyGenericInverseAdjoinRoot\_finrank},
+\end{center}
+and the natural fiber equivalence is
+\begin{center}
+\small\texttt{automaticJacobianOneFiberRepresentingEquiv\_natural}.
+\end{center}
+The corresponding concrete quintic certificate is
+\begin{center}
+\small\texttt{integralFiberRepresentingEquiv\_natural}.
+\end{center}
+Their axiom reports contain only Lean's standard logical principles
 \texttt{propext}, \texttt{Classical.choice}, and \texttt{Quot.sound}.
 
 Lean does not currently cover every theorem used in the final classification.
-The generic irreducibility argument for the function-field degree,
-monogenicity of arbitrary finite \'etale products, and the
-Campbell--Razar--Wright degree-two theorem remain ordinary mathematical proofs.
-The Chebotarev, Dirichlet, Hensel, and prime-counting arguments in the
-arithmetic applications are likewise outside the formal development.  I list
-this boundary explicitly because a green Lean build should not be read as a
-claim that those external inputs have also been formalized.
+Lean proves algebraic independence and an injective function-field pullback.
+Over the iterated independent-parameter field $K(\Pi,B)(C)$, it proves that
+the full inverse equation is irreducible of degree $N$ and that its root
+quotient has finrank $N$.  It does not yet construct the explicit comparison
+between this inverse-root extension and the actual source-over-target
+pullback-field extension, which is the remaining formal step needed to
+identify the result with $\gdeg(F_G)$.  Lean also proves that the complete map
+and target attached to a supplied translation parameter commute
+coefficientwise with extension of the ground field, and proves the
+tensor-product base change of the representing polynomial quotient.  Exact
+nonproperness and boundary-sheet accounting, the
+symmetric-monodromy and Hilbertian-specialization arguments, monogenicity of
+arbitrary finite \'etale products, and the Campbell--Razar--Wright degree-two
+theorem remain ordinary mathematical proofs.
+For the quintic example, Lean now verifies the exact literal fiber, its rank,
+finite \'etaleness, the absence of rational points, and the existence of a real
+point and a three-adic point, but not yet the existence of roots over every
+remaining nonarchimedean completion.  The full finite-field case split,
+Chebotarev, Dirichlet, and prime-counting arguments in the arithmetic
+applications are likewise outside the formal development.  I list this
+boundary explicitly because a green Lean build should not be read as a claim
+that those external inputs have also been formalized.
 
 \paragraph{Provenance and AI assistance.}
 The recent three-dimensional counterexample was announced by Alp\"oge, who
@@ -137,8 +223,9 @@ They were useful as fast but fallible collaborators.  I checked the stated
 mathematical claims, rewrote the exposition, and take responsibility for the
 paper.
 
-\begin{thebibliography}{12}
-\small
+\begin{thebibliography}{15}
+\footnotesize
+\setlength{\itemsep}{0pt}
 
 \bibitem{Alpoge}
 L.~Alp\"oge,
@@ -167,6 +254,19 @@ A.~Gallagher,
 online exact certificate atlas, 2026,
 \href{https://jacobianfun.org/counterexamples}{jacobianfun.org}.
 
+\bibitem{Jelonek1993}
+Z.~Jelonek,
+\emph{The set of points at which a polynomial map is not proper},
+Ann. Polon. Math. \textbf{58} (1993), 259--266,
+\href{https://doi.org/10.4064/ap-58-3-259-266}
+{doi:10.4064/ap-58-3-259-266}.
+
+\bibitem{JelonekLason}
+Z.~Jelonek and M.~Laso\'n,
+\emph{Quantitative properties of the non-properness set of a polynomial map},
+Manuscripta Math. \textbf{156} (2018), 383--397,
+\href{https://arxiv.org/abs/1411.5011}{arXiv:1411.5011}.
+
 \bibitem{LiptonMarkakis}
 R.~J. Lipton and E.~Markakis,
 \emph{Some remarks on the Jacobian conjecture and connections with
@@ -191,6 +291,12 @@ Israel J. Math. \textbf{32} (1979), 97--106,
 T.~Shaska,
 \emph{Graded Keller maps and the Jacobian conjecture},
 \href{https://arxiv.org/abs/2607.20210}{arXiv:2607.20210}, 2026.
+
+\bibitem{Serre}
+J.-P.~Serre,
+\emph{Topics in Galois Theory},
+second ed., Research Notes in Mathematics 1,
+A K Peters, Wellesley, MA, 2007.
 
 \bibitem{Wright}
 D.~Wright,

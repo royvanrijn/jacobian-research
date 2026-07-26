@@ -84,7 +84,7 @@ jobs:
         with:
           lake-package-directory: .cache/lean-foundational
           auto-config: false
-          build: true
+          build: false
           test: false
           lint: false
           use-mathlib-cache: true
@@ -113,67 +113,23 @@ jobs:
         uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
         with:
           persist-credentials: false
-      - name: Install Lean, prime Mathlib, and build the algebraic core
-        id: finite_etale_core
-        continue-on-error: true
+      - name: Install Lean and prime the Mathlib cache
         uses: leanprover/lean-action@38fbc41a8c28c4cbaec22d7f7de508ec2e7c0dd9 # v1
         with:
           lake-package-directory: formal/finite-etale-keller
           auto-config: false
-          build: true
-          build-args: >-
-            FiniteEtaleKeller.ExplicitPolynomial
-            FiniteEtaleKeller.MarkedLine
-            FiniteEtaleKeller.GaugeAssembly
-            FiniteEtaleKeller.Reconstruction
-            FiniteEtaleKeller.SourceEquivalence
-            FiniteEtaleKeller.QuotientReconstruction
-            FiniteEtaleKeller.SeparableReconstruction
-            FiniteEtaleKeller.RootPoints
-            FiniteEtaleKeller.MarkedFiberPoints
-            FiniteEtaleKeller.GaugeFiberPoints
-            FiniteEtaleKeller.FiberNaturality
-            FiniteEtaleKeller.UniversalFiber
-            FiniteEtaleKeller.Translation
-            FiniteEtaleKeller.TranslationQuotient
-            FiniteEtaleKeller.Admissibility
-            FiniteEtaleKeller.RealizationFiber
-            FiniteEtaleKeller.AutomaticRealization
+          build: false
           test: false
           lint: false
           use-mathlib-cache: true
       - name: Complete and log the finite-etale Keller build
         shell: bash
-        env:
-          CORE_RESULT: ${{ steps.finite_etale_core.outcome }}
         run: |
           mkdir -p artifacts/verification
           set -euo pipefail
           cd formal/finite-etale-keller
-          LAKE="$HOME/.elan/bin/lake"
-          {
-            if [ "$CORE_RESULT" != success ]; then
-              "$LAKE" build \
-                FiniteEtaleKeller.ExplicitPolynomial \
-                FiniteEtaleKeller.MarkedLine \
-                FiniteEtaleKeller.GaugeAssembly \
-                FiniteEtaleKeller.Reconstruction \
-                FiniteEtaleKeller.SourceEquivalence \
-                FiniteEtaleKeller.QuotientReconstruction \
-                FiniteEtaleKeller.SeparableReconstruction \
-                FiniteEtaleKeller.RootPoints \
-                FiniteEtaleKeller.MarkedFiberPoints \
-                FiniteEtaleKeller.GaugeFiberPoints \
-                FiniteEtaleKeller.FiberNaturality \
-                FiniteEtaleKeller.UniversalFiber \
-                FiniteEtaleKeller.Translation \
-                FiniteEtaleKeller.TranslationQuotient \
-                FiniteEtaleKeller.Admissibility \
-                FiniteEtaleKeller.RealizationFiber \
-                FiniteEtaleKeller.AutomaticRealization
-            fi
-            "$LAKE" build
-          } 2>&1 | tee ../../artifacts/verification/formal-finite-etale.log
+          "$HOME/.elan/bin/lake" build \
+            2>&1 | tee ../../artifacts/verification/formal-finite-etale.log
       - name: Archive finite-etale Lean log
         if: always()
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1

@@ -4,6 +4,7 @@ Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Roy van Rijn
 -/
 import FiniteEtaleKeller.GeneralGaugeRealization
+import FiniteEtaleKeller.FiniteEtaleQuotient
 import Mathlib.RingTheory.AdjoinRoot
 
 /-!
@@ -42,12 +43,28 @@ theorem automaticRepresentingAlgebra_nontrivial
 
 /-- The automatically realized literal fiber has length `P.natDegree`. -/
 theorem automaticRealizationFiber_rank
-    [CharZero K] (P : K[X]) (hdeg : 3 ≤ P.natDegree) :
+    [CharZero K] (P : K[X]) (_hdeg : 3 ≤ P.natDegree) :
     Module.finrank K (AdjoinRoot P) = P.natDegree :=
   adjoinRoot_finrank_eq_natDegree P
+
+/-- A squarefree polynomial presents an étale representing algebra. -/
+theorem automaticRepresentingAlgebra_etale
+    [CharZero K] (P : K[X]) (hP : Squarefree P) :
+    Algebra.Etale K (AdjoinRoot P) :=
+  adjoinRoot_etale_of_separable P
+    ((PerfectField.separable_iff_squarefree).2 hP)
+
+/-- The same squarefree quotient is finite as a module over the base field. -/
+theorem automaticRepresentingAlgebra_finite
+    [CharZero K] (P : K[X]) (hP : Squarefree P) :
+    Module.Finite K (AdjoinRoot P) :=
+  adjoinRoot_finite_of_separable P
+    ((PerfectField.separable_iff_squarefree).2 hP)
 
 #print axioms adjoinRoot_finrank_eq_natDegree
 #print axioms automaticRepresentingAlgebra_nontrivial
 #print axioms automaticRealizationFiber_rank
+#print axioms automaticRepresentingAlgebra_etale
+#print axioms automaticRepresentingAlgebra_finite
 
 end FiniteEtaleKeller

@@ -1,0 +1,297 @@
+\subsection{The exact nonproperness hypersurface}\label{subsec:nonproperness}
+
+We now make the fullness condition intrinsic.  Work geometrically over
+\(\overline K\), and write \(S_{F_G}\subset\A^3_{\overline K}\) for the
+nonproperness, or Jelonek, set of \(F_G\).  Thus \(y\in S_{F_G}\) precisely
+when there is a sequence, equivalently an algebraic arc, escaping to infinity
+in the source whose image tends to \(y\).  Put
+\begin{equation}
+ \Delta_G(\Pi,B,C)
+ =\operatorname{Disc}_S\bigl(E_{\Pi,B,C}(S)\bigr).
+ \label{eq:gauge-discriminant}
+\end{equation}
+The discriminant is taken with \(E_{\Pi,B,C}\) regarded as a degree-\(N\)
+polynomial, including on the slice where its leading coefficient vanishes.
+
+\begin{theorem}[Exact quadratic-gauge nonproperness]\label{thm:exact-nonproperness}
+For every seed \eqref{eq:seed},
+\begin{equation}
+ \boxed{S_{F_G}=V(\Delta_G).}
+ \label{eq:jelonek-discriminant}
+\end{equation}
+More precisely, the following statements hold.
+\begin{enumerate}
+\item If \(\pi\neq0\) and the multiplicity partition of
+      \(E_{\pi,b,c}\) is \((m_1,\ldots,m_s)\), then
+      \begin{equation}
+       \#F_G^{-1}(\pi,b,c)=\#\{i:m_i=1\},
+       \qquad
+       N-\#F_G^{-1}(\pi,b,c)=\sum_{m_i\geq2}m_i.
+       \label{eq:partition-sheet-loss}
+      \end{equation}
+\item On \(\Pi=0\), the complete geometric fiber table is
+      \begin{equation}
+      \begin{array}{c|c|c}
+       \text{target stratum}&\#F_G^{-1}(0,B,C)&\text{lost sheets}\\ \hline
+       B\neq0,\ BC\neq1&3&N-3\\
+       B\neq0,\ BC=1&1&N-1\\
+       B=0&1&N-1.
+      \end{array}
+      \label{eq:pi-zero-fiber-table}
+      \end{equation}
+\item For \(N=3\), the raw resultant has an extraneous leading-coefficient
+      factor:
+      \[
+       \operatorname{Res}_S(E,E')=\text{\rm unit}\cdot\Pi\Delta_G,
+       \qquad
+       \Delta_G(0,B,C)=\frac{g_1^4}{4}B^2(1-BC).
+      \]
+      Hence the entire plane \(\Pi=0\) is not a nonproperness component in
+      degree three.
+\item For \(N\geq4\), put
+      \[
+       e_N=N^2-3N-2.
+      \]
+      Then
+      \begin{equation}
+       \Delta_G=\Pi^{e_N}D_G,
+       \qquad
+       D_G(0,B,C)=\kappa_G B^2(1-BC),
+       \qquad \kappa_G\in K^*.
+       \label{eq:saturated-discriminant}
+      \end{equation}
+      In particular,
+      \[
+       S_{F_G}=V(\Pi)\cup V(D_G),
+      \]
+      and the resultant and discriminant have the same reduced zero set.
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+Because \(F_G\) is \'etale, every geometric fiber is finite and reduced.
+Its generic cardinality is \(N\).  The standard properness criterion for a
+generically finite polynomial map says that it is proper at a target exactly
+when the sum of the local multiplicities in that fiber is the generic degree
+\cite[Proposition~6]{Jelonek1993}.  Here all local multiplicities are one, so
+\begin{equation}
+ y\notin S_{F_G}\quad\Longleftrightarrow\quad
+ \#F_G^{-1}(y)=N.
+ \label{eq:properness-cardinality}
+\end{equation}
+
+Suppose first that \(\pi\neq0\).  Theorem~\ref{thm:localized-gauge}
+identifies the fiber with
+\[
+ \operatorname{Spec}
+ \bigl((\overline K[S]/(E_{\pi,b,c}))[1/\overline{E_{\pi,b,c}'}]\bigr).
+\]
+Thus a distinct root contributes one affine point exactly when it is simple.
+This proves \eqref{eq:partition-sheet-loss}; it also shows that the fiber has
+cardinality \(N\) exactly when \(\Delta_G(\pi,b,c)\neq0\).
+
+It remains to analyze \(\Pi=0\), where the inverse chart used above is not
+available.  In the source, \(\Pi=tq\).  On \(q=0\), one has
+\[
+ B=y,\qquad C=2S-BS^2,\qquad S=\frac{x}{t}.
+\]
+The residual inverse equation is therefore
+\begin{equation}
+ BS^2-2S+C=0.
+ \label{eq:q-zero-residual}
+\end{equation}
+A root reconstructs on \(q=0\) precisely when \(1-BS\neq0\).  Hence this
+divisor contributes two points when \(B\neq0\) and \(BC\neq1\), no point when
+\(B\neq0\) and \(BC=1\), and one point when \(B=0\).
+
+On \(t=0\), the relation \(1+xy=0\) gives \(y=-1/x\), while
+\[
+ q=\frac{g_1}{g_3}y^2,\qquad B=-2y=\frac2x.
+\]
+Thus \(t=0\) contributes one point when \(B\neq0\) and none when \(B=0\).
+Once \(x\) and \(y\) are fixed, the equation for \(C\) is linear in \(z\)
+with nonzero coefficient, so the point is unique.  The divisors \(t=0\) and
+\(q=0\) do not meet.  This proves \eqref{eq:pi-zero-fiber-table}.
+
+For \(N=3\), specializing the degree-three discriminant at \(\Pi=0\) gives
+\[
+ \Delta_G(0,B,C)=\frac{g_1^4}{4}B^2(1-BC).
+\]
+Its zero set is exactly the two short-fiber strata in
+\eqref{eq:pi-zero-fiber-table}.  Since the leading coefficient is
+\(g_3\Pi\), the resultant has one additional factor \(\Pi\).
+
+Now let \(N\geq4\) and put \(r=N-3\).  Over the generic DVR of the divisor
+\(\Pi=0\), the lower Newton polygon of \(E\) has vertices
+\[
+ (0,0),\quad(2,0),\quad(3,1),\quad(N,N).
+\]
+Consequently its root valuations, with multiplicities, are
+\[
+ 0\ (2),\qquad -1\ (1),\qquad
+ -\frac{r+2}{r}\ (r).
+\]
+The first two blocks are exactly the affine \(q=0\) and \(t=0\) branches
+found above; the final block consists of the \(N-3\) missing sheets.
+
+Using
+\[
+ \operatorname{Disc}(E)
+ =\operatorname{lc}(E)^{2N-2}
+   \prod_{i<j}(s_i-s_j)^2
+\]
+and the three displayed root valuations gives
+\[
+ \operatorname{ord}_{\Pi}(\Delta_G)
+ =2N(N-1)-4-4(r+2)-2(r+2)-(r-1)(r+2)
+ =N^2-3N-2.
+\]
+The endpoint residual polynomials are separable because
+\(g_1g_3g_N\neq0\), so this order is exact.  Their discriminants also give
+\[
+ \left.\Pi^{-e_N}\Delta_G\right|_{\Pi=0}
+ =\kappa_GB^2(1-BC)
+\]
+with \(\kappa_G\neq0\).  For example, up to the sign convention for the
+discriminant,
+\[
+ \kappa_G
+ =\pm\frac{r^r}{4}g_1^4g_3^{r+1}g_N^{r-1}.
+\]
+The fiber table and \eqref{eq:properness-cardinality} now show that the zero
+set of \(\Delta_G\) is exactly the nonproperness set.
+\end{proof}
+
+\begin{proposition}[Boundary normalization and explicit escape arcs]
+\label{prop:boundary-arcs}
+On \(\Pi\neq0\), the reduced discriminant divisor is birationally
+parametrized by
+\begin{equation}
+ B=\frac{G_\Pi'(s)}{g_1s},
+ \qquad
+ C=\frac{2G_\Pi(s)-sG_\Pi'(s)}{g_1},
+ \qquad (\Pi,s)\in\mathbb G_m^2.
+ \label{eq:global-discriminant-parametrization}
+\end{equation}
+If \(s_0\) is a root of multiplicity \(m\geq2\) over
+\((\pi,b,c)\), every one of the \(m\) lost sheets is represented, after a
+finite base change, by a Laurent-series source arc.  With root displacement
+as uniformizer, its generic valuations are
+\[
+ \operatorname{ord}(x)=-(m-1),\qquad
+ \operatorname{ord}(q)=m-1,\qquad
+ \operatorname{ord}(z)\geq m-1.
+\]
+
+For the generic point of \(\Pi=0\), put \(d=N-3\),
+\(h=\gcd(d,2)\).  The \(d\) lost sheets form \(h\) boundary primes, each
+with ramification index \(d/h\).  After the common base change
+\(\Pi=u^d\), their valuations are
+\begin{equation}
+\begin{array}{c|rrrrrrr}
+ &S&D&t&x&y&q&z\\ \hline
+ \operatorname{ord}_u&
+ -(N-1)&-(N+1)&N+1&2&-2&-4&-(2N+6).
+\end{array}
+\label{eq:infinity-valuations}
+\end{equation}
+On the special stratum \(B=0\), two further missing sheets have
+\begin{equation}
+ \Pi=u^2,\qquad S\sim a u^{-1},\qquad
+ a^2=-\frac{g_1}{g_3},
+ \qquad
+ \bigl(\operatorname{ord}_u x,\operatorname{ord}_u y,
+       \operatorname{ord}_u q,\operatorname{ord}_u z\bigr)
+ =(-1,1,2,2).
+ \label{eq:B-zero-valuations}
+\end{equation}
+Together with the multiplicity-block arcs above, these account for every
+lost sheet on every stratum of \eqref{eq:pi-zero-fiber-table}.
+\end{proposition}
+
+\begin{proof}
+Equations \eqref{eq:global-discriminant-parametrization} are \(E=E'=0\)
+solved for \(B,C\).  Their birationality was proved in the monodromy argument
+around \eqref{eq:quadratic-discriminant-parametrization}.
+
+For a repeated root, set \(s(u)=s_0+u\) and keep \(\pi,b\) fixed while putting
+\[
+ c(u)=\frac{2G_\pi(s(u))}{g_1}-b\,s(u)^2,
+ \qquad
+ d(u)=\frac{G_\pi'(s(u))}{g_1}-b\,s(u).
+\]
+Then \(E_{\pi,b,c(u)}(s(u))=0\) identically and
+\(\operatorname{ord}_u d=m-1\).  The exact reconstruction formulas
+\[
+ x=\frac{s}{d},\qquad
+ y=b-\beta(\pi,s)-\pi s,\qquad
+ q=\pi d,\qquad
+ z=\pi d^3-\frac{g_1}{g_3}y^2(d^2+3d)
+\]
+give the stated valuations.  Applying Newton--Puiseux to the other roots in
+the same multiplicity block gives all \(m\) arcs after a finite base change.
+
+For \(\Pi=0\), the final Newton edge has horizontal length \(d\) and endpoint
+equation
+\[
+ g_3+g_NZ^d=0.
+\]
+Equivalently its binomial model is
+\[
+ W^d=\text{unit}\cdot\Pi^{d+2}.
+\]
+It has \(h=\gcd(d,2)\) primes, each of ramification index \(d/h\).
+Normalizing by
+\[
+ v(\Pi)=\frac d h,\qquad
+ v(S)=-\frac{d+2}{h}
+\]
+gives
+\[
+ v(D)=-\frac{d+4}{h},\quad
+ v(x)=\frac2h,\quad
+ v(y)=-\frac2h,\quad
+ v(q)=-\frac4h,\quad
+ v(z)=-\frac{2d+12}{h}.
+\]
+Multiplication by \(h\), corresponding to the common base change
+\(\Pi=u^d\), yields \eqref{eq:infinity-valuations}.
+
+If \(B=0\), the first Newton edge changes from
+\((0,0)\)--\((2,0)\) to \((1,0)\)--\((3,1)\).  Its two nonzero roots satisfy
+\[
+ \Pi=u^2,\qquad S\sim a u^{-1},\qquad g_1+g_3a^2=0.
+\]
+Here \(D\) and \(t=D^{-1}\) have order zero.  Substitution in the exact
+reconstruction formulas gives \eqref{eq:B-zero-valuations}.  When \(BC=1\)
+with \(B\neq0\), the two additional missing sheets instead form the finite
+double-root block already covered by the first part of the proposition.
+\end{proof}
+
+\begin{corollary}[Intrinsic fullness of the distinguished fiber]
+\label{cor:intrinsic-fullness}
+For the seed \(G(S)=P(a+S)-P(a)\) used in
+Theorem~\ref{thm:main}, the distinguished target \(y_{P,a}\) lies in the
+maximal open subset on which \(\widetilde F_G\) is finite \'etale of degree
+\(N\).
+\end{corollary}
+
+\begin{proof}
+At \(y_{P,a}\), the inverse polynomial is \(P(a+S)\).  Hence
+\[
+ \Delta_G(y_{P,a})=\operatorname{Disc}(P(a+S))
+ =\operatorname{Disc}(P)\neq0.
+\]
+Theorem~\ref{thm:exact-nonproperness} places the target outside the
+nonproperness hypersurface.  Proper and \'etale is finite \'etale, and the
+degree is \(N\).
+\end{proof}
+
+\begin{remark}[Polynomial curves]
+The parametrization \eqref{eq:global-discriminant-parametrization}, with
+\(s\) fixed, gives polynomial curves in \(\Pi\) covering the discriminant
+component, while the component \(\Pi=0\) is covered by affine lines.  Thus the
+explicit geometry realizes directly the general theorem that a complex
+Jelonek set is a uniruled hypersurface covered by polynomial curves of bounded
+degree \cite{Jelonek1993,JelonekLason}.
+\end{remark}

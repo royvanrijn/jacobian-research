@@ -67,6 +67,22 @@ private theorem g5_natDegree : g5.natDegree = 5 := by
   unfold g5
   compute_degree!
 
+private theorem scale_coefficient_two (a b : M) (r : ℚ) :
+    MvPolynomial.C 19 * a * b * MvPolynomial.C r =
+      MvPolynomial.C (19 * r) * a * b := by
+  calc
+    _ = MvPolynomial.C 19 * MvPolynomial.C r * a * b := by ring
+    _ = MvPolynomial.C (19 * r) * a * b := by
+      rw [← MvPolynomial.C_mul]
+
+private theorem scale_coefficient_three (a b c : M) (r : ℚ) :
+    MvPolynomial.C 19 * a * b * c * MvPolynomial.C r =
+      MvPolynomial.C (19 * r) * a * b * c := by
+  calc
+    _ = MvPolynomial.C 19 * MvPolynomial.C r * a * b * c := by ring
+    _ = MvPolynomial.C (19 * r) * a * b * c := by
+      rw [← MvPolynomial.C_mul]
+
 /-- The explicitly displayed normalized quintic map is literally the
 all-degree quadratic gauge attached to the seed `g5`. -/
 theorem normalizedMap_eq_generalGaugeMap :
@@ -96,7 +112,12 @@ theorem integralMap_eq_scaled_normalized :
           - MvPolynomial.C 5 * t ^ 2 * MvPolynomial.X 0 ^ 3 * q ^ 5 =
         MvPolynomial.C 19 * generalGaugeB g5
     rw [q_eq_generalGaugeQ, t_eq_generalGaugeT, generalGaugeB, g5_natDegree]
+    rw [show Finset.Icc 4 5 = ({4, 5} : Finset ℕ) by decide]
     norm_num [g5, Polynomial.coeff_X]
+    ring_nf
+    simp_rw [scale_coefficient_two, scale_coefficient_three]
+    norm_num
+    simp only [map_ofNat]
     ring
   · change
       MvPolynomial.C 19 * MvPolynomial.X 0 *
@@ -106,7 +127,12 @@ theorem integralMap_eq_scaled_normalized :
           + MvPolynomial.C 3 * (MvPolynomial.X 0 * q) ^ 5 =
         MvPolynomial.C 19 * generalGaugeC g5
     rw [q_eq_generalGaugeQ, t_eq_generalGaugeT, generalGaugeC, g5_natDegree]
+    rw [show Finset.Icc 4 5 = ({4, 5} : Finset ℕ) by decide]
     norm_num [g5, Polynomial.coeff_X]
+    ring_nf
+    simp_rw [scale_coefficient_two]
+    norm_num
+    simp only [map_ofNat]
     ring
 
 /-- The displayed denominator-free map has Jacobian determinant `-722`. -/

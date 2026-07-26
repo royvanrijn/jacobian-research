@@ -22,7 +22,7 @@ open Polynomial
 
 namespace FiniteEtaleKeller
 
-variable {K A B : Type*} [Field K]
+variable {K A B : Type*} [Field K] [CharZero K]
 variable [CommRing A] [Algebra K A]
 variable [CommRing B] [Algebra K B]
 
@@ -90,13 +90,13 @@ def toLocalizedPolynomialRoot
   root_eq := p.root_eq
   derivativeUnit := Units.map (algebraMap K A) g₁ * p.chart.d
   derivativeUnit_eq := by
-    simp only [Units.coe_mul, Units.coe_map]
+    simp only [Units.val_mul, Units.coe_map]
     rw [hderiv]
     simp only [map_mul, Polynomial.aeval_C]
     congr 1
     simp only [markedChartPolynomial, Polynomial.aeval_sub,
       Polynomial.aeval_one, Polynomial.aeval_mul, Polynomial.aeval_C,
-      Polynomial.aeval_X, Polynomial.aeval_add, Polynomial.aeval_pow]
+      Polynomial.aeval_X, Polynomial.aeval_add, map_pow]
     rw [p.chart.chart_eq]
     linear_combination -p.chart.S * p.marked_eq
 
@@ -150,6 +150,20 @@ def localizedRootEquivGaugeFiberPoint
   (localizedRootEquivMarkedFiberPoint (A := A) g₁ hderiv).trans
     (markedFiberPointEquivGaugeFiberPoint a)
 
+@[simp]
+private theorem localizedRootEquivGaugeFiberPoint_source_S
+    {E β : K[X]} {pi b : K} (a : K)
+    (g₁ : Kˣ)
+    (hderiv : E.derivative = C (g₁ : K) * markedChartPolynomial pi b β)
+    (s : LocalizedPolynomialRoot E A) :
+    (localizedRootEquivGaugeFiberPoint (A := A) a g₁ hderiv s).source.S =
+      s.val := by
+  change
+    ((LocalizedPolynomialRoot.toMarkedFiberPoint g₁ hderiv s).chart.toSource
+      (algebraMap K A a)).S = s.val
+  rw [GaugeChart.toSource_S]
+  rfl
+
 /-- The localized-root/source equivalence is natural in the commutative test
 algebra. -/
 theorem localizedRootEquivGaugeFiberPoint_natural
@@ -161,8 +175,15 @@ theorem localizedRootEquivGaugeFiberPoint_natural
         (localizedRootEquivGaugeFiberPoint (A := A) a g₁ hderiv s) =
       localizedRootEquivGaugeFiberPoint (A := B) a g₁ hderiv (s.map f) := by
   apply (localizedRootEquivGaugeFiberPoint (A := B) a g₁ hderiv).symm.injective
+  rw [(localizedRootEquivGaugeFiberPoint
+    (A := B) a g₁ hderiv).symm_apply_apply]
   apply LocalizedPolynomialRoot.ext
-  rfl
+  change
+    (((localizedRootEquivGaugeFiberPoint
+      (A := A) a g₁ hderiv s).source).map f).S =
+      (s.map f).val
+  rw [GaugeSource.map_S, localizedRootEquivGaugeFiberPoint_source_S,
+    LocalizedPolynomialRoot.map_val]
 
 #print axioms localizedRootEquivGaugeFiberPoint
 #print axioms localizedRootEquivGaugeFiberPoint_natural

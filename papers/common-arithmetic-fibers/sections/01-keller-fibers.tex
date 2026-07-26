@@ -88,6 +88,8 @@ Then
  \qquad \gdeg(\widetilde F_G)=N,
  \qquad \max_i\deg (\widetilde F_G)_i\leq 6N+2.
 \]
+The Galois closure of the induced degree-$N$ function-field extension has
+geometric and arithmetic Galois group $S_N$.
 At
 \begin{equation}
  y_{P,a}=\left(1,0,-\frac{2P(a)}{P'(a)}\right)
@@ -98,6 +100,8 @@ its full fiber is
  \boxed{\widetilde F_G^{-1}(y_{P,a})
  \simeq\Spec K[T]/(P).}
 \]
+Moreover, \(y_{P,a}\) lies outside the nonproperness hypersurface of
+\(\widetilde F_G\), hence in its maximal finite-\'etale locus.
 More explicitly, for every commutative $K$-algebra $R$ there is a bijection
 \[
  \operatorname{Hom}_{K\text{-alg}}(K[T]/(P),R)
@@ -122,7 +126,8 @@ At the target \eqref{eq:main-target}, its inverse polynomial is
  G(S)-\frac{P'(a)}2\left(-\frac{2P(a)}{P'(a)}\right)
  =P(a+S).
 \]
-Translation preserves squarefreeness, so Proposition~\ref{prop:gauge}
+Translation preserves squarefreeness, so
+Corollary~\ref{cor:squarefree-gauge}
 identifies the full fiber with $\Spec K[S]/(P(a+S))$.
 
 The translation back to the original polynomial is explicit:
@@ -131,7 +136,7 @@ The translation back to the original polynomial is explicit:
  \qquad \overline S\longmapsto\overline T-a,
 \]
 with inverse $\overline T\mapsto\overline S+a$.  Composing this with the
-natural equivalence of Proposition~\ref{prop:gauge} gives, for every
+natural equivalence of Corollary~\ref{cor:squarefree-gauge} gives, for every
 commutative $K$-algebra $R$,
 \[
  \operatorname{Hom}_{K\text{-alg}}(K[T]/(P),R)
@@ -140,29 +145,69 @@ commutative $K$-algebra $R$,
 Thus the isomorphism includes the complete scheme structure and commutes with
 base change.
 
+The inverse polynomial at the target is \(P(a+S)\), so its discriminant is
+nonzero.  Corollary~\ref{cor:intrinsic-fullness} therefore gives the asserted
+structural position in the maximal finite-\'etale locus.
+
 The linear map $L$ fixes the chosen target because its second coordinate is
 zero.  It multiplies the Jacobian by $-1/2$ and changes neither geometric
 degree nor coordinate degree.  Corollary~\ref{cor:effective-gauge} therefore
 gives the determinant-one statement and the bound $6N+2$.  Since both the
 quotient algebra and the generic inverse problem have degree $N$, the fiber is
-full.
+full.  The symmetric-monodromy assertion follows from
+Theorem~\ref{thm:symmetric-monodromy}.
 
 For a general finite \'etale algebra of rank at least three, use the
 monogenicity lemma in Section~\ref{sec:realization} and apply the polynomial
 case just proved.
 \end{proof}
 
-\begin{corollary}[Rank classification]\label{cor:rank-classification}
-A nonzero finite \'etale algebra over a characteristic-zero field is a Keller
-fiber if and only if its rank is not two.  Equivalently, the possible ranks are
-exactly
+\begin{theorem}[Classification of full Keller fibers]
+\label{cor:rank-classification}
+For $N\geq1$, let $\mathsf{FullFib}_{3,N}(K)$ be the replete full subcategory
+of finite \'etale $K$-schemes whose objects are the schemes isomorphic to
+full fibers
+\[
+ F^{-1}(y),\qquad
+ F:\A^3_K\longrightarrow\A^3_K,\quad
+ \gdeg(F)=N,\quad y\in\A^3(K).
+\]
+Then
+\[
+ \mathsf{FullFib}_{3,N}(K)=
+ \begin{cases}
+  \mathsf{FinEt}^{\,N}_K,&N=1\text{ or }N\geq3,\\
+  \varnothing,&N=2,
+ \end{cases}
+\]
+where $\mathsf{FinEt}^{\,N}_K$ is the full subcategory of rank-$N$ finite
+\'etale $K$-schemes.  In particular, for $N\geq3$, a finite $K$-scheme occurs
+as a full fiber of a geometric-degree-$N$ Keller map in $\A^3_K$ if and only
+if it is finite \'etale of rank $N$.
+
+Equivalently on coordinate algebras, every rank-$N$ finite \'etale
+$K$-algebra occurs for $N=1$ or $N\geq3$, and none occurs for $N=2$.
+Consequently, the possible nonzero ranks of full Keller fibers are exactly
 \[
  \boxed{1,3,4,5,\ldots}.
 \]
-\end{corollary}
+\end{theorem}
 
 \begin{proof}
-The identity map realizes rank one.  Theorem~\ref{thm:main} realizes every
-finite \'etale algebra of rank at least three, while
-Lemma~\ref{lem:degree-two} excludes rank two.
+The Jacobian condition makes $F$ \'etale.  Hence every fiber over a
+$K$-point is a finite \'etale $K$-scheme, and the fullness equality makes its
+rank equal to $\gdeg(F)=N$.  This proves the necessary direction in every
+degree.  The identity map realizes the unique rank-one object.
+Theorem~\ref{thm:main} realizes every rank-$N$ finite \'etale object in
+affine three-space for every $N\geq3$, while
+Lemma~\ref{lem:degree-two} shows that no geometric-degree-two Keller map
+exists.
 \end{proof}
+
+\begin{remark}[What the categorical statement remembers]
+The category $\mathsf{FullFib}_{3,N}(K)$ is the essential image inside finite
+\'etale $K$-schemes: it remembers the resulting fiber scheme, not a chosen
+presentation by a map--target pair $(F,y)$.  Different pairs may realize the
+same object.  If one works with finite \'etale algebras rather than schemes,
+the corresponding statement is contravariant under $\Spec$.
+\end{remark}

@@ -100,7 +100,41 @@ theorem p5_derivative_inverse :
 theorem target_scaling : (19 : ℚ) * (-2) = -38 := by
   norm_num
 
+private def p5Int : Polynomial ℤ :=
+  (Polynomial.X ^ 3 - 19) * (Polynomial.X ^ 2 + Polynomial.X + 1)
+
+private theorem p5Int_monic : p5Int.Monic := by
+  unfold p5Int
+  monicity <;> norm_num
+
+private theorem p5Int_map :
+    p5Int.map (algebraMap ℤ ℚ) = p5 := by
+  unfold p5Int p5
+  simp
+
+/-- The Berend--Bilu quintic has no rational root.  The proof uses the
+rational-root theorem to reduce a hypothetical root to an integer divisor of
+the constant coefficient `-19`, then checks the resulting finite interval. -/
+theorem p5_no_rational_root (r : ℚ) : ¬ p5.IsRoot r := by
+  intro hr
+  have hrootInt : Polynomial.aeval r p5Int = 0 := by
+    rw [Polynomial.aeval_def, ← Polynomial.eval_map, p5Int_map]
+    exact hr
+  obtain ⟨z, hz, hzdvd⟩ :=
+    exists_integer_of_is_root_of_monic p5Int_monic hrootInt
+  have hcoeff : p5Int.coeff 0 = -19 := by
+    norm_num [p5Int]
+  rw [hcoeff] at hzdvd
+  have habs : z.natAbs ≤ 19 :=
+    Int.natAbs_le_of_dvd_ne_zero hzdvd (by norm_num)
+  have hlower : (-19 : ℤ) ≤ z := by omega
+  have hupper : z ≤ (19 : ℤ) := by omega
+  subst r
+  interval_cases z <;>
+    norm_num [p5Int, Polynomial.aeval_def] at hrootInt
+
 #print axioms inversePolynomial_eq_p5
 #print axioms p5_derivative_inverse
+#print axioms p5_no_rational_root
 
 end FiniteEtaleKeller.ExplicitQuintic

@@ -523,6 +523,6 @@ A future revision of the active paper could use the following structure:
 5. comparison with the characteristic-two cubic paper; and
 6. open positive-characteristic finite-étale realization problems.
 
-Until the arbitrary prescribed-fiber theorem has been extended across bad
-characteristics, this Markdown draft should remain separate from the compiled
-paper.
+Until the arbitrary prescribed-algebra realization theorem has been extended
+across bad characteristics, this Markdown draft should remain separate from
+the compiled paper.

@@ -17,7 +17,7 @@ The proof has four dependencies:
 4. the filtered Frobenius isolation lemma after reduction modulo a prime.
 
 A companion Lean 4 package is located at
-[`../../formalization/gmc2`](../../formalization/gmc2/README.md).  It checks
+[`../../formal/gmc2`](../../formal/gmc2/README.md).  It checks
 the full bivariate theorem, from the circular substitution and Wick formula
 through lower-face extraction, finite coefficient-ring descent,
 prime-isolation, and eventual one-sided support, without `sorry`.  The

@@ -151,7 +151,7 @@ separation.  The abstract theorem, Gamma and factorial-ratio families,
 ## 6. Lean formalization
 
 A modular Lean 4 development is available in
-[`formalization/gmc2`](../formalization/gmc2/README.md).  It mechanically
+[`formal/gmc2`](../formal/gmc2/README.md).  It mechanically
 checks the factorial-quotient divisibility, prime-dilated isolation,
 Frobenius/constant-term commutation, the final contradiction, and the
 eventual one-sided-weight argument.  DvdK, finite-type good reduction, and

@@ -44,10 +44,8 @@ private theorem announcedSeed_natDegree : announcedSeed.natDegree = 3 := by
   unfold announcedSeed
   compute_degree!
 
-private tactic | `($tactic| normalize_coefficients) =>
-  `(tactic|
-    simp only [map_ofNat, MvPolynomial.C_eq_coe_nat]
-    ring)
+local macro "normalize_coefficients" : tactic =>
+  `(tactic| simp only [map_ofNat, MvPolynomial.C_eq_coe_nat] <;> ring)
 
 /-- Substituting `G(S)=S+S^3` into the all-degree construction recovers the
 announced map coordinate for coordinate. -/

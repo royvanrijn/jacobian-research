@@ -67,7 +67,7 @@ isomorphism over `C`, hence was already an isomorphism by faithful flatness.
 This supplies exactly the ground-field generality required for the rank-two
 exclusion.
 
-## Closest located sources to the realization theorem
+## Closest located sources to the prescribed-algebra realization theorem
 
 ### Gallagher: split complete fibers
 
@@ -107,7 +107,7 @@ T. Shaska,
 2026.
 
 This studies graded Keller maps, quotient geometry, and arithmetic thinness.
-No prescribed finite-étale fiber theorem was located there.
+No prescribed finite-étale algebra realization theorem was located there.
 
 ### General specialization literature
 
@@ -115,7 +115,19 @@ General work on specialization of finite covers, Hilbert irreducibility, and
 prescribed local behavior can realize finite étale algebras inside suitable
 covers. Those results do not impose that the cover is a polynomial
 constant-Jacobian self-map of affine space. They are therefore adjacent
-arithmetic inputs, not prior versions of the Keller-fiber theorem.
+arithmetic inputs, not prior versions of the prescribed-algebra realization
+theorem.
+
+### Classical monodromy input
+
+The generic-monodromy theorem added to the paper uses Jean-Pierre Serre,
+*Topics in Galois Theory*, Section 4.4, especially Theorem 4.4.5: a Morse
+polynomial of degree `N` in characteristic zero has Galois group `S_N` over
+the value-function field. The paper's new work is the birational
+parametrization of the quadratic-gauge discriminant and the deduction that
+every admissible seed has a Morse vertical slice. Hilbertian specialization
+then uses the standard Hilbert irreducibility theorem from Chapter 3 of the
+same reference.
 
 ## Negative-search conclusion
 

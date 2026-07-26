@@ -147,7 +147,16 @@ def localizedAlgHomEquiv (E : K[X])
     intro φ
     apply Localization.algHom_ext (Submonoid.powers (derivativeClass E))
     apply AdjoinRoot.algHom_ext
-    simp [ofLocalizedAlgHom, localizedBaseAlgHom]
+    change
+      (ofLocalizedAlgHom φ).toLocalizedAlgHom
+          (algebraMap (AdjoinRoot E) (LocalizedAdjoinRoot E)
+            (AdjoinRoot.root E)) =
+        φ
+          (algebraMap (AdjoinRoot E) (LocalizedAdjoinRoot E)
+            (AdjoinRoot.root E))
+    rw [toLocalizedAlgHom_algebraMap]
+    rw [PolynomialRoot.liftAlgHom_root, toPolynomialRoot_val]
+    rfl
   right_inv := by
     intro s
     apply LocalizedPolynomialRoot.ext

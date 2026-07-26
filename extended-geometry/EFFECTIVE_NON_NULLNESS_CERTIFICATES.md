@@ -475,7 +475,7 @@ classification theorem.
 
 ## 9. Lean-checkable certificate format
 
-The existing package [`formalization/gmc2`](../formalization/gmc2) already
+The existing package [`formal/gmc2`](../formal/gmc2) already
 formalizes the modular core.  Its current global proof imports three axioms:
 Duistermaat--van der Kallen, finite-type specialization, and supporting-face
 extraction.

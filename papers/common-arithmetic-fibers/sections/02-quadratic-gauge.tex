@@ -1,6 +1,7 @@
 \section{The quadratic gauge}\label{sec:gauge}
 
-The realization theorem rests on one explicit construction.  Let
+The prescribed-algebra realization theorem rests on one explicit construction.
+Let
 \begin{equation}
  G(S)=g_1S+g_2S^2+\cdots+g_NS^N\in K[S],
  \qquad g_1g_3g_N\neq0.
@@ -81,11 +82,13 @@ Choose $U,V\in K[S]$ with $UE+VE'=1$.  Evaluating at $s$ gives
 $V(s)E'(s)=1$.  Since $A$ is commutative, this is a two-sided inverse.
 \end{proof}
 
-\begin{proposition}[Quadratic-gauge and localized-fiber theorem]
-\label{prop:gauge}
+\begin{theorem}[General localized quadratic-gauge fiber theorem]
+\label{thm:localized-gauge}
 The map $F_G$ satisfies
 \[
- \det DF_G=-2.
+ \det DF_G=-2,
+ \qquad
+ \gdeg(F_G)=N.
 \]
 Its generic inverse equation is $E_{\Pi,B,C}(S)=0$.  Fix
 $(\pi,b,c)\in K^*\times K^2$, put $E=E_{\pi,b,c}$, and let
@@ -105,20 +108,7 @@ bijection
  \simeq \mathcal F_{\pi,b,c}(A).
  \label{eq:localized-natural-fiber-equivalence}
 \end{equation}
-
-If $E$ is squarefree of degree $N$, then $\overline{E'}$ is already a unit in
-$K[S]/(E)$.  The localization disappears and we obtain
-\begin{equation}
- \operatorname{Hom}_{K\text{-alg}}(K[S]/(E),A)
- \simeq \mathcal F_{\pi,b,c}(A),
- \label{eq:natural-fiber-equivalence}
-\end{equation}
-together with
-\[
- F_G^{-1}(\pi,b,c)\simeq\Spec K[S]/(E).
-\]
-This is a full Keller fiber of rank $N$.
-\end{proposition}
+\end{theorem}
 
 \begin{proof}
 We begin on the open set $t\neq0$.  Introduce the coordinates
@@ -230,12 +220,9 @@ The universal property of $K[S]/(E)$ identifies its maps to $A$ with roots of
 $E$ in $A$.  Localizing at $\overline{E'}$ imposes exactly the additional
 condition that $E'(s)$ be a unit.  This proves
 \eqref{eq:localized-natural-fiber-equivalence}, and Yoneda's lemma gives
-\eqref{eq:localized-fiber}.  If $E$ is squarefree, choose $U,V$ with
-$UE+VE'=1$.  Modulo $E$, the class of $V$ is an inverse for
-$\overline{E'}$, so the localization is just $K[S]/(E)$.  This proves the
-squarefree form \eqref{eq:natural-fiber-equivalence}.  Notice that the
-localized statement itself requires no separability hypothesis: it removes
-precisely the ramified part of the inverse equation.
+\eqref{eq:localized-fiber}.  Notice that this general localized statement
+requires no separability hypothesis: it removes precisely the ramified part
+of the inverse equation.
 
 It remains to check the generic degree.  Put
 \[
@@ -259,9 +246,142 @@ field with the corresponding degree-$N$ extension, and hence
 $\gdeg(F_G)=N$.
 \end{proof}
 
+\begin{corollary}[Finite-\'etale (squarefree) quadratic-gauge fibers]
+\label{cor:squarefree-gauge}
+In the setting of Theorem~\ref{thm:localized-gauge}, suppose that
+$E=E_{\pi,b,c}$ is squarefree of degree $N$.  Then the localization
+disappears and, for every commutative $K$-algebra $A$, there is a natural
+bijection
+\begin{equation}
+ \operatorname{Hom}_{K\text{-alg}}(K[S]/(E),A)
+ \simeq \mathcal F_{\pi,b,c}(A).
+ \label{eq:natural-fiber-equivalence}
+\end{equation}
+Consequently,
+\[
+ F_G^{-1}(\pi,b,c)\simeq\Spec K[S]/(E),
+\]
+and this is a full finite-\'etale Keller fiber of rank $N$.
+\end{corollary}
+
+\begin{proof}
+Since $E$ is squarefree, choose $U,V\in K[S]$ with $UE+VE'=1$.  Modulo $E$,
+the class of $V$ is an inverse for $\overline{E'}$, so the localization in
+Theorem~\ref{thm:localized-gauge} is just $K[S]/(E)$.  The natural equivalence
+and scheme isomorphism follow from that theorem.  Its geometric-degree
+statement makes the rank-$N$ fiber full.
+\end{proof}
+
+\begin{theorem}[Full symmetric generic monodromy]
+\label{thm:symmetric-monodromy}
+For every seed \eqref{eq:seed}, not merely for a generic choice of its
+coefficients, the geometric and arithmetic monodromy groups of $F_G$ are
+\[
+ \boxed{\operatorname{Mon}_{\mathrm{geom}}(F_G)
+       =\operatorname{Mon}_{\mathrm{arith}}(F_G)=S_N.}
+\]
+Equivalently, the splitting field of $E_{\Pi,B,C}(S)$ over
+$K(\Pi,B,C)$ has Galois group $S_N$, and the same is true after replacing
+$K$ by an algebraic closure.  The conclusion is unchanged for the
+Jacobian-one normalization $\widetilde F_G$.
+\end{theorem}
+
+\begin{proof}
+We work first over $\overline K$.  Fix $p\in\overline K^*$ and put
+$H(S)=G_p(S)$.  Consider
+\[
+ f_b(S)=H(S)-\frac{g_1b}{2}S^2.
+\]
+We claim that $f_b$ is a Morse polynomial for all but finitely many
+$b\in\overline K$: its $N-1$ critical points are then simple and have
+pairwise distinct critical values.
+
+A repeated root $r$ of
+\[
+ H(S)-\frac{g_1}{2}(BS^2+C)
+\]
+cannot have $r=0$, because $H'(0)=g_1$.  The repeated-root locus is
+parametrized by
+\begin{equation}
+ B(r)=\frac{H'(r)}{g_1r},
+ \qquad
+ C(r)=\frac{2H(r)-rH'(r)}{g_1},
+ \qquad r\in\mathbb G_m.
+ \label{eq:quadratic-discriminant-parametrization}
+\end{equation}
+Differentiating gives
+\begin{equation}
+ \frac{dC}{dB}=-r^2.
+ \label{eq:quadratic-legendre}
+\end{equation}
+Let $M=\overline K(B(r),C(r))\subset\overline K(r)$.  Equation
+\eqref{eq:quadratic-legendre} shows that $r^2\in M$.  Since
+$[\overline K(r):\overline K(r^2)]=2$, either
+$M=\overline K(r^2)$ or $M=\overline K(r)$.  The first possibility is
+excluded because $B(r)$ has a pole of odd order one at $r=0$, whereas every
+element of $\overline K(r^2)$ has even order there.  Thus
+$M=\overline K(r)$, so \eqref{eq:quadratic-discriminant-parametrization} is
+birational onto the reduced discriminant curve.
+
+The rational map $r\mapsto B(r)$ has degree $N-1$: its only poles have orders
+one at $0$ and $N-2$ at infinity.  Away from finitely many values of $b$, its
+fiber therefore consists of $N-1$ distinct points, which are precisely the
+critical points of $f_b$.  At such a point,
+\[
+ f_b(r)=H(r)-\frac{rH'(r)}2=\frac{g_1}{2}C(r).
+\]
+The birationality just proved implies that, after excluding finitely many
+more values of $b$, these critical values are pairwise distinct.  This proves
+the claim.
+
+Choose one such $b$.  The classical Morse-polynomial theorem
+\cite[Theorem~4.4.5]{Serre} gives
+\[
+ \operatorname{Gal}\left(
+ f_b(S)-T\,/\,\overline K(T)\right)=S_N.
+\]
+Indeed, the polynomial cover is connected, its finite branch inertia groups
+are transpositions, and those inertia groups generate; a transitive
+permutation group generated by transpositions is the full symmetric group.
+After the substitution $T=g_1C/2$, this cover is the restriction of the
+generic inverse cover to the line $\Pi=p$, $B=b$.  Its monodromy is therefore
+a subgroup of the generic geometric monodromy.  Hence
+\[
+ S_N\leq\operatorname{Mon}_{\mathrm{geom}}(F_G)\leq S_N,
+\]
+which proves equality.  Finally,
+\[
+ \operatorname{Mon}_{\mathrm{geom}}(F_G)
+ \triangleleft\operatorname{Mon}_{\mathrm{arith}}(F_G)\leq S_N
+\]
+forces the arithmetic group to be $S_N$ as well.  A linear automorphism of
+the target does not change either monodromy group, so the same conclusion
+holds for $\widetilde F_G$.
+\end{proof}
+
+\begin{corollary}[Hilbertian specializations]\label{cor:hilbert-monodromy}
+Suppose that $K$ is Hilbertian.  For every seed \eqref{eq:seed}, there are
+infinitely many targets in $K^*\times K^2$ whose fibers are connected full
+finite-\'etale schemes of rank $N$ and whose splitting fields have Galois
+group $S_N$ over $K$.
+\end{corollary}
+
+\begin{proof}
+Choose $p\in K^*$.  The proof of
+Theorem~\ref{thm:symmetric-monodromy} excludes only finitely many values of
+$b$ in an algebraic closure, so some $b\in K$ makes $f_b$ Morse.  Its
+splitting field over $K(C)$ is a regular $S_N$-extension by
+\cite[Theorem~4.4.5]{Serre}.  Hilbert irreducibility
+\cite[Chapter~3]{Serre} supplies infinitely many $c\in K$ for which
+$E_{p,b,c}$ remains irreducible and has Galois group $S_N$.  Such a polynomial
+is squarefree of degree $N$, so Corollary~\ref{cor:squarefree-gauge}
+identifies it with a connected full finite-\'etale fiber.
+\end{proof}
+
 \begin{remark}[Which hypotheses are used where]\label{rem:gauge-hypotheses}
-The localized fiber theorem uses only that $\pi$, $g_1$, and $g_3$ are
-nonzero, together with the identity
+The general localized quadratic-gauge fiber theorem,
+Theorem~\ref{thm:localized-gauge}, uses only that $\pi$, $g_1$, and $g_3$ are
+nonzero for the fiber identification, together with the identity
 \[
  E'(S)=g_1\bigl(1-bS+S\beta(\pi,S)+\pi S^2\bigr).
 \]
@@ -271,6 +391,13 @@ makes the source coefficient $g_1/g_3$ meaningful.  For a translated
 polynomial $P(a+S)-P(a)$, the cubic coefficient is the third Hasse derivative
 at $a$, equal to $P'''(a)/3!$ in characteristic zero.  The Lean development
 follows the same separation.
+
+The transposition inertia in Theorem~\ref{thm:symmetric-monodromy} does not
+contradict the fact that $F_G$ is \'etale.  A repeated inverse root has
+$E'=0$, so the reconstruction theorem removes it from the affine source;
+the corresponding valuation is centered on the nonproperness boundary.
+Monodromy is taken on the function-field cover, or equivalently on the finite
+\'etale restriction over a sufficiently small target open set.
 \end{remark}
 
 \begin{corollary}[Jacobian-one effective form]\label{cor:effective-gauge}
@@ -312,7 +439,9 @@ so
 
 \begin{proof}
 The linear map $L$ has determinant $-1/2$, so the determinant, geometric
-degree, and fiber statements follow from Proposition~\ref{prop:gauge}.
+degree, and localized-fiber statements follow from
+Theorem~\ref{thm:localized-gauge}; the squarefree simplification follows from
+Corollary~\ref{cor:squarefree-gauge}.
 
 For the degree estimate, $\deg t=2$ and $\deg q\leq5$, hence
 $\deg\Pi\leq7$.  A summand of $B$ indexed by $k\geq4$ has degree at most

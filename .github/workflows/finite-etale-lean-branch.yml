@@ -35,31 +35,11 @@ jobs:
       - name: Reject Lean placeholders and explicit axioms
         run: python3 scripts/check_lean_placeholders.py
       - name: Install Lean and prime the Mathlib cache
-        id: lean_action
-        continue-on-error: true
         uses: leanprover/lean-action@38fbc41a8c28c4cbaec22d7f7de508ec2e7c0dd9 # v1
         with:
           lake-package-directory: formal/finite-etale-keller
           auto-config: false
-          build: true
-          build-args: >-
-            FiniteEtaleKeller.ExplicitPolynomial
-            FiniteEtaleKeller.MarkedLine
-            FiniteEtaleKeller.GaugeAssembly
-            FiniteEtaleKeller.Reconstruction
-            FiniteEtaleKeller.SourceEquivalence
-            FiniteEtaleKeller.QuotientReconstruction
-            FiniteEtaleKeller.SeparableReconstruction
-            FiniteEtaleKeller.RootPoints
-            FiniteEtaleKeller.MarkedFiberPoints
-            FiniteEtaleKeller.GaugeFiberPoints
-            FiniteEtaleKeller.FiberNaturality
-            FiniteEtaleKeller.UniversalFiber
-            FiniteEtaleKeller.Translation
-            FiniteEtaleKeller.TranslationQuotient
-            FiniteEtaleKeller.Admissibility
-            FiniteEtaleKeller.RealizationFiber
-            FiniteEtaleKeller.AutomaticRealization
+          build: false
           test: false
           lint: false
           use-mathlib-cache: true

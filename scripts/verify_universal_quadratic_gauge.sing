@@ -1,6 +1,8 @@
 // Independent Singular audit of the generic degree-six quadratic gauge.
 // Coefficients g1,...,g6 are algebraically independent over Q; in particular
 // g1 and g3 are units in the rational function coefficient field.
+// Singular's `exit` command has no status argument, so a failed assertion
+// signals the driver with USR1 instead of silently returning success.
 
 ring r = (0,g1,g2,g3,g4,g5,g6),(x,y,z),dp;
 
@@ -28,30 +30,30 @@ if (determinant + 2 != 0)
 {
   "FAIL: generic degree-six Jacobian is not -2";
   determinant;
-  exit(1);
+  system("sh", "kill -USR1 $PPID");
 }
 
 if (deg(F1) > 7)
 {
   "FAIL: first coordinate exceeds degree 7";
   deg(F1);
-  exit(1);
+  system("sh", "kill -USR1 $PPID");
 }
 
 if (deg(F2) > 38)
 {
   "FAIL: second coordinate exceeds 6N+2 for N=6";
   deg(F2);
-  exit(1);
+  system("sh", "kill -USR1 $PPID");
 }
 
 if (deg(F3) > 36)
 {
   "FAIL: third coordinate exceeds 6N for N=6";
   deg(F3);
-  exit(1);
+  system("sh", "kill -USR1 $PPID");
 }
 
 "PASS: Singular generic degree-six Jacobian is -2";
 "PASS: Singular degree profile satisfies (7, 38, 36) upper bounds";
-exit(0);
+exit;

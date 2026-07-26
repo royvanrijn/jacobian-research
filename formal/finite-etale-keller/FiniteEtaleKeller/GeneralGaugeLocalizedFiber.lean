@@ -98,7 +98,6 @@ theorem generalGaugeLocalizedRawRepresentingEquiv_natural
         (generalGaugeInversePolynomial G (pi : K) b c) B (f.comp φ))
   rw [generalGaugeLocalizedRawFiberEquiv_natural]
   congr 1
-  exact (LocalizedPolynomialRoot.localizedAlgHomEquiv_natural f φ).symm
 
 /-- At a zero second target coordinate, the same localized quotient represents
 the literal fiber of the determinant-one normalized map. -/
