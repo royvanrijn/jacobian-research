@@ -1,25 +1,30 @@
 \begin{abstract}
-Let $K$ be a field of characteristic zero.  A fiber of a polynomial map with
-nonzero constant Jacobian is finite and \'etale, but the converse question is
-not automatic: which finite \'etale $K$-algebras can occur as a \emph{full}
-fiber, containing all generic inverse sheets?  We prove that every nonzero
-rank occurs except rank two.  Every algebra of rank at least three is already
-realized by a map $\A^3_K\to\A^3_K$.
+Let $K$ be a field of characteristic zero.  We prove a prescribed-fiber
+realization theorem: every finite \'etale $K$-algebra of rank at least three
+occurs as the full fiber of an explicit polynomial map
+$\A^3_K\to\A^3_K$ with Jacobian one.  The construction preserves the algebra
+itself, not only its rank or its geometric points.  As a consequence, the
+possible nonzero ranks of full Keller fibers are exactly
+$1,3,4,5,\ldots$; rank two is excluded by the known degree-two theorem.
 
-The construction is explicit.  Start with a squarefree polynomial $P$ of
-degree $N\geq3$, translate the variable so that $P'(a)P'''(a)\neq0$, and feed
-$G(S)=P(a+S)-P(a)$ into a universal quadratic-gauge formula.  After a fixed
-linear normalization, the resulting map has Jacobian one and coordinate
-degree at most $6N+2$.  At one distinguished target its inverse equation is
-exactly $P(a+S)=0$, and the full fiber is naturally isomorphic to
-$\Spec K[T]/(P)$.
+Start with a squarefree polynomial $P$ of degree $N\geq3$, translate the
+variable so that $P'(a)P'''(a)\neq0$, and feed
+$G(S)=P(a+S)-P(a)$ into a universal quadratic-gauge formula.  The resulting
+map has coordinate degree at most $6N+2$.  At one distinguished target its
+inverse equation is exactly $P(a+S)=0$, and the full fiber is naturally
+isomorphic to $\Spec K[T]/(P)$.  More generally, for an arbitrary target with
+inverse polynomial $E$, the fiber is
+\[
+ \operatorname{Spec}\left((K[S]/(E))[1/\overline{E'}]\right).
+\]
+The cubic seed $G(S)=S+S^3$ recovers the recently announced
+three-dimensional counterexample exactly, coordinate for coordinate.
 
-The useful point is that the construction remembers the algebra, not just the
-number of geometric points.  Connectedness, field decomposition, Galois
-action, real signature, local points, and scalar extension therefore pass to
-the Keller fiber unchanged.  Over $\Q$ this gives an explicit rank-five fiber
-with points over $\R$ and every $\Q_p$ but no rational point; rank five is
-minimal, and one fixed Keller map contains infinitely many such fibers.
+Connectedness, field decomposition, Galois action, real signature, local
+points, and scalar extension therefore pass to the Keller fiber unchanged.
+Over $\Q$ this gives an explicit rank-five fiber with points over $\R$ and
+every $\Q_p$ but no rational point; rank five is minimal, and one fixed Keller
+map contains infinitely many such fibers.
 
 The constructive part of the argument is formalized in Lean: the automatic
 choice of $a$, the actual three-variable polynomial map, its Jacobian-one
