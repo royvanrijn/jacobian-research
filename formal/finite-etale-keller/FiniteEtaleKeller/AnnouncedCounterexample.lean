@@ -22,7 +22,7 @@ open Polynomial
 namespace FiniteEtaleKeller
 
 /-- The cubic seed underlying the announced counterexample. -/
-def announcedSeed : ℚ[X] := X + X ^ 3
+def announcedSeed : ℚ[X] := Polynomial.X + Polynomial.X ^ 3
 
 /-- The polynomial map in the original announcement. -/
 def announcedCounterexampleMap : Fin 3 → GaugePolynomial ℚ :=
@@ -49,10 +49,27 @@ announced map coordinate for coordinate. -/
 theorem generalGaugeMap_announcedSeed :
     generalGaugeMap announcedSeed = announcedCounterexampleMap := by
   funext i
-  fin_cases i <;>
-    simp [announcedCounterexampleMap, announcedSeed, generalGaugeMap,
-      generalGaugePi, generalGaugeB, generalGaugeC, generalGaugeQ,
-      generalGaugeT, announcedSeed_natDegree, Polynomial.coeff_X] <;>
+  fin_cases i
+  · simp [generalGaugeMap, announcedCounterexampleMap, generalGaugePi,
+      generalGaugeQ, generalGaugeT, announcedSeed, Polynomial.coeff_X]
+    ring
+  · change generalGaugeB announcedSeed =
+      (let t : GaugePolynomial ℚ := 1 + MvPolynomial.X 0 * MvPolynomial.X 1
+       MvPolynomial.X 1 +
+         MvPolynomial.C 3 * MvPolynomial.X 0 * t ^ 2 * MvPolynomial.X 2 +
+         MvPolynomial.C 3 * MvPolynomial.X 0 * MvPolynomial.X 1 ^ 2 *
+           (MvPolynomial.C 4 + MvPolynomial.C 3 *
+             MvPolynomial.X 0 * MvPolynomial.X 1))
+    rw [generalGaugeB, announcedSeed_natDegree]
+    norm_num [announcedSeed, generalGaugeQ, generalGaugeT, Polynomial.coeff_X]
+    ring
+  · change generalGaugeC announcedSeed =
+      (let t : GaugePolynomial ℚ := 1 + MvPolynomial.X 0 * MvPolynomial.X 1
+       MvPolynomial.C 2 * MvPolynomial.X 0 -
+         MvPolynomial.C 3 * MvPolynomial.X 0 ^ 2 * MvPolynomial.X 1 -
+         MvPolynomial.X 0 ^ 3 * MvPolynomial.X 2)
+    rw [generalGaugeC, announcedSeed_natDegree]
+    norm_num [announcedSeed, generalGaugeT, Polynomial.coeff_X]
     ring
 
 /-- The constant Jacobian of the announced map is inherited from the general
