@@ -359,6 +359,26 @@ gives the
 degree and signature occurs as a complete fiber field of the explicit `F_N`,
 and finitely many additional unramified splitting conditions may be imposed
 simultaneously at sufficiently large good primes.
+Allowing the map to vary gives the stronger
+[local-to-global synthesis theorem](verified/LOCAL_GLOBAL_KELLER_FIBERS.md):
+arbitrary finite etale `Q_p`-algebras at finitely many primes, a real
+signature, and further unramified Frobenius types occur simultaneously in one
+global polynomial.  A coefficientwise Hensel--Krasner/CRT construction finds
+the polynomial, an auxiliary local `N`-cycle makes it a number field when
+desired, and the quadratic-gauge compiler makes it a complete
+determinant-one Keller fiber.  The reusable prime-power constructor and
+end-to-end map compiler are implemented in `jcsearch.local_global` and
+`jcsearch.keller_fiber`.  For a monic integral local model, the constructor
+now derives the universal stability precision
+`2*v_p(Disc)+1` automatically; combined with universal fiber multiplicity,
+every such package in rank at least four is carried by infinitely many
+stable map classes while the complete fiber algebra remains fixed.
+Within the fixed common-fiber pencil, the
+[locally prescribed fixed-pair theorem](verified/LOCALLY_PRESCRIBED_COMMON_FIBERS.md)
+retains two fixed stably inequivalent determinant-one maps: every
+family-compatible finite collection of local algebras occurs in infinitely
+many connected common fibers.  Its explicit sextic has ramified completions
+at `2` and `3`, signature `(2,2)`, and an inert prime at `5`.
 The [Hasse-principle fiber theorem](verified/HASSE_PRINCIPLE_KELLER_FIBER.md)
 goes in the complementary arithmetic direction: one explicit degree-eight
 complete regular fiber has points over `R` and every `Q_p` but no rational
@@ -502,6 +522,26 @@ many Hasse failures in this particular split-seed map remain open; the note
 now rationally parametrizes the common-resolvent condition, exhibits
 rank-two and rank-one elliptic slices, records bounded searches, and gives a
 `Q_5` obstruction to importing the standard pure-cubic family.
+The
+[local `Q_2` action-certificate branch](arithmetic/GQ2_LOCAL_FIBER_CERTIFICATES.md)
+uses Roe--Turturean's marked four-generator presentation as a finite
+arithmetic layer.  Its dependency-free verifier checks both relators, the
+finite `omega_2` powers, the exact image, and the wild normal 2-core.  The
+first complete action-first example prescribes
+`sigma=(12), tau=(123), x_0=x_1=1`, identifies it with the tame `S_3`
+splitting action of `T^3-2` over `Q_2`, and compiles it to a
+determinant-one geometric-degree-three Keller fiber.  This is minimal in
+nonabelian permutation degree, not in formula size.  In the mixed wild branch,
+the three marked `S_4` action orbits and three classified dyadic quartics are
+exhausted.  An exact relative Stiefel--Whitney trace-form calculation has
+obstruction bits `(0,0,1)` on the polynomial side, while the Roe--Turturean
+word formula has its unique nonzero value at `x_0=(12)(34)`.  This names the
+worked action as the root action of `T^4+4T^2-4T+2`, which is compiled into a
+determinant-one complete fiber with inertia `A_4` and wild inertia `V_4`.
+The invariant leaves the other two marked orbits unordered.  A separate exact PARI
+ledger records the coarse dyadic decompositions of the selected quartic and
+fixed-quintic zoo fibers; the general effective action-to-polynomial compiler
+remains open.
 The [global Sunada construction](extended-geometry/GLOBAL_SUNADA_KELLER_COVERS.md)
 uses the point and line actions of `GL_3(F_2)` to give two nonisomorphic
 degree-seven inverse covers over one two-dimensional target, with identical

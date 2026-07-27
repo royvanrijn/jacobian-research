@@ -1,209 +1,90 @@
-# Prescribed Finite Étale Algebras as Full Fibers of Keller Maps with Symmetric Monodromy
+# Every Finite Étale Algebra of Rank at Least Three Is a Full Keller Fiber
 
-The polynomial realization theorem starts from a squarefree `P` and an
-admissible translation `a`.  It gives an explicit Keller map in affine
-three-space with Jacobian determinant `1`, geometric degree `N`, and full
-Keller fiber `K[T]/(P)`; its effective corollary gives coordinate degree at
-most `6N+2` and the natural fiber identification.  Here a Keller fiber means
-any ordinary fiber, while a full Keller fiber has rank equal to the map's
-geometric degree.  Monogenicity then gives the finite-étale realization
-corollary: every finite étale algebra of rank at least three occurs as such a
-full Keller fiber.  This last step is existential unless a presentation is
-supplied.  The attainable nonzero ranks are therefore
-exactly `1,3,4,5,...`; rank two is excluded by the known degree-two theorem.
-For every admissible seed, the generic inverse polynomial has geometric and
-arithmetic Galois group `S_N`; this is not merely a generic-coefficient
-statement. Thus every prescribed algebra is placed on a maximally symmetric
-generic cover. Over a Hilbertian field, each fixed constructed map has
-infinitely many connected full Keller fibers with splitting-field group
-`S_N`. Primitive monodromy also makes every realization map absolutely and
-stably compositionally indecomposable.
+This is the focused manuscript for the prescribed-fiber theorem.
 
-Arithmetic examples, including the integral Jacobian-one Hasse failure and
-the fixed-quintic arithmetic zoo, are maintained as separate verified
-certificates. They are applications of the transfer theorem, not part of the
-active manuscript.
+Given a squarefree polynomial `P` of degree `N >= 3` over a
+characteristic-zero field and a supplied admissible translation `a`, the
+paper constructs an explicit map of affine three-space with:
 
-The scheme-theoretic core is organized in three layers.
+- Jacobian determinant `1`;
+- geometric degree `N`;
+- coordinate degree at most `6N+2`; and
+- a distinguished full fiber naturally isomorphic to `Spec K[T]/(P)`.
 
-First, the general localized quadratic-gauge fiber theorem identifies an
-arbitrary fiber with `(K[S]/(E))[1/E']`. Its finite-étale (squarefree)
-corollary removes the localization. The polynomial realization theorem then
-specializes this quotient to the chosen algebra `K[T]/(P)`, and monogenicity
-passes to an abstract finite étale algebra.
+Monogenicity gives the abstract corollary: every finite étale algebra of rank
+at least three occurs as a full Keller fiber. The concrete `(P,a)`
+construction commutes with scalar extension. The primitive element and
+translation selected from an abstract algebra are noncanonical; Lean makes
+these choices noncomputably, and no functorial automatic choice is claimed.
 
-At the prescribed target this gives a natural equivalence on every commutative
-test algebra:
+The paper contains only:
+
+1. the polynomial-presentation theorem;
+2. the compact inverse-equation design;
+3. root-to-source reconstruction and the literal fiber theorem;
+4. the function-field comparison and fullness;
+5. the finite-étale corollary via monogenicity;
+6. base change and the Lean correspondence; and
+7. the explicit Berend--Bilu quintic Hasse fiber.
+
+The rank classification is stated only as a corollary. Its exclusion of rank
+two uses the classical Campbell--Razar--Wright Galois case and is outside the
+Lean certificate.
+
+## Material moved to companion notes
+
+- Symmetric monodromy is in
+  [`verified/UNIVERSAL_SYMMETRIC_MONODROMY.md`](../../verified/UNIVERSAL_SYMMETRIC_MONODROMY.md).
+- Stable compositional atomicity is in
+  [`verified/PRIMITIVE_MONODROMY_ATOMICITY.md`](../../verified/PRIMITIVE_MONODROMY_ATOMICITY.md).
+- Exact nonproperness, the complete `Pi = 0` fiber table, and the global
+  discriminant order are in
+  [`papers/quadratic-gauge-nonproperness`](../quadratic-gauge-nonproperness/).
+
+These results are not used to prove fullness. Fullness follows directly from
 
 ```text
-Hom_K-alg(K[T]/(P), A) ≃ literal distinguished map-fiber points over A.
+rank F^{-1}(y) = N = gdeg(F).
 ```
 
-Thus the polynomial realization theorem controls the complete
-represented fiber, not merely its geometric or rational points. Starting from
-a squarefree polynomial `P` of degree at least three, Lean now:
+## Formal and independent verification
 
-- chooses an admissible translation parameter internally;
-- constructs the actual arbitrary-degree `MvPolynomial (Fin 3) K` map;
-- proves its general Jacobian is `1` after the fixed output normalization;
-- proves every coordinate has total degree at most `6N+2`;
-- constructs the literal target fiber of those three polynomial coordinates;
-- identifies that fiber naturally with maps from `K[T]/(P)` over every
-  commutative test algebra;
-- proves that the representing quotient has dimension `N`;
-- proves that the representing quotient is finite étale;
-- promotes `Π` and `B` to independent parameters and proves that the fully
-  generic inverse equation is irreducible of degree `N` over the iterated
-  target field `K(Π,B)(C)`, with root quotient of finrank `N` and
-  specialization back to the displayed inverse polynomial;
-- proves that the three displayed coordinates are algebraically independent
-  and that their coordinate substitution extends to an injective pullback on
-  rational function fields;
-- identifies the actual source function field over `K(Π,B)(C)` with the
-  inverse-root quotient, and transfers its finrank to prove geometric degree
-  `N`;
-- verifies that the determinant-one normalization is an invertible target
-  rescaling and packages determinant, geometric degree, literal fiber,
-  naturality, finite étaleness, rank, and the degree bound in one theorem;
-- proves that the complete supplied-translation map and distinguished target
-  commute coefficientwise with extension of the ground field, and proves the
-  corresponding tensor-product base change of the representing quotient;
-- proves the abstract finite-étale monogenicity bridge and composes it with
-  the complete polynomial-presentation certificate.
+The Lean project in
+[`formal/finite-etale-keller`](../../formal/finite-etale-keller/) proves the
+polynomial construction end to end, including the literal natural fiber,
+finite étaleness, rank, actual function-field comparison, geometric degree,
+base change for supplied data, monogenicity, and the abstract finite-étale
+corollary. It has no `sorry` and no project-specific axioms.
 
-The combined final declaration is `automaticRealization_pageOne`, with
-`automaticRealizationGeometricDegree_eq` supplying its geometric-degree
-field.  The explicit function-field bridge is
-`generalGaugeSourceFunctionFieldComparison`, and
-`generalGaugeGeometricDegree_eq` transfers the inverse-root degree to the
-actual displayed map.  The preceding layers remain separately exposed by
-`automaticRealizationMap_certificate`,
-`automaticJacobianOneFiberRepresentingEquiv_natural`,
-`automaticRepresentingAlgebra_etale`,
-`automaticRepresentingAlgebra_finite`,
-`generalGaugeFullyGenericInversePolynomial_certificate`,
-`generalGaugeFullyGenericInverseAdjoinRoot_finrank`,
-`generalGaugeMap_algebraicIndependent`, and
-`generalGaugeFunctionFieldHom_injective`.  Supplied-parameter scalar extension
-is certified by `realizationMapTarget_map` and
-`adjoinRootBaseChangeEquiv`.  The abstract-algebra endpoint is
-`abstractFiniteEtale_pageOne`, with
-`abstractFiniteEtaleFiberRepresentingEquiv_natural` supplying its natural
-fiber equivalence. No translation
-parameter, coefficient nonvanishing proof, chart unit, abstract source-fiber
-wrapper, or bounded-degree specialization remains as an external input to the
-polynomial-presentation theorem.
+The public endpoints include:
 
-Three independent exact layers audit the construction:
+- `automaticRealization_pageOne`;
+- `generalGaugeSourceFunctionFieldComparison`;
+- `generalGaugeGeometricDegree_eq`;
+- `abstractFiniteEtale_pageOne`;
+- `realizationMapTarget_map`; and
+- `adjoinRootBaseChangeEquiv`.
 
-1. Lean proves the uniform finite sums, actual map, general determinant,
-   effective degree bound, literal fiber equivalence, finite étaleness,
-   quotient translation, naturality, fully independent inverse irreducibility
-   and degree over `K(Π,B)(C)`, coordinate algebraic independence, the
-   injective function-field pullback, the explicit source/inverse-root
-   comparison, actual geometric degree, and the abstract finite-étale
-   presentation bridge.
-2. A structural SymPy checker verifies the source and marked-line Jacobians,
-   the generic `k`-th coefficient identities, a six-coefficient bridge, and
-   the termwise degree bound.
-3. Singular expands the full degree-six map over the rational function field
-   in six algebraically independent coefficients, obtains determinant `-2`,
-   and checks the `(7,38,36)` degree profile. The concrete checker independently
-   expands degrees three, four, and five and reconstructs their quotient fibers
-   in both directions.
-
-The theorem transfers connectedness, signatures, splitting fields, local
-factorization data, and rational-point behavior exactly, and is compatible
-with extension of the ground field.
-
-The active paper is deliberately narrower than the surrounding repository.
-Its sections follow the proof dependency: introduction and main results;
-inverse-equation design of the quadratic gauge; localized reconstruction and
-geometric degree; prescribed finite-étale realization; symmetric monodromy
-and stable atomicity; and discussion.  Appendix A
-contains the coefficientwise verification that the compact `(Pi,S,Q)` design
-pulls back to the displayed polynomial coordinates.  Appendix B gives the
-scalar-extension and faithfully flat descent proof of the degree-two
-obstruction.  Appendix C is the compact verification and Lean correspondence
-table.  Appendix D contains the logically separate exact reduced
-nonproperness theorem, the complete `Pi = 0` fiber table, and the exact
-discriminant-order lemma from `sections/02b-nonproperness.tex`.  These last
-claims are ordinary mathematical proofs, not Lean theorems.  The appendix
-defines the Jelonek locus as a reduced graph-boundary/non-finite locus, uses
-Jelonek's complex multiplicity criterion only after a standalone
-graph-boundary base-change lemma and a characteristic-zero descent argument,
-and proves the exact global `Pi`-adic discriminant factor in `K[B,C][Pi]`.
-
-The active manuscript contains no Hasse or fixed-quintic addendum; those
-applications remain separate verified notes.
-
-The directory name is retained as a stable repository path from the earlier
-draft.
-
-The focused audits accompanying the active draft are:
-
-1. the exact arbitrary-characteristic-zero-field scope of the degree-two
-   Galois exclusion, with Campbell--Razar--Wright provenance and a faithfully
-   flat descent proof;
-2. the primitive linear-in-the-target-coordinate proof of generic inverse
-   irreducibility, followed by the explicit comparison
-   `K(x,y,z) = K(Π,B,C)(S)` proving the actual geometric degree; Lean
-   independently formalizes the same comparison over the canonical iterated
-   target presentation;
-3. the birational quadratic-discriminant parametrization and Morse-polynomial
-   proof of full symmetric generic monodromy, with separate specialization and
-   regularity arguments;
-4. two-sided reconstruction over arbitrary commutative test algebras, using a
-   Bézout inverse of `E'` and proving naturality;
-5. existence of an admissible translation and the canonical quotient
-   translation `K[S]/(P(a+S)) ≃ K[T]/(P(T))`;
-6. a coefficientwise and map-level derivation of the displayed all-degree
-   gauge identities, Jacobian, and effective degree bound;
-7. primitive-monodromy atomicity, including constant-field extension and
-   identity stabilization;
-8. the dated and qualified [literature audit](LITERATURE_AUDIT.md).
-
-The [verification matrix](VERIFICATION.md) records the proof layer supporting
-every load-bearing statement and the exact remaining formal boundary.
-
-The Lean project contains no `sorry` and no project-specific axioms. Its final
-page-one theorem and function-field comparison report only Lean's standard
-`propext`, `Classical.choice`, and `Quot.sound`. The formal scope and remaining
-nonformalized inputs are listed in
-[`formal/finite-etale-keller/README.md`](../../formal/finite-etale-keller/README.md).
-
-Run the exact independent checkers from the repository root:
+The exact symbolic checks are:
 
 ```bash
 .venv/bin/python scripts/verify_universal_quadratic_gauge.py
 .venv/bin/python scripts/verify_root_engineered_quadratic_gauge.py
-Singular -q scripts/verify_universal_quadratic_gauge.sing
 .venv/bin/python scripts/verify_finite_etale_keller_fibers.py
+Singular -q scripts/verify_universal_quadratic_gauge.sing
 ```
 
-The independent nonproperness audit can be run with:
-
-```bash
-.venv/bin/python scripts/verify_quadratic_gauge_nonproperness.py
-```
-
-Build the Lean certificate with:
+Build Lean with:
 
 ```bash
 cd formal/finite-etale-keller
 lake build
 ```
 
-Build the paper with:
+Build the paper from this directory with:
 
 ```bash
-latexmk -cd -pdf -interaction=nonstopmode -halt-on-error \
-  -outdir=../../tmp/pdfs/common-arithmetic-fibers \
-  papers/common-arithmetic-fibers/main.tex
+latexmk -pdf -interaction=nonstopmode -halt-on-error main.tex
 ```
 
-The active-paper build copies the PDF to:
-
-```text
-output/pdf/common-arithmetic-fibers.pdf
-```
+The directory name is retained as a stable path from the earlier draft.

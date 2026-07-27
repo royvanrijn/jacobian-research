@@ -1,205 +1,778 @@
 # Local Q2 certificates for arithmetic Keller fibers
 
-## Status
+## Status and boundary
 
-Research direction motivated by David Roe and David Turturean's 2026 explicit
-presentation of the absolute Galois group of `Q_2` by four generators and two
-relations, with two independent Lean 4 formalizations.
+This is an active arithmetic-certificate branch based on David Roe and David
+Turturean's explicit marked presentation of \(G_{\mathbb Q_2}\).  The source
+audited here is the manuscript dated July 26, 2026, together with the Roe Lean
+formalization at commit `0ffb3908c72f9a61bc1142567fb6bd9f2e67aaa3` and the
+completed Turturean formalization at commit `e868b9e`.
 
-This does **not** alter the polynomial Keller constructions or their Jacobian
-proofs.  It supplies a new arithmetic description and possible certificate
-layer for the finite etale fiber algebras already realized by those maps.
-
-Primary source:
-
-- David Roe and David Turturean, *A Presentation of the Absolute Galois Group
-  of Q_2*, project page: <https://roed314.github.io/gq2/>.
-
-## 1. Exact bridge
-
-For a field `K`, finite etale `K`-algebras are contravariantly equivalent to
-finite continuous `G_K`-sets, where
+Two action-first examples are complete:
 
 \[
- G_K=\operatorname{Gal}(K^{\mathrm{sep}}/K).
+ (\sigma,\tau,x_0,x_1)\subset S_3
+ \longrightarrow \mathbb Q_2[T]/(T^3-2)
+ \longrightarrow \text{a determinant-one Keller fiber}.
 \]
 
-If a Keller map over `Q_2` has a complete fiber with coordinate algebra `A`,
-then its geometric points form the finite continuous set
+For the mixed wild example, a relative Stiefel--Whitney calculation closes
+one named comparison:
 
 \[
- X_A=\operatorname{Hom}_{\mathbb Q_2\text{-alg}}
-      (A,\overline{\mathbb Q}_2)
+\left((12),(123),(12)(34),1\right)\subset S_4
+\longrightarrow
+\mathbb Q_2[T]/(T^4+4T^2-4T+2)
+\longrightarrow \text{a determinant-one Keller fiber}.
 \]
 
-with its natural `G_{Q_2}` action.  Conversely this action determines `A` up
-to `Q_2`-algebra isomorphism.
+The finite presentation certificates, polynomial comparisons, and Keller-map
+calculations are exact.  The relative obstruction uniquely identifies the
+worked Roe--Turturean \(x_0=(12)(34)\) orbit; it does not order the other two
+zero-obstruction \(S_4\) orbits.  A general **effective**
+action-to-polynomial compiler is also open.
 
-The Roe--Turturean presentation therefore turns the local arithmetic type of a
-Keller fiber into finite action data for four named generators satisfying two
-relations.  At the level of a degree-`N` fiber, this can be represented by four
-permutations in `S_N`, together with checks of the two relators and any marking
-data required by the presentation.
+This branch does not alter the polynomial Keller constructions or their
+Jacobian proofs.  It does not simplify the construction and is not a new route
+to `JC(2)`.  Its role is to attach finite, independently replayable arithmetic
+certificates to complete finite etale fibers.
 
-The central point is:
+Primary sources:
 
-> The finite-etale realization theorem constructs the fiber; the explicit
-> presentation of `G_{Q_2}` can provide a compact certificate of its complete
-> local Galois structure.
+- Roe--Turturean, [project page](https://roed314.github.io/gq2/) and
+  [interactive manuscript](https://roed314.github.io/gq2/paper/paper.html);
+- [Roe Lean formalization](https://github.com/roed-math/gq2-lean);
+- [Turturean Lean formalization](https://github.com/davidturturean/gq2-lean-turturean).
 
-## 2. What this can be used for
+The manuscript is a preprint and has not yet been externally peer reviewed.
+The two Lean developments and finite-quotient checks are substantial assurance
+signals, not substitutes for recording the precise external theorem used.
 
-### 2.1 Local fiber fingerprints
+## 1. Exact marked presentation
 
-For a rational fiber algebra `A/Q`, base change to `Q_2` and record the
-resulting finite `G_{Q_2}`-set.  The orbit decomposition gives the factor
-and residue-degree decomposition over `Q_2`; stabilizers retain the full local
-extension type rather than only the degrees.
+### 1.1 Generators, topology, and conventions
 
-For two global fibers, unequal `Q_2` action certificates immediately prove
-that the global `Q`-algebras are nonisomorphic.  Equal local certificates do
-not by themselves prove global isomorphism.
-
-### 2.2 Small independently checkable certificates
-
-A candidate certificate format is:
-
-1. a squarefree polynomial `P in Q[T]` defining the fiber;
-2. a certified factorization/decomposition of `P` over `Q_2`;
-3. four permutations describing the action of the presented generators on
-   the geometric roots;
-4. exact verification of the two group relations;
-5. a comparison certificate identifying this action with the etale algebra
-   `Q_2[T]/(P)`.
-
-Items 3--4 are finite combinatorics.  Item 5 is the substantive local-field
-bridge and should not be silently inferred from matching orbit sizes.
-
-### 2.3 Search and engineering
-
-The presentation suggests reversing the usual workflow:
-
-1. enumerate small transitive permutation actions satisfying the two
-   relations and the presentation's marking constraints;
-2. interpret them as candidate finite extensions, or products of extensions,
-   of `Q_2`;
-3. construct a squarefree polynomial with that local algebra;
-4. feed the polynomial into the universal arithmetic-fiber Keller
-   construction.
-
-This would produce Keller fibers selected by prescribed local Galois action,
-not merely by degree or factorization pattern.
-
-For global `Q`-fibers one can ask for simultaneous local specifications at a
-finite set of primes and then use approximation/Hilbert irreducibility to seek
-a global polynomial meeting them.  The `Q_2` presentation makes the dyadic
-local condition unusually explicit.
-
-### 2.4 Formalization reuse
-
-The two Lean formalizations may provide reusable definitions and lemmas for
-profinite presentations, finite continuous actions, and marked generators.
-The immediate formal target should remain modest: connect a finite action of
-the presented group to a finite etale algebra only after identifying exactly
-which local-field and Galois-category infrastructure is available.
-
-This is a downstream formalization project.  It is not required for the
-current finite-etale Keller theorem, whose algebraic realization statement is
-field-uniform.
-
-## 3. What this does not currently solve
-
-- It does not simplify the Keller map formulas.
-- It does not strengthen the constant-Jacobian calculation.
-- It does not address injectivity, properness, or the plane Jacobian problem.
-- It does not classify global finite etale `Q`-algebras.
-- A tuple of permutations satisfying the relators is not automatically a
-  certificate for a particular polynomial without the comparison step.
-- The explicit presentation describes `G_{Q_2}`; it does not imply that every
-  abstract finite permutation representation chosen without continuity or
-  marking checks is arithmetically realizable.
-
-## 4. Open problems
-
-### Q2-1. Certificate schema
-
-Extract the exact four generators, two relators, topology, and marking
-conventions from Roe--Turturean and define a versioned finite certificate
-schema for actions on at most `N` points.
-
-**Deliverable:** a verifier that checks the finite permutation relations and
-reports orbit/stabilizer invariants.
-
-### Q2-2. Polynomial-to-action compiler
-
-Given a squarefree `P in Q[T]`, compute and certify the finite
-`G_{Q_2}`-set attached to `Q_2[T]/(P)` in the Roe--Turturean generators.
-
-This is substantially stronger than factoring `P` over `Q_2`; it requires
-recovering the action of the named generators or a rigorously equivalent
-marked description.
-
-### Q2-3. Action-to-polynomial realization
-
-Given a certified finite action of the presented `G_{Q_2}`, construct an
-explicit squarefree polynomial `P in Q_2[T]` whose etale algebra has that
-action.  Seek integral or rational approximations suitable for input to the
-existing Keller-fiber formulas.
-
-### Q2-4. Prescribed local Keller fibers
-
-Prove an explicit theorem of the following shape:
-
-> Every finite continuous `G_{Q_2}`-set, supplied in presentation-certificate
-> form, occurs as the geometric fiber action of an explicit Keller map over
-> `Q_2`.
-
-Abstractly this follows from the finite-etale realization theorem plus the
-Galois-category equivalence.  The open content is an effective compiler with
-checkable output.
-
-### Q2-5. Global fibers with dyadic specification
-
-Construct infinite families of `Q`-defined Keller maps/fibers whose base
-change to `Q_2` has a prescribed certified action while retaining chosen
-behavior at other primes and over `R`.
-
-A first test should use the existing quartic and quintic arithmetic-zoo
-polynomials, compute their exact dyadic action certificates, and determine
-whether the local data separates examples not already separated by elementary
-factorization and discriminant invariants.
-
-### Q2-6. Lean bridge
-
-Audit the two Roe--Turturean formalizations and determine the smallest import
-surface needed to state:
+Let
 
 \[
- \text{finite action certificate}
+ \omega_2=(1\text{ in }\mathbb Z_2,\;
+           0\text{ in }\mathbb Z_\ell\text{ for odd }\ell)
+ \in\widehat{\mathbb Z}.
+\]
+
+Roe--Turturean use
+
+\[
+ x^g=g^{-1}xg,\qquad [x,y]=x^{-1}y^{-1}xy.
+\]
+
+The unramified coordinate is geometric: \(\sigma\) maps to geometric
+Frobenius, normalized to \(1\) in \(\mathbb Z_2\).  Therefore the tame relation
+over residue field \(\mathbb F_2\) is
+
+\[
+ \tau^\sigma=\tau^2.                                    \tag{1.1}
+\]
+
+The candidate is a **profinite** group topologically generated, in the fixed
+order,
+
+\[
+ \sigma,\tau,x_0,x_1.
+\]
+
+The closed normal subgroup generated by \(x_0,x_1\) is required to be pro-2.
+This is part of the marked presentation; it is not a consequence of the two
+word relators and must not be dropped.
+
+### 1.2 Auxiliary words and relators
+
+The exact word ledger is
+
+\[
+\begin{aligned}
+\sigma_2&=\sigma^{\omega_2},&
+u_i&=(x_i\tau)^{\omega_2}\quad(i=0,1),&
+d_0&=u_0x_0^{-1},\\
+z_0&=x_0^{\sigma_2},&
+c_0&=[d_0,z_0],&
+g_0&=\sigma_2^2,\\
+d_g&=d_0^{g_0},&
+h_c&=[d_g,d_0],&
+h_0&=x_0^{g_0}x_0d_gd_0d_0^2h_c.
+\end{aligned}                                            \tag{1.2}
+\]
+
+The bare \(d_0\) between \(d_g\) and \(d_0^2\) in \(h_0\) is essential.  The two
+relations are
+
+\[
+ \boxed{\tau^\sigma=\tau^2},\qquad
+ \boxed{h_0u_1^{-1}x_1^\sigma c_0=1}.                    \tag{1.3}
+\]
+
+For an element \(g\) of finite order \(m=2^a m_{\mathrm{odd}}\), the finite
+meaning of \(g^{\omega_2}\) is \(g^e\), where
+
+\[
+ e\equiv1\pmod{2^a},\qquad
+ e\equiv0\pmod{m_{\mathrm{odd}}}.                        \tag{1.4}
+\]
+
+### 1.3 Finite-action admissibility
+
+Given four permutations in \(S_n\), let
+
+\[
+ H=\langle\sigma,\tau,x_0,x_1\rangle\le S_n
+\]
+
+be their exact image.  The tuple is an admissible finite action certificate
+when:
+
+1. the two equations (1.3) hold in \(H\);
+2. the normal closure of \(x_0,x_1\) in \(H\) is a 2-group.
+
+Generation is automatic after replacing an ambient \(S_n\) by the exact image
+\(H\).  Equivalently, \(x_0,x_1\in O_2(H)\).  Roe--Turturean's presentation
+theorem then supplies a continuous homomorphism
+
+\[
+ G_{\mathbb Q_2}\longrightarrow H\longrightarrow S_n.
+\]
+
+Thus a fully admissible tuple is abstractly a finite continuous
+\(G_{\mathbb Q_2}\)-set.  Merely checking the two word equations without the
+2-core condition is insufficient.
+
+## 2. Finite permutation certificate
+
+The versioned schema is `gq2-permutation-action/v1`.  It fixes:
+
+- zero-based point labels;
+- image-list permutation encoding;
+- multiplication \((ab)(i)=a(b(i))\);
+- right conjugation and commutator conventions;
+- geometric Frobenius normalization.
+
+The dependency-free verifier
+[`verify_gq2_permutation_action.py`](../scripts/verify_gq2_permutation_action.py)
+checks:
+
+1. all four image lists are permutations;
+2. the finite \(\omega_2\)-exponents element by element;
+3. every auxiliary word in (1.2);
+4. both relators;
+5. the exact permutation image;
+6. the normal closure of the wild images and its 2-power order;
+7. point orbits and stabilizer orders;
+8. any supported polynomial-comparison block.
+
+It enumerates the exact finite image, so the caller must set a suitable
+`--max-group-order` for large actions.  The relation check is finite
+combinatorics.  A polynomial comparison is a separate certificate layer and is
+never inferred from equal orbit sizes.
+
+The second regression certificate,
+[`gq2_s4_mixed_action.json`](certificates/gq2_s4_mixed_action.json), evaluates
+the manuscript's mixed tuple.  Its exact image has order \(24\), and the wild
+normal closure is \(V_4\) of order \(4\).  Section 4 identifies its unique
+relative-obstruction-one quartic model.
+
+## 3. First action-first Keller compiler: the tame S3 cubic
+
+### 3.1 The prescribed action
+
+On three labels take
+
+\[
+ \sigma=(12),\qquad \tau=(123),\qquad x_0=x_1=1.         \tag{3.1}
+\]
+
+Then \(H=S_3\), \(O_2(S_3)=1\), and
+
+\[
+ \tau^\sigma=\tau^{-1}=\tau^2.
+\]
+
+All wild auxiliary words are trivial, so the second relator also holds.  The
+certificate is
+[`gq2_s3_x3_minus_2.json`](certificates/gq2_s3_x3_minus_2.json).
+
+This is minimal in permutation degree: \(S_1\) and \(S_2\) are abelian, while
+the image in (3.1) is nonabelian.  No minimality of coordinate degrees,
+coefficient height, or formula size is claimed.
+
+### 3.2 Comparison with a concrete Q2-algebra
+
+Let
+
+\[
+ P(T)=T^3-2.
+\]
+
+It is Eisenstein at \(2\), hence defines a totally and tamely ramified cubic
+extension of \(\mathbb Q_2\).  Its discriminant is
+
+\[
+ \operatorname{Disc}(P)=-108=2^2(-27).
+\]
+
+The unit \(-27\equiv5\pmod8\) is not a square in \(\mathbb Q_2\), so the
+splitting action is \(S_3\), not \(A_3\).  The unramified quadratic part
+supplies the geometric-Frobenius transposition and tame inertia supplies the
+3-cycle.  This identifies the marked action (3.1), up to relabeling, with
+
+\[
+ X_P=\operatorname{Hom}_{\mathbb Q_2\text{-alg}}
+ \bigl(\mathbb Q_2[T]/(T^3-2),\overline{\mathbb Q}_2\bigr).
+\]
+
+This comparison is stronger than matching the one orbit of size three.
+
+### 3.3 Explicit Keller map
+
+Translate \(T=1+S\).  The rooted seed is
+
+\[
+ G(S)=P(1+S)-P(1)=S^3+3S^2+3S,
+\]
+
+with \((g_1,g_2,g_3)=(3,3,1)\).  Put
+
+\[
+ t=1+xy,\qquad q=t^2z+3y^2(1+3t).
+\]
+
+The degree-three specialization of the root-engineered quadratic gauge is
+
+\[
+\begin{aligned}
+F_1&=tq,\\
+F_2&=y+xq+2tq,\\
+F_3&=x(5-3t)-\frac13x^3z.
+\end{aligned}                                            \tag{3.2}
+\]
+
+It has determinant \(-2\).  Scale the last output by \(-1/2\):
+
+\[
+ \widetilde F=(F_1,F_2,-F_3/2),\qquad
+ \det D\widetilde F=1.                                  \tag{3.3}
+\]
+
+At target
+
+\[
+ (1,0,-1/3)
+\]
+
+the unscaled inverse coordinate is \(C=2/3\), and the inverse polynomial is
+
+\[
+ G(S)-\frac{3}{2}\frac{2}{3}
+ =S^3+3S^2+3S-1
+ =(S+1)^3-2.                                             \tag{3.4}
+\]
+
+The existing reconstruction theorem therefore identifies the **complete**
+fiber with
+
+\[
+ \operatorname{Spec}\mathbb Q_2[T]/(T^3-2),
+\]
+
+not merely three selected geometric points.  The component total degrees of
+the displayed determinant-one map are \((7,7,4)\).
+
+This proves the first full chain
+
+\[
+ \boxed{
+ \text{marked nonabelian action}
  \Longrightarrow
- \text{finite continuous }G_{\mathbb Q_2}\text{-set}
- \Longleftrightarrow
- \text{finite etale }\mathbb Q_2\text{-algebra}.
+ \text{concrete local algebra}
+ \Longrightarrow
+ \text{complete Keller fiber}.
+ }
 \]
 
-Do not begin by formalizing all local Galois theory.  First identify which
-part can be isolated as a finite-action interface and which theorems must
-remain trusted external inputs.
+## 4. The mixed S4 branch: a named quartic action
 
-## 5. Priority assessment
+### 4.1 Three marked action orbits
 
-This branch is valuable for arithmetic packaging, explicit examples, and
-credibility through independently checkable certificates.  It is orthogonal
-to the current highest-priority obstruction problems in
-`OPEN_PROBLEMS_FOR_MAP_EXTENSIONS.md`.
+Fix the tame frame
 
-Recommended order:
+\[
+ \sigma=(12),\qquad \tau=(123),\qquad x_1=1.
+\]
 
-1. Q2-1: extract and implement the finite relation verifier;
-2. compute coarse `Q_2` decompositions for the existing arithmetic zoo;
-3. assess whether named-generator actions can be extracted effectively;
-4. only then attempt the Lean Galois-category bridge.
+Inside
 
-The likely near-term publishable object is a **local arithmetic certificate
-attached to an explicit Keller fiber**, not a new Jacobian counterexample or a
-simplification of the map construction.
+\[
+ V_4=\{1,(12)(34),(13)(24),(14)(23)\},
+\]
+
+the finite verifier finds that the exact-image admissible choices are
+precisely the three nonidentity values of \(x_0\).  The common centralizer of
+\(\sigma\) and \(\tau\) in \(S_4\) is trivial, so these are three distinct
+simultaneous-conjugacy orbits.  This agrees with Roe--Turturean's count
+
+\[
+ |\operatorname{Sur}(G_{\mathbb Q_2},S_4)|
+ =72=3|\operatorname{Aut}(S_4)|.
+\]
+
+The checked-in certificate chooses \(x_0=(12)(34)\), the worked tuple in their
+Appendix D.
+
+### 4.2 Three concrete quartic local fields
+
+The Jones--Roberts/LMFDB dyadic-field classification has exactly three
+quartic fields with local Galois closure group \(S_4\).  Convenient splitting
+models are
+
+\[
+\begin{aligned}
+P_4(T)&=T^4-2T+2,\\
+P_{8,+}(T)&=T^4-4T+2,\\
+P_{8,-}(T)&=T^4+4T^2-4T+2.
+\end{aligned}
+\]
+
+The corresponding LMFDB labels are
+[`2.1.4.4a1.1`](https://www.lmfdb.org/padicField/2.1.4.4a1.1),
+[`2.1.4.8a1.1`](https://www.lmfdb.org/padicField/2.1.4.8a1.1), and
+[`2.1.4.8a1.2`](https://www.lmfdb.org/padicField/2.1.4.8a1.2).
+
+The exact PARI certificate independently checks the following data.  The last
+column is the normalized relative degree-two Stiefel--Whitney obstruction
+defined in Section 4.3.
+
+| model | discriminant | quartic \((e,f)\) | closure \((|D|,|I|,|P|;e,f)\) | ramification-group orders | relative \(w_2\) |
+|---|---:|---:|---:|---|---:|
+| \(P_4\) | \(1616=2^4\cdot101\) | \((4,1)\) | \((24,12,4;12,2)\) | \(24,12,4\) | \(0\) |
+| \(P_{8,+}\) | \(-4864=2^8(-19)\) | \((4,1)\) | \((24,12,4;12,2)\) | \(24,12,4,4,4,4,4\) | \(0\) |
+| \(P_{8,-}\) | \(9472=2^8\cdot37\) | \((4,1)\) | \((24,12,4;12,2)\) | \(24,12,4,4,4,4,4\) | \(1\) |
+
+Thus \(D=S_4\), \(I=A_4\), and wild inertia is \(V_4\) in every row.  In each
+case the discriminant unit is \(5\bmod8\), so the sign quotient is the
+unramified quadratic extension, as required by the tame frame.
+
+For a depressed quartic \(T^4+pT^2+qT+r\), put
+
+\[
+ R(Y)=Y^3-pY^2-4rY+(4pr-q^2).
+\]
+
+Over the splitting field of \(R\), the three Kummer classes are
+\([y_i-p]\), since \((r_1+r_2)^2=y_i-p\) for the corresponding pairing of
+quartic roots.  The verifier proves exactly, using `nfislocalpower`, that all
+three classes and all pairwise products are nonsquares while their triple
+product is a square.  It also proves that each resolvent closure has
+\((e,f)=(3,2)\), the unique tame \(S_3\) closure.  Thus the expected
+two-dimensional \(V_4\) Kummer layer is present in every row; this is stronger
+than merely comparing Galois-group names.
+
+### 4.3 The relative Stiefel--Whitney match
+
+The presentation theorem proves equality of all finite epimorphism counts and
+then invokes a compactness/Hopfian reconstruction lemma to obtain an abstract
+isomorphism of profinite groups.  That argument does not construct a
+compatible bijection between individual epimorphisms.  The quadratic
+obstruction developed in its Section 6 nevertheless gives a
+choice-independent partial match.
+
+Write
+
+\[
+a=(12)(34),\qquad b=(13)(24),\qquad c=(14)(23).
+\]
+
+On \(V_4\), the unique \(S_3\)-invariant nonsingular quadratic form has
+\(q(a)=q(b)=q(c)=1\).  Conjugation by \(\sigma=(12)\) fixes \(a\) and swaps
+\(b,c\).  Since tame inertia has no fixed vector, Roe--Turturean (6.25)
+specializes to
+
+\[
+ Q_A^0(v)=q(v)+b_q(v,\sigma^{-1}v).
+\]
+
+Consequently
+
+\[
+ Q_A^0(a)=1,\qquad Q_A^0(b)=Q_A^0(c)=0.                 \tag{4.1}
+\]
+
+The same class can be evaluated from a quartic polynomial without choosing
+its roots.  Let \(E/\mathbb Q_2\) be the unique tame cubic and use
+\(E=\mathbb Q_2[T]/(T^3-2)\).  For a quartic algebra \(A\), form
+
+\[
+ \left[
+ \frac{w(\operatorname{Tr}_{A/\mathbb Q_2}\langle1\rangle)}
+ {w(\langle1\rangle\perp
+    \operatorname{Tr}_{E/\mathbb Q_2}\langle1\rangle)}
+ \right]_2.                                             \tag{4.2}
+\]
+
+This is the normalized base class of the paper.  Indeed, it vanishes on the
+zero-section \(S_3\); on a double transposition its square map is nonzero
+(the permutation representation restricts as two sign lines and two trivial
+lines); and Roe--Turturean Lemma 6.4 makes the class with those two
+properties unique.
+
+The trace Gram matrix in the power basis is exact.  If \(h_2\) denotes its
+dyadic Hasse sign, the base cubic has
+
+\[
+ \det=-108,\qquad h_2=-1,\qquad (-108,-108)_2=1.
+\]
+
+The three quartic Hasse signs are respectively \(-1,-1,+1\), and all three
+discriminants have the same \(\mathbb Q_2^\times/\mathbb Q_2^{\times2}\)
+class as \(-108\).  Taking degree two in (4.2) therefore gives signs
+\(+1,+1,-1\), or obstruction bits
+
+\[
+ 0,\quad0,\quad1.                                      \tag{4.3}
+\]
+
+Equations (4.1)--(4.3) force the unique match
+
+\[
+\boxed{
+ x_0=(12)(34)
+ \quad\longleftrightarrow\quad
+ P_{8,-}(T)=T^4+4T^2-4T+2.
+}                                                       \tag{4.4}
+\]
+
+This uses the paper's choice-independent quadratic obstruction, not a
+ramification-depth heuristic.  It still does not distinguish
+\(b\leftrightarrow P_4,P_{8,+}\) from
+\(b\leftrightarrow P_{8,+},P_4\).  Naming that remaining pair requires a
+second marked invariant, plausibly a word-theoretic ramification invariant.
+
+### 4.4 A complete wild quartic Keller fiber
+
+The named algebra-to-Keller part is explicit.  Take
+
+\[
+ P(T)=T^4+4T^2-4T+2
+\]
+
+and translate \(T=1+S\).  Then
+
+\[
+ G(S)=P(1+S)-P(1)=S^4+4S^3+10S^2+8S.
+\]
+
+Put
+
+\[
+ t=1+xy,\qquad q=t^2z+2y^2(1+3t).
+\]
+
+The determinant-one quadratic-gauge map is
+
+\[
+\begin{aligned}
+\Pi&=tq,\\
+U&=-\frac12\left(y+\frac32xq+\frac52tq
+                  +\frac12t^2x^2q^4\right),\\
+C&=x(5-3t)-\frac12x^3z-\frac14(xq)^4.
+\end{aligned}
+\]
+
+Its component degrees are \((7,26,24)\), and at target
+
+\[
+ (\Pi,U,C)=(1,0,-3/4)
+\]
+
+the inverse polynomial is
+
+\[
+ G(S)+3=P(1+S).
+\]
+
+The quotient-ring reconstruction verifies the complete scheme-theoretic
+fiber
+
+\[
+ \operatorname{Spec}\mathbb Q_2[T]/(T^4+4T^2-4T+2).
+\]
+
+Its root action is the checked-in
+\((\sigma,\tau,x_0,x_1)=((12),(123),(12)(34),1)\) orbit, its inertia is
+\(A_4\), and its wild inertia is \(V_4\).
+
+## 5. Coarse dyadic decompositions of existing fibers
+
+For each global irreducible factor, PARI's `nfinit` and `idealprimedec` compute
+the primes above \(2\) in the maximal order.  An entry
+
+\[
+ d(e,f)
+\]
+
+means a local field factor of degree \(d=ef\), ramification index \(e\), and
+residue degree \(f\).  A plus sign denotes a product of local factors.
+
+The quartic list is a deliberately named regression set, not every quartic in
+the repository: the universal-multiplicity witness, the \(U=1\) common-fiber
+member, the earlier small rational quartic, and the optimized common quartic.
+The quintic arithmetic-zoo part contains all ten rows of the generated fixed
+ledger; the final row is the separate universal-multiplicity witness.
+
+| row | polynomial over \(\mathbb Q\) | decomposition over \(\mathbb Q_2\) |
+|---|---|---|
+| quartic witness card | \(T^4-3T^2-1\) | \(4(2,2)\) |
+| quartic common \(U=1\) | \(T^4+T^3-2T^2+T+1\) | \(2(1,2)+2(2,1)\) |
+| quartic small | \(2T^4-T^3-T^2+T+1\) | \(1(1,1)+3(3,1)\) |
+| quartic optimized | \(9T^4-19T^3+10T^2-8T-4\) | \(1(1,1)+3(3,1)\) |
+| quintic split | \(T^5-5T^3+4T\) | \(1(1,1)^5\) |
+| quintic \(S_5\), one real root | \(T^5-5T^3+2T^2+4T+2\) | \(2(1,2)+3(3,1)\) |
+| quintic \(S_5\), three real roots | \(T^5-5T^3-2T^2-4T-2\) | \(2(1,2)+3(3,1)\) |
+| quintic \(S_5\), five real roots | \(T^5-5T^3+4T+1\) | \(5(1,5)\) |
+| quintic \(A_5\) | \(T^5-5T^3+4T+4/5\) | \(2(1,2)+3(3,1)\) |
+| quintic \(C_5\) | \(T^5-5T^3+4T+7/5\) | \(5(1,5)\) |
+| quintic \(D_5\) | \(T^5-5T^3+\frac{42}{25}T^2+\frac{32}{125}T-\frac{128}{3125}\) | \(1(1,1)+2(2,1)+2(2,1)\) |
+| quintic \(F_{20}\) | \(T^5-5T^3-\frac32T^2+\frac12T-\frac1{40}\) | \(5(5,1)\) |
+| quintic product | \(T^5-5T^3+3T^2+4T+9\) | \(2(1,2)+3(3,1)\) |
+| quintic Hasse row | \(T^5-5T^3+288T^2+500T+376\) | \(1(1,1)+1(1,1)+3(1,3)\) |
+| quintic witness card | \(T^5+T^3+1\) | \(5(1,5)\) |
+
+These are exact computer-algebra decompositions, not named-generator action
+certificates.  For example, the entries \(5(1,5)\) identify the unique
+unramified degree-five local field, but the full comparison still requires a
+root labeling and the marked Roe--Turturean generators.
+
+## 6. General action-first compiler and its missing effective layer
+
+For a valid certificate on \(n\) points, the conceptual chain is:
+
+\[
+\begin{array}{c}
+(\sigma,\tau,x_0,x_1)\in S_n^4\\
+\text{relators + exact-image 2-core condition}
+\end{array}
+\Longrightarrow
+\text{finite continuous }G_{\mathbb Q_2}\text{-set }X
+\Longleftrightarrow
+A_X/\mathbb Q_2\text{ finite etale}
+\Longrightarrow
+F_{A_X}.
+\]
+
+The three arrows have different status.
+
+1. **Presentation to action:** abstractly proved by Roe--Turturean; finitely
+   checked by the new verifier.
+2. **Action to algebra:** abstractly the Galois-category equivalence.  The
+   missing effective step is to construct a squarefree \(P\in\mathbb Q_2[T]\)
+   and an explicit equivariant identification
+   \[
+   X\cong
+   \operatorname{Hom}_{\mathbb Q_2\text{-alg}}
+      (\mathbb Q_2[T]/(P),\overline{\mathbb Q}_2).
+   \]
+3. **Algebra to Keller fiber:** already proved.  Given a concrete squarefree
+   polynomial, an admissible translation produces the determinant-one map,
+   target, natural represented-fiber equivalence, geometric degree, and degree
+   bound.  For an abstract algebra the current Lean selector is noncomputable;
+   for a displayed polynomial it is an explicit calculation.
+
+Consequently an arbitrary admissible permutation tuple is an abstract local
+Galois action, but it is not yet an effective polynomial certificate.  The
+first compiler should target standard local building blocks:
+
+1. unramified orbits;
+2. tame transitive orbits;
+3. cyclic and elementary wild 2-extensions;
+4. products and induced actions;
+5. mixed \(S_4\)-type examples.
+
+The degree-three example closes the tame transitive case at the smallest
+nonabelian degree.  Section 4 closes all four layers for the worked mixed
+wild \(S_4\) tuple and its named quartic.  It does not provide a general
+compiler or order the two remaining \(S_4\) classes.
+
+## 7. Research outcomes and precise current status
+
+### 7.1 Smallest prescribed nonabelian action
+
+Achieved in permutation and fiber degree three by (3.1)--(3.4).  This is the
+smallest possible nonabelian permutation degree.  Formula-size minimality is
+open and is not needed for the arithmetic certificate.
+
+### 7.2 Arbitrary tame/wild patterns
+
+Open effectively.  Admissible tuples can be enumerated, but converting a
+general stabilizer action into a certified local polynomial is the main
+algorithmic problem.  Ramification breaks, higher ramification filtrations,
+and inertia markings are not determined by orbit sizes alone.
+
+### 7.3 Identical marked sets in stably inequivalent maps
+
+The existing universal multiplicity theorems imply many surrounding maps for
+a fixed finite etale algebra once a polynomial presentation is available
+(uniformly in rank at least five, and on the isotropic quartic trace-chord
+locus).  A compact paired certificate carrying the **same marked**
+\(G_{\mathbb Q_2}\)-set through two explicit stable-separation ledgers has not
+yet been assembled.
+
+### 7.4 A finite certificate for the complete arithmetic fiber
+
+Achieved for \(T^3-2\) by combining:
+
+1. the finite permutation certificate;
+2. the tame Eisenstein polynomial comparison;
+3. the exact inverse identity (3.4);
+4. the existing complete-fiber reconstruction theorem.
+
+The same four-layer format is the recommended certificate standard.
+
+For the mixed \(S_4\) branch, all four layers are exact for the named
+\(x_0=(12)(34)\) action.  The relative obstruction also partitions the full
+three-by-three correspondence into one named singleton and one unresolved
+two-element block.
+
+## 8. Lean reuse without importing all local Galois theory
+
+The two Roe--Turturean formalizations have a clean reusable finite layer.
+
+### 8.1 Roe formalization
+
+At the audited pin, the smallest useful files are:
+
+- `GQ2/Words.lean`: `omega2Exp`, `powOmega2`, the marking, auxiliary words,
+  relators, generation, and pro-2-core predicate;
+- `GQ2/Omega2.lean`: congruence, coherence, and functoriality of the finite
+  \(\omega_2\)-power.
+
+These files do not import the local cohomology, Demushkin, or counting tower.
+Importing `GQ2/GammaA.lean` adds the honest marked profinite quotient and its
+finite-quotient semantics.  Importing `GQ2/PresentationLiteral.lean` brings in
+the capstone identification with `AbsGalQ2` and therefore the full theorem
+dependency graph.
+
+### 8.2 Turturean formalization
+
+The corresponding finite interface is even more explicitly separated:
+
+- `Foundation/RightConj.lean`;
+- `Foundation/Omega2.lean`;
+- `Foundation/Expr.lean`;
+- `Foundation/Q2Words.lean`;
+- `Foundation/TwoCore.lean`;
+- `Foundation/Admissible.lean`.
+
+`Candidate/EpiSemantics.lean` proves that admissible markings correspond to
+epimorphisms from the candidate.  It is downstream of the candidate
+construction and is much larger than the finite word evaluator.
+
+### 8.3 Recommended local formal interface
+
+Do not import or reproduce the local Galois proof inside
+`formal/finite-etale-keller`.  Isolate three modules:
+
+1. a port of the finite word syntax, \(\omega_2\), and admissibility predicate;
+2. one trusted external capstone interface saying that an admissible exact
+   image induces a finite continuous \(G_{\mathbb Q_2}\)-action;
+3. a bridge from a **supplied** finite etale algebra and action comparison to
+   `FiniteEtaleKeller.abstractFiniteEtale_pageOne`.
+
+The existing repository already formalizes the last algebra-to-Keller part in
+[`AbstractFiniteEtale.lean`](../formal/finite-etale-keller/FiniteEtaleKeller/AbstractFiniteEtale.lean):
+every characteristic-zero finite etale algebra of rank at least three has a
+selected squarefree monogenic presentation and a natural full-fiber
+determinant-one certificate.
+
+Current Mathlib supplies the category of finite etale algebras, its geometric
+fiber functor, and general Galois-category action infrastructure.  At the
+repository's pinned Mathlib version, the specific equivalence between finite
+continuous \(G_{\mathbb Q_2}\)-sets and finite etale
+\(\mathbb Q_2\)-algebras is not exposed as a ready theorem.  That equivalence,
+not the Keller realization, is the smallest missing formal bridge.
+
+## 9. Reproduction
+
+Verify the finite \(S_3\) certificate:
+
+```bash
+python3 scripts/verify_gq2_permutation_action.py \
+  arithmetic/certificates/gq2_s3_x3_minus_2.json --json
+python3 scripts/verify_gq2_permutation_action.py \
+  arithmetic/certificates/gq2_s4_mixed_action.json --json
+```
+
+Verify the polynomial comparison and determinant-one Keller compiler:
+
+```bash
+.venv/bin/python scripts/verify_gq2_action_first_keller.py
+```
+
+Verify the three mixed \(S_4\) action orbits, the explicit quartic Keller
+fiber, and the three exact local splitting models:
+
+```bash
+.venv/bin/python scripts/verify_gq2_s4_quartic_keller.py
+gp -q scripts/verify_gq2_s4_local_models.gp
+```
+
+Recompute every coarse dyadic decomposition in Section 5 with PARI/GP:
+
+```bash
+gp -q scripts/verify_gq2_local_decompositions.gp
+```
+
+The PARI calculation uses exact number-field and prime-ideal decomposition,
+not bounded \(2\)-adic floating precision.  The displayed table was last
+recomputed with PARI/GP 2.17.4 on arm64 Darwin (GMP 6.3.0); record the local
+PARI version whenever refreshing or extending it.  The local \(S_4\) script
+also uses `nfsplitting`, `galoisinit`, and `idealramgroups`, all with exact
+number-field data.
+
+## 10. Next concrete problems
+
+### Q2-1. Schema hardening
+
+Add canonical conjugacy/relabeling normalization, optional stabilizer
+generators, and a non-enumerative 2-core backend for larger images.
+
+### Q2-2. Effective action-to-polynomial compilation
+
+Given an admissible transitive tuple, construct a local defining polynomial,
+ramification data, and an equivariant root-label comparison.  Begin with the
+unramified, tame, and elementary wild libraries.
+
+### Q2-3. Order the remaining mixed wild pair
+
+The manuscript's worked tuple
+
+\[
+\sigma=(12),\quad\tau=(123),\quad
+x_0=(12)(34),\quad x_1=1
+\]
+
+is now matched to \(P_{8,-}\) by the unique nonzero relative
+Stiefel--Whitney obstruction.  Find a second marked invariant that orders the
+two zero-obstruction choices \(x_0=(13)(24),(14)(23)\) against
+\(P_4,P_{8,+}\).  A word-theoretic ramification or canonical-generator
+invariant would do this; count equality and the quadratic invariant alone do
+not.
+
+### Q2-4. Same marked action, two stable classes
+
+Choose a rank at least five action with a compact polynomial presentation and
+attach two explicit stable-moduli values while preserving the identical
+marked root action.
+
+### Q2-5. Minimal Lean bridge
+
+Port only the finite word/admissibility layer, expose the presentation theorem
+as one external interface, and determine whether Mathlib's Galois-category
+essential-surjectivity machinery can provide the action-to-algebra object
+without formalizing local Galois theory again.

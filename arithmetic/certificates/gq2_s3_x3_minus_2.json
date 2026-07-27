@@ -1,0 +1,36 @@
+{
+  "schema": "gq2-permutation-action/v1",
+  "description": "The minimal-degree nonabelian marked action, compared with T^3-2 over Q_2.",
+  "degree": 3,
+  "conventions": {
+    "points": "zero-based",
+    "permutation_encoding": "image-list",
+    "multiplication": "(a*b)(i)=a(b(i))",
+    "conjugation": "x^g=g^-1*x*g",
+    "commutator": "[x,y]=x^-1*y^-1*x*y",
+    "frobenius": "sigma maps to geometric Frobenius"
+  },
+  "generators": {
+    "sigma": [1, 0, 2],
+    "tau": [1, 2, 0],
+    "x0": [0, 1, 2],
+    "x1": [0, 1, 2]
+  },
+  "comparison": {
+    "type": "tame-eisenstein-cubic-q2/v1",
+    "prime": 2,
+    "polynomial": "T^3-2",
+    "polynomial_coefficients_low_to_high": [-2, 0, 0, 1],
+    "root_labeling": "The labels are chosen so sigma is a transposition and tau is the compatible 3-cycle."
+  },
+  "expected": {
+    "admissible": true,
+    "tame_relation": true,
+    "wild_relation": true,
+    "wild_normal_closure_is_2_group": true,
+    "image_group_order": 6,
+    "wild_normal_closure_order": 1,
+    "orbit_sizes": [3],
+    "stabilizer_orders": [2]
+  }
+}

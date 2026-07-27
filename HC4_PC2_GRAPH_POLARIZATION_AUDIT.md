@@ -37,8 +37,11 @@ projections that might create collisions unrelated to the known fiber.
 The nonlinear escape has also been tested in three all-degree shear classes
 and in expanded sparse, dense-random, and two-step searches.  Exact jet ideals
 and boundary classifications rule out unrestricted quadratic--cubic
-potentials in all 16 coordinate charts.  General higher-degree nonlinear
-polynomial polarizations remain open.
+potentials in all 16 coordinate charts.  The complete caustic and global
+Schur analysis now also rules out every quartic potential in the principal
+chart `1000`; the final 43-parameter affine-normal edge is an exact rational
+unit ideal on \(Y=0\).  Quartic potentials in the other unresolved charts
+and general higher-degree nonlinear polynomial polarizations remain open.
 
 A direct imitation of the Meng--Yang one-variable Schur operation has also
 been carried out.  Among all coordinate graph charts, omitted coordinates,
@@ -519,6 +522,29 @@ limit.  These timeouts are not mathematical evidence.  They show that the
 direct quartic coefficient ideal needs structural elimination before exact
 characteristic-zero computation.
 
+The chart-`1000` checker now implements the first such elimination on the
+irreducible characteristic branch.  It can impose the five quadratic
+coefficients of
+
+\[
+\det\operatorname{Hess}\bigl(V_4(a,b,0,b)\bigr)=0,
+\]
+
+or cover that zero-Hessian locus by
+
+\[
+V_4(a,b,0,b)=\lambda(a+tb)^4,\qquad
+V_4(a,b,0,b)=\lambda(ta+b)^4.
+\]
+
+On either affine chart five quartic coefficients are eliminated linearly
+and only \(\lambda,t\) are introduced.  Over \(\mathbb F_{32003}\), the
+five-equation \(X=0\) screen and the \(a\)-normalized pure-power screens on
+\(X=0\) and \(Y=0\) each still reached 300 seconds.  These timeouts are
+again not evidence.  They locate the remaining complexity in the lower
+quartic coefficients and motivate imposing the exact \(A,C,E\) divisor
+branches before any further Gröbner run.
+
 ### 9.5 Two-step symplectic compositions
 
 To leave the single-shear class, set
@@ -867,6 +893,27 @@ B&=f_{aa}^3f_{bbb}-5f_{aa}^3
 \end{aligned}
 \]
 
+Polynomiality of the already-forced normal Hessian is the first divisor
+gate.  After clearing the displayed scalar denominators, the numerators of
+\(V_{dd},V_{cd},V_{cc}\) restrict to \(L=0\) as
+
+\[
+-\frac{16A^2}{f_{aa}},\qquad
+-\frac{4AC}{f_{aa}},\qquad
+-\frac{20(C^2-2f_{aa}\kappa)}{f_{aa}}.
+\]
+
+Therefore every reduced irreducible component met by polynomial normal
+Hessian data, with \(f_{aa}\ne0\) generically, must satisfy
+
+\[
+\boxed{A=0,\qquad C^2=2f_{aa}\kappa.}
+\]
+
+Since \(\kappa\ne0\), both \(f_{aa}\) and \(C\) are units at its generic
+point.  This is the unique componentwise branch; it is stronger than the
+factor alternatives obtained from the third jets alone.
+
 The \(W^3\) equation in the first prolongation reduces to
 
 \[
@@ -889,21 +936,17 @@ V_{ccc}&:\ -\frac{CB(C^2-2f_{aa}\kappa)}
 \end{aligned}
 \]
 
-Thus on each irreducible component of \(L=0\) met by a polynomial generic
-solution, either
+Considered without the preceding normal-Hessian gate, these four leading
+third-jet residues would allow \(B=0\), or
+\(A=0\) together with \(C=0\) or
+\(C^2=2f_{aa}\kappa\).  Those are not separate polynomial branches:
+normal-Hessian polynomiality has already forced
+\(A=0,\ C^2=2f_{aa}\kappa\), and excludes \(C=0\).
+Consequently all four \(L^{-3}\) coefficients vanish automatically on the
+actual branch.
 
-\[
-B=0,
-\]
-
-or
-
-\[
-A=0,\qquad C=0\quad\text{or}\quad C^2=2f_{aa}\kappa.
-\]
-
-This reduces the generic polynomiality problem to three explicit
-differential subbranches.  The first is characteristic: modulo \(L\),
+The factor \(B\) is still useful for describing its characteristic
+intersection.  Modulo \(L\),
 
 \[
 B=f_{aa}(f_{ab}\partial_a-f_{aa}\partial_b)L.
@@ -938,97 +981,644 @@ f_d=\lambda(\alpha a+\beta b)^d.
 Thus the irreducible characteristic branch reduces every higher-degree
 search to a pure-power leading tangential form.
 
-The next two Laurent coefficients of \(V_{ddd}\) also factor on this branch.
-Put
+Because normal-Hessian polynomiality already gives \(A=0\), the next two
+characteristic \(V_{ddd}\) residues, which contain \(A^2\) and \(A\),
+vanish automatically.  The first nontrivial later condition comes from
+\(V_{cdd}\).  Put
 
 \[
-\begin{aligned}
-H_1={}&2f_{aa}^3h_{bb}-f_{aa}^3
--4f_{aa}^2f_{ab}h_{ab}-4f_{aa}^2f_{abb}h_a\\
-&+8f_{aa}f_{aab}f_{ab}h_a+2f_{aa}f_{ab}^2h_{aa}
--4f_{aaa}f_{ab}^2h_a,\\
-H_2={}&f_{aa}^2h_{ab}-f_{aa}f_{aab}h_a
+H_2=f_{aa}^2h_{ab}-f_{aa}f_{aab}h_a
 -f_{aa}f_{ab}h_{aa}+f_{aaa}f_{ab}h_a.
-\end{aligned}
 \]
 
-After solving \(B=0\) for \(f_{bbb}\), those numerators are
+The unique branch can now be prolonged componentwise.  Assume
 
 \[
-\frac{96A^2H_1}{f_{aa}^3},
-\qquad
-\frac{768Ah_aH_2}{f_{aa}^3}.
+A=0,\qquad C^2=2f_{aa}\kappa
 \]
 
-Thus the part of the characteristic branch with \(A\ne0\) additionally
-requires \(H_1=0\) and \(h_aH_2=0\).
-
-The noncharacteristic \(A=0\) branch has a complementary simplification:
-all three pole coefficients of \(V_{ddd}\) vanish.  The only remaining pole
-of \(V_{cdd}\) is
+on a reduced irreducible component \(p\) of \(L=0\), with
+\(f_{aa}C\ne0\) generically.  The \(V_{cdd}\) pole first gives
 
 \[
-\frac{h_aCH_2}{f_{aa}^3}L^{-1}.
+h_aH_2=0.
 \]
 
-In particular it vanishes on \(A=C=0\).  On that subbranch, the remaining
-poles of \(V_{ccd}\) and \(V_{ccc}\), together with
-\(\kappa\ne0\), force
+Put \(F=f_{aa}\), \(P=f_{ab}\), and define
 
 \[
-J_1=J_2=J_3=J_4=0,
+S_a=2F\,\partial_aC-Cf_{aaa},\qquad
+S_b=2F\,\partial_bC-Cf_{aab},
 \]
 
-where
+\[
+R=21bF^2-8Fg_{aa}+8f_{aaa}g_a-4f_{aaa}.
+\]
+
+After removing the nonzero factors \(C\) and \(F\), the next four Laurent
+conditions are \(K_1=K_2=K_3=K_4=0\).  Exact reduction gives the compact
+derivative identities
 
 \[
 \begin{aligned}
-J_1={}&2f_{aa}^3h_{bb}-f_{aa}^3-4f_{aa}^2f_{ab}h_{ab}
-+4f_{aa}^2f_{abb}h_a\\
-&-8f_{aa}f_{aab}f_{ab}h_a+2f_{aa}f_{ab}^2h_{aa}
-+4f_{aaa}f_{ab}^2h_a,\\
-J_2={}&f_{aa}h_{aa}+2f_{aaa}h_a,\\
-J_3={}&6b^2f_{aa}^3-f_{aa}^3g_{bb}+2f_{aa}^2f_{ab}g_{ab}
--2f_{aa}^2f_{abb}g_a+f_{aa}^2f_{abb}\\
-&+4f_{aa}f_{aab}f_{ab}g_a-2f_{aa}f_{aab}f_{ab}
--f_{aa}f_{ab}^2g_{aa}\\
-&-2f_{aaa}f_{ab}^2g_a+f_{aaa}f_{ab}^2,\\
-J_4={}&21bf_{aa}^2-8f_{aa}g_{aa}-16f_{aaa}g_a+8f_{aaa}.
+H_2&=-\frac F2\,\partial_aA,\\
+K_1&=-F^2\partial_bA-2PH_2,\\
+K_2&=C(Fh_{aa}-f_{aaa}h_a)
+-6(2g_a-1)H_2+3h_aS_a,\\
+K_3&=FS_b-PS_a,\\
+K_4&=CR-12(2g_a-1)S_a.
 \end{aligned}
 \]
 
-Imposing the mixed-derivative identities coming from \(A=C=0\) and using
-\(J_2=J_4=0\), the other two equations share the factor
+These identities are valid after substituting the component equations, but
+do not differentiate them away.  They yield a useful multiplicity
+obstruction.  If \(h_a\ne0\) generically on \(p\), then \(H_2=0\), hence
+\(\partial_aA=0\); next \(K_1=0\) gives \(\partial_bA=0\).  Since \(p\mid A\)
+and \(p\) is reduced,
 
 \[
-E=f_{aa}^2f_{abb}-2f_{aa}f_{ab}f_{aab}+f_{ab}^2f_{aaa}.
+\boxed{p^2\mid A.}
 \]
 
-Equivalently,
-\(E=-f_{aa}^2(f_{ab}\partial_a-f_{aa}\partial_b)
-\left(f_{ab}/f_{aa}\right)\), so \(E=0\) is another invariant-slope branch.
+For a quartic potential, \(\deg A\le4\).  Therefore any component of degree
+at least three on this \(h_a\ne0\) branch forces the stronger polynomial
+identity \(A=0\).  Only line and conic components can support a nonzero
+\(A\).
 
-Precisely,
+The \(h_a=0\) line branch also reduces exactly.  For a nonvertical line
+\(a=\rho b+\sigma\), tangent compatibility gives
 
 \[
-J_1=6h_aE,\qquad
-J_3=-\frac32(2g_a-1)E.
+h_{ab}=-\rho h_{aa},\qquad
+h_{bb}=\frac12+\rho^2h_{aa}.
 \]
 
-Consequently this subbranch splits into
+Writing \(U=F\rho+P\), substitution into the Laurent equations yields
 
 \[
-E=0,
-\qquad\text{or}\qquad
-h_a=0,\quad g_a=\frac12.
+H_2=-FU h_{aa},\qquad
+K_1=2FU^2h_{aa},
 \]
 
-The latter is rigid: \(A=C=0\) then gives
-\(h_b=b/2\) and \(g_b=2b^3\).
+\[
+K_2=Fh_{aa}\bigl(C+6(2g_a-1)U\bigr).
+\]
 
-These are necessary conditions only; the \(A=0,\ C^2=2f_{aa}\kappa\)
-subbranch, higher normal orders, and termination of the normal Taylor series
-remain to be tested.
+Because \(FC\ne0\), \(K_1=K_2=0\) forces
+
+\[
+h_{aa}=h_{ab}=0,\qquad h_{bb}=\frac12.
+\]
+
+The factor \(U\) is the derivative of \(f_a\) along the line.  If \(U\ne0\),
+tangential differentiation of \(C^2/F=2\kappa\), together with \(K_3=0\),
+forces \(S_a=S_b=0\); then \(K_4=0\) forces \(R=0\).  If \(U=0\), the line is
+characteristic for the Hamiltonian field of \(f_a\) and joins the
+characteristic branch.  Vertical lines have the same rigid \(h\)-jet
+conclusion by using \(\partial_a\) as tangent.
+
+Characteristic lines have an all-degree normal form.  Put
+
+\[
+u=a-\rho b-\sigma,\qquad v=b.
+\]
+
+The condition \(U=0\) says that \(f_a=f_u\) is constant on \(u=0\).  Hence
+
+\[
+f=cu+\phi(v)+u^2q(u,v).
+\]
+
+Direct substitution into the caustic polynomial gives
+
+\[
+\left.L\right|_{u=0}
+=f_{uu}(0,v)\bigl(5v-\phi''(v)\bigr).
+\]
+
+Since \(f_{uu}\ne0\) generically on the chosen component,
+
+\[
+\boxed{\left.f\right|_{u=0}
+=\frac56v^3+\alpha v+\beta.}
+\]
+
+For a quartic potential, \(q\) has degree at most two.  This replaces the
+arbitrary quartic boundary datum on every characteristic line by six
+coefficients in \(q\), the line parameters, and three affine constants.
+
+The next Laurent conditions reduce just as sharply.  Write
+
+\[
+h_0(v)=h(0,v),\qquad h_1(v)=h_u(0,v),\qquad F(v)=f_{uu}(0,v).
+\]
+
+On the characteristic line,
+
+\[
+A=F(v-2h_0'),\qquad
+H_1=F^3(2h_0''-1),\qquad
+H_2=F(Fh_1'-F'h_1).
+\]
+
+The normal-Hessian gate \(A=0\), followed by the later condition
+\(h_1H_2=0\), gives
+
+\[
+h_0=\frac14v^2+\delta,\qquad h_1=\lambda F.
+\]
+
+Thus every surviving quartic characteristic line has the displayed rigid
+quadratic \(h\)-restriction, and its normal first jet is one scalar multiple
+of \(F\).
+
+The remaining normal-Hessian condition now closes the line.  If
+\(g_0(v)=g(0,v)\), then
+
+\[
+\left.C\right|_{u=0}
+=F(v)\bigl(4v^3-2g_0'(v)+\rho\bigr).
+\]
+
+For a quartic potential, \(\deg g_0\le3\), so the parenthesized polynomial
+has degree exactly three.  The equation \(C^2=2F\kappa\) would imply
+
+\[
+F(v)\bigl(4v^3-2g_0'(v)+\rho\bigr)^2=2\kappa,
+\]
+
+which is impossible because \(F\ne0\) and \(\kappa\ne0\).  Therefore
+
+\[
+\boxed{\text{No quartic characteristic line component survives.}}
+\]
+
+Noncharacteristic lines admit an equally explicit surviving normal form.
+Again put \(u=a-\rho b-\sigma,\ v=b\), and write
+
+\[
+F=f_{aa}|_{u=0},\qquad
+U=\partial_v(f_a|_{u=0}),\qquad
+f_0=f|_{u=0}.
+\]
+
+The caustic and normal-Hessian equations restrict to
+
+\[
+Ff_0''-U^2=5vF,\qquad C^2=2F\kappa.
+\]
+
+Because \(F\) has degree at most two and \(C\) is polynomial, the second
+equation forces \(\deg F\) even.  If \(\deg F=2\), the term \(4v^3F\) makes
+\(\deg C=5\), impossible in \(C^2=2F\kappa\).  Hence \(F\) is a nonzero
+constant.  The first equation then forces
+
+\[
+U=mv+n
+\]
+
+with \(\deg U\le1\).  The constant case \(m=0\) leaves the uncancellable
+term \(4Fv^3\) in \(C\), so \(m\ne0\).  Integration gives
+
+\[
+\begin{aligned}
+f_0={}&\frac{m^2}{12F}v^4
++\left(\frac56+\frac{mn}{3F}\right)v^3
++\frac{n^2}{2F}v^2+\alpha v+\beta,\\
+f_a|_{u=0}={}&\frac m2v^2+nv+\eta.
+\end{aligned}
+\]
+
+If \(g_1=g_a|_{u=0}=g_{12}v^2+g_{11}v+g_{10}\), constancy of \(C\) first
+forces
+
+\[
+g_{12}=-\frac{2F}{m},
+\]
+
+and then determines the cubic and quadratic coefficients of
+\(g_0=g|_{u=0}\):
+
+\[
+[v^3]g_0=\frac{mg_{11}+ng_{12}}{3F},\qquad
+[v^2]g_0=\frac{2mg_{10}+2ng_{11}-m}{4F}.
+\]
+
+The remaining first-prolongation equations are triangular on this form.
+Writing \(h_1=h_a|_{u=0}\) and
+\(A_3=f_{aaa}|_{u=0}\), the equations \(A=0\) and \(h_1H_2=0\) force
+\(h_1=\lambda\) to be constant and
+
+\[
+\begin{aligned}
+h|_{u=0}&=\frac14v^2
++\frac{\lambda}{F}\left(\frac m2v^2+nv\right)+\delta,\\
+[u^2]h&=\frac{\lambda A_3}{2F}.
+\end{aligned}
+\]
+
+Indeed, \(A=0\) first gives \(\deg h_1\le1\); solving \(H_2=0\) for
+\([u^2]h\) then requires the nonconstant linear polynomial \(U\) to divide
+the constant \(F^2h_1'\), hence \(h_1'=0\).
+
+Here the case \(\lambda=0\) is included.  Then \(K_1=0\) is automatic.
+The noncharacteristic tangent equations and \(K_3=0\) give
+\(S_a=S_b=0\).  Coefficient comparison in \(S_a\) successively forces
+
+\[
+\begin{aligned}
+A_3&=0,\\
+[v][u^2]g&=0,\qquad [u^2]g=-\frac{2F^2}{m^2},\\
+[v]g_1&=-\frac{4Fn}{m^2}.
+\end{aligned}
+\]
+
+After these substitutions, \(K_4=0\) becomes
+
+\[
+R=21F^2v+\frac{32F^3}{m^2}=0,
+\]
+
+which is impossible because \(F,m\ne0\).  Together with the characteristic
+calculation,
+
+\[
+\boxed{\text{No quartic line component of }L=0\text{ survives.}}
+\]
+
+The characteristic conic branch also has a sharp transverse obstruction.
+Suppose first that the conic has nonzero \(a^2\)-coefficient.  After an
+affine shear preserving \(b\), write
+
+\[
+u=a-\rho b-\sigma,\qquad v=b,\qquad
+p=u^2+q(v).
+\]
+
+Characteristicity means
+
+\[
+f_a-c=p\ell
+\]
+
+for an affine-linear polynomial \(\ell\).  On \(p=0\), the equation
+\(C^2=2f_{aa}\kappa\) becomes
+
+\[
+\ell D^2=2\kappa p_u,\qquad
+D=p_u(4v^3-2g_b)+p_b(2g_a-1).
+\]
+
+The line \(p_u=2u=0\) cuts the smooth projective conic in two distinct
+points.  Since \(p_u/\ell\) must be a square in its function field, divisor
+parity forces \(\ell=xu\).  Caustic divisibility then integrates exactly to
+
+\[
+\boxed{
+f=cu+\frac{x}{4}p^2+\frac56v^3+\alpha v+\beta .
+}
+\]
+
+The normal-Hessian equation reduces to \(xD^2=4\kappa\), so \(D\) must be
+constant in the conic coordinate ring.  But for an arbitrary cubic \(g\),
+division by \(p=u^2+q(v)\) leaves
+
+\[
+\operatorname{rem}_p(D)=8uv^3+\text{terms of total degree at most three}.
+\]
+
+The coefficient \(8\) is independent of every coefficient of \(g\) and
+of the conic.  Therefore
+
+\[
+\boxed{\text{No transverse quartic characteristic conic survives.}}
+\]
+
+For completeness, conics with \(p_{aa}=0\) split into parabolic and
+hyperbolic normal forms.  In the parabolic form
+
+\[
+p=a+q(b),\qquad \deg q=2,
+\]
+
+divisor parity forces \(\ell=z\ne0\).  Caustic divisibility gives
+
+\[
+f=ca+\frac z2p^2+\frac56b^3+\text{affine}.
+\]
+
+Writing \(C=zD\), the equation \(C^2=2z\kappa\) forces \(D\) to be
+constant.  Exact coefficient comparison for a general cubic \(g\) then
+makes \(g_{aa}\) constant.  If \(h_a\ne0\) generically on the conic, the
+\(K_2,K_3,K_4\) chain would require
+
+\[
+R=21bz^2-8zg_{aa}=0,
+\]
+
+which is impossible.  If \(h_a=0\), mixed-derivative compatibility gives
+\(h=b^2/4+\text{constant}\), and the already-forced normal Hessian entry is
+
+\[
+V_{cd}=\frac5{16}b^3.
+\]
+
+This also is impossible for a quartic potential, since every second
+derivative of \(V\) has degree at most two.
+
+In the hyperbolic form, use coordinates
+
+\[
+p=uv-1,\qquad
+\partial_a=\partial_u,\quad
+\partial_b=\partial_v-\rho\partial_u.
+\]
+
+The coordinate ring is \(k[v,v^{-1}]\).  Its unit parity leaves precisely
+the two tangent multipliers \(\ell=xu\) and \(\ell=xv\).  For
+\(\ell=xu\), caustic coefficient comparison leaves the nonzero residue
+
+\[
+\left.L\right|_p=\frac{x^2}{v^4}.
+\]
+
+For \(\ell=xv\), caustic divisibility succeeds, but the equation
+\(C^2=2f_{aa}\kappa\) requires \(D\) to be constant while every cubic \(g\)
+has
+
+\[
+\left.D\right|_p=4v^4+\text{lower Laurent powers}.
+\]
+
+Consequently
+
+\[
+\boxed{\text{No asymptotic quartic characteristic conic survives.}}
+\]
+
+The noncharacteristic conic now has only one branch left.  First suppose
+\(h_a=0\) generically on a geometrically irreducible conic \(p=0\).  Since
+\(\deg h_a\le2\) and \(\deg(h_b-b/2)\le2\), componentwise vanishing gives
+
+\[
+h_a=\mu p,\qquad h_b-\frac b2=\nu p
+\]
+
+for constants \(\mu,\nu\).  Symmetry of the mixed derivative gives
+\(\mu p_b=\nu p_a\).  The two partial derivatives of a geometrically
+irreducible conic are not proportional, so \(\mu=\nu=0\).  Hence
+
+\[
+h_a=0,\qquad h_b=\frac b2
+\]
+
+as polynomial identities.  But the Schur solution then has the universal
+entry
+
+\[
+V_{cd}=\frac5{16}b^3,
+\]
+
+again contradicting the quartic degree bound.  Thus \(h_a=0\) is closed
+for every conic, not only the characteristic normal forms above.
+
+It remains to take \(h_a\ne0\) generically.  The multiplicity argument
+gives \(p^2\mid A\), while the tangent derivative of
+\(C^2/F=2\kappa\) and \(K_3=0\) form the system
+
+\[
+p_bS_a-p_aS_b=0,\qquad FS_b-PS_a=0.
+\]
+
+Its determinant
+
+\[
+U=Fp_b-Pp_a
+\]
+
+is the derivative of \(f_a\) along the conic.  On the
+noncharacteristic branch \(U\ne0\), hence
+
+\[
+S_a=S_b=0.
+\]
+
+Then \(K_4=0\) forces \(R=0\), while \(K_2=H_2=0\) give
+
+\[
+\partial_a\!\left(\frac{h_a}{F}\right)=
+\partial_b\!\left(\frac{h_a}{F}\right)=0
+\qquad\text{modulo }p.
+\]
+
+In characteristic zero \(h_a/F\) is constant on the conic.  Since both
+polynomials have degree at most two, there are constants \(\lambda,\mu\)
+such that
+
+\[
+h_a=\lambda f_{aa}+\mu p.
+\]
+
+Put \(r=h-\lambda f_a\).  The equation \(A=0\) on \(p\) also says that
+\(r_b-b/2\) vanishes on \(p\).  Both \(r_a\) and \(r_b-b/2\) have degree at
+most two, so
+
+\[
+r_a=\mu p,\qquad r_b-\frac b2=\nu p
+\]
+
+for constants \(\mu,\nu\).  Equality of mixed derivatives gives
+\(\mu p_b=\nu p_a\).  Since the two partial derivatives of an irreducible
+conic are not proportional, \(\mu=\nu=0\).  Therefore
+
+\[
+h=\lambda f_a+\frac14b^2+\text{constant}
+\]
+
+as a polynomial identity.  Substitution into the Schur solution gives
+
+\[
+V_{cd}=\frac5{16}b^3+\lambda\left(g_a-\frac12\right).
+\]
+
+For a quartic potential, \(g\) has degree at most three and hence \(g_a\)
+has degree at most two.  The cubic term \(5b^3/16\) cannot cancel.
+Consequently
+
+\[
+\boxed{\text{No quartic noncharacteristic conic survives.}}
+\]
+
+Together with the line and characteristic calculations,
+
+\[
+\boxed{\text{No reduced line or conic component of the chart-1000
+caustic can support quartic polynomial normal data.}}
+\]
+
+In fact, the same proof closes every noncharacteristic component.  If
+\(\deg p\ge3\) and \(h_a=0\) modulo \(p\), the degree bounds make
+\(h_a=0,\ h_b=b/2\) polynomial identities, giving the same impossible
+\(V_{cd}=5b^3/16\).  If \(h_a\ne0\), then \(p^2\mid A\) and
+\(\deg A\le4\) force \(A=0\) identically.  The tangent/\(K_3\) system
+again gives \(S_a=S_b=0\), and \(K_2=H_2=0\) makes \(h_a/F\) constant on
+\(p\).  Since \(\deg(h_a-\lambda F)\le2<\deg p\), this is the polynomial
+identity \(h_a=\lambda F\); the identity \(A=0\) then gives
+\(h_b=b/2+\lambda P\).  Thus the same uncancellable cubic occurs:
+
+\[
+\boxed{\text{No reduced noncharacteristic component of the chart-1000
+caustic can support quartic polynomial normal data.}}
+\]
+
+A characteristic component satisfies \(p\mid(f_a-c)\), so
+\(\deg p\le3\).  Lines and conics are closed above.  The only remaining
+reduced caustic component is therefore a characteristic cubic, followed
+by the unit-\(L\) branch if that cubic is excluded.
+
+The characteristic cubic is also impossible.  Write
+\(f_a-c=\alpha p\) and rescale \(p\) so \(\alpha=1\).  If \(f_4\) is the
+quartic homogeneous part, comparison of the degree-four part of
+\(p\mid L\) gives
+
+\[
+(f_4)_a\mid\det\operatorname{Hess}(f_4).
+\]
+
+The exact binary-quartic divisibility equations have, up to a shear
+preserving \(b\), only three possible leading cubic forms:
+
+\[
+p_3=a^3,\qquad p_3=ab^2,\qquad p_3=b^3.
+\]
+
+Writing the general lower terms, integrating \(f_a=p\), and imposing the
+full divisibility \(p\mid L\) gives respectively
+
+\[
+\begin{aligned}
+p&=a^3+A a^2+D a+F,\\
+p&=(a+C)(b+B/2)^2,\\
+p&=(b+C/3)^3.
+\end{aligned}
+\]
+
+The first depends only on \(a\), and the other two are visibly reducible.
+Over an algebraically closed characteristic-zero field none is an
+irreducible cubic.  Hence
+
+\[
+\boxed{\text{No reduced characteristic cubic component survives.}}
+\]
+
+Consequently, if \(L\) is not the zero polynomial, polynomial normal data
+force
+
+\[
+\boxed{L\in k^\times.}
+\]
+
+There remains a distinct degenerate identity branch \(L\equiv0\), not
+represented by an irreducible divisor.  On its \(f_{aa}\ne0\) part, the
+binary zero-Hessian theorem writes
+
+\[
+f=\frac56b^3+P(\alpha a+\beta b)+\text{affine},
+\qquad \alpha P''\ne0.
+\]
+
+The identities \(A=0,\ C^2=2f_{aa}\kappa\) reduce the second equation to
+
+\[
+P''(\alpha a+\beta b)
+\bigl(4\alpha b^3-2\alpha g_b+2\beta g_a-\beta\bigr)^2
+=2\kappa.
+\]
+
+Both factors on the left must be polynomial units.  But the second retains
+the term \(4\alpha b^3\), while \(g_a,g_b\) have degree at most two.  Thus
+this part is impossible.  The edge \(f_{aa}=0\) reduces directly to
+
+\[
+\begin{gathered}
+f_a\in k,\qquad f_{bb}=5b-\delta,\\
+h_a=0,\qquad g_a=\gamma,\\
+\kappa=-\frac{\delta}{2}(2\gamma-1)^2,\qquad
+\delta(2\gamma-1)\ne0.
+\end{gathered}
+\]
+
+This affine-normal edge and the unit-\(L\) branch are the two surviving
+global systems.
+
+The unit branch closes at the normal-Hessian degree gate.  Put
+\(\phi=f-5b^3/6\).  The binary constant-Hessian equations through degree
+four put \(\phi\), after a shear preserving \(b\), in one of the two
+triangular forms
+
+\[
+\phi=q ab+P(a),\qquad \phi=q ab+P(b),\qquad q\ne0.
+\]
+
+In the first form, write
+\(P=p_4a^4+p_3a^3+p_2a^2+\text{affine}\).  For an arbitrary cubic \(g\),
+the forced \(V_{cc}\) has
+
+\[
+[a^2b^6]V_{cc}=-\frac{48p_4}{q^2},\qquad
+[ab^6]V_{cc}=-\frac{24p_3}{q^2},\qquad
+[b^6]V_{cc}=-\frac{8p_2}{q^2}.
+\]
+
+Since \(\deg V_{cc}\le2\), \(P\) is affine.  This moves the data to the
+second orientation.  Write
+
+\[
+P''=r_2b^2+r_1b+r_0.
+\]
+
+If \(r_2\ne0\), the \(b^6\) coefficient first forces the \(ab^2\)
+coefficient of \(g\) to vanish, after which the \(b^5\) coefficient is the
+nonzero scalar \(99/80\).  Hence \(r_2=0\).  If \(r_1\ne0\), the
+\(a^4b,a^3b,a^2b,a b^3,b^5\) chain successively ends in
+\(99q^2=0\); the \(r_1=0\) chain does the same.  Therefore
+
+\[
+\boxed{\text{The chart-1000 unit-\(L\) branch is impossible for quartic
+potentials.}}
+\]
+
+It remains only to test the affine-normal zero-\(L\) edge above.  Adjoin
+all quartic terms with at least two normal variables: arbitrary quadratic
+\(V_{cc},V_{cd},V_{dd}\), arbitrary affine pure-normal third derivatives,
+and arbitrary constant pure-normal fourth derivatives.  This is the full
+43-parameter quartic completion of the reduced boundary data.  On the
+single graph hyperplane \(Y=0\), native Singular expansion gives 1039
+coefficient columns.  Saturating by the common constant determinant and
+running `slimgb` over \(\mathbb Q\) gives
+
+\[
+\operatorname{reduce}(1,G)=1,\qquad |G|=44.
+\]
+
+Thus the edge is exactly inconsistent:
+
+\[
+\boxed{\text{The affine-normal zero-\(L\) edge has no quartic completion.}}
+\]
+
+Combining the caustic-component theorem, the characteristic-cubic
+classification, the zero-\(L\) reduction, the unit-\(L\) degree
+obstruction, and the final rational unit ideal gives the complete chart
+result
+
+\[
+\boxed{\text{Chart `1000` admits no quartic polynomial potential with
+constant nonzero determinant.}}
+\]
+
+No collision equations are used, so this is stronger than failure to
+retain the known \(PC(2)\) collision.
 
 The other six formerly unresolved quadratic--cubic charts can be closed
 without classifying their boundary Cauchy data.  Let
@@ -1446,6 +2036,16 @@ Run:
 .venv/bin/python scripts/verify_hc4_1000_degenerate_cubic_branch.py
 .venv/bin/python scripts/verify_hc4_x_caustic_formal_compatibility.py
 .venv/bin/python scripts/verify_hc4_1000_divisor_local_chain.py
+.venv/bin/python scripts/verify_hc4_1000_characteristic_line_normal_form.py
+.venv/bin/python scripts/verify_hc4_1000_noncharacteristic_line_normal_form.py
+.venv/bin/python scripts/verify_hc4_1000_characteristic_conic_obstruction.py
+.venv/bin/python scripts/verify_hc4_1000_asymptotic_characteristic_conics.py
+.venv/bin/python scripts/verify_hc4_1000_noncharacteristic_conic_reduction.py
+.venv/bin/python scripts/verify_hc4_1000_characteristic_cubic_obstruction.py
+.venv/bin/python scripts/verify_hc4_1000_zero_caustic_identity.py
+.venv/bin/python scripts/verify_hc4_1000_unit_caustic_obstruction.py
+.venv/bin/python scripts/search_hc4_1000_affine_normal_edge.py \
+  --slices Y --characteristic 0
 .venv/bin/python scripts/verify_hc4_multislice_cubic_obstruction.py \
   --chart 0011 --slices X Y
 .venv/bin/python scripts/verify_hc4_multislice_cubic_obstruction.py \

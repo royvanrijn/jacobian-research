@@ -19,8 +19,14 @@ V_cc, with common pivot
     L = 5*b*f_aa - (f_aa*f_bb-f_ab^2).
 
 Thus L != 0 determines the three normal Hessian entries rationally.  This
-is a reduction, not an obstruction: polynomial divisibility and higher
-normal-jet compatibility remain to be checked on that branch.
+is a reduction, not an obstruction by itself.  On a reduced component of
+L=0 where f_aa is generically nonzero, however, polynomiality of the three
+forced entries requires
+
+    A = b*f_aa - 2*f_aa*h_b + 2*f_ab*h_a = 0,
+    C^2 = 2*f_aa*kappa,
+
+where C=4*b^3*f_aa-2*f_aa*g_b+2*f_ab*g_a-f_ab.
 """
 
 from __future__ import annotations
@@ -169,12 +175,35 @@ assert sp.factor(
     - kappa
 ) == 0
 
+caustic_substitution = {f_bb: 5 * b + f_ab**2 / f_aa}
+A = b * f_aa - 2 * f_aa * h_b + 2 * f_ab * h_a
+C = 4 * b**3 * f_aa - 2 * f_aa * g_b + 2 * f_ab * g_a - f_ab
+forced_numerators = {
+    name: sp.together(expression).as_numer_denom()[0]
+    for name, expression in (
+        ("V_dd", forced_V_dd),
+        ("V_cd", forced_V_cd),
+        ("V_cc", forced_V_cc),
+    )
+}
+expected_caustic_residues = {
+    "V_dd": -16 * A**2 / f_aa,
+    "V_cd": -4 * A * C / f_aa,
+    "V_cc": -20 * (C**2 - 2 * f_aa * kappa) / f_aa,
+}
+for name, numerator in forced_numerators.items():
+    residue = numerator.subs(caustic_substitution)
+    assert sp.factor(residue - expected_caustic_residues[name]) == 0
+
 
 def main() -> None:
     print("PASS: the chart 1000 fixed-image boundary is (a,b,0,b)")
     print("PASS: the boundary determinant has W-degree two")
     print("PASS: its W^2 coefficient is a three-variable Hessian determinant")
     print("PASS: W^2, W^1, W^0 solve V_dd, V_cd, V_cc with pivot L")
+    print("PASS: the caustic residues are A^2, A*C, C^2-2*f_aa*kappa")
+    print("RESULT: polynomial normal Hessian data require")
+    print("        A=0 and C^2=2*f_aa*kappa on every reduced component")
     print("SCOPE: L != 0 gives rational forced data, not a polynomial solution")
     print("OPEN: test divisibility on L != 0 and classify the branch L=0")
 

@@ -196,6 +196,61 @@
       "priority": "derived"
     },
     {
+      "id": "GQ2A1",
+      "kind": "example",
+      "state": "proved",
+      "title": "Minimal-degree nonabelian local action-first Keller fiber",
+      "scope": "Using the Roe--Turturean marked presentation, the tuple sigma=(12), tau=(123), x_0=x_1=1 is an admissible transitive degree-three action with exact image S_3: both relators hold and the wild normal closure is trivial. The polynomial T^3-2 is 2-Eisenstein with nonsquare Q_2 discriminant -108, identifying its splitting action with this marked tame S_3-set up to relabeling. Translation by T=1+S gives the admissible seed S^3+3S^2+3S; the explicit quadratic-gauge map, after scaling its last output by -1/2, has determinant one and complete fiber Q_2[T]/(T^3-2) at target (1,0,-1/3). Degree three is minimal for a nonabelian permutation image; no formula-size or coordinate-degree minimality is claimed. A general effective action-to-polynomial compiler remains open.",
+      "canonical_source": "arithmetic/GQ2_LOCAL_FIBER_CERTIFICATES.md",
+      "dependencies": [
+        "RQG1",
+        "external: Roe--Turturean marked presentation theorem for G_Q2",
+        "external: Eisenstein criterion and the Q_2 square criterion"
+      ],
+      "checker": "scripts/verify_gq2_action_first_keller.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:3b285cf19b1efc0e50ea76968be321cce34aa9217a597c97782da8bff8a2e2c7",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "GQ2A2",
+      "kind": "example",
+      "state": "proved",
+      "title": "Named mixed-wild S4 quartic action-first Keller fiber",
+      "scope": "Over the fixed tame frame sigma=(12), tau=(123), x_1=1, the Roe--Turturean relators have exactly three exact-image S_4 orbits, given by the three nonidentity choices of x_0 in V_4. Exact PARI splitting-field computations verify three classified dyadic quartic models: T^4-2T+2 has ramification-group orders [24,12,4], while T^4-4T+2 and T^4+4T^2-4T+2 have [24,12,4,4,4,4,4]; in every case the quartic is totally ramified, the closure has e=12 and f=2, decomposition group S_4, inertia A_4, and wild inertia V_4. Their cubic-resolvent Kummer classes are three distinct nonzero local square classes with square triple product. The normalized relative degree-two Stiefel--Whitney bits of the quartic trace forms against the tame S_3 zero section are [0,0,1]. Roe--Turturean's explicit candidate formula gives [1,0,0] on x_0=[(12)(34),(13)(24),(14)(23)], so the unique nonzero obstruction names x_0=(12)(34) as the root action of T^4+4T^2-4T+2. Translation by T=1+S gives seed S^4+4S^3+10S^2+8S and a determinant-one quadratic-gauge map of coordinate degrees (7,26,24) whose complete fiber at (1,0,-3/4) is Q_2[T]/(T^4+4T^2-4T+2). The obstruction does not order the other two zero classes.",
+      "canonical_source": "arithmetic/GQ2_LOCAL_FIBER_CERTIFICATES.md",
+      "dependencies": [
+        "RQG1",
+        "external: Roe--Turturean S_4 epimorphism count",
+        "external: Roe--Turturean normalized base quadratic obstruction and uniqueness",
+        "external: Jones--Roberts/LMFDB classification of dyadic quartic fields",
+        "external: trace forms, relative Stiefel--Whitney classes, and dyadic Hasse invariants",
+        "external: exact PARI splitting-field, local-square, and ramification-group replay"
+      ],
+      "checker": "scripts/verify_gq2_s4_quartic_keller.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:dfa38507739666c0bf33c7970d3e27284ec70e0e61719b660018631e445e8c62",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
       "id": "UQC1",
       "kind": "example",
       "state": "proved",
@@ -434,6 +489,32 @@
       "formal_verification": false,
       "external_review": false,
       "artifact_hash": "sha256:29f4f21c561ebf5990a63c456a516b600b17a1e8a1df75010d5d9f9ace707cf8",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "LPCF1",
+      "kind": "corollary",
+      "state": "proved",
+      "title": "Locally prescribed fibers in one fixed inequivalent Keller pair",
+      "scope": "For every N>=4, the fixed weighted and quadratic-gauge maps sharing P_(N,u)=T^N+T^3-2T^2+T+u admit the following family-relative adelic strengthening: whenever finitely many rank-N Q_p-algebras occur at local parameters of the pencil and a compatible real root chamber is nonempty, infinitely many connected rational common fibers realize all those local algebras and the real signature simultaneously. Hilbert irreducibility with weak approximation gives the general connected family; an auxiliary irreducible residue witness gives a constructive CRT version. Automatic parameter precision is 2*v_p(Disc(P_(N,u_p)))+1. In degree six, u=95231/69121 gives a common field of signature (2,2), with ramified local algebras at 2 and 3 and an unramified degree-six field at 5, shared by two fixed stably inequivalent determinant-one maps.",
+      "canonical_source": "verified/LOCALLY_PRESCRIBED_COMMON_FIBERS.md",
+      "dependencies": [
+        "CAF1",
+        "LGF1",
+        "external: Hilbert irreducibility with weak approximation"
+      ],
+      "checker": "scripts/verify_locally_prescribed_common_fibers.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:10ce2d3be43c369446bdb86d34202bf2ce502703138b11825392263b6c474a62",
       "software_lock": [
         ".python-version",
         "requirements.txt"
@@ -3344,6 +3425,56 @@
       "supersedes": [
         "separate real and modular fiber witnesses"
       ],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "LGF1",
+      "kind": "corollary",
+      "state": "proved",
+      "title": "Local-to-global synthesis for complete Keller fibers",
+      "scope": "For every N >= 3, arbitrary rank-N finite etale Q_p-algebras at finitely many primes, any degree-N real signature, and squarefree Frobenius partitions at finitely many further primes occur simultaneously in Q[T]/(P), subject only to equal-rank and overlapping-prime compatibility. For a monic p-integral local model f, the universal coefficient precision 2*v_p(Disc(f))+1 automatically preserves its full Q_p-algebra; an explicit prime-power CRT grid then constructs P, and an auxiliary modular N-cycle makes P irreducible when a field is required. The public quadratic-gauge compiler realizes Spec(Q[T]/(P)) as a complete fiber of an explicit determinant-one map A3_Q -> A3_Q of geometric degree N and coordinate degree at most 6N+2. Two exact quintic witnesses realize ramified local factors at 2 and 3, signature (1,2), inert prime 5, and splitting type (2,2,1) at 7: one uses fully automatic discriminant radii and one uses sharper factorwise radii.",
+      "canonical_source": "verified/LOCAL_GLOBAL_KELLER_FIBERS.md",
+      "dependencies": [
+        "RQG1",
+        "external: monogenicity of finite etale algebras over infinite fields",
+        "external: Hensel factor stability and Krasner lemma",
+        "external: classification of finite etale algebras by finite Galois sets",
+        "external: weak approximation on affine space"
+      ],
+      "checker": "scripts/verify_local_global_keller_fibers.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:afb72c5e00b2f2953f1a2a32459f9b8ab187a817a51f4e86fd33beb8f499c6bd",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "ALM1",
+      "kind": "corollary",
+      "state": "proved",
+      "title": "Adelic stable multiplicity for complete Keller fibers",
+      "scope": "For every N >= 4, every compatible finite package of rank-N Q_p-algebras, one real signature, and finitely many further unramified Frobenius partitions occurs in a connected complete fiber Spec(A) shared fiberwise by infinitely many stable polynomial left-right classes of determinant-one Keller maps over Q. The maps and marked targets vary, while the single finite etale algebra A and all of its prescribed local arithmetic remain fixed.",
+      "canonical_source": "verified/LOCAL_GLOBAL_KELLER_FIBERS.md",
+      "dependencies": [
+        "LGF1",
+        "UKFM1"
+      ],
+      "checker": null,
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": null,
+      "software_lock": [],
+      "supersedes": [],
       "replaced_by": [],
       "priority": "derived"
     },

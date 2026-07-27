@@ -10,45 +10,32 @@ The checker has four independent layers:
 """
 from __future__ import annotations
 
+from pathlib import Path
+import sys
+
 import sympy as sp
+
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT))
+
+from jcsearch.keller_fiber import (
+    jacobian_one_normalization,
+    quadratic_gauge_map as shared_quadratic_gauge_map,
+    total_coordinate_degrees as shared_total_coordinate_degrees,
+)
 
 x, y, z, S, ell = sp.symbols("x y z S ell")
 
 
 def quadratic_gauge_map(G: sp.Expr) -> tuple[sp.Expr, sp.Expr, sp.Expr]:
-    """Return the normalized determinant-minus-two gauge for a rooted G."""
-    poly = sp.Poly(sp.expand(G), S, domain=sp.QQ)
-    degree = poly.degree()
-    coeff = {k: poly.coeff_monomial(S**k) for k in range(1, degree + 1)}
-    g1 = coeff[1]
-    g3 = coeff[3]
-    assert g1 != 0 and g3 != 0 and coeff[degree] != 0
-
-    t = 1 + x * y
-    q = t**2 * z + (g1 / g3) * y**2 * (1 + 3 * t)
-    pi = t * q
-    b = y + 3 * (g3 / g1) * x * q + 2 * (coeff.get(2, 0) / g1) * t * q
-    c = x * (5 - 3 * t) - (g3 / g1) * x**3 * z
-    for k in range(4, degree + 1):
-        b += k * (coeff[k] / g1) * t**2 * x ** (k - 2) * q**k
-        c -= (k - 2) * (coeff[k] / g1) * (x * q) ** k
-    return tuple(sp.cancel(component) for component in (pi, b, c))
-
-
-def jacobian_one_normalization(
-    mapping: tuple[sp.Expr, sp.Expr, sp.Expr],
-) -> tuple[sp.Expr, sp.Expr, sp.Expr]:
-    """Apply the target-preserving normalization diag(1, -1/2, 1)."""
-    return (mapping[0], sp.cancel(-mapping[1] / 2), mapping[2])
+    """Compatibility wrapper for the shared quadratic-gauge compiler."""
+    return shared_quadratic_gauge_map(G, S, (x, y, z))
 
 
 def total_coordinate_degrees(
     mapping: tuple[sp.Expr, sp.Expr, sp.Expr],
 ) -> tuple[int, int, int]:
-    return tuple(
-        int(sp.Poly(sp.expand(component), x, y, z, domain=sp.QQ).total_degree())
-        for component in mapping
-    )
+    return shared_total_coordinate_degrees(mapping, (x, y, z))
 
 
 def quotient_reduce(expression: sp.Expr, modulus: sp.Expr) -> sp.Expr:

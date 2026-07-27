@@ -1,8 +1,8 @@
 # Lean formalization: finite étale Keller fibers
 
 This project formalizes the polynomial-presentation construction in
-*Prescribed Finite Étale Algebras as Full Fibers of Keller Maps with Symmetric
-Monodromy*. It uses Lean `v4.33.0-rc1` and Mathlib at the matching release
+*Every Finite Étale Algebra of Rank at Least Three Is a Full Keller Fiber*.
+It uses Lean `v4.33.0-rc1` and Mathlib at the matching release
 candidate.
 
 ## Proof status
@@ -307,18 +307,14 @@ is not part of this declaration.
 
 The actual map, determinant, geometric degree, effective degree, literal
 fiber, finite étaleness, quotient translation, naturality, coordinate
-algebraic independence, and explicit source-over-target function-field
-comparison are formalized. The paper now proves exact reduced nonproperness
-and boundary-sheet accounting separately. The remaining formalization tasks
-for paper-level theorems are:
+algebraic independence, explicit source-over-target function-field
+comparison, base change for supplied data, monogenicity, and the abstract
+finite-étale corollary are formalized. The remaining formal boundary of the
+focused paper is:
 
-1. formalize the exact nonproperness locus, boundary-sheet accounting, and
-   discriminant-order statements;
-2. formalize the symmetric-monodromy, stable-atomicity, and
-   Hilbertian-specialization arguments;
-3. formalize, or explicitly isolate as a classical theorem interface, the
+1. formalize, or explicitly isolate as a classical theorem interface, the
    Campbell--Razar--Wright degree-two Galois case;
-4. for the separate arithmetic development, formalize either the Chebotarev
+2. for the separate arithmetic development, formalize either the Chebotarev
    passage or the first-prime-moment theorem from the Dedekind-zeta Euler
    product if rank-minimality is to be machine-checked end to end.  The finite-group
    fixed-point lemma used after Chebotarev is now formalized as
@@ -333,10 +329,11 @@ for paper-level theorems are:
 
 The current certificates therefore prove the complete constructive,
 scheme-theoretic, and geometric-degree layers for both polynomial
-presentations and abstract finite étale algebras in characteristic zero,
-while keeping the separately proved nonproperness theorem, monodromy, the
-classical rank-two obstruction, and the analytic first-prime-moment
-extraction explicitly outside the Lean certificate.
+presentations and abstract finite étale algebras in characteristic zero.
+The classical rank-two obstruction and the analytic first-prime-moment
+extraction remain explicitly outside the Lean certificate. Nonproperness,
+monodromy, and stable atomicity are companion results outside the focused
+paper.
 
 ## Build
 

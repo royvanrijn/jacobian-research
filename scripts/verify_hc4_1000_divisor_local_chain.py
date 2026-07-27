@@ -19,18 +19,18 @@ third derivatives, in the order n3,n2,n1,n0, are
     -A*B*(3*C^2-2*f_aa*kappa)/(12*f_aa^3),
     -C*B*(C^2-2*f_aa*kappa)/(4*f_aa^3),
 
-all multiplying L^-3.  Therefore polynomial extendability requires either
-B=0, or A=0 together with C=0 or C^2=2*f_aa*kappa.
+all multiplying L^-3.  Considered alone, these residues require either
+B=0, or A=0 together with C=0 or C^2=2*f_aa*kappa.  Polynomiality of the
+already-forced normal Hessian is stronger: its residues require
 
-On the characteristic branch B=0, the next two Laurent numerators of n3
-factor as A^2*H1 and A*h_a*H2.  Thus its A != 0 part additionally requires
-H1=0 and h_a*H2=0.
+    A=0,  C^2=2*f_aa*kappa.
 
-On A=C=0, the remaining two pole coefficients of n1 and n0 are nonzero
-scalar multiples of kappa*J1, kappa*J2, kappa*J3, and kappa*J4.  Since the
-Keller constant kappa is nonzero, this subbranch requires all four J's to
-vanish.  Mixed-derivative compatibility then reduces J1 and J3 to multiples
-of h_a*E and (2*g_a-1)*E for one common expression E.
+Only this unique branch is therefore relevant for a polynomial potential.
+
+On A=0 and C^2=2*f_aa*kappa, the remaining Laurent numerators are four
+explicit expressions K1,...,K4.  They admit derivative identities that
+show, componentwise, that h_a != 0 forces a double divisibility p^2 | A
+on every reduced irreducible caustic component p.
 """
 
 from __future__ import annotations
@@ -345,6 +345,160 @@ assert (
     == 0
 )
 
+K1 = (
+    2 * f_aa**3 * data["h_bb"]
+    - f_aa**3
+    - 4 * f_aa**2 * f_ab * data["h_ab"]
+    - 2 * f_aa**2 * data["f_abb"] * data["h_a"]
+    + 4 * f_aa * data["f_aab"] * f_ab * data["h_a"]
+    + 2 * f_aa * f_ab**2 * data["h_aa"]
+    - 2 * data["f_aaa"] * f_ab**2 * data["h_a"]
+)
+K2 = (
+    4 * b**3 * f_aa**2 * data["h_aa"]
+    + 8 * b**3 * f_aa * data["f_aaa"] * data["h_a"]
+    - 12 * f_aa**2 * data["g_a"] * data["h_ab"]
+    - 12 * f_aa**2 * data["g_ab"] * data["h_a"]
+    - 2 * f_aa**2 * data["g_b"] * data["h_aa"]
+    + 6 * f_aa**2 * data["h_ab"]
+    - 4 * f_aa * data["f_aaa"] * data["g_b"] * data["h_a"]
+    + 24 * f_aa * data["f_aab"] * data["g_a"] * data["h_a"]
+    - 12 * f_aa * data["f_aab"] * data["h_a"]
+    + 14 * f_aa * f_ab * data["g_a"] * data["h_aa"]
+    + 12 * f_aa * f_ab * data["g_aa"] * data["h_a"]
+    - 7 * f_aa * f_ab * data["h_aa"]
+    - 20 * data["f_aaa"] * f_ab * data["g_a"] * data["h_a"]
+    + 10 * data["f_aaa"] * f_ab * data["h_a"]
+)
+K3 = (
+    4 * b**3 * f_aa**2 * data["f_aab"]
+    - 4 * b**3 * f_aa * data["f_aaa"] * f_ab
+    + 24 * b**2 * f_aa**3
+    - 4 * f_aa**3 * data["g_bb"]
+    - 2 * f_aa**2 * data["f_aab"] * data["g_b"]
+    + 8 * f_aa**2 * f_ab * data["g_ab"]
+    + 4 * f_aa**2 * data["f_abb"] * data["g_a"]
+    - 2 * f_aa**2 * data["f_abb"]
+    + 2 * f_aa * data["f_aaa"] * f_ab * data["g_b"]
+    - 6 * f_aa * data["f_aab"] * f_ab * data["g_a"]
+    + 3 * f_aa * data["f_aab"] * f_ab
+    - 4 * f_aa * f_ab**2 * data["g_aa"]
+    + 2 * data["f_aaa"] * f_ab**2 * data["g_a"]
+    - data["f_aaa"] * f_ab**2
+)
+K4 = (
+    84 * b**4 * f_aa**3
+    - 32 * b**3 * f_aa**2 * data["g_aa"]
+    - 64 * b**3 * f_aa * data["f_aaa"] * data["g_a"]
+    + 32 * b**3 * f_aa * data["f_aaa"]
+    - 42 * b * f_aa**3 * data["g_b"]
+    + 42 * b * f_aa**2 * f_ab * data["g_a"]
+    - 21 * b * f_aa**2 * f_ab
+    + 96 * f_aa**2 * data["g_a"] * data["g_ab"]
+    + 16 * f_aa**2 * data["g_aa"] * data["g_b"]
+    - 48 * f_aa**2 * data["g_ab"]
+    + 32 * f_aa * data["f_aaa"] * data["g_a"] * data["g_b"]
+    - 16 * f_aa * data["f_aaa"] * data["g_b"]
+    - 96 * f_aa * data["f_aab"] * data["g_a"] ** 2
+    + 96 * f_aa * data["f_aab"] * data["g_a"]
+    - 24 * f_aa * data["f_aab"]
+    - 112 * f_aa * f_ab * data["g_a"] * data["g_aa"]
+    + 56 * f_aa * f_ab * data["g_aa"]
+    + 64 * data["f_aaa"] * f_ab * data["g_a"] ** 2
+    - 64 * data["f_aaa"] * f_ab * data["g_a"]
+    + 16 * data["f_aaa"] * f_ab
+)
+quadratic_C_substitution = A_substitution | {kappa: C**2 / (2 * f_aa)}
+assert (
+    sp.factor(
+        series["N1"][9].subs(quadratic_C_substitution)
+        - 108716359680000 * C**2 * K1 / f_aa**3
+    )
+    == 0
+)
+assert (
+    sp.factor(
+        series["N1"][10].subs(quadratic_C_substitution)
+        + 54358179840000 * C * K2 / f_aa**3
+    )
+    == 0
+)
+assert (
+    sp.factor(
+        series["N0"][13].subs(quadratic_C_substitution)
+        + 56358560858112000000 * C**2 * K3 / f_aa**3
+    )
+    == 0
+)
+assert (
+    sp.factor(
+        series["N0"][14].subs(quadratic_C_substitution)
+        - 7044820107264000000 * C * K4 / f_aa**3
+    )
+    == 0
+)
+
+A_a = data["total_derivative"](A, data["tangential_a"]).subs(A_substitution)
+A_b = data["total_derivative"](A, data["tangential_b"]).subs(A_substitution)
+C_a = data["total_derivative"](C, data["tangential_a"])
+C_b = data["total_derivative"](C, data["tangential_b"])
+S_a = 2 * f_aa * C_a - C * data["f_aaa"]
+S_b = 2 * f_aa * C_b - C * data["f_aab"]
+R = (
+    21 * b * f_aa**2
+    - 8 * f_aa * data["g_aa"]
+    + 8 * data["f_aaa"] * data["g_a"]
+    - 4 * data["f_aaa"]
+)
+assert sp.factor(H2 + f_aa * A_a / 2) == 0
+assert sp.factor(K1 + f_aa**2 * A_b + 2 * f_ab * H2) == 0
+assert (
+    sp.factor(
+        K2
+        - C * (f_aa * data["h_aa"] - data["f_aaa"] * data["h_a"])
+        + 6 * (2 * data["g_a"] - 1) * H2
+        - 3 * data["h_a"] * S_a
+    )
+    == 0
+)
+assert sp.factor(K3 - f_aa * S_b + f_ab * S_a) == 0
+assert (
+    sp.factor(K4 - C * R + 12 * (2 * data["g_a"] - 1) * S_a)
+    == 0
+)
+
+line_slope = sp.symbols("line_slope")
+line_h_substitution = {
+    data["h_a"]: 0,
+    data["h_ab"]: -line_slope * data["h_aa"],
+    data["h_bb"]: sp.Rational(1, 2)
+    + line_slope**2 * data["h_aa"],
+}
+line_characteristic = f_aa * line_slope + f_ab
+assert (
+    sp.factor(
+        H2.subs(line_h_substitution)
+        + f_aa * line_characteristic * data["h_aa"]
+    )
+    == 0
+)
+assert (
+    sp.factor(
+        K1.subs(line_h_substitution)
+        - 2 * f_aa * line_characteristic**2 * data["h_aa"]
+    )
+    == 0
+)
+assert (
+    sp.factor(
+        K2.subs(line_h_substitution)
+        - f_aa
+        * data["h_aa"]
+        * (C + 6 * (2 * data["g_a"] - 1) * line_characteristic)
+    )
+    == 0
+)
+
 E = (
     f_aa**2 * data["f_abb"]
     - 2 * f_aa * f_ab * data["f_aab"]
@@ -413,12 +567,13 @@ def main() -> None:
     print("PASS: all four forced normal third derivatives have pole order at most 3")
     print("PASS: their leading numerators are A^3*B, A^2*C*B,")
     print("      A*B*(3*C^2-2*f_aa*kappa), C*B*(C^2-2*f_aa*kappa)")
-    print("RESULT: polynomiality requires B=0, or")
-    print("        A=0 and (C=0 or C^2=2*f_aa*kappa)")
+    print("RESULT: normal-Hessian polynomiality leaves only")
+    print("        A=0 and C^2=2*f_aa*kappa")
     print("PASS: B is f_aa times the kernel derivative of L modulo L")
     print("PASS: on B=0, the next n3 numerators are A^2*H1 and A*h_a*H2")
-    print("PASS: on A=C=0, the remaining pole numerators force J1=J2=J3=J4=0")
-    print("PASS: mixed compatibility reduces this to h_a*E=(2*g_a-1)*E=0")
+    print("PASS: on A=0, C^2=2*f_aa*kappa the four later poles are K1,...,K4")
+    print("PASS: K1,...,K4 are derivative identities in A and C^2/f_aa")
+    print("PASS: the h_a=0 line branch forces h_aa=h_ab=0 and h_bb=1/2")
     print("SCOPE: these are necessary divisor-local conditions, not inconsistency")
 
 

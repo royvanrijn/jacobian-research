@@ -20,6 +20,7 @@ ALL_PAPERS := $(VERIFIED_PAPERS) $(PARKED_PAPERS)
 	verify-master \
 	verify-quartic verify-normal-forms verify-formal verify-lean-foundational \
 	verify-foundations verify-foundations-formal \
+	verify-gq2-local-fibers \
 	verify-coincident-root-loci verify-papers verify-ritt-boundary \
 	verify-ritt-2-complex verify-ll-ritt-reduction verify-ritt-deformation-complex \
 	verify-degree42-ritt-relative-cone \
@@ -47,6 +48,14 @@ check:
 	$(PYTHON) -m compileall -q jcsearch scripts
 	$(PYTHON) scripts/check_markdown_links.py
 	$(PYTHON) scripts/audit_status.py
+
+verify-gq2-local-fibers:
+	$(SYSTEM_PYTHON) scripts/verify_gq2_permutation_action.py arithmetic/certificates/gq2_s3_x3_minus_2.json
+	$(SYSTEM_PYTHON) scripts/verify_gq2_permutation_action.py arithmetic/certificates/gq2_s4_mixed_action.json
+	$(PYTHON) scripts/verify_gq2_action_first_keller.py
+	$(PYTHON) scripts/verify_gq2_s4_quartic_keller.py
+	gp -q scripts/verify_gq2_s4_local_models.gp
+	gp -q scripts/verify_gq2_local_decompositions.gp
 
 render-status:
 	$(SYSTEM_PYTHON) scripts/render_status.py

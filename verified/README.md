@@ -71,6 +71,20 @@ This directory contains the stable proof chain:
   approximation combines any allowed real signature with finitely many
   squarefree local splitting types; one local `N`-cycle gives a complete
   degree-`N` fiber field.
+- [Local-to-global Keller fibers](LOCAL_GLOBAL_KELLER_FIBERS.md): arbitrary
+  finite étale `Q_p`-algebras, including ramified ones, are combined with a
+  real signature and further Frobenius types by coefficient CRT and then
+  compiled into a complete determinant-one Keller fiber.  The explicit
+  quintic certificate prescribes ramified local factors at both `2` and `3`;
+  a universal `2*v_p(Disc)+1` coefficient radius makes the local
+  certification automatic.  Reusable arithmetic and Keller compilers provide
+  the exact end-to-end construction.  In every rank at least four, the
+  resulting fixed fiber algebra occurs in infinitely many stable map classes.
+- [Locally prescribed common fibers](LOCALLY_PRESCRIBED_COMMON_FIBERS.md):
+  two fixed stably inequivalent determinant-one maps share infinitely many
+  connected fibers with any family-compatible finite collection of local
+  algebras and one real signature.  An explicit sextic common field has
+  ramified completions at `2` and `3`, signature `(2,2)`, and is inert at `5`.
 - [Hasse-principle failure for a Keller fiber](HASSE_PRINCIPLE_KELLER_FIBER.md):
   an explicit degree-eight complete regular fiber has points over `R` and
   every `Q_p`, but no rational point.

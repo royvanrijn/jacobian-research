@@ -13,7 +13,7 @@ and an infinite set of rational targets \(y_\ell\), indexed by the rational
 primes
 
 \[
- \ell\equiv1\pmod {27},
+ \ell\equiv1\pmod 9,
 \]
 
 such that every complete fiber \(F^{-1}(y_\ell)\) is a reduced scheme of
@@ -146,14 +146,21 @@ and prove \(F^{-1}(y_\ell)(\mathbb Q)=\varnothing\).
 
 ## 4. Local solubility
 
-Let \(\ell\equiv1\pmod {27}\) be prime.  We prove that (3.4) has a root in
+Let \(\ell\equiv1\pmod 9\) be prime.  We prove that (3.4) has a root in
 every completion.
 
 * Over \(\mathbb R\), the cubic \(X^3-\ell\) has a root.
 * Over \(\mathbb Q_2\), \(X^3-\ell\) has a root by Hensel's lemma: modulo
   \(2\), \(X=1\) is a root and the derivative \(3X^2\) is a unit.
-* Over \(\mathbb Q_3\), apply the strong form of Hensel's lemma at \(X=1\).
-  Since \(v_3(1-\ell)\ge3>2v_3(3)\), the cubic has a root.
+* Over \(\mathbb Q_3\), write \(\ell=1+9k\) and seek a root
+  \(X=1+3T\).  Then
+  \[
+   X^3-\ell=9h(T),\qquad
+   h(T)=T+3T^2+3T^3-k.
+  \]
+  Modulo \(3\), one has \(h(T)\equiv T-k\) and
+  \(h'(T)=1+6T+9T^2\equiv1\).  Thus the root \(T\equiv k\pmod3\)
+  lifts uniquely by Hensel's lemma.
 * Let \(p\ne2,3,\ell\).  If \(p\equiv1\pmod3\), then
   \(X^2+X+1\) has two simple roots modulo \(p\), hence a root in
   \(\mathbb Q_p\).  If \(p\equiv2\pmod3\), cubing is a bijection of
@@ -163,8 +170,9 @@ every completion.
   \(X^2+X+1\) split with distinct roots modulo \(\ell\), so it has a root
   in \(\mathbb Q_\ell\).
 
-This covers every place.  Dirichlet's theorem supplies infinitely many
-primes \(\ell\equiv1\pmod {27}\), and the targets (3.2) are pairwise
+This covers every place.  Apart from the \(\mathbb Q_3\) step, the argument
+uses only \(\ell\equiv1\pmod3\).  Dirichlet's theorem supplies infinitely
+many primes \(\ell\equiv1\pmod 9\), and the targets (3.2) are pairwise
 distinct.  The theorem follows.
 
 ## 5. Height asymptotics
@@ -176,7 +184,7 @@ obtained from the embedding
  (P,B,C)\longmapsto[1:P:B:C]\in\mathbb P^3.
 \]
 
-For \(\ell\equiv1\pmod {27}\), the target (3.2) has primitive integral
+For \(\ell\equiv1\pmod 9\), the target (3.2) has primitive integral
 coordinates
 
 \[
@@ -195,9 +203,9 @@ family with height at most \(B\), then
 \[
 \begin{aligned}
 N_{\rm HP}(B)
- &=\pi(B/32;27,1)\\
- &\sim \frac1{\varphi(27)}\frac{B/32}{\log(B/32)}
- \sim\boxed{\frac{B}{576\log B}}. \tag{5.1}
+ &=\pi(B/32;9,1)\\
+ &\sim \frac1{\varphi(9)}\frac{B/32}{\log(B/32)}
+ \sim\boxed{\frac{B}{192\log B}}. \tag{5.1}
 \end{aligned}
 \]
 
@@ -205,6 +213,15 @@ Thus the construction gives not only infinitude but an exact
 prime-progression counting problem and an unconditional height asymptotic.
 It is a lower bound for the total number of Hasse-failing targets of the
 fixed map, not an asymptotic for that larger set.
+
+The smallest prime in the progression is the classical value \(\ell=19\).
+Its target has primitive projective coordinates
+
+\[
+ [9:9:608:459],
+\]
+
+and hence height \(608\).
 
 ## 6. An exceptional finite-field line
 
@@ -266,4 +283,3 @@ The exact symbolic replay is
 * J. Sonn,
   [*Polynomials with roots in \(\mathbb Q_p\) for all \(p\)*](https://arxiv.org/abs/math/0612528),
   Proc. Amer. Math. Soc. **136** (2008), 1955--1960.
-

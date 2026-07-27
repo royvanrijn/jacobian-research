@@ -27,6 +27,16 @@ base-change isomorphism for a polynomial quotient, combined with
 Theorem~\ref{thm:polynomial-realization}.
 \end{proof}
 
+\begin{remark}[Supplied data versus automatic choices]\label{rem:base-change-choice}
+Proposition~\ref{prop:base-change} fixes the presentation \(P\) and
+translation \(a\).  The passage from an abstract finite \'etale algebra to a
+primitive element, its squarefree minimal polynomial, and an admissible
+translation is noncanonical.  Lean implements these existence choices using
+classical choice.  Thus the supplied \((P,a)\)-construction commutes with
+scalar extension, but no functorial automatically chosen realization is
+asserted.
+\end{remark}
+
 \begin{corollary}[Number fields as connected full Keller fibers]\label{cor:fields}
 Every finite separable field extension \(L/K\) of degree at least three
 occurs as a connected full Keller fiber of a Jacobian-one polynomial map

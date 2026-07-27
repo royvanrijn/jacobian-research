@@ -20,6 +20,15 @@ Singular, and saturates by the common constant term.
 The final certificates use direct ``slimgb`` reduction over Q.  Prime-field
 runs remain available as screens, but are explicitly not reported as
 characteristic-zero proofs.
+
+For the irreducible characteristic caustic branch in chart 1000, the checker
+can either impose the five coefficients of
+
+    det Hess(V_4(a,b,0,b)) = 0
+
+or cover the resulting rational normal curve by either pure-power chart.
+The latter eliminates five quartic coefficients before determinant
+construction.
 """
 
 from __future__ import annotations
@@ -169,6 +178,30 @@ def chart_1000_pure_power_substitution(
             - coefficients[12]
         ),
     }
+    boundary_coefficients = (
+        coefficients[34],
+        coefficients[31] + coefficients[33],
+        coefficients[25] + coefficients[28] + coefficients[30],
+        (
+            coefficients[15]
+            + coefficients[19]
+            + coefficients[22]
+            + coefficients[24]
+        ),
+        (
+            coefficients[0]
+            + coefficients[5]
+            + coefficients[9]
+            + coefficients[12]
+            + coefficients[14]
+        ),
+    )
+    assert all(
+        sp.factor(coefficient.subs(substitution) - expected) == 0
+        for coefficient, expected in zip(
+            boundary_coefficients, binary_coefficients, strict=True
+        )
+    )
     return substitution, pivots, (top_lambda, top_slope)
 
 

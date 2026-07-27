@@ -57,6 +57,7 @@ remain as a regression:
 .venv/bin/python scripts/verify_degree_twelve_wreath_elimination.py
 .venv/bin/python scripts/verify_all_degree_rational_fibers.py
 .venv/bin/python scripts/verify_common_arithmetic_fibers.py
+.venv/bin/python scripts/verify_locally_prescribed_common_fibers.py
 .venv/bin/python scripts/search_cross_family_collision.py
 .venv/bin/python scripts/verify_universal_quartic_fiber_multiplicity.py
 .venv/bin/python scripts/verify_universal_quintic_fiber_multiplicity.py
@@ -65,6 +66,7 @@ remain as a regression:
 .venv/bin/python scripts/verify_low_rank_multiplicity_boundaries.py
 .venv/bin/python scripts/verify_real_fiber_spectrum.py
 .venv/bin/python scripts/verify_adelic_fiber_engineering.py
+.venv/bin/python scripts/verify_local_global_keller_fibers.py
 .venv/bin/python scripts/verify_hasse_keller_fiber.py
 .venv/bin/python scripts/verify_fixed_quintic_arithmetic_zoo.py
 .venv/bin/python scripts/verify_stratified_adelic_engineering.py
@@ -78,6 +80,23 @@ reduces the pulled-back cubic discriminant modulo the quartic inverse
 equation, factors the saturated resultant as `C^8 Q` with `Q` irreducible
 of exponent one, separates the other boundary image, and certifies
 `Mon(F_4 o F_3)=S_3 wr S_4`.
+
+The local-to-global checker audits the ramified quintic coefficient CRT:
+the prescribed algebras at `2` and `3`, signature `(1,2)`, cycle types `(5)`
+at `5` and `(2,2,1)` at `7`, and the determinant-one quadratic-gauge
+compilation with complete target `(1,0,-98/809)`.  It first reconstructs the
+polynomial through the generic prime-power coefficient synthesizer in
+`jcsearch.local_global`, including its common denominator `1261`, and then
+feeds it through the shared end-to-end compiler in `jcsearch.keller_fiber`.
+It also derives the universal radii `2^5` and `3^3` from the two local
+discriminants and reconstructs the fully automatic witness with common
+denominator `30241`.
+
+The locally prescribed common-fiber checker keeps both maps fixed.  It
+derives parameter radii `2^9`, `3^3`, and `5`, constructs
+`u=95231/69121`, verifies the ramified completions at `2` and `3`, proves
+inertness at `5` and signature `(2,2)`, and checks both transported common
+targets.
 
 The common-fiber checker synthesizes the arithmetic transfer and stable
 boundary results.  It verifies the fixed all-degree pair over `Q`, the
@@ -141,6 +160,47 @@ The clean Hasse row has normalized polynomial
 original `Q(sqrt(-3))` row remains an independent regression and supplies
 the `Q_5` trace obstruction to the standard pure-cubic infinitude route.
 Infinitude inside this particular split-seed pencil remains open.
+
+The local `Q_2` action-certificate branch has a separate three-layer replay:
+
+```bash
+python3 scripts/verify_gq2_permutation_action.py \
+  arithmetic/certificates/gq2_s3_x3_minus_2.json --json
+python3 scripts/verify_gq2_permutation_action.py \
+  arithmetic/certificates/gq2_s4_mixed_action.json --json
+.venv/bin/python scripts/verify_gq2_action_first_keller.py
+.venv/bin/python scripts/verify_gq2_s4_quartic_keller.py
+gp -q scripts/verify_gq2_s4_local_models.gp
+gp -q scripts/verify_gq2_local_decompositions.gp
+```
+
+The first command is dependency-free and evaluates the exact Roe--Turturean
+word ledger, including the finite `omega_2` powers and the normal 2-core
+condition.  Its named comparison proves that the marked `S_3` action is the
+splitting action of the tame Eisenstein cubic `T^3-2` over `Q_2`.  The second
+command translates that polynomial into the degree-three quadratic-gauge
+formula, verifies determinant one after output scaling, and checks the complete
+inverse polynomial `(S+1)^3-2`.  The mixed `S_4` checker enumerates the three
+marked `x_0` orbits over the fixed tame frame, evaluates the candidate
+quadratic obstruction as `(1,0,0)`, and compiles
+`T^4+4T^2-4T+2` into a determinant-one complete quartic fiber.  The first
+PARI/GP command proves that the three classified local quartics have closure
+group `S_4`, inertia `A_4`, wild inertia `V_4`, the displayed exact
+ramification groups, and normalized relative Stiefel--Whitney bits `(0,0,1)`.
+It also verifies the three resolvent Kummer square classes and their sole
+product relation over the tame `S_3` closure.  The unique nonzero obstruction
+therefore matches the worked `x_0=(12)(34)` orbit to
+`T^4+4T^2-4T+2`; the other two orbits remain unordered.  The final PARI/GP
+command recomputes exact
+ramification-index/residue-degree decompositions at `2` for the selected
+quartics, all ten fixed-quintic zoo rows, and the separate quintic witness
+card.  It uses maximal-order prime-ideal decomposition rather than bounded
+`2`-adic precision.  The checked-in table was last recomputed with PARI/GP
+2.17.4 on arm64 Darwin (GMP 6.3.0).  The combined target is:
+
+```bash
+make verify-gq2-local-fibers
+```
 
 The height-`21` five-row witness card and its separate bounded discovery
 audit are reproduced by

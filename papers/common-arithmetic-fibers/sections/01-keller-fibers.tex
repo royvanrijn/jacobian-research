@@ -147,23 +147,7 @@ avoids the finite zero set of \(P'P'''\).  Apply
 Theorem~\ref{thm:polynomial-realization}.
 \end{proof}
 
-\begin{lemma}[Degree two is impossible]\label{lem:degree-two}
-Let \(K\) be a field of characteristic zero and let
-\(F:\A^m_K\to\A^m_K\) be a Keller map.  Then
-\[
- [K(X_1,\ldots,X_m):K(F_1,\ldots,F_m)]\neq2.
-\]
-\end{lemma}
-
-\begin{proof}
-A separable quadratic extension is Galois, so this is the classical Galois
-case of the Jacobian theorem due to Campbell, Razar, and Wright
-\cite{Campbell,Razar,Wright}.  Appendix~\ref{app:degree-two} records the
-scalar-extension and descent argument needed to pass from the usual complex
-statement to an arbitrary characteristic-zero field.
-\end{proof}
-
-\begin{corollary}[Classification of full Keller fibers]
+\begin{corollary}[Rank classification, using the classical Galois case]
 \label{cor:rank-classification}
 Let \(X\) be a finite \(K\)-scheme of positive rank \(N\).  Then \(X\) is
 isomorphic to a full Keller fiber of a geometric-degree-\(N\) Keller map
@@ -179,31 +163,19 @@ possible nonzero ranks of full Keller fibers in \(\A^3_K\) are exactly
 
 \begin{proof}
 Every Keller fiber is finite \'etale.  If it is a full Keller fiber of rank
-\(N\), its map has geometric degree \(N\), so
-Lemma~\ref{lem:degree-two} excludes \(N=2\).  Conversely, the identity
+\(N\), its map has geometric degree \(N\).  A degree-two function-field
+extension in characteristic zero is Galois, so the classical Galois case of
+the Jacobian theorem excludes \(N=2\)
+\cite{Campbell,Razar,Wright}.  For completeness, the usual complex statement
+applies over an arbitrary characteristic-zero field by spreading out the
+finitely many coefficients, observing that generic degree is preserved by
+scalar extension, embedding the coefficient field in \(\mathbb C\), and
+descending the polynomial inverse by faithful flatness.  Conversely, the identity
 realizes every rank-one finite \'etale \(K\)-scheme, namely \(\Spec K\), and
 Corollary~\ref{cor:finite-etale-realization} realizes every finite \'etale
 scheme of rank \(N\geq3\) as a full Keller fiber.  Empty and shorter special
 fibers are Keller fibers, but they are not full Keller fibers and hence do
 not alter the rank list.
 \end{proof}
-
-\begin{remark}[Categorical reformulation]
-For \(N\geq1\), let \(\mathsf{FullFib}_{3,N}(K)\) be the replete full
-subcategory of finite \(K\)-schemes whose objects are isomorphic to full
-Keller fibers of geometric-degree-\(N\) maps in \(\A^3_K\), and let
-\(\mathsf{FinEt}^{\,N}_K\) be the full subcategory of rank-\(N\) finite
-\'etale \(K\)-schemes.  The corollary is equivalently
-\[
- \mathsf{FullFib}_{3,N}(K)=
- \begin{cases}
-  \mathsf{FinEt}^{\,N}_K,&N=1\text{ or }N\geq3,\\
-  \varnothing,&N=2.
- \end{cases}
-\]
-This essential image remembers the resulting fiber scheme, not a chosen
-map--target pair \((F,y)\); different pairs may realize the same object.
-On coordinate algebras the statement is contravariant under \(\Spec\).
-\end{remark}
 
 \input{sections/03-realization}

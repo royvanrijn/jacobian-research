@@ -225,7 +225,7 @@ After \(X=S-\tfrac12\), this is the classical intersective family
 (X^3-a)(X^2+X+1).
 \]
 
-For every rational prime \(a=\ell\equiv1\pmod {27}\), the polynomial is
+For every rational prime \(a=\ell\equiv1\pmod 9\), the polynomial is
 squarefree and has no rational root, but has a root in every
 \(\mathbb Q_p\) and in \(\mathbb R\).  Dirichlet's theorem supplies
 infinitely many such primes.  Hence one fixed Keller map has infinitely many
@@ -235,9 +235,18 @@ the constructed family therefore satisfies the quantitative asymptotic
 
 \[
 \#\{y_\ell:H(y_\ell)\le B\}
-=\pi(B/32;27,1)
-\sim\frac{B}{576\log B}.
+=\pi(B/32;9,1)
+\sim\frac{B}{192\log B}.
 \]
+
+At \(p=3\), write \(\ell=1+9k\) and \(X=1+3T\).  The cubic equation becomes
+\[
+ X^3-\ell=9(T+3T^2+3T^3-k),
+\]
+whose parenthesized factor is congruent to \(T-k\) modulo \(3\) and has
+derivative congruent to \(1\).  Hensel's lemma therefore applies under the
+modulo-\(9\) hypothesis.  The smallest prime example is \(\ell=19\), with
+primitive target coordinates \([9:9:608:459]\) and height \(608\).
 
 At every good finite-field prime, the same target line is almost entirely
 contained in the image: the fixed quadratic splits when \(p\equiv1\bmod3\),

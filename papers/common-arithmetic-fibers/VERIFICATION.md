@@ -1,8 +1,8 @@
 # Verification matrix
 
-This file records the proof layer for every load-bearing claim and every
-separately stated appendix theorem in *Prescribed Finite Étale Algebras as
-Full Fibers of Keller Maps with Symmetric Monodromy*.  “Lean” means a theorem in the pinned
+This file records the proof layer for every load-bearing claim in
+*Every Finite Étale Algebra of Rank at Least Three Is a Full Keller Fiber*.
+“Lean” means a theorem in the pinned
 `formal/finite-etale-keller` project with no `sorry` and no project-specific
 axiom.  Symbolic checks are exact independent audits, not substitutes for the
 corresponding mathematical argument.
@@ -27,14 +27,10 @@ corresponding mathematical argument.
 | Final coordinate-degree bound `6N+2` in terms of `N = deg P` | Polynomial realization theorem and effective normalization corollary | `GeneralGaugeDegree.lean`, `GeneralGaugeRealizationDegree.lean` | Structural termwise audit; Singular degree-six profile |
 | Irreducibility and degree `N` of the fully independent inverse equation over the iterated target field `K(Π,B)(C)` | General localized quadratic-gauge fiber theorem, primitive linear-parameter argument | `GenericInverseIrreducibility.lean` proves the fixed-`π,b` engine; `GeneralGaugeFullGenericDegree.lean` promotes `Π,B` to independent parameters and proves `generalGaugeFullyGenericInversePolynomial_certificate` and `generalGaugeFullyGenericInverseAdjoinRoot_finrank` | Exact polynomial-variable swap and Mathlib Gauss lemma; concrete degree 3–5 regressions |
 | Function-field reconstruction and geometric degree `N` | General localized quadratic-gauge fiber theorem: explicit equality `K(x,y,z)=K(Π,B,C)(S)` followed by inverse-polynomial irreducibility | Complete for the polynomial-presentation map: `GeneralGaugeFunctionField.lean` proves algebraic independence and injective pullback; `GeneralGaugeFunctionFieldComparison.lean` constructs `generalGaugeSourceFunctionFieldComparison : K(x,y,z) ≃ K(Π,B)(C)[S]/(E)` over the actual target embedding and proves `generalGaugeGeometricDegree_eq`; `PageOneTheorem.lean` transports the result to the determinant-one realization | Independent rational reconstruction in the paper |
-| Geometric and arithmetic generic monodromy are `S_N` for every admissible seed | Morse-slice lemma, the standalone ordered-root-cover specialization lemma, and full symmetric generic monodromy theorem | Not formalized | Exact `dC/dB=-r^2` audit in `verify_root_engineered_quadratic_gauge.py`; Serre's Morse-polynomial theorem |
-| Every realization map is absolutely and stably compositionally indecomposable | Primitive-monodromy atomicity corollary: no intermediate generic field, Keller factors by the chain rule, and degree-one Keller maps are automorphisms | Not formalized | `verified/PRIMITIVE_MONODROMY_ATOMICITY.md`; the degree-twelve composite-degree certificate is separate |
-| Infinitely many connected full Keller fibers with splitting-field group `S_N` over a Hilbertian field | Hilbertian specialization corollary, including the arithmetic/geometric equality and regularity argument | Not formalized | Hilbert irreducibility |
 | Every finite étale algebra over an infinite field is monogenic | Monogenicity lemma, used only in the finite-étale realization corollary | `AbstractFiniteEtale.lean` proves the characteristic-zero case needed here, constructs `finiteEtalePresentation`, and composes it with the polynomial certificate in `abstractFiniteEtale_pageOne` | Paper's discriminant/Vandermonde proof; Lean uses translated primitive elements with distinct traces and the Chinese remainder theorem |
-| No characteristic-zero Keller map has generic degree two | Degree-two lemma; full descent proof in Appendix B | Not formalized | Campbell's unnumbered theorem on p. 244 (normal complex function-field extension), scalar-invariance of generic rank on a finite-locally-free open, quadratic separability/normality, and faithfully flat descent; Razar and Wright are cited as later algebraic treatments |
+| No characteristic-zero Keller map has generic degree two | Rank-classification corollary, explicitly separated from the constructive theorem | Not formalized | Campbell's unnumbered theorem on p. 244 (normal complex function-field extension), scalar-invariance of generic rank under extension, quadratic separability/normality, and faithfully flat descent; Razar and Wright are cited as later algebraic treatments |
 | Compatibility of the realization with extension of the ground field | Base-change proposition in Section 4 | `GeneralGaugeBaseChange.lean` proves coefficientwise compatibility of translation, the full supplied-parameter map, normalization, admissibility, squarefreeness, and distinguished target, together with `L ⊗[K] AdjoinRoot P ≃ₐ[L] AdjoinRoot (P.map f)` | Coefficientwise paper proof |
-| Exact reduced nonproperness locus `S_F = V_red(Disc_S E)` over every algebraically closed characteristic-zero field | Appendix D, exact reduced quadratic-gauge nonproperness theorem: graph-boundary definition, fiber-cardinality criterion, localized fibers, and complete `Π=0` table | Not formalized; explicitly listed in the remaining formal boundary | Jelonek Proposition 6 is stated over `ℂ`; the paper supplies descent to a finitely generated field, embedding into `ℂ`, and graph-boundary/fiber base-change invariance |
-| Complete `Π=0` fiber table and exact global discriminant factor `Π^(N²-3N-2)` for `N ≥ 4` | Appendix D: direct `q=0` and `t=0` source charts; standalone exact-order lemma with all three residual polynomials, a root-pair valuation ledger, and the first nonzero coefficient in `K[B,C][Π]` | Not formalized | `verify_quadratic_gauge_nonproperness.py` checks the charts, exact orders and saturated-slice coefficients through degree ten, and the Newton ledger through degree 64 |
+| Explicit Berend--Bilu quintic Hasse fiber | Explicit arithmetic example: displayed map, target, quotient, and local/global root audit | `ExplicitFiber.lean` and `ExplicitAllPadicPoints.lean`; endpoint `integralFiberPoint_hasse_certificate` | `verify_finite_etale_keller_fibers.py` |
 
 ## Independent exact audits rerun
 
@@ -49,18 +45,13 @@ The following independent commands were rerun successfully on 27 July 2026:
   through degree twelve;
 - `verify_finite_etale_keller_fibers.py`: degrees three through five,
   with quotient-ring reconstruction in both directions;
-- `verify_quadratic_gauge_nonproperness.py`: the cubic and quartic
-  discriminant specializations, direct `q=0` and `t=0` charts, exact
-  discriminant orders and saturated-slice coefficients through degree ten,
-  and the Newton ledger through degree 64; and
 - `verify_universal_quadratic_gauge.sing`: a fresh expansion of the generic
   degree-six Jacobian over a rational function field in six independent
   coefficients, together with the `(7,38,36)` degree profile.
 
 These are exact symbolic computations from implementations independent of the
 Lean development. They audit the displayed algebra but do not replace the
-ordinary proofs of nonproperness, monodromy, Hilbert
-specialization, stable atomicity, or degree two.
+ordinary proof of the classical degree-two interface.
 
 ## Formal theorem now obtained
 
@@ -114,16 +105,15 @@ representing quotient.
 
 ## Remaining formal boundary
 
-The polynomial realization theorem is now formalized end to end, including
-actual geometric degree.  Monogenicity and its composition with that theorem
+The polynomial realization theorem is formalized end to end, including
+actual geometric degree. Monogenicity and its composition with that theorem
 are also formalized in characteristic zero, yielding a single certificate
-starting from an abstract finite étale algebra.  The remaining boundaries are:
+starting from an abstract finite étale algebra. The sole remaining formal
+boundary of the focused paper is:
 
 1. either formalize the Campbell--Razar--Wright Galois case or keep it as a
    clearly isolated classical theorem interface;
-2. formalize symmetric monodromy, stable atomicity, and Hilbertian
-   specialization;
-3. formalize the exact nonproperness and boundary-sheet statements.
 
-The repository keeps these boundaries explicit so that a compiled certificate
-is never described as proving a stronger statement than it does.
+Symmetric monodromy, stable atomicity, Hilbertian specialization, and exact
+nonproperness are maintained as companion results outside this paper and
+outside this verification matrix.

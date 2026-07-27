@@ -3,6 +3,8 @@
 
 from __future__ import annotations
 
+import math
+
 import sympy as sp
 
 
@@ -73,7 +75,27 @@ p = sp.symbols("p", integer=True, positive=True)
 assert sp.expand((X**3 - a).subs(X, 1)) == 1 - a
 assert sp.diff(X**3 - a, X).subs(X, 1) == 3
 
+# The 3-adic step needs only ell = 1 mod 9.  After X = 1 + 3T, ordinary
+# Hensel applies to h(T) at T = k mod 3.
+T, k = sp.symbols("T k", integer=True)
+ell = 1 + 9 * k
+h = T + 3 * T**2 + 3 * T**3 - k
+assert sp.expand((1 + 3 * T) ** 3 - ell) == 9 * h
+assert sp.expand(h - (T - k)) == 3 * T**2 + 3 * T**3
+assert sp.expand(sp.diff(h, T) - 1) == 6 * T + 9 * T**2
+
+# The first prime in the progression is 19.  Its target coordinates are
+# primitive, and phi(9) * 32 gives the denominator in the asymptotic.
+assert [prime for prime in sp.primerange(2, 19) if prime % 9 == 1] == []
+assert sp.isprime(19) and 19 % 9 == 1
+target_19 = (9, 9, 32 * 19, 24 * 19 + 3)
+assert target_19 == (9, 9, 608, 459)
+assert math.gcd(*target_19) == 1
+assert max(target_19) == 608
+assert sp.totient(9) * 32 == 192
+
 print("PASS: the displayed fixed polynomial map has determinant -2")
 print("PASS: its rational target line is (X^3-a)(X^2+X+1)")
-print("PASS: every prime a=1 mod 27 gives a reduced degree-five Hasse fiber")
-
+print("PASS: every prime a=1 mod 9 gives a reduced degree-five Hasse fiber")
+print("PASS: a=19 has primitive target [9:9:608:459] of height 608")
+print("PASS: the target count is asymptotic to B/(192 log B)")

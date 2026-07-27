@@ -1,0 +1,64 @@
+\section{An explicit arithmetic fiber}\label{sec:example}
+
+Consider the squarefree quintic
+\[
+ P_5(T)=(T^3-19)(T^2+T+1)
+ =T^5+T^4+T^3-19T^2-19T-19.
+\]
+Berend and Bilu introduced this polynomial in their study of polynomials
+having a root modulo every integer \cite{BerendBilu}.
+It has no rational root: the rational-root theorem excludes a root of
+\(T^3-19\), while \(T^2+T+1\) has discriminant \(-3\).  On the other hand,
+\(\Spec\Q[T]/(P_5)\) has a point over every completion of \(\Q\).  The cubic
+factor has a real root.  For a prime
+\(p\notin\{2,3,19\}\), if \(p\equiv2\pmod3\), cubing is an automorphism of
+\(\mathbb F_p^\times\), so \(T^3-19\) has a simple root modulo \(p\); if
+\(p\equiv1\pmod3\), then \(\mathbb F_p^\times\) contains a nontrivial cube
+root of unity, giving a simple root of \(T^2+T+1\).  At the exceptional
+primes, Hensel witnesses are
+\[
+\begin{array}{c|c|c}
+p&\text{factor and approximate root}&\text{check}\\ \hline
+2&T^3-19,\ T=1&-18\equiv0\pmod2,\quad 3\in\mathbb Z_2^*\\
+3&T^3-19,\ T=-2&v_3(-27)=3>2v_3(12)=2\\
+19&T^2+T+1,\ T=7&57\equiv0\pmod{19},\quad15\in\mathbb Z_{19}^*.
+\end{array}
+\]
+
+We now realize this algebra by the formulas above.  The translation \(a=0\)
+is admissible, and
+\[
+ G(S)=P_5(S)-P_5(0)
+ =S^5+S^4+S^3-19S^2-19S.
+\]
+Thus \((g_1,g_2,g_3,g_4,g_5)=(-19,-19,1,1,1)\).  Put
+\[
+ t=1+xy,\qquad q=t^2z-19y^2(1+3t),
+\]
+and define \(F=(F_1,F_2,F_3)\) by
+\begin{align}
+ F_1={}&tq,\notag\\
+ F_2={}&19y-3xq+38tq-4t^2x^2q^4-5t^2x^3q^5,\notag\\
+ F_3={}&19x(5-3t)+x^3z+2(xq)^4+3(xq)^5.
+ \label{eq:explicit-quintic-map}
+\end{align}
+This is an output rescaling of the quadratic-gauge map, so
+\[
+ \det DF=-722,\qquad \gdeg(F)=5.
+\]
+At the target \(y=(1,0,-38)\), the inverse equation is
+\[
+ G(S)-\frac{-19}{2}(-2)=G(S)-19=P_5(S).
+\]
+The squarefree fiber theorem therefore gives
+\[
+ \boxed{F^{-1}(1,0,-38)
+ \simeq\Spec\Q[T]/\bigl((T^3-19)(T^2+T+1)\bigr).}
+\]
+This full Keller fiber has points over \(\mathbb R\) and every
+\(\mathbb Q_p\), but no rational point.  The displayed map, literal fiber,
+rank, finite \'etaleness, and these local and global point statements are
+also included in the Lean development.  Composing \(F\) with the diagonal
+target scaling
+\((u,v,w)\mapsto(u,-v/38,w/19)\) gives determinant one and sends the target
+back to \((1,0,-2)\).

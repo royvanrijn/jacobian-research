@@ -1,89 +1,48 @@
 \section{Discussion}
 
-The core theorem is the polynomial realization theorem.  Given a squarefree
-presentation \(K[T]/(P)\) and an admissible \(a\), it gives an explicit Keller
-map with that full Keller fiber.  Monogenicity then yields the corresponding
-existence statement for an abstract finite \'etale algebra.  The distinction
-matters: the formulas are explicit from \((P,a)\), while the primitive-element
-step supplies no canonical presentation.  The classification by rank is a
-corollary, but it is not the main point: two finite \'etale algebras of the
-same rank can have different field decompositions, Galois actions, signatures,
-and local behavior, and the construction preserves all of that data.
+The construction preserves the finite \'etale algebra itself, not merely its
+rank or its geometric points after base change.  Its load-bearing identities
+are the compact inverse equation, the derivative-unit reconstruction, and
+the function-field comparison
+\[
+ K(x,y,z)=K(\Pi,B,C)(S).
+\]
+Together they prove that the distinguished literal fiber has rank equal to
+the actual geometric degree.
 
-Several consequences are immediate.  A squarefree polynomial of degree at
-least three becomes an exact inverse polynomial after one translation; an
-irreducible polynomial gives a connected full Keller fiber; and a
-degree-\(N\) input is realized in \(\A^3\) with coordinate degree at most
-\(6N+2\).  Every map
-produced by the construction has geometric and arithmetic generic monodromy
-\(S_N\).  The primitive action makes every realization map absolutely and
-stably compositionally indecomposable.  Thus monodromy supplies a structural
-property of the polynomial map, rather than only a generic Galois label.
-Over a Hilbertian field, each such fixed map has infinitely many connected
-full Keller fibers with splitting-field group \(S_N\).
+This distinction also keeps the effectivity statement precise.  From a
+supplied squarefree presentation \(K[T]/(P)\) and admissible translation
+\(a\), all map coordinates, the target, and the fiber isomorphism are
+explicit and commute with scalar extension.  For an abstract finite \'etale
+algebra, monogenicity proves existence of such data but does not choose it
+canonically.
 
-The cubic seed admits two useful explanations.  Normalized multiplication of
-a marked linear and quadratic binary form explains its three marked-root
-branches \cite{TaoDigest}; the mixed-sign quotient explains its grading and
-contracted locus \cite{Shaska}.  These viewpoints motivate the gauge.  The
-load-bearing argument remains the exact identity \(E'=g_1D\) and the boxed
-root-to-source reconstruction, which work for every prescribed inverse
-polynomial and every commutative test algebra.
-
-Appendix~\ref{app:gauge-identities} retains the coefficientwise expansion
-from the compact inverse design to the displayed polynomial coordinates.
-Appendix~\ref{app:degree-two} records the scalar-extension and descent
-argument for the classical degree-two obstruction, and
-Appendix~\ref{app:lean-correspondence} gives the verification table linking
-the main statements to their Lean declarations.  Finally,
-Appendix~\ref{app:nonproperness} contains the logically separate
-nonproperness calculation: the exact reduced nonproperness locus, the
-distinguished-target complement, and the complete fiber table on
-\(\Pi=0\).
-
-This is a transfer statement, not an inverse Galois theorem.  It does not say
-that arbitrary local specifications can always be globalized.  It says that
-once a finite \'etale algebra with the desired arithmetic properties exists,
-the Keller construction preserves it exactly.  Nor does the monodromy theorem
-say that one fixed seed realizes every rank-\(N\) finite \'etale algebra: the
-prescribed algebra is used to choose the seed.  Its strengthening is that
-every resulting cover, including one built for a highly special algebra, has
-maximal generic monodromy.
+The polynomial-presentation theorem, including the actual geometric degree,
+and its passage to abstract finite \'etale algebras are formalized in Lean.
+Appendix~\ref{app:lean-correspondence} records the public endpoint
+declarations.  The rank-two exclusion is deliberately separate: it uses the
+classical Campbell--Razar--Wright Galois case rather than the formalized
+construction.
 
 \paragraph{Relation to earlier work.}
-To my knowledge, the following prescribed-algebra statement has not appeared
-before: every finite \'etale \(K\)-algebra of rank at least three occurs as a
-\emph{full Keller fiber} of a map \(\A^3_K\to\A^3_K\), with explicit
-formulas once a squarefree presentation and admissible translation are
-supplied.  The rank set \(\{1,3,4,\ldots\}\) follows from this theorem together
-with the known degree-two obstruction.  I searched for earlier results up to
-24 July 2026, but this priority statement is necessarily qualified: searches
-can miss unpublished work or a theorem stated in different language.
-
-The existence of Keller maps in every generic degree is shared terrain.
-Gallagher gives explicit all-degree families with complete split rational
-fibers \cite{Gallagher}; Migus explicitly uses the available all-degree
-constructions as input in the real non-dense-image problem \cite{Migus}.
-Shaska studies the grading, quotient geometry, and arithmetic thinness of the
-cubic map \cite{Shaska}.  None of these results reverses the quantifiers to
-realize an arbitrarily prescribed finite \'etale algebra as the complete
-fiber.  Miranda--Neto studies decompositions of fibers already arising from
-Keller maps \cite{Miranda}, while Lipton and Markakis connect rational images
-with Hilbert irreducibility \cite{LiptonMarkakis}.  The monodromy argument
-here uses the classical theorem that a Morse polynomial has symmetric Galois
-group over the value-function field \cite[Theorem~4.4.5]{Serre}.
+To my knowledge, no earlier source states that every finite \'etale
+\(K\)-algebra of rank at least three occurs as a full Keller fiber in
+\(\A^3_K\).  This priority statement is necessarily qualified: searches can
+miss unpublished work or a theorem stated in different language.  Gallagher
+gives explicit all-degree Keller families with split rational fibers
+\cite{Gallagher}; Migus uses available all-degree constructions in the real
+non-dense-image problem \cite{Migus}; and Shaska studies the grading and
+quotient geometry of the cubic seed \cite{Shaska}.  These results have a
+different quantifier order from the prescribed-algebra theorem here.
 
 \paragraph{Provenance and AI assistance.}
-The recent three-dimensional counterexample was announced by Alp\"oge, who
-credited Akhil Mathew for suggesting the problem and Fable for producing the
-example \cite{Alpoge}.  Its determinant and collision have since received an
-independent Isabelle/HOL formalization \cite{IsabelleAFP}; this paper retains
-it only as the cubic seed \(S+S^3\).  Gallagher independently developed an
-all-degree atlas \cite{Gallagher}.  Campbell, Razar, and Wright supply the
-degree-two obstruction \cite{Campbell,Razar,Wright}.
+The cubic seed was announced by Alp\"oge, who credited Akhil Mathew for
+suggesting the problem and Fable for producing the example \cite{Alpoge}.
+Its determinant and collision have an independent Isabelle/HOL formalization
+\cite{IsabelleAFP}.  The present paper uses that map only as the cubic seed
+of the all-degree construction.
 
 I used generative AI tools during exploration, symbolic-checker development,
 proof review, literature search, Lean formalization, and manuscript editing.
-They were useful as fast but fallible collaborators.  I checked the stated
-mathematical claims, rewrote the exposition, and take responsibility for the
+I checked the stated mathematical claims and take responsibility for the
 paper.

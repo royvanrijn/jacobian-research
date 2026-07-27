@@ -1,0 +1,107 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,array,mathtools,microtype}
+\usepackage[T1]{fontenc}
+\usepackage[hidelinks]{hyperref}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\newcommand{\A}{\mathbb A}
+\newcommand{\Spec}{\operatorname{Spec}}
+\newcommand{\gdeg}{\operatorname{gdeg}}
+\numberwithin{equation}{section}
+
+\title{The Exact Nonproperness Locus of the Quadratic-Gauge Keller Maps}
+\author{Roy van Rijn\\{\small Independent researcher}}
+\date{27 July 2026}
+\hypersetup{
+  pdftitle={The Exact Nonproperness Locus of the Quadratic-Gauge Keller Maps},
+  pdfauthor={Roy van Rijn},
+  pdfsubject={Nonproperness and boundary sheets of polynomial Keller maps},
+  pdfkeywords={Keller map, nonproperness locus, discriminant, Newton polygon,
+    Jelonek locus}
+}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+For the all-degree quadratic-gauge Keller maps, we identify the reduced
+nonproperness locus with the discriminant of the scalar inverse equation.
+We compute the complete fiber table on the degenerate slice \(\Pi=0\) and
+the exact global \(\Pi\)-adic order of the discriminant.  These geometric
+results are independent of the prescribed finite-\'etale-fiber theorem.
+\end{abstract}
+
+\section{The quadratic-gauge input}
+
+Let \(K\) be a characteristic-zero field and
+\begin{equation}
+ G(S)=g_1S+g_2S^2+\cdots+g_NS^N,\qquad g_1g_3g_N\neq0.
+ \label{eq:seed}
+\end{equation}
+The quadratic-gauge map \(F_G=(\Pi,B,C):\A^3_K\to\A^3_K\) is the map
+constructed in the companion prescribed-fiber paper.  Its scalar inverse
+equation is
+\[
+ E_{\Pi,B,C}(S)=G_\Pi(S)-\frac{g_1}{2}(BS^2+C),
+\]
+where
+\[
+ G_\Pi(S)=g_1S+\Pi(g_2S^2+g_3S^3)
+          +\sum_{k=4}^Ng_k\Pi^kS^k.
+\]
+It satisfies
+\[
+ \det DF_G=-2,\qquad \gdeg(F_G)=N.
+\]
+For \(\pi\neq0\), its literal fiber is
+\begin{equation}
+ F_G^{-1}(\pi,b,c)\simeq
+ \Spec\left((K[S]/(E_{\pi,b,c}))[1/\overline{E_{\pi,b,c}'}]\right).
+ \label{eq:localized-input}
+\end{equation}
+These identities follow from the compact inverse design and
+root-to-source reconstruction in the prescribed-fiber paper; the present
+note begins with them and studies the boundary.
+
+For a squarefree \(P\in K[T]\) of degree \(N\geq3\) and
+\(a\in K\) with \(P'(a)P'''(a)\neq0\), the prescribed-fiber seed is
+\[
+ G(S)=P(a+S)-P(a).
+\]
+After the determinant-one output normalization, the distinguished target is
+\begin{equation}
+ y_{P,a}=\left(1,0,-\frac{2P(a)}{P'(a)}\right),
+ \label{eq:prescribed-target}
+\end{equation}
+and its inverse equation is \(P(a+S)\).
+
+\input{sections/nonproperness}
+
+\section*{Verification status}
+
+The graph-boundary base-change argument, Jelonek descent, complete
+\(\Pi=0\) fiber table, and Newton-polygon discriminant calculation are
+ordinary mathematical proofs and are not part of the Lean formalization of
+the prescribed-fiber theorem.  The exact symbolic audit is
+\[
+ \texttt{scripts/verify\_quadratic\_gauge\_nonproperness.py}.
+\]
+
+\begin{thebibliography}{9}
+\footnotesize
+
+\bibitem{Jelonek1993}
+Z.~Jelonek,
+\emph{The set of points at which a polynomial map is not proper},
+Ann. Polon. Math. \textbf{58} (1993), 259--266,
+\href{https://doi.org/10.4064/ap-58-3-259-266}
+{doi:10.4064/ap-58-3-259-266}.
+
+\end{thebibliography}
+
+\end{document}

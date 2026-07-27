@@ -1,0 +1,29 @@
+{
+  "schema": "gq2-permutation-action/v1",
+  "description": "The Roe--Turturean mixed S_4 worked example; no polynomial comparison is claimed.",
+  "degree": 4,
+  "conventions": {
+    "points": "zero-based",
+    "permutation_encoding": "image-list",
+    "multiplication": "(a*b)(i)=a(b(i))",
+    "conjugation": "x^g=g^-1*x*g",
+    "commutator": "[x,y]=x^-1*y^-1*x*y",
+    "frobenius": "sigma maps to geometric Frobenius"
+  },
+  "generators": {
+    "sigma": [1, 0, 2, 3],
+    "tau": [1, 2, 0, 3],
+    "x0": [1, 0, 3, 2],
+    "x1": [0, 1, 2, 3]
+  },
+  "expected": {
+    "admissible": true,
+    "tame_relation": true,
+    "wild_relation": true,
+    "wild_normal_closure_is_2_group": true,
+    "image_group_order": 24,
+    "wild_normal_closure_order": 4,
+    "orbit_sizes": [4],
+    "stabilizer_orders": [6]
+  }
+}

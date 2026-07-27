@@ -1,167 +1,96 @@
-\section{Introduction and main results}
+\section{Introduction and main result}
 
-A polynomial map with nonzero constant Jacobian is \'etale.  Its fibers are
-therefore finite \'etale schemes, possibly empty.  This raises a simple reverse
-question: given a finite \'etale algebra \(A/K\), can we build a Keller map with
-\(\Spec A\) as one of its fibers?
+A polynomial self-map of affine space with nonzero constant Jacobian is
+\'etale, so every one of its fibers is a finite \'etale scheme, possibly
+empty.  We study the reverse problem: which finite \'etale algebras can occur
+as entire fibers of Keller maps?
 
-There is one important word in that question.  The fiber should be
-\emph{full}: its length must equal the geometric degree of the map.  Otherwise
-some generic inverse sheets may have escaped to infinity, and the special
-fiber records only part of the inverse problem.  Our main result answers the
-prescribed-algebra question.  Every finite \'etale \(K\)-algebra of rank at
-least three occurs as a full Keller fiber in three variables.  The
-construction is explicit once a squarefree presentation
-\(A\simeq K[T]/(P)\) and an admissible translation parameter are supplied.
-For an abstract algebra, monogenicity supplies such a presentation
-existentially, but not canonically.
-
-For precision, let \(K\) be a field of characteristic zero.  A polynomial map
+The relevant condition is fullness.  Let \(K\) be a field of characteristic
+zero and let
 \[
  F:\A^m_K\longrightarrow\A^m_K
 \]
-is a \emph{Keller map} if \(\det DF\in K^*\), and its geometric degree is
+be a Keller map.  Its geometric degree is
 \[
  \gdeg(F)=[K(x_1,\ldots,x_m):K(F_1,\ldots,F_m)].
 \]
-Such a map is \'etale and hence quasi-finite, so every fiber over a
-\(K\)-point is a finite \'etale \(K\)-scheme, possibly empty.
-
-\begin{definition}[Keller fibers and fullness]\label{def:keller-fiber}
-If \(F:\A^m_K\to\A^m_K\) is a Keller map and \(y\in\A^m(K)\), then
-\(F^{-1}(y)\) is a \emph{Keller fiber}.  It is a \emph{full Keller fiber} if
+For \(y\in\A^m(K)\), we call \(F^{-1}(y)\) a \emph{full Keller fiber} if
 \[
  \operatorname{rank}_K F^{-1}(y)=\gdeg(F).
 \]
-Here \(\operatorname{rank}_K X=\dim_K\Gamma(X,\mathcal O_X)\) for a finite
-\(K\)-scheme \(X\).  Thus ``Keller fiber'' means any ordinary fiber; the
-adjective ``full'' says that the special fiber contains every generic inverse
-sheet.  A shorter fiber can occur when sheets escape through the
-nonproperness boundary.
-\end{definition}
+Thus the fiber contains every generic inverse sheet; no boundary calculation
+is needed once the two ranks have been identified.
 
-Producing Keller maps in each generic degree is now shared terrain.
-Gallagher gives explicit all-degree families, and Migus explicitly takes the
-available all-degree constructions as input in his classification of generic
-degrees for real Keller maps with non-dense image
-\cite{Gallagher,Migus}.  Shaska develops the mixed-sign grading and quotient
-geometry of the announced cubic map \cite{Shaska}.  These results clarify why
-large families should exist.  They do not address the reversed quantifier
-order here: begin with an arbitrary finite \'etale algebra, then construct a
-map whose \emph{complete} fiber represents that algebra.
+Our main theorem begins with concrete presentation data.
 
-For rank \(N\geq3\), choose a squarefree presentation
+\begin{theorem}[Polynomial-presentation theorem]\label{thm:main-intro}
+Let \(P\in K[T]\) be squarefree of degree \(N\geq3\), and let \(a\in K\)
+satisfy \(P'(a)P'''(a)\neq0\).  There is an explicitly given polynomial map
 \[
- A\simeq K[T]/(P)
+ \widetilde F_{P,a}:\A^3_K\longrightarrow\A^3_K
 \]
-and \(a\in K\) with \(P'(a)P'''(a)\neq0\), and put
-\(G(S)=P(a+S)-P(a)\).  The proof then has five steps.
-\begin{enumerate}
-\item Design the scalar inverse equation
+and an explicitly given target \(y_{P,a}\in\A^3(K)\) such that
 \[
- E_{\Pi,B,C}(S)
- =G_\Pi(S)-\frac{g_1}{2}(BS^2+C).
+ \det D\widetilde F_{P,a}=1,\qquad
+ \gdeg(\widetilde F_{P,a})=N,\qquad
+ \widetilde F_{P,a}^{-1}(y_{P,a})
+ \simeq\Spec K[T]/(P).
 \]
-\item Arrange the exact derivative identity
+The fiber isomorphism is natural on commutative \(K\)-algebras, every
+coordinate of \(\widetilde F_{P,a}\) has degree at most \(6N+2\), and the
+supplied \((P,a)\)-construction commutes with extension of the ground field.
+\end{theorem}
+
+Theorem~\ref{thm:polynomial-realization} gives the formulas and proof.  Its
+mechanism is a compact scalar inverse equation
 \[
- E_{\Pi,B,C}'(S)=g_1D,\qquad D=1-SQ+\Pi S^2.
+ E_{\Pi,B,C}(S)=0
 \]
-\item Use the unit \(D\) to reconstruct the source rationally from a simple
-root \(S\); the complete formula is boxed in
-Section~\ref{sec:gauge}.
-\item Choose the quadratic gauge so that this reconstruction polynomializes
-in \((x,y,z)\), while the source and target Jacobian factors
-\(D^{-1}\) and \(-2D\) cancel.
-\item At the selected target, specialize \(E\) to \(P(a+S)\).
-Squarefreeness makes \(E'\) invertible modulo \(E\), so the localization
-disappears and the full fiber is \(\Spec K[T]/(P)\).
-\end{enumerate}
-A fixed linear change in the target makes the Jacobian one, and all
-coordinate degrees are at most \(6N+2\).  The detailed reconstruction is
-natural over arbitrary commutative test algebras; it is this derivative-unit
-argument, rather than the graded quotient alone, that identifies the exact
-scheme fiber.
-
-Together with the elementary fact that every Keller fiber is finite \'etale,
-the realization theorem gives an exact fixed-degree classification.  For
-\(N\geq1\), a finite \(K\)-scheme of rank \(N\) is a full Keller fiber of a
-geometric-degree-\(N\) map in \(\A^3_K\) exactly when it is finite \'etale
-and \(N\neq2\).
-
-The same coordinates identify the actual function-field extension.  On the
-dense chart \(1+xy\neq0\), the source field is
+whose derivative is the unit used to reconstruct the source.  The same
+factor cancels in the Jacobian.  Over the generic target, the reconstruction
+identifies the actual source field with the field obtained by adjoining a
+root of \(E\).  A linear-in-\(C\) irreducibility argument then proves that
+this extension has degree \(N\).  At the distinguished target,
+\(E(S)=P(a+S)\); squarefreeness removes the derivative localization and
+gives the literal fiber scheme.  This proves fullness through
 \[
- K(x,y,z)=K(\Pi,B,S),
+ \operatorname{rank}_K\widetilde F_{P,a}^{-1}(y_{P,a})
+ =N=\gdeg(\widetilde F_{P,a}).
 \]
-and \(S\) has minimal polynomial \(E_{\Pi,B,C}\) over
-\(K(\Pi,B,C)\).  Since that polynomial is irreducible of degree \(N\), the
-displayed map has geometric degree \(N\).  This comparison is what turns the
-literal rank-\(N\) fiber into a full Keller fiber.
 
-The generic inverse problem is also as large as possible in its Galois
-theory.  For every admissible degree-\(N\) seed, not just a generic choice of
-its coefficients, the geometric and arithmetic Galois groups of
-\(E_{\Pi,B,C}\) are both \(S_N\).  The proof fixes \(\Pi\), parametrizes the
-repeated-root curve, and shows that all but finitely many vertical slices are
-Morse.  The classical Morse-polynomial theorem gives \(S_N\) on one slice,
-and the finite-\'etale ordered-root cover embeds that group into the generic
-geometric group.  Over a Hilbertian field, the same fixed map consequently has
-infinitely many connected full Keller fibers with splitting-field group
-\(S_N\).  Since the natural action of \(S_N\) is primitive, there is no
-proper intermediate generic function field.  The chain rule then turns this
-into a structural consequence: every realization map remains compositionally
-indecomposable after every characteristic-zero extension and every
-stabilization by identity variables.
+Every finite \'etale algebra over the infinite field \(K\) is monogenic.
+Consequently the concrete theorem gives the paper's principal corollary:
 
-The same inverse equation also detects precisely where affine sheets are
-lost.  The logically separate calculation is placed in
-Appendix~\ref{app:nonproperness}.  Over an algebraic closure, the reduced
-nonproperness locus is
+\begin{corollary}\label{cor:main-intro}
+Every finite \'etale \(K\)-algebra of rank at least three occurs as a full
+Keller fiber of a Jacobian-one polynomial map
+\(\A^3_K\to\A^3_K\).
+\end{corollary}
+
+The word ``explicit'' applies to the supplied polynomial presentation and
+admissible translation.  Starting from an abstract finite \'etale algebra,
+the primitive element and the admissible translation are chosen
+noncanonically; the corresponding Lean construction is noncomputable and no
+functorial choice is claimed.
+
+The construction realizes every rank \(N\geq3\).  Together with the
+classical Galois case of the Jacobian theorem, due to Campbell, Razar, and
+Wright, it gives the possible nonzero ranks
 \[
- V_{\mathrm{red}}\!\left(
- \operatorname{Disc}_S E_{\Pi,B,C}\right).
+ 1,3,4,\ldots.
 \]
-This statement is set-theoretic, or equivalently an equality of reduced
-closed subschemes; it does not identify the generally nonreduced
-discriminant scheme with a scheme structure on the nonproperness locus.  The
-slice \(\Pi=0\) is treated separately by direct source charts and a Newton
-polygon calculation.
+This classification is a corollary with an external input, not part of the
+formalized construction.
 
-The reconstruction is stronger than a count of geometric points.  Its
-formulas are natural in the test algebra, so they identify the whole fiber
-functor, including nilpotents and every scalar extension.  After translating
-back from \(S\) to \(T\), the literal fiber is the original algebra
-\(K[T]/(P)\).  Nothing arithmetic has been replaced by a numerical proxy.
+The proof is organized in the same order as the construction.  Section
+\ref{sec:gauge} designs the inverse equation and polynomial pullback.
+Section~\ref{sec:reconstruction} proves root-to-source reconstruction, the
+literal fiber theorem, and the function-field comparison.  Section
+\ref{sec:prescribing} passes from a squarefree presentation to an abstract
+finite \'etale algebra and records scalar extension.  Section
+\ref{sec:example} gives one explicit arithmetic fiber.  The appendices record
+the coefficientwise pullback identities and the Lean correspondence.
 
-The statements are separated according to their dependencies.  The
-polynomial realization theorem starts from the supplied pair \((P,a)\) and
-records the map, its determinant, geometric degree, and exact fiber; the
-immediately following effective corollary records the degree bound and
-naturality.  Monogenicity then gives the finite-\'etale realization
-corollary.  Symmetric monodromy is a separate theorem about the generic
-inverse equation, followed by the stable-atomicity corollary.  The rank
-classification combines realization with the
-classical degree-two obstruction; its scalar-extension and descent argument
-is recorded in Appendix~\ref{app:degree-two}.  The nonproperness calculation,
-which is logically independent of this hierarchy, is collected in
-Appendix~\ref{app:nonproperness}; the coefficientwise pullback calculation is
-kept separately in Appendix~\ref{app:gauge-identities}.
-
-Arithmetic consequences remain literal transfers: field decomposition,
-Galois action, signatures, local points, and rational points are preserved
-because the whole finite \'etale algebra is preserved.  Concrete arithmetic
-applications are kept in separate certificates rather than developed in this
-paper.
-
-The polynomial-presentation construction and its passage to abstract finite
-\'etale algebras in characteristic zero have been formalized in Lean.
-Starting from a squarefree polynomial of degree at least three, the
-formalization chooses an admissible translation, constructs the Jacobian-one
-map and target, proves geometric degree \(N\) and the \(6N+2\) coordinate
-bound, and identifies the full Keller fiber naturally with
-\(\Spec K[T]/(P)\), including its rank and finite \'etaleness.  It also
-noncomputably constructs a squarefree polynomial presentation of every
-abstract finite \'etale \(K\)-algebra and transports the full natural fiber
-certificate across that presentation.
-Appendix~\ref{app:lean-correspondence} records the correspondence between
-these paper statements and their Lean declarations.
+The exact nonproperness locus, symmetric monodromy, Hilbertian
+specialization, and stable compositional atomicity are separate geometric
+and monodromy results.  They are not used here.

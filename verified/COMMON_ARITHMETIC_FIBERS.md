@@ -119,6 +119,12 @@ with unit ranks one and two.  Thus:
 > |\mathcal R_{\mathbb Q}(\mathbb Q[T]/(P_{N,u}))|\ge2.
 > \]
 
+The family-relative adelic strengthening is proved in
+[locally prescribed common fibers](LOCALLY_PRESCRIBED_COMMON_FIBERS.md):
+whenever selected local algebras occur at local parameters of this pencil,
+infinitely many connected common fibers realize them simultaneously.
+Automatic discriminant radii make the parameter congruences explicit.
+
 ## 3. The small rational quartic
 
 The particularly small quartic

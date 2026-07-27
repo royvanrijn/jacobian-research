@@ -12,8 +12,10 @@ corrections that are deliberately carried into a new deposited version.
 
 ## Active
 
-- `common-arithmetic-fibers` — *Prescribed Finite Étale Algebras as Full
-  Fibers of Keller Maps with Symmetric Monodromy*
+- `common-arithmetic-fibers` — *Every Finite Étale Algebra of Rank at Least
+  Three Is a Full Keller Fiber*
+- `quadratic-gauge-nonproperness` — *The Exact Nonproperness Locus of the
+  Quadratic-Gauge Keller Maps*
 
 This manuscript remains under active development. The directory name is a
 stable path retained from its earlier draft. The complete constructive
@@ -22,12 +24,13 @@ automatic translation choice, the actual arbitrary-degree map, its Jacobian
 and effective degree bound, the literal scheme fiber, quotient transport, and
 naturality. The same Lean project now proves monogenicity for abstract finite
 étale algebras in characteristic zero and composes it with that construction.
-The manuscript derives absolute and stable compositional atomicity from its
-symmetric-monodromy theorem. It additionally proves the exact reduced
-nonproperness locus and boundary-sheet ledger as ordinary mathematics; the
-verification matrix marks these results explicitly as not Lean-formalized.
-Hasse and fixed-quintic applications are maintained as separate verified
-notes rather than part of this paper.
+The manuscript is focused on the completely formalized prescribed-fiber
+theorem: explicit polynomial presentations, inverse reconstruction, literal
+fibers, function-field degree, monogenicity, base change, and one explicit
+arithmetic example. Symmetric monodromy and stable atomicity remain in their
+verified companion notes. Exact nonproperness and boundary-sheet accounting
+have moved to the separate geometric manuscript
+`quadratic-gauge-nonproperness`.
 
 ## Parked
 
