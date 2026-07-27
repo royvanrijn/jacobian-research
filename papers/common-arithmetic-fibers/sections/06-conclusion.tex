@@ -15,6 +15,16 @@ produced by the construction has geometric and arithmetic generic monodromy
 \(S_N\).  Over a Hilbertian field, each such fixed map has infinitely many
 connected full fibers with splitting-field group \(S_N\).
 
+Fullness also has an intrinsic geometric interpretation in this family.
+Theorem~\ref{thm:exact-nonproperness} identifies the exact reduced
+nonproperness locus with the inverse-discriminant zero set, and
+Corollary~\ref{cor:intrinsic-fullness} places every distinguished target in
+its complement.  The partition formula
+\eqref{eq:partition-sheet-loss}, the complete table
+\eqref{eq:pi-zero-fiber-table}, and
+Proposition~\ref{prop:boundary-arcs} account for the affine and boundary
+sheets on every displayed stratum.
+
 This is a transfer statement, not an inverse Galois theorem.  It does not say
 that arbitrary local specifications can always be globalized.  It says that
 once a finite \'etale algebra with the desired arithmetic properties exists,
@@ -56,7 +66,14 @@ The independent Singular checker expands the complete degree-six map over a
 rational function field in six coefficients, obtains determinant \(-2\), and
 checks the degree profile \((7,38,36)\).  Concrete degree-three, degree-four,
 and degree-five regressions reconstruct the polynomial quotient in both
-directions.
+directions.  The additional checker
+\[
+ \texttt{scripts/verify\_quadratic\_gauge\_nonproperness.py}
+\]
+independently checks the cubic and quartic discriminant specializations, the
+direct \(q=0\) and \(t=0\) charts, discriminant orders and saturated-slice
+coefficients through degree ten, and the uniform Newton and
+boundary-valuation ledger through degree sixty-four.
 
 The Lean project in
 \[
@@ -88,45 +105,21 @@ rank \(N\), and the \(6N+2\) bound.
 The Lean axiom reports for these declarations contain only
 \texttt{propext}, \texttt{Classical.choice}, and \texttt{Quot.sound}.
 Monogenicity, symmetric monodromy, Hilbert irreducibility, the
+exact nonproperness and boundary-sheet accounting, the
 Campbell--Razar--Wright theorem, and the number-theoretic local-solubility
-arguments remain ordinary mathematical inputs.  For the quintic example,
-Lean verifies the exact fiber, its rank and finite \'etaleness, the absence
-of rational points, and the existence of real and three-adic points; the
-other local points remain in the elementary proof of
+arguments remain ordinary mathematical proofs or inputs.  For the quintic
+example, Lean verifies the exact fiber, its rank and finite \'etaleness, the
+absence of rational points, and the existence of real and three-adic points;
+the other local points remain in the elementary proof of
 Theorem~\ref{thm:hasse}.
 
-\subsection*{Addendum: geometry and arithmetic left for later}
+\subsection*{Addendum: arithmetic left for later}
 
 The quadratic gauge has more structure than is needed for the realization
-theorem.  I record two directions here so that the computations are not
-hidden, but neither is used in this paper.
-
-\paragraph{The nonproperness boundary.}
-The inverse discriminant strongly suggests an exact description of the
-reduced nonproperness set:
-\[
- (S_{F_G})_{\mathrm{red}}
- \stackrel{?}{=}
- V\!\left(\sqrt{(\operatorname{Disc}_S E_{\Pi,B,C})}\right).
-\]
-On \(\Pi\neq0\), the localized fiber theorem already explains why repeated
-inverse roots correspond to missing affine sheets.  On \(\Pi=0\), direct
-source charts and Newton polygons indicate a different boundary: a generic
-fiber has three affine points and \(N-3\) sheets at infinity.  In degree three
-the raw resultant has an extra factor \(\Pi\); in degree at least four the
-computations indicate that \(\Pi=0\) is a genuine reduced component, with
-generic discriminant order
-\[
- N^2-3N-2.
-\]
-Symbolic checks verify the discriminant orders through degree ten and the
-Newton ledger through degree sixty-four.  A complete treatment should
-separate the reduced set from the discriminant scheme, construct the boundary
-normalization, and prove that every branch over the special strata has been
-accounted for.  That is a different geometric argument, and I leave it for a
-separate paper.  The relevant background is Jelonek's description of
-nonproperness loci \cite{Jelonek1993} and the later quantitative work with
-Laso\'n \cite{JelonekLason}.
+theorem.  The exact nonproperness boundary is proved in
+Subsection~\ref{subsec:nonproperness}.  The following arithmetic direction is
+recorded so that its exact inverse-family computation is not hidden, but it is
+not used as a theorem in this paper.
 
 \paragraph{One map with many Hasse failures.}
 There is also a fixed quintic gauge for which exact algebra suggests the
@@ -144,8 +137,8 @@ For the present paper, the single optimal quintic fiber is enough.
 
 Other constructions in the accompanying repository place the same finite
 \'etale algebra inside weighted and cancellation-type Keller maps that need
-not be stably equivalent.  Their comparison belongs with those two deferred
-directions, not with the prescribed-fiber theorem proved here.
+not be stably equivalent.  Their comparison belongs with those deferred
+questions, not with the prescribed-fiber theorem proved here.
 
 \paragraph{Provenance and AI assistance.}
 The recent three-dimensional counterexample was announced by Alp\"oge, who

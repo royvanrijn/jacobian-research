@@ -19,8 +19,10 @@ stable path retained from its earlier draft. The complete constructive
 polynomial-presentation layer is formalized in `formal/finite-etale-keller`:
 automatic translation choice, the actual arbitrary-degree map, its Jacobian
 and effective degree bound, the literal scheme fiber, quotient transport, and
-naturality. The manuscript and its verification matrix state the remaining
-boundary precisely: generic function-field degree, monogenicity, the classical
+naturality. The manuscript additionally proves the exact reduced
+nonproperness locus and boundary-sheet ledger as ordinary mathematics; the
+verification matrix marks these results explicitly as not Lean-formalized.
+It also states the remaining boundary for monogenicity, the classical
 rank-two input, and the number-theoretic applications.
 
 ## Parked

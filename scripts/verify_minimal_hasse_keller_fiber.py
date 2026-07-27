@@ -25,26 +25,44 @@ assert sp.Poly(X**3 - 19, X, domain=sp.QQ).is_irreducible
 assert sp.discriminant(X**2 + X + 1, X) == -3
 assert sp.gcd(X**3 - 19, X**2 + X + 1) == 1
 
-# The residue-class covering is uniform away from 3.  At p == 1 mod 3 the
-# cyclotomic quadratic splits; at p == 2 mod 3 the cube map is bijective.
+# Direct exceptional-prime witnesses used in the written proof.
+g = X**3 - 19
+q = X**2 + X + 1
+assert g.subs(X, 1) == -18
+assert sp.diff(g, X).subs(X, 1) == 3
+assert g.subs(X, -2) == -27
+assert sp.diff(g, X).subs(X, -2) == 12
+assert q.subs(X, 7) == 57
+assert sp.diff(q, X).subs(X, 7) == 15
+
+
+def valuation(integer: int, prime: int) -> int:
+    """Return v_prime(integer) for a nonzero integer."""
+    integer = abs(integer)
+    value = 0
+    while integer % prime == 0:
+        integer //= prime
+        value += 1
+    return value
+
+
+assert valuation(int(g.subs(X, -2)), 3) == 3
+assert valuation(int(sp.diff(g, X).subs(X, -2)), 3) == 1
+
+# The residue-class covering is uniform away from the displayed exceptional
+# set.  The finite loop is only a regression of the exact generic argument:
+# cyclicity of F_p^* proves the two rows for all remaining primes.
 for prime in sp.primerange(2, 2000):
-    if prime == 3:
+    if prime in {2, 3, 19}:
         continue
-    roots = [
-        a
-        for a in range(prime)
-        if ((a**3 - 19) * (a**2 + a + 1)) % prime == 0
-    ]
-    assert roots, f"missing residue root at {prime}"
-    assert any(
-        (
-            (3 * a**2) * (a**2 + a + 1)
-            + (a**3 - 19) * (2 * a + 1)
-        )
-        % prime
-        != 0
-        for a in roots
-    )
+    if prime % 3 == 2:
+        roots = [a for a in range(prime) if (a**3 - 19) % prime == 0]
+        assert roots, f"missing cubic residue root at {prime}"
+        assert any((3 * a**2) % prime != 0 for a in roots)
+    else:
+        roots = [a for a in range(prime) if (a**2 + a + 1) % prime == 0]
+        assert roots, f"missing quadratic residue root at {prime}"
+        assert any((2 * a + 1) % prime != 0 for a in roots)
 
 # At 3, 19 belongs to 1 + 9 Z_3 and is therefore a cube.  Compatible lifts
 # give a finite exact regression of this standard 3-adic cube-map fact.

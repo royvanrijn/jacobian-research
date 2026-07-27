@@ -42,16 +42,37 @@ Start with
  f(X)=(X^3-19)(X^2+X+1).
 \]
 
-It has no rational root. For a prime \(p\ne3\):
+Its finite-prime local roots are covered as follows:
 
-- if \(p\equiv1\pmod3\), then \(X^2+X+1\) has a simple root modulo \(p\);
-- if \(p\equiv2\pmod3\), then cubing is a bijection of
-  \(\mathbb F_p^\times\), so \(X^3-19\) has a simple root;
-- \(p=2\) is included in the second case.
+- away from \(2,3,19\), primes congruent to \(2\) modulo \(3\) are handled
+  by \(X^3-19\);
+- away from \(2,3,19\), primes congruent to \(1\) modulo \(3\) are handled
+  by \(X^2+X+1\);
+- the three exceptional primes have the direct witnesses below.
 
-At \(p=3\), the unit \(19\) lies in \(1+9\mathbb Z_3\), which is the image
-of the cube map on \(1+3\mathbb Z_3\). Thus \(f\) has a root in every
-\(\mathbb Q_p\). Its cubic factor has one real root.
+| primes | factor | residue or approximate root | Hensel check |
+|---|---|---|---|
+| \(p\notin\{2,3,19\}\), \(p\equiv2\pmod3\) | \(X^3-19\) | \(a^3=19\) in \(\mathbb F_p\) | \(3a^2\ne0\) |
+| \(p\notin\{2,3,19\}\), \(p\equiv1\pmod3\) | \(X^2+X+1\) | \(\zeta\) of order \(3\) in \(\mathbb F_p^\times\) | \(2\zeta+1\ne0\) |
+| \(p=2\) | \(X^3-19\) | \(a=1\) | \(g(1)=-18\), \(g'(1)=3\in\mathbb Z_2^\times\) |
+| \(p=3\) | \(X^3-19\) | \(a=-2\) | \(v_3(g(-2))=3>2=2v_3(g'(-2))\) |
+| \(p=19\) | \(X^2+X+1\) | \(a=7\) | \(q(7)=57\), \(q'(7)=15\in\mathbb Z_{19}^\times\) |
+
+For the first row, cubing is an automorphism of
+\(\mathbb F_p^\times\), and \(p\ne19\) makes its root nonzero. For the
+second, \(\mathbb F_p^\times\) contains an element of order three; it is a
+root of \(X^2+X+1\), and the discriminant \(-3\) shows the root is simple.
+The rows at \(2\) and \(19\) use ordinary simple-root Hensel. The row at
+\(3\) uses strong Hensel at \(-2\).
+
+Every prime outside \(\{2,3,19\}\) is in exactly one of the two generic
+rows. Hence \(f\) has a root over every \(\mathbb Q_p\). At the real place,
+\(g(2)=-11<0<8=g(3)\), so \(g\) has a real root.
+
+There is no rational root: the rational-root theorem excludes roots of
+\(X^3-19\), and \(X^2+X+1\) has discriminant \(-3\). The product is
+squarefree because the factors are squarefree and coprime: a root of the
+quadratic has cube \(1\), whereas a root of the cubic has cube \(19\).
 
 Berend and Bilu prove both this example and the impossibility of degree
 less than five in

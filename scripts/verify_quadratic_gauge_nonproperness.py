@@ -81,8 +81,8 @@ assert (v_u_x, v_u_y, v_u_q, v_u_z) == (-1, 1, 2, 2)
 
 
 # Independent exact discriminant orders for numerical admissible seeds.
-# Symbolic B,C are retained, so the lowest coefficient also checks that the
-# saturated slice is nonzero away from B=0 and B*C=1.
+# Symbolic B,C are retained, so for every degree this also checks the complete
+# residual root-product coefficient, not only its generic nonvanishing.
 for degree in range(3, 11):
     coefficients = {1: sp.Integer(1), 2: sp.Integer(2), 3: sp.Integer(1)}
     coefficients.update({k: sp.Integer(k + 1) for k in range(4, degree + 1)})
@@ -102,9 +102,18 @@ for degree in range(3, 11):
     expected = 0 if degree == 3 else degree**2 - 3 * degree - 2
     assert valuation == expected
     lowest = sp.factor(discriminant.coeff_monomial(P**valuation))
-    assert sp.factor(lowest.subs({B: 2, C: 3})) != 0
-    assert sp.factor(lowest.subs(B, 0)) == 0
-    assert sp.factor(lowest.subs(C, 1 / B)) == 0
+    if degree >= 4:
+        r = degree - 3
+        expected_slice = (
+            sp.Rational(r**r, 4)
+            * coefficients[1] ** 4
+            * coefficients[3] ** (r + 1)
+            * coefficients[degree] ** (r - 1)
+            * B**2
+            * (1 - B * C)
+        )
+        ratio = sp.factor(lowest / expected_slice)
+        assert ratio in (sp.Integer(-1), sp.Integer(1))
 
 
 # Uniform Newton polygon and valuation ledger.
@@ -140,5 +149,5 @@ print("PASS: cubic resultant saturation and discriminant slice are exact")
 print("PASS: quartic discriminant order and saturated slice are exact")
 print("PASS: q=0 and t=0 give the complete Pi=0 affine chart")
 print("PASS: B=0 extra-sheet valuations are exact")
-print("PASS: discriminant orders agree through degree ten")
+print("PASS: discriminant orders and saturated slices agree through degree ten")
 print("PASS: Newton ledgers and boundary valuations agree through degree 64")

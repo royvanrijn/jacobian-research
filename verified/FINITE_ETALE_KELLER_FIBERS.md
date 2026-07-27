@@ -111,14 +111,24 @@ is nonzero. Thus every finite étale \(K\)-algebra of rank \(N\) is
 \(K[T]/(P)\) for a squarefree degree-\(N\) polynomial.
 
 Consequently every rank at least three occurs by the construction above.
-Rank one is realized by the identity. Rank two is impossible: a degree-two
-Keller map has a separable quadratic, hence Galois, function-field extension;
-the Campbell--Razar--Wright Galois case makes it an automorphism. For an
-arbitrary characteristic-zero ground field, descend to a finitely generated
-subfield, embed it in \(\mathbb C\), apply the complex theorem, and descend the
-unique formal inverse.
+Rank one is realized by the identity. Rank two is impossible by the
+standalone degree-two lemma in the paper. Precisely, descend the coefficients
+of a hypothetical map to a finitely generated field \(K_0/\mathbb Q\).
+On a nonempty target open the map is finite locally free; its rank, and hence
+its generic degree, is unchanged by every scalar extension. After choosing
+\(K_0\hookrightarrow\mathbb C\), the complex function-field extension is
+therefore still quadratic. It is separable and normal, so Campbell's
+unnumbered theorem on p. 244 applies and makes the complexified map a
+polynomial automorphism. The coordinate-ring homomorphism is then an
+isomorphism already over \(K_0\) by faithful flatness, and hence over \(K\).
+This contradicts degree two because an automorphism has function-field degree
+one. Razar and Wright are later algebraic sources for the same Galois case.
 
-Hence the possible ranks of nonzero Keller fibers are exactly
+This is an exclusion of the generic degree before a target point is chosen.
+An empty fiber is not a nonzero Keller fiber under the definition above, and
+a shorter special fiber of a map of another generic degree is not full.
+Neither affects the classification. Hence the possible ranks of nonzero full
+Keller fibers are exactly
 
 \[
 \boxed{1,3,4,5,\ldots}.

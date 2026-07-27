@@ -112,19 +112,19 @@ The arithmetic applications include:
   factorization data, and intersectivity;
 - compatibility with extension of the ground field.
 
-The active paper is deliberately narrower than the surrounding repository.
-An addendum records, without using them as theorems, two directions reserved
-for later work:
+The active paper is deliberately narrower than the surrounding repository,
+but it now includes the exact reduced nonproperness theorem, the complete
+`Pi = 0` fiber table, and the boundary-sheet ledger in
+`sections/02b-nonproperness.tex`.  These are ordinary mathematical proofs,
+not Lean theorems.  The theorem defines the Jelonek locus as a reduced
+graph-boundary/non-finite locus, uses Jelonek's complex multiplicity criterion
+only after a characteristic-zero descent and base-change argument, and proves
+the exact global `Pi`-adic discriminant factor in `K[B,C][Pi]`.
 
-- the expected exact reduced nonproperness locus, its `Pi = 0` Newton
-  stratification, and boundary normalization;
-- a candidate fixed quintic gauge with infinitely many Hasse-failing fibers.
-
-The corresponding working proofs and checkers remain in the repository, but
-neither direction is load-bearing for the prescribed-fiber theorem.
-The earlier detailed drafts are retained as
-`sections/02b-nonproperness.tex` and `sections/05-infinite-family.tex`; they
-are no longer included by `main.tex`.
+The final addendum retains one direction without theorem status: a candidate
+fixed quintic gauge with infinitely many Hasse-failing fibers.  Its working
+draft remains in `sections/05-infinite-family.tex` and is not included by
+`main.tex`.
 
 The directory name is retained as a stable repository path from the earlier
 draft.
@@ -170,7 +170,7 @@ Singular -q scripts/verify_universal_quadratic_gauge.sing
 .venv/bin/python scripts/verify_finite_etale_keller_fibers.py
 ```
 
-The deferred boundary computations can still be checked separately with:
+The independent nonproperness and boundary audit can be run with:
 
 ```bash
 .venv/bin/python scripts/verify_quadratic_gauge_nonproperness.py

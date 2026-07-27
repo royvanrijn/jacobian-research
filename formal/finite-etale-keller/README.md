@@ -220,7 +220,9 @@ on the entire fiber functor.
 The actual map, determinant, geometric degree, effective degree, literal
 fiber, finite étaleness, quotient translation, naturality, coordinate
 algebraic independence, and explicit source-over-target function-field
-comparison are formalized. The remaining paper-level extensions are:
+comparison are formalized. The paper now proves exact reduced nonproperness
+and boundary-sheet accounting separately. The remaining formalization tasks
+for paper-level theorems are:
 
 1. formalize the exact nonproperness locus, boundary-sheet accounting, and
    discriminant-order statements;
@@ -237,9 +239,9 @@ comparison are formalized. The remaining paper-level extensions are:
 
 The current certificate therefore proves the complete constructive,
 scheme-theoretic, and geometric-degree polynomial-presentation layer, while
-keeping nonproperness, monodromy, monogenicity, the classical rank-two
-obstruction, and the remaining nonarchimedean arithmetic inputs explicitly
-separated.
+keeping the separately proved nonproperness theorem, monodromy, monogenicity,
+the classical rank-two obstruction, and the remaining nonarchimedean
+arithmetic inputs explicitly outside the Lean certificate.
 
 ## Build
 

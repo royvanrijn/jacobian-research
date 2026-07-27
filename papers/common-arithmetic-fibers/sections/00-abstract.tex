@@ -32,6 +32,10 @@ from a birational parametrization of the repeated-root curve.  Thus every
 prescribed algebra occurs as a special fiber of a maximally symmetric generic
 cover.  Over a Hilbertian field, each constructed map has infinitely many
 connected full fibers whose splitting fields have group \(S_N\).
+The reduced nonproperness locus is exactly the zero set of the inverse
+discriminant.  Direct charts give every fiber on \(\Pi=0\), while a uniform
+Newton calculation gives the exact global discriminant order
+\(N^2-3N-2\) for \(N\geq4\).
 
 Connectedness, field decomposition, Galois action, real signature, local
 points, and scalar extension pass to the Keller fiber unchanged.  Over
@@ -45,5 +49,7 @@ the \(6N+2\) degree bound, the source-function-field comparison and geometric
 degree \(N\), and the natural equivalence between the literal map fiber and
 \(K[T]/(P)\), including finite \'etaleness and rank.  Independent SymPy and
 Singular calculations check the coordinate identities, Jacobian, degree
-profile, and concrete quotient reconstruction from separate implementations.
+profile, concrete quotient reconstruction, and nonproperness boundary from
+separate implementations.  The nonproperness theorem itself remains an
+ordinary proof rather than a Lean theorem.
 \end{abstract}

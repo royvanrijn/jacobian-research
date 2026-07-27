@@ -35,37 +35,94 @@ The construction used in the proof can be read from left to right:
 The last arrow is an isomorphism of schemes.  It is not merely a matching of
 $K$-points or a count after passing to an algebraic closure.
 
-\begin{lemma}[The degree-two exclusion over $K$]\label{lem:degree-two}
-Let $K$ be any field of characteristic zero.  A Keller map
-$F:\A^m_K\to\A^m_K$ of geometric degree two is a polynomial automorphism.
+\begin{lemma}[Degree two is impossible, over every characteristic-zero field]
+\label{lem:degree-two}
+Let $K$ be a field of characteristic zero, let $m\geq1$, and let
+\[
+ F=(F_1,\ldots,F_m)\in K[X_1,\ldots,X_m]^m
+ \quad\text{satisfy}\quad
+ \det\left(\frac{\partial F_i}{\partial X_j}\right)\in K^*.
+\]
+Then the induced function-field extension cannot have degree two:
+\[
+ \left[
+ K(X_1,\ldots,X_m):K(F_1,\ldots,F_m)
+ \right]\ne2.
+\]
 \end{lemma}
 
 \begin{proof}
-Put $L=K(x_1,\ldots,x_m)$ and $M=K(F_1,\ldots,F_m)$.  The extension $L/M$
-has degree two, so it is separable and Galois.  The Galois case of the
-Jacobian theorem was proved over $\mathbb C$ by Campbell and later treated
-algebraically by Razar and independently by Wright
-\cite{Campbell,Razar,Wright}.
+We give the scalar-extension and descent steps because the external theorem
+used here is most conveniently cited over $\mathbb C$.
 
-Those results are usually quoted over $\mathbb C$, so we record the descent to
-our ground field.  Choose a finitely generated subfield $K_0\subset K$
-containing the coefficients of $F$, and view $F$ as a map over $K_0$.  After
-shrinking the target it is finite locally free, with rank equal to its generic
-degree.  Flat base change preserves this rank.  Since the map over $K$ has
-degree two, the map over $K_0$ and every further scalar extension also have
-degree two.
-
-Choose an embedding $K_0\hookrightarrow\mathbb C$.  The complexified
-function-field extension is quadratic and Galois, so Campbell's theorem makes
-$F_{\mathbb C}$ a polynomial automorphism.  Equivalently, the homomorphism
+\smallskip
+\noindent\emph{The precise external input.}
+Campbell's unnumbered theorem
+\cite[Theorem, p.~244]{Campbell} states that a polynomial map
+$H:\mathbb C^m\to\mathbb C^m$ has a polynomial inverse if its Jacobian
+determinant never vanishes and the induced extension
 \[
- \varphi:K_0[Y_1,\ldots,Y_m]\longrightarrow K_0[X_1,\ldots,X_m],
- \qquad Y_i\longmapsto F_i,
+ \mathbb C(H_1,\ldots,H_m)\subset
+ \mathbb C(X_1,\ldots,X_m)
 \]
-becomes an isomorphism after tensoring with $\mathbb C$.  Faithful flatness
-then forces both $\ker\varphi$ and $\operatorname{coker}\varphi$ to vanish
-already over $K_0$.  Thus $\varphi$ is an isomorphism, and base change gives a
-polynomial inverse over $K$.
+is normal.  In characteristic zero ``normal'' here is equivalent to
+``Galois,'' because the finite function-field extension is separable.
+Razar and, independently, Wright later gave algebraic treatments of this
+Galois case \cite{Razar,Wright}; the proof below needs only Campbell's stated
+complex theorem.
+
+\smallskip
+\noindent\emph{Generic degree survives scalar extension.}
+Assume for contradiction that the displayed degree over $K$ is two.  Let
+$K_0\subset K$ be the subfield generated over $\mathbb Q$ by the finitely
+many coefficients of the $F_i$, and write $F_0$ for the same formulas over
+$K_0$.  The nonzero Jacobian determinant makes
+\begin{equation}
+ \varphi_0:K_0[Y_1,\ldots,Y_m]\longrightarrow
+ K_0[X_1,\ldots,X_m],
+ \qquad Y_i\longmapsto F_i,
+ \label{eq:degree-two-coordinate-map}
+\end{equation}
+injective and generically finite.  Indeed, the Jacobian criterion in
+characteristic zero makes the $F_i$ algebraically independent, so both
+fraction fields in \eqref{eq:degree-two-coordinate-map} have transcendence
+degree $m$ and their extension is finite.  If its degree is $d_0$, there is a
+nonempty principal open $U_0$ of the target on which $F_0$ is finite locally
+free of rank $d_0$: first clear denominators in the finite extension of
+fraction fields, and then apply generic freeness.  For every field extension
+$E/K_0$, the base change over the nonempty open $(U_0)_E$ is again finite
+locally free of rank $d_0$.  Taking generic fibers gives
+\begin{equation}
+ [E(X_1,\ldots,X_m):E(F_1,\ldots,F_m)]=d_0.
+ \label{eq:degree-two-base-change}
+\end{equation}
+Applying \eqref{eq:degree-two-base-change} first to $E=K$ shows $d_0=2$.
+
+\smallskip
+\noindent\emph{Why degree two gives Campbell's field hypothesis.}
+Because $K_0$ is finitely generated over $\mathbb Q$, choose an embedding
+$K_0\hookrightarrow\mathbb C$.  Equation
+\eqref{eq:degree-two-base-change} with $E=\mathbb C$ says that
+\[
+ \mathbb C(X_1,\ldots,X_m)/
+ \mathbb C(F_1,\ldots,F_m)
+\]
+has degree two.  It is separable in characteristic zero.  Every separable
+quadratic field extension is normal (the second root of the minimal
+polynomial of an element is its trace minus that element), hence it is
+Galois.  Thus the complexified map satisfies exactly the hypotheses of
+Campbell's theorem and is a polynomial automorphism.
+
+\smallskip
+\noindent\emph{Faithfully flat descent of the inverse.}
+The base change of \eqref{eq:degree-two-coordinate-map} along
+$K_0\hookrightarrow\mathbb C$ is therefore an isomorphism.  Since
+$\mathbb C$ is faithfully flat over $K_0$, tensoring the kernel and cokernel
+of $\varphi_0$ with $\mathbb C$ detects their vanishing.  Hence $\varphi_0$
+itself is an isomorphism.  After base change to $K$, the original $F$ is a
+polynomial automorphism, so
+$K(F_1,\ldots,F_m)=K(X_1,\ldots,X_m)$ and its function-field degree is one.
+This contradicts the assumed degree two.
 \end{proof}
 
 \begin{theorem}[Prescribed finite-\'etale realization]
@@ -195,7 +252,13 @@ degree.  The identity map realizes the unique rank-one object.
 Theorem~\ref{thm:main} realizes every rank-$N$ finite \'etale object in
 affine three-space for every $N\geq3$, while
 Lemma~\ref{lem:degree-two} shows that no geometric-degree-two Keller map
-exists.
+exists.  This last exclusion concerns the generic function-field degree
+before any target point is selected.  Thus an empty special fiber cannot
+create a rank-two object; it is not a nonzero finite \'etale scheme at all.
+Nor can a shorter special fiber of a map of some other geometric degree:
+such a fiber fails the defining fullness equality and is not an object of
+$\mathsf{FullFib}_{3,2}(K)$.  Empty and non-full fibers therefore have no
+bearing on the asserted rank set.
 \end{proof}
 
 \begin{remark}[What the categorical statement remembers]

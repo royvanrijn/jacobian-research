@@ -55,21 +55,61 @@ No Hasse-failing Keller fiber over \(\Q\) has rank below five.  Hence
 \end{theorem}
 
 \begin{proof}
-The polynomial \eqref{eq:BB} has no rational root.  Let $p\neq3$ be prime.  If
-$p\equiv1\pmod3$, then $T^2+T+1$ has a simple root modulo $p$.  If
-$p\equiv2\pmod3$, cubing is bijective on $\mathbb F_p^*$, so $T^3-19$ has a
-simple root modulo $p$.  At $p=3$, write $T=1+3u$.  After division by $9$, the
-equation $T^3=19$ becomes
+Write
 \[
- u+3u^2+3u^3=2.
+ g(T)=T^3-19,\qquad q(T)=T^2+T+1.
 \]
-It has the simple solution $u\equiv2\pmod3$ and therefore lifts.  The cubic
-factor has a real root.  Thus \eqref{eq:BB} has a root over every completion of
-$\Q$.
+The following table is the complete nonarchimedean local-solubility audit.
+In a generic row, the displayed residue root is simple and hence lifts by
+Hensel's lemma.  For a finite base-case audit we remove \(2,3,19\) from the
+generic rows and give a direct witness at each of them.
+\begin{center}
+\small
+\begin{tabular}{c|c|c|c}
+prime $p$ & factor & residue or approximate root & Hensel check\\
+\hline
+$p\notin\{2,3,19\}$, $p\equiv2\pmod3$
+ & $g$ & $a^3=19$ in $\mathbb F_p$
+ & $g'(a)=3a^2\neq0$\\
+$p\notin\{2,3,19\}$, $p\equiv1\pmod3$
+ & $q$ & $\zeta\in\mathbb F_p^\times$, $\operatorname{ord}(\zeta)=3$
+ & $q'(\zeta)=2\zeta+1\neq0$\\
+$p=2$ & $g$ & $a=1$ & $g(1)=-18$, $g'(1)=3\in\mathbb Z_2^\times$\\
+$p=3$ & $g$ & $a=-2$ &
+ $v_3(g(-2))=3>2=2v_3(g'(-2))$\\
+$p=19$ & $q$ & $a=7$ &
+ $q(7)=57$, $q'(7)=15\in\mathbb Z_{19}^\times$
+\end{tabular}
+\end{center}
+Here are the justifications behind the two generic rows.  If
+$p\equiv2\pmod3$, then $\gcd(3,p-1)=1$, so cubing is an automorphism of
+$\mathbb F_p^\times$; since $p\neq19$, it gives a nonzero $a$ with
+$a^3=19$, and $p\neq3$ makes $3a^2$ nonzero.  If $p\equiv1\pmod3$, the
+cyclic group $\mathbb F_p^\times$ contains an element $\zeta$ of order three.
+Then $\zeta\neq1$ and
+\[
+ 0=\zeta^3-1=(\zeta-1)q(\zeta).
+\]
+The root is simple because the two roots of $q$ can coincide only when its
+discriminant $-3$ vanishes, which is excluded.  The rows $p=2$ and $p=19$
+use ordinary simple-root Hensel.  The $p=3$ row uses the strong form of
+Hensel's lemma: $g(-2)=-27$ and $g'(-2)=12$, so
+$v_3(g(-2))>2v_3(g'(-2))$.
 
-The map below has fiber exactly $\Spec\Q[T]/(P_5)$, so its local and global
-points are the same.  Lemma~\ref{lem:degree-four-barrier} proves that no smaller
-rank can work.
+This covers every finite prime, since every prime outside
+$\{2,3,19\}$ is congruent to $1$ or $2$ modulo $3$.  At the real place,
+$g(2)=-11<0<8=g(3)$, so the intermediate value theorem supplies a real
+root.
+
+There is no rational root: the rational-root theorem excludes a root of
+$g$ (none of $\pm1,\pm19$ is a root), while $q$ has discriminant $-3$.
+Moreover, $P_5=gq$ is squarefree: both factors are squarefree and they are
+coprime, since a root of $q$ has cube $1$ and therefore cannot be a root of
+$g$.  The map below has geometric degree five and, by
+Corollary~\ref{cor:squarefree-gauge}, has fiber exactly
+$\Spec\Q[T]/(P_5)$.  Its local and global points are consequently exactly
+those just audited.  Finally, Lemma~\ref{lem:degree-four-barrier} applies to
+every complete regular fiber of rank at most four and proves rank-minimality.
 \end{proof}
 
 For reference, here is the actual map.  It comes directly from the normalized

@@ -1,8 +1,8 @@
 # Verification matrix
 
-This file records the proof layer for every load-bearing claim in *Prescribed
-Finite Étale Algebras as Full Fibers of Keller Maps with Symmetric
-Monodromy*.  “Lean” means a theorem in the pinned
+This file records the proof layer for every load-bearing claim and every
+separately stated boundary theorem in *Prescribed Finite Étale Algebras as
+Full Fibers of Keller Maps with Symmetric Monodromy*.  “Lean” means a theorem in the pinned
 `formal/finite-etale-keller` project with no `sorry` and no project-specific
 axiom.  Symbolic checks are exact independent audits, not substitutes for the
 corresponding mathematical argument.
@@ -30,11 +30,14 @@ corresponding mathematical argument.
 | Geometric and arithmetic generic monodromy are `S_N` for every admissible seed | Morse-slice lemma, specialization/decomposition-group lemma, and full symmetric generic monodromy theorem | Not formalized | Exact `dC/dB=-r^2` audit in `verify_root_engineered_quadratic_gauge.py`; Serre's Morse-polynomial theorem |
 | Infinitely many connected full `S_N`-fibers over a Hilbertian field | Hilbertian specialization corollary, including the arithmetic/geometric equality and regularity argument | Not formalized | Hilbert irreducibility |
 | Every finite étale algebra over an infinite field is monogenic | Lemma 4.1 | Not yet formalized | Discriminant/Vandermonde proof |
-| No characteristic-zero Keller map has generic degree two | Lemma 2.2 | Not formalized | Campbell–Razar–Wright plus faithfully flat descent |
+| No characteristic-zero Keller map has generic degree two | Lemma 2.2 | Not formalized | Campbell's unnumbered theorem on p. 244 (normal complex function-field extension), scalar-invariance of generic rank on a finite-locally-free open, quadratic separability/normality, and faithfully flat descent; Razar and Wright are cited as later algebraic treatments |
 | Exact displayed quintic fiber at `(1,0,-38)` is represented by the finite étale algebra `ℚ[T]/((T³-19)(T²+T+1))`, naturally in test algebras, and has rank five | Theorem 5.2, displayed map and fiber | `ExplicitPolynomial.lean`, `ExplicitMap.lean`, `ExplicitFiber.lean`; theorems `integralFiberRepresentingEquiv_natural`, `p5_quotient_etale`, `p5_quotient_finite`, and `p5_quotient_rank` | Exact quintic checker |
 | Explicit quintic has no rational point and has real and three-adic points | Theorem 5.2 | `p5_no_rational_root`, `integralFiberPoint_rat_isEmpty`, `integralFiberPoint_real_nonempty`, `integralFiberPoint_threeAdic_nonempty` | Rational-root theorem, intermediate value theorem, and Hensel's lemma at `-2` |
-| Optimal rank-five Hasse failure | Theorem 5.2 | The exact polynomial, map, literal quotient fiber, naturality, determinant, rank, rational obstruction, archimedean point, and `ℚ_3` point are formalized; the remaining nonarchimedean local points and optimality are not | Local-solubility proof and degree-four barrier |
+| Optimal rank-five Hasse failure | Theorem 5.2: exhaustive prime table, direct Hensel data at `2,3,19`, and the degree-four barrier | The exact polynomial, map, literal quotient fiber, naturality, determinant, rank, rational obstruction, archimedean point, and `ℚ_3` point are formalized; the remaining nonarchimedean local points and optimality are not | Exact exceptional-prime assertions and residue-cover regression in `verify_minimal_hasse_keller_fiber.py`; ordinary proof handles all primes and the lower bound |
 | Compatibility of the realization with extension of the ground field | Base-change proposition in Section 4 | `GeneralGaugeBaseChange.lean` proves coefficientwise compatibility of translation, the full supplied-parameter map, normalization, admissibility, squarefreeness, and distinguished target, together with `L ⊗[K] AdjoinRoot P ≃ₐ[L] AdjoinRoot (P.map f)` | Coefficientwise paper proof |
+| Exact reduced nonproperness locus `S_F = V_red(Disc_S E)` over every algebraically closed characteristic-zero field | Exact reduced quadratic-gauge nonproperness theorem: graph-boundary definition, fiber-cardinality criterion, localized fibers, and complete `Π=0` table | Not formalized; explicitly listed in the remaining formal boundary | Jelonek Proposition 6 is stated over `ℂ`; the paper supplies descent to a finitely generated field, embedding into `ℂ`, and graph-boundary/fiber base-change invariance |
+| Complete `Π=0` fiber table and exact global discriminant factor `Π^(N²-3N-2)` for `N ≥ 4` | Direct `q=0` and `t=0` source charts; generic-DVR Newton polygon plus an explicit residual root-product coefficient in `K[B,C][Π]` | Not formalized | `verify_quadratic_gauge_nonproperness.py` checks the charts, exact orders and saturated-slice coefficients through degree ten, and the Newton ledger through degree 64 |
+| Boundary normalization and every lost-sheet branch on the repeated-root, generic `Π=0`, `B=0`, and `BC=1` strata | Boundary normalization and explicit escape-arcs proposition | Not formalized | Exact reconstruction formulas, Newton–Puiseux/binomial normalization, and the independent boundary-valuation audit |
 
 ## Independent exact audits rerun
 
@@ -49,26 +52,27 @@ The following independent commands were rerun successfully on 27 July 2026:
   through degree twelve;
 - `verify_finite_etale_keller_fibers.py`: degrees three through five,
   quotient-ring reconstruction in both directions, the exact quintic scaling,
-  determinant, target, and inverse polynomial; and
+  determinant, target, and inverse polynomial;
+- `verify_quadratic_gauge_nonproperness.py`: the cubic and quartic
+  discriminant specializations, direct `q=0` and `t=0` charts, exact
+  discriminant orders and saturated-slice coefficients through degree ten,
+  and the Newton/boundary ledger through degree 64; and
 - `verify_universal_quadratic_gauge.sing`: a fresh expansion of the generic
   degree-six Jacobian over a rational function field in six independent
   coefficients, together with the `(7,38,36)` degree profile.
 
 These are exact symbolic computations from implementations independent of the
 Lean development. They audit the displayed algebra but do not replace the
-ordinary proofs of monodromy, Hilbert specialization, degree two, or the
-remaining local arithmetic.
+ordinary proofs of nonproperness, boundary normalization, monodromy, Hilbert
+specialization, degree two, or the remaining local arithmetic.
 
 ## Deferred directions
 
-The active paper does not use the following statements as theorems.  They are
-recorded only in its final addendum and remain working projects:
+The active paper does not use the following statement as a theorem.  It is
+recorded only in its final addendum and remains a working project:
 
 | Direction | Current evidence | Missing before theorem status |
 |---|---|---|
-| Reduced nonproperness set equals the inverse-discriminant zero set | Independent discriminants, direct `t=0` and `q=0` fibers, and the localized fiber theorem on `Pi != 0` | Algebraic properness argument in full field generality and a precise reduced formulation |
-| `Pi=0` sheet ledger and discriminant order `N^2-3N-2` | Newton polygons through degree 64 and discriminants through degree 10 | Uniform residual-polynomial proof and boundary normalization |
-| Exhaustive branches over every special boundary stratum | Explicit Laurent arcs and valuation calculations | Global compactification/normalization proof |
 | One fixed map with infinitely many Hasse-failing fibers | Exact inverse-family identity and preliminary local/counting proof | Separate audit of all local cases and the height asymptotic |
 
 ## Formal theorem now obtained

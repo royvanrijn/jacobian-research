@@ -79,19 +79,34 @@ and a specialization lemma embeds that group into the generic geometric
 group.  Over a Hilbertian field, the same fixed map consequently has
 infinitely many connected full fibers with splitting-field group \(S_N\).
 
+The same inverse equation detects precisely where affine sheets are lost.
+Over an algebraic closure, the reduced nonproperness locus is
+\[
+ V_{\mathrm{red}}\!\left(
+ \operatorname{Disc}_S E_{\Pi,B,C}\right).
+\]
+This statement is set-theoretic, or equivalently an equality of reduced
+closed subschemes; it does not identify the generally nonreduced
+discriminant scheme with a scheme structure on the nonproperness locus.  The
+slice \(\Pi=0\) is treated separately by direct source charts and a Newton
+polygon calculation.
+
 The reconstruction is stronger than a count of geometric points.  Its
 formulas are natural in the test algebra, so they identify the whole fiber
 functor, including nilpotents and every scalar extension.  After translating
 back from \(S\) to \(T\), the literal fiber is the original algebra
 \(K[T]/(P)\).  Nothing arithmetic has been replaced by a numerical proxy.
 
-The proof has five parts.  First, a coefficientwise calculation builds the
+The proof has six parts.  First, a coefficientwise calculation builds the
 all-degree map and proves its constant Jacobian and degree bound.  Second, the
 root-to-source formulas give the localized fiber theorem and its squarefree
 corollary.  Third, irreducibility and the explicit source-field comparison
 give the actual generic degree.  Fourth, the repeated-root parametrization,
 the Morse-polynomial theorem, and specialization give full symmetric
-monodromy.  Finally, translation prescribes the polynomial quotient, while
+monodromy.  Fifth, direct boundary charts, the characteristic-zero
+fiber-cardinality criterion, and a uniform discriminant calculation identify
+the exact reduced nonproperness locus.  Finally, translation prescribes the
+polynomial quotient, while
 monogenicity passes from polynomial quotients to arbitrary finite \'etale
 algebras.  The Campbell--Razar--Wright theorem separately excludes geometric
 degree two.
@@ -121,7 +136,8 @@ checks that the determinant-one normalization is an invertible target
 rescaling and exposes one theorem combining determinant, geometric degree,
 literal fiber, naturality, finite \'etaleness, rank, and the degree bound.
 Monogenicity for arbitrary finite \'etale algebras, symmetric monodromy,
-Hilbert irreducibility, the degree-two theorem, and the remaining classical
-arithmetic inputs are ordinary proofs.  For the quintic, Lean proves the exact
-fiber, rank, finite \'etaleness, absence of rational points, and the existence
-of real and three-adic points.
+Hilbert irreducibility, exact nonproperness and boundary-sheet accounting, the
+degree-two theorem, and the remaining classical arithmetic inputs are
+ordinary proofs.  For the quintic, Lean proves the exact fiber, rank, finite
+\'etaleness, absence of rational points, and the existence of real and
+three-adic points.

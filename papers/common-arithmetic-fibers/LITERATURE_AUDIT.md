@@ -49,7 +49,10 @@ The relevant historical sources are:
 - L. A. Campbell,
   *A condition for a polynomial map to be invertible*, Math. Ann. 205
   (1973), 243--248,
-  [DOI](https://doi.org/10.1007/BF01349234), for the complex Galois case;
+  [DOI](https://doi.org/10.1007/BF01349234), specifically the unnumbered
+  theorem on p. 244: a polynomial map of complex affine space has a
+  polynomial inverse when its Jacobian determinant never vanishes and its
+  induced function-field extension is normal;
 - M. Razar,
   *Polynomial maps with constant Jacobian*, Israel J. Math. 32 (1979),
   97--106,
@@ -60,12 +63,21 @@ The relevant historical sources are:
 
 The manuscript does not rely on an unverified field-general formulation of
 one of these sources. Instead it derives the arbitrary characteristic-zero
-field statement from Campbell's complex theorem: descend the coefficients to
-a finitely generated subfield, embed it into `C`, and use stability of generic
-degree under scalar extension. The resulting coordinate-ring map becomes an
-isomorphism over `C`, hence was already an isomorphism by faithful flatness.
-This supplies exactly the ground-field generality required for the rank-two
-exclusion.
+field statement from Campbell's exact complex theorem. It first descends the
+coefficients to a finitely generated subfield and proves stability of generic
+degree by restricting the map to a nonempty target open on which it is finite
+locally free. Base change preserves the rank of that finite locally free map.
+After embedding the coefficient field into `C`, geometric degree two
+therefore remains degree two; in characteristic zero the resulting quadratic
+extension is separable and normal, so Campbell applies. Finally the
+coordinate-ring map, now an isomorphism after tensoring with `C`, was already
+an isomorphism by faithful flatness. An automorphism has function-field degree
+one, giving the required contradiction.
+
+This exclusion is generic and precedes any choice of a special fiber. Empty
+fibers are not nonzero finite étale objects, and shorter fibers of maps of
+some other geometric degree are not full. Neither kind of fiber contributes
+to the full-fiber rank classification.
 
 ## Closest located sources to the prescribed-algebra realization theorem
 
@@ -137,7 +149,7 @@ No located source states any of the following:
    inverse polynomial of an explicit Keller fiber after translation;
 2. every finite étale algebra of rank at least three occurs as a full fiber of
    a polynomial Keller map of `A^3`;
-3. the possible ranks of nonzero Keller fibers are exactly
+3. the possible ranks of nonzero full Keller fibers are exactly
    `1,3,4,5,...`.
 
 The manuscript should retain the phrase **“to our knowledge”** and should not

@@ -39,15 +39,18 @@ If `gdeg(F)=2`, then
 \mathbb C(x_1,x_2,x_3)/\mathbb C(F_1,F_2,F_3)
 \]
 
-is a separable quadratic extension and is therefore Galois. Campbell's
-Galois theorem makes `F` a polynomial automorphism. Razar and independently
-Wright gave subsequent algebraic treatments.
+is a separable quadratic extension and is therefore normal and Galois.
+Campbell's unnumbered theorem on p. 244—nonvanishing Jacobian plus a normal
+complex function-field extension implies a polynomial inverse—makes `F` a
+polynomial automorphism. Razar and independently Wright gave subsequent
+algebraic treatments.
 
 The same exclusion works over every characteristic-zero ground field. The
 [finite-étale Keller-fiber note](FINITE_ETALE_KELLER_FIBERS.md) gives the
 explicit descent: move the coefficients to a finitely generated subfield,
-embed it into `C`, use stability of generic degree under scalar extension,
-and descend the unique formal/polynomial inverse. Thus no
+use a finite-locally-free generic open to prove invariance of generic degree
+under scalar extension, embed the coefficient field into `C`, and descend
+the resulting coordinate-ring isomorphism by faithful flatness. Thus no
 algebraic-closedness assumption is required.
 
 Every noninvertible Keller map therefore has geometric degree at least three.
