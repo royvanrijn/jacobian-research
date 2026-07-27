@@ -187,3 +187,11 @@ The checker verifies the local residue covering, the \(3\)-adic lifts,
 absence of rational roots, squarefreeness, tangent normalization,
 weighted admissibility, polynomial expansion, constant Jacobian,
 suspension identities, target conversion, and quotient-ring reconstruction.
+
+The Lean module
+`formal/finite-etale-keller/FiniteEtaleKeller/ExplicitAllPadicPoints.lean`
+separately proves the direct Hensel witnesses at \(2,3,19\), the two generic
+prime classes, and the resulting point on the literal fiber over every
+\(\mathbb Q_p\). Together with the existing rational and real results it
+exports `integralFiberPoint_hasse_certificate`. The degree-four
+Chebotarev barrier, and hence rank-minimality, remains an ordinary proof.

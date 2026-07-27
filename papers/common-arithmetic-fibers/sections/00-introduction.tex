@@ -40,6 +40,22 @@ or output rescaling.  The higher-degree construction is therefore an
 extension of that map rather than a separate template with the same
 Jacobian.
 
+The geometric origin of this seed is the multiplication map for binary forms
+\[
+ (L,Q)\longmapsto LQ,\qquad
+ \operatorname{Sym}^1(K^2)\times\operatorname{Sym}^2(K^2)
+ \longrightarrow\operatorname{Sym}^3(K^2).
+\]
+The relative scaling \((L,Q)\mapsto(\lambda L,\lambda^{-1}Q)\) is removed by
+the normalization \(\operatorname{Res}(L,Q)=1\).  A generic cubic has three
+possible marked linear factors, so the normalized map has three generic
+inverse branches; the nonvanishing resultant separates the marked root from
+the residual quadratic and gives local invertibility.  In a suitable affine
+three-space chart this is precisely the announced cubic map
+\cite{TaoDigest}.  The quadratic gauge introduced below keeps the same
+marked-root reconstruction but allows the scalar inverse equation to be an
+arbitrary polynomial \(G\).
+
 The displayed coordinates are fairly large, but the inverse problem is
 deliberately small.  It is organized around
 \[
@@ -139,5 +155,5 @@ Monogenicity for arbitrary finite \'etale algebras, symmetric monodromy,
 Hilbert irreducibility, exact nonproperness and boundary-sheet accounting, the
 degree-two theorem, and the remaining classical arithmetic inputs are
 ordinary proofs.  For the quintic, Lean proves the exact fiber, rank, finite
-\'etaleness, absence of rational points, and the existence of real and
-three-adic points.
+\'etaleness, absence of rational points, and the existence of points over
+\(\R\) and every \(\Q_p\).

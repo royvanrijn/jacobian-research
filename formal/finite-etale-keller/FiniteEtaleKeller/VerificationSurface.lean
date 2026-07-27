@@ -8,6 +8,7 @@ import FiniteEtaleKeller.GeneralGaugeBaseChange
 import FiniteEtaleKeller.AnnouncedCounterexample
 import FiniteEtaleKeller.ExplicitFiber
 import FiniteEtaleKeller.ExplicitThreeAdicPoint
+import FiniteEtaleKeller.ExplicitAllPadicPoints
 import FiniteEtaleKeller.GeneralGaugeLocalizedFiber
 import FiniteEtaleKeller.GenericInverseIrreducibility
 import FiniteEtaleKeller.GeneralGaugeFunctionField
@@ -186,10 +187,23 @@ example : IsEmpty (ExplicitQuintic.IntegralFiberPoint ℚ) :=
 example : Nonempty (ExplicitQuintic.IntegralFiberPoint ℝ) :=
   ExplicitQuintic.integralFiberPoint_real_nonempty
 
-/-- A first nonarchimedean case is fully formal: the exact displayed fiber
-has a point over the three-adic field. -/
+/-- The original exceptional case remains a public signature guard. -/
 example : Nonempty (ExplicitQuintic.IntegralFiberPoint ℚ_[3]) :=
   ExplicitQuintic.integralFiberPoint_threeAdic_nonempty
+
+/-- Every nonarchimedean local fiber is nonempty. -/
+example (p : ℕ) [Fact p.Prime] :
+    Nonempty (ExplicitQuintic.IntegralFiberPoint ℚ_[p]) :=
+  ExplicitQuintic.integralFiberPoint_padic_nonempty p
+
+/-- The exact displayed fiber is now formally certified as a Hasse failure:
+no rational point, a real point, and a point over every `p`-adic field. -/
+example :
+    IsEmpty (ExplicitQuintic.IntegralFiberPoint ℚ) ∧
+      Nonempty (ExplicitQuintic.IntegralFiberPoint ℝ) ∧
+        ∀ (p : ℕ) [Fact p.Prime],
+          Nonempty (ExplicitQuintic.IntegralFiberPoint ℚ_[p]) :=
+  ExplicitQuintic.integralFiberPoint_hasse_certificate
 
 /-- Signature guard for the final construction-level certificate. -/
 example (P : K[X]) (hdeg : 3 ≤ P.natDegree) :
@@ -233,6 +247,8 @@ example (P : K[X]) (hP : Squarefree P) (hdeg : 3 ≤ P.natDegree) :
 #print axioms ExplicitQuintic.integralFiberPoint_rat_isEmpty
 #print axioms ExplicitQuintic.integralFiberPoint_real_nonempty
 #print axioms ExplicitQuintic.integralFiberPoint_threeAdic_nonempty
+#print axioms ExplicitQuintic.integralFiberPoint_padic_nonempty
+#print axioms ExplicitQuintic.integralFiberPoint_hasse_certificate
 #print axioms automaticRealizationMap_certificate
 #print axioms automaticJacobianOneFiberRepresentingEquiv_natural
 #print axioms automaticRealization_pageOne

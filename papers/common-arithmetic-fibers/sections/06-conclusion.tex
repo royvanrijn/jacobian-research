@@ -15,6 +15,19 @@ produced by the construction has geometric and arithmetic generic monodromy
 \(S_N\).  Over a Hilbertian field, each such fixed map has infinitely many
 connected full fibers with splitting-field group \(S_N\).
 
+The construction also has a simple geometric starting point.  The cubic seed
+is an affine chart of normalized multiplication
+\[
+ (L,Q)\longmapsto LQ,\qquad \operatorname{Res}(L,Q)=1,
+\]
+with a marked linear factor of a binary cubic.  Its three generic inverse
+branches are the three choices of marked root, and the resultant condition is
+the local-invertibility mechanism.  The quadratic gauge carries this
+marked-root reconstruction from the cubic seed to an arbitrary inverse
+polynomial \(G\); this is the geometric bridge from the announced
+counterexample to the all-degree realization theorem
+\cite{TaoDigest}.
+
 Fullness also has an intrinsic geometric interpretation in this family.
 Theorem~\ref{thm:exact-nonproperness} identifies the exact reduced
 nonproperness locus with the inverse-discriminant zero set, and
@@ -106,12 +119,12 @@ The Lean axiom reports for these declarations contain only
 \texttt{propext}, \texttt{Classical.choice}, and \texttt{Quot.sound}.
 Monogenicity, symmetric monodromy, Hilbert irreducibility, the
 exact nonproperness and boundary-sheet accounting, the
-Campbell--Razar--Wright theorem, and the number-theoretic local-solubility
-arguments remain ordinary mathematical proofs or inputs.  For the quintic
+Campbell--Razar--Wright theorem, and the remaining arithmetic applications
+remain ordinary mathematical proofs or inputs.  For the quintic
 example, Lean verifies the exact fiber, its rank and finite \'etaleness, the
-absence of rational points, and the existence of real and three-adic points;
-the other local points remain in the elementary proof of
-Theorem~\ref{thm:hasse}.
+absence of rational points, and the existence of points over \(\R\) and every
+\(\Q_p\).  The Chebotarev-based rank-minimality argument in
+Theorem~\ref{thm:hasse} remains an ordinary proof.
 
 \subsection*{Addendum: arithmetic left for later}
 

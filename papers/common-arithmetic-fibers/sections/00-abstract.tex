@@ -24,6 +24,12 @@ at most \(6N+2\); at a distinguished target its inverse polynomial is
 \(\Spec K[T]/(P)\).  A direct function-field comparison proves that the
 actual geometric degree is \(N\).  The cubic seed \(G(S)=S+S^3\) recovers the
 recently announced three-dimensional map coordinate for coordinate.
+Geometrically, this seed is an affine chart of the normalized marked-factor
+map \((L,Q)\mapsto LQ\) with \(\operatorname{Res}(L,Q)=1\): the three generic
+inverse branches mark the three possible linear factors of a cubic, while the
+nonvanishing resultant makes the reconstruction locally invertible.  The
+quadratic gauge retains this marked-root mechanism while replacing the cubic
+inverse equation by the arbitrary polynomial \(G\).
 
 For every admissible seed, not merely for a generic one, the splitting field
 of the generic inverse polynomial over \(K(\Pi,B,C)\) has geometric and
@@ -52,4 +58,8 @@ Singular calculations check the coordinate identities, Jacobian, degree
 profile, concrete quotient reconstruction, and nonproperness boundary from
 separate implementations.  The nonproperness theorem itself remains an
 ordinary proof rather than a Lean theorem.
+For the explicit quintic, Lean also certifies the absence of rational points
+and the existence of points over \(\R\) and every \(\Q_p\); only the
+Chebotarev-based rank-minimality argument remains outside that Hasse
+certificate.
 \end{abstract}

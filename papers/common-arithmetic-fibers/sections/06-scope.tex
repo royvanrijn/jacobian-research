@@ -160,9 +160,10 @@ fiber naturally represented over every commutative rational test algebra by
  \Q[T]/\bigl((T^3-19)(T^2+T+1)\bigr),
 \]
 and Lean proves that this quotient is finite \'etale and has rank five.
-It also proves that the literal fiber has no rational point and constructs a
-real point and a three-adic point, the latter by an explicit Hensel argument
-at the approximate root $-2$.
+It also proves that the literal fiber has no rational point and constructs
+points over the reals and every $p$-adic field.  The nonarchimedean proof
+formalizes the two generic residue classes and the direct Hensel witnesses at
+$2$, $3$, and $19$.
 
 The combined final proposition is exposed as
 \begin{center}
@@ -197,13 +198,11 @@ symmetric-monodromy and Hilbertian-specialization arguments, monogenicity of
 arbitrary finite \'etale products, and the Campbell--Razar--Wright degree-two
 theorem remain ordinary mathematical proofs.
 For the quintic example, Lean now verifies the exact literal fiber, its rank,
-finite \'etaleness, the absence of rational points, and the existence of a real
-point and a three-adic point, but not yet the existence of roots over every
-remaining nonarchimedean completion.  The full finite-field case split,
-Chebotarev, Dirichlet, and prime-counting arguments in the arithmetic
-applications are likewise outside the formal development.  I list this
-boundary explicitly because a green Lean build should not be read as a claim
-that those external inputs have also been formalized.
+finite \'etaleness, the absence of rational points, and the existence of
+points over the reals and every nonarchimedean completion.  Chebotarev,
+Dirichlet, and prime-counting arguments elsewhere in the arithmetic
+applications remain outside the formal development.  In particular, the
+degree-four barrier proving rank-minimality is still an ordinary proof.
 
 \paragraph{Provenance and AI assistance.}
 The recent three-dimensional counterexample was announced by Alp\"oge, who

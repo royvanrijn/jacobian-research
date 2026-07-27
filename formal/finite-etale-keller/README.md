@@ -28,7 +28,7 @@ candidate.
 | 17 | Exact displayed quintic literal fiber, naturality, and rank five | implemented |
 | 18 | Fixed-`π,b` inverse irreducibility and exact degree over `K(C)` | implemented |
 | 19 | Full independent-parameter inverse irreducibility and root-extension finrank over `K(Π,B)(C)` | implemented |
-| 20 | Explicit quintic: no rational point, a real point, and a three-adic point | implemented |
+| 20 | Explicit quintic: no rational point, a real point, and points over every `p`-adic field | implemented |
 | 21 | Finite étaleness of every squarefree quotient and of the explicit quintic quotient | implemented |
 | 22 | Coordinate algebraic independence and injective function-field pullback | implemented |
 | 23 | Supplied-parameter map and target compatibility under scalar extension | implemented |
@@ -92,8 +92,8 @@ quintic map printed in the paper. At target `(1,0,-38)`, the resulting
 equivalence is natural from maps out of
 `ℚ[T]/((T^3-19)(T^2+T+1))`, whose rank is proved to be five.
 The explicit quotient is proved finite étale. Lean also proves that this
-literal fiber has no rational point and has both a real point and a
-three-adic point.
+literal fiber has no rational point, has a real point, and has a point over
+`ℚ_[p]` for every prime `p`.
 
 The principal final declarations are:
 
@@ -106,6 +106,8 @@ automaticJacobianOneFiberRepresentingEquiv
 automaticJacobianOneFiberRepresentingEquiv_natural
 ExplicitQuintic.integralFiberRepresentingEquiv
 ExplicitQuintic.integralFiberRepresentingEquiv_natural
+ExplicitQuintic.integralFiberPoint_padic_nonempty
+ExplicitQuintic.integralFiberPoint_hasse_certificate
 automaticRepresentingAlgebra_etale
 automaticRepresentingAlgebra_finite
 ExplicitQuintic.p5_quotient_etale
@@ -201,6 +203,10 @@ emptiness of the literal rational fiber and uses the intermediate value
 theorem to construct a real point. `ExplicitThreeAdicPoint.lean` applies the
 strong form of Hensel's lemma to `X^3-19` at `-2`, lifts the resulting root to
 `ℚ_[3]`, and constructs a point on the literal displayed fiber.
+`ExplicitAllPadicPoints.lean` proves a generic simple-root Hensel interface,
+formalizes the direct witnesses at `2` and `19`, handles the two remaining
+prime classes through the unit group of `ZMod p`, and packages the rational,
+real, and all-`p`-adic assertions into one Hasse certificate.
 
 ## Foundations and axioms
 
@@ -231,17 +237,16 @@ for paper-level theorems are:
    field and compose it with the polynomial-presentation theorem;
 4. formalize, or explicitly isolate as a classical theorem interface, the
    Campbell--Razar--Wright degree-two Galois case;
-5. formalize the nonarchimedean local-number-theoretic and prime-distribution
-   inputs in the Hasse-principle applications if those corollaries are to be
-   machine-checked end to end. The rational obstruction, archimedean local
-   point, and three-adic local point for the explicit quintic are already
-   formalized.
+5. formalize the Chebotarev input in the degree-four barrier if
+   rank-minimality is to be machine-checked end to end. The explicit
+   quintic's rational obstruction, archimedean point, and points over every
+   nonarchimedean completion are formalized.
 
 The current certificate therefore proves the complete constructive,
 scheme-theoretic, and geometric-degree polynomial-presentation layer, while
 keeping the separately proved nonproperness theorem, monodromy, monogenicity,
-the classical rank-two obstruction, and the remaining nonarchimedean
-arithmetic inputs explicitly outside the Lean certificate.
+the classical rank-two obstruction, and the Chebotarev-based rank-minimality
+argument explicitly outside the Lean certificate.
 
 ## Build
 

@@ -57,7 +57,7 @@ a squarefree polynomial `P` of degree at least three, Lean now:
 - specializes the construction to the paper's exact denominator-free quintic
   map, proving that its literal fiber at `(1,0,-38)` is naturally represented
   by `Q[T]/((T^3-19)(T^2+T+1))`, has rank five, has no rational point, and has
-  both a real point and a three-adic point.
+  points over the reals and every `p`-adic field.
 
 The combined final declaration is `automaticRealization_pageOne`, with
 `automaticRealizationGeometricDegree_eq` supplying its geometric-degree
@@ -80,8 +80,8 @@ declarations are `integralFiberRepresentingEquiv_natural`,
 arithmetic declarations are
 `integralFiberPoint_rat_isEmpty` and
 `integralFiberPoint_real_nonempty`, while
-`integralFiberPoint_threeAdic_nonempty` is the first formal nonarchimedean
-local-point certificate. No translation
+`integralFiberPoint_hasse_certificate` combines the rational obstruction,
+real point, and all nonarchimedean local points. No translation
 parameter, coefficient nonvanishing proof, chart unit, abstract source-fiber
 wrapper, or bounded-degree specialization remains as an external input to the
 polynomial-presentation theorem.
@@ -94,7 +94,7 @@ Three independent exact layers audit the construction:
    and degree over `K(Π,B)(C)`, coordinate algebraic independence, the
    injective function-field pullback, the explicit source/inverse-root
    comparison, actual geometric degree, and the explicit quintic's rational
-   obstruction, real point, and three-adic point.
+   obstruction, real point, and points over every `p`-adic field.
 2. A structural SymPy checker verifies the source and marked-line Jacobians,
    the generic `k`-th coefficient identities, a six-coefficient bridge, and
    the termwise degree bound.
