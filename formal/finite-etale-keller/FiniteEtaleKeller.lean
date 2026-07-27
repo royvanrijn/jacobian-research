@@ -10,6 +10,7 @@ import FiniteEtaleKeller.GeneralGaugeInverse
 import FiniteEtaleKeller.GenericInverseIrreducibility
 import FiniteEtaleKeller.GeneralGaugeFunctionField
 import FiniteEtaleKeller.GeneralGaugeFullGenericDegree
+import FiniteEtaleKeller.GeneralGaugeFunctionFieldComparison
 import FiniteEtaleKeller.GeneralGaugeDisplayedFiber
 import FiniteEtaleKeller.GeneralGaugeRawFiber
 import FiniteEtaleKeller.GeneralGaugeNormalization
@@ -17,6 +18,7 @@ import FiniteEtaleKeller.GeneralGaugeRealization
 import FiniteEtaleKeller.GeneralGaugeRealizationDegree
 import FiniteEtaleKeller.GeneralGaugeBaseChange
 import FiniteEtaleKeller.GeneralGaugeFiberRank
+import FiniteEtaleKeller.PageOneTheorem
 import FiniteEtaleKeller.LocalizedFiberPoints
 import FiniteEtaleKeller.LocalizedGaugeFiberPoints
 import FiniteEtaleKeller.GeneralGaugeLocalizedFiber

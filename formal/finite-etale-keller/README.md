@@ -33,7 +33,7 @@ candidate.
 | 22 | Coordinate algebraic independence and injective function-field pullback | implemented |
 | 23 | Supplied-parameter map and target compatibility under scalar extension | implemented |
 | 24 | Tensor-product base change of the representing polynomial quotient | implemented |
-| 25 | Comparison with the actual pullback-field extension and geometric degree | partial Lean bridge; paper proof completes it |
+| 25 | Comparison with the actual pullback-field extension and geometric degree | implemented |
 | 26 | Monogenicity and the passage from arbitrary finite étale algebras | paper proof; not yet Lean |
 | 27 | Historical degree-two Galois exclusion | external theorem; not yet Lean |
 
@@ -58,6 +58,15 @@ and, for every coordinate `i`,
 ```text
 (automaticRealizationMap P hdeg i).totalDegree ≤ 6 * P.natDegree + 2.
 ```
+
+The new function-field comparison proves
+
+```text
+automaticRealizationGeometricDegree P hdeg = P.natDegree
+```
+
+and `automaticRealization_pageOne` bundles this equality with determinant
+one and all of the fiber assertions below.
 
 For every commutative test `K`-algebra `A`, it constructs an equivalence
 
@@ -90,6 +99,9 @@ The principal final declarations are:
 
 ```text
 automaticRealizationMap_certificate
+automaticRealization_pageOne
+automaticRealizationGeometricDegree_eq
+generalGaugeJacobianOneMap_targetDenormalization
 automaticJacobianOneFiberRepresentingEquiv
 automaticJacobianOneFiberRepresentingEquiv_natural
 ExplicitQuintic.integralFiberRepresentingEquiv
@@ -109,6 +121,8 @@ generalGaugeFullyGenericInversePolynomial_certificate
 generalGaugeFullyGenericInverseAdjoinRoot_finrank
 generalGaugeMap_algebraicIndependent
 generalGaugeFunctionFieldHom_injective
+generalGaugeSourceFunctionFieldComparison
+generalGaugeGeometricDegree_eq
 realizationMapTarget_map
 adjoinRootBaseChangeEquiv
 ```
@@ -143,7 +157,10 @@ seed degree and that its root quotient has exactly that finrank.
 `GeneralGaugeFunctionField.lean` proves coordinate-substitution injectivity
 from the nonzero Jacobian, deduces algebraic independence of the displayed
 coordinates, and constructs the induced injective pullback on rational
-function fields.
+function fields. `GeneralGaugeFunctionFieldComparison.lean` identifies the
+actual source function field over the canonical target presentation
+`K(Π,B)(C)` with the inverse-root quotient and transfers its finrank to prove
+that the displayed map has geometric degree exactly the seed degree.
 `GeneralGaugeDisplayedFiber.lean` proves that evaluating the actual `B` and
 `C` coordinates gives precisely the marked equations.
 
@@ -172,7 +189,10 @@ functorial.
 `FiniteEtaleQuotient.lean` packages every separable polynomial quotient as a
 standard étale algebra and proves it finite. `GeneralGaugeFiberRank.lean`
 records both finite étaleness and the exact dimension of the squarefree
-representing quotient. `ExplicitFiber.lean` specializes the reconstruction to
+representing quotient. `PageOneTheorem.lean` combines determinant one,
+geometric degree, literal fiber representation, naturality, finite étaleness,
+rank, and the effective degree bound in one theorem. `ExplicitFiber.lean`
+specializes the reconstruction to
 the exact denominator-free quintic map and target displayed in the paper,
 including finite étaleness, naturality, and rank five.
 `ExplicitPolynomial.lean` applies the rational-root theorem to certify that
@@ -197,33 +217,29 @@ on the entire fiber functor.
 
 ## Remaining formal boundary
 
-The actual map, determinant, effective degree, literal fiber, finite étaleness,
-quotient translation, naturality, coordinate algebraic independence, and
-injective function-field pullback are formalized. The remaining steps required
-for a single Lean theorem matching the complete paper statement are:
+The actual map, determinant, geometric degree, effective degree, literal
+fiber, finite étaleness, quotient translation, naturality, coordinate
+algebraic independence, and explicit source-over-target function-field
+comparison are formalized. The remaining paper-level extensions are:
 
-1. construct the explicit comparison between the actual
-   source-over-target pullback-field extension and the now-formal
-   degree-`N` inverse-root extension over `K(Π,B)(C)`, then connect it to
-   Mathlib's function-field definition of geometric degree;
-2. formalize the exact nonproperness locus, boundary-sheet accounting, and
+1. formalize the exact nonproperness locus, boundary-sheet accounting, and
    discriminant-order statements;
-3. formalize the symmetric-monodromy and Hilbertian-specialization arguments;
-4. formalize monogenicity of arbitrary finite étale algebras over an infinite
+2. formalize the symmetric-monodromy and Hilbertian-specialization arguments;
+3. formalize monogenicity of arbitrary finite étale algebras over an infinite
    field and compose it with the polynomial-presentation theorem;
-5. formalize, or explicitly isolate as a classical theorem interface, the
+4. formalize, or explicitly isolate as a classical theorem interface, the
    Campbell--Razar--Wright degree-two Galois case;
-6. formalize the nonarchimedean local-number-theoretic and prime-distribution
+5. formalize the nonarchimedean local-number-theoretic and prime-distribution
    inputs in the Hasse-principle applications if those corollaries are to be
    machine-checked end to end. The rational obstruction, archimedean local
    point, and three-adic local point for the explicit quintic are already
    formalized.
 
-The current certificate therefore proves the complete constructive and
-scheme-theoretic polynomial-presentation layer and the injective side of the
-function-field bridge, while keeping the exact geometric degree,
-nonproperness, monodromy, monogenicity, the classical rank-two obstruction,
-and the remaining nonarchimedean arithmetic inputs explicitly separated.
+The current certificate therefore proves the complete constructive,
+scheme-theoretic, and geometric-degree polynomial-presentation layer, while
+keeping nonproperness, monodromy, monogenicity, the classical rank-two
+obstruction, and the remaining nonarchimedean arithmetic inputs explicitly
+separated.
 
 ## Build
 

@@ -12,6 +12,7 @@ import FiniteEtaleKeller.GeneralGaugeLocalizedFiber
 import FiniteEtaleKeller.GenericInverseIrreducibility
 import FiniteEtaleKeller.GeneralGaugeFunctionField
 import FiniteEtaleKeller.GeneralGaugeFullGenericDegree
+import FiniteEtaleKeller.PageOneTheorem
 
 /-!
 # Public verification surface
@@ -92,11 +93,28 @@ example (G : K[X]) (h₁ : G.coeff 1 ≠ 0) (h₃ : G.coeff 3 ≠ 0) :
   generalGaugeMap_algebraicIndependent G h₁ h₃
 
 /-- The coordinate map induces an injective pullback on rational function
-fields.  Determining the finite extension degree is a separate remaining
-obligation. -/
+fields. -/
 example (G : K[X]) (h₁ : G.coeff 1 ≠ 0) (h₃ : G.coeff 3 ≠ 0) :
     Function.Injective (generalGaugeFunctionFieldHom G h₁ h₃) :=
   generalGaugeFunctionFieldHom_injective G h₁ h₃
+
+/-- The missing bridge: over the target field `K(Π,B)(C)`, the actual source
+function field is explicitly the inverse-root extension. -/
+example (G : K[X]) (h₁ : G.coeff 1 ≠ 0) (h₃ : G.coeff 3 ≠ 0)
+    (hdeg : 3 ≤ G.natDegree) :
+    letI : Algebra (RatFunc (GaugeTargetParameterField K))
+        (GaugeFunctionField K) :=
+      (generalGaugeFullyGenericTargetHom G h₁ h₃).toRingHom.toAlgebra
+    GaugeFunctionField K ≃ₐ[RatFunc (GaugeTargetParameterField K)]
+      AdjoinRoot (generalGaugeFullyGenericInversePolynomial G) :=
+  generalGaugeSourceFunctionFieldComparison G h₁ h₃ hdeg
+
+/-- Consequently the actual displayed map has geometric degree exactly the
+seed degree. -/
+example (G : K[X]) (h₁ : G.coeff 1 ≠ 0) (h₃ : G.coeff 3 ≠ 0)
+    (hdeg : 3 ≤ G.natDegree) :
+    generalGaugeGeometricDegree G h₁ h₃ = G.natDegree :=
+  generalGaugeGeometricDegree_eq G h₁ h₃ hdeg
 
 /-- The complete supplied-translation realization map and target commute
 with coefficient extension.  The automatically chosen translation is
@@ -181,6 +199,11 @@ example (P : K[X]) (hdeg : 3 ≤ P.natDegree) :
           6 * P.natDegree + 2 :=
   automaticRealizationMap_certificate P hdeg
 
+/-- Signature guard for the single page-one theorem. -/
+example (P : K[X]) (hP : Squarefree P) (hdeg : 3 ≤ P.natDegree) :
+    AutomaticPageOneCertificate P hP hdeg :=
+  automaticRealization_pageOne P hP hdeg
+
 #print axioms jacobianDet_generalGaugeMap
 #print axioms jacobianDet_generalGaugeJacobianOneMap
 #print axioms generalGaugeInversePolynomial_derivative
@@ -190,6 +213,10 @@ example (P : K[X]) (hdeg : 3 ≤ P.natDegree) :
 #print axioms generalGaugeFullyGenericInverseAdjoinRoot_finrank
 #print axioms generalGaugeMap_algebraicIndependent
 #print axioms generalGaugeFunctionFieldHom_injective
+#print axioms generalGaugeSourceFunctionFieldComparison
+#print axioms generalGaugeGeometricDegree_eq
+#print axioms generalGaugeJacobianOneMap_targetDenormalization
+#print axioms automaticRealizationMap_targetDenormalization
 #print axioms realizationMapTarget_map
 #print axioms adjoinRootBaseChangeEquiv
 #print axioms LocalizedPolynomialRoot.localizedAlgHomEquiv
@@ -208,5 +235,6 @@ example (P : K[X]) (hdeg : 3 ≤ P.natDegree) :
 #print axioms ExplicitQuintic.integralFiberPoint_threeAdic_nonempty
 #print axioms automaticRealizationMap_certificate
 #print axioms automaticJacobianOneFiberRepresentingEquiv_natural
+#print axioms automaticRealization_pageOne
 
 end FiniteEtaleKeller

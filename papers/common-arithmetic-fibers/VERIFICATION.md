@@ -21,26 +21,55 @@ corresponding mathematical argument.
 | Literal three-coordinate map fiber is represented, naturally over every test algebra | General localized quadratic-gauge fiber theorem (Theorem 3.2) | `GeneralGaugeRawFiber.lean`, `GeneralGaugeLocalizedFiber.lean` | Quotient-ring reconstruction |
 | Zero-second-coordinate fiber is preserved by determinant-one output normalization | Effective normalization corollary (Corollary 3.7) | `GeneralGaugeNormalization.lean` | Exact scalar-normalization checks |
 | Translation `K[S]/(P(a+S)) ≃ K[T]/(P)` | Prescribed-algebra realization theorem (Theorem 2.3) | `TranslationQuotient.lean`, `GeneralGaugeRealization.lean` | Concrete translated examples |
-| Final automatic literal-fiber realization from squarefree `P` | Prescribed-algebra realization theorem (Theorem 2.3) | `GeneralGaugeRealization.lean`; final theorem `automaticJacobianOneFiberRepresentingEquiv_natural` | Full Lean build and axiom reports |
+| Final automatic page-one certificate from squarefree `P` | Prescribed-algebra realization theorem (Theorem 2.3) | `PageOneTheorem.lean`; final proposition `automaticRealization_pageOne` simultaneously contains target normalization, determinant, geometric degree, literal fiber representation, naturality, finite étaleness, finiteness, rank, and degree bound | Full Lean build and axiom reports |
 | Represented special-fiber length is `deg P` | Prescribed-algebra realization theorem (Theorem 2.3) and finite-étale fiber corollary (Corollary 3.3) | `GeneralGaugeFiberRank.lean`; theorem `automaticRealizationFiber_rank` | Standard polynomial-quotient dimension theorem |
 | Constant determinant `-2` and normalized determinant `1` for the arbitrary-degree actual map | General localized theorem (Theorem 3.2) and effective normalization corollary (Corollary 3.7) | `GeneralGaugeJacobian.lean` | Structural SymPy audit; independent generic degree-six Singular audit; concrete degrees 3–5 |
 | Final coordinate-degree bound `6N+2` in terms of `N = deg P` | Effective normalization corollary (Corollary 3.7) and prescribed-algebra realization theorem (Theorem 2.3) | `GeneralGaugeDegree.lean`, `GeneralGaugeRealizationDegree.lean` | Structural termwise audit; Singular degree-six profile |
 | Irreducibility and degree `N` of the fully independent inverse equation over the iterated target field `K(Π,B)(C)` | General localized quadratic-gauge fiber theorem (Theorem 3.2), primitive linear-parameter argument | `GenericInverseIrreducibility.lean` proves the fixed-`π,b` engine; `GeneralGaugeFullGenericDegree.lean` promotes `Π,B` to independent parameters and proves `generalGaugeFullyGenericInversePolynomial_certificate` and `generalGaugeFullyGenericInverseAdjoinRoot_finrank` | Exact polynomial-variable swap and Mathlib Gauss lemma; concrete degree 3–5 regressions |
-| Function-field reconstruction and geometric degree `N` | General localized quadratic-gauge fiber theorem (Theorem 3.2), generic reconstruction | Partial: `GeneralGaugeFunctionField.lean` proves coordinate substitution is injective, the displayed coordinates are algebraically independent, and the induced function-field pullback is injective; `GeneralGaugeFullGenericDegree.lean` proves the independent inverse-root extension has finrank `N`; the explicit comparison with the actual pullback-field extension and generic reconstruction remain | Paper's reconstruction argument |
-| Exact nonproperness set `S_(F_G)=V(Disc_S(E))` | Exact quadratic-gauge nonproperness theorem | Not yet formalized | Independent SymPy/Singular discriminants; direct `t=0`, `q=0` fibers; normalization boundary ledger |
-| Exact sheet loss over every inverse-root partition | Exact nonproperness theorem | Partial: the localized fiber equivalence for `Pi != 0` excludes derivative-zero roots, but the multiplicity-by-multiplicity missing-sheet count is not formalized | Repeated-root reconstruction and quartic image regressions |
-| `Pi=0` fibers and `N-3` generic missing sheets | Exact nonproperness theorem and boundary-arc proposition | Not yet formalized | Newton polygon through degree 64; direct source-divisor calculation |
-| Discriminant order `N^2-3N-2` and saturated slice `B^2(1-BC)` | Exact nonproperness theorem | Not yet formalized | Dedicated nonproperness checker through degree 10; independent root-valuation derivation |
-| Distinguished target lies in the maximal finite-étale locus | Intrinsic-fullness corollary | Partial: inverse specialization to `P(a+S)` and finite étaleness of its quotient are formalized; identification of the maximal locus via nonproperness is not | Nonzero discriminant of squarefree `P` |
-| Geometric and arithmetic generic monodromy are `S_N` for every admissible seed | Full symmetric generic monodromy theorem (Theorem 3.4) | Not formalized | Exact `dC/dB=-r^2` audit in `verify_root_engineered_quadratic_gauge.py`; Serre's Morse-polynomial theorem |
-| Infinitely many connected full `S_N`-fibers over a Hilbertian field | Hilbertian specialization corollary (Corollary 3.5) | Not formalized | Hilbert irreducibility |
+| Function-field reconstruction and geometric degree `N` | General localized quadratic-gauge fiber theorem: explicit equality `K(x,y,z)=K(Π,B,C)(S)` followed by inverse-polynomial irreducibility | Complete for the polynomial-presentation map: `GeneralGaugeFunctionField.lean` proves algebraic independence and injective pullback; `GeneralGaugeFunctionFieldComparison.lean` constructs `generalGaugeSourceFunctionFieldComparison : K(x,y,z) ≃ K(Π,B)(C)[S]/(E)` over the actual target embedding and proves `generalGaugeGeometricDegree_eq`; `PageOneTheorem.lean` transports the result to the determinant-one realization | Independent rational reconstruction in the paper |
+| Geometric and arithmetic generic monodromy are `S_N` for every admissible seed | Morse-slice lemma, specialization/decomposition-group lemma, and full symmetric generic monodromy theorem | Not formalized | Exact `dC/dB=-r^2` audit in `verify_root_engineered_quadratic_gauge.py`; Serre's Morse-polynomial theorem |
+| Infinitely many connected full `S_N`-fibers over a Hilbertian field | Hilbertian specialization corollary, including the arithmetic/geometric equality and regularity argument | Not formalized | Hilbert irreducibility |
 | Every finite étale algebra over an infinite field is monogenic | Lemma 4.1 | Not yet formalized | Discriminant/Vandermonde proof |
 | No characteristic-zero Keller map has generic degree two | Lemma 2.2 | Not formalized | Campbell–Razar–Wright plus faithfully flat descent |
 | Exact displayed quintic fiber at `(1,0,-38)` is represented by the finite étale algebra `ℚ[T]/((T³-19)(T²+T+1))`, naturally in test algebras, and has rank five | Theorem 5.2, displayed map and fiber | `ExplicitPolynomial.lean`, `ExplicitMap.lean`, `ExplicitFiber.lean`; theorems `integralFiberRepresentingEquiv_natural`, `p5_quotient_etale`, `p5_quotient_finite`, and `p5_quotient_rank` | Exact quintic checker |
 | Explicit quintic has no rational point and has real and three-adic points | Theorem 5.2 | `p5_no_rational_root`, `integralFiberPoint_rat_isEmpty`, `integralFiberPoint_real_nonempty`, `integralFiberPoint_threeAdic_nonempty` | Rational-root theorem, intermediate value theorem, and Hensel's lemma at `-2` |
 | Optimal rank-five Hasse failure | Theorem 5.2 | The exact polynomial, map, literal quotient fiber, naturality, determinant, rank, rational obstruction, archimedean point, and `ℚ_3` point are formalized; the remaining nonarchimedean local points and optimality are not | Local-solubility proof and degree-four barrier |
-| One fixed map has infinitely many Hasse-failing fibers | Theorem 6.1 | Not yet formalized | Exact inverse-family checker plus local and prime-counting proof |
 | Compatibility of the realization with extension of the ground field | Base-change proposition in Section 4 | `GeneralGaugeBaseChange.lean` proves coefficientwise compatibility of translation, the full supplied-parameter map, normalization, admissibility, squarefreeness, and distinguished target, together with `L ⊗[K] AdjoinRoot P ≃ₐ[L] AdjoinRoot (P.map f)` | Coefficientwise paper proof |
+
+## Independent exact audits rerun
+
+The following independent commands were rerun successfully on 27 July 2026:
+
+- `verify_universal_quadratic_gauge.py`: source-chart reciprocal identities,
+  marked-line Jacobian cancellation, generic coefficient assembly, the
+  degree-six bridge, the `6N+2` bound, and determinant-one normalization;
+- `verify_root_engineered_quadratic_gauge.py`: coefficient engineering through
+  degree six, the cubic and quartic regressions, the discriminant differential
+  `dC/dB = -r²`, quotient reconstruction identities, and translated seeds
+  through degree twelve;
+- `verify_finite_etale_keller_fibers.py`: degrees three through five,
+  quotient-ring reconstruction in both directions, the exact quintic scaling,
+  determinant, target, and inverse polynomial; and
+- `verify_universal_quadratic_gauge.sing`: a fresh expansion of the generic
+  degree-six Jacobian over a rational function field in six independent
+  coefficients, together with the `(7,38,36)` degree profile.
+
+These are exact symbolic computations from implementations independent of the
+Lean development. They audit the displayed algebra but do not replace the
+ordinary proofs of monodromy, Hilbert specialization, degree two, or the
+remaining local arithmetic.
+
+## Deferred directions
+
+The active paper does not use the following statements as theorems.  They are
+recorded only in its final addendum and remain working projects:
+
+| Direction | Current evidence | Missing before theorem status |
+|---|---|---|
+| Reduced nonproperness set equals the inverse-discriminant zero set | Independent discriminants, direct `t=0` and `q=0` fibers, and the localized fiber theorem on `Pi != 0` | Algebraic properness argument in full field generality and a precise reduced formulation |
+| `Pi=0` sheet ledger and discriminant order `N^2-3N-2` | Newton polygons through degree 64 and discriminants through degree 10 | Uniform residual-polynomial proof and boundary normalization |
+| Exhaustive branches over every special boundary stratum | Explicit Laurent arcs and valuation calculations | Global compactification/normalization proof |
+| One fixed map with infinitely many Hasse-failing fibers | Exact inverse-family identity and preliminary local/counting proof | Separate audit of all local cases and the height asymptotic |
 
 ## Formal theorem now obtained
 
@@ -51,15 +80,24 @@ For every characteristic-zero field `K`, every squarefree polynomial
 2. constructs the actual arbitrary-degree map
    `automaticRealizationMap P hdeg : Fin 3 → MvPolynomial (Fin 3) K`;
 3. proves its Jacobian determinant is `1`;
-4. proves every coordinate has total degree at most `6 * P.natDegree + 2`;
-5. constructs the literal target fiber of those three polynomial coordinates;
-6. gives a natural equivalence from `AdjoinRoot P` to that literal fiber over
+4. proves the inverse target scaling from the determinant-one map back to the
+   raw gauge;
+5. constructs the source-field equivalence with the independent inverse-root
+   quotient and proves geometric degree `P.natDegree`;
+6. proves every coordinate has total degree at most `6 * P.natDegree + 2`;
+7. constructs the literal target fiber of those three polynomial coordinates;
+8. gives a natural equivalence from `AdjoinRoot P` to that literal fiber over
    every commutative test `K`-algebra;
-7. proves that the represented quotient algebra has dimension
+9. proves that the represented quotient algebra has dimension
    `P.natDegree`; and
-8. proves that the quotient algebra is finite étale over `K`.
+10. proves that the quotient algebra is finite étale over `K`.
 
-The final construction statements are
+The single combined proposition is `automaticRealization_pageOne`.  Its
+geometric-degree field is supplied by
+`automaticRealizationGeometricDegree_eq`; the explicit bridge is
+`generalGaugeSourceFunctionFieldComparison`, and its degree theorem is
+`generalGaugeGeometricDegree_eq`.  The construction, fiber, and finiteness
+layers remain separately available as
 `automaticRealizationMap_certificate`,
 `automaticJacobianOneFiberRepresentingEquiv_natural`,
 `automaticRepresentingAlgebra_etale`, and
@@ -68,12 +106,16 @@ The final construction statements are
 For an admissible seed `G`, Lean also promotes `Π` and `B` to independent
 parameters, proves the resulting inverse equation over `K(Π,B)(C)`
 irreducible with degree and root-quotient finrank `G.natDegree`, proves the
-three displayed coordinates algebraically independent, and constructs the
-injective pullback on rational function fields. The principal declarations are
+three displayed coordinates algebraically independent, constructs the
+injective pullback on rational function fields, and proves that the resulting
+extension is the actual source-over-target extension. The principal
+declarations are
 `generalGaugeFullyGenericInversePolynomial_certificate`,
 `generalGaugeFullyGenericInverseAdjoinRoot_finrank`,
 `generalGaugeMap_algebraicIndependent`, and
-`generalGaugeFunctionFieldHom_injective`. For a supplied translation
+`generalGaugeFunctionFieldHom_injective`, followed by
+`generalGaugeSourceFunctionFieldComparison` and
+`generalGaugeGeometricDegree_eq`. For a supplied translation
 parameter, `realizationMapTarget_map` additionally certifies coefficientwise
 compatibility of the complete map-target pair under scalar extension, while
 `adjoinRootBaseChangeEquiv` certifies the tensor-product base change of the
@@ -92,23 +134,18 @@ constructs a point on the literal fiber over `ℚ_[3]`.
 ## Remaining formal boundary
 
 The polynomial-presentation part of the prescribed-algebra realization theorem
-is now formalized end to end.  The remaining steps needed for a single theorem
-starting from an arbitrary finite étale algebra are:
+is now formalized end to end, including actual geometric degree.  The
+remaining steps needed for a single theorem starting from an arbitrary finite
+étale algebra are:
 
-1. identify the actual source-over-target pullback-field extension with the
-   now-formal degree-`N` inverse-root extension over the iterated presentation
-   `K(Π,B)(C)`, and connect that comparison to the definition of geometric
-   degree;
-2. formalize monogenicity of finite étale products over an infinite field;
-3. compose monogenicity with the polynomial-presentation certificate;
-4. either formalize the Campbell--Razar--Wright Galois case or keep it as a
+1. formalize monogenicity of finite étale products over an infinite field;
+2. compose monogenicity with the polynomial-presentation certificate;
+3. either formalize the Campbell--Razar--Wright Galois case or keep it as a
    clearly isolated classical theorem interface;
-5. formalize exact nonproperness, boundary-sheet accounting, and discriminant
-   orders;
-6. formalize symmetric monodromy and Hilbertian specialization;
-7. formalize the nonarchimedean local-solubility, Chebotarev, Dirichlet, and
-   prime-counting inputs used in the arithmetic corollaries if complete
-   machine verification of those applications is desired. The explicit
+4. formalize symmetric monodromy and Hilbertian specialization;
+5. formalize the nonarchimedean local-solubility and Chebotarev inputs used
+   in the arithmetic application if complete machine verification is desired.
+   The explicit
    quintic's rational obstruction, real point, and three-adic point are already
    formalized.
 

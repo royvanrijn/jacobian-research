@@ -138,11 +138,13 @@ squarefree polynomial $P$ of degree at least three, it:
 \item proves that its normalized Jacobian is one and that all coordinate
       degrees are at most $6\deg P+2$;
 \item proves that the inverse polynomial at the selected target is
-      $P(a+S)$; and
+      $P(a+S)$;
 \item identifies the literal map fiber naturally with
       $\operatorname{Hom}_{K\text{-alg}}(K[T]/(P),A)$ for every commutative
       test algebra $A$, while recording that the representing quotient has
-      $K$-dimension $\deg P$ and is finite \'etale over $K$.
+      $K$-dimension $\deg P$ and is finite \'etale over $K$; and
+\item identifies the actual source function field over $K(\Pi,B)(C)$ with
+      the inverse-root quotient and proves geometric degree $\deg P$.
 \end{enumerate}
 It also checks that the seed $G(S)=S+S^3$ gives the announced map
 \eqref{eq:announced-counterexample} coordinate for coordinate.  It proves
@@ -162,9 +164,9 @@ It also proves that the literal fiber has no rational point and constructs a
 real point and a three-adic point, the latter by an explicit Hensel argument
 at the approximate root $-2$.
 
-The final construction and degree certificate are exposed as
+The combined final proposition is exposed as
 \begin{center}
-\small\texttt{automaticRealizationMap\_certificate},
+\small\texttt{automaticRealization\_pageOne},
 \end{center}
 the full independent-parameter inverse certificates are
 \begin{center}
@@ -184,14 +186,10 @@ Their axiom reports contain only Lean's standard logical principles
 \texttt{propext}, \texttt{Classical.choice}, and \texttt{Quot.sound}.
 
 Lean does not currently cover every theorem used in the final classification.
-Lean proves algebraic independence and an injective function-field pullback.
-Over the iterated independent-parameter field $K(\Pi,B)(C)$, it proves that
-the full inverse equation is irreducible of degree $N$ and that its root
-quotient has finrank $N$.  It does not yet construct the explicit comparison
-between this inverse-root extension and the actual source-over-target
-pullback-field extension, which is the remaining formal step needed to
-identify the result with $\gdeg(F_G)$.  Lean also proves that the complete map
-and target attached to a supplied translation parameter commute
+Lean proves algebraic independence, the injective function-field pullback,
+the explicit comparison with the inverse-root extension over
+$K(\Pi,B)(C)$, and the resulting geometric degree.  It also proves that the
+complete map and target attached to a supplied translation parameter commute
 coefficientwise with extension of the ground field, and proves the
 tensor-product base change of the representing polynomial quotient.  Exact
 nonproperness and boundary-sheet accounting, the

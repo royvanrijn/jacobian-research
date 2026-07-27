@@ -1,0 +1,165 @@
+\section{Consequences, scope, and further directions}
+
+The main theorem is a prescribed-fiber realization result.  Given a finite
+\'etale algebra, it builds a Keller map whose full fiber is that algebra.  The
+classification by rank is a useful corollary, but it is not the main point:
+two finite \'etale algebras of the same rank can have different field
+decompositions, Galois actions, signatures, and local behavior, and the
+construction preserves all of that data.
+
+Several consequences are immediate.  A squarefree polynomial of degree at
+least three becomes an exact inverse polynomial after one translation; an
+irreducible polynomial gives a connected fiber; and a degree-\(N\) input is
+realized in \(\A^3\) with coordinate degree at most \(6N+2\).  Every map
+produced by the construction has geometric and arithmetic generic monodromy
+\(S_N\).  Over a Hilbertian field, each such fixed map has infinitely many
+connected full fibers with splitting-field group \(S_N\).
+
+This is a transfer statement, not an inverse Galois theorem.  It does not say
+that arbitrary local specifications can always be globalized.  It says that
+once a finite \'etale algebra with the desired arithmetic properties exists,
+the Keller construction preserves it exactly.  Nor does the monodromy theorem
+say that one fixed seed realizes every rank-\(N\) finite \'etale algebra: the
+prescribed algebra is used to choose the seed.  Its strengthening is that
+every resulting cover, including one built for a highly special algebra, has
+maximal generic monodromy.
+
+\paragraph{Relation to earlier work.}
+To my knowledge, the following prescribed-algebra statement has not appeared
+before: every finite \'etale \(K\)-algebra of rank at least three occurs as a
+\emph{full scheme fiber} of an explicit Keller map
+\(\A^3_K\to\A^3_K\).  The rank set \(\{1,3,4,\ldots\}\) follows from this
+theorem together with the known degree-two obstruction.  I searched for
+earlier results up to 24 July 2026, but this priority statement is necessarily
+qualified: searches can miss unpublished work or a theorem stated in
+different language.
+
+The closest constructions have a different scope.  Gallagher gives explicit
+Keller maps in every geometric degree together with complete split rational
+fibers \cite{Gallagher}; these realize \(K^N\), rather than an arbitrary
+finite \'etale \(K\)-algebra.  Miranda--Neto studies radicality and
+maximal-ideal decompositions of fibers that already come from Keller maps
+\cite{Miranda}.  Lipton and Markakis connect rational images with Hilbert
+irreducibility \cite{LiptonMarkakis}, and Shaska studies graded Keller maps
+and arithmetic thinness \cite{Shaska}.  The monodromy argument here uses the
+classical theorem that a Morse polynomial has symmetric Galois group over the
+value-function field \cite[Theorem~4.4.5]{Serre}.
+
+\paragraph{Independent checks and formalization.}
+The SymPy checker
+\[
+ \texttt{scripts/verify\_universal\_quadratic\_gauge.py}
+\]
+verifies the source chart, the marked-line identities, the Jacobian
+cancellation, every generic coefficient contribution, and the degree bound.
+The independent Singular checker expands the complete degree-six map over a
+rational function field in six coefficients, obtains determinant \(-2\), and
+checks the degree profile \((7,38,36)\).  Concrete degree-three, degree-four,
+and degree-five regressions reconstruct the polynomial quotient in both
+directions.
+
+The Lean project in
+\[
+ \texttt{formal/finite-etale-keller}
+\]
+contains no \texttt{sorry} and introduces no project-specific axioms.  It
+constructs the all-degree map, proves its normalized Jacobian and coordinate
+degree bound, identifies the literal distinguished fiber naturally over every
+commutative test algebra, and proves that its representing quotient has the
+expected rank and is finite \'etale.  It also proves irreducibility and degree
+of the independent-parameter inverse equation, algebraic independence of the
+three map coordinates, and injectivity of the induced function-field
+pullback.  It then constructs, over the canonical target presentation
+\(K(\Pi,B)(C)\), the algebra equivalence
+\[
+ K(x,y,z)\simeq
+ K(\Pi,B)(C)[S]/(E_{\Pi,B,C})
+\]
+and transfers the inverse-root finrank to prove the actual geometric degree
+\(N\).  A separate theorem checks the inverse target rescaling from the
+Jacobian-one map back to the raw gauge.  The public theorem
+\[
+ \texttt{automaticRealization\_pageOne}
+\]
+simultaneously records determinant one, geometric degree \(N\), the natural
+literal-fiber representation by \(K[T]/(P)\), finite \'etaleness, finiteness,
+rank \(N\), and the \(6N+2\) bound.
+
+The Lean axiom reports for these declarations contain only
+\texttt{propext}, \texttt{Classical.choice}, and \texttt{Quot.sound}.
+Monogenicity, symmetric monodromy, Hilbert irreducibility, the
+Campbell--Razar--Wright theorem, and the number-theoretic local-solubility
+arguments remain ordinary mathematical inputs.  For the quintic example,
+Lean verifies the exact fiber, its rank and finite \'etaleness, the absence
+of rational points, and the existence of real and three-adic points; the
+other local points remain in the elementary proof of
+Theorem~\ref{thm:hasse}.
+
+\subsection*{Addendum: geometry and arithmetic left for later}
+
+The quadratic gauge has more structure than is needed for the realization
+theorem.  I record two directions here so that the computations are not
+hidden, but neither is used in this paper.
+
+\paragraph{The nonproperness boundary.}
+The inverse discriminant strongly suggests an exact description of the
+reduced nonproperness set:
+\[
+ (S_{F_G})_{\mathrm{red}}
+ \stackrel{?}{=}
+ V\!\left(\sqrt{(\operatorname{Disc}_S E_{\Pi,B,C})}\right).
+\]
+On \(\Pi\neq0\), the localized fiber theorem already explains why repeated
+inverse roots correspond to missing affine sheets.  On \(\Pi=0\), direct
+source charts and Newton polygons indicate a different boundary: a generic
+fiber has three affine points and \(N-3\) sheets at infinity.  In degree three
+the raw resultant has an extra factor \(\Pi\); in degree at least four the
+computations indicate that \(\Pi=0\) is a genuine reduced component, with
+generic discriminant order
+\[
+ N^2-3N-2.
+\]
+Symbolic checks verify the discriminant orders through degree ten and the
+Newton ledger through degree sixty-four.  A complete treatment should
+separate the reduced set from the discriminant scheme, construct the boundary
+normalization, and prove that every branch over the special strata has been
+accounted for.  That is a different geometric argument, and I leave it for a
+separate paper.  The relevant background is Jelonek's description of
+nonproperness loci \cite{Jelonek1993} and the later quantitative work with
+Laso\'n \cite{JelonekLason}.
+
+\paragraph{One map with many Hasse failures.}
+There is also a fixed quintic gauge for which exact algebra suggests the
+family
+\[
+ \Spec\Q[X]/\bigl((X^3-\ell)(X^2+X+1)\bigr),
+ \qquad \ell\equiv1\pmod{27},
+\]
+as fibers at pairwise distinct rational targets.  The inverse-polynomial
+identity is exact, and the expected local argument combines Hensel lifting,
+the residue-class dichotomy used in Theorem~\ref{thm:hasse}, and primes in an
+arithmetic progression.  A satisfactory treatment should audit all local
+cases and the claimed counting asymptotic as a separate arithmetic theorem.
+For the present paper, the single optimal quintic fiber is enough.
+
+Other constructions in the accompanying repository place the same finite
+\'etale algebra inside weighted and cancellation-type Keller maps that need
+not be stably equivalent.  Their comparison belongs with those two deferred
+directions, not with the prescribed-fiber theorem proved here.
+
+\paragraph{Provenance and AI assistance.}
+The recent three-dimensional counterexample was announced by Alp\"oge, who
+credited Akhil Mathew for suggesting the problem and Fable for producing the
+example \cite{Alpoge}.  Gallagher independently developed a weighted
+all-degree viewpoint and a public atlas of complete rational fibers
+\cite{Gallagher}.  The present proof uses a root-engineered quadratic gauge
+that contains the announced map as the seed \(S+S^3\).  Berend and Bilu
+supplied the classical intersective quintic, while Campbell, Razar, and
+Wright supplied the degree-two obstruction
+\cite{Campbell,Razar,Wright}.
+
+I used generative AI tools during exploration, symbolic-checker development,
+proof review, literature search, Lean formalization, and manuscript editing.
+They were useful as fast but fallible collaborators.  I checked the stated
+mathematical claims, rewrote the exposition, and take responsibility for the
+paper.

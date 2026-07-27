@@ -45,6 +45,12 @@ a squarefree polynomial `P` of degree at least three, Lean now:
 - proves that the three displayed coordinates are algebraically independent
   and that their coordinate substitution extends to an injective pullback on
   rational function fields;
+- identifies the actual source function field over `K(Π,B)(C)` with the
+  inverse-root quotient, and transfers its finrank to prove geometric degree
+  `N`;
+- verifies that the determinant-one normalization is an invertible target
+  rescaling and packages determinant, geometric degree, literal fiber,
+  naturality, finite étaleness, rank, and the degree bound in one theorem;
 - proves that the complete supplied-translation map and distinguished target
   commute coefficientwise with extension of the ground field, and proves the
   corresponding tensor-product base change of the representing quotient; and
@@ -53,15 +59,20 @@ a squarefree polynomial `P` of degree at least three, Lean now:
   by `Q[T]/((T^3-19)(T^2+T+1))`, has rank five, has no rational point, and has
   both a real point and a three-adic point.
 
-The final formal declarations are
-`automaticRealizationMap_certificate` and
-`automaticJacobianOneFiberRepresentingEquiv_natural`; finite étaleness is
-recorded by `automaticRepresentingAlgebra_etale` and
-`automaticRepresentingAlgebra_finite`; the full independent-parameter inverse
-certificates are `generalGaugeFullyGenericInversePolynomial_certificate` and
-`generalGaugeFullyGenericInverseAdjoinRoot_finrank`; and the function-field
-bridge is guarded by `generalGaugeMap_algebraicIndependent` and
-`generalGaugeFunctionFieldHom_injective`; supplied-parameter scalar extension
+The combined final declaration is `automaticRealization_pageOne`, with
+`automaticRealizationGeometricDegree_eq` supplying its geometric-degree
+field.  The explicit function-field bridge is
+`generalGaugeSourceFunctionFieldComparison`, and
+`generalGaugeGeometricDegree_eq` transfers the inverse-root degree to the
+actual displayed map.  The preceding layers remain separately exposed by
+`automaticRealizationMap_certificate`,
+`automaticJacobianOneFiberRepresentingEquiv_natural`,
+`automaticRepresentingAlgebra_etale`,
+`automaticRepresentingAlgebra_finite`,
+`generalGaugeFullyGenericInversePolynomial_certificate`,
+`generalGaugeFullyGenericInverseAdjoinRoot_finrank`,
+`generalGaugeMap_algebraicIndependent`, and
+`generalGaugeFunctionFieldHom_injective`.  Supplied-parameter scalar extension
 is certified by `realizationMapTarget_map` and
 `adjoinRootBaseChangeEquiv`. The concrete quintic fiber
 declarations are `integralFiberRepresentingEquiv_natural`,
@@ -80,8 +91,9 @@ Three independent exact layers audit the construction:
 1. Lean proves the uniform finite sums, actual map, general determinant,
    effective degree bound, literal fiber equivalence, finite étaleness,
    quotient translation, naturality, fully independent inverse irreducibility
-   and degree over `K(Π,B)(C)`, coordinate algebraic independence, an
-   injective function-field pullback, and the explicit quintic's rational
+   and degree over `K(Π,B)(C)`, coordinate algebraic independence, the
+   injective function-field pullback, the explicit source/inverse-root
+   comparison, actual geometric degree, and the explicit quintic's rational
    obstruction, real point, and three-adic point.
 2. A structural SymPy checker verifies the source and marked-line Jacobians,
    the generic `k`-th coefficient identities, a six-coefficient bridge, and
@@ -96,25 +108,23 @@ The arithmetic applications include:
 
 - an explicit degree-five Keller fiber that is everywhere locally soluble
   over `Q` but has no rational point, with degree five proved optimal;
-- one fixed Keller map with infinitely many such Hasse-failing fibers;
 - exact transfer of connectedness, signatures, splitting fields, local
   factorization data, and intersectivity;
 - compatibility with extension of the ground field.
 
-The paper also computes the full geometric boundary of every quadratic-gauge
-map. If `E_(Pi,B,C)` is its inverse polynomial, then over an algebraic closure
+The active paper is deliberately narrower than the surrounding repository.
+An addendum records, without using them as theorems, two directions reserved
+for later work:
 
-```text
-S_(F_G) = V(Disc_S(E_(Pi,B,C))).
-```
+- the expected exact reduced nonproperness locus, its `Pi = 0` Newton
+  stratification, and boundary normalization;
+- a candidate fixed quintic gauge with infinitely many Hasse-failing fibers.
 
-For `Pi != 0`, every repeated-root block records exactly its number of missing
-affine sheets. On `Pi = 0`, the generic affine fiber has three points and the
-remaining `N-3` sheets lie at infinity. In degree three the raw resultant has
-an extraneous factor `Pi`; in degree at least four the plane is a genuine
-nonproperness component. The distinguished prescribed target is outside this
-hypersurface because its inverse polynomial is the squarefree translate
-`P(a+S)`.
+The corresponding working proofs and checkers remain in the repository, but
+neither direction is load-bearing for the prescribed-fiber theorem.
+The earlier detailed drafts are retained as
+`sections/02b-nonproperness.tex` and `sections/05-infinite-family.tex`; they
+are no longer included by `main.tex`.
 
 The directory name is retained as a stable repository path from the earlier
 draft.
@@ -125,11 +135,13 @@ The focused audits accompanying the active draft are:
    Galois exclusion, with Campbell--Razar--Wright provenance and a faithfully
    flat descent proof;
 2. the primitive linear-in-the-target-coordinate proof of generic inverse
-   irreducibility and geometric degree, including the formal independent-
-   parameter irreducibility and degree certificate over `K(Π,B)(C)` and the
-   formal injective function-field pullback;
+   irreducibility, followed by the explicit comparison
+   `K(x,y,z) = K(Π,B,C)(S)` proving the actual geometric degree; Lean
+   independently formalizes the same comparison over the canonical iterated
+   target presentation;
 3. the birational quadratic-discriminant parametrization and Morse-polynomial
-   proof of full symmetric generic monodromy;
+   proof of full symmetric generic monodromy, with separate specialization and
+   regularity arguments;
 4. two-sided reconstruction over arbitrary commutative test algebras, using a
    Bézout inverse of `E'` and proving naturality;
 5. existence of an admissible translation and the canonical quotient
@@ -144,10 +156,9 @@ The [verification matrix](VERIFICATION.md) records the proof layer supporting
 every load-bearing statement and the exact remaining formal boundary.
 
 The Lean project contains no `sorry` and no project-specific axioms. Its final
-literal-fiber realization theorem reports only Lean's standard `propext`,
-`Classical.choice`, and `Quot.sound`; the Jacobian and degree certificates use
-no additional axioms. The formal scope and remaining nonformalized inputs are
-listed in
+page-one theorem and function-field comparison report only Lean's standard
+`propext`, `Classical.choice`, and `Quot.sound`. The formal scope and remaining
+nonformalized inputs are listed in
 [`formal/finite-etale-keller/README.md`](../../formal/finite-etale-keller/README.md).
 
 Run the exact independent checkers from the repository root:
@@ -157,6 +168,11 @@ Run the exact independent checkers from the repository root:
 .venv/bin/python scripts/verify_root_engineered_quadratic_gauge.py
 Singular -q scripts/verify_universal_quadratic_gauge.sing
 .venv/bin/python scripts/verify_finite_etale_keller_fibers.py
+```
+
+The deferred boundary computations can still be checked separately with:
+
+```bash
 .venv/bin/python scripts/verify_quadratic_gauge_nonproperness.py
 ```
 
