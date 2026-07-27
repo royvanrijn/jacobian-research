@@ -129,6 +129,36 @@ order, and prescribed principal symbol.  The immediate theorem target is:
 > restricted deformation complex, and prove that their pairing with
 > \(\mathcal O_k\) is invariant under every allowed lower-order gauge change.
 
+This target is now achieved at two certified fibers of the parity-restricted
+complex.  The 16-term all-pole \(\hbar^5\) functional is a dual \(2\)-cocycle
+and is constant on a \(1075\)-dimensional affine superset of all allowed
+finite-Laurent lower lifts at \((\kappa,\tau)=(0,1)\).  On the explicit cubic
+fifth-order branch, \([X^{18}]\) is a one-term \(\hbar^7\) dual cocycle
+constant on the complete 20-dimensional fifth-order correction torsor.
+The coherent kernel \(\mathcal P_n\) which contains these strong cocycles,
+and the distinction between fiberwise, vertical, and parameter-uniform
+classes, are defined in
+[`extended-geometry/RESTRICTED_QUANTUM_DEFORMATION_COCYCLES.md`](extended-geometry/RESTRICTED_QUANTUM_DEFORMATION_COCYCLES.md).
+What remains is to globalize these fiberwise sections over the parameter
+and Fitting strata and to treat order seven over the full reduced
+fifth-order lift component.
+
+The first globalization chart is now explicit.  On the standard
+16-monomial support, a primitive \(15\times16\) polynomial presentation has
+two maximal minors with coprime nonboundary factors of degrees 34 and 35.
+Thus its rank-drop locus has no divisorial component.  All sixteen maximal
+minors give a zero-dimensional length-218 scheme over each of three good
+finite fields.  The three saturated bases also have the same 21-generator
+leading ideal, with saturation exponent 12; its staircase contains exactly
+218 standard monomials.  Those 21 rational basis elements have now been
+rebuilt over \(\mathbf Q\).  Exact adjacent-pair reductions prove that the
+rebuilt candidate is a Gröbner basis, and an exact unit computation proves
+that it is saturated by \(a(a+1)H\).  Equality with the saturated
+maximal-minor ideal is not yet proved: the next finite task is to reconstruct
+fraction-free quotient identities for input containment and for
+\((a(a+1)H)^{12}G\subseteq I_{15}(M_\Sigma)\).  Comparing the alternate
+supports comes after that certificate.
+
 This would replace many representative-dependent linear calculations by one
 gauge-invariant obstruction.  It could prove that the displayed rank-two
 symbols admit no filtered Weyl quantization, or identify the exact extra

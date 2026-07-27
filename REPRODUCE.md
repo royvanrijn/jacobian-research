@@ -53,13 +53,25 @@ identities prove uniform admissibility and whose exact degrees `3,...,100`
 remain as a regression:
 
 ```bash
+.venv/bin/python scripts/verify_composite_degree_twelve.py
+.venv/bin/python scripts/verify_degree_twelve_wreath_elimination.py
 .venv/bin/python scripts/verify_all_degree_rational_fibers.py
 .venv/bin/python scripts/verify_common_arithmetic_fibers.py
 .venv/bin/python scripts/verify_real_fiber_spectrum.py
 .venv/bin/python scripts/verify_adelic_fiber_engineering.py
 .venv/bin/python scripts/verify_hasse_keller_fiber.py
+.venv/bin/python scripts/verify_fixed_quintic_arithmetic_zoo.py
 .venv/bin/python scripts/verify_stratified_adelic_engineering.py
 ```
+
+The first command generates the explicit decomposable degree-twelve map
+`F_4 o F_3`, checks both determinant-one factors, and records the expanded
+coordinate fingerprints and the `4*3` intermediate-field tower.  Pass
+`--print-map` to print all three expanded coordinates.  The second command
+reduces the pulled-back cubic discriminant modulo the quartic inverse
+equation, factors the saturated resultant as `C^8 Q` with `Q` irreducible
+of exponent one, separates the other boundary image, and certifies
+`Mon(F_4 o F_3)=S_3 wr S_4`.
 
 The common-fiber checker synthesizes the arithmetic transfer and stable
 boundary results.  It verifies the fixed all-degree pair over `Q`, the
@@ -71,12 +83,112 @@ its determinant `-38`, proves that its complete target fiber has no rational
 point, and audits roots over `R` and every `Q_p` through the elementary
 quadratic-residue covering and the two exceptional Hensel lifts.
 
+The fixed-quintic zoo command checks one determinant-`-2` map, the five
+headline complete fibers (split, `S_5`, `A_5`, quadratic-times-cubic, and
+Hasse failing), and three additional targets realizing `C_5`, `D_5`, and
+`F_{20}`.  The group certificates use an explicit order-five automorphism,
+a pair-sum resolvent plus modular cycle type, and Cayley's sextic resolvent.
+The Hasse row shares the quadratic resolvent `Q(sqrt(-3))` between its
+irreducible quadratic and cubic factors; exact ordinary or strong Hensel
+witnesses at `2`, `3`, `7`, and `19` handle every possibly ramified
+completion.  The same checker proves a `Q_5` trace obstruction to obtaining
+an infinite subfamily from the standard pure-cubic construction; infinitude
+inside this particular split-seed pencil remains open.
+
+Its bounded height search requires PARI/GP:
+
+```bash
+.venv/bin/python scripts/search_fixed_quintic_hasse_targets.py
+.venv/bin/python scripts/search_fixed_quintic_hasse_curves.py
+.venv/bin/python scripts/search_fixed_quintic_hasse_discriminants.py
+.venv/bin/python scripts/verify_fixed_quintic_hasse_minus_seven.py
+.venv/bin/python scripts/verify_fixed_quintic_hasse_minus_thirty_one.py
+.venv/bin/python scripts/analyze_fixed_quintic_hasse_minus_thirty_one.py
+```
+
+The first command's default box is stated in its output.  It reports the two
+sign-related Hasse targets of projective height `257280` and no other target
+below the previous height `458080` in that box.  This is search evidence,
+not a global height-minimality claim.  The second command verifies an exact
+rational parametrization of the common-quadratic-resolvent incidence, checks
+rank-two and rank-one elliptic slices, and searches a bounded proportional
+family for irreducible candidates having cubic roots over `Q_2`, `Q_3`, and
+`Q_5`.  Its only small-prime survivors are four presentations of the known
+Hasse target; it does not test every completion and is not an infinitude
+proof.
+The third command varies squarefree shared quadratic resolvents.  In its
+default integral box it finds a new `Q(sqrt(-7))` Hasse target
+`(-7,387/14,400/2401)` of projective height `132741`.  The fourth command
+independently checks its factorization, irreducibility, common resolvent, and
+exact local witnesses at `2`, `5`, `7`, and `79`.
+The wider command
+
+```bash
+.venv/bin/python scripts/search_fixed_quintic_hasse_discriminants.py \
+  --d-bound 60 --r-bound 20 --a-bound 50 --pi-bound 40
+```
+
+also finds a `Q(sqrt(-31))` target
+`(5,-144/5,-188/3125)` of projective height `90000`.  The fifth command
+above audits it independently; only the exceptional primes `2` and `31`
+require local witnesses.
+The sixth command verifies two exact continuation reductions for the
+`Q(sqrt(-31))` row: a genus-two cube curve on the fixed normalized-factor
+slice, and a rational trace quadric with a quartic cube condition for affine
+variation of the two field generators.  It also enumerates rational
+coordinates of height at most `600` on the genus-two slice; only the known
+coordinate `Pi=5` occurs.  This last statement is bounded search evidence.
+
+The larger fixed-discriminant integral search is
+
+```bash
+.venv/bin/python scripts/search_fixed_quintic_hasse_discriminants.py \
+  --d-value -31 --r-bound 100 --a-bound 200 --pi-bound 200
+```
+
+It finds only the certified point and its sign mate.  The low-denominator
+rational search is
+
+```bash
+.venv/bin/python scripts/search_fixed_quintic_hasse_discriminants.py \
+  --d-value -31 \
+  --r-bound 20 --r-denominator 4 \
+  --a-bound 30 --a-denominator 4 \
+  --pi-bound 30 --pi-denominator 4 \
+  --show-failures
+```
+
+It finds two further common-resolvent presentations, both failing at `17`.
+Both commands are bounded search evidence, not finiteness theorems.
+
 The last command audits the constructive CRT/weak-approximation lift and an
 explicit nonsurjective type-`(3,2)` quintic seed with trivial Hessian
 stabilizer and complete fibers of all three quintic signatures, each with
 cycle types `(5)` at `7` and `(2,2,1)` at `11`. The preceding adelic command
 audits an explicit totally imaginary quartic complete fiber that is inert at
 `7` and has unramified splitting type `(2,1,1)` at `11`.
+
+The linear-torus-free quadratic-gauge specialization has a separate exact
+certificate:
+
+```bash
+make verify-linear-torus-free
+```
+
+It checks determinant one, a four-point rational collision, all 734
+coefficient equations in `B F = JF A x`, and a displayed `18 x 18` primitive
+integer minor of determinant `-5`.  Thus every infinitesimal linear
+source-target symmetry vanishes; conjugation makes the result invariant
+under independent linear coordinate changes.  A dependency-free clean-room
+replay rebuilds the sparse rational polynomial calculation and verifies the
+matrix by Bareiss elimination.  A separate parameter calculation proves
+within the SymPy checker that the same rational minor has determinant
+`(10935/4) g_4^6/g_1^6`, so every admissible quartic quadratic-gauge map has
+the same linear-symmetry exclusion.  For the displayed small-coefficient
+map, both implementations also verify that the complete `785 x 24` system
+allowing constant terms in both vector fields has full column rank.  Hence
+the example remains free of affine-linear torus equivariance after
+independent affine coordinate changes.
 
 The remaining constant-`C` boundary has a separate exact Singular
 certificate:
@@ -221,6 +333,41 @@ has constant rank six and that its 401-polynomial consistency ideal, in
 only ten effective parameters, is the unit ideal.  Repeat it with
 `--prime 31991 --a 109 --tau 28672` for the second good-prime certificate.
 The characteristic-zero lift of that final unit identity remains open.
+
+The bounded audit of the standard-support parameter Fitting scheme is
+
+```bash
+.venv/bin/python scripts/compute_degree_five_qper_fitting.py \
+  --timeout 120
+```
+
+It finishes at the three fixed good primes, checks the common
+21-generator leading-monomial staircase, saturation exponent 12, dimension
+zero, and length 218.  This is a stable modular certificate, not a
+characteristic-zero proof.  The opt-in rational reconstruction experiment is
+checkpointed by
+
+```bash
+.venv/bin/python scripts/compute_degree_five_qper_fitting.py \
+  --prime 0 --method modular-rebuild --timeout 900 \
+  --basis-output \
+    artifacts/generated-results/degree_five_qper_fitting_basis_Q.sing
+
+.venv/bin/python scripts/verify_degree_five_qper_fitting_basis.py \
+  --check shape
+.venv/bin/python scripts/verify_degree_five_qper_fitting_basis.py \
+  --check groebner --jobs 8 --timeout 600
+.venv/bin/python scripts/verify_degree_five_qper_fitting_basis.py \
+  --check boundary-unit --timeout 600
+```
+
+The rebuilt 20,840,615-byte rational candidate has SHA-256
+`25788668021f563e17373b55703a08ef5693576077ebdbe53c4c3f2c659d98e6`.
+The 20 adjacent staircase \(S\)-pairs give an exact Gröbner certificate, and
+the exact boundary-unit check proves that the candidate itself is saturated.
+These checks do not prove that it equals the saturated maximal-minor ideal.
+That last identification requires fraction-free quotient identities in both
+containment directions.
 
 The low-support unrestricted odd audit is replayed by
 
@@ -1395,6 +1542,21 @@ Generated outputs, bounded scans, and exploratory search programs are not
 part of the public proof navigation.  Existing generated artifacts live under
 `artifacts/generated-results/`; historical search tools are preserved under
 `archive/tooling/`.
+
+## \(A_4\) Keller inverse-Galois frontier
+
+The pure-target ledger, two-mask factorization, and normalized-boundary
+assembly checks are:
+
+```bash
+.venv/bin/python scripts/verify_a4_pure_target_ledger.py
+.venv/bin/python scripts/verify_a4_two_mask_factorization.py
+.venv/bin/python scripts/verify_a4_normalized_boundary_assembly.py
+```
+
+The last command verifies the determinant-one ambient completion and the
+exact obstruction to the resulting automorphic assembly; it does not verify
+an ordinary polynomial Keller map.
 
 ## Plane degree-frontier audit
 

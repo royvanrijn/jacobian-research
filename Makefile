@@ -16,6 +16,7 @@ ALL_PAPERS := $(VERIFIED_PAPERS) $(PARKED_PAPERS)
 .PHONY: check verify verify-logged verify-minimal verify-core verify-geometry \
 	verify-theorems verify-regressions verify-derived verify-family \
 	verify-external-consequences verify-restricted-minima verify-two-real-gmc verify-counterexample-scoreboard verify-plane-jc verify-plane-case2-residue-strata verify-plane-case2-j1-endpoint verify-plane-case2-maximal-gcd verify-plane-case2-gcd6 verify-plane-poisson-radical verify-plane-poisson-primary-charts verify-plane-poisson-separators verify-plane-poisson-primary-filtration verify-plane-poisson-filtered-modules verify-weighted-boundary \
+	verify-linear-torus-free \
 	verify-master \
 	verify-quartic verify-normal-forms verify-formal verify-lean-foundational \
 	verify-foundations verify-foundations-formal \
@@ -94,6 +95,10 @@ verify-plane-poisson-filtered-modules:
 verify-weighted-boundary:
 	Singular -q scripts/verify_foundational_constant_c_boundary.sing
 	Singular -q scripts/verify_foundational_reduced_gluing.sing
+
+verify-linear-torus-free:
+	$(PYTHON) scripts/verify_no_linear_torus_counterexample.py
+	$(SYSTEM_PYTHON) scripts/audit_no_linear_torus_counterexample_independent.py
 
 verify-ritt-boundary:
 	bash scripts/verify_degree_six_ritt_boundary_atlas.sh
@@ -264,6 +269,7 @@ verify-master:
 	$(SYSTEM_PYTHON) scripts/verify_degreewise_multiplicity_count.py
 	$(PYTHON) scripts/verify_master_universal.py
 	$(PYTHON) scripts/verify_root_engineered_quadratic_gauge.py
+	$(MAKE) verify-linear-torus-free
 	$(PYTHON) scripts/verify_quadratic_cancellation_intersection.py
 	$(PYTHON) scripts/verify_master_instances.py
 	$(PYTHON) scripts/verify_resolvent_ramification_signature.py

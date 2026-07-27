@@ -1,27 +1,5 @@
-\section{Which finite \'etale algebras occur?}
-
-Let $K$ be a field of characteristic zero.  A polynomial map
-\[
- F:\A^m_K\longrightarrow\A^m_K
-\]
-is a \emph{Keller map} if $\det DF\in K^*$.  Its geometric degree is
-\[
- \gdeg(F)=[K(x_1,\ldots,x_m):K(F_1,\ldots,F_m)].
-\]
-A Keller map is \'etale and hence quasi-finite.  Every fiber over a $K$-point
-is therefore a finite \'etale $K$-scheme, possibly empty.
-
-\begin{definition}[Keller fiber]\label{def:keller-fiber}
-A nonzero finite \'etale $K$-algebra $A$ is a \emph{Keller fiber} if there are
-a Keller map $F:\A^m_K\to\A^m_K$ and a point $y\in\A^m(K)$ such that
-\[
- F^{-1}(y)\simeq\Spec A,
- \qquad \dim_KA=\gdeg(F).
-\]
-The equality of the two degrees is the fullness condition.  It says that the
-special fiber contains all generic inverse sheets.  Without it, a fiber may be
-shorter because some sheets have escaped through the nonproperness boundary.
-\end{definition}
+\section{Prescribing finite \'etale algebras}
+\label{sec:prescribing}
 
 The construction used in the proof can be read from left to right:
 \[
@@ -32,239 +10,200 @@ The construction used in the proof can be read from left to right:
  \ \longmapsto\
  \widetilde F_G^{-1}(y_{P,a})\simeq\Spec K[T]/(P).}
 \]
-The last arrow is an isomorphism of schemes.  It is not merely a matching of
-$K$-points or a count after passing to an algebraic closure.
+The last arrow is an isomorphism of schemes, not merely a matching of
+\(K\)-points or a count after passing to an algebraic closure.
 
-\begin{lemma}[Degree two is impossible, over every characteristic-zero field]
-\label{lem:degree-two}
-Let $K$ be a field of characteristic zero, let $m\geq1$, and let
+\begin{theorem}[Polynomial realization]\label{thm:polynomial-realization}
+Let \(P\in K[T]\) be squarefree of degree \(N\geq3\), and let
+\(a\in K\) satisfy
 \[
- F=(F_1,\ldots,F_m)\in K[X_1,\ldots,X_m]^m
- \quad\text{satisfy}\quad
- \det\left(\frac{\partial F_i}{\partial X_j}\right)\in K^*.
+ P'(a)P'''(a)\neq0.
 \]
-Then the induced function-field extension cannot have degree two:
-\[
- \left[
- K(X_1,\ldots,X_m):K(F_1,\ldots,F_m)
- \right]\ne2.
-\]
-\end{lemma}
-
-\begin{proof}
-We give the scalar-extension and descent steps because the external theorem
-used here is most conveniently cited over $\mathbb C$.
-
-\smallskip
-\noindent\emph{The precise external input.}
-Campbell's unnumbered theorem
-\cite[Theorem, p.~244]{Campbell} states that a polynomial map
-$H:\mathbb C^m\to\mathbb C^m$ has a polynomial inverse if its Jacobian
-determinant never vanishes and the induced extension
-\[
- \mathbb C(H_1,\ldots,H_m)\subset
- \mathbb C(X_1,\ldots,X_m)
-\]
-is normal.  In characteristic zero ``normal'' here is equivalent to
-``Galois,'' because the finite function-field extension is separable.
-Razar and, independently, Wright later gave algebraic treatments of this
-Galois case \cite{Razar,Wright}; the proof below needs only Campbell's stated
-complex theorem.
-
-\smallskip
-\noindent\emph{Generic degree survives scalar extension.}
-Assume for contradiction that the displayed degree over $K$ is two.  Let
-$K_0\subset K$ be the subfield generated over $\mathbb Q$ by the finitely
-many coefficients of the $F_i$, and write $F_0$ for the same formulas over
-$K_0$.  The nonzero Jacobian determinant makes
-\begin{equation}
- \varphi_0:K_0[Y_1,\ldots,Y_m]\longrightarrow
- K_0[X_1,\ldots,X_m],
- \qquad Y_i\longmapsto F_i,
- \label{eq:degree-two-coordinate-map}
-\end{equation}
-injective and generically finite.  Indeed, the Jacobian criterion in
-characteristic zero makes the $F_i$ algebraically independent, so both
-fraction fields in \eqref{eq:degree-two-coordinate-map} have transcendence
-degree $m$ and their extension is finite.  If its degree is $d_0$, there is a
-nonempty principal open $U_0$ of the target on which $F_0$ is finite locally
-free of rank $d_0$: first clear denominators in the finite extension of
-fraction fields, and then apply generic freeness.  For every field extension
-$E/K_0$, the base change over the nonempty open $(U_0)_E$ is again finite
-locally free of rank $d_0$.  Taking generic fibers gives
-\begin{equation}
- [E(X_1,\ldots,X_m):E(F_1,\ldots,F_m)]=d_0.
- \label{eq:degree-two-base-change}
-\end{equation}
-Applying \eqref{eq:degree-two-base-change} first to $E=K$ shows $d_0=2$.
-
-\smallskip
-\noindent\emph{Why degree two gives Campbell's field hypothesis.}
-Because $K_0$ is finitely generated over $\mathbb Q$, choose an embedding
-$K_0\hookrightarrow\mathbb C$.  Equation
-\eqref{eq:degree-two-base-change} with $E=\mathbb C$ says that
-\[
- \mathbb C(X_1,\ldots,X_m)/
- \mathbb C(F_1,\ldots,F_m)
-\]
-has degree two.  It is separable in characteristic zero.  Every separable
-quadratic field extension is normal (the second root of the minimal
-polynomial of an element is its trace minus that element), hence it is
-Galois.  Thus the complexified map satisfies exactly the hypotheses of
-Campbell's theorem and is a polynomial automorphism.
-
-\smallskip
-\noindent\emph{Faithfully flat descent of the inverse.}
-The base change of \eqref{eq:degree-two-coordinate-map} along
-$K_0\hookrightarrow\mathbb C$ is therefore an isomorphism.  Since
-$\mathbb C$ is faithfully flat over $K_0$, tensoring the kernel and cokernel
-of $\varphi_0$ with $\mathbb C$ detects their vanishing.  Hence $\varphi_0$
-itself is an isomorphism.  After base change to $K$, the original $F$ is a
-polynomial automorphism, so
-$K(F_1,\ldots,F_m)=K(X_1,\ldots,X_m)$ and its function-field degree is one.
-This contradicts the assumed degree two.
-\end{proof}
-
-\begin{theorem}[Prescribed finite-\'etale realization]
-\label{thm:main}
-Let $P\in K[T]$ be squarefree of degree $N\geq3$.  Choose $a\in K$ outside
-the finite zero set of $P'P'''$, and put
-\[
- G(S)=P(a+S)-P(a).
-\]
-Let $F_G=(\Pi,B,C)$ be the quadratic-gauge map of
-\eqref{eq:gauge-map}, and define
+Put \(G(S)=P(a+S)-P(a)\), let \(F_G=(\Pi,B,C)\) be the
+quadratic-gauge map of \eqref{eq:gauge-map}, and set
 \[
  \widetilde F_G=L\circ F_G,
  \qquad
- L(\Pi,B,C)=\left(\Pi,-\frac{B}{2},C\right).
+ L(\Pi,B,C)=\left(\Pi,-\frac B2,C\right).
 \]
 Then
 \[
  \det D\widetilde F_G=1,
- \qquad \gdeg(\widetilde F_G)=N,
- \qquad \max_i\deg (\widetilde F_G)_i\leq 6N+2.
+ \qquad
+ \gdeg(\widetilde F_G)=N.
 \]
-The Galois closure of the induced degree-$N$ function-field extension has
-geometric and arithmetic Galois group $S_N$.
 At
 \begin{equation}
  y_{P,a}=\left(1,0,-\frac{2P(a)}{P'(a)}\right)
  \label{eq:main-target}
 \end{equation}
-its full fiber is
+the full Keller fiber is
 \[
  \boxed{\widetilde F_G^{-1}(y_{P,a})
  \simeq\Spec K[T]/(P).}
 \]
-More explicitly, for every commutative $K$-algebra $R$ there is a bijection
-\[
- \operatorname{Hom}_{K\text{-alg}}(K[T]/(P),R)
- \simeq
- \{u\in R^3:\widetilde F_G(u)=y_{P,a}\},
-\]
-natural in $R$.
-
-Consequently, every finite \'etale $K$-algebra of rank at least three occurs
-as a full fiber of a Jacobian-one map in affine three-space.
 \end{theorem}
 
 \begin{proof}
-The polynomials $P'$ and $P'''$ are nonzero in characteristic zero when
-$N\geq3$.  Their product has only finitely many roots, while $K$ is infinite,
-so an admissible $a$ exists.  The linear and cubic Taylor coefficients of $G$
-are $P'(a)$ and $P'''(a)/3!$, and the quadratic gauge of
-Section~\ref{sec:gauge} is therefore defined.
-
-At the target \eqref{eq:main-target}, its inverse polynomial is
+The linear and cubic coefficients of \(G\) are
+\(P'(a)\) and \(P'''(a)/3!\), so the quadratic gauge of
+Section~\ref{sec:gauge} is defined.  At the target
+\eqref{eq:main-target}, its inverse polynomial is
 \[
  G(S)-\frac{P'(a)}2\left(-\frac{2P(a)}{P'(a)}\right)
  =P(a+S).
 \]
 Translation preserves squarefreeness, so
-Corollary~\ref{cor:squarefree-gauge}
-identifies the full fiber with $\Spec K[S]/(P(a+S))$.
+Corollary~\ref{cor:squarefree-gauge} identifies the fiber with
+\(\Spec K[S]/(P(a+S))\).
 
-The translation back to the original polynomial is explicit:
+Translation back to the original polynomial gives
 \[
  K[S]/(P(a+S))\longrightarrow K[T]/(P(T)),
  \qquad \overline S\longmapsto\overline T-a,
 \]
-with inverse $\overline T\mapsto\overline S+a$.  Composing this with the
-natural equivalence of Corollary~\ref{cor:squarefree-gauge} gives, for every
-commutative $K$-algebra $R$,
-\[
- \operatorname{Hom}_{K\text{-alg}}(K[T]/(P),R)
- \simeq \widetilde F_G^{-1}(y_{P,a})(R).
-\]
-Thus the isomorphism includes the complete scheme structure and commutes with
-base change.
-
-The linear map $L$ fixes the chosen target because its second coordinate is
-zero.  It multiplies the Jacobian by $-1/2$ and changes neither geometric
-degree nor coordinate degree.  Corollary~\ref{cor:effective-gauge} therefore
-gives the determinant-one statement and the bound $6N+2$.  Since both the
-quotient algebra and the generic inverse problem have degree $N$, the fiber is
-full.  The symmetric-monodromy assertion follows from
-Theorem~\ref{thm:symmetric-monodromy}.
-
-For a general finite \'etale algebra of rank at least three, use the
-monogenicity lemma in Section~\ref{sec:realization} and apply the polynomial
-case just proved.
+with inverse \(\overline T\mapsto\overline S+a\).  The output map \(L\)
+fixes the chosen target, multiplies the Jacobian by \(-1/2\), and changes
+neither geometric degree nor fiber length.  Corollary~\ref{cor:effective-gauge}
+therefore gives \(\det D\widetilde F_G=1\) and
+\(\gdeg(\widetilde F_G)=N\).  Since the displayed fiber has length \(N\),
+it is full.
 \end{proof}
 
-\begin{theorem}[Classification of full Keller fibers]
-\label{cor:rank-classification}
-For $N\geq1$, let $\mathsf{FullFib}_{3,N}(K)$ be the replete full subcategory
-of finite \'etale $K$-schemes whose objects are the schemes isomorphic to
-full fibers
+\begin{corollary}[Effective and functorial form]
+\label{cor:polynomial-effective}
+Under the hypotheses of Theorem~\ref{thm:polynomial-realization},
 \[
- F^{-1}(y),\qquad
- F:\A^3_K\longrightarrow\A^3_K,\quad
- \gdeg(F)=N,\quad y\in\A^3(K).
+ \max_i\deg(\widetilde F_G)_i\leq6N+2.
 \]
-Then
+For every commutative \(K\)-algebra \(R\), the scheme isomorphism induces a
+bijection
+\[
+ \operatorname{Hom}_{K\text{-alg}}(K[T]/(P),R)
+ \simeq
+ \{u\in R^3:\widetilde F_G(u)=y_{P,a}\},
+\]
+natural in \(R\).
+\end{corollary}
+
+\begin{proof}
+The degree bound is Corollary~\ref{cor:effective-gauge}.  The natural
+bijection is the represented-fiber equivalence in
+Corollary~\ref{cor:squarefree-gauge}, composed with the translation
+\(K[S]/(P(a+S))\simeq K[T]/(P)\).
+\end{proof}
+
+\begin{lemma}[Monogenicity]\label{lem:monogenic}
+Every finite \'etale algebra over an infinite field is generated by one
+element.  Equivalently, if \(A\) has rank \(N\), then
+\[
+ A\simeq K[T]/(P)
+\]
+for a squarefree polynomial \(P\in K[T]\) of degree \(N\).
+\end{lemma}
+
+\begin{proof}
+For \(\theta\in A\), let \(\chi_\theta(T)\) be the characteristic polynomial
+of multiplication by \(\theta\) on the \(K\)-vector space \(A\), and set
+\[
+ \Delta(\theta)=\operatorname{disc}(\chi_\theta).
+\]
+This is a polynomial function on the affine space underlying \(A\).  After
+extending scalars to a separable closure, identify
+\(A\otimes_KK^{\rm sep}\) with \((K^{\rm sep})^N\).  In these coordinates,
+\[
+ \Delta(\theta_1,\ldots,\theta_N)
+ =\prod_{i<j}(\theta_i-\theta_j)^2,
+\]
+so \(\Delta\) is not the zero polynomial.  Since \(K\) is infinite, some
+\(\theta\in A\) satisfies \(\Delta(\theta)\neq0\).  Its characteristic
+polynomial has \(N\) distinct geometric roots, and its minimal polynomial
+therefore has degree \(N\).  Hence \(K[\theta]=A\), with squarefree minimal
+polynomial \(P\).
+\end{proof}
+
+\begin{corollary}[Finite \'etale realization]
+\label{cor:finite-etale-realization}
+Every finite \'etale \(K\)-algebra \(A\) of rank \(N\geq3\) occurs as a full
+Keller fiber of a Jacobian-one map
+\[
+ \A^3_K\longrightarrow\A^3_K
+\]
+of geometric degree \(N\).
+
+More precisely, once an isomorphism \(A\simeq K[T]/(P)\) and an element
+\(a\in K\) with \(P'(a)P'''(a)\neq0\) are supplied, the map, target, and
+fiber isomorphism are given by the explicit formulas of
+Theorem~\ref{thm:polynomial-realization}.  For an abstract \(A\), the
+monogenicity argument proves that such a presentation exists; it does not
+choose one canonically.
+\end{corollary}
+
+\begin{proof}
+Lemma~\ref{lem:monogenic} supplies a squarefree presentation
+\(A\simeq K[T]/(P)\) of degree \(N\).  The polynomials \(P'\) and \(P'''\)
+are nonzero in characteristic zero, and \(K\) is infinite, so some \(a\)
+avoids the finite zero set of \(P'P'''\).  Apply
+Theorem~\ref{thm:polynomial-realization}.
+\end{proof}
+
+\begin{lemma}[Degree two is impossible]\label{lem:degree-two}
+Let \(K\) be a field of characteristic zero and let
+\(F:\A^m_K\to\A^m_K\) be a Keller map.  Then
+\[
+ [K(X_1,\ldots,X_m):K(F_1,\ldots,F_m)]\neq2.
+\]
+\end{lemma}
+
+\begin{proof}
+A separable quadratic extension is Galois, so this is the classical Galois
+case of the Jacobian theorem due to Campbell, Razar, and Wright
+\cite{Campbell,Razar,Wright}.  Appendix~\ref{app:degree-two} records the
+scalar-extension and descent argument needed to pass from the usual complex
+statement to an arbitrary characteristic-zero field.
+\end{proof}
+
+\begin{corollary}[Classification of full Keller fibers]
+\label{cor:rank-classification}
+Let \(X\) be a finite \(K\)-scheme of positive rank \(N\).  Then \(X\) is
+isomorphic to a full Keller fiber of a geometric-degree-\(N\) Keller map
+\[
+ F:\A^3_K\longrightarrow\A^3_K
+\]
+if and only if \(X\) is finite \'etale and \(N\neq2\).  Consequently, the
+possible nonzero ranks of full Keller fibers in \(\A^3_K\) are exactly
+\[
+ \boxed{1,3,4,5,\ldots}.
+\]
+\end{corollary}
+
+\begin{proof}
+Every Keller fiber is finite \'etale.  If it is a full Keller fiber of rank
+\(N\), its map has geometric degree \(N\), so
+Lemma~\ref{lem:degree-two} excludes \(N=2\).  Conversely, the identity
+realizes every rank-one finite \'etale \(K\)-scheme, namely \(\Spec K\), and
+Corollary~\ref{cor:finite-etale-realization} realizes every finite \'etale
+scheme of rank \(N\geq3\) as a full Keller fiber.  Empty and shorter special
+fibers are Keller fibers, but they are not full Keller fibers and hence do
+not alter the rank list.
+\end{proof}
+
+\begin{remark}[Categorical reformulation]
+For \(N\geq1\), let \(\mathsf{FullFib}_{3,N}(K)\) be the replete full
+subcategory of finite \(K\)-schemes whose objects are isomorphic to full
+Keller fibers of geometric-degree-\(N\) maps in \(\A^3_K\), and let
+\(\mathsf{FinEt}^{\,N}_K\) be the full subcategory of rank-\(N\) finite
+\'etale \(K\)-schemes.  The corollary is equivalently
 \[
  \mathsf{FullFib}_{3,N}(K)=
  \begin{cases}
   \mathsf{FinEt}^{\,N}_K,&N=1\text{ or }N\geq3,\\
-  \varnothing,&N=2,
+  \varnothing,&N=2.
  \end{cases}
 \]
-where $\mathsf{FinEt}^{\,N}_K$ is the full subcategory of rank-$N$ finite
-\'etale $K$-schemes.  In particular, for $N\geq3$, a finite $K$-scheme occurs
-as a full fiber of a geometric-degree-$N$ Keller map in $\A^3_K$ if and only
-if it is finite \'etale of rank $N$.
-
-Equivalently on coordinate algebras, every rank-$N$ finite \'etale
-$K$-algebra occurs for $N=1$ or $N\geq3$, and none occurs for $N=2$.
-Consequently, the possible nonzero ranks of full Keller fibers are exactly
-\[
- \boxed{1,3,4,5,\ldots}.
-\]
-\end{theorem}
-
-\begin{proof}
-The Jacobian condition makes $F$ \'etale.  Hence every fiber over a
-$K$-point is a finite \'etale $K$-scheme, and the fullness equality makes its
-rank equal to $\gdeg(F)=N$.  This proves the necessary direction in every
-degree.  The identity map realizes the unique rank-one object.
-Theorem~\ref{thm:main} realizes every rank-$N$ finite \'etale object in
-affine three-space for every $N\geq3$, while
-Lemma~\ref{lem:degree-two} shows that no geometric-degree-two Keller map
-exists.  This last exclusion concerns the generic function-field degree
-before any target point is selected.  Thus an empty special fiber cannot
-create a rank-two object; it is not a nonzero finite \'etale scheme at all.
-Nor can a shorter special fiber of a map of some other geometric degree:
-such a fiber fails the defining fullness equality and is not an object of
-$\mathsf{FullFib}_{3,2}(K)$.  Empty and non-full fibers therefore have no
-bearing on the asserted rank set.
-\end{proof}
-
-\begin{remark}[What the categorical statement remembers]
-The category $\mathsf{FullFib}_{3,N}(K)$ is the essential image inside finite
-\'etale $K$-schemes: it remembers the resulting fiber scheme, not a chosen
-presentation by a map--target pair $(F,y)$.  Different pairs may realize the
-same object.  If one works with finite \'etale algebras rather than schemes,
-the corresponding statement is contravariant under $\Spec$.
+This essential image remembers the resulting fiber scheme, not a chosen
+map--target pair \((F,y)\); different pairs may realize the same object.
+On coordinate algebras the statement is contravariant under \(\Spec\).
 \end{remark}
+
+\input{sections/03-realization}

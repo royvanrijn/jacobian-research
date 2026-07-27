@@ -622,6 +622,41 @@ def verify_explicit_cubic_branch(
             field.one / field(24),
         )
         seventh_variations.append(variation)
+
+    # On the sparse K-rational branch, coefficient extraction at X^18 is
+    # already a one-term dual cocycle.  It kills the complete 20-dimensional
+    # fifth-order correction torsor, not merely the six pivot columns which
+    # span its order-seven image.  Record the raw (unnormalized) period so
+    # the obstruction is independent of the row-reduction normalization
+    # used below.
+    if not branch_u36:
+        x18 = (18, 0, 0)
+        if any(
+            variation.get(x18, field.zero)
+            for variation in seventh_variations
+        ):
+            raise AssertionError(
+                "[X^18] does not annihilate the complete hbar^5 kernel"
+            )
+        x18_period = seventh_constant.get(x18, field.zero)
+        expected_x18_period = (
+            field(2189187)
+            * (
+                field(587583566) * a**2
+                + field(1388701707) * a
+                + field(831388850)
+            )
+            / field(83886080)
+        )
+        if x18_period != expected_x18_period or not x18_period:
+            raise AssertionError((x18_period, expected_x18_period))
+        print(
+            "EXPLICIT_H7_X18_COCYCLE="
+            "kernel_variations20,value="
+            + str(field.to_sympy(x18_period)),
+            flush=True,
+        )
+
     try:
         seventh_parameters, seventh_kernel, seventh_rank = solve_affine(
             seventh_variations,

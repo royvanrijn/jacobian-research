@@ -272,9 +272,12 @@ F^{-1}(1,0,-38)\simeq
 \]
 
 This fiber has points over every completion of \(\mathbb Q\) but no rational
-point. A Chebotarev argument excludes such finite étale schemes in total
-degree at most four, so the minimum Hasse-failing Keller-fiber rank is exactly
-five.
+point. A Dedekind-zeta first/second-moment argument excludes such finite
+étale schemes in total degree at most four, so the minimum Hasse-failing
+Keller-fiber rank is exactly five.  Equivalently, the first prime moment
+counts global components, while the tensor square supplies the second
+moment; a nontrivial field factor forces a strictly positive component
+surplus and hence a contradiction.
 
 ## 7. Consequences for the earlier chain
 
@@ -310,12 +313,14 @@ quintic scaling, determinant \(-722\), target \(-38\), and the fixed-map
 infinite Hasse-family identity.
 
 A staged Lean project is stored in
-[`formal/finite-etale-keller`](../formal/finite-etale-keller). Stage one
-formalizes the explicit quintic Jacobian, output normalizations,
-inverse-polynomial identity, and a constructive Bézout inverse in the quotient
-algebra. The universal marked-line identities and full scheme reconstruction
-are the next formal modules. The historical degree-two theorem remains a
-separate external input until formalized.
+[`formal/finite-etale-keller`](../formal/finite-etale-keller). It now
+formalizes the automatic three-variable realization, full scheme-level fiber
+reconstruction, naturality, finite étaleness, rank and geometric degree; the
+explicit quintic Hasse certificate at every completion; and the entire
+algebraic degree-four moment barrier.  For rank-minimality, only the
+Dedekind-zeta Euler-product extraction of the first prime moment remains
+outside Lean. The historical degree-two theorem remains a separate external
+input until formalized.
 
 The dated qualified novelty search is recorded in
 [`papers/common-arithmetic-fibers/LITERATURE_AUDIT.md`](../papers/common-arithmetic-fibers/LITERATURE_AUDIT.md).

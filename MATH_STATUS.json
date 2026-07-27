@@ -80,7 +80,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:f6f335bd0db9fe55bbcf93e2644e78d16cd73c6d763e5f94faf083f4707b3ebb",
+      "artifact_hash": "sha256:464dd2b845b81fe3dd2a4722bfae39009cc675e45a0992ef60aa8b69a3b98883",
       "software_lock": [
         ".python-version",
         "requirements.txt"
@@ -134,7 +134,111 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:0d78508262af05090f6ef9c39bbcfb29d0d2a31109017f7d6aa25b95ad6b35de",
+      "artifact_hash": "sha256:7d926e47a909409b6e675bbea77a5f7f17c898f8b748ae31359cc8a8cd2452fb",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "SCF1",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Split and connected full fibers in one Keller map",
+      "scope": "For every N >= 3, the single explicit determinant-one quadratic-gauge map attached to G_N(S)=prod_(j=0)^(N-1)(S-j) has the completely split full fiber Q^N over (1,0,0) and infinitely many connected degree-N full fibers over rational targets on the line (1,0,c). The generic line polynomial G_N(S)-g_1 c/2 is geometrically irreducible by its constant nonzero coefficient of c, and Hilbert irreducibility supplies the field specializations. In degree five, c=1 gives the explicit field polynomial S^5-10S^4+35S^3-50S^2+24S-12, irreducible modulo 5 as an Artin--Schreier polynomial. No arbitrary-pair or pairwise-nonisomorphic-field claim is made.",
+      "canonical_source": "verified/SPLIT_AND_CONNECTED_FULL_FIBERS.md",
+      "dependencies": [
+        "RQG1",
+        "external: Hilbert irreducibility theorem"
+      ],
+      "checker": "scripts/verify_split_and_connected_full_fibers.py",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:43e8caa07dc7b43b346baf58e1734125643f7d5e4d9c7fd85ade09a9f1299496",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "AZ1",
+      "kind": "example",
+      "state": "proved",
+      "title": "Fixed quintic arithmetic zoo",
+      "scope": "The single determinant-minus-two degree-five quadratic-gauge map attached to G(S)=S(S^2-1)(S^2-4) has explicit complete regular fibers realizing every transitive quintic Galois group C_5, D_5, F_20, A_5, and S_5, as well as Q^5, a product K_2 times K_3, and an everywhere locally soluble fiber with no rational point. The solvable-group certificates use an explicit order-five automorphism, a split pair-sum resolvent with a (2,2,1) modular cycle, and Cayley's sextic solvability resolvent. The Hasse target is (4,-335/27,4807/20736), of projective height 257280, with inverse polynomial (192S^2-72S+19)(55296S^3+20736S^2+1224S-253)/10368. Its factors have common quadratic resolvent Q(sqrt(-3)); cyclic unramified decomposition groups cover every prime outside 2,3,7,19, and exact ordinary or strong Hensel witnesses cover those four primes. Infinitely many Hasse failures in this particular pencil remain open; the standard pure-cubic route is excluded by a Q_5 trace-conic obstruction.",
+      "canonical_source": "FIXED_QUINTIC_MODULI_DOMINANCE.md",
+      "dependencies": [
+        "RQG1",
+        "external: Cayley's solvability resolvent for irreducible quintics",
+        "external: decomposition groups and Frobenius in unramified Galois extensions",
+        "external: Hensel's lemma"
+      ],
+      "checker": "scripts/verify_fixed_quintic_arithmetic_zoo.py",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:b0a1020e5b919e25d3da6d538b80eeb543634b64a3b66a4d4a0ed89b57a349c9",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "AZ2",
+      "kind": "example",
+      "state": "proved",
+      "title": "Second fixed-quintic Hasse fiber with quadratic resolvent Q(sqrt(-7))",
+      "scope": "In the fixed determinant-minus-two degree-five arithmetic-zoo map, the target (-7,387/14,400/2401) has normalized inverse polynomial (T^2-4T+32)(T^3+4T^2-21T+175). Both factors are irreducible and their discriminants are -7*4^2 and -7*(5*79)^2, so they have common quadratic resolvent Q(sqrt(-7)). The unramified common-resolvent argument and exact local witnesses at 2,5,7,79 prove that the complete fiber is everywhere locally soluble but has no rational point. Its primitive projective target [4802:-33614:132741:800] has height 132741, improving the previous 257280 certificate; no global height-minimality is claimed.",
+      "canonical_source": "FIXED_QUINTIC_MODULI_DOMINANCE.md",
+      "dependencies": [
+        "AZ1",
+        "external: decomposition groups and Frobenius in unramified Galois extensions",
+        "external: Hensel's lemma"
+      ],
+      "checker": "scripts/verify_fixed_quintic_hasse_minus_seven.py",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:f09f035a55d8c03185da76f7bcde34f68f45dcf9c5d1d0d5a87c8726f5c8b2f9",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "AZ3",
+      "kind": "example",
+      "state": "proved",
+      "title": "Third fixed-quintic Hasse fiber with quadratic resolvent Q(sqrt(-31))",
+      "scope": "In the fixed determinant-minus-two degree-five arithmetic-zoo map, the target (5,-144/5,-188/3125) has normalized inverse polynomial (T^2-8T+47)(T^3+8T^2+12T+8). Both factors are irreducible and their discriminants are -31*2^2 and -31*8^2, so they have common quadratic resolvent Q(sqrt(-31)). The unramified common-resolvent argument, splitting of the quadratic over Q_2, and a simple cubic Hensel root at 31 prove that the complete fiber is everywhere locally soluble but has no rational point. Its primitive projective target [3125:15625:-90000:-188] has height 90000, improving the previous 132741 certificate; no global height-minimality is claimed.",
+      "canonical_source": "FIXED_QUINTIC_MODULI_DOMINANCE.md",
+      "dependencies": [
+        "AZ1",
+        "external: decomposition groups and Frobenius in unramified Galois extensions",
+        "external: Hensel's lemma"
+      ],
+      "checker": "scripts/verify_fixed_quintic_hasse_minus_thirty_one.py",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:01d967477053f202562ff99296029780fe620eb54333913d2e05c28236862fb0",
       "software_lock": [
         ".python-version",
         "requirements.txt"
@@ -170,6 +274,30 @@
       ],
       "replaced_by": [],
       "priority": "reference"
+    },
+    {
+      "id": "LTS1",
+      "kind": "example",
+      "state": "proved",
+      "title": "Linear-torus-free Keller counterexample",
+      "scope": "The small-coefficient determinant-one quadratic-gauge map attached to G(S)=S(S-1)(S+1)(S-2) has a four-point rational collision with small coordinates. For the full 18-parameter system B F=JF A x, an exact 18-by-18 primitive integer coefficient minor has determinant -5, so A=B=0; the matrix also admits a short triangular elimination proof. The same selected rational minor for a general quartic seed has determinant (10935/4)g_4^6/g_1^6, proving the linear exclusion uniformly for every admissible quartic quadratic-gauge map. For the explicit specialization, the complete 785-by-24 system allowing constant terms in both vector fields also has full rank. Hence it has no nontrivial affine-linear G_m-equivariance after arbitrary independent affine source and target changes. No claim about nonlinear polynomial left-right equivalence is made.",
+      "canonical_source": "cancellation/NO_LINEAR_TORUS_COUNTEREXAMPLE.md",
+      "dependencies": [
+        "RQG1"
+      ],
+      "checker": "scripts/audit_no_linear_torus_counterexample_independent.py",
+      "proof_type": "unclassified",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:50e0fbb48e543605eede4f4aaadd125e0188a0fdd611f0b666238423e2b02e6c",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [],
+      "replaced_by": [],
+      "priority": "derived"
     },
     {
       "id": "RQG3",
@@ -1392,13 +1520,121 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:f6f335bd0db9fe55bbcf93e2644e78d16cd73c6d763e5f94faf083f4707b3ebb",
+      "artifact_hash": "sha256:464dd2b845b81fe3dd2a4722bfae39009cc675e45a0992ef60aa8b69a3b98883",
       "software_lock": [
         ".python-version",
         "requirements.txt"
       ],
       "supersedes": [
         "generic-seed symmetric-monodromy hypothesis"
+      ],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "PMA1",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Primitive-monodromy atomicity and stable atomicity",
+      "scope": "Every characteristic-zero Keller map of geometric degree greater than one with primitive geometric monodromy is atomic under polynomial composition, absolutely under constant-field extension and after every identity stabilization. Atomicity is preserved by polynomial left-right equivalence. Consequently every admissible weighted Keller map of degree N >= 3 is absolutely and stably atomic; the sparse seeds H_N=(W^2-W^N)/(N-2) give an explicit determinant-one example in every degree.",
+      "canonical_source": "verified/PRIMITIVE_MONODROMY_ATOMICITY.md",
+      "dependencies": [
+        "W1",
+        "UM1",
+        "external: Galois correspondence for blocks and intermediate fields",
+        "external: Zariski's Main Theorem and Hartogs extension on normal affine space"
+      ],
+      "checker": null,
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": null,
+      "software_lock": [],
+      "supersedes": [
+        "integer primality as a proxy for compositional atomicity"
+      ],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
+      "id": "IKF1",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Imprimitive Keller factorization and polynomial-sandwich criterion",
+      "scope": "For every a,b >= 3, the explicit composition C_(a,b)=F_b o F_a is a determinant-one decomposable Keller map of degree ab. Its monodromy is an imprimitive subgroup of S_a wr S_b with full top action S_b and full local action S_a; full-wreath equality requires a separate independence certificate and is not asserted uniformly. An intermediate field E of an arbitrary Keller map algebraizes to polynomial factors exactly when it is the fraction field of a polynomial subalgebra R satisfying k[F] subset R subset k[x]. Thus imprimitive monodromy supplies the field but not automatically the polynomial affine-space model. In degrees 12, 15, and 20 the atomic F_(ab) and decomposable C_(a,b) are not stably polynomially left-right equivalent.",
+      "canonical_source": "verified/IMPRIMITIVE_KELLER_FACTORIZATION.md",
+      "dependencies": [
+        "PMA1",
+        "external: Galois correspondence for imprimitive block systems",
+        "external: Zariski's Main Theorem"
+      ],
+      "checker": "scripts/verify_composite_degree_twelve.py",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:626b8d5b71f1c453dbf57b070f243c1b9be6c7acbc8139421c6ddc50e9857295",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [
+        "imprimitive monodromy alone implies polynomial decomposition in several variables"
+      ],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
+      "id": "WR12",
+      "kind": "corollary",
+      "state": "proved",
+      "title": "Full wreath monodromy of the decomposable degree-twelve map",
+      "scope": "For C_(3,4)=F_4 o F_3, the normalized main cubic discriminant maps birationally through F_4 to a target divisor distinct from the other inner boundary image. Exact reduction modulo the quartic inverse equation and saturation by C give resultant C^8 Q, where Q is irreducible with exponent one. Its inertia is one transposition supported in one block; full local S_3 and top S_4 actions then give geometric monodromy S_3 wr S_4 of order 31104.",
+      "canonical_source": "verified/IMPRIMITIVE_KELLER_FACTORIZATION.md",
+      "dependencies": [
+        "IKF1"
+      ],
+      "checker": "scripts/verify_degree_twelve_wreath_elimination.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:1ba356a8dc23e889a19c3e2ead3f631d35d9060c783324c448000c62fba14971",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [
+        "unproved full-wreath expectation for F_4 o F_3"
+      ],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "IC12",
+      "kind": "example",
+      "state": "proved",
+      "title": "Indecomposable composite-degree Keller map",
+      "scope": "The explicit weighted map from H=(W^2-W^12)/10 has determinant one, geometric degree twelve, and geometric monodromy S_12. It and every identity stabilization are atomic: every polynomial decomposition has an invertible factor.",
+      "canonical_source": "verified/INDECOMPOSABLE_COMPOSITE_DEGREE.md",
+      "dependencies": [
+        "W1",
+        "UM1",
+        "PMA1"
+      ],
+      "checker": "scripts/verify_weighted_seed_theorem.py",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:464dd2b845b81fe3dd2a4722bfae39009cc675e45a0992ef60aa8b69a3b98883",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [
+        "composite geometric degree suggests nontrivial compositional structure"
       ],
       "replaced_by": [],
       "priority": "derived"
@@ -2081,6 +2317,158 @@
       ],
       "supersedes": [
         "specialization-only formulation of the degree-seven arithmetic-indistinguishability result"
+      ],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "KIG1",
+      "kind": "corollary",
+      "state": "proved",
+      "title": "Oriented quartic A4 Keller inverse cover",
+      "scope": "Over the oriented squarefree depressed-quartic base D^2=Disc(T^4+pT^2+qT+r), the natural degree-four root incidence has geometric and arithmetic generic monodromy A4. One derivative-unit coordinate gives a determinant-one finite etale morphism of smooth affine fourfold boundary complements without changing the cover. The totally real fiber T^4-7T^2-3T+1 has Galois group A4 and realizes the good-prime cycle types (3,1), (2,2), and split. This is a chart realization, not an absolute polynomial self-map of affine space.",
+      "canonical_source": "extended-geometry/A4_KELLER_INVERSE_COVER.md",
+      "dependencies": [
+        "AS1",
+        "UM1",
+        "external: Campbell--Razar--Wright Galois case"
+      ],
+      "checker": "scripts/verify_a4_keller_inverse_cover.py",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:99921bae00a0a46e0c7e9fecdb73aab212dcaf4bc39722f03a4e40bbffcb4c44",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "KIG2",
+      "kind": "corollary",
+      "state": "proved",
+      "title": "Polynomial affine A4 monodromy core",
+      "scope": "Squaring on the oriented cubic quotient is a polynomial degree-four A4 cover with constant hypersurface-residue Jacobian four. In rational C3-invariant coordinates, the same cover is (N1/H,N2/H) with Jacobian 4K^3L/H^3. Homogenization gives a literal polynomial map A3 -> A3 of generic degree four and generic monodromy A4, with determinant 4W^2K^3L. Every ambient correction preserving the oriented surface modulo its defect and affine-linear in the ambient coordinates has inconsistent constant-Jacobian equations. The polynomial A3 map is not yet Keller.",
+      "canonical_source": "extended-geometry/A4_AFFINE_KELLER_FRONTIER.md",
+      "dependencies": [
+        "KIG1",
+        "external: Jensen--Ledet--Yui generic A4 polynomial"
+      ],
+      "checker": "scripts/verify_a4_affine_keller_frontier.py",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:b49986c615c885caf05c6961747d1b35e23a48a0a1294c4cfacccb27f1b1bc67",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "KIG3",
+      "kind": "corollary",
+      "state": "proved",
+      "title": "A4 determinant-ledger reduction and rigidity",
+      "scope": "For the polynomial A4 cone Phi, the homogenized Jensen--Ledet--Yui B-polynomial pulls back as W^3 K^3 L^2, so its ratio to det(D Phi)=4 W^2 K^3 L is exactly WL/4: the target ledger absorbs K^3 and one copy of L. The normalization of L=0 is P1 minus {0,3,infinity}. Every correction of the oriented map by an arbitrary polynomial multiple of its defining defect has zero Jacobian at (-1,-1,0), closing that ansatz in all degrees. Polynomial target reparametrizations inside the current common-denominator affine model retain W^2, and every stabilization which keeps Phi as an output block retains the full determinant divisor. A surviving completion must be a genuinely coupled affine modification for the residual boundary WL.",
+      "canonical_source": "extended-geometry/A4_LEDGER_REDUCTION_AND_RIGIDITY.md",
+      "dependencies": [
+        "KIG2",
+        "external: Jensen--Ledet--Yui generic A4 polynomial"
+      ],
+      "checker": "scripts/verify_a4_ledger_reduction.py",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:83697561be0f832ba1a7be9d9f4eca11aa6f8578b48828209fd36aefe3d5b1ae",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [
+        "affine-linear-only defect-lift obstruction in KIG2"
+      ],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "KIG4",
+      "kind": "corollary",
+      "state": "proved",
+      "title": "Pure-target A4 determinant-ledger lift",
+      "scope": "Adjoining z and mapping it to (WL/4)z extends the polynomial A4 cone to an A4 -> A4 polynomial map of generic degree four and exact generic A4 monodromy whose Jacobian is W^3 K^3 L^2, exactly the pullback of the homogeneous Jensen--Ledet--Yui target divisor B. Hence the ordinary source volume is the pullback of the target logarithmic volume dP dQ dR dS/B. The residual cubic has two polynomial incidence presentations 1-ru=L/27 and 1-(r-1)v=-L/27, exposing its two puncture characters. Any ordinary Keller completion must modify at least two cone outputs; constant-direction masks only stabilize a three-dimensional map, and the naive multiplicative target factorization requires the nonpolynomial coordinate z/(4 W^2 K^3 L).",
+      "canonical_source": "extended-geometry/A4_PURE_TARGET_LEDGER_LIFT.md",
+      "dependencies": [
+        "KIG3"
+      ],
+      "checker": "scripts/verify_a4_pure_target_ledger.py",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:89e6a3ad06d8b7c57be8bdc25d7003825af0791fdcd7c52c4e361acec40f8c9a",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "KIG5",
+      "kind": "corollary",
+      "state": "proved",
+      "title": "Two-mask A4 target-factorization frontier",
+      "scope": "The homogeneous A4 target divisor has two puncture-adapted Bezout presentations and a 2-by-2 determinantal representation, producing an explicit generically birational A5 target blowdown beta_2 with Jacobian B. Every one-primitive triangular rechart fails by constant-term divisibility. Exact multivariate division excludes all 120 assignments of the pure-target lift plus one identity coordinate to the three base and two mask slots of beta_2. More generally, every target automorphism preserving the mask zero section fails on the normal module because polynomial inversion would have determinant a unit divided by B. Moving the zero section into the singular line B=0 is necessary but the six coordinate incidence charts all fail. KIG6 audits and closes the ensuing normalized-boundary automorphic assembly.",
+      "canonical_source": "extended-geometry/A4_TWO_MASK_FACTORIZATION_FRONTIER.md",
+      "dependencies": [
+        "KIG4"
+      ],
+      "checker": "scripts/verify_a4_two_mask_factorization.py",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:f99b55612856d908818d9486880e9a551b424e9fc33694ee2b066ed2abae05b2",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "KIG6",
+      "kind": "corollary",
+      "state": "proved",
+      "title": "Normalized-boundary A4 assembly obstruction",
+      "scope": "The polynomial normalization of the A4 target cubic has an explicit determinant-one completion to an automorphism of A5. Nevertheless, composing the pure-target lift with this completion and the inverse two-mask blowdown is not polynomial: neither inverse-mask numerator is divisible by the new target cubic. Its rational Jacobian is the nonconstant quotient of the old and new cubic pullbacks. More generally, dominance and the chain rule show that any automorphic incidence rechart giving constant Jacobian must preserve the cubic divisor up to scalar, so it cannot move the generic old mask-zero section into that divisor. A surviving ordinary Keller construction must instead use a nonautomorphic incidence map alpha satisfying B(alpha_base)=u B(old) det(D alpha), both inverse-mask divisibilities, and reconstruction of the original A4 target field.",
+      "canonical_source": "extended-geometry/A4_NORMALIZED_BOUNDARY_ASSEMBLY_AUDIT.md",
+      "dependencies": [
+        "KIG5"
+      ],
+      "checker": "scripts/verify_a4_normalized_boundary_assembly.py",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:cd44da382d086c600dcb7393bcf03bbb2cf1fd318d86775a5f4749ad132e2ec8",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [
+        "automorphic normalized-boundary incidence route proposed by KIG5"
       ],
       "replaced_by": [],
       "priority": "derived"
@@ -5564,7 +5952,7 @@
       "kind": "open_problem",
       "state": "parked",
       "title": "DC2 symbol-specific quantization and residue comparison",
-      "scope": "The hbar^3 obstruction vanishes uniformly. Four complete generic bounded hbar^5 periods have a zero-dimensional common scheme of exact length 44, and a fifth lowers the length to 43 without changing support. Off the replacement and degree-drop boundaries only (a,tau)=(-1/2,-3) and the cubic component 94a^3+335a^2+400a+160=0, 8tau+658a^2+1593a+976=0 remain. The rational point has an exact vertical 15-term dual functional of value one which survives the full X-Laurent lower-lift space. On the cubic component the genuine hbar^5 lift scheme has irreducible radical A^27 over Q(a), generated after free/linear elimination by six linear forms. Its explicit Q(a)-line is obstructed at hbar^7 for every parameter. On the full A^27 the 20-column hbar^7 matrix has a constant six-column pivot, every other column lies in that span, and the 401 consistency equations use only ten parameters; their ideal is the unit ideal at the two good cubic residues over GF(32003) and GF(31991). Lift this final unit identity to Q(a). For the standard 16-support period, three exact fibers show that the full 4065-variable Laurent space induces exactly the bounded 41-by-16 rank-15 constraint module; lift this equality over Q(a,tau), compute its Fitting strata, extend it to the other supports/replacement chart, formulate the coherent dual-sheaf invariant, and invariantize the formal X-adic tail. Two primitive replacement-chart periods have gcd tau^2, proving bounded obstruction there for tau!=0. On the unrestricted odd branch, exact support two, the complete residual line, every exact-support-three branch, and every nonzero-scale branch in the residual five-space are eliminated. A high-support normal-cone attack isolates an explicit projective P6 over Q(sqrt(-5)) that reaches nonzero scale at third order. The next symbol-specific task is its uniform fourth-order continuation, followed by exceptional L2 normal-cone subschemes and components outside the two generic normal charts. Eliminating this symbol would still not prove DC_2.",
+      "scope": "The hbar^3 obstruction vanishes uniformly. The 16-term all-pole hbar^5 functional at (kappa,tau)=(0,1) is a strong dual 2-cocycle of the restricted deformation complex: it annihilates every finite X-Laurent current correction and is constant on a 1075-dimensional affine superset of all lower lifts. Four complete generic bounded hbar^5 periods have a zero-dimensional common scheme of exact length 44, and a fifth lowers the length to 43 without changing support. Off the replacement and degree-drop boundaries only (a,tau)=(-1/2,-3) and the cubic component 94a^3+335a^2+400a+160=0, 8tau+658a^2+1593a+976=0 remain. The rational point has an exact vertical 15-term dual functional of value one which survives the full X-Laurent lower-lift space. On the cubic component the genuine hbar^5 lift scheme has irreducible radical A^27 over Q(a), generated after free/linear elimination by six linear forms. Above the explicit Q(a)-point, coefficient extraction [X^18] is a branchwise strong hbar^7 dual cocycle: it annihilates the complete 20-dimensional fifth-order correction torsor and has nonzero cubic-field value. Its explicit Q(a)-line is obstructed at hbar^7 for every parameter. On the full A^27 the 20-column hbar^7 matrix has a constant six-column pivot, every other column lies in that span, and the 401 consistency equations use only ten parameters; their ideal is the unit ideal at the two good cubic residues over GF(32003) and GF(31991). Lift this final unit identity to Q(a). For the standard 16-support period, the bounded 41-condition rank-15 module has a frozen primitive 15-by-16 polynomial presentation. Two exact maximal minors have coprime nonboundary irreducible factors of degrees 34 and 35, so there is no divisorial rank drop on the selected parameter chart. All sixteen maximal minors give a zero-dimensional length-218 Fitting scheme at each of GF(31991), GF(32003), and GF(65521). The three saturated bases have the same 21-generator leading ideal and saturation exponent 12; its staircase has 218 standard monomials. The 21-element rational candidate has been rebuilt; exact adjacent-pair reductions certify its Groebner property and an exact unit computation certifies boundary saturation, but equality with the saturated maximal-minor ideal still requires fraction-free quotient identities in both containment directions. Three exact fibers also show that the full 4065-variable Laurent space induces the same bounded 41-by-16 constraint module; lift this equality over Q(a,tau), extend the presentation to the other supports/replacement chart, and invariantize the formal X-adic tail. Two primitive replacement-chart periods have gcd tau^2, proving bounded obstruction there for tau!=0. On the unrestricted odd branch, exact support two, the complete residual line, every exact-support-three branch, and every nonzero-scale branch in the residual five-space are eliminated. A high-support normal-cone attack isolates an explicit projective P6 over Q(sqrt(-5)) that reaches nonzero scale at third order. The next symbol-specific task is its uniform fourth-order continuation, followed by exceptional L2 normal-cone subschemes and components outside the two generic normal charts. Eliminating this symbol would still not prove DC_2.",
       "canonical_source": "extended-geometry/QUANTUM_RESIDUE_OBSTRUCTION.md",
       "dependencies": [
         "QO1",

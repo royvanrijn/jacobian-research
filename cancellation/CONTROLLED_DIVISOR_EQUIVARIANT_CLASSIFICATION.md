@@ -24,11 +24,14 @@ and reconstruction identifications.  A classification statement should say
 which one is assumed irreducible and should include completeness of the
 canonical boundary list.
 
-There is also an important evidence correction.  The noncubic
-root-engineered quadratic-gauge maps are not equivariant for the fixed
-grading `(1,-1,-2)`: their higher seed decorations mix weights.  Only the
-cubic seed is the foundational equivariant map.  The standard cancellation
-family *is* equivariant, with source weights
+There is also an important evidence correction.  Only the cubic
+quadratic-gauge seed is the foundational equivariant map.  For every
+admissible quartic seed, the
+[linear-symmetry coefficient system](NO_LINEAR_TORUS_COUNTEREXAMPLE.md)
+has a fixed `18 x 18` minor of determinant
+`(10935/4)g_4^6/g_1^6`, so no nontrivial linear grading exists at all; no
+enumeration of alternative weight signatures is needed.  The standard
+cancellation family *is* equivariant, with source weights
 
 \[
 (m,-1,-m-1)

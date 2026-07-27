@@ -201,8 +201,15 @@ For the quintic example, Lean now verifies the exact literal fiber, its rank,
 finite \'etaleness, the absence of rational points, and the existence of
 points over the reals and every nonarchimedean completion.  Chebotarev,
 Dirichlet, and prime-counting arguments elsewhere in the arithmetic
-applications remain outside the formal development.  In particular, the
-degree-four barrier proving rank-minimality is still an ordinary proof.
+applications remain outside the formal development.  Lean does prove the
+finite-\(G\)-set fixed-point lemma used immediately after Chebotarev in the
+paper's degree-four argument.  For the alternative degree-four
+barrier, Lean verifies the tensor-product local-point identity, the
+finite-\'etale field decomposition and component count, the complete
+rank-at-most-four local-sheet inequality, the strict diagonal tensor
+surplus, and the positive first/second-moment deduction.  The analytic
+extraction of the first prime moment from Dedekind zeta is the only remaining
+ordinary-proof input to that alternative route.
 
 \paragraph{Provenance and AI assistance.}
 The recent three-dimensional counterexample was announced by Alp\"oge, who

@@ -1,7 +1,12 @@
-\subsection{The exact reduced nonproperness locus}
-\label{subsec:nonproperness}
+\section{The exact nonproperness locus}
+\label{app:nonproperness}
 
-We now make the fullness condition intrinsic.  Work geometrically over
+The prescribed-realization, classification, monodromy, and Hasse results in
+the main text do not require the calculation below.  We
+record it separately because it gives an intrinsic geometric description of
+fullness for the quadratic gauge.
+
+Work geometrically over
 \(\overline K\).  For a polynomial map \(F:\A^n_{\overline K}\to
 \A^n_{\overline K}\), let \(S_F\) be the set of target points at which \(F\)
 is not finite over any Zariski neighborhood.  Since source and target are
@@ -23,6 +28,49 @@ Here the discriminant is the universal degree-\(N\) polynomial expression in
 the coefficients of \(E_{\Pi,B,C}\).  We do not replace it on a special
 slice by the discriminant of the lower-degree specialization.
 
+\begin{lemma}[Base change of the graph-boundary locus]
+\label{lem:nonfinite-base-change}
+Let \(k\subset k'\) be a field extension and let
+\(F:\A^n_k\to\A^m_k\) be a polynomial map.  Let \(\overline\Gamma_F\) be
+the scheme-theoretic closure of its graph in
+\(\mathbb P^n_k\times\A^m_k\), put
+\[
+ Z_F=\overline\Gamma_F\cap
+ \bigl((\mathbb P^n_k\setminus\A^n_k)\times\A^m_k\bigr),
+\]
+and give the image of the proper morphism \(Z_F\to\A^m_k\) its reduced
+closed-subscheme structure \(S_F\).  Then
+\[
+ Z_{F_{k'}}=Z_F\times_k k',
+ \qquad
+ \lvert S_{F_{k'}}\rvert=\lvert (S_F)_{k'}\rvert .
+\]
+In particular, whether a geometric target point lies in the graph-boundary
+locus is invariant under extension of algebraically closed fields.
+\end{lemma}
+
+\begin{proof}
+Field extension is faithfully flat.  On each standard affine chart of
+\(\mathbb P^n_k\times\A^m_k\), the ideal of the graph closure is the
+saturation \(I:x_0^\infty\) of the graph ideal by the equation \(x_0\) of
+the hyperplane at infinity.  Since the coordinate rings are noetherian, this
+saturation equals \(I:x_0^r\) for some \(r\); flatness gives
+\[
+ (I:x_0^r)\otimes_k k'=(I\otimes_k k'):x_0^r.
+\]
+Thus scheme-theoretic graph closure commutes with the field extension.
+Intersecting with \(x_0=0\) also commutes with base change, which proves the
+identity for \(Z_F\).
+
+For the image statement, let \(y'\) be a point of \(\A^m_{k'}\), with image
+\(y\) in \(\A^m_k\).  The fiber \((Z_F)_{y'}\) is obtained from
+\((Z_F)_y\) by a field extension.  A finite-type scheme over a field is
+empty if and only if it becomes empty after a field extension.  Hence
+\((Z_F)_{y'}\) is nonempty exactly when \((Z_F)_y\) is nonempty.  Since a
+proper morphism has closed image, these fiberwise equivalences give the
+asserted equality of underlying closed sets.
+\end{proof}
+
 \begin{lemma}[Fiber cardinality and nonproperness in characteristic zero]
 \label{lem:properness-cardinality}
 Let \(k\) be an algebraically closed field of characteristic zero and let
@@ -38,18 +86,132 @@ degree \(d\).  Then
 \begin{proof}
 Jelonek proves this multiplicity criterion for complex polynomial maps
 \cite[Proposition~6]{Jelonek1993}.  We record why that stated complex result
-is sufficient here.  Descend the finitely many coefficients of \(F\) and the
-coordinates of \(y\) to a finitely generated field \(k_0/\mathbb Q\), and
-choose an embedding \(k_0\hookrightarrow\mathbb C\).  The graph-boundary
-description above is compatible with extension of algebraically closed
-fields: a boundary fiber is empty before base change exactly when it is empty
-after base change.  Thus membership in \(S_F\) is unchanged.  Because \(F\)
-is \'etale, its fiber at \(y\) is a finite \'etale \(k_0\)-algebra; its
-dimension, hence its number of geometric points after either algebraic
-closure, is also unchanged.  Finally, geometric degree is invariant under
-this scalar extension.  Proposition~6 over \(\mathbb C\), where every local
-multiplicity is one, therefore gives \eqref{eq:properness-cardinality} over
-\(k\).
+is sufficient here.  Since \(F\) is \'etale, its Jacobian determinant is a
+nonzero unit of \(k[x_1,\ldots,x_n]\), hence a nonzero constant.  Descend the
+coefficients of \(F\), this constant Jacobian identity, and the coordinates
+of \(y\) to a finitely generated field \(k_0/\mathbb Q\).  The resulting map
+\(F_0\) is \'etale and therefore dominant; its geometric degree is still
+\(d\).  We also obtain \(y_0\in\A^n(k_0)\) whose base changes are \(y\).
+
+Choose an embedding \(k_0\hookrightarrow\mathbb C\) and an algebraic closure
+\(\Omega\) of \(k_0\).  The two embeddings of \(k_0\), into \(k\) and into
+\(\mathbb C\), extend to embeddings
+\[
+ \Omega\hookrightarrow k,\qquad \Omega\hookrightarrow\mathbb C.
+\]
+Lemma~\ref{lem:nonfinite-base-change} shows that membership of \(y_0\) in
+the graph-boundary locus has the same truth value after each of these scalar
+extensions.  The fiber of an \'etale morphism is finite and reduced; its
+number of geometric points is unchanged by an extension of algebraically
+closed fields.  The degree of the generic finite separable extension is
+likewise invariant under scalar extension.  We may therefore test both
+sides of \eqref{eq:properness-cardinality} after base change to
+\(\mathbb C\).  There Proposition~6 of \cite{Jelonek1993}, with every local
+multiplicity equal to one, gives the equivalence.
+\end{proof}
+
+\begin{lemma}[Exact \(\Pi\)-adic discriminant order]
+\label{lem:exact-discriminant-order}
+Assume \(N\geq4\), put \(r=N-3\), and let
+\[
+ R=\overline K[B,C],\qquad L=\operatorname{Frac}(R).
+\]
+For the degree-\(N\) polynomial \(E=E_{\Pi,B,C}(S)\), viewed in
+\(L((\Pi))[S]\), extend \(\operatorname{ord}_\Pi(\Pi)=1\) to an algebraic
+closure of \(L((\Pi))\).  The roots split into three Newton blocks:
+\begin{equation}
+\begin{array}{c|c|c}
+\text{number of roots}&\operatorname{ord}_\Pi(s)&
+ \text{residual polynomial}\\ \hline
+2&0&BZ^2-2Z+C\\
+1&-1&Z-\dfrac{g_1B}{2g_3}\\[4pt]
+r&-\dfrac{r+2}{r}&g_3+g_NZ^r.
+\end{array}
+\label{eq:newton-blocks}
+\end{equation}
+All three residual polynomials are separable over \(L\).  Consequently
+\[
+ \operatorname{ord}_\Pi\operatorname{Disc}_S(E)
+ =N^2-3N-2,
+\]
+and, in \(R[\Pi]\),
+\[
+ \operatorname{Disc}_S(E)=\Pi^{N^2-3N-2}D_G,\qquad
+ D_G(0,B,C)=
+ \pm\frac{r^r}{4}g_1^4g_3^{r+1}g_N^{r-1}B^2(1-BC).
+\]
+\end{lemma}
+
+\begin{proof}
+The coefficient valuations give the lower Newton polygon
+\[
+ (0,0)\longrightarrow(2,0)\longrightarrow(3,1)
+ \longrightarrow(N,N).
+\]
+Its slopes are \(0\), \(1\), and \((r+2)/r\), with horizontal lengths
+\(2\), \(1\), and \(r\).  Rescaling \(S\) along each edge gives exactly the
+three residual polynomials in \eqref{eq:newton-blocks}.  The first has
+discriminant \(4(1-BC)\neq0\) in \(L\), the second is linear, and the third
+is separable because \(\operatorname{char}L=0\) and \(g_3g_N\neq0\).
+
+Write the roots in the three blocks as \(A_1,A_2\), \(T\), and
+\(V_1,\ldots,V_r\).  Roots in different blocks have different valuations,
+so the valuation of their difference is the smaller of the two
+valuations.  Within the first and third blocks, distinct roots of the
+residual polynomial have distinct initial terms.  Thus
+\[
+ \operatorname{ord}_\Pi(A_1-A_2)=0,\qquad
+ \operatorname{ord}_\Pi(V_i-V_j)=-\frac{r+2}{r}\quad(i\neq j).
+\]
+This is the precise use of residual separability.  It proves equality in
+each entry of the following ledger:
+\[
+\begin{array}{c|c|c|c}
+\text{pair type}&\text{number of pairs}&
+\operatorname{ord}_\Pi(s_i-s_j)&
+\text{contribution to }\operatorname{ord}_\Pi\prod_{i<j}(s_i-s_j)^2\\ \hline
+A\!-\!A&1&0&0\\
+A\!-\!T&2&-1&-4\\
+A\!-\!V&2r&-(r+2)/r&-4(r+2)\\
+T\!-\!V&r&-(r+2)/r&-2(r+2)\\
+V\!-\!V&r(r-1)/2&-(r+2)/r&-(r-1)(r+2).
+\end{array}
+\]
+The leading coefficient of \(E\) is \(g_N\Pi^N\), so its contribution to
+\[
+ \operatorname{Disc}(E)
+ =\operatorname{lc}(E)^{2N-2}\prod_{i<j}(s_i-s_j)^2
+\]
+is \(2N(N-1)\).  Adding the last column gives
+\[
+ 2N(N-1)-4-4(r+2)-2(r+2)-(r-1)(r+2)
+ =N^2-3N-2.
+\]
+
+It remains only to identify the first nonzero coefficient.  Let
+\(\alpha_1,\alpha_2\) be the roots of \(BZ^2-2Z+C\), put
+\(b_0=g_1B/(2g_3)\), and let \(v_1,\ldots,v_r\) be the roots of
+\(g_3+g_NZ^r\).  Taking the initial term in every factor of the root-product
+formula gives
+\begin{align*}
+ &\pm g_N^{2N-2}
+ (\alpha_1-\alpha_2)^2 b_0^4
+ \left(\prod_jv_j\right)^6
+ \prod_{i<j}(v_i-v_j)^2\\
+ &=\pm\frac{r^r}{4}
+ g_1^4g_3^{r+1}g_N^{r-1}B^2(1-BC),
+\end{align*}
+because
+\[
+ (\alpha_1-\alpha_2)^2=\frac{4(1-BC)}{B^2},\qquad
+ \left(\prod_jv_j\right)^6=\left(\frac{g_3}{g_N}\right)^6,
+\qquad
+ \prod_{i<j}(v_i-v_j)^2
+ =\pm r^r\left(\frac{g_3}{g_N}\right)^{r-1}.
+\]
+This coefficient is nonzero in \(R\).  Since \(\Pi\)-adic order in the
+domain \(R[\Pi]\) is unchanged after passage to \(L[\Pi]\), the asserted
+factorization and specialized coefficient follow.
 \end{proof}
 
 \begin{theorem}[Exact reduced quadratic-gauge nonproperness]
@@ -157,65 +319,9 @@ Its zero set is exactly the two short-fiber strata in
 \eqref{eq:pi-zero-fiber-table}.  Since the leading coefficient is
 \(g_3\Pi\), the resultant has one additional factor \(\Pi\).
 
-Now let \(N\geq4\), put \(r=N-3\), and set
-\(R=\overline K[B,C]\).  Over
-\(\operatorname{Frac}(R)[[\Pi]]\), the lower Newton polygon of \(E\) has
-vertices
-\[
- (0,0),\quad(2,0),\quad(3,1),\quad(N,N).
-\]
-Consequently its root valuations, with multiplicities, are
-\[
- 0\ (2),\qquad -1\ (1),\qquad
- -\frac{r+2}{r}\ (r).
-\]
-The first two blocks are exactly the affine \(q=0\) and \(t=0\) branches
-found above; the final block consists of the \(N-3\) missing sheets.
-The residual equations of the three blocks are, respectively,
-\[
- BZ^2-2Z+C=0,\qquad
- Z=\frac{g_1B}{2g_3},\qquad
- g_3+g_NZ^r=0.
-\]
-They are separable over \(\operatorname{Frac}(R)\): the first has
-discriminant \(4(1-BC)\), the second is linear, and the last is separable
-because the characteristic is zero and \(g_3g_N\neq0\).
-
-Using
-\[
- \operatorname{Disc}(E)
- =\operatorname{lc}(E)^{2N-2}
-   \prod_{i<j}(s_i-s_j)^2
-\]
-and the three displayed root valuations gives
-\[
- \operatorname{ord}_{\Pi}(\Delta_G)
- =2N(N-1)-4-4(r+2)-2(r+2)-(r-1)(r+2)
- =N^2-3N-2.
-\]
-Separability makes this order exact.  To retain the dependence on \(B,C\),
-let \(\alpha_1,\alpha_2\) be the roots of the first residual equation, put
-\(b_0=g_1B/(2g_3)\), and let \(v_1,\ldots,v_r\) be the roots of
-\(g_3+g_NZ^r\).  The leading coefficient in the root-product formula is
-\begin{align*}
- &\mathrel{\phantom{=}}\pm g_N^{2N-2}
- (\alpha_1-\alpha_2)^2 b_0^4
- \left(\prod_jv_j\right)^6
- \prod_{i<j}(v_i-v_j)^2\\
- &=\pm\frac{r^r}{4}
- g_1^4g_3^{r+1}g_N^{r-1}B^2(1-BC).
-\end{align*}
-Indeed,
-\[
- (\alpha_1-\alpha_2)^2=\frac{4(1-BC)}{B^2},\quad
- \left(\prod_jv_j\right)^6=\left(\frac{g_3}{g_N}\right)^6,
-\quad
- \prod_{i<j}(v_i-v_j)^2
- =\pm r^r\left(\frac{g_3}{g_N}\right)^{r-1}.
-\]
-These calculations were made in \(\operatorname{Frac}(R)\), but
-\(\Pi\)-adic order in the domain \(R[\Pi]\) is unchanged on passing to its
-fraction field.  Hence they prove the global polynomial identity
+Now let \(N\geq4\) and put \(r=N-3\).
+Lemma~\ref{lem:exact-discriminant-order} gives the global polynomial
+identity
 \[
  \Delta_G=\Pi^{e_N}D_G,\qquad
  D_G(0,B,C)=\kappa_GB^2(1-BC),
@@ -223,7 +329,7 @@ fraction field.  Hence they prove the global polynomial identity
  \kappa_G=\pm\frac{r^r}{4}
  g_1^4g_3^{r+1}g_N^{r-1}\neq0.
 \]
-Thus \(e_N\) is the exact global \(\Pi\)-adic order.  After specializing
+In particular, \(e_N\) is the exact global \(\Pi\)-adic order.  After specializing
 \((B,C)\), the pointwise order is \(e_N\) when
 \(B(1-BC)\neq0\) and may jump on the two displayed special strata.
 
@@ -239,117 +345,11 @@ set of \(\Delta_G\) is exactly the underlying nonproperness set, and taking
 radicals gives \eqref{eq:jelonek-discriminant}.
 \end{proof}
 
-\begin{proposition}[Boundary normalization and explicit escape arcs]
-\label{prop:boundary-arcs}
-On \(\Pi\neq0\), the reduced discriminant divisor is birationally
-parametrized by
-\begin{equation}
- B=\frac{G_\Pi'(s)}{g_1s},
- \qquad
- C=\frac{2G_\Pi(s)-sG_\Pi'(s)}{g_1},
- \qquad (\Pi,s)\in\mathbb G_m^2.
- \label{eq:global-discriminant-parametrization}
-\end{equation}
-If \(s_0\) is a root of multiplicity \(m\geq2\) over
-\((\pi,b,c)\), every one of the \(m\) lost sheets is represented, after a
-finite base change, by a Laurent-series source arc.  With root displacement
-as uniformizer, its generic valuations are
-\[
- \operatorname{ord}(x)=-(m-1),\qquad
- \operatorname{ord}(q)=m-1,\qquad
- \operatorname{ord}(z)\geq m-1.
-\]
-
-If \(N\geq4\), put \(d=N-3\) and \(h=\gcd(d,2)\).  At the generic point of
-\(\Pi=0\), the \(d\) lost sheets form \(h\) boundary primes, each with
-ramification index \(d/h\).  After the common base change \(\Pi=u^d\), their
-valuations are
-\begin{equation}
-\begin{array}{c|rrrrrrr}
- &S&D&t&x&y&q&z\\ \hline
- \operatorname{ord}_u&
- -(N-1)&-(N+1)&N+1&2&-2&-4&-(2N+6).
-\end{array}
-\label{eq:infinity-valuations}
-\end{equation}
-For \(N=3\) this generic boundary block is absent.
-On the special stratum \(B=0\), two further missing sheets have
-\begin{equation}
- \Pi=u^2,\qquad S\sim a u^{-1},\qquad
- a^2=-\frac{g_1}{g_3},
- \qquad
- \bigl(\operatorname{ord}_u x,\operatorname{ord}_u y,
-       \operatorname{ord}_u q,\operatorname{ord}_u z\bigr)
- =(-1,1,2,2).
- \label{eq:B-zero-valuations}
-\end{equation}
-Together with the multiplicity-block arcs above, these account for every
-lost sheet on every stratum of \eqref{eq:pi-zero-fiber-table}.
-\end{proposition}
-
-\begin{proof}
-Equations \eqref{eq:global-discriminant-parametrization} are \(E=E'=0\)
-solved for \(B,C\).  Their birationality was proved in the monodromy argument
-around \eqref{eq:quadratic-discriminant-parametrization}.
-
-For a repeated root, set \(s(u)=s_0+u\) and keep \(\pi,b\) fixed while putting
-\[
- c(u)=\frac{2G_\pi(s(u))}{g_1}-b\,s(u)^2,
- \qquad
- d(u)=\frac{G_\pi'(s(u))}{g_1}-b\,s(u).
-\]
-Then \(E_{\pi,b,c(u)}(s(u))=0\) identically and
-\(\operatorname{ord}_u d=m-1\).  The exact reconstruction formulas
-\[
- x=\frac{s}{d},\qquad
- y=b-\beta(\pi,s)-\pi s,\qquad
- q=\pi d,\qquad
- z=\pi d^3-\frac{g_1}{g_3}y^2(d^2+3d)
-\]
-give the stated valuations.  Applying Newton--Puiseux to the other roots in
-the same multiplicity block gives all \(m\) arcs after a finite base change.
-
-Suppose \(N\geq4\).  For \(\Pi=0\), the final Newton edge has horizontal
-length \(d\) and endpoint equation
-\[
- g_3+g_NZ^d=0.
-\]
-Equivalently its binomial model is
-\[
- W^d=\text{unit}\cdot\Pi^{d+2}.
-\]
-It has \(h=\gcd(d,2)\) primes, each of ramification index \(d/h\).
-Normalizing by
-\[
- v(\Pi)=\frac d h,\qquad
- v(S)=-\frac{d+2}{h}
-\]
-gives
-\[
- v(D)=-\frac{d+4}{h},\quad
- v(x)=\frac2h,\quad
- v(y)=-\frac2h,\quad
- v(q)=-\frac4h,\quad
- v(z)=-\frac{2d+12}{h}.
-\]
-Multiplication by \(h\), corresponding to the common base change
-\(\Pi=u^d\), yields \eqref{eq:infinity-valuations}.
-
-If \(B=0\), the first Newton edge changes from
-\((0,0)\)--\((2,0)\) to \((1,0)\)--\((3,1)\).  Its two nonzero roots satisfy
-\[
- \Pi=u^2,\qquad S\sim a u^{-1},\qquad g_1+g_3a^2=0.
-\]
-Here \(D\) and \(t=D^{-1}\) have order zero.  Substitution in the exact
-reconstruction formulas gives \eqref{eq:B-zero-valuations}.  When \(BC=1\)
-with \(B\neq0\), the two additional missing sheets instead form the finite
-double-root block already covered by the first part of the proposition.
-\end{proof}
-
 \begin{corollary}[Intrinsic fullness of the distinguished fiber]
 \label{cor:intrinsic-fullness}
 For the seed \(G(S)=P(a+S)-P(a)\) used in
-Theorem~\ref{thm:main}, the distinguished target \(y_{P,a}\) lies in the
+Theorem~\ref{thm:polynomial-realization}, the distinguished target
+\(y_{P,a}\) lies in the
 maximal open subset on which \(\widetilde F_G\) is finite \'etale of degree
 \(N\).
 \end{corollary}
@@ -364,12 +364,3 @@ Theorem~\ref{thm:exact-nonproperness} places the target outside the
 nonproperness hypersurface.  Proper and \'etale is finite \'etale, and the
 degree is \(N\).
 \end{proof}
-
-\begin{remark}[Polynomial curves]
-The parametrization \eqref{eq:global-discriminant-parametrization}, with
-\(s\) fixed, gives polynomial curves in \(\Pi\) covering the discriminant
-component, while the component \(\Pi=0\) is covered by affine lines.  Thus the
-explicit geometry realizes directly the general theorem that a complex
-Jelonek set is a uniruled hypersurface covered by polynomial curves of bounded
-degree \cite{Jelonek1993,JelonekLason}.
-\end{remark}

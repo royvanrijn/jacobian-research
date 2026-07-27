@@ -1,7 +1,7 @@
 \documentclass[11pt]{article}
 
 \usepackage[margin=1in]{geometry}
-\usepackage{amsmath,amssymb,amsthm,mathtools,microtype}
+\usepackage{amsmath,amssymb,amsthm,array,mathtools,microtype}
 \usepackage[T1]{fontenc}
 \usepackage[hidelinks]{hyperref}
 
@@ -36,13 +36,14 @@ Keller Maps with Symmetric Monodromy}
 
 \input{sections/00-abstract}
 \input{sections/00-introduction}
-\input{sections/01-keller-fibers}
 \input{sections/02-quadratic-gauge}
-\input{sections/02a-gauge-identities}
-\input{sections/02b-nonproperness}
-\input{sections/03-realization}
 \input{sections/04-hasse}
 \input{sections/06-conclusion}
+\appendix
+\input{sections/02a-gauge-identities}
+\input{sections/appendix-degree-two}
+\input{sections/appendix-lean}
+\input{sections/02b-nonproperness}
 \input{sections/07-references}
 
 \end{document}

@@ -40,20 +40,19 @@ def parse_rational(value: str):
     return QQ(parsed.numerator, parsed.denominator)
 
 
-def support_vector(poly):
+def support_vector(poly, field=QQ):
     return {
-        index: poly.get(monomial, QQ.zero)
+        index: poly.get(monomial, field.zero)
         for index, monomial in enumerate(SUPPORT)
-        if poly.get(monomial, QQ.zero)
+        if poly.get(monomial, field.zero)
     }
 
 
-def analyze(kappa, tau) -> tuple[list[tuple], list[int]]:
-    if kappa in (QQ(-2), QQ(-1)):
-        raise ValueError("this analyzer uses the generic chart kappa != -2,-1")
-    a = -(QQ.one + kappa) / (QQ(2) + kappa)
-    S, T = degree_five_family(QQ, a, tau)
-    family = third_order_family(S, T, QQ)
+def constraint_system(field, a, tau):
+    """Return all nonzero 16-support conditions at one exact seed."""
+
+    S, T = degree_five_family(field, a, tau)
+    family = third_order_family(S, T, field)
     base_s, base_t = family.base
 
     constraints: list[dict[int, object]] = []
@@ -65,11 +64,11 @@ def analyze(kappa, tau) -> tuple[list[tuple], list[int]]:
     ):
         for monomial in monomials:
             image = (
-                poisson({monomial: QQ.one}, T)
+                poisson({monomial: field.one}, T)
                 if left
-                else poisson(S, {monomial: QQ.one})
+                else poisson(S, {monomial: field.one})
             )
-            vector = support_vector(image)
+            vector = support_vector(image, field)
             if vector:
                 constraints.append(vector)
                 labels.append((label, monomial))
@@ -82,14 +81,14 @@ def analyze(kappa, tau) -> tuple[list[tuple], list[int]]:
         variation = add(
             variation,
             pi_power(direction_s, T, 3),
-            QQ.one / QQ(24),
+            field.one / field(24),
         )
         variation = add(
             variation,
             pi_power(S, direction_t, 3),
-            QQ.one / QQ(24),
+            field.one / field(24),
         )
-        vector = support_vector(variation)
+        vector = support_vector(variation, field)
         if vector:
             constraints.append(vector)
             labels.append(("linear", index))
@@ -108,22 +107,37 @@ def analyze(kappa, tau) -> tuple[list[tuple], list[int]]:
                 poisson(right_s, left_t),
             )
         )
-        vector = support_vector(variation)
+        vector = support_vector(variation, field)
         if vector:
             constraints.append(vector)
             labels.append(("quadratic", left, right))
+
+    return labels, constraints, len(family.kernel)
+
+
+def constraint_pivots(constraints, field=QQ):
+    """Return pivot conditions for the row span of the 16-vectors."""
 
     # The rows below are functional coordinates and the columns are
     # conditions.  Pivot columns therefore select independent conditions.
     transpose = {
         coordinate: {
-            condition: vector.get(coordinate, QQ.zero)
+            condition: vector.get(coordinate, field.zero)
             for condition, vector in enumerate(constraints)
-            if vector.get(coordinate, QQ.zero)
+            if vector.get(coordinate, field.zero)
         }
         for coordinate in range(len(SUPPORT))
     }
     _, pivots, _ = sdm_irref(transpose)
+    return pivots
+
+
+def analyze(kappa, tau) -> tuple[list[tuple], list[int]]:
+    if kappa in (QQ(-2), QQ(-1)):
+        raise ValueError("this analyzer uses the generic chart kappa != -2,-1")
+    a = -(QQ.one + kappa) / (QQ(2) + kappa)
+    labels, constraints, _ = constraint_system(QQ, a, tau)
+    pivots = constraint_pivots(constraints)
     return labels, pivots
 
 

@@ -1222,17 +1222,24 @@ PYTHONPATH=scripts .venv/bin/python \
 The all-pole certificate rules out the proposed Laurent connecting class at
 the known seed, (QR22) gives a canonical-gauge formal representative, and
 (QR19l)--(QR19m) close the genuine bounded fifth-order equations on the
-four-period cubic locus.  The remaining useful directions are:
+four-period cubic locus.  The all-pole \(\hbar^5\) functional and the
+one-term cubic-branch \(\hbar^7\) functional have now been identified as
+strong dual cocycles of the restricted deformation complex; see
+[Restricted quantum deformation cocycles](RESTRICTED_QUANTUM_DEFORMATION_COCYCLES.md).
+The remaining useful directions are:
 
 1. **Formal-tail invariantization.** Determine the quotient of (QR22) by
    changes of the lower lift, formal Hamiltonian gauge, and homotopy.  The
    displayed coefficient is a representative, not yet a cohomology class.
-2. **Dual-sheaf formulation.** The exact length comparison exhausts the
-   period support, the rational point is obstructed, and the cubic component
-   is solvable at order five.  The rational vertical functional proves that
-   the dual kernel does not commute with specialization.  Formulate the
-   period invariant as a coherent cokernel/dual-sheaf section with its
-   Fitting strata rather than as one rational scalar.
+2. **Dual-sheaf globalization.** The coherent strong-cocycle kernel
+   \(\mathcal P_n\) is now defined and its \(\hbar^5\) and branchwise
+   \(\hbar^7\) fibers are certified.  On the first 16-monomial support, a
+   polynomial 15-by-16 presentation is now frozen.  Two exact maximal
+   minors have coprime nonboundary factors of degrees 34 and 35, so there is
+   no divisorial rank drop; all maximal minors give a length-218
+   zero-dimensional Fitting scheme at three good primes.  Lift that length
+   to characteristic zero and extend the presentation across the other
+   supports, including the vertical rational generator.
 3. **Parameter-uniform Laurent periods.** Lift the now explicit
    41-by-16 equality between bounded and all-pole constraint modules from
    the three exact fibers to \(\mathbb Q(a,\tau)\), then calculate its

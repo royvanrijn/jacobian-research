@@ -1,0 +1,183 @@
+{
+  "hits": [
+    {
+      "bad_primes": [
+        2,
+        7,
+        23
+      ],
+      "common_squarefree_part": -23,
+      "cubic_coefficients": [
+        1,
+        -2,
+        0,
+        8
+      ],
+      "cubic_discriminant": -1472,
+      "factor_resultant": 392,
+      "quadratic_coefficients": [
+        1,
+        -1,
+        6
+      ],
+      "quadratic_discriminant": -23,
+      "simple_inverse_roots": {
+        "23": 7,
+        "7": 1
+      },
+      "source_points_mod_bad_primes": {
+        "2": [
+          1,
+          0,
+          1
+        ],
+        "23": [
+          8,
+          20,
+          4
+        ],
+        "7": [
+          3,
+          2,
+          5
+        ]
+      },
+      "target": [
+        3,
+        -1,
+        1
+      ]
+    },
+    {
+      "bad_primes": [
+        2,
+        5,
+        23,
+        8677
+      ],
+      "common_squarefree_part": -23,
+      "cubic_coefficients": [
+        1,
+        -8,
+        36,
+        -88
+      ],
+      "cubic_discriminant": -36800,
+      "factor_resultant": 69416,
+      "quadratic_coefficients": [
+        1,
+        5,
+        12
+      ],
+      "quadratic_discriminant": -23,
+      "simple_inverse_roots": {
+        "23": 7,
+        "5": 2,
+        "8677": 4578
+      },
+      "source_points_mod_bad_primes": {
+        "2": [
+          0,
+          1,
+          1
+        ],
+        "23": [
+          8,
+          20,
+          4
+        ],
+        "5": [
+          2,
+          4,
+          0
+        ],
+        "8677": [
+          2086,
+          719,
+          1788
+        ]
+      },
+      "target": [
+        -66,
+        -1,
+        1
+      ]
+    },
+    {
+      "bad_primes": [
+        2,
+        5,
+        31,
+        439,
+        555253
+      ],
+      "common_squarefree_part": -439,
+      "cubic_coefficients": [
+        1,
+        -18,
+        112,
+        -1240
+      ],
+      "cubic_discriminant": -27000256,
+      "factor_resultant": 22210120,
+      "quadratic_coefficients": [
+        1,
+        15,
+        166
+      ],
+      "quadratic_discriminant": -439,
+      "simple_inverse_roots": {
+        "31": 0,
+        "439": 134,
+        "5": 0,
+        "555253": 39026
+      },
+      "source_points_mod_bad_primes": {
+        "2": [
+          1,
+          0,
+          1
+        ],
+        "31": [
+          0,
+          14,
+          10
+        ],
+        "439": [
+          4,
+          289,
+          37
+        ],
+        "5": [
+          0,
+          3,
+          2
+        ],
+        "555253": [
+          282427,
+          214403,
+          315338
+        ]
+      },
+      "target": [
+        -12865,
+        -637,
+        1
+      ]
+    }
+  ],
+  "search": {
+    "coefficient_box": {
+      "a": [
+        -2000,
+        2000
+      ],
+      "b": [
+        -2000,
+        2000
+      ]
+    },
+    "factorization": "(S^3+a*S^2+b*S+c)(S^2+d*S+e)",
+    "scope": "Exhaustive only for monic integral 3+2 factorizations in the stated a,b box; this is not an infinitude result."
+  }
+}

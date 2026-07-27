@@ -1,0 +1,71 @@
+\section{Verification and Lean correspondence}
+\label{app:lean-correspondence}
+
+The table records the public endpoint declarations corresponding to the
+formalized statements used in the paper.  Several rows list more than one
+declaration because the paper packages construction, naturality, rank, and
+geometric degree into a single result.  Auxiliary implementation lemmas are
+omitted.
+
+\begin{center}
+\small
+\renewcommand{\arraystretch}{1.18}
+\begin{tabular}{
+ >{\raggedright\arraybackslash}p{0.36\textwidth}
+ >{\raggedright\arraybackslash}p{0.56\textwidth}}
+\hline
+\textbf{Paper statement}&\textbf{Lean declaration}\\
+\hline
+General localized quadratic-gauge fiber theorem,
+Theorem~\ref{thm:localized-gauge}, and its squarefree corollary,
+Corollary~\ref{cor:squarefree-gauge}
+&
+\nolinkurl{generalGaugeLocalizedJacobianOneRepresentingEquiv}\par
+\nolinkurl{generalGaugeLocalizedJacobianOneRepresentingEquiv_natural}
+\\
+\hline
+Jacobian-one effective form,
+Corollary~\ref{cor:effective-gauge}
+&
+\nolinkurl{jacobianDet_generalGaugeJacobianOneMap}\par
+\nolinkurl{generalGaugeJacobianOneMap_totalDegree}
+\\
+\hline
+Polynomial realization, Theorem~\ref{thm:polynomial-realization}, and its
+effective and functorial form, Corollary~\ref{cor:polynomial-effective}
+&
+\nolinkurl{automaticRealization_pageOne}\par
+\nolinkurl{automaticJacobianOneFiberRepresentingEquiv_natural}
+\\
+\hline
+Compatibility with extension of scalars,
+Proposition~\ref{prop:base-change}
+&
+\nolinkurl{realizationMapTarget_map}\par
+\nolinkurl{adjoinRootBaseChangeEquiv}
+\\
+\hline
+Exact quintic fiber and rank in
+Theorem~\ref{thm:finite-etale-hasse} and
+Corollary~\ref{thm:hasse}
+&
+\nolinkurl{ExplicitQuintic.integralFiberRepresentingEquiv_natural}\par
+\nolinkurl{ExplicitQuintic.p5_quotient_etale}\par
+\nolinkurl{ExplicitQuintic.p5_quotient_rank}
+\\
+\hline
+Rational obstruction and points over
+\(\R\) and every \(\Q_p\) in
+Theorem~\ref{thm:finite-etale-hasse}
+&
+\nolinkurl{ExplicitQuintic.integralFiberPoint_hasse_certificate}
+\\
+\hline
+Finite-group fixed-point lemma,
+Lemma~\ref{lem:degree-four-fixed-point}
+&
+\nolinkurl{degreeFour_fixedPoint}
+\\
+\hline
+\end{tabular}
+\end{center}

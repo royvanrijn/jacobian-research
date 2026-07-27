@@ -1,22 +1,37 @@
 # Prescribed Finite Étale Algebras as Full Fibers of Keller Maps with Symmetric Monodromy
 
-The paper's main theorem realizes every finite étale algebra of rank at least
-three as a full fiber of a polynomial Keller map. The realization is explicit
-in affine three-space, has Jacobian determinant `1`, and has coordinate degree
-at most `6N+2` in rank `N`. As a corollary, the attainable nonzero ranks are
+The polynomial realization theorem starts from a squarefree `P` and an
+admissible translation `a`.  It gives an explicit Keller map in affine
+three-space with Jacobian determinant `1`, geometric degree `N`, and full
+Keller fiber `K[T]/(P)`; its effective corollary gives coordinate degree at
+most `6N+2` and the natural fiber identification.  Here a Keller fiber means
+any ordinary fiber, while a full Keller fiber has rank equal to the map's
+geometric degree.  Monogenicity then gives the finite-étale realization
+corollary: every finite étale algebra of rank at least three occurs as such a
+full Keller fiber.  This last step is existential unless a presentation is
+supplied.  The attainable nonzero ranks are therefore
 exactly `1,3,4,5,...`; rank two is excluded by the known degree-two theorem.
 For every admissible seed, the generic inverse polynomial has geometric and
 arithmetic Galois group `S_N`; this is not merely a generic-coefficient
 statement. Thus every prescribed algebra is placed on a maximally symmetric
 generic cover. Over a Hilbertian field, each fixed constructed map has
-infinitely many connected full fibers with splitting-field group `S_N`.
+infinitely many connected full Keller fibers with splitting-field group
+`S_N`.
+
+The arithmetic argument is stated first for finite étale schemes.  A finite
+`G`-set lemma in degree at most four, followed by Chebotarev, proves over
+every number field that local solubility at all but finitely many finite
+places forces a rational point.  The Berend--Bilu scheme is then the minimal
+finite-étale Hasse failure over `Q`, and realization transfers it to the
+explicit full Keller fiber.
 
 The scheme-theoretic core is organized in three layers.
 
 First, the general localized quadratic-gauge fiber theorem identifies an
 arbitrary fiber with `(K[S]/(E))[1/E']`. Its finite-étale (squarefree)
-corollary removes the localization. The prescribed-algebra realization theorem
-then specializes this quotient to the chosen algebra `K[T]/(P)`.
+corollary removes the localization. The polynomial realization theorem then
+specializes this quotient to the chosen algebra `K[T]/(P)`, and monogenicity
+passes to an abstract finite étale algebra.
 
 At the prescribed target this gives a natural equivalence on every commutative
 test algebra:
@@ -25,7 +40,7 @@ test algebra:
 Hom_K-alg(K[T]/(P), A) ≃ literal distinguished map-fiber points over A.
 ```
 
-Thus the prescribed-algebra realization theorem controls the complete
+Thus the polynomial realization theorem controls the complete
 represented fiber, not merely its geometric or rational points. Starting from
 a squarefree polynomial `P` of degree at least three, Lean now:
 
@@ -53,11 +68,17 @@ a squarefree polynomial `P` of degree at least three, Lean now:
   naturality, finite étaleness, rank, and the degree bound in one theorem;
 - proves that the complete supplied-translation map and distinguished target
   commute coefficientwise with extension of the ground field, and proves the
-  corresponding tensor-product base change of the representing quotient; and
+  corresponding tensor-product base change of the representing quotient;
 - specializes the construction to the paper's exact denominator-free quintic
   map, proving that its literal fiber at `(1,0,-38)` is naturally represented
   by `Q[T]/((T^3-19)(T^2+T+1))`, has rank five, has no rational point, and has
-  points over the reals and every `p`-adic field.
+  points over the reals and every `p`-adic field;
+- proves the tensor-square identity for local point counts and the alternative
+  first/second-moment contradiction for the degree-four barrier, together
+  with the finite-étale component adapter, the complete rank-at-most-four
+  local-sheet bound, and the strict tensor-component surplus; and
+- proves the finite-group fixed-point lemma on at most four points used in
+  the paper's shorter Chebotarev proof.
 
 The combined final declaration is `automaticRealization_pageOne`, with
 `automaticRealizationGeometricDegree_eq` supplying its geometric-degree
@@ -86,6 +107,23 @@ parameter, coefficient nonvanishing proof, chart unit, abstract source-fiber
 wrapper, or bounded-degree specialization remains as an external input to the
 polynomial-presentation theorem.
 
+The rank-minimality declarations include
+`componentCount_le_localPointCount_of_etale_rank_le_four`,
+`componentCount_tensor_ge_sq_add_of_etale_isEmpty_algHom`,
+`localPointCount_tensor_self`,
+`second_moment_eq_sq_of_dirichletPrimeMean`, and the combined
+`no_rank_le_four_hasse_failure_of_rationalPrimeMomentStatement`.  Lean proves
+absolute convergence, linearity, and positivity for the actual normalized
+Dirichlet prime sums, so no abstract mean functional remains on the critical
+path.  The remaining analytic interface is exactly
+`RationalFiniteEtalePrimeMomentStatement`: extraction of the first prime
+moment from the Dedekind-zeta Euler product.  The pinned Mathlib simple-pole
+theorem is already exposed by `dedekindZeta_simplePole_input`.
+This is the alternative formal route.  The paper proof uses the shorter
+finite-`G`-set lemma plus Chebotarev and does not depend on the zeta-moment
+argument.  Lean now proves that finite-`G`-set lemma as
+`degreeFour_fixedPoint`; Chebotarev itself remains outside the certificate.
+
 Three independent exact layers audit the construction:
 
 1. Lean proves the uniform finite sums, actual map, general determinant,
@@ -94,7 +132,8 @@ Three independent exact layers audit the construction:
    and degree over `K(Π,B)(C)`, coordinate algebraic independence, the
    injective function-field pullback, the explicit source/inverse-root
    comparison, actual geometric degree, and the explicit quintic's rational
-   obstruction, real point, and points over every `p`-adic field.
+   obstruction, real point, points over every `p`-adic field, tensor-square
+   point count, and positive-moment contradiction.
 2. A structural SymPy checker verifies the source and marked-line Jacobians,
    the generic `k`-th coefficient identities, a six-coefficient bridge, and
    the termwise degree bound.
@@ -106,25 +145,32 @@ Three independent exact layers audit the construction:
 
 The arithmetic applications include:
 
-- an explicit degree-five Keller fiber that is everywhere locally soluble
+- an explicit degree-five full Keller fiber that is everywhere locally soluble
   over `Q` but has no rational point, with degree five proved optimal;
 - exact transfer of connectedness, signatures, splitting fields, local
   factorization data, and intersectivity;
 - compatibility with extension of the ground field.
 
-The active paper is deliberately narrower than the surrounding repository,
-but it now includes the exact reduced nonproperness theorem, the complete
-`Pi = 0` fiber table, and the boundary-sheet ledger in
-`sections/02b-nonproperness.tex`.  These are ordinary mathematical proofs,
-not Lean theorems.  The theorem defines the Jelonek locus as a reduced
-graph-boundary/non-finite locus, uses Jelonek's complex multiplicity criterion
-only after a characteristic-zero descent and base-change argument, and proves
-the exact global `Pi`-adic discriminant factor in `K[B,C][Pi]`.
+The active paper is deliberately narrower than the surrounding repository.
+Its seven sections follow the proof dependency: introduction and main
+results; inverse-equation design of the quadratic gauge; localized
+reconstruction and geometric degree; prescribed finite-étale realization;
+symmetric monodromy; the minimal Hasse failure; and discussion.  Appendix A
+contains the coefficientwise verification that the compact `(Pi,S,Q)` design
+pulls back to the displayed polynomial coordinates.  Appendix B gives the
+scalar-extension and faithfully flat descent proof of the degree-two
+obstruction.  Appendix C is the compact verification and Lean correspondence
+table.  Appendix D contains the logically separate exact reduced
+nonproperness theorem, the complete `Pi = 0` fiber table, and the exact
+discriminant-order lemma from `sections/02b-nonproperness.tex`.  These last
+claims are ordinary mathematical proofs, not Lean theorems.  The appendix
+defines the Jelonek locus as a reduced graph-boundary/non-finite locus, uses
+Jelonek's complex multiplicity criterion only after a standalone
+graph-boundary base-change lemma and a characteristic-zero descent argument,
+and proves the exact global `Pi`-adic discriminant factor in `K[B,C][Pi]`.
 
-The final addendum retains one direction without theorem status: a candidate
-fixed quintic gauge with infinitely many Hasse-failing fibers.  Its working
-draft remains in `sections/05-infinite-family.tex` and is not included by
-`main.tex`.
+The active manuscript contains no speculative arithmetic addendum: its Hasse
+application is the single proved rank-five example.
 
 The directory name is retained as a stable repository path from the earlier
 draft.
@@ -170,7 +216,7 @@ Singular -q scripts/verify_universal_quadratic_gauge.sing
 .venv/bin/python scripts/verify_finite_etale_keller_fibers.py
 ```
 
-The independent nonproperness and boundary audit can be run with:
+The independent nonproperness audit can be run with:
 
 ```bash
 .venv/bin/python scripts/verify_quadratic_gauge_nonproperness.py

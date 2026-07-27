@@ -194,4 +194,10 @@ separately proves the direct Hensel witnesses at \(2,3,19\), the two generic
 prime classes, and the resulting point on the literal fiber over every
 \(\mathbb Q_p\). Together with the existing rational and real results it
 exports `integralFiberPoint_hasse_certificate`. The degree-four
-Chebotarev barrier, and hence rank-minimality, remains an ordinary proof.
+barrier now uses the separate
+`FiniteEtaleKeller/DegreeFourMomentBarrier.lean` module. Lean proves its
+finite-étale component adapter, rank-at-most-four local-sheet inequality,
+tensor-square local-point identity, strict tensor-component surplus, and the
+full positive-moment contradiction. The Dedekind-zeta first-prime-moment
+extraction alone remains an ordinary proof, so rank-minimality is not yet
+machine-checked end to end.

@@ -143,6 +143,7 @@ two. See
 | one fixed map, infinitely many Hasse fibers | **settled by the quadratic-tilt family** | quantify and generalize the resulting target line |
 | real signatures plus Frobenius types | already proved for every degree and every finite set of unramified types | extend from unramified cycle types to ramified local etale algebras |
 | prescribed solvable Galois groups | arithmetic existence known for coverable solvable groups; weighted transfer needs normalization control | combine Sonn's realizations with tangent-admissible specialization or stabilization |
+| prescribed generic inverse monodromy | exact \(A_4\) occurs on determinant-one boundary-complement charts; a polynomial fourfold lift has Jacobian equal to one target-divisor pullback, and a puncture-adapted two-mask target blowdown is explicit; the normalized-boundary automorphic assembly is now excluded by exact divisibility and Jacobian tests | solve the nonautomorphic log-crepant incidence equation, both inverse-mask divisibilities, and \(A_4\) field reconstruction |
 | tangent-normalization restriction | exact generator criterion (3.1)-(3.2) obtained; existence classification open | study rational points on the primitive-element tangent hypersurface |
 
 ## 5. The minimal Hasse degree is five
@@ -363,6 +364,52 @@ unwanted enlargement of the splitting field. A stabilization by a quadratic
 factor is therefore harmless for Hasse solubility but may change the Galois
 group; this distinction must be explicit in any theorem.
 
+There is a stronger, separate target. Transferring a \(G\)-extension as one
+full fiber does not make \(G\) the monodromy of the surrounding generic
+inverse cover: in the universal weighted pencil that group is still \(S_N\).
+The dedicated
+[Keller inverse-Galois program](KELLER_INVERSE_GALOIS_PROGRAM.md)
+formulates the required cover-preserving transfer theorem, separates
+geometric from arithmetic monodromy, and organizes the marked-root, adelic,
+Sunada, and boundary-ledger routes toward prescribed generic \(G\).
+Its first checkpoint is now the
+[oriented quartic \(A_4\) inverse cover](extended-geometry/A4_KELLER_INVERSE_COVER.md):
+a determinant-one degree-four morphism of smooth affine boundary complements
+with exact generic \(A_4\), a full totally real \(A_4\) fiber, and every
+unramified cycle type in the natural four-point action. Absolute affine-space
+completion remains open.
+The
+[affine \(A_4\) follow-up](extended-geometry/A4_AFFINE_KELLER_FRONTIER.md)
+removes the orientation denominator, constructs a polynomial
+\(\mathbb A^3\to\mathbb A^3\) with exact generic \(A_4\), and factors its
+Jacobian as \(4W^2K^3L\). It also excludes every affine-linear ambient
+correction preserving the oriented surface. Constant-Jacobian cancellation
+of this explicit ledger is now the leading gate. The
+[ledger reduction](extended-geometry/A4_LEDGER_REDUCTION_AND_RIGIDITY.md)
+strengthens the obstruction to arbitrary-degree defect-multiple corrections,
+absorbs \(K^3L\) into an explicit target divisor, and leaves the two-factor
+residual boundary \(WL\). Polynomial cone reparametrizations and
+block-triangular stabilizations cannot remove it, so the leading gate is now
+a genuinely coupled affine modification. The
+[pure-target lift](extended-geometry/A4_PURE_TARGET_LEDGER_LIFT.md)
+adjoins \(z\), maps it to \((WL/4)z\), and makes the complete determinant
+exactly the pullback of the homogeneous target \(B\)-divisor. It preserves
+generic degree four and \(A_4\) monodromy. The remaining ordinary-Keller
+factorization must modify at least two cone outputs using source-dependent
+masks. The
+[two-mask factorization frontier](extended-geometry/A4_TWO_MASK_FACTORIZATION_FRONTIER.md)
+constructs the required birational target blowdown with Jacobian
+\(\mathcal B\). Its normal-module theorem excludes every rechart preserving
+the old mask zero section; exact division also closes all \(120\) coordinate
+assignments and the six elementary singular-line incidence charts. The
+[normalized-boundary assembly audit](extended-geometry/A4_NORMALIZED_BOUNDARY_ASSEMBLY_AUDIT.md)
+constructs a determinant-one translated incidence along the polynomial
+normalization, but its inverse masks are not polynomial and its rational
+Jacobian is nonconstant. In fact every automorphic incidence route is
+excluded. The next test is a nonautomorphic map whose boundary pullback is
+the old boundary pullback times its Jacobian and whose two inverse-mask
+numerators are divisible.
+
 ## 9. Recommended paper sequence
 
 ### Paper A: minimal and transfer
@@ -388,6 +435,8 @@ Keller verification are already exact.
 - use the positive-rank linear-pencil resolvent curve to seek a second,
   geometrically distinct infinite Hasse family;
 - combine coverable-group inverse Galois constructions with tangent transfer;
+- distinguish fiberwise Galois transfer from the cover-preserving
+  [Keller inverse-Galois program](KELLER_INVERSE_GALOIS_PROGRAM.md);
 - classify the solvable groups obtainable in connected, disconnected, and
   Hasse-failing fibers.
 

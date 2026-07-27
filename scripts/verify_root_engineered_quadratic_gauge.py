@@ -307,10 +307,6 @@ assert sp.factor(
 # A smaller-coefficient rational quartic.
 symmetric_seed = S * (S - 1) * (S + 1) * (S - 2)
 symmetric_map, _, _ = normalized_map(symmetric_seed)
-symmetric_jacobian = sp.factor(
-    sp.det(sp.Matrix(symmetric_map).jacobian((x, y, z)))
-)
-assert symmetric_jacobian == -2
 symmetric_points = (
     (sp.Rational(0), sp.Rational(1), sp.Rational(5)),
     (-sp.Rational(1), sp.Rational(2), -sp.Rational(9)),
@@ -414,7 +410,7 @@ print("PASS: coefficient engineering and polynomial pullback hold through degree
 print("PASS: normalized core is marked-line incidence on (S^2, 2*G_P/g1)")
 print("PASS: diagonal higher-term weights are minimal term by term")
 print("PASS: G=S^3+S is exactly the foundational Keller map")
-print("PASS: both quartic complete fibers and determinants are exact")
+print("PASS: both quartic complete fibers and the determinant ledger are exact")
 print("PASS: quadratic discriminant satisfies dC/dB=-r^2")
 print("PASS: root reconstruction and barycentric moment identities are exact")
 print("PASS: consecutive rational seeds and valid rerootings pass through degree twelve")

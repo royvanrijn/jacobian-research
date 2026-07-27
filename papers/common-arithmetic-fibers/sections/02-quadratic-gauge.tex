@@ -1,20 +1,102 @@
-\section{The quadratic gauge}\label{sec:gauge}
+\section{The quadratic gauge from the inverse equation}\label{sec:gauge}
 
-The prescribed-algebra realization theorem rests on one explicit construction.
+The polynomial realization theorem rests on one explicit construction.
 Let
 \begin{equation}
  G(S)=g_1S+g_2S^2+\cdots+g_NS^N\in K[S],
  \qquad g_1g_3g_N\neq0.
  \label{eq:seed}
 \end{equation}
-In source coordinates $(x,y,z)$ define
+The construction is easiest to read backwards, from the inverse problem.
+Begin with birational coordinates \((\Pi,S,Q)\) and put
+\begin{equation}
+ D=1-SQ+\Pi S^2.
+ \label{eq:D-compact}
+\end{equation}
+For the prescribed one-variable seed, define
+\begin{equation}
+ G_\Pi(S)=g_1S+\Pi(g_2S^2+g_3S^3)
+          +\sum_{k=4}^Ng_k\Pi^kS^k
+ \label{eq:Gpi}
+\end{equation}
+and
+\begin{equation}
+ \beta(\Pi,S)
+ =\frac{G_\Pi'(S)/g_1-1-\Pi S^2}{S}.
+ \label{eq:beta}
+\end{equation}
+The numerator is divisible by \(S\), so \(\beta\) is a polynomial.  We now
+choose the second target coordinate to be
+\begin{equation}
+ B=Q+\beta(\Pi,S).
+ \label{eq:B-compact}
+\end{equation}
+This choice is the whole gauge.  Indeed,
+\[
+ D
+ =1-S(B-\beta(\Pi,S))+\Pi S^2
+ =\frac{G_\Pi'(S)}{g_1}-BS.
+\]
+Define the third target coordinate by
+\begin{equation}
+ C=\frac{2G_\Pi(S)}{g_1}-BS^2.
+ \label{eq:C-compact}
+\end{equation}
+Then the inverse equation
+\begin{equation}
+ E_{\Pi,B,C}(S)
+ =G_\Pi(S)-\frac{g_1}{2}(BS^2+C)=0
+ \label{eq:inverse}
+\end{equation}
+holds by construction, and its derivative satisfies
+\begin{equation}
+ D=\frac{G_\Pi'(S)}{g_1}-BS
+  =\frac{E_{\Pi,B,C}'(S)}{g_1}.
+ \label{eq:D-derivative}
+\end{equation}
+
+The Jacobian calculation is already visible in these coordinates.  At fixed
+\(\Pi\), differentiating \eqref{eq:B-compact}--\eqref{eq:C-compact} gives
+\begin{equation}
+ \det\frac{\partial(B,C)}{\partial(S,Q)}=-2D.
+ \label{eq:plane-jacobian}
+\end{equation}
+Thus any birational source chart with Jacobian \(D^{-1}\) will produce a
+constant Jacobian \(-2\).  What remains is to find such a chart for which
+\(B\) and \(C\) pull back to polynomials.
+
+\subsection{The polynomial pullback}
+
+In source coordinates \((x,y,z)\), set
 \begin{equation}
  t=1+xy,
  \qquad
  q=t^2z+\frac{g_1}{g_3}y^2(1+3t).
  \label{eq:tq}
 \end{equation}
-The associated map $F_G=(\Pi,B,C):\A^3_K\to\A^3_K$ is
+On \(t\neq0\), define
+\begin{equation}
+ \Pi=tq,\qquad S=\frac{x}{t},\qquad Q=y+xq.
+ \label{eq:source-chart}
+\end{equation}
+Then
+\[
+ D=1-SQ+\Pi S^2=t^{-1},
+\]
+and direct differentiation gives
+\begin{equation}
+ \det\frac{\partial(\Pi,S,Q)}{\partial(x,y,z)}=D^{-1}.
+ \label{eq:source-chart-jacobian}
+\end{equation}
+Consequently, the two Jacobian factors are
+\[
+ D^{-1}\cdot(-2D)=-2.
+\]
+
+The particular polynomial \(q\) in \eqref{eq:tq} is chosen so that the
+compact coordinates \eqref{eq:B-compact}--\eqref{eq:C-compact} have no
+denominators after this substitution.  Expanding their pullbacks gives the
+polynomial map \(F_G=(\Pi,B,C):\A^3_K\to\A^3_K\):
 \begin{align}
  \Pi={}&tq,\notag\\
  B={}&y+3\frac{g_3}{g_1}xq+2\frac{g_2}{g_1}tq
@@ -24,8 +106,10 @@ The associated map $F_G=(\Pi,B,C):\A^3_K\to\A^3_K$ is
        -\sum_{k=4}^N(k-2)\frac{g_k}{g_1}(xq)^k.
  \label{eq:gauge-map}
 \end{align}
-Although the formula is long, it is polynomial and completely mechanical in
-the coefficients of $G$.
+The long formula is therefore the polynomial pullback of the simple inverse
+problem above, not a formula guessed in the source coordinates.  Once
+\eqref{eq:tq} is fixed, the pullback is forced coefficient by coefficient.
+Appendix~\ref{app:gauge-identities} records that expansion in full.
 
 The smallest seed recovers the counterexample that motivated this work.  Take
 \[
@@ -128,20 +212,12 @@ inverse equation by the arbitrary polynomial \(G\).  Its roots label the
 inverse branches just as the three marked roots do in the seed case.
 \end{remark}
 
-The point of the construction appears in the inverse problem.  For a target
-$(\Pi,B,C)$ put
-\begin{equation}
- G_\Pi(S)=g_1S+\Pi(g_2S^2+g_3S^3)
-          +\sum_{k=4}^Ng_k\Pi^kS^k
- \label{eq:Gpi}
-\end{equation}
-and
-\begin{equation}
- E_{\Pi,B,C}(S)=G_\Pi(S)-\frac{g_1}{2}(BS^2+C).
- \label{eq:inverse}
-\end{equation}
-Thus a three-variable inverse problem reduces to the single equation
-$E_{\Pi,B,C}(S)=0$.
+Thus the three-variable inverse problem is governed by the single equation
+\(E_{\Pi,B,C}(S)=0\), and the same derivative that controls reconstruction
+is exactly the factor cancelled in the Jacobian.
+
+\section{Localized fiber reconstruction and geometric degree}
+\label{sec:reconstruction}
 
 For $(\pi,b,c)\in K^*\times K^2$, write $\mathcal F_{\pi,b,c}$ for the fiber
 functor
@@ -190,45 +266,16 @@ bijection
 \end{theorem}
 
 \begin{proof}
-We begin on the open set $t\neq0$.  Introduce the coordinates
-\[
- S=\frac{x}{t},
- \qquad Q=y+xq,
- \qquad D=1-SQ+\Pi S^2=t^{-1}.
-\]
-A direct differentiation gives
-\begin{equation}
- \det\frac{\partial(\Pi,S,Q)}{\partial(x,y,z)}=D^{-1}.
- \label{eq:source-chart-jacobian}
-\end{equation}
-Next define
-\begin{equation}
- \beta(\Pi,S)
- =\frac{G_\Pi'(S)/g_1-1-\Pi S^2}{S}.
- \label{eq:beta}
-\end{equation}
-The numerator is divisible by $S$.  Substituting the definitions into
-\eqref{eq:gauge-map} gives the two identities
+The construction above gives the identities
 \begin{equation}
  B=Q+\beta(\Pi,S),
  \qquad
  C=\frac{2G_\Pi(S)}{g_1}-BS^2.
  \label{eq:marked-line-identities}
 \end{equation}
-The second identity is precisely $E_{\Pi,B,C}(S)=0$.  Differentiating it gives
-\begin{equation}
- D=\frac{G_\Pi'(S)}{g_1}-BS
-  =\frac{E_{\Pi,B,C}'(S)}{g_1}.
- \label{eq:D-derivative}
-\end{equation}
-At fixed $\Pi$, the Jacobian of \eqref{eq:marked-line-identities} with respect
-to $(S,Q)$ is
-\begin{equation}
- \det\frac{\partial(B,C)}{\partial(S,Q)}=-2D.
- \label{eq:plane-jacobian}
-\end{equation}
-The factors $D^{-1}$ and $-2D$ cancel.  Hence $\det DF_G=-2$ on the dense open
-set $t\neq0$, and therefore everywhere.
+Equations \eqref{eq:source-chart-jacobian} and
+\eqref{eq:plane-jacobian} give \(\det DF_G=-2\) on the dense open set
+\(t\neq0\), and hence everywhere.
 For the cubic seed, this determinant identity is the coordinate shadow of
 the geometric fact in Remark~\ref{rem:factorization-origin}: over the
 nonvanishing-resultant locus, the product cubic locally identifies the marked
@@ -387,7 +434,8 @@ Consequently,
 \[
  F_G^{-1}(\pi,b,c)\simeq\Spec K[S]/(E),
 \]
-and this is a full finite-\'etale Keller fiber of rank $N$.
+and this is a full Keller fiber of rank \(N\) (in particular, finite
+\'etale).
 \end{corollary}
 
 \begin{proof}
@@ -398,15 +446,74 @@ and scheme isomorphism follow from that theorem.  Its geometric-degree
 statement makes the rank-$N$ fiber full.
 \end{proof}
 
+\begin{corollary}[Jacobian-one effective form]\label{cor:effective-gauge}
+Let
+\[
+ L(\Pi,B,C)=\left(\Pi,-\frac{B}{2},C\right),
+ \qquad \widetilde F_G=L\circ F_G.
+\]
+Then
+\[
+ \det D\widetilde F_G=1,
+ \qquad \gdeg(\widetilde F_G)=N.
+\]
+For every $(\pi,b,c)\in K^*\times K^2$,
+\[
+ \widetilde F_G^{-1}\left(\pi,-\frac b2,c\right)
+ \simeq
+ \operatorname{Spec}\left(
+   (K[S]/(E_{\pi,b,c}))[1/\overline{E_{\pi,b,c}'}]
+ \right).
+\]
+If $E_{\pi,b,c}$ is squarefree of degree $N$, this reduces to
+\[
+ \widetilde F_G^{-1}\left(\pi,-\frac b2,c\right)
+ \simeq\Spec K[S]/(E_{\pi,b,c}).
+\]
+In particular, a target with $b=0$ is unchanged by the normalization.
+Moreover,
+\[
+ \deg\Pi\leq7,
+ \qquad \deg B\leq6N+2,
+ \qquad \deg C\leq6N,
+\]
+so
+\[
+ \boxed{\max_i\deg(\widetilde F_G)_i\leq6N+2.}
+\]
+\end{corollary}
+
+\begin{proof}
+The linear map $L$ has determinant $-1/2$, so the determinant, geometric
+degree, and localized-fiber statements follow from
+Theorem~\ref{thm:localized-gauge}; the squarefree simplification follows from
+Corollary~\ref{cor:squarefree-gauge}.
+
+For the degree estimate, $\deg t=2$ and $\deg q\leq5$, hence
+$\deg\Pi\leq7$.  A summand of $B$ indexed by $k\geq4$ has degree at most
+\[
+ 2\deg t+(k-2)+k\deg q\leq4+(k-2)+5k=6k+2.
+\]
+The preceding terms have degrees at most $1$, $6$, and $7$, so
+$\deg B\leq6N+2$.  Similarly, $(xq)^k$ has degree at most $6k$, while the
+remaining terms of $C$ have degree at most $4$.  Thus $\deg C\leq6N$.
+A linear output normalization does not change these bounds.
+\end{proof}
+
+\input{sections/01-keller-fibers}
+
+\section{Symmetric monodromy}
+\label{sec:monodromy}
+
 \begin{lemma}[Morse slices of the quadratic pencil]
 \label{lem:quadratic-pencil-morse}
 Let \(k\) be an algebraically closed field of characteristic zero, and let
 \[
- H(S)=g_1S+\cdots+h_NS^N,\qquad g_1h_N\neq0.
+ H(S)=h_1S+\cdots+h_NS^N,\qquad h_1h_N\neq0.
 \]
 Then
 \[
- f_b(S)=H(S)-\frac{g_1b}{2}S^2
+ f_b(S)=H(S)-\frac{h_1b}{2}S^2
 \]
 is Morse for all but finitely many \(b\in k\).
 \end{lemma}
@@ -414,13 +521,13 @@ is Morse for all but finitely many \(b\in k\).
 \begin{proof}
 A repeated root \(r\) of
 \[
- H(S)-\frac{g_1}{2}(BS^2+C)
+ H(S)-\frac{h_1}{2}(BS^2+C)
 \]
-cannot be zero, because \(H'(0)=g_1\).  Solving \(E(r)=E'(r)=0\) gives
+cannot be zero, because \(H'(0)=h_1\).  Solving \(E(r)=E'(r)=0\) gives
 \begin{equation}
- B(r)=\frac{H'(r)}{g_1r},
+ B(r)=\frac{H'(r)}{h_1r},
  \qquad
- C(r)=\frac{2H(r)-rH'(r)}{g_1},
+ C(r)=\frac{2H(r)-rH'(r)}{h_1},
  \qquad r\in\mathbb G_m.
  \label{eq:quadratic-discriminant-parametrization}
 \end{equation}
@@ -446,7 +553,7 @@ They are precisely the critical points of \(f_b\).
 
 At such a point,
 \[
- f_b(r)=H(r)-\frac{rH'(r)}2=\frac{g_1}{2}C(r).
+ f_b(r)=H(r)-\frac{rH'(r)}2=\frac{h_1}{2}C(r).
 \]
 The normalization map in
 \eqref{eq:quadratic-discriminant-parametrization} is an isomorphism away
@@ -456,26 +563,56 @@ of \(B\) have the same \(C\)-coordinate.  Thus the critical values of
 \(f_b\) are pairwise distinct, and \(f_b\) is Morse.
 \end{proof}
 
-\begin{lemma}[A Morse slice detects generic monodromy]
+\begin{lemma}[Specialization through the ordered-root cover]
 \label{lem:slice-detects-monodromy}
-Let \(k\) be algebraically closed of characteristic zero.  Fix
-\(p\in k^*\) and \(b\in k\).  If \(E_{p,b,C}(S)\) is separable over
-\(k(C)\), then its splitting-field Galois group embeds, in its natural
-permutation representation, into the Galois group of
-\(E_{\Pi,B,C}(S)\) over \(k(\Pi,B,C)\).
+Let \(k\) be a field, let \(U\) be a connected normal \(k\)-variety, and let
+\[
+ f(S)\in\Gamma(U,\mathcal O_U)[S]
+\]
+have degree \(N\), with leading coefficient and discriminant invertible on
+\(U\).  Let \(G\leq S_N\) be the Galois group of \(f\) over \(k(U)\), acting
+on a chosen ordering of its roots.  If \(Z\) is a connected normal
+\(k\)-variety and \(i:Z\to U\) is a morphism, then the Galois group of
+\(i^*f\) over \(k(Z)\), in its root action, is conjugate in \(S_N\) to a
+subgroup of \(G\).
+
+In particular, let \(k\) be algebraically closed, fix \(p\in k^*\) and
+\(b\in k\), and suppose that \(E_{p,b,C}(S)\) is separable over \(k(C)\).
+Then its splitting-field Galois group is conjugate to a subgroup of the
+Galois group of \(E_{\Pi,B,C}(S)\) over \(k(\Pi,B,C)\).
 \end{lemma}
 
 \begin{proof}
-Normalize a target open set in the generic splitting field.  The generic
-point of the line \(\Pi=p,\ B=b\) belongs to that open after inverting the
-specialized discriminant, which is nonzero by separability.  A point of the
-normalization above this generic point has a decomposition group \(D\)
-contained in the generic Galois group.  The discriminant is invertible there,
-so the inertia group is trivial.  The residue field is generated by the
-distinct specialized roots and is therefore the splitting field of
-\(E_{p,b,C}\).  Thus \(D\) is isomorphic to the specialized splitting-field
-group.  After labeling the roots, that group is a subgroup of the generic
-group.
+After dividing by the invertible leading coefficient, form the finite
+\'etale \(U\)-scheme of ordered \(N\)-tuples of pairwise distinct roots.
+Choose the connected component \(Y\) containing the chosen generic
+ordering.  The induced cover \(Y\to U\) is the splitting cover: it is a
+finite \'etale \(G\)-torsor, and its function field is the splitting field
+of \(f\).
+
+The pullback \(Y_Z=Y\times_U Z\) is again a finite \'etale \(G\)-torsor,
+although it need not be connected.  Choose a connected component \(Y_0\).
+The subgroup
+\[
+ H=\{g\in G:gY_0=Y_0\}
+\]
+acts simply transitively on the geometric fibers of \(Y_0\to Z\).
+Consequently \(k(Y_0)/k(Z)\) is the splitting field of \(i^*f\) and
+\(\operatorname{Gal}(k(Y_0)/k(Z))=H\leq G\).  A different ordering or a
+different component conjugates \(H\) in \(S_N\), which proves the first
+statement.
+
+For the asserted specialization, take
+\[
+ U=\Spec k[\Pi,\Pi^{-1},B,C,\Delta_G^{-1}]
+\]
+and divide \(E_{\Pi,B,C}\) by its invertible leading coefficient.  Since
+\(\Delta_G(p,b,C)\) is a nonzero polynomial, the open curve
+\[
+ Z=\Spec k[C,\Delta_G(p,b,C)^{-1}]
+\]
+is connected and maps to \(U\) by \(\Pi\mapsto p,\ B\mapsto b\).  The first
+statement gives the required subgroup inclusion.
 \end{proof}
 
 \begin{theorem}[Full symmetric generic monodromy]
@@ -550,7 +687,7 @@ Hilbert irreducibility in its Galois form
 \cite[Chapter~3]{Serre} now supplies infinitely many $c\in K$ for which
 $E_{p,b,c}$ remains irreducible and has Galois group $S_N$.  Such a polynomial
 is squarefree of degree $N$, so Corollary~\ref{cor:squarefree-gauge}
-identifies it with a connected full finite-\'etale fiber.
+identifies it with a connected full Keller fiber.
 \end{proof}
 
 \begin{remark}[Which hypotheses are used where]\label{rem:gauge-hypotheses}
@@ -564,8 +701,7 @@ Squarefreeness is needed only to conclude that $E'$ is invertible at every root
 and hence that no localization remains.  The condition $g_3\neq0$ is what
 makes the source coefficient $g_1/g_3$ meaningful.  For a translated
 polynomial $P(a+S)-P(a)$, the cubic coefficient is the third Hasse derivative
-at $a$, equal to $P'''(a)/3!$ in characteristic zero.  The Lean development
-follows the same separation.
+at $a$, equal to $P'''(a)/3!$ in characteristic zero.
 
 The transposition inertia in Theorem~\ref{thm:symmetric-monodromy} does not
 contradict the fact that $F_G$ is \'etale.  A repeated inverse root has
@@ -574,57 +710,3 @@ the corresponding valuation is centered on the nonproperness boundary.
 Monodromy is taken on the function-field cover, or equivalently on the finite
 \'etale restriction over a sufficiently small target open set.
 \end{remark}
-
-\begin{corollary}[Jacobian-one effective form]\label{cor:effective-gauge}
-Let
-\[
- L(\Pi,B,C)=\left(\Pi,-\frac{B}{2},C\right),
- \qquad \widetilde F_G=L\circ F_G.
-\]
-Then
-\[
- \det D\widetilde F_G=1,
- \qquad \gdeg(\widetilde F_G)=N.
-\]
-For every $(\pi,b,c)\in K^*\times K^2$,
-\[
- \widetilde F_G^{-1}\left(\pi,-\frac b2,c\right)
- \simeq
- \operatorname{Spec}\left(
-   (K[S]/(E_{\pi,b,c}))[1/\overline{E_{\pi,b,c}'}]
- \right).
-\]
-If $E_{\pi,b,c}$ is squarefree of degree $N$, this reduces to
-\[
- \widetilde F_G^{-1}\left(\pi,-\frac b2,c\right)
- \simeq\Spec K[S]/(E_{\pi,b,c}).
-\]
-In particular, a target with $b=0$ is unchanged by the normalization.
-Moreover,
-\[
- \deg\Pi\leq7,
- \qquad \deg B\leq6N+2,
- \qquad \deg C\leq6N,
-\]
-so
-\[
- \boxed{\max_i\deg(\widetilde F_G)_i\leq6N+2.}
-\]
-\end{corollary}
-
-\begin{proof}
-The linear map $L$ has determinant $-1/2$, so the determinant, geometric
-degree, and localized-fiber statements follow from
-Theorem~\ref{thm:localized-gauge}; the squarefree simplification follows from
-Corollary~\ref{cor:squarefree-gauge}.
-
-For the degree estimate, $\deg t=2$ and $\deg q\leq5$, hence
-$\deg\Pi\leq7$.  A summand of $B$ indexed by $k\geq4$ has degree at most
-\[
- 2\deg t+(k-2)+k\deg q\leq4+(k-2)+5k=6k+2.
-\]
-The preceding terms have degrees at most $1$, $6$, and $7$, so
-$\deg B\leq6N+2$.  Similarly, $(xq)^k$ has degree at most $6k$, while the
-remaining terms of $C$ have degree at most $4$.  Thus $\deg C\leq6N$.
-A linear output normalization does not change these bounds.
-\end{proof}

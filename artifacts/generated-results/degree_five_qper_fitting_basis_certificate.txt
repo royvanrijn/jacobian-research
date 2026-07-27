@@ -1,0 +1,39 @@
+DEGREE-FIVE Q-PERIOD FITTING BASIS: REBUILD/CERTIFICATE LEDGER
+
+BASIS_ARTIFACT=artifacts/generated-results/degree_five_qper_fitting_basis_Q.sing
+BASIS_BYTES=20840615
+BASIS_SHA256=25788668021f563e17373b55703a08ef5693576077ebdbe53c4c3f2c659d98e6
+
+REBUILD_STATUS=PASS_MODULAR_RECONSTRUCTION
+REBUILD_METHOD=Singular modular reconstruction over Q; relation to the input ideal is not certified by reconstruction alone
+REBUILD_WALL_SECONDS=645.24
+SATURATION_EXPONENT_CANDIDATE=12
+
+SHAPE_STATUS=PASS_EXACT_FOR_REBUILT_BASIS
+BASIS_SIZE=21
+DIMENSION=0
+QUOTIENT_LENGTH=218
+
+GROEBNER_STATUS=PASS_EXACT
+GROEBNER_METHOD=20 adjacent staircase S-polynomials plus Buchberger chain criterion
+GROEBNER_WALL_SECONDS=13.57
+
+BOUNDARY_UNIT_STATUS=PASS_EXACT
+BOUNDARY_PRODUCT=a*(a+1)*H
+BOUNDARY_UNIT_REMAINDER_TERMS=0
+BOUNDARY_UNIT_WALL_SECONDS=568.83
+
+INPUT_CONTAINMENT_STATUS=NOT_CERTIFIED
+INPUT_CONTAINMENT_ATTEMPT=direct exact normal form of primitive maximal minor 7
+INPUT_CONTAINMENT_TIMEOUT_SECONDS=1800
+
+REVERSE_MEMBERSHIP_STATUS=NOT_CERTIFIED
+REVERSE_MEMBERSHIP_TARGET=(a*(a+1)*H)^12*G subset I_15(M)
+
+CONCLUSION=The rebuilt rational candidate is an exact zero-dimensional length-218 Groebner ideal and is exactly saturated by the selected boundary product. Equality with I_15(M):(a*(a+1)*H)^infinity is not proved.
+
+REBUILD_COMMAND=.venv/bin/python scripts/compute_degree_five_qper_fitting.py --prime 0 --method modular-rebuild --timeout 900 --basis-output artifacts/generated-results/degree_five_qper_fitting_basis_Q.sing
+SHAPE_COMMAND=.venv/bin/python scripts/verify_degree_five_qper_fitting_basis.py --check shape
+GROEBNER_COMMAND=.venv/bin/python scripts/verify_degree_five_qper_fitting_basis.py --check groebner --jobs 8 --timeout 600
+BOUNDARY_UNIT_COMMAND=.venv/bin/python scripts/verify_degree_five_qper_fitting_basis.py --check boundary-unit --timeout 600
+INPUT_GENERATOR_7_COMMAND=.venv/bin/python scripts/verify_degree_five_qper_fitting_basis.py --check input --index 7 --timeout 1800

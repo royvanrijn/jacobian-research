@@ -1,0 +1,37 @@
+experiment: degree-six foundational-equivariant nonzero-orbit collision
+coefficient field: QQ
+software: msolve 0.10.1
+monomial order: graded reverse lexicographical
+command:
+  .venv/bin/python scripts/search_degree6_sparse_equivariant.py --full-exact
+
+support sizes: A=8, B=7, C=5
+normalization: A_s=1, B_v=1, C_1=1
+collision equations: B(1,1)=0, C(1,1)=0
+
+closed chart:
+  A_s2=0, A_vs2=0, B_s2=0
+  reduced Groebner basis: [1]
+
+principal open A_s2 != 0:
+  encoding: inverse*A_s2-1
+  reduced Groebner basis: [1]
+  reference elapsed time: 199.42 s
+
+principal open A_vs2 != 0:
+  encoding: inverse*A_vs2-1
+  reduced Groebner basis: [1]
+  reference elapsed time: 0.33 s
+
+principal open B_s2 != 0:
+  encoding: inverse*B_s2-1
+  reduced Groebner basis: [1]
+  reference elapsed time: 18.31 s
+
+conclusion:
+  The full normalized degree-six equivariant coefficient scheme with the
+  displayed nonzero order-two-orbit collision is empty over QQbar.
+
+scope warning:
+  This does not exclude symmetry-breaking maps or invariant collision
+  points on v*s=0.

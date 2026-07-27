@@ -9,6 +9,8 @@ import FiniteEtaleKeller.AnnouncedCounterexample
 import FiniteEtaleKeller.ExplicitFiber
 import FiniteEtaleKeller.ExplicitThreeAdicPoint
 import FiniteEtaleKeller.ExplicitAllPadicPoints
+import FiniteEtaleKeller.DegreeFourFixedPoint
+import FiniteEtaleKeller.DegreeFourMomentBarrier
 import FiniteEtaleKeller.GeneralGaugeLocalizedFiber
 import FiniteEtaleKeller.GenericInverseIrreducibility
 import FiniteEtaleKeller.GeneralGaugeFunctionField
@@ -27,8 +29,11 @@ map/target represented by the final theorem must break this file.
 noncomputable section
 
 open Polynomial
+open scoped TensorProduct
 
 namespace FiniteEtaleKeller
+
+universe u
 
 variable {K : Type*} [Field K] [CharZero K]
 
@@ -205,6 +210,64 @@ example :
           Nonempty (ExplicitQuintic.IntegralFiberPoint ℚ_[p]) :=
   ExplicitQuintic.integralFiberPoint_hasse_certificate
 
+/-- The exact finite-group lemma used before the paper's Chebotarev input:
+an action on at most four points has a global fixed point if every element
+has an individual fixed point. -/
+example (G Ω : Type*) [Group G] [Fintype G] [Fintype Ω] [MulAction G Ω]
+    (hcard : Fintype.card Ω ≤ 4)
+    (hlocal : ∀ g : G, Set.Nonempty (MulAction.fixedBy Ω g)) :
+    Set.Nonempty (MulAction.fixedPoints G Ω) :=
+  degreeFour_fixedPoint G Ω hcard hlocal
+
+/-- The tensor-square identity giving the second local-sheet moment. -/
+example (A L : Type*) [CommRing A] [Field L]
+    [Algebra ℚ A] [Algebra ℚ L] :
+    localPointCount ℚ (A ⊗[ℚ] A) L =
+      localPointCount ℚ A L ^ 2 :=
+  localPointCount_tensor_self ℚ A L
+
+/-- A point over any test field supplies at least as many local sheets as
+global components in rank at most four, provided there is no rational
+component. -/
+example (A L : Type*) [CommRing A] [Algebra ℚ A]
+    [Algebra.Etale ℚ A] [Field L] [Algebra ℚ L]
+    (hno : IsEmpty (A →ₐ[ℚ] ℚ))
+    (hrank : Module.finrank ℚ A ≤ 4)
+    (g : A →ₐ[ℚ] L) :
+    componentCount A ≤ localPointCount ℚ A L :=
+  componentCount_le_localPointCount_of_etale_rank_le_four
+    ℚ A L hno hrank g
+
+/-- Every rational-point-free finite étale algebra has a strict surplus of
+connected components in its tensor square. -/
+example (A : Type*) [CommRing A] [Algebra ℚ A]
+    [Algebra.Etale ℚ A] (hno : IsEmpty (A →ₐ[ℚ] ℚ)) :
+    componentCount A ^ 2 + componentCount A ≤
+      componentCount (A ⊗[ℚ] A) :=
+  componentCount_tensor_ge_sq_add_of_etale_isEmpty_algHom ℚ A hno
+
+/-- The pinned Mathlib revision supplies the nonzero simple pole of every
+Dedekind zeta function; only the Euler-coefficient extraction remains. -/
+example (E : Type*) [Field E] [NumberField E] :
+    Filter.Tendsto
+      (fun s : ℝ ↦ (s - 1) * NumberField.dedekindZeta E s)
+      (nhdsWithin 1 (Set.Ioi 1))
+      (nhds (NumberField.dedekindZeta_residue E)) ∧
+      NumberField.dedekindZeta_residue E ≠ 0 :=
+  dedekindZeta_simplePole_input E
+
+/-- Once the isolated zeta prime-moment statement is supplied, the complete
+rank-at-most-four Hasse failure is impossible. -/
+example (A : Type u) [CommRing A] [Nontrivial A] [Algebra ℚ A]
+    [Algebra.Etale ℚ A]
+    (hmoment : RationalFiniteEtalePrimeMomentStatement.{u})
+    (hno : IsEmpty (A →ₐ[ℚ] ℚ))
+    (hrank : Module.finrank ℚ A ≤ 4)
+    (hlocal : RationalPrimeLocallySoluble A) :
+    False :=
+  no_rank_le_four_hasse_failure_of_rationalPrimeMomentStatement
+    A hmoment hno hrank hlocal
+
 /-- Signature guard for the final construction-level certificate. -/
 example (P : K[X]) (hdeg : 3 ≤ P.natDegree) :
     jacobianDet (automaticRealizationMap P hdeg) = 1 ∧
@@ -249,6 +312,16 @@ example (P : K[X]) (hP : Squarefree P) (hdeg : 3 ≤ P.natDegree) :
 #print axioms ExplicitQuintic.integralFiberPoint_threeAdic_nonempty
 #print axioms ExplicitQuintic.integralFiberPoint_padic_nonempty
 #print axioms ExplicitQuintic.integralFiberPoint_hasse_certificate
+#print axioms degreeFour_fixedPoint
+#print axioms componentCount_tensor_ge_sq_add_of_etale_isEmpty_algHom
+#print axioms componentCount_le_localPointCount_of_etale_rank_le_four
+#print axioms localPointCount_tensor_self
+#print axioms dedekindZeta_simplePole_input
+#print axioms PositiveNormalizedMean.second_moment_eq_sq_of_bounds
+#print axioms PositiveNormalizedMean.contradiction_of_component_surplus
+#print axioms no_rank_le_four_hasse_failure_of_moments
+#print axioms second_moment_eq_sq_of_dirichletPrimeMean
+#print axioms no_rank_le_four_hasse_failure_of_rationalPrimeMomentStatement
 #print axioms automaticRealizationMap_certificate
 #print axioms automaticJacobianOneFiberRepresentingEquiv_natural
 #print axioms automaticRealization_pageOne

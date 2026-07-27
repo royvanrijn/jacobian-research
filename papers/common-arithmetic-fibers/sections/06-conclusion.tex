@@ -1,19 +1,29 @@
-\section{Consequences, scope, and further directions}
+\section{Discussion}
 
-The main theorem is a prescribed-fiber realization result.  Given a finite
-\'etale algebra, it builds a Keller map whose full fiber is that algebra.  The
-classification by rank is a useful corollary, but it is not the main point:
-two finite \'etale algebras of the same rank can have different field
-decompositions, Galois actions, signatures, and local behavior, and the
-construction preserves all of that data.
+The core theorem is the polynomial realization theorem.  Given a squarefree
+presentation \(K[T]/(P)\) and an admissible \(a\), it gives an explicit Keller
+map with that full Keller fiber.  Monogenicity then yields the corresponding
+existence statement for an abstract finite \'etale algebra.  The distinction
+matters: the formulas are explicit from \((P,a)\), while the primitive-element
+step supplies no canonical presentation.  The classification by rank is a
+corollary, but it is not the main point: two finite \'etale algebras of the
+same rank can have different field decompositions, Galois actions, signatures,
+and local behavior, and the construction preserves all of that data.
 
 Several consequences are immediate.  A squarefree polynomial of degree at
 least three becomes an exact inverse polynomial after one translation; an
-irreducible polynomial gives a connected fiber; and a degree-\(N\) input is
-realized in \(\A^3\) with coordinate degree at most \(6N+2\).  Every map
+irreducible polynomial gives a connected full Keller fiber; and a
+degree-\(N\) input is realized in \(\A^3\) with coordinate degree at most
+\(6N+2\).  Every map
 produced by the construction has geometric and arithmetic generic monodromy
 \(S_N\).  Over a Hilbertian field, each such fixed map has infinitely many
-connected full fibers with splitting-field group \(S_N\).
+connected full Keller fibers with splitting-field group \(S_N\).
+
+The Hasse application is arithmetic before it is geometric.  The
+degree-four fixed-point lemma and Chebotarev give a local--global theorem for
+finite \'etale schemes over every number field.  The Berend--Bilu scheme is
+therefore rank-minimal over \(\Q\) independently of Keller maps; realization
+then supplies the explicit Keller-fiber corollary.
 
 The construction also has a simple geometric starting point.  The cubic seed
 is an affine chart of normalized multiplication
@@ -28,15 +38,16 @@ polynomial \(G\); this is the geometric bridge from the announced
 counterexample to the all-degree realization theorem
 \cite{TaoDigest}.
 
-Fullness also has an intrinsic geometric interpretation in this family.
-Theorem~\ref{thm:exact-nonproperness} identifies the exact reduced
-nonproperness locus with the inverse-discriminant zero set, and
-Corollary~\ref{cor:intrinsic-fullness} places every distinguished target in
-its complement.  The partition formula
-\eqref{eq:partition-sheet-loss}, the complete table
-\eqref{eq:pi-zero-fiber-table}, and
-Proposition~\ref{prop:boundary-arcs} account for the affine and boundary
-sheets on every displayed stratum.
+Appendix~\ref{app:gauge-identities} retains the coefficientwise expansion
+from the compact inverse design to the displayed polynomial coordinates.
+Appendix~\ref{app:degree-two} records the scalar-extension and descent
+argument for the classical degree-two obstruction, and
+Appendix~\ref{app:lean-correspondence} gives the verification table linking
+the main statements to their Lean declarations.  Finally,
+Appendix~\ref{app:nonproperness} contains the logically separate
+nonproperness calculation: the exact reduced nonproperness locus, the
+distinguished-target complement, and the complete fiber table on
+\(\Pi=0\).
 
 This is a transfer statement, not an inverse Galois theorem.  It does not say
 that arbitrary local specifications can always be globalized.  It says that
@@ -50,12 +61,12 @@ maximal generic monodromy.
 \paragraph{Relation to earlier work.}
 To my knowledge, the following prescribed-algebra statement has not appeared
 before: every finite \'etale \(K\)-algebra of rank at least three occurs as a
-\emph{full scheme fiber} of an explicit Keller map
-\(\A^3_K\to\A^3_K\).  The rank set \(\{1,3,4,\ldots\}\) follows from this
-theorem together with the known degree-two obstruction.  I searched for
-earlier results up to 24 July 2026, but this priority statement is necessarily
-qualified: searches can miss unpublished work or a theorem stated in
-different language.
+\emph{full Keller fiber} of a map \(\A^3_K\to\A^3_K\), with explicit
+formulas once a squarefree presentation and admissible translation are
+supplied.  The rank set \(\{1,3,4,\ldots\}\) follows from this theorem together
+with the known degree-two obstruction.  I searched for earlier results up to
+24 July 2026, but this priority statement is necessarily qualified: searches
+can miss unpublished work or a theorem stated in different language.
 
 The closest constructions have a different scope.  Gallagher gives explicit
 Keller maps in every geometric degree together with complete split rational
@@ -67,91 +78,6 @@ irreducibility \cite{LiptonMarkakis}, and Shaska studies graded Keller maps
 and arithmetic thinness \cite{Shaska}.  The monodromy argument here uses the
 classical theorem that a Morse polynomial has symmetric Galois group over the
 value-function field \cite[Theorem~4.4.5]{Serre}.
-
-\paragraph{Independent checks and formalization.}
-The SymPy checker
-\[
- \texttt{scripts/verify\_universal\_quadratic\_gauge.py}
-\]
-verifies the source chart, the marked-line identities, the Jacobian
-cancellation, every generic coefficient contribution, and the degree bound.
-The independent Singular checker expands the complete degree-six map over a
-rational function field in six coefficients, obtains determinant \(-2\), and
-checks the degree profile \((7,38,36)\).  Concrete degree-three, degree-four,
-and degree-five regressions reconstruct the polynomial quotient in both
-directions.  The additional checker
-\[
- \texttt{scripts/verify\_quadratic\_gauge\_nonproperness.py}
-\]
-independently checks the cubic and quartic discriminant specializations, the
-direct \(q=0\) and \(t=0\) charts, discriminant orders and saturated-slice
-coefficients through degree ten, and the uniform Newton and
-boundary-valuation ledger through degree sixty-four.
-
-The Lean project in
-\[
- \texttt{formal/finite-etale-keller}
-\]
-contains no \texttt{sorry} and introduces no project-specific axioms.  It
-constructs the all-degree map, proves its normalized Jacobian and coordinate
-degree bound, identifies the literal distinguished fiber naturally over every
-commutative test algebra, and proves that its representing quotient has the
-expected rank and is finite \'etale.  It also proves irreducibility and degree
-of the independent-parameter inverse equation, algebraic independence of the
-three map coordinates, and injectivity of the induced function-field
-pullback.  It then constructs, over the canonical target presentation
-\(K(\Pi,B)(C)\), the algebra equivalence
-\[
- K(x,y,z)\simeq
- K(\Pi,B)(C)[S]/(E_{\Pi,B,C})
-\]
-and transfers the inverse-root finrank to prove the actual geometric degree
-\(N\).  A separate theorem checks the inverse target rescaling from the
-Jacobian-one map back to the raw gauge.  The public theorem
-\[
- \texttt{automaticRealization\_pageOne}
-\]
-simultaneously records determinant one, geometric degree \(N\), the natural
-literal-fiber representation by \(K[T]/(P)\), finite \'etaleness, finiteness,
-rank \(N\), and the \(6N+2\) bound.
-
-The Lean axiom reports for these declarations contain only
-\texttt{propext}, \texttt{Classical.choice}, and \texttt{Quot.sound}.
-Monogenicity, symmetric monodromy, Hilbert irreducibility, the
-exact nonproperness and boundary-sheet accounting, the
-Campbell--Razar--Wright theorem, and the remaining arithmetic applications
-remain ordinary mathematical proofs or inputs.  For the quintic
-example, Lean verifies the exact fiber, its rank and finite \'etaleness, the
-absence of rational points, and the existence of points over \(\R\) and every
-\(\Q_p\).  The Chebotarev-based rank-minimality argument in
-Theorem~\ref{thm:hasse} remains an ordinary proof.
-
-\subsection*{Addendum: arithmetic left for later}
-
-The quadratic gauge has more structure than is needed for the realization
-theorem.  The exact nonproperness boundary is proved in
-Subsection~\ref{subsec:nonproperness}.  The following arithmetic direction is
-recorded so that its exact inverse-family computation is not hidden, but it is
-not used as a theorem in this paper.
-
-\paragraph{One map with many Hasse failures.}
-There is also a fixed quintic gauge for which exact algebra suggests the
-family
-\[
- \Spec\Q[X]/\bigl((X^3-\ell)(X^2+X+1)\bigr),
- \qquad \ell\equiv1\pmod{27},
-\]
-as fibers at pairwise distinct rational targets.  The inverse-polynomial
-identity is exact, and the expected local argument combines Hensel lifting,
-the residue-class dichotomy used in Theorem~\ref{thm:hasse}, and primes in an
-arithmetic progression.  A satisfactory treatment should audit all local
-cases and the claimed counting asymptotic as a separate arithmetic theorem.
-For the present paper, the single optimal quintic fiber is enough.
-
-Other constructions in the accompanying repository place the same finite
-\'etale algebra inside weighted and cancellation-type Keller maps that need
-not be stably equivalent.  Their comparison belongs with those deferred
-questions, not with the prescribed-fiber theorem proved here.
 
 \paragraph{Provenance and AI assistance.}
 The recent three-dimensional counterexample was announced by Alp\"oge, who

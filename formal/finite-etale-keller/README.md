@@ -34,8 +34,11 @@ candidate.
 | 23 | Supplied-parameter map and target compatibility under scalar extension | implemented |
 | 24 | Tensor-product base change of the representing polynomial quotient | implemented |
 | 25 | Comparison with the actual pullback-field extension and geometric degree | implemented |
-| 26 | Monogenicity and the passage from arbitrary finite étale algebras | paper proof; not yet Lean |
-| 27 | Historical degree-two Galois exclusion | external theorem; not yet Lean |
+| 26 | Full algebraic degree-four barrier: finite-étale decomposition, local-sheet bound, tensor surplus, and positive-moment contradiction | implemented |
+| 27 | Finite-group fixed-point lemma for actions on at most four points | implemented |
+| 28 | Dedekind-zeta first prime moment (Euler-coefficient extraction) | paper proof; not yet Lean |
+| 29 | Monogenicity and the passage from arbitrary finite étale algebras | paper proof; not yet Lean |
+| 30 | Historical degree-two Galois exclusion | external theorem; not yet Lean |
 
 ## Final polynomial-presentation theorem
 
@@ -117,6 +120,11 @@ ExplicitQuintic.p5_no_rational_root
 ExplicitQuintic.integralFiberPoint_rat_isEmpty
 ExplicitQuintic.integralFiberPoint_real_nonempty
 ExplicitQuintic.integralFiberPoint_threeAdic_nonempty
+localPointCount_tensor_self
+PositiveNormalizedMean.second_moment_eq_sq_of_bounds
+PositiveNormalizedMean.contradiction_of_component_surplus
+second_moment_eq_sq_of_dirichletPrimeMean
+no_rank_le_four_hasse_failure_of_rationalPrimeMomentStatement
 generalGaugeGenericInversePolynomial_certificate
 generalGaugeGenericInverseAdjoinRoot_finrank
 generalGaugeFullyGenericInversePolynomial_certificate
@@ -221,6 +229,31 @@ reduction to field-valued points. Separability makes the derivative class
 invertible by Bézout; the unit first target coordinate makes the chart global
 on the entire fiber functor.
 
+`DegreeFourMomentBarrier.lean` formalizes the rank-minimality proof after its
+single analytic input has been supplied.  It proves that algebra maps from a
+tensor product are pairs, hence
+`localPointCount K (A ⊗[K] A) L = localPointCount K A L ^ 2`.  It then proves
+Mathlib's finite-étale field-product decomposition and identifies component
+count with the number of factors.  For rank at most four it proves directly
+that every local point supplies at least that many local sheets (including
+the two-quadratic case), and proves that every nontrivial diagonal tensor
+block contributes an extra connected component.  Lean now also proves
+absolute convergence, linearity, and order preservation for the actual
+normalized Dirichlet prime sums on bounded functions.  The public theorem
+`no_rank_le_four_hasse_failure_of_rationalPrimeMomentStatement` therefore
+derives the contradiction directly from
+`RationalFiniteEtalePrimeMomentStatement`; no abstract mean functional
+remains on the critical path.  This route uses neither a Galois action nor a
+monogenic presentation.
+
+`DegreeFourFixedPoint.lean` independently formalizes the exact finite-group
+lemma used by the shorter proof in the paper.  Its endpoint
+`degreeFour_fixedPoint` says that an action on at most four points has a
+global fixed point whenever every group element has a fixed point.  The proof
+uses orbit decomposition and Mathlib's Burnside lemma.  The arithmetic
+Chebotarev passage from local points to the elementwise fixed-point hypothesis
+is not part of this declaration.
+
 ## Remaining formal boundary
 
 The actual map, determinant, geometric degree, effective degree, literal
@@ -237,16 +270,24 @@ for paper-level theorems are:
    field and compose it with the polynomial-presentation theorem;
 4. formalize, or explicitly isolate as a classical theorem interface, the
    Campbell--Razar--Wright degree-two Galois case;
-5. formalize the Chebotarev input in the degree-four barrier if
-   rank-minimality is to be machine-checked end to end. The explicit
+5. formalize either the Chebotarev passage used in the paper or the
+   first-prime-moment theorem from the Dedekind-zeta Euler product if
+   rank-minimality is to be machine-checked end to end.  The finite-group
+   fixed-point lemma used after Chebotarev is now formalized as
+   `degreeFour_fixedPoint`.  Mathlib's
+   nonzero simple-pole theorem is exposed as
+   `dedekindZeta_simplePole_input`; the remaining step is the Euler-product
+   coefficient extraction.  Absolute convergence, linearity and positivity
+   of the normalized prime mean, the finite-étale component adapter, low-rank
+   local-sheet bound, tensor surplus, moment contradiction, explicit
    quintic's rational obstruction, archimedean point, and points over every
    nonarchimedean completion are formalized.
 
 The current certificate therefore proves the complete constructive,
 scheme-theoretic, and geometric-degree polynomial-presentation layer, while
 keeping the separately proved nonproperness theorem, monodromy, monogenicity,
-the classical rank-two obstruction, and the Chebotarev-based rank-minimality
-argument explicitly outside the Lean certificate.
+the classical rank-two obstruction, and the analytic first-prime-moment
+extraction explicitly outside the Lean certificate.
 
 ## Build
 

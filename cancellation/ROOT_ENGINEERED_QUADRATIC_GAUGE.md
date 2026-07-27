@@ -624,6 +624,19 @@ Here `det D\widetilde F=-2`, and the complete fiber over `(1,0,0)` is
 The four source points correspond respectively to the marked roots
 `0,1,-1,2`.
 
+This same small quartic is now the canonical
+[linear-torus-free specialization](NO_LINEAR_TORUS_COUNTEREXAMPLE.md).
+More strongly, a fixed coefficient minor for every admissible quartic seed
+has determinant
+
+\[
+ \frac{10935}{4}\frac{g_4^6}{g_1^6}.
+\]
+
+Thus no quartic member of the quadratic-gauge family requires a separate
+weight search: all of them have zero infinitesimal linear source--target
+symmetry.
+
 ## 7. Discriminant normalization and monodromy
 
 Fix `P!=0` and abbreviate `H(S)=G_P(S)`.  A repeated root `r` of (23)

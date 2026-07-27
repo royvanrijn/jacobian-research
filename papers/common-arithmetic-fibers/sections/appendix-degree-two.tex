@@ -1,0 +1,71 @@
+\section{The degree-two obstruction over arbitrary characteristic-zero fields}
+\label{app:degree-two}
+
+This appendix supplies the scalar-extension and descent details used in
+Lemma~\ref{lem:degree-two}.  Let
+\[
+ F=(F_1,\ldots,F_m)\in K[X_1,\ldots,X_m]^m
+ \quad\text{with}\quad
+ \det\left(\frac{\partial F_i}{\partial X_j}\right)\in K^*,
+\]
+and suppose for contradiction that its function-field degree is two.
+
+\paragraph{The external input.}
+Campbell's unnumbered theorem
+\cite[Theorem, p.~244]{Campbell} states that a polynomial map
+\(H:\mathbb C^m\to\mathbb C^m\) has a polynomial inverse if its Jacobian
+determinant never vanishes and the induced extension
+\[
+ \mathbb C(H_1,\ldots,H_m)\subset
+ \mathbb C(X_1,\ldots,X_m)
+\]
+is normal.  In characteristic zero, normality here is equivalent to the
+extension being Galois.  Razar and Wright later gave algebraic treatments of
+this Galois case \cite{Razar,Wright}; the argument below needs only
+Campbell's complex theorem.
+
+\paragraph{Generic degree survives scalar extension.}
+Let \(K_0\subset K\) be the subfield generated over \(\mathbb Q\) by the
+finitely many coefficients of the \(F_i\), and write \(F_0\) for the same
+formulas over \(K_0\).  The nonzero Jacobian determinant makes
+\begin{equation}
+ \varphi_0:K_0[Y_1,\ldots,Y_m]\longrightarrow
+ K_0[X_1,\ldots,X_m],
+ \qquad Y_i\longmapsto F_i,
+ \label{eq:degree-two-coordinate-map}
+\end{equation}
+injective and generically finite.  Indeed, the Jacobian criterion in
+characteristic zero makes the \(F_i\) algebraically independent, so both
+fraction fields have transcendence degree \(m\).  If their extension has
+degree \(d_0\), there is a nonempty principal open \(U_0\) of the target on
+which \(F_0\) is finite locally free of rank \(d_0\): clear denominators in
+the finite extension and apply generic freeness.  For every field extension
+\(E/K_0\), base change over \((U_0)_E\) is again finite locally free of rank
+\(d_0\).  Taking generic fibers gives
+\begin{equation}
+ [E(X_1,\ldots,X_m):E(F_1,\ldots,F_m)]=d_0.
+ \label{eq:degree-two-base-change}
+\end{equation}
+Taking \(E=K\) shows that \(d_0=2\).
+
+\paragraph{The quadratic extension is Galois.}
+Because \(K_0\) is finitely generated over \(\mathbb Q\), choose an embedding
+\(K_0\hookrightarrow\mathbb C\).  Equation
+\eqref{eq:degree-two-base-change} with \(E=\mathbb C\) says that
+\[
+ \mathbb C(X_1,\ldots,X_m)/
+ \mathbb C(F_1,\ldots,F_m)
+\]
+has degree two.  It is separable, and every separable quadratic field
+extension is normal: the second root of the minimal polynomial of an element
+is its trace minus that element.  The complexified map therefore satisfies
+Campbell's hypotheses and is a polynomial automorphism.
+
+\paragraph{Descent of the inverse.}
+The base change of \eqref{eq:degree-two-coordinate-map} along
+\(K_0\hookrightarrow\mathbb C\) is an isomorphism.  Since \(\mathbb C\) is
+faithfully flat over \(K_0\), tensoring the kernel and cokernel of
+\(\varphi_0\) with \(\mathbb C\) detects their vanishing.  Hence
+\(\varphi_0\) is an isomorphism.  After base change to \(K\), the original
+\(F\) is a polynomial automorphism, so its function-field degree is one,
+contrary to the assumption.

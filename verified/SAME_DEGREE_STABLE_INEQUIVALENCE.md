@@ -182,6 +182,12 @@ It satisfies
  \det DF^{\rm quad}=-2.
 \]
 
+The [uniform quartic linear-symmetry certificate](../cancellation/NO_LINEAR_TORUS_COUNTEREXAMPLE.md)
+also applies to this map: it has no nonzero infinitesimal linear
+source--target symmetry.  This observation is independent of, and much
+shorter than, the stable boundary argument below; the latter remains needed
+for polynomial stable left--right inequivalence.
+
 After changing the signs of the last two displayed target coordinates and
 calling the resulting coordinates `(B,C)`, its inverse equation is
 

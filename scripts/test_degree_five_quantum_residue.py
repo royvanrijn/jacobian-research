@@ -3,6 +3,7 @@
 
 import unittest
 
+import sympy as sp
 from sympy.polys.domains import GF, QQ
 
 from explore_degree_five_a2_subprincipal import degree_five_sample
@@ -148,6 +149,19 @@ class QuantumResidueRegression(unittest.TestCase):
             / field(83886080)
         )
         self.assertNotEqual(hbar7_period, field.zero)
+
+        # The raw quadratic factor has nonzero field norm.  This is an
+        # independent arithmetic certificate for the one-term [X^18]
+        # cocycle value, separate from reduction in the cubic field.
+        x = sp.symbols("x")
+        cubic = 94 * x**3 + 335 * x**2 + 400 * x + 160
+        period_factor = (
+            587583566 * x**2 + 1388701707 * x + 831388850
+        )
+        self.assertEqual(
+            sp.resultant(cubic, period_factor, x) // 94**2,
+            57870471643246100480,
+        )
 
     def test_sparse_family_matches_existing_rational_sample(self):
         expected_s, expected_t = degree_five_sample()

@@ -158,6 +158,18 @@ The [stable-intersection theorem](verified/QUADRATIC_CANCELLATION_STABLE_INTERSE
 shows that the cancellation and root-engineered quadratic-gauge families
 share exactly one stable polynomial left--right class: the foundational
 cubic.
+The small-coefficient quartic specialization
+[with no linear torus symmetry](cancellation/NO_LINEAR_TORUS_COUNTEREXAMPLE.md)
+has determinant one and a four-point rational collision.  Its full
+coefficientwise linear-symmetry system has an explicit nonsingular
+`18 x 18` integer minor, so it admits no nontrivial linear
+`\mathbb G_m`-equivariance even after independent linear source and target
+changes.  The same selected minor has universal determinant
+`(10935/4)g_4^6/g_1^6`, proving the exclusion for every admissible quartic
+quadratic-gauge seed.  For the displayed specialization, the full
+`785 x 24` affine-linear system also has zero nullspace, extending the
+exclusion to independent affine coordinate changes.  This does not assert
+exclusion after nonlinear polynomial left--right equivalence.
 
 The [tangent-map core](verified/TANGENT_MAP_CORE.md) supplies the weighted
 inverse pencil, generic degree, critical divisor, discriminant normalization,
@@ -324,6 +336,46 @@ minimal Hasse-failing geometric degree is exactly `d_HP=5`.  The surrounding
 [arithmetic Keller-fiber programme](ARITHMETIC_KELLER_FIBER_ENGINEERING.md)
 records the exact transfer criterion, the remaining normalization question,
 and the fixed-map infinite-family and Galois-engineering targets.
+The separate
+[Keller inverse-Galois program](KELLER_INVERSE_GALOIS_PROGRAM.md)
+asks for substantially more than fiberwise transfer: given a transitive
+permutation group `G <= S_N`, preserve an explicit generic `G`-cover through
+constant-Jacobian completion while retaining full fibers, marked sheets, and
+compatible real and finite-prime splitting conditions.  It identifies
+cover-preserving Kellerization as the missing bridge.  Its
+[first proper-monodromy checkpoint](extended-geometry/A4_KELLER_INVERSE_COVER.md)
+is an oriented degree-four root cover with exact generic `A_4`, a
+determinant-one suspension on smooth affine boundary complements, and a full
+totally real arithmetic fiber.  The
+[affine follow-up](extended-geometry/A4_AFFINE_KELLER_FRONTIER.md) goes
+further: it gives a polynomial `A^3 -> A^3` map with exact generic `A_4`
+monodromy and determinant `4W^2K^3L`, reducing the Keller step to an explicit
+four-factor cancellation problem.  The subsequent
+[ledger reduction](extended-geometry/A4_LEDGER_REDUCTION_AND_RIGIDITY.md)
+identifies a target polynomial whose pullback is `W^3K^3L^2`, reducing the
+residual source ledger to `WL`.  It closes every defect-multiple ambient
+correction in all polynomial degrees and proves that polynomial cone
+reparametrization or block-triangular stabilization cannot remove the
+remaining divisor.  The
+[pure-target lift](extended-geometry/A4_PURE_TARGET_LEDGER_LIFT.md)
+adjoins one coordinate and maps it to `(WL/4)z`; the resulting polynomial
+fourfold map still has exact generic `A_4`, while its determinant is exactly
+the pullback of the single target divisor.  An ordinary Keller factorization
+must now modify at least two cone outputs with source-dependent masks.  The
+[two-mask frontier](extended-geometry/A4_TWO_MASK_FACTORIZATION_FRONTIER.md)
+constructs an explicit birational target blowdown with that determinant.
+It closes every zero-section-preserving rechart, all `120` coordinate
+assignments, and the six simplest singular-line incidence charts.  The
+[normalized-boundary assembly audit](extended-geometry/A4_NORMALIZED_BOUNDARY_ASSEMBLY_AUDIT.md)
+then gives the proposed incidence an explicit determinant-one ambient
+completion, but exact division shows that the assembled inverse blowdown is
+not polynomial, and its Jacobian is a nonconstant ratio of boundary
+pullbacks.  More generally, every automorphic incidence route is excluded.
+The surviving construction must be nonautomorphic and log-crepant:
+its new boundary pullback must equal the old boundary pullback times its
+Jacobian, while both inverse-mask numerators remain divisible.  The relative
+degree-seven `GL_3(F_2)`
+Sunada construction remains the exceptional nonsymmetric benchmark.
 The [intersective transfer theorem](verified/INTERSECTIVE_POLYNOMIAL_TRANSFER.md)
 now proves that every nontrivially intersective polynomial over a number
 field transfers after adjoining one irreducible quadratic factor, with
@@ -333,6 +385,22 @@ Hasse-failing targets on the same weighted map.  Independently, the
 [fixed-map infinite theorem](verified/INFINITE_HASSE_KELLER_FIBERS.md)
 uses a root-engineered quadratic-tilt pencil to give one Keller map with
 infinitely many Hasse-failing rational fibers and an asymptotic target count.
+The [fixed quintic arithmetic zoo](verified/FIXED_QUINTIC_ARITHMETIC_ZOO.md)
+puts complementary behaviors into a different single degree-five map: five
+explicit rational targets give respectively a split fiber, irreducible
+`S_5` and `A_5` fields, a quadratic-times-cubic algebra, and a Hasse failure.
+Three further targets realize `C_5`, `D_5`, and `F_{20}`, so this one map
+contains all five transitive quintic Galois groups.
+The original Hasse row has target `(4,-335/27,4807/20736)`, common quadratic
+resolvent `Q(sqrt(-3))`, projective height `257280`, and four explicit
+exceptional local checks.  Varying the resolvent produces a second certified
+row `(-7,387/14,400/2401)` with common field `Q(sqrt(-7))` and height
+`132741`; a wider pass finds `(5,-144/5,-188/3125)` with common field
+`Q(sqrt(-31))`, only two exceptional primes, and height `90000`.  Infinitely
+many Hasse failures in this particular split-seed map remain open; the note
+now rationally parametrizes the common-resolvent condition, exhibits
+rank-two and rank-one elliptic slices, records bounded searches, and gives a
+`Q_5` obstruction to importing the standard pure-cubic family.
 The [global Sunada construction](extended-geometry/GLOBAL_SUNADA_KELLER_COVERS.md)
 uses the point and line actions of `GL_3(F_2)` to give two nonisomorphic
 degree-seven inverse covers over one two-dimensional target, with identical
@@ -342,6 +410,14 @@ tangent-mark base change they are also pullbacks of stably inequivalent
 relative weighted Keller maps.  The sources are boundary complements or
 affine bundles, so an absolute polynomial three-space realization remains a
 controlled-boundary ledger problem.
+The [absolute-realization research audit](extended-geometry/ABSOLUTE_SUNADA_KELLER_RESEARCH.md)
+updates this frontier after the July 2026 absolute counterexamples, separates
+good-fiber from boundary-decorated arithmetic indistinguishability, and
+tests the alternative LaMacchia--Bosma--de Smit `GL_3(F_2)` core.  Its exact
+non-coordinate branch pullback again has a three-column `(1,1,2)` ledger,
+with an additional coordinate branch, and its displayed point/line partners
+are related by a target-sign involution.  It is therefore a useful
+algebraization testbed but not a shortcut to stable inequivalence.
 The follow-up [Cox-boundary audit](extended-geometry/DAVENPORT_COX_BOUNDARY_OBSTRUCTION.md)
 computes the exact pullback `E_3 E_6 (g')^2`, proves stable affine-space
 straightening and every coordinate-preserving polynomial suspension

@@ -1,0 +1,115 @@
+// Independent Singular certificate for the integral Jacobian-one Hasse fiber.
+//
+// This does not import the Python/SymPy construction.  It directly checks the
+// displayed integer map, its Jacobian, and mutually inverse quotient-ring maps
+// between the target fiber and Q[S]/(P).
+
+ring rJacobian=0,(x,y,z),dp;
+
+poly t=1+2*x*y;
+poly q=t^2*z-y^2*(1+3*t);
+
+poly f1=x*(1-3*x*y)+2*x^3*z-3*x^4*q^4+3*x^5*q^5;
+poly f2=y-6*x*q+6*t^2*x^2*q^4-5*t^2*x^3*q^5;
+poly f3=t*q;
+ideal F=f1,f2,f3;
+
+matrix J=jacob(F);
+poly detJ=det(J);
+if (detJ!=1)
+{
+  "FAIL: the displayed map does not have Jacobian determinant one";
+  detJ;
+  system("sh", "kill -USR1 $PPID");
+}
+
+ring rFiber=0,(x,y,z,S),dp;
+
+poly t=1+2*x*y;
+poly q=t^2*z-y^2*(1+3*t);
+poly f1=x*(1-3*x*y)+2*x^3*z-3*x^4*q^4+3*x^5*q^5;
+poly f2=y-6*x*q+6*t^2*x^2*q^4-5*t^2*x^3*q^5;
+poly f3=t*q;
+
+poly cub=S^3-2*S^2+8;
+poly quadratic=S^2-S+6;
+poly P=cub*quadratic;
+if (P!=S^5-3*S^4+8*S^3-4*S^2-8*S+48)
+{
+  "FAIL: the declared inverse polynomial does not expand correctly";
+  system("sh", "kill -USR1 $PPID");
+}
+
+// The fiber ideal and its marked root S=2*x*q.
+ideal fiber=f1-3,f2+1,f3-1;
+ideal fiberStd=std(fiber);
+poly markedRoot=2*x*q;
+if (reduce(subst(P,S,markedRoot),fiberStd)!=0)
+{
+  "FAIL: the marked source expression does not satisfy P on the fiber";
+  system("sh", "kill -USR1 $PPID");
+}
+
+// Explicit reconstruction in Q[S]/(P).  The fractions are hard-coded so
+// Singular independently checks them rather than importing them from SymPy.
+poly d=-5/8*S^4+3/2*S^3-3*S^2+S+1;
+poly tBar=-1/322*S^4+8/1127*S^3-11/2254*S^2+4/161*S+29/1127;
+poly xBar=-5/4508*S^4+45/4508*S^3+1/161*S^2+1/2254*S+12/161;
+poly yBar=5/8*S^3-3/2*S^2+3*S-1;
+poly zBar=
+  846553/4096*S^4-668995/1024*S^3+2174381/1024*S^2
+  -2208039/512*S+1581395/256;
+
+ideal pStd=std(ideal(P));
+if (reduce(tBar*d-1,pStd)!=0)
+{
+  "FAIL: the declared t reconstruction is not d inverse modulo P";
+  system("sh", "kill -USR1 $PPID");
+}
+
+poly tReconstructed=subst(subst(t,x,xBar),y,yBar);
+poly qReconstructed=
+  subst(subst(subst(q,x,xBar),y,yBar),z,zBar);
+if (reduce(tReconstructed-tBar,pStd)!=0)
+{
+  "FAIL: the reconstructed source does not recover t";
+  system("sh", "kill -USR1 $PPID");
+}
+if (reduce(qReconstructed-d,pStd)!=0)
+{
+  "FAIL: the reconstructed source does not recover q";
+  system("sh", "kill -USR1 $PPID");
+}
+
+poly f1Reconstructed=
+  subst(subst(subst(f1,x,xBar),y,yBar),z,zBar);
+poly f2Reconstructed=
+  subst(subst(subst(f2,x,xBar),y,yBar),z,zBar);
+poly f3Reconstructed=
+  subst(subst(subst(f3,x,xBar),y,yBar),z,zBar);
+if (reduce(f1Reconstructed-3,pStd)!=0 ||
+    reduce(f2Reconstructed+1,pStd)!=0 ||
+    reduce(f3Reconstructed-1,pStd)!=0)
+{
+  "FAIL: the reconstruction does not land on the declared target fiber";
+  system("sh", "kill -USR1 $PPID");
+}
+
+// The two quotient-ring maps compose to the identity.
+if (reduce(2*xBar*d-S,pStd)!=0)
+{
+  "FAIL: root -> source -> marked root is not the identity";
+  system("sh", "kill -USR1 $PPID");
+}
+if (reduce(subst(xBar,S,markedRoot)-x,fiberStd)!=0 ||
+    reduce(subst(yBar,S,markedRoot)-y,fiberStd)!=0 ||
+    reduce(subst(zBar,S,markedRoot)-z,fiberStd)!=0)
+{
+  "FAIL: source -> marked root -> source is not the identity";
+  system("sh", "kill -USR1 $PPID");
+}
+
+"PASS: Singular independently verifies det(JF)=1";
+"PASS: the fiber over (3,-1,1) is Q-isomorphic to Q[S]/(P)";
+"PASS: the two displayed quotient-ring maps compose to the identity";
+exit;
