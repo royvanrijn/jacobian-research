@@ -1,0 +1,285 @@
+{
+  "base_point": {
+    "A": -8,
+    "Pi": 5,
+    "R": 2,
+    "Z": 1984
+  },
+  "equation": "Z^2=31*M(A,(A^2+31*R^2)/4,Pi^3)",
+  "exact_coordinate_slice_quadratic_obstructions": {
+    "characteristic_zero_argument": "each weighted-homogeneous residual scheme is projective over Z; its empty good-prime fiber forces the generic fiber to be empty",
+    "conclusion": "a degree-at-most-two curve through the known point must genuinely vary A, R, and Pi",
+    "good_prime": 32003,
+    "scope": "exact on all three coordinate-fixed quadratic slices",
+    "slices": {
+      "fixed_A": {
+        "base_ansatz": [
+          "A(t)=-8",
+          "R(t)=2+r1*t+r2*t^2",
+          "Pi(t)=5+p1*t+p2*t^2"
+        ],
+        "coefficient_weights": {
+          "p1": 1,
+          "p2": 2,
+          "r1": 1,
+          "r2": 2
+        },
+        "conclusion": "no nonconstant degree-at-most-two base curve through (-8,2,5) with A(t)=-8 lifts to the double cover",
+        "residual_degrees": [
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ],
+        "residual_monomial_counts": [
+          70,
+          91,
+          112,
+          140,
+          168,
+          204,
+          240,
+          285
+        ],
+        "scope": "exact on the fixed_A coordinate slice",
+        "special_fiber": "empty",
+        "weighted_projective_charts": {
+          "p1": {
+            "groebner_basis": [
+              "1"
+            ],
+            "normalization": "p1=1"
+          },
+          "p2": {
+            "groebner_basis": [
+              "1"
+            ],
+            "normalization": "p2=1"
+          },
+          "r1": {
+            "groebner_basis": [
+              "1"
+            ],
+            "normalization": "r1=1"
+          },
+          "r2": {
+            "groebner_basis": [
+              "1"
+            ],
+            "normalization": "r2=1"
+          }
+        }
+      },
+      "fixed_Pi": {
+        "base_ansatz": [
+          "A(t)=-8+a1*t+a2*t^2",
+          "R(t)=2+r1*t+r2*t^2",
+          "Pi(t)=5"
+        ],
+        "coefficient_weights": {
+          "a1": 1,
+          "a2": 2,
+          "r1": 1,
+          "r2": 2
+        },
+        "conclusion": "no nonconstant degree-at-most-two base curve through (-8,2,5) with Pi(t)=5 lifts to the double cover",
+        "residual_degrees": [
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ],
+        "residual_monomial_counts": [
+          70,
+          91,
+          112,
+          140,
+          168,
+          204,
+          240,
+          285
+        ],
+        "scope": "exact on the fixed_Pi coordinate slice",
+        "special_fiber": "empty",
+        "weighted_projective_charts": {
+          "a1": {
+            "groebner_basis": [
+              "1"
+            ],
+            "normalization": "a1=1"
+          },
+          "a2": {
+            "groebner_basis": [
+              "1"
+            ],
+            "normalization": "a2=1"
+          },
+          "r1": {
+            "groebner_basis": [
+              "1"
+            ],
+            "normalization": "r1=1"
+          },
+          "r2": {
+            "groebner_basis": [
+              "1"
+            ],
+            "normalization": "r2=1"
+          }
+        }
+      },
+      "fixed_R": {
+        "base_ansatz": [
+          "A(t)=-8+a1*t+a2*t^2",
+          "R(t)=2",
+          "Pi(t)=5+p1*t+p2*t^2"
+        ],
+        "coefficient_weights": {
+          "a1": 1,
+          "a2": 2,
+          "p1": 1,
+          "p2": 2
+        },
+        "conclusion": "no nonconstant degree-at-most-two base curve through (-8,2,5) with R(t)=2 lifts to the double cover",
+        "residual_degrees": [
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ],
+        "residual_monomial_counts": [
+          70,
+          91,
+          112,
+          140,
+          168,
+          204,
+          240,
+          285
+        ],
+        "scope": "exact on the fixed_R coordinate slice",
+        "special_fiber": "empty",
+        "weighted_projective_charts": {
+          "a1": {
+            "groebner_basis": [
+              "1"
+            ],
+            "normalization": "a1=1"
+          },
+          "a2": {
+            "groebner_basis": [
+              "1"
+            ],
+            "normalization": "a2=1"
+          },
+          "p1": {
+            "groebner_basis": [
+              "1"
+            ],
+            "normalization": "p1=1"
+          },
+          "p2": {
+            "groebner_basis": [
+              "1"
+            ],
+            "normalization": "p2=1"
+          }
+        }
+      }
+    }
+  },
+  "exact_line_obstruction": {
+    "base_ansatz": [
+      "A(t)=-8+a*t",
+      "R(t)=2+r*t",
+      "Pi(t)=5+p*t"
+    ],
+    "conclusion": "no nonconstant base line through (-8,2,5) lifts to the fixed-sqrt(-31) common-resolvent double cover",
+    "projective_direction_charts": {
+      "a": {
+        "groebner_basis": [
+          "1"
+        ],
+        "normalization": "a=1"
+      },
+      "p": {
+        "groebner_basis": [
+          "1"
+        ],
+        "normalization": "p=1"
+      },
+      "r": {
+        "groebner_basis": [
+          "1"
+        ],
+        "normalization": "r=1"
+      }
+    },
+    "residual_degrees": [
+      5,
+      6,
+      7,
+      8
+    ],
+    "residual_monomial_counts": [
+      21,
+      28,
+      36,
+      45
+    ],
+    "scope": "exact only for base coordinates affine-linear in one parameter",
+    "square_root_degree": 4
+  },
+  "local_chart_facts": {
+    "prime_2": "for R nonzero, the quadratic splits over Q_2 because -31 is a square in Q_2",
+    "prime_31": "the known cubic has a simple root 15 modulo 31; this persists on a sufficiently small 31-adic parameter neighborhood",
+    "quadratic_discriminant_identity": "A^2-4V=-31*R^2",
+    "remaining_gap": "new primes ramifying in cubic specializations are not controlled by these two local observations"
+  },
+  "mathematical_status": {
+    "coordinate_fixed_quadratic_ansatz": "exactly excluded",
+    "infinitely_many_hasse_failures": "open",
+    "line_ansatz": "exactly excluded",
+    "quadratic_ansatz": "bounded experiment",
+    "rational_curve": "open"
+  },
+  "quadratic_search": {
+    "ansatz": [
+      "A(t)=-8+a1*t+a2*t^2",
+      "R(t)=2+r1*t+r2*t^2",
+      "Pi(t)=5+p1*t+p2*t^2"
+    ],
+    "coefficient_box": [
+      -2,
+      2
+    ],
+    "coefficient_order": [
+      "a1",
+      "a2",
+      "r1",
+      "r2",
+      "p1",
+      "p2"
+    ],
+    "conclusion": "no candidate in the stated coefficient box",
+    "degenerate_line_images_removed": 476,
+    "genuine_quadratic_tuples_tested": 15024,
+    "quadratic_tuples_tested": 15500,
+    "scope": "bounded integral-coefficient experiment only",
+    "square_pullback_candidates": []
+  },
+  "reproducing_command": ".venv/bin/python scripts/search_fixed_quintic_hasse_rational_curves.py",
+  "schema_version": 1
+}

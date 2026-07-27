@@ -72,9 +72,12 @@ determinant is
 Thus the loss of linear torus symmetry is uniform on the admissible quartic
 family, not merely generic.
 
-This is deliberately a linear statement.  It does not claim that \(F\) is
-not polynomially left--right equivalent to some other torus-equivariant
-map.
+This certificate is deliberately a linear statement.  By itself it does not
+claim that \(F\) is not polynomially left--right equivalent to some other
+torus-equivariant map.  That limitation is closed only by the separate
+[intrinsic normalization-boundary argument](NO_ALGEBRAIC_TORUS_EQUIVARIANCE.md),
+which computes a decorated \(\mu _5\) stabilizer and proves that its
+restriction kernel contains no algebraic torus.
 
 ## 2. Construction and collision
 

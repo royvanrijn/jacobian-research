@@ -15,8 +15,8 @@ ALL_PAPERS := $(VERIFIED_PAPERS) $(PARKED_PAPERS)
 
 .PHONY: check verify verify-logged verify-minimal verify-core verify-geometry \
 	verify-theorems verify-regressions verify-derived verify-family \
-	verify-external-consequences verify-restricted-minima verify-two-real-gmc verify-counterexample-scoreboard verify-plane-jc verify-plane-case2-residue-strata verify-plane-case2-j1-endpoint verify-plane-case2-maximal-gcd verify-plane-case2-gcd6 verify-plane-poisson-radical verify-plane-poisson-primary-charts verify-plane-poisson-separators verify-plane-poisson-primary-filtration verify-plane-poisson-filtered-modules verify-weighted-boundary \
-	verify-linear-torus-free \
+	verify-external-consequences verify-restricted-minima verify-two-real-gmc verify-counterexample-scoreboard verify-plane-jc verify-plane-case2-residue-strata verify-plane-case2-j1-endpoint verify-plane-case2-maximal-gcd verify-plane-case2-gcd6 verify-plane-poisson-radical verify-plane-poisson-primary-charts verify-plane-poisson-separators verify-plane-poisson-primary-filtration verify-plane-poisson-filtered-modules verify-weighted-boundary verify-quartic-degree-drop-quantization \
+	verify-linear-torus-free verify-algebraic-torus-free \
 	verify-master \
 	verify-quartic verify-normal-forms verify-formal verify-lean-foundational \
 	verify-foundations verify-foundations-formal \
@@ -99,6 +99,9 @@ verify-weighted-boundary:
 verify-linear-torus-free:
 	$(PYTHON) scripts/verify_no_linear_torus_counterexample.py
 	$(SYSTEM_PYTHON) scripts/audit_no_linear_torus_counterexample_independent.py
+
+verify-algebraic-torus-free:
+	$(PYTHON) scripts/verify_quartic_algebraic_torus_obstruction.py
 
 verify-ritt-boundary:
 	bash scripts/verify_degree_six_ritt_boundary_atlas.sh
@@ -223,6 +226,11 @@ verify-theorems:
 	$(PYTHON) scripts/verify_weighted_seed_theorem.py
 	$(PYTHON) scripts/verify_all_degree_rational_fibers.py
 	$(PYTHON) scripts/verify_common_arithmetic_fibers.py
+	$(PYTHON) scripts/verify_universal_quartic_fiber_multiplicity.py
+	$(PYTHON) scripts/verify_universal_quintic_fiber_multiplicity.py
+	$(PYTHON) scripts/verify_universal_higher_degree_fiber_multiplicity.py
+	$(PYTHON) scripts/verify_universal_multiplicity_witness_cards.py
+	$(PYTHON) scripts/verify_low_rank_multiplicity_boundaries.py
 	$(PYTHON) scripts/verify_real_fiber_spectrum.py
 	$(PYTHON) scripts/verify_hasse_keller_fiber.py
 	$(PYTHON) scripts/verify_weighted_marked_root_model.py
@@ -270,6 +278,7 @@ verify-master:
 	$(PYTHON) scripts/verify_master_universal.py
 	$(PYTHON) scripts/verify_root_engineered_quadratic_gauge.py
 	$(MAKE) verify-linear-torus-free
+	$(MAKE) verify-algebraic-torus-free
 	$(PYTHON) scripts/verify_quadratic_cancellation_intersection.py
 	$(PYTHON) scripts/verify_master_instances.py
 	$(PYTHON) scripts/verify_resolvent_ramification_signature.py
@@ -419,6 +428,9 @@ verify-regressions: verify-external-consequences
 # Backward-compatible names retained for existing commands and links.
 verify-family: verify-theorems verify-regressions
 verify-quartic: verify-regressions
+
+verify-quartic-degree-drop-quantization:
+	PYTHONPATH=scripts $(PYTHON) scripts/verify_quartic_degree_drop_quantization.py
 
 verify-normal-forms:
 	$(PYTHON) scripts/cubic_homogeneous_reduction.py

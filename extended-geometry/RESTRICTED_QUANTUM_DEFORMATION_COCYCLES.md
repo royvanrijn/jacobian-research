@@ -464,6 +464,30 @@ fraction-free reconstruction of the quotient identities for these two
 containments, followed by direct polynomial-identity checks; rerunning
 coefficient-heavy rational normal forms is not the preferred route.
 
+A first bounded input-containment reconstruction now makes that warning
+quantitative.  Ordered modular division of all 16 primitive minors by
+\(G_{\mathbf Q}\) has 336 nonzero quotient entries and 11,701 quotient
+monomials.  Among 615 computed prime records, 613 have exactly the same
+support and zero remainder and residual; the two support-unlucky primes are
+70067 and 70099.  The dominant support has SHA-256
+`dde5e0b72fad4ba9532e37e49361d48c6d001635d836bec1a5314ec674e2c548`.
+The compact checkpoint is
+[`degree_five_qper_input_quotients_modular.json`](../artifacts/generated-results/degree_five_qper_input_quotients_modular.json).
+
+This is strong modular evidence for
+\(I_{15}(M_\Sigma)\subseteq G_{\mathbf Q}\), but it is not an exact
+containment certificate.  A CRT pool of 612 good primes has 18,116 bits,
+with the distinct good prime 1000012337 held out.  Balanced rational
+reconstruction produces 7,087 candidates, but only 30 of 11,701
+coefficients agree with the held-out image.  The validated coefficients
+already reach 7,660 numerator bits and 7,487 denominator bits.  Thus blindly
+extending the canonical ordered-division quotients is not a reasonably
+bounded route.  The next input-containment experiment should instead choose
+a noncanonical lift modulo the syzygy module—equivalently, a fixed
+fraction-free Macaulay/RREF pivot convention—designed to minimize coefficient
+height.  Exact integer polynomial identities remain the terminal
+certificate.
+
 ## 8. Reproduction and next step
 
 The all-pole strong-cocycle calculation is:

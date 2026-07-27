@@ -146,6 +146,13 @@ squarefree polynomial $P$ of degree at least three, it:
 \item identifies the actual source function field over $K(\Pi,B)(C)$ with
       the inverse-root quotient and proves geometric degree $\deg P$.
 \end{enumerate}
+It further proves monogenicity for every abstract finite \'etale algebra over
+a characteristic-zero field, noncomputably selects a squarefree polynomial
+presentation of degree equal to its rank, and composes that presentation with
+the preceding construction.  Thus for rank at least three it identifies the
+literal Keller fiber naturally with
+\(\operatorname{Hom}_{K\text{-alg}}(A,-)\) for the original abstract algebra
+\(A\).
 It also checks that the seed $G(S)=S+S^3$ gives the announced map
 \eqref{eq:announced-counterexample} coordinate for coordinate.  It proves
 that the three map coordinates are algebraically independent and constructs
@@ -169,7 +176,11 @@ The combined final proposition is exposed as
 \begin{center}
 \small\texttt{automaticRealization\_pageOne},
 \end{center}
-the full independent-parameter inverse certificates are
+and its abstract finite-\'etale counterpart is
+\begin{center}
+\small\texttt{abstractFiniteEtale\_pageOne}.
+\end{center}
+The full independent-parameter inverse certificates are
 \begin{center}
 \small\texttt{generalGaugeFullyGenericInversePolynomial\_certificate}
 \quad\text{and}\quad
@@ -194,9 +205,9 @@ complete map and target attached to a supplied translation parameter commute
 coefficientwise with extension of the ground field, and proves the
 tensor-product base change of the representing polynomial quotient.  Exact
 nonproperness and boundary-sheet accounting, the
-symmetric-monodromy and Hilbertian-specialization arguments, monogenicity of
-arbitrary finite \'etale products, and the Campbell--Razar--Wright degree-two
-theorem remain ordinary mathematical proofs.
+symmetric-monodromy and Hilbertian-specialization arguments, and the
+Campbell--Razar--Wright degree-two theorem remain ordinary mathematical
+proofs.
 For the quintic example, Lean now verifies the exact literal fiber, its rank,
 finite \'etaleness, the absence of rational points, and the existence of
 points over the reals and every nonarchimedean completion.  Chebotarev,

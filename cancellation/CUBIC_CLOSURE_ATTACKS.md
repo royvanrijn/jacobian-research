@@ -3,6 +3,8 @@
 This note is the active closure protocol for the geometric-degree-three
 minimal-boundary conjecture.  It replaces three qualitative gaps by three
 intrinsic certificates built from the same cubic discriminant package.
+For the global ungraded lower bound `OP-UG3`, the same certificates apply,
+but Certificate P remains open outside the boundary-minimal stratum.
 
 Work over an algebraically closed field of characteristic zero.  Let
 
@@ -86,7 +88,65 @@ The preferred E attack is therefore support saturation plus exclusion of
 embedded closed points in `Q`; direct specialization of `tau` is no longer
 an independent obligation.
 
-### Certificate P -- no phantom boundary
+### E0. SNC/cusp localization -- closed
+
+Proposition 1.4a of the frontend removes the entire simple-normal-crossing
+locus of the critical discriminant from the flatness-defect scheme:
+
+\[
+ Z_{\mathrm{flat}}\subseteq\operatorname{NonSNC}V(\delta_F).
+\tag{1.10}
+\]
+
+Indeed, after strict henselization, the tame inertia generators around the
+SNC components commute.  Degree three makes every nontrivial one a
+transposition, hence all are the same transposition.  The normalization is
+the disjoint union of the free quadratic Kummer algebra
+`R[s]/(s^2-t_1...t_r)` and the free trivial sheet `R`.  The two saturation
+tests in (1.9) only need to be run at closed non-SNC points of the
+discriminant.  This closes E whenever the branch divisor is SNC and leaves
+the non-SNC local models.
+
+Proposition 1.4b closes the ordinary-cusp case as well.  The two cusp
+meridians satisfy the \(B_3\) braid relation and act by transpositions on
+three sheets.  Equal transpositions give the free
+`R[Z]/(Z^2-delta) plus R` Kummer model; distinct transpositions give the
+free monic root cover `R[T]/(T^3+uT-v)`.  Hence
+
+\[
+ Z_{\mathrm{flat}}\subseteq
+ V(\delta_F)\setminus
+ \bigl(V(\delta_F)^{\mathrm{SNC}}\cup
+       V(\delta_F)^{\mathrm{oc}}\bigr).
+\tag{1.11}
+\]
+
+Certificate E is therefore closed for a discriminant with only SNC and
+ordinary-cusp singularities.  The remaining local target is a
+worse-than-ordinary-cusp point.
+
+Proposition 1.8d quantifies that target for every reduced defect.  If \(h\)
+is its ternary-cubic multiplication symbol, the degree-six initial branch
+equation is
+
+\[
+ \mathcal H_h([r])=\operatorname{Disc}(h|_{r^\perp}).
+\tag{1.12}
+\]
+
+It is nonzero exactly for squarefree \(h\), giving branch multiplicity six;
+for non-squarefree \(h\) the multiplicity is at least seven.  Hence the
+surviving E attack has two explicit rows:
+
+1. exclude a reduced Koszul defect at a branch point of multiplicity at
+   least six;
+2. exclude a nonreduced higher determinantal defect.
+
+The present boundary invariant does not record closed-point branch
+multiplicity, so this numerical jump is a new obstruction target rather
+than a completed contradiction.
+
+### Certificate P -- no phantom boundary (closed for boundary-minimal cubics)
 
 Let `delta_F` be the reduced branch equation and `j_F` the reduced
 nonproperness equation.  The unique cubic critical prime gives
@@ -101,7 +161,24 @@ boundary divisor.  Equivalently, the branch and nonproperness hypersurfaces
 agree in codimension one.  It is enough to prove that the nonproperness
 hypersurface is irreducible.
 
-This is Proposition 2.1a of the cubic normalization frontend.
+Proposition 2.5 of
+[`MINIMAL_BOUNDARY_CLASSIFICATION.md`](MINIMAL_BOUNDARY_CLASSIFICATION.md)
+now closes this certificate.  The foundational cubic is a degree-three
+competitor with exact invariant `mu=(1,1,1)`, while nonproperness and the
+nonempty branch divisor give the componentwise lower bounds after each
+lexicographic equality.  Boundary minimality therefore forces the same
+invariant.  In particular `#Irr(B_F)=1`; the sole boundary prime is critical
+of different order one, and its branch image is the unique component of
+`B_F`.  Thus `u_F` is a unit by Proposition 2.1a of the cubic normalization
+frontend.
+
+This closure has exactly the stated scope.  For an arbitrary cubic,
+Proposition 1.4 already proves that an extra boundary prime cannot lie over
+the critical discriminant: the ramified `(2,1)` boundary sheet and affine
+`(1,1)` sheet exhaust the degree.  The only remaining possibility is a
+separate unramified target divisor, precisely a nonconstant factor of
+`u_F`.  Boundary minimality rules it out; no reduction from an arbitrary
+ungraded cubic to the boundary-minimal stratum is currently proved.
 
 ### Certificate G -- coefficient-gauge rigidity
 
@@ -324,54 +401,53 @@ This route is stronger than necessary and is only a fallback: it tries to
 kill the whole class-group obstruction, whereas E1--E2 only kill the two
 closed-point quotients actually needed.
 
-## 3. Attack P: kill the phantom factor
+The smooth-symbol exceptional divisor does not make this fallback
+automatic.  If \(h\) is smooth, Proposition 1.8b gives a
+\(\mathbb P^1\)-bundle over an elliptic cubic and hence
+\(\operatorname{Pic}^0(Z_h)\ne0\).  The one-boundary localization sequence
+does make the algebraic groups
+\(\operatorname{Cl}(\bar X)\) and
+\(\operatorname{Cl}(\mathcal O_{\bar X,q})\) cyclic quotients of the
+boundary class.  But \(\operatorname{Pic}^0(Z_h)\) initially belongs to the
+formal Picard group of the completed blowup.  Completion need not preserve
+surjectivity on divisor class groups, and formal divisor classes need not
+algebraize on the punctured local scheme.  Therefore
 
-Certificate P should be attacked on the target, not by classifying all
-boundary compactifications.
+\[
+ \operatorname{Pic}^0(Z_h)\ne0
+ \quad\not\Longrightarrow\quad
+ \operatorname{Cl}(\mathcal O_{\bar X,q})\ \text{is noncyclic}
+\tag{2.6}
+\]
 
-### P1. Irreducibility attack
+without a separate algebraization theorem.  Any revival of this route must
+prove that the elliptic formal classes descend to the actual punctured
+neighborhood; cyclicity alone is not a contradiction.  This distinction is
+genuine: Brevik--Nollet,
+[*Local Picard Groups*](https://arxiv.org/abs/1110.1867), Theorem 1.2,
+construct algebraic UFD local rings whose completions are prescribed normal
+hypersurface singularities with larger formal class groups.
 
-Prove that divisor minimality makes the Jelonek hypersurface `S_F`
-irreducible.  Since it contains the unique branch divisor, irreducibility
-forces
+## 3. Certificate P: closed by divisor minimality
+
+No separate elimination or compactification argument is needed for a
+boundary-minimal cubic.
+
+### The irreducibility argument
+
+The first entry of the boundary-minimality invariant is the number of
+irreducible target boundary components.  The foundational cubic realizes
+the value one, and nonproperness rules out zero.  Hence `S_F` is irreducible.
+Since it contains the branch divisor, Proposition 2.1a forces
 
 \[
  S_F=V(\delta_F),\qquad u_F\in k^*.
 \tag{3.1}
 \]
 
-### P2. Elimination attack
-
-Compute:
-
-1. `j_F` from the graph-at-infinity elimination ideal;
-2. `delta_F` from the different or `Fitt_0(Q)`;
-3. the quotient `u_F=j_F/delta_F`.
-
-Boundary monotonicity should imply that every factor of `j_F` occurs in the
-different.  This is a divisibility theorem between two explicitly
-computable principal ideals, rather than a geometric existence argument.
-
-### P3. Degree-three sheet attack
-
-Over the critical divisor the complete DVR ledger is
-
-\[
- (e,f)=(2,1)+(1,1).
-\tag{3.2}
-\]
-
-An additional factor of `u_F` therefore has three unramified local sheets
-and omits at least one of them from the Keller open.  Restricting to a
-general curve transverse to that factor produces a punctured unramified
-three-sheet cover.  The proposed contradiction is to combine:
-
-- trivial units and Picard group of the affine source;
-- saturation of the omitted sheet;
-- monodromy already generated by the transposition around the critical
-  divisor.
-
-This reduces P3 to a one-dimensional monodromy/unit-lattice lemma.
+For cubic maps not assumed boundary-minimal, graph-at-infinity elimination
+or the former degree-three sheet argument remain possible tests.  They are
+outside the minimality closure path.
 
 ## 4. Attack G: finish the coefficient orbit
 
@@ -503,11 +579,8 @@ The shortest credible closure path is:
 1. prove E1/E2, obtaining flatness and the preferred primitive root
    direction;
 2. use that direction in G4 to reduce coefficient gauge to the proved Borel
-   theorem;
-3. prove P1 or P2 to remove the sole remaining target divisor.
+   theorem.
 
-If G4 fails, run G2 or G3 as the exact fallback.  P3 is the fallback if
-direct irreducibility or elimination divisibility does not follow from
-divisor minimality.
+If G4 fails, run G2 or G3 as the exact fallback.
 
 No broader classification theorem is needed on this path.

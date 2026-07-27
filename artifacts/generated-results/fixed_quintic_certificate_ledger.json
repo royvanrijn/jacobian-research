@@ -1,0 +1,374 @@
+{
+  "map": {
+    "inverse_polynomial": "Pi^5*S^5-5*Pi*S^3-2*B*S^2+4*S-2*C",
+    "jacobian": "-2",
+    "normalized_coefficient_jacobian": "-48*Pi^8",
+    "normalized_coefficient_map": [
+      "-2*Pi*B",
+      "4*Pi^3",
+      "-2*Pi^5*C"
+    ],
+    "seed": "S^5-5*S^3+4*S"
+  },
+  "modulo_7_unramified_partitions": [
+    {
+      "partition": [
+        5
+      ],
+      "target": [
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "partition": [
+        4,
+        1
+      ],
+      "target": [
+        1,
+        0,
+        3
+      ]
+    },
+    {
+      "partition": [
+        3,
+        2
+      ],
+      "target": [
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "partition": [
+        3,
+        1,
+        1
+      ],
+      "target": [
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "partition": [
+        2,
+        2,
+        1
+      ],
+      "target": [
+        3,
+        2,
+        0
+      ]
+    },
+    {
+      "partition": [
+        2,
+        1,
+        1,
+        1
+      ],
+      "target": [
+        1,
+        2,
+        6
+      ]
+    },
+    {
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "target": [
+        1,
+        0,
+        0
+      ]
+    }
+  ],
+  "reproducing_command": ".venv/bin/python scripts/verify_fixed_quintic_certificate_ledger.py",
+  "rows": [
+    {
+      "classification": "Q^5",
+      "local_certificate": [],
+      "normalized_display": "T(T-1)(T+1)(T-2)(T+2)",
+      "normalized_polynomial": "T**5 - 5*T**3 + 4*T",
+      "projective_height": 1,
+      "projective_target": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "purpose": "split",
+      "real_roots": 5,
+      "target": [
+        "1",
+        "0",
+        "0"
+      ],
+      "target_display": "(1,0,0)",
+      "witnesses": [
+        "T(T-1)(T+1)(T-2)(T+2)"
+      ]
+    },
+    {
+      "classification": "S_5",
+      "local_certificate": [],
+      "normalized_display": "T^5-5T^3+2T^2+4T+2",
+      "normalized_polynomial": "T**5 - 5*T**3 + 2*T**2 + 4*T + 2",
+      "projective_height": 1,
+      "projective_target": [
+        1,
+        1,
+        -1,
+        -1
+      ],
+      "purpose": "signature",
+      "real_roots": 1,
+      "target": [
+        "1",
+        "-1",
+        "-1"
+      ],
+      "target_display": "(1,-1,-1)",
+      "witnesses": [
+        "11:(5)",
+        "7:(4,1)",
+        "3:(3,2)"
+      ]
+    },
+    {
+      "classification": "S_5",
+      "local_certificate": [],
+      "normalized_display": "T^5-5T^3-2T^2-4T-2",
+      "normalized_polynomial": "T**5 - 5*T**3 - 2*T**2 - 4*T - 2",
+      "projective_height": 1,
+      "projective_target": [
+        1,
+        -1,
+        -1,
+        -1
+      ],
+      "purpose": "signature",
+      "real_roots": 3,
+      "target": [
+        "-1",
+        "-1",
+        "-1"
+      ],
+      "target_display": "(-1,-1,-1)",
+      "witnesses": [
+        "5:(5)",
+        "43:(2,1,1,1)",
+        "nonsquare discriminant"
+      ]
+    },
+    {
+      "classification": "S_5",
+      "local_certificate": [],
+      "normalized_display": "T^5-5T^3+4T+1",
+      "normalized_polynomial": "T**5 - 5*T**3 + 4*T + 1",
+      "projective_height": 2,
+      "projective_target": [
+        2,
+        2,
+        0,
+        -1
+      ],
+      "purpose": "signature",
+      "real_roots": 5,
+      "target": [
+        "1",
+        "0",
+        "-1/2"
+      ],
+      "target_display": "(1,0,-1/2)",
+      "witnesses": [
+        "2:(5)",
+        "7:(4,1)",
+        "19:(3,2)"
+      ]
+    },
+    {
+      "classification": "A_5",
+      "local_certificate": [],
+      "normalized_display": "T^5-5T^3+4T+4/5",
+      "normalized_polynomial": "T**5 - 5*T**3 + 4*T + 4/5",
+      "projective_height": 5,
+      "projective_target": [
+        5,
+        5,
+        0,
+        -2
+      ],
+      "purpose": "alternating",
+      "real_roots": 5,
+      "target": [
+        "1",
+        "0",
+        "-2/5"
+      ],
+      "target_display": "(1,0,-2/5)",
+      "witnesses": [
+        "3:(5)",
+        "23:(3,1,1)",
+        "discriminant=232^2"
+      ]
+    },
+    {
+      "classification": "C_5",
+      "local_certificate": [],
+      "normalized_display": "T^5-5T^3+4T+7/5",
+      "normalized_polynomial": "T**5 - 5*T**3 + 4*T + 7/5",
+      "projective_height": 10,
+      "projective_target": [
+        10,
+        10,
+        0,
+        -7
+      ],
+      "purpose": "cyclic",
+      "real_roots": 5,
+      "target": [
+        "1",
+        "0",
+        "-7/10"
+      ],
+      "target_display": "(1,0,-7/10)",
+      "witnesses": [
+        "2:(5)",
+        "explicit order-five automorphism"
+      ]
+    },
+    {
+      "classification": "D_5",
+      "local_certificate": [],
+      "normalized_display": "T^5-5T^3+(42/25)T^2+(32/125)T-128/3125",
+      "normalized_polynomial": "T**5 - 5*T**3 + 42*T**2/25 + 32*T/125 - 128/3125",
+      "projective_height": 21,
+      "projective_target": [
+        10,
+        4,
+        -21,
+        20
+      ],
+      "purpose": "dihedral",
+      "real_roots": 5,
+      "target": [
+        "2/5",
+        "-21/10",
+        "2"
+      ],
+      "target_display": "(2/5,-21/10,2)",
+      "witnesses": [
+        "square discriminant",
+        "pair-sum resolvent split 5+5 (both 3:(5))",
+        "11:(2,2,1)"
+      ]
+    },
+    {
+      "classification": "F_20",
+      "local_certificate": [],
+      "normalized_display": "T^5-5T^3-(3/2)T^2+(1/2)T-1/40",
+      "normalized_polynomial": "T**5 - 5*T**3 - 3*T**2/2 + T/2 - 1/40",
+      "projective_height": 15,
+      "projective_target": [
+        10,
+        5,
+        15,
+        4
+      ],
+      "purpose": "Frobenius",
+      "real_roots": 5,
+      "target": [
+        "1/2",
+        "3/2",
+        "2/5"
+      ],
+      "target_display": "(1/2,3/2,2/5)",
+      "witnesses": [
+        "29:(5)",
+        "Dummit resolvent root -13/2",
+        "nonsquare discriminant"
+      ]
+    },
+    {
+      "classification": "K_2 x K_3",
+      "local_certificate": [],
+      "normalized_display": "(T^2+T+1)(T^3-T^2-5T+9)",
+      "normalized_polynomial": "T**5 - 5*T**3 + 3*T**2 + 4*T + 9",
+      "projective_height": 9,
+      "projective_target": [
+        2,
+        2,
+        -3,
+        -9
+      ],
+      "purpose": "product",
+      "real_roots": 1,
+      "target": [
+        "1",
+        "-3/2",
+        "-9/2"
+      ],
+      "target_display": "(1,-3/2,-9/2)",
+      "witnesses": [
+        "(T^2+T+1)(T^3-T^2-5T+9)",
+        "cubic irreducible modulo 5"
+      ]
+    },
+    {
+      "classification": "irreducible 2+3",
+      "local_certificate": [
+        "2: quadratic splits",
+        "31: cubic simple root 15",
+        "all other finite primes: unramified common-resolvent argument"
+      ],
+      "normalized_display": "(T^2-8T+47)(T^3+8T^2+12T+8)",
+      "normalized_polynomial": "T**5 - 5*T**3 + 288*T**2 + 500*T + 376",
+      "projective_height": 90000,
+      "projective_target": [
+        3125,
+        15625,
+        -90000,
+        -188
+      ],
+      "purpose": "Hasse failure",
+      "real_roots": 1,
+      "target": [
+        "5",
+        "-144/5",
+        "-188/3125"
+      ],
+      "target_display": "(5,-144/5,-188/3125)",
+      "witnesses": [
+        "common quadratic resolvent Q(sqrt(-31))",
+        "cubic irreducible modulo 5"
+      ]
+    }
+  ],
+  "schema_version": 1,
+  "source_checkers": [
+    "scripts/verify_fixed_quintic_moduli_dominance.py",
+    "scripts/verify_fixed_quintic_arithmetic_zoo.py",
+    "scripts/verify_universal_quintic_calculator.py",
+    "scripts/verify_fixed_quintic_hasse_minus_thirty_one.py"
+  ],
+  "status": {
+    "finite_examples": "exact",
+    "fixed_map_hilbert_local_engineering": "externally referenced theorem",
+    "height_minimality": "bounded exhaustive PARI computation",
+    "infinitely_many_hasse_failures_in_this_pencil": "open",
+    "universal_transitive_quintic_height_bound": 21
+  }
+}

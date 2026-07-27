@@ -211,6 +211,138 @@ divisor distinct from `D`.  The extra-simple-boundary obstruction in degree
 three is therefore exactly the existence of a second, purely unramified
 nonproperness divisor; it cannot hide over the critical discriminant.
 
+### Proposition 1.4a -- a point defect lies over the non-SNC branch locus
+
+Let \(D_{\mathrm{br}}\) be the reduced divisorial branch locus of the
+canonical cubic normalization.  Then
+
+\[
+ \boxed{Z_{\mathrm{flat}}\subseteq
+ \operatorname{NonSNC}(D_{\mathrm{br}})
+ \subseteq\operatorname{Sing}(D_{\mathrm{br}}).}
+\tag{1.5a}
+\]
+
+Equivalently, the normalization is finite flat over every smooth point of
+the branch divisor and over every simple-normal-crossing point.  In
+particular, an SNC branch divisor closes Certificate E outright.
+
+#### Proof
+
+Let \(p\) be an SNC point and pass to the strict henselization \(R\) of the
+regular local ring \(\mathcal O_{Y,p}\).  There are regular parameters
+\(t_1,\ldots,t_r\), with \(1\le r\le3\), such that the branch equation is
+\(t_1\cdots t_r=0\).  Away from that equation, purity of the branch locus
+makes the normalization finite étale.  Since the characteristic is zero,
+the cover is tame along every \(t_i=0\).
+
+The tame fundamental group of
+\(\operatorname{Spec}R[1/(t_1\cdots t_r)]\) is the product of \(r\)
+procyclic tame inertia groups.  Proposition 1.4 says that every nontrivial
+inertia generator acts as a transposition on the three sheets.  These
+generators commute, while two distinct transpositions in \(S_3\) do not.
+They therefore act by the same transposition.  The cover of the complement
+is the disjoint union of one quadratic orbit and one trivial orbit.  The
+tame local structure theorem, equivalently Abhyankar's lemma, identifies
+their normalizations over \(R\) with
+
+\[
+ R[s]/(s^2-t_1\cdots t_r)\qquad\text{and}\qquad R
+\]
+
+after absorbing a unit into one parameter.  Both are finite free over \(R\).
+Flatness descends through the faithfully flat strict-henselization map, so
+the original normalization is flat at \(p\).  QED
+
+This is a genuinely codimension-three restriction, not a divisor-ledger
+proof of global flatness.  For a singular discriminant it only says that
+the two saturation quotients of Propositions 1.15--1.17 can be supported at
+closed points of its non-SNC locus.  Those remaining points still require
+the Keller open or an equivalent sheet-intersection argument.
+
+### Proposition 1.4b -- an ordinary cusp also removes the point defect
+
+Let \(p\in D_{\mathrm{br}}\) be an ordinary cusp point: after strict
+henselization and completion, the pair \((Y,D_{\mathrm{br}})\) is
+
+\[
+ R=k[[u,v,w]],\qquad
+ D_{\mathrm{br}}=(4u^3+27v^2=0),
+\tag{1.5b}
+\]
+
+with no other branch component through \(p\).  Then the canonical cubic
+normalization is finite flat at \(p\).
+
+Consequently
+
+\[
+ \boxed{
+ Z_{\mathrm{flat}}\subseteq
+ D_{\mathrm{br}}\setminus
+ \bigl(D_{\mathrm{br}}^{\mathrm{SNC}}
+       \cup D_{\mathrm{br}}^{\mathrm{oc}}\bigr),
+ }
+\tag{1.5c}
+\]
+
+where \(D_{\mathrm{br}}^{\mathrm{oc}}\) is the ordinary-cusp locus.  Thus a
+branch divisor having only SNC and ordinary-cusp singularities closes
+Certificate E.
+
+#### Proof
+
+The local complement of the ordinary cusp has profinite fundamental group
+the profinite completion of
+
+\[
+ B_3=\langle \sigma_1,\sigma_2\mid
+ \sigma_1\sigma_2\sigma_1=
+ \sigma_2\sigma_1\sigma_2\rangle,
+\tag{1.5d}
+\]
+
+and both generators are meridians.  The degree-three valuation budget of
+Proposition 1.4 makes the image of each meridian a transposition in \(S_3\).
+There are only two cases up to relabeling.
+
+If the two transpositions agree, the permutation representation has orbits
+\(2+1\).  The corresponding normalization is
+
+\[
+ R[Z]/(Z^2-4u^3-27v^2)\ \oplus\ R.
+\tag{1.5e}
+\]
+
+The quadratic summand is normal: after a linear change over the
+algebraically closed coefficient field it has the \(A_2\) form
+\(XY=4u^3\).  It is free of rank two over \(R\).
+
+If the transpositions are distinct, they generate \(S_3\) and act
+transitively.  The corresponding three-sheet normalization is the root
+cover
+
+\[
+ R[T]/(T^3+uT-v).
+\tag{1.5f}
+\]
+
+It is free of rank three, and it is regular because eliminating \(v\)
+identifies its completed source ring with \(k[[u,T,w]]\).
+
+These are all homomorphisms (1.5d) to \(S_3\) which send both meridians to
+transpositions.  Finite étale covers of the complement are classified by
+the resulting finite permutation sets, and a normal finite extension over
+\(R\) is the unique integral closure extending its complement cover.
+Hence the completed strict-henselian normalization is one of (1.5e) or
+(1.5f), and is finite free.  Completion and strict henselization are
+faithfully flat, so flatness descends to \(\mathcal O_{Y,p}\).  QED
+
+The ordinary-cusp hypothesis is essential.  At a more complicated
+non-SNC point, the local complement can admit additional three-sheet
+permutation representations, and neither the divisor ledger nor the
+codimension-one different determines their integral closures.
+
 ### Proposition 1.5 -- point-flatness is cubic fiber-minimality
 
 For every `p in Y`, let
@@ -785,6 +917,100 @@ a lift with a single global Keller open and its marked boundary.  A
 bounded-degree computational ansatz must also verify that it contains
 enough of the perturbation space used above; genericity in the full module
 does not imply genericity in an arbitrarily small ansatz.
+
+### Proposition 1.8d -- a reduced defect forces branch multiplicity six
+
+Let \(p\) be a reduced point defect and let \(h\), possibly zero, be the
+degree-three ternary-cubic symbol of Proposition 1.8a.  On the exceptional plane
+\(E=\mathbb P(T_pY)\), define
+
+\[
+ \mathcal H_h([r])
+ =
+ \operatorname{Disc}\!\left(h|_{r^\perp}\right).
+\tag{1.16n}
+\]
+
+This is a well-defined section of \(\mathcal O_E(6)\).  It is the
+degree-six initial form of the branch discriminant at \(p\).  Consequently:
+
+\[
+ \boxed{
+ \begin{array}{ll}
+ h\ \text{squarefree}
+   &\Longrightarrow\
+     \operatorname{mult}_p(D_{\mathrm{br}})=6,\\[1mm]
+ h\ \text{non-squarefree or zero}
+   &\Longrightarrow\
+     \operatorname{mult}_p(D_{\mathrm{br}})\ge7.
+ \end{array}}
+\tag{1.16o}
+\]
+
+In the squarefree case the projectivized tangent cone is the discriminant
+of line sections of \(C_h=V(h)\).  For a smooth cubic it is the dual sextic.
+For a singular reduced cubic it is the dual curve together with the
+pencils through its singular points, counted with their discriminant
+multiplicities.
+
+#### Proof
+
+Proposition 1.8b identifies the exceptional cubic over a direction
+\([r]\) with
+
+\[
+ C_h\cap r^\perp.
+\]
+
+The transformed degree-three cover is ramified at \([r]\) exactly when this
+length-three line section is nonreduced.  Its binary-cubic discriminant is
+therefore (1.16n).
+
+Choose a chart \(r_3\ne0\) and write the line as
+\[
+ q_3=-\frac{r_1}{r_3}q_1-\frac{r_2}{r_3}q_2.
+\]
+The discriminant of the resulting binary cubic, multiplied by \(r_3^6\),
+is homogeneous of degree six in \(r_1,r_2,r_3\).  The transition under a
+different basis of \(r^\perp\) is the sixth power of the determinant, so
+these chart expressions glue to a section of \(\mathcal O_E(6)\).
+
+The section is nonzero exactly when a general line meets \(C_h\) in three
+distinct points, equivalently when \(h\) is squarefree.  Since no
+multiplication symbol exists in orders zero, one, or two, higher-order
+terms of the generalized cubic tensor cannot contribute below this
+degree-six discriminant.  Proposition 1.4 gives simple generic
+ramification, so the algebra discriminant and the reduced branch equation
+have the same codimension-one divisor.  Thus a nonzero
+\(\mathcal H_h\) is the initial branch equation and gives multiplicity six.
+If it vanishes identically, the first possible branch term has strictly
+larger integral order.  This proves (1.16o).  QED
+
+For the standard squarefree degenerations, the degree-six tangent cone
+factors as follows after choosing dual coordinates \(A,B,C\):
+
+| \(C_h\) | \(\mathcal H_h\), up to a nonzero scalar |
+|---|---|
+| smooth cubic | irreducible dual sextic |
+| nodal cubic | \(C^2\) times the dual quartic |
+| cuspidal cubic | \(C^3\) times the dual cubic |
+| line plus transverse conic | \(A^2B^2(4AB-C^2)\) |
+| line tangent to conic | \(B^4(A^2-4BC)\) |
+| triangle | \(A^2B^2C^2\) |
+| three concurrent lines | \(C^6\) |
+
+Here the factor \(C=0\) is the pencil of lines through the displayed
+singular point.  A double or triple component makes
+\(\mathcal H_h=0\), in agreement with the second row of (1.16o).  The same
+row includes a zero degree-three symbol, when the multiplication tensor
+begins in still higher order.
+
+Proposition 1.4b now has a numerical converse for reduced defects: not only
+must their branch point be worse than an ordinary cusp, whose multiplicity
+is two, but its branch multiplicity is at least six.  This still does not
+exclude the defect from a boundary-minimal Keller map, because the present
+boundary invariant records divisorial components and different orders, not
+closed-point branch multiplicity.
 
 Only after this constrained-lifting gate should a candidate be tested for:
 
@@ -1571,6 +1797,20 @@ obtained from the discriminant/different or the Fitting support of
 graph at infinity.  Thus the second-divisor problem is no longer a search
 over compactifications: it is the single unit test `u_F in k^*`.
 
+### Corollary 2.1b -- the phantom factor is absent under boundary minimality
+
+If \(F\) is boundary-minimal among nonproper geometric-degree-three Keller
+maps in the sense of Definition 2.3 of
+[`MINIMAL_BOUNDARY_CLASSIFICATION.md`](MINIMAL_BOUNDARY_CLASSIFICATION.md),
+then \(S_F\) is irreducible and \(u_F\in k^\times\).
+
+Indeed, the foundational cubic is a degree-three competitor whose
+nonproperness equation is the irreducible branch equation verified above.
+The first lexicographic entry of the boundary-minimality invariant is
+therefore at most one, while nonproperness makes it at least one.  Hence
+\(S_F\) has one irreducible divisorial component.  Since \(D_F\) is a
+nonempty divisor contained in \(S_F\), Proposition 2.1a gives the claim.
+
 ### Proposition 2.2 -- there is no global monogenic shortcut
 
 Assume the canonical normalization is finite flat of degree three and its
@@ -1808,10 +2048,11 @@ the cubic extraction problem is split into exact tests:
 2. **coefficient linearity:** prove that the intrinsic binary-cubic orbit
    has a full-rank affine hyperplane representative modulo polynomial
    Tschirnhausen gauge;
-3. **unramified boundary:** exclude a recorded height-one boundary prime
-   inside the étale locus.  By Proposition 1.4 it would have to map to a
-   second target nonproperness divisor, distinct from the critical
-   discriminant.
+3. **unramified boundary:** for an arbitrary cubic, exclude a recorded
+   height-one boundary prime inside the étale locus.  By Proposition 1.4 it
+   would have to map to a second target nonproperness divisor, distinct from
+   the critical discriminant.  For a boundary-minimal cubic this is already
+   excluded by Corollary 2.1b.
 
 Proposition 2.1 shows that there is no additional codimension-two or
 codimension-three version of the third obstruction: once unramified boundary
@@ -1827,8 +2068,9 @@ the locally monogenic collision charts cannot be replaced by a single
 global monic cubic coordinate.  Their `P^1` transition is precisely where
 the remaining coefficient-gauge and intrinsic-marking information lives.
 
-The second item is now the main geometric obstruction.  A general finite
-flat cubic algebra over `A^3` gives a nonlinear morphism
+For the boundary-minimal problem, the second item is the main geometric
+obstruction after the closed-point saturation test.  A general finite flat
+cubic algebra over `A^3` gives a nonlinear morphism
 `A^3 -> A^4`; neither flatness nor the discriminant divisor alone makes its
 image a hyperplane.
 
@@ -1857,6 +2099,7 @@ Run
 
 ```bash
 .venv/bin/python scripts/verify_cubic_normalization_frontend.py
+.venv/bin/python plane-jc/cas/test_cubic_cusp_local_model.py
 Singular -q scripts/verify_cubic_double_saturation.sing
 ```
 
@@ -1864,9 +2107,13 @@ The checker verifies the universal cubic-algebra multiplication table,
 trace-zero splitting, trace discriminant, the codimension-three reflexive
 module warning with its excess-length-four special fiber, the canonical
 `S_2`-hull calibration, the coupling of conormal failure with point torsion,
-and the exact tangent-hyperplane quotient coordinates.  The Singular
+the degree-six line-section discriminants for every reduced ternary-cubic
+type, and the exact tangent-hyperplane quotient coordinates.  The Singular
 checker verifies the module-saturation formula (1.45) on a pure surface
 module with one closed-point cotangent summand.
+The cusp checker enumerates all nine transposition-valued \(B_3\)
+representations on three letters and verifies the monic cubic root model,
+the \(2+1\) Kummer model, and the curvilinear length-three cusp fiber.
 
 External structural inputs:
 
@@ -1889,6 +2136,14 @@ External structural inputs:
 - complements of affine opens and the normal Hartogs argument used in
   Proposition 2.1:
   [Stacks Project, Tag 0BCQ](https://stacks.math.columbia.edu/tag/0BCQ).
+- purity and uniqueness of the normal finite extension of a finite étale
+  complement cover:
+  Stacks Project, Tags
+  [0BMB](https://stacks.math.columbia.edu/tag/0BMB) and
+  [0EY6](https://stacks.math.columbia.edu/tag/0EY6);
+- the ordinary-cusp complement braid presentation used in Proposition 1.4b
+  is also recorded, with its Zariski--van Kampen calculation, in
+  [`../plane-jc/JC2_QUARTIC_PACKET_FRONTIER.md`](../plane-jc/JC2_QUARTIC_PACKET_FRONTIER.md).
 
 The normalized hyperplane-orbit theorem and its motivic exclusions are
 internal:

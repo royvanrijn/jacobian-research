@@ -99,6 +99,162 @@ Run:
 .venv/bin/python scripts/verify_quartic_weighted_map.py
 ```
 
+## Rank-two degree-drop completion
+
+The seed \(H=(W^2-W^4)/2\) is also the specialization
+\((\kappa,\tau)=(-5,0)\) of the normalized degree-five seed surface.  Thus it
+is the natural classical viability test on the degree-drop divisor.  The
+uniform rank-two shear specializes to
+
+\[
+s_2=-\frac{261}{28}.
+\]
+
+Substitution before parameter-field simplification gives a polynomial
+Hamiltonian and an exact polynomial symplectic map
+
+\[
+(R,T,D,S):\mathbb A^4\longrightarrow\mathbb A^4.
+\]
+
+The checker verifies all six Poisson brackets, the polynomial canonical
+adapted-coordinate change, and polynomial left--right equivalence to
+\(G\times\operatorname{id}_{\mathbb A^1}\).  Hence the completed map has
+generic degree four.  The two stored quartic points transport to two distinct
+points over \((R,T,D,S)=(2,0,0,0)\), so noninvertibility survives the
+degree-drop specialization.
+
+The fiber differential orders are
+
+\[
+\deg_Z(S,T)=(4,3),
+\]
+
+one step below the generic degree-five orders \((5,4)\).  In adapted
+coordinates the four output degrees are \((3,15,30,18)\), and after
+substitution into standard canonical coordinates they are
+\((3,18,37,22)\).
+
+This proves **classical viability only**.  It does not construct an
+endomorphism of \(A_2\).
+
+### Rebuilt \((4,3)\) restricted deformation complex
+
+For this specialization the exact sparse symbols have
+
+\[
+ (\deg_B S,\operatorname{ord}_Z S)=(22,4),\qquad
+ (\deg_B T,\operatorname{ord}_Z T)=(18,3),
+\]
+
+where \(\deg_B(X^iQ^jZ^k)=i+j+3k\).  Rebuilding the normal-ordered
+correction spaces with the inherited rule
+
+\[
+ \deg_B(F_n)\leq \deg_B(F)-2n,\qquad
+ \operatorname{ord}_Z(F_n)\leq \operatorname{ord}_Z(F)-n
+\]
+
+changes the previous boundary diagnosis.  The full parity-preserving
+\(\hbar^3\) equation has \(615\) columns, rank \(592\), and a
+23-dimensional affine solution space.  At \(\hbar^5\), however, only the
+120-dimensional \(S_4\) space remains; \(T_4=0\) in this filtration.  The
+allowed current corrections have rank \(115\).  After adjoining all 299
+constant, linear, and quadratic coefficient vectors obtained by varying the
+complete \(\hbar^3\) affine family, the span has rank \(143\), while adjoining
+the constant fifth-order defect raises the rank to \(144\).
+
+An exact six-term dual functional supported on
+
+\[
+ X^{12},\ X^{13}Q,\ X^{14}Z,\ X^{14}Q^2,\
+ X^{15}QZ,\ X^{15}Q^3
+\]
+
+annihilates the full rank-143 span and pairs to one with the defect.  It is
+therefore a gauge-invariant dual cocycle for this restricted
+parity-preserving complex, and proves that **every** lift in the rebuilt
+affine \(\hbar^3\) family is obstructed at \(\hbar^5\).
+
+The unrestricted first-correction calculation is not empty.  Its
+\(600+324\) columns have rank \(890\) and nullity \(34\).  The complete
+admissible target-Hamiltonian gauge has rank \(14\), leaving a
+20-dimensional quotient.  Projection of its 210 Maurer--Cartan quadrics to
+the next cokernel has rank \(21\).  Five coordinate axes survive this
+quadratic projection, but all five give inconsistent coupled
+\(\hbar^2/\hbar^3\) systems.
+
+The bounded low-support closure test is also exact.  The quadrics vanish on
+the coordinate \(\mathbf P^4\) with coordinates
+
+\[
+ (x_0,x_1,x_7,x_8,x_{17}).
+\]
+
+Outside its ten coordinate lines, there are exactly nine rational
+exact-support-two directions and no algebraic ones.  Every one of those nine
+directions fails the coupled \(\hbar^2/\hbar^3\) equations.  A uniform linear
+relaxation of the genuine third-order equations reduces the whole
+\(\mathbf P^4\) to the necessary residual plane spanned by
+
+\[
+ x_7+2x_0,\qquad
+ x_8+\frac{28}{9}x_0,\qquad
+ x_{17}+\frac{824}{81}x_0.
+\]
+
+The three displayed basis directions fail individually.  Reapplying the
+uniform relaxation does not shrink their projective plane.  The genuine
+determinantal compatibility calculation nevertheless collapses exactly:
+after quotienting by the fixed third-order correction image, all 23
+lower-lift columns span one fixed six-dimensional space, and the remaining
+obstruction is
+
+\[
+ \frac{(21a+28b+64c)^3}{21^3}.
+\]
+
+Coefficientwise, the projected kernel couplings, linear right side, and
+cubic right side are all divisible by \(21a+28b+64c\).  Consequently the
+exact nonzero-scale \(\hbar^3\) locus on the residual plane is the rational
+projective line
+
+\[
+ 21a+28b+64c=0,
+\]
+
+with basis \((4,-3,0)\), \((0,16,-7)\).  This is a genuine odd-correction
+resonance, not a numerical sample.
+
+The complete resonance line is obstructed at fourth order.  Parameterize it
+by
+
+\[
+ e_0+t e_1,\qquad e_0=(4,-3,0),\quad e_1=(0,16,-7).
+\]
+
+Over \(\mathbb Q(t)\), the joint second/third correction family has dimension
+38.  After adjoining all 779 constant, linear, and quadratic coefficient
+vectors from that complete lower-lift family to the 120 allowed fourth
+corrections, the span has rank \(143\); adjoining the fourth-order defect
+raises it to \(144\).  The resulting six-term dual cocycle has sole
+denominator factor \(t\).  Exact audits at \(t=0\) and at projective infinity
+both give the same rank jump.  Hence every point of the projective resonance
+line is obstructed at \(\hbar^4\).
+
+This closes the entire bounded low-support sector: the nine isolated
+support-two directions fail at \(\hbar^3\), and the only coordinate
+\(\mathbf P^4\) component reduces to the resonance line and fails at
+\(\hbar^4\).  Possible higher-support components of the 20-variable
+quadratic scheme remain separate.
+
+These are exact statements about the displayed symbols, filtration, and
+normal ordering.  They do not rule out a different ordering, larger
+correction spaces, nonstandard polarization, Hamiltonian reduction, or a
+different classical map, and hence do not prove \(DC_2\).  The rational
+six-term cocycle and all ranks are recorded in
+[`../artifacts/generated-results/quartic_degree_drop_quantization.json`](../artifacts/generated-results/quartic_degree_drop_quantization.json).
+
 The broader seed scan in `WEIGHTED_SEED_SCAN.md` remains exploratory. Its role
 is diagnostic; the completed quartic and all-degree theorems use the exact
 certificates listed above rather than extrapolation from the scan.

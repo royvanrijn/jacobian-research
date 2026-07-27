@@ -1,6 +1,6 @@
 # Literature audit: finite étale Keller fibers
 
-**Search date:** 24 July 2026
+**Search date:** 27 July 2026
 
 ## Claim audited
 
@@ -81,6 +81,20 @@ to the full-fiber rank classification.
 
 ## Closest located sources to the prescribed-algebra realization theorem
 
+### Migus: all-degree constructions as input
+
+P. Migus,
+[Generic degrees of real polynomial Keller maps with non-dense
+image](https://arxiv.org/abs/2607.21572),
+2026.
+
+Migus classifies the generic degrees of real Keller maps with non-dense
+image. His introduction explicitly treats the available all-degree families
+of Gallagher and of the base manuscript as preceding inputs. This confirms
+that existence in every generic degree is shared terrain; the prescribed
+complete-fiber theorem has a different quantifier order and is not stated
+there.
+
 ### Gallagher: split complete fibers
 
 A. Gallagher,
@@ -119,7 +133,23 @@ T. Shaska,
 2026.
 
 This studies graded Keller maps, quotient geometry, and arithmetic thinness.
-No prescribed finite-étale algebra realization theorem was located there.
+In particular, it descends the Keller condition to the mixed-sign quotient
+and identifies the order-two vanishing of the quotient Jacobian along the
+contracted locus. This gives a useful structural explanation of the cubic
+seed, but it does not provide the derivative-unit reconstruction or a
+prescribed finite-étale algebra realization theorem.
+
+### Independent Isabelle verification of the cubic seed
+
+A. Freitas Ramos, D. Barros Hulak, and R. J. Guerra Barretto de Queiroz,
+[Formal Verification of an Explicit Counterexample to the Jacobian
+Conjecture](https://isa-afp.org/entries/Jacobian_Counterexample.html),
+Archive of Formal Proofs, 2026.
+
+This Isabelle/HOL development independently verifies the announced cubic
+map's determinant and collision. The active manuscript therefore uses that
+map only to identify the cubic seed of the general construction; its
+distinctive formal certificate is the arbitrary prescribed-fiber theorem.
 
 ### General specialization literature
 

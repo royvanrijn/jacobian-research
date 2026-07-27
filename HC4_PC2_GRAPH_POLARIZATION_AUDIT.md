@@ -37,8 +37,18 @@ projections that might create collisions unrelated to the known fiber.
 The nonlinear escape has also been tested in three all-degree shear classes
 and in expanded sparse, dense-random, and two-step searches.  Exact jet ideals
 and boundary classifications rule out unrestricted quadratic--cubic
-potentials in ten of the 16 charts.  General nonlinear polynomial
-polarizations remain open.
+potentials in all 16 coordinate charts.  General higher-degree nonlinear
+polynomial polarizations remain open.
+
+A direct imitation of the Meng--Yang one-variable Schur operation has also
+been carried out.  Among all coordinate graph charts, omitted coordinates,
+and linear auxiliary functions of the polynomial graph parameters, only two
+polynomial-coordinate generating families survive.  Both preserve the
+rational collision, but every polynomial quadratic pivot in either family
+has zero or nonconstant descended Hessian determinant.  A second linear
+Schur descent of the Meng--Yang five-variable polynomial is likewise
+impossible.  Arbitrary polynomial auxiliary coordinates are now reduced to
+the same two families; non-coordinate graph embeddings remain open.
 
 The exact linear certificates are
 [`scripts/verify_hc4_linear_polarization_obstruction.py`](scripts/verify_hc4_linear_polarization_obstruction.py)
@@ -482,25 +492,32 @@ where \(c_0\) is the constant determinant term.  This saturates by
 0000&\text{all-degree principal-part obstruction}\\
 0001&\text{degree-four jets}\\
 0010&\text{boundary Schur classification and cubic slice}\\
+0011&X=0,\ Y=0\text{ coefficient ideals}\\
 0100&\text{degree-four jets}\\
 0101&\text{degree-four jets}\\
+0110&X=0,\ Y=0,\ W=0\text{ coefficient ideals}\\
+0111&Y=0\text{ coefficient ideal}\\
 1000&\text{boundary Schur classification, \(Y=0\) slice, and two points}\\
+1001&X=0,\ Y=0,\ W=0\text{ coefficient ideals}\\
 1010&\text{degree-four jets}\\
 1011&\text{degree-five jets}\\
+1100&X=0,\ Y=0,\ W=0\text{ coefficient ideals}\\
+1101&X=0,\ Y=0,\ W=0\text{ coefficient ideals}\\
 1110&\text{degree-five jets}\\
 1111&\text{degree-four jets}.
 \end{array}
 \]
 
 Thus unrestricted quadratic--cubic single shears are exactly ruled out in
-ten of the 16 charts.  The remaining charts
+all 16 charts.
 
-\[
-0011,\ 0110,\ 0111,\ 1001,\ 1100,\ 1101
-\]
-
-remain algebraically unresolved; several degree-four and degree-five
-reductions hit the declared runtime bound and are not counted as evidence.
+The native matrix-first slice checker also accepts an unrestricted quartic
+part, adding all 35 homogeneous quartic coefficients.  As an initial
+higher-degree screen, chart `0111` on \(Y=0\) and chart `0011` on
+\(X=0,Y=0\), both over \(\mathbb F_{32003}\), reached the 300-second runtime
+limit.  These timeouts are not mathematical evidence.  They show that the
+direct quartic coefficient ideal needs structural elimination before exact
+characteristic-zero computation.
 
 ### 9.5 Two-step symplectic compositions
 
@@ -520,9 +537,10 @@ The four components of \(Q_1\) Poisson-commute.  The search allowed
 All \(337881\) resulting two-step symplectic polarizations were tested at
 nine modular points.  None survived the constant-nonzero determinant gate.
 
-The smallest genuinely untested class now lies in the six unresolved
-quadratic--cubic charts, denser two-step compositions, or nonlinear
-symplectic transformations not expressible as alternating elementary shears
+The smallest genuinely untested class now lies in degree-at-least-four
+single-shear potentials not covered by the all-degree subclasses, denser
+two-step compositions, or nonlinear symplectic transformations not
+expressible as alternating elementary shears
 \(m_0\mapsto m_0+\nabla V(q_0)\).
 
 ### 9.6 Caustic Schur reduction and collision conditioning
@@ -787,6 +805,305 @@ single-shear solution.}}
 As in chart `0010`, this does not close higher-degree potentials on the
 generic branch \(L\ne0\).
 
+Formal compatibility does not obstruct either generic \(X\)-caustic branch.
+Let \(Q\) be a variation of the normal \(2\times2\) Hessian block and put
+
+\[
+\tau=2W+9b^2.
+\]
+
+The exact boundary linearizations in charts `0010` and `1000` are
+
+\[
+D_H(\det J)(Q)=\frac L2Q(v_\epsilon,v_\epsilon),
+\qquad
+v_{0010}=\left(1,\frac43\tau\right),\qquad
+v_{1000}=\left(2,\frac43\tau\right).
+\]
+
+At normal prolongation order \(r\), the new pure-normal derivative is a
+binary symmetric tensor \(T\) of order \(r+2\).  Its principal symbol is
+
+\[
+T\longmapsto \frac L2T(v_\epsilon,\ldots,v_\epsilon)
+ \in k[W]_{\le r+2}.
+\]
+
+The second component of \(v_\epsilon\) is affine-linear and nonconstant in
+\(W\).  In the monomial bases of binary forms and \(W\)-polynomials, this
+map is triangular with nonzero diagonal after \(L\) is inverted.  It is
+therefore an isomorphism at every order.  Tangential differentiation fixes
+the mixed derivatives, and the symbol then uniquely solves the new
+pure-normal derivatives.  Consequently the generic branch is formally
+recursively solvable rather than formally inconsistent.
+
+For chart `1000`, the complete first prolongation has \(W\)-degree three.
+After clearing the already-forced Schur denominators, its pivots for
+\(V_{ddd},V_{cdd},V_{ccd},V_{ccc}\) are
+
+\[
+819200L^4,\quad1843200L^4,\quad1382400L^4,\quad345600L^4.
+\]
+
+The second principal symbol has pivots
+
+\[
+1024L,\quad3072L,\quad3456L,\quad1728L,\quad324L.
+\]
+
+Thus prolonging the differential ideal cannot by itself close \(L\ne0\).
+The remaining gates are global polynomial divisibility of the recursively
+forced rational jets and termination of the normal Taylor series.
+
+The complete first divisor-local chain is explicit in chart `1000`.  Put
+
+\[
+\begin{aligned}
+A&=bf_{aa}-2f_{aa}h_b+2f_{ab}h_a,\\
+C&=4b^3f_{aa}-2f_{aa}g_b+2f_{ab}g_a-f_{ab},\\
+B&=f_{aa}^3f_{bbb}-5f_{aa}^3
+-3f_{aa}^2f_{ab}f_{abb}
++3f_{aa}f_{aab}f_{ab}^2-f_{aaa}f_{ab}^3.
+\end{aligned}
+\]
+
+The \(W^3\) equation in the first prolongation reduces to
+
+\[
+256L^3V_{ddd}+\mathcal R=0
+\]
+
+for a polynomial differential expression \(\mathcal R\) in the tangential
+jets of \(f\) and \(h\).  The other three \(W\)-coefficients recursively
+solve \(V_{cdd},V_{ccd},V_{ccc}\).  On \(L=0\), in the chart
+\(f_{aa}\ne0\), their leading Laurent coefficients are respectively
+
+\[
+\begin{aligned}
+V_{ddd}&:\ -\frac{A^3B}{4f_{aa}^3}L^{-3},\\
+V_{cdd}&:\ -\frac{A^2CB}{4f_{aa}^3}L^{-3},\\
+V_{ccd}&:\ -\frac{AB(3C^2-2f_{aa}\kappa)}
+ {12f_{aa}^3}L^{-3},\\
+V_{ccc}&:\ -\frac{CB(C^2-2f_{aa}\kappa)}
+ {4f_{aa}^3}L^{-3}.
+\end{aligned}
+\]
+
+Thus on each irreducible component of \(L=0\) met by a polynomial generic
+solution, either
+
+\[
+B=0,
+\]
+
+or
+
+\[
+A=0,\qquad C=0\quad\text{or}\quad C^2=2f_{aa}\kappa.
+\]
+
+This reduces the generic polynomiality problem to three explicit
+differential subbranches.  The first is characteristic: modulo \(L\),
+
+\[
+B=f_{aa}(f_{ab}\partial_a-f_{aa}\partial_b)L.
+\]
+
+Hence \(B=0\) says that the Hamiltonian derivation of \(f_a\) preserves the
+caustic divisor.  More precisely, let \(p\) be a reduced irreducible
+component of \(L=0\), with \(f_{aa}\ne0\) generically on \(p\).  If
+\(B=0\) modulo \(p\), then the Hamiltonian field
+\(f_{ab}\partial_a-f_{aa}\partial_b\) is tangent to \(p\).  It is nonzero
+at the generic point, so \(f_a\) is constant in the one-variable function
+field of \(p\).  Therefore
+
+\[
+p\mid(f_a-c)
+\]
+
+for some constant \(c\).  In particular, if \(L\) itself is irreducible and
+\(\deg f=d\ge4\), then \(L\mid(f_a-c)\) forces
+\(\deg L\le d-1\).  The generic top degree \(2d-4\) must disappear, so
+
+\[
+\det\operatorname{Hess}(f_d)=0.
+\]
+
+The binary zero-Hessian theorem then gives
+
+\[
+f_d=\lambda(\alpha a+\beta b)^d.
+\]
+
+Thus the irreducible characteristic branch reduces every higher-degree
+search to a pure-power leading tangential form.
+
+The next two Laurent coefficients of \(V_{ddd}\) also factor on this branch.
+Put
+
+\[
+\begin{aligned}
+H_1={}&2f_{aa}^3h_{bb}-f_{aa}^3
+-4f_{aa}^2f_{ab}h_{ab}-4f_{aa}^2f_{abb}h_a\\
+&+8f_{aa}f_{aab}f_{ab}h_a+2f_{aa}f_{ab}^2h_{aa}
+-4f_{aaa}f_{ab}^2h_a,\\
+H_2={}&f_{aa}^2h_{ab}-f_{aa}f_{aab}h_a
+-f_{aa}f_{ab}h_{aa}+f_{aaa}f_{ab}h_a.
+\end{aligned}
+\]
+
+After solving \(B=0\) for \(f_{bbb}\), those numerators are
+
+\[
+\frac{96A^2H_1}{f_{aa}^3},
+\qquad
+\frac{768Ah_aH_2}{f_{aa}^3}.
+\]
+
+Thus the part of the characteristic branch with \(A\ne0\) additionally
+requires \(H_1=0\) and \(h_aH_2=0\).
+
+The noncharacteristic \(A=0\) branch has a complementary simplification:
+all three pole coefficients of \(V_{ddd}\) vanish.  The only remaining pole
+of \(V_{cdd}\) is
+
+\[
+\frac{h_aCH_2}{f_{aa}^3}L^{-1}.
+\]
+
+In particular it vanishes on \(A=C=0\).  On that subbranch, the remaining
+poles of \(V_{ccd}\) and \(V_{ccc}\), together with
+\(\kappa\ne0\), force
+
+\[
+J_1=J_2=J_3=J_4=0,
+\]
+
+where
+
+\[
+\begin{aligned}
+J_1={}&2f_{aa}^3h_{bb}-f_{aa}^3-4f_{aa}^2f_{ab}h_{ab}
++4f_{aa}^2f_{abb}h_a\\
+&-8f_{aa}f_{aab}f_{ab}h_a+2f_{aa}f_{ab}^2h_{aa}
++4f_{aaa}f_{ab}^2h_a,\\
+J_2={}&f_{aa}h_{aa}+2f_{aaa}h_a,\\
+J_3={}&6b^2f_{aa}^3-f_{aa}^3g_{bb}+2f_{aa}^2f_{ab}g_{ab}
+-2f_{aa}^2f_{abb}g_a+f_{aa}^2f_{abb}\\
+&+4f_{aa}f_{aab}f_{ab}g_a-2f_{aa}f_{aab}f_{ab}
+-f_{aa}f_{ab}^2g_{aa}\\
+&-2f_{aaa}f_{ab}^2g_a+f_{aaa}f_{ab}^2,\\
+J_4={}&21bf_{aa}^2-8f_{aa}g_{aa}-16f_{aaa}g_a+8f_{aaa}.
+\end{aligned}
+\]
+
+Imposing the mixed-derivative identities coming from \(A=C=0\) and using
+\(J_2=J_4=0\), the other two equations share the factor
+
+\[
+E=f_{aa}^2f_{abb}-2f_{aa}f_{ab}f_{aab}+f_{ab}^2f_{aaa}.
+\]
+
+Equivalently,
+\(E=-f_{aa}^2(f_{ab}\partial_a-f_{aa}\partial_b)
+\left(f_{ab}/f_{aa}\right)\), so \(E=0\) is another invariant-slope branch.
+
+Precisely,
+
+\[
+J_1=6h_aE,\qquad
+J_3=-\frac32(2g_a-1)E.
+\]
+
+Consequently this subbranch splits into
+
+\[
+E=0,
+\qquad\text{or}\qquad
+h_a=0,\quad g_a=\frac12.
+\]
+
+The latter is rigid: \(A=C=0\) then gives
+\(h_b=b/2\) and \(g_b=2b^3\).
+
+These are necessary conditions only; the \(A=0,\ C^2=2f_{aa}\kappa\)
+subbranch, higher normal orders, and termination of the normal Taylor series
+remain to be tested.
+
+The other six formerly unresolved quadratic--cubic charts can be closed
+without classifying their boundary Cauchy data.  Let
+
+\[
+V=V_2+V_3
+\]
+
+have all ten quadratic and twenty homogeneous-cubic coefficients free.  Form
+
+\[
+J_\epsilon=d\left(m_\epsilon+\nabla V(q_\epsilon)\right).
+\]
+
+If \(\det J_\epsilon\) is a nonzero constant, then its restriction to every
+coordinate hyperplane is the same constant.  Substitute a hyperplane into
+the matrix \(J_\epsilon\) before taking its determinant, extract all
+nonconstant coefficients in the remaining three source variables, and
+adjoin \(z c_0-1\), where \(c_0=\det J_\epsilon(0)\).  Direct `slimgb`
+reduction over \(\mathbb Q\) gives:
+
+\[
+\begin{array}{c|c|c}
+\text{chart}&\text{hyperplanes}&
+ \text{coefficient columns, including the constant}\\ \hline
+0011&X=0,\ Y=0&100,\ 157\\
+0110&X=0,\ Y=0,\ W=0&100,\ 263,\ 1074\\
+0111&Y=0&192\\
+1001&X=0,\ Y=0,\ W=0&190,\ 438,\ 931\\
+1100&X=0,\ Y=0,\ W=0&190,\ 622,\ 1565\\
+1101&X=0,\ Y=0,\ W=0&206,\ 536,\ 1602.
+\end{array}
+\]
+
+Every saturated rational ideal in the table is the unit ideal.  These
+calculations impose no collision equations and therefore prove the stronger
+statement
+
+\[
+\boxed{\text{No coordinate chart admits an unrestricted
+quadratic--cubic single-shear solution.}}
+\]
+
+The matrix-first substitution is computationally essential: expanding the
+four-variable determinant before taking a hyperplane section produces severe
+expression swell but no stronger equations.
+
+There is also an all-degree shortcut excluding a tempting lower-dimensional
+escape.  Suppose a three-dimensional Keller map is jointly affine-linear in
+two source variables:
+
+\[
+F(s,u,v)=b(s)+u\,a_1(s)+v\,a_2(s).
+\]
+
+The coefficients of \(u\) and \(v\) in its Jacobian determinant give
+
+\[
+\det(a_1',a_1,a_2)=\det(a_2',a_1,a_2)=0.
+\]
+
+Hence the two-plane spanned by \(a_1,a_2\) is constant.  Write
+\(a_1\wedge a_2=\rho(s)\omega_0\).  The constant Jacobian equation is
+
+\[
+\rho(s)\,\omega_0(b'(s))\in k^\times,
+\]
+
+so both polynomial factors are units.  After a linear target change, the
+third output is affine-linear in \(s\), while the first two outputs are
+affine-linear in \(u,v\) with a \(2\times2\) coefficient matrix of constant
+nonzero determinant.  Solving first for \(s\) and then for \(u,v\) gives a
+polynomial inverse.  Thus every such map is an automorphism; a rank-two
+affine-linear Schur descent cannot produce an `HC_4` counterexample.
+
 The certified collision supplies a separate all-degree incidence
 obstruction.  In charts `1100` and `1101`, the symmetric points \(P_+\) and
 \(P_-\) have identical \(q_0\)-values but distinct \(m_0\)-values.  Therefore
@@ -810,6 +1127,301 @@ Collision-conditioned degree-two and degree-three modular reductions in
 chart `0010` still reached the 120-second runtime bound; those timeouts are
 not mathematical evidence.
 
+## 10. Direct one-variable Schur ascent and descent
+
+The literal backward prescription has an immediate integrability gate.  For
+
+\[
+ \Xi(x,t)=\Phi(x)+tA(x)+\frac12t^2B(x),
+\]
+
+the Schur complement of the \(t,t\) entry is
+
+\[
+\begin{aligned}
+\mathcal S={}&
+\operatorname{Hess}\Phi+t\operatorname{Hess}A
++\frac12t^2\operatorname{Hess}B\\
+&-\frac{1}{B}
+(\nabla A+t\nabla B)(\nabla A+t\nabla B)^t .
+\end{aligned}
+\]
+
+It is symmetric.  It therefore cannot literally equal the Jacobian of the
+displayed `PC(2)` map: for \(G=(R,T,D,S)\), the skew entry
+
+\[
+ \frac{\partial T}{\partial x}-\frac{\partial R}{\partial q}
+\]
+
+equals \(16/3\) at \((x,q,p,z)=(0,0,0,1)\).  A generating-family
+construction, rather than matrix equality, is needed to transfer the
+symplectic graph.
+
+### 10.1 The two polynomial-coordinate generating families
+
+Fix a coordinate graph chart \((q_\epsilon,m_\epsilon)\).  Omit one of the
+four \(q_\epsilon\)-coordinates and adjoin a linear auxiliary function
+
+\[
+ u=a_0X+a_1Y+a_2W+a_3D.
+\]
+
+Requiring the resulting four functions of \((X,Y,W,D)\) to have constant
+nonzero Jacobian is a linear coefficient problem in the \(a_i\).  The exact
+all-chart calculation leaves only
+
+\[
+ (\epsilon,j)=(0010,3),\qquad(0011,3),
+\]
+
+where \(j=3\) is the omitted fourth coordinate.  In both cases the
+determinant is
+
+\[
+ \frac{Xa_1-3a_2}{3}.
+\]
+
+Thus \(a_1=0\), \(a_2\ne0\), and additions of \(X,D\) are base gauge.  After
+normalization the essential auxiliary coordinate is \(u=W\), and
+
+\[
+ w=(x,q,d,u)=(X,Q,D,W)
+\]
+
+is a polynomial coordinate system.
+
+The linear restriction on \(u\) can be removed completely when the goal is
+to transfer a pair from the certified three-point fiber.  For an omitted
+coordinate \(j\), define the Jacobian derivation
+
+\[
+ V_{\epsilon,j}(u)
+ =\det\frac{\partial(q_{\epsilon,\widehat j},u)}
+ {\partial(X,Y,W,D)}.
+\]
+
+A polynomial auxiliary coordinate requires
+\(V_{\epsilon,j}(u)\in\mathbb Q^\times\).  Equality of the four
+complementary graph coordinates at a certified pair first forces
+
+\[
+ \epsilon\in\{0000,0001,0010,0011\};
+\]
+
+only the symmetric pair \(P_+,P_-\) survives.  In charts `0000` and `0001`,
+for every \(j\), the four coefficients
+\(V_{\epsilon,j}(X),V_{\epsilon,j}(Y),
+V_{\epsilon,j}(W),V_{\epsilon,j}(D)\) have a nonunit common factor or all
+vanish.  Their ideal therefore cannot contain a nonzero constant.
+
+For charts `0010` and `0011`, omissions \(j=0,2\) are also impossible.
+For `0010`, \(j=0\) has a fixed point at the origin and \(j=2\) has a
+nonunit coefficient gcd.  For `0011`, \(j=2\) again has a nonunit gcd, while
+\(j=0\) has the common zero
+
+\[
+ (X,Y,W,D)=
+ \left(\frac{\sqrt{34}-4}{6},\,1,\,
+ \frac{84+3\sqrt{34}}{25},\,0\right).
+\]
+
+It remains to consider \(j=1,3\).  For \(j=1\), the retained triples are
+\((X,D,T)\) and \((X,D,S)\).  Over \(K=\mathbb Q(X,D)\), the last retained
+coordinate has the form
+
+\[
+ f(Y,W)=a(Y)W+b(Y),
+\]
+
+with
+
+\[
+ a_T=3X(1+XY)^2,\qquad
+ a_S=\frac12(1+XY)^3.
+\]
+
+Neither admits a polynomial Jacobian mate.  Indeed, if
+
+\[
+ V=-a\partial_Y+(a'W+b')\partial_W,\qquad V(u)=c\in K^\times,
+\]
+
+and \(c_n(Y)W^n\) is the top \(W\)-term of \(u\), then
+
+\[
+ -ac_n'+na'c_n=0,
+\]
+
+so \(c_n\) is a scalar multiple of \(a^n\).  Subtracting the corresponding
+multiple of \(f^n\) lowers the \(W\)-degree without changing \(V(u)\).
+Iteration reduces to \(u=c_0(Y)\), where
+
+\[
+ -a(Y)c_0'(Y)=c.
+\]
+
+This is impossible because \(a\) is nonconstant.
+
+For \(j=3\), both charts retain \((X,Q,D)\).  In the polynomial coordinates
+\((X,Q,D,W)\),
+
+\[
+ V_{\epsilon,3}=-\partial_W.
+\]
+
+Consequently every polynomial slice is
+
+\[
+ u=-cW+f(X,Q,D),\qquad c\in\mathbb Q^\times.
+\]
+
+The function \(f\) is retained-coordinate gauge.  Thus \(W\) is the unique
+essential auxiliary coordinate in every degree, and the two generating
+families below exhaust the polynomial coordinate-auxiliary route that
+transfers the certified collision.
+
+Let \(t=O_\epsilon(w)\) be the omitted graph equation and let
+\(A_\epsilon(w)\) be its complementary coordinate:
+
+\[
+\begin{array}{c|c|c|c}
+\epsilon&O_\epsilon&A_\epsilon&s=A_\epsilon(P_\pm)\\ \hline
+0010&T&S&-1/8\\
+0011&S&-T&0.
+\end{array}
+\]
+
+If \(P_\epsilon(w)\) is the exact primitive of the restricted canonical
+one-form, the canonical one-auxiliary generating family is
+
+\[
+ F_\epsilon(w,t)
+ =P_\epsilon(w)+A_\epsilon(w)(t-O_\epsilon(w)).
+\]
+
+On \(t=O_\epsilon(w)\), its gradient is the complementary graph coordinate
+together with a zero auxiliary component.  In both charts the certified
+collision lifts to
+
+\[
+ w_\pm=\left(\pm1,\mp\frac23,0,\frac{13}{2}\right)
+\]
+
+and gives equal gradients of \(F_\epsilon\).
+
+Every quadratic modification preserving the same graph first jet is
+
+\[
+ F_{\epsilon,K}
+ =F_\epsilon+K(w)(t-O_\epsilon(w))^2.
+\]
+
+Partial Legendre transform at the collision value \(s\) gives
+
+\[
+ \psi_{\epsilon,K}
+ =P_\epsilon-sO_\epsilon
+  -\frac{(A_\epsilon-s)^2}{4K}.                    \tag{10.1}
+\]
+
+In each chart \(A_\epsilon-s\) is irreducible over
+\(\mathbb Q[x,q,d,u]\).  Hence (10.1) is polynomial only if
+
+\[
+ K=c(A_\epsilon-s)^e,\qquad
+ c\in\mathbb Q^\times,\quad e\in\{0,1,2\}.
+\]
+
+Put \(r=1/(4c)\) and \(p=2-e\).  It remains to test
+
+\[
+ \psi_{\epsilon,p,r}
+ =P_\epsilon-sO_\epsilon-r(A_\epsilon-s)^p,
+ \qquad p=0,1,2.
+\]
+
+The following exact evaluations close every case.  Points in the table are
+in the \(w=(x,q,d,u)\) coordinates.
+
+\[
+\begin{array}{c|c|c|c}
+\epsilon&p&\text{Hessian determinants}&\text{consequence}\\ \hline
+0010&0&\det H(0)=0&\text{not nonzero constant}\\
+0010&1&\det H(0)=0&\text{not nonzero constant}\\
+0010&2&\det H(0)=-2r^2,
+ \det H(0,0,0,1)=-10r^2&r=0\text{ forced}\\ \hline
+0011&0&\det H(0)=1,
+ \det H(1,1,0,0)=-120632/3&\text{not constant}\\
+0011&1&
+\begin{array}{l}
+\det H(0)=1,\\
+\det H(1,0,0,0)=144r^2+120r+1,\\
+\det H(1,1,0,0)=
+(936r^2-19319r-120632)/3
+\end{array}
+&\text{difference polynomials coprime}\\
+0011&2&\det H(0)=1,
+\det H(1,0,0,0)=(32r+3)/3&r=0\text{ forced}.
+\end{array}
+\]
+
+Since \(r\ne0\), no polynomial quadratic-pivot Schur descent in either
+linear-auxiliary `PC(2)` generating family has constant nonzero Hessian
+determinant.
+
+### 10.2 No second linear descent of the Meng--Yang potential
+
+There is also a clean obstruction to descending the Meng--Yang polynomial
+itself along a constant linear direction.  Write
+
+\[
+ \Psi_{\rm MY}=A^2+11A+2B
+\]
+
+in variables \((x_1,x_2,y_1,y_2,y_3)\), with \(A,B\) linear in the three
+\(y\)-variables as in their paper.  The coefficient ideal of the third
+directional derivative \(D_v^3\Psi_{\rm MY}\) contains \(v_1^3,v_2^3\), and
+the derivative vanishes identically after \(v_1=v_2=0\).  Thus the only
+directions in which \(\Psi_{\rm MY}\) is at most quadratic are the three
+dual-variable directions.
+
+For such a direction \((a,b,c)\), put
+
+\[
+ L=D_vA,\qquad K=D_vB.
+\]
+
+The quadratic pivot is \(2L^2\).  A partial Legendre transform at a constant
+dual value \(\sigma\) can be polynomial only if
+
+\[
+ L\mid 2K-\sigma .
+\]
+
+For every nonzero \((a,b,c)\), \(L\) and \(K\) have the same total degree, so
+the quotient would be a scalar \(\ell\).  The complete coefficient ideal of
+
+\[
+ 2K-\sigma-\ell L
+\]
+
+has Gröbner basis
+
+\[
+ \{\sigma,a,b,c\}.
+\]
+
+Only the zero direction remains.  Therefore the five-variable
+Meng--Yang potential has no further polynomial partial Legendre transform
+along any constant linear direction.
+
+These results are exact obstructions, not evidence against every conceivable
+Schur descent.  The remaining variants require a non-coordinate embedding
+of the symplectic graph or a higher-degree generating family whose critical
+equation still has a polynomial solution.  They no longer imitate the
+Meng--Yang operation in a controlled finite ansatz.
+
 ## Reproduction
 
 Run:
@@ -825,12 +1437,27 @@ Run:
 .venv/bin/python scripts/search_hc4_dense_random_cubic_shears.py
 .venv/bin/python scripts/search_hc4_two_step_symplectic_shears.py
 .venv/bin/python scripts/verify_hc4_caustic_schur_reduction.py
+.venv/bin/python scripts/verify_hc4_direct_schur_descent.py
 .venv/bin/python scripts/verify_hc4_0010_boundary_schur_chain.py
 .venv/bin/python scripts/verify_hc4_0010_cubic_boundary_classification.py
 .venv/bin/python scripts/verify_hc4_0010_degenerate_cubic_branch.py
 .venv/bin/python scripts/verify_hc4_1000_boundary_schur_chain.py
 .venv/bin/python scripts/verify_hc4_1000_cubic_boundary_classification.py
 .venv/bin/python scripts/verify_hc4_1000_degenerate_cubic_branch.py
+.venv/bin/python scripts/verify_hc4_x_caustic_formal_compatibility.py
+.venv/bin/python scripts/verify_hc4_1000_divisor_local_chain.py
+.venv/bin/python scripts/verify_hc4_multislice_cubic_obstruction.py \
+  --chart 0011 --slices X Y
+.venv/bin/python scripts/verify_hc4_multislice_cubic_obstruction.py \
+  --chart 0110 --slices X Y W
+.venv/bin/python scripts/verify_hc4_multislice_cubic_obstruction.py \
+  --chart 0111 --slices Y
+.venv/bin/python scripts/verify_hc4_multislice_cubic_obstruction.py \
+  --chart 1001 --slices X Y W
+.venv/bin/python scripts/verify_hc4_multislice_cubic_obstruction.py \
+  --chart 1100 --slices X Y W
+.venv/bin/python scripts/verify_hc4_multislice_cubic_obstruction.py \
+  --chart 1101 --slices X Y W
 .venv/bin/python scripts/verify_hc4_quadratic_cubic_jet_obstruction.py \
   --chart 1111 --characteristic 0 --max-degree 4
 .venv/bin/python scripts/verify_hc4_quadratic_cubic_jet_obstruction.py \

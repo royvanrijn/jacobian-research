@@ -40,75 +40,53 @@ sheet.  A shorter fiber can occur when sheets escape through the
 nonproperness boundary.
 \end{definition}
 
+Producing Keller maps in each generic degree is now shared terrain.
+Gallagher gives explicit all-degree families, and Migus explicitly takes the
+available all-degree constructions as input in his classification of generic
+degrees for real Keller maps with non-dense image
+\cite{Gallagher,Migus}.  Shaska develops the mixed-sign grading and quotient
+geometry of the announced cubic map \cite{Shaska}.  These results clarify why
+large families should exist.  They do not address the reversed quantifier
+order here: begin with an arbitrary finite \'etale algebra, then construct a
+map whose \emph{complete} fiber represents that algebra.
+
+For rank \(N\geq3\), choose a squarefree presentation
+\[
+ A\simeq K[T]/(P)
+\]
+and \(a\in K\) with \(P'(a)P'''(a)\neq0\), and put
+\(G(S)=P(a+S)-P(a)\).  The proof then has five steps.
+\begin{enumerate}
+\item Design the scalar inverse equation
+\[
+ E_{\Pi,B,C}(S)
+ =G_\Pi(S)-\frac{g_1}{2}(BS^2+C).
+\]
+\item Arrange the exact derivative identity
+\[
+ E_{\Pi,B,C}'(S)=g_1D,\qquad D=1-SQ+\Pi S^2.
+\]
+\item Use the unit \(D\) to reconstruct the source rationally from a simple
+root \(S\); the complete formula is boxed in
+Section~\ref{sec:gauge}.
+\item Choose the quadratic gauge so that this reconstruction polynomializes
+in \((x,y,z)\), while the source and target Jacobian factors
+\(D^{-1}\) and \(-2D\) cancel.
+\item At the selected target, specialize \(E\) to \(P(a+S)\).
+Squarefreeness makes \(E'\) invertible modulo \(E\), so the localization
+disappears and the full fiber is \(\Spec K[T]/(P)\).
+\end{enumerate}
+A fixed linear change in the target makes the Jacobian one, and all
+coordinate degrees are at most \(6N+2\).  The detailed reconstruction is
+natural over arbitrary commutative test algebras; it is this derivative-unit
+argument, rather than the graded quotient alone, that identifies the exact
+scheme fiber.
+
 Together with the elementary fact that every Keller fiber is finite \'etale,
-this gives an exact fixed-degree classification.  For \(N\geq1\), a finite
-\(K\)-scheme of rank \(N\) is a full Keller fiber of a
+the realization theorem gives an exact fixed-degree classification.  For
+\(N\geq1\), a finite \(K\)-scheme of rank \(N\) is a full Keller fiber of a
 geometric-degree-\(N\) map in \(\A^3_K\) exactly when it is finite \'etale
 and \(N\neq2\).
-
-For rank \(N\geq3\), the construction starts from a squarefree presentation
-\[
- A\simeq K[T]/(P).
-\]
-Choose \(a\in K\) with \(P'(a)P'''(a)\neq0\) and set
-\[
- G(S)=P(a+S)-P(a).
-\]
-The polynomial \(G\) is inserted into one explicit three-variable
-quadratic-gauge map.  A fixed linear change in the target makes its Jacobian
-one, and its coordinate degrees are bounded by \(6N+2\).
-
-The family begins with the announced counterexample itself.  The seed
-\[
- G(S)=S+S^3
-\]
-gives Alp\"oge's announced map coordinate for coordinate, with no conjugation
-or output rescaling.  The higher-degree construction is therefore an
-extension of that map rather than a separate template with the same
-Jacobian.
-
-The geometric origin of this seed is the multiplication map for binary forms
-\[
- (L,Q)\longmapsto LQ,\qquad
- \operatorname{Sym}^1(K^2)\times\operatorname{Sym}^2(K^2)
- \longrightarrow\operatorname{Sym}^3(K^2).
-\]
-The relative scaling \((L,Q)\mapsto(\lambda L,\lambda^{-1}Q)\) is removed by
-the normalization \(\operatorname{Res}(L,Q)=1\).  A generic cubic has three
-possible marked linear factors, so the normalized map has three generic
-inverse branches; the nonvanishing resultant separates the marked root from
-the residual quadratic and gives local invertibility.  In a suitable affine
-three-space chart this is precisely the announced cubic map
-\cite{TaoDigest}.  The quadratic gauge introduced below keeps the same
-marked-root reconstruction but allows the scalar inverse equation to be an
-arbitrary polynomial \(G\).
-
-The construction is presented from the inverse problem outward.  In
-birational coordinates \((\Pi,S,Q)\), set
-\[
- D=1-SQ+\Pi S^2.
-\]
-The choice \(B=Q+\beta(\Pi,S)\) makes \(D=E'/g_1\), and \(C\) is then
-defined by the single equation
-\[
- E_{\Pi,B,C}(S)=0.
-\]
-The target Jacobian in \((S,Q)\) is \(-2D\).  The source chart has Jacobian
-\(D^{-1}\), so the two factors cancel before any large coordinate is
-expanded.  Only then do we pull the construction back to \((x,y,z)\), where
-the denominators cancel and give the displayed polynomial map.  The
-coefficientwise expansion is relegated to
-Appendix~\ref{app:gauge-identities}.
-
-At a target with nonzero first coordinate, the localized quadratic-gauge
-theorem identifies the entire fiber as
-\[
- \operatorname{Spec}\left((K[S]/(E))[1/\overline{E'}]\right).
-\]
-This is the right answer even when \(E\) has repeated factors: the source map
-is \'etale, so only roots at which \(E'\) is invertible can occur.  At the
-prescribed target, \(E=P(a+S)\) is squarefree, hence \(E'\) is already a unit
-modulo \(E\) and the localization disappears.
 
 The same coordinates identify the actual function-field extension.  On the
 dense chart \(1+xy\neq0\), the source field is
@@ -129,7 +107,11 @@ Morse.  The classical Morse-polynomial theorem gives \(S_N\) on one slice,
 and the finite-\'etale ordered-root cover embeds that group into the generic
 geometric group.  Over a Hilbertian field, the same fixed map consequently has
 infinitely many connected full Keller fibers with splitting-field group
-\(S_N\).
+\(S_N\).  Since the natural action of \(S_N\) is primitive, there is no
+proper intermediate generic function field.  The chain rule then turns this
+into a structural consequence: every realization map remains compositionally
+indecomposable after every characteristic-zero extension and every
+stabilization by identity variables.
 
 The same inverse equation also detects precisely where affine sheets are
 lost.  The logically separate calculation is placed in
@@ -157,35 +139,29 @@ records the map, its determinant, geometric degree, and exact fiber; the
 immediately following effective corollary records the degree bound and
 naturality.  Monogenicity then gives the finite-\'etale realization
 corollary.  Symmetric monodromy is a separate theorem about the generic
-inverse equation.  The rank classification combines realization with the
+inverse equation, followed by the stable-atomicity corollary.  The rank
+classification combines realization with the
 classical degree-two obstruction; its scalar-extension and descent argument
-is recorded in Appendix~\ref{app:degree-two}.  Finally, the arithmetic
-argument first proves that the Berend--Bilu scheme is the smallest
-finite-\'etale Hasse failure over \(\Q\), and only then invokes realization
-to obtain the Keller-fiber corollary.  The nonproperness calculation, which
-is logically independent of this hierarchy, is collected in
+is recorded in Appendix~\ref{app:degree-two}.  The nonproperness calculation,
+which is logically independent of this hierarchy, is collected in
 Appendix~\ref{app:nonproperness}; the coefficientwise pullback calculation is
 kept separately in Appendix~\ref{app:gauge-identities}.
 
-The arithmetic applications are then literal transfers.  An irreducible
-polynomial gives a connected full Keller fiber; a product gives the same field
-decomposition; local points, real signature, and Galois action are inherited
-from the original algebra.  In particular, the classical Berend--Bilu
-quintic produces a rank-five Hasse-principle failure.  A
-finite \(G\)-set lemma and Chebotarev show, over every number field \(K\),
-that a finite \'etale \(K\)-scheme of degree at most four which is soluble
-at all but finitely many finite completions already has a \(K\)-point.
-Thus the Berend--Bilu scheme is rank-minimal before Keller maps enter.
+Arithmetic consequences remain literal transfers: field decomposition,
+Galois action, signatures, local points, and rational points are preserved
+because the whole finite \'etale algebra is preserved.  Concrete arithmetic
+applications are kept in separate certificates rather than developed in this
+paper.
 
-The polynomial-presentation construction and the explicit quintic have been
-formalized in Lean.  Starting from a squarefree polynomial of degree at least
-three, the formalization chooses an admissible translation, constructs the
-Jacobian-one map and target, proves geometric degree \(N\) and the \(6N+2\)
-coordinate bound, and identifies the full Keller fiber naturally with
-\(\Spec K[T]/(P)\), including its rank and finite \'etaleness.  For the
-quintic it also proves the exact fiber, the absence of rational points, and
-the existence of points over \(\R\) and every \(\Q_p\).  The finite
-\(G\)-set lemma underlying the degree-four obstruction is also formalized;
-Chebotarev remains an ordinary mathematical input.
+The polynomial-presentation construction and its passage to abstract finite
+\'etale algebras in characteristic zero have been formalized in Lean.
+Starting from a squarefree polynomial of degree at least three, the
+formalization chooses an admissible translation, constructs the Jacobian-one
+map and target, proves geometric degree \(N\) and the \(6N+2\) coordinate
+bound, and identifies the full Keller fiber naturally with
+\(\Spec K[T]/(P)\), including its rank and finite \'etaleness.  It also
+noncomputably constructs a squarefree polynomial presentation of every
+abstract finite \'etale \(K\)-algebra and transports the full natural fiber
+certificate across that presentation.
 Appendix~\ref{app:lean-correspondence} records the correspondence between
 these paper statements and their Lean declarations.

@@ -169,7 +169,36 @@ changes.  The same selected minor has universal determinant
 quadratic-gauge seed.  For the displayed specialization, the full
 `785 x 24` affine-linear system also has zero nullspace, extending the
 exclusion to independent affine coordinate changes.  This does not assert
-exclusion after nonlinear polynomial left--right equivalence.
+exclusion after nonlinear polynomial left--right equivalence by itself.
+
+The separate
+[intrinsic algebraic-torus theorem](cancellation/NO_ALGEBRAIC_TORUS_EQUIVARIANCE.md)
+closes that gap for the displayed quartic.  Its canonical decorated
+ramified-normalization stratum has exact automorphism group `mu_5` and zero
+Lie algebra.  A connected torus would therefore fix the prime nonnormal
+discriminant hypersurface pointwise; a weight-space lemma forces the target
+action to be trivial, and `S_4` deck rigidity kills the source action.
+Thus no polynomial left--right representative of the example is
+algebraic-torus-equivariant.  The theorem does not classify every discrete
+or unipotent polynomial self-equivalence.  After identity stabilization,
+tautological torus actions on the added factors prevent literal
+symmetry-freeness; the stable boundary certificate instead forces every
+connected action on the pulled-back decoration to be vertical over its
+intrinsic two-torus.
+
+The same theorem records a rational-root representative obtained from
+`G(S)=S(S-1)(S-2)(3S+2)`.  Its expanded component supports are
+`(7,51,38)`, its ordinary component degrees are `(7,26,24)`, and it has a
+four-point rational collision.  The count is minimal in the displayed
+quartic quadratic-gauge normal form: setting the removable `g_2` coefficient
+to zero deletes exactly seven terms and no admissible specialization deletes
+another.  This is not an absolute sparsity theorem over arbitrary polynomial
+coordinates.  Likewise, quartic is the smallest certified ungraded upper
+bound in geometric degree, not yet a proved global minimum: closing the
+open cubic package-extraction theorem would classify the boundary-minimal
+cubic stratum, but a global lower bound additionally requires excluding a
+separate unramified nonproperness divisor for an arbitrary cubic (or proving
+a reduction to that stratum which preserves genuine ungradedness).
 
 The [tangent-map core](verified/TANGENT_MAP_CORE.md) supplies the weighted
 inverse pencil, generic degree, critical divisor, discriminant normalization,
@@ -228,7 +257,17 @@ couples them more tightly: after `C=T`, the second cokernel is exactly the
 closed-point torsion `H_Z^0(Omega_{B/A})`.  For a presentation with image
 `N` and `I=Fitt_3(B)`, this torsion is the explicit saturation quotient
 `(N:I^infinity)/N`.  Certificate E is now one canonical-bidual test and
-one module-saturation test.
+one module-saturation test.  Tame local structure closes both tests over
+the simple-normal-crossing locus of the critical discriminant: after strict
+henselization the cubic cover is the free sum of a quadratic Kummer sheet
+and a trivial sheet.  Cusp braid monodromy closes the ordinary-cusp locus
+too: its only three-sheet actions give either that `2+1` Kummer model or the
+finite-free cubic root cover.  Thus every point-flatness defect is supported
+at a closed worse-than-ordinary-cusp point of that discriminant.  For a
+reduced Koszul defect this is now quantitative: the ternary-cubic symbol
+`h` produces the degree-six tangent equation
+`Disc(h restricted to r-perp)`.  Squarefree `h` forces branch multiplicity
+six, while a non-squarefree symbol forces multiplicity at least seven.
 The same algebraic mechanism controls the remaining degree-forty-two
 Hessian synchronization support.  The shared
 [support-saturation principle](verified/SUPPORT_SATURATION_PRINCIPLE.md)
@@ -236,16 +275,20 @@ identifies local-cohomology torsion, associated-prime avoidance, positive
 grade, and presentation saturation; flatness is only a stronger shortcut.
 The active
 [cubic closure protocol](cancellation/CUBIC_CLOSURE_ATTACKS.md)
-organizes the remaining work into three certificates: those two Ext
-modules, the phantom-boundary quotient between the nonproperness and branch
-equations, and the graded discriminant obstruction for coefficient gauges.
+organizes the remaining work into intrinsic certificates.  The
+phantom-boundary certificate is now closed for boundary-minimal cubics:
+the foundational competitor has one irreducible target boundary component,
+nonproperness forces at least one, and lexicographic minimality therefore
+forces exactly one.  The branch and nonproperness divisors coincide in
+codimension one.  The surviving certificates are the two closed-point
+saturation tests and the graded coefficient-gauge/base-change obstruction.
 When the defect vanishes,
 Deligne--Faddeev and Quillen--Suslin extract a global binary cubic.  If its
 coefficient morphism is affine-linear and the source is the full simple-root
 open, the three hyperplane orbits force the tangent-nonosculating slice and
-the foundational map.  The remaining cubic problem is thereby reduced to
-point-flatness, coefficient linearity, and exclusion of extra simple
-boundary.  The accompanying
+the foundational map.  For a boundary-minimal cubic, the remaining problem
+is thereby reduced to point-flatness and coefficient
+gauge/base-change rigidity.  The accompanying
 [gauge-straightening theorem](cancellation/CUBIC_GAUGE_STRAIGHTENING.md)
 removes an infinite apparent obstruction: every slice
 `C_1=q-3C_0h`, `q!=0`, with `h` invariant under the translation locally
@@ -280,7 +323,8 @@ degree sum shows that the critical divisor has exactly its ramified double
 sheet and one affine simple sheet, so any extra simple boundary would have
 to create a distinct second nonproperness divisor.  Its exact detector is
 the phantom factor `u_F=j_F/delta_F`; proving the nonproperness hypersurface
-irreducible makes this factor a unit.
+irreducible makes this factor a unit.  Boundary minimality now supplies
+that irreducibility automatically.
 
 Its [all-degree rational-fiber corollary](verified/ALL_DEGREE_RATIONAL_FIBERS.md)
 gives, for every `N>=3`, a Keller map with a complete fiber of exactly `N`
@@ -324,9 +368,43 @@ The [common-arithmetic-fiber theorem](verified/COMMON_ARITHMETIC_FIBERS.md)
 shows that the fiber does not determine the surrounding map: for every
 `N>=4`, two fixed stably inequivalent `Q`-defined maps share a Hilbert family
 of connected complete degree-`N` fibers.  Over `Q(sqrt(-2))`, three fixed
-pairwise inequivalent quartic maps share one Hilbert family.  The
+pairwise inequivalent quartic maps share one Hilbert family.  One optimized
+connected member is cut out by the rational integer polynomial
+`9W^4-19W^3+10W^2-8W-4`; it occurs in the weighted, cancellation, and
+quadratic-gauge maps with stable unit ranks `(1,2,2)`, reciprocal
+Laurent-support ranks `(1,2)`, and boundary nilpotency indices `(1,6,2)`.
+The verified note contains the optimized individual certificate; the
 [standalone paper](papers/common-arithmetic-fibers/main.tex) gives the
-optimized proof and explicit quartic certificates.
+fixed-family proof and the earlier explicit quartic certificates.
+The
+[universal Keller-fiber multiplicity theorem](verified/UNIVERSAL_KELLER_FIBER_MULTIPLICITY.md)
+goes beyond a fixed example: over every number field, every finite etale
+algebra of rank at least four occurs as a complete fiber in infinitely many
+stable polynomial left--right classes.  In rank four,
+[weighted trace-chord normalization](verified/UNIVERSAL_QUARTIC_FIBER_MULTIPLICITY.md)
+reduces existence to the five-variable quadric
+`Tr(eta^2)=2e^2+4u^2`; local isotropy and Hasse--Minkowski supply a rational
+threefold, while weighted selected-root Torelli separates its nonconstant
+seed parameter.  In every rank at least five, over any characteristic-zero
+field, translated primitive generators move a quadratic-gauge stable
+invariant: `a_5^5/(a_3 a_4^6)` in
+[degree five](verified/UNIVERSAL_QUINTIC_FIBER_MULTIPLICITY.md), and
+`a_(N-2)a_N/a_(N-1)^2` in all higher degrees.  Thus the universal lower
+bound is infinity rather than three.
+The
+[adversarial audit](verified/UNIVERSAL_MULTIPLICITY_ADVERSARIAL_AUDIT.md)
+checks every generator, clean-locus, full-fiber, arithmetic, and
+stable-separation dependency.  The
+[degree-four, five, and six witness cards](verified/UNIVERSAL_MULTIPLICITY_WITNESS_CARDS.md)
+give three explicit pairwise stably inequivalent maps for each of the
+connected fields cut out by `T^4-3T^2-1`, `T^5+T^3+1`, and
+`T^6+T^4+1`.  The
+[low-rank boundary theorem](verified/LOW_RANK_MULTIPLICITY_BOUNDARIES.md)
+shows that the quartic trace-chord form can be anisotropic over
+`Q((a))((b))`, while in rank three all weighted, cancellation, and
+quadratic-gauge presentations collapse to the foundational cubic class.
+Thus the remaining low-rank questions require a new quartic mechanism or
+the unrestricted cubic classification, not another translation search.
 The [minimal-degree sharpening](verified/MINIMAL_HASSE_PRINCIPLE_KELLER_FIBER.md)
 affinely tangent-normalizes the classical Berend--Bilu quintic
 `(X^3-19)(X^2+X+1)`.  It gives a degree-five Keller map with an everywhere
@@ -371,6 +449,26 @@ then gives the proposed incidence an explicit determinant-one ambient
 completion, but exact division shows that the assembled inverse blowdown is
 not polynomial, and its Jacobian is a nonconstant ratio of boundary
 pullbacks.  More generally, every automorphic incidence route is excluded.
+The separate
+[root-incidence derivative split](extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md)
+returns to the generic quartic itself.  In its rank-four root algebra it
+splits `1/P'(T)` between two coordinates carrying one orientation pole each
+and preserves the generic root field.  An exact residual-factor calculation
+shows why this localized split is not yet polynomial and identifies the
+first divisor that a source-dependent two-mask chart must cancel.  Pulling
+the split back to the current rational root chart leaves the nonconstant
+factor `H^6/(2 Theta K^6 L^3)`; the reciprocal unit required by that chart
+is still `H^3/(4K^3L)`, so changing only the quartic coordinates does not
+escape the cone ledger.  Exact four-branch interpolation nevertheless
+expresses this correct reciprocal in the quartic root basis with denominator
+`B^2 rho sigma`.  Grouping it as `B^2 | rho sigma` gives a localized
+two-mask determinant-one fourfold suspension, but all three target boundary
+components remain genuine poles.  A polynomial realization now requires a
+new affine source modification, not another quotient-algebra rechart.  A
+local viability screen is negative for the simplest such modification:
+all three components share a nontransverse cusp/tangency cluster, where the
+second mask needs order three but its displayed numerator supplies only
+order one.
 The surviving construction must be nonautomorphic and log-crepant:
 its new boundary pullback must equal the old boundary pullback times its
 Jacobian, while both inverse-mask numerators remain divisible.  The relative
@@ -391,6 +489,9 @@ explicit rational targets give respectively a split fiber, irreducible
 `S_5` and `A_5` fields, a quadratic-times-cubic algebra, and a Hasse failure.
 Three further targets realize `C_5`, `D_5`, and `F_{20}`, so this one map
 contains all five transitive quintic Galois groups.
+The [universal quintic witness card](verified/UNIVERSAL_QUINTIC_CALCULATOR.md)
+compresses those five groups to projective height at most `21`, with at most
+three exact integer checks per row and an oracle-free verifier.
 The original Hasse row has target `(4,-335/27,4807/20736)`, common quadratic
 resolvent `Q(sqrt(-3))`, projective height `257280`, and four explicit
 exceptional local checks.  Varying the resolvent produces a second certified
@@ -784,6 +885,13 @@ frontiers:
   cubic fiber-minimality (equivalently no zero-dimensional flatness defect),
   affine-linearity of the intrinsic binary-cubic coefficient map, and
   absence of extra simple boundary.
+- `OP-UG3`: arbitrary-cubic ungraded exclusion.  To turn the quartic
+  example into a proved geometric-degree minimum, the same cubic frontend
+  must apply without boundary minimality.  Proposition 1.4 forces every
+  critical target component to have the unique ledger
+  `(2,1)_boundary+(1,1)_affine`; the additional divisorial case is exactly
+  a distinct unramified nonproperness component.  It is not removed by the
+  current minimal-boundary theorem.
 
 In particular, `b_m=34m+1` is an exact source-only profile in one
 determinant-normalized target gauge.  It is not target-minimal and is not a

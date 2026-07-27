@@ -16,27 +16,19 @@ irreducible polynomial gives a connected full Keller fiber; and a
 degree-\(N\) input is realized in \(\A^3\) with coordinate degree at most
 \(6N+2\).  Every map
 produced by the construction has geometric and arithmetic generic monodromy
-\(S_N\).  Over a Hilbertian field, each such fixed map has infinitely many
-connected full Keller fibers with splitting-field group \(S_N\).
+\(S_N\).  The primitive action makes every realization map absolutely and
+stably compositionally indecomposable.  Thus monodromy supplies a structural
+property of the polynomial map, rather than only a generic Galois label.
+Over a Hilbertian field, each such fixed map has infinitely many connected
+full Keller fibers with splitting-field group \(S_N\).
 
-The Hasse application is arithmetic before it is geometric.  The
-degree-four fixed-point lemma and Chebotarev give a local--global theorem for
-finite \'etale schemes over every number field.  The Berend--Bilu scheme is
-therefore rank-minimal over \(\Q\) independently of Keller maps; realization
-then supplies the explicit Keller-fiber corollary.
-
-The construction also has a simple geometric starting point.  The cubic seed
-is an affine chart of normalized multiplication
-\[
- (L,Q)\longmapsto LQ,\qquad \operatorname{Res}(L,Q)=1,
-\]
-with a marked linear factor of a binary cubic.  Its three generic inverse
-branches are the three choices of marked root, and the resultant condition is
-the local-invertibility mechanism.  The quadratic gauge carries this
-marked-root reconstruction from the cubic seed to an arbitrary inverse
-polynomial \(G\); this is the geometric bridge from the announced
-counterexample to the all-degree realization theorem
-\cite{TaoDigest}.
+The cubic seed admits two useful explanations.  Normalized multiplication of
+a marked linear and quadratic binary form explains its three marked-root
+branches \cite{TaoDigest}; the mixed-sign quotient explains its grading and
+contracted locus \cite{Shaska}.  These viewpoints motivate the gauge.  The
+load-bearing argument remains the exact identity \(E'=g_1D\) and the boxed
+root-to-source reconstruction, which work for every prescribed inverse
+polynomial and every commutative test algebra.
 
 Appendix~\ref{app:gauge-identities} retains the coefficientwise expansion
 from the compact inverse design to the displayed polynomial coordinates.
@@ -68,27 +60,27 @@ with the known degree-two obstruction.  I searched for earlier results up to
 24 July 2026, but this priority statement is necessarily qualified: searches
 can miss unpublished work or a theorem stated in different language.
 
-The closest constructions have a different scope.  Gallagher gives explicit
-Keller maps in every geometric degree together with complete split rational
-fibers \cite{Gallagher}; these realize \(K^N\), rather than an arbitrary
-finite \'etale \(K\)-algebra.  Miranda--Neto studies radicality and
-maximal-ideal decompositions of fibers that already come from Keller maps
-\cite{Miranda}.  Lipton and Markakis connect rational images with Hilbert
-irreducibility \cite{LiptonMarkakis}, and Shaska studies graded Keller maps
-and arithmetic thinness \cite{Shaska}.  The monodromy argument here uses the
-classical theorem that a Morse polynomial has symmetric Galois group over the
-value-function field \cite[Theorem~4.4.5]{Serre}.
+The existence of Keller maps in every generic degree is shared terrain.
+Gallagher gives explicit all-degree families with complete split rational
+fibers \cite{Gallagher}; Migus explicitly uses the available all-degree
+constructions as input in the real non-dense-image problem \cite{Migus}.
+Shaska studies the grading, quotient geometry, and arithmetic thinness of the
+cubic map \cite{Shaska}.  None of these results reverses the quantifiers to
+realize an arbitrarily prescribed finite \'etale algebra as the complete
+fiber.  Miranda--Neto studies decompositions of fibers already arising from
+Keller maps \cite{Miranda}, while Lipton and Markakis connect rational images
+with Hilbert irreducibility \cite{LiptonMarkakis}.  The monodromy argument
+here uses the classical theorem that a Morse polynomial has symmetric Galois
+group over the value-function field \cite[Theorem~4.4.5]{Serre}.
 
 \paragraph{Provenance and AI assistance.}
 The recent three-dimensional counterexample was announced by Alp\"oge, who
 credited Akhil Mathew for suggesting the problem and Fable for producing the
-example \cite{Alpoge}.  Gallagher independently developed a weighted
-all-degree viewpoint and a public atlas of complete rational fibers
-\cite{Gallagher}.  The present proof uses a root-engineered quadratic gauge
-that contains the announced map as the seed \(S+S^3\).  Berend and Bilu
-supplied the classical intersective quintic, while Campbell, Razar, and
-Wright supplied the degree-two obstruction
-\cite{Campbell,Razar,Wright}.
+example \cite{Alpoge}.  Its determinant and collision have since received an
+independent Isabelle/HOL formalization \cite{IsabelleAFP}; this paper retains
+it only as the cubic seed \(S+S^3\).  Gallagher independently developed an
+all-degree atlas \cite{Gallagher}.  Campbell, Razar, and Wright supply the
+degree-two obstruction \cite{Campbell,Razar,Wright}.
 
 I used generative AI tools during exploration, symbolic-checker development,
 proof review, literature search, Lean formalization, and manuscript editing.

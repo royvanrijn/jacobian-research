@@ -426,6 +426,70 @@ three.  The conjectural content is exactly the existence, uniqueness, and
 verification of the marked witness; the implications after the witness are
 theorems.
 
+### Proposition 2.5 -- boundary minimality removes the phantom divisor
+
+Let \(F:\mathbb A^3\to\mathbb A^3\) be boundary-minimal among nonproper
+Keller maps of geometric degree three.  Then
+
+\[
+\boxed{\mu(F)=(1,1,1).}
+\]
+
+In particular, the canonical normalization has a unique boundary prime
+\(D_*\), it is ramified with different order one, and it is fixed by every
+automorphism of \(\mathcal L(F)\).  The reduced target boundary \(B_F\),
+equivalently the Jelonek nonproperness hypersurface in codimension one, is
+irreducible.  Its unique component is the branch divisor of the canonical
+cubic normalization.  In the notation of Proposition 2.1a of
+[`CUBIC_NORMALIZATION_FRONTEND.md`](CUBIC_NORMALIZATION_FRONTEND.md),
+
+\[
+\boxed{j_F=\lambda\delta_F,\qquad \lambda\in k^\times.}
+\tag{2.5}
+\]
+
+Consequently a boundary-minimal cubic has no unramified boundary prime over
+a second target divisor.
+
+#### Proof
+
+The foundational cubic is the \((m,r)=(1,1)\) cancellation map.  Its
+complete boundary ledger consists of one boundary prime of type
+\((e,f)=(2,1)\), with tame different order one, mapping to its irreducible
+cubic discriminant.  Its graph-at-infinity equation is that same
+discriminant.  Thus its invariant is \((1,1,1)\).
+
+For every nonproper generically finite polynomial map, the nonproperness set
+has a divisorial component; hence the first coordinate of (2.3) is at least
+one.  Once this coordinate is one, the boundary is nonempty, so the second
+coordinate is at least one.  The branch divisor is nonempty and is the image
+of a ramified boundary prime, so after the second coordinate is one the
+third coordinate is at least one.  Lexicographic boundary minimality and the
+foundational competitor therefore force all three equalities.
+
+It follows in particular that
+
+\[
+\#\operatorname{Irr}(B_F)=1.
+\]
+
+The sole boundary prime is ramified with different order one.
+Uniqueness makes this prime invariant under every automorphism of the
+canonical finite-normalization object.  Its branch image is contained in
+the irreducible \(B_F\), so the two agree in codimension one.  Proposition
+2.1a of the cubic normalization frontend gives (2.5) and excludes every
+second unramified target divisor.  QED
+
+The qualifier “boundary-minimal” cannot be dropped by minimization alone.
+The invariant \(\mu\) is constant under polynomial left--right equivalence,
+so an arbitrary genuinely ungraded cubic with a larger boundary ledger
+need not have an equivalent representative in the minimal stratum.
+Consequently Proposition 2.5 closes the phantom-divisor certificate for the
+minimal-boundary classification, but a global geometric-degree lower bound
+for ungraded examples still requires exclusion of the extra unramified
+target divisor for an arbitrary cubic, or a separate reduction preserving
+the absence of a torus action.
+
 ## 3. What the repository already proves
 
 The existing argument can be organized as the following implication chain.
@@ -744,7 +808,10 @@ Proposition 2.1a writes the reduced nonproperness equation as
 where `delta_F` is the unique cubic branch equation.  The factor `u_F` is a
 unit exactly when no unramified boundary divisor remains.  Thus target
 irreducibility of the nonproperness hypersurface closes this gap without
-classifying compactifications.
+classifying compactifications.  Proposition 2.5 proves this irreducibility
+automatically for a boundary-minimal cubic.  The normalization frontend for
+the minimality problem therefore has only the closed-point saturation and
+coefficient-gauge/base-change certificates left.
 
 These local generators cannot be globalized away.  Proposition 2.2 of the
 frontend shows that a global monogenic cubic presentation would make its
@@ -955,7 +1022,8 @@ Useful degree-three specializations are:
    upper or lower unipotent shear.
 9. the critical target divisor exhausts the cubic DVR degree as one
    ramified boundary sheet of index two plus one affine simple sheet; any
-   extra simple boundary must lie over a separate unramified target divisor.
+   extra simple boundary would lie over a separate unramified target divisor,
+   and Proposition 2.5 now excludes that divisor by boundary minimality.
 
 Items 1--4 compress the marking problem substantially, but none alone proves
 that the `G_m` ambient function is intrinsically selected, that the

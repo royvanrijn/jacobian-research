@@ -18,7 +18,7 @@ from __future__ import annotations
 
 import argparse
 from collections import Counter
-from concurrent.futures import ThreadPoolExecutor, as_completed
+from concurrent.futures import ThreadPoolExecutor
 from math import gcd, isqrt
 import hashlib
 import json
@@ -33,6 +33,11 @@ from verify_degree_five_qper_fitting_basis import (
     frozen_basis_lines,
     primitive_minor_lines,
 )
+
+try:
+    from flint import fmpz
+except ImportError:  # pragma: no cover - dependency is present in the repo venv
+    fmpz = None
 
 
 DEFAULT_OUTPUT = (
@@ -244,9 +249,15 @@ def run_prime(
 
 def rational_reconstruct(residue: int, modulus: int) -> tuple[int, int] | None:
     """Return the balanced rational reconstruction, when it exists."""
-    bound = isqrt(modulus // 2)
-    old_remainder, remainder = modulus, residue
-    old_coefficient, coefficient = 0, 1
+    if fmpz is None:
+        bound = isqrt(modulus // 2)
+        old_remainder, remainder = modulus, residue
+        old_coefficient, coefficient = 0, 1
+    else:
+        old_remainder = fmpz(modulus)
+        remainder = fmpz(residue)
+        bound = (old_remainder // 2).isqrt()
+        old_coefficient, coefficient = fmpz(0), fmpz(1)
     while remainder > bound:
         quotient = old_remainder // remainder
         old_remainder, remainder = (
@@ -268,7 +279,7 @@ def rational_reconstruct(residue: int, modulus: int) -> tuple[int, int] | None:
         or (numerator - residue * denominator) % modulus
     ):
         return None
-    return numerator, denominator
+    return int(numerator), int(denominator)
 
 
 def flatten_record(record: dict) -> tuple[list[list[int]], list[int]]:
@@ -423,6 +434,9 @@ def reconstruction_diagnostic(state: dict) -> dict | None:
 
     candidates = 0
     validated = 0
+    validated_by_input: Counter[int] = Counter()
+    maximum_numerator_bits = 0
+    maximum_denominator_bits = 0
     holdout_prime = holdout["prime"]
     for index, residue in enumerate(state["residues"]):
         fraction = rational_reconstruct(residue, state["modulus"])
@@ -437,12 +451,24 @@ def reconstruction_diagnostic(state: dict) -> dict | None:
         ) % holdout_prime
         if expected == holdout["coefficients"][index]:
             validated += 1
+            validated_by_input[state["support"][index][0]] += 1
+            maximum_numerator_bits = max(
+                maximum_numerator_bits,
+                abs(numerator).bit_length(),
+            )
+            maximum_denominator_bits = max(
+                maximum_denominator_bits,
+                denominator.bit_length(),
+            )
     return {
         "build_primes": len(state["crt_primes"]),
         "build_modulus_bits": state["modulus"].bit_length(),
         "holdout_prime": holdout_prime,
         "candidates": candidates,
         "validated": validated,
+        "validated_by_input": dict(sorted(validated_by_input.items())),
+        "maximum_numerator_bits": maximum_numerator_bits,
+        "maximum_denominator_bits": maximum_denominator_bits,
         "total": len(state["residues"]),
     }
 
@@ -501,6 +527,11 @@ def main() -> None:
         "--no-resume",
         action="store_true",
         help="ignore an existing output checkpoint",
+    )
+    parser.add_argument(
+        "--skip-diagnostic",
+        action="store_true",
+        help="skip balanced reconstruction against the held-out prime",
     )
     args = parser.parse_args()
     if args.timeout < 1:
@@ -627,23 +658,25 @@ def main() -> None:
         )
         completed_since_checkpoint = 0
         with ThreadPoolExecutor(max_workers=args.jobs) as executor:
-            futures = {
-                executor.submit(
-                    run_prime,
-                    singular,
+            futures = [
+                (
                     prime,
-                    basis_path,
-                    args.timeout,
-                ): prime
+                    executor.submit(
+                        run_prime,
+                        singular,
+                        prime,
+                        basis_path,
+                        args.timeout,
+                    ),
+                )
                 for prime in pending_primes
-            }
-            for future in as_completed(futures):
-                prime = futures[future]
+            ]
+            for prime, future in futures:
                 try:
                     accept_record(future.result())
                 except Exception as error:
                     print(f"FAILED_PRIME={prime}: {error}", flush=True)
-                    for pending in futures:
+                    for _, pending in futures:
                         pending.cancel()
                     if completed_since_checkpoint:
                         checkpoint()
@@ -685,7 +718,11 @@ def main() -> None:
             else "none"
         )
     )
-    diagnostic = reconstruction_diagnostic(state)
+    diagnostic = (
+        None
+        if args.skip_diagnostic
+        else reconstruction_diagnostic(state)
+    )
     if diagnostic is not None:
         print(
             "RECONSTRUCTION_DIAGNOSTIC="
@@ -694,7 +731,16 @@ def main() -> None:
             f"holdout:{diagnostic['holdout_prime']},"
             f"candidates:{diagnostic['candidates']},"
             f"validated:{diagnostic['validated']},"
-            f"total:{diagnostic['total']}"
+            f"total:{diagnostic['total']},"
+            f"max_num_bits:{diagnostic['maximum_numerator_bits']},"
+            f"max_den_bits:{diagnostic['maximum_denominator_bits']},"
+            "by_input:"
+            + "|".join(
+                f"{index}={count}"
+                for index, count in diagnostic[
+                    "validated_by_input"
+                ].items()
+            )
         )
 
 

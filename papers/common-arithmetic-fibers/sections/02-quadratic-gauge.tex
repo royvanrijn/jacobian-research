@@ -51,9 +51,28 @@ Then the inverse equation
 holds by construction, and its derivative satisfies
 \begin{equation}
  D=\frac{G_\Pi'(S)}{g_1}-BS
-  =\frac{E_{\Pi,B,C}'(S)}{g_1}.
+ =\frac{E_{\Pi,B,C}'(S)}{g_1}.
  \label{eq:D-derivative}
 \end{equation}
+
+This identity already gives the root-to-source reconstruction.  Fix
+\((\pi,b,c)\in K^*\times K^2\), let \(s\) be a root of
+\(E_{\pi,b,c}\), and suppose \(E_{\pi,b,c}'(s)\) is invertible.  Then the
+source point is recovered by the single formula
+\begin{equation}
+\boxed{
+\begin{gathered}
+ d=\frac{E_{\pi,b,c}'(s)}{g_1},\qquad
+ Q=b-\beta(\pi,s),\qquad t=d^{-1},\\
+ x=sd^{-1},\qquad y=Q-\pi s,\qquad q=\pi d,\\
+ z=d^2\left(q-\frac{g_1}{g_3}y^2(1+3t)\right).
+\end{gathered}}
+\label{eq:boxed-root-reconstruction}
+\end{equation}
+The only localization is the inverse of the derivative unit \(d\).  The
+proof of Theorem~\ref{thm:localized-gauge} verifies over an arbitrary
+commutative test algebra that this formula and extraction of the marked root
+are mutually inverse.
 
 The Jacobian calculation is already visible in these coordinates.  At fixed
 \(\Pi\), differentiating \eqref{eq:B-compact}--\eqref{eq:C-compact} gives
@@ -111,106 +130,20 @@ problem above, not a formula guessed in the source coordinates.  Once
 \eqref{eq:tq} is fixed, the pullback is forced coefficient by coefficient.
 Appendix~\ref{app:gauge-identities} records that expansion in full.
 
-The smallest seed recovers the counterexample that motivated this work.  Take
-\[
- G(S)=S+S^3.
-\]
-Then
-\[
- q=(1+xy)^2z+y^2(4+3xy),
-\]
-and \eqref{eq:gauge-map} becomes, coordinate for coordinate,
-\begin{equation}
-\begin{aligned}
- \Pi={}&(1+xy)^3z+y^2(1+xy)(4+3xy),\\
- B={}&y+3x(1+xy)^2z+3xy^2(4+3xy),\\
- C={}&2x-3x^2y-x^3z.
-\end{aligned}
-\label{eq:announced-counterexample}
-\end{equation}
-This is exactly the map announced by Alp\"oge \cite{Alpoge}: there is no
-change of source coordinates, target coordinates, or scaling hidden in the
-comparison.  In particular, the general determinant theorem below specializes
-directly to its Jacobian determinant $-2$.
+\subsection{Motivation: the cubic seed and its quotient}
 
-\begin{remark}[The normalized marked-factor origin]\label{rem:factorization-origin}
-As explained geometrically by Tao \cite{TaoDigest}, begin with multiplication
-of a binary linear form and a binary quadratic form,
-\[
- (L,Q)\longmapsto LQ,\qquad
- \operatorname{Sym}^1(K^2)\times\operatorname{Sym}^2(K^2)
- \longrightarrow\operatorname{Sym}^3(K^2).
-\]
-The product is unchanged by
-\((L,Q)\mapsto(\lambda L,\lambda^{-1}Q)\).  Since
-\[
- \operatorname{Res}(\lambda L,\lambda^{-1}Q)
- =\lambda\operatorname{Res}(L,Q),
-\]
-the equation \(\operatorname{Res}(L,Q)=1\) fixes this relative scaling.
-For a generic cubic \(L_1L_2L_3\), the three inverse branches are the three
-normalized factorizations obtained by marking \(L_1\), \(L_2\), or \(L_3\)
-as the linear factor.  Nonvanishing of the resultant says that the marked
-root is disjoint from the residual quadratic; equivalently, the
-coefficient--resultant multiplication map is \'etale along this normalized
-slice.
-
-There is also a representation-theoretic reason for the particular
-coefficient slice used here.  An affine hyperplane in
-\(\operatorname{Sym}^3(K^2)\) that avoids the origin is specified by a
-nonzero element of the dual representation.  After scalar extension to an
-algebraic closure, this element is a binary cubic.  Up to the natural
-\(\operatorname{SL}_2\)-action and overall scaling, its roots have one of
-the three multiplicity partitions
-\[
- (1,1,1),\qquad (2,1),\qquad (3).
-\]
-The slice in the counterexample is the middle orbit.  Indeed, write
-\[
- L=aU+bV,\qquad Q=cU^2+dUV+eV^2,
-\]
-and
-\[
- LQ=fU^3+gU^2V+hUV^2+iV^3.
-\]
-The dual operator
-\(\tfrac12\partial_U^2\partial_V\) has root type \((2,1)\), and its affine
-hyperplane is \(g=1\), or equivalently \(ad+bc=1\).  As Tao observes
-\cite{TaoDigest}, this double-root orbit is the one in which the normalized
-source exhibits the affine-three-space phenomenon.  We use this orbit
-comparison only as motivation for the gauge choice; no classification of the
-resulting source varieties in the other two orbit types is needed or proved
-here.
-
-For completeness, the affine chart can be seen globally in coordinates.
-The normalized source is
-\[
- X=\left\{(a,b,c,d,e)\in\A^5:
- a^2e-abd+b^2c=1,\quad ad+bc=1\right\}.
-\]
-It is polynomially isomorphic to \(\A^3_{a,y,z}\).  In one direction,
-\begin{align*}
- b&=1+ay,\\
- c&=1-\frac32ay+a^2z,\\
- d&=\frac12y-az+\frac32ay^2-a^2yz,\\
- e&=-2z+4y^2-4ayz+3ay^3-2a^2y^2z;
-\end{align*}
-the polynomial inverse is
-\[
- \boxed{
- a=a,\qquad
- y=2bd-ae,\qquad
- z=2d^2+ce+6bd^2+3bce-\frac92e.}
-\]
-Direct substitution verifies both compositions, including on \(a=0\);
-thus no localization is hidden in the assertion \(X\simeq\A^3\).
-
-The seed \(G(S)=S+S^3\) is this affine three-space chart of the normalized
-marked-factor map.  The quadratic gauge should therefore be read as retaining
-the marked-root reconstruction of the cubic model while replacing its cubic
-inverse equation by the arbitrary polynomial \(G\).  Its roots label the
-inverse branches just as the three marked roots do in the seed case.
-\end{remark}
+For \(G(S)=S+S^3\), formula \eqref{eq:gauge-map} specializes coordinatewise
+to the map announced by Alp\"oge \cite{Alpoge}.  We use that map only as the
+cubic seed of the construction; its determinant and collision now also have
+an independent Isabelle/HOL formalization \cite{IsabelleAFP}.  The geometric
+motivation is normalized multiplication of a marked linear factor and a
+quadratic factor of a binary cubic: the three marked roots give the three
+inverse branches, while a nonzero resultant supplies local invertibility
+\cite{TaoDigest}.  Shaska's mixed-sign grading and quotient viewpoint gives
+a complementary explanation of the Jacobian cancellation on the contracted
+quotient \cite{Shaska}.  Neither viewpoint replaces the derivative-unit
+formula \eqref{eq:boxed-root-reconstruction}, which is what identifies the
+complete fiber functor for an arbitrary inverse polynomial.
 
 Thus the three-variable inverse problem is governed by the single equation
 \(E_{\Pi,B,C}(S)=0\), and the same derivative that controls reconstruction
@@ -276,13 +209,9 @@ The construction above gives the identities
 Equations \eqref{eq:source-chart-jacobian} and
 \eqref{eq:plane-jacobian} give \(\det DF_G=-2\) on the dense open set
 \(t\neq0\), and hence everywhere.
-For the cubic seed, this determinant identity is the coordinate shadow of
-the geometric fact in Remark~\ref{rem:factorization-origin}: over the
-nonvanishing-resultant locus, the product cubic locally identifies the marked
-root, while the resultant normalization fixes the relative scaling, so
-normalized marked factorization is \'etale \cite{TaoDigest}.  The calculation
-above shows that the same cancellation persists for every admissible seed
-\(G\).
+For the cubic seed, this agrees with the normalized marked-factor
+interpretation above.  The displayed calculation proves that the same
+cancellation persists for every admissible seed \(G\).
 
 We now identify the entire fiber.  Let $A$ be an arbitrary commutative
 $K$-algebra.  An $A$-point $(x,y,z)$ above $(\pi,b,c)$ satisfies
@@ -305,25 +234,8 @@ are therefore defined on every point of the fiber.  Equations
 Thus every source point gives a root $S$ of $E$ for which $E'(S)$ is a unit.
 
 Conversely, suppose $s\in A$ satisfies $E(s)=0$ and $E'(s)\in A^*$.  Put
-\[
- d=\frac{E'(s)}{g_1},
-\]
-and define
-\[
- Q=b-\beta(\pi,s),
- \qquad
- t=d^{-1},
- \qquad
- x=sd^{-1},
- \qquad
- y=Q-\pi s,
-\]
-followed by
-\[
- q=\pi d,
- \qquad
- z=d^2\left(q-\frac{g_1}{g_3}y^2(1+3t)\right).
-\]
+the variables \(d,Q,t,x,y,q,z\) equal to the expressions in the boxed
+reconstruction formula \eqref{eq:boxed-root-reconstruction}.
 The derivative identity says exactly that
 \[
  d=1-sQ+\pi s^2.
@@ -662,6 +574,63 @@ forces the arithmetic group to be $S_N$ as well.  A linear automorphism of
 the target does not change either monodromy group, so the same conclusion
 holds for $\widetilde F_G$.
 \end{proof}
+
+\begin{corollary}[Absolute and stable compositional atomicity]
+\label{cor:stable-atomicity}
+Let \(F\) be any realization map \(F_G\) or \(\widetilde F_G\) above.  If
+\[
+ F=H_2\circ H_1
+\]
+as polynomial self-maps of \(\A^3_K\), then one factor is a polynomial
+automorphism.  The same conclusion holds after every characteristic-zero
+extension of \(K\), after every stabilization
+\[
+ F\times\operatorname{id}_{\A^r},
+\]
+and after polynomial changes of source and target coordinates.  Thus every
+realization map is absolutely and stably compositionally indecomposable.
+\end{corollary}
+
+\begin{proof}
+Over an algebraic closure, write
+\[
+ K_0=\overline K(F_1,F_2,F_3)
+ \subset L=\overline K(x,y,z).
+\]
+The generic sheets form the natural \(S_N\)-set.  This action is primitive:
+its point stabilizer \(S_{N-1}\) is maximal in \(S_N\).  Galois
+correspondence therefore gives no proper intermediate field between \(K_0\)
+and \(L\).
+
+Any factorization \(F=H_2\circ H_1\) gives such an intermediate field.
+Both factors are dominant, and the chain rule
+\[
+ \det DF=(\det DH_2)\circ H_1\cdot\det DH_1\in K^*
+\]
+shows that both are Keller maps: the only units in a polynomial ring are
+constants, and dominance of \(H_1\) makes pullback injective.  Primitivity
+forces one factor to have geometric degree one.  A degree-one Keller
+self-map of affine space is an automorphism: it is birational and \'etale,
+hence an open immersion by Zariski's Main Theorem; a proper complement is
+excluded first in codimension one by the unit group of affine space and then
+in codimension at least two by normal Hartogs extension.
+
+Extension of the constant field does not change the geometric monodromy
+action.  Stabilization replaces \(K_0\subset L\) by
+\[
+ K_0(t_1,\ldots,t_r)\subset L(t_1,\ldots,t_r),
+\]
+with the same Galois closure, group, and point stabilizer.  The preceding
+argument therefore applies after every extension and stabilization.
+Conjugating by polynomial automorphisms plainly preserves the conclusion.
+\end{proof}
+
+\begin{remark}
+Taking \(N=12\) gives an atomic Keller map of composite geometric degree.
+An explicit sparse formula and independent certificate are recorded
+\href{https://github.com/royvanrijn/jacobian-research/blob/main/verified/INDECOMPOSABLE_COMPOSITE_DEGREE.md}
+{separately in the accompanying repository}.
+\end{remark}
 
 \begin{corollary}[Hilbertian specializations]\label{cor:hilbert-monodromy}
 Suppose that $K$ is Hilbertian.  For every seed \eqref{eq:seed}, there are

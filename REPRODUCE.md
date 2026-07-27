@@ -57,6 +57,12 @@ remain as a regression:
 .venv/bin/python scripts/verify_degree_twelve_wreath_elimination.py
 .venv/bin/python scripts/verify_all_degree_rational_fibers.py
 .venv/bin/python scripts/verify_common_arithmetic_fibers.py
+.venv/bin/python scripts/search_cross_family_collision.py
+.venv/bin/python scripts/verify_universal_quartic_fiber_multiplicity.py
+.venv/bin/python scripts/verify_universal_quintic_fiber_multiplicity.py
+.venv/bin/python scripts/verify_universal_higher_degree_fiber_multiplicity.py
+.venv/bin/python scripts/verify_universal_multiplicity_witness_cards.py
+.venv/bin/python scripts/verify_low_rank_multiplicity_boundaries.py
 .venv/bin/python scripts/verify_real_fiber_spectrum.py
 .venv/bin/python scripts/verify_adelic_fiber_engineering.py
 .venv/bin/python scripts/verify_hasse_keller_fiber.py
@@ -76,24 +82,94 @@ of exponent one, separates the other boundary image, and certifies
 The common-fiber checker synthesizes the arithmetic transfer and stable
 boundary results.  It verifies the fixed all-degree pair over `Q`, the
 fixed quartic triple over `Q(sqrt(-2))`, the small rational quartic, and the
-mod-`17` irreducibility certificate for the connected triple fiber.
+mod-`17` irreducibility certificates for the connected triple fibers.  The
+following search command enumerates the declared rational tangent-chord,
+scale, and constant-term boxes, checks the weighted and quadratic
+presentation gates, filters at a split prime of `Q(sqrt(-2))`, and recovers
+the coefficient-minimal shared polynomial
+`9W^4-19W^3+10W^2-8W-4`.
+
+The universal-quartic checker verifies the trace-zero quartic
+tangent-chord factorization, its diagonal rank-five trace quadric, the three
+possible indefinite real signatures, the normalized weighted parameter
+`alpha=u/e-1/2`, and the finite clean-locus exclusions.  Over a number
+field, the uniform existence and infinitude proof uses local isotropy,
+Hasse--Minkowski, and rational-point density on the resulting smooth quadric,
+as recorded in
+[`verified/UNIVERSAL_QUARTIC_FIBER_MULTIPLICITY.md`](verified/UNIVERSAL_QUARTIC_FIBER_MULTIPLICITY.md);
+it is not a bounded-search conclusion.
+
+The universal-quintic checker verifies the translated quintic derivative
+jets, the primitive relation `(-1,-6,5)` among the three quadratic-gauge
+stable-moduli weights, the invariant
+`a_5^5/(a_3*a_4^6)=g_5^5*g_1^2/(g_3*g_4^6)`, and its forced pole after
+choosing a trace-zero primitive generator with nonzero second trace moment.
+The written argument then gives infinitely many stable classes for every
+rank-five finite etale algebra over every characteristic-zero field.  The
+higher-degree checker verifies the universal top-weight relation and
+
+```text
+J_N=a_(N-2)*a_N/a_(N-1)^2
+   =(N-1)/(2N)+c_(N-2)/(N^2*s^2),
+```
+
+which proves the same conclusion in every rank `N>=6`.  Together with the
+quartic argument, this gives infinite universal multiplicity over number
+fields in every rank at least four, as recorded in
+[`verified/UNIVERSAL_KELLER_FIBER_MULTIPLICITY.md`](verified/UNIVERSAL_KELLER_FIBER_MULTIPLICITY.md).
+The next checker supplies connected degree-four, degree-five, and degree-six
+three-map witness cards, including modular irreducibility, exact targets,
+complete inverse identities, and distinct stable invariant values.  The
+low-rank checker verifies the collapse of all three present cubic mechanisms
+and the exact biquadratic trace form used in the written two-step Springer
+anisotropy proof.
 
 The Hasse-fiber command expands an explicit degree-eight weighted map, checks
 its determinant `-38`, proves that its complete target fiber has no rational
 point, and audits roots over `R` and every `Q_p` through the elementary
 quadratic-residue covering and the two exceptional Hensel lifts.
 
-The fixed-quintic zoo command checks one determinant-`-2` map, the five
-headline complete fibers (split, `S_5`, `A_5`, quadratic-times-cubic, and
-Hasse failing), and three additional targets realizing `C_5`, `D_5`, and
-`F_{20}`.  The group certificates use an explicit order-five automorphism,
-a pair-sum resolvent plus modular cycle type, and Cayley's sextic resolvent.
-The Hasse row shares the quadratic resolvent `Q(sqrt(-3))` between its
-irreducible quadratic and cubic factors; exact ordinary or strong Hensel
-witnesses at `2`, `3`, `7`, and `19` handle every possibly ramified
-completion.  The same checker proves a `Q_5` trace obstruction to obtaining
-an infinite subfamily from the standard pure-cubic construction; infinitude
-inside this particular split-seed pencil remains open.
+The fixed-quintic commands check one determinant-`-2` map and its finite
+certificate ledger: all three real quintic signatures, all five transitive
+groups `C_5`, `D_5`, `F_{20}`, `A_5`, and `S_5`, split and
+quadratic-times-cubic fibers, and all seven unramified partitions modulo
+`7`.  The group certificates use witness-prime factor patterns, an explicit
+order-five automorphism, a pair-sum resolvent, and Cayley's sextic resolvent.
+The clean Hasse row has normalized polynomial
+`(T^2-8T+47)(T^3+8T^2+12T+8)` and common quadratic resolvent
+`Q(sqrt(-31))`; only `2` and `31` need special local witnesses.  The
+original `Q(sqrt(-3))` row remains an independent regression and supplies
+the `Q_5` trace obstruction to the standard pure-cubic infinitude route.
+Infinitude inside this particular split-seed pencil remains open.
+
+The height-`21` five-row witness card and its separate bounded discovery
+audit are reproduced by
+
+```bash
+.venv/bin/python scripts/verify_universal_quintic_calculator.py
+.venv/bin/python scripts/search_universal_quintic_calculator.py --bound 21
+```
+
+The first command uses only exact rational arithmetic and finite-field
+factorization.  The second requires PARI/GP, enumerates primitive
+projective targets through height `21` modulo the sign involution, and uses
+`polgalois` only after exact discriminant and Frobenius-pattern prefilters.
+It is bounded computational minimality evidence, separate from the
+oracle-free certificates for the five displayed rows.
+
+The mechanically generated finite ledger is checked by
+
+```bash
+.venv/bin/python scripts/verify_fixed_quintic_certificate_ledger.py
+```
+
+It recomputes all ten rows, their real-root counts and witness-prime
+patterns, the seven modulo-`7` partitions, and the `-48*Pi^8` coefficient
+Jacobian.  It also runs the three canonical exact checkers and compares both
+the Markdown table and
+`artifacts/generated-results/fixed_quintic_certificate_ledger.json` with
+the generated data.  Pass `--write` only when intentionally refreshing both
+generated forms.
 
 Its bounded height search requires PARI/GP:
 
@@ -104,6 +180,7 @@ Its bounded height search requires PARI/GP:
 .venv/bin/python scripts/verify_fixed_quintic_hasse_minus_seven.py
 .venv/bin/python scripts/verify_fixed_quintic_hasse_minus_thirty_one.py
 .venv/bin/python scripts/analyze_fixed_quintic_hasse_minus_thirty_one.py
+.venv/bin/python scripts/search_fixed_quintic_hasse_rational_curves.py
 ```
 
 The first command's default box is stated in its output.  It reports the two
@@ -138,6 +215,18 @@ slice, and a rational trace quadric with a quartic cube condition for affine
 variation of the two field generators.  It also enumerates rational
 coordinates of height at most `600` on the genus-two slice; only the known
 coordinate `Pi=5` occurs.  This last statement is bounded search evidence.
+The seventh command proves an exact obstruction to every base line through
+`(A,R,Pi)=(-8,2,5)` on the fixed-`-31` common-resolvent double cover: after
+recursive square-root reconstruction, the residual ideals have Groebner
+basis `[1]` on all three projective direction charts.  It also excludes
+every degree-at-most-two curve on each coordinate-fixed slice
+`A=-8`, `R=2`, and `Pi=5`: all twelve weighted-projective charts have empty
+fiber modulo the good prime `32003`, hence empty characteristic-zero
+generic fiber by properness.  Finally, it tests 15024 genuine general
+quadratic parametrizations with six integral coefficients in `[-2,2]` and
+finds no square pullback.  The line and coordinate-slice results are exact;
+the general quadratic result is only bounded evidence.  New primes ramifying
+in cubic specializations remain an additional all-prime local obstacle.
 
 The larger fixed-discriminant integral search is
 
@@ -190,6 +279,45 @@ allowing constant terms in both vector fields has full column rank.  Hence
 the example remains free of affine-linear torus equivariance after
 independent affine coordinate changes.
 
+The intrinsic algebraic-torus strengthening is checked by:
+
+```bash
+make verify-algebraic-torus-free
+```
+
+On the canonical ramified normalization stratum it reconstructs
+\(J(P,r)=-1-3Pr^2+4P^4r^3\), computes the scheme-theoretic stabilizer
+\(\beta=\alpha^{-2}\), \(\alpha^5=1\), and verifies that its tangent matrix
+has determinant \(5\).  The Newton-support pass checks all six permutations:
+only the identity and the involution
+\(\left(\begin{smallmatrix}-2&-1\\3&2\end{smallmatrix}\right)\) are integral
+unimodular, and the ordered second-boundary image rejects the involution
+because it does not preserve the intrinsic base character \(P\).  The
+checker also verifies the resulting explicit
+\(\mu _5\) source--target symmetries of the displayed map.  The canonical
+boundary argument then upgrades the conclusion from affine-linear actions:
+a connected torus acts trivially on the decorated stratum, hence fixes the
+prime nonnormal discriminant hypersurface pointwise; the weight-space lemma
+in the canonical note forces the target action to be trivial, and
+\(S_4\) deck rigidity forces the source action to be trivial.  Thus no
+polynomial left--right representative is algebraic-torus-equivariant.  This
+does not classify all discrete or unipotent polynomial self-equivalences,
+and literal symmetry-freeness after identity stabilization is impossible:
+the added identity coordinates carry tautological torus actions.  The exact
+stable conclusion is that every connected action on the pulled-back
+decoration is vertical over its intrinsic two-torus; no splitting of such a
+vertical action is claimed.
+
+The same checker expands the rational-root sparse representative from
+`G(S)=S(S-1)(S-2)(3S+2)`, verifies determinant one and its displayed
+four-point rational fiber, and obtains component support counts `(7,51,38)`
+and ordinary degrees `(7,26,24)`.  A symbolic coefficient audit shows that
+exactly seven generic support coefficients contain `g_2/g_1`, while every
+other coefficient is a nonzero Laurent monomial in the admissible
+`g_3/g_1,g_4/g_1`.  Hence `g_2=0` is support-minimal in this fixed normal
+form.  No absolute sparsity claim under arbitrary polynomial left--right
+changes is made.
+
 The remaining constant-`C` boundary has a separate exact Singular
 certificate:
 
@@ -221,6 +349,52 @@ This exact calculation constructs the relative Hamiltonian over
 unique parameter-dependent shear cancels them, and verifies the normalized
 base brackets and polynomial source automorphism.  It normally takes roughly
 half a minute in the pinned symbolic environment.
+
+The smaller classical degree-drop viability test is:
+
+```bash
+.venv/bin/python scripts/verify_quartic_weighted_map.py
+```
+
+Besides the quartic inverse and collision, it identifies the seed with
+\((\kappa,\tau)=(-5,0)\), specializes the rank-two completion, checks all six
+Poisson brackets and the canonical coordinate change, and transports the
+generic degree-four cover and an explicit two-point collision.  It reports
+fiber orders \((4,3)\).  This is an exact classical certificate, not an
+\(A_2\) quantization.
+
+The rebuilt restricted quantization test for those exact \((4,3)\) symbols
+is:
+
+```bash
+PYTHONPATH=scripts .venv/bin/python \
+  scripts/verify_quartic_degree_drop_quantization.py \
+  --certificate artifacts/generated-results/quartic_degree_drop_quantization.json
+```
+
+It derives the specialized Bernstein bounds, solves the complete
+parity-preserving \(\hbar^3\) affine equation, and writes an exact six-term
+dual cocycle proving the rank jump \(143\to144\) at \(\hbar^5\).  It also
+rebuilds the unrestricted first-order kernel, removes the complete
+target-Hamiltonian gauge, projects the next Maurer--Cartan quadrics, and
+tests all five surviving coordinate axes through the coupled
+\(\hbar^2/\hbar^3\) equations.  Its bounded low-support pass classifies one
+coordinate \(\mathbf P^4\), nine isolated rational directions, and no
+algebraic support-two directions.  All nine isolated directions fail, while
+a uniform third-order relaxation reduces the \(\mathbf P^4\) to an explicit
+residual \(\mathbf P^2\).  Its genuine compatibility obstruction factors as
+\((21a+28b+64c)^3/21^3\), so one rational \(\mathbf P^1\) reaches
+\(\hbar^3\).  Parameterizing that line by
+\((4,-3,0)+t(0,16,-7)\), the complete 38-dimensional lower-lift calculation
+over \(\mathbb Q(t)\) gives the exact fourth-order rank jump
+\(143\to144\).  Its six-term cocycle has sole denominator factor \(t\);
+exact audits at \(t=0\) and projective infinity give the same jump.  Thus
+the complete projective resonance line is eliminated at \(\hbar^4\).
+The discrete base ranks are computed over \(\mathbb Q\) and independently
+repeated over \(\mathbf F_{32003}\).  This certifies obstructions only for
+the displayed normal ordering and inherited filtration; it is not an
+\(A_2\) nonexistence theorem.  The recorded JSON certificate has SHA-256
+`04646808c526697e7538a268605da6df1b5e3a66c51a6a5e3c1d68c80ab20ab9`.
 
 The degree-five filtered contact problem has a separate two-invariant audit:
 
@@ -368,6 +542,43 @@ the exact boundary-unit check proves that the candidate itself is saturated.
 These checks do not prove that it equals the saturated maximal-minor ideal.
 That last identification requires fraction-free quotient identities in both
 containment directions.
+
+The bounded modular audit of the 16 input-containment quotients is built
+incrementally by:
+
+```bash
+.venv/bin/python \
+  scripts/reconstruct_degree_five_qper_input_quotients.py \
+  --no-resume --skip-diagnostic
+
+.venv/bin/python \
+  scripts/reconstruct_degree_five_qper_input_quotients.py \
+  --primes 70001 70003 70009 70019 70039 70051 \
+    70061 70067 70079 70099 70111 70117 \
+  --jobs 8 --checkpoint-every 64 --skip-diagnostic --timeout 600
+
+.venv/bin/python \
+  scripts/reconstruct_degree_five_qper_input_quotients.py \
+  --prime-start 1000000000 --prime-count 100 \
+  --jobs 8 --checkpoint-every 64 --skip-diagnostic --timeout 600
+
+.venv/bin/python \
+  scripts/reconstruct_degree_five_qper_input_quotients.py \
+  --prime-start 1000002043 --prime-count 500 \
+  --jobs 8 --checkpoint-every 64 --timeout 600
+```
+
+It resumes
+`artifacts/generated-results/degree_five_qper_input_quotients_modular.json`,
+uses deterministic prime order even with parallel Singular workers, and
+keeps one good image out of the CRT pool.  The recorded run has 613
+support-stable good primes, two support-unlucky primes, 18,116 CRT bits, and
+30 of 11,701 balanced reconstructions confirmed at the held-out prime.
+These data are modular evidence and a coefficient-height diagnostic, not an
+exact containment proof.  Use `--skip-diagnostic` when only extending the
+checkpoint; the held-out reconstruction pass uses GMP-backed FLINT
+arithmetic.  The recorded compact checkpoint has SHA-256
+`70a690fd53b4b3a15d4eebf5116acf57b7d0079a8f96a1aadfb2826da86d0481`.
 
 The low-support unrestricted odd audit is replayed by
 
@@ -526,6 +737,29 @@ The local monogenicity theorem then closes all of those cases
 simultaneously under intrinsic curvilinearity of the collision fibers:
 Nakayama lifts a fiber generator and the resulting monic cubic algebra is
 free.
+Before either saturation test, the written tame-local proposition removes
+every simple-normal-crossing point of the critical discriminant: after
+strict henselization the cubic normalization is the finite-free sum
+`R[s]/(s^2-t_1...t_r) plus R`.  Consequently the point-defect computation
+first reduces to closed non-SNC points of the discriminant.  The written
+ordinary-cusp proposition then classifies the two possible three-sheet
+braid representations.  Equal meridian transpositions give the finite-free
+`2+1` Kummer algebra, while distinct transpositions give the finite-free
+monic cubic root cover.  Thus only worse-than-ordinary-cusp points remain.
+For a reduced Koszul defect, the next written proposition identifies the
+projectivized branch tangent cone with the discriminant of line sections of
+the ternary cubic `h`.  The frontend checker verifies the complete
+degree-six factor table for smooth, nodal, cuspidal, conic-plus-line,
+triangle, and concurrent-line symbols, together with vanishing for double
+and triple components.  Thus every reduced defect forces branch
+multiplicity six, or at least seven in the non-squarefree case.
+The frontend checker verifies that the foundational discriminant's singular
+ideal is the expected triple-root locus.  The local cusp models and all nine
+three-letter braid pairs are checked by:
+
+```bash
+.venv/bin/python plane-jc/cas/test_cubic_cusp_local_model.py
+```
 The equivalent coordinate-free test is that each collision cotangent module
 has unit first Fitting ideal (or vanishing second exterior power); the
 checker separates the cyclic triple-root cotangent from the three-generator
@@ -550,7 +784,17 @@ The phantom-boundary theorem identifies the quotient between the reduced
 nonproperness and branch equations as the exact extra-divisor detector.
 The checker calibrates it on the foundational map: boundary elimination and
 the cubic discriminant give the same irreducible equation, so the quotient
-is one.
+is one.  The written boundary-minimality corollary then closes this
+certificate for every boundary-minimal cubic: the foundational competitor
+gives upper bound one for the number of target boundary components, while
+nonproperness gives the matching lower bound.  Thus no second unramified
+target divisor remains in the minimality problem.
+This is not a global arbitrary-cubic closure.  Proposition 1.4 shows that a
+second boundary sheet cannot lie over the critical divisor, because the
+ramified `(2,1)` and affine `(1,1)` sheets exhaust degree three.  An
+arbitrary cubic can still have a distinct unramified nonproperness divisor;
+excluding that factor, or reducing it to the minimal stratum while
+preserving genuine ungradedness, is the separate `OP-UG3` obligation.
 The written no-global-monogenicity proposition then shows why these local
 generators cannot be patched into one root coordinate: the derivative would
 be a constant unit on `A^3` and would contradict cubic degree.
@@ -1545,18 +1789,32 @@ part of the public proof navigation.  Existing generated artifacts live under
 
 ## \(A_4\) Keller inverse-Galois frontier
 
-The pure-target ledger, two-mask factorization, and normalized-boundary
-assembly checks are:
+The pure-target ledger, two-mask factorization, normalized-boundary
+assembly, and root-incidence derivative-split checks are:
 
 ```bash
 .venv/bin/python scripts/verify_a4_pure_target_ledger.py
 .venv/bin/python scripts/verify_a4_two_mask_factorization.py
 .venv/bin/python scripts/verify_a4_normalized_boundary_assembly.py
+.venv/bin/python scripts/verify_a4_root_incidence_derivative_split.py
+.venv/bin/python scripts/verify_a4_chart_unit_rank_four.py
+.venv/bin/python scripts/verify_a4_two_mask_local_viability.py
 ```
 
-The last command verifies the determinant-one ambient completion and the
-exact obstruction to the resulting automorphic assembly; it does not verify
-an ordinary polynomial Keller map.
+The normalized-boundary command verifies the determinant-one ambient
+completion and the exact obstruction to the resulting automorphic assembly.
+The root-incidence command verifies a localized two-coordinate
+representation of `1/P'(T)`, generic root-field recovery, and the residual
+orientation pole obstructing target-only polynomial pullback.  It also
+checks the selected rational root and proves that the ordinary `(U,V)`
+pullback retains Jacobian `H^6/(2*Theta*K^6*L^3)`.  Neither command verifies
+an ordinary polynomial Keller map.  The last command expands the correct
+reciprocal `H^3/(4*K^3*L)` in the quartic root basis, verifies its common
+denominator `B^2*rho*sigma`, and checks the resulting localized two-mask
+determinant-one suspension together with its three genuine pole divisors.
+The local-viability command verifies that the three components have one
+common nontransverse cusp/tangency cluster and that the simple second mask
+has local order deficit two.
 
 ## Plane degree-frontier audit
 
@@ -1634,3 +1892,25 @@ versions, the full replay command, and the independent hard-certificate
 command are in
 [`plane-jc/cas/README.md`](plane-jc/cas/README.md).  The independent checker
 does not import the primary CAS or generation modules.
+
+## Direct Schur-descent audit for `HC_4`
+
+The direct one-variable calculation for the `PC(2)` graph is:
+
+```bash
+.venv/bin/python scripts/verify_hc4_direct_schur_descent.py
+```
+
+It first verifies that the nonsymmetric `PC(2)` Jacobian cannot literally be
+a Hessian Schur complement.  It then classifies every coordinate chart and
+omitted graph coordinate for an arbitrary polynomial auxiliary function of
+`(X,Y,W,D)`, under transfer of a pair from the certified fiber.  Component
+ideals, explicit fixed points, and a two-variable Jacobian-mate lemma leave
+only charts `0010` and `0011`; in both, every slice is `W` up to scaling and
+retained-coordinate gauge.  Their canonical generating families retain the
+rational collision.  Irreducibility reduces every polynomial quadratic pivot
+to three cases, and exact Hessian evaluations exclude constant nonzero
+determinant in all six.  Finally, the checker proves that the Meng--Yang
+five-variable potential has no further polynomial partial Legendre transform
+along a constant linear direction.  Non-coordinate graph embeddings and
+higher-degree critical equations are not tested.

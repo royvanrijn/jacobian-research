@@ -36,8 +36,8 @@ candidate.
 | 25 | Comparison with the actual pullback-field extension and geometric degree | implemented |
 | 26 | Full algebraic degree-four barrier: finite-étale decomposition, local-sheet bound, tensor surplus, and positive-moment contradiction | implemented |
 | 27 | Finite-group fixed-point lemma for actions on at most four points | implemented |
-| 28 | Dedekind-zeta first prime moment (Euler-coefficient extraction) | paper proof; not yet Lean |
-| 29 | Monogenicity and the passage from arbitrary finite étale algebras | paper proof; not yet Lean |
+| 28 | Dedekind-zeta first prime moment (Euler-coefficient extraction) | ordinary proof; not yet Lean |
+| 29 | Monogenicity and the passage from arbitrary finite étale algebras in characteristic zero | implemented |
 | 30 | Historical degree-two Galois exclusion | external theorem; not yet Lean |
 
 ## Final polynomial-presentation theorem
@@ -90,8 +90,8 @@ Algebra.Etale K (AdjoinRoot P)
 Module.Finite K (AdjoinRoot P)
 ```
 
-and specializes the literal-fiber theorem to the exact denominator-free
-quintic map printed in the paper. At target `(1,0,-38)`, the resulting
+and separately specializes the literal-fiber theorem to an exact
+denominator-free quintic certificate. At target `(1,0,-38)`, the resulting
 equivalence is natural from maps out of
 `ℚ[T]/((T^3-19)(T^2+T+1))`, whose rank is proved to be five.
 The explicit quotient is proved finite étale. Lean also proves that this
@@ -103,6 +103,13 @@ The principal final declarations are:
 ```text
 automaticRealizationMap_certificate
 automaticRealization_pageOne
+finiteEtalePowerBasis
+finiteEtalePolynomial_squarefree
+finiteEtalePresentation
+finiteEtalePolynomial_natDegree
+abstractFiniteEtaleFiberRepresentingEquiv
+abstractFiniteEtaleFiberRepresentingEquiv_natural
+abstractFiniteEtale_pageOne
 automaticRealizationGeometricDegree_eq
 generalGaugeJacobianOneMap_targetDenormalization
 automaticJacobianOneFiberRepresentingEquiv
@@ -139,6 +146,42 @@ adjoinRootBaseChangeEquiv
 
 No translation parameter, coefficient nonvanishing proof, chart unit, or
 auxiliary abstract-fiber hypothesis remains as an external input.
+
+## Abstract finite étale theorem
+
+Let `A` be any finite étale algebra over a characteristic-zero field `K`, and
+assume `3 ≤ Module.finrank K A`. Lean noncomputably selects a power basis and
+its squarefree minimal polynomial
+
+```text
+finiteEtalePolynomial K A : K[X]
+```
+
+and constructs a presentation
+
+```text
+finiteEtalePresentation K A :
+  AdjoinRoot (finiteEtalePolynomial K A) ≃ₐ[K] A.
+```
+
+The selected polynomial has degree `Module.finrank K A`. Composing this
+presentation with the polynomial-presentation theorem gives the public
+certificate
+
+```text
+abstractFiniteEtale_pageOne
+```
+
+It supplies a determinant-one map, its target, geometric degree equal to the
+rank of `A`, the `6 * rank + 2` coordinate-degree bound, and, naturally in
+every commutative test `K`-algebra `R`, an equivalence
+
+```text
+(A →ₐ[K] R) ≃ GeneralGaugeJacobianOneFiberPoint ... R.
+```
+
+The primitive element is noncanonical, so the construction is intentionally
+noncomputable.
 
 ## Formal chain
 
@@ -201,9 +244,15 @@ standard étale algebra and proves it finite. `GeneralGaugeFiberRank.lean`
 records both finite étaleness and the exact dimension of the squarefree
 representing quotient. `PageOneTheorem.lean` combines determinant one,
 geometric degree, literal fiber representation, naturality, finite étaleness,
-rank, and the effective degree bound in one theorem. `ExplicitFiber.lean`
-specializes the reconstruction to
-the exact denominator-free quintic map and target displayed in the paper,
+rank, and the effective degree bound in one theorem.
+`AbstractFiniteEtale.lean` proves monogenicity for every finite étale algebra
+over a characteristic-zero field: after decomposing it into a finite product
+of finite separable field extensions, it translates primitive generators to
+give them pairwise distinct traces and applies the Chinese remainder theorem.
+It then composes the resulting squarefree polynomial presentation with
+`PageOneTheorem.lean`, including the natural equivalence on all test
+algebras. `ExplicitFiber.lean` separately specializes the reconstruction to
+an exact denominator-free quintic map and target,
 including finite étaleness, naturality, and rank five.
 `ExplicitPolynomial.lean` applies the rational-root theorem to certify that
 the quintic has no rational root; `ExplicitFiber.lean` transfers this to
@@ -247,7 +296,7 @@ remains on the critical path.  This route uses neither a Galois action nor a
 monogenic presentation.
 
 `DegreeFourFixedPoint.lean` independently formalizes the exact finite-group
-lemma used by the shorter proof in the paper.  Its endpoint
+lemma used by the shorter arithmetic proof.  Its endpoint
 `degreeFour_fixedPoint` says that an action on at most four points has a
 global fixed point whenever every group element has a fixed point.  The proof
 uses orbit decomposition and Mathlib's Burnside lemma.  The arithmetic
@@ -265,14 +314,13 @@ for paper-level theorems are:
 
 1. formalize the exact nonproperness locus, boundary-sheet accounting, and
    discriminant-order statements;
-2. formalize the symmetric-monodromy and Hilbertian-specialization arguments;
-3. formalize monogenicity of arbitrary finite étale algebras over an infinite
-   field and compose it with the polynomial-presentation theorem;
-4. formalize, or explicitly isolate as a classical theorem interface, the
+2. formalize the symmetric-monodromy, stable-atomicity, and
+   Hilbertian-specialization arguments;
+3. formalize, or explicitly isolate as a classical theorem interface, the
    Campbell--Razar--Wright degree-two Galois case;
-5. formalize either the Chebotarev passage used in the paper or the
-   first-prime-moment theorem from the Dedekind-zeta Euler product if
-   rank-minimality is to be machine-checked end to end.  The finite-group
+4. for the separate arithmetic development, formalize either the Chebotarev
+   passage or the first-prime-moment theorem from the Dedekind-zeta Euler
+   product if rank-minimality is to be machine-checked end to end.  The finite-group
    fixed-point lemma used after Chebotarev is now formalized as
    `degreeFour_fixedPoint`.  Mathlib's
    nonzero simple-pole theorem is exposed as
@@ -283,10 +331,11 @@ for paper-level theorems are:
    quintic's rational obstruction, archimedean point, and points over every
    nonarchimedean completion are formalized.
 
-The current certificate therefore proves the complete constructive,
-scheme-theoretic, and geometric-degree polynomial-presentation layer, while
-keeping the separately proved nonproperness theorem, monodromy, monogenicity,
-the classical rank-two obstruction, and the analytic first-prime-moment
+The current certificates therefore prove the complete constructive,
+scheme-theoretic, and geometric-degree layers for both polynomial
+presentations and abstract finite étale algebras in characteristic zero,
+while keeping the separately proved nonproperness theorem, monodromy, the
+classical rank-two obstruction, and the analytic first-prime-moment
 extraction explicitly outside the Lean certificate.
 
 ## Build

@@ -1,13 +1,15 @@
-# One fixed quintic Keller map dominating affine quintic moduli
+# The arithmetic zoo of one explicit quintic Keller map
 
 ## Status
 
-This note proves a geometric fixed-seed strengthening of the
-finite-etale-fiber construction and gives an explicit arithmetic zoo inside
-that same map.  It does **not** assert that every rank-five finite etale
-algebra over `Q` occurs at a rational target of the fixed map.  The
-distinction between geometric moduli dominance and arithmetic surjectivity
-is recorded explicitly in Section 5.
+This note studies one explicit map through its finite arithmetic
+certificates: three real quintic signatures, all five transitive quintic
+Galois groups, split and quadratic-times-cubic fibers, all seven unramified
+partitions modulo \(7\), and Hasse failures.  Its three-parameter inverse
+pencil also has a concise dominant coefficient chart.  It does **not**
+assert that every rank-five finite etale algebra over `Q` occurs at a
+rational target of the fixed map; Section 5 records the distinction between
+geometric dominance and arithmetic surjectivity.
 
 The construction uses the root-engineered quadratic gauge and its
 scheme-theoretic fiber reconstruction from
@@ -326,6 +328,121 @@ to display the centered monic polynomial
  =\Pi^5E_{\Pi,B,C}(\Pi^{-2}T)
  =T^5-5T^3-2\Pi BT^2+4\Pi^3T-2\Pi^5C.
 \]
+
+Write a rational target as a primitive projective quadruple
+`[W:P:B_0:C_0]`, meaning
+
+\[
+ (\Pi,B,C)=\left(\frac PW,\frac{B_0}{W},\frac{C_0}{W}\right),
+ \qquad
+ H=\max(|W|,|P|,|B_0|,|C_0|).
+\]
+
+All five groups occur at common projective height at most `21`:
+
+| group | projective target `[W:P:B_0:C_0]` | primitive integral inverse polynomial | exact certificate |
+|---|---|---|---|
+| `C_5` | `[10:10:0:-7]` | `5S^5-25S^3+20S+7` | `2:(5)`; explicit order-five automorphism |
+| `D_5` | `[10:4:-21:20]` | `32S^5-6250S^3+13125S^2+12500S-12500` | square discriminant; pair-sum resolvent `5+5`; `11:(2,2,1)` |
+| `F_{20}` | `[10:5:15:4]` | `5S^5-400S^3-480S^2+640S-128` | `29:(5)`; Dummit root `-13/2`; nonsquare discriminant |
+| `A_5` | `[5:5:0:-2]` | `5S^5-25S^3+20S+4` | `3:(5)`; discriminant `232^2`; `23:(3,1,1)` |
+| `S_5` | `[1:-1:-1:-1]` | `S^5-5S^3-2S^2-4S-2` | `5:(5)`; `43:(2,1,1,1)`; nonsquare discriminant |
+
+Each first coordinate is nonzero and each polynomial is squarefree, so the
+localized reconstruction theorem identifies the complete Keller fiber with
+the displayed quintic algebra.
+
+For the cyclic row, in the quotient by
+`5S^5-25S^3+20S+7`, the substitution
+
+\[
+ \sigma(S)=
+ \frac{45S^4-20S^3-240S^2+78S+174}{43}
+\]
+
+satisfies the defining equation and has exact order five.  Irreducibility
+modulo `2` makes the quotient a field, so it is a cyclic degree-five
+extension.
+
+For the dihedral row, the centered monic polynomial is
+
+\[
+ f(T)=T^5-5T^3+\frac{42}{25}T^2
+      +\frac{32}{125}T-\frac{128}{3125}.
+\]
+
+Its discriminant is `(2040064/78125)^2`.  Its pair-sum resolvent is
+
+\[
+\frac1{9765625}
+\left(3125X^5-28750X^3-2000X^2+62725X+4784\right)
+\left(3125X^5-18125X^3+7250X^2+2500X-776\right),
+\]
+
+and both displayed factors are irreducible modulo `3`.  Hence the action on
+unordered root pairs has two orbits of size five, leaving `C_5` or `D_5`;
+the `(2,2,1)` factor pattern modulo `11` selects `D_5`.
+
+For the Frobenius row, the centered monic polynomial is
+
+\[
+ f(T)=T^5-5T^3-\frac32T^2+\frac12T-\frac1{40}.
+\]
+
+Dummit's solvability sextic has primitive integral form
+
+\[
+\begin{aligned}
+\mathcal D_f(X)
+&=(2X+13)\bigl(
+20480X^5-51200X^4-1497600X^3\\
+&\hspace{35mm}
++1947840X^2+24055920X+24084531
+\bigr).
+\end{aligned}
+\]
+
+Thus it has rational root `-13/2`, while
+
+\[
+ \operatorname{Disc}(f)=5\left(\frac{2127}{320}\right)^2.
+\]
+
+Irreducibility modulo `29` and Dummit's criterion put the transitive group
+inside `F_{20}`; the nonsquare discriminant excludes `C_5` and `D_5`.
+
+The remaining two rows follow from the displayed modular patterns and the
+transitive subgroup classification: a square discriminant and a 3-cycle
+force `A_5`, while a transposition forces `S_5`.  The complete exact
+certificate, including the pair-resolvent resultant identity, is
+
+```bash
+.venv/bin/python scripts/verify_universal_quintic_calculator.py
+```
+
+The separate exhaustive search through primitive targets of height `21`,
+modulo `(B_0,C_0)\mapsto(-B_0,-C_0)`, finds first heights
+
+\[
+ H(S_5),H(A_5),H(C_5),H(F_{20}),H(D_5)=(1,5,10,15,21).
+\]
+
+Thus `21` is the bounded computational optimum for the common height.  This
+minimality statement uses PARI/GP's exact `polgalois` classifier after
+discriminant and Frobenius-pattern prefilters; it is not an
+oracle-independent theorem.  The search is reproduced by
+
+```bash
+.venv/bin/python scripts/search_universal_quintic_calculator.py --bound 21
+```
+
+The compact publication version is the
+[height-21 witness card](verified/UNIVERSAL_QUINTIC_CALCULATOR.md).
+
+#### 6.2.1 Original transported witnesses (provenance)
+
+The following earlier rows are retained because their transported
+generators and certificates give independent provenance.
 
 The `A_5` and `S_5` rows are those already listed above.  The three solvable
 rows are:
@@ -841,6 +958,100 @@ checked by
 .venv/bin/python scripts/analyze_fixed_quintic_hasse_minus_thirty_one.py
 ```
 
+The first low-degree curve ansatz can be excluded exactly.  On the
+fixed-\(-31\) common-resolvent double cover, put
+
+\[
+ \mathcal X:\quad
+ Z^2=31M\left(A,\frac{A^2+31R^2}{4},\Pi^3\right).
+\]
+
+It contains \((-8,2,5,1984)\).  Substitute a base line through this point,
+
+\[
+ A=-8+at,\qquad R=2+rt,\qquad \Pi=5+pt.
+\]
+
+The right side has degree eight in \(t\).  Its constant term fixes the sign
+of a possible quartic square root, and coefficients through degree four
+determine the remaining four square-root coefficients recursively.  The
+four residual equations have homogeneous degrees \(5,6,7,8\) in
+\((a,r,p)\).  On each of the projective charts \(a=1\), \(r=1\), and
+\(p=1\), their exact Groebner basis is \([1]\).  A polynomial is a square
+in \(\mathbb Q(t)\) only if its irreducible polynomial factors have even
+multiplicity, so the polynomial-square calculation also excludes rational
+lifts of the line.  Therefore:
+
+> **Linear-ansatz obstruction.**
+> No nonconstant line in the \((A,R,\Pi)\)-space through \((-8,2,5)\)
+> lifts to \(\mathcal X\).
+
+There are also exact quadratic obstructions on all three coordinate-fixed
+slices.  For example, the arithmetically natural slice \(R=2\), which keeps
+the quadratic discriminant equal to \(-124\), uses
+
+\[
+ A=-8+a_1t+a_2t^2,\qquad
+ R=2,\qquad
+ \Pi=5+p_1t+p_2t^2.
+\]
+
+After recursively determining the possible degree-eight square root, the
+eight residual equations have weighted degrees \(9,\ldots,16\) for weights
+
+\[
+ \operatorname{wt}(a_1,p_1)=1,\qquad
+ \operatorname{wt}(a_2,p_2)=2.
+\]
+
+They define a closed subscheme of
+\(\mathbb P(1,2,1,2)_{\mathbb Z}\).  Modulo the good prime \(32003\), its
+four standard weighted-projective charts have exact Groebner basis \([1]\).
+The identical calculation for \(A=-8\) and for \(\Pi=5\) gives eight more
+unit chart bases.  Each special fiber is therefore empty.  Properness then
+forces each characteristic-zero generic fiber to be empty as well.  Hence:
+
+> **Coordinate-slice quadratic obstruction.**
+> No nonconstant degree-at-most-two base curve through \((-8,2,5)\) that
+> keeps any one of \(A,R,\Pi\) constant lifts to \(\mathcal X\).
+
+The bounded experiment then allows all three base coordinates to vary:
+
+\[
+\begin{aligned}
+ A&=-8+a_1t+a_2t^2,\\
+ R&=2+r_1t+r_2t^2,\\
+ \Pi&=5+p_1t+p_2t^2.
+\end{aligned}
+\]
+
+After removing 476 parametrizations whose image is already a line, the
+box \(|a_i|,|r_i|,|p_i|\le2\) contains 15024 genuine quadratic tuples.
+None makes the pullback a polynomial square.  This is bounded evidence
+only; quadratic curves with larger or rational coefficients and curves of
+higher degree remain open.  In particular, any quadratic curve missed by
+the exact results must genuinely vary all three of \(A,R,\Pi\) and lie
+outside this integral box.
+
+The identity
+
+\[
+ A^2-4V=-31R^2
+\]
+
+shows that the quadratic factor splits over \(\mathbb Q_2\) whenever
+\(R\ne0\).  The simple cubic root \(15\bmod31\) persists in a sufficiently
+small \(31\)-adic neighborhood of the known point.  These observations do
+not control new primes ramifying in cubic specializations, so even a
+rational curve on \(\mathcal X\) would still require a separate all-prime
+local argument.
+
+The exact line obstruction and bounded quadratic search are reproduced by
+
+```bash
+.venv/bin/python scripts/search_fixed_quintic_hasse_rational_curves.py
+```
+
 A fixed-discriminant integral search through
 \(R\le100,\ |A|,|\Pi|\le200\) finds only the certified point and its sign
 mate.  A rational grid with denominator at most \(4\) and numerator bounds
@@ -905,9 +1116,14 @@ The first checker verifies:
 5. squarefreeness at the rational dominance point; and
 6. the three explicit signature and `S_5` specialization certificates.
 
-The second checker verifies the five arithmetic rows, their Galois and
-factorization certificates, the common quadratic resolvent, all four local
-Hensel witnesses, and the improved target height.
+The second checker verifies the original arithmetic rows, their Galois and
+factorization certificates, the common \(\mathbb Q(\sqrt{-3})\) resolvent,
+and its four exceptional local witnesses.  The clean
+\(\mathbb Q(\sqrt{-31})\) Hasse row has the independent audit
+
+```bash
+.venv/bin/python scripts/verify_fixed_quintic_hasse_minus_thirty_one.py
+```
 
 ## 8. Fixed-map Hilbert and local-engineering theorem
 
@@ -935,13 +1151,25 @@ symmetric-monodromy theorem for quadratic-gauge seeds.
 > Every such polynomial represents a connected full fiber of the one fixed
 > Keller map `F`.
 
-This is the weak-approximation form of Hilbert irreducibility applied to the
-regular `S_5` splitting cover of `U`.  The complement of the corresponding
-Hilbert subset is thin, while rational affine three-space satisfies weak
-approximation.  Intersecting the Hilbert subset with the specified finite
-product of local opens gives infinitely many rational targets.  The full
-scheme-fiber assertion then follows from the quadratic-gauge reconstruction
-because `y\in U`.
+Here is the precise external-reference reduction.  Apply
+[Serre, *Topics in Galois Theory*, Proposition
+3.3.5](https://indico.math.cnrs.fr/event/11410/attachments/4760/7351/SerreTopicsGaloisTheory.pdf)
+to the regular `S_5` Galois closure over `U`.  It gives a thin set
+`A\subset U(Q)` outside which specialization is irreducible with full group
+`S_5`.  Serre's Theorem 3.5.3 in the same reference, applied with the
+prescribed real and finite places as its excluded set, supplies a disjoint
+finite set `S'` of auxiliary places and a nonempty product-open box
+`\Omega_{S'}` whose rational points avoid `A`.  Since `U` is a smooth
+rational open of affine three-space, weak approximation holds for the union
+of the prescribed places and `S'`.  A rational point in
+`\Omega_\infty\times\prod_{p\in S}\Omega_p\times\Omega_{S'}` therefore has
+the required local conditions and lies outside `A`.
+
+This also proves infinitude, rather than only existence: after finding any
+finite set of such rational targets, adjoin that finite set to `A` (still a
+thin set) and repeat the same argument.  Finally, the full scheme-fiber
+assertion follows from quadratic-gauge reconstruction because every selected
+target lies in `U`.
 
 Real-root count is locally constant on `U(\mathbb R)`, so the three explicit
 signature points in Section 6 supply admissible choices of `\Omega_\infty`

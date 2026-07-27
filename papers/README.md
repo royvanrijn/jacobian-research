@@ -12,18 +12,22 @@ corrections that are deliberately carried into a new deposited version.
 
 ## Active
 
-- `common-arithmetic-fibers` — *Every Nonzero Finite Étale Algebra Except Rank Two Is a Keller Fiber*
+- `common-arithmetic-fibers` — *Prescribed Finite Étale Algebras as Full
+  Fibers of Keller Maps with Symmetric Monodromy*
 
 This manuscript remains under active development. The directory name is a
 stable path retained from its earlier draft. The complete constructive
 polynomial-presentation layer is formalized in `formal/finite-etale-keller`:
 automatic translation choice, the actual arbitrary-degree map, its Jacobian
 and effective degree bound, the literal scheme fiber, quotient transport, and
-naturality. The manuscript additionally proves the exact reduced
+naturality. The same Lean project now proves monogenicity for abstract finite
+étale algebras in characteristic zero and composes it with that construction.
+The manuscript derives absolute and stable compositional atomicity from its
+symmetric-monodromy theorem. It additionally proves the exact reduced
 nonproperness locus and boundary-sheet ledger as ordinary mathematics; the
 verification matrix marks these results explicitly as not Lean-formalized.
-It also states the remaining boundary for monogenicity, the classical
-rank-two input, and the number-theoretic applications.
+Hasse and fixed-quintic applications are maintained as separate verified
+notes rather than part of this paper.
 
 ## Parked
 

@@ -33,6 +33,32 @@ This directory contains the stable proof chain:
   extension. The note includes the degree-two descent, scheme-theoretic
   quotient reconstruction, optimal quintic Hasse fiber, updated arithmetic
   chain, and staged Lean certificate.
+- [Universal Keller-fiber multiplicity](UNIVERSAL_KELLER_FIBER_MULTIPLICITY.md):
+  over every number field, every finite etale algebra of rank at least four
+  is a complete fiber in infinitely many stable classes.  Ranks at least
+  five work over every characteristic-zero field by translation in
+  quadratic-gauge stable moduli.
+- [Universal multiplicity adversarial audit](UNIVERSAL_MULTIPLICITY_ADVERSARIAL_AUDIT.md):
+  stress-tests the generator, clean-torus, invariant, full-fiber,
+  Hasse--Minkowski, and selected-root steps and records the exact imported
+  stable-normalization dependencies.
+- [Universal multiplicity witness cards](UNIVERSAL_MULTIPLICITY_WITNESS_CARDS.md):
+  three exact pairwise stably inequivalent presentations of one connected
+  field in each of degrees four, five, and six.
+- [Low-rank multiplicity boundaries](LOW_RANK_MULTIPLICITY_BOUNDARIES.md):
+  an anisotropic biquadratic quartic trace-chord form over
+  `Q((a))((b))`, and the exact collapse of all three current cubic
+  mechanisms to the foundational stable class.
+- [Universal quartic fiber multiplicity](UNIVERSAL_QUARTIC_FIBER_MULTIPLICITY.md):
+  every rank-four finite etale algebra over a number field is a complete
+  fiber in infinitely many stable classes of determinant-one weighted maps;
+  the proof combines the quartic trace-chord quadric, Hasse--Minkowski, and
+  weighted selected-root Torelli.
+- [Universal quintic fiber multiplicity](UNIVERSAL_QUINTIC_FIBER_MULTIPLICITY.md):
+  over every characteristic-zero field, every rank-five finite etale algebra
+  is a complete fiber in infinitely many stable quadratic-gauge classes;
+  translation moves `a_5^5/(a_3 a_4^6)` nontrivially after choosing a
+  generator with nonzero second trace moment.
 - [Exact real-sheet spectrum](REAL_FIBER_SPECTRUM.md): every count
   `N,N-2,...,N mod 2` occurs on a nonempty complete regular real target
   chamber, with rational witnesses and an explicit fold-adjacency chain.

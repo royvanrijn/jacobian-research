@@ -1,0 +1,461 @@
+{
+  "claim": "The parity-preserving normal-ordered lift in the inherited (4,3) Bernstein filtration is obstructed at hbar^5.",
+  "specialization": {
+    "a": "-4/3",
+    "tau": "0"
+  },
+  "symbol_stats": {
+    "S": {
+      "terms": 33,
+      "bernstein_degree": 22,
+      "z_order": 4
+    },
+    "T": {
+      "terms": 23,
+      "bernstein_degree": 18,
+      "z_order": 3
+    }
+  },
+  "bounds": {
+    "S": {
+      "bernstein_degree": 22,
+      "z_order": 4
+    },
+    "T": {
+      "bernstein_degree": 18,
+      "z_order": 3
+    },
+    "rule": "hbar^n lowers Bernstein degree by 2n and Z-order by n"
+  },
+  "parity_audit": {
+    "h3_s_columns": 417,
+    "h3_t_columns": 198,
+    "h3_rank": 592,
+    "h3_nullity": 23,
+    "h5_s_columns": 120,
+    "h5_t_columns": 0,
+    "h5_correction_rank": 115,
+    "h5_parameter_coefficients": 299,
+    "h5_span_rank": 143,
+    "h5_augmented_rank": 144
+  },
+  "dual_cocycle": [
+    {
+      "monomial": [
+        12,
+        0,
+        0
+      ],
+      "coefficient": "-19030016/495261459"
+    },
+    {
+      "monomial": [
+        13,
+        1,
+        0
+      ],
+      "coefficient": "-9287680/1485784377"
+    },
+    {
+      "monomial": [
+        14,
+        0,
+        1
+      ],
+      "coefficient": "-408143872/8089270497"
+    },
+    {
+      "monomial": [
+        14,
+        2,
+        0
+      ],
+      "coefficient": "2588672/10400490639"
+    },
+    {
+      "monomial": [
+        15,
+        1,
+        1
+      ],
+      "coefficient": "-3806396416/655230910257"
+    },
+    {
+      "monomial": [
+        15,
+        3,
+        0
+      ],
+      "coefficient": "25886720/93604415751"
+    }
+  ],
+  "dual_pairing": {
+    "allowed_hbar5_corrections": "0",
+    "all_affine_hbar3_parameter_coefficients": "0",
+    "constant_hbar5_defect": "1"
+  },
+  "unrestricted_audit": {
+    "h1_s_columns": 600,
+    "h1_t_columns": 324,
+    "h1_rank": 890,
+    "h1_nullity": 34,
+    "h1_output_monomials": 2048,
+    "gauge_directions": 14,
+    "gauge_rank": 14,
+    "quotient_dimension": 20,
+    "next_operator_columns": 615,
+    "next_operator_rank": 592,
+    "ambient_cokernel": 980,
+    "quadratic_coefficients": 210,
+    "raw_nonzero_equations": 311,
+    "quadratic_rank": 21,
+    "surviving_axes": [
+      0,
+      1,
+      7,
+      8,
+      17
+    ],
+    "third_order_axis_tests": {
+      "0": {
+        "allows_nonzero_u": false,
+        "u_status": "combined_system_inconsistent_for_all_u",
+        "rank": 932,
+        "nullity": 0
+      },
+      "1": {
+        "allows_nonzero_u": false,
+        "u_status": "combined_system_inconsistent_for_all_u",
+        "rank": 934,
+        "nullity": 0
+      },
+      "7": {
+        "allows_nonzero_u": false,
+        "u_status": "combined_system_inconsistent_for_all_u",
+        "rank": 934,
+        "nullity": 0
+      },
+      "8": {
+        "allows_nonzero_u": false,
+        "u_status": "combined_system_inconsistent_for_all_u",
+        "rank": 934,
+        "nullity": 0
+      },
+      "17": {
+        "allows_nonzero_u": false,
+        "u_status": "combined_system_inconsistent_for_all_u",
+        "rank": 934,
+        "nullity": 0
+      }
+    },
+    "third_order_surviving_axes": []
+  },
+  "low_support_audit": {
+    "full_coordinate_subspace": [
+      0,
+      1,
+      7,
+      8,
+      17
+    ],
+    "full_coordinate_lines": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        7
+      ],
+      [
+        0,
+        8
+      ],
+      [
+        0,
+        17
+      ],
+      [
+        1,
+        7
+      ],
+      [
+        1,
+        8
+      ],
+      [
+        1,
+        17
+      ],
+      [
+        7,
+        8
+      ],
+      [
+        7,
+        17
+      ],
+      [
+        8,
+        17
+      ]
+    ],
+    "isolated_rational_directions": [
+      {
+        "coordinates": [
+          1,
+          9
+        ],
+        "ratio": "-7/8",
+        "allows_nonzero_u": false,
+        "u_status": "forced_zero",
+        "rank": 932,
+        "nullity": 33
+      },
+      {
+        "coordinates": [
+          1,
+          10
+        ],
+        "ratio": "-21/4",
+        "allows_nonzero_u": false,
+        "u_status": "forced_zero",
+        "rank": 932,
+        "nullity": 33
+      },
+      {
+        "coordinates": [
+          1,
+          19
+        ],
+        "ratio": "49/356",
+        "allows_nonzero_u": false,
+        "u_status": "forced_zero",
+        "rank": 932,
+        "nullity": 33
+      },
+      {
+        "coordinates": [
+          9,
+          10
+        ],
+        "ratio": "-6",
+        "allows_nonzero_u": false,
+        "u_status": "forced_zero",
+        "rank": 932,
+        "nullity": 33
+      },
+      {
+        "coordinates": [
+          9,
+          10
+        ],
+        "ratio": "-1/2",
+        "allows_nonzero_u": false,
+        "u_status": "combined_system_inconsistent_for_all_u",
+        "rank": 934,
+        "nullity": 0
+      },
+      {
+        "coordinates": [
+          9,
+          19
+        ],
+        "ratio": "14/89",
+        "allows_nonzero_u": false,
+        "u_status": "forced_zero",
+        "rank": 932,
+        "nullity": 33
+      },
+      {
+        "coordinates": [
+          9,
+          19
+        ],
+        "ratio": "21/674",
+        "allows_nonzero_u": false,
+        "u_status": "combined_system_inconsistent_for_all_u",
+        "rank": 934,
+        "nullity": 0
+      },
+      {
+        "coordinates": [
+          10,
+          19
+        ],
+        "ratio": "7/267",
+        "allows_nonzero_u": false,
+        "u_status": "forced_zero",
+        "rank": 932,
+        "nullity": 33
+      },
+      {
+        "coordinates": [
+          10,
+          19
+        ],
+        "ratio": "21/337",
+        "allows_nonzero_u": false,
+        "u_status": "combined_system_inconsistent_for_all_u",
+        "rank": 934,
+        "nullity": 0
+      }
+    ],
+    "isolated_algebraic_directions": [],
+    "p4_relaxation": {
+      "quadratic_particulars": 15,
+      "relaxed_columns": 539,
+      "relaxed_rank": 349,
+      "augmented_rank": 351,
+      "directions_killed": 2
+    },
+    "necessary_residual_plane_basis": [
+      {
+        "0": "2",
+        "7": "1"
+      },
+      {
+        "0": "28/9",
+        "8": "1"
+      },
+      {
+        "0": "824/81",
+        "17": "1"
+      }
+    ],
+    "residual_basis_tests": [
+      {
+        "allows_nonzero_u": false,
+        "u_status": "forced_zero",
+        "rank": 933,
+        "nullity": 32
+      },
+      {
+        "allows_nonzero_u": false,
+        "u_status": "forced_zero",
+        "rank": 933,
+        "nullity": 32
+      },
+      {
+        "allows_nonzero_u": false,
+        "u_status": "forced_zero",
+        "rank": 933,
+        "nullity": 32
+      }
+    ],
+    "p2_relaxation": {
+      "quadratic_particulars": 6,
+      "relaxed_columns": 436,
+      "relaxed_rank": 342,
+      "augmented_rank": 342,
+      "directions_killed": 0
+    },
+    "resonance_audit": {
+      "fixed_coupling_rank": 6,
+      "resonance_linear_form": "21*a + 28*b + 64*c",
+      "obstruction": "(21*a + 28*b + 64*c)^3 / 21^3",
+      "coefficientwise_divisibility": {
+        "kernel_couplings": true,
+        "linear_right_side": true,
+        "cubic_right_side": true
+      },
+      "hbar3_locus": "21*a + 28*b + 64*c = 0",
+      "rational_line_basis": [
+        [
+          4,
+          -3,
+          0
+        ],
+        [
+          0,
+          16,
+          -7
+        ]
+      ]
+    },
+    "fixed_resonant_fourth_order_audit": {
+      "direction": [
+        4,
+        -3,
+        0
+      ],
+      "unit_scale": true,
+      "joint_hbar2_hbar3_rank": 927,
+      "lower_lift_dimension": 38,
+      "hbar4_correction_columns": 120,
+      "hbar4_parameter_coefficients": 779,
+      "hbar4_span_rank": 143,
+      "hbar4_augmented_rank": 144,
+      "dual_cocycle_support": 6
+    },
+    "resonance_line_fourth_order_audit": {
+      "parameterization": {
+        "e0": [
+          4,
+          -3,
+          0
+        ],
+        "e1": [
+          0,
+          16,
+          -7
+        ],
+        "affine_chart": "e0 + t*e1"
+      },
+      "generic_function_field_audit": {
+        "direction": "e0 + t*e1",
+        "unit_scale": true,
+        "joint_hbar2_hbar3_rank": 927,
+        "lower_lift_dimension": 38,
+        "hbar4_correction_columns": 120,
+        "hbar4_parameter_coefficients": 779,
+        "hbar4_span_rank": 143,
+        "hbar4_augmented_rank": 144,
+        "dual_cocycle_support": 6,
+        "exceptional_denominator": "t",
+        "exceptional_factors": [
+          {
+            "factor": "t",
+            "multiplicity": 1,
+            "degree": 1
+          }
+        ]
+      },
+      "exceptional_t_zero_audit": {
+        "direction": [
+          4,
+          -3,
+          0
+        ],
+        "unit_scale": true,
+        "joint_hbar2_hbar3_rank": 927,
+        "lower_lift_dimension": 38,
+        "hbar4_correction_columns": 120,
+        "hbar4_parameter_coefficients": 779,
+        "hbar4_span_rank": 143,
+        "hbar4_augmented_rank": 144,
+        "dual_cocycle_support": 6
+      },
+      "projective_infinity_audit": {
+        "direction": [
+          0,
+          16,
+          -7
+        ],
+        "unit_scale": true,
+        "joint_hbar2_hbar3_rank": 927,
+        "lower_lift_dimension": 38,
+        "hbar4_correction_columns": 120,
+        "hbar4_parameter_coefficients": 779,
+        "hbar4_span_rank": 143,
+        "hbar4_augmented_rank": 144,
+        "dual_cocycle_support": 6
+      },
+      "coverage": "The Q(t) cocycle has sole denominator factor t; exact audits at t=0 and t=infinity cover the complete projective line."
+    },
+    "scope": "The displayed resonance line is the exact hbar^3 locus. A Q(t) dual cocycle together with exact exceptional audits obstructs the complete projective resonance line at hbar^4."
+  },
+  "software": {
+    "python_dependencies": "requirements.txt"
+  }
+}

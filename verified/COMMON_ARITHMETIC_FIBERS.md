@@ -277,7 +277,234 @@ One has
 
 Rabin's criterion proves that `f`, and hence `Psi_(-1)`, is irreducible.
 
-## 5. Determinant-one normalization
+## 5. One small rational-coefficient field in all three maps
+
+The Hilbert-family statement has the following small individual witness.
+Keep
+
+\[
+ K=\mathbb Q(\eta),\qquad \eta^2=-2,
+\]
+
+and put
+
+\[
+ \boxed{p(W)=9W^4-19W^3+10W^2-8W-4.}                 \tag{5.1}
+\]
+
+Although the cancellation map requires `K`, the polynomial (5.1) has
+rational integer coefficients.  In fact it defines a quartic field `L/Q`
+and remains irreducible over `K`, so
+
+\[
+ \boxed{A=K[W]/(p)=K\mathbin{\mathop{\otimes}_{\mathbb Q}}L}
+                                                               \tag{5.2}
+\]
+
+is a connected quartic finite etale `K`-algebra.
+
+Here are the three fixed maps and their selected targets.
+
+### 5.1 Weighted
+
+Take the integral boundary-clean seed
+
+\[
+ H(W)=9W^4-19W^3+10W^2=W^2(W-1)(9W-10).
+\]
+
+It has `c=-H'(1)=1`, `H''(1)/c=14`, and weighted parameter
+`a_0=-15/16`.  To display the actual determinant-one polynomial map, put
+
+\[
+ u=1+xy,\qquad
+ \gamma=1-\frac{15}{16}xy+x^2z,\qquad W=u\gamma,
+\]
+
+\[
+ p_H(W)=W(36W^2-57W+20),\qquad
+ q_H(W)=W^2(27W^2-38W+10),
+\]
+
+and set
+
+\[
+ F^{\rm wt}=
+ \left(
+  \frac{u+q_H(W)/\gamma^2}{x^2},\
+  \frac{1+p_H(W)/\gamma}{x},\
+  x\gamma
+ \right).                                             \tag{5.3}
+\]
+
+The two displayed quotients are polynomials by weighted admissibility, and
+`\det DF^{wt}=1`.  At the target
+
+\[
+ \boxed{q^{\rm wt}=(-4,8,1)}
+\]
+
+the inverse equation is exactly
+
+\[
+ H(W)-8W-4=p(W).                                      \tag{5.4}
+\]
+
+### 5.2 Cancellation
+
+Take the fixed type-`(2,1)` map associated to
+
+\[
+ \theta=2+\eta,\qquad h(A)=\theta+(4\theta-6)A.
+\]
+
+Its complete denominator-free formula is
+[displayed here](SAME_DEGREE_STABLE_INEQUIVALENCE.md#12-a-cancellation-map).
+Write its target coordinates as `(\Pi,Q,R)`.  At
+
+\[
+ \boxed{
+ q^{\rm can}
+ =\left(\frac4{11},1,-\frac{22481}{23232}\right)
+ }
+                                                               \tag{5.5}
+\]
+
+make the affine generator change
+
+\[
+ T=\frac14+3W.
+\]
+
+The cancellation inverse polynomial then satisfies the exact identity
+
+\[
+ \boxed{
+ \Psi_{q^{\rm can}}\left(\frac14+3W\right)
+ =-\frac{36}{121}p(W).
+ }                                                        \tag{5.6}
+\]
+
+The map has determinant `-1`.  Differentiating (5.6) shows that every
+simple root of `p` has nonzero cancellation reconstruction denominator.
+
+### 5.3 Quadratic gauge
+
+Use the integral seed
+
+\[
+ G(S)=9S^4-19S^3-8S.
+\]
+
+The quadratic coefficient of `p` has been sheared into the selected target;
+this removes the `tq` term from the map.  The explicit root-engineered map
+is obtained by putting
+
+\[
+ t=1+xy,\qquad
+ q=t^2z+\frac8{19}y^2(1+3t)
+\]
+
+and
+
+\[
+ \begin{aligned}
+ F^{\rm quad}=\biggl(&tq,\\
+ &y+\frac{57}{8}xq-\frac92t^2x^2q^4,\\
+ &x(5-3t)-\frac{19}{8}x^3z
+       +\frac94(xq)^4\biggr).                          \tag{5.7}
+ \end{aligned}
+\]
+
+It has determinant `-2`.  At
+
+\[
+ \boxed{q^{\rm quad}=\left(1,\frac52,-1\right)}
+\]
+
+its inverse equation is
+
+\[
+ G(S)-\frac{-8}{2}\left(\frac52S^2-1\right)=p(S).
+                                                               \tag{5.8}
+\]
+
+The expanded support counts of `F^wt` and `F^quad` are respectively
+`(16,14,3)` and `(7,51,38)`, with component degrees `(12,11,4)` and
+`(7,26,24)`.  The quadratic shear used above removes seven terms from its
+second component.  The cancellation map is fixed independently of the
+selected target.
+
+### 5.4 Connectedness, completeness, and stable fingerprints
+
+Modulo `17`, monic normalization of (5.1) is
+
+\[
+ f(W)=W^4-4W^3+3W^2+W-8.
+\]
+
+One has `7^2=-2 mod 17`, so the chosen prime splits in `K`.  Moreover,
+
+\[
+ W^{17^4}-W\equiv0\pmod f,
+\]
+
+\[
+ W^{17^2}-W
+ \equiv2W^3+8W^2+W-8\pmod f,\qquad
+ \gcd(f,W^{17^2}-W)=1.
+\]
+
+Rabin's criterion proves irreducibility over the residue field and hence
+over `K`.  Thus `p` is squarefree.  Equations (5.4), (5.6), and (5.8),
+together with the three reconstruction theorems, show that all three
+selected fibers are complete and isomorphic to `Spec A`.
+
+The three one-line stable fingerprints are
+
+\[
+ \boxed{\text{unit ranks }(1,2,2)}
+ \quad
+ \text{for }({\rm wt},{\rm can},{\rm quad}),             \tag{5.9}
+\]
+
+\[
+ \boxed{\text{reciprocal Fitting Laurent ranks }(1,2)}
+ \quad
+ \text{for }({\rm can},{\rm quad}),                     \tag{5.10}
+\]
+
+\[
+ \boxed{\text{boundary nilpotency indices }(1,6,2)}
+ \quad
+ \text{for }({\rm wt},{\rm can},{\rm quad}).             \tag{5.11}
+\]
+
+Unit rank separates the weighted map from both reciprocal maps;
+Laurent-support rank separates cancellation from quadratic gauge; and
+(5.11) independently separates all three.
+
+The affine-generator search leading to (5.1) is exact and bounded.  For the
+quartic cancellation inverse, the weighted tangent-chord constraint reduces
+to
+
+\[
+ y^2=-18a^2+24a-2.
+\]
+
+Enumerating the rational parameterization through `(a,y)=(1,2)`, with
+`|num(k)|<=4`, `den(k)<=4`, `|num(rho)|<=12`, `den(rho)<=6`, and constant
+term of the linear-normalized polynomial in `{1,-1,1/2,-1/2}`, selects
+`a=1/11`, chord step `12/11`, and scale `11/4`.  These give
+`T=1/4+3W`.  Among all certified candidates in that box, (5.1) uniquely
+minimizes first the largest and then the sum of the absolute primitive
+coefficients.
+
+This is a bounded presentation-minimality certificate, not a global
+minimality theorem under arbitrary affine generators or polynomial
+left--right changes.
+
+## 6. Determinant-one normalization
 
 For a map with determinant `d`, translate its selected target to zero and
 multiply one target coordinate by `d^(-1)`.  This is a polynomial target
@@ -286,19 +513,21 @@ and does not change the stable left--right class.  All maps above may
 therefore be presented with determinant one and the common fiber over the
 origin.
 
-## 6. Exact regression
+## 7. Exact regression
 
 Run
 
 ```bash
 .venv/bin/python scripts/verify_common_arithmetic_fibers.py
+.venv/bin/python scripts/search_cross_family_collision.py
 ```
 
 The checker verifies the all-degree tangent and boundary-clean identities,
 the two common inverse pencils, the small rational quartic, the
 quadratic-field cancellation specialization, the three common targets, and
-the mod-`17` Rabin certificate.  The family-specific stable-boundary
-calculations are independently checked by
+both mod-`17` Rabin certificates.  The second command reproduces the bounded
+affine-generator search and its coefficient-minimal output.  The
+family-specific stable-boundary calculations are independently checked by
 
 ```bash
 .venv/bin/python scripts/verify_same_degree_stable_inequivalence.py

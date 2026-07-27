@@ -28,13 +28,10 @@ corresponding mathematical argument.
 | Irreducibility and degree `N` of the fully independent inverse equation over the iterated target field `K(Π,B)(C)` | General localized quadratic-gauge fiber theorem, primitive linear-parameter argument | `GenericInverseIrreducibility.lean` proves the fixed-`π,b` engine; `GeneralGaugeFullGenericDegree.lean` promotes `Π,B` to independent parameters and proves `generalGaugeFullyGenericInversePolynomial_certificate` and `generalGaugeFullyGenericInverseAdjoinRoot_finrank` | Exact polynomial-variable swap and Mathlib Gauss lemma; concrete degree 3–5 regressions |
 | Function-field reconstruction and geometric degree `N` | General localized quadratic-gauge fiber theorem: explicit equality `K(x,y,z)=K(Π,B,C)(S)` followed by inverse-polynomial irreducibility | Complete for the polynomial-presentation map: `GeneralGaugeFunctionField.lean` proves algebraic independence and injective pullback; `GeneralGaugeFunctionFieldComparison.lean` constructs `generalGaugeSourceFunctionFieldComparison : K(x,y,z) ≃ K(Π,B)(C)[S]/(E)` over the actual target embedding and proves `generalGaugeGeometricDegree_eq`; `PageOneTheorem.lean` transports the result to the determinant-one realization | Independent rational reconstruction in the paper |
 | Geometric and arithmetic generic monodromy are `S_N` for every admissible seed | Morse-slice lemma, the standalone ordered-root-cover specialization lemma, and full symmetric generic monodromy theorem | Not formalized | Exact `dC/dB=-r^2` audit in `verify_root_engineered_quadratic_gauge.py`; Serre's Morse-polynomial theorem |
+| Every realization map is absolutely and stably compositionally indecomposable | Primitive-monodromy atomicity corollary: no intermediate generic field, Keller factors by the chain rule, and degree-one Keller maps are automorphisms | Not formalized | `verified/PRIMITIVE_MONODROMY_ATOMICITY.md`; the degree-twelve composite-degree certificate is separate |
 | Infinitely many connected full Keller fibers with splitting-field group `S_N` over a Hilbertian field | Hilbertian specialization corollary, including the arithmetic/geometric equality and regularity argument | Not formalized | Hilbert irreducibility |
-| Every finite étale algebra over an infinite field is monogenic | Monogenicity lemma, used only in the finite-étale realization corollary | Not yet formalized | Discriminant/Vandermonde proof |
+| Every finite étale algebra over an infinite field is monogenic | Monogenicity lemma, used only in the finite-étale realization corollary | `AbstractFiniteEtale.lean` proves the characteristic-zero case needed here, constructs `finiteEtalePresentation`, and composes it with the polynomial certificate in `abstractFiniteEtale_pageOne` | Paper's discriminant/Vandermonde proof; Lean uses translated primitive elements with distinct traces and the Chinese remainder theorem |
 | No characteristic-zero Keller map has generic degree two | Degree-two lemma; full descent proof in Appendix B | Not formalized | Campbell's unnumbered theorem on p. 244 (normal complex function-field extension), scalar-invariance of generic rank on a finite-locally-free open, quadratic separability/normality, and faithfully flat descent; Razar and Wright are cited as later algebraic treatments |
-| Degree-four local–global theorem over every number field | Degree-four fixed-point lemma plus the stated Chebotarev density input | `DegreeFourFixedPoint.lean` proves the finite-group lemma as `degreeFour_fixedPoint`; the Chebotarev passage is not formalized | Chebotarev |
-| Exact displayed quintic full Keller fiber at `(1,0,-38)` is represented by the finite étale algebra `ℚ[T]/((T³-19)(T²+T+1))`, naturally in test algebras, and has rank five | Minimal finite-étale Hasse theorem and optimal Keller Hasse failure corollary | `ExplicitPolynomial.lean`, `ExplicitMap.lean`, `ExplicitFiber.lean`; theorems `integralFiberRepresentingEquiv_natural`, `p5_quotient_etale`, `p5_quotient_finite`, and `p5_quotient_rank` | Exact quintic checker |
-| Explicit quintic has no rational point and has points over `ℝ` and every `ℚ_p` | Minimal finite-étale Hasse theorem: exhaustive prime table and direct Hensel data at `2,3,19` | `integralFiberPoint_hasse_certificate`, assembled from the rational obstruction, real point, direct Hensel witnesses at `2,3,19`, and the two generic residue-class theorems | Rational-root theorem, intermediate value theorem, cyclicity and coprime-power bijectivity in `(ZMod p)ˣ`, and Hensel's lemma |
-| Optimal rank-five Hasse failure | First proved for finite étale schemes by the fixed-point/Chebotarev theorem, then transferred by the realization theorem | The exact polynomial, map, literal quotient fiber, naturality, determinant, rank, rational obstruction, and local points at every completion are formalized. `DegreeFourMomentBarrier.lean` follows the alternative zeta-moment route: it proves the finite-étale component adapter, rank-at-most-four local-sheet inequality, tensor-square identity, strict tensor surplus, absolute convergence and positivity of the normalized prime sums, and the concrete first/second-moment contradiction. The combined endpoint is `no_rank_le_four_hasse_failure_of_rationalPrimeMomentStatement`. Only the Dedekind-zeta first-prime-moment extraction is not yet formalized | Exact exceptional-prime assertions and residue-cover regression in `verify_minimal_hasse_keller_fiber.py`; paper proof uses Chebotarev |
 | Compatibility of the realization with extension of the ground field | Base-change proposition in Section 4 | `GeneralGaugeBaseChange.lean` proves coefficientwise compatibility of translation, the full supplied-parameter map, normalization, admissibility, squarefreeness, and distinguished target, together with `L ⊗[K] AdjoinRoot P ≃ₐ[L] AdjoinRoot (P.map f)` | Coefficientwise paper proof |
 | Exact reduced nonproperness locus `S_F = V_red(Disc_S E)` over every algebraically closed characteristic-zero field | Appendix D, exact reduced quadratic-gauge nonproperness theorem: graph-boundary definition, fiber-cardinality criterion, localized fibers, and complete `Π=0` table | Not formalized; explicitly listed in the remaining formal boundary | Jelonek Proposition 6 is stated over `ℂ`; the paper supplies descent to a finitely generated field, embedding into `ℂ`, and graph-boundary/fiber base-change invariance |
 | Complete `Π=0` fiber table and exact global discriminant factor `Π^(N²-3N-2)` for `N ≥ 4` | Appendix D: direct `q=0` and `t=0` source charts; standalone exact-order lemma with all three residual polynomials, a root-pair valuation ledger, and the first nonzero coefficient in `K[B,C][Π]` | Not formalized | `verify_quadratic_gauge_nonproperness.py` checks the charts, exact orders and saturated-slice coefficients through degree ten, and the Newton ledger through degree 64 |
@@ -51,8 +48,7 @@ The following independent commands were rerun successfully on 27 July 2026:
   `dC/dB = -r²`, quotient reconstruction identities, and translated seeds
   through degree twelve;
 - `verify_finite_etale_keller_fibers.py`: degrees three through five,
-  quotient-ring reconstruction in both directions, the exact quintic scaling,
-  determinant, target, and inverse polynomial;
+  with quotient-ring reconstruction in both directions;
 - `verify_quadratic_gauge_nonproperness.py`: the cubic and quartic
   discriminant specializations, direct `q=0` and `t=0` charts, exact
   discriminant orders and saturated-slice coefficients through degree ten,
@@ -64,7 +60,7 @@ The following independent commands were rerun successfully on 27 July 2026:
 These are exact symbolic computations from implementations independent of the
 Lean development. They audit the displayed algebra but do not replace the
 ordinary proofs of nonproperness, monodromy, Hilbert
-specialization, degree two, or the remaining local arithmetic.
+specialization, stable atomicity, or degree two.
 
 ## Formal theorem now obtained
 
@@ -116,38 +112,18 @@ compatibility of the complete map-target pair under scalar extension, while
 `adjoinRootBaseChangeEquiv` certifies the tensor-product base change of the
 representing quotient.
 
-For the paper's explicit quintic map, Lean additionally proves that the exact
-denominator-free coordinates at target `(1,0,-38)` are naturally represented
-by the displayed Berend--Bilu quotient.  The declarations are
-`integralFiberRepresentingEquiv`, `integralFiberRepresentingEquiv_natural`,
-`p5_quotient_etale`, `p5_quotient_finite`, and `p5_quotient_rank`. Lean also
-proves the global obstruction and the archimedean local point in
-`integralFiberPoint_rat_isEmpty` and `integralFiberPoint_real_nonempty`.
-The Hensel certificate `integralFiberPoint_threeAdic_nonempty` additionally
-constructs a point on the literal fiber over `ℚ_[3]`.
-
 ## Remaining formal boundary
 
 The polynomial realization theorem is now formalized end to end, including
-actual geometric degree.  The
-remaining steps needed for a single theorem starting from an arbitrary finite
-étale algebra are:
+actual geometric degree.  Monogenicity and its composition with that theorem
+are also formalized in characteristic zero, yielding a single certificate
+starting from an abstract finite étale algebra.  The remaining boundaries are:
 
-1. formalize monogenicity of finite étale products over an infinite field;
-2. compose monogenicity with the polynomial-presentation certificate;
-3. either formalize the Campbell--Razar--Wright Galois case or keep it as a
+1. either formalize the Campbell--Razar--Wright Galois case or keep it as a
    clearly isolated classical theorem interface;
-4. formalize symmetric monodromy and Hilbertian specialization;
-5. formalize the Chebotarev passage used in the paper (the finite-`G`-set
-   endpoint `degreeFour_fixedPoint` is now formalized), or
-   complete the alternative Lean route by formalizing the Dedekind-zeta
-   first-prime-moment extraction.  The finite-étale
-   component adapter, rank-at-most-four local-sheet inequality, tensor-square
-   identity, strict tensor surplus, positive-moment contradiction, explicit
-   quintic's rational obstruction, and its points over the real and every
-   `p`-adic completion are already formalized.  Mathlib's nonzero simple-pole
-   theorem is already connected; the missing step is the Euler-product
-   coefficient extraction.
+2. formalize symmetric monodromy, stable atomicity, and Hilbertian
+   specialization;
+3. formalize the exact nonproperness and boundary-sheet statements.
 
 The repository keeps these boundaries explicit so that a compiled certificate
 is never described as proving a stronger statement than it does.

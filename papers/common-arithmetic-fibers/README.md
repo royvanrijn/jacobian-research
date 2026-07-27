@@ -16,14 +16,13 @@ arithmetic Galois group `S_N`; this is not merely a generic-coefficient
 statement. Thus every prescribed algebra is placed on a maximally symmetric
 generic cover. Over a Hilbertian field, each fixed constructed map has
 infinitely many connected full Keller fibers with splitting-field group
-`S_N`.
+`S_N`. Primitive monodromy also makes every realization map absolutely and
+stably compositionally indecomposable.
 
-The arithmetic argument is stated first for finite étale schemes.  A finite
-`G`-set lemma in degree at most four, followed by Chebotarev, proves over
-every number field that local solubility at all but finitely many finite
-places forces a rational point.  The Berend--Bilu scheme is then the minimal
-finite-étale Hasse failure over `Q`, and realization transfers it to the
-explicit full Keller fiber.
+Arithmetic examples, including the integral Jacobian-one Hasse failure and
+the fixed-quintic arithmetic zoo, are maintained as separate verified
+certificates. They are applications of the transfer theorem, not part of the
+active manuscript.
 
 The scheme-theoretic core is organized in three layers.
 
@@ -69,16 +68,8 @@ a squarefree polynomial `P` of degree at least three, Lean now:
 - proves that the complete supplied-translation map and distinguished target
   commute coefficientwise with extension of the ground field, and proves the
   corresponding tensor-product base change of the representing quotient;
-- specializes the construction to the paper's exact denominator-free quintic
-  map, proving that its literal fiber at `(1,0,-38)` is naturally represented
-  by `Q[T]/((T^3-19)(T^2+T+1))`, has rank five, has no rational point, and has
-  points over the reals and every `p`-adic field;
-- proves the tensor-square identity for local point counts and the alternative
-  first/second-moment contradiction for the degree-four barrier, together
-  with the finite-étale component adapter, the complete rank-at-most-four
-  local-sheet bound, and the strict tensor-component surplus; and
-- proves the finite-group fixed-point lemma on at most four points used in
-  the paper's shorter Chebotarev proof.
+- proves the abstract finite-étale monogenicity bridge and composes it with
+  the complete polynomial-presentation certificate.
 
 The combined final declaration is `automaticRealization_pageOne`, with
 `automaticRealizationGeometricDegree_eq` supplying its geometric-degree
@@ -95,34 +86,13 @@ actual displayed map.  The preceding layers remain separately exposed by
 `generalGaugeMap_algebraicIndependent`, and
 `generalGaugeFunctionFieldHom_injective`.  Supplied-parameter scalar extension
 is certified by `realizationMapTarget_map` and
-`adjoinRootBaseChangeEquiv`. The concrete quintic fiber
-declarations are `integralFiberRepresentingEquiv_natural`,
-`p5_quotient_etale`, `p5_quotient_finite`, and `p5_quotient_rank`; its
-arithmetic declarations are
-`integralFiberPoint_rat_isEmpty` and
-`integralFiberPoint_real_nonempty`, while
-`integralFiberPoint_hasse_certificate` combines the rational obstruction,
-real point, and all nonarchimedean local points. No translation
+`adjoinRootBaseChangeEquiv`.  The abstract-algebra endpoint is
+`abstractFiniteEtale_pageOne`, with
+`abstractFiniteEtaleFiberRepresentingEquiv_natural` supplying its natural
+fiber equivalence. No translation
 parameter, coefficient nonvanishing proof, chart unit, abstract source-fiber
 wrapper, or bounded-degree specialization remains as an external input to the
 polynomial-presentation theorem.
-
-The rank-minimality declarations include
-`componentCount_le_localPointCount_of_etale_rank_le_four`,
-`componentCount_tensor_ge_sq_add_of_etale_isEmpty_algHom`,
-`localPointCount_tensor_self`,
-`second_moment_eq_sq_of_dirichletPrimeMean`, and the combined
-`no_rank_le_four_hasse_failure_of_rationalPrimeMomentStatement`.  Lean proves
-absolute convergence, linearity, and positivity for the actual normalized
-Dirichlet prime sums, so no abstract mean functional remains on the critical
-path.  The remaining analytic interface is exactly
-`RationalFiniteEtalePrimeMomentStatement`: extraction of the first prime
-moment from the Dedekind-zeta Euler product.  The pinned Mathlib simple-pole
-theorem is already exposed by `dedekindZeta_simplePole_input`.
-This is the alternative formal route.  The paper proof uses the shorter
-finite-`G`-set lemma plus Chebotarev and does not depend on the zeta-moment
-argument.  Lean now proves that finite-`G`-set lemma as
-`degreeFour_fixedPoint`; Chebotarev itself remains outside the certificate.
 
 Three independent exact layers audit the construction:
 
@@ -131,9 +101,8 @@ Three independent exact layers audit the construction:
    quotient translation, naturality, fully independent inverse irreducibility
    and degree over `K(Π,B)(C)`, coordinate algebraic independence, the
    injective function-field pullback, the explicit source/inverse-root
-   comparison, actual geometric degree, and the explicit quintic's rational
-   obstruction, real point, points over every `p`-adic field, tensor-square
-   point count, and positive-moment contradiction.
+   comparison, actual geometric degree, and the abstract finite-étale
+   presentation bridge.
 2. A structural SymPy checker verifies the source and marked-line Jacobians,
    the generic `k`-th coefficient identities, a six-coefficient bridge, and
    the termwise degree bound.
@@ -143,19 +112,15 @@ Three independent exact layers audit the construction:
    expands degrees three, four, and five and reconstructs their quotient fibers
    in both directions.
 
-The arithmetic applications include:
-
-- an explicit degree-five full Keller fiber that is everywhere locally soluble
-  over `Q` but has no rational point, with degree five proved optimal;
-- exact transfer of connectedness, signatures, splitting fields, local
-  factorization data, and intersectivity;
-- compatibility with extension of the ground field.
+The theorem transfers connectedness, signatures, splitting fields, local
+factorization data, and rational-point behavior exactly, and is compatible
+with extension of the ground field.
 
 The active paper is deliberately narrower than the surrounding repository.
-Its seven sections follow the proof dependency: introduction and main
-results; inverse-equation design of the quadratic gauge; localized
-reconstruction and geometric degree; prescribed finite-étale realization;
-symmetric monodromy; the minimal Hasse failure; and discussion.  Appendix A
+Its sections follow the proof dependency: introduction and main results;
+inverse-equation design of the quadratic gauge; localized reconstruction and
+geometric degree; prescribed finite-étale realization; symmetric monodromy
+and stable atomicity; and discussion.  Appendix A
 contains the coefficientwise verification that the compact `(Pi,S,Q)` design
 pulls back to the displayed polynomial coordinates.  Appendix B gives the
 scalar-extension and faithfully flat descent proof of the degree-two
@@ -169,8 +134,8 @@ Jelonek's complex multiplicity criterion only after a standalone
 graph-boundary base-change lemma and a characteristic-zero descent argument,
 and proves the exact global `Pi`-adic discriminant factor in `K[B,C][Pi]`.
 
-The active manuscript contains no speculative arithmetic addendum: its Hasse
-application is the single proved rank-five example.
+The active manuscript contains no Hasse or fixed-quintic addendum; those
+applications remain separate verified notes.
 
 The directory name is retained as a stable repository path from the earlier
 draft.
@@ -194,8 +159,8 @@ The focused audits accompanying the active draft are:
    translation `K[S]/(P(a+S)) ≃ K[T]/(P(T))`;
 6. a coefficientwise and map-level derivation of the displayed all-degree
    gauge identities, Jacobian, and effective degree bound;
-7. the scaling identity `F_displayed = diag(1,19,19) F_normalized` for the
-   optimal quintic example;
+7. primitive-monodromy atomicity, including constant-field extension and
+   identity stabilization;
 8. the dated and qualified [literature audit](LITERATURE_AUDIT.md).
 
 The [verification matrix](VERIFICATION.md) records the proof layer supporting

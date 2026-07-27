@@ -156,8 +156,14 @@ rebuilt candidate is a Gröbner basis, and an exact unit computation proves
 that it is saturated by \(a(a+1)H\).  Equality with the saturated
 maximal-minor ideal is not yet proved: the next finite task is to reconstruct
 fraction-free quotient identities for input containment and for
-\((a(a+1)H)^{12}G\subseteq I_{15}(M_\Sigma)\).  Comparing the alternate
-supports comes after that certificate.
+\((a(a+1)H)^{12}G\subseteq I_{15}(M_\Sigma)\).  Canonical ordered division
+has now been audited at 613 support-stable good primes: its 11,701 quotient
+coefficients have prohibitive height, with only 30 surviving an independent
+18,116-bit balanced reconstruction test.  For input containment, the next
+bounded construction is therefore a fixed syzygy-normalized
+Macaulay/RREF lift with smaller coefficient height, followed by integer
+identity checking.  Comparing the alternate supports comes after that
+certificate.
 
 This would replace many representative-dependent linear calculations by one
 gauge-invariant obstruction.  It could prove that the displayed rank-two

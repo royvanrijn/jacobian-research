@@ -80,6 +80,79 @@ assert eliminated_boundary_equations == [nonproperness_np]
 foundational_phantom_boundary_factor = sp.Integer(1)
 assert foundational_phantom_boundary_factor == 1
 
+# The (m,r)=(1,1) foundational boundary ledger has one tame ramified
+# boundary prime of type (e,f)=(2,1), no unramified boundary prime, and one
+# target image.  Hence its lexicographic boundary invariant is (1,1,1).
+foundational_boundary_types = ((2, 1),)
+foundational_different_orders = tuple(
+    ramification_index - 1
+    for ramification_index, _ in foundational_boundary_types
+)
+foundational_boundary_invariant = (
+    len(eliminated_boundary_equations),
+    len(foundational_boundary_types),
+    sum(foundational_different_orders),
+)
+assert foundational_boundary_invariant == (1, 1, 1)
+
+# The singular scheme of the foundational branch discriminant is supported
+# on the triple-root locus.  This calibrates Proposition 1.4a's remaining
+# support after tame local flatness removes the smooth branch locus.
+branch_singular_basis = sp.groebner(
+    (
+        nonproperness_np,
+        sp.diff(nonproperness_np, target_a_np),
+        sp.diff(nonproperness_np, target_b_np),
+        sp.diff(nonproperness_np, target_c_np),
+    ),
+    target_a_np,
+    target_b_np,
+    target_c_np,
+    order="lex",
+)
+branch_singular_equations = [
+    sp.factor(polynomial.as_expr())
+    for polynomial in branch_singular_basis.polys
+]
+assert branch_singular_equations == [
+    16 * target_a_np - target_b_np**3 * target_c_np,
+    (3 * target_b_np * target_c_np - 4) ** 2,
+]
+triple_root_radical_equations = (
+    16 * target_a_np - target_b_np**3 * target_c_np,
+    3 * target_b_np * target_c_np - 4,
+)
+triple_root_parameter = sp.symbols("triple_root_parameter", nonzero=True)
+triple_root_substitution = {
+    target_a_np: triple_root_parameter**2 / 3,
+    target_b_np: 2 * triple_root_parameter,
+    target_c_np: 2 / (3 * triple_root_parameter),
+}
+assert all(
+    sp.factor(equation.subs(triple_root_substitution)) == 0
+    for equation in triple_root_radical_equations
+)
+depressed_cusp_s = (
+    sp.Rational(4, 3) / target_c_np**2
+    - target_b_np / target_c_np
+)
+depressed_cusp_t = (
+    -sp.Rational(16, 27) / target_c_np**3
+    + sp.Rational(2, 3) * target_b_np / target_c_np**2
+    - 2 * target_a_np / target_c_np
+)
+assert sp.factor(
+    nonproperness_np
+    + target_c_np**4
+    * (4 * depressed_cusp_s**3 - 27 * depressed_cusp_t**2)
+    / 4
+) == 0
+assert sp.factor(
+    sp.Matrix((depressed_cusp_s, depressed_cusp_t, target_c_np))
+    .jacobian((target_a_np, target_b_np, target_c_np))
+    .det()
+) == -2 / target_c_np**2
+
 
 # Deligne--Faddeev cubic algebra in the basis (1, omega, theta).
 a, b, c, d = sp.symbols("a b c d")
@@ -373,6 +446,125 @@ assert any(
     )
 )
 
+# At a reduced Koszul defect, the exceptional binary cubic in direction
+# [A:B:C] is the restriction of h to the line AX+BY+CZ=0.  Its binary
+# discriminant homogenizes to degree six in A,B,C.  These representatives
+# calibrate every reduced plane-cubic degeneration in Proposition 1.8d.
+line_x, line_y = sp.symbols("line_x line_y")
+dual_a, dual_b, dual_c = sp.symbols("dual_a dual_b dual_c")
+line_z = -(dual_a * line_x + dual_b * line_y) / dual_c
+
+
+def binary_cubic_discriminant(polynomial: sp.Expr) -> sp.Expr:
+    binary_polynomial = sp.Poly(
+        sp.together(polynomial),
+        line_x,
+        line_y,
+    )
+    coefficients = [
+        binary_polynomial.coeff_monomial(
+            line_x ** (3 - index) * line_y**index
+        )
+        for index in range(4)
+    ]
+    coefficient_a, coefficient_b, coefficient_c, coefficient_d = (
+        coefficients
+    )
+    return sp.factor(
+        coefficient_b**2 * coefficient_c**2
+        - 4 * coefficient_a * coefficient_c**3
+        - 4 * coefficient_b**3 * coefficient_d
+        - 27 * coefficient_a**2 * coefficient_d**2
+        + 18
+        * coefficient_a
+        * coefficient_b
+        * coefficient_c
+        * coefficient_d
+    )
+
+
+def line_section_discriminant(ternary_cubic: sp.Expr) -> sp.Expr:
+    restricted = ternary_cubic.subs(
+        {
+            ternary_variables[0]: line_x,
+            ternary_variables[1]: line_y,
+            ternary_variables[2]: line_z,
+        }
+    )
+    return sp.factor(
+        sp.together(
+            binary_cubic_discriminant(restricted) * dual_c**6
+        )
+    )
+
+
+ternary_x, ternary_y, ternary_z = ternary_variables
+line_section_discriminants = {
+    "smooth": line_section_discriminant(
+        ternary_x**3 + ternary_y**3 + ternary_z**3
+    ),
+    "nodal": line_section_discriminant(
+        ternary_y**2 * ternary_z
+        - ternary_x**2 * (ternary_x + ternary_z)
+    ),
+    "cuspidal": line_section_discriminant(
+        ternary_y**2 * ternary_z - ternary_x**3
+    ),
+    "line_transverse_conic": line_section_discriminant(
+        ternary_z * (ternary_x * ternary_y - ternary_z**2)
+    ),
+    "line_tangent_conic": line_section_discriminant(
+        ternary_z * (ternary_y * ternary_z - ternary_x**2)
+    ),
+    "triangle": line_section_discriminant(
+        ternary_x * ternary_y * ternary_z
+    ),
+    "concurrent_lines": line_section_discriminant(
+        ternary_x * ternary_y * (ternary_x - ternary_y)
+    ),
+    "double_line": line_section_discriminant(ternary_x**2 * ternary_y),
+    "triple_line": line_section_discriminant(ternary_x**3),
+}
+assert sp.factor(line_section_discriminants["smooth"] - (-27 * (
+    dual_a**6
+    - 2 * dual_a**3 * dual_b**3
+    - 2 * dual_a**3 * dual_c**3
+    + dual_b**6
+    - 2 * dual_b**3 * dual_c**3
+    + dual_c**6
+))) == 0
+assert sp.factor(line_section_discriminants["nodal"] - (dual_c**2 * (
+    4 * dual_a**4
+    - 4 * dual_a**3 * dual_c
+    - 8 * dual_a**2 * dual_b**2
+    + 36 * dual_a * dual_b**2 * dual_c
+    + 4 * dual_b**4
+    - 27 * dual_b**2 * dual_c**2
+))) == 0
+assert sp.factor(line_section_discriminants["cuspidal"] - (-dual_c**3 * (
+    4 * dual_a**3 + 27 * dual_b**2 * dual_c
+))) == 0
+assert sp.factor(line_section_discriminants["line_transverse_conic"] - (
+    -dual_a**2
+    * dual_b**2
+    * (4 * dual_a * dual_b - dual_c**2)
+)) == 0
+assert sp.factor(line_section_discriminants["line_tangent_conic"] - (
+    dual_b**4 * (dual_a**2 - 4 * dual_b * dual_c)
+)) == 0
+assert sp.factor(line_section_discriminants["triangle"] - (
+    dual_a**2 * dual_b**2 * dual_c**2
+)) == 0
+assert sp.factor(
+    line_section_discriminants["concurrent_lines"] - dual_c**6
+) == 0
+assert line_section_discriminants["double_line"] == 0
+assert line_section_discriminants["triple_line"] == 0
+assert all(
+    sp.Poly(discriminant, dual_a, dual_b, dual_c).total_degree() == 6
+    for discriminant in tuple(line_section_discriminants.values())[:-2]
+)
+
 # Double-saturation calibration.  Put C=A/(x) and take the rank-one
 # codimension-one-full submodule T=(y,z)C.  Its S2 hull is C and C/T=k at
 # the origin.  As an A-module, T has the exact length-two presentation
@@ -614,12 +806,16 @@ assert sp.factor(
 print("PASS: Deligne--Faddeev multiplication is associative and commutative")
 print("PASS: the cubic critical DVR budget is uniquely (2,1)+(1,1)")
 print("PASS: the foundational phantom-boundary factor is the unit 1")
+print("PASS: the foundational cubic boundary invariant is (1,1,1)")
+print("PASS: its branch singular support is exactly the triple-root locus")
+print("PASS: its entire singular branch locus is an ordinary cusp cylinder")
 print("PASS: trace splitting and binary-cubic discriminant are exact")
 print("PASS: the reflexive rank-two warning is supported only in codimension three")
 print("PASS: its rank-three unit extension has excess special-fiber length four")
 print("PASS: the model defect has Fitt_3=(x,y,z)")
 print("PASS: the first Koszul cubic-cover symbol is a ternary cubic in order three")
 print("PASS: its exceptional divisor is the incidence pullback of that cubic")
+print("PASS: every squarefree defect symbol has branch tangent degree six")
 print("PASS: the S2-hull quotient and Ext^2 defect have the same length")
 print("PASS: after S2 saturation the conormal defect is exactly point torsion")
 print("PASS: the s=2 determinantal rung is origin-primary with fiber length five")

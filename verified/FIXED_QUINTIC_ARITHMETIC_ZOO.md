@@ -1,9 +1,8 @@
-# Fixed-quintic arithmetic-zoo certificate
+# The arithmetic zoo of one explicit quintic Keller map
 
-The canonical theorem and proof are consolidated in
-[`FIXED_QUINTIC_MODULI_DOMINANCE.md`](../FIXED_QUINTIC_MODULI_DOMINANCE.md#61-one-explicit-arithmetic-zoo).
-This companion records the arithmetic certificate and its direct
-reproduction command.
+The canonical theorem and proofs are consolidated in
+[`FIXED_QUINTIC_MODULI_DOMINANCE.md`](../FIXED_QUINTIC_MODULI_DOMINANCE.md).
+This companion is the finite certificate ledger.
 
 For the single determinant-`-2` degree-five Keller map with inverse pencil
 
@@ -11,96 +10,112 @@ For the single determinant-`-2` degree-five Keller map with inverse pencil
 E_{\Pi,B,C}(S)=\Pi^5S^5-5\Pi S^3-2BS^2+4S-2C,
 \]
 
-the rows are:
-
-| type | target \((\Pi,B,C)\) | inverse polynomial |
-|---|---|---|
-| \(\mathbb Q^5\) | \((1,0,0)\) | \(S(S-1)(S+1)(S-2)(S+2)\) |
-| irreducible \(S_5\) | \((1,0,-1/2)\) | \(S^5-5S^3+4S+1\) |
-| irreducible \(A_5\) | \((1,-4/3,6)\) | \(S^5-5S^3+\frac83S^2+4S-12\) |
-| \(K_2\times K_3\) | \((1,-3/2,-9/2)\) | \((S^2+S+1)(S^3-S^2-5S+9)\) |
-| Hasse failure | \((4,-335/27,4807/20736)\) | \((192S^2-72S+19)(55296S^3+20736S^2+1224S-253)/10368\) |
-
-The Hasse row has common quadratic resolvent
-\(\mathbb Q(\sqrt{-3})\).  Its primitive projective target coordinates are
-
-\[
-[20736:82944:-257280:4807],
-\]
-
-of height \(257280\).  The proof checks the only possibly bad primes
-\(2,3,7,19\) explicitly.
-
-Varying the shared quadratic field gives a second, smaller Hasse row:
-
-\[
-\left(\Pi,B,C\right)
-=\left(-7,\frac{387}{14},\frac{400}{2401}\right),
-\]
-
-with normalized inverse polynomial
-
-\[
-(T^2-4T+32)(T^3+4T^2-21T+175).
-\]
-
-The two factor discriminants are \(-7\cdot4^2\) and
-\(-7\cdot(5\cdot79)^2\).  Exact local witnesses at \(2,5,7,79\) prove
-everywhere local solubility.  Its primitive target
-\([4802:-33614:132741:800]\) has height \(132741\).
-
-A wider search gives the still smaller row
-
-\[
-\left(5,-\frac{144}{5},-\frac{188}{3125}\right),
-\qquad
-(T^2-8T+47)(T^3+8T^2+12T+8).
-\]
-
-Its factor discriminants are \(-31\cdot2^2\) and \(-31\cdot8^2\).
-The only exceptional primes are \(2\) and \(31\): the quadratic splits over
-\(\mathbb Q_2\), and the cubic has the simple root \(15\) modulo \(31\).
-The primitive target \([3125:15625:-90000:-188]\) has height \(90000\).
-
-The same map also contains every transitive quintic Galois group.  In terms
-of
+use the centered monic presentation
 
 \[
 \widetilde E_{\Pi,B,C}(T)
 =\Pi^5E_{\Pi,B,C}(\Pi^{-2}T),
 \]
 
-the three additional solvable rows are:
+and the following ledger.  A prime annotation such as \(11:(5)\) records
+the squarefree factor-degree partition modulo that prime.  The real column
+is the number of real roots.
 
-| group | target \((\Pi,B,C)\) | \(\widetilde E_{\Pi,B,C}(T)\) |
-|---|---|---|
-| \(C_5\) | \((1,-15/11,331/242)\) | \(T^5-5T^3+\frac{30}{11}T^2+4T-\frac{331}{121}\) |
-| \(D_5\) | \((5/2,-27/8,-738/3125)\) | \(T^5-5T^3+\frac{135}{8}T^2+\frac{125}{2}T+\frac{369}{8}\) |
-| \(F_{20}\) | \((31/5,5229/310,9618099/114516604)\) | \(T^5-5T^3-\frac{5229}{25}T^2+\frac{119164}{125}T-\frac{9618099}{6250}\) |
+<!-- BEGIN GENERATED FIXED QUINTIC LEDGER -->
+| purpose | target `(Pi,B,C)` | `H_proj` | type | witness primes / exact certificate | real | local certificate |
+|---|---|---:|---|---|---:|---|
+| split | `(1,0,0)` | 1 | `Q^5` | T(T-1)(T+1)(T-2)(T+2) | 5 | — |
+| signature | `(1,-1,-1)` | 1 | `S_5` | 11:(5); 7:(4,1); 3:(3,2) | 1 | — |
+| signature | `(-1,-1,-1)` | 1 | `S_5` | 5:(5); 43:(2,1,1,1); nonsquare discriminant | 3 | — |
+| signature | `(1,0,-1/2)` | 2 | `S_5` | 2:(5); 7:(4,1); 19:(3,2) | 5 | — |
+| alternating | `(1,0,-2/5)` | 5 | `A_5` | 3:(5); 23:(3,1,1); discriminant=232^2 | 5 | — |
+| cyclic | `(1,0,-7/10)` | 10 | `C_5` | 2:(5); explicit order-five automorphism | 5 | — |
+| dihedral | `(2/5,-21/10,2)` | 21 | `D_5` | square discriminant; pair-sum resolvent split 5+5 (both 3:(5)); 11:(2,2,1) | 5 | — |
+| Frobenius | `(1/2,3/2,2/5)` | 15 | `F_20` | 29:(5); Dummit resolvent root -13/2; nonsquare discriminant | 5 | — |
+| product | `(1,-3/2,-9/2)` | 9 | `K_2 x K_3` | (T^2+T+1)(T^3-T^2-5T+9); cubic irreducible modulo 5 | 1 | — |
+| Hasse failure | `(5,-144/5,-188/3125)` | 90000 | `irreducible 2+3` | common quadratic resolvent Q(sqrt(-31)); cubic irreducible modulo 5 | 1 | 2: quadratic splits; 31: cubic simple root 15; all other finite primes: unramified common-resolvent argument |
+<!-- END GENERATED FIXED QUINTIC LEDGER -->
 
-Together with the \(A_5\) and \(S_5\) rows above, these give all five
-transitive subgroups of \(S_5\).  The exact certificates are respectively:
-an explicit order-five cyclotomic automorphism; a two-quintic pair-sum
-resolvent plus a \((2,2,1)\) modular factor pattern; and a rational root of
-Cayley's sextic resolvent plus a nonsquare discriminant.
+Thus the table contains all three quintic real signatures, all five
+transitive subgroups of \(S_5\), split and quadratic-times-cubic algebras,
+and an everywhere locally soluble fiber with no rational point.  Every row
+has \(\Pi\ne0\) and nonzero discriminant, so reconstruction identifies the
+entire Keller fiber with the displayed etale algebra.
 
-The bounded search that found the \(F_{20}\) transport is
+The five transitive-group headline rows have common projective-height bound
+\(21\).  Their exact certificates are oracle-free; the assertion that the
+first individual heights are \(1,5,10,15,21\) is the separate bounded
+PARI/GP computation recorded in the
+[height-21 witness card](UNIVERSAL_QUINTIC_CALCULATOR.md).
+
+For the Hasse row,
+
+\[
+\widetilde E(T)=(T^2-8T+47)(T^3+8T^2+12T+8).
+\]
+
+The factor discriminants are \(-31\cdot2^2\) and \(-31\cdot8^2\).
+Consequently only \(2\) and \(31\) require special treatment.  At \(2\),
+\(-31\equiv1\pmod8\), so the quadratic splits over \(\mathbb Q_2\).  At
+\(31\), the cubic has the simple root \(15\).  At every other finite prime,
+the cyclic decomposition group in the common \(S_3\) splitting field fixes
+a root of one factor.  The cubic supplies a real root, neither factor has a
+rational root, and hence this is a Hasse failure.  Its primitive projective
+target \([3125:15625:-90000:-188]\) has height \(90000\); no global
+height-minimality is claimed.
+
+The seven unramified partitions of five already occur modulo \(7\):
+
+| partition | \((\bar\Pi,\bar B,\bar C)\) |
+|---|---|
+| \((5)\) | \((1,0,1)\) |
+| \((4,1)\) | \((1,0,3)\) |
+| \((3,2)\) | \((1,0,2)\) |
+| \((3,1,1)\) | \((1,1,3)\) |
+| \((2,2,1)\) | \((3,2,0)\) |
+| \((2,1,1,1)\) | \((1,2,6)\) |
+| \((1,1,1,1,1)\) | \((1,0,0)\) |
+
+The coefficient map
+
+\[
+(c_2,c_3,c_4)=(-2\Pi B,4\Pi^3,-2\Pi^5C)
+\]
+
+has Jacobian \(-48\Pi^8\).  This is the concise geometric dominance
+certificate; it is separate from the finite arithmetic rows above.
+
+For provenance, the bounded trace search that found the earlier transported
+\(F_{20}\) row is
 
 ```bash
 .venv/bin/python scripts/search_fixed_quintic_trace_points.py \
   --u -10 --v 20 --bound 18
 ```
 
-Run
+The unified checker generates both this table and
+[`fixed_quintic_certificate_ledger.json`](../artifacts/generated-results/fixed_quintic_certificate_ledger.json),
+then runs the four underlying exact checkers:
 
 ```bash
-.venv/bin/python scripts/verify_fixed_quintic_arithmetic_zoo.py
+.venv/bin/python scripts/verify_fixed_quintic_certificate_ledger.py
 ```
 
-The checker expands the fixed map, verifies its constant Jacobian, every
-target substitution, factorization and discriminant, all five transitive
-Galois-group certificates, squarefreeness, the common quadratic resolvent,
-and every exceptional Hensel witness.
+To refresh the generated JSON and Markdown after an intentional row change,
+run
+
+```bash
+.venv/bin/python scripts/verify_fixed_quintic_certificate_ledger.py --write
+```
+
+The underlying commands are
+
+```bash
+.venv/bin/python scripts/verify_fixed_quintic_moduli_dominance.py
+.venv/bin/python scripts/verify_fixed_quintic_arithmetic_zoo.py
+.venv/bin/python scripts/verify_universal_quintic_calculator.py
+.venv/bin/python scripts/verify_fixed_quintic_hasse_minus_thirty_one.py
+```
 
 The bounded PARI/GP height search is reproduced by
 
@@ -111,12 +126,15 @@ The bounded PARI/GP height search is reproduced by
 
 The first command's default box and the limitation to bounded search evidence
 are stated in the canonical note.  The second varies the squarefree common
-quadratic discriminant and found the \(\mathbb Q(\sqrt{-7})\) row above.
-Its exact independent audit is
+quadratic discriminant and found the \(\mathbb Q(\sqrt{-7})\) row recorded
+in the canonical note.
+The two earlier Hasse rows, with common resolvents
+\(\mathbb Q(\sqrt{-3})\) and \(\mathbb Q(\sqrt{-7})\), remain useful
+independent regressions.  Their exact audits are
 
 ```bash
+.venv/bin/python scripts/verify_fixed_quintic_arithmetic_zoo.py
 .venv/bin/python scripts/verify_fixed_quintic_hasse_minus_seven.py
-.venv/bin/python scripts/verify_fixed_quintic_hasse_minus_thirty_one.py
 ```
 
 Infinitely many Hasse failures in this fixed pencil remain open.  The
@@ -136,3 +154,19 @@ the standard pure-cubic family
 \(\mathbb Q(\sqrt{-3})\times\mathbb Q(\sqrt[3]{m})\) cannot enter the
 normalized trace chart, because it would require the conic
 \(5v^2-9u^2=15\), which has no \(\mathbb Q_5\)-point.
+
+For the clean \(\mathbb Q(\sqrt{-31})\) row, the first exact curve search
+excludes every affine-linear base curve through the certified point and
+every degree-at-most-two curve on the coordinate-fixed slices \(A=-8\),
+\(R=2\), and \(\Pi=5\).  Its general bounded quadratic continuation tests
+15024 genuine coefficient tuples in the box \([-2,2]^6\) and finds no
+square pullback:
+
+```bash
+.venv/bin/python scripts/search_fixed_quintic_hasse_rational_curves.py
+```
+
+The exact obstruction and bounded experiment are recorded in
+[`fixed_quintic_hasse_curve_search.json`](../artifacts/generated-results/fixed_quintic_hasse_curve_search.json).
+Rational curves of higher complexity and infinitely many Hasse failures
+remain open.
