@@ -871,10 +871,9 @@ development:
    \(SU(2)\) seed, giving `not SIC(5)` and unrestricted `not GVC(5)`.
    Its third-order operator does not lower the 40-variable ordinary-Laplacian
    entry.
-7. `DVG3` bihomogenizes the two-circular-pair weighted Gaussian bridge into
-   the explicit eight-term witness
-   \(\tau^3(t+z)(wt^3-vy(t+y)^2)\), with multiplier \(z\), giving
-   `not SIC(3)`.
+8. `DVG3` applies a degree-two one-pair bihomogenization to Long's
+   \(SU(2)\) Mathieu seed and gives the explicit four-term witness
+   \(\tau(t-y)(wz+vt)\), with multiplier \(y\), proving `not SIC(3)`.
 
 Only the arrows in this list are dependencies or implications.  The certified
 upper endpoints are now SIC 3, unrestricted GVC 5, ordinary-Laplacian GVC 40,

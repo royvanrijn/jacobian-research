@@ -10,12 +10,12 @@ For
    \mathbb C[\zeta_1,\ldots,\zeta_r,z_1,\ldots,z_r],
 \]
 
-the repository now has an eight-term counterexample in three contraction
+the repository now has a four-term counterexample in three contraction
 pairs.  With pairs \((\tau,t),(w,z),(v,y)\), put
 
 \[
- f=\tau^3(t+z)\bigl(wt^3-vy(t+y)^2\bigr),
- \qquad g=z.                                              \tag{1.1}
+ f=\tau(t-y)(wz+vt),
+ \qquad g=y.                                              \tag{1.1}
 \]
 
 Then
@@ -28,8 +28,8 @@ Then
 The all-order proof and provenance are in
 [`THREE_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md`](THREE_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md).
 In fact
-\([t]\mathcal E_3(gf^m)=(3m+1)!m!\).  Expanded, \(f\) has eight terms and
-ordinary degree eight, while \(g\) is one linear monomial.  The
+\([t]\mathcal E_3(gf^m)=(-1)^{m-1}(m+1)!m!\).  Expanded, \(f\) has four
+terms and ordinary degree four, while \(g\) is one linear monomial.  The
 one-pair case is known to satisfy the Image Conjecture, so the remaining
 absolute dimension question is exactly whether \(\operatorname{SIC}(2)\)
 holds.

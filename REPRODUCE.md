@@ -1574,11 +1574,11 @@ python3 scripts/verify_three_pair_image_mathieu_counterexample.py
 ```
 
 For
-\(f=\tau^3(t+z)(wt^3-vy(t+y)^2)\) and \(g=z\), the dependency-free
+\(f=\tau(t-y)(wz+vt)\) and \(g=y\), the dependency-free
 checker verifies exact sparse contractions
 \(\mathcal E(f^m)=0\) and
-\([t]\mathcal E(gf^m)=(3m+1)!m!\) through order ten, records the eight-term
-bidegree-\((4,4)\) artifact, and replays the two binomial identities used in
+\([t]\mathcal E(gf^m)=(-1)^{m-1}(m+1)!m!\) through order ten, records the
+four-term bidegree-\((2,2)\) artifact, and replays the two binomial identities used in
 the all-order proof.  The proof is in
 [`THREE_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md`](extended-geometry/THREE_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md).
 

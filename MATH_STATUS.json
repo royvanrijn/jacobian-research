@@ -5175,11 +5175,11 @@
       "id": "DVG3",
       "kind": "theorem",
       "state": "proved",
-      "title": "Eight-term three-pair Image-Mathieu counterexample",
-      "scope": "For the contraction pairs (tau,t), (w,z), and (v,y), let f=tau^3(t+z)(w t^3-v y(t+y)^2) and g=z. Then E(f^m)=0 and the coefficient of t in E(g f^m) is (3m+1)!m! for every m>=1. Hence f^m lies in M_3 for every positive m while g f^m never lies in M_3, so SIC(3) fails and the minimum SIC pair dimension is in {2,3}. The eight-term witness is obtained by one-pair bihomogenization of the H(z)=z specialization of the weighted two-circular-pair Gaussian bridge. No claim about SIC(2), Jacobian provenance, or literature priority is made.",
+      "title": "Four-term three-pair Image-Mathieu counterexample",
+      "scope": "For the contraction pairs (tau,t), (w,z), and (v,y), let f=tau(t-y)(wz+vt) and g=y. Then E(f^m)=0 and the coefficient of t in E(g f^m) is (-1)^(m-1)(m+1)!m! for every m>=1. Hence f^m lies in M_3 for every positive m while g f^m never lies in M_3, so SIC(3) fails and the minimum SIC pair dimension is in {2,3}. The four-term witness is the degree-two one-pair bihomogenization of Christopher D. Long's SU(2) Mathieu seed (1+c)(ad+b), with multiplier -c; under the Mueger-Tuset substitution that seed is Long's three-term xz(1,1) counterexample. No claim about SIC(2), term-count minimality, or Jacobian provenance is made.",
       "canonical_source": "extended-geometry/THREE_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md",
       "dependencies": [
-        "WG1",
+        "external: Long SU(2) Mathieu seed",
         "external: Zhao image-kernel identity"
       ],
       "checker": "scripts/verify_three_pair_image_mathieu_counterexample.py",
@@ -5187,7 +5187,7 @@
       "independent_replay": true,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:ac5408c1278e6fe2d3f78b408bd2165454833db42a669cd929570ba1f2e30d5b",
+      "artifact_hash": "sha256:c181822f9d14e2feb8db6aa16c5d5ac1c1f73fe5520d95193e40a46676a57b6d",
       "software_lock": [],
       "supersedes": [
         "DVG1 as the overall repository-certified SIC upper witness",

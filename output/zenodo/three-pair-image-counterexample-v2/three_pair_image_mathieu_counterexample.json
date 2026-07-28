@@ -33,5 +33,5 @@
     "[t]E(g*f^m)": "(-1)^(m-1)*(m+1)!*m!"
   },
   "exact_sparse_replay_cutoff": 10,
-  "written_proof": "extended-geometry/THREE_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md"
+  "written_proof": "main.tex"
 }

@@ -83,13 +83,13 @@ def main() -> None:
     )
     assert dvorsky["consequences"]["SIC"] == "fails in 5 contraction pairs"
     assert len(sic_three["contraction_pairs"]) == 3
-    assert sic_three["expanded_f_term_count"] == 8
-    assert sic_three["g"] == "z"
+    assert sic_three["expanded_f_term_count"] == 4
+    assert sic_three["g"] == "y"
     assert sic_three["bidegrees"]["g"] == [0, 1]
     assert sic_three["all_order_identities"]["E(f^m)"] == "0"
     assert (
         sic_three["all_order_identities"]["[t]E(g*f^m)"]
-        == "(3m+1)!*m!"
+        == "(-1)^(m-1)*(m+1)!*m!"
     )
     assert hessian_rank_35_slice["slice_dimension"] == 21
     assert hessian_rank_35_slice["HN_potential"]["dimension"] == 42
