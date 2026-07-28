@@ -129,7 +129,8 @@ multiplicity.  For every common power shift, and for every cubic lift exponent
 `n ≥ 4`, it proves the normalized Jacobian determinant is one.  On `Π=1` the
 deformed coordinates evaluate identically to the undeformed coordinates, so
 the original quotient algebra represents the literal stable-map fiber over
-every commutative test algebra.  The two generated stable arithmetic modules
+every commutative test algebra, naturally under algebra homomorphisms.  The
+two generated stable arithmetic modules
 instantiate these statements for the ramified quintic at `m=2` and
 `T^3-T-1` at `n=7`.  The separate boundary invariants proving pairwise stable
 inequivalence are not formalized here.
@@ -160,6 +161,8 @@ automaticRepresentingAlgebra_etale
 automaticRepresentingAlgebra_finite
 powerShiftedGaugeRealizationFiberRepresentingEquiv
 cubicLiftGaugeRealizationFiberRepresentingEquiv
+powerShiftedGaugeRealizationFiberRepresentingEquiv_natural
+cubicLiftGaugeRealizationFiberRepresentingEquiv_natural
 jacobianDet_powerShiftedGaugeJacobianOneMap
 jacobianDet_cubicLiftGaugeJacobianOneMap
 ExplicitQuintic.p5_quotient_etale

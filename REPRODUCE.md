@@ -2367,9 +2367,19 @@ delegating support-at-most-three boundaries to `HC4MC3`, unit gcds or ideals
 exclude all 466 genuine rank-three lines, 6,082 genuine rank-two planes, and
 7,956 genuine rank-one three-spaces.  The second checker isolates the 5,430
 rank-zero four-parameter spaces and proves that every full determinant ideal
-is a unit modulo `1000003`, using at most twelve evaluation points.  This
-closes cubic support four over the certificate field, but not yet over
-characteristic zero.
+is a unit modulo `1000003`, using at most twelve evaluation points.
+
+The characteristic-zero promotion is:
+
+```bash
+.venv/bin/python scripts/verify_hc4_meng_four_cubic_characteristic_zero.py
+```
+
+It reconstructs the same rank and boundary census over `QQ`.  Exact rational
+gcds or Gröbner ideals exclude all 466 lines, 6,082 planes, 7,956
+three-spaces, and 5,430 four-spaces.  The maximum evaluation-prefix lengths
+for ranks three through zero are `5, 7, 8, 11`.  Thus cubic support at most
+four is excluded in characteristic zero.
 
 The direct collision-normalized finite-field experiment in degree bounds
 five through eight is:

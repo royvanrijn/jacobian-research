@@ -41,8 +41,9 @@ that
  \Eop(f^m)=0,\qquad [t]\Eop(gf^m)=(3m+1)!\,m!.
 \]
 Thus every positive power of \(f\) lies in the image of the operators
-\(\partial_t-\tau,\partial_z-w,\partial_y-v\), whereas no \(gf^m\)
-does.  The polynomial \(f\) has eight terms and the multiplier is linear.
+\(\partial_t-\tau,\partial_z-w,\partial_y-v\), whereas
+\(gf^m\notin\M_3\) for every \(m\geq1\).  The polynomial \(f\) has
+eight terms and the multiplier is linear.
 Consequently the minimum number of pairs in which the Special Image
 Conjecture can fail is either two or three.
 \end{abstract}
@@ -61,8 +62,10 @@ subspace: if \(h^m\in\M_r\) for every \(m\geq1\), then
 \(m\); see Zhao~\cite{Zhao2010} and van den Essen, Wright, and
 Zhao~\cite{EWZ2011}.
 
-Define the contraction map
+Define the polynomial-valued contraction map
 \[
+ \Eop_r:R_r\longrightarrow\C[z_1,\ldots,z_r],
+ \qquad
  \Eop_r(\zeta^\alpha z^\beta)=\partial_z^\alpha z^\beta.
 \]
 
@@ -72,14 +75,26 @@ For every \(r\geq1\), one has \(\M_r=\ker\Eop_r\).
 
 \begin{proof}
 For \(h\in R_r\),
-\(\Eop_r((\partial_{z_i}-\zeta_i)h)=0\), so
+\[
+ \Eop_r(\partial_{z_i}h)
+ =\partial_{z_i}\Eop_r(h)
+ =\Eop_r(\zeta_i h).
+\]
+Thus \(\Eop_r((\partial_{z_i}-\zeta_i)h)=0\), so
 \(\M_r\subseteq\ker\Eop_r\).  Conversely,
 \[
  \zeta_i h\equiv\partial_{z_i}h\pmod{\M_r}.
 \]
-Repeatedly applying this congruence to each monomial gives
-\(p\equiv\Eop_r(p)\pmod{\M_r}\).  Since \(\Eop_r\) is the identity on
-\(\C[z_1,\ldots,z_r]\), \(\Eop_r(p)=0\) implies \(p\in\M_r\).
+Repeatedly applying this congruence gives, for every monomial,
+\[
+ \zeta^\alpha z^\beta
+ \equiv\partial_z^\alpha z^\beta
+ =\Eop_r(\zeta^\alpha z^\beta)
+ \pmod{\M_r}.
+\]
+By linearity, \(p\equiv\Eop_r(p)\pmod{\M_r}\).  Since \(\Eop_r\) is
+the identity on \(\C[z_1,\ldots,z_r]\), \(\Eop_r(p)=0\) implies
+\(p\in\M_r\).
 \end{proof}
 
 Use the pairs
@@ -103,11 +118,22 @@ Let
 Then, for every \(m\geq1\),
 \[
  \Eop_3(f^m)=0,\qquad
- [t]\Eop_3(gf^m)=(3m+1)!\,m!.
+ [t]\Eop_3(gf^m)=(3m+1)!\,m!\neq0.
 \]
-Consequently \(f^m\in\M_3\) and \(gf^m\notin\M_3\) for every
-\(m\geq1\).
+In particular, \(\Eop_3(gf^m)\neq0\).  Consequently
+\(f^m\in\M_3\) and \(gf^m\notin\M_3\) for every \(m\geq1\).
 \end{theorem}
+
+In expanded form,
+\[
+\boxed{\;
+ f=\tau^3\bigl(
+ wt^4+wt^3z-vt^3y-2vt^2y^2-vty^3
+ -vt^2yz-2vty^2z-vy^3z
+ \bigr).
+\;}
+\]
+This displays the advertised eight terms directly.
 
 \section{Proof}
 
@@ -141,13 +167,17 @@ After multiplication by \(Z\), the first pair instead selects
  =m!\sum_{k=0}^{m-1}(-1)^k\binom m{k+1}=m!.
 \end{equation}
 
-Homogenize \(P\) to total coordinate degree four:
+Homogenize in the coordinate variables \(Z,Y\), treating \(W,V\) as
+coefficient, or dual, variables:
 \[
- \widetilde P
+ \widetilde P(t,w,z,v,y)
+ =t^4P\left(w,\frac zt,v,\frac yt\right)
  =(t+z)\bigl(wt^3-vy(t+y)^2\bigr).
 \]
-Every term of \(P^m\) that survives \(\mathcal F\) has total
-\((Z,Y)\)-degree \(m\).  Its homogenization therefore contains
+Each factor of \(P\) has total \(W,V\)-degree one.  Every monomial of
+\(P^m\) that survives \(\mathcal F\) therefore has total
+\((Z,Y)\)-degree \(m\), matching its total \(W,V\)-degree.  Its
+coordinate homogenization contains
 \(t^{4m-m}=t^{3m}\), exactly matching the power \(\tau^{3m}\).
 The new contraction contributes \((3m)!\), and
 \eqref{eq:pure} gives
@@ -178,39 +208,37 @@ in which the Special Image Conjecture fails, then
 
 \begin{proof}
 The upper bound is Theorem~\ref{thm:main}.  The one-pair case follows
-from~\cite[Theorem 2.8]{EWZ2011}, applied to
-\(A=\C[\tau]\) and the radical principal ideal \((\tau)\).
+from~\cite[Theorem 2.8]{EWZ2011}: take the \(\mathbb Q\)-algebra
+\(A=\C[\tau]\) and \(a=\tau\).  Then \(a\) is a non-zero-divisor and
+the principal ideal \(Aa=(\tau)\) is radical, precisely the hypotheses
+of that theorem.
 \end{proof}
 
 \section{Size, scope, and verification}
 
-The expanded polynomial \(f\) has eight terms, coefficients in
-\(\{1,-1,-2\}\), bidegree \((4,4)\), and ordinary degree eight.
-The multiplier \(g=z\) has bidegree \((0,1)\).
-
-A five-pair counterexample communicated by Dvorsky~\cite{Dvorsky2026},
-from Long's \(SU(2)\) construction~\cite{Long2026}, is
-\[
- \zeta_t(\zeta_a\zeta_d-\zeta_b\zeta_c)
- (t+c)(ad+bt),\qquad g=-c.
-\]
-Theorem~\ref{thm:main} lowers this presently recorded five-pair
-construction to three pairs while retaining eight terms and a linear
-coordinate multiplier.  The new \(f\) is not of the separated form
+The coefficients of \(f\) lie in \(\{1,-1,-2\}\).  With respect to
+\((\tau,w,v)\)-degree and \((t,z,y)\)-degree, \(f\) has bidegree
+\((4,4)\) and ordinary degree eight; \(g=z\) has bidegree \((0,1)\).
+The polynomial \(f\) is not of the separated form
 \(\lambda(\zeta)P(z)\); consequently the example does not give a
-three-variable Generalized Vanishing Conjecture counterexample.  No
-claim concerning the two-pair case or absolute literature priority is
-made.
+three-variable Generalized Vanishing Conjecture counterexample.
+
+Thus the known one-pair result and Theorem~\ref{thm:main} give
+\[
+ 2\leq r_{\mathrm{SIC}}\leq3.
+\]
+We make no claim here concerning the two-pair case or absolute
+literature priority.
 
 The all-order proof above is independent of computation.  An exact
 sparse-arithmetic checker expands \(f\), verifies the contractions
 through \(m=10\), and checks the two binomial identities through
-\(m=99\).  It is available at
-\begin{center}
-\small
-\url{https://github.com/royvanrijn/jacobian-research/blob/main/scripts/verify_three_pair_image_mathieu_counterexample.py}.
-\end{center}
-Its SHA-256 digest for this version is
+\(m=99\).  The checker is included in the accompanying Zenodo record
+and in the
+\href{https://github.com/royvanrijn/jacobian-research}
+{companion repository}.\footnote{Repository path:
+\path{scripts/verify_three_pair_image_mathieu_counterexample.py}.}
+Its SHA-256 digest in this version is
 \begin{center}
 \ttfamily\small
 ac5408c1278e6fe2d3f78b408bd2165454833db42a669cd929570ba1f2e30d5b.
@@ -242,19 +270,6 @@ A.~van den Essen, D.~Wright, and W.~Zhao,
 J. Algebra \textbf{340} (2011), 211--224.
 \href{https://doi.org/10.1016/j.jalgebra.2011.04.036}
 {doi:10.1016/j.jalgebra.2011.04.036}.
-
-\bibitem{Long2026}
-C.~D. Long,
-\emph{Counterexamples to the \(xz\)-Conjecture and the Mathieu
-Conjecture for \(SU(2)\)},
-arXiv:2607.19012 (2026).
-\href{https://arxiv.org/abs/2607.19012}{arXiv:2607.19012}.
-
-\bibitem{Dvorsky2026}
-A.~Dvorsky,
-\emph{Comment on ``The new counterexample to the Jacobian conjecture''},
-Secret Blogging Seminar, 23 July 2026.
-\url{https://sbseminar.wordpress.com/2026/07/20/the-new-counterexample-to-the-jacobian-conjecture/}.
 
 \end{thebibliography}
 

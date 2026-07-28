@@ -240,6 +240,39 @@ structure StableGaugeFiberPoint
   b_eq : MvPolynomial.eval₂ (algebraMap K A) point (F 1) = 0
   c_eq : MvPolynomial.eval₂ (algebraMap K A) point (F 2) = algebraMap K A c
 
+/-- Evaluation commutes with a morphism of test algebras. -/
+private theorem eval₂_map_algHom
+    (f : A →ₐ[K] B) (point : Fin 3 → A) (P : GaugePolynomial K) :
+    MvPolynomial.eval₂ (algebraMap K B) (fun i => f (point i)) P =
+      f (MvPolynomial.eval₂ (algebraMap K A) point P) := by
+  have hcomp : f.toRingHom.comp (algebraMap K A) = algebraMap K B := by
+    ext r
+    exact f.commutes r
+  calc
+    MvPolynomial.eval₂ (algebraMap K B) (fun i => f (point i)) P =
+        MvPolynomial.eval₂ (f.toRingHom.comp (algebraMap K A))
+          (fun i => f (point i)) P := by rw [hcomp]
+    _ = f (MvPolynomial.eval₂ (algebraMap K A) point P) :=
+      (MvPolynomial.hom_eval₂ P (algebraMap K A) f.toRingHom point).symm
+
+namespace StableGaugeFiberPoint
+
+variable {F : Fin 3 → GaugePolynomial K} {c : K}
+
+/-- Stable literal fibers are functorial in the test algebra. -/
+def map (f : A →ₐ[K] B) (p : StableGaugeFiberPoint F c A) :
+    StableGaugeFiberPoint F c B where
+  point := fun i => f (p.point i)
+  pi_eq := by
+    rw [eval₂_map_algHom f p.point, p.pi_eq, map_one]
+  b_eq := by
+    rw [eval₂_map_algHom f p.point, p.b_eq, map_zero]
+  c_eq := by
+    rw [eval₂_map_algHom f p.point, p.c_eq]
+    exact f.commutes c
+
+end StableGaugeFiberPoint
+
 /-- On `Π = 1`, the normalized common power shift and the normalized
 undeformed map have identical evaluations. -/
 theorem eval₂_powerShiftedGaugeJacobianOneMap_eq
@@ -420,6 +453,31 @@ def generalGaugeJacobianOneFiberEquivCubicLift
     apply StableGaugeFiberPoint.ext
     rfl
 
+/-- The power-shift fiber equivalence commutes with change of test algebra. -/
+theorem generalGaugeJacobianOneFiberEquivPowerShifted_natural
+    (G : K[X]) (m : ℕ) (c : K) (f : A →ₐ[K] B)
+    (p : GeneralGaugeJacobianOneFiberPoint G 1 c A) :
+    StableGaugeFiberPoint.map f
+        (generalGaugeJacobianOneFiberEquivPowerShifted
+          (A := A) G m c p) =
+      generalGaugeJacobianOneFiberEquivPowerShifted
+        (A := B) G m c (GeneralGaugeJacobianOneFiberPoint.map f p) := by
+  apply StableGaugeFiberPoint.ext
+  rfl
+
+/-- The cubic-lift fiber equivalence commutes with change of test algebra. -/
+theorem generalGaugeJacobianOneFiberEquivCubicLift_natural
+    (G : K[X]) (n : ℕ) (hn : 4 ≤ n) (c : K) (f : A →ₐ[K] B)
+    (p : GeneralGaugeJacobianOneFiberPoint G 1 c A) :
+    StableGaugeFiberPoint.map f
+        (generalGaugeJacobianOneFiberEquivCubicLift
+          (A := A) G n hn c p) =
+      generalGaugeJacobianOneFiberEquivCubicLift
+        (A := B) G n hn c
+          (GeneralGaugeJacobianOneFiberPoint.map f p) := by
+  apply StableGaugeFiberPoint.ext
+  rfl
+
 /-- The original quotient algebra represents every selected common
 power-shifted realization fiber. -/
 def powerShiftedGaugeRealizationFiberRepresentingEquiv
@@ -453,9 +511,46 @@ def cubicLiftGaugeRealizationFiberRepresentingEquiv
         (A := A) (realizationSeed P a) n hn
         (realizationTargetC P a (P.derivative.eval a)))
 
+/-- Naturality of the represented common power-shifted realization fiber. -/
+theorem powerShiftedGaugeRealizationFiberRepresentingEquiv_natural
+    (P : K[X]) (a : K) (m : ℕ) (hP : Squarefree P)
+    (h₁ : P.derivative.eval a ≠ 0)
+    (h₃ : (Polynomial.hasseDeriv 3 P).eval a ≠ 0)
+    (f : A →ₐ[K] B) (φ : AdjoinRoot P →ₐ[K] A) :
+    StableGaugeFiberPoint.map f
+        (powerShiftedGaugeRealizationFiberRepresentingEquiv
+          (A := A) P a m hP h₁ h₃ φ) =
+      powerShiftedGaugeRealizationFiberRepresentingEquiv
+        (A := B) P a m hP h₁ h₃ (f.comp φ) := by
+  apply StableGaugeFiberPoint.ext
+  funext i
+  have h := realizationJacobianOneFiberRepresentingEquiv_natural
+    P a hP h₁ h₃ f φ
+  exact congrArg (fun p => p.point i) h
+
+/-- Naturality of the represented cubic-lift realization fiber. -/
+theorem cubicLiftGaugeRealizationFiberRepresentingEquiv_natural
+    (P : K[X]) (a : K) (n : ℕ) (hn : 4 ≤ n)
+    (hP : Squarefree P)
+    (h₁ : P.derivative.eval a ≠ 0)
+    (h₃ : (Polynomial.hasseDeriv 3 P).eval a ≠ 0)
+    (f : A →ₐ[K] B) (φ : AdjoinRoot P →ₐ[K] A) :
+    StableGaugeFiberPoint.map f
+        (cubicLiftGaugeRealizationFiberRepresentingEquiv
+          (A := A) P a n hn hP h₁ h₃ φ) =
+      cubicLiftGaugeRealizationFiberRepresentingEquiv
+        (A := B) P a n hn hP h₁ h₃ (f.comp φ) := by
+  apply StableGaugeFiberPoint.ext
+  funext i
+  have h := realizationJacobianOneFiberRepresentingEquiv_natural
+    P a hP h₁ h₃ f φ
+  exact congrArg (fun p => p.point i) h
+
 #print axioms eval₂_powerShiftedGaugeJacobianOneMap_eq
 #print axioms eval₂_cubicLiftGaugeJacobianOneMap_eq
 #print axioms powerShiftedGaugeRealizationFiberRepresentingEquiv
 #print axioms cubicLiftGaugeRealizationFiberRepresentingEquiv
+#print axioms powerShiftedGaugeRealizationFiberRepresentingEquiv_natural
+#print axioms cubicLiftGaugeRealizationFiberRepresentingEquiv_natural
 
 end FiniteEtaleKeller

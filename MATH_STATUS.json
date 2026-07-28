@@ -7330,12 +7330,13 @@
       "kind": "open_problem",
       "state": "parked",
       "title": "Restricted exact minima: frozen reproducible frontier",
-      "scope": "The four primary intervals are 5<=n_cub<=21, 3<=r_cub<=17, 3<=nu_cub<=18, and 6<=rho_cot<=37. Companion homogeneous classes have 6<=n_Dru<=451, 3<=rho_HN,4<=37, and 6<=n_HN,4<=42; LR4 separately gives an exact rank-35 nonhomogeneous degree-at-most-four HN witness. The distinction between rho_cot and rho_HN,4 is essential: rank Hess(y.H)=2 rank(JH)+rank(A restricted to ker JH), so cotangent lifts have lower bound six, while three is only the unrestricted homogeneous quartic-HN lower bound. The broad circuit search is frozen; its bounded negative records are evidence about the stored construction family, not lower bounds. If reopened, the preferred theorem-directed order is the five-dimensional cubic-homogeneous class, arbitrary cubic index-three invertibility, rank-three kernel-bundle classification, and direct dimension-six HN saturation. RMIN-ID9 records the falsified index-three inverse-degree-nine bound, which is not part of the surviving invertibility target.",
+      "scope": "The four primary intervals are 5<=n_cub<=21, 3<=r_cub<=17, 3<=nu_cub<=18, and 6<=rho_cot<=37. Companion homogeneous classes have 6<=n_Dru<=451, 3<=rho_HN,4<=37, and 6<=n_HN,4<=42; LR5 separately gives an exact rank-34 nonhomogeneous degree-at-most-four HN witness in dimension 40. The distinction between rho_cot and rho_HN,4 is essential: rank Hess(y.H)=2 rank(JH)+rank(A restricted to ker JH), so cotangent lifts have lower bound six, while three is only the unrestricted homogeneous quartic-HN lower bound. The broad circuit search is frozen; its bounded negative records are evidence about the stored construction family, not lower bounds. If reopened, the preferred theorem-directed order is the five-dimensional cubic-homogeneous class, arbitrary cubic index-three invertibility, rank-three kernel-bundle classification, and direct dimension-six HN saturation. RMIN-ID9 records the falsified index-three inverse-degree-nine bound, which is not part of the surviving invertibility target.",
       "canonical_source": "extended-geometry/RESTRICTED_MINIMA_FRONTIER.md",
       "dependencies": [
         "LR2",
         "LR3",
         "LR4",
+        "LR5",
         "IV1",
         "external: fixed-rank and low-dimensional positive results",
         "RMIN-ID9"
@@ -7715,20 +7716,20 @@
     },
     {
       "id": "HC4MC4",
-      "kind": "reproduction",
-      "state": "partial",
-      "title": "Four-cubic Meng descent finite-field obstruction",
-      "scope": "For each of the 234 collision-compatible quartic principal parts from HC4MQ1, all 4845 supports of exactly four cubic monomials are screened over F_1000003. The odd-layer rank census on 1133730 quartic/quadruple pairs is 5430, 79396, 353740, 504818, and 190346 in ranks zero through four. After support-at-most-three boundary loci are delegated to HC4MC3, exact modular full-determinant gcds or Groebner ideals are units for all 466 genuine rank-three lines, 6082 genuine rank-two planes, 7956 genuine rank-one three-spaces, and 5430 rank-zero four-parameter spaces. This is an exact finite-field computation, not yet a characteristic-zero theorem.",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Four-cubic Meng descent characteristic-zero obstruction",
+      "scope": "For each of the 234 collision-compatible quartic principal parts from HC4MQ1, all 4845 supports of exactly four cubic monomials are reconstructed and screened over Q. The odd-layer rank census on 1133730 quartic/quadruple pairs is 5430, 79396, 353740, 504818, and 190346 in ranks zero through four, exactly matching the finite-field discovery calculation. After support-at-most-three boundary loci are delegated to HC4MC3, exact rational full-determinant gcds or Groebner ideals are units for all 466 genuine rank-three lines, 6082 genuine rank-two planes, 7956 genuine rank-one three-spaces, and 5430 rank-zero four-parameter spaces.",
       "canonical_source": "HC4_MENG_SPARSE_QUARTIC_AUDIT.md",
       "dependencies": [
         "HC4MC3"
       ],
-      "checker": "scripts/verify_hc4_meng_four_cubic.py",
-      "proof_type": "reproduction",
+      "checker": "scripts/verify_hc4_meng_four_cubic_characteristic_zero.py",
+      "proof_type": "unclassified",
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:c031cd5a341ecf53a3f45a4f544d1a1976dbd8f21d4cc047250542312f61e98b",
+      "artifact_hash": "sha256:531081f96adb6e3b6e086b3cb06d62b86ff14e1ace38efa3081312ce27181d92",
       "software_lock": [
         ".python-version",
         "requirements.txt"

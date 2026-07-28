@@ -14,8 +14,9 @@ An exact characteristic-zero continuation also excludes all corrections
 supported on three cubic monomials.  It reconstructs the 234 quartics over
 \(\mathbb Q\), repeats the odd-layer rank calculation over \(\mathbb Q\),
 and proves that every remaining rational determinant ideal is a unit ideal.
-An additional exact finite-field continuation excludes support four over
-\(\mathbb F_{1000003}\); its characteristic-zero promotion remains open.
+An additional exact characteristic-zero continuation excludes support four.
+It reproduces the finite-field rank census over \(\mathbb Q\) and proves
+that every remaining rational determinant gcd or Gröbner ideal is a unit.
 
 This is a bounded-support obstruction, not a proof of `HC_4`.  It does not
 exclude dense quartics, cubic supports of size at least four, quadratic
@@ -200,7 +201,7 @@ points, the plane ideals at most seven, and the three-space ideals at most
 nine.  All gcds and Gröbner bases are computed over \(\mathbb Q\), so there
 is no denominator-lifting caveat.
 
-## 6. Four cubic monomials over the certificate field
+## 6. Four cubic monomials over \(\mathbb Q\)
 
 There are
 \[
@@ -232,20 +233,22 @@ size twelve for four exceptional quartics.  Their four-subsets give exactly
 5,430 four-parameter spaces.  Every full determinant ideal is a unit using
 at most twelve evaluation points.
 
-This exhausts cubic support four over \(\mathbb F_{1000003}\).  Unlike
-Section 5, this calculation has not yet been repeated over \(\mathbb Q\), so
-it is recorded as a finite-field obstruction rather than a
-characteristic-zero theorem.
+The characteristic-zero checker reconstructs the same rank and boundary
+strata over \(\mathbb Q\).  Exact rational line gcds and Gröbner ideals are
+units in every genuine nullspace.  The maximum evaluation-prefix lengths
+for ranks three, two, one, and zero are respectively five, seven, eight, and
+eleven.  Thus cubic support four is excluded in characteristic zero, without
+a denominator-lifting caveat.
 
 ## 7. Remaining search space
 
 A homogeneous correction of odd degree cannot change the gradient
 difference between \(p\) and \(-p\), because its gradient is even.  The next
 homogeneous collision-carrying layer is therefore degree six.  Within the
-quartic chart, the next characteristic-zero extension has four cubic
-monomials, while the next finite-field extension has at least five: the
-quartic part carries the collision, while the cubic Hessian may cancel
-determinant terms.
+quartic chart, the next bounded-support extension has at least five cubic
+monomials.  A better next calculation is the full odd-layer kernel for each
+quartic, where principal-part cancellation can replace further
+support-by-support enumeration.
 
 Dense quartic supports and quadratic renormalizations also remain outside
 the present bounded-support theorem.
@@ -281,4 +284,10 @@ The two targeted stages are:
 ```bash
 .venv/bin/python scripts/verify_hc4_meng_four_cubic_rank_gate.py
 .venv/bin/python scripts/verify_hc4_meng_four_cubic_rank_zero.py
+```
+
+Promote the four-cubic calculation to characteristic zero with:
+
+```bash
+.venv/bin/python scripts/verify_hc4_meng_four_cubic_characteristic_zero.py
 ```

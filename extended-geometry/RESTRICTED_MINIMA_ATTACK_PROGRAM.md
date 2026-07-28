@@ -331,6 +331,14 @@ At fixed cubic rank 18, no cotangent construction can improve 37 by more
 than one.  This replaces raw Hessian-rank search by the geometric condition
 `K^TAK=0` on the moving Jacobian kernel.
 
+The double identity slice now realizes the stronger profile rank 17 and
+excess zero after homogeneity is dropped, giving nonhomogeneous HN Hessian
+rank 34 in dimension 40.  This does not solve either homogeneous target:
+the homogenizing direction raises the source rank, while the first
+post-homogenization identity slice still has excess one.  The exact output
+relation and rank certificate are in
+[`HESSIAN_RANK_34_DOUBLE_IDENTITY_SLICE.md`](HESSIAN_RANK_34_DOUBLE_IDENTITY_SLICE.md).
+
 The first implemented hybrid forces the zero-excess `xxs` gate together
 with both rank-reducing atoms.  It reaches 48 terminals but its best profile
 is `(rank,index,Hessian rank,dimension)=(22,19,45,28)`, with excess one.

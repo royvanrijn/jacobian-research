@@ -152,14 +152,14 @@
       "artifact": "image_vanishing_counterexamples_21_42.json"
     },
     "nonhomogeneous_HN_degree_at_most_4_rank": {
-      "dimension": 42,
-      "generic_hessian_rank": 35,
+      "dimension": 40,
+      "generic_hessian_rank": 34,
       "degrees": [
         2,
         3,
         4
       ],
-      "artifact": "hessian_rank_35_identity_slice_counterexample.json",
+      "artifact": "hessian_rank_34_double_identity_slice_counterexample.json",
       "scope_warning": "this does not change the homogeneous quartic HN rank-37 or dimension-42 frontiers"
     }
   },

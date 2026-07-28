@@ -134,6 +134,7 @@ This is independent of the unresolved minimum Gaussian dimension.
 | cubic rank \(17\) | 24 variables | [`rank_reduced_bcw_24_counterexample.json`](../artifacts/generated-results/rank_reduced_bcw_24_counterexample.json) |
 | cubic index \(18\) | 22 variables | [`index_reduced_bcw_22_counterexample.json`](../artifacts/generated-results/index_reduced_bcw_22_counterexample.json) |
 | quartic HN Hessian rank \(37\) | 44 variables | [`hessian_rank_reduced_bcw_22_counterexample.json`](../artifacts/generated-results/hessian_rank_reduced_bcw_22_counterexample.json) |
+| nonhomogeneous degree-\(\leq4\) HN Hessian rank \(34\) | 40 variables | [`hessian_rank_34_double_identity_slice_counterexample.json`](../artifacts/generated-results/hessian_rank_34_double_identity_slice_counterexample.json) |
 
 The SIC size is the pair dimension \(r\); the three-pair witness has six
 variables in its ambient polynomial ring.  Its exact all-order proof is in
@@ -161,6 +162,10 @@ retained to explain the certified frontier, not as an active search queue.
 4. Lowering the homogeneous HN dimension from 42 requires a smaller
    homogeneous cubic source or a different symmetric lift; the 20-variable
    identity slice loses homogeneity.
+5. The rank-directed double identity slice has nonhomogeneous HN rank 34,
+   cotangent kernel excess zero, and no constant Hessian-kernel direction.
+   Further improvement therefore requires more than another constant linear
+   quotient of that potential.
 
 No failed beam search changes a lower endpoint.  A new upper endpoint is
 promoted only after an exact characteristic-zero generator, collision replay,
