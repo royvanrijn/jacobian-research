@@ -455,6 +455,62 @@ Schur face.  The remaining target is to replace the special pencil (7.1)
 by strata of the moduli of ternary sextics, organized by the factorization
 and singularities of their Hessian discriminant.
 
+## 8. A two-parameter broadening and the method boundary
+
+Add the independent symmetric sextic
+
+\[
+M_{42}=\sum_{i\ne j}x_i^4x_j^2
+\]
+
+and consider
+
+\[
+h_{6,\mu,\nu}
+=\frac{x^6+y^6+m^6}{30}
+ +\mu x^2y^2m^2+\nu M_{42}.                            \tag{8.1}
+\]
+
+For \(\nu\ne0\), six boundary coefficients of the Schur identity solve
+the six coefficients of the quadratic quotient.  The determinant of this
+linear pivot is
+
+\[
+4096\nu^{12}.                                          \tag{8.2}
+\]
+
+After clearing the resulting \(2\nu^2\) denominator, the full generic
+quartic problem reduces to 114 intrinsic equations in its fifteen
+coefficients.  Over the function field \(\mathbb Q(\mu,\nu)\), exact
+Gröbner calculation gives a 117-element basis and
+
+\[
+s_i^3=0\quad(0\le i\le14).                             \tag{8.3}
+\]
+
+Thus the generic point of the two-parameter surface has no nonzero
+polynomial Schur norm.
+
+> **Theorem `HC4QSG2` — generic two-parameter symmetric-sextic
+> rigidity.**  Over \(\mathbb Q(\mu,\nu)\), the sextic (8.1) admits no
+> nonzero quartic satisfying (5.3).  Consequently the generic
+> rank-three quintic branch on this parameter surface reaches `HC4CD5`.
+
+This statement is deliberately generic.  Saturating the 114-equation
+polynomial family by \(\nu\) did not finish in a bounded 300-second exact
+run, and direct projective-chart Gröbner calculations also exceeded their
+120-second bounds.  Therefore exceptional algebraic curves inside
+\(\nu\ne0\) are not excluded.  The boundary \(\nu=0\) is fully closed by
+`HC4QS1`.
+
+This broadening gives a fairly clear verdict on the method.  The Schur
+face has real merit: rigidity persists for a full quartic over a
+two-parameter non-diagonal sextic family and is not an artifact of sparse
+support.  Raw coefficient Gröbner elimination no longer scales uniformly
+across special fibers.  Further progress should extract the exceptional
+denominator/discriminant divisor and analyze its components geometrically,
+not add more parameters to the same dense elimination.
+
 ## Reproduction
 
 Run:
@@ -463,6 +519,8 @@ Run:
 .venv/bin/python scripts/verify_hc4_quintic_common_direction.py
 .venv/bin/python scripts/verify_hc4_quintic_diagonal_schur.py
 .venv/bin/python scripts/verify_hc4_quintic_symmetric_sextic_schur.py
+.venv/bin/python \
+  scripts/verify_hc4_quintic_two_parameter_symmetric_schur.py
 ```
 
 The checker replays `HC4T31`, verifies every symbolic face, runs the exact
@@ -472,12 +530,16 @@ the 66-equation Schur divisibility ideal and the four determinant
 coefficients (6.5)--(6.6) by exact rational calculations.  The third
 checker constructs the full 111-equation ideal (7.2), saturates by
 \(\mu\), and verifies all twenty-one fourth-power radical certificates.
+The fourth checker eliminates the quadratic quotient on \(\nu\ne0\),
+constructs the 114 intrinsic equations, and verifies the 117-element
+function-field basis and all fifteen cube certificates (8.3).
 
 The scalar Schur identity and the implication from (6.5)--(6.6) to
 \(a=b=c=0\) are also machine-checked in
 [`HC4QuinticDiagonal.lean`](formal/finite-etale-keller/FiniteEtaleKeller/HC4QuinticDiagonal.lean).
 That file also proves the reduced-ring endpoint turning the twenty-one
-fourth-power certificates in (7.3) into coefficient vanishing.
+fourth-power certificates in (7.3), and the fifteen cube certificates in
+(8.3), into coefficient vanishing.
 The extraction of those coefficients from the Hessian determinant remains
 the exact Python certificate; it is not claimed as an end-to-end Lean
 formalization.

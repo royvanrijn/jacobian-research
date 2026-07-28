@@ -234,16 +234,16 @@ The resulting ambient-dimension ledger is
 
 \[
  2\leq n_{\rm GVC}\leq5,\qquad
- 2\leq r_{\rm SIC}\leq3,\qquad
+ r_{\rm SIC}=2,\qquad
  2\leq n_{\Delta{\rm GVC}}\leq40,\qquad
  6\leq n_{\rm HN,4}\leq42.                                  \tag{5.1}
 \]
 
-The SIC upper endpoint now comes from the separate
-[`THREE_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md`](THREE_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md).
-The lower endpoints use GVC(1) and SIC(1).  The last two upper endpoints
-remain the repository's ordinary-Laplacian and homogeneous quartic HN
-witnesses.
+The sharp SIC endpoint now comes from the separate
+[`TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md`](TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md),
+together with SIC(1).  The GVC lower endpoint uses GVC(1).  The last two
+upper endpoints remain the repository's ordinary-Laplacian and homogeneous
+quartic HN witnesses.
 
 ## 6. A bounded four-variable descent search
 

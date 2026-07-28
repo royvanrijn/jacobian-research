@@ -1130,7 +1130,7 @@
   },
   "next_frontier": {
     "support_sizes": [],
-    "status": "bidegree-(2,2) is closed, including dense eight- and nine-term forms; unrestricted SIC(2) in other bidegrees remains open"
+    "status": "bidegree-(2,2) is closed, including dense eight- and nine-term forms; the later bidegree-(4,4) counterexample falsifies unrestricted SIC(2), while the full bidegree-(3,3) stratum remains open"
   },
   "reproduce": ".venv/bin/python scripts/verify_two_pair_sic_bidegree22_frontier.py"
 }

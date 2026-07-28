@@ -54,6 +54,7 @@ def main() -> None:
     )
     dvorsky = load("dvorsky_gvc5_counterexample.json")
     sic_three = load("three_pair_image_mathieu_counterexample.json")
+    sic_two = load("two_pair_image_mathieu_counterexample.json")
     hessian_rank_35_slice = load(
         "hessian_rank_35_identity_slice_counterexample.json"
     )
@@ -90,6 +91,15 @@ def main() -> None:
     assert (
         sic_three["all_order_identities"]["[t]E(g*f^m)"]
         == "(-1)^(m-1)*(m+1)!*m!"
+    )
+    assert len(sic_two["contraction_pairs"]) == 2
+    assert sic_two["expanded_F_term_count"] == 16
+    assert sic_two["bidegrees"]["F"] == [4, 4]
+    assert sic_two["coefficient_matrix_determinant"] == 48
+    assert sic_two["all_order_identities"]["E_2(F^m)"] == "0"
+    assert (
+        sic_two["all_order_identities"]["E_2(Q*F^m)"]
+        == "(4*m+2)!*m!/(2*m+1)!!"
     )
     assert hessian_rank_35_slice["slice_dimension"] == 21
     assert hessian_rank_35_slice["HN_potential"]["dimension"] == 42
@@ -140,11 +150,11 @@ def main() -> None:
             ),
             "SIC_failure_pair_dimension": interval(
                 2,
-                3,
+                2,
                 "the one-pair Image Conjecture is proved",
                 (
-                    "one-pair bihomogenization of the weighted circular "
-                    "Gaussian bridge gives an explicit SIC(3) counterexample"
+                    "the full-rank bidegree-(4,4) formula gives an explicit "
+                    "SIC(2) counterexample"
                 ),
             ),
             "unrestricted_constant_coefficient_GVC_failure_dimension": interval(
@@ -216,9 +226,9 @@ def main() -> None:
                 "artifact": "essential_bcw_21_counterexample.json",
             },
             "SIC": {
-                "pair_dimension": 3,
-                "polynomial_ring_variable_count": 6,
-                "artifact": "three_pair_image_mathieu_counterexample.json",
+                "pair_dimension": 2,
+                "polynomial_ring_variable_count": 4,
+                "artifact": "two_pair_image_mathieu_counterexample.json",
             },
             "unrestricted_constant_coefficient_GVC": {
                 "dimension": 5,
@@ -258,8 +268,9 @@ def main() -> None:
     OUTPUT.write_text(json.dumps(scoreboard, indent=2) + "\n")
     print(
         "PASS scoreboard: ambient witness dimensions "
-        "21 / SIC 3 / GVC 5 / Laplacian 40 / HN 42"
+        "21 / SIC 2 / GVC 5 / Laplacian 40 / HN 42"
     )
+    print("PASS scoreboard: exact minimum SIC pair dimension is 2")
     print("PASS scoreboard: GMC failure dimension is in [2,3]")
     print("PASS scoreboard: exact minimum Gaussian counterexample degree is 3")
     print("PASS scoreboard: all 121 two-real cubic four-weight charts excluded")

@@ -5356,8 +5356,8 @@
       "id": "DVG4",
       "kind": "theorem",
       "state": "proved",
-      "title": "One-pair Schur obstruction for the Dvorsky cubic",
-      "scope": "Let P=(t+c)(ad+bt), add one variable s, and let Delta~=partial_a partial_d-partial_b partial_c+partial_t partial_s, a nondegenerate quadratic operator in six variables. Every homogeneous cubic F restricting to P on s=0 has the form P+sR_2+s^2R_1+rs^3. The first pure condition Delta~(F)=0 forces R_2=-ct+R_0(a,b,c,d) and R_1=L_0(a,b,c,d)-(D R_0)t/2. For this complete harmonic normal form, exact expansion gives Delta~^2(F^2)=12t^2 modulo (a,b,c,d,s), independently of every lift parameter. Hence no degree-preserving one-pair Schur completion of the Dvorsky cubic satisfies even the first two ordinary-Laplacian pure moments. The degree-two output depends only on the cubic part, so adding terms only above degree three cannot repair the lift. Nonhomogeneous lifts with lower-degree s-divisible terms, multi-block lifts, and nonlinear specializations are not excluded.",
+      "title": "Complete one-pair hyperplane Schur obstruction for the Dvorsky cubic",
+      "scope": "Let P=(t+c)(ad+bt), add one variable s, and let Delta~=partial_a partial_d-partial_b partial_c+partial_t partial_s, a nondegenerate quadratic operator in six variables. For every polynomial, or formal power series in s with polynomial coefficients, satisfying F|_(s=0)=P and Delta~(F)=0, the transverse equations force partial_s F|_(s=0)=-ct+R_0(a,b,c,d) and the next s-coefficient to be -(t/2)D(R_0)+S_0(a,b,c,d). Writing rho=partial_c R_0(0), exact two-jet expansion gives Delta~^2(F^2)|_(a=b=c=d=s=0)=12t^2-8rho*t. The invariant t^2 coefficient excludes every polynomial or formal harmonic hyperplane lift for this canonical six-variable quadratic completion already at moment two, regardless of degree mixing. Different quadratic completions, additional auxiliary blocks, and nonlinear specializations are not excluded.",
       "canonical_source": "extended-geometry/DVORSKY_ONE_PAIR_SCHUR_OBSTRUCTION.md",
       "dependencies": [
         "DVG1"
@@ -5367,13 +5367,13 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:5147505e1015ed375d370ff9dc506e999d5bc115b862bc53c7bcc11b9031b733",
+      "artifact_hash": "sha256:174d3dd05c62726a35ba520cec7d345c3222ef63af2bfb9b5c1d3154d085868a",
       "software_lock": [
         ".python-version",
         "requirements.txt"
       ],
       "supersedes": [
-        "the degree-preserving six-variable one-pair Schur ansatz for the Dvorsky ordinary-Laplacian lift"
+        "every polynomial or formal hyperplane lift for the canonical six-variable one-pair Dvorsky Schur completion"
       ],
       "replaced_by": [],
       "priority": "reference"
@@ -5402,11 +5402,37 @@
       "priority": "derived"
     },
     {
+      "id": "SIC2C4",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Bidegree-(4,4) two-pair Image-Mathieu counterexample",
+      "scope": "For the contraction pairs (xi1,z1),(xi2,z2), put R=xi1*z1+xi2*z2, Z=xi1*z2, W=2*xi2*z1, T=xi1*z1-xi2*z2, F=(R+Z)(R^2*W-(2*R+Z)T^2/2), and Q=Z. Then E_2(F^m)=0 and E_2(QF^m)=(4m+2)!m!/(2m+1)!! for every m>=1. The proof uses T^2=R^2-2ZW, circular-Gaussian radial decomposition, Hopf phase extraction, and the beta identity integral_0^1(1-v^2)^m dv=2^m*m!/(2m+1)!!. Hence SIC(2) is false and, since SIC(1) is known, the minimum failing pair dimension is exactly two. The witness has bidegree (4,4), ordinary degree eight, sixteen expanded terms, and full 5-by-5 coefficient-matrix rank, so it is genuinely nonseparable. It falsifies the all-degree two-pair moment--nullcone conjecture at d=4 but does not contradict the safe d=2 stratum, decide the full d=3 stratum, or give a two-variable GVC counterexample on the rank-one Segre cone.",
+      "canonical_source": "extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md",
+      "dependencies": [
+        "external: one-pair Special Image theorem",
+        "external: Zhao image-kernel identity",
+        "external: circular complex Gaussian Wick rule and radial decomposition"
+      ],
+      "checker": "scripts/verify_two_pair_image_mathieu_counterexample.py",
+      "proof_type": "counterexample",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:3919103b0b3b3e4cb33701ea9c2983e1fa9cadec688c6f08355436a6619fa559",
+      "software_lock": [],
+      "supersedes": [
+        "DVG3 as the repository-certified minimum-pair SIC witness",
+        "the open unrestricted SIC(2) frontier"
+      ],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
       "id": "DVG3",
       "kind": "theorem",
       "state": "proved",
       "title": "Four-term three-pair Image-Mathieu counterexample",
-      "scope": "For the contraction pairs (tau,t), (w,z), and (v,y), let f=tau(t-y)(wz+vt) and g=y. Then E(f^m)=0 and the coefficient of t in E(g f^m) is (-1)^(m-1)(m+1)!m! for every m>=1. Hence f^m lies in M_3 for every positive m while g f^m never lies in M_3, so SIC(3) fails and the minimum SIC pair dimension is in {2,3}. The four-term witness is the degree-two one-pair bihomogenization of Christopher D. Long's SU(2) Mathieu seed (1+c)(ad+b), with multiplier -c; under the Mueger-Tuset substitution that seed is Long's three-term xz(1,1) counterexample. No claim about SIC(2), term-count minimality, or Jacobian provenance is made.",
+      "scope": "For the contraction pairs (tau,t), (w,z), and (v,y), let f=tau(t-y)(wz+vt) and g=y. Then E(f^m)=0 and the coefficient of t in E(g f^m) is (-1)^(m-1)(m+1)!m! for every m>=1. Hence f^m lies in M_3 for every positive m while g f^m never lies in M_3, so SIC(3) fails. The four-term witness is the degree-two one-pair bihomogenization of Christopher D. Long's SU(2) Mathieu seed (1+c)(ad+b), with multiplier -c; under the Mueger-Tuset substitution that seed is Long's three-term xz(1,1) counterexample. SIC2C4 subsequently proves the sharp minimum pair dimension two; this entry remains the smaller-bidegree and smaller-support three-pair witness. No term-count minimality or Jacobian provenance claim is made.",
       "canonical_source": "extended-geometry/THREE_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md",
       "dependencies": [
         "external: Long SU(2) Mathieu seed",
@@ -5423,7 +5449,9 @@
         "DVG1 as the overall repository-certified SIC upper witness",
         "the five-pair absolute compression frontier"
       ],
-      "replaced_by": [],
+      "replaced_by": [
+        "SIC2C4"
+      ],
       "priority": "derived"
     },
     {
@@ -5474,7 +5502,7 @@
       "kind": "theorem",
       "state": "proved",
       "title": "Complete bidegree-(2,2) two-pair Special Image theorem",
-      "scope": "For a general two-pair bihomogeneous f of bidegree (2,2), let I be the ideal of its first six pure contractions. Exact elimination of a four-parameter finite-flag one-sided normal form gives a prime nullcone ideal J with twelve generators. Groebner reduction over Q proves I is contained in J, the first generator of J lies in I, and the seventh power of each of the other eleven generators lies in I. Hence radical(I)=J: six initial pure contractions force f to become pair-linearly one-sided after scalar extension to an algebraic closure, so E_2(g f^m)=0 for every fixed g and all sufficiently large m over the original characteristic-zero field. Thus SIC(2) holds on the entire bidegree-(2,2) stratum, including all eight- and nine-term forms; unrestricted SIC(2) in other bidegrees remains open. The natural four-parameter compression of the SIC(3) witness is separately forced one-sided by its first two contractions. The earlier exact census of all 501 supports through seven terms and its explicit six- and seven-term Laurent factorizations are retained as independent regressions.",
+      "scope": "For a general two-pair bihomogeneous f of bidegree (2,2), let I be the ideal of its first six pure contractions. Exact elimination of a four-parameter finite-flag one-sided normal form gives a prime nullcone ideal J with twelve generators. Groebner reduction over Q proves I is contained in J, the first generator of J lies in I, and the seventh power of each of the other eleven generators lies in I. Hence radical(I)=J: six initial pure contractions force f to become pair-linearly one-sided after scalar extension to an algebraic closure, so E_2(g f^m)=0 for every fixed g and all sufficiently large m over the original characteristic-zero field. Thus SIC(2) holds on the entire bidegree-(2,2) stratum, including all eight- and nine-term forms. SIC2C4 shows that this is a sharp safe lower-degree stratum rather than evidence for unrestricted SIC(2). The natural four-parameter compression of the SIC(3) witness is separately forced one-sided by its first two contractions. The earlier exact census of all 501 supports through seven terms and its explicit six- and seven-term Laurent factorizations are retained as independent regressions.",
       "canonical_source": "extended-geometry/TWO_PAIR_SIC_BIDEGREE22_FRONTIER.md",
       "dependencies": [
         "DVG3",
@@ -5486,7 +5514,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:92d6ca3fd7135f92f085dd1b31f27dd2aa078ee49ee0c44116e7bd26124814ee",
+      "artifact_hash": "sha256:ce293ddedf94e67ada2a8be9b0a84539866565df72c2f6d50ef2dd0643ed5b79",
       "software_lock": [
         ".python-version",
         "requirements.txt"
@@ -5552,21 +5580,79 @@
       "priority": "reference"
     },
     {
+      "id": "SIC2B33B",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Four-parameter common-boundary exclusion in bidegree (3,3)",
+      "scope": "On the normalized non-null quadratic s0=1 chart, set s1=s2=s3=t2=0, s4=-4q^2, s5=h, (t0,t1,t3,t4)=(a,q,3a,b), and s6=(14ab-168aq+70)/3. The two reduced third-moment pivot coefficients A,B and the normalized second moment vanish identically, so this is a four-parameter family in the hardest common boundary. After primitive normalization, mu_3=3a^3+4aq^4+8q^3. Exact characteristic-zero Groebner computation shows that moments 3,4 have dimension two, moments 3,4,5 have dimension one, moments 3,4,5,6 leave a zero-dimensional quotient of length 372, and adjoining moment 7 gives the unit ideal. Hence this entire family contains no moment-zero point. It strictly contains the earlier two-parameter plane but does not close the full A=B=0 boundary.",
+      "canonical_source": "extended-geometry/TWO_PAIR_SIC_BIDEGREE33_FRONTIER.md",
+      "dependencies": [
+        "SIC2B33A",
+        "external: Singular exact Groebner bases over Q"
+      ],
+      "checker": "scripts/verify_two_pair_sic_bidegree33_boundary_family.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:077135a600124d65807a9d5e089c2caad8171d971cc4e1a53a61b8bdc0be9cd0",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [
+        "the two-parameter sparse common-boundary plane as the largest exact A=B=0 exclusion"
+      ],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
       "id": "OP-SIC2-MN",
-      "kind": "open_problem",
-      "state": "open",
-      "title": "All-degree two-pair moment--nullcone program",
-      "scope": "For balanced two-pair bidegree (d,d), End(Sym^d)=direct sum_{r=0}^d Sym^(2r), and Hilbert--Mumford identifies the one-sided nullcone with tuples having vanishing scalar component and a common linear factor L such that L^(r+1) divides F_(2r). Its incidence resolution proves dimension 1+d(d+1)/2 and codimension d(d+3)/2. Noetherianity gives a finite moment subset for fixed d, while Krull height requires at least (d+1)^2-3 moment equations. A proof must first use the Molien/weight Hilbert series to select admissible degrees, then prove the selected zero fiber is the nullcone by destabilizing and synchronizing its binary-form components. In d=3, mu_1,...,mu_13 are algebraically independent but cannot be an hsop because their proposed Hilbert numerator has coefficient -2186 in degree 63. The least-total-degree corrected candidate mu_1,...,mu_12,mu_14 has exact Jacobian rank thirteen and passes the necessary Hilbert test through degree 100, but its zero fiber remains open. GVC2C3 separately proves that moments one through four already cut out the nullcone on the rank-one Segre cone, so the extra semistable component misses that locus. SIC2B33A reduces the full non-null quadratic locus to five residual-torus chart orbits, proves exact rank eleven for mu_2,...,mu_12, and now gives a two-step triangular reduction: mu_2 eliminates an opposite-weight variable with a constant pivot on every chart, while on s0=1 the reduced mu_3 gives two principal-open pivots and their common boundary. The next attack is branchwise elimination on those smaller systems, not a raw dense Groebner basis. The geometric targets remain discriminant(F_2)=0 and F_2=L^2 implies L^3 divides F_4. SIC2B22 proves d=2; global d=3 and uniform all-d remain open. The n-pair analogue is false for every n>=3 already at d=2.",
+      "kind": "theorem",
+      "state": "falsified",
+      "title": "All-degree two-pair moment--nullcone conjecture",
+      "scope": "The proposed equality between the common zero set of all two-pair balanced moments and the one-sided SL_2-nullcone is false. SIC2C4 supplies an explicit semistable point in V_4=End(Sym^4): all moments of F vanish, while E_2(QF^m) is nonzero for every m, which is impossible on the nullcone. The nullcone incidence description, its dimension 1+d(d+1)/2, the Krull lower bound (d+1)^2-3, and the Hilbert-series degree-selection tests remain valid structural results. The equality is proved at d=2 and remains undecided at d=3, where the existing triangular chart reductions and boundary exclusions retain their local scope. They can classify the minimal safe degrees but can no longer prove a uniform all-d theorem.",
       "canonical_source": "extended-geometry/TWO_PAIR_SIC_MOMENT_NULLCONE_PROGRAM.md",
       "dependencies": [
-        "DVG3",
+        "SIC2C4",
         "SIC2B22",
         "SIC2B33S",
         "SIC2B33A",
+        "SIC2B33B",
         "GVC2C3",
         "external: Hilbert--Mumford nullcone criterion for direct sums of binary forms",
         "external: Cohen--Macaulayness of characteristic-zero reductive invariant rings",
         "external: Pieri rule for symmetric powers"
+      ],
+      "checker": "scripts/verify_two_pair_image_mathieu_counterexample.py",
+      "proof_type": "counterexample",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:3919103b0b3b3e4cb33701ea9c2983e1fa9cadec688c6f08355436a6619fa559",
+      "software_lock": [],
+      "supersedes": [
+        "the all-degree two-pair moment--nullcone proof program"
+      ],
+      "replaced_by": [
+        "SIC2C4"
+      ],
+      "priority": "reference"
+    },
+    {
+      "id": "OP-SIC2-B33",
+      "kind": "open_problem",
+      "state": "open",
+      "title": "Complete bidegree-(3,3) two-pair moment-zero classification",
+      "scope": "Determine whether the common zero set of all contraction moments on V_3=End(Sym^3) equals the one-sided nullcone. This no longer decides unrestricted SIC(2), which SIC2C4 falsifies at d=4, but it decides whether bidegree (3,3) is safe and whether the d=4 witness has minimum balanced bidegree. The first thirteen moments are algebraically independent but have an unavoidable extra semistable zero component; the corrected set mu_1,...,mu_12,mu_14 passes the Hilbert test and has exact rank thirteen, but its zero fiber is unknown. Existing work closes every pure irreducible summand, the diagonal slice, the Sym^4+Sym^2 non-null branch, and a four-parameter family in the hardest common boundary. The next exact step is branchwise finite-quotient elimination after the mu_2 and mu_3 pivots, not interpolation to all degrees.",
+      "canonical_source": "extended-geometry/TWO_PAIR_SIC_BIDEGREE33_FRONTIER.md",
+      "dependencies": [
+        "SIC2C4",
+        "SIC2B22",
+        "SIC2B33S",
+        "SIC2B33A",
+        "SIC2B33B",
+        "GVC2C3"
       ],
       "checker": null,
       "proof_type": "not-applicable",
@@ -5576,7 +5662,7 @@
       "artifact_hash": null,
       "software_lock": [],
       "supersedes": [
-        "deeper full-coefficient Groebner elimination as the primary bidegree-(3,3) SIC(2) attack"
+        "OP-SIC2-MN as the active all-degree continuation"
       ],
       "replaced_by": [],
       "priority": "primary"
@@ -5659,13 +5745,41 @@
       "priority": "reference"
     },
     {
+      "id": "GVC2C4S",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Generic squarefree-quartic two-variable moment-nullcone theorem",
+      "scope": "Normalize the squarefree quartic operator symbol to A_lambda=u v(u-v)(u-lambda v). There is a nonempty Zariski-open set of lambda-values in the squarefree locus such that the first six pure moments cut out exactly the four annihilator lines P=x^4, y^4, (x+y)^4, and (lambda x+y)^4 on the rank-one Segre cone. At lambda=2, mu_1 eliminates one coefficient; the restricted moments mu_2,...,mu_6 define a degree-four projective fiber whose radical is the intersection of the four expected prime line ideals. The expected radical has six Groebner generators, and every fifth power lies in the moment ideal. Proper-family upper semicontinuity, together with the four disjoint annihilator sections, extends the reduced four-point equality to a nonempty open neighborhood. Every surviving line has the cutoff Lambda^m(QP^m)=0 for m>deg(Q). A finite set of exceptional squarefree cross-ratios may remain.",
+      "canonical_source": "extended-geometry/TWO_VARIABLE_LOW_ROOT_GVC_THEOREMS.md",
+      "dependencies": [
+        "external: upper semicontinuity for proper projective families",
+        "external: Singular exact Groebner bases over Q"
+      ],
+      "checker": "scripts/verify_two_variable_quartic_squarefree_generic.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:daf58dd460831e9e8daa2e6dca7d93fbcc40a10cef9c93f97fcd3eb5d4e387d1",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [
+        "the generic squarefree-quartic finite moment-nullcone gap"
+      ],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
       "id": "GVCSS",
       "kind": "theorem",
       "state": "proved",
       "title": "Split-symbol Generalized Vanishing theorem",
-      "scope": "Let Lambda be a homogeneous order-d constant-coefficient operator in n variables over a characteristic-zero field, let P have degree at most d, and suppose the symbol of Lambda splits into d linear factors after scalar extension. Only the degree-d part P_d contributes to the pure premise. Writing the symbol factors as directional derivatives D_(v_i), complete polarization gives Lambda^m(P^m)=(m!)^d CT((P_d(sum_i t_i v_i)/(product_i t_i))^m). If all pure values vanish, the Duistermaat--van der Kallen theorem supplies an integral weight with a unit gap on this Laurent support. In the translated coefficient for Lambda^m(QP^m), a fixed multiplier and lower-degree factors of P can replace only boundedly many full polarization factors, while the weight gap grows linearly in m; hence the mixed value is zero for all sufficiently large m. If P_d vanishes on the span of the factor directions, direct degree separation gives the same conclusion. Every binary form splits, so every homogeneous order-d operator in two variables satisfies GVC for all P of degree at most d. The theorem does not prove Segre moment-nullcone equality, nonhomogeneous operators, polynomial degree greater than d, unrestricted SIC(2), or higher-rank ordinary-Laplacian GVC.",
+      "scope": "Let Lambda be a homogeneous order-d constant-coefficient operator in n variables over a characteristic-zero field, let P have degree at most d, and suppose the symbol of Lambda splits into d linear factors after scalar extension. Only the degree-d part P_d contributes to the pure premise. Writing the symbol factors as directional derivatives D_(v_i), complete polarization gives Lambda^m(P^m)=(m!)^d CT((P_d(sum_i t_i v_i)/(product_i t_i))^m). If all pure values vanish, the Duistermaat--van der Kallen theorem supplies an integral weight with a unit gap on this Laurent support. In the translated coefficient for Lambda^m(QP^m), a fixed multiplier and lower-degree factors of P can replace only boundedly many full polarization factors, while the weight gap grows linearly in m; hence the mixed value is zero for all sufficiently large m. If P_d vanishes on the span of the factor directions, direct degree separation gives the same conclusion. Every binary form splits, so every homogeneous order-d operator in two variables satisfies GVC for all P of degree at most d. SIC2C4 falsifies unrestricted SIC(2) at a full-rank nonseparable bidegree-(4,4) point outside this rank-one theorem. The theorem does not prove Segre moment-nullcone equality or treat nonhomogeneous operators, polynomial degree greater than d, or higher-rank ordinary-Laplacian GVC.",
       "canonical_source": "extended-geometry/SPLIT_SYMBOL_GVC_THEOREM.md",
       "dependencies": [
+        "SIC2C4",
         "external: Duistermaat--van der Kallen constant-term theorem for Laurent polynomials"
       ],
       "checker": null,
@@ -5687,18 +5801,18 @@
       "kind": "open_problem",
       "state": "open",
       "title": "Two-variable GVC representation and rank-efficient Laplacian polarization",
-      "scope": "For a homogeneous order-d operator Lambda=A(partial) and a degree-d binary form P, the separable two-pair form f=A(zeta)P(z) is a rank-one point of the Segre cone in End(Sym^d), with E_2(f^m)=Lambda^m(P^m) and E_2(Qf^m)=Lambda^m(QP^m). GVCSS now proves more: every homogeneous order-d binary operator satisfies GVC for every P of degree at most d, by factoring the symbol and applying Laurent Newton separation with bounded lower-degree defects. GVC2C3 and GVC2C4T remain stronger finite-moment/nullcone certificates on the cubic cone and quartic (2,1,1) orbit. The first separable GVC(2) frontier therefore requires a nonhomogeneous operator or polynomial degree greater than the operator order. No bidegree-preserving linear pair compression of the bidegree-(2,2) three-pair witness can work, while substitutions mixing dual and coordinate variables are not covered. A separate ordinary-Laplacian route seeks an all-order nonlinear polarization of the factored third-order Dvorsky symbol into a nondegenerate quadratic operator with minimal auxiliary rank, preserving both pure vanishing and the fixed-multiplier defect. DVG4 excludes the complete degree-preserving six-variable one-pair Schur lift already at the second pure moment, and grading excludes corrections using only terms above degree three. The next ansatz must couple lower and higher degrees, add a block, or use nonlinear specialization. No successful quadraticization or improved Laplacian endpoint is currently proved.",
+      "scope": "For a homogeneous order-d operator Lambda=A(partial) and a degree-d binary form P, the separable two-pair form f=A(zeta)P(z) is a rank-one point of the Segre cone in End(Sym^d), with E_2(f^m)=Lambda^m(P^m) and E_2(Qf^m)=Lambda^m(QP^m). GVCSS proves that every homogeneous order-d binary operator satisfies GVC for every P of degree at most d, by factoring the symbol and applying Laurent Newton separation with bounded lower-degree defects. GVC2C3, GVC2C4T, and GVC2C4S remain stronger finite-moment/nullcone certificates on the cubic cone, quartic (2,1,1) orbit, and a generic open set of squarefree quartic orbits. SIC2C4 falsifies unrestricted SIC(2) in bidegree (4,4), but its coefficient matrix has full rank five, so it does not lie on the separable Segre cone and does not change the GVC theorem or frontier. The first separable GVC(2) frontier still requires a nonhomogeneous operator or polynomial degree greater than the operator order. A separate ordinary-Laplacian route seeks an all-order nonlinear polarization of the factored third-order Dvorsky symbol into a nondegenerate quadratic operator with minimal auxiliary rank, preserving both pure vanishing and the fixed-multiplier defect. DVG4 excludes every polynomial or formal harmonic hyperplane lift for the canonical six-variable one-pair completion already at the second pure moment. The next ansatz must add an auxiliary block, use a genuinely different quadratic completion, or use nonlinear specialization. No successful quadraticization or improved Laplacian endpoint is currently proved.",
       "canonical_source": "extended-geometry/TWO_VARIABLE_GVC_REPRESENTATION_PROGRAM.md",
       "dependencies": [
         "DVG1",
         "DVG4",
-        "DVG3",
+        "SIC2C4",
         "SIC2B22",
         "GVC2C3",
         "GVC2R2",
         "GVC2C4T",
-        "GVCSS",
-        "OP-SIC2-MN"
+        "GVC2C4S",
+        "GVCSS"
       ],
       "checker": null,
       "proof_type": "not-applicable",
@@ -9124,6 +9238,36 @@
       ],
       "supersedes": [
         "the open symmetric one-parameter deformation of the Fermat sextic Schur stratum"
+      ],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
+      "id": "HC4QSG2",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Generic two-parameter symmetric-sextic Schur rigidity",
+      "scope": "For h6=(x^6+y^6+z^6)/30+mu*x^2*y^2*z^2+nu*sum_(i!=j)x_i^4*x_j^2, consider the generic quartic Schur-divisibility problem over Q(mu,nu). On nu nonzero, six boundary coefficients solve the quadratic quotient with determinant 4096*nu^12. Clearing the resulting 2*nu^2 denominator leaves 114 intrinsic equations in fifteen quartic coefficients. Their exact function-field Groebner basis has 117 elements and contains the cube of every quartic coefficient, so the generic point admits only s4=0 and reaches HC4CD5. This proves rigidity on a nonempty Zariski-open subset of the two-parameter surface. It does not exclude exceptional algebraic curves inside nu nonzero: uniform saturation timed out at 300 seconds and projective chart calculations timed out at 120 seconds. The boundary nu=0 is separately closed by HC4QS1.",
+      "canonical_source": "HC4_QUINTIC_COMMON_DIRECTION.md",
+      "dependencies": [
+        "HC4CD5",
+        "HC4QS1",
+        "external: Singular 4.4.1 exact rational Groebner reduction"
+      ],
+      "checker": "scripts/verify_hc4_quintic_two_parameter_symmetric_schur.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:804272ae9303dce4ee4b944f45e07cf0ca16cb4d99f3dae26750d139cdaa4edf",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt",
+        "formal/finite-etale-keller/lean-toolchain",
+        "formal/finite-etale-keller/lake-manifest.json"
+      ],
+      "supersedes": [
+        "the untested generic point of the two-parameter symmetric sextic Schur surface"
       ],
       "replaced_by": [],
       "priority": "reference"

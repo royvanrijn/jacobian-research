@@ -67,4 +67,14 @@ theorem coefficientFamilyZeroOfFourthPowers
     (pow_eq_zero_iff (by norm_num : (4 : ℕ) ≠ 0)).mp
       (fourthPowers i)
 
+omit [CharZero K] in
+theorem coefficientFamilyZeroOfCubes
+    {n : ℕ} (coefficients : Fin n → K)
+    (cubes : ∀ i, coefficients i ^ 3 = 0) :
+    coefficients = 0 := by
+  funext i
+  exact
+    (pow_eq_zero_iff (by norm_num : (3 : ℕ) ≠ 0)).mp
+      (cubes i)
+
 end FiniteEtaleKeller.HC4QuinticDiagonal

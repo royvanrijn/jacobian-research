@@ -1,4 +1,4 @@
-# Tiny Image-Mathieu counterexamples: compression program
+# Tiny Image-Mathieu counterexamples: resolved pair dimension and compression
 
 ## 1. The absolute problem and the Jacobian-derived problem differ
 
@@ -10,19 +10,41 @@ For
    \mathbb C[\zeta_1,\ldots,\zeta_r,z_1,\ldots,z_r],
 \]
 
-the repository now has a four-term counterexample in three contraction
-pairs.  With pairs \((\tau,t),(w,z),(v,y)\), put
+the absolute pair-dimension problem is now sharp.  With two pairs, define
+\[
+ R=\xi _1z_1+\xi _2z_2,\quad Z=\xi _1z_2,\quad
+ W=2\xi _2z_1,\quad T=\xi _1z_1-\xi _2z_2
+\]
+and
+\[
+ F=(R+Z)\left(R^2W-\frac12(2R+Z)T^2\right),\qquad Q=Z.
+\tag{1.1}
+\]
+Then
+\[
+ \mathcal E_2(F^m)=0,\qquad
+ \mathcal E_2(QF^m)=\frac{(4m+2)!\,m!}{(2m+1)!!}\ne0
+\quad(m\geq1).
+\tag{1.2}
+\]
+The all-order Hopf-coordinate and beta-integral proof is in
+[`TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md`](TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md).
+Since the one-pair case is known, the minimum failing pair dimension is
+exactly two.
+
+The previous support-minimal incumbent uses three contraction pairs.  With
+pairs \((\tau,t),(w,z),(v,y)\), put
 
 \[
  f=\tau(t-y)(wz+vt),
- \qquad g=y.                                              \tag{1.1}
+ \qquad g=y.                                              \tag{1.3}
 \]
 
 Then
 
 \[
  f^m\in\mathcal M_3,\qquad gf^m\notin\mathcal M_3
- \quad\text{for every }m\geq1.                            \tag{1.2}
+ \quad\text{for every }m\geq1.                            \tag{1.4}
 \]
 
 The all-order proof and provenance are in
@@ -30,9 +52,10 @@ The all-order proof and provenance are in
 In fact
 \([t]\mathcal E_3(gf^m)=(-1)^{m-1}(m+1)!m!\).  Expanded, \(f\) has four
 terms and ordinary degree four, while \(g\) is one linear monomial.  The
-one-pair case is known to satisfy the Image Conjecture, so the remaining
-absolute dimension question is exactly whether \(\operatorname{SIC}(2)\)
-holds.
+two-pair witness has sixteen terms, ordinary degree eight, bidegree
+\((4,4)\), and full coefficient-matrix rank five.  Thus it closes pair
+dimension by using the genuinely nonseparable option rather than linearly
+compressing the three-pair form.
 
 The earlier Dvorsky--Long witness remains the smaller-degree separable
 example: it uses five pairs, eight degree-six terms, and a linear
@@ -53,9 +76,10 @@ These should be kept as two separate optimization problems:
 \[
 \begin{array}{c|c|c}
 \text{problem}&\text{certified incumbent}&\text{next target}\\ \hline
-\text{arbitrary }\mathcal M_r& r=3,\ (4,4;1,1)&r=2\\
+\text{arbitrary }\mathcal M_r& r=2,\ (16,8;1,2)&
+ \text{support/degree minimization}\\
 \text{derived from the stored Keller collision}&r=20,\ (60,4;1,1)&r<20.
-\end{array}                                                \tag{1.3}
+\end{array}                                                \tag{1.5}
 \]
 
 Here \((s,d;s_g,d_g)\) records expanded term count and degree for \(f\), then
@@ -158,7 +182,12 @@ moment search with an all-order proof.
 
 ## 4. Search tracks
 
-### Track A: the remaining two-pair problem
+### Track A: residual two-pair classification and minimization
+
+The absolute existence problem is closed by (1.1).  The remaining
+two-pair questions are sharper: decide the full bidegree-\((3,3)\) stratum,
+classify the moment-zero semistable locus in bidegree \((4,4)\), and
+minimize support and ordinary degree.
 
 Start from factorizations
 
@@ -197,8 +226,9 @@ every fixed multiplier.  Thus this slice contains no counterexample over
 any characteristic-zero field; it is no longer merely a bounded negative
 search.
 
-For improving the pair dimension, four-pair separable searches are now
-obsolete.  The target is \(r=2\), where the three-pair construction suggests:
+For pair dimension, higher-pair and separable searches are now obsolete.
+The successful two-pair witness realizes the nonseparable route in the
+earlier search list:
 
 1. classify one-pair bihomogenizations that can absorb two circular pairs
    without adding a third pair;
@@ -216,8 +246,9 @@ pure contractions cut out precisely the pair-linear one-sided nullcone for
 every bidegree-\((2,2)\) form.  Thus SIC(2) holds on the complete
 bidegree-\((2,2)\) stratum, including the nine exact eight-term supports and
 the full support.  The \(501\)-chart sparse census and its explicit
-six- and seven-term factorizations remain useful regressions.  The next
-two-pair search must move to other bidegrees.
+six- and seven-term factorizations remain useful regressions.  The new
+counterexample at bidegree \((4,4)\) shows that this safe result is sharp as
+a low-degree boundary.
 
 The next balanced case is now active.  The
 [bidegree-\((3,3)\) frontier](TWO_PAIR_SIC_BIDEGREE33_FRONTIER.md)
@@ -234,24 +265,25 @@ order six force \(c^6=0\).  On
 \(\mathbb F_{32003}\).  The remaining target is the mixed
 \(\operatorname{Sym}^6\oplus\operatorname{Sym}^4\oplus
 \operatorname{Sym}^2\) representation after the first moment removes the
-scalar summand. The primary continuation is now the
-[all-degree moment--nullcone program](TWO_PAIR_SIC_MOMENT_NULLCONE_PROGRAM.md):
+scalar summand.  Its continuation is now a degree-three classification
+problem inside the formerly all-degree
+[moment--nullcone program](TWO_PAIR_SIC_MOMENT_NULLCONE_PROGRAM.md):
 for
 \(\operatorname{End}(\operatorname{Sym}^d)
 \cong\bigoplus_{r=0}^d\operatorname{Sym}^{2r}\), first force the lowest
 nonzero binary-form summand into its nullcone and then force every higher
 summand to share its unique high-multiplicity root. This replaces deeper
 full \((3,3)\) elimination by a quadratic-anchor lemma and a uniform
-common-root synchronization lemma.
+common-root synchronization lemma.  The two-pair counterexample falsifies
+the uniform statement at \(d=4\), but it does not settle \(d=3\).
 For \(d=3\), the first thirteen full moments now have an exact nonzero
 \(13\times13\) Jacobian minor, so they are algebraically independent and
 attain the invariant-quotient dimension bound. The remaining question is
 their zero fiber, not a shortage of independent moment coordinates.
 
-The first goal is not merely many vanishing initial powers.  It is an
-all-order recurrence whose zero solution is forced by finitely many initial
-conditions, together with a mixed recurrence having infinitely many
-certified nonzero terms.
+The bidegree-\((4,4)\) witness supplies the required all-order identities.
+Bounded zero prefixes remain insufficient for any new candidate or
+classification.
 
 For homogeneous two-variable GVC, this search has a smaller
 representation-theoretic target.  If \(A\) is the degree-\(d\) binary
@@ -290,10 +322,10 @@ factor must cancel identically as a polynomial in all translation
 parameters, not only at the origin.  Long's sparse three-real witness and
 the repository's weighted Gaussian families are the first seeds to test.
 
-The benchmark is now the one-pair bihomogenization producing (1.1).  A
-two-pair construction would settle the minimum exactly, while a theorem
-excluding all two-pair bihomogenizations of fixed-\(W\)-degree circular
-witnesses would isolate the genuinely nonseparable remainder.
+The one-pair bihomogenization producing (1.3) remains the benchmark for
+translation-uniform lifts.  The sharp two-pair witness (1.1) instead has
+full coefficient-matrix rank, confirming that genuine nonseparability can
+beat this lift architecture.
 
 ### Track C: provenance-preserving Keller compression
 
@@ -358,11 +390,11 @@ been excluded: after adding one variable \(s\), the nondegenerate operator
 admits no homogeneous cubic lift restricting to the Dvorsky polynomial on
 \(s=0\) whose first two pure moments vanish.  The
 [exact obstruction](DVORSKY_ONE_PAIR_SCHUR_OBSTRUCTION.md) is the
-parameter-independent coefficient \(12t^2\) in the second moment.
-The degree grading also excludes adding only terms above degree three:
-they cannot cancel this degree-two output.  Therefore the next candidate
-must use lower-degree \(s\)-divisible terms coupled to complementary
-higher degrees, a second auxiliary block, or a nonlinear specialization.
+unrestricted transverse-jet identity \(12t^2-8\rho t\) in the second
+moment.  It applies to every polynomial or formal harmonic hyperplane
+lift, so degree mixing cannot repair this completion.  Therefore the next
+candidate must use a second auxiliary block, a different quadratic
+completion, or a nonlinear specialization.
 The precise identities, rank-minimization objective, and promotion gates
 are in
 [`TWO_VARIABLE_GVC_REPRESENTATION_PROGRAM.md`](TWO_VARIABLE_GVC_REPRESENTATION_PROGRAM.md).

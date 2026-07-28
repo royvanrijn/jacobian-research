@@ -1649,6 +1649,35 @@ and verifies by exact Wick contraction through order ten that
 with Long's displayed six-term four-real cubic are in
 [`THREE_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md`](extended-geometry/THREE_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md).
 
+The sharp two-pair witness is checked independently by
+
+```bash
+python3 scripts/verify_two_pair_image_mathieu_counterexample.py
+```
+
+For
+\[
+\begin{gathered}
+R=\xi _1z_1+\xi _2z_2,\quad Z=\xi _1z_2,\quad
+W=2\xi _2z_1,\quad T=\xi _1z_1-\xi _2z_2,\\
+F=(R+Z)\left(R^2W-\frac12(2R+Z)T^2\right),\qquad Q=Z,
+\end{gathered}
+\]
+the dependency-free checker verifies \(T^2=R^2-2ZW\), the sixteen-term
+bidegree-\((4,4)\) expansion, the full-rank coefficient-matrix determinant
+\(48\), and exact sparse contractions through order eight.  It also
+replays the phase-extracted finite sums through order \(99\).  The written
+Hopf-coordinate and beta-integral argument proves for every \(m\geq1\)
+\[
+\mathcal E_2(F^m)=0,\qquad
+\mathcal E_2(QF^m)=\frac{(4m+2)!\,m!}{(2m+1)!!}.
+\]
+See
+[`TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md`](extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md).
+This proves `not SIC(2)` and, with the known one-pair theorem, the exact
+minimum failing pair dimension two.  The finite replay is not being used
+as the all-order proof.
+
 The dual-linear two-pair theorem is replayed by
 
 ```bash
@@ -1709,6 +1738,7 @@ The quartic three-root continuation is replayed by
 
 ```bash
 .venv/bin/python scripts/verify_two_variable_quartic_three_root_gvc.py
+.venv/bin/python scripts/verify_two_variable_quartic_squarefree_generic.py
 ```
 
 After normalizing the \((2,1,1)\) symbol to \(u^2v(u+v)\), the first
@@ -1719,7 +1749,13 @@ radical lie in the moment ideal.  The same
 [`low-root note`](extended-geometry/TWO_VARIABLE_LOW_ROOT_GVC_THEOREMS.md)
 proves the all-degree theorem for symbols with at most two roots via the
 one-variable Duistermaat--van der Kallen constant-term theorem; that part
-is a written proof rather than a bounded computation.
+is a written proof rather than a bounded computation.  The squarefree
+checker verifies the four symbolic annihilator sections and proves that at
+cross-ratio \(2\), moments one through six have exactly the four expected
+reduced projective zeros.  Proper-family upper semicontinuity then proves
+the same equality on a nonempty Zariski-open set of cross-ratios.  This is
+a generic theorem; finitely many exceptional squarefree orbits remain
+possible.
 
 The later
 [`SPLIT_SYMBOL_GVC_THEOREM.md`](extended-geometry/SPLIT_SYMBOL_GVC_THEOREM.md)
@@ -1750,23 +1786,25 @@ Pairing \(t\) with one new variable \(s\) makes
 \[
  \partial_a\partial_d-\partial_b\partial_c+\partial_t\partial_s
 \]
-a nondegenerate quadratic operator in six variables.  The checker
-parametrizes every homogeneous cubic \(F\) that restricts to the Dvorsky
-polynomial at \(s=0\) and satisfies the first pure condition.  It then
-proves that the \(t^2\)-coefficient of the second pure contraction is
-identically \(12\), independent of all lift parameters.  This is a
-complete obstruction for that degree-preserving one-pair ansatz.  By
-homogeneous degree, adding only terms above degree three cannot cancel the
-degree-two output either.  Lower-degree \(s\)-divisible terms paired with
-complementary higher degrees, multi-block lifts, and nonlinear lifts remain
-open.  See
+a nondegenerate quadratic operator in six variables.  The checker first
+retains the homogeneous cubic regression, then parametrizes the
+unrestricted transverse two-jet of an arbitrary polynomial or formal
+harmonic lift.  It proves the exact axis identity
+\[
+ \widetilde\Delta^2(F^2)=12t^2-8\rho t
+ \quad\text{modulo }(a,b,c,d,s).
+\]
+Thus no degree mixture can repair the canonical six-variable hyperplane
+lift.  Different quadratic completions, additional blocks, and nonlinear
+specializations remain open.  See
 [`DVORSKY_ONE_PAIR_SCHUR_OBSTRUCTION.md`](extended-geometry/DVORSKY_ONE_PAIR_SCHUR_OBSTRUCTION.md).
 
-The next balanced two-pair frontier is replayed by
+The still-open bidegree-\((3,3)\) classification is replayed by
 
 ```bash
 .venv/bin/python scripts/verify_two_pair_sic_bidegree33_sextic_slice.py
 .venv/bin/python scripts/verify_two_pair_sic_bidegree33_anchor_jacobians.py
+.venv/bin/python scripts/verify_two_pair_sic_bidegree33_boundary_family.py
 ```
 
 The checker eliminates the full seven-parameter one-sided locus in the
@@ -1826,6 +1864,16 @@ no moment-zero point. Finally it evaluates the full chart Jacobian at
 exact rational points in \(A\ne0\), \(A=0,B\ne0\), and \(A=B=0\).
 Together with the independent gradients of \(A,B\), the nonzero
 determinants prove maximal restricted differential ranks \(11,10,9\).
+The third checker enlarges the common-boundary plane to the exact
+four-parameter family
+\[
+ s_4=-4q^2,\quad s_5=h,\quad
+ (t_0,t_1,t_3,t_4)=(a,q,3a,b),\quad
+ s_6=(14ab-168aq+70)/3.
+\]
+Here \(A=B=\mu_2=0\) identically.  Moments \(3,\ldots,6\) leave a
+zero-dimensional quotient of length \(372\), and adjoining moment \(7\)
+gives the unit ideal over \(\mathbb Q\).
 
 Modular full-chart reconnaissance is available separately:
 
@@ -1848,7 +1896,8 @@ evidence for or against the anchor. Any later modular result remains
 experimental until it has an exact characteristic-zero certificate.
 The conceptual continuation introduces no new computed certificate:
 [`TWO_PAIR_SIC_MOMENT_NULLCONE_PROGRAM.md`](extended-geometry/TWO_PAIR_SIC_MOMENT_NULLCONE_PROGRAM.md)
-formulates the all-\(d\) moment--nullcone conjecture, the
+now records the bidegree-\((4,4)\) falsification of the formerly all-\(d\)
+moment--nullcone conjecture, together with the surviving
 Hilbert-series degree-selection layer, the quadratic-anchor target, and
 the common-root synchronization induction. It also derives the all-\(d\)
 nullcone dimension and the Krull-height lower bound of
@@ -3183,6 +3232,24 @@ exact 261-element rational Gröbner basis.  The saturated ideal lies in the
 reduce to zero.  Thus `HC4QS1` closes every `mu!=0` member; `HC4QF1` closes
 `mu=0`.  The fourth-power reduced-ring endpoint is replayed in
 `FiniteEtaleKeller/HC4QuinticDiagonal.lean`.
+
+The two-parameter generic broadening is:
+
+```bash
+.venv/bin/python \
+  scripts/verify_hc4_quintic_two_parameter_symmetric_schur.py
+```
+
+For
+`h6=(x^6+y^6+z^6)/30+mu*x^2*y^2*z^2+nu*sum_(i!=j)x_i^4*x_j^2`,
+six quotient pivots have determinant `4096*nu^12`.  After eliminating the
+quadratic quotient and clearing `2*nu^2`, 114 intrinsic equations remain.
+Over `Q(mu,nu)` their exact 117-element Gröbner basis contains the cubes of
+all fifteen quartic coefficients.  This proves `HC4QSG2`, generic rigidity
+on the two-parameter surface.  It does not exclude exceptional curves
+inside `nu!=0`: exact uniform saturation timed out at 300 seconds, and
+raw projective-chart runs timed out at 120 seconds.  Those timeouts are
+diagnostics, not certificates.
 
 The direct collision-normalized finite-field experiment in degree bounds
 five through eight is:

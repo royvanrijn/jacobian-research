@@ -45,14 +45,16 @@ has four expanded terms, coefficients in \(\{1,-1\}\), zeta-degree two,
 \(z\)-degree two, and ordinary total degree four.  The multiplier \(g\) has
 bidegree \((0,1)\).
 
-Since the one-pair Special Image Conjecture is known, the minimum pair
-dimension satisfies
+The later
+[bidegree-\((4,4)\) two-pair counterexample](TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md),
+together with the known one-pair theorem, now proves
 
 \[
- \boxed{2\leq r_{\rm SIC}\leq3.}                              \tag{1.4}
+ \boxed{r_{\rm SIC}=2.}                                      \tag{1.4}
 \]
 
-No assertion about \(\operatorname{SIC}(2)\) or term-count minimality is made.
+The present witness remains smaller in support, degree, and balanced
+bidegree, but no global term-count minimality is asserted.
 
 ## 2. Image membership as contraction
 

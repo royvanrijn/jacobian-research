@@ -13,8 +13,9 @@ three-pair Image-Mathieu counterexample:
 The global theorem is an exact characteristic-zero radical calculation.
 The earlier support census through seven terms is retained because it gives
 small explicit one-sided normal forms and an independent sparse regression.
-This result proves only the complete bidegree-\((2,2)\) stratum; it is not a
-proof of unrestricted \(\operatorname{SIC}(2)\).
+This result proves only the complete bidegree-\((2,2)\) stratum.  The later
+[bidegree-\((4,4)\) witness](TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md)
+shows that unrestricted \(\operatorname{SIC}(2)\) is false.
 
 Use contraction pairs \((W,Z),(V,Y)\), with
 
@@ -415,8 +416,9 @@ Consequently
 > stratum.
 
 This includes all nine exact eight-term supports and the full nine-term
-support.  The remaining SIC(2) problem begins in other bidegrees, not at a
-denser support inside bidegree \((2,2)\).
+support.  The theorem is now the sharp safe low-degree boundary preceding
+the bidegree-\((4,4)\) counterexample; full bidegree \((3,3)\) remains
+undecided.
 
 ## Reproduction
 

@@ -60,14 +60,37 @@ also gives a
 \(P=(1-Z_2)(W_1Z_1+W_2)\), \(Q=Z_2\).  It reduces the support of Long's
 displayed four-real cubic from six terms to four without changing its
 dimension or degree; no global term-minimality claim is made.
-For the remaining two-pair Image problem, the
+
+The absolute Image problem is now sharp in pair dimension.  For
+\[
+ R=\xi _1z_1+\xi _2z_2,\quad Z=\xi _1z_2,\quad
+ W=2\xi _2z_1,\quad T=\xi _1z_1-\xi _2z_2,
+\]
+the
+[two-pair counterexample](extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md)
+\[
+ F=(R+Z)\left(R^2W-\frac12(2R+Z)T^2\right),\qquad Q=Z
+\]
+satisfies
+\[
+ \mathcal E_2(F^m)=0,\qquad
+ \mathcal E_2(QF^m)=\frac{(4m+2)!\,m!}{(2m+1)!!}\ne0
+\quad(m\geq1).
+\]
+Since the one-pair theorem is known, the minimum failing SIC pair
+dimension is exactly two.  The witness is bidegree \((4,4)\), has sixteen
+expanded terms, and has full \(5\times5\) coefficient-matrix rank, so it
+is genuinely nonseparable.
+
+The earlier
 [dual-linear theorem](extended-geometry/DUAL_LINEAR_SIC2.md)
 settles every polynomial \(p=w\mathbin{\cdot}H(z)\), without a Keller
 hypothesis: the first two pure contractions force
 \(H=c+(b,-a)f(ax+by)\), after which every fixed mixed contraction vanishes
 eventually with an explicit degree bound.  Thus the complete dual-degree-one
 stratum is closed.  The normalized Keller-origin result is the sharper
-first-moment corollary; arbitrary \(\operatorname{SIC}(2)\) remains open.
+first-moment corollary.  It is now a safe-stratum theorem inside the
+falsified unrestricted conjecture.
 The
 [bidegree-\((2,2)\) theorem](extended-geometry/TWO_PAIR_SIC_BIDEGREE22_FRONTIER.md)
 proves that the first six pure contractions cut out exactly the prime
@@ -76,7 +99,7 @@ bidegree-\((2,2)\) polynomial, including all dense eight- and nine-term
 forms.  The earlier \(501\)-support census through seven terms is retained
 with its certified Laurent-curve radicals and hidden one-sided
 factorizations.
-The next balanced case has now started:
+The intervening balanced case remains independently interesting:
 the [bidegree-\((3,3)\) frontier](extended-geometry/TWO_PAIR_SIC_BIDEGREE33_FRONTIER.md)
 eliminates the full seven-dimensional one-sided nullcone and proves that
 moments \(2,4,6,10\) cut out exactly the nullcone on the highest
@@ -93,13 +116,15 @@ Weyl symmetry
 reduce the non-diagonal locus to five affine chart orbits, and exact
 eleven-by-eleven Jacobian determinants prove that moments \(2,\ldots,12\)
 are dimension-sized on every chart.  Their common zero fibers remain open.
-The continuation is now the
-[all-degree moment--nullcone program](extended-geometry/TWO_PAIR_SIC_MOMENT_NULLCONE_PROGRAM.md):
+The formerly
+[all-degree moment--nullcone program](extended-geometry/TWO_PAIR_SIC_MOMENT_NULLCONE_PROGRAM.md)
+is falsified at \(d=4\) by the new witness.  Its surviving
+\(d=3\) classification uses
 in
 \(\operatorname{End}(\operatorname{Sym}^d)
 \cong\bigoplus_{r=0}^d\operatorname{Sym}^{2r}\), first destabilize the
 lowest nonzero binary-form component and then force all higher components
-to share its unique high-multiplicity root. The program also proves that
+to share its unique high-multiplicity root. The program still proves that
 the target nullcone has dimension \(1+d(d+1)/2\), that a global \(d=3\)
 proof needs at least thirteen moment equations, and that the analogous
 moment--nullcone equality is false for every pair dimension \(n\geq3\)
@@ -123,8 +148,8 @@ two-parameter plane in that common boundary is now excluded exactly:
 \(\mu_3\) is a nonzero multiple of \(a^3\), while the normalized
 \(\mu_4\) is a unit modulo \(a^3\). Exact rational Jacobian certificates
 also give maximal restricted ranks \(11,10,9\) on the three pivot strata,
-so the remaining obstruction is the special zero fiber rather than a
-generic rank defect.
+so the remaining \(d=3\) obstruction is the special zero fiber rather than
+a generic rank defect.
 For homogeneous two-variable GVC, the same representation theory restricts
 to the rank-one Segre cone \(A\otimes P\): its moments are exactly
 \(\Lambda^m(P^m)\).  The
@@ -137,26 +162,30 @@ the first open balanced separable degree to four.  The
 [low-root binary-symbol theorems](extended-geometry/TWO_VARIABLE_LOW_ROOT_GVC_THEOREMS.md)
 prove every degree when the operator symbol has at most two distinct roots
 and close the quartic \((2,1,1)\) orbit by moments through order five and
-five fourth-power nullcone certificates.  The
+five fourth-power nullcone certificates.  On a nonempty Zariski-open set
+of squarefree quartic cross-ratios, moments through order six now cut out
+the four annihilator lines; the exact anchor is the reduced four-point
+fiber at cross-ratio \(2\).  The
 [split-symbol theorem](extended-geometry/SPLIT_SYMBOL_GVC_THEOREM.md)
 then closes the balanced homogeneous GVC conclusion in every degree:
 factor the binary symbol completely, polarize its directional derivatives,
 and apply Laurent Newton separation.  The same defect bound allows every
 nonhomogeneous \(P\) with degree at most the homogeneous operator order.
-This does not prove the full SIC nullcone equality; the remaining
-separable GVC frontier requires a nonhomogeneous operator or polynomial
-degree greater than the operator order.  The
+The full SIC nullcone equality is now false, but the new witness has full
+coefficient-matrix rank and therefore lies outside the separable GVC
+Segre cone.  The remaining separable GVC frontier still requires a
+nonhomogeneous operator or polynomial degree greater than the operator
+order.  The
 [low-dimensional GVC program](extended-geometry/TWO_VARIABLE_GVC_REPRESENTATION_PROGRAM.md)
 also records the separate ordinary-Laplacian route: quadraticize the
 factored third-order Dvorsky symbol by a nonlinear polarization, minimizing
 the auxiliary block rank with Schur methods rather than accepting a generic
 dimension doubling.  The
 [one-pair Schur obstruction](extended-geometry/DVORSKY_ONE_PAIR_SCHUR_OBSTRUCTION.md)
-now excludes every degree-preserving six-variable cubic lift that recovers
-the Dvorsky polynomial on the new coordinate hyperplane: after imposing
-the first Laplacian moment, the second has unavoidable \(t^2\)-coefficient
-\(12\).  The grading also excludes repairs using only terms above degree
-three.  No new GVC endpoint is claimed.
+now excludes every polynomial or formal harmonic lift that recovers the
+Dvorsky polynomial on the new coordinate hyperplane: its second moment
+restricts to \(12t^2-8\rho t\), so the \(t^2\)-coefficient cannot vanish.
+No new GVC endpoint is claimed.
 The [lower-face prime theorem](extended-geometry/TWO_REAL_GMC_LOWER_FACE_THEOREM.md)
 proves GMC in two real variables, completing the classification:
 `GMC(n)` holds exactly for `n<=2`.  The former
@@ -1005,9 +1034,13 @@ development:
    Before bihomogenization, the same four-term seed is an explicit cubic
    `not GMC(4)` witness with mixed moments
    \((-1)^{m-1}m!\).
+9. `SIC2C4` gives the full-rank bidegree-\((4,4)\) witness above and proves
+   `not SIC(2)`.  Together with the known one-pair theorem, this fixes the
+   exact minimum failing pair dimension at two.  Its nonseparability keeps
+   it outside the two-variable GVC Segre slice.
 
 Only the arrows in this list are dependencies or implications.  The certified
-upper endpoints are now SIC 3, unrestricted GVC 5, ordinary-Laplacian GVC 40,
+upper endpoints are now SIC 2, unrestricted GVC 5, ordinary-Laplacian GVC 40,
 homogeneous quartic HN-VC 42, and homogeneous HN Hessian rank 37.  The
 separate nonhomogeneous degree-at-most-four HN witness has rank 34 in
 dimension 40.  These

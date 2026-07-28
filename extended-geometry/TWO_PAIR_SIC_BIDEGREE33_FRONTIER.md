@@ -763,7 +763,7 @@ construct the finite special quotient of \(\mu_2,\ldots,\mu_{12}\) on
 each stratum and test \(\mu_{14}\) there, while decomposing the common
 boundary beyond (5.13).
 
-## 6. Generalized continuation
+## 6. Degree-three continuation after the all-degree failure
 
 Further full-coefficient Gröbner elimination is no longer the primary
 attack. The
@@ -775,11 +775,16 @@ places (5.4)--(5.5) inside the decomposition
  \cong\bigoplus_{r=0}^d\operatorname{Sym}^{2r}
 \]
 
-for arbitrary \(d\). Its first target is a global invariant
+for arbitrary \(d\).  The
+[bidegree-\((4,4)\) counterexample](TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md)
+shows that the proposed moment--nullcone equality is false in general.
+For the still-open \(d=3\) classification, the first target remains a
+global invariant
 quadratic-anchor certificate: all moments should force the discriminant of
 the \(\operatorname{Sym}^2\) component to vanish. The next target is a
 common-root synchronization identity forcing the higher binary-form
-components into the same destabilizing flag.
+components into the same destabilizing flag.  These are now
+degree-three targets, not steps toward a uniform SIC(2) theorem.
 
 Reconstructing \(c^{25}\) over \(\mathbb Q\) remains a legitimate
 specialized check, but by itself it does not supply either general

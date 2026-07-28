@@ -31,8 +31,11 @@ Three different assertions must not be conflated.
 2. **Quantitative status.**  Dimensions \(20,40,42\) are the witness sizes
    produced by this collision-derived route.  The independent Dvorsky--Long
    formulas subsequently lowered the certified SIC pair dimension to five
-   and gave unrestricted GVC failure in five variables; their third-order
-   operator does not lower this route's 40-variable ordinary-Laplacian
+   and gave unrestricted GVC failure in five variables.  The later
+   three-pair bihomogenization and full-rank bidegree-\((4,4)\) two-pair
+   witness lower the SIC ledger to the sharp value two; see
+   [the two-pair proof](TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md).
+   None of these lowers this route's 40-variable ordinary-Laplacian
    witness.  The present construction improves the repository's earlier
    \(95\)-pair/\(190\)-variable stable-normal-form constructions in
    [STABLE_NORMAL_FORM_AUDIT.md](STABLE_NORMAL_FORM_AUDIT.md).  No claim is

@@ -343,7 +343,9 @@ corollary of Theorem 1.1.
 ## 7. Relation to the complete frontier
 
 The theorem closes every two-pair polynomial of dual degree one.  The
-remaining balanced frontier begins at dual degree two and is organized by
+unrestricted conjecture nevertheless fails in bidegree \((4,4)\) by the
+[full-rank counterexample](TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md).
+The safe-stratum classification beginning at dual degree two is organized by
 
 \[
  \operatorname{End}(\operatorname{Sym}^d)
@@ -351,13 +353,14 @@ remaining balanced frontier begins at dual degree two and is organized by
 \]
 
 For \(d\geq2\), there is no vector field \(H\) and no two-by-two Jacobian
-whose determinant is exposed by the second moment.  The replacement target
-is the all-degree moment--nullcone theorem: all pure moments must force one
-common high-multiplicity root across every binary-form summand.
+whose determinant is exposed by the second moment.  The formerly proposed
+replacement target was the all-degree moment--nullcone theorem.  The
+counterexample falsifies it at \(d=4\); the full \(d=3\) classification
+remains open.
 
-Thus this result moves the exact boundary from “Keller provenance” to
-“all dual-linear polynomials,” but it does not settle the mixed balanced
-strata.
+Thus this result moves the exact safe boundary from “Keller provenance” to
+“all dual-linear polynomials,” while the new counterexample begins only at
+dual degree four.
 
 ## 8. Reproduction
 

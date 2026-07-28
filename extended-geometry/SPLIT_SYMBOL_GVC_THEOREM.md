@@ -29,9 +29,10 @@ Therefore:
 This includes nonhomogeneous \(P\), and proves the GVC conclusion on the
 complete rank-one Segre cone in every balanced two-pair bidegree.  It does
 not assert that moment-zero Segre points lie in the
-\(\mathrm{SL}_2\)-nullcone, and it does not prove unrestricted SIC(2),
-nonhomogeneous operators, the case \(\deg P>d\), or ordinary-Laplacian GVC
-in higher rank.
+\(\mathrm{SL}_2\)-nullcone.  Unrestricted SIC(2) is now known to be false
+at a full-rank nonseparable bidegree-\((4,4)\) point; that point lies
+outside this rank-one theorem.  The result does not treat nonhomogeneous
+operators, the case \(\deg P>d\), or ordinary-Laplacian GVC in higher rank.
 
 ## 2. Complete polarization of the operator factors
 

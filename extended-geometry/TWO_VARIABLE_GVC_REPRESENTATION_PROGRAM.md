@@ -27,6 +27,14 @@ Neither target changes the certified dimension ledger.  In particular, the
 current upper bounds remain five variables for unrestricted
 constant-coefficient GVC and forty variables for ordinary-Laplacian GVC.
 
+The later
+[two-pair SIC counterexample](TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md)
+lies in bidegree \((4,4)\), but its \(5\times5\) coefficient matrix has
+determinant \(48\).  It is therefore a full-rank nonseparable point of
+\(\operatorname{End}(\operatorname{Sym}^4)\), not a rank-one Segre point
+\(A\otimes P\).  It falsifies unrestricted SIC(2) without changing either
+GVC target above.
+
 ## 2. Balanced homogeneous GVC is a Segre slice of SIC(2)
 
 Let \(k\) be a characteristic-zero field and let \(U\) be two-dimensional.
@@ -168,32 +176,39 @@ balanced degree when the operator symbol has at most two distinct roots,
 using the one-variable Laurent constant-term theorem.  In degree four,
 moments through order five also cut out the one-sided locus on the
 \((2,1,1)\) three-root orbit, with five exact fourth-power certificates.
+On a nonempty Zariski-open set of squarefree quartic cross-ratios, moments
+through order six cut out the four annihilator lines; this follows from an
+exact reduced four-point fiber at cross-ratio \(2\) and proper-family upper
+semicontinuity.
 The later [split-symbol theorem](SPLIT_SYMBOL_GVC_THEOREM.md) closes the
 GVC conclusion on the one-parameter squarefree quartic orbit and in every
 higher balanced degree.  What remains on that quartic orbit is the stronger
 finite-moment nullcone question, not eventual coordinate-multiplier
 vanishing.
 
-## 4. What remains viable for SIC(2)
+## 4. What the SIC(2) counterexample changes
 
 The bidegree-\((2,2)\) theorem closes more than the natural four-parameter
 compression family: it closes every two-pair form in that stratum.
-Accordingly a smaller SIC witness must use at least one of the following:
+The successful witness uses balanced bidegree \((4,4)\) and is genuinely
+nonseparable.  Thus the earlier list of possible escape mechanisms is now
+resolved as follows:
 
-1. balanced bidegree \((d,d)\) with \(d\geq3\);
-2. a nonhomogeneous sum of bidegrees;
-3. nonlinear polarization or a nonlinear quotient of the three-pair
-   witness; or
-4. a genuinely nonseparable two-pair form.
+1. bidegree \((2,2)\) remains completely safe;
+2. full bidegree \((3,3)\) remains undecided;
+3. bidegree \((4,4)\) already fails at a full-rank nonseparable point; and
+4. unequal/nonhomogeneous degree and nonlinear polarization are no longer
+   needed to falsify SIC(2), though they remain possible sources of smaller
+   support or degree.
 
 A single unequal bihomogeneous component is already one-sided by its
 nonzero central weight.  The viable unequal-degree option is therefore a
 nonhomogeneous mixture whose different central weights can interact in
 powers; unequal bidegree by itself is not an open counterexample stratum.
 
-For ordinary homogeneous GVC, (2.1) is necessarily separable.  The
-nonseparable option belongs to the larger SIC problem, while the Segre
-restriction is the structural advantage available to GVC.
+For ordinary homogeneous GVC, (2.1) is necessarily separable.  The new
+counterexample therefore belongs only to the larger SIC problem, while the
+Segre restriction remains the structural advantage available to GVC.
 
 ## 5. Rank-efficient quadraticization of the Dvorsky operator
 
@@ -258,36 +273,33 @@ a nonlinear polarization.  This is the first structural gate.
 
 The first calculation should therefore solve the universal coefficient
 problem for one auxiliary quadratic block while preserving both lines of
-(5.3).  That calculation is now complete in the degree-preserving
-one-pair class.  With one new variable \(s\), consider the canonical direct
+(5.3).  That calculation is now complete for every polynomial or formal
+hyperplane lift of the canonical one-pair completion.  With one new
+variable \(s\), consider the
 nondegenerate completion
 \[
  \widetilde\Delta
  =\partial_a\partial_d-\partial_b\partial_c+\partial_t\partial_s.
 \tag{5.4}
 \]
-For every homogeneous cubic \(\widetilde P\) restricting to \(P\) on
-\(s=0\), the first pure equation
-\(\widetilde\Delta\widetilde P=0\) forces
+For every polynomial or formal \(F\) restricting to \(P\) on \(s=0\), the
+first pure equation \(\widetilde\Delta F=0\) forces
 \[
  \left.
- \widetilde\Delta^2(\widetilde P^2)
+ \widetilde\Delta^2(F^2)
  \right|_{a=b=c=d=s=0}
- =12t^2.
+ =12t^2-8\rho t
 \tag{5.5}
 \]
-Thus the complete degree-preserving six-variable Schur ansatz fails at
-moment two.  The proof and exact certificate are in
+for one transverse first-jet coefficient \(\rho\).  Thus every such
+six-variable hyperplane lift fails at moment two.  The proof and exact
+certificate are in
 [the one-pair obstruction](DVORSKY_ONE_PAIR_SCHUR_OBSTRUCTION.md).
-The grading strengthens this: adding only terms of degree greater than
-three cannot change the degree-two output \(12t^2\).  A six-variable
-repair must contain lower-degree \(s\)-divisible terms and complementary
-higher-degree terms, such as a degree-\((2,4)\) or degree-\((1,5)\)
-coupling.
+Degree mixing cannot change the coefficient \(12\).
 
-The next ansatz must therefore use such a genuinely nonhomogeneous
-coupling, add a second auxiliary block whose Schur coupling can cancel
-(5.5), or replace the hyperplane restriction by a nonlinear polarization.
+The next ansatz must therefore add a second auxiliary block, replace the
+hyperplane restriction by a nonlinear polarization, or use a different
+quadratic completion with genuinely new cross terms.
 Only after all-order identities are derived should the block rank be
 minimized.  A finite moment match, or preservation of the pure identity
 without the mixed defect, does not lower the ordinary-Laplacian endpoint.

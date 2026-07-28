@@ -1,0 +1,53 @@
+{
+  "format": "two-pair-image-mathieu-counterexample-v1",
+  "field": "characteristic zero",
+  "contraction_pairs": [
+    [
+      "xi1",
+      "z1"
+    ],
+    [
+      "xi2",
+      "z2"
+    ]
+  ],
+  "bilinears": {
+    "R": "xi1*z1+xi2*z2",
+    "Z": "xi1*z2",
+    "W": "2*xi2*z1",
+    "T": "xi1*z1-xi2*z2",
+    "relation": "T^2=R^2-2*Z*W"
+  },
+  "F": "(R+Z)*(R^2*W-(2*R+Z)*T^2/2)",
+  "Q": "Z",
+  "expanded_F_term_count": 16,
+  "ordinary_total_degree_F": 8,
+  "bidegrees": {
+    "F": [
+      4,
+      4
+    ],
+    "Q": [
+      1,
+      1
+    ]
+  },
+  "coefficient_matrix_determinant": 48,
+  "all_order_identities": {
+    "E_2(F^m)": "0",
+    "E_2(Q*F^m)": "(4*m+2)!*m!/(2*m+1)!!"
+  },
+  "exact_sparse_replay_cutoff": 8,
+  "sparse_power_term_counts": {
+    "1": 16,
+    "2": 50,
+    "3": 101,
+    "4": 173,
+    "5": 266,
+    "6": 376,
+    "7": 505,
+    "8": 651
+  },
+  "finite_sum_identity_cutoff": 99,
+  "written_proof": "extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md"
+}

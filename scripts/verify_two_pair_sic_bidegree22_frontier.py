@@ -1088,8 +1088,9 @@ def main() -> None:
             "support_sizes": [],
             "status": (
                 "bidegree-(2,2) is closed, including dense eight- and "
-                "nine-term forms; unrestricted SIC(2) in other bidegrees "
-                "remains open"
+                "nine-term forms; the later bidegree-(4,4) counterexample "
+                "falsifies unrestricted SIC(2), while the full "
+                "bidegree-(3,3) stratum remains open"
             ),
         },
         "reproduce": (
@@ -1109,7 +1110,8 @@ def main() -> None:
         "terms and explicit hidden one-sided factorizations"
     )
     print(
-        "OPEN SIC(2): bidegrees outside (2,2) remain"
+        "FRONTIER SIC(2): unrestricted conjecture false in bidegree (4,4); "
+        "full bidegree (3,3) classification remains open"
     )
     print(f"PASS wrote {OUTPUT.relative_to(ROOT)}")
 

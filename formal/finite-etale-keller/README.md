@@ -664,7 +664,9 @@ fourth-power radical certificate for the symmetric sextic pencil.  The
 generic Hessian-determinant coefficient extraction and Gröbner saturation
 are certified by `scripts/verify_hc4_quintic_diagonal_schur.py` and
 `scripts/verify_hc4_quintic_symmetric_sextic_schur.py`; they are not yet
-formalized in Lean.
+formalized in Lean.  The same Lean file proves the cube-zero endpoint used
+by the generic two-parameter certificate in
+`scripts/verify_hc4_quintic_two_parameter_symmetric_schur.py`.
 
 Repository CI uses the first command for the paper artifact.  It does not pull
 the explicit arithmetic examples, degree-four barrier, or other companion

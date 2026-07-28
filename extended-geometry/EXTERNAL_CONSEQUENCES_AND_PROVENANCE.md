@@ -35,7 +35,7 @@ flowchart TD
     H42["42 variables: homogeneous quartic HN-VC fails"]
     C22["Separate circuit source: 22 variables"]
     HR37["44-variable quartic HN witness of Hessian rank 37"]
-    Q["Certified ledger: SIC 3 / unrestricted GVC 5 / Laplacian GVC 40 / homogeneous HN-VC 42 / HN rank 37"]
+    Q["Certified ledger: SIC 2 / unrestricted GVC 5 / Laplacian GVC 40 / homogeneous HN-VC 42 / HN rank 37"]
     E["Witness-specific data: named multiplier z_0, exact artifacts, inverse recurrence"]
     M["Motivation for Long's searches"]
     GP["Long's direct three-Gaussian polynomials"]
@@ -48,6 +48,7 @@ flowchart TD
     WP["Repository pair P_(H,lambda), Q"]
     WG["not GMC(4)"]
     I3["One-pair bihomogenization: not SIC(3)"]
+    I2["Full-rank bidegree-(4,4) witness: not SIC(2)"]
 
     J -->|"logical consequence"| U
     J -->|"tracked BCW route"| B
@@ -81,6 +82,7 @@ flowchart TD
     WP -->|"direct explicit witness family"| WG
     WP -->|"H(z)=z and one-pair bihomogenization"| I3
     I3 -.->|"quantitative ledger"| Q
+    I2 -.->|"sharp pair-dimension ledger"| Q
     GP -.->|"Lagrange--Good architecture inspired"| WP
 ```
 
@@ -107,9 +109,11 @@ constructive consequences.  The separate Long--Dvorsky branch gives
 \(\neg\mathrm{SIC}(5)\) and unrestricted \(\neg\mathrm{GVC}(5)\) directly;
 it is not a consequence of the repository's collision route.  The
 third-order Dvorsky operator does not lower the ordinary-Laplacian endpoint.
-The weighted-Gaussian branch now has a separate one-pair bihomogenization
-giving \(\neg\mathrm{SIC}(3)\).  The node listing \(3/5/40/42/37\) is only
-the current certified witness
+The weighted-Gaussian branch has a separate one-pair bihomogenization
+giving \(\neg\mathrm{SIC}(3)\).  A later internal full-rank
+bidegree-\((4,4)\) witness gives \(\neg\mathrm{SIC}(2)\), fixing the exact
+pair minimum because the one-pair theorem is known.  The node listing
+\(2/5/40/42/37\) is only the current certified witness
 ledger: it is not a proof of minimality or a literature-wide record.
 Likewise, named multipliers, artifacts, and recurrences describe explicit
 realizations; they do not assert first discovery.  The 44-variable rank-37
@@ -128,6 +132,7 @@ are not entries in a single minimum problem.
 | Santibañez-Leal | cubic homogeneous, 24 variables | explicit HN quartic, 48 variables | external |
 | Repository | essential cubic, 21 variables | SIC/GVC/HN witnesses in 20/40/42 | internal |
 | Repository | \(H(z)=z\) weighted circular Gaussian bridge | explicit \(\neg\mathrm{SIC}(3)\) by one-pair bihomogenization | internal; [exact proof](THREE_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md) |
+| Repository | full-rank bidegree-\((4,4)\) two-pair form | explicit \(\neg\mathrm{SIC}(2)\) with beta-integral moments | internal; [exact proof](TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md) |
 | Long--Dvorsky | Long's \(SU(2)\) seed and Dvorsky's homogenization | explicit \(\neg\mathrm{GVC}(5)\) and \(\neg\mathrm{SIC}(5)\) | external; [exact local audit](DVORSKY_GVC5_COUNTEREXAMPLE.md) |
 
 In particular, Santibañez-Leal's
@@ -138,9 +143,10 @@ Vanishing-Conjecture failure.  The repository's collision-derived
 \(20/40/42\) dimensions and rank \(37\) come from different optimized routes.
 The Dvorsky--Long formulas independently lower the unrestricted
 constant-coefficient GVC dimension to five.  The repository-derived
-bihomogenization lowers the certified SIC pair dimension further to three,
-while leaving the ordinary-Laplacian and homogeneous HN entries at 40 and
-42.  The table therefore does not rank all rows by a common
+bihomogenization lowered the certified SIC pair dimension to three; the
+later full-rank witness makes the sharp value two, while leaving the
+ordinary-Laplacian and homogeneous HN entries at 40 and 42.  The table
+therefore does not rank all rows by a common
 notion of “smallest.”
 
 ## Christopher D. Long: Gaussian moments

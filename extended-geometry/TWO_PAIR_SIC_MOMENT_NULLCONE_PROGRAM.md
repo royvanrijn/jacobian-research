@@ -1,11 +1,24 @@
-# The two-pair moment--nullcone program
+# The falsified all-degree two-pair moment--nullcone program
 
 ## 1. Status and objective
 
-This is a research program, not a proof of unrestricted
-\(\operatorname{SIC}(2)\). It replaces further full-coefficient Gröbner
-elimination in bidegree \((3,3)\) by one representation-theoretic statement
-that makes sense in every balanced bidegree.
+The all-degree conjecture proposed in this note is false.  The
+[bidegree-\((4,4)\) two-pair counterexample](TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md)
+gives
+\[
+ \mathcal E_2(F^m)=0,\qquad
+ \mathcal E_2(ZF^m)=\frac{(4m+2)!\,m!}{(2m+1)!!}\ne0
+ \quad(m\geq1).
+\]
+Thus its moment-zero point is not in the one-sided nullcone and
+\(\mathrm{MN}_4\) fails.  In particular, unrestricted
+\(\operatorname{SIC}(2)\) is false.
+
+The representation theory, nullcone incidence geometry, Hilbert-series
+tests, and exact bidegree-\((2,2)\) and \((3,3)\) calculations below remain
+valid at their stated scopes.  They now serve a degree-by-degree
+classification program: \(\mathrm{MN}_2\) is true, \(\mathrm{MN}_3\)
+remains open, and \(\mathrm{MN}_4\) is false.
 
 For \(d\geq 1\), let \(V_d\) be the space of two-pair forms of bidegree
 \((d,d)\), and put
@@ -17,15 +30,15 @@ For \(d\geq 1\), let \(V_d\) be the space of two-pair forms of bidegree
 
 The central target is:
 
-> **Moment--nullcone conjecture \(\mathrm{MN}_d\).** The common zero set of
+> **Falsified moment--nullcone conjecture \(\mathrm{MN}_d\).** The common zero set of
 > all \(\mu_m\) on \(V_d\) is the pair-linear one-sided nullcone.
 
 The [complete bidegree-\((2,2)\) theorem](TWO_PAIR_SIC_BIDEGREE22_FRONTIER.md)
 proves \(\mathrm{MN}_2\). The
 [bidegree-\((3,3)\) frontier](TWO_PAIR_SIC_BIDEGREE33_FRONTIER.md) proves it
-on every pure irreducible summand and on one mixed branch. The purpose of
-this note is to organize those results into a route that can scale with
-\(d\).
+on every pure irreducible summand and on one mixed branch.  The structural
+route still organizes those exact results, but it cannot scale to a
+uniform theorem because it fails at \(d=4\).
 
 ## 2. The balanced representation
 
@@ -352,16 +365,19 @@ The evidence must be kept at its proved strength.
 | rank-one Segre cone \(\Sigma_3\subset V_3\) | moments \(1,2,3,4\) cut out exactly \(\Sigma_3\cap N_3\); every fixed coordinate multiplier has cutoff \(m>\deg Q\) | exact in characteristic zero |
 | rank-one Segre points in any \(V_d\) whose operator symbol has at most two roots | all pure moments force the one-sided nullcone, with mixed cutoff \(m>\deg Q\) | exact in characteristic zero via the one-variable Laurent constant-term theorem |
 | rank-one quartic \((2,1,1)\)-symbol orbit in \(V_4\) | moments \(1,\ldots,5\) cut out its three one-sided components; five nullcone generators have fourth-power certificates | exact over \(\mathbb Q\) |
+| generic rank-one squarefree-quartic symbol orbit in \(V_4\) | moments \(1,\ldots,6\) cut out its four annihilator lines on a nonempty Zariski-open cross-ratio set | exact in characteristic zero; finitely many exceptional squarefree orbits remain possible |
 | complete rank-one Segre cone \(\Sigma_d\subset V_d\), every \(d\) | all pure moments imply eventual vanishing for every fixed coordinate-only multiplier by complete factor polarization and Laurent Newton separation | exact in characteristic zero; proves balanced GVC but not Segre moment--nullcone equality |
 | maximal-torus fixed diagonal slice in \(V_3\) | moments \(1,2,3,4\) have only the origin as a common zero, with seventh-power certificates for all four diagonal coefficients | exact over \(\mathbb Q\) |
 | full non-null \(F_2\) branch in \(V_3\) | after \(F_2=2XT\), five residual-torus chart orbits cover the non-diagonal locus; \(\mu_2,\ldots,\mu_{12}\) have exact Jacobian rank eleven on every representative chart | exact over \(\mathbb Q\); all five affine zero fibers remain open |
 | corrected non-null \(F_2\) chart systems in \(V_3\) | \(\mu_2\) eliminates the opposite-weight variable with a constant nonzero pivot on all five charts; on \(s_0=1\), reduced \(\mu_3\) gives two explicit principal-open pivots and the boundary where both vanish | exact over \(\mathbb Q\); the resulting smaller systems remain open |
 | sparse plane in the \(s_0=1,\ A=B=0\) boundary | after the \(\mu_2\) pivot, \(\mu_3=1866240a^3\) and \(\mu_4=138240(11249-8776ab-901a^2b^2)\), with an explicit unit certificate | exact over \(\mathbb Q\); this plane is excluded |
+| four-parameter family in the \(s_0=1,\ A=B=0\) boundary | moments \(3,\ldots,6\) leave a quotient of length \(372\), and moment \(7\) gives the unit ideal | exact over \(\mathbb Q\); strictly contains the sparse plane |
 | three \(s_0\)-chart pivot strata | \((\mu_2,\ldots,\mu_{12})\) has exact generic differential ranks \(11,10,9\) on \(A\ne0\), \(A=0,B\ne0\), and \(A=B=0\) | exact over \(\mathbb Q\); supports finite-quotient attacks |
 | pure \(\operatorname{Sym}^2,\operatorname{Sym}^4,\operatorname{Sym}^6\) in \(V_3\) | moments cut out the corresponding binary-form nullcones | exact over \(\mathbb Q\) |
 | \(\operatorname{Sym}^4\oplus\operatorname{Sym}^2\) in \(V_3\), with \(F_2=2cXT\) | moments through order six imply \(c^6=0\) | exact over \(\mathbb Q\) |
 | \(\operatorname{Sym}^6\oplus\operatorname{Sym}^2\) in \(V_3\), with \(F_2=2cXT\) | even moments through order fourteen imply \(c^{25}=0\) | only over \(\mathbb F_{32003}\) |
 | full mixed \(V_3\) | no moment--nullcone equality yet | open |
+| explicit full-rank point in \(V_4\) | all pure moments vanish but the fixed \(Z\)-mixed moment is \((4m+2)!m!/(2m+1)!!\) | exact all-order counterexample; \(\mathrm{MN}_4\) is false |
 
 The normalized \(c\)-certificates say that the tested branches cannot have
 \(\Delta_2\ne0\). They motivate (4.3), but the finite-field
@@ -520,18 +536,17 @@ Ignoring additional contraction pairs preserves both identities in
  \tag{6.12}
 \]
 
-This is the decisive boundary of the generalization. The plausible theorem
-is rank two in every balanced degree, not every rank in every degree.
-Rank two is special because all one-parameter subgroups are conjugate and
-instability becomes a unique common-root condition for binary forms.
+This was the first decisive boundary of the generalization.  The later
+two-pair witness shows that rank two also fails, at \(d=4\).  Rank two
+still has the special common-root description of instability, but the
+contraction moments do not force that instability in every degree.
 
 ### Nonhomogeneous forms and positive characteristic
 
-The balanced theorem would cover each bidegree-\((d,d)\) stratum, and a
-single unequal bidegree is already one-sided. It does not automatically
-cover a sum of several bidegrees: mixed products can cancel the central
-dual-minus-coordinate grading. A nonhomogeneous extension therefore needs
-a separate multigraded argument.
+A single unequal bidegree is one-sided, but the proposed balanced theorem
+already fails in bidegree \((4,4)\).  A sum of several bidegrees has the
+additional complication that mixed products can cancel the central
+dual-minus-coordinate grading.
 
 All statements in this program are over characteristic zero, with
 nullcone tests made after scalar extension to an algebraic closure. In
@@ -664,16 +679,16 @@ The outcomes have clear implications:
    \(\Delta_2\) lies in the radical of the corrected moment ideal: the
    global quadratic anchor is proved for the viable minimal set.
 2. If it has a component, test whether the component survives all higher
-   moments. A surviving exact point or recurrence is a candidate
-   SIC(2) counterexample; a component killed by later moments only shows
-   that the corrected set is still not sufficient. Its geometry should
-   determine the next Hilbert-compatible replacement.
+   moments. A surviving exact point or recurrence is a bidegree-\((3,3)\)
+   semistable moment-zero point; a component killed by later moments only
+   shows that the corrected set is still not sufficient. Its geometry
+   should determine the next Hilbert-compatible replacement.
 3. Once the non-null branch is excluded, move to the incidence chart
    \(F_2=L^2\) and prove \(L^3\mid F_4\). This is the first synchronization
    lemma.
-4. Only after these two steps should the same identities be interpolated
-   in \(d\). A full raw Gröbner basis in sixteen coefficients remains the
-   least informative route.
+4. Do not interpolate these identities to all \(d\): the \(d=4\)
+   counterexample forbids that conclusion. A full raw Gröbner basis in
+   sixteen coefficients remains the least informative route for \(d=3\).
 
 For computation, the preferred order is now: eliminate with \(\mu_2\);
 split and eliminate with \(\mu_3\); decompose the \(A=B=0\) boundary into
@@ -686,10 +701,11 @@ the rational certificate is reconstructed.
 
 ## 8. Claim boundary
 
-This program does not prove \(\mathrm{MN}_3\), \(\mathrm{MN}_d\) for
-general \(d\), or unrestricted \(\operatorname{SIC}(2)\). It gives:
+The conjecture \(\mathrm{MN}_d\) for all \(d\), and hence unrestricted
+\(\operatorname{SIC}(2)\), is false.  This program does not decide
+\(\mathrm{MN}_3\).  Its surviving contributions are:
 
-- an exact all-\(d\) reformulation of the desired conclusion as a common
+- an exact all-\(d\) description of the one-sided nullcone as a common
   high-multiplicity-root condition;
 - a stratified proof architecture with two explicit lemma families;
 - the exact Hilbert-series obstruction to consecutive degrees
@@ -702,14 +718,13 @@ general \(d\), or unrestricted \(\operatorname{SIC}(2)\). It gives:
 It also proves the structural statements (2.7), (3.4)--(3.8), the
 corrected Jacobian independence in (3.9), and the higher-rank obstruction
 (6.11)--(6.12). These are consequences of exact calculation and standard
-invariant theory together with the repository's proved three-pair
-counterexample; they do not improve the open SIC(2) status.
+invariant theory together with the repository's proved counterexamples.
 
 The cited literature supplies the Image/Mathieu framework, the
 Hilbert--Mumford and binary-form nullcone criteria, and the invariant-ring
-tools. It does not assert the moment--nullcone conjecture \(\mathrm{MN}_d\);
-that conjecture and the proposed anchor/synchronization proof are specific
-to this repository program.
+tools. It does not assert the now-falsified moment--nullcone conjecture
+\(\mathrm{MN}_d\); that conjecture and the proposed
+anchor/synchronization proof were specific to this repository program.
 
 ## 9. Sources
 
