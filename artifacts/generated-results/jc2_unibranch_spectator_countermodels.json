@@ -1,0 +1,629 @@
+{
+  "claim_boundary": {
+    "not_proved": [
+      "globalization inside a finite normalization whose distinguished open is A2",
+      "existence of a Keller map",
+      "an exclusion of any geometric degree at least four"
+    ],
+    "proved": [
+      "finite flatness, smooth integral source, clean ramification, a singular unibranch image, and a separate etale affine sheet are jointly locally consistent in every rank at least four",
+      "the one-spectator packet exactly saturates Orevkov's Euler budget",
+      "the quartic member realizes exact 3+1 and 2+2 fibers",
+      "every model fails the Keller-normalization unit and boundary class conditions because its etale open is A1 x G_m"
+    ]
+  },
+  "full_fiber_contrasts": [
+    {
+      "component_cost": 3,
+      "generic_degree": 3,
+      "global_budget": 2,
+      "map": "(T,u)->(u,T^3+u*T)",
+      "origin_fiber": "k[T]/(T^3)",
+      "status": "excluded_by_orevkov_euler_budget"
+    },
+    {
+      "component_cost": 4,
+      "generic_degree": 4,
+      "global_budget": 3,
+      "map": "(T,u)->(u,T^4+u*T)",
+      "origin_fiber": "k[T]/(T^4)",
+      "status": "excluded_by_orevkov_euler_budget"
+    },
+    {
+      "component_cost": 5,
+      "generic_degree": 5,
+      "global_budget": 4,
+      "map": "(T,u)->(u,T^5+u*T)",
+      "origin_fiber": "k[T]/(T^5)",
+      "status": "excluded_by_orevkov_euler_budget"
+    },
+    {
+      "component_cost": 6,
+      "generic_degree": 6,
+      "global_budget": 5,
+      "map": "(T,u)->(u,T^6+u*T)",
+      "origin_fiber": "k[T]/(T^6)",
+      "status": "excluded_by_orevkov_euler_budget"
+    },
+    {
+      "component_cost": 7,
+      "generic_degree": 7,
+      "global_budget": 6,
+      "map": "(T,u)->(u,T^7+u*T)",
+      "origin_fiber": "k[T]/(T^7)",
+      "status": "excluded_by_orevkov_euler_budget"
+    },
+    {
+      "component_cost": 8,
+      "generic_degree": 8,
+      "global_budget": 7,
+      "map": "(T,u)->(u,T^8+u*T)",
+      "origin_fiber": "k[T]/(T^8)",
+      "status": "excluded_by_orevkov_euler_budget"
+    },
+    {
+      "component_cost": 9,
+      "generic_degree": 9,
+      "global_budget": 8,
+      "map": "(T,u)->(u,T^9+u*T)",
+      "origin_fiber": "k[T]/(T^9)",
+      "status": "excluded_by_orevkov_euler_budget"
+    },
+    {
+      "component_cost": 10,
+      "generic_degree": 10,
+      "global_budget": 9,
+      "map": "(T,u)->(u,T^10+u*T)",
+      "origin_fiber": "k[T]/(T^10)",
+      "status": "excluded_by_orevkov_euler_budget"
+    }
+  ],
+  "monodromy_connectivity": {
+    "consequence": "a connected global cover needs another event involving the spectator; a jump-free boundary self-collision can supply it",
+    "rows": [
+      {
+        "degree": 4,
+        "maximal_cusp_block_orbits": [
+          3,
+          1
+        ],
+        "maximal_cusp_block_transitive": false,
+        "n": 3,
+        "one_bridge_transposition_generates": "S_4"
+      },
+      {
+        "degree": 5,
+        "maximal_cusp_block_orbits": [
+          4,
+          1
+        ],
+        "maximal_cusp_block_transitive": false,
+        "n": 4,
+        "one_bridge_transposition_generates": "S_5"
+      },
+      {
+        "degree": 6,
+        "maximal_cusp_block_orbits": [
+          5,
+          1
+        ],
+        "maximal_cusp_block_transitive": false,
+        "n": 5,
+        "one_bridge_transposition_generates": "S_6"
+      },
+      {
+        "degree": 7,
+        "maximal_cusp_block_orbits": [
+          6,
+          1
+        ],
+        "maximal_cusp_block_transitive": false,
+        "n": 6,
+        "one_bridge_transposition_generates": "S_7"
+      },
+      {
+        "degree": 8,
+        "maximal_cusp_block_orbits": [
+          7,
+          1
+        ],
+        "maximal_cusp_block_transitive": false,
+        "n": 7,
+        "one_bridge_transposition_generates": "S_8"
+      },
+      {
+        "degree": 9,
+        "maximal_cusp_block_orbits": [
+          8,
+          1
+        ],
+        "maximal_cusp_block_transitive": false,
+        "n": 8,
+        "one_bridge_transposition_generates": "S_9"
+      }
+    ]
+  },
+  "quartic_extremal_packet": {
+    "conclusion": "one finite polynomial cover realizes both surviving quartic packet types, but its etale open is A1 x G_m rather than A2",
+    "critical_parameters": [
+      "(1+sqrt(3))/4",
+      "(1-sqrt(3))/4"
+    ],
+    "cusp_fiber_partition": [
+      3,
+      1
+    ],
+    "cusp_target": [
+      0,
+      0
+    ],
+    "self_collision_fiber_partition": [
+      2,
+      2
+    ],
+    "self_collision_target": [
+      "1/8",
+      "-1/64"
+    ]
+  },
+  "schema": "plane-jc.unibranch-spectator-countermodels.v1",
+  "software": {
+    "python": "standard library",
+    "sympy": "1.14.0"
+  },
+  "status": "exact-countermodels-to-purely-local-exclusion",
+  "universal_family": {
+    "map": "pi_n(T,u)=(u,T^(n+1)-T^n+u*T), n>=3",
+    "models_checked": [
+      {
+        "critical_curve": {
+          "generic_transverse_index": 2,
+          "image_branch_type": [
+            2,
+            3
+          ],
+          "image_is_singular_unibranch": true,
+          "parameterization": {
+            "u": "3*T^2-4*T^3",
+            "v": "2*T^3-3*T^4"
+          },
+          "smooth": true
+        },
+        "distinguished_open_failure": {
+          "coordinate_inverse": "u=W+3*T^2-4*T^3",
+          "jacobian_coordinate": "W=Jac(pi_n)",
+          "nonconstant_unit": "W",
+          "ramification_complement": "Spec k[T,W,W^-1]=A1 x G_m",
+          "ramification_prime_class": 0,
+          "required_keller_open": "A2 with unit group k^*",
+          "source_class_group": 0
+        },
+        "finite_free_basis": [
+          "T^0",
+          "T^1",
+          "T^2",
+          "T^3"
+        ],
+        "generic_degree": 4,
+        "jacobian": "u-3*T^2+4*T^3",
+        "monic_equation": "T^4-T^3+u*T-v",
+        "n": 3,
+        "orevkov_budget": {
+          "component_cost": 3,
+          "generic_component_multiplicity": 2,
+          "global_budget": 3,
+          "jump": 1,
+          "special_local_multiplicity": 3,
+          "status": "saturated_not_excluded"
+        },
+        "origin_fiber": {
+          "boundary_local_algebra": "k[T]/(T^3)",
+          "equation": "T^3*(T-1)",
+          "point_lengths": [
+            3,
+            1
+          ],
+          "spectator_jacobian": 1,
+          "spectator_point": "T=1"
+        }
+      },
+      {
+        "critical_curve": {
+          "generic_transverse_index": 2,
+          "image_branch_type": [
+            3,
+            4
+          ],
+          "image_is_singular_unibranch": true,
+          "parameterization": {
+            "u": "4*T^3-5*T^4",
+            "v": "3*T^4-4*T^5"
+          },
+          "smooth": true
+        },
+        "distinguished_open_failure": {
+          "coordinate_inverse": "u=W+4*T^3-5*T^4",
+          "jacobian_coordinate": "W=Jac(pi_n)",
+          "nonconstant_unit": "W",
+          "ramification_complement": "Spec k[T,W,W^-1]=A1 x G_m",
+          "ramification_prime_class": 0,
+          "required_keller_open": "A2 with unit group k^*",
+          "source_class_group": 0
+        },
+        "finite_free_basis": [
+          "T^0",
+          "T^1",
+          "T^2",
+          "T^3",
+          "T^4"
+        ],
+        "generic_degree": 5,
+        "jacobian": "u-4*T^3+5*T^4",
+        "monic_equation": "T^5-T^4+u*T-v",
+        "n": 4,
+        "orevkov_budget": {
+          "component_cost": 4,
+          "generic_component_multiplicity": 2,
+          "global_budget": 4,
+          "jump": 2,
+          "special_local_multiplicity": 4,
+          "status": "saturated_not_excluded"
+        },
+        "origin_fiber": {
+          "boundary_local_algebra": "k[T]/(T^4)",
+          "equation": "T^4*(T-1)",
+          "point_lengths": [
+            4,
+            1
+          ],
+          "spectator_jacobian": 1,
+          "spectator_point": "T=1"
+        }
+      },
+      {
+        "critical_curve": {
+          "generic_transverse_index": 2,
+          "image_branch_type": [
+            4,
+            5
+          ],
+          "image_is_singular_unibranch": true,
+          "parameterization": {
+            "u": "5*T^4-6*T^5",
+            "v": "4*T^5-5*T^6"
+          },
+          "smooth": true
+        },
+        "distinguished_open_failure": {
+          "coordinate_inverse": "u=W+5*T^4-6*T^5",
+          "jacobian_coordinate": "W=Jac(pi_n)",
+          "nonconstant_unit": "W",
+          "ramification_complement": "Spec k[T,W,W^-1]=A1 x G_m",
+          "ramification_prime_class": 0,
+          "required_keller_open": "A2 with unit group k^*",
+          "source_class_group": 0
+        },
+        "finite_free_basis": [
+          "T^0",
+          "T^1",
+          "T^2",
+          "T^3",
+          "T^4",
+          "T^5"
+        ],
+        "generic_degree": 6,
+        "jacobian": "u-5*T^4+6*T^5",
+        "monic_equation": "T^6-T^5+u*T-v",
+        "n": 5,
+        "orevkov_budget": {
+          "component_cost": 5,
+          "generic_component_multiplicity": 2,
+          "global_budget": 5,
+          "jump": 3,
+          "special_local_multiplicity": 5,
+          "status": "saturated_not_excluded"
+        },
+        "origin_fiber": {
+          "boundary_local_algebra": "k[T]/(T^5)",
+          "equation": "T^5*(T-1)",
+          "point_lengths": [
+            5,
+            1
+          ],
+          "spectator_jacobian": 1,
+          "spectator_point": "T=1"
+        }
+      },
+      {
+        "critical_curve": {
+          "generic_transverse_index": 2,
+          "image_branch_type": [
+            5,
+            6
+          ],
+          "image_is_singular_unibranch": true,
+          "parameterization": {
+            "u": "6*T^5-7*T^6",
+            "v": "5*T^6-6*T^7"
+          },
+          "smooth": true
+        },
+        "distinguished_open_failure": {
+          "coordinate_inverse": "u=W+6*T^5-7*T^6",
+          "jacobian_coordinate": "W=Jac(pi_n)",
+          "nonconstant_unit": "W",
+          "ramification_complement": "Spec k[T,W,W^-1]=A1 x G_m",
+          "ramification_prime_class": 0,
+          "required_keller_open": "A2 with unit group k^*",
+          "source_class_group": 0
+        },
+        "finite_free_basis": [
+          "T^0",
+          "T^1",
+          "T^2",
+          "T^3",
+          "T^4",
+          "T^5",
+          "T^6"
+        ],
+        "generic_degree": 7,
+        "jacobian": "u-6*T^5+7*T^6",
+        "monic_equation": "T^7-T^6+u*T-v",
+        "n": 6,
+        "orevkov_budget": {
+          "component_cost": 6,
+          "generic_component_multiplicity": 2,
+          "global_budget": 6,
+          "jump": 4,
+          "special_local_multiplicity": 6,
+          "status": "saturated_not_excluded"
+        },
+        "origin_fiber": {
+          "boundary_local_algebra": "k[T]/(T^6)",
+          "equation": "T^6*(T-1)",
+          "point_lengths": [
+            6,
+            1
+          ],
+          "spectator_jacobian": 1,
+          "spectator_point": "T=1"
+        }
+      },
+      {
+        "critical_curve": {
+          "generic_transverse_index": 2,
+          "image_branch_type": [
+            6,
+            7
+          ],
+          "image_is_singular_unibranch": true,
+          "parameterization": {
+            "u": "7*T^6-8*T^7",
+            "v": "6*T^7-7*T^8"
+          },
+          "smooth": true
+        },
+        "distinguished_open_failure": {
+          "coordinate_inverse": "u=W+7*T^6-8*T^7",
+          "jacobian_coordinate": "W=Jac(pi_n)",
+          "nonconstant_unit": "W",
+          "ramification_complement": "Spec k[T,W,W^-1]=A1 x G_m",
+          "ramification_prime_class": 0,
+          "required_keller_open": "A2 with unit group k^*",
+          "source_class_group": 0
+        },
+        "finite_free_basis": [
+          "T^0",
+          "T^1",
+          "T^2",
+          "T^3",
+          "T^4",
+          "T^5",
+          "T^6",
+          "T^7"
+        ],
+        "generic_degree": 8,
+        "jacobian": "u-7*T^6+8*T^7",
+        "monic_equation": "T^8-T^7+u*T-v",
+        "n": 7,
+        "orevkov_budget": {
+          "component_cost": 7,
+          "generic_component_multiplicity": 2,
+          "global_budget": 7,
+          "jump": 5,
+          "special_local_multiplicity": 7,
+          "status": "saturated_not_excluded"
+        },
+        "origin_fiber": {
+          "boundary_local_algebra": "k[T]/(T^7)",
+          "equation": "T^7*(T-1)",
+          "point_lengths": [
+            7,
+            1
+          ],
+          "spectator_jacobian": 1,
+          "spectator_point": "T=1"
+        }
+      },
+      {
+        "critical_curve": {
+          "generic_transverse_index": 2,
+          "image_branch_type": [
+            7,
+            8
+          ],
+          "image_is_singular_unibranch": true,
+          "parameterization": {
+            "u": "8*T^7-9*T^8",
+            "v": "7*T^8-8*T^9"
+          },
+          "smooth": true
+        },
+        "distinguished_open_failure": {
+          "coordinate_inverse": "u=W+8*T^7-9*T^8",
+          "jacobian_coordinate": "W=Jac(pi_n)",
+          "nonconstant_unit": "W",
+          "ramification_complement": "Spec k[T,W,W^-1]=A1 x G_m",
+          "ramification_prime_class": 0,
+          "required_keller_open": "A2 with unit group k^*",
+          "source_class_group": 0
+        },
+        "finite_free_basis": [
+          "T^0",
+          "T^1",
+          "T^2",
+          "T^3",
+          "T^4",
+          "T^5",
+          "T^6",
+          "T^7",
+          "T^8"
+        ],
+        "generic_degree": 9,
+        "jacobian": "u-8*T^7+9*T^8",
+        "monic_equation": "T^9-T^8+u*T-v",
+        "n": 8,
+        "orevkov_budget": {
+          "component_cost": 8,
+          "generic_component_multiplicity": 2,
+          "global_budget": 8,
+          "jump": 6,
+          "special_local_multiplicity": 8,
+          "status": "saturated_not_excluded"
+        },
+        "origin_fiber": {
+          "boundary_local_algebra": "k[T]/(T^8)",
+          "equation": "T^8*(T-1)",
+          "point_lengths": [
+            8,
+            1
+          ],
+          "spectator_jacobian": 1,
+          "spectator_point": "T=1"
+        }
+      },
+      {
+        "critical_curve": {
+          "generic_transverse_index": 2,
+          "image_branch_type": [
+            8,
+            9
+          ],
+          "image_is_singular_unibranch": true,
+          "parameterization": {
+            "u": "9*T^8-10*T^9",
+            "v": "8*T^9-9*T^10"
+          },
+          "smooth": true
+        },
+        "distinguished_open_failure": {
+          "coordinate_inverse": "u=W+9*T^8-10*T^9",
+          "jacobian_coordinate": "W=Jac(pi_n)",
+          "nonconstant_unit": "W",
+          "ramification_complement": "Spec k[T,W,W^-1]=A1 x G_m",
+          "ramification_prime_class": 0,
+          "required_keller_open": "A2 with unit group k^*",
+          "source_class_group": 0
+        },
+        "finite_free_basis": [
+          "T^0",
+          "T^1",
+          "T^2",
+          "T^3",
+          "T^4",
+          "T^5",
+          "T^6",
+          "T^7",
+          "T^8",
+          "T^9"
+        ],
+        "generic_degree": 10,
+        "jacobian": "u-9*T^8+10*T^9",
+        "monic_equation": "T^10-T^9+u*T-v",
+        "n": 9,
+        "orevkov_budget": {
+          "component_cost": 9,
+          "generic_component_multiplicity": 2,
+          "global_budget": 9,
+          "jump": 7,
+          "special_local_multiplicity": 9,
+          "status": "saturated_not_excluded"
+        },
+        "origin_fiber": {
+          "boundary_local_algebra": "k[T]/(T^9)",
+          "equation": "T^9*(T-1)",
+          "point_lengths": [
+            9,
+            1
+          ],
+          "spectator_jacobian": 1,
+          "spectator_point": "T=1"
+        }
+      },
+      {
+        "critical_curve": {
+          "generic_transverse_index": 2,
+          "image_branch_type": [
+            9,
+            10
+          ],
+          "image_is_singular_unibranch": true,
+          "parameterization": {
+            "u": "10*T^9-11*T^10",
+            "v": "9*T^10-10*T^11"
+          },
+          "smooth": true
+        },
+        "distinguished_open_failure": {
+          "coordinate_inverse": "u=W+10*T^9-11*T^10",
+          "jacobian_coordinate": "W=Jac(pi_n)",
+          "nonconstant_unit": "W",
+          "ramification_complement": "Spec k[T,W,W^-1]=A1 x G_m",
+          "ramification_prime_class": 0,
+          "required_keller_open": "A2 with unit group k^*",
+          "source_class_group": 0
+        },
+        "finite_free_basis": [
+          "T^0",
+          "T^1",
+          "T^2",
+          "T^3",
+          "T^4",
+          "T^5",
+          "T^6",
+          "T^7",
+          "T^8",
+          "T^9",
+          "T^10"
+        ],
+        "generic_degree": 11,
+        "jacobian": "u-10*T^9+11*T^10",
+        "monic_equation": "T^11-T^10+u*T-v",
+        "n": 10,
+        "orevkov_budget": {
+          "component_cost": 10,
+          "generic_component_multiplicity": 2,
+          "global_budget": 10,
+          "jump": 8,
+          "special_local_multiplicity": 10,
+          "status": "saturated_not_excluded"
+        },
+        "origin_fiber": {
+          "boundary_local_algebra": "k[T]/(T^10)",
+          "equation": "T^10*(T-1)",
+          "point_lengths": [
+            10,
+            1
+          ],
+          "spectator_jacobian": 1,
+          "spectator_point": "T=1"
+        }
+      }
+    ],
+    "symbolic_proof": "all identities are polynomial in n and are displayed in the model formulas; n=3,...,10 is a deterministic regression"
+  },
+  "verdict": {
+    "purely_local_exclusion": "false",
+    "remaining_direct_target": "use the global A2 open, trivial unit group, and free boundary class group together with monodromy; no local length or conductor inequality can exclude the spectator packet"
+  }
+}

@@ -261,7 +261,7 @@ def spatial_layers(quartic, cubic, parameters):
         *parameters,
         domain=sp.QQ,
     )
-    grouped = {degree: {} for degree in range(2, 7)}
+    grouped = {degree: {} for degree in range(1, 9)}
     outside = {}
     for exponents, coefficient in polynomial.terms():
         spatial_exponents = exponents[:4]
@@ -305,13 +305,20 @@ def singular_ideal(name, polynomials):
 
 def graded_unit_layer(parameters, layers):
     variables = ",".join(str(parameter) for parameter in parameters)
+    nonempty_degrees = [
+        degree for degree in range(8, 0, -1) if layers[degree]
+    ]
+    assert nonempty_degrees
+    first_degree = nonempty_degrees[0]
     script = (
         f"ring rr=0,({variables}),dp; option(redSB);\n"
-        + singular_ideal("I6", layers[6])
-        + 'ideal G=slimgb(I6); print("L6"); print(size(G));'
-        + 'if(size(G)==1&&G[1]==1){print("UNIT6");quit;};\n'
+        + singular_ideal(f"I{first_degree}", layers[first_degree])
+        + f"ideal G=slimgb(I{first_degree});"
+        + f'print("L{first_degree}");print(size(G));'
+        + f'if(size(G)==1&&G[1]==1)'
+        + f'{{print("UNIT{first_degree}");quit;}};\n'
     )
-    for degree in (5, 4, 3, 2):
+    for degree in nonempty_degrees[1:]:
         script += (
             singular_ideal(f"I{degree}", layers[degree])
             + f"ideal J{degree}=G,I{degree};"
@@ -331,7 +338,7 @@ def graded_unit_layer(parameters, layers):
     )
     assert result.returncode == 0, result.stderr
     assert "?" not in result.stdout, result.stdout
-    for degree in (6, 5, 4, 3, 2):
+    for degree in nonempty_degrees:
         if f"UNIT{degree}" in result.stdout:
             return degree
     raise AssertionError(result.stdout)
@@ -339,7 +346,7 @@ def graded_unit_layer(parameters, layers):
 
 quartics = reconstruct_quartics()
 rank_counts = {4: 0, 7: 0, 8: 0}
-unit_layer_counts = {2: 0, 3: 0, 4: 0, 5: 0, 6: 0}
+unit_layer_counts = {degree: 0 for degree in range(1, 9)}
 exceptional_indices = []
 
 for quartic_index, (support, coefficients) in enumerate(quartics):

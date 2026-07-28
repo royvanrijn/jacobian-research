@@ -47,6 +47,18 @@ F = (
 jacobian = sp.factor(sp.det(sp.Matrix(F).jacobian((x, y, z))))
 assert jacobian == -2
 
+# The paper uses a determinant-one affine normalization without changing the
+# parameter height: precompose by (x,y,z) -> (x/2,y,z) and negate the first
+# target coordinate.
+source_linear = sp.diag(sp.Rational(1, 2), 1, 1)
+target_linear = sp.diag(-1, 1, 1)
+normalized_jacobian_matrix = (
+    target_linear
+    * sp.Matrix(F).jacobian((x, y, z)).subs(x, x / 2)
+    * source_linear
+)
+assert sp.factor(sp.det(normalized_jacobian_matrix)) == 1
+
 # The target line realizes the translated Berend--Bilu family exactly.
 B = sp.Rational(32, 9) * a
 C = (8 * a + 1) / 3
@@ -84,14 +96,15 @@ assert sp.expand((1 + 3 * T) ** 3 - ell) == 9 * h
 assert sp.expand(h - (T - k)) == 3 * T**2 + 3 * T**3
 assert sp.expand(sp.diff(h, T) - 1) == 6 * T + 9 * T**2
 
-# The first prime in the progression is 19.  Its target coordinates are
-# primitive, and phi(9) * 32 gives the denominator in the asymptotic.
+# The first prime in the progression is 19.  The paper-facing normalized
+# target coordinates are primitive, and phi(9) * 32 gives the denominator
+# in the asymptotic.
 assert [prime for prime in sp.primerange(2, 19) if prime % 9 == 1] == []
 assert sp.isprime(19) and 19 % 9 == 1
-target_19 = (9, 9, 32 * 19, 24 * 19 + 3)
-assert target_19 == (9, 9, 608, 459)
+target_19 = (9, -9, 32 * 19, 24 * 19 + 3)
+assert target_19 == (9, -9, 608, 459)
 assert math.gcd(*target_19) == 1
-assert max(target_19) == 608
+assert max(map(abs, target_19)) == 608
 assert sp.totient(9) * 32 == 192
 
 # The same local criterion includes composite parameters.  The first broad
@@ -104,9 +117,10 @@ for composite in (91, 703):
     assert any(exponent % 3 for exponent in factors.values())
 assert all(prime % 9 == 1 for prime in sp.factorint(703))
 
-print("PASS: the displayed fixed polynomial map has determinant -2")
+print("PASS: the base fixed polynomial map has determinant -2")
+print("PASS: the paper's affine normalization has determinant 1")
 print("PASS: its rational target line is (X^3-a)(X^2+X+1)")
 print("PASS: every prime a=1 mod 9 gives a reduced degree-five Hasse fiber")
 print("PASS: the multiplicative local criterion includes a=91 and a=703")
-print("PASS: a=19 has primitive target [9:9:608:459] of height 608")
+print("PASS: a=19 has normalized target [9:-9:608:459] of height 608")
 print("PASS: the target count is asymptotic to B/(192 log B)")

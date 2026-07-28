@@ -26,7 +26,11 @@ This policy applies only to searches for two-dimensional Keller maps.
    the global target pole vector, and require effective ordinary and log
    ramification plus an intrinsic dicritical.  A nonproper candidate must
    have canonical free depth at least three.  Corners alone are not a
-   compiler input.
+   compiler input.  After a Puiseux/Kummer substitution with transformed
+   bracket \(X^r\), record every band exponent modulo \(r+1\).  Apply a
+   constant-Jacobian sparse theorem only to the trivial-character sector
+   after proving descent through \(u=X^{r+1}/(r+1)\); a small raw Laurent
+   support is not itself a Keller support.
 6. Treat the source boundary tree as only the first layer of the obstruction.
    A closure claim must also resolve the target nonproper curve, give the
    harmonic map of source and target dual graphs with normal/residue degrees,
@@ -68,6 +72,12 @@ This policy applies only to searches for two-dimensional Keller maps.
     `cas/finite_normalization_signatures.py` before treating it as a new
     boundary type; use the resulting Pareto coordinates only as a bounded
     classification device, not as an existence claim.
+    Do not pursue a purely local exclusion of singular unibranch packets:
+    [`UNIBRANCH_SPECTATOR_COUNTERMODELS.md`](UNIBRANCH_SPECTATOR_COUNTERMODELS.md)
+    gives smooth integral finite-free models in every rank at least four,
+    with an étale spectator and saturated Euler budget.  The usable
+    obstruction must retain the global distinguished `A2` open, its trivial
+    unit group, the free boundary class group, and connected monodromy.
 11. Rank future degree-frontier work by the tables in
    [FRONTIER_CLOSING_ATTACKS.md](FRONTIER_CLOSING_ATTACKS.md) and
    [NEXT_DEGREE_FRONTIER.md](NEXT_DEGREE_FRONTIER.md).

@@ -1,16 +1,23 @@
 \section{Discussion}
 
-The construction preserves the finite \'etale algebra itself, not merely its
-rank or its geometric points after base change.  Its load-bearing identities
-are the compact inverse equation, the derivative-unit reconstruction, and
-the function-field comparison
+The reverse problem began with a tension.  Keller maps seem rigid, while
+finite \'etale algebras carry essentially arbitrary arithmetic.  The
+construction shows that these two facts are compatible: the map can be
+rigid in its Jacobian and still be flexible enough to contain a prescribed
+finite \'etale algebra as one complete fiber.
+
+The point is that the construction preserves the algebra itself, not merely
+its rank or its geometric points after base change.  Three identities carry
+the proof: the compact inverse equation, the derivative-unit reconstruction,
+and the function-field comparison
 \[
  K(x,y,z)=K(\Pi,B,C)(S).
 \]
-Together they prove, over every field of characteristic different from
-\(2\), that the distinguished literal fiber has rank equal to the actual
-geometric degree whenever the separable presentation and admissible
-translation are supplied.
+The first tells us what the marked root must satisfy.  The second turns that
+root back into a source point and explains the Jacobian cancellation.  The
+third proves that no hidden inverse sheets remain.  Together they show that
+the distinguished literal fiber has rank equal to the actual geometric
+degree.
 
 This distinction also keeps the effectivity statement precise.  From a
 supplied separable presentation \(K[T]/(P)\) and admissible translation
@@ -19,14 +26,28 @@ explicit and commute with scalar extension.  For an abstract finite \'etale
 algebra, monogenicity proves existence of such data but does not choose it
 canonically.
 
-The characteristic-zero specialization of the polynomial-presentation
-theorem, including the actual geometric degree, and its passage to abstract
-finite \'etale algebras are formalized in Lean.
+There is a second, slightly broader layer.  The paper proves the same
+explicit formulas over every field of characteristic different from \(2\)
+when an admissible translation is supplied.  This broader result is
+Proposition~\ref{prop:supplied-polynomial-realization}; it is not formalized
+end to end.
+
+The characteristic-zero polynomial-presentation theorem, including the actual
+geometric degree, and its passage to abstract finite \'etale algebras are
+formalized in Lean.
 Appendix~\ref{app:lean-correspondence} records the public endpoint
-declarations and the stronger hypotheses currently present in the formal
-files.  The rank-two exclusion is deliberately separate: it uses the
+declarations and the exact remaining formal boundary.  The rank-two exclusion
+is deliberately separate: it uses the
 classical Campbell--Razar--Wright Galois case rather than the formalized
 construction.
+
+What I find most satisfying is that the final theorem is larger than the
+formula that led to it.  The starting point was one cubic inverse pattern.
+Once the derivative was recognized as both reconstruction unit and
+Jacobian factor, the degree ceased to matter.  A single marked root could
+carry any separable polynomial, and monogenicity then turned that polynomial
+statement into a theorem about every finite \'etale algebra of rank at least
+three.
 
 \paragraph{Relation to earlier work.}
 To my knowledge, no earlier source states that every finite \'etale

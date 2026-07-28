@@ -37,16 +37,26 @@ Run:
 make verify-lean-foundational
 ```
 
-The target fetches the exact upstream commit into the ignored local directory
-`.cache/lean-foundational`, downloads the Lean/mathlib cache declared by that project,
-and runs `lake build`.  It is intentionally not part of `make verify`, because
-the first run installs the pinned Lean `v4.33.0-rc1` toolchain and mathlib
-dependencies.
+The target fetches the exact upstream commit into the ignored source checkout
+`.cache/lean-foundational`, creates the generated worktree
+`.cache/lean-foundational-stable`, and applies the checked
+[`v4.32.1` stable-toolchain overlay](lean-foundational-v4.32.1.patch).  The
+overlay changes only `lean-toolchain`, `lakefile.toml`, and
+`lake-manifest.json`; the wrapper verifies the exact Git blob hash of each
+overlaid file before downloading the stable Mathlib cache and running
+`lake build`.  The audited Lean source remains byte-for-byte at the upstream
+commit.
 
-The pinned target was reproduced successfully on 21 July 2026.  The upstream
-`#print axioms` checks report only `propext`, `Classical.choice`, and
-`Quot.sound` for each of the three final theorems; in particular, the reported
-dependency lists contain no `sorryAx`.
+There is no Lean or Mathlib `v4.33.0` stable tag as of 28 July 2026, so the
+repository uses the newest available stable patch release, Lean/Mathlib
+`v4.32.1`, rather than retaining the upstream `v4.33.0-rc1` build.  It is
+intentionally not part of `make verify`, because the first run downloads this
+pinned stable toolchain and its Mathlib dependencies.
+
+The stable-overlaid target was reproduced successfully on 28 July 2026.  The
+upstream `#print axioms` checks report only `propext`, `Classical.choice`, and
+`Quot.sound` for each of the three final theorems; in particular, the
+reported dependency lists contain no `sorryAx`.
 
 ## Attribution and source boundary
 

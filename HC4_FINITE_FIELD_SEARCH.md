@@ -268,12 +268,14 @@ The combined experiment does not exclude:
 - rational or number-field lifts.
 
 The sampled dense-support results add exact exclusions for 400 recorded
-families, but they do not exhaust all supports of sizes 6 through 12.  The
-useful next layer is a moving cone direction: make the omitted linear form
-itself a coefficient parameter in the full projective three-space, or allow
-successive homogeneous layers to use different cone directions.  Any family
-recurring as nonunit over several primes can then be passed to rational
-reconstruction and an exact characteristic-zero check.
+families, but they do not exhaust all supports of sizes 6 through 12.
+The later characteristic-zero theorem `HC4E46` closes the complete even
+quartic--sextic moving-cone layer without a support search.  The useful
+next experimental layer is therefore simultaneous cubic and sextic
+interaction, where successive determinant faces need not retain the even
+source/dual cone.  Any family recurring as nonunit over several primes can
+then be passed to rational reconstruction and an exact
+characteristic-zero check.
 
 ## Reproduction
 

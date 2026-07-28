@@ -1,16 +1,29 @@
 # Lean formalization: finite étale Keller fibers
 
-This project formalizes the polynomial-presentation construction in
-*Every Finite Étale Algebra of Rank at Least Three Is a Full Keller Fiber*.
-It uses Lean `v4.33.0-rc1` and Mathlib at the matching release
-candidate.
+This project formalizes the characteristic-zero headline construction in
+*Over Characteristic Zero, Every Finite Étale Algebra of Rank at Least Three
+Is a Full Keller Fiber*.
+It uses the stable Lean `v4.32.1` toolchain and Mathlib at the matching
+stable release.
 
-The paper's supplied-presentation theorem is stated over fields of
-characteristic different from two, using nonvanishing of the first and third
-Hasse coefficients at the supplied translation. The current end-to-end Lean
-development retains the stronger assumption `CharZero K`; it formalizes the
-complete characteristic-zero specialization and the automatic abstract
-finite-étale corollary.
+The paper's headline theorem and the end-to-end Lean theorem both assume
+`CharZero K`. The paper separately proves a supplied-presentation proposition
+over fields of characteristic different from two, using nonvanishing of the
+first and third Hasse coefficients at the supplied translation. That broader
+proposition is not yet formalized end to end. The current Lean development
+formalizes automatic translation, the complete characteristic-zero
+polynomial-presentation theorem, and the automatic abstract finite-étale
+corollary.
+
+The publication artifact is the deliberately small
+`FiniteEtaleKeller/PaperCertificate.lean`.  Its direct imports are limited to
+the general gauge map, function-field comparison, page-one theorem, and
+abstract finite-étale realization.  Build it without the companion
+developments using:
+
+```text
+lake build FiniteEtaleKeller.PaperCertificate
+```
 
 ## Proof status
 
@@ -47,6 +60,11 @@ finite-étale corollary.
 | 29 | Monogenicity and the passage from arbitrary finite étale algebras in characteristic zero | implemented |
 | 30 | Historical degree-two Galois exclusion | external theorem; not yet Lean |
 | 31 | Common power-shift and cubic-lift Jacobians, selected-fiber invariance, and quotient representation | implemented |
+| 32 | Fixed Hasse family: centered factorization, separability, rank five, and finite étaleness | implemented |
+| 33 | Exact source/target normalization and literal fibers of the fixed Jacobian-one paper map | implemented |
+| 34 | Uniform local points and the end-to-end Hasse certificate for every admissible noncube parameter | implemented |
+| 35 | Primitive target coordinates, exact projective height `32a`, and distinctness of the target line | implemented |
+| 36 | Multiplicative closure of the arithmetic core and the complete prime-progression certificate | implemented |
 
 ## Final polynomial-presentation theorem
 
@@ -93,6 +111,10 @@ source fraction field and the corresponding `AdjoinRoot` extension over
 `K(Π,B)(C)`. Thus the custom geometric-degree abbreviation is not the
 public endpoint on which the degree claim rests.
 
+`paperPolynomialPresentation_pageOne` is the exact paper-facing endpoint: it
+takes `P.Separable`, converts that hypothesis via `Separable.squarefree`, and
+returns the complete internal certificate.
+
 `automaticRealization_pageOne` bundles the direct finrank equality as
 `functionFieldFinrank`, together with the convenience equality above,
 determinant one, and all of the fiber assertions below.
@@ -124,6 +146,90 @@ The explicit quotient is proved finite étale. Lean also proves that this
 literal fiber has no rational point, has a real point, and has a point over
 `ℚ_[p]` for every prime `p`.
 
+The fixed-map sequel is formalized uniformly, rather than only at the first
+parameter `a = 19`. `FixedHasseFamily.lean` fixes the quintic seed, proves
+the centered identity
+
+```text
+E_a(S) = ((S - 1/2)^3 - a) * (S^2 + 3/4),
+```
+
+identifies it with the translate of
+`(X^3-a)(X^2+X+1)`, and supplies explicit Bézout certificates for
+separability when `a ≠ 0, 1`. It proves rank five, finite étaleness, the
+geometric degree five of the determinant-`-2` base map, and a natural
+functor-of-points description of the complete fiber.
+
+`FixedHasseMap.lean` formalizes the paper's exact affine normalization
+`Φ = L ∘ F₀ ∘ A`, proves `jacobianDet paperMap = 1`, and transports the
+uncentered arithmetic quotient all the way to the literal moving fiber at
+
+```text
+(-1, 32a/9, (8a+1)/3).
+```
+
+It also proves the inverse polynomial-map identity which recovers `baseMap`
+from `paperMap` by the displayed inverse source and target scalings. Since
+these are polynomial automorphisms, the ordinary invariance of
+function-field degree identifies the base-map computation with the displayed
+map's degree. `paperMapGeometricDegree` records that transported degree and
+`paperMap_geometricDegree` proves that it is five. The project does not
+construct a redundant second `AlgEquiv` for the source- and target-scaled
+fraction fields; it formalizes the exact polynomial normalization and the
+complete base-map function-field computation from which the invariance step
+follows.
+
+Finally, `FixedHasseLocal.lean` proves the local table uniformly. The
+exceptional primes `2` and `3` are handled by explicit simple-root Hensel
+arguments; primes `1 mod 3` use the cyclotomic factor, and primes `2 mod 3`
+use bijectivity of cubing. Its paper-facing endpoint is
+
+```text
+paperFiberPoint_hasse_certificate
+```
+
+which proves, for every natural `a` satisfying the congruence and
+prime-support hypotheses and not a rational cube, that the literal paper
+fiber has no rational point, has a real point, and has a point over
+`ℚ_[p]` for every prime `p`. The final declaration uses exactly the
+paper's parameter conditions: oddness is derived internally from prime
+support.
+
+`FixedHasseHeight.lean` completes the elementary counting interface. It
+proves that
+
+```text
+[1 : y_a] = [9 : -9 : 32a : 24a+3],
+```
+
+that these coordinates have gcd one when `a ≡ 1 (mod 9)`, that their
+maximum absolute value is `32a` for `a ≥ 1`, and that distinct natural
+parameters give distinct rational targets. The bundled endpoint
+`paperParameter_certificate` packages determinant one, the exact paper-map
+geometric degree five and inverse affine normalization, complete fiber
+representation, finite étaleness, rank five,
+the Hasse certificate, target primitivity, and target height for one
+admissible parameter.
+
+`FixedHasseArithmetic.lean` isolates the multiplicative parameter layer. Its
+predicate `HasseCoreCondition` records the congruence and prime-support
+conditions and is proved closed under multiplication and natural powers.
+The noncube condition is kept separate in `AdmissibleHasseParameter`, since
+noncubes are not multiplicatively closed. The module also proves that every
+prime `ℓ ≡ 1 (mod 9)` is not a rational cube and supplies the complete
+certificate through
+
+```text
+primeParameter_certificate
+```
+
+The isolated publication endpoint for the sequel is
+`FixedHassePaperCertificate.lean`. Build it with
+
+```text
+lake build FiniteEtaleKeller.FixedHassePaperCertificate
+```
+
 `StableGaugeFiber.lean` formalizes the deformation layer used by universal
 multiplicity.  For every common power shift, and for every cubic lift exponent
 `n ≥ 4`, it proves the normalized Jacobian determinant is one.  On `Π=1` the
@@ -139,6 +245,7 @@ The principal final declarations are:
 
 ```text
 automaticRealizationMap_certificate
+paperPolynomialPresentation_pageOne
 automaticRealization_pageOne
 finiteEtalePowerBasis
 finiteEtalePolynomial_squarefree
@@ -147,6 +254,7 @@ finiteEtalePolynomial_natDegree
 abstractFiniteEtaleFiberRepresentingEquiv
 abstractFiniteEtaleFiberRepresentingEquiv_natural
 abstractFiniteEtale_pageOne
+paperAbstractFiniteEtale_pageOne
 automaticRealizationGeometricDegree_eq
 automaticRealizationFunctionFieldComparison
 automaticRealizationFunctionField_finrank
@@ -157,8 +265,30 @@ ExplicitQuintic.integralFiberRepresentingEquiv
 ExplicitQuintic.integralFiberRepresentingEquiv_natural
 ExplicitQuintic.integralFiberPoint_padic_nonempty
 ExplicitQuintic.integralFiberPoint_hasse_certificate
+ExplicitQuintic.integralMap_eq_generatedPaperMap
+ExplicitQuintic.generatedPaperInversePolynomial
+ExplicitQuintic.generatedPaperTarget_scaling
+ExplicitQuintic.integralFiberPoint_eval_eq_generatedTarget
+ExplicitQuintic.generatedPaper_integral_to_jacobianOne
 automaticRepresentingAlgebra_etale
 automaticRepresentingAlgebra_finite
+FixedHasseFamily.inversePolynomial_eq_centered
+FixedHasseFamily.polynomial_separable
+FixedHasseFamily.quotient_etale
+FixedHasseFamily.jacobianDet_paperMap
+FixedHasseFamily.paperMap_normalization_inverse
+FixedHasseFamily.paperMap_geometricDegree
+FixedHasseFamily.paperFiberRepresentingEquiv
+FixedHasseFamily.polynomial_has_padic_root
+FixedHasseFamily.paperFiberPoint_hasse_certificate
+FixedHasseFamily.targetProjectiveContent_eq_one
+FixedHasseFamily.targetProjectiveHeight_eq
+FixedHasseFamily.rationalTarget_injective
+FixedHasseFamily.paperParameter_certificate
+FixedHasseFamily.HasseCoreCondition.mul
+FixedHasseFamily.prime_not_rational_cube
+FixedHasseFamily.primeParameter_certificate
+FixedHasseFamily.fixedHassePaper_certificate
 powerShiftedGaugeRealizationFiberRepresentingEquiv
 cubicLiftGaugeRealizationFiberRepresentingEquiv
 powerShiftedGaugeRealizationFiberRepresentingEquiv_natural
@@ -378,17 +508,31 @@ formal boundary of the focused paper is:
 The current certificates therefore prove the complete constructive,
 scheme-theoretic, and geometric-degree layers for both polynomial
 presentations and abstract finite étale algebras in characteristic zero.
+For the fixed-map Hasse sequel they additionally prove the centered family
+identity, reduced rank-five fiber representation, exact determinant-one
+normalization, the rational, real, and uniform all-`p`-adic assertions, and
+the primitive target-coordinate and exact height calculation.
+Multiplicative-family counting, its Selberg--Delange asymptotic, and the
+analytic input in degree minimality remain outside the Lean certificate.
 The classical rank-two obstruction and the analytic first-prime-moment
-extraction remain explicitly outside the Lean certificate. Nonproperness,
-monodromy, and stable atomicity are companion results outside the focused
-paper.
+extraction likewise remain explicit boundaries. Nonproperness, monodromy,
+and stable atomicity are companion results outside the focused paper.
 
 ## Build
 
+Build the paper certificate:
+
 ```bash
 cd formal/finite-etale-keller
-lake build
+lake build FiniteEtaleKeller.PaperCertificate
 ```
 
-Repository CI builds this project independently of the external Lean certificate
-for the foundational three-dimensional map.
+The broad repository umbrella remains available for companion work:
+
+```bash
+lake build FiniteEtaleKeller
+```
+
+Repository CI uses the first command for the paper artifact.  It does not pull
+the explicit arithmetic examples, degree-four barrier, or other companion
+developments into the publication certificate.

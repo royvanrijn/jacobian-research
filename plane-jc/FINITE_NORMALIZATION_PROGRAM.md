@@ -1159,6 +1159,21 @@ in the deleted boundary while at least one affine prime supplies the
 distinguished Keller sheet.  This is a local algebra/monodromy problem, not
 a further global intersection inequality.
 
+**Direct-attack correction.**  The purely local exclusion is false, even
+with smooth integral source.  For every \(n\ge3\), the finite-free map
+
+\[
+(T,u)\longmapsto\bigl(u,T^{n+1}-T^n+uT\bigr)
+\]
+
+has a clean \((n-1,n)\) unibranch ramification image, a length-\(n\)
+boundary collision, and a separate reduced étale spectator at \(T=1\).
+Its Orevkov cost is \(n=(n+1)-1\), so it saturates rather than exceeds the
+Euler budget.  The missing hypothesis is global: deleting the ramification
+curve gives \(\mathbb A^1\times\mathbb G_m\), with a nonconstant unit,
+instead of the distinguished Keller open \(\mathbb A^2\).  See
+[`UNIBRANCH_SPECTATOR_COUNTERMODELS.md`](UNIBRANCH_SPECTATOR_COUNTERMODELS.md).
+
 ### Conditional Proposition 7.7 -- embedded immersion removes the unibranch face
 
 Assume, in addition to the logarithmic-purity hypotheses, that the residue

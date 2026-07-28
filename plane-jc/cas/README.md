@@ -1,11 +1,72 @@
 # Exact replay commands
 
+The normalized sparse-support certificate is:
+
+```bash
+.venv/bin/python plane-jc/cas/verify_sparse_support_exclusions.py
+```
+
+It replays the arbitrary-degree singleton-versus-five classification's
+nonempty Gröbner charts and their two-sided shear inverses.  For the
+balanced `2+2` class it exhausts all 256 divergence/determinant presence
+masks and the 20 residual collision partitions with exact integer
+arithmetic, proving that every arbitrary-degree support has a singleton
+Keller coefficient and hence an explicit Rabinowitsch unit identity.  The
+former `14,653,584`-row census through degree twelve is retained as an
+independent regression.  The same replay closes support five: `1+4` forces
+the cubic shear `Q=b(x+a*y^m)^3`, while all `2+3` and transposed charts are
+unit ideals after an exact `2048 -> 321 -> 98 -> unsat` collision sieve.
+It then closes support six in arbitrary degree: `1+5` is the quartic shear
+`Q=b(x+a*y^m)^4`, `2+4` and `4+2` are unit ideals, and the only `3+3`
+collision support is the directional quadratic shear on
+`{x^2,x*y,y^2}`.  A separate `5,290,000`-support census through degree six
+finds that same unique `3+3` collision support.  The replay checks the
+resulting affine-normalized support lower bound seven.
+The pinned artifact is
+`artifacts/generated-results/jc2_sparse_support_exclusions.json`.
+Intentional regeneration requires `--refresh`.  The theorem and its
+coordinate-dependent claim boundary are in
+[`../CERTIFIED_SPARSE_SUPPORT_EXCLUSIONS.md`](../CERTIFIED_SPARSE_SUPPORT_EXCLUSIONS.md).
+
+The attempted Newton/boundary bridge is replayed by:
+
+```bash
+.venv/bin/python plane-jc/cas/verify_affine_support_newton_bridge.py
+.venv/bin/python plane-jc/cas/classify_f2_75_125_layers.py
+.venv/bin/python plane-jc/cas/audit_f2_75_125_boundary_handoff.py
+.venv/bin/python plane-jc/cas/test_f2_75_125_frontend.py
+```
+
+The first command certifies that fixed geometric degree, trivial
+nonproperness, and three Newton vertices do not upper-bound
+affine-normalized support, using dense triangular automorphisms.  It also
+checks the Kummer descent gate for monomial-Jacobian blocks.  The second
+command corrects the F2 chart to `[t,z]=-z`, proves the finite
+degree/edge-halfspace band envelope, and classifies all 35 zero layers
+(`39` through `5`) by exact band incidence and Kummer character.  Its pinned
+artifact is
+[`../../artifacts/generated-results/jc2_f2_75_125_character_layers.json`](../../artifacts/generated-results/jc2_f2_75_125_character_layers.json).
+It is an exact B0 envelope, not an exhaustive polygon normal form or an F2
+exclusion.
+The third command classifies the quadratic common edge into its four
+exhaustive contact partitions and audits the handoff to the
+finite-normalization/log-boundary programmes.  It proves that contact orders
+do not determine toroidal scales and that even the strongest naive
+contact-to-ramification surrogate survives the finite-flat packet budget.
+The canonical stopping note is
+[`../F2_BOUNDARY_HANDOFF.md`](../F2_BOUNDARY_HANDOFF.md).
+The final command checks the forced chain, terminal normalization, and live
+character profile `P={1,4}`, `Q={0,1,3}` modulo five.  The coarse-bridge
+obstruction is in
+[`../AFFINE_SUPPORT_NEWTON_BRIDGE.md`](../AFFINE_SUPPORT_NEWTON_BRIDGE.md).
+
 The log-boundary and Poisson-square prefilters are:
 
 ```bash
 .venv/bin/python plane-jc/cas/test_intrinsic_a2_boundary.py
 .venv/bin/python plane-jc/cas/test_plane_boundary_exclusion.py
 .venv/bin/python plane-jc/cas/test_finite_normalization_signatures.py
+.venv/bin/python plane-jc/cas/verify_unibranch_spectator_models.py
 .venv/bin/python plane-jc/cas/test_log_boundary_compiler.py
 .venv/bin/python plane-jc/cas/test_poisson_square_rigidity.py
 .venv/bin/python plane-jc/cas/log_boundary_compiler.py --frontier-72-108
@@ -73,6 +134,14 @@ minimum is one two-branch singularity, with complexity `(1,2,1,2)`;
 arbitrary conductor remains possible through branch tangency, but the two
 normalization points now activate the finite-flat packet inequality
 `d>=2e`, equivalently `a>=e` for one residue-degree-one boundary row.
+The unibranch-spectator replay tests the proposed direct local exclusion.
+For every `n>=3` it verifies the finite-free rank-`n+1` map
+`(T,u)->(u,T^(n+1)-T^n+u*T)`, whose singular unibranch fiber has a
+length-`n` boundary point and a reduced étale spectator.  The packet
+saturates Orevkov's Euler budget.  Its exact failure is global: deleting the
+ramification curve gives `A1 x G_m`, with a nonconstant unit, rather than
+the Keller open `A2`.  See
+[`../UNIBRANCH_SPECTATOR_COUNTERMODELS.md`](../UNIBRANCH_SPECTATOR_COUNTERMODELS.md).
 The next command turns certified monomial branch
 scales into regular toroidal
 blowups, a proximity graph, complete boundary and intersection matrices,
@@ -205,11 +274,13 @@ The exact forced F2 `j=1` skeleton and its machine-readable residual
 obligations are tested separately:
 
 ```bash
+.venv/bin/python plane-jc/cas/classify_f2_75_125_layers.py
 python3 plane-jc/cas/test_f2_75_125_frontend.py
 python3 plane-jc/cas/f2_75_125_frontend.py
 ```
 
-The second command emits JSON.  Its `frontend_complete` field is intentionally
+The first command replays the exact 35-layer B0 envelope.  The final command
+emits JSON.  Its `frontend_complete` field is intentionally
 false until the lower Laurent boundary has been classified exhaustively.
 
 The source reconciliation for the repeated-tail `(96,144)` row is:

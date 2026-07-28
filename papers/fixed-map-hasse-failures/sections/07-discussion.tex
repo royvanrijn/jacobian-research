@@ -1,0 +1,67 @@
+\section{Discussion}
+
+The prescribed-fiber theorem made the first Hasse example almost automatic:
+start with an intersective polynomial and compile its finite \'etale algebra
+into a full Keller fiber.  That flexibility also concealed the next
+question.  If the construction is allowed to absorb the polynomial into the
+map, it says nothing about how many arithmetic behaviors one map can carry.
+
+The present argument began when those two roles were separated.  The map
+should remember only the fixed quintic shape; the target should remember the
+parameter.  The quantifier change is small to write and substantial in
+effect:
+\[
+\begin{array}{c|c|c}
+ &\text{map}&\text{fiber algebra}\\ \hline
+\text{prescribed fibers}&\text{varies}&\text{arbitrary of rank }\ge3\\
+\text{this paper}&\text{fixed}&
+ \Q[X]/((X^3-a)(X^2+X+1)),\ a\in\mathcal A.
+\end{array}
+\tag{7.1}
+\]
+
+Two observations make the fixed row possible.  The first is geometric:
+after the translation \(X=S-\tfrac12\), the quadratic
+\(X^2+X+1\) becomes \(S^2+\tfrac34\).  The parameter \(a\) then moves
+only the quadratic and constant coefficients, which are exactly the two
+free coefficients of the quadratic-gauge target pencil.  The second is
+arithmetic: once the local proof is written place by place, primality is
+nowhere essential.  The congruence-and-support core is multiplicatively
+closed; removing its perfect cubes leaves the admissible family.  The
+count grows from the prime scale \(B/\log B\) to
+\(B/\sqrt{\log B}\).
+
+There is also a useful warning in the construction.  The target line is
+exceptional from the viewpoint of generic monodromy.  Every inverse
+polynomial on it has the same quadratic-times-cubic factorization.  This is
+not an accidental defect: the factorization is what lets one component
+supply local points precisely where the other does not.  The deterministic
+local behavior on the line therefore says little about the distribution of
+local points on the ambient three-dimensional target.
+
+The exact scope is equally important.  Theorem~\ref{thm:count-intro} counts
+one sufficient multiplicative family.  It does not classify all Hasse
+failures on the line, and still less all Hasse-failing fibers of the map.
+A converse local analysis would have to decide which arbitrary rational
+parameters make at least one of the two factors soluble at every place.
+Integral source points introduce another layer: a local root of the inverse
+polynomial need not reconstruct to an integral source point without further
+valuation control.
+
+What the paper does establish is a clean progression.  What began with one
+stubborn quintic ends with a more generous picture: the classical example is
+the first visible point on a rational target line belonging to one
+Jacobian-one map of the smallest possible geometric degree.  A half-unit
+translation reveals the line, a place-by-place proof reveals the
+multiplicative family, and the arithmetic itself explains why degree five is
+minimal.  These are small observations individually, but together they turn
+an example into a landscape.
+
+\paragraph{Provenance and AI assistance.}
+The arithmetic polynomial at \(a=19\) is due to Berend and Bilu
+\cite{BerendBilu}.  The fixed-map construction is obtained by specializing
+the quadratic-gauge prescribed-fiber mechanism of \cite{vanRijnFibers}.
+
+I used generative AI tools during exploration, symbolic-checker development,
+proof review, literature search, and manuscript editing.  I checked the
+stated mathematical claims and take responsibility for the paper.

@@ -2,6 +2,16 @@
 
 ## Status
 
+The support-bounded theorem chain is
+
+\[
+ \texttt{HC5T1}\longrightarrow\texttt{HC4MQ1}
+ \longrightarrow\texttt{HC4MCK}.
+\]
+
+It is now subsumed by the dense mixed-degree theorem `HC4CQ1` in
+[`HC4_MENG_DENSE_CUBIC_QUARTIC.md`](HC4_MENG_DENSE_CUBIC_QUARTIC.md).
+
 After the unit-pivot nonlinear descent in
 [the toric audit](HC5_NONLINEAR_TORIC_DESCENT.md), no homogeneous quartic
 vertical-Hamiltonian correction supported on at most four monomials both
@@ -10,18 +20,24 @@ determinant.  The same remains true after adjoining an arbitrary scalar
 multiple of one cubic monomial or an arbitrary linear combination of two
 cubic monomials.
 
-An exact characteristic-zero continuation also excludes all corrections
-supported on three cubic monomials.  It reconstructs the 234 quartics over
-\(\mathbb Q\), repeats the odd-layer rank calculation over \(\mathbb Q\),
-and proves that every remaining rational determinant ideal is a unit ideal.
-An additional exact characteristic-zero continuation excludes support four.
-It reproduces the finite-field rank census over \(\mathbb Q\) and proves
-that every remaining rational determinant gcd or Gröbner ideal is a unit.
+Exact characteristic-zero continuations first exclude cubic supports three
+and four, then parameterize the complete odd-layer kernel inside the full
+20-dimensional cubic space.  Descending spatial-coefficient ideals prove
+that no arbitrary homogeneous cubic correction works for any of the 234
+quartic principal parts.
 
-This is a bounded-support obstruction, not a proof of `HC_4`.  It does not
-exclude dense quartics, cubic supports of size at least four, quadratic
-renormalizations, degree at least six, or non-coordinate coisotropic
-embeddings.
+The support-three and support-four theorems `HC4MC3` and `HC4MC4` remain
+proved exact checkpoints.  `HC4MCK` subsumes them, and `HC4CQ1` in turn
+subsumes `HC4MCK`.  Sections 3--7 record useful independent coefficient
+regressions; they are not prerequisites for the dense structural theorem.
+
+This bounded-support chain is not a proof of `HC_4`.  Section 8 separately
+closes the complete 35-dimensional homogeneous quartic chart, including
+arbitrary nondegenerate quadratic renormalizations, by reducing it to the
+de Bondt--van den Essen theorem for homogeneous symmetric-Jacobian maps.
+Mixed homogeneous degrees, corrections beyond the sextic support bounds
+recorded in the companion audit, and non-coordinate coisotropic embeddings
+remain open.
 
 ## 1. Collision-first normalization
 
@@ -240,28 +256,241 @@ for ranks three, two, one, and zero are respectively five, seven, eight, and
 eleven.  Thus cubic support four is excluded in characteristic zero, without
 a denominator-lifting caveat.
 
-## 7. Remaining search space
+## 7. Full cubic kernel over \(\mathbb Q\)
+
+Support-by-support enumeration is unnecessary after Section 6.  For each of
+the 234 quartics, form the complete ten-row odd determinant signature on the
+20-dimensional cubic coefficient space.  The exact ranks and kernel
+dimensions are
+
+\[
+\begin{array}{c|r|r}
+\text{quartics}&\text{odd rank}&\text{kernel dimension}\\ \hline
+229&8&12\\
+1&7&13\\
+4&4&16.
+\end{array}
+\]
+
+The four rank-four quartics factor as \(u^3L\), where \(u\) is one of the
+four coordinates and \(L\) is linear.  Their odd kernel is the complete
+\(H_0\)-harmonic cubic space.  In coordinates paired by
+\[
+\partial_y\partial_r+\tfrac12\partial_x\partial_s,
+\]
+the checker uses the triangular chart
+\[
+h_3=a+u b+u^2c+u^3d
+\]
+and obtains \(b,c\) by integrating the harmonic equation along the variable
+paired with \(u\).
+
+For every kernel, the checker computes
+\[
+\det\operatorname{Hess}(\psi_0+h_4+h_3)-64
+\]
+symbolically, extracts all spatial coefficient polynomials, clears rational
+denominators, and sends the coefficient ideals to Singular in descending
+spatial degree.  The first unit layers are
+
+\[
+\begin{array}{c|r}
+\text{first unit layer}&\text{quartics}\\ \hline
+6&62\\
+5&16\\
+4&156.
+\end{array}
+\]
+
+Thus every full cubic-kernel determinant ideal is the unit ideal over
+\(\mathbb Q\).  No homogeneous cubic correction, sparse or dense, completes
+the Meng descent when the collision quartic is supported on at most four
+monomials.
+
+## 8. Complete homogeneous quartic chart
+
+This correction space is also a nonlinear mixed Schur ansatz.  At the
+nonzero critical level \(\sigma=-19/2\), make the triangular pivot
+translation
+
+\[
+ T=t+H(x,y,r,s).
+\]
+
+The partial Legendre reduction in \(T\) differs from the old reduction by
+\(-\sigma H\).  Thus every quartic \(h_4\) below is realized by taking
+\(H=-h_4/\sigma\); it is not merely an unrelated deformation of the
+four-variable potential.
+
+Decompose a homogeneous quartic according to its degree in the base
+variables \(x,y\) and dual variables \(r,s\):
+
+\[
+ h_4=\sum_{a=0}^4 h_{a,4-a}.
+\]
+
+All five summands are now allowed simultaneously, giving all 35 homogeneous
+quartic monomials.  Put
+
+\[
+ \psi=\psi_0+h_4=2yr+4xs+h_4.
+\]
+
+Over \(\mathbb C\), the explicit linear substitution
+
+\[
+\begin{aligned}
+x&=(z_1+iz_2)/\sqrt8,&s&=(z_1-iz_2)/\sqrt8,\\
+y&=(z_3+iz_4)/2,&r&=(z_3-iz_4)/2
+\end{aligned}
+\]
+
+sends the quadratic term to
+
+\[
+ \frac12(z_1^2+z_2^2+z_3^2+z_4^2).
+\]
+
+Consequently the transformed gradient has the form
+
+\[
+ F(z)=z+\nabla\widetilde h_4(z),                       \tag{8.1}
+\]
+
+where \(\nabla\widetilde h_4\) is homogeneous cubic and \(JF\) is symmetric.
+If \(\det\operatorname{Hess}\psi\) is a nonzero constant, then \(F\) is a
+Keller map.  The dimension-four theorem of
+[de Bondt and van den Essen](https://doi.org/10.1016/S0022-4049(03)00223-8)
+therefore makes \(F\) a polynomial automorphism.  An invertible linear
+change transports equality of gradients and distinctness of points, so the
+Meng collision cannot survive.
+
+The same argument starts from any nondegenerate quadratic form: over an
+algebraic closure its Hessian is congruent to the identity.  Thus arbitrary
+quadratic renormalizations do not reopen a homogeneous quartic chart.
+
+> **Complete homogeneous-quartic obstruction.**  In four variables, no
+> nondegenerate quadratic potential plus an arbitrary homogeneous quartic
+> can have constant nonzero Hessian determinant and a gradient collision.
+
+This is theorem `HC4HQ1`.  It uses the cited low-dimensional theorem as an
+external structural input; it is not a new proof of that theorem.
+
+### Independent dense mixed regression
+
+Before invoking the complete theorem, an exact coefficient calculation
+closed the genuinely mixed space
+
+\[
+ h_{1,3}+h_{2,2}+h_{3,1}
+\]
+
+has dimension \(8+9+8=25\).  This is a dense coefficient space, not a
+support-bounded search.  Two one-sided enlargements have dimension 30:
+adjoin either the arbitrary pure-base term \(h_{4,0}\) or the arbitrary
+pure-dual term \(h_{0,4}\).
+
+For each of these three spaces, impose the collision equation
+
+\[
+ \nabla h_4(p)=-H_0p
+\]
+
+and the spatial-degree-two part of the determinant identity,
+
+\[
+ \operatorname{tr}\!\left(
+   \operatorname{adj}(H_0)\operatorname{Hess}(h_4)
+ \right)=0.                                           \tag{8.2}
+\]
+
+The combined linear system has rank 14.  It leaves respectively 11, 16, and
+16 parameters.  After this exact substitution, the remaining spatial
+coefficient ideals of
+
+\[
+ \det\operatorname{Hess}(\psi_0+h_4)-64
+\]
+
+have 262, 273, and 273 generators.  Singular computes the unit ideal over
+\(\mathbb Q\) in all three cases.  Therefore:
+
+> **Dense mixed-quartic regression.**  No homogeneous quartic correction
+> containing arbitrary mixed bidegrees \((1,3),(2,2),(3,1)\), with either
+> pure sector also allowed arbitrarily, retains the normalized Meng
+> collision and has constant nonzero Hessian determinant.
+
+That coefficient theorem is `HC4MDQ`.  Its calculation does not allow
+\(h_{4,0}\) and \(h_{0,4}\) simultaneously, but `HC4HQ1` subsumes it and
+closes their interaction.
+
+## 9. Remaining search space
 
 A homogeneous correction of odd degree cannot change the gradient
-difference between \(p\) and \(-p\), because its gradient is even.  The next
-homogeneous collision-carrying layer is therefore degree six.  Within the
-quartic chart, the next bounded-support extension has at least five cubic
-monomials.  A better next calculation is the full odd-layer kernel for each
-quartic, where principal-part cancellation can replace further
-support-by-support enumeration.
+difference between \(p\) and \(-p\), because its gradient is even.  It can,
+however, interact with a quartic in the Hessian determinant.  The complete
+cubic--quartic interaction is now excluded without a support restriction by
+`HC4CQ1`.  The older `HC4MCK` coefficient theorem remains an independent
+exact regression over the 234 sparse quartic principal parts.
 
-Dense quartic supports and quadratic renormalizations also remain outside
-the present bounded-support theorem.
+The next homogeneous collision-carrying layer is degree six.
+
+The parallel
+[sparse sextic audit](HC4_MENG_SPARSE_SEXTIC_AUDIT.md) excludes every
+sextic-only collision carrier supported on at most four monomials.  Its
+mixed theorem `HC4MQS6` also excludes every zero-gradient sextic of that
+support size over the 234 quartic principal parts treated here.  The joint
+theorem `HC4JQS4` allows sextic terms alongside every quartic component
+within combined support four and excludes every such genuinely mixed
+correction.  The later theorem `HC4E46` in
+[`HC4_SOURCE_DUAL_BIGRADING.md`](HC4_SOURCE_DUAL_BIGRADING.md) removes
+this support bound and closes the full homogeneous degrees \(4+6\).
+
+Thus the pure homogeneous quartic chart, its quadratic renormalizations,
+the full mixed degrees \(3+4\), and the full mixed degrees \(4+6\) are
+closed.  The remaining coordinate-chart problem begins with simultaneous
+cubic and sextic interaction, including degrees \(3+4+6\), followed by
+non-coordinate coisotropic embeddings.
 
 ## Reproduction
 
-Run:
+The shortest exact replay of the canonical chain is:
 
 ```bash
+.venv/bin/python scripts/verify_hc5_nonlinear_toric_descent.py
 .venv/bin/python scripts/verify_hc4_meng_sparse_quartic_obstruction.py
+.venv/bin/python scripts/verify_hc4_meng_full_cubic_kernel.py
 ```
 
-Continue through three cubic monomials over the certificate field with:
+The last command requires `Singular` on `PATH`.
+
+Verify the exact reduction of the complete homogeneous quartic chart to the
+de Bondt--van den Essen theorem with:
+
+```bash
+.venv/bin/python scripts/verify_hc4_meng_full_quartic_reduction.py
+```
+
+Check the complete dense cubic--quartic reduction with:
+
+```bash
+.venv/bin/python \
+  scripts/verify_hc4_meng_dense_cubic_quartic_reduction.py
+```
+
+Check the dense mixed-quartic theorem, including its two one-sided pure
+enlargements, with:
+
+```bash
+.venv/bin/python scripts/verify_hc4_meng_dense_mixed_quartic.py
+```
+
+This command also requires `Singular` on `PATH`.
+
+The following support-three and support-four commands are retained as
+targeted historical regressions; they are not prerequisites for the
+full-kernel checker.  Check three cubic monomials over the certificate field
+with:
 
 ```bash
 .venv/bin/python scripts/verify_hc4_meng_three_cubic_rank_gate.py

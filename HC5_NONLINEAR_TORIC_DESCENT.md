@@ -203,7 +203,77 @@ automorphism.  No collision can survive anywhere in this class.
 The missing search space is therefore genuinely non-toric: a successful
 descent must use a symplectic change whose reduced two-variable coefficient
 map is not radial, or leave the coordinate-graph/linear-in-two-duals model
-altogether.
+altogether.  The first bounded non-toric class is treated next.
+
+## 5. Bounded non-toric relative corrections
+
+Keep the natural complementary coefficient row
+
+\[
+\beta(x,y)=\bigl(-yP(xy),\,xQ(xy)\bigr)                \tag{5.1}
+\]
+
+from Section 2, and let
+
+\[
+C(x,y)\in \operatorname{SL}_2(\mathbb Q[x,y]),\qquad
+G=\beta C.                                             \tag{5.2}
+\]
+
+After the unit-pivot elimination, the corrected four-variable potential has
+the form
+
+\[
+\psi=f(x,y)+2G_1(x,y)r+2G_2(x,y)s.                    \tag{5.3}
+\]
+
+For an arbitrary upper-left Hessian block, the block determinant identity is
+
+\[
+\boxed{\det\operatorname{Hess}\psi=16(\det DG)^2.}     \tag{5.4}
+\]
+
+Thus constant nonzero Hessian determinant requires \(\det DG\) to be a
+nonzero constant.  The known collision bases are
+
+\[
+p_+=(1,-3/2),\qquad p_-=(-1,3/2),                     \tag{5.5}
+\]
+
+so retaining the collision additionally requires \(G(p_+)=G(p_-)\).
+
+Take all four entries of \(C\) to be arbitrary polynomials of total degree
+at most four.  This gives sixty coefficients.  Exact coefficient extraction
+produces:
+
+- 45 equations from \(\det C=1\);
+- 218 equations from the nonconstant spatial coefficients of \(\det DG\).
+
+The resulting 263-equation ideal over \(\mathbb Q\) has Gröbner basis
+\(\{1\}\).  In particular, this class fails before the two collision
+equations are imposed:
+
+> **Degree-four non-toric correction obstruction.**  No polynomial
+> relative \(SL_2\) correction whose entries have total degree at most four
+> can make the descended Hessian determinant a nonzero constant.
+
+There is a complementary perturbative test at the known degree-ten toric
+correction \(C_0\), for which \(\beta C_0=(y,2x)\).  Appending an arbitrary
+affine \(D(x,y)\in SL_2\) gives twelve parameters.  The determinant-one,
+constant-Jacobian, and two collision equations again generate the unit
+ideal.  Hence no affine non-toric perturbation of \(C_0\) restores the
+collision while retaining constant determinant.
+
+These are bounded obstructions, not an all-degree theorem.  Quadratic and
+higher perturbations of \(C_0\), raw corrections of degree at least five,
+general nonlinear changes mixing base and dual variables, and non-coordinate
+coisotropic embeddings remain open.  The complete homogeneous-quartic mixed
+pivot class, including simultaneous pure-base and pure-dual sectors, is
+excluded separately by theorem `HC4HQ1` in
+[the sparse-quartic audit](HC4_MENG_SPARSE_QUARTIC_AUDIT.md).  The first two
+open relative-correction classes already contain genuine
+constant-determinant solutions, so their Gröbner systems are substantially
+harder than the degree-four raw correction ideal.
 
 ## Reproduction
 
@@ -211,4 +281,5 @@ Run:
 
 ```bash
 .venv/bin/python scripts/verify_hc5_nonlinear_toric_descent.py
+.venv/bin/python scripts/verify_hc4_nontoric_sl2_correction_degree4.py
 ```

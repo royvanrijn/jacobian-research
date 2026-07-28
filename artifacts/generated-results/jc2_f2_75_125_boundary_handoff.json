@@ -1,0 +1,903 @@
+{
+  "common_edge": {
+    "R": "a*v^2+b*v+(1/25-a-b)",
+    "common_edge_polynomial": "C0(u)=(u-1)^5*(u^5-1)^2*R(u^5)",
+    "degree": 25,
+    "fixed_centers": {
+      "nontrivial_fifth_roots_of_unity": {
+        "center_count": 4,
+        "contact_multiplicity_each": 2
+      },
+      "u=1": {
+        "contact_multiplicity": 7
+      }
+    },
+    "no_collision_with_R_roots": "R(1)=1/25 != 0",
+    "u_coordinate": "u=1+t"
+  },
+  "root_strata": [
+    {
+      "R_root_type": "two distinct nonzero roots",
+      "center_count": 15,
+      "conditional_normalization_surrogate": {
+        "all_centers_one_fiber_packet_budget": {
+          "affine_degree": 1,
+          "generic_boundary_degree": 25,
+          "generic_degree": 26,
+          "length_deficit": -1,
+          "minimum_affine_degree": 0,
+          "minimum_packet_length": 25,
+          "transverse_indices": [
+            7,
+            2,
+            2,
+            2,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "verdict": "fiber length permits this packet; further data are required"
+        },
+        "assumption_not_proved": "each edge center is a distinct residue-degree-one normalization boundary prime with transverse index equal to contact multiplicity",
+        "coarse_signature": {
+          "affine_degree": 1,
+          "boundary_degree": 25,
+          "boundary_rows_e_f_s": [
+            [
+              7,
+              1,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          "generic_degree": 26,
+          "residue_immersive_compatible": true
+        },
+        "outcome": "even the strongest naive promotion survives the arithmetic packet budget, while the typed audit correctly remains incomplete",
+        "typed_target_ledger_audit": {
+          "affine_degree": 1,
+          "degree_identity_holds": true,
+          "expected_generic_degree": 26,
+          "generic_boundary_degree": 25,
+          "generic_degree": 26,
+          "name": "unsupported surrogate: two_distinct_nonzero_R_roots",
+          "packet_audits": [
+            {
+              "applicable": false,
+              "length_deficit": -1,
+              "minimum_packet_length": 25,
+              "name": "all_edge_centers_in_one_target_fiber",
+              "point_names": [
+                "p1",
+                "p2",
+                "p3",
+                "p4",
+                "p5",
+                "p6",
+                "p7",
+                "p8",
+                "p9",
+                "p10",
+                "p11",
+                "p12",
+                "p13",
+                "p14",
+                "p15"
+              ],
+              "reasons": [
+                "the listed points are not certified to lie in one target fiber",
+                "residue immersion is missing at p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15",
+                "source dicriticals have not been transferred to the finite normalization over the original target",
+                "the generic boundary and affine pullback ledger is not exhaustive"
+              ],
+              "status": "incomplete",
+              "transverse_indices": [
+                7,
+                2,
+                2,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ]
+            }
+          ],
+          "reasons": [
+            "source dicriticals have not been transferred to the finite normalization over the original target",
+            "the generic boundary and affine pullback ledger is not exhaustive"
+          ],
+          "status": "incomplete"
+        }
+      },
+      "conditions": [
+        "c != 0",
+        "Delta != 0"
+      ],
+      "contact_partition": [
+        7,
+        2,
+        2,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "name": "two_distinct_nonzero_R_roots",
+      "witness_a": "1/100",
+      "witness_b": "0"
+    },
+    {
+      "R_root_type": "one double nonzero root",
+      "center_count": 10,
+      "conditional_normalization_surrogate": {
+        "all_centers_one_fiber_packet_budget": {
+          "affine_degree": 1,
+          "generic_boundary_degree": 25,
+          "generic_degree": 26,
+          "length_deficit": -1,
+          "minimum_affine_degree": 0,
+          "minimum_packet_length": 25,
+          "transverse_indices": [
+            7,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "verdict": "fiber length permits this packet; further data are required"
+        },
+        "assumption_not_proved": "each edge center is a distinct residue-degree-one normalization boundary prime with transverse index equal to contact multiplicity",
+        "coarse_signature": {
+          "affine_degree": 1,
+          "boundary_degree": 25,
+          "boundary_rows_e_f_s": [
+            [
+              7,
+              1,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ]
+          ],
+          "generic_degree": 26,
+          "residue_immersive_compatible": true
+        },
+        "outcome": "even the strongest naive promotion survives the arithmetic packet budget, while the typed audit correctly remains incomplete",
+        "typed_target_ledger_audit": {
+          "affine_degree": 1,
+          "degree_identity_holds": true,
+          "expected_generic_degree": 26,
+          "generic_boundary_degree": 25,
+          "generic_degree": 26,
+          "name": "unsupported surrogate: one_double_nonzero_R_root",
+          "packet_audits": [
+            {
+              "applicable": false,
+              "length_deficit": -1,
+              "minimum_packet_length": 25,
+              "name": "all_edge_centers_in_one_target_fiber",
+              "point_names": [
+                "p1",
+                "p2",
+                "p3",
+                "p4",
+                "p5",
+                "p6",
+                "p7",
+                "p8",
+                "p9",
+                "p10"
+              ],
+              "reasons": [
+                "the listed points are not certified to lie in one target fiber",
+                "residue immersion is missing at p1, p2, p3, p4, p5, p6, p7, p8, p9, p10",
+                "source dicriticals have not been transferred to the finite normalization over the original target",
+                "the generic boundary and affine pullback ledger is not exhaustive"
+              ],
+              "status": "incomplete",
+              "transverse_indices": [
+                7,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2
+              ]
+            }
+          ],
+          "reasons": [
+            "source dicriticals have not been transferred to the finite normalization over the original target",
+            "the generic boundary and affine pullback ledger is not exhaustive"
+          ],
+          "status": "incomplete"
+        }
+      },
+      "conditions": [
+        "c != 0",
+        "Delta = 0"
+      ],
+      "contact_partition": [
+        7,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "name": "one_double_nonzero_R_root",
+      "witness_a": "1/25",
+      "witness_b": "-4/25"
+    },
+    {
+      "R_root_type": "one zero root and one nonzero simple root",
+      "center_count": 11,
+      "conditional_normalization_surrogate": {
+        "all_centers_one_fiber_packet_budget": {
+          "affine_degree": 1,
+          "generic_boundary_degree": 25,
+          "generic_degree": 26,
+          "length_deficit": -1,
+          "minimum_affine_degree": 0,
+          "minimum_packet_length": 25,
+          "transverse_indices": [
+            7,
+            5,
+            2,
+            2,
+            2,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "verdict": "fiber length permits this packet; further data are required"
+        },
+        "assumption_not_proved": "each edge center is a distinct residue-degree-one normalization boundary prime with transverse index equal to contact multiplicity",
+        "coarse_signature": {
+          "affine_degree": 1,
+          "boundary_degree": 25,
+          "boundary_rows_e_f_s": [
+            [
+              7,
+              1,
+              1
+            ],
+            [
+              5,
+              1,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          "generic_degree": 26,
+          "residue_immersive_compatible": true
+        },
+        "outcome": "even the strongest naive promotion survives the arithmetic packet budget, while the typed audit correctly remains incomplete",
+        "typed_target_ledger_audit": {
+          "affine_degree": 1,
+          "degree_identity_holds": true,
+          "expected_generic_degree": 26,
+          "generic_boundary_degree": 25,
+          "generic_degree": 26,
+          "name": "unsupported surrogate: zero_and_nonzero_simple_R_roots",
+          "packet_audits": [
+            {
+              "applicable": false,
+              "length_deficit": -1,
+              "minimum_packet_length": 25,
+              "name": "all_edge_centers_in_one_target_fiber",
+              "point_names": [
+                "p1",
+                "p2",
+                "p3",
+                "p4",
+                "p5",
+                "p6",
+                "p7",
+                "p8",
+                "p9",
+                "p10",
+                "p11"
+              ],
+              "reasons": [
+                "the listed points are not certified to lie in one target fiber",
+                "residue immersion is missing at p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11",
+                "source dicriticals have not been transferred to the finite normalization over the original target",
+                "the generic boundary and affine pullback ledger is not exhaustive"
+              ],
+              "status": "incomplete",
+              "transverse_indices": [
+                7,
+                5,
+                2,
+                2,
+                2,
+                2,
+                1,
+                1,
+                1,
+                1,
+                1
+              ]
+            }
+          ],
+          "reasons": [
+            "source dicriticals have not been transferred to the finite normalization over the original target",
+            "the generic boundary and affine pullback ledger is not exhaustive"
+          ],
+          "status": "incomplete"
+        }
+      },
+      "conditions": [
+        "c = 0",
+        "b != 0"
+      ],
+      "contact_partition": [
+        7,
+        5,
+        2,
+        2,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "name": "zero_and_nonzero_simple_R_roots",
+      "witness_a": "1/100",
+      "witness_b": "3/100"
+    },
+    {
+      "R_root_type": "one double root at zero",
+      "center_count": 6,
+      "conditional_normalization_surrogate": {
+        "all_centers_one_fiber_packet_budget": {
+          "affine_degree": 1,
+          "generic_boundary_degree": 25,
+          "generic_degree": 26,
+          "length_deficit": -1,
+          "minimum_affine_degree": 0,
+          "minimum_packet_length": 25,
+          "transverse_indices": [
+            10,
+            7,
+            2,
+            2,
+            2,
+            2
+          ],
+          "verdict": "fiber length permits this packet; further data are required"
+        },
+        "assumption_not_proved": "each edge center is a distinct residue-degree-one normalization boundary prime with transverse index equal to contact multiplicity",
+        "coarse_signature": {
+          "affine_degree": 1,
+          "boundary_degree": 25,
+          "boundary_rows_e_f_s": [
+            [
+              10,
+              1,
+              1
+            ],
+            [
+              7,
+              1,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ]
+          ],
+          "generic_degree": 26,
+          "residue_immersive_compatible": true
+        },
+        "outcome": "even the strongest naive promotion survives the arithmetic packet budget, while the typed audit correctly remains incomplete",
+        "typed_target_ledger_audit": {
+          "affine_degree": 1,
+          "degree_identity_holds": true,
+          "expected_generic_degree": 26,
+          "generic_boundary_degree": 25,
+          "generic_degree": 26,
+          "name": "unsupported surrogate: double_zero_R_root",
+          "packet_audits": [
+            {
+              "applicable": false,
+              "length_deficit": -1,
+              "minimum_packet_length": 25,
+              "name": "all_edge_centers_in_one_target_fiber",
+              "point_names": [
+                "p1",
+                "p2",
+                "p3",
+                "p4",
+                "p5",
+                "p6"
+              ],
+              "reasons": [
+                "the listed points are not certified to lie in one target fiber",
+                "residue immersion is missing at p1, p2, p3, p4, p5, p6",
+                "source dicriticals have not been transferred to the finite normalization over the original target",
+                "the generic boundary and affine pullback ledger is not exhaustive"
+              ],
+              "status": "incomplete",
+              "transverse_indices": [
+                10,
+                7,
+                2,
+                2,
+                2,
+                2
+              ]
+            }
+          ],
+          "reasons": [
+            "source dicriticals have not been transferred to the finite normalization over the original target",
+            "the generic boundary and affine pullback ledger is not exhaustive"
+          ],
+          "status": "incomplete"
+        }
+      },
+      "conditions": [
+        "c = 0",
+        "b = 0",
+        "a = 1/25"
+      ],
+      "contact_partition": [
+        10,
+        7,
+        2,
+        2,
+        2,
+        2
+      ],
+      "name": "double_zero_R_root",
+      "witness_a": "1/25",
+      "witness_b": "0"
+    }
+  ],
+  "scale_nonuniqueness": {
+    "consequence": "an F2 contact multiplicity cannot be used as a branch scale, ramification index, residue degree, or puncture count",
+    "records": [
+      {
+        "contact_multiplicity": 1,
+        "same_edge_different_scales": [
+          {
+            "germ": "g_1(s,z)=s^1+z^1",
+            "primitive_equality_ray_z_s": [
+              1,
+              1
+            ],
+            "restriction_at_z_zero": "s^1"
+          },
+          {
+            "germ": "g_2(s,z)=s^1+z^2",
+            "primitive_equality_ray_z_s": [
+              1,
+              2
+            ],
+            "restriction_at_z_zero": "s^1"
+          },
+          {
+            "germ": "g_3(s,z)=s^1+z^3",
+            "primitive_equality_ray_z_s": [
+              1,
+              3
+            ],
+            "restriction_at_z_zero": "s^1"
+          }
+        ]
+      },
+      {
+        "contact_multiplicity": 2,
+        "same_edge_different_scales": [
+          {
+            "germ": "g_1(s,z)=s^2+z^1",
+            "primitive_equality_ray_z_s": [
+              2,
+              1
+            ],
+            "restriction_at_z_zero": "s^2"
+          },
+          {
+            "germ": "g_2(s,z)=s^2+z^2",
+            "primitive_equality_ray_z_s": [
+              1,
+              1
+            ],
+            "restriction_at_z_zero": "s^2"
+          },
+          {
+            "germ": "g_3(s,z)=s^2+z^3",
+            "primitive_equality_ray_z_s": [
+              2,
+              3
+            ],
+            "restriction_at_z_zero": "s^2"
+          }
+        ]
+      },
+      {
+        "contact_multiplicity": 5,
+        "same_edge_different_scales": [
+          {
+            "germ": "g_1(s,z)=s^5+z^1",
+            "primitive_equality_ray_z_s": [
+              5,
+              1
+            ],
+            "restriction_at_z_zero": "s^5"
+          },
+          {
+            "germ": "g_2(s,z)=s^5+z^2",
+            "primitive_equality_ray_z_s": [
+              5,
+              2
+            ],
+            "restriction_at_z_zero": "s^5"
+          },
+          {
+            "germ": "g_3(s,z)=s^5+z^3",
+            "primitive_equality_ray_z_s": [
+              5,
+              3
+            ],
+            "restriction_at_z_zero": "s^5"
+          }
+        ]
+      },
+      {
+        "contact_multiplicity": 7,
+        "same_edge_different_scales": [
+          {
+            "germ": "g_1(s,z)=s^7+z^1",
+            "primitive_equality_ray_z_s": [
+              7,
+              1
+            ],
+            "restriction_at_z_zero": "s^7"
+          },
+          {
+            "germ": "g_2(s,z)=s^7+z^2",
+            "primitive_equality_ray_z_s": [
+              7,
+              2
+            ],
+            "restriction_at_z_zero": "s^7"
+          },
+          {
+            "germ": "g_3(s,z)=s^7+z^3",
+            "primitive_equality_ray_z_s": [
+              7,
+              3
+            ],
+            "restriction_at_z_zero": "s^7"
+          }
+        ]
+      },
+      {
+        "contact_multiplicity": 10,
+        "same_edge_different_scales": [
+          {
+            "germ": "g_1(s,z)=s^10+z^1",
+            "primitive_equality_ray_z_s": [
+              10,
+              1
+            ],
+            "restriction_at_z_zero": "s^10"
+          },
+          {
+            "germ": "g_2(s,z)=s^10+z^2",
+            "primitive_equality_ray_z_s": [
+              5,
+              1
+            ],
+            "restriction_at_z_zero": "s^10"
+          },
+          {
+            "germ": "g_3(s,z)=s^10+z^3",
+            "primitive_equality_ray_z_s": [
+              10,
+              3
+            ],
+            "restriction_at_z_zero": "s^10"
+          }
+        ]
+      }
+    ],
+    "theorem": "the restriction g(s,0)=s^m does not determine the first nonzero normal order or the toroidal equality ray"
+  },
+  "schema": "plane-jc.f2-75-125-boundary-handoff.v1",
+  "software": {
+    "python": "standard library",
+    "sympy": "1.14.0"
+  },
+  "status": "exact-contact-classification-boundary-transfer-incomplete",
+  "typed_handoff": {
+    "certified": [
+      "the four exhaustive quadratic-R root strata",
+      "the number of distinct centers on the selected toric divisor",
+      "the contact multiplicity partition at those centers"
+    ],
+    "finite_normalization_packet_theorem_applicable": false,
+    "log_boundary_compiler_applicable": false,
+    "missing": [
+      "the first nonzero normal order at every center",
+      "certified toroidal branch scales and proximity centers",
+      "which resolved components are dicritical",
+      "target-boundary pullback multiplicities",
+      "finite-normalization transverse indices e and residue degrees f",
+      "puncture counts and grouping over target curves or closed fibers",
+      "the geometric degree and exhaustive affine-sheet ledger"
+    ]
+  },
+  "verdict": {
+    "closure_assessment": "the quadratic-R data do not close F2 through current boundary gates; lower normal terms are exactly the missing bridge",
+    "excluded_strata": [],
+    "recommended_pivot": "stop sequential F2 descent and seek a degree-independent theorem converting a common-power edge packet into target-side finite-normalization data",
+    "surviving_contact_partitions": [
+      [
+        7,
+        2,
+        2,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        7,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      [
+        7,
+        5,
+        2,
+        2,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        10,
+        7,
+        2,
+        2,
+        2,
+        2
+      ]
+    ]
+  }
+}

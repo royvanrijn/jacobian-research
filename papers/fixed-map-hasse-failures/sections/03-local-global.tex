@@ -1,0 +1,81 @@
+\section{The local-global calculation}\label{sec:local-global}
+
+The geometric work is now finished: the entire fiber is the root scheme of
+one displayed polynomial.  The remaining argument is arithmetic, and it is
+here that the factorization reveals why the family is so flexible.  The
+cubic and quadratic do not both need a root at every place.  They only need
+to cover all places between them.
+
+Fix \(a\in\mathcal A\) and write
+\[
+ f_a(X)=(X^3-a)(X^2+X+1).
+ \tag{3.1}
+\]
+The cubic has no rational root because \(a\) is not a cube, while the
+quadratic is irreducible because its discriminant is \(-3\).  Hence
+\(f_a\) has no rational root.  The fiber description
+\eqref{eq:main-fiber} then gives
+\[
+ \Phi^{-1}(y_a)(\Q)=\varnothing.
+ \tag{3.2}
+\]
+
+We now let the two factors divide the completions according to the residue
+class of the prime.
+
+\paragraph{The real place.}
+The polynomial \(X^3-a\) has the real root \(\sqrt[3]{a}\).
+
+\paragraph{The prime \(2\).}
+Every prime divisor of \(a\) is \(1\pmod3\), so \(a\) is odd.  Thus \(X=1\)
+is a root of \(X^3-a\) modulo \(2\), and its derivative \(3X^2\) is a
+\(2\)-adic unit.  Hensel's lemma supplies a root in \(\Z_2\).
+
+\paragraph{The prime \(3\).}
+Write \(a=1+9k\) and substitute \(X=1+3T\).  Then
+\[
+ X^3-a=9h(T),\qquad
+ h(T)=T+3T^2+3T^3-k.
+ \tag{3.3}
+\]
+Modulo \(3\),
+\[
+ h(T)\equiv T-k,\qquad h'(T)\equiv1.
+ \tag{3.4}
+\]
+The solution \(T\equiv k\pmod3\) lifts to a root in \(\Z_3\).
+
+\paragraph{All other primes.}
+Let \(p\ne2,3\).  If \(p\equiv1\pmod3\), then
+\(\F_p^\times\) contains a nontrivial cube root of unity.  It is a simple
+root of \(X^2+X+1\), so the quadratic has a root in \(\Q_p\).  This case
+includes every prime dividing \(a\).
+
+If \(p\equiv2\pmod3\), then \(p\nmid a\) and cubing is an automorphism of
+\(\F_p^\times\).  The polynomial \(X^3-a\) therefore has a nonzero root
+modulo \(p\).  Its derivative is nonzero, so the root lifts to \(\Q_p\).
+
+This exhausts all places and proves the local assertions of
+Theorem~\ref{thm:main}.  Notice that the same two factors alternate their
+role with the residue class of \(p\).  The condition \(a\equiv1\pmod9\) is
+needed only at \(3\); the prime-support condition controls the primes
+dividing \(a\).  This is why primality disappears from the theorem: the
+local proof remembers only a congruence and the support of \(a\).  That is
+the arithmetic surprise behind the larger family.
+
+\begin{remark}
+The first prime parameter is \(a=19\), giving the classical
+Berend--Bilu algebra \eqref{eq:berend-bilu}.  The first broader composite
+example is
+\(a=91=7\cdot13\).  The construction is therefore not merely a repackaging
+of primes in one arithmetic progression.
+\end{remark}
+
+\begin{remark}
+The reducibility of \(f_a\) is forced by the local condition.  A connected
+finite \'etale \(\Q\)-scheme of degree greater than one has a transitive
+Galois action containing a derangement.  Chebotarev then gives an unramified
+prime at which the scheme has no point.  Hasse-failing zero-dimensional
+schemes must consequently have at least two arithmetic components; see
+Sonn \cite{Sonn} for the corresponding subgroup-covering formulation.
+\end{remark}

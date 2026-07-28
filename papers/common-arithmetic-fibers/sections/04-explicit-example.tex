@@ -1,9 +1,17 @@
 \section{An explicit arithmetic fiber}\label{sec:example}
 
+\input{../../artifacts/generated-results/common_arithmetic_fibers_explicit_quintic.tex}
+
+It is useful to watch the general mechanism act on one familiar piece of
+arithmetic.  The example below is not needed for the theorem, but it makes
+the promise of ``preserving the algebra itself'' visible: an everywhere
+locally soluble algebra with no rational point enters the construction and
+emerges as the complete fiber of an explicit Keller map.
+
 Consider the squarefree quintic
 \[
- P_5(T)=(T^3-19)(T^2+T+1)
- =T^5+T^4+T^3-19T^2-19T-19.
+ P_5(T)=\CAFExplicitPolynomialFactorized
+ =\CAFExplicitPolynomialExpanded.
 \]
 Berend and Bilu introduced this polynomial in their study of polynomials
 having a root modulo every integer \cite{BerendBilu}.
@@ -25,30 +33,34 @@ p&\text{factor and approximate root}&\text{check}\\ \hline
 \end{array}
 \]
 
-We now realize this algebra by the formulas above.  The translation \(a=0\)
-is admissible, and
+We now feed this algebra into the formulas above.  No search is needed: the
+translation \(a=0\) is admissible, and
 \[
  G(S)=P_5(S)-P_5(0)
- =S^5+S^4+S^3-19S^2-19S.
+ =\CAFExplicitSeed.
 \]
 Thus \((g_1,g_2,g_3,g_4,g_5)=(-19,-19,1,1,1)\).  Put
 \[
- t=1+xy,\qquad q=t^2z-19y^2(1+3t),
+ t=\CAFExplicitT,\qquad q=\CAFExplicitQ,
 \]
 and define \(F=(F_1,F_2,F_3)\) by
 \begin{align}
- F_1={}&tq,\notag\\
- F_2={}&19y-3xq+38tq-4t^2x^2q^4-5t^2x^3q^5,\notag\\
- F_3={}&19x(5-3t)+x^3z+2(xq)^4+3(xq)^5.
+ F_1={}&\CAFExplicitFOne,\notag\\
+ F_2={}&\CAFExplicitFTwo,\notag\\
+ F_3={}&\CAFExplicitFThree.
  \label{eq:explicit-quintic-map}
 \end{align}
-This is an output rescaling of the quadratic-gauge map, so
+This is the output rescaling
+\(\operatorname{diag}\CAFExplicitIntegralScaling\) of the quadratic-gauge
+map, so
 \[
- \det DF=-722,\qquad \gdeg(F)=5.
+ \det DF=\CAFExplicitIntegralJacobian,\qquad
+ \gdeg(F)=\CAFExplicitDegree.
 \]
-At the target \(y=(1,0,-38)\), the inverse equation is
+At the target \(y=\CAFExplicitIntegralTarget\), whose normalized predecessor
+is \(\CAFExplicitNormalizedTarget\), the inverse equation is
 \[
- G(S)-\frac{-19}{2}(-2)=G(S)-19=P_5(S).
+ \CAFExplicitInverseIdentity.
 \]
 The squarefree fiber theorem therefore gives
 \[
@@ -60,5 +72,12 @@ This full Keller fiber has points over \(\mathbb R\) and every
 rank, finite \'etaleness, and these local and global point statements are
 also included in the Lean development.  Composing \(F\) with the diagonal
 target scaling
-\((u,v,w)\mapsto(u,-v/38,w/19)\) gives determinant one and sends the target
-back to \((1,0,-2)\).
+\(\operatorname{diag}\CAFExplicitIntegralToJacobianOneScaling\) gives
+determinant \(\CAFExplicitJacobianOneJacobian\) and sends the target to
+\(\CAFExplicitJacobianOneTarget\).
+The displayed coefficients, inverse identity, scalings, and targets in this
+section are generated from one JSON specification.  The Lean correspondence
+theorems compare the generated definitions with the formal map and inverse
+definitions literally, rather than checking only the resulting Jacobian and
+fiber claims.  Thus the example is both a piece of the story and an exact
+regression of the general construction.

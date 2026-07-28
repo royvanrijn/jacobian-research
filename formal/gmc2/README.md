@@ -3,6 +3,9 @@
 This package formalizes the complete two-variable theorem proved in
 [`TWO_REAL_GMC_LOWER_FACE_THEOREM.md`](../../extended-geometry/TWO_REAL_GMC_LOWER_FACE_THEOREM.md).
 
+It is pinned to the stable Lean `v4.32.1` toolchain and matching Mathlib
+release.
+
 Build it with:
 
 ```sh

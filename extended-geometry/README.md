@@ -83,6 +83,7 @@ recorded separately only in
 | Rank-35 nonhomogeneous HN identity slice | [Exact 21-variable slice rank 17, 42-variable Hessian rank 35, HN/Vanishing failure, and separation from the homogeneous quartic frontier](HESSIAN_RANK_35_IDENTITY_SLICE.md) |
 | Rank-34 double identity slice | [The output relation `K_9-3K_1-K_6=0`, exact 20-variable Jacobian rank 17, zero cotangent kernel excess, and a 40-variable nonhomogeneous HN witness of Hessian rank 34](HESSIAN_RANK_34_DOUBLE_IDENTITY_SLICE.md) |
 | Restricted-minima attack program | [Coupled index/rank strategy, rank-three kernel bundle, cotangent kernel excess, and direct dimension-six HN program](RESTRICTED_MINIMA_ATTACK_PROGRAM.md) |
+| Keller-constrained `SIC(2)` | [First-contraction reduction, binary zero-Hessian classification, rank-one Keller normal form, and the explicit all-multiplier cutoff](KELLER_CONSTRAINED_SIC2.md) |
 | Fixed-dimensional `GMC(2r) -> SIC(r) ->` cubic-Keller invertibility route | [Gaussian contraction, countable-union lemma, and formal inversion](FIXED_GMC_SIC_PROOF.md) |
 | Direct Image and Vanishing consequences | [Logical disproofs separated from repository dimension/rank incumbents and from the novelty of the explicit 20/40/42 witnesses](IMAGE_VANISHING_COUNTEREXAMPLES.md) |
 | Dvorsky--Long GVC(5) and SIC(5) | [All-order binomial proof, exact replay, scope separation, and external provenance](DVORSKY_GVC5_COUNTEREXAMPLE.md) |
@@ -91,6 +92,7 @@ recorded separately only in
 | Factorial-moment witnesses | [Exact Dvorsky diagonal translation, its nonmultiplicativity obstruction, smallest cyclotomic linear prefixes, and witness-derived quartics saturating the Strong Factorial threshold](FACTORIAL_MOMENT_WITNESSES.md) |
 | Sparse factorial-moment frontier | [Exact three-term and Dvorsky-paired four-term exclusions through degree six, plus sharp binary homogeneous moment cutoffs through degree four](SPARSE_FACTORIAL_MOMENT_FRONTIER.md) |
 | Tiny Image-Mathieu compression program | [The explicit four-term three-pair witness, exact coefficient and translated-Gaussian membership tests, and the remaining two-pair versus Jacobian-derived search tracks](IMAGE_MATHIEU_COMPRESSION_PROGRAM.md) |
+| Two-pair moment--nullcone program | [All-degree \(\mathrm{SL}_2\) reduction, Hilbert-series moment-degree selection, nullcone incidence geometry, rank-two induction, and the exact higher-rank obstruction](TWO_PAIR_SIC_MOMENT_NULLCONE_PROGRAM.md) |
 | Formal Gaussian--Lagrange lemma | [Constant-term-safe completed-ring, residue, determinant, and Wick proof](FORMAL_GAUSSIAN_LAGRANGE_LEMMA.md) |
 | Weighted-seed Gaussian bridge | [Uniform four-real-Gaussian witnesses, exact inverse-pencil branches, and optimal `(N-3)`-moment coordinates for normalized degree-`N` families](WEIGHTED_GAUSSIAN_BRIDGE.md) |
 | Gaussian invariant transport | [Scheme, semialgebraic, and arithmetic seed loci transported into optimal mixed moments, with explicit degree-six partition and Ritt equations](GAUSSIAN_EXCEPTIONAL_MOMENT_GEOMETRY.md) |

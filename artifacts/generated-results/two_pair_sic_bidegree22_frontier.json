@@ -1,0 +1,1136 @@
+{
+  "format": "two-pair-sic-bidegree22-theorem-v2",
+  "field": "characteristic zero",
+  "pairs": [
+    [
+      "W",
+      "Z"
+    ],
+    [
+      "V",
+      "Y"
+    ]
+  ],
+  "basis": [
+    {
+      "index": 0,
+      "name": "M_00",
+      "formula": "W^2*V^0*Z^2*Y^0",
+      "torus_weight": 0
+    },
+    {
+      "index": 1,
+      "name": "M_01",
+      "formula": "W^2*V^0*Z^1*Y^1",
+      "torus_weight": -1
+    },
+    {
+      "index": 2,
+      "name": "M_02",
+      "formula": "W^2*V^0*Z^0*Y^2",
+      "torus_weight": -2
+    },
+    {
+      "index": 3,
+      "name": "M_10",
+      "formula": "W^1*V^1*Z^2*Y^0",
+      "torus_weight": 1
+    },
+    {
+      "index": 4,
+      "name": "M_11",
+      "formula": "W^1*V^1*Z^1*Y^1",
+      "torus_weight": 0
+    },
+    {
+      "index": 5,
+      "name": "M_12",
+      "formula": "W^1*V^1*Z^0*Y^2",
+      "torus_weight": -1
+    },
+    {
+      "index": 6,
+      "name": "M_20",
+      "formula": "W^0*V^2*Z^2*Y^0",
+      "torus_weight": 2
+    },
+    {
+      "index": 7,
+      "name": "M_21",
+      "formula": "W^0*V^2*Z^1*Y^1",
+      "torus_weight": 1
+    },
+    {
+      "index": 8,
+      "name": "M_22",
+      "formula": "W^0*V^2*Z^0*Y^2",
+      "torus_weight": 0
+    }
+  ],
+  "proved": {
+    "linear_compression": "the first two contractions force the orthogonality branch; adapted pair coordinates give strict weights 1,2,1",
+    "global_bidegree_22": {
+      "moment_cutoff": 6,
+      "moment_ideal_dimension": 4,
+      "nullcone_dimension": 4,
+      "nullcone_generators": [
+        "2*x0+x4+2*x8",
+        "2*x2*x6+2*x5*x7-x4*x8+2*x8^2",
+        "2*x1*x6+2*x5*x6+x4*x7-2*x3*x8+2*x7*x8",
+        "x4^2-4*x3*x5-4*x1*x7-8*x5*x7-16*x8^2",
+        "2*x2*x3+x4*x5+2*x2*x7-2*x1*x8+2*x5*x8",
+        "x1*x3+2*x3*x5+2*x1*x7+3*x5*x7+2*x4*x8+8*x8^2",
+        "x2*x4*x7-2*x1*x5*x7-2*x5^2*x7+x1*x4*x8+2*x4*x5*x8+4*x2*x7*x8-4*x1*x8^2",
+        "2*x5^2*x6-x4*x5*x7+2*x2*x7^2+2*x3*x5*x8+2*x1*x7*x8+12*x5*x7*x8-4*x4*x8^2+16*x8^3",
+        "x4*x5*x6-2*x3*x5*x7-2*x5*x7^2+x3*x4*x8+4*x5*x6*x8+2*x4*x7*x8-4*x3*x8^2",
+        "2*x3*x5*x6-x3*x4*x7+2*x5*x6*x7-2*x4*x7^2+2*x3^2*x8+4*x4*x6*x8+2*x3*x7*x8-4*x7^2*x8+16*x6*x8^2",
+        "x1*x4*x5+2*x4*x5^2-2*x1*x2*x7-2*x2*x5*x7-2*x1^2*x8-4*x2*x4*x8-2*x1*x5*x8+4*x5^2*x8-16*x2*x8^2",
+        "x1*x5^2*x7+2*x5^3*x7-x2^2*x7^2-2*x1*x2*x7*x8-8*x2*x5*x7*x8-x1^2*x8^2+4*x5^2*x8^2-16*x2*x8^3"
+      ],
+      "radical_power_certificate": [
+        1,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7
+      ],
+      "conclusion": "the radical of the first-six-moment ideal equals the prime pair-linear one-sided nullcone ideal; therefore every bidegree-(2,2) form satisfies SIC(2)"
+    },
+    "sparse_bidegree_22": {
+      "moment_cutoffs": {
+        "support_sizes_1_through_6": 6,
+        "support_size_7": 8
+      },
+      "support_sizes": {
+        "1": {
+          "total_charts": 9,
+          "survivors": [
+            {
+              "indices": [
+                1
+              ],
+              "monomials": [
+                "M_01"
+              ],
+              "weights": [
+                -1
+              ],
+              "localized_dimension": 0
+            },
+            {
+              "indices": [
+                2
+              ],
+              "monomials": [
+                "M_02"
+              ],
+              "weights": [
+                -2
+              ],
+              "localized_dimension": 0
+            },
+            {
+              "indices": [
+                3
+              ],
+              "monomials": [
+                "M_10"
+              ],
+              "weights": [
+                1
+              ],
+              "localized_dimension": 0
+            },
+            {
+              "indices": [
+                5
+              ],
+              "monomials": [
+                "M_12"
+              ],
+              "weights": [
+                -1
+              ],
+              "localized_dimension": 0
+            },
+            {
+              "indices": [
+                6
+              ],
+              "monomials": [
+                "M_20"
+              ],
+              "weights": [
+                2
+              ],
+              "localized_dimension": 0
+            },
+            {
+              "indices": [
+                7
+              ],
+              "monomials": [
+                "M_21"
+              ],
+              "weights": [
+                1
+              ],
+              "localized_dimension": 0
+            }
+          ]
+        },
+        "2": {
+          "total_charts": 36,
+          "survivors": [
+            {
+              "indices": [
+                1,
+                2
+              ],
+              "monomials": [
+                "M_01",
+                "M_02"
+              ],
+              "weights": [
+                -1,
+                -2
+              ],
+              "localized_dimension": 1
+            },
+            {
+              "indices": [
+                1,
+                5
+              ],
+              "monomials": [
+                "M_01",
+                "M_12"
+              ],
+              "weights": [
+                -1,
+                -1
+              ],
+              "localized_dimension": 1
+            },
+            {
+              "indices": [
+                2,
+                5
+              ],
+              "monomials": [
+                "M_02",
+                "M_12"
+              ],
+              "weights": [
+                -2,
+                -1
+              ],
+              "localized_dimension": 1
+            },
+            {
+              "indices": [
+                3,
+                6
+              ],
+              "monomials": [
+                "M_10",
+                "M_20"
+              ],
+              "weights": [
+                1,
+                2
+              ],
+              "localized_dimension": 1
+            },
+            {
+              "indices": [
+                3,
+                7
+              ],
+              "monomials": [
+                "M_10",
+                "M_21"
+              ],
+              "weights": [
+                1,
+                1
+              ],
+              "localized_dimension": 1
+            },
+            {
+              "indices": [
+                6,
+                7
+              ],
+              "monomials": [
+                "M_20",
+                "M_21"
+              ],
+              "weights": [
+                2,
+                1
+              ],
+              "localized_dimension": 1
+            }
+          ]
+        },
+        "3": {
+          "total_charts": 84,
+          "survivors": [
+            {
+              "indices": [
+                1,
+                2,
+                5
+              ],
+              "monomials": [
+                "M_01",
+                "M_02",
+                "M_12"
+              ],
+              "weights": [
+                -1,
+                -2,
+                -1
+              ],
+              "localized_dimension": 2
+            },
+            {
+              "indices": [
+                3,
+                6,
+                7
+              ],
+              "monomials": [
+                "M_10",
+                "M_20",
+                "M_21"
+              ],
+              "weights": [
+                1,
+                2,
+                1
+              ],
+              "localized_dimension": 2
+            }
+          ]
+        },
+        "4": {
+          "total_charts": 126,
+          "survivors": []
+        },
+        "5": {
+          "total_charts": 126,
+          "survivors": []
+        },
+        "6": {
+          "total_charts": 84,
+          "survivors": [
+            {
+              "indices": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "monomials": [
+                "M_00",
+                "M_01",
+                "M_02",
+                "M_10",
+                "M_11",
+                "M_12"
+              ],
+              "weights": [
+                0,
+                -1,
+                -2,
+                1,
+                0,
+                -1
+              ],
+              "localized_dimension": 1
+            },
+            {
+              "indices": [
+                0,
+                1,
+                2,
+                6,
+                7,
+                8
+              ],
+              "monomials": [
+                "M_00",
+                "M_01",
+                "M_02",
+                "M_20",
+                "M_21",
+                "M_22"
+              ],
+              "weights": [
+                0,
+                -1,
+                -2,
+                2,
+                1,
+                0
+              ],
+              "localized_dimension": 1
+            },
+            {
+              "indices": [
+                0,
+                1,
+                3,
+                4,
+                6,
+                7
+              ],
+              "monomials": [
+                "M_00",
+                "M_01",
+                "M_10",
+                "M_11",
+                "M_20",
+                "M_21"
+              ],
+              "weights": [
+                0,
+                -1,
+                1,
+                0,
+                2,
+                1
+              ],
+              "localized_dimension": 1
+            },
+            {
+              "indices": [
+                0,
+                1,
+                3,
+                5,
+                7,
+                8
+              ],
+              "monomials": [
+                "M_00",
+                "M_01",
+                "M_10",
+                "M_12",
+                "M_21",
+                "M_22"
+              ],
+              "weights": [
+                0,
+                -1,
+                1,
+                -1,
+                1,
+                0
+              ],
+              "localized_dimension": 1
+            },
+            {
+              "indices": [
+                0,
+                2,
+                3,
+                5,
+                6,
+                8
+              ],
+              "monomials": [
+                "M_00",
+                "M_02",
+                "M_10",
+                "M_12",
+                "M_20",
+                "M_22"
+              ],
+              "weights": [
+                0,
+                -2,
+                1,
+                -1,
+                2,
+                0
+              ],
+              "localized_dimension": 1
+            },
+            {
+              "indices": [
+                1,
+                2,
+                3,
+                5,
+                6,
+                7
+              ],
+              "monomials": [
+                "M_01",
+                "M_02",
+                "M_10",
+                "M_12",
+                "M_20",
+                "M_21"
+              ],
+              "weights": [
+                -1,
+                -2,
+                1,
+                -1,
+                2,
+                1
+              ],
+              "localized_dimension": 1
+            },
+            {
+              "indices": [
+                1,
+                2,
+                4,
+                5,
+                7,
+                8
+              ],
+              "monomials": [
+                "M_01",
+                "M_02",
+                "M_11",
+                "M_12",
+                "M_21",
+                "M_22"
+              ],
+              "weights": [
+                -1,
+                -2,
+                0,
+                -1,
+                1,
+                0
+              ],
+              "localized_dimension": 1
+            },
+            {
+              "indices": [
+                3,
+                4,
+                5,
+                6,
+                7,
+                8
+              ],
+              "monomials": [
+                "M_10",
+                "M_11",
+                "M_12",
+                "M_20",
+                "M_21",
+                "M_22"
+              ],
+              "weights": [
+                1,
+                0,
+                -1,
+                2,
+                1,
+                0
+              ],
+              "localized_dimension": 1
+            }
+          ]
+        },
+        "7": {
+          "total_charts": 36,
+          "survivors": [
+            {
+              "indices": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                6,
+                8
+              ],
+              "monomials": [
+                "M_00",
+                "M_01",
+                "M_02",
+                "M_10",
+                "M_11",
+                "M_20",
+                "M_22"
+              ],
+              "weights": [
+                0,
+                -1,
+                -2,
+                1,
+                0,
+                2,
+                0
+              ],
+              "localized_dimension": 1
+            },
+            {
+              "indices": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                7,
+                8
+              ],
+              "monomials": [
+                "M_00",
+                "M_01",
+                "M_02",
+                "M_10",
+                "M_11",
+                "M_21",
+                "M_22"
+              ],
+              "weights": [
+                0,
+                -1,
+                -2,
+                1,
+                0,
+                1,
+                0
+              ],
+              "localized_dimension": 1
+            },
+            {
+              "indices": [
+                0,
+                1,
+                2,
+                4,
+                5,
+                6,
+                7
+              ],
+              "monomials": [
+                "M_00",
+                "M_01",
+                "M_02",
+                "M_11",
+                "M_12",
+                "M_20",
+                "M_21"
+              ],
+              "weights": [
+                0,
+                -1,
+                -2,
+                0,
+                -1,
+                2,
+                1
+              ],
+              "localized_dimension": 1
+            },
+            {
+              "indices": [
+                0,
+                1,
+                2,
+                4,
+                5,
+                6,
+                8
+              ],
+              "monomials": [
+                "M_00",
+                "M_01",
+                "M_02",
+                "M_11",
+                "M_12",
+                "M_20",
+                "M_22"
+              ],
+              "weights": [
+                0,
+                -1,
+                -2,
+                0,
+                -1,
+                2,
+                0
+              ],
+              "localized_dimension": 1
+            },
+            {
+              "indices": [
+                0,
+                1,
+                3,
+                4,
+                5,
+                6,
+                8
+              ],
+              "monomials": [
+                "M_00",
+                "M_01",
+                "M_10",
+                "M_11",
+                "M_12",
+                "M_20",
+                "M_22"
+              ],
+              "weights": [
+                0,
+                -1,
+                1,
+                0,
+                -1,
+                2,
+                0
+              ],
+              "localized_dimension": 1
+            },
+            {
+              "indices": [
+                0,
+                1,
+                4,
+                5,
+                6,
+                7,
+                8
+              ],
+              "monomials": [
+                "M_00",
+                "M_01",
+                "M_11",
+                "M_12",
+                "M_20",
+                "M_21",
+                "M_22"
+              ],
+              "weights": [
+                0,
+                -1,
+                0,
+                -1,
+                2,
+                1,
+                0
+              ],
+              "localized_dimension": 1
+            },
+            {
+              "indices": [
+                0,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "monomials": [
+                "M_00",
+                "M_02",
+                "M_10",
+                "M_11",
+                "M_12",
+                "M_20",
+                "M_21"
+              ],
+              "weights": [
+                0,
+                -2,
+                1,
+                0,
+                -1,
+                2,
+                1
+              ],
+              "localized_dimension": 1
+            },
+            {
+              "indices": [
+                0,
+                2,
+                3,
+                4,
+                5,
+                7,
+                8
+              ],
+              "monomials": [
+                "M_00",
+                "M_02",
+                "M_10",
+                "M_11",
+                "M_12",
+                "M_21",
+                "M_22"
+              ],
+              "weights": [
+                0,
+                -2,
+                1,
+                0,
+                -1,
+                1,
+                0
+              ],
+              "localized_dimension": 1
+            },
+            {
+              "indices": [
+                0,
+                2,
+                3,
+                4,
+                6,
+                7,
+                8
+              ],
+              "monomials": [
+                "M_00",
+                "M_02",
+                "M_10",
+                "M_11",
+                "M_20",
+                "M_21",
+                "M_22"
+              ],
+              "weights": [
+                0,
+                -2,
+                1,
+                0,
+                2,
+                1,
+                0
+              ],
+              "localized_dimension": 1
+            },
+            {
+              "indices": [
+                0,
+                2,
+                4,
+                5,
+                6,
+                7,
+                8
+              ],
+              "monomials": [
+                "M_00",
+                "M_02",
+                "M_11",
+                "M_12",
+                "M_20",
+                "M_21",
+                "M_22"
+              ],
+              "weights": [
+                0,
+                -2,
+                0,
+                -1,
+                2,
+                1,
+                0
+              ],
+              "localized_dimension": 1
+            },
+            {
+              "indices": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                8
+              ],
+              "monomials": [
+                "M_01",
+                "M_02",
+                "M_10",
+                "M_11",
+                "M_12",
+                "M_20",
+                "M_22"
+              ],
+              "weights": [
+                -1,
+                -2,
+                1,
+                0,
+                -1,
+                2,
+                0
+              ],
+              "localized_dimension": 1
+            },
+            {
+              "indices": [
+                1,
+                2,
+                3,
+                4,
+                6,
+                7,
+                8
+              ],
+              "monomials": [
+                "M_01",
+                "M_02",
+                "M_10",
+                "M_11",
+                "M_20",
+                "M_21",
+                "M_22"
+              ],
+              "weights": [
+                -1,
+                -2,
+                1,
+                0,
+                2,
+                1,
+                0
+              ],
+              "localized_dimension": 1
+            }
+          ]
+        }
+      },
+      "conclusion": "every pure-null support of size at most seven is visibly or pair-linearly one-sided, so no such f is an SIC(2) counterexample",
+      "six_term_radical_representatives": [
+        {
+          "support": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "radical_generators": [
+            "c4+2",
+            "c1+2*c5",
+            "c2-c5^2",
+            "c3*c5-1",
+            "4*rho*c5^3-1"
+          ],
+          "radical_power_certificate": [
+            1,
+            2,
+            2,
+            2,
+            1
+          ]
+        },
+        {
+          "support": [
+            0,
+            1,
+            2,
+            6,
+            7,
+            8
+          ],
+          "radical_generators": [
+            "c5+1",
+            "4*c2-c1^2",
+            "c1*c4+4",
+            "c1^2*c3+4",
+            "4*rho+1"
+          ],
+          "radical_power_certificate": [
+            1,
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "support": [
+            0,
+            1,
+            3,
+            5,
+            7,
+            8
+          ],
+          "radical_generators": [
+            "c5+1",
+            "c1-c3",
+            "c2-c4",
+            "c1*c2+1",
+            "rho+1"
+          ],
+          "radical_power_certificate": [
+            1,
+            2,
+            2,
+            1,
+            1
+          ]
+        },
+        {
+          "support": [
+            1,
+            2,
+            3,
+            5,
+            6,
+            7
+          ],
+          "radical_generators": [
+            "c3+1",
+            "c2+c5",
+            "c1^2*c2-1",
+            "c1^3*c4+1",
+            "rho+c1^6"
+          ],
+          "radical_power_certificate": [
+            6,
+            6,
+            6,
+            6,
+            6
+          ]
+        }
+      ],
+      "seven_term_radical_representatives": [
+        {
+          "support": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            6,
+            8
+          ],
+          "radical_generators": [
+            "3*c4+4",
+            "3*c6+1",
+            "9*c1*c3+16",
+            "9*c2*c5-1",
+            "3*c1^2-16*c2",
+            "64*rho+729"
+          ],
+          "radical_power_certificate": [
+            5,
+            5,
+            5,
+            5,
+            6,
+            5
+          ]
+        },
+        {
+          "support": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            7,
+            8
+          ],
+          "radical_generators": [
+            "c4+1",
+            "2*c6+1",
+            "2*c1*c3+3",
+            "2*c1^2-9*c2",
+            "4*c1*c5+3",
+            "rho*c1-8"
+          ],
+          "radical_power_certificate": [
+            6,
+            6,
+            3,
+            6,
+            6,
+            6
+          ]
+        },
+        {
+          "support": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            6,
+            7
+          ],
+          "radical_generators": [
+            "c3+2",
+            "3*c4+2*c1",
+            "2*c1^2-9*c2",
+            "c2*c5+2",
+            "c1*c6+3",
+            "8*rho*c1-1"
+          ],
+          "radical_power_certificate": [
+            1,
+            6,
+            6,
+            6,
+            6,
+            6
+          ]
+        },
+        {
+          "support": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            6,
+            8
+          ],
+          "radical_generators": [
+            "c3+4",
+            "c6-1",
+            "c4+c1",
+            "3*c1^2-16*c2",
+            "c2*c5+3",
+            "12*rho*c1^2+1"
+          ],
+          "radical_power_certificate": [
+            6,
+            6,
+            6,
+            3,
+            6,
+            6
+          ]
+        }
+      ]
+    }
+  },
+  "next_frontier": {
+    "support_sizes": [],
+    "status": "bidegree-(2,2) is closed, including dense eight- and nine-term forms; unrestricted SIC(2) in other bidegrees remains open"
+  },
+  "reproduce": ".venv/bin/python scripts/verify_two_pair_sic_bidegree22_frontier.py"
+}

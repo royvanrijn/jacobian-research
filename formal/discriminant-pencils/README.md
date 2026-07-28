@@ -8,6 +8,9 @@
 This package formalizes the algebraic core of
 *Generic Discriminants of Polynomial Tangent Pencils*.
 
+It is pinned to the stable Lean `v4.32.1` toolchain and matching Mathlib
+release.
+
 Build it with:
 
 ```sh

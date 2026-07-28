@@ -1,0 +1,95 @@
+\section{Exact verification and finite data}\label{sec:verification}
+
+The proof has three different assurance layers.  The determinant, inverse
+factorization, resultants, heights, and finite counts have exact symbolic or
+integer checks.  The algebraic fiber argument and the uniform local theorem
+also have a Lean formalization.  The Selberg--Delange asymptotic and the
+analytic input to degree minimality remain ordinary mathematical proofs.
+These layers should not be confused: in particular, the bounded count is
+not evidence from which the asymptotic is inferred.
+
+Run
+\[
+\begin{split}
+&\texttt{.venv/bin/python
+scripts/verify\_infinite\_hasse\_keller\_fibers.py},\\
+&\texttt{.venv/bin/python
+scripts/verify\_multiplicative\_hasse\_artifact.py}.
+\end{split}
+\tag{6.1}
+\]
+The first command expands \(F_0\), verifies \(\det DF_0=-2\), checks the
+target-line factorization \eqref{eq:target-factorization}, the factor
+discriminants and
+resultant, the \(3\)-adic substitution, and the first prime and composite
+parameters.  The determinant-one identity for \(\Phi\) then follows from
+the two displayed linear transformations in
+\eqref{eq:linear-normalization}.
+
+The second command uses only the Python standard library.  It checks support
+conditions, cube exclusion, target primitivity, the height formula, and
+stable digests of the enumerated parameter sets.  At \(X=10^6\) it gives
+\[
+\begin{array}{l|r|r}
+\text{family}&\text{count}&\text{scaled count}\\ \hline
+\mathcal A&
+26846&
+\#\mathcal A(X)\sqrt{\log X}/X=0.0997845\\
+\mathcal A_9&
+16107&
+\#\mathcal A_9(X)(\log X)^{5/6}/X=0.143655\\
+\text{primes }1\pmod9&13063&\\
+\text{products of two such primes}&2853&
+\end{array}
+\tag{6.2}
+\]
+The generated JSON certificate has SHA-256 hash
+\[
+\texttt{d4cbaa54f2a3f436f21e26b17e24ebdd8894dc7877f14e2caa9aeaf603f81cb9}.
+\tag{6.3}
+\]
+
+The machine-checked theorem layer is built separately by
+\[
+\begin{split}
+&\texttt{cd formal/finite-etale-keller},\\
+&\texttt{lake build FiniteEtaleKeller.FixedHassePaperCertificate}.
+\end{split}
+\tag{6.4}
+\]
+The machine-checked chain consists of
+\begin{center}
+\small
+\texttt{FixedHasseFamily.lean}, \texttt{FixedHasseMap.lean},
+\texttt{FixedHasseLocal.lean},\\
+\texttt{FixedHasseHeight.lean}, and
+\texttt{FixedHasseArithmetic.lean}, collected by the isolated publication
+entry point \texttt{FixedHassePaperCertificate.lean}.
+\end{center}
+These modules prove, respectively, the centered factorization and
+squarefreeness certificates,
+the exact determinant-one normalization and complete literal-fiber
+equivalence, the uniform prime-by-prime local theorem, and the primitive
+coordinates with exact height \(32a\), followed by multiplicative closure
+of the congruence/support conditions and the complete prime-progression
+certificate.  In particular, Lean proves that a prime
+\(\ell\equiv1\pmod9\) cannot be a rational cube.  The local module derives
+oddness from prime support, so its final declaration
+\texttt{paperFiberPoint\_hasse\_certificate} states directly that every
+admissible noncube parameter gives a literal fiber with no rational point,
+a real point, and a point over every \(\Q_p\).  The certificate contains no
+\texttt{sorry} and uses only Lean's standard foundational axioms.
+
+The exact displayed-map degree is included as well.  Lean proves the
+polynomial identity obtained by applying
+\(A^{-1}(x,y,z)=(2x,y,z)\) and \(L^{-1}=L\) to \(\Phi\), recovering
+\(F_0\) exactly.  These source and target polynomial automorphisms preserve
+function-field degree, so the certified degree-five computation for
+\(F_0\) is the geometric degree of the displayed map \(\Phi\), not merely
+of an unnormalized auxiliary map.
+
+The table is a convergence and regression check.  The local theorem applies
+to every parameter satisfying \eqref{eq:parameter-family}, while the
+asymptotics follow from
+the Euler products and Selberg--Delange; neither conclusion is inferred
+from the bounded enumeration.

@@ -21,6 +21,7 @@ import FiniteEtaleKeller.GeneralGaugeBaseChange
 import FiniteEtaleKeller.GeneralGaugeFiberRank
 import FiniteEtaleKeller.PageOneTheorem
 import FiniteEtaleKeller.AbstractFiniteEtale
+import FiniteEtaleKeller.PaperCertificate
 import FiniteEtaleKeller.LocalizedFiberPoints
 import FiniteEtaleKeller.LocalizedGaugeFiberPoints
 import FiniteEtaleKeller.GeneralGaugeLocalizedFiber
@@ -28,6 +29,12 @@ import FiniteEtaleKeller.AnnouncedCounterexample
 import FiniteEtaleKeller.ExplicitFiber
 import FiniteEtaleKeller.ExplicitThreeAdicPoint
 import FiniteEtaleKeller.ExplicitAllPadicPoints
+import FiniteEtaleKeller.FixedHasseFamily
+import FiniteEtaleKeller.FixedHasseMap
+import FiniteEtaleKeller.FixedHasseLocal
+import FiniteEtaleKeller.FixedHasseHeight
+import FiniteEtaleKeller.FixedHasseArithmetic
+import FiniteEtaleKeller.FixedHassePaperCertificate
 import FiniteEtaleKeller.DegreeFourFixedPoint
 import FiniteEtaleKeller.DegreeFourMomentBarrier
 import FiniteEtaleKeller.Reconstruction
@@ -45,3 +52,4 @@ import FiniteEtaleKeller.Admissibility
 import FiniteEtaleKeller.RealizationFiber
 import FiniteEtaleKeller.AutomaticRealization
 import FiniteEtaleKeller.ExplicitQuintic
+import FiniteEtaleKeller.PaperExampleCorrespondence

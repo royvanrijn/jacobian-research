@@ -1,0 +1,73 @@
+\section{Optimality of degree five}\label{sec:minimality}
+
+The construction began with a quintic because the Berend--Bilu example is
+a product of degrees three and two.  It is natural to ask whether the same
+fixed-map phenomenon could have been found in smaller degree.  Here the
+arithmetic answers before the geometry does: a nontrivially intersective
+polynomial cannot have degree below five.  The degree in which the example
+first appears is, pleasantly, also the first degree in which it could appear.
+
+Define \(d_{\HP}\) to be the least geometric degree of a polynomial Keller
+map over \(\Q\) having a finite regular fiber that satisfies
+\eqref{eq:hasse-condition}.
+
+\begin{theorem}\label{thm:minimality}
+The minimal Hasse-failing geometric degree is
+\[
+ \boxed{d_{\HP}=5.}
+ \tag{5.1}
+\]
+\end{theorem}
+
+\begin{proof}
+Let \(F:\A^n_{\Q}\to\A^n_{\Q}\) be a Keller map of geometric degree \(d\),
+and let \(X=F^{-1}(y)\) be a finite regular fiber.  Because \(F\) is
+\'etale, each geometric point of \(X\) extends, after shrinking around
+\(y\), to a distinct finite \'etale branch.  The geometric generic fiber
+has \(d\) points, so
+\[
+ \operatorname{rank}_{\Q}X\le d.
+ \tag{5.2}
+\]
+
+Suppose \(X\) is regular, everywhere locally soluble, and has no rational
+point.  Choose an integral primitive element for its finite \'etale
+coordinate algebra.  Thus
+\[
+ X\simeq\Spec\Q[T]/(P)
+ \tag{5.3}
+\]
+for a monic squarefree polynomial \(P\in\Z[T]\) of degree
+\(\operatorname{rank}_{\Q}X\).  A \(\Q_p\)-root of the monic polynomial is
+integral.  Roots over every \(\Q_p\) therefore give roots modulo every prime
+power, and the Chinese remainder theorem gives a root modulo every positive
+integer.  The absence of a \(\Q\)-point says that \(P\) has no rational
+root.
+
+For completeness, the low-degree consequence of Berend and Bilu's
+criterion can be seen directly from the possible irreducible-factor
+degrees \cite{BerendBilu}.  With no rational root, a polynomial of total
+degree at most four is either irreducible of degree \(2\), \(3\), or \(4\),
+or is a product of two irreducible quadratics.  In the irreducible case a
+derangement in the transitive Galois action gives a Frobenius class with no
+fixed root.  In the two-quadratic case, if the quadratic fields agree then
+an inert Frobenius works for both factors; if they are distinct, their
+biquadratic compositum contains an element nontrivial in both quadratic
+quotients.  The Berend--Bilu fixed-point criterion (equivalently,
+Chebotarev applied to these classes) then supplies a prime modulo which
+there is no root.  Hence no polynomial of degree at most four can have a
+root modulo every positive integer without already having a rational root.
+Thus
+\[
+ 5\le\operatorname{rank}_{\Q}X\le d.
+ \tag{5.4}
+\]
+On the other hand, Theorem~\ref{thm:main} gives a full Hasse-failing fiber
+of a degree-five Keller map.  Hence \(d_{\HP}=5\).
+\end{proof}
+
+\begin{remark}
+The lower bound is arithmetic and does not depend on the quadratic-gauge
+construction.  The upper bound is stronger than mere realizability: one
+fixed degree-five map attains the minimum at infinitely many targets.
+\end{remark}

@@ -1,18 +1,18 @@
 \section{Verification and Lean correspondence}
 \label{app:lean-correspondence}
 
-The table records the public endpoint declarations corresponding to the
-formalized characteristic-zero specializations used in the paper.  The
-supplied-presentation theorem itself is stated over every field of
-characteristic different from \(2\), but the current end-to-end Lean files
-retain the stronger typeclass assumption \texttt{CharZero K}.  Several rows
-list more than one declaration because the paper packages construction,
-naturality, rank, and geometric degree into a single result.  Auxiliary
-implementation lemmas are omitted.
+The table distinguishes the characteristic-zero headline theorem, which is
+formalized end to end, from the broader supplied-presentation proposition,
+which is not.  Several rows list more than one declaration because the paper
+packages construction, naturality, rank, and geometric degree into a single
+result.  When a component statement in the left column has broader
+characteristic hypotheses, its listed Lean declaration certifies only the
+characteristic-zero specialization.  Auxiliary implementation lemmas are
+omitted.
 
 \begin{center}
-\small
-\renewcommand{\arraystretch}{1.18}
+\footnotesize
+\renewcommand{\arraystretch}{1.08}
 \begin{tabular}{
  >{\raggedright\arraybackslash}p{0.36\textwidth}
  >{\raggedright\arraybackslash}p{0.56\textwidth}}
@@ -23,6 +23,7 @@ General localized quadratic-gauge fiber theorem,
 Theorem~\ref{thm:localized-gauge}, and its squarefree corollary,
 Corollary~\ref{cor:squarefree-gauge}
 &
+\textit{Characteristic-zero specialization:}\par
 \nolinkurl{generalGaugeLocalizedJacobianOneRepresentingEquiv}\par
 \nolinkurl{generalGaugeLocalizedJacobianOneRepresentingEquiv_natural}
 \\
@@ -30,17 +31,26 @@ Corollary~\ref{cor:squarefree-gauge}
 Jacobian-one effective form,
 Corollary~\ref{cor:effective-gauge}
 &
+\textit{Characteristic-zero specialization:}\par
 \nolinkurl{jacobianDet_generalGaugeJacobianOneMap}\par
 \nolinkurl{generalGaugeJacobianOneMap_totalDegree}
 \\
 \hline
-Polynomial realization, Theorem~\ref{thm:polynomial-realization}, and its
-effective and functorial form, Corollary~\ref{cor:polynomial-effective}
+Characteristic-zero polynomial realization,
+Theorem~\ref{thm:polynomial-realization}
 &
-\nolinkurl{automaticRealization_pageOne}\par
+\nolinkurl{paperPolynomialPresentation_pageOne}\par
 \nolinkurl{automaticRealizationFunctionField_finrank}\par
 \nolinkurl{automaticRealizationFunctionFieldComparison}\par
 \nolinkurl{automaticJacobianOneFiberRepresentingEquiv_natural}
+\\
+\hline
+Characteristic-\(\ne2\) supplied-presentation realization,
+Proposition~\ref{prop:supplied-polynomial-realization}, and its effective
+form, Corollary~\ref{cor:polynomial-effective}
+&
+No end-to-end declaration at this generality; the corresponding current
+files retain \texttt{CharZero K}.
 \\
 \hline
 Abstract finite-\'etale realization,
@@ -48,12 +58,13 @@ Corollary~\ref{cor:finite-etale-realization}
 &
 \nolinkurl{finiteEtalePresentation}\par
 \nolinkurl{abstractFiniteEtaleFiberRepresentingEquiv_natural}\par
-\nolinkurl{abstractFiniteEtale_pageOne}
+\nolinkurl{paperAbstractFiniteEtale_pageOne}
 \\
 \hline
 Compatibility with extension of scalars,
 Proposition~\ref{prop:base-change}
 &
+\textit{Characteristic-zero specialization:}\par
 \nolinkurl{realizationMapTarget_map}\par
 \nolinkurl{adjoinRootBaseChangeEquiv}
 \\
@@ -68,6 +79,36 @@ Explicit arithmetic fiber, Section~\ref{sec:example}
 \hline
 \end{tabular}
 \end{center}
+
+The explicit-example interface is checked separately in
+\nolinkurl{PaperExampleCorrespondence.lean}.  A single JSON specification
+generates the TeX macros used in Section~\ref{sec:example}, a Lean-readable
+map, runnable SymPy and Sage inputs, and an expanded sparse JSON certificate.
+The declarations
+\[
+\begin{gathered}
+\text{\nolinkurl{integralMap_eq_generatedPaperMap}},\\
+\text{\nolinkurl{generatedPaperInversePolynomial}},\\
+\text{\nolinkurl{generatedPaper_integral_to_jacobianOne}}
+\end{gathered}
+\]
+identify the displayed coordinates, inverse polynomial, targets, and both
+output scalings with the formal definitions;
+\nolinkurl{integralFiberPoint_eval_eq_generatedTarget} additionally checks
+the distinguished target built into the literal fiber structure.
+
+The paper-facing declarations are defined in
+\nolinkurl{PaperCertificate.lean}.  This module directly imports only the
+general gauge construction, its function-field comparison, the page-one
+theorem, and the abstract finite-\'etale realization.  It does not import the
+arithmetic examples or companion developments.  The exact headline interface is
+\[
+ \text{\nolinkurl{paperPolynomialPresentation_pageOne}}.
+\]
+It takes
+\texttt{P.Separable}, exactly as Theorem~\ref{thm:polynomial-realization}
+does, and converts it to the equivalent internal \texttt{Squarefree}
+hypothesis before applying \nolinkurl{automaticRealization_pageOne}.
 
 The page-one certificate exposes geometric degree both through the
 convenience definition
@@ -86,7 +127,9 @@ The certificate also includes the target denormalization, so the fixed
 Jacobian-one output normalization does not alter the generated target field.
 
 The formal development already identifies the cubic coefficient of
-\(P(a+S)-P(a)\) with the third Hasse derivative.  Removing the blanket
-\texttt{CharZero} assumptions from the general gauge, reconstruction,
-function-field, and supplied-base-change files remains a formalization task;
-no additional ordinary mathematical argument is used in the paper.
+\(P(a+S)-P(a)\) with the third Hasse derivative.  The headline theorem needs
+no generalization: its paper and Lean assumptions are both characteristic
+zero.  Removing the blanket \texttt{CharZero} assumptions from the general
+gauge, reconstruction, function-field, and supplied-base-change files would
+formalize the separate characteristic-\(\ne2\) proposition; that remains
+future work.

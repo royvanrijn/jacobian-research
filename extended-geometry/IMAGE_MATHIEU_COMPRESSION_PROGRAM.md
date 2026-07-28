@@ -53,7 +53,7 @@ These should be kept as two separate optimization problems:
 \[
 \begin{array}{c|c|c}
 \text{problem}&\text{certified incumbent}&\text{next target}\\ \hline
-\text{arbitrary }\mathcal M_r& r=3,\ (8,8;1,1)&r=2\\
+\text{arbitrary }\mathcal M_r& r=3,\ (4,4;1,1)&r=2\\
 \text{derived from the stored Keller collision}&r=20,\ (60,4;1,1)&r<20.
 \end{array}                                                \tag{1.3}
 \]
@@ -207,6 +207,47 @@ obsolete.  The target is \(r=2\), where the three-pair construction suggests:
 4. test whether the binomial cancellation in the three-pair witness has a
    two-pair polarization or diagonal quotient.
 
+The first direct frontier is now closed in a complete bidegree.  The
+[bidegree-\((2,2)\) frontier theorem](TWO_PAIR_SIC_BIDEGREE22_FRONTIER.md)
+proves that the natural four-parameter linear compression of (1.1) is
+one-sided whenever its first two pure contractions vanish.  More generally,
+exact elimination and radical-power certificates prove that the first six
+pure contractions cut out precisely the pair-linear one-sided nullcone for
+every bidegree-\((2,2)\) form.  Thus SIC(2) holds on the complete
+bidegree-\((2,2)\) stratum, including the nine exact eight-term supports and
+the full support.  The \(501\)-chart sparse census and its explicit
+six- and seven-term factorizations remain useful regressions.  The next
+two-pair search must move to other bidegrees.
+
+The next balanced case is now active.  The
+[bidegree-\((3,3)\) frontier](TWO_PAIR_SIC_BIDEGREE33_FRONTIER.md)
+eliminates the full seven-dimensional pair-linear nullcone exactly.  On the
+highest irreducible \(\operatorname{Sym}^6\) summand, moments of orders
+\(2,4,6,10\) have precisely the binary-sextic \(L^4Q\) nullcone radical,
+while moments \(2,3\) and \(2\) close the pure
+\(\operatorname{Sym}^4\) and \(\operatorname{Sym}^2\) summands.  The
+normalized non-null quadratic branch is also closed exactly on
+\(\operatorname{Sym}^4\oplus\operatorname{Sym}^2\), where moments through
+order six force \(c^6=0\).  On
+\(\operatorname{Sym}^6\oplus\operatorname{Sym}^2\), the analogous
+\(c^{25}\) certificate is currently verified only over
+\(\mathbb F_{32003}\).  The remaining target is the mixed
+\(\operatorname{Sym}^6\oplus\operatorname{Sym}^4\oplus
+\operatorname{Sym}^2\) representation after the first moment removes the
+scalar summand. The primary continuation is now the
+[all-degree moment--nullcone program](TWO_PAIR_SIC_MOMENT_NULLCONE_PROGRAM.md):
+for
+\(\operatorname{End}(\operatorname{Sym}^d)
+\cong\bigoplus_{r=0}^d\operatorname{Sym}^{2r}\), first force the lowest
+nonzero binary-form summand into its nullcone and then force every higher
+summand to share its unique high-multiplicity root. This replaces deeper
+full \((3,3)\) elimination by a quadratic-anchor lemma and a uniform
+common-root synchronization lemma.
+For \(d=3\), the first thirteen full moments now have an exact nonzero
+\(13\times13\) Jacobian minor, so they are algebraically independent and
+attain the invariant-quotient dimension bound. The remaining question is
+their zero fiber, not a shortage of independent moment coordinates.
+
 The first goal is not merely many vanishing initial powers.  It is an
 all-order recurrence whose zero solution is forced by finitely many initial
 conditions, together with a mixed recurrence having infinitely many
@@ -236,6 +277,21 @@ For a Keller map \(F=z-H(z)\), the canonical contraction candidate is
 
 and a nonpolynomial inverse coordinate supplies \(g=z_i\).  For the stored
 identity slice this gives the current 20-pair, 60-term incumbent.
+
+At pair dimension two, the canonical route is now closed under the
+normalized Keller constraint.  The
+[Keller-constrained theorem](KELLER_CONSTRAINED_SIC2.md) proves that the
+first pure equation
+\(\mathcal E_2(\zeta\mathbin\cdot H)=\operatorname{tr}JH=0\), together with
+\(\det J(z-H)=1\), forces
+\[
+ H=(b,-a)f(ax+by).
+\]
+It follows that
+\(\mathcal E_2(g(\zeta\mathbin\cdot H)^m)=0\) for
+\(m>\deg_z g\).  Thus a two-pair SIC counterexample cannot be the canonical
+contraction of a normalized plane Keller correction.  This excludes only
+Keller provenance; it does not close Track A.
 
 Further linear output or source quotients of that artifact have already
 been exhausted.  Resume this track only with one of:

@@ -116,6 +116,36 @@ def normalized_terminal_edge() -> tuple[sp.Expr, sp.Expr, sp.Expr]:
     return P, Q, bracket
 
 
+def terminal_kummer_characters() -> dict[str, object]:
+    """Record the exact mu_5 character obstruction to Keller descent."""
+
+    P, Q, _ = normalized_terminal_edge()
+    X, y = sp.symbols("X y")
+    p_exponents = [list(exponent) for exponent, _ in sp.Poly(P, X, y).terms()]
+    q_exponents = [list(exponent) for exponent, _ in sp.Poly(Q, X, y).terms()]
+    p_characters = sorted({exponent[0] % 5 for exponent in p_exponents})
+    q_characters = sorted({exponent[0] % 5 for exponent in q_exponents})
+    assert p_characters == [1, 4]
+    assert q_characters == [0, 1, 3]
+    return {
+        "kummer_coordinate": "u=X^5/5",
+        "modulus": 5,
+        "P_X_characters": p_characters,
+        "Q_X_characters": q_characters,
+        "bracket_character_rule": "character([P_a,Q_b])=a+b-1 mod 5",
+        "target_character": 4,
+        "trivial_character_descent": False,
+        "reason": (
+            "P and Q contain X exponents not divisible by 5, so they do not "
+            "belong to k[u,y]"
+        ),
+        "bridge_consequence": (
+            "the constant-Jacobian support-six theorem does not apply to the "
+            "terminal block before the lower character bands are compiled"
+        ),
+    }
+
+
 def common_power_top_band() -> dict[str, object]:
     """Describe the forced common-power band in t=X*y, z=y^-1."""
 
@@ -123,13 +153,20 @@ def common_power_top_band() -> dict[str, object]:
     h = sp.Function("H")
     C = t**7 * h(t) * z**5
     return {
-        "band_chart": {"t": "X*y", "z": "y^-1", "jacobian": "[t,z]_(X,y)=-1"},
+        "band_chart": {"t": "X*y", "z": "y^-1", "jacobian": "[t,z]_(X,y)=-z"},
+        "band_bracket_rule": (
+            "[P_i(t)z^i,Q_j(t)z^j]="
+            "(i*P_i*Q_j'-j*P_i'*Q_j)z^(i+j)"
+        ),
         "root_band": str(C),
         "H_degree": 18,
-        "H_endpoint_nonvanishing": ["coeff(H,t^0) != 0", "coeff(H,t^18) != 0"],
+        "H_normalization": "H(0)=1",
+        "H_endpoint_nonvanishing": ["coeff(H,t^18) != 0"],
         "P_top_band": "t^21*H(t)^3*z^15",
-        "Q_top_band": "t^35*H(t)^5*z^25",
+        "Q_top_band": "-9/5*t^35*H(t)^5*z^25",
         "top_bracket": "0",
+        "formal_top_layer": 40,
+        "missing_zero_layers": [39, 5],
         "rhs_band": "X^4=t^4*z^4",
         "unresolved_layer_gap": 35,
     }
@@ -166,10 +203,16 @@ def residual_obligations() -> tuple[ResidualObligation, ...]:
             id="F2-NF-3",
             statement=(
                 "For each resulting polygon, enumerate every z-band down from the "
-                "common-power layer 39 to the bracket layer 4 and transcribe its "
-                "coefficient normalizations."
+                "common-power layer 40 through the 35 zero layers 39,...,5 and "
+                "the bracket layer 4, transcribe its coefficient normalizations, "
+                "and record its X exponent modulo 5."
             ),
-            needed_for=("weighted-Wronskian IR", "de Rham obstruction", "residual ideal"),
+            needed_for=(
+                "weighted-Wronskian IR",
+                "de Rham obstruction",
+                "Kummer-character gate",
+                "residual ideal",
+            ),
             source_status=(
                 "The forced terminal type-I block has zero residual obstruction; the "
                 "first potentially new obstruction depends on the missing lower bands."
@@ -181,7 +224,7 @@ def residual_obligations() -> tuple[ResidualObligation, ...]:
 def machine_certificate() -> dict[str, object]:
     P, Q, bracket = normalized_terminal_edge()
     return {
-        "schema": "plane-jc.f2-75-125-residual.v1",
+        "schema": "plane-jc.f2-75-125-residual.v3",
         "status": "partial-source-certificate-not-an-exhaustive-normal-form",
         "chain": chain_data(),
         "forced_edges": [asdict(edge) for edge in forced_edges()],
@@ -213,7 +256,16 @@ def machine_certificate() -> dict[str, object]:
             },
             "de_rham_obstruction_rank": 0,
         },
+        "terminal_kummer_characters": terminal_kummer_characters(),
         "common_power_top_band": common_power_top_band(),
+        "character_layer_envelope": {
+            "checker": "plane-jc/cas/classify_f2_75_125_layers.py",
+            "artifact": (
+                "artifacts/generated-results/"
+                "jc2_f2_75_125_character_layers.json"
+            ),
+            "status": "exact-B0-envelope-not-exhaustive-normal-form",
+        },
         "laurent_polygon_branches": {
             "status": "not-derived",
             "known_branch_count": None,

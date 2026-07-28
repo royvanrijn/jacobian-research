@@ -60,6 +60,56 @@ also gives a
 \(P=(1-Z_2)(W_1Z_1+W_2)\), \(Q=Z_2\).  It reduces the support of Long's
 displayed four-real cubic from six terms to four without changing its
 dimension or degree; no global term-minimality claim is made.
+For the remaining two-pair Image problem, the
+[Keller-constrained theorem](extended-geometry/KELLER_CONSTRAINED_SIC2.md)
+settles every normalized canonical polynomial \(p=w\mathbin{\cdot}H(z)\):
+the Keller identity and the first pure contraction force
+\(H=(b,-a)f(ax+by)\), and
+\(\mathcal E_2(gp^m)=0\) whenever \(m>\deg_z g\).  This all-degree,
+nonhomogeneous result is restricted to Keller-origin polynomials and does
+not settle arbitrary \(\operatorname{SIC}(2)\).
+The
+[bidegree-\((2,2)\) theorem](extended-geometry/TWO_PAIR_SIC_BIDEGREE22_FRONTIER.md)
+proves that the first six pure contractions cut out exactly the prime
+pair-linear one-sided nullcone.  Hence SIC(2) holds for every
+bidegree-\((2,2)\) polynomial, including all dense eight- and nine-term
+forms.  The earlier \(501\)-support census through seven terms is retained
+with its certified Laurent-curve radicals and hidden one-sided
+factorizations.
+The next balanced case has now started:
+the [bidegree-\((3,3)\) frontier](extended-geometry/TWO_PAIR_SIC_BIDEGREE33_FRONTIER.md)
+eliminates the full seven-dimensional one-sided nullcone and proves that
+moments \(2,4,6,10\) cut out exactly the nullcone on the highest
+binary-sextic summand.  Moments \(2,3\) and \(2\) respectively close the
+pure binary-quartic and binary-quadratic summands.  The mixed
+\(\operatorname{Sym}^6\oplus\operatorname{Sym}^4\oplus
+\operatorname{Sym}^2\) locus remains open, but a non-null quadratic is
+already excluded on the \(\operatorname{Sym}^4\oplus\operatorname{Sym}^2\)
+branch by an exact \(c^6\) membership.  On the
+\(\operatorname{Sym}^6\oplus\operatorname{Sym}^2\) branch,
+\(c^{25}\) membership through moment \(14\) is currently finite-field
+evidence only. The continuation is now the
+[all-degree moment--nullcone program](extended-geometry/TWO_PAIR_SIC_MOMENT_NULLCONE_PROGRAM.md):
+in
+\(\operatorname{End}(\operatorname{Sym}^d)
+\cong\bigoplus_{r=0}^d\operatorname{Sym}^{2r}\), first destabilize the
+lowest nonzero binary-form component and then force all higher components
+to share its unique high-multiplicity root. The program also proves that
+the target nullcone has dimension \(1+d(d+1)/2\), that a global \(d=3\)
+proof needs at least thirteen moment equations, and that the analogous
+moment--nullcone equality is false for every pair dimension \(n\geq3\)
+already in bidegree \((2,2)\). Exact evaluation now proves that the first
+thirteen full \((3,3)\) moments are algebraically independent. An exact
+Hilbert-series coefficient nevertheless proves that degrees
+\(1,\ldots,13\) cannot form a homogeneous system of parameters: their
+zero fiber necessarily has an extra semistable component. Replacing
+\(\mu_{13}\) by \(\mu_{14}\) gives the least-total-degree viable candidate,
+and \(\mu_1,\ldots,\mu_{12},\mu_{14}\) again have exact Jacobian rank
+thirteen while passing the necessary Hilbert test through degree \(100\).
+Whether this corrected zero fiber is precisely the nullcone remains open.
+The global quadratic discriminant is explicit, and moments
+\(1,\ldots,4\) have only the origin on the complete maximal-torus fixed
+diagonal slice.
 The [lower-face prime theorem](extended-geometry/TWO_REAL_GMC_LOWER_FACE_THEOREM.md)
 proves GMC in two real variables, completing the classification:
 `GMC(n)` holds exactly for `n<=2`.  The former
@@ -487,9 +537,12 @@ connected member is cut out by the rational integer polynomial
 `9W^4-19W^3+10W^2-8W-4`; it occurs in the weighted, cancellation, and
 quadratic-gauge maps with stable unit ranks `(1,2,2)`, reciprocal
 Laurent-support ranks `(1,2)`, and boundary nilpotency indices `(1,6,2)`.
-The verified note contains the optimized individual certificate; the
-[standalone paper](papers/common-arithmetic-fibers/main.tex) gives the
-fixed-family proof and the earlier explicit quartic certificates.
+The verified note contains the optimized individual certificate.  The
+[standalone prescribed-fiber paper](papers/common-arithmetic-fibers/main.tex)
+proves in characteristic zero that every finite etale algebra of rank at
+least three is a full Keller fiber; its broader characteristic-not-two
+supplied-presentation result is a separate, not-yet-fully-formalized
+proposition.
 The
 [universal Keller-fiber multiplicity theorem](verified/UNIVERSAL_KELLER_FIBER_MULTIPLICITY.md)
 goes beyond a fixed example: over every characteristic-zero field, every
@@ -914,7 +967,7 @@ claims are first-class `falsified` entries rather than prose-only corrections.
 
 ### Active
 
-- [Common Arithmetic Fibers of Stably Inequivalent Keller Maps](papers/common-arithmetic-fibers/main.tex)
+- [Over Characteristic Zero, Every Finite Étale Algebra of Rank at Least Three Is a Full Keller Fiber](papers/common-arithmetic-fibers/main.tex)
 
 ### Parked
 

@@ -79,10 +79,12 @@ jobs:
           ref: 0d4a9212d874226ad81ce5a926becddfa94e6a88
           path: .cache/lean-foundational
           persist-credentials: false
+      - name: Prepare the stable Lean and Mathlib overlay
+        run: bash scripts/verify_lean_foundational_map.sh --prepare-only
       - name: Install Lean and prime the Mathlib cache
         uses: leanprover/lean-action@38fbc41a8c28c4cbaec22d7f7de508ec2e7c0dd9 # v1
         with:
-          lake-package-directory: .cache/lean-foundational
+          lake-package-directory: .cache/lean-foundational-stable
           auto-config: false
           build: false
           test: false
@@ -104,7 +106,7 @@ jobs:
           retention-days: 14
 
   formal-finite-etale:
-    name: formal-finite-etale
+    name: formal-paper-certificates
     runs-on: ubuntu-latest
     timeout-minutes: 45
 
@@ -113,6 +115,10 @@ jobs:
         uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
         with:
           persist-credentials: false
+      - name: Reject Lean placeholders and explicit axioms
+        run: python3 scripts/check_lean_placeholders.py
+      - name: Enforce the paper certificate import boundary
+        run: python3 scripts/check_paper_certificate_imports.py
       - name: Install Lean and prime the Mathlib cache
         uses: leanprover/lean-action@38fbc41a8c28c4cbaec22d7f7de508ec2e7c0dd9 # v1
         with:
@@ -122,20 +128,39 @@ jobs:
           test: false
           lint: false
           use-mathlib-cache: true
-      - name: Complete and log the finite-etale Keller build
+      - name: Build and log the finite-etale fibers paper certificate
         shell: bash
         run: |
           mkdir -p artifacts/verification
           set -euo pipefail
           cd formal/finite-etale-keller
           "$HOME/.elan/bin/lake" build \
-            2>&1 | tee ../../artifacts/verification/formal-finite-etale.log
-      - name: Archive finite-etale Lean log
+            FiniteEtaleKeller.PaperCertificate \
+            2>&1 | tee ../../artifacts/verification/paper-certificate.log
+      - name: Audit finite-etale fibers theorem axiom reports
+        run: >-
+          python3 scripts/check_lean_axiom_log.py fibers
+          artifacts/verification/paper-certificate.log
+      - name: Build and log the fixed-map Hasse paper certificate
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd formal/finite-etale-keller
+          "$HOME/.elan/bin/lake" build \
+            FiniteEtaleKeller.FixedHassePaperCertificate \
+            2>&1 | tee ../../artifacts/verification/fixed-hasse-paper-certificate.log
+      - name: Audit fixed-map Hasse theorem axiom reports
+        run: >-
+          python3 scripts/check_lean_axiom_log.py fixed-hasse
+          artifacts/verification/fixed-hasse-paper-certificate.log
+      - name: Archive finite-etale Lean logs
         if: always()
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         with:
-          name: formal-finite-etale-${{ github.sha }}
-          path: artifacts/verification/formal-finite-etale.log
+          name: formal-paper-certificates-${{ github.sha }}
+          path: |
+            artifacts/verification/paper-certificate.log
+            artifacts/verification/fixed-hasse-paper-certificate.log
           if-no-files-found: error
           retention-days: 14
 
@@ -159,8 +184,10 @@ jobs:
           mkdir -p artifacts/verification
           set -o pipefail
           make verify-papers 2>&1 | tee artifacts/verification/papers.log
-      - name: Reject unresolved references in the active paper
-        run: python scripts/check_latex_log.py papers/common-arithmetic-fibers/main.log
+      - name: Reject unresolved references in the active papers
+        run: |
+          python scripts/check_latex_log.py papers/common-arithmetic-fibers/main.log
+          python scripts/check_latex_log.py papers/fixed-map-hasse-failures/main.log
       - name: Archive paper build log
         if: always()
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
@@ -177,6 +204,7 @@ jobs:
             papers/gaussian-moments-two-variables/main.pdf
             papers/sparse-minimality-gaussian-moments-dimension-three/main.pdf
             papers/common-arithmetic-fibers/main.pdf
+            papers/fixed-map-hasse-failures/main.pdf
           if-no-files-found: error
           retention-days: 14
 

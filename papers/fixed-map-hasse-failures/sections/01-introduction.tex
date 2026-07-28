@@ -1,0 +1,193 @@
+\section{Introduction}
+
+There is a particularly sharp way for a local-global principle to fail.
+Take a finite \'etale scheme \(X\) over \(\Q\).  It has no singularities,
+no positive-dimensional families of points, and no geometry in which a
+rational point can hide.  Nevertheless it may satisfy
+\[
+ X(\R)\ne\varnothing,\qquad
+ X(\Q_p)\ne\varnothing\quad\text{for every prime }p,
+ \qquad
+ X(\Q)=\varnothing.
+ \tag{1.1}\label{eq:hasse-condition}
+\]
+For a monic polynomial this says something completely concrete: at each
+completion at least one factor has a root, although none has a rational
+root.  Such polynomials are called intersective.
+
+The classical example of Berend and Bilu is
+\[
+ f_{19}(X)=(X^3-19)(X^2+X+1).
+ \tag{1.2}\label{eq:berend-bilu}
+\]
+The two factors divide the local work between them.  At primes
+\(p\equiv2\pmod3\), cubing is invertible and the cubic supplies a root.  At
+primes \(p\equiv1\pmod3\), the quadratic supplies a cube root of unity.
+Only \(2,3,\) and \(19\) require separate attention.  Globally, neither
+factor has a rational root.
+
+The companion prescribed-fiber theorem turns every finite \'etale algebra
+of rank at least three into a full fiber of a Jacobian-one map of affine
+three-space \cite{vanRijnFibers}.  In particular, it turns
+\eqref{eq:berend-bilu} into a degree-five Hasse failure.  At first sight
+this seems to settle the Keller-map version of the problem.
+
+It settles only the first quantifier order.  The prescribed-fiber
+construction begins with a polynomial and builds a map around it.  If the
+polynomial changes, the map generally changes as well.  The question that
+remained was therefore:
+
+\begin{quote}
+\emph{Can one polynomial Keller map contain infinitely many Hasse-failing
+complete fibers?}
+\end{quote}
+
+This is a different problem.  We no longer want to compile one arithmetic
+algebra into one map.  We need an entire arithmetic family to fit inside the
+target pencil of a single map.  That small change in quantifiers is where the
+problem becomes interesting.
+
+\subsection*{Finding the line}
+
+The Berend--Bilu example already suggests the family
+\[
+ f_a(X)=(X^3-a)(X^2+X+1).
+ \tag{1.3}\label{eq:intersective-family}
+\]
+For primes \(a=\ell\equiv1\pmod9\), the same local proof works uniformly.
+But the expanded polynomial
+\[
+ f_a(X)=X^5+X^4+X^3-aX^2-aX-a
+ \]
+does not look like a one-coordinate motion in the usual linear inverse
+pencil: three coefficients move at once.
+
+The useful step is almost embarrassingly small.  Center the quadratic:
+\[
+ X=S-\frac12,\qquad
+ X^2+X+1=S^2+\frac34.
+ \tag{1.4}\label{eq:centered-quadratic-intro}
+\]
+Now the parameter enters through
+\[
+ -a\left(S^2+\frac34\right),
+ \]
+so only the quadratic and constant coefficients move.  Those are exactly
+the two target coefficients in the quadratic-gauge inverse equation
+\[
+ E_{\Pi,B,C}(S)=G_\Pi(S)-\frac{g_1}{2}(BS^2+C).
+ \tag{1.5}\label{eq:inverse-intro}
+\]
+Once \eqref{eq:centered-quadratic-intro} is made, the family
+\eqref{eq:intersective-family} is no longer a search problem.  It is a
+straight line in the target of one fixed map.  This was the point at which
+the isolated example began to look like a family.
+
+This gives the geometric part of the discovery.  The arithmetic part then
+becomes unexpectedly generous.  Primality of \(a\) is not used in the local
+argument.  What is really needed is
+\[
+ a\equiv1\pmod9,\qquad a\notin\Q^3,\qquad
+ p\mid a\Longrightarrow p\equiv1\pmod3.
+ \tag{1.6}\label{eq:parameter-conditions}
+\]
+Thus the prime progression sits inside a much larger multiplicatively
+generated family.  Its congruence-and-support core is a semigroup; the
+noncube condition removes the perfect cubes, so \(\mathcal A\) itself is
+not literally closed under multiplication.  The prime family has order
+\(B/\log B\) by height; the full sufficient family has order
+\(B/\sqrt{\log B}\).
+
+\subsection*{The result}
+
+For \(a>1\), define
+\[
+ y_a=\left(-1,\frac{32a}{9},\frac{8a+1}{3}\right)
+ \in\A^3(\Q)
+ \tag{1.7}\label{eq:target-family}
+\]
+and let
+\[
+ \mathcal A=
+ \left\{
+ \begin{array}{@{}l@{}}
+ a>1:\ a\equiv1\pmod9,\ a\notin\Q^3,\\
+ \hfill p\mid a\Longrightarrow p\equiv1\pmod3
+ \end{array}
+ \right\}.
+ \tag{1.8}\label{eq:parameter-family}
+\]
+Since \(a\) is an integer, the condition \(a\notin\Q^3\) simply excludes
+perfect cubes.
+
+\begin{theorem}[Fixed-map theorem]\label{thm:main}
+There is an explicit polynomial map
+\[
+ \Phi:\A^3_{\Q}\longrightarrow\A^3_{\Q},
+ \qquad \det D\Phi=1,\qquad \gdeg(\Phi)=5,
+ \]
+such that, for every \(a\in\mathcal A\),
+\[
+ \boxed{
+ \Phi^{-1}(y_a)
+ \simeq
+ \Spec\Q[X]/\bigl((X^3-a)(X^2+X+1)\bigr).}
+ \tag{1.9}\label{eq:main-fiber}
+\]
+This is a full reduced fiber.  It has a point over \(\R\) and over every
+\(\Q_p\), but it has no \(\Q\)-point.
+\end{theorem}
+
+The targets have primitive projective coordinates
+\[
+ [1:y_a]=[9:-9:32a:24a+3],
+ \qquad H(y_a)=32a.
+ \tag{1.10}\label{eq:height-intro}
+\]
+They are therefore pairwise distinct.  The first parameter is \(a=19\), so
+the classical example is the first point on the line rather than an
+isolated construction.  The old example has not disappeared; it has found
+its natural place.
+
+\begin{theorem}[Quantitative theorem]\label{thm:count-intro}
+Let
+\[
+ M_\Phi(B)=\#\{a\in\mathcal A:H(y_a)\le B\}.
+ \]
+Then
+\[
+ \boxed{
+ M_\Phi(B)\sim
+ \frac{G_3(1)}{96\sqrt{\pi}}\,
+ \frac{B}{\sqrt{\log B}},}
+ \tag{1.11}\label{eq:count-intro}
+\]
+where
+\[
+ G_3(1)=
+ \left[
+ \frac23 L(1,\chi_{-3})
+ \prod_{p\equiv2\ (3)}(1-p^{-2})
+ \right]^{1/2}>0.
+ \tag{1.12}\label{eq:g3-intro}
+\]
+Consequently the total number of Hasse-failing rational targets of
+\(\Phi\) of height at most \(B\) is at least of order
+\(B/\sqrt{\log B}\).
+\end{theorem}
+
+The theorem counts the displayed sufficient family exactly; it does not
+claim an asymptotic for all Hasse-failing targets of \(\Phi\).  This
+distinction matters.  The bounded experiment later in the paper checks the
+family and the numerical convergence, but the asymptotic comes from the
+Euler product and Selberg--Delange.
+
+The rest of the paper follows the route by which the construction becomes
+visible.  Section~\ref{sec:fixed-map} starts from the scalar inverse
+equation, writes down the fixed map, and proves that no boundary point is
+missing from the fiber.  Section~\ref{sec:local-global} lets the two factors
+in \eqref{eq:intersective-family} divide the completions between them.
+Section~\ref{sec:counting} first counts the prime progression and then the
+larger multiplicative family.  Section~\ref{sec:minimality} returns to the
+classical degree obstruction and shows that five is not only attained, but
+forced.

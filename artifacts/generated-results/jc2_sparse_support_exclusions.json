@@ -1,0 +1,451 @@
+{
+  "affine_normalized_support": {
+    "conclusion": "every noninvertible plane Keller map has sigma_aff(F) >= 7",
+    "definition": "sigma_aff(F)=min support(N_(p,L)(F)-identity), where N_(p,L)(z)=(JF(p)L)^(-1)*(F(p+Lz)-F(p))",
+    "degree_frontier_changed": false,
+    "invariance": "polynomial invertibility is preserved by every normalization"
+  },
+  "arbitrary_degree_balanced_binomial": {
+    "canonical_residual_patterns": 20,
+    "global_no_singleton_formula": "unsat",
+    "linear_residual_masks": [
+      "0x0f",
+      "0x3f",
+      "0x5f",
+      "0x66",
+      "0x69",
+      "0x6f",
+      "0x7f",
+      "0x95",
+      "0x9a",
+      "0x9f",
+      "0xaf",
+      "0xbf",
+      "0xcf",
+      "0xdf",
+      "0xef"
+    ],
+    "presence_mask_sha256": "4d211a46e23b9549ddf4108ee292f041973d102c650d02f4dd9daab8bb0304ad",
+    "presence_masks_feasible": 85,
+    "presence_masks_total": 256,
+    "residual_pattern_table": [
+      {
+        "blocks": [
+          "02",
+          "13"
+        ],
+        "mask": "0x0f"
+      },
+      {
+        "blocks": [
+          "03",
+          "12"
+        ],
+        "mask": "0x0f"
+      },
+      {
+        "blocks": [
+          "02",
+          "15",
+          "34"
+        ],
+        "mask": "0x3f"
+      },
+      {
+        "blocks": [
+          "03",
+          "14",
+          "25"
+        ],
+        "mask": "0x3f"
+      },
+      {
+        "blocks": [
+          "02",
+          "14",
+          "36"
+        ],
+        "mask": "0x5f"
+      },
+      {
+        "blocks": [
+          "06",
+          "12",
+          "34"
+        ],
+        "mask": "0x5f"
+      },
+      {
+        "blocks": [
+          "12",
+          "56"
+        ],
+        "mask": "0x66"
+      },
+      {
+        "blocks": [
+          "03",
+          "56"
+        ],
+        "mask": "0x69"
+      },
+      {
+        "blocks": [
+          "02",
+          "13",
+          "56"
+        ],
+        "mask": "0x6f"
+      },
+      {
+        "blocks": [
+          "02",
+          "134",
+          "56"
+        ],
+        "mask": "0x7f"
+      },
+      {
+        "blocks": [
+          "02",
+          "47"
+        ],
+        "mask": "0x95"
+      },
+      {
+        "blocks": [
+          "13",
+          "47"
+        ],
+        "mask": "0x9a"
+      },
+      {
+        "blocks": [
+          "03",
+          "12",
+          "47"
+        ],
+        "mask": "0x9f"
+      },
+      {
+        "blocks": [
+          "03",
+          "15",
+          "27"
+        ],
+        "mask": "0xaf"
+      },
+      {
+        "blocks": [
+          "07",
+          "13",
+          "25"
+        ],
+        "mask": "0xaf"
+      },
+      {
+        "blocks": [
+          "03",
+          "125",
+          "47"
+        ],
+        "mask": "0xbf"
+      },
+      {
+        "blocks": [
+          "06",
+          "13",
+          "27"
+        ],
+        "mask": "0xcf"
+      },
+      {
+        "blocks": [
+          "07",
+          "12",
+          "36"
+        ],
+        "mask": "0xcf"
+      },
+      {
+        "blocks": [
+          "036",
+          "12",
+          "47"
+        ],
+        "mask": "0xdf"
+      },
+      {
+        "blocks": [
+          "027",
+          "13",
+          "56"
+        ],
+        "mask": "0xef"
+      }
+    ],
+    "residual_patterns_all_unsat": true,
+    "solver": "Z3 4.15.3 exact integer arithmetic",
+    "statement": "every exact 2+2 nonlinear support in arbitrary degree has a singleton Keller coefficient",
+    "term_order": [
+      "P_A,x",
+      "P_B,x",
+      "Q_C,y",
+      "Q_D,y",
+      "[A,C]",
+      "[A,D]",
+      "[B,C]",
+      "[B,D]"
+    ],
+    "unit_certificate": "(z*(abcd/M)/n)*(n*M) - (z*abcd-1) = 1"
+  },
+  "arbitrary_degree_cubic_shear_chain": {
+    "coefficient_ideal": [
+      "c-3*a*b",
+      "d-a*c",
+      "3*e-a*d"
+    ],
+    "factorization": [
+      "X=x+a*y^m",
+      "Y=y+b*X^3"
+    ],
+    "forced_relations": [
+      "c=3*a*b",
+      "d=3*a^2*b",
+      "e=a^3*b"
+    ],
+    "inverse": [
+      "y=Y-b*X^3",
+      "x=X-a*(Y-b*X^3)^m"
+    ],
+    "range": "every integer m >= 2 over characteristic zero",
+    "support": {
+      "P": [
+        "y^m"
+      ],
+      "Q": [
+        "x^3",
+        "x^2*y^m",
+        "x*y^(2m)",
+        "y^(3m)"
+      ]
+    },
+    "transpose_included": true
+  },
+  "arbitrary_degree_quartic_shear_chain": {
+    "coefficient_ideal": [
+      "c-4*a*b",
+      "2*d-3*a*c",
+      "3*e-2*a*d",
+      "4*f-a*e"
+    ],
+    "factorization": [
+      "X=x+a*y^m",
+      "Y=y+b*X^4"
+    ],
+    "forced_relations": [
+      "c=4*a*b",
+      "d=6*a^2*b",
+      "e=4*a^3*b",
+      "f=a^4*b"
+    ],
+    "inverse": [
+      "y=Y-b*X^4",
+      "x=X-a*(Y-b*X^4)^m"
+    ],
+    "range": "every integer m >= 2 over characteristic zero",
+    "support": {
+      "P": [
+        "y^m"
+      ],
+      "Q": [
+        "x^4",
+        "x^3*y^m",
+        "x^2*y^(2m)",
+        "x*y^(3m)",
+        "y^(4m)"
+      ]
+    },
+    "transpose_included": true
+  },
+  "arbitrary_degree_shear_chain": {
+    "coefficient_ideal": [
+      "c-2*a*b",
+      "2*d-a*c"
+    ],
+    "factorization": [
+      "X=x+a*y^m",
+      "Y=y+b*X^2"
+    ],
+    "forced_relations": [
+      "c=2*a*b",
+      "d=a^2*b"
+    ],
+    "inverse": [
+      "y=Y-b*X^2",
+      "x=X-a*(Y-b*X^2)^m"
+    ],
+    "range": "every integer m >= 2 over characteristic zero",
+    "regression_exponents": [
+      2,
+      3,
+      5,
+      11
+    ],
+    "support": {
+      "P": [
+        "y^m"
+      ],
+      "Q": [
+        "x^2",
+        "x*y^m",
+        "y^(2m)"
+      ]
+    },
+    "transpose_included": true
+  },
+  "arbitrary_degree_two_by_three": {
+    "global_no_singleton_formula": "unsat",
+    "linear_residual_mask_sha256": "17f070086059ca1536395602983fda35dff2c962ad64e057f0472987e584fb9f",
+    "linear_residual_masks": 98,
+    "presence_mask_sha256": "227bcb7b327487ec9dc6b861a75c3e1c2e693cfe3cf15726077f052407a7b0eb",
+    "presence_masks_feasible": 321,
+    "presence_masks_total": 2048,
+    "solver": "Z3 4.15.3 exact integer arithmetic",
+    "statement": "every exact 2+3 nonlinear support in arbitrary degree has a singleton Keller coefficient",
+    "term_count": 11,
+    "transpose_included": true,
+    "unit_certificate": "(z*(abcde/M)/n)*(n*M) - (z*abcde-1) = 1"
+  },
+  "balanced_binomial_census": {
+    "certificate_identity": "(z*(abcd/M)/n)*(n*M) - (z*abcd-1) = 1",
+    "certificate_sha256": "df87a3577cddd666f8f4428cf88f59c50996aab1f13b38fd32ddf548d5376ab4",
+    "degree_cap": 12,
+    "digest_encoding": "concatenated >13h records (Ax,Ay,Bx,By,Cx,Cy,Dx,Dy,ex,ey,n,mask,source)",
+    "monomial_order": "total degree, then increasing x exponent",
+    "nonlinear_monomial_count": 88,
+    "ordered_support_pairs": 14653584,
+    "survivors": 0,
+    "two_term_supports_per_coordinate": 3828,
+    "unit_certificates": 14653584
+  },
+  "balanced_trinomial_collision_census": {
+    "claim_boundary": "bounded regression only; arbitrary degree is Z3-certified",
+    "degree_cap": 6,
+    "no_singleton_supports": 1,
+    "nonlinear_monomial_count": 25,
+    "ordered_support_pairs": 5290000,
+    "survivors": [
+      {
+        "P": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            0
+          ]
+        ],
+        "Q": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            0
+          ]
+        ],
+        "classification": "directional quadratic shear exponent chart"
+      }
+    ],
+    "three_term_supports_per_coordinate": 2300
+  },
+  "claim_boundary": {
+    "arbitrary_degree_classes": [
+      "one monomial in P and at most five in Q",
+      "the transposed classes",
+      "exactly two monomials in each of P and Q",
+      "two monomials in P and three in Q",
+      "the transposed 3+2 class",
+      "two monomials in P and four in Q",
+      "the transposed 4+2 class",
+      "three monomials in each of P and Q",
+      "common monomial-ray supports",
+      "separated-axis supports"
+    ],
+    "bounded_regression": "exactly two monomials in each of P,Q, all of total degree at most 12",
+    "exact_support": "every displayed coefficient is nonzero",
+    "field": "characteristic zero",
+    "normalization": "F=(x+P,y+Q), with P,Q having no terms of degree <2",
+    "not_claimed": [
+      "invariance of support size under affine normalization",
+      "a new universal JC(2) degree bound",
+      "supports with at least seven nonlinear monomial occurrences"
+    ]
+  },
+  "directional_quadratic_shear": {
+    "coefficient_ideal": [
+      "b+2*d",
+      "2*c+e",
+      "b*f+2*c^2",
+      "2*a*f+b*c",
+      "4*a*c-b^2"
+    ],
+    "directional_form": "(P,Q)=lambda*(v,-u)*(u*x+v*y)^2 with lambda*u*v != 0",
+    "exact_chart_parametrization": [
+      "c=b^2/(4*a)",
+      "d=-b/2",
+      "e=-b^2/(2*a)",
+      "f=-b^3/(8*a^2)",
+      "a*b != 0"
+    ],
+    "inverse": "(X,Y) maps to (X-P(X,Y),Y-Q(X,Y))",
+    "support": {
+      "P": [
+        "y^2",
+        "x*y",
+        "x^2"
+      ],
+      "Q": [
+        "y^2",
+        "x*y",
+        "x^2"
+      ]
+    }
+  },
+  "schema_version": 3,
+  "software": {
+    "python": "standard library plus z3-solver",
+    "singular": "Singular for arm64-Darwin version 4.4.1 (44105, 64 bit) Nov 11 2025 16:12:34",
+    "z3": "4.15.3"
+  },
+  "support_six_exponent_classification": {
+    "solver": "Z3 4.15.3 exact integer arithmetic",
+    "splits": {
+      "1+5": {
+        "non_quartic_chain_no_singleton_formula": "unsat",
+        "survivor": "P support {(0,m)} and Q support {(4,0),(3,m),(2,2m),(1,3m),(0,4m)}, m>=2"
+      },
+      "2+4": {
+        "global_no_singleton_formula": "unsat",
+        "unit_certificate": "(z*(abcdef/M)/n)*(n*M) - (z*abcdef-1) = 1"
+      },
+      "3+3": {
+        "nonquadratic_no_singleton_formula": "unsat",
+        "survivor": "both supports equal {(2,0),(1,1),(0,2)}"
+      }
+    },
+    "statement": "every arbitrary-degree support-six exponent chart either has a singleton Keller coefficient or is one of two named shear charts",
+    "transpose_included": true
+  }
+}

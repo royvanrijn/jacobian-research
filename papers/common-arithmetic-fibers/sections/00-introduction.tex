@@ -1,9 +1,14 @@
 \section{Introduction and main result}
 
-A polynomial self-map of affine space with nonzero constant Jacobian is
-\'etale, so every one of its fibers is a finite \'etale scheme, possibly
-empty.  We study the reverse problem: which finite \'etale algebras can occur
-as entire fibers of Keller maps?
+A fiber is usually something one computes after the map has been chosen.
+Here we start at the other end.  We choose the fiber first and ask whether a
+Keller map can be built around it.
+
+There is an immediate restriction.  A polynomial self-map of affine space
+with nonzero constant Jacobian is \'etale, so every one of its fibers is a
+finite \'etale scheme, possibly empty.  The question is whether this obvious
+restriction is the only one: which finite \'etale algebras can occur as
+\emph{entire} fibers of Keller maps?
 
 The relevant condition is fullness.  Let \(K\) be a field and let
 \[
@@ -18,22 +23,67 @@ For \(y\in\A^m(K)\), we call \(F^{-1}(y)\) a \emph{full Keller fiber} if
  \operatorname{rank}_K F^{-1}(y)=\gdeg(F).
 \]
 Thus the fiber contains every generic inverse sheet; no boundary calculation
-is needed once the two ranks have been identified.
+is needed once the two ranks have been identified.  Fullness is what turns a
+special fiber from a partial coincidence into a faithful realization of the
+generic covering degree.
 
-Our main theorem begins with concrete presentation data.
+Our main theorem is the characteristic-zero statement proved end to end in
+Lean.
 
-\begin{theorem}[Polynomial-presentation theorem]\label{thm:main-intro}
+\begin{theorem}[Characteristic-zero polynomial-presentation theorem]
+\label{thm:main-intro}
+Let \(K\) have characteristic zero, and let \(P\in K[T]\) be separable of
+degree \(N\geq3\).  There are a polynomial map
+\[
+ F_P:\A^3_K\longrightarrow\A^3_K
+\]
+and a target \(y_P\in\A^3(K)\) such that
+\[
+ \det DF_P=1,\qquad
+ \gdeg(F_P)=N,\qquad
+ F_P^{-1}(y_P)\simeq\Spec K[T]/(P).
+\]
+The fiber isomorphism is natural on commutative \(K\)-algebras, every
+coordinate of \(F_P\) has degree at most \(6N+2\), and the displayed fiber is
+finite \'etale of rank \(N\).
+\end{theorem}
+
+The theorem says more than that the same number of points can be arranged.
+It realizes the quotient algebra itself, naturally over every commutative
+test algebra, and the fiber has exactly the geometric degree of the map.
+Equivalently, separability means \(\gcd(P,P')=1\); this is the
+derivative-squarefree condition intended throughout the paper.
+Theorem~\ref{thm:polynomial-realization} gives the proof.  Its exact
+paper-facing Lean declaration is
+\texttt{paperPolynomialPresentation\_pageOne}.
+
+The construction appeared only after reversing the usual direction of
+thought.  Instead of guessing three source coordinates and then trying to
+understand their fibers, we begin with the one-variable equation we want to
+solve in the inverse direction.  Its derivative will do two jobs: it is the
+unit that reconstructs a source point from a root, and it is the factor that
+disappears from the Jacobian.  To insert \(P\), we translate it and use
+\[
+ G(S)=P(a+S)-P(a)
+\]
+as the seed of this inverse equation.
+
+The explicit formulas require the translation \(a\) to satisfy two
+nonvanishing conditions.  If \(a\) is kept as supplied data, the same idea
+works under broader characteristic hypotheses.
+
+\begin{proposition}[Supplied-presentation version]\label{prop:supplied-intro}
 Assume that \(\operatorname{char}K\neq2\).  Let \(P\in K[T]\) be separable
 of degree \(N\geq3\), and let \(a\in K\) satisfy
 \[
  P^{[1]}(a)P^{[3]}(a)\neq0,
 \]
-where \(P^{[j]}\) denotes the \(j\)-th Hasse derivative.  There is an
-explicitly given polynomial map
+where \(P^{[j]}\) denotes the \(j\)-th Hasse derivative.  There are an
+explicit polynomial map
 \[
  \widetilde F_{P,a}:\A^3_K\longrightarrow\A^3_K
 \]
-and an explicitly given target \(y_{P,a}\in\A^3(K)\) such that
+and an explicit target \(y_{P,a}\in\A^3(K)\) such that
 \[
  \det D\widetilde F_{P,a}=1,\qquad
  \gdeg(\widetilde F_{P,a})=N,\qquad
@@ -41,32 +91,36 @@ and an explicitly given target \(y_{P,a}\in\A^3(K)\) such that
  \simeq\Spec K[T]/(P).
 \]
 The fiber isomorphism is natural on commutative \(K\)-algebras, every
-coordinate of \(\widetilde F_{P,a}\) has degree at most \(6N+2\), and the
-supplied \((P,a)\)-construction commutes with extension of the ground field.
-\end{theorem}
+coordinate has degree at most \(6N+2\), and the supplied
+\((P,a)\)-construction commutes with extension of the ground field.
+\end{proposition}
 
-Equivalently, separability means \(\gcd(P,P')=1\); this is the
-derivative-squarefree condition intended throughout the paper.
-Theorem~\ref{thm:polynomial-realization} gives the formulas and proof.  Its
-mechanism is a compact scalar inverse equation
+Proposition~\ref{prop:supplied-polynomial-realization} gives the formulas and
+proof, while Proposition~\ref{prop:base-change} gives scalar-extension
+compatibility.  This characteristic-\(\ne2\) proposition is not yet
+formalized end to end.
+
+The pleasing feature is that the entire three-variable map is governed by
+the compact scalar inverse equation
 \[
  E_{\Pi,B,C}(S)=0
 \]
-whose derivative is the unit used to reconstruct the source.  The same
-factor cancels in the Jacobian.  Over the generic target, the reconstruction
-identifies the actual source field with the field obtained by adjoining a
-root of \(E\).  A linear-in-\(C\) irreducibility argument then proves that
-this extension has degree \(N\).  At the distinguished target,
-\(E(S)=P(a+S)\); squarefreeness removes the derivative localization and
-gives the literal fiber scheme.  This proves fullness through
+whose derivative reconstructs the source and cancels in the Jacobian.  Over
+the generic target, the marked root \(S\) generates the actual source field.
+Because \(E\) is linear in one target coordinate, its irreducibility and
+degree are then transparent.  At the distinguished target the inverse
+equation becomes \(E(S)=P(a+S)\); squarefreeness removes the derivative
+localization and leaves the literal fiber scheme.  In one line, fullness is
 \[
  \operatorname{rank}_K\widetilde F_{P,a}^{-1}(y_{P,a})
  =N=\gdeg(\widetilde F_{P,a}).
 \]
 
-Every finite \'etale algebra over an infinite field is monogenic.  In
-characteristic zero an admissible translation always exists.  Consequently
-the concrete theorem gives the paper's principal abstract corollary:
+This is already the polynomial-presentation theorem.  To pass from a
+polynomial to an abstract algebra, one more classical observation completes
+the picture: every finite \'etale algebra over an infinite field is
+monogenic.  In characteristic zero an admissible translation always exists.
+Monogenicity therefore gives the paper's principal abstract corollary:
 
 \begin{corollary}\label{cor:main-intro}
 If \(K\) has characteristic zero, every finite \'etale \(K\)-algebra of rank
@@ -74,33 +128,38 @@ at least three occurs as a full Keller fiber of a Jacobian-one polynomial
 map \(\A^3_K\to\A^3_K\).
 \end{corollary}
 
-The word ``explicit'' applies to the supplied polynomial presentation and
-admissible translation.  Starting from an abstract finite \'etale algebra,
-the primitive element and the admissible translation are chosen
+The word ``explicit'' applies to
+Proposition~\ref{prop:supplied-intro}, where both the polynomial presentation
+and admissible translation are supplied.  In the headline theorem the
+admissible translation is chosen automatically but noncanonically.  Starting
+from an abstract finite \'etale algebra, the primitive element is also chosen
 noncanonically; the corresponding Lean construction is noncomputable and no
 functorial choice is claimed.
 
-In characteristic zero, the construction realizes every rank \(N\geq3\).
-Together with the classical Galois case of the Jacobian theorem, due to
-Campbell, Razar, and Wright, it gives the possible nonzero ranks
+There is one small rank that does not join the pattern.  In characteristic
+zero, the construction realizes every rank \(N\geq3\).  The classical
+Galois case of the Jacobian theorem, due to Campbell, Razar, and Wright,
+excludes degree two.  Thus the possible nonzero ranks are
 \[
  1,3,4,\ldots.
 \]
 This classification is a corollary with an external input, not part of the
 formalized construction.
 
-The proof is organized in the same order as the construction.  Section
-\ref{sec:gauge} designs the inverse equation and polynomial pullback.
-Section~\ref{sec:reconstruction} proves root-to-source reconstruction, the
-literal fiber theorem, and the function-field comparison.  Section
-\ref{sec:prescribing} passes from a separable presentation to an abstract
-finite \'etale algebra and records scalar extension.  Section
-\ref{sec:example} gives one explicit arithmetic fiber.  The appendices record
-the coefficientwise pullback identities and the Lean correspondence.
+The paper follows the route by which the construction becomes visible.
+Section~\ref{sec:gauge} begins with the inverse equation and pulls it back to
+a polynomial map.  Section~\ref{sec:reconstruction} shows that a marked root
+and a source point are the same data, then identifies the actual
+function-field degree.  Section~\ref{sec:prescribing} inserts a prescribed
+separable polynomial and then an abstract finite \'etale algebra.
+Section~\ref{sec:example} lets the construction run on a concrete arithmetic
+fiber.  The appendices keep the coefficient expansion and Lean
+correspondence visible without interrupting the main story.
 
-The wider characteristic-\(\ne2\) supplied-presentation theorem is proved
-directly here.  The current Lean development formalizes its
-characteristic-zero specialization; its general files still assume
-\texttt{CharZero}.  The exact nonproperness locus, symmetric monodromy, Hilbertian
-specialization, and stable compositional atomicity are separate geometric
-and monodromy results.  They are not used here.
+The formal boundary is exact.  The characteristic-zero headline theorem and
+abstract corollary are formalized end to end.  The separate
+characteristic-\(\ne2\) supplied-presentation proposition is proved directly
+here, but its current Lean files still assume \texttt{CharZero}.  Exact
+nonproperness, symmetric monodromy, Hilbertian specialization, and stable
+compositional atomicity belong to separate geometric and monodromy results;
+none is used in this paper.

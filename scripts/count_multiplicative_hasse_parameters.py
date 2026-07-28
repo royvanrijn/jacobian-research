@@ -97,9 +97,9 @@ def enumerate_parameters(bound: int) -> dict[str, object]:
 
     assert set(clean).issubset(broad)
     for parameter in broad:
-        coordinates = (9, 9, 32 * parameter, 24 * parameter + 3)
+        coordinates = (9, -9, 32 * parameter, 24 * parameter + 3)
         assert math.gcd(*coordinates) == 1
-        assert max(coordinates) == 32 * parameter
+        assert max(map(abs, coordinates)) == 32 * parameter
 
     allowed_primes = [prime for prime in primes if prime % 9 == 1]
     truncated_product = math.prod(
@@ -154,8 +154,8 @@ def enumerate_parameters(bound: int) -> dict[str, object]:
             "a>1, a=1 mod 9, every prime divisor is 1 mod 3, "
             "and a is not a cube"
         ),
-        "target": "(1,32*a/9,(8*a+1)/3)",
-        "primitive_coordinates": "[9:9:32*a:24*a+3]",
+        "target": "(-1,32*a/9,(8*a+1)/3)",
+        "primitive_coordinates": "[9:-9:32*a:24*a+3]",
         "height": "32*a",
         "clean_count": len(clean),
         "broad_count": len(broad),

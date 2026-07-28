@@ -26,6 +26,11 @@ three-dimensional counterexample construction.
 | [POISSON_SQUARE_RIGIDITY.md](POISSON_SQUARE_RIGIDITY.md) | Reduced classification and exact eight-prime embedded filtration of the three-layer `[P,Q]=X^2` box |
 | [NEXT_DEGREE_FRONTIER.md](NEXT_DEGREE_FRONTIER.md) | Deterministic 125--150 candidate-table regression and ranked worklist |
 | [SEARCH_POLICY.md](SEARCH_POLICY.md) | Consequences for future JC(2) computation |
+| [CERTIFIED_SPARSE_SUPPORT_EXCLUSIONS.md](CERTIFIED_SPARSE_SUPPORT_EXCLUSIONS.md) | Exact arbitrary-degree classification of every normalized support with at most six nonlinear monomial occurrences and the affine-normalized support lower bound seven |
+| [AFFINE_SUPPORT_NEWTON_BRIDGE.md](AFFINE_SUPPORT_NEWTON_BRIDGE.md) | Exact obstruction to a coarse Newton/support bridge and the Kummer-character gate for the live `(75,125)` terminal block |
+| [F2_75_125_DERIVATION.md](F2_75_125_DERIVATION.md) | Corrected \([t,z]=-z\) recurrence and exact B0/Kummer classification of the 35 missing F2 layers |
+| [F2_BOUNDARY_HANDOFF.md](F2_BOUNDARY_HANDOFF.md) | Four exhaustive common-edge contact packets, exact obstruction to promoting them to boundary rows, and stopping verdict for the degree-specific F2 route |
+| [UNIBRANCH_SPECTATOR_COUNTERMODELS.md](UNIBRANCH_SPECTATOR_COUNTERMODELS.md) | Universal finite-free unibranch packets with an étale spectator; exact refutation of a purely local exclusion and isolation of the global \(\mathbb A^2\)-open obstruction |
 | [cas/README.md](cas/README.md) | Replay commands, hashes, and independent checker |
 | [AUDIT_COMPLETION.md](AUDIT_COMPLETION.md) | Objective-by-objective completion and residual limitations |
 | [Weighted tangent suspension](../extended-geometry/WEIGHTED_TANGENT_SUSPENSION.md) | Exact Poisson-square and weighted-Wronskian bridge from the weighted JC(3) model |
@@ -44,6 +49,11 @@ Current scoped conclusion:
 > In degree four, Orevkov's budget leaves exactly a one-boundary \(3+1\)
 > jump packet or a ramified-plus-unramified two-boundary packet; the lone
 > cusp without a \(2+2\) self-collision is excluded by monodromy.
+>
+> In fixed tangent-to-identity coordinates, every exact support with at most
+> six nonlinear monomial occurrences is certified invertible in arbitrary
+> degree.  Consequently any noninvertible plane Keller map has minimum
+> support at least seven across all tangent-to-identity affine normalizations.
 
 This does not prove JC(2), require both degrees to be at least 125, or show
 that any candidate at or beyond 125 exists.  The finite-flatness theorem

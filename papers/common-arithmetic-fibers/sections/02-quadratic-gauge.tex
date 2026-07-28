@@ -11,8 +11,10 @@ Let
  \qquad g_1g_3g_N\neq0.
  \label{eq:seed}
 \end{equation}
-The construction is easiest to read backwards, from the inverse problem.
-Begin with birational coordinates \((\Pi,S,Q)\) and put
+The displayed map will eventually look large, but its design is small.  The
+construction is easiest to read backwards, from the inverse problem.  We
+first pretend that the marked inverse root \(S\) is already known, introduce
+birational coordinates \((\Pi,S,Q)\), and put
 \begin{equation}
  D=1-SQ+\Pi S^2.
  \label{eq:D-compact}
@@ -59,7 +61,10 @@ holds by construction, and its derivative satisfies
  \label{eq:D-derivative}
 \end{equation}
 
-This identity already gives the root-to-source reconstruction.  Fix
+This is the moment on which the construction turns.  The inverse equation
+has been arranged so that its derivative is not an auxiliary expression:
+it is the missing source-chart denominator itself.  The same identity
+already gives the root-to-source reconstruction.  Fix
 \((\pi,b,c)\in K^*\times K^2\), let \(s\) be a root of
 \(E_{\pi,b,c}\), and suppose \(E_{\pi,b,c}'(s)\) is invertible.  Then the
 source point is recovered by the single formula
@@ -86,7 +91,8 @@ The Jacobian calculation is already visible in these coordinates.  At fixed
 \end{equation}
 Thus any birational source chart with Jacobian \(D^{-1}\) will produce a
 constant Jacobian \(-2\).  What remains is to find such a chart for which
-\(B\) and \(C\) pull back to polynomials.
+\(B\) and \(C\) pull back to polynomials.  In other words, the inverse
+problem has solved the Jacobian problem; polynomiality is the last piece.
 
 \subsection{The polynomial pullback}
 
@@ -116,7 +122,8 @@ Consequently, the two Jacobian factors are
  D^{-1}\cdot(-2D)=-2.
 \]
 
-The particular polynomial \(q\) in \eqref{eq:tq} is chosen so that the
+The particular polynomial \(q\) in \eqref{eq:tq} is the answer to that last
+piece: it is chosen so that the
 compact coordinates \eqref{eq:B-compact}--\eqref{eq:C-compact} have no
 denominators after this substitution.  Expanding their pullbacks gives the
 polynomial map \(F_G=(\Pi,B,C):\A^3_K\to\A^3_K\):
@@ -129,8 +136,8 @@ polynomial map \(F_G=(\Pi,B,C):\A^3_K\to\A^3_K\):
        -\sum_{k=4}^N(k-2)\frac{g_k}{g_1}(xq)^k.
  \label{eq:gauge-map}
 \end{align}
-The long formula is therefore the polynomial pullback of the simple inverse
-problem above, not a formula guessed in the source coordinates.  Once
+The long formula is therefore the shadow of the simple inverse problem
+above, not a formula guessed in the source coordinates.  Once
 \eqref{eq:tq} is fixed, the pullback is forced coefficient by coefficient.
 Appendix~\ref{app:gauge-identities} records that expansion in full.
 
@@ -149,9 +156,11 @@ quotient \cite{Shaska}.  Neither viewpoint replaces the derivative-unit
 formula \eqref{eq:boxed-root-reconstruction}, which is what identifies the
 complete fiber functor for an arbitrary inverse polynomial.
 
-Thus the three-variable inverse problem is governed by the single equation
-\(E_{\Pi,B,C}(S)=0\), and the same derivative that controls reconstruction
-is exactly the factor cancelled in the Jacobian.
+The lesson we keep from the cubic is not a particular list of coefficients.
+It is that the three-variable inverse problem can be governed by the single
+equation \(E_{\Pi,B,C}(S)=0\), with the same derivative controlling
+reconstruction and disappearing from the Jacobian.  Once phrased this way,
+there is no reason for the inverse polynomial to remain cubic.
 
 \section{Localized fiber reconstruction and geometric degree}
 \label{sec:reconstruction}
@@ -217,7 +226,10 @@ For the cubic seed, this agrees with the normalized marked-factor
 interpretation above.  The displayed calculation proves that the same
 cancellation persists for every seed satisfying \(g_1g_3g_N\neq0\).
 
-We now identify the entire fiber.  Let $A$ be an arbitrary commutative
+We now identify the entire fiber.  This is where it matters that the
+construction was designed from the inverse equation: a root will recover a
+source point, and a source point will recover the same root.  Let $A$ be an
+arbitrary commutative
 $K$-algebra.  An $A$-point $(x,y,z)$ above $(\pi,b,c)$ satisfies
 \[
  tq=\pi.
@@ -292,8 +304,10 @@ that $A(S)$ divides the nonzero scalar $-\lambda$ in $L[S]$.  Thus $A$ is a
 unit, a contradiction.  Therefore $E_{\Pi,B,C}$ is irreducible of degree $N$
 over $K(\Pi,B,C)$.
 
-We finish by comparing that root extension with the actual source field.
-On the dense chart \(t\neq0\), the change of variables is birational:
+We finish by checking that the scalar inverse equation describes the actual
+map rather than only a convenient auxiliary cover.  This is the
+function-field comparison.  On the dense chart \(t\neq0\), the change of
+variables is birational:
 \[
  K(x,y,z)=K(\Pi,S,Q).
 \]

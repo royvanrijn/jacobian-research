@@ -168,6 +168,15 @@ F2 `j=1` normal-form proposition: prove the `gamma` branches exhaustive and
 produce the complete Laurent polygon pairs.  Until that theorem is derived,
 `(75,125)` has no honest complete band input for the de Rham engine.
 
+There is now an exact pre-polygon envelope.  In the F2 chart
+`t=X*y,z=y^-1`, one has `[t,z]_(X,y)=-z`, so the constant-`J` compiler above
+cannot be reused verbatim.  The generalized recurrence and all 35
+character-resolved zero layers are replayed by
+[`cas/classify_f2_75_125_layers.py`](cas/classify_f2_75_125_layers.py).
+That B0 envelope is finite and exact, but it deliberately remains an
+over-approximation until the `gamma`/polygon theorem supplies the masks
+required by this front end.
+
 ## 5. Reproduction
 
 Run:

@@ -1,13 +1,21 @@
 \subsection{Scalar extension and arithmetic transfer}
 \label{sec:realization}
 
+Nothing arithmetic should be lost while building the map.  Because every
+coordinate is obtained from the supplied coefficients by field operations,
+the construction follows the algebra through every extension of the ground
+field.  This simple observation is what lets signatures, local
+factorizations, and rational-point behavior pass unchanged into the Keller
+fiber.
+
 \begin{proposition}[Compatibility with extension of scalars]
 \label{prop:base-change}
 Let \(K\hookrightarrow K'\) be a field extension with
 \(\operatorname{char}K\neq2\).  For a separable \(P\in K[T]\) and a
 translation \(a\in K\) satisfying
 \(P^{[1]}(a)P^{[3]}(a)\neq0\), the map \(\widetilde F_G\) of
-Theorem~\ref{thm:polynomial-realization}, after coefficientwise extension to
+Proposition~\ref{prop:supplied-polynomial-realization}, after coefficientwise
+extension to
 \(K'\), is exactly the map obtained from the same \(P\) and \(a\) over
 \(K'\).  Its distinguished fiber satisfies
 \[
@@ -27,7 +35,7 @@ therefore commutes with scalar extension.  Separability and the two
 nonvanishing Hasse coefficients are preserved by field extension.  The
 fiber identity is the usual base-change isomorphism for a polynomial
 quotient, combined with
-Theorem~\ref{thm:polynomial-realization}.
+Proposition~\ref{prop:supplied-polynomial-realization}.
 \end{proof}
 
 \begin{remark}[Supplied data versus automatic choices]\label{rem:base-change-choice}
@@ -70,7 +78,7 @@ It therefore preserves:
 \item the existence or nonexistence of rational and local points.
 \end{itemize}
 Thus an arithmetic example built as a finite \'etale algebra of rank at least
-three can be transferred without alteration to a full Keller fiber.
+three can be carried, without alteration, into a full Keller fiber.
 Proposition~\ref{prop:base-change} gives the corresponding compatibility with
 local fields and other scalar extensions.
 \end{corollary}

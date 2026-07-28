@@ -1,0 +1,45 @@
+{
+  "base_field": "Q",
+  "factor_coefficients_ascending": [
+    [
+      "-19",
+      "0",
+      "0",
+      "1"
+    ],
+    [
+      "1",
+      "1",
+      "1"
+    ]
+  ],
+  "generated_outputs": {
+    "certificate": "artifacts/generated-results/common_arithmetic_fibers_explicit_quintic.json",
+    "lean": "formal/finite-etale-keller/FiniteEtaleKeller/GeneratedPaperExample.lean",
+    "sage": "artifacts/generated-results/common_arithmetic_fibers_explicit_quintic.sage",
+    "sympy": "artifacts/generated-results/common_arithmetic_fibers_explicit_quintic.py",
+    "tex": "artifacts/generated-results/common_arithmetic_fibers_explicit_quintic.tex"
+  },
+  "integral_output_scaling": [
+    "1",
+    "19",
+    "19"
+  ],
+  "jacobian_one_output_scaling": [
+    "1",
+    "-1/2",
+    "1"
+  ],
+  "lean_namespace": "FiniteEtaleKeller.GeneratedPaperExample",
+  "name": "Berend--Bilu explicit quintic Keller fiber",
+  "schema": "common-arithmetic-fibers/explicit-example-spec/v1",
+  "translation": "0",
+  "variables": {
+    "inverse": "S",
+    "source": [
+      "x",
+      "y",
+      "z"
+    ]
+  }
+}

@@ -15,7 +15,7 @@ import FiniteEtaleKeller.GeneralGaugeLocalizedFiber
 import FiniteEtaleKeller.GenericInverseIrreducibility
 import FiniteEtaleKeller.GeneralGaugeFunctionField
 import FiniteEtaleKeller.GeneralGaugeFullGenericDegree
-import FiniteEtaleKeller.PageOneTheorem
+import FiniteEtaleKeller.PaperCertificate
 
 /-!
 # Public verification surface
@@ -281,6 +281,19 @@ example (P : K[X]) (hP : Squarefree P) (hdeg : 3 ≤ P.natDegree) :
     AutomaticPageOneCertificate P hP hdeg :=
   automaticRealization_pageOne P hP hdeg
 
+/-- Exact signature guard for the paper's headline theorem.  Unlike the
+internal certificate constructor, this public interface takes the paper's
+`Separable` hypothesis. -/
+example (P : K[X]) (hP : P.Separable) (hdeg : 3 ≤ P.natDegree) :
+    AutomaticPageOneCertificate P hP.squarefree hdeg :=
+  paperPolynomialPresentation_pageOne P hP hdeg
+
+/-- Exact signature guard for the paper's abstract finite-étale corollary. -/
+example (A : Type u) [CommRing A] [Algebra K A] [Algebra.Etale K A]
+    (hrank : 3 ≤ Module.finrank K A) :
+    AbstractFiniteEtalePageOneCertificate (K := K) A hrank :=
+  paperAbstractFiniteEtale_pageOne A hrank
+
 /-- Signature guard for the direct standard-object function-field degree
 endpoint carried by the page-one certificate. -/
 example (P : K[X]) (hdeg : 3 ≤ P.natDegree) :
@@ -339,5 +352,8 @@ example (P : K[X]) (hdeg : 3 ≤ P.natDegree) :
 #print axioms automaticRealizationMap_certificate
 #print axioms automaticJacobianOneFiberRepresentingEquiv_natural
 #print axioms automaticRealization_pageOne
+#print axioms paperPolynomialPresentation_pageOne
+#print axioms abstractFiniteEtale_pageOne
+#print axioms paperAbstractFiniteEtale_pageOne
 
 end FiniteEtaleKeller

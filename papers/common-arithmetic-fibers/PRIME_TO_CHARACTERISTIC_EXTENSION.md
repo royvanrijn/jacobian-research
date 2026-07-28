@@ -443,7 +443,7 @@ degree-three map.
 
 ### What is not proved here
 
-The active paper now proves a supplied-presentation theorem in every
+The active paper now proves a supplied-presentation proposition in every
 characteristic different from two: the separable polynomial presentation and
 a translation with nonzero first and third Hasse coefficients are part of the
 input.  This draft should not replace that conditional statement by the claim
@@ -457,8 +457,9 @@ realizable in every characteristic. Remaining issues include:
 - the correct rank classification in positive characteristic.
 
 A safe broader manuscript would retain the active supplied-presentation
-theorem, keep the automatic abstract corollary in characteristic zero, and
-add Theorem 1.1 as a separate positive-characteristic headline.
+proposition, keep the automatic characteristic-zero theorem as the headline,
+and add Theorem 1.1 as a separate positive-characteristic result only after
+its relationship to the main formal theorem is made explicit.
 
 ## 6. Literature and provenance boundary
 

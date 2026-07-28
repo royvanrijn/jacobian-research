@@ -1,15 +1,22 @@
 \begin{abstract}
-Let \(K\) be a field of characteristic different from \(2\).  Given a
-separable polynomial \(P\in K[T]\) of degree \(N\geq3\) and a translation
-\(a\in K\) at which the first and third Hasse derivatives of \(P\) are
-nonzero, we construct an explicit polynomial map
-\(F:\A^3_K\to\A^3_K\) with \(\det DF=1\), geometric degree \(N\), and a
+A Keller map can only have finite \'etale fibers.  We ask the reverse
+question: given a finite \'etale algebra, can it be made into the whole
+fiber of such a map?  Over a field \(K\) of characteristic zero, the answer
+is yes in every rank at least three.  More precisely, for every separable
+polynomial \(P\in K[T]\) of degree \(N\geq3\), we construct a polynomial map
+\(F_P:\A^3_K\to\A^3_K\) with \(\det DF_P=1\), geometric degree \(N\), and a
 distinguished full fiber naturally isomorphic to \(\Spec K[T]/(P)\).
-Consequently, in characteristic zero, every finite \'etale \(K\)-algebra of
-rank at least three occurs as a full Keller fiber.  For supplied presentation
-data the construction commutes with scalar extension; the presentation and
-translation chosen for an abstract finite \'etale algebra are noncanonical.
-The characteristic-zero specialization, including automatic translation,
-the function-field comparison, base change, and the abstract finite-\'etale
-corollary, is formalized in Lean.
+
+The construction becomes simple when read backwards.  A one-variable
+inverse equation supplies a marked root; its derivative reconstructs the
+source and, at the same time, is exactly the factor that cancels from the
+Jacobian.  A translation inserts the prescribed polynomial into this
+equation.  The characteristic-zero theorem---including the automatic
+translation, function-field comparison, and abstract finite-\'etale
+corollary---is formalized in Lean.  Over a field of characteristic different
+from \(2\), the same formulas also give an explicit supplied-presentation
+result whenever the first and third Hasse coefficients at the chosen
+translation are nonzero.  That broader result commutes with scalar extension
+but is not yet formalized end to end.  Choices made from an abstract finite
+\'etale algebra are noncanonical.
 \end{abstract}

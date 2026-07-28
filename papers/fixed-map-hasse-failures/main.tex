@@ -1,0 +1,49 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,array,mathtools,microtype}
+\usepackage[T1]{fontenc}
+\usepackage[hidelinks]{hyperref}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{definition}[theorem]{Definition}
+\newcommand{\A}{\mathbb A}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\F}{\mathbb F}
+\newcommand{\Spec}{\operatorname{Spec}}
+\newcommand{\gdeg}{\operatorname{gdeg}}
+\newcommand{\HP}{\mathrm{HP}}
+\numberwithin{equation}{section}
+
+\title{Quantitative Hasse-Principle Failures\\
+in the Fibers of a Fixed Keller Map}
+\author{Roy van Rijn\\{\small Independent researcher}}
+\date{28 July 2026}
+\hypersetup{
+  pdftitle={Quantitative Hasse-Principle Failures in the Fibers of a Fixed Keller Map},
+  pdfauthor={Roy van Rijn},
+  pdfsubject={Hasse-principle failures in full fibers of a fixed polynomial Keller map},
+  pdfkeywords={Keller map, Hasse principle, intersective polynomial,
+    finite etale scheme, Selberg--Delange, local-global principle}
+}
+
+\begin{document}
+\maketitle
+
+\input{sections/00-abstract}
+\input{sections/01-introduction}
+\input{sections/02-fixed-map}
+\input{sections/03-local-global}
+\input{sections/04-counting}
+\input{sections/05-minimality}
+\input{sections/06-verification}
+\input{sections/07-discussion}
+\input{sections/08-references}
+
+\end{document}

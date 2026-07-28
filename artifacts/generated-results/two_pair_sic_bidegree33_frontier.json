@@ -1,0 +1,241 @@
+{
+  "format": "two-pair-sic-bidegree33-frontier-v3",
+  "field": "characteristic zero",
+  "full_bidegree_33": {
+    "coefficient_count": 16,
+    "one_sided_parameters": 7,
+    "nullcone_dimension": 7,
+    "nullcone_projective_degree": 20,
+    "nullcone_groebner_basis_size": 148,
+    "full_moment_jacobian": {
+      "moment_orders": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "coefficient_point": [
+        [
+          2,
+          2,
+          -4,
+          0
+        ],
+        [
+          4,
+          3,
+          2,
+          0
+        ],
+        [
+          3,
+          1,
+          -1,
+          4
+        ],
+        [
+          -2,
+          0,
+          -2,
+          -3
+        ]
+      ],
+      "minor_columns_zero_based": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "minor_variables": [
+        "c_03",
+        "c_10",
+        "c_11",
+        "c_12",
+        "c_13",
+        "c_20",
+        "c_21",
+        "c_22",
+        "c_23",
+        "c_30",
+        "c_31",
+        "c_32",
+        "c_33"
+      ],
+      "determinant": "-11792719082090571744983672290389653091986140583570062314413212459556032938621403529505763494099861155698077409769607160426893847287266706650473935763601958109845229289334738976493100630758257548210150549055848061679962242522080314516074573034684416000000000000000000000000000000000000000000000000",
+      "rank": 13,
+      "conclusion": "the first thirteen full moments are algebraically independent"
+    },
+    "global_quadratic_projection": {
+      "binary_quadratic": "r0*X^2+2*r1*X*T+r2*T^2",
+      "r0": "(3*c10+2*c21+3*c32)/10",
+      "r1": "(-9*c00-c11+c22+9*c33)/20",
+      "r2": "-(3*c01+2*c12+3*c23)/10",
+      "discriminant": "r1^2-r0*r2"
+    },
+    "diagonal_moment_slice": {
+      "slice": "c_ij=0 for i!=j",
+      "dimension": 4,
+      "moment_orders": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "groebner_basis_size": 10,
+      "radical_power_certificate": [
+        7,
+        7,
+        7,
+        7
+      ],
+      "radical": "(c00,c11,c22,c33)",
+      "conclusion": "the torus-fixed diagonal slice has no nonzero moment-zero point"
+    },
+    "normalized_nonnull_quadratic_branch": {
+      "normal_form": "F2=2*X*T",
+      "variables": 12,
+      "equations": "mu_2 through mu_13",
+      "residual_torus_weights": [
+        6,
+        4,
+        2,
+        0,
+        -2,
+        -4,
+        -6,
+        4,
+        2,
+        0,
+        -2,
+        -4
+      ],
+      "invariant_monomial_counts_by_order": {
+        "2": 15,
+        "3": 57,
+        "4": 192,
+        "5": 564,
+        "6": 1508,
+        "7": 3692,
+        "8": 8438,
+        "9": 18146,
+        "10": 37076,
+        "11": 72396,
+        "12": 135918,
+        "13": 246354
+      },
+      "interpretation": "raw order-13 expansion has up to 246354 invariant monomials; use residual-weight sparse elimination"
+    },
+    "status": "exact nullcone elimination proved; equality with the full moment zero set remains open"
+  },
+  "binary_sextic_slice": {
+    "dimension": 7,
+    "decomposition_label": "Sym^6",
+    "moment_orders": [
+      2,
+      4,
+      6,
+      10
+    ],
+    "nullcone": "binary sextics of the form L^4*Q",
+    "nullcone_dimension": 4,
+    "nullcone_projective_degree": 12,
+    "nullcone_generators": [
+      "10*s3^2-15*s2*s4+6*s1*s5-s0*s6",
+      "5*s2*s3*s5-9*s1*s4*s5+5*s0*s5^2-10*s2^2*s6+15*s1*s3*s6-6*s0*s4*s6",
+      "25*s2*s3*s4-45*s1*s4^2-45*s2^2*s5+64*s1*s3*s5+5*s0*s4*s5+5*s1*s2*s6-9*s0*s3*s6",
+      "5*s1*s3*s4-10*s0*s4^2-9*s1*s2*s5+15*s0*s3*s5+5*s1^2*s6-6*s0*s2*s6",
+      "45*s2^2*s5^2-64*s1*s3*s5^2+20*s0*s4*s5^2-50*s2^2*s4*s6+120*s0*s4^2*s6+130*s1*s2*s5*s6-216*s0*s3*s5*s6-75*s1^2*s6^2+90*s0*s2*s6^2",
+      "75*s2^2*s4*s5-180*s0*s4^2*s5-192*s1*s2*s5^2+320*s0*s3*s5^2-100*s2^2*s3*s6+225*s1*s2*s4*s6-60*s0*s3*s4*s6-103*s0*s2*s5*s6+15*s0*s1*s6^2",
+      "75*s1*s2*s4*s5-100*s0*s3*s4*s5-192*s1^2*s5^2+225*s0*s2*s5^2-100*s1*s2*s3*s6+225*s1^2*s4*s6-50*s0*s2*s4*s6-101*s0*s1*s5*s6+18*s0^2*s6^2",
+      "1875*s2^2*s4^2-4500*s0*s4^3+1600*s0*s3*s4*s5-12288*s1^2*s5^2+14400*s0*s2*s5^2-4500*s2^3*s6+1600*s1*s2*s3*s6+14400*s1^2*s4*s6-8650*s0*s2*s4*s6-4864*s0*s1*s5*s6+927*s0^2*s6^2",
+      "75*s1*s2*s4^2-100*s0*s3*s4^2-192*s1^2*s4*s5+225*s0*s2*s4*s5-180*s1*s2^2*s6+320*s1^2*s3*s6-60*s0*s2*s3*s6-103*s0*s1*s4*s6+15*s0^2*s5*s6",
+      "45*s1^2*s4^2-50*s0*s2*s4^2-64*s1^2*s3*s5+130*s0*s1*s4*s5-75*s0^2*s5^2+20*s1^2*s2*s6+120*s0*s2^2*s6-216*s0*s1*s3*s6+90*s0^2*s4*s6"
+    ],
+    "radical_power_certificate": [
+      1,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "conclusion": "the binary-sextic slice contains no SIC(2) counterexample"
+  },
+  "binary_quartic_slice": {
+    "dimension": 5,
+    "decomposition_label": "Sym^4",
+    "moment_orders": [
+      2,
+      3
+    ],
+    "nullcone": "binary quartics of the form L^3*R",
+    "nullcone_dimension": 3,
+    "nullcone_projective_degree": 6,
+    "conclusion": "moments 2 and 3 generate the nullcone ideal"
+  },
+  "binary_quadratic_slice": {
+    "dimension": 3,
+    "decomposition_label": "Sym^2",
+    "moment_orders": [
+      2
+    ],
+    "nullcone": "binary quadratics of the form L^2",
+    "nullcone_dimension": 2,
+    "nullcone_projective_degree": 2,
+    "conclusion": "moment 2 generates the nullcone ideal"
+  },
+  "mixed_quartic_quadratic_branch": {
+    "normal_form": "non-null quadratic 2*c*X*T",
+    "moment_orders": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "field": "characteristic zero",
+    "certificate": "c^6 lies in the homogeneous moment ideal",
+    "minimal_power_in_checked_basis": 6,
+    "conclusion": "the Sym^4+Sym^2 branch with non-null quadratic contains no SIC(2) counterexample"
+  },
+  "mixed_sextic_quadratic_experiment": {
+    "normal_form": "non-null quadratic 2*c*X*T",
+    "moment_orders": [
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14
+    ],
+    "field": "GF(32003)",
+    "groebner_basis_size": 7576,
+    "observed_power": 25,
+    "certificate": "c^25 reduces to zero while c^24 does not",
+    "status": "finite-field computation only; exact characteristic-zero membership remains open"
+  },
+  "reproduce": ".venv/bin/python scripts/verify_two_pair_sic_bidegree33_sextic_slice.py"
+}

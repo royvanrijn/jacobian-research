@@ -42,6 +42,7 @@ ACTIVE_OPEN = {
     "OP-LR-II",
     "OP-LR-NE",
     "OP-RITT",
+    "OP-SIC2-MN",
     "OP-SUSP",
     "OP-UG3",
 }

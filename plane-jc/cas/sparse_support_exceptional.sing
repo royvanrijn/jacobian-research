@@ -1,0 +1,307 @@
+// Exact coefficient and inverse certificates for the sparse survivor charts.
+//
+// The exponent m is arbitrary in characteristic zero.  After dividing the
+// two Jacobian coefficients by m, their coefficient ideal is
+//
+//   (c - 2ab, 2d - ac).
+//
+// This Singular replay checks its saturated Groebner description and the
+// inverse identities in the representative m=5 member.
+
+option(redSB);
+
+ring formulaRing = 0,(x,y,f,e,d,c,b,a),dp;
+poly seed = a*y^5;
+poly quadraticResponse = b*x^2+c*x*y^5+d*y^10;
+poly quadraticKeller =
+  diff(seed,x)+diff(quadraticResponse,y)
+  +diff(seed,x)*diff(quadraticResponse,y)
+  -diff(seed,y)*diff(quadraticResponse,x);
+poly expectedQuadraticKeller =
+  5*(c-2*a*b)*x*y^4+5*(2*d-a*c)*y^9;
+if (quadraticKeller != expectedQuadraticKeller)
+{
+  ERROR("the quadratic shear-chain coefficient formula failed");
+}
+
+poly cubicResponse = b*x^3+c*x^2*y^5+d*x*y^10+e*y^15;
+poly cubicKeller =
+  diff(seed,x)+diff(cubicResponse,y)
+  +diff(seed,x)*diff(cubicResponse,y)
+  -diff(seed,y)*diff(cubicResponse,x);
+poly expectedCubicKeller =
+  5*(c-3*a*b)*x^2*y^4
+  +10*(d-a*c)*x*y^9
+  +5*(3*e-a*d)*y^14;
+if (cubicKeller != expectedCubicKeller)
+{
+  ERROR("the cubic shear-chain coefficient formula failed");
+}
+
+poly quarticResponse =
+  b*x^4+c*x^3*y^5+d*x^2*y^10+e*x*y^15+f*y^20;
+poly quarticKeller =
+  diff(seed,x)+diff(quarticResponse,y)
+  +diff(seed,x)*diff(quarticResponse,y)
+  -diff(seed,y)*diff(quarticResponse,x);
+poly expectedQuarticKeller =
+  5*(c-4*a*b)*x^3*y^4
+  +10*(d-3*a*c/2)*x^2*y^9
+  +15*(e-2*a*d/3)*x*y^14
+  +5*(4*f-a*e)*y^19;
+if (quarticKeller != expectedQuarticKeller)
+{
+  ERROR("the quartic shear-chain coefficient formula failed");
+}
+
+ring coefficientRing = 0,(z,d,c,b,a),dp;
+ideal coefficientIdeal =
+  c-2*a*b,
+  2*d-a*c,
+  z*a*b*c*d-1;
+ideal coefficientBasis = std(coefficientIdeal);
+
+if (reduce(c-2*a*b,coefficientBasis) != 0)
+{
+  ERROR("the first shear-chain relation left the Groebner ideal");
+}
+if (reduce(d-a^2*b,coefficientBasis) != 0)
+{
+  ERROR("the second shear-chain relation left the Groebner ideal");
+}
+if (reduce(1,coefficientBasis) == 0)
+{
+  ERROR("the exceptional exact-support chart became empty");
+}
+
+ring mapRing = 0,(x,y,a,b),dp;
+poly X = x+a*y^5;
+poly Y = y+b*X^2;
+poly inverseY = Y-b*X^2;
+poly inverseX = X-a*inverseY^5;
+
+if (reduce(inverseX-x,std(0)) != 0)
+{
+  ERROR("the displayed left inverse for x failed");
+}
+if (reduce(inverseY-y,std(0)) != 0)
+{
+  ERROR("the displayed left inverse for y failed");
+}
+
+poly sourceY = y-b*x^2;
+poly sourceX = x-a*sourceY^5;
+poly rightX = sourceX+a*sourceY^5;
+poly rightY = sourceY+b*rightX^2;
+
+if (reduce(rightX-x,std(0)) != 0)
+{
+  ERROR("the displayed right inverse for x failed");
+}
+if (reduce(rightY-y,std(0)) != 0)
+{
+  ERROR("the displayed right inverse for y failed");
+}
+
+"PASS sparse 1+3 exceptional Groebner and two-sided inverse certificate";
+
+ring cubicCoefficientRing = 0,(z,e,d,c,b,a),dp;
+ideal cubicCoefficientIdeal =
+  c-3*a*b,
+  d-a*c,
+  3*e-a*d,
+  z*a*b*c*d*e-1;
+ideal cubicCoefficientBasis = std(cubicCoefficientIdeal);
+
+if (reduce(c-3*a*b,cubicCoefficientBasis) != 0)
+{
+  ERROR("the first cubic shear-chain relation left the Groebner ideal");
+}
+if (reduce(d-3*a^2*b,cubicCoefficientBasis) != 0)
+{
+  ERROR("the second cubic shear-chain relation left the Groebner ideal");
+}
+if (reduce(e-a^3*b,cubicCoefficientBasis) != 0)
+{
+  ERROR("the third cubic shear-chain relation left the Groebner ideal");
+}
+if (reduce(1,cubicCoefficientBasis) == 0)
+{
+  ERROR("the cubic exceptional exact-support chart became empty");
+}
+
+ring cubicMapRing = 0,(x,y,a,b),dp;
+poly cubicX = x+a*y^5;
+poly cubicY = y+b*cubicX^3;
+poly cubicInverseY = cubicY-b*cubicX^3;
+poly cubicInverseX = cubicX-a*cubicInverseY^5;
+
+if (reduce(cubicInverseX-x,std(0)) != 0)
+{
+  ERROR("the displayed cubic left inverse for x failed");
+}
+if (reduce(cubicInverseY-y,std(0)) != 0)
+{
+  ERROR("the displayed cubic left inverse for y failed");
+}
+
+poly cubicSourceY = y-b*x^3;
+poly cubicSourceX = x-a*cubicSourceY^5;
+poly cubicRightX = cubicSourceX+a*cubicSourceY^5;
+poly cubicRightY = cubicSourceY+b*cubicRightX^3;
+
+if (reduce(cubicRightX-x,std(0)) != 0)
+{
+  ERROR("the displayed cubic right inverse for x failed");
+}
+if (reduce(cubicRightY-y,std(0)) != 0)
+{
+  ERROR("the displayed cubic right inverse for y failed");
+}
+
+"PASS sparse 1+4 exceptional Groebner and two-sided inverse certificate";
+
+ring quarticCoefficientRing = 0,(z,f,e,d,c,b,a),dp;
+ideal quarticCoefficientIdeal =
+  c-4*a*b,
+  2*d-3*a*c,
+  3*e-2*a*d,
+  4*f-a*e,
+  z*a*b*c*d*e*f-1;
+ideal quarticCoefficientBasis = std(quarticCoefficientIdeal);
+
+if (reduce(c-4*a*b,quarticCoefficientBasis) != 0)
+{
+  ERROR("the first quartic shear-chain relation left the Groebner ideal");
+}
+if (reduce(d-6*a^2*b,quarticCoefficientBasis) != 0)
+{
+  ERROR("the second quartic shear-chain relation left the Groebner ideal");
+}
+if (reduce(e-4*a^3*b,quarticCoefficientBasis) != 0)
+{
+  ERROR("the third quartic shear-chain relation left the Groebner ideal");
+}
+if (reduce(f-a^4*b,quarticCoefficientBasis) != 0)
+{
+  ERROR("the fourth quartic shear-chain relation left the Groebner ideal");
+}
+if (reduce(1,quarticCoefficientBasis) == 0)
+{
+  ERROR("the quartic exceptional exact-support chart became empty");
+}
+
+ring quarticMapRing = 0,(x,y,a,b),dp;
+poly quarticX = x+a*y^5;
+poly quarticY = y+b*quarticX^4;
+poly quarticInverseY = quarticY-b*quarticX^4;
+poly quarticInverseX = quarticX-a*quarticInverseY^5;
+
+if (reduce(quarticInverseX-x,std(0)) != 0)
+{
+  ERROR("the displayed quartic left inverse for x failed");
+}
+if (reduce(quarticInverseY-y,std(0)) != 0)
+{
+  ERROR("the displayed quartic left inverse for y failed");
+}
+
+poly quarticSourceY = y-b*x^4;
+poly quarticSourceX = x-a*quarticSourceY^5;
+poly quarticRightX = quarticSourceX+a*quarticSourceY^5;
+poly quarticRightY = quarticSourceY+b*quarticRightX^4;
+
+if (reduce(quarticRightX-x,std(0)) != 0)
+{
+  ERROR("the displayed quartic right inverse for x failed");
+}
+if (reduce(quarticRightY-y,std(0)) != 0)
+{
+  ERROR("the displayed quartic right inverse for y failed");
+}
+
+"PASS sparse 1+5 exceptional Groebner and two-sided inverse certificate";
+
+// The only no-singleton 3+3 exponent chart has both supports equal to
+// {y^2,xy,x^2}.  Its exact coefficient equations give a directional
+// quadratic shear.
+ring directionalRing = 0,(x,y,z,f,e,d,c,b,a),dp;
+poly directionalP = a*y^2+b*x*y+c*x^2;
+poly directionalQ = d*y^2+e*x*y+f*x^2;
+poly directionalKeller =
+  diff(directionalP,x)+diff(directionalQ,y)
+  +diff(directionalP,x)*diff(directionalQ,y)
+  -diff(directionalP,y)*diff(directionalQ,x);
+ideal directionalIdeal =
+  b+2*d,
+  2*c+e,
+  b*f+2*c^2,
+  2*a*f+b*c,
+  4*a*c-b^2,
+  z*a*b*c*d*e*f-1;
+ideal directionalBasis = std(directionalIdeal);
+
+if (reduce(directionalKeller,directionalBasis) != 0)
+{
+  ERROR("the directional 3+3 Keller equation left the coefficient ideal");
+}
+if (reduce(2*d+b,directionalBasis) != 0)
+{
+  ERROR("the directional d relation left the Groebner ideal");
+}
+if (reduce(e+2*c,directionalBasis) != 0)
+{
+  ERROR("the directional e relation left the Groebner ideal");
+}
+if (reduce(4*a*c-b^2,directionalBasis) != 0)
+{
+  ERROR("the directional c relation left the Groebner ideal");
+}
+if (reduce(8*a^2*f+b^3,directionalBasis) != 0)
+{
+  ERROR("the directional f relation left the Groebner ideal");
+}
+if (reduce(1,directionalBasis) == 0)
+{
+  ERROR("the directional 3+3 exact-support chart became empty");
+}
+
+poly directionalX = x+directionalP;
+poly directionalY = y+directionalQ;
+poly directionalLeftX =
+  directionalX
+  -(a*directionalY^2+b*directionalX*directionalY+c*directionalX^2);
+poly directionalLeftY =
+  directionalY
+  -(d*directionalY^2+e*directionalX*directionalY+f*directionalX^2);
+if (reduce(directionalLeftX-x,directionalBasis) != 0)
+{
+  ERROR("the directional 3+3 left inverse for x failed");
+}
+if (reduce(directionalLeftY-y,directionalBasis) != 0)
+{
+  ERROR("the directional 3+3 left inverse for y failed");
+}
+
+poly directionalSourceX = x-directionalP;
+poly directionalSourceY = y-directionalQ;
+poly directionalRightX =
+  directionalSourceX
+  +(a*directionalSourceY^2
+    +b*directionalSourceX*directionalSourceY
+    +c*directionalSourceX^2);
+poly directionalRightY =
+  directionalSourceY
+  +(d*directionalSourceY^2
+    +e*directionalSourceX*directionalSourceY
+    +f*directionalSourceX^2);
+if (reduce(directionalRightX-x,directionalBasis) != 0)
+{
+  ERROR("the directional 3+3 right inverse for x failed");
+}
+if (reduce(directionalRightY-y,directionalBasis) != 0)
+{
+  ERROR("the directional 3+3 right inverse for y failed");
+}
+
+"PASS sparse 3+3 directional Groebner and two-sided inverse certificate";

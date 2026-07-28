@@ -4180,26 +4180,80 @@
       "priority": "derived"
     },
     {
+      "id": "FEKF1",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Every characteristic-zero finite etale algebra of rank at least three is a full Keller fiber",
+      "scope": "For every characteristic-zero field K, every finite etale K-algebra A of rank N>=3 is the literal full fiber of an explicit determinant-one polynomial map A^3_K -> A^3_K. The map has actual function-field geometric degree N and coordinate degree at most 6N+2. For a supplied separable polynomial presentation the fiber equivalence is natural over every commutative K-algebra; the abstract theorem follows from a formally verified characteristic-zero monogenicity construction. The headline polynomial-presentation theorem and abstract finite-etale corollary are formalized end to end in the isolated Lean PaperCertificate module. The separate characteristic-not-two supplied-presentation proposition and the classical rank-two exclusion are not included in this formal-verification claim.",
+      "canonical_source": "papers/common-arithmetic-fibers/main.tex",
+      "dependencies": [],
+      "checker": "scripts/verify_common_arithmetic_fibers_correspondence.py",
+      "proof_type": "hybrid",
+      "independent_replay": true,
+      "formal_verification": true,
+      "external_review": false,
+      "artifact_hash": "sha256:55f8eb32d6be85472f0f5be0caa704caa72ad897df5972c8712ccd77f18115f2",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt",
+        "formal/finite-etale-keller/lean-toolchain",
+        "formal/finite-etale-keller/lake-manifest.json"
+      ],
+      "supersedes": [],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
+      "id": "FMHF1",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Formally verified fixed-map family of Hasse-failing full fibers",
+      "scope": "For the exact determinant-one displayed map Phi:A^3_Q -> A^3_Q, the inverse source and target polynomial automorphisms recover the determinant-minus-two base map and its function-field degree-five computation. For every integer a>1 with a=1 mod 9, not a rational cube, and supported on primes 1 mod 3, the literal fiber at y_a=(-1,32a/9,(8a+1)/3) is the reduced rank-five finite etale scheme Spec(Q[X]/((X^3-a)(X^2+X+1))). It has a real point and a point over every Q_p but no Q-point. Its primitive target coordinates are [9:-9:32a:24a+3], its height is 32a, and distinct parameters give distinct targets. This complete algebraic, local-global, and height statement is formalized in the isolated FixedHassePaperCertificate Lean module. No Selberg--Delange asymptotic or degree-minimality claim is included in this formal-verification entry.",
+      "canonical_source": "formal/finite-etale-keller/FiniteEtaleKeller/FixedHassePaperCertificate.lean",
+      "dependencies": [
+        "FEKF1"
+      ],
+      "checker": "scripts/verify_infinite_hasse_keller_fibers.py",
+      "proof_type": "hybrid",
+      "independent_replay": true,
+      "formal_verification": true,
+      "external_review": false,
+      "artifact_hash": "sha256:658d45faa51b40daed7693de875142fd401b90d91a8b9ae421edbc96acfbc778",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt",
+        "formal/finite-etale-keller/lean-toolchain",
+        "formal/finite-etale-keller/lake-manifest.json"
+      ],
+      "supersedes": [],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
       "id": "MHF1",
       "kind": "theorem",
       "state": "proved",
-      "title": "Dense multiplicative family of Hasse-failing fibers in one fixed map",
-      "scope": "For the fixed determinant-minus-two degree-five quadratic-gauge map with target line y_a=(1,32a/9,(8a+1)/3) and inverse polynomial (X^3-a)(X^2+X+1), every integer a>1 with a=1 mod 9, not a rational cube, and supported on primes 1 mod 3 gives a reduced complete fiber with points over every completion of Q but no Q-point. The targets have primitive coordinates [9:9:32a:24a+3] and height 32a. Character-filtered Selberg--Delange gives a full-family count asymptotic to (G_3(1)/(3 sqrt(pi))) X/sqrt(log X), hence (G_3(1)/(96 sqrt(pi))) B/sqrt(log B) by target height. The clean subfamily supported on primes 1 mod 9 has asymptotic (G_9(1)/Gamma(1/6)) X/(log X)^(5/6). A dependency-free enumeration through a=10^6 finds 26846 full-family and 16107 clean parameters; this bounded computation is a regression, not the proof of the asymptotics.",
-      "canonical_source": "verified/MULTIPLICATIVE_HASSE_KELLER_FIBERS.md",
+      "title": "Quantitative family of Hasse-failing fibers in one fixed map",
+      "scope": "For one fixed determinant-one polynomial map Phi:A^3_Q -> A^3_Q of geometric degree five, with target line y_a=(-1,32a/9,(8a+1)/3) and inverse polynomial (X^3-a)(X^2+X+1), every integer a>1 with a=1 mod 9, not a rational cube, and supported on primes 1 mod 3 gives a reduced full fiber with points over every completion of Q but no Q-point. The targets have primitive coordinates [9:-9:32a:24a+3] and height 32a. The exact displayed map, its inverse affine normalization, its degree, the literal fiber, the uniform local-global theorem, and the height calculation are formally verified. Character-filtered Selberg--Delange gives a full-family count asymptotic to (G_3(1)/(3 sqrt(pi))) X/sqrt(log X), hence (G_3(1)/(96 sqrt(pi))) B/sqrt(log B) by target height. The clean subfamily supported on primes 1 mod 9 has asymptotic (G_9(1)/Gamma(1/6)) X/(log X)^(5/6). The admissible set is obtained from a multiplicatively closed congruence-and-support core by removing perfect cubes; it is not itself claimed to be a semigroup. A dependency-free enumeration through a=10^6 finds 26846 full-family and 16107 clean parameters; this bounded computation is a regression, not the proof of the asymptotics. The Berend--Bilu fixed-point criterion gives the optimality of degree five.",
+      "canonical_source": "papers/fixed-map-hasse-failures/main.tex",
       "dependencies": [
-        "RQG1",
-        "external: Hensel's lemma",
+        "FMHF1",
         "external: prime number theorem in arithmetic progressions",
-        "external: character-twisted Selberg--Delange theorem"
+        "external: character-twisted Selberg--Delange theorem",
+        "external: Berend--Bilu fixed-point criterion",
+        "external: Chebotarev density theorem"
       ],
-      "checker": "scripts/count_multiplicative_hasse_parameters.py",
+      "checker": "scripts/verify_multiplicative_hasse_artifact.py",
       "proof_type": "hybrid",
-      "independent_replay": false,
+      "independent_replay": true,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:c0d77e6799d099f88a5300ffed5f8506577360110d96711254eab20f8a9a2c9f",
+      "artifact_hash": "sha256:2c20efb73b4e8f112b6e19f68b93aaaadc1096daf741494ca399a45db276912a",
       "software_lock": [
-        ".python-version"
+        ".python-version",
+        "requirements.txt",
+        "formal/finite-etale-keller/lean-toolchain",
+        "formal/finite-etale-keller/lake-manifest.json"
       ],
       "supersedes": [],
       "replaced_by": [],
@@ -5219,6 +5273,110 @@
       ],
       "replaced_by": [],
       "priority": "derived"
+    },
+    {
+      "id": "KSIC2",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Keller-constrained two-pair Special Image theorem",
+      "scope": "Let H=(P,Q) over a characteristic-zero field satisfy H(0)=0, JH(0)=0, and det J((x,y)-H)=1, and put p=w_1 P+w_2 Q. If the first pure contraction E_2(p)=0, then H=(b,-a)f(ax+by) and p=(bw_1-aw_2)f(ax+by) for some f in t^2 k[t]. Consequently E_2(gp^m)=0 for every multiplier g whenever m exceeds the total (x,y)-degree of g. Thus on the complete normalized Keller-constrained subclass, the first SIC premise already forces all pure contractions and the full eventual mixed-contraction conclusion. This theorem is all-degree and nonhomogeneous, but it does not address arbitrary two-pair polynomials or normalized Keller corrections with nonzero divergence.",
+      "canonical_source": "extended-geometry/KELLER_CONSTRAINED_SIC2.md",
+      "dependencies": [],
+      "checker": "scripts/verify_keller_constrained_sic2.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:e1a69cbd0148c6b56b0d87b5bb591255ae26d6fa512c7a6b44dc72d4647b230e",
+      "software_lock": [],
+      "supersedes": [],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
+      "id": "SIC2B22",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Complete bidegree-(2,2) two-pair Special Image theorem",
+      "scope": "For a general two-pair bihomogeneous f of bidegree (2,2), let I be the ideal of its first six pure contractions. Exact elimination of a four-parameter finite-flag one-sided normal form gives a prime nullcone ideal J with twelve generators. Groebner reduction over Q proves I is contained in J, the first generator of J lies in I, and the seventh power of each of the other eleven generators lies in I. Hence radical(I)=J: six initial pure contractions force f to become pair-linearly one-sided after scalar extension to an algebraic closure, so E_2(g f^m)=0 for every fixed g and all sufficiently large m over the original characteristic-zero field. Thus SIC(2) holds on the entire bidegree-(2,2) stratum, including all eight- and nine-term forms; unrestricted SIC(2) in other bidegrees remains open. The natural four-parameter compression of the SIC(3) witness is separately forced one-sided by its first two contractions. The earlier exact census of all 501 supports through seven terms and its explicit six- and seven-term Laurent factorizations are retained as independent regressions.",
+      "canonical_source": "extended-geometry/TWO_PAIR_SIC_BIDEGREE22_FRONTIER.md",
+      "dependencies": [
+        "DVG3",
+        "external: Zhao image-kernel identity",
+        "external: Singular exact Groebner bases over Q"
+      ],
+      "checker": "scripts/verify_two_pair_sic_bidegree22_frontier.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:92d6ca3fd7135f92f085dd1b31f27dd2aa078ee49ee0c44116e7bd26124814ee",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [
+        "unstructured search for a four- through seven-term bidegree-(2,2) SIC(2) witness",
+        "the open eight- and nine-term bidegree-(2,2) frontier"
+      ],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
+      "id": "SIC2B33S",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Irreducible slices and a mixed branch of the bidegree-(3,3) SIC(2) frontier",
+      "scope": "In the sixteen-dimensional two-pair bidegree-(3,3) coefficient space, exact characteristic-zero elimination gives the full seven-dimensional pair-linear one-sided nullcone, of projective degree twenty with a Groebner basis of size 148. Exact moment-Jacobian evaluation proves mu_1,...,mu_13 algebraically independent. However, the exact SL_2 weight Hilbert series gives coefficient -2186 in degree 63 after multiplication by product_(m=1)^13(1-t^m). Cohen--Macaulayness therefore proves that no homogeneous system of parameters has degrees 1,...,13; the first thirteen moment equations necessarily have a semistable component outside the nullcone. The least-total-degree correction mu_1,...,mu_12,mu_14 has another exact nonzero 13-by-13 Jacobian minor. Its proposed Hilbert numerator is nonnegative through degree 100, with last checked nonzero coefficient in degree 76 and zeros in degrees 77 through 100; this is a necessary-test result, not a proof of zero-fiber equality. Exact inversion gives the global Sym^2 coordinates and discriminant Delta_2. On the maximal-torus fixed diagonal slice, moments 1 through 4 have radical equal to the origin ideal, with seventh-power certificates. On the pure Sym^6, Sym^4, and Sym^2 summands, moments respectively of orders 2,4,6,10; 2,3; and 2 cut out exactly the L^4Q, L^3R, and L^2 nullcones. After normalizing a non-null quadratic to 2cXT, exact reduction over Q proves c^6 lies in the Sym^4+Sym^2 moment ideal through order six. On the Sym^6+Sym^2 branch, even moments through order fourteen give c^25 membership over GF(32003), with c^24 nonzero and Groebner-basis size 7576; this remains finite-field evidence only. The full mixed Sym^6+Sym^4+Sym^2 locus and the corrected minimal zero fiber remain open.",
+      "canonical_source": "extended-geometry/TWO_PAIR_SIC_BIDEGREE33_FRONTIER.md",
+      "dependencies": [
+        "SIC2B22",
+        "external: Hilbert-Mumford criterion for binary sextics",
+        "external: Cohen--Macaulayness of characteristic-zero reductive invariant rings",
+        "external: Singular exact Groebner bases over Q"
+      ],
+      "checker": "scripts/verify_two_pair_sic_bidegree33_sextic_slice.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:c601fc9bb72f47355c44cb2ab5c47412e79340a79ac17a9b98857c42c026d4a9",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [
+        "unstructured search on the pure binary-sextic bidegree-(3,3) slice"
+      ],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
+      "id": "OP-SIC2-MN",
+      "kind": "open_problem",
+      "state": "open",
+      "title": "All-degree two-pair moment--nullcone program",
+      "scope": "For balanced two-pair bidegree (d,d), End(Sym^d)=direct sum_{r=0}^d Sym^(2r), and Hilbert--Mumford identifies the one-sided nullcone with tuples having vanishing scalar component and a common linear factor L such that L^(r+1) divides F_(2r). Its incidence resolution proves that this irreducible nullcone has dimension 1+d(d+1)/2 and codimension d(d+3)/2. Noetherianity gives a finite moment subset for each fixed d, while Krull height proves that any global moment-nullcone certificate needs at least (d+1)^2-3 moments for d>=2, hence at least thirteen for d=3. SIC2B33S now proves that mu_1,...,mu_13 attain this lower bound and are algebraically independent, but their zero fiber is still open. It also gives the explicit global quadratic discriminant and proves that moments 1 through 4 have only the origin on the maximal-torus fixed diagonal slice. The proposed proof first forces the lowest nonzero component into its binary-form nullcone and then synchronizes every higher component with its unique high-multiplicity root; the first global targets are discriminant(F_2)=0 and F_2=L^2 implies L^3 divides F_4. SIC2B22 proves the conjecture for d=2, and SIC2B33S supplies exact full-space independence plus exact slice evidence for d=3, but the global d=3 and uniform all-d statements remain open. The formal n-pair analogue uses End(Sym^d C^n)=direct sum_{j=0}^d V_(j(omega_1+omega_(n-1))), but DVG3 proves it false for every n>=3 already at d=2: the padded balanced three-pair witness has all pure moments zero and persistent mixed moments, so it is not in the SL_n nullcone.",
+      "canonical_source": "extended-geometry/TWO_PAIR_SIC_MOMENT_NULLCONE_PROGRAM.md",
+      "dependencies": [
+        "DVG3",
+        "SIC2B22",
+        "SIC2B33S",
+        "external: Hilbert--Mumford nullcone criterion for direct sums of binary forms",
+        "external: Pieri rule for symmetric powers"
+      ],
+      "checker": null,
+      "proof_type": "not-applicable",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": null,
+      "software_lock": [],
+      "supersedes": [
+        "deeper full-coefficient Groebner elimination as the primary bidegree-(3,3) SIC(2) attack"
+      ],
+      "replaced_by": [],
+      "priority": "primary"
     },
     {
       "id": "FM1",
@@ -6767,6 +6925,130 @@
       "priority": "reference"
     },
     {
+      "id": "PJS1",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Certified sparse normalized plane-support exclusions",
+      "scope": "For tangent-to-identity plane maps F=(x+P,y+Q) over characteristic zero, with P,Q having no terms below degree two and support counted with coordinate multiplicity, every exact-support split 1+q or q+1 with q<=5 is inconsistent except the quadratic, cubic, and quartic arbitrary-degree shear chains and their transposes. Their saturated coefficient Groebner ideals force Q=b*(x+a*y^m)^j for j=2,3,4, with explicit polynomial inverses. For 2+2, 2+3, and their transposes, exact unbounded integer collision formulas force a singleton Keller coefficient and an explicit Rabinowitsch unit identity. At support six, the global 2+4 no-singleton formula is unsatisfiable, while the only 3+3 no-singleton exponent chart has both supports equal to {x^2,x*y,y^2}; its saturated coefficient ideal forces a directional quadratic shear with inverse id-H. Thus every normalized map with at most six nonlinear monomial occurrences is invertible, without a degree bound. Minimizing support over all tangent-to-identity affine normalizations gives the coordinate-invariant consequence that every noninvertible plane Keller map has affine-normalized support complexity at least seven. Independent regressions cover 14,653,584 ordered 2+2 supports through degree twelve and 5,290,000 ordered 3+3 supports through degree six. This does not imply a new universal coordinate-degree bound; sequential sparse-layer escalation stops here pending a bridge to Newton or boundary geometry.",
+      "canonical_source": "plane-jc/CERTIFIED_SPARSE_SUPPORT_EXCLUSIONS.md",
+      "dependencies": [],
+      "checker": "plane-jc/cas/verify_sparse_support_exclusions.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:0175d2f23a1e0a717f134912b512f68682fc9000cace8190a800a67f80fe9972",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
+      "id": "PASB1",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Affine-support bridge obstruction and Kummer-character gate",
+      "scope": "For every d>=4, a nonempty Zariski-open set of dense triangular Keller automorphisms F_p=(x+p(y),y) has affine-normalized nonlinear support at least d-2, while geometric degree, reduced nonproperness data, boundary-row counts, and the number of Newton vertices remain fixed. Thus those listed coarse invariants cannot upper-bound affine-normalized support. For a monomial-Jacobian block with [P,Q]_(x,y)=c*x^r whose components lie in k[u,y], u=x^(r+1)/(r+1), the chain rule gives [P,Q]_(u,y)=c; if the descended affine-normalized support is at most six, PJS1 makes it an automorphism. More generally, Kummer sectors satisfy character([P_a,Q_b])=a+b-1, splitting the bracket equation into independent character equations. The audited (75,125) F2 terminal block has bracket X^4 but Kummer characters P={1,4} and Q={0,1,3} modulo five, so it does not descend through u=X^5/5; its non-target character brackets cancel exactly in sectors one and three. The support-six theorem therefore cannot be applied to that five-term block. This does not exclude F2 or improve a degree frontier; it proves that the next bridge must compile the missing Laurent bands with their Kummer characters.",
+      "canonical_source": "plane-jc/AFFINE_SUPPORT_NEWTON_BRIDGE.md",
+      "dependencies": [
+        "PJS1"
+      ],
+      "checker": "plane-jc/cas/verify_affine_support_newton_bridge.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:c88a9b3b90b6ae429b208e724b933319505d644e2a73488791a12b3c6dcf513c",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
+      "id": "PF2L1",
+      "kind": "reproduction",
+      "state": "proved",
+      "title": "F2 (75,125) character-resolved B0 Laurent-layer classification",
+      "scope": "In the F2 chart t=X*y, z=y^-1, the exact coordinate bracket is [t,z]_(X,y)=-z, so [p_i(t)z^i,q_j(t)z^j]=(i*p_i*q_j'-j*p_i'*q_j)z^(i+j). Consequently the common-power top is layer 40, the target X^4=t^4*z^4 is layer 4, and the 35 intervening zero layers are exactly 39 through 5. Total-degree bounds 75 and 125 together with the two known terminal halfspaces give finite translated band spaces via full-rank binomial jet matrices. In the 35-layer window the exact B0 over-envelope has 665 band-pair incidences and 978 linear parameters after the terminal jets, or 973 after the five endpoint normalizations. Every quadratic coefficient equation is reconstructed by the compressed identity (ell*s-m*r)*t^(ell+m)*(1+t)^(r+s-1); the replay records 165,980 active generators, 5,625 raw scalar coefficient rows, and 5,348 structurally active rows after the jets, split into five Kummer characters. Jointly imposing the P and Q common-power source bands proves H(t)=(1+u+u^2+u^3+u^4)^2*R(u^5), u=1+t, where R is quadratic, R(1)=1/25, and its leading coefficient is nonzero. This exact two-parameter top-band cut lowers the normalized window to 959 parameters. The triangular upper descent then forces layers 39 through 36 to continue the common root: after p=C0^2*U, q=(-9/5)*C0^4*V and W=5U-3V, descent r has homogeneous equation (5-r)*C0'*W-5*C0*W'=0, whose required t-valuation is nonintegral for r=1,...,4. At layer 35, W is constant and one genuine lambda*C0^2 mode survives in P band 10, so no unit ideal occurs in the first five zero layers. Layers 34 through 5 and the exhaustive gamma/polygon theorem remain open; F2 is not excluded.",
+      "canonical_source": "plane-jc/F2_75_125_DERIVATION.md",
+      "dependencies": [
+        "PASB1"
+      ],
+      "checker": "plane-jc/cas/classify_f2_75_125_layers.py",
+      "proof_type": "reproduction",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:f8125826eb40604f2d4ee4ace1d4c1433e8de44d6aea0a2cc49f2fafb0c67725",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
+      "id": "PF2BH1",
+      "kind": "reproduction",
+      "state": "proved",
+      "title": "F2 common-edge contact classification and boundary-transfer obstruction",
+      "scope": "For the exact F2 top family C0(u)=(u-1)^5*(u^5-1)^2*R(u^5), with R(v)=a*v^2+b*v+(1/25-a-b), a!=0, the quadratic root locus has four disjoint exhaustive strata. Their contact partitions on the selected toric divisor are (7,2^4,1^10), (7,2^9), (7,5,2^4,1^5), and (10,7,2^4), with respectively 15, 10, 11, and 6 distinct centers. These are contact multiplicities, not certified toroidal scales or finite-normalization rows: the germs s^m+z^q for q=1,2,3 have the same edge restriction s^m and different primitive equality rays. Under the deliberately unsupported strongest surrogate (e_i,f_i,s_i)=(m_i,1,1), every packet has boundary degree 25, needs generic degree at least 26 because an affine sheet is positive, and survives the finite-flat packet-length budget even if all centers are placed in one target fiber. The typed target-ledger audit remains incomplete because target transfer and exhaustive generic pullback are absent. Thus no contact stratum is excluded, the log-boundary and residual-different compilers are not applicable, and the degree-specific F2 layer/boundary route is stopped rather than continued through thirty lower layers.",
+      "canonical_source": "plane-jc/F2_BOUNDARY_HANDOFF.md",
+      "dependencies": [
+        "PF2L1",
+        "PFN2",
+        "LBC1"
+      ],
+      "checker": "plane-jc/cas/audit_f2_75_125_boundary_handoff.py",
+      "proof_type": "reproduction",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:ba662363dbe651fde8d6e299db633911a4a016c681b7a93b4f01749b32cefd7a",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
+      "id": "PUSC1",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Universal unibranch spectator countermodels to local finite-flat exclusion",
+      "scope": "For every n>=3, pi_n(T,u)=(u,T^(n+1)-T^n+u*T) is a finite-free polynomial map from the smooth integral source A2 of rank N=n+1. Its full ramification curve J_n=u-n*T^(n-1)+(n+1)*T^n=0 is smooth and maps near T=0 to the primitive singular branch with parameter orders (n-1,n), with generic transverse index two. The fiber over the branch singularity is T^n*(T-1): a curvilinear length-n ramified point plus a reduced etale spectator at T=1. The component's Orevkov cost is 2+(n-2)=n=N-1, so it saturates rather than violates the Euler budget. For n=3 the same quartic cover has the exact 3+1 cusp fiber and an exact 2+2 self-collision over (1/8,-1/64), realizing both surviving quartic packet types. These maps are not Keller-normalization models: J_n is a polynomial source coordinate, so deleting the ramification curve gives A1 x G_m with nonconstant unit J_n, the ramification prime is principal, and the source class group is zero. Thus a purely local finite-flat exclusion is false even with smooth integral source and an affine etale spectator; any valid exclusion must use the global distinguished A2 open, its trivial unit group, the free boundary class group, and connected monodromy.",
+      "canonical_source": "plane-jc/UNIBRANCH_SPECTATOR_COUNTERMODELS.md",
+      "dependencies": [
+        "PFN2",
+        "QPK4",
+        "external: Orevkov Euler-multiplicity identity"
+      ],
+      "checker": "plane-jc/cas/verify_unibranch_spectator_models.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:3c45ef6033b993b6212cac6ceda1708da268bd028d8570668ecfdc7a0cf7dfa2",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [
+        "a purely local finite-flat exclusion of the concentrated unibranch conductor face"
+      ],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
       "id": "PFN2",
       "kind": "theorem",
       "state": "proved",
@@ -7602,6 +7884,7 @@
       "canonical_source": "plane-jc/NEXT_DEGREE_FRONTIER.md",
       "dependencies": [
         "PJ1",
+        "PJS1",
         "LBC1",
         "RSE1",
         "RSE2",
@@ -7691,11 +7974,133 @@
       "priority": "derived"
     },
     {
+      "id": "HC4NSL2D4",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Degree-four non-toric relative-SL(2) obstruction",
+      "scope": "After the polynomial unit-pivot reduction of the foundational Meng doubling, let beta=(-y*P(xy),x*Q(xy)) be the natural complementary coefficient row and let C(x,y) be a general polynomial 2x2 matrix of determinant one whose four entries have total degree at most four. For G=beta*C, the descended four-variable Hessian determinant is 16*det(DG)^2. The full 60-parameter characteristic-zero coefficient ideal has 45 determinant-one equations and 218 nonconstant-Jacobian equations; exact Singular elimination gives the unit ideal, before collision equality is imposed. Starting instead from the known degree-ten toric correction beta*C0=(y,2x), an arbitrary affine determinant-one perturbation also gives the unit ideal after imposing constant Jacobian and equality at the known antipodal collision bases. Raw corrections of degree at least five, quadratic-or-higher perturbations of C0, mixed base-dual changes, and non-coordinate coisotropic embeddings are not excluded.",
+      "canonical_source": "HC5_NONLINEAR_TORIC_DESCENT.md",
+      "dependencies": [
+        "HC5T1",
+        "external: Singular exact Groebner bases over Q"
+      ],
+      "checker": "scripts/verify_hc4_nontoric_sl2_correction_degree4.py",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:f2d2a32c9316a2fa250df0c79afe79736e9aa3424e03231089be34e24559532a",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "HC4DSG1",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Double-Schur obstruction for root-engineered gauge families",
+      "scope": "For every admissible root-engineered quadratic-gauge Keller map, eliminating two constant linear dual directions from the six-variable Meng doubling cannot produce a four-variable constant-Hessian potential: the s^2 coefficient is the bordered invariant K(L), which is nonzero for every nonzero constant target linear form L. In the full cubic parameter family this follows from three triangular coefficients; in every exact degree N>=4 it follows from the top z-layer. A source-first Meng descent followed by a constant dual pivot also fails: higher-degree maps have no nonzero constant affine source direction, while in degree three the unique z-direction has no constant nonzero target-linear pivot. Nonlinear symplectic changes, nonlinear retained dual coefficients, non-coordinate coisotropic embeddings, and nonconstant pivots with exceptional divisibility are not excluded.",
+      "canonical_source": "HC4_DOUBLE_SCHUR_GAUGE_AUDIT.md",
+      "dependencies": [
+        "RQG1",
+        "external: Meng--Yang Schur-descent bridge"
+      ],
+      "checker": "scripts/verify_hc4_double_schur_gauge_obstruction.py",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:83f1429e8af73feab746845ac2104c94f4bbff874be17bb3a73f5cd894432539",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "HC4TTS1",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Cubic triangular-target obstruction for double Schur descent",
+      "scope": "After the canonical linear normalization of the full cubic quadratic-gauge family, let (U,V,W) be any permutation of its three target coordinates and L=W+H(U,V), where H is arbitrary of total degree at most three. Exact sparse coefficients of the bordered invariant K(L) force the cubic shear coefficients to vanish and then give a quadratic contradiction in the P- and B-retained orientations; in the C-retained orientation [x^8]K(L)=9 independently of every shear coefficient. Hence no such triangular target coordinate can be the retained dual coefficient of a four-variable constant-Hessian double-dual descent. Compositions of nonlinear triangular shears, degree at least four, preliminary nonlinear changes of U and V, general nonlinear target automorphisms, and nonlinear source-dual symplectic changes are not excluded.",
+      "canonical_source": "HC4_DOUBLE_SCHUR_GAUGE_AUDIT.md",
+      "dependencies": [
+        "HC4DSG1"
+      ],
+      "checker": "scripts/verify_hc4_triangular_target_shears.py",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:5d35ac9618dee7d89c16bc1410229b145dc54a4043d37f1223d008114d787b5f",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "HC4TQ2",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Length-two quadratic triangular-target obstruction",
+      "scope": "For the foundational normalized cubic gauge F=(P,B,C), choose distinct target indices i,j and let k be the remaining index. Let A=F_i+Q(F_j,F_k) and L=F_j+R(A,F_k), where Q and R are arbitrary positive-degree real polynomials of total degree at most two. Exact axis and transverse-line coefficients of the bordered invariant K(L) exclude all six ordered words. The proof separately eliminates the A^2 coupling r20!=0 and the bilinear coupling r20=0, r11!=0; when r20=r11=0 the word is one quadratic triangular shear after rescaling and is covered by HC4TTS1. Degree-four single shears, words with a cubic-or-higher factor, length at least three, general tame or wild target automorphisms, and nonlinear source-dual symplectic changes are not excluded.",
+      "canonical_source": "HC4_DOUBLE_SCHUR_GAUGE_AUDIT.md",
+      "dependencies": [
+        "HC4TTS1"
+      ],
+      "checker": "scripts/verify_hc4_two_quadratic_target_shears.py",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:c72c7ef7d8eb31b02b33533c2d3b06e654fc184960230334c7f9cd645cbe9c71",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "HC4QTS1",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Quartic triangular-target obstruction for double Schur descent",
+      "scope": "After canonical normalization to the foundational cubic gauge F=(P,B,C), let (U,V,W) be any target permutation and L=W+H(U,V), where H is arbitrary of positive total degree at most four over a characteristic-zero coefficient field. In the P- and B-retained orientations, five exact extreme spatial coefficients of the bordered invariant K(L), computed with all lower-degree parameters present, successively force every homogeneous quartic coefficient to vanish; HC4TTS1 then excludes the remaining cubic-or-lower shear. In the C-retained orientation [x^8]K(L)=9 independently of every coefficient through degree four. Degree at least five, words containing cubic-or-higher factors, length at least three, general target automorphisms, and nonlinear source-dual symplectic changes are not excluded.",
+      "canonical_source": "HC4_DOUBLE_SCHUR_GAUGE_AUDIT.md",
+      "dependencies": [
+        "HC4TTS1"
+      ],
+      "checker": "scripts/verify_hc4_quartic_target_shears.py",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:8be7dba0f5f73f7e02ef9eecb0da2dc17984be5c519af10e9bbc9c1e78410a03",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
       "id": "HC4MQ1",
       "kind": "theorem",
       "state": "proved",
-      "title": "Sparse quartic Meng--Yang nonlinear-descent obstruction",
-      "scope": "After the unit-pivot t=A descent and polynomial base gauge, the transported Meng--Yang points are an antipodal pair for psi_0=2yr+4xs. Collision-first linear algebra exhausts every homogeneous quartic correction supported on at most four monomials: 42953 isolated choices and 515 one-parameter families. Exact modular determinant evaluations reject all isolated choices and rational gcds reject every family. The degree-eight principal part leaves only 232 isolated quartics and two exact family members; none admits a constant-determinant correction supported on one or two cubic monomials. The two-cubic proof uses odd-layer rank, degree-six conic linearization, degree-four/two lifting, and four terminal modular unit ideals. Dense quartics, at least three cubic monomials, quadratic renormalizations, degree at least six, and non-coordinate coisotropic embeddings are not excluded.",
+      "title": "Sparse-quartic Meng--Yang collision and principal-part reduction",
+      "scope": "After the unit-pivot t=A descent and polynomial base gauge, the transported Meng--Yang points are an antipodal pair for psi_0=2yr+4xs. Collision-first linear algebra exhausts every homogeneous quartic correction supported on at most four monomials: 42953 isolated choices and 515 one-parameter families. Exact modular determinant evaluations reject every quartic-only isolated choice, and rational gcds reject every quartic-only family. The degree-eight principal-part screen leaves exactly 232 isolated quartics and two exact family members, hence 234 inputs for the full cubic-kernel theorem HC4MCK. The same checker also excludes corrections supported on one or two cubic monomials; those bounded-support terminal calculations are retained as regressions but are logically subsumed by HC4MCK. HC4MS6 and HC4JQS4 treat the pure sextic and joint quartic--sextic total-support-four boundaries. Dense quartics, quadratic renormalizations, larger mixed supports, and non-coordinate coisotropic embeddings are not excluded.",
       "canonical_source": "HC4_MENG_SPARSE_QUARTIC_AUDIT.md",
       "dependencies": [
         "HC5T1"
@@ -7715,11 +8120,95 @@
       "priority": "derived"
     },
     {
+      "id": "HC4MDQ",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Dense mixed-quartic Meng descent obstruction",
+      "scope": "In the collision-normalized Meng chart psi_0=2yr+4xs, take all 25 homogeneous quartic monomials of base-dual bidegrees (1,3), (2,2), and (3,1). Also treat separately the two 30-dimensional enlargements obtained by adjoining either every pure-base quartic or every pure-dual quartic. Collision plus the spatial-degree-two determinant identity has exact rank 14, leaving 11, 16, and 16 parameters. Sparse exact determinant expansion gives coefficient ideals with 262, 273, and 273 generators; Singular proves all three ideals are the unit ideal over Q. This dense coefficient theorem does not itself allow the pure-base and pure-dual sectors simultaneously, but HC4HQ1 subsumes it and closes the complete homogeneous quartic chart.",
+      "canonical_source": "HC4_MENG_SPARSE_QUARTIC_AUDIT.md",
+      "dependencies": [
+        "HC5T1",
+        "external: Singular 4.4.1"
+      ],
+      "checker": "scripts/verify_hc4_meng_dense_mixed_quartic.py",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:91c1ade8c2f5ade7bf94e28b45b7366d797817514e9b343fdd9b400d1ece65ba",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [],
+      "replaced_by": [
+        "HC4HQ1"
+      ],
+      "priority": "derived"
+    },
+    {
+      "id": "HC4HQ1",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Complete homogeneous-quartic obstruction in four Hessian variables",
+      "scope": "Let q be any nondegenerate quadratic form in four variables over a characteristic-zero field and h_4 any homogeneous quartic. After scalar extension and an explicit congruence, grad(q+h_4) becomes z+grad(H_4), with homogeneous cubic nonlinear part and symmetric Jacobian. If det Hess(q+h_4) is a nonzero constant, the de Bondt--van den Essen dimension-at-most-four theorem makes this gradient a polynomial automorphism. Hence it has no collision. In the normalized Meng chart the checker verifies the explicit congruence from 2yr+4xs to one half the sum of four squares, the chain rule on all 35 quartic monomials, and transport of the antipodal collision. HC4CQ1 subsequently closes cubic plus quartic, and HC4E46 closes quartic plus sextic. Simultaneous cubic and sextic corrections and non-coordinate coisotropic embeddings are not covered.",
+      "canonical_source": "HC4_MENG_SPARSE_QUARTIC_AUDIT.md",
+      "dependencies": [
+        "HC5T1",
+        "external: de Bondt--van den Essen homogeneous symmetric-Jacobian theorem in dimension at most four"
+      ],
+      "checker": "scripts/verify_hc4_meng_full_quartic_reduction.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:3d135ba6f880694479dd8226094704d316d7c70bac14f196085d99687409c688",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [
+        "the open simultaneous pure-base plus pure-dual homogeneous quartic corner",
+        "quadratic renormalizations with a single homogeneous quartic nonlinear layer"
+      ],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "HC4CQ1",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Complete dense cubic--quartic Meng obstruction",
+      "scope": "Let psi=q2+h3+h4 be a four-variable potential in the collision-normalized Meng chart, with q2 nondegenerate quadratic and h3,h4 arbitrary homogeneous cubic and quartic forms. Homogeneous determinant layers and the Gordan--Noether theorem give a constant direction v with D_v h4=0 and D_v^2 h3=0 in every possible generic rank of Hess(h4); the rank-one quartic case is closed by a secondary ternary linear-pencil rank analysis. A nonisotropic v gives polynomial Schur descent to HC(3). In the isotropic bordered case, exact t^2 and t coefficients reduce either to a cotangent lift of a plane Keller map of degrees at most two and three, or to a two-variable HC(2) block after a binary quadratic bordered invariant forces s=constant+x. Moh's plane bound, HC(3), and HC(2) exclude a nonzero antipodal collision. There is no support restriction. HC4E46 separately closes quartic--sextic corrections. Simultaneous cubic and sextic corrections and non-coordinate coisotropic embeddings are not covered.",
+      "canonical_source": "HC4_MENG_DENSE_CUBIC_QUARTIC.md",
+      "dependencies": [
+        "external: Gordan--Noether classification in at most four variables",
+        "external: Hessian conjecture in dimensions at most three",
+        "external: Moh plane Jacobian theorem through degree 100"
+      ],
+      "checker": "scripts/verify_hc4_meng_dense_cubic_quartic_reduction.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:59ce574cdbed9ab8bea0979f0c76a97b3a32fc18ff1884f6dbbefdd407f73aa2",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [
+        "the dense cubic plus dense quartic collision chart",
+        "HC4MCK"
+      ],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
       "id": "HC4MC3",
       "kind": "theorem",
       "state": "proved",
       "title": "Three-cubic Meng descent characteristic-zero obstruction",
-      "scope": "For each of the 234 collision-compatible quartic principal parts from HC4MQ1, all 1140 supports of exactly three cubic monomials are reconstructed and screened over Q. The combined determinant-degree-seven and degree-one rank census on the 266760 quartic/triple pairs is 5480, 53364, 130508, and 77408 in ranks zero through three, exactly matching the finite-field discovery calculation. After support-at-most-two boundary loci are delegated to HC4MQ1, exact rational full-determinant gcds or Groebner ideals are units for all 920 genuine rank-two lines, 2952 genuine rank-one planes, and 5480 rank-zero three-parameter coefficient spaces. Cubic support at least four remains open.",
+      "scope": "For each of the 234 collision-compatible quartic principal parts from HC4MQ1, all 1140 supports of exactly three cubic monomials are reconstructed and screened over Q. The combined determinant-degree-seven and degree-one rank census on the 266760 quartic/triple pairs is 5480, 53364, 130508, and 77408 in ranks zero through three, exactly matching the finite-field discovery calculation. After support-at-most-two boundary loci are delegated to HC4MQ1, exact rational full-determinant gcds or Groebner ideals are units for all 920 genuine rank-two lines, 2952 genuine rank-one planes, and 5480 rank-zero three-parameter coefficient spaces. This proved bounded-support checkpoint is retained for exact regression and is subsumed by HC4MCK.",
       "canonical_source": "HC4_MENG_SPARSE_QUARTIC_AUDIT.md",
       "dependencies": [
         "HC4MQ1"
@@ -7735,18 +8224,20 @@
         "requirements.txt"
       ],
       "supersedes": [],
-      "replaced_by": [],
-      "priority": "derived"
+      "replaced_by": [
+        "HC4MCK"
+      ],
+      "priority": "parked"
     },
     {
       "id": "HC4MC4",
       "kind": "theorem",
       "state": "proved",
       "title": "Four-cubic Meng descent characteristic-zero obstruction",
-      "scope": "For each of the 234 collision-compatible quartic principal parts from HC4MQ1, all 4845 supports of exactly four cubic monomials are reconstructed and screened over Q. The odd-layer rank census on 1133730 quartic/quadruple pairs is 5430, 79396, 353740, 504818, and 190346 in ranks zero through four, exactly matching the finite-field discovery calculation. After support-at-most-three boundary loci are delegated to HC4MC3, exact rational full-determinant gcds or Groebner ideals are units for all 466 genuine rank-three lines, 6082 genuine rank-two planes, 7956 genuine rank-one three-spaces, and 5430 rank-zero four-parameter spaces.",
+      "scope": "For each of the 234 collision-compatible quartic principal parts from HC4MQ1, all 4845 supports of exactly four cubic monomials are reconstructed and screened over Q. The odd-layer rank census on 1133730 quartic/quadruple pairs is 5430, 79396, 353740, 504818, and 190346 in ranks zero through four, exactly matching the finite-field discovery calculation. Exact rational full-determinant gcds or Groebner ideals are units for all 466 genuine rank-three lines, 6082 genuine rank-two planes, 7956 genuine rank-one three-spaces, and 5430 rank-zero four-parameter spaces after the lower-support boundary loci are removed. This proved bounded-support checkpoint is retained for exact regression and is subsumed by HC4MCK.",
       "canonical_source": "HC4_MENG_SPARSE_QUARTIC_AUDIT.md",
       "dependencies": [
-        "HC4MC3"
+        "HC4MQ1"
       ],
       "checker": "scripts/verify_hc4_meng_four_cubic_characteristic_zero.py",
       "proof_type": "unclassified",
@@ -7759,8 +8250,207 @@
         "requirements.txt"
       ],
       "supersedes": [],
+      "replaced_by": [
+        "HC4MCK"
+      ],
+      "priority": "parked"
+    },
+    {
+      "id": "HC4MCK",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Full cubic-kernel Meng descent obstruction",
+      "scope": "For every one of the 234 collision-compatible quartic principal parts supported on at most four monomials, the complete odd determinant signature is reconstructed over Q on the 20-dimensional cubic coefficient space. Its rank is 8 for 229 quartics, 7 for one quartic, and 4 for four exceptional quartics, giving full kernel dimensions 12, 13, and 16. The exceptional quartics factor as u^3 times a linear form and are treated in triangular harmonic-cubic charts. Exact symbolic spatial-coefficient ideals, added in descending determinant degree, are unit ideals over Q for every full kernel: 62 first become units at degree six, 16 at degree five, and 156 at degree four. Thus no arbitrary homogeneous cubic correction preserves the Meng collision with constant nonzero Hessian determinant in this sparse-quartic chart.",
+      "canonical_source": "HC4_MENG_SPARSE_QUARTIC_AUDIT.md",
+      "dependencies": [
+        "HC4MQ1",
+        "external: Singular 4.4.1"
+      ],
+      "checker": "scripts/verify_hc4_meng_full_cubic_kernel.py",
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:7234f192374b2bb0bbc1e6c138e42bf46397f48d2333b3990f0fc08b2ef91447",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [
+        "HC4MC3",
+        "HC4MC4"
+      ],
+      "replaced_by": [
+        "HC4CQ1"
+      ],
+      "priority": "parked"
+    },
+    {
+      "id": "HC4MS6",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Sparse sextic-only Meng collision obstruction",
+      "scope": "In the collision-normalized Meng four-variable chart, every homogeneous sextic correction supported on at most four of the 84 sextic monomials is excluded. Collision-first exponent linear algebra exhausts 2028355 supports and leaves 1725838 isolated points, 7566 lines, and one plane. A rank-preserving reduction modulo 1000003 and leading-Hessian evaluations leave 748 isolated candidates, all rejected by two full-determinant evaluations. Every positive-dimensional family is reconstructed over Q: exact principal gcds leave two lines, with parameters -81/8 and 9/2, and determinant degree twelve rejects both; the unique binary-cubic plane in yr and xs has unit principal coefficient ideal over Q. This sparse theorem is retained as an exact regression and is subsumed by the support-free even quartic--sextic theorem HC4E46.",
+      "canonical_source": "HC4_MENG_SPARSE_SEXTIC_AUDIT.md",
+      "dependencies": [
+        "HC5T1"
+      ],
+      "checker": "scripts/verify_hc4_meng_sparse_sextic_obstruction.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:fd0341d9fadc27f880c4a391d831b04e52f592311084142ebcd190b2ee706b8a",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [],
+      "replaced_by": [
+        "HC4E46"
+      ],
+      "priority": "reference"
+    },
+    {
+      "id": "HC4MQS6",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Mixed sparse quartic--sextic Meng obstruction",
+      "scope": "For every one of the 234 quartic principal parts from HC4MQ1, no added homogeneous sextic supported on at most four monomials, with zero gradient at the normalized collision point and with no cubic correction, gives constant nonzero Hessian determinant. Exactly four quartics pass the immutable determinant-degree-two gate. Their sextic exponent kernel has 976 three-support lines, 205494 four-support lines, and 519 planes; principal Hessian cancellation leaves 121146 lines. For each quartic, 52686 lines have projectively complete modular certificates and the remaining 68460 have unit exact rational gcds. All 2076 plane/quartic three-evaluation ideals are unit ideals over Q. This sparse mixed theorem is retained as an exact regression and is subsumed by HC4E46.",
+      "canonical_source": "HC4_MENG_SPARSE_SEXTIC_AUDIT.md",
+      "dependencies": [
+        "HC4MQ1",
+        "HC4MS6",
+        "external: Singular 4.4.1"
+      ],
+      "checker": "scripts/verify_hc4_meng_mixed_quartic_sextic.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:fd83e31e052e64ed021076b8ee48585e014fe3160ce4894be116d2cda68260ba",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [],
+      "replaced_by": [
+        "HC4E46"
+      ],
+      "priority": "reference"
+    },
+    {
+      "id": "HC4JQS4",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Joint total-support-four quartic--sextic Meng obstruction",
+      "scope": "In the collision-normalized Meng four-variable chart, no correction h4+h6 of combined monomial support at most four, with no cubic term, retains the collision and has constant nonzero Hessian determinant. The pure quartic and pure sextic boundaries are HC4MQ1 and HC4MS6. For the genuinely mixed part, collision-first linear algebra exhausts 6133820 supports and leaves 5225684 isolated points, 44300 lines, and 34 planes. A rank-preserving reduction modulo 1000003 and descending determinant-layer evaluations reject every isolated point. Every line is reconstructed over Q and has unit exact evaluation gcd; every plane has unit exact three-evaluation ideal over Q. This bounded-support theorem is retained as an exact regression and is subsumed by HC4E46.",
+      "canonical_source": "HC4_MENG_SPARSE_SEXTIC_AUDIT.md",
+      "dependencies": [
+        "HC4MQ1",
+        "HC4MS6"
+      ],
+      "checker": "scripts/verify_hc4_meng_joint_quartic_sextic_total_support_four.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:571ed9c41711f1d64b13094d49336543914cccd8b5499cb86cf39f96df5a2610",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [],
+      "replaced_by": [
+        "HC4E46"
+      ],
+      "priority": "reference"
+    },
+    {
+      "id": "HC4DCK",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Dense common-kernel quartic--sextic Meng obstruction",
+      "scope": "Let psi=q2+h4+h6 be an even four-variable potential in the collision-normalized Meng chart, with nonsingular quadratic Hessian, homogeneous quartic and sextic corrections, and no cubic term. If a nonzero constant direction v satisfies D_v h6=0 and D_v^2 h4=0, then constant nonzero Hessian determinant is incompatible with an antipodal gradient collision, without any support bound. Gordan--Noether and the determinant-degree-fourteen layer make this common-kernel condition automatic when Hess(h6) has generic rank three. A non-isotropic quadratic pivot reduces to HC_3. In the isotropic bordered case, exact t^2 and t coefficient factorizations reduce to either an odd plane Keller map of degree at most five or a two-variable constant-Hessian potential; Moh's degree bound and HC_2 exclude the collision. HC4E46 uses this theorem together with cone-degree rigidity to close the rank-at-most-two boundary; simultaneous cubic and sextic corrections are not covered.",
+      "canonical_source": "HC4_MENG_SPARSE_SEXTIC_AUDIT.md",
+      "dependencies": [
+        "HC5T1",
+        "external: Gordan--Noether classification in at most four variables",
+        "external: Hessian conjecture in dimensions at most three",
+        "external: Moh plane Jacobian theorem through degree 100"
+      ],
+      "checker": "scripts/verify_hc4_meng_dense_rank_three_sextic_reduction.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:da836d51a3054e278540c38b7911f65f90895baa45ed2f67340fa9c30da71e77",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [],
       "replaced_by": [],
-      "priority": "derived"
+      "priority": "reference"
+    },
+    {
+      "id": "HC4SDW",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "HC4 source/dual bigrading and successive-cone synchronization",
+      "scope": "In the even collision-normalized four-variable Meng chart, the 2+2 source/dual decomposition has quartic bidegree dimensions 5,8,9,8,5 and sextic dimensions 7,12,15,16,15,12,7. The locus whose nonlinear corrections have dual degree at most one has the exact cotangent form psi=tF+mG+H and det Hess(psi)=Jac(F,G)^2, so its collision obstruction is precisely an odd plane JC(2) problem of degree at most five and is excluded by Moh's bound. For every integral weight, diagonal conjugation removes Hessian derivative shifts and makes the determinant a one-exponent face pencil. After a nondegenerate quotient is eliminated, any two-dimensional residual symmetric Hessian form with vanishing determinant has, on each pivot chart, the unique Schur factorization a[[1,r],[r,r^2]]; its successive weighted faces recursively determine one rational projective kernel line. This synchronization does not itself make the line constant: (xt+ym)^2 has the moving kernel (-y,x). HC4E46 subsequently excludes the moving cone by bihomogeneous degree rigidity and the next full determinant face.",
+      "canonical_source": "HC4_SOURCE_DUAL_BIGRADING.md",
+      "dependencies": [
+        "HC4DCK",
+        "external: Moh plane Jacobian theorem through degree 100"
+      ],
+      "checker": "scripts/verify_hc4_source_dual_bigrading.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:cbdaf43da54a092314fb2108cc92cfb438a461c19ac3f1e8b6527c33f4f531d2",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
+      "id": "HC4E46",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Complete even quartic--sextic obstruction in four Hessian variables",
+      "scope": "Let psi=q2+h4+h6 be an even four-variable potential over a characteristic-zero field, with q2 nondegenerate quadratic and h4,h6 homogeneous of degrees four and six. If det Hess(psi) is a nonzero constant, then grad(psi) has no nonzero antipodal collision. Rank three of Hess(h6) is HC4DCK. In rank two, low-dimensional Gordan--Noether makes the sextic kernel a constant source/dual plane and the degree-twelve face forces the binary Hessian of h4 on that plane to vanish. Two-variable singular-Hessian classification, successive-cone synchronization, a primitive UFD argument, and total degree four leave only c*(X^T*M*U)^2 as a nonconstant cone. Rank-one M is a constant direction covered by HC4DCK; for invertible M, the dual-degree-four part of the spatial z^4 face is the uncancellable polynomial 48*c^4*det(M)^2*(X^T*M*U)^4. In sextic rank one, the three-variable singular-Hessian normal form over the one-variable quotient field supplies a D_v^2 h4=0 direction and homogeneity makes its direction scheme constant, reducing again to HC4DCK. Rank zero is HC4HQ1. Thus all support restrictions in the quartic--sextic chart are removed; simultaneous cubic and sextic corrections and non-coordinate coisotropic embeddings are not covered.",
+      "canonical_source": "HC4_SOURCE_DUAL_BIGRADING.md",
+      "dependencies": [
+        "HC4DCK",
+        "HC4HQ1",
+        "HC4SDW",
+        "external: Gordan--Noether classification in at most four variables",
+        "external: singular-Hessian classification in two variables and normal form in three variables"
+      ],
+      "checker": "scripts/verify_hc4_even_quartic_sextic_closure.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:079e92fe3e7cd2202bbf62928a2e5e9d7f1666342bb19beb479e217b78621606",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [
+        "the open dense quartic--sextic support boundary",
+        "the variable rank-two sextic-kernel cone",
+        "HC4JQS4",
+        "HC4MQS6",
+        "HC4MS6"
+      ],
+      "replaced_by": [],
+      "priority": "reference"
     }
   ]
 }

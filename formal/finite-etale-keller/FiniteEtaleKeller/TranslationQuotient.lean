@@ -97,4 +97,34 @@ theorem translationQuotientEquiv_symm_root (P : K[X]) (a : K) :
         + algebraMap K (AdjoinRoot (translatePolynomial P a)) a := by
   simpa [translationQuotientEquiv] using originalToTranslated_root P a
 
+variable {A : Type*} [CommRing A] [Algebra K A]
+
+/-- Precomposition with translation identifies algebra maps out of the
+original and translated polynomial quotients. -/
+def translationQuotientHomEquiv (P : K[X]) (a : K) :
+    (AdjoinRoot P →ₐ[K] A) ≃
+      (AdjoinRoot (translatePolynomial P a) →ₐ[K] A) where
+  toFun := fun φ => φ.comp (translationQuotientEquiv P a).toAlgHom
+  invFun := fun ψ =>
+    ψ.comp (translationQuotientEquiv P a).symm.toAlgHom
+  left_inv := by
+    intro φ
+    apply DFunLike.ext _ _
+    intro x
+    exact congrArg φ ((translationQuotientEquiv P a).apply_symm_apply x)
+  right_inv := by
+    intro ψ
+    apply DFunLike.ext _ _
+    intro x
+    exact congrArg ψ ((translationQuotientEquiv P a).symm_apply_apply x)
+
+/-- Quotient translation commutes with postcomposition in the test
+algebra. -/
+theorem translationQuotientHomEquiv_natural
+    {B : Type*} [CommRing B] [Algebra K B]
+    (P : K[X]) (a : K) (f : A →ₐ[K] B)
+    (φ : AdjoinRoot P →ₐ[K] A) :
+    f.comp (translationQuotientHomEquiv (A := A) P a φ) =
+      translationQuotientHomEquiv (A := B) P a (f.comp φ) := rfl
+
 end FiniteEtaleKeller

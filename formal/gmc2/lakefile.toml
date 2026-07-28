@@ -10,8 +10,8 @@ weak.linter.mathlibStandardSet = true
 
 [[require]]
 name = "mathlib"
-path = "../../.cache/lean-foundational/.lake/packages/mathlib"
+scope = "leanprover-community"
+rev = "v4.32.1"
 
 [[lean_lib]]
 name = "GMC2"
-

@@ -6,16 +6,20 @@ SYSTEM_PYTHON ?= python3
 FINALIZED_PAPERS := \
 	papers/gaussian-moments-two-variables \
 	papers/sparse-minimality-gaussian-moments-dimension-three
-ACTIVE_PAPERS := papers/common-arithmetic-fibers
+ACTIVE_PAPERS := \
+	papers/common-arithmetic-fibers \
+	papers/fixed-map-hasse-failures
 PARKED_PAPERS := \
 	papers/exact-real-chamber-spectra \
 	papers/discriminant-pencils
+COMPANION_PAPERS := papers/quadratic-gauge-nonproperness
 VERIFIED_PAPERS := $(FINALIZED_PAPERS) $(ACTIVE_PAPERS)
-ALL_PAPERS := $(VERIFIED_PAPERS) $(PARKED_PAPERS)
+ALL_PAPERS := $(VERIFIED_PAPERS) $(PARKED_PAPERS) $(COMPANION_PAPERS)
 
 .PHONY: check verify verify-logged verify-minimal verify-core verify-geometry \
 	verify-theorems verify-regressions verify-derived verify-family \
 	verify-external-consequences verify-restricted-minima verify-two-real-gmc verify-factorial-moments verify-factorial-frontier verify-counterexample-scoreboard verify-plane-jc verify-plane-case2-residue-strata verify-plane-case2-j1-endpoint verify-plane-case2-maximal-gcd verify-plane-case2-gcd6 verify-plane-poisson-radical verify-plane-poisson-primary-charts verify-plane-poisson-separators verify-plane-poisson-primary-filtration verify-plane-poisson-filtered-modules verify-weighted-boundary verify-quartic-degree-drop-quantization \
+	verify-plane-sparse-supports verify-plane-support-bridge \
 	verify-linear-torus-free verify-algebraic-torus-free \
 	verify-master \
 	verify-quartic verify-normal-forms verify-formal verify-lean-foundational \
@@ -45,7 +49,11 @@ ALL_PAPERS := $(VERIFIED_PAPERS) $(PARKED_PAPERS)
 	render-status prepare-arxiv-uploads clean-papers
 
 .PHONY: verify-normal-covering-hasse verify-arithmetic-compilation \
-	refresh-arithmetic-compilation
+	refresh-arithmetic-compilation \
+	verify-common-arithmetic-fibers-correspondence \
+	refresh-common-arithmetic-fibers-example \
+	verify-fixed-map-hasse-failures \
+	refresh-multiplicative-hasse-artifact
 .PHONY: verify-hilbert14-invariants
 
 check:
@@ -84,6 +92,21 @@ refresh-arithmetic-compilation:
 	$(PYTHON) scripts/compile_arithmetic_keller_certificate.py --stable-parameter 2 --certificate artifacts/generated-results/arithmetic_keller_quintic_stable_m2.json --lean-module FiniteEtaleKeller.GeneratedArithmeticQuinticStableM2 --lean formal/finite-etale-keller/FiniteEtaleKeller/GeneratedArithmeticQuinticStableM2.lean
 	$(PYTHON) scripts/compile_arithmetic_keller_certificate.py --spec arithmetic/specifications/connected_cubic_stable_n7.json --certificate artifacts/generated-results/arithmetic_keller_cubic_stable_n7.json --lean formal/finite-etale-keller/FiniteEtaleKeller/GeneratedArithmeticCubicStableN7.lean
 
+verify-common-arithmetic-fibers-correspondence:
+	$(PYTHON) scripts/verify_common_arithmetic_fibers_correspondence.py
+
+refresh-common-arithmetic-fibers-example:
+	$(PYTHON) scripts/compile_common_arithmetic_fibers_example.py
+
+verify-fixed-map-hasse-failures:
+	$(PYTHON) scripts/verify_infinite_hasse_keller_fibers.py
+	$(PYTHON) scripts/verify_multiplicative_hasse_artifact.py
+
+refresh-multiplicative-hasse-artifact:
+	$(PYTHON) scripts/count_multiplicative_hasse_parameters.py \
+		--bound 1000000 \
+		--output artifacts/generated-results/multiplicative_hasse_parameters_1000000.json
+
 render-status:
 	$(SYSTEM_PYTHON) scripts/render_status.py
 
@@ -97,9 +120,19 @@ verify-plane-jc:
 	$(PYTHON) plane-jc/cas/test_plane_boundary_exclusion.py
 	$(PYTHON) plane-jc/cas/test_finite_normalization_signatures.py
 	$(PYTHON) plane-jc/cas/test_target_conductor_atlas.py
+	$(PYTHON) plane-jc/cas/verify_unibranch_spectator_models.py
 	$(PYTHON) plane-jc/cas/test_log_boundary_compiler.py
 	$(PYTHON) plane-jc/cas/test_poisson_square_rigidity.py
 	$(PYTHON) plane-jc/cas/test_poisson_square_filtered_modules.py
+
+verify-plane-sparse-supports:
+	$(PYTHON) plane-jc/cas/verify_sparse_support_exclusions.py
+
+verify-plane-support-bridge:
+	$(PYTHON) plane-jc/cas/verify_affine_support_newton_bridge.py
+	$(PYTHON) plane-jc/cas/classify_f2_75_125_layers.py
+	$(PYTHON) plane-jc/cas/audit_f2_75_125_boundary_handoff.py
+	$(PYTHON) plane-jc/cas/test_f2_75_125_frontend.py
 
 verify-plane-case2-residue-strata:
 	$(PYTHON) plane-jc/cas/audit_case2_residue_strata.py
@@ -280,7 +313,7 @@ verify-theorems:
 	$(PYTHON) scripts/verify_real_fiber_spectrum.py
 	$(PYTHON) scripts/verify_hasse_keller_fiber.py
 	$(PYTHON) scripts/verify_infinite_hasse_keller_fibers.py
-	$(PYTHON) scripts/count_multiplicative_hasse_parameters.py --bound 1000000
+	$(PYTHON) scripts/verify_multiplicative_hasse_artifact.py
 	$(PYTHON) scripts/verify_weighted_marked_root_model.py
 	$(PYTHON) scripts/verify_intrinsic_selector_attack.py
 	$(SYSTEM_PYTHON) scripts/audit_weighted_independent.py
@@ -531,6 +564,8 @@ verify-papers:
 		output/pdf/sparse-minimality-gaussian-moments-dimension-three.pdf
 	cp papers/common-arithmetic-fibers/main.pdf \
 		output/pdf/common-arithmetic-fibers.pdf
+	cp papers/fixed-map-hasse-failures/main.pdf \
+		output/pdf/fixed-map-hasse-failures.pdf
 
 prepare-arxiv-uploads:
 	bash scripts/prepare_arxiv_uploads.sh

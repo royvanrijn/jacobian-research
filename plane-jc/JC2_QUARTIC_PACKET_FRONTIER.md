@@ -157,6 +157,21 @@ over that value.  Each image branch is smooth by Orevkov's local link lemma,
 although the two branches may have nontransverse contact.  We call (2.5) a
 \(2+2\) boundary self-collision.
 
+Both local packets occur in one exact finite polynomial cover:
+
+\[
+(T,u)\longmapsto (u,T^4-T^3+uT).
+\]
+
+Its origin fiber is \(T^3(T-1)\).  It also has two critical points
+\(T=(1\pm\sqrt3)/4\) over \((u,v)=(1/8,-1/64)\), where the fiber is the
+product of two double factors.  Thus it realizes `3+1` and `2+2`
+simultaneously and saturates the quartic Orevkov budget.  It is not a
+Keller-normalization model: deleting its principal ramification curve gives
+\(\mathbb A^1\times\mathbb G_m\), not \(\mathbb A^2\).  This exact
+countermodel, and its rank-\(n+1\) generalization, are in
+[`UNIBRANCH_SPECTATOR_COUNTERMODELS.md`](UNIBRANCH_SPECTATOR_COUNTERMODELS.md).
+
 ## 3. A lone cusp cannot connect the spectator
 
 ### Proposition 3.1 -- no-self-collision exclusion

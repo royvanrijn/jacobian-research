@@ -394,6 +394,15 @@ packets, but it is no longer an open degree-three programme.
    residual-different budget.  Do not conflate this with immersion into the
    singular embedded curve \(C\).
 
+The later direct attack shows that Step 5 cannot begin with a purely local
+unibranch exclusion.  The universal finite-free maps
+\((T,u)\mapsto(u,T^{n+1}-T^n+uT)\) have smooth integral source, clean
+unibranch ramification, and a separate étale spectator in every rank at
+least four.  Their Euler cost is exactly \(N-1\).  They fail only the global
+distinguished-open condition: the étale open is
+\(\mathbb A^1\times\mathbb G_m\).  See
+[`UNIBRANCH_SPECTATOR_COUNTERMODELS.md`](UNIBRANCH_SPECTATOR_COUNTERMODELS.md).
+
 The smallest high-value theorem is therefore:
 
 \[

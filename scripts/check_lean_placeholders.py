@@ -85,7 +85,11 @@ def strip_comments_and_strings(source: str) -> str:
 
 def main() -> int:
     failures: list[str] = []
-    files = sorted(LEAN_ROOT.rglob("*.lean"))
+    files = sorted(
+        path
+        for path in LEAN_ROOT.rglob("*.lean")
+        if ".lake" not in path.relative_to(LEAN_ROOT).parts
+    )
     if not files:
         print(f"ERROR: no Lean files found under {LEAN_ROOT}", file=sys.stderr)
         return 2

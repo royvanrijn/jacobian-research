@@ -6,6 +6,7 @@ Authors: Roy van Rijn
 import FiniteEtaleKeller.ExplicitMap
 import FiniteEtaleKeller.ExplicitPolynomial
 import FiniteEtaleKeller.ExplicitAllPadicPoints
+import FiniteEtaleKeller.PaperExampleCorrespondence
 
 /-!
 # The explicit optimal quintic certificate

@@ -11,6 +11,7 @@ on:
       - formal/finite-etale-keller/**
       - scripts/check_lean_placeholders.py
       - scripts/check_lean_axiom_log.py
+      - scripts/check_paper_certificate_imports.py
       - .github/workflows/finite-etale-lean-branch.yml
   workflow_dispatch:
 
@@ -34,6 +35,8 @@ jobs:
           persist-credentials: false
       - name: Reject Lean placeholders and explicit axioms
         run: python3 scripts/check_lean_placeholders.py
+      - name: Enforce the paper certificate import boundary
+        run: python3 scripts/check_paper_certificate_imports.py
       - name: Install Lean and prime the Mathlib cache
         uses: leanprover/lean-action@38fbc41a8c28c4cbaec22d7f7de508ec2e7c0dd9 # v1
         with:
@@ -43,28 +46,37 @@ jobs:
           test: false
           lint: false
           use-mathlib-cache: true
-      - name: Compile the complete finite-etale certificate with captured output
+      - name: Compile both paper certificates with captured output
         id: lean_build
         if: ${{ always() }}
         continue-on-error: true
         shell: bash
         run: |
           mkdir -p artifacts/verification
-          set -o pipefail
+          set -euo pipefail
           cd formal/finite-etale-keller
-          "$HOME/.elan/bin/lake" build FiniteEtaleKeller.VerificationSurface \
-            2>&1 | tee ../../artifacts/verification/finite-etale-lean.log
-      - name: Audit public theorem axiom reports
+          "$HOME/.elan/bin/lake" build FiniteEtaleKeller.PaperCertificate \
+            2>&1 | tee ../../artifacts/verification/paper-certificate.log
+          "$HOME/.elan/bin/lake" build \
+            FiniteEtaleKeller.FixedHassePaperCertificate \
+            2>&1 | tee ../../artifacts/verification/fixed-hasse-paper-certificate.log
+      - name: Audit both public theorem axiom reports
         id: axiom_audit
         if: ${{ always() && steps.lean_build.outcome == 'success' }}
         continue-on-error: true
-        run: python3 scripts/check_lean_axiom_log.py artifacts/verification/finite-etale-lean.log
+        run: |
+          python3 scripts/check_lean_axiom_log.py fibers \
+            artifacts/verification/paper-certificate.log
+          python3 scripts/check_lean_axiom_log.py fixed-hasse \
+            artifacts/verification/fixed-hasse-paper-certificate.log
       - name: Archive Lean compiler log
         if: ${{ always() }}
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         with:
-          name: finite-etale-lean-${{ github.sha }}
-          path: artifacts/verification/finite-etale-lean.log
+          name: paper-certificates-${{ github.sha }}
+          path: |
+            artifacts/verification/paper-certificate.log
+            artifacts/verification/fixed-hasse-paper-certificate.log
           if-no-files-found: error
           retention-days: 3
       - name: Report branch build to issue 11
@@ -89,7 +101,7 @@ jobs:
           run_id = os.environ["RUN_ID"]
           head_sha = os.environ["HEAD_SHA"]
           token = os.environ["GH_TOKEN"]
-          log_path = Path("artifacts/verification/finite-etale-lean.log")
+          log_path = Path("artifacts/verification/paper-certificate.log")
           lines = log_path.read_text(errors="replace").splitlines() if log_path.exists() else []
           tail = "\n".join(lines[-60:])
           if len(tail) > 15000:
