@@ -240,6 +240,17 @@ structure StableGaugeFiberPoint
   b_eq : MvPolynomial.eval₂ (algebraMap K A) point (F 1) = 0
   c_eq : MvPolynomial.eval₂ (algebraMap K A) point (F 2) = algebraMap K A c
 
+/-- A literal point over an arbitrary target `(1,b,c)` on the stable
+`Π = 1` plane. -/
+@[ext]
+structure StableGaugePlaneFiberPoint
+    (F : Fin 3 → GaugePolynomial K) (b c : K)
+    (A : Type*) [CommRing A] [Algebra K A] where
+  point : Fin 3 → A
+  pi_eq : MvPolynomial.eval₂ (algebraMap K A) point (F 0) = 1
+  b_eq : MvPolynomial.eval₂ (algebraMap K A) point (F 1) = algebraMap K A b
+  c_eq : MvPolynomial.eval₂ (algebraMap K A) point (F 2) = algebraMap K A c
+
 /-- Evaluation commutes with a morphism of test algebras. -/
 private theorem eval₂_map_algHom
     (f : A →ₐ[K] B) (point : Fin 3 → A) (P : GaugePolynomial K) :
@@ -272,6 +283,54 @@ def map (f : A →ₐ[K] B) (p : StableGaugeFiberPoint F c A) :
     exact f.commutes c
 
 end StableGaugeFiberPoint
+
+namespace StableGaugePlaneFiberPoint
+
+variable {F : Fin 3 → GaugePolynomial K} {b c : K}
+
+/-- Arbitrary fibers on the stable `Π = 1` plane are functorial in the test
+algebra. -/
+def map (f : A →ₐ[K] B) (p : StableGaugePlaneFiberPoint F b c A) :
+    StableGaugePlaneFiberPoint F b c B where
+  point := fun i => f (p.point i)
+  pi_eq := by
+    rw [eval₂_map_algHom f p.point, p.pi_eq, map_one]
+  b_eq := by
+    rw [eval₂_map_algHom f p.point, p.b_eq]
+    exact f.commutes b
+  c_eq := by
+    rw [eval₂_map_algHom f p.point, p.c_eq]
+    exact f.commutes c
+
+end StableGaugePlaneFiberPoint
+
+/-- On `Π = 1`, the raw common power shift and the raw undeformed map have
+identical evaluations. -/
+theorem eval₂_powerShiftedGaugeMap_eq
+    (G : K[X]) (m : ℕ) (point : Fin 3 → A)
+    (hpi : MvPolynomial.eval₂ (algebraMap K A) point
+      (generalGaugePi G) = 1) :
+    eval₂Map (powerShiftedGaugeMap G m) point =
+      eval₂Map (generalGaugeMap G) point := by
+  funext i
+  fin_cases i
+  · simp [eval₂Map, powerShiftedGaugeMap, generalGaugeMap]
+  · exact eval₂_powerShiftedGaugeB_eq_generalGaugeB G m point hpi
+  · exact eval₂_powerShiftedGaugeC_eq_generalGaugeC G m point hpi
+
+/-- On `Π = 1`, the raw cubic lift and the raw undeformed map have identical
+evaluations. -/
+theorem eval₂_cubicLiftGaugeMap_eq
+    (G : K[X]) (n : ℕ) (hn : 4 ≤ n) (point : Fin 3 → A)
+    (hpi : MvPolynomial.eval₂ (algebraMap K A) point
+      (generalGaugePi G) = 1) :
+    eval₂Map (cubicLiftGaugeMap G n) point =
+      eval₂Map (generalGaugeMap G) point := by
+  funext i
+  fin_cases i
+  · simp [eval₂Map, cubicLiftGaugeMap, generalGaugeMap]
+  · exact eval₂_cubicLiftGaugeB_eq_generalGaugeB G n hn point hpi
+  · exact eval₂_cubicLiftGaugeC_eq_generalGaugeC G n hn point hpi
 
 /-- On `Π = 1`, the normalized common power shift and the normalized
 undeformed map have identical evaluations. -/
@@ -453,6 +512,117 @@ def generalGaugeJacobianOneFiberEquivCubicLift
     apply StableGaugeFiberPoint.ext
     rfl
 
+/-- Every literal raw fiber over `(1,b,c)` is unchanged by a common power
+shift. -/
+def generalGaugeRawPlaneFiberEquivPowerShifted
+    (G : K[X]) (m : ℕ) (b c : K) :
+    GeneralGaugeRawFiberPoint G 1 b c A ≃
+      StableGaugePlaneFiberPoint (powerShiftedGaugeMap G m) b c A where
+  toFun := fun p => by
+    have hpi :
+        MvPolynomial.eval₂ (algebraMap K A) p.point
+          (generalGaugePi G) = 1 := by
+      simpa using p.pi_eq
+    have heval := eval₂_powerShiftedGaugeMap_eq G m p.point hpi
+    exact
+      { point := p.point
+        pi_eq := by
+          change eval₂Map (powerShiftedGaugeMap G m) p.point 0 = 1
+          rw [heval]
+          simpa [eval₂Map, generalGaugeMap] using hpi
+        b_eq := by
+          change eval₂Map (powerShiftedGaugeMap G m) p.point 1 =
+            algebraMap K A b
+          rw [heval]
+          exact p.b_eq
+        c_eq := by
+          change eval₂Map (powerShiftedGaugeMap G m) p.point 2 =
+            algebraMap K A c
+          rw [heval]
+          exact p.c_eq }
+  invFun := fun p => by
+    have hpi :
+        MvPolynomial.eval₂ (algebraMap K A) p.point
+          (generalGaugePi G) = 1 := by
+      simpa [powerShiftedGaugeMap] using p.pi_eq
+    have heval := eval₂_powerShiftedGaugeMap_eq G m p.point hpi
+    exact
+      { point := p.point
+        pi_eq := by simpa using hpi
+        b_eq := by
+          change eval₂Map (generalGaugeMap G) p.point 1 =
+            algebraMap K A b
+          rw [← heval]
+          exact p.b_eq
+        c_eq := by
+          change eval₂Map (generalGaugeMap G) p.point 2 =
+            algebraMap K A c
+          rw [← heval]
+          exact p.c_eq }
+  left_inv := by
+    intro p
+    apply GeneralGaugeRawFiberPoint.ext
+    rfl
+  right_inv := by
+    intro p
+    apply StableGaugePlaneFiberPoint.ext
+    rfl
+
+/-- Every literal raw fiber over `(1,b,c)` is unchanged by a cubic lift. -/
+def generalGaugeRawPlaneFiberEquivCubicLift
+    (G : K[X]) (n : ℕ) (hn : 4 ≤ n) (b c : K) :
+    GeneralGaugeRawFiberPoint G 1 b c A ≃
+      StableGaugePlaneFiberPoint (cubicLiftGaugeMap G n) b c A where
+  toFun := fun p => by
+    have hpi :
+        MvPolynomial.eval₂ (algebraMap K A) p.point
+          (generalGaugePi G) = 1 := by
+      simpa using p.pi_eq
+    have heval := eval₂_cubicLiftGaugeMap_eq G n hn p.point hpi
+    exact
+      { point := p.point
+        pi_eq := by
+          change eval₂Map (cubicLiftGaugeMap G n) p.point 0 = 1
+          rw [heval]
+          simpa [eval₂Map, generalGaugeMap] using hpi
+        b_eq := by
+          change eval₂Map (cubicLiftGaugeMap G n) p.point 1 =
+            algebraMap K A b
+          rw [heval]
+          exact p.b_eq
+        c_eq := by
+          change eval₂Map (cubicLiftGaugeMap G n) p.point 2 =
+            algebraMap K A c
+          rw [heval]
+          exact p.c_eq }
+  invFun := fun p => by
+    have hpi :
+        MvPolynomial.eval₂ (algebraMap K A) p.point
+          (generalGaugePi G) = 1 := by
+      simpa [cubicLiftGaugeMap] using p.pi_eq
+    have heval := eval₂_cubicLiftGaugeMap_eq G n hn p.point hpi
+    exact
+      { point := p.point
+        pi_eq := by simpa using hpi
+        b_eq := by
+          change eval₂Map (generalGaugeMap G) p.point 1 =
+            algebraMap K A b
+          rw [← heval]
+          exact p.b_eq
+        c_eq := by
+          change eval₂Map (generalGaugeMap G) p.point 2 =
+            algebraMap K A c
+          rw [← heval]
+          exact p.c_eq }
+  left_inv := by
+    intro p
+    apply GeneralGaugeRawFiberPoint.ext
+    rfl
+  right_inv := by
+    intro p
+    apply StableGaugePlaneFiberPoint.ext
+    rfl
+
 /-- The power-shift fiber equivalence commutes with change of test algebra. -/
 theorem generalGaugeJacobianOneFiberEquivPowerShifted_natural
     (G : K[X]) (m : ℕ) (c : K) (f : A →ₐ[K] B)
@@ -511,6 +681,66 @@ def cubicLiftGaugeRealizationFiberRepresentingEquiv
         (A := A) (realizationSeed P a) n hn
         (realizationTargetC P a (P.derivative.eval a)))
 
+/-- Every separable inverse polynomial on the `Π = 1` target plane
+represents the corresponding literal common power-shifted fiber. -/
+def powerShiftedGaugePlaneFiberRepresentingEquiv
+    (G : K[X]) (m : ℕ) (b c : K)
+    (h₁ : G.coeff 1 ≠ 0) (h₃ : G.coeff 3 ≠ 0)
+    (hE : (generalGaugeInversePolynomial G 1 b c).Separable) :
+    (AdjoinRoot (generalGaugeInversePolynomial G 1 b c) →ₐ[K] A) ≃
+      StableGaugePlaneFiberPoint (powerShiftedGaugeMap G m) b c A :=
+  (generalGaugeRawRepresentingEquiv
+      G 1 b c h₁ h₃ hE A).trans
+    (generalGaugeRawPlaneFiberEquivPowerShifted (A := A) G m b c)
+
+/-- Every separable inverse cubic on the `Π = 1` target plane represents the
+corresponding literal common cubic-lift fiber. -/
+def cubicLiftGaugePlaneFiberRepresentingEquiv
+    (G : K[X]) (n : ℕ) (hn : 4 ≤ n) (b c : K)
+    (h₁ : G.coeff 1 ≠ 0) (h₃ : G.coeff 3 ≠ 0)
+    (hE : (generalGaugeInversePolynomial G 1 b c).Separable) :
+    (AdjoinRoot (generalGaugeInversePolynomial G 1 b c) →ₐ[K] A) ≃
+      StableGaugePlaneFiberPoint (cubicLiftGaugeMap G n) b c A :=
+  (generalGaugeRawRepresentingEquiv
+      G 1 b c h₁ h₃ hE A).trans
+    (generalGaugeRawPlaneFiberEquivCubicLift (A := A) G n hn b c)
+
+/-- Naturality of the represented whole-plane power-shift fiber. -/
+theorem powerShiftedGaugePlaneFiberRepresentingEquiv_natural
+    (G : K[X]) (m : ℕ) (b c : K)
+    (h₁ : G.coeff 1 ≠ 0) (h₃ : G.coeff 3 ≠ 0)
+    (hE : (generalGaugeInversePolynomial G 1 b c).Separable)
+    (f : A →ₐ[K] B)
+    (φ : AdjoinRoot (generalGaugeInversePolynomial G 1 b c) →ₐ[K] A) :
+    StableGaugePlaneFiberPoint.map f
+        (powerShiftedGaugePlaneFiberRepresentingEquiv
+          (A := A) G m b c h₁ h₃ hE φ) =
+      powerShiftedGaugePlaneFiberRepresentingEquiv
+        (A := B) G m b c h₁ h₃ hE (f.comp φ) := by
+  apply StableGaugePlaneFiberPoint.ext
+  funext i
+  have h := generalGaugeRawRepresentingEquiv_natural
+    G 1 b c h₁ h₃ hE f φ
+  exact congrArg (fun p => p.point i) h
+
+/-- Naturality of the represented whole-plane cubic-lift fiber. -/
+theorem cubicLiftGaugePlaneFiberRepresentingEquiv_natural
+    (G : K[X]) (n : ℕ) (hn : 4 ≤ n) (b c : K)
+    (h₁ : G.coeff 1 ≠ 0) (h₃ : G.coeff 3 ≠ 0)
+    (hE : (generalGaugeInversePolynomial G 1 b c).Separable)
+    (f : A →ₐ[K] B)
+    (φ : AdjoinRoot (generalGaugeInversePolynomial G 1 b c) →ₐ[K] A) :
+    StableGaugePlaneFiberPoint.map f
+        (cubicLiftGaugePlaneFiberRepresentingEquiv
+          (A := A) G n hn b c h₁ h₃ hE φ) =
+      cubicLiftGaugePlaneFiberRepresentingEquiv
+        (A := B) G n hn b c h₁ h₃ hE (f.comp φ) := by
+  apply StableGaugePlaneFiberPoint.ext
+  funext i
+  have h := generalGaugeRawRepresentingEquiv_natural
+    G 1 b c h₁ h₃ hE f φ
+  exact congrArg (fun p => p.point i) h
+
 /-- Naturality of the represented common power-shifted realization fiber. -/
 theorem powerShiftedGaugeRealizationFiberRepresentingEquiv_natural
     (P : K[X]) (a : K) (m : ℕ) (hP : Squarefree P)
@@ -548,6 +778,12 @@ theorem cubicLiftGaugeRealizationFiberRepresentingEquiv_natural
 
 #print axioms eval₂_powerShiftedGaugeJacobianOneMap_eq
 #print axioms eval₂_cubicLiftGaugeJacobianOneMap_eq
+#print axioms eval₂_powerShiftedGaugeMap_eq
+#print axioms eval₂_cubicLiftGaugeMap_eq
+#print axioms powerShiftedGaugePlaneFiberRepresentingEquiv
+#print axioms cubicLiftGaugePlaneFiberRepresentingEquiv
+#print axioms powerShiftedGaugePlaneFiberRepresentingEquiv_natural
+#print axioms cubicLiftGaugePlaneFiberRepresentingEquiv_natural
 #print axioms powerShiftedGaugeRealizationFiberRepresentingEquiv
 #print axioms cubicLiftGaugeRealizationFiberRepresentingEquiv
 #print axioms powerShiftedGaugeRealizationFiberRepresentingEquiv_natural

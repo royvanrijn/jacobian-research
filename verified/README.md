@@ -37,11 +37,27 @@ This directory contains the stable proof chain:
   all supplied presentations into one relative Jacobian-one map, compresses
   the map base sharply from `N+1` to `N-3` parameters by moving three inverse
   coefficients into the target, identifies the universal root fiber over the
-  `N`-dimensional incidence open, and separates the `BS_N` atlas from the
-  obstructed Tschirnhaus descent and essential-dimension questions.
+  `N`-dimensional incidence open, and promotes the remaining parameters to
+  produce one `Q`-defined map of `A^N` for every `N>=3`.  That fixed map is
+  universal for rank-`N` finite-etale fibers over characteristic-zero fields,
+  has `S_N` monodromy, and is absolutely and stably atomic.  The note also
+  separates the `BS_N` atlas from the obstructed Tschirnhaus descent and
+  essential-dimension questions.
+- [Universal atomic-map adversarial audit](UNIVERSAL_ATOMIC_MAP_ADVERSARIAL_AUDIT.md):
+  attacks polynomiality, the promoted block Jacobian, generic degree,
+  coefficient compilation, finite-etale completeness, monodromy, and stable
+  atomicity separately; pins connected, split, and product witness targets;
+  records every genuine failure boundary; and distinguishes the Lean-verified
+  compiler/fiber core from the unformalized monodromy-to-atomicity chain.
 - [Universal Keller-fiber multiplicity](UNIVERSAL_KELLER_FIBER_MULTIPLICITY.md):
   over every characteristic-zero field, every finite etale algebra of rank
   at least three is a complete fiber in infinitely many stable classes.
+- [Whole-plane stable multiplicity](WHOLE_PLANE_STABLE_MULTIPLICITY.md):
+  in every rank at least three, the infinite stable gauge families agree as
+  maps on `P=1` and share the full squarefree inverse cover over its
+  two-dimensional target plane.  Residue-class subfamilies agree over
+  `P^d=1`; the fixed quintic specialization shares one dense quantitative
+  family of degree-optimal Hasse failures.
 - [Universal cubic gauge multiplicity](UNIVERSAL_CUBIC_GAUGE_MULTIPLICITY.md):
   fiber-invisible cubic lifts keep the selected inverse quotient fixed while
   their canonical boundary-component count grows with the lift exponent.

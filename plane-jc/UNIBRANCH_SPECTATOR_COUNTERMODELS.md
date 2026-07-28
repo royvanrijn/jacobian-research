@@ -211,6 +211,23 @@ Thus local length, conductor, and Euler inequalities are exhausted.  Any
 further direct progress must be global topology or the boundary
 localization sequence, not a stronger local Artin-algebra enumeration.
 
+The resulting global Cox/class compilation is developed in
+[`JC2_GLOBAL_COX_PACKET_ATTACK.md`](JC2_GLOBAL_COX_PACKET_ATTACK.md).  Its
+exact lattice audit shows that every quartic target grouping needs the same
+one primitive character, namely the ramified boundary/canonical class.  It
+also records why coarse units, class-group torsion, canonical classes, and
+local monodromy do not yet give a contradiction.  After the later
+affine-modification attacks, the goal is sharpened further: the global
+\(\mathbb A^2\) open supplies a canonical normal Gorenstein source
+hypersurface.  The completed Zariski--Main charts at the cusp and the
+required \(2+2\) connector can now be normalized explicitly; both have
+conductor and canonical module \((r,s)\), and both deletions are locally
+compatible.  Their nonprincipal transition laws also glue without a
+defect.  The obstruction must therefore occur in the two-generated
+degree-zero global-section algebra and its endpoint pairing; the spectator
+model instead has the principal Jacobian coordinate and degree-zero open
+\(\mathbb A^1\times\mathbb G_m\).
+
 ## 7. Reproduction
 
 ```bash

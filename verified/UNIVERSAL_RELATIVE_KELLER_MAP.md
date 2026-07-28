@@ -303,7 +303,118 @@ This is a statement about dominance over *presentations*.  It is not a
 lower bound for an atlas of `BS_N`: the stack `BS_N` has a zero-dimensional
 etale atlas.
 
-### 3.1 One absolute quintic map realizes every quintic etale algebra
+### 3.1 One absolute atomic map in every rank
+
+The parameter promotion used below in degree five is not special to degree
+five.  Let
+
+\[
+ {\bf u}=(u_4,\ldots,u_N)
+\]
+
+for `N>=4`, and let `{\bf u}` be the empty tuple for `N=3`.  Retain these
+parameters as unchanged source and target coordinates and define
+
+\[
+\boxed{
+ {\cal U}_N({\bf u},x,y,z)
+ =({\bf u},{\cal K}_{N,{\bf u}}(x,y,z)):
+ \mathbb A^N_{\mathbb Q}\longrightarrow\mathbb A^N_{\mathbb Q}.
+}
+\]
+
+Here `\mathcal K_{N,{\bf u}}` is given by (1.3)--(1.4) with
+`d_1=d_3=1`, `d_2=0`, and `d_j=u_j`.  Thus this is one polynomial map on
+the whole affine space; no parameter is inverted in its definition.  The
+full Jacobian is block triangular with an `(N-3)`-by-`(N-3)` identity block
+and the vertical determinant-one block, so
+
+\[
+ \det D{\cal U}_N=1.
+\]
+
+At a target `({\bf u},\pi,b,c)` its generic inverse equation is
+
+\[
+\boxed{
+ E_{{\bf u},\pi,b,c}(S)
+ =S+bS^2+\pi S^3+\sum_{j=4}^Nu_j\pi^jS^j-\frac c2.
+}
+\]
+
+Its leading coefficient is `u_N\pi^N` for `N>=4` and `\pi` for `N=3`.
+The reconstruction in (3.5) therefore proves
+
+\[
+ \operatorname{gdeg}({\cal U}_N)=N.
+\]
+
+Let `k` be any characteristic-zero field and let `A` be a rank-`N` finite
+etale `k`-algebra.  Since `k` is infinite, `A` has a primitive element, so
+
+\[
+ A\simeq k[T]/(P(T))
+\]
+
+for a monic squarefree polynomial `P` of degree `N`.  Choose `a\in k`
+outside the finite zero set of
+`P'(a)P^{[3]}(a)`.  This is possible because both factors are nonzero
+polynomials.  Write
+
+\[
+ \frac{P(a+S)}{P'(a)}
+ =h_0+S+h_2S^2+h_3S^3+\cdots+h_NS^N
+\]
+
+and take
+
+\[
+ \pi=h_3,\qquad b=h_2,\qquad c=-2h_0,\qquad
+ u_j=\frac{h_j}{h_3^j}\quad(4\le j\le N).
+\]
+
+Then the displayed inverse equation is exactly `P(a+S)/P'(a)`, and (3.5)
+identifies the **complete** target fiber with
+
+\[
+ \operatorname{Spec}k[S]/(P(a+S))
+ \simeq\operatorname{Spec}(A).
+\]
+
+On the generic target, the birational coefficient change (3.6) identifies
+this inverse equation with the universal normalized root polynomial over
+`V_N`.  Thus promoting the parameters does not change the generic inverse
+extension of the relative map, and Section 5 gives geometric monodromy
+`S_N`.  Its natural degree-`N` action is primitive.  The
+[primitive-monodromy atomicity theorem](PRIMITIVE_MONODROMY_ATOMICITY.md)
+therefore makes `{\cal U}_N` atomic after every characteristic-zero
+extension of constants and after every identity stabilization.
+
+> **Universal absolute atomic-map theorem.**  For every `N>=3`, the single
+> explicit `Q`-defined map
+> \[
+> {\cal U}_N:\mathbb A^N\longrightarrow\mathbb A^N
+> \]
+> above has determinant one, geometric degree `N`, and geometric monodromy
+> `S_N`.  It is absolutely and stably atomic.  After base change to any
+> characteristic-zero field `k`, its complete target fibers realize every
+> rank-`N` finite etale `k`-algebra.
+
+The theorem is optimal with respect to the full-fiber rank spectrum in the
+following limited sense.  Rank one is represented by an automorphism, while
+the [complete rank classification](FINITE_ETALE_KELLER_FIBERS.md) excludes
+full rank two in characteristic zero.  It does not claim that ambient
+dimension `N` is minimal.  It also makes no canonical choice of the target
+attached to an abstract algebra: the primitive element and the translation
+`a` remain presentation choices, exactly as in the atlas discussion of
+Section 4.
+
+The
+[adversarial audit](UNIVERSAL_ATOMIC_MAP_ADVERSARIAL_AUDIT.md)
+checks every implication separately, records the parameter and separability
+failure boundaries, and supplies connected, split, and product witness cards.
+
+### 3.2 Explicit quintic coordinates
 
 For `N=5`, the relative construction extends across `u_5=0` to one
 polynomial Keller self-map of affine five-space.  Write the source
@@ -392,7 +503,7 @@ field.  The two unchanged coordinates in (3.12) are precisely the two
 presentation parameters that are fixed in that three-dimensional
 specialization.
 
-### 3.2 Exact lifting of parametric quintic families
+### 3.3 Exact lifting of parametric quintic families
 
 The construction is compatible with a varying coefficient field, not only
 with individual rational polynomials.  Let `B` be an integral rational
@@ -762,9 +873,11 @@ Proved here:
    universal finite-etale marked fiber;
 2. the exact compression `U_N=V_N x A^1`;
 3. the sharp `N-3`-parameter relative map (3.3);
-4. the stack triangle (4.2), symmetric monodromy, and the
+4. one absolute determinant-one map of `A^N` in every rank `N>=3`, universal
+   for rank-`N` finite-etale fibers and absolutely and stably atomic;
+5. the stack triangle (4.2), symmetric monodromy, and the
    essential-dimension lower bound for versal parameter schemes;
-5. generic failure, for `N>=5`, of descent of the quadratic-gauge atlas
+6. generic failure, for `N>=5`, of descent of the quadratic-gauge atlas
    through full presentation equivalence in stable Keller moduli.
 
 Still open:
@@ -785,5 +898,18 @@ Run
 ```
 
 The checker verifies the vertical determinant-one identities in the compact
-chart, the normalized inverse equation through degree eight, the
-`U_N=V_N x A^1` reconstruction, and the compressed specialization formulas.
+chart, the unchanged-coordinate block promotion in every tested rank, the
+normalized inverse equation and coefficientwise compiler through degree
+twelve, the `U_N=V_N x A^1` reconstruction, and the compressed
+specialization formulas.  It also verifies the adversarial witness cards and
+the all-rank `T^N-T-1` target formula through rank twelve, as well as the
+degree-drop, bad-translation, and repeated-root boundaries.  The Lean
+modules `UniversalPromotedBlock.lean`, `UniversalPromotedMap.lean`,
+`UniversalPromotedGauge.lean`, `UniversalParameterCompiler.lean`,
+`UniversalParameterQuotient.lean`, and
+`UniversalParameterWitnesses.lean` formalize the abstract block determinant,
+the literal promoted map on an `N`-element coordinate type and its actual
+Jacobian-one identity, the coefficient compiler, its quotient-algebra
+realization, and three quartic cards.  Symmetric monodromy and
+primitive-monodromy atomicity are not yet formalized in Lean and are not
+conclusions of a bounded symbolic computation.

@@ -253,6 +253,34 @@ all-order recurrence whose zero solution is forced by finitely many initial
 conditions, together with a mixed recurrence having infinitely many
 certified nonzero terms.
 
+For homogeneous two-variable GVC, this search has a smaller
+representation-theoretic target.  If \(A\) is the degree-\(d\) binary
+symbol of \(\Lambda\) and \(P\) is a degree-\(d\) binary form, then
+\(A(\zeta)P(z)\) is a rank-one point of
+\(\operatorname{End}(\operatorname{Sym}^d)\), and
+\[
+ \mathcal E_2\!\left((A(\zeta)P(z))^m\right)
+ =\Lambda^m(P^m).
+\]
+Thus balanced GVC(2) is the Segre restriction of the SIC(2) moments.  The
+[balanced cubic theorem](TWO_VARIABLE_CUBIC_GVC_THEOREM.md) now closes the
+entire cubic Segre slice: the first four moments force a one-sided form and
+give \(\Lambda^m(QP^m)=0\) for \(m>\deg Q\).  The first open separable
+balanced degree is four.  The
+[low-root continuation](TWO_VARIABLE_LOW_ROOT_GVC_THEOREMS.md) then closes
+all degrees for symbols with at most two distinct roots and closes the
+quartic \((2,1,1)\) orbit by a first-five-moment radical certificate.
+The [split-symbol theorem](SPLIT_SYMBOL_GVC_THEOREM.md) goes further:
+complete factor polarization and the Laurent constant-term theorem prove
+the GVC conclusion for every homogeneous binary operator of order \(d\)
+and every polynomial of degree at most \(d\).  Thus the remaining GVC(2)
+route needs a nonhomogeneous operator or polynomial degree greater than the
+operator order; finite-moment nullcone classification remains a separate
+SIC-strengthening.
+The continuing representation program and the distinction between unequal
+bidegree and genuinely nonhomogeneous mixtures are recorded in
+[`TWO_VARIABLE_GVC_REPRESENTATION_PROGRAM.md`](TWO_VARIABLE_GVC_REPRESENTATION_PROGRAM.md).
+
 ### Track B: minimal translation-uniform lift of a GMC witness
 
 Treat a centered Gaussian counterexample as seed data and add the fewest
@@ -306,6 +334,38 @@ been exhausted.  Resume this track only with one of:
 
 Every candidate must retain an explicit map from the Keller collision to
 \((f,g)\); otherwise it belongs to Track A or B rather than this track.
+
+### Track D: rank-efficient ordinary-Laplacian polarization
+
+The third-order Dvorsky symbol
+\[
+ \xi_t(\xi_a\xi_d-\xi_b\xi_c)
+\]
+suggests a structured quadraticization rather than a generic doubling.
+The target is an all-order lift to a nondegenerate quadratic
+constant-coefficient operator that preserves both the pure vanishing and
+the fixed-multiplier defect.  The auxiliary-variable count should be
+minimized by Schur complements and rank stratification, retaining the
+determinant factor as one rank-two block.
+
+A constant Schur complement cannot change operator order, so the lift must
+couple the operator and polynomial sides or use nonlinear polarization.
+Finite moment matching is insufficient.  The first complete ansatz has now
+been excluded: after adding one variable \(s\), the nondegenerate operator
+\[
+ \partial_a\partial_d-\partial_b\partial_c+\partial_t\partial_s
+\]
+admits no homogeneous cubic lift restricting to the Dvorsky polynomial on
+\(s=0\) whose first two pure moments vanish.  The
+[exact obstruction](DVORSKY_ONE_PAIR_SCHUR_OBSTRUCTION.md) is the
+parameter-independent coefficient \(12t^2\) in the second moment.
+The degree grading also excludes adding only terms above degree three:
+they cannot cancel this degree-two output.  Therefore the next candidate
+must use lower-degree \(s\)-divisible terms coupled to complementary
+higher degrees, a second auxiliary block, or a nonlinear specialization.
+The precise identities, rank-minimization objective, and promotion gates
+are in
+[`TWO_VARIABLE_GVC_REPRESENTATION_PROGRAM.md`](TWO_VARIABLE_GVC_REPRESENTATION_PROGRAM.md).
 
 ## 5. Promotion rules
 

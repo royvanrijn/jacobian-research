@@ -19,8 +19,10 @@ forms of the indicated degrees.  There is no support restriction.
 > \(\nabla\psi\) cannot identify a nonzero antipodal pair.
 
 This is the first support-free result with cubic, quartic, and sextic
-layers simultaneously present.  It does not treat sextic Hessian rank at
-most two or a non-coordinate coisotropic embedding.
+layers simultaneously present.  The later theorems `HC4T21` and `HC4T11`
+close sextic Hessian ranks two and one, giving the complete coordinate
+chart `HC4TC1` for homogeneous support \(\{2,3,4,6\}\).  Quintic and
+higher layers, and a non-coordinate coisotropic embedding, remain separate.
 
 We work after scalar extension to an algebraic closure.  This preserves
 both the collision and the constant-Hessian identity.

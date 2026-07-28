@@ -16,8 +16,15 @@ At a fixed correction order let
 be the filtered complex determined by the allowed Hamiltonians, correction
 symbols, and defect symbols.  It is finite in every bounded ansatz; for the
 all-pole Laurent space it is a filtered union, and the finite support of the
-functional makes it factor through a finite quotient.  The computed
-functionals are elements of
+functional makes it factor through a finite quotient.
+
+This is the Weyl instance of the
+[unified gauge--correction--defect complex](UNIFIED_DEFORMATION_COMPLEX.md).
+That note adds the classical-symbol base and the localization, saturation,
+and conductor layers; the present note remains the canonical source for the
+two exact strong-cocycle certificates.
+
+The computed functionals are elements of
 
 \[
  Z^2_{\mathrm{res},\vee}

@@ -65,6 +65,93 @@ lake build FiniteEtaleKeller.PaperCertificate
 | 34 | Uniform local points and the end-to-end Hasse certificate for every admissible noncube parameter | implemented |
 | 35 | Primitive target coordinates, exact projective height `32a`, and distinctness of the target line | implemented |
 | 36 | Multiplicative closure of the arithmetic core and the complete prime-progression certificate | implemented |
+| 37 | Unchanged-parameter compiler for the promoted fixed map, including exact normalized-translation reconstruction and selected inverse degree | implemented |
+| 38 | Connected, split, and disconnected quartic promoted-target witness identities | implemented |
+| 39 | Determinant of the abstract unchanged-coordinate block `[[I,0],[C,D]]` | implemented |
+| 40 | Quotient-algebra invariance under the compiler's nonzero scalar normalization and translation | implemented |
+| 41 | Literal promoted map on an `N`-element coordinate type, its actual full Jacobian block, and determinant one | implemented |
+| 42 | Generic `S_N` monodromy and primitive-monodromy stable atomicity | theorem-level; not yet Lean |
+| 43 | Whole `Π=1` relative source functor, common target morphism, universal inverse discriminant, and discriminant-open naturality | implemented |
+| 44 | Fitting Newton shoelace formula, translation/`GL₂(ℤ)` invariance, strict shift separation, and cubic count separation | implemented; geometric preservation remains an interface |
+
+## Universal promoted-parameter compiler
+
+`UniversalParameterCompiler.lean` formalizes the coefficient bridge used by
+the fixed-map theorem.  For a normalized polynomial
+
+```text
+H = h₀ + X + h₂ X² + h₃ X³ + ... + h_N X^N
+```
+
+with `h₃ ≠ 0`, it defines
+
+```text
+π = h₃
+b = h₂
+c = -2h₀
+u_j = h_j / h₃^j
+```
+
+and proves:
+
+```text
+universalPromotedInversePolynomial H.natDegree
+    (compileUniversalPromotedTarget H) = H
+```
+
+It also proves equality of natural degrees, nonvanishing of every compiled
+parameter whose source coefficient is nonzero, and the exact specialization
+to `P(a+X)/P'(a)`.  The automatic theorem uses
+`chosenAdmissibleTranslation`, so no jet nonvanishing hypotheses remain as
+inputs.
+
+`UniversalParameterQuotient.lean` proves that multiplication of a defining
+polynomial by a nonzero scalar does not change its `AdjoinRoot` algebra and
+composes this with translation.  In particular it constructs
+
+```text
+AdjoinRoot (normalizedTranslatedPolynomial P a) ≃ₐ[K] AdjoinRoot P
+```
+
+and supplies the automatic admissible-translation version for every
+degree-at-least-three polynomial over a characteristic-zero field.
+
+`UniversalParameterWitnesses.lean` independently reduces the promoted inverse
+formula for three rank-four cards: the field `ℚ[T]/(T⁴-2)`, the split algebra
+`ℚ⁴`, and
+`ℚ[T]/(T²-2) × ℚ[T]/(T²-3)`.
+
+`UniversalPromotedMap.lean` flattens a vertical polynomial family over a
+polynomial parameter ring into one literal polynomial map with unchanged
+parameter coordinates.  It identifies the actual Jacobian with
+
+```text
+[[D_x F, D_u F], [0, I]]
+```
+
+and proves that determinant one survives promotion.
+`UniversalPromotedGauge.lean` instantiates this construction with
+`G_u(S)=S+S^3+sum_(j=4)^N u_j S^j`.  It compares the normalized formula over
+the fraction field with `generalGaugeJacobianOneMap`, descends the Jacobian
+identity to the parameter ring, and proves that the promoted coordinate type
+`Fin 3 ⊕ {j // 4 ≤ j ≤ N}` has cardinality `N`.
+
+Build the formalized portion with:
+
+```text
+lake build FiniteEtaleKeller.UniversalParameterCompiler
+lake build FiniteEtaleKeller.UniversalParameterQuotient
+lake build FiniteEtaleKeller.UniversalParameterWitnesses
+lake build FiniteEtaleKeller.UniversalPromotedBlock
+lake build FiniteEtaleKeller.UniversalPromotedMap
+lake build FiniteEtaleKeller.UniversalPromotedGauge
+```
+
+This is deliberately partial formal verification of the universal atomic-map
+theorem.  Lean now proves the literal promoted map and its determinant on an
+explicit `N`-element coordinate type.  Its selected full-fiber/compiler
+bridge, geometric degree, geometric monodromy, and the
+monodromy-to-atomicity theorem are not formalized.
 
 ## Final polynomial-presentation theorem
 
@@ -235,11 +322,33 @@ multiplicity.  For every common power shift, and for every cubic lift exponent
 `n ≥ 4`, it proves the normalized Jacobian determinant is one.  On `Π=1` the
 deformed coordinates evaluate identically to the undeformed coordinates, so
 the original quotient algebra represents the literal stable-map fiber over
-every commutative test algebra, naturally under algebra homomorphisms.  The
-two generated stable arithmetic modules
-instantiate these statements for the ramified quintic at `m=2` and
-`T^3-T-1` at `n=7`.  The separate boundary invariants proving pairwise stable
-inequivalence are not formalized here.
+every commutative test algebra, naturally under algebra homomorphisms.  This
+holds at every target `(1,b,c)` whose inverse polynomial is separable, not
+only at the selected zero-`b` realization target.
+
+`WholePlaneStableMultiplicity.lean` supplies the relative upgrade.  Its
+source-divisor functor remembers `Π=1` once, while the last two coordinates
+define the morphism to the entire `(B,C)` target plane.  All power shifts and
+all cubic lifts induce the same morphism, naturally in the test algebra.  The
+module defines the universal plane inverse polynomial, proves its scalar
+specialization, and restricts the common functor to the principal open of its
+discriminant.  The pairwise relative equivalences are definitionally the
+identity on source points and are proved to lie over the common target map.
+What remains is the explicit localized-coordinate-ring `AlgEquiv` identifying
+this restriction with the universal `AdjoinRoot` cover; the scalar
+representing equivalences already identify every separable fiber.
+
+`StableSeparationCertificates.lean` formalizes the stable invariant
+arithmetic.  Laurent-unit translation and every unimodular lattice change
+preserve normalized quadrilateral area; the power-shift vertices have area
+`2N-3+(N-2)m`, which recovers `m`; and the cubic boundary ledger has count
+`1+(n-1)=n`, which recovers `n`.  The bridge theorems make the remaining
+geometric hypotheses explicit.  Lean does not yet construct the normalized
+ramified Fitting divisor or prove cubic boundary exhaustion and their
+functoriality under stable equivalence.
+
+The two generated stable arithmetic modules instantiate the fiber statements
+for the ramified quintic at `m=2` and `T^3-T-1` at `n=7`.
 
 The principal final declarations are:
 
@@ -293,6 +402,20 @@ powerShiftedGaugeRealizationFiberRepresentingEquiv
 cubicLiftGaugeRealizationFiberRepresentingEquiv
 powerShiftedGaugeRealizationFiberRepresentingEquiv_natural
 cubicLiftGaugeRealizationFiberRepresentingEquiv_natural
+generalGaugePlaneInversePolynomial_specialize
+generalGaugePlaneDiscriminant_isUnit
+GeneralGaugePlaneRootCoverAlgebra
+powerShiftedGaugeWholePlane_target
+powerShiftedGaugeWholePlaneEquiv_overTarget
+powerShiftedGaugeDiscriminantOpenEquiv_overTarget
+cubicLiftGaugeWholePlane_target
+cubicLiftGaugeWholePlaneEquiv_overTarget
+cubicLiftGaugeDiscriminantOpenEquiv_overTarget
+normalizedLatticeQuadrilateralArea_translate
+normalizedLatticeQuadrilateralArea_unimodular
+normalized_powerShiftFittingNewtonArea
+powerShift_eq_of_equalFittingNewtonArea
+cubicLift_eq_of_equalBoundaryTargetComponentCount
 jacobianDet_powerShiftedGaugeJacobianOneMap
 jacobianDet_cubicLiftGaugeJacobianOneMap
 ExplicitQuintic.p5_quotient_etale
@@ -532,6 +655,16 @@ The broad repository umbrella remains available for companion work:
 ```bash
 lake build FiniteEtaleKeller
 ```
+
+The companion HC(4) calculation
+`FiniteEtaleKeller/HC4QuinticDiagonal.lean` formalizes the scalar Schur
+identity and fifth-power conclusion in the diagonal sextic--quintic
+obstruction.  It also proves the reduced-ring endpoint used by the
+fourth-power radical certificate for the symmetric sextic pencil.  The
+generic Hessian-determinant coefficient extraction and Gröbner saturation
+are certified by `scripts/verify_hc4_quintic_diagonal_schur.py` and
+`scripts/verify_hc4_quintic_symmetric_sextic_schur.py`; they are not yet
+formalized in Lean.
 
 Repository CI uses the first command for the paper artifact.  It does not pull
 the explicit arithmetic examples, degree-four barrier, or other companion

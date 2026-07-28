@@ -164,6 +164,13 @@ all three inverse sheets and therefore
 
 Thus every map has the same complete cubic fiber.
 
+In fact the corrections (2.2) have the common factor `P^(n-3)-1`.
+Consequently all cubic lifts agree as maps on the full source divisor
+`P=1` and share every squarefree inverse fiber on its two-dimensional
+target plane.  This is recorded with the all-rank and cyclotomic
+strengthenings in
+[WHOLE_PLANE_STABLE_MULTIPLICITY.md](WHOLE_PLANE_STABLE_MULTIPLICITY.md).
+
 ## 4. The degree-drop polynomial is squarefree
 
 Let

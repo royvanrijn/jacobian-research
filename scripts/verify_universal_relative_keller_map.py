@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Exact audits for the universal relative quadratic-gauge Keller map."""
+"""Exact audits for the universal relative and promoted absolute Keller maps."""
 
 from __future__ import annotations
 
@@ -67,7 +67,7 @@ def compressed_map(degree: int) -> tuple[sp.Expr, sp.Expr, sp.Expr, dict[int, sp
 
 
 # Direct source-coordinate Jacobians are useful low-degree regressions.  The
-# all-degree proof is the compact-chart factorization above.
+# all-degree vertical proof is the compact-chart factorization above.
 for checked_degree in range(3, 6):
     mapping = compressed_map(checked_degree)
     determinant = sp.factor(
@@ -76,17 +76,34 @@ for checked_degree in range(3, 6):
     assert determinant == 1
 
 
-# The degree-five relative map extends to one absolute polynomial map of A^5
-# by retaining its two seed coefficients.  Its full Jacobian remains one.
-quintic_mapping = compressed_map(5)
-u4, u5 = quintic_mapping[3][4], quintic_mapping[3][5]
-absolute_quintic = sp.Matrix(
-    [u4, u5, quintic_mapping[0], quintic_mapping[1], quintic_mapping[2]]
-)
-absolute_quintic_jacobian = absolute_quintic.jacobian((u4, u5, x, y, z))
-assert absolute_quintic_jacobian[:2, :2] == sp.eye(2)
-assert absolute_quintic_jacobian[:2, 2:] == sp.zeros(2, 3)
-assert sp.factor(absolute_quintic_jacobian.det()) == 1
+# In every rank, retaining all N-3 seed coefficients gives one polynomial
+# self-map of A^N.  Its full Jacobian has an identity upper block, a zero
+# upper-right block, and the same vertical Jacobian.  The compact identity
+# above then proves determinant one for arbitrary N.
+for checked_degree in range(3, 9):
+    promoted = compressed_map(checked_degree)
+    promoted_parameters = tuple(
+        promoted[3][j] for j in range(4, checked_degree + 1)
+    )
+    promoted_source = (*promoted_parameters, x, y, z)
+    promoted_mapping = (*promoted_parameters, *promoted[:3])
+    assert len(promoted_source) == checked_degree
+    assert len(promoted_mapping) == checked_degree
+
+    promoted_jacobian = sp.Matrix(promoted_mapping).jacobian(promoted_source)
+    parameter_count = checked_degree - 3
+    assert (
+        promoted_jacobian[:parameter_count, :parameter_count]
+        == sp.eye(parameter_count)
+    )
+    assert (
+        promoted_jacobian[:parameter_count, parameter_count:]
+        == sp.zeros(parameter_count, 3)
+    )
+    assert (
+        promoted_jacobian[parameter_count:, parameter_count:]
+        == sp.Matrix(promoted[:3]).jacobian((x, y, z))
+    )
 
 
 T, a = sp.symbols("T a")
@@ -105,6 +122,33 @@ for degree in range(3, 9):
     unshifted = sp.expand(shifted.as_expr().subs(S, T - a))
     assert sp.Poly(unshifted - polynomial, T).is_zero
 
+    # Promote all N-3 normalized seed coefficients and compile this arbitrary
+    # monic presentation into one target of the fixed A^N map.
+    pi_value = jets[3] / jets[1]
+    b_value = jets[2] / jets[1]
+    c_value = -2 * jets[0] / jets[1]
+    compiled_inverse = (
+        S
+        + b_value * S**2
+        + pi_value * S**3
+        + sum(
+            (
+                jets[j]
+                * jets[1] ** (j - 1)
+                / jets[3] ** j
+            )
+            * pi_value**j
+            * S**j
+            for j in range(4, degree + 1)
+        )
+        - c_value / 2
+    )
+    for exponent in range(degree + 1):
+        assert sp.cancel(
+            sp.Poly(compiled_inverse, S).nth(exponent)
+            - jets[exponent] / jets[1]
+        ) == 0
+
 
 # The N-3 map parameters and three target coordinates reproduce every
 # normalized inverse polynomial coefficientwise.  Independent jet symbols
@@ -122,9 +166,18 @@ for degree in range(3, 13):
     assert -c_value / 2 == hs[0]
     assert b_value == hs[2]
     assert pi_value == hs[3]
+    promoted_inverse = S + b_value * S**2 + pi_value * S**3 - c_value / 2
     for j in range(4, degree + 1):
         u_value = hs[j] / pi_value**j
         assert sp.cancel(u_value * pi_value**j - hs[j]) == 0
+        promoted_inverse += u_value * pi_value**j * S**j
+
+    promoted_inverse = sp.Poly(promoted_inverse, S)
+    assert promoted_inverse.degree() == degree
+    for exponent in range(degree + 1):
+        assert sp.cancel(
+            promoted_inverse.nth(exponent) - hs[exponent]
+        ) == 0
 
     # Formula (3.9) is the same parameter change written in Hasse jets.
     ds = {
@@ -139,6 +192,234 @@ for degree in range(3, 13):
             ds[j] * ds[1] ** (j - 1) / ds[3] ** j
         )
         assert normalized_jet_u == displayed_jet_u
+
+
+def compile_promoted_target(
+    polynomial: sp.Expr,
+    degree: int,
+    translation: sp.Expr,
+) -> tuple[tuple[sp.Expr, ...], sp.Poly]:
+    """Compile a supplied presentation into one target of U_degree."""
+
+    shifted = sp.Poly(
+        sp.expand(polynomial.subs(T, translation + S)),
+        S,
+    )
+    assert shifted.degree() == degree
+    jets = {j: shifted.nth(j) for j in range(degree + 1)}
+    assert jets[1] != 0
+    assert jets[3] != 0
+    normalized = sp.Poly(
+        sp.cancel(shifted.as_expr() / jets[1]),
+        S,
+    )
+    pi_value = sp.cancel(jets[3] / jets[1])
+    target = tuple(
+        sp.cancel(
+            jets[j] * jets[1] ** (j - 1) / jets[3] ** j
+        )
+        for j in range(4, degree + 1)
+    ) + (
+        pi_value,
+        sp.cancel(jets[2] / jets[1]),
+        sp.cancel(-2 * jets[0] / jets[1]),
+    )
+    return target, normalized
+
+
+def promoted_inverse_from_target(
+    degree: int,
+    target: tuple[sp.Expr, ...],
+) -> sp.Poly:
+    """Rebuild the selected inverse polynomial from an absolute target."""
+
+    parameter_count = degree - 3
+    parameters = target[:parameter_count]
+    pi_value, b_value, c_value = target[parameter_count:]
+    inverse = (
+        S
+        + b_value * S**2
+        + pi_value * S**3
+        + sum(
+            parameters[j - 4] * pi_value**j * S**j
+            for j in range(4, degree + 1)
+        )
+        - c_value / 2
+    )
+    return sp.Poly(sp.cancel(inverse), S)
+
+
+# Adversarial witness cards cover connected fields, the split algebra, and
+# disconnected products.  Each target is pinned independently of the general
+# coefficientwise identity above.
+expected_connected_targets = {
+    3: (
+        sp.Rational(1, 3),
+        sp.Integer(1),
+        sp.Rational(2, 3),
+    ),
+    4: (
+        sp.Rational(1, 4),
+        sp.Integer(1),
+        sp.Rational(3, 2),
+        sp.Rational(1, 2),
+    ),
+    5: (
+        sp.Rational(1, 16),
+        sp.Rational(1, 160),
+        sp.Integer(2),
+        sp.Integer(2),
+        sp.Rational(2, 5),
+    ),
+    6: (
+        sp.Rational(81, 4000),
+        sp.Rational(243, 100000),
+        sp.Rational(243, 2000000),
+        sp.Rational(10, 3),
+        sp.Rational(5, 2),
+        sp.Rational(1, 3),
+    ),
+}
+for witness_degree, expected_target in expected_connected_targets.items():
+    witness_polynomial = T**witness_degree - 2
+    target, normalized = compile_promoted_target(
+        witness_polynomial,
+        witness_degree,
+        sp.Integer(1),
+    )
+    assert target == expected_target
+    assert promoted_inverse_from_target(witness_degree, target) == normalized
+    assert sp.discriminant(witness_polynomial, T) != 0
+
+    # Eisenstein at two certifies that Q[T]/(T^N-2) is a field.
+    witness_coefficients = sp.Poly(witness_polynomial, T).all_coeffs()
+    assert witness_coefficients[0] == 1
+    assert all(coefficient % 2 == 0 for coefficient in witness_coefficients[1:])
+    assert witness_coefficients[-1] % 4 != 0
+
+
+# The all-rank arithmetic stress family P_N=T^N-T-1 has Galois group S_N
+# over Q by Osada's theorem.  The checker does not re-prove that theorem; it
+# certifies the closed-form target and inverse identity for the tested ranks.
+for witness_degree in range(3, 13):
+    witness_polynomial = T**witness_degree - T - 1
+    target, normalized = compile_promoted_target(
+        witness_polynomial,
+        witness_degree,
+        sp.Integer(1),
+    )
+    pi_value = sp.Rational(
+        witness_degree * (witness_degree - 2),
+        6,
+    )
+    expected_target = tuple(
+        sp.cancel(
+            sp.binomial(witness_degree, j)
+            / (witness_degree - 1)
+            / pi_value**j
+        )
+        for j in range(4, witness_degree + 1)
+    ) + (
+        pi_value,
+        sp.Rational(witness_degree, 2),
+        sp.Rational(2, witness_degree - 1),
+    )
+    assert target == expected_target
+    assert promoted_inverse_from_target(witness_degree, target) == normalized
+    assert sp.discriminant(witness_polynomial, T) != 0
+
+
+split_quartic = sp.prod(T - root for root in range(1, 5))
+split_quartic_target, split_quartic_inverse = compile_promoted_target(
+    split_quartic,
+    4,
+    sp.Integer(0),
+)
+assert split_quartic_target == (
+    sp.Rational(-25, 2),
+    sp.Rational(1, 5),
+    sp.Rational(-7, 10),
+    sp.Rational(24, 25),
+)
+assert promoted_inverse_from_target(4, split_quartic_target) == split_quartic_inverse
+assert sp.discriminant(split_quartic, T) == 144
+
+
+product_witnesses = {
+    4: (
+        (T**2 - 2) * (T**2 - 3),
+        (
+            sp.Rational(-27, 32),
+            sp.Rational(-2, 3),
+            sp.Rational(-1, 6),
+            sp.Rational(2, 3),
+        ),
+    ),
+    5: (
+        (T**2 - 2) * (T**3 - 3),
+        (
+            sp.Rational(-1715, 4096),
+            sp.Rational(2401, 32768),
+            sp.Rational(-8, 7),
+            sp.Rational(-1, 7),
+            sp.Rational(4, 7),
+        ),
+    ),
+    6: (
+        (T**2 - 2) * (T**4 - 3),
+        (
+            sp.Rational(-26, 81),
+            sp.Rational(8, 81),
+            sp.Rational(-8, 729),
+            sp.Rational(-3, 2),
+            sp.Integer(0),
+            sp.Rational(1, 2),
+        ),
+    ),
+}
+for witness_degree, (witness_polynomial, expected_target) in product_witnesses.items():
+    target, normalized = compile_promoted_target(
+        witness_polynomial,
+        witness_degree,
+        sp.Integer(1),
+    )
+    assert target == expected_target
+    assert promoted_inverse_from_target(witness_degree, target) == normalized
+    assert sp.discriminant(witness_polynomial, T) != 0
+
+
+# Boundary attacks: these show why every open condition in the theorem is
+# needed without threatening polynomiality of the ambient fixed map.
+bad_linear_translation = sp.Poly((T**6 - 2).subs(T, S), S)
+assert bad_linear_translation.nth(1) == 0
+
+bad_cubic_translation = sp.Poly((T**4 + T).subs(T, S), S)
+assert bad_cubic_translation.nth(1) == 1
+assert bad_cubic_translation.nth(3) == 0
+assert sp.discriminant(T**4 + T, T) != 0
+
+quartic_connected_target = expected_connected_targets[4]
+zero_pi_target = (
+    quartic_connected_target[0],
+    sp.Integer(0),
+    quartic_connected_target[2],
+    quartic_connected_target[3],
+)
+assert promoted_inverse_from_target(4, zero_pi_target).degree() < 4
+zero_top_parameter_target = (
+    sp.Integer(0),
+    *quartic_connected_target[1:],
+)
+assert promoted_inverse_from_target(4, zero_top_parameter_target).degree() < 4
+
+repeated_root_polynomial = (T - 1) ** 2 * (T**2 + 1)
+repeated_target, repeated_inverse = compile_promoted_target(
+    repeated_root_polynomial,
+    4,
+    sp.Integer(-3),
+)
+assert promoted_inverse_from_target(4, repeated_target) == repeated_inverse
+assert sp.discriminant(repeated_root_polynomial, T) == 0
 
 
 # Every monic squarefree quintic presentation enters the absolute A^5 map
@@ -408,4 +689,7 @@ for computed_coordinate, displayed_coordinate in zip(
     assert sp.cancel(computed_coordinate - displayed_coordinate) == 0
 
 
-print("universal relative Keller-map checks passed")
+print(
+    "universal relative and absolute Keller-map algebraic checks passed "
+    "(S_N monodromy and atomicity are theorem-level imports)"
+)

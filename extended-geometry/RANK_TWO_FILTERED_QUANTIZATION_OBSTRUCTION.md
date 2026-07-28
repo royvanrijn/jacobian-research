@@ -90,6 +90,36 @@ whose compatibility follows by differentiating the canonical commutator.
 The exact splitting certificate is
 [`verify_rank_two_quantum_darboux.py`](../scripts/verify_rank_two_quantum_darboux.py).
 
+## Primary branch: quantize incidence, then descend
+
+The fixed degree-five calculation below is a fiber of a larger relative
+problem.  The primary \(DC_2\) branch should not continue only by increasing
+the correction support over this one classical symbol.
+
+Instead, use the simple marked-root incidence presentation from
+[the marked-root model](../verified/MARKED_ROOT_MODEL.md), or its normalized
+factorization presentation, as the classical object.  Over a family, keep a
+separate seed space as the classical-symbol base.  Quantize the natural
+localized inverse coordinates before specializing that base.  In the Ore
+chart this means:
+
+1. solve the rank-one fiber equation
+   \([S_\hbar,T_\hbar]=\hbar\) relatively over the symbol base;
+2. solve the Hamiltonian connection equations (Q2);
+3. compute boundary valuations of the resulting correction torsor on the
+   root-at-infinity chart;
+4. use support saturation to remove obstruction classes supported only on
+   the boundary; and
+5. use the normalization conductor to glue the localized solutions
+   globally.
+
+Apparent poles must be tested modulo homogeneous corrections and Hamiltonian
+gauge, not on one chosen formula.  The resulting family complex is organized
+in
+[one deformation complex for gauges, corrections, and defects](UNIFIED_DEFORMATION_COMPLEX.md).
+Its horizontal classical-symbol directions are essential: eliminating every
+quantum branch above one degree-five symbol would not settle \(DC_2\).
+
 ## A degree-five parity obstruction
 
 The Ore reduction makes the first direct test finite.  At the admissible
@@ -652,12 +682,13 @@ column itself vanishes identically.  Consequently the entire projective
 by
 [`explore_rank_two_odd_l1_high_support.py`](../scripts/explore_rank_two_odd_l1_high_support.py).
 
-The next symbol-specific task is a uniform fourth-order obstruction or lift
-on this explicit high-support \(\mathbf P^6\), followed by the exceptional
-subschemes of the \(L_2\) normal cone and any components not meeting the two
-generic normal charts.  A global filtered nonsurjective lift here would
-disprove \((DC_2)\).  Conversely, eliminating this \(\mathbf P^6\), or even
-every branch of this displayed symbol, would show only that this symbol
+The next symbol-specific task remains a uniform fourth-order obstruction or
+lift on this explicit high-support \(\mathbf P^6\), followed by the
+exceptional subschemes of the \(L_2\) normal cone and any components not
+meeting the two generic normal charts.  It is now secondary to the relative
+incidence-first branch above.  A global filtered nonsurjective lift here
+would disprove \((DC_2)\).  Conversely, eliminating this \(\mathbf P^6\), or
+even every branch of this displayed symbol, would show only that this symbol
 does not furnish a counterexample; it would not prove \((DC_2)\).
 
 ## A surviving formal-local quantization

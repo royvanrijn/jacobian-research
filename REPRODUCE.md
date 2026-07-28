@@ -93,6 +93,7 @@ remain as a regression:
 .venv/bin/python scripts/verify_universal_quartic_gauge_multiplicity.py
 .venv/bin/python scripts/verify_universal_cubic_gauge_multiplicity.py
 .venv/bin/python scripts/verify_universal_power_shifted_gauge_multiplicity.py
+.venv/bin/python scripts/verify_whole_plane_stable_multiplicity.py
 .venv/bin/python scripts/verify_universal_quintic_fiber_multiplicity.py
 .venv/bin/python scripts/verify_universal_higher_degree_fiber_multiplicity.py
 .venv/bin/python scripts/verify_universal_multiplicity_witness_cards.py
@@ -106,6 +107,22 @@ remain as a regression:
 .venv/bin/python scripts/verify_infinite_hasse_keller_fibers.py
 .venv/bin/python scripts/verify_multiplicative_hasse_artifact.py
 ```
+
+The relative whole-plane statement and the exact stable-separation
+certificates are checked independently in Lean:
+
+```bash
+cd formal/finite-etale-keller
+lake build FiniteEtaleKeller.WholePlaneStableMultiplicity
+lake build FiniteEtaleKeller.StableSeparationCertificates
+```
+
+The first build treats all `(B,C)` simultaneously and restricts naturally to
+the universal inverse-discriminant open.  The second proves the Fitting
+shoelace formula, Laurent translation and unimodular invariance, strict
+power-shift separation, and cubic boundary-count separation.  The geometric
+normalization/Fitting and boundary-exhaustion inputs remain explicit
+interfaces.
 
 To intentionally refresh the pinned count artifact after changing its
 generator, run:
@@ -233,10 +250,39 @@ The next checker supplies connected degree-four, degree-five, and degree-six
 three-map witness cards, including modular irreducibility, exact targets,
 complete inverse identities, and distinct stable invariant values.  The
 universal-relative checker verifies the block-triangular determinant through
-the compact reciprocal chart, the exact `U_N=V_N x A1` normalization, and the
-sharp `N-3`-parameter inverse-polynomial specialization through degree eight.
-The written theorem distinguishes presentation dominance from stack descent
-and essential dimension.  The
+the compact reciprocal chart, the unchanged-coordinate promotion to one
+absolute map of `A^N`, the exact `U_N=V_N x A1` normalization, and the sharp
+`N-3`-parameter inverse-polynomial specialization through degree twelve.  The
+written theorem proves all-rank finite-etale universality and imports `S_N`
+monodromy and primitive-monodromy atomicity; those last two steps are not
+inferred from a bounded symbolic computation.  It also distinguishes
+presentation dominance from stack descent and essential dimension.  The
+adversarial extension gives a closed-form all-rank target for the Osada
+`S_N` family `T^N-T-1`, checks it through rank twelve, pins additional
+connected, split, and disconnected targets in ranks three through six, and
+verifies the genuine degree-drop, bad-translation, and repeated-root
+boundaries.
+
+The formalized promoted map, coefficient compiler, and witness cards are:
+
+```bash
+cd formal/finite-etale-keller
+lake build FiniteEtaleKeller.UniversalPromotedBlock
+lake build FiniteEtaleKeller.UniversalParameterCompiler
+lake build FiniteEtaleKeller.UniversalParameterQuotient
+lake build FiniteEtaleKeller.UniversalParameterWitnesses
+lake build FiniteEtaleKeller.UniversalPromotedMap
+lake build FiniteEtaleKeller.UniversalPromotedGauge
+```
+
+These modules prove the abstract unchanged-coordinate block determinant, the
+promoted inverse-polynomial identity, its selected degree, nonvanishing of
+compiled top parameters, automatic admissible translation, invariance of the
+quotient algebra under the compiler's nonzero normalization and translation,
+three exact quartic targets, and the literal promoted map on an `N`-element
+coordinate type with its actual full Jacobian block and determinant-one
+identity.  They do not formalize the literal promoted full-fiber/compiler
+bridge, its geometric degree, `S_N` monodromy, or stable atomicity.  The
 low-rank checker verifies the collapse of all three present cubic mechanisms
 and the exact biquadratic trace form used in the written two-step Springer
 anisotropy proof.
@@ -1642,6 +1688,80 @@ seven-term Laurent-curve charts, and verifies their hidden one-sided
 factorizations.  The proof and exact claim boundary are in
 [`TWO_PAIR_SIC_BIDEGREE22_FRONTIER.md`](extended-geometry/TWO_PAIR_SIC_BIDEGREE22_FRONTIER.md).
 
+The balanced cubic two-variable GVC theorem is replayed by
+
+```bash
+.venv/bin/python scripts/verify_two_variable_cubic_gvc.py
+```
+
+For the three nonzero binary-cubic symbol orbits \(u^3\), \(u^2v\), and
+\(uv(u+v)\), the checker derives the apolar moments directly from
+coefficient expansion.  It verifies that moments through orders one,
+three, and four, respectively, leave only the displayed one-sided normal
+forms.  In the squarefree orbit it checks all three exact branch
+factorizations and the constant annihilating direction of every surviving
+pure cube.  The written degree argument gives
+\(\Lambda^m(QP^m)=0\) for \(m>\deg Q\); this all-order conclusion, not a
+bounded replay, proves the theorem.  See
+[`TWO_VARIABLE_CUBIC_GVC_THEOREM.md`](extended-geometry/TWO_VARIABLE_CUBIC_GVC_THEOREM.md).
+
+The quartic three-root continuation is replayed by
+
+```bash
+.venv/bin/python scripts/verify_two_variable_quartic_three_root_gvc.py
+```
+
+After normalizing the \((2,1,1)\) symbol to \(u^2v(u+v)\), the first
+moment eliminates one polynomial coefficient.  The checker derives moments
+two through five, proves containment in the three-component one-sided
+ideal, and verifies that the fourth powers of all five generators of that
+radical lie in the moment ideal.  The same
+[`low-root note`](extended-geometry/TWO_VARIABLE_LOW_ROOT_GVC_THEOREMS.md)
+proves the all-degree theorem for symbols with at most two roots via the
+one-variable Duistermaat--van der Kallen constant-term theorem; that part
+is a written proof rather than a bounded computation.
+
+The later
+[`SPLIT_SYMBOL_GVC_THEOREM.md`](extended-geometry/SPLIT_SYMBOL_GVC_THEOREM.md)
+requires no computer algebra.  It factors a homogeneous operator symbol
+as directional derivatives and proves
+\[
+ \Lambda^m(P^m)
+ =(m!)^d\operatorname{CT}
+ \left(\frac{P_d(\sum_i t_i v_i)}{\prod_i t_i}\right)^m,
+\]
+where \(P_d\) is the degree-\(d\) part.
+Duistermaat--van der Kallen gives an integral weight separating the Laurent
+support from the origin.  In the translated mixed coefficient, a fixed
+multiplier and lower-degree factors of \(P\) can replace only boundedly many
+full polarization factors, while the separator gap grows linearly with
+\(m\).  This proves split-symbol GVC.  Because every binary form splits,
+every homogeneous binary operator of order \(d\) satisfies GVC for
+polynomials of degree at most \(d\).  There is no bounded replay to confuse
+with the proof.
+
+The first rank-efficient ordinary-Laplacian lift is excluded by
+
+```bash
+.venv/bin/python scripts/verify_dvorsky_one_pair_schur_obstruction.py
+```
+
+Pairing \(t\) with one new variable \(s\) makes
+\[
+ \partial_a\partial_d-\partial_b\partial_c+\partial_t\partial_s
+\]
+a nondegenerate quadratic operator in six variables.  The checker
+parametrizes every homogeneous cubic \(F\) that restricts to the Dvorsky
+polynomial at \(s=0\) and satisfies the first pure condition.  It then
+proves that the \(t^2\)-coefficient of the second pure contraction is
+identically \(12\), independent of all lift parameters.  This is a
+complete obstruction for that degree-preserving one-pair ansatz.  By
+homogeneous degree, adding only terms above degree three cannot cancel the
+degree-two output either.  Lower-degree \(s\)-divisible terms paired with
+complementary higher degrees, multi-block lifts, and nonlinear lifts remain
+open.  See
+[`DVORSKY_ONE_PAIR_SCHUR_OBSTRUCTION.md`](extended-geometry/DVORSKY_ONE_PAIR_SCHUR_OBSTRUCTION.md).
+
 The next balanced two-pair frontier is replayed by
 
 ```bash
@@ -1691,17 +1811,41 @@ full higher \(\operatorname{Sym}^6\oplus\operatorname{Sym}^4\) locus by
 five residual-torus chart orbits, and proves by displayed nonzero exact
 eleven-by-eleven Jacobian determinants that moments \(2,\ldots,12\) are
 algebraically independent on every chart orbit.  This is a
-dimension-sized coordinate theorem, not a zero-fiber exclusion.
+dimension-sized coordinate theorem, not a zero-fiber exclusion. It also
+verifies the exact normalized formula for \(\mu_2\), whose derivatives in
+the five opposite-weight chart variables are respectively
+\(-72,432,-1080,336,-1344\). Thus one variable is eliminated without
+saturation on every chart. On \(s_0=1\), the checker then eliminates
+\(s_6\) and proves that \(\mu_3\) is affine in \(s_5,t_4\), recording its
+two explicit pivot coefficients and their common boundary. On the natural
+two-parameter plane
+\(t_0=a,t_3=3a,t_4=b,s_6=(14ab+70)/3\) in that boundary, it verifies
+\(\mu_3=1866240a^3\), computes the fourth moment, and checks an explicit
+unit certificate modulo \(a^3\). Thus this sparse boundary plane contains
+no moment-zero point. Finally it evaluates the full chart Jacobian at
+exact rational points in \(A\ne0\), \(A=0,B\ne0\), and \(A=B=0\).
+Together with the independent gradients of \(A,B\), the nonzero
+determinants prove maximal restricted differential ranks \(11,10,9\).
 
 Modular full-chart reconnaissance is available separately:
 
 ```bash
 .venv/bin/python scripts/explore_two_pair_sic_bidegree33_full_anchor.py \
-  --prime 101 --max-order 12 --algorithm slimgb
+  --prime 43 \
+  --orders 2,3,4,5,6,7,8,9,10,11,12,14 \
+  --timeout 180 --backend msolve --charts s0 \
+  --branch s0-A-open-sparse --msolve-linear-algebra 44
 ```
 
-Its Gröbner results are experimental and must not be promoted without an
-exact characteristic-zero certificate.
+Recorded Singular and `msolve` runs reach the dense chart ideal quickly
+but time out, including after the first pivot and on the common
+third-moment pivot boundary. The fully substituted \(A\ne0\) branch
+exports as eleven equations in ten variables, but the recorded `msolve`
+run terminates inside the solver. Sparse principal-open encodings avoid
+that expansion, but the full corrected \(A\)- and \(B\)-open systems still
+exceed the recorded bounds. These are computational diagnostics, not
+evidence for or against the anchor. Any later modular result remains
+experimental until it has an exact characteristic-zero certificate.
 The conceptual continuation introduces no new computed certificate:
 [`TWO_PAIR_SIC_MOMENT_NULLCONE_PROGRAM.md`](extended-geometry/TWO_PAIR_SIC_MOMENT_NULLCONE_PROGRAM.md)
 formulates the all-\(d\) moment--nullcone conjecture, the
@@ -2397,6 +2541,44 @@ the principal ramification curve gives `A1 x G_m` with a nonconstant unit,
 not the distinguished `A2` open.  See
 [`plane-jc/UNIBRANCH_SPECTATOR_COUNTERMODELS.md`](plane-jc/UNIBRANCH_SPECTATOR_COUNTERMODELS.md).
 
+The global quartic Cox-lattice continuation is included in:
+
+```bash
+.venv/bin/python plane-jc/cas/test_plane_boundary_exclusion.py
+Singular -q plane-jc/cas/quartic_completed_deletion.sing
+```
+
+It separates the one-boundary row and the same-target/different-target
+versions of the two-boundary row.  Their target-pullback lattices have
+respectively index-two, rank-one, and index-two defects.  In every case the
+single primitive ramified-boundary character saturates the exponent
+lattice; it is also the canonical/different class.  This is a reduction,
+not a quartic exclusion.  In the rank-one row, `g=a*s_E^2` defines the
+finite target-side normalization input.  Base change `B/A` to that
+hypersurface to obtain a rank-four finite-free order and normalize it in
+`k(x,y)(s_E)`.  The distinguished source `A2` supplies the complementary
+normal Gorenstein hypersurface `g(P,Q)=a*s_E^2`; its coordinate ring
+contains the finite normalization and gives the graded Zariski--Main open
+immersion restricting over `s_E!=0` to
+`A2 x G_m -> X x G_m`.  The completed calculation is now part of the
+replay: at the `3+1` cusp and each branch of a `2+2` connector the order is
+`a*s^2=r^2*ell`, its normalization adjoins `z=r*ell/s`, and its conductor
+and canonical module are `(r,s)`.  The source deletion `D(r)` is locally
+compatible in every chart.  Its transitions are compatible too:
+`r_i=u_ij*r_j` gives `ell_i=u_ij^-2*ell_j` and
+`z_i=u_ij^-1*z_j`.  The revised target is therefore the two-generated
+degree-zero global-section algebra and its cusp/connector endpoint
+pairing, not nonprincipality alone.  The replay also checks the sharper
+module form: the degree `-1` square map into degree `-2` has affine
+companion cokernel `k[x,y]/(h)`.  A descended unit or exceptional curve is
+now a possible witness, not the statement being assumed.  See
+[`plane-jc/JC2_GLOBAL_COX_PACKET_ATTACK.md`](plane-jc/JC2_GLOBAL_COX_PACKET_ATTACK.md).
+The normalization and conductor formulas are written algebraic proofs.  The
+Python checker replays their cusp factorization, determinantal identities,
+and monomial conductor quotient; the independent Singular command computes
+the cusp normalization and conductor and verifies normality of the
+determinantal overring.
+
 The exact chart-aware boundary localization/Smith-normal-form prefilter is:
 
 ```bash
@@ -2905,6 +3087,102 @@ descent is either a plane Keller cotangent lift of degrees at most three
 and five or an `HC(2)` block.  This proves `HC4T31` without a support
 restriction.  Only simultaneous corrections with
 `rank Hess(h6)<=2`, and non-coordinate coisotropic embeddings, remain.
+
+The rank-two continuation is:
+
+```bash
+.venv/bin/python \
+  scripts/verify_hc4_meng_triple_rank_two_reduction.py
+```
+
+The degree-twelve face makes the binary quartic Hessian on the constant
+sextic kernel plane singular.  A constant cone immediately recovers the
+common-direction reduction; if that binary Hessian is zero, the
+degree-ten face makes the cubic binary Hessian singular, and total degree
+three forbids a moving cone.  In the only moving quartic case, the
+degree-eleven face forces the high-dual cubic to align as
+`(X^T*M*U)*(alpha*t+beta*m)`.  The checker keeps this cubic and all
+compatible lower blocks and proves that the later dual-degree-four face
+is still the uncancellable
+`48*c^4*det(M)^2*(X^T*M*U)^4`.  This proves `HC4T21`.
+
+The rank-one continuation and complete coordinate-chart exhaustion are:
+
+```bash
+.venv/bin/python \
+  scripts/verify_hc4_meng_triple_rank_one_reduction.py
+```
+
+The small-rank Hessian normal form makes the sextic a sixth power
+`c*L^6`, with constant three-dimensional kernel `W`.  The degree-ten
+face makes `Hess_W(h4)` singular.  Its rank-two branch aligns the cubic
+at degree nine.  In rank one, the degree-eight face is exactly the binary
+discriminant `a*d-b^2` of `Hess(h3)` on the constant quartic-kernel
+plane; this is the `Sym^2` nullcone `L^2` from the SIC(2) binary-root
+classification.  In rank zero, degree seven makes `Hess_W(h3)` singular.
+One-base homogeneity makes every residual projective cone constant, so
+each branch reaches the common-direction descent `HC4T31`.  This proves
+`HC4T11`; ranks three, two, one, and zero then give `HC4TC1`, the complete
+support-free obstruction for `q2+h3+h4+h6`.  Quintic and higher
+homogeneous layers, as well as non-coordinate coisotropic embeddings,
+remain outside this chart.
+
+The first quintic extension of the common-direction descent is:
+
+```bash
+.venv/bin/python scripts/verify_hc4_quintic_common_direction.py
+```
+
+The checker proves the quartic bordered lemma `HC4BL4` by the binary-root
+stratification used in SIC(2), including exact radical certificates for
+the double-double and pure-fourth exceptional strata.  It then proves
+`HC4CD5`: for `psi=q2+h3+h4+h5+h6`, a common direction satisfying
+`D_v h6=0` and `D_v^2 h5=D_v^2 h4=D_v^2 h3=0` reduces by two Schur
+steps to `HC(3)`, Moh's plane theorem, or `HC(2)`.  In sextic Hessian rank
+three this closes the branch `D_v h5=0`.  The first remaining quintic
+face is the exact divisibility
+
+```text
+det(Cbar) | grad(D_v h5)^T * adj(Cbar) * grad(D_v h5),
+```
+
+where `Cbar` is the nondegenerate ternary block of `Hess(h6)`.
+
+The full Fermat-sextic diagonal Schur-norm stratum is checked by:
+
+```bash
+.venv/bin/python scripts/verify_hc4_quintic_diagonal_schur.py
+cd formal/finite-etale-keller
+lake env lean FiniteEtaleKeller/HC4QuinticDiagonal.lean
+```
+
+The first command retains an arbitrary base quintic and every lower
+quartic, cubic, and quadratic coefficient.  Exact truncated determinant
+expansion shows that the `lambda^13*t*x^4*y^4*z^4` face fixes the `t^3`
+coefficient of `h3`, after which three `lambda^11*t^3` coefficients are
+`1024*a^5`, `1024*b^5`, and `1024*c^5`.  Before that prolongation, an
+exact 66-equation radical certificate proves that every quartic with
+polynomial Fermat Schur norm is diagonal.  Thus `HC4QF1` closes the entire
+Fermat-sextic quintic stratum.  Lean checks
+the scalar Schur identity and the characteristic-zero fifth-power
+conclusion; determinant coefficient extraction remains the Python
+certificate.
+
+The first full non-diagonal sextic pencil is:
+
+```bash
+.venv/bin/python \
+  scripts/verify_hc4_quintic_symmetric_sextic_schur.py
+```
+
+For `h6=(x^6+y^6+z^6)/30+mu*x^2*y^2*z^2`, the checker constructs the
+complete 111-equation Schur-divisibility ideal for a generic 15-coefficient
+quartic and six-coefficient quadratic quotient.  Saturation by `mu` has an
+exact 261-element rational Gröbner basis.  The saturated ideal lies in the
+21-variable coefficient origin, and the fourth powers of all 21 generators
+reduce to zero.  Thus `HC4QS1` closes every `mu!=0` member; `HC4QF1` closes
+`mu=0`.  The fourth-power reduced-ring endpoint is replayed in
+`FiniteEtaleKeller/HC4QuinticDiagonal.lean`.
 
 The direct collision-normalized finite-field experiment in degree bounds
 five through eight is:

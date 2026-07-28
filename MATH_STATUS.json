@@ -188,7 +188,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:f596ddbeaf253f48e06a0cad76b687b5914dee6b192f2a57ffdfdcf19cc40329",
+      "artifact_hash": "sha256:3f2b33f37fe1878eb4726fddf1847090fe7be562164fbd907670b9e757ab52fa",
       "software_lock": [
         ".python-version",
         "requirements.txt"
@@ -196,6 +196,127 @@
       "supersedes": [],
       "replaced_by": [],
       "priority": "derived"
+    },
+    {
+      "id": "UAM1",
+      "kind": "corollary",
+      "state": "proved",
+      "title": "One universal absolutely and stably atomic map in every rank",
+      "scope": "For every N>=3, promoting the N-3 parameters of the universal relative quadratic-gauge map to unchanged coordinates defines one explicit Q-map U_N:A^N->A^N with determinant one, geometric degree N, and geometric monodromy S_N. After base change to any characteristic-zero field k, its complete target fibers of rank N realize every rank-N finite etale k-algebra. Primitive S_N monodromy makes U_N absolutely and stably atomic. The adversarial audit separately checks every implication, gives an all-rank closed-form target for the Osada S_N family T^N-T-1, pins additional connected, split, and disconnected targets through rank six, checks the all-rank family through rank twelve, and records the exact parameter, translation, and separability failure boundaries. Lean formally verifies the promoted coefficient compiler and quotient-algebra equivalence, quartic witness identities, the literal promoted polynomial self-map on an N-element coordinate type, its actual full Jacobian block, and its determinant-one identity. The explicit bridge from a full fiber of the literal promoted map to the compiled quotient, the literal map's geometric degree, generic S_N monodromy, and the monodromy-to-atomicity chain are not formalized. The target realizing an abstract algebra depends noncanonically on a primitive presentation and an admissible translation; no descent from BS_N or minimality of the ambient dimension is asserted.",
+      "canonical_source": "verified/UNIVERSAL_RELATIVE_KELLER_MAP.md",
+      "dependencies": [
+        "URK1",
+        "PMA1",
+        "UAPB1",
+        "UAPC1",
+        "UAPQ1",
+        "UAPM1"
+      ],
+      "checker": "scripts/verify_universal_relative_keller_map.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:3f2b33f37fe1878eb4726fddf1847090fe7be562164fbd907670b9e757ab52fa",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "UAPC1",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Formal unchanged-parameter compiler for the universal fixed map",
+      "scope": "Let H be a polynomial over a characteristic-zero field with linear coefficient one and nonzero cubic coefficient. Lean defines pi=h_3, b=h_2, c=-2h_0, and u_j=h_j/h_3^j, and proves that the promoted inverse polynomial S+bS^2+pi*S^3+sum_(j=4)^N u_j*pi^j*S^j-c/2 equals H coefficientwise and has natDegree H.natDegree. Every nonzero coefficient compiles to a nonzero corresponding parameter. For every degree-at-least-three P, the automatically chosen admissible translation makes this identity equal P(a+S)/P'(a). This entry does not formalize the promoted multivariable map, its Jacobian, monodromy, or atomicity.",
+      "canonical_source": "formal/finite-etale-keller/FiniteEtaleKeller/UniversalParameterCompiler.lean",
+      "dependencies": [],
+      "checker": "formal/finite-etale-keller/FiniteEtaleKeller/UniversalParameterCompiler.lean",
+      "proof_type": "formal",
+      "independent_replay": false,
+      "formal_verification": true,
+      "external_review": false,
+      "artifact_hash": "sha256:7322153504d6d23997ea928395b512a52752712eef2aaebbf2e1fadded7cd04e",
+      "software_lock": [
+        "formal/finite-etale-keller/lean-toolchain",
+        "formal/finite-etale-keller/lake-manifest.json"
+      ],
+      "supersedes": [],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
+      "id": "UAPQ1",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Formal quotient-algebra realization of the universal compiler",
+      "scope": "Over a field, Lean constructs an explicit algebra equivalence between the quotient by C(r)*Q and the quotient by Q whenever r is nonzero. Composing this with polynomial translation proves that K[S]/(P(a+S)/P'(a)) is canonically K-algebra equivalent to K[T]/(P(T)) whenever P'(a) is nonzero, with the root sent to T-a. For every degree-at-least-three polynomial over a characteristic-zero field, the automatically chosen admissible translation supplies this equivalence without an external nonvanishing input. This entry formalizes the quotient-algebra step, not its identification with the literal fiber of the promoted multivariable map.",
+      "canonical_source": "formal/finite-etale-keller/FiniteEtaleKeller/UniversalParameterQuotient.lean",
+      "dependencies": [
+        "UAPC1"
+      ],
+      "checker": "formal/finite-etale-keller/FiniteEtaleKeller/UniversalParameterQuotient.lean",
+      "proof_type": "formal",
+      "independent_replay": false,
+      "formal_verification": true,
+      "external_review": false,
+      "artifact_hash": "sha256:1c7615f9f7b2a8e5eb0dddcac599537490c7e666f33096276d0374427af61b79",
+      "software_lock": [
+        "formal/finite-etale-keller/lean-toolchain",
+        "formal/finite-etale-keller/lake-manifest.json"
+      ],
+      "supersedes": [],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
+      "id": "UAPB1",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Formal unchanged-coordinate block determinant",
+      "scope": "For arbitrary finite parameter and vertical index types over a commutative ring, Lean proves det([[I,0],[C,D]])=det(D), and hence determinant one whenever the vertical determinant is one. This is the abstract linear-algebra step used by parameter promotion. The literal promoted MvPolynomial map and the identification of its Jacobian with this block are not part of the formal claim.",
+      "canonical_source": "formal/finite-etale-keller/FiniteEtaleKeller/UniversalPromotedBlock.lean",
+      "dependencies": [],
+      "checker": "formal/finite-etale-keller/FiniteEtaleKeller/UniversalPromotedBlock.lean",
+      "proof_type": "formal",
+      "independent_replay": false,
+      "formal_verification": true,
+      "external_review": false,
+      "artifact_hash": "sha256:8ca3afe5f580db5c7b83087886a9ef4f074b2ce2976ce0b18d02404eefe94fbf",
+      "software_lock": [
+        "formal/finite-etale-keller/lean-toolchain",
+        "formal/finite-etale-keller/lake-manifest.json"
+      ],
+      "supersedes": [],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
+      "id": "UAPM1",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Formal literal promoted universal Keller map",
+      "scope": "For every N>=3 over a characteristic-zero field K, Lean defines the normalized quadratic-gauge family over K[u_4,...,u_N], flattens the parameters into unchanged polynomial coordinates, and obtains a literal polynomial self-map indexed by Fin 3 plus {4,...,N}. It proves that this coordinate type has cardinality N, identifies the actual full MvPolynomial Jacobian as [[D_x,D_u],[0,I]], and proves its determinant is one. The determinant proof compares the normalized formula over the fraction field with the existing all-degree general gauge map and descends the identity by injectivity. This entry does not prove the fiber-realization, geometric-degree, monodromy, or atomicity claims.",
+      "canonical_source": "formal/finite-etale-keller/FiniteEtaleKeller/UniversalPromotedGauge.lean",
+      "dependencies": [
+        "UAPB1"
+      ],
+      "checker": "formal/finite-etale-keller/FiniteEtaleKeller/UniversalPromotedGauge.lean",
+      "proof_type": "formal",
+      "independent_replay": false,
+      "formal_verification": true,
+      "external_review": false,
+      "artifact_hash": "sha256:258f399047025f3614d6b90d904c3619169c171840871937e78018ed9e1202fc",
+      "software_lock": [
+        "formal/finite-etale-keller/lean-toolchain",
+        "formal/finite-etale-keller/lake-manifest.json"
+      ],
+      "supersedes": [],
+      "replaced_by": [],
+      "priority": "reference"
     },
     {
       "id": "SCF1",
@@ -847,6 +968,35 @@
       "supersedes": [
         "unrestricted cubic-class uniqueness",
         "open universal cubic multiplicity"
+      ],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "WPSM1",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Whole-plane and cyclotomic stable multiplicity",
+      "scope": "Let K have characteristic zero. In every geometric degree N>=3, the existing infinite stable gauge family agrees coordinatewise on the source divisor P=1, so all its pairwise stably inequivalent maps share one rank-N finite-etale inverse cover over the squarefree open of the full target plane P=1. For N>=4 this follows from the common factor P^m on every higher power-shift decoration; for N=3 the cubic corrections have the common factor P^(n-3)-1. More generally, restricting the exponents to one residue class modulo d gives an infinite inequivalent subfamily agreeing over the cyclotomic target divisor P^d=1, after deleting the common degree-drop and repeated-root loci. Every arithmetic property of a base-changed finite-etale cover therefore transfers simultaneously to all stable classes. For the fixed quintic Hasse seed, the common target line has inverse polynomial (X^3-a)(X^2+X+1), discriminant 81*a^2*(a-1)^4, and the same Zariski-dense multiplicative family of degree-optimal Hasse failures on every map, with the established B/sqrt(log B) height asymptotic. Lean now proves the arbitrary-(B,C) separable literal-fiber equivalences, one natural relative functor on the whole source divisor and its inverse-discriminant open, specialization of the universal plane equation, the exact Fitting shoelace formula with Laurent-translation and GL_2(Z) invariance, strict power-shift separation, and cubic count separation. The explicit localized AdjoinRoot-to-source AlgEquiv, geometric Fitting identification and stable transport, and cubic boundary exhaustion/functoriality are not yet formalized end to end.",
+      "canonical_source": "verified/WHOLE_PLANE_STABLE_MULTIPLICITY.md",
+      "dependencies": [
+        "UPGM1",
+        "UCFM1",
+        "FMHF1",
+        "MHF1"
+      ],
+      "checker": "scripts/verify_whole_plane_stable_multiplicity.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:0afb9319834c4b4849b2116c65ba564f969f4326d9a7d0324e5bf34c41523985",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [
+        "pointwise-only formulation of fiber-invisible stable multiplicity"
       ],
       "replaced_by": [],
       "priority": "derived"
@@ -5203,6 +5353,32 @@
       "priority": "reference"
     },
     {
+      "id": "DVG4",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "One-pair Schur obstruction for the Dvorsky cubic",
+      "scope": "Let P=(t+c)(ad+bt), add one variable s, and let Delta~=partial_a partial_d-partial_b partial_c+partial_t partial_s, a nondegenerate quadratic operator in six variables. Every homogeneous cubic F restricting to P on s=0 has the form P+sR_2+s^2R_1+rs^3. The first pure condition Delta~(F)=0 forces R_2=-ct+R_0(a,b,c,d) and R_1=L_0(a,b,c,d)-(D R_0)t/2. For this complete harmonic normal form, exact expansion gives Delta~^2(F^2)=12t^2 modulo (a,b,c,d,s), independently of every lift parameter. Hence no degree-preserving one-pair Schur completion of the Dvorsky cubic satisfies even the first two ordinary-Laplacian pure moments. The degree-two output depends only on the cubic part, so adding terms only above degree three cannot repair the lift. Nonhomogeneous lifts with lower-degree s-divisible terms, multi-block lifts, and nonlinear specializations are not excluded.",
+      "canonical_source": "extended-geometry/DVORSKY_ONE_PAIR_SCHUR_OBSTRUCTION.md",
+      "dependencies": [
+        "DVG1"
+      ],
+      "checker": "scripts/verify_dvorsky_one_pair_schur_obstruction.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:5147505e1015ed375d370ff9dc506e999d5bc115b862bc53c7bcc11b9031b733",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [
+        "the degree-preserving six-variable one-pair Schur ansatz for the Dvorsky ordinary-Laplacian lift"
+      ],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
       "id": "DVG2",
       "kind": "theorem",
       "state": "proved",
@@ -5355,8 +5531,8 @@
       "id": "SIC2B33A",
       "kind": "theorem",
       "state": "proved",
-      "title": "Dimension-sized moment coordinates on every full non-null quadratic chart",
-      "scope": "In the full bidegree-(3,3) mixed representation Sym^6 plus Sym^4 plus Sym^2, normalize a non-null quadratic component to 2XT. The residual diagonal torus and Weyl reflection reduce the locus with a nonzero nonzero-weight higher component to five representative affine charts s0=1, s1=1, s2=1, t0=1, and t1=1; the locus with only weight-zero higher components is the already-closed diagonal slice. On each representative chart, exact integer evaluation gives a nonzero 11-by-11 Jacobian determinant for moments mu_2,...,mu_12 at a displayed rational point. Hence those eleven restricted moments are algebraically independent on every chart orbit and form a dimension-sized coordinate candidate. This does not prove that their common zero fiber is empty or that the quadratic anchor holds; direct modular Groebner elimination of the dense chart ideals remains computationally unresolved.",
+      "title": "Dimension-sized coordinates and triangular pivots on the full non-null quadratic charts",
+      "scope": "In the full bidegree-(3,3) mixed representation Sym^6 plus Sym^4 plus Sym^2, normalize a non-null quadratic component to 2XT. The residual diagonal torus and Weyl reflection reduce the locus with a nonzero nonzero-weight higher component to five representative affine charts s0=1, s1=1, s2=1, t0=1, and t1=1; the locus with only weight-zero higher components is the already-closed diagonal slice. On each representative chart, exact integer evaluation gives a nonzero 11-by-11 Jacobian determinant for moments mu_2,...,mu_12. The exact normalized second moment is -24 times (3s0s6-18s1s5+45s2s4-30s3^2-14t0t4+56t1t3-42t2^2-70), so on the five charts it eliminates respectively s6,s5,s4,t4,t3 with constant nonzero derivatives -72,432,-1080,336,-1344. On s0=1, after eliminating s6, mu_3 is affine in s5 and t4, with displayed coefficients A and B; hence the chart splits into A nonzero, A=0 with B nonzero, and A=B=0. On a natural two-parameter plane in the common boundary, mu_3=1866240a^3 and mu_4=138240(11249-8776ab-901a^2b^2); a displayed inverse modulo a^3 proves a unit ideal. At three further exact rational points, one in each pivot stratum, the full chart Jacobian is invertible. Since dA and dB are independent, the restrictions of the moment map have maximal generic differential ranks 11,10,9 on A nonzero, A=0 B nonzero, and A=B=0. Sparse principal-open encodings avoid expression blow-up but the corrected special zero fibers and the quadratic anchor remain open; bounded Singular and msolve runs give no mathematical conclusion.",
       "canonical_source": "extended-geometry/TWO_PAIR_SIC_BIDEGREE33_FRONTIER.md",
       "dependencies": [
         "SIC2B33S"
@@ -5366,7 +5542,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:7d8269f98427014ae311428a19f75774684beb1bcf65a8d35672b6cf423fa615",
+      "artifact_hash": "sha256:e037914fef874389b3b679d0facf1845178102050d3c57f57f5089a07135dcdc",
       "software_lock": [
         ".python-version",
         "requirements.txt"
@@ -5380,13 +5556,14 @@
       "kind": "open_problem",
       "state": "open",
       "title": "All-degree two-pair moment--nullcone program",
-      "scope": "For balanced two-pair bidegree (d,d), End(Sym^d)=direct sum_{r=0}^d Sym^(2r), and Hilbert--Mumford identifies the one-sided nullcone with tuples having vanishing scalar component and a common linear factor L such that L^(r+1) divides F_(2r). Its incidence resolution proves dimension 1+d(d+1)/2 and codimension d(d+3)/2. Noetherianity gives a finite moment subset for fixed d, while Krull height requires at least (d+1)^2-3 moment equations. A proof must now have two layers: first use the Molien/weight Hilbert series to select an admissible degree set, then prove its zero fiber is the nullcone by destabilizing the lowest nonzero component and synchronizing the higher components with its unique high-multiplicity root. In d=3, SIC2B33S proves that mu_1,...,mu_13 are algebraically independent but cannot be an hsop because their proposed Hilbert numerator has degree-63 coefficient -2186; an extra semistable zero component therefore exists. The least-total-degree corrected candidate mu_1,...,mu_12,mu_14 has exact Jacobian rank thirteen and passes the necessary Hilbert test through degree 100, but its zero fiber remains open. On the full non-null quadratic branch, SIC2B33A reduces the non-diagonal locus to five residual-torus chart orbits and proves that mu_2,...,mu_12 have exact rank eleven on every chart; the five affine zero fibers remain open. The first geometric targets are discriminant(F_2)=0 and F_2=L^2 implies L^3 divides F_4. SIC2B22 proves d=2; the global d=3 and uniform all-d statements remain open. The formal n-pair analogue is false for every n>=3 already at d=2 by the padded three-pair moment-zero semistable witness.",
+      "scope": "For balanced two-pair bidegree (d,d), End(Sym^d)=direct sum_{r=0}^d Sym^(2r), and Hilbert--Mumford identifies the one-sided nullcone with tuples having vanishing scalar component and a common linear factor L such that L^(r+1) divides F_(2r). Its incidence resolution proves dimension 1+d(d+1)/2 and codimension d(d+3)/2. Noetherianity gives a finite moment subset for fixed d, while Krull height requires at least (d+1)^2-3 moment equations. A proof must first use the Molien/weight Hilbert series to select admissible degrees, then prove the selected zero fiber is the nullcone by destabilizing and synchronizing its binary-form components. In d=3, mu_1,...,mu_13 are algebraically independent but cannot be an hsop because their proposed Hilbert numerator has coefficient -2186 in degree 63. The least-total-degree corrected candidate mu_1,...,mu_12,mu_14 has exact Jacobian rank thirteen and passes the necessary Hilbert test through degree 100, but its zero fiber remains open. GVC2C3 separately proves that moments one through four already cut out the nullcone on the rank-one Segre cone, so the extra semistable component misses that locus. SIC2B33A reduces the full non-null quadratic locus to five residual-torus chart orbits, proves exact rank eleven for mu_2,...,mu_12, and now gives a two-step triangular reduction: mu_2 eliminates an opposite-weight variable with a constant pivot on every chart, while on s0=1 the reduced mu_3 gives two principal-open pivots and their common boundary. The next attack is branchwise elimination on those smaller systems, not a raw dense Groebner basis. The geometric targets remain discriminant(F_2)=0 and F_2=L^2 implies L^3 divides F_4. SIC2B22 proves d=2; global d=3 and uniform all-d remain open. The n-pair analogue is false for every n>=3 already at d=2.",
       "canonical_source": "extended-geometry/TWO_PAIR_SIC_MOMENT_NULLCONE_PROGRAM.md",
       "dependencies": [
         "DVG3",
         "SIC2B22",
         "SIC2B33S",
         "SIC2B33A",
+        "GVC2C3",
         "external: Hilbert--Mumford nullcone criterion for direct sums of binary forms",
         "external: Cohen--Macaulayness of characteristic-zero reductive invariant rings",
         "external: Pieri rule for symmetric powers"
@@ -5400,6 +5577,139 @@
       "software_lock": [],
       "supersedes": [
         "deeper full-coefficient Groebner elimination as the primary bidegree-(3,3) SIC(2) attack"
+      ],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "GVC2C3",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Balanced cubic two-variable Generalized Vanishing theorem",
+      "scope": "Let Lambda be a homogeneous order-three constant-coefficient operator in two variables over a characteristic-zero field and let P be a homogeneous cubic. If Lambda^m(P^m)=0 for m=1,2,3,4, then all pure contractions vanish and Lambda^m(QP^m)=0 for every fixed Q whenever m>deg(Q). After scalar extension, the operator symbol has triple-root, double-root, or squarefree binary-cubic type. Exact apolar moments through orders one, three, and four respectively force explicit one-sided normal forms; in the squarefree orbit only the three pure cubes annihilated by a linear operator factor survive. Equivalently, the first four moments cut out the one-sided nullcone on the rank-one Segre cone Sigma_3 in bidegree (3,3). Hence the extra semistable component of the full first-thirteen-moment zero fiber does not meet Sigma_3. This does not treat degree at least four, nonhomogeneous pairs, or the full nonseparable SIC(2) stratum.",
+      "canonical_source": "extended-geometry/TWO_VARIABLE_CUBIC_GVC_THEOREM.md",
+      "dependencies": [
+        "external: elementary binary-cubic orbit classification over an algebraic closure"
+      ],
+      "checker": "scripts/verify_two_variable_cubic_gvc.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:6dff5c1ea4a42621a6591780af5f1761171907308f018366f376ad9c29da1ef4",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [
+        "the open cubic Segre slice of the two-variable GVC representation program"
+      ],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
+      "id": "GVC2R2",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "All-degree two-variable GVC for binary symbols with at most two roots",
+      "scope": "Let Lambda be a homogeneous order-d constant-coefficient operator in two variables whose binary symbol has at most two distinct roots over an algebraic closure, and let P be homogeneous of degree d over a characteristic-zero field. After normalization Lambda=partial_x^r partial_y^(d-r), the pure values are nonzero factorials times the constant terms of h(t)^m for h=t^(-(d-r))p(t), where P=x^d p(y/x). If all pure values vanish, the Duistermaat--van der Kallen theorem puts the Laurent support strictly on one side of zero. The resulting strict x- or y-degree separation proves Lambda^m(QP^m)=0 for every fixed Q whenever m>deg(Q), and places the associated rank-one SIC tensor in the one-sided nullcone. The theorem is uniform in d but does not cover symbols with three or more distinct roots.",
+      "canonical_source": "extended-geometry/TWO_VARIABLE_LOW_ROOT_GVC_THEOREMS.md",
+      "dependencies": [
+        "external: Duistermaat--van der Kallen constant-term theorem for Laurent polynomials"
+      ],
+      "checker": null,
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": null,
+      "software_lock": [],
+      "supersedes": [
+        "all balanced homogeneous two-variable GVC strata with operator-symbol root support at most two"
+      ],
+      "replaced_by": [
+        "GVCSS"
+      ],
+      "priority": "reference"
+    },
+    {
+      "id": "GVC2C4T",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Quartic three-root two-variable Generalized Vanishing theorem",
+      "scope": "Let Lambda be a homogeneous quartic constant-coefficient operator in two variables whose binary symbol has root partition (2,1,1), and let P be a homogeneous quartic over a characteristic-zero field. After normalizing the symbol to u^2 v(u+v), the first moment eliminates one coefficient. If moments one through five vanish, the remaining moment ideal has radical equal to the intersection of three prime linear one-sided ideals: P=y^3(dx+ey), P=ax^4, or P=a(x-y)^4. Exact reduction proves moment-ideal containment in this radical and fourth-power membership for each of its five Groebner generators. Every component gives Lambda^m(QP^m)=0 for m>deg(Q). GVCSS later closes the all-order GVC conclusion on the squarefree quartic orbit as well; the finite-moment nullcone certificate remains stronger here.",
+      "canonical_source": "extended-geometry/TWO_VARIABLE_LOW_ROOT_GVC_THEOREMS.md",
+      "dependencies": [
+        "external: Singular exact Groebner bases over Q"
+      ],
+      "checker": "scripts/verify_two_variable_quartic_three_root_gvc.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:40f53b46611bef789bc501f808f58d906b80c03812b07b57dfbbd86258de1fb8",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [
+        "the quartic (2,1,1)-symbol orbit of the two-variable GVC representation program"
+      ],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
+      "id": "GVCSS",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Split-symbol Generalized Vanishing theorem",
+      "scope": "Let Lambda be a homogeneous order-d constant-coefficient operator in n variables over a characteristic-zero field, let P have degree at most d, and suppose the symbol of Lambda splits into d linear factors after scalar extension. Only the degree-d part P_d contributes to the pure premise. Writing the symbol factors as directional derivatives D_(v_i), complete polarization gives Lambda^m(P^m)=(m!)^d CT((P_d(sum_i t_i v_i)/(product_i t_i))^m). If all pure values vanish, the Duistermaat--van der Kallen theorem supplies an integral weight with a unit gap on this Laurent support. In the translated coefficient for Lambda^m(QP^m), a fixed multiplier and lower-degree factors of P can replace only boundedly many full polarization factors, while the weight gap grows linearly in m; hence the mixed value is zero for all sufficiently large m. If P_d vanishes on the span of the factor directions, direct degree separation gives the same conclusion. Every binary form splits, so every homogeneous order-d operator in two variables satisfies GVC for all P of degree at most d. The theorem does not prove Segre moment-nullcone equality, nonhomogeneous operators, polynomial degree greater than d, unrestricted SIC(2), or higher-rank ordinary-Laplacian GVC.",
+      "canonical_source": "extended-geometry/SPLIT_SYMBOL_GVC_THEOREM.md",
+      "dependencies": [
+        "external: Duistermaat--van der Kallen constant-term theorem for Laurent polynomials"
+      ],
+      "checker": null,
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": null,
+      "software_lock": [],
+      "supersedes": [
+        "GVC2R2",
+        "the balanced homogeneous separable branch of the two-variable GVC representation program"
+      ],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
+      "id": "OP-GVC2-RP",
+      "kind": "open_problem",
+      "state": "open",
+      "title": "Two-variable GVC representation and rank-efficient Laplacian polarization",
+      "scope": "For a homogeneous order-d operator Lambda=A(partial) and a degree-d binary form P, the separable two-pair form f=A(zeta)P(z) is a rank-one point of the Segre cone in End(Sym^d), with E_2(f^m)=Lambda^m(P^m) and E_2(Qf^m)=Lambda^m(QP^m). GVCSS now proves more: every homogeneous order-d binary operator satisfies GVC for every P of degree at most d, by factoring the symbol and applying Laurent Newton separation with bounded lower-degree defects. GVC2C3 and GVC2C4T remain stronger finite-moment/nullcone certificates on the cubic cone and quartic (2,1,1) orbit. The first separable GVC(2) frontier therefore requires a nonhomogeneous operator or polynomial degree greater than the operator order. No bidegree-preserving linear pair compression of the bidegree-(2,2) three-pair witness can work, while substitutions mixing dual and coordinate variables are not covered. A separate ordinary-Laplacian route seeks an all-order nonlinear polarization of the factored third-order Dvorsky symbol into a nondegenerate quadratic operator with minimal auxiliary rank, preserving both pure vanishing and the fixed-multiplier defect. DVG4 excludes the complete degree-preserving six-variable one-pair Schur lift already at the second pure moment, and grading excludes corrections using only terms above degree three. The next ansatz must couple lower and higher degrees, add a block, or use nonlinear specialization. No successful quadraticization or improved Laplacian endpoint is currently proved.",
+      "canonical_source": "extended-geometry/TWO_VARIABLE_GVC_REPRESENTATION_PROGRAM.md",
+      "dependencies": [
+        "DVG1",
+        "DVG4",
+        "DVG3",
+        "SIC2B22",
+        "GVC2C3",
+        "GVC2R2",
+        "GVC2C4T",
+        "GVCSS",
+        "OP-SIC2-MN"
+      ],
+      "checker": null,
+      "proof_type": "not-applicable",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": null,
+      "software_lock": [],
+      "supersedes": [
+        "unstructured low-dimensional constant-coefficient operator searches",
+        "generic auxiliary-variable doubling as the primary ordinary-Laplacian compression strategy"
       ],
       "replaced_by": [],
       "priority": "primary"
@@ -7111,7 +7421,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:3175d22b6d99cb08cb4e0805e9042739b6b98265f37110ec709314a84675b88f",
+      "artifact_hash": "sha256:57b6cb95310985e30b48afacefc0e803253f37b2aa5d441d208930484c91f38a",
       "software_lock": [
         ".python-version",
         "requirements.txt"
@@ -7141,13 +7451,116 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:3175d22b6d99cb08cb4e0805e9042739b6b98265f37110ec709314a84675b88f",
+      "artifact_hash": "sha256:57b6cb95310985e30b48afacefc0e803253f37b2aa5d441d208930484c91f38a",
       "software_lock": [
         ".python-version",
         "requirements.txt"
       ],
       "supersedes": [
         "unfiltered degree-four finite-normalization signature atlas"
+      ],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
+      "id": "QCL4",
+      "kind": "corollary",
+      "state": "proved",
+      "title": "Quartic global Cox-character lattice reduction",
+      "scope": "For the three target groupings of the surviving quartic finite-normalization packets, the target missing-boundary exponent lattices have respectively cokernel Z/2, free cokernel rank one, and cokernel Z/2. In every row, adjoining the single primitive ramified-boundary vector E saturates the complete exponent lattice. The affine companion class sums are the negatives of the target vectors, and the finite-cover canonical/different class is the same primitive class [E]. Thus coarse units, class-group torsion, canonical classes, codimension-two conductor classes, and the already transitive local S4 generators do not exclude a packet. In the rank-one Cox algebra the exact homogeneous relation is g=a*s_E^2. It defines a threefold Z_g and a rank-four finite-free base-change order T_g=B tensor_A O(Z_g); their common normalization in K(s_E) is finite of degree four and restricts over s_E!=0 to X times G_m. Generically along E, normalization adjoins w=t/s_E with a=unit*w^2, realizing exactly the missing primitive character. The raw Cox morphism restricts instead to the nonproper F times id and is not finite. QBX4 identifies the canonical source-side comparison forced by the A2 open as a Zariski--Main open immersion. QLD4 proves that its completed cusp and connector deletions and their nonprincipal transition laws are compatible, so the remaining target is the two-generated degree-zero global-section algebra and endpoint pairing, not an asserted quartic exclusion.",
+      "canonical_source": "plane-jc/JC2_GLOBAL_COX_PACKET_ATTACK.md",
+      "dependencies": [
+        "PFN2",
+        "QPK4"
+      ],
+      "checker": "plane-jc/cas/test_plane_boundary_exclusion.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:57b6cb95310985e30b48afacefc0e803253f37b2aa5d441d208930484c91f38a",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [
+        "uncompiled quartic class-group/Cox obstruction list"
+      ],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
+      "id": "QBX4",
+      "kind": "corollary",
+      "state": "proved",
+      "title": "Canonical A2 special-fiber deletion threefold",
+      "scope": "For a geometric-degree-four plane Keller map F=(P,Q), a reduced target curve g=0, and h=g(P,Q), the graded hypersurface W_(F,g)=Spec k[x,y,s,a]/(h-a*s^2)=U times_Y Z_g is a normal Gorenstein affine threefold with trivial dualizing module, degree-zero ring k[x,y], W_s=A2 times G_m, and reduced special fiber Spec(k[x,y]/(h))[a] consisting exactly of affine-companion cylinders. Its map to Z_g is the etale quasi-finite base change of F. The rank-four base-change order T_g embeds in its coordinate ring; normality then gives bar(T_g) inside C_(F,g). The induced finite-type G_m-equivariant birational map W_(F,g)->bar(Z_g) is quasi-finite and hence, by Zariski Main with normal target, an open immersion. Over s!=0 it is A2 times G_m -> X times G_m. The bar(Z_g) special fiber additionally carries the primitive ramification component obtained generically from w=t/s, so the open special fiber deletes that component while retaining the affine companions. This does not exclude either quartic packet.",
+      "canonical_source": "plane-jc/JC2_GLOBAL_COX_PACKET_ATTACK.md",
+      "dependencies": [
+        "PFN2",
+        "QCL4"
+      ],
+      "checker": null,
+      "proof_type": "unclassified",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": null,
+      "software_lock": [],
+      "supersedes": [
+        "an arbitrary affine Cox separation theorem as the immediate quartic goalpost"
+      ],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
+      "id": "QLD4",
+      "kind": "corollary",
+      "state": "proved",
+      "title": "Quartic completed boundary-deletion normalization",
+      "scope": "At the clean 3+1 cusp, the standard cubic block v=T^3+u*T gives 4u^3+27v^2=(u+3T^2)^2(4u+3T^2), hence the completed target-side order is O=A0[[s,a]]/(a*s^2-r^2*ell) with r=u+3T^2 and ell=4r-9T^2. At each of the two source branches of a 2+2 connector the same order occurs, with r and the other smooth branch ell coprime and of arbitrary finite contact. Its full normalization is N=O[z], z=r*ell/s=a*s/r, with determinantal relations a*ell=z^2, a*s=r*z, and s*z=r*ell. This normal ring is Cohen--Macaulay; its conductor is (r,s), N/O is O/(r,s), and finite duality gives omega_N=(r,s)N. The packet endpoint is non-Gorenstein, but the canonical source open is D(r), where the conductor and canonical module become trivial, and its special fiber is exactly the affine-companion cylinder with the endpoint deleted. Thus the completed cusp and connector deletions are compatible and cannot yield a local contradiction, even simultaneously. Moreover r_i=u_ij*r_j forces ell_i=u_ij^-2*ell_j and z_i=u_ij^-1*z_j, while (r_i,s)=(r_j,s), so the nonprincipal transition cocycle also glues without a defect. The remaining obstruction must use the two-generated degree-zero global-section algebra k[x,y] and the global cusp/connector endpoint pairing.",
+      "canonical_source": "plane-jc/JC2_GLOBAL_COX_PACKET_ATTACK.md",
+      "dependencies": [
+        "QPK4",
+        "QCL4",
+        "QBX4"
+      ],
+      "checker": "plane-jc/cas/quartic_completed_deletion.sing",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:cb3cc6a7906b415ab73424398202883ff03c416cda63307f540295d9be29ab4d",
+      "software_lock": [],
+      "supersedes": [
+        "a completed local conductor or dualizing contradiction as the immediate quartic goalpost"
+      ],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
+      "id": "QGM4",
+      "kind": "corollary",
+      "state": "proved",
+      "title": "Quartic odd-square boundary-module reduction",
+      "scope": "For the grading deg(s)=1, deg(a)=-2, deg(z)=-1, the finite target normalization adds no degree-zero functions: bar(T_g)_0=B. The canonical source bridge C=k[x,y,s,a]/(h-a*s^2) has degree-zero ring R=k[x,y] and every graded piece is rank-one free over R. In each completed packet chart, N_{-1}=A0*z and N_{-2}=A0*a, and square multiplication is z^2=ell*a with cokernel A0/(ell). On the source bridge C_{-1}=R*(a*s), C_{-2}=R*a, and (a*s)^2=h*a with cokernel R/(h). Hence the affine-companion plane curve is exactly the degeneracy divisor of the odd-square map between the first two negative rank-one pieces. Its points at infinity encode the cusp contact and paired connector endpoints. This is a reduction, not a quartic exclusion: the remaining theorem must contradict that endpoint divisor using the pole semigroup and factorial two-generator degree-zero ring.",
+      "canonical_source": "plane-jc/JC2_GLOBAL_COX_PACKET_ATTACK.md",
+      "dependencies": [
+        "QBX4",
+        "QLD4"
+      ],
+      "checker": "plane-jc/cas/test_plane_boundary_exclusion.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:57b6cb95310985e30b48afacefc0e803253f37b2aa5d441d208930484c91f38a",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [
+        "an undifferentiated graded global-section obstruction"
       ],
       "replaced_by": [],
       "priority": "reference"
@@ -7934,12 +8347,16 @@
       "kind": "open_problem",
       "state": "parked",
       "title": "Plane finite-normalization and log-surface classification",
-      "scope": "Starting from PFN2, PCC3, and the quartic packet theorem QPK4, close the two remaining geometric-degree-four rows. First exclude the one-boundary clean 3+1 cusp together with one or more 2+2 boundary self-collisions by combining its transposition-pairing graph and conductor degree with the rank-one boundary class relation. Then compile the one-ramified-plus-one-unramified no-jump packet, including same-target and different-target groupings, into the two-generator unimodular boundary lattice. Beyond degree four, classify all ramified and unramified missing-boundary divisors and affine companions using the bounded signature atlas, residual different, free class group, units, Riemann--Hurwitz, and K+D=-2 Pi*L_infinity+sum e_i E_i.",
-      "canonical_source": "plane-jc/FINITE_NORMALIZATION_PROGRAM.md",
+      "scope": "Starting from PFN2, PCC3, QPK4, QCL4, the canonical A2 special-fiber deletion bridge QBX4, the completed local calculation QLD4, and the graded module reduction QGM4, close the two remaining geometric-degree-four rows. All one-boundary and same-target/different-target two-boundary exponent lattices reduce to the single primitive ramified-boundary/canonical character E. QLD4 proves that at the clean 3+1 cusp and both branches of a required 2+2 connector the completed order a*s^2=r^2*ell has determinantal normalization, conductor and canonical module (r,s), and locally compatible source deletion D(r). It also computes the Cech law r_i=u_ij*r_j, ell_i=u_ij^-2*ell_j, z_i=u_ij^-1*z_j and shows that the conductor ideals glue. Hence neither a completed local packet contradiction nor nonprincipality by itself can close the packet. QGM4 identifies the first global carrier of packet data: the odd-square multiplication from degree -1 to degree -2 has cokernel k[x,y]/(h), with the cusp and connector as points at infinity of this degeneracy divisor. The immediate rank-one task is the degree-zero endpoint-pairing theorem: express those endpoints as valuations in the pole semigroup of the two degree-zero generators x,y, and prove that their pairing cannot coexist with the factorial ring k[x,y] and the rank-one free graded source pieces in the canonical Zariski--Main open. A descended unit, additional homogeneous boundary component, or global monodromy conflict is a possible conclusion, not an assumed dichotomy. Then descend the same degree-zero endpoint obstruction through the unramified D direction in the two-boundary rows. Beyond degree four, classify all ramified and unramified missing-boundary divisors and affine companions using the bounded signature atlas, residual different, free class group, units, Riemann--Hurwitz, and K+D=-2 Pi*L_infinity+sum e_i E_i.",
+      "canonical_source": "plane-jc/JC2_GLOBAL_COX_PACKET_ATTACK.md",
       "dependencies": [
         "PFN2",
         "PCC3",
-        "QPK4"
+        "QPK4",
+        "QCL4",
+        "QBX4",
+        "QLD4",
+        "QGM4"
       ],
       "checker": null,
       "proof_type": "not-applicable",
@@ -8483,7 +8900,7 @@
       "kind": "theorem",
       "state": "proved",
       "title": "Rank-three sextic reduction with simultaneous cubic and quartic layers",
-      "scope": "Let psi=q2+h3+h4+h6 be a four-variable collision-normalized Meng potential, with q2 nondegenerate quadratic, h3,h4,h6 arbitrary homogeneous forms of degrees three, four, and six, and Hess(h6) of generic rank three. The constant sextic kernel and determinant degrees fourteen and thirteen force D_t^2 h4=D_t^2 h3=0. A nonisotropic t-direction descends to HC(3). In the isotropic chart, the t^2 coefficient is the bordered invariant of a ternary polynomial s of degree at most three. Gordan--Noether and the three binary-cubic root-multiplicity orbits reduce its coefficient equations to exact constant-direction branches: the rank-two orbits have ideal (qxm,qym,lm)^2, the rank-one orbit has two explicitly certified radical branches, and the quadratic boundary follows from adjugate linear algebra. The next coefficient is either a cotangent lift of a plane Keller map of degrees at most three and five or a terminal HC(2) block. Thus a constant nonzero Hessian determinant is incompatible with a nonzero antipodal collision, with no support restriction. Sextic Hessian rank at most two and non-coordinate coisotropic embeddings are not covered.",
+      "scope": "Let psi=q2+h3+h4+h6 be a four-variable collision-normalized Meng potential, with q2 nondegenerate quadratic, h3,h4,h6 arbitrary homogeneous forms of degrees three, four, and six, and Hess(h6) of generic rank three. The constant sextic kernel and determinant degrees fourteen and thirteen force D_t^2 h4=D_t^2 h3=0. A nonisotropic t-direction descends to HC(3). In the isotropic chart, the t^2 coefficient is the bordered invariant of a ternary polynomial s of degree at most three. Gordan--Noether and the three binary-cubic root-multiplicity orbits reduce its coefficient equations to exact constant-direction branches: the rank-two orbits have ideal (qxm,qym,lm)^2, the rank-one orbit has two explicitly certified radical branches, and the quadratic boundary follows from adjugate linear algebra. The next coefficient is either a cotangent lift of a plane Keller map of degrees at most three and five or a terminal HC(2) block. Thus a constant nonzero Hessian determinant is incompatible with a nonzero antipodal collision, with no support restriction within the displayed homogeneous support. HC4T21 and HC4T11 subsequently close sextic Hessian ranks two and one, and HC4TC1 exhausts the coordinate q2+h3+h4+h6 chart; quintic and higher layers and non-coordinate coisotropic embeddings are not covered.",
       "canonical_source": "HC4_MENG_TRIPLE_RANK_THREE.md",
       "dependencies": [
         "external: Gordan--Noether classification in at most four variables",
@@ -8503,6 +8920,210 @@
       ],
       "supersedes": [
         "the rank-three sextic-Hessian stratum of the simultaneous cubic--quartic--sextic Meng chart"
+      ],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
+      "id": "HC4T21",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Rank-two sextic reduction with simultaneous cubic and quartic layers",
+      "scope": "Let psi=q2+h3+h4+h6 be a four-variable collision-normalized Meng potential with q2 nondegenerate quadratic, h3,h4,h6 arbitrary homogeneous forms of degrees three, four, and six, and Hess(h6) of generic rank two. On the constant sextic kernel plane, determinant degree twelve makes the binary quartic Hessian singular. A constant cone gives the common-direction reduction HC4T31; if the binary quartic Hessian is zero, degree ten makes the cubic binary Hessian singular and total degree three forbids a moving cone. The only moving quartic cone is c*(X^T M U)^2. Degree eleven forces every cubic term of dual degree at least two to align as (X^T M U)*(alpha*t+beta*m), but the later degree-eight, dual-degree-four face remains the uncancellable 48*c^4*det(M)^2*(X^T M U)^4 even with all compatible lower cubic and quartic blocks present. Hence a constant nonzero Hessian determinant is incompatible with a nonzero antipodal collision, with no support restriction within the displayed homogeneous support. HC4T11 subsequently closes sextic Hessian rank one, and HC4TC1 exhausts the coordinate q2+h3+h4+h6 chart; quintic and higher layers and non-coordinate coisotropic embeddings are not covered.",
+      "canonical_source": "HC4_MENG_TRIPLE_RANK_TWO.md",
+      "dependencies": [
+        "HC4E46",
+        "HC4T31",
+        "external: Gordan--Noether classification in at most four variables",
+        "external: de Bondt--van den Essen singular polynomial Hessian classification in dimension two"
+      ],
+      "checker": "scripts/verify_hc4_meng_triple_rank_two_reduction.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:782c72432b3dc3da7f36704daa7914320bec77be1c3b884c45daf9bd14d865cd",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [
+        "the rank-two sextic-Hessian stratum of the simultaneous cubic--quartic--sextic Meng chart"
+      ],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
+      "id": "HC4T11",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Rank-one sextic reduction with simultaneous cubic and quartic layers",
+      "scope": "Let psi=q2+h3+h4+h6 be a four-variable collision-normalized Meng potential with q2 nondegenerate quadratic, h3,h4,h6 arbitrary homogeneous forms of degrees three, four, and six, and Hess(h6) of generic rank one. The small-rank Hessian normal form and homogeneity make h6=c*L^6, with constant three-dimensional kernel W. Determinant degree ten makes the ternary Hessian B_W=Hess_W(h4) singular. If rank B_W is two, degree nine forces the cubic second derivative to vanish on its constant kernel line. If rank B_W is one, degree eight is the binary discriminant of Hess(h3) on the constant kernel plane; the competing full quartic determinant vanishes automatically by rank, and the Sym^2 nullcone factorization L^2 supplies a constant cubic-kernel direction. If B_W is zero, the homogeneous quartic Hessian has rank at most two and degree seven makes Hess_W(h3) singular. The three-variable singular-Hessian classification and one-base homogeneity make all residual projective cones constant. Every branch reaches the common-direction descent HC4T31, so a constant nonzero Hessian determinant is incompatible with a nonzero antipodal collision, with no support restriction.",
+      "canonical_source": "HC4_MENG_TRIPLE_RANK_ONE.md",
+      "dependencies": [
+        "HC4T31",
+        "SIC2B33S",
+        "external: small-rank polynomial-Hessian normal form",
+        "external: Gordan--Noether classification in at most four variables",
+        "external: de Bondt--van den Essen singular polynomial Hessian classification in dimension three"
+      ],
+      "checker": "scripts/verify_hc4_meng_triple_rank_one_reduction.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:1b75a1daa20b75b02241f072ad87b01a7a95356d502e7a812dba1a71ea6b0223",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [
+        "the rank-one sextic-Hessian stratum of the simultaneous cubic--quartic--sextic Meng chart"
+      ],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
+      "id": "HC4TC1",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Complete coordinate cubic--quartic--sextic Meng obstruction",
+      "scope": "Let psi=q2+h3+h4+h6 be a four-variable collision-normalized coordinate Meng potential, with q2 nondegenerate quadratic and h3,h4,h6 arbitrary homogeneous forms of degrees three, four, and six. Constant Hessian determinant first makes Hess(h6) singular. Generic sextic Hessian ranks three, two, and one are excluded respectively by HC4T31, HC4T21, and HC4T11; rank zero means h6=0 and is excluded by HC4CQ1. Hence det Hess(psi) cannot be a nonzero constant when grad(psi) identifies a nonzero antipodal pair. There is no support restriction within the displayed homogeneous support. This exhausts the coordinate q2+h3+h4+h6 chart, but does not remove quintic or higher homogeneous layers and does not treat non-coordinate coisotropic embeddings.",
+      "canonical_source": "HC4_MENG_TRIPLE_RANK_ONE.md",
+      "dependencies": [
+        "HC4CQ1",
+        "HC4T31",
+        "HC4T21",
+        "HC4T11"
+      ],
+      "checker": "scripts/verify_hc4_meng_triple_rank_one_reduction.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:1b75a1daa20b75b02241f072ad87b01a7a95356d502e7a812dba1a71ea6b0223",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [
+        "the open coordinate cubic--quartic--sextic Meng chart"
+      ],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
+      "id": "HC4BL4",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Quartic bordered constant-direction lemma",
+      "scope": "For every ternary polynomial s of degree at most four over a characteristic-zero field, the identity grad(s)^T adj(Hess(s)) grad(s)=0 forces s to omit a nonzero constant direction. The proof uses the SIC(2) binary-root stratification of the leading quartic. The simple-root, 2+1+1, and 3+1 strata force the mixed cubic to vanish; the apparent 2+2 branch has unit complete lower coefficient ideal; and exact radical decompositions of the pure-fourth stratum show that all surviving lower terms depend on one common plane linear form.",
+      "canonical_source": "HC4_QUINTIC_COMMON_DIRECTION.md",
+      "dependencies": [
+        "HC4T31",
+        "SIC2B33S",
+        "external: Gordan--Noether classification in at most four variables",
+        "external: Singular 4.4.1 exact rational Groebner reduction"
+      ],
+      "checker": "scripts/verify_hc4_quintic_common_direction.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:9f1aecaec7b10667a8ed463b894dc10a0f73286684cbea2ec109cf16996ebbd3",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [
+        "the degree-three restriction in the common-direction bordered lemma"
+      ],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
+      "id": "HC4CD5",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Quintic common-direction HC4 obstruction",
+      "scope": "Let psi=q2+h3+h4+h5+h6 be a four-variable collision-normalized potential. If a nonzero constant direction v satisfies D_v h6=0 and D_v^2 h5=D_v^2 h4=D_v^2 h3=0, then a nonzero constant Hessian determinant is incompatible with a nonzero antipodal gradient collision. In sextic Hessian rank three this closes the full branch D_v h5=0. On the remaining branch s4=D_v h5 is nonzero, the first unresolved face is the exact polynomial Schur-norm divisibility det(Cbar) | grad(s4)^T adj(Cbar) grad(s4).",
+      "canonical_source": "HC4_QUINTIC_COMMON_DIRECTION.md",
+      "dependencies": [
+        "HC4BL4",
+        "HC4T31",
+        "external: Hessian conjecture in dimensions at most three",
+        "external: Moh plane Jacobian theorem through degree 100"
+      ],
+      "checker": "scripts/verify_hc4_quintic_common_direction.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:9f1aecaec7b10667a8ed463b894dc10a0f73286684cbea2ec109cf16996ebbd3",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [
+        "the open zero-derivative branch in the rank-three sextic--quintic Meng chart"
+      ],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
+      "id": "HC4QF1",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Fermat-sextic quintic Schur obstruction",
+      "scope": "Let psi=q2+h3+h4+h5+h6 be a four-variable collision-normalized potential with h6=(x^6+y^6+z^6)/30 and arbitrary h5. Write h5=t*s4+r5 in the constant sextic-kernel direction. Polynomial Schur divisibility forces the quartic s4 to be diagonal: the 66 bad coefficients have radical equal to the ideal of all twelve mixed quartic coefficients. Retain arbitrary r5 and every compatible lower quartic, cubic, and quadratic coefficient. The lambda^13*t*x^4*y^4*z^4 coefficient fixes the t^3 coefficient delta of h3 as 32*(a^3+b^3+c^3)/3. Three lambda^11*t^3 coefficients then become 1024*a^5, 1024*b^5, and 1024*c^5, so characteristic zero forces s4=0. HC4CD5 closes the resulting common-direction branch. The radical and determinant extractions are exact symbolic certificates; Lean independently checks the scalar Schur identity and the characteristic-zero fifth-power implication, but not those extractions.",
+      "canonical_source": "HC4_QUINTIC_COMMON_DIRECTION.md",
+      "dependencies": [
+        "HC4CD5"
+      ],
+      "checker": "scripts/verify_hc4_quintic_diagonal_schur.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:5440f1eee168b62300ca0545642d0f60de154131ea0bc35df6e63c289f24046a",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt",
+        "formal/finite-etale-keller/lean-toolchain",
+        "formal/finite-etale-keller/lake-manifest.json"
+      ],
+      "supersedes": [
+        "the minimal diagonal quintic Schur-norm prolongation experiment"
+      ],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
+      "id": "HC4QS1",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Symmetric-sextic quintic Schur obstruction",
+      "scope": "Let psi=q2+h3+h4+h5+h6 be a four-variable collision-normalized potential with h6=(x^6+y^6+z^6)/30+mu*x^2*y^2*z^2. Write h5=t*s4+r5 in the constant sextic-kernel direction. For mu nonzero, comparison of the generic quartic Schur numerator with det(Hess(h6)) times a generic quadratic quotient gives 111 equations. Saturation by mu has an exact 261-element rational Groebner basis contained in the 21-variable coefficient origin, while the fourth power of every origin generator lies in the saturated ideal. Hence s4=0 and HC4CD5 closes the branch. At mu=0, HC4QF1 applies. Thus every member of this non-diagonal symmetric sextic pencil is excluded, with arbitrary base quintic and all lower homogeneous pieces. Lean checks the reduced-ring fourth-power endpoint, but not the Groebner saturation.",
+      "canonical_source": "HC4_QUINTIC_COMMON_DIRECTION.md",
+      "dependencies": [
+        "HC4CD5",
+        "HC4QF1",
+        "external: Singular 4.4.1 exact rational Groebner reduction"
+      ],
+      "checker": "scripts/verify_hc4_quintic_symmetric_sextic_schur.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:f0180b220cf4a701e6ec26e63d510a975b6ab92823a8c976f1829606daf9d6e3",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt",
+        "formal/finite-etale-keller/lean-toolchain",
+        "formal/finite-etale-keller/lake-manifest.json"
+      ],
+      "supersedes": [
+        "the open symmetric one-parameter deformation of the Fermat sextic Schur stratum"
       ],
       "replaced_by": [],
       "priority": "reference"

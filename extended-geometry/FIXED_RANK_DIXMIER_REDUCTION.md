@@ -424,13 +424,31 @@ The conclusion is deliberately bounded.  It does not exclude:
   pair; or
 * a Hamiltonian reduction defined only after localization or completion.
 
-## 6. Next search
+## 6. Primary localized branch and secondary invariant-pair search
 
 The graph-centralizer theorem removes the most natural transported pair in
 all differential orders, and (23) removes its one-moment normalizer
-reduction.  The next finite search should therefore use the differential-order
-filtration on a **non-transported** Weyl pair rather than increase the degree
-of `h` blindly.
+reduction.  These results do not make a larger invariant-pair census the
+primary route.
+
+The primary route starts from the exact localized Darboux splitting already
+available in rank two.  Use the simple marked-root incidence presentation as
+the classical object, retain a separate seed space that parametrizes
+classical symbols, quantize the rank-one fiber Weyl algebra relatively, and
+then solve the Hamiltonian connection.  Polynomiality is a separate boundary
+theorem: compute valuations on the root-at-infinity chart, vary the localized
+solution through its correction and gauge torsors, apply support saturation
+to the obstruction module, and glue with the normalization conductor.  The
+full protocol is
+[the unified deformation complex](UNIFIED_DEFORMATION_COMPLEX.md#6-incidence-first-rank-two-quantization).
+
+This branch must vary the classical symbol as well as its quantum
+corrections.  Continuing to higher support over the current degree-five
+symbol can exclude that symbol only; it cannot prove \(DC_2\).
+
+As an independent secondary search, use the differential-order filtration on
+a **non-transported** Weyl pair rather than increase the degree of `h`
+blindly.
 
 1. Take `P,Q` of differential order at most one and bounded Bernstein degree.
 2. Solve `[P,Q]=1` at principal and subprincipal order.
@@ -449,5 +467,6 @@ coordinate ring must use a module/corner or Weyl bimodule, not the ambient
 centralizer (16).  The existing formal-local construction already produces
 such a rank-one formal Weyl bimodule.  The sharp global question is whether
 it descends across `X=0` with polynomial coefficients.  Its pole filtration
-should be compared against the same four-residue line and the existing
-`hbar^5` obstruction.
+should be treated by the same valuation, saturation, and conductor package,
+and compared against the existing `hbar^5` obstruction without treating
+that one symbol as universal.

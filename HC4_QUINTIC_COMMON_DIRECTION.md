@@ -1,0 +1,488 @@
+# Quartic bordered rigidity and quintic common-direction descent
+
+## Status
+
+This note proves the next bordered lemma after `HC4T31` and uses it to
+extend the four-variable common-direction descent through a homogeneous
+quintic layer.
+
+For a ternary polynomial \(s\), put
+
+\[
+ J(s)=(\nabla s)^{\mathsf T}
+       \operatorname{adj}(\operatorname{Hess}s)\nabla s. \tag{0.1}
+\]
+
+> **Theorem `HC4BL4` — Quartic bordered lemma.**  If
+> \(s\in K[x,y,m]\) has degree at most four over a characteristic-zero
+> field and \(J(s)=0\), then \(s\) is independent of a nonzero constant
+> direction.
+
+Consequently:
+
+> **Theorem `HC4CD5` — Quintic common-direction descent.**  Let
+> \[
+>  \psi=q_2+h_3+h_4+h_5+h_6
+> \]
+> be a four-variable collision-normalized potential with homogeneous
+> pieces of the indicated degrees.  Suppose a nonzero constant direction
+> \(v\) satisfies
+> \[
+>  D_vh_6=0,\qquad
+>  D_v^2h_5=D_v^2h_4=D_v^2h_3=0.                     \tag{0.2}
+> \]
+> If \(\det\operatorname{Hess}\psi\) is a nonzero constant, then
+> \(\nabla\psi\) has no nonzero antipodal collision.
+
+There is no support restriction.  This does not prove `HC_4`: the first
+remaining sextic-rank-three branch has \(D_vh_5\ne0\) and an exact
+polynomial Schur-norm divisibility condition described in Section 5.
+
+## 1. Leading binary quartic
+
+Write
+
+\[
+ s=s_4+s_3+s_2+s_1
+\]
+
+with homogeneous pieces.  Euler's identity gives
+
+\[
+ J(s_4)=\frac43s_4\det\operatorname{Hess}(s_4).       \tag{1.1}
+\]
+
+Thus \(s_4\) has singular Hessian.  If \(s_4=0\), the cubic bordered lemma
+of `HC4T31` applies.  Otherwise, Gordan--Noether makes \(s_4\) binary.
+Choose its missing direction as \(m\), and write
+
+\[
+ F(x,y)=s_4.
+\]
+
+Suppose first that \(F\) is not a fourth power.  Its binary Hessian is
+nonzero.  The next spatial face is
+
+\[
+ \frac43F\det\operatorname{Hess}_{x,y}(F)
+       \,\partial_m^2s_3.                              \tag{1.2}
+\]
+
+Hence
+
+\[
+ s_3=g_3(x,y)+mQ_2(x,y).                               \tag{1.3}
+\]
+
+Write the \(m^2\)-coefficient of \(s_2\) as \(k\).  The following face is
+the polynomial form of
+
+\[
+ \left(
+   2k-\nabla Q_2^{\mathsf T}
+       \operatorname{Hess}(F)^{-1}\nabla Q_2
+ \right)\frac43F+\frac19Q_2^2=0.                      \tag{1.4}
+\]
+
+Equation (1.4) is the binary-root synchronization gate.
+
+At a simple root of \(F\), its binary Hessian is nonzero, so (1.4) forces
+\(Q_2\) to vanish there.  The root partitions and the exact reduced
+outcomes are:
+
+| root partition of \(F\) | radical consequence of (1.4) |
+|---|---|
+| \(1+1+1+1\) | \(Q_2=k=0\) |
+| \(2+1+1\) | \(Q_2=k=0\) |
+| \(3+1\) | \(Q_2=k=0\) |
+| \(2+2\) | \(Q_2=p\,xy,\quad k=p^2/8\) |
+
+The first line follows directly from the four roots; the other three are
+checked on the canonical binary forms
+
+\[
+ x^2y(x-y),\qquad x^3y,\qquad x^2y^2.                 \tag{1.5}
+\]
+
+When \(p=0\), the next face makes the coefficient of \(m\) in \(s_2\)
+zero, and the following face removes the coefficient of \(m\) in \(s_1\).
+Thus \(s\) is independent of \(m\).
+
+The apparent double-double exception \(p\ne0\) does not extend.  Normalize
+\(p=1\), retain every binary cubic, every binary quadratic, every
+mixed-linear quadratic term, and every linear term.  The complete
+63-equation coefficient ideal of \(J(s)\) is the unit ideal over
+\(\mathbb Q\).  This closes every non-pure-fourth binary-root stratum.
+
+## 2. Pure fourth power
+
+It remains to take \(F=x^4\).  The first nonzero face is
+
+\[
+ 16x^6\det\operatorname{Hess}_{y,m}(s_3)=0.            \tag{2.1}
+\]
+
+The binary singular-Hessian form and homogeneity give, after a constant
+change in the \((y,m)\)-plane,
+
+\[
+ s_3=g_0x^3+g_1x^2y+g_2xy^2+g_3y^3+a x^2m.           \tag{2.2}
+\]
+
+### 2.1 Nonzero residual
+
+If \(a\ne0\), normalize \(a=1\).  Write
+
+\[
+\begin{aligned}
+s_2={}&b_0m^2+b_1my+b_2y^2+b_3mx+b_4xy+b_5x^2,\\
+s_1={}&r_0x+r_1y+r_2m.
+\end{aligned}
+\]
+
+The radical of the complete bordered coefficient ideal is
+
+\[
+\begin{aligned}
+(&g_2,g_3,\,
+b_1-2g_1b_0,\,
+b_2-g_1^2b_0,\\
+&b_4-g_1b_3,\,
+r_1-g_1r_2).                                          \tag{2.3}
+\end{aligned}
+\]
+
+The checker verifies the inclusion of every bordered coefficient in
+(2.3), and the reverse radical inclusion with powers
+
+\[
+1,\ 1,\ 2,\ 2,\ 2,\ 2.
+\]
+
+On (2.3), every occurrence of \(y,m\) is through
+
+\[
+ \ell=m+g_1y.
+\]
+
+Therefore the constant direction
+\(\partial_y-g_1\partial_m\) is missing.
+
+### 2.2 Zero residual
+
+If \(a=0\), the radical has two branches.  The first is
+
+\[
+ I_1=(b_0,b_1,b_3,r_2),                                \tag{2.4}
+\]
+
+where \(s\) is independent of \(m\).  On the second branch
+
+\[
+ g_1=g_2=g_3=0,                                       \tag{2.5}
+\]
+
+and the quadratic plane form, the \(x\)-linear plane form, and the linear
+plane form all depend on one common linear form in \(y,m\).  Explicitly,
+the incidence ideal is generated by (2.5) and
+
+\[
+\begin{gathered}
+b_1^2-4b_0b_2,\\
+2b_2b_3-b_1b_4,\quad 2b_0b_4-b_1b_3,\\
+2b_2r_2-b_1r_1,\quad 2b_0r_1-b_1r_2,\quad
+b_3r_1-b_4r_2.                                        \tag{2.6}
+\end{gathered}
+\]
+
+Let this ideal be \(I_2\).  Exact rational Gröbner reduction gives a
+966-element basis for the bordered coefficient ideal and an 18-element
+basis for \(I_1\cap I_2\).  Every bordered equation reduces to zero
+modulo \(I_1\cap I_2\), while powers at most four of all eighteen
+intersection generators reduce to zero modulo the bordered ideal.
+Therefore their radicals agree.  Both branches omit a constant direction.
+This proves `HC4BL4`.
+
+The decomposition is the quartic continuation of the SIC binary-root
+mechanism: the root partitions isolate the only repeated-root exception,
+and the lower equations synchronize every surviving coefficient with the
+same projective root.
+
+## 3. Common-direction descent with \(h_5\)
+
+Choose coordinates with \(v=\partial_t\).  Condition (0.2) gives
+
+\[
+ \psi=\frac{\kappa}{2}t^2+t\,s(u)+\phi(u),
+ \qquad \deg s\le4.                                    \tag{3.1}
+\]
+
+If \(\kappa\ne0\), polynomial Schur descent eliminates \(t\) and gives a
+three-variable constant-Hessian potential.  This contradicts `HC(3)`.
+
+If \(\kappa=0\), the coefficient of \(t^2\) in the Hessian determinant is
+\(-J(s)\).  The quartic bordered lemma supplies a second constant
+direction \(m\) missing from \(s\).  The remainder of the proof is the
+same exact second descent as `HC4T31`.
+
+If \(\phi_{mm}=0\), then
+
+\[
+ \psi=t\,s(x,y)+m\,g(x,y)+h(x,y)
+\]
+
+and
+
+\[
+ \det\operatorname{Hess}\psi
+ =\operatorname{Jac}(s,g)^2.                           \tag{3.2}
+\]
+
+Here \(\deg s\le4\) and \(\deg g\le5\), so Moh's plane degree bound makes
+\((s,g)\) a polynomial automorphism.  Otherwise the binary bordered
+factor makes \(s\) a polynomial in one linear form.  If its degree is at
+least two, its gradient vanishes somewhere over the algebraic closure and
+the bordered Hessian has a zero row.  Hence \(s\) is linear, and the
+terminal `HC(2)` argument of `HC4T31` excludes the collision.
+
+This proves `HC4CD5`.
+
+## 4. A closed rank-three quintic branch
+
+Now let
+
+\[
+ A=\operatorname{Hess}(h_3),\quad
+ B=\operatorname{Hess}(h_4),\quad
+ D=\operatorname{Hess}(h_5),\quad
+ C=\operatorname{Hess}(h_6)
+\]
+
+and suppose \(C\) has generic rank three.  Gordan--Noether gives its
+constant kernel direction \(t\).  In
+
+\[
+ \det(H_0+\lambda A+\lambda^2B+\lambda^3D+\lambda^4C),
+                                                               \tag{4.1}
+\]
+
+the degree-fifteen face is
+
+\[
+ \det(\bar C)D_{tt}.                                    \tag{4.2}
+\]
+
+Thus \(D_t^2h_5=0\).  On the additional branch
+
+\[
+ D_th_5=0,                                               \tag{4.3}
+\]
+
+the complete \(t\)-row of \(D\) vanishes.  Degrees fourteen and thirteen
+of (4.1) are then successively
+
+\[
+ \det(\bar C)B_{tt},\qquad
+ \det(\bar C)A_{tt}.                                    \tag{4.4}
+\]
+
+Condition (0.2) follows, so `HC4CD5` closes this branch without support
+restrictions.
+
+## 5. Exact remaining quintic face
+
+Equation (4.2) only makes \(h_5\) affine-linear in \(t\).  Put
+
+\[
+ s_4=D_th_5,\qquad d=\nabla s_4.
+\]
+
+If \(s_4\ne0\), the degree-fourteen face is not (4.4).  It is the Schur
+norm
+
+\[
+ \det(\bar C)D_t^2h_4
+   -d^{\mathsf T}\operatorname{adj}(\bar C)d=0,          \tag{5.1}
+\]
+
+or, over the function field,
+
+\[
+ D_t^2h_4=d^{\mathsf T}\bar C^{-1}d.                    \tag{5.2}
+\]
+
+The right side is a priori rational but the left side is a homogeneous
+quadratic polynomial.  Thus every surviving counterexample must solve the
+divisibility problem
+
+\[
+ \det(\bar C)\mid
+ d^{\mathsf T}\operatorname{adj}(\bar C)d.              \tag{5.3}
+\]
+
+This is now the first unresolved homogeneous face for the rank-three
+sextic--quintic interaction.  It is substantially narrower than an
+arbitrary \(h_5\): the zero derivative branch is closed, and the nonzero
+branch is the explicit Hessian-metric norm problem (5.3).
+
+## 6. The Fermat-sextic Schur-norm stratum closes
+
+Condition (5.3) has nonzero solutions, so it cannot itself be promoted to
+a vanishing lemma.  The canonical family is
+
+\[
+ h_6=\frac{x^6+y^6+m^6}{30},\qquad
+ h_5=t(ax^4+by^4+cm^4)+r_5(x,y,m).                    \tag{6.1}
+\]
+
+Here \(\bar C=\operatorname{diag}(x^4,y^4,m^4)\), and (5.2) forces
+
+\[
+ h_4=8t^2(a^2x^2+b^2y^2+c^2m^2)
+     +t\,r_3(x,y,m)+\phi_4(x,y,m).                    \tag{6.2}
+\]
+
+There is no restriction in taking \(D_th_5\) diagonal here.  For a
+generic quartic \(s_4\), Schur divisibility says
+
+\[
+x^4y^4m^4\mid
+y^4m^4s_x^2+x^4m^4s_y^2+x^4y^4s_m^2.                \tag{6.3}
+\]
+
+Reduction successively modulo \(x^4,y^4,m^4\) gives
+
+\[
+x^2\mid s_x,\qquad y^2\mid s_y,\qquad m^2\mid s_m.
+\]
+
+Every variable occurring in a monomial of the homogeneous quartic must
+therefore have exponent at least three.  The total degree is four, so no
+mixed monomial can occur and
+\(s_4=ax^4+by^4+cm^4\).  The checker independently certifies this
+classification: the 66 bad divisibility coefficients have radical equal
+to the ideal of the twelve mixed quartic coefficients, with radical powers
+at most three.
+
+Retain every coefficient of \(r_5,r_3,\phi_4\), and write the completely
+general remaining cubic and quadratic pieces as
+
+\[
+\begin{aligned}
+h_3={}&\delta t^3+t^2L_1(x,y,m)+t\,g_2(x,y,m)
+       +\phi_3(x,y,m),\\
+q_2={}&\frac{\kappa}{2}t^2+tL_0(x,y,m)+Q_2(x,y,m).
+\end{aligned}                                         \tag{6.4}
+\]
+
+The coefficient of \(\lambda^{13}t x^4y^4m^4\) is
+
+\[
+ -2\bigl(32a^3+32b^3+32c^3-3\delta\bigr).             \tag{6.5}
+\]
+
+Thus \(\delta=32(a^3+b^3+c^3)/3\).  Three coefficients of the
+degree-eleven face, before this substitution, are
+
+\[
+\begin{aligned}
+[t^3y^4m^4]&=-32a^2(32b^3+32c^3-3\delta),\\
+[t^3x^4m^4]&=-32b^2(32a^3+32c^3-3\delta),\\
+[t^3x^4y^4]&=-32c^2(32a^3+32b^3-3\delta).
+                                                               \tag{6.6}
+\end{aligned}
+\]
+
+After (6.5), these are \(1024a^5,1024b^5,1024c^5\).  Characteristic zero
+forces \(a=b=c=0\), reducing (6.1) to the already-closed branch
+`HC4CD5`.  Notice that every coefficient of the arbitrary forms in (6.1)--(6.4)
+cancels from (6.5)--(6.6).
+
+> **Theorem `HC4QF1` — Fermat-sextic quintic Schur obstruction.**  The
+> complete Fermat-sextic stratum, with arbitrary \(h_5\) and arbitrary
+> lower homogeneous pieces, admits no nonzero \(D_th_5\) in a
+> constant-Hessian collision.
+
+The remaining rank-three quintic problem is therefore genuinely
+non-diagonal: classify the pairs \((h_6,s_4)\) satisfying (5.3) modulo
+linear equivalence, then propagate each non-Fermat or non-diagonal class to
+the degree-thirteen and degree-eleven faces.
+
+## 7. A non-diagonal symmetric sextic pencil
+
+The first deformation away from the Fermat orbit is
+
+\[
+h_{6,\mu}=\frac{x^6+y^6+m^6}{30}+\mu x^2y^2m^2.       \tag{7.1}
+\]
+
+Let \(s_4\) be a completely generic ternary quartic with fifteen
+coefficients and \(Q_2\) a generic quadratic with six coefficients.
+Coefficient comparison in
+
+\[
+(\nabla s_4)^{\mathsf T}
+\operatorname{adj}(\operatorname{Hess}h_{6,\mu})\nabla s_4
+=\det(\operatorname{Hess}h_{6,\mu})Q_2                \tag{7.2}
+\]
+
+gives 111 equations in \(\mathbb Q[\mu,\mathbf s,\mathbf q]\).
+Saturate their ideal by \(\mu\).  Exact rational Gröbner calculation gives
+a 261-element basis.  The saturated ideal is contained in the coefficient
+origin
+
+\[
+\mathfrak m=(s_0,\ldots,s_{14},q_0,\ldots,q_5),
+\]
+
+and the fourth power of every generator of \(\mathfrak m\) reduces to zero
+modulo that basis.  Hence
+
+\[
+\sqrt{(I:\mu^\infty)}=\mathfrak m.                    \tag{7.3}
+\]
+
+Therefore every \(\mu\ne0\) forces \(s_4=0\), and `HC4CD5` closes the
+quintic branch.  At \(\mu=0\), `HC4QF1` applies.
+
+> **Theorem `HC4QS1` — symmetric-sextic quintic Schur obstruction.**
+> Every member of the pencil (7.1), with arbitrary quintic and lower
+> homogeneous pieces, is incompatible with a nonzero antipodal collision
+> and nonzero constant Hessian determinant.
+
+This is the first full non-diagonal ternary-sextic family closed at the
+Schur face.  The remaining target is to replace the special pencil (7.1)
+by strata of the moduli of ternary sextics, organized by the factorization
+and singularities of their Hessian discriminant.
+
+## Reproduction
+
+Run:
+
+```bash
+.venv/bin/python scripts/verify_hc4_quintic_common_direction.py
+.venv/bin/python scripts/verify_hc4_quintic_diagonal_schur.py
+.venv/bin/python scripts/verify_hc4_quintic_symmetric_sextic_schur.py
+```
+
+The checker replays `HC4T31`, verifies every symbolic face, runs the exact
+rational radical certificates with Singular, and verifies (5.1).  The
+second checker retains all 72 lower coefficients symbolically and extracts
+the 66-equation Schur divisibility ideal and the four determinant
+coefficients (6.5)--(6.6) by exact rational calculations.  The third
+checker constructs the full 111-equation ideal (7.2), saturates by
+\(\mu\), and verifies all twenty-one fourth-power radical certificates.
+
+The scalar Schur identity and the implication from (6.5)--(6.6) to
+\(a=b=c=0\) are also machine-checked in
+[`HC4QuinticDiagonal.lean`](formal/finite-etale-keller/FiniteEtaleKeller/HC4QuinticDiagonal.lean).
+That file also proves the reduced-ring endpoint turning the twenty-one
+fourth-power certificates in (7.3) into coefficient vanishing.
+The extraction of those coefficients from the Hessian determinant remains
+the exact Python certificate; it is not claimed as an end-to-end Lean
+formalization.
+
+The external structural inputs are the low-dimensional
+[Gordan--Noether classification](https://arxiv.org/abs/1501.05168),
+de Bondt's theorem `HC(3)`, and
+[Moh's plane degree bound](https://www.math.purdue.edu/~ttm/jacobian.pdf).

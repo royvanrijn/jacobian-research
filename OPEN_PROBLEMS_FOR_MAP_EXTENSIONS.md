@@ -139,9 +139,9 @@ The coherent kernel \(\mathcal P_n\) which contains these strong cocycles,
 and the distinction between fiberwise, vertical, and parameter-uniform
 classes, are defined in
 [`extended-geometry/RESTRICTED_QUANTUM_DEFORMATION_COCYCLES.md`](extended-geometry/RESTRICTED_QUANTUM_DEFORMATION_COCYCLES.md).
-What remains is to globalize these fiberwise sections over the parameter
-and Fitting strata and to treat order seven over the full reduced
-fifth-order lift component.
+What remains on this symbol-specific branch is to globalize these fiberwise
+sections over its parameter and Fitting strata and to treat order seven over
+the full reduced fifth-order lift component.
 
 The first globalization chart is now explicit.  On the standard
 16-monomial support, a primitive \(15\times16\) polynomial presentation has
@@ -165,18 +165,41 @@ Macaulay/RREF lift with smaller coefficient height, followed by integer
 identity checking.  Comparing the alternate supports comes after that
 certificate.
 
-This would replace many representative-dependent linear calculations by one
-gauge-invariant obstruction.  It could prove that the displayed rank-two
-symbols admit no filtered Weyl quantization, or identify the exact extra
-hypothesis under which a boundary-clean family is conjugate to a canonical
-inverse-Jacobian lift.
+The primary branch is broader.  The Ore localization already gives exact
+Darboux coordinates and reduces the problem to a rank-one fiber Weyl algebra
+over the central parameter, followed by a Hamiltonian connection.  Therefore:
+
+1. use the simple marked-root incidence presentation, or its normalized
+   factorization presentation, as the classical object over a separate
+   seed/symbol parameter base;
+2. quantize the rank-one fiber relatively over that base;
+3. solve the Hamiltonian connection before imposing global polynomiality;
+4. compute valuations on the root-at-infinity chart and test pole
+   cancellation modulo homogeneous corrections and Hamiltonian gauge;
+5. use support saturation to eliminate obstruction classes supported only
+   on the boundary; and
+6. use the normalization conductor to glue the localized solutions.
+
+This is organized by the
+[`gauge -> corrections -> defects` complex](extended-geometry/UNIFIED_DEFORMATION_COMPLEX.md).
+The relative obstruction module and its Fitting/Kuranishi loci retain the
+horizontal classical-symbol directions which a fixed-symbol matrix omits.
+Candidate components may be discovered across several good primes, but they
+must be reconstructed and verified over \(\mathbb Q\).
+
+The direct two-PBW-correction search remains a useful independent control.
+It should use cross-prime component reconstruction and exact Ore--Gröbner
+generation certificates, not a larger coefficient alphabet.  Its
+one-monomial predecessor is already closed within its declared bounds.
 
 Even complete elimination of a displayed symbol does not settle `DC_2`;
 settling `DC_2` requires either a genuine non-surjective `A_2` endomorphism or
 a proof that every `A_2` endomorphism is an automorphism.
 
-Useful map extensions should keep the classical symbol family explicit while
-making the correction complex functorial in the family parameters.
+Accordingly, higher-support continuation on the current degree-five symbol
+is secondary.  Useful map extensions should branch across classical symbols,
+keep the incidence family explicit, and make the correction complex
+functorial in its parameters.
 
 See
 [`extended-geometry/RANK_TWO_FILTERED_QUANTIZATION_OBSTRUCTION.md`](extended-geometry/RANK_TWO_FILTERED_QUANTIZATION_OBSTRUCTION.md)

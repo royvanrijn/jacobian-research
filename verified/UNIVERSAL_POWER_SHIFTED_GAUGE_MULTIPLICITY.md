@@ -279,6 +279,11 @@ For fixed `N>=4`, (6.4) is strictly increasing in `m`.  Therefore
 
 Equations (4.3) and (6.5) prove the theorem.
 
+The fiber equality used above is one specialization of the stronger
+[whole-plane stable-multiplicity theorem](WHOLE_PLANE_STABLE_MULTIPLICITY.md):
+all `F_m` agree as maps on the full source divisor `P=1` and share the
+finite-etale inverse cover over every squarefree target `(1,B,C)`.
+
 ## 7. Relation to the rank-specific proofs
 
 For `N=4`, (6.4) is `5+2m`, the lattice index of the triangular quartic

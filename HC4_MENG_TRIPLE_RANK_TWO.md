@@ -17,9 +17,11 @@ three, four, and six.
 > \(\det\operatorname{Hess}(\psi)\) is a nonzero constant, then
 > \(\nabla\psi\) cannot identify a nonzero antipodal pair.
 
-There is no support restriction.  Together with `HC4T31`, this leaves only
-sextic Hessian rank one in the simultaneous cubic--quartic--sextic
-coordinate chart; rank zero is `HC4CQ1`.
+There is no support restriction.  The later theorem `HC4T11` closes
+sextic Hessian rank one, while rank zero is `HC4CQ1`; together with
+`HC4T31`, these results prove the complete coordinate-chart theorem
+`HC4TC1` for homogeneous support \(\{2,3,4,6\}\).  Quintic and higher
+layers are separate.
 
 ## 1. The first three faces
 

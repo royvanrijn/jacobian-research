@@ -557,11 +557,14 @@ identity and a collision both persist.  Classify by the generic rank of
 These cases exhaust the sextic Hessian ranks. \(\square\)
 
 The theorem closes the even quartic--sextic chart with no cubic correction.
-For simultaneous cubic--quartic--sextic corrections, `HC4T31` in
-[`HC4_MENG_TRIPLE_RANK_THREE.md`](HC4_MENG_TRIPLE_RANK_THREE.md) closes
-the rank-three sextic-Hessian stratum.  Sextic Hessian rank at most two
-still has half-integral spatial layers, and the binary residual form is no
-longer isolated by (6.1).
+For simultaneous cubic--quartic--sextic corrections, `HC4T31`, `HC4T21`,
+and `HC4T11` in
+[`HC4_MENG_TRIPLE_RANK_THREE.md`](HC4_MENG_TRIPLE_RANK_THREE.md) and
+[`HC4_MENG_TRIPLE_RANK_TWO.md`](HC4_MENG_TRIPLE_RANK_TWO.md), and
+[`HC4_MENG_TRIPLE_RANK_ONE.md`](HC4_MENG_TRIPLE_RANK_ONE.md) close all
+three nonzero sextic-Hessian strata.  Together with `HC4CQ1` at rank zero,
+they prove the coordinate-chart theorem `HC4TC1` for homogeneous support
+\(\{2,3,4,6\}\).  Quintic and higher layers are not included.
 
 The rank-one normal-form input is the determinant-zero case used in
 [de Bondt's three-variable Hessian theorem](https://arxiv.org/abs/1203.6605).

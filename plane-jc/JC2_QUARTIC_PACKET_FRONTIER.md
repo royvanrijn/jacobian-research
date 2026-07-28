@@ -357,6 +357,33 @@ that conductor-pairing graph with the rank-one class relation (2.3) or
 If (6.1) is closed, the only quartic survivor is \(Q_{\mathrm{two}}\), which
 should then be compiled into the two-generator unimodular boundary lattice.
 
+The first global compilation is now carried out in
+[`JC2_GLOBAL_COX_PACKET_ATTACK.md`](JC2_GLOBAL_COX_PACKET_ATTACK.md).
+It shows that the one-boundary row and both same-target/different-target
+versions of \(Q_{\mathrm{two}}\) miss exactly the same primitive Cox
+character: the ramified boundary class \(E\), which is also the
+canonical/different class of the finite normalization.  Adjoining that
+character saturates every exponent lattice, so coarse class-group torsion
+does not exclude a packet.  The remaining target is geometric: prove that
+the canonical normal Gorenstein source hypersurface
+\(g(P,Q)=a s_E^2\) cannot occur as the Zariski--Main open inside the finite
+normalization of \(g=a s_E^2\) while deleting the primitive
+\(E\)-component and
+retaining both the clean \(3+1\) conductor point and a \(2+2\) connector.
+The later affine-modification attacks show why a universal "unit or
+exceptional curve" dichotomy is too presentation-dependent to serve as the
+primary statement.  The completed normalization has now also been computed:
+at the cusp and at each connector branch it adjoins
+\(z=r\ell/s_E\), has conductor and canonical module \((r,s_E)\), and its
+source open is \(D(r)\).  These local deletions are compatible.  The
+transition rules \(r_i=u_{ij}r_j\),
+\(\ell_i=u_{ij}^{-2}\ell_j\), and \(z_i=u_{ij}^{-1}z_j\) are compatible as
+well.  The remaining statement must use the two-generated degree-zero
+global-section algebra \(k[x,y]\) and the global cusp/connector endpoint
+pairing, not nonprincipality alone.  Equivalently, the affine companion is
+the degeneracy divisor of the odd-square map from graded degree \(-1\) to
+degree \(-2\); its cokernel is \(k[x,y]/(h)\).
+
 References:
 
 - S. Yu. Orevkov,

@@ -34,6 +34,7 @@ from jcsearch.ritt_complex import (  # noqa: E402
     degree_thirty_braid_decorations,
     symmetric_braid_complex,
 )
+from jcsearch.deformation_complex import ThreeTermComplex  # noqa: E402
 
 
 X = sp.symbols("x")
@@ -147,15 +148,13 @@ def audit_filled_braid_baseline() -> None:
 
     complex_ = symmetric_braid_complex((2, 3, 5), MoveType.CHEBYSHEV)
     delta_zero, delta_one = cellular_coboundaries(complex_)
-    assert delta_one * delta_zero == sp.zeros(1, 6)
-    ranks = (delta_zero.rank(), delta_one.rank())
-    assert ranks == (5, 1)
-    cohomology_dimensions = (
-        6 - ranks[0],
-        6 - ranks[0] - ranks[1],
-        1 - ranks[1],
+    linear_complex = ThreeTermComplex(
+        delta_zero,
+        delta_one,
+        "unlabelled filled Ritt braid",
     )
-    assert cohomology_dimensions == (1, 0, 0)
+    assert linear_complex.ranks == (5, 1)
+    assert linear_complex.cohomology_dimensions == (1, 0, 0)
 
 
 def hilbert_vector(exponents: tuple[int, ...]) -> tuple[int, ...]:

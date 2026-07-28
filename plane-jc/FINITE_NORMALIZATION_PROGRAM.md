@@ -340,6 +340,31 @@ has at least one full \(2+2\) boundary self-collision.
 
 The proof, the two packet ledgers, and the exact \(S_4\) enumeration are in
 [`JC2_QUARTIC_PACKET_FRONTIER.md`](JC2_QUARTIC_PACKET_FRONTIER.md).
+The subsequent
+[`global Cox packet audit`](JC2_GLOBAL_COX_PACKET_ATTACK.md) compiles the
+one-boundary row and both target groupings of the two-boundary row.  In all
+three exponent lattices, one primitive ramified-boundary character
+saturates/completes the target pullbacks; it is also the canonical/different
+class.  This removes coarse torsion as an obstruction and reduces the
+quartic problem to the canonical special-fiber deletion geometry.  In the
+rank-one row, \(g=a s_E^2\) base-changes \(B/A\) to a finite-free
+rank-four threefold order; normalizing that order in \(K(s_E)\) gives the
+finite target-side interface with the three-dimensional normalization
+machinery.  The global condition \(U=\mathbb A^2\) supplies the complementary
+normal Gorenstein source hypersurface
+\(g(P,Q)=a s_E^2\).  Its coordinate ring contains that normalization and
+defines the Zariski--Main open immersion whose \(s_E\ne0\) restriction is
+\(U\times\mathbb G_m\hookrightarrow X\times\mathbb G_m\).  The completed
+cusp and \(2+2\) charts have the common determinantal normalization
+\(O[z]\), conductor and canonical module \((r,s)\), and source open
+\(D(r)\); hence they are locally compatible.  Their transition laws also
+glue canonically: \(r_i=u_{ij}r_j\) gives
+\(\ell_i=u_{ij}^{-2}\ell_j\) and \(z_i=u_{ij}^{-1}z_j\).  The revised goal
+is to obstruct the resulting degree-zero global-section algebra, using
+its two polynomial generators and the cusp/connector endpoint pairing,
+not the nonprincipal class by itself.  The first two negative graded pieces
+make that pairing concrete: their square-multiplication cokernel is exactly
+the affine companion ring \(k[x,y]/(h)\).
 
 This is a geometric-degree statement, not the total-coordinate degree
 frontier at \(125\).

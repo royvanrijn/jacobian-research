@@ -38,6 +38,7 @@ CORE_ORDER = [
 ]
 ACTIVE_OPEN = {
     "OP-CR",
+    "OP-GVC2-RP",
     "OP-LR-REES",
     "OP-LR-II",
     "OP-LR-NE",

@@ -507,14 +507,18 @@ has no constant binary kernel direction, but its full Hessian contributes
 \(48(xt+ym)^4\).  It is exactly the moving cone killed by the new
 determinant face, not a constant-Hessian collision candidate.
 
-The remaining coordinate-chart problem is simultaneous cubic and sextic
-interaction with
-\(\operatorname{rank}\operatorname{Hess}(h_6)\le2\).  The rank-three
-part of \(q_2+h_3+h_4+h_6\) is closed by `HC4T31` in
-[`HC4_MENG_TRIPLE_RANK_THREE.md`](HC4_MENG_TRIPLE_RANK_THREE.md).
-The pure quartic chart is `HC4HQ1`, the cubic--quartic chart is `HC4CQ1`,
-and the quartic--sextic chart is `HC4E46`.  Non-coordinate coisotropic
-embeddings remain a separate geometric route.
+The coordinate-chart problem with simultaneous cubic and sextic
+interaction and homogeneous support \(\{2,3,4,6\}\) is now closed.  The
+rank-three part of
+\(q_2+h_3+h_4+h_6\) is `HC4T31` in
+[`HC4_MENG_TRIPLE_RANK_THREE.md`](HC4_MENG_TRIPLE_RANK_THREE.md), and
+the rank-two part is `HC4T21` in
+[`HC4_MENG_TRIPLE_RANK_TWO.md`](HC4_MENG_TRIPLE_RANK_TWO.md).  The
+rank-one part and the exhaustion theorem `HC4TC1` are in
+[`HC4_MENG_TRIPLE_RANK_ONE.md`](HC4_MENG_TRIPLE_RANK_ONE.md); rank zero
+is `HC4CQ1`.  The pure quartic chart is `HC4HQ1`, and the even
+quartic--sextic chart is `HC4E46`.  Quintic and higher homogeneous layers,
+and non-coordinate coisotropic embeddings, remain separate routes.
 
 ## Reproduction
 

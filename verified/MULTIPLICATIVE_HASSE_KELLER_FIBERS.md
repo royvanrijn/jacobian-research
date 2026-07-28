@@ -32,6 +32,13 @@ has complete inverse polynomial
 The determinant and factor identity are replayed by
 [`verify_infinite_hasse_keller_fibers.py`](../scripts/verify_infinite_hasse_keller_fibers.py).
 
+The
+[whole-plane stable-multiplicity theorem](WHOLE_PLANE_STABLE_MULTIPLICITY.md)
+applies the power-shift construction to this fixed seed.  It gives infinitely
+many pairwise stably inequivalent degree-five maps that share this target
+line and, more strongly, the entire squarefree inverse cover over its
+ambient target plane.
+
 ## 2. The multiplicative local criterion
 
 ### Theorem 2.1

@@ -15,6 +15,7 @@ from typing import Sequence
 
 from boundary_lattice_prefilter import (
     boundary_intersection_matrix,
+    localization_invariants,
     standard_completion,
 )
 from intrinsic_a2_boundary import (
@@ -94,6 +95,87 @@ class QuarticOrevkovPacket:
     unramified_components: int
     forced_clean_special_fiber: tuple[int, ...] | None
     allowed_coincident_boundary_fiber: tuple[int, ...]
+    status: str
+
+    def as_dict(self) -> dict[str, object]:
+        return asdict(self)
+
+
+@dataclass(frozen=True)
+class QuarticCoxBoundaryLattice:
+    """Boundary-character lattice for one global quartic grouping.
+
+    ``target_pullback_vectors`` record only the missing-boundary
+    multiplicities in the pullbacks of the relevant target curves.  Their
+    affine companions have the opposite classes because the complete
+    pullbacks are principal.  The target vectors need not span the primitive
+    boundary lattice: ``primitive_completion_vector`` is the single Cox
+    character needed to make the augmented exponent lattice saturated.
+    """
+
+    name: str
+    boundary_basis: tuple[str, ...]
+    target_pullback_vectors: tuple[tuple[int, ...], ...]
+    affine_companion_class_sums: tuple[tuple[int, ...], ...]
+    canonical_class: tuple[int, ...]
+    log_canonical_class: tuple[int, ...]
+    target_lattice_rank: int
+    target_lattice_free_cokernel_rank: int
+    target_lattice_torsion: tuple[int, ...]
+    primitive_completion_vector: tuple[int, ...]
+    augmented_lattice_saturated: bool
+    coarse_unit_forced: bool
+    conductor_visible_in_class_group: bool
+    status: str
+
+    def as_dict(self) -> dict[str, object]:
+        return asdict(self)
+
+
+@dataclass(frozen=True)
+class QuarticCompletedDeletionChart:
+    """Completed local chart of the canonical quartic boundary deletion.
+
+    The completed order has equation ``a*s^2=r^2*ell``.  Its normalization
+    adjoins ``z=r*ell/s`` and is the codimension-two determinantal ring
+    defined by the minors of ``[[a,z,r],[z,ell,s]]``.  The two packet loci
+    differ only in the contact order of ``r=0`` and ``ell=0``.
+    """
+
+    name: str
+    local_copies: int
+    companion_equation: str
+    contact_order: int | str
+    order_relation: str
+    normalization_generator: str
+    normalization_relations: tuple[str, ...]
+    transition_exponents: tuple[tuple[str, int], ...]
+    conductor_generators: tuple[str, ...]
+    normalization_quotient: str
+    dualizing_generators: tuple[str, ...]
+    source_open: str
+    source_special_fiber: str
+    endpoint_gorenstein: bool
+    status: str
+
+    def as_dict(self) -> dict[str, object]:
+        return asdict(self)
+
+
+@dataclass(frozen=True)
+class QuarticGradedBoundaryBridge:
+    """Lowest graded pieces of the target normalization and source open."""
+
+    normalization_degree_zero: str
+    source_degree_zero: str
+    local_normalization_degree_minus_one: str
+    local_normalization_degree_minus_two: str
+    local_square_multiplier: str
+    local_square_cokernel: str
+    source_degree_minus_one: str
+    source_degree_minus_two: str
+    source_square_multiplier: str
+    source_square_cokernel: str
     status: str
 
     def as_dict(self) -> dict[str, object]:
@@ -183,6 +265,192 @@ def quartic_orevkov_packet_atlas() -> tuple[QuarticOrevkovPacket, ...]:
             allowed_coincident_boundary_fiber=(2, 2),
             status="survives_global_budget",
         ),
+    )
+
+
+def quartic_cox_boundary_lattice_atlas(
+) -> tuple[QuarticCoxBoundaryLattice, ...]:
+    """Audit the class/Cox lattice for every quartic target grouping.
+
+    There are three groupings after separating the two-boundary row
+    according to whether its two dicriticals have the same target image.
+    The target pullback vectors alone have either a rank-one defect or a
+    residual index two.  In every row, adjoining the primitive ramified
+    boundary character ``E`` kills the complete free/torsion cokernel.
+
+    This is not a quartic exclusion.  It proves that the coarse class group
+    and unit sequence are consistent and isolates the one Cox character
+    whose geometric realization must be obstructed.
+    """
+
+    raw_rows = (
+        (
+            "one_boundary",
+            ("E",),
+            ((2,),),
+            ((-2,),),
+            (1,),
+            (2,),
+            (1,),
+        ),
+        (
+            "two_boundaries_same_target",
+            ("E", "D"),
+            ((2, 1),),
+            ((-2, -1),),
+            (1, 0),
+            (2, 1),
+            (1, 0),
+        ),
+        (
+            "two_boundaries_different_targets",
+            ("E", "D"),
+            ((2, 0), (0, 1)),
+            ((-2, 0), (0, -1)),
+            (1, 0),
+            (2, 1),
+            (1, 0),
+        ),
+    )
+    atlas: list[QuarticCoxBoundaryLattice] = []
+    for (
+        name,
+        boundary_basis,
+        target_vectors,
+        affine_classes,
+        canonical_class,
+        log_canonical_class,
+        primitive_vector,
+    ) in raw_rows:
+        boundary_rank = len(boundary_basis)
+        target_columns = [
+            [vector[row] for vector in target_vectors]
+            for row in range(boundary_rank)
+        ]
+        target_invariants = localization_invariants(target_columns)
+        augmented_vectors = target_vectors + (primitive_vector,)
+        augmented_columns = [
+            [vector[row] for vector in augmented_vectors]
+            for row in range(boundary_rank)
+        ]
+        augmented_invariants = localization_invariants(augmented_columns)
+        augmented_saturated = (
+            augmented_invariants.picard_free_rank == 0
+            and not augmented_invariants.picard_torsion
+        )
+        if not augmented_saturated:
+            raise AssertionError(
+                f"the declared primitive vector does not saturate {name}"
+            )
+        atlas.append(
+            QuarticCoxBoundaryLattice(
+                name=name,
+                boundary_basis=boundary_basis,
+                target_pullback_vectors=target_vectors,
+                affine_companion_class_sums=affine_classes,
+                canonical_class=canonical_class,
+                log_canonical_class=log_canonical_class,
+                target_lattice_rank=target_invariants.matrix_rank,
+                target_lattice_free_cokernel_rank=(
+                    target_invariants.picard_free_rank
+                ),
+                target_lattice_torsion=target_invariants.picard_torsion,
+                primitive_completion_vector=primitive_vector,
+                augmented_lattice_saturated=True,
+                coarse_unit_forced=False,
+                conductor_visible_in_class_group=False,
+                status="needs_primitive_ramification_character",
+            )
+        )
+    return tuple(atlas)
+
+
+def quartic_completed_deletion_atlas(
+) -> tuple[QuarticCompletedDeletionChart, ...]:
+    """Return the exact completed charts at the quartic packet loci.
+
+    For the clean cusp, the standard cubic block ``v=T^3+u*T`` gives
+
+    ``4*u^3+27*v^2=(u+3*T^2)^2*(4*u+3*T^2)``.
+
+    Thus ``r=u+3*T^2`` and ``ell=4*r-9*T^2`` have contact two.  At a
+    ``2+2`` connector there are two source points, and each completed
+    branch has the same order with a smooth companion ``ell`` of arbitrary
+    finite contact ``m>=1`` with ``r=0``.
+
+    The normalization and conductor are identical in the two rows.  Hence
+    completed conductor and dualizing data alone do not exclude their
+    simultaneous occurrence.  Their transition exponents also glue
+    consistently for every boundary line bundle.  The remaining
+    obstruction must use the two-generated degree-zero global-section
+    algebra and the global endpoint pairing.
+    """
+
+    common = {
+        "order_relation": "a*s^2-r^2*ell",
+        "normalization_generator": "z=r*ell/s=a*s/r",
+        "normalization_relations": (
+            "a*ell-z^2",
+            "a*s-r*z",
+            "s*z-r*ell",
+        ),
+        "transition_exponents": (
+            ("r", 1),
+            ("ell", -2),
+            ("z", -1),
+            ("s", 0),
+            ("a", 0),
+        ),
+        "conductor_generators": ("r", "s"),
+        "normalization_quotient": "O/(r,s)",
+        "dualizing_generators": ("r", "s"),
+        "source_open": "D(r)",
+        "source_special_fiber": "D(r) intersect V(s,ell,z)",
+        "endpoint_gorenstein": False,
+        "status": "locally_compatible_global_gluing_required",
+    }
+    return (
+        QuarticCompletedDeletionChart(
+            name="clean_3_plus_1_cusp",
+            local_copies=1,
+            companion_equation="ell=4*r-9*T^2",
+            contact_order=2,
+            **common,
+        ),
+        QuarticCompletedDeletionChart(
+            name="two_plus_two_connector",
+            local_copies=2,
+            companion_equation="ell=c*r+unit*T^m",
+            contact_order="m>=1",
+            **common,
+        ),
+    )
+
+
+def quartic_graded_boundary_bridge() -> QuarticGradedBoundaryBridge:
+    """Compress the deletion into its degree ``0,-1,-2`` modules.
+
+    With ``deg(s)=1``, ``deg(a)=-2``, and ``deg(z)=-1``, every degree-zero
+    monomial of the normalization reduces to the surface ring.  Locally
+    its first two negative pieces are generated by ``z`` and ``a``, with
+    square multiplication ``z^2=ell*a``.  On the canonical source
+    hypersurface the corresponding generators are ``a*s`` and ``a``, with
+    ``(a*s)^2=h*a``.  Thus the affine-companion curve is exactly the
+    cokernel divisor of the odd-square multiplication map.
+    """
+
+    return QuarticGradedBoundaryBridge(
+        normalization_degree_zero="B",
+        source_degree_zero="k[x,y]",
+        local_normalization_degree_minus_one="A0*z",
+        local_normalization_degree_minus_two="A0*a",
+        local_square_multiplier="ell",
+        local_square_cokernel="A0/(ell)",
+        source_degree_minus_one="k[x,y]*(a*s)",
+        source_degree_minus_two="k[x,y]*a",
+        source_square_multiplier="h",
+        source_square_cokernel="k[x,y]/(h)",
+        status="endpoint_divisor_is_remaining_global_interface",
     )
 
 
@@ -1173,6 +1441,12 @@ if __name__ == "__main__":
                 ),
             )
         ],
+        "quartic_completed_deletion_atlas": [
+            chart.as_dict() for chart in quartic_completed_deletion_atlas()
+        ],
+        "quartic_graded_boundary_bridge": (
+            quartic_graded_boundary_bridge().as_dict()
+        ),
         "first_free_depth_package": first_free_depth_package(),
     }
     print(json.dumps(report, indent=2, sort_keys=True))

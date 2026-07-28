@@ -349,8 +349,15 @@ The evidence must be kept at its proved strength.
 | all of \(V_2\) | first six moments have the full one-sided nullcone radical | exact over \(\mathbb Q\) |
 | all of \(V_3\) | \(\mu_1,\ldots,\mu_{13}\) are algebraically independent, but the degree-\(63\) Hilbert numerator coefficient is \(-2186\), so they cannot define the nullcone | exact over \(\mathbb Q\); an extra semistable zero component exists |
 | all of \(V_3\) | \(\mu_1,\ldots,\mu_{12},\mu_{14}\) have exact Jacobian rank thirteen and pass the necessary Hilbert numerator test through degree \(100\) | exact over \(\mathbb Q\); corrected zero fiber still open |
+| rank-one Segre cone \(\Sigma_3\subset V_3\) | moments \(1,2,3,4\) cut out exactly \(\Sigma_3\cap N_3\); every fixed coordinate multiplier has cutoff \(m>\deg Q\) | exact in characteristic zero |
+| rank-one Segre points in any \(V_d\) whose operator symbol has at most two roots | all pure moments force the one-sided nullcone, with mixed cutoff \(m>\deg Q\) | exact in characteristic zero via the one-variable Laurent constant-term theorem |
+| rank-one quartic \((2,1,1)\)-symbol orbit in \(V_4\) | moments \(1,\ldots,5\) cut out its three one-sided components; five nullcone generators have fourth-power certificates | exact over \(\mathbb Q\) |
+| complete rank-one Segre cone \(\Sigma_d\subset V_d\), every \(d\) | all pure moments imply eventual vanishing for every fixed coordinate-only multiplier by complete factor polarization and Laurent Newton separation | exact in characteristic zero; proves balanced GVC but not Segre moment--nullcone equality |
 | maximal-torus fixed diagonal slice in \(V_3\) | moments \(1,2,3,4\) have only the origin as a common zero, with seventh-power certificates for all four diagonal coefficients | exact over \(\mathbb Q\) |
 | full non-null \(F_2\) branch in \(V_3\) | after \(F_2=2XT\), five residual-torus chart orbits cover the non-diagonal locus; \(\mu_2,\ldots,\mu_{12}\) have exact Jacobian rank eleven on every representative chart | exact over \(\mathbb Q\); all five affine zero fibers remain open |
+| corrected non-null \(F_2\) chart systems in \(V_3\) | \(\mu_2\) eliminates the opposite-weight variable with a constant nonzero pivot on all five charts; on \(s_0=1\), reduced \(\mu_3\) gives two explicit principal-open pivots and the boundary where both vanish | exact over \(\mathbb Q\); the resulting smaller systems remain open |
+| sparse plane in the \(s_0=1,\ A=B=0\) boundary | after the \(\mu_2\) pivot, \(\mu_3=1866240a^3\) and \(\mu_4=138240(11249-8776ab-901a^2b^2)\), with an explicit unit certificate | exact over \(\mathbb Q\); this plane is excluded |
+| three \(s_0\)-chart pivot strata | \((\mu_2,\ldots,\mu_{12})\) has exact generic differential ranks \(11,10,9\) on \(A\ne0\), \(A=0,B\ne0\), and \(A=B=0\) | exact over \(\mathbb Q\); supports finite-quotient attacks |
 | pure \(\operatorname{Sym}^2,\operatorname{Sym}^4,\operatorname{Sym}^6\) in \(V_3\) | moments cut out the corresponding binary-form nullcones | exact over \(\mathbb Q\) |
 | \(\operatorname{Sym}^4\oplus\operatorname{Sym}^2\) in \(V_3\), with \(F_2=2cXT\) | moments through order six imply \(c^6=0\) | exact over \(\mathbb Q\) |
 | \(\operatorname{Sym}^6\oplus\operatorname{Sym}^2\) in \(V_3\), with \(F_2=2cXT\) | even moments through order fourteen imply \(c^{25}=0\) | only over \(\mathbb F_{32003}\) |
@@ -603,11 +610,53 @@ weights
 
 There are already \(246354\) residual-weight-zero monomials of degree at
 most thirteen, and the corrected system also contains order fourteen, so
-a raw expanded Gröbner calculation remains large. The weight grading is
-essential: use a sparse invariant-monomial or straight-line representation
-rather than first expanding in twelve ordinary variables. This slice is
-nevertheless substantially smaller and more structured than saturating
-the sixteen-coefficient ideal directly.
+a raw expanded Gröbner calculation remains large. Recorded 180-second
+runs with Singular and `msolve` do not close even \(s_0=1\), over
+\(\mathbb F_{101}\) or \(\mathbb F_{43}\). This is a bounded failure, not
+evidence for a component.
+
+The first triangular layer is now exact. On the five representative
+charts, \(\mu_2\) has constant nonzero derivatives
+
+\[
+ -72,\quad432,\quad-1080,\quad336,\quad-1344
+\]
+
+in the respective opposite variables \(s_6,s_5,s_4,t_4,t_3\).
+Consequently it eliminates that variable globally on each chart. On
+\(s_0=1\), the reduced third moment is
+
+\[
+ \mu_3=-103680\,A\,s_5-17280\,B\,t_4+C,
+\]
+
+with \(C\) independent of \(s_5,t_4\) and explicit polynomials \(A,B\)
+recorded in the bidegree-\((3,3)\) frontier. The chart therefore splits
+into \(A\ne0\), \(A=0,B\ne0\), and \(A=B=0\). The first two branches
+permit a second variable elimination; the third gains two boundary
+equations. This branchwise triangularization, rather than a raw basis, is
+the next attack.
+
+The first exact boundary piece is also closed. On the two-parameter plane
+
+\[
+t_0=a,\quad t_3=3a,\quad t_4=b,\quad
+s_6=(14ab+70)/3
+\]
+
+with \(s_0=1\) and the other higher coordinates zero, \(A=B=\mu_2=0\)
+identically, while \(\mu_3=1866240a^3\) and the normalized fourth moment
+has nonzero constant \(11249\) modulo \(a^3\). Hence
+\((\mu_3,\mu_4)=(1)\) on that plane. This validates the triangular
+strategy but does not describe the remaining common boundary.
+
+Exact rational points on all three pivot strata also show that the
+Jacobian of \(\mu_2,\ldots,\mu_{12}\) is invertible before restriction.
+Since \(dA,dB\) are independent, the restricted moment maps have maximal
+generic ranks \(11,10,9\). Consequently none of the three strata carries
+a representation-theoretically forced positive-dimensional moment fiber.
+The next algebraic target is the finite special fiber at the moment
+origin, not another generic-rank calculation.
 
 The outcomes have clear implications:
 
@@ -626,11 +675,14 @@ The outcomes have clear implications:
    in \(d\). A full raw Gröbner basis in sixteen coefficients remains the
    least informative route.
 
-For computation, the preferred order is: modular sparse elimination on
-the \(c=1\) slice to estimate feasibility and certificate degree; exact
-rational reconstruction of a unit certificate; then an independent exact
-reduction. A finite-field unit ideal is evidence only until the rational
-certificate is reconstructed.
+For computation, the preferred order is now: eliminate with \(\mu_2\);
+split and eliminate with \(\mu_3\); decompose the \(A=B=0\) boundary into
+covariant or coordinate strata; and represent the two principal opens
+without expanding high powers of the inverse pivot. Run modular sparse
+elimination only on those smaller systems, reconstruct any unit
+certificates over \(\mathbb Q\), then repeat the triangular step on the
+other four chart orbits. A finite-field unit ideal is evidence only until
+the rational certificate is reconstructed.
 
 ## 8. Claim boundary
 

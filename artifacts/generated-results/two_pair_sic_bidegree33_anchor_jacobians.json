@@ -1,5 +1,5 @@
 {
-  "format": "two-pair-sic-bidegree33-anchor-jacobians-v1",
+  "format": "two-pair-sic-bidegree33-anchor-jacobians-v3",
   "field": "characteristic zero",
   "normalized_quadratic": "2*X*T",
   "higher_components": "full Sym^6+Sym^4",
@@ -17,6 +17,134 @@
     "t4=1",
     "t3=1"
   ],
+  "exact_pivot_reduction": {
+    "normalized_second_moment": "-72*s0*s6 + 432*s1*s5 - 1080*s2*s4 + 720*s3**2 + 336*t0*t4 - 1344*t1*t3 + 1008*t2**2 + 1680",
+    "chart_pivots": [
+      {
+        "chart": "s0=1",
+        "eliminated_variable": "s6",
+        "constant_derivative": -72
+      },
+      {
+        "chart": "s1=1",
+        "eliminated_variable": "s5",
+        "constant_derivative": 432
+      },
+      {
+        "chart": "s2=1",
+        "eliminated_variable": "s4",
+        "constant_derivative": -1080
+      },
+      {
+        "chart": "t0=1",
+        "eliminated_variable": "t4",
+        "constant_derivative": 336
+      },
+      {
+        "chart": "t1=1",
+        "eliminated_variable": "t3",
+        "constant_derivative": -1344
+      }
+    ],
+    "conclusion": "mu_2 eliminates one opposite-weight variable with a nonzero constant pivot on every full anchor chart",
+    "s0_chart_next_split": {
+      "after_eliminating": "s6 with mu_2",
+      "mu_3_is_affine_in": [
+        "s5",
+        "t4"
+      ],
+      "s5_coefficient": "-622080*s1**2*t1 + 311040*s1*s2*t0 + 311040*s1*t2 + 311040*s2*t1 - 207360*s3*t0 + 311040*t0 - 103680*t3",
+      "t4_coefficient": "-207360*s1*s3 - 483840*s1*t0*t1 + 311040*s1 + 155520*s2**2 + 241920*s2*t0**2 + 51840*s4 + 34560*t0*t2 + 207360*t1**2",
+      "next_branches": "s5 coefficient nonzero; then t4 coefficient nonzero; then both coefficients zero"
+    }
+  },
+  "s0_sparse_boundary_slice": {
+    "slice": {
+      "s0": "1",
+      "s1,s2,s3,s4,s5,t1,t2": "0",
+      "t0": "a",
+      "t3": "3*a",
+      "t4": "b",
+      "s6": "(14*a*b+70)/3"
+    },
+    "boundary_conditions": "A=B=0 and mu_2=0 identically",
+    "mu_3": "1866240*a**3",
+    "mu_4": "-138240*(901*a**2*b**2 + 8776*a*b - 11249)",
+    "inverse_of_mu4_factor_mod_a3": "87153525*a**2*b**2/1423448471249 + 8776*a*b/126540001 + 1/11249",
+    "a3_certificate_coefficient": "78525326025*a*b**4/1423448471249 + 853807158224*b**3/1423448471249",
+    "conclusion": "mu_3 and mu_4 generate the unit ideal on this two-parameter sparse boundary slice"
+  },
+  "s0_stratum_jacobians": {
+    "certificates": [
+      {
+        "stratum": "A_nonzero",
+        "point": [
+          "1",
+          "0",
+          "2",
+          "0",
+          "0",
+          "2",
+          "3",
+          "-2",
+          "-1",
+          "3",
+          "-2",
+          "-2"
+        ],
+        "A": "10",
+        "B": "-148",
+        "full_chart_determinant": "1116330728353419539582684046362931672905294283807100727135710891517445846225078997805402078772860651616819902123659507631722734600167427378975396438349034098906838428789527002093668521770866714163643002415401391882240000000000000000000000000000000000000000000",
+        "full_chart_rank": 11,
+        "restricted_stratum_rank": 11
+      },
+      {
+        "stratum": "A_zero_B_nonzero",
+        "point": [
+          "1",
+          "0",
+          "0",
+          "-3",
+          "3",
+          "2",
+          "3",
+          "-2",
+          "1",
+          "2",
+          "-18",
+          "2"
+        ],
+        "A": "0",
+        "B": "-13",
+        "full_chart_determinant": "-212879202776960512727993585199680367815339877837517405031097220399963053838871804164675879772578800487580101374446767898171323744442052489073722844121504065194771709463222498370852242939945502449479404385917549335507335916185190400000000000000000000000000000000000000000000",
+        "full_chart_rank": 11,
+        "restricted_stratum_rank": 10
+      },
+      {
+        "stratum": "A_zero_B_zero",
+        "point": [
+          "1",
+          "0",
+          "2",
+          "0",
+          "-148/3",
+          "2",
+          "3",
+          "-2",
+          "-1",
+          "3",
+          "-12",
+          "-2"
+        ],
+        "A": "0",
+        "B": "0",
+        "full_chart_determinant": "-218389877924964152571700603606640676290679696912579344914672393702546973843923378837587440481042018546805192255841723974652819396093749195969183109946509620990937094161953311185211424551402285936284369769783829392519048960413216915847247342684078080000000000000000000000000000000000000000000",
+        "full_chart_rank": 11,
+        "restricted_stratum_rank": 9
+      }
+    ],
+    "conclusion": "moments 2 through 12 have maximal differential rank on each of the A-nonzero, A-zero B-nonzero, and A=B=0 strata"
+  },
   "certificates": [
     {
       "fixed_parameter": "s0",

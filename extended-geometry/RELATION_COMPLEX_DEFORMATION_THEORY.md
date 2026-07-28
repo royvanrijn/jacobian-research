@@ -567,7 +567,9 @@ The primary repository inputs are:
   braid](RITT_MOVE_2_COMPLEX.md);
 * [general Hessian--Ritt intersections](GENERAL_HESSIAN_RITT_INTERSECTIONS.md);
 * [filtered rank-two Kuranishi
-  calculations](RANK_TWO_FILTERED_QUANTIZATION_OBSTRUCTION.md); and
+  calculations](RANK_TWO_FILTERED_QUANTIZATION_OBSTRUCTION.md);
+* [the unified gauge--correction--defect linear
+  complex](UNIFIED_DEFORMATION_COMPLEX.md); and
 * [defect-symbol and apolarity
   package](DEFECT_SYMBOL_APOLARITY.md).
 

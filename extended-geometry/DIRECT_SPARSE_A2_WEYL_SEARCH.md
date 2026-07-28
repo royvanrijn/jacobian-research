@@ -161,9 +161,17 @@ integer-relation check, bounded ambient-generation result, exponent matrix
 of the four top symbols, and, in prime characteristic, its \(p\)-th-power
 center images and bounded center-generation result.
 
-## Next finite search
+## Secondary control search
 
-The next useful enlargement is not a higher coefficient alphabet.  It is:
+This direct PBW branch is now a control calculation, not the primary
+rank-two strategy.  The primary branch uses the exact Ore/Darboux
+localization, quantizes the marked-root incidence family before
+specializing its classical symbol, solves the Hamiltonian connection, and
+treats polynomiality as boundary saturation and conductor descent.  See
+[the unified deformation complex](UNIFIED_DEFORMATION_COMPLEX.md#6-incidence-first-rank-two-quantization).
+
+If the direct finite search is enlarged, the useful enlargement is not a
+higher coefficient alphabet.  It is:
 
 1. allow two PBW correction monomials per image at Bernstein degree at most
    three;
@@ -177,4 +185,6 @@ The next useful enlargement is not a higher coefficient alphabet.  It is:
 
 This targets genuinely nonhomogeneous Weyl behavior while preventing
 small-characteristic Frobenius families such as (5) from dominating the
-search.
+search.  Cross-prime rank agreement is only a discovery screen; reconstructed
+components still require exact characteristic-zero equations and
+saturation certificates.

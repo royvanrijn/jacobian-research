@@ -88,7 +88,12 @@ already excluded on the \(\operatorname{Sym}^4\oplus\operatorname{Sym}^2\)
 branch by an exact \(c^6\) membership.  On the
 \(\operatorname{Sym}^6\oplus\operatorname{Sym}^2\) branch,
 \(c^{25}\) membership through moment \(14\) is currently finite-field
-evidence only. The continuation is now the
+evidence only.  On the full non-null quadratic branch, residual torus and
+Weyl symmetry
+reduce the non-diagonal locus to five affine chart orbits, and exact
+eleven-by-eleven Jacobian determinants prove that moments \(2,\ldots,12\)
+are dimension-sized on every chart.  Their common zero fibers remain open.
+The continuation is now the
 [all-degree moment--nullcone program](extended-geometry/TWO_PAIR_SIC_MOMENT_NULLCONE_PROGRAM.md):
 in
 \(\operatorname{End}(\operatorname{Sym}^d)
@@ -109,7 +114,49 @@ thirteen while passing the necessary Hilbert test through degree \(100\).
 Whether this corrected zero fiber is precisely the nullcone remains open.
 The global quadratic discriminant is explicit, and moments
 \(1,\ldots,4\) have only the origin on the complete maximal-torus fixed
-diagonal slice.
+diagonal slice. On every residual-torus chart of the non-null quadratic
+branch, \(\mu_2\) now eliminates an opposite-weight variable with a
+constant nonzero pivot. On \(s_0=1\), the reduced \(\mu_3\) supplies two
+further principal-open pivots and an explicit common boundary, replacing
+the failed raw Gröbner attack by a branchwise triangular one. A natural
+two-parameter plane in that common boundary is now excluded exactly:
+\(\mu_3\) is a nonzero multiple of \(a^3\), while the normalized
+\(\mu_4\) is a unit modulo \(a^3\). Exact rational Jacobian certificates
+also give maximal restricted ranks \(11,10,9\) on the three pivot strata,
+so the remaining obstruction is the special zero fiber rather than a
+generic rank defect.
+For homogeneous two-variable GVC, the same representation theory restricts
+to the rank-one Segre cone \(A\otimes P\): its moments are exactly
+\(\Lambda^m(P^m)\).  The
+[balanced cubic theorem](extended-geometry/TWO_VARIABLE_CUBIC_GVC_THEOREM.md)
+classifies the triple-root, double-root, and squarefree binary-cubic symbol
+orbits and proves that the first four moments force the Segre nullcone,
+with mixed cutoff \(m>\deg Q\).  Hence the extra semistable component of
+the full \((3,3)\) zero fiber misses the Segre cone; this initially moved
+the first open balanced separable degree to four.  The
+[low-root binary-symbol theorems](extended-geometry/TWO_VARIABLE_LOW_ROOT_GVC_THEOREMS.md)
+prove every degree when the operator symbol has at most two distinct roots
+and close the quartic \((2,1,1)\) orbit by moments through order five and
+five fourth-power nullcone certificates.  The
+[split-symbol theorem](extended-geometry/SPLIT_SYMBOL_GVC_THEOREM.md)
+then closes the balanced homogeneous GVC conclusion in every degree:
+factor the binary symbol completely, polarize its directional derivatives,
+and apply Laurent Newton separation.  The same defect bound allows every
+nonhomogeneous \(P\) with degree at most the homogeneous operator order.
+This does not prove the full SIC nullcone equality; the remaining
+separable GVC frontier requires a nonhomogeneous operator or polynomial
+degree greater than the operator order.  The
+[low-dimensional GVC program](extended-geometry/TWO_VARIABLE_GVC_REPRESENTATION_PROGRAM.md)
+also records the separate ordinary-Laplacian route: quadraticize the
+factored third-order Dvorsky symbol by a nonlinear polarization, minimizing
+the auxiliary block rank with Schur methods rather than accepting a generic
+dimension doubling.  The
+[one-pair Schur obstruction](extended-geometry/DVORSKY_ONE_PAIR_SCHUR_OBSTRUCTION.md)
+now excludes every degree-preserving six-variable cubic lift that recovers
+the Dvorsky polynomial on the new coordinate hyperplane: after imposing
+the first Laplacian moment, the second has unavoidable \(t^2\)-coefficient
+\(12\).  The grading also excludes repairs using only terms above degree
+three.  No new GVC endpoint is claimed.
 The [lower-face prime theorem](extended-geometry/TWO_REAL_GMC_LOWER_FACE_THEOREM.md)
 proves GMC in two real variables, completing the classification:
 `GMC(n)` holds exactly for `n<=2`.  The former
@@ -246,13 +293,26 @@ degree-`N` presentations.  The construction gives an atlas triangle over
 `BS_N`, not a choice-free section: in ranks at least five, stable
 quadratic-gauge invariants obstruct descent through full Tschirnhaus
 equivalence.  Any field-versal Keller parameter scheme is separately bounded
-below by `ed(S_N)`.  In degree five, promoting the two relative parameters
-to unchanged coordinates gives one explicit determinant-one map of
-`A^5_Q` whose complete fibers realize every quintic finite-etale algebra.
-The same coefficient compiler lifts arbitrary rational quintic families
-without changing their splitting fields; in particular, the five displayed
-two-parameter generic polynomials give explicit fiber-parametric target
-surfaces for every transitive quintic group inside this one fixed map.
+below by `ed(S_N)`.  Promoting all `N-3` relative parameters to unchanged
+coordinates gives, for every `N>=3`, one explicit determinant-one map of
+`A^N_Q` whose complete fibers realize every rank-`N` finite-etale algebra
+after arbitrary characteristic-zero base change.  Its generic monodromy is
+`S_N`, so primitive-monodromy atomicity makes it absolutely and stably
+atomic.  The
+[adversarial audit](verified/UNIVERSAL_ATOMIC_MAP_ADVERSARIAL_AUDIT.md)
+tests every logical gate, supplies connected, split, and product witness
+cards, and records the exact failure boundaries.  Lean now formalizes the
+unchanged-parameter coefficient compiler, its normalized-translation
+identity and quotient-algebra realization, three quartic cards, and the
+literal promoted map on an `N`-element coordinate type together with its
+actual full Jacobian block and determinant-one identity.  The literal
+full-fiber/compiler bridge, geometric degree, monodromy, and atomicity remain
+theorem-level.  In degree
+five, the same coefficient
+compiler lifts arbitrary rational quintic families without changing their
+splitting fields; in particular, the five displayed two-parameter generic
+polynomials give explicit fiber-parametric target surfaces for every
+transitive quintic group inside this one fixed map.
 The [parametric inverse-Galois audit](PARAMETRIC_INVERSE_GALOIS_KELLER.md)
 separates this one-map theorem from one-parameter `G`-parametricity and from
 the still-open universality of the fixed split-seed map of `A^3`.
@@ -555,7 +615,16 @@ keeps the inverse quotient fixed at `P=1` while its canonical boundary gains
 replaces every `g_jP^jS^j`, for `j>=4`, by
 `g_jP^(j+m)S^j`.  This is invisible on the fixed fiber `P=1`, while the
 normalized ramified Fitting Newton polygon has stable normalized area
-`2N-3+(N-2)m`.  The quartic
+`2N-3+(N-2)m`.  In fact, the
+[whole-plane stable-multiplicity theorem](verified/WHOLE_PLANE_STABLE_MULTIPLICITY.md)
+shows that both the cubic lifts and all higher power shifts agree as maps on
+the full source divisor `P=1`.  They therefore share the entire finite-etale
+inverse cover over the squarefree open of the two-dimensional target plane,
+in every geometric degree `N>=3`.  Exponents in one residue class modulo
+`d` give the cyclotomic strengthening over `P^d=1`.  In degree five the same
+inequivalent maps carry the identical Zariski-dense multiplicative family of
+degree-optimal Hasse failures, with the same
+`B/sqrt(log B)` target asymptotic.  The quartic
 [first case](verified/UNIVERSAL_QUARTIC_GAUGE_MULTIPLICITY.md)
 has lattice index `2m+5`.  The earlier
 [weighted trace-chord normalization](verified/UNIVERSAL_QUARTIC_FIBER_MULTIPLICITY.md)

@@ -22,8 +22,11 @@ from plane_boundary_exclusion import (
     one_puncture_budget,
     orevkov_multiplicity_budget,
     puncture_profile_budgets,
+    quartic_completed_deletion_atlas,
+    quartic_cox_boundary_lattice_atlas,
     quartic_cusp_braid_monodromy_audit,
     quartic_cusp_with_self_collision_monodromy_audit,
+    quartic_graded_boundary_bridge,
     quartic_one_boundary_euler_defect,
     quartic_orevkov_packet_atlas,
     two_puncture_budgets,
@@ -55,6 +58,195 @@ assert all(packet.status == "survives_global_budget" for packet in quartic_packe
 assert quartic_packets[0].forced_clean_special_fiber == (3, 1)
 assert quartic_packets[0].allowed_coincident_boundary_fiber == (2, 2)
 assert quartic_packets[1].component_generic_multiplicities == (2, 1)
+
+# The free missing-boundary basis turns the three possible target groupings
+# into exact Cox exponent lattices.  Target pullbacks alone have either a
+# free rank defect or index-two torsion.  In every row the single primitive
+# character needed to saturate the lattice is the ramified boundary E.
+quartic_cox_atlas = quartic_cox_boundary_lattice_atlas()
+assert tuple(row.name for row in quartic_cox_atlas) == (
+    "one_boundary",
+    "two_boundaries_same_target",
+    "two_boundaries_different_targets",
+)
+assert tuple(row.target_lattice_rank for row in quartic_cox_atlas) == (
+    1,
+    1,
+    2,
+)
+assert tuple(
+    row.target_lattice_free_cokernel_rank for row in quartic_cox_atlas
+) == (0, 1, 0)
+assert tuple(row.target_lattice_torsion for row in quartic_cox_atlas) == (
+    (2,),
+    (),
+    (2,),
+)
+assert all(
+    row.primitive_completion_vector
+    == (1,) + (0,) * (len(row.boundary_basis) - 1)
+    for row in quartic_cox_atlas
+)
+assert all(row.augmented_lattice_saturated for row in quartic_cox_atlas)
+assert all(
+    tuple(
+        target[index] + affine[index]
+        for index in range(len(row.boundary_basis))
+    )
+    == (0,) * len(row.boundary_basis)
+    for row in quartic_cox_atlas
+    for target, affine in zip(
+        row.target_pullback_vectors,
+        row.affine_companion_class_sums,
+    )
+)
+assert all(
+    row.canonical_class
+    == row.primitive_completion_vector
+    for row in quartic_cox_atlas
+)
+assert all(not row.coarse_unit_forced for row in quartic_cox_atlas)
+assert all(
+    not row.conductor_visible_in_class_group
+    for row in quartic_cox_atlas
+)
+
+# The canonical threefold order has the same completed normalization at the
+# clean cusp and at each branch of a 2+2 connector.  The cusp factorization
+# records contact two between the ramification divisor and its affine
+# companion.
+T, u, v, r, ell, s, a, z, w, h = sp.symbols(
+    "T u v r ell s a z w h"
+)
+cubic_discriminant_pullback = sp.expand(
+    (4 * u**3 + 27 * v**2).subs(v, T**3 + u * T)
+)
+assert sp.factor(cubic_discriminant_pullback) == (
+    (u + 3 * T**2) ** 2 * (4 * u + 3 * T**2)
+)
+assert sp.expand(
+    cubic_discriminant_pullback.subs(u, r - 3 * T**2)
+    - r**2 * (4 * r - 9 * T**2)
+) == 0
+
+completed_deletion_atlas = quartic_completed_deletion_atlas()
+assert tuple(chart.name for chart in completed_deletion_atlas) == (
+    "clean_3_plus_1_cusp",
+    "two_plus_two_connector",
+)
+assert tuple(chart.local_copies for chart in completed_deletion_atlas) == (
+    1,
+    2,
+)
+assert tuple(chart.contact_order for chart in completed_deletion_atlas) == (
+    2,
+    "m>=1",
+)
+assert all(
+    chart.conductor_generators == ("r", "s")
+    and chart.dualizing_generators == ("r", "s")
+    and chart.source_open == "D(r)"
+    and not chart.endpoint_gorenstein
+    and chart.status == "locally_compatible_global_gluing_required"
+    for chart in completed_deletion_atlas
+)
+assert all(
+    dict(chart.transition_exponents)
+    == {"r": 1, "ell": -2, "z": -1, "s": 0, "a": 0}
+    for chart in completed_deletion_atlas
+)
+transition_weights = dict(
+    completed_deletion_atlas[0].transition_exponents
+)
+assert 2 * transition_weights["r"] + transition_weights["ell"] == 0
+assert (
+    transition_weights["r"] + transition_weights["ell"]
+    == transition_weights["z"]
+)
+assert 2 * transition_weights["z"] == transition_weights["ell"]
+
+# The threefold normalization adds no degree-zero functions.  Its first
+# negative piece squares into the second with multiplier ell; after passing
+# to the canonical A2 source bridge, the same map has multiplier h.  Hence
+# the affine companion is exactly the square-map cokernel divisor.
+graded_bridge = quartic_graded_boundary_bridge()
+assert graded_bridge.normalization_degree_zero == "B"
+assert graded_bridge.source_degree_zero == "k[x,y]"
+assert graded_bridge.local_normalization_degree_minus_one == "A0*z"
+assert graded_bridge.local_normalization_degree_minus_two == "A0*a"
+assert graded_bridge.local_square_cokernel == "A0/(ell)"
+assert graded_bridge.source_degree_minus_one == "k[x,y]*(a*s)"
+assert graded_bridge.source_degree_minus_two == "k[x,y]*a"
+assert graded_bridge.source_square_cokernel == "k[x,y]/(h)"
+assert (
+    graded_bridge.status
+    == "endpoint_divisor_is_remaining_global_interface"
+)
+
+degree = {s: 1, a: -2, z: -1}
+assert 2 * degree[z] == degree[a]
+assert degree[a] + 2 * degree[s] == 0
+assert sp.expand(((a * s) ** 2 - a * h).subs(h, a * s**2)) == 0
+
+# The three displayed equations are the 2x2 minors of
+# [[a,z,r],[z,ell,s]].  They recover the original hypersurface equation,
+# and the ell-chart is the regular normalization chart
+# r=s*w, z=ell*w, a=ell*w^2.
+normalization_relations = (
+    a * ell - z**2,
+    a * s - r * z,
+    s * z - r * ell,
+)
+assert sp.expand(
+    s * normalization_relations[1] + r * normalization_relations[2]
+) == a * s**2 - r**2 * ell
+assert all(
+    sp.expand(
+        relation.subs({r: s * w, z: ell * w, a: ell * w**2})
+    )
+    == 0
+    for relation in normalization_relations
+)
+
+# Bounded exact reductions illustrate the all-degree identity
+# a^j*z^k*s^(2j+k)=(r^2*ell)^j*(r*ell)^k used to prove N_0=A0.
+normalization_groebner = sp.groebner(
+    normalization_relations,
+    z,
+    a,
+    s,
+    ell,
+    r,
+    order="grevlex",
+)
+for a_power in range(4):
+    for z_power in range(4):
+        degree_zero_monomial = (
+            a**a_power
+            * z**z_power
+            * s ** (2 * a_power + z_power)
+        )
+        surface_reduction = (
+            (r**2 * ell) ** a_power
+            * (r * ell) ** z_power
+        )
+        assert normalization_groebner.reduce(
+            degree_zero_monomial - surface_reduction
+        )[1] == 0
+
+# Modulo s, the order ideal is the monomial ideal (s,r^2*ell).
+# Its exact monomial quotient by r*ell is (s,r), the conductor.  Since the
+# normalization is O+O*z, this also gives N/O=O/(r,s).
+order_ideal_exponents = ((0, 0, 1), (2, 1, 0))
+normalization_numerator_exponent = (1, 1, 0)
+colon_exponents = tuple(
+    tuple(
+        max(generator[index] - normalization_numerator_exponent[index], 0)
+        for index in range(3)
+    )
+    for generator in order_ideal_exponents
+)
+assert colon_exponents == ((0, 0, 1), (1, 0, 0))
 
 # If the clean one-boundary row has no 2+2 self-collision, its sole singular
 # image is the ordinary cusp.  The complement group is B_3.  Every pair of
@@ -544,6 +736,9 @@ assert any("ramification" in reason for reason in case2_preview.reasons)
 print("PASS: one-puncture residue immersion forces degree one")
 print("PASS: Orevkov's Euler budget excludes the clean cubic cusp")
 print("PASS: Orevkov's quartic budget has exactly two global packets")
+print("PASS: every quartic Cox ledger needs only the primitive E character")
+print("PASS: quartic completed deletion charts have conductor (r,s)")
+print("PASS: the odd-square cokernel is the affine companion divisor")
 print("PASS: a lone quartic cusp cannot connect the spectator sheet")
 print("PASS: one quartic 2+2 collision generates full S4 monodromy")
 print("PASS: quartic 2+2 self-collisions are Euler-neutral")
