@@ -57,6 +57,9 @@ def main() -> None:
     hessian_rank_35_slice = load(
         "hessian_rank_35_identity_slice_counterexample.json"
     )
+    hessian_rank_34_slice = load(
+        "hessian_rank_34_double_identity_slice_counterexample.json"
+    )
 
     assert cubic["dimension"] == 21
     assert image_20["source_dimension"] == 20
@@ -93,6 +96,12 @@ def main() -> None:
     assert hessian_rank_35_slice["HN_potential"]["degrees"] == [2, 3, 4]
     assert (
         hessian_rank_35_slice["HN_potential"]["generic_hessian_rank"] == 35
+    )
+    assert hessian_rank_34_slice["slice_dimension"] == 20
+    assert hessian_rank_34_slice["HN_potential"]["dimension"] == 40
+    assert hessian_rank_34_slice["HN_potential"]["degrees"] == [2, 3, 4]
+    assert (
+        hessian_rank_34_slice["HN_potential"]["generic_hessian_rank"] == 34
     )
 
     frontiers = restricted["rigorous_frontiers"]
@@ -225,11 +234,11 @@ def main() -> None:
                 "artifact": "image_vanishing_counterexamples_21_42.json",
             },
             "nonhomogeneous_HN_degree_at_most_4_rank": {
-                "dimension": 42,
-                "generic_hessian_rank": 35,
+                "dimension": 40,
+                "generic_hessian_rank": 34,
                 "degrees": [2, 3, 4],
                 "artifact": (
-                    "hessian_rank_35_identity_slice_counterexample.json"
+                    "hessian_rank_34_double_identity_slice_counterexample.json"
                 ),
                 "scope_warning": (
                     "this does not change the homogeneous quartic HN "
@@ -257,7 +266,7 @@ def main() -> None:
     print("PASS scoreboard: cubic dimension/rank/index intervals are [5,21] / [3,17] / [3,18]")
     print("PASS scoreboard: cotangent Hessian-rank interval is [6,37]")
     print("PASS scoreboard: unrestricted quartic Hessian-rank interval is [3,37]")
-    print("PASS scoreboard: nonhomogeneous degree-at-most-4 HN witness has rank 35")
+    print("PASS scoreboard: nonhomogeneous degree-at-most-4 HN witness has rank 34")
     print("PASS scoreboard: Druzkowski dimension interval is [6,451]")
     print(f"PASS scoreboard: wrote {OUTPUT.relative_to(ROOT)}")
 

@@ -450,11 +450,13 @@ Vanishing witness.  Homogenizing while preserving the ordinary nondegenerate
 Laplacian still uses the 42-variable quartic of Section 5 in this
 construction.
 
-A different identity slice optimizes rank rather than dimension.  Slicing
-the 22-variable `qb+x2s` circuit source gives a 42-variable nonhomogeneous HN
-witness of exact Hessian rank 35.  Its construction and characteristic-zero
-syzygy certificate are in
-[`HESSIAN_RANK_35_IDENTITY_SLICE.md`](HESSIAN_RANK_35_IDENTITY_SLICE.md).
+A different pair of identity slices optimizes rank.  Slicing the 22-variable
+`qb+x2s` circuit source first gives rank 35 in 42 variables.  Its constant
+kernel exposes a second identity output; restricting that hyperplane gives a
+40-variable nonhomogeneous HN witness of exact Hessian rank 34 and cotangent
+kernel excess zero.  The construction and characteristic-zero syzygy
+certificate are in
+[`HESSIAN_RANK_34_DOUBLE_IDENTITY_SLICE.md`](HESSIAN_RANK_34_DOUBLE_IDENTITY_SLICE.md).
 The polynomial again has degrees two through four, so this rank improvement
 does not lower the homogeneous quartic rank-37 or dimension-42 frontiers.
 

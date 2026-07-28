@@ -16,6 +16,7 @@ import FiniteEtaleKeller.GeneralGaugeRawFiber
 import FiniteEtaleKeller.GeneralGaugeNormalization
 import FiniteEtaleKeller.GeneralGaugeRealization
 import FiniteEtaleKeller.GeneralGaugeRealizationDegree
+import FiniteEtaleKeller.StableGaugeFiber
 import FiniteEtaleKeller.GeneralGaugeBaseChange
 import FiniteEtaleKeller.GeneralGaugeFiberRank
 import FiniteEtaleKeller.PageOneTheorem

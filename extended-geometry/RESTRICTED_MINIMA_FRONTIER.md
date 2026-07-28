@@ -75,11 +75,12 @@ explicit stable-normal-form construction.  The lower bound \(3\) for
 cotangent lifts would discard the block-rank identity above.
 
 There is also a smaller exact rank in a different, nonhomogeneous class.
-Slicing the identity coordinate of the rank-37 source at one gives a
-42-variable HN polynomial of degrees two through four and exact Hessian rank
-35.  This does not change either homogeneous-quartic interval in the table.
-The construction and scope separation are in
-[`HESSIAN_RANK_35_IDENTITY_SLICE.md`](HESSIAN_RANK_35_IDENTITY_SLICE.md).
+The first identity slice of the rank-37 source gives rank 35 in 42 variables.
+Its constant Hessian-kernel direction is a second output identity; slicing it
+gives a 40-variable HN polynomial of degrees two through four and exact
+Hessian rank 34.  This does not change either homogeneous-quartic interval in
+the table.  The final construction and scope separation are in
+[`HESSIAN_RANK_34_DOUBLE_IDENTITY_SLICE.md`](HESSIAN_RANK_34_DOUBLE_IDENTITY_SLICE.md).
 
 These are intervals for exact minima, not claims that an endpoint is sharp.
 The machine-readable ledger is
@@ -444,6 +445,19 @@ Thus rank 17 and excess one already coexist after homogeneity is dropped.
 The remaining homogeneous construction problem is precisely to retain that
 profile without the homogenizing direction raising the Jacobian rank from
 17 to 18.
+
+The excess-one direction is in fact the linear output relation
+\(K_9-3K_1-K_6=0\).  Restricting its identity hyperplane produces a
+20-variable map of rank 17 whose cotangent kernel excess is zero:
+
+\[
+ \operatorname{rank}\operatorname{Hess}(y^TL)=34
+ =2\operatorname{rank}JL.
+\]
+
+The resulting 40-variable nonhomogeneous HN witness has no constant Hessian
+kernel.  This closes linear identity-output compression for that potential,
+but is not a lower bound against nonlinear or different constructions.
 
 ## 5. Parked exact questions
 

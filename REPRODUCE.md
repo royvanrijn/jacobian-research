@@ -1469,6 +1469,10 @@ python3 scripts/audit_rank_reduced_bcw_24_independent.py
 python3 scripts/audit_hessian_rank_reduced_bcw_22_independent.py
 .venv/bin/python scripts/verify_hessian_rank_35_identity_slice.py
 python3 scripts/audit_hessian_rank_35_identity_slice_independent.py
+.venv/bin/python scripts/search_identity_slice_hessian_rank.py
+.venv/bin/python scripts/search_identity_slice_local_perturbations.py
+.venv/bin/python scripts/verify_hessian_rank_34_double_identity_slice.py
+python3 scripts/audit_hessian_rank_34_double_identity_slice_independent.py
 .venv/bin/python scripts/verify_index_three_inverse_model.py
 .venv/bin/python scripts/verify_index_three_degree_bound_counterexample.py
 .venv/bin/python scripts/derive_index_three_tree_obstruction.py
@@ -2471,8 +2475,8 @@ minimal-gauge JSON proof object and a Lean specialization of the formal
 algebra-to-Keller theorem.  Two further JSON objects certify the same
 ramified quintic in the power-shift family at `m=2` and the connected cubic
 `T^3-T-1` in the cubic family at `n=7`.  Replay all three maps with two
-independent arithmetic implementations and check the generated minimal-gauge
-Lean file with:
+independent arithmetic implementations and check all three generated Lean
+specializations with:
 
 ```bash
 python3 scripts/verify_arithmetic_keller_certificate.py
@@ -2487,6 +2491,8 @@ ARITHMETIC_CERTIFICATE=artifacts/generated-results/arithmetic_keller_cubic_stabl
   gp -q -f scripts/verify_arithmetic_keller_certificate.gp
 cd formal/finite-etale-keller
 lake env lean FiniteEtaleKeller/GeneratedArithmeticQuintic.lean
+lake env lean FiniteEtaleKeller/GeneratedArithmeticQuinticStableM2.lean
+lake env lean FiniteEtaleKeller/GeneratedArithmeticCubicStableN7.lean
 ```
 
 From the repository root, the combined non-mutating command is:
@@ -2501,10 +2507,13 @@ Intentional regeneration is separate:
 .venv/bin/python scripts/compile_arithmetic_keller_certificate.py
 .venv/bin/python scripts/compile_arithmetic_keller_certificate.py \
   --stable-parameter 2 \
-  --certificate artifacts/generated-results/arithmetic_keller_quintic_stable_m2.json
+  --certificate artifacts/generated-results/arithmetic_keller_quintic_stable_m2.json \
+  --lean-module FiniteEtaleKeller.GeneratedArithmeticQuinticStableM2 \
+  --lean formal/finite-etale-keller/FiniteEtaleKeller/GeneratedArithmeticQuinticStableM2.lean
 .venv/bin/python scripts/compile_arithmetic_keller_certificate.py \
   --spec arithmetic/specifications/connected_cubic_stable_n7.json \
-  --certificate artifacts/generated-results/arithmetic_keller_cubic_stable_n7.json
+  --certificate artifacts/generated-results/arithmetic_keller_cubic_stable_n7.json \
+  --lean formal/finite-etale-keller/FiniteEtaleKeller/GeneratedArithmeticCubicStableN7.lean
 ```
 
 The format and exact claim boundary are documented in

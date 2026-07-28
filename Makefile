@@ -76,11 +76,13 @@ verify-arithmetic-compilation:
 	$(SYSTEM_PYTHON) scripts/verify_arithmetic_keller_certificate.py artifacts/generated-results/arithmetic_keller_cubic_stable_n7.json
 	ARITHMETIC_CERTIFICATE=artifacts/generated-results/arithmetic_keller_cubic_stable_n7.json gp -q -f scripts/verify_arithmetic_keller_certificate.gp
 	cd formal/finite-etale-keller && lake env lean FiniteEtaleKeller/GeneratedArithmeticQuintic.lean
+	cd formal/finite-etale-keller && lake env lean FiniteEtaleKeller/GeneratedArithmeticQuinticStableM2.lean
+	cd formal/finite-etale-keller && lake env lean FiniteEtaleKeller/GeneratedArithmeticCubicStableN7.lean
 
 refresh-arithmetic-compilation:
 	$(PYTHON) scripts/compile_arithmetic_keller_certificate.py
-	$(PYTHON) scripts/compile_arithmetic_keller_certificate.py --stable-parameter 2 --certificate artifacts/generated-results/arithmetic_keller_quintic_stable_m2.json
-	$(PYTHON) scripts/compile_arithmetic_keller_certificate.py --spec arithmetic/specifications/connected_cubic_stable_n7.json --certificate artifacts/generated-results/arithmetic_keller_cubic_stable_n7.json
+	$(PYTHON) scripts/compile_arithmetic_keller_certificate.py --stable-parameter 2 --certificate artifacts/generated-results/arithmetic_keller_quintic_stable_m2.json --lean-module FiniteEtaleKeller.GeneratedArithmeticQuinticStableM2 --lean formal/finite-etale-keller/FiniteEtaleKeller/GeneratedArithmeticQuinticStableM2.lean
+	$(PYTHON) scripts/compile_arithmetic_keller_certificate.py --spec arithmetic/specifications/connected_cubic_stable_n7.json --certificate artifacts/generated-results/arithmetic_keller_cubic_stable_n7.json --lean formal/finite-etale-keller/FiniteEtaleKeller/GeneratedArithmeticCubicStableN7.lean
 
 render-status:
 	$(SYSTEM_PYTHON) scripts/render_status.py

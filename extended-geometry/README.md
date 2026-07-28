@@ -81,6 +81,7 @@ recorded separately only in
 | Repository counterexample scoreboard | [Repository-certified ambient-dimension, rank, nilpotency-index, and exact degree frontiers; no literature-wide record claim](MINIMAL_COUNTEREXAMPLE_SCOREBOARD.md) |
 | Restricted cubic/HN minima frontier | [Exact intervals, the circuit-level rank-17 and index-18 cubic witnesses, the rank-37 homogeneous quartic HN witness, and rank/dimension questions](RESTRICTED_MINIMA_FRONTIER.md) |
 | Rank-35 nonhomogeneous HN identity slice | [Exact 21-variable slice rank 17, 42-variable Hessian rank 35, HN/Vanishing failure, and separation from the homogeneous quartic frontier](HESSIAN_RANK_35_IDENTITY_SLICE.md) |
+| Rank-34 double identity slice | [The output relation `K_9-3K_1-K_6=0`, exact 20-variable Jacobian rank 17, zero cotangent kernel excess, and a 40-variable nonhomogeneous HN witness of Hessian rank 34](HESSIAN_RANK_34_DOUBLE_IDENTITY_SLICE.md) |
 | Restricted-minima attack program | [Coupled index/rank strategy, rank-three kernel bundle, cotangent kernel excess, and direct dimension-six HN program](RESTRICTED_MINIMA_ATTACK_PROGRAM.md) |
 | Fixed-dimensional `GMC(2r) -> SIC(r) ->` cubic-Keller invertibility route | [Gaussian contraction, countable-union lemma, and formal inversion](FIXED_GMC_SIC_PROOF.md) |
 | Direct Image and Vanishing consequences | [Logical disproofs separated from repository dimension/rank incumbents and from the novelty of the explicit 20/40/42 witnesses](IMAGE_VANISHING_COUNTEREXAMPLES.md) |

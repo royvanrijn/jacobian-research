@@ -490,6 +490,25 @@ def render_lean_instantiation(
         Fraction(1, primitive_denominator)
     )
     bezout_coefficient = _lean_rational(Fraction(1, bezout_denominator))
+    if int(certificate["degree"]) == 3:
+        degree_tactic = (
+            "compute_degree! <;> simp [Polynomial.coeff_one]"
+        )
+        bezout_numeral_tactic = "simp only [Polynomial.C_ofNat]"
+        cubic_nonzero_tactic = (
+            "norm_num [compiledPolynomial, primitivePolynomial, "
+            "Polynomial.coeff_X,\n    Polynomial.coeff_one]"
+        )
+    else:
+        degree_tactic = "compute_degree!"
+        bezout_numeral_tactic = (
+            "rw [Polynomial.C_ofNat 2, Polynomial.C_ofNat 3, "
+            "Polynomial.C_ofNat 4]"
+        )
+        cubic_nonzero_tactic = (
+            "norm_num [compiledPolynomial, primitivePolynomial, "
+            "Polynomial.coeff_X]"
+        )
     stable_record = certificate["keller_map"].get("stable_multiplicity")
     if stable_record is None:
         extra_import = ""
@@ -535,6 +554,7 @@ theorem compiledAutomaticPageOne :
             seed_degree_block = """\
 
 theorem compiledSeed_natDegree : compiledSeed.natDegree = 3 := by
+  unfold compiledSeed
   rw [realizationSeed_natDegree compiledPolynomial selectedTranslation]
   · exact compiledPolynomial_natDegree
   · rw [compiledPolynomial_natDegree]
@@ -608,7 +628,7 @@ def compiledPolynomial : Polynomial ℚ :=
 theorem compiledPolynomial_natDegree :
     compiledPolynomial.natDegree = {certificate["degree"]} := by
   unfold compiledPolynomial primitivePolynomial
-  compute_degree!
+  {degree_tactic}
 
 def bezoutUInt : Polynomial ℚ :=
   {u_expression}
@@ -622,7 +642,7 @@ theorem primitive_bezout :
         ({bezout_denominator} : Polynomial ℚ) := by
   unfold bezoutUInt bezoutVInt primitivePolynomial
   simp
-  rw [Polynomial.C_ofNat 2, Polynomial.C_ofNat 3, Polynomial.C_ofNat 4]
+  {bezout_numeral_tactic}
   ring
 
 def bezoutU : Polynomial ℚ :=
@@ -685,11 +705,10 @@ theorem selectedTranslation_cubic_ne_zero :
   rw [show selectedTranslation = 0 by rfl]
   rw [← Polynomial.coeff_zero_eq_eval_zero]
   rw [Polynomial.hasseDeriv_coeff]
-  norm_num [compiledPolynomial, primitivePolynomial, Polynomial.coeff_X]
+  {cubic_nonzero_tactic}
 
 def compiledSeed : Polynomial ℚ :=
-  realizationSeed compiledPolynomial selectedTranslation
-{seed_degree_block}
+  realizationSeed compiledPolynomial selectedTranslation{seed_degree_block}
 
 def compiledMap : Fin 3 → GaugePolynomial ℚ :=
   {compiled_map_expression}

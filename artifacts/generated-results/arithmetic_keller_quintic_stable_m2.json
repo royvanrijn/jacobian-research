@@ -151,6 +151,14 @@
       "separation_value": 13
     }
   },
+  "lean_instantiation": {
+    "module": "FiniteEtaleKeller.GeneratedArithmeticQuinticStableM2",
+    "theorems": [
+      "compiledMap_jacobianDet",
+      "compiled_inversePolynomial",
+      "compiledFiberEquiv"
+    ]
+  },
   "local_action_certificates": [
     {
       "description": "tame ramified cubic times unramified quadratic",
@@ -344,7 +352,7 @@
     "arithmetic_backend": "SymPy 1.14 exact QQ arithmetic",
     "generator": "scripts/compile_arithmetic_keller_certificate.py",
     "input_schema": "proof-carrying-arithmetic-specification/v1",
-    "regeneration_command": ".venv/bin/python scripts/compile_arithmetic_keller_certificate.py --spec arithmetic/specifications/ramified_quintic.json --certificate artifacts/generated-results/arithmetic_keller_quintic_stable_m2.json --stable-parameter 2"
+    "regeneration_command": ".venv/bin/python scripts/compile_arithmetic_keller_certificate.py --spec arithmetic/specifications/ramified_quintic.json --certificate artifacts/generated-results/arithmetic_keller_quintic_stable_m2.json --stable-parameter 2 --lean-module FiniteEtaleKeller.GeneratedArithmeticQuinticStableM2 --lean formal/finite-etale-keller/FiniteEtaleKeller/GeneratedArithmeticQuinticStableM2.lean"
   },
   "real_roots": {
     "count": 1,

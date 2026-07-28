@@ -37,6 +37,13 @@ It does not change either homogeneous-quartic endpoint:
 In particular, the result must not be entered as a rank-35 homogeneous
 quartic witness.
 
+The constant Hessian-kernel direction of this witness is the output relation
+\(K_9-3K_1-K_6=0\).  Restricting that second identity output gives the
+subsequent
+[`40-variable rank-34 witness`](HESSIAN_RANK_34_DOUBLE_IDENTITY_SLICE.md).
+Thus rank 35 is retained as the first-slice certificate, not the current
+nonhomogeneous rank incumbent.
+
 ## 1. The identity slice
 
 Let

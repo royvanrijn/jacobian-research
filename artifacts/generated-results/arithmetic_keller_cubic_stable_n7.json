@@ -102,6 +102,14 @@
       "separation_value": 7
     }
   },
+  "lean_instantiation": {
+    "module": "FiniteEtaleKeller.GeneratedArithmeticCubicStableN7",
+    "theorems": [
+      "compiledMap_jacobianDet",
+      "compiled_inversePolynomial",
+      "compiledFiberEquiv"
+    ]
+  },
   "local_action_certificates": [
     {
       "cycle_degrees": [
@@ -146,7 +154,7 @@
     "arithmetic_backend": "SymPy 1.14 exact QQ arithmetic",
     "generator": "scripts/compile_arithmetic_keller_certificate.py",
     "input_schema": "proof-carrying-arithmetic-specification/v1",
-    "regeneration_command": ".venv/bin/python scripts/compile_arithmetic_keller_certificate.py --spec arithmetic/specifications/connected_cubic_stable_n7.json --certificate artifacts/generated-results/arithmetic_keller_cubic_stable_n7.json"
+    "regeneration_command": ".venv/bin/python scripts/compile_arithmetic_keller_certificate.py --spec arithmetic/specifications/connected_cubic_stable_n7.json --certificate artifacts/generated-results/arithmetic_keller_cubic_stable_n7.json --lean formal/finite-etale-keller/FiniteEtaleKeller/GeneratedArithmeticCubicStableN7.lean"
   },
   "real_roots": {
     "count": 1,

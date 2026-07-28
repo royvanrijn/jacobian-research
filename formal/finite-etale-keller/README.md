@@ -46,6 +46,7 @@ finite-étale corollary.
 | 28 | Dedekind-zeta first prime moment (Euler-coefficient extraction) | ordinary proof; not yet Lean |
 | 29 | Monogenicity and the passage from arbitrary finite étale algebras in characteristic zero | implemented |
 | 30 | Historical degree-two Galois exclusion | external theorem; not yet Lean |
+| 31 | Common power-shift and cubic-lift Jacobians, selected-fiber invariance, and quotient representation | implemented |
 
 ## Final polynomial-presentation theorem
 
@@ -123,6 +124,16 @@ The explicit quotient is proved finite étale. Lean also proves that this
 literal fiber has no rational point, has a real point, and has a point over
 `ℚ_[p]` for every prime `p`.
 
+`StableGaugeFiber.lean` formalizes the deformation layer used by universal
+multiplicity.  For every common power shift, and for every cubic lift exponent
+`n ≥ 4`, it proves the normalized Jacobian determinant is one.  On `Π=1` the
+deformed coordinates evaluate identically to the undeformed coordinates, so
+the original quotient algebra represents the literal stable-map fiber over
+every commutative test algebra.  The two generated stable arithmetic modules
+instantiate these statements for the ramified quintic at `m=2` and
+`T^3-T-1` at `n=7`.  The separate boundary invariants proving pairwise stable
+inequivalence are not formalized here.
+
 The principal final declarations are:
 
 ```text
@@ -147,6 +158,10 @@ ExplicitQuintic.integralFiberPoint_padic_nonempty
 ExplicitQuintic.integralFiberPoint_hasse_certificate
 automaticRepresentingAlgebra_etale
 automaticRepresentingAlgebra_finite
+powerShiftedGaugeRealizationFiberRepresentingEquiv
+cubicLiftGaugeRealizationFiberRepresentingEquiv
+jacobianDet_powerShiftedGaugeJacobianOneMap
+jacobianDet_cubicLiftGaugeJacobianOneMap
 ExplicitQuintic.p5_quotient_etale
 ExplicitQuintic.p5_quotient_finite
 ExplicitQuintic.p5_quotient_rank

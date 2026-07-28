@@ -91,24 +91,34 @@ written theorem in the corresponding canonical multiplicity note.
 
 ## Formal algebra-to-Keller layer
 
-The compiler also generates
-[`GeneratedArithmeticQuintic.lean`](../formal/finite-etale-keller/FiniteEtaleKeller/GeneratedArithmeticQuintic.lean).
-It proves a denominator-cleared Bézout identity and hence squarefreeness,
-checks the selected translation, and instantiates the existing supplied-
-translation fiber equivalence, Jacobian-one theorem, inverse-polynomial
-identity, and automatic page-one certificate.
+The compiler also generates Lean specializations for the minimal gauge and
+both stable deformation families:
+
+- [`GeneratedArithmeticQuintic.lean`](../formal/finite-etale-keller/FiniteEtaleKeller/GeneratedArithmeticQuintic.lean);
+- [`GeneratedArithmeticQuinticStableM2.lean`](../formal/finite-etale-keller/FiniteEtaleKeller/GeneratedArithmeticQuinticStableM2.lean);
+- [`GeneratedArithmeticCubicStableN7.lean`](../formal/finite-etale-keller/FiniteEtaleKeller/GeneratedArithmeticCubicStableN7.lean).
+
+Each proves a denominator-cleared Bézout identity and hence squarefreeness,
+checks the selected translation, and instantiates the relevant Jacobian-one,
+inverse-polynomial, and literal represented-fiber theorems.  The minimal file
+also instantiates the automatic page-one certificate.
 
 ```bash
 cd formal/finite-etale-keller
 lake env lean FiniteEtaleKeller/GeneratedArithmeticQuintic.lean
+lake env lean FiniteEtaleKeller/GeneratedArithmeticQuinticStableM2.lean
+lake env lean FiniteEtaleKeller/GeneratedArithmeticCubicStableN7.lean
 ```
 
-The Lean file formalizes the algebra-to-Keller implication for the explicit
-polynomial.  The local-field stability theorem and the arithmetic input
+The Lean files formalize the algebra-to-Keller implication for the explicit
+polynomials.  In particular, the stable files use uniform formal proofs that
+the common power shifts and cubic lifts retain Jacobian determinant one and
+that their selected literal fibers are canonically represented by the
+original quotient algebra.  Stable inequivalence via the recorded boundary
+count or Newton area remains the written theorem in the canonical
+multiplicity notes.  The local-field stability theorem and arithmetic input
 claims are replayed by the two exact verifiers; they are not silently claimed
-as Lean formalizations.  The two stable-lift artifacts deliberately omit a
-`lean_instantiation` block: the present Lean development formalizes the
-minimal gauge, not the fiber-invisible cubic or common power-shift formulas.
+as Lean formalizations.
 
 ## Regeneration
 
@@ -119,10 +129,13 @@ certificates:
 .venv/bin/python scripts/compile_arithmetic_keller_certificate.py
 .venv/bin/python scripts/compile_arithmetic_keller_certificate.py \
   --stable-parameter 2 \
-  --certificate artifacts/generated-results/arithmetic_keller_quintic_stable_m2.json
+  --certificate artifacts/generated-results/arithmetic_keller_quintic_stable_m2.json \
+  --lean-module FiniteEtaleKeller.GeneratedArithmeticQuinticStableM2 \
+  --lean formal/finite-etale-keller/FiniteEtaleKeller/GeneratedArithmeticQuinticStableM2.lean
 .venv/bin/python scripts/compile_arithmetic_keller_certificate.py \
   --spec arithmetic/specifications/connected_cubic_stable_n7.json \
-  --certificate artifacts/generated-results/arithmetic_keller_cubic_stable_n7.json
+  --certificate artifacts/generated-results/arithmetic_keller_cubic_stable_n7.json \
+  --lean formal/finite-etale-keller/FiniteEtaleKeller/GeneratedArithmeticCubicStableN7.lean
 ```
 
 Use `make verify-arithmetic-compilation` for all seven non-mutating checks and

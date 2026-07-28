@@ -436,7 +436,10 @@ same algebra directly into the certified cubic or all-degree power-shift
 family and returns the stable separating invariant with the map.  The
 proof-carrying JSON layer serializes this option, and independent
 standard-library Python and PARI/GP replayers reconstruct both deformation
-mechanisms.  For a
+mechanisms.  Generated Lean specializations now certify the stable maps'
+Jacobian-one identities, unchanged inverse polynomial, and literal
+root-algebra fibers; the boundary invariants separating stable classes remain
+in the canonical written multiplicity proofs.  For a
 monic integral local model, the constructor
 now derives the universal stability precision
 `2*v_p(Disc)+1` automatically; combined with universal fiber multiplicity,
@@ -860,7 +863,11 @@ development:
    source and gives a 42-variable nonhomogeneous degree-at-most-four HN
    witness of exact Hessian rank 35.  It does not improve the homogeneous
    quartic rank or dimension.
-6. Independently, `DVG1` audits Dvorsky's homogenization of Long's
+6. `LR4 -> LR5` identifies the output relation
+   `K_9-3*K_1-K_6=0`, restricts its identity hyperplane, and gives a
+   40-variable nonhomogeneous HN witness of exact Hessian rank 34 and
+   cotangent kernel excess zero.
+7. Independently, `DVG1` audits Dvorsky's homogenization of Long's
    \(SU(2)\) seed, giving `not SIC(5)` and unrestricted `not GVC(5)`.
    Its third-order operator does not lower the 40-variable ordinary-Laplacian
    entry.
@@ -872,7 +879,8 @@ development:
 Only the arrows in this list are dependencies or implications.  The certified
 upper endpoints are now SIC 3, unrestricted GVC 5, ordinary-Laplacian GVC 40,
 homogeneous quartic HN-VC 42, and homogeneous HN Hessian rank 37.  The
-separate nonhomogeneous degree-at-most-four HN witness has rank 35.  These
+separate nonhomogeneous degree-at-most-four HN witness has rank 34 in
+dimension 40.  These
 are not additional
 logical steps, proofs of minimality, or literature-wide records; named
 multipliers, exact artifacts, and inverse recurrences are witness-level data.
@@ -1082,7 +1090,8 @@ frontiers:
   unrestricted quartic HN counterexamples, whereas the cotangent block-rank
   identity forces `rho_cot>=6`.  The broad circuit search is frozen at this
   reproducible frontier.  Separately, the rank-directed identity slice gives
-  a nonhomogeneous degree-at-most-four HN witness of exact Hessian rank 35;
+  a nonhomogeneous degree-at-most-four HN witness of exact Hessian rank 34
+  in dimension 40;
   it does not alter either homogeneous interval.  If reopened, the preferred
   theorem target is the
   five-dimensional cubic-homogeneous class, followed by full-class

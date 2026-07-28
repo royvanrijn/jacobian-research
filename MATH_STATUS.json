@@ -5035,6 +5035,36 @@
         "requirements.txt"
       ],
       "supersedes": [],
+      "replaced_by": [
+        "LR5"
+      ],
+      "priority": "reference"
+    },
+    {
+      "id": "LR5",
+      "kind": "corollary",
+      "state": "proved",
+      "title": "Rank-34 nonhomogeneous HN double identity slice",
+      "scope": "The rank-35 slice satisfies the exact output relation K_9-3K_1-K_6=0, and all three collision points lie on the corresponding zero identity hyperplane. Restriction gives a noninjective 20-variable nilpotent-Jacobian map of degrees one through three and exact generic Jacobian rank 17. Its 40-variable cotangent/HN potential has degrees two through four, exact generic Hessian rank 34, zero cotangent kernel excess, and no constant Hessian-kernel direction. Three Jacobian syzygies contain three independent kernel columns; twelve Hessian syzygies contain six independent kernel columns; exact rational specializations attain ranks 17 and 34. This improves the nonhomogeneous HN witness only and does not change the homogeneous-quartic rank-37 or dimension-42 frontiers.",
+      "canonical_source": "extended-geometry/HESSIAN_RANK_34_DOUBLE_IDENTITY_SLICE.md",
+      "dependencies": [
+        "LR4",
+        "IV1",
+        "external: symmetric Hessian-nilpotent reduction"
+      ],
+      "checker": "scripts/audit_hessian_rank_34_double_identity_slice_independent.py",
+      "proof_type": "reproduction",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:c27585d02e19de4940a693e7f42c2b6d3299c7cf7fde4e6511e46107fc68335c",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [
+        "LR4 nonhomogeneous HN Hessian rank 35 in dimension 42"
+      ],
       "replaced_by": [],
       "priority": "reference"
     },
