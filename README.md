@@ -54,6 +54,12 @@ formal-to-algebraic contact problem, not an ordinary tangent quotient.
 For Gaussian moments, Long's explicit five-term polynomial settles GMC
 negatively in three real variables and, by adjoining unused coordinates, in
 every dimension `n>=3`.  Broad high-dimensional searches are archived.
+The two-pair seed behind the repository's three-pair Image-Mathieu witness
+also gives a
+[four-term cubic counterexample in four real variables](extended-geometry/THREE_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md#31-four-real-gaussian-consequence):
+\(P=(1-Z_2)(W_1Z_1+W_2)\), \(Q=Z_2\).  It reduces the support of Long's
+displayed four-real cubic from six terms to four without changing its
+dimension or degree; no global term-minimality claim is made.
 The [lower-face prime theorem](extended-geometry/TWO_REAL_GMC_LOWER_FACE_THEOREM.md)
 proves GMC in two real variables, completing the classification:
 `GMC(n)` holds exactly for `n<=2`.  The former
@@ -874,6 +880,9 @@ development:
 8. `DVG3` applies a degree-two one-pair bihomogenization to Long's
    \(SU(2)\) Mathieu seed and gives the explicit four-term witness
    \(\tau(t-y)(wz+vt)\), with multiplier \(y\), proving `not SIC(3)`.
+   Before bihomogenization, the same four-term seed is an explicit cubic
+   `not GMC(4)` witness with mixed moments
+   \((-1)^{m-1}m!\).
 
 Only the arrows in this list are dependencies or implications.  The certified
 upper endpoints are now SIC 3, unrestricted GVC 5, ordinary-Laplacian GVC 40,

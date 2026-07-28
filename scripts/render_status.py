@@ -32,7 +32,10 @@ PROOF_TYPES = {
 }
 PRIORITIES = {"core", "derived", "reference", "primary", "parked"}
 HASH_PATTERN = re.compile(r"sha256:[0-9a-f]{64}")
-CORE_ORDER = ["F1", "W1", "S1", "WB1", "C1", "B1", "P1", "M1", "D1", "F2", "R1", "R2", "IA1"]
+CORE_ORDER = [
+    "F1", "W1", "S1", "WB1", "C1", "B1", "P1", "M1", "D1", "F2",
+    "R1", "R2", "AMS1", "IA1",
+]
 ACTIVE_OPEN = {
     "OP-CR",
     "OP-LR-REES",

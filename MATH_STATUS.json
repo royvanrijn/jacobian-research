@@ -5187,11 +5187,35 @@
       "independent_replay": true,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:c181822f9d14e2feb8db6aa16c5d5ac1c1f73fe5520d95193e40a46676a57b6d",
+      "artifact_hash": "sha256:1f89825a8920a5e68af6a960aa9342aa5e112fad18b9976028828e63e570183d",
       "software_lock": [],
       "supersedes": [
         "DVG1 as the overall repository-certified SIC upper witness",
         "the five-pair absolute compression frontier"
+      ],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "G4F",
+      "kind": "corollary",
+      "state": "proved",
+      "title": "Four-term cubic GMC failure in four real variables",
+      "scope": "Let Z_1,Z_2 be independent standard circular complex Gaussians and W_j=conjugate(Z_j). The four-term cubic P=(1-Z_2)(W_1 Z_1+W_2), with Q=Z_2, satisfies E(P^m)=0 and E(QP^m)=(-1)^(m-1)m! for every m>=1. Hence GMC(4) fails, and padding gives four-term witnesses in every real dimension n>=4. In the same circular coordinates this reduces the support of Long's displayed six-term four-real cubic to four terms at the same degree and dimension. Long's five-term quartic remains lower-dimensional; no global support-minimality or literature-priority claim is made.",
+      "canonical_source": "extended-geometry/THREE_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md",
+      "dependencies": [
+        "DVG3",
+        "external: circular complex Gaussian Wick rule"
+      ],
+      "checker": "scripts/verify_three_pair_image_mathieu_counterexample.py",
+      "proof_type": "counterexample",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:1f89825a8920a5e68af6a960aa9342aa5e112fad18b9976028828e63e570183d",
+      "software_lock": [],
+      "supersedes": [
+        "six-term circular-coordinate support for the repository's displayed four-real cubic GMC witness"
       ],
       "replaced_by": [],
       "priority": "derived"

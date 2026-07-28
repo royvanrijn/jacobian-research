@@ -1,5 +1,5 @@
 {
-  "format": "three-pair-image-mathieu-counterexample-v2",
+  "format": "three-pair-image-mathieu-counterexample-v3",
   "field": "characteristic zero",
   "contraction_pairs": [
     [
@@ -31,6 +31,27 @@
   "all_order_identities": {
     "E(f^m)": "0",
     "[t]E(g*f^m)": "(-1)^(m-1)*(m+1)!*m!"
+  },
+  "four_real_gaussian_corollary": {
+    "real_gaussians": [
+      "X1",
+      "Y1",
+      "X2",
+      "Y2"
+    ],
+    "circular_coordinates": {
+      "Zj": "(Xj+i*Yj)/sqrt(2)",
+      "Wj": "(Xj-i*Yj)/sqrt(2)"
+    },
+    "P": "(1-Z2)*(W1*Z1+W2)",
+    "expanded_P": "W1*Z1+W2-W1*Z1*Z2-W2*Z2",
+    "Q": "Z2",
+    "expanded_P_term_count": 4,
+    "total_degree": 3,
+    "all_order_identities": {
+      "E(P^m)": "0",
+      "E(Q*P^m)": "(-1)^(m-1)*m!"
+    }
   },
   "exact_sparse_replay_cutoff": 10,
   "written_proof": "extended-geometry/THREE_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md"

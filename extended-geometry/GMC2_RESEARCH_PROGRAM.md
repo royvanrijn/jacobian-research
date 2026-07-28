@@ -22,6 +22,29 @@ coefficient identity used in Long's proof are transcribed and checked in
 finite ranges by
 [`verify_long_gaussian_moments.py`](../scripts/verify_long_gaussian_moments.py).
 
+There is also a support-smaller witness in four real variables.  For two
+independent circular complex Gaussians \(Z_1,Z_2\), with
+\(W_j=\overline{Z_j}\), put
+
+\[
+ P_4^{\rm small}=(1-Z_2)(W_1Z_1+W_2),\qquad Q_4^{\rm small}=Z_2.
+\]
+
+This is a four-term cubic and satisfies
+
+\[
+ \mathbb E((P_4^{\rm small})^m)=0,\qquad
+ \mathbb E(Q_4^{\rm small}(P_4^{\rm small})^m)
+   =(-1)^{m-1}m!
+\]
+
+for every \(m\geq1\).  It is the dehomogenized circular seed of the
+[three-pair Image-Mathieu witness](THREE_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md#31-four-real-gaussian-consequence).
+Relative to Long's displayed four-real cubic it reduces the circular-coordinate
+support from six terms to four at the same degree and dimension.  It does not
+improve the three-real dimension bound, and no global support-minimality
+claim is made.
+
 The lower-face prime theorem now proves \(\mathrm{GMC}(2)\).  Together with
 the known one-dimensional result and Long's counterexamples, the
 dimension-by-dimension classification is therefore:
@@ -114,6 +137,8 @@ purpose is logical transport rather than witness discovery:
 - the BCW consequence chains to failures of GMC(42) and GMC(158);
 - the four-real weighted-seed bridge and its transport of seed geometry into
   moment coordinates; and
+- the four-term cubic four-real witness obtained directly from the
+  Image-Mathieu seed; and
 - the associated Image/Vanishing consequences.
 
 These are examples of how structure moves between conjectures and

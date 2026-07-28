@@ -1,4 +1,4 @@
-# A four-term counterexample in three contraction pairs
+# A four-term counterexample in three contraction pairs and four real Gaussians
 
 ## 1. Explicit statement
 
@@ -123,6 +123,76 @@ For \(QP^m=YP^m\), the same pair instead selects
 
 These are all-order binomial identities.
 
+### 3.1 Four-real Gaussian consequence
+
+Let \(X_1,Y_1,X_2,Y_2\) be independent standard real Gaussian variables and
+put
+
+\[
+ Z_j=\frac{X_j+iY_j}{\sqrt2},\qquad
+ W_j=\frac{X_j-iY_j}{\sqrt2}=\overline{Z_j}
+ \qquad(j=1,2).
+                                                               \tag{3.6}
+\]
+
+Define
+
+\[
+ \boxed{
+ \begin{aligned}
+ P_4^{\rm small}
+   &=(1-Z_2)(W_1Z_1+W_2)\\
+   &=W_1Z_1+W_2-W_1Z_1Z_2-W_2Z_2,\\
+ Q_4^{\rm small}&=Z_2.
+ \end{aligned}}                                               \tag{3.7}
+\]
+
+> **Corollary 3.1.** For every \(m\geq1\),
+> \[
+>  \boxed{
+>  \mathbb E\!\left((P_4^{\rm small})^m\right)=0,\qquad
+>  \mathbb E\!\left(Q_4^{\rm small}(P_4^{\rm small})^m\right)
+>    =(-1)^{m-1}m!\ne0.}                                     \tag{3.8}
+> \]
+> Hence \(P_4^{\rm small},Q_4^{\rm small}\) form a four-term cubic
+> counterexample to \(\operatorname{GMC}(4)\).
+
+Indeed, independence and circular symmetry give
+
+\[
+ \mathbb E(W_1^aZ_1^bW_2^cZ_2^d)
+ =\delta_{a,b}\delta_{c,d}\,a!\,c!,
+                                                               \tag{3.9}
+\]
+
+so Gaussian expectation is exactly the functional \(\mathcal F\) in
+(3.2).  Equations (3.4) and (3.5) therefore prove (3.8).  More generally,
+for \(A\in\mathbb C[z]\),
+
+\[
+ \mathbb E\!\left(A(Z_2)(P_4^{\rm small})^m\right)
+ =m!\,[z^m]A(z)(1-z)^{m-1}.                                 \tag{3.10}
+\]
+
+The term count in (3.7) is in the same natural circular coordinates used in
+Christopher D. Long's Gaussian-moment paper.  His displayed four-real
+cubic
+
+\[
+ (1+Z_2)\bigl(W_1(1-Z_1)+W_2\bigr)
+\]
+
+has six terms and mixed moments \(m!\).  Thus (3.7) reduces the displayed
+support from six terms to four at the same real dimension and total degree;
+its alternating mixed moments have generating function \(t/(1+t)\) instead
+of \(t/(1-t)\).  Long's five-term quartic in three real variables remains
+lower-dimensional.  No global term-minimality or literature-priority claim
+is made here.
+
+Long's Gaussian paper is
+[*Small Counterexamples to the Gaussian Moments
+Conjecture*](https://arxiv.org/abs/2607.18186), arXiv:2607.18186v1.
+
 ## 4. One-pair bihomogenization
 
 The polynomial \(P\) has \(W,V\)-degree one and \(Z,Y\)-degree at most two.
@@ -203,6 +273,7 @@ python3 scripts/verify_three_pair_image_mathieu_counterexample.py
 
 The dependency-free checker expands \(f\), performs exact sparse
 contractions through \(m=10\), verifies (1.3) on that prefix, and separately
-checks the two all-order binomial identities through \(m=99\).  The proof
-above, rather than either finite cutoff, establishes the theorem for every
-\(m\).
+checks the two all-order binomial identities through \(m=99\).  It also
+performs an independent four-real Gaussian Wick replay of (3.8) through
+\(m=10\).  The proofs above, rather than either finite cutoff, establish the
+identities for every \(m\).

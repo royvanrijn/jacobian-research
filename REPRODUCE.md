@@ -1579,7 +1579,15 @@ checker verifies exact sparse contractions
 \(\mathcal E(f^m)=0\) and
 \([t]\mathcal E(gf^m)=(-1)^{m-1}(m+1)!m!\) through order ten, records the
 four-term bidegree-\((2,2)\) artifact, and replays the two binomial identities used in
-the all-order proof.  The proof is in
+the all-order proof.  The same script independently reads the dehomogenized
+seed as the four-term cubic Gaussian polynomial
+\[
+P=(1-Z_2)(W_1Z_1+W_2),\qquad Q=Z_2,
+\]
+and verifies by exact Wick contraction through order ten that
+\(\mathbb E(P^m)=0\) and
+\(\mathbb E(QP^m)=(-1)^{m-1}m!\).  The all-order proof and the comparison
+with Long's displayed six-term four-real cubic are in
 [`THREE_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md`](extended-geometry/THREE_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md).
 
 The same witness has a separate factorial-functional translation and finite

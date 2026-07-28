@@ -232,9 +232,17 @@ def harmonic_cubic_chart(cube_variable):
 
 
 def exceptional_cube_variable(quartic):
-    for variable in spatial_variables:
+    polynomial = sp.Poly(quartic, *spatial_variables, domain=sp.QQ)
+    for variable_index, variable in enumerate(spatial_variables):
+        if not all(
+            monomial[variable_index] >= 3
+            for monomial in polynomial.monoms()
+        ):
+            continue
         quotient = sp.cancel(quartic / variable**3)
-        if sp.Poly(quotient, *spatial_variables).total_degree() == 1:
+        if sp.Poly(
+            quotient, *spatial_variables, domain=sp.QQ
+        ).total_degree() == 1:
             return variable
     return None
 
