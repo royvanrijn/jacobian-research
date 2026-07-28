@@ -5275,19 +5275,19 @@
       "priority": "derived"
     },
     {
-      "id": "KSIC2",
+      "id": "DLSIC2",
       "kind": "theorem",
       "state": "proved",
-      "title": "Keller-constrained two-pair Special Image theorem",
-      "scope": "Let H=(P,Q) over a characteristic-zero field satisfy H(0)=0, JH(0)=0, and det J((x,y)-H)=1, and put p=w_1 P+w_2 Q. If the first pure contraction E_2(p)=0, then H=(b,-a)f(ax+by) and p=(bw_1-aw_2)f(ax+by) for some f in t^2 k[t]. Consequently E_2(gp^m)=0 for every multiplier g whenever m exceeds the total (x,y)-degree of g. Thus on the complete normalized Keller-constrained subclass, the first SIC premise already forces all pure contractions and the full eventual mixed-contraction conclusion. This theorem is all-degree and nonhomogeneous, but it does not address arbitrary two-pair polynomials or normalized Keller corrections with nonzero divergence.",
-      "canonical_source": "extended-geometry/KELLER_CONSTRAINED_SIC2.md",
+      "title": "Complete dual-linear two-pair Special Image theorem",
+      "scope": "Let p=w_1 P(x,y)+w_2 Q(x,y) over a characteristic-zero field. If the first two pure contractions E_2(p) and E_2(p^2) vanish, then H=(P,Q)=c+(b,-a)f(ax+by) for a constant vector c and a univariate polynomial f. Conversely every such normal form has all pure contractions zero. For every multiplier g, E_2(gp^m)=0 when m>(deg(f)+2)deg_(x,y)(g), with deg(f) replaced by zero for constant f. Hence SIC(2) holds on the complete dual-degree-one stratum and its infinite premise collapses to two moments. On the normalized Keller subclass, the determinant equation makes the first moment sufficient, removes c, puts f in t^2 k[t], and sharpens the cutoff to m>deg_(x,y)(g). The theorem does not address dual degree at least two.",
+      "canonical_source": "extended-geometry/DUAL_LINEAR_SIC2.md",
       "dependencies": [],
-      "checker": "scripts/verify_keller_constrained_sic2.py",
+      "checker": "scripts/verify_dual_linear_sic2.py",
       "proof_type": "hybrid",
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:e1a69cbd0148c6b56b0d87b5bb591255ae26d6fa512c7a6b44dc72d4647b230e",
+      "artifact_hash": "sha256:953fb4436b6648f89dbe03b998d0428c670865b7718be380636c07475ead5bd3",
       "software_lock": [],
       "supersedes": [],
       "replaced_by": [],
@@ -5340,7 +5340,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:c601fc9bb72f47355c44cb2ab5c47412e79340a79ac17a9b98857c42c026d4a9",
+      "artifact_hash": "sha256:0e0edadc1943b336a2815bac782f23796947655582c0b77334ff964ef113fc1a",
       "software_lock": [
         ".python-version",
         "requirements.txt"
@@ -5352,17 +5352,43 @@
       "priority": "reference"
     },
     {
+      "id": "SIC2B33A",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Dimension-sized moment coordinates on every full non-null quadratic chart",
+      "scope": "In the full bidegree-(3,3) mixed representation Sym^6 plus Sym^4 plus Sym^2, normalize a non-null quadratic component to 2XT. The residual diagonal torus and Weyl reflection reduce the locus with a nonzero nonzero-weight higher component to five representative affine charts s0=1, s1=1, s2=1, t0=1, and t1=1; the locus with only weight-zero higher components is the already-closed diagonal slice. On each representative chart, exact integer evaluation gives a nonzero 11-by-11 Jacobian determinant for moments mu_2,...,mu_12 at a displayed rational point. Hence those eleven restricted moments are algebraically independent on every chart orbit and form a dimension-sized coordinate candidate. This does not prove that their common zero fiber is empty or that the quadratic anchor holds; direct modular Groebner elimination of the dense chart ideals remains computationally unresolved.",
+      "canonical_source": "extended-geometry/TWO_PAIR_SIC_BIDEGREE33_FRONTIER.md",
+      "dependencies": [
+        "SIC2B33S"
+      ],
+      "checker": "scripts/verify_two_pair_sic_bidegree33_anchor_jacobians.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:7d8269f98427014ae311428a19f75774684beb1bcf65a8d35672b6cf423fa615",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
       "id": "OP-SIC2-MN",
       "kind": "open_problem",
       "state": "open",
       "title": "All-degree two-pair moment--nullcone program",
-      "scope": "For balanced two-pair bidegree (d,d), End(Sym^d)=direct sum_{r=0}^d Sym^(2r), and Hilbert--Mumford identifies the one-sided nullcone with tuples having vanishing scalar component and a common linear factor L such that L^(r+1) divides F_(2r). Its incidence resolution proves that this irreducible nullcone has dimension 1+d(d+1)/2 and codimension d(d+3)/2. Noetherianity gives a finite moment subset for each fixed d, while Krull height proves that any global moment-nullcone certificate needs at least (d+1)^2-3 moments for d>=2, hence at least thirteen for d=3. SIC2B33S now proves that mu_1,...,mu_13 attain this lower bound and are algebraically independent, but their zero fiber is still open. It also gives the explicit global quadratic discriminant and proves that moments 1 through 4 have only the origin on the maximal-torus fixed diagonal slice. The proposed proof first forces the lowest nonzero component into its binary-form nullcone and then synchronizes every higher component with its unique high-multiplicity root; the first global targets are discriminant(F_2)=0 and F_2=L^2 implies L^3 divides F_4. SIC2B22 proves the conjecture for d=2, and SIC2B33S supplies exact full-space independence plus exact slice evidence for d=3, but the global d=3 and uniform all-d statements remain open. The formal n-pair analogue uses End(Sym^d C^n)=direct sum_{j=0}^d V_(j(omega_1+omega_(n-1))), but DVG3 proves it false for every n>=3 already at d=2: the padded balanced three-pair witness has all pure moments zero and persistent mixed moments, so it is not in the SL_n nullcone.",
+      "scope": "For balanced two-pair bidegree (d,d), End(Sym^d)=direct sum_{r=0}^d Sym^(2r), and Hilbert--Mumford identifies the one-sided nullcone with tuples having vanishing scalar component and a common linear factor L such that L^(r+1) divides F_(2r). Its incidence resolution proves dimension 1+d(d+1)/2 and codimension d(d+3)/2. Noetherianity gives a finite moment subset for fixed d, while Krull height requires at least (d+1)^2-3 moment equations. A proof must now have two layers: first use the Molien/weight Hilbert series to select an admissible degree set, then prove its zero fiber is the nullcone by destabilizing the lowest nonzero component and synchronizing the higher components with its unique high-multiplicity root. In d=3, SIC2B33S proves that mu_1,...,mu_13 are algebraically independent but cannot be an hsop because their proposed Hilbert numerator has degree-63 coefficient -2186; an extra semistable zero component therefore exists. The least-total-degree corrected candidate mu_1,...,mu_12,mu_14 has exact Jacobian rank thirteen and passes the necessary Hilbert test through degree 100, but its zero fiber remains open. On the full non-null quadratic branch, SIC2B33A reduces the non-diagonal locus to five residual-torus chart orbits and proves that mu_2,...,mu_12 have exact rank eleven on every chart; the five affine zero fibers remain open. The first geometric targets are discriminant(F_2)=0 and F_2=L^2 implies L^3 divides F_4. SIC2B22 proves d=2; the global d=3 and uniform all-d statements remain open. The formal n-pair analogue is false for every n>=3 already at d=2 by the padded three-pair moment-zero semistable witness.",
       "canonical_source": "extended-geometry/TWO_PAIR_SIC_MOMENT_NULLCONE_PROGRAM.md",
       "dependencies": [
         "DVG3",
         "SIC2B22",
         "SIC2B33S",
+        "SIC2B33A",
         "external: Hilbert--Mumford nullcone criterion for direct sums of binary forms",
+        "external: Cohen--Macaulayness of characteristic-zero reductive invariant rings",
         "external: Pieri rule for symmetric powers"
       ],
       "checker": null,
@@ -8448,6 +8474,35 @@
         "HC4JQS4",
         "HC4MQS6",
         "HC4MS6"
+      ],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
+      "id": "HC4T31",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Rank-three sextic reduction with simultaneous cubic and quartic layers",
+      "scope": "Let psi=q2+h3+h4+h6 be a four-variable collision-normalized Meng potential, with q2 nondegenerate quadratic, h3,h4,h6 arbitrary homogeneous forms of degrees three, four, and six, and Hess(h6) of generic rank three. The constant sextic kernel and determinant degrees fourteen and thirteen force D_t^2 h4=D_t^2 h3=0. A nonisotropic t-direction descends to HC(3). In the isotropic chart, the t^2 coefficient is the bordered invariant of a ternary polynomial s of degree at most three. Gordan--Noether and the three binary-cubic root-multiplicity orbits reduce its coefficient equations to exact constant-direction branches: the rank-two orbits have ideal (qxm,qym,lm)^2, the rank-one orbit has two explicitly certified radical branches, and the quadratic boundary follows from adjugate linear algebra. The next coefficient is either a cotangent lift of a plane Keller map of degrees at most three and five or a terminal HC(2) block. Thus a constant nonzero Hessian determinant is incompatible with a nonzero antipodal collision, with no support restriction. Sextic Hessian rank at most two and non-coordinate coisotropic embeddings are not covered.",
+      "canonical_source": "HC4_MENG_TRIPLE_RANK_THREE.md",
+      "dependencies": [
+        "external: Gordan--Noether classification in at most four variables",
+        "external: de Bondt--van den Essen singular polynomial Hessian classification in dimension three",
+        "external: Hessian conjecture in dimensions at most three",
+        "external: Moh plane Jacobian theorem through degree 100"
+      ],
+      "checker": "scripts/verify_hc4_meng_triple_rank_three_reduction.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:8ec18f23c1cd8f99b29ee9b45422a6a3262809ac877fe3b9ae4f36093eb4abd1",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [
+        "the rank-three sextic-Hessian stratum of the simultaneous cubic--quartic--sextic Meng chart"
       ],
       "replaced_by": [],
       "priority": "reference"

@@ -216,6 +216,7 @@ def run_chart(
     expressions: list[str],
     prime: int,
     timeout: int,
+    algorithm: str,
 ) -> tuple[int, int, bool, float]:
     variables = PARAMETERS[:fixed_index] + PARAMETERS[fixed_index + 1 :]
     started = time.monotonic()
@@ -225,7 +226,7 @@ def run_chart(
 ring anchor={prime},({",".join(variables)}),dp;
 option(redSB);
 ideal I={",".join(expressions)};
-ideal G=std(I);
+ideal G={algorithm}(I);
 print("ANCHOR "+string(dim(G))+" "+string(size(G))+" "+string(G[1]==1));
 """,
         text=True,
@@ -245,14 +246,35 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--prime", type=int, default=101)
     parser.add_argument("--max-order", type=int, default=10)
+    parser.add_argument(
+        "--orders",
+        default="",
+        help=(
+            "comma-separated moment orders; when omitted, use every order "
+            "from 2 through --max-order"
+        ),
+    )
     parser.add_argument("--timeout", type=int, default=180)
+    parser.add_argument(
+        "--algorithm",
+        choices=("std", "slimgb"),
+        default="slimgb",
+    )
     parser.add_argument(
         "--charts",
         default="s0,s1,s2,t0,t1",
         help="comma-separated representative charts",
     )
     arguments = parser.parse_args()
-    assert arguments.max_order < arguments.prime
+    moment_orders = (
+        tuple(int(order) for order in arguments.orders.split(",") if order)
+        if arguments.orders
+        else tuple(range(2, arguments.max_order + 1))
+    )
+    assert moment_orders
+    assert len(set(moment_orders)) == len(moment_orders)
+    assert min(moment_orders) >= 2
+    assert max(moment_orders) < arguments.prime
     singular = shutil.which("Singular")
     assert singular is not None, "Singular is required"
 
@@ -264,7 +286,7 @@ def main() -> None:
     assert set(requested) <= set(REPRESENTATIVE_CHARTS)
 
     all_terms: dict[int, dict[tuple[int, ...], int]] = {}
-    for order in range(2, arguments.max_order + 1):
+    for order in moment_orders:
         started = time.monotonic()
         terms = moment_terms(order, arguments.prime)
         all_terms[order] = terms
@@ -277,7 +299,7 @@ def main() -> None:
     for fixed_index in requested:
         expressions = [
             chart_expression(all_terms[order], fixed_index, arguments.prime)
-            for order in range(2, arguments.max_order + 1)
+            for order in moment_orders
         ]
         try:
             dimension, basis_size, unit, elapsed = run_chart(
@@ -286,6 +308,7 @@ def main() -> None:
                 expressions,
                 arguments.prime,
                 arguments.timeout,
+                arguments.algorithm,
             )
         except subprocess.TimeoutExpired:
             print(

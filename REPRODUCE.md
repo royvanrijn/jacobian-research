@@ -1603,22 +1603,22 @@ and verifies by exact Wick contraction through order ten that
 with Long's displayed six-term four-real cubic are in
 [`THREE_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md`](extended-geometry/THREE_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md).
 
-The Keller-constrained two-pair theorem is replayed by
+The dual-linear two-pair theorem is replayed by
 
 ```bash
-python3 scripts/verify_keller_constrained_sic2.py
+python3 scripts/verify_dual_linear_sic2.py
 ```
 
 This dependency-free audit accompanies the
-[Keller-constrained `SIC(2)` theorem](extended-geometry/KELLER_CONSTRAINED_SIC2.md).
-For a normalized plane Keller correction \(H\), the first contraction of
-\(p=w\mathbin{\cdot}H\) is \(\operatorname{tr}JH\).  Its vanishing and the
-Keller equation force \(H=(b,-a)f(ax+by)\).  The proof then gives the exact
-all-multiplier bound
-\(\mathcal E_2(gp^m)=0\) for \(m>\deg_{x,y}g\).  The checker replays the
-normal form, determinant, pure contractions, and mixed cutoff on exact
-integer examples; the written zero-Hessian argument is the all-degree
-proof.
+[dual-linear `SIC(2)` theorem](extended-geometry/DUAL_LINEAR_SIC2.md).
+For every \(p=w\mathbin{\cdot}H\), the first two contractions force
+\(\operatorname{tr}JH=\det JH=0\), hence
+\(H=c+(b,-a)f(ax+by)\).  If \(d=\deg f\) and
+\(G=\deg_{x,y}g\), the proof gives
+\(\mathcal E_2(gp^m)=0\) for \(m>(d+2)G\).  The normalized Keller case
+needs only the first contraction and retains the sharper cutoff \(m>G\).
+The checker verifies the second-contraction identity and replays both
+cutoffs on exact integer examples.
 
 The unrestricted bidegree-\((2,2)\) theorem is replayed by
 
@@ -1646,6 +1646,7 @@ The next balanced two-pair frontier is replayed by
 
 ```bash
 .venv/bin/python scripts/verify_two_pair_sic_bidegree33_sextic_slice.py
+.venv/bin/python scripts/verify_two_pair_sic_bidegree33_anchor_jacobians.py
 ```
 
 The checker eliminates the full seven-parameter one-sided locus in the
@@ -1685,6 +1686,22 @@ through order fourteen give a basis of size \(7576\) and contain \(c^{25}\)
 but not \(c^{24}\).  The exact characteristic-zero lift and the full
 mixed-summand problem remain open; see
 [`TWO_PAIR_SIC_BIDEGREE33_FRONTIER.md`](extended-geometry/TWO_PAIR_SIC_BIDEGREE33_FRONTIER.md).
+The second checker normalizes a non-null quadratic to \(2XT\), covers the
+full higher \(\operatorname{Sym}^6\oplus\operatorname{Sym}^4\) locus by
+five residual-torus chart orbits, and proves by displayed nonzero exact
+eleven-by-eleven Jacobian determinants that moments \(2,\ldots,12\) are
+algebraically independent on every chart orbit.  This is a
+dimension-sized coordinate theorem, not a zero-fiber exclusion.
+
+Modular full-chart reconnaissance is available separately:
+
+```bash
+.venv/bin/python scripts/explore_two_pair_sic_bidegree33_full_anchor.py \
+  --prime 101 --max-order 12 --algorithm slimgb
+```
+
+Its Gröbner results are experimental and must not be promoted without an
+exact characteristic-zero certificate.
 The conceptual continuation introduces no new computed certificate:
 [`TWO_PAIR_SIC_MOMENT_NULLCONE_PROGRAM.md`](extended-geometry/TWO_PAIR_SIC_MOMENT_NULLCONE_PROGRAM.md)
 formulates the all-\(d\) moment--nullcone conjecture, the
@@ -2869,6 +2886,25 @@ and rank zero is `HC4HQ1`.  This proves `HC4E46`: no support-free
 potential `q2+h4+h6` with nondegenerate `q2` has both constant nonzero
 Hessian determinant and an antipodal collision.  Only simultaneous cubic
 and sextic interaction, and non-coordinate coisotropic embeddings, remain.
+
+The rank-three part of the simultaneous cubic--quartic--sextic chart is:
+
+```bash
+.venv/bin/python \
+  scripts/verify_hc4_meng_triple_rank_three_reduction.py
+```
+
+For `psi=q2+h3+h4+h6`, the degree-fourteen and degree-thirteen determinant
+layers on the one-dimensional sextic kernel force both
+`D_t^2(h4)=0` and `D_t^2(h3)=0`.  The nonisotropic direction descends to
+`HC(3)`.  In the isotropic chart, the checker reconstructs the complete
+cubic bordered invariant.  The two rank-two binary-cubic orbits have
+coefficient ideal `(qxm,qym,lm)^2`; the rank-one orbit has two explicit
+radical branches, each with a constant missing direction.  The remaining
+descent is either a plane Keller cotangent lift of degrees at most three
+and five or an `HC(2)` block.  This proves `HC4T31` without a support
+restriction.  Only simultaneous corrections with
+`rank Hess(h6)<=2`, and non-coordinate coisotropic embeddings, remain.
 
 The direct collision-normalized finite-field experiment in degree bounds
 five through eight is:

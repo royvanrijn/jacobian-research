@@ -1,5 +1,5 @@
 {
-  "format": "two-pair-sic-bidegree33-frontier-v3",
+  "format": "two-pair-sic-bidegree33-frontier-v4",
   "field": "characteristic zero",
   "full_bidegree_33": {
     "coefficient_count": 16,
@@ -82,6 +82,134 @@
       "determinant": "-11792719082090571744983672290389653091986140583570062314413212459556032938621403529505763494099861155698077409769607160426893847287266706650473935763601958109845229289334738976493100630758257548210150549055848061679962242522080314516074573034684416000000000000000000000000000000000000000000000000",
       "rank": 13,
       "conclusion": "the first thirteen full moments are algebraically independent"
+    },
+    "corrected_moment_jacobian": {
+      "moment_orders": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        14
+      ],
+      "coefficient_point": [
+        [
+          2,
+          2,
+          -4,
+          0
+        ],
+        [
+          4,
+          3,
+          2,
+          0
+        ],
+        [
+          3,
+          1,
+          -1,
+          4
+        ],
+        [
+          -2,
+          0,
+          -2,
+          -3
+        ]
+      ],
+      "minor_columns_zero_based": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "minor_variables": [
+        "c_00",
+        "c_01",
+        "c_02",
+        "c_03",
+        "c_10",
+        "c_11",
+        "c_12",
+        "c_13",
+        "c_20",
+        "c_21",
+        "c_22",
+        "c_23",
+        "c_30"
+      ],
+      "determinant": "-177773463337872042258599314936100079730243854705203912887777623860541231537411339305382169268682266803601791521012996366373976876910055068237469775158074527906699099566496272363910115715195225686054006682543315888455588033482573001213880570668925999015526400000000000000000000000000000000000000000000000",
+      "rank": 13,
+      "conclusion": "moments 1 through 12 and moment 14 are algebraically independent"
+    },
+    "moment_hsop_degree_obstruction": {
+      "representation_weights": [
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        2,
+        -2,
+        -2,
+        -2,
+        4,
+        4,
+        -4,
+        -4,
+        6,
+        -6
+      ],
+      "hilbert_coefficients_0_through_13": [
+        1,
+        1,
+        4,
+        8,
+        26,
+        53,
+        146,
+        305,
+        704,
+        1417,
+        2920,
+        5533,
+        10500,
+        18825
+      ],
+      "checked_through_degree": 100,
+      "consecutive_degrees_1_through_13": {
+        "first_negative_numerator_coefficient": {
+          "degree": 63,
+          "coefficient": -2186
+        },
+        "conclusion": "no homogeneous system of parameters can have degrees 1 through 13"
+      },
+      "corrected_degrees_1_through_12_and_14": {
+        "all_checked_coefficients_nonnegative": true,
+        "last_checked_nonzero_degree": 76,
+        "coefficient_at_degree_76": 1,
+        "coefficients_77_through_100_zero": true,
+        "checked_numerator_coefficient_sum": 9226602,
+        "status": "passes this exact necessary Hilbert-series test; this does not prove the moments form a homogeneous system of parameters"
+      }
     },
     "global_quadratic_projection": {
       "binary_quadratic": "r0*X^2+2*r1*X*T+r2*T^2",

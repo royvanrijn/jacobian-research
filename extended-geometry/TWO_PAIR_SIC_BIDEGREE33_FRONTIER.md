@@ -7,7 +7,7 @@ complete bidegree-\((2,2)\) theorem.  Unequal bidegrees are already
 one-sided for the total dual-minus-coordinate grading, so the next balanced
 case is \((3,3)\).
 
-Five exact characteristic-zero results are proved here:
+Six exact characteristic-zero results are proved here:
 
 1. the full pair-linear one-sided nullcone in the sixteen-dimensional
    coefficient space has an exact seven-parameter elimination, dimension
@@ -24,9 +24,15 @@ Five exact characteristic-zero results are proved here:
 5. on the mixed
    \(\operatorname{Sym}^4\oplus\operatorname{Sym}^2\) branch, a non-null
    quadratic component is excluded by moments through order six.
+6. after normalizing a non-null quadratic, moments \(2,\ldots,12\) have
+   exact full Jacobian rank eleven on every residual-torus chart orbit in
+   the complete
+   \(\operatorname{Sym}^6\oplus\operatorname{Sym}^4\oplus
+   \operatorname{Sym}^2\) branch.
 
 The fourth result excludes every SIC(2) counterexample lying in a single
-irreducible summand.  The full mixed
+irreducible summand.  The sixth gives dimension-sized moment coordinates,
+not the required zero-fiber theorem.  The full mixed
 \(\operatorname{Sym}^6\oplus\operatorname{Sym}^4\oplus
 \operatorname{Sym}^2\) problem remains open.
 
@@ -517,6 +523,54 @@ not finish within the recorded bounded runs.  Equation (5.5) identifies a
 specific characteristic-zero membership certificate to reconstruct; it
 does not justify silently transferring the modular result.
 
+### 5.1 The five full mixed anchor charts
+
+Set \(c=1\) in (5.3), which is legitimate on the moment-zero locus by
+overall scalar homogeneity.  The stabilizer of \(XT\) contains the diagonal
+torus.  In the lowering-chain coordinates its weights are
+
+\[
+\begin{array}{c|rrrrrrr}
+ &s_0&s_1&s_2&s_3&s_4&s_5&s_6\\ \hline
+\operatorname{wt}&3&2&1&0&-1&-2&-3
+\end{array},
+\qquad
+\begin{array}{c|rrrrr}
+ &t_0&t_1&t_2&t_3&t_4\\ \hline
+\operatorname{wt}&2&1&0&-1&-2.
+\end{array}                                               \tag{5.6}
+\]
+
+If every nonzero-weight coordinate vanishes, only \(s_3,t_2\), and the
+normalized quadratic remain; this is contained in the torus-fixed diagonal
+slice closed by Proposition 2.2.  Otherwise, after scalar extension to an
+algebraic closure, the residual torus sets one nonzero-weight coordinate
+to one.  Weyl reflection exchanges positive and negative weights, leaving
+the five representative charts
+
+\[
+ s_0=1,\quad s_1=1,\quad s_2=1,\quad t_0=1,\quad t_1=1.    \tag{5.7}
+\]
+
+Each chart has eleven free coordinates.  Restrict the eleven moments
+
+\[
+ \mu_2,\mu_3,\ldots,\mu_{12}.                              \tag{5.8}
+\]
+
+At one displayed integral point on each chart, exact evaluation of the
+eleven-by-eleven Jacobian gives a nonzero integer determinant.
+
+> **Proposition 5.2.** On every chart orbit in (5.7), the restricted
+> moments (5.8) are algebraically independent.
+
+The exact points and determinants are stored in
+[`two_pair_sic_bidegree33_anchor_jacobians.json`](../artifacts/generated-results/two_pair_sic_bidegree33_anchor_jacobians.json).
+This proves that (5.8) is dimension-sized on every full mixed anchor chart.
+It does **not** prove that its zero fiber is empty.  The remaining full
+anchor problem is now a finite collection of eleven-equation affine
+zero-fiber tests rather than an unspecified fifteen-variable locus.
+
 ## 6. Generalized continuation
 
 Further full-coefficient Gröbner elimination is no longer the primary
@@ -545,6 +599,7 @@ Run
 
 ```bash
 .venv/bin/python scripts/verify_two_pair_sic_bidegree33_sextic_slice.py
+.venv/bin/python scripts/verify_two_pair_sic_bidegree33_anchor_jacobians.py
 ```
 
 The checker evaluates (2.5), verifies the exact nonzero minor (2.7), proves
@@ -557,3 +612,11 @@ moments, verifies the containments and power certificates (4.2)--(4.3),
 verifies the direct ideal equalities (4.5)--(4.6), proves (5.4),
 reproduces the finite-field calculation (5.5), and writes
 `artifacts/generated-results/two_pair_sic_bidegree33_frontier.json`.
+The second checker proves Proposition 5.2 and writes the five exact
+Jacobian certificates.  Modular reconnaissance of the full chart ideals,
+which is evidence only, is run separately with
+
+```bash
+.venv/bin/python scripts/explore_two_pair_sic_bidegree33_full_anchor.py \
+  --prime 101 --max-order 12 --algorithm slimgb
+```

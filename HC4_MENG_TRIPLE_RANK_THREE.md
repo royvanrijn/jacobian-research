@@ -109,11 +109,18 @@ Write the remaining variable as \(m\), and write the quadratic and linear
 coefficients involving it as
 
 \[
- q_{xm}xm+q_{ym}ym+\ell_m m.
+ \frac12q_{mm}m^2+q_{xm}xm+q_{ym}ym+\ell_m m.
 \]
 
-For either rank-two orbit in (2.2), the complete coefficient ideal of
-\(J(s)\) is
+For either rank-two orbit in (2.2), the degree-five part of \(J(s)\) is
+
+\[
+ \frac32q_{mm}a_3
+ \det\operatorname{Hess}_{x,y}(a_3),
+\]
+
+so \(q_{mm}=0\).  The complete remaining coefficient ideal of \(J(s)\)
+is then
 
 \[
  (q_{xm},q_{ym},\ell_m)^2.                           \tag{2.3}
@@ -121,7 +128,14 @@ For either rank-two orbit in (2.2), the complete coefficient ideal of
 
 Hence \(s\) is independent of \(m\).
 
-For the rank-one orbit \(x^3\), put
+For the rank-one orbit \(x^3\), the degree-four part is
+
+\[
+ 9x^4(q_{yy}q_{mm}-q_{ym}^2).
+\]
+
+Thus the quadratic form on the cubic kernel plane \(\langle y,m\rangle\)
+is singular.  Choose \(m\) in its kernel, so \(q_{mm}=q_{ym}=0\), and put
 
 \[
  a=q_{xy},\quad b=q_{xm},\quad c=q_{yy},\quad
@@ -186,8 +200,9 @@ Here \(\deg s\le3\) and \(\deg g\le5\).  Moh's plane degree bound makes
 an automorphism.  It has no collision.
 
 Otherwise the binary bordered invariant in (3.1) vanishes.  The
-two-variable singular-polynomial-Hessian classification applied to
-\(t\,s(x,y)\) says that \(s\) is a polynomial in one linear form.  If its
+three-variable singular-polynomial-Hessian classification applied to
+\(t\,s(x,y)\) gives a constant Hessian-kernel direction.  The special
+form \(t\,s\) then says that \(s\) is a polynomial in one linear form.  If its
 degree were at least two, its gradient would vanish somewhere over the
 algebraic closure, making the first bordered Hessian row zero.  Therefore
 \(s\) is linear.  Normalize it to \(s=c+x\).

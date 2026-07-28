@@ -280,8 +280,10 @@ identity slice this gives the current 20-pair, 60-term incumbent.
 
 At pair dimension two, the canonical route is now closed under the
 normalized Keller constraint.  The
-[Keller-constrained theorem](KELLER_CONSTRAINED_SIC2.md) proves that the
-first pure equation
+[dual-linear theorem](DUAL_LINEAR_SIC2.md) proves more generally that the
+first two pure equations close every
+\(p=\zeta\mathbin{\cdot}H\), without a Keller hypothesis.  On the
+normalized Keller subclass, its sharper first-moment corollary says that
 \(\mathcal E_2(\zeta\mathbin\cdot H)=\operatorname{tr}JH=0\), together with
 \(\det J(z-H)=1\), forces
 \[

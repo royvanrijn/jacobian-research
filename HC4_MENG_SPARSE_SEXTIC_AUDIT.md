@@ -508,10 +508,13 @@ has no constant binary kernel direction, but its full Hessian contributes
 determinant face, not a constant-Hessian collision candidate.
 
 The remaining coordinate-chart problem is simultaneous cubic and sextic
-interaction, including \(q_2+h_3+h_4+h_6\).  The pure quartic chart is
-`HC4HQ1`, the cubic--quartic chart is `HC4CQ1`, and the quartic--sextic
-chart is `HC4E46`.  Non-coordinate coisotropic embeddings remain a
-separate geometric route.
+interaction with
+\(\operatorname{rank}\operatorname{Hess}(h_6)\le2\).  The rank-three
+part of \(q_2+h_3+h_4+h_6\) is closed by `HC4T31` in
+[`HC4_MENG_TRIPLE_RANK_THREE.md`](HC4_MENG_TRIPLE_RANK_THREE.md).
+The pure quartic chart is `HC4HQ1`, the cubic--quartic chart is `HC4CQ1`,
+and the quartic--sextic chart is `HC4E46`.  Non-coordinate coisotropic
+embeddings remain a separate geometric route.
 
 ## Reproduction
 

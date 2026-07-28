@@ -61,13 +61,13 @@ also gives a
 displayed four-real cubic from six terms to four without changing its
 dimension or degree; no global term-minimality claim is made.
 For the remaining two-pair Image problem, the
-[Keller-constrained theorem](extended-geometry/KELLER_CONSTRAINED_SIC2.md)
-settles every normalized canonical polynomial \(p=w\mathbin{\cdot}H(z)\):
-the Keller identity and the first pure contraction force
-\(H=(b,-a)f(ax+by)\), and
-\(\mathcal E_2(gp^m)=0\) whenever \(m>\deg_z g\).  This all-degree,
-nonhomogeneous result is restricted to Keller-origin polynomials and does
-not settle arbitrary \(\operatorname{SIC}(2)\).
+[dual-linear theorem](extended-geometry/DUAL_LINEAR_SIC2.md)
+settles every polynomial \(p=w\mathbin{\cdot}H(z)\), without a Keller
+hypothesis: the first two pure contractions force
+\(H=c+(b,-a)f(ax+by)\), after which every fixed mixed contraction vanishes
+eventually with an explicit degree bound.  Thus the complete dual-degree-one
+stratum is closed.  The normalized Keller-origin result is the sharper
+first-moment corollary; arbitrary \(\operatorname{SIC}(2)\) remains open.
 The
 [bidegree-\((2,2)\) theorem](extended-geometry/TWO_PAIR_SIC_BIDEGREE22_FRONTIER.md)
 proves that the first six pure contractions cut out exactly the prime

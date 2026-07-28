@@ -21,8 +21,8 @@ has a nonzero constant direction along which s is independent.  After
 that direction is selected, the shared cotangent and terminal HC(2)
 identities complete the reduction.  The conceptual inputs not checked here
 are Gordan--Noether, the elementary binary-cubic orbit classification,
-the two-variable singular-Hessian classification, HC(3), HC(2), and Moh's
-plane degree bound.
+the three-variable singular-Hessian classification, HC(3), HC(2), and
+Moh's plane degree bound.
 """
 
 from __future__ import annotations
@@ -83,7 +83,7 @@ assert sp.expand(
 
 
 # 2. The isotropic bordered coefficient.
-x, y, m, t = sp.symbols("x y m t")
+x, y, m, t, scale = sp.symbols("x y m t scale")
 u = (x, y, m)
 s_generic = sp.Function("s")(x, y, m)
 gradient_generic = sp.Matrix([sp.diff(s_generic, variable) for variable in u])
@@ -105,7 +105,9 @@ assert sp.expand(
 # cubic.  The rank-two binary orbits are x*y*(x+y) and x^2*y.  Add a
 # general quadratic and linear part and reconstruct the coefficient ideal
 # of the bordered invariant.
-qxx, qxy, qxm, qyy, qym = sp.symbols("qxx qxy qxm qyy qym")
+qxx, qxy, qxm, qyy, qym, qmm = sp.symbols(
+    "qxx qxy qxm qyy qym qmm"
+)
 lx, ly, lm = sp.symbols("lx ly lm")
 parameters = (qxx, qxy, qxm, qyy, qym, lx, ly, lm)
 quadratic = (
@@ -115,17 +117,22 @@ quadratic = (
     + qyy * y**2
     + 2 * qym * y * m
 ) / 2
+full_quadratic = quadratic + qmm * m**2 / 2
 linear = lx * x + ly * y + lm * m
 
 
-def bordered_coefficients(cubic: sp.Expr) -> list[sp.Expr]:
-    polynomial = linear + quadratic + cubic
+def bordered_invariant_of(polynomial: sp.Expr) -> sp.Expr:
     gradient = sp.Matrix(
         [sp.diff(polynomial, variable) for variable in u]
     )
     hessian = sp.hessian(polynomial, u)
+    return sp.expand((gradient.T * hessian.adjugate() * gradient)[0])
+
+
+def bordered_coefficients(cubic: sp.Expr) -> list[sp.Expr]:
+    polynomial = linear + quadratic + cubic
     invariant = sp.Poly(
-        sp.expand((gradient.T * hessian.adjugate() * gradient)[0]),
+        bordered_invariant_of(polynomial),
         x,
         y,
         m,
@@ -149,6 +156,22 @@ rank_two_square = [
     lm**2,
 ]
 for cubic in (x * y * (x + y), x**2 * y):
+    # Before qmm is omitted, the degree-five part forces it to vanish.
+    scaled = sp.Poly(
+        bordered_invariant_of(linear + full_quadratic + cubic).subs(
+            {x: scale * x, y: scale * y, m: scale * m}
+        ),
+        scale,
+    )
+    binary_hessian_determinant = sp.hessian(cubic, (x, y)).det()
+    assert sp.expand(
+        scaled.coeff_monomial(scale**5)
+        - sp.Rational(3, 2)
+        * qmm
+        * cubic
+        * binary_hessian_determinant
+    ) == 0
+
     coefficient_ideal = sp.groebner(
         bordered_coefficients(cubic),
         *parameters,
@@ -165,7 +188,11 @@ for cubic in (x * y * (x + y), x**2 * y):
         assert coefficient_ideal.reduce(generator.as_expr())[1] == 0
 
 
-# 4. The rank-one binary orbit is x^3.  Its coefficient ideal has radical
+# 4. The rank-one binary orbit is x^3.  The degree-four part first makes
+# the quadratic restriction to the cubic kernel plane singular.  Choose m
+# in that kernel, which justifies qmm=0 in the normalized quadratic above;
+# the remaining equations also force qym=0.  The coefficient ideal then
+# has radical
 #
 #   P1 intersection P2,
 #   P1=(qym,qyy,qxm*ly-qxy*lm),  P2=(lm,qym,qxm).
@@ -174,6 +201,17 @@ for cubic in (x * y * (x + y), x**2 * y):
 # radical inclusions exactly.  The displayed four generators generate the
 # intersection set-theoretically; the elementary branch split is described
 # in the canonical note.
+rank_one_full_scaled = sp.Poly(
+    bordered_invariant_of(linear + full_quadratic + x**3).subs(
+        {x: scale * x, y: scale * y, m: scale * m}
+    ),
+    scale,
+)
+assert sp.expand(
+    rank_one_full_scaled.coeff_monomial(scale**4)
+    - 9 * x**4 * (qyy * qmm - qym**2)
+) == 0
+
 rank_one_coefficients = bordered_coefficients(x**3)
 rank_one_ideal = sp.groebner(
     rank_one_coefficients,
@@ -205,7 +243,7 @@ for generator, power in zip(intersection_generators, radical_powers):
 # 5. If the cubic part is zero, write s=ell+a_2.  The degree-two and
 # degree-zero pieces of the bordered invariant are the standard adjugate
 # identities used to choose a constant direction.
-u1, u2, u3, scale = sp.symbols("u1 u2 u3 scale")
+u1, u2, u3 = sp.symbols("u1 u2 u3")
 ell1, ell2, ell3 = sp.symbols("ell1 ell2 ell3")
 d11, d12, d13, d22, d23, d33 = sp.symbols(
     "d11 d12 d13 d22 d23 d33"

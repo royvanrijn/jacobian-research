@@ -350,6 +350,7 @@ The evidence must be kept at its proved strength.
 | all of \(V_3\) | \(\mu_1,\ldots,\mu_{13}\) are algebraically independent, but the degree-\(63\) Hilbert numerator coefficient is \(-2186\), so they cannot define the nullcone | exact over \(\mathbb Q\); an extra semistable zero component exists |
 | all of \(V_3\) | \(\mu_1,\ldots,\mu_{12},\mu_{14}\) have exact Jacobian rank thirteen and pass the necessary Hilbert numerator test through degree \(100\) | exact over \(\mathbb Q\); corrected zero fiber still open |
 | maximal-torus fixed diagonal slice in \(V_3\) | moments \(1,2,3,4\) have only the origin as a common zero, with seventh-power certificates for all four diagonal coefficients | exact over \(\mathbb Q\) |
+| full non-null \(F_2\) branch in \(V_3\) | after \(F_2=2XT\), five residual-torus chart orbits cover the non-diagonal locus; \(\mu_2,\ldots,\mu_{12}\) have exact Jacobian rank eleven on every representative chart | exact over \(\mathbb Q\); all five affine zero fibers remain open |
 | pure \(\operatorname{Sym}^2,\operatorname{Sym}^4,\operatorname{Sym}^6\) in \(V_3\) | moments cut out the corresponding binary-form nullcones | exact over \(\mathbb Q\) |
 | \(\operatorname{Sym}^4\oplus\operatorname{Sym}^2\) in \(V_3\), with \(F_2=2cXT\) | moments through order six imply \(c^6=0\) | exact over \(\mathbb Q\) |
 | \(\operatorname{Sym}^6\oplus\operatorname{Sym}^2\) in \(V_3\), with \(F_2=2cXT\) | even moments through order fourteen imply \(c^{25}=0\) | only over \(\mathbb F_{32003}\) |
