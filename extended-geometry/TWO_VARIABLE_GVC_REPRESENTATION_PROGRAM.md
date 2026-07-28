@@ -71,6 +71,11 @@ the entire \(r=2,\deg P\le3\) cell: the double-line quadratic orbit has
 one apparent second-moment cancellation, killed exactly at moment three,
 and every surviving branch in both quadratic orbits has a strict weighted
 degree separator.  Thus the first \(r=2\) target has \(\deg P\ge4\).
+Although a squarefree tangent cone formally factors into smooth branches,
+this does not transport powers: a multiplicative conjugate of a
+derivation is a derivation, so a constant-coefficient umbral conjugate
+must have linear symbol.  Exploiting formal branches therefore requires a
+new multilinear identity, not an algebra-coordinate straightening.
 
 The later
 [two-pair SIC counterexample](TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md)

@@ -271,6 +271,10 @@ converse theorem shows that fixed linear translation followed by one
 diagonal coefficient works exactly for split homogeneous symbols, so it
 cannot reach an irreducible heat-type symbol such as
 \(\xi_x+\xi_y^2\).
+Formal Hensel or umbral straightening cannot repair this
+multiplicatively: an algebra-automorphism conjugate of a derivation is
+still a derivation, forcing every constant-coefficient conjugate to have
+linear symbol.
 For every remaining nonhomogeneous pair, the same filtration proves that
 each fixed number of leading homogeneous layers of
 \(\Lambda^m(QP^m)\) vanishes eventually.  Any counterexample defect must

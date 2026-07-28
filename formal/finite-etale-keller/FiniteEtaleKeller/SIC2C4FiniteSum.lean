@@ -545,6 +545,47 @@ theorem repeatedBetaSum_recurrence (n s : ℕ) :
   intro k hk
   exact h_term k hk
 
+/-- A remainder expanded in powers of `2X+1` contributes exactly the
+corresponding finite repeated-pole jet; the finite-sum part of (4.8d). -/
+theorem repeatedPoleRemainderSum_eq_jet
+    (m r : ℕ) (c : ℕ → ℚ) :
+    (∑ k ∈ range (m + 1),
+      (-1 : ℚ) ^ k * (m.choose k : ℚ) *
+        ((∑ j ∈ range r, c j * (2 * k + 1 : ℚ) ^ j) /
+          (2 * k + 1 : ℚ) ^ r)) =
+      ∑ j ∈ range r, c j * repeatedBetaSum m (r - j) := by
+  calc
+    ∑ k ∈ range (m + 1),
+        (-1 : ℚ) ^ k * (m.choose k : ℚ) *
+          ((∑ j ∈ range r, c j * (2 * k + 1 : ℚ) ^ j) /
+            (2 * k + 1 : ℚ) ^ r)
+      = ∑ k ∈ range (m + 1),
+          ∑ j ∈ range r, c j * repeatedBetaTerm m (r - j) k := by
+            apply sum_congr rfl
+            intro k _
+            rw [sum_div, mul_sum]
+            apply sum_congr rfl
+            intro j hj
+            have hj_lt : j < r := by simpa using hj
+            have hden : (2 * k + 1 : ℚ) ≠ 0 := by positivity
+            have hpow :
+                (2 * k + 1 : ℚ) ^ r =
+                  (2 * k + 1 : ℚ) ^ (r - j) *
+                    (2 * k + 1 : ℚ) ^ j := by
+              rw [← pow_add]
+              congr 1
+              omega
+            rw [repeatedBetaTerm, hpow]
+            field_simp [hden]
+            ring
+    _ = ∑ j ∈ range r,
+          ∑ k ∈ range (m + 1), c j * repeatedBetaTerm m (r - j) k := by
+            rw [sum_comm]
+    _ = ∑ j ∈ range r, c j * repeatedBetaSum m (r - j) := by
+      apply sum_congr rfl
+      intro j _
+      rw [repeatedBetaSum, mul_sum]
+
 /-- Creative-telescoping recurrence for the residual beta sum. -/
 theorem betaSum_recurrence (n : ℕ) :
     (2 * (n + 1) + 1 : ℚ) * betaSum (n + 1) =

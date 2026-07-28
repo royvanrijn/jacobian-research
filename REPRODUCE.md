@@ -2150,6 +2150,11 @@ second-moment cancellation and the decisive third moment
 \(-4608C^3p_{xy^2}^3\); in the distinct-line orbit it verifies the
 triangular second-moment branches.  The written strict weighted-degree
 cutoffs turn the surviving branches into an all-order theorem.
+The accompanying written no-go for formal umbral straightening is
+proof-theoretic: conjugation by an algebra automorphism preserves the
+Leibniz rule, while a locally finite formal constant-coefficient operator
+is a derivation only when its symbol is linear.  No bounded computation is
+used for that statement.
 
 The first rank-efficient ordinary-Laplacian lift is excluded by
 
