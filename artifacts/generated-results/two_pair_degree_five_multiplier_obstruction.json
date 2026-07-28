@@ -1,0 +1,19 @@
+{
+  "format": "two-pair-degree-five-multiplier-obstruction-v1",
+  "field": "characteristic zero",
+  "family": "L*F with L=a*R+b*Z+c*W+e*T",
+  "moments_used": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "solution_set": "b=c=e=0; equivalently L=a*R",
+  "nonradial_branch": {
+    "q": "8019*u**4 - 623736*u**2 + 3219760",
+    "p": "136323*u**6 - 5359284*u**4 - 174020976*u**2 - 802761152",
+    "gcd": "1",
+    "resultant": "97842802725670657299880334741299150646484103418606547061702656"
+  },
+  "written_source": "extended-geometry/TWO_PAIR_DEGREE_FIVE_MULTIPLIER_OBSTRUCTION.md"
+}

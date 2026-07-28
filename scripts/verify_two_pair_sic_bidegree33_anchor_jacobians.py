@@ -258,6 +258,16 @@ def check_exact_pivot_reduction() -> dict[str, object]:
         parameters[5],
         parameters[11],
     ) == 0
+    coefficient_a = -expected_s5_coefficient / 103680
+    coefficient_b = -expected_t4_coefficient / 17280
+    assert sp.diff(coefficient_a, parameters[10]) == 1
+    assert sp.diff(coefficient_a, parameters[4]) == 0
+    assert sp.diff(coefficient_b, parameters[4]) == -3
+    assert sp.diff(coefficient_b, parameters[10]) == 0
+    t3_value = sp.expand(-(coefficient_a - parameters[10]))
+    s4_value = sp.expand((coefficient_b + 3 * parameters[4]) / 3)
+    assert parameters[10] not in t3_value.free_symbols
+    assert parameters[4] not in s4_value.free_symbols
 
     return {
         "normalized_second_moment": str(expected),
@@ -275,6 +285,14 @@ def check_exact_pivot_reduction() -> dict[str, object]:
                 "s5 coefficient nonzero; then t4 coefficient nonzero; "
                 "then both coefficients zero"
             ),
+            "constant_boundary_pivots": {
+                "A_t3_derivative": 1,
+                "B_s4_derivative": -3,
+                "A_zero_eliminates": "t3",
+                "A_B_zero_additionally_eliminates": "s4",
+                "A_zero_B_open_effective_variables": 9,
+                "A_B_zero_effective_variables": 8,
+            },
         },
     }
 

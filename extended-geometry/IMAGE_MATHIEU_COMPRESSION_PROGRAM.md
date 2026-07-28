@@ -303,12 +303,14 @@ balanced degree is four.  The
 all degrees for symbols with at most two distinct roots and closes the
 quartic \((2,1,1)\) orbit by a first-five-moment radical certificate.
 The [split-symbol theorem](SPLIT_SYMBOL_GVC_THEOREM.md) goes further:
-complete factor polarization and the Laurent constant-term theorem prove
-the GVC conclusion for every homogeneous binary operator of order \(d\)
-and every polynomial of degree at most \(d\).  Thus the remaining GVC(2)
-route needs a nonhomogeneous operator or polynomial degree greater than the
-operator order; finite-moment nullcone classification remains a separate
-SIC-strengthening.
+translated complete polarization and the Laurent constant-term theorem
+prove the GVC conclusion for every homogeneous binary operator and every
+polynomial, with no degree restriction.  Thus the remaining GVC(2) route
+needs a genuinely nonhomogeneous operator; the
+[separable escape obstruction](SEPARABLE_GVC_ESCAPE_OBSTRUCTIONS.md)
+also excludes degree at most the lowest positive order and the
+arbitrary-degree factor-unit class.  Finite-moment nullcone classification
+remains a separate SIC-strengthening.
 The continuing representation program and the distinction between unequal
 bidegree and genuinely nonhomogeneous mixtures are recorded in
 [`TWO_VARIABLE_GVC_REPRESENTATION_PROGRAM.md`](TWO_VARIABLE_GVC_REPRESENTATION_PROGRAM.md).
@@ -356,9 +358,51 @@ contraction of a normalized plane Keller correction.  This excludes only
 Keller provenance; it does not close Track A.
 
 Further linear output or source quotients of that artifact have already
-been exhausted.  Resume this track only with one of:
+been exhausted.  The first nonlinear identity-slice class is now exhausted
+as well: the
+[Keller-provenance compression audit](KELLER_PROVENANCE_COMPRESSION.md)
+proves
+\[
+ \{P\in\mathbb Q[X]_{\leq5}:P\circ V=P\}
+ =\mathbb Q[X_{20}]_{\leq5}.
+\]
+Thus no invariant polynomial of degree at most five exposes a second identity
+output independent of the known homogenizing coordinate.  The same audit
+shows that literal inverse-recurrence dependency pruning still uses all
+twenty active coordinates and that no already stored degree-lowering circuit
+has a smaller identity slice.  The invariant statement is an exact nonlinear
+class obstruction; the recurrence and circuit conclusions have their
+narrower scopes stated in that note.
 
-1. a nonlinear collision-preserving quotient;
+At degree six, both possible correction channels from the lower-degree
+near-invariant are also closed. Two exact torus gradings reduce them to
+Lie-derivative blocks of sizes 103 and 1604; both blocks are injective and
+both required defects lie outside their images. The remaining degree-six
+question is only whether a genuinely new homogeneous sextic invariant exists.
+
+The same audit program now backtraces the near-invariant through the frozen
+BCW circuit. In the 24-dimensional rank-compressed homogenization,
+\[
+Q=c_4s-v_3v_5,
+\]
+and on the stable source section \(v_3=-xz,\ v_5=-xy\), so \(Q=x^2yz=M\).
+Thus \(Q(V)-Q=-Ms^2\) is a shared-factor gate-residual identity. This explains
+the low-degree rank-one resemblance to the Hopf construction without
+identifying the two cancellation mechanisms.
+
+There is also an exact lower bound for non-invariant semiconjugacies. On the
+twenty-variable slice, the first thirteen iterates of both the multiplier
+\(X_0\) and the quadratic collision observable \(X_{18}-X_6X_8\) are
+algebraically independent. Any rational semiconjugate quotient carrying
+either observable therefore has dimension at least thirteen. The modular
+rank remains thirteen through twenty-five iterates at the tested point, but
+that plateau is experimental and does not prove a thirteen-dimensional
+quotient.
+
+Resume this track only with one of:
+
+1. a nonlinear collision-preserving quotient outside the degree-at-most-five
+   invariant-slice class;
 2. a different degree-lowering/homogenizing circuit before contraction;
 3. a new smaller noninvertible Keller presentation;
 4. a proof that a contraction witness derived from the inverse recurrence

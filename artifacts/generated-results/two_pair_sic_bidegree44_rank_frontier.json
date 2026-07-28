@@ -1,0 +1,45 @@
+{
+  "format": "two-pair-sic-bidegree44-rank-frontier-v1",
+  "field": "characteristic zero",
+  "principal_invariant": "rank of the 5-by-5 coefficient matrix C",
+  "certified_frontier": {
+    "lower_bound": 2,
+    "upper_bound": 5,
+    "exact_value": null,
+    "status": "open interval",
+    "lower_bound_reason": "the split-symbol theorem followed by fixed dual differentiation excludes every rank-one SIC point",
+    "upper_bound_reason": "the exact witness has det(C)=48"
+  },
+  "rank_strata": {
+    "1": {
+      "dimension": 9,
+      "status": "excluded exactly"
+    },
+    "2": {
+      "dimension": 16,
+      "status": "open"
+    },
+    "3": {
+      "dimension": 21,
+      "status": "open"
+    },
+    "4": {
+      "dimension": 24,
+      "status": "open"
+    },
+    "5": {
+      "dimension": 25,
+      "status": "counterexample exists",
+      "coefficient_matrix_determinant": 48
+    }
+  },
+  "formula_replay_orders": 4,
+  "one_sided_endomorphism_trace_powers_1_through_5": [
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "written_source": "extended-geometry/TWO_PAIR_SIC_BIDEGREE44_RANK_FRONTIER.md"
+}

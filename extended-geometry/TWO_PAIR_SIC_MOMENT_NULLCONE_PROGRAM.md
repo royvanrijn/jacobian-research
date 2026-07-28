@@ -2,7 +2,8 @@
 
 ## 1. Status and objective
 
-The all-degree conjecture proposed in this note is false.  The
+The all-degree conjecture proposed in this note is false in every degree
+\(d\geq4\).  The
 [bidegree-\((4,4)\) two-pair counterexample](TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md)
 gives
 \[
@@ -11,14 +12,87 @@ gives
  \quad(m\geq1).
 \]
 Thus its moment-zero point is not in the one-sided nullcone and
-\(\mathrm{MN}_4\) fails.  In particular, unrestricted
+\(\mathrm{MN}_4\) fails.  More generally, the invariant-power family
+\[
+ F_d=R^{d-4}F
+\]
+satisfies
+\[
+ \mathcal E_2(F_d^m)=0,\qquad
+ \mathcal E_2(ZF_d^m)=\frac{(dm+2)!\,m!}{(2m+1)!!}\ne0
+\]
+for every \(d\geq4\) and \(m\geq1\).  Hence \(\mathrm{MN}_d\) fails for
+every \(d\geq4\), with no parity or congruence restriction.  In particular,
+unrestricted
 \(\operatorname{SIC}(2)\) is false.
+
+Combining ordinary powers with invariant multiplication gives the stronger
+family
+\[
+ G_{r,k}=R^kF^r,\qquad d=4r+k,
+\]
+with
+\[
+ \mathcal E_2(G_{r,k}^m)=0,\qquad
+ \mathcal E_2(ZG_{r,k}^m)
+ =\frac{(dm+2)!\,(rm)!}{(2rm+1)!!}\ne0.
+\]
+Choosing \(r=\lfloor d/4\rfloor\) bounds the exact \(R\)-adic order by
+three.  In degrees divisible by four, \(F^{d/4}\) is \(R\)-primitive.
+The endpoint profiles
+\(\rho_h(z)=(1-z)(1+z)^{h-1}\) further give explicit \(R\)-primitive
+witnesses \(\Phi_h\in V_{4h}\) that are not proper powers, detected by the
+positive integrals
+\[
+ \int_0^1(1-v^2)^m(1+v^2)^{(h-1)m}\,dv.
+\]
+Every polynomial in the classified one-profile Hopf class has minimal
+balanced degree divisible by four, so that mechanism cannot produce
+primitive witnesses in the other congruence classes.
+Since the invariant ring on one vector and one covector is \(k[R]\), the
+invariant-multiplier strategy cannot remove the residual radial factor in
+the other three congruence classes.  Their \(R\)-primitive status is open.
+
+The first degree-five multiplicative gate is nevertheless closed.  For
+the quartic seed \(F\), an arbitrary bilinear multiplier
+\[
+ L=aR+bZ+cW+eT
+\]
+satisfies the first four pure identities for \(LF\) only when \(L=aR\).
+The exact elimination and coprime residual polynomials are in the
+[degree-five multiplier obstruction](TWO_PAIR_DEGREE_FIVE_MULTIPLIER_OBSTRUCTION.md).
+Thus a primitive point of \(V_5\), if one exists, cannot be obtained by
+simply multiplying the known seed by a noninvariant bilinear.
+
+Finite prefixes require separate care.  The primitive family
+\[
+ G_{d,\lambda}=R^{d-4}F+\lambda Z^d
+\]
+has its first \(d\) pure moments zero but an explicitly nonzero moment of
+order \(d+1\) for \(\lambda\ne0\).  See the
+[primitive-prefix obstruction](TWO_PAIR_PRIMITIVE_PREFIX_OBSTRUCTION.md).
+Consequently no proposed degree-\(d\) primitive classification can rely
+only on moments through order \(d\).
+The same phase argument excludes every nonzero correction
+\(\sum_{j\geq1}c_jR^{d-j}Z^j\) from all-order propagation: its least
+positive phase \(s\) is detected at moment \(s+1\).
+The opposite-pair calculation now excludes every pair
+\(Z^sT^{5-s},W^sT^{5-s}\) in degree five.  Odd heights and even heights
+of phase at least three have uniform all-degree phase certificates; the
+exceptional phase-one pair \(ZT^4,WT^4\) is forced to zero by moments
+\(2,3,4\) and an exact nonzero resultant.  In higher degrees, only the
+uniform even-height low phases \(s=1,2\) remain open within this monomial
+pair ansatz.
+Odd height delays detection further: the primitive family
+\(R^{d-4}F+\lambda Z^{d-1}T\) survives through moment \(2d-1\) and fails
+explicitly at moment \(2d\).  Thus a consecutive primitive cutoff must
+reach order at least \(2d\).
 
 The representation theory, nullcone incidence geometry, Hilbert-series
 tests, and exact bidegree-\((2,2)\) and \((3,3)\) calculations below remain
 valid at their stated scopes.  They now serve a degree-by-degree
 classification program: \(\mathrm{MN}_2\) is true, \(\mathrm{MN}_3\)
-remains open, and \(\mathrm{MN}_4\) is false.
+remains open, and \(\mathrm{MN}_d\) is false for every \(d\geq4\).
 
 For \(d\geq 1\), let \(V_d\) be the space of two-pair forms of bidegree
 \((d,d)\), and put

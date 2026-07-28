@@ -55,7 +55,15 @@
       ],
       "s5_coefficient": "-622080*s1**2*t1 + 311040*s1*s2*t0 + 311040*s1*t2 + 311040*s2*t1 - 207360*s3*t0 + 311040*t0 - 103680*t3",
       "t4_coefficient": "-207360*s1*s3 - 483840*s1*t0*t1 + 311040*s1 + 155520*s2**2 + 241920*s2*t0**2 + 51840*s4 + 34560*t0*t2 + 207360*t1**2",
-      "next_branches": "s5 coefficient nonzero; then t4 coefficient nonzero; then both coefficients zero"
+      "next_branches": "s5 coefficient nonzero; then t4 coefficient nonzero; then both coefficients zero",
+      "constant_boundary_pivots": {
+        "A_t3_derivative": 1,
+        "B_s4_derivative": -3,
+        "A_zero_eliminates": "t3",
+        "A_B_zero_additionally_eliminates": "s4",
+        "A_zero_B_open_effective_variables": 9,
+        "A_B_zero_effective_variables": 8
+      }
     }
   },
   "s0_sparse_boundary_slice": {

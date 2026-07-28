@@ -54,6 +54,20 @@ formal-to-algebraic contact problem, not an ordinary tangent quotient.
 For Gaussian moments, Long's explicit five-term polynomial settles GMC
 negatively in three real variables and, by adjoining unused coordinates, in
 every dimension `n>=3`.  Broad high-dimensional searches are archived.
+The accompanying
+[Hopf-lift classification](extended-geometry/HOPF_LIFT_CLASSIFICATION.md)
+shows that endpoint contact is exactly the polynomiality condition, derives
+the full binomial mixed-jet ladder, and proves Long's mechanism unique at
+minimum profile degree.  It also classifies the full
+\(p=x^{-1}(C(x)+D(x)t^2)\) numerator classes through
+\((\deg C,\deg D)\le(5,7)\).  The respective exact cutoffs are three, six,
+eight, ten, and twelve pure jets; in every rectangle the only all-order
+component is Long's \(D=-C^3\) family.  In arbitrary degree the pure jets reconstruct
+\(D\) triangularly from \(C\), while \(d-2\) eventual tangent directions
+remain invisible in the \((d,d+2)\) rectangle; a uniform proof must therefore
+be nonlinear.  The fixed cases motivate the precise \(2d+2\)-jet uniform
+rigidity conjecture.  The note does not classify general low-degree sphere
+polynomials or general \(V_4\).
 The two-pair seed behind the repository's three-pair Image-Mathieu witness
 also gives a
 [four-term cubic counterexample in four real variables](extended-geometry/THREE_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md#31-four-real-gaussian-consequence):
@@ -77,10 +91,80 @@ satisfies
  \mathcal E_2(QF^m)=\frac{(4m+2)!\,m!}{(2m+1)!!}\ne0
 \quad(m\geq1).
 \]
+More generally, \(F_d=R^{d-4}F\) has bidegree \((d,d)\) and
+\[
+ \mathcal E_2(F_d^m)=0,\qquad
+ \mathcal E_2(QF_d^m)=\frac{(dm+2)!\,m!}{(2m+1)!!}\ne0.
+\]
+Thus \(\mathrm{MN}_d\) fails for every \(d\geq4\), with no parity or
+congruence restriction.
+The stronger family \(R^kF^r\), where \(d=4r+k\) and \(0\leq k\leq3\),
+bounds the radial order by three and is \(R\)-primitive whenever
+\(4\mid d\).  A separate explicit Hopf-profile family gives
+\(R\)-primitive witnesses that are not proper powers in every degree
+divisible by four.  Whether the other congruence classes admit
+\(R\)-primitive witnesses remains open.
+The first primitive degree-five gate is closed: if
+\(L=aR+bZ+cW+eT\), vanishing of the first four pure moments of \(LF\)
+forces \(L=aR\).  Thus no noninvariant bilinear multiplier of the quartic
+seed reaches a primitive point of \(V_5\); a genuine two-profile,
+trace-free, or nonmultiplicative construction is required.
+There is also a sharp warning for finite searches: the \(R\)-primitive
+family \(R^{d-4}F+\lambda Z^d\) has pure moments
+\(1,\ldots,d\) equal to zero, while moment \(d+1\) is an explicit nonzero
+multiple of \(\lambda\).  The odd-height family
+\(R^{d-4}F+\lambda Z^{d-1}T\) is more deceptive: all moments below \(2d\)
+vanish, and moment \(2d\) is explicitly nonzero.  Thus at least \(2d\)
+consecutive moment orders are needed in a prefix cutoff that excludes
+these elementary primitive families.
+More generally, every nonzero correction
+\(\sum_{j\geq1}c_jR^{d-j}Z^j\) is detected exactly one order after its
+least positive phase, so the entire positive-phase triangular sector is
+excluded from all-order propagation.
+The opposite-pair obstruction is broader.  Every odd-height pair
+\(Z^sT^{d-s},W^sT^{d-s}\), and every even-height pair with \(s\geq3\),
+is excluded in all degrees by three explicit moments.  A separate exact
+elimination for \(RF+aZT^4+bWT^4\) closes the only remaining
+even-height phase in degree five.  Hence no opposite monomial pair in
+degree five preserves all pure moments; moments \(2,3,4\) already close
+the exceptional phase-one pair.
 Since the one-pair theorem is known, the minimum failing SIC pair
 dimension is exactly two.  The witness is bidegree \((4,4)\), has sixteen
 expanded terms, and has full \(5\times5\) coefficient-matrix rank, so it
 is genuinely nonseparable.
+The exact
+[local-moduli calculation](extended-geometry/TWO_PAIR_COUNTEREXAMPLE_LOCAL_MODULI.md)
+at this displayed \(F\) gives trivial effective
+\(\operatorname{PGL}_2\)-stabilizer, orbit dimension three, and a
+thirteen-dimensional tangent space to the all-moment-zero locus.  An
+all-order coefficient identity reduces the infinite linearized system to
+twelve independent functionals, and the first lifting obstruction has
+seven independent quadrics.  Modulo orbit and scaling, those quadrics
+define a degree-three thickening of an explicit five-plane.  Every
+direction on the reduced five-plane has an exact polynomial lift through
+cubic order, so the first unresolved obstruction is fourth order.  The
+nullcone has empty local germ at \(F\).
+The explicit family
+\[
+ F_{a,b}=\frac{aR+bZ}{2}
+ \left(2W(aR+bZ)^2-2abR^3-b^2R^2Z\right)
+\]
+has all pure moments zero and a nonzero \(Z\)-mixed defect in every order.
+Its ratio \(b/a\) is a diagonal orbit parameter, while \(a^2b\) is a
+genuine radial modulus.  Thus the local quotient contains a
+positive-dimensional family of inequivalent counterexamples; this does
+not claim that the curve is the whole local quotient.
+The
+[bidegree-\((4,4)\) rank frontier](extended-geometry/TWO_PAIR_SIC_BIDEGREE44_RANK_FRONTIER.md)
+uses the split-symbol theorem to exclude the complete rank-one Segre cone.
+Thus the certified coefficient-rank interval is \(2\leq r_{\min}\leq5\);
+ranks two through four remain open.
+On the rank-at-most-two determinantal variety, the first thirteen moments
+are algebraically independent but cannot be homogeneous parameters: the
+required invariant Hilbert numerator has coefficient \(-5266\) in degree
+\(69\). Hence their zero fiber contains a semistable point. Replacing
+\(\mu_{13}\) by \(\mu_{14}\) is the first Hilbert-compatible
+dimension-sized system; its exact zero fiber is the next rank-two gate.
 
 The earlier
 [dual-linear theorem](extended-geometry/DUAL_LINEAR_SIC2.md)
@@ -169,13 +253,51 @@ fiber at cross-ratio \(2\).  The
 [split-symbol theorem](extended-geometry/SPLIT_SYMBOL_GVC_THEOREM.md)
 then closes the balanced homogeneous GVC conclusion in every degree:
 factor the binary symbol completely, polarize its directional derivatives,
-and apply Laurent Newton separation.  The same defect bound allows every
-nonhomogeneous \(P\) with degree at most the homogeneous operator order.
+retain the full translation \(P(z+Vt)\), and apply one generic Laurent
+Newton separator.  This proves GVC for arbitrary \(P\), including
+\(\deg P>\operatorname{ord}\Lambda\).
+The
+[separable escape obstruction](extended-geometry/SEPARABLE_GVC_ESCAPE_OBSTRUCTIONS.md)
+also treats nonhomogeneous binary operators: if \(r\) is the lowest
+positive homogeneous order of \(\Lambda\), then GVC holds whenever
+\(\deg P\leq r\).  Arbitrary degree is safe when \(\Lambda\) is a
+homogeneous split factor times a differential operator with nonzero
+constant term.  Its conversion theorem shows that separated multiplicative
+polarizations, rank-one dilations, and nonlinear substitutions cannot
+produce the new witness: its coefficient-matrix rank is five, so at least
+five additive rank-one channels are required, while coefficient extraction
+loses multiplicativity and hence does not formally transport powers.  A
+converse theorem shows that fixed linear translation followed by one
+diagonal coefficient works exactly for split homogeneous symbols, so it
+cannot reach an irreducible heat-type symbol such as
+\(\xi_x+\xi_y^2\).
+For every remaining nonhomogeneous pair, the same filtration proves that
+each fixed number of leading homogeneous layers of
+\(\Lambda^m(QP^m)\) vanishes eventually.  Any counterexample defect must
+therefore migrate deeper through the degree filtration with \(m\).
+The entire binary drift--diffusion island closes: if the operator has a
+nonzero linear part and no terms above order two, its first two pure
+equations imply GVC for arbitrary \(P\).  A highest-\(y\)-degree argument
+forces \(P=ay+b\), followed by an explicit derivative-count cutoff.
+More generally, every separated drift
+\(\partial_x+h(\partial_y)\) is safe for arbitrary \(P\); the lowest
+order of \(h\) supplies the unique leading product-defect coefficient.
+Formal Weierstrass division then closes every higher-order coupling:
+every binary symbol with nonzero linear part factors as a locally finite
+differential automorphism times such a separated drift.  Thus the whole
+lowest-order-one class satisfies GVC for arbitrary \(P\), already from
+the first two pure equations.  Exact cubic and quartic finite-jet
+calculations independently reproduce the successive square obstructions.
+At lowest positive order two, every cubic \(P\) is safe as well: the two
+binary-quadratic symbol orbits reduce to explicit second- and third-moment
+branches, after which a strict weighted-degree separator proves all mixed
+vanishing.
 The full SIC nullcone equality is now false, but the new witness has full
 coefficient-matrix rank and therefore lies outside the separable GVC
-Segre cone.  The remaining separable GVC frontier still requires a
-nonhomogeneous operator or polynomial degree greater than the operator
-order.  The
+Segre cone.  The remaining nonhomogeneous frontier has lowest positive
+operator order at least two, requires polynomial degree greater than that
+order, and must avoid the factor-unit architecture.  If the lowest order
+is exactly two, its polynomial degree must now be at least four.  The
 [low-dimensional GVC program](extended-geometry/TWO_VARIABLE_GVC_REPRESENTATION_PROGRAM.md)
 also records the separate ordinary-Laplacian route: quadraticize the
 factored third-order Dvorsky symbol by a nonlinear polarization, minimizing
@@ -467,9 +589,24 @@ henselization the cubic cover is the free sum of a quadratic Kummer sheet
 and a trivial sheet.  Cusp braid monodromy closes the ordinary-cusp locus
 too: its only three-sheet actions give either that `2+1` Kummer model or the
 finite-free cubic root cover.  Thus every point-flatness defect is supported
-at a closed worse-than-ordinary-cusp point of that discriminant.  For a
-reduced Koszul defect this is now quantitative: the ternary-cubic symbol
-`h` produces the degree-six tangent equation
+at a worse-than-ordinary-cusp point.  An exact leading-model audit now
+stratifies the nine nonzero ternary-cubic symbols and the zero symbol.  In
+every squarefree homogeneous row the cotangent presentation is already
+saturated, while the support-bidual defect has length six; double and
+triple lines initially fail purity.  The zero homogeneous tensor passes the
+module tests but is nowhere generically étale.  One explicit order-four
+lift restores the same finite length-six support defect in all ten rows
+without creating cotangent point torsion.  Along the seven squarefree
+one-parameter families scaling this lift, the relative `Ext^2` presentation
+is exactly parameter-independent and retains multiplicity six.  For a
+smooth homogeneous symbol the resulting algebra is already a normal
+integral global defect model, but its elliptic projective incidence surface
+makes its geometric divisor class group non-finitely generated, excluding
+an `A^3` open.  These results still do not cover arbitrary normal
+nonhomogeneous lifts, so universal support-saturation and Keller-open
+compatibility remain the precise gaps.
+For a reduced Koszul defect the branch jump is quantitative: the
+ternary-cubic symbol `h` produces the degree-six tangent equation
 `Disc(h restricted to r-perp)`.  Squarefree `h` forces branch multiplicity
 six, while a non-squarefree symbol forces multiplicity at least seven.
 The same algebraic mechanism controls the remaining degree-forty-two

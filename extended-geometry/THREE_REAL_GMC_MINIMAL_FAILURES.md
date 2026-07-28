@@ -211,6 +211,15 @@ This is the necessary second half of a symbolic certificate: a finite
 moment ideal finds a component, while (12) proves that the component survives
 all moments.
 
+The same formal-square mechanism has a complementary Hopf-coordinate
+classification in
+[`HOPF_LIFT_CLASSIFICATION.md`](HOPF_LIFT_CLASSIFICATION.md).  There the
+polynomiality condition becomes endpoint contact, and the adjacent mixed
+moment extends to a full binomial ladder.  Neither classification enlarges
+the scope of the other: the present theorem is scheme-theoretic inside the
+Gaussian rank-one ansatz (1), while the Hopf theorem treats one affine phase
+profile with arbitrary endpoint polynomial \(R\).
+
 ## 5. Equivalence and the unique template
 
 The complex orthogonal change

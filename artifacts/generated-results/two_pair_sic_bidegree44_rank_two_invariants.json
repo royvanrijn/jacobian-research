@@ -1,0 +1,153 @@
+{
+  "format": "two-pair-sic-bidegree44-rank-two-invariants-v1",
+  "field": "characteristic zero",
+  "determinantal_locus": "rank(C)<=2 in Mat_5",
+  "affine_dimension": 16,
+  "generic_invariant_quotient_dimension": 13,
+  "jacobian_certificate": {
+    "prime": 1000003,
+    "rank_two_point": [
+      [
+        8,
+        10,
+        1,
+        8,
+        4
+      ],
+      [
+        19,
+        1,
+        4,
+        6,
+        17
+      ],
+      [
+        435,
+        157,
+        82,
+        214,
+        345
+      ],
+      [
+        220,
+        184,
+        34,
+        168,
+        140
+      ],
+      [
+        295,
+        73,
+        58,
+        126,
+        245
+      ]
+    ],
+    "degrees_1_through_13_rank": 13,
+    "degrees_1_through_12_and_14_rank": 13
+  },
+  "hilbert_series": {
+    "method": "Cauchy decomposition for the rank-two determinantal ring and SL2 weight-zero-minus-weight-two multiplicity",
+    "checked_through_degree": 100,
+    "initial_coefficients_0_through_13": [
+      1,
+      1,
+      5,
+      13,
+      53,
+      149,
+      483,
+      1274,
+      3370,
+      7994,
+      18398,
+      39472,
+      81962,
+      161896
+    ],
+    "degrees_1_through_13": {
+      "first_negative_numerator_coefficient": {
+        "degree": 69,
+        "value": -5266
+      },
+      "hsop_status": "excluded exactly"
+    },
+    "degrees_1_through_12_and_14": {
+      "negative_coefficients_through_cutoff": [],
+      "last_nonzero_degree_through_cutoff": 82,
+      "hsop_status": "necessary Hilbert test only"
+    }
+  },
+  "rank_one_boundary": {
+    "affine_dimension": 9,
+    "generic_invariant_quotient_dimension": 6,
+    "moments_1_through_6_jacobian_rank": 6,
+    "degrees_1_through_6_hilbert_numerator": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        4,
+        4
+      ],
+      [
+        5,
+        2
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        7,
+        5
+      ],
+      [
+        8,
+        8
+      ],
+      [
+        9,
+        5
+      ],
+      [
+        10,
+        7
+      ],
+      [
+        11,
+        2
+      ],
+      [
+        12,
+        4
+      ],
+      [
+        13,
+        1
+      ],
+      [
+        14,
+        1
+      ],
+      [
+        16,
+        1
+      ]
+    ],
+    "numerator_coefficient_sum": 50,
+    "hsop_status": "necessary Hilbert test only",
+    "remaining_geometry": "finitely many exceptional squarefree quartic cross-ratios and the uniform low-root finite cutoff"
+  },
+  "consequence": "the first thirteen moments have a semistable common zero on rank(C)<=2; its exact rank may be one or two",
+  "written_source": "extended-geometry/TWO_PAIR_SIC_BIDEGREE44_RANK_FRONTIER.md"
+}

@@ -11,13 +11,34 @@ one-sided nullcone, with the explicit mixed cutoff \(m>\deg Q\).
 More generally, the
 [split-symbol theorem](SPLIT_SYMBOL_GVC_THEOREM.md) proves the GVC
 conclusion in every balanced homogeneous degree: every binary operator
-symbol splits into linear factors, and complete polarization converts its
-pure values to constant terms of powers of one Laurent polynomial.
+symbol splits into linear factors, and translated complete polarization
+converts its pure values to constant terms of powers of one Laurent
+polynomial.  Retaining the translation variable removes the earlier
+degree restriction: homogeneous binary operators satisfy GVC for
+arbitrary \(P\).
+
+The later
+[separable escape obstruction](SEPARABLE_GVC_ESCAPE_OBSTRUCTIONS.md)
+closes a further nonhomogeneous class.  If \(r\) is the lowest positive
+homogeneous order of a binary constant-coefficient operator \(\Lambda\),
+then GVC holds for every \(P\) of degree at most \(r\).  It also proves
+GVC for arbitrary \(P\) when \(\Lambda\) is a homogeneous split factor
+times a differential operator with nonzero constant term.  It further proves
+that separated multiplicative auxiliary specialization, rank-one
+dilation, and nonlinear Segre substitution cannot convert the new
+two-pair witness: the output remains rank one, whereas the witness has
+rank five.  Coefficient extraction can sum rank-one channels only by
+losing multiplicativity, so it supplies no automatic all-order transfer.
+Moreover, fixed linear translation followed by one diagonal coefficient
+represents exactly a product of powers of linear symbols.  The first
+remaining operator architectures must therefore use coupled coefficients,
+nonlinear translation, or an irreducible nonhomogeneous symbol.
 
 The two continuing targets are:
 
-1. treat nonhomogeneous operators or polynomials of degree greater than
-   the homogeneous operator order, and sharpen the split-symbol theorem to
+1. treat genuinely nonhomogeneous pairs with \(\deg P\) greater than the
+   lowest positive operator order and with no split homogeneous
+factor-unit decomposition, and sharpen the split-symbol theorem to
    finite pure-moment/nullcone certificates; and
 2. replace the third-order Dvorsky operator by a quadratic
    constant-coefficient operator using as few auxiliary variables as
@@ -26,6 +47,30 @@ The two continuing targets are:
 Neither target changes the certified dimension ledger.  In particular, the
 current upper bounds remain five variables for unrestricted
 constant-coefficient GVC and forty variables for ordinary-Laplacian GVC.
+
+The first target has an additional associated-graded gate.  For arbitrary
+nonhomogeneous \(\Lambda\), every fixed number of leading homogeneous
+layers of \(\Lambda^m(QP^m)\) vanishes eventually under the pure premise.
+Consequently a counterexample cannot live on a fixed leading face: its
+mixed defect must move to unbounded depth as \(m\) grows.
+If the operator has only linear and quadratic pieces and its linear part
+is nonzero, the first two moments close arbitrary \(P\).  In normalized
+coordinates, the unique highest \(y\)-degree term of the second moment is
+the square contribution from \(C^2P_{yy}^2\), forcing \(P=ay+b\).
+The same product-defect argument closes every separated drift
+\(\partial_x+h(\partial_y)\), even for formal \(h\), since derivative
+series act locally finitely on polynomials.  Formal Weierstrass division
+factors every binary symbol with nonzero linear part as
+\(U(\xi,\eta)(\xi+q(\eta))\), where \(U(\partial)\) is a locally finite
+differential automorphism.  This closes the entire lowest-order-one
+frontier for arbitrary \(P\).  Exact cubic and quartic jet computations
+give independent finite regressions of the factorization argument.
+Hence a remaining GVC(2) counterexample must have lowest positive
+operator order at least two.  The first three pure equations also close
+the entire \(r=2,\deg P\le3\) cell: the double-line quadratic orbit has
+one apparent second-moment cancellation, killed exactly at moment three,
+and every surviving branch in both quadratic orbits has a strict weighted
+degree separator.  Thus the first \(r=2\) target has \(\deg P\ge4\).
 
 The later
 [two-pair SIC counterexample](TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md)
@@ -209,6 +254,24 @@ powers; unequal bidegree by itself is not an open counterexample stratum.
 For ordinary homogeneous GVC, (2.1) is necessarily separable.  The new
 counterexample therefore belongs only to the larger SIC problem, while the
 Segre restriction remains the structural advantage available to GVC.
+
+Moreover, the rank obstruction is stable under every separated
+multiplicative conversion.  Evaluation after auxiliary polarization,
+separated restriction of a rank-one dilation, and nonlinear substitutions
+on the dual and coordinate factors all preserve the product form.  They
+therefore cannot produce the rank-five matrix (1.6).  A sum needs at least
+five rank-one channels.  Auxiliary coefficient extraction is not
+multiplicative, so a construction using it must prove new identities for
+every power rather than inherit the witness identities by specialization.
+
+For a nonhomogeneous operator
+\(\Lambda=\Lambda_r+\cdots+\Lambda_d\), the lowest-order theorem further
+shows that \(\deg P\leq r\) is safe.  In the pure premise, all higher
+operator pieces are killed by degree and one obtains
+\(\Lambda_r^m(P_r^m)=0\).  In the mixed expression only a bounded number
+of higher-order pieces can occur; the split-symbol Newton gap for
+\(\Lambda_r\) absorbs these bounded defects.  Thus nonhomogeneity alone is
+not an escape mechanism.
 
 ## 5. Rank-efficient quadraticization of the Dvorsky operator
 

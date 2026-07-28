@@ -1,0 +1,35 @@
+{
+  "certificates": [
+    {
+      "denominator_factors": [
+        "s1*t0-t1",
+        "s1^2-s2-(13/3)*t0^2"
+      ],
+      "denominator_products": [
+        "L*Q",
+        "L*Q^2"
+      ],
+      "groebner_basis_size": 3,
+      "mu6_remainder_terms": 6,
+      "mu7_remainder_terms": 6,
+      "prime": 47,
+      "quotient_length": 6
+    },
+    {
+      "denominator_factors": [
+        "s1*t0-t1",
+        "s1^2-s2-(13/3)*t0^2"
+      ],
+      "denominator_products": [
+        "L*Q",
+        "L*Q^2"
+      ],
+      "groebner_basis_size": 3,
+      "mu6_remainder_terms": 6,
+      "mu7_remainder_terms": 6,
+      "prime": 101,
+      "quotient_length": 6
+    }
+  ],
+  "scope": "exact rational-function-field calculations in two finite characteristics; reconstruction evidence, not a QQ unit certificate"
+}

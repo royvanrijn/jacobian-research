@@ -628,6 +628,77 @@ Hence this chart splits into \(A\ne0\), where \(\mu_3\) eliminates
 \(s_5\); \(A=0,B\ne0\), where it eliminates \(t_4\); and the common
 boundary \(A=B=0\). This is an exact two-step triangularization.
 
+There is a further constant-pivot layer which is useful computationally
+and does not require a saturation.  Namely,
+
+\[
+ \frac{\partial A}{\partial t_3}=1,\qquad
+ \frac{\partial A}{\partial s_4}=0,\qquad
+ \frac{\partial B}{\partial s_4}=-3,\qquad
+ \frac{\partial B}{\partial t_3}=0.                       \tag{5.12a}
+\]
+
+Thus \(A=0\) eliminates \(t_3\) globally.  On \(A=0,B\ne0\), the
+\(\mu_3\) pivot then eliminates \(t_4\), leaving nine effective variables
+after the inverse for \(B\) is included.  On \(A=B=0\), equations
+\(A,B\) eliminate \(t_3,s_4\) globally, leaving eight effective variables.
+In particular, the common-boundary system should not be submitted as ten
+variables together with the two equations \(A,B\); the substitutions in
+(5.12a) are exact affine coordinate eliminations.
+
+The resulting eight-variable boundary has a useful base--fiber form.
+Take the rational point
+
+\[
+ (s_1,s_2,s_3,t_0,t_1,t_2)
+ =\left(-3,-3,\frac{45973}{1026},-3,3,-3\right).          \tag{5.12b}
+\]
+
+After using \(A=B=\mu_2=0\) to recover \(t_3,s_4,s_6\), the third
+moment vanishes identically in the two remaining fiber variables
+\((s_5,t_4)\).  The next two moments are
+
+The exact polynomials \(\mu_4,\mu_5\in\mathbb Q[s_5,t_4]\) have total
+degrees two and three, respectively, and are coprime.  Their
+degree-reverse-lexicographic
+initial monomials are \(t_4^4,s_5t_4^2,s_5^2\), so the quotient has basis
+
+\[
+ 1,t_4,t_4^2,t_4^3,s_5,s_5t_4
+\]
+
+and length six.  Since finiteness and preservation of this standard
+monomial basis hold on a Zariski-open neighborhood, this proves:
+
+> **Proposition 5.2a (generic rank-six boundary fiber).** On a nonempty
+> characteristic-zero open subset of the six-variable \(\mu_3=0\) base,
+> the algebra \(\mathbb Q[s_5,t_4]/(\mu_4,\mu_5)\) is finite locally free
+> of rank six, with basis
+> \(1,t_4,t_4^2,t_4^3,s_5,s_5t_4\).
+
+This does not exclude the common moment zero fiber.  It replaces the
+eight-variable Gröbner problem on this open by six coefficient equations
+on the base for every later moment.
+
+The generic fiber calculation can also be performed over the rational
+function fields of the six base variables.  Exact runs in characteristics
+\(47\) and \(101\) both give a three-element Gröbner basis, quotient
+length six, and six-term normal forms for each of \(\mu_6,\mu_7\).
+Across the two primes the denominators reconstruct to products of
+
+\[
+ L=s_1t_0-t_1,\qquad
+ Q=s_1^2-s_2-\frac{13}{3}t_0^2,                           \tag{5.12d}
+\]
+
+beginning with \(LQ\) and \(LQ^2\).  Thus the computational continuation
+has three precise strata: the principal open \(LQ\ne0\), where later
+moments become six coefficient equations on the base, and the two
+degeneracy divisors \(L=0\) and \(Q=0\), where a separate fiber basis is
+required.  The agreement of two modular rational-function-field
+calculations is exact reconstruction evidence, but no
+characteristic-zero identity or zero-fiber exclusion is asserted here.
+
 One natural plane in the common boundary can already be closed. Put
 
 \[
@@ -752,8 +823,11 @@ with \(\mu_{14}\) tested afterward.
 Direct modular reconnaissance has not yet closed the first chart. The
 corrected system timed out within the recorded \(180\)-second runs over
 \(\mathbb F_{101}\) and \(\mathbb F_{43}\), with both Singular and
-`msolve`, after direct submission, the first pivot, and the boundary
-\(A=B=0\). Export of the fully substituted \(A\ne0\) branch produces
+`msolve`, after direct submission and the first pivot.  After the
+additional constant substitutions (5.12a), the eight-variable
+\(A=B=0\) boundary still timed out in recorded \(180\)-second Singular
+and `msolve` runs over \(\mathbb F_{47}\) and \(\mathbb F_{101}\).
+Export of the fully substituted \(A\ne0\) branch produces
 eleven equations in ten variables, but the recorded `msolve` run
 terminated inside the solver. Sparse encodings retain \(s_5\) or \(t_4\)
 and add the inverse-pivot relation, avoiding the expansion; the full

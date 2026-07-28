@@ -668,6 +668,37 @@ formalized in Lean.  The same Lean file proves the cube-zero endpoint used
 by the generic two-parameter certificate in
 `scripts/verify_hc4_quintic_two_parameter_symmetric_schur.py`.
 
+The companion module
+`FiniteEtaleKeller/SIC2C4FiniteSum.lean` formalizes the discrete all-order
+part of the second SIC2C4 proof: finite-difference vanishing below the
+difference order, the general denominator-remainder invariance for
+alternating quotient sums and its rank-one endpoint-residue specialization,
+the specialized normalized product polynomials, and the rational recurrence
+with explicit factorial/double-factorial evaluation for
+\[
+ B_m=\sum_{k=0}^m\frac{(-1)^k\binom mk}{2k+1}.
+\]
+It also identifies the product-polynomial values with the binomial
+coefficients in (4.4)--(4.5) and proves both normalized displayed finite-sum
+identities.  The generalized sums
+\[
+ B_{m,s}=\sum_{k=0}^m\frac{(-1)^k\binom mk}{(2k+1)^s}
+\]
+and their triangular repeated-pole recurrence
+\((2m+1)B_{m,s}=B_{m,s-1}+2mB_{m-1,s}\) are formalized as well.
+Build it with
+
+```bash
+lake build FiniteEtaleKeller.SIC2C4FiniteSum
+```
+
+The scalar chart identity and the monomial contraction/coefficient-
+extraction equality are also formalized.  Their linear assembly for the
+four-variable witness and the derivation of the chart constant terms remain
+written arguments plus an independent Python audit.  Accordingly this
+scoped module does not constitute an end-to-end Lean formalization of
+SIC2C4.
+
 Repository CI uses the first command for the paper artifact.  It does not pull
 the explicit arithmetic examples, degree-four barrier, or other companion
 developments into the publication certificate.

@@ -12,7 +12,9 @@ tests the five full Sym^6+Sym^4+Sym^2 charts over a finite field.  Its output
 is evidence only unless a separate characteristic-zero certificate is made.
 On the s0 chart it can also perform the exact mu_2 substitution and select
 one of the two principal opens or their common mu_3-pivot boundary before
-calling Singular or exporting the reduced variables to msolve.
+calling Singular or exporting the reduced variables to msolve.  On A=0 it
+uses the constant t3 pivot in A; on A=B=0 it additionally uses the constant
+s4 pivot in B.
 """
 
 from __future__ import annotations
@@ -269,31 +271,38 @@ for (equation=1;equation<=size(reducedI);equation++)
 """
     elif branch == "s0-B-open":
         branch_setup = """
-ideal boundaryA=std(A);
-poly thirdOnBoundary=reduce(reducedI[1],boundaryA);
+poly t3Value=-(A-t3);
+poly thirdOnBoundary=subst(reducedI[1],t3,t3Value);
 poly thirdRest=thirdOnBoundary+17280*B*t4;
 poly t4Value=thirdRest*binv/17280;
-ideal I=A,binv*B-1;
+ideal I=binv*B-1;
 for (equation=2;equation<=size(reducedI);equation++)
 {
-  I[size(I)+1]=subst(reducedI[equation],t4,t4Value);
+  I[size(I)+1]=subst(
+    subst(reducedI[equation],t3,t3Value),t4,t4Value
+  );
 }
 """
     elif branch == "s0-B-open-sparse":
         branch_setup = """
-ideal I=A,binv*B-1;
+poly t3Value=-(A-t3);
+ideal I=binv*B-1;
 for (equation=1;equation<=size(reducedI);equation++)
 {
-  I[size(I)+1]=reducedI[equation];
+  I[size(I)+1]=subst(reducedI[equation],t3,t3Value);
 }
 """
     else:
         assert branch == "s0-boundary"
         branch_setup = """
-ideal I=A,B;
+poly t3Value=-(A-t3);
+poly s4Value=(B+3*s4)/3;
+ideal I;
 for (equation=1;equation<=size(reducedI);equation++)
 {
-  I[size(I)+1]=reducedI[equation];
+  I[size(I)+1]=subst(
+    subst(reducedI[equation],t3,t3Value),s4,s4Value
+  );
 }
 """
     return common_setup + branch_setup
@@ -407,17 +416,21 @@ def prepare_s0_branch_for_msolve(
         output_variables = tuple(
             variable
             for variable in ring_variables
-            if variable not in ("s6", "t4")
+            if variable not in ("s6", "t3", "t4")
         )
     elif branch == "s0-B-open-sparse":
         ring_variables.append("binv")
         output_variables = tuple(
-            variable for variable in ring_variables if variable != "s6"
+            variable
+            for variable in ring_variables
+            if variable not in ("s6", "t3")
         )
     else:
         assert branch == "s0-boundary"
         output_variables = tuple(
-            variable for variable in ring_variables if variable != "s6"
+            variable
+            for variable in ring_variables
+            if variable not in ("s4", "s6", "t3")
         )
     completed = subprocess.run(
         [singular, "-q"],

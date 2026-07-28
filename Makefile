@@ -18,7 +18,7 @@ ALL_PAPERS := $(VERIFIED_PAPERS) $(PARKED_PAPERS) $(COMPANION_PAPERS)
 
 .PHONY: check verify verify-logged verify-minimal verify-core verify-geometry \
 	verify-theorems verify-regressions verify-derived verify-family \
-	verify-external-consequences verify-restricted-minima verify-two-real-gmc verify-factorial-moments verify-factorial-frontier verify-counterexample-scoreboard verify-plane-jc verify-plane-case2-residue-strata verify-plane-case2-j1-endpoint verify-plane-case2-maximal-gcd verify-plane-case2-gcd6 verify-plane-poisson-radical verify-plane-poisson-primary-charts verify-plane-poisson-separators verify-plane-poisson-primary-filtration verify-plane-poisson-filtered-modules verify-weighted-boundary verify-quartic-degree-drop-quantization \
+	verify-external-consequences verify-restricted-minima verify-two-real-gmc verify-sic2c4 verify-factorial-moments verify-factorial-frontier verify-counterexample-scoreboard verify-plane-jc verify-plane-case2-residue-strata verify-plane-case2-j1-endpoint verify-plane-case2-maximal-gcd verify-plane-case2-gcd6 verify-plane-poisson-radical verify-plane-poisson-primary-charts verify-plane-poisson-separators verify-plane-poisson-primary-filtration verify-plane-poisson-filtered-modules verify-weighted-boundary verify-quartic-degree-drop-quantization \
 	verify-plane-sparse-supports verify-plane-support-bridge \
 	verify-linear-torus-free verify-algebraic-torus-free \
 	verify-master \
@@ -257,6 +257,8 @@ verify-minimal-boundary:
 	$(PYTHON) scripts/verify_minimal_boundary_cubic.py
 	$(PYTHON) scripts/verify_cubic_marking_frontier.py
 	$(PYTHON) scripts/verify_cubic_normalization_frontend.py
+	$(PYTHON) scripts/verify_cubic_symbol_double_saturation.py
+	$(PYTHON) scripts/verify_cubic_symbol_deformation_saturation.py
 	Singular -q scripts/verify_cubic_double_saturation.sing
 	$(PYTHON) scripts/verify_cubic_gauge_straightening.py
 	$(PYTHON) scripts/verify_cubic_gauge_first_obstruction.py
@@ -459,10 +461,16 @@ verify-two-real-gmc:
 	$(PYTHON) scripts/verify_two_real_gmc_three_weight_low_degree.py
 	$(PYTHON) scripts/verify_two_real_gmc_resolvent_system.py
 
-verify-counterexample-scoreboard: verify-two-real-gmc
+verify-sic2c4:
+	$(PYTHON) scripts/verify_two_pair_image_mathieu_counterexample.py
+	$(SYSTEM_PYTHON) scripts/audit_two_pair_image_mathieu_coefficient_extraction.py
+	cd formal/finite-etale-keller && lake build FiniteEtaleKeller.SIC2C4FiniteSum
+
+verify-counterexample-scoreboard: verify-two-real-gmc verify-sic2c4
 	$(PYTHON) scripts/verify_three_real_gmc_rank_one_classification.py
 	$(PYTHON) scripts/audit_dvorsky_gvc5_counterexample.py
-	$(PYTHON) scripts/verify_two_pair_image_mathieu_counterexample.py
+	$(PYTHON) scripts/verify_separable_gvc_escape_obstructions.py
+	$(PYTHON) scripts/verify_binary_heat_quadratic_gvc.py
 	$(PYTHON) scripts/verify_minimal_counterexample_scoreboard.py
 
 verify-factorial-moments:

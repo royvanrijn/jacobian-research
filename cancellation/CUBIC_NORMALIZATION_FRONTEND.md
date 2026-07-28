@@ -1012,6 +1012,218 @@ exclude the defect from a boundary-minimal Keller map, because the present
 boundary invariant records divisorial components and different orders, not
 closed-point branch multiplicity.
 
+### Exact computation 1.8e -- symbol-stratified double saturation
+
+The order-three symbol can now be tested against the two canonical
+saturation modules, provided the chosen full multiplication tensor is kept
+explicit.  Put
+
+\[
+ A=\mathbb Q[x,y,z],\qquad
+ M=\operatorname{coker}\!\left(
+ A\mathop{\longrightarrow}^{(z,-y,x)^{\mathsf T}}A^3
+ \right),\qquad B=A\oplus M.
+\tag{1.16p}
+\]
+
+For a ternary cubic \(h\), let \(\phi_h\) be the homogeneous generalized
+triple-cover tensor from (1.16c).  The multiplication is recovered without
+choosing a punctured chart.  If \(r=(z,-y,x)\), its trace-free part
+\(\mu:\operatorname{Sym}^2M\to M\) is characterized by
+
+\[
+ \det(r,\mu(u,v),w)=3\phi_h(u,v,w),
+\tag{1.16q}
+\]
+
+and the scalar part is
+
+\[
+ s(u,v)=\operatorname{tr}_M(\mu_u\mu_v).
+\tag{1.16r}
+\]
+
+These formulas give a twelve-generator \(A\)-presentation of
+\(Q=\Omega_{B/A}\).  The kernel of
+
+\[
+ B\longrightarrow Q^3,\qquad
+ b\longmapsto(b\,de_1,b\,de_2,b\,de_3)
+\tag{1.16s}
+\]
+
+is \(\operatorname{Ann}_B(Q)\), so its first four syzygy coordinates give
+an \(A\)-presentation of
+\(T=B/\operatorname{Ann}_B(Q)\).  Exact Singular calculations give:
+
+| symbol stratum | \(\dim T\) | \(H^0_{(x,y,z)}(Q)\) | \(\operatorname{Ext}^2_A(T,A)\) |
+|---|---:|---:|---:|
+| smooth | \(2\) | \(0\) | length \(6\) |
+| nodal | \(2\) | \(0\) | length \(6\) |
+| cuspidal | \(2\) | \(0\) | length \(6\) |
+| line plus transverse conic | \(2\) | \(0\) | length \(6\) |
+| line tangent to conic | \(2\) | \(0\) | length \(6\) |
+| triangle | \(2\) | \(0\) | length \(6\) |
+| three concurrent lines | \(2\) | \(0\) | length \(6\) |
+| double line | \(3\) | \(0\) | dimension \(1\) |
+| triple line | \(3\) | \(0\) | dimension \(1\) |
+| zero tensor | \(3\) | \(0\) | \(0\) |
+
+Thus every squarefree homogeneous model passes conormal saturation but
+fails support saturation by a length-six canonical dual of \(C/T\).  The
+length-six module has three-dimensional top, is annihilated by
+\(\mathfrak m^2\), and therefore has Hilbert function
+\(3+3t\).  The repeated coefficient six is consequently a uniform
+two-layer invariant, not only an equality of total lengths.  The
+double- and triple-line homogeneous models have the wrong support
+dimension, so in particular they fail the purity hypothesis: their support
+obstruction is not finite length.  The zero homogeneous
+tensor passes both displayed module tests only because its square-zero
+algebra is nowhere generically étale; it is not a degree-three cover of the
+required generic kind.
+
+This last behavior is a property of the lift, not of the cubic symbol
+alone.  The order-four constraint space has dimension \(24\).  For one
+explicit integral linear combination of its exact kernel basis, adding the
+same order-four tensor to each of the nine nonzero orbit representatives
+and to the zero symbol
+gives
+
+\[
+ \dim T=2,\qquad H^0_{(x,y,z)}(Q)=0,\qquad
+ \dim_{\mathbb Q}\operatorname{Ext}^2_A(T,A)=6
+\tag{1.16t}
+\]
+
+in every row, including the double line, triple line, and zero symbol.
+Consequently no generically valid ternary-cubic stratum passes double
+saturation in these two exact leading models: the surviving obstruction is
+always support saturation once purity and generic étaleness are restored.
+
+There is also an exact deformation statement for the seven squarefree
+rows.  Let \(\psi _4\) be the order-four tensor used above and introduce a
+parameter \(t\).  Over
+\(\mathbb Q[t,x,y,z]\), the family
+
+\[
+ \phi_h+t\psi _4
+\tag{1.16ta}
+\]
+
+has uniformly saturated cotangent presentation.  Its relative
+\(\operatorname{Ext}^2\) module is supported scheme-theoretically on the
+\(t\)-axis, has no \(t\)-torsion, and has multiplicity six.  More strongly,
+the computed presentation is equal to the scalar extension of its
+specialization at \(t=0\).  Thus the length-six defect is flat and constant
+along each of these seven chosen deformation lines; it is not merely an
+agreement between their two endpoints.
+
+This computation does **not** prove lift-independence.  In particular it
+does not cover the full 24-parameter order-four space, show that every
+normal integral higher lift has a length-six support defect, or construct
+the distinguished Keller open.
+Proposition 1.8c supplies normal integral lifts abstractly, but the
+constrained genericity argument there does not identify their saturation
+modules.  The remaining sharp target is therefore:
+
+> Prove that every pure normal higher lift of a nonzero Koszul symbol has
+> \(C/T\ne0\), or exhibit a pure normal lift with \(C=T\) and then test
+> whether it can carry the globally compatible Keller open.
+
+### Proposition 1.8f -- the smooth homogeneous defect is normal but not affine-open compatible
+
+Let \(h\) be a smooth ternary cubic and let \(B_h=A\oplus M\) be the
+homogeneous algebra of Exact computation 1.8e.  Give \(x,y,z\) degree one
+and the three displayed generators of \(M\) degree two.  Then:
+
+1. \(B_h\) is a normal integral graded domain, finite of generic rank three
+   over \(A\);
+2. its only nonfree \(A\)-module fiber is the reduced Koszul defect at the
+   homogeneous vertex;
+3. \(\operatorname{Spec}B_h\) contains no open subset isomorphic to
+   \(\mathbb A^3\).
+
+Thus \(B_h\) is an explicit global normal cubic defect model, but it cannot
+be the canonical normalization of a Keller map with distinguished source
+\(\mathbb A^3\).
+
+#### Proof
+
+The relation \(ze_1-ye_2+xe_3\) has degree three.  Formula (1.16q) makes
+the trace-free part of \(e_i e_j\) quadratic in \(x,y,z\) times an \(e_k\),
+while (1.16r) makes its scalar part quartic.  Hence \(B_h\) has the stated
+positive grading.
+
+Because \(B_h\) is finite over \(A\), every homogeneous prime in
+\(\operatorname{Proj}B_h\) has at least one of \(x,y,z\) nonzero.  On this
+locus Proposition 1.8b identifies the projective cover with
+
+\[
+ Z_h=\{([r],[q])\in\mathbb P^2\times\mathbb P^2:
+       r\cdot q=0,\ h(q)=0\}.
+\tag{1.16u}
+\]
+
+The second projection makes \(Z_h\) a \(\mathbb P^1\)-bundle over the
+smooth plane cubic \(C_h\).  It is therefore smooth and integral.  The
+punctured homogeneous spectrum is the corresponding
+\(\mathbb G_m\)-torsor over \(Z_h\), so it too is smooth and integral.
+
+As an \(A\)-module,
+
+\[
+ B_h=A\oplus M,
+\]
+
+and \(M\) is reflexive.  Thus \(B_h\) is \(S_2\), and in particular the
+restriction map from \(B_h\) to the ring of sections on the punctured
+spectrum is injective.  The punctured spectrum is integral, so this
+injection excludes both zero divisors and nilpotents in \(B_h\).  Hence
+\(B_h\) is a domain.
+It is regular in codimension one because its punctured spectrum is smooth
+and the vertex has codimension three.  Serre's criterion now proves
+normality.  The fiber and Fitting assertions follow from Propositions
+1.5--1.8 and the fixed presentation of \(M\).
+
+It remains to exclude an affine-space open.  Base change to an algebraic
+closure \(\bar k\); an affine-space open over the original field would
+remain one after this base change.  Write
+\(X_{\bar k}=\operatorname{Spec}(B_h\otimes\bar k)\) and remove its
+codimension-three vertex.  The grading action is free there because at
+least one of the degree-one coordinates \(x,y,z\) is nonzero.  Hence the
+punctured spectrum is the \(\mathbb G_m\)-torsor associated with
+\(\mathcal O_{Z_h}(-1)\).  Removing the zero section of a line bundle gives
+
+\[
+ \operatorname{Pic}(X_{\bar k}\setminus\{0\})
+ \simeq
+ \operatorname{Pic}(Z_{h,\bar k})/
+ \mathbb Z[\mathcal O_{Z_h}(1)].
+\tag{1.16v}
+\]
+
+Normality and the codimension-three complement identify the left side with
+\(\operatorname{Cl}(X_{\bar k})\).  Since \(Z_h\to C_h\) is a
+projective-line bundle,
+\(\operatorname{Pic}^0(Z_{h,\bar k})\simeq
+\operatorname{Pic}^0(C_{h,\bar k})\), an elliptic curve.  The group
+\(\operatorname{Pic}^0(C_{h,\bar k})(\bar k)\) is not finitely generated,
+and quotienting \(\operatorname{Pic}(Z_{h,\bar k})\) by the one cyclic
+class in (1.16v) does not make it finitely generated.  Thus
+\(\operatorname{Cl}(X_{\bar k})\) is not finitely generated.
+
+If an open \(U\simeq\mathbb A^3_{\bar k}\) existed, the localization
+sequence for divisor class groups would make
+\(\operatorname{Cl}(X_{\bar k})\) generated by the finitely many
+divisorial components of its complement, because
+\(\operatorname{Cl}(\mathbb A^3_{\bar k})=0\).  This contradicts the
+preceding non-finite-generation.  QED
+
+The cone argument is special to the homogeneous lift.  For a general
+higher tensor the exceptional \(\operatorname{Pic}^0\) is only formal
+blowup data and need not algebraize in the local class group; this is
+exactly the warning in E6 of the closure protocol.
+
 Only after this constrained-lifting gate should a candidate be tested for:
 
 1. preservation of normality inside the chosen global or bounded-degree
@@ -2099,6 +2311,8 @@ Run
 
 ```bash
 .venv/bin/python scripts/verify_cubic_normalization_frontend.py
+.venv/bin/python scripts/verify_cubic_symbol_double_saturation.py
+.venv/bin/python scripts/verify_cubic_symbol_deformation_saturation.py
 .venv/bin/python plane-jc/cas/test_cubic_cusp_local_model.py
 Singular -q scripts/verify_cubic_double_saturation.sing
 ```
@@ -2111,6 +2325,17 @@ the degree-six line-section discriminants for every reduced ternary-cubic
 type, and the exact tangent-hyperplane quotient coordinates.  The Singular
 checker verifies the module-saturation formula (1.45) on a pure surface
 module with one closed-point cotangent summand.
+The symbol-stratified checker reconstructs the generalized triple-cover
+multiplication and the presentations of `T` and `Omega` for all nine
+nonzero ternary-cubic orbit representatives and the zero symbol.  It runs
+both saturation tests for the homogeneous tensor and for one explicit
+order-four lift.  These are exact leading-model computations, not a proof
+for arbitrary higher lifts.
+The deformation checker works over `Q[t,x,y,z]`.  For the seven squarefree
+symbols it verifies that the family obtained by scaling that order-four
+tensor has uniformly saturated cotangent presentation and a
+parameter-independent relative `Ext^2` presentation of multiplicity six
+on the collision axis.  It does not test arbitrary order-four directions.
 The cusp checker enumerates all nine transposition-valued \(B_3\)
 representations on three letters and verifies the monic cubic root model,
 the \(2+1\) Kummer model, and the curvilinear length-three cusp fiber.

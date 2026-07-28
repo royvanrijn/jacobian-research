@@ -1,0 +1,53 @@
+{
+  "format": "separable-gvc-escape-obstructions-v2",
+  "field": "characteristic zero",
+  "two_pair_witness": {
+    "bidegree": [
+      4,
+      4
+    ],
+    "coefficient_matrix_determinant": 48,
+    "coefficient_matrix_rank": 5
+  },
+  "separated_conversion": {
+    "one_channel_rank_bound": 1,
+    "minimum_additive_channels": 5,
+    "one_variable_coefficient_order_lower_bound": 4,
+    "coefficient_extraction_multiplicative": false
+  },
+  "all_order_theorem": {
+    "statement": "For a binary constant-coefficient operator with lowest positive order r, deg(P)<=r satisfies GVC.",
+    "split_symbol_strengthening": "A homogeneous split-symbol operator satisfies GVC for arbitrary polynomial degree.",
+    "factor_unit_extension": "Lambda=Lambda_0*Gamma satisfies GVC for arbitrary P when Lambda_0 is homogeneous split and Gamma(0)!=0.",
+    "single_coefficient_converse": "Fixed linear translation and one diagonal coefficient represent exactly products of powers of linear symbols.",
+    "associated_graded_obstruction": "For arbitrary nonhomogeneous binary Lambda, every fixed number of leading mixed homogeneous layers vanishes eventually.",
+    "quadratic_heat_class": "For Lambda with linear and quadratic pieces and deg(P)<=2, the first two pure equations imply GVC.",
+    "rank_one_quadratic_heat_class": "If the quadratic symbol has rank at most one, the first two pure equations imply GVC for arbitrary P.",
+    "binary_drift_diffusion_class": "Every binary operator with nonzero linear part and no piece above order two satisfies GVC after its first two pure equations, for arbitrary P.",
+    "separated_drift_class": "Every Lambda=dx+h(dy), including formal h acting locally finitely on polynomials, satisfies GVC for arbitrary P after its first two pure equations.",
+    "formal_drift_straightening": "Every binary Lambda with nonzero linear part factors formally as U(dx,dy)*(dx+q(dy)), with U a locally finite differential automorphism; hence it satisfies GVC for arbitrary P after its first two pure equations.",
+    "arbitrary_order_quadratic_polynomial_class": "Every binary Lambda with nonzero linear part satisfies GVC for deg(P)<=2 after its first two pure equations.",
+    "arbitrary_order_cubic_polynomial_class": "Every binary Lambda with nonzero linear part satisfies GVC for deg(P)<=3 after its first two pure equations; complete order-four and order-five terms do not cancel the decisive second-moment branches.",
+    "quartic_polynomial_regression": "For deg(P)<=4, the complete operator 7-jet gives the successive square branches 2304*C^4*p4^2, 15552*G^2*p4^2, and 39168*L^2*p4^2.",
+    "quadratic_leading_cubic_polynomial_class": "If the lowest positive operator order is two and deg(P)<=3, the first three pure equations imply GVC. The double-line cancellation branch is killed by -4608*C^3*p_xy2^3; every survivor has a strict weighted degree separator.",
+    "proof": "extended-geometry/SEPARABLE_GVC_ESCAPE_OBSTRUCTIONS.md",
+    "external_input": "Duistermaat--van der Kallen constant-term theorem",
+    "bounded_computation": false
+  },
+  "finite_regressions": {
+    "translated_polarization_orders": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "translated_polynomial_degree": 4,
+    "split_operator_order": 2,
+    "factor_unit_operator": "dx*dy*(1+dx+dy^2)",
+    "factor_unit_polynomial": "x^3",
+    "factor_unit_mixed_nonzero_orders_through_6": [
+      1,
+      2
+    ]
+  }
+}
