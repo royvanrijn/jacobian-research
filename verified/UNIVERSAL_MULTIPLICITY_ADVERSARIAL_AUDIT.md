@@ -7,13 +7,8 @@ The theorem in
 survives the checks below:
 
 \[
-\boxed{
-\begin{aligned}
-&|\mathcal R_K(A)|=\infty
-&&\text{for number fields }K\text{ and ranks }N\ge4,\\
-&|\mathcal R_K(A)|=\infty
-&&\text{for characteristic-zero }K\text{ and ranks }N\ge5.
-\end{aligned}}
+\boxed{|\mathcal R_K(A)|=\infty
+\quad\text{for characteristic-zero }K\text{ and ranks }N\ge3.}
 \]
 
 The audit found and corrected one field-extension issue in the quartic clean
@@ -31,8 +26,14 @@ The theorem is not independent of the repository's stable-normalization
 machinery.  Its stable-inequivalence conclusion imports:
 
 1. exact stable orbit classification on the quadratic-gauge coefficient
-   torus;
+   torus in ranks at least five;
 2. intrinsic weighted boundary selection and selected-root Torelli.
+3. stable functoriality of the normalized ramified-stratum Fitting divisor
+   for the power-shifted quartic gauges.
+4. stable functoriality of the complete boundary-component list for the
+   fiber-invisible cubic gauges.
+5. stable functoriality of normalized Fitting Newton polygons for the
+   all-degree common power shifts.
 
 Everything else in the proof is elementary polynomial algebra, standard
 quadratic-form arithmetic, or exact full-fiber reconstruction.
@@ -268,11 +269,11 @@ The normalized seed parameter
 is nonconstant, because otherwise the quadric would lie in one hyperplane.
 It therefore assumes infinitely many values on the good open.
 
-This arithmetic step is genuinely number-field-specific.  The explicit
+This weighted arithmetic step is genuinely number-field-specific.  The explicit
 anisotropic example in
 [LOW_RANK_MULTIPLICITY_BOUNDARIES.md](LOW_RANK_MULTIPLICITY_BOUNDARIES.md)
 shows that the same trace-chord argument does not work over every
-characteristic-zero field.
+characteristic-zero field.  It does not obstruct the power-shifted gauge.
 
 ## 7. Attack on quartic stable separation
 
@@ -294,7 +295,113 @@ stabilization.  This is precisely where the affine mark is load-bearing.
 Without it, the quartic Hessian reflection would identify rerooted seeds and
 the argument would fail.
 
-## 8. Dependency and evidence ledger
+## 8. Attack on the power-shifted quartic gauge
+
+For a translated quartic
+
+\[
+ G(S)=g_1S+g_2S^2+g_3S^3+g_4S^4,\qquad g_1g_3g_4\ne0,
+\]
+
+the new lift is
+
+\[
+ G_{P,m}(S)=g_1S+P(g_2S^2+g_3S^3)+g_4P^{m+4}S^4.
+\]
+
+The possible failure modes are:
+
+1. the higher `P`-power could destroy polynomiality or the Keller identity;
+2. the selected fiber could change;
+3. the generic degree could exceed four;
+4. the proposed support index could be chart-dependent.
+
+The paired quartic corrections pull back as
+
+\[
+ 4(g_4/g_1)t^{m+2}x^2q^{m+4},\qquad
+ -2(g_4/g_1)t^mx^4q^{m+4},
+\]
+
+so they are polynomial for every `m>=0`.  The marked-line calculation gives
+`\partial_SE_m=g_1D` and plane Jacobian `-2D`; the reciprocal chart gives
+`D^{-1}`, so the determinant remains `-2`.  At `P=1` the exponent disappears
+and the inverse polynomial is exactly `f(a+S)`.  It is squarefree of degree
+four, every root reconstructs, and the generic inverse equation is an
+irreducible quartic because it is primitive and linear in the target
+constant `C`.
+
+The normalized ramified stratum is intrinsically selected by its index-two
+boundary prime.  After deleting the unramified `P=0` vertex it is
+`\mathbb G_m^2`, and its relative Fitting generator has support
+
+\[
+ \{(0,0),(1,2),(m+4,3)\}.
+\]
+
+Stabilization adds only affine variables and no units.  Every induced
+automorphism of the unit lattice is in `GL_2(Z)`, while multiplication by a
+unit translates the support.  Both operations preserve the affine lattice
+index `2m+5`.  Thus distinct shifts cannot become stably equivalent.
+
+## 9. Attack on the all-degree common power shift
+
+For `N>=4`, shift every higher term together:
+
+\[
+ g_jP^jS^j\longmapsto g_jP^{j+m}S^j,\qquad4\le j\le N.
+\]
+
+Choosing the translation away from the finitely many derivative zero sets
+makes every `g_j`, for `j=3,...,N`, nonzero.  The termwise polynomiality
+inequality is `j+m>=j`; the marked-line identity remains
+`\partial_SE=g_1D`, so the determinant and complete selected fiber are
+unchanged.
+
+The `P=0` Newton polygon has affine blocks of lengths two and one followed
+by the single segment `(3,1)--(N,N+m)`.  Its affine residue ledger
+`(1,2)+(1,1)` intrinsically distinguishes this vertex from the repeated-root
+discriminant.  On the normalized ramified torus the full Fitting support has
+Newton vertices
+
+\[
+ (0,0),(4+m,3),(N+m,N-1),(1,2).
+\]
+
+Its normalized area is `2N-3+(N-2)m`, strictly increasing in `m`.  Stable
+torus automorphisms act by `GL_2(Z)` and Laurent units translate the polygon,
+so neither can change this area.
+
+## 10. Attack on the fiber-invisible cubic lift
+
+The cubic deformation is
+
+\[
+ G_{P,n}(S)
+ =g_1S+g_2PS^2+g_3P(1+P^{n-1}-P^2)S^3.
+\]
+
+The paired corrections are polynomial for `n>=4`, and direct substitution
+gives the same inverse-derivative identity `\partial_SE=g_1D` and determinant
+`-2`.  At `P=1`, the factor in parentheses equals one, so the selected
+squarefree inverse cubic is unchanged and all three roots reconstruct.
+
+The possible boundary-count failure is at `P=0`: a cubic inverse root tends
+to infinity there.  It is not a boundary sheet.  The two finite roots are
+the degree-two affine `q=0` branch, while the third root is the regular
+affine divisor `t=0`; its target coordinates are `B=-2y` and a coordinate
+linear in `z`.  Thus all three sheets are affine over the generic point of
+`P=0`.
+
+By contrast, every root of `h_n=1+P^{n-1}-P^2` is nonzero and simple.  Its
+Newton polygon has blocks of lengths two and one.  The length-one branch has
+`v(S)=v(D)=v(q)=-1`, so it is a genuine unramified boundary branch.  The
+polynomial `h_n` has exactly `n-1` such roots.  Reconstruction away from
+`h_n=0` and the repeated-root discriminant proves exhaustion.  Hence the
+canonical boundary has exactly `n` geometric target components, a count
+unchanged by stabilization.
+
+## 11. Dependency and evidence ledger
 
 | step | status | source |
 |---|---|---|
@@ -304,6 +411,9 @@ the argument would fail.
 | quintic invariant | exact algebra | quintic checker |
 | all-`N>=6` invariant | exact algebra | higher-degree checker |
 | quadratic stable separation | theorem | quadratic-gauge stable moduli |
+| quartic power-shift identity and lattice index | exact algebra plus stable normalization | quartic gauge checker and power-shifted note |
+| cubic fiber-invisible lift and boundary count | exact algebra plus stable normalization | cubic gauge checker and fiber-invisible note |
+| all-degree common shift and Fitting Newton area | exact algebra plus stable normalization | all-degree power-shift checker and theorem |
 | quartic isotropy over number fields | external arithmetic theorem | Hasse--Minkowski and local `u=4` |
 | weighted stable separation | theorem | decorated normalization and selected-root Torelli |
 | degree `4,5,6` concrete regressions | exact algebra | multiplicity witness cards |
@@ -312,13 +422,16 @@ No bounded search is used to prove a universal quantifier.  The witness
 cards are regressions and exposition; the universal proof remains the
 symbolic and arithmetic argument above.
 
-## 9. Reproduction
+## 12. Reproduction
 
 Run
 
 ```bash
 .venv/bin/python scripts/verify_quadratic_gauge_stable_moduli.py
 .venv/bin/python scripts/verify_universal_quartic_fiber_multiplicity.py
+.venv/bin/python scripts/verify_universal_quartic_gauge_multiplicity.py
+.venv/bin/python scripts/verify_universal_cubic_gauge_multiplicity.py
+.venv/bin/python scripts/verify_universal_power_shifted_gauge_multiplicity.py
 .venv/bin/python scripts/verify_universal_quintic_fiber_multiplicity.py
 .venv/bin/python scripts/verify_universal_higher_degree_fiber_multiplicity.py
 .venv/bin/python scripts/verify_universal_multiplicity_witness_cards.py

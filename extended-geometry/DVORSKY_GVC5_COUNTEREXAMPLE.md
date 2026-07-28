@@ -103,36 +103,94 @@ hypothesis holds for every \(m\), but for the single fixed multiplier
 
 ## 3. The five-pair SIC consequence
 
-Let
+Write
 
 \[
- \lambda(w)=w_t(w_aw_d-w_bw_c),\qquad
- f(w,z)=\lambda(w)P(z),
+ z=(t,a,b,c,d),\qquad
+ \zeta=(\tau,\alpha,\beta,\gamma,\delta),
 \]
 
-where \(z=(t,a,b,c,d)\), and let
+and consider exactly the Image-Conjecture subspace
 
 \[
- \mathcal E(w^\alpha q(z))=\partial_z^\alpha q(z).
+ \mathcal M_5
+ =\sum_{x\in\{t,a,b,c,d\}}(\partial_x-\zeta_x)
+   \mathbb C[\zeta,z].                                      \tag{3.1}
+\]
+
+The following is a compact explicit Mathieu-subspace counterexample:
+
+\[
+\boxed{
+\begin{aligned}
+ f&=\tau(\alpha\delta-\beta\gamma)(t+c)(ad+bt),\\
+ g&=-c.
+\end{aligned}}                                               \tag{3.2}
+\]
+
+In particular, \(f\) has degree six and eight terms when expanded, all with
+coefficients \(\pm1\), while \(g\) is a linear monomial.
+
+To verify the claim, let
+
+\[
+ \mathcal E(\zeta^\mu q(z))=\partial_z^\mu q(z).
+\]
+
+Zhao's image-kernel identity gives
+
+\[
+ \mathcal M_5=\ker\mathcal E,                                \tag{3.3}
+\]
+
+since replacing every generator \(\zeta_x-\partial_x\) by its negative does
+not change its image.  Equivalently, if
+
+\[
+ h=\sum_{\mu,\nu}c_{\mu,\nu}\zeta^\mu z^\nu,
+\]
+
+then
+
+\[
+ h\in\mathcal M_5
+ \quad\Longleftrightarrow\quad
+ \sum_{\mu}(\mu+\rho)!\,c_{\mu,\mu+\rho}=0
+ \quad\text{for every }\rho\in\mathbb N^5.                  \tag{3.4}
+\]
+
+Thus membership is a finite list of exact coefficient identities for each
+fixed polynomial.
+
+Now let
+
+\[
+ \lambda(\zeta)=\tau(\alpha\delta-\beta\gamma),\qquad
+ P(z)=(t+c)(ad+bt).
 \]
 
 Then, term by term,
 
 \[
  \mathcal E(f^m)=\Lambda^m(P^m),\qquad
- \mathcal E(Qf^m)=\Lambda^m(QP^m).                           \tag{3.1}
+ \mathcal E(gf^m)=\Lambda^m(gP^m).                           \tag{3.5}
 \]
 
 Thus every positive power of \(f\) lies in \(\ker\mathcal E\), while
-\(Qf^m\notin\ker\mathcal E\) for every \(m\geq2\).  Hence
+\(gf^m\notin\ker\mathcal E\) for every \(m\geq1\).  Explicitly, the value
+for \(m=1\) is \(c+2t\), and for every \(m\geq2\) it is the nonzero polynomial
+in (1.3).  Hence
 \(\ker\mathcal E\) is not a Mathieu--Zhao space already for five contraction
 pairs:
 
 \[
- \boxed{\neg\operatorname{SIC}(5).}                          \tag{3.2}
+ \boxed{
+ f^m\in\mathcal M_5\ (m\geq1),\qquad
+ gf^m\notin\mathcal M_5\ (m\geq1).
+ }                                                           \tag{3.6}
 \]
 
-The ambient SIC polynomial ring has ten variables, five \(w\)'s and five
+The ambient SIC polynomial ring has ten variables, five \(\zeta\)'s and five
 \(z\)'s.  This pair count must not be confused with the five-variable count
 in GVC(5).
 
@@ -176,11 +234,13 @@ The resulting ambient-dimension ledger is
 
 \[
  2\leq n_{\rm GVC}\leq5,\qquad
- 2\leq r_{\rm SIC}\leq5,\qquad
+ 2\leq r_{\rm SIC}\leq3,\qquad
  2\leq n_{\Delta{\rm GVC}}\leq40,\qquad
  6\leq n_{\rm HN,4}\leq42.                                  \tag{5.1}
 \]
 
+The SIC upper endpoint now comes from the separate
+[`THREE_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md`](THREE_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md).
 The lower endpoints use GVC(1) and SIC(1).  The last two upper endpoints
 remain the repository's ordinary-Laplacian and homogeneous quartic HN
 witnesses.
@@ -271,5 +331,5 @@ This is an exhaustive negative result only in the declared lattice slice.
 It does not exclude rational points outside the coefficient boxes, symbols
 outside (6.2), nonlinear multipliers, or later behavior of the cutoff
 survivors.  In particular it does **not** establish GVC(4) or SIC(4), and
-the certified frontier remains the five-variable/five-pair
-Long--Dvorsky witness.
+the unrestricted GVC frontier remains the five-variable Long--Dvorsky
+witness.  The overall SIC frontier has independently dropped to three pairs.

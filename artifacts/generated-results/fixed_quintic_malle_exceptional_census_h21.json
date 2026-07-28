@@ -1,0 +1,667 @@
+{
+  "command": ".venv/bin/python scripts/census_fixed_quintic_malle.py --bound 21 --exceptional-only",
+  "family": "E_(Pi,B,C)(S)=Pi^5*S^5-5*Pi*S^3-2*B*S^2+4*S-2*C",
+  "field_classes": [
+    {
+      "absolute_field_discriminant": 544644,
+      "equivalent_reduced_polynomials": [
+        "x^5 + x^3 - 3*x^2 + 3"
+      ],
+      "field_discriminant": 544644,
+      "first_target_height": 18,
+      "group": "A5",
+      "presentation_count": 1,
+      "real_roots": 1,
+      "reduced_polynomial": "x^5 + x^3 - 3*x^2 + 3",
+      "targets": [
+        {
+          "generator_discriminant": 3376099916974656,
+          "generator_index": 78732,
+          "height": 18,
+          "projective": [
+            3,
+            3,
+            4,
+            -18
+          ]
+        }
+      ]
+    },
+    {
+      "absolute_field_discriminant": 11464996,
+      "equivalent_reduced_polynomials": [
+        "x^5 - 5*x^3 - 16*x^2 + 32*x + 16"
+      ],
+      "field_discriminant": 11464996,
+      "first_target_height": 16,
+      "group": "A5",
+      "presentation_count": 1,
+      "real_roots": 1,
+      "reduced_polynomial": "x^5 - 5*x^3 - 16*x^2 + 32*x + 16",
+      "targets": [
+        {
+          "generator_discriminant": 3548244399661681927549339907915776,
+          "generator_index": 17592186044416,
+          "height": 16,
+          "projective": [
+            4,
+            8,
+            16,
+            -1
+          ]
+        }
+      ]
+    },
+    {
+      "absolute_field_discriminant": 1314062500,
+      "equivalent_reduced_polynomials": [
+        "x^5 - 40*x^3 - 110*x^2 - 40*x + 32"
+      ],
+      "field_discriminant": 1314062500,
+      "first_target_height": 5,
+      "group": "A5",
+      "presentation_count": 1,
+      "real_roots": 5,
+      "reduced_polynomial": "x^5 - 40*x^3 - 110*x^2 - 40*x + 32",
+      "targets": [
+        {
+          "generator_discriminant": 5133056640625000000,
+          "generator_index": 62500,
+          "height": 5,
+          "projective": [
+            5,
+            5,
+            0,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "absolute_field_discriminant": 100251390625,
+      "equivalent_reduced_polynomials": [
+        "x^5 - 125*x^3 - 420*x^2 + 160*x + 64"
+      ],
+      "field_discriminant": 100251390625,
+      "first_target_height": 21,
+      "group": "A5",
+      "presentation_count": 1,
+      "real_roots": 5,
+      "reduced_polynomial": "x^5 - 125*x^3 - 420*x^2 + 160*x + 64",
+      "targets": [
+        {
+          "generator_discriminant": 8439298304612761600000000000000000000000000,
+          "generator_index": 9175040000000000,
+          "height": 21,
+          "projective": [
+            5,
+            2,
+            21,
+            -5
+          ]
+        }
+      ]
+    },
+    {
+      "absolute_field_discriminant": 390625,
+      "equivalent_reduced_polynomials": [
+        "x^5 - 10*x^3 - 5*x^2 + 10*x - 1"
+      ],
+      "field_discriminant": 390625,
+      "first_target_height": 10,
+      "group": "C5",
+      "presentation_count": 1,
+      "real_roots": 5,
+      "reduced_polynomial": "x^5 - 10*x^3 - 5*x^2 + 10*x - 1",
+      "targets": [
+        {
+          "generator_discriminant": 176334381103515625,
+          "generator_index": 671875,
+          "height": 10,
+          "projective": [
+            10,
+            10,
+            0,
+            7
+          ]
+        }
+      ]
+    },
+    {
+      "absolute_field_discriminant": 63504961000000,
+      "equivalent_reduced_polynomials": [
+        "x^5 - 125*x^3 - 210*x^2 + 160*x + 128"
+      ],
+      "field_discriminant": 63504961000000,
+      "first_target_height": 21,
+      "group": "D5",
+      "presentation_count": 1,
+      "real_roots": 5,
+      "reduced_polynomial": "x^5 - 125*x^3 - 210*x^2 + 160*x + 128",
+      "targets": [
+        {
+          "generator_discriminant": 7150022967394447025766400000000000000000000000000,
+          "generator_index": 335544320000000000,
+          "height": 21,
+          "projective": [
+            10,
+            4,
+            21,
+            -20
+          ]
+        }
+      ]
+    },
+    {
+      "absolute_field_discriminant": 11250000,
+      "equivalent_reduced_polynomials": [
+        "x^5 - 20*x^3 + 80*x - 56"
+      ],
+      "field_discriminant": 11250000,
+      "first_target_height": 15,
+      "group": "F20",
+      "presentation_count": 1,
+      "real_roots": 5,
+      "reduced_polynomial": "x^5 - 20*x^3 + 80*x - 56",
+      "targets": [
+        {
+          "generator_discriminant": 23163540480000000000000000000,
+          "generator_index": 45376000000,
+          "height": 15,
+          "projective": [
+            10,
+            5,
+            15,
+            4
+          ]
+        }
+      ]
+    }
+  ],
+  "format": "fixed-quintic-malle-census-v1",
+  "pari_stderr": "",
+  "software": {
+    "pari_gp": "[2, 17, 4]",
+    "pari_stack": "256M",
+    "python": "3.14.6"
+  },
+  "status": "bounded exact computation; not an asymptotic theorem or evidence independent of PARI/GP",
+  "summary": {
+    "by_group": {
+      "A5": {
+        "absolute_field_discriminant_quantiles": {
+          "max": 100251390625,
+          "median": 11464996,
+          "min": 544644,
+          "q25": 544644,
+          "q75": 1314062500
+        },
+        "field_classes": 4,
+        "maximum_presentation_multiplicity": 1,
+        "minimum_target_height": 5,
+        "multiplicity_histogram": {
+          "1": 4
+        },
+        "presentation_to_field_ratio": 1.0,
+        "presentations": 4,
+        "signatures_by_fields": {
+          "1": 2,
+          "5": 2
+        },
+        "signatures_by_presentations": {
+          "1": 2,
+          "5": 2
+        }
+      },
+      "C5": {
+        "absolute_field_discriminant_quantiles": {
+          "max": 390625,
+          "median": 390625,
+          "min": 390625,
+          "q25": 390625,
+          "q75": 390625
+        },
+        "field_classes": 1,
+        "maximum_presentation_multiplicity": 1,
+        "minimum_target_height": 10,
+        "multiplicity_histogram": {
+          "1": 1
+        },
+        "presentation_to_field_ratio": 1.0,
+        "presentations": 1,
+        "signatures_by_fields": {
+          "5": 1
+        },
+        "signatures_by_presentations": {
+          "5": 1
+        }
+      },
+      "D5": {
+        "absolute_field_discriminant_quantiles": {
+          "max": 63504961000000,
+          "median": 63504961000000,
+          "min": 63504961000000,
+          "q25": 63504961000000,
+          "q75": 63504961000000
+        },
+        "field_classes": 1,
+        "maximum_presentation_multiplicity": 1,
+        "minimum_target_height": 21,
+        "multiplicity_histogram": {
+          "1": 1
+        },
+        "presentation_to_field_ratio": 1.0,
+        "presentations": 1,
+        "signatures_by_fields": {
+          "5": 1
+        },
+        "signatures_by_presentations": {
+          "5": 1
+        }
+      },
+      "F20": {
+        "absolute_field_discriminant_quantiles": {
+          "max": 11250000,
+          "median": 11250000,
+          "min": 11250000,
+          "q25": 11250000,
+          "q75": 11250000
+        },
+        "field_classes": 1,
+        "maximum_presentation_multiplicity": 1,
+        "minimum_target_height": 15,
+        "multiplicity_histogram": {
+          "1": 1
+        },
+        "presentation_to_field_ratio": 1.0,
+        "presentations": 1,
+        "signatures_by_fields": {
+          "5": 1
+        },
+        "signatures_by_presentations": {
+          "5": 1
+        }
+      },
+      "S5": {
+        "absolute_field_discriminant_quantiles": {},
+        "field_classes": 0,
+        "maximum_presentation_multiplicity": 0,
+        "minimum_target_height": null,
+        "multiplicity_histogram": {},
+        "presentation_to_field_ratio": null,
+        "presentations": 0,
+        "signatures_by_fields": {},
+        "signatures_by_presentations": {}
+      }
+    },
+    "classification_scope": "complete scan of the target box; PARI initialization only for square discriminants or targets passing all declared F20 finite-prime screens",
+    "connected_presentations": 7,
+    "exact_cross_key_isomorphisms": 0,
+    "exceptional_screen_candidates": 27,
+    "exceptional_screen_nonconnected": 20,
+    "height_cumulative": [
+      {
+        "field_classes": {
+          "A5": 0,
+          "C5": 0,
+          "D5": 0,
+          "F20": 0,
+          "S5": 0
+        },
+        "height": 1,
+        "presentations": {
+          "A5": 0,
+          "C5": 0,
+          "D5": 0,
+          "F20": 0,
+          "S5": 0
+        }
+      },
+      {
+        "field_classes": {
+          "A5": 0,
+          "C5": 0,
+          "D5": 0,
+          "F20": 0,
+          "S5": 0
+        },
+        "height": 2,
+        "presentations": {
+          "A5": 0,
+          "C5": 0,
+          "D5": 0,
+          "F20": 0,
+          "S5": 0
+        }
+      },
+      {
+        "field_classes": {
+          "A5": 0,
+          "C5": 0,
+          "D5": 0,
+          "F20": 0,
+          "S5": 0
+        },
+        "height": 3,
+        "presentations": {
+          "A5": 0,
+          "C5": 0,
+          "D5": 0,
+          "F20": 0,
+          "S5": 0
+        }
+      },
+      {
+        "field_classes": {
+          "A5": 0,
+          "C5": 0,
+          "D5": 0,
+          "F20": 0,
+          "S5": 0
+        },
+        "height": 4,
+        "presentations": {
+          "A5": 0,
+          "C5": 0,
+          "D5": 0,
+          "F20": 0,
+          "S5": 0
+        }
+      },
+      {
+        "field_classes": {
+          "A5": 1,
+          "C5": 0,
+          "D5": 0,
+          "F20": 0,
+          "S5": 0
+        },
+        "height": 5,
+        "presentations": {
+          "A5": 1,
+          "C5": 0,
+          "D5": 0,
+          "F20": 0,
+          "S5": 0
+        }
+      },
+      {
+        "field_classes": {
+          "A5": 1,
+          "C5": 0,
+          "D5": 0,
+          "F20": 0,
+          "S5": 0
+        },
+        "height": 6,
+        "presentations": {
+          "A5": 1,
+          "C5": 0,
+          "D5": 0,
+          "F20": 0,
+          "S5": 0
+        }
+      },
+      {
+        "field_classes": {
+          "A5": 1,
+          "C5": 0,
+          "D5": 0,
+          "F20": 0,
+          "S5": 0
+        },
+        "height": 7,
+        "presentations": {
+          "A5": 1,
+          "C5": 0,
+          "D5": 0,
+          "F20": 0,
+          "S5": 0
+        }
+      },
+      {
+        "field_classes": {
+          "A5": 1,
+          "C5": 0,
+          "D5": 0,
+          "F20": 0,
+          "S5": 0
+        },
+        "height": 8,
+        "presentations": {
+          "A5": 1,
+          "C5": 0,
+          "D5": 0,
+          "F20": 0,
+          "S5": 0
+        }
+      },
+      {
+        "field_classes": {
+          "A5": 1,
+          "C5": 0,
+          "D5": 0,
+          "F20": 0,
+          "S5": 0
+        },
+        "height": 9,
+        "presentations": {
+          "A5": 1,
+          "C5": 0,
+          "D5": 0,
+          "F20": 0,
+          "S5": 0
+        }
+      },
+      {
+        "field_classes": {
+          "A5": 1,
+          "C5": 1,
+          "D5": 0,
+          "F20": 0,
+          "S5": 0
+        },
+        "height": 10,
+        "presentations": {
+          "A5": 1,
+          "C5": 1,
+          "D5": 0,
+          "F20": 0,
+          "S5": 0
+        }
+      },
+      {
+        "field_classes": {
+          "A5": 1,
+          "C5": 1,
+          "D5": 0,
+          "F20": 0,
+          "S5": 0
+        },
+        "height": 11,
+        "presentations": {
+          "A5": 1,
+          "C5": 1,
+          "D5": 0,
+          "F20": 0,
+          "S5": 0
+        }
+      },
+      {
+        "field_classes": {
+          "A5": 1,
+          "C5": 1,
+          "D5": 0,
+          "F20": 0,
+          "S5": 0
+        },
+        "height": 12,
+        "presentations": {
+          "A5": 1,
+          "C5": 1,
+          "D5": 0,
+          "F20": 0,
+          "S5": 0
+        }
+      },
+      {
+        "field_classes": {
+          "A5": 1,
+          "C5": 1,
+          "D5": 0,
+          "F20": 0,
+          "S5": 0
+        },
+        "height": 13,
+        "presentations": {
+          "A5": 1,
+          "C5": 1,
+          "D5": 0,
+          "F20": 0,
+          "S5": 0
+        }
+      },
+      {
+        "field_classes": {
+          "A5": 1,
+          "C5": 1,
+          "D5": 0,
+          "F20": 0,
+          "S5": 0
+        },
+        "height": 14,
+        "presentations": {
+          "A5": 1,
+          "C5": 1,
+          "D5": 0,
+          "F20": 0,
+          "S5": 0
+        }
+      },
+      {
+        "field_classes": {
+          "A5": 1,
+          "C5": 1,
+          "D5": 0,
+          "F20": 1,
+          "S5": 0
+        },
+        "height": 15,
+        "presentations": {
+          "A5": 1,
+          "C5": 1,
+          "D5": 0,
+          "F20": 1,
+          "S5": 0
+        }
+      },
+      {
+        "field_classes": {
+          "A5": 2,
+          "C5": 1,
+          "D5": 0,
+          "F20": 1,
+          "S5": 0
+        },
+        "height": 16,
+        "presentations": {
+          "A5": 2,
+          "C5": 1,
+          "D5": 0,
+          "F20": 1,
+          "S5": 0
+        }
+      },
+      {
+        "field_classes": {
+          "A5": 2,
+          "C5": 1,
+          "D5": 0,
+          "F20": 1,
+          "S5": 0
+        },
+        "height": 17,
+        "presentations": {
+          "A5": 2,
+          "C5": 1,
+          "D5": 0,
+          "F20": 1,
+          "S5": 0
+        }
+      },
+      {
+        "field_classes": {
+          "A5": 3,
+          "C5": 1,
+          "D5": 0,
+          "F20": 1,
+          "S5": 0
+        },
+        "height": 18,
+        "presentations": {
+          "A5": 3,
+          "C5": 1,
+          "D5": 0,
+          "F20": 1,
+          "S5": 0
+        }
+      },
+      {
+        "field_classes": {
+          "A5": 3,
+          "C5": 1,
+          "D5": 0,
+          "F20": 1,
+          "S5": 0
+        },
+        "height": 19,
+        "presentations": {
+          "A5": 3,
+          "C5": 1,
+          "D5": 0,
+          "F20": 1,
+          "S5": 0
+        }
+      },
+      {
+        "field_classes": {
+          "A5": 3,
+          "C5": 1,
+          "D5": 0,
+          "F20": 1,
+          "S5": 0
+        },
+        "height": 20,
+        "presentations": {
+          "A5": 3,
+          "C5": 1,
+          "D5": 0,
+          "F20": 1,
+          "S5": 0
+        }
+      },
+      {
+        "field_classes": {
+          "A5": 4,
+          "C5": 1,
+          "D5": 1,
+          "F20": 1,
+          "S5": 0
+        },
+        "height": 21,
+        "presentations": {
+          "A5": 4,
+          "C5": 1,
+          "D5": 1,
+          "F20": 1,
+          "S5": 0
+        }
+      }
+    ],
+    "primitive_projective_targets": 759358,
+    "reducible_squarefree_presentations": null,
+    "symmetry_convention": "W>0 and one representative of (B,C)~(-B,-C): B>0 or B=0,C>=0",
+    "target_bound": 21,
+    "zero_discriminant_targets": 4
+  }
+}

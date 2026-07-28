@@ -258,7 +258,18 @@ The compiler is exposed as
 squarefreeness and degree, chooses an admissible rational translation when
 one is not supplied, and returns the seed, determinant-minus-two map,
 determinant-one normalization, target, inverse polynomial, geometric degree,
-and exact coordinate degrees.  Together with
+and exact coordinate degrees.  Passing `stable_parameter=k` additionally
+returns a fiber-invisible gauge lift and a `stable_multiplicity` certificate.
+For cubics the certificate records exponent `n=k+4` and the exact geometric
+boundary-component count `n`.  In degree `N>=4` it records the Fitting
+support, normalized Newton area `2N-3+(N-2)k`, and the `P=0` boundary-prime
+ledger.  The automatic translation then avoids every coefficient required
+by that certificate; an explicitly supplied inadmissible translation is
+rejected.  The optional block is also supported by the proof-carrying JSON
+compiler: its dependency-free Python and PARI/GP replayers independently
+recompute the family record and reconstruct the corresponding expanded map.
+
+Together with
 `synthesize_monic_polynomial`, this gives an end-to-end exact API from
 certified local coefficient balls to the displayed Keller fiber.
 
@@ -282,7 +293,7 @@ inside one fixed map.
 
 Combine the local-to-global theorem with the
 [universal Keller-fiber multiplicity theorem](UNIVERSAL_KELLER_FIBER_MULTIPLICITY.md).
-For `N>=4`, first choose a connected algebra
+For `N>=3`, first choose a connected algebra
 
 \[
                          A=\mathbb Q[T]/(P)                         \tag{12}
@@ -294,7 +305,7 @@ Keller maps, every one having `Spec A` as a complete fiber.  Base change of
 that same fiber preserves all its completions, signature, and Frobenius
 types.  Therefore:
 
-> **Adelic stable-multiplicity corollary.**  For every `N>=4`, every
+> **Adelic stable-multiplicity corollary.**  For every `N>=3`, every
 > compatible finite collection of local étale specifications occurs in one
 > connected complete fiber shared, fiberwise, by infinitely many stable
 > polynomial left--right classes of determinant-one Keller maps over `Q`.

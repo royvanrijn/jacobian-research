@@ -22,18 +22,45 @@ dictionary is:
 |---|---|
 | finite etale of degree \(n\) | squarefree inverse polynomial of degree \(n\) |
 | connected fiber | irreducible inverse polynomial |
+| arithmetic connected components | irreducible factors / Galois orbits |
+| component degrees | indices of factor stabilizers |
 | real signature | number of real roots |
 | unramified local degrees | factor degrees modulo a good prime |
 | rational point | linear factor over the ground field |
 | everywhere local point | a root in every completion |
 | Hasse failure | nontrivially intersective inverse polynomial |
 | splitting-field group | Galois group of the inverse polynomial |
+| unramified Hasse condition | factor stabilizers normally cover the group |
+| ramified Hasse condition | a decomposition group lies in a factor stabilizer |
 
 The subject has two levels which should remain separate:
 
 1. **weighted occurrence**, where a sharp generator criterion is available;
 2. **intrinsic Keller occurrence**, allowing every polynomial Keller map,
    where necessity beyond etaleness is presently unknown.
+
+For a Hasse-failing finite etale fiber
+
+\[
+X=\coprod_{i=1}^{r}\operatorname{Spec}K_i
+\]
+
+with splitting-field group \(G\), the factor stabilizers \(H_i<G\) form a
+faithful normal covering.  Therefore
+
+\[
+r\ge\gamma(G),\qquad
+\operatorname{rank}X=\sum_i[G:H_i].
+\]
+
+At ramified primes, normal coverage must be supplemented by decomposition
+group containment.  The proof, certificate format, Banks degree-\(5\)
+through degree-\(10\) candidate data, and exact covering-minimal quintic and
+sextic examples are in
+[NORMAL_COVERING_HASSE_FIBERS.md](verified/NORMAL_COVERING_HASSE_FIBERS.md).
+This is now the front end for low-degree Hasse searches; parameter-space
+and coefficient searches are realization engines for the surviving
+group-theoretic rows.
 
 ## 2. Exact transfer on the weighted chart
 
@@ -247,6 +274,20 @@ whose parenthesized factor is congruent to \(T-k\) modulo \(3\) and has
 derivative congruent to \(1\).  Hensel's lemma therefore applies under the
 modulo-\(9\) hypothesis.  The smallest prime example is \(\ell=19\), with
 primitive target coordinates \([9:9:608:459]\) and height \(608\).
+
+More generally, primality is unnecessary: every integer \(a>1\) with
+\[
+ a\equiv1\pmod9,\qquad a\notin\mathbb Q^3,\qquad
+ p\mid a\Longrightarrow p\equiv1\pmod3
+\]
+gives a Hasse-failing fiber on the same target line.  Character-filtered
+Selberg--Delange analysis counts this full sufficient family as
+\[
+ \#\{a\le X\}\sim
+ \frac{G_3(1)}{3\sqrt\pi}\frac{X}{\sqrt{\log X}},
+\]
+with the positive Euler-product constant \(G_3(1)\) defined in
+[the multiplicative-family theorem](verified/MULTIPLICATIVE_HASSE_KELLER_FIBERS.md).
 
 At every good finite-field prime, the same target line is almost entirely
 contained in the image: the fixed quadratic splits when \(p\equiv1\bmod3\),

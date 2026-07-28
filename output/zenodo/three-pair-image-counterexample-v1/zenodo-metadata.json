@@ -1,0 +1,22 @@
+{
+  "title": "An Eight-Term Counterexample to the Special Image Conjecture in Three Pairs",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "publication_date": "2026-07-28",
+  "creators": [
+    {
+      "name": "van Rijn, Roy",
+      "affiliation": "Independent researcher"
+    }
+  ],
+  "description": "An explicit eight-term counterexample to the Special Image Conjecture in three contraction pairs. For f=tau^3(t+z)(w t^3-v y(t+y)^2) and g=z, the paper proves E(f^m)=0 and [t]E(g f^m)=(3m+1)!m! for every m>=1. Thus the minimum possible failure dimension is two or three.",
+  "keywords": [
+    "Special Image Conjecture",
+    "Image Conjecture",
+    "Mathieu subspace",
+    "Gaussian moments",
+    "polynomial contraction"
+  ],
+  "access_right": "open",
+  "license": "cc-by-4.0"
+}

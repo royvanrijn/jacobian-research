@@ -5,8 +5,7 @@ A polynomial self-map of affine space with nonzero constant Jacobian is
 empty.  We study the reverse problem: which finite \'etale algebras can occur
 as entire fibers of Keller maps?
 
-The relevant condition is fullness.  Let \(K\) be a field of characteristic
-zero and let
+The relevant condition is fullness.  Let \(K\) be a field and let
 \[
  F:\A^m_K\longrightarrow\A^m_K
 \]
@@ -24,8 +23,13 @@ is needed once the two ranks have been identified.
 Our main theorem begins with concrete presentation data.
 
 \begin{theorem}[Polynomial-presentation theorem]\label{thm:main-intro}
-Let \(P\in K[T]\) be squarefree of degree \(N\geq3\), and let \(a\in K\)
-satisfy \(P'(a)P'''(a)\neq0\).  There is an explicitly given polynomial map
+Assume that \(\operatorname{char}K\neq2\).  Let \(P\in K[T]\) be separable
+of degree \(N\geq3\), and let \(a\in K\) satisfy
+\[
+ P^{[1]}(a)P^{[3]}(a)\neq0,
+\]
+where \(P^{[j]}\) denotes the \(j\)-th Hasse derivative.  There is an
+explicitly given polynomial map
 \[
  \widetilde F_{P,a}:\A^3_K\longrightarrow\A^3_K
 \]
@@ -41,6 +45,8 @@ coordinate of \(\widetilde F_{P,a}\) has degree at most \(6N+2\), and the
 supplied \((P,a)\)-construction commutes with extension of the ground field.
 \end{theorem}
 
+Equivalently, separability means \(\gcd(P,P')=1\); this is the
+derivative-squarefree condition intended throughout the paper.
 Theorem~\ref{thm:polynomial-realization} gives the formulas and proof.  Its
 mechanism is a compact scalar inverse equation
 \[
@@ -58,13 +64,14 @@ gives the literal fiber scheme.  This proves fullness through
  =N=\gdeg(\widetilde F_{P,a}).
 \]
 
-Every finite \'etale algebra over the infinite field \(K\) is monogenic.
-Consequently the concrete theorem gives the paper's principal corollary:
+Every finite \'etale algebra over an infinite field is monogenic.  In
+characteristic zero an admissible translation always exists.  Consequently
+the concrete theorem gives the paper's principal abstract corollary:
 
 \begin{corollary}\label{cor:main-intro}
-Every finite \'etale \(K\)-algebra of rank at least three occurs as a full
-Keller fiber of a Jacobian-one polynomial map
-\(\A^3_K\to\A^3_K\).
+If \(K\) has characteristic zero, every finite \'etale \(K\)-algebra of rank
+at least three occurs as a full Keller fiber of a Jacobian-one polynomial
+map \(\A^3_K\to\A^3_K\).
 \end{corollary}
 
 The word ``explicit'' applies to the supplied polynomial presentation and
@@ -73,9 +80,9 @@ the primitive element and the admissible translation are chosen
 noncanonically; the corresponding Lean construction is noncomputable and no
 functorial choice is claimed.
 
-The construction realizes every rank \(N\geq3\).  Together with the
-classical Galois case of the Jacobian theorem, due to Campbell, Razar, and
-Wright, it gives the possible nonzero ranks
+In characteristic zero, the construction realizes every rank \(N\geq3\).
+Together with the classical Galois case of the Jacobian theorem, due to
+Campbell, Razar, and Wright, it gives the possible nonzero ranks
 \[
  1,3,4,\ldots.
 \]
@@ -86,11 +93,14 @@ The proof is organized in the same order as the construction.  Section
 \ref{sec:gauge} designs the inverse equation and polynomial pullback.
 Section~\ref{sec:reconstruction} proves root-to-source reconstruction, the
 literal fiber theorem, and the function-field comparison.  Section
-\ref{sec:prescribing} passes from a squarefree presentation to an abstract
+\ref{sec:prescribing} passes from a separable presentation to an abstract
 finite \'etale algebra and records scalar extension.  Section
 \ref{sec:example} gives one explicit arithmetic fiber.  The appendices record
 the coefficientwise pullback identities and the Lean correspondence.
 
-The exact nonproperness locus, symmetric monodromy, Hilbertian
+The wider characteristic-\(\ne2\) supplied-presentation theorem is proved
+directly here.  The current Lean development formalizes its
+characteristic-zero specialization; its general files still assume
+\texttt{CharZero}.  The exact nonproperness locus, symmetric monodromy, Hilbertian
 specialization, and stable compositional atomicity are separate geometric
 and monodromy results.  They are not used here.

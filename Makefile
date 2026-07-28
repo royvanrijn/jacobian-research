@@ -15,7 +15,7 @@ ALL_PAPERS := $(VERIFIED_PAPERS) $(PARKED_PAPERS)
 
 .PHONY: check verify verify-logged verify-minimal verify-core verify-geometry \
 	verify-theorems verify-regressions verify-derived verify-family \
-	verify-external-consequences verify-restricted-minima verify-two-real-gmc verify-counterexample-scoreboard verify-plane-jc verify-plane-case2-residue-strata verify-plane-case2-j1-endpoint verify-plane-case2-maximal-gcd verify-plane-case2-gcd6 verify-plane-poisson-radical verify-plane-poisson-primary-charts verify-plane-poisson-separators verify-plane-poisson-primary-filtration verify-plane-poisson-filtered-modules verify-weighted-boundary verify-quartic-degree-drop-quantization \
+	verify-external-consequences verify-restricted-minima verify-two-real-gmc verify-factorial-moments verify-factorial-frontier verify-counterexample-scoreboard verify-plane-jc verify-plane-case2-residue-strata verify-plane-case2-j1-endpoint verify-plane-case2-maximal-gcd verify-plane-case2-gcd6 verify-plane-poisson-radical verify-plane-poisson-primary-charts verify-plane-poisson-separators verify-plane-poisson-primary-filtration verify-plane-poisson-filtered-modules verify-weighted-boundary verify-quartic-degree-drop-quantization \
 	verify-linear-torus-free verify-algebraic-torus-free \
 	verify-master \
 	verify-quartic verify-normal-forms verify-formal verify-lean-foundational \
@@ -44,6 +44,10 @@ ALL_PAPERS := $(VERIFIED_PAPERS) $(PARKED_PAPERS)
 	verify-minimal-boundary \
 	render-status prepare-arxiv-uploads clean-papers
 
+.PHONY: verify-normal-covering-hasse verify-arithmetic-compilation \
+	refresh-arithmetic-compilation
+.PHONY: verify-hilbert14-invariants
+
 check:
 	$(PYTHON) -m compileall -q jcsearch scripts
 	$(PYTHON) scripts/check_markdown_links.py
@@ -52,10 +56,31 @@ check:
 verify-gq2-local-fibers:
 	$(SYSTEM_PYTHON) scripts/verify_gq2_permutation_action.py arithmetic/certificates/gq2_s3_x3_minus_2.json
 	$(SYSTEM_PYTHON) scripts/verify_gq2_permutation_action.py arithmetic/certificates/gq2_s4_mixed_action.json
+	$(SYSTEM_PYTHON) scripts/verify_gq2_permutation_action.py arithmetic/certificates/gq2_common_quintic_stable_pair.json
 	$(PYTHON) scripts/verify_gq2_action_first_keller.py
 	$(PYTHON) scripts/verify_gq2_s4_quartic_keller.py
+	$(PYTHON) scripts/verify_marked_q2_stable_separation.py
 	gp -q scripts/verify_gq2_s4_local_models.gp
 	gp -q scripts/verify_gq2_local_decompositions.gp
+
+verify-normal-covering-hasse:
+	$(PYTHON) scripts/verify_normal_covering_certificates.py
+	$(SYSTEM_PYTHON) scripts/verify_banks_degree_5_10_candidates.py
+	$(PYTHON) scripts/verify_degree_six_normal_cover_keller.py
+
+verify-arithmetic-compilation:
+	$(SYSTEM_PYTHON) scripts/verify_arithmetic_keller_certificate.py
+	gp -q -f scripts/verify_arithmetic_keller_certificate.gp
+	$(SYSTEM_PYTHON) scripts/verify_arithmetic_keller_certificate.py artifacts/generated-results/arithmetic_keller_quintic_stable_m2.json
+	ARITHMETIC_CERTIFICATE=artifacts/generated-results/arithmetic_keller_quintic_stable_m2.json gp -q -f scripts/verify_arithmetic_keller_certificate.gp
+	$(SYSTEM_PYTHON) scripts/verify_arithmetic_keller_certificate.py artifacts/generated-results/arithmetic_keller_cubic_stable_n7.json
+	ARITHMETIC_CERTIFICATE=artifacts/generated-results/arithmetic_keller_cubic_stable_n7.json gp -q -f scripts/verify_arithmetic_keller_certificate.gp
+	cd formal/finite-etale-keller && lake env lean FiniteEtaleKeller/GeneratedArithmeticQuintic.lean
+
+refresh-arithmetic-compilation:
+	$(PYTHON) scripts/compile_arithmetic_keller_certificate.py
+	$(PYTHON) scripts/compile_arithmetic_keller_certificate.py --stable-parameter 2 --certificate artifacts/generated-results/arithmetic_keller_quintic_stable_m2.json
+	$(PYTHON) scripts/compile_arithmetic_keller_certificate.py --spec arithmetic/specifications/connected_cubic_stable_n7.json --certificate artifacts/generated-results/arithmetic_keller_cubic_stable_n7.json
 
 render-status:
 	$(SYSTEM_PYTHON) scripts/render_status.py
@@ -214,6 +239,7 @@ verify-core: verify-minimal
 	$(PYTHON) scripts/verify_quadratic_cubic_factorization_invariants.py
 	$(PYTHON) scripts/verify_quadratic_cubic_modification_topology.py
 	$(PYTHON) scripts/verify_quadratic_cubic_additive_actions.py
+	$(PYTHON) scripts/verify_quadratic_cubic_saturated_lnd.py
 	$(PYTHON) scripts/verify_weighted_invariant_jacobian_reduction.py
 	$(PYTHON) scripts/verify_weighted_tangent_suspension.py
 	$(PYTHON) scripts/verify_foundational_weighted_coefficient_scheme.py
@@ -227,6 +253,12 @@ verify-core: verify-minimal
 
 verify-geometry: verify-core
 
+verify-hilbert14-invariants:
+	$(PYTHON) scripts/verify_quadratic_cubic_saturated_lnd.py
+	$(PYTHON) scripts/verify_quadratic_quartic_additive_invariants.py
+	$(PYTHON) scripts/verify_hilbert14_saturation_ladders.py
+	$(PYTHON) scripts/verify_multiboundary_hilbert14_antichain.py
+
 verify-theorems:
 	$(PYTHON) scripts/verify_controlled_boundary_suspensions.py
 	$(MAKE) verify-master
@@ -236,12 +268,17 @@ verify-theorems:
 	$(PYTHON) scripts/verify_all_degree_rational_fibers.py
 	$(PYTHON) scripts/verify_common_arithmetic_fibers.py
 	$(PYTHON) scripts/verify_universal_quartic_fiber_multiplicity.py
+	$(PYTHON) scripts/verify_universal_quartic_gauge_multiplicity.py
+	$(PYTHON) scripts/verify_universal_cubic_gauge_multiplicity.py
+	$(PYTHON) scripts/verify_universal_power_shifted_gauge_multiplicity.py
 	$(PYTHON) scripts/verify_universal_quintic_fiber_multiplicity.py
 	$(PYTHON) scripts/verify_universal_higher_degree_fiber_multiplicity.py
 	$(PYTHON) scripts/verify_universal_multiplicity_witness_cards.py
 	$(PYTHON) scripts/verify_low_rank_multiplicity_boundaries.py
 	$(PYTHON) scripts/verify_real_fiber_spectrum.py
 	$(PYTHON) scripts/verify_hasse_keller_fiber.py
+	$(PYTHON) scripts/verify_infinite_hasse_keller_fibers.py
+	$(PYTHON) scripts/count_multiplicative_hasse_parameters.py --bound 1000000
 	$(PYTHON) scripts/verify_weighted_marked_root_model.py
 	$(PYTHON) scripts/verify_intrinsic_selector_attack.py
 	$(SYSTEM_PYTHON) scripts/audit_weighted_independent.py
@@ -379,7 +416,13 @@ verify-counterexample-scoreboard: verify-two-real-gmc
 	$(PYTHON) scripts/audit_dvorsky_gvc5_counterexample.py
 	$(PYTHON) scripts/verify_minimal_counterexample_scoreboard.py
 
-verify-regressions: verify-external-consequences
+verify-factorial-moments:
+	$(SYSTEM_PYTHON) scripts/verify_factorial_moment_witnesses.py
+
+verify-factorial-frontier:
+	$(PYTHON) scripts/verify_sparse_factorial_moment_frontier.py
+
+verify-regressions: verify-external-consequences verify-factorial-moments verify-factorial-frontier
 	$(PYTHON) scripts/verify_degree_five_stable_moduli.py
 	$(PYTHON) scripts/verify_degree_five_rank_two_descent.py
 	$(PYTHON) scripts/verify_degree_five_torus_module.py

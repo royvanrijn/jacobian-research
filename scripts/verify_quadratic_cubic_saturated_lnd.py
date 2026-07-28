@@ -14,10 +14,12 @@ E(s)=0 and k[X]=ker(D10)[s], their two kernels generate k[X]; consequently
 the full Derksen algebra is k[X].
 
 This is a saturation result for the visible LND pencil, not a classification
-of all homogeneous LNDs.  In particular it does not compute ML(X) or prove
-flexibility.  The final check also proves that the displayed degree-two LND
-of the trinomial quotient cannot lift to any global derivation of X, even
-after arbitrary regular corrections in the p- and s-directions.
+of all homogeneous LNDs.  It also verifies explicit generators for the
+individual kernels of D22 and E and for the common kernel of D10 and E.
+In particular it does not compute ML(X) or prove flexibility.  The final
+check proves that the displayed degree-two LND of the trinomial quotient
+cannot lift to any global derivation of X, even after arbitrary regular
+corrections in the p- and s-directions.
 """
 
 from __future__ import annotations
@@ -145,6 +147,11 @@ for E_image, delta_image in zip(E, delta_images, strict=True):
 assert apply_derivation(m, E) == 0
 assert sp.rem(apply_derivation(resultant, E), m - 1, d) == 0
 assert sp.rem(apply_derivation(slice_coordinate, E), m - 1, d) == 0
+for variable, D10_image, E_image in zip(variables, D10, E, strict=True):
+    commutator_image = apply_derivation(E_image, D10) - apply_derivation(
+        D10_image, E
+    )
+    assert sp.rem(commutator_image, m - 1, d) == 0
 
 # Quotient-ring reduction independently verifies preservation of both defining
 # equations and local nilpotence on every algebra generator.
@@ -216,6 +223,68 @@ assert saturated_rank == 2
 assert E[2].subs(boundary_point) == sp.Rational(-2, 5)
 assert E[3] == a
 
+# Exact invariant rings for the primitive pair.  The apparent fractions
+#
+#   G=(J-4U)/a,  H=(K^2+8J-16U)/a^2
+#
+# have the following regular representatives on X.
+G = 4 * (2 * a**2 * x - a * c * y + 5 * c * p * z - 6 * z + 2 * c**2 * d)
+H = (
+    16 * z**2 * p**2
+    + 64 * c * z * p * d
+    + 64 * c**2 * d**2
+    + 64 * c**2 * p * y
+    - 32 * a * z * p * y
+    + 16 * a**2 * y**2
+    - 128 * z * d
+    - 64 * c * y
+    + 64 * a * x
+)
+V = sp.expand(4 * G - a * H)
+
+assert reduce_on_X(a * G - (J - 4 * U)) == 0
+assert reduce_on_X(a**2 * H - (K**2 + 8 * J - 16 * U)) == 0
+for invariant in (a, U, K, J, G, H, V):
+    assert reduce_on_X(apply_derivation(invariant, D10)) == 0
+    assert reduce_on_X(apply_derivation(invariant, E)) == 0
+assert reduce_on_X(V**2 - H * K**2 - 1024 * a) == 0
+
+# Therefore B=k[a,U,K,J,G,H]=k[K,H,V] is a polynomial ring: the inverse
+# formulas start with a=(V^2-HK^2)/1024 and recover G,U,J successively.
+# The boundary calculation supplies the saturation step in the written proof.
+q_boundary = 2 * c**2 * d - z
+boundary_substitution = {a: 0, p: 1 / c}
+assert sp.factor(K.subs(boundary_substitution) - 4 * c) == 0
+assert sp.factor(G.subs(boundary_substitution) - 4 * q_boundary) == 0
+assert sp.factor(H.subs(boundary_substitution) - 16 * q_boundary**2 / c**2) == 0
+assert sp.factor(V.subs(boundary_substitution) - 16 * q_boundary) == 0
+
+# E(s)=0, so ker(E)=B[s].  For the original Euclidean shear put
+# t=a^2*s-hp.  Then the additional invariant W=(10t-K)/a is also regular.
+t_invariant = sp.expand(a**2 * slice_coordinate - h * p)
+W = (
+    -35 * c * z * p**2
+    - 14 * c**2 * p * d
+    - 35 * a * z * p * d
+    - 14 * a * c * d**2
+    + 30 * z * p
+    + 4 * c * d
+    + 5 * a * y
+)
+assert reduce_on_X(a * W - (10 * t_invariant - K)) == 0
+for invariant in (a, U, K, J, G, H, V, W):
+    assert reduce_on_X(apply_derivation(invariant, D22)) == 0
+
+W_boundary = sp.factor(W.subs(boundary_substitution))
+assert sp.factor(W_boundary + 10 * c * d + 5 * z / c) == 0
+boundary_jacobian = sp.Matrix(
+    [
+        [sp.diff(function, variable) for variable in (c, d, z)]
+        for function in (4 * c, 16 * q_boundary, W_boundary)
+    ]
+).det()
+assert sp.factor(boundary_jacobian) == -1280 * c
+
 # The quotient LND L(a)=K^2, L(U)=192*a^2, L(K)=L(J)=0 has
 # L(h)=-288*a^2/5.  On X_a, an arbitrary lift is allowed to have
 # P=L(p) and S=L(s).  Formula (53) gives
@@ -252,6 +321,8 @@ assert sp.expand(
 print("PASS: the effective grading has weights (4,3,2,-3,-4,-5,-6)")
 print("PASS: E=(D22-h*D10)/a is a global homogeneous LND of degree 7")
 print("PASS: the primitive pair D10,E has rank two at the tested a=0 point")
+print("PASS: ker(D10) intersect ker(E)=k[K,H,V] is a polynomial threefold")
+print("PASS: ker(E)=k[K,H,V,s] and ker(D22)=k[K,H,V,W]")
 print("PASS: ker(D10) and ker(E) generate k[X], so HD(X)=k[X]")
 print("PASS: the degree-two quotient LND has no global derivation lift to X")
 print("OPEN: this saturation does not compute ML(X) or decide flexibility")

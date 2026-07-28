@@ -23,6 +23,8 @@ class CoefficientCRTLift:
     base_denominator: int
     crt_modulus: int
     multiplier: int
+    coefficient_residues: tuple[int, ...] = ()
+    local_moduli: tuple[tuple[int, int], ...] = ()
 
 
 @dataclass(frozen=True)
@@ -179,7 +181,15 @@ def constructive_coefficient_crt(
     if not normalized:
         midpoint = tuple((left + right) / 2 for left, right in intervals)
         denominator = math.lcm(*(value.denominator for value in midpoint))
-        return CoefficientCRTLift(midpoint, denominator, denominator, 1, 0)
+        return CoefficientCRTLift(
+            midpoint,
+            denominator,
+            denominator,
+            1,
+            0,
+            tuple(0 for _ in midpoint),
+            (),
+        )
 
     base_denominator = math.lcm(
         *(
@@ -237,6 +247,8 @@ def constructive_coefficient_crt(
                 base_denominator=base_denominator,
                 crt_modulus=crt_modulus,
                 multiplier=multiplier,
+                coefficient_residues=tuple(coefficient_residues),
+                local_moduli=tuple(sorted(local_moduli.items())),
             )
 
     raise AssertionError("guaranteed coefficient CRT mesh bound failed")

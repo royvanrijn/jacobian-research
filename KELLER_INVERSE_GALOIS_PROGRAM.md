@@ -29,6 +29,18 @@ The permutation representation is part of the input. Abstractly isomorphic
 groups with inequivalent transitive degree-\(N\) actions define different
 problems.
 
+The
+[Beckmann--Black specialization refinement](KELLER_BECKMANN_BLACK_SPECIALIZATION.md)
+makes the uniform arithmetic quantifiers precise.  The literal regular-action
+version is impossible for a nontrivial absolute Keller map by the classical
+Galois-case theorem.  For a core-free point stabilizer \(H<G\), however, a
+generic polynomial for the action on \(G/H\) has a universal
+derivative-unit suspension: one determinant-one morphism of smooth affine
+charts preserves the generic \(G\)-cover and realizes every point field
+\(L^H\) as a complete fiber.  This settles the chart version for
+\(A_4,D_5,F_{20},A_5\); absolute affine-space completion remains open in
+all four cases.
+
 This is not a claim that the general inverse Galois problem has been solved.
 The first target is a **transfer theorem for an already-constructed explicit
 regular \(G\)-cover**. If such a cover over \(K\) is not known, Kellerization

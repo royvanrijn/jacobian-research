@@ -1,15 +1,20 @@
 # Low-rank boundaries of universal Keller-fiber multiplicity
 
-The universal multiplicity theorem has two deliberately different low-rank
-boundaries:
+The original diagonal/weighted multiplicity mechanisms have two deliberately
+different low-rank boundaries:
 
 1. rank four over arbitrary characteristic-zero fields;
 2. rank three even over number fields.
 
-This note closes the two immediate construction paths.  It does **not** prove
-that universal stable multiplicity is false in either case.  It proves that
-the present mechanisms cannot settle those cases by the arguments used in
-ranks at least four.
+This note closes the two immediate construction paths.  The later
+[power-shifted quartic gauge theorem](UNIVERSAL_QUARTIC_GAUGE_MULTIPLICITY.md)
+settles the unrestricted rank-four question positively over every
+characteristic-zero field.  Thus Section 1 is now an exact obstruction to
+the trace-chord mechanism, not an open boundary for quartic multiplicity.
+The later
+[fiber-invisible cubic gauge theorem](UNIVERSAL_CUBIC_GAUGE_MULTIPLICITY.md)
+also settles unrestricted rank-three multiplicity positively.  Section 2
+remains the exact collapse theorem for the three minimal mechanisms.
 
 ## 1. Rank four: the trace-chord quadric can be anisotropic
 
@@ -92,10 +97,10 @@ Therefore:
 > There is a characteristic-zero field `K` and a connected quartic finite
 > etale `K`-algebra `A` whose weighted trace-chord quadric has no `K`-point.
 
-This proves that the number-field hypothesis in the present rank-four proof
-is substantive.  It does not exclude other quartic Keller mechanisms, so the
-unrestricted statement `|\mathcal R_K(A)|=\infty` remains open for this
-example.
+This proves that the number-field hypothesis in the weighted rank-four proof
+is substantive.  It does not exclude other quartic Keller mechanisms.  In
+fact, the power-shifted gauge theorem gives
+`|\mathcal R_K(A)|=\infty` for this example.
 
 ## 2. Rank three: the three current mechanisms collapse
 
@@ -150,16 +155,10 @@ Hence:
 > contributes exactly one element to `\mathcal R_K(A)`: the foundational
 > cubic class.
 
-This closes the direct cross-family path to cubic multiplicity.  It does not
-classify all geometric-degree-three Keller maps.  The remaining question is
-precisely whether a Keller map outside these three controlled mechanisms can
-have the same complete cubic fiber without being stably equivalent to the
-foundational map.
-
-The active route to that classification is the
-[cubic closure protocol](../cancellation/CUBIC_CLOSURE_ATTACKS.md).  Its
-remaining load-bearing issue is intrinsic extraction and elimination of the
-closed-point normalization defect, not another seed-normalization search.
+This closes the direct cross-family path to cubic multiplicity, but it does
+not classify all geometric-degree-three Keller maps.  The fiber-invisible
+gauge theorem constructs infinitely many maps outside these three controlled
+mechanisms, disproving unrestricted cubic-class uniqueness.
 
 ## 3. Updated frontier
 
@@ -173,11 +172,11 @@ K\text{ a number field},\ N\ge4
 \operatorname{char}K=0,\ N\ge5
   &|\mathcal R_K(A)|=\infty\\
 \operatorname{char}K=0,\ N=4
-  &\text{proved when the trace-chord quadric is isotropic;}\\
-  &\text{that quadric can be anisotropic}\\
+  &|\mathcal R_K(A)|=\infty\text{ by power-shifted gauges;}\\
+  &\text{the weighted trace-chord submechanism can be obstructed}\\
 \operatorname{char}K=0,\ N=3
-  &\text{all three current mechanisms give one class;}\\
-  &\text{unrestricted multiplicity remains open.}
+  &|\mathcal R_K(A)|=\infty\text{ by fiber-invisible cubic lifts;}\\
+  &\text{the three minimal mechanisms still give one class.}
 \end{array}
 \]
 

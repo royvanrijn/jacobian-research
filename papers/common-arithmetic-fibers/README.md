@@ -2,20 +2,23 @@
 
 This is the focused manuscript for the prescribed-fiber theorem.
 
-Given a squarefree polynomial `P` of degree `N >= 3` over a
-characteristic-zero field and a supplied admissible translation `a`, the
-paper constructs an explicit map of affine three-space with:
+Given a separable polynomial `P` of degree `N >= 3` over a field of
+characteristic different from `2`, and a supplied translation `a` at which
+the first and third Hasse derivatives are nonzero, the paper constructs an
+explicit map of affine three-space with:
 
 - Jacobian determinant `1`;
 - geometric degree `N`;
 - coordinate degree at most `6N+2`; and
 - a distinguished full fiber naturally isomorphic to `Spec K[T]/(P)`.
 
-Monogenicity gives the abstract corollary: every finite étale algebra of rank
-at least three occurs as a full Keller fiber. The concrete `(P,a)`
-construction commutes with scalar extension. The primitive element and
-translation selected from an abstract algebra are noncanonical; Lean makes
-these choices noncomputably, and no functorial automatic choice is claimed.
+In characteristic zero, monogenicity and automatic existence of an
+admissible translation give the abstract corollary: every finite étale
+algebra of rank at least three occurs as a full Keller fiber. The concrete
+`(P,a)` construction commutes with scalar extension. The primitive element
+and translation selected from an abstract algebra are noncanonical; Lean
+makes these choices noncomputably, and no functorial automatic choice is
+claimed.
 
 The paper contains only:
 
@@ -51,10 +54,12 @@ rank F^{-1}(y) = N = gdeg(F).
 
 The Lean project in
 [`formal/finite-etale-keller`](../../formal/finite-etale-keller/) proves the
-polynomial construction end to end, including the literal natural fiber,
-finite étaleness, rank, actual function-field comparison, geometric degree,
-base change for supplied data, monogenicity, and the abstract finite-étale
-corollary. It has no `sorry` and no project-specific axioms.
+characteristic-zero specialization end to end, including the literal natural
+fiber, finite étaleness, rank, actual function-field comparison, geometric
+degree, base change for supplied data, monogenicity, and the abstract
+finite-étale corollary. The wider characteristic-not-two supplied theorem is
+not yet formalized end to end. The project has no `sorry` and no
+project-specific axioms.
 
 The public endpoints include:
 

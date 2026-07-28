@@ -450,6 +450,14 @@ Vanishing witness.  Homogenizing while preserving the ordinary nondegenerate
 Laplacian still uses the 42-variable quartic of Section 5 in this
 construction.
 
+A different identity slice optimizes rank rather than dimension.  Slicing
+the 22-variable `qb+x2s` circuit source gives a 42-variable nonhomogeneous HN
+witness of exact Hessian rank 35.  Its construction and characteristic-zero
+syzygy certificate are in
+[`HESSIAN_RANK_35_IDENTITY_SLICE.md`](HESSIAN_RANK_35_IDENTITY_SLICE.md).
+The polynomial again has degrees two through four, so this rank improvement
+does not lower the homogeneous quartic rank-37 or dimension-42 frontiers.
+
 ## 7. All-order recurrence for the actual homogeneous inverse
 
 Let \(\mathcal T\) be the symmetric trilinear polarization of the cubic map
@@ -523,8 +531,10 @@ further linear identity-output functional to restrict.  The homogeneous
 linear quotient.  Nonlinear reductions and dimension minimality remain open;
 no minimality is claimed for 20, 40, or 42.
 
-The separate five-pair SIC and five-variable unrestricted GVC witness is
-proved and credited in
+The separate three-pair SIC witness is proved in
+[`THREE_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md`](THREE_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md).
+The five-variable unrestricted GVC witness and its external provenance are
+recorded in
 [`DVORSKY_GVC5_COUNTEREXAMPLE.md`](DVORSKY_GVC5_COUNTEREXAMPLE.md).
 
 Primary credit for the Image and Vanishing frameworks and equivalences

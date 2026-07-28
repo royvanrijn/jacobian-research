@@ -1,0 +1,131 @@
+{
+  "format": "sparse-factorial-moment-frontier-v1",
+  "field": "complex numbers",
+  "factorial_functional": "L(U^alpha)=product_i alpha_i!",
+  "searches": {
+    "three_term_binary": {
+      "variables": 2,
+      "maximum_total_degree": 6,
+      "monomial_count": 28,
+      "support_count": 3276,
+      "normalization": "coefficient of the first listed monomial is 1",
+      "nonzero_coefficient_saturation": "a*b != 0",
+      "moments_imposed": [
+        1,
+        2,
+        3
+      ],
+      "survivors": []
+    },
+    "four_term_involution_paired": {
+      "variables": 4,
+      "involution": "(U0,U1,U2,U3) -> (U2,U3,U0,U1)",
+      "maximum_total_degree": 6,
+      "nontrivial_orbit_count": 100,
+      "support_count": 4950,
+      "family": "(M-sigma(M))+c*(N-sigma(N))",
+      "nonzero_coefficient_saturation": "c != 0",
+      "automatic_zero_moments": "every odd order",
+      "even_moments_imposed": [
+        2,
+        4
+      ],
+      "survivors": []
+    },
+    "binary_homogeneous_cutoffs": {
+      "variables": 2,
+      "homogeneous_degrees": [
+        1,
+        4
+      ],
+      "results": [
+        {
+          "degree": 1,
+          "coefficient_count": 2,
+          "sufficient_initial_moments": 2,
+          "projective_unit_charts": [
+            0,
+            1
+          ],
+          "sharp_initial_zero_count": 1,
+          "sharp_chart": "q1_0=1",
+          "sharp_chart_zero_dimensional": true,
+          "sharp_eliminant_degree": 1,
+          "sharp_eliminant": "q1_1 + 1"
+        },
+        {
+          "degree": 2,
+          "coefficient_count": 3,
+          "sufficient_initial_moments": 3,
+          "projective_unit_charts": [
+            0,
+            1,
+            2
+          ],
+          "sharp_initial_zero_count": 2,
+          "sharp_chart": "q2_0=1",
+          "sharp_chart_zero_dimensional": true,
+          "sharp_eliminant_degree": 2,
+          "sharp_eliminant": "(2*q2_2**2 - q2_2 + 2)/2"
+        },
+        {
+          "degree": 3,
+          "coefficient_count": 4,
+          "sufficient_initial_moments": 4,
+          "projective_unit_charts": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "sharp_initial_zero_count": 3,
+          "sharp_chart": "q3_0=1",
+          "sharp_chart_zero_dimensional": true,
+          "sharp_eliminant_degree": 5,
+          "sharp_eliminant": "(q3_3 + 1)*(18*q3_3**4 - 33*q3_3**3 + 38*q3_3**2 - 33*q3_3 + 18)/18"
+        },
+        {
+          "degree": 4,
+          "coefficient_count": 5,
+          "sufficient_initial_moments": 5,
+          "projective_unit_charts": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "sharp_initial_zero_count": 4,
+          "sharp_chart": "q4_0=1",
+          "sharp_chart_zero_dimensional": true,
+          "sharp_eliminant_degree": 24,
+          "sharp_eliminant": "(2021828078610432*q4_4**24 - 84242836608768*q4_4**23 + 468600778636272*q4_4**22 - 1011426730682988*q4_4**21 + 4499485777573637*q4_4**20 + 1411670290198921*q4_4**19 - 413693733479169*q4_4**18 - 2595814797308914*q4_4**17 + 3683191707795906*q4_4**16 - 916506729598399*q4_4**15 + 1384781743979482*q4_4**14 - 5209282482059013*q4_4**13 + 4011912324494437*q4_4**12 - 5209282482059013*q4_4**11 + 1384781743979482*q4_4**10 - 916506729598399*q4_4**9 + 3683191707795906*q4_4**8 - 2595814797308914*q4_4**7 - 413693733479169*q4_4**6 + 1411670290198921*q4_4**5 + 4499485777573637*q4_4**4 - 1011426730682988*q4_4**3 + 468600778636272*q4_4**2 - 84242836608768*q4_4 + 2021828078610432)/2021828078610432"
+        }
+      ],
+      "explicit_sharp_witnesses": {
+        "degree_2": {
+          "polynomial": "x^2+(-5/2+i*sqrt(15)/2)xy+(1/4-i*sqrt(15)/4)y^2",
+          "moments": [
+            "0",
+            "0",
+            "180+108*i*sqrt(15)"
+          ]
+        },
+        "degree_3": {
+          "polynomial": "x^3-(6+i*sqrt(21))x^2y+(6+i*sqrt(21))xy^2-y^3",
+          "moments": [
+            "0",
+            "0",
+            "0",
+            "252564480-42301440*i*sqrt(21)"
+          ]
+        }
+      }
+    }
+  },
+  "long_check_bounds": {
+    "three_term": 12,
+    "four_term_involution_paired": 20
+  },
+  "scope": "finite exact support searches only; absence of survivors is not a global Strong Factorial or Factorial theorem"
+}

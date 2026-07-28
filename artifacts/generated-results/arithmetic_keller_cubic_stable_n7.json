@@ -1,0 +1,169 @@
+{
+  "base_field": "Q",
+  "coefficient_crt": {
+    "base_denominator": 1,
+    "coefficient_residues_ascending": [
+      1,
+      1,
+      0
+    ],
+    "common_denominator": 1,
+    "crt_modulus": 2,
+    "local_moduli": [
+      {
+        "modulus": 2,
+        "prime": 2
+      }
+    ],
+    "multiplier": 0,
+    "real_coefficient_intervals": [
+      [
+        "-2",
+        "0"
+      ],
+      [
+        "-2",
+        "0"
+      ],
+      [
+        "-1",
+        "1"
+      ]
+    ]
+  },
+  "degree": 3,
+  "global_polynomial": {
+    "common_denominator": 1,
+    "monic_coefficients_ascending": [
+      "-1",
+      "-1",
+      "0",
+      "1"
+    ],
+    "primitive_integer_coefficients_ascending": [
+      -1,
+      -1,
+      0,
+      1
+    ]
+  },
+  "inverse_polynomial_identity": {
+    "formula": "seed - linear_coefficient * target[2] / 2",
+    "inverse_coefficients_ascending": [
+      "-1",
+      "-1",
+      "0",
+      "1"
+    ],
+    "linear_coefficient": "-1",
+    "seed_coefficients_ascending": [
+      "0",
+      "-1",
+      "0",
+      "1"
+    ],
+    "translated_input_coefficients_ascending": [
+      "-1",
+      "-1",
+      "0",
+      "1"
+    ]
+  },
+  "irreducibility_witness": {
+    "method": "irreducible reduction of a primitive polynomial",
+    "prime": 2
+  },
+  "keller_map": {
+    "coordinate_degrees": [
+      7,
+      48,
+      46
+    ],
+    "expanded_map_hash": {
+      "algorithm": "sha256",
+      "digest": "b7ad8dfaca5f3ac4d119a46e49e459de1c4ddb0e7c1f0a77b196159dc8cfe2e2",
+      "serialization": "expanded-sparse-rational-json/v1",
+      "term_counts": [
+        7,
+        176,
+        149
+      ]
+    },
+    "geometric_degree": 3,
+    "jacobian_determinant": "1",
+    "normalization": "diag(1,-1/2,1)",
+    "stable_multiplicity": {
+      "boundary_prime_count": null,
+      "boundary_ramification_index": null,
+      "family_parameter": 3,
+      "fitting_support": [],
+      "gauge_exponent": 7,
+      "separation_invariant": "geometric_boundary_target_components",
+      "separation_value": 7
+    }
+  },
+  "local_action_certificates": [
+    {
+      "cycle_degrees": [
+        3
+      ],
+      "description": "irreducible cubic reduction",
+      "factors": [
+        {
+          "coefficients_ascending": [
+            "-1",
+            "-1",
+            "0",
+            "1"
+          ],
+          "witness": "irreducible_mod_p"
+        }
+      ],
+      "kind": "frobenius_factorization",
+      "prime": 2
+    }
+  ],
+  "local_models_and_precision_claims": [
+    {
+      "claim": "same finite etale Q_p-algebra",
+      "claimed_precision": 1,
+      "coefficient_modulus": 2,
+      "discriminant": "-23",
+      "discriminant_valuation": 0,
+      "model_coefficients_ascending": [
+        "-1",
+        "-1",
+        "0",
+        "1"
+      ],
+      "prime": 2,
+      "theorem": "monic coefficient congruence modulo p^(2*v_p(discriminant)+1)",
+      "universal_precision": 1
+    }
+  ],
+  "name": "connected-cubic-stable-n7-regression",
+  "provenance": {
+    "arithmetic_backend": "SymPy 1.14 exact QQ arithmetic",
+    "generator": "scripts/compile_arithmetic_keller_certificate.py",
+    "input_schema": "proof-carrying-arithmetic-specification/v1",
+    "regeneration_command": ".venv/bin/python scripts/compile_arithmetic_keller_certificate.py --spec arithmetic/specifications/connected_cubic_stable_n7.json --certificate artifacts/generated-results/arithmetic_keller_cubic_stable_n7.json"
+  },
+  "real_roots": {
+    "count": 1,
+    "isolating_intervals": [
+      {
+        "left": "102/77",
+        "multiplicity": 1,
+        "right": "359/271"
+      }
+    ]
+  },
+  "schema": "proof-carrying-arithmetic-compilation/v1",
+  "selected_translation": "0",
+  "target": [
+    "1",
+    "0",
+    "-2"
+  ],
+  "variable": "T"
+}

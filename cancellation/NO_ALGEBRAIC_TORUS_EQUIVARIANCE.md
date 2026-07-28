@@ -154,6 +154,61 @@ finite remnant
 
 with target weights \((-2,-1,1)\) modulo \(5\).
 
+There is also a coefficient-height improvement obtained by a genuine
+left--right transformation, rather than another seed-support specialization.
+Apply the rational moduli scaling
+
+\[
+ \alpha=\frac14,\qquad \beta=\frac{12}{5},
+\]
+
+from the stable-moduli theorem.  The equivalent normalized coefficients are
+\(a_3=-35/3\) and \(a_4=625/432\).  Thus, with
+
+\[
+ q_{\rm bal}=t^2z-\frac3{35}y^2(1+3t),
+\]
+
+one obtains
+
+\[
+\begin{aligned}
+F_{{\rm bal},1}&=-\frac12tq_{\rm bal},\\
+F_{{\rm bal},2}&=y-35xq_{\rm bal}
+ +\frac{625}{108}t^2x^2q_{\rm bal}^4,\\
+F_{{\rm bal},3}&=x(5-3t)+\frac{35}{3}x^3z
+ -\frac{625}{216}(xq_{\rm bal})^4.
+\end{aligned}                                           \tag{4f}
+\]
+
+It still has support \((7,51,38)\) and degrees \((7,26,24)\).  For the naive
+reduced rational height \(H(a/b)=\max(|a|,b)\), the maximum expanded
+coefficient height drops from
+
+\[
+ 2248704\quad\hbox{in (4b) to}\quad 21875\quad\hbox{in (4f)}.
+\]
+
+The source scaling
+
+\[
+ (x,y,z)\longmapsto\left(\frac x4,4y,\frac{12}5z\right)
+\]
+
+carries the collision (4c) to
+
+\[
+\begin{aligned}
+(0,0,12/5),\quad&(-1/5,9,-159/8),\\
+(1/8,-6,240),\quad&(3/40,-58/3,-19856/243),
+\end{aligned}                                           \tag{4g}
+\]
+
+all mapping to \((-6/5,0,0)\).  Its maximum coordinate height is \(19856\),
+down from \(24820\) in (4c).  These are exact improvements for the stated
+height convention, not optimality theorems.  The more-than-102-fold
+coefficient-height drop does not change expanded support.
+
 The geometric-degree qualifier should not be overstated.  Degree two is
 excluded for every noninvertible Keller map, while the foundational
 geometric-degree-three example is graded.  The repository does not yet

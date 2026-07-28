@@ -1,0 +1,192 @@
+{
+  "format": "factorial-moment-witnesses-v1",
+  "field": "complex numbers",
+  "factorial_functional": "L(U^alpha)=product_i alpha_i!",
+  "source_translation": {
+    "source": "Dvorsky--Long GVC(5)/SIC(5) witness",
+    "p": "w_t(w_a w_d-w_b w_c)(t+c)(ad+bt), with variable order (t,a,b,c,d)",
+    "diagonal_formula": "Diag(p^m)=U_t^m sum_(k=0)^m (-1)^k binom(m,k)^3 (U_a U_d)^(m-k)(U_b U_c)^k",
+    "all_order_factorial_value": "L(Diag(p^m))=0 for every m>=1",
+    "multiplicativity_obstruction": {
+      "L(Diag(p)^2)": 12,
+      "L(Diag(p^2))": 0
+    },
+    "bounded_sparse_replay": [
+      {
+        "order": 1,
+        "diagonal_terms": 2,
+        "factorial_moment": 0
+      },
+      {
+        "order": 2,
+        "diagonal_terms": 3,
+        "factorial_moment": 0
+      },
+      {
+        "order": 3,
+        "diagonal_terms": 4,
+        "factorial_moment": 0
+      },
+      {
+        "order": 4,
+        "diagonal_terms": 5,
+        "factorial_moment": 0
+      },
+      {
+        "order": 5,
+        "diagonal_terms": 6,
+        "factorial_moment": 0
+      },
+      {
+        "order": 6,
+        "diagonal_terms": 7,
+        "factorial_moment": 0
+      },
+      {
+        "order": 7,
+        "diagonal_terms": 8,
+        "factorial_moment": 0
+      },
+      {
+        "order": 8,
+        "diagonal_terms": 9,
+        "factorial_moment": 0
+      }
+    ]
+  },
+  "linear_search": {
+    "family": "G_r=sum_(j=0)^(r-1) zeta_r^j X_j",
+    "all_order_formula": "L(G_r^m)=m! if r divides m, and 0 otherwise",
+    "minimality_scope": "Among nonzero homogeneous linear forms with s nonzero terms, at most s-1 initial factorial moments vanish",
+    "bounded_exact_replay": [
+      {
+        "root_order": 2,
+        "term_count": 2,
+        "degree": 1,
+        "initial_zero_orders": [
+          1
+        ],
+        "first_nonzero_order": 2,
+        "first_nonzero_moment": 2,
+        "checked_through": 4
+      },
+      {
+        "root_order": 3,
+        "term_count": 3,
+        "degree": 1,
+        "initial_zero_orders": [
+          1,
+          2
+        ],
+        "first_nonzero_order": 3,
+        "first_nonzero_moment": 6,
+        "checked_through": 6
+      },
+      {
+        "root_order": 5,
+        "term_count": 5,
+        "degree": 1,
+        "initial_zero_orders": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "first_nonzero_order": 5,
+        "first_nonzero_moment": 120,
+        "checked_through": 10
+      },
+      {
+        "root_order": 7,
+        "term_count": 7,
+        "degree": 1,
+        "initial_zero_orders": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "first_nonzero_order": 7,
+        "first_nonzero_moment": 5040,
+        "checked_through": 14
+      },
+      {
+        "root_order": 11,
+        "term_count": 11,
+        "degree": 1,
+        "initial_zero_orders": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "first_nonzero_order": 11,
+        "first_nonzero_moment": 39916800,
+        "checked_through": 22
+      }
+    ]
+  },
+  "witness_derived_quartics": {
+    "family": "F_r=U_t(U_a U_d-U_b U_c)G_r on disjoint variables, for odd r",
+    "all_order_formula": "L(F_r^m)=L(A^m)L(G_r^m), L(A^m)=(m!)^3(1+(-1)^m)(m+1)/(m+2)",
+    "bounded_exact_replay": [
+      {
+        "root_order": 3,
+        "term_count": 6,
+        "degree": 4,
+        "initial_zero_range": [
+          1,
+          5
+        ],
+        "first_nonzero_order": 6,
+        "first_nonzero_moment": "470292480000"
+      },
+      {
+        "root_order": 5,
+        "term_count": 10,
+        "degree": 4,
+        "initial_zero_range": [
+          1,
+          9
+        ],
+        "first_nonzero_order": 10,
+        "first_nonzero_moment": "317902224067500441600000000"
+      },
+      {
+        "root_order": 7,
+        "term_count": 14,
+        "degree": 4,
+        "initial_zero_range": [
+          1,
+          13
+        ],
+        "first_nonzero_order": 14,
+        "first_nonzero_moment": "108301552017292269643968537100812288000000000"
+      },
+      {
+        "root_order": 11,
+        "term_count": 22,
+        "degree": 4,
+        "initial_zero_range": [
+          1,
+          21
+        ],
+        "first_nonzero_order": 22,
+        "first_nonzero_moment": "3059235848243773337896250859241237199077854595653732637519442387927040000000000000000"
+      }
+    ]
+  },
+  "scope": {
+    "factorial_conjecture": "no counterexample; each family has a nonzero later moment",
+    "strong_factorial_threshold": "sharp: the displayed families attain N(f)-1 initial zero moments",
+    "degree_only_cutoff": "fails uniformly in ambient dimension already for degree one"
+  }
+}

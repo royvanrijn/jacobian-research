@@ -11,7 +11,9 @@ normal form.
 
 from __future__ import annotations
 
+from functools import reduce
 from itertools import permutations
+from math import gcd
 
 import sympy as sp
 
@@ -357,6 +359,171 @@ assert all(
     )
 )
 
+# The sparse representative has its own small affine-linear certificate.
+# The column order is A(9), source translation(3), B(9), and target
+# translation(3), with both matrices in row-major order.  The 24 selected
+# coefficient rows have 46 nonzero primitive-integer entries.
+sparse_a_symbols = sp.symbols(
+    "sparse_a11 sparse_a12 sparse_a13 "
+    "sparse_a21 sparse_a22 sparse_a23 "
+    "sparse_a31 sparse_a32 sparse_a33"
+)
+sparse_source_constants = sp.symbols("sparse_source_constant_1:4")
+sparse_b_symbols = sp.symbols(
+    "sparse_b11 sparse_b12 sparse_b13 "
+    "sparse_b21 sparse_b22 sparse_b23 "
+    "sparse_b31 sparse_b32 sparse_b33"
+)
+sparse_target_constants = sp.symbols("sparse_target_constant_1:4")
+sparse_affine_unknowns = (
+    sparse_a_symbols
+    + sparse_source_constants
+    + sparse_b_symbols
+    + sparse_target_constants
+)
+sparse_A = sp.Matrix(3, 3, sparse_a_symbols)
+sparse_B = sp.Matrix(3, 3, sparse_b_symbols)
+sparse_vector = sp.Matrix(sparse_mapping)
+sparse_affine_identity = (
+    sparse_B * sparse_vector
+    + sp.Matrix(sparse_target_constants)
+    - sparse_vector.jacobian((x, y, z))
+    * (
+        sparse_A * sp.Matrix((x, y, z))
+        + sp.Matrix(sparse_source_constants)
+    )
+)
+sparse_affine_polynomials = tuple(
+    sp.Poly(sp.expand(component), x, y, z)
+    for component in sparse_affine_identity
+)
+sparse_affine_labels = (
+    (1, (12, 10, 4)),
+    (1, (12, 8, 4)),
+    (1, (4, 3, 0)),
+    (1, (4, 2, 1)),
+    (1, (3, 4, 0)),
+    (1, (3, 3, 1)),
+    (1, (2, 2, 0)),
+    (1, (3, 2, 2)),
+    (2, (12, 9, 4)),
+    (1, (2, 4, 1)),
+    (1, (2, 4, 0)),
+    (1, (2, 3, 2)),
+    (1, (1, 4, 0)),
+    (1, (2, 2, 1)),
+    (1, (0, 0, 0)),
+    (2, (12, 10, 4)),
+    (2, (12, 8, 4)),
+    (2, (3, 3, 1)),
+    (2, (3, 2, 1)),
+    (2, (0, 0, 0)),
+    (3, (12, 10, 4)),
+    (3, (12, 8, 4)),
+    (3, (3, 3, 1)),
+    (3, (0, 0, 0)),
+)
+
+
+def primitive_integer_row(row: list[sp.Expr]) -> list[int]:
+    """Clear denominators and common factors with positive leading entry."""
+
+    denominator_lcm = sp.ilcm(*(sp.denom(entry) for entry in row))
+    integer_row = [int(denominator_lcm * entry) for entry in row]
+    common_factor = reduce(
+        gcd, (abs(entry) for entry in integer_row if entry)
+    )
+    integer_row = [entry // common_factor for entry in integer_row]
+    first_nonzero = next(entry for entry in integer_row if entry)
+    if first_nonzero < 0:
+        integer_row = [-entry for entry in integer_row]
+    return integer_row
+
+
+sparse_affine_minor = sp.Matrix(
+    [
+        primitive_integer_row(
+            [
+                sparse_affine_polynomials[component - 1]
+                .coeff_monomial(monomial)
+                .coeff(unknown)
+                for unknown in sparse_affine_unknowns
+            ]
+        )
+        for component, monomial in sparse_affine_labels
+    ]
+)
+assert sparse_affine_minor.shape == (24, 24)
+assert sum(entry != 0 for entry in sparse_affine_minor) == 46
+assert sparse_affine_minor.det() == 10
+
+
+# The rational stable-moduli scaling (alpha,beta)=(1/4,12/5) improves
+# coefficient and collision height without changing support.
+balanced_q = (
+    local_t**2 * z - sp.Rational(3, 35) * y**2 * (1 + 3 * local_t)
+)
+balanced_mapping = (
+    -sp.Rational(1, 2) * local_t * balanced_q,
+    y
+    - 35 * x * balanced_q
+    + sp.Rational(625, 108) * local_t**2 * x**2 * balanced_q**4,
+    x * (5 - 3 * local_t)
+    + sp.Rational(35, 3) * x**3 * z
+    - sp.Rational(625, 216) * (x * balanced_q) ** 4,
+)
+balanced_polynomials = tuple(
+    sp.Poly(sp.expand(component), x, y, z)
+    for component in balanced_mapping
+)
+assert tuple(len(poly.terms()) for poly in balanced_polynomials) == (7, 51, 38)
+assert tuple(poly.total_degree() for poly in balanced_polynomials) == (7, 26, 24)
+assert sp.factor(sp.det(sp.Matrix(balanced_mapping).jacobian((x, y, z)))) == 1
+
+balanced_collision = (
+    (0, 0, sp.Rational(12, 5)),
+    (-sp.Rational(1, 5), 9, -sp.Rational(159, 8)),
+    (sp.Rational(1, 8), -6, 240),
+    (
+        sp.Rational(3, 40),
+        -sp.Rational(58, 3),
+        -sp.Rational(19856, 243),
+    ),
+)
+assert all(
+    tuple(
+        sp.factor(component.subs(dict(zip((x, y, z), point))))
+        for component in balanced_mapping
+    )
+    == (-sp.Rational(6, 5), 0, 0)
+    for point in balanced_collision
+)
+
+
+def rational_height(value: sp.Expr) -> int:
+    """Naive reduced height max(abs(numerator), denominator)."""
+
+    numerator, denominator = sp.Rational(value).as_numer_denom()
+    return max(abs(int(numerator)), int(denominator))
+
+
+def expanded_coefficient_height(polynomials: tuple[sp.Poly, ...]) -> int:
+    return max(
+        rational_height(coefficient)
+        for polynomial in polynomials
+        for _, coefficient in polynomial.terms()
+    )
+
+
+def point_height(points: tuple[tuple[sp.Expr, ...], ...]) -> int:
+    return max(rational_height(value) for point in points for value in point)
+
+
+assert expanded_coefficient_height(sparse_polynomials) == 2248704
+assert expanded_coefficient_height(balanced_polynomials) == 21875
+assert point_height(sparse_collision) == 24820
+assert point_height(balanced_collision) == 19856
+
 print("PASS: J(P,r) = -1 - 3*P*r^2 + 4*P^4*r^3")
 print("PASS: exactly two Newton-support lattice matrices survive")
 print("PASS: the sole involution is rejected by the intrinsic base character")
@@ -366,3 +533,6 @@ print("PASS: the residual mu_5 is realized by explicit linear LR symmetries")
 print("PASS: sparse quartic has support (7,51,38) and degree (7,26,24)")
 print("PASS: sparse quartic has determinant one and a rational four-point fiber")
 print("PASS: g_2=0 gives the unique seven-term support drop in this normal form")
+print("PASS: sparse affine-linear 24-by-24 minor has determinant 10")
+print("PASS: balanced LR scaling lowers coefficient height 2248704 -> 21875")
+print("PASS: balanced LR scaling lowers collision height 24820 -> 19856")

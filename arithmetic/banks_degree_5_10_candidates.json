@@ -1,0 +1,319 @@
+{
+  "schema": "banks-strongly-intersective-candidates/v1",
+  "scope": "Necessary factorization-shape and abstract-group candidates from Banks, Table C.1. This is not an if-and-only-if coefficient classification; a table example is provenance, not a repository verification.",
+  "source": {
+    "author": "Nicolas Banks",
+    "title": "Classification Results for Intersective Polynomials With No Integral Roots",
+    "year": 2025,
+    "thesis_url": "https://uwspace.uwaterloo.ca/items/baef0bb0-3712-4117-81b5-c068944ae100",
+    "thesis_pdf_sha256": "6e48233e817c16e356c2ece25abb81715837dd62ed25b99855155053357e83d6",
+    "code_url": "https://github.com/N2Banks/Intersective-Polynomials-Algorithms",
+    "code_main_commit": "140e0a7a331654741eef412bf93518dbec34a15d",
+    "retrieved": "2026-07-27"
+  },
+  "degrees": [
+    {
+      "degree": 5,
+      "shapes": [
+        {
+          "factor_degrees": [2, 3],
+          "groups": [
+            {"id": "6.1", "example_in_table": true}
+          ]
+        }
+      ]
+    },
+    {
+      "degree": 6,
+      "shapes": [
+        {
+          "factor_degrees": [2, 2, 2],
+          "groups": [
+            {"id": "4.2", "example_in_table": true}
+          ]
+        }
+      ]
+    },
+    {
+      "degree": 7,
+      "shapes": [
+        {
+          "factor_degrees": [2, 2, 3],
+          "groups": [
+            {"id": "6.1", "example_in_table": true},
+            {"id": "12.4", "example_in_table": true}
+          ]
+        },
+        {
+          "factor_degrees": [2, 5],
+          "groups": [
+            {"id": "10.1", "example_in_table": true},
+            {"id": "20.3", "example_in_table": true}
+          ]
+        },
+        {
+          "factor_degrees": [3, 4],
+          "groups": [
+            {"id": "12.3", "example_in_table": true},
+            {"id": "24.12", "example_in_table": true},
+            {"id": "72.43", "example_in_table": false}
+          ]
+        }
+      ]
+    },
+    {
+      "degree": 8,
+      "shapes": [
+        {
+          "factor_degrees": [2, 2, 2, 2],
+          "groups": [
+            {"id": "4.2", "example_in_table": true},
+            {"id": "8.5", "example_in_table": true}
+          ]
+        },
+        {
+          "factor_degrees": [2, 2, 4],
+          "groups": [
+            {"id": "8.3", "example_in_table": true},
+            {"id": "16.11", "example_in_table": true}
+          ]
+        },
+        {
+          "factor_degrees": [2, 3, 3],
+          "groups": [
+            {"id": "12.4", "example_in_table": true},
+            {"id": "18.3", "example_in_table": true},
+            {"id": "18.4", "example_in_table": false},
+            {"id": "36.10", "example_in_table": true},
+            {"id": "36.13", "example_in_table": true}
+          ]
+        }
+      ]
+    },
+    {
+      "degree": 9,
+      "shapes": [
+        {
+          "factor_degrees": [2, 2, 2, 3],
+          "groups": [
+            {"id": "6.1", "example_in_table": true},
+            {"id": "12.4", "example_in_table": true},
+            {"id": "12.5", "example_in_table": true},
+            {"id": "24.14", "example_in_table": true}
+          ]
+        },
+        {
+          "factor_degrees": [2, 2, 5],
+          "groups": [
+            {"id": "10.1", "example_in_table": true},
+            {"id": "20.3", "example_in_table": true},
+            {"id": "20.4", "example_in_table": true},
+            {"id": "40.12", "example_in_table": true}
+          ]
+        },
+        {
+          "factor_degrees": [2, 3, 4],
+          "groups": [
+            {"id": "12.1", "example_in_table": true},
+            {"id": "12.4", "example_in_table": true},
+            {"id": "24.5", "example_in_table": true},
+            {"id": "24.6", "example_in_table": false},
+            {"id": "24.7", "example_in_table": false},
+            {"id": "24.8", "example_in_table": true},
+            {"id": "24.12", "example_in_table": true},
+            {"id": "24.13", "example_in_table": false},
+            {"id": "24.14", "example_in_table": true},
+            {"id": "48.36", "example_in_table": false},
+            {"id": "48.38", "example_in_table": true},
+            {"id": "48.43", "example_in_table": true},
+            {"id": "48.48", "example_in_table": true},
+            {"id": "72.42", "example_in_table": false},
+            {"id": "72.43", "example_in_table": false},
+            {"id": "72.44", "example_in_table": false},
+            {"id": "144.183", "example_in_table": false},
+            {"id": "144.189", "example_in_table": false}
+          ]
+        },
+        {
+          "factor_degrees": [2, 7],
+          "groups": [
+            {"id": "14.1", "example_in_table": true},
+            {"id": "42.1", "example_in_table": true}
+          ]
+        },
+        {
+          "factor_degrees": [4, 5],
+          "groups": [
+            {"id": "20.3", "example_in_table": true},
+            {"id": "40.12", "example_in_table": true},
+            {"id": "80.31", "example_in_table": false},
+            {"id": "80.34", "example_in_table": false},
+            {"id": "240.192", "example_in_table": false}
+          ]
+        }
+      ]
+    },
+    {
+      "degree": 10,
+      "shapes": [
+        {
+          "factor_degrees": [2, 2, 2, 2, 2],
+          "groups": [
+            {"id": "4.2", "example_in_table": true},
+            {"id": "8.5", "example_in_table": true},
+            {"id": "16.14", "example_in_table": true}
+          ]
+        },
+        {
+          "factor_degrees": [2, 2, 2, 4],
+          "groups": [
+            {"id": "4.2", "example_in_table": true},
+            {"id": "8.2", "example_in_table": true},
+            {"id": "8.3", "example_in_table": true},
+            {"id": "8.5", "example_in_table": true},
+            {"id": "16.10", "example_in_table": true},
+            {"id": "16.11", "example_in_table": true},
+            {"id": "16.14", "example_in_table": true},
+            {"id": "32.46", "example_in_table": true},
+            {"id": "48.48", "example_in_table": false},
+            {"id": "48.49", "example_in_table": false},
+            {"id": "96.226", "example_in_table": false}
+          ]
+        },
+        {
+          "factor_degrees": [2, 2, 3, 3],
+          "groups": [
+            {"id": "6.1", "example_in_table": true},
+            {"id": "12.4", "example_in_table": true},
+            {"id": "18.3", "example_in_table": true},
+            {"id": "18.4", "example_in_table": false},
+            {"id": "24.14", "example_in_table": false},
+            {"id": "36.10", "example_in_table": false},
+            {"id": "36.12", "example_in_table": false},
+            {"id": "36.13", "example_in_table": false},
+            {"id": "72.46", "example_in_table": false}
+          ]
+        },
+        {
+          "factor_degrees": [2, 2, 6],
+          "groups": [
+            {"id": "12.4", "example_in_table": false},
+            {"id": "24.14", "example_in_table": false},
+            {"id": "36.10", "example_in_table": false},
+            {"id": "36.12", "example_in_table": false},
+            {"id": "48.48", "example_in_table": false},
+            {"id": "72.40", "example_in_table": false},
+            {"id": "72.46", "example_in_table": false},
+            {"id": "96.226", "example_in_table": false},
+            {"id": "144.186", "example_in_table": false}
+          ]
+        },
+        {
+          "factor_degrees": [2, 3, 5],
+          "groups": [
+            {"id": "30.1", "example_in_table": false},
+            {"id": "30.2", "example_in_table": false},
+            {"id": "30.3", "example_in_table": false},
+            {"id": "60.7", "example_in_table": false},
+            {"id": "60.8", "example_in_table": false},
+            {"id": "60.12", "example_in_table": false},
+            {"id": "120.36", "example_in_table": false},
+            {"id": "120.41", "example_in_table": false},
+            {"id": "360.120", "example_in_table": false},
+            {"id": "360.121", "example_in_table": false},
+            {"id": "720.767", "example_in_table": false},
+            {"id": "720.770", "example_in_table": false}
+          ]
+        },
+        {
+          "factor_degrees": [2, 4, 4],
+          "groups": [
+            {"id": "8.3", "example_in_table": false},
+            {"id": "16.3", "example_in_table": false},
+            {"id": "16.4", "example_in_table": false},
+            {"id": "16.11", "example_in_table": false},
+            {"id": "32.22", "example_in_table": false},
+            {"id": "32.25", "example_in_table": false},
+            {"id": "32.27", "example_in_table": false},
+            {"id": "32.28", "example_in_table": false},
+            {"id": "32.34", "example_in_table": false},
+            {"id": "32.46", "example_in_table": false},
+            {"id": "64.202", "example_in_table": false},
+            {"id": "64.226", "example_in_table": false},
+            {"id": "96.187", "example_in_table": false},
+            {"id": "96.195", "example_in_table": false},
+            {"id": "96.197", "example_in_table": false},
+            {"id": "192.1472", "example_in_table": false}
+          ]
+        },
+        {
+          "factor_degrees": [3, 3, 4],
+          "groups": [
+            {"id": "12.3", "example_in_table": false},
+            {"id": "24.12", "example_in_table": false},
+            {"id": "36.10", "example_in_table": false},
+            {"id": "36.11", "example_in_table": false},
+            {"id": "72.21", "example_in_table": false},
+            {"id": "72.23", "example_in_table": false},
+            {"id": "72.42", "example_in_table": false},
+            {"id": "72.43", "example_in_table": false},
+            {"id": "72.44", "example_in_table": false},
+            {"id": "72.46", "example_in_table": false},
+            {"id": "144.154", "example_in_table": false},
+            {"id": "144.183", "example_in_table": false}
+          ]
+        },
+        {
+          "factor_degrees": [3, 7],
+          "groups": [
+            {"id": "21.1", "example_in_table": true},
+            {"id": "42.1", "example_in_table": true},
+            {"id": "126.9", "example_in_table": false}
+          ]
+        },
+        {
+          "factor_degrees": [4, 6],
+          "groups": [
+            {"id": "12.3", "example_in_table": true},
+            {"id": "24.12", "example_in_table": true},
+            {"id": "24.13", "example_in_table": true},
+            {"id": "48.30", "example_in_table": false},
+            {"id": "48.31", "example_in_table": false},
+            {"id": "48.48", "example_in_table": false},
+            {"id": "48.49", "example_in_table": false},
+            {"id": "48.50", "example_in_table": false},
+            {"id": "72.42", "example_in_table": false},
+            {"id": "72.43", "example_in_table": false},
+            {"id": "72.44", "example_in_table": false},
+            {"id": "96.186", "example_in_table": false},
+            {"id": "96.187", "example_in_table": false},
+            {"id": "96.194", "example_in_table": false},
+            {"id": "96.195", "example_in_table": false},
+            {"id": "96.197", "example_in_table": false},
+            {"id": "96.226", "example_in_table": false},
+            {"id": "96.227", "example_in_table": false},
+            {"id": "96.229", "example_in_table": false},
+            {"id": "144.183", "example_in_table": false},
+            {"id": "144.189", "example_in_table": false},
+            {"id": "192.1470", "example_in_table": false},
+            {"id": "192.1472", "example_in_table": false},
+            {"id": "192.1488", "example_in_table": false},
+            {"id": "192.1538", "example_in_table": false},
+            {"id": "216.164", "example_in_table": false},
+            {"id": "288.1024", "example_in_table": false},
+            {"id": "288.1026", "example_in_table": false},
+            {"id": "432.743", "example_in_table": false},
+            {"id": "432.747", "example_in_table": false},
+            {"id": "432.748", "example_in_table": false},
+            {"id": "576.8653", "example_in_table": false},
+            {"id": "576.8657", "example_in_table": false},
+            {"id": "864.4669", "example_in_table": false},
+            {"id": "864.4670", "example_in_table": false},
+            {"id": "1440.5847", "example_in_table": false},
+            {"id": "8640.o", "example_in_table": false}
+          ]
+        }
+      ]
+    }
+  ]
+}

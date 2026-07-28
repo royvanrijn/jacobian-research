@@ -52,6 +52,9 @@ def main() -> None:
     hessian_rank_reduced = load(
         "hessian_rank_reduced_bcw_22_counterexample.json"
     )
+    hessian_rank_35_slice = load(
+        "hessian_rank_35_identity_slice_counterexample.json"
+    )
     xxs_search = load("restricted_bcw_circuit_search_xxs_w32_d28.json")
     yvyb_search = load(
         "restricted_bcw_circuit_search_yvyb_structural_w22.json"
@@ -134,6 +137,23 @@ def main() -> None:
             }
         )
         == 3
+    )
+    assert hessian_rank_35_slice["format"] == (
+        "hessian-rank-35-identity-slice-v1"
+    )
+    assert hessian_rank_35_slice["slice_dimension"] == 21
+    assert hessian_rank_35_slice["cotangent_potential"]["dimension"] == 42
+    assert (
+        hessian_rank_35_slice["exact_rank_certificates"][
+            "generic_rank_JK"
+        ]["rank"]
+        == 17
+    )
+    assert (
+        hessian_rank_35_slice["exact_rank_certificates"][
+            "generic_rank_Hess_p"
+        ]["rank"]
+        == 35
     )
     for search in (
         xxs_search,
@@ -564,6 +584,36 @@ def main() -> None:
                 "specialization has rank 37"
             ),
         },
+        "certified_nonhomogeneous_HN_rank_witness": {
+            "artifact": "hessian_rank_35_identity_slice_counterexample.json",
+            "generator": (
+                "scripts/verify_hessian_rank_35_identity_slice.py"
+            ),
+            "independent_replay": (
+                "scripts/audit_hessian_rank_35_identity_slice_independent.py"
+            ),
+            "source_artifact": (
+                "hessian_rank_reduced_bcw_22_counterexample.json"
+            ),
+            "identity_slice_dimension": 21,
+            "HN_dimension": 42,
+            "HN_degrees": [2, 3, 4],
+            "generic_rank_JK": 17,
+            "generic_hessian_rank": 35,
+            "cotangent_kernel_excess": 1,
+            "scope": (
+                "exact rank improvement for nonhomogeneous HN Vanishing "
+                "counterexamples only"
+            ),
+            "homogeneous_frontier_warning": (
+                "does not change rho_HN4<=37 or n_HN4<=42"
+            ),
+            "exact_hessian_certificate": (
+                "13 polynomial syzygy generators contain 7 generically "
+                "independent kernel columns, while an exact rational "
+                "specialization has rank 35"
+            ),
+        },
         "class_scope_warning": {
             "full_cubic_index_three": (
                 "invertibility is open in this ledger; the uniform degree-9 "
@@ -798,6 +848,7 @@ def main() -> None:
     print("PASS restricted minima: rank witness has exact generic rank 17")
     print("PASS restricted minima: circuit witness has exact nilpotency index 18")
     print("PASS restricted minima: HN quartic upper bounds are dimension 42 and rank 37")
+    print("PASS restricted minima: nonhomogeneous degree-at-most-4 HN rank is 35")
     print("PASS restricted minima: full cubic and power-linear index-three scopes are separated")
     print("PASS restricted minima: van den Essen disproves the uniform degree-9 bound")
     print("OPEN primary target: full cubic index-three invertibility")

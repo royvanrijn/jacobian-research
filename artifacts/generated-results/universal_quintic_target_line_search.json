@@ -1,0 +1,96 @@
+{
+  "anchor_group_counts": {
+    "A5": 8,
+    "C5": 2,
+    "D5": 4,
+    "F20": 2
+  },
+  "best_line": {
+    "groups": [
+      "A5",
+      "D5",
+      "S5"
+    ],
+    "rows": [
+      {
+        "group": "A5",
+        "projective_target": [
+          5,
+          2,
+          21,
+          -5
+        ],
+        "t": "0"
+      },
+      {
+        "group": "D5",
+        "projective_target": [
+          10,
+          4,
+          21,
+          -20
+        ],
+        "t": "1"
+      },
+      {
+        "group": "S5",
+        "projective_target": [
+          70,
+          28,
+          273,
+          -80
+        ],
+        "t": "1/7"
+      }
+    ],
+    "u": [
+      "2/5",
+      "21/5",
+      "-1"
+    ],
+    "v": [
+      "0",
+      "-21/10",
+      "-1"
+    ]
+  },
+  "claim_kind": "bounded_computation",
+  "classified_transitive_count": 36650,
+  "fixed_map_inverse_polynomial": "Pi^5*S^5 - 5*Pi*S^3 - 2*B*S^2 + 4*S - 2*C",
+  "future_witness_cost": {
+    "certificate_byte_count": "UTF-8 bytes of canonical minified JSON with sorted keys, including exact factors/automorphisms but excluding prose",
+    "coefficient_bit_length": "lexicographic (maximum bit length, total bit length) over u, v, and the five normalized t values",
+    "largest_witness_prime": "minimum possible maximum over the exact modular witnesses",
+    "rational_encoding": "reduced signed numerator/positive denominator; normalize two witness parameters to 0 and 1 and minimize over all ten pairs",
+    "total_resolvent_degree": "sum of displayed resolvent degrees; degree-6 Dummit certificates for D5 and F20 give target total 12"
+  },
+  "interpretation": "No line in this finite anchor/parameter search realizes all four exceptional groups; S5 cannot repair two missing exceptional groups. This is not a global nonexistence result.",
+  "line_exceptional_group_count_histogram": {
+    "2": 81
+  },
+  "maximum_exceptional_groups_on_one_line": 2,
+  "screen_survivor_count": 36651,
+  "search": {
+    "anchor_count_after_sign_involution": 16,
+    "anchor_projective_height_bound": 30,
+    "f20_screen_primes": [
+      2,
+      3,
+      5,
+      7,
+      11,
+      13,
+      17,
+      19,
+      23,
+      29,
+      31,
+      37
+    ],
+    "line_count": 81,
+    "parameter_count": 17543,
+    "parameter_height_bound": 120,
+    "pari_role": "classification of exact-screen survivors only"
+  },
+  "status": "not_found"
+}

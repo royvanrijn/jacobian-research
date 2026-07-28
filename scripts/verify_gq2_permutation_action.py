@@ -214,6 +214,121 @@ def cubic_discriminant(coefficients: list[int]) -> int:
     )
 
 
+def trim_binary_polynomial(coefficients: list[int]) -> list[int]:
+    """Normalize a low-to-high coefficient list over F_2."""
+
+    result = [value % 2 for value in coefficients]
+    while len(result) > 1 and result[-1] == 0:
+        result.pop()
+    return result
+
+
+def multiply_binary_polynomials(left: list[int], right: list[int]) -> list[int]:
+    """Multiply low-to-high coefficient lists over F_2."""
+
+    result = [0] * (len(left) + len(right) - 1)
+    for left_index, left_value in enumerate(left):
+        for right_index, right_value in enumerate(right):
+            result[left_index + right_index] ^= left_value & right_value
+    return trim_binary_polynomial(result)
+
+
+def binary_polynomial_remainder(
+    dividend: list[int],
+    divisor: list[int],
+) -> list[int]:
+    """Return the remainder of two low-to-high polynomials over F_2."""
+
+    remainder = trim_binary_polynomial(dividend)
+    divisor = trim_binary_polynomial(divisor)
+    assert divisor != [0]
+    while len(remainder) >= len(divisor) and remainder != [0]:
+        shift = len(remainder) - len(divisor)
+        for index, value in enumerate(divisor):
+            remainder[index + shift] ^= value
+        remainder = trim_binary_polynomial(remainder)
+    return remainder
+
+
+def is_irreducible_binary_polynomial(coefficients: list[int]) -> bool:
+    """Brute-force irreducibility, sufficient for small certificate factors."""
+
+    polynomial = trim_binary_polynomial(coefficients)
+    degree = len(polynomial) - 1
+    if degree <= 0 or polynomial[-1] != 1:
+        return False
+    for divisor_degree in range(1, degree // 2 + 1):
+        for lower_bits in range(2**divisor_degree):
+            divisor = [
+                (lower_bits >> index) & 1
+                for index in range(divisor_degree)
+            ] + [1]
+            if binary_polynomial_remainder(polynomial, divisor) == [0]:
+                return False
+    return True
+
+
+def verify_unramified_factorization_comparison(
+    comparison: dict[str, Any],
+    generators: dict[str, Permutation],
+    report: dict[str, Any],
+) -> dict[str, Any]:
+    """Compare an unramified Q_2-algebra with its marked Frobenius action."""
+
+    assert comparison.get("prime") == 2
+    coefficients = comparison.get("polynomial_coefficients_low_to_high")
+    assert isinstance(coefficients, list) and coefficients
+    assert all(isinstance(value, int) for value in coefficients)
+    factors = comparison.get("irreducible_factors_mod_2_low_to_high")
+    assert isinstance(factors, list) and factors
+    assert all(
+        isinstance(factor, list)
+        and factor
+        and all(isinstance(value, int) for value in factor)
+        for factor in factors
+    )
+
+    normalized_factors = [
+        trim_binary_polynomial(factor)
+        for factor in factors
+    ]
+    assert all(
+        is_irreducible_binary_polynomial(factor)
+        for factor in normalized_factors
+    )
+    assert len({tuple(factor) for factor in normalized_factors}) == len(
+        normalized_factors
+    ), "the mod-2 factorization must be squarefree"
+    product = [1]
+    for factor in normalized_factors:
+        product = multiply_binary_polynomials(product, factor)
+    assert product == trim_binary_polynomial(coefficients)
+
+    factor_degrees = sorted(
+        (len(factor) - 1 for factor in normalized_factors),
+        reverse=True,
+    )
+    degree = len(coefficients) - 1
+    one = identity(degree)
+    assert generators["tau"] == one
+    assert generators["x0"] == one
+    assert generators["x1"] == one
+    assert cycle_lengths(generators["sigma"]) == factor_degrees
+    assert report["orbit_sizes"] == factor_degrees
+
+    return {
+        "type": comparison["type"],
+        "prime": 2,
+        "factor_degrees": factor_degrees,
+        "squarefree_reduction": True,
+        "conclusion": (
+            "the squarefree mod-2 factors define the displayed unramified "
+            "Q_2-algebra; sigma is geometric Frobenius and tame/wild "
+            "generators are trivial"
+        ),
+    }
+
+
 def verify_tame_eisenstein_cubic_comparison(
     comparison: dict[str, Any],
     generators: dict[str, Permutation],
@@ -377,6 +492,12 @@ def verify_certificate(
         comparison_type = comparison.get("type")
         if comparison_type == "tame-eisenstein-cubic-q2/v1":
             report["comparison"] = verify_tame_eisenstein_cubic_comparison(
+                comparison,
+                generators,
+                report,
+            )
+        elif comparison_type == "unramified-factorization-q2/v1":
+            report["comparison"] = verify_unramified_factorization_comparison(
                 comparison,
                 generators,
                 report,

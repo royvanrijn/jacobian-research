@@ -1,0 +1,37 @@
+{
+  "format": "three-pair-image-mathieu-counterexample-v1",
+  "field": "characteristic zero",
+  "contraction_pairs": [
+    [
+      "tau",
+      "t"
+    ],
+    [
+      "w",
+      "z"
+    ],
+    [
+      "v",
+      "y"
+    ]
+  ],
+  "f": "tau^3*(t+z)*(w*t^3-v*y*(t+y)^2)",
+  "g": "z",
+  "expanded_f_term_count": 8,
+  "bidegrees": {
+    "f": [
+      4,
+      4
+    ],
+    "g": [
+      0,
+      1
+    ]
+  },
+  "all_order_identities": {
+    "E(f^m)": "0",
+    "[t]E(g*f^m)": "(3m+1)!*m!"
+  },
+  "exact_sparse_replay_cutoff": 10,
+  "written_proof": "extended-geometry/THREE_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md"
+}

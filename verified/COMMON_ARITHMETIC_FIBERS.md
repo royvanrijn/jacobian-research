@@ -124,6 +124,11 @@ The family-relative adelic strengthening is proved in
 whenever selected local algebras occur at local parameters of this pencil,
 infinitely many connected common fibers realize them simultaneously.
 Automatic discriminant radii make the parameter congruences explicit.
+At `N=5,u=1`, the
+[marked dyadic stable-separation certificate](MARKED_Q2_STABLE_SEPARATION.md)
+identifies the complete local action as one fixed point plus an unramified
+Frobenius four-cycle and attaches that identical marking to both stable
+classes.
 
 ## 3. The small rational quartic
 

@@ -874,6 +874,109 @@ has PARI rank interval \([1,1]\).  These positive-rank slices produce
 infinitely many points on the common-resolvent incidence, but do not by
 themselves establish the required simultaneous local-root conditions.
 
+The rank-two slice is now excluded uniformly by a dyadic Newton polygon.
+On \(c=-1,R=1\), the elliptic equation is equivalent to
+
+\[
+ 3A^2=6\Pi^3+23.
+\]
+
+The two normalized factors simplify to
+
+\[
+\begin{aligned}
+q(T)&=T^2+AT+\frac{A^2+3}{4},\\
+h(T)&=T^3-AT^2+\frac32\Pi^3T-\frac{3\Pi^6}{4A}.
+\end{aligned}
+\]
+
+The quadratic discriminant is \(-3\), so \(q\) has no root over
+\(\mathbb Q_2\).  Let \(r=v_2(\Pi)\).  If \(r>0\), reduction of
+\(3A^2=6\Pi^3+23\) modulo \(8\) would give \(3=7\).  If \(r=0\), its
+right side is \(1\) or \(5\) modulo \(8\), again impossible because its
+left side is \(3\).  Hence \(r<0\).  Comparing the unique terms of lowest
+valuation gives
+
+\[
+ 2v_2(A)=1+3r.
+\]
+
+Thus \(r=-(2m+1)\) and \(v_2(A)=-(3m+1)\) for some \(m\ge0\).  In increasing
+powers of \(T\), the valuations of the four coefficients of \(h\) are
+
+\[
+ -9m-7,\quad -6m-4,\quad -3m-1,\quad 0.
+\]
+
+The two interior points lie strictly above the line joining the endpoints,
+by \(2/3\) and \(4/3\), respectively.  The Newton polygon therefore has one
+segment of slope \(3m+7/3\).  Every root has valuation
+\(-3m-7/3\), which is not in the value group of \(\mathbb Q_2\).  Hence
+\(h\) also has no \(\mathbb Q_2\)-root.
+
+> **Rank-two dyadic exclusion.**
+> No rational point of the positive-rank slice \(c=-1,R=1\) gives an
+> everywhere locally soluble quintic fiber.  Every one fails over
+> \(\mathbb Q_2\).
+
+The symbolic identities, valuation ledger, and 624-point
+Mordell--Weil regression for \(|m|,|n|\le12\) are checked by
+
+```bash
+.venv/bin/python scripts/search_fixed_quintic_hasse_elliptic_slice.py
+```
+
+The rank-one slice is excluded just as sharply, but at \(5\).  On
+\(c=5/4,R=4\), its elliptic equation is
+
+\[
+ 135A^2=60\Pi^3+1904,
+\]
+
+and the quadratic factor has discriminant \(-48\), a nonsquare in
+\(\mathbb Q_5\).  If \(v_5(\Pi)\ge0\), comparison of valuations in the
+displayed equation would give \(1+2v_5(A)=0\), which is impossible.  Thus
+
+\[
+ v_5(\Pi)=-2m,\qquad v_5(A)=-3m
+\]
+
+for some \(m\ge1\).  After translating the cubic by \(T=2A+Y\), it becomes
+
+\[
+\begin{aligned}
+h(2A+Y)={}&Y^3+5AY^2+
+ \left(\frac{35A^2}{4}-17\right)Y\\
+&+\frac{1275A^4-7140A^2+18496}{240A}.
+\end{aligned}
+\]
+
+The coefficient valuations in increasing powers of \(Y\) are
+
+\[
+ 1-9m,\quad 1-6m,\quad 1-3m,\quad 0.
+\]
+
+The interior points lie above the endpoint line by \(1/3\) and \(2/3\).
+The unique Newton slope is \(3m-1/3\), so the cubic has no
+\(\mathbb Q_5\)-root.
+
+> **Rank-one five-adic exclusion.**
+> No rational point of the positive-rank slice \(c=5/4,R=4\) gives an
+> everywhere locally soluble quintic fiber.  Every one fails over
+> \(\mathbb Q_5\).
+
+The exact identities and a 24-point Mordell--Weil regression are checked by
+
+```bash
+.venv/bin/python scripts/search_fixed_quintic_hasse_rank_one_slice.py
+```
+
+Thus both positive-rank proportional elliptic slices are excluded as
+sources of Hasse failures.  Positive rank on the common-resolvent incidence
+alone is not enough even on an entire Mordell--Weil group: a single fixed
+completion can remove every rational point.
+
 The reproducible bounded experiment is
 
 ```bash
@@ -1649,6 +1752,86 @@ Thus `\overline{\mathcal V}_A` is the `S_5`-twist of one fixed split
 complete intersection by the torsor of ordered geometric factors of `A`.
 This packages all algebra-dependence into the twist and all remaining
 arithmetic into rational points on its smooth Kummer open.
+
+#### 10.5.1 The boundary forces local points at almost every prime
+
+The singular boundary point cannot simply be discarded in a local
+obstruction search.  In fact, its first blowup gives points in the
+realization open at every sufficiently large good prime.
+
+Let `p` be a prime at which `A` has an etale `Z_p`-model, with `p\ne2,5`.
+On the trace-zero module put
+
+\[
+ q_2(e)=\operatorname{Tr}(e^2),\qquad
+ q_4(e)=\operatorname{Tr}(e^4).
+\]
+
+The projective quadric `q_2=0` is a smooth geometrically integral quadric
+surface over `F_p`.  Over an algebraic closure the algebra splits, and the
+open conditions
+
+\[
+ q_4(e)\ne0,\qquad e\text{ primitive}
+\]
+
+are nonempty on this quadric.  For example,
+`(1,-1,i,-i,0)` has trace and second power sum zero but fourth power sum
+four; the primitive condition is the complement of the finitely many
+coordinate-equality hyperplanes.  Lang--Weil therefore supplies an
+`F_p`-point in this open for every sufficiently large good `p`.  Smooth
+lifting gives
+
+\[
+ e\in A_0(\mathbb Z_p),\qquad q_2(e)=0,\qquad q_4(e)\ne0,
+\]
+
+with primitive reduction.  Choose `f\in A_0(\mathbb Z_p)` such that
+`\operatorname{Tr}(ef)` is a unit.
+
+Work in the chart `W=1` near the boundary and introduce a small nonzero
+`\lambda\in p\mathbb Z_p` by
+
+\[
+ \eta=\lambda e+\lambda^7mf,\qquad s=\lambda^4\sigma.
+\]
+
+After dividing the two homogeneous equations by `\lambda^8` and
+`\lambda^4`, respectively, they become
+
+\[
+\begin{aligned}
+ 2m\operatorname{Tr}(ef)+\lambda^6m^2q_2(f)-10\sigma^2&=0,\\
+ q_4(e+\lambda^6mf)-50\lambda^{12}\sigma^4+16\sigma&=0.
+\end{aligned}
+\]
+
+At `\lambda=0` these equations have the solution
+
+\[
+ \sigma=-\frac{q_4(e)}{16},\qquad
+ m=\frac{5\sigma^2}{\operatorname{Tr}(ef)}.
+\]
+
+Their Jacobian determinant in `(m,\sigma)` is
+`32\operatorname{Tr}(ef)`, a unit.  The `p`-adic implicit-function theorem
+therefore gives a solution for every sufficiently small nonzero `\lambda`.
+Here `s\ne0`, and `W=1`, so dehomogenizing gives a point of
+`\mathcal V_A(\mathbb Q_p)` with `\Pi=1/s\ne0`.  Primitive reduction of `e`
+also makes the resulting element primitive.
+
+Consequently:
+
+\[
+\boxed{\text{For every fixed rank-five etale }A/\mathbb Q,\quad
+\mathcal V_A(\mathbb Q_p)\text{ meets the realization open for all but
+finitely many }p.}
+\]
+
+Thus a local counterexample to split-seed universality must occur among the
+finite exceptional set consisting of bad, small, or explicitly exceptional
+good primes.  A search that only counts affine points modulo arbitrary large
+good primes cannot produce such a counterexample.
 
 ### 10.6 A non-affine generator succeeds for `T^5-T-1`
 

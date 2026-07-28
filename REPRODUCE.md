@@ -36,6 +36,35 @@ residue coefficients `1`, `2`, and the nonzero mod-two boundary used to prove
 that integral cohomology is `Z` in degrees zero and three only.  The scripts
 check the algebraic, arithmetic, and Gysin inputs; the written audit supplies
 the localization sequences and homotopy argument.
+The same slice now has an exact invariant-kernel certificate.  It constructs
+the primitive saturated LND `D7`, verifies
+`ker(D10) intersect ker(D7)=k[K,H,V]`,
+`ker(D7)=k[K,H,V,s]`, and `ker(D22)=k[K,H,V,W]`, and checks the boundary
+identities used by the minimal-pole proof.  The finite/non-finite control
+target also replays Maubach's cusp-base ladder:
+
+```bash
+make verify-hilbert14-invariants
+```
+
+The bounded ladder replay is regression evidence.  The uniform
+modulo-`T^4` degree argument in
+[`HILBERT14_INVARIANT_KERNEL_PROGRAM.md`](extended-geometry/HILBERT14_INVARIANT_KERNEL_PROGRAM.md)
+is the non-finite-generation proof.  The same target verifies the next
+normalized `(2,4)` experiment: three triangular gauge LNDs, the exact
+generic quotient `M^2+4*U*N^2=256*a^4`, the regular boundary classes
+`C,Q,S`, and the boundary-linear relation that terminates the saturation
+ladder.  It also checks the induced third LND and the exact finitely
+generated triple intersection `k[a,U,N,M,C]`, whose boundary is a cusp.
+The written minimal-pole proofs are in
+[`QUADRATIC_QUARTIC_HILBERT14_SLICE.md`](extended-geometry/QUADRATIC_QUARTIC_HILBERT14_SLICE.md).
+Finally, the target runs the genuine multiboundary control.  It checks the
+two commuting cusp LNDs, the invariant grid
+`s^2*t^2*(X+sY)^m*(U+tV)^n`, and the conductor-square replay modulo
+`(s^4,t^4)`.  The arbitrary-bidegree rectangle escape in
+[`MULTIBOUNDARY_HILBERT14_CONTROL.md`](extended-geometry/MULTIBOUNDARY_HILBERT14_CONTROL.md)
+is the non-finite-generation proof.  The same note proves that the two
+leading divisors in a tangent-normalized factorization slice are disjoint.
 The same target verifies the general weight-`(1,-1,-k)` invariant-coordinate
 Jacobian reduction for `k=1,2,3,4`, including the foundational
 `(-2,-1,1)` output weights.  It then reconstructs the complete
@@ -53,6 +82,7 @@ identities prove uniform admissibility and whose exact degrees `3,...,100`
 remain as a regression:
 
 ```bash
+.venv/bin/python scripts/verify_padic_inverse_branches.py
 .venv/bin/python scripts/verify_composite_degree_twelve.py
 .venv/bin/python scripts/verify_degree_twelve_wreath_elimination.py
 .venv/bin/python scripts/verify_all_degree_rational_fibers.py
@@ -60,14 +90,23 @@ remain as a regression:
 .venv/bin/python scripts/verify_locally_prescribed_common_fibers.py
 .venv/bin/python scripts/search_cross_family_collision.py
 .venv/bin/python scripts/verify_universal_quartic_fiber_multiplicity.py
+.venv/bin/python scripts/verify_universal_quartic_gauge_multiplicity.py
+.venv/bin/python scripts/verify_universal_cubic_gauge_multiplicity.py
+.venv/bin/python scripts/verify_universal_power_shifted_gauge_multiplicity.py
 .venv/bin/python scripts/verify_universal_quintic_fiber_multiplicity.py
 .venv/bin/python scripts/verify_universal_higher_degree_fiber_multiplicity.py
 .venv/bin/python scripts/verify_universal_multiplicity_witness_cards.py
+.venv/bin/python scripts/verify_universal_relative_keller_map.py
 .venv/bin/python scripts/verify_low_rank_multiplicity_boundaries.py
 .venv/bin/python scripts/verify_real_fiber_spectrum.py
 .venv/bin/python scripts/verify_adelic_fiber_engineering.py
 .venv/bin/python scripts/verify_local_global_keller_fibers.py
+.venv/bin/python scripts/verify_a5_grunwald_keller_fiber.py
 .venv/bin/python scripts/verify_hasse_keller_fiber.py
+.venv/bin/python scripts/verify_infinite_hasse_keller_fibers.py
+.venv/bin/python scripts/count_multiplicative_hasse_parameters.py \
+  --bound 1000000 \
+  --output artifacts/generated-results/multiplicative_hasse_parameters_1000000.json
 .venv/bin/python scripts/verify_fixed_quintic_arithmetic_zoo.py
 .venv/bin/python scripts/verify_stratified_adelic_engineering.py
 ```
@@ -81,6 +120,13 @@ equation, factors the saturated resultant as `C^8 Q` with `Q` irreducible
 of exponent one, separates the other boundary image, and certifies
 `Mon(F_4 o F_3)=S_3 wr S_4`.
 
+The cubic and power-shifted multiplicity checkers also exercise the public
+`compile_polynomial_to_keller_fiber(..., stable_parameter=k)` path.  They
+compare its maps with the symbolic constructions, preserve the selected
+inverse polynomial, and audit the returned boundary-count or Newton-area
+record.  Stable functoriality is supplied by the corresponding written
+theorems rather than inferred from these finite regressions.
+
 The local-to-global checker audits the ramified quintic coefficient CRT:
 the prescribed algebras at `2` and `3`, signature `(1,2)`, cycle types `(5)`
 at `5` and `(2,2,1)` at `7`, and the determinant-one quadratic-gauge
@@ -91,6 +137,13 @@ feeds it through the shared end-to-end compiler in `jcsearch.keller_fiber`.
 It also derives the universal radii `2^5` and `3^3` from the two local
 discriminants and reconstructs the fully automatic witness with common
 denominator `30241`.
+
+The fixed-map Hasse checker verifies the determinant, target-line
+factorization, modulo-`9` Hensel reduction, and the first prime and composite
+parameters.  The multiplicative enumerator then lists both the full sufficient
+family and the clean prime-support subfamily through `a=10^6`, checks
+primitive coordinates and height `32*a`, counts one- and two-prime members,
+and records stable SHA-256 digests in the generated JSON certificate.
 
 The locally prescribed common-fiber checker keeps both maps fixed.  It
 derives parameter radii `2^9`, `3^3`, and `5`, constructs
@@ -118,6 +171,33 @@ as recorded in
 [`verified/UNIVERSAL_QUARTIC_FIBER_MULTIPLICITY.md`](verified/UNIVERSAL_QUARTIC_FIBER_MULTIPLICITY.md);
 it is not a bounded-search conclusion.
 
+The universal quartic gauge checker verifies the second, unconditional
+rank-four mechanism.  It raises the quartic lift from `P^4*S^4` to
+`P^(m+4)*S^4`, checks the denominator-free determinant and inverse identities,
+keeps the selected inverse polynomial fixed at `P=1`, and computes the
+ramified-stratum Fitting-support indices `2*m+5`.  The written stable
+normalization argument proves infinite multiplicity for every rank-four
+finite etale algebra over every characteristic-zero field, including the
+anisotropic trace-chord example.
+
+The universal cubic gauge checker verifies the final low-rank step.  It adds
+`g_3(P^n-P^3)S^3` to the cubic lift, checks the paired polynomial corrections
+and determinant, and confirms that the selected inverse cubic at `P=1` is
+unchanged.  The degree-drop polynomial `1+P^(n-1)-P^2` has `n-1` simple
+nonzero geometric roots; the written Newton and boundary-exhaustion argument
+turns them into `n-1` intrinsic unramified boundary target components.  Their
+count separates the maps stably and proves universal infinite multiplicity
+in rank three.
+
+The all-degree power-shift checker verifies the uniform replacement
+`g_j*P^j*S^j -> g_j*P^(j+m)*S^j` for every `j>=4`.  Representative
+three-variable expansions check the determinant, inverse, and reconstruction
+identities.  Exact convex-hull calculations verify that the normalized
+ramified Fitting Newton polygon has area
+`2*N-3+(N-2)*m`; the written stable-normalization argument makes this a
+strict stable invariant for every `N>=4`.  This unifies the quartic and
+higher-rank multiplicity mechanisms without trace or translation input.
+
 The universal-quintic checker verifies the translated quintic derivative
 jets, the primitive relation `(-1,-6,5)` among the three quadratic-gauge
 stable-moduli weights, the invariant
@@ -133,12 +213,17 @@ J_N=a_(N-2)*a_N/a_(N-1)^2
 ```
 
 which proves the same conclusion in every rank `N>=6`.  Together with the
-quartic argument, this gives infinite universal multiplicity over number
-fields in every rank at least four, as recorded in
+power-shifted quartic argument, this gives infinite universal multiplicity
+over every characteristic-zero field in every rank at least three, as recorded in
 [`verified/UNIVERSAL_KELLER_FIBER_MULTIPLICITY.md`](verified/UNIVERSAL_KELLER_FIBER_MULTIPLICITY.md).
 The next checker supplies connected degree-four, degree-five, and degree-six
 three-map witness cards, including modular irreducibility, exact targets,
 complete inverse identities, and distinct stable invariant values.  The
+universal-relative checker verifies the block-triangular determinant through
+the compact reciprocal chart, the exact `U_N=V_N x A1` normalization, and the
+sharp `N-3`-parameter inverse-polynomial specialization through degree eight.
+The written theorem distinguishes presentation dominance from stack descent
+and essential dimension.  The
 low-rank checker verifies the collapse of all three present cubic mechanisms
 and the exact biquadratic trace form used in the written two-step Springer
 anisotropy proof.
@@ -147,6 +232,27 @@ The Hasse-fiber command expands an explicit degree-eight weighted map, checks
 its determinant `-38`, proves that its complete target fiber has no rational
 point, and audits roots over `R` and every `Q_p` through the elementary
 quadratic-residue covering and the two exceptional Hensel lifts.
+
+The normal-covering front end and its first two exact certificates are
+replayed by
+
+```bash
+.venv/bin/python scripts/verify_normal_covering_certificates.py
+python3 scripts/verify_banks_degree_5_10_candidates.py
+.venv/bin/python scripts/verify_degree_six_normal_cover_keller.py
+```
+
+The first command independently enumerates the groups and all subgroups in
+the `S_3` quintic and `C_2^2` sextic actions, proves conjugate coverage and
+trivial common core, computes `gamma(S_3)=2` and `gamma(C_2^2)=3`, and checks
+the exact ramified-prime Hensel witnesses.  The second validates the pinned
+necessary-candidate transcription of Banks' Table C.1; it does not assert
+that every candidate row is arithmetically realized.  The third compiles
+`(T^2-2)(T^2-17)(T^2-34)` with the shared quadratic-gauge compiler, verifies
+the target `(1,0,528/577)`, and expands its determinant-one Keller map.
+For larger finite groups, the GAP front end is loaded with
+`Read("scripts/normal_covering_certificate.g");`; the checked-in small
+certificates deliberately have a dependency-free Python replay.
 
 The fixed-quintic commands check one determinant-`-2` map and its finite
 certificate ledger: all three real quintic signatures, all five transitive
@@ -168,8 +274,11 @@ python3 scripts/verify_gq2_permutation_action.py \
   arithmetic/certificates/gq2_s3_x3_minus_2.json --json
 python3 scripts/verify_gq2_permutation_action.py \
   arithmetic/certificates/gq2_s4_mixed_action.json --json
+python3 scripts/verify_gq2_permutation_action.py \
+  arithmetic/certificates/gq2_common_quintic_stable_pair.json --json
 .venv/bin/python scripts/verify_gq2_action_first_keller.py
 .venv/bin/python scripts/verify_gq2_s4_quartic_keller.py
+.venv/bin/python scripts/verify_marked_q2_stable_separation.py
 gp -q scripts/verify_gq2_s4_local_models.gp
 gp -q scripts/verify_gq2_local_decompositions.gp
 ```
@@ -190,7 +299,11 @@ ramification groups, and normalized relative Stiefel--Whitney bits `(0,0,1)`.
 It also verifies the three resolvent Kummer square classes and their sole
 product relation over the tame `S_3` closure.  The unique nonzero obstruction
 therefore matches the worked `x_0=(12)(34)` orbit to
-`T^4+4T^2-4T+2`; the other two orbits remain unordered.  The final PARI/GP
+`T^4+4T^2-4T+2`; the other two orbits remain unordered.
+The common-quintic checker verifies the exact unramified marking
+`sigma=(1234)(5), tau=x_0=x_1=1`, global irreducibility modulo `17`, both
+determinant-one inverse equations, and the stable unit-rank separation
+`1 != 2`.  The final PARI/GP
 command recomputes exact
 ramification-index/residue-degree decompositions at `2` for the selected
 quartics, all ten fixed-quintic zoo rows, and the separate quintic witness
@@ -241,6 +354,8 @@ Its bounded height search requires PARI/GP:
 .venv/bin/python scripts/verify_fixed_quintic_hasse_minus_thirty_one.py
 .venv/bin/python scripts/analyze_fixed_quintic_hasse_minus_thirty_one.py
 .venv/bin/python scripts/search_fixed_quintic_hasse_rational_curves.py
+.venv/bin/python scripts/search_fixed_quintic_hasse_elliptic_slice.py
+.venv/bin/python scripts/search_fixed_quintic_hasse_rank_one_slice.py
 ```
 
 The first command's default box is stated in its output.  It reports the two
@@ -253,6 +368,19 @@ family for irreducible candidates having cubic roots over `Q_2`, `Q_3`, and
 `Q_5`.  Its only small-prime survivors are four presentations of the known
 Hasse target; it does not test every completion and is not an infinitude
 proof.
+The rank-two elliptic-slice command closes the
+`kappa/A=-1, R=1` route exactly:
+the Mordell equation forces `v_2(Pi)=-(2m+1)` and
+`v_2(A)=-(3m+1)`, while the cubic factor has a single Newton-polygon
+slope `3m+7/3`.  Neither it nor the discriminant-`-3` quadratic has a
+`Q_2` root.  Its default 624-point Mordell--Weil enumeration is only a
+regression for that all-points proof.
+The final command closes the rank-one `kappa/A=5/4, R=4` route at `Q_5`:
+the elliptic equation forces `v_5(Pi)=-2m` and `v_5(A)=-3m`; after
+translating the cubic by `T=2A+Y`, its unique Newton slope is
+`3m-1/3`.  The quadratic has discriminant `-48`, so neither factor has a
+`Q_5` root.  Its 24-point multiple regression is again secondary to the
+uniform valuation proof.
 The third command varies squarefree shared quadratic resolvents.  In its
 default integral box it finds a new `Q(sqrt(-7))` Hasse target
 `(-7,387/14,400/2401)` of projective height `132741`.  The fourth command
@@ -377,6 +505,48 @@ other coefficient is a nonzero Laurent monomial in the admissible
 `g_3/g_1,g_4/g_1`.  Hence `g_2=0` is support-minimal in this fixed normal
 form.  No absolute sparsity claim under arbitrary polynomial left--right
 changes is made.
+
+The bounded exact polynomial left--right sparsity search is:
+
+```bash
+.venv/bin/python scripts/search_quartic_lr_sparsity.py \
+  --source-degree 2 \
+  --target-degree 2 \
+  --tadic-max-exponent 12 \
+  --scaling-bound 16 \
+  --output artifacts/generated-results/quartic_lr_sparsity_search.json
+```
+
+It tests every rational exceptional parameter in 15 one-monomial source
+shears and 15 one-monomial target shears, all 76 two-term representatives of
+the essential source jet through exponent 12, and 25281 rational diagonal
+scalings.  No searched nonidentity shear improves support `(7,51,38)`.
+This is bounded computational evidence, not an absolute minimum.  The
+scaling search finds the balanced exact height improvement
+`(alpha,beta)=(1/4,12/5)`.  The generated record has SHA-256
+`3fea20be042106fb5fe452ebe241dc5c3316eed6a893b00bf7ca2bcc0bef1b70`.
+
+The continued two-move circuit search is:
+
+```bash
+.venv/bin/python scripts/search_quartic_lr_two_move_circuits.py \
+  --source-degree 2 \
+  --source-parameter-bound 4 \
+  --jet-max-exponent 12 \
+  --workers 4 \
+  --output artifacts/generated-results/quartic_lr_two_move_circuits.json
+```
+
+It checks 330 rational source-shear/optimal-linear-target circuits and all
+286 three-term essential jets through exponent 12, exactly at every rational
+exceptional jet parameter.  The best nonidentity jet is
+`z -> z+(16/7)y^2`, with support `(7,51,39)`.  Target monomial cleanup
+through degree three does not improve it; among all exceptional elementary
+second source shears through degree two, only the literal inverse returns to
+96.  Adding a second structured monomial through exponent 12 also fails to
+improve the 97-term near miss.  This remains bounded evidence.  The generated
+record has SHA-256
+`28c9e1c2ed9c765fef7c51d7e8ace3262c6fac337c2b11d723f3dccdb3781826`.
 
 The remaining constant-`C` boundary has a separate exact Singular
 certificate:
@@ -872,6 +1042,13 @@ before being reduced to the foundational class.
 The Borel corollary now exhausts every polynomial upper- or
 lower-triangular `GL_2` gauge as well: its diagonal entries must be
 constants, leaving exactly one classified invariant shear.
+On the invariant coefficient hyperplane `C_0=0`, the same checker restricts
+the time `h=4*C_1*C_3-C_2^2` to an explicit `A^3` automorphism, verifies its
+inverse, determinant, and multidegree `(1,3,5)`, and checks the exact linear
+conjugacy to the Nagata automorphism with parameter `-4`.  Wildness uses the
+external Shestakov--Umirbaev theorem.  The first three swapped iterates are
+expanded exactly and have multidegrees `(4s-3,4s-1,4s+1)`; this is a
+known-family calibration, not a resolution of the open `(7,8,12)` case.
 The alternating regression verifies the exact two-shear rank-two Jacobian
 formula.  When the first time is invariant, conjugation reduces the second
 factor to the single-shear theorem and gives an if-and-only-if transported
@@ -1063,6 +1240,12 @@ identities are checked exactly by
 .venv/bin/python scripts/verify_restricted_ll_degree.py
 .venv/bin/python scripts/verify_caustic_maxwell_boundary.py
 ```
+
+For at least eight labelled finite branch values, the target receiver in the
+wonderful-pullback construction is `Mbar_0,b+2` with `b+2>=10`.  Its Cox ring
+is not finitely generated by the externally cited non-polyhedral
+pseudo-effective-cone theorem.  This corollary has no local checker and does
+not assert the same statement for the normalized pullback graph.
 
 These checks support the generic affine-mark faithfulness theorem: the coarse
 fiber is the exact rerooting orbit and every nontrivial rerooting moves the
@@ -1284,6 +1467,8 @@ python3 scripts/audit_index_reduced_bcw_22_independent.py
 python3 scripts/audit_rank_reduced_bcw_24_independent.py
 .venv/bin/python scripts/verify_hessian_rank_reduced_bcw_22_route.py
 python3 scripts/audit_hessian_rank_reduced_bcw_22_independent.py
+.venv/bin/python scripts/verify_hessian_rank_35_identity_slice.py
+python3 scripts/audit_hessian_rank_35_identity_slice_independent.py
 .venv/bin/python scripts/verify_index_three_inverse_model.py
 .venv/bin/python scripts/verify_index_three_degree_bound_counterexample.py
 .venv/bin/python scripts/derive_index_three_tree_obstruction.py
@@ -1378,6 +1563,59 @@ and SIC(5) failures through order eight.  The all-order binomial proof and
 the separation from ordinary-Laplacian GVC are documented in
 [`DVORSKY_GVC5_COUNTEREXAMPLE.md`](extended-geometry/DVORSKY_GVC5_COUNTEREXAMPLE.md).
 
+The smaller three-pair Image-Mathieu witness is checked by
+
+```bash
+python3 scripts/verify_three_pair_image_mathieu_counterexample.py
+```
+
+For
+\(f=\tau^3(t+z)(wt^3-vy(t+y)^2)\) and \(g=z\), the dependency-free
+checker verifies exact sparse contractions
+\(\mathcal E(f^m)=0\) and
+\([t]\mathcal E(gf^m)=(3m+1)!m!\) through order ten, records the eight-term
+bidegree-\((4,4)\) artifact, and replays the two binomial identities used in
+the all-order proof.  The proof is in
+[`THREE_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md`](extended-geometry/THREE_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md).
+
+The same witness has a separate factorial-functional translation and finite
+prefix search:
+
+```bash
+make verify-factorial-moments
+```
+
+It extracts the torus diagonal of every checked power and verifies the
+all-order binomial formula behind its zero factorial value.  The diagonal
+sequence is not a power sequence: at order two its true translated middle
+coefficient is `-8`, while squaring the first diagonal gives `-2`, with
+factorial values zero and twelve respectively.  The target also reconstructs
+cyclotomic linear forms in exact prime cyclotomic rings and verifies
+witness-derived `2r`-term quartics whose first `2r-1` moments vanish for
+`r=3,5,7,11`.  The displayed general identities and the homogeneous
+linear-class minimality proof are in
+[`FACTORIAL_MOMENT_WITNESSES.md`](extended-geometry/FACTORIAL_MOMENT_WITNESSES.md).
+These are sharp finite-prefix examples, not counterexamples to the
+Factorial Conjecture.
+
+The first exact sparse frontier and fixed binary-form cutoffs are checked by
+
+```bash
+make verify-factorial-frontier
+```
+
+It exhausts all 3,276 three-monomial supports in two variables through total
+degree six and finds no nonzero coefficient point with moments one through
+three zero.  It also exhausts all 4,950 pairs of nontrivial monomial orbits
+through degree six under the Dvorsky-aligned four-variable involution; odd
+moments vanish automatically, but the exact second/fourth-moment gcd has no
+nonzero root on any support.  Finally, projective rational Gröbner bases show
+that for homogeneous binary forms of degrees one through four, the first
+`d+1` moments force the zero form and the cutoff is sharp.  The formulas,
+explicit sharp quadratic and cubic witnesses, and strict finite-search scope
+are in
+[`SPARSE_FACTORIAL_MOMENT_FRONTIER.md`](extended-geometry/SPARSE_FACTORIAL_MOMENT_FRONTIER.md).
+
 The bounded four-variable descendant search can be replayed separately:
 
 ```bash
@@ -1389,6 +1627,23 @@ checks pure contractions through order twelve, and screens the full space
 of fixed linear multipliers on orders five through twelve.  It finds no
 witness in that slice; this is a finite negative search, not a GVC(4) or
 SIC(4) theorem.
+
+One natural full-coefficient slice is now closed exactly:
+
+```bash
+.venv/bin/python scripts/verify_four_pair_dvorsky_slice_obstruction.py
+```
+
+For \(P=(t+a+b+d)(ad+bt)\) and the general ternary quadratic symbol
+\(\Lambda=\partial_tR(\partial_a,\partial_b,\partial_d)\), the checker
+constructs the first eight pure contractions, proves by exact Singular
+reductions that their projective zero set consists of four rank-one square
+directions, and verifies a strict weight gap for every direction.  The
+written proof in
+[`FOUR_PAIR_DVORSKY_SLICE_OBSTRUCTION.md`](extended-geometry/FOUR_PAIR_DVORSKY_SLICE_OBSTRUCTION.md)
+upgrades this slice from a bounded lattice experiment to an all-order
+no-counterexample theorem for arbitrary fixed multipliers.  It does not
+prove GVC(4) or SIC(4).
 
 The all-order nonvanishing proof is written in
 [`IMAGE_VANISHING_COUNTEREXAMPLES.md`](extended-geometry/IMAGE_VANISHING_COUNTEREXAMPLES.md);
@@ -1859,6 +2114,9 @@ assembly, and root-incidence derivative-split checks are:
 .venv/bin/python scripts/verify_a4_root_incidence_derivative_split.py
 .venv/bin/python scripts/verify_a4_chart_unit_rank_four.py
 .venv/bin/python scripts/verify_a4_two_mask_local_viability.py
+.venv/bin/python scripts/verify_a4_affine_modification_obstruction.py
+.venv/bin/python scripts/verify_a4_corrected_boundary_selector.py
+Singular -q scripts/verify_a4_corrected_boundary_genus.sing
 ```
 
 The normalized-boundary command verifies the determinant-one ambient
@@ -1868,13 +2126,45 @@ representation of `1/P'(T)`, generic root-field recovery, and the residual
 orientation pole obstructing target-only polynomial pullback.  It also
 checks the selected rational root and proves that the ordinary `(U,V)`
 pullback retains Jacobian `H^6/(2*Theta*K^6*L^3)`.  Neither command verifies
-an ordinary polynomial Keller map.  The last command expands the correct
-reciprocal `H^3/(4*K^3*L)` in the quartic root basis, verifies its common
-denominator `B^2*rho*sigma`, and checks the resulting localized two-mask
-determinant-one suspension together with its three genuine pole divisors.
+an ordinary polynomial Keller map.  The rank-four command expands the
+correct reciprocal `H^3/(4*K^3*L)` in the quartic root basis, verifies its
+common denominator `B^2*rho*sigma`, and checks the resulting localized
+two-mask determinant-one suspension together with its three genuine
+coefficient-ring pole divisors.  It also resolves their common cluster by
+four point blowups, computes the branchwise Newton orders of the full
+numerator, and solves the resulting local divisor-allocation intervals.
+Finally it verifies the forced selector `T+a^3`, its exceptional Cartier
+transforms, and the all-degree obstruction to realizing the exact divisor
+with masks in the original polynomial root algebra.  It does not construct
+the new affine modification needed to adjoin those exceptional quotients.
 The local-viability command verifies that the three components have one
 common nontransverse cusp/tangency cluster and that the simple second mask
-has local order deficit two.
+has local order deficit two.  The affine-modification command follows the
+forced quotients through the `E3` and `F` charts, verifies their nonnormal
+and singular loci, and checks that the smooth negative-definite full-chain
+resolution is nonaffine.  The corrected-selector command factors the first
+exceptional quartic, derives the higher-order simple-branch correction,
+verifies the exact rational two-mask divisor on every resolved branch, and
+checks the unimodular relatively ample coarse deletion
+`{F,E3,B,Hhat}`.  It then verifies the simple/triple normalized splitting
+above retained `E1,E2`, proves that strict `B,Hhat` give only two
+horizontal deleted primes, and certifies that the normalized open has
+relative class rank at least two.  Finally it computes the normalized
+seven-curve intersection matrix, contracts it to the `A3` chain, verifies
+the cyclic order-four discriminant group and an explicit odd curvette, and
+proves that the forced strict `B` class has content two in the full dual
+lattice.  Thus no boundary basis can contain it; the `B,Hhat` pair also
+has determinantal divisor two.  The same command then verifies the
+`B`-free split `T*Lchi/Hhat | (T+a^3)/Lchi`, its two irreducible curvette
+boundaries, the unique unimodular exceptional completion
+`{Fs,R2,Ft,R1,Hhat,Dchi,D14}`, and an effective divisor on that support
+whose seven exceptional intersections are all positive.  The final
+Singular command computes the geometric genus of the irreducible
+degree-16 `Hhat` norm as 13, verifies
+`Norm(Lchi)=chi*q14`, and computes genus 20 for the degree-14 component.
+Since a smooth completion of `A2` has only rational boundary components,
+either positive-genus divisor rules out the surviving `B`-free complement
+as an affine plane.
 
 ## Plane degree-frontier audit
 
@@ -1974,3 +2264,248 @@ determinant in all six.  Finally, the checker proves that the Meng--Yang
 five-variable potential has no further polynomial partial Legendre transform
 along a constant linear direction.  Non-coordinate graph embeddings and
 higher-degree critical equations are not tested.
+
+The all-order binary-form symbol underlying the two \(X\)-caustic normal-jet
+recursions is documented in
+[`HC4_PC2_GRAPH_POLARIZATION_AUDIT.md`](HC4_PC2_GRAPH_POLARIZATION_AUDIT.md).
+Its finite exact regression in both charts is:
+
+```bash
+.venv/bin/python scripts/verify_hc4_logarithmic_normal_symbol.py
+```
+
+The checker verifies through tensor order ten that the order-\(n\) symbol is
+\(L\) times a unimodular coefficient-extraction matrix.  The all-order
+statement is proved by the triangular determinant formula in the note.  This
+establishes a divisor-supported graded jet module, not yet a finite-rank
+logarithmic connection or a Bernstein--Sato polynomial.
+
+The nonlinear toric descent of the Meng--Yang potential is:
+
+```bash
+.venv/bin/python scripts/verify_hc5_nonlinear_toric_descent.py
+```
+
+It constructs an explicit determinant-one dual-coordinate change with
+`t=A`, verifies the polynomial unit-pivot critical solution, and computes the
+natural four-variable determinant `16*J(x1*x2)^2`.  A relative toric `SL(2)`
+correction cancels the nonconstant factor and gives determinant `64`, but the
+descended gradient then has an explicit polynomial inverse.  The checker
+also proves the all-degree toric radial obstruction: constant nonzero
+determinant forces both radial factors to be units, so this class cannot
+retain the Meng--Yang collision.  Non-toric changes and non-coordinate
+coisotropic embeddings remain open.
+
+The first collision-first non-toric Hamiltonian screen is:
+
+```bash
+.venv/bin/python scripts/verify_hc4_meng_sparse_quartic_obstruction.py
+```
+
+After the unit-pivot descent and a polynomial base gauge, the transported
+points are antipodal for `psi_0=2*y*r+4*x*s`.  The checker exhausts every
+homogeneous quartic correction supported on at most four monomials, imposing
+the collision before determinant work.  It rejects 42,953 isolated collision
+solutions and 515 one-parameter families exactly.  The degree-eight
+principal part then leaves only 232 isolated quartics and two exact family
+members; none admits a constant-determinant correction by one cubic monomial.
+For two cubic monomials, degrees seven and one give a linear rank gate;
+rank-zero cases pass through degree-six conic linearization and a
+degree-four/two lift.  Only four bivariate families reach the terminal
+calculation, and their full determinant ideals are units modulo `1000003`.
+Dense quartics, quadratic renormalizations, degree at least six, and
+non-coordinate embeddings remain open.
+
+The finite-field continuation through exactly three cubic monomials is:
+
+```bash
+.venv/bin/python scripts/verify_hc4_meng_three_cubic_rank_gate.py
+```
+
+It checks all `234*binomial(20,3)=266760` quartic/triple pairs.  The combined
+degree-seven/degree-one rank census is `5480, 53364, 130508, 77408` in ranks
+zero through three.  After delegating support-at-most-two boundary loci to
+the preceding certificate, unit full-determinant gcds or ideals exclude all
+920 genuine rank-two lines, 2,952 genuine rank-one planes, and 5,480
+rank-zero three-parameter spaces over `F_1000003`.  This is an exact
+finite-field computation.
+
+The characteristic-zero promotion is:
+
+```bash
+.venv/bin/python scripts/verify_hc4_meng_three_cubic_characteristic_zero.py
+```
+
+It reconstructs all 234 quartics over `QQ`, reproduces the same odd-layer
+rank census over `QQ`, and obtains unit gcds or Gröbner ideals for every
+genuine line, plane, and three-parameter space.  The maximum evaluation
+prefix lengths are respectively 5, 7, and 9 points.  Thus cubic support at
+most three is excluded in characteristic zero; cubic support at least four
+remains open.
+
+The finite-field continuation through exactly four cubic monomials is:
+
+```bash
+.venv/bin/python scripts/verify_hc4_meng_four_cubic.py
+```
+
+Its two targeted stages are:
+
+```bash
+.venv/bin/python scripts/verify_hc4_meng_four_cubic_rank_gate.py
+.venv/bin/python scripts/verify_hc4_meng_four_cubic_rank_zero.py
+```
+
+The first checker exhausts all
+`234*binomial(20,4)=1133730` quartic/quadruple pairs.  The odd-layer ranks
+zero through four are `5430, 79396, 353740, 504818, 190346`.  After
+delegating support-at-most-three boundaries to `HC4MC3`, unit gcds or ideals
+exclude all 466 genuine rank-three lines, 6,082 genuine rank-two planes, and
+7,956 genuine rank-one three-spaces.  The second checker isolates the 5,430
+rank-zero four-parameter spaces and proves that every full determinant ideal
+is a unit modulo `1000003`, using at most twelve evaluation points.  This
+closes cubic support four over the certificate field, but not yet over
+characteristic zero.
+
+The direct collision-normalized finite-field experiment in degree bounds
+five through eight is:
+
+```bash
+.venv/bin/python scripts/search_hc4_finite_field_potentials.py \
+  --degrees 5 6 7 8 \
+  --primes 11 13 \
+  --support-bound 2 \
+  --points 6 \
+  --output artifacts/generated-results/hc4_finite_field_sparse_search.json
+```
+
+It exhausts one- and two-direction affine perturbations in the full linear
+kernel of the normalized gradient-collision condition, totaling 45,181,194
+coefficient choices.  No exact modular candidate survives.  This is a
+bounded experiment, not evidence for unrestricted `HC_4`; its construction
+and precise scope are in
+[`HC4_FINITE_FIELD_SEARCH.md`](HC4_FINITE_FIELD_SEARCH.md).
+
+The denser sampled-support coefficient solve is:
+
+```bash
+.venv/bin/python scripts/search_hc4_finite_field_dense_supports.py \
+  --degrees 5 6 7 8 \
+  --primes 11 13 \
+  --support-sizes 6 8 10 12 \
+  --strategies uniform homogeneous mixed \
+  --trials 2 \
+  --timeout 30 \
+  --output artifacts/generated-results/hc4_finite_field_dense_support_search.json
+```
+
+It forms the complete determinant coefficient ideal for 96 deterministic
+supports of 6, 8, 10, or 12 collision-kernel directions.  Adjoining
+`a_i^p-a_i` makes each Singular calculation an exact existence test over the
+selected prime field.  All 192 support-prime ideals are unit ideals, with no
+timeouts.  The support selection is sampled, so this remains a bounded
+experiment.
+
+The structurally guided companion forces every sampled support to contain as
+many directions as possible that can alter both base determinant defects on
+the normalized collision axis:
+
+```bash
+.venv/bin/python scripts/search_hc4_finite_field_dense_supports.py \
+  --degrees 5 6 7 8 \
+  --primes 11 13 \
+  --support-sizes 6 8 10 12 \
+  --strategies axis \
+  --trials 2 \
+  --timeout 30 \
+  --output artifacts/generated-results/hc4_finite_field_axis_support_search.json
+```
+
+All 64 ideals from these 32 additional supports are also unit ideals.
+
+The principal-Hessian companion makes every degree-\(d\) correction a
+three-variable cone, so its top homogeneous Hessian determinant vanishes
+identically, then adds lower-degree monomials involving the omitted fourth
+variable:
+
+```bash
+.venv/bin/python scripts/search_hc4_finite_field_dense_supports.py \
+  --degrees 5 6 7 8 \
+  --primes 11 13 \
+  --support-sizes 6 8 10 12 \
+  --strategies cone2 cone3 \
+  --trials 4 \
+  --timeout 30 \
+  --output artifacts/generated-results/hc4_finite_field_cone_bridge_search.json
+```
+
+All 256 full coefficient ideals from these 128 additional supports are unit
+ideals.  Thus the failure occurs below the principal homogeneous Hessian
+gate, but the support search remains bounded.
+
+The non-coordinate cone search uses
+`u=x2+lambda*x3`, `v=x3` for `lambda=-1,1,2`.  In the adapted coordinates
+the quadratic base is `x0*x1+u*v-lambda*v^2`, the top correction depends only
+on `x0,x1,u`, and the lower bridges involve `v`:
+
+```bash
+.venv/bin/python scripts/search_hc4_oblique_cone_bridges.py \
+  --degrees 5 6 7 8 \
+  --primes 11 13 \
+  --support-sizes 6 8 10 12 \
+  --slopes -1 1 2 \
+  --trials 3 \
+  --timeout 30 \
+  --output artifacts/generated-results/hc4_finite_field_oblique_cone_bridge_search.json
+```
+
+All 288 exact ideals from the 144 oblique families are unit ideals, with no
+timeout.  The adapted change has determinant one, so the Hessian determinant
+identity is equivalent to the tied-monomial identity in the original
+coordinates.
+
+## Proof-carrying arithmetic compiler
+
+The pinned ramified-quintic local-field specification compiles to a portable
+minimal-gauge JSON proof object and a Lean specialization of the formal
+algebra-to-Keller theorem.  Two further JSON objects certify the same
+ramified quintic in the power-shift family at `m=2` and the connected cubic
+`T^3-T-1` in the cubic family at `n=7`.  Replay all three maps with two
+independent arithmetic implementations and check the generated minimal-gauge
+Lean file with:
+
+```bash
+python3 scripts/verify_arithmetic_keller_certificate.py
+gp -q -f scripts/verify_arithmetic_keller_certificate.gp
+python3 scripts/verify_arithmetic_keller_certificate.py \
+  artifacts/generated-results/arithmetic_keller_quintic_stable_m2.json
+ARITHMETIC_CERTIFICATE=artifacts/generated-results/arithmetic_keller_quintic_stable_m2.json \
+  gp -q -f scripts/verify_arithmetic_keller_certificate.gp
+python3 scripts/verify_arithmetic_keller_certificate.py \
+  artifacts/generated-results/arithmetic_keller_cubic_stable_n7.json
+ARITHMETIC_CERTIFICATE=artifacts/generated-results/arithmetic_keller_cubic_stable_n7.json \
+  gp -q -f scripts/verify_arithmetic_keller_certificate.gp
+cd formal/finite-etale-keller
+lake env lean FiniteEtaleKeller/GeneratedArithmeticQuintic.lean
+```
+
+From the repository root, the combined non-mutating command is:
+
+```bash
+make verify-arithmetic-compilation
+```
+
+Intentional regeneration is separate:
+
+```bash
+.venv/bin/python scripts/compile_arithmetic_keller_certificate.py
+.venv/bin/python scripts/compile_arithmetic_keller_certificate.py \
+  --stable-parameter 2 \
+  --certificate artifacts/generated-results/arithmetic_keller_quintic_stable_m2.json
+.venv/bin/python scripts/compile_arithmetic_keller_certificate.py \
+  --spec arithmetic/specifications/connected_cubic_stable_n7.json \
+  --certificate artifacts/generated-results/arithmetic_keller_cubic_stable_n7.json
+```
+
+The format and exact claim boundary are documented in
+[`arithmetic/PROOF_CARRYING_COMPILATION.md`](arithmetic/PROOF_CARRYING_COMPILATION.md).

@@ -5,6 +5,13 @@ This project formalizes the polynomial-presentation construction in
 It uses Lean `v4.33.0-rc1` and Mathlib at the matching release
 candidate.
 
+The paper's supplied-presentation theorem is stated over fields of
+characteristic different from two, using nonvanishing of the first and third
+Hasse coefficients at the supplied translation. The current end-to-end Lean
+development retains the stronger assumption `CharZero K`; it formalizes the
+complete characteristic-zero specialization and the automatic abstract
+finite-étale corollary.
+
 ## Proof status
 
 | Stage | Scope | Status |
@@ -68,8 +75,26 @@ The new function-field comparison proves
 automaticRealizationGeometricDegree P hdeg = P.natDegree
 ```
 
-and `automaticRealization_pageOne` bundles this equality with determinant
-one and all of the fiber assertions below.
+It also exposes the underlying standard Mathlib statement directly:
+
+```text
+letI := automaticRealizationTargetFunctionFieldAlgebra P hdeg
+Module.finrank
+  (RatFunc (FractionRing (MvPolynomial (Fin 2) K)))
+  (FractionRing (MvPolynomial (Fin 3) K)) = P.natDegree
+```
+
+The theorem type itself therefore uses only standard Mathlib fraction-field
+objects. Its algebra structure is induced by the three target-coordinate
+pullbacks. The explicit comparison
+`automaticRealizationFunctionFieldComparison` is an `AlgEquiv` between this
+source fraction field and the corresponding `AdjoinRoot` extension over
+`K(Π,B)(C)`. Thus the custom geometric-degree abbreviation is not the
+public endpoint on which the degree claim rests.
+
+`automaticRealization_pageOne` bundles the direct finrank equality as
+`functionFieldFinrank`, together with the convenience equality above,
+determinant one, and all of the fiber assertions below.
 
 For every commutative test `K`-algebra `A`, it constructs an equivalence
 
@@ -111,6 +136,8 @@ abstractFiniteEtaleFiberRepresentingEquiv
 abstractFiniteEtaleFiberRepresentingEquiv_natural
 abstractFiniteEtale_pageOne
 automaticRealizationGeometricDegree_eq
+automaticRealizationFunctionFieldComparison
+automaticRealizationFunctionField_finrank
 generalGaugeJacobianOneMap_targetDenormalization
 automaticJacobianOneFiberRepresentingEquiv
 automaticJacobianOneFiberRepresentingEquiv_natural
@@ -309,12 +336,15 @@ The actual map, determinant, geometric degree, effective degree, literal
 fiber, finite étaleness, quotient translation, naturality, coordinate
 algebraic independence, explicit source-over-target function-field
 comparison, base change for supplied data, monogenicity, and the abstract
-finite-étale corollary are formalized. The remaining formal boundary of the
-focused paper is:
+finite-étale corollary are formalized in characteristic zero. The remaining
+formal boundary of the focused paper is:
 
-1. formalize, or explicitly isolate as a classical theorem interface, the
+1. generalize the supplied-seed, reconstruction, function-field, and
+   base-change layers from `CharZero K` to the exact characteristic-not-two
+   hypotheses used by the paper;
+2. formalize, or explicitly isolate as a classical theorem interface, the
    Campbell--Razar--Wright degree-two Galois case;
-2. for the separate arithmetic development, formalize either the Chebotarev
+3. for the separate arithmetic development, formalize either the Chebotarev
    passage or the first-prime-moment theorem from the Dedekind-zeta Euler
    product if rank-minimality is to be machine-checked end to end.  The finite-group
    fixed-point lemma used after Chebotarev is now formalized as

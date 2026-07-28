@@ -1,5 +1,11 @@
 # Universal quartic fiber multiplicity
 
+> **Later strengthening.**  The
+> [power-shifted gauge theorem](UNIVERSAL_QUARTIC_GAUGE_MULTIPLICITY.md)
+> proves the same infinitude statement over every characteristic-zero field.
+> The weighted theorem below remains a smaller-degree construction and
+> records the exact trace-chord boundary of that mechanism.
+
 This note proves the rank-four case of the universal multiplicity question
 for Keller fibers over number fields.  It is stronger than producing three
 examples: every quartic finite etale algebra over a number field occurs in

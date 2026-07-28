@@ -33,15 +33,29 @@ This directory contains the stable proof chain:
   extension. The note includes the degree-two descent, scheme-theoretic
   quotient reconstruction, optimal quintic Hasse fiber, updated arithmetic
   chain, and staged Lean certificate.
+- [Universal relative Keller map](UNIVERSAL_RELATIVE_KELLER_MAP.md): packages
+  all supplied presentations into one relative Jacobian-one map, compresses
+  the map base sharply from `N+1` to `N-3` parameters by moving three inverse
+  coefficients into the target, identifies the universal root fiber over the
+  `N`-dimensional incidence open, and separates the `BS_N` atlas from the
+  obstructed Tschirnhaus descent and essential-dimension questions.
 - [Universal Keller-fiber multiplicity](UNIVERSAL_KELLER_FIBER_MULTIPLICITY.md):
-  over every number field, every finite etale algebra of rank at least four
-  is a complete fiber in infinitely many stable classes.  Ranks at least
-  five work over every characteristic-zero field by translation in
-  quadratic-gauge stable moduli.
+  over every characteristic-zero field, every finite etale algebra of rank
+  at least three is a complete fiber in infinitely many stable classes.
+- [Universal cubic gauge multiplicity](UNIVERSAL_CUBIC_GAUGE_MULTIPLICITY.md):
+  fiber-invisible cubic lifts keep the selected inverse quotient fixed while
+  their canonical boundary-component count grows with the lift exponent.
+- [Universal power-shifted gauge multiplicity](UNIVERSAL_POWER_SHIFTED_GAUGE_MULTIPLICITY.md):
+  one common extra `P`-power on every decoration of degree at least four
+  fixes the selected finite-etale fiber and moves the stable Fitting Newton
+  area `2N-3+(N-2)m`.
+- [Universal quartic gauge multiplicity](UNIVERSAL_QUARTIC_GAUGE_MULTIPLICITY.md):
+  power-shifted quartic decorations keep the inverse quotient fixed at
+  `P=1` and give pairwise distinct stable Fitting-support indices `2m+5`.
 - [Universal multiplicity adversarial audit](UNIVERSAL_MULTIPLICITY_ADVERSARIAL_AUDIT.md):
   stress-tests the generator, clean-torus, invariant, full-fiber,
-  Hasse--Minkowski, and selected-root steps and records the exact imported
-  stable-normalization dependencies.
+  power-shifted quartic, Hasse--Minkowski, and selected-root steps and records
+  the exact imported stable-normalization dependencies.
 - [Universal multiplicity witness cards](UNIVERSAL_MULTIPLICITY_WITNESS_CARDS.md):
   three exact pairwise stably inequivalent presentations of one connected
   field in each of degrees four, five, and six.
@@ -78,19 +92,46 @@ This directory contains the stable proof chain:
   quintic certificate prescribes ramified local factors at both `2` and `3`;
   a universal `2*v_p(Disc)+1` coefficient radius makes the local
   certification automatic.  Reusable arithmetic and Keller compilers provide
-  the exact end-to-end construction.  In every rank at least four, the
-  resulting fixed fiber algebra occurs in infinitely many stable map classes.
+  the exact end-to-end construction.  The Keller compiler's optional
+  `stable_parameter` emits those infinitely many maps together with the
+  boundary-count or Newton-area separation certificate; the portable JSON
+  layer and its independent Python and PARI/GP replayers cover both cubic
+  and power-shifted outputs.  In every rank at least three, the resulting
+  fixed fiber algebra occurs in infinitely many stable map classes.
 - [Locally prescribed common fibers](LOCALLY_PRESCRIBED_COMMON_FIBERS.md):
   two fixed stably inequivalent determinant-one maps share infinitely many
   connected fibers with any family-compatible finite collection of local
   algebras and one real signature.  An explicit sextic common field has
   ramified completions at `2` and `3`, signature `(2,2)`, and is inert at `5`.
+- [Marked dyadic stable separation](MARKED_Q2_STABLE_SEPARATION.md):
+  the connected quintic `T^5+T^3-2T^2+T+1` has marked local action
+  `sigma=(1234)(5), tau=x_0=x_1=1` over `Q_2` and is the identical complete
+  fiber of two determinant-one maps with stable unit ranks `1` and `2`.
 - [Hasse-principle failure for a Keller fiber](HASSE_PRINCIPLE_KELLER_FIBER.md):
   an explicit degree-eight complete regular fiber has points over `R` and
   every `Q_p`, but no rational point.
+- [Normal coverings and Hasse-failing fibers](NORMAL_COVERING_HASSE_FIBERS.md):
+  arithmetic component stabilizers form a faithful normal covering of the
+  splitting-field group, so the component count is at least `gamma(G)` and
+  the fiber rank is their subgroup-index sum.  Exact `S_3` and `C_2^2`
+  certificates accompany a pinned necessary-candidate transcription of
+  Banks' degree-`5` through degree-`10` table and a determinant-one sextic
+  Keller realization.
+- [Dense multiplicative Hasse family](MULTIPLICATIVE_HASSE_KELLER_FIBERS.md):
+  one fixed degree-five map has a Hasse-failing fiber for every noncube
+  `a=1 mod 9` supported on primes `1 mod 3`.  Character-filtered
+  Selberg--Delange gives order `B/sqrt(log B)` targets of height at most
+  `B`; a dependency-free enumeration records all parameters through
+  `a=10^6`.
 - [Exact geometric-degree spectrum](GEOMETRIC_DEGREE_SPECTRUM.md): the
   spectrum `3,4,5,...` for noninvertible Keller maps of complex affine
   three-space and its stable left--right degree separation.
+- [Atomic spectrum and non-generation](ETALE_MONOID_ATOMIC_SPECTRUM.md):
+  the exact atomic degree spectrum `3,4,5,...`, degreewise stable atomic
+  lower bounds, the forced-atomic/decomposable degree dichotomy, all
+  multiplicative degree words in quadratic-gauge atoms, and an explicit
+  quartic atom outside the monoid generated by automorphisms and every
+  positive-dimensional quasi-torus Keller class.
 - [Stable normalization functoriality](STABLE_NORMALIZATION_FUNCTORIALITY.md):
   the construction-independent theorem for normalization, boundary valuations,
   intersections, nilpotents, relative differentials, Fitting ideals, and

@@ -1,0 +1,1083 @@
+{
+  "format": "hessian-rank-35-identity-slice-v1",
+  "field": "QQ for the slice and QQ(I) for the HN change",
+  "source_artifact": "artifacts/generated-results/hessian_rank_reduced_bcw_22_counterexample.json",
+  "source_dimension": 22,
+  "identity_coordinate": 21,
+  "identity_slice_value": "1",
+  "slice_dimension": 21,
+  "slice_map": "X+K(X), where K(X)=H_0,...,H_20 evaluated at x_21=1",
+  "K": [
+    [
+      {
+        "coefficient": "3",
+        "monomial": [
+          [
+            1,
+            1
+          ],
+          [
+            5,
+            1
+          ]
+        ]
+      },
+      {
+        "coefficient": "1",
+        "monomial": [
+          [
+            5,
+            1
+          ],
+          [
+            6,
+            1
+          ]
+        ]
+      },
+      {
+        "coefficient": "1",
+        "monomial": [
+          [
+            14,
+            1
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "coefficient": "3",
+        "monomial": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            1
+          ]
+        ]
+      },
+      {
+        "coefficient": "-36",
+        "monomial": [
+          [
+            3,
+            1
+          ],
+          [
+            4,
+            1
+          ]
+        ]
+      },
+      {
+        "coefficient": "-12",
+        "monomial": [
+          [
+            3,
+            1
+          ],
+          [
+            9,
+            1
+          ]
+        ]
+      },
+      {
+        "coefficient": "12",
+        "monomial": [
+          [
+            3,
+            1
+          ],
+          [
+            11,
+            1
+          ]
+        ]
+      },
+      {
+        "coefficient": "-12",
+        "monomial": [
+          [
+            4,
+            1
+          ],
+          [
+            8,
+            1
+          ]
+        ]
+      },
+      {
+        "coefficient": "12",
+        "monomial": [
+          [
+            9,
+            1
+          ],
+          [
+            10,
+            1
+          ]
+        ]
+      },
+      {
+        "coefficient": "1",
+        "monomial": [
+          [
+            15,
+            1
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "coefficient": "8",
+        "monomial": [
+          [
+            1,
+            2
+          ]
+        ]
+      },
+      {
+        "coefficient": "-28",
+        "monomial": [
+          [
+            3,
+            1
+          ],
+          [
+            12,
+            1
+          ]
+        ]
+      },
+      {
+        "coefficient": "-24",
+        "monomial": [
+          [
+            4,
+            2
+          ]
+        ]
+      },
+      {
+        "coefficient": "-8",
+        "monomial": [
+          [
+            4,
+            1
+          ],
+          [
+            7,
+            1
+          ]
+        ]
+      },
+      {
+        "coefficient": "-8",
+        "monomial": [
+          [
+            9,
+            1
+          ],
+          [
+            13,
+            1
+          ]
+        ]
+      },
+      {
+        "coefficient": "1",
+        "monomial": [
+          [
+            16,
+            1
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "coefficient": "1",
+        "monomial": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "coefficient": "1",
+        "monomial": [
+          [
+            17,
+            1
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "coefficient": "1",
+        "monomial": [
+          [
+            0,
+            2
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "coefficient": "-8",
+        "monomial": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            1
+          ]
+        ]
+      },
+      {
+        "coefficient": "108",
+        "monomial": [
+          [
+            3,
+            1
+          ],
+          [
+            4,
+            1
+          ]
+        ]
+      },
+      {
+        "coefficient": "36",
+        "monomial": [
+          [
+            3,
+            1
+          ],
+          [
+            9,
+            1
+          ]
+        ]
+      },
+      {
+        "coefficient": "-36",
+        "monomial": [
+          [
+            3,
+            1
+          ],
+          [
+            11,
+            1
+          ]
+        ]
+      },
+      {
+        "coefficient": "36",
+        "monomial": [
+          [
+            4,
+            1
+          ],
+          [
+            8,
+            1
+          ]
+        ]
+      },
+      {
+        "coefficient": "-36",
+        "monomial": [
+          [
+            9,
+            1
+          ],
+          [
+            10,
+            1
+          ]
+        ]
+      },
+      {
+        "coefficient": "-3",
+        "monomial": [
+          [
+            15,
+            1
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "coefficient": "-1",
+        "monomial": [
+          [
+            3,
+            1
+          ],
+          [
+            9,
+            1
+          ]
+        ]
+      },
+      {
+        "coefficient": "1",
+        "monomial": [
+          [
+            18,
+            1
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "coefficient": "1",
+        "monomial": [
+          [
+            19,
+            1
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "coefficient": "1",
+        "monomial": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            1
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "coefficient": "1",
+        "monomial": [
+          [
+            0,
+            1
+          ],
+          [
+            4,
+            1
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "coefficient": "3",
+        "monomial": [
+          [
+            1,
+            1
+          ],
+          [
+            3,
+            1
+          ]
+        ]
+      },
+      {
+        "coefficient": "1",
+        "monomial": [
+          [
+            1,
+            1
+          ],
+          [
+            8,
+            1
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "coefficient": "1",
+        "monomial": [
+          [
+            1,
+            2
+          ]
+        ]
+      },
+      {
+        "coefficient": "-12/7",
+        "monomial": [
+          [
+            1,
+            1
+          ],
+          [
+            4,
+            1
+          ]
+        ]
+      },
+      {
+        "coefficient": "-2/7",
+        "monomial": [
+          [
+            1,
+            1
+          ],
+          [
+            7,
+            1
+          ]
+        ]
+      },
+      {
+        "coefficient": "-2/7",
+        "monomial": [
+          [
+            20,
+            1
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "coefficient": "-3/2",
+        "monomial": [
+          [
+            1,
+            1
+          ],
+          [
+            3,
+            1
+          ]
+        ]
+      },
+      {
+        "coefficient": "1",
+        "monomial": [
+          [
+            3,
+            1
+          ],
+          [
+            4,
+            1
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "coefficient": "-1",
+        "monomial": [
+          [
+            0,
+            2
+          ],
+          [
+            6,
+            1
+          ]
+        ]
+      },
+      {
+        "coefficient": "-1",
+        "monomial": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            5,
+            1
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "coefficient": "-24",
+        "monomial": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ]
+        ]
+      },
+      {
+        "coefficient": "36",
+        "monomial": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            4,
+            1
+          ]
+        ]
+      },
+      {
+        "coefficient": "12",
+        "monomial": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            9,
+            1
+          ]
+        ]
+      },
+      {
+        "coefficient": "-12",
+        "monomial": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            11,
+            1
+          ]
+        ]
+      },
+      {
+        "coefficient": "12",
+        "monomial": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            1
+          ]
+        ]
+      },
+      {
+        "coefficient": "-12",
+        "monomial": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            10,
+            1
+          ]
+        ]
+      },
+      {
+        "coefficient": "-12",
+        "monomial": [
+          [
+            0,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            9,
+            1
+          ]
+        ]
+      },
+      {
+        "coefficient": "-36",
+        "monomial": [
+          [
+            1,
+            1
+          ],
+          [
+            3,
+            2
+          ]
+        ]
+      },
+      {
+        "coefficient": "-12",
+        "monomial": [
+          [
+            1,
+            1
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            8,
+            1
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "coefficient": "-6",
+        "monomial": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            1
+          ]
+        ]
+      },
+      {
+        "coefficient": "28",
+        "monomial": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            12,
+            1
+          ]
+        ]
+      },
+      {
+        "coefficient": "8",
+        "monomial": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            13,
+            1
+          ]
+        ]
+      },
+      {
+        "coefficient": "28",
+        "monomial": [
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            1
+          ]
+        ]
+      },
+      {
+        "coefficient": "-48",
+        "monomial": [
+          [
+            1,
+            1
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            4,
+            1
+          ]
+        ]
+      },
+      {
+        "coefficient": "-8",
+        "monomial": [
+          [
+            1,
+            1
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            7,
+            1
+          ]
+        ]
+      },
+      {
+        "coefficient": "-12",
+        "monomial": [
+          [
+            1,
+            1
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            9,
+            1
+          ]
+        ]
+      },
+      {
+        "coefficient": "8",
+        "monomial": [
+          [
+            3,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            9,
+            1
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "coefficient": "-1",
+        "monomial": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "coefficient": "1",
+        "monomial": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            9,
+            1
+          ]
+        ]
+      },
+      {
+        "coefficient": "1",
+        "monomial": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            1
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "coefficient": "-1",
+        "monomial": [
+          [
+            0,
+            2
+          ],
+          [
+            2,
+            1
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "coefficient": "3/2",
+        "monomial": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            1
+          ]
+        ]
+      },
+      {
+        "coefficient": "-1",
+        "monomial": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            4,
+            1
+          ]
+        ]
+      }
+    ]
+  ],
+  "collision_points": [
+    [
+      "0",
+      "0",
+      "-1/8",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "1",
+      "-3/4",
+      "13/4",
+      "3/4",
+      "-9/16",
+      "-1",
+      "-1",
+      "39/16",
+      "-13/4",
+      "-13/4",
+      "9/16",
+      "-3/4",
+      "9/56",
+      "-27/64",
+      "-17/4",
+      "-45/16",
+      "99/32",
+      "9/16",
+      "-39/8",
+      "13/4",
+      "117/64"
+    ],
+    [
+      "-1",
+      "3/4",
+      "13/4",
+      "3/4",
+      "9/16",
+      "-1",
+      "1",
+      "-39/16",
+      "-13/4",
+      "13/4",
+      "9/16",
+      "3/4",
+      "9/56",
+      "27/64",
+      "17/4",
+      "45/16",
+      "99/32",
+      "-9/16",
+      "39/8",
+      "13/4",
+      "117/64"
+    ]
+  ],
+  "common_image": [
+    "0",
+    "0",
+    "-1/8",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "distinguished_collision_coordinate": 0,
+  "distinguished_values": [
+    "0",
+    "1",
+    "-1"
+  ],
+  "cotangent_potential": {
+    "variables": "x_0,...,x_20,y_0,...,y_20",
+    "definition": "p(x,y)=sum_i y_i K_i(x)",
+    "dimension": 42,
+    "degrees": [
+      2,
+      3,
+      4
+    ],
+    "generic_hessian_rank": 35
+  },
+  "HN_potential": {
+    "variables": "u_0,...,u_20,v_0,...,v_20",
+    "definition": "P(u,v)=(1/2)*(u-I*v).K(u+I*v), with the slice value x_21=1 already applied",
+    "dimension": 42,
+    "degrees": [
+      2,
+      3,
+      4
+    ],
+    "generic_hessian_rank": 35,
+    "certificate": "Hess(P) is nilpotent; I+grad(P) is noninjective; hence Delta^m(P^(m+1)) is nonzero for infinitely many m",
+    "homogeneity_warning": "P is not homogeneous, so this does not lower the homogeneous-quartic rank or dimension frontiers"
+  },
+  "exact_rank_certificates": {
+    "generic_rank_JK": {
+      "rank": 17,
+      "syzygy_generators": 4,
+      "independent_kernel_columns": 4,
+      "exact_specialization_rank": 17
+    },
+    "generic_rank_Hess_p": {
+      "rank": 35,
+      "syzygy_generators": 13,
+      "independent_kernel_columns": 7,
+      "exact_specialization_rank": 35
+    }
+  },
+  "good_prime_profiles": {
+    "prime": 1000003,
+    "seeds": [
+      20260728,
+      20260729,
+      20260730
+    ],
+    "block_ranks": [
+      [
+        17,
+        14,
+        35
+      ],
+      [
+        17,
+        14,
+        35
+      ],
+      [
+        17,
+        14,
+        35
+      ]
+    ],
+    "block_order": [
+      "rank_JK",
+      "rank_sum_y_Hess_K",
+      "rank_Hess_p"
+    ]
+  },
+  "status": "exact nonhomogeneous HN rank witness; no change to the homogeneous quartic HN rank-37 or dimension-42 endpoints"
+}

@@ -1,0 +1,83 @@
+{
+  "schema": "normal-covering-certificate/v1",
+  "description": "The degree-six multiquadratic intersective polynomial as the faithful minimal normal cover of C2 x C2.",
+  "action": {
+    "degree": 6,
+    "group_label": "C2 x C2 (4.2)",
+    "generators": {
+      "sqrt2_sign": [1, 0, 2, 3, 5, 4],
+      "sqrt17_sign": [0, 1, 3, 2, 5, 4]
+    },
+    "components": [
+      {
+        "name": "quadratic_2",
+        "basepoint": 0,
+        "factor": "T^2-2"
+      },
+      {
+        "name": "quadratic_17",
+        "basepoint": 2,
+        "factor": "T^2-17"
+      },
+      {
+        "name": "quadratic_34",
+        "basepoint": 4,
+        "factor": "T^2-34"
+      }
+    ]
+  },
+  "arithmetic": {
+    "polynomial_coefficients_low_to_high": [-1156, 0, 680, 0, -53, 0, 1],
+    "factors": [
+      {
+        "name": "quadratic_2",
+        "coefficients_low_to_high": [-2, 0, 1],
+        "discriminant": 8
+      },
+      {
+        "name": "quadratic_17",
+        "coefficients_low_to_high": [-17, 0, 1],
+        "discriminant": 68
+      },
+      {
+        "name": "quadratic_34",
+        "coefficients_low_to_high": [-34, 0, 1],
+        "discriminant": 136
+      }
+    ],
+    "splitting_field_ramified_primes": [2, 17],
+    "ramification_justification": "The splitting field is Q(sqrt(2),sqrt(17)); its quadratic subfields are cut out by squareclasses 2, 17, and 34.",
+    "local_witnesses": [
+      {
+        "prime": 2,
+        "factor": "quadratic_17",
+        "approximation": 1,
+        "criterion": "strong_hensel",
+        "value_valuation": 4,
+        "derivative_valuation": 1
+      },
+      {
+        "prime": 17,
+        "factor": "quadratic_2",
+        "approximation": 6,
+        "criterion": "simple_hensel",
+        "value_valuation": 1,
+        "derivative_valuation": 0
+      }
+    ],
+    "real_witness": {
+      "factor": "quadratic_2",
+      "interval": [1, 2]
+    }
+  },
+  "expected": {
+    "group_order": 4,
+    "factorization_shape": [2, 2, 2],
+    "component_count": 3,
+    "normal_cover": true,
+    "common_core_order": 1,
+    "normal_covering_number": 3,
+    "covering_is_minimal": true,
+    "index_sum": 6
+  }
+}

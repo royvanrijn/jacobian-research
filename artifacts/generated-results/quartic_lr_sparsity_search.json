@@ -1,0 +1,2062 @@
+{
+  "base_degrees": [
+    7,
+    26,
+    24
+  ],
+  "base_support": [
+    7,
+    51,
+    38
+  ],
+  "elementary_source_shears": {
+    "best": {
+      "coordinate": null,
+      "monomial_exponents": null,
+      "parameter": "0",
+      "support": [
+        7,
+        51,
+        38
+      ],
+      "total_support": 96
+    },
+    "records": [
+      {
+        "best_parameter": "0",
+        "best_support": [
+          7,
+          51,
+          38
+        ],
+        "best_total_support": 96,
+        "coordinate": "x",
+        "generic_support": [
+          16,
+          335,
+          294
+        ],
+        "monomial_exponents": [
+          0,
+          1
+        ],
+        "rational_exceptional_values": 1
+      },
+      {
+        "best_parameter": "0",
+        "best_support": [
+          7,
+          51,
+          38
+        ],
+        "best_total_support": 96,
+        "coordinate": "x",
+        "generic_support": [
+          16,
+          335,
+          294
+        ],
+        "monomial_exponents": [
+          1,
+          0
+        ],
+        "rational_exceptional_values": 1
+      },
+      {
+        "best_parameter": "0",
+        "best_support": [
+          7,
+          51,
+          38
+        ],
+        "best_total_support": 96,
+        "coordinate": "x",
+        "generic_support": [
+          16,
+          332,
+          294
+        ],
+        "monomial_exponents": [
+          0,
+          2
+        ],
+        "rational_exceptional_values": 4
+      },
+      {
+        "best_parameter": "0",
+        "best_support": [
+          7,
+          51,
+          38
+        ],
+        "best_total_support": 96,
+        "coordinate": "x",
+        "generic_support": [
+          16,
+          335,
+          294
+        ],
+        "monomial_exponents": [
+          1,
+          1
+        ],
+        "rational_exceptional_values": 1
+      },
+      {
+        "best_parameter": "0",
+        "best_support": [
+          7,
+          51,
+          38
+        ],
+        "best_total_support": 96,
+        "coordinate": "x",
+        "generic_support": [
+          16,
+          335,
+          294
+        ],
+        "monomial_exponents": [
+          2,
+          0
+        ],
+        "rational_exceptional_values": 1
+      },
+      {
+        "best_parameter": "0",
+        "best_support": [
+          7,
+          51,
+          38
+        ],
+        "best_total_support": 96,
+        "coordinate": "y",
+        "generic_support": [
+          22,
+          405,
+          269
+        ],
+        "monomial_exponents": [
+          0,
+          1
+        ],
+        "rational_exceptional_values": 1
+      },
+      {
+        "best_parameter": "0",
+        "best_support": [
+          7,
+          51,
+          38
+        ],
+        "best_total_support": 96,
+        "coordinate": "y",
+        "generic_support": [
+          22,
+          405,
+          269
+        ],
+        "monomial_exponents": [
+          1,
+          0
+        ],
+        "rational_exceptional_values": 1
+      },
+      {
+        "best_parameter": "0",
+        "best_support": [
+          7,
+          51,
+          38
+        ],
+        "best_total_support": 96,
+        "coordinate": "y",
+        "generic_support": [
+          22,
+          405,
+          269
+        ],
+        "monomial_exponents": [
+          0,
+          2
+        ],
+        "rational_exceptional_values": 1
+      },
+      {
+        "best_parameter": "0",
+        "best_support": [
+          7,
+          51,
+          38
+        ],
+        "best_total_support": 96,
+        "coordinate": "y",
+        "generic_support": [
+          13,
+          109,
+          74
+        ],
+        "monomial_exponents": [
+          1,
+          1
+        ],
+        "rational_exceptional_values": 35
+      },
+      {
+        "best_parameter": "0",
+        "best_support": [
+          7,
+          51,
+          38
+        ],
+        "best_total_support": 96,
+        "coordinate": "y",
+        "generic_support": [
+          22,
+          405,
+          269
+        ],
+        "monomial_exponents": [
+          2,
+          0
+        ],
+        "rational_exceptional_values": 1
+      },
+      {
+        "best_parameter": "0",
+        "best_support": [
+          7,
+          51,
+          38
+        ],
+        "best_total_support": 96,
+        "coordinate": "z",
+        "generic_support": [
+          11,
+          154,
+          119
+        ],
+        "monomial_exponents": [
+          0,
+          1
+        ],
+        "rational_exceptional_values": 1
+      },
+      {
+        "best_parameter": "0",
+        "best_support": [
+          7,
+          51,
+          38
+        ],
+        "best_total_support": 96,
+        "coordinate": "z",
+        "generic_support": [
+          11,
+          154,
+          119
+        ],
+        "monomial_exponents": [
+          1,
+          0
+        ],
+        "rational_exceptional_values": 1
+      },
+      {
+        "best_parameter": "0",
+        "best_support": [
+          7,
+          51,
+          38
+        ],
+        "best_total_support": 96,
+        "coordinate": "z",
+        "generic_support": [
+          8,
+          62,
+          49
+        ],
+        "monomial_exponents": [
+          0,
+          2
+        ],
+        "rational_exceptional_values": 33
+      },
+      {
+        "best_parameter": "0",
+        "best_support": [
+          7,
+          51,
+          38
+        ],
+        "best_total_support": 96,
+        "coordinate": "z",
+        "generic_support": [
+          11,
+          154,
+          119
+        ],
+        "monomial_exponents": [
+          1,
+          1
+        ],
+        "rational_exceptional_values": 1
+      },
+      {
+        "best_parameter": "0",
+        "best_support": [
+          7,
+          51,
+          38
+        ],
+        "best_total_support": 96,
+        "coordinate": "z",
+        "generic_support": [
+          11,
+          154,
+          119
+        ],
+        "monomial_exponents": [
+          2,
+          0
+        ],
+        "rational_exceptional_values": 1
+      }
+    ]
+  },
+  "elementary_target_shears": {
+    "best": {
+      "coordinate": null,
+      "monomial_exponents": null,
+      "parameter": "0",
+      "support": [
+        7,
+        51,
+        38
+      ],
+      "total_support": 96
+    },
+    "records": [
+      {
+        "best_parameter": "0",
+        "best_support": [
+          7,
+          51,
+          38
+        ],
+        "best_total_support": 96,
+        "candidate_values": 1,
+        "coordinate": 1,
+        "other_coordinate_exponents": [
+          0,
+          1
+        ]
+      },
+      {
+        "best_parameter": "0",
+        "best_support": [
+          7,
+          51,
+          38
+        ],
+        "best_total_support": 96,
+        "candidate_values": 1,
+        "coordinate": 1,
+        "other_coordinate_exponents": [
+          1,
+          0
+        ]
+      },
+      {
+        "best_parameter": "0",
+        "best_support": [
+          7,
+          51,
+          38
+        ],
+        "best_total_support": 96,
+        "candidate_values": 1,
+        "coordinate": 1,
+        "other_coordinate_exponents": [
+          0,
+          2
+        ]
+      },
+      {
+        "best_parameter": "0",
+        "best_support": [
+          7,
+          51,
+          38
+        ],
+        "best_total_support": 96,
+        "candidate_values": 1,
+        "coordinate": 1,
+        "other_coordinate_exponents": [
+          1,
+          1
+        ]
+      },
+      {
+        "best_parameter": "0",
+        "best_support": [
+          7,
+          51,
+          38
+        ],
+        "best_total_support": 96,
+        "candidate_values": 7,
+        "coordinate": 1,
+        "other_coordinate_exponents": [
+          2,
+          0
+        ]
+      },
+      {
+        "best_parameter": "0",
+        "best_support": [
+          7,
+          51,
+          38
+        ],
+        "best_total_support": 96,
+        "candidate_values": 1,
+        "coordinate": 2,
+        "other_coordinate_exponents": [
+          0,
+          1
+        ]
+      },
+      {
+        "best_parameter": "0",
+        "best_support": [
+          7,
+          51,
+          38
+        ],
+        "best_total_support": 96,
+        "candidate_values": 1,
+        "coordinate": 2,
+        "other_coordinate_exponents": [
+          1,
+          0
+        ]
+      },
+      {
+        "best_parameter": "0",
+        "best_support": [
+          7,
+          51,
+          38
+        ],
+        "best_total_support": 96,
+        "candidate_values": 1,
+        "coordinate": 2,
+        "other_coordinate_exponents": [
+          0,
+          2
+        ]
+      },
+      {
+        "best_parameter": "0",
+        "best_support": [
+          7,
+          51,
+          38
+        ],
+        "best_total_support": 96,
+        "candidate_values": 40,
+        "coordinate": 2,
+        "other_coordinate_exponents": [
+          1,
+          1
+        ]
+      },
+      {
+        "best_parameter": "0",
+        "best_support": [
+          7,
+          51,
+          38
+        ],
+        "best_total_support": 96,
+        "candidate_values": 1,
+        "coordinate": 2,
+        "other_coordinate_exponents": [
+          2,
+          0
+        ]
+      },
+      {
+        "best_parameter": "0",
+        "best_support": [
+          7,
+          51,
+          38
+        ],
+        "best_total_support": 96,
+        "candidate_values": 1,
+        "coordinate": 3,
+        "other_coordinate_exponents": [
+          0,
+          1
+        ]
+      },
+      {
+        "best_parameter": "0",
+        "best_support": [
+          7,
+          51,
+          38
+        ],
+        "best_total_support": 96,
+        "candidate_values": 1,
+        "coordinate": 3,
+        "other_coordinate_exponents": [
+          1,
+          0
+        ]
+      },
+      {
+        "best_parameter": "0",
+        "best_support": [
+          7,
+          51,
+          38
+        ],
+        "best_total_support": 96,
+        "candidate_values": 1,
+        "coordinate": 3,
+        "other_coordinate_exponents": [
+          0,
+          2
+        ]
+      },
+      {
+        "best_parameter": "0",
+        "best_support": [
+          7,
+          51,
+          38
+        ],
+        "best_total_support": 96,
+        "candidate_values": 1,
+        "coordinate": 3,
+        "other_coordinate_exponents": [
+          1,
+          1
+        ]
+      },
+      {
+        "best_parameter": "0",
+        "best_support": [
+          7,
+          51,
+          38
+        ],
+        "best_total_support": 96,
+        "candidate_values": 7,
+        "coordinate": 3,
+        "other_coordinate_exponents": [
+          2,
+          0
+        ]
+      }
+    ]
+  },
+  "parameters": {
+    "scaling_bound": 16,
+    "source_degree": 2,
+    "tadic_max_exponent": 12,
+    "target_degree": 2
+  },
+  "rational_scalings": {
+    "best_balanced": {
+      "alpha": "1/4",
+      "beta": "12/5",
+      "c": "-3/35",
+      "coefficient_height": 21875,
+      "collision_height": 19856,
+      "d": "625/432",
+      "maximum_height": 21875
+    },
+    "best_coefficient": {
+      "alpha": "7/12",
+      "beta": "6",
+      "c": "-7/6",
+      "coefficient_height": 4648,
+      "collision_height": 49640,
+      "d": "1/343",
+      "maximum_height": 49640
+    },
+    "candidate_count": 25281
+  },
+  "status": "bounded experiment, not an absolute sparsity theorem",
+  "two_term_tadic_shears": {
+    "best": {
+      "boundary": "-12*auxiliary/7 - 16/7",
+      "degrees": [
+        7,
+        26,
+        24
+      ],
+      "exponents": [
+        0,
+        1
+      ],
+      "source_shear_quotient": "0",
+      "support": [
+        7,
+        51,
+        38
+      ],
+      "total_support": 96
+    },
+    "records": [
+      {
+        "boundary": "-12*auxiliary/7 - 16/7",
+        "degrees": [
+          7,
+          26,
+          24
+        ],
+        "exponents": [
+          0,
+          1
+        ],
+        "source_shear_quotient": "0",
+        "support": [
+          7,
+          51,
+          38
+        ],
+        "total_support": 96
+      },
+      {
+        "boundary": "-4*auxiliary**3/7 - 8/7",
+        "degrees": [
+          10,
+          38,
+          36
+        ],
+        "exponents": [
+          0,
+          3
+        ],
+        "source_shear_quotient": "8/7 - 4*auxiliary/7",
+        "support": [
+          8,
+          71,
+          52
+        ],
+        "total_support": 131
+      },
+      {
+        "boundary": "3*auxiliary**4/7 - 1",
+        "degrees": [
+          12,
+          46,
+          44
+        ],
+        "exponents": [
+          0,
+          4
+        ],
+        "source_shear_quotient": "3*auxiliary**2/7 - 6*auxiliary/7 + 9/7",
+        "support": [
+          8,
+          77,
+          56
+        ],
+        "total_support": 141
+      },
+      {
+        "boundary": "-12*auxiliary**5/35 - 32/35",
+        "degrees": [
+          14,
+          54,
+          52
+        ],
+        "exponents": [
+          0,
+          5
+        ],
+        "source_shear_quotient": "-12*auxiliary**3/35 + 24*auxiliary**2/35 - 36*auxiliary/35 + 48/35",
+        "support": [
+          8,
+          83,
+          60
+        ],
+        "total_support": 151
+      },
+      {
+        "boundary": "2*auxiliary**6/7 - 6/7",
+        "degrees": [
+          16,
+          62,
+          60
+        ],
+        "exponents": [
+          0,
+          6
+        ],
+        "source_shear_quotient": "2*auxiliary**4/7 - 4*auxiliary**3/7 + 6*auxiliary**2/7 - 8*auxiliary/7 + 10/7",
+        "support": [
+          8,
+          86,
+          62
+        ],
+        "total_support": 156
+      },
+      {
+        "boundary": "-12*auxiliary**7/49 - 40/49",
+        "degrees": [
+          18,
+          70,
+          68
+        ],
+        "exponents": [
+          0,
+          7
+        ],
+        "source_shear_quotient": "-12*auxiliary**5/49 + 24*auxiliary**4/49 - 36*auxiliary**3/49 + 48*auxiliary**2/49 - 60*auxiliary/49 + 72/49",
+        "support": [
+          8,
+          89,
+          64
+        ],
+        "total_support": 161
+      },
+      {
+        "boundary": "3*auxiliary**8/14 - 11/14",
+        "degrees": [
+          20,
+          78,
+          76
+        ],
+        "exponents": [
+          0,
+          8
+        ],
+        "source_shear_quotient": "3*auxiliary**6/14 - 3*auxiliary**5/7 + 9*auxiliary**4/14 - 6*auxiliary**3/7 + 15*auxiliary**2/14 - 9*auxiliary/7 + 3/2",
+        "support": [
+          8,
+          90,
+          65
+        ],
+        "total_support": 163
+      },
+      {
+        "boundary": "-4*auxiliary**9/21 - 16/21",
+        "degrees": [
+          22,
+          86,
+          84
+        ],
+        "exponents": [
+          0,
+          9
+        ],
+        "source_shear_quotient": "-4*auxiliary**7/21 + 8*auxiliary**6/21 - 4*auxiliary**5/7 + 16*auxiliary**4/21 - 20*auxiliary**3/21 + 8*auxiliary**2/7 - 4*auxiliary/3 + 32/21",
+        "support": [
+          8,
+          91,
+          66
+        ],
+        "total_support": 165
+      },
+      {
+        "boundary": "6*auxiliary**10/35 - 26/35",
+        "degrees": [
+          24,
+          94,
+          92
+        ],
+        "exponents": [
+          0,
+          10
+        ],
+        "source_shear_quotient": "6*auxiliary**8/35 - 12*auxiliary**7/35 + 18*auxiliary**6/35 - 24*auxiliary**5/35 + 6*auxiliary**4/7 - 36*auxiliary**3/35 + 6*auxiliary**2/5 - 48*auxiliary/35 + 54/35",
+        "support": [
+          8,
+          91,
+          67
+        ],
+        "total_support": 166
+      },
+      {
+        "boundary": "-12*auxiliary**11/77 - 8/11",
+        "degrees": [
+          26,
+          102,
+          100
+        ],
+        "exponents": [
+          0,
+          11
+        ],
+        "source_shear_quotient": "-12*auxiliary**9/77 + 24*auxiliary**8/77 - 36*auxiliary**7/77 + 48*auxiliary**6/77 - 60*auxiliary**5/77 + 72*auxiliary**4/77 - 12*auxiliary**3/11 + 96*auxiliary**2/77 - 108*auxiliary/77 + 120/77",
+        "support": [
+          8,
+          91,
+          68
+        ],
+        "total_support": 167
+      },
+      {
+        "boundary": "auxiliary**12/7 - 5/7",
+        "degrees": [
+          28,
+          110,
+          108
+        ],
+        "exponents": [
+          0,
+          12
+        ],
+        "source_shear_quotient": "auxiliary**10/7 - 2*auxiliary**9/7 + 3*auxiliary**8/7 - 4*auxiliary**7/7 + 5*auxiliary**6/7 - 6*auxiliary**5/7 + auxiliary**4 - 8*auxiliary**3/7 + 9*auxiliary**2/7 - 10*auxiliary/7 + 11/7",
+        "support": [
+          8,
+          91,
+          69
+        ],
+        "total_support": 168
+      },
+      {
+        "boundary": "-8*auxiliary**3/7 + 12*auxiliary/7",
+        "degrees": [
+          10,
+          38,
+          36
+        ],
+        "exponents": [
+          1,
+          3
+        ],
+        "source_shear_quotient": "16/7 - 8*auxiliary/7",
+        "support": [
+          8,
+          60,
+          46
+        ],
+        "total_support": 114
+      },
+      {
+        "boundary": "16*auxiliary**4/21 + 4*auxiliary/3",
+        "degrees": [
+          12,
+          46,
+          44
+        ],
+        "exponents": [
+          1,
+          4
+        ],
+        "source_shear_quotient": "16*auxiliary**2/21 - 32*auxiliary/21 + 16/7",
+        "support": [
+          8,
+          71,
+          53
+        ],
+        "total_support": 132
+      },
+      {
+        "boundary": "-4*auxiliary**5/7 + 8*auxiliary/7",
+        "degrees": [
+          14,
+          54,
+          52
+        ],
+        "exponents": [
+          1,
+          5
+        ],
+        "source_shear_quotient": "-4*auxiliary**3/7 + 8*auxiliary**2/7 - 12*auxiliary/7 + 16/7",
+        "support": [
+          8,
+          76,
+          56
+        ],
+        "total_support": 140
+      },
+      {
+        "boundary": "16*auxiliary**6/35 + 36*auxiliary/35",
+        "degrees": [
+          16,
+          62,
+          60
+        ],
+        "exponents": [
+          1,
+          6
+        ],
+        "source_shear_quotient": "16*auxiliary**4/35 - 32*auxiliary**3/35 + 48*auxiliary**2/35 - 64*auxiliary/35 + 16/7",
+        "support": [
+          8,
+          83,
+          61
+        ],
+        "total_support": 152
+      },
+      {
+        "boundary": "-8*auxiliary**7/21 + 20*auxiliary/21",
+        "degrees": [
+          18,
+          70,
+          68
+        ],
+        "exponents": [
+          1,
+          7
+        ],
+        "source_shear_quotient": "-8*auxiliary**5/21 + 16*auxiliary**4/21 - 8*auxiliary**3/7 + 32*auxiliary**2/21 - 40*auxiliary/21 + 16/7",
+        "support": [
+          8,
+          86,
+          63
+        ],
+        "total_support": 157
+      },
+      {
+        "boundary": "16*auxiliary**8/49 + 44*auxiliary/49",
+        "degrees": [
+          20,
+          78,
+          76
+        ],
+        "exponents": [
+          1,
+          8
+        ],
+        "source_shear_quotient": "16*auxiliary**6/49 - 32*auxiliary**5/49 + 48*auxiliary**4/49 - 64*auxiliary**3/49 + 80*auxiliary**2/49 - 96*auxiliary/49 + 16/7",
+        "support": [
+          8,
+          89,
+          65
+        ],
+        "total_support": 162
+      },
+      {
+        "boundary": "-2*auxiliary**9/7 + 6*auxiliary/7",
+        "degrees": [
+          22,
+          86,
+          84
+        ],
+        "exponents": [
+          1,
+          9
+        ],
+        "source_shear_quotient": "-2*auxiliary**7/7 + 4*auxiliary**6/7 - 6*auxiliary**5/7 + 8*auxiliary**4/7 - 10*auxiliary**3/7 + 12*auxiliary**2/7 - 2*auxiliary + 16/7",
+        "support": [
+          8,
+          90,
+          66
+        ],
+        "total_support": 164
+      },
+      {
+        "boundary": "16*auxiliary**10/63 + 52*auxiliary/63",
+        "degrees": [
+          24,
+          94,
+          92
+        ],
+        "exponents": [
+          1,
+          10
+        ],
+        "source_shear_quotient": "16*auxiliary**8/63 - 32*auxiliary**7/63 + 16*auxiliary**6/21 - 64*auxiliary**5/63 + 80*auxiliary**4/63 - 32*auxiliary**3/21 + 16*auxiliary**2/9 - 128*auxiliary/63 + 16/7",
+        "support": [
+          8,
+          91,
+          67
+        ],
+        "total_support": 166
+      },
+      {
+        "boundary": "-8*auxiliary**11/35 + 4*auxiliary/5",
+        "degrees": [
+          26,
+          102,
+          100
+        ],
+        "exponents": [
+          1,
+          11
+        ],
+        "source_shear_quotient": "-8*auxiliary**9/35 + 16*auxiliary**8/35 - 24*auxiliary**7/35 + 32*auxiliary**6/35 - 8*auxiliary**5/7 + 48*auxiliary**4/35 - 8*auxiliary**3/5 + 64*auxiliary**2/35 - 72*auxiliary/35 + 16/7",
+        "support": [
+          8,
+          91,
+          68
+        ],
+        "total_support": 167
+      },
+      {
+        "boundary": "16*auxiliary**12/77 + 60*auxiliary/77",
+        "degrees": [
+          28,
+          110,
+          108
+        ],
+        "exponents": [
+          1,
+          12
+        ],
+        "source_shear_quotient": "16*auxiliary**10/77 - 32*auxiliary**9/77 + 48*auxiliary**8/77 - 64*auxiliary**7/77 + 80*auxiliary**6/77 - 96*auxiliary**5/77 + 16*auxiliary**4/11 - 128*auxiliary**3/77 + 144*auxiliary**2/77 - 160*auxiliary/77 + 16/7",
+        "support": [
+          8,
+          91,
+          69
+        ],
+        "total_support": 168
+      },
+      {
+        "boundary": "-20*auxiliary**3/7 - 24*auxiliary**2/7",
+        "degrees": [
+          10,
+          38,
+          36
+        ],
+        "exponents": [
+          2,
+          3
+        ],
+        "source_shear_quotient": "16/7 - 20*auxiliary/7",
+        "support": [
+          7,
+          51,
+          40
+        ],
+        "total_support": 98
+      },
+      {
+        "boundary": "10*auxiliary**4/7 - 2*auxiliary**2",
+        "degrees": [
+          12,
+          46,
+          44
+        ],
+        "exponents": [
+          2,
+          4
+        ],
+        "source_shear_quotient": "10*auxiliary**2/7 - 20*auxiliary/7 + 16/7",
+        "support": [
+          8,
+          61,
+          47
+        ],
+        "total_support": 116
+      },
+      {
+        "boundary": "-20*auxiliary**5/21 - 32*auxiliary**2/21",
+        "degrees": [
+          14,
+          54,
+          52
+        ],
+        "exponents": [
+          2,
+          5
+        ],
+        "source_shear_quotient": "-20*auxiliary**3/21 + 40*auxiliary**2/21 - 20*auxiliary/7 + 16/7",
+        "support": [
+          8,
+          71,
+          54
+        ],
+        "total_support": 133
+      },
+      {
+        "boundary": "5*auxiliary**6/7 - 9*auxiliary**2/7",
+        "degrees": [
+          16,
+          62,
+          60
+        ],
+        "exponents": [
+          2,
+          6
+        ],
+        "source_shear_quotient": "5*auxiliary**4/7 - 10*auxiliary**3/7 + 15*auxiliary**2/7 - 20*auxiliary/7 + 16/7",
+        "support": [
+          8,
+          77,
+          58
+        ],
+        "total_support": 143
+      },
+      {
+        "boundary": "-4*auxiliary**7/7 - 8*auxiliary**2/7",
+        "degrees": [
+          18,
+          70,
+          68
+        ],
+        "exponents": [
+          2,
+          7
+        ],
+        "source_shear_quotient": "-4*auxiliary**5/7 + 8*auxiliary**4/7 - 12*auxiliary**3/7 + 16*auxiliary**2/7 - 20*auxiliary/7 + 16/7",
+        "support": [
+          8,
+          83,
+          62
+        ],
+        "total_support": 153
+      },
+      {
+        "boundary": "10*auxiliary**8/21 - 22*auxiliary**2/21",
+        "degrees": [
+          20,
+          78,
+          76
+        ],
+        "exponents": [
+          2,
+          8
+        ],
+        "source_shear_quotient": "10*auxiliary**6/21 - 20*auxiliary**5/21 + 10*auxiliary**4/7 - 40*auxiliary**3/21 + 50*auxiliary**2/21 - 20*auxiliary/7 + 16/7",
+        "support": [
+          8,
+          86,
+          64
+        ],
+        "total_support": 158
+      },
+      {
+        "boundary": "-20*auxiliary**9/49 - 48*auxiliary**2/49",
+        "degrees": [
+          22,
+          86,
+          84
+        ],
+        "exponents": [
+          2,
+          9
+        ],
+        "source_shear_quotient": "-20*auxiliary**7/49 + 40*auxiliary**6/49 - 60*auxiliary**5/49 + 80*auxiliary**4/49 - 100*auxiliary**3/49 + 120*auxiliary**2/49 - 20*auxiliary/7 + 16/7",
+        "support": [
+          8,
+          89,
+          66
+        ],
+        "total_support": 163
+      },
+      {
+        "boundary": "5*auxiliary**10/14 - 13*auxiliary**2/14",
+        "degrees": [
+          24,
+          94,
+          92
+        ],
+        "exponents": [
+          2,
+          10
+        ],
+        "source_shear_quotient": "5*auxiliary**8/14 - 5*auxiliary**7/7 + 15*auxiliary**6/14 - 10*auxiliary**5/7 + 25*auxiliary**4/14 - 15*auxiliary**3/7 + 5*auxiliary**2/2 - 20*auxiliary/7 + 16/7",
+        "support": [
+          8,
+          90,
+          67
+        ],
+        "total_support": 165
+      },
+      {
+        "boundary": "-20*auxiliary**11/63 - 8*auxiliary**2/9",
+        "degrees": [
+          26,
+          102,
+          100
+        ],
+        "exponents": [
+          2,
+          11
+        ],
+        "source_shear_quotient": "-20*auxiliary**9/63 + 40*auxiliary**8/63 - 20*auxiliary**7/21 + 80*auxiliary**6/63 - 100*auxiliary**5/63 + 40*auxiliary**4/21 - 20*auxiliary**3/9 + 160*auxiliary**2/63 - 20*auxiliary/7 + 16/7",
+        "support": [
+          8,
+          91,
+          68
+        ],
+        "total_support": 167
+      },
+      {
+        "boundary": "2*auxiliary**12/7 - 6*auxiliary**2/7",
+        "degrees": [
+          28,
+          110,
+          108
+        ],
+        "exponents": [
+          2,
+          12
+        ],
+        "source_shear_quotient": "2*auxiliary**10/7 - 4*auxiliary**9/7 + 6*auxiliary**8/7 - 8*auxiliary**7/7 + 10*auxiliary**6/7 - 12*auxiliary**5/7 + 2*auxiliary**4 - 16*auxiliary**3/7 + 18*auxiliary**2/7 - 20*auxiliary/7 + 16/7",
+        "support": [
+          8,
+          91,
+          69
+        ],
+        "total_support": 168
+      },
+      {
+        "boundary": "24*auxiliary**4/7 + 4*auxiliary**3",
+        "degrees": [
+          12,
+          46,
+          44
+        ],
+        "exponents": [
+          3,
+          4
+        ],
+        "source_shear_quotient": "24*auxiliary**2/7 - 20*auxiliary/7 + 16/7",
+        "support": [
+          7,
+          51,
+          41
+        ],
+        "total_support": 99
+      },
+      {
+        "boundary": "-12*auxiliary**5/7 + 16*auxiliary**3/7",
+        "degrees": [
+          14,
+          54,
+          52
+        ],
+        "exponents": [
+          3,
+          5
+        ],
+        "source_shear_quotient": "-12*auxiliary**3/7 + 24*auxiliary**2/7 - 20*auxiliary/7 + 16/7",
+        "support": [
+          8,
+          61,
+          48
+        ],
+        "total_support": 117
+      },
+      {
+        "boundary": "8*auxiliary**6/7 + 12*auxiliary**3/7",
+        "degrees": [
+          16,
+          62,
+          60
+        ],
+        "exponents": [
+          3,
+          6
+        ],
+        "source_shear_quotient": "8*auxiliary**4/7 - 16*auxiliary**3/7 + 24*auxiliary**2/7 - 20*auxiliary/7 + 16/7",
+        "support": [
+          8,
+          71,
+          55
+        ],
+        "total_support": 134
+      },
+      {
+        "boundary": "-6*auxiliary**7/7 + 10*auxiliary**3/7",
+        "degrees": [
+          18,
+          70,
+          68
+        ],
+        "exponents": [
+          3,
+          7
+        ],
+        "source_shear_quotient": "-6*auxiliary**5/7 + 12*auxiliary**4/7 - 18*auxiliary**3/7 + 24*auxiliary**2/7 - 20*auxiliary/7 + 16/7",
+        "support": [
+          8,
+          77,
+          59
+        ],
+        "total_support": 144
+      },
+      {
+        "boundary": "24*auxiliary**8/35 + 44*auxiliary**3/35",
+        "degrees": [
+          20,
+          78,
+          76
+        ],
+        "exponents": [
+          3,
+          8
+        ],
+        "source_shear_quotient": "24*auxiliary**6/35 - 48*auxiliary**5/35 + 72*auxiliary**4/35 - 96*auxiliary**3/35 + 24*auxiliary**2/7 - 20*auxiliary/7 + 16/7",
+        "support": [
+          8,
+          83,
+          63
+        ],
+        "total_support": 154
+      },
+      {
+        "boundary": "-4*auxiliary**9/7 + 8*auxiliary**3/7",
+        "degrees": [
+          22,
+          86,
+          84
+        ],
+        "exponents": [
+          3,
+          9
+        ],
+        "source_shear_quotient": "-4*auxiliary**7/7 + 8*auxiliary**6/7 - 12*auxiliary**5/7 + 16*auxiliary**4/7 - 20*auxiliary**3/7 + 24*auxiliary**2/7 - 20*auxiliary/7 + 16/7",
+        "support": [
+          8,
+          85,
+          65
+        ],
+        "total_support": 158
+      },
+      {
+        "boundary": "24*auxiliary**10/49 + 52*auxiliary**3/49",
+        "degrees": [
+          24,
+          94,
+          92
+        ],
+        "exponents": [
+          3,
+          10
+        ],
+        "source_shear_quotient": "24*auxiliary**8/49 - 48*auxiliary**7/49 + 72*auxiliary**6/49 - 96*auxiliary**5/49 + 120*auxiliary**4/49 - 144*auxiliary**3/49 + 24*auxiliary**2/7 - 20*auxiliary/7 + 16/7",
+        "support": [
+          8,
+          89,
+          67
+        ],
+        "total_support": 164
+      },
+      {
+        "boundary": "-3*auxiliary**11/7 + auxiliary**3",
+        "degrees": [
+          26,
+          102,
+          100
+        ],
+        "exponents": [
+          3,
+          11
+        ],
+        "source_shear_quotient": "-3*auxiliary**9/7 + 6*auxiliary**8/7 - 9*auxiliary**7/7 + 12*auxiliary**6/7 - 15*auxiliary**5/7 + 18*auxiliary**4/7 - 3*auxiliary**3 + 24*auxiliary**2/7 - 20*auxiliary/7 + 16/7",
+        "support": [
+          8,
+          90,
+          68
+        ],
+        "total_support": 166
+      },
+      {
+        "boundary": "8*auxiliary**12/21 + 20*auxiliary**3/21",
+        "degrees": [
+          28,
+          110,
+          108
+        ],
+        "exponents": [
+          3,
+          12
+        ],
+        "source_shear_quotient": "8*auxiliary**10/21 - 16*auxiliary**9/21 + 8*auxiliary**8/7 - 32*auxiliary**7/21 + 40*auxiliary**6/21 - 16*auxiliary**5/7 + 8*auxiliary**4/3 - 64*auxiliary**3/21 + 24*auxiliary**2/7 - 20*auxiliary/7 + 16/7",
+        "support": [
+          8,
+          91,
+          69
+        ],
+        "total_support": 168
+      },
+      {
+        "boundary": "-4*auxiliary**5 - 32*auxiliary**4/7",
+        "degrees": [
+          14,
+          54,
+          52
+        ],
+        "exponents": [
+          4,
+          5
+        ],
+        "source_shear_quotient": "-4*auxiliary**3 + 24*auxiliary**2/7 - 20*auxiliary/7 + 16/7",
+        "support": [
+          7,
+          51,
+          42
+        ],
+        "total_support": 100
+      },
+      {
+        "boundary": "2*auxiliary**6 - 18*auxiliary**4/7",
+        "degrees": [
+          16,
+          62,
+          60
+        ],
+        "exponents": [
+          4,
+          6
+        ],
+        "source_shear_quotient": "2*auxiliary**4 - 4*auxiliary**3 + 24*auxiliary**2/7 - 20*auxiliary/7 + 16/7",
+        "support": [
+          8,
+          61,
+          49
+        ],
+        "total_support": 118
+      },
+      {
+        "boundary": "-4*auxiliary**7/3 - 40*auxiliary**4/21",
+        "degrees": [
+          18,
+          70,
+          68
+        ],
+        "exponents": [
+          4,
+          7
+        ],
+        "source_shear_quotient": "-4*auxiliary**5/3 + 8*auxiliary**4/3 - 4*auxiliary**3 + 24*auxiliary**2/7 - 20*auxiliary/7 + 16/7",
+        "support": [
+          8,
+          71,
+          56
+        ],
+        "total_support": 135
+      },
+      {
+        "boundary": "auxiliary**8 - 11*auxiliary**4/7",
+        "degrees": [
+          20,
+          78,
+          76
+        ],
+        "exponents": [
+          4,
+          8
+        ],
+        "source_shear_quotient": "auxiliary**6 - 2*auxiliary**5 + 3*auxiliary**4 - 4*auxiliary**3 + 24*auxiliary**2/7 - 20*auxiliary/7 + 16/7",
+        "support": [
+          8,
+          77,
+          60
+        ],
+        "total_support": 145
+      },
+      {
+        "boundary": "-4*auxiliary**9/5 - 48*auxiliary**4/35",
+        "degrees": [
+          22,
+          86,
+          84
+        ],
+        "exponents": [
+          4,
+          9
+        ],
+        "source_shear_quotient": "-4*auxiliary**7/5 + 8*auxiliary**6/5 - 12*auxiliary**5/5 + 16*auxiliary**4/5 - 4*auxiliary**3 + 24*auxiliary**2/7 - 20*auxiliary/7 + 16/7",
+        "support": [
+          8,
+          83,
+          64
+        ],
+        "total_support": 155
+      },
+      {
+        "boundary": "2*auxiliary**10/3 - 26*auxiliary**4/21",
+        "degrees": [
+          24,
+          94,
+          92
+        ],
+        "exponents": [
+          4,
+          10
+        ],
+        "source_shear_quotient": "2*auxiliary**8/3 - 4*auxiliary**7/3 + 2*auxiliary**6 - 8*auxiliary**5/3 + 10*auxiliary**4/3 - 4*auxiliary**3 + 24*auxiliary**2/7 - 20*auxiliary/7 + 16/7",
+        "support": [
+          8,
+          86,
+          66
+        ],
+        "total_support": 160
+      },
+      {
+        "boundary": "-4*auxiliary**11/7 - 8*auxiliary**4/7",
+        "degrees": [
+          26,
+          102,
+          100
+        ],
+        "exponents": [
+          4,
+          11
+        ],
+        "source_shear_quotient": "-4*auxiliary**9/7 + 8*auxiliary**8/7 - 12*auxiliary**7/7 + 16*auxiliary**6/7 - 20*auxiliary**5/7 + 24*auxiliary**4/7 - 4*auxiliary**3 + 24*auxiliary**2/7 - 20*auxiliary/7 + 16/7",
+        "support": [
+          8,
+          89,
+          68
+        ],
+        "total_support": 165
+      },
+      {
+        "boundary": "auxiliary**12/2 - 15*auxiliary**4/14",
+        "degrees": [
+          28,
+          110,
+          108
+        ],
+        "exponents": [
+          4,
+          12
+        ],
+        "source_shear_quotient": "auxiliary**10/2 - auxiliary**9 + 3*auxiliary**8/2 - 2*auxiliary**7 + 5*auxiliary**6/2 - 3*auxiliary**5 + 7*auxiliary**4/2 - 4*auxiliary**3 + 24*auxiliary**2/7 - 20*auxiliary/7 + 16/7",
+        "support": [
+          8,
+          90,
+          69
+        ],
+        "total_support": 167
+      },
+      {
+        "boundary": "32*auxiliary**6/7 + 36*auxiliary**5/7",
+        "degrees": [
+          16,
+          62,
+          60
+        ],
+        "exponents": [
+          5,
+          6
+        ],
+        "source_shear_quotient": "32*auxiliary**4/7 - 4*auxiliary**3 + 24*auxiliary**2/7 - 20*auxiliary/7 + 16/7",
+        "support": [
+          7,
+          51,
+          43
+        ],
+        "total_support": 101
+      },
+      {
+        "boundary": "-16*auxiliary**7/7 + 20*auxiliary**5/7",
+        "degrees": [
+          18,
+          70,
+          68
+        ],
+        "exponents": [
+          5,
+          7
+        ],
+        "source_shear_quotient": "-16*auxiliary**5/7 + 32*auxiliary**4/7 - 4*auxiliary**3 + 24*auxiliary**2/7 - 20*auxiliary/7 + 16/7",
+        "support": [
+          8,
+          61,
+          50
+        ],
+        "total_support": 119
+      },
+      {
+        "boundary": "32*auxiliary**8/21 + 44*auxiliary**5/21",
+        "degrees": [
+          20,
+          78,
+          76
+        ],
+        "exponents": [
+          5,
+          8
+        ],
+        "source_shear_quotient": "32*auxiliary**6/21 - 64*auxiliary**5/21 + 32*auxiliary**4/7 - 4*auxiliary**3 + 24*auxiliary**2/7 - 20*auxiliary/7 + 16/7",
+        "support": [
+          8,
+          71,
+          57
+        ],
+        "total_support": 136
+      },
+      {
+        "boundary": "-8*auxiliary**9/7 + 12*auxiliary**5/7",
+        "degrees": [
+          22,
+          86,
+          84
+        ],
+        "exponents": [
+          5,
+          9
+        ],
+        "source_shear_quotient": "-8*auxiliary**7/7 + 16*auxiliary**6/7 - 24*auxiliary**5/7 + 32*auxiliary**4/7 - 4*auxiliary**3 + 24*auxiliary**2/7 - 20*auxiliary/7 + 16/7",
+        "support": [
+          8,
+          77,
+          61
+        ],
+        "total_support": 146
+      },
+      {
+        "boundary": "32*auxiliary**10/35 + 52*auxiliary**5/35",
+        "degrees": [
+          24,
+          94,
+          92
+        ],
+        "exponents": [
+          5,
+          10
+        ],
+        "source_shear_quotient": "32*auxiliary**8/35 - 64*auxiliary**7/35 + 96*auxiliary**6/35 - 128*auxiliary**5/35 + 32*auxiliary**4/7 - 4*auxiliary**3 + 24*auxiliary**2/7 - 20*auxiliary/7 + 16/7",
+        "support": [
+          8,
+          83,
+          65
+        ],
+        "total_support": 156
+      },
+      {
+        "boundary": "-16*auxiliary**11/21 + 4*auxiliary**5/3",
+        "degrees": [
+          26,
+          102,
+          100
+        ],
+        "exponents": [
+          5,
+          11
+        ],
+        "source_shear_quotient": "-16*auxiliary**9/21 + 32*auxiliary**8/21 - 16*auxiliary**7/7 + 64*auxiliary**6/21 - 80*auxiliary**5/21 + 32*auxiliary**4/7 - 4*auxiliary**3 + 24*auxiliary**2/7 - 20*auxiliary/7 + 16/7",
+        "support": [
+          8,
+          86,
+          67
+        ],
+        "total_support": 161
+      },
+      {
+        "boundary": "32*auxiliary**12/49 + 60*auxiliary**5/49",
+        "degrees": [
+          28,
+          110,
+          108
+        ],
+        "exponents": [
+          5,
+          12
+        ],
+        "source_shear_quotient": "32*auxiliary**10/49 - 64*auxiliary**9/49 + 96*auxiliary**8/49 - 128*auxiliary**7/49 + 160*auxiliary**6/49 - 192*auxiliary**5/49 + 32*auxiliary**4/7 - 4*auxiliary**3 + 24*auxiliary**2/7 - 20*auxiliary/7 + 16/7",
+        "support": [
+          8,
+          89,
+          69
+        ],
+        "total_support": 166
+      },
+      {
+        "boundary": "-36*auxiliary**7/7 - 40*auxiliary**6/7",
+        "degrees": [
+          18,
+          70,
+          68
+        ],
+        "exponents": [
+          6,
+          7
+        ],
+        "source_shear_quotient": "-36*auxiliary**5/7 + 32*auxiliary**4/7 - 4*auxiliary**3 + 24*auxiliary**2/7 - 20*auxiliary/7 + 16/7",
+        "support": [
+          7,
+          51,
+          44
+        ],
+        "total_support": 102
+      },
+      {
+        "boundary": "18*auxiliary**8/7 - 22*auxiliary**6/7",
+        "degrees": [
+          20,
+          78,
+          76
+        ],
+        "exponents": [
+          6,
+          8
+        ],
+        "source_shear_quotient": "18*auxiliary**6/7 - 36*auxiliary**5/7 + 32*auxiliary**4/7 - 4*auxiliary**3 + 24*auxiliary**2/7 - 20*auxiliary/7 + 16/7",
+        "support": [
+          8,
+          61,
+          51
+        ],
+        "total_support": 120
+      },
+      {
+        "boundary": "-12*auxiliary**9/7 - 16*auxiliary**6/7",
+        "degrees": [
+          22,
+          86,
+          84
+        ],
+        "exponents": [
+          6,
+          9
+        ],
+        "source_shear_quotient": "-12*auxiliary**7/7 + 24*auxiliary**6/7 - 36*auxiliary**5/7 + 32*auxiliary**4/7 - 4*auxiliary**3 + 24*auxiliary**2/7 - 20*auxiliary/7 + 16/7",
+        "support": [
+          8,
+          71,
+          58
+        ],
+        "total_support": 137
+      },
+      {
+        "boundary": "9*auxiliary**10/7 - 13*auxiliary**6/7",
+        "degrees": [
+          24,
+          94,
+          92
+        ],
+        "exponents": [
+          6,
+          10
+        ],
+        "source_shear_quotient": "9*auxiliary**8/7 - 18*auxiliary**7/7 + 27*auxiliary**6/7 - 36*auxiliary**5/7 + 32*auxiliary**4/7 - 4*auxiliary**3 + 24*auxiliary**2/7 - 20*auxiliary/7 + 16/7",
+        "support": [
+          8,
+          77,
+          62
+        ],
+        "total_support": 147
+      },
+      {
+        "boundary": "-36*auxiliary**11/35 - 8*auxiliary**6/5",
+        "degrees": [
+          26,
+          102,
+          100
+        ],
+        "exponents": [
+          6,
+          11
+        ],
+        "source_shear_quotient": "-36*auxiliary**9/35 + 72*auxiliary**8/35 - 108*auxiliary**7/35 + 144*auxiliary**6/35 - 36*auxiliary**5/7 + 32*auxiliary**4/7 - 4*auxiliary**3 + 24*auxiliary**2/7 - 20*auxiliary/7 + 16/7",
+        "support": [
+          8,
+          83,
+          66
+        ],
+        "total_support": 157
+      },
+      {
+        "boundary": "6*auxiliary**12/7 - 10*auxiliary**6/7",
+        "degrees": [
+          28,
+          110,
+          108
+        ],
+        "exponents": [
+          6,
+          12
+        ],
+        "source_shear_quotient": "6*auxiliary**10/7 - 12*auxiliary**9/7 + 18*auxiliary**8/7 - 24*auxiliary**7/7 + 30*auxiliary**6/7 - 36*auxiliary**5/7 + 32*auxiliary**4/7 - 4*auxiliary**3 + 24*auxiliary**2/7 - 20*auxiliary/7 + 16/7",
+        "support": [
+          8,
+          86,
+          68
+        ],
+        "total_support": 162
+      },
+      {
+        "boundary": "40*auxiliary**8/7 + 44*auxiliary**7/7",
+        "degrees": [
+          20,
+          78,
+          76
+        ],
+        "exponents": [
+          7,
+          8
+        ],
+        "source_shear_quotient": "40*auxiliary**6/7 - 36*auxiliary**5/7 + 32*auxiliary**4/7 - 4*auxiliary**3 + 24*auxiliary**2/7 - 20*auxiliary/7 + 16/7",
+        "support": [
+          7,
+          51,
+          45
+        ],
+        "total_support": 103
+      },
+      {
+        "boundary": "-20*auxiliary**9/7 + 24*auxiliary**7/7",
+        "degrees": [
+          22,
+          86,
+          84
+        ],
+        "exponents": [
+          7,
+          9
+        ],
+        "source_shear_quotient": "-20*auxiliary**7/7 + 40*auxiliary**6/7 - 36*auxiliary**5/7 + 32*auxiliary**4/7 - 4*auxiliary**3 + 24*auxiliary**2/7 - 20*auxiliary/7 + 16/7",
+        "support": [
+          8,
+          61,
+          52
+        ],
+        "total_support": 121
+      },
+      {
+        "boundary": "40*auxiliary**10/21 + 52*auxiliary**7/21",
+        "degrees": [
+          24,
+          94,
+          92
+        ],
+        "exponents": [
+          7,
+          10
+        ],
+        "source_shear_quotient": "40*auxiliary**8/21 - 80*auxiliary**7/21 + 40*auxiliary**6/7 - 36*auxiliary**5/7 + 32*auxiliary**4/7 - 4*auxiliary**3 + 24*auxiliary**2/7 - 20*auxiliary/7 + 16/7",
+        "support": [
+          8,
+          71,
+          59
+        ],
+        "total_support": 138
+      },
+      {
+        "boundary": "-10*auxiliary**11/7 + 2*auxiliary**7",
+        "degrees": [
+          26,
+          102,
+          100
+        ],
+        "exponents": [
+          7,
+          11
+        ],
+        "source_shear_quotient": "-10*auxiliary**9/7 + 20*auxiliary**8/7 - 30*auxiliary**7/7 + 40*auxiliary**6/7 - 36*auxiliary**5/7 + 32*auxiliary**4/7 - 4*auxiliary**3 + 24*auxiliary**2/7 - 20*auxiliary/7 + 16/7",
+        "support": [
+          8,
+          77,
+          63
+        ],
+        "total_support": 148
+      },
+      {
+        "boundary": "8*auxiliary**12/7 + 12*auxiliary**7/7",
+        "degrees": [
+          28,
+          110,
+          108
+        ],
+        "exponents": [
+          7,
+          12
+        ],
+        "source_shear_quotient": "8*auxiliary**10/7 - 16*auxiliary**9/7 + 24*auxiliary**8/7 - 32*auxiliary**7/7 + 40*auxiliary**6/7 - 36*auxiliary**5/7 + 32*auxiliary**4/7 - 4*auxiliary**3 + 24*auxiliary**2/7 - 20*auxiliary/7 + 16/7",
+        "support": [
+          8,
+          83,
+          67
+        ],
+        "total_support": 158
+      },
+      {
+        "boundary": "-44*auxiliary**9/7 - 48*auxiliary**8/7",
+        "degrees": [
+          22,
+          86,
+          84
+        ],
+        "exponents": [
+          8,
+          9
+        ],
+        "source_shear_quotient": "-44*auxiliary**7/7 + 40*auxiliary**6/7 - 36*auxiliary**5/7 + 32*auxiliary**4/7 - 4*auxiliary**3 + 24*auxiliary**2/7 - 20*auxiliary/7 + 16/7",
+        "support": [
+          7,
+          51,
+          46
+        ],
+        "total_support": 104
+      },
+      {
+        "boundary": "22*auxiliary**10/7 - 26*auxiliary**8/7",
+        "degrees": [
+          24,
+          94,
+          92
+        ],
+        "exponents": [
+          8,
+          10
+        ],
+        "source_shear_quotient": "22*auxiliary**8/7 - 44*auxiliary**7/7 + 40*auxiliary**6/7 - 36*auxiliary**5/7 + 32*auxiliary**4/7 - 4*auxiliary**3 + 24*auxiliary**2/7 - 20*auxiliary/7 + 16/7",
+        "support": [
+          8,
+          61,
+          53
+        ],
+        "total_support": 122
+      },
+      {
+        "boundary": "-44*auxiliary**11/21 - 8*auxiliary**8/3",
+        "degrees": [
+          26,
+          102,
+          100
+        ],
+        "exponents": [
+          8,
+          11
+        ],
+        "source_shear_quotient": "-44*auxiliary**9/21 + 88*auxiliary**8/21 - 44*auxiliary**7/7 + 40*auxiliary**6/7 - 36*auxiliary**5/7 + 32*auxiliary**4/7 - 4*auxiliary**3 + 24*auxiliary**2/7 - 20*auxiliary/7 + 16/7",
+        "support": [
+          8,
+          71,
+          60
+        ],
+        "total_support": 139
+      },
+      {
+        "boundary": "11*auxiliary**12/7 - 15*auxiliary**8/7",
+        "degrees": [
+          28,
+          110,
+          108
+        ],
+        "exponents": [
+          8,
+          12
+        ],
+        "source_shear_quotient": "11*auxiliary**10/7 - 22*auxiliary**9/7 + 33*auxiliary**8/7 - 44*auxiliary**7/7 + 40*auxiliary**6/7 - 36*auxiliary**5/7 + 32*auxiliary**4/7 - 4*auxiliary**3 + 24*auxiliary**2/7 - 20*auxiliary/7 + 16/7",
+        "support": [
+          8,
+          77,
+          64
+        ],
+        "total_support": 149
+      },
+      {
+        "boundary": "48*auxiliary**10/7 + 52*auxiliary**9/7",
+        "degrees": [
+          24,
+          94,
+          92
+        ],
+        "exponents": [
+          9,
+          10
+        ],
+        "source_shear_quotient": "48*auxiliary**8/7 - 44*auxiliary**7/7 + 40*auxiliary**6/7 - 36*auxiliary**5/7 + 32*auxiliary**4/7 - 4*auxiliary**3 + 24*auxiliary**2/7 - 20*auxiliary/7 + 16/7",
+        "support": [
+          7,
+          51,
+          47
+        ],
+        "total_support": 105
+      },
+      {
+        "boundary": "-24*auxiliary**11/7 + 4*auxiliary**9",
+        "degrees": [
+          26,
+          102,
+          100
+        ],
+        "exponents": [
+          9,
+          11
+        ],
+        "source_shear_quotient": "-24*auxiliary**9/7 + 48*auxiliary**8/7 - 44*auxiliary**7/7 + 40*auxiliary**6/7 - 36*auxiliary**5/7 + 32*auxiliary**4/7 - 4*auxiliary**3 + 24*auxiliary**2/7 - 20*auxiliary/7 + 16/7",
+        "support": [
+          8,
+          61,
+          54
+        ],
+        "total_support": 123
+      },
+      {
+        "boundary": "16*auxiliary**12/7 + 20*auxiliary**9/7",
+        "degrees": [
+          28,
+          110,
+          108
+        ],
+        "exponents": [
+          9,
+          12
+        ],
+        "source_shear_quotient": "16*auxiliary**10/7 - 32*auxiliary**9/7 + 48*auxiliary**8/7 - 44*auxiliary**7/7 + 40*auxiliary**6/7 - 36*auxiliary**5/7 + 32*auxiliary**4/7 - 4*auxiliary**3 + 24*auxiliary**2/7 - 20*auxiliary/7 + 16/7",
+        "support": [
+          8,
+          71,
+          61
+        ],
+        "total_support": 140
+      },
+      {
+        "boundary": "-52*auxiliary**11/7 - 8*auxiliary**10",
+        "degrees": [
+          26,
+          102,
+          100
+        ],
+        "exponents": [
+          10,
+          11
+        ],
+        "source_shear_quotient": "-52*auxiliary**9/7 + 48*auxiliary**8/7 - 44*auxiliary**7/7 + 40*auxiliary**6/7 - 36*auxiliary**5/7 + 32*auxiliary**4/7 - 4*auxiliary**3 + 24*auxiliary**2/7 - 20*auxiliary/7 + 16/7",
+        "support": [
+          7,
+          51,
+          48
+        ],
+        "total_support": 106
+      },
+      {
+        "boundary": "26*auxiliary**12/7 - 30*auxiliary**10/7",
+        "degrees": [
+          28,
+          110,
+          108
+        ],
+        "exponents": [
+          10,
+          12
+        ],
+        "source_shear_quotient": "26*auxiliary**10/7 - 52*auxiliary**9/7 + 48*auxiliary**8/7 - 44*auxiliary**7/7 + 40*auxiliary**6/7 - 36*auxiliary**5/7 + 32*auxiliary**4/7 - 4*auxiliary**3 + 24*auxiliary**2/7 - 20*auxiliary/7 + 16/7",
+        "support": [
+          8,
+          61,
+          55
+        ],
+        "total_support": 124
+      },
+      {
+        "boundary": "8*auxiliary**12 + 60*auxiliary**11/7",
+        "degrees": [
+          28,
+          110,
+          108
+        ],
+        "exponents": [
+          11,
+          12
+        ],
+        "source_shear_quotient": "8*auxiliary**10 - 52*auxiliary**9/7 + 48*auxiliary**8/7 - 44*auxiliary**7/7 + 40*auxiliary**6/7 - 36*auxiliary**5/7 + 32*auxiliary**4/7 - 4*auxiliary**3 + 24*auxiliary**2/7 - 20*auxiliary/7 + 16/7",
+        "support": [
+          7,
+          51,
+          49
+        ],
+        "total_support": 107
+      }
+    ]
+  }
+}

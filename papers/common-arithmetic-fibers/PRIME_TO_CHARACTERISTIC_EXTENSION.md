@@ -443,19 +443,22 @@ degree-three map.
 
 ### What is not proved here
 
-This draft should not yet replace the characteristic-zero scope of the active
-paper by the claim that every finite étale algebra of rank at least three is
+The active paper now proves a supplied-presentation theorem in every
+characteristic different from two: the separable polynomial presentation and
+a translation with nonzero first and third Hasse coefficients are part of the
+input.  This draft should not replace that conditional statement by the claim
+that every finite étale algebra of rank at least three is automatically
 realizable in every characteristic. Remaining issues include:
 
-- bad coefficients in the quadratic gauge when the characteristic divides
-  the normalization constants;
-- existence of a suitable rational translation over finite base fields;
-- global scheme-theoretic reconstruction for arbitrary prescribed seeds in
-  the complementary charts; and
+- characteristic two, where the determinant normalization by \(2^{-1}\)
+  is unavailable;
+- existence of a suitable rational translation over finite base fields and
+  for arbitrary positive-characteristic presentations;
 - the correct rank classification in positive characteristic.
 
-A safe broader manuscript would retain the characteristic-zero realization
-theorem and add Theorem 1.1 as a separate positive-characteristic headline.
+A safe broader manuscript would retain the active supplied-presentation
+theorem, keep the automatic abstract corollary in characteristic zero, and
+add Theorem 1.1 as a separate positive-characteristic headline.
 
 ## 6. Literature and provenance boundary
 

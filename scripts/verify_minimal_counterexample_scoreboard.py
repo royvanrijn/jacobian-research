@@ -53,6 +53,10 @@ def main() -> None:
         "two_real_gmc_remaining_four_weight.json"
     )
     dvorsky = load("dvorsky_gvc5_counterexample.json")
+    sic_three = load("three_pair_image_mathieu_counterexample.json")
+    hessian_rank_35_slice = load(
+        "hessian_rank_35_identity_slice_counterexample.json"
+    )
 
     assert cubic["dimension"] == 21
     assert image_20["source_dimension"] == 20
@@ -75,6 +79,21 @@ def main() -> None:
         == "fails in 5 variables"
     )
     assert dvorsky["consequences"]["SIC"] == "fails in 5 contraction pairs"
+    assert len(sic_three["contraction_pairs"]) == 3
+    assert sic_three["expanded_f_term_count"] == 8
+    assert sic_three["g"] == "z"
+    assert sic_three["bidegrees"]["g"] == [0, 1]
+    assert sic_three["all_order_identities"]["E(f^m)"] == "0"
+    assert (
+        sic_three["all_order_identities"]["[t]E(g*f^m)"]
+        == "(3m+1)!*m!"
+    )
+    assert hessian_rank_35_slice["slice_dimension"] == 21
+    assert hessian_rank_35_slice["HN_potential"]["dimension"] == 42
+    assert hessian_rank_35_slice["HN_potential"]["degrees"] == [2, 3, 4]
+    assert (
+        hessian_rank_35_slice["HN_potential"]["generic_hessian_rank"] == 35
+    )
 
     frontiers = restricted["rigorous_frontiers"]
     assert frontiers["n_cub"]["lower_bound"] == 5
@@ -112,11 +131,11 @@ def main() -> None:
             ),
             "SIC_failure_pair_dimension": interval(
                 2,
-                5,
+                3,
                 "the one-pair Image Conjecture is proved",
                 (
-                    "Dvorsky's homogenized Long seed gives an explicit "
-                    "SIC(5) counterexample"
+                    "one-pair bihomogenization of the weighted circular "
+                    "Gaussian bridge gives an explicit SIC(3) counterexample"
                 ),
             ),
             "unrestricted_constant_coefficient_GVC_failure_dimension": interval(
@@ -188,9 +207,9 @@ def main() -> None:
                 "artifact": "essential_bcw_21_counterexample.json",
             },
             "SIC": {
-                "pair_dimension": 5,
-                "polynomial_ring_variable_count": 10,
-                "artifact": "dvorsky_gvc5_counterexample.json",
+                "pair_dimension": 3,
+                "polynomial_ring_variable_count": 6,
+                "artifact": "three_pair_image_mathieu_counterexample.json",
             },
             "unrestricted_constant_coefficient_GVC": {
                 "dimension": 5,
@@ -205,6 +224,18 @@ def main() -> None:
                 "dimension": 42,
                 "artifact": "image_vanishing_counterexamples_21_42.json",
             },
+            "nonhomogeneous_HN_degree_at_most_4_rank": {
+                "dimension": 42,
+                "generic_hessian_rank": 35,
+                "degrees": [2, 3, 4],
+                "artifact": (
+                    "hessian_rank_35_identity_slice_counterexample.json"
+                ),
+                "scope_warning": (
+                    "this does not change the homogeneous quartic HN "
+                    "rank-37 or dimension-42 frontiers"
+                ),
+            },
         },
         "promotion_policy": (
             "Only exact identities or cited positive theorems change an endpoint; "
@@ -218,7 +249,7 @@ def main() -> None:
     OUTPUT.write_text(json.dumps(scoreboard, indent=2) + "\n")
     print(
         "PASS scoreboard: ambient witness dimensions "
-        "21 / SIC 5 / GVC 5 / Laplacian 40 / HN 42"
+        "21 / SIC 3 / GVC 5 / Laplacian 40 / HN 42"
     )
     print("PASS scoreboard: GMC failure dimension is in [2,3]")
     print("PASS scoreboard: exact minimum Gaussian counterexample degree is 3")
@@ -226,6 +257,7 @@ def main() -> None:
     print("PASS scoreboard: cubic dimension/rank/index intervals are [5,21] / [3,17] / [3,18]")
     print("PASS scoreboard: cotangent Hessian-rank interval is [6,37]")
     print("PASS scoreboard: unrestricted quartic Hessian-rank interval is [3,37]")
+    print("PASS scoreboard: nonhomogeneous degree-at-most-4 HN witness has rank 35")
     print("PASS scoreboard: Druzkowski dimension interval is [6,451]")
     print(f"PASS scoreboard: wrote {OUTPUT.relative_to(ROOT)}")
 

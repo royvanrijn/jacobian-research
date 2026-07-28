@@ -8,7 +8,7 @@ audited here is the manuscript dated July 26, 2026, together with the Roe Lean
 formalization at commit `0ffb3908c72f9a61bc1142567fb6bd9f2e67aaa3` and the
 completed Turturean formalization at commit `e868b9e`.
 
-Two action-first examples are complete:
+Three action-first comparisons are complete:
 
 \[
  (\sigma,\tau,x_0,x_1)\subset S_3
@@ -25,6 +25,18 @@ one named comparison:
 \mathbb Q_2[T]/(T^4+4T^2-4T+2)
 \longrightarrow \text{a determinant-one Keller fiber}.
 \]
+
+Finally, the common quintic
+
+\[
+T^5+T^3-2T^2+T+1
+\]
+
+has marked dyadic action
+\(\sigma=(1234)(5)\), \(\tau=x_0=x_1=1\), and occurs as one connected
+global complete fiber in two fixed stably inequivalent determinant-one maps.
+This proves that the complete local Galois action of a Keller fiber does not
+determine the stable class of its ambient map.
 
 The finite presentation certificates, polynomial comparisons, and Keller-map
 calculations are exact.  The relative obstruction uniquely identifies the
@@ -616,12 +628,19 @@ and inertia markings are not determined by orbit sizes alone.
 
 ### 7.3 Identical marked sets in stably inequivalent maps
 
-The existing universal multiplicity theorems imply many surrounding maps for
-a fixed finite etale algebra once a polynomial presentation is available
-(uniformly in rank at least five, and on the isotropic quartic trace-chord
-locus).  A compact paired certificate carrying the **same marked**
-\(G_{\mathbb Q_2}\)-set through two explicit stable-separation ledgers has not
-yet been assembled.
+Achieved by the
+[common quintic certificate](../verified/MARKED_Q2_STABLE_SEPARATION.md).
+The polynomial
+
+\[
+P_{5,1}=T^5+T^3-2T^2+T+1
+\]
+
+is irreducible modulo \(17\), while over \(\mathbb Q_2\) it is the product
+of \(\mathbb Q_2\) and the unramified quartic.  Its exact marking is
+\(\sigma=(1234)(5)\), \(\tau=x_0=x_1=1\).  The same global algebra is a
+complete fiber of the fixed weighted and quadratic-gauge maps, whose stable
+ramified-stratum unit ranks are respectively one and two.
 
 ### 7.4 A finite certificate for the complete arithmetic fiber
 
@@ -699,19 +718,22 @@ not the Keller realization, is the smallest missing formal bridge.
 
 ## 9. Reproduction
 
-Verify the finite \(S_3\) certificate:
+Verify the finite \(S_3\), mixed \(S_4\), and common-quintic certificates:
 
 ```bash
 python3 scripts/verify_gq2_permutation_action.py \
   arithmetic/certificates/gq2_s3_x3_minus_2.json --json
 python3 scripts/verify_gq2_permutation_action.py \
   arithmetic/certificates/gq2_s4_mixed_action.json --json
+python3 scripts/verify_gq2_permutation_action.py \
+  arithmetic/certificates/gq2_common_quintic_stable_pair.json --json
 ```
 
 Verify the polynomial comparison and determinant-one Keller compiler:
 
 ```bash
 .venv/bin/python scripts/verify_gq2_action_first_keller.py
+.venv/bin/python scripts/verify_marked_q2_stable_separation.py
 ```
 
 Verify the three mixed \(S_4\) action orbits, the explicit quartic Keller
@@ -766,9 +788,11 @@ not.
 
 ### Q2-4. Same marked action, two stable classes
 
-Choose a rank at least five action with a compact polynomial presentation and
-attach two explicit stable-moduli values while preserving the identical
-marked root action.
+Completed by \(P_{5,1}\): its fixed point plus unramified Frobenius
+four-cycle is attached to determinant-one weighted and quadratic-gauge maps
+with stable unit ranks one and two.  A next refinement would replace this
+unramified product action by a transitive wild rank-five action while keeping
+the two stable ledgers equally compact.
 
 ### Q2-5. Minimal Lean bridge
 

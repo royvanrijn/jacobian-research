@@ -223,6 +223,16 @@ Its target has primitive projective coordinates
 
 and hence height \(608\).
 
+The primality assumption is not needed for local solubility.  The same fixed
+map works for every integer \(a>1\) such that
+\[
+ a\equiv1\pmod9,\qquad a\notin\mathbb Q^3,\qquad
+ p\mid a\Longrightarrow p\equiv1\pmod3.
+\]
+The resulting multiplicative family and its sharper
+\(B/\sqrt{\log B}\) target asymptotic are proved in
+[MULTIPLICATIVE_HASSE_KELLER_FIBERS.md](MULTIPLICATIVE_HASSE_KELLER_FIBERS.md).
+
 ## 6. An exceptional finite-field line
 
 The same target line has deterministic local behavior at good primes.  In

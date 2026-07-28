@@ -2,8 +2,8 @@
 
 ## 1. Definition
 
-Let \(K\) be a field of characteristic zero. A nonzero finite étale
-\(K\)-algebra \(A\) is a **Keller fiber** if there are a polynomial Keller map
+Let \(K\) be a field. A nonzero finite étale \(K\)-algebra \(A\) is a
+**Keller fiber** if there are a polynomial Keller map
 
 \[
 F:\mathbb A^m_K\longrightarrow\mathbb A^m_K
@@ -23,10 +23,16 @@ nonproperness boundary; fullness excludes precisely that loss.
 
 ## 2. Effective Jacobian-one realization
 
-Let \(P\in K[T]\) be squarefree of degree \(N\ge3\). Choose \(a\in K\) with
+Assume \(\operatorname{char}K\ne2\).  Let \(P\in K[T]\) be separable of
+degree \(N\ge3\).  Write \(P^{[j]}\) for its \(j\)-th Hasse derivative,
+defined by
+\[
+P(T+S)=\sum_{j\ge0}P^{[j]}(T)S^j,
+\]
+and choose \(a\in K\) with
 
 \[
-P'(a)P'''(a)\ne0
+P^{[1]}(a)P^{[3]}(a)\ne0.
 \]
 
 and put
@@ -35,8 +41,8 @@ and put
 G(S)=P(a+S)-P(a)=g_1S+\cdots+g_NS^N.
 \]
 
-Then \(g_1=P'(a)\), \(g_3=P'''(a)/6\), and \(g_N\ne0\), so the
-root-engineered quadratic gauge applies. Its normalized map
+Then \(g_1=P^{[1]}(a)\), \(g_3=P^{[3]}(a)\), and \(g_N\ne0\), so the
+root-engineered quadratic gauge applies. Its raw map
 
 \[
 F_G=(\Pi,B,C):\mathbb A^3_K\longrightarrow\mathbb A^3_K
@@ -60,7 +66,7 @@ The distinguished target has second coordinate zero, so it is fixed by this
 normalization:
 
 \[
-y_{P,a}=\left(1,0,-\frac{2P(a)}{P'(a)}\right).
+y_{P,a}=\left(1,0,-\frac{2P(a)}{P^{[1]}(a)}\right).
 \]
 
 At this target the full fiber is
@@ -98,6 +104,7 @@ The estimates use \(\deg t=2\), \(\deg q\le5\), and
 
 ## 3. Complete rank classification
 
+Now assume that \(K\) has characteristic zero.
 Every finite étale algebra over an infinite field is monogenic. After
 extension to a separable closure, the algebra is a product of \(N\) copies of
 the field; the primitive elements form the nonempty open set on which the
@@ -136,6 +143,7 @@ Keller fibers are exactly
 
 ## 4. Scheme-theoretic reconstruction
 
+Return to an arbitrary field \(K\) of characteristic different from \(2\).
 For a quadratic-gauge target \((\pi,b,c)\) with \(\pi\ne0\), set
 
 \[
@@ -146,7 +154,8 @@ R=K[S]/(E),
 s=S\bmod E.
 \]
 
-If \(E\) is squarefree, Bézout gives \(U,V\in K[S]\) with
+If \(E\) is separable, equivalently \(\gcd(E,E')=1\), Bézout gives
+\(U,V\in K[S]\) with
 
 \[
 UE+VE'=1.
@@ -204,8 +213,9 @@ scheme-theoretically.
 
 ## 5. Scalar-extension compatibility
 
-For every characteristic-zero field extension \(K\hookrightarrow K'\), the
-construction commutes with coefficientwise scalar extension:
+For every field extension \(K\hookrightarrow K'\) with
+\(\operatorname{char}K\ne2\), the supplied \((P,a)\)-construction commutes
+with coefficientwise scalar extension:
 
 \[
 \widetilde F_{G,K'}=\widetilde F_G\otimes_KK'.
@@ -220,7 +230,8 @@ The distinguished fiber becomes
 Hence connectedness, field decomposition, real signatures, splitting fields,
 Galois actions, and all local algebras are transported functorially.
 
-In particular, every finite separable field extension \(L/K\) of degree at
+In characteristic zero, automatic existence of an admissible translation
+implies that every finite separable field extension \(L/K\) of degree at
 least three occurs as a connected full fiber of a Jacobian-one map of
 \(\mathbb A^3_K\), with coordinate degree at most \(6[L:K]+2\).
 
@@ -281,9 +292,11 @@ surplus and hence a contradiction.
 
 ## 7. Consequences for the earlier chain
 
-1. **Absolute occurrence is settled.** Every finite étale algebra of rank at
-   least three occurs directly, with determinant one and an effective degree
-   bound.
+1. **Absolute occurrence in characteristic zero is settled.** Every finite
+   étale algebra of rank at least three occurs directly, with determinant one
+   and an effective degree bound.  In characteristic different from two the
+   same conclusion holds from any supplied separable presentation with an
+   admissible translation.
 2. Weighted tangent-admissibility remains useful for occurrence inside the
    specific weighted linear-pencil family, but it is not an absolute
    existence condition.
@@ -314,13 +327,15 @@ infinite Hasse-family identity.
 
 A staged Lean project is stored in
 [`formal/finite-etale-keller`](../formal/finite-etale-keller). It now
-formalizes the automatic three-variable realization, full scheme-level fiber
+formalizes, in characteristic zero, the automatic three-variable realization,
+full scheme-level fiber
 reconstruction, naturality, finite étaleness, rank and geometric degree; the
 explicit quintic Hasse certificate at every completion; and the entire
 algebraic degree-four moment barrier.  For rank-minimality, only the
 Dedekind-zeta Euler-product extraction of the first prime moment remains
 outside Lean. The historical degree-two theorem remains a separate external
-input until formalized.
+input until formalized.  The wider characteristic-not-two supplied theorem is
+not yet formalized end to end.
 
 The dated qualified novelty search is recorded in
 [`papers/common-arithmetic-fibers/LITERATURE_AUDIT.md`](../papers/common-arithmetic-fibers/LITERATURE_AUDIT.md).

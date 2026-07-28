@@ -337,6 +337,118 @@ assert certificate_matrix == expected_matrix
 certificate_determinant = bareiss_determinant(certificate_matrix)
 assert certificate_determinant == -5
 
+# Independently reconstruct the 96-term rational-root representative and its
+# 24-row affine-linear certificate.
+sparse_q = t**2 * z - Fraction(4, 7) * y**2 * (1 + 3 * t)
+sparse_F = (
+    -Fraction(1, 2) * t * sparse_q,
+    y
+    - Fraction(21, 4) * x * sparse_q
+    + 3 * t**2 * x**2 * sparse_q**4,
+    x * (5 - 3 * t)
+    + Fraction(7, 4) * x**3 * z
+    - Fraction(3, 2) * (x * sparse_q) ** 4,
+)
+assert tuple(len(component.terms) for component in sparse_F) == (7, 51, 38)
+sparse_jacobian = [
+    [component.derivative(index) for index in range(3)]
+    for component in sparse_F
+]
+assert determinant_3_by_3(sparse_jacobian).terms == {
+    (0, 0, 0): Fraction(1)
+}
+sparse_points = (
+    (Fraction(0), Fraction(0), Fraction(1)),
+    (Fraction(-4, 5), Fraction(9, 4), Fraction(-265, 32)),
+    (Fraction(1, 2), Fraction(-3, 2), Fraction(100)),
+    (
+        Fraction(3, 10),
+        Fraction(-29, 6),
+        Fraction(-24820, 729),
+    ),
+)
+for point in sparse_points:
+    assert tuple(component.evaluate(point) for component in sparse_F) == (
+        -Fraction(1, 2),
+        Fraction(0),
+        Fraction(0),
+    )
+
+sparse_linear_columns: list[tuple[Poly, Poly, Poly]] = []
+for source_row in range(3):
+    for source_column in range(3):
+        sparse_linear_columns.append(
+            tuple(
+                -sparse_jacobian[component][source_row]
+                * variables[source_column]
+                for component in range(3)
+            )
+        )
+for target_row in range(3):
+    for target_column in range(3):
+        sparse_linear_columns.append(
+            tuple(
+                sparse_F[target_column] if component == target_row else Poly()
+                for component in range(3)
+            )
+        )
+sparse_affine_columns = sparse_linear_columns[:9]
+sparse_affine_columns.extend(
+    tuple(-sparse_jacobian[component][source_row] for component in range(3))
+    for source_row in range(3)
+)
+sparse_affine_columns.extend(sparse_linear_columns[9:])
+sparse_affine_columns.extend(
+    tuple(
+        Poly.constant(1) if component == target_row else Poly()
+        for component in range(3)
+    )
+    for target_row in range(3)
+)
+assert len(sparse_affine_columns) == 24
+sparse_affine_rows: dict[tuple[int, Exponent], list[Fraction]] = {}
+for column, residual in enumerate(sparse_affine_columns):
+    for component, polynomial in enumerate(residual, start=1):
+        for exponent, coefficient in polynomial.terms.items():
+            label = (component, exponent)
+            sparse_affine_rows.setdefault(
+                label, [Fraction(0)] * 24
+            )[column] = coefficient
+assert len(sparse_affine_rows) == 774
+
+sparse_affine_labels = (
+    (1, (12, 10, 4)),
+    (1, (12, 8, 4)),
+    (1, (4, 3, 0)),
+    (1, (4, 2, 1)),
+    (1, (3, 4, 0)),
+    (1, (3, 3, 1)),
+    (1, (2, 2, 0)),
+    (1, (3, 2, 2)),
+    (2, (12, 9, 4)),
+    (1, (2, 4, 1)),
+    (1, (2, 4, 0)),
+    (1, (2, 3, 2)),
+    (1, (1, 4, 0)),
+    (1, (2, 2, 1)),
+    (1, (0, 0, 0)),
+    (2, (12, 10, 4)),
+    (2, (12, 8, 4)),
+    (2, (3, 3, 1)),
+    (2, (3, 2, 1)),
+    (2, (0, 0, 0)),
+    (3, (12, 10, 4)),
+    (3, (12, 8, 4)),
+    (3, (3, 3, 1)),
+    (3, (0, 0, 0)),
+)
+sparse_affine_matrix = [
+    primitive_integer_row(sparse_affine_rows[label])
+    for label in sparse_affine_labels
+]
+assert sum(entry != 0 for row in sparse_affine_matrix for entry in row) == 46
+assert bareiss_determinant(sparse_affine_matrix) == 10
+
 print("PASS independent sparse-Q replay: det(JF) = 1")
 print("PASS independent sparse-Q replay: four-point rational collision")
 print("PASS independent sparse-Q replay: 734-by-18 coefficient system rebuilt")
@@ -345,3 +457,5 @@ print(
     "PASS independent Bareiss determinant:",
     certificate_determinant,
 )
+print("PASS independent 96-term sparse representative and collision")
+print("PASS independent sparse affine 24-by-24 determinant: 10")

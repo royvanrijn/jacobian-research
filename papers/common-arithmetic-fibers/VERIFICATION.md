@@ -5,11 +5,15 @@ This file records the proof layer for every load-bearing claim in
 “Lean” means a theorem in the pinned
 `formal/finite-etale-keller` project with no `sorry` and no project-specific
 axiom.  Symbolic checks are exact independent audits, not substitutes for the
-corresponding mathematical argument.
+corresponding mathematical argument.  The supplied-presentation theorem is
+proved in the paper over fields of characteristic different from two; the
+current Lean declarations in the table formalize its characteristic-zero
+specialization.
 
 | Claim | Paper proof | Lean certificate | Independent audit / external input |
 |---|---|---|---|
-| Existence and automatic choice of an admissible translation | Polynomial realization theorem and its effective corollary | `Admissibility.lean`, `AutomaticRealization.lean` | Concrete translated seeds |
+| Supplied presentation with nonzero first and third Hasse coefficients in characteristic not two | Polynomial realization theorem and its effective corollary | Characteristic-zero specialization in the files listed below; the wider scope is not yet formalized end to end | Integral compact-gauge identities and the ordinary proof |
+| Existence and automatic choice of an admissible translation in characteristic zero | Finite-étale realization corollary | `Admissibility.lean`, `AutomaticRealization.lean` | Concrete translated seeds |
 | Two-sided source/chart equivalence over arbitrary commutative rings | General localized quadratic-gauge fiber theorem | `SourceEquivalence.lean` | Universal source-chart identity |
 | For a separable inverse polynomial, its derivative is a unit at every test-algebra root | Derivative-units lemma | `Bezout.lean`, `SeparableReconstruction.lean` | Quotient-ring regressions |
 | Roots represent the derivative-localized fiber, naturally in the test algebra and without a separability hypothesis | General localized quadratic-gauge fiber theorem | `LocalizedFiberPoints.lean`, `LocalizedGaugeFiberPoints.lean`, `GeneralGaugeLocalizedFiber.lean` | Exact two-sided reconstruction |
@@ -21,12 +25,12 @@ corresponding mathematical argument.
 | Literal three-coordinate map fiber is represented, naturally over every test algebra | General localized quadratic-gauge fiber theorem | `GeneralGaugeRawFiber.lean`, `GeneralGaugeLocalizedFiber.lean` | Quotient-ring reconstruction |
 | Zero-second-coordinate fiber is preserved by determinant-one output normalization | Jacobian-one effective-form corollary | `GeneralGaugeNormalization.lean` | Exact scalar-normalization checks |
 | Translation `K[S]/(P(a+S)) ≃ K[T]/(P)` | Polynomial realization theorem | `TranslationQuotient.lean`, `GeneralGaugeRealization.lean` | Concrete translated examples |
-| Final automatic page-one certificate from squarefree `P` | Polynomial realization theorem and its effective corollary | `PageOneTheorem.lean`; final proposition `automaticRealization_pageOne` simultaneously contains target normalization, determinant, geometric degree, literal fiber representation, naturality, finite étaleness, finiteness, rank, and degree bound | Full Lean build and axiom reports |
+| Final automatic page-one certificate from squarefree `P` | Polynomial realization theorem and its effective corollary | `PageOneTheorem.lean`; final proposition `automaticRealization_pageOne` simultaneously contains target normalization, determinant, the direct standard-object function-field finrank equality, literal fiber representation, naturality, finite étaleness, finiteness, rank, and degree bound | Full Lean build and axiom reports |
 | Represented special-fiber length is `deg P` | Polynomial realization theorem and finite-étale fiber corollary | `GeneralGaugeFiberRank.lean`; theorem `automaticRealizationFiber_rank` | Standard polynomial-quotient dimension theorem |
 | Constant determinant `-2` and normalized determinant `1` for the arbitrary-degree actual map | Compact Jacobian factorization, general localized theorem, and effective-form corollary | `GeneralGaugeJacobian.lean` | Structural SymPy audit; independent generic degree-six Singular audit; concrete degrees 3–5 |
 | Final coordinate-degree bound `6N+2` in terms of `N = deg P` | Polynomial realization theorem and effective normalization corollary | `GeneralGaugeDegree.lean`, `GeneralGaugeRealizationDegree.lean` | Structural termwise audit; Singular degree-six profile |
 | Irreducibility and degree `N` of the fully independent inverse equation over the iterated target field `K(Π,B)(C)` | General localized quadratic-gauge fiber theorem, primitive linear-parameter argument | `GenericInverseIrreducibility.lean` proves the fixed-`π,b` engine; `GeneralGaugeFullGenericDegree.lean` promotes `Π,B` to independent parameters and proves `generalGaugeFullyGenericInversePolynomial_certificate` and `generalGaugeFullyGenericInverseAdjoinRoot_finrank` | Exact polynomial-variable swap and Mathlib Gauss lemma; concrete degree 3–5 regressions |
-| Function-field reconstruction and geometric degree `N` | General localized quadratic-gauge fiber theorem: explicit equality `K(x,y,z)=K(Π,B,C)(S)` followed by inverse-polynomial irreducibility | Complete for the polynomial-presentation map: `GeneralGaugeFunctionField.lean` proves algebraic independence and injective pullback; `GeneralGaugeFunctionFieldComparison.lean` constructs `generalGaugeSourceFunctionFieldComparison : K(x,y,z) ≃ K(Π,B)(C)[S]/(E)` over the actual target embedding and proves `generalGaugeGeometricDegree_eq`; `PageOneTheorem.lean` transports the result to the determinant-one realization | Independent rational reconstruction in the paper |
+| Function-field reconstruction and geometric degree `N` | General localized quadratic-gauge fiber theorem: explicit equality `K(x,y,z)=K(Π,B,C)(S)` followed by inverse-polynomial irreducibility | Complete for the polynomial-presentation map: `GeneralGaugeFunctionField.lean` proves algebraic independence and injective pullback; `GeneralGaugeFunctionFieldComparison.lean` constructs `generalGaugeSourceFunctionFieldComparison : K(x,y,z) ≃ K(Π,B)(C)[S]/(E)` over the actual target embedding; `PageOneTheorem.lean` exposes `automaticRealizationFunctionFieldComparison` and the direct equality `automaticRealizationFunctionField_finrank`, phrased using `AlgEquiv`, `FractionRing`, `RatFunc`, `AdjoinRoot`, and `Module.finrank` | Independent rational reconstruction in the paper |
 | Every finite étale algebra over an infinite field is monogenic | Monogenicity lemma, used only in the finite-étale realization corollary | `AbstractFiniteEtale.lean` proves the characteristic-zero case needed here, constructs `finiteEtalePresentation`, and composes it with the polynomial certificate in `abstractFiniteEtale_pageOne` | Paper's discriminant/Vandermonde proof; Lean uses translated primitive elements with distinct traces and the Chinese remainder theorem |
 | No characteristic-zero Keller map has generic degree two | Rank-classification corollary, explicitly separated from the constructive theorem | Not formalized | Campbell's unnumbered theorem on p. 244 (normal complex function-field extension), scalar-invariance of generic rank under extension, quadratic separability/normality, and faithfully flat descent; Razar and Wright are cited as later algebraic treatments |
 | Compatibility of the realization with extension of the ground field | Base-change proposition in Section 4 | `GeneralGaugeBaseChange.lean` proves coefficientwise compatibility of translation, the full supplied-parameter map, normalization, admissibility, squarefreeness, and distinguished target, together with `L ⊗[K] AdjoinRoot P ≃ₐ[L] AdjoinRoot (P.map f)` | Coefficientwise paper proof |
@@ -105,13 +109,16 @@ representing quotient.
 
 ## Remaining formal boundary
 
-The polynomial realization theorem is formalized end to end, including
-actual geometric degree. Monogenicity and its composition with that theorem
-are also formalized in characteristic zero, yielding a single certificate
-starting from an abstract finite étale algebra. The sole remaining formal
-boundary of the focused paper is:
+The characteristic-zero specialization of the polynomial realization theorem
+is formalized end to end, including actual geometric degree. Monogenicity and
+its composition with that theorem are also formalized in characteristic zero,
+yielding a single certificate starting from an abstract finite étale algebra.
+The remaining formal boundaries of the focused paper are:
 
-1. either formalize the Campbell--Razar--Wright Galois case or keep it as a
+1. remove the blanket `CharZero` assumptions from the supplied-seed,
+   reconstruction, function-field, and base-change layers, replacing them by
+   the exact invertibility hypotheses used in the paper;
+2. either formalize the Campbell--Razar--Wright Galois case or keep it as a
    clearly isolated classical theorem interface;
 
 Symmetric monodromy, stable atomicity, Hilbertian specialization, and exact

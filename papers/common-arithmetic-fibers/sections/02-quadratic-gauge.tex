@@ -1,5 +1,9 @@
 \section{The quadratic gauge from the inverse equation}\label{sec:gauge}
 
+Throughout this section \(K\) is a field of characteristic different from
+\(2\).  A polynomial is called squarefree below in the derivative sense
+\(\gcd(E,E')=1\), equivalently separable over \(K\).
+
 The polynomial realization theorem rests on one explicit construction.
 Let
 \begin{equation}
@@ -211,7 +215,7 @@ Equations \eqref{eq:source-chart-jacobian} and
 \(t\neq0\), and hence everywhere.
 For the cubic seed, this agrees with the normalized marked-factor
 interpretation above.  The displayed calculation proves that the same
-cancellation persists for every admissible seed \(G\).
+cancellation persists for every seed satisfying \(g_1g_3g_N\neq0\).
 
 We now identify the entire fiber.  Let $A$ be an arbitrary commutative
 $K$-algebra.  An $A$-point $(x,y,z)$ above $(\pi,b,c)$ satisfies
@@ -412,5 +416,20 @@ remaining terms of $C$ have degree at most $4$.  Thus $\deg C\leq6N$.
 A linear output normalization does not change these bounds.
 \end{proof}
 
-\input{sections/01-keller-fibers}
+\begin{remark}[Exact hypotheses of the supplied-seed layer]
+\label{rem:supplied-hypotheses}
+The root-to-source reconstruction at a target
+\((\pi,b,c)\) uses only
+\[
+ 2\neq0,\qquad g_1g_3\neq0,\qquad \pi\neq0,
+\]
+together with invertibility of \(E_{\pi,b,c}'(s)\) at the marked root.
+The condition \(g_N\neq0\) records that the seed has degree \(N\) and is used
+in the generic irreducibility and geometric-degree calculation.
+Squarefreeness of the specialized inverse polynomial is used only to make
+the derivative invertible at every root, so that the localization in
+\eqref{eq:localized-fiber} disappears.  No characteristic-zero hypothesis
+enters this supplied-seed layer.
+\end{remark}
 
+\input{sections/01-keller-fibers}

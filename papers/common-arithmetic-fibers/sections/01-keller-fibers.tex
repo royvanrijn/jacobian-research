@@ -4,7 +4,7 @@
 The construction used in the proof can be read from left to right:
 \[
  \boxed{
- \text{squarefree }P(T)
+ \text{separable }P(T)
  \ \longmapsto\
  G(S)=P(a+S)-P(a)
  \ \longmapsto\
@@ -13,11 +13,22 @@ The construction used in the proof can be read from left to right:
 The last arrow is an isomorphism of schemes, not merely a matching of
 \(K\)-points or a count after passing to an algebraic closure.
 
+For \(j\geq0\), write \(P^{[j]}\) for the \(j\)-th Hasse derivative,
+characterized by
+\begin{equation}
+ P(T+S)=\sum_{j\geq0}P^{[j]}(T)S^j.
+ \label{eq:hasse-derivatives}
+\end{equation}
+Thus \(P^{[1]}=P'\).  In characteristic zero,
+\(P^{[3]}=P'''/3!\), but the Hasse coefficient is the integral notion used
+in the supplied-presentation theorem.
+
 \begin{theorem}[Polynomial realization]\label{thm:polynomial-realization}
-Let \(P\in K[T]\) be squarefree of degree \(N\geq3\), and let
-\(a\in K\) satisfy
+Let \(K\) be a field of characteristic different from \(2\).  Let
+\(P\in K[T]\) be separable of degree \(N\geq3\), and let \(a\in K\)
+satisfy
 \[
- P'(a)P'''(a)\neq0.
+ P^{[1]}(a)P^{[3]}(a)\neq0.
 \]
 Put \(G(S)=P(a+S)-P(a)\), let \(F_G=(\Pi,B,C)\) be the
 quadratic-gauge map of \eqref{eq:gauge-map}, and set
@@ -34,7 +45,7 @@ Then
 \]
 At
 \begin{equation}
- y_{P,a}=\left(1,0,-\frac{2P(a)}{P'(a)}\right)
+ y_{P,a}=\left(1,0,-\frac{2P(a)}{P^{[1]}(a)}\right)
  \label{eq:main-target}
 \end{equation}
 the full Keller fiber is
@@ -45,15 +56,16 @@ the full Keller fiber is
 \end{theorem}
 
 \begin{proof}
-The linear and cubic coefficients of \(G\) are
-\(P'(a)\) and \(P'''(a)/3!\), so the quadratic gauge of
+By \eqref{eq:hasse-derivatives}, the linear and cubic coefficients of \(G\)
+are \(P^{[1]}(a)\) and \(P^{[3]}(a)\), so the quadratic gauge of
 Section~\ref{sec:gauge} is defined.  At the target
 \eqref{eq:main-target}, its inverse polynomial is
 \[
- G(S)-\frac{P'(a)}2\left(-\frac{2P(a)}{P'(a)}\right)
+ G(S)-\frac{P^{[1]}(a)}2
+       \left(-\frac{2P(a)}{P^{[1]}(a)}\right)
  =P(a+S).
 \]
-Translation preserves squarefreeness, so
+Translation preserves separability, so
 Corollary~\ref{cor:squarefree-gauge} identifies the fiber with
 \(\Spec K[S]/(P(a+S))\).
 
@@ -99,7 +111,7 @@ element.  Equivalently, if \(A\) has rank \(N\), then
 \[
  A\simeq K[T]/(P)
 \]
-for a squarefree polynomial \(P\in K[T]\) of degree \(N\).
+for a separable polynomial \(P\in K[T]\) of degree \(N\).
 \end{lemma}
 
 \begin{proof}
@@ -124,16 +136,16 @@ polynomial \(P\).
 
 \begin{corollary}[Finite \'etale realization]
 \label{cor:finite-etale-realization}
-Every finite \'etale \(K\)-algebra \(A\) of rank \(N\geq3\) occurs as a full
-Keller fiber of a Jacobian-one map
+Let \(K\) have characteristic zero.  Every finite \'etale \(K\)-algebra
+\(A\) of rank \(N\geq3\) occurs as a full Keller fiber of a Jacobian-one map
 \[
  \A^3_K\longrightarrow\A^3_K
 \]
 of geometric degree \(N\).
 
 More precisely, once an isomorphism \(A\simeq K[T]/(P)\) and an element
-\(a\in K\) with \(P'(a)P'''(a)\neq0\) are supplied, the map, target, and
-fiber isomorphism are given by the explicit formulas of
+\(a\in K\) with \(P^{[1]}(a)P^{[3]}(a)\neq0\) are supplied, the map,
+target, and fiber isomorphism are given by the explicit formulas of
 Theorem~\ref{thm:polynomial-realization}.  For an abstract \(A\), the
 monogenicity argument proves that such a presentation exists; it does not
 choose one canonically.
@@ -141,15 +153,17 @@ choose one canonically.
 
 \begin{proof}
 Lemma~\ref{lem:monogenic} supplies a squarefree presentation
-\(A\simeq K[T]/(P)\) of degree \(N\).  The polynomials \(P'\) and \(P'''\)
-are nonzero in characteristic zero, and \(K\) is infinite, so some \(a\)
-avoids the finite zero set of \(P'P'''\).  Apply
+\(A\simeq K[T]/(P)\) of degree \(N\).  In characteristic zero,
+\(P^{[1]}=P'\) and \(P^{[3]}=P'''/3!\) are nonzero polynomials.  Since
+\(K\) is infinite, some \(a\) avoids the finite zero set of
+\(P^{[1]}P^{[3]}\).  Apply
 Theorem~\ref{thm:polynomial-realization}.
 \end{proof}
 
 \begin{corollary}[Rank classification, using the classical Galois case]
 \label{cor:rank-classification}
-Let \(X\) be a finite \(K\)-scheme of positive rank \(N\).  Then \(X\) is
+Let \(K\) have characteristic zero and let \(X\) be a finite \(K\)-scheme
+of positive rank \(N\).  Then \(X\) is
 isomorphic to a full Keller fiber of a geometric-degree-\(N\) Keller map
 \[
  F:\A^3_K\longrightarrow\A^3_K

@@ -1,9 +1,9 @@
 # Universal Keller-fiber multiplicity
 
 This note answers the universal nonuniqueness question for finite etale
-Keller fibers over number fields.  The answer is stronger than the proposed
-three-class lower bound: every algebra of rank at least four occurs in
-infinitely many stable classes.
+Keller fibers.  The answer is stronger than the proposed three-class lower
+bound: over every characteristic-zero field, every algebra of rank at least
+three occurs in infinitely many stable classes.
 
 For a characteristic-zero field `K` and a finite etale `K`-algebra `A`, let
 `\mathcal R_K(A)` denote the set of stable polynomial left--right classes of
@@ -14,23 +14,30 @@ Keller maps having a complete fiber isomorphic to `Spec A`, as in
 
 > **Universal Keller-fiber multiplicity theorem.**
 >
-> 1. If `K` is a number field and `A` is a finite etale `K`-algebra of rank
->    `N>=4`, then
+> If `K` is a characteristic-zero field and `A` is a finite etale
+> `K`-algebra of rank `N>=3`, then
 >    \[
 >      \boxed{|\mathcal R_K(A)|=\infty.}
 >    \]
-> 2. Over an arbitrary characteristic-zero field `K`, the same conclusion
->    holds in every rank `N>=5`.
 
-In rank four the representatives are determinant-one, boundary-clean
-weighted maps.  In every rank at least five they are determinant-one
-quadratic-gauge maps.  Thus the result concerns arbitrary abstract finite
-etale algebras, not merely a Hilbert family or a specially selected
-polynomial.
+In rank three the representatives are determinant-one fiber-invisible cubic
+gauge lifts.  In every rank at least four, one common power shift on all
+higher decorations gives the representatives and separates them by Fitting
+Newton area.  Thus the result concerns arbitrary abstract finite etale
+algebras, not merely a Hilbert family or a specially selected polynomial.
 
-The rank-four assertion is proved in the
-[quartic trace-chord note](UNIVERSAL_QUARTIC_FIBER_MULTIPLICITY.md).
-The rest of this note gives the uniform quadratic-gauge argument.
+The rank-three assertion is proved in the
+[fiber-invisible cubic gauge note](UNIVERSAL_CUBIC_GAUGE_MULTIPLICITY.md).
+The uniform assertion in all ranks at least four is proved in the
+[all-degree power-shifted gauge note](UNIVERSAL_POWER_SHIFTED_GAUGE_MULTIPLICITY.md).
+Its first case is the
+[power-shifted quartic gauge note](UNIVERSAL_QUARTIC_GAUGE_MULTIPLICITY.md).
+The earlier
+[quartic trace-chord note](UNIVERSAL_QUARTIC_FIBER_MULTIPLICITY.md)
+gives a smaller-degree weighted family over number fields, and more
+generally whenever its trace quadric is isotropic.
+Sections 1--4 below retain the earlier translated minimal-diagonal argument
+for ranks at least five.  Sections 5--6 record the two low-rank discoveries.
 The complete failure-mode review is in the
 [adversarial audit](UNIVERSAL_MULTIPLICITY_ADVERSARIAL_AUDIT.md), and
 [three connected witness cards](UNIVERSAL_MULTIPLICITY_WITNESS_CARDS.md)
@@ -229,12 +236,12 @@ Thus infinitely many values of `I` in rank five, or `J_N` in ranks at least
 six, give infinitely many stable classes, all with the common complete
 fiber (2.3).
 
-## 5. Why rank four is different
+## 5. Rank four: the power-shifted gauge
 
-For quadratic-gauge maps of degree four the coarse stable coefficient
-quotient is a point, so no coefficient invariant can detect translation.
-The separate weighted construction turns the quartic presentation condition
-into the five-variable trace quadric
+For diagonal quadratic-gauge maps of degree four the coarse stable
+coefficient quotient is a point, so no coefficient invariant can detect
+translation.  The weighted construction turns its quartic presentation
+condition into the five-variable trace quadric
 
 \[
  \operatorname{Tr}(\eta^2)=2e^2+4u^2.
@@ -244,23 +251,94 @@ Over a number field this quadric is locally isotropic at every place:
 it is indefinite at every real place, automatic at complex places, and
 five-dimensional over nonarchimedean local fields of `u`-invariant four.
 Hasse--Minkowski supplies a `K`-point.  Rationality and weighted
-selected-root Torelli then produce infinitely many stable classes.
+selected-root Torelli then produce infinitely many stable classes of small
+weighted maps.
 
-Over a general characteristic-zero field, rank four remains conditional on
-isotropy of this trace-chord quadric.  This is a real obstruction to the
-method: over `K=Q((a))((b))`, the connected biquadratic quartic field has
-anisotropic trace-chord form.  In rank three the weighted, cancellation, and
-quadratic-gauge mechanisms all collapse to the foundational cubic class.
-Both sharp low-rank statements are proved in
-[the boundary note](LOW_RANK_MULTIPLICITY_BOUNDARIES.md).  No such
-restriction is needed for `N>=5`.
+Over a general characteristic-zero field the trace-chord quadric can be
+anisotropic.  The replacement mechanism keeps the selected quartic inverse
+polynomial fixed at `P=1` and changes its lift
 
-## 6. Exact regressions
+\[
+ g_4P^4S^4\longmapsto g_4P^{m+4}S^4,\qquad m\ge0.
+\]
+
+Every lift is a polynomial determinant-`-2` map of geometric degree four
+with the same complete fiber.  On the normalized ramified stratum its
+relative Fitting generator has Laurent support
+
+\[
+ \{(0,0),(1,2),(m+4,3)\}.
+\]
+
+The generated affine lattice has index `2m+5`, which is preserved by stable
+polynomial left--right equivalence.  These indices give infinitely many
+classes without a rational-point or trace-form hypothesis.
+
+More generally, applying one common extra power `P^m` to every decoration
+of degree at least four gives Fitting support
+
+\[
+ \{(0,0),(1,2)\}\cup
+ \{(j+m,j-1):4\le j\le N\}.
+\]
+
+Its Newton polygon has normalized area
+
+\[
+ 2N-3+(N-2)m.
+\]
+
+This strictly increasing stable invariant gives one mechanism for every
+rank `N>=4`; the quartic lattice index is its triangular first case.
+
+The weighted, cancellation, and minimal diagonal quadratic-gauge mechanisms
+still collapse in rank three, as proved in
+[the boundary note](LOW_RANK_MULTIPLICITY_BOUNDARIES.md).  The next section
+explains how changing the cubic lift escapes that scoped collapse.
+
+## 6. Rank three: fiber-invisible cubic lifts
+
+For a translated cubic
+
+\[
+ G(S)=g_1S+g_2S^2+g_3S^3,
+\]
+
+replace its minimal lift by
+
+\[
+ G_{P,n}(S)
+ =g_1S+g_2PS^2+
+   g_3P(1+P^{n-1}-P^2)S^3,\qquad n\ge4.
+\]
+
+At `P=1` the extra factor is one, so every map has the same selected
+inverse polynomial and the same complete cubic fiber.  The paired slope and
+intercept corrections remain polynomial and preserve determinant `-2`.
+
+The degree-drop polynomial
+
+\[
+ h_n(P)=1+P^{n-1}-P^2
+\]
+
+has exactly `n-1` simple nonzero geometric roots.  Over each root, two
+inverse sheets remain affine and one unramified sheet escapes to the
+canonical boundary.  Over `P=0`, the two `q=0` sheets and the `t=0` sheet
+are all affine.  The remaining boundary image is the irreducible ramified
+discriminant.  Hence the complete canonical boundary has exactly `n`
+geometric target components.  Stable normalization functoriality preserves
+this count, so different values of `n` give different stable classes.
+
+## 7. Exact regressions
 
 Run
 
 ```bash
 .venv/bin/python scripts/verify_universal_quartic_fiber_multiplicity.py
+.venv/bin/python scripts/verify_universal_quartic_gauge_multiplicity.py
+.venv/bin/python scripts/verify_universal_cubic_gauge_multiplicity.py
+.venv/bin/python scripts/verify_universal_power_shifted_gauge_multiplicity.py
 .venv/bin/python scripts/verify_universal_quintic_fiber_multiplicity.py
 .venv/bin/python scripts/verify_universal_higher_degree_fiber_multiplicity.py
 .venv/bin/python scripts/verify_universal_multiplicity_witness_cards.py

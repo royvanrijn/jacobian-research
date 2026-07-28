@@ -1,0 +1,36 @@
+{
+  "schema": "proof-carrying-arithmetic-specification/v1",
+  "name": "connected-cubic-stable-n7-regression",
+  "variable": "T",
+  "degree": 3,
+  "local_models": [
+    {
+      "prime": 2,
+      "precision": "automatic",
+      "coefficients_ascending": [-1, -1, 0, 1]
+    }
+  ],
+  "real_coefficient_intervals": [
+    ["-2", "0"],
+    ["-2", "0"],
+    ["-1", "1"]
+  ],
+  "irreducibility_witness_prime": 2,
+  "translation": 0,
+  "stable_parameter": 3,
+  "lean_module": "FiniteEtaleKeller.GeneratedArithmeticCubicStableN7",
+  "local_action_certificates": [
+    {
+      "kind": "frobenius_factorization",
+      "prime": 2,
+      "cycle_degrees": [3],
+      "description": "irreducible cubic reduction",
+      "factors": [
+        {
+          "coefficients_ascending": [-1, -1, 0, 1],
+          "witness": "irreducible_mod_p"
+        }
+      ]
+    }
+  ]
+}

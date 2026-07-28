@@ -58,6 +58,87 @@ theorem automaticRealizationGeometricDegree_eq
   rw [generalGaugeGeometricDegree_eq
     (realizationSeed P a) h₁ h₃ hseeddeg, hseed]
 
+/-- The automatically chosen seed has nonzero linear coefficient. -/
+theorem automaticRealizationSeed_linear_ne_zero
+    (P : K[X]) (hdeg : 3 ≤ P.natDegree) :
+    (realizationSeed P (chosenAdmissibleTranslation P hdeg)).coeff 1 ≠ 0 := by
+  simpa using chosenAdmissibleTranslation_linear_ne_zero P hdeg
+
+/-- The automatically chosen seed has nonzero cubic Hasse coefficient. -/
+theorem automaticRealizationSeed_cubic_ne_zero
+    (P : K[X]) (hdeg : 3 ≤ P.natDegree) :
+    (realizationSeed P (chosenAdmissibleTranslation P hdeg)).coeff 3 ≠ 0 := by
+  simpa using chosenAdmissibleTranslation_cubic_ne_zero P hdeg
+
+/-- Translation and removal of the constant term preserve the degree of the
+automatically chosen seed. -/
+theorem automaticRealizationSeed_natDegree
+    (P : K[X]) (hdeg : 3 ≤ P.natDegree) :
+    (realizationSeed P (chosenAdmissibleTranslation P hdeg)).natDegree =
+      P.natDegree :=
+  realizationSeed_natDegree P (chosenAdmissibleTranslation P hdeg) (by omega)
+
+/-- The canonical target presentation `K(Π,B)(C)` acts on the standard
+three-variable source fraction field through the coordinate pullback of the
+automatically chosen gauge map. -/
+@[instance_reducible]
+def automaticRealizationTargetFunctionFieldAlgebra
+    (P : K[X]) (hdeg : 3 ≤ P.natDegree) :
+    Algebra
+      (RatFunc (FractionRing (MvPolynomial (Fin 2) K)))
+      (FractionRing (MvPolynomial (Fin 3) K)) :=
+  (generalGaugeFullyGenericTargetHom
+    (realizationSeed P (chosenAdmissibleTranslation P hdeg))
+    (automaticRealizationSeed_linear_ne_zero P hdeg)
+    (automaticRealizationSeed_cubic_ne_zero P hdeg)).toRingHom.toAlgebra
+
+/-- Explicit standard-object comparison between the inverse-root extension
+and the source function field for the automatically chosen realization. -/
+def automaticRealizationFunctionFieldComparison
+    (P : K[X]) (hdeg : 3 ≤ P.natDegree) :
+    letI : Algebra
+        (RatFunc (FractionRing (MvPolynomial (Fin 2) K)))
+        (FractionRing (MvPolynomial (Fin 3) K)) :=
+      automaticRealizationTargetFunctionFieldAlgebra P hdeg
+    AdjoinRoot
+        (generalGaugeFullyGenericInversePolynomial
+          (realizationSeed P (chosenAdmissibleTranslation P hdeg))) ≃ₐ[
+      RatFunc (FractionRing (MvPolynomial (Fin 2) K))]
+        FractionRing (MvPolynomial (Fin 3) K) := by
+  letI : Algebra
+      (RatFunc (FractionRing (MvPolynomial (Fin 2) K)))
+      (FractionRing (MvPolynomial (Fin 3) K)) :=
+    automaticRealizationTargetFunctionFieldAlgebra P hdeg
+  exact generalGaugeFunctionFieldComparison
+    (realizationSeed P (chosenAdmissibleTranslation P hdeg))
+    (automaticRealizationSeed_linear_ne_zero P hdeg)
+    (automaticRealizationSeed_cubic_ne_zero P hdeg)
+    (by rw [automaticRealizationSeed_natDegree P hdeg]; exact hdeg)
+
+/-- Direct function-field degree theorem in Mathlib's standard
+`Module.finrank` and fraction-field objects.  The target algebra structure is
+the pullback by the three displayed gauge coordinates; the determinant-one
+output normalization is inverted by
+`automaticRealizationMap_targetDenormalization`. -/
+theorem automaticRealizationFunctionField_finrank
+    (P : K[X]) (hdeg : 3 ≤ P.natDegree) :
+    letI : Algebra
+        (RatFunc (FractionRing (MvPolynomial (Fin 2) K)))
+        (FractionRing (MvPolynomial (Fin 3) K)) :=
+      automaticRealizationTargetFunctionFieldAlgebra P hdeg
+    Module.finrank
+      (RatFunc (FractionRing (MvPolynomial (Fin 2) K)))
+      (FractionRing (MvPolynomial (Fin 3) K)) = P.natDegree := by
+  letI : Algebra
+      (RatFunc (FractionRing (MvPolynomial (Fin 2) K)))
+      (FractionRing (MvPolynomial (Fin 3) K)) :=
+    automaticRealizationTargetFunctionFieldAlgebra P hdeg
+  rw [← (automaticRealizationFunctionFieldComparison P hdeg).toLinearEquiv.finrank_eq]
+  rw [generalGaugeFullyGenericInverseAdjoinRoot_finrank
+    (realizationSeed P (chosenAdmissibleTranslation P hdeg))
+    (by rw [automaticRealizationSeed_natDegree P hdeg]; exact hdeg)]
+  exact automaticRealizationSeed_natDegree P hdeg
+
 /-- The determinant-one output normalization is explicitly inverted for
 every seed by rescaling its second target coordinate by `-2`. -/
 theorem generalGaugeJacobianOneMap_targetDenormalization
@@ -97,6 +178,14 @@ structure AutomaticPageOneCertificate
     jacobianDet (automaticRealizationMap P hdeg) = 1
   geometricDegree :
     automaticRealizationGeometricDegree P hdeg = P.natDegree
+  functionFieldFinrank :
+    letI : Algebra
+        (RatFunc (FractionRing (MvPolynomial (Fin 2) K)))
+        (FractionRing (MvPolynomial (Fin 3) K)) :=
+      automaticRealizationTargetFunctionFieldAlgebra P hdeg
+    Module.finrank
+      (RatFunc (FractionRing (MvPolynomial (Fin 2) K)))
+      (FractionRing (MvPolynomial (Fin 3) K)) = P.natDegree
   fiber :
     ∀ (A : Type*) [CommRing A] [Algebra K A],
       Nonempty
@@ -133,6 +222,8 @@ theorem automaticRealization_pageOne
     automaticRealizationMap_targetDenormalization P hdeg
   jacobian := automaticRealizationMap_jacobianDet P hdeg
   geometricDegree := automaticRealizationGeometricDegree_eq P hdeg
+  functionFieldFinrank :=
+    automaticRealizationFunctionField_finrank P hdeg
   fiber := fun A _ _ =>
     ⟨automaticJacobianOneFiberRepresentingEquiv (A := A) P hP hdeg⟩
   fiber_natural := fun f φ =>
@@ -145,6 +236,8 @@ theorem automaticRealization_pageOne
 #print axioms generalGaugeFunctionFieldComparison
 #print axioms generalGaugeGeometricDegree_eq
 #print axioms automaticRealizationGeometricDegree_eq
+#print axioms automaticRealizationFunctionFieldComparison
+#print axioms automaticRealizationFunctionField_finrank
 #print axioms generalGaugeJacobianOneMap_targetDenormalization
 #print axioms automaticRealizationMap_targetDenormalization
 #print axioms automaticRealization_pageOne

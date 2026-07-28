@@ -7,20 +7,24 @@ the function-field comparison
 \[
  K(x,y,z)=K(\Pi,B,C)(S).
 \]
-Together they prove that the distinguished literal fiber has rank equal to
-the actual geometric degree.
+Together they prove, over every field of characteristic different from
+\(2\), that the distinguished literal fiber has rank equal to the actual
+geometric degree whenever the separable presentation and admissible
+translation are supplied.
 
 This distinction also keeps the effectivity statement precise.  From a
-supplied squarefree presentation \(K[T]/(P)\) and admissible translation
+supplied separable presentation \(K[T]/(P)\) and admissible translation
 \(a\), all map coordinates, the target, and the fiber isomorphism are
 explicit and commute with scalar extension.  For an abstract finite \'etale
 algebra, monogenicity proves existence of such data but does not choose it
 canonically.
 
-The polynomial-presentation theorem, including the actual geometric degree,
-and its passage to abstract finite \'etale algebras are formalized in Lean.
+The characteristic-zero specialization of the polynomial-presentation
+theorem, including the actual geometric degree, and its passage to abstract
+finite \'etale algebras are formalized in Lean.
 Appendix~\ref{app:lean-correspondence} records the public endpoint
-declarations.  The rank-two exclusion is deliberately separate: it uses the
+declarations and the stronger hypotheses currently present in the formal
+files.  The rank-two exclusion is deliberately separate: it uses the
 classical Campbell--Razar--Wright Galois case rather than the formalized
 construction.
 

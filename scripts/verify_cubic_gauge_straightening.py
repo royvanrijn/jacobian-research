@@ -635,6 +635,123 @@ for homogeneous_degree in range(1, 9):
 assert graded_cokernel_dimensions == [0, 0, 0, 1, 0, 0, 0, 1]
 
 
+# On the invariant hyperplane C0=0, the upper binary-cubic action becomes a
+# three-variable Weitzenbock action.  Its second primitive invariant gives
+# exactly a linearly conjugated Nagata automorphism.
+gauge_u, gauge_v, gauge_w = sp.symbols("gauge_u gauge_v gauge_w")
+gauge_h = 4 * gauge_u * gauge_w - gauge_v**2
+gauge_map = (
+    gauge_u,
+    gauge_v + 2 * gauge_u * gauge_h,
+    gauge_w + gauge_v * gauge_h + gauge_u * gauge_h**2,
+)
+gauge_inverse = (
+    gauge_u,
+    gauge_v - 2 * gauge_u * gauge_h,
+    gauge_w - gauge_v * gauge_h + gauge_u * gauge_h**2,
+)
+
+assert sp.expand(gauge_h.subs(
+    dict(zip((gauge_u, gauge_v, gauge_w), gauge_map)),
+    simultaneous=True,
+) - gauge_h) == 0
+assert tuple(
+    sp.expand(expression.subs(
+        dict(zip((gauge_u, gauge_v, gauge_w), gauge_inverse)),
+        simultaneous=True,
+    ))
+    for expression in gauge_map
+) == (gauge_u, gauge_v, gauge_w)
+assert sp.factor(
+    sp.Matrix(gauge_map).jacobian((gauge_u, gauge_v, gauge_w)).det()
+) == 1
+assert tuple(
+    sp.Poly(expression, gauge_u, gauge_v, gauge_w).total_degree()
+    for expression in gauge_map
+) == (1, 3, 5)
+
+nagata_x, nagata_y, nagata_z = sp.symbols(
+    "nagata_x nagata_y nagata_z"
+)
+nagata_delta = nagata_y**2 + nagata_x * nagata_z
+nagata_parameter = sp.Integer(-4)
+nagata_map = (
+    nagata_x
+    + 2 * nagata_parameter * nagata_y * nagata_delta
+    - nagata_parameter**2 * nagata_z * nagata_delta**2,
+    nagata_y - nagata_parameter * nagata_z * nagata_delta,
+    nagata_z,
+)
+
+# L(u,v,w)=(-w,-v/2,u).  Thus L gamma L^{-1}=N_{-4}.
+gauge_in_standard_coordinates = tuple(
+    sp.expand(expression.subs(
+        {
+            gauge_u: nagata_z,
+            gauge_v: -2 * nagata_y,
+            gauge_w: -nagata_x,
+        },
+        simultaneous=True,
+    ))
+    for expression in gauge_map
+)
+linearly_conjugated_gauge = (
+    -gauge_in_standard_coordinates[2],
+    -gauge_in_standard_coordinates[1] / 2,
+    gauge_in_standard_coordinates[0],
+)
+assert tuple(map(sp.expand, linearly_conjugated_gauge)) == tuple(
+    map(sp.expand, nagata_map)
+)
+
+# For S_t(x,y,z)=(t^2*x,t*y,z), S_t^{-1} N_1 S_t=N_t.
+scaled_nagata_one = (
+    nagata_parameter**2 * nagata_x
+    + 2
+    * nagata_parameter
+    * nagata_y
+    * (nagata_parameter**2 * nagata_delta)
+    - nagata_z * (nagata_parameter**2 * nagata_delta) ** 2,
+    nagata_parameter * nagata_y
+    - nagata_z * (nagata_parameter**2 * nagata_delta),
+    nagata_z,
+)
+scaled_back_nagata_one = (
+    scaled_nagata_one[0] / nagata_parameter**2,
+    scaled_nagata_one[1] / nagata_parameter,
+    scaled_nagata_one[2],
+)
+assert tuple(map(sp.expand, scaled_back_nagata_one)) == tuple(
+    map(sp.expand, nagata_map)
+)
+
+# Swapping the first and third outputs after N_t gives the classical iterate
+# family.  The bounded exact regression supports the written all-s theorem
+# mdeg((T N_t)^s)=(4s-3,4s-1,4s+1).
+swapped_nagata = (nagata_map[2], nagata_map[1], nagata_map[0])
+swapped_nagata_power = (nagata_x, nagata_y, nagata_z)
+for iterate in range(1, 4):
+    swapped_nagata_power = tuple(
+        sp.expand(expression.subs(
+            dict(zip(
+                (nagata_x, nagata_y, nagata_z),
+                swapped_nagata_power,
+            )),
+            simultaneous=True,
+        ))
+        for expression in swapped_nagata
+    )
+    assert tuple(
+        sp.Poly(
+            expression,
+            nagata_x,
+            nagata_y,
+            nagata_z,
+        ).total_degree()
+        for expression in swapped_nagata_power
+    ) == (4 * iterate - 3, 4 * iterate - 1, 4 * iterate + 1)
+
+
 # The first genuinely nonlinear-looking test is
 # C1+t*A^2=1, corresponding to h=t*A/3 and q=1.  Its source is A^3:
 # start with the tangent slice, then add -t*c^2*S*L to Q.
@@ -703,6 +820,9 @@ print("PASS: the transported two-shear kernel criterion is exact")
 print("PASS: normalized linear times admit no alternating cancellation")
 print("PASS: 1,156 monomial pairs through degree three admit no cancellation")
 print("PASS: graded gauge cokernels occur only in discriminant degrees 4 and 8")
+print("PASS: the C0=0 invariant-time gauge is linearly conjugate to Nagata")
+print("PASS: the gauge-Nagata map has multidegree (1,3,5) and a polynomial inverse")
+print("PASS: three swapped gauge-Nagata iterates have degrees (4s-3,4s-1,4s+1)")
 print("PASS: C1=q-3*C0*h with h in ker(D_+) straightens to C1=q")
 print("PASS: the induced target change is a polynomial automorphism")
 print("PASS: the opposite invariant shear straightens the symmetric C2 slice")

@@ -76,6 +76,68 @@ def generalGaugeMap (G : K[X]) : Fin 3 → GaugePolynomial K :=
 def generalGaugeJacobianOneMap (G : K[X]) : Fin 3 → GaugePolynomial K :=
   scaleOutput 1 (-1 / 2 : K) 1 (generalGaugeMap G)
 
+/-- The second coordinate after applying a common power shift `m` to every
+decoration of degree at least four. -/
+def powerShiftedGaugeB (G : K[X]) (m : ℕ) : GaugePolynomial K :=
+  MvPolynomial.X 1 +
+    MvPolynomial.C (3 * (G.coeff 3 / G.coeff 1)) *
+      MvPolynomial.X 0 * generalGaugeQ G +
+    MvPolynomial.C (2 * (G.coeff 2 / G.coeff 1)) *
+      generalGaugeT * generalGaugeQ G +
+    ∑ k ∈ Finset.Icc 4 G.natDegree,
+      MvPolynomial.C ((k : K) * (G.coeff k / G.coeff 1)) *
+        generalGaugeT ^ (m + 2) * MvPolynomial.X 0 ^ (k - 2) *
+          generalGaugeQ G ^ (k + m)
+
+/-- The third coordinate after applying a common power shift `m` to every
+decoration of degree at least four. -/
+def powerShiftedGaugeC (G : K[X]) (m : ℕ) : GaugePolynomial K :=
+  MvPolynomial.X 0 * (MvPolynomial.C 5 - MvPolynomial.C 3 * generalGaugeT) -
+    MvPolynomial.C (G.coeff 3 / G.coeff 1) *
+      MvPolynomial.X 0 ^ 3 * MvPolynomial.X 2 -
+    ∑ k ∈ Finset.Icc 4 G.natDegree,
+      MvPolynomial.C (((k - 2 : ℕ) : K) * (G.coeff k / G.coeff 1)) *
+        generalGaugeT ^ m * MvPolynomial.X 0 ^ k *
+          generalGaugeQ G ^ (k + m)
+
+/-- The determinant-`-2` common power-shifted gauge map. -/
+def powerShiftedGaugeMap (G : K[X]) (m : ℕ) :
+    Fin 3 → GaugePolynomial K :=
+  ![generalGaugePi G, powerShiftedGaugeB G m, powerShiftedGaugeC G m]
+
+/-- The determinant-one normalization of the common power-shifted map. -/
+def powerShiftedGaugeJacobianOneMap (G : K[X]) (m : ℕ) :
+    Fin 3 → GaugePolynomial K :=
+  scaleOutput 1 (-1 / 2 : K) 1 (powerShiftedGaugeMap G m)
+
+/-- The cubic lift correction to the second coordinate.  The theorem uses
+`4 ≤ n`; the truncated powers keep the definition total for every natural
+number. -/
+def cubicLiftGaugeB (G : K[X]) (n : ℕ) : GaugePolynomial K :=
+  generalGaugeB G +
+    MvPolynomial.C (3 * (G.coeff 3 / G.coeff 1)) *
+      (generalGaugeT ^ (n - 1) * MvPolynomial.X 0 *
+          generalGaugeQ G ^ n -
+        generalGaugeT ^ 2 * MvPolynomial.X 0 * generalGaugeQ G ^ 3)
+
+/-- The cubic lift correction to the third coordinate. -/
+def cubicLiftGaugeC (G : K[X]) (n : ℕ) : GaugePolynomial K :=
+  generalGaugeC G -
+    MvPolynomial.C (G.coeff 3 / G.coeff 1) *
+      (generalGaugeT ^ (n - 3) * MvPolynomial.X 0 ^ 3 *
+          generalGaugeQ G ^ n -
+        MvPolynomial.X 0 ^ 3 * generalGaugeQ G ^ 3)
+
+/-- The determinant-`-2` fiber-invisible cubic lift. -/
+def cubicLiftGaugeMap (G : K[X]) (n : ℕ) :
+    Fin 3 → GaugePolynomial K :=
+  ![generalGaugePi G, cubicLiftGaugeB G n, cubicLiftGaugeC G n]
+
+/-- The determinant-one normalization of the cubic lift. -/
+def cubicLiftGaugeJacobianOneMap (G : K[X]) (n : ℕ) :
+    Fin 3 → GaugePolynomial K :=
+  scaleOutput 1 (-1 / 2 : K) 1 (cubicLiftGaugeMap G n)
+
 section Evaluation
 
 variable {A : Type*} [CommRing A] [Algebra K A]

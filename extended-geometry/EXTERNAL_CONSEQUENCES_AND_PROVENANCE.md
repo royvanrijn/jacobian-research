@@ -35,7 +35,7 @@ flowchart TD
     H42["42 variables: homogeneous quartic HN-VC fails"]
     C22["Separate circuit source: 22 variables"]
     HR37["44-variable quartic HN witness of Hessian rank 37"]
-    Q["Certified ledger: SIC 5 / unrestricted GVC 5 / Laplacian GVC 40 / homogeneous HN-VC 42 / HN rank 37"]
+    Q["Certified ledger: SIC 3 / unrestricted GVC 5 / Laplacian GVC 40 / homogeneous HN-VC 42 / HN rank 37"]
     E["Witness-specific data: named multiplier z_0, exact artifacts, inverse recurrence"]
     M["Motivation for Long's searches"]
     GP["Long's direct three-Gaussian polynomials"]
@@ -47,6 +47,7 @@ flowchart TD
     WH["Normalized weighted seed H"]
     WP["Repository pair P_(H,lambda), Q"]
     WG["not GMC(4)"]
+    I3["One-pair bihomogenization: not SIC(3)"]
 
     J -->|"logical consequence"| U
     J -->|"tracked BCW route"| B
@@ -78,6 +79,8 @@ flowchart TD
     XP -->|"Müger--Tuset lift"| SP
     WH -->|"local polynomial Good correction"| WP
     WP -->|"direct explicit witness family"| WG
+    WP -->|"H(z)=z and one-pair bihomogenization"| I3
+    I3 -.->|"quantitative ledger"| Q
     GP -.->|"Lagrange--Good architecture inspired"| WP
 ```
 
@@ -104,7 +107,9 @@ constructive consequences.  The separate Long--Dvorsky branch gives
 \(\neg\mathrm{SIC}(5)\) and unrestricted \(\neg\mathrm{GVC}(5)\) directly;
 it is not a consequence of the repository's collision route.  The
 third-order Dvorsky operator does not lower the ordinary-Laplacian endpoint.
-The node listing \(5/5/40/42/37\) is only the current certified witness
+The weighted-Gaussian branch now has a separate one-pair bihomogenization
+giving \(\neg\mathrm{SIC}(3)\).  The node listing \(3/5/40/42/37\) is only
+the current certified witness
 ledger: it is not a proof of minimality or a literature-wide record.
 Likewise, named multipliers, artifacts, and recurrences describe explicit
 realizations; they do not assert first discovery.  The 44-variable rank-37
@@ -122,6 +127,7 @@ are not entries in a single minimum problem.
 | Long | direct Gaussian polynomial | \(\neg\mathrm{GMC}(n)\), \(n\ge3\) | external |
 | Santibañez-Leal | cubic homogeneous, 24 variables | explicit HN quartic, 48 variables | external |
 | Repository | essential cubic, 21 variables | SIC/GVC/HN witnesses in 20/40/42 | internal |
+| Repository | \(H(z)=z\) weighted circular Gaussian bridge | explicit \(\neg\mathrm{SIC}(3)\) by one-pair bihomogenization | internal; [exact proof](THREE_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md) |
 | Long--Dvorsky | Long's \(SU(2)\) seed and Dvorsky's homogenization | explicit \(\neg\mathrm{GVC}(5)\) and \(\neg\mathrm{SIC}(5)\) | external; [exact local audit](DVORSKY_GVC5_COUNTEREXAMPLE.md) |
 
 In particular, Santibañez-Leal's
@@ -130,10 +136,11 @@ starts from a 24-variable cubic-homogeneous map and gives a 48-variable
 homogeneous Hessian-nilpotent quartic with an exact collision and
 Vanishing-Conjecture failure.  The repository's collision-derived
 \(20/40/42\) dimensions and rank \(37\) come from different optimized routes.
-The Dvorsky--Long formulas independently lower the certified SIC pair
-dimension to five and the unrestricted constant-coefficient GVC dimension to
-five, while leaving the ordinary-Laplacian and homogeneous HN entries at
-40 and 42.  The table therefore does not rank all five rows by a common
+The Dvorsky--Long formulas independently lower the unrestricted
+constant-coefficient GVC dimension to five.  The repository-derived
+bihomogenization lowers the certified SIC pair dimension further to three,
+while leaving the ordinary-Laplacian and homogeneous HN entries at 40 and
+42.  The table therefore does not rank all rows by a common
 notion of “smallest.”
 
 ## Christopher D. Long: Gaussian moments
@@ -461,7 +468,9 @@ JC(3) has generated two distinct bodies of work:
   counterexamples, Dvorsky's homogenized GVC(5)/SIC(5) lift of the `SU(2)`
   seed, and Long's tracked GMC(158) route, together with the repository's
   later shared-factor, rank-compressed, and constant-kernel improvement of
-  that route to GMC(42).
+  that route to GMC(42);
+- **repository-derived Gaussian lift:** the weighted circular Gaussian bridge
+  and its one-pair bihomogenization to the explicit SIC(3) witness.
 
 The existence of explicit consequence-level counterexamples supports studying
 the JC(3) map as a generator of new mathematics.  It does not make every

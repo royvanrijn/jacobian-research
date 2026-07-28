@@ -769,6 +769,49 @@ families, if they exist in this chart, must use cancellations between
 several coefficient terms rather than improving one monomial weight at a
 time.
 
+The minimality statement does not force equality `alpha=k`.  In degree four,
+every larger exponent
+
+\[
+ g_4P^4S^4\longmapsto g_4P^{m+4}S^4,\qquad m\ge0,
+\]
+
+is still polynomial and has the same selected inverse polynomial at `P=1`.
+The
+[power-shifted quartic theorem](../verified/UNIVERSAL_QUARTIC_GAUGE_MULTIPLICITY.md)
+shows that these nonminimal lifts are pairwise stably inequivalent, separated
+by Fitting-support lattice index `2m+5`.  Thus the extra exponent is genuine
+gauge-lift data, not seed-coefficient data.
+
+Uniformly in every degree `N>=4`, one may apply the same extra power to all
+higher decorations:
+
+\[
+ g_jP^jS^j\longmapsto g_jP^{j+m}S^j
+ \qquad(4\le j\le N).
+\]
+
+The
+[all-degree power-shifted theorem](../verified/UNIVERSAL_POWER_SHIFTED_GAUGE_MULTIPLICITY.md)
+separates these lifts by the normalized area
+`2N-3+(N-2)m` of the intrinsic Fitting Newton polygon.  The selected inverse
+polynomial at `P=1` remains fixed.
+
+In degree three the low cubic skeleton must remain present, but one may add
+a higher polynomial lift which vanishes at the selected target:
+
+\[
+ g_3PS^3\longmapsto
+ g_3P(1+P^{n-1}-P^2)S^3,\qquad n\ge4.
+\]
+
+The
+[fiber-invisible cubic theorem](../verified/UNIVERSAL_CUBIC_GAUGE_MULTIPLICITY.md)
+shows that the resulting maps retain the same complete cubic fiber and are
+separated by their growing canonical boundary-component counts.  This lies
+outside the minimal diagonal coefficient quotient and escapes the
+three-mechanism cubic collapse.
+
 ### The source jet is forced
 
 If (25) is replaced by
@@ -922,6 +965,10 @@ for `N>=5` the quotient is a torus of dimension `N-4`.  Thus the tempting
 but their dimensions are `N-3` and `N-4`, respectively.  The exact
 classification is proved in the
 [quadratic-gauge stable-moduli theorem](../verified/QUADRATIC_GAUGE_STABLE_MODULI.md).
+
+This quotient classifies the minimal diagonal lifts (21).  It does not
+identify the power-shifted quartic lifts above, whose exponent changes the
+intrinsic Laurent-support lattice.
 
 The comparison with the standard cancellation family is also complete.
 Although the stationary-point ladder is the `m=1` cancellation column, only

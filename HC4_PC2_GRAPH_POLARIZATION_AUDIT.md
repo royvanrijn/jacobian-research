@@ -1717,6 +1717,200 @@ Collision-conditioned degree-two and degree-three modular reductions in
 chart `0010` still reached the 120-second runtime bound; those timeouts are
 not mathematical evidence.
 
+### 9.7 The caustic recursion as a graded meromorphic jet module
+
+The uniform symbol above admits a useful logarithmic packaging, but one
+distinction is essential.  The order-raising derivatives are taken in the
+two image-normal variables \(c,d\), whereas \(L=0\) is a divisor in the
+tangential Cauchy-data plane \(a,b\).  Thus the verified recursion is a
+graded meromorphic jet module supported along \(L=0\); it is not yet a
+finite-rank logarithmic connection in the usual sense.
+
+Fix either \(X\)-caustic chart, fix polynomial tangential Cauchy data, and
+let \(R\) be the resulting tangential coefficient ring, localized away from
+the denominators declared nonzero on the branch.  At normal prolongation
+order \(r\), put \(n=r+2\) and write
+
+\[
+ t_n=(t_0,\ldots,t_n),\qquad
+ t_i=T(\underbrace{e_c,\ldots,e_c}_{n-i},
+       \underbrace{e_d,\ldots,e_d}_{i})
+\]
+
+for the new pure-normal symmetric \(n\)-tensor.  If
+
+\[
+ v_\epsilon(W)=\left(\alpha_\epsilon,
+       \frac43(2W+9b^2)\right),\qquad
+ \alpha_{0010}=1,\quad\alpha_{1000}=2,
+\]
+
+then the coefficient of the new tensor in the prolonged determinant
+equations is
+
+\[
+ \frac L2\,T(v_\epsilon(W),\ldots,v_\epsilon(W)).
+                                                        \tag{9.7.1}
+\]
+
+Let \(P_n=R[W]_{\le n}\), and identify it with \(R^{n+1}\) by coefficient
+extraction.  Equation (9.7.1) defines
+
+\[
+ \sigma_n=L M_n:\operatorname{Sym}^n(R^2)^*\longrightarrow P_n,
+\]
+
+where, in the displayed tensor basis and the basis \(1,W,\ldots,W^n\),
+
+\[
+ (M_n)_{ji}=
+ \begin{cases}
+ \displaystyle
+ \frac12\binom ni\alpha_\epsilon^{\,n-i}
+ \left(\frac43\right)^i
+ \binom ij2^j(9b^2)^{i-j},&j\le i,\\[6pt]
+ 0,&j>i.
+ \end{cases}                                           \tag{9.7.2}
+\]
+
+The matrix is triangular and
+
+\[
+ \det M_n=
+ 2^{-(n+1)}
+ \left(\prod_{i=0}^n\binom ni\right)
+ \alpha_\epsilon^{\,n(n+1)/2}
+ \left(\frac83\right)^{n(n+1)/2}\in k^\times.          \tag{9.7.3}
+\]
+
+Consequently \(M_n\) is unimodular over \(R\) at every order.  Before
+substituting previously solved rational jets, the full prolonged equation
+therefore has the exact form
+
+\[
+ \boxed{\quad L M_n t_n=\Psi_n(t_0,\ldots,t_{n-1})\quad}                 \tag{9.7.4}
+\]
+
+for a polynomial differential expression \(\Psi_n\) in lower normal jets
+and tangential derivatives.  Substitution of earlier solutions creates the
+higher visible powers of \(L^{-1}\); it does not change the single factor
+\(L\) in the new principal symbol.
+
+This gives a precise two-term normal-symbol complex
+
+\[
+ \mathcal C_n^\bullet=
+ \left[
+ \operatorname{Sym}^n(R^2)^*
+ \xrightarrow{\ L M_n\ }P_n
+ \right].
+\]
+
+If \(R\) is a domain and \(L\ne0\), then
+
+\[
+ H^0(\mathcal C_n^\bullet)=0,\qquad
+ H^1(\mathcal C_n^\bullet)\simeq (R/(L))^{n+1}.         \tag{9.7.5}
+\]
+
+After inverting \(L\), the complex is acyclic and (9.7.4) uniquely solves
+every new pure-normal jet.  This is the symbol-level reason that ordinary
+formal prolongation cannot obstruct the generic \(L\ne0\) branch.
+
+Now let \(p\) be a reduced irreducible component of \(L=0\), and work at
+its generic point.  Write \(L=u p^e\), with \(u\) a unit.  The obstruction
+to extending the \(n\)-th solved jet across \(p\) is not presently an
+endomorphism but the cokernel class
+
+\[
+ \rho_{p,n}=
+ \left[u^{-1}M_n^{-1}\Psi_n\right]
+ \in (R_{(p)}/p^e)^{n+1}.                             \tag{9.7.6}
+\]
+
+For a simple component, pole-free extension is equivalent to
+\(\rho_{p,n}=0\).  Once that class vanishes, successive coefficients in the
+\(p\)-adic filtration give higher residue conditions.  This recovers the
+componentwise calculations already found in chart `1000`:
+
+- at the normal-Hessian stage the three residue coordinates are, up to
+  units,
+  \[
+  A^2,\qquad AC,\qquad C^2-2f_{aa}\kappa,
+  \]
+  hence \(A=0\) and \(C^2=2f_{aa}\kappa\) at the generic point;
+- the four leading third-jet residues are the displayed
+  \(A^3B,A^2CB,AB(3C^2-2f_{aa}\kappa)\), and
+  \(CB(C^2-2f_{aa}\kappa)\), so they vanish on the actual
+  normal-Hessian branch;
+- the later conclusion \(p^2\mid A\) is a depth-two cancellation in this
+  \(p\)-adic residue filtration, not a new pointwise branch.
+
+This also identifies the exact Spencer statement currently proved.  The
+normal two-term symbol complex is acyclic off \(L=0\), while its only
+symbol cokernel is the \(L\)-torsion module (9.7.5).  The full Spencer
+complex, including tangential compatibility and all nonlinear syzygies,
+has not been computed.  The explicit first-prolongation identities verify
+the first nontrivial part of that larger complex but do not prove its
+finite generation.
+
+#### Why a residue operator and \(b\)-function are not yet available
+
+A logarithmic connection would require a finite-rank lattice
+\(\Lambda\) with an operator
+
+\[
+ \theta_p=p\partial_p,\qquad \theta_p\Lambda\subseteq\Lambda,
+\]
+
+whose reduction modulo \(p\) is a residue endomorphism.  The present
+recursion does not supply this object:
+
+1. raising normal degree is not the derivation \(\partial_p\);
+2. the rank of the new-jet space is \(n+1\), so it grows with \(n\);
+3. \(\Psi_n\) is nonlinear in lower jets.
+
+Accordingly there is currently no intrinsic residue spectrum, no notion of
+integral eigenvalue resonance, and no justified Bernstein--Sato polynomial
+for the nonlinear infinite jet recursion.  Calling (9.7.6) a residue
+*class* rather than a residue *operator* keeps this distinction explicit.
+
+A genuine \(V\)-filtration program can nevertheless be stated precisely.
+For each surviving formal branch, linearize the full differential ideal,
+form its Rees--Spencer module for the \(p\)-adic filtration, and prove:
+
+1. coherence (preferably holonomicity) and finite generation under normal
+   prolongation;
+2. regular singularity for \(\theta_p\), producing a finite-rank residue
+   operator and a Bernstein polynomial \(b_p(s)\);
+3. stabilization of the successive residue/colon ideals, so only finitely
+   many cancellation types occur;
+4. a separate normal-Euler or nilpotence criterion forcing the uniquely
+   solved normal tail either to terminate or to remain infinite.
+
+The fourth item is logically independent of extension across \(p=0\): a
+\(b\)-function can control poles without forcing a power series in \(c,d\)
+to be a polynomial.
+
+The resulting target statement is therefore recorded as a conjectural
+finite-generation theorem, not as a consequence of the present
+calculation:
+
+> **Caustic resonance/termination conjecture.** For each coordinate chart
+> and each reduced caustic component, the \(p\)-adic Rees--Spencer module of
+> the normal recursion is differentially finitely generated.  Its
+> pole-free locus has finitely many residue-cancellation strata, and on
+> every such stratum the unique normal solution either terminates by a
+> finite-order algebraic condition or has infinitely many nonzero normal
+> jets.
+
+If proved uniformly in the degree of the boundary data, this conjecture
+would give the desired conclusion: outside finitely many resonant
+cancellation types, formal solutions acquire a caustic pole or infinite
+normal degree.  Equations \(A=0\),
+\(C^2=2f_{aa}\kappa\), and \(p^2\mid A\) are the first three pieces of its
+candidate \(V\)-filtration.
+
 ## 10. Direct one-variable Schur ascent and descent
 
 The literal backward prescription has an immediate integrability gate.  For
@@ -2035,6 +2229,7 @@ Run:
 .venv/bin/python scripts/verify_hc4_1000_cubic_boundary_classification.py
 .venv/bin/python scripts/verify_hc4_1000_degenerate_cubic_branch.py
 .venv/bin/python scripts/verify_hc4_x_caustic_formal_compatibility.py
+.venv/bin/python scripts/verify_hc4_logarithmic_normal_symbol.py
 .venv/bin/python scripts/verify_hc4_1000_divisor_local_chain.py
 .venv/bin/python scripts/verify_hc4_1000_characteristic_line_normal_form.py
 .venv/bin/python scripts/verify_hc4_1000_noncharacteristic_line_normal_form.py

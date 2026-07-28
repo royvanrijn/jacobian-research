@@ -533,53 +533,849 @@ two-factor grouping in (6.2) hides a higher-contact three-component
 boundary package; realizing it polynomially would require a nontrivial
 resolution-aware construction.
 
+### 6.2. Resolution and the full numerator
+
+The coefficient order in (6.8) is only a first screen.  On the root
+incidence, \(T\) also vanishes above the cluster, so the divisorial order of
+the full numerator
+
+\[
+ {\cal N}(T)=3B_0p_0+B_0p_1T+p_2T^2-p_3T^3
+\]
+
+must be computed in the rank-four algebra.
+
+Four ordinary point blowups give an embedded resolution.  Blow up
+\((a,z)=(0,0)\), then the remaining common point in the \(a\)-chart.
+There are then two different unresolved points: the \(B_0/\rho\) contact
+and the corner through which the strict transform of \(\sigma\) passes.
+Blowing up both gives exceptional valuations
+
+\[
+\begin{aligned}
+ E_1&=(1,1),&E_2&=(1,2),&
+ E_3&=(1,3),&F&=(2,3)
+\end{aligned}
+\]
+
+in the coordinates \((a,z)\).  The exceptional chain is
+
+\[
+ E_1-F-E_2-E_3.
+\]
+
+The strict transform of \(\sigma\) meets \(F\), while those of \(B_0\) and
+\(\rho\) meet \(E_3\) at two distinct points.  Thus the reduced total
+boundary is simple normal crossings.  The complete exceptional parts of
+the two denominator divisors are
+
+\[
+\begin{aligned}
+\pi^*(B_0^2)
+ &=2\widetilde B_0+2E_1+4E_2+6E_3+6F,\\
+\pi^*(\rho\sigma)
+ &=\widetilde\rho+\widetilde\sigma
+   +3E_1+5E_2+6E_3+9F.                 \tag{6.10}
+\end{aligned}
+\]
+
+To transform \({\cal N}\), form its characteristic polynomial in the
+rank-four root algebra:
+
+\[
+ \operatorname{Res}_T(P_{\alpha,\beta}(T),X-{\cal N}(T)).
+\]
+
+Its Newton polygons give the following branchwise orders.  Multiplicity
+notation records the number of roots with the displayed order.
+
+| divisor | \(v(B_0^2)\) | \(v(\rho\sigma)\) | root orders of \({\cal N}\) | minimum residual pole of \({\cal J}^{-1}\) |
+|---|---:|---:|---:|---:|
+| \(E_1\) | 2 | 3 | \(6^1,4^3\) | \(0^1,1^3\) |
+| \(E_2\) | 4 | 5 | \(8^1,7^3\) | \(1^1,2^3\) |
+| \(E_3\) | 6 | 6 | \(9^4\) | \(3^4\) |
+| \(F\) | 6 | 9 | \(15^1,12^3\) | \(0^1,3^3\) |
+
+Here the residual pole is
+
+\[
+ \delta_D=\max\{v_D(B_0^2)+v_D(\rho\sigma)-v_D({\cal N}),0\}. \tag{6.11}
+\]
+
+The strict transforms add three further facts.  Along \(B_0\), every
+target-normalized numerator order is \(3/2\); after the ramified root
+normalization this leaves one integral mask order on every branch.  Along
+\(\rho\), the orders are \(1,0,0,0\), so three branches retain one mask
+order.  Along \(\sigma\), all four orders are one, so the full numerator
+cancels \(\widetilde\sigma\) divisorially.  This last statement does not
+contradict the coefficient gcd test: regularity on the normalized
+incidence need not imply membership in the original nonnormal polynomial
+root algebra.
+
+The two-mask allocation is now an exact interval problem.  At a resolved
+branch write
+
+\[
+ d_1=v(B_0^2),\qquad d_2=v(\rho\sigma),\qquad
+ n=v({\cal N}).
+\]
+
+If \(x\) numerator orders are assigned to the first coordinate, the
+remaining source-mask orders are
+
+\[
+ m_1=d_1-x,\qquad m_2=d_2-(n-x).                     \tag{6.12}
+\]
+
+For \(n<d_1+d_2\), every minimal allocation lies in
+
+\[
+ \max(0,n-d_2)\leq x\leq\min(n,d_1)
+\]
+
+and satisfies \(m_1+m_2=d_1+d_2-n=\delta_D\).  Thus the table solves the
+divisorial allocation problem, but also proves that no allocation removes
+all residual masks.  A convenient local choice assigns enough of
+\({\cal N}\) to cancel \(d_2\) on every exceptional chart; all exceptional
+residual orders then lie in the first mask.  The strict \(B_0\) order is
+also forced into the first mask, while the three uncancelled \(\rho\)
+branches are forced into the second.
+
+This gives a first contraction screen.  The residual orders differ among
+root branches over the same \(E_1,E_2\), and \(F\).  Consequently they
+cannot be supplied by monomials pulled back from the resolved target.  A
+polynomial contraction would have to construct root-dependent principal
+Cartier masks on the normalized incidence, prove that they glue across the
+four charts, and only then contract the exceptional chain.  No such
+principal masks are constructed here.
+
+### 6.3. The forced \(\rho\)-selector and polynomial-descent obstruction
+
+The branch-dependent part of the second mask has a compact equation.
+Reduction of the quartic modulo \(\rho\) gives
+
+\[
+ \boxed{
+ P_{\alpha,\beta}(T)\equiv
+ (T-3a^3)(T+a^3)^3\pmod{\rho}.}                     \tag{6.13}
+\]
+
+Thus
+
+\[
+ G=T+a^3                                               \tag{6.14}
+\]
+
+is the reduced equation of the ramified triple component over
+\(\rho=0\), while \(T-3a^3\) gives the simple component.  The full
+numerator distinguishes the two in the required direction:
+
+\[
+\begin{aligned}
+ {\cal N}(3a^3)&\equiv0\pmod\rho,\\
+ {\cal N}(-a^3)&\equiv144a^9(2\beta+3)\pmod\rho.
+                                                               \tag{6.15}
+\end{aligned}
+\]
+
+Consequently the chart unit is regular on the simple component and has its
+uncancelled strict-\(\rho\) pole on the triple component.
+
+The characteristic polynomial of \(G\) gives uniform exceptional orders
+
+\[
+\begin{array}{c|cccc}
+ &E_1&E_2&E_3&F\\ \hline
+ v(G)&1&2&3&3 .
+\end{array}                                             \tag{6.16}
+\]
+
+On strict \(\rho\), its target-normalized root orders are
+\((1/3,1/3,1/3,0)\); after normalization of the ramified component these
+become one on the triple branch and zero on the simple branch.  Hence the
+strict triple component is Cartier on the resolved charts.  Its local
+equations are obtained from \(G\) by removing the exceptional factors:
+
+\[
+ \frac Ga,\qquad \frac G{a^2},\qquad
+ \frac G{a^3},\qquad \frac G{u^3}                    \tag{6.17}
+\]
+
+on the \(E_1,E_2,E_3,F\) charts, respectively.
+
+These quotients do not descend to the original polynomial root algebra.
+Indeed, in
+
+\[
+ {\cal R}=\mathbb Q[\alpha,\beta,T]/(P_{\alpha,\beta}),
+\]
+
+the height-one prime of the triple component is
+
+\[
+ {\mathfrak p}_3=(\rho,T+a^3).
+\]
+
+It lies inside the cluster maximal ideal
+
+\[
+ {\mathfrak m}=(a,\rho,T).                            \tag{6.18}
+\]
+
+Every polynomial element vanishing on the forced triple component
+therefore vanishes at the cluster.  Since \(a,\rho,T\) all have positive
+order on every branch above the first exceptional divisor, such an element
+has positive order on all four \(E_1\)-branches.
+
+This contradicts the exact residual vector
+
+\[
+ \delta_{E_1}=(0,1,1,1).
+\]
+
+Indeed, if two regular polynomial masks had the required total divisor,
+their product would vanish on \({\mathfrak p}_3\), hence lie in
+\({\mathfrak m}\), but its order on the distinguished \(E_1\)-branch would
+have to be zero.  Therefore
+
+\[
+\boxed{
+\text{no two masks in the original polynomial root algebra realize the
+exact resolved residual divisor.}}                    \tag{6.19}
+\]
+
+This is an all-degree local obstruction to direct polynomial descent.  It
+does not exclude a genuinely new affine modification whose coordinate ring
+adjoins the exceptional quotients in (6.17).
+
+### 6.4. The forced affine-modification chain
+
+The exceptional quotients can be followed exactly.  First adjoin
+
+\[
+ q=\frac{T+a^3}{a^3}.
+\]
+
+After eliminating \(T=a^3(q-1)\), this gives one affine hypersurface.
+On \(a=0\), its equation is a unit times
+
+\[
+ (c^2+27)^4,\qquad c=2\beta+3.
+\]
+
+Thus \(a=0,\ c^2+27=0\), with \(q\) arbitrary, is a
+codimension-one singular cylinder.  The direct affine-modification ring
+fails \(R_1\), is nonnormal, and cannot be a polynomial ring.
+
+The first integral correction is forced:
+
+\[
+ w=\frac{\rho}{a^3}.                                  \tag{6.20}
+\]
+
+Using \(c^2+27=4a^3w\), substituting
+\(T=a^3(q-1)\), and dividing the exact total order \(a^{12}\) gives the
+\(E_3\) strict-transform complete intersection.  It still has the two
+conjugate singular points
+
+\[
+ a=0,\qquad q=1,\qquad 27w=c,\qquad c^2+27=0.         \tag{6.21}
+\]
+
+The other end of the fan is equally explicit.  On the \(F\)-chart put
+
+\[
+ a=u^2k,\qquad \rho=u^3k,\qquad
+ T=u^3r-u^6k^3,
+\]
+
+so that \(G=T+a^3=u^3r\).  If \(F_F\) denotes the strict-transform
+equation after division by its exact total order \(u^{12}\), then on the
+exceptional divisor
+
+\[
+\boxed{
+8F_F\big|_{u=0}
+=
+\bigl(2r-(27-3c)k\bigr)
+\bigl(2r-(c-9)k\bigr)^3.}                            \tag{6.22}
+\]
+
+Hence the exceptional fiber is one simple line plus one triple line.  The
+total affine surface is singular along the generic point of the triple
+line, again violating \(R_1\).  Its next integral quotient is forced by the
+Newton edge:
+
+\[
+ s=\frac{2r-(c-9)k}{u}.                               \tag{6.23}
+\]
+
+After adjoining \(s\) and dividing the exact new total order \(u^3\), the
+resulting chart is still singular at
+
+\[
+ u=k=s=0,\qquad c^2+27=0.
+\]
+
+This is the adjacent fan center.  Repeating the process does not produce
+one smooth affine chart; it reconstructs the neighboring charts of the
+four-blowup resolution.
+
+There are therefore two endpoints to the canonical construction:
+
+- retaining one affine quotient chart leaves a nonnormal or singular
+  surface;
+- adjoining every chart gives the smooth resolution with exceptional
+  chain
+  \[
+  E_1-F-E_2-E_3.
+  \]
+
+In that chain the self-intersections are \((-3,-1,-3,-1)\), and its
+intersection matrix has leading principal minors
+
+\[
+ -3,\quad2,\quad-3,\quad1.
+\]
+
+It is negative definite and contracts back to the cluster, but the smooth
+resolution contains complete exceptional curves and is not affine.
+Moreover, proper birational descent over the normal root incidence gives
+no new global regular functions, so the local Cartier quotients do not
+become global polynomial masks on the full resolution.
+
 This is the final conclusion of the present construction:
 
 \[
 \boxed{
 \begin{gathered}
-\text{the correct unit has an exact two-mask localized realization,}\\
-\text{but all three target boundary components remain genuine.}
+\text{the affine exceptional-quotient charts are singular or nonnormal,}\\
+\text{while the smooth full-chain modification is nonaffine.}
 \end{gathered}}
-                                                               \tag{6.9}
+                                                               \tag{6.24}
 \]
 
-A polynomial counterexample would therefore require an affine source
-modification in which the two source masks vanish with divisors
-\(B_0^2\) and \(\rho\sigma\), respectively.  Constructing that modification
-is additional geometry, not another quotient-ring syzygy.
+A polynomial counterexample cannot arise from the complete Rees/affine
+modification dictated by (6.17).  A surviving model would have to remove a
+codimension-one divisor from the resolved space, thereby introducing a new
+boundary component which is absent from the current determinant ledger.
 
-## 7. Structured next search
+### 6.5. A corrected exceptional selector and exact rational masks
 
-The next calculation should no longer vary arbitrary shears of the cone.
-Work in the basis \(1,T,T^2,T^3\) of
+The deletion requirement can be used constructively.  On the first
+exceptional chart put
 
 \[
-\mathbb Q[\alpha,\beta,T]/(P_{\alpha,\beta})
+ z=ay,\qquad T=at.
 \]
 
-and write two general incidence coordinates
+Modulo \(c^2+27=0\), the exceptional quartic factors exactly as
+
+\[
+ \bigl(2t-(27-3c)y\bigr)
+ \bigl(2t-(c-9)y\bigr)^3.                            \tag{6.25}
+\]
+
+Thus \(H=2T-(27-3c)\rho\) selects the simple exceptional branch.  Its
+order on that branch is still one too small at \(F\).  Expanding the simple
+\(F\)-branch one order further gives the first correction
+
+\[
+\boxed{
+ \widehat H
+ =
+ 4c\bigl(2T-(27-3c)\rho\bigr)
+ -27(c-9)a\rho.}                                    \tag{6.26}
+\]
+
+The characteristic polynomial of \(\widehat H\) has branch orders
+
+\[
+\begin{array}{c|cccc}
+ &E_1&E_2&E_3&F\\ \hline
+ v(\widehat H)
+ &(2,1,1,1)&(3,2,2,2)&(3,3,3,3)&(6,3,3,3).
+\end{array}                                          \tag{6.27}
+\]
+
+Since \(T\) and \(G=T+a^3\) both have uniform exceptional orders
+\((1,2,3,3)\), subtraction of (6.27) gives
+
+\[
+\boxed{
+ M=\frac{T(T+a^3)}{\widehat H}}                      \tag{6.28}
+\]
+
+with exceptional orders
+
+\[
+\begin{array}{c|cccc}
+ &E_1&E_2&E_3&F\\ \hline
+ v(M)
+ &(0,1,1,1)&(1,2,2,2)&(3,3,3,3)&(0,3,3,3).
+\end{array}
+\]
+
+These are exactly the residual orders in (6.11), including the previously
+missing simple-\(F\) cancellation.  Along the strict transforms, \(T\) has
+target-normalized order \(1/2\) on all four \(B_0\)-branches, \(G\) has
+order \(1/3\) on the three ramified \(\rho\)-branches, and
+\(\widehat H\) is a unit on \(B_0,\rho,\sigma\).  After root normalization,
+(6.28) therefore has exactly the complete residual mask divisor.
+
+There is also an exact two-factor allocation:
+
+\[
+\boxed{
+ M_1=\frac{B_0T}{\widehat H},\qquad
+ M_2=\frac{T+a^3}{B_0}.}                             \tag{6.29}
+\]
+
+On every exceptional branch, \(M_1\) has the full residual vector and
+\(M_2\) has order zero.  Both are regular after deleting the strict
+divisors \(B_0=0\) and \(\widehat H=0\).  Thus the earlier obstruction has
+identified, rather than merely demanded, a new boundary divisor.
+
+The norm
+
+\[
+ h(a,\beta)=\operatorname{Res}_T(P,\widehat H)
+\]
+
+is irreducible of total degree \(16\) over \(\mathbb Q\).  Its exceptional
+multiplicities in chain order \(E_1,F,E_2,E_3\) are
+\((5,15,9,12)\), so its strict transform meets \(F\) once and \(E_3\)
+three times.  On the resolved coefficient plane, the four classes
+
+\[
+ F,\quad E_3,\quad\widetilde B_0,\quad\widetilde h
+\]
+
+form a unimodular basis of the relative Picard lattice.  Moreover,
+
+\[
+ F+E_3+\widetilde B_0+2\widetilde h
+\]
+
+has intersections \((1,1,2,6)\) with \(E_1,F,E_2,E_3\).  Hence this
+four-divisor deletion passes the coarse relative unit, class-group, and
+ampleness screens.
+
+This is a candidate, not an affine-space theorem.  The class calculation
+uses the norm divisor on the resolved coefficient plane.  The next
+required step is to normalize the root incidence over this deletion,
+compute its full divisor-class exact sequence, and identify its coordinate
+ring.  Unimodularity downstairs does not by itself prove that the
+normalized open is factorial or isomorphic to affine space.
+
+### 6.6. Normalized-incidence class obstruction
+
+The upstairs divisor count is decisive.  On both retained exceptional
+divisors \(E_1\) and \(E_2\), the exceptional quartic has the factorization
+in (6.25).  Centering the triple line gives coefficient orders
+
+\[
+ (1,1,1,0,0)
+\]
+
+in powers \(0,1,2,3,4\) of the shifted root coordinate.  Its lower Newton
+edge has slope \(-1/3\).  Consequently the normalization has a simple
+exceptional prime and a distinct triple exceptional prime above each of
+\(E_1,E_2\).  The proposed open therefore retains at least four prime
+exceptional curves.
+
+The two horizontal deletions do not split enough to remove those four
+class directions.  Along strict \(B_0\), all four roots have
+target-normalized order \(1/2\).  After writing \(T=B_0^{1/2}U\), the
+residual polynomial is
+
+\[
+ (U^2-3A_0)^2.
+\]
+
+The quadratic is irreducible over the function field of \(B_0\).  Indeed,
+locally
+
+\[
+ B_0=a^3+(c-3a)z,\qquad A_0=a^3-(\beta+6)z,
+\]
+
+and on the normalization of \(B_0\)
+
+\[
+ A_0
+ =a^3\frac{c-3a+\beta+6}{c-3a}.
+\]
+
+Its leading coefficient \(3(\beta+3)/c\) is a unit along \(\rho=0\), so
+\(A_0\) has odd order three and is not a square.  The residue degree and
+ramification degree are both two, exhausting the quartic degree.  Thus
+strict \(B_0\) has one prime upstairs.  Likewise \(\widehat H\) is linear
+in \(T\), with generic leading coefficient \(8c\), and its norm is
+irreducible; hence it supplies one prime.
+
+Pass to any smooth resolution of the normalized pullback.  Exceptional
+curves over a normal surface point have negative-definite intersection
+matrix and independent relative divisor classes.  Components deleted over
+\(F,E_3\) remove at most their own class directions.  Any additional
+resolution curve lying inside the deleted boundary adds one class and one
+deleted component simultaneously.  After those cancellations, four
+independent retained exceptional directions remain, while the strict
+\(B_0,\widehat H\) divisors can kill at most two.  The divisor exact
+sequence therefore gives
+
+\[
+\boxed{
+ \operatorname{rank}\operatorname{Cl}(U)\geq2,
+}                                                     \tag{6.30}
+\]
+
+for the normalized open \(U\) defined by the proposed four-divisor
+deletion.  In particular,
+
+\[
+\boxed{
+ U\not\cong\mathbb A^2,\qquad
+ U\times\mathbb A^m\not\cong\mathbb A^{m+2}.
+}                                                     \tag{6.31}
+\]
+
+Thus (6.28)--(6.29) solve the mask divisor exactly but do not produce an
+affine-space source.  The corrected deletion candidate is closed.  Within
+this resolved model, any further affine-space attempt must delete at least
+two additional horizontal prime divisors, or replace the model so that the
+simple/triple components over \(E_1,E_2\) are not retained.  Either choice
+changes the determinant ledger again.
+
+### 6.7. The normalized cluster and the index-two terminal obstruction
+
+The normalized exceptional divisor can be computed completely.  In chain
+order
+
+\[
+ S_1-F_s-S_2-Q-R_2-F_t-R_1,
+\]
+
+where \(S_i,R_i\) are the simple and triple components over \(E_i\), its
+self-intersections are
+
+\[
+ (-3,-1,-3,-4,-1,-3,-1).                           \tag{6.32}
+\]
+
+The determinant of this chain is \(-4\), and its Smith form is
+
+\[
+ \operatorname{diag}(1,1,1,1,1,1,4).
+\]
+
+Blowing down, in order, \(R_1,R_2,F_t,F_s\), leaves
+
+\[
+ \begin{pmatrix}
+ -2&1&0\\
+ 1&-2&1\\
+ 0&1&-2
+ \end{pmatrix}.                                     \tag{6.33}
+\]
+
+Thus the cluster is an \(A_3\) rational double point and its local
+discriminant group is cyclic of order four.  This also explains why
+horizontal components cannot be assigned classes by looking at only one
+factor of a principal divisor.  For example,
+
+\[
+ \operatorname{Norm}(T+a^3)=\rho\,q_{10},
+\]
+
+where \(q_{10}\) is irreducible of degree ten and also passes through the
+cluster.
+
+An explicit curvette identifies an odd generator.  Put
+
+\[
+ \chi=16a^2-8a\beta-12a+\rho
+      =16a^2-4ac+\rho
+\]
+
+and
 
 \[
 \begin{aligned}
-X&=x_0(\alpha,\beta,T)+Qx_1(\alpha,\beta,T),\\
-Y&=y_0(\alpha,\beta,T)+Qy_1(\alpha,\beta,T).
+ L_\chi={}&(32a+9-4c)T-13311a^3\\
+ &+(2241c-567)a^2+(162c-7290)a .
 \end{aligned}
 \]
 
-Reduction modulo \(P\) turns every condition into four coefficient
-equations.  A bounded search must impose simultaneously:
+On the first blowup, the strict transform of \(\chi\) meets \(E_1\) at
+\(y=4c\).  The exceptional transform of \(L_\chi/a\) is
 
-1. the relative Jacobian equals the derivative unit;
-2. two specified source masks make \(X,Y\) polynomial;
-3. the power-basis determinant is nonzero, so \(T\) is recoverable;
-4. elimination recovers the intended \(P_{\alpha,\beta}(T)\), not merely
-   an unrelated quartic primitive.
+\[
+ -4ct+162c+9t-7290.
+\]
 
-The canonical pair (3.2) is a base point for that system.  Equation (4.3)
-identifies the first divisor that a nontriangular deformation must move.
-This is a finite free-algebra syzygy problem; it is not another search over
-ambient cone automorphisms.
+It vanishes on the simple root in (6.25) and takes the nonzero value
+\(216(c-45)\) on the triple root.  Moreover,
+
+\[
+ \operatorname{Norm}(L_\chi)=\chi\,q_{14},
+\]
+
+with \(q_{14}\) irreducible of degree fourteen and coprime to \(\chi\).
+The \(\chi\)-component is therefore a curvette of \(S_1\) and represents
+an odd generator of the order-four discriminant group.
+
+Let \(\Lambda^\vee\) be the full rank-seven local divisor lattice.  In the
+exceptional coordinates of (6.32), it has basis
+
+\[
+ e_0,e_1,\ldots,e_5,\quad
+ q=\left(\frac34,\frac54,\frac12,\frac14,
+          \frac12,\frac14,\frac14\right).
+                                                               \tag{6.34}
+\]
+
+The normalized exceptional valuations of \(B_0\) and \(\widehat H\) are
+
+\[
+\begin{aligned}
+ b&=(1,3,2,3,6,3,3),\\
+ h&=(2,6,3,3,6,3,3).
+\end{aligned}
+\]
+
+Strict \(B_0\) has ramification multiplicity two, while strict
+\(\widehat H\) has multiplicity one.  Their prime classes are consequently
+\(-b/2\) and \(-h\).  In the basis (6.34), these are
+
+\[
+\begin{aligned}
+ [D_B]&=(4,6,2,0,0,0,-6),\\
+ [D_{\widehat H}]&=(7,9,3,0,0,0,-12).               \tag{6.35}
+\end{aligned}
+\]
+
+Already the coordinate gcd of \([D_B]\) is two:
+
+\[
+ [D_B]=2(2,3,1,0,0,0,-3).                           \tag{6.36}
+\]
+
+Thus this irreducible boundary prime is nonprimitive and cannot occur in
+any basis of \(\Lambda^\vee\).  Consistently, the gcd of all
+\(2\times2\) minors of the matrix formed by the two classes in (6.35) is
+also exactly two.
+
+This closes the proposed boundary-enlargement repair, not just the original
+four-divisor choice.  In the local divisor exact sequence, simultaneous
+triviality of boundary units and of the relative class group requires the
+boundary-class map to be an isomorphism.  Its columns would form a basis
+and would include the forced strict \(B_0\) class, which is impossible.
+Equivalently, every rank-seven boundary matrix containing this column has
+even determinant.  Therefore
+
+\[
+\boxed{
+\text{no resolved boundary enlargement retaining the exact masks
+\(B_0,\widehat H\) passes the affine-space unit/class test.}
+}                                                     \tag{6.37}
+\]
+
+The obstruction is the order-two quotient inside the \(A_3\)
+discriminant lattice.  Adding simple- or triple-branch selectors cannot
+remove it; the defect already belongs to the forced strict \(B_0\) prime.
+A continuation must change the exact mask presentation so that \(B_0\)
+is no longer a boundary prime.
+
+### 6.8. A \(B_0\)-free curvette split
+
+The odd curvette above provides exactly such a change.  The same total mask
+(6.28) factors as
+
+\[
+\boxed{
+ M_1^\chi=\frac{T L_\chi}{\widehat H},\qquad
+ M_2^\chi=\frac{T+a^3}{L_\chi}.
+}                                                     \tag{6.38}
+\]
+
+The characteristic root orders of \(L_\chi\) are
+
+\[
+\begin{array}{c|cccc}
+ &E_1&E_2&E_3&F\\ \hline
+ v(L_\chi)&(1,1,1,1)&(1,1,1,1)&(1,1,1,1)&(2,2,2,2).
+\end{array}
+\]
+
+In the normalized seven-curve order (6.32), this is
+
+\[
+ \ell=(1,2,1,1,3,2,3).
+\]
+
+Using \(t=(1,3,2,3,6,3,3)\) for the normalized orders of both
+\(T\) and \(T+a^3\), the two masks in (6.38) have exceptional orders
+
+\[
+\begin{aligned}
+ v(M_1^\chi)&=t+\ell-h=(0,-1,0,1,3,2,3),\\
+ v(M_2^\chi)&=t-\ell=(0,1,1,2,3,1,0).               \tag{6.39}
+\end{aligned}
+\]
+
+Thus the only exceptional pole is the simple \(F\)-component \(F_s\).
+The horizontal poles are the strict \(\widehat H\) divisor and the two
+components
+
+\[
+ D_\chi,\qquad D_{14}
+\]
+
+of \(\operatorname{Norm}(L_\chi)=\chi q_{14}\).  Exact gcd calculations
+show that neither denominator shares a horizontal component with its
+numerator.  In particular, strict \(B_0\) is absent.
+
+The two curvette classes are
+
+\[
+\begin{aligned}
+ [D_\chi]&=(0,0,0,0,0,0,-1),\\
+ [D_{14}]&=(8,13,5,2,3,1,-11)
+\end{aligned}
+\]
+
+in the basis (6.34).  They meet \(S_1\) and \(R_1\), respectively.
+The four forced classes
+
+\[
+ F_s,\quad D_{\widehat H},\quad D_\chi,\quad D_{14}
+\]
+
+span a primitive rank-four sublattice.  Among completions by three
+exceptional primes, the unique unimodular completion is
+
+\[
+\boxed{
+ F_s,\ R_2,\ F_t,\ R_1,\
+ D_{\widehat H},\ D_\chi,\ D_{14}.
+}                                                     \tag{6.40}
+\]
+
+This support also passes the positivity test.  The effective divisor
+
+\[
+ F_s+R_2+2F_t+6R_1
+ +2D_{\widehat H}+D_\chi+5D_{14}
+\]
+
+has intersections
+
+\[
+ (2,1,1,7,1,1,1)
+\]
+
+with \(S_1,F_s,S_2,Q,R_2,F_t,R_1\).  Therefore the \(B_0\)-free
+curvette split passes the full normalized local unit, class, and relative
+ampleness screens.
+
+This is the first resolved candidate to survive those three tests.  It is
+not yet an affine-space identification or a polynomial Keller map.  The
+remaining issue is now concrete: construct the affine complement of
+(6.40), calculate its coordinate ring, decide whether it is
+\(\mathbb A^2\), and express both quotients in (6.38) in those coordinates.
+
+### 6.9. Positive-genus boundary obstruction
+
+The horizontal boundary settles that question without a full presentation
+of the coordinate ring.  Since \(\widehat H\) is linear in \(T\), its
+prime divisor on the root incidence is birational to its coefficient-plane
+norm curve
+
+\[
+ h(a,b)=\operatorname{Res}_T(P,\widehat H)=0.
+\]
+
+Section 6.5 already proves that \(h\) is irreducible of degree sixteen.
+Exact normalization of its projective closure gives
+
+\[
+\boxed{g(\widetilde{V(h)})=13.}                     \tag{6.41}
+\]
+
+Thus \(D_{\widehat H}\) is a positive-genus boundary component of the
+smooth resolved complement (6.40).
+
+The other nonlinear horizontal prime independently fails the same test.
+The selector \(L_\chi\) is also linear in \(T\), so \(D_{14}\) is
+birational to its coefficient-plane norm component.  Exact division and
+normalization give
+
+\[
+ \operatorname {Norm}(L_\chi)=\chi q_{14},\qquad
+ \deg q_{14}=14,\qquad
+ \boxed{g(\widetilde{V(q_{14})})=20.}                \tag{6.42}
+\]
+
+This is incompatible with an affine plane.  Indeed, suppose that the
+complement were isomorphic to \(\mathbb A^2\).  Complete the resolved
+surface smoothly and compare it with
+\(\mathbb P^2\supset\mathbb A^2\).  A common resolution of the induced
+birational map is obtained by blowing up boundary points.  The strict
+transform of \(D_{\widehat H}\) still has genus thirteen.  Under the
+birational morphism to \(\mathbb P^2\), it must either:
+
+- map birationally onto the line at infinity, which would force genus zero;
+  or
+- be exceptional, whereas every exceptional component of a birational
+  morphism between smooth surfaces is rational.
+
+Both alternatives are impossible.  Therefore
+
+\[
+\boxed{
+ U_\chi\not\cong\mathbb A^2.
+}                                                     \tag{6.43}
+\]
+
+The finite-field behavior provides an independent diagnostic: at good
+primes where \(\rho=0\) has no rational cluster point, the resolved open
+has the same rational points as the root incidence with
+\(\widehat H L_\chi\ne0\), and its counts already differ from \(p^2\).
+Those counts are evidence only; either genus computation and the completion
+argument prove (6.43) in characteristic zero.
+
+Consequently the corrected total mask (6.28) is closed, not merely its
+first factorization.  Every factorization retains the genuine strict
+\(\widehat H\) pole, hence the genus-thirteen divisor at infinity; the
+curvette split also retains the genus-twenty divisor \(D_{14}\).  A
+polynomial affine-space construction must replace the corrected selector
+itself by a principal mask whose horizontal prime components are rational,
+or leave this root chart entirely.
+
+## 7. Structured next search
+
+Both corrected-selector factorizations are now closed.  The next search
+must change the horizontal selector before doing any contraction:
+
+1. prescribe the exceptional order vector (6.27) together with a rational
+   horizontal norm component;
+2. solve for root-algebra functions realizing that divisor data, allowing
+   reducible norms whose individual prime components are rational;
+3. reject candidates immediately when any indispensable horizontal prime
+   has positive geometric genus;
+4. rerun the normalized discriminant-lattice and relative-ampleness tests;
+5. construct affine coordinates only for a candidate which passes all
+   three gates.
+
+Random ambient shears, the uncorrected exceptional quotients, and the
+coarse four-divisor contraction are no longer relevant to this branch.
+Nor can extra selector primes repair (6.29): the terminal defect is already
+present in the class of its forced strict \(B_0\) pole.  The curvette split
+removes that defect but exposes independent genus-thirteen and
+genus-twenty obstructions.
+The next exact frontier is therefore a rational-horizontal selector search,
+not polynomial contraction of either existing split.
 
 ## 8. Reproduction
 
@@ -589,6 +1385,9 @@ Run
 .venv/bin/python scripts/verify_a4_root_incidence_derivative_split.py
 .venv/bin/python scripts/verify_a4_chart_unit_rank_four.py
 .venv/bin/python scripts/verify_a4_two_mask_local_viability.py
+.venv/bin/python scripts/verify_a4_affine_modification_obstruction.py
+.venv/bin/python scripts/verify_a4_corrected_boundary_selector.py
+Singular -q scripts/verify_a4_corrected_boundary_genus.sing
 ```
 
 The checker verifies the compact inverse basis, the two-coordinate
@@ -596,7 +1395,31 @@ Jacobian identity, generic root-field recovery, the square-discriminant
 specialization, the residual \(\sigma\)-pole, the selected rational root,
 and the complete comparison with the ordinary \((U,V)\)-chart ledger.  The
 second checker verifies the exact rank-four expansion of the correct chart
-unit, its three pairwise-coprime boundary factors, and the localized
-two-mask determinant-one suspension.  The third checker computes the common
-nontransverse cluster, its local normal forms, and the resulting order
-deficit for the simple two-mask chart.
+unit, its three pairwise-coprime boundary factors, the localized two-mask
+determinant-one suspension, the four-blowup resolution, the full
+branchwise numerator transforms, and the residual divisor-allocation
+intervals.  It also verifies the compact selector \(T+a^3\), its resolved
+Cartier transforms, and the obstruction to descending the exact masks into
+the original polynomial root algebra.  The third checker computes the
+common nontransverse cluster, its local normal forms, and the
+coefficientwise order deficit for the simple two-mask chart.  The fourth
+checker follows the forced exceptional quotients, verifies the
+codimension-one nonnormal loci and subsequent singular centers, and checks
+the negative-definite full resolution which is smooth but nonaffine.
+The fifth checker derives the corrected simple-branch selector, verifies
+its full four-ray transforms, constructs the exact rational two-mask
+allocation, and checks the unimodular relatively ample coarse deletion
+set.  It then normalizes the retained \(E_1,E_2\) branches, counts the two
+horizontal deleted primes, and proves the rank-two relative class
+obstruction upstairs.  Finally it computes the normalized seven-curve
+chain, contracts it to the \(A_3\) chain, constructs an explicit odd
+curvette in its order-four discriminant lattice, and proves that the
+forced strict \(B_0\) class has content two.  It then verifies the
+\(B_0\)-free curvette factorization,
+the unique seven-prime unimodular completion, and an effective boundary
+divisor positive on every normalized exceptional curve.  The separate
+Singular checker computes geometric genus thirteen for the irreducible
+corrected-selector norm, verifies
+\(\operatorname {Norm}(L_\chi)=\chi q_{14}\), computes genus twenty for
+the degree-fourteen component, and rules out the surviving complement as
+an affine plane.

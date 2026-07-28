@@ -67,6 +67,14 @@ For `N=4` the coarse quotient is one point and the quotient stack has generic
 stabilizer `mu_5`.  For `N>=5` the action is faithful and the quotient is a
 torus of dimension `N-4`.
 
+Here “quadratic-gauge family” means the minimal diagonal lift
+`g_jP^jS^j` for `j>=4`.  The later
+[power-shifted quartic construction](UNIVERSAL_QUARTIC_GAUGE_MULTIPLICITY.md)
+changes the lift to `g_4P^(m+4)S^4`.  It lies outside the coefficient space
+`\mathcal U_4`, keeps the selected seed at `P=1` fixed, and acquires the
+additional stable lattice index `2m+5`.  Hence it does not contradict the
+one-point quotient asserted here.
+
 The theorem remains valid over an arbitrary characteristic-zero field after
 interpreting the statement geometrically over its algebraic closure.
 

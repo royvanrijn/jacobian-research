@@ -1,0 +1,40 @@
+{
+  "schema": "gq2-permutation-action/v1",
+  "description": "The marked dyadic action on the common quintic P_(5,1), carried by the fixed stably inequivalent weighted and quadratic-gauge maps.",
+  "degree": 5,
+  "conventions": {
+    "points": "zero-based",
+    "permutation_encoding": "image-list",
+    "multiplication": "(a*b)(i)=a(b(i))",
+    "conjugation": "x^g=g^-1*x*g",
+    "commutator": "[x,y]=x^-1*y^-1*x*y",
+    "frobenius": "sigma maps to geometric Frobenius"
+  },
+  "generators": {
+    "sigma": [0, 2, 3, 4, 1],
+    "tau": [0, 1, 2, 3, 4],
+    "x0": [0, 1, 2, 3, 4],
+    "x1": [0, 1, 2, 3, 4]
+  },
+  "comparison": {
+    "type": "unramified-factorization-q2/v1",
+    "prime": 2,
+    "polynomial": "T^5+T^3-2T^2+T+1",
+    "polynomial_coefficients_low_to_high": [1, 1, -2, 1, 0, 1],
+    "irreducible_factors_mod_2_low_to_high": [
+      [1, 1],
+      [1, 0, 0, 1, 1]
+    ],
+    "root_labeling": "Label 0 is the Q_2 root; labels 1,2,3,4 follow geometric Frobenius on the unramified quartic roots."
+  },
+  "expected": {
+    "admissible": true,
+    "tame_relation": true,
+    "wild_relation": true,
+    "wild_normal_closure_is_2_group": true,
+    "image_group_order": 4,
+    "wild_normal_closure_order": 1,
+    "orbit_sizes": [4, 1],
+    "stabilizer_orders": [4, 1]
+  }
+}

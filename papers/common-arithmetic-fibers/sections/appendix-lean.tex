@@ -2,10 +2,13 @@
 \label{app:lean-correspondence}
 
 The table records the public endpoint declarations corresponding to the
-formalized statements used in the paper.  Several rows list more than one
-declaration because the paper packages construction, naturality, rank, and
-geometric degree into a single result.  Auxiliary implementation lemmas are
-omitted.
+formalized characteristic-zero specializations used in the paper.  The
+supplied-presentation theorem itself is stated over every field of
+characteristic different from \(2\), but the current end-to-end Lean files
+retain the stronger typeclass assumption \texttt{CharZero K}.  Several rows
+list more than one declaration because the paper packages construction,
+naturality, rank, and geometric degree into a single result.  Auxiliary
+implementation lemmas are omitted.
 
 \begin{center}
 \small
@@ -35,6 +38,8 @@ Polynomial realization, Theorem~\ref{thm:polynomial-realization}, and its
 effective and functorial form, Corollary~\ref{cor:polynomial-effective}
 &
 \nolinkurl{automaticRealization_pageOne}\par
+\nolinkurl{automaticRealizationFunctionField_finrank}\par
+\nolinkurl{automaticRealizationFunctionFieldComparison}\par
 \nolinkurl{automaticJacobianOneFiberRepresentingEquiv_natural}
 \\
 \hline
@@ -63,3 +68,25 @@ Explicit arithmetic fiber, Section~\ref{sec:example}
 \hline
 \end{tabular}
 \end{center}
+
+The page-one certificate exposes geometric degree both through the
+convenience definition
+\(\texttt{automaticRealizationGeometricDegree}\) and, independently of that
+definition, through the direct standard-object equality
+\[
+ \operatorname{finrank}_{K(\Pi,B)(C)}K(x,y,z)
+ =\deg P.
+\]
+Its Lean type uses \texttt{Module.finrank}, \texttt{RatFunc}, and the fraction
+field of the three-variable polynomial ring directly.  The algebra structure
+is the pullback by the three displayed target coordinates, and
+\nolinkurl{automaticRealizationFunctionFieldComparison} is the explicit
+algebra equivalence with the corresponding inverse-root extension.
+The certificate also includes the target denormalization, so the fixed
+Jacobian-one output normalization does not alter the generated target field.
+
+The formal development already identifies the cubic coefficient of
+\(P(a+S)-P(a)\) with the third Hasse derivative.  Removing the blanket
+\texttt{CharZero} assumptions from the general gauge, reconstruction,
+function-field, and supplied-base-change files remains a formalization task;
+no additional ordinary mathematical argument is used in the paper.

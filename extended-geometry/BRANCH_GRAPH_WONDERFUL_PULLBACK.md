@@ -58,6 +58,38 @@ simultaneous higher-codimension inertia characters of their target-flag
 divisors remain; generic node inertia is given by
 [monodromy centralizers](MONODROMY_INERTIA_CHARACTERS.md).
 
+## Hilbert--14 boundary consequence
+
+The universal target receiver already supplies a classical
+non-finite-generation phenomenon.  Castravet--Laface--Tevelev--Ugaglia prove
+that the pseudo-effective cone of
+\(\overline M_{0,n}\) is not polyhedral for every \(n\geq10\), in
+characteristic zero and in every prime characteristic
+([Blown-up toric surfaces with non-polyhedral effective
+cone](https://arxiv.org/abs/2009.14298)).  Since finite generation of the Cox
+ring of a projective variety with finitely generated class group forces its
+effective cone to be rational polyhedral, it follows that
+
+\[
+ \boxed{\operatorname{Cox}(\overline M_{0,b+2})
+        \text{ is not finitely generated for }b\geq8.}          \tag{0.2}
+\]
+
+For a generic degree-\(d\) polynomial with simple finite branching,
+\(b=d-1\), so this receiver enters from \(d=9\) onward.  It is naturally
+attached to the Keller boundary program through the graph map (0.1), and
+therefore gives an explicit Hilbert--14 algebra in the surrounding
+compactification apparatus.
+
+The scope is important.  Formula (0.2) concerns the Cox ring of the
+**receiver** \(\overline M_{0,b+2}\).  A normalized pullback or principal
+graph component need not inherit non-finite generation, so (0.2) does not
+prove that \(\operatorname{Cox}(B^{\mathrm{tgt}})\), the Cox ring of a
+Keller-map boundary compactification, or any LND kernel on a Keller source
+is non-finitely generated.  Proving one of those statements requires an
+injective graded pullback together with control of new effective classes, or
+an independent saturation-ladder obstruction.
+
 ## 1. Boundary building set
 
 Let \(n=b+2\), label the target marks by

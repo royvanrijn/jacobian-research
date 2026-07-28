@@ -74,6 +74,13 @@ explicit stable-normal-form construction.  The lower bound \(3\) for
 \(\rho_{\rm HN,4}\) applies only to the unrestricted HN class; using it for
 cotangent lifts would discard the block-rank identity above.
 
+There is also a smaller exact rank in a different, nonhomogeneous class.
+Slicing the identity coordinate of the rank-37 source at one gives a
+42-variable HN polynomial of degrees two through four and exact Hessian rank
+35.  This does not change either homogeneous-quartic interval in the table.
+The construction and scope separation are in
+[`HESSIAN_RANK_35_IDENTITY_SLICE.md`](HESSIAN_RANK_35_IDENTITY_SLICE.md).
+
 These are intervals for exact minima, not claims that an endpoint is sharp.
 The machine-readable ledger is
 [`restricted_minima_frontier.json`](../artifacts/generated-results/restricted_minima_frontier.json),
@@ -424,6 +431,19 @@ in the circuit, not merely remove zero or constant-kernel directions.
 The exact block-rank decomposition that isolates this pairing is developed in
 the [attack program](RESTRICTED_MINIMA_ATTACK_PROGRAM.md): the rank-37 source
 has cotangent kernel excess one, while the rank-17 source has excess four.
+
+Identity slicing exposes a useful sharper diagnostic.  For the same
+rank-37 source, the sliced map has exact Jacobian rank 17 and its cotangent
+potential has exact Hessian rank 35:
+
+\[
+ 35=2\cdot17+1.
+\]
+
+Thus rank 17 and excess one already coexist after homogeneity is dropped.
+The remaining homogeneous construction problem is precisely to retain that
+profile without the homogenizing direction raising the Jacobian rank from
+17 to 18.
 
 ## 5. Parked exact questions
 

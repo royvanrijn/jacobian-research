@@ -868,7 +868,172 @@ and `z` is the standard tangent-slice inverse evaluated at
 `d+tac^2,e+tbc^2`.  These identities give an independent global
 `A^3` certificate for the nonlinear source.
 
-## 4. Consequence for the open classification problem
+## 4. A wild three-variable gauge restriction
+
+The single-shear theorem does not imply tameness after passage to an
+invariant three-dimensional coefficient hyperplane.  In fact, it contains
+the Nagata automorphism exactly.
+
+Set `C_0=0`, write
+
+\[
+ u=C_1,\qquad v=C_2,\qquad w=C_3,
+\]
+
+and put
+
+\[
+ h=4uw-v^2.
+\tag{16}
+\]
+
+The restricted derivation and its invariant are
+
+\[
+ D=2u\partial_v+v\partial_w,\qquad D(h)=0.
+\tag{17}
+\]
+
+The upper variable-time gauge from (6) restricts to
+
+\[
+ \boxed{
+ \Gamma(u,v,w)=
+ \left(
+ u,\ v+2uh,\ w+vh+uh^2
+ \right).
+ }
+\tag{18}
+\]
+
+It has inverse
+
+\[
+ \Gamma^{-1}(u,v,w)=
+ \left(
+ u,\ v-2uh,\ w-vh+uh^2
+ \right),
+\tag{19}
+\]
+
+because both maps fix `h`.  Thus `det D Gamma=1` and
+
+\[
+ \operatorname{mdeg}\Gamma=(1,3,5).
+\tag{20}
+\]
+
+### Proposition 4.1 -- the coefficient gauge is Nagata and is wild
+
+Over a characteristic-zero field, the automorphism (18) is linearly
+conjugate to the Nagata automorphism with nonzero scalar parameter.  Over
+`\mathbb C` it is therefore wild.
+
+#### Proof
+
+Use the linear coordinates
+
+\[
+ x=-w,\qquad y=-\frac12v,\qquad z=u,
+\qquad \Delta=y^2+xz=-\frac14h.
+\tag{21}
+\]
+
+In these coordinates (18) becomes
+
+\[
+ N_{-4}(x,y,z)=
+ \left(
+ x-8y\Delta-16z\Delta^2,\ y+4z\Delta,\ z
+ \right).
+\tag{22}
+\]
+
+More generally, write
+
+\[
+ N_t(x,y,z)=
+ \left(
+ x+2ty\Delta-t^2z\Delta^2,\ y-tz\Delta,\ z
+ \right).
+\tag{23}
+\]
+
+For the linear scaling
+
+\[
+ S_t(x,y,z)=(t^2x,ty,z)
+\]
+
+one has
+
+\[
+ S_t^{-1}N_1S_t=N_t.
+\tag{24}
+\]
+
+Hence (22) is linearly conjugate to `N_1`.  The Shestakov--Umirbaev
+wildness theorem for the Nagata automorphism proves the claim.  QED
+
+This gives an exact answer to one of the tame-versus-wild questions raised
+by the gauge formalism: an invariant-time binary-cubic gauge can be a wild
+automorphism on an invariant `A^3`, even though the time-invariance criterion
+gives an elementary polynomial inverse.
+
+There is a sharp elementary contrast.  If the time in (18) is replaced by
+`f(u)`, the result is triangular in the order `(u,v,w)` and is tame.  The
+second invariant `4uw-v^2`, not variable time by itself, is what crosses the
+Nagata boundary.
+
+### The known multidegree calibration
+
+Let `T(x,y,z)=(z,y,x)`.  For every `s>=1`, the standard degree calculation
+for the swapped Nagata iterate gives
+
+\[
+ \operatorname{mdeg}\bigl((T\circ N_{-4})^s\bigr)
+ =
+ (4s-3,4s-1,4s+1).
+\tag{25}
+\]
+
+For `s>=2`, the first two entries are coprime odd integers and the third is
+not in their nonnegative numerical semigroup.  The Karaś--Zygadło
+multidegree theorem therefore proves that every one of these iterates is
+wild.  This is a useful end-to-end certificate calibration arising from the
+gauge formulas, but it is not a new multidegree result: the same family and
+the same obstruction are already in the literature.
+
+The smallest currently unresolved prime-first triple is instead
+
+\[
+ (7,8,12).
+\tag{26}
+\]
+
+It is not produced by (25).  The 2025 Holik--Karaś reduction shows that a
+hypothetical tame automorphism of this multidegree would force normalized
+coordinates `P,Q` of degrees `8,12` with Poisson-bracket degree exactly
+three.  Neither (18) nor the existing source-chart and target-triangular
+changes settle the existence of that pair.  In particular, the explicit
+wild automorphism (18) must not be advertised as an open-case certificate:
+its multidegree `(1,3,5)` also occurs tamely.
+
+Primary references:
+
+- I. Shestakov and U. Umirbaev,
+  [*The tame and the wild automorphisms of polynomial rings in three
+  variables*](https://doi.org/10.1090/S0894-0347-03-00440-5),
+  J. Amer. Math. Soc. 17 (2004).
+- M. Karaś and J. Zygadło,
+  [*On multidegree of tame and wild automorphisms of
+  \(\mathbb C^3\)*](https://arxiv.org/abs/0911.5468).
+- D. Holik and M. Karaś,
+  [*\(p\)-Conjecture for tame automorphisms of
+  \(\mathbb C^3\)*](https://doi.org/10.12958/adm2349),
+  Algebra Discrete Math. 39 (2025), 97--109.
+
+## 5. Consequence for the open classification problem
 
 The coefficient-linearity gap in the cubic-normalization frontend must be
 read modulo the full polynomial `GL_2(k[Y])` Tschirnhausen gauge.  Raw
@@ -891,7 +1056,7 @@ recursive terms in (9u), or, preferably, to extract an intrinsic root line
 and reduce the coefficient morphism to the proved Borel theorem and the
 tangent-nonosculating affine slice.
 
-## 5. Exact verification
+## 6. Exact verification
 
 Run
 
@@ -905,6 +1070,9 @@ The first checker verifies resultant invariance, invariance of both pairs
 automorphisms, the general formula (7), the polynomial Borel diagonal
 reduction, the alternating Jacobian formula (9d), the nonlinear family
 (10)--(12), its constant Jacobian, and its global quotient inverses.  It
+also verifies (18)--(24), including the inverse, Jacobian, multidegree, and
+the exact linear conjugacy with `N_(-4)`.  The first three swapped iterates
+are expanded exactly and have the degrees predicted by (25).  It
 also computes the coefficient ideal (9j), excluding every normalized
 linear-time alternating cancellation.  An exhaustive monomial regression
 through degree three checks the all-degree support argument of Proposition

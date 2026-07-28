@@ -1,0 +1,508 @@
+{
+  "content_sha256_before_hash_field": "eaf32a726e6ff5d8f40b4c0ed4e13a71c355e90b0813259860afceb41600c98d",
+  "normalization": {
+    "collision": "grad(psi)(0) = grad(psi)(1,0,0,0)",
+    "constant_hessian_determinant": 1,
+    "quadratic_part": "x0*x1 + x2*x3"
+  },
+  "records": [
+    {
+      "collision_points": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ]
+      ],
+      "degree_bound": 5,
+      "deterministic_points": [
+        [
+          1,
+          2,
+          3,
+          4
+        ],
+        [
+          2,
+          1,
+          4,
+          3
+        ],
+        [
+          1,
+          1,
+          2,
+          3
+        ],
+        [
+          1,
+          6,
+          5,
+          2
+        ],
+        [
+          5,
+          10,
+          3,
+          6
+        ],
+        [
+          7,
+          8,
+          9,
+          2
+        ]
+      ],
+      "direction_count": 107,
+      "evaluation_survivors": 1,
+      "exact_candidate_count": 0,
+      "exact_candidates": [],
+      "potentials_evaluated": 568170,
+      "prime": 11,
+      "support_bound": 2
+    },
+    {
+      "collision_points": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ]
+      ],
+      "degree_bound": 6,
+      "deterministic_points": [
+        [
+          1,
+          2,
+          3,
+          4
+        ],
+        [
+          2,
+          1,
+          4,
+          3
+        ],
+        [
+          1,
+          1,
+          2,
+          3
+        ],
+        [
+          1,
+          6,
+          5,
+          2
+        ],
+        [
+          5,
+          10,
+          3,
+          6
+        ],
+        [
+          7,
+          8,
+          9,
+          2
+        ]
+      ],
+      "direction_count": 191,
+      "evaluation_survivors": 4,
+      "exact_candidate_count": 0,
+      "exact_candidates": [],
+      "potentials_evaluated": 1816410,
+      "prime": 11,
+      "support_bound": 2
+    },
+    {
+      "collision_points": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ]
+      ],
+      "degree_bound": 7,
+      "deterministic_points": [
+        [
+          1,
+          2,
+          3,
+          4
+        ],
+        [
+          2,
+          1,
+          4,
+          3
+        ],
+        [
+          1,
+          1,
+          2,
+          3
+        ],
+        [
+          1,
+          6,
+          5,
+          2
+        ],
+        [
+          5,
+          10,
+          3,
+          6
+        ],
+        [
+          7,
+          8,
+          9,
+          2
+        ]
+      ],
+      "direction_count": 311,
+      "evaluation_survivors": 61,
+      "exact_candidate_count": 0,
+      "exact_candidates": [],
+      "potentials_evaluated": 4823610,
+      "prime": 11,
+      "support_bound": 2
+    },
+    {
+      "collision_points": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ]
+      ],
+      "degree_bound": 8,
+      "deterministic_points": [
+        [
+          1,
+          2,
+          3,
+          4
+        ],
+        [
+          2,
+          1,
+          4,
+          3
+        ],
+        [
+          1,
+          1,
+          2,
+          3
+        ],
+        [
+          1,
+          6,
+          5,
+          2
+        ],
+        [
+          5,
+          10,
+          3,
+          6
+        ],
+        [
+          7,
+          8,
+          9,
+          2
+        ]
+      ],
+      "direction_count": 476,
+      "evaluation_survivors": 25,
+      "exact_candidate_count": 0,
+      "exact_candidates": [],
+      "potentials_evaluated": 11309760,
+      "prime": 11,
+      "support_bound": 2
+    },
+    {
+      "collision_points": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ]
+      ],
+      "degree_bound": 5,
+      "deterministic_points": [
+        [
+          1,
+          2,
+          3,
+          4
+        ],
+        [
+          2,
+          1,
+          4,
+          3
+        ],
+        [
+          1,
+          1,
+          2,
+          3
+        ],
+        [
+          7,
+          4,
+          5,
+          2
+        ],
+        [
+          11,
+          4,
+          9,
+          10
+        ],
+        [
+          3,
+          8,
+          9,
+          6
+        ]
+      ],
+      "direction_count": 107,
+      "evaluation_survivors": 1,
+      "exact_candidate_count": 0,
+      "exact_candidates": [],
+      "potentials_evaluated": 817908,
+      "prime": 13,
+      "support_bound": 2
+    },
+    {
+      "collision_points": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ]
+      ],
+      "degree_bound": 6,
+      "deterministic_points": [
+        [
+          1,
+          2,
+          3,
+          4
+        ],
+        [
+          2,
+          1,
+          4,
+          3
+        ],
+        [
+          1,
+          1,
+          2,
+          3
+        ],
+        [
+          7,
+          4,
+          5,
+          2
+        ],
+        [
+          11,
+          4,
+          9,
+          10
+        ],
+        [
+          3,
+          8,
+          9,
+          6
+        ]
+      ],
+      "direction_count": 191,
+      "evaluation_survivors": 297,
+      "exact_candidate_count": 0,
+      "exact_candidates": [],
+      "potentials_evaluated": 2615172,
+      "prime": 13,
+      "support_bound": 2
+    },
+    {
+      "collision_points": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ]
+      ],
+      "degree_bound": 7,
+      "deterministic_points": [
+        [
+          1,
+          2,
+          3,
+          4
+        ],
+        [
+          2,
+          1,
+          4,
+          3
+        ],
+        [
+          1,
+          1,
+          2,
+          3
+        ],
+        [
+          7,
+          4,
+          5,
+          2
+        ],
+        [
+          11,
+          4,
+          9,
+          10
+        ],
+        [
+          3,
+          8,
+          9,
+          6
+        ]
+      ],
+      "direction_count": 311,
+      "evaluation_survivors": 408,
+      "exact_candidate_count": 0,
+      "exact_candidates": [],
+      "potentials_evaluated": 6945252,
+      "prime": 13,
+      "support_bound": 2
+    },
+    {
+      "collision_points": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ]
+      ],
+      "degree_bound": 8,
+      "deterministic_points": [
+        [
+          1,
+          2,
+          3,
+          4
+        ],
+        [
+          2,
+          1,
+          4,
+          3
+        ],
+        [
+          1,
+          1,
+          2,
+          3
+        ],
+        [
+          7,
+          4,
+          5,
+          2
+        ],
+        [
+          11,
+          4,
+          9,
+          10
+        ],
+        [
+          3,
+          8,
+          9,
+          6
+        ]
+      ],
+      "direction_count": 476,
+      "evaluation_survivors": 550,
+      "exact_candidate_count": 0,
+      "exact_candidates": [],
+      "potentials_evaluated": 16284912,
+      "prime": 13,
+      "support_bound": 2
+    }
+  ],
+  "status": "bounded finite-field experiment; not a proof",
+  "supports_occurring_at_multiple_primes": []
+}

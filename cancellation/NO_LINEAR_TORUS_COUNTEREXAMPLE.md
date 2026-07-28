@@ -261,3 +261,73 @@ This runs two independent exact checks.
    the displayed integer matrix entry by entry, and computes its determinant
    by fraction-free Bareiss elimination.  It also reconstructs the
    \(785\times24\) affine-linear system and proves its exact rank is 24.
+
+## 6. Standalone sparse affine-linear record
+
+For a compact record which does not use the intrinsic boundary theorem, take
+the rational-root representative
+
+\[
+ t=1+xy,\qquad q=t^2z-\frac47y^2(1+3t),
+\]
+
+\[
+\begin{aligned}
+F_1&=-\frac12tq,\\
+F_2&=y-\frac{21}{4}xq+3t^2x^2q^4,\\
+F_3&=x(5-3t)+\frac74x^3z-\frac32(xq)^4.
+\end{aligned}                                           \tag{11}
+\]
+
+It has expanded support \((7,51,38)\), determinant one, and the four-point
+rational collision displayed in
+[the intrinsic note](NO_ALGEBRAIC_TORUS_EQUIVARIANCE.md#a-sparser-rational-representative).
+Its affine-linear equation
+
+\[
+ BF+b=JF(A(x,y,z)^T+a)                                  \tag{12}
+\]
+
+has 24 unknowns in the order
+
+\[
+ A(9),\quad a(3),\quad B(9),\quad b(3),
+\]
+
+with both matrices read row by row.  The following 24 coefficient labels
+give a square certificate:
+
+```text
+(1;12,10,4) (1;12,8,4) (1;4,3,0)  (1;4,2,1)
+(1;3,4,0)   (1;3,3,1)  (1;2,2,0)  (1;3,2,2)
+(2;12,9,4)  (1;2,4,1)  (1;2,4,0)  (1;2,3,2)
+(1;1,4,0)   (1;2,2,1)  (1;0,0,0)  (2;12,10,4)
+(2;12,8,4)  (2;3,3,1)  (2;3,2,1)  (2;0,0,0)
+(3;12,10,4) (3;12,8,4) (3;3,3,1)  (3;0,0,0)
+```
+
+After clearing each row to a primitive integer vector, the matrix has only
+46 nonzero entries and
+
+\[
+\boxed{\det M_{\mathrm{aff,sp}}=10.}                    \tag{13}
+\]
+
+Thus (12) has only the zero solution.  Formula (11) itself, rather than only
+the earlier 103-term representative, therefore has no affine-linear torus
+equivariance after arbitrary independent affine source and target changes.
+This is a three-part exact record: determinant one, a four-point collision,
+and the 24-row determinant (13).  It does **not** use (and does not imply)
+the exclusion of nonlinear polynomial left--right conjugates.
+
+The nonlinear conclusion belongs separately to
+[the intrinsic algebraic-torus theorem](NO_ALGEBRAIC_TORUS_EQUIVARIANCE.md).
+Its proof uses the canonical normalization boundary, the three-point Newton
+support with lattice determinant five, the pointwise-fixed nonnormal
+hypersurface lemma, and \(S_4\) deck rigidity.
+
+The sparse certificate and the intrinsic checks are reproduced together by
+
+```bash
+.venv/bin/python scripts/verify_quartic_algebraic_torus_obstruction.py
+```

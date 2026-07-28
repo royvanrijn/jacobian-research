@@ -1,14 +1,15 @@
 \begin{abstract}
-Given a characteristic-zero field \(K\), a squarefree polynomial
-\(P\in K[T]\) of degree \(N\geq3\), and an admissible translation, we
-construct an explicit polynomial map \(F:\A^3_K\to\A^3_K\) with
-\(\det DF=1\), geometric degree \(N\), and a distinguished full fiber
-naturally isomorphic to \(\Spec K[T]/(P)\).  Consequently every finite
-\'etale \(K\)-algebra of rank at least three occurs as a full Keller fiber.
-For a supplied polynomial presentation and translation the construction
-commutes with scalar extension; the presentation chosen for an abstract
-finite \'etale algebra is noncanonical.  The polynomial construction,
-root-to-source reconstruction, literal fiber theorem, function-field
-comparison, base change, and abstract finite-\'etale corollary are formalized
-in Lean.
+Let \(K\) be a field of characteristic different from \(2\).  Given a
+separable polynomial \(P\in K[T]\) of degree \(N\geq3\) and a translation
+\(a\in K\) at which the first and third Hasse derivatives of \(P\) are
+nonzero, we construct an explicit polynomial map
+\(F:\A^3_K\to\A^3_K\) with \(\det DF=1\), geometric degree \(N\), and a
+distinguished full fiber naturally isomorphic to \(\Spec K[T]/(P)\).
+Consequently, in characteristic zero, every finite \'etale \(K\)-algebra of
+rank at least three occurs as a full Keller fiber.  For supplied presentation
+data the construction commutes with scalar extension; the presentation and
+translation chosen for an abstract finite \'etale algebra are noncanonical.
+The characteristic-zero specialization, including automatic translation,
+the function-field comparison, base change, and the abstract finite-\'etale
+corollary, is formalized in Lean.
 \end{abstract}

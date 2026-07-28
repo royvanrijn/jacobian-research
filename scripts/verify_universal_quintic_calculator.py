@@ -306,46 +306,71 @@ for exponent in range(1, 6):
 assert sp.expand(c5_iterate - T) == 0
 
 
-# D_5: square discriminant, two pair orbits, and a reflection.
+# D_5: Dummit's solvability resolvent, square discriminant, and a reflection.
 assert primitive_inverse["D5"].as_expr() == (
     32 * S**5 - 6250 * S**3 + 13125 * S**2 + 12500 * S - 12500
 )
 d5_discriminant = sp.discriminant(normalized["D5"].as_expr(), T)
 assert d5_discriminant == sp.Rational(2040064, 78125) ** 2
-d5_resolvent = pair_sum_resolvent(
+d5_resolvent = dummit_resolvent(
+    sp.Integer(-5),
     sp.Rational(42, 25),
     sp.Rational(32, 125),
     -sp.Rational(128, 3125),
 )
-d5_equation = normalized["D5"].as_expr()
-assert sp.expand(
-    sp.resultant(
-        d5_equation.subs(T, Y),
-        d5_equation.subs(T, X - Y),
-        Y,
-    )
-    - 2**5
-    * d5_equation.subs(T, X / 2)
-    * d5_resolvent.as_expr() ** 2
-) == 0
-d5_factors = (
-    sp.Poly(
-        3125 * X**5 - 28750 * X**3 - 2000 * X**2 + 62725 * X + 4784,
-        X,
-        domain=sp.ZZ,
-    ),
-    sp.Poly(
-        3125 * X**5 - 18125 * X**3 + 7250 * X**2 + 2500 * X - 776,
-        X,
-        domain=sp.ZZ,
-    ),
+d5_resolvent_integer = primitive_integer_polynomial(d5_resolvent)
+d5_resolvent_cofactor = sp.Poly(
+    30517578125 * X**5
+    - 63476562500 * X**4
+    - 1586171875000 * X**3
+    + 2798725000000 * X**2
+    + 15539492530000 * X
+    - 28777893593024,
+    X,
+    domain=sp.ZZ,
 )
 assert sp.expand(
-    d5_resolvent.as_expr()
-    - d5_factors[0].as_expr() * d5_factors[1].as_expr() / 9765625
+    d5_resolvent_integer.as_expr()
+    - (125 * X + 516) * d5_resolvent_cofactor.as_expr()
 ) == 0
-assert all(factor_degrees_mod_prime(factor, 3) == (5,) for factor in d5_factors)
+assert d5_resolvent.eval(-sp.Rational(516, 125)) == 0
+assert factor_degrees_mod_prime(d5_resolvent_cofactor, 3) == (5,)
 assert factor_degrees_mod_prime(normalized["D5"], 11) == (2, 2, 1)
+
+# A small partial target line already carries C_5, D_5, and S_5:
+#
+#   (Pi,B,C) = (1,0,-7/10) + t*(-3/5,-21/10,27/10)
+#
+# at t=0,1,-1 respectively.  The C_5 and D_5 rows are the certified rows
+# above; the two modular patterns below certify the additional S_5 row.
+partial_line_origin = (sp.Integer(1), sp.Integer(0), -sp.Rational(7, 10))
+partial_line_direction = (
+    -sp.Rational(3, 5),
+    -sp.Rational(21, 10),
+    sp.Rational(27, 10),
+)
+assert tuple(
+    origin + direction
+    for origin, direction in zip(
+        partial_line_origin, partial_line_direction, strict=True
+    )
+) == targets["D5"]
+partial_line_s5_target = tuple(
+    origin - direction
+    for origin, direction in zip(
+        partial_line_origin, partial_line_direction, strict=True
+    )
+)
+partial_line_s5 = normalized_polynomial(partial_line_s5_target)
+assert primitive_integer_polynomial(partial_line_s5).as_expr() == (
+    15625 * T**5
+    - 78125 * T**3
+    - 105000 * T**2
+    + 256000 * T
+    + 1114112
+)
+assert factor_degrees_mod_prime(partial_line_s5, 3) == (5,)
+assert factor_degrees_mod_prime(partial_line_s5, 19) == (2, 1, 1, 1)
 
 
 # F_20: transitivity, Dummit's solvability sextic, and odd square class.
@@ -380,4 +405,6 @@ print("PASS: the fixed quintic map has determinant -2")
 print("PASS: all five transitive quintic groups occur below projective height 22")
 print("PASS: the row heights are S5=1, A5=5, C5=10, F20=15, D5=21")
 print("PASS: every row uses at most three exact integer or modular checks")
+print("PASS: Dummit's two sextics give total resolvent degree 12")
+print("PASS: one small target line carries C5, D5, and S5 at t=0,1,-1")
 print("PASS: no numerical root approximation or Galois-group oracle is used")

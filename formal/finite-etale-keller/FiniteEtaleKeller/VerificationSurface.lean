@@ -281,6 +281,18 @@ example (P : K[X]) (hP : Squarefree P) (hdeg : 3 ≤ P.natDegree) :
     AutomaticPageOneCertificate P hP hdeg :=
   automaticRealization_pageOne P hP hdeg
 
+/-- Signature guard for the direct standard-object function-field degree
+endpoint carried by the page-one certificate. -/
+example (P : K[X]) (hdeg : 3 ≤ P.natDegree) :
+    letI : Algebra
+        (RatFunc (FractionRing (MvPolynomial (Fin 2) K)))
+        (FractionRing (MvPolynomial (Fin 3) K)) :=
+      automaticRealizationTargetFunctionFieldAlgebra P hdeg
+    Module.finrank
+      (RatFunc (FractionRing (MvPolynomial (Fin 2) K)))
+      (FractionRing (MvPolynomial (Fin 3) K)) = P.natDegree :=
+  automaticRealizationFunctionField_finrank P hdeg
+
 #print axioms jacobianDet_generalGaugeMap
 #print axioms jacobianDet_generalGaugeJacobianOneMap
 #print axioms generalGaugeInversePolynomial_derivative
@@ -292,6 +304,8 @@ example (P : K[X]) (hP : Squarefree P) (hdeg : 3 ≤ P.natDegree) :
 #print axioms generalGaugeFunctionFieldHom_injective
 #print axioms generalGaugeSourceFunctionFieldComparison
 #print axioms generalGaugeGeometricDegree_eq
+#print axioms automaticRealizationFunctionFieldComparison
+#print axioms automaticRealizationFunctionField_finrank
 #print axioms generalGaugeJacobianOneMap_targetDenormalization
 #print axioms automaticRealizationMap_targetDenormalization
 #print axioms realizationMapTarget_map
