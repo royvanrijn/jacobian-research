@@ -784,6 +784,35 @@ heat-type operator needs multiple coupled coefficient functionals,
 nonlinear translation, or a different intertwiner; none inherits a single
 Laurent-power Newton separator automatically.
 
+Formal factorization does not evade this obstruction through an umbral
+change of polynomial coordinates.
+
+> **Theorem 5.2 — multiplicative umbral straightening no-go.**  Let
+> \(T:k[x_1,\ldots,x_n]\to k[x_1,\ldots,x_n]\) be a \(k\)-algebra
+> automorphism.  If
+> \[
+> T^{-1}D_vT=F(\partial)
+> \tag{5.6}
+> \]
+> is a locally finite formal constant-coefficient operator, then
+> \(F\) is a linear form.  In particular no multiplicative conjugacy can
+> straighten a genuinely nonlinear delta operator
+> \(D_v+q(\partial)\).
+
+Indeed, conjugation by an algebra automorphism preserves the Leibniz rule,
+so \(F(\partial)\) is a derivation.  Applying the Leibniz rule formally to
+two exponentials gives
+\[
+ F(\xi+\eta)=F(\xi)+F(\eta).
+\tag{5.7}
+\]
+Over characteristic zero, an additive formal power series is linear.
+Thus formal Hensel factorization of a higher-order symbol into smooth
+branches is useful at the operator level, but its usual linear umbral
+intertwiner cannot preserve products and therefore cannot transport the
+powers \(P^m\).  Any successful use of those branches needs a new
+multilinear identity rather than a multiplicative coordinate change.
+
 ## 6. Consequences for the requested escape routes
 
 1. **Auxiliary polarization followed by evaluation.**  This is
@@ -799,6 +828,9 @@ Laurent-power Newton separator automatically.
    separately to the two factors still has the product form (4.1).
    A map that mixes the dual and coordinate algebras is outside this
    theorem and must separately prove that it intertwines contraction.
+   Formal or umbral straightening does not supply a multiplicative escape:
+   Theorem 5.2 forces every such conjugated delta operator to remain
+   first-order linear.
 4. **Nonhomogeneous constant-coefficient operators.**  Theorem 1.1
    excludes every pair with \(\deg P\) at most the lowest positive
    operator order.  Theorem 1.2 excludes arbitrary polynomial degree when

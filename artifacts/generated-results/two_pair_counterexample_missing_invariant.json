@@ -178,5 +178,20 @@
         -24
       ]
     ]
+  },
+  "apolar_adjoint": {
+    "coefficient_formula": "tau(C)_(ij)=(-1)^(i+j) C_(4-j,4-i)",
+    "component_signs_for_Sym0_Sym2_Sym4_Sym6_Sym8": [
+      1,
+      -1,
+      1,
+      -1,
+      1
+    ],
+    "moments_checked_at_generic_point_through_order": 22,
+    "first_odd_invariant": "c_234 in degree 3",
+    "c_234_generic_value": "2110176/7",
+    "conductor": "zero",
+    "at_F": "tau(F) is the diag(1,-1) PGL2 translate of F"
   }
 }

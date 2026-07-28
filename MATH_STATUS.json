@@ -6178,7 +6178,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:35deefaca461d5fbf6626af548d925dcc1397955746689367a4ef0408599c4d3",
+      "artifact_hash": "sha256:68426d45c64e09c98adf466900892f969d4ef4ac1f3f2d9feb1a7a598350ac5f",
       "software_lock": [],
       "supersedes": [
         "nonhomogeneous binary operators with polynomial degree at most their lowest positive order",

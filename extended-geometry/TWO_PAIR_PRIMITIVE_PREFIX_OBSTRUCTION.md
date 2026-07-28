@@ -240,6 +240,57 @@ exclude every opposite monomial pair
 \]
 as an all-moment-preserving correction of \(RF\).
 
+The uniform even-height phase-two family also closes.  Let
+\[
+ d=2h+2\geq6,\qquad
+ M_{a,b}=R^{d-4}F+aZ^2T^{2h}+bW^2T^{2h}.
+ \tag{1.26}
+\]
+
+> **Theorem 1.8.** If all pure moments of \(M_{a,b}\) vanish, then
+> \(a=b=0\).
+
+It is enough to use moments two, three, and four.  After removing the
+nonzero radial factorials, the second moment gives either \(b=0\) or
+\[
+ a=A_h:=
+ \frac{(4h+1)(4h+3)(4h+5)}
+ {2(2h+3)(2h+5)(2h+7)}.
+ \tag{1.27}
+\]
+On the branch \(b=0\), the third angular moment is
+\[
+ \frac{6a}{(2h+1)(2h+3)(2h+5)},
+ \tag{1.28}
+\]
+so \(a=0\).  On the branch \(b\ne0\), substituting (1.27) into the third
+moment forces
+\[
+ b=B_h:=
+ -\frac{2(2h+9)(4h+1)(4h+3)(4h+5)(4h+7)}
+ {9(2h+1)(2h+3)(2h+5)(8h^2+18h+29)}.
+ \tag{1.29}
+\]
+At \((A_h,B_h)\), the fourth angular moment is
+\[
+ -\frac{16(4h+1)(4h+3)(4h+5)P(h)}{D(h)},
+ \tag{1.30}
+\]
+where every factor of the explicit denominator \(D(h)\) is positive for
+\(h\geq2\).  The primitive degree-22 numerator \(P\) and \(D\) are
+recorded exactly in the generated certificate.  Modulo \(47\), the
+descending coefficient vector of \(P\) is
+\[
+\begin{split}
+(8,37,24,17,15,5,36,42,45,19,39,11,4,34,12,30,\\
+ 4,41,14,22,43,6,34).
+\end{split}
+\tag{1.31}
+\]
+Direct evaluation on all \(47\) residue classes gives no zero.  Hence
+\(P\) has no integer root, so (1.30) is nonzero for every integral
+\(h\geq2\), proving the theorem.
+
 ## 2. Phase proof
 
 On the Hopf sphere write
@@ -361,6 +412,23 @@ integration give the last line of (1.18).  Terms with two or more
 same-sign corrections cannot reach phase zero at either first-detection
 order.
 
+For Theorem 1.8, write the four phase coefficients of the seed profile as
+\[
+ [x^{-1}]p=\frac{1-t^2}{2},\quad
+ [x^0]p=\frac{1-3t^2}{2},\quad
+ [x]p=-\frac{3t^2}{2},\quad
+ [x^2]p=-\frac{t^2}{2}.
+ \tag{2.13}
+\]
+Constant-term extraction in \(x\), followed by
+\[
+ \int_0^1t^N(1-t^2)^j\,dt,
+ \tag{2.14}
+\]
+gives (1.27)--(1.30) by rational arithmetic.  The mod-\(47\) test in
+(1.31) is valid because an integral root of \(P\) would reduce to a root
+in \(\mathbb F_{47}\).
+
 For \(d>4\), setting \(R=0\) kills \(A_d\), whereas \(Z^d\) survives at
 \[
  (\xi _1,\xi _2,z_1,z_2)=(1,1,1,-1).
@@ -385,10 +453,12 @@ For \(d=4\), its top phase term likewise shows primitivity.
    independent nonmonomial height profiles.
 6. Odd height can conceal failure twice as long as a pure highest-weight
    perturbation, so parity must be incorporated into search cutoffs.
-7. In every degree, every opposite odd-height pair and every opposite
-   even-height pair of phase at least three are excluded.  Only the
-   low phases \(s=1,2\) remain open in the uniform even-height argument;
-   Theorem 1.7 separately closes the phase-one case in degree five.
+7. In every degree, every opposite odd-height pair, every opposite
+   even-height pair of phase at least three, and the even-height phase-two
+   pair are excluded.  Only phase one remains open uniformly, and
+   Theorem 1.7 closes its degree-five instance.  Thus the remaining
+   opposite-monomial frontier is \(ZT^{d-1},WT^{d-1}\) in odd degrees
+   \(d\geq7\).
 
 The family also explains why adding a highest-weight correction to radial
 propagation looks successful in short exact searches: the failure is
@@ -409,5 +479,8 @@ also verifies (1.6)--(1.7) for \(4\leq d\leq7\) and every
 It additionally checks (1.12)--(1.13) for \(4\leq d\leq7\).  The
 checker verifies the three formulas (1.16) in the same degree range, the
 even-height formulas (1.18) for all applicable pairs in that range, and
-the exact degree-five certificate (1.21)--(1.24).  The phase-support
-argument above proves the all-degree statements.
+the exact degree-five certificate (1.21)--(1.24).  It also directly
+replays the exceptional phase-two branch in degrees six and eight,
+records the full numerator in (1.30), and checks its \(47\) nonzero
+residues.  The phase-support argument above proves the all-degree
+statements.

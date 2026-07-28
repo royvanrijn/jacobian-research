@@ -1,0 +1,405 @@
+{
+  "format": "two-pair-sic-characteristic-p-v1",
+  "integral_seed": "Fbar=2F",
+  "coefficient_matrix_determinant": 1536,
+  "full_matrix_rank_primes": "all primes except 2 and 3",
+  "quadric_nondegenerate_primes": "all odd primes",
+  "ordinary_contraction": {
+    "E_2(Fbar^m)": "0",
+    "E_2(Z*Fbar^m)": "2^m*(4m+2)!*m!/(2m+1)!!",
+    "mod_p_nonzero": "p odd and 4m+2<p",
+    "fixed_p_pattern": "m=1,...,floor((p-3)/4)"
+  },
+  "valuation_formulas_for_odd_p": {
+    "Legendre": "v_p((4m+2)!)+2*v_p(m!)-v_p((2m+1)!)",
+    "floor_sum": "sum_j(floor((4m+2)/p^j)-floor((2m+1)/p^j)+2*floor(m/p^j))",
+    "digit_sum": "(4m+1-s_p(4m+2)-2s_p(m)+s_p(2m+1))/(p-1)",
+    "Kummer_factorization": "2^m*binom(4m+2,2m+1)*(2m+1)!*(m!)^2"
+  },
+  "hasse_contraction": {
+    "H_2(Fbar^m)": "16^m",
+    "H_2(Z*Fbar^m)": "2m*16^m",
+    "conclusion": "naive Hasse replacement destroys pure vanishing for odd p"
+  },
+  "exceptional_geometry": {
+    "p=2": {
+      "matrix_rank": 4,
+      "reduction": "Z*R^2*(R+Z)",
+      "displayed_seed_in_nullcone": true
+    },
+    "p=3": {
+      "matrix_rank": 4,
+      "reduction": "(R+Z)*(R^3-R^2*W-R^2*Z+R*Z*W-Z^2*W)",
+      "hilbert_mumford_chart_groebner_basis": [
+        "1"
+      ],
+      "displayed_seed_in_nullcone": false
+    },
+    "p>=5": {
+      "matrix_rank": 5,
+      "I_2(Fbar)": 4608,
+      "displayed_seed_in_nullcone": false
+    }
+  },
+  "replay_cutoff": 8,
+  "prime_cutoff": 101,
+  "replay": {
+    "1": {
+      "ordinary_mixed": 480,
+      "hasse_pure": 16,
+      "hasse_mixed": 32
+    },
+    "2": {
+      "ordinary_mixed": 1935360,
+      "hasse_pure": 256,
+      "hasse_mixed": 1024
+    },
+    "3": {
+      "ordinary_mixed": 39852933120,
+      "hasse_pure": 4096,
+      "hasse_mixed": 24576
+    },
+    "4": {
+      "ordinary_mixed": 2601599474073600,
+      "hasse_pure": 65536,
+      "hasse_mixed": 524288
+    },
+    "5": {
+      "ordinary_mixed": 415215276062146560000,
+      "hasse_pure": 1048576,
+      "hasse_mixed": 10485760
+    },
+    "6": {
+      "ordinary_mixed": 137519299431782940672000000,
+      "hasse_pure": 16777216,
+      "hasse_mixed": 201326592
+    },
+    "7": {
+      "ordinary_mixed": 84419247380787457356201984000000,
+      "hasse_pure": 268435456,
+      "hasse_mixed": 3758096384
+    },
+    "8": {
+      "ordinary_mixed": 88433551432238662528404100743168000000,
+      "hasse_pure": 4294967296,
+      "hasse_mixed": 68719476736
+    }
+  },
+  "phase_diagram": {
+    "2": [],
+    "3": [],
+    "5": [],
+    "7": [
+      1
+    ],
+    "11": [
+      1,
+      2
+    ],
+    "13": [
+      1,
+      2
+    ],
+    "17": [
+      1,
+      2,
+      3
+    ],
+    "19": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "23": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "29": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "31": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "37": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "41": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "43": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "47": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "53": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "59": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "61": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "67": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "71": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "73": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "79": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "83": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "89": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21
+    ],
+    "97": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "101": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24
+    ]
+  },
+  "written_proof": "extended-geometry/TWO_PAIR_SIC_CHARACTERISTIC_P.md"
+}

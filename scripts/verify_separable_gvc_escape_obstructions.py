@@ -259,6 +259,12 @@ def main() -> None:
                 "Fixed linear translation and one diagonal coefficient "
                 "represent exactly products of powers of linear symbols."
             ),
+            "multiplicative_umbral_no_go": (
+                "An algebra-automorphism conjugate of a derivation is a "
+                "derivation; a formal constant-coefficient derivation has "
+                "linear symbol. Nonlinear delta operators therefore admit "
+                "no multiplicative umbral straightening."
+            ),
             "associated_graded_obstruction": (
                 "For arbitrary nonhomogeneous binary Lambda, every fixed "
                 "number of leading mixed homogeneous layers vanishes "

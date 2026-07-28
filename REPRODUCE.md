@@ -1817,7 +1817,11 @@ values and the exact expression of \(\mu_2\) in that basis, evaluates the
 ten primitive cubic contractions, and certifies modulo \(1000003\) that
 \(\mu_1,\ldots,\mu_{22}\) have Jacobian rank \(22\).  The nonzero modular
 minor is an exact characteristic-zero algebraic-independence certificate,
-not a numerical rank test.
+not a numerical rank test.  It also constructs the equivariant apolar
+adjoint, verifies its alternating signs on the five irreducible summands,
+and checks that the first odd cubic is nonzero.  The written coefficient
+reindexing proves that every moment is adjoint-even in all orders; hence
+the moment and invariant fields differ and the algebra conductor is zero.
 
 This computes the contraction-preserving stabilizer and orbit, uses the
 all-order Hopf coefficient identity to obtain the thirteen-dimensional

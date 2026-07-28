@@ -480,6 +480,13 @@ def main() -> None:
             "numerator_coefficients_descending": (
                 PHASE_TWO_NUMERATOR_COEFFICIENTS
             ),
+            "angular_moment_4_denominator": (
+                "81*(2h+1)^3*(2h+3)^4*(2h+5)^4*(2h+7)^2"
+                "*(2h+11)*(4h+9)*(4h+11)*(4h+13)"
+                "*(6h+5)*(6h+7)*(6h+11)"
+                "*(8h+1)*(8h+3)*(8h+5)*(8h+7)*(8h+9)"
+                "*(8h^2+18h+29)^2"
+            ),
             "modulus": phase_two_modulus,
             "nonzero_residues": phase_two_residues,
             "direct_sparse_replay": phase_two_replay,

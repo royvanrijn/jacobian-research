@@ -316,6 +316,73 @@ this proves
 relations must occur once further moments are adjoined, but their exact
 ideal is not computed here.
 
+The missing field direction is controlled by an equivariant involution.
+Let \(S\) be the invariant apolar form on \(\operatorname{Sym}^4\),
+written in the monomial basis as
+\[
+ S_{i,4-i}=1,-\frac14,\frac16,-\frac14,1
+ \qquad(0\leq i\leq4),
+ \tag{4.22}
+\]
+with all other entries zero, and define
+\[
+ \tau(A)=S^{-1}A^TS.
+ \tag{4.23}
+\]
+This commutes with conjugation by \(\operatorname{SL}_2\).  In coefficient
+coordinates it has the especially simple form
+\[
+ \boxed{\tau(C)_{ij}=(-1)^{i+j}C_{4-j,\,4-i}.}
+ \tag{4.24}
+\]
+If \(C(x,y)=\sum c_{ij}x^iy^j\), then
+\[
+ \mu_m(C)=\sum_{I=0}^{4m}I!(4m-I)!
+ [x^Iy^I]C(x,y)^m.
+ \tag{4.25}
+\]
+Under (4.24), the diagonal coefficient indexed by \(I\) becomes the
+coefficient indexed by \(4m-I\); its sign is
+\((-1)^{2I}=1\), and the factorial weight is unchanged.  Therefore
+\[
+ \boxed{\mu_m\circ\tau=\mu_m\quad\hbox{for every }m\geq1.}
+ \tag{4.26}
+\]
+
+On the five summands in (4.4), \(\tau\) acts respectively by
+\[
+ (+1,-1,+1,-1,+1).
+ \tag{4.27}
+\]
+The primitive cubic \(c_{234}\) in (4.13) is consequently
+\(\tau\)-odd, and the exact checker evaluates it nontrivially at a
+rational test point.  Thus \(\tau\) acts nontrivially on \(R_4\), while
+it fixes the entire moment algebra.  It follows that
+\[
+ \operatorname{Frac}{\cal A}
+ \subseteq\operatorname{Frac}(R_4)^\tau
+ \subsetneq\operatorname{Frac}R_4.
+ \tag{4.28}
+\]
+In particular the generic moment map on the invariant quotient has degree
+at least two: it cannot recover the apolar orientation.
+
+At the special point \(F\), \(c_{234}(F)=0\).  This is structural rather
+than an accidental extra cancellation: if
+\[
+ K=\operatorname{diag}(1,-1,1,-1,1)
+ \tag{4.29}
+\]
+on \(\operatorname{Sym}^4\), exact evaluation gives
+\[
+ \tau(A_F)=K A_F K^{-1}.
+ \tag{4.30}
+\]
+Thus \(\tau(F)\) is the
+\(\operatorname{diag}(1,-1)\in\operatorname{PGL}_2\) translate of \(F\),
+so every odd invariant vanishes there.  The degree-two separator
+\(I_2\) is \(\tau\)-even.
+
 Despite the full transcendence degree, \(R_4\) is not integral over
 \({\cal A}\).  Indeed, if the homogeneous positive-degree element \(I_2\)
 were integral, graded integrality would give a homogeneous monic equation
@@ -326,18 +393,17 @@ invariant nonzero at \(F\), including \(\det C\) and the three nonzero
 cubic invariants in (4.14).  Thus the moment morphism is generically
 algebraic but is not finite at the moment origin.
 
-The exact conductor
+The conductor is now determined exactly:
 \[
  ({\cal A}:R_4)=\{a\in{\cal A}:aR_4\subset{\cal A}\}
- \tag{4.22}
+ =0.
+ \tag{4.31}
 \]
-is not determined by these calculations.  It is a homogeneous proper
-ideal contained in \({\cal A}_+\).  If
-\(\operatorname{Frac}{\cal A}\ne\operatorname{Frac}R_4\), then it is
-necessarily zero; if the invariant fields agree, a nonzero conductor
-remains possible.  Deciding that invariant-field equality and computing
-the relations beyond (4.21) are separate global elimination problems.
-Neither is needed for the minimum-degree conclusion (4.15).
+Indeed, if \(0\ne a\) belonged to the conductor, then for every
+\(r\in R_4\) one would have \(ar\in{\cal A}\), hence
+\(r=(ar)/a\in\operatorname{Frac}{\cal A}\), contradicting (4.28).
+The exact relation ideal beyond (4.21) and the precise degree of the
+generic moment map remain open.
 
 ## 5. First lifting obstructions
 

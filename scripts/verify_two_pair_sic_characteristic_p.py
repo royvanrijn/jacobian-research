@@ -230,12 +230,6 @@ def main() -> None:
 
     # Integral geometry and the two exceptional primes.
     assert all(coefficient.denominator == 1 for coefficient in cleared.values())
-    assert (
-        power(torus, 2)
-        == multiply(radial, radial)
-        if False
-        else True
-    )
     quadric_defect = {}
     for polynomial, coefficient in (
         (power(torus, 2), 1),
@@ -357,11 +351,13 @@ def main() -> None:
     ).is_zero
     assert sp.Poly(
         sympy_cleared
-        + (radial_expr + phase_expr) ** 2
+        - (radial_expr + phase_expr)
         * (
-            radial_expr**2
-            + radial_expr * opposite_expr
-            + phase_expr * opposite_expr
+            radial_expr**3
+            - radial_expr**2 * opposite_expr
+            - radial_expr**2 * phase_expr
+            + radial_expr * phase_expr * opposite_expr
+            - phase_expr**2 * opposite_expr
         ),
         xi1,
         xi2,
@@ -410,7 +406,9 @@ def main() -> None:
             },
             "p=3": {
                 "matrix_rank": 4,
-                "reduction": "-(R+Z)^2*(R^2+R*W+Z*W)",
+                "reduction": (
+                    "(R+Z)*(R^3-R^2*W-R^2*Z+R*Z*W-Z^2*W)"
+                ),
                 "hilbert_mumford_chart_groebner_basis": ["1"],
                 "displayed_seed_in_nullcone": False,
             },
