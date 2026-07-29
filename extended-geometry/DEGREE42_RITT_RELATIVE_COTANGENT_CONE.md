@@ -206,6 +206,14 @@ reduced Dickson surface and the defect annihilator is \((z^4)\).  In degree
 forty-two, after removing the common spectator layer, the relative sector
 has exact exponent \(8\).
 
+There is an important derived asymmetry.  In degree thirty
+\(I_\partial=K\), so \(A_\partial=B\) and
+\(L_{B/A_\partial}=0\).  The transitivity triangle therefore degenerates to
+the sector term and has no spectator connecting class.  The nonzero class
+in (4.22) is genuinely new degree-forty-two gluing data; its degree-thirty
+comparison is the zero-spectator degeneration, while the meaningful
+thickness comparison remains \(z^4\) versus \(z^8\) in the sector module.
+
 Thus the following data survive changing the middle prime \(5\to7\):
 
 * the composite-omitting orientation;
@@ -227,19 +235,92 @@ prime \(p\), but this is presently a conjectural pattern, not a theorem.
 
 Equations (2.1)--(5.2) construct the completed ideal flag, its conormal
 quotients, their exact base support, and the cotangent transitivity triangle.
-They do not prove that (3.3) splits, do not identify the full higher
-homology of either relative cotangent complex, and do not compute the
+The calculation below proves that (3.3) does not split.  It does not identify
+the full higher homology of either relative cotangent complex or compute the
 \(L_\infty\) extension class coupling the two layers.
 
-The next derived calculation is therefore finite and specific:
+The next derived calculation was therefore finite and specific:
 
 1. present \(I_\partial/I_6\) and \(K/I_\partial\) as
    \(\mathbb Q[[\tau,z]]\)-modules;
 2. compute their first syzygies and the induced two-term relative cotangent
    complexes;
 3. evaluate the extension class in the transitivity triangle (3.3);
-4. compare that class with the degree-thirty cut-\(6\) sector after replacing
-   \(z^4\) by \(z^8\).
+4. compare the sector term with the degree-thirty cut-\(6\) module after
+   replacing \(z^4\) by \(z^8\); the degree-thirty spectator term is zero.
+
+The [cellular cotangent prototype](HESSIAN_RITT_CELLULAR_COTANGENT_PROTOTYPE.md)
+now carries this out through the fourth completed jet.  At order two the
+sector--spectator sequence splits.  At order three its module dimensions
+are \(5,3,8\), and it is non-split over \(\mathbb Q[\tau,z]\): an adapted
+basis has only one \(z\)-coupling block, while an explicit functional
+annihilates every change-of-splitting coboundary and evaluates to one on
+that block.  At order four the module dimensions are \(13,6,19\); the
+coboundary rank rises from \(52\) to \(53\) after adjoining the coupling,
+and a second exact obstruction functional evaluates to \(-3\).  This proves
+a finite-jet extension theorem through order four.
+
+A presentation-first calculation now settles persistence for the underlying
+ideal-module flag.  Present \(K/I_6\) and \(K/I_\partial\) by the seven
+normal generators and tensor their exact relation modules with
+
+\[
+ R/\bigl((\tau,z)^2+(n_0,\ldots,n_6)^2\bigr).
+\]
+
+The resulting dimensions are \(12\to4\), with kernel dimension eight.
+Requiring a section to commute with all nine coordinate actions gives a
+rank-\(27\) change-of-splitting system; adjoining the actual coupling raises
+the rank to \(28\).  An explicit functional annihilates every coboundary and
+evaluates to \(240\).  Therefore the completed sequence
+
+\[
+ 0\to I_\partial/I_6\to K/I_6\to K/I_\partial\to0
+\]
+
+is non-split: any completed-linear section would survive the finite tensor
+quotient.
+
+Passing one step further to first cotangent homology gives
+
+\[
+ K/(I_6+K^2)\longrightarrow K/(I_\partial+K^2).
+\]
+
+After tensoring over \(B=\mathbb Q[[\tau,z]]\) with
+\(B/(\tau,z)^2\), this surjection has dimensions \(6\to2\), with
+four-dimensional kernel.  Its section equations have rank \(5\), increasing
+to \(6\) after the coupling is adjoined; the functional
+\(2C_z[0,0]+5C_z[1,0]\) annihilates all changes of splitting and evaluates
+to \(2\).  Hence the completed conormal projection is non-split.  If the
+connecting morphism in (3.3) vanished, the distinguished triangle would
+split and this projection would have a section on \(H_1\).  Therefore the
+actual cotangent connecting morphism is nonzero.
+
+The first transitivity homology sequence is also exact on the left.  Indeed,
+with \(I=I_6\) and \(J=I_\partial\), exact intersection reduction gives
+
+\[
+ \frac{J\cap(I+K^2)}{I+KJ}=0
+\]
+
+after completion.  The certificate first kills its quotient by
+\((\tau,z)^2\), using an Artin--Rees cutoff at \(\mathfrak m^5\), and then
+applies Nakayama.  Therefore
+
+\[
+ 0\to J/(I+KJ)\to K/(I+K^2)\to K/(J+K^2)\to0
+\]
+
+is short exact.  The sector source has dimension \(6\) modulo
+\((\tau,z)^2\), while its image after tensoring has dimension \(4\); those
+two lost dimensions are the image of ordinary base-change Tor, not higher
+cotangent homology in the completed \(H_1\) sequence.
+
+The remaining tasks are to compute the individual higher cotangent homology
+modules, compare the sector module with the degree-thirty cut-\(6\) sector
+under the \(z^4\)-to-\(z^8\) thickness change, and prove the cellwise
+derived homotopy-limit theorem.
 
 ## Reproduction
 
@@ -253,3 +334,15 @@ The checker constructs the ordinary polynomial path ideals, transports them
 to (1.1), caches the four standard bases, verifies (2.1)--(3.2), finds the
 minimal exponents in (4.2) by repeated exact reduction, and computes the
 jets (5.1).
+
+The nonzero transitivity class is replayed separately by
+
+```bash
+.venv/bin/python scripts/verify_degree42_ritt_conormal_transitivity.py
+```
+
+The exact first-Postnikov overlap calculation is replayed by
+
+```bash
+.venv/bin/python scripts/verify_degree42_ritt_postnikov_overlap.py
+```

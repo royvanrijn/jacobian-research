@@ -16,8 +16,11 @@ are recorded in the generated-results artifact and the accompanying note.
 
 from __future__ import annotations
 
+import argparse
 import json
 from pathlib import Path
+import shutil
+import subprocess
 
 import sympy as sp
 
@@ -29,9 +32,29 @@ ARTIFACT = (
     / "generated-results"
     / "hc4_exceptional_schur_locus_modular.json"
 )
+FOURTH_POWER_ARTIFACT = (
+    ROOT
+    / "artifacts"
+    / "generated-results"
+    / "hc4_fourth_power_support.json"
+)
 
 mu, nu = sp.symbols("mu nu")
 x, y, z = sp.symbols("x y z")
+
+parser = argparse.ArgumentParser()
+parser.add_argument(
+    "--exact-pure-chart",
+    action="store_true",
+    help="attempt the characteristic-zero a=1 even-quartic elimination",
+)
+parser.add_argument(
+    "--singular-timeout",
+    type=int,
+    default=900,
+    help="timeout in seconds for --exact-pure-chart",
+)
+arguments = parser.parse_args()
 
 
 def modular_coefficient(value: sp.Rational, prime: int) -> int:
@@ -181,6 +204,7 @@ assert mixed_lex_factored == (
 
 fermat = {mu: 0, nu: 0}
 radial = {mu: sp.Rational(1, 5), nu: sp.Rational(1, 10)}
+mixed_nilpotent = {mu: -sp.Rational(5, 3), nu: -sp.Rational(1, 6)}
 assert all(polynomial.subs(fermat) == 0 for polynomial in pure_chart)
 assert all(polynomial.subs(radial) == 0 for polynomial in pure_chart)
 assert all(polynomial.subs(radial) == 0 for polynomial in mixed_chart)
@@ -209,6 +233,111 @@ assert sp.factor(sp.hessian(fermat_sextic, variables).det()) == (
 assert sp.factor(sp.hessian(radial_sextic, variables).det()) == (
     radius**6 / 25
 )
+
+# This cube-torsion point is not a reduced Schur stratum.  Record its
+# Hessian to distinguish the nilpotence jump from the two genuine fibers.
+pair_sum = x**2 * y**2 + x**2 * z**2 + y**2 * z**2
+triple_product = x**2 * y**2 * z**2
+mixed_sextic = sp.expand(sextic.subs(mixed_nilpotent))
+assert mixed_sextic == sp.expand(
+    (radius**3 - 8 * radius * pair_sum - 32 * triple_product) / 30
+)
+mixed_hessian_numerator = sp.expand(
+    27 * sp.hessian(mixed_sextic, variables).det()
+)
+mixed_hessian_invariants = sp.expand(
+    3 * radius**6
+    + 40 * radius**4 * pair_sum
+    - 1664 * radius**3 * triple_product
+    + 64 * radius**2 * pair_sum**2
+    + 5120 * radius * pair_sum * triple_product
+    - 512 * pair_sum**3
+    - 8192 * triple_product**2
+)
+assert mixed_hessian_numerator == mixed_hessian_invariants
+assert sp.Poly(mixed_hessian_numerator, x, y, z).is_irreducible
+
+if arguments.exact_pure_chart:
+    singular = shutil.which("Singular")
+    if singular is None:
+        raise RuntimeError("Singular is required for the exact chart attempt")
+
+    b, c, d, e, f, qx, qy, qz = sp.symbols(
+        "b c d e f qx qy qz"
+    )
+    direct_quartic = (
+        x**4
+        + b * y**4
+        + c * z**4
+        + d * x**2 * y**2
+        + e * x**2 * z**2
+        + f * y**2 * z**2
+    )
+    direct_quotient = qx * x**2 + qy * y**2 + qz * z**2
+    direct_gradient = sp.Matrix(
+        [sp.diff(direct_quartic, variable) for variable in variables]
+    )
+    direct_remainder = sp.expand(
+        (direct_gradient.T * sp.hessian(sextic, variables).adjugate()
+         * direct_gradient)[0]
+        - sp.hessian(sextic, variables).det() * direct_quotient
+    )
+    direct_equations = list(
+        dict.fromkeys(
+            sp.expand(sp.together(coefficient).as_numer_denom()[0])
+            for coefficient in sp.Poly(
+                direct_remainder, *variables
+            ).coeffs()
+        )
+    )
+    assert len(direct_equations) == 36
+
+    def singular_expression(expression: sp.Expr) -> str:
+        return str(sp.expand(expression)).replace("**", "^")
+
+    exact_program = f"""
+ring r=0,(b,c,d,e,f,qx,qy,qz,mu,nu),(dp(8),dp(2));
+option(redSB);
+ideal I={",".join(map(singular_expression, direct_equations))};
+ideal G=slimgb(I);
+ideal E=std(eliminate(G,b*c*d*e*f*qx*qy*qz));
+ideal P={",".join(map(singular_expression, pure_chart))};
+P=std(P);
+ideal left=reduce(E,P);
+ideal right=reduce(P,E);
+print("EXACT_PURE_CHART_BASIS_SIZE "+string(size(G)));
+print("EXACT_PURE_CHART_ELIMINATION_SIZE "+string(size(E)));
+print(
+  "EXACT_PURE_CHART_COMPARE "
+  +string(size(left))+" "+string(size(right))
+);
+"""
+    try:
+        completed = subprocess.run(
+            [singular, "-q"],
+            input=exact_program,
+            text=True,
+            capture_output=True,
+            check=True,
+            timeout=arguments.singular_timeout,
+        )
+    except subprocess.TimeoutExpired:
+        print(
+            "TIMEOUT: exact a=1 even-quartic elimination produced no "
+            f"certificate in {arguments.singular_timeout} seconds"
+        )
+        raise SystemExit(2)
+    if completed.stderr.strip() or "?" in completed.stdout:
+        raise RuntimeError(
+            "Singular exact-chart calculation failed:\n"
+            f"{completed.stdout}\n{completed.stderr}"
+        )
+    print(completed.stdout.strip())
+    comparison = next(
+        line for line in completed.stdout.splitlines()
+        if line.startswith("EXACT_PURE_CHART_COMPARE ")
+    )
+    assert comparison == "EXACT_PURE_CHART_COMPARE 0 0"
 
 # For s=R*q, polynomiality of the radial Schur norm requires R | q^2.
 # Verify the displayed numerator identity for a generic quadratic q.
@@ -247,10 +376,32 @@ with ARTIFACT.open() as stream:
     artifact = json.load(stream)
 assert artifact["even_quartic_charts"]["good_primes"] == [47, 101, 103]
 
+with FOURTH_POWER_ARTIFACT.open() as stream:
+    fourth_power_artifact = json.load(stream)
+for prime_text, scan in fourth_power_artifact["scans"].items():
+    prime = int(prime_text)
+    expected_radial = [
+        modular_coefficient(sp.Rational(1, 5), prime),
+        modular_coefficient(sp.Rational(1, 10), prime),
+    ]
+    expected_mixed = [
+        modular_coefficient(-sp.Rational(5, 3), prime),
+        modular_coefficient(-sp.Rational(1, 6), prime),
+    ]
+    assert scan["radial_reduction"] == expected_radial
+    assert scan["mixed_nilpotence_reduction"] == expected_mixed
+    assert scan["parameter_points_on_D_nu"] == prime * (prime - 1)
+    assert scan["certified_empty_points"] == prime * (prime - 1) - 1
+    assert len(scan["exceptional_points"]) == 1
+    assert scan["exceptional_points"][0]["parameters"] == expected_radial
+    assert scan["mixed_nilpotence_point_certified_empty"]
+
 print("PASS: reconstructed even-chart ideals replay modulo 47, 101, 103")
 print("PASS: pure chart support is Fermat plus radial")
 print("PASS: mixed chart support is radial with a cubic transverse thickening")
 print("PASS: Hessian discriminants factor as (xyz)^4 and R^6/25")
+print("PASS: the mixed nilpotence point has irreducible Hessian discriminant")
+print("PASS: fourth-power scan transcripts have radial-only F_p support")
 print("PASS: radial polynomiality forces the quartic line C*R^2")
 print(
     "SCOPE: modular reconstruction and exact special fibers; "

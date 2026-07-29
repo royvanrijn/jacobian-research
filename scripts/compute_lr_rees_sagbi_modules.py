@@ -341,6 +341,15 @@ def module_generation_tests(
     lines.append('"BEGIN_P1";')
     for index in range(len(p_2)):
         lines.append(f"reduce(C2_{index},M1)==0;")
+    lines.append('"NEW_P2_REMAINDER";')
+    lines.append("reduce(C2_2,M1);")
+    lines.append("module T_new=C2_2;")
+    lines.append("ideal I_ann=quotient(M1,T_new);")
+    lines.append("ideal I_ann_std=std(I_ann);")
+    lines.append('"ANNIHILATOR";')
+    lines.append("I_ann_std;")
+    lines.append('"ANNIHILATOR_VDIM";')
+    lines.append("vdim(I_ann_std);")
 
     completed = subprocess.run(
         [singular, "-q"],
@@ -352,7 +361,14 @@ def module_generation_tests(
     )
     if completed.stderr.strip() or "?" in completed.stdout:
         raise RuntimeError(f"Singular module test failed:\n{completed.stdout}\n{completed.stderr}")
-    known_text, p_1_text = completed.stdout.split("BEGIN_P1")
+    known_text, p_1_and_remainder_text = completed.stdout.split("BEGIN_P1")
+    p_1_text, remainder_and_annihilator = p_1_and_remainder_text.split(
+        "NEW_P2_REMAINDER"
+    )
+    remainder_text, annihilator_and_vdim = remainder_and_annihilator.split(
+        "ANNIHILATOR", 1
+    )
+    annihilator_text, vdim_text = annihilator_and_vdim.split("ANNIHILATOR_VDIM")
     known_bits = [
         line.strip() == "1"
         for line in known_text.split("BEGIN_KNOWN", 1)[1].splitlines()
@@ -366,6 +382,40 @@ def module_generation_tests(
     expected_known_count = sum(len(columns) for columns in matrices.values())
     assert len(known_bits) == expected_known_count
     assert len(p_1_bits) == len(p_2)
+    new_remainder = remainder_text.strip()
+    assert new_remainder == "-987/395*gen(3)"
+    annihilator = [
+        line.split("=", 1)[1].strip()
+        for line in annihilator_text.splitlines()
+        if line.strip().startswith("I_ann_std[")
+    ]
+    assert annihilator == ["g", "6u-1"]
+    annihilator_vdim = int(vdim_text.strip())
+    assert annihilator_vdim == 1
+
+    separator_point = {u: sp.Rational(1, 6), gamma: 0}
+    separator = sp.Matrix([[0, -sp.Rational(144, 79), 1]])
+
+    def separated_value(column: MatrixColumn) -> sp.Expr:
+        value = sp.Matrix(
+            [entry.subs(separator_point) for entry in column.residue]
+        )
+        return sp.factor((separator * value)[0])
+
+    assert all(separated_value(column) == 0 for column in p_1)
+    p_2_separator_values = [separated_value(column) for column in p_2]
+    assert p_2_separator_values[2] == -sp.Rational(987, 395)
+    assert all(
+        value == 0 for index, value in enumerate(p_2_separator_values) if index != 2
+    )
+
+    # The covector descends to N_R at the selected point.  Its first entry is
+    # zero; b(1/6,0), a*gamma, and gamma vanish.
+    assert separator[0] == 0
+    assert b.subs(separator_point) == 0
+    assert (a * gamma).subs(separator_point) == 0
+    assert gamma.subs(separator_point) == 0
+
     return {
         "known_p1_column_index": known_index,
         "known_p1_generates_all_p1_and_p2_columns": all(known_bits),
@@ -376,6 +426,23 @@ def module_generation_tests(
         "p2_mod_p1_failures": [
             index for index, passed in enumerate(p_1_bits) if not passed
         ],
+        "new_p2_column": 2,
+        "new_p2_column_label": "(partial_A, A^2 partial_A)",
+        "new_p2_remainder_mod_p1": new_remainder,
+        "p2_mod_p1_quotient": {
+            "cyclic_generator_column": 2,
+            "annihilator": ["gamma", "6*u-1"],
+            "support": {"u": "1/6", "gamma": "0"},
+            "vector_space_dimension": annihilator_vdim,
+            "is_reduced_residue_field": True,
+        },
+        "separating_functional": {
+            "point": {"u": "1/6", "gamma": "0"},
+            "covector": ["0", "-144/79", "1"],
+            "p1_values": ["0"] * len(p_1),
+            "p2_values": [sp.sstr(value) for value in p_2_separator_values],
+            "new_value": "-987/395",
+        },
     }
 
 
@@ -395,12 +462,22 @@ def initial_lift_data(weights: tuple[int, ...]) -> dict[str, object]:
         result[str(weight)] = rows
 
     AC_eA = TargetMonomialField(0, (1, 0, 1))
+    B_eA = TargetMonomialField(0, (0, 1, 0))
     C2_eC = TargetMonomialField(2, (0, 0, 2))
     torsion = 3 * target_lift(AC_eA) - 4 * target_lift(C2_eC)
     assert source_degree(target_lift(AC_eA)) == 39
     assert source_degree(target_lift(C2_eC)) == 39
     assert 3 * source_top(target_lift(AC_eA)) == 4 * source_top(target_lift(C2_eC))
     assert source_degree(torsion) == 34
+    completed_torsion = torsion + 28 * target_lift(B_eA)
+    assert source_degree(completed_torsion) == 29
+    original_degrees = sorted(
+        source_degree(target_lift(field)) for field in target_field_generators(1)
+    )
+    assert original_degrees == [19, 34, 39, 39]
+    # The invariant initial algebra has generator degrees 20,25,66.  Thus an
+    # original initial lift has degree 19,34,39 or at least 39 after a
+    # positive invariant multiplier; degree 29 is outside that semimodule.
     result["linear_strictness"] = {
         "commutes": False,
         "weight": 1,
@@ -408,6 +485,16 @@ def initial_lift_data(weights: tuple[int, ...]) -> dict[str, object]:
         "input_degree": 39,
         "output_degree_after_cancellation": 34,
         "new_initial_lift": [sp.sstr(entry) for entry in source_top(torsion)],
+        "completed_subduction": {
+            "target_field": "(28*B+3*A*C) e_A-4*C^2 e_C",
+            "lift_degree": 29,
+            "initial_lift": [
+                sp.sstr(entry) for entry in source_top(completed_torsion)
+            ],
+            "original_generator_degrees": original_degrees,
+            "positive_invariant_generator_degrees": [20, 25, 66],
+            "is_new_initial_module_generator": True,
+        },
     }
     return result
 
@@ -507,7 +594,10 @@ def main() -> None:
         for weight, columns in matrices.items()
     }
     print("PASS: target invariant algebra has a three-generator finite SAGBI basis")
-    print("PASS: linear target lifting is not Rees-strict (weight 1, degree 39 -> 34)")
+    print(
+        "PASS: linear target lifting is not Rees-strict "
+        "(weight 1, degree 39 -> 34 -> new degree 29 generator)"
+    )
     print(f"PASS: surviving quadratic weights are p=1,2; nonzero columns {nonzero_counts}")
     print("PASS: every |p|>=3 matrix vanishes by the saturated-annihilator cutoff")
     print(

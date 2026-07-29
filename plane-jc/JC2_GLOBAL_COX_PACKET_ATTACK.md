@@ -1443,6 +1443,15 @@ ending lower.  Identifying the terminal output with the invariant minimum
 for alternating Jung--van der Kulk factors.  That is the precise
 automorphism-theoretic gap.
 
+As bounded evidence only, the checker exhausts all 49 ordered Laurent pairs
+whose two supports are nonempty subsets of
+\(\{-1,0,1\}\), followed by all alternating two-step monomial shears of
+degrees one or two and coefficients \(\pm1\).  Sixteen paths lower the
+final height after a nondecreasing first step.  In every one, the initial
+pair already admits a lowering complete polynomial shear, so none is a
+terminal peak counterexample.  This finite grid is a regression for the
+proposed peak theorem, not its proof.
+
 The endpoint search becomes genuinely finite only after adjoining the
 following global input:
 
@@ -1616,7 +1625,10 @@ checks, the regression verifies:
 13. exhaustive strict-height monomial shear reduction, including its
     terminating step certificates and residue-sensitive terminal rows; and
 14. exhaustive lowering polynomial shears with nondecreasing prefixes,
-    including the height-eleven to height-nine two-term witness (6.71).
+    including the height-eleven to height-nine two-term witness (6.71);
+    and
+15. the bounded 49-pair alternating-peak grid and its sixteen
+    non-counterexample lowering paths.
 
 The normality and finite-duality conclusions are the written proofs in
 Section 6.3.  The independent Singular replay computes the cusp

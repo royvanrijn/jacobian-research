@@ -21,10 +21,90 @@
     ],
     "known_p1_column_index": 17,
     "known_p1_generates_all_p1_and_p2_columns": false,
+    "new_p2_column": 2,
+    "new_p2_column_label": "(partial_A, A^2 partial_A)",
+    "new_p2_remainder_mod_p1": "-987/395*gen(3)",
     "p1_matrix_generates_p2_matrix": false,
     "p2_mod_p1_failures": [
       2
-    ]
+    ],
+    "p2_mod_p1_quotient": {
+      "annihilator": [
+        "gamma",
+        "6*u-1"
+      ],
+      "cyclic_generator_column": 2,
+      "is_reduced_residue_field": true,
+      "support": {
+        "gamma": "0",
+        "u": "1/6"
+      },
+      "vector_space_dimension": 1
+    },
+    "separating_functional": {
+      "covector": [
+        "0",
+        "-144/79",
+        "1"
+      ],
+      "new_value": "-987/395",
+      "p1_values": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "p2_values": [
+        "0",
+        "0",
+        "-987/395",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "point": {
+        "gamma": "0",
+        "u": "1/6"
+      }
+    }
   },
   "initial_lifts": {
     "-1": [
@@ -226,6 +306,27 @@
     ],
     "linear_strictness": {
       "commutes": false,
+      "completed_subduction": {
+        "initial_lift": [
+          "-274*x**18*y**6*z**5",
+          "0",
+          "822*x**17*y**6*z**6"
+        ],
+        "is_new_initial_module_generator": true,
+        "lift_degree": 29,
+        "original_generator_degrees": [
+          19,
+          34,
+          39,
+          39
+        ],
+        "positive_invariant_generator_degrees": [
+          20,
+          25,
+          66
+        ],
+        "target_field": "(28*B+3*A*C) e_A-4*C^2 e_C"
+      },
       "input_degree": 39,
       "new_initial_lift": [
         "-210*x**21*y**7*z**6",

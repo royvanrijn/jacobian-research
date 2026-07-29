@@ -69,7 +69,8 @@
       "first_six_standard_basis_size": 133,
       "first_seven_fiber_length": 2,
       "first_seven_fiber_standard_basis_size": 6,
-      "mutual_fiber_ideal_reductions_zero": true
+      "mutual_fiber_ideal_reductions_zero": true,
+      "odd_cubic_at_lift_b_1_c_221": 0
     },
     {
       "phase": 1,
@@ -121,7 +122,8 @@
       "first_six_standard_basis_size": 133,
       "first_seven_fiber_length": 2,
       "first_seven_fiber_standard_basis_size": 6,
-      "mutual_fiber_ideal_reductions_zero": true
+      "mutual_fiber_ideal_reductions_zero": true,
+      "odd_cubic_at_lift_b_1_c_221": -381888
     },
     {
       "phase": 1,
@@ -173,7 +175,8 @@
       "first_six_standard_basis_size": 133,
       "first_seven_fiber_length": 2,
       "first_seven_fiber_standard_basis_size": 6,
-      "mutual_fiber_ideal_reductions_zero": true
+      "mutual_fiber_ideal_reductions_zero": true,
+      "odd_cubic_at_lift_b_1_c_221": 381888
     },
     {
       "phase": 1,
@@ -225,7 +228,8 @@
       "first_six_standard_basis_size": 133,
       "first_seven_fiber_length": 2,
       "first_seven_fiber_standard_basis_size": 6,
-      "mutual_fiber_ideal_reductions_zero": true
+      "mutual_fiber_ideal_reductions_zero": true,
+      "odd_cubic_at_lift_b_1_c_221": 0
     },
     {
       "phase": 2,
@@ -277,7 +281,8 @@
       "first_six_standard_basis_size": 133,
       "first_seven_fiber_length": 2,
       "first_seven_fiber_standard_basis_size": 6,
-      "mutual_fiber_ideal_reductions_zero": true
+      "mutual_fiber_ideal_reductions_zero": true,
+      "odd_cubic_at_lift_b_1_c_221": 0
     },
     {
       "phase": 2,
@@ -324,7 +329,8 @@
       "first_six_standard_basis_size": 133,
       "first_seven_fiber_length": 2,
       "first_seven_fiber_standard_basis_size": 6,
-      "mutual_fiber_ideal_reductions_zero": true
+      "mutual_fiber_ideal_reductions_zero": true,
+      "odd_cubic_at_lift_b_1_c_221": -381888
     },
     {
       "phase": 2,
@@ -371,7 +377,8 @@
       "first_six_standard_basis_size": 133,
       "first_seven_fiber_length": 2,
       "first_seven_fiber_standard_basis_size": 6,
-      "mutual_fiber_ideal_reductions_zero": true
+      "mutual_fiber_ideal_reductions_zero": true,
+      "odd_cubic_at_lift_b_1_c_221": 381888
     },
     {
       "phase": 2,
@@ -413,7 +420,8 @@
       "first_six_standard_basis_size": 133,
       "first_seven_fiber_length": 2,
       "first_seven_fiber_standard_basis_size": 6,
-      "mutual_fiber_ideal_reductions_zero": true
+      "mutual_fiber_ideal_reductions_zero": true,
+      "odd_cubic_at_lift_b_1_c_221": 0
     },
     {
       "phase": 3,
@@ -465,7 +473,8 @@
       "first_six_standard_basis_size": 133,
       "first_seven_fiber_length": 2,
       "first_seven_fiber_standard_basis_size": 6,
-      "mutual_fiber_ideal_reductions_zero": true
+      "mutual_fiber_ideal_reductions_zero": true,
+      "odd_cubic_at_lift_b_1_c_221": 0
     },
     {
       "phase": 4,
@@ -507,11 +516,39 @@
       "first_six_standard_basis_size": 133,
       "first_seven_fiber_length": 2,
       "first_seven_fiber_standard_basis_size": 6,
-      "mutual_fiber_ideal_reductions_zero": true
+      "mutual_fiber_ideal_reductions_zero": true,
+      "odd_cubic_at_lift_b_1_c_221": 0
     }
   ],
   "generic_full_moment_degree_on_each_slice": 2,
   "full_moment_field_on_each_slice": "apolar-fixed field",
-  "open_family_consequence": "for every phase h=1,2,3,4, a nonempty Zariski-open family of tau-even positive/negative direction pairs has the same degree-two fixed-field property",
-  "scope_warning": "single-phase quotient slices only; no determination of the degree on Frac(R_4)"
+  "open_family_consequence": "for every phase h=1,2,3,4, a nonempty Zariski-open family of tau-even positive/negative direction pairs has the same raw parameter-field degree-two fixed-field property",
+  "genuinely_apolar_moving_coordinate_slices": [
+    {
+      "phase": 1,
+      "positive_direction_index": 0,
+      "negative_direction_index": 1,
+      "odd_cubic_value": -381888
+    },
+    {
+      "phase": 1,
+      "positive_direction_index": 1,
+      "negative_direction_index": 0,
+      "odd_cubic_value": 381888
+    },
+    {
+      "phase": 2,
+      "positive_direction_index": 0,
+      "negative_direction_index": 1,
+      "odd_cubic_value": -381888
+    },
+    {
+      "phase": 2,
+      "positive_direction_index": 1,
+      "negative_direction_index": 0,
+      "odd_cubic_value": 381888
+    }
+  ],
+  "fixed_locus_coordinate_slice_count": 6,
+  "scope_warning": "single-phase raw parameter spaces only; the six zero-odd-cubic coordinate cases are fixed-locus controls, and there is no determination of the degree on Frac(R_4)"
 }

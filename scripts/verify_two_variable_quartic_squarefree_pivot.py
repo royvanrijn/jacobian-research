@@ -378,6 +378,110 @@ print("H_ZERO_G_OPEN_UNIT");
         completed.stdout
     )
 
+    # The remaining h!=0, p!=0 chart can be written without the
+    # Rabinowitsch variable.  If q=lambda^4*(lambda-1)^4, then
+    #
+    #   q in (f3,f4,f5,f6,z*p*h-1)
+    #
+    # follows from q*(p*h)^N in (f3,f4,f5,f6).  Modular reconnaissance at
+    # three good primes finds the same least exponent N=5 and the same
+    # degree-order basis size 87.  At the first prime, an exact finite-field
+    # lift has the displayed four multiplier profiles.  These computations
+    # narrow the rational target but do not certify its Q-membership.
+    squarefree_degeneracy = lam**4 * (lam - 1) ** 4
+    saturation_primes = (101, 103, 107)
+    saturation_exponents: dict[str, int] = {}
+    saturation_basis_sizes: dict[str, int] = {}
+    saturation_lift_profile: list[list[int]] = []
+    for prime in saturation_primes:
+        saturation_program = f"""
+ring r={prime},(c,d,lam),dp;
+option(redSB);
+"""
+        for order, polynomial in enumerate(eliminated_polynomials, start=3):
+            saturation_program += (
+                f"poly f{order}={singular_expression(polynomial)};\n"
+            )
+        saturation_program += f"""
+poly p={singular_expression(pivot)};
+poly h={singular_expression(expected_relation)};
+poly q={singular_expression(squarefree_degeneracy)};
+poly multiplier=p*h;
+ideal F=f3,f4,f5,f6;
+ideal G=std(F);
+int exponent=-1;
+poly powered=q;
+int candidate;
+for (candidate=0;candidate<=6;candidate++)
+{{
+  if (reduce(powered,G)==0)
+  {{
+    exponent=candidate;
+    break;
+  }}
+  powered=powered*multiplier;
+}}
+print("SATURATION_EXPONENT");
+print(exponent);
+print("BASIS_SIZE");
+print(size(G));
+"""
+        if prime == saturation_primes[0]:
+            saturation_program += """
+ideal T=powered;
+matrix L=lift(F,T);
+poly reconstructed=0;
+int row;
+for (row=1;row<=size(F);row++)
+{
+  reconstructed=reconstructed+F[row]*L[row,1];
+}
+if (reconstructed-powered!=0)
+{
+  print("BAD_FINITE_FIELD_SATURATION_LIFT");
+  exit(1);
+}
+print("LIFT_PROFILE");
+for (row=1;row<=size(F);row++)
+{
+  print(deg(L[row,1]));
+  print(size(L[row,1]));
+}
+"""
+        completed = subprocess.run(
+            [singular, "-q"],
+            input=saturation_program,
+            text=True,
+            capture_output=True,
+            check=True,
+            timeout=300,
+        )
+        output_lines = completed.stdout.strip().splitlines()
+        assert output_lines[:4] == [
+            "SATURATION_EXPONENT",
+            "5",
+            "BASIS_SIZE",
+            "87",
+        ], (prime, completed.stdout)
+        saturation_exponents[str(prime)] = int(output_lines[1])
+        saturation_basis_sizes[str(prime)] = int(output_lines[3])
+        if prime == saturation_primes[0]:
+            assert output_lines[4:] == [
+                "LIFT_PROFILE",
+                "34",
+                "5356",
+                "29",
+                "3679",
+                "27",
+                "3037",
+                "22",
+                "1853",
+            ], completed.stdout
+            saturation_lift_profile = [
+                [int(output_lines[index]), int(output_lines[index + 1])]
+                for index in range(5, len(output_lines), 2)
+            ]
+
     # On each expected d-branch, shift c by its expected value and remove
     # the common powers t^(1,1,2,2).  The gcd of all pairwise t-resultants
     # gives a complete necessary specialization polynomial for an
@@ -603,9 +707,24 @@ print("EXCEPTIONAL_FIBER");
                 "numerators by the invertible powers g,g,g^2,g^2"
             ),
         },
+        "h_nonzero_p_nonzero_modular_reconnaissance": {
+            "target": (
+                "lambda^4*(lambda-1)^4"
+                "*(p*(8*c-3*d^2))^5 in (f3,f4,f5,f6)"
+            ),
+            "primes": list(saturation_primes),
+            "least_saturation_exponents": saturation_exponents,
+            "degree_order_basis_sizes": saturation_basis_sizes,
+            "prime_101_lift_profile_degree_and_terms": (
+                saturation_lift_profile
+            ),
+            "status": (
+                "finite-field evidence only; exact Q lift remains open"
+            ),
+        },
         "remaining_exact_gate": (
-            "certify that (f3,f4,f5,f6,z*p*h-1) contains "
-            "lambda^4*(lambda-1)^4 over Q"
+            "lift lambda^4*(lambda-1)^4"
+            "*(p*(8*c-3*d^2))^5 into (f3,f4,f5,f6) over Q"
         ),
         "written_source": (
             "extended-geometry/TWO_PAIR_SIC_BIDEGREE44_RANK_FRONTIER.md"
@@ -626,6 +745,10 @@ print("EXCEPTIONAL_FIBER");
     print(
         "PASS squarefree quartic: pivot-annihilator and equianharmonic "
         "and branch-quartic fibers have only the four annihilator points"
+    )
+    print(
+        "PASS squarefree quartic: good-prime saturation exponent is "
+        "consistently five (modular evidence only)"
     )
     print(f"PASS wrote {OUTPUT.relative_to(ROOT)}")
 

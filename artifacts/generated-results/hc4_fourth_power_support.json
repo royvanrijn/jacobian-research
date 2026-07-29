@@ -1,0 +1,86 @@
+{
+  "schema": "hc4_fourth_power_support/v1",
+  "status": "exact finite-field scans; not a characteristic-zero support theorem",
+  "family": "(x^6+y^6+z^6)/30 + mu*x^2*y^2*z^2 + nu*sum_(i!=j)x_i^4*x_j^2",
+  "chart": "nu != 0",
+  "schur_ideal": {
+    "coefficient_variables": 15,
+    "primitive_quadratic_generators": 114,
+    "degree_four_zero_character_target_rank": 819,
+    "degree_four_multiplication_columns": 3474
+  },
+  "criterion": "If s_i^4 belongs to the specialized homogeneous Schur ideal for every one of the fifteen coefficient variables, its radical is the coefficient maximal ideal and the reduced projective Schur fiber is empty.",
+  "command_template": ".venv/bin/python -u scripts/verify_hc4_quintic_two_parameter_symmetric_schur.py --fourth-power-profile --fourth-prime PRIME",
+  "scans": {
+    "7": {
+      "parameter_points_on_D_nu": 42,
+      "certified_empty_points": 41,
+      "exceptional_points": [
+        {
+          "parameters": [3, 5],
+          "failed_fourth_power_indices": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14],
+          "degree_four_rank": 756
+        }
+      ],
+      "radial_reduction": [3, 5],
+      "mixed_nilpotence_reduction": [3, 1],
+      "mixed_nilpotence_point_certified_empty": true,
+      "processed_column_histogram": {
+        "1408": 24,
+        "1472": 4,
+        "1536": 10,
+        "1728": 3,
+        "3474": 1
+      }
+    },
+    "11": {
+      "parameter_points_on_D_nu": 110,
+      "certified_empty_points": 109,
+      "exceptional_points": [
+        {
+          "parameters": [9, 10],
+          "failed_fourth_power_indices": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14],
+          "degree_four_rank": 756
+        }
+      ],
+      "radial_reduction": [9, 10],
+      "mixed_nilpotence_reduction": [2, 9],
+      "mixed_nilpotence_point_certified_empty": true,
+      "processed_column_histogram": {
+        "1408": 86,
+        "1472": 4,
+        "1536": 16,
+        "1728": 3,
+        "3474": 1
+      }
+    },
+    "13": {
+      "parameter_points_on_D_nu": 156,
+      "certified_empty_points": 155,
+      "exceptional_points": [
+        {
+          "parameters": [8, 4],
+          "failed_fourth_power_indices": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14],
+          "degree_four_rank": 756
+        }
+      ],
+      "radial_reduction": [8, 4],
+      "mixed_nilpotence_reduction": [7, 2],
+      "mixed_nilpotence_point_certified_empty": true,
+      "processed_column_histogram": {
+        "1408": 131,
+        "1472": 4,
+        "1536": 16,
+        "1728": 4,
+        "3474": 1
+      }
+    }
+  },
+  "reconstructed_Fp_rational_support": "the radial reduction only at each tested prime",
+  "interpretation": "On D(nu), every nonradial F_p-rational parameter fiber at p=7,11,13 has empty reduced projective Schur fiber in the full fifteen-coefficient system. The extra cube-torsion point is certified reduced-empty at each prime.",
+  "limitations": [
+    "The scans do not test parameter points defined only over proper extensions of F_p.",
+    "They do not compute the characteristic-zero fourth-power annihilator or its support ideal.",
+    "The primitive 114-equation presentation is valid only on D(nu); Fermat requires the separate nu=0 boundary calculation."
+  ]
+}

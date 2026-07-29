@@ -287,8 +287,7 @@ one-monomial generators.  It is one of:
 
 - a symbolic two-parameter linear combination of commuting quadratic and
   cubic generators;
-- a length-two composition of mixed Hamiltonian shears, since a sum of
-  generators is not the same canonical word;
+- a length-two word containing a cubic mixed shear;
 - a coisotropic constraint whose conjugate characteristic coordinate is
   also nonlinear;
 - a coefficient-dependent repair matrix \(\Lambda(w)\), with polynomial
@@ -296,6 +295,254 @@ one-monomial generators.  It is one of:
 
 These remain computations to design, not consequences of the present
 search.
+
+## 6. Length-two mixed quadratic continuation
+
+The first compositional enlargement has also been completed.  Use the 36
+quadratic mixed letters
+
+\[
+ H_{i,j,\epsilon,\tau}
+ =\tau(q_i+\epsilon p_j)^2,
+\qquad \epsilon,\tau\in\{-1,1\}.
+\]
+
+There are \(36^2=1296\) ordered two-letter words.  Exactly 648 have
+nonzero Poisson bracket between their letters.  Of these, 48 compositions
+have source outputs independent of every dual variable and are removed as
+pure-source linear cotangent maps.  Exact matrix deduplication leaves 600
+mixed, noncommuting symplectic words.
+
+Every word is a determinant-one linear symplectic map, so every transformed
+parent retains Hessian determinant \(-16384\).  The staged census is:
+
+\[
+\begin{array}{c|r|r}
+\text{gate}&\text{trials}&\text{survivors}\\ \hline
+\text{affine scalar pivot}&600\text{ charts}&600\text{ charts}\\
+D(\mu+\lambda A,w)&6240&864\\
+\operatorname{rank}M\le2&168&0\\
+\text{complete descended determinant}&27216&0.
+\end{array}
+\]
+
+There are 1040 scalar affine pivots.  The 864 scalar survivors are exactly
+144 charts, the pivot \(z\), and all six scalar repairs.  In every case both
+letters are supported on \((x,y,u,v)\), so \(D\equiv0\) by the doubled row
+count and constant symplectic congruence.  The other scalar trials have
+exact modular nonconstancy witnesses.
+
+All 168 jointly affine pairs are among the retained dual pairs
+\((u,v),(u,w),(v,w)\).  Each has a specialization of reduced-pencil rank at
+least three modulo \(1000003\).  For the same 18 invertible symmetric repair
+matrices and nine shifts as above, every one of
+
+\[
+ 168\cdot18\cdot9=27216
+\]
+
+complete four-variable determinants has two unequal values modulo
+\(1000003\).  Thus composing two noncommuting mixed quadratic shears does
+not open an `HC(4)` descent in this coefficient box.
+
+## 7. Normalized quadratic--cubic words
+
+The first nonlinear compositional box uses the 18 unit-time quadratic
+letters and 18 unit-time cubic letters
+
+\[
+ (q_i+\epsilon p_j)^2,\qquad
+ (q_i+\epsilon p_j)^3,\qquad \epsilon\in\{-1,1\},
+\]
+
+in both possible orders.  Of the 648 raw ordered words, exactly 324 are
+noncommuting.  None is a pure-source map, and exact polynomial-map
+deduplication leaves all 324.
+
+Unlike a quadratic--quadratic word, every resulting symplectomorphism is
+nonlinear.  The four requested gates give:
+
+\[
+\begin{array}{c|r|r}
+\text{gate}&\text{trials}&\text{survivors}\\ \hline
+\text{affine scalar pivot}&324\text{ charts}&324\text{ charts}\\
+D(\mu+\lambda A,w)&3456&0\\
+\operatorname{rank}M\le2&108&0\\
+\text{complete descended determinant}&17496&0.
+\end{array}
+\]
+
+There are 576 scalar affine pivots, but every specialized remainder has two
+unequal values modulo \(1000003\).  Every one of the 108 jointly affine
+pairs has an exact modular rank-at-least-three witness.  All
+
+\[
+108\cdot18\cdot9=17496
+\]
+
+complete determinants in the repair box are nonconstant by exact modular
+witnesses.
+
+The post-gate parent audit is also uniform: all 324 transformed
+six-variable potentials have two unequal Hessian-determinant values modulo
+\(1000003\).  Thus these nonlinear canonical words lose the parent
+constant-Hessian equation before descent, and the direct four-variable
+test does not restore it.
+
+## 8. Signed canonical quadratic--cubic words
+
+The fixed-order signed box writes
+
+\[
+ H_1=\tau_1L_1^2,\qquad H_2=\tau_2L_2^3,\qquad
+ L_1=q_i+\epsilon_1p_j,\quad L_2=q_k+\epsilon_2p_\ell,
+\]
+
+with all four signs in \(\{-1,1\}\), and searches
+\(T_{H_2}\circ T_{H_1}\).  This gives \(36^2=1296\) raw words.  Their
+Poisson brackets are classified before either flow is composed:
+
+\[
+ \{H_1,H_2\}
+ =6\tau_1\tau_2\kappa L_1L_2^2,\qquad
+ \kappa=\epsilon_2\delta_{i\ell}
+        -\epsilon_1\delta_{jk}.
+\]
+
+Exactly 648 words commute and are removed.  The other 648 polynomial maps
+are pairwise distinct.  Their pre-expansion incidence census is:
+
+\[
+\begin{array}{c|c|r}
+\text{bracket incidence}&|\kappa|&\text{noncommuting words}\\ \hline
+i=\ell,\ j\ne k&1&288\\
+j=k,\ i\ne\ell&1&288\\
+i=\ell,\ j=k&2&72.
+\end{array}
+\]
+
+Complete monomial support gives coordinate affine-pivot dimension one for
+432 words and dimension two for 216 words.  The latter occur exactly when
+the two letters use the same dual coordinate, \(j=\ell\).  Their affine
+block is the pair of complementary dual coordinates.  This is a
+classification of coordinate subspaces; oblique constant affine directions
+are not included.
+
+The requested classification of the 216 retained words is:
+
+\[
+\begin{array}{c|c|r|c|c}
+\text{bracket incidence}&|\kappa|&\text{words}&
+\operatorname{rank}_{\rm gen}M&\det\operatorname{Hess}\Phi\\ \hline
+j=k,\ i\ne\ell&1&96&4&\text{nonconstant}\\
+i=\ell,\ j\ne k&1&96&4&\text{nonconstant}\\
+i=\ell,\ j=k&2&24&4&\text{nonconstant}.
+\end{array}
+\]
+
+Here \(M\) is the transformed \(4\times4\) reduced-Hessian pencil.  A
+nonzero specialized determinant modulo \(1000003\) proves generic rank
+four over characteristic zero in every row.  Thus all three noncommuting
+Poisson-bracket types force rank at least three, but the computation is
+strictly stronger: none stops at rank three, and every reduced pencil has
+corank zero.  In particular, every word misses the required
+rank-at-most-two budget by two ranks.
+
+The complete graph gate gives the same negative result.  All
+
+\[
+ 216\cdot18\cdot9=34992
+\]
+
+descended determinants have unequal values modulo \(1000003\).  Independently,
+all 216 parent six-variable Hessian determinants are nonconstant.  Hence
+the signed word box is obstructed twice: it loses the parent
+constant-Hessian equation, and no repair in the declared finite box
+restores a constant four-variable determinant.
+
+There is a visible box-level mechanism.  Retaining two pivots forces a
+shared dual coordinate.  Once \(j=\ell\), noncommutation forces the common
+index to occur as a source index in at least one letter.  The word then
+acts nonlinearly on the remaining \((q_0,q_1,q_2,p_j)\) block, and the
+reduced Hessian becomes generically full rank in every signed case.  The
+support implication is exact for this finite alphabet, while the proposed
+general principle
+
+\[
+\text{shared-dual pivot retention}+\text{noncommutation}
+\Longrightarrow \operatorname{rank}_{\rm gen}M\ge3
+\]
+
+is only an inference from the census, not a theorem for symbolic
+coefficients or longer words.
+
+## 9. Symbolic coefficient closure in the fixed order
+
+The signed coefficient box can be replaced by arbitrary nonzero flow
+coefficients.  For each shared-dual support/sign pattern, write
+
+\[
+ H_1=a(q_i+\epsilon_1p_j)^2,\qquad
+ H_2=b(q_k+\epsilon_2p_j)^3
+\]
+
+over \(\mathbf Q[a,b]\), with \(ab\ne0\), and retain
+\(\kappa=\epsilon_2\delta_{ij}-\epsilon_1\delta_{jk}\ne0\).  There are 54
+such support/sign patterns:
+
+\[
+\begin{array}{c|r}
+\text{Poisson incidence}&\text{patterns}\\ \hline
+i=j,\ k\ne j&24\\
+k=j,\ i\ne j&24\\
+i=j=k&6.
+\end{array}
+\]
+
+For the transformed parent \(\Phi_{a,b}\), let
+
+\[
+ \Delta_\xi(a,b)
+ =\det\operatorname{Hess}\Phi_{a,b}(\xi)
+  -\det\operatorname{Hess}\Phi_{a,b}(0)
+\]
+
+at deterministic integer axis and, when necessary, two-axis points
+\(\xi\).  Parent constancy forces every \(\Delta_\xi\) to vanish.  The
+checker adjoins
+
+\[
+ z_{\rm sat}ab-1
+\]
+
+and works exactly over \(\mathbf Q\).  Fourteen patterns contain a sampled
+difference which is already a monomial in \(a,b\), hence a unit after
+localization.  For the other 40 patterns, Singular computes a one-element
+standard basis \((1)\).  No certificate uses more than eleven nonzero
+probe equations.
+
+Consequently the parent-constant locus on \(ab\ne0\) is empty in all 54
+patterns.  By scalar extension, this excludes arbitrary nonzero
+coefficients over every characteristic-zero field, not only the signed
+values:
+
+\[
+\boxed{
+\{H_1,H_2\}\ne0,\quad
+\text{shared dual},\quad
+(\deg H_1,\deg H_2)=(2,3)
+\Longrightarrow
+\det\operatorname{Hess}
+(\Phi_0\circ T_{H_2}\circ T_{H_1})
+\text{ is nonconstant}.}
+\]
+
+This is a parent-Hessian obstruction for the displayed fixed order and
+mixed-line alphabet.  Since there is no parent survivor, no reduced-rank
+or repair calculation is logically needed on the symbolic parameter
+loci.  The reverse degree order, zero-coefficient boundaries, other
+Hamiltonian supports, oblique affine directions, and longer words remain
+outside the theorem.
 
 ## Reproduction
 
@@ -311,3 +558,59 @@ The generated census is
 [`artifacts/generated-results/hc4_mixed_canonical_pivot_search.json`](artifacts/generated-results/hc4_mixed_canonical_pivot_search.json).
 Its pinned SHA-256 is
 `10574297d6ba72240e7e1c7acb217be0a545badc1eae022927fea64063bbbacd`.
+
+Replay the length-two continuation with:
+
+```bash
+PYTHONHASHSEED=0 .venv/bin/python \
+  scripts/search_hc4_mixed_quadratic_words.py \
+  --output artifacts/generated-results/hc4_mixed_quadratic_words.json
+```
+
+The complete word census is
+[`artifacts/generated-results/hc4_mixed_quadratic_words.json`](artifacts/generated-results/hc4_mixed_quadratic_words.json).
+Its pinned SHA-256 is
+`17402479fe5b60068459f1936665d970e2204e9cc6f78f7b7ad3b88e06a5d6f7`.
+
+Replay the normalized quadratic--cubic box with:
+
+```bash
+PYTHONHASHSEED=0 .venv/bin/python \
+  scripts/search_hc4_mixed_quadratic_words.py \
+  --family quadratic-cubic \
+  --output artifacts/generated-results/hc4_mixed_quadratic_cubic_words.json
+```
+
+The complete nonlinear-word census is
+[`artifacts/generated-results/hc4_mixed_quadratic_cubic_words.json`](artifacts/generated-results/hc4_mixed_quadratic_cubic_words.json).
+Its pinned SHA-256 is
+`5bdc44741ad499f9c6f63be90d2e8d3a4e02e9675160f62490be61dd5ab6c10c`.
+
+Replay the fixed-order signed canonical box with:
+
+```bash
+PYTHONHASHSEED=0 .venv/bin/python \
+  scripts/search_hc4_mixed_quadratic_words.py \
+  --family signed-quadratic-cubic \
+  --output \
+  artifacts/generated-results/hc4_canonical_signed_quadratic_cubic_words.json
+```
+
+The classified census is
+[`artifacts/generated-results/hc4_canonical_signed_quadratic_cubic_words.json`](artifacts/generated-results/hc4_canonical_signed_quadratic_cubic_words.json).
+Its pinned SHA-256 is
+`0baf8823d8ed090356d756b0ba9689b91402ce5fc6c6ea9044de40077d2b1f3d`.
+
+Replay the symbolic coefficient closure with:
+
+```bash
+PYTHONHASHSEED=0 .venv/bin/python \
+  scripts/verify_hc4_symbolic_quadratic_cubic_words.py \
+  --output \
+  artifacts/generated-results/hc4_symbolic_quadratic_cubic_words.json
+```
+
+The exact symbolic census is
+[`artifacts/generated-results/hc4_symbolic_quadratic_cubic_words.json`](artifacts/generated-results/hc4_symbolic_quadratic_cubic_words.json).
+Its pinned SHA-256 is
+`34ef55922437cdfdf25006e00dc833ce6394d0ad1fe42585454e4bc568b8c874`.

@@ -261,12 +261,150 @@ the coefficient ideal of the determinant-one equation restricted to
 \(z=w=0\) is the unit ideal over \(\mathbb Q(c,v)\) in all eight cases.
 This allows every coefficient of \(D\), rather than selecting a finite list
 of quadratic outputs.  Notice that \(D_0+z\) is already a genuinely
-quadratic third output.
+quadratic third output.  The six affine rows in (5) will be subsumed by the
+uniform calculation below; the two quadratic rows remain separate
+information.
 
-The eight-row result is still a screen, not a classification: it does not
-cover an arbitrary affine \(C\) outside (5), an arbitrary quadratic \(C\),
-two simultaneously general quadratic outputs, or a fourth output of degree
-at least three.
+There is a uniform result for every nonconstant affine direction.  First
+suppose its \(r\)-coefficient is nonzero.  After scaling the pair of
+transverse outputs, write
+
+\[
+C=r+g u+a z+b w,\qquad
+P=p_0+p_1r+p_2u,\qquad
+Q=q_0+q_1r+q_2u,                                     \tag{6}
+\]
+
+where \(g,a,b\in K\), and again let \(D\) be completely general of block
+degree at most two.  This normalization loses no affine \(C\) with nonzero
+\(r\)-coefficient: divide \(C\) by that coefficient and multiply \(D\) by
+the same coefficient.
+
+The \(z=w=0\) determinant equation is a \(17\)-equation linear system in
+the fourteen nonconstant coefficients of \(D\).  Exact rational row
+reduction gives the following exhaustive pivot tree:
+
+| branch | coefficient rank | augmented rank | next exceptional divisor |
+|---|---:|---:|---|
+| generic | 8 | 9 | \(p_1=0\) |
+| \(p_1=0\) | 8 | 9 | \(q_1=0\) |
+| \(p_1=q_1=0\) | 8 | 9 | \(p_2=0\) |
+| \(p_1=q_1=p_2=0\) | 8 | 9 | \(q_2=0\) |
+| \(p_1=q_1=p_2=q_2=0\) | 6 | 7 | \(g=0\) |
+| \(p_1=q_1=p_2=q_2=g=0\) | 6 | 7 | \(p_0-a=0\) |
+| \(p_1=q_1=p_2=q_2=g=0,\ p_0=a\) | 6 | 7 | none |
+
+On each nonterminal row the displayed divisor is the only
+denominator in the reduced coefficient and augmented matrices.  A solution
+must therefore descend to the next row.  The terminal row is still
+inconsistent, independently of \(b,q_0\).
+
+If the \(r\)-coefficient is zero, projective normalization of the remaining
+nonzero gradient gives three charts.  Their complete trees are shorter:
+
+| normalized \(C\) | exceptional-divisor chain | coefficient/augmented ranks |
+|---|---|---:|
+| \(u+a z+b w\) | \(p_1=0,\ q_1=0\) | \(8/9\) |
+| \(z+b w\) | \(q_1-bp_1=0\) | \(7/8\) |
+| \(w\) | \(p_1=0\) | \(7/8\) |
+
+The displayed ranks hold on every row of the corresponding tree, including
+the terminal row.  In each nonterminal row the displayed next divisor is
+the only denominator of both reduced matrices.  These three charts and
+(6) exhaust every nonzero affine gradient.  A constant \(C\) has zero
+gradient and is impossible trivially.  Therefore, when \(C\) is affine,
+
+\[
+\boxed{dC\ne0,\quad
+       \det d(\widetilde R,B,C,D)\in K^\times
+       \quad\Longrightarrow\quad \deg D\ge 3.}        \tag{7}
+\]
+
+These four projective pivot trees give a complete characteristic-zero proof
+for every affine \(C\).  They are also the practical replacement for the
+corresponding monolithic
+\(17\)-equation Gröbner calculation, which does not terminate quickly enough
+to serve as a verifier.
+
+The remaining screen is therefore genuinely nonlinear: it includes an
+arbitrary quadratic \(C\), two simultaneously general quadratic outputs,
+and a fourth output of degree at least three.
+
+### 5.1. The exposed-\(r\) quadratic boundary
+
+The first simultaneous-quadratic subchart can also be closed exactly.  Set
+\(P=Q=0\), so the second output is \(B=r\), and let both \(C,D\) be
+completely general polynomials of block degree at most two.  Write the
+coefficients of
+
+\[
+w,w^2,z,wz,z^2,u,uw,uz,u^2,r,rw,rz,ru,r^2
+\]
+
+in \(C\) as \(e_0,\ldots,e_{13}\).  On \(z=w=0\), solving the determinant
+equation linearly for the fourteen coefficients of \(D\) gives the
+exceptional-pivot chain
+
+\[
+e_{12},e_{11},e_{10},e_8,e_7,e_6,e_5,e_2.           \tag{8}
+\]
+
+The coefficient and augmented ranks are \(8/9\) through the \(e_6\)
+branch and \(6/7\) on the last three rows, including the terminal row.
+Each displayed coefficient is the only reduced denominator before it is
+set to zero.  Thus:
+
+\[
+\boxed{B=r,\quad \deg C,\deg D\le2
+       \quad\Longrightarrow\quad
+       \det d(\widetilde R,B,C,D)\notin K^\times.}    \tag{9}
+\]
+
+Degree three is the sharp threshold for the zero-slice equation.  Put
+\(q=1-cv\), take \(C=w\), and define
+
+\[
+D_3=\frac{
+u(-q^2-vrq+2v^2r^2)-6v^2z
+}{q^3}.                                               \tag{10}
+\]
+
+For \(H=0\),
+
+\[
+\det d(\widetilde R,r,w,D_3)\big|_{z=w=0}=1.
+\]
+
+This is only a rational function-field survivor.  Its polynomial numerator
+\[
+N_3=u(-q^2-vrq+2v^2r^2)-6v^2z
+\]
+has full determinant
+
+\[
+\det d(\widetilde R,r,w,N_3)=q^3+6rv^2w.             \tag{11}
+\]
+
+The denominator in (10) is unavoidable for a polynomial determinant-one
+lift with \(C=w\): at \(r=z=w=0\), the cofactor derivation for a fourth
+output is exactly \(-q\partial_u\).  Moreover, for \(H=0\) the full
+derivation is
+
+\[
+(R_u-rw)\partial_z-D_1\partial_u,
+\]
+
+which vanishes at
+
+\[
+r=q/v,\qquad w=R_u/r.
+\]
+
+Consequently no fourth output of any degree repairs this particular full
+\((\widetilde R,r,w)\) skeleton.  The rational cubic locates the next
+obstruction precisely: a surviving quadratic/cubic search must activate
+the \(P,Q\) or \(H\) coupling rather than merely increase the
+last-coordinate degree.
 
 ## 6. Surviving bounded moonshot
 
@@ -278,7 +416,8 @@ following from the outset:
 3. do not retain \(r\) as an exposed output;
 4. couple both modification variables before solving the determinant
    equation;
-5. make at least one of the two transverse outputs genuinely nonlinear;
+5. make both transverse outputs genuinely nonlinear, unless an affine one
+   is paired with an output of degree at least three;
 6. reject residual determinants whose restriction to the selected curve
    spans rank at most one, and reject any new zero such as \(r=3\);
 7. after a Keller solution is found, test whether its target algebra
@@ -295,10 +434,11 @@ B&=r+zP(r,u)+wQ(r,u)+zwS(r,u),
 \]
 
 with \(H,P,Q,S\) affine-linear at first, while the remaining two block
-outputs have total degree at most four and at least one has degree at least
-two.  The determinant is then imposed coefficient by coefficient over
-\(k(c,v)\).  This is genuinely nonlinear in four block variables, uses two
-interacting modification coordinates, and avoids every gate proved above.
+outputs have total degree at most four and either both have degree at least
+two or their degrees are \(1\) and at least \(3\).  The determinant is then
+imposed coefficient by coefficient over \(k(c,v)\).  This is genuinely
+nonlinear in four block variables, uses two interacting modification
+coordinates, and avoids every gate proved above.
 
 One explicit noninvertible solution surviving the rank-two character and
 stable-equivalence tests would give the desired mechanism beyond the
@@ -317,4 +457,7 @@ five-variable transfer determinants, their restrictions to the selected
 curve, all 80 degree-three six-variable slice systems, and the twelve
 coefficient/Plücker equations giving the affine-transverse unit ideal (4).
 It also checks the eight unit ideals in the general quadratic-fourth-output
-screen (5).
+screen (5), and the four complete projective exceptional-pivot trees proving
+(7).  Finally it checks the simultaneous-quadratic exposed-\(r\) tree (8),
+the rational cubic zero-slice survivor (10), its polynomial residual
+determinant (11), and the full rank-drop locus.

@@ -706,6 +706,38 @@ It finds the unique constant opposite-weight pair
 fundamental form by two independent formulas, and returns the nonzero leading
 normal symbol `-146880u^5/7` in the third saturated summand `R/(gamma)`.
 
+The finite LR Rees/SAGBI module calculation is reproduced by
+
+```bash
+.venv/bin/python scripts/compute_lr_rees_sagbi_modules.py
+# or, including the dependency-free separator replay:
+make verify-lr-rees-sagbi
+```
+
+It constructs the three-generator target-invariant SAGBI basis, the target
+modules and initial lifts in weights `p=+-1,+-2`, and the saturated normal
+quotient.  It certifies a linear weight-one degree drop `39 -> 34`, computes
+the further subduction to a new degree-`29` initial-module generator, computes
+the complete `3 x 24` quadratic matrices for `p=1,2`, proves the structural
+cutoff `|p|>=3`, and performs exact Singular module membership.  The sole
+new `p=2` column modulo the full `p=1` image is
+`II_(F,2,-2)(partial_A,A^2 partial_A)`, with remainder
+`-987/395*e_C`.  The generated JSON certificate is
+`artifacts/generated-results/lr_rees_sagbi_module_computation.json`.
+
+The decisive independence statement has a dependency-free replay:
+
+```bash
+python3 scripts/audit_lr_rees_sagbi_module_certificate.py
+```
+
+At `(u,gamma)=(1/6,0)`, the covector `(0,-144/79,1)` descends through the
+saturated normal relations, kills all 24 `p=1` columns, and takes the value
+`-987/395` on the new `p=2` column.  This matches the Singular normal
+remainder without using SymPy or Singular in the replay.  The main checker
+also computes the exact annihilator `(gamma,6*u-1)`, proving that the
+`p=2` image modulo `p=1` is one reduced residue-field copy of `Q`.
+
 The full normalized degree-five seed surface is checked by
 
 ```bash
@@ -1005,7 +1037,28 @@ keeps `P,Q` arbitrary affine, makes the fourth output a completely general
 degree-at-most-two polynomial, and proves unit coefficient ideals for the
 eight transverse skeletons
 `u,z,w,u+z,u+w,z+w,D0+z,D1+w`.  The two-general-quadratic-output system
-and arbitrary transverse directions outside this list remain open.
+remains open.  Uniformly for every nonconstant affine direction `C`, four
+projective pivot trees avoid a slow monolithic Gröbner calculation.  The
+nonzero-`r` chart `C=r+g*u+a*z+b*w` follows the exceptional divisors
+`p1,q1,p2,q2,g,p0-a`; the `r`-free charts
+`C=u+a*z+b*w,z+b*w,w` have chains `(p1,q1)`, `(q1-b*p1)`, and `(p1)`.
+The coefficient and augmented ranks differ on every open and terminal
+branch.  Thus no affine `C` can be paired with a general
+degree-at-most-two fourth output.  Arbitrary quadratic `C`, two
+simultaneously general quadratic outputs, and degree-at-least-three fourth
+outputs remain open.
+
+The checker also closes the exposed-`r` simultaneous-quadratic boundary
+`P=Q=0`: for two general degree-at-most-two outputs, an eight-step
+coefficient pivot tree ends with coefficient/augmented ranks `6/7`.
+Degree three is the first zero-slice escape.  With `q=1-c*v` and `C=w`, it
+verifies
+`D3=(u*(-q^2-v*r*q+2*v^2*r^2)-6*v^2*z)/q^3` has slice determinant one.
+The polynomial numerator instead has full determinant
+`q^3+6*r*v^2*w`; its cofactor derivation has an explicit common zero.
+Thus this exact rational survivor neither satisfies polynomiality nor lifts
+to a full Keller map, and a next quadratic/cubic search must use nonzero
+`P,Q` or `H`.
 
 This target includes the exact quadratic-gauge/cancellation intersection
 regression.  To run its symbolic `N=4,5,6,7` discriminant and all-factorization
@@ -1098,6 +1151,10 @@ saturation modules are audited by:
 .venv/bin/python scripts/verify_smooth_cubic_quartic_plane_saturation.py
 .venv/bin/python scripts/verify_singular_cubic_quartic_plane_saturation.py
 .venv/bin/python scripts/verify_smooth_cubic_quartic_three_space_saturation.py
+.venv/bin/python scripts/research_universal_cubic_quartic_kernel_saturation.py
+.venv/bin/python scripts/verify_cubic_quartic_ext_tail_absorption.py
+.venv/bin/python scripts/verify_cubic_symbol_dense_quartic_plane_saturation.py
+.venv/bin/python scripts/verify_cubic_symbol_affine_dense_quartic_plane_saturation.py
 ```
 
 For the homogeneous tensor, all seven squarefree strata have saturated
@@ -1147,6 +1204,49 @@ all 2,024 smooth coordinate three-spaces over
 relative rank-three `Ext^2` presentation is pulled back from the parameter
 origin with multiplicity six.  Directions supported on four or more basis
 tensors are not tested.
+The seventh command is an exact frontier calculation, not a universal
+theorem.  It checks four full-support dense lines for every squarefree
+symbol and the full first-ten-coordinate subspace for the smooth symbol.
+All 28 lines have uniform cotangent saturation, no parameter torsion,
+collision-axis support, multiplicity six, and central Ext presentation.
+The smooth parameter ten-space has the central pruned rank-three
+presentation.  It also constructs the full universal cotangent matrix,
+checks that its parameter-dependent terms have bidegrees `(1,3)`, `(1,5)`,
+and `(2,6)` in parameters/collision variables, and removes six
+parameter-independent unit pivots to obtain a cokernel-equivalent
+6-by-25 presentation.  This is an exact input reduction, not a saturation
+or Ext calculation over all 24 parameters; the universal Fitting
+discriminant remains open.
+The eighth command computes the last nonzero differential in the minimal
+support resolution on the seven full-support squarefree planes.  Six rows
+are parameter-independent and linear; their transposes present a
+length-six quotient killed by `(x,y,z)^2`.  The seventh row has a central
+quadratic part and a parameter-linear cubic part, so it reduces to zero
+modulo those six rows.  The resulting 12-generator parameter module has
+six independent constant relations and therefore
+`Fitt_6=(1), Fitt_5=(0)`.  This isolates universal Rees strictness of the
+resolution tail as the remaining Fitting step.
+The ninth command tests one low-height full-support plane for all seven
+squarefree symbols.  If `psi_plus` is the sum of the 24 fixed kernel-basis
+tensors and `psi_minus` their alternating sum, it computes the complete
+family `phi_h+u*psi_plus+v*psi_minus` over `Q[u,v,x,y,z]`.  In every row
+the cotangent presentation is saturated and the pruned rank-three relative
+Ext presentation is pulled back from the origin with multiplicity six.
+On `u^2-v^2!=0`, all 24 basis coordinates are nonzero.  This proves a
+two-parameter full-support result, not a Zariski-open theorem in the
+24-dimensional kernel.  Low-height dense parameter-three-space and
+higher-height parameter-four-space runs reached their declared 600-second
+timeouts and provide no mathematical evidence.
+The tenth command translates the same sum/alternating-sum plane by the
+deterministic generic quartic lift and tests all nine nonzero cubic-symbol
+orbits plus the zero symbol.  Over `Q[u,v,x,y,z]`, all ten rows have
+saturated cotangent presentation, support exactly equal to the parameter
+plane, relative Ext multiplicity six, and pruned rank-three presentation
+pulled back from `u=v=0`.  The checker also reconstructs the generic lift
+in the fixed primitive 24-element basis and verifies that every coordinate
+is nonzero.  This proves uniform purity restoration for the double-line,
+triple-line, and zero symbols on one affine plane; it does not prove
+normality or Keller-open compatibility.
 
 The equivalent coordinate-free test is that each collision cotangent module
 has unit first Fitting ideal (or vanishing second exterior power); the
@@ -2073,6 +2173,34 @@ coefficients
 This obstructs the selected conjugate jets, not the entire
 nine-dimensional fourth-lift components.
 
+The algebraization samples and their component-wide fifth obstructions are
+computed by
+
+```bash
+.venv/bin/python scripts/research_two_pair_counterexample_algebraization.py
+.venv/bin/python scripts/research_two_pair_counterexample_fifth_component.py
+```
+
+For the generic rational direction \((2,-1,3,1,-2)\), the documented
+direction \((1,2,3,4,5)\), and the pure apolar-odd direction
+\((0,1,0,0,0)\), the exact fourth fiber again has dimension nine, degree
+two, and discriminant square class \(41\).  At one point on each conjugate
+pair, restoring the previously omitted eleven-dimensional cubic-tangent
+kernel changes the fifth coefficient/augmented ranks from \(2/3\) to
+\(4/5\), so the selected points remain obstructed.  The component-wide
+commands then parameterize all nine coordinates on one component and
+restore the full eleven-dimensional kernel.  After the rank-two
+fourth-tangent image is eliminated, the remaining coefficient and
+augmented ranks over the component function field are \(2/3\).  Every
+coefficient \(3\)-by-\(3\) minor vanishes identically, while an augmented
+\(3\)-by-\(3\) minor is a nonzero constant with nonzero quadratic norm.
+Thus both conjugate affine \(9\)-planes are uniformly obstructed at fifth
+order for all three directions.  The exact \(F_{1+s,1}\) control is
+polynomial of parameter degree three, so its coefficients at orders
+\(4,\ldots,12\) vanish.
+See
+[`TWO_PAIR_COUNTEREXAMPLE_ALGEBRAIZATION_RESEARCH.md`](extended-geometry/TWO_PAIR_COUNTEREXAMPLE_ALGEBRAIZATION_RESEARCH.md).
+
 The minimum-degree separating invariant and the low-degree invariant-ring
 calculation are checked independently by
 
@@ -2087,6 +2215,12 @@ The degree-four moment-field continuation is replayed by
 .venv/bin/python scripts/research_degree_four_moment_field.py \
   --max-weight 16 --targets odd-square
 .venv/bin/python scripts/verify_degree_four_diagonal_moment_field.py
+.venv/bin/python scripts/verify_degree_four_single_phase_moment_fields.py
+.venv/bin/python scripts/research_degree_four_phase_one_chart.py \
+  --prime 101 --orders 1 2 3 4 5 6 7 8 9 10 \
+  --threads 6 --timeout 300 --groebner-basis 2 \
+  --compare-even-parameters 2 3 5 7 11 69 3 6 \
+  --test-apolar-orbit 2 3 5 7 11 69 3 6 --certify-example
 ```
 
 The first command constructs twenty-two algebraically independent
@@ -2102,6 +2236,39 @@ finite parameter ring of quotient length \(120\), and that the complete
 first-six-moment fiber through \((2,3,5,7,11)\) consists exactly of that
 point and its reversal.  Finiteness then proves that the full diagonal
 moment field is the reversal-fixed field, of exact generic degree two.
+The reversal is also the \(\operatorname{SL}_2\) Weyl action on the
+diagonal space, so these are two raw parameter points but one invariant
+quotient point; this is a fixed-locus control, not a degree-two quotient
+test.
+The fourth command also requires Singular.  It repeats the finite-parameter
+and exact-fiber calculation on all ten coordinate choices of a
+\(\tau\)-even positive/negative direction pair in phases \(1,2,3,4\).
+Every resulting six-dimensional parameter space has parameter quotient length
+\(360\), and its first-seven-moment fiber through
+\((2,3,5,7,11,221)\) is exactly the reduced reversal pair.  Openness
+then gives exact degree two and fixed-field equality for a nonempty
+Zariski-open family of raw direction-pair parameter spaces in every
+phase.  The odd cubic is nonzero on exactly four coordinate cross-pairs
+in phases one and two, so only those four are genuinely apolar-moving
+quotient tests; the other six lie in the fixed locus.
+The fifth command is an exact \(F_{101}\) experiment using `msolve`.  On
+the eight-dimensional chart containing both positive and both negative
+phase-one directions, the first ten moments have a reduced four-point
+fiber.  All moments through order eleven and all twenty-two known even
+parameters agree on the extra branch, while \(c_{234}\) changes from
+\(11\) to \(-11\).  A four-equation orbit basis proves that this branch
+is \(\operatorname{SL}_2\)-conjugate to the apolar reversal.  Thus the
+four raw points form two candidate quotient points.  The same checker
+verifies the exact rational branch \(u=5/3,w=6\): its first eleven moments
+agree over \(\mathbb Q\), its odd cubic is \(-1728\) versus \(1728\), and
+the matrix with rows \((0,-1/\sqrt3)\), \((\sqrt3,0)\) conjugates
+\(\tau(p)\) to it.  It also reconstructs the four rational points
+\(p,q,\tau(p),\tau(q)\) and verifies that the first-eight-moment Jacobian
+is nonzero at each, so all four are reduced and isolated in
+characteristic zero.  Fiber completeness remains proved only modulo
+\(101\): additional characteristic-zero components have not been
+excluded, and no characteristic-zero generic-degree conclusion is
+claimed.
 The full \(22\)-dimensional degree-four moment-field equality remains
 open; see
 [`DEGREE_FOUR_MOMENT_FIELD.md`](extended-geometry/DEGREE_FOUR_MOMENT_FIELD.md).
@@ -2127,6 +2294,100 @@ all-moment-zero witnesses in degrees four and five.  A zero relation
 intersection is an exact bounded nonexistence certificate; Hilbert
 compatibility is not a proof of a nullcone zero fiber.  See
 [`COMPLETED_MOMENT_ALGEBRA_RESEARCH.md`](extended-geometry/COMPLETED_MOMENT_ALGEBRA_RESEARCH.md).
+
+The automatic missing-invariant and \(d=6\) extension is replayed by
+
+```bash
+.venv/bin/python scripts/research_completed_moment_algebra.py \
+  --degrees 3 4 5 6 --invariant-cutoff 6 \
+  --skip-relation-tests --power-witness-cutoff 12 \
+  --ladder-beta-check 32 \
+  --output artifacts/generated-results/automatic_missing_invariants_d3_d6.json
+```
+
+The refined weight-zero-minus-weight-two calculation splits the invariant
+spaces by the apolar involution through polynomial degree six and subtracts
+the moment-monomial subspace.  It proves that the first missing degree is
+two, with even multiplicity \(d-1\), and enumerates the first odd cubic
+triples in degrees four through six.  It also certifies full modular
+moment-Jacobian ranks \(13,22,33,46\), runs the Hilbert necessary tests for
+candidate augmented parameter systems, and evaluates \(q_2\) on the
+propagated all-order witnesses through \(d=6\).  The conclusion that \(q_2\)
+removes the recorded witnesses is not a classification of every semistable
+moment-zero component.  The same run verifies the radial Casimir recurrence
+\[
+q_{2r}^{(d+1)}(Rf)=(d-r+1)(d+r+2)q_{2r}^{(d)}(f),
+\]
+the resulting all-degree closed formulas for \(q_2,q_4\) on
+\(R^{d-4}F_4\), and the exact power-witness pattern through \(F_4^{12}\).
+A finite-difference proof using the chart expansion of \(F_4^m\) shows
+for every \(m\geq1\) that all earlier quadratics vanish and
+\(q_{2\lceil m/2\rceil}(F_4^m)\ne0\).  The run regresses the exact beta
+sums used in that proof through \(m=32\).  The stronger formula listing
+every surviving torus phase is recorded through \(m=12\) and remains
+bounded evidence.
+
+The exact diagonal fixed-field theorem in all three degrees is replayed
+by
+
+```bash
+.venv/bin/python scripts/verify_completed_moment_diagonal_fields.py
+```
+
+For \(d=3,4,5\), the checker proves that the first \(d+1\) diagonal
+moments form a parameter system of quotient length
+\((d+1)!=24,120,720\).  Homogeneous finite-field standard bases at
+\(32003\), followed by projective properness and the regular-sequence
+Hilbert series, give the characteristic-zero finiteness statement.
+An invertible midpoint/direction change then proves over \(\mathbb Q\)
+that the first \(d+2\) moment fiber through the selected integral point is
+exactly
+\((y_0,\ldots,y_{d-1},s^2-1)\).  Hence the full diagonal moment field is
+the reversal-fixed field and has exact generic degree two in each degree.
+These are slice theorems, not statements about the full invariant
+quotients.
+
+The exact single-phase extension in degrees three and five is replayed
+by
+
+```bash
+.venv/bin/python scripts/verify_completed_moment_single_phase_fields.py
+```
+
+For one matching apolar-eigendirection pair in every nonzero phase, the
+checker proves that the first \(d+2\) moments have full Jacobian rank and
+that adding \(\mu_{d+3}\) makes the moment-origin fiber finite.  Exact
+standard bases over \(\mathbb F_{32003}\), weighted-projective
+properness, and Nakayama lift the displayed two-point reversal fiber to
+characteristic zero.  The quotient lengths at the special moment origin
+are \(54\) for \(d=3\) and \(1934\) for \(d=5\).  Quintic cross-direction
+slices in phases one and two have
+\(c_{234}=-273686400/7\), so those reversal pairs are genuinely distinct
+invariant-quotient points.  The remaining slices are raw parameter-space
+fixed-field controls.  None of these slice certificates determines the
+generic degree on the full invariant quotient.
+
+The first branchwise global-\(d=4\) \(q_2\)-augmented nullcone attack is
+replayed by
+
+```bash
+.venv/bin/python scripts/research_degree_four_q2_augmented_nullcone.py \
+  --prime 32003 --max-jet 4 --composition native \
+  --ordering dp --timeout 300
+```
+
+On the branch \(q_2=0,F_2\ne0\), normalize \(F_2\) to a highest-weight
+square.  At one deterministic synchronized point, the checker expands
+the first twenty-one moments in the twelve forbidden weight coordinates.
+Moments two through five provide four formal pivots.  In the remaining
+eight variables, the exact quadratic and cubic jet ideals over
+\(\mathbb F_{32003}\) have dimensions six and four.  This is a bounded
+normal-jet frontier, not a formal-isolation or global-nullcone theorem.
+The native eight-variable quartic basis reaches its declared
+\(300\)-second timeout, which supplies no mathematical evidence.
+Quartic and quintic normal terms and all \(F_2=0\) boundary branches
+remain open.  See
+[`DEGREE_FOUR_Q2_AUGMENTED_NULLCONE.md`](extended-geometry/DEGREE_FOUR_Q2_AUGMENTED_NULLCONE.md).
 
 The explicit first \(d=2\) moment relation is reconstructed and verified
 by
@@ -2339,6 +2600,23 @@ projected odd-height obstruction consists of six quadrics forming a
 complete intersection with Hilbert vector
 \((1,6,15,20,15,6,1)\) and length \(64\).
 
+The all-degree linear pivot theorem has the dependency-free regression
+
+```bash
+python3 scripts/verify_two_pair_linear_pivot.py
+```
+
+The written proof uses the endpoint factorization
+`2p=-(1+x)(2+x)+(1-u)x^(-1)(1+x)^3` over
+\(\mathbb Z_{(2)}\).  With
+\(\delta_s=s+\nu_2(s!)\), the scaled local Smith exponents are two copies
+of \(\delta_2,\delta_4,\ldots,\delta_d\) in even degree.  In degree
+\(d=2h-1\), they are one \(\delta_1\), two copies of
+\(\delta_3,\ldots,\delta_{2h-1}\), and one \(\delta_{2h+1}\).  The
+checker independently reconstructs the terminating binomial entries and
+verifies this pattern exactly in degrees 5 through 25.  This finite range
+is a regression for the filtered proof, not the proof itself.
+
 Degrees eight through eleven use the scalable good-prime replay
 
 ```bash
@@ -2457,9 +2735,31 @@ radical and with eighth-power certificates. On the chart
 division by the invertible cubic powers reduce the problem to a
 three-variable unit ideal over \(\mathbb Q\). One Rabinowitsch membership
 remains: on \(p\ne0\), the \(8c-3d^2\ne0\) chart should be supported only
-at \(\lambda=0,1\). Modular standard bases verify this statement at
-several good primes, but the checker does not promote that evidence to a
-characteristic-zero certificate.
+at \(\lambda=0,1\).  Writing \(q=\lambda^4(\lambda-1)^4\) and
+\(M=p(8c-3d^2)\), the checker reduces this to the target-only membership
+\(qM^5\in(f_3,f_4,f_5,f_6)\).  Modulo \(101,103,107\), the least
+saturation exponent is consistently \(5\) and the degree-order basis has
+size \(87\).  At \(101\), the four lifted multipliers have degree/term
+profiles `(34,5356)`, `(29,3679)`, `(27,3037)`, and `(22,1853)`.
+These are exact finite-field identities, but the checker does not promote
+them to a characteristic-zero certificate.
+
+The target-only lift experiments can be run separately:
+
+```bash
+.venv/bin/python \
+  scripts/research_two_variable_quartic_squarefree_membership.py --prime 101
+.venv/bin/python \
+  scripts/research_two_variable_quartic_squarefree_membership.py \
+  --prime-lift 101 5
+.venv/bin/python \
+  scripts/research_two_variable_quartic_squarefree_membership.py --direct 5
+```
+
+The first two commands reproduce the exponent, basis size, and finite-field
+lift profile.  The third asks for the exact rational target-only lift; the
+recorded run exceeded its 1,200-second bound.  A timeout is not evidence
+against membership.
 
 The fourth checker handles the remaining at-most-two-root normal forms
 \(u^rv^{4-r}\). For \(r=0,4\), the first moment gives the one-sided
@@ -2993,6 +3293,38 @@ normal forms of both \(\mu_6,\mu_7\) occupy every basis coordinate.
 Independent calculations over \(\mathbb F_{47}\) and
 \(\mathbb F_{101}\) replay all quotient shapes.  This is a finite
 quotient certificate, not a full boundary unit certificate.
+
+The \(L=1\) trace/norm reconnaissance treats
+\((s_3,s_5,t_4)\) as a rank-twelve finite fiber after
+\(\mu_3,\mu_4,\mu_5\).  Export the rational-function-field generator
+matrices, sample exact multiplication invariants at two good primes, and
+replay every sampled joint-rank-drop point against the corrected later
+moments with:
+
+```bash
+.venv/bin/python \
+  scripts/explore_two_pair_sic_bidegree33_boundary_coefficients.py \
+  --prime 47 --orders 2,3,4,5,6 --trace-norm --timeout 600
+.venv/bin/python \
+  scripts/explore_two_pair_sic_bidegree33_boundary_coefficients.py \
+  --prime 47 --orders 2,3,4,5,6,7 \
+  --trace-norm --trace-samples 1200 --timeout 600
+.venv/bin/python \
+  scripts/explore_two_pair_sic_bidegree33_boundary_coefficients.py \
+  --prime 101 --orders 2,3,4,5,6,7 \
+  --trace-norm --trace-samples 250 --timeout 600
+.venv/bin/python \
+  scripts/verify_two_pair_sic_bidegree33_boundary_trace_candidates.py \
+  --prime 47 --timeout 600
+```
+
+Every accepted specialization at both primes has leading ideal
+\((s_3^2,s_5^2,s_5t_4^2,t_4^4)\).  The mod-\(47\) scan finds three
+reduced length-one common \((\mu_6,\mu_7)\) fibers; corrected \(\mu_8\)
+is nonzero at all three.  The commands write their exact finite-field
+data under `artifacts/generated-results/`.  This is sampled modular
+evidence only, not an exhaustion of the rank-drop locus or a
+characteristic-zero nullcone certificate.
 
 Modular full-chart reconnaissance is available separately:
 
@@ -3562,6 +3894,7 @@ assembly, and root-incidence derivative-split checks are:
 .venv/bin/python scripts/verify_a4_two_mask_local_viability.py
 .venv/bin/python scripts/verify_a4_affine_modification_obstruction.py
 .venv/bin/python scripts/verify_a4_corrected_boundary_selector.py
+.venv/bin/python scripts/verify_a4_boundary_coloring_surgery.py
 Singular -q scripts/verify_a4_corrected_boundary_genus.sing
 ```
 
@@ -3777,7 +4110,12 @@ has no lowering monomial shear, but the compiler finds
 the one-polynomial-shear gap.  It is not yet a proof of global minimum under
 all plane polynomial automorphisms: the remaining automorphism gate is a
 marked multi-pole peak-reduction theorem for alternating triangular
-directions.
+directions.  As a bounded regression only, the checker exhausts all 49
+ordered nonempty-support pairs on Laurent exponents `{-1,0,1}` and every
+alternating two-step monomial shear of degrees one or two with coefficients
+`+/-1`.  It finds 16 paths which lower height after a nondecreasing first
+step; every initial pair already has a lowering complete polynomial shear,
+so no terminal peak counterexample occurs in this grid.
 See
 [`plane-jc/JC2_GLOBAL_COX_PACKET_ATTACK.md`](plane-jc/JC2_GLOBAL_COX_PACKET_ATTACK.md).
 The normalization and conductor formulas are written algebraic proofs.  The
@@ -3908,6 +4246,85 @@ not an exclusion of symbolic multi-parameter generators, mixed shear
 compositions, coefficient-dependent repairs, or general coisotropic
 embeddings.  See
 [`HC4_MIXED_CANONICAL_PIVOT_SEARCH.md`](HC4_MIXED_CANONICAL_PIVOT_SEARCH.md).
+
+The first genuinely compositional continuation is:
+
+```bash
+PYTHONHASHSEED=0 .venv/bin/python \
+  scripts/search_hc4_mixed_quadratic_words.py \
+  --output artifacts/generated-results/hc4_mixed_quadratic_words.json
+```
+
+From 36 signed mixed quadratic Hamiltonian letters it forms all 1296
+ordered words, keeps the 648 noncommuting words, removes 48 pure-source
+cotangent maps, and deduplicates the remaining 600 exact linear symplectic
+charts.  They have 1040 scalar affine pivots and 168 jointly affine pairs.
+Exactly 864 scalar trials retain the inherited `D=0` mechanism.  Every pair
+fails the rank-at-most-two budget and all 27216 complete determinants in the
+same repair box are nonconstant by exact modular witnesses.  This is
+`HC4MCP2`; words containing a cubic shear and general coefficient-dependent
+repairs remain open.
+
+The first word containing a cubic mixed shear is:
+
+```bash
+PYTHONHASHSEED=0 .venv/bin/python \
+  scripts/search_hc4_mixed_quadratic_words.py \
+  --family quadratic-cubic \
+  --output artifacts/generated-results/hc4_mixed_quadratic_cubic_words.json
+```
+
+It uses the 18 unit-time quadratic and 18 unit-time cubic mixed letters in
+both orders.  Exact Poisson-bracket filtering and polynomial-map
+deduplication leave 324 noncommuting nonlinear canonical words.  They have
+576 scalar affine pivots and 108 jointly affine pairs, but no specialized
+scalar remainder survives.  Every pair fails the corank budget and all
+17496 complete repairs are nonconstant by exact modular witnesses.  The
+post-gate audit also gives a nonconstant parent Hessian determinant in every
+chart.  This is the normalized finite-box theorem `HC4MCP3`; signed flow
+times, symbolic coefficient families, and coefficient-dependent repairs
+remain open.
+
+The fixed-order signed quadratic--cubic canonical box is:
+
+```bash
+PYTHONHASHSEED=0 .venv/bin/python \
+  scripts/search_hc4_mixed_quadratic_words.py \
+  --family signed-quadratic-cubic \
+  --output \
+  artifacts/generated-results/hc4_canonical_signed_quadratic_cubic_words.json
+```
+
+It searches \(T_{H_2}\circ T_{H_1}\) with a signed quadratic \(H_1\) and
+signed cubic \(H_2\).  Of 1296 raw words, 648 commute and are excluded.
+The 648 noncommuting maps are distinct.  Exact support gives affine-pivot
+dimension one for 432 words and dimension two for 216; the latter are
+exactly the shared-dual words.  Their bracket-incidence census is 96 in
+each one-sided type and 24 reciprocal words.  Every transformed reduced
+Hessian pencil is generically rank four by an exact modular determinant
+witness, every parent Hessian is nonconstant, and all 34992 complete
+descended determinants are nonconstant in the declared repair box.  This
+is the finite-box result `HC4MCP4`.  The box does not classify oblique
+affine directions, symbolic coefficients, longer words, or
+coefficient-dependent repairs.
+
+The fixed-order symbolic coefficient closure is:
+
+```bash
+PYTHONHASHSEED=0 .venv/bin/python \
+  scripts/verify_hc4_symbolic_quadratic_cubic_words.py \
+  --output \
+  artifacts/generated-results/hc4_symbolic_quadratic_cubic_words.json
+```
+
+For each of the 54 noncommuting shared-dual support/sign patterns, it takes
+\(H_1=aL_1^2\), \(H_2=bL_2^3\) over `Q[a,b]` and saturates by `a*b`.
+Exact parent-Hessian determinant differences at integer probes give 14
+localized monomial certificates and 40 unit standard bases in Singular.
+Thus no pattern has a parent-constant specialization with `a*b != 0`.
+This proves `HC4MCP5`, a coefficient-uniform parent obstruction for the
+fixed degree order.  Reverse-order words, zero coefficients, other
+Hamiltonian supports, oblique directions, and longer words remain open.
 
 The direct one-variable calculation for the `PC(2)` graph is:
 
@@ -4515,9 +4932,14 @@ The component-directed exceptional-locus research transcript is:
 
 ```bash
 .venv/bin/python scripts/research_hc4_exceptional_schur_locus.py
+.venv/bin/python scripts/research_hc4_exceptional_schur_locus.py \
+  --exact-pure-chart --singular-timeout 900
 .venv/bin/python \
   scripts/verify_hc4_quintic_two_parameter_symmetric_schur.py \
   --extract-basis-denominators --basis-profile
+.venv/bin/python \
+  scripts/verify_hc4_quintic_two_parameter_symmetric_schur.py \
+  --cube-torsion-profile --cube-index 0 --cube-torsion-stage generic
 ```
 
 The current modular reconstruction, exact special-fiber geometry, and
@@ -4529,7 +4951,69 @@ points modulo \(47,101,103\), but this is not yet a full
 15-coefficient classification: the exact generic denominator and
 mixed-sign-character quartics remain open.  The transformation-aware
 `--extract-denominators` calculation timed out at its 900-second Singular
-bound and supplies no certificate.
+bound and supplies no certificate.  The basis-only denominator is the
+constant \(2\), so the desired exceptional divisor must occur in the lift
+certificates.  The displayed first sign-character-block cube lift also
+timed out at 900 seconds; it has 191 target cubic monomials and 441
+multiplication columns.  The direct characteristic-zero `a=1`
+even-quartic elimination likewise reached its 900-second bound before
+returning a standard basis; the reconstructed parameter ideal therefore
+still has modular rather than exact-containment status.
+
+The degree-three cube-torsion research modes are:
+
+```bash
+.venv/bin/python \
+  scripts/verify_hc4_quintic_two_parameter_symmetric_schur.py \
+  --cube-torsion-profile --cube-index 2 \
+  --cube-torsion-stage finite-field --cube-prime 19
+.venv/bin/python \
+  scripts/verify_hc4_quintic_two_parameter_symmetric_schur.py \
+  --cube-torsion-profile --cube-index 2 \
+  --cube-torsion-stage specialize \
+  --cube-mu-value=-5/3 --cube-nu-value=-1/6
+.venv/bin/python \
+  scripts/verify_hc4_quintic_two_parameter_symmetric_schur.py \
+  --cube-torsion-profile --cube-index 2 \
+  --cube-torsion-stage fiber \
+  --cube-mu-value=-5/3 --cube-nu-value=-1/6
+```
+
+The construction uses the canonical multiplication presentation
+`A^1710 -> A^680` and the fifteen cube targets, not a noncanonical
+`A^114 -> A^15` compression.  Complete scans of the four
+coefficient-monomial orbits modulo `11,13,17,19` reconstruct the radial
+point and the additional point `(-5/3,-1/6)` on `nu!=0`.  Exact rational
+specialization shows that precisely the three `x_i^2*x_j^2` coefficient
+cubes survive at the new point, while every fourth power is zero; the
+60-dimensional fiber is therefore supported at the coefficient origin.
+This is a nilpotence-order jump, not a reduced exceptional Schur pair.
+The even-block integral annihilator and function-field lift each reached a
+900-second timeout; relation extraction and the zeroth Fitting ideal were
+not reached.  See
+[`HC4_FITTING_DENOMINATOR_EXTRACTION.md`](HC4_FITTING_DENOMINATOR_EXTRACTION.md)
+and
+[`hc4_fitting_denominator_extraction.json`](artifacts/generated-results/hc4_fitting_denominator_extraction.json).
+
+The full-coefficient reduced-fiber scans are:
+
+```bash
+for prime in 7 11 13; do
+  .venv/bin/python -u \
+    scripts/verify_hc4_quintic_two_parameter_symmetric_schur.py \
+    --fourth-power-profile --fourth-prime "$prime"
+done
+```
+
+The zero sign-character block of degree four has 819 target monomials and
+3474 equation-times-quadratic columns.  At all \(42+110+156\) parameter
+points on `nu!=0`, membership of all fifteen coefficient fourth powers
+certifies an empty reduced projective Schur fiber except at the radial
+reduction.  The cube-torsion point `(-5/3,-1/6)` is certified
+reduced-empty at every prime.  These scans cover \(\mathbb F_p\)-rational
+parameters, not points over proper finite-field extensions and not the
+characteristic-zero support ideal.  See
+[`hc4_fourth_power_support.json`](artifacts/generated-results/hc4_fourth_power_support.json).
 
 The direct collision-normalized finite-field experiment in degree bounds
 five through eight is:

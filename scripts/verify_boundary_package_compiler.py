@@ -9,6 +9,7 @@ from dataclasses import replace
 from boundary_package_compiler import (
     PackageStatus,
     StageTwoRealizationCertificate,
+    a4_cone_branch_obstruction_package,
     a4_three_puncture_package,
     affine_ramification_obstruction_package,
     all_benchmark_packages,
@@ -104,6 +105,17 @@ assert bad_affine.status is PackageStatus.OBSTRUCTED
 assert "keller.affine_ramification" in obstruction_codes(bad_affine)
 print("PASS: ramification inside the Keller source is rejected")
 
+cone_branch = compile_boundary_package(a4_cone_branch_obstruction_package())
+assert cone_branch.status is PackageStatus.OBSTRUCTED
+assert invariant(cone_branch, "selected_ramified_prime_count") == 1
+assert invariant(cone_branch, "riemann_hurwitz") == {
+    "lhs": -2,
+    "rhs": -2,
+    "ramification": 6,
+}
+assert obstruction_codes(cone_branch) == {"keller.affine_ramification"}
+print("PASS: the exact A4 cone (e,f)=(2,2) profile fails only affine coloring")
+
 bad_ledger = compile_boundary_package(determinant_ledger_obstruction_package())
 assert bad_ledger.status is PackageStatus.OBSTRUCTED
 assert "ledger.determinant_balance" in obstruction_codes(bad_ledger)
@@ -141,6 +153,7 @@ assert [report["status"] for report in reports] == [
     "unknown",
     "unknown",
     "unknown",
+    "obstructed",
     "obstructed",
     "obstructed",
     "obstructed",

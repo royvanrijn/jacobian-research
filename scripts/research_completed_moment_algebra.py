@@ -1,12 +1,17 @@
 #!/usr/bin/env python3
-"""Bounded exact tests for completed two-pair moment coordinates.
+"""Exact tests for completed two-pair moment coordinates.
 
-For V_d = End(Sym^d), d=3,4,5, this exploratory script:
+For V_d = End(Sym^d), d=3,4,5,6, this exploratory script:
 
 * certifies full modular Jacobian rank for the initial moment prefix;
 * constructs every quadratic Casimir q_(2r) and the first convenient
   apolar-odd trace invariant;
-* checks the propagated d=4 moment-zero witness in degrees four and five;
+* checks the propagated d=4 moment-zero witness in every requested
+  degree at least four;
+* computes the apolar-even/odd invariant dimensions and the quotient by
+  moment monomials in low polynomial degrees;
+* regresses the beta-sum identities used in the all-power Casimir-ladder
+  proof;
 * searches over a good finite field for low-weight rational expressions
   of missing quadratic invariants and of the square of the odd invariant.
 
@@ -22,6 +27,8 @@ import argparse
 import json
 from collections import defaultdict
 from dataclasses import dataclass
+from fractions import Fraction
+from itertools import combinations
 from math import comb, factorial
 from pathlib import Path
 
@@ -468,6 +475,300 @@ def invariant_hilbert_coefficients(d: int, cutoff: int) -> list[int]:
     ]
 
 
+def refined_invariant_hilbert_coefficients(
+    d: int,
+    cutoff: int,
+) -> tuple[list[int], list[int]]:
+    """Split Q[V_d]^SL2 by the apolar-adjoint character."""
+    coefficients = [defaultdict(int) for _ in range(cutoff + 1)]
+    coefficients[0][(0, 0)] = 1
+    for component in range(d + 1):
+        component_parity = component % 2
+        for weight in range(-2 * component, 2 * component + 1, 2):
+            for degree in range(1, cutoff + 1):
+                for (
+                    total_weight,
+                    total_parity,
+                ), multiplicity in list(coefficients[degree - 1].items()):
+                    coefficients[degree][
+                        (
+                            total_weight + weight,
+                            total_parity ^ component_parity,
+                        )
+                    ] += multiplicity
+    even = [
+        coefficients[degree][(0, 0)]
+        - coefficients[degree][(2, 0)]
+        for degree in range(cutoff + 1)
+    ]
+    odd = [
+        coefficients[degree][(0, 1)]
+        - coefficients[degree][(2, 1)]
+        for degree in range(cutoff + 1)
+    ]
+    return even, odd
+
+
+def moment_monomial_dimensions(cutoff: int) -> list[int]:
+    """Dimensions assuming mu_1,...,mu_cutoff are independent."""
+    return [
+        len(weighted_exponents(tuple(range(1, degree + 1)), degree))
+        for degree in range(cutoff + 1)
+    ]
+
+
+def odd_cubic_component_triples(d: int) -> list[tuple[int, int, int]]:
+    """The distinct-component odd trilinear contractions."""
+    return [
+        triple
+        for triple in combinations(range(1, d + 1), 3)
+        if triple[0] + triple[1] >= triple[2]
+        and sum(triple) % 2 == 1
+    ]
+
+
+def odd_cubic_dimension_formula(d: int) -> int:
+    if d % 2 == 0:
+        return d * (d - 1) * (d - 2) // 24
+    return (d + 1) * (d - 1) * (d - 3) // 24
+
+
+def casimir_radial_multiplier(d: int, component: int) -> int:
+    """q_(2r) multiplier under V_d -> V_(d+1), f |-> Rf."""
+    return (d - component + 1) * (d + component + 2)
+
+
+def raising_lowering_trace_norm(d: int, component: int) -> int:
+    """tr(E^r F^r) on Sym^d, evaluated directly."""
+    r = component
+    return sum(
+        factorial(index)
+        // factorial(index - r)
+        * factorial(d - index + r)
+        // factorial(d - index)
+        for index in range(r, d + 1)
+    )
+
+
+def propagated_witness_casimir_formula(d: int) -> list[int]:
+    assert d >= 4
+    return [
+        0,
+        -factorial(d - 1) * factorial(d + 2) // 5,
+        factorial(d - 2) * factorial(d + 3) // 5,
+        *([0] * (d - 2)),
+    ]
+
+
+def multiply_coefficient_matrices(
+    left: list[list[sp.Expr | int]],
+    right: list[list[sp.Expr | int]],
+) -> list[list[sp.Expr]]:
+    size = len(left) + len(right) - 1
+    result = [[sp.Integer(0)] * size for _ in range(size)]
+    for left_row, row_values in enumerate(left):
+        for left_column, left_value in enumerate(row_values):
+            if not left_value:
+                continue
+            for right_row, right_row_values in enumerate(right):
+                for right_column, right_value in enumerate(
+                    right_row_values
+                ):
+                    if right_value:
+                        result[left_row + right_row][
+                            left_column + right_column
+                        ] += left_value * right_value
+    return result
+
+
+def component_projection_exact_sparse(
+    coefficients: list[list[sp.Expr | int]],
+    d: int,
+    component: int,
+) -> sp.Matrix:
+    """Project one component without constructing the dense projector."""
+    factorial_diagonal = sp.diag(
+        *[
+            factorial(index) * factorial(d - index)
+            for index in range(d + 1)
+        ]
+    )
+    projected = sp.Matrix(coefficients).T * factorial_diagonal
+    raising, lowering, cartan = sl2_matrices(d)
+
+    def adjoint(generator: sp.Matrix, matrix: sp.Matrix) -> sp.Matrix:
+        return generator * matrix - matrix * generator
+
+    def casimir(matrix: sp.Matrix) -> sp.Matrix:
+        return (
+            adjoint(raising, adjoint(lowering, matrix))
+            + adjoint(lowering, adjoint(raising, matrix))
+            + adjoint(cartan, adjoint(cartan, matrix)) / 2
+        )
+
+    eigenvalue = 2 * component * (component + 1)
+    for other in range(d + 1):
+        if other == component:
+            continue
+        other_eigenvalue = 2 * other * (other + 1)
+        projected = (
+            casimir(projected) - other_eigenvalue * projected
+        ) / (eigenvalue - other_eigenvalue)
+    return projected
+
+
+def component_quadratic_exact_sparse(
+    coefficients: list[list[sp.Expr | int]],
+    d: int,
+    component: int,
+) -> sp.Expr:
+    projected = component_projection_exact_sparse(
+        coefficients, d, component
+    )
+    return sp.factor(sp.trace(projected * projected))
+
+
+def power_witness_scan(cutoff: int) -> list[dict[str, object]]:
+    seed = [
+        [sp.sympify(value) for value in row]
+        for row in propagated_witness(4)
+    ]
+    power = seed
+    result = []
+    for exponent in range(1, cutoff + 1):
+        if exponent > 1:
+            power = multiply_coefficient_matrices(power, seed)
+        degree = 4 * exponent
+        predicted_first_component = (exponent + 1) // 2
+        tested_projections = [
+            component_projection_exact_sparse(power, degree, component)
+            for component in range(1, predicted_first_component + 1)
+        ]
+        tested_values = [
+            sp.factor(sp.trace(projected * projected))
+            for projected in tested_projections
+        ]
+        phase_supports = [
+            sorted(
+                {
+                    row - column
+                    for row in range(degree + 1)
+                    for column in range(degree + 1)
+                    if projected[row, column]
+                }
+            )
+            for projected in tested_projections
+        ]
+        assert not any(tested_values[:-1])
+        assert tested_values[-1] != 0
+        assert all(
+            all(phase > 0 for phase in support)
+            for support in phase_supports[:-1]
+        )
+        assert min(phase_supports[-1]) == -predicted_first_component
+        result.append(
+            {
+                "power": exponent,
+                "degree": degree,
+                "quadratic_components_tested": [
+                    f"q_{2 * component}"
+                    for component in range(
+                        1, predicted_first_component + 1
+                    )
+                ],
+                "values": [str(value) for value in tested_values],
+                "phase_supports": phase_supports,
+                "first_nonzero_quadratic": (
+                    f"q_{2 * predicted_first_component}"
+                ),
+            }
+        )
+    return result
+
+
+def binomial_or_zero(n: int, k: int) -> int:
+    if k < 0 or k > n:
+        return 0
+    return comb(n, k)
+
+
+def half_integer_beta(n: int, a: int) -> Fraction:
+    """Return B(n+1/2,a+1) exactly for nonnegative n,a."""
+    assert n >= 0 and a >= 0
+    return Fraction(
+        4 ** (a + 1)
+        * factorial(2 * n)
+        * factorial(n + a + 1)
+        * factorial(a),
+        factorial(n) * factorial(2 * n + 2 * a + 2),
+    )
+
+
+def negative_phase_moment(
+    exponent: int,
+    phase: int,
+    monomial_degree: int,
+) -> Fraction:
+    """The beta sum M_(m,a,ell) used in the all-power proof."""
+    return sum(
+        (
+            (-1) ** index
+            * comb(exponent, index)
+            * binomial_or_zero(
+                exponent + 2 * index, exponent + phase
+            )
+            * half_integer_beta(index + monomial_degree, phase)
+        )
+        for index in range(exponent + 1)
+    )
+
+
+def positive_extreme_moment(exponent: int, phase: int) -> Fraction:
+    """Integral of H_(m,-a)(t^2), detecting the positive extreme."""
+    return sum(
+        (
+            (-1) ** index
+            * comb(exponent, index)
+            * binomial_or_zero(
+                exponent + 2 * index, exponent - phase
+            )
+            * half_integer_beta(index, 0)
+        )
+        for index in range(exponent + 1)
+    )
+
+
+def all_degree_ladder_regression(cutoff: int) -> list[dict[str, object]]:
+    """Exact finite regression of the beta identities in the general proof."""
+    result = []
+    for exponent in range(1, cutoff + 1):
+        first_component = (exponent + 1) // 2
+        zero_moments = [
+            negative_phase_moment(exponent, phase, monomial_degree)
+            for phase in range(first_component)
+            for monomial_degree in range(first_component - phase)
+        ]
+        assert not any(zero_moments)
+        negative_extreme = negative_phase_moment(
+            exponent, first_component, 0
+        )
+        positive_extreme = positive_extreme_moment(
+            exponent, first_component
+        )
+        assert negative_extreme
+        assert positive_extreme
+        result.append(
+            {
+                "power": exponent,
+                "first_component": first_component,
+                "vanishing_beta_sums_checked": len(zero_moments),
+                "negative_extreme_moment": str(negative_extreme),
+                "positive_extreme_moment": str(positive_extreme),
+            }
+        )
+    return result
+
+
 def hilbert_numerator(
     hilbert: list[int],
     degrees: tuple[int, ...],
@@ -651,8 +952,11 @@ def relation_intersection(
     )
 
 
-def propagated_witness(d: int) -> list[list[int]]:
-    assert d in (4, 5)
+def propagated_witness(
+    d: int,
+) -> list[list[sp.Rational | int]]:
+    """Coefficient matrix of R^(d-4) F_4."""
+    assert d >= 4
     witness = [
         [-1, 2, 0, 0, 0],
         [-sp.Rational(3, 2), 2, 6, 0, 0],
@@ -662,11 +966,14 @@ def propagated_witness(d: int) -> list[list[int]]:
     ]
     if d == 4:
         return witness
-    result = [[sp.Integer(0)] * 6 for _ in range(6)]
+    radial_power = d - 4
+    result = [[sp.Integer(0)] * (d + 1) for _ in range(d + 1)]
     for row in range(5):
         for column in range(5):
-            result[row][column] += witness[row][column]
-            result[row + 1][column + 1] += witness[row][column]
+            for shift in range(radial_power + 1):
+                result[row + shift][column + shift] += (
+                    comb(radial_power, shift) * witness[row][column]
+                )
     return result
 
 
@@ -690,6 +997,8 @@ def run_degree(
     max_weight: int,
     extra_samples: int,
     prime: int,
+    invariant_cutoff: int,
+    skip_relation_tests: bool,
 ) -> dict[str, object]:
     quotient_dimension = (d + 1) ** 2 - 3
     projectors = casimir_projectors_mod(d, prime)
@@ -701,6 +1010,41 @@ def run_degree(
     print(
         f"d={d} moment_jacobian orders=1..{quotient_dimension} "
         f"rank={jacobian_rank}"
+    )
+    invariant_even, invariant_odd = refined_invariant_hilbert_coefficients(
+        d, invariant_cutoff
+    )
+    odd_cubic_triples = odd_cubic_component_triples(d)
+    assert len(odd_cubic_triples) == odd_cubic_dimension_formula(d)
+    radial_multipliers = [
+        casimir_radial_multiplier(d, component)
+        for component in range(d + 1)
+    ]
+    for component, multiplier in enumerate(radial_multipliers):
+        current_norm = raising_lowering_trace_norm(d, component)
+        next_norm = raising_lowering_trace_norm(d + 1, component)
+        assert current_norm == factorial(component) ** 2 * comb(
+            d + component + 1, 2 * component + 1
+        )
+        assert next_norm == factorial(component) ** 2 * comb(
+            d + component + 2, 2 * component + 1
+        )
+        assert (
+            (d - component + 1) ** 2 * next_norm
+            == multiplier * current_norm
+        )
+    moment_dimensions = moment_monomial_dimensions(invariant_cutoff)
+    assert jacobian_rank == quotient_dimension
+    first_missing_degree = next(
+        degree
+        for degree in range(invariant_cutoff + 1)
+        if invariant_even[degree] + invariant_odd[degree]
+        > moment_dimensions[degree]
+    )
+    first_odd_degree = next(
+        degree
+        for degree, dimension in enumerate(invariant_odd)
+        if dimension
     )
     result: dict[str, object] = {
         "quotient_dimension": quotient_dimension,
@@ -718,6 +1062,51 @@ def run_degree(
         ],
         "relation_tests": [],
         "hilbert_parameter_tests": hilbert_parameter_tests(d),
+        "automatic_missing_invariant_scan": {
+            "cutoff": invariant_cutoff,
+            "basis_interpretation": (
+                "exact dimensions of apolar-character bases from the "
+                "SL2 weight-zero-minus-weight-two formula; the first "
+                "missing degree has the explicit Casimir basis below"
+            ),
+            "degrees": [
+                {
+                    "degree": degree,
+                    "invariant_even_dimension": invariant_even[degree],
+                    "invariant_odd_dimension": invariant_odd[degree],
+                    "invariant_total_dimension": (
+                        invariant_even[degree] + invariant_odd[degree]
+                    ),
+                    "moment_monomial_dimension": moment_dimensions[degree],
+                    "missing_even_dimension": (
+                        invariant_even[degree] - moment_dimensions[degree]
+                    ),
+                    "missing_odd_dimension": invariant_odd[degree],
+                }
+                for degree in range(invariant_cutoff + 1)
+            ],
+            "first_missing_invariant_degree": first_missing_degree,
+            "first_missing_character": "apolar-even",
+            "first_missing_dimension": (
+                invariant_even[first_missing_degree]
+                + invariant_odd[first_missing_degree]
+                - moment_dimensions[first_missing_degree]
+            ),
+            "quadratic_invariant_basis": [
+                f"q_{2 * component}" for component in range(d + 1)
+            ],
+            "moment_quadratic_basis": ["mu_1^2", "mu_2"],
+            "minimal_quadratic_completion": [
+                f"q_{2 * component}" for component in range(1, d)
+            ],
+            "first_apolar_odd_degree": first_odd_degree,
+            "first_apolar_odd_dimension": invariant_odd[first_odd_degree],
+            "odd_cubic_component_triples": [
+                list(triple) for triple in odd_cubic_triples
+            ],
+            "odd_cubic_dimension_formula": odd_cubic_dimension_formula(d),
+            "casimir_radial_transition_to_next_degree": radial_multipliers,
+        },
     }
     hilbert_tests = result["hilbert_parameter_tests"]
     assert isinstance(hilbert_tests, dict)
@@ -813,22 +1202,27 @@ def run_degree(
     )
 
     largest_columns = 0
-    for base_quadratics, _target, target_degree, _label in targets:
-        if max_weight < target_degree:
-            continue
-        weights = tuple(range(1, max_weight + 1)) + (2,) * len(
-            base_quadratics
-        )
-        largest_columns = max(
-            largest_columns,
-            len(weighted_exponents(weights, max_weight))
-            + len(
-                weighted_exponents(
-                    weights, max_weight - target_degree
-                )
-            ),
-        )
-    sample_count = largest_columns + extra_samples
+    if not skip_relation_tests:
+        for base_quadratics, _target, target_degree, _label in targets:
+            if max_weight < target_degree:
+                continue
+            weights = tuple(range(1, max_weight + 1)) + (2,) * len(
+                base_quadratics
+            )
+            largest_columns = max(
+                largest_columns,
+                len(weighted_exponents(weights, max_weight))
+                + len(
+                    weighted_exponents(
+                        weights, max_weight - target_degree
+                    )
+                ),
+            )
+    sample_count = (
+        largest_columns + extra_samples
+        if not skip_relation_tests
+        else 1
+    )
     samples = []
     for sample_index in range(1, sample_count + 1):
         point = deterministic_point(d, sample_index, prime)
@@ -857,39 +1251,40 @@ def run_degree(
         for sample in samples
     )
 
-    for base_quadratics, target, target_degree, label in targets:
-        if max_weight < target_degree:
-            continue
-        for weight in range(target_degree, max_weight + 1):
-            q_columns, p_columns, rank, intersection = (
-                relation_intersection(
-                    samples,
-                    base_quadratics,
-                    target,
-                    target_degree,
-                    weight,
-                    prime,
+    if not skip_relation_tests:
+        for base_quadratics, target, target_degree, label in targets:
+            if max_weight < target_degree:
+                continue
+            for weight in range(target_degree, max_weight + 1):
+                q_columns, p_columns, rank, intersection = (
+                    relation_intersection(
+                        samples,
+                        base_quadratics,
+                        target,
+                        target_degree,
+                        weight,
+                        prime,
+                    )
                 )
-            )
-            print(
-                f"d={d} test={label} weight={weight} "
-                f"columns={q_columns}+{p_columns} rank={rank} "
-                f"relation_intersection={intersection}"
-            )
-            relation_tests = result["relation_tests"]
-            assert isinstance(relation_tests, list)
-            relation_tests.append(
-                {
-                    "label": label,
-                    "weight": weight,
-                    "base_columns": q_columns,
-                    "target_multiple_columns": p_columns,
-                    "combined_rank": rank,
-                    "relation_intersection": intersection,
-                }
-            )
+                print(
+                    f"d={d} test={label} weight={weight} "
+                    f"columns={q_columns}+{p_columns} rank={rank} "
+                    f"relation_intersection={intersection}"
+                )
+                relation_tests = result["relation_tests"]
+                assert isinstance(relation_tests, list)
+                relation_tests.append(
+                    {
+                        "label": label,
+                        "weight": weight,
+                        "base_columns": q_columns,
+                        "target_multiple_columns": p_columns,
+                        "combined_rank": rank,
+                        "relation_intersection": intersection,
+                    }
+                )
 
-    if d in (4, 5):
+    if d >= 4:
         rational_witness = propagated_witness(d)
         exact_witness_quadratics, exact_witness_odd = (
             invariant_values_exact(rational_witness, d)
@@ -906,6 +1301,10 @@ def run_degree(
             int(value) % prime for value in exact_witness_quadratics
         ] == witness_quadratics
         assert int(exact_witness_odd) % prime == witness_odd
+        expected_witness_quadratics = propagated_witness_casimir_formula(d)
+        assert [
+            int(value) for value in exact_witness_quadratics
+        ] == expected_witness_quadratics
         print(
             f"d={d} propagated_witness "
             f"q={exact_witness_quadratics} "
@@ -916,8 +1315,19 @@ def run_degree(
             "quadratic_values": [
                 str(value) for value in exact_witness_quadratics
             ],
+            "closed_quadratic_values": [
+                "0",
+                "-(d-1)!(d+2)!/5",
+                "(d-2)!(d+3)!/5",
+                *("0" for _ in range(d - 2)),
+            ],
             "odd_invariant_value": str(exact_witness_odd),
+            "q_2_separates_recorded_witness": (
+                exact_witness_quadratics[1] != 0
+            ),
         }
+    else:
+        result["propagated_moment_zero_witness"] = None
     return result
 
 
@@ -931,17 +1341,38 @@ def parse_args() -> argparse.Namespace:
         "--degrees",
         type=int,
         nargs="+",
-        choices=(3, 4, 5),
+        choices=(3, 4, 5, 6),
         default=(3, 4, 5),
     )
     parser.add_argument("--max-weight", type=int, default=10)
+    parser.add_argument("--invariant-cutoff", type=int, default=6)
     parser.add_argument("--extra-samples", type=int, default=3)
     parser.add_argument("--prime", type=int, default=DEFAULT_PRIME)
+    parser.add_argument(
+        "--skip-relation-tests",
+        action="store_true",
+        help="run the invariant-character and parameter scans only",
+    )
+    parser.add_argument(
+        "--power-witness-cutoff",
+        type=int,
+        default=0,
+        help="exactly scan F^r through this positive exponent",
+    )
+    parser.add_argument(
+        "--ladder-beta-check",
+        type=int,
+        default=0,
+        help="regress the all-power beta identities through this exponent",
+    )
+    parser.add_argument("--output", type=Path, default=OUTPUT)
     return parser.parse_args()
 
 
 def main() -> None:
     arguments = parse_args()
+    if arguments.invariant_cutoff < 4:
+        raise ValueError("--invariant-cutoff must be at least 4")
     payload = {
         "status": (
             "bounded modular nonrelation tests; positive intersections "
@@ -949,7 +1380,22 @@ def main() -> None:
         ),
         "prime": arguments.prime,
         "max_weight": arguments.max_weight,
+        "invariant_cutoff": arguments.invariant_cutoff,
         "extra_samples": arguments.extra_samples,
+        "relation_tests_skipped": arguments.skip_relation_tests,
+        "radial_casimir_scaling": (
+            "q_(2r)^(d+1)(R f)=(d-r+1)(d+r+2)q_(2r)^d(f)"
+        ),
+        "odd_cubic_dimension_formula": {
+            "d_even": "d(d-1)(d-2)/24",
+            "d_odd": "(d+1)(d-1)(d-3)/24",
+        },
+        "power_witness_scan": power_witness_scan(
+            arguments.power_witness_cutoff
+        ),
+        "all_degree_ladder_regression": all_degree_ladder_regression(
+            arguments.ladder_beta_check
+        ),
         "degrees": {},
     }
     for d in arguments.degrees:
@@ -958,11 +1404,20 @@ def main() -> None:
             arguments.max_weight,
             arguments.extra_samples,
             arguments.prime,
+            arguments.invariant_cutoff,
+            arguments.skip_relation_tests,
         )
         payload["degrees"][str(d)] = result
-    OUTPUT.parent.mkdir(parents=True, exist_ok=True)
-    OUTPUT.write_text(json.dumps(payload, indent=2) + "\n")
-    print(f"wrote {OUTPUT.relative_to(ROOT)}")
+    output = arguments.output
+    if not output.is_absolute():
+        output = ROOT / output
+    output.parent.mkdir(parents=True, exist_ok=True)
+    output.write_text(json.dumps(payload, indent=2) + "\n")
+    try:
+        display_output = output.relative_to(ROOT)
+    except ValueError:
+        display_output = output
+    print(f"wrote {display_output}")
 
 
 if __name__ == "__main__":

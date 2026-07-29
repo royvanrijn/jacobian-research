@@ -1,0 +1,203 @@
+{
+  "format": "degree-four-q2-augmented-nullcone-local-v1",
+  "scope": "one formal normal slice at a deterministic synchronized point on the nonzero Sym^2 nullcone branch",
+  "prime": 32003,
+  "maximum_normal_jet_degree": 4,
+  "standard_basis_ordering": "dp",
+  "standard_basis_algorithm": "slimgb",
+  "formal_series_composition": "native",
+  "normalized_sym2_component": "highest-weight raising matrix E",
+  "allowed_point_coefficients": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "allowed_weight_coordinates": [
+    [
+      2,
+      0
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      3,
+      0
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      3,
+      2
+    ],
+    [
+      4,
+      0
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      4,
+      2
+    ],
+    [
+      4,
+      3
+    ]
+  ],
+  "forbidden_weight_coordinates": [
+    [
+      2,
+      2
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      3,
+      6
+    ],
+    [
+      4,
+      4
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      4,
+      6
+    ],
+    [
+      4,
+      7
+    ],
+    [
+      4,
+      8
+    ]
+  ],
+  "linear_pivot_indices": [
+    1,
+    2,
+    6,
+    11
+  ],
+  "linear_pivot_coordinates": [
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      3,
+      6
+    ],
+    [
+      4,
+      8
+    ]
+  ],
+  "free_normal_indices": [
+    0,
+    3,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10
+  ],
+  "free_normal_coordinates": [
+    [
+      2,
+      2
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      4,
+      4
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      4,
+      6
+    ],
+    [
+      4,
+      7
+    ]
+  ],
+  "pivot_series_term_counts": [
+    487,
+    482,
+    465,
+    428
+  ],
+  "reduced_moment_term_counts": null,
+  "local_standard_bases": {
+    "2": {
+      "status": "completed",
+      "dimension": 6,
+      "vector_space_dimension": -1,
+      "standard_basis_size": 4
+    },
+    "3": {
+      "status": "completed",
+      "dimension": 4,
+      "vector_space_dimension": -1,
+      "standard_basis_size": 85
+    },
+    "4": {
+      "status": "timeout",
+      "timeout_seconds": 300
+    }
+  },
+  "scope_warning": "a completed finite jet can prove only the stated local normal-slice result when its Nakayama containment is also certified; no global q2-augmented nullcone equality follows"
+}

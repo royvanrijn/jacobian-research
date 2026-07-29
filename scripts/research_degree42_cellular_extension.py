@@ -19,11 +19,13 @@ artifact and verifier assertions.
 from __future__ import annotations
 
 import argparse
+import json
 import re
 import shutil
 import subprocess
 import sys
 from pathlib import Path
+from math import gcd
 
 import sympy as sp
 
@@ -36,18 +38,53 @@ from explore_degree30_hessian_ritt_braid import canonical_residuals  # noqa: E40
 from explore_degree42_ritt_spectator_universality import (  # noqa: E402
     ALL_CUTS,
     DEGREE,
+    WORD,
     W,
     build_chart,
-    serialize_ideal,
 )
 from verify_degree42_ritt_relative_cotangent_cone import (  # noqa: E402
     dickson_normal_map,
     serialize_polynomial,
 )
 
+CACHE = (
+    ROOT
+    / "artifacts"
+    / "generated-results"
+    / "degree42_ritt_cellular_source_ideals.json"
+)
 
-def singular_data(order: int) -> tuple[str, tuple[sp.Symbol, ...]]:
-    """Return Singular output for standard bases, maps, and base actions."""
+
+def factor_variables_from_word():
+    """Reconstruct the stable source-ring variable order without composition."""
+
+    factor_variables = tuple(
+        sp.symbols(f"x{position}_1:{degree}")
+        for position, degree in enumerate(WORD)
+    )
+    parameters = tuple(
+        variable
+        for variables in factor_variables
+        for variable in variables
+    )
+    return parameters, factor_variables
+
+
+def source_ideal_data():
+    """Load or construct the expensive ordinary residual equations."""
+
+    if CACHE.is_file():
+        cached = json.loads(CACHE.read_text())
+        parameters, factor_variables = factor_variables_from_word()
+        assert [str(parameter) for parameter in parameters] == cached[
+            "parameters"
+        ]
+        return (
+            parameters,
+            factor_variables,
+            cached["thick"],
+            cached["boundary"],
+        )
 
     parameters, factor_variables, polynomial = build_chart()
     base_cuts = {2, 14}
@@ -66,13 +103,52 @@ def singular_data(order: int) -> tuple[str, tuple[sp.Symbol, ...]]:
     endpoint = residuals[3] + residuals[21]
     thick = endpoint + residuals[7]
     boundary = endpoint + residuals[6] + residuals[7]
+    cached = {
+        "schema": "degree42-ritt-cellular-source-ideals.v1",
+        "parameters": [str(parameter) for parameter in parameters],
+        "thick": [serialize_polynomial(equation) for equation in thick],
+        "boundary": [
+            serialize_polynomial(equation) for equation in boundary
+        ],
+        "construction": (
+            "ordinary polynomial residuals including degree one on the "
+            "normalized 2 o 7 o 3 chart"
+        ),
+    }
+    CACHE.write_text(json.dumps(cached, indent=2) + "\n")
+    return parameters, factor_variables, cached["thick"], cached["boundary"]
+
+
+def singular_data(
+    order: int,
+    filtration: str,
+    normal_order: int | None = None,
+) -> tuple[str, tuple[sp.Symbol, ...]]:
+    """Return Singular output for standard bases, maps, and base actions."""
+
+    parameters, factor_variables, thick, boundary = source_ideal_data()
 
     normals, base_coordinates, images = dickson_normal_map(factor_variables)
     local_variables = normals + base_coordinates
     map_images = ",".join(
         serialize_polynomial(images[parameter]) for parameter in parameters
     )
-    maximal = ",".join(map(str, local_variables))
+    if filtration == "maximal":
+        filtration_expression = (
+            f"ideal filtrationIdeal={','.join(map(str, local_variables))};\n"
+            f"ideal filtrationPower=filtrationIdeal^{order};"
+        )
+    elif filtration == "base":
+        if normal_order is None:
+            raise ValueError("base filtration requires a normal cutoff")
+        filtration_expression = (
+            f"ideal baseIdeal={','.join(map(str, base_coordinates))};\n"
+            f"ideal normalIdeal={','.join(map(str, normals))};\n"
+            f"ideal filtrationPower=baseIdeal^{order}"
+            f"+normalIdeal^{normal_order};"
+        )
+    else:
+        raise ValueError(f"unknown filtration {filtration}")
 
     def print_reductions(
         source_basis: str,
@@ -80,39 +156,48 @@ def singular_data(order: int) -> tuple[str, tuple[sp.Symbol, ...]]:
         marker: str,
         multiplier: str = "",
     ) -> str:
+        local_name = "basis_" + marker.lower()
         return f"""
 print("{marker}");
-module sourceBasis={source_basis};
-for (int i=1; i<=ncols(sourceBasis); i++)
+module {local_name}={source_basis};
+for (int i=1; i<=ncols({local_name}); i++)
 {{
-  print(reduce(({multiplier})*sourceBasis[i],{target_basis}));
+  print(reduce(({multiplier})*{local_name}[i],{target_basis}));
 }}
 """
 
     program = f"""
 ring source=0,({",".join(map(str, parameters))}),dp;
-ideal ITsource={serialize_ideal(thick)};
-ideal IBsource={serialize_ideal(boundary)};
+ideal ITsource={",".join(thick)};
+ideal IBsource={",".join(boundary)};
 ring q=0,({",".join(map(str, local_variables))}),(dp({len(normals)}),dp(2));
 map phi=source,{map_images};
 option(redSB);
 ideal IT=phi(ITsource);
 ideal IB=phi(IBsource);
 ideal K={",".join(map(str, normals))};
-ideal maximalIdeal={maximal};
-ideal maximalPower=maximalIdeal^{order};
-ideal G6=std(IT+maximalPower);
-ideal GB=std(IB+maximalPower);
-ideal GK=std(K+maximalPower);
+{filtration_expression}
+ideal G6=std(IT+filtrationPower);
+ideal GB=std(IB+filtrationPower);
+ideal GK=std(K+filtrationPower);
 module B6=kbase(G6);
 module BB=kbase(GB);
 module BK=kbase(GK);
 print("BASIS_6");
-print(B6);
+for (int basisIndex6=1; basisIndex6<=ncols(B6); basisIndex6++)
+{{
+  print(B6[basisIndex6]);
+}}
 print("BASIS_BOUNDARY");
-print(BB);
+for (int basisIndexBoundary=1; basisIndexBoundary<=ncols(BB); basisIndexBoundary++)
+{{
+  print(BB[basisIndexBoundary]);
+}}
 print("BASIS_K");
-print(BK);
+for (int basisIndexK=1; basisIndexK<=ncols(BK); basisIndexK++)
+{{
+  print(BK[basisIndexK]);
+}}
 {print_reductions("B6", "GB", "MAP_6_BOUNDARY", "1")}
 {print_reductions("B6", "GK", "MAP_6_K", "1")}
 {print_reductions("BB", "GK", "MAP_BOUNDARY_K", "1")}
@@ -156,8 +241,10 @@ def parse_sections(output: str) -> dict[str, list[str]]:
         if line in sections:
             active = line
             continue
-        if active is None or not line:
+        if active is None or not line or line.startswith("//"):
             continue
+        if line.startswith("[") and line.endswith("]"):
+            line = line[1:-1]
         sections[active].append(line.rstrip(","))
     return sections
 
@@ -274,10 +361,162 @@ def splitting_solution(
     )
 
 
-def audit(order: int) -> dict[str, object]:
+def vector_space_section(projection: sp.Matrix) -> sp.Matrix:
+    """Choose a rational section without imposing module linearity."""
+
+    columns = []
+    for index in range(projection.rows):
+        target = sp.eye(projection.rows)[:, index]
+        solution, parameters = projection.gauss_jordan_solve(target)
+        solution = solution.subs(
+            {parameter: sp.Integer(0) for parameter in parameters}
+        )
+        columns.append(solution)
+    return sp.Matrix.hstack(*columns)
+
+
+def primitive_integer_vector(vector: sp.Matrix) -> sp.Matrix:
+    """Clear denominators and primitive-normalize a rational column."""
+
+    rationals = [sp.Rational(value) for value in vector]
+    denominator_lcm = sp.ilcm(*(value.q for value in rationals))
+    integers = [int(value * denominator_lcm) for value in rationals]
+    divisor = 0
+    for value in integers:
+        divisor = gcd(divisor, abs(value))
+    divisor = divisor or 1
+    integers = [value // divisor for value in integers]
+    first = next((value for value in integers if value), 1)
+    if first < 0:
+        integers = [-value for value in integers]
+    return sp.Matrix(integers)
+
+
+def extension_cocycle_certificate(
+    inclusion: sp.Matrix,
+    projection: sp.Matrix,
+    sector_actions: tuple[sp.Matrix, ...],
+    total_actions: tuple[sp.Matrix, ...],
+    spectator_actions: tuple[sp.Matrix, ...],
+    action_names: tuple[str, ...] = ("tau", "zeta"),
+) -> dict[str, object]:
+    """Return an adapted-block cocycle and a nonsplitting functional."""
+
+    section = vector_space_section(projection)
+    adapted_basis = inclusion.row_join(section)
+    assert adapted_basis.det() != 0
+    adapted_inverse = adapted_basis.inv()
+    sector_dimension = inclusion.cols
+    spectator_dimension = section.cols
+
+    couplings = []
+    for sector_action, total_action, spectator_action in zip(
+        sector_actions, total_actions, spectator_actions
+    ):
+        adapted_action = adapted_inverse * total_action * adapted_basis
+        assert (
+            adapted_action[:sector_dimension, :sector_dimension]
+            == sector_action
+        )
+        assert (
+            adapted_action[
+                sector_dimension:,
+                sector_dimension:,
+            ]
+            == spectator_action
+        )
+        assert (
+            adapted_action[
+                sector_dimension:,
+                :sector_dimension,
+            ]
+            == sp.zeros(spectator_dimension, sector_dimension)
+        )
+        couplings.append(
+            adapted_action[
+                :sector_dimension,
+                sector_dimension:,
+            ]
+        )
+
+    h_variables = sp.symbols(
+        f"h0:{sector_dimension * spectator_dimension}"
+    )
+    correction = sp.Matrix(
+        sector_dimension,
+        spectator_dimension,
+        h_variables,
+    )
+    coboundary_expressions = []
+    for sector_action, spectator_action in zip(
+        sector_actions, spectator_actions
+    ):
+        coboundary_expressions.extend(
+            sector_action * correction - correction * spectator_action
+        )
+    coboundary, _ = sp.linear_eq_to_matrix(
+        coboundary_expressions, h_variables
+    )
+    cocycle = sp.Matrix(
+        [
+            value
+            for coupling in couplings
+            for value in coupling
+        ]
+    )
+    augmented_rank = coboundary.row_join(-cocycle).rank()
+
+    functional_terms = None
+    witness_value = None
+    if augmented_rank > coboundary.rank():
+        witness = None
+        for functional in coboundary.T.nullspace():
+            value = (functional.T * cocycle)[0]
+            if value:
+                witness = primitive_integer_vector(functional)
+                witness_value = (witness.T * cocycle)[0]
+                break
+        assert witness is not None
+        assert (witness.T * coboundary) == sp.zeros(
+            1, coboundary.cols
+        )
+        assert witness_value
+
+        coordinate_names = tuple(
+            f"{base}[{row},{column}]"
+            for base in action_names
+            for row in range(sector_dimension)
+            for column in range(spectator_dimension)
+        )
+        functional_terms = {
+            coordinate: int(value)
+            for coordinate, value in zip(coordinate_names, witness)
+            if value
+        }
+    return {
+        "adapted_coupling": {
+            name: coupling.tolist()
+            for name, coupling in zip(action_names, couplings)
+        },
+        "coboundary_rank": coboundary.rank(),
+        "augmented_rank": augmented_rank,
+        "obstruction_functional": functional_terms,
+        "obstruction_value": (
+            str(sp.Rational(witness_value))
+            if witness_value is not None
+            else None
+        ),
+    }
+
+
+def audit(
+    order: int,
+    filtration: str = "maximal",
+    normal_order: int | None = None,
+) -> dict[str, object]:
     """Compute the finite-jet modules and their extension."""
 
-    output, symbols = singular_data(order)
+    output, symbols = singular_data(order, filtration, normal_order)
     sections = parse_sections(output)
     basis_6 = sections["BASIS_6"]
     basis_boundary = sections["BASIS_BOUNDARY"]
@@ -308,6 +547,9 @@ def audit(order: int) -> dict[str, object]:
     projection = induced_map(
         map_6_boundary, total_basis, spectator_basis
     )
+    inclusion = induced_map(
+        sp.eye(len(basis_6)), sector_basis, total_basis
+    )
 
     sector_actions = (
         restricted_action(tau_6, sector_basis),
@@ -321,13 +563,40 @@ def audit(order: int) -> dict[str, object]:
         restricted_action(tau_boundary, spectator_basis),
         restricted_action(zeta_boundary, spectator_basis),
     )
-    splits, section = splitting_solution(
-        projection, total_actions, spectator_actions
+    assert projection * inclusion == sp.zeros(
+        spectator_basis.cols, sector_basis.cols
     )
+    sequence_homology = {
+        "left_kernel": sector_basis.cols - inclusion.rank(),
+        "middle": (
+            total_basis.cols
+            - projection.rank()
+            - inclusion.rank()
+        ),
+        "right_cokernel": spectator_basis.cols - projection.rank(),
+    }
+    sequence_is_short_exact = sequence_homology == {
+        "left_kernel": 0,
+        "middle": 0,
+        "right_cokernel": 0,
+    }
+    if sequence_is_short_exact:
+        splits, section = splitting_solution(
+            projection, total_actions, spectator_actions
+        )
+        extension_certificate = extension_cocycle_certificate(
+            inclusion,
+            projection,
+            sector_actions,
+            total_actions,
+            spectator_actions,
+        )
+    else:
+        splits = None
+        section = None
+        extension_certificate = None
 
     assert map_boundary_k * map_6_boundary == map_6_k
-    assert projection.rank() == spectator_basis.cols
-    assert sector_basis.cols + spectator_basis.cols == total_basis.cols
     assert all(
         action * sector_basis == sector_basis * restricted
         for action, restricted in zip(
@@ -336,6 +605,8 @@ def audit(order: int) -> dict[str, object]:
     )
     return {
         "order": order,
+        "filtration": filtration,
+        "normal_order": normal_order,
         "ring_lengths": {
             "A6": len(basis_6),
             "A_boundary": len(basis_boundary),
@@ -359,16 +630,42 @@ def audit(order: int) -> dict[str, object]:
             "zeta": total_actions[1].tolist(),
         },
         "projection": projection.tolist(),
+        "sequence_homology": sequence_homology,
+        "sequence_is_short_exact": sequence_is_short_exact,
         "splits_over_Q_tau_zeta": splits,
         "one_section": section.tolist() if section is not None else None,
+        "extension_certificate": extension_certificate,
     }
 
 
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--order", type=int, default=3)
+    parser.add_argument(
+        "--filtration",
+        choices=("maximal", "base"),
+        default="maximal",
+    )
+    parser.add_argument(
+        "--normal-order",
+        type=int,
+        help="normal-ideal cutoff used with --filtration base",
+    )
+    parser.add_argument(
+        "--rebuild-source",
+        action="store_true",
+        help="recompute and replace the cached source residual ideals",
+    )
     arguments = parser.parse_args()
-    print(audit(arguments.order))
+    if arguments.rebuild_source and CACHE.is_file():
+        CACHE.unlink()
+    print(
+        audit(
+            arguments.order,
+            arguments.filtration,
+            arguments.normal_order,
+        )
+    )
 
 
 if __name__ == "__main__":

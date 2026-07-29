@@ -200,6 +200,36 @@ local freeness of rank six, hence freeness by Quillen--Suslin.  Therefore
 all 1,932 squarefree-symbol coordinate planes retain the length-six defect;
 any remaining singular-symbol escape uses at least three basis tensors.
 
+Basis sparsity is not itself an escape criterion.  With
+\(\psi_+=\sum_i\psi_{4,i}\) and
+\(\psi_-=\sum_i(-1)^i\psi_{4,i}\), the exact polynomial plane
+
+\[
+ \phi_h+u\psi_++v\psi_-
+\]
+
+has saturated cotangent presentation and a relative length-six support
+defect for every squarefree symbol.  Its pruned rank-three Ext presentation
+is pulled back from \(u=v=0\), and on \(u^2-v^2\ne0\) all 24 fixed kernel
+coordinates are nonzero.  This is the first parameter family of
+full-support quartic tensors in the audit.  It is one plane, not a
+Zariski-open subset of the universal 24-space.
+
+After translation by the deterministic generic quartic lift \(\psi_g\),
+the same statement holds for all ten cubic-symbol strata:
+
+\[
+ \phi_h+\psi_g+u\psi_++v\psi_- .
+\]
+
+Every affine plane has saturated cotangent presentation and a relative
+length-six support defect pulled back from its center.  In particular, the
+double-line, triple-line, and zero symbols retain the pure finite defect
+uniformly after the order-four lift, rather than only at one tested
+endpoint.  The generic tensor again has all 24 kernel coordinates nonzero.
+Normality and Keller-open compatibility remain separate and are not
+implied by this module calculation.
+
 All 2,024 smooth coordinate three-spaces have now also been tested.  Their
 pruned rank-three relative Ext presentations are pulled back from the
 parameter origin, again with relative multiplicity six and saturated

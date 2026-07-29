@@ -341,15 +341,37 @@ by the invertible factors \(g,g,g^2,g^2\), and retain the Rabinowitsch
 equation for \(pg\).  The resulting ideal in
 \(\mathbb Q[z,d,\lambda]\) has exact reduced standard basis \((1)\).
 
-For the first membership, the same output occurs modulo \(101,103,107\).
-Singular's verified
-modular standard-basis routine checks that the proposed output is a
-standard basis containing the input, but in this nonhomogeneous global
-order it does not by itself certify the reverse ideal containment.
-Attempts to produce an exact rational lift or syzygy identity exceeded
-the available resource envelope.  Therefore the first membership remains
-the precise characteristic-zero gate; its modular output is reproducible
-evidence, not a theorem.
+The first membership has now been reduced to a specific three-variable
+target.  Put
+\[
+ q=\lambda^4(\lambda-1)^4,\qquad M=p(8c-3d^2).
+\]
+The Rabinowitsch membership is equivalent to
+\[
+ qM^N\in(f_3,f_4,f_5,f_6)\subset\mathbb Q[c,d,\lambda]
+ \tag{6.13a}
+\]
+for some \(N\).  Indeed, from \(qM^N=\sum_iA_if_i\) one obtains the
+polynomial identity
+\[
+ q=\sum_i z^NA_if_i
+   -q(zM-1)\sum_{j=0}^{N-1}(zM)^j.
+\]
+Exact computations over each of
+\(\mathbb F_{101},\mathbb F_{103},\mathbb F_{107}\) give the same least
+exponent
+\[
+ \boxed{N=5} \tag{6.13b}
+\]
+and the same degree-order basis size \(87\).  At \(101\), a direct lifted
+identity has multiplier degree/term profiles
+\[
+ (34,5356),\ (29,3679),\ (27,3037),\ (22,1853). \tag{6.13c}
+\]
+Thus the exact remaining target is \(qM^5\), not an unspecified
+four-variable saturation.  A direct rational lift and a full reconstructed
+basis lift both exceeded a twenty-minute bound.  The three prime-field
+identities are reproducible evidence, not a characteristic-zero theorem.
 
 If the remaining membership is certified, then every squarefree six-moment zero
 is one of the four annihilator sections. Combined with the exact
@@ -376,8 +398,8 @@ candidate.  This remains a necessary-test result, not a proof that
 
 The efficient order is now:
 
-1. finish the remaining squarefree Rabinowitsch membership above, preferably by
-   sparse rational reconstruction of modular target-only lift identities;
+1. reconstruct and verify over \(\mathbb Q\) the target-only lift
+   \(qM^5\in(f_3,f_4,f_5,f_6)\) from (6.13a)--(6.13c);
 2. conditional on that boundary closure, start from the exact-rank-two
    semistable thirteen-moment survivor;
 3. on rank two, whose determinantal quotient has expected affine
@@ -431,7 +453,9 @@ the branch-quartic orbit is closed over its degree-four field, and the
 harmonic orbit is supplied by the separate \(\lambda=2\) anchor.  It
 extracts the complete pivot-boundary and expected-branch exceptional
 gcds and proves the \(h=0,\ g\ne0\) Rabinowitsch chart empty by a smaller
-exact unit certificate. It does not certify the remaining \(h\ne0\)
-uniform Rabinowitsch membership.
+exact unit certificate.  On the remaining \(h\ne0\) chart it verifies at
+three good primes the least saturation exponent \(N=5\), the common
+degree-order basis size, and one complete finite-field lift profile.  It
+does not certify the corresponding \(qM^5\) membership over \(\mathbb Q\).
 Collided-root quartics are supplied separately by the two-root and
 three-root theorems.

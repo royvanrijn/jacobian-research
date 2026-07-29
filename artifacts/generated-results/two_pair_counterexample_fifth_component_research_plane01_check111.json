@@ -1,0 +1,59 @@
+{
+  "format": "two-pair-counterexample-fifth-component-research-v1",
+  "status": "exact uniform fifth-order obstruction",
+  "direction_label": "plane01_check111",
+  "direction": [
+    1,
+    1,
+    1,
+    0,
+    0
+  ],
+  "field": "Q(sqrt(41))",
+  "component_coordinates": [
+    "q0",
+    "q1",
+    "q2",
+    "q3",
+    "q4",
+    "q5",
+    "q6",
+    "q7",
+    "q8"
+  ],
+  "lower_kernel_parameters": 11,
+  "fifth_tangent_rank": 2,
+  "reduced_equation_count": 54,
+  "generic_lower_rank": 2,
+  "generic_augmented_rank": 3,
+  "lower_pivot_columns": [
+    0,
+    1
+  ],
+  "lower_pivot_rows": [
+    0,
+    1
+  ],
+  "survivor_equation_count": 52,
+  "survivor_equation_total_degrees": [
+    0
+  ],
+  "uniform_obstruction": {
+    "constant": "28359016884716522749805507371034916533007525648008976804284433756640237800571909966780113722369408333231521907526411463309987126645668255755688861325027160657847088868363805944998396345643433984000000000000000000000000000*(-7918209630955650 + 16595854370270437*sqrt(41))/585679",
+    "conjugate": "-28359016884716522749805507371034916533007525648008976804284433756640237800571909966780113722369408333231521907526411463309987126645668255755688861325027160657847088868363805944998396345643433984000000000000000000000000000*(7918209630955650 + 16595854370270437*sqrt(41))/585679",
+    "norm": "-9031240101561780567196607269833730686812602451209903740103588065601352192120994539215082595613044446416186181675078114477850146390351885005191252883976954826061233181015429048386607951543965351837083399113775079442792682700464226360606859654226244295851896237003089011365953818036204405509056627405896520657768252059394408127549095893325469259500770122976814461656537245701002410802350542918979056985347633245247581978624000000000000000000000000000000000000000000000000000000/343019891041",
+    "conclusion": "The coefficient matrix has rank at most 2 everywhere, while this augmented 3x3 minor is a nonzero constant. Hence the complete affine 9-plane has no fifth lift."
+  },
+  "conjugate_component": "Eliminated by applying sqrt(41) -> -sqrt(41).",
+  "modular_confirmation": "unit ideal on the selected pivot chart",
+  "modular_pivot_chart_saturation": {
+    "prime": 32003,
+    "sqrt_41_residue": 6502,
+    "dimension": -1,
+    "degree": 0,
+    "groebner_basis_size": 1,
+    "groebner_basis": [
+      "1"
+    ]
+  }
+}

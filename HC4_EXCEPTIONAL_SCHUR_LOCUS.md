@@ -61,6 +61,16 @@ the denominators can occur in the transformation expressing that basis in
 the original 114 generators.  The relevant discriminant is therefore the
 lift-certificate denominator, not the coefficient denominator (1.1).
 
+Two narrower exact attempts locate the next computational boundary.  The
+primitive degree-two coefficient matrix has rank \(99\) at
+\((1,1),(1,2),(2,1),(2,3),(0,1)\).  Its selected \(99\)-minor did not
+finish in a one-hour fraction-free determinant run.  At degree three, the
+trivial sign-character block has 191 cubic monomials and 441
+equation-times-linear-form columns.  A direct lift of \(s_0^3\) over
+\(\mathbb Q(\mu,\nu)\) reached the 900-second Singular bound without
+returning a certificate.  Neither interrupted calculation supplies a
+discriminant factor.
+
 ## 2. Signed-permutation decomposition
 
 The signed coordinate group splits the quartic representation into the
@@ -155,6 +165,17 @@ Equations (3.1)--(3.4) are reconstructed from three good characteristics.
 They are candidate rational components until exact characteristic-zero
 ideal-containment certificates are recorded.
 
+A direct characteristic-zero replay is available as
+
+```bash
+.venv/bin/python scripts/research_hc4_exceptional_schur_locus.py \
+  --exact-pure-chart --singular-timeout 900
+```
+
+The \(a=1\) calculation reached that 900-second bound while computing the
+36-equation rational standard basis, before returning an elimination
+ideal.  It therefore supplies no containment certificate.
+
 ## 4. Complex component tracking
 
 For the reconstructed reduced ideal (3.2), a generic complex affine slice
@@ -239,8 +260,9 @@ No full-family saturation is used in these prolongation steps.
 The following calculations are still required before promoting (3.3) to
 the exceptional-locus classification:
 
-1. factor the exact basis denominator and the denominators of the fifteen
-   cube lift certificates;
+1. compute the transformation/lift denominator, preferably from
+   sign-character blocks of the fifteen cube certificates (the basis
+   denominator itself is the constant \(2\));
 2. compare their reductions in several good characteristics and track
    every complex divisor component;
 3. run the full mixed-character projective quartic system only over those
@@ -249,3 +271,52 @@ the exceptional-locus classification:
 
 Until then, the proved statements remain `HC4QF1`, `HC4QSG2`,
 `HC4QSE1`, and `HC4QSE2`; this note is a reproducible research frontier.
+
+## 8. Later cube-torsion experiment
+
+The follow-up
+[`HC4_FITTING_DENOMINATOR_EXTRACTION.md`](HC4_FITTING_DENOMINATOR_EXTRACTION.md)
+constructs the canonical degree-three module behind the fifteen cube
+certificates.  The raw 114 quadrics map to the 120-dimensional quadratic
+coefficient space; after multiplication by the fifteen coefficient
+variables, the relevant presentation is \(A^{1710}\to A^{680}\), with
+the cubes defining a separate \(A^{15}\to A^{680}\) map.
+
+On the valid chart \(\nu\ne0\), finite-field scans at four primes
+reconstruct the radial point and an additional rational point
+\((-5/3,-1/6)\).  Exact specialization shows that the latter is only a
+jump from cube to fourth-power nilpotence: all coefficient fourth powers
+vanish and the reduced fiber is still the origin.  Thus cube-certificate
+torsion does not equal the reduced exceptional Schur locus.  The exact
+integral zeroth Fitting ideal and associated-prime equality remain open
+after 900-second Singular timeouts.
+
+## 9. Full reduced-fiber fourth-power scan
+
+The cube calculation is refined by testing the fourth powers of all
+fifteen quartic coefficients.  The relevant zero-character degree-four
+block has 819 monomials and 3474 equation-times-quadratic-monomial
+columns.  If every coefficient fourth power belongs to the specialized
+homogeneous Schur ideal, then its radical is the coefficient maximal
+ideal; equivalently, the reduced projective Schur fiber is empty.
+
+Exhaustive scans on \(D(\nu)\) give:
+
+| field | parameter points | certified empty | remaining point |
+|---|---:|---:|---|
+| \(\mathbb F_7\) | 42 | 41 | \((3,5)\) |
+| \(\mathbb F_{11}\) | 110 | 109 | \((9,10)\) |
+| \(\mathbb F_{13}\) | 156 | 155 | \((8,4)\) |
+
+In every row the remaining point is the reduction of
+\((1/5,1/10)\).  At that point the degree-four multiplication map has rank
+756 and all fifteen tested fourth powers lie outside its image.  The
+reductions of the nilpotence-jump point \((-5/3,-1/6)\) are certified
+reduced-empty at all three primes.
+
+This is the first full 15-coefficient finite-field test of the reduced
+fiber, rather than an even-quartic slice or a cube-torsion proxy.  It does
+not yet exclude parameter points defined only over proper extensions of
+the finite fields, nor does it compute a characteristic-zero support
+ideal.  The transcript is
+[`hc4_fourth_power_support.json`](artifacts/generated-results/hc4_fourth_power_support.json).

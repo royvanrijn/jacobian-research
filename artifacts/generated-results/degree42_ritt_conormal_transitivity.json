@@ -1,0 +1,210 @@
+{
+  "schema": "degree42-ritt-conormal-transitivity.v1",
+  "status": "exact cotangent Postnikov obstruction",
+  "completed_base_ring": "B=Q[[tau,zeta]]=completed R/K",
+  "conormal_projection": "H_1(L_(B/A_6))=K/(I_6+K^2) -> H_1(L_(B/A_boundary))=K/(I_boundary+K^2)",
+  "tensor_quotient": "B/(tau,zeta)^2",
+  "source_ideal_cache": "artifacts/generated-results/degree42_ritt_cellular_source_ideals.json",
+  "source_ideal_cache_sha256": "b87490607a2667b74339b641675b3b7b29be89442ed52b2b8db80462bf968394",
+  "calculation": {
+    "base_order": 2,
+    "normal_order": 1,
+    "dimensions": {
+      "kernel": 4,
+      "total": 6,
+      "spectator": 2
+    },
+    "splits_as_R_module": false,
+    "one_section": null,
+    "zero_action_variables": [
+      "n0",
+      "n1",
+      "n2",
+      "n3",
+      "n4",
+      "n5",
+      "n6"
+    ],
+    "certificate": {
+      "adapted_coupling": {
+        "n0": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "n1": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "n2": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "n3": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "n4": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "n5": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "n6": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "tau": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            "8/5",
+            "10/3"
+          ],
+          [
+            "-28/45",
+            "-4/3"
+          ]
+        ],
+        "zeta": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ]
+      },
+      "coboundary_rank": 5,
+      "augmented_rank": 6,
+      "obstruction_functional": {
+        "zeta[0,0]": 2,
+        "zeta[1,0]": 5
+      },
+      "obstruction_value": "2"
+    },
+    "interpretation": {
+      "total": "(K/(I_6+K^2)) tensor_B B/(tau,zeta)^base_order",
+      "spectator": "(K/(I_boundary+K^2)) tensor_B B/(tau,zeta)^base_order",
+      "base_ring": "B=Q[[tau,zeta]]=completed R/K"
+    }
+  },
+  "derived_consequence": "the completed conormal projection has no B-linear section; therefore the relative cotangent transitivity triangle for A_6 -> A_boundary -> B is non-split and its connecting morphism is nonzero",
+  "derived_boundary": "this detects the first-Postnikov shadow of the connecting morphism; it does not compute the higher cotangent homology or prove the cellular homotopy-limit comparison",
+  "reproducing_command": ".venv/bin/python scripts/verify_degree42_ritt_conormal_transitivity.py"
+}

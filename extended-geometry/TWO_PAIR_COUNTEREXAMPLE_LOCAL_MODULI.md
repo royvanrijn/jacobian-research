@@ -734,11 +734,17 @@ order}.}
 \tag{5.27}
 \]
 
-This does not eliminate the two affine \(9\)-planes in (5.21): their
-other points change \(K,L,M\), and the fifth obstruction may vanish on a
-proper subvariety.  The next intrinsic calculation is the fifth
-compatibility ideal over one whole \(\mathbb Q(\sqrt {41})\)-component,
-followed by descent of its conjugate pair.
+The follow-on
+[algebraization experiment](TWO_PAIR_COUNTEREXAMPLE_ALGEBRAIZATION_RESEARCH.md)
+restores the omitted eleven-dimensional cubic-tangent kernel over each
+complete affine \(9\)-plane.  After eliminating the rank-two
+fourth-tangent image, the fifth coefficient matrix has generic rank two,
+all its \(3\)-by-\(3\) minors vanish identically, and one augmented
+\(3\)-by-\(3\) minor is a nonzero constant.  Hence both components in
+(5.21) are uniformly obstructed at fifth order.  The same computation
+eliminates the conjugate component pairs over a second generic rational
+direction and a pure apolar-odd direction.  This still does not control
+fourth lifts over every direction of the reduced five-plane.
 
 ## 6. An exact positive-dimensional local quotient
 

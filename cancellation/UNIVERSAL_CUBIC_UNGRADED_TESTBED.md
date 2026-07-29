@@ -507,6 +507,13 @@ all Keller maps.  Existing exact computations show:
   defect;
 - all squarefree coordinate planes do the same;
 - all smooth coordinate three-spaces do the same.
+- one sum/alternating-sum parameter plane does the same for every
+  squarefree symbol, although its generic tensor has nonzero coordinates in
+  all 24 fixed kernel directions.
+- after translation by the deterministic generic quartic lift, the same
+  affine plane has pure support and the constant length-six defect for all
+  ten cubic-symbol strata, including the double-line, triple-line, and zero
+  symbols.
 
 The arbitrary 24-parameter combination, normal nonhomogeneous lifts, and
 the existence of a distinguished `A^3` Keller open remain open.  Until that

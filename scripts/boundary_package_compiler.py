@@ -1328,6 +1328,48 @@ def affine_ramification_obstruction_package() -> BoundaryPackage:
     )
 
 
+def a4_cone_branch_obstruction_package() -> BoundaryPackage:
+    """Exact global branch profile extracted from the symbolic A4 cone.
+
+    The target B-divisor has one prime L with (e,f)=(2,2).  Its two
+    geometric inertia cycles agree with a double transposition, but L lies
+    in the affine source, so the Keller coloring gate rejects the package.
+    """
+
+    package = a4_three_puncture_package()
+    first_branch = package.cover.branches[0]
+    cone_branch = BranchDivisor(
+        first_branch.name,
+        first_branch.monodromy,
+        (
+            LocalPrime(
+                "L",
+                ramification_index=2,
+                residue_degree=2,
+                color=SheetColor.AFFINE,
+                selected=True,
+            ),
+        ),
+    )
+    cone_cover = CoverDatum(
+        degree=package.cover.degree,
+        group_name=package.cover.group_name,
+        expected_group_order=package.cover.expected_group_order,
+        branches=(cone_branch, *package.cover.branches[1:]),
+        target_genus=package.cover.target_genus,
+        source_genus=package.cover.source_genus,
+        compact_product_one=package.cover.compact_product_one,
+    )
+    return BoundaryPackage(
+        name="a4_symbolic_cone_branch_obstruction",
+        cover=cone_cover,
+        selected_curves=package.selected_curves,
+        determinant_ledger=package.determinant_ledger,
+        polar_ledger=package.polar_ledger,
+        affine_source=package.affine_source,
+    )
+
+
 def determinant_ledger_obstruction_package() -> BoundaryPackage:
     package = a4_three_puncture_package()
     return BoundaryPackage(
@@ -1380,6 +1422,7 @@ def all_benchmark_packages() -> tuple[BoundaryPackage, ...]:
         elliptic_selected_boundary_package(),
         nodal_rational_package(preserve_conductor=False),
         affine_ramification_obstruction_package(),
+        a4_cone_branch_obstruction_package(),
         determinant_ledger_obstruction_package(),
         semigroup_hole_obstruction_package(),
     )
@@ -1390,6 +1433,7 @@ __all__ = [
     "Compilation",
     "PackageStatus",
     "StageTwoRealizationCertificate",
+    "a4_cone_branch_obstruction_package",
     "a4_three_puncture_package",
     "affine_ramification_obstruction_package",
     "all_benchmark_packages",

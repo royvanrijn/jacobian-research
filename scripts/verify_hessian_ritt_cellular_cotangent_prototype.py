@@ -163,6 +163,12 @@ def audit_degree_42() -> dict[str, object]:
             "sector_dimension": 5,
             "spectator_dimension": 3,
         },
+        {
+            "order": 4,
+            "base_dimension": 10,
+            "sector_dimension": 13,
+            "spectator_dimension": 6,
+        },
     )
     jet_results = []
     for jet in jets:
@@ -211,7 +217,16 @@ def audit_degree_42() -> dict[str, object]:
         "completed_jet_totalizations": jet_results,
         "extension_status": (
             "the direct sum is the associated graded of the exact ideal "
-            "flag; the completed transitivity extension class is not computed"
+            "flag; verify_degree42_ritt_cellular_extension.py proves that "
+            "the nested order-three and order-four module extensions are "
+            "non-split, and verify_degree42_ritt_tensor_extension.py proves "
+            "that the completed ideal-module extension is non-split; "
+            "verify_degree42_ritt_conormal_transitivity.py proves that the "
+            "first-Postnikov conormal projection is non-split and hence "
+            "that the cotangent transitivity connecting morphism is "
+            "nonzero; verify_degree42_ritt_postnikov_overlap.py proves "
+            "that the completed sector-to-total conormal map is injective "
+            "and separates its truncated base-change Tor"
         ),
     }
 
@@ -232,7 +247,7 @@ def main() -> None:
             ],
             "not_proved": [
                 "the coefficient system is quasi-isomorphic to the full derived Hessian intersection",
-                "the degree-42 completed sector/spectator extension splits",
+                "the individual higher cotangent homology modules are computed",
                 "the filtered H2 obstruction groups vanish beyond the displayed associated graded",
                 "an all-degree reusable deformation theorem",
             ],

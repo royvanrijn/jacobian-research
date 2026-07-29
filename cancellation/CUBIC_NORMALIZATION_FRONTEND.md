@@ -1208,12 +1208,66 @@ and Quillen--Suslin makes it free.  Together with (1.16tc), all
 \(7\binom{24}{2}=1932\) coordinate planes for squarefree cubic symbols
 retain the flat length-six support defect.
 
+There is now also a plane whose generic tensor has full support in the
+fixed 24-element kernel basis.  Put
+
+\[
+ \psi_+=\sum_{i=0}^{23}\psi_{4,i},\qquad
+ \psi_-=\sum_{i=0}^{23}(-1)^i\psi_{4,i}.
+\]
+
+For each of the seven squarefree symbols, compute the complete family
+
+\[
+ \phi_h+u\psi_++v\psi_-
+\tag{1.16tg}
+\]
+
+over \(\mathbb Q[u,v,x,y,z]\).  In all seven rows the cotangent
+presentation is saturated, the relative
+\(\operatorname{Ext}^2\) support is exactly the parameter plane, its
+relative multiplicity is six, and its pruned rank-three presentation is
+the scalar extension of the presentation at \(u=v=0\).  On
+\(D(u^2-v^2)\), its coefficient in every one of the 24 fixed basis
+directions is nonzero.  Thus (1.16tg) is an exact two-parameter family of
+full-support quartic tensors retaining the length-six defect for every
+squarefree cubic symbol.
+
+This removes basis sparsity as a necessary escape mechanism: a quartic
+tensor can use all 24 directions and still retain the same obstruction.
+It does not give a Zariski-open statement in the full 24-dimensional
+kernel, because (1.16tg) is only one plane.
+
+The purity-restoring lift for the three degenerate symbols is stable on a
+translated version of the same plane.  Let \(\psi_g\) be the deterministic
+full-support quartic tensor used in (1.16t).  For all nine nonzero cubic
+orbit representatives and the zero symbol, compute
+
+\[
+ \phi_h+\psi_g+u\psi_++v\psi_- .
+\tag{1.16th}
+\]
+
+Over \(\mathbb Q[u,v,x,y,z]\), every one of these ten affine planes has
+saturated cotangent presentation, support exactly equal to the parameter
+plane, relative \(\operatorname{Ext}^2\) multiplicity six, and pruned
+rank-three presentation pulled back from \(u=v=0\).  The coordinates of
+\(\psi_g\) in the fixed primitive basis are all nonzero, so the generic
+member of (1.16th) also has full support.
+
+For the double-line, triple-line, and zero cubic symbols, this is stronger
+than the central endpoint calculation (1.16t): the order-four translation
+restores pure two-dimensional ramification support and the finite
+length-six defect uniformly on an affine parameter plane.  It still does
+not prove normality of these nonhomogeneous algebras or compatibility with
+a distinguished Keller open.
+
 This computation does **not** prove lift-independence.  In particular it
 does not cover singular-symbol combinations supported on three or more
 basis tensors, smooth-symbol combinations supported on four or more basis
-tensors, the universal 24-parameter order-four space, show that every
-normal integral higher lift has a length-six support defect, or construct
-the distinguished Keller open.
+tensors outside the tested full-support plane, the universal 24-parameter
+order-four space, show that every normal integral higher lift has a
+length-six support defect, or construct the distinguished Keller open.
 Proposition 1.8c supplies normal integral lifts abstractly, but the
 constrained genericity argument there does not identify their saturation
 modules.  The remaining sharp target is therefore:

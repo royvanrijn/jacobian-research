@@ -1,0 +1,159 @@
+{
+  "format": "degree-four-phase-one-chart-modular-v3",
+  "status": "exact modular fiber completeness plus exact characteristic-zero branch and orbit identities",
+  "prime": 101,
+  "chart_coordinates": [
+    "a0",
+    "a1",
+    "a2",
+    "a3",
+    "a4",
+    "u",
+    "v",
+    "w"
+  ],
+  "point": [
+    2,
+    3,
+    5,
+    7,
+    11,
+    2,
+    3,
+    5
+  ],
+  "moment_orders_in_fiber_ideal": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "reduced_groebner_basis": [
+    "1*v^1+98",
+    "1*u^1+34*w^1+30",
+    "1*a3^1+22*a4^1+54",
+    "1*a2^1+96",
+    "1*a1^1+79*a4^1+37",
+    "1*a0^1+1*a4^1+88",
+    "1*w^2+90*w^1+30",
+    "1*a4^2+88*a4^1+22"
+  ],
+  "fiber_length": 4,
+  "fiber_reduced": true,
+  "second_branch_same_diagonal": [
+    2,
+    3,
+    5,
+    7,
+    11,
+    69,
+    3,
+    6
+  ],
+  "moments_one_through_eleven_agree_on_branches": true,
+  "known_tau_even_parameters_agree_on_branches": true,
+  "odd_cubic_values_on_branches": [
+    11,
+    90
+  ],
+  "characteristic_zero_second_branch": [
+    "2",
+    "3",
+    "5",
+    "7",
+    "11",
+    "5/3",
+    "3",
+    "6"
+  ],
+  "characteristic_zero_moments_one_through_eleven_agree": true,
+  "characteristic_zero_odd_cubic_values": [
+    1728,
+    -1728
+  ],
+  "characteristic_zero_sl2_orbit_matrix": [
+    [
+      "0",
+      "-sqrt(3)/3"
+    ],
+    [
+      "sqrt(3)",
+      "0"
+    ]
+  ],
+  "characteristic_zero_orbit_identity_verified": true,
+  "characteristic_zero_reconstructed_points": [
+    [
+      "2",
+      "3",
+      "5",
+      "7",
+      "11",
+      "2",
+      "3",
+      "5"
+    ],
+    [
+      "2",
+      "3",
+      "5",
+      "7",
+      "11",
+      "5/3",
+      "3",
+      "6"
+    ],
+    [
+      "11",
+      "7",
+      "5",
+      "3",
+      "2",
+      "2",
+      "3",
+      "5"
+    ],
+    [
+      "11",
+      "7",
+      "5",
+      "3",
+      "2",
+      "5/3",
+      "3",
+      "6"
+    ]
+  ],
+  "first_eight_moment_jacobian_determinants": [
+    "-664886859697950537008868405994595186881355199398116360363695342053926137270301114156567309246654270561514082878820219617280000000000000000000000",
+    "664886859697950537008868405994595186881355199398116360363695342053926137270301114156567309246654270561514082878820219617280000000000000000000000",
+    "-664886859697950537008868405994595186881355199398116360363695342053926137270301114156567309246654270561514082878820219617280000000000000000000000",
+    "664886859697950537008868405994595186881355199398116360363695342053926137270301114156567309246654270561514082878820219617280000000000000000000000"
+  ],
+  "characteristic_zero_reconstructed_points_reduced_and_isolated": true,
+  "apolar_reversal_of_point": [
+    11,
+    7,
+    5,
+    3,
+    2,
+    2,
+    3,
+    5
+  ],
+  "sl2_orbit_witness_basis": [
+    "1*gd^1",
+    "1*gb^1+34*gc^1",
+    "1*ga^1",
+    "1*gc^2+98"
+  ],
+  "orbit_witness_interpretation": "ga=gd=0, gb=-34*gc, gc^2=3; the second branch is SL2-conjugate to the apolar reversal",
+  "quotient_interpretation": "the four raw chart points pair into two candidate SL2 quotient points exchanged by the apolar involution",
+  "scope_warning": "fiber completeness is proved only over F_101; the displayed characteristic-zero branches and their orbit identity are exact, but exclusion of further characteristic-zero points and the generic degree remain open"
+}

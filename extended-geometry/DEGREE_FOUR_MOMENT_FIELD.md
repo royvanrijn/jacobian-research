@@ -24,7 +24,7 @@ fixes every moment.  The question is whether
 \]
 
 The calculations below do **not** prove (1.2) on the full quotient.  They
-give three new exact conclusions.
+give four new exact conclusions.
 
 1. There is an explicit set of twenty-two algebraically independent
    \(\tau\)-even trace invariants of degrees
@@ -41,12 +41,22 @@ give three new exact conclusions.
    \]
    occurs in invariant weight at most sixteen.  This is a bounded exact
    nonexistence result, not a failure of (1.2).
-3. On the five-dimensional diagonal slice, the full moment field is
-   exactly the \(\tau\)-fixed field and has generic degree two.
+3. On the five-dimensional diagonal parameter space, the restricted
+   moment map has degree two and its field is the reversal-fixed field.
+   Here reversal is also the Weyl action of \(\operatorname{SL}_2\), so
+   the two parameter points give one invariant-quotient point.  This is
+   a fixed-locus control, not a degree-two quotient test.
+4. The analogous parameter-field statement holds on ten explicit
+   six-dimensional single-phase spaces.  Four cross-direction slices in
+   phases one and two have \(c_{234}\ne0\), so their reversal pairs are
+   genuinely distinct quotient points.  The other six lie in the
+   apolar-fixed locus.
 
-Thus the degree-two hypothesis passes a nontrivial exact slice test and
-has no infinitesimal obstruction on the full quotient.  The discrete
-global field degree on \(\operatorname{Frac}(R_4)\) remains open.
+Thus the degree-two hypothesis has no infinitesimal obstruction on the
+full quotient and passes four exact, genuinely apolar-moving slice
+tests.  The diagonal and fixed-locus cases must not be counted as such
+tests.  The discrete global field degree on
+\(\operatorname{Frac}(R_4)\) remains open.
 
 ## 2. Low-degree invariant parameters
 
@@ -202,6 +212,14 @@ all restricted moments, so the degree is at least two.  Hence
 \tag{4.7}
 \]
 
+This is a statement about the diagonal **parameter space**, not a
+degree-two fiber in the invariant quotient.  The nontrivial Weyl element
+of \(\operatorname{SL}_2\) reverses the diagonal coordinates, so the two
+points in (4.6) are \(\operatorname{SL}_2\)-equivalent.  Equivalently,
+the odd cubic \(c_{234}\) vanishes identically on this slice.  After
+passing to the quotient image, the restricted moments are generically
+birational rather than two-to-one.
+
 Equation (4.5) also gives a literal first odd quadratic relation on this
 fiber.  For example, \(a_0-a_4\) is odd and satisfies
 \[
@@ -209,7 +227,228 @@ fiber.  For example, \(a_0-a_4\) is odd and satisfies
 \tag{4.8}
 \]
 
-## 5. Remaining global certificate
+## 5. Exact single-phase parameter theorem
+
+Fix a phase \(h\in\{1,2,3,4\}\).  Let \(B\) be a
+\(\tau\)-even matrix direction of phase \(+h\), and let \(C\) be a
+\(\tau\)-even direction of phase \(-h\).  Consider
+\[
+ \operatorname{diag}(a_0,\ldots,a_4)+bB+cC.
+\tag{5.1}
+\]
+The residual diagonal torus scales \(b\) and \(c\) inversely.  Every
+restricted moment therefore depends on them only through \(z=bc\), and
+the torus-quotient parameter space has coordinate ring
+\[
+ S_{B,C}=\mathbb Q[a_0,a_1,a_2,a_3,a_4,z].
+\tag{5.2}
+\]
+On this ring,
+\[
+ \tau(a_0,a_1,a_2,a_3,a_4,z)
+ =(a_4,a_3,a_2,a_1,a_0,z).
+\tag{5.3}
+\]
+
+For phases \(1,2,3,4\), the positive and negative \(\tau\)-even
+direction spaces have respective dimensions
+\[
+ (2,2),\quad(2,2),\quad(1,1),\quad(1,1).
+\tag{5.4}
+\]
+Their coordinate direction pairs consequently give
+\[
+ 4+4+1+1=10
+\tag{5.5}
+\]
+explicit parameter slices.
+
+On every one of these ten slices, an exact characteristic-zero standard
+basis proves that the first six moments form a weighted homogeneous
+system of parameters, where the \(a_i\) have weight one and \(z\) has
+weight two.  The quotient length is
+\[
+ \frac{1\cdot2\cdot3\cdot4\cdot5\cdot6}{2}=360.
+\tag{5.6}
+\]
+At the parameter point
+\[
+ (a_0,a_1,a_2,a_3,a_4,z)=(2,3,5,7,11,221),
+\tag{5.7}
+\]
+the complete first-seven-moment fiber has ideal
+\[
+\begin{split}
+(&a_0+a_4-13,\;
+ 9a_1+4a_4-71,\;
+ a_2-5,\\
+ &9a_3-4a_4-19,\;
+ z-221,\;
+ (a_4-2)(a_4-11)).
+\end{split}
+\tag{5.8}
+\]
+For each slice, the checker independently computes the moment ideal and
+verifies zero reduction in both directions against (5.8).  Thus the
+fiber is reduced of length two, consisting of the displayed point and
+its reversal.
+
+The finiteness argument from Section 4 now applies verbatim: the generic
+degree is at most two, while the nontrivial involution (5.3) forces it to
+be at least two.  If \(B_{B,C}\) denotes the algebra of all restricted
+moments, then
+\[
+\boxed{
+\operatorname{Frac}B_{B,C}
+=\operatorname{Frac}(S_{B,C})^\tau,\qquad
+[\operatorname{Frac}(S_{B,C}):\operatorname{Frac}B_{B,C}]=2.}
+\tag{5.9}
+\]
+
+The nonvanishing parameter and reduced-fiber conditions are Zariski
+open in the coefficients of \(B\) and \(C\).  Since the checker supplies
+one point in every phase, (5.9) holds for a nonempty Zariski-open family
+of positive/negative direction pairs for each \(h\).
+
+There is a necessary quotient-level qualification.  At \(b=1,c=221\),
+the odd cubic values on the ten coordinate pairs are
+\[
+\begin{array}{c|cccc}
+h& (0,0)&(0,1)&(1,0)&(1,1)\\ \hline
+1&0&-381888&381888&0\\
+2&0&-381888&381888&0,
+\end{array}
+\qquad
+c_{234}=0\quad(h=3,4).
+\tag{5.10}
+\]
+Thus the four cross-direction slices \((h,i,j)=(1,0,1),(1,1,0),
+(2,0,1),(2,1,0)\) have a genuinely nontrivial apolar pair.  By
+nonvanishing, this remains true on a nonempty open family of direction
+pairs in phases one and two.  The aligned pairs and the one-dimensional
+phase-three and phase-four pairs lie in the apolar-fixed locus; their
+two raw parameter points can be identified by the
+\(\operatorname{SL}_2\) normalizer and are controls rather than evidence
+for a quotient degree of two.
+
+## 6. Eight-dimensional phase-one frontier
+
+Use both positive and both negative phase-one directions.  On the chart
+where the first positive coefficient is nonzero, the residual torus
+gives coordinates
+\[
+ (a_0,a_1,a_2,a_3,a_4,u,v,w).
+\tag{6.1}
+\]
+An exact computation over \(\mathbb F_{101}\) at
+\[
+ p=(2,3,5,7,11,2,3,5)
+\tag{6.2}
+\]
+finds that the first ten moments have reduced Gröbner basis
+\[
+\begin{split}
+(&v-3,\;u+34w+30,\;a_3+22a_4+54,\;a_2-5,\\
+ &a_1+79a_4+37,\;a_0+a_4-13,\\
+ &w^2-11w+30,\;a_4^2-13a_4+22).
+\end{split}
+\tag{6.3}
+\]
+The raw chart fiber therefore has four reduced points.  The second point
+with the same diagonal coordinates is
+\[
+ q=(2,3,5,7,11,69,3,6).
+\tag{6.4}
+\]
+All moments through order eleven and all twenty-two even trace
+parameters agree at \(p\) and \(q\), while
+\[
+ c_{234}(p)=11,\qquad c_{234}(q)=90=-11
+ \quad\text{in }\mathbb F_{101}.
+\tag{6.5}
+\]
+Moreover, \(q\) is explicitly \(\operatorname{SL}_2\)-conjugate to
+\(\tau(p)\).  The orbit-witness ideal has reduced basis
+\[
+ (g_d,\;g_b+34g_c,\;g_a,\;g_c^2-3),
+\tag{6.6}
+\]
+so one may take
+\[
+ g=\begin{pmatrix}0&-34g_c\\g_c&0\end{pmatrix},
+ \qquad g_c^2=3.
+\tag{6.7}
+\]
+Thus the four raw chart points pair into two candidate quotient points
+exchanged by the apolar involution.  This is the first larger-dimensional
+fiber exhibiting exactly the expected quotient pattern.
+
+The extra branch itself lifts exactly to characteristic zero:
+\[
+ q_{\mathbb Q}=(2,3,5,7,11,5/3,3,6).
+\tag{6.8}
+\]
+Direct rational evaluation gives
+\[
+ \mu_m(q_{\mathbb Q})=\mu_m(p)\quad(1\leq m\leq11),
+ \qquad
+ c_{234}(p)=1728,\quad c_{234}(q_{\mathbb Q})=-1728.
+\tag{6.9}
+\]
+In fact this moment agreement is forced in every order by the exact orbit
+identity
+\[
+ q_{\mathbb Q}
+ =
+ \begin{pmatrix}0&-1/\sqrt3\\ \sqrt3&0\end{pmatrix}
+ \cdot\tau(p),
+\tag{6.10}
+\]
+where the matrix acts through \(\operatorname{Sym}^4\)-conjugation.  The
+checker verifies (6.10) entry by entry.
+
+There are four reconstructed rational chart points:
+\[
+ p,\quad q_{\mathbb Q},\quad \tau(p),\quad \tau(q_{\mathbb Q}).
+\tag{6.11}
+\]
+At each one, the Jacobian determinant of the first eight moments is
+nonzero.  Up to sign, its exact value is
+\[
+\begin{split}
+D={}&2^{120}3^{51}5^{22}7^{14}11^5 13^2\cdot10305089\\
+ &{}\cdot506042335709178769
+ \cdot1011958948403779283926901.
+\end{split}
+\tag{6.12}
+\]
+The signs at the four points in (6.11) are respectively
+\((-1,+1,-1,+1)\).  Hence all four characteristic-zero branches are
+reduced and isolated in the first-eight-moment fiber.  What remains is
+not a local-multiplicity issue at the expected branches, but the global
+exclusion of additional zero-dimensional points or positive-dimensional
+components.
+
+Several optimized completeness attempts sharpen that boundary.  Dividing
+each moment equation by its integer content greatly reduces coefficient
+height.  Nevertheless, centered characteristic-zero `modStd` on the
+first nine primitive equations did not finish in 900 seconds, and a
+direct radical-membership run for the expected residual quadratic did
+not finish in 600 seconds.  Removing either \(\mu _8\) or \(\mu _9\)
+over \(\mathbb F_{101}\) produces a much larger finite algebra, so both
+equations are essential to the observed four-point collapse.  The leading
+homogeneous ideal of the first nine equations is positive-dimensional,
+showing that a naive projective no-points-at-infinity argument cannot
+prove completeness.  These are bounded computational observations, not
+theorems about the characteristic-zero fiber.
+
+Fiber completeness in (6.3) is still proved only over
+\(\mathbb F_{101}\).  Bounded characteristic-zero Gröbner and modular
+lifting runs did not finish.  Thus the existence and all-order orbit
+interpretation of the rational branch are exact, but exclusion of further
+characteristic-zero points and the generic quotient degree remain open.
+
+## 7. Remaining global certificate
 
 To prove (1.2), one still needs one global discrete-degree certificate.
 Any of the following would suffice.
@@ -228,5 +467,7 @@ twenty-two-dimensional invariant quotient.
 The exact computations are replayed by
 [`verify_degree_four_tau_even_parameters.py`](../scripts/verify_degree_four_tau_even_parameters.py),
 [`research_degree_four_moment_field.py`](../scripts/research_degree_four_moment_field.py),
+[`verify_degree_four_diagonal_moment_field.py`](../scripts/verify_degree_four_diagonal_moment_field.py),
+[`verify_degree_four_single_phase_moment_fields.py`](../scripts/verify_degree_four_single_phase_moment_fields.py),
 and
-[`verify_degree_four_diagonal_moment_field.py`](../scripts/verify_degree_four_diagonal_moment_field.py).
+[`research_degree_four_phase_one_chart.py`](../scripts/research_degree_four_phase_one_chart.py).

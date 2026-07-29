@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
-"""Exploratory exact lifting tests for the local SIC2C4 five-plane.
+"""Exploratory exact algebraization tests for the local SIC2C4 five-plane.
 
 This is deliberately a research script rather than a status checker.  It
 restores the complete eleven-parameter second-correction freedom at selected
-directions and computes the fourth-order compatibility fiber over Q.
-Directions which have no fourth lift cannot be continued to orders 5--12.
+directions, computes the fourth-order compatibility fiber over Q, and tests
+one point on each conjugate component after restoring the eleven omitted
+cubic-tangent parameters at fifth order.  Directions obstructed at fifth
+order cannot be continued to orders 6--12.
 """
 
 from __future__ import annotations
@@ -16,6 +18,7 @@ import subprocess
 from pathlib import Path
 
 import sympy as sp
+from sympy.polys.matrices import DomainMatrix
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -248,8 +251,13 @@ def fifth_test(
         tail_rows.append([sp.factor(value) for value in effect])
     matrix = sp.Matrix(tail_rows)
     constant = sp.Matrix(tail_constant)
-    frozen_rank = matrix.rank()
-    frozen_augmented_rank = matrix.row_join(-constant).rank()
+    frozen_domain = DomainMatrix.from_Matrix(matrix, extension=True)
+    frozen_augmented_domain = DomainMatrix.from_Matrix(
+        matrix.row_join(-constant),
+        extension=True,
+    )
+    frozen_rank = frozen_domain.rank()
+    frozen_augmented_rank = frozen_augmented_domain.rank()
     variation_columns = []
     for ell_delta, m_delta in lower_variations or []:
         ell_delta_poly = vector_polynomial(ell_delta)
@@ -286,8 +294,13 @@ def fifth_test(
         variation_columns.append(sp.Matrix(tail_delta))
     if variation_columns:
         matrix = sp.Matrix.hstack(*variation_columns, matrix)
-    rank = matrix.rank()
-    augmented_rank = matrix.row_join(-constant).rank()
+    domain_matrix = DomainMatrix.from_Matrix(matrix, extension=True)
+    augmented_domain = DomainMatrix.from_Matrix(
+        matrix.row_join(-constant),
+        extension=True,
+    )
+    rank = domain_matrix.rank()
+    augmented_rank = augmented_domain.rank()
     report: dict[str, object] = {
         "frozen_coefficient_rank": frozen_rank,
         "frozen_augmented_rank": frozen_augmented_rank,
@@ -297,32 +310,24 @@ def fifth_test(
         "restored_lower_kernel_parameters": len(variation_columns),
     }
     if rank == augmented_rank:
-        solution, parameters = matrix.gauss_jordan_solve(-constant)
-        zero_parameters = {parameter: 0 for parameter in parameters}
-        point = [sp.factor(value.subs(zero_parameters)) for value in solution]
+        reduced, pivots = augmented_domain.rref()
+        reduced_matrix = reduced.to_Matrix()
+        point = [sp.Rational(0) for _ in range(matrix.cols)]
+        for row, pivot in enumerate(pivots):
+            if pivot < matrix.cols:
+                point[pivot] = sp.factor(reduced_matrix[row, matrix.cols])
         report["one_solution"] = [str(value) for value in point]
         report["solution_space_dimension"] = matrix.cols - rank
         return report
-    if rank != augmented_rank:
-        certificate = next(
-            vector
-            for vector in matrix.T.nullspace()
-            if sp.factor((vector.T * constant)[0]) != 0
-        )
-        report["obstruction_support"] = {
-            str(12 + index): str(sp.factor(value))
-            for index, value in enumerate(certificate)
-            if value
-        }
-        report["obstruction_pairing"] = str(
-            sp.factor((certificate.T * constant)[0])
-        )
     return report
 
 
 def fourth_fiber(
     context: dict[str, object],
     values: tuple[int, int, int, int, int],
+    *,
+    run_point_tests: bool = True,
+    state_target: dict[str, object] | None = None,
 ) -> dict[str, object]:
     tangent_basis = context["tangent_basis"]
     residual_vectors = context["residual_vectors"]
@@ -446,6 +451,26 @@ def fourth_fiber(
         if groebner["dimension"] >= 0
         else "obstructed at fourth order"
     )
+    if state_target is not None:
+        state_target.update(
+            {
+                "h": h,
+                "second": second,
+                "third": evaluate_vector_map(third_map, values),
+                "tangent_matrix": tangent_matrix,
+                "tangent_kernel": tangent_kernel,
+                "second_variation": second_variation,
+                "third_variation": third_variation,
+                "h_polynomial": h_polynomial,
+                "h2_functionals": h2_functionals,
+                "fixed_constant": fixed_constant,
+                "tail_linear": tail_linear,
+                "tail_quadratic": tail_quadratic,
+                "groebner_basis": groebner["groebner_basis"],
+            }
+        )
+    if not run_point_tests:
+        return report
     if groebner["dimension"] == 9 and groebner["degree"] == 2:
         points, square_class = selected_component_points(
             groebner["groebner_basis"]
@@ -581,16 +606,33 @@ def main() -> None:
         for label, values in directions.items()
     }
     result = {
-        "format": "two-pair-counterexample-algebraization-research-v1",
+        "format": "two-pair-counterexample-algebraization-research-v2",
         "scope": (
-            "Exact fourth-order fibers for selected reduced five-plane "
-            "directions; exploratory, not a theorem-status artifact."
+            "Exact fourth-order fibers and complete pointwise fifth tests "
+            "for selected reduced five-plane directions; exploratory, not "
+            "a theorem-status artifact."
         ),
         "known_exact_family_control": {
             "parameterization": "F_(1+s,1)",
             "maximum_parameter_degree": 3,
+            "coefficient_formulas": {
+                "A0": "R+Z",
+                "B0": "2*W*(R+Z)^2-2*R^3-R^2*Z",
+                "B1": "4*W*(R+Z)*R-2*R^3",
+                "B2": "2*W*R^2",
+                "order_0": "A0*B0/2",
+                "order_1": "(R*B0+A0*B1)/2",
+                "order_2": "(R*B1+A0*B2)/2",
+                "order_3": "R*B2/2=W*R^3",
+                "orders_4_through_12": "0",
+            },
             "all_higher_coefficients": "zero from order 4 onward",
             "all_order_identity": "E_2(F_(1+s,1)^m)=0 for every m>=1",
+            "reconstruction": (
+                "exact polynomial (hence rational and algebraic) "
+                "reconstruction of degree 3"
+            ),
+            "coefficient_recurrence": "C_n=0 for every n>=4",
         },
         "directions": fibers,
     }

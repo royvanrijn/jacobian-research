@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import sympy as sp
+from sympy.polys.matrices import DomainMatrix
 
 
 c, v, r, u, z, w, xi = sp.symbols("c v r u z w xi")
@@ -348,6 +349,323 @@ for third_coordinate in third_coordinates:
 
 assert quadratic_zero_slice_skeletons == 8
 
+# The affine directions with nonzero r coefficient can be normalized to
+#
+#   C = r + g*u + a*z + b*w.
+#
+# Their general quadratic fourth-output equation is linear in the fourteen
+# quadratic coefficients.  Exact row reduction over successive
+# rational-function fields gives a complete exceptional-pivot tree:
+#
+#   generic -> p1=0 -> q1=0 -> p2=0 -> q2=0 -> g=0
+#           -> p0=a.
+#
+# The coefficient matrix and augmented matrix have ranks 8 and 9 on each of
+# the first four opens.  Thereafter their ranks are 6 and 7, including the
+# terminal branch.  Thus every branch is inconsistent.
+g, a, b = sp.symbols("g a b")
+
+
+def quadratic_zero_slice_system(
+    third_gradient: tuple[sp.Expr | int, ...],
+) -> tuple[sp.Matrix, sp.Matrix]:
+    """Linear system for a general quadratic fourth output on z=w=0."""
+
+    equation = sp.expand(
+        sp.Matrix(
+            [
+                A_zero_gradient,
+                B_zero_gradient,
+                third_gradient,
+                quadratic_fourth_gradient,
+            ]
+        ).det(method="domain-ge")
+        - 1
+    )
+    coefficient_equations = sp.Poly(equation, r, u).coeffs()
+    return sp.linear_eq_to_matrix(
+        coefficient_equations,
+        quadratic_coefficients,
+    )
+
+
+nonzero_r_affine_matrix, nonzero_r_affine_rhs = (
+    quadratic_zero_slice_system((1, g, a, b))
+)
+
+
+def rational_rref_audit(
+    matrix: sp.Matrix,
+    substitutions: dict[sp.Symbol, sp.Expr | int],
+    parameters: tuple[sp.Symbol, ...],
+) -> tuple[int, set[sp.Expr]]:
+    """Return rank and visible pivot denominators over the remaining field."""
+
+    remaining_parameters = tuple(
+        parameter
+        for parameter in parameters
+        if parameter not in substitutions
+    )
+    coefficient_field = sp.QQ.frac_field(c, v, *remaining_parameters)
+    reduced, pivots = DomainMatrix.from_Matrix(
+        matrix.subs(substitutions),
+        fmt="sparse",
+    ).convert_to(coefficient_field).rref()
+    denominators: set[sp.Expr] = set()
+    for row in reduced.rep.values():
+        for value in row.values():
+            if str(value.denom) != "1":
+                denominators.add(sp.factor(value.denom.as_expr()))
+    return len(pivots), denominators
+
+
+def verify_pivot_tree(
+    coefficient_matrix: sp.Matrix,
+    rhs: sp.Matrix,
+    parameters: tuple[sp.Symbol, ...],
+    tree: tuple[
+        tuple[dict[sp.Symbol, sp.Expr | int], int, int, set[sp.Expr]],
+        ...,
+    ],
+) -> None:
+    """Check every rank and every exceptional denominator in a pivot tree."""
+
+    for substitutions, expected_rank, expected_augmented_rank, expected_poles in (
+        tree
+    ):
+        actual_rank, actual_poles = rational_rref_audit(
+            coefficient_matrix,
+            substitutions,
+            parameters,
+        )
+        augmented_rank, augmented_poles = rational_rref_audit(
+            coefficient_matrix.row_join(rhs),
+            substitutions,
+            parameters,
+        )
+        assert actual_rank == expected_rank
+        assert augmented_rank == expected_augmented_rank
+        assert actual_poles == expected_poles
+        assert augmented_poles == expected_poles
+
+
+nonzero_r_parameters = (g, a, b, p0, p1, p2, q0, q1, q2)
+nonzero_r_pivot_tree = (
+    ({}, 8, 9, {p1}),
+    ({p1: 0}, 8, 9, {q1}),
+    ({p1: 0, q1: 0}, 8, 9, {p2}),
+    ({p1: 0, q1: 0, p2: 0}, 8, 9, {q2}),
+    ({p1: 0, q1: 0, p2: 0, q2: 0}, 6, 7, {g}),
+    ({p1: 0, q1: 0, p2: 0, q2: 0, g: 0}, 6, 7, {a - p0}),
+    (
+        {p1: 0, q1: 0, p2: 0, q2: 0, g: 0, p0: a},
+        6,
+        7,
+        set(),
+    ),
+)
+verify_pivot_tree(
+    nonzero_r_affine_matrix,
+    nonzero_r_affine_rhs,
+    nonzero_r_parameters,
+    nonzero_r_pivot_tree,
+)
+
+# It remains to cover affine gradients with zero r coefficient.  Projective
+# normalization gives three charts, according to the first nonzero entry:
+#
+#   (0,1,a,b),  (0,0,1,b),  (0,0,0,1).
+#
+# Their shorter exact pivot trees close the entire r-free boundary.
+r_free_u_matrix, r_free_u_rhs = quadratic_zero_slice_system((0, 1, a, b))
+r_free_u_parameters = (a, b, p0, p1, p2, q0, q1, q2)
+r_free_u_pivot_tree = (
+    ({}, 8, 9, {p1}),
+    ({p1: 0}, 8, 9, {q1}),
+    ({p1: 0, q1: 0}, 8, 9, set()),
+)
+verify_pivot_tree(
+    r_free_u_matrix,
+    r_free_u_rhs,
+    r_free_u_parameters,
+    r_free_u_pivot_tree,
+)
+
+r_free_z_matrix, r_free_z_rhs = quadratic_zero_slice_system((0, 0, 1, b))
+r_free_z_parameters = (b, p0, p1, p2, q0, q1, q2)
+r_free_z_pivot_tree = (
+    ({}, 7, 8, {b * p1 - q1}),
+    ({q1: b * p1}, 7, 8, set()),
+)
+verify_pivot_tree(
+    r_free_z_matrix,
+    r_free_z_rhs,
+    r_free_z_parameters,
+    r_free_z_pivot_tree,
+)
+
+r_free_w_matrix, r_free_w_rhs = quadratic_zero_slice_system((0, 0, 0, 1))
+r_free_w_parameters = (p0, p1, p2, q0, q1, q2)
+r_free_w_pivot_tree = (
+    ({}, 7, 8, {p1}),
+    ({p1: 0}, 7, 8, set()),
+)
+verify_pivot_tree(
+    r_free_w_matrix,
+    r_free_w_rhs,
+    r_free_w_parameters,
+    r_free_w_pivot_tree,
+)
+
+# The first simultaneous-quadratic chart retains B=r, so P=Q=0 on the
+# zero slice, and lets C,D both be completely general of block degree at
+# most two.  Solving linearly for D gives another complete pivot tree in
+# the visible coefficients of C.  Pure z,w quadratics do not occur because
+# their gradients vanish on z=w=0.
+quadratic_third_coefficients = sp.symbols(
+    f"e0:{len(quadratic_monomials)}"
+)
+quadratic_third_output = sum(
+    coefficient * monomial
+    for coefficient, monomial in zip(
+        quadratic_third_coefficients,
+        quadratic_monomials,
+        strict=True,
+    )
+)
+quadratic_third_gradient = tuple(
+    sp.diff(quadratic_third_output, variable).subs({z: 0, w: 0})
+    for variable in block_variables
+)
+exposed_r_equation = sp.expand(
+    sp.Matrix(
+        [
+            A_zero_gradient,
+            (1, 0, 0, 0),
+            quadratic_third_gradient,
+            quadratic_fourth_gradient,
+        ]
+    ).det(method="domain-ge")
+    - 1
+)
+exposed_r_matrix, exposed_r_rhs = sp.linear_eq_to_matrix(
+    sp.Poly(exposed_r_equation, r, u).coeffs(),
+    quadratic_coefficients,
+)
+exposed_r_visible_indices = (0, 2, 5, 6, 7, 8, 9, 10, 11, 12, 13)
+exposed_r_parameters = tuple(
+    quadratic_third_coefficients[index]
+    for index in exposed_r_visible_indices
+)
+e = quadratic_third_coefficients
+exposed_r_quadratic_tree = (
+    ({}, 8, 9, {e[12]}),
+    ({e[12]: 0}, 8, 9, {e[11]}),
+    ({e[12]: 0, e[11]: 0}, 8, 9, {e[10]}),
+    ({e[12]: 0, e[11]: 0, e[10]: 0}, 8, 9, {e[8]}),
+    ({e[12]: 0, e[11]: 0, e[10]: 0, e[8]: 0}, 8, 9, {e[7]}),
+    (
+        {e[12]: 0, e[11]: 0, e[10]: 0, e[8]: 0, e[7]: 0},
+        8,
+        9,
+        {e[6]},
+    ),
+    (
+        {
+            e[12]: 0,
+            e[11]: 0,
+            e[10]: 0,
+            e[8]: 0,
+            e[7]: 0,
+            e[6]: 0,
+        },
+        6,
+        7,
+        {e[5]},
+    ),
+    (
+        {
+            e[12]: 0,
+            e[11]: 0,
+            e[10]: 0,
+            e[8]: 0,
+            e[7]: 0,
+            e[6]: 0,
+            e[5]: 0,
+        },
+        6,
+        7,
+        {e[2]},
+    ),
+    (
+        {
+            e[12]: 0,
+            e[11]: 0,
+            e[10]: 0,
+            e[8]: 0,
+            e[7]: 0,
+            e[6]: 0,
+            e[5]: 0,
+            e[2]: 0,
+        },
+        6,
+        7,
+        set(),
+    ),
+)
+verify_pivot_tree(
+    exposed_r_matrix,
+    exposed_r_rhs,
+    exposed_r_parameters,
+    exposed_r_quadratic_tree,
+)
+
+# Degree three is the sharp zero-slice threshold for the exposed-r chart.
+# With C=w, the displayed rational cubic D has determinant one on z=w=0.
+# Clearing q^3 gives a polynomial numerator, but its full H=0 determinant
+# is q^3+6*r*v^2*w rather than a unit.  In fact the cofactor derivation for
+# any fourth output vanishes where A_u=A_z=0.
+exposed_r_primitive = sp.expand(R + D1 * z + D0 * w)
+exposed_r_cubic_numerator = sp.expand(
+    u * (-q**2 - v * r * q + 2 * v**2 * r**2) - 6 * v**2 * z
+)
+exposed_r_rational_cubic = exposed_r_cubic_numerator / q**3
+exposed_r_cubic_outputs = sp.Matrix(
+    [exposed_r_primitive, r, w, exposed_r_cubic_numerator]
+)
+exposed_r_cubic_determinant = sp.factor(
+    exposed_r_cubic_outputs.jacobian(block_variables).det()
+)
+assert sp.factor(
+    exposed_r_cubic_determinant - (q**3 + 6 * r * v**2 * w)
+) == 0
+assert sp.factor(
+    sp.Matrix(
+        [exposed_r_primitive, r, w, exposed_r_rational_cubic]
+    ).jacobian(block_variables).det().subs({z: 0, w: 0})
+    - 1
+) == 0
+
+exposed_r_derivation = cofactor_derivation((exposed_r_primitive, r, w))
+assert tuple(
+    sp.factor(coefficient.subs({r: 0, z: 0, w: 0}))
+    for coefficient in exposed_r_derivation
+) == (0, -q, 0, 0)
+rank_drop_r = q / v
+rank_drop_w = sp.factor(sp.diff(R, u).subs(r, rank_drop_r) / rank_drop_r)
+assert all(
+    sp.factor(
+        coefficient.subs(
+            {
+                r: rank_drop_r,
+                w: rank_drop_w,
+            }
+        )
+    )
+    == 0
+    for coefficient in exposed_r_derivation
+)
+
 
 print(
     "PASS: retained-primitive and one-sided nonlinear rank-drop gates; "
@@ -364,4 +682,13 @@ print(
 print(
     "PASS: all 8 transverse skeletons reject a general degree-<=2 fourth "
     "output with arbitrary affine P,Q"
+)
+print(
+    "PASS: every nonconstant affine C rejects a general degree-<=2 fourth "
+    "output on four complete projective pivot trees"
+)
+print(
+    "PASS: exposed B=r rejects two general quadratics; its first rational "
+    "cubic zero-slice survivor has polynomial numerator determinant "
+    "q^3+6*r*v^2*w and a full rank-drop locus"
 )

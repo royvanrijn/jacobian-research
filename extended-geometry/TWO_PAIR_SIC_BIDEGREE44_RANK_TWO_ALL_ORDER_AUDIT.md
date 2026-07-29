@@ -104,11 +104,14 @@ not propagate merely from holonomicity or from (3.1).
 
 The required order is:
 
-1. certify the remaining squarefree rank-one membership
+1. certify the remaining squarefree rank-one target-only membership
    \[
-   (f_3,f_4,f_5,f_6,zph-1)
-   \ni\lambda^4(\lambda-1)^4;
+   \lambda^4(\lambda-1)^4
+   \bigl(p(8c-3d^2)\bigr)^5
+   \in(f_3,f_4,f_5,f_6);
    \]
+   the exponent \(5\) is the common least exponent modulo
+   \(101,103,107\), but the rational lift remains open;
 2. compute an explicit closed point, or an explicit positive-dimensional
    component and its function field, in the semistable
    \(\mu_1=\cdots=\mu_{13}=0\) fiber;

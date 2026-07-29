@@ -1,11 +1,24 @@
 {
-  "format": "two-pair-counterexample-algebraization-research-v1",
-  "scope": "Exact fourth-order fibers for selected reduced five-plane directions; exploratory, not a theorem-status artifact.",
+  "format": "two-pair-counterexample-algebraization-research-v2",
+  "scope": "Exact fourth-order fibers and complete pointwise fifth tests for selected reduced five-plane directions; exploratory, not a theorem-status artifact.",
   "known_exact_family_control": {
     "parameterization": "F_(1+s,1)",
     "maximum_parameter_degree": 3,
+    "coefficient_formulas": {
+      "A0": "R+Z",
+      "B0": "2*W*(R+Z)^2-2*R^3-R^2*Z",
+      "B1": "4*W*(R+Z)*R-2*R^3",
+      "B2": "2*W*R^2",
+      "order_0": "A0*B0/2",
+      "order_1": "(R*B0+A0*B1)/2",
+      "order_2": "(R*B1+A0*B2)/2",
+      "order_3": "R*B2/2=W*R^3",
+      "orders_4_through_12": "0"
+    },
     "all_higher_coefficients": "zero from order 4 onward",
-    "all_order_identity": "E_2(F_(1+s,1)^m)=0 for every m>=1"
+    "all_order_identity": "E_2(F_(1+s,1)^m)=0 for every m>=1",
+    "reconstruction": "exact polynomial (hence rational and algebraic) reconstruction of degree 3",
+    "coefficient_recurrence": "C_n=0 for every n>=4"
   },
   "directions": {
     "generic_rational": {
@@ -43,42 +56,14 @@
             "0",
             "0"
           ],
-          "fifth_order": {
-            "coefficient_rank": 2,
-            "augmented_rank": 3,
+          "conjugate_component_checked_by_field_automorphism": true,
+          "fifth_order_complete_at_point": {
+            "frozen_coefficient_rank": 2,
+            "frozen_augmented_rank": 3,
+            "coefficient_rank": 4,
+            "augmented_rank": 5,
             "consistent": false,
-            "obstruction_support": {
-              "12": "403868279538884160/2521",
-              "13": "-60226713309/2521",
-              "14": "1"
-            },
-            "obstruction_pairing": "-4115483508382625992751476210744913107070484480*(-3790128673927231213978580701974368350295090182576252987490 + 7177687811100604675374771297751057664373919198539336608873*sqrt(41))/209153370336897397547"
-          }
-        },
-        {
-          "free_second_coordinates": [
-            "(2762423726457577875154*sqrt(41) + 189496875627874146421455)/81341202684579487650",
-            "(211163767821607062*sqrt(41) + 10186075845882764525)/3873329122612950",
-            "0",
-            "0",
-            "0",
-            "0",
-            "0",
-            "0",
-            "0",
-            "0",
-            "0"
-          ],
-          "fifth_order": {
-            "coefficient_rank": 2,
-            "augmented_rank": 3,
-            "consistent": false,
-            "obstruction_support": {
-              "12": "403868279538884160/2521",
-              "13": "-60226713309/2521",
-              "14": "1"
-            },
-            "obstruction_pairing": "4115483508382625992751476210744913107070484480*(3790128673927231213978580701974368350295090182576252987490 + 7177687811100604675374771297751057664373919198539336608873*sqrt(41))/209153370336897397547"
+            "restored_lower_kernel_parameters": 11
           }
         }
       ]
@@ -118,42 +103,14 @@
             "0",
             "0"
           ],
-          "fifth_order": {
-            "coefficient_rank": 2,
-            "augmented_rank": 3,
+          "conjugate_component_checked_by_field_automorphism": true,
+          "fifth_order_complete_at_point": {
+            "frozen_coefficient_rank": 2,
+            "frozen_augmented_rank": 3,
+            "coefficient_rank": 4,
+            "augmented_rank": 5,
             "consistent": false,
-            "obstruction_support": {
-              "12": "2727113757934325760/17047",
-              "13": "-407042494824/17047",
-              "14": "1"
-            },
-            "obstruction_pairing": "-181204124622817114606221713756679009938178048000*(297266147311465542941750522864782636785917596662761447*sqrt(41) + 15539254470783338396590053954475539152756105309484062435)/7522303851810716029109"
-          }
-        },
-        {
-          "free_second_coordinates": [
-            "(-8069008752860205223683 + 11422176529207074837605*sqrt(41))/147893095790144523000",
-            "(24604601996153051 + 53924298324403920*sqrt(41))/704241658656900",
-            "0",
-            "0",
-            "0",
-            "0",
-            "0",
-            "0",
-            "0",
-            "0",
-            "0"
-          ],
-          "fifth_order": {
-            "coefficient_rank": 2,
-            "augmented_rank": 3,
-            "consistent": false,
-            "obstruction_support": {
-              "12": "2727113757934325760/17047",
-              "13": "-407042494824/17047",
-              "14": "1"
-            },
-            "obstruction_pairing": "181204124622817114606221713756679009938178048000*(-15539254470783338396590053954475539152756105309484062435 + 297266147311465542941750522864782636785917596662761447*sqrt(41))/7522303851810716029109"
+            "restored_lower_kernel_parameters": 11
           }
         }
       ]
@@ -193,42 +150,14 @@
             "0",
             "0"
           ],
-          "fifth_order": {
-            "coefficient_rank": 2,
-            "augmented_rank": 3,
+          "conjugate_component_checked_by_field_automorphism": true,
+          "fifth_order_complete_at_point": {
+            "frozen_coefficient_rank": 2,
+            "frozen_augmented_rank": 3,
+            "coefficient_rank": 4,
+            "augmented_rank": 5,
             "consistent": false,
-            "obstruction_support": {
-              "12": "26726668641953280/167",
-              "13": "-3988152672/167",
-              "14": "1"
-            },
-            "obstruction_pairing": "-13106490648460742452340261853206075703831605909913600000000*(1476849971135104574252081540683521786072245 + 1744984629491514804789164631225966496457046*sqrt(41))/8939899012216892971"
-          }
-        },
-        {
-          "free_second_coordinates": [
-            "2*(3936886372375*sqrt(41) + 64724760831979)/292768641165",
-            "4*(1044137472708*sqrt(41) + 25834439152861)/175661184699",
-            "0",
-            "0",
-            "0",
-            "0",
-            "0",
-            "0",
-            "0",
-            "0",
-            "0"
-          ],
-          "fifth_order": {
-            "coefficient_rank": 2,
-            "augmented_rank": 3,
-            "consistent": false,
-            "obstruction_support": {
-              "12": "26726668641953280/167",
-              "13": "-3988152672/167",
-              "14": "1"
-            },
-            "obstruction_pairing": "13106490648460742452340261853206075703831605909913600000000*(-1476849971135104574252081540683521786072245 + 1744984629491514804789164631225966496457046*sqrt(41))/8939899012216892971"
+            "restored_lower_kernel_parameters": 11
           }
         }
       ]

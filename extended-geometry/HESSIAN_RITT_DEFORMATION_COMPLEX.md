@@ -308,8 +308,13 @@ Before claiming the theorem, the following tests are decisive.
 * The completed degree-forty-two ideal flag and first conormal layers are now
   computed: the prime-omitting path equals the boundary, the spectator
   quotient has minimal \(z\)-annihilation exponent one, and the relative
-  sector quotient has exponent eight.  Compute their module presentations
-  and the extension class in the cotangent transitivity triangle.
+  sector quotient has exponent eight.  The completed ideal-module
+  extension and the first-Postnikov conormal projection are non-split; the
+  latter proves that the cotangent transitivity connecting morphism is
+  nonzero.  The sector-to-total conormal map is injective after completion,
+  and its apparent two-dimensional kernel modulo the base square is
+  base-change Tor.  Compute the individual higher cotangent homology
+  modules.
 * Verify a commuting square with both power and Dickson labels; a bare
   topological square has no scheme-theoretic content.
 * Show that the lift cocycle is null-homotopic, rather than merely zero on
@@ -342,8 +347,17 @@ commuting squares, and braid cells.  Its degree-thirty sectors have
 \((\dim H^0,\dim H^1,\dim H^2)=(2,1,0)\).  In degree forty-two it separates
 the first conormal \(H^1\) into the exact \(z^8\) sector and \(z\) spectator
 layers and replays their finite-jet dimensions.  This is an exact
-associated-graded model; it does not yet compute the completed transitivity
-extension or prove the homotopy-limit comparison.
+associated-graded model.  Its next verifier proves that the
+sector--spectator module extension splits at order two and is non-split at
+orders three and four, with explicit change-of-splitting obstruction
+functionals.  A presentation-first finite tensor quotient further proves
+that the completed ideal-module extension is non-split.  Killing the full
+normal ideal then gives a non-split \(4\to6\to2\) conormal quotient, proving
+that the actual cotangent transitivity connecting morphism is nonzero.
+The quadratic overlap vanishes after completion, so its first homology
+sequence is short exact; the two-dimensional kernel introduced by
+base-square reduction is ordinary Tor.  What remains is to compute the
+individual higher homology modules and prove the homotopy-limit comparison.
 
 ## Relation to the existing notes
 

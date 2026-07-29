@@ -83,6 +83,43 @@
     "status": "exact unit ideal over Q",
     "reduction": "substitute c=3*d^2/8 and divide the four moment numerators by the invertible powers g,g,g^2,g^2"
   },
-  "remaining_exact_gate": "certify that (f3,f4,f5,f6,z*p*h-1) contains lambda^4*(lambda-1)^4 over Q",
+  "h_nonzero_p_nonzero_modular_reconnaissance": {
+    "target": "lambda^4*(lambda-1)^4*(p*(8*c-3*d^2))^5 in (f3,f4,f5,f6)",
+    "primes": [
+      101,
+      103,
+      107
+    ],
+    "least_saturation_exponents": {
+      "101": 5,
+      "103": 5,
+      "107": 5
+    },
+    "degree_order_basis_sizes": {
+      "101": 87,
+      "103": 87,
+      "107": 87
+    },
+    "prime_101_lift_profile_degree_and_terms": [
+      [
+        34,
+        5356
+      ],
+      [
+        29,
+        3679
+      ],
+      [
+        27,
+        3037
+      ],
+      [
+        22,
+        1853
+      ]
+    ],
+    "status": "finite-field evidence only; exact Q lift remains open"
+  },
+  "remaining_exact_gate": "lift lambda^4*(lambda-1)^4*(p*(8*c-3*d^2))^5 into (f3,f4,f5,f6) over Q",
   "written_source": "extended-geometry/TWO_PAIR_SIC_BIDEGREE44_RANK_FRONTIER.md"
 }

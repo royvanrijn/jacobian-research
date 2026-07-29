@@ -7,8 +7,8 @@ B of matrix phase +h and a tau-even direction C of phase -h.  On
     diag(a_0,...,a_4) + b B + c C
 
 the residual diagonal torus scales b and c inversely, so every moment
-depends on them only through z=bc.  The quotient slice is therefore
-Spec QQ[a_0,...,a_4,z], with tau reversing the a_i and fixing z.
+depends on them only through z=bc.  The torus-quotient parameter space is
+therefore Spec QQ[a_0,...,a_4,z], with tau reversing the a_i and fixing z.
 
 There are ten coordinate pairs of tau-even directions: four for h=1,
 four for h=2, and one each for h=3,4.  For every pair this checker proves
@@ -20,13 +20,17 @@ over QQ that:
   (a_0,...,a_4,z)=(2,3,5,7,11,221) is exactly the two reduced points
   related by reversal.
 
-Thus the full moment field on every displayed quotient slice is the
-tau-fixed field and has generic degree two.  Since both finite-parameter
-and reduced-fiber conditions are open in the direction coefficients, this
-also proves the same statement for a nonempty Zariski-open family of
-direction pairs in every phase.
+Thus the full restricted moment field on every displayed raw parameter
+space is the tau-fixed field and has generic degree two.  Since both
+finite-parameter and reduced-fiber conditions are open in the direction
+coefficients, this also proves the same parameter-field statement for a
+nonempty Zariski-open family of direction pairs in every phase.
 
-These slice theorems do not determine the degree on the full
+The checker additionally evaluates the first odd cubic.  It is nonzero
+on the four cross-direction coordinate pairs in phases one and two, where
+the two raw points are genuinely distinct invariant-quotient points.  It
+vanishes on the other six coordinate pairs, which are fixed-locus
+controls.  These slice theorems do not determine the degree on the full
 22-dimensional invariant quotient.
 """
 
@@ -39,6 +43,10 @@ from functools import reduce
 from math import factorial
 from operator import mul
 from pathlib import Path
+
+import sympy as sp
+
+import verify_two_pair_counterexample_missing_invariant as invariant_base
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -203,12 +211,28 @@ def direction_payload(direction: Direction) -> list[dict[str, int]]:
     ]
 
 
+def odd_cubic_value(
+    positive: Direction,
+    negative: Direction,
+    projectors: dict[int, sp.Matrix],
+) -> int:
+    coefficients = sp.diag(*POINT[:5])
+    for (row, column), value in positive.items():
+        coefficients[row, column] += value
+    for (row, column), value in negative.items():
+        coefficients[row, column] += POINT[5] * value
+    _, vector = invariant_base.vectorized_operator(coefficients)
+    components = invariant_base.component_matrices(vector, projectors)
+    return int(invariant_base.cubic_invariant(components, (2, 3, 4)))
+
+
 def verify_slice(
     phase: int,
     positive_index: int,
     positive: Direction,
     negative_index: int,
     negative: Direction,
+    projectors: dict[int, sp.Matrix],
 ) -> dict[str, object]:
     moments = restricted_moments(positive, negative, 7)
     moment_strings = [polynomial_string(moment) for moment in moments]
@@ -293,11 +317,17 @@ def verify_slice(
         "first_seven_fiber_length": fiber_length,
         "first_seven_fiber_standard_basis_size": fiber_basis_size,
         "mutual_fiber_ideal_reductions_zero": True,
+        "odd_cubic_at_lift_b_1_c_221": odd_cubic_value(
+            positive,
+            negative,
+            projectors,
+        ),
     }
 
 
 def main() -> None:
     slices = []
+    projectors = invariant_base.casimir_projectors()
     for phase in range(1, 5):
         positive_directions = tau_even_directions(phase, True)
         negative_directions = tau_even_directions(phase, False)
@@ -310,9 +340,52 @@ def main() -> None:
                         positive,
                         negative_index,
                         negative,
+                        projectors,
                     )
                 )
     assert len(slices) == 10
+    moving_slices = [
+        {
+            "phase": slice_data["phase"],
+            "positive_direction_index": (
+                slice_data["positive_direction_index"]
+            ),
+            "negative_direction_index": (
+                slice_data["negative_direction_index"]
+            ),
+            "odd_cubic_value": (
+                slice_data["odd_cubic_at_lift_b_1_c_221"]
+            ),
+        }
+        for slice_data in slices
+        if slice_data["odd_cubic_at_lift_b_1_c_221"]
+    ]
+    assert moving_slices == [
+        {
+            "phase": 1,
+            "positive_direction_index": 0,
+            "negative_direction_index": 1,
+            "odd_cubic_value": -381888,
+        },
+        {
+            "phase": 1,
+            "positive_direction_index": 1,
+            "negative_direction_index": 0,
+            "odd_cubic_value": 381888,
+        },
+        {
+            "phase": 2,
+            "positive_direction_index": 0,
+            "negative_direction_index": 1,
+            "odd_cubic_value": -381888,
+        },
+        {
+            "phase": 2,
+            "positive_direction_index": 1,
+            "negative_direction_index": 0,
+            "odd_cubic_value": 381888,
+        },
+    ]
 
     payload = {
         "format": "degree-four-single-phase-moment-fields-v1",
@@ -329,11 +402,14 @@ def main() -> None:
         "open_family_consequence": (
             "for every phase h=1,2,3,4, a nonempty Zariski-open family "
             "of tau-even positive/negative direction pairs has the same "
-            "degree-two fixed-field property"
+            "raw parameter-field degree-two fixed-field property"
         ),
+        "genuinely_apolar_moving_coordinate_slices": moving_slices,
+        "fixed_locus_coordinate_slice_count": 6,
         "scope_warning": (
-            "single-phase quotient slices only; no determination of the "
-            "degree on Frac(R_4)"
+            "single-phase raw parameter spaces only; the six zero-odd-"
+            "cubic coordinate cases are fixed-locus controls, and there "
+            "is no determination of the degree on Frac(R_4)"
         ),
     }
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)

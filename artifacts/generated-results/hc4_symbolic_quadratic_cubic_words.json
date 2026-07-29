@@ -1,0 +1,4447 @@
+{
+  "patterns": [
+    {
+      "H1_source": 0,
+      "H2_source": 0,
+      "certificate_kind": "singular_unit_ideal",
+      "common_dual": 0,
+      "degree_pair": [
+        2,
+        3
+      ],
+      "epsilon1": -1,
+      "epsilon2": 1,
+      "linear_pairing": 2,
+      "origin_parent_hessian_determinant": "-16384",
+      "parent_constant_locus_with_ab_nonzero": "empty",
+      "pattern_id": "p0-q0-q0-e-1-e+1",
+      "poisson_bracket_factor": "12*a*b*L1*L2^2",
+      "poisson_incidence": "reciprocal",
+      "probe_equations": [
+        {
+          "factorization": "b*(48*a**2*b + 24*a*b + 2*a + 3*b)**2*(1104*a**2*b + 552*a*b - 62*a + 69*b - 27)",
+          "point": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "sha256": "3cdbf7cc08f78e69ffa9fb32d748e976879b00964222f45141e0ece2ba9b9814",
+          "terms": 19,
+          "total_degree": 10
+        },
+        {
+          "factorization": "b*(48*a**2*b - 24*a*b - 2*a + 3*b + 1)**2*(1104*a**2*b - 552*a*b + 62*a + 69*b - 4)",
+          "point": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "ac5d1c5caa2c819b6dd8dac670f85ce621b89de630fa2ad730ff6634d7b538e5",
+          "terms": 22,
+          "total_degree": 10
+        },
+        {
+          "factorization": "b*(48*a**2*b - 24*a*b + 2*a + 3*b - 1)**2*(1104*a**2*b - 552*a*b - 62*a + 69*b + 4)",
+          "point": [
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "f6fd8e29b387965ff2931c809e1b9677803a8e6d4de1494d6c3354b988675be0",
+          "terms": 22,
+          "total_degree": 10
+        },
+        {
+          "factorization": "b*(48*a**2*b + 24*a*b - 2*a + 3*b)**2*(1104*a**2*b + 552*a*b + 62*a + 69*b + 27)",
+          "point": [
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0
+          ],
+          "sha256": "9117e6d3d0d33d758ba63976c4ad9c0704778eee2b60b3191c1a48989cbb1e78",
+          "terms": 19,
+          "total_degree": 10
+        }
+      ],
+      "singular_basis_size": 1,
+      "singular_input_sha256": "61ae9b1fe36bb229da5322739a30f9bcce925e373acccbef2bcbec42f1811626"
+    },
+    {
+      "H1_source": 0,
+      "H2_source": 0,
+      "certificate_kind": "singular_unit_ideal",
+      "common_dual": 0,
+      "degree_pair": [
+        2,
+        3
+      ],
+      "epsilon1": 1,
+      "epsilon2": -1,
+      "linear_pairing": -2,
+      "origin_parent_hessian_determinant": "-16384",
+      "parent_constant_locus_with_ab_nonzero": "empty",
+      "pattern_id": "p0-q0-q0-e+1-e-1",
+      "poisson_bracket_factor": "-12*a*b*L1*L2^2",
+      "poisson_incidence": "reciprocal",
+      "probe_equations": [
+        {
+          "factorization": "b*(48*a**2*b - 24*a*b - 2*a + 3*b)**2*(1104*a**2*b - 552*a*b + 62*a + 69*b - 27)",
+          "point": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "sha256": "112a272675c7587987d2acdf30bfd38f0d9a37b75709fa496ad1d171297bc6e5",
+          "terms": 19,
+          "total_degree": 10
+        },
+        {
+          "factorization": "b*(48*a**2*b + 24*a*b - 2*a + 3*b - 1)**2*(1104*a**2*b + 552*a*b + 62*a + 69*b + 4)",
+          "point": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "c02c1b1b6188bb07c3a845ab49a2c7e4d513af8f38b14978bfc928e927a0a76f",
+          "terms": 22,
+          "total_degree": 10
+        },
+        {
+          "factorization": "b*(48*a**2*b + 24*a*b + 2*a + 3*b + 1)**2*(1104*a**2*b + 552*a*b - 62*a + 69*b - 4)",
+          "point": [
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "a29164e6a9563059d914b4395f0ce7b2f24c381d72218f5c60a70db1a80ada1b",
+          "terms": 22,
+          "total_degree": 10
+        },
+        {
+          "factorization": "b*(48*a**2*b - 24*a*b + 2*a + 3*b)**2*(1104*a**2*b - 552*a*b - 62*a + 69*b + 27)",
+          "point": [
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0
+          ],
+          "sha256": "300a881f615efe26abaf402c15de40652ef9a9f2a80200208cea08bf48d078ed",
+          "terms": 19,
+          "total_degree": 10
+        }
+      ],
+      "singular_basis_size": 1,
+      "singular_input_sha256": "ff8fcb9155efa5fb99ee89bc482d8556817eccd1d7c6c744c59aa04ce68756b8"
+    },
+    {
+      "H1_source": 0,
+      "H2_source": 1,
+      "certificate_kind": "singular_unit_ideal",
+      "common_dual": 0,
+      "degree_pair": [
+        2,
+        3
+      ],
+      "epsilon1": -1,
+      "epsilon2": -1,
+      "linear_pairing": -1,
+      "origin_parent_hessian_determinant": "-16384",
+      "parent_constant_locus_with_ab_nonzero": "empty",
+      "pattern_id": "p0-q0-q1-e-1-e-1",
+      "poisson_bracket_factor": "-6*a*b*L1*L2^2",
+      "poisson_incidence": "h1_source_hits_h2_dual",
+      "probe_equations": [
+        {
+          "factorization": "-b**2*(243*b**2 - 72*b + 1)*(71744535*b**10 - 49424013*b**9 + 4960116*b**8 + 2972133*b**7 - 507384*b**6 - 64152*b**5 + 9558*b**4 + 702*b**3 - 27*b**2 + 3*b + 1)",
+          "point": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "ee56ead743ee2304512565c15066a063a0b5c52b1c858874e0349a4474e8daf4",
+          "terms": 12,
+          "total_degree": 14
+        },
+        {
+          "factorization": "-b**2*(243*b**2 + 72*b + 1)*(71744535*b**10 + 49424013*b**9 + 4960116*b**8 - 2972133*b**7 - 507384*b**6 + 64152*b**5 + 9558*b**4 - 702*b**3 + 27*b**2 + 3*b - 1)",
+          "point": [
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "52dfbd98e7f5e2e7ff5e8304319565772e4aa578d682dd18ab9d4a69689b7c3c",
+          "terms": 12,
+          "total_degree": 14
+        }
+      ],
+      "singular_basis_size": 1,
+      "singular_input_sha256": "b58fe6b4c59124158f7b33a1b6e285ebf3fc88942be0b03e8dfc0ad10589c2ec"
+    },
+    {
+      "H1_source": 0,
+      "H2_source": 1,
+      "certificate_kind": "singular_unit_ideal",
+      "common_dual": 0,
+      "degree_pair": [
+        2,
+        3
+      ],
+      "epsilon1": -1,
+      "epsilon2": 1,
+      "linear_pairing": 1,
+      "origin_parent_hessian_determinant": "-16384",
+      "parent_constant_locus_with_ab_nonzero": "empty",
+      "pattern_id": "p0-q0-q1-e-1-e+1",
+      "poisson_bracket_factor": "6*a*b*L1*L2^2",
+      "poisson_incidence": "h1_source_hits_h2_dual",
+      "probe_equations": [
+        {
+          "factorization": "-b**2*(243*b**2 + 72*b + 1)*(71744535*b**10 + 49424013*b**9 + 4960116*b**8 - 2972133*b**7 - 507384*b**6 + 64152*b**5 + 9558*b**4 - 702*b**3 - 27*b**2 - 3*b + 1)",
+          "point": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "15b70faab25d398e3414ec77b1d1060b21c5fddae269c7bb732b32bf9220e391",
+          "terms": 12,
+          "total_degree": 14
+        },
+        {
+          "factorization": "-b**2*(243*b**2 - 72*b + 1)*(71744535*b**10 - 49424013*b**9 + 4960116*b**8 + 2972133*b**7 - 507384*b**6 - 64152*b**5 + 9558*b**4 + 702*b**3 + 27*b**2 - 3*b - 1)",
+          "point": [
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "f6379f8b6465f1c12bb37971ceb349b52978704c0251591ad6ba0ea719cac687",
+          "terms": 12,
+          "total_degree": 14
+        }
+      ],
+      "singular_basis_size": 1,
+      "singular_input_sha256": "5b4b055d064bd5e2805c4765a6d8dd8e6656a28ca9503e811f5b90cfc11d5047"
+    },
+    {
+      "H1_source": 0,
+      "H2_source": 1,
+      "certificate_kind": "singular_unit_ideal",
+      "common_dual": 0,
+      "degree_pair": [
+        2,
+        3
+      ],
+      "epsilon1": 1,
+      "epsilon2": -1,
+      "linear_pairing": -1,
+      "origin_parent_hessian_determinant": "-16384",
+      "parent_constant_locus_with_ab_nonzero": "empty",
+      "pattern_id": "p0-q0-q1-e+1-e-1",
+      "poisson_bracket_factor": "-6*a*b*L1*L2^2",
+      "poisson_incidence": "h1_source_hits_h2_dual",
+      "probe_equations": [
+        {
+          "factorization": "-b**2*(243*b**2 - 72*b + 1)*(71744535*b**10 - 49424013*b**9 + 4960116*b**8 + 2972133*b**7 - 507384*b**6 - 64152*b**5 + 9558*b**4 + 702*b**3 - 27*b**2 + 3*b + 1)",
+          "point": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "ee56ead743ee2304512565c15066a063a0b5c52b1c858874e0349a4474e8daf4",
+          "terms": 12,
+          "total_degree": 14
+        },
+        {
+          "factorization": "-b**2*(243*b**2 + 72*b + 1)*(71744535*b**10 + 49424013*b**9 + 4960116*b**8 - 2972133*b**7 - 507384*b**6 + 64152*b**5 + 9558*b**4 - 702*b**3 + 27*b**2 + 3*b - 1)",
+          "point": [
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "52dfbd98e7f5e2e7ff5e8304319565772e4aa578d682dd18ab9d4a69689b7c3c",
+          "terms": 12,
+          "total_degree": 14
+        }
+      ],
+      "singular_basis_size": 1,
+      "singular_input_sha256": "b58fe6b4c59124158f7b33a1b6e285ebf3fc88942be0b03e8dfc0ad10589c2ec"
+    },
+    {
+      "H1_source": 0,
+      "H2_source": 1,
+      "certificate_kind": "singular_unit_ideal",
+      "common_dual": 0,
+      "degree_pair": [
+        2,
+        3
+      ],
+      "epsilon1": 1,
+      "epsilon2": 1,
+      "linear_pairing": 1,
+      "origin_parent_hessian_determinant": "-16384",
+      "parent_constant_locus_with_ab_nonzero": "empty",
+      "pattern_id": "p0-q0-q1-e+1-e+1",
+      "poisson_bracket_factor": "6*a*b*L1*L2^2",
+      "poisson_incidence": "h1_source_hits_h2_dual",
+      "probe_equations": [
+        {
+          "factorization": "-b**2*(243*b**2 + 72*b + 1)*(71744535*b**10 + 49424013*b**9 + 4960116*b**8 - 2972133*b**7 - 507384*b**6 + 64152*b**5 + 9558*b**4 - 702*b**3 - 27*b**2 - 3*b + 1)",
+          "point": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "15b70faab25d398e3414ec77b1d1060b21c5fddae269c7bb732b32bf9220e391",
+          "terms": 12,
+          "total_degree": 14
+        },
+        {
+          "factorization": "-b**2*(243*b**2 - 72*b + 1)*(71744535*b**10 - 49424013*b**9 + 4960116*b**8 + 2972133*b**7 - 507384*b**6 - 64152*b**5 + 9558*b**4 + 702*b**3 + 27*b**2 - 3*b - 1)",
+          "point": [
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "f6379f8b6465f1c12bb37971ceb349b52978704c0251591ad6ba0ea719cac687",
+          "terms": 12,
+          "total_degree": 14
+        }
+      ],
+      "singular_basis_size": 1,
+      "singular_input_sha256": "5b4b055d064bd5e2805c4765a6d8dd8e6656a28ca9503e811f5b90cfc11d5047"
+    },
+    {
+      "H1_source": 0,
+      "H2_source": 2,
+      "certificate_kind": "localized_monomial",
+      "common_dual": 0,
+      "degree_pair": [
+        2,
+        3
+      ],
+      "epsilon1": -1,
+      "epsilon2": -1,
+      "linear_pairing": -1,
+      "origin_parent_hessian_determinant": "-16384",
+      "parent_constant_locus_with_ab_nonzero": "empty",
+      "pattern_id": "p0-q0-q2-e-1-e-1",
+      "poisson_bracket_factor": "-6*a*b*L1*L2^2",
+      "poisson_incidence": "h1_source_hits_h2_dual",
+      "probe_equations": [
+        {
+          "factorization": "-b",
+          "point": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "sha256": "4fc0bdb51ffc8cfdcaaee067eb264b8a5c646176cf870be17c2e647fbb2cb7f4",
+          "terms": 1,
+          "total_degree": 1
+        }
+      ]
+    },
+    {
+      "H1_source": 0,
+      "H2_source": 2,
+      "certificate_kind": "localized_monomial",
+      "common_dual": 0,
+      "degree_pair": [
+        2,
+        3
+      ],
+      "epsilon1": -1,
+      "epsilon2": 1,
+      "linear_pairing": 1,
+      "origin_parent_hessian_determinant": "-16384",
+      "parent_constant_locus_with_ab_nonzero": "empty",
+      "pattern_id": "p0-q0-q2-e-1-e+1",
+      "poisson_bracket_factor": "6*a*b*L1*L2^2",
+      "poisson_incidence": "h1_source_hits_h2_dual",
+      "probe_equations": [
+        {
+          "factorization": "-b",
+          "point": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "sha256": "4fc0bdb51ffc8cfdcaaee067eb264b8a5c646176cf870be17c2e647fbb2cb7f4",
+          "terms": 1,
+          "total_degree": 1
+        }
+      ]
+    },
+    {
+      "H1_source": 0,
+      "H2_source": 2,
+      "certificate_kind": "localized_monomial",
+      "common_dual": 0,
+      "degree_pair": [
+        2,
+        3
+      ],
+      "epsilon1": 1,
+      "epsilon2": -1,
+      "linear_pairing": -1,
+      "origin_parent_hessian_determinant": "-16384",
+      "parent_constant_locus_with_ab_nonzero": "empty",
+      "pattern_id": "p0-q0-q2-e+1-e-1",
+      "poisson_bracket_factor": "-6*a*b*L1*L2^2",
+      "poisson_incidence": "h1_source_hits_h2_dual",
+      "probe_equations": [
+        {
+          "factorization": "-b",
+          "point": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "sha256": "4fc0bdb51ffc8cfdcaaee067eb264b8a5c646176cf870be17c2e647fbb2cb7f4",
+          "terms": 1,
+          "total_degree": 1
+        }
+      ]
+    },
+    {
+      "H1_source": 0,
+      "H2_source": 2,
+      "certificate_kind": "localized_monomial",
+      "common_dual": 0,
+      "degree_pair": [
+        2,
+        3
+      ],
+      "epsilon1": 1,
+      "epsilon2": 1,
+      "linear_pairing": 1,
+      "origin_parent_hessian_determinant": "-16384",
+      "parent_constant_locus_with_ab_nonzero": "empty",
+      "pattern_id": "p0-q0-q2-e+1-e+1",
+      "poisson_bracket_factor": "6*a*b*L1*L2^2",
+      "poisson_incidence": "h1_source_hits_h2_dual",
+      "probe_equations": [
+        {
+          "factorization": "-b",
+          "point": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "sha256": "4fc0bdb51ffc8cfdcaaee067eb264b8a5c646176cf870be17c2e647fbb2cb7f4",
+          "terms": 1,
+          "total_degree": 1
+        }
+      ]
+    },
+    {
+      "H1_source": 1,
+      "H2_source": 0,
+      "certificate_kind": "singular_unit_ideal",
+      "common_dual": 0,
+      "degree_pair": [
+        2,
+        3
+      ],
+      "epsilon1": -1,
+      "epsilon2": -1,
+      "linear_pairing": 1,
+      "origin_parent_hessian_determinant": "-16384",
+      "parent_constant_locus_with_ab_nonzero": "empty",
+      "pattern_id": "p0-q1-q0-e-1-e-1",
+      "poisson_bracket_factor": "6*a*b*L1*L2^2",
+      "poisson_incidence": "h1_dual_hits_h2_source",
+      "probe_equations": [
+        {
+          "factorization": "b*(12*a**2*b - 12*a*b - 2*a + 3*b)**2*(1872*a**3*b - 1596*a**2*b - 312*a**2 + 192*a*b + 8*a + 69*b - 27)",
+          "point": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "sha256": "0cd38d6862d811e9a15a6930e8f2602d216d7cd1a3a228cb7cd2c019ff4b6071",
+          "terms": 23,
+          "total_degree": 11
+        },
+        {
+          "factorization": "-a**3*b*(6*a*b + 1)**2*(5184*a**4*b**2 + 2880*a**3*b - 672*a**2*b + 336*a**2 - 152*a + 17)*(1567283281920*a**17*b**9 + 2873352683520*a**16*b**8 - 374406561792*a**15*b**8 + 2263853629440*a**15*b**7 - 571768160256*a**14*b**7 + 1015831756800*a**14*b**6 + 24912064512*a**13*b**7 - 375857750016*a**13*b**6 + 287818997760*a**13*b**5 + 28298170368*a**12*b**6 - 139394691072*a**12*b**5 + 53613342720*a**12*b**4 + 470292480*a**11*b**6 + 13766132736*a**11*b**5 - 31979888640*a**11*b**4 + 6584094720*a**11*b**3 + 899154432*a**10*b**5 + 3717550080*a**10*b**4 - 4655895552*a**10*b**3 + 515082240*a**10*b**2 - 107682048*a**9*b**5 + 553340160*a**9*b**4 + 601862400*a**9*b**3 - 420650496*a**9*b**2 + 23328000*a**9*b - 93436416*a**8*b**4 + 162673920*a**8*b**3 + 58413312*a**8*b**2 - 21586176*a**8*b + 466560*a**8 + 1990656*a**7*b**4 - 32379264*a**7*b**3 + 25297920*a**7*b**2 + 3146688*a**7*b - 482112*a**7 + 311040*a**6*b**3 - 5602176*a**6*b**2 + 2017440*a**6*b + 72576*a**6 + 134784*a**5*b**3 - 176256*a**5*b**2 - 483984*a**5*b + 65232*a**5 + 69768*a**4*b**2 - 47808*a**4*b - 16704*a**4 - 3240*a**3*b**2 + 12024*a**3*b - 3168*a**3 - 54*a**2*b + 690*a**2 - 69*a*b + 81*a + 2)",
+          "point": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "3e000d3b031396d7165beb56bff267d5251c5c627fc51fede6628627dd0fd0e2",
+          "terms": 99,
+          "total_degree": 40
+        },
+        {
+          "factorization": "-a**3*b*(6*a*b - 1)**2*(5184*a**4*b**2 + 576*a**3*b + 672*a**2*b - 240*a**2 + 40*a + 17)*(1567283281920*a**17*b**9 - 1306069401600*a**16*b**8 + 374406561792*a**15*b**8 + 174142586880*a**15*b**7 - 301847150592*a**14*b**7 + 203166351360*a**14*b**6 + 24912064512*a**13*b**7 + 60949905408*a**13*b**6 - 118513704960*a**13*b**5 - 21525958656*a**12*b**6 + 18059231232*a**12*b**5 + 31039303680*a**12*b**4 - 470292480*a**11*b**6 + 6993921024*a**11*b**5 - 11757312000*a**11*b**4 - 4702924800*a**11*b**3 - 115333632*a**10*b**5 - 895795200*a**10*b**4 + 2633637888*a**10*b**3 + 425502720*a**10*b**2 - 107682048*a**9*b**5 + 292066560*a**9*b**4 - 25194240*a**9*b**3 - 308302848*a**9*b**2 - 21461760*a**9*b + 50139648*a**8*b**4 - 119128320*a**8*b**3 + 19968768*a**8*b**2 + 18911232*a**8*b + 466560*a**8 - 1990656*a**7*b**4 - 3514752*a**7*b**3 + 21669120*a**7*b**2 - 2078784*a**7*b - 482112*a**7 + 1679616*a**6*b**3 - 1613952*a**6*b**2 - 1896480*a**6*b + 72576*a**6 + 134784*a**5*b**3 - 508032*a**5*b**2 + 317808*a**5*b + 65232*a**5 - 18792*a**4*b**2 + 66240*a**4*b - 16704*a**4 + 3240*a**3*b**2 - 4968*a**3*b - 3168*a**3 - 990*a**2*b + 726*a**2 - 69*a*b + 75*a - 2)",
+          "point": [
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "0b5ed24db325164732da787cbdcb184c26ff74add7482307613f9a96ed50a4fd",
+          "terms": 99,
+          "total_degree": 40
+        },
+        {
+          "factorization": "b*(3*b - 1)**2*(69*b + 4)",
+          "point": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "b15dd0f62154cfde11ffac0a386ba030337f5ca5a429c3468a2dc6e831f75944",
+          "terms": 4,
+          "total_degree": 4
+        },
+        {
+          "factorization": "b*(3*b + 1)**2*(69*b - 4)",
+          "point": [
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "bf93a1315ff926182864bf680eae69d1bb7f3ae4cc0fae5d4467ede71d6368ca",
+          "terms": 4,
+          "total_degree": 4
+        },
+        {
+          "factorization": "-b*(12*a**2*b - 12*a*b + 2*a + 3*b)**2*(1872*a**3*b - 2148*a**2*b + 312*a**2 + 744*a*b + 8*a - 69*b - 27)",
+          "point": [
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0
+          ],
+          "sha256": "f6961cce646144c9e20866a398e780456d5e6a618dacf38d9f45ef88c9d767b6",
+          "terms": 23,
+          "total_degree": 11
+        }
+      ],
+      "singular_basis_size": 1,
+      "singular_input_sha256": "854ba1b5ea701c1fcb1b95da57af51f0617501b4bc75e342aadbb77c4cf92e4f"
+    },
+    {
+      "H1_source": 1,
+      "H2_source": 0,
+      "certificate_kind": "singular_unit_ideal",
+      "common_dual": 0,
+      "degree_pair": [
+        2,
+        3
+      ],
+      "epsilon1": -1,
+      "epsilon2": 1,
+      "linear_pairing": 1,
+      "origin_parent_hessian_determinant": "-16384",
+      "parent_constant_locus_with_ab_nonzero": "empty",
+      "pattern_id": "p0-q1-q0-e-1-e+1",
+      "poisson_bracket_factor": "6*a*b*L1*L2^2",
+      "poisson_incidence": "h1_dual_hits_h2_source",
+      "probe_equations": [
+        {
+          "factorization": "-b*(12*a**2*b + 12*a*b + 2*a + 3*b)**2*(1872*a**3*b + 1596*a**2*b + 312*a**2 + 192*a*b + 8*a - 69*b + 27)",
+          "point": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "sha256": "1f57e2fddef7947bcad0b55a568aee494a5ad22588359c13e33f4aae18db976e",
+          "terms": 23,
+          "total_degree": 11
+        },
+        {
+          "factorization": "-a**3*b*(6*a*b - 1)**2*(5184*a**4*b**2 + 576*a**3*b + 672*a**2*b - 240*a**2 + 40*a + 17)*(1567283281920*a**17*b**9 - 1306069401600*a**16*b**8 + 374406561792*a**15*b**8 + 174142586880*a**15*b**7 - 301847150592*a**14*b**7 + 203166351360*a**14*b**6 + 24912064512*a**13*b**7 + 60949905408*a**13*b**6 - 118513704960*a**13*b**5 - 21525958656*a**12*b**6 + 18059231232*a**12*b**5 + 31039303680*a**12*b**4 - 470292480*a**11*b**6 + 6993921024*a**11*b**5 - 11757312000*a**11*b**4 - 4702924800*a**11*b**3 - 115333632*a**10*b**5 - 895795200*a**10*b**4 + 2633637888*a**10*b**3 + 425502720*a**10*b**2 - 107682048*a**9*b**5 + 292066560*a**9*b**4 - 25194240*a**9*b**3 - 308302848*a**9*b**2 - 21461760*a**9*b + 50139648*a**8*b**4 - 119128320*a**8*b**3 + 19968768*a**8*b**2 + 18911232*a**8*b + 466560*a**8 - 1990656*a**7*b**4 - 3514752*a**7*b**3 + 21669120*a**7*b**2 - 2078784*a**7*b - 482112*a**7 + 1679616*a**6*b**3 - 1613952*a**6*b**2 - 1896480*a**6*b + 72576*a**6 + 134784*a**5*b**3 - 508032*a**5*b**2 + 317808*a**5*b + 65232*a**5 - 18792*a**4*b**2 + 66240*a**4*b - 16704*a**4 + 3240*a**3*b**2 - 4968*a**3*b - 3168*a**3 - 990*a**2*b + 726*a**2 - 69*a*b + 75*a - 2)",
+          "point": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "0b5ed24db325164732da787cbdcb184c26ff74add7482307613f9a96ed50a4fd",
+          "terms": 99,
+          "total_degree": 40
+        },
+        {
+          "factorization": "-a**3*b*(6*a*b + 1)**2*(5184*a**4*b**2 + 2880*a**3*b - 672*a**2*b + 336*a**2 - 152*a + 17)*(1567283281920*a**17*b**9 + 2873352683520*a**16*b**8 - 374406561792*a**15*b**8 + 2263853629440*a**15*b**7 - 571768160256*a**14*b**7 + 1015831756800*a**14*b**6 + 24912064512*a**13*b**7 - 375857750016*a**13*b**6 + 287818997760*a**13*b**5 + 28298170368*a**12*b**6 - 139394691072*a**12*b**5 + 53613342720*a**12*b**4 + 470292480*a**11*b**6 + 13766132736*a**11*b**5 - 31979888640*a**11*b**4 + 6584094720*a**11*b**3 + 899154432*a**10*b**5 + 3717550080*a**10*b**4 - 4655895552*a**10*b**3 + 515082240*a**10*b**2 - 107682048*a**9*b**5 + 553340160*a**9*b**4 + 601862400*a**9*b**3 - 420650496*a**9*b**2 + 23328000*a**9*b - 93436416*a**8*b**4 + 162673920*a**8*b**3 + 58413312*a**8*b**2 - 21586176*a**8*b + 466560*a**8 + 1990656*a**7*b**4 - 32379264*a**7*b**3 + 25297920*a**7*b**2 + 3146688*a**7*b - 482112*a**7 + 311040*a**6*b**3 - 5602176*a**6*b**2 + 2017440*a**6*b + 72576*a**6 + 134784*a**5*b**3 - 176256*a**5*b**2 - 483984*a**5*b + 65232*a**5 + 69768*a**4*b**2 - 47808*a**4*b - 16704*a**4 - 3240*a**3*b**2 + 12024*a**3*b - 3168*a**3 - 54*a**2*b + 690*a**2 - 69*a*b + 81*a + 2)",
+          "point": [
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "3e000d3b031396d7165beb56bff267d5251c5c627fc51fede6628627dd0fd0e2",
+          "terms": 99,
+          "total_degree": 40
+        },
+        {
+          "factorization": "b*(3*b + 1)**2*(69*b - 4)",
+          "point": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "bf93a1315ff926182864bf680eae69d1bb7f3ae4cc0fae5d4467ede71d6368ca",
+          "terms": 4,
+          "total_degree": 4
+        },
+        {
+          "factorization": "b*(3*b - 1)**2*(69*b + 4)",
+          "point": [
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "b15dd0f62154cfde11ffac0a386ba030337f5ca5a429c3468a2dc6e831f75944",
+          "terms": 4,
+          "total_degree": 4
+        },
+        {
+          "factorization": "b*(12*a**2*b + 12*a*b - 2*a + 3*b)**2*(1872*a**3*b + 2148*a**2*b - 312*a**2 + 744*a*b + 8*a + 69*b + 27)",
+          "point": [
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0
+          ],
+          "sha256": "4767f39df5522fa3c27b5c03127e95e5d1a7e06f493edaf0b37af0958def36f2",
+          "terms": 23,
+          "total_degree": 11
+        }
+      ],
+      "singular_basis_size": 1,
+      "singular_input_sha256": "f6d47223d348dfbeee041a6dfbad613e4c2f1f71315eadca350e5e21d7d93053"
+    },
+    {
+      "H1_source": 1,
+      "H2_source": 0,
+      "certificate_kind": "singular_unit_ideal",
+      "common_dual": 0,
+      "degree_pair": [
+        2,
+        3
+      ],
+      "epsilon1": 1,
+      "epsilon2": -1,
+      "linear_pairing": -1,
+      "origin_parent_hessian_determinant": "-16384",
+      "parent_constant_locus_with_ab_nonzero": "empty",
+      "pattern_id": "p0-q1-q0-e+1-e-1",
+      "poisson_bracket_factor": "-6*a*b*L1*L2^2",
+      "poisson_incidence": "h1_dual_hits_h2_source",
+      "probe_equations": [
+        {
+          "factorization": "-b*(12*a**2*b - 12*a*b - 2*a + 3*b)**2*(1872*a**3*b - 2148*a**2*b - 312*a**2 + 744*a*b - 8*a - 69*b + 27)",
+          "point": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "sha256": "194e80ac1f6011588c656de489d9c85283bdc34190a72b831b829107b6bb92b7",
+          "terms": 23,
+          "total_degree": 11
+        },
+        {
+          "factorization": "-a**3*b*(6*a*b - 1)**2*(5184*a**4*b**2 + 576*a**3*b - 672*a**2*b - 240*a**2 - 40*a + 17)*(1567283281920*a**17*b**9 - 1306069401600*a**16*b**8 - 374406561792*a**15*b**8 + 174142586880*a**15*b**7 + 301847150592*a**14*b**7 + 203166351360*a**14*b**6 + 24912064512*a**13*b**7 - 60949905408*a**13*b**6 - 118513704960*a**13*b**5 - 21525958656*a**12*b**6 - 18059231232*a**12*b**5 + 31039303680*a**12*b**4 + 470292480*a**11*b**6 + 6993921024*a**11*b**5 + 11757312000*a**11*b**4 - 4702924800*a**11*b**3 + 115333632*a**10*b**5 - 895795200*a**10*b**4 - 2633637888*a**10*b**3 + 425502720*a**10*b**2 - 107682048*a**9*b**5 - 292066560*a**9*b**4 - 25194240*a**9*b**3 + 308302848*a**9*b**2 - 21461760*a**9*b + 50139648*a**8*b**4 + 119128320*a**8*b**3 + 19968768*a**8*b**2 - 18911232*a**8*b + 466560*a**8 + 1990656*a**7*b**4 - 3514752*a**7*b**3 - 21669120*a**7*b**2 - 2078784*a**7*b + 482112*a**7 - 1679616*a**6*b**3 - 1613952*a**6*b**2 + 1896480*a**6*b + 72576*a**6 + 134784*a**5*b**3 + 508032*a**5*b**2 + 317808*a**5*b - 65232*a**5 - 18792*a**4*b**2 - 66240*a**4*b - 16704*a**4 - 3240*a**3*b**2 - 4968*a**3*b + 3168*a**3 + 990*a**2*b + 726*a**2 - 69*a*b - 75*a - 2)",
+          "point": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "75d9dc27f7de2fcac4013d29b556e34276de8a4a168c9d38aebf9b5e681e291b",
+          "terms": 99,
+          "total_degree": 40
+        },
+        {
+          "factorization": "-a**3*b*(6*a*b + 1)**2*(5184*a**4*b**2 + 2880*a**3*b + 672*a**2*b + 336*a**2 + 152*a + 17)*(1567283281920*a**17*b**9 + 2873352683520*a**16*b**8 + 374406561792*a**15*b**8 + 2263853629440*a**15*b**7 + 571768160256*a**14*b**7 + 1015831756800*a**14*b**6 + 24912064512*a**13*b**7 + 375857750016*a**13*b**6 + 287818997760*a**13*b**5 + 28298170368*a**12*b**6 + 139394691072*a**12*b**5 + 53613342720*a**12*b**4 - 470292480*a**11*b**6 + 13766132736*a**11*b**5 + 31979888640*a**11*b**4 + 6584094720*a**11*b**3 - 899154432*a**10*b**5 + 3717550080*a**10*b**4 + 4655895552*a**10*b**3 + 515082240*a**10*b**2 - 107682048*a**9*b**5 - 553340160*a**9*b**4 + 601862400*a**9*b**3 + 420650496*a**9*b**2 + 23328000*a**9*b - 93436416*a**8*b**4 - 162673920*a**8*b**3 + 58413312*a**8*b**2 + 21586176*a**8*b + 466560*a**8 - 1990656*a**7*b**4 - 32379264*a**7*b**3 - 25297920*a**7*b**2 + 3146688*a**7*b + 482112*a**7 - 311040*a**6*b**3 - 5602176*a**6*b**2 - 2017440*a**6*b + 72576*a**6 + 134784*a**5*b**3 + 176256*a**5*b**2 - 483984*a**5*b - 65232*a**5 + 69768*a**4*b**2 + 47808*a**4*b - 16704*a**4 + 3240*a**3*b**2 + 12024*a**3*b + 3168*a**3 + 54*a**2*b + 690*a**2 - 69*a*b - 81*a + 2)",
+          "point": [
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "67261142235730ea371273b29b72b692cf090521f838ee42ae0fd449ec257d8d",
+          "terms": 99,
+          "total_degree": 40
+        },
+        {
+          "factorization": "b*(3*b - 1)**2*(69*b + 4)",
+          "point": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "b15dd0f62154cfde11ffac0a386ba030337f5ca5a429c3468a2dc6e831f75944",
+          "terms": 4,
+          "total_degree": 4
+        },
+        {
+          "factorization": "b*(3*b + 1)**2*(69*b - 4)",
+          "point": [
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "bf93a1315ff926182864bf680eae69d1bb7f3ae4cc0fae5d4467ede71d6368ca",
+          "terms": 4,
+          "total_degree": 4
+        },
+        {
+          "factorization": "b*(12*a**2*b - 12*a*b + 2*a + 3*b)**2*(1872*a**3*b - 1596*a**2*b + 312*a**2 + 192*a*b - 8*a + 69*b + 27)",
+          "point": [
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0
+          ],
+          "sha256": "5c2265195cffe5f60f6d445e343dcec86f60d6c397e0a5b2536cd823db81d9c8",
+          "terms": 23,
+          "total_degree": 11
+        }
+      ],
+      "singular_basis_size": 1,
+      "singular_input_sha256": "e7c5d8f68d26eed13b373ad8c36e4ae58eb6f689216c0189d4a09b3ee0a0a279"
+    },
+    {
+      "H1_source": 1,
+      "H2_source": 0,
+      "certificate_kind": "singular_unit_ideal",
+      "common_dual": 0,
+      "degree_pair": [
+        2,
+        3
+      ],
+      "epsilon1": 1,
+      "epsilon2": 1,
+      "linear_pairing": -1,
+      "origin_parent_hessian_determinant": "-16384",
+      "parent_constant_locus_with_ab_nonzero": "empty",
+      "pattern_id": "p0-q1-q0-e+1-e+1",
+      "poisson_bracket_factor": "-6*a*b*L1*L2^2",
+      "poisson_incidence": "h1_dual_hits_h2_source",
+      "probe_equations": [
+        {
+          "factorization": "b*(12*a**2*b + 12*a*b + 2*a + 3*b)**2*(1872*a**3*b + 2148*a**2*b + 312*a**2 + 744*a*b - 8*a + 69*b - 27)",
+          "point": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "sha256": "3a88ca6dd01ccfda62b004e9037185f8d08abb0594ec62cc2d9a0a26f2f7ccc5",
+          "terms": 23,
+          "total_degree": 11
+        },
+        {
+          "factorization": "-a**3*b*(6*a*b + 1)**2*(5184*a**4*b**2 + 2880*a**3*b + 672*a**2*b + 336*a**2 + 152*a + 17)*(1567283281920*a**17*b**9 + 2873352683520*a**16*b**8 + 374406561792*a**15*b**8 + 2263853629440*a**15*b**7 + 571768160256*a**14*b**7 + 1015831756800*a**14*b**6 + 24912064512*a**13*b**7 + 375857750016*a**13*b**6 + 287818997760*a**13*b**5 + 28298170368*a**12*b**6 + 139394691072*a**12*b**5 + 53613342720*a**12*b**4 - 470292480*a**11*b**6 + 13766132736*a**11*b**5 + 31979888640*a**11*b**4 + 6584094720*a**11*b**3 - 899154432*a**10*b**5 + 3717550080*a**10*b**4 + 4655895552*a**10*b**3 + 515082240*a**10*b**2 - 107682048*a**9*b**5 - 553340160*a**9*b**4 + 601862400*a**9*b**3 + 420650496*a**9*b**2 + 23328000*a**9*b - 93436416*a**8*b**4 - 162673920*a**8*b**3 + 58413312*a**8*b**2 + 21586176*a**8*b + 466560*a**8 - 1990656*a**7*b**4 - 32379264*a**7*b**3 - 25297920*a**7*b**2 + 3146688*a**7*b + 482112*a**7 - 311040*a**6*b**3 - 5602176*a**6*b**2 - 2017440*a**6*b + 72576*a**6 + 134784*a**5*b**3 + 176256*a**5*b**2 - 483984*a**5*b - 65232*a**5 + 69768*a**4*b**2 + 47808*a**4*b - 16704*a**4 + 3240*a**3*b**2 + 12024*a**3*b + 3168*a**3 + 54*a**2*b + 690*a**2 - 69*a*b - 81*a + 2)",
+          "point": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "67261142235730ea371273b29b72b692cf090521f838ee42ae0fd449ec257d8d",
+          "terms": 99,
+          "total_degree": 40
+        },
+        {
+          "factorization": "-a**3*b*(6*a*b - 1)**2*(5184*a**4*b**2 + 576*a**3*b - 672*a**2*b - 240*a**2 - 40*a + 17)*(1567283281920*a**17*b**9 - 1306069401600*a**16*b**8 - 374406561792*a**15*b**8 + 174142586880*a**15*b**7 + 301847150592*a**14*b**7 + 203166351360*a**14*b**6 + 24912064512*a**13*b**7 - 60949905408*a**13*b**6 - 118513704960*a**13*b**5 - 21525958656*a**12*b**6 - 18059231232*a**12*b**5 + 31039303680*a**12*b**4 + 470292480*a**11*b**6 + 6993921024*a**11*b**5 + 11757312000*a**11*b**4 - 4702924800*a**11*b**3 + 115333632*a**10*b**5 - 895795200*a**10*b**4 - 2633637888*a**10*b**3 + 425502720*a**10*b**2 - 107682048*a**9*b**5 - 292066560*a**9*b**4 - 25194240*a**9*b**3 + 308302848*a**9*b**2 - 21461760*a**9*b + 50139648*a**8*b**4 + 119128320*a**8*b**3 + 19968768*a**8*b**2 - 18911232*a**8*b + 466560*a**8 + 1990656*a**7*b**4 - 3514752*a**7*b**3 - 21669120*a**7*b**2 - 2078784*a**7*b + 482112*a**7 - 1679616*a**6*b**3 - 1613952*a**6*b**2 + 1896480*a**6*b + 72576*a**6 + 134784*a**5*b**3 + 508032*a**5*b**2 + 317808*a**5*b - 65232*a**5 - 18792*a**4*b**2 - 66240*a**4*b - 16704*a**4 - 3240*a**3*b**2 - 4968*a**3*b + 3168*a**3 + 990*a**2*b + 726*a**2 - 69*a*b - 75*a - 2)",
+          "point": [
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "75d9dc27f7de2fcac4013d29b556e34276de8a4a168c9d38aebf9b5e681e291b",
+          "terms": 99,
+          "total_degree": 40
+        },
+        {
+          "factorization": "b*(3*b + 1)**2*(69*b - 4)",
+          "point": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "bf93a1315ff926182864bf680eae69d1bb7f3ae4cc0fae5d4467ede71d6368ca",
+          "terms": 4,
+          "total_degree": 4
+        },
+        {
+          "factorization": "b*(3*b - 1)**2*(69*b + 4)",
+          "point": [
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "b15dd0f62154cfde11ffac0a386ba030337f5ca5a429c3468a2dc6e831f75944",
+          "terms": 4,
+          "total_degree": 4
+        },
+        {
+          "factorization": "-b*(12*a**2*b + 12*a*b - 2*a + 3*b)**2*(1872*a**3*b + 1596*a**2*b - 312*a**2 + 192*a*b - 8*a - 69*b - 27)",
+          "point": [
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0
+          ],
+          "sha256": "3e76b8851f74ea2057a3303bda72a52f13c81ab06e0277be4f4ace6b3b690a98",
+          "terms": 23,
+          "total_degree": 11
+        }
+      ],
+      "singular_basis_size": 1,
+      "singular_input_sha256": "223f00231c1e0e59312f5dcb054bcca84a1669a8bdb2d82684b30d9fc34b7892"
+    },
+    {
+      "H1_source": 2,
+      "H2_source": 0,
+      "certificate_kind": "singular_unit_ideal",
+      "common_dual": 0,
+      "degree_pair": [
+        2,
+        3
+      ],
+      "epsilon1": -1,
+      "epsilon2": -1,
+      "linear_pairing": 1,
+      "origin_parent_hessian_determinant": "-16384",
+      "parent_constant_locus_with_ab_nonzero": "empty",
+      "pattern_id": "p0-q2-q0-e-1-e-1",
+      "poisson_bracket_factor": "6*a*b*L1*L2^2",
+      "poisson_incidence": "h1_dual_hits_h2_source",
+      "probe_equations": [
+        {
+          "factorization": "-b*(16*a + 1)*(12*a**2*b - 12*a*b - 2*a + 3*b)**2*(207360*a**7*b**3 - 622080*a**6*b**3 - 103680*a**6*b**2 + 777600*a**5*b**3 + 207360*a**5*b**2 + 17280*a**5*b - 518400*a**4*b**3 - 155520*a**4*b**2 - 17280*a**4*b - 960*a**4 + 194400*a**3*b**3 + 51840*a**3*b**2 + 4320*a**3*b - 38880*a**2*b**3 - 6480*a**2*b**2 - 276*a**2*b + 3240*a*b**3 + 276*a*b - 8*a - 69*b + 27)",
+          "point": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "sha256": "9ff6f09c85df94f4453ff824c7a46f9e73401aefa1a50caed1eca8d49645d0cc",
+          "terms": 55,
+          "total_degree": 18
+        },
+        {
+          "factorization": "-a**3*b*(6*a*b + 1)**2*(3456*a**5*b**2 + 1152*a**4*b + 96*a**3 - 16*a + 5)*(139314069504*a**18*b**9 + 208971104256*a**17*b**8 + 139314069504*a**16*b**7 + 54177693696*a**15*b**6 - 3063619584*a**14*b**7 + 13544423424*a**14*b**5 + 241864704*a**13*b**7 - 3574222848*a**13*b**6 + 2257403904*a**13*b**4 + 241864704*a**12*b**6 - 1787111424*a**12*b**5 + 250822656*a**12*b**3 + 100776960*a**11*b**5 - 496419840*a**11*b**4 + 17915904*a**11*b**2 + 22021632*a**10*b**5 + 22394880*a**10*b**4 - 82736640*a**10*b**3 + 746496*a**10*b - 5038848*a**9*b**5 + 18351360*a**9*b**4 + 2799360*a**9*b**3 - 8273664*a**9*b**2 + 13824*a**9 - 3359232*a**8*b**4 + 6117120*a**8*b**3 + 186624*a**8*b**2 - 459648*a**8*b - 839808*a**7*b**3 + 1019520*a**7*b**2 + 5184*a**7*b - 10944*a**7 - 51840*a**6*b**3 - 93312*a**6*b**2 + 84960*a**6*b + 33696*a**5*b**3 - 25920*a**5*b**2 - 3888*a**5*b + 2832*a**5 + 11016*a**4*b**2 - 4320*a**4*b + 864*a**3*b - 240*a**3 - 6*a**2 - 69*a*b + 2)",
+          "point": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "sha256": "c11303622ca3da6e70c2774e2752b5b2f1229b76354e1f00b38e13ebf1850465",
+          "terms": 104,
+          "total_degree": 42
+        },
+        {
+          "factorization": "-a**3*b*(6*a*b - 1)**2*(3456*a**5*b**2 - 1152*a**4*b + 96*a**3 + 16*a - 3)*(139314069504*a**18*b**9 - 208971104256*a**17*b**8 + 139314069504*a**16*b**7 - 54177693696*a**15*b**6 + 3063619584*a**14*b**7 + 13544423424*a**14*b**5 - 241864704*a**13*b**7 - 3574222848*a**13*b**6 - 2257403904*a**13*b**4 + 241864704*a**12*b**6 + 1787111424*a**12*b**5 + 250822656*a**12*b**3 - 100776960*a**11*b**5 - 496419840*a**11*b**4 - 17915904*a**11*b**2 + 22021632*a**10*b**5 + 22394880*a**10*b**4 + 82736640*a**10*b**3 + 746496*a**10*b - 5038848*a**9*b**5 - 18351360*a**9*b**4 - 2799360*a**9*b**3 - 8273664*a**9*b**2 - 13824*a**9 + 3359232*a**8*b**4 + 6117120*a**8*b**3 + 186624*a**8*b**2 + 459648*a**8*b - 839808*a**7*b**3 - 1019520*a**7*b**2 - 5184*a**7*b - 10944*a**7 + 51840*a**6*b**3 + 93312*a**6*b**2 + 84960*a**6*b - 33696*a**5*b**3 - 25920*a**5*b**2 - 3888*a**5*b - 2832*a**5 + 11016*a**4*b**2 + 4320*a**4*b - 864*a**3*b - 240*a**3 - 6*a**2 - 69*a*b - 2)",
+          "point": [
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0
+          ],
+          "sha256": "b2828a89ce8ad21a233fc10d0a899ba524a4e73399368265a5781e7cb1cb4a4d",
+          "terms": 104,
+          "total_degree": 42
+        },
+        {
+          "factorization": "b*(3*b - 1)**2*(69*b + 4)",
+          "point": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "b15dd0f62154cfde11ffac0a386ba030337f5ca5a429c3468a2dc6e831f75944",
+          "terms": 4,
+          "total_degree": 4
+        },
+        {
+          "factorization": "b*(3*b + 1)**2*(69*b - 4)",
+          "point": [
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "bf93a1315ff926182864bf680eae69d1bb7f3ae4cc0fae5d4467ede71d6368ca",
+          "terms": 4,
+          "total_degree": 4
+        },
+        {
+          "factorization": "-b*(16*a - 1)*(12*a**2*b - 12*a*b + 2*a + 3*b)**2*(207360*a**7*b**3 - 622080*a**6*b**3 + 103680*a**6*b**2 + 777600*a**5*b**3 - 207360*a**5*b**2 + 17280*a**5*b - 518400*a**4*b**3 + 155520*a**4*b**2 - 17280*a**4*b + 960*a**4 + 194400*a**3*b**3 - 51840*a**3*b**2 + 4320*a**3*b - 38880*a**2*b**3 + 6480*a**2*b**2 + 276*a**2*b + 3240*a*b**3 - 276*a*b - 8*a + 69*b + 27)",
+          "point": [
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0
+          ],
+          "sha256": "e777385951527cbfa7110b915cbb80bcb5f4e1b5e5b98f292146cf4cb2cac13a",
+          "terms": 56,
+          "total_degree": 18
+        }
+      ],
+      "singular_basis_size": 1,
+      "singular_input_sha256": "f2b90415d2b80f67f98063074b1f81bd9b74d20fbde5c8e63b427697135f4708"
+    },
+    {
+      "H1_source": 2,
+      "H2_source": 0,
+      "certificate_kind": "singular_unit_ideal",
+      "common_dual": 0,
+      "degree_pair": [
+        2,
+        3
+      ],
+      "epsilon1": -1,
+      "epsilon2": 1,
+      "linear_pairing": 1,
+      "origin_parent_hessian_determinant": "-16384",
+      "parent_constant_locus_with_ab_nonzero": "empty",
+      "pattern_id": "p0-q2-q0-e-1-e+1",
+      "poisson_bracket_factor": "6*a*b*L1*L2^2",
+      "poisson_incidence": "h1_dual_hits_h2_source",
+      "probe_equations": [
+        {
+          "factorization": "-b*(16*a - 1)*(12*a**2*b + 12*a*b + 2*a + 3*b)**2*(207360*a**7*b**3 + 622080*a**6*b**3 + 103680*a**6*b**2 + 777600*a**5*b**3 + 207360*a**5*b**2 + 17280*a**5*b + 518400*a**4*b**3 + 155520*a**4*b**2 + 17280*a**4*b + 960*a**4 + 194400*a**3*b**3 + 51840*a**3*b**2 + 4320*a**3*b + 38880*a**2*b**3 + 6480*a**2*b**2 + 276*a**2*b + 3240*a*b**3 + 276*a*b - 8*a + 69*b - 27)",
+          "point": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "sha256": "d0b6e6b019e10f49c167cf8a12a68fcc3893d467862522ae602ac44d42deeade",
+          "terms": 55,
+          "total_degree": 18
+        },
+        {
+          "factorization": "-a**3*b*(6*a*b - 1)**2*(3456*a**5*b**2 - 1152*a**4*b + 96*a**3 - 16*a - 5)*(139314069504*a**18*b**9 - 208971104256*a**17*b**8 + 139314069504*a**16*b**7 - 54177693696*a**15*b**6 - 3063619584*a**14*b**7 + 13544423424*a**14*b**5 - 241864704*a**13*b**7 + 3574222848*a**13*b**6 - 2257403904*a**13*b**4 + 241864704*a**12*b**6 - 1787111424*a**12*b**5 + 250822656*a**12*b**3 - 100776960*a**11*b**5 + 496419840*a**11*b**4 - 17915904*a**11*b**2 + 22021632*a**10*b**5 + 22394880*a**10*b**4 - 82736640*a**10*b**3 + 746496*a**10*b + 5038848*a**9*b**5 - 18351360*a**9*b**4 - 2799360*a**9*b**3 + 8273664*a**9*b**2 - 13824*a**9 - 3359232*a**8*b**4 + 6117120*a**8*b**3 + 186624*a**8*b**2 - 459648*a**8*b + 839808*a**7*b**3 - 1019520*a**7*b**2 - 5184*a**7*b + 10944*a**7 - 51840*a**6*b**3 - 93312*a**6*b**2 + 84960*a**6*b - 33696*a**5*b**3 + 25920*a**5*b**2 + 3888*a**5*b - 2832*a**5 + 11016*a**4*b**2 - 4320*a**4*b - 864*a**3*b + 240*a**3 - 6*a**2 + 69*a*b + 2)",
+          "point": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "sha256": "593de56773cd77e246ca54e4a7fda0aff64a823b2d49edcb86c2592bd0d18197",
+          "terms": 104,
+          "total_degree": 42
+        },
+        {
+          "factorization": "-a**3*b*(6*a*b + 1)**2*(3456*a**5*b**2 + 1152*a**4*b + 96*a**3 + 16*a + 3)*(139314069504*a**18*b**9 + 208971104256*a**17*b**8 + 139314069504*a**16*b**7 + 54177693696*a**15*b**6 + 3063619584*a**14*b**7 + 13544423424*a**14*b**5 + 241864704*a**13*b**7 + 3574222848*a**13*b**6 + 2257403904*a**13*b**4 + 241864704*a**12*b**6 + 1787111424*a**12*b**5 + 250822656*a**12*b**3 + 100776960*a**11*b**5 + 496419840*a**11*b**4 + 17915904*a**11*b**2 + 22021632*a**10*b**5 + 22394880*a**10*b**4 + 82736640*a**10*b**3 + 746496*a**10*b + 5038848*a**9*b**5 + 18351360*a**9*b**4 + 2799360*a**9*b**3 + 8273664*a**9*b**2 + 13824*a**9 + 3359232*a**8*b**4 + 6117120*a**8*b**3 + 186624*a**8*b**2 + 459648*a**8*b + 839808*a**7*b**3 + 1019520*a**7*b**2 + 5184*a**7*b + 10944*a**7 + 51840*a**6*b**3 + 93312*a**6*b**2 + 84960*a**6*b + 33696*a**5*b**3 + 25920*a**5*b**2 + 3888*a**5*b + 2832*a**5 + 11016*a**4*b**2 + 4320*a**4*b + 864*a**3*b + 240*a**3 - 6*a**2 + 69*a*b - 2)",
+          "point": [
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0
+          ],
+          "sha256": "c745f4835f613f480d7b955231f0e46f2c763592a9d4ff67fb118d7b4ca8ba1a",
+          "terms": 104,
+          "total_degree": 42
+        },
+        {
+          "factorization": "b*(3*b + 1)**2*(69*b - 4)",
+          "point": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "bf93a1315ff926182864bf680eae69d1bb7f3ae4cc0fae5d4467ede71d6368ca",
+          "terms": 4,
+          "total_degree": 4
+        },
+        {
+          "factorization": "b*(3*b - 1)**2*(69*b + 4)",
+          "point": [
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "b15dd0f62154cfde11ffac0a386ba030337f5ca5a429c3468a2dc6e831f75944",
+          "terms": 4,
+          "total_degree": 4
+        },
+        {
+          "factorization": "-b*(16*a + 1)*(12*a**2*b + 12*a*b - 2*a + 3*b)**2*(207360*a**7*b**3 + 622080*a**6*b**3 - 103680*a**6*b**2 + 777600*a**5*b**3 - 207360*a**5*b**2 + 17280*a**5*b + 518400*a**4*b**3 - 155520*a**4*b**2 + 17280*a**4*b - 960*a**4 + 194400*a**3*b**3 - 51840*a**3*b**2 + 4320*a**3*b + 38880*a**2*b**3 - 6480*a**2*b**2 - 276*a**2*b + 3240*a*b**3 - 276*a*b - 8*a - 69*b - 27)",
+          "point": [
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0
+          ],
+          "sha256": "2afe61eec1c16d8dbe4733cd174be22f09204f593f682db9460bd29720925761",
+          "terms": 56,
+          "total_degree": 18
+        }
+      ],
+      "singular_basis_size": 1,
+      "singular_input_sha256": "cec5a7145e02961b9964c783d5346fc432844e7c7b24432b069c808e59f98784"
+    },
+    {
+      "H1_source": 2,
+      "H2_source": 0,
+      "certificate_kind": "singular_unit_ideal",
+      "common_dual": 0,
+      "degree_pair": [
+        2,
+        3
+      ],
+      "epsilon1": 1,
+      "epsilon2": -1,
+      "linear_pairing": -1,
+      "origin_parent_hessian_determinant": "-16384",
+      "parent_constant_locus_with_ab_nonzero": "empty",
+      "pattern_id": "p0-q2-q0-e+1-e-1",
+      "poisson_bracket_factor": "-6*a*b*L1*L2^2",
+      "poisson_incidence": "h1_dual_hits_h2_source",
+      "probe_equations": [
+        {
+          "factorization": "-b*(16*a - 1)*(12*a**2*b - 12*a*b - 2*a + 3*b)**2*(207360*a**7*b**3 - 622080*a**6*b**3 - 103680*a**6*b**2 + 777600*a**5*b**3 + 207360*a**5*b**2 + 17280*a**5*b - 518400*a**4*b**3 - 155520*a**4*b**2 - 17280*a**4*b - 960*a**4 + 194400*a**3*b**3 + 51840*a**3*b**2 + 4320*a**3*b - 38880*a**2*b**3 - 6480*a**2*b**2 + 276*a**2*b + 3240*a*b**3 - 276*a*b + 8*a + 69*b - 27)",
+          "point": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "sha256": "b841fdc0113777300fa77e7b268fc5125d5065416b9ea7f8da3bf8efc763313a",
+          "terms": 56,
+          "total_degree": 18
+        },
+        {
+          "factorization": "-a**3*b*(6*a*b - 1)**2*(3456*a**5*b**2 - 1152*a**4*b + 96*a**3 - 16*a + 5)*(139314069504*a**18*b**9 - 208971104256*a**17*b**8 + 139314069504*a**16*b**7 - 54177693696*a**15*b**6 - 3063619584*a**14*b**7 + 13544423424*a**14*b**5 + 241864704*a**13*b**7 + 3574222848*a**13*b**6 - 2257403904*a**13*b**4 - 241864704*a**12*b**6 - 1787111424*a**12*b**5 + 250822656*a**12*b**3 + 100776960*a**11*b**5 + 496419840*a**11*b**4 - 17915904*a**11*b**2 + 22021632*a**10*b**5 - 22394880*a**10*b**4 - 82736640*a**10*b**3 + 746496*a**10*b - 5038848*a**9*b**5 - 18351360*a**9*b**4 + 2799360*a**9*b**3 + 8273664*a**9*b**2 - 13824*a**9 + 3359232*a**8*b**4 + 6117120*a**8*b**3 - 186624*a**8*b**2 - 459648*a**8*b - 839808*a**7*b**3 - 1019520*a**7*b**2 + 5184*a**7*b + 10944*a**7 - 51840*a**6*b**3 + 93312*a**6*b**2 + 84960*a**6*b + 33696*a**5*b**3 + 25920*a**5*b**2 - 3888*a**5*b - 2832*a**5 - 11016*a**4*b**2 - 4320*a**4*b + 864*a**3*b + 240*a**3 + 6*a**2 - 69*a*b - 2)",
+          "point": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "sha256": "d89e79497811ec7aed228e56e5d54c3d350455650c5350e1c7b4dcca92bab25d",
+          "terms": 104,
+          "total_degree": 42
+        },
+        {
+          "factorization": "-a**3*b*(6*a*b + 1)**2*(3456*a**5*b**2 + 1152*a**4*b + 96*a**3 + 16*a - 3)*(139314069504*a**18*b**9 + 208971104256*a**17*b**8 + 139314069504*a**16*b**7 + 54177693696*a**15*b**6 + 3063619584*a**14*b**7 + 13544423424*a**14*b**5 - 241864704*a**13*b**7 + 3574222848*a**13*b**6 + 2257403904*a**13*b**4 - 241864704*a**12*b**6 + 1787111424*a**12*b**5 + 250822656*a**12*b**3 - 100776960*a**11*b**5 + 496419840*a**11*b**4 + 17915904*a**11*b**2 + 22021632*a**10*b**5 - 22394880*a**10*b**4 + 82736640*a**10*b**3 + 746496*a**10*b - 5038848*a**9*b**5 + 18351360*a**9*b**4 - 2799360*a**9*b**3 + 8273664*a**9*b**2 + 13824*a**9 - 3359232*a**8*b**4 + 6117120*a**8*b**3 - 186624*a**8*b**2 + 459648*a**8*b - 839808*a**7*b**3 + 1019520*a**7*b**2 - 5184*a**7*b + 10944*a**7 + 51840*a**6*b**3 - 93312*a**6*b**2 + 84960*a**6*b - 33696*a**5*b**3 + 25920*a**5*b**2 - 3888*a**5*b + 2832*a**5 - 11016*a**4*b**2 + 4320*a**4*b - 864*a**3*b + 240*a**3 + 6*a**2 - 69*a*b + 2)",
+          "point": [
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0
+          ],
+          "sha256": "dee882b266ae027132c2ca62da3fab3b38be3a9e8a598b8c257d490315d36656",
+          "terms": 104,
+          "total_degree": 42
+        },
+        {
+          "factorization": "b*(3*b - 1)**2*(69*b + 4)",
+          "point": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "b15dd0f62154cfde11ffac0a386ba030337f5ca5a429c3468a2dc6e831f75944",
+          "terms": 4,
+          "total_degree": 4
+        },
+        {
+          "factorization": "b*(3*b + 1)**2*(69*b - 4)",
+          "point": [
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "bf93a1315ff926182864bf680eae69d1bb7f3ae4cc0fae5d4467ede71d6368ca",
+          "terms": 4,
+          "total_degree": 4
+        },
+        {
+          "factorization": "-b*(16*a + 1)*(12*a**2*b - 12*a*b + 2*a + 3*b)**2*(207360*a**7*b**3 - 622080*a**6*b**3 + 103680*a**6*b**2 + 777600*a**5*b**3 - 207360*a**5*b**2 + 17280*a**5*b - 518400*a**4*b**3 + 155520*a**4*b**2 - 17280*a**4*b + 960*a**4 + 194400*a**3*b**3 - 51840*a**3*b**2 + 4320*a**3*b - 38880*a**2*b**3 + 6480*a**2*b**2 - 276*a**2*b + 3240*a*b**3 + 276*a*b + 8*a - 69*b - 27)",
+          "point": [
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0
+          ],
+          "sha256": "b6b7aac730789ca76f22f7b992107b97c47c83cca8153ed9362a928addeefb5f",
+          "terms": 55,
+          "total_degree": 18
+        }
+      ],
+      "singular_basis_size": 1,
+      "singular_input_sha256": "ee9d776d5719aa1b5f86a37be4ff3d15fd1ff68d72e46f5caf00c2d0d8cc8648"
+    },
+    {
+      "H1_source": 2,
+      "H2_source": 0,
+      "certificate_kind": "singular_unit_ideal",
+      "common_dual": 0,
+      "degree_pair": [
+        2,
+        3
+      ],
+      "epsilon1": 1,
+      "epsilon2": 1,
+      "linear_pairing": -1,
+      "origin_parent_hessian_determinant": "-16384",
+      "parent_constant_locus_with_ab_nonzero": "empty",
+      "pattern_id": "p0-q2-q0-e+1-e+1",
+      "poisson_bracket_factor": "-6*a*b*L1*L2^2",
+      "poisson_incidence": "h1_dual_hits_h2_source",
+      "probe_equations": [
+        {
+          "factorization": "-b*(16*a + 1)*(12*a**2*b + 12*a*b + 2*a + 3*b)**2*(207360*a**7*b**3 + 622080*a**6*b**3 + 103680*a**6*b**2 + 777600*a**5*b**3 + 207360*a**5*b**2 + 17280*a**5*b + 518400*a**4*b**3 + 155520*a**4*b**2 + 17280*a**4*b + 960*a**4 + 194400*a**3*b**3 + 51840*a**3*b**2 + 4320*a**3*b + 38880*a**2*b**3 + 6480*a**2*b**2 - 276*a**2*b + 3240*a*b**3 - 276*a*b + 8*a - 69*b + 27)",
+          "point": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "sha256": "255390a81a46972573335ef9ac96bd1b01da6e966908c3ca8077ce9db11723f7",
+          "terms": 56,
+          "total_degree": 18
+        },
+        {
+          "factorization": "-a**3*b*(6*a*b + 1)**2*(3456*a**5*b**2 + 1152*a**4*b + 96*a**3 - 16*a - 5)*(139314069504*a**18*b**9 + 208971104256*a**17*b**8 + 139314069504*a**16*b**7 + 54177693696*a**15*b**6 - 3063619584*a**14*b**7 + 13544423424*a**14*b**5 - 241864704*a**13*b**7 - 3574222848*a**13*b**6 + 2257403904*a**13*b**4 - 241864704*a**12*b**6 - 1787111424*a**12*b**5 + 250822656*a**12*b**3 - 100776960*a**11*b**5 - 496419840*a**11*b**4 + 17915904*a**11*b**2 + 22021632*a**10*b**5 - 22394880*a**10*b**4 - 82736640*a**10*b**3 + 746496*a**10*b + 5038848*a**9*b**5 + 18351360*a**9*b**4 - 2799360*a**9*b**3 - 8273664*a**9*b**2 + 13824*a**9 + 3359232*a**8*b**4 + 6117120*a**8*b**3 - 186624*a**8*b**2 - 459648*a**8*b + 839808*a**7*b**3 + 1019520*a**7*b**2 - 5184*a**7*b - 10944*a**7 - 51840*a**6*b**3 + 93312*a**6*b**2 + 84960*a**6*b - 33696*a**5*b**3 - 25920*a**5*b**2 + 3888*a**5*b + 2832*a**5 - 11016*a**4*b**2 - 4320*a**4*b - 864*a**3*b - 240*a**3 + 6*a**2 + 69*a*b - 2)",
+          "point": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "sha256": "b29e3ca118509b9dc424c91f3ffc671bede8842a635597bbac15e7cf1bb4451c",
+          "terms": 104,
+          "total_degree": 42
+        },
+        {
+          "factorization": "-a**3*b*(6*a*b - 1)**2*(3456*a**5*b**2 - 1152*a**4*b + 96*a**3 + 16*a + 3)*(139314069504*a**18*b**9 - 208971104256*a**17*b**8 + 139314069504*a**16*b**7 - 54177693696*a**15*b**6 + 3063619584*a**14*b**7 + 13544423424*a**14*b**5 + 241864704*a**13*b**7 - 3574222848*a**13*b**6 - 2257403904*a**13*b**4 - 241864704*a**12*b**6 + 1787111424*a**12*b**5 + 250822656*a**12*b**3 + 100776960*a**11*b**5 - 496419840*a**11*b**4 - 17915904*a**11*b**2 + 22021632*a**10*b**5 - 22394880*a**10*b**4 + 82736640*a**10*b**3 + 746496*a**10*b + 5038848*a**9*b**5 - 18351360*a**9*b**4 + 2799360*a**9*b**3 - 8273664*a**9*b**2 - 13824*a**9 - 3359232*a**8*b**4 + 6117120*a**8*b**3 - 186624*a**8*b**2 + 459648*a**8*b + 839808*a**7*b**3 - 1019520*a**7*b**2 + 5184*a**7*b - 10944*a**7 + 51840*a**6*b**3 - 93312*a**6*b**2 + 84960*a**6*b + 33696*a**5*b**3 - 25920*a**5*b**2 + 3888*a**5*b - 2832*a**5 - 11016*a**4*b**2 + 4320*a**4*b + 864*a**3*b - 240*a**3 + 6*a**2 + 69*a*b + 2)",
+          "point": [
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0
+          ],
+          "sha256": "a5524b15408689e953ba3717d6423a6de45e489ccba2a020bcf00d299f1e137b",
+          "terms": 104,
+          "total_degree": 42
+        },
+        {
+          "factorization": "b*(3*b + 1)**2*(69*b - 4)",
+          "point": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "bf93a1315ff926182864bf680eae69d1bb7f3ae4cc0fae5d4467ede71d6368ca",
+          "terms": 4,
+          "total_degree": 4
+        },
+        {
+          "factorization": "b*(3*b - 1)**2*(69*b + 4)",
+          "point": [
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "b15dd0f62154cfde11ffac0a386ba030337f5ca5a429c3468a2dc6e831f75944",
+          "terms": 4,
+          "total_degree": 4
+        },
+        {
+          "factorization": "-b*(16*a - 1)*(12*a**2*b + 12*a*b - 2*a + 3*b)**2*(207360*a**7*b**3 + 622080*a**6*b**3 - 103680*a**6*b**2 + 777600*a**5*b**3 - 207360*a**5*b**2 + 17280*a**5*b + 518400*a**4*b**3 - 155520*a**4*b**2 + 17280*a**4*b - 960*a**4 + 194400*a**3*b**3 - 51840*a**3*b**2 + 4320*a**3*b + 38880*a**2*b**3 - 6480*a**2*b**2 + 276*a**2*b + 3240*a*b**3 + 276*a*b + 8*a + 69*b + 27)",
+          "point": [
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0
+          ],
+          "sha256": "2cf3bee70185e0cbd6851f0185ed350f66f61266ffdd2cd59d2f54a95b09d589",
+          "terms": 55,
+          "total_degree": 18
+        }
+      ],
+      "singular_basis_size": 1,
+      "singular_input_sha256": "46db27050d19b84da6f654a751a1bba8894ee77dd2531fce938c479e640945ce"
+    },
+    {
+      "H1_source": 0,
+      "H2_source": 1,
+      "certificate_kind": "singular_unit_ideal",
+      "common_dual": 1,
+      "degree_pair": [
+        2,
+        3
+      ],
+      "epsilon1": -1,
+      "epsilon2": -1,
+      "linear_pairing": 1,
+      "origin_parent_hessian_determinant": "-16384",
+      "parent_constant_locus_with_ab_nonzero": "empty",
+      "pattern_id": "p1-q0-q1-e-1-e-1",
+      "poisson_bracket_factor": "6*a*b*L1*L2^2",
+      "poisson_incidence": "h1_dual_hits_h2_source",
+      "probe_equations": [
+        {
+          "factorization": "b*(8*a + 1)*(192*a**3*b - 168*a**2*b - 32*a**2 + 24*a*b - 2*a + 6*b - 1)",
+          "point": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "sha256": "71c2d846e20f734872b12cc43b6d5eba991165a869e53a20bde4a644c70afe7b",
+          "terms": 9,
+          "total_degree": 6
+        },
+        {
+          "factorization": "-a*b*(20736*a**6*b**3 - 31104*a**5*b**3 + 10368*a**5*b**2 - 14688*a**4*b**2 + 1728*a**4*b + 2592*a**3*b**2 - 2304*a**3*b + 96*a**3 + 672*a**2*b - 120*a**2 - 12*a*b + 40*a - 1)*(37614798766080*a**21*b**10 - 56422198149120*a**20*b**10 + 62691331276800*a**20*b**9 - 99888187834368*a**19*b**9 + 47018498457600*a**19*b**8 + 19120856039424*a**18*b**9 - 79304534065152*a**18*b**8 + 20897110425600*a**18*b**7 + 27851204395008*a**17*b**8 - 37196856557568*a**17*b**7 + 6094990540800*a**17*b**6 - 2255146500096*a**16*b**8 + 18014083153920*a**16*b**7 - 11417948946432*a**16*b**6 + 1218998108160*a**16*b**5 - 2786603876352*a**15*b**7 + 6790270943232*a**15*b**6 - 2397362946048*a**15*b**5 + 169305292800*a**15*b**4 + 78847893504*a**14*b**7 - 1497035022336*a**14*b**6 + 1643766276096*a**14*b**5 - 348768903168*a**14*b**4 + 16124313600*a**14*b**3 + 79958679552*a**13*b**6 - 456183705600*a**13*b**5 + 264994136064*a**13*b**4 - 34721021952*a**13*b**3 + 1007769600*a**13*b**2 + 4299816960*a**12*b**6 + 33964075008*a**12*b**5 - 86115778560*a**12*b**4 + 28447469568*a**12*b**3 - 2264122368*a**12*b**2 + 37324800*a**12*b + 3991514112*a**11*b**5 + 7763558400*a**11*b**4 - 10292438016*a**11*b**3 + 1960796160*a**11*b**2 - 87340032*a**11*b + 622080*a**11 - 352159488*a**10*b**5 + 1534671360*a**10*b**4 + 1015441920*a**10*b**3 - 758564352*a**10*b**2 + 78734592*a**10*b - 1513728*a**10 - 252004608*a**9*b**4 + 312491520*a**9*b**3 + 73695744*a**9*b**2 - 31401216*a**9*b + 1403136*a**9 + 684288*a**8*b**4 - 70180992*a**8*b**3 + 35493120*a**8*b**2 + 2547072*a**8*b - 555840*a**8 + 160704*a**7*b**3 - 9393408*a**7*b**2 + 2128320*a**7*b + 23808*a**7 + 393984*a**6*b**3 - 33696*a**6*b**2 - 590832*a**6*b + 52512*a**6 + 153792*a**5*b**2 - 11952*a**5*b - 13296*a**5 - 3888*a**4*b**2 + 18432*a**4*b - 840*a**4 - 864*a**3*b + 624*a**3 - 144*a**2*b - 36*a**2 - 8*a + 1)",
+          "point": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "2de656f0a8242559cadbb830562b616f16d6dc2bdf7cb0dae07245681c60a8bb",
+          "terms": 132,
+          "total_degree": 42
+        },
+        {
+          "factorization": "-a*b*(20736*a**6*b**3 + 31104*a**5*b**3 - 10368*a**5*b**2 - 8640*a**4*b**2 + 1728*a**4*b + 2592*a**3*b**2 + 288*a**3*b - 96*a**3 - 480*a**2*b + 48*a**2 + 12*a*b + 8*a - 1)*(37614798766080*a**21*b**10 + 56422198149120*a**20*b**10 - 62691331276800*a**20*b**9 - 69378406612992*a**19*b**9 + 47018498457600*a**19*b**8 + 19120856039424*a**18*b**9 + 33539862233088*a**18*b**8 - 20897110425600*a**18*b**7 - 23137745043456*a**17*b**8 - 6687075336192*a**17*b**7 + 6094990540800*a**17*b**6 + 2255146500096*a**16*b**8 + 11729470685184*a**16*b**7 - 446965972992*a**16*b**6 - 1218998108160*a**16*b**5 - 2475404623872*a**15*b**7 - 3124247003136*a**15*b**6 + 568865783808*a**15*b**5 + 169305292800*a**15*b**4 + 78847893504*a**14*b**7 + 1133969227776*a**14*b**6 + 421758296064*a**14*b**5 - 145602551808*a**14*b**4 - 16124313600*a**14*b**3 - 77737107456*a**13*b**6 - 274650808320*a**13*b**5 - 10409140224*a**13*b**4 + 20209139712*a**13*b**3 + 1007769600*a**13*b**2 - 4299816960*a**12*b**6 + 31742502912*a**12*b**5 + 35689973760*a**12*b**4 - 5497196544*a**12*b**3 - 1659460608*a**12*b**2 - 37324800*a**12*b + 3174847488*a**11*b**5 - 6837903360*a**11*b**4 - 1888137216*a**11*b**3 + 867926016*a**11*b**2 + 76142592*a**11*b + 622080*a**11 - 352159488*a**10*b**5 - 854115840*a**10*b**4 + 809740800*a**10*b**3 - 81865728*a**10*b**2 - 55966464*a**10*b - 1513728*a**10 + 217541376*a**9*b**4 + 85639680*a**9*b**3 - 47983104*a**9*b**2 + 15289344*a**9*b + 1403136*a**9 - 684288*a**8*b**4 - 47205504*a**8*b**3 + 2315520*a**8*b**2 + 832896*a**8*b - 555840*a**8 + 523584*a**7*b**3 + 3649536*a**7*b**2 - 1022400*a**7*b + 23808*a**7 + 393984*a**6*b**3 - 147744*a**6*b**2 + 47376*a**6*b + 52512*a**6 - 111456*a**5*b**2 + 18288*a**5*b - 13296*a**5 + 3888*a**4*b**2 + 4320*a**4*b - 840*a**4 - 720*a**3*b + 552*a**3 - 144*a**2*b + 12*a**2 - 8*a - 1)",
+          "point": [
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "e0dad85c19d46894d02249868576220c20a3b767208e6209357872dbe7b7e095",
+          "terms": 131,
+          "total_degree": 42
+        },
+        {
+          "factorization": "b*(6*b - 1)",
+          "point": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "dc125433e69821c8dfa7eacf83ffa42232edf6411b10bba1a5659f19e7edc2c8",
+          "terms": 2,
+          "total_degree": 2
+        },
+        {
+          "factorization": "b*(6*b + 1)",
+          "point": [
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "85c5c82dd30a84fb7f8fd47b6b7be82e64e250ead05e60a2aa14fe76be8a3e86",
+          "terms": 2,
+          "total_degree": 2
+        },
+        {
+          "factorization": "b*(8*a - 1)*(192*a**3*b - 216*a**2*b + 32*a**2 + 72*a*b - 2*a - 6*b - 1)",
+          "point": [
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0
+          ],
+          "sha256": "fb1f0f72c4e4117a8092ebbe119220dfcbe4378b0cb400f7a794a5ab5edb59af",
+          "terms": 9,
+          "total_degree": 6
+        }
+      ],
+      "singular_basis_size": 1,
+      "singular_input_sha256": "8b3c5b4aafe891b0aedb350081c28aa731ca07ded9e43c702898d0f943105d72"
+    },
+    {
+      "H1_source": 0,
+      "H2_source": 1,
+      "certificate_kind": "singular_unit_ideal",
+      "common_dual": 1,
+      "degree_pair": [
+        2,
+        3
+      ],
+      "epsilon1": -1,
+      "epsilon2": 1,
+      "linear_pairing": 1,
+      "origin_parent_hessian_determinant": "-16384",
+      "parent_constant_locus_with_ab_nonzero": "empty",
+      "pattern_id": "p1-q0-q1-e-1-e+1",
+      "poisson_bracket_factor": "6*a*b*L1*L2^2",
+      "poisson_incidence": "h1_dual_hits_h2_source",
+      "probe_equations": [
+        {
+          "factorization": "b*(8*a - 1)*(192*a**3*b + 168*a**2*b + 32*a**2 + 24*a*b - 2*a - 6*b + 1)",
+          "point": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "sha256": "05b1f17c93652ff451f8653aa07c93f9a3f3c1bbe38d9b8864497c00d25916d8",
+          "terms": 9,
+          "total_degree": 6
+        },
+        {
+          "factorization": "-a*b*(20736*a**6*b**3 + 31104*a**5*b**3 - 10368*a**5*b**2 - 8640*a**4*b**2 + 1728*a**4*b + 2592*a**3*b**2 + 288*a**3*b - 96*a**3 - 480*a**2*b + 48*a**2 + 12*a*b + 8*a - 1)*(37614798766080*a**21*b**10 + 56422198149120*a**20*b**10 - 62691331276800*a**20*b**9 - 69378406612992*a**19*b**9 + 47018498457600*a**19*b**8 + 19120856039424*a**18*b**9 + 33539862233088*a**18*b**8 - 20897110425600*a**18*b**7 - 23137745043456*a**17*b**8 - 6687075336192*a**17*b**7 + 6094990540800*a**17*b**6 + 2255146500096*a**16*b**8 + 11729470685184*a**16*b**7 - 446965972992*a**16*b**6 - 1218998108160*a**16*b**5 - 2475404623872*a**15*b**7 - 3124247003136*a**15*b**6 + 568865783808*a**15*b**5 + 169305292800*a**15*b**4 + 78847893504*a**14*b**7 + 1133969227776*a**14*b**6 + 421758296064*a**14*b**5 - 145602551808*a**14*b**4 - 16124313600*a**14*b**3 - 77737107456*a**13*b**6 - 274650808320*a**13*b**5 - 10409140224*a**13*b**4 + 20209139712*a**13*b**3 + 1007769600*a**13*b**2 - 4299816960*a**12*b**6 + 31742502912*a**12*b**5 + 35689973760*a**12*b**4 - 5497196544*a**12*b**3 - 1659460608*a**12*b**2 - 37324800*a**12*b + 3174847488*a**11*b**5 - 6837903360*a**11*b**4 - 1888137216*a**11*b**3 + 867926016*a**11*b**2 + 76142592*a**11*b + 622080*a**11 - 352159488*a**10*b**5 - 854115840*a**10*b**4 + 809740800*a**10*b**3 - 81865728*a**10*b**2 - 55966464*a**10*b - 1513728*a**10 + 217541376*a**9*b**4 + 85639680*a**9*b**3 - 47983104*a**9*b**2 + 15289344*a**9*b + 1403136*a**9 - 684288*a**8*b**4 - 47205504*a**8*b**3 + 2315520*a**8*b**2 + 832896*a**8*b - 555840*a**8 + 523584*a**7*b**3 + 3649536*a**7*b**2 - 1022400*a**7*b + 23808*a**7 + 393984*a**6*b**3 - 147744*a**6*b**2 + 47376*a**6*b + 52512*a**6 - 111456*a**5*b**2 + 18288*a**5*b - 13296*a**5 + 3888*a**4*b**2 + 4320*a**4*b - 840*a**4 - 720*a**3*b + 552*a**3 - 144*a**2*b + 12*a**2 - 8*a - 1)",
+          "point": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "e0dad85c19d46894d02249868576220c20a3b767208e6209357872dbe7b7e095",
+          "terms": 131,
+          "total_degree": 42
+        },
+        {
+          "factorization": "-a*b*(20736*a**6*b**3 - 31104*a**5*b**3 + 10368*a**5*b**2 - 14688*a**4*b**2 + 1728*a**4*b + 2592*a**3*b**2 - 2304*a**3*b + 96*a**3 + 672*a**2*b - 120*a**2 - 12*a*b + 40*a - 1)*(37614798766080*a**21*b**10 - 56422198149120*a**20*b**10 + 62691331276800*a**20*b**9 - 99888187834368*a**19*b**9 + 47018498457600*a**19*b**8 + 19120856039424*a**18*b**9 - 79304534065152*a**18*b**8 + 20897110425600*a**18*b**7 + 27851204395008*a**17*b**8 - 37196856557568*a**17*b**7 + 6094990540800*a**17*b**6 - 2255146500096*a**16*b**8 + 18014083153920*a**16*b**7 - 11417948946432*a**16*b**6 + 1218998108160*a**16*b**5 - 2786603876352*a**15*b**7 + 6790270943232*a**15*b**6 - 2397362946048*a**15*b**5 + 169305292800*a**15*b**4 + 78847893504*a**14*b**7 - 1497035022336*a**14*b**6 + 1643766276096*a**14*b**5 - 348768903168*a**14*b**4 + 16124313600*a**14*b**3 + 79958679552*a**13*b**6 - 456183705600*a**13*b**5 + 264994136064*a**13*b**4 - 34721021952*a**13*b**3 + 1007769600*a**13*b**2 + 4299816960*a**12*b**6 + 33964075008*a**12*b**5 - 86115778560*a**12*b**4 + 28447469568*a**12*b**3 - 2264122368*a**12*b**2 + 37324800*a**12*b + 3991514112*a**11*b**5 + 7763558400*a**11*b**4 - 10292438016*a**11*b**3 + 1960796160*a**11*b**2 - 87340032*a**11*b + 622080*a**11 - 352159488*a**10*b**5 + 1534671360*a**10*b**4 + 1015441920*a**10*b**3 - 758564352*a**10*b**2 + 78734592*a**10*b - 1513728*a**10 - 252004608*a**9*b**4 + 312491520*a**9*b**3 + 73695744*a**9*b**2 - 31401216*a**9*b + 1403136*a**9 + 684288*a**8*b**4 - 70180992*a**8*b**3 + 35493120*a**8*b**2 + 2547072*a**8*b - 555840*a**8 + 160704*a**7*b**3 - 9393408*a**7*b**2 + 2128320*a**7*b + 23808*a**7 + 393984*a**6*b**3 - 33696*a**6*b**2 - 590832*a**6*b + 52512*a**6 + 153792*a**5*b**2 - 11952*a**5*b - 13296*a**5 - 3888*a**4*b**2 + 18432*a**4*b - 840*a**4 - 864*a**3*b + 624*a**3 - 144*a**2*b - 36*a**2 - 8*a + 1)",
+          "point": [
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "2de656f0a8242559cadbb830562b616f16d6dc2bdf7cb0dae07245681c60a8bb",
+          "terms": 132,
+          "total_degree": 42
+        },
+        {
+          "factorization": "b*(6*b + 1)",
+          "point": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "85c5c82dd30a84fb7f8fd47b6b7be82e64e250ead05e60a2aa14fe76be8a3e86",
+          "terms": 2,
+          "total_degree": 2
+        },
+        {
+          "factorization": "b*(6*b - 1)",
+          "point": [
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "dc125433e69821c8dfa7eacf83ffa42232edf6411b10bba1a5659f19e7edc2c8",
+          "terms": 2,
+          "total_degree": 2
+        },
+        {
+          "factorization": "b*(8*a + 1)*(192*a**3*b + 216*a**2*b - 32*a**2 + 72*a*b - 2*a + 6*b + 1)",
+          "point": [
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0
+          ],
+          "sha256": "5aabab75704be1677f6dab30bf7b5d81ae458e6f1fe9f479a015e0e5aba6169e",
+          "terms": 9,
+          "total_degree": 6
+        }
+      ],
+      "singular_basis_size": 1,
+      "singular_input_sha256": "1355fdc4f14e060a5a0f01fa68e7211e28b26619dc59a4c5c699005cc7a81c01"
+    },
+    {
+      "H1_source": 0,
+      "H2_source": 1,
+      "certificate_kind": "singular_unit_ideal",
+      "common_dual": 1,
+      "degree_pair": [
+        2,
+        3
+      ],
+      "epsilon1": 1,
+      "epsilon2": -1,
+      "linear_pairing": -1,
+      "origin_parent_hessian_determinant": "-16384",
+      "parent_constant_locus_with_ab_nonzero": "empty",
+      "pattern_id": "p1-q0-q1-e+1-e-1",
+      "poisson_bracket_factor": "-6*a*b*L1*L2^2",
+      "poisson_incidence": "h1_dual_hits_h2_source",
+      "probe_equations": [
+        {
+          "factorization": "b*(8*a - 1)*(192*a**3*b - 216*a**2*b - 32*a**2 + 72*a*b + 2*a - 6*b + 1)",
+          "point": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "sha256": "5a80caac7896c66a5744978d8fa112cfe99603c17804e491c800fc581ddaae8a",
+          "terms": 9,
+          "total_degree": 6
+        },
+        {
+          "factorization": "-a*b*(20736*a**6*b**3 - 31104*a**5*b**3 - 10368*a**5*b**2 + 8640*a**4*b**2 + 1728*a**4*b + 2592*a**3*b**2 - 288*a**3*b - 96*a**3 - 480*a**2*b - 48*a**2 - 12*a*b + 8*a + 1)*(37614798766080*a**21*b**10 - 56422198149120*a**20*b**10 - 62691331276800*a**20*b**9 + 69378406612992*a**19*b**9 + 47018498457600*a**19*b**8 + 19120856039424*a**18*b**9 - 33539862233088*a**18*b**8 - 20897110425600*a**18*b**7 - 23137745043456*a**17*b**8 + 6687075336192*a**17*b**7 + 6094990540800*a**17*b**6 - 2255146500096*a**16*b**8 + 11729470685184*a**16*b**7 + 446965972992*a**16*b**6 - 1218998108160*a**16*b**5 + 2475404623872*a**15*b**7 - 3124247003136*a**15*b**6 - 568865783808*a**15*b**5 + 169305292800*a**15*b**4 + 78847893504*a**14*b**7 - 1133969227776*a**14*b**6 + 421758296064*a**14*b**5 + 145602551808*a**14*b**4 - 16124313600*a**14*b**3 - 77737107456*a**13*b**6 + 274650808320*a**13*b**5 - 10409140224*a**13*b**4 - 20209139712*a**13*b**3 + 1007769600*a**13*b**2 + 4299816960*a**12*b**6 + 31742502912*a**12*b**5 - 35689973760*a**12*b**4 - 5497196544*a**12*b**3 + 1659460608*a**12*b**2 - 37324800*a**12*b - 3174847488*a**11*b**5 - 6837903360*a**11*b**4 + 1888137216*a**11*b**3 + 867926016*a**11*b**2 - 76142592*a**11*b + 622080*a**11 - 352159488*a**10*b**5 + 854115840*a**10*b**4 + 809740800*a**10*b**3 + 81865728*a**10*b**2 - 55966464*a**10*b + 1513728*a**10 + 217541376*a**9*b**4 - 85639680*a**9*b**3 - 47983104*a**9*b**2 - 15289344*a**9*b + 1403136*a**9 + 684288*a**8*b**4 - 47205504*a**8*b**3 - 2315520*a**8*b**2 + 832896*a**8*b + 555840*a**8 - 523584*a**7*b**3 + 3649536*a**7*b**2 + 1022400*a**7*b + 23808*a**7 + 393984*a**6*b**3 + 147744*a**6*b**2 + 47376*a**6*b - 52512*a**6 - 111456*a**5*b**2 - 18288*a**5*b - 13296*a**5 - 3888*a**4*b**2 + 4320*a**4*b + 840*a**4 + 720*a**3*b + 552*a**3 - 144*a**2*b - 12*a**2 - 8*a + 1)",
+          "point": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "62c0f1e2a0a28cf355147fa5baf6215e6d876df0e60cc37330ac721d3e3130c6",
+          "terms": 131,
+          "total_degree": 42
+        },
+        {
+          "factorization": "-a*b*(20736*a**6*b**3 + 31104*a**5*b**3 + 10368*a**5*b**2 + 14688*a**4*b**2 + 1728*a**4*b + 2592*a**3*b**2 + 2304*a**3*b + 96*a**3 + 672*a**2*b + 120*a**2 + 12*a*b + 40*a + 1)*(37614798766080*a**21*b**10 + 56422198149120*a**20*b**10 + 62691331276800*a**20*b**9 + 99888187834368*a**19*b**9 + 47018498457600*a**19*b**8 + 19120856039424*a**18*b**9 + 79304534065152*a**18*b**8 + 20897110425600*a**18*b**7 + 27851204395008*a**17*b**8 + 37196856557568*a**17*b**7 + 6094990540800*a**17*b**6 + 2255146500096*a**16*b**8 + 18014083153920*a**16*b**7 + 11417948946432*a**16*b**6 + 1218998108160*a**16*b**5 + 2786603876352*a**15*b**7 + 6790270943232*a**15*b**6 + 2397362946048*a**15*b**5 + 169305292800*a**15*b**4 + 78847893504*a**14*b**7 + 1497035022336*a**14*b**6 + 1643766276096*a**14*b**5 + 348768903168*a**14*b**4 + 16124313600*a**14*b**3 + 79958679552*a**13*b**6 + 456183705600*a**13*b**5 + 264994136064*a**13*b**4 + 34721021952*a**13*b**3 + 1007769600*a**13*b**2 - 4299816960*a**12*b**6 + 33964075008*a**12*b**5 + 86115778560*a**12*b**4 + 28447469568*a**12*b**3 + 2264122368*a**12*b**2 + 37324800*a**12*b - 3991514112*a**11*b**5 + 7763558400*a**11*b**4 + 10292438016*a**11*b**3 + 1960796160*a**11*b**2 + 87340032*a**11*b + 622080*a**11 - 352159488*a**10*b**5 - 1534671360*a**10*b**4 + 1015441920*a**10*b**3 + 758564352*a**10*b**2 + 78734592*a**10*b + 1513728*a**10 - 252004608*a**9*b**4 - 312491520*a**9*b**3 + 73695744*a**9*b**2 + 31401216*a**9*b + 1403136*a**9 - 684288*a**8*b**4 - 70180992*a**8*b**3 - 35493120*a**8*b**2 + 2547072*a**8*b + 555840*a**8 - 160704*a**7*b**3 - 9393408*a**7*b**2 - 2128320*a**7*b + 23808*a**7 + 393984*a**6*b**3 + 33696*a**6*b**2 - 590832*a**6*b - 52512*a**6 + 153792*a**5*b**2 + 11952*a**5*b - 13296*a**5 + 3888*a**4*b**2 + 18432*a**4*b + 840*a**4 + 864*a**3*b + 624*a**3 - 144*a**2*b + 36*a**2 - 8*a - 1)",
+          "point": [
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "05ed573688c1de27a8f48a5dbf5b711e20c1156ed8ee613a1542473688815784",
+          "terms": 132,
+          "total_degree": 42
+        },
+        {
+          "factorization": "b*(6*b - 1)",
+          "point": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "dc125433e69821c8dfa7eacf83ffa42232edf6411b10bba1a5659f19e7edc2c8",
+          "terms": 2,
+          "total_degree": 2
+        },
+        {
+          "factorization": "b*(6*b + 1)",
+          "point": [
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "85c5c82dd30a84fb7f8fd47b6b7be82e64e250ead05e60a2aa14fe76be8a3e86",
+          "terms": 2,
+          "total_degree": 2
+        },
+        {
+          "factorization": "b*(8*a + 1)*(192*a**3*b - 168*a**2*b + 32*a**2 + 24*a*b + 2*a + 6*b + 1)",
+          "point": [
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0
+          ],
+          "sha256": "b9888766630338da5708c7554e2403829c43a4808615eb77a912191fccf54b96",
+          "terms": 9,
+          "total_degree": 6
+        }
+      ],
+      "singular_basis_size": 1,
+      "singular_input_sha256": "1dfd26c84d9866ff383296ed50359e478637568904a342c1d3767620bb4da1f1"
+    },
+    {
+      "H1_source": 0,
+      "H2_source": 1,
+      "certificate_kind": "singular_unit_ideal",
+      "common_dual": 1,
+      "degree_pair": [
+        2,
+        3
+      ],
+      "epsilon1": 1,
+      "epsilon2": 1,
+      "linear_pairing": -1,
+      "origin_parent_hessian_determinant": "-16384",
+      "parent_constant_locus_with_ab_nonzero": "empty",
+      "pattern_id": "p1-q0-q1-e+1-e+1",
+      "poisson_bracket_factor": "-6*a*b*L1*L2^2",
+      "poisson_incidence": "h1_dual_hits_h2_source",
+      "probe_equations": [
+        {
+          "factorization": "b*(8*a + 1)*(192*a**3*b + 216*a**2*b + 32*a**2 + 72*a*b + 2*a + 6*b - 1)",
+          "point": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "sha256": "70189268b2873396f9e99b62c67d62ffcf0e95719769374e2edfc54af1b3c99a",
+          "terms": 9,
+          "total_degree": 6
+        },
+        {
+          "factorization": "-a*b*(20736*a**6*b**3 + 31104*a**5*b**3 + 10368*a**5*b**2 + 14688*a**4*b**2 + 1728*a**4*b + 2592*a**3*b**2 + 2304*a**3*b + 96*a**3 + 672*a**2*b + 120*a**2 + 12*a*b + 40*a + 1)*(37614798766080*a**21*b**10 + 56422198149120*a**20*b**10 + 62691331276800*a**20*b**9 + 99888187834368*a**19*b**9 + 47018498457600*a**19*b**8 + 19120856039424*a**18*b**9 + 79304534065152*a**18*b**8 + 20897110425600*a**18*b**7 + 27851204395008*a**17*b**8 + 37196856557568*a**17*b**7 + 6094990540800*a**17*b**6 + 2255146500096*a**16*b**8 + 18014083153920*a**16*b**7 + 11417948946432*a**16*b**6 + 1218998108160*a**16*b**5 + 2786603876352*a**15*b**7 + 6790270943232*a**15*b**6 + 2397362946048*a**15*b**5 + 169305292800*a**15*b**4 + 78847893504*a**14*b**7 + 1497035022336*a**14*b**6 + 1643766276096*a**14*b**5 + 348768903168*a**14*b**4 + 16124313600*a**14*b**3 + 79958679552*a**13*b**6 + 456183705600*a**13*b**5 + 264994136064*a**13*b**4 + 34721021952*a**13*b**3 + 1007769600*a**13*b**2 - 4299816960*a**12*b**6 + 33964075008*a**12*b**5 + 86115778560*a**12*b**4 + 28447469568*a**12*b**3 + 2264122368*a**12*b**2 + 37324800*a**12*b - 3991514112*a**11*b**5 + 7763558400*a**11*b**4 + 10292438016*a**11*b**3 + 1960796160*a**11*b**2 + 87340032*a**11*b + 622080*a**11 - 352159488*a**10*b**5 - 1534671360*a**10*b**4 + 1015441920*a**10*b**3 + 758564352*a**10*b**2 + 78734592*a**10*b + 1513728*a**10 - 252004608*a**9*b**4 - 312491520*a**9*b**3 + 73695744*a**9*b**2 + 31401216*a**9*b + 1403136*a**9 - 684288*a**8*b**4 - 70180992*a**8*b**3 - 35493120*a**8*b**2 + 2547072*a**8*b + 555840*a**8 - 160704*a**7*b**3 - 9393408*a**7*b**2 - 2128320*a**7*b + 23808*a**7 + 393984*a**6*b**3 + 33696*a**6*b**2 - 590832*a**6*b - 52512*a**6 + 153792*a**5*b**2 + 11952*a**5*b - 13296*a**5 + 3888*a**4*b**2 + 18432*a**4*b + 840*a**4 + 864*a**3*b + 624*a**3 - 144*a**2*b + 36*a**2 - 8*a - 1)",
+          "point": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "05ed573688c1de27a8f48a5dbf5b711e20c1156ed8ee613a1542473688815784",
+          "terms": 132,
+          "total_degree": 42
+        },
+        {
+          "factorization": "-a*b*(20736*a**6*b**3 - 31104*a**5*b**3 - 10368*a**5*b**2 + 8640*a**4*b**2 + 1728*a**4*b + 2592*a**3*b**2 - 288*a**3*b - 96*a**3 - 480*a**2*b - 48*a**2 - 12*a*b + 8*a + 1)*(37614798766080*a**21*b**10 - 56422198149120*a**20*b**10 - 62691331276800*a**20*b**9 + 69378406612992*a**19*b**9 + 47018498457600*a**19*b**8 + 19120856039424*a**18*b**9 - 33539862233088*a**18*b**8 - 20897110425600*a**18*b**7 - 23137745043456*a**17*b**8 + 6687075336192*a**17*b**7 + 6094990540800*a**17*b**6 - 2255146500096*a**16*b**8 + 11729470685184*a**16*b**7 + 446965972992*a**16*b**6 - 1218998108160*a**16*b**5 + 2475404623872*a**15*b**7 - 3124247003136*a**15*b**6 - 568865783808*a**15*b**5 + 169305292800*a**15*b**4 + 78847893504*a**14*b**7 - 1133969227776*a**14*b**6 + 421758296064*a**14*b**5 + 145602551808*a**14*b**4 - 16124313600*a**14*b**3 - 77737107456*a**13*b**6 + 274650808320*a**13*b**5 - 10409140224*a**13*b**4 - 20209139712*a**13*b**3 + 1007769600*a**13*b**2 + 4299816960*a**12*b**6 + 31742502912*a**12*b**5 - 35689973760*a**12*b**4 - 5497196544*a**12*b**3 + 1659460608*a**12*b**2 - 37324800*a**12*b - 3174847488*a**11*b**5 - 6837903360*a**11*b**4 + 1888137216*a**11*b**3 + 867926016*a**11*b**2 - 76142592*a**11*b + 622080*a**11 - 352159488*a**10*b**5 + 854115840*a**10*b**4 + 809740800*a**10*b**3 + 81865728*a**10*b**2 - 55966464*a**10*b + 1513728*a**10 + 217541376*a**9*b**4 - 85639680*a**9*b**3 - 47983104*a**9*b**2 - 15289344*a**9*b + 1403136*a**9 + 684288*a**8*b**4 - 47205504*a**8*b**3 - 2315520*a**8*b**2 + 832896*a**8*b + 555840*a**8 - 523584*a**7*b**3 + 3649536*a**7*b**2 + 1022400*a**7*b + 23808*a**7 + 393984*a**6*b**3 + 147744*a**6*b**2 + 47376*a**6*b - 52512*a**6 - 111456*a**5*b**2 - 18288*a**5*b - 13296*a**5 - 3888*a**4*b**2 + 4320*a**4*b + 840*a**4 + 720*a**3*b + 552*a**3 - 144*a**2*b - 12*a**2 - 8*a + 1)",
+          "point": [
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "62c0f1e2a0a28cf355147fa5baf6215e6d876df0e60cc37330ac721d3e3130c6",
+          "terms": 131,
+          "total_degree": 42
+        },
+        {
+          "factorization": "b*(6*b + 1)",
+          "point": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "85c5c82dd30a84fb7f8fd47b6b7be82e64e250ead05e60a2aa14fe76be8a3e86",
+          "terms": 2,
+          "total_degree": 2
+        },
+        {
+          "factorization": "b*(6*b - 1)",
+          "point": [
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "dc125433e69821c8dfa7eacf83ffa42232edf6411b10bba1a5659f19e7edc2c8",
+          "terms": 2,
+          "total_degree": 2
+        },
+        {
+          "factorization": "b*(8*a - 1)*(192*a**3*b + 168*a**2*b - 32*a**2 + 24*a*b + 2*a - 6*b - 1)",
+          "point": [
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0
+          ],
+          "sha256": "ea26af4fbe059cf8b23dcf4ba4504adb4c9e99291628bd6696478b1e639e6ce6",
+          "terms": 9,
+          "total_degree": 6
+        }
+      ],
+      "singular_basis_size": 1,
+      "singular_input_sha256": "6e0855c5c37830f327a2d9ed07641a8218a32d21884e0552888298ed54da56c4"
+    },
+    {
+      "H1_source": 1,
+      "H2_source": 0,
+      "certificate_kind": "localized_monomial",
+      "common_dual": 1,
+      "degree_pair": [
+        2,
+        3
+      ],
+      "epsilon1": -1,
+      "epsilon2": -1,
+      "linear_pairing": -1,
+      "origin_parent_hessian_determinant": "-16384",
+      "parent_constant_locus_with_ab_nonzero": "empty",
+      "pattern_id": "p1-q1-q0-e-1-e-1",
+      "poisson_bracket_factor": "-6*a*b*L1*L2^2",
+      "poisson_incidence": "h1_source_hits_h2_dual",
+      "probe_equations": [
+        {
+          "factorization": "-b",
+          "point": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "sha256": "4fc0bdb51ffc8cfdcaaee067eb264b8a5c646176cf870be17c2e647fbb2cb7f4",
+          "terms": 1,
+          "total_degree": 1
+        }
+      ]
+    },
+    {
+      "H1_source": 1,
+      "H2_source": 0,
+      "certificate_kind": "localized_monomial",
+      "common_dual": 1,
+      "degree_pair": [
+        2,
+        3
+      ],
+      "epsilon1": -1,
+      "epsilon2": 1,
+      "linear_pairing": 1,
+      "origin_parent_hessian_determinant": "-16384",
+      "parent_constant_locus_with_ab_nonzero": "empty",
+      "pattern_id": "p1-q1-q0-e-1-e+1",
+      "poisson_bracket_factor": "6*a*b*L1*L2^2",
+      "poisson_incidence": "h1_source_hits_h2_dual",
+      "probe_equations": [
+        {
+          "factorization": "-b",
+          "point": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "sha256": "4fc0bdb51ffc8cfdcaaee067eb264b8a5c646176cf870be17c2e647fbb2cb7f4",
+          "terms": 1,
+          "total_degree": 1
+        }
+      ]
+    },
+    {
+      "H1_source": 1,
+      "H2_source": 0,
+      "certificate_kind": "localized_monomial",
+      "common_dual": 1,
+      "degree_pair": [
+        2,
+        3
+      ],
+      "epsilon1": 1,
+      "epsilon2": -1,
+      "linear_pairing": -1,
+      "origin_parent_hessian_determinant": "-16384",
+      "parent_constant_locus_with_ab_nonzero": "empty",
+      "pattern_id": "p1-q1-q0-e+1-e-1",
+      "poisson_bracket_factor": "-6*a*b*L1*L2^2",
+      "poisson_incidence": "h1_source_hits_h2_dual",
+      "probe_equations": [
+        {
+          "factorization": "-b",
+          "point": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "sha256": "4fc0bdb51ffc8cfdcaaee067eb264b8a5c646176cf870be17c2e647fbb2cb7f4",
+          "terms": 1,
+          "total_degree": 1
+        }
+      ]
+    },
+    {
+      "H1_source": 1,
+      "H2_source": 0,
+      "certificate_kind": "localized_monomial",
+      "common_dual": 1,
+      "degree_pair": [
+        2,
+        3
+      ],
+      "epsilon1": 1,
+      "epsilon2": 1,
+      "linear_pairing": 1,
+      "origin_parent_hessian_determinant": "-16384",
+      "parent_constant_locus_with_ab_nonzero": "empty",
+      "pattern_id": "p1-q1-q0-e+1-e+1",
+      "poisson_bracket_factor": "6*a*b*L1*L2^2",
+      "poisson_incidence": "h1_source_hits_h2_dual",
+      "probe_equations": [
+        {
+          "factorization": "-b",
+          "point": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "sha256": "4fc0bdb51ffc8cfdcaaee067eb264b8a5c646176cf870be17c2e647fbb2cb7f4",
+          "terms": 1,
+          "total_degree": 1
+        }
+      ]
+    },
+    {
+      "H1_source": 1,
+      "H2_source": 1,
+      "certificate_kind": "singular_unit_ideal",
+      "common_dual": 1,
+      "degree_pair": [
+        2,
+        3
+      ],
+      "epsilon1": -1,
+      "epsilon2": 1,
+      "linear_pairing": 2,
+      "origin_parent_hessian_determinant": "-16384",
+      "parent_constant_locus_with_ab_nonzero": "empty",
+      "pattern_id": "p1-q1-q1-e-1-e+1",
+      "poisson_bracket_factor": "12*a*b*L1*L2^2",
+      "poisson_incidence": "reciprocal",
+      "probe_equations": [
+        {
+          "factorization": "b*(96*a**2*b + 48*a*b + 6*b - 1)",
+          "point": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "sha256": "11346ac43192781e3de7cf426c548a21bc6b4545476c499d74ce9c7cbddbc706",
+          "terms": 4,
+          "total_degree": 4
+        },
+        {
+          "factorization": "b*(96*a**2*b - 48*a*b + 6*b + 1)",
+          "point": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "f7250d9930a07657e18c60a0b9625cf2fb78b56d7722e03b0df41bd35de32bb1",
+          "terms": 4,
+          "total_degree": 4
+        },
+        {
+          "factorization": "b*(96*a**2*b - 48*a*b + 6*b - 1)",
+          "point": [
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "c5f2513be3f222078558b9f746470b51de4489458d8891a674d8c8ad98e53264",
+          "terms": 4,
+          "total_degree": 4
+        },
+        {
+          "factorization": "b*(96*a**2*b + 48*a*b + 6*b + 1)",
+          "point": [
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0
+          ],
+          "sha256": "f0d12649cfe6fbadd9deababf41696acf67d96dee9437182d43aae592ee8ec15",
+          "terms": 4,
+          "total_degree": 4
+        }
+      ],
+      "singular_basis_size": 1,
+      "singular_input_sha256": "4e6a7009d64194aa20e3642dc547abeccdb9261f5d542757f30ec4d0e289ff07"
+    },
+    {
+      "H1_source": 1,
+      "H2_source": 1,
+      "certificate_kind": "singular_unit_ideal",
+      "common_dual": 1,
+      "degree_pair": [
+        2,
+        3
+      ],
+      "epsilon1": 1,
+      "epsilon2": -1,
+      "linear_pairing": -2,
+      "origin_parent_hessian_determinant": "-16384",
+      "parent_constant_locus_with_ab_nonzero": "empty",
+      "pattern_id": "p1-q1-q1-e+1-e-1",
+      "poisson_bracket_factor": "-12*a*b*L1*L2^2",
+      "poisson_incidence": "reciprocal",
+      "probe_equations": [
+        {
+          "factorization": "b*(96*a**2*b - 48*a*b + 6*b - 1)",
+          "point": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "sha256": "c5f2513be3f222078558b9f746470b51de4489458d8891a674d8c8ad98e53264",
+          "terms": 4,
+          "total_degree": 4
+        },
+        {
+          "factorization": "b*(96*a**2*b + 48*a*b + 6*b - 1)",
+          "point": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "11346ac43192781e3de7cf426c548a21bc6b4545476c499d74ce9c7cbddbc706",
+          "terms": 4,
+          "total_degree": 4
+        },
+        {
+          "factorization": "b*(96*a**2*b + 48*a*b + 6*b + 1)",
+          "point": [
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "f0d12649cfe6fbadd9deababf41696acf67d96dee9437182d43aae592ee8ec15",
+          "terms": 4,
+          "total_degree": 4
+        },
+        {
+          "factorization": "b*(96*a**2*b - 48*a*b + 6*b + 1)",
+          "point": [
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0
+          ],
+          "sha256": "f7250d9930a07657e18c60a0b9625cf2fb78b56d7722e03b0df41bd35de32bb1",
+          "terms": 4,
+          "total_degree": 4
+        }
+      ],
+      "singular_basis_size": 1,
+      "singular_input_sha256": "5f5d88c2e61b96c51309388f2fc06233e5ff8a0b970e609bc8cb99725cacac07"
+    },
+    {
+      "H1_source": 1,
+      "H2_source": 2,
+      "certificate_kind": "singular_unit_ideal",
+      "common_dual": 1,
+      "degree_pair": [
+        2,
+        3
+      ],
+      "epsilon1": -1,
+      "epsilon2": -1,
+      "linear_pairing": -1,
+      "origin_parent_hessian_determinant": "-16384",
+      "parent_constant_locus_with_ab_nonzero": "empty",
+      "pattern_id": "p1-q1-q2-e-1-e-1",
+      "poisson_bracket_factor": "-6*a*b*L1*L2^2",
+      "poisson_incidence": "h1_source_hits_h2_dual",
+      "probe_equations": [
+        {
+          "factorization": "-b*(2*a + 1)*(12*a**2*b + 12*a*b - 2*a + 3*b)",
+          "point": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "sha256": "a56252207cdb0a00eb9cac6cffc333114caa5204c1a9661ff2056ae9b3f01995",
+          "terms": 6,
+          "total_degree": 5
+        },
+        {
+          "factorization": "a*b*(12*a**2*b + 2*a - 1)",
+          "point": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "c1aef72b532cf53e09b850510e83de5994b2530be1f8da91fa815c4c447cde31",
+          "terms": 3,
+          "total_degree": 5
+        },
+        {
+          "factorization": "-a*b*(12*a**2*b - 2*a + 1)",
+          "point": [
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "b8be399be7898b667fb6822514a6c8ee9fc0dff25e5190a4c4658262f480eb50",
+          "terms": 3,
+          "total_degree": 5
+        },
+        {
+          "factorization": "b*(2*a + 1)*(12*a**2*b + 12*a*b + 2*a + 3*b)",
+          "point": [
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0
+          ],
+          "sha256": "00923357f3cec88c1d4914e6121db308b613061ced263272849be3e7ce73a49e",
+          "terms": 6,
+          "total_degree": 5
+        }
+      ],
+      "singular_basis_size": 1,
+      "singular_input_sha256": "902eb8937ddb27ada4e186878220313d511b84074873f1c877538fb096a01712"
+    },
+    {
+      "H1_source": 1,
+      "H2_source": 2,
+      "certificate_kind": "singular_unit_ideal",
+      "common_dual": 1,
+      "degree_pair": [
+        2,
+        3
+      ],
+      "epsilon1": -1,
+      "epsilon2": 1,
+      "linear_pairing": 1,
+      "origin_parent_hessian_determinant": "-16384",
+      "parent_constant_locus_with_ab_nonzero": "empty",
+      "pattern_id": "p1-q1-q2-e-1-e+1",
+      "poisson_bracket_factor": "6*a*b*L1*L2^2",
+      "poisson_incidence": "h1_source_hits_h2_dual",
+      "probe_equations": [
+        {
+          "factorization": "b*(2*a + 1)*(12*a**2*b + 12*a*b + 2*a + 3*b)",
+          "point": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "sha256": "00923357f3cec88c1d4914e6121db308b613061ced263272849be3e7ce73a49e",
+          "terms": 6,
+          "total_degree": 5
+        },
+        {
+          "factorization": "-a*b*(12*a**2*b - 2*a + 1)",
+          "point": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "b8be399be7898b667fb6822514a6c8ee9fc0dff25e5190a4c4658262f480eb50",
+          "terms": 3,
+          "total_degree": 5
+        },
+        {
+          "factorization": "a*b*(12*a**2*b + 2*a - 1)",
+          "point": [
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "c1aef72b532cf53e09b850510e83de5994b2530be1f8da91fa815c4c447cde31",
+          "terms": 3,
+          "total_degree": 5
+        },
+        {
+          "factorization": "-b*(2*a + 1)*(12*a**2*b + 12*a*b - 2*a + 3*b)",
+          "point": [
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0
+          ],
+          "sha256": "a56252207cdb0a00eb9cac6cffc333114caa5204c1a9661ff2056ae9b3f01995",
+          "terms": 6,
+          "total_degree": 5
+        }
+      ],
+      "singular_basis_size": 1,
+      "singular_input_sha256": "e8d9a5e56d60db9c111211e9d29459270ecfb2193087a1b08fabaee9599dd5cf"
+    },
+    {
+      "H1_source": 1,
+      "H2_source": 2,
+      "certificate_kind": "singular_unit_ideal",
+      "common_dual": 1,
+      "degree_pair": [
+        2,
+        3
+      ],
+      "epsilon1": 1,
+      "epsilon2": -1,
+      "linear_pairing": -1,
+      "origin_parent_hessian_determinant": "-16384",
+      "parent_constant_locus_with_ab_nonzero": "empty",
+      "pattern_id": "p1-q1-q2-e+1-e-1",
+      "poisson_bracket_factor": "-6*a*b*L1*L2^2",
+      "poisson_incidence": "h1_source_hits_h2_dual",
+      "probe_equations": [
+        {
+          "factorization": "b*(2*a - 1)*(12*a**2*b - 12*a*b - 2*a + 3*b)",
+          "point": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "sha256": "8b452a08168eba2abbd19547bcccc483ebcfd24fd7025b851750620102941a6f",
+          "terms": 6,
+          "total_degree": 5
+        },
+        {
+          "factorization": "a*b*(12*a**2*b - 2*a - 1)",
+          "point": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "2db7e3a40d1654e360ffef1d9cea355e9dc62d377377b40b63629c567d49bfea",
+          "terms": 3,
+          "total_degree": 5
+        },
+        {
+          "factorization": "-a*b*(12*a**2*b + 2*a + 1)",
+          "point": [
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "16aad4e862efb7097554d83e057125f8ac06ec9997de5f19f706ad3d6496cf5c",
+          "terms": 3,
+          "total_degree": 5
+        },
+        {
+          "factorization": "-b*(2*a - 1)*(12*a**2*b - 12*a*b + 2*a + 3*b)",
+          "point": [
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0
+          ],
+          "sha256": "336ee8bb74d792e174304704c70635a5b7795e6f7c49cab77375c35bf8276c6e",
+          "terms": 6,
+          "total_degree": 5
+        }
+      ],
+      "singular_basis_size": 1,
+      "singular_input_sha256": "475e467f3c30c6e9ce3d06f6761b467ec34d96ee8858f4871b5591856e8f6012"
+    },
+    {
+      "H1_source": 1,
+      "H2_source": 2,
+      "certificate_kind": "singular_unit_ideal",
+      "common_dual": 1,
+      "degree_pair": [
+        2,
+        3
+      ],
+      "epsilon1": 1,
+      "epsilon2": 1,
+      "linear_pairing": 1,
+      "origin_parent_hessian_determinant": "-16384",
+      "parent_constant_locus_with_ab_nonzero": "empty",
+      "pattern_id": "p1-q1-q2-e+1-e+1",
+      "poisson_bracket_factor": "6*a*b*L1*L2^2",
+      "poisson_incidence": "h1_source_hits_h2_dual",
+      "probe_equations": [
+        {
+          "factorization": "-b*(2*a - 1)*(12*a**2*b - 12*a*b + 2*a + 3*b)",
+          "point": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "sha256": "336ee8bb74d792e174304704c70635a5b7795e6f7c49cab77375c35bf8276c6e",
+          "terms": 6,
+          "total_degree": 5
+        },
+        {
+          "factorization": "-a*b*(12*a**2*b + 2*a + 1)",
+          "point": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "16aad4e862efb7097554d83e057125f8ac06ec9997de5f19f706ad3d6496cf5c",
+          "terms": 3,
+          "total_degree": 5
+        },
+        {
+          "factorization": "a*b*(12*a**2*b - 2*a - 1)",
+          "point": [
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "2db7e3a40d1654e360ffef1d9cea355e9dc62d377377b40b63629c567d49bfea",
+          "terms": 3,
+          "total_degree": 5
+        },
+        {
+          "factorization": "b*(2*a - 1)*(12*a**2*b - 12*a*b - 2*a + 3*b)",
+          "point": [
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0
+          ],
+          "sha256": "8b452a08168eba2abbd19547bcccc483ebcfd24fd7025b851750620102941a6f",
+          "terms": 6,
+          "total_degree": 5
+        }
+      ],
+      "singular_basis_size": 1,
+      "singular_input_sha256": "c958131e10a8e78637aff35b0aef9b15b80b1b4fded5f036d17e8e2da66fa893"
+    },
+    {
+      "H1_source": 2,
+      "H2_source": 1,
+      "certificate_kind": "singular_unit_ideal",
+      "common_dual": 1,
+      "degree_pair": [
+        2,
+        3
+      ],
+      "epsilon1": -1,
+      "epsilon2": -1,
+      "linear_pairing": 1,
+      "origin_parent_hessian_determinant": "-16384",
+      "parent_constant_locus_with_ab_nonzero": "empty",
+      "pattern_id": "p1-q2-q1-e-1-e-1",
+      "poisson_bracket_factor": "6*a*b*L1*L2^2",
+      "poisson_incidence": "h1_dual_hits_h2_source",
+      "probe_equations": [
+        {
+          "factorization": "b*(24*a**2*b - 24*a*b - 2*a + 6*b - 1)",
+          "point": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "sha256": "5a6256eac4321d97aa26b3f24fe7473fa2c93962dd9df9cce5ae2fbfe3e614f0",
+          "terms": 5,
+          "total_degree": 4
+        },
+        {
+          "factorization": "a*b*(12*a*b + 1)",
+          "point": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "sha256": "7ab99ffcf75d735d12bb9781313e9f88397d9b0503398bd47fb9783090853be3",
+          "terms": 2,
+          "total_degree": 4
+        },
+        {
+          "factorization": "a*b*(12*a*b - 1)",
+          "point": [
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0
+          ],
+          "sha256": "561bc7bf7956743f4b2bbf28e428847f8f7d6d806b03023e264cd51f29052e9f",
+          "terms": 2,
+          "total_degree": 4
+        },
+        {
+          "factorization": "b*(6*b - 1)",
+          "point": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "dc125433e69821c8dfa7eacf83ffa42232edf6411b10bba1a5659f19e7edc2c8",
+          "terms": 2,
+          "total_degree": 2
+        },
+        {
+          "factorization": "b*(6*b + 1)",
+          "point": [
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "85c5c82dd30a84fb7f8fd47b6b7be82e64e250ead05e60a2aa14fe76be8a3e86",
+          "terms": 2,
+          "total_degree": 2
+        },
+        {
+          "factorization": "b*(24*a**2*b - 24*a*b + 2*a + 6*b + 1)",
+          "point": [
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0
+          ],
+          "sha256": "8cf76e5923b4079e7eca9cb06d9603298b0e6cd738b647e1800521ca28a8e31f",
+          "terms": 5,
+          "total_degree": 4
+        }
+      ],
+      "singular_basis_size": 1,
+      "singular_input_sha256": "d7df32aa3de15452ff3f96c256eb006b11f8ff57afabd2abcddbf2e850dfc6d0"
+    },
+    {
+      "H1_source": 2,
+      "H2_source": 1,
+      "certificate_kind": "singular_unit_ideal",
+      "common_dual": 1,
+      "degree_pair": [
+        2,
+        3
+      ],
+      "epsilon1": -1,
+      "epsilon2": 1,
+      "linear_pairing": 1,
+      "origin_parent_hessian_determinant": "-16384",
+      "parent_constant_locus_with_ab_nonzero": "empty",
+      "pattern_id": "p1-q2-q1-e-1-e+1",
+      "poisson_bracket_factor": "6*a*b*L1*L2^2",
+      "poisson_incidence": "h1_dual_hits_h2_source",
+      "probe_equations": [
+        {
+          "factorization": "b*(24*a**2*b + 24*a*b + 2*a + 6*b - 1)",
+          "point": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "sha256": "cdbd4babfa206c5bc5cf1d858d2e1106d0c3eb4598899ac42face6aa3bb31667",
+          "terms": 5,
+          "total_degree": 4
+        },
+        {
+          "factorization": "a*b*(12*a*b - 1)",
+          "point": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "sha256": "561bc7bf7956743f4b2bbf28e428847f8f7d6d806b03023e264cd51f29052e9f",
+          "terms": 2,
+          "total_degree": 4
+        },
+        {
+          "factorization": "a*b*(12*a*b + 1)",
+          "point": [
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0
+          ],
+          "sha256": "7ab99ffcf75d735d12bb9781313e9f88397d9b0503398bd47fb9783090853be3",
+          "terms": 2,
+          "total_degree": 4
+        },
+        {
+          "factorization": "b*(6*b + 1)",
+          "point": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "85c5c82dd30a84fb7f8fd47b6b7be82e64e250ead05e60a2aa14fe76be8a3e86",
+          "terms": 2,
+          "total_degree": 2
+        },
+        {
+          "factorization": "b*(6*b - 1)",
+          "point": [
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "dc125433e69821c8dfa7eacf83ffa42232edf6411b10bba1a5659f19e7edc2c8",
+          "terms": 2,
+          "total_degree": 2
+        },
+        {
+          "factorization": "b*(24*a**2*b + 24*a*b - 2*a + 6*b + 1)",
+          "point": [
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0
+          ],
+          "sha256": "f1091dc2cbcd7d97ef0eac970aab1d3145c9eda665547066ae6bc297fb2535de",
+          "terms": 5,
+          "total_degree": 4
+        }
+      ],
+      "singular_basis_size": 1,
+      "singular_input_sha256": "7ad69fbcb3f42487b6b5eb7f081b15acf4d972610ee95e438ea0d4f1e8331ea2"
+    },
+    {
+      "H1_source": 2,
+      "H2_source": 1,
+      "certificate_kind": "singular_unit_ideal",
+      "common_dual": 1,
+      "degree_pair": [
+        2,
+        3
+      ],
+      "epsilon1": 1,
+      "epsilon2": -1,
+      "linear_pairing": -1,
+      "origin_parent_hessian_determinant": "-16384",
+      "parent_constant_locus_with_ab_nonzero": "empty",
+      "pattern_id": "p1-q2-q1-e+1-e-1",
+      "poisson_bracket_factor": "-6*a*b*L1*L2^2",
+      "poisson_incidence": "h1_dual_hits_h2_source",
+      "probe_equations": [
+        {
+          "factorization": "b*(24*a**2*b - 24*a*b - 2*a + 6*b - 1)",
+          "point": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "sha256": "5a6256eac4321d97aa26b3f24fe7473fa2c93962dd9df9cce5ae2fbfe3e614f0",
+          "terms": 5,
+          "total_degree": 4
+        },
+        {
+          "factorization": "a*b*(12*a*b - 1)",
+          "point": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "sha256": "561bc7bf7956743f4b2bbf28e428847f8f7d6d806b03023e264cd51f29052e9f",
+          "terms": 2,
+          "total_degree": 4
+        },
+        {
+          "factorization": "a*b*(12*a*b + 1)",
+          "point": [
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0
+          ],
+          "sha256": "7ab99ffcf75d735d12bb9781313e9f88397d9b0503398bd47fb9783090853be3",
+          "terms": 2,
+          "total_degree": 4
+        },
+        {
+          "factorization": "b*(6*b - 1)",
+          "point": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "dc125433e69821c8dfa7eacf83ffa42232edf6411b10bba1a5659f19e7edc2c8",
+          "terms": 2,
+          "total_degree": 2
+        },
+        {
+          "factorization": "b*(6*b + 1)",
+          "point": [
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "85c5c82dd30a84fb7f8fd47b6b7be82e64e250ead05e60a2aa14fe76be8a3e86",
+          "terms": 2,
+          "total_degree": 2
+        },
+        {
+          "factorization": "b*(24*a**2*b - 24*a*b + 2*a + 6*b + 1)",
+          "point": [
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0
+          ],
+          "sha256": "8cf76e5923b4079e7eca9cb06d9603298b0e6cd738b647e1800521ca28a8e31f",
+          "terms": 5,
+          "total_degree": 4
+        }
+      ],
+      "singular_basis_size": 1,
+      "singular_input_sha256": "4aca6357bf562acd994ec5236479c3500cc5f2421ebb0eb9fc468de97566e4f8"
+    },
+    {
+      "H1_source": 2,
+      "H2_source": 1,
+      "certificate_kind": "singular_unit_ideal",
+      "common_dual": 1,
+      "degree_pair": [
+        2,
+        3
+      ],
+      "epsilon1": 1,
+      "epsilon2": 1,
+      "linear_pairing": -1,
+      "origin_parent_hessian_determinant": "-16384",
+      "parent_constant_locus_with_ab_nonzero": "empty",
+      "pattern_id": "p1-q2-q1-e+1-e+1",
+      "poisson_bracket_factor": "-6*a*b*L1*L2^2",
+      "poisson_incidence": "h1_dual_hits_h2_source",
+      "probe_equations": [
+        {
+          "factorization": "b*(24*a**2*b + 24*a*b + 2*a + 6*b - 1)",
+          "point": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "sha256": "cdbd4babfa206c5bc5cf1d858d2e1106d0c3eb4598899ac42face6aa3bb31667",
+          "terms": 5,
+          "total_degree": 4
+        },
+        {
+          "factorization": "a*b*(12*a*b + 1)",
+          "point": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "sha256": "7ab99ffcf75d735d12bb9781313e9f88397d9b0503398bd47fb9783090853be3",
+          "terms": 2,
+          "total_degree": 4
+        },
+        {
+          "factorization": "a*b*(12*a*b - 1)",
+          "point": [
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0
+          ],
+          "sha256": "561bc7bf7956743f4b2bbf28e428847f8f7d6d806b03023e264cd51f29052e9f",
+          "terms": 2,
+          "total_degree": 4
+        },
+        {
+          "factorization": "b*(6*b + 1)",
+          "point": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "85c5c82dd30a84fb7f8fd47b6b7be82e64e250ead05e60a2aa14fe76be8a3e86",
+          "terms": 2,
+          "total_degree": 2
+        },
+        {
+          "factorization": "b*(6*b - 1)",
+          "point": [
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "dc125433e69821c8dfa7eacf83ffa42232edf6411b10bba1a5659f19e7edc2c8",
+          "terms": 2,
+          "total_degree": 2
+        },
+        {
+          "factorization": "b*(24*a**2*b + 24*a*b - 2*a + 6*b + 1)",
+          "point": [
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0
+          ],
+          "sha256": "f1091dc2cbcd7d97ef0eac970aab1d3145c9eda665547066ae6bc297fb2535de",
+          "terms": 5,
+          "total_degree": 4
+        }
+      ],
+      "singular_basis_size": 1,
+      "singular_input_sha256": "85d24d3221d68c5ed2936da01ea1e17fa99186be8e0be9fb6c491b993021fd26"
+    },
+    {
+      "H1_source": 0,
+      "H2_source": 2,
+      "certificate_kind": "singular_unit_ideal",
+      "common_dual": 2,
+      "degree_pair": [
+        2,
+        3
+      ],
+      "epsilon1": -1,
+      "epsilon2": -1,
+      "linear_pairing": 1,
+      "origin_parent_hessian_determinant": "-16384",
+      "parent_constant_locus_with_ab_nonzero": "empty",
+      "pattern_id": "p2-q0-q2-e-1-e-1",
+      "poisson_bracket_factor": "6*a*b*L1*L2^2",
+      "poisson_incidence": "h1_dual_hits_h2_source",
+      "probe_equations": [
+        {
+          "factorization": "-a**2*b*(12*a**2*b - 12*a*b - 2*a + 3*b)**2",
+          "point": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "sha256": "fa80902e9c8a99cc70f4ea44ac6ea4edb5ff5e10906da3e57de2953efd075ee5",
+          "terms": 9,
+          "total_degree": 9
+        },
+        {
+          "factorization": "-a**2*b*(6*a*b + 1)*(12*a**2*b + 1)*(2592*a**5*b**3 + 648*a**4*b**2 + 252*a**3*b**2 + 24*a**2*b - 6*a**2 + 11*a*b - 3*a + 1)",
+          "point": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "16293f7450cac9f6f13db956b75e54bee3281e6060b52b4ae03ec6bbcecc9fa9",
+          "terms": 17,
+          "total_degree": 16
+        },
+        {
+          "factorization": "-a**2*b*(6*a*b - 1)*(12*a**2*b - 2*a + 1)*(2592*a**5*b**3 - 1080*a**4*b**2 + 252*a**3*b**2 + 144*a**3*b - 60*a**2*b - 6*a**2 + 11*a*b + 3*a - 1)",
+          "point": [
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "4a57c3675197ae75ad3476d410c640f034c5935dc47579d9b91ba6844adc6987",
+          "terms": 18,
+          "total_degree": 16
+        },
+        {
+          "factorization": "-a**2*b*(12*a**2*b - 12*a*b + 2*a + 3*b)**2",
+          "point": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1
+          ],
+          "sha256": "81878a72297eb5f2cc37e34fb3521c6eab77ec01a5474f355c03fb90d5581902",
+          "terms": 9,
+          "total_degree": 9
+        }
+      ],
+      "singular_basis_size": 1,
+      "singular_input_sha256": "3953922b7c0722ed5bb5468c674837bb70dcd645513786ea06c71fc3e4f8a3db"
+    },
+    {
+      "H1_source": 0,
+      "H2_source": 2,
+      "certificate_kind": "singular_unit_ideal",
+      "common_dual": 2,
+      "degree_pair": [
+        2,
+        3
+      ],
+      "epsilon1": -1,
+      "epsilon2": 1,
+      "linear_pairing": 1,
+      "origin_parent_hessian_determinant": "-16384",
+      "parent_constant_locus_with_ab_nonzero": "empty",
+      "pattern_id": "p2-q0-q2-e-1-e+1",
+      "poisson_bracket_factor": "6*a*b*L1*L2^2",
+      "poisson_incidence": "h1_dual_hits_h2_source",
+      "probe_equations": [
+        {
+          "factorization": "a**2*b*(12*a**2*b + 12*a*b + 2*a + 3*b)**2",
+          "point": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "sha256": "8362344584c796a98f0b47a072205c51ec961a79ef2d7ff72603e96bd48df804",
+          "terms": 9,
+          "total_degree": 9
+        },
+        {
+          "factorization": "-a**2*b*(6*a*b - 1)*(12*a**2*b - 2*a - 1)*(2592*a**5*b**3 - 1080*a**4*b**2 - 252*a**3*b**2 + 144*a**3*b + 60*a**2*b - 6*a**2 + 11*a*b - 3*a - 1)",
+          "point": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "5c9310ed85c44faf3d307ee66323f0ef4d70160427a082f710c79a067208cbf8",
+          "terms": 18,
+          "total_degree": 16
+        },
+        {
+          "factorization": "-a**2*b*(6*a*b + 1)*(12*a**2*b - 1)*(2592*a**5*b**3 + 648*a**4*b**2 - 252*a**3*b**2 - 24*a**2*b - 6*a**2 + 11*a*b + 3*a + 1)",
+          "point": [
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "9c0bb657416baa0a4ee38e1deee4ae0b20ded663ac9c635b45b7f1d4a0d87801",
+          "terms": 17,
+          "total_degree": 16
+        },
+        {
+          "factorization": "a**2*b*(12*a**2*b + 12*a*b - 2*a + 3*b)**2",
+          "point": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1
+          ],
+          "sha256": "10ea136f884ca9cc38b8f5b60cc182ef8b6e011b567920890a0df4b17329e995",
+          "terms": 9,
+          "total_degree": 9
+        }
+      ],
+      "singular_basis_size": 1,
+      "singular_input_sha256": "d44f74f79c08577323e78d41d9e462409914a90d0ba46bf56254ba1ed4c5562f"
+    },
+    {
+      "H1_source": 0,
+      "H2_source": 2,
+      "certificate_kind": "singular_unit_ideal",
+      "common_dual": 2,
+      "degree_pair": [
+        2,
+        3
+      ],
+      "epsilon1": 1,
+      "epsilon2": -1,
+      "linear_pairing": -1,
+      "origin_parent_hessian_determinant": "-16384",
+      "parent_constant_locus_with_ab_nonzero": "empty",
+      "pattern_id": "p2-q0-q2-e+1-e-1",
+      "poisson_bracket_factor": "-6*a*b*L1*L2^2",
+      "poisson_incidence": "h1_dual_hits_h2_source",
+      "probe_equations": [
+        {
+          "factorization": "-a**2*b*(12*a**2*b - 12*a*b - 2*a + 3*b)**2",
+          "point": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "sha256": "fa80902e9c8a99cc70f4ea44ac6ea4edb5ff5e10906da3e57de2953efd075ee5",
+          "terms": 9,
+          "total_degree": 9
+        },
+        {
+          "factorization": "-a**2*b*(6*a*b - 1)*(12*a**2*b - 2*a + 1)*(2592*a**5*b**3 - 1080*a**4*b**2 + 252*a**3*b**2 + 144*a**3*b - 60*a**2*b - 6*a**2 + 11*a*b + 3*a - 1)",
+          "point": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "4a57c3675197ae75ad3476d410c640f034c5935dc47579d9b91ba6844adc6987",
+          "terms": 18,
+          "total_degree": 16
+        },
+        {
+          "factorization": "-a**2*b*(6*a*b + 1)*(12*a**2*b + 1)*(2592*a**5*b**3 + 648*a**4*b**2 + 252*a**3*b**2 + 24*a**2*b - 6*a**2 + 11*a*b - 3*a + 1)",
+          "point": [
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "16293f7450cac9f6f13db956b75e54bee3281e6060b52b4ae03ec6bbcecc9fa9",
+          "terms": 17,
+          "total_degree": 16
+        },
+        {
+          "factorization": "-a**2*b*(12*a**2*b - 12*a*b + 2*a + 3*b)**2",
+          "point": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1
+          ],
+          "sha256": "81878a72297eb5f2cc37e34fb3521c6eab77ec01a5474f355c03fb90d5581902",
+          "terms": 9,
+          "total_degree": 9
+        }
+      ],
+      "singular_basis_size": 1,
+      "singular_input_sha256": "d1df3fd5abc15934e79dd0bd0995b7a52675fab20d906070f8297fd55d7c11a7"
+    },
+    {
+      "H1_source": 0,
+      "H2_source": 2,
+      "certificate_kind": "singular_unit_ideal",
+      "common_dual": 2,
+      "degree_pair": [
+        2,
+        3
+      ],
+      "epsilon1": 1,
+      "epsilon2": 1,
+      "linear_pairing": -1,
+      "origin_parent_hessian_determinant": "-16384",
+      "parent_constant_locus_with_ab_nonzero": "empty",
+      "pattern_id": "p2-q0-q2-e+1-e+1",
+      "poisson_bracket_factor": "-6*a*b*L1*L2^2",
+      "poisson_incidence": "h1_dual_hits_h2_source",
+      "probe_equations": [
+        {
+          "factorization": "a**2*b*(12*a**2*b + 12*a*b + 2*a + 3*b)**2",
+          "point": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "sha256": "8362344584c796a98f0b47a072205c51ec961a79ef2d7ff72603e96bd48df804",
+          "terms": 9,
+          "total_degree": 9
+        },
+        {
+          "factorization": "-a**2*b*(6*a*b + 1)*(12*a**2*b - 1)*(2592*a**5*b**3 + 648*a**4*b**2 - 252*a**3*b**2 - 24*a**2*b - 6*a**2 + 11*a*b + 3*a + 1)",
+          "point": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "9c0bb657416baa0a4ee38e1deee4ae0b20ded663ac9c635b45b7f1d4a0d87801",
+          "terms": 17,
+          "total_degree": 16
+        },
+        {
+          "factorization": "-a**2*b*(6*a*b - 1)*(12*a**2*b - 2*a - 1)*(2592*a**5*b**3 - 1080*a**4*b**2 - 252*a**3*b**2 + 144*a**3*b + 60*a**2*b - 6*a**2 + 11*a*b - 3*a - 1)",
+          "point": [
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "5c9310ed85c44faf3d307ee66323f0ef4d70160427a082f710c79a067208cbf8",
+          "terms": 18,
+          "total_degree": 16
+        },
+        {
+          "factorization": "a**2*b*(12*a**2*b + 12*a*b - 2*a + 3*b)**2",
+          "point": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1
+          ],
+          "sha256": "10ea136f884ca9cc38b8f5b60cc182ef8b6e011b567920890a0df4b17329e995",
+          "terms": 9,
+          "total_degree": 9
+        }
+      ],
+      "singular_basis_size": 1,
+      "singular_input_sha256": "4aa11679073abb9959f4a785c3119c923cb74811571be8d03fc1d591fce07459"
+    },
+    {
+      "H1_source": 1,
+      "H2_source": 2,
+      "certificate_kind": "singular_unit_ideal",
+      "common_dual": 2,
+      "degree_pair": [
+        2,
+        3
+      ],
+      "epsilon1": -1,
+      "epsilon2": -1,
+      "linear_pairing": 1,
+      "origin_parent_hessian_determinant": "-16384",
+      "parent_constant_locus_with_ab_nonzero": "empty",
+      "pattern_id": "p2-q1-q2-e-1-e-1",
+      "poisson_bracket_factor": "6*a*b*L1*L2^2",
+      "poisson_incidence": "h1_dual_hits_h2_source",
+      "probe_equations": [
+        {
+          "factorization": "-b*(24*a**2*b - 22*a - 1)*(71663616*a**8*b**4 - 83607552*a**7*b**3 - 30855168*a**6*b**3 - 53747712*a**6*b**2 + 42135552*a**5*b**2 - 9621504*a**5*b + 4440960*a**4*b**2 + 16616448*a**4*b - 552960*a**4 - 6914304*a**3*b + 1456128*a**3 - 215424*a**2*b - 1275744*a**2 + 371340*a + 277)",
+          "point": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "f6afe3db1a6eba6f5d6587d99afe12f6d1a090aabf8ff6fbb76cbe7663950895",
+          "terms": 21,
+          "total_degree": 16
+        },
+        {
+          "factorization": "-b*(3*b - 1)*(6*b + 1)*(162*b**3 - 45*b**2 + 8*b - 2)",
+          "point": [
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "sha256": "ec216f87dd97377a140dcde322a56364d5eb581315830cd3c8984c24d5404b7b",
+          "terms": 6,
+          "total_degree": 6
+        },
+        {
+          "factorization": "-b*(12*a**2*b - 12*a*b - 2*a + 3*b)*(24*a**2*b - 24*a*b + 4*a + 6*b + 1)*(31104*a**6*b**3 - 93312*a**5*b**3 + 116640*a**4*b**3 + 432*a**4*b**2 - 2592*a**4*b - 77760*a**3*b**3 - 864*a**3*b**2 + 3744*a**3*b + 288*a**3 + 29160*a**2*b**3 + 648*a**2*b**2 - 1920*a**2*b - 204*a**2 - 5832*a*b**3 - 216*a*b**2 + 408*a*b + 30*a + 486*b**3 + 27*b**2 - 30*b - 5)",
+          "point": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "sha256": "f739020854f7de8a2cb25244afa4c4075458a8764c0bacb06d91ec4fabed57b0",
+          "terms": 49,
+          "total_degree": 16
+        },
+        {
+          "factorization": "-b*(1944*a**4*b**2 + 612*a**3*b - 1764*a**2*b + 48*a**2 - 285*a + 386)",
+          "point": [
+            0,
+            1,
+            0,
+            1,
+            0,
+            0
+          ],
+          "sha256": "2b4383f3c318146cc28fdce88ff0ad51d43ca5476c5addf414790ed02b7b7d89",
+          "terms": 6,
+          "total_degree": 7
+        },
+        {
+          "factorization": "-b*(3*b - 1)**2",
+          "point": [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0
+          ],
+          "sha256": "f48970d748455b4da58b6b4e1e3abb68551ed21136ce6e426d50957677cb4b57",
+          "terms": 3,
+          "total_degree": 3
+        },
+        {
+          "factorization": "-b*(12*a**2*b - 12*a*b - 2*a + 3*b)**2",
+          "point": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            1
+          ],
+          "sha256": "8f202bac6d53596c4e976b03b7c314a4080570461b8aece51af727432b636093",
+          "terms": 9,
+          "total_degree": 7
+        }
+      ],
+      "singular_basis_size": 1,
+      "singular_input_sha256": "b050c31b023e609235eabd4c1ece5463f7e7b9f67c80dab42493f2d7a716950d"
+    },
+    {
+      "H1_source": 1,
+      "H2_source": 2,
+      "certificate_kind": "singular_unit_ideal",
+      "common_dual": 2,
+      "degree_pair": [
+        2,
+        3
+      ],
+      "epsilon1": -1,
+      "epsilon2": 1,
+      "linear_pairing": 1,
+      "origin_parent_hessian_determinant": "-16384",
+      "parent_constant_locus_with_ab_nonzero": "empty",
+      "pattern_id": "p2-q1-q2-e-1-e+1",
+      "poisson_bracket_factor": "6*a*b*L1*L2^2",
+      "poisson_incidence": "h1_dual_hits_h2_source",
+      "probe_equations": [
+        {
+          "factorization": "-b*(24*a**2*b - 26*a + 1)*(71663616*a**8*b**4 - 155271168*a**7*b**3 + 30855168*a**6*b**3 + 65691648*a**6*b**2 - 62705664*a**5*b**2 - 10285056*a**5*b + 4440960*a**4*b**2 + 18330624*a**4*b + 552960*a**4 - 8398080*a**3*b - 1456128*a**3 + 215424*a**2*b + 1276320*a**2 - 372468*a + 277)",
+          "point": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "d822ec08a45437bcdf1a02ada0590f0fce7b68017e472b5f947ff8a9f6bd15f1",
+          "terms": 21,
+          "total_degree": 16
+        },
+        {
+          "factorization": "-b*(3*b + 1)*(6*b - 1)*(162*b**3 + 45*b**2 + 8*b + 2)",
+          "point": [
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "sha256": "6891645657e12ce982300007278188284459e7021d7a3e23eb3f838e2c10c69c",
+          "terms": 6,
+          "total_degree": 6
+        },
+        {
+          "factorization": "-b*(12*a**2*b + 12*a*b + 2*a + 3*b)*(24*a**2*b + 24*a*b + 8*a + 6*b - 3)*(31104*a**6*b**3 + 93312*a**5*b**3 + 20736*a**5*b**2 + 116640*a**4*b**3 + 35856*a**4*b**2 + 4320*a**4*b + 77760*a**3*b**3 + 19872*a**3*b**2 + 2160*a**3*b + 288*a**3 + 29160*a**2*b**3 + 1944*a**2*b**2 - 696*a**2*b - 204*a**2 + 5832*a*b**3 - 1512*a*b**2 - 156*a*b + 54*a + 486*b**3 - 351*b**2 + 96*b - 5)",
+          "point": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "sha256": "eeaeeae58f8b2f383528ddb469bb34f82c93cf7860bad16ee3d8c5dd3a42c607",
+          "terms": 50,
+          "total_degree": 16
+        },
+        {
+          "factorization": "b*(1944*a**4*b**2 - 612*a**3*b + 1296*a**2*b + 48*a**2 - 201*a + 208)",
+          "point": [
+            0,
+            1,
+            0,
+            1,
+            0,
+            0
+          ],
+          "sha256": "1b50a119a3f399437fac28b72fc19d4a60b92330785fe4bc7964875b9b8434a9",
+          "terms": 6,
+          "total_degree": 7
+        },
+        {
+          "factorization": "b*(3*b + 1)**2",
+          "point": [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0
+          ],
+          "sha256": "5bce3bd3454b6e8e78fdf0db5f3403ed691affe89a1eaa8ba46fef3a8ff339bf",
+          "terms": 3,
+          "total_degree": 3
+        },
+        {
+          "factorization": "b*(12*a**2*b + 12*a*b + 2*a + 3*b)**2",
+          "point": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            1
+          ],
+          "sha256": "a2317b8958a7aab032f81aa40cb5628eeb86361c48601f86ac89e8008210941a",
+          "terms": 9,
+          "total_degree": 7
+        }
+      ],
+      "singular_basis_size": 1,
+      "singular_input_sha256": "50d648b8ef7d250c9b0df64c3cee032114cbff1a7546df21f294f996e8ad8f5b"
+    },
+    {
+      "H1_source": 1,
+      "H2_source": 2,
+      "certificate_kind": "singular_unit_ideal",
+      "common_dual": 2,
+      "degree_pair": [
+        2,
+        3
+      ],
+      "epsilon1": 1,
+      "epsilon2": -1,
+      "linear_pairing": -1,
+      "origin_parent_hessian_determinant": "-16384",
+      "parent_constant_locus_with_ab_nonzero": "empty",
+      "pattern_id": "p2-q1-q2-e+1-e-1",
+      "poisson_bracket_factor": "-6*a*b*L1*L2^2",
+      "poisson_incidence": "h1_dual_hits_h2_source",
+      "probe_equations": [
+        {
+          "factorization": "-b*(24*a**2*b - 26*a - 1)*(71663616*a**8*b**4 - 155271168*a**7*b**3 - 30855168*a**6*b**3 + 65691648*a**6*b**2 + 62705664*a**5*b**2 - 10285056*a**5*b + 4440960*a**4*b**2 - 18330624*a**4*b + 552960*a**4 - 8398080*a**3*b + 1456128*a**3 - 215424*a**2*b + 1276320*a**2 + 372468*a + 277)",
+          "point": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "7a57766a19ffa467b1e245fd1dbdfadeae185c8fcc450e0d38195170a0b80617",
+          "terms": 21,
+          "total_degree": 16
+        },
+        {
+          "factorization": "-b*(3*b - 1)*(6*b + 1)*(162*b**3 - 45*b**2 + 8*b - 2)",
+          "point": [
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "sha256": "ec216f87dd97377a140dcde322a56364d5eb581315830cd3c8984c24d5404b7b",
+          "terms": 6,
+          "total_degree": 6
+        },
+        {
+          "factorization": "-b*(12*a**2*b - 12*a*b - 2*a + 3*b)*(24*a**2*b - 24*a*b - 8*a + 6*b + 1)*(31104*a**6*b**3 - 93312*a**5*b**3 - 20736*a**5*b**2 + 116640*a**4*b**3 + 41904*a**4*b**2 + 4320*a**4*b - 77760*a**3*b**3 - 31968*a**3*b**2 - 4752*a**3*b - 288*a**3 + 29160*a**2*b**3 + 11016*a**2*b**2 + 1392*a**2*b + 60*a**2 - 5832*a*b**3 - 1512*a*b**2 + 12*a*b + 30*a + 486*b**3 + 27*b**2 - 30*b - 5)",
+          "point": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "sha256": "531545920604777bb7acc17658b44a7da1ee5f6cd809f77a047e8bd10e3f5bca",
+          "terms": 50,
+          "total_degree": 16
+        },
+        {
+          "factorization": "-b*(1944*a**4*b**2 - 684*a**3*b - 1764*a**2*b + 60*a**2 + 309*a + 386)",
+          "point": [
+            0,
+            1,
+            0,
+            1,
+            0,
+            0
+          ],
+          "sha256": "db6369eb769c6c9ddb8399f1ac3d3fc94ad31fb65b814150231486fe30bb871c",
+          "terms": 6,
+          "total_degree": 7
+        },
+        {
+          "factorization": "-b*(3*b - 1)**2",
+          "point": [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0
+          ],
+          "sha256": "f48970d748455b4da58b6b4e1e3abb68551ed21136ce6e426d50957677cb4b57",
+          "terms": 3,
+          "total_degree": 3
+        },
+        {
+          "factorization": "-b*(12*a**2*b - 12*a*b - 2*a + 3*b)**2",
+          "point": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            1
+          ],
+          "sha256": "8f202bac6d53596c4e976b03b7c314a4080570461b8aece51af727432b636093",
+          "terms": 9,
+          "total_degree": 7
+        }
+      ],
+      "singular_basis_size": 1,
+      "singular_input_sha256": "e900fafea4291bbe90fd90204569fb3eb5751d46585b3fbfb5cd2f88e279494f"
+    },
+    {
+      "H1_source": 1,
+      "H2_source": 2,
+      "certificate_kind": "singular_unit_ideal",
+      "common_dual": 2,
+      "degree_pair": [
+        2,
+        3
+      ],
+      "epsilon1": 1,
+      "epsilon2": 1,
+      "linear_pairing": -1,
+      "origin_parent_hessian_determinant": "-16384",
+      "parent_constant_locus_with_ab_nonzero": "empty",
+      "pattern_id": "p2-q1-q2-e+1-e+1",
+      "poisson_bracket_factor": "-6*a*b*L1*L2^2",
+      "poisson_incidence": "h1_dual_hits_h2_source",
+      "probe_equations": [
+        {
+          "factorization": "-b*(24*a**2*b - 22*a + 1)*(71663616*a**8*b**4 - 83607552*a**7*b**3 + 30855168*a**6*b**3 - 53747712*a**6*b**2 - 42135552*a**5*b**2 - 9621504*a**5*b + 4440960*a**4*b**2 - 16616448*a**4*b - 552960*a**4 - 6914304*a**3*b - 1456128*a**3 + 215424*a**2*b - 1275744*a**2 - 371340*a + 277)",
+          "point": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "9a247a62e7abef64d192d49768a874dddb17e785392e02654f03b50b601cfe5c",
+          "terms": 21,
+          "total_degree": 16
+        },
+        {
+          "factorization": "-b*(3*b + 1)*(6*b - 1)*(162*b**3 + 45*b**2 + 8*b + 2)",
+          "point": [
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "sha256": "6891645657e12ce982300007278188284459e7021d7a3e23eb3f838e2c10c69c",
+          "terms": 6,
+          "total_degree": 6
+        },
+        {
+          "factorization": "-b*(12*a**2*b + 12*a*b + 2*a + 3*b)*(24*a**2*b + 24*a*b - 4*a + 6*b - 3)*(31104*a**6*b**3 + 93312*a**5*b**3 + 116640*a**4*b**3 - 5616*a**4*b**2 - 2592*a**4*b + 77760*a**3*b**3 - 11232*a**3*b**2 - 3168*a**3*b - 288*a**3 + 29160*a**2*b**3 - 8424*a**2*b**2 - 840*a**2*b + 60*a**2 + 5832*a*b**3 - 2808*a*b**2 + 240*a*b + 54*a + 486*b**3 - 351*b**2 + 96*b - 5)",
+          "point": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "sha256": "85266e3b8464d5daa43b5a59084ba3eab17b2fde9b3473bc926da837ced4da03",
+          "terms": 49,
+          "total_degree": 16
+        },
+        {
+          "factorization": "b*(1944*a**4*b**2 + 684*a**3*b + 1296*a**2*b + 60*a**2 + 225*a + 208)",
+          "point": [
+            0,
+            1,
+            0,
+            1,
+            0,
+            0
+          ],
+          "sha256": "a9825cbe03f95f12a79bad52b9fe0e52e4671f2022ab7cb5bd2c494836c515b8",
+          "terms": 6,
+          "total_degree": 7
+        },
+        {
+          "factorization": "b*(3*b + 1)**2",
+          "point": [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0
+          ],
+          "sha256": "5bce3bd3454b6e8e78fdf0db5f3403ed691affe89a1eaa8ba46fef3a8ff339bf",
+          "terms": 3,
+          "total_degree": 3
+        },
+        {
+          "factorization": "b*(12*a**2*b + 12*a*b + 2*a + 3*b)**2",
+          "point": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            1
+          ],
+          "sha256": "a2317b8958a7aab032f81aa40cb5628eeb86361c48601f86ac89e8008210941a",
+          "terms": 9,
+          "total_degree": 7
+        }
+      ],
+      "singular_basis_size": 1,
+      "singular_input_sha256": "070e5f7a7c2906bc88c71ba62c667408e9139f1598f0d4b61052c3fdfe11e706"
+    },
+    {
+      "H1_source": 2,
+      "H2_source": 0,
+      "certificate_kind": "localized_monomial",
+      "common_dual": 2,
+      "degree_pair": [
+        2,
+        3
+      ],
+      "epsilon1": -1,
+      "epsilon2": -1,
+      "linear_pairing": -1,
+      "origin_parent_hessian_determinant": "-24576*b - 16384",
+      "parent_constant_locus_with_ab_nonzero": "empty",
+      "pattern_id": "p2-q2-q0-e-1-e-1",
+      "poisson_bracket_factor": "-6*a*b*L1*L2^2",
+      "poisson_incidence": "h1_source_hits_h2_dual",
+      "probe_equations": [
+        {
+          "factorization": "-b",
+          "point": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "sha256": "4fc0bdb51ffc8cfdcaaee067eb264b8a5c646176cf870be17c2e647fbb2cb7f4",
+          "terms": 1,
+          "total_degree": 1
+        }
+      ]
+    },
+    {
+      "H1_source": 2,
+      "H2_source": 0,
+      "certificate_kind": "localized_monomial",
+      "common_dual": 2,
+      "degree_pair": [
+        2,
+        3
+      ],
+      "epsilon1": -1,
+      "epsilon2": 1,
+      "linear_pairing": 1,
+      "origin_parent_hessian_determinant": "24576*b - 16384",
+      "parent_constant_locus_with_ab_nonzero": "empty",
+      "pattern_id": "p2-q2-q0-e-1-e+1",
+      "poisson_bracket_factor": "6*a*b*L1*L2^2",
+      "poisson_incidence": "h1_source_hits_h2_dual",
+      "probe_equations": [
+        {
+          "factorization": "-b",
+          "point": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "sha256": "4fc0bdb51ffc8cfdcaaee067eb264b8a5c646176cf870be17c2e647fbb2cb7f4",
+          "terms": 1,
+          "total_degree": 1
+        }
+      ]
+    },
+    {
+      "H1_source": 2,
+      "H2_source": 0,
+      "certificate_kind": "localized_monomial",
+      "common_dual": 2,
+      "degree_pair": [
+        2,
+        3
+      ],
+      "epsilon1": 1,
+      "epsilon2": -1,
+      "linear_pairing": -1,
+      "origin_parent_hessian_determinant": "-24576*b - 16384",
+      "parent_constant_locus_with_ab_nonzero": "empty",
+      "pattern_id": "p2-q2-q0-e+1-e-1",
+      "poisson_bracket_factor": "-6*a*b*L1*L2^2",
+      "poisson_incidence": "h1_source_hits_h2_dual",
+      "probe_equations": [
+        {
+          "factorization": "-b",
+          "point": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "sha256": "4fc0bdb51ffc8cfdcaaee067eb264b8a5c646176cf870be17c2e647fbb2cb7f4",
+          "terms": 1,
+          "total_degree": 1
+        }
+      ]
+    },
+    {
+      "H1_source": 2,
+      "H2_source": 0,
+      "certificate_kind": "localized_monomial",
+      "common_dual": 2,
+      "degree_pair": [
+        2,
+        3
+      ],
+      "epsilon1": 1,
+      "epsilon2": 1,
+      "linear_pairing": 1,
+      "origin_parent_hessian_determinant": "24576*b - 16384",
+      "parent_constant_locus_with_ab_nonzero": "empty",
+      "pattern_id": "p2-q2-q0-e+1-e+1",
+      "poisson_bracket_factor": "6*a*b*L1*L2^2",
+      "poisson_incidence": "h1_source_hits_h2_dual",
+      "probe_equations": [
+        {
+          "factorization": "-b",
+          "point": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "sha256": "4fc0bdb51ffc8cfdcaaee067eb264b8a5c646176cf870be17c2e647fbb2cb7f4",
+          "terms": 1,
+          "total_degree": 1
+        }
+      ]
+    },
+    {
+      "H1_source": 2,
+      "H2_source": 1,
+      "certificate_kind": "singular_unit_ideal",
+      "common_dual": 2,
+      "degree_pair": [
+        2,
+        3
+      ],
+      "epsilon1": -1,
+      "epsilon2": -1,
+      "linear_pairing": -1,
+      "origin_parent_hessian_determinant": "-16384",
+      "parent_constant_locus_with_ab_nonzero": "empty",
+      "pattern_id": "p2-q2-q1-e-1-e-1",
+      "poisson_bracket_factor": "-6*a*b*L1*L2^2",
+      "poisson_incidence": "h1_source_hits_h2_dual",
+      "probe_equations": [
+        {
+          "factorization": "b*(3*b - 4)*(3*b - 2)",
+          "point": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "13fb65722dae072f593b2c01b7a6e4bdc76fbcce0b661cdabbffb4fae9b43bbd",
+          "terms": 3,
+          "total_degree": 3
+        },
+        {
+          "factorization": "b*(3*b - 4)*(3*b + 2)",
+          "point": [
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "2cce37abfdd36813407b30be244527fa3610734e9251fa825f65a0fd2e3d4438",
+          "terms": 3,
+          "total_degree": 3
+        },
+        {
+          "factorization": "-b*(36*b - 11)*(466560*b**4 - 819072*b**3 + 478512*b**2 - 92988*b + 7)",
+          "point": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "9f3d2bcca7695d91675f9f5b57647a42434c3711dd2c22faf5d7a39a8c864172",
+          "terms": 6,
+          "total_degree": 6
+        },
+        {
+          "factorization": "-b*(12*a**2*b + 2*a - 1)*(72*a**2*b + 4*a - 3)*(31104*a**6*b**3 + 7776*a**5*b**2 - 2808*a**4*b**2 - 288*a**3*b - 72*a**3 + 18*a**2*b + 30*a**2 - 2*a - 1)",
+          "point": [
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "sha256": "890fc2ef563454529dfa593ee129df11faa215f38e3324e830599d96f3763321",
+          "terms": 20,
+          "total_degree": 16
+        },
+        {
+          "factorization": "-b*(12*a**2*b + 12*a*b - 2*a + 3*b)*(72*a**2*b + 72*a*b - 4*a + 18*b + 1)*(62208*a**6*b**3 + 186624*a**5*b**3 - 15552*a**5*b**2 + 233280*a**4*b**3 - 23760*a**4*b**2 + 155520*a**3*b**3 - 8640*a**3*b**2 - 1152*a**3*b + 144*a**3 + 58320*a**2*b**3 + 3240*a**2*b**2 - 900*a**2*b - 12*a**2 + 11664*a*b**3 + 2700*a*b**2 - 36*a*b - 32*a + 972*b**3 + 459*b**2 + 63*b + 3)",
+          "point": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "sha256": "4feb68dc1d3e049aea6871bf694939edd36d5751795c972f0d36d08a0c5e68ab",
+          "terms": 49,
+          "total_degree": 16
+        },
+        {
+          "factorization": "b*(144*a**4*b**2 + 288*a**3*b**2 + 24*a**3*b + 216*a**2*b**2 - 60*a**2*b + 72*a*b**2 - 78*a*b - 6*a + 9*b**2 - 21*b + 10)",
+          "point": [
+            0,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "sha256": "0a079bdf442fab3ea65e85749a70a777fe928197ef7c313fb2aed46c706dfeaa",
+          "terms": 11,
+          "total_degree": 7
+        },
+        {
+          "factorization": "-b*(72*b**2 - 237*b + 190)",
+          "point": [
+            0,
+            1,
+            0,
+            1,
+            0,
+            0
+          ],
+          "sha256": "35044914b5a4bc845d4d892ebc87dd952fbe5ebff994b4bec763c162f1459a51",
+          "terms": 3,
+          "total_degree": 3
+        },
+        {
+          "factorization": "b*(b - 1)*(3*b - 4)",
+          "point": [
+            0,
+            1,
+            0,
+            0,
+            1,
+            0
+          ],
+          "sha256": "76860e030f530d2684d74a6572cf74521c4654cce92371d55d935fde31e5219a",
+          "terms": 3,
+          "total_degree": 3
+        },
+        {
+          "factorization": "b*(4*a**2*b - 1)*(12*a**2*b - 2*a - 3)",
+          "point": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "sha256": "49bd483bad9f2b1ba91cd4da6d8c9df7072c162672f718db2b759cb037d0aa6f",
+          "terms": 5,
+          "total_degree": 7
+        },
+        {
+          "factorization": "-b*(12*a**2*b + 2*a - 1)*(108*a**2*b + 18*a - 7)",
+          "point": [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0
+          ],
+          "sha256": "71fe6fd060a3d7bd8ded8dbd16536ae484c5ba16142cad3de20a4a2c04355490",
+          "terms": 6,
+          "total_degree": 7
+        },
+        {
+          "factorization": "-b*(12*a**2*b + 12*a*b - 2*a + 3*b)*(108*a**2*b + 108*a*b - 18*a + 27*b + 2)",
+          "point": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            1
+          ],
+          "sha256": "ea792e1ff1b446147fec50e9970e145aeb20af377f506c17ad7458c7cfa6c477",
+          "terms": 11,
+          "total_degree": 7
+        }
+      ],
+      "singular_basis_size": 1,
+      "singular_input_sha256": "ed58093b95c73120fd41a40f22ff6dc01f5dcc2511ce3bce91ef566a6a25a08c"
+    },
+    {
+      "H1_source": 2,
+      "H2_source": 1,
+      "certificate_kind": "singular_unit_ideal",
+      "common_dual": 2,
+      "degree_pair": [
+        2,
+        3
+      ],
+      "epsilon1": -1,
+      "epsilon2": 1,
+      "linear_pairing": 1,
+      "origin_parent_hessian_determinant": "-16384",
+      "parent_constant_locus_with_ab_nonzero": "empty",
+      "pattern_id": "p2-q2-q1-e-1-e+1",
+      "poisson_bracket_factor": "6*a*b*L1*L2^2",
+      "poisson_incidence": "h1_source_hits_h2_dual",
+      "probe_equations": [
+        {
+          "factorization": "-b*(3*b + 2)*(3*b + 4)",
+          "point": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "ac688d0fbae43d824a2a2cde214812bebf00f802ae491f18c6d337474e2b5ed5",
+          "terms": 3,
+          "total_degree": 3
+        },
+        {
+          "factorization": "-b*(3*b - 2)*(3*b + 4)",
+          "point": [
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "5416814d692ca84c6f8105cc0091b034d460fc013fdb58a82eb595ff100c5be4",
+          "terms": 3,
+          "total_degree": 3
+        },
+        {
+          "factorization": "-b*(36*b + 11)*(466560*b**4 + 819072*b**3 + 478512*b**2 + 92988*b + 7)",
+          "point": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "01dea8c3969eb52a58e9a5a0343636bffb6a8cd3683e21a1bed4d898aac83784",
+          "terms": 6,
+          "total_degree": 6
+        },
+        {
+          "factorization": "-b*(12*a**2*b - 2*a + 1)*(72*a**2*b - 8*a + 3)*(31104*a**6*b**3 - 12960*a**5*b**2 + 2808*a**4*b**2 + 1728*a**4*b - 648*a**3*b - 72*a**3 + 18*a**2*b + 30*a**2 - 2*a + 1)",
+          "point": [
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "sha256": "65f50f3bca505269edc35d75ece294515e69cb767120005e4bae9282cb7dd52f",
+          "terms": 21,
+          "total_degree": 16
+        },
+        {
+          "factorization": "-b*(12*a**2*b + 12*a*b + 2*a + 3*b)*(72*a**2*b + 72*a*b + 8*a + 18*b + 1)*(62208*a**6*b**3 + 186624*a**5*b**3 + 25920*a**5*b**2 + 233280*a**4*b**3 + 49680*a**4*b**2 + 3456*a**4*b + 155520*a**3*b**3 + 34560*a**3*b**2 + 3024*a**3*b + 144*a**3 + 58320*a**2*b**3 + 9720*a**2*b**2 + 180*a**2*b - 12*a**2 + 11664*a*b**3 + 540*a*b**2 - 360*a*b - 32*a + 972*b**3 - 135*b**2 - 63*b + 7)",
+          "point": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "sha256": "a99f4b8e3fc726980090d61d522aa95bc4aaf97a3ae04a96d272c02fce30eb01",
+          "terms": 50,
+          "total_degree": 16
+        },
+        {
+          "factorization": "-b*(144*a**4*b**2 - 288*a**3*b**2 - 24*a**3*b + 216*a**2*b**2 + 108*a**2*b - 72*a*b**2 - 90*a*b - 2*a + 9*b**2 + 21*b + 10)",
+          "point": [
+            0,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "sha256": "42bb2b933a5c2eeba836075bd242d02efc15eb0e1b46e8c8839a82450eb2b781",
+          "terms": 11,
+          "total_degree": 7
+        },
+        {
+          "factorization": "-b*(3*b + 1)*(3*b + 4)",
+          "point": [
+            0,
+            1,
+            0,
+            0,
+            1,
+            0
+          ],
+          "sha256": "59439a2d5cb3ff4b89793263e5ba306da1c01b5c8cdcf53513455c924e3be0e3",
+          "terms": 3,
+          "total_degree": 3
+        },
+        {
+          "factorization": "-b*(144*a**4*b**2 + 576*a**3*b**2 + 24*a**3*b + 864*a**2*b**2 + 120*a**2*b + 576*a*b**2 + 168*a*b + 2*a + 144*b**2 + 72*b + 7)",
+          "point": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "sha256": "64f64729be8b09360bedfbd4fcd1c2a3be51dc09299a9170ef2ccb1d3f51768d",
+          "terms": 11,
+          "total_degree": 7
+        },
+        {
+          "factorization": "b*(12*a**2*b - 2*a + 1)*(108*a**2*b - 18*a + 11)",
+          "point": [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0
+          ],
+          "sha256": "bb8d21ab4d78268df5dae75833d5ed499e1af187fea3ef438cd4216c14410971",
+          "terms": 6,
+          "total_degree": 7
+        },
+        {
+          "factorization": "b*(12*a**2*b + 12*a*b + 2*a + 3*b)*(108*a**2*b + 108*a*b + 18*a + 27*b + 2)",
+          "point": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            1
+          ],
+          "sha256": "797956ff0208c3aeea502375801a32779a23528347cc69b1e74b95762e2a5d0d",
+          "terms": 11,
+          "total_degree": 7
+        }
+      ],
+      "singular_basis_size": 1,
+      "singular_input_sha256": "5e978f018a4e3a5277757324388811509a0e5fbd8539957e77fcc3ceb492e28c"
+    },
+    {
+      "H1_source": 2,
+      "H2_source": 1,
+      "certificate_kind": "singular_unit_ideal",
+      "common_dual": 2,
+      "degree_pair": [
+        2,
+        3
+      ],
+      "epsilon1": 1,
+      "epsilon2": -1,
+      "linear_pairing": -1,
+      "origin_parent_hessian_determinant": "-16384",
+      "parent_constant_locus_with_ab_nonzero": "empty",
+      "pattern_id": "p2-q2-q1-e+1-e-1",
+      "poisson_bracket_factor": "-6*a*b*L1*L2^2",
+      "poisson_incidence": "h1_source_hits_h2_dual",
+      "probe_equations": [
+        {
+          "factorization": "b*(3*b - 4)*(3*b - 2)",
+          "point": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "13fb65722dae072f593b2c01b7a6e4bdc76fbcce0b661cdabbffb4fae9b43bbd",
+          "terms": 3,
+          "total_degree": 3
+        },
+        {
+          "factorization": "b*(3*b - 4)*(3*b + 2)",
+          "point": [
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "2cce37abfdd36813407b30be244527fa3610734e9251fa825f65a0fd2e3d4438",
+          "terms": 3,
+          "total_degree": 3
+        },
+        {
+          "factorization": "-b*(36*b - 11)*(466560*b**4 - 819072*b**3 + 478512*b**2 - 92988*b + 7)",
+          "point": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "9f3d2bcca7695d91675f9f5b57647a42434c3711dd2c22faf5d7a39a8c864172",
+          "terms": 6,
+          "total_degree": 6
+        },
+        {
+          "factorization": "-b*(12*a**2*b - 2*a - 1)*(72*a**2*b - 8*a - 3)*(31104*a**6*b**3 - 12960*a**5*b**2 - 2808*a**4*b**2 + 1728*a**4*b + 648*a**3*b - 72*a**3 + 18*a**2*b - 30*a**2 - 2*a - 1)",
+          "point": [
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "sha256": "56f464cee2e2decdabad0f9742ef7bb6ea4946198ef7969b8623cebce22af3db",
+          "terms": 21,
+          "total_degree": 16
+        },
+        {
+          "factorization": "-b*(12*a**2*b - 12*a*b - 2*a + 3*b)*(72*a**2*b - 72*a*b - 8*a + 18*b + 1)*(62208*a**6*b**3 - 186624*a**5*b**3 - 25920*a**5*b**2 + 233280*a**4*b**3 + 59184*a**4*b**2 + 3456*a**4*b - 155520*a**3*b**3 - 53568*a**3*b**2 - 5616*a**3*b - 144*a**3 + 58320*a**2*b**3 + 23976*a**2*b**2 + 3276*a**2*b + 156*a**2 - 11664*a*b**3 - 5292*a*b**2 - 792*a*b - 52*a + 972*b**3 + 459*b**2 + 63*b + 3)",
+          "point": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "sha256": "51332fc35f5a752dbd8cf1600fc89ef9edc12538387ff25adeeb5c15194236cc",
+          "terms": 50,
+          "total_degree": 16
+        },
+        {
+          "factorization": "b*(144*a**4*b**2 + 288*a**3*b**2 - 24*a**3*b + 216*a**2*b**2 - 108*a**2*b + 72*a*b**2 - 90*a*b + 2*a + 9*b**2 - 21*b + 10)",
+          "point": [
+            0,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "sha256": "bf4e8c79e41c89f05bdf795a775a08cd9c3ad383eb7bb8a77b86a24029d1c08b",
+          "terms": 11,
+          "total_degree": 7
+        },
+        {
+          "factorization": "-b*(72*b**2 - 237*b + 190)",
+          "point": [
+            0,
+            1,
+            0,
+            1,
+            0,
+            0
+          ],
+          "sha256": "35044914b5a4bc845d4d892ebc87dd952fbe5ebff994b4bec763c162f1459a51",
+          "terms": 3,
+          "total_degree": 3
+        },
+        {
+          "factorization": "b*(b - 1)*(3*b - 4)",
+          "point": [
+            0,
+            1,
+            0,
+            0,
+            1,
+            0
+          ],
+          "sha256": "76860e030f530d2684d74a6572cf74521c4654cce92371d55d935fde31e5219a",
+          "terms": 3,
+          "total_degree": 3
+        },
+        {
+          "factorization": "b*(144*a**4*b**2 - 24*a**3*b - 72*a**2*b + 2*a + 9)",
+          "point": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "sha256": "0b639aa6235e945c7860dd22bf820791e4e946a54e0914c2a9ca13a4bf7512bb",
+          "terms": 5,
+          "total_degree": 7
+        },
+        {
+          "factorization": "-b*(12*a**2*b - 2*a - 1)*(108*a**2*b - 18*a - 7)",
+          "point": [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0
+          ],
+          "sha256": "c258a31be60efb36a2686c1daf42c75f7c0d62a4eb21bb96d282cd03d5781fb2",
+          "terms": 6,
+          "total_degree": 7
+        },
+        {
+          "factorization": "-b*(12*a**2*b - 12*a*b - 2*a + 3*b)*(108*a**2*b - 108*a*b - 18*a + 27*b + 2)",
+          "point": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            1
+          ],
+          "sha256": "271c0d67c5f65ab00245e876e274cb0e7869499f87e7a9003e131c444e25bb34",
+          "terms": 11,
+          "total_degree": 7
+        }
+      ],
+      "singular_basis_size": 1,
+      "singular_input_sha256": "c22c37349678dd05d02242e8d4a5af0b36ce032b061d801125d67ea44693ae1b"
+    },
+    {
+      "H1_source": 2,
+      "H2_source": 1,
+      "certificate_kind": "singular_unit_ideal",
+      "common_dual": 2,
+      "degree_pair": [
+        2,
+        3
+      ],
+      "epsilon1": 1,
+      "epsilon2": 1,
+      "linear_pairing": 1,
+      "origin_parent_hessian_determinant": "-16384",
+      "parent_constant_locus_with_ab_nonzero": "empty",
+      "pattern_id": "p2-q2-q1-e+1-e+1",
+      "poisson_bracket_factor": "6*a*b*L1*L2^2",
+      "poisson_incidence": "h1_source_hits_h2_dual",
+      "probe_equations": [
+        {
+          "factorization": "-b*(3*b + 2)*(3*b + 4)",
+          "point": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "ac688d0fbae43d824a2a2cde214812bebf00f802ae491f18c6d337474e2b5ed5",
+          "terms": 3,
+          "total_degree": 3
+        },
+        {
+          "factorization": "-b*(3*b - 2)*(3*b + 4)",
+          "point": [
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "5416814d692ca84c6f8105cc0091b034d460fc013fdb58a82eb595ff100c5be4",
+          "terms": 3,
+          "total_degree": 3
+        },
+        {
+          "factorization": "-b*(36*b + 11)*(466560*b**4 + 819072*b**3 + 478512*b**2 + 92988*b + 7)",
+          "point": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "01dea8c3969eb52a58e9a5a0343636bffb6a8cd3683e21a1bed4d898aac83784",
+          "terms": 6,
+          "total_degree": 6
+        },
+        {
+          "factorization": "-b*(12*a**2*b + 2*a + 1)*(72*a**2*b + 4*a + 3)*(31104*a**6*b**3 + 7776*a**5*b**2 + 2808*a**4*b**2 + 288*a**3*b - 72*a**3 + 18*a**2*b - 30*a**2 - 2*a + 1)",
+          "point": [
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "sha256": "047d55a5de024236478e57513e98200d49360291827a513199ed78e86488d0d5",
+          "terms": 20,
+          "total_degree": 16
+        },
+        {
+          "factorization": "-b*(12*a**2*b - 12*a*b + 2*a + 3*b)*(72*a**2*b - 72*a*b + 4*a + 18*b + 1)*(62208*a**6*b**3 - 186624*a**5*b**3 + 15552*a**5*b**2 + 233280*a**4*b**3 - 33264*a**4*b**2 - 155520*a**3*b**3 + 27648*a**3*b**2 + 576*a**3*b - 144*a**3 + 58320*a**2*b**3 - 11016*a**2*b**2 - 828*a**2*b + 156*a**2 - 11664*a*b**3 + 2052*a*b**2 + 396*a*b - 52*a + 972*b**3 - 135*b**2 - 63*b + 7)",
+          "point": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "sha256": "5dd866b3fc13bab460574750c74c27e22efa424f3635ccd9694a87e0328829e4",
+          "terms": 49,
+          "total_degree": 16
+        },
+        {
+          "factorization": "-b*(144*a**4*b**2 - 288*a**3*b**2 + 24*a**3*b + 216*a**2*b**2 + 60*a**2*b - 72*a*b**2 - 78*a*b + 6*a + 9*b**2 + 21*b + 10)",
+          "point": [
+            0,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "sha256": "7a396be6cbfdc3886bba432f360a4d43619997b392a8362d835755152ff780e2",
+          "terms": 11,
+          "total_degree": 7
+        },
+        {
+          "factorization": "-b*(3*b + 1)*(3*b + 4)",
+          "point": [
+            0,
+            1,
+            0,
+            0,
+            1,
+            0
+          ],
+          "sha256": "59439a2d5cb3ff4b89793263e5ba306da1c01b5c8cdcf53513455c924e3be0e3",
+          "terms": 3,
+          "total_degree": 3
+        },
+        {
+          "factorization": "-b*(144*a**4*b**2 - 576*a**3*b**2 + 24*a**3*b + 864*a**2*b**2 + 24*a**2*b - 576*a*b**2 - 120*a*b + 6*a + 144*b**2 + 72*b + 7)",
+          "point": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "sha256": "db9c09d48133af7cf5e8d66d8383d1d788d5e50f0dd38efc76bcb06fde418307",
+          "terms": 11,
+          "total_degree": 7
+        },
+        {
+          "factorization": "b*(12*a**2*b + 2*a + 1)*(108*a**2*b + 18*a + 11)",
+          "point": [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0
+          ],
+          "sha256": "f049a6c5c143c0dd5f9066874a4c8a3212f904289f4c2f51b2a2e3e93f5baa64",
+          "terms": 6,
+          "total_degree": 7
+        },
+        {
+          "factorization": "b*(12*a**2*b - 12*a*b + 2*a + 3*b)*(108*a**2*b - 108*a*b + 18*a + 27*b + 2)",
+          "point": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            1
+          ],
+          "sha256": "aa31fb496502f56f03f7fbffa1417cc2538cad2266162e722ed7bc21fd413372",
+          "terms": 11,
+          "total_degree": 7
+        }
+      ],
+      "singular_basis_size": 1,
+      "singular_input_sha256": "3610b7a8576a0f6f3d043777709ccd23c011a435ded4705fe1d09def1a43347b"
+    },
+    {
+      "H1_source": 2,
+      "H2_source": 2,
+      "certificate_kind": "localized_monomial",
+      "common_dual": 2,
+      "degree_pair": [
+        2,
+        3
+      ],
+      "epsilon1": -1,
+      "epsilon2": 1,
+      "linear_pairing": 2,
+      "origin_parent_hessian_determinant": "-16384",
+      "parent_constant_locus_with_ab_nonzero": "empty",
+      "pattern_id": "p2-q2-q2-e-1-e+1",
+      "poisson_bracket_factor": "12*a*b*L1*L2^2",
+      "poisson_incidence": "reciprocal",
+      "probe_equations": [
+        {
+          "factorization": "-b",
+          "point": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "4fc0bdb51ffc8cfdcaaee067eb264b8a5c646176cf870be17c2e647fbb2cb7f4",
+          "terms": 1,
+          "total_degree": 1
+        }
+      ]
+    },
+    {
+      "H1_source": 2,
+      "H2_source": 2,
+      "certificate_kind": "localized_monomial",
+      "common_dual": 2,
+      "degree_pair": [
+        2,
+        3
+      ],
+      "epsilon1": 1,
+      "epsilon2": -1,
+      "linear_pairing": -2,
+      "origin_parent_hessian_determinant": "-16384",
+      "parent_constant_locus_with_ab_nonzero": "empty",
+      "pattern_id": "p2-q2-q2-e+1-e-1",
+      "poisson_bracket_factor": "-12*a*b*L1*L2^2",
+      "poisson_incidence": "reciprocal",
+      "probe_equations": [
+        {
+          "factorization": "b",
+          "point": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "sha256": "3e23e8160039594a33894f6564e1b1348bbd7a0088d42c4acb73eeaed59c009d",
+          "terms": 1,
+          "total_degree": 1
+        }
+      ]
+    }
+  ],
+  "scope": {
+    "H1": "a*(q_i+epsilon1*p_j)^2",
+    "H2": "b*(q_k+epsilon2*p_j)^3",
+    "base": "collision-centred foundational cubic Keller doubling",
+    "coefficient_ring": "Q[a,b]",
+    "composition": "T_H2 o T_H1",
+    "limitations": [
+      "zero coefficients",
+      "reverse degree order",
+      "oblique affine directions",
+      "longer words",
+      "different Hamiltonian supports"
+    ],
+    "open_coefficient_locus": "a*b != 0",
+    "parent_gate": "exact Hessian-determinant differences at integer axis probes",
+    "saturation": "z_saturation*a*b-1",
+    "support": "all 54 noncommuting shared-dual patterns"
+  },
+  "status": "exact_symbolic_finite_support_theorem",
+  "summary": {
+    "certificate_census": {
+      "localized_monomial": 14,
+      "singular_unit_ideal": 40
+    },
+    "incidence_census": {
+      "h1_dual_hits_h2_source": 24,
+      "h1_source_hits_h2_dual": 24,
+      "reciprocal": 6
+    },
+    "maximum_probe_equations": 11,
+    "parent_constant_locus_empty": 54,
+    "parent_survivors": 0,
+    "patterns": 54,
+    "reduced_rank_audits_needed_after_parent_gate": 0
+  }
+}

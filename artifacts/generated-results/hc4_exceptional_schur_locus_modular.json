@@ -20,6 +20,62 @@
       "result": "success",
       "basis_denominator": "2",
       "mathematical_conclusion": "The reduced generic basis has no parameter-dependent coefficient denominator. The exceptional divisor can therefore occur only in the certificates expressing that basis in the original 114 generators, not in the displayed basis coefficients."
+    },
+    "degree_two_fitting_attempt": {
+      "command": ".venv/bin/python scripts/verify_hc4_quintic_two_parameter_symmetric_schur.py --fitting-profile",
+      "result": "interrupted_after_one_hour",
+      "generic_rank": 99,
+      "primitive_row_content_counts": {
+        "1": 2,
+        "2": 10,
+        "4": 4,
+        "8": 4,
+        "16": 1,
+        "nu": 1,
+        "2*nu": 13,
+        "4*nu": 14,
+        "8*nu": 19,
+        "16*nu": 2,
+        "4*nu^2": 16,
+        "8*nu^2": 26,
+        "8*nu^3": 2
+      },
+      "rank_test_points": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "mathematical_conclusion": "The selected 99 by 99 minor was not computed, so it supplies no discriminant factor."
+    },
+    "cube_lift_attempt": {
+      "command": ".venv/bin/python scripts/verify_hc4_quintic_two_parameter_symmetric_schur.py --cube-torsion-profile --cube-index 0 --cube-torsion-stage generic",
+      "result": "timeout",
+      "singular_timeout_seconds": 900,
+      "character": [
+        0,
+        0,
+        0
+      ],
+      "cubic_monomials": 191,
+      "multiplication_columns": 441,
+      "mathematical_conclusion": "No cube-certificate denominator was returned."
     }
   },
   "even_quartic_charts": {
@@ -31,6 +87,12 @@
       101,
       103
     ],
+    "characteristic_zero_pure_chart_attempt": {
+      "command": ".venv/bin/python scripts/research_hc4_exceptional_schur_locus.py --exact-pure-chart --singular-timeout 900",
+      "result": "timeout_before_standard_basis",
+      "singular_timeout_seconds": 900,
+      "mathematical_conclusion": "none"
+    },
     "pure_chart_a_equals_1": {
       "modular_basis_sizes": [
         88,
@@ -119,7 +181,7 @@
     }
   ],
   "open_checks": [
-    "Compute and factor the exact generic basis denominator.",
+    "Compute and factor the exact transformation/lift denominator; the reduced-basis denominator is 2.",
     "Compute denominators of lift certificates for the fifteen cube reductions.",
     "Analyze full projective quartics mixing two or more nontrivial sign-character blocks.",
     "Prove characteristic-zero containment for the reconstructed even-chart parameter ideals."

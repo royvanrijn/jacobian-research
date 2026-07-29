@@ -1,0 +1,3654 @@
+{
+  "status": "bounded modular nonrelation tests; positive intersections would require characteristic-zero reconstruction",
+  "prime": 1000003,
+  "max_weight": 10,
+  "invariant_cutoff": 6,
+  "extra_samples": 3,
+  "relation_tests_skipped": true,
+  "radial_casimir_scaling": "q_(2r)^(d+1)(R f)=(d-r+1)(d+r+2)q_(2r)^d(f)",
+  "odd_cubic_dimension_formula": {
+    "d_even": "d(d-1)(d-2)/24",
+    "d_odd": "(d+1)(d-1)(d-3)/24"
+  },
+  "power_witness_scan": [
+    {
+      "power": 1,
+      "degree": 4,
+      "quadratic_components_tested": [
+        "q_2"
+      ],
+      "values": [
+        "-864"
+      ],
+      "phase_supports": [
+        [
+          -1,
+          1
+        ]
+      ],
+      "first_nonzero_quadratic": "q_2"
+    },
+    {
+      "power": 2,
+      "degree": 8,
+      "quadratic_components_tested": [
+        "q_2"
+      ],
+      "values": [
+        "139345920"
+      ],
+      "phase_supports": [
+        [
+          -1,
+          1
+        ]
+      ],
+      "first_nonzero_quadratic": "q_2"
+    },
+    {
+      "power": 3,
+      "degree": 12,
+      "quadratic_components_tested": [
+        "q_2",
+        "q_4"
+      ],
+      "values": [
+        "0",
+        "-21129300541440000"
+      ],
+      "phase_supports": [
+        [
+          1
+        ],
+        [
+          -2,
+          2
+        ]
+      ],
+      "first_nonzero_quadratic": "q_4"
+    },
+    {
+      "power": 4,
+      "degree": 16,
+      "quadratic_components_tested": [
+        "q_2",
+        "q_4"
+      ],
+      "values": [
+        "0",
+        "1614356993329625825280000"
+      ],
+      "phase_supports": [
+        [
+          1
+        ],
+        [
+          -2,
+          2
+        ]
+      ],
+      "first_nonzero_quadratic": "q_4"
+    },
+    {
+      "power": 5,
+      "degree": 20,
+      "quadratic_components_tested": [
+        "q_2",
+        "q_4",
+        "q_6"
+      ],
+      "values": [
+        "0",
+        "0",
+        "-31438892128017397911964876800000000"
+      ],
+      "phase_supports": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          -3,
+          1,
+          3
+        ]
+      ],
+      "first_nonzero_quadratic": "q_6"
+    },
+    {
+      "power": 6,
+      "degree": 24,
+      "quadratic_components_tested": [
+        "q_2",
+        "q_4",
+        "q_6"
+      ],
+      "values": [
+        "0",
+        "0",
+        "59894862170928505110042526089216000000000000"
+      ],
+      "phase_supports": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          -3,
+          1,
+          3
+        ]
+      ],
+      "first_nonzero_quadratic": "q_6"
+    },
+    {
+      "power": 7,
+      "degree": 28,
+      "quadratic_components_tested": [
+        "q_2",
+        "q_4",
+        "q_6",
+        "q_8"
+      ],
+      "values": [
+        "0",
+        "0",
+        "0",
+        "-26479860171561874474888129523226711460675584000000000000"
+      ],
+      "phase_supports": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          -4,
+          2,
+          4
+        ]
+      ],
+      "first_nonzero_quadratic": "q_8"
+    },
+    {
+      "power": 8,
+      "degree": 32,
+      "quadratic_components_tested": [
+        "q_2",
+        "q_4",
+        "q_6",
+        "q_8"
+      ],
+      "values": [
+        "0",
+        "0",
+        "0",
+        "452949591584599310919331750558171539827517222247464960000000000000"
+      ],
+      "phase_supports": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          -4,
+          2,
+          4
+        ]
+      ],
+      "first_nonzero_quadratic": "q_8"
+    },
+    {
+      "power": 9,
+      "degree": 36,
+      "quadratic_components_tested": [
+        "q_2",
+        "q_4",
+        "q_6",
+        "q_8",
+        "q_10"
+      ],
+      "values": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "-2016500184718386180859349820349892604647114757399922918840860672000000000000000"
+      ],
+      "phase_supports": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          -5,
+          1,
+          3,
+          5
+        ]
+      ],
+      "first_nonzero_quadratic": "q_10"
+    },
+    {
+      "power": 10,
+      "degree": 40,
+      "quadratic_components_tested": [
+        "q_2",
+        "q_4",
+        "q_6",
+        "q_8",
+        "q_10"
+      ],
+      "values": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "182936716911854874669685607962452473113487111167357095606698170124756582400000000000000000"
+      ],
+      "phase_supports": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          -5,
+          1,
+          3,
+          5
+        ]
+      ],
+      "first_nonzero_quadratic": "q_10"
+    },
+    {
+      "power": 11,
+      "degree": 44,
+      "quadratic_components_tested": [
+        "q_2",
+        "q_4",
+        "q_6",
+        "q_8",
+        "q_10",
+        "q_12"
+      ],
+      "values": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "-5100313835694012696777699070962956523930722251679490416027166330852580031721507913728000000000000000000"
+      ],
+      "phase_supports": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          1,
+          3,
+          5
+        ],
+        [
+          -6,
+          2,
+          4,
+          6
+        ]
+      ],
+      "first_nonzero_quadratic": "q_12"
+    },
+    {
+      "power": 12,
+      "degree": 48,
+      "quadratic_components_tested": [
+        "q_2",
+        "q_4",
+        "q_6",
+        "q_8",
+        "q_10",
+        "q_12"
+      ],
+      "values": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1778197507878298073099437587380295659802248596726012156543562334565346884827060270182038033661952000000000000000000"
+      ],
+      "phase_supports": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          1,
+          3,
+          5
+        ],
+        [
+          -6,
+          2,
+          4,
+          6
+        ]
+      ],
+      "first_nonzero_quadratic": "q_12"
+    }
+  ],
+  "all_degree_ladder_regression": [
+    {
+      "power": 1,
+      "first_component": 1,
+      "vanishing_beta_sums_checked": 1,
+      "negative_extreme_moment": "-4/5",
+      "positive_extreme_moment": "4/3"
+    },
+    {
+      "power": 2,
+      "first_component": 1,
+      "vanishing_beta_sums_checked": 1,
+      "negative_extreme_moment": "16/105",
+      "positive_extreme_moment": "16/15"
+    },
+    {
+      "power": 3,
+      "first_component": 2,
+      "vanishing_beta_sums_checked": 3,
+      "negative_extreme_moment": "-64/385",
+      "positive_extreme_moment": "64/35"
+    },
+    {
+      "power": 4,
+      "first_component": 2,
+      "vanishing_beta_sums_checked": 3,
+      "negative_extreme_moment": "256/15015",
+      "positive_extreme_moment": "256/105"
+    },
+    {
+      "power": 5,
+      "first_component": 3,
+      "vanishing_beta_sums_checked": 6,
+      "negative_extreme_moment": "-512/17017",
+      "positive_extreme_moment": "1024/231"
+    },
+    {
+      "power": 6,
+      "first_component": 3,
+      "vanishing_beta_sums_checked": 6,
+      "negative_extreme_moment": "2048/969969",
+      "positive_extreme_moment": "20480/3003"
+    },
+    {
+      "power": 7,
+      "first_component": 4,
+      "vanishing_beta_sums_checked": 10,
+      "negative_extreme_moment": "-16384/3187041",
+      "positive_extreme_moment": "16384/1287"
+    },
+    {
+      "power": 8,
+      "first_component": 4,
+      "vanishing_beta_sums_checked": 10,
+      "negative_extreme_moment": "65536/239028075",
+      "positive_extreme_moment": "458752/21879"
+    },
+    {
+      "power": 9,
+      "first_component": 5,
+      "vanishing_beta_sums_checked": 15,
+      "negative_extreme_moment": "-131072/154040315",
+      "positive_extreme_moment": "1835008/46189"
+    },
+    {
+      "power": 10,
+      "first_component": 5,
+      "vanishing_beta_sums_checked": 15,
+      "negative_extreme_moment": "524288/14325749295",
+      "positive_extreme_moment": "3145728/46189"
+    },
+    {
+      "power": 11,
+      "first_component": 6,
+      "vanishing_beta_sums_checked": 21,
+      "negative_extreme_moment": "-2097152/15193976525",
+      "positive_extreme_moment": "12582912/96577"
+    },
+    {
+      "power": 12,
+      "first_component": 6,
+      "vanishing_beta_sums_checked": 21,
+      "negative_extreme_moment": "8388608/1686531394275",
+      "positive_extreme_moment": "553648128/2414425"
+    },
+    {
+      "power": 13,
+      "first_component": 7,
+      "vanishing_beta_sums_checked": 28,
+      "negative_extreme_moment": "-16777216/759865793025",
+      "positive_extreme_moment": "738197504/1671525"
+    },
+    {
+      "power": 14,
+      "first_component": 7,
+      "vanishing_beta_sums_checked": 28,
+      "negative_extreme_moment": "67108864/98022687300225",
+      "positive_extreme_moment": "38386270208/48474225"
+    },
+    {
+      "power": 15,
+      "first_component": 8,
+      "vanishing_beta_sums_checked": 36,
+      "negative_extreme_moment": "-1073741824/307137753540705",
+      "positive_extreme_moment": "153545080832/100180065"
+    },
+    {
+      "power": 16,
+      "first_component": 8,
+      "vanishing_beta_sums_checked": 36,
+      "negative_extreme_moment": "4294967296/45149249770483635",
+      "positive_extreme_moment": "55834574848/20036013"
+    },
+    {
+      "power": 17,
+      "first_component": 9,
+      "vanishing_beta_sums_checked": 45,
+      "negative_extreme_moment": "-8589934592/15639936195004135",
+      "positive_extreme_moment": "223338299392/41250615"
+    },
+    {
+      "power": 18,
+      "first_component": 9,
+      "vanishing_beta_sums_checked": 45,
+      "negative_extreme_moment": "34359738368/2580589472175682275",
+      "positive_extreme_moment": "15187004358656/1526272755"
+    },
+    {
+      "power": 19,
+      "first_component": 10,
+      "vanishing_beta_sums_checked": 55,
+      "negative_extreme_moment": "-137438953472/1602681882719634255",
+      "positive_extreme_moment": "4672924418048/240990435"
+    },
+    {
+      "power": 20,
+      "first_component": 10,
+      "vanishing_beta_sums_checked": 55,
+      "negative_extreme_moment": "549755813888/293290784537693068665",
+      "positive_extreme_moment": "355142255771648/9880607835"
+    },
+    {
+      "power": 21,
+      "first_component": 11,
+      "vanishing_beta_sums_checked": 66,
+      "negative_extreme_moment": "-1099511627776/82527709934848698975",
+      "positive_extreme_moment": "1420569023086592/20231720805"
+    },
+    {
+      "power": 22,
+      "first_component": 11,
+      "vanishing_beta_sums_checked": 66,
+      "negative_extreme_moment": "4398046511104/16588069696904588493975",
+      "positive_extreme_moment": "39775932646424576/303475812075"
+    },
+    {
+      "power": 23,
+      "first_component": 12,
+      "vanishing_beta_sums_checked": 78,
+      "negative_extreme_moment": "-35184372088832/17068883311307620044525",
+      "positive_extreme_moment": "159103730585698304/620146224675"
+    },
+    {
+      "power": 24,
+      "first_component": 12,
+      "vanishing_beta_sums_checked": 78,
+      "negative_extreme_moment": "140737488355328/3738085445176368789750975",
+      "positive_extreme_moment": "2091077601983463424/4341023572725"
+    },
+    {
+      "power": 25,
+      "first_component": 13,
+      "vanishing_beta_sums_checked": 91,
+      "negative_extreme_moment": "-281474976710656/885638705472555067110231",
+      "positive_extreme_moment": "492018259290226688/520922828727"
+    },
+    {
+      "power": 26,
+      "first_component": 13,
+      "vanishing_beta_sums_checked": 91,
+      "negative_extreme_moment": "1125899906842624/209896373196995550905124747",
+      "positive_extreme_moment": "49201825929022668800/27608909922531"
+    },
+    {
+      "power": 27,
+      "first_component": 14,
+      "vanishing_beta_sums_checked": 105,
+      "negative_extreme_moment": "-4503599627370496/92176714155294342460980709",
+      "positive_extreme_moment": "39361460743218135040/11248074412883"
+    },
+    {
+      "power": 28,
+      "first_component": 14,
+      "vanishing_beta_sums_checked": 105,
+      "negative_extreme_moment": "18014398509481984/23505062109600057327550080795",
+      "positive_extreme_moment": "74579609829255413760/11248074412883"
+    },
+    {
+      "power": 29,
+      "first_component": 15,
+      "vanishing_beta_sums_checked": 120,
+      "negative_extreme_moment": "-36028797018963968/4809081672998632418740131473",
+      "positive_extreme_moment": "298318439317021655040/22884013460693"
+    },
+    {
+      "power": 30,
+      "first_component": 15,
+      "vanishing_beta_sums_checked": 120,
+      "negative_extreme_moment": "144115188075855872/1312879296728626650316055892129",
+      "positive_extreme_moment": "34604938960774511984640/1395924821102273"
+    },
+    {
+      "power": 31,
+      "first_component": 16,
+      "vanishing_beta_sums_checked": 136,
+      "negative_extreme_moment": "-4611686018427387904/4023339780297404250968558379105",
+      "positive_extreme_moment": "15379972871455338659840/315208830571481"
+    },
+    {
+      "power": 32,
+      "first_component": 16,
+      "vanishing_beta_sums_checked": 136,
+      "negative_extreme_moment": "18446744073709551616/1170791876066544637031850488319555",
+      "positive_extreme_moment": "381423327212092398764032/4097714797429253"
+    }
+  ],
+  "degrees": {
+    "3": {
+      "quotient_dimension": 13,
+      "moment_jacobian_rank": 13,
+      "quadratic_completion_component_indices": [
+        1,
+        2
+      ],
+      "odd_invariant": "tr(A_2 A_4 A_6^2)",
+      "odd_invariant_degree": 4,
+      "mu2_weights_on_q_components": [
+        35,
+        21,
+        7,
+        1
+      ],
+      "relation_tests": [],
+      "hilbert_parameter_tests": {
+        "interpretation": "necessary Hilbert-series tests only; compatibility does not prove algebraic independence or a nullcone zero fiber",
+        "hilbert_coefficients_degrees_0_through_5": [
+          1,
+          1,
+          4,
+          8,
+          26,
+          53
+        ],
+        "tests_by_number_of_added_quadratics": [
+          {
+            "natural_sequence": {
+              "added_quadratics": 0,
+              "degrees": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13
+              ],
+              "predicted_top_degree": 75,
+              "first_negative_through_cutoff": [
+                63,
+                -2186
+              ],
+              "first_nonzero_after_predicted_top_through_cutoff": [
+                76,
+                4590
+              ],
+              "checked_through_degree": 95
+            },
+            "first_hilbert_compatible_correction_within_bound": {
+              "added_quadratics": 0,
+              "degrees": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                14
+              ],
+              "predicted_top_degree": 76,
+              "first_negative_through_cutoff": null,
+              "first_nonzero_after_predicted_top_through_cutoff": null,
+              "checked_through_degree": 95,
+              "numerator_coefficient_sum": 9226602,
+              "correction_partition": [
+                1
+              ],
+              "total_degree_correction": 1
+            }
+          },
+          {
+            "natural_sequence": {
+              "added_quadratics": 1,
+              "degrees": [
+                1,
+                2,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12
+              ],
+              "predicted_top_degree": 64,
+              "first_negative_through_cutoff": null,
+              "first_nonzero_after_predicted_top_through_cutoff": null,
+              "checked_through_degree": 95,
+              "numerator_coefficient_sum": 1318086,
+              "correction_partition": [],
+              "total_degree_correction": 0
+            },
+            "first_hilbert_compatible_correction_within_bound": {
+              "added_quadratics": 1,
+              "degrees": [
+                1,
+                2,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12
+              ],
+              "predicted_top_degree": 64,
+              "first_negative_through_cutoff": null,
+              "first_nonzero_after_predicted_top_through_cutoff": null,
+              "checked_through_degree": 95,
+              "numerator_coefficient_sum": 1318086,
+              "correction_partition": [],
+              "total_degree_correction": 0
+            }
+          },
+          {
+            "natural_sequence": {
+              "added_quadratics": 2,
+              "degrees": [
+                1,
+                2,
+                2,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11
+              ],
+              "predicted_top_degree": 54,
+              "first_negative_through_cutoff": [
+                50,
+                -79
+              ],
+              "first_nonzero_after_predicted_top_through_cutoff": [
+                55,
+                72
+              ],
+              "checked_through_degree": 95
+            },
+            "first_hilbert_compatible_correction_within_bound": {
+              "added_quadratics": 2,
+              "degrees": [
+                1,
+                2,
+                2,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                12
+              ],
+              "predicted_top_degree": 55,
+              "first_negative_through_cutoff": null,
+              "first_nonzero_after_predicted_top_through_cutoff": null,
+              "checked_through_degree": 95,
+              "numerator_coefficient_sum": 239652,
+              "correction_partition": [
+                1
+              ],
+              "total_degree_correction": 1
+            }
+          }
+        ]
+      },
+      "automatic_missing_invariant_scan": {
+        "cutoff": 6,
+        "basis_interpretation": "exact dimensions of apolar-character bases from the SL2 weight-zero-minus-weight-two formula; the first missing degree has the explicit Casimir basis below",
+        "degrees": [
+          {
+            "degree": 0,
+            "invariant_even_dimension": 1,
+            "invariant_odd_dimension": 0,
+            "invariant_total_dimension": 1,
+            "moment_monomial_dimension": 1,
+            "missing_even_dimension": 0,
+            "missing_odd_dimension": 0
+          },
+          {
+            "degree": 1,
+            "invariant_even_dimension": 1,
+            "invariant_odd_dimension": 0,
+            "invariant_total_dimension": 1,
+            "moment_monomial_dimension": 1,
+            "missing_even_dimension": 0,
+            "missing_odd_dimension": 0
+          },
+          {
+            "degree": 2,
+            "invariant_even_dimension": 4,
+            "invariant_odd_dimension": 0,
+            "invariant_total_dimension": 4,
+            "moment_monomial_dimension": 2,
+            "missing_even_dimension": 2,
+            "missing_odd_dimension": 0
+          },
+          {
+            "degree": 3,
+            "invariant_even_dimension": 8,
+            "invariant_odd_dimension": 0,
+            "invariant_total_dimension": 8,
+            "moment_monomial_dimension": 3,
+            "missing_even_dimension": 5,
+            "missing_odd_dimension": 0
+          },
+          {
+            "degree": 4,
+            "invariant_even_dimension": 23,
+            "invariant_odd_dimension": 3,
+            "invariant_total_dimension": 26,
+            "moment_monomial_dimension": 5,
+            "missing_even_dimension": 18,
+            "missing_odd_dimension": 3
+          },
+          {
+            "degree": 5,
+            "invariant_even_dimension": 45,
+            "invariant_odd_dimension": 8,
+            "invariant_total_dimension": 53,
+            "moment_monomial_dimension": 7,
+            "missing_even_dimension": 38,
+            "missing_odd_dimension": 8
+          },
+          {
+            "degree": 6,
+            "invariant_even_dimension": 110,
+            "invariant_odd_dimension": 36,
+            "invariant_total_dimension": 146,
+            "moment_monomial_dimension": 11,
+            "missing_even_dimension": 99,
+            "missing_odd_dimension": 36
+          }
+        ],
+        "first_missing_invariant_degree": 2,
+        "first_missing_character": "apolar-even",
+        "first_missing_dimension": 2,
+        "quadratic_invariant_basis": [
+          "q_0",
+          "q_2",
+          "q_4",
+          "q_6"
+        ],
+        "moment_quadratic_basis": [
+          "mu_1^2",
+          "mu_2"
+        ],
+        "minimal_quadratic_completion": [
+          "q_2",
+          "q_4"
+        ],
+        "first_apolar_odd_degree": 4,
+        "first_apolar_odd_dimension": 3,
+        "odd_cubic_component_triples": [],
+        "odd_cubic_dimension_formula": 0,
+        "casimir_radial_transition_to_next_degree": [
+          20,
+          18,
+          14,
+          8
+        ]
+      },
+      "hilbert_compatible_parameter_jacobians": [
+        {
+          "added_quadratic_components": [],
+          "moment_orders": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            14
+          ],
+          "rank": 13
+        },
+        {
+          "added_quadratic_components": [
+            1
+          ],
+          "moment_orders": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "rank": 13
+        },
+        {
+          "added_quadratic_components": [
+            1,
+            2
+          ],
+          "moment_orders": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            12
+          ],
+          "rank": 13
+        }
+      ],
+      "propagated_moment_zero_witness": null
+    },
+    "4": {
+      "quotient_dimension": 22,
+      "moment_jacobian_rank": 22,
+      "quadratic_completion_component_indices": [
+        1,
+        2,
+        3
+      ],
+      "odd_invariant": "tr(A_4 A_6 A_8)",
+      "odd_invariant_degree": 3,
+      "mu2_weights_on_q_components": [
+        126,
+        84,
+        36,
+        9,
+        1
+      ],
+      "relation_tests": [],
+      "hilbert_parameter_tests": {
+        "interpretation": "necessary Hilbert-series tests only; compatibility does not prove algebraic independence or a nullcone zero fiber",
+        "hilbert_coefficients_degrees_0_through_5": [
+          1,
+          1,
+          5,
+          15,
+          65,
+          219
+        ],
+        "tests_by_number_of_added_quadratics": [
+          {
+            "natural_sequence": {
+              "added_quadratics": 0,
+              "degrees": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22
+              ],
+              "predicted_top_degree": 228,
+              "first_negative_through_cutoff": null,
+              "first_nonzero_after_predicted_top_through_cutoff": null,
+              "checked_through_degree": 248,
+              "numerator_coefficient_sum": 319488769447848000,
+              "correction_partition": [],
+              "total_degree_correction": 0
+            },
+            "first_hilbert_compatible_correction_within_bound": {
+              "added_quadratics": 0,
+              "degrees": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22
+              ],
+              "predicted_top_degree": 228,
+              "first_negative_through_cutoff": null,
+              "first_nonzero_after_predicted_top_through_cutoff": null,
+              "checked_through_degree": 248,
+              "numerator_coefficient_sum": 319488769447848000,
+              "correction_partition": [],
+              "total_degree_correction": 0
+            }
+          },
+          {
+            "natural_sequence": {
+              "added_quadratics": 1,
+              "degrees": [
+                1,
+                2,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21
+              ],
+              "predicted_top_degree": 208,
+              "first_negative_through_cutoff": null,
+              "first_nonzero_after_predicted_top_through_cutoff": null,
+              "checked_through_degree": 248,
+              "numerator_coefficient_sum": 29044433586168000,
+              "correction_partition": [],
+              "total_degree_correction": 0
+            },
+            "first_hilbert_compatible_correction_within_bound": {
+              "added_quadratics": 1,
+              "degrees": [
+                1,
+                2,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21
+              ],
+              "predicted_top_degree": 208,
+              "first_negative_through_cutoff": null,
+              "first_nonzero_after_predicted_top_through_cutoff": null,
+              "checked_through_degree": 248,
+              "numerator_coefficient_sum": 29044433586168000,
+              "correction_partition": [],
+              "total_degree_correction": 0
+            }
+          },
+          {
+            "natural_sequence": {
+              "added_quadratics": 2,
+              "degrees": [
+                1,
+                2,
+                2,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20
+              ],
+              "predicted_top_degree": 189,
+              "first_negative_through_cutoff": [
+                179,
+                -100710
+              ],
+              "first_nonzero_after_predicted_top_through_cutoff": [
+                190,
+                126720
+              ],
+              "checked_through_degree": 248
+            },
+            "first_hilbert_compatible_correction_within_bound": {
+              "added_quadratics": 2,
+              "degrees": [
+                1,
+                2,
+                2,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                20,
+                21
+              ],
+              "predicted_top_degree": 191,
+              "first_negative_through_cutoff": null,
+              "first_nonzero_after_predicted_top_through_cutoff": null,
+              "checked_through_degree": 248,
+              "numerator_coefficient_sum": 3057308798544000,
+              "correction_partition": [
+                1,
+                1
+              ],
+              "total_degree_correction": 2
+            }
+          },
+          {
+            "natural_sequence": {
+              "added_quadratics": 3,
+              "degrees": [
+                1,
+                2,
+                2,
+                2,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19
+              ],
+              "predicted_top_degree": 171,
+              "first_negative_through_cutoff": [
+                161,
+                -102273
+              ],
+              "first_nonzero_after_predicted_top_through_cutoff": [
+                172,
+                128280
+              ],
+              "checked_through_degree": 248
+            },
+            "first_hilbert_compatible_correction_within_bound": {
+              "added_quadratics": 3,
+              "degrees": [
+                1,
+                2,
+                2,
+                2,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                18,
+                20,
+                21
+              ],
+              "predicted_top_degree": 176,
+              "first_negative_through_cutoff": null,
+              "first_nonzero_after_predicted_top_through_cutoff": null,
+              "checked_through_degree": 248,
+              "numerator_coefficient_sum": 359683388064000,
+              "correction_partition": [
+                1,
+                2,
+                2
+              ],
+              "total_degree_correction": 5
+            }
+          }
+        ]
+      },
+      "automatic_missing_invariant_scan": {
+        "cutoff": 6,
+        "basis_interpretation": "exact dimensions of apolar-character bases from the SL2 weight-zero-minus-weight-two formula; the first missing degree has the explicit Casimir basis below",
+        "degrees": [
+          {
+            "degree": 0,
+            "invariant_even_dimension": 1,
+            "invariant_odd_dimension": 0,
+            "invariant_total_dimension": 1,
+            "moment_monomial_dimension": 1,
+            "missing_even_dimension": 0,
+            "missing_odd_dimension": 0
+          },
+          {
+            "degree": 1,
+            "invariant_even_dimension": 1,
+            "invariant_odd_dimension": 0,
+            "invariant_total_dimension": 1,
+            "moment_monomial_dimension": 1,
+            "missing_even_dimension": 0,
+            "missing_odd_dimension": 0
+          },
+          {
+            "degree": 2,
+            "invariant_even_dimension": 5,
+            "invariant_odd_dimension": 0,
+            "invariant_total_dimension": 5,
+            "moment_monomial_dimension": 2,
+            "missing_even_dimension": 3,
+            "missing_odd_dimension": 0
+          },
+          {
+            "degree": 3,
+            "invariant_even_dimension": 14,
+            "invariant_odd_dimension": 1,
+            "invariant_total_dimension": 15,
+            "moment_monomial_dimension": 3,
+            "missing_even_dimension": 11,
+            "missing_odd_dimension": 1
+          },
+          {
+            "degree": 4,
+            "invariant_even_dimension": 51,
+            "invariant_odd_dimension": 14,
+            "invariant_total_dimension": 65,
+            "moment_monomial_dimension": 5,
+            "missing_even_dimension": 46,
+            "missing_odd_dimension": 14
+          },
+          {
+            "degree": 5,
+            "invariant_even_dimension": 154,
+            "invariant_odd_dimension": 65,
+            "invariant_total_dimension": 219,
+            "moment_monomial_dimension": 7,
+            "missing_even_dimension": 147,
+            "missing_odd_dimension": 65
+          },
+          {
+            "degree": 6,
+            "invariant_even_dimension": 510,
+            "invariant_odd_dimension": 301,
+            "invariant_total_dimension": 811,
+            "moment_monomial_dimension": 11,
+            "missing_even_dimension": 499,
+            "missing_odd_dimension": 301
+          }
+        ],
+        "first_missing_invariant_degree": 2,
+        "first_missing_character": "apolar-even",
+        "first_missing_dimension": 3,
+        "quadratic_invariant_basis": [
+          "q_0",
+          "q_2",
+          "q_4",
+          "q_6",
+          "q_8"
+        ],
+        "moment_quadratic_basis": [
+          "mu_1^2",
+          "mu_2"
+        ],
+        "minimal_quadratic_completion": [
+          "q_2",
+          "q_4",
+          "q_6"
+        ],
+        "first_apolar_odd_degree": 3,
+        "first_apolar_odd_dimension": 1,
+        "odd_cubic_component_triples": [
+          [
+            2,
+            3,
+            4
+          ]
+        ],
+        "odd_cubic_dimension_formula": 1,
+        "casimir_radial_transition_to_next_degree": [
+          30,
+          28,
+          24,
+          18,
+          10
+        ]
+      },
+      "hilbert_compatible_parameter_jacobians": [
+        {
+          "added_quadratic_components": [],
+          "moment_orders": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22
+          ],
+          "rank": 22
+        },
+        {
+          "added_quadratic_components": [
+            1
+          ],
+          "moment_orders": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21
+          ],
+          "rank": 22
+        },
+        {
+          "added_quadratic_components": [
+            1,
+            2
+          ],
+          "moment_orders": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            20,
+            21
+          ],
+          "rank": 22
+        },
+        {
+          "added_quadratic_components": [
+            1,
+            2,
+            3
+          ],
+          "moment_orders": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            18,
+            20,
+            21
+          ],
+          "rank": 22
+        }
+      ],
+      "propagated_moment_zero_witness": {
+        "moments_checked_through": 12,
+        "quadratic_values": [
+          "0",
+          "-864",
+          "2016",
+          "0",
+          "0"
+        ],
+        "closed_quadratic_values": [
+          "0",
+          "-(d-1)!(d+2)!/5",
+          "(d-2)!(d+3)!/5",
+          "0",
+          "0"
+        ],
+        "odd_invariant_value": "0",
+        "q_2_separates_recorded_witness": true
+      }
+    },
+    "5": {
+      "quotient_dimension": 33,
+      "moment_jacobian_rank": 33,
+      "quadratic_completion_component_indices": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "odd_invariant": "tr(A_4 A_6 A_8)",
+      "odd_invariant_degree": 3,
+      "mu2_weights_on_q_components": [
+        462,
+        330,
+        165,
+        55,
+        11,
+        1
+      ],
+      "relation_tests": [],
+      "hilbert_parameter_tests": {
+        "interpretation": "necessary Hilbert-series tests only; compatibility does not prove algebraic independence or a nullcone zero fiber",
+        "hilbert_coefficients_degrees_0_through_5": [
+          1,
+          1,
+          6,
+          22,
+          141,
+          687
+        ],
+        "tests_by_number_of_added_quadratics": [
+          {
+            "natural_sequence": {
+              "added_quadratics": 0,
+              "degrees": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30,
+                31,
+                32,
+                33
+              ],
+              "predicted_top_degree": 525,
+              "first_negative_through_cutoff": [
+                483,
+                -27057077654425437
+              ],
+              "first_nonzero_after_predicted_top_through_cutoff": [
+                526,
+                56435111198466000
+              ],
+              "checked_through_degree": 545
+            },
+            "first_hilbert_compatible_correction_within_bound": {
+              "added_quadratics": 0,
+              "degrees": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30,
+                32,
+                33,
+                34
+              ],
+              "predicted_top_degree": 528,
+              "first_negative_through_cutoff": null,
+              "first_nonzero_after_predicted_top_through_cutoff": null,
+              "checked_through_degree": 545,
+              "numerator_coefficient_sum": 798438450069000236566492824402000,
+              "correction_partition": [
+                1,
+                1,
+                1
+              ],
+              "total_degree_correction": 3
+            }
+          },
+          {
+            "natural_sequence": {
+              "added_quadratics": 1,
+              "degrees": [
+                1,
+                2,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30,
+                31,
+                32
+              ],
+              "predicted_top_degree": 494,
+              "first_negative_through_cutoff": [
+                476,
+                -30553866672
+              ],
+              "first_nonzero_after_predicted_top_through_cutoff": [
+                495,
+                33400999800
+              ],
+              "checked_through_degree": 545
+            },
+            "first_hilbert_compatible_correction_within_bound": {
+              "added_quadratics": 1,
+              "degrees": [
+                1,
+                2,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30,
+                32,
+                33
+              ],
+              "predicted_top_degree": 496,
+              "first_negative_through_cutoff": null,
+              "first_nonzero_after_predicted_top_through_cutoff": null,
+              "checked_through_degree": 545,
+              "numerator_coefficient_sum": 46966967651117660974499577906000,
+              "correction_partition": [
+                1,
+                1
+              ],
+              "total_degree_correction": 2
+            }
+          },
+          {
+            "natural_sequence": {
+              "added_quadratics": 2,
+              "degrees": [
+                1,
+                2,
+                2,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30,
+                31
+              ],
+              "predicted_top_degree": 464,
+              "first_negative_through_cutoff": [
+                443,
+                -3188099796
+              ],
+              "first_nonzero_after_predicted_top_through_cutoff": [
+                465,
+                33421666950
+              ],
+              "checked_through_degree": 545
+            },
+            "first_hilbert_compatible_correction_within_bound": {
+              "added_quadratics": 2,
+              "degrees": [
+                1,
+                2,
+                2,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                30,
+                32,
+                33
+              ],
+              "predicted_top_degree": 469,
+              "first_negative_through_cutoff": null,
+              "first_nonzero_after_predicted_top_through_cutoff": null,
+              "checked_through_degree": 545,
+              "numerator_coefficient_sum": 3239101217318459377551695028000,
+              "correction_partition": [
+                1,
+                2,
+                2
+              ],
+              "total_degree_correction": 5
+            }
+          },
+          {
+            "natural_sequence": {
+              "added_quadratics": 3,
+              "degrees": [
+                1,
+                2,
+                2,
+                2,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30
+              ],
+              "predicted_top_degree": 435,
+              "first_negative_through_cutoff": [
+                416,
+                -28602462246
+              ],
+              "first_nonzero_after_predicted_top_through_cutoff": [
+                436,
+                33421666950
+              ],
+              "checked_through_degree": 545
+            },
+            "first_hilbert_compatible_correction_within_bound": {
+              "added_quadratics": 3,
+              "degrees": [
+                1,
+                2,
+                2,
+                2,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                30,
+                36
+              ],
+              "predicted_top_degree": 442,
+              "first_negative_through_cutoff": null,
+              "first_nonzero_after_predicted_top_through_cutoff": null,
+              "checked_through_degree": 545,
+              "numerator_coefficient_sum": 220847810271713139378524661000,
+              "correction_partition": [
+                1,
+                6
+              ],
+              "total_degree_correction": 7
+            }
+          },
+          {
+            "natural_sequence": {
+              "added_quadratics": 4,
+              "degrees": [
+                1,
+                2,
+                2,
+                2,
+                2,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                29
+              ],
+              "predicted_top_degree": 407,
+              "first_negative_through_cutoff": [
+                383,
+                -27856240136
+              ],
+              "first_nonzero_after_predicted_top_through_cutoff": [
+                408,
+                -217637405490
+              ],
+              "checked_through_degree": 545
+            },
+            "first_hilbert_compatible_correction_within_bound": {
+              "added_quadratics": 4,
+              "degrees": [
+                1,
+                2,
+                2,
+                2,
+                2,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                27,
+                28,
+                30,
+                36
+              ],
+              "predicted_top_degree": 418,
+              "first_negative_through_cutoff": null,
+              "first_nonzero_after_predicted_top_through_cutoff": null,
+              "checked_through_degree": 545,
+              "numerator_coefficient_sum": 16988293097824087644501897000,
+              "correction_partition": [
+                1,
+                1,
+                2,
+                7
+              ],
+              "total_degree_correction": 11
+            }
+          }
+        ]
+      },
+      "automatic_missing_invariant_scan": {
+        "cutoff": 6,
+        "basis_interpretation": "exact dimensions of apolar-character bases from the SL2 weight-zero-minus-weight-two formula; the first missing degree has the explicit Casimir basis below",
+        "degrees": [
+          {
+            "degree": 0,
+            "invariant_even_dimension": 1,
+            "invariant_odd_dimension": 0,
+            "invariant_total_dimension": 1,
+            "moment_monomial_dimension": 1,
+            "missing_even_dimension": 0,
+            "missing_odd_dimension": 0
+          },
+          {
+            "degree": 1,
+            "invariant_even_dimension": 1,
+            "invariant_odd_dimension": 0,
+            "invariant_total_dimension": 1,
+            "moment_monomial_dimension": 1,
+            "missing_even_dimension": 0,
+            "missing_odd_dimension": 0
+          },
+          {
+            "degree": 2,
+            "invariant_even_dimension": 6,
+            "invariant_odd_dimension": 0,
+            "invariant_total_dimension": 6,
+            "moment_monomial_dimension": 2,
+            "missing_even_dimension": 4,
+            "missing_odd_dimension": 0
+          },
+          {
+            "degree": 3,
+            "invariant_even_dimension": 20,
+            "invariant_odd_dimension": 2,
+            "invariant_total_dimension": 22,
+            "moment_monomial_dimension": 3,
+            "missing_even_dimension": 17,
+            "missing_odd_dimension": 2
+          },
+          {
+            "degree": 4,
+            "invariant_even_dimension": 102,
+            "invariant_odd_dimension": 39,
+            "invariant_total_dimension": 141,
+            "moment_monomial_dimension": 5,
+            "missing_even_dimension": 97,
+            "missing_odd_dimension": 39
+          },
+          {
+            "degree": 5,
+            "invariant_even_dimension": 432,
+            "invariant_odd_dimension": 255,
+            "invariant_total_dimension": 687,
+            "moment_monomial_dimension": 7,
+            "missing_even_dimension": 425,
+            "missing_odd_dimension": 255
+          },
+          {
+            "degree": 6,
+            "invariant_even_dimension": 2038,
+            "invariant_odd_dimension": 1540,
+            "invariant_total_dimension": 3578,
+            "moment_monomial_dimension": 11,
+            "missing_even_dimension": 2027,
+            "missing_odd_dimension": 1540
+          }
+        ],
+        "first_missing_invariant_degree": 2,
+        "first_missing_character": "apolar-even",
+        "first_missing_dimension": 4,
+        "quadratic_invariant_basis": [
+          "q_0",
+          "q_2",
+          "q_4",
+          "q_6",
+          "q_8",
+          "q_10"
+        ],
+        "moment_quadratic_basis": [
+          "mu_1^2",
+          "mu_2"
+        ],
+        "minimal_quadratic_completion": [
+          "q_2",
+          "q_4",
+          "q_6",
+          "q_8"
+        ],
+        "first_apolar_odd_degree": 3,
+        "first_apolar_odd_dimension": 2,
+        "odd_cubic_component_triples": [
+          [
+            2,
+            3,
+            4
+          ],
+          [
+            2,
+            4,
+            5
+          ]
+        ],
+        "odd_cubic_dimension_formula": 2,
+        "casimir_radial_transition_to_next_degree": [
+          42,
+          40,
+          36,
+          30,
+          22,
+          12
+        ]
+      },
+      "hilbert_compatible_parameter_jacobians": [
+        {
+          "added_quadratic_components": [],
+          "moment_orders": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            32,
+            33,
+            34
+          ],
+          "rank": 33
+        },
+        {
+          "added_quadratic_components": [
+            1
+          ],
+          "moment_orders": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            32,
+            33
+          ],
+          "rank": 33
+        },
+        {
+          "added_quadratic_components": [
+            1,
+            2
+          ],
+          "moment_orders": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            30,
+            32,
+            33
+          ],
+          "rank": 33
+        },
+        {
+          "added_quadratic_components": [
+            1,
+            2,
+            3
+          ],
+          "moment_orders": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            30,
+            36
+          ],
+          "rank": 33
+        },
+        {
+          "added_quadratic_components": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "moment_orders": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            27,
+            28,
+            30,
+            36
+          ],
+          "rank": 33
+        }
+      ],
+      "propagated_moment_zero_witness": {
+        "moments_checked_through": 12,
+        "quadratic_values": [
+          "0",
+          "-24192",
+          "48384",
+          "0",
+          "0",
+          "0"
+        ],
+        "closed_quadratic_values": [
+          "0",
+          "-(d-1)!(d+2)!/5",
+          "(d-2)!(d+3)!/5",
+          "0",
+          "0",
+          "0"
+        ],
+        "odd_invariant_value": "0",
+        "q_2_separates_recorded_witness": true
+      }
+    },
+    "6": {
+      "quotient_dimension": 46,
+      "moment_jacobian_rank": 46,
+      "quadratic_completion_component_indices": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "odd_invariant": "tr(A_4 A_6 A_8)",
+      "odd_invariant_degree": 3,
+      "mu2_weights_on_q_components": [
+        1716,
+        1287,
+        715,
+        286,
+        78,
+        13,
+        1
+      ],
+      "relation_tests": [],
+      "hilbert_parameter_tests": {
+        "interpretation": "necessary Hilbert-series tests only; compatibility does not prove algebraic independence or a nullcone zero fiber",
+        "hilbert_coefficients_degrees_0_through_5": [
+          1,
+          1,
+          7,
+          35,
+          287,
+          1939
+        ],
+        "tests_by_number_of_added_quadratics": [
+          {
+            "natural_sequence": {
+              "added_quadratics": 0,
+              "degrees": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30,
+                31,
+                32,
+                33,
+                34,
+                35,
+                36,
+                37,
+                38,
+                39,
+                40,
+                41,
+                42,
+                43,
+                44,
+                45,
+                46
+              ],
+              "predicted_top_degree": 1032,
+              "first_negative_through_cutoff": null,
+              "first_nonzero_after_predicted_top_through_cutoff": null,
+              "checked_through_degree": 1052,
+              "numerator_coefficient_sum": 169512468818565151353738473075293448620420303194752640,
+              "correction_partition": [],
+              "total_degree_correction": 0
+            },
+            "first_hilbert_compatible_correction_within_bound": {
+              "added_quadratics": 0,
+              "degrees": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30,
+                31,
+                32,
+                33,
+                34,
+                35,
+                36,
+                37,
+                38,
+                39,
+                40,
+                41,
+                42,
+                43,
+                44,
+                45,
+                46
+              ],
+              "predicted_top_degree": 1032,
+              "first_negative_through_cutoff": null,
+              "first_nonzero_after_predicted_top_through_cutoff": null,
+              "checked_through_degree": 1052,
+              "numerator_coefficient_sum": 169512468818565151353738473075293448620420303194752640,
+              "correction_partition": [],
+              "total_degree_correction": 0
+            }
+          },
+          {
+            "natural_sequence": {
+              "added_quadratics": 1,
+              "degrees": [
+                1,
+                2,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30,
+                31,
+                32,
+                33,
+                34,
+                35,
+                36,
+                37,
+                38,
+                39,
+                40,
+                41,
+                42,
+                43,
+                44,
+                45
+              ],
+              "predicted_top_degree": 988,
+              "first_negative_through_cutoff": null,
+              "first_nonzero_after_predicted_top_through_cutoff": null,
+              "checked_through_degree": 1052,
+              "numerator_coefficient_sum": 7370107339937615276249498829360584722626969704119680,
+              "correction_partition": [],
+              "total_degree_correction": 0
+            },
+            "first_hilbert_compatible_correction_within_bound": {
+              "added_quadratics": 1,
+              "degrees": [
+                1,
+                2,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30,
+                31,
+                32,
+                33,
+                34,
+                35,
+                36,
+                37,
+                38,
+                39,
+                40,
+                41,
+                42,
+                43,
+                44,
+                45
+              ],
+              "predicted_top_degree": 988,
+              "first_negative_through_cutoff": null,
+              "first_nonzero_after_predicted_top_through_cutoff": null,
+              "checked_through_degree": 1052,
+              "numerator_coefficient_sum": 7370107339937615276249498829360584722626969704119680,
+              "correction_partition": [],
+              "total_degree_correction": 0
+            }
+          },
+          {
+            "natural_sequence": {
+              "added_quadratics": 2,
+              "degrees": [
+                1,
+                2,
+                2,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30,
+                31,
+                32,
+                33,
+                34,
+                35,
+                36,
+                37,
+                38,
+                39,
+                40,
+                41,
+                42,
+                43,
+                44
+              ],
+              "predicted_top_degree": 945,
+              "first_negative_through_cutoff": [
+                917,
+                -43941635937182632
+              ],
+              "first_nonzero_after_predicted_top_through_cutoff": [
+                946,
+                48977791547942880
+              ],
+              "checked_through_degree": 1052
+            },
+            "first_hilbert_compatible_correction_within_bound": {
+              "added_quadratics": 2,
+              "degrees": [
+                1,
+                2,
+                2,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30,
+                31,
+                32,
+                33,
+                34,
+                35,
+                36,
+                37,
+                38,
+                39,
+                40,
+                41,
+                42,
+                44,
+                45
+              ],
+              "predicted_top_degree": 947,
+              "first_negative_through_cutoff": null,
+              "first_nonzero_after_predicted_top_through_cutoff": null,
+              "checked_through_degree": 1052,
+              "numerator_coefficient_sum": 342795690229656524476720875784213242912882311819520,
+              "correction_partition": [
+                1,
+                1
+              ],
+              "total_degree_correction": 2
+            }
+          },
+          {
+            "natural_sequence": {
+              "added_quadratics": 3,
+              "degrees": [
+                1,
+                2,
+                2,
+                2,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30,
+                31,
+                32,
+                33,
+                34,
+                35,
+                36,
+                37,
+                38,
+                39,
+                40,
+                41,
+                42,
+                43
+              ],
+              "predicted_top_degree": 903,
+              "first_negative_through_cutoff": [
+                875,
+                -44792304331920988
+              ],
+              "first_nonzero_after_predicted_top_through_cutoff": [
+                904,
+                48978454223916000
+              ],
+              "checked_through_degree": 1052
+            },
+            "first_hilbert_compatible_correction_within_bound": {
+              "added_quadratics": 3,
+              "degrees": [
+                1,
+                2,
+                2,
+                2,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30,
+                31,
+                32,
+                33,
+                34,
+                35,
+                36,
+                37,
+                38,
+                39,
+                40,
+                42,
+                44,
+                45
+              ],
+              "predicted_top_degree": 908,
+              "first_negative_through_cutoff": null,
+              "first_nonzero_after_predicted_top_through_cutoff": null,
+              "checked_through_degree": 1052,
+              "numerator_coefficient_sum": 16721740986812513389108335404107963068921088381440,
+              "correction_partition": [
+                1,
+                2,
+                2
+              ],
+              "total_degree_correction": 5
+            }
+          },
+          {
+            "natural_sequence": {
+              "added_quadratics": 4,
+              "degrees": [
+                1,
+                2,
+                2,
+                2,
+                2,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30,
+                31,
+                32,
+                33,
+                34,
+                35,
+                36,
+                37,
+                38,
+                39,
+                40,
+                41,
+                42
+              ],
+              "predicted_top_degree": 862,
+              "first_negative_through_cutoff": [
+                831,
+                -8060809186405965
+              ],
+              "first_nonzero_after_predicted_top_through_cutoff": [
+                863,
+                -3963617280
+              ],
+              "checked_through_degree": 1052
+            },
+            "first_hilbert_compatible_correction_within_bound": {
+              "added_quadratics": 4,
+              "degrees": [
+                1,
+                2,
+                2,
+                2,
+                2,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30,
+                31,
+                32,
+                33,
+                34,
+                35,
+                36,
+                37,
+                39,
+                40,
+                42,
+                44,
+                45
+              ],
+              "predicted_top_degree": 872,
+              "first_negative_through_cutoff": null,
+              "first_nonzero_after_predicted_top_through_cutoff": null,
+              "checked_through_degree": 1052,
+              "numerator_coefficient_sum": 880091630884869125742543968637261214153741493760,
+              "correction_partition": [
+                1,
+                1,
+                2,
+                3,
+                3
+              ],
+              "total_degree_correction": 10
+            }
+          },
+          {
+            "natural_sequence": {
+              "added_quadratics": 5,
+              "degrees": [
+                1,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30,
+                31,
+                32,
+                33,
+                34,
+                35,
+                36,
+                37,
+                38,
+                39,
+                40,
+                41
+              ],
+              "predicted_top_degree": 822,
+              "first_negative_through_cutoff": [
+                789,
+                -728554317720260142
+              ],
+              "first_nonzero_after_predicted_top_through_cutoff": [
+                823,
+                495025491975589680
+              ],
+              "checked_through_degree": 1052
+            },
+            "first_hilbert_compatible_correction_within_bound": {
+              "added_quadratics": 5,
+              "degrees": [
+                1,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30,
+                31,
+                32,
+                33,
+                34,
+                35,
+                36,
+                39,
+                40,
+                42,
+                44,
+                45
+              ],
+              "predicted_top_degree": 837,
+              "first_negative_through_cutoff": null,
+              "first_nonzero_after_predicted_top_through_cutoff": null,
+              "checked_through_degree": 1052,
+              "numerator_coefficient_sum": 47572520588371304094191565872284389954256296960,
+              "correction_partition": [
+                2,
+                2,
+                3,
+                4,
+                4
+              ],
+              "total_degree_correction": 15
+            }
+          }
+        ]
+      },
+      "automatic_missing_invariant_scan": {
+        "cutoff": 6,
+        "basis_interpretation": "exact dimensions of apolar-character bases from the SL2 weight-zero-minus-weight-two formula; the first missing degree has the explicit Casimir basis below",
+        "degrees": [
+          {
+            "degree": 0,
+            "invariant_even_dimension": 1,
+            "invariant_odd_dimension": 0,
+            "invariant_total_dimension": 1,
+            "moment_monomial_dimension": 1,
+            "missing_even_dimension": 0,
+            "missing_odd_dimension": 0
+          },
+          {
+            "degree": 1,
+            "invariant_even_dimension": 1,
+            "invariant_odd_dimension": 0,
+            "invariant_total_dimension": 1,
+            "moment_monomial_dimension": 1,
+            "missing_even_dimension": 0,
+            "missing_odd_dimension": 0
+          },
+          {
+            "degree": 2,
+            "invariant_even_dimension": 7,
+            "invariant_odd_dimension": 0,
+            "invariant_total_dimension": 7,
+            "moment_monomial_dimension": 2,
+            "missing_even_dimension": 5,
+            "missing_odd_dimension": 0
+          },
+          {
+            "degree": 3,
+            "invariant_even_dimension": 30,
+            "invariant_odd_dimension": 5,
+            "invariant_total_dimension": 35,
+            "moment_monomial_dimension": 3,
+            "missing_even_dimension": 27,
+            "missing_odd_dimension": 5
+          },
+          {
+            "degree": 4,
+            "invariant_even_dimension": 193,
+            "invariant_odd_dimension": 94,
+            "invariant_total_dimension": 287,
+            "moment_monomial_dimension": 5,
+            "missing_even_dimension": 188,
+            "missing_odd_dimension": 94
+          },
+          {
+            "degree": 5,
+            "invariant_even_dimension": 1132,
+            "invariant_odd_dimension": 807,
+            "invariant_total_dimension": 1939,
+            "moment_monomial_dimension": 7,
+            "missing_even_dimension": 1125,
+            "missing_odd_dimension": 807
+          },
+          {
+            "degree": 6,
+            "invariant_even_dimension": 7094,
+            "invariant_odd_dimension": 6045,
+            "invariant_total_dimension": 13139,
+            "moment_monomial_dimension": 11,
+            "missing_even_dimension": 7083,
+            "missing_odd_dimension": 6045
+          }
+        ],
+        "first_missing_invariant_degree": 2,
+        "first_missing_character": "apolar-even",
+        "first_missing_dimension": 5,
+        "quadratic_invariant_basis": [
+          "q_0",
+          "q_2",
+          "q_4",
+          "q_6",
+          "q_8",
+          "q_10",
+          "q_12"
+        ],
+        "moment_quadratic_basis": [
+          "mu_1^2",
+          "mu_2"
+        ],
+        "minimal_quadratic_completion": [
+          "q_2",
+          "q_4",
+          "q_6",
+          "q_8",
+          "q_10"
+        ],
+        "first_apolar_odd_degree": 3,
+        "first_apolar_odd_dimension": 5,
+        "odd_cubic_component_triples": [
+          [
+            2,
+            3,
+            4
+          ],
+          [
+            2,
+            4,
+            5
+          ],
+          [
+            2,
+            5,
+            6
+          ],
+          [
+            3,
+            4,
+            6
+          ],
+          [
+            4,
+            5,
+            6
+          ]
+        ],
+        "odd_cubic_dimension_formula": 5,
+        "casimir_radial_transition_to_next_degree": [
+          56,
+          54,
+          50,
+          44,
+          36,
+          26,
+          14
+        ]
+      },
+      "hilbert_compatible_parameter_jacobians": [
+        {
+          "added_quadratic_components": [],
+          "moment_orders": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46
+          ],
+          "rank": 46
+        },
+        {
+          "added_quadratic_components": [
+            1
+          ],
+          "moment_orders": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45
+          ],
+          "rank": 46
+        },
+        {
+          "added_quadratic_components": [
+            1,
+            2
+          ],
+          "moment_orders": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            44,
+            45
+          ],
+          "rank": 46
+        },
+        {
+          "added_quadratic_components": [
+            1,
+            2,
+            3
+          ],
+          "moment_orders": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            42,
+            44,
+            45
+          ],
+          "rank": 46
+        },
+        {
+          "added_quadratic_components": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "moment_orders": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            39,
+            40,
+            42,
+            44,
+            45
+          ],
+          "rank": 46
+        },
+        {
+          "added_quadratic_components": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "moment_orders": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            39,
+            40,
+            42,
+            44,
+            45
+          ],
+          "rank": 46
+        }
+      ],
+      "propagated_moment_zero_witness": {
+        "moments_checked_through": 12,
+        "quadratic_values": [
+          "0",
+          "-967680",
+          "1741824",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "closed_quadratic_values": [
+          "0",
+          "-(d-1)!(d+2)!/5",
+          "(d-2)!(d+3)!/5",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "odd_invariant_value": "0",
+        "q_2_separates_recorded_witness": true
+      }
+    }
+  }
+}

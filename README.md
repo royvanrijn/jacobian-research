@@ -214,7 +214,14 @@ the six even-height variables are eliminated linearly by moments
 vector \((1,4,6,4,1)\).  Hence \(RF\) is formally isolated in the full
 ten-dimensional degree-five monomial correction space, although isolated
 finite corrections away from \(RF\) remain open.
-The same formal isolation is now exact in degrees six through eleven.  In
+The linear elimination underlying this formal rigidity is now uniform:
+for every \(d\ge5\), the
+\(2\lceil d/2\rceil\) even-height variables are eliminated by moments
+\(2,\ldots,2\lceil d/2\rceil+1\).  An endpoint-contact filtration over
+\(\mathbb Z_{(2)}\) gives the complete local Smith exponents and an
+explicit finite 2-adic valuation for the determinant.  The remaining
+all-degree conjecture concerns only the projected odd-height quadrics.
+The full formal isolation is exact in degrees six through eleven.  In
 degrees six and seven the odd-height kernel is cut out by six projected
 quadrics forming a length-\(64\) complete intersection with Hilbert vector
 \((1,6,15,20,15,6,1)\).  In degrees eight and nine, good-prime
@@ -223,10 +230,9 @@ length-\(256\) complete intersection with Hilbert vector
 \((1,8,28,56,70,56,28,8,1)\).  Degree ten gives ten projected quadrics,
 Hilbert vector \((1,10,45,120,210,252,210,120,45,10,1)\), and length
 \(1024\); degree eleven has the same ten-quadric Hilbert series and
-length.  Degrees five through eleven support a uniform
-conjecture: after \(2\lceil d/2\rceil\) linear pivots, the
-\(2\lfloor d/2\rfloor\) odd-height variables should be cut out by the
-same number of quadrics with Hilbert series
+length.  Degrees five through eleven support the remaining uniform
+conjecture: the \(2\lfloor d/2\rfloor\) odd-height variables should be cut
+out by the same number of projected quadrics with Hilbert series
 \((1+t)^{2\lfloor d/2\rfloor}\).
 Since the one-pair theorem is known, the minimum failing SIC pair
 dimension is exactly two.  The witness is bidegree \((4,4)\), has sixteen
@@ -295,7 +301,11 @@ The chart \(8c-3d^2=0\) with the expected cubic nonzero is now excluded
 by an exact three-variable unit certificate. The remaining
 uniform-specialization gate is one explicit Rabinowitsch membership on
 the complementary chart; modular standard bases support it, but an exact
-rational lift certificate has not completed. A separate finite
+rational lift certificate has not completed.  This gate is now reduced to
+the target-only identity
+\(\lambda^4(\lambda-1)^4(p(8c-3d^2))^5\in(f_3,f_4,f_5,f_6)\):
+the least exponent is \(5\) modulo \(101,103,107\), with a common
+degree-order basis size \(87\).  This remains modular evidence. A separate finite
 checker proves that the first four
 moments cut out the one-sided nullcone for symbols with at most two roots;
 the three-root orbit was already closed by five moments. Consequently the
@@ -697,8 +707,25 @@ Gröbner basis over \(\mathbb Q(c,v)\).  Thus any surviving
 genuinely nonlinear.  The same zero-slice method closes eight natural
 transverse skeletons even with a completely general degree-at-most-two
 fourth output and arbitrary affine \(P,Q\).  This is a fixed-skeleton
-quadratic screen; arbitrary transverse directions and two simultaneously
-general quadratic outputs remain open.
+quadratic screen; arbitrary quadratic transverse outputs remain open.  Four
+projective linear pivot trees give the uniform strengthening: every
+nonconstant affine third output is incompatible with a completely general
+degree-at-most-two fourth output.  The nonzero-\(r\) chart has exceptional
+divisors \(p_1,q_1,p_2,q_2,g,p_0-a\); the three \(r\)-free charts
+\(C=u+a z+b w,z+b w,w\) have shorter complete trees.  Every terminal
+coefficient rank is one below its augmented rank.  Thus the surviving
+systems must make both transverse outputs at least quadratic, or make the
+other output degree at least three.
+The first simultaneous-quadratic boundary is also closed when the second
+output remains exposed as \(B=r\): two completely general quadratic
+transverse outputs have an exact eight-pivot zero-slice obstruction.
+Degree three is sharp over the function field—\(C=w\) has an explicit
+rational cubic partner—but clearing its unavoidable
+\((1-cv)^3\) denominator gives full determinant
+\((1-cv)^3+6rv^2w\).  The corresponding full \(H=0\) cofactor derivation
+has a common zero, so this cubic survivor is not a polynomial Keller
+completion.  Any next quadratic/cubic attempt must activate \(P,Q\) or
+\(H\).
 The [stable-intersection theorem](verified/QUADRATIC_CANCELLATION_STABLE_INTERSECTION.md)
 shows that the cancellation and root-engineered quadratic-gauge families
 share exactly one stable polynomial left--right class: the foundational
@@ -883,7 +910,36 @@ nevertheless locally free of rank six by
 `Fitt_6=(1), Fitt_5=(0)` over the parameter plane.  Thus all 1,932
 squarefree-symbol coordinate planes retain the length-six defect, and any
 remaining singular-symbol quartic escape requires at least three basis
-directions.  For a
+directions.  A separate sum/alternating-sum parameter plane now removes
+basis sparsity as a necessary escape mechanism: for all seven squarefree
+symbols its generic tensor has nonzero coordinates in all 24 kernel
+directions, while the complete polynomial plane still has saturated
+cotangent presentation and the same pulled-back rank-three, length-six Ext
+block.  This is one full-support plane, not an open subset of the universal
+24-space.  Four further full-support dense lines for every squarefree
+symbol retain the central presentation for every scalar, and the full
+first-ten-coordinate subspace for the smooth symbol retains the central
+pruned presentation.  These are exact subspace calculations, not a
+universal theorem; the global 24-parameter Fitting discriminant remains
+open.  On the full universal input, all parameter-dependent cotangent
+entries begin in collision degree three, so the universal and central
+presentations agree modulo `(x,y,z)^3`.  Six parameter-independent unit
+pivots reduce the raw 12-by-31 matrix to a cokernel-equivalent 6-by-25
+matrix.  This exact reduction does not itself prove saturation: the
+remaining possible exceptional locus lies in higher-order syzygy lifting
+through the annihilator/support construction.  Minimal resolutions on the
+seven full-support planes sharpen that gap.  Their last differential has
+six parameter-independent linear rows presenting a length-six module
+killed by `(x,y,z)^2`; the remaining central-quadratic/parameter-cubic row
+is automatically redundant.  Thus `Fitt_6=(1), Fitt_5=(0)` on those
+planes for a structural reason, and the universal Fitting problem reduces
+to Rees strictness of this six-row resolution tail.  Translating the
+sum/alternating-sum plane by the deterministic
+generic quartic lift extends the constant length-six result to all ten
+cubic-symbol strata.  In particular, the double-line, triple-line, and zero
+symbols have pure two-dimensional support on the entire translated plane,
+not only at one lifted endpoint.  This remains a module theorem: normality
+and Keller-open compatibility are not inferred.  For a
 smooth homogeneous symbol the resulting algebra is already a normal
 integral global defect model, but its elliptic projective incidence surface
 makes its geometric divisor class group non-finitely generated, excluding
@@ -1642,11 +1698,16 @@ frontiers:
   The `r=7` column is closed by 21,504 rigorous Arb branch tubes on
   `0<=1/m<=1/101` and exact modular gcds for `m<=100`.  The branch method
   still does not provide a continuation uniform in `r`.
-- `OP-LR-REES`: linear target-lift Rees strictness as a finite module/SAGBI
-  problem, including a structural cutoff to finitely many torus weights.
-- `OP-LR-II`: the minimal pair is now nonzero; classify the remaining
-  generator matrices of `II_(F,p,-p)`, prove the finite-weight cutoff, and
-  determine whether the minimal class generates the quadratic normal image.
+- `OP-LR-REES`: the finite module/SAGBI computation is complete on the
+  ordinary-source-degree face of `F_2` and gives a negative answer there:
+  a weight-one linear combination subducts from degree `39` through `34` to
+  a genuinely new degree-`29` initial-module generator.  Other filtrations
+  and the universal associated-graded consequence remain open.
+- `OP-LR-II`: the saturated-face classification is complete.  Only
+  `p=1,2` survive, every `|p|>=3` matrix vanishes structurally, and
+  `II_(F,2,-2)(partial_A,A^2 partial_A)` gives a new independent class with
+  remainder `-987/395 e_C` modulo the full `p=1` image.  The extra quotient
+  is exactly the reduced length-one module `R/(gamma,6u-1)`.
 - `OP-LR-NE`: valuative no escape through the finite proper closure of the
   marked normalized-cover `Isom` relation, using `F2`, `H2`, `H3`, and generic
   deck rigidity before reconstructing automorphisms.
@@ -1739,14 +1800,22 @@ pairwise opposite-weight expansion is unnecessary at order two if the Rees
 degeneration of the target-lift coset is strict.  The next implementation is
 to construct the graded target-field, lifted, and normal modules and test
 their generators by Gröbner/module membership, not to enlarge the symbolic
-jet calculation.  Its quadratic obstruction is the explicit second
+jet calculation.  That finite computation now gives a three-generator
+target-invariant SAGBI basis and also shows that linear specialization is not
+strict: `3 ell_F(AC partial_A)-4 ell_F(C^2 partial_C)` drops from degree
+`39` to `34`, and adding `28 ell_F(B partial_A)` leaves a new degree-`29`
+initial generator.  Its quadratic obstruction is the explicit second
 fundamental form
 `II_F(Y_1,Y_2)=-(DF)^(-1)D^2F[ell_F(Y_1),ell_F(Y_2)]`; opposite weights reduce
 to invariant-module maps `II_(F,p,-p)` into the weight-zero normal module.  The
 smallest possible pair is already nonzero: the constant fields
 `(partial_B,partial_C)` have weights `(1,-1)` and saturated normal symbol
-`-146880u^5/7`.  Quadratic strict descent therefore fails, and this class is
-the canonical quadratic LR invariant anticipated by `OP-LR-II`.  Valuative no
+`-146880u^5/7`.  It is not the whole image: the only further surviving weight
+is `p=2`, where `(partial_A,A^2 partial_A)` has remainder
+`-987/395 e_C` modulo the full `p=1` image; all `|p|>=3` vanish by the
+semigroup cutoff.  Its quotient over the `p=1` image is the reduced
+length-one module `R/(gamma,6u-1)`.  Quadratic strict descent therefore fails
+with at least these two independent classes.  Valuative no
 escape is a separate marked-cover problem, not an automorphism-coefficient
 estimate.  None is a bottleneck for stable moduli, which already follow from
 decorated normalization and the affine sheet.

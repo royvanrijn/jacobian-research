@@ -1,0 +1,103 @@
+{
+  "status": "exact specializations and complete finite-field scans; full integral Fitting ideal timed out",
+  "base_ring": "Q[mu,nu]",
+  "canonical_module": {
+    "quadratic_generator_count": 114,
+    "quadratic_target_rank": 120,
+    "degree_three_source_rank": 1710,
+    "degree_three_target_rank": 680,
+    "cube_generator_count": 15,
+    "definition": "T=(im(Phi)+im(D))/im(Phi), where Phi(e_j tensor s_i)=s_i*f_j and D(e_i)=s_i^3"
+  },
+  "row_contents": {
+    "1": 2,
+    "2": 10,
+    "4": 4,
+    "8": 4,
+    "16": 1,
+    "nu": 1,
+    "2*nu": 13,
+    "4*nu": 14,
+    "8*nu": 19,
+    "16*nu": 2,
+    "4*nu^2": 16,
+    "8*nu^2": 26,
+    "8*nu^3": 2
+  },
+  "character_blocks": {
+    "even": {
+      "target_rank": 191,
+      "source_generator_count": 441,
+      "generic_rank": 190
+    },
+    "nontrivial": {
+      "target_rank": 163,
+      "source_generator_count": 423,
+      "generic_rank": 163
+    }
+  },
+  "finite_field_scans": {
+    "cube_orbit_representatives": {
+      "0": "z^4 (pure-fourth orbit)",
+      "1": "y*z^3 (3+1 orbit)",
+      "2": "y^2*z^2 (2+2 orbit)",
+      "6": "x*y*z^2 (2+1+1 orbit)"
+    },
+    "primes": [11, 13, 17, 19],
+    "radial_reductions": {
+      "11": [9, 10],
+      "13": [8, 4],
+      "17": [7, 12],
+      "19": [4, 2]
+    },
+    "additional_22_cube_reductions": {
+      "11": [2, 9],
+      "13": [7, 2],
+      "17": [4, 14],
+      "19": [11, 3]
+    },
+    "reconstruction": {
+      "radial": ["1/5", "1/10"],
+      "additional": ["-5/3", "-1/6"]
+    },
+    "chart_boundary_warning": "The primitive extension has extra support on nu=0 and breaks permutation symmetry there; interpret the 114-equation module on D(nu)."
+  },
+  "exact_specializations": {
+    "generic_1_1": {
+      "even_rank": 190,
+      "tested_22_cube_in_image": true
+    },
+    "radial": {
+      "parameters": ["1/5", "1/10"],
+      "even_rank": 130,
+      "nontrivial_rank": 120,
+      "all_four_tested_cube_orbits_outside_image": true
+    },
+    "mixed": {
+      "parameters": ["-5/3", "-1/6"],
+      "even_rank": 189,
+      "pure_fourth_cube_in_image": true,
+      "22_cube_in_image": false,
+      "22_cube_remainder": "-9*gen(10)",
+      "specialized_basis_size": 157,
+      "specialized_quotient_dimension": 60,
+      "nonzero_cube_indices": [2, 9, 11],
+      "all_fourth_powers_zero": true,
+      "reduced_fiber_is_origin": true,
+      "sextic": "(R^3-8*R*P2-32*P3)/30",
+      "hessian_discriminant": "(3*R^6+40*R^4*P2-1664*R^3*P3+64*R^2*P2^2+5120*R*P2*P3-512*P2^3-8192*P3^2)/27",
+      "hessian_discriminant_irreducible_over_Q": true,
+      "manifest_projective_signed_permutation_subgroup_order": 24,
+      "lower_face_status": "not run: the reduced Schur fiber is the coefficient origin"
+    }
+  },
+  "candidate_parameter_primes_on_D_nu": [
+    ["5*mu-1", "10*nu-1"],
+    ["3*mu+5", "6*nu+1"]
+  ],
+  "timeouts_seconds": {
+    "integral_even_block_annihilator": 900,
+    "function_field_even_block_lift": 900
+  },
+  "interpretation": "Cube torsion detects the radial reduced exceptional fiber and an additional rational nilpotence-order jump. It does not equal the reduced exceptional Schur locus. The exact zeroth Fitting ideal and associated-prime equality remain open."
+}

@@ -9,6 +9,7 @@ regression, not the proof of infinitude.
 from __future__ import annotations
 
 import hashlib
+import itertools
 from pathlib import Path
 
 import sympy as sp
@@ -251,6 +252,74 @@ constant_reduction = monotone_polynomial_reduce(
 )
 assert constant_reduction.second == 1
 assert constant_reduction.height == 2
+
+# Bounded evidence for the remaining alternating peak theorem.  Enumerate
+# all 49 positive-support pairs on exponents {-1,0,1}, then all alternating
+# two-step monomial shears of degrees 1,2 and coefficients +/-1.  Every
+# globally lowering path with a nondecreasing first step already has a
+# lowering complete polynomial shear at its initial pair.
+peak_polynomials = [
+    sp.Add(
+        *[
+            t**exponent
+            for index, exponent in enumerate((-1, 0, 1))
+            if mask >> index & 1
+        ]
+    )
+    for mask in range(1, 8)
+]
+peak_candidates = 0
+terminal_peak_candidates = 0
+for peak_first, peak_second in itertools.product(
+    peak_polynomials, repeat=2
+):
+    initial_height = pole_height(peak_first, peak_second, t)
+    for first_target, degree, coefficient in itertools.product(
+        (0, 1), (1, 2), (-1, 1)
+    ):
+        if first_target == 0:
+            middle_first = sp.expand(
+                peak_first + coefficient * peak_second**degree
+            )
+            middle_second = peak_second
+        else:
+            middle_first = peak_first
+            middle_second = sp.expand(
+                peak_second + coefficient * peak_first**degree
+            )
+        if middle_first == 0 or middle_second == 0:
+            continue
+        if pole_height(middle_first, middle_second, t) < initial_height:
+            continue
+
+        for next_degree, next_coefficient in itertools.product(
+            (1, 2), (-1, 1)
+        ):
+            if first_target == 0:
+                final_first = middle_first
+                final_second = sp.expand(
+                    middle_second
+                    + next_coefficient * middle_first**next_degree
+                )
+            else:
+                final_first = sp.expand(
+                    middle_first
+                    + next_coefficient * middle_second**next_degree
+                )
+                final_second = middle_second
+            if final_first == 0 or final_second == 0:
+                continue
+            if pole_height(final_first, final_second, t) >= initial_height:
+                continue
+
+            peak_candidates += 1
+            if not reducing_polynomial_shears(
+                peak_first, peak_second, t
+            ):
+                terminal_peak_candidates += 1
+
+assert peak_candidates == 16
+assert terminal_peak_candidates == 0
 
 print(
     "PASS: the four degree-zero filters retain an infinite family, and "

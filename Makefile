@@ -19,6 +19,7 @@ ALL_PAPERS := $(VERIFIED_PAPERS) $(PARKED_PAPERS) $(COMPANION_PAPERS)
 .PHONY: check verify verify-logged verify-minimal verify-core verify-geometry \
 	verify-theorems verify-regressions verify-derived verify-family \
 	verify-external-consequences verify-restricted-minima verify-two-real-gmc verify-sic2c4 verify-factorial-moments verify-factorial-frontier verify-counterexample-scoreboard verify-plane-jc verify-plane-case2-residue-strata verify-plane-case2-j1-endpoint verify-plane-case2-maximal-gcd verify-plane-case2-gcd6 verify-plane-poisson-radical verify-plane-poisson-primary-charts verify-plane-poisson-separators verify-plane-poisson-primary-filtration verify-plane-poisson-filtered-modules verify-weighted-boundary verify-quartic-degree-drop-quantization \
+	verify-lr-rees-sagbi \
 	verify-plane-sparse-supports verify-plane-support-bridge \
 	verify-linear-torus-free verify-algebraic-torus-free \
 	verify-master \
@@ -276,6 +277,12 @@ verify-singular-cubic-quartic-plane-saturation:
 verify-smooth-cubic-quartic-three-space-saturation:
 	$(PYTHON) scripts/verify_smooth_cubic_quartic_three_space_saturation.py
 
+verify-cubic-dense-quartic-plane-saturation:
+	$(PYTHON) scripts/verify_cubic_symbol_dense_quartic_plane_saturation.py
+
+verify-cubic-affine-dense-quartic-plane-saturation:
+	$(PYTHON) scripts/verify_cubic_symbol_affine_dense_quartic_plane_saturation.py
+
 verify-contact-r6:
 	$(PYTHON) scripts/verify_contact_resultant_r6_effective.py
 
@@ -494,6 +501,10 @@ verify-factorial-moments:
 
 verify-factorial-frontier:
 	$(PYTHON) scripts/verify_sparse_factorial_moment_frontier.py
+
+verify-lr-rees-sagbi:
+	$(PYTHON) scripts/compute_lr_rees_sagbi_modules.py
+	$(SYSTEM_PYTHON) scripts/audit_lr_rees_sagbi_module_certificate.py
 
 verify-regressions: verify-external-consequences verify-factorial-moments verify-factorial-frontier
 	$(PYTHON) scripts/verify_degree_five_stable_moduli.py

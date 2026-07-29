@@ -1,0 +1,209 @@
+{
+  "format": "completed-moment-diagonal-fields-v1",
+  "degrees": {
+    "3": {
+      "slice": "C=diag(a_0,...,a_3)",
+      "apolar_involution": "coordinate reversal",
+      "parameter_prime": 32003,
+      "finite_field_parameter_quotient_length": 24,
+      "finite_field_parameter_standard_basis_size": 10,
+      "characteristic_zero_parameter_quotient_length": 24,
+      "parameter_lift_argument": "homogeneous finite special fiber makes the projective characteristic-zero fiber empty by properness; regular sequence Hilbert series gives length (d+1)!",
+      "test_point": [
+        2,
+        3,
+        5,
+        7
+      ],
+      "reversed_point": [
+        7,
+        5,
+        3,
+        2
+      ],
+      "first_d_plus_2_moment_values": [
+        "70",
+        "54696",
+        "179081280",
+        "1590353464320",
+        "29825596217088000"
+      ],
+      "adapted_coordinates": {
+        "midpoint": [
+          "9/2",
+          "4",
+          "4",
+          "9/2"
+        ],
+        "direction": [
+          "-5/2",
+          "-1",
+          "1",
+          "5/2"
+        ],
+        "map": [
+          "9/2 - 5*s/2+y0",
+          "4 - s+y1",
+          "s + 4+y2",
+          "5*s/2 + 9/2"
+        ],
+        "expected_fiber_ideal": [
+          "y0",
+          "y1",
+          "y2",
+          "s^2-1"
+        ]
+      },
+      "fiber_length": 2,
+      "fiber_standard_basis_size": 4,
+      "expected_ideal_standard_basis_size": 4,
+      "mutual_ideal_reductions_zero": true,
+      "generic_full_moment_degree_on_slice": 2,
+      "full_moment_field_on_slice": "reversal-fixed field",
+      "scope_warning": "slice theorem only; does not determine the degree on Frac(R_3)"
+    },
+    "4": {
+      "slice": "C=diag(a_0,...,a_4)",
+      "apolar_involution": "coordinate reversal",
+      "parameter_prime": 32003,
+      "finite_field_parameter_quotient_length": 120,
+      "finite_field_parameter_standard_basis_size": 32,
+      "characteristic_zero_parameter_quotient_length": 120,
+      "parameter_lift_argument": "homogeneous finite special fiber makes the projective characteristic-zero fiber empty by properness; regular sequence Hilbert series gives length (d+1)!",
+      "test_point": [
+        2,
+        3,
+        5,
+        7,
+        11
+      ],
+      "reversed_point": [
+        11,
+        7,
+        5,
+        3,
+        2
+      ],
+      "first_d_plus_2_moment_values": [
+        "392",
+        "6350976",
+        "786491493120",
+        "371595648356352000",
+        "472381443403196866560000",
+        "1321167867982917099155619840000"
+      ],
+      "adapted_coordinates": {
+        "midpoint": [
+          "13/2",
+          "5",
+          "5",
+          "5",
+          "13/2"
+        ],
+        "direction": [
+          "-9/2",
+          "-2",
+          "0",
+          "2",
+          "9/2"
+        ],
+        "map": [
+          "13/2 - 9*s/2+y0",
+          "5 - 2*s+y1",
+          "5+y2",
+          "2*s + 5+y3",
+          "9*s/2 + 13/2"
+        ],
+        "expected_fiber_ideal": [
+          "y0",
+          "y1",
+          "y2",
+          "y3",
+          "s^2-1"
+        ]
+      },
+      "fiber_length": 2,
+      "fiber_standard_basis_size": 5,
+      "expected_ideal_standard_basis_size": 5,
+      "mutual_ideal_reductions_zero": true,
+      "generic_full_moment_degree_on_slice": 2,
+      "full_moment_field_on_slice": "reversal-fixed field",
+      "scope_warning": "slice theorem only; does not determine the degree on Frac(R_4)"
+    },
+    "5": {
+      "slice": "C=diag(a_0,...,a_5)",
+      "apolar_involution": "coordinate reversal",
+      "parameter_prime": 32003,
+      "finite_field_parameter_quotient_length": 720,
+      "finite_field_parameter_standard_basis_size": 133,
+      "characteristic_zero_parameter_quotient_length": 720,
+      "parameter_lift_argument": "homogeneous finite special fiber makes the projective characteristic-zero fiber empty by properness; regular sequence Hilbert series gives length (d+1)!",
+      "test_point": [
+        2,
+        3,
+        5,
+        7,
+        11,
+        13
+      ],
+      "reversed_point": [
+        13,
+        11,
+        7,
+        5,
+        3,
+        2
+      ],
+      "first_d_plus_2_moment_values": [
+        "2280",
+        "781755840",
+        "3526450276608000",
+        "84513903469091389440000",
+        "6983202045178276033019904000000",
+        "1550047919365782974778425311887360000000",
+        "784224396949338144311325228382982944849920000000"
+      ],
+      "adapted_coordinates": {
+        "midpoint": [
+          "15/2",
+          "7",
+          "6",
+          "6",
+          "7",
+          "15/2"
+        ],
+        "direction": [
+          "-11/2",
+          "-4",
+          "-1",
+          "1",
+          "4",
+          "11/2"
+        ],
+        "map": [
+          "15/2 - 11*s/2+y0",
+          "7 - 4*s+y1",
+          "6 - s+y2",
+          "s + 6+y3",
+          "4*s + 7+y4",
+          "11*s/2 + 15/2"
+        ],
+        "expected_fiber_ideal": [
+          "y0",
+          "y1",
+          "y2",
+          "y3",
+          "y4",
+          "s^2-1"
+        ]
+      },
+      "fiber_length": 2,
+      "fiber_standard_basis_size": 6,
+      "expected_ideal_standard_basis_size": 6,
+      "mutual_ideal_reductions_zero": true,
+      "generic_full_moment_degree_on_slice": 2,
+      "full_moment_field_on_slice": "reversal-fixed field",
+      "scope_warning": "slice theorem only; does not determine the degree on Frac(R_5)"
+    }
+  }
+}

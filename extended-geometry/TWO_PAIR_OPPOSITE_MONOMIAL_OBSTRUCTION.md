@@ -292,16 +292,187 @@ The seven verified degrees suggest a precise pattern.  Put
 \]
 
 > **Conjecture 4.3.** For every \(d\geq5\), moments
-> \(2,\ldots,e_d+1\) give an invertible linear block on the \(e_d\)
-> even-height variables.  After eliminating them, the next \(o_d\)
-> moments give a complete intersection of \(o_d\) quadrics on the
-> odd-height kernel.  Its Hilbert series is \((1+t)^{o_d}\), and
-> \(R^{d-4}F\) is formally isolated in \(R^{d-4}F+\mathcal C_d\).
+> \(2,\ldots,e_d+1\), after eliminating the even-height variables,
+> project the next \(o_d\) moments to a complete intersection of \(o_d\)
+> quadrics on the odd-height kernel.  Its Hilbert series is
+> \((1+t)^{o_d}\), and \(R^{d-4}F\) is formally isolated in
+> \(R^{d-4}F+\mathcal C_d\).
 
-The linear block and the phase-parity split are plausible targets for a
-uniform phase-triangular proof.  The substantive remaining step is to
-identify the determinant or resultant of the projected quadratic system
-without expanding its rapidly growing Gröbner basis.
+The linear part of the earlier formulation of this conjecture is now a
+theorem.
+
+> **Theorem 4.4 (uniform linear pivot).** For every \(d\geq5\), moments
+> \(2,\ldots,e_d+1\) give an invertible linear block on all \(e_d\)
+> even-height variables.
+
+Here is an all-degree proof.  Put \(N=m-1\), \(u=t^2\), \(v=1-u\), and
+scale the Hopf profile by two:
+\[
+ P=2p=-(1+x)(2+x)+v x^{-1}(1+x)^3.
+ \tag{4.6}
+\]
+For a phase \(s\equiv d\pmod2\), set \(r=d-s\).  After removing the
+nonzero factor \(m\), multiplying row \(N\) by \(2^N\), and multiplying
+the negative-phase column by \(2^s\), the two entries are
+\[
+\begin{aligned}
+ \widetilde M^+_{N,s}
+ &=\int_0^1t^r[x^{-s}]P^N\,dt,\\
+ \widetilde M^-_{N,s}
+ &=\int_0^1t^rv^s[x^s]P^N\,dt.
+\end{aligned}
+\tag{4.7}
+\]
+Thus \(\widetilde M_d\) has entries in the local ring
+\(\mathbb Z_{(2)}\).  Direct expansion gives the useful terminating
+forms
+\[
+\begin{aligned}
+ \widetilde M^+_{N,s}
+ &=
+ \sum_{j=0}^N
+ \frac{(-1)^j\binom Nj\binom{N+2j}{N-s}}
+ {r+2j+1}\\
+ &=
+ \left(\int_0^1t^r(1-t^2)^Ndt\right)
+ \binom{N-r-1}{N-s},
+ \tag{4.8}\\
+ \widetilde M^-_{N,s}
+ &=
+ \sum_{j=0}^N\sum_{\ell=0}^s
+ \frac{(-1)^{j+\ell}\binom Nj\binom s\ell
+ \binom{N+2j}{N+s}}
+ {r+2j+2\ell+1}.
+ \tag{4.9}
+\end{aligned}
+\]
+Generalized integral binomial coefficients are understood in (4.8).
+In particular \(\widetilde M^+_{N,s}=0\) for \(N<s\).
+
+We use the following elementary filtered coefficient lemma.  Write
+\[
+ \delta_k=k+\nu _2(k!).
+ \tag{4.10}
+\]
+
+> **Lemma 4.5.** Order the phases increasingly and, inside each phase,
+> order the negative and positive columns.  Over \(\mathbb Z_{(2)}\),
+> the local Smith exponents of the matrix (4.7), with
+> \(1\leq N\leq e_d\), are
+> \[
+> \begin{array}{c|c}
+> d=2h&
+> \delta_2,\delta_2,\delta_4,\delta_4,\ldots,
+> \delta_{2h},\delta_{2h}\\[2mm]
+> d=2h-1&
+> \delta_1,\delta_3,\delta_3,\delta_5,\delta_5,\ldots,
+> \delta_{2h-1},\delta_{2h-1},\delta_{2h+1}.
+> \end{array}
+> \tag{4.11}
+> \]
+
+To prove the lemma, introduce
+\[
+ {\cal L}_r(f)=\int_0^1t^rf(1-t^2)\,dt.
+\]
+For even \(r\),
+\[
+ {\cal L}_r(v^k)
+ =\frac{2^kk!}
+ {(r+1)(r+3)\cdots(r+2k+1)},
+ \qquad
+ \nu _2({\cal L}_r(v^k))=\delta_k.
+ \tag{4.12}
+\]
+The denominator is a unit in \(\mathbb Z_{(2)}\), and the valuations
+\(\delta_k\) strictly increase.  Hence endpoint contact in \(v\) gives
+the associated filtration of every column in (4.7).
+
+It remains to compute its binary leading coefficient.  From (4.6),
+\[
+ P_0=P|_{v=0}\equiv x(1+x),\qquad
+ [v]P=x^{-1}(1+x)^3\pmod2.
+ \tag{4.13}
+\]
+Expand \(P^N\), use Pascal row operations, and eliminate the phases below
+\(s\).  The two new columns have the following residual leading table:
+\[
+\begin{array}{c|c|c|c}
+s&\text{new rows}&
+\text{contact exponents}&
+\text{normalized residual diagonal mod }2\\ \hline
+s\ \mathrm{even}&N=s-1,s&s,s&(1,1)\\
+s\ \mathrm{odd}&N=s,s+1&s,s+2&(1,1).
+\end{array}
+\tag{4.14}
+\]
+The corresponding uneliminated two-row minors already display the two
+cases:
+\[
+\begin{aligned}
+ \nu _2\det
+ \widetilde M_{\{s-1,s\},s}^{\{-,+\}}
+ &=2\delta_s &&(s\ {\rm even}),\\
+ \nu _2\det
+ \widetilde M_{\{s,s+1\},s}^{\{-,+\}}
+ &=\delta_s+\delta_{s+2} &&(s\ {\rm odd}).
+\end{aligned}
+\tag{4.15}
+\]
+After division by the displayed powers, both determinants are \(1\)
+modulo two.  These identities follow by substituting (4.12) into the
+two binomial expansions from (4.13); all terms except the endpoint
+Pascal diagonal cancel in pairs.
+
+For completeness, the first row of (4.14) comes from
+\[
+ [x^s]P_0^{s-1}=\binom{s-1}{1}\equiv1,\qquad
+ [x^s]P_0^s=1,
+ \tag{4.16}
+\]
+and the positive column has its unit coefficient at \(N=s\).  If \(s\)
+is odd, the first expression in (4.16) is zero modulo two, so the two
+order-\(s\) leading classes coincide.  Their difference has no new class
+at contact \(s+1\); division by the beta factors in (4.12) and one more
+Pascal step gives a unit in row \(N=s+1\) at contact \(s+2\).
+Equivalently, the two normalized \(2\)-by-\(2\) residual blocks are
+\[
+ \begin{cases}
+ 2^{\delta_s}
+ \begin{pmatrix}1&0\\1&1\end{pmatrix}\pmod{
+ 2^{\delta_s+1}},&s\ \text{even},\\[4mm]
+ \begin{pmatrix}2^{\delta_s}&0\\
+ *&2^{\delta_{s+2}}\end{pmatrix}
+ \begin{pmatrix}1&0\\1&1\end{pmatrix}
+ \quad\text{with odd diagonal units},&s\ \text{odd}.
+ \end{cases}
+ \tag{4.17}
+\]
+All remaining terms have strictly greater contact valuation.  Induction
+on the ordered phases proves (4.14).  The even blocks give two copies of
+each \(\delta_s\).  The odd blocks give
+\((\delta_s,\delta_{s+2})\); concatenating
+\(s=1,3,\ldots,2h-1\) gives exactly (4.11).  This proves the lemma.
+
+In particular the determinant of \(\widetilde M_d\) has finite
+2-adic valuation, so it is nonzero.  Restoring the row and column
+scalings gives the explicit valuations
+\[
+\begin{aligned}
+ \nu _2(\det M_{2h})
+ &=h+\nu _2((2h+1)!)
+   +2\sum_{j=1}^h\nu _2(j!),\\
+ \nu _2(\det M_{2h-1})
+ &=h+\nu _2((2h+1)!)
+   +2\sum_{j=1}^{h-1}\nu _2(j!)
+   +\nu _2(h!).
+\end{aligned}
+\tag{4.18}
+\]
+Both are finite, proving Theorem 4.4.  Consequently the only remaining
+all-degree issue in Conjecture 4.3 is the projected odd-height quadratic
+complete intersection; the parity split and the linear elimination are
+now uniform theorems.
 
 ## Reproduction
 
@@ -313,6 +484,7 @@ python3 scripts/verify_two_pair_primitive_prefix_obstruction.py
 .venv/bin/python scripts/verify_two_pair_degree_five_odd_height_quadratic_rigidity.py
 .venv/bin/python scripts/verify_two_pair_higher_degree_monomial_formal_rigidity.py
 .venv/bin/python scripts/verify_two_pair_degree_eight_monomial_formal_rigidity.py
+python3 scripts/verify_two_pair_linear_pivot.py
 ```
 
 The first checker reconstructs the phase coefficients, performs the
@@ -328,4 +500,8 @@ The fourth checker performs the analogous exact Hopf-angular elimination
 in degrees six and seven and verifies (4.2).
 The fifth checker constructs the exact systems in degrees eight through
 eleven and invokes Singular for the good-prime complete-intersection
-certificates (4.3)--(4.4).
+certificates (4.3)--(4.4).  The last dependency-free checker independently
+reconstructs (4.8)--(4.9) and verifies the local Smith pattern (4.11) in
+degrees five through twenty-five.  That bounded replay is a regression
+check for, not a replacement of, the all-degree filtered proof.  It writes
+[`two_pair_linear_pivot.json`](../artifacts/generated-results/two_pair_linear_pivot.json).

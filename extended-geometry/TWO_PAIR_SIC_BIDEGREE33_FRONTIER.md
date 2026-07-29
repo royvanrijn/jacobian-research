@@ -888,6 +888,64 @@ Independent reductions in characteristics \(47\) and \(101\) reproduce
 all four quotient shapes.  Proposition 5.2b is a finite-quotient theorem,
 not a zero-fiber exclusion.
 
+### Trace/norm reconnaissance on the \(L\)-open
+
+There is a second useful finite algebra after weighted normalization
+\(L=1\).  Regard \(s_3,s_5,t_4\) as fiber variables and
+\(s_1,t_0,Q,t_2\) as base variables.  Modulo \(47\), the quotient
+
+\[
+ \mathbb F_{47}(s_1,t_0,Q,t_2)[s_3,s_5,t_4]/
+ (\mu_3,\mu_4,\mu_5)
+\]
+
+has length twelve and leading ideal
+
+\[
+ (s_3^2,s_5^2,s_5t_4^2,t_4^4).                       \tag{5.12b'}
+\]
+
+Its standard basis is
+
+\[
+\begin{split}
+ 1,t_4,t_4^2,t_4^3,s_5,s_5t_4,\;&s_3,s_3t_4,
+ s_3t_4^2,s_3t_4^3,\\
+ &s_3s_5,s_3s_5t_4.
+\end{split}
+\]
+
+Exact generator multiplication matrices and the normal form of \(\mu_6\)
+have been exported over the rational-function field.  At specialized
+base points, the checker constructs the multiplication matrices for
+\(\mu_6,\mu_7\), their traces, norms and characteristic polynomials, and
+the rank of the joint map
+
+\[
+ [M_{\mu_6}\ M_{\mu_7}]\colon A^{\oplus2}\longrightarrow A.
+\]
+
+Overflow-safe specialization is essential: base values are substituted
+inside the finite-field ring before passage to the three-variable fiber
+ring.
+
+In the recorded deterministic reconnaissance, all \(1200\) accepted
+points modulo \(47\) and all \(250\) accepted points modulo \(101\) have
+the same leading ideal (5.12b').  Modulo \(47\), three points have joint
+rank eleven and a reduced common quotient of length one.  Their base
+coordinates \((s_1,t_0,Q,t_2)\) are
+
+\[
+ (37,42,6,10),\qquad(36,21,17,21),\qquad(40,19,7,17).
+\]
+
+Direct replay with the corrected moment set
+\(\mu_1,\ldots,\mu_{12},\mu_{14}\) gives respective \(\mu_8\)-values
+\(-9,9,7\), so all three sampled trace candidates are excluded already
+by \(\mu_8\).  These calculations are finite-field reconnaissance, not
+an exhaustion of the rank-drop locus and not a characteristic-zero
+nullcone certificate.
+
 The constant \(t_2\)-pivot permits one more exact elimination without a
 five-variable Gröbner basis.  Use the adapted base coordinates
 \((s_1,s_3,t_0,L,Q)\), solve (5.12g) for \(t_2\), and let
