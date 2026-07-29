@@ -183,7 +183,18 @@ parser = argparse.ArgumentParser()
 parser.add_argument(
     "--extract-denominators",
     action="store_true",
-    help="print the factored coefficient denominator of the generic basis",
+    help=(
+        "print the factored coefficient denominator of the generic basis "
+        "and its lift transformation"
+    ),
+)
+parser.add_argument(
+    "--extract-basis-denominators",
+    action="store_true",
+    help=(
+        "print the factored coefficient denominator of the generic basis "
+        "without computing a lift transformation"
+    ),
 )
 parser.add_argument(
     "--basis-profile",
@@ -350,6 +361,15 @@ for (
   }}
 }}
 """
+elif arguments.extract_basis_denominators:
+    denominator_program = """
+poly cleared_basis_element;
+for (i=1;i<=size(G);i++)
+{
+  cleared_basis_element=cleardenom(G[i]);
+  print("DENOMINATOR "+string(leadcoef(cleared_basis_element)));
+}
+"""
 
 profile_program = ""
 if arguments.basis_profile:
@@ -403,7 +423,14 @@ completed = subprocess.run(
     text=True,
     capture_output=True,
     check=True,
-    timeout=900 if arguments.extract_denominators else 180,
+    timeout=(
+        900
+        if (
+            arguments.extract_denominators
+            or arguments.extract_basis_denominators
+        )
+        else 180
+    ),
 )
 if completed.stderr.strip():
     raise RuntimeError(completed.stderr)
@@ -419,7 +446,7 @@ cube_markers = re.findall(
 assert len(cube_markers) == 15
 assert all(success == "1" for _, success in cube_markers)
 
-if arguments.extract_denominators:
+if arguments.extract_denominators or arguments.extract_basis_denominators:
     denominator_strings = set(
         re.findall(r"(?m)^DENOMINATOR (.+)$", completed.stdout)
     )

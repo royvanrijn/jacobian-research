@@ -1,0 +1,329 @@
+{
+  "schema": "hessian-ritt-cellular-cotangent-prototype.v1",
+  "status": "exact linear and finite-jet prototype",
+  "cellular_incidence": {
+    "degree_30_filled_braid": {
+      "chain_dimensions": [
+        6,
+        6,
+        1
+      ],
+      "differential_ranks": [
+        5,
+        1
+      ],
+      "cohomology_dimensions": [
+        1,
+        0,
+        0
+      ],
+      "vertex_module_summands": 6,
+      "move_module_summands": 6,
+      "two_cell_module_summands": 1
+    },
+    "four_factor_coxeter_two_skeleton": {
+      "chain_dimensions": [
+        24,
+        36,
+        14
+      ],
+      "differential_ranks": [
+        23,
+        13
+      ],
+      "cohomology_dimensions": [
+        1,
+        0,
+        1
+      ],
+      "vertex_module_summands": 24,
+      "move_module_summands": 36,
+      "two_cell_module_summands": 14,
+      "cell_counts": {
+        "commuting": 6,
+        "braid": 8
+      },
+      "interpretation": "H2=1 is the top class of the permutohedron boundary; a three-cell, not another cotangent relation, kills it"
+    }
+  },
+  "degree_30": {
+    "degree": 30,
+    "reduced_component": "Dickson A2, with power boundary z=0",
+    "base_tangent_dimension": 2,
+    "sectors": [
+      {
+        "composite_omission": 10,
+        "prime_omission": 3,
+        "linear_totalization": {
+          "chain_dimensions": [
+            14,
+            15,
+            2
+          ],
+          "differential_ranks": [
+            12,
+            2
+          ],
+          "cohomology_dimensions": [
+            2,
+            1,
+            0
+          ],
+          "vertex_module_summands": 14,
+          "move_module_summands": 15,
+          "two_cell_module_summands": 2
+        },
+        "cellular_H1": {
+          "conormal_fiber_dimension": 1,
+          "support": "z=0",
+          "annihilator_power": 2
+        },
+        "cellular_H2_dimension": 0,
+        "completed_comparison": {
+          "path_nilpotence_index": 4,
+          "transverse_slice_exponents": [
+            5
+          ],
+          "transverse_slice_hilbert_vector": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "transverse_slice_length": 5,
+          "point_cotangent_homology_ranks": [
+            1,
+            1
+          ],
+          "augmentation_kernel_length": 4
+        }
+      },
+      {
+        "composite_omission": 15,
+        "prime_omission": 2,
+        "linear_totalization": {
+          "chain_dimensions": [
+            14,
+            15,
+            2
+          ],
+          "differential_ranks": [
+            12,
+            2
+          ],
+          "cohomology_dimensions": [
+            2,
+            1,
+            0
+          ],
+          "vertex_module_summands": 14,
+          "move_module_summands": 15,
+          "two_cell_module_summands": 2
+        },
+        "cellular_H1": {
+          "conormal_fiber_dimension": 1,
+          "support": "z=0",
+          "annihilator_power": 2
+        },
+        "cellular_H2_dimension": 0,
+        "completed_comparison": {
+          "path_nilpotence_index": 3,
+          "transverse_slice_exponents": [
+            2,
+            2
+          ],
+          "transverse_slice_hilbert_vector": [
+            1,
+            2,
+            1
+          ],
+          "transverse_slice_length": 4,
+          "point_cotangent_homology_ranks": [
+            2,
+            2
+          ],
+          "augmentation_kernel_length": 3
+        }
+      },
+      {
+        "composite_omission": 6,
+        "prime_omission": 5,
+        "linear_totalization": {
+          "chain_dimensions": [
+            14,
+            15,
+            2
+          ],
+          "differential_ranks": [
+            12,
+            2
+          ],
+          "cohomology_dimensions": [
+            2,
+            1,
+            0
+          ],
+          "vertex_module_summands": 14,
+          "move_module_summands": 15,
+          "two_cell_module_summands": 2
+        },
+        "cellular_H1": {
+          "conormal_fiber_dimension": 1,
+          "support": "z=0",
+          "annihilator_power": 4
+        },
+        "cellular_H2_dimension": 0,
+        "completed_comparison": {
+          "path_nilpotence_index": 4,
+          "transverse_slice_exponents": [
+            4,
+            2
+          ],
+          "transverse_slice_hilbert_vector": [
+            1,
+            2,
+            2,
+            2,
+            1
+          ],
+          "transverse_slice_length": 8,
+          "point_cotangent_homology_ranks": [
+            2,
+            2
+          ],
+          "augmentation_kernel_length": 7
+        }
+      }
+    ],
+    "conclusion": "all three associated-graded cellular cotangent complexes have H1 dimension one and H2 zero, while their completed transverse algebras and z-thicknesses differ"
+  },
+  "degree_42": {
+    "degree": 42,
+    "word": "2 o 7 o 3",
+    "ideal_flag": "I_6 < I_7=I_boundary < K",
+    "first_conormal_totalization": {
+      "chain_dimensions": [
+        16,
+        18,
+        2
+      ],
+      "differential_ranks": [
+        14,
+        2
+      ],
+      "cohomology_dimensions": [
+        2,
+        2,
+        0
+      ],
+      "vertex_module_summands": 16,
+      "move_module_summands": 18,
+      "two_cell_module_summands": 2
+    },
+    "cellular_H1": {
+      "sector": {
+        "fiber_dimension": 1,
+        "minimal_annihilator": "z^8"
+      },
+      "spectator": {
+        "fiber_dimension": 1,
+        "minimal_annihilator": "z"
+      }
+    },
+    "cellular_H2_dimension": 0,
+    "completed_jet_totalizations": [
+      {
+        "order": 1,
+        "base_dimension": 1,
+        "sector_dimension": 0,
+        "spectator_dimension": 0,
+        "totalization": {
+          "chain_dimensions": [
+            6,
+            6,
+            1
+          ],
+          "differential_ranks": [
+            5,
+            1
+          ],
+          "cohomology_dimensions": [
+            1,
+            0,
+            0
+          ],
+          "vertex_module_summands": 6,
+          "move_module_summands": 6,
+          "two_cell_module_summands": 1
+        }
+      },
+      {
+        "order": 2,
+        "base_dimension": 3,
+        "sector_dimension": 1,
+        "spectator_dimension": 1,
+        "totalization": {
+          "chain_dimensions": [
+            22,
+            24,
+            3
+          ],
+          "differential_ranks": [
+            19,
+            3
+          ],
+          "cohomology_dimensions": [
+            3,
+            2,
+            0
+          ],
+          "vertex_module_summands": 22,
+          "move_module_summands": 24,
+          "two_cell_module_summands": 3
+        }
+      },
+      {
+        "order": 3,
+        "base_dimension": 6,
+        "sector_dimension": 5,
+        "spectator_dimension": 3,
+        "totalization": {
+          "chain_dimensions": [
+            52,
+            60,
+            6
+          ],
+          "differential_ranks": [
+            46,
+            6
+          ],
+          "cohomology_dimensions": [
+            6,
+            8,
+            0
+          ],
+          "vertex_module_summands": 52,
+          "move_module_summands": 60,
+          "two_cell_module_summands": 6
+        }
+      }
+    ],
+    "extension_status": "the direct sum is the associated graded of the exact ideal flag; the completed transitivity extension class is not computed"
+  },
+  "theorem_boundary": {
+    "proved_by_this_checker": [
+      "all displayed rational matrices form chain complexes",
+      "the stated H1 and H2 dimensions follow by exact rank",
+      "commuting-square and braid-cell orientations satisfy d1*d0=0",
+      "the certified degree-30 and degree-42 dimensions assemble consistently"
+    ],
+    "not_proved": [
+      "the coefficient system is quasi-isomorphic to the full derived Hessian intersection",
+      "the degree-42 completed sector/spectator extension splits",
+      "the filtered H2 obstruction groups vanish beyond the displayed associated graded",
+      "an all-degree reusable deformation theorem"
+    ]
+  },
+  "reproducing_command": ".venv/bin/python scripts/verify_hessian_ritt_cellular_cotangent_prototype.py"
+}

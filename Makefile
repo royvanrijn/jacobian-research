@@ -121,6 +121,7 @@ verify-plane-jc:
 	$(PYTHON) plane-jc/cas/boundary_lattice_prefilter.py
 	$(PYTHON) plane-jc/cas/test_intrinsic_a2_boundary.py
 	$(PYTHON) plane-jc/cas/test_plane_boundary_exclusion.py
+	$(PYTHON) plane-jc/cas/test_degree_zero_endpoint_pairing.py
 	$(PYTHON) plane-jc/cas/test_finite_normalization_signatures.py
 	$(PYTHON) plane-jc/cas/test_target_conductor_atlas.py
 	$(PYTHON) plane-jc/cas/verify_unibranch_spectator_models.py
@@ -269,6 +270,9 @@ verify-cubic-quartic-tangent-saturation:
 verify-smooth-cubic-quartic-plane-saturation:
 	$(PYTHON) scripts/verify_smooth_cubic_quartic_plane_saturation.py
 
+verify-singular-cubic-quartic-plane-saturation:
+	$(PYTHON) scripts/verify_singular_cubic_quartic_plane_saturation.py
+
 verify-smooth-cubic-quartic-three-space-saturation:
 	$(PYTHON) scripts/verify_smooth_cubic_quartic_three_space_saturation.py
 
@@ -319,6 +323,8 @@ verify-hilbert14-invariants:
 
 verify-theorems:
 	$(PYTHON) scripts/verify_controlled_boundary_suspensions.py
+	$(PYTHON) scripts/verify_puncture_rank_frontier.py
+	$(PYTHON) scripts/verify_three_puncture_nonlinear_frontier.py
 	$(MAKE) verify-master
 	$(MAKE) verify-minimal-boundary
 	$(PYTHON) scripts/verify_weighted_seed_schema.py

@@ -79,6 +79,10 @@
     "d_four": "lam**4*(lam - 1)**4*(lam**2 - 6*lam + 6)**2*(22*lam**4 - 34*lam**3 - 29*lam**2 + 126*lam - 63)**6",
     "d_four_lambda": "lam**4*(lam - 1)**4*(6*lam**2 - 6*lam + 1)**2*(63*lam**4 - 126*lam**3 + 29*lam**2 + 34*lam - 22)**6"
   },
-  "remaining_exact_gate": "prove that specialization of the residual pairwise-resultant gcd introduces no squarefree orbit beyond the already closed harmonic and equianharmonic orbits; two-prime degree-jump screens support this but are not a proof",
+  "h_zero_g_nonzero_chart": {
+    "status": "exact unit ideal over Q",
+    "reduction": "substitute c=3*d^2/8 and divide the four moment numerators by the invertible powers g,g,g^2,g^2"
+  },
+  "remaining_exact_gate": "certify that (f3,f4,f5,f6,z*p*h-1) contains lambda^4*(lambda-1)^4 over Q",
   "written_source": "extended-geometry/TWO_PAIR_SIC_BIDEGREE44_RANK_FRONTIER.md"
 }

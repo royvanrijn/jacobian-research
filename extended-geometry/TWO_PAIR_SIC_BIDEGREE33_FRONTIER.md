@@ -838,17 +838,38 @@ and hence length five with standard basis
  1,t_4,t_4^2,s_5,s_5t_4.                               \tag{5.12j''}
 \]
 
-The three displayed leading coefficients are nonzero in the quartic
-field.  Thus (5.12j') is an exact characteristic-zero rank-five special
-fiber on \(J=\mu_3=0\).  It does not by itself prove that the same
-initial ideal holds on a dense open of \(J=0\).  Generic
-rational-function-field calculations on both split components in
-characteristics \(47\) and \(101\) all give the same length-five basis;
-these four modular calculations are reconstruction evidence, not the
-missing characteristic-zero generic theorem.  The earlier direct
-generic computation that kept \(J\) as an additional polynomial
-variable did not finish within the recorded \(180\)-second Singular
-bound; that timing is not a mathematical result.
+The special fiber can be promoted generically without adjoining \(J\)
+as a third polynomial variable.  Work directly over
+
+\[
+ K_J=\mathbb Q(\alpha)(s_1,s_3,t_0,L,t_2),\qquad
+ \alpha^2=-30420,
+\]
+
+and put \(99Q+155t_0^2=\alpha L\).  The specialized \(\mu_4,\mu_5\)
+have only six and eight fiber monomials.  Representing every coefficient
+as \(u+v\alpha\), fraction-free pseudo-reduction constructs three
+relations with respective supports \(6,7,6\) and leading monomials
+
+\[
+ s_5^2,\qquad s_5t_4^2,\qquad t_4^3.                   \tag{5.12j'''}
+\]
+
+The first two construction reductions take two and four steps.  Of the
+three Buchberger pairs, the pair \(s_5^2,t_4^3\) is removed by the
+product criterion, while the only remaining pair reduces exactly to
+zero in five steps over \(K_J\).  Thus (5.12j''') is the generic
+initial ideal on either conjugate component of \(J=0\).  Consequently
+the generic \(J\)-divisor quotient has length five with basis
+(5.12j'').  The quartic point (5.12j') additionally proves that this
+rank-five locus meets \(\mu_3=0\).
+
+Generic rational-function-field calculations on both split components
+in characteristics \(47\) and \(101\) independently reproduce the same
+basis.  The earlier direct computation that kept \(J\) as an additional
+polynomial variable did not finish within the recorded \(180\)-second
+Singular bound; the fraction-free quadratic-pair calculation avoids that
+software bottleneck.
 
 > **Proposition 5.2b (generic boundary quotient and divisor bases).**
 > Over \(K\), the quotient
@@ -859,8 +880,9 @@ bound; that timing is not a mathematical result.
 > support and the constant \(t_2\)-pivot described in
 > (5.12d)--(5.12g).
 > Moreover the localized exceptional intersection is empty as in
-> (5.12j).  The \(J=\mu_3=0\) branch contains the exact
-> characteristic-zero length-five special fiber (5.12j')--(5.12j'').
+> (5.12j).  At the generic point of \(J=0\), the quotient has the
+> length-five basis (5.12j'') and initial ideal (5.12j'''); the exact
+> point (5.12j') shows that this rank-five locus meets \(\mu_3=0\).
 
 Independent reductions in characteristics \(47\) and \(101\) reproduce
 all four quotient shapes.  Proposition 5.2b is a finite-quotient theorem,
@@ -985,9 +1007,8 @@ not prove that \(V_1\) stays nonzero on every component of
 \(\mathcal R_{63}=\mathcal T_{66}=0\).  That exceptional subresultant
 intersection, the remaining four \(\mu_6\)-coefficients, and the separate
 lower-dimensional coefficient ideal on \(J=0\) remain open.  The latter
-is now known to contain an exact rank-five special fiber; generic
-rank-five behavior is supported at both split roots modulo \(47\) and
-\(101\), but is not yet promoted in characteristic zero.
+now sits in a generic finite rank-five quotient; the remaining
+obstruction is its moment-coordinate ideal, not generic finiteness.
 
 One natural plane in the common boundary can already be closed. Put
 

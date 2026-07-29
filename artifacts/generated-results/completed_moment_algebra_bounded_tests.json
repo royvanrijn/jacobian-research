@@ -1,0 +1,3390 @@
+{
+  "status": "bounded modular nonrelation tests; positive intersections would require characteristic-zero reconstruction",
+  "prime": 1000003,
+  "max_weight": 10,
+  "extra_samples": 3,
+  "degrees": {
+    "3": {
+      "quotient_dimension": 13,
+      "moment_jacobian_rank": 13,
+      "quadratic_completion_component_indices": [
+        1,
+        2
+      ],
+      "odd_invariant": "tr(A_2 A_4 A_6^2)",
+      "odd_invariant_degree": 4,
+      "mu2_weights_on_q_components": [
+        35,
+        21,
+        7,
+        1
+      ],
+      "relation_tests": [
+        {
+          "label": "q_2_over_moments",
+          "weight": 2,
+          "base_columns": 2,
+          "target_multiple_columns": 1,
+          "combined_rank": 3,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_2_over_moments",
+          "weight": 3,
+          "base_columns": 3,
+          "target_multiple_columns": 1,
+          "combined_rank": 4,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_2_over_moments",
+          "weight": 4,
+          "base_columns": 5,
+          "target_multiple_columns": 2,
+          "combined_rank": 7,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_2_over_moments",
+          "weight": 5,
+          "base_columns": 7,
+          "target_multiple_columns": 3,
+          "combined_rank": 10,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_2_over_moments",
+          "weight": 6,
+          "base_columns": 11,
+          "target_multiple_columns": 5,
+          "combined_rank": 16,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_2_over_moments",
+          "weight": 7,
+          "base_columns": 15,
+          "target_multiple_columns": 7,
+          "combined_rank": 22,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_2_over_moments",
+          "weight": 8,
+          "base_columns": 22,
+          "target_multiple_columns": 11,
+          "combined_rank": 33,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_2_over_moments",
+          "weight": 9,
+          "base_columns": 30,
+          "target_multiple_columns": 15,
+          "combined_rank": 45,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_2_over_moments",
+          "weight": 10,
+          "base_columns": 42,
+          "target_multiple_columns": 22,
+          "combined_rank": 64,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_4_over_moments",
+          "weight": 2,
+          "base_columns": 2,
+          "target_multiple_columns": 1,
+          "combined_rank": 3,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_4_over_moments",
+          "weight": 3,
+          "base_columns": 3,
+          "target_multiple_columns": 1,
+          "combined_rank": 4,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_4_over_moments",
+          "weight": 4,
+          "base_columns": 5,
+          "target_multiple_columns": 2,
+          "combined_rank": 7,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_4_over_moments",
+          "weight": 5,
+          "base_columns": 7,
+          "target_multiple_columns": 3,
+          "combined_rank": 10,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_4_over_moments",
+          "weight": 6,
+          "base_columns": 11,
+          "target_multiple_columns": 5,
+          "combined_rank": 16,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_4_over_moments",
+          "weight": 7,
+          "base_columns": 15,
+          "target_multiple_columns": 7,
+          "combined_rank": 22,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_4_over_moments",
+          "weight": 8,
+          "base_columns": 22,
+          "target_multiple_columns": 11,
+          "combined_rank": 33,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_4_over_moments",
+          "weight": 9,
+          "base_columns": 30,
+          "target_multiple_columns": 15,
+          "combined_rank": 45,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_4_over_moments",
+          "weight": 10,
+          "base_columns": 42,
+          "target_multiple_columns": 22,
+          "combined_rank": 64,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_6_over_moments",
+          "weight": 2,
+          "base_columns": 2,
+          "target_multiple_columns": 1,
+          "combined_rank": 3,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_6_over_moments",
+          "weight": 3,
+          "base_columns": 3,
+          "target_multiple_columns": 1,
+          "combined_rank": 4,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_6_over_moments",
+          "weight": 4,
+          "base_columns": 5,
+          "target_multiple_columns": 2,
+          "combined_rank": 7,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_6_over_moments",
+          "weight": 5,
+          "base_columns": 7,
+          "target_multiple_columns": 3,
+          "combined_rank": 10,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_6_over_moments",
+          "weight": 6,
+          "base_columns": 11,
+          "target_multiple_columns": 5,
+          "combined_rank": 16,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_6_over_moments",
+          "weight": 7,
+          "base_columns": 15,
+          "target_multiple_columns": 7,
+          "combined_rank": 22,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_6_over_moments",
+          "weight": 8,
+          "base_columns": 22,
+          "target_multiple_columns": 11,
+          "combined_rank": 33,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_6_over_moments",
+          "weight": 9,
+          "base_columns": 30,
+          "target_multiple_columns": 15,
+          "combined_rank": 45,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_6_over_moments",
+          "weight": 10,
+          "base_columns": 42,
+          "target_multiple_columns": 22,
+          "combined_rank": 64,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_4_over_moments_q2",
+          "weight": 2,
+          "base_columns": 3,
+          "target_multiple_columns": 1,
+          "combined_rank": 4,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_4_over_moments_q2",
+          "weight": 3,
+          "base_columns": 4,
+          "target_multiple_columns": 1,
+          "combined_rank": 5,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_4_over_moments_q2",
+          "weight": 4,
+          "base_columns": 8,
+          "target_multiple_columns": 3,
+          "combined_rank": 11,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_4_over_moments_q2",
+          "weight": 5,
+          "base_columns": 11,
+          "target_multiple_columns": 4,
+          "combined_rank": 15,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_4_over_moments_q2",
+          "weight": 6,
+          "base_columns": 19,
+          "target_multiple_columns": 8,
+          "combined_rank": 27,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_4_over_moments_q2",
+          "weight": 7,
+          "base_columns": 26,
+          "target_multiple_columns": 11,
+          "combined_rank": 37,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_4_over_moments_q2",
+          "weight": 8,
+          "base_columns": 41,
+          "target_multiple_columns": 19,
+          "combined_rank": 60,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_4_over_moments_q2",
+          "weight": 9,
+          "base_columns": 56,
+          "target_multiple_columns": 26,
+          "combined_rank": 82,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_4_over_moments_q2",
+          "weight": 10,
+          "base_columns": 83,
+          "target_multiple_columns": 41,
+          "combined_rank": 124,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_6_over_moments_q2",
+          "weight": 2,
+          "base_columns": 3,
+          "target_multiple_columns": 1,
+          "combined_rank": 4,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_6_over_moments_q2",
+          "weight": 3,
+          "base_columns": 4,
+          "target_multiple_columns": 1,
+          "combined_rank": 5,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_6_over_moments_q2",
+          "weight": 4,
+          "base_columns": 8,
+          "target_multiple_columns": 3,
+          "combined_rank": 11,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_6_over_moments_q2",
+          "weight": 5,
+          "base_columns": 11,
+          "target_multiple_columns": 4,
+          "combined_rank": 15,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_6_over_moments_q2",
+          "weight": 6,
+          "base_columns": 19,
+          "target_multiple_columns": 8,
+          "combined_rank": 27,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_6_over_moments_q2",
+          "weight": 7,
+          "base_columns": 26,
+          "target_multiple_columns": 11,
+          "combined_rank": 37,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_6_over_moments_q2",
+          "weight": 8,
+          "base_columns": 41,
+          "target_multiple_columns": 19,
+          "combined_rank": 60,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_6_over_moments_q2",
+          "weight": 9,
+          "base_columns": 56,
+          "target_multiple_columns": 26,
+          "combined_rank": 82,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_6_over_moments_q2",
+          "weight": 10,
+          "base_columns": 83,
+          "target_multiple_columns": 41,
+          "combined_rank": 124,
+          "relation_intersection": 0
+        },
+        {
+          "label": "odd_square_over_moments",
+          "weight": 8,
+          "base_columns": 22,
+          "target_multiple_columns": 1,
+          "combined_rank": 23,
+          "relation_intersection": 0
+        },
+        {
+          "label": "odd_square_over_moments",
+          "weight": 9,
+          "base_columns": 30,
+          "target_multiple_columns": 1,
+          "combined_rank": 31,
+          "relation_intersection": 0
+        },
+        {
+          "label": "odd_square_over_moments",
+          "weight": 10,
+          "base_columns": 42,
+          "target_multiple_columns": 2,
+          "combined_rank": 44,
+          "relation_intersection": 0
+        },
+        {
+          "label": "odd_square_over_moments_q2",
+          "weight": 8,
+          "base_columns": 41,
+          "target_multiple_columns": 1,
+          "combined_rank": 42,
+          "relation_intersection": 0
+        },
+        {
+          "label": "odd_square_over_moments_q2",
+          "weight": 9,
+          "base_columns": 56,
+          "target_multiple_columns": 1,
+          "combined_rank": 57,
+          "relation_intersection": 0
+        },
+        {
+          "label": "odd_square_over_moments_q2",
+          "weight": 10,
+          "base_columns": 83,
+          "target_multiple_columns": 3,
+          "combined_rank": 86,
+          "relation_intersection": 0
+        },
+        {
+          "label": "odd_square_over_moments_q2_q6",
+          "weight": 8,
+          "base_columns": 72,
+          "target_multiple_columns": 1,
+          "combined_rank": 73,
+          "relation_intersection": 0
+        },
+        {
+          "label": "odd_square_over_moments_q2_q6",
+          "weight": 9,
+          "base_columns": 98,
+          "target_multiple_columns": 1,
+          "combined_rank": 99,
+          "relation_intersection": 0
+        },
+        {
+          "label": "odd_square_over_moments_q2_q6",
+          "weight": 10,
+          "base_columns": 155,
+          "target_multiple_columns": 4,
+          "combined_rank": 159,
+          "relation_intersection": 0
+        },
+        {
+          "label": "odd_square_over_quadratically_completed_moments",
+          "weight": 8,
+          "base_columns": 72,
+          "target_multiple_columns": 1,
+          "combined_rank": 73,
+          "relation_intersection": 0
+        },
+        {
+          "label": "odd_square_over_quadratically_completed_moments",
+          "weight": 9,
+          "base_columns": 98,
+          "target_multiple_columns": 1,
+          "combined_rank": 99,
+          "relation_intersection": 0
+        },
+        {
+          "label": "odd_square_over_quadratically_completed_moments",
+          "weight": 10,
+          "base_columns": 155,
+          "target_multiple_columns": 4,
+          "combined_rank": 159,
+          "relation_intersection": 0
+        }
+      ],
+      "hilbert_parameter_tests": {
+        "interpretation": "necessary Hilbert-series tests only; compatibility does not prove algebraic independence or a nullcone zero fiber",
+        "hilbert_coefficients_degrees_0_through_5": [
+          1,
+          1,
+          4,
+          8,
+          26,
+          53
+        ],
+        "tests_by_number_of_added_quadratics": [
+          {
+            "natural_sequence": {
+              "added_quadratics": 0,
+              "degrees": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13
+              ],
+              "predicted_top_degree": 75,
+              "first_negative_through_cutoff": [
+                63,
+                -2186
+              ],
+              "first_nonzero_after_predicted_top_through_cutoff": [
+                76,
+                4590
+              ],
+              "checked_through_degree": 95
+            },
+            "first_hilbert_compatible_correction_within_bound": {
+              "added_quadratics": 0,
+              "degrees": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                14
+              ],
+              "predicted_top_degree": 76,
+              "first_negative_through_cutoff": null,
+              "first_nonzero_after_predicted_top_through_cutoff": null,
+              "checked_through_degree": 95,
+              "numerator_coefficient_sum": 9226602,
+              "correction_partition": [
+                1
+              ],
+              "total_degree_correction": 1
+            }
+          },
+          {
+            "natural_sequence": {
+              "added_quadratics": 1,
+              "degrees": [
+                1,
+                2,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12
+              ],
+              "predicted_top_degree": 64,
+              "first_negative_through_cutoff": null,
+              "first_nonzero_after_predicted_top_through_cutoff": null,
+              "checked_through_degree": 95,
+              "numerator_coefficient_sum": 1318086,
+              "correction_partition": [],
+              "total_degree_correction": 0
+            },
+            "first_hilbert_compatible_correction_within_bound": {
+              "added_quadratics": 1,
+              "degrees": [
+                1,
+                2,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12
+              ],
+              "predicted_top_degree": 64,
+              "first_negative_through_cutoff": null,
+              "first_nonzero_after_predicted_top_through_cutoff": null,
+              "checked_through_degree": 95,
+              "numerator_coefficient_sum": 1318086,
+              "correction_partition": [],
+              "total_degree_correction": 0
+            }
+          },
+          {
+            "natural_sequence": {
+              "added_quadratics": 2,
+              "degrees": [
+                1,
+                2,
+                2,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11
+              ],
+              "predicted_top_degree": 54,
+              "first_negative_through_cutoff": [
+                50,
+                -79
+              ],
+              "first_nonzero_after_predicted_top_through_cutoff": [
+                55,
+                72
+              ],
+              "checked_through_degree": 95
+            },
+            "first_hilbert_compatible_correction_within_bound": {
+              "added_quadratics": 2,
+              "degrees": [
+                1,
+                2,
+                2,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                12
+              ],
+              "predicted_top_degree": 55,
+              "first_negative_through_cutoff": null,
+              "first_nonzero_after_predicted_top_through_cutoff": null,
+              "checked_through_degree": 95,
+              "numerator_coefficient_sum": 239652,
+              "correction_partition": [
+                1
+              ],
+              "total_degree_correction": 1
+            }
+          }
+        ]
+      },
+      "hilbert_compatible_parameter_jacobians": [
+        {
+          "added_quadratic_components": [],
+          "moment_orders": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            14
+          ],
+          "rank": 13
+        },
+        {
+          "added_quadratic_components": [
+            1
+          ],
+          "moment_orders": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "rank": 13
+        },
+        {
+          "added_quadratic_components": [
+            1,
+            2
+          ],
+          "moment_orders": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            12
+          ],
+          "rank": 13
+        }
+      ]
+    },
+    "4": {
+      "quotient_dimension": 22,
+      "moment_jacobian_rank": 22,
+      "quadratic_completion_component_indices": [
+        1,
+        2,
+        3
+      ],
+      "odd_invariant": "tr(A_4 A_6 A_8)",
+      "odd_invariant_degree": 3,
+      "mu2_weights_on_q_components": [
+        126,
+        84,
+        36,
+        9,
+        1
+      ],
+      "relation_tests": [
+        {
+          "label": "q_2_over_moments",
+          "weight": 2,
+          "base_columns": 2,
+          "target_multiple_columns": 1,
+          "combined_rank": 3,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_2_over_moments",
+          "weight": 3,
+          "base_columns": 3,
+          "target_multiple_columns": 1,
+          "combined_rank": 4,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_2_over_moments",
+          "weight": 4,
+          "base_columns": 5,
+          "target_multiple_columns": 2,
+          "combined_rank": 7,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_2_over_moments",
+          "weight": 5,
+          "base_columns": 7,
+          "target_multiple_columns": 3,
+          "combined_rank": 10,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_2_over_moments",
+          "weight": 6,
+          "base_columns": 11,
+          "target_multiple_columns": 5,
+          "combined_rank": 16,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_2_over_moments",
+          "weight": 7,
+          "base_columns": 15,
+          "target_multiple_columns": 7,
+          "combined_rank": 22,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_2_over_moments",
+          "weight": 8,
+          "base_columns": 22,
+          "target_multiple_columns": 11,
+          "combined_rank": 33,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_2_over_moments",
+          "weight": 9,
+          "base_columns": 30,
+          "target_multiple_columns": 15,
+          "combined_rank": 45,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_2_over_moments",
+          "weight": 10,
+          "base_columns": 42,
+          "target_multiple_columns": 22,
+          "combined_rank": 64,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_4_over_moments",
+          "weight": 2,
+          "base_columns": 2,
+          "target_multiple_columns": 1,
+          "combined_rank": 3,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_4_over_moments",
+          "weight": 3,
+          "base_columns": 3,
+          "target_multiple_columns": 1,
+          "combined_rank": 4,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_4_over_moments",
+          "weight": 4,
+          "base_columns": 5,
+          "target_multiple_columns": 2,
+          "combined_rank": 7,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_4_over_moments",
+          "weight": 5,
+          "base_columns": 7,
+          "target_multiple_columns": 3,
+          "combined_rank": 10,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_4_over_moments",
+          "weight": 6,
+          "base_columns": 11,
+          "target_multiple_columns": 5,
+          "combined_rank": 16,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_4_over_moments",
+          "weight": 7,
+          "base_columns": 15,
+          "target_multiple_columns": 7,
+          "combined_rank": 22,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_4_over_moments",
+          "weight": 8,
+          "base_columns": 22,
+          "target_multiple_columns": 11,
+          "combined_rank": 33,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_4_over_moments",
+          "weight": 9,
+          "base_columns": 30,
+          "target_multiple_columns": 15,
+          "combined_rank": 45,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_4_over_moments",
+          "weight": 10,
+          "base_columns": 42,
+          "target_multiple_columns": 22,
+          "combined_rank": 64,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_6_over_moments",
+          "weight": 2,
+          "base_columns": 2,
+          "target_multiple_columns": 1,
+          "combined_rank": 3,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_6_over_moments",
+          "weight": 3,
+          "base_columns": 3,
+          "target_multiple_columns": 1,
+          "combined_rank": 4,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_6_over_moments",
+          "weight": 4,
+          "base_columns": 5,
+          "target_multiple_columns": 2,
+          "combined_rank": 7,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_6_over_moments",
+          "weight": 5,
+          "base_columns": 7,
+          "target_multiple_columns": 3,
+          "combined_rank": 10,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_6_over_moments",
+          "weight": 6,
+          "base_columns": 11,
+          "target_multiple_columns": 5,
+          "combined_rank": 16,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_6_over_moments",
+          "weight": 7,
+          "base_columns": 15,
+          "target_multiple_columns": 7,
+          "combined_rank": 22,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_6_over_moments",
+          "weight": 8,
+          "base_columns": 22,
+          "target_multiple_columns": 11,
+          "combined_rank": 33,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_6_over_moments",
+          "weight": 9,
+          "base_columns": 30,
+          "target_multiple_columns": 15,
+          "combined_rank": 45,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_6_over_moments",
+          "weight": 10,
+          "base_columns": 42,
+          "target_multiple_columns": 22,
+          "combined_rank": 64,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_8_over_moments",
+          "weight": 2,
+          "base_columns": 2,
+          "target_multiple_columns": 1,
+          "combined_rank": 3,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_8_over_moments",
+          "weight": 3,
+          "base_columns": 3,
+          "target_multiple_columns": 1,
+          "combined_rank": 4,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_8_over_moments",
+          "weight": 4,
+          "base_columns": 5,
+          "target_multiple_columns": 2,
+          "combined_rank": 7,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_8_over_moments",
+          "weight": 5,
+          "base_columns": 7,
+          "target_multiple_columns": 3,
+          "combined_rank": 10,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_8_over_moments",
+          "weight": 6,
+          "base_columns": 11,
+          "target_multiple_columns": 5,
+          "combined_rank": 16,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_8_over_moments",
+          "weight": 7,
+          "base_columns": 15,
+          "target_multiple_columns": 7,
+          "combined_rank": 22,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_8_over_moments",
+          "weight": 8,
+          "base_columns": 22,
+          "target_multiple_columns": 11,
+          "combined_rank": 33,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_8_over_moments",
+          "weight": 9,
+          "base_columns": 30,
+          "target_multiple_columns": 15,
+          "combined_rank": 45,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_8_over_moments",
+          "weight": 10,
+          "base_columns": 42,
+          "target_multiple_columns": 22,
+          "combined_rank": 64,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_4_over_moments_q2",
+          "weight": 2,
+          "base_columns": 3,
+          "target_multiple_columns": 1,
+          "combined_rank": 4,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_4_over_moments_q2",
+          "weight": 3,
+          "base_columns": 4,
+          "target_multiple_columns": 1,
+          "combined_rank": 5,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_4_over_moments_q2",
+          "weight": 4,
+          "base_columns": 8,
+          "target_multiple_columns": 3,
+          "combined_rank": 11,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_4_over_moments_q2",
+          "weight": 5,
+          "base_columns": 11,
+          "target_multiple_columns": 4,
+          "combined_rank": 15,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_4_over_moments_q2",
+          "weight": 6,
+          "base_columns": 19,
+          "target_multiple_columns": 8,
+          "combined_rank": 27,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_4_over_moments_q2",
+          "weight": 7,
+          "base_columns": 26,
+          "target_multiple_columns": 11,
+          "combined_rank": 37,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_4_over_moments_q2",
+          "weight": 8,
+          "base_columns": 41,
+          "target_multiple_columns": 19,
+          "combined_rank": 60,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_4_over_moments_q2",
+          "weight": 9,
+          "base_columns": 56,
+          "target_multiple_columns": 26,
+          "combined_rank": 82,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_4_over_moments_q2",
+          "weight": 10,
+          "base_columns": 83,
+          "target_multiple_columns": 41,
+          "combined_rank": 124,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_6_over_moments_q2",
+          "weight": 2,
+          "base_columns": 3,
+          "target_multiple_columns": 1,
+          "combined_rank": 4,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_6_over_moments_q2",
+          "weight": 3,
+          "base_columns": 4,
+          "target_multiple_columns": 1,
+          "combined_rank": 5,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_6_over_moments_q2",
+          "weight": 4,
+          "base_columns": 8,
+          "target_multiple_columns": 3,
+          "combined_rank": 11,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_6_over_moments_q2",
+          "weight": 5,
+          "base_columns": 11,
+          "target_multiple_columns": 4,
+          "combined_rank": 15,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_6_over_moments_q2",
+          "weight": 6,
+          "base_columns": 19,
+          "target_multiple_columns": 8,
+          "combined_rank": 27,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_6_over_moments_q2",
+          "weight": 7,
+          "base_columns": 26,
+          "target_multiple_columns": 11,
+          "combined_rank": 37,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_6_over_moments_q2",
+          "weight": 8,
+          "base_columns": 41,
+          "target_multiple_columns": 19,
+          "combined_rank": 60,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_6_over_moments_q2",
+          "weight": 9,
+          "base_columns": 56,
+          "target_multiple_columns": 26,
+          "combined_rank": 82,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_6_over_moments_q2",
+          "weight": 10,
+          "base_columns": 83,
+          "target_multiple_columns": 41,
+          "combined_rank": 124,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_8_over_moments_q2",
+          "weight": 2,
+          "base_columns": 3,
+          "target_multiple_columns": 1,
+          "combined_rank": 4,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_8_over_moments_q2",
+          "weight": 3,
+          "base_columns": 4,
+          "target_multiple_columns": 1,
+          "combined_rank": 5,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_8_over_moments_q2",
+          "weight": 4,
+          "base_columns": 8,
+          "target_multiple_columns": 3,
+          "combined_rank": 11,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_8_over_moments_q2",
+          "weight": 5,
+          "base_columns": 11,
+          "target_multiple_columns": 4,
+          "combined_rank": 15,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_8_over_moments_q2",
+          "weight": 6,
+          "base_columns": 19,
+          "target_multiple_columns": 8,
+          "combined_rank": 27,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_8_over_moments_q2",
+          "weight": 7,
+          "base_columns": 26,
+          "target_multiple_columns": 11,
+          "combined_rank": 37,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_8_over_moments_q2",
+          "weight": 8,
+          "base_columns": 41,
+          "target_multiple_columns": 19,
+          "combined_rank": 60,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_8_over_moments_q2",
+          "weight": 9,
+          "base_columns": 56,
+          "target_multiple_columns": 26,
+          "combined_rank": 82,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_8_over_moments_q2",
+          "weight": 10,
+          "base_columns": 83,
+          "target_multiple_columns": 41,
+          "combined_rank": 124,
+          "relation_intersection": 0
+        },
+        {
+          "label": "odd_square_over_moments",
+          "weight": 6,
+          "base_columns": 11,
+          "target_multiple_columns": 1,
+          "combined_rank": 12,
+          "relation_intersection": 0
+        },
+        {
+          "label": "odd_square_over_moments",
+          "weight": 7,
+          "base_columns": 15,
+          "target_multiple_columns": 1,
+          "combined_rank": 16,
+          "relation_intersection": 0
+        },
+        {
+          "label": "odd_square_over_moments",
+          "weight": 8,
+          "base_columns": 22,
+          "target_multiple_columns": 2,
+          "combined_rank": 24,
+          "relation_intersection": 0
+        },
+        {
+          "label": "odd_square_over_moments",
+          "weight": 9,
+          "base_columns": 30,
+          "target_multiple_columns": 3,
+          "combined_rank": 33,
+          "relation_intersection": 0
+        },
+        {
+          "label": "odd_square_over_moments",
+          "weight": 10,
+          "base_columns": 42,
+          "target_multiple_columns": 5,
+          "combined_rank": 47,
+          "relation_intersection": 0
+        },
+        {
+          "label": "odd_square_over_moments_q2",
+          "weight": 6,
+          "base_columns": 19,
+          "target_multiple_columns": 1,
+          "combined_rank": 20,
+          "relation_intersection": 0
+        },
+        {
+          "label": "odd_square_over_moments_q2",
+          "weight": 7,
+          "base_columns": 26,
+          "target_multiple_columns": 1,
+          "combined_rank": 27,
+          "relation_intersection": 0
+        },
+        {
+          "label": "odd_square_over_moments_q2",
+          "weight": 8,
+          "base_columns": 41,
+          "target_multiple_columns": 3,
+          "combined_rank": 44,
+          "relation_intersection": 0
+        },
+        {
+          "label": "odd_square_over_moments_q2",
+          "weight": 9,
+          "base_columns": 56,
+          "target_multiple_columns": 4,
+          "combined_rank": 60,
+          "relation_intersection": 0
+        },
+        {
+          "label": "odd_square_over_moments_q2",
+          "weight": 10,
+          "base_columns": 83,
+          "target_multiple_columns": 8,
+          "combined_rank": 91,
+          "relation_intersection": 0
+        },
+        {
+          "label": "odd_square_over_moments_q2_q6",
+          "weight": 6,
+          "base_columns": 31,
+          "target_multiple_columns": 1,
+          "combined_rank": 32,
+          "relation_intersection": 0
+        },
+        {
+          "label": "odd_square_over_moments_q2_q6",
+          "weight": 7,
+          "base_columns": 42,
+          "target_multiple_columns": 1,
+          "combined_rank": 43,
+          "relation_intersection": 0
+        },
+        {
+          "label": "odd_square_over_moments_q2_q6",
+          "weight": 8,
+          "base_columns": 72,
+          "target_multiple_columns": 4,
+          "combined_rank": 76,
+          "relation_intersection": 0
+        },
+        {
+          "label": "odd_square_over_moments_q2_q6",
+          "weight": 9,
+          "base_columns": 98,
+          "target_multiple_columns": 5,
+          "combined_rank": 103,
+          "relation_intersection": 0
+        },
+        {
+          "label": "odd_square_over_moments_q2_q6",
+          "weight": 10,
+          "base_columns": 155,
+          "target_multiple_columns": 12,
+          "combined_rank": 167,
+          "relation_intersection": 0
+        },
+        {
+          "label": "odd_square_over_quadratically_completed_moments",
+          "weight": 6,
+          "base_columns": 48,
+          "target_multiple_columns": 1,
+          "combined_rank": 49,
+          "relation_intersection": 0
+        },
+        {
+          "label": "odd_square_over_quadratically_completed_moments",
+          "weight": 7,
+          "base_columns": 64,
+          "target_multiple_columns": 1,
+          "combined_rank": 65,
+          "relation_intersection": 0
+        },
+        {
+          "label": "odd_square_over_quadratically_completed_moments",
+          "weight": 8,
+          "base_columns": 120,
+          "target_multiple_columns": 5,
+          "combined_rank": 125,
+          "relation_intersection": 0
+        },
+        {
+          "label": "odd_square_over_quadratically_completed_moments",
+          "weight": 9,
+          "base_columns": 162,
+          "target_multiple_columns": 6,
+          "combined_rank": 168,
+          "relation_intersection": 0
+        },
+        {
+          "label": "odd_square_over_quadratically_completed_moments",
+          "weight": 10,
+          "base_columns": 275,
+          "target_multiple_columns": 17,
+          "combined_rank": 292,
+          "relation_intersection": 0
+        }
+      ],
+      "hilbert_parameter_tests": {
+        "interpretation": "necessary Hilbert-series tests only; compatibility does not prove algebraic independence or a nullcone zero fiber",
+        "hilbert_coefficients_degrees_0_through_5": [
+          1,
+          1,
+          5,
+          15,
+          65,
+          219
+        ],
+        "tests_by_number_of_added_quadratics": [
+          {
+            "natural_sequence": {
+              "added_quadratics": 0,
+              "degrees": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22
+              ],
+              "predicted_top_degree": 228,
+              "first_negative_through_cutoff": null,
+              "first_nonzero_after_predicted_top_through_cutoff": null,
+              "checked_through_degree": 248,
+              "numerator_coefficient_sum": 319488769447848000,
+              "correction_partition": [],
+              "total_degree_correction": 0
+            },
+            "first_hilbert_compatible_correction_within_bound": {
+              "added_quadratics": 0,
+              "degrees": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22
+              ],
+              "predicted_top_degree": 228,
+              "first_negative_through_cutoff": null,
+              "first_nonzero_after_predicted_top_through_cutoff": null,
+              "checked_through_degree": 248,
+              "numerator_coefficient_sum": 319488769447848000,
+              "correction_partition": [],
+              "total_degree_correction": 0
+            }
+          },
+          {
+            "natural_sequence": {
+              "added_quadratics": 1,
+              "degrees": [
+                1,
+                2,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21
+              ],
+              "predicted_top_degree": 208,
+              "first_negative_through_cutoff": null,
+              "first_nonzero_after_predicted_top_through_cutoff": null,
+              "checked_through_degree": 248,
+              "numerator_coefficient_sum": 29044433586168000,
+              "correction_partition": [],
+              "total_degree_correction": 0
+            },
+            "first_hilbert_compatible_correction_within_bound": {
+              "added_quadratics": 1,
+              "degrees": [
+                1,
+                2,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21
+              ],
+              "predicted_top_degree": 208,
+              "first_negative_through_cutoff": null,
+              "first_nonzero_after_predicted_top_through_cutoff": null,
+              "checked_through_degree": 248,
+              "numerator_coefficient_sum": 29044433586168000,
+              "correction_partition": [],
+              "total_degree_correction": 0
+            }
+          },
+          {
+            "natural_sequence": {
+              "added_quadratics": 2,
+              "degrees": [
+                1,
+                2,
+                2,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20
+              ],
+              "predicted_top_degree": 189,
+              "first_negative_through_cutoff": [
+                179,
+                -100710
+              ],
+              "first_nonzero_after_predicted_top_through_cutoff": [
+                190,
+                126720
+              ],
+              "checked_through_degree": 248
+            },
+            "first_hilbert_compatible_correction_within_bound": {
+              "added_quadratics": 2,
+              "degrees": [
+                1,
+                2,
+                2,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                20,
+                21
+              ],
+              "predicted_top_degree": 191,
+              "first_negative_through_cutoff": null,
+              "first_nonzero_after_predicted_top_through_cutoff": null,
+              "checked_through_degree": 248,
+              "numerator_coefficient_sum": 3057308798544000,
+              "correction_partition": [
+                1,
+                1
+              ],
+              "total_degree_correction": 2
+            }
+          },
+          {
+            "natural_sequence": {
+              "added_quadratics": 3,
+              "degrees": [
+                1,
+                2,
+                2,
+                2,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19
+              ],
+              "predicted_top_degree": 171,
+              "first_negative_through_cutoff": [
+                161,
+                -102273
+              ],
+              "first_nonzero_after_predicted_top_through_cutoff": [
+                172,
+                128280
+              ],
+              "checked_through_degree": 248
+            },
+            "first_hilbert_compatible_correction_within_bound": {
+              "added_quadratics": 3,
+              "degrees": [
+                1,
+                2,
+                2,
+                2,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                18,
+                20,
+                21
+              ],
+              "predicted_top_degree": 176,
+              "first_negative_through_cutoff": null,
+              "first_nonzero_after_predicted_top_through_cutoff": null,
+              "checked_through_degree": 248,
+              "numerator_coefficient_sum": 359683388064000,
+              "correction_partition": [
+                1,
+                2,
+                2
+              ],
+              "total_degree_correction": 5
+            }
+          }
+        ]
+      },
+      "hilbert_compatible_parameter_jacobians": [
+        {
+          "added_quadratic_components": [],
+          "moment_orders": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22
+          ],
+          "rank": 22
+        },
+        {
+          "added_quadratic_components": [
+            1
+          ],
+          "moment_orders": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21
+          ],
+          "rank": 22
+        },
+        {
+          "added_quadratic_components": [
+            1,
+            2
+          ],
+          "moment_orders": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            20,
+            21
+          ],
+          "rank": 22
+        },
+        {
+          "added_quadratic_components": [
+            1,
+            2,
+            3
+          ],
+          "moment_orders": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            18,
+            20,
+            21
+          ],
+          "rank": 22
+        }
+      ],
+      "propagated_moment_zero_witness": {
+        "moments_checked_through": 12,
+        "quadratic_values": [
+          "0",
+          "-864",
+          "2016",
+          "0",
+          "0"
+        ],
+        "odd_invariant_value": "0"
+      }
+    },
+    "5": {
+      "quotient_dimension": 33,
+      "moment_jacobian_rank": 33,
+      "quadratic_completion_component_indices": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "odd_invariant": "tr(A_4 A_6 A_8)",
+      "odd_invariant_degree": 3,
+      "mu2_weights_on_q_components": [
+        462,
+        330,
+        165,
+        55,
+        11,
+        1
+      ],
+      "relation_tests": [
+        {
+          "label": "q_2_over_moments",
+          "weight": 2,
+          "base_columns": 2,
+          "target_multiple_columns": 1,
+          "combined_rank": 3,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_2_over_moments",
+          "weight": 3,
+          "base_columns": 3,
+          "target_multiple_columns": 1,
+          "combined_rank": 4,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_2_over_moments",
+          "weight": 4,
+          "base_columns": 5,
+          "target_multiple_columns": 2,
+          "combined_rank": 7,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_2_over_moments",
+          "weight": 5,
+          "base_columns": 7,
+          "target_multiple_columns": 3,
+          "combined_rank": 10,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_2_over_moments",
+          "weight": 6,
+          "base_columns": 11,
+          "target_multiple_columns": 5,
+          "combined_rank": 16,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_2_over_moments",
+          "weight": 7,
+          "base_columns": 15,
+          "target_multiple_columns": 7,
+          "combined_rank": 22,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_2_over_moments",
+          "weight": 8,
+          "base_columns": 22,
+          "target_multiple_columns": 11,
+          "combined_rank": 33,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_2_over_moments",
+          "weight": 9,
+          "base_columns": 30,
+          "target_multiple_columns": 15,
+          "combined_rank": 45,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_2_over_moments",
+          "weight": 10,
+          "base_columns": 42,
+          "target_multiple_columns": 22,
+          "combined_rank": 64,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_4_over_moments",
+          "weight": 2,
+          "base_columns": 2,
+          "target_multiple_columns": 1,
+          "combined_rank": 3,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_4_over_moments",
+          "weight": 3,
+          "base_columns": 3,
+          "target_multiple_columns": 1,
+          "combined_rank": 4,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_4_over_moments",
+          "weight": 4,
+          "base_columns": 5,
+          "target_multiple_columns": 2,
+          "combined_rank": 7,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_4_over_moments",
+          "weight": 5,
+          "base_columns": 7,
+          "target_multiple_columns": 3,
+          "combined_rank": 10,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_4_over_moments",
+          "weight": 6,
+          "base_columns": 11,
+          "target_multiple_columns": 5,
+          "combined_rank": 16,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_4_over_moments",
+          "weight": 7,
+          "base_columns": 15,
+          "target_multiple_columns": 7,
+          "combined_rank": 22,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_4_over_moments",
+          "weight": 8,
+          "base_columns": 22,
+          "target_multiple_columns": 11,
+          "combined_rank": 33,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_4_over_moments",
+          "weight": 9,
+          "base_columns": 30,
+          "target_multiple_columns": 15,
+          "combined_rank": 45,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_4_over_moments",
+          "weight": 10,
+          "base_columns": 42,
+          "target_multiple_columns": 22,
+          "combined_rank": 64,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_6_over_moments",
+          "weight": 2,
+          "base_columns": 2,
+          "target_multiple_columns": 1,
+          "combined_rank": 3,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_6_over_moments",
+          "weight": 3,
+          "base_columns": 3,
+          "target_multiple_columns": 1,
+          "combined_rank": 4,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_6_over_moments",
+          "weight": 4,
+          "base_columns": 5,
+          "target_multiple_columns": 2,
+          "combined_rank": 7,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_6_over_moments",
+          "weight": 5,
+          "base_columns": 7,
+          "target_multiple_columns": 3,
+          "combined_rank": 10,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_6_over_moments",
+          "weight": 6,
+          "base_columns": 11,
+          "target_multiple_columns": 5,
+          "combined_rank": 16,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_6_over_moments",
+          "weight": 7,
+          "base_columns": 15,
+          "target_multiple_columns": 7,
+          "combined_rank": 22,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_6_over_moments",
+          "weight": 8,
+          "base_columns": 22,
+          "target_multiple_columns": 11,
+          "combined_rank": 33,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_6_over_moments",
+          "weight": 9,
+          "base_columns": 30,
+          "target_multiple_columns": 15,
+          "combined_rank": 45,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_6_over_moments",
+          "weight": 10,
+          "base_columns": 42,
+          "target_multiple_columns": 22,
+          "combined_rank": 64,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_8_over_moments",
+          "weight": 2,
+          "base_columns": 2,
+          "target_multiple_columns": 1,
+          "combined_rank": 3,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_8_over_moments",
+          "weight": 3,
+          "base_columns": 3,
+          "target_multiple_columns": 1,
+          "combined_rank": 4,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_8_over_moments",
+          "weight": 4,
+          "base_columns": 5,
+          "target_multiple_columns": 2,
+          "combined_rank": 7,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_8_over_moments",
+          "weight": 5,
+          "base_columns": 7,
+          "target_multiple_columns": 3,
+          "combined_rank": 10,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_8_over_moments",
+          "weight": 6,
+          "base_columns": 11,
+          "target_multiple_columns": 5,
+          "combined_rank": 16,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_8_over_moments",
+          "weight": 7,
+          "base_columns": 15,
+          "target_multiple_columns": 7,
+          "combined_rank": 22,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_8_over_moments",
+          "weight": 8,
+          "base_columns": 22,
+          "target_multiple_columns": 11,
+          "combined_rank": 33,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_8_over_moments",
+          "weight": 9,
+          "base_columns": 30,
+          "target_multiple_columns": 15,
+          "combined_rank": 45,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_8_over_moments",
+          "weight": 10,
+          "base_columns": 42,
+          "target_multiple_columns": 22,
+          "combined_rank": 64,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_10_over_moments",
+          "weight": 2,
+          "base_columns": 2,
+          "target_multiple_columns": 1,
+          "combined_rank": 3,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_10_over_moments",
+          "weight": 3,
+          "base_columns": 3,
+          "target_multiple_columns": 1,
+          "combined_rank": 4,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_10_over_moments",
+          "weight": 4,
+          "base_columns": 5,
+          "target_multiple_columns": 2,
+          "combined_rank": 7,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_10_over_moments",
+          "weight": 5,
+          "base_columns": 7,
+          "target_multiple_columns": 3,
+          "combined_rank": 10,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_10_over_moments",
+          "weight": 6,
+          "base_columns": 11,
+          "target_multiple_columns": 5,
+          "combined_rank": 16,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_10_over_moments",
+          "weight": 7,
+          "base_columns": 15,
+          "target_multiple_columns": 7,
+          "combined_rank": 22,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_10_over_moments",
+          "weight": 8,
+          "base_columns": 22,
+          "target_multiple_columns": 11,
+          "combined_rank": 33,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_10_over_moments",
+          "weight": 9,
+          "base_columns": 30,
+          "target_multiple_columns": 15,
+          "combined_rank": 45,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_10_over_moments",
+          "weight": 10,
+          "base_columns": 42,
+          "target_multiple_columns": 22,
+          "combined_rank": 64,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_4_over_moments_q2",
+          "weight": 2,
+          "base_columns": 3,
+          "target_multiple_columns": 1,
+          "combined_rank": 4,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_4_over_moments_q2",
+          "weight": 3,
+          "base_columns": 4,
+          "target_multiple_columns": 1,
+          "combined_rank": 5,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_4_over_moments_q2",
+          "weight": 4,
+          "base_columns": 8,
+          "target_multiple_columns": 3,
+          "combined_rank": 11,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_4_over_moments_q2",
+          "weight": 5,
+          "base_columns": 11,
+          "target_multiple_columns": 4,
+          "combined_rank": 15,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_4_over_moments_q2",
+          "weight": 6,
+          "base_columns": 19,
+          "target_multiple_columns": 8,
+          "combined_rank": 27,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_4_over_moments_q2",
+          "weight": 7,
+          "base_columns": 26,
+          "target_multiple_columns": 11,
+          "combined_rank": 37,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_4_over_moments_q2",
+          "weight": 8,
+          "base_columns": 41,
+          "target_multiple_columns": 19,
+          "combined_rank": 60,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_4_over_moments_q2",
+          "weight": 9,
+          "base_columns": 56,
+          "target_multiple_columns": 26,
+          "combined_rank": 82,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_4_over_moments_q2",
+          "weight": 10,
+          "base_columns": 83,
+          "target_multiple_columns": 41,
+          "combined_rank": 124,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_6_over_moments_q2",
+          "weight": 2,
+          "base_columns": 3,
+          "target_multiple_columns": 1,
+          "combined_rank": 4,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_6_over_moments_q2",
+          "weight": 3,
+          "base_columns": 4,
+          "target_multiple_columns": 1,
+          "combined_rank": 5,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_6_over_moments_q2",
+          "weight": 4,
+          "base_columns": 8,
+          "target_multiple_columns": 3,
+          "combined_rank": 11,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_6_over_moments_q2",
+          "weight": 5,
+          "base_columns": 11,
+          "target_multiple_columns": 4,
+          "combined_rank": 15,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_6_over_moments_q2",
+          "weight": 6,
+          "base_columns": 19,
+          "target_multiple_columns": 8,
+          "combined_rank": 27,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_6_over_moments_q2",
+          "weight": 7,
+          "base_columns": 26,
+          "target_multiple_columns": 11,
+          "combined_rank": 37,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_6_over_moments_q2",
+          "weight": 8,
+          "base_columns": 41,
+          "target_multiple_columns": 19,
+          "combined_rank": 60,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_6_over_moments_q2",
+          "weight": 9,
+          "base_columns": 56,
+          "target_multiple_columns": 26,
+          "combined_rank": 82,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_6_over_moments_q2",
+          "weight": 10,
+          "base_columns": 83,
+          "target_multiple_columns": 41,
+          "combined_rank": 124,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_8_over_moments_q2",
+          "weight": 2,
+          "base_columns": 3,
+          "target_multiple_columns": 1,
+          "combined_rank": 4,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_8_over_moments_q2",
+          "weight": 3,
+          "base_columns": 4,
+          "target_multiple_columns": 1,
+          "combined_rank": 5,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_8_over_moments_q2",
+          "weight": 4,
+          "base_columns": 8,
+          "target_multiple_columns": 3,
+          "combined_rank": 11,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_8_over_moments_q2",
+          "weight": 5,
+          "base_columns": 11,
+          "target_multiple_columns": 4,
+          "combined_rank": 15,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_8_over_moments_q2",
+          "weight": 6,
+          "base_columns": 19,
+          "target_multiple_columns": 8,
+          "combined_rank": 27,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_8_over_moments_q2",
+          "weight": 7,
+          "base_columns": 26,
+          "target_multiple_columns": 11,
+          "combined_rank": 37,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_8_over_moments_q2",
+          "weight": 8,
+          "base_columns": 41,
+          "target_multiple_columns": 19,
+          "combined_rank": 60,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_8_over_moments_q2",
+          "weight": 9,
+          "base_columns": 56,
+          "target_multiple_columns": 26,
+          "combined_rank": 82,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_8_over_moments_q2",
+          "weight": 10,
+          "base_columns": 83,
+          "target_multiple_columns": 41,
+          "combined_rank": 124,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_10_over_moments_q2",
+          "weight": 2,
+          "base_columns": 3,
+          "target_multiple_columns": 1,
+          "combined_rank": 4,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_10_over_moments_q2",
+          "weight": 3,
+          "base_columns": 4,
+          "target_multiple_columns": 1,
+          "combined_rank": 5,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_10_over_moments_q2",
+          "weight": 4,
+          "base_columns": 8,
+          "target_multiple_columns": 3,
+          "combined_rank": 11,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_10_over_moments_q2",
+          "weight": 5,
+          "base_columns": 11,
+          "target_multiple_columns": 4,
+          "combined_rank": 15,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_10_over_moments_q2",
+          "weight": 6,
+          "base_columns": 19,
+          "target_multiple_columns": 8,
+          "combined_rank": 27,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_10_over_moments_q2",
+          "weight": 7,
+          "base_columns": 26,
+          "target_multiple_columns": 11,
+          "combined_rank": 37,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_10_over_moments_q2",
+          "weight": 8,
+          "base_columns": 41,
+          "target_multiple_columns": 19,
+          "combined_rank": 60,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_10_over_moments_q2",
+          "weight": 9,
+          "base_columns": 56,
+          "target_multiple_columns": 26,
+          "combined_rank": 82,
+          "relation_intersection": 0
+        },
+        {
+          "label": "q_10_over_moments_q2",
+          "weight": 10,
+          "base_columns": 83,
+          "target_multiple_columns": 41,
+          "combined_rank": 124,
+          "relation_intersection": 0
+        },
+        {
+          "label": "odd_square_over_moments",
+          "weight": 6,
+          "base_columns": 11,
+          "target_multiple_columns": 1,
+          "combined_rank": 12,
+          "relation_intersection": 0
+        },
+        {
+          "label": "odd_square_over_moments",
+          "weight": 7,
+          "base_columns": 15,
+          "target_multiple_columns": 1,
+          "combined_rank": 16,
+          "relation_intersection": 0
+        },
+        {
+          "label": "odd_square_over_moments",
+          "weight": 8,
+          "base_columns": 22,
+          "target_multiple_columns": 2,
+          "combined_rank": 24,
+          "relation_intersection": 0
+        },
+        {
+          "label": "odd_square_over_moments",
+          "weight": 9,
+          "base_columns": 30,
+          "target_multiple_columns": 3,
+          "combined_rank": 33,
+          "relation_intersection": 0
+        },
+        {
+          "label": "odd_square_over_moments",
+          "weight": 10,
+          "base_columns": 42,
+          "target_multiple_columns": 5,
+          "combined_rank": 47,
+          "relation_intersection": 0
+        },
+        {
+          "label": "odd_square_over_moments_q2",
+          "weight": 6,
+          "base_columns": 19,
+          "target_multiple_columns": 1,
+          "combined_rank": 20,
+          "relation_intersection": 0
+        },
+        {
+          "label": "odd_square_over_moments_q2",
+          "weight": 7,
+          "base_columns": 26,
+          "target_multiple_columns": 1,
+          "combined_rank": 27,
+          "relation_intersection": 0
+        },
+        {
+          "label": "odd_square_over_moments_q2",
+          "weight": 8,
+          "base_columns": 41,
+          "target_multiple_columns": 3,
+          "combined_rank": 44,
+          "relation_intersection": 0
+        },
+        {
+          "label": "odd_square_over_moments_q2",
+          "weight": 9,
+          "base_columns": 56,
+          "target_multiple_columns": 4,
+          "combined_rank": 60,
+          "relation_intersection": 0
+        },
+        {
+          "label": "odd_square_over_moments_q2",
+          "weight": 10,
+          "base_columns": 83,
+          "target_multiple_columns": 8,
+          "combined_rank": 91,
+          "relation_intersection": 0
+        },
+        {
+          "label": "odd_square_over_moments_q2_q6",
+          "weight": 6,
+          "base_columns": 31,
+          "target_multiple_columns": 1,
+          "combined_rank": 32,
+          "relation_intersection": 0
+        },
+        {
+          "label": "odd_square_over_moments_q2_q6",
+          "weight": 7,
+          "base_columns": 42,
+          "target_multiple_columns": 1,
+          "combined_rank": 43,
+          "relation_intersection": 0
+        },
+        {
+          "label": "odd_square_over_moments_q2_q6",
+          "weight": 8,
+          "base_columns": 72,
+          "target_multiple_columns": 4,
+          "combined_rank": 76,
+          "relation_intersection": 0
+        },
+        {
+          "label": "odd_square_over_moments_q2_q6",
+          "weight": 9,
+          "base_columns": 98,
+          "target_multiple_columns": 5,
+          "combined_rank": 103,
+          "relation_intersection": 0
+        },
+        {
+          "label": "odd_square_over_moments_q2_q6",
+          "weight": 10,
+          "base_columns": 155,
+          "target_multiple_columns": 12,
+          "combined_rank": 167,
+          "relation_intersection": 0
+        },
+        {
+          "label": "odd_square_over_quadratically_completed_moments",
+          "weight": 6,
+          "base_columns": 71,
+          "target_multiple_columns": 1,
+          "combined_rank": 72,
+          "relation_intersection": 0
+        },
+        {
+          "label": "odd_square_over_quadratically_completed_moments",
+          "weight": 7,
+          "base_columns": 93,
+          "target_multiple_columns": 1,
+          "combined_rank": 94,
+          "relation_intersection": 0
+        },
+        {
+          "label": "odd_square_over_quadratically_completed_moments",
+          "weight": 8,
+          "base_columns": 191,
+          "target_multiple_columns": 6,
+          "combined_rank": 197,
+          "relation_intersection": 0
+        },
+        {
+          "label": "odd_square_over_quadratically_completed_moments",
+          "weight": 9,
+          "base_columns": 255,
+          "target_multiple_columns": 7,
+          "combined_rank": 262,
+          "relation_intersection": 0
+        },
+        {
+          "label": "odd_square_over_quadratically_completed_moments",
+          "weight": 10,
+          "base_columns": 466,
+          "target_multiple_columns": 23,
+          "combined_rank": 489,
+          "relation_intersection": 0
+        }
+      ],
+      "hilbert_parameter_tests": {
+        "interpretation": "necessary Hilbert-series tests only; compatibility does not prove algebraic independence or a nullcone zero fiber",
+        "hilbert_coefficients_degrees_0_through_5": [
+          1,
+          1,
+          6,
+          22,
+          141,
+          687
+        ],
+        "tests_by_number_of_added_quadratics": [
+          {
+            "natural_sequence": {
+              "added_quadratics": 0,
+              "degrees": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30,
+                31,
+                32,
+                33
+              ],
+              "predicted_top_degree": 525,
+              "first_negative_through_cutoff": [
+                483,
+                -27057077654425437
+              ],
+              "first_nonzero_after_predicted_top_through_cutoff": [
+                526,
+                56435111198466000
+              ],
+              "checked_through_degree": 545
+            },
+            "first_hilbert_compatible_correction_within_bound": {
+              "added_quadratics": 0,
+              "degrees": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30,
+                32,
+                33,
+                34
+              ],
+              "predicted_top_degree": 528,
+              "first_negative_through_cutoff": null,
+              "first_nonzero_after_predicted_top_through_cutoff": null,
+              "checked_through_degree": 545,
+              "numerator_coefficient_sum": 798438450069000236566492824402000,
+              "correction_partition": [
+                1,
+                1,
+                1
+              ],
+              "total_degree_correction": 3
+            }
+          },
+          {
+            "natural_sequence": {
+              "added_quadratics": 1,
+              "degrees": [
+                1,
+                2,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30,
+                31,
+                32
+              ],
+              "predicted_top_degree": 494,
+              "first_negative_through_cutoff": [
+                476,
+                -30553866672
+              ],
+              "first_nonzero_after_predicted_top_through_cutoff": [
+                495,
+                33400999800
+              ],
+              "checked_through_degree": 545
+            },
+            "first_hilbert_compatible_correction_within_bound": {
+              "added_quadratics": 1,
+              "degrees": [
+                1,
+                2,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30,
+                32,
+                33
+              ],
+              "predicted_top_degree": 496,
+              "first_negative_through_cutoff": null,
+              "first_nonzero_after_predicted_top_through_cutoff": null,
+              "checked_through_degree": 545,
+              "numerator_coefficient_sum": 46966967651117660974499577906000,
+              "correction_partition": [
+                1,
+                1
+              ],
+              "total_degree_correction": 2
+            }
+          },
+          {
+            "natural_sequence": {
+              "added_quadratics": 2,
+              "degrees": [
+                1,
+                2,
+                2,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30,
+                31
+              ],
+              "predicted_top_degree": 464,
+              "first_negative_through_cutoff": [
+                443,
+                -3188099796
+              ],
+              "first_nonzero_after_predicted_top_through_cutoff": [
+                465,
+                33421666950
+              ],
+              "checked_through_degree": 545
+            },
+            "first_hilbert_compatible_correction_within_bound": {
+              "added_quadratics": 2,
+              "degrees": [
+                1,
+                2,
+                2,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                30,
+                32,
+                33
+              ],
+              "predicted_top_degree": 469,
+              "first_negative_through_cutoff": null,
+              "first_nonzero_after_predicted_top_through_cutoff": null,
+              "checked_through_degree": 545,
+              "numerator_coefficient_sum": 3239101217318459377551695028000,
+              "correction_partition": [
+                1,
+                2,
+                2
+              ],
+              "total_degree_correction": 5
+            }
+          },
+          {
+            "natural_sequence": {
+              "added_quadratics": 3,
+              "degrees": [
+                1,
+                2,
+                2,
+                2,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30
+              ],
+              "predicted_top_degree": 435,
+              "first_negative_through_cutoff": [
+                416,
+                -28602462246
+              ],
+              "first_nonzero_after_predicted_top_through_cutoff": [
+                436,
+                33421666950
+              ],
+              "checked_through_degree": 545
+            },
+            "first_hilbert_compatible_correction_within_bound": {
+              "added_quadratics": 3,
+              "degrees": [
+                1,
+                2,
+                2,
+                2,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                30,
+                36
+              ],
+              "predicted_top_degree": 442,
+              "first_negative_through_cutoff": null,
+              "first_nonzero_after_predicted_top_through_cutoff": null,
+              "checked_through_degree": 545,
+              "numerator_coefficient_sum": 220847810271713139378524661000,
+              "correction_partition": [
+                1,
+                6
+              ],
+              "total_degree_correction": 7
+            }
+          },
+          {
+            "natural_sequence": {
+              "added_quadratics": 4,
+              "degrees": [
+                1,
+                2,
+                2,
+                2,
+                2,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                29
+              ],
+              "predicted_top_degree": 407,
+              "first_negative_through_cutoff": [
+                383,
+                -27856240136
+              ],
+              "first_nonzero_after_predicted_top_through_cutoff": [
+                408,
+                -217637405490
+              ],
+              "checked_through_degree": 545
+            },
+            "first_hilbert_compatible_correction_within_bound": {
+              "added_quadratics": 4,
+              "degrees": [
+                1,
+                2,
+                2,
+                2,
+                2,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                27,
+                28,
+                30,
+                36
+              ],
+              "predicted_top_degree": 418,
+              "first_negative_through_cutoff": null,
+              "first_nonzero_after_predicted_top_through_cutoff": null,
+              "checked_through_degree": 545,
+              "numerator_coefficient_sum": 16988293097824087644501897000,
+              "correction_partition": [
+                1,
+                1,
+                2,
+                7
+              ],
+              "total_degree_correction": 11
+            }
+          }
+        ]
+      },
+      "hilbert_compatible_parameter_jacobians": [
+        {
+          "added_quadratic_components": [],
+          "moment_orders": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            32,
+            33,
+            34
+          ],
+          "rank": 33
+        },
+        {
+          "added_quadratic_components": [
+            1
+          ],
+          "moment_orders": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            32,
+            33
+          ],
+          "rank": 33
+        },
+        {
+          "added_quadratic_components": [
+            1,
+            2
+          ],
+          "moment_orders": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            30,
+            32,
+            33
+          ],
+          "rank": 33
+        },
+        {
+          "added_quadratic_components": [
+            1,
+            2,
+            3
+          ],
+          "moment_orders": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            30,
+            36
+          ],
+          "rank": 33
+        },
+        {
+          "added_quadratic_components": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "moment_orders": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            27,
+            28,
+            30,
+            36
+          ],
+          "rank": 33
+        }
+      ],
+      "propagated_moment_zero_witness": {
+        "moments_checked_through": 12,
+        "quadratic_values": [
+          "0",
+          "-24192",
+          "48384",
+          "0",
+          "0",
+          "0"
+        ],
+        "odd_invariant_value": "0"
+      }
+    }
+  }
+}

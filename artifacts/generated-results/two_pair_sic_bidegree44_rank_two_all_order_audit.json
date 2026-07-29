@@ -1,0 +1,48 @@
+{
+  "format": "two-pair-sic-bidegree44-rank-two-all-order-audit-v1",
+  "field": "characteristic zero",
+  "factor_chart": "C=U*W with U in Mat(5,2), W in Mat(2,5)",
+  "displayed_rank_two_point": {
+    "source_equation": "extended-geometry/TWO_PAIR_SIC_BIDEGREE44_RANK_FRONTIER.md (6.1)",
+    "rank": 2,
+    "pure_moments_1_through_4": [
+      7414,
+      3675739680,
+      12167497410877440,
+      148010006143680629760000
+    ],
+    "role": "Jacobian transversality point, not a moment survivor"
+  },
+  "period_identity": {
+    "P": "Phi_C(1,u,t,(1-t)/u)",
+    "normalized_moment": "mu_m/(4m+1)! = CT_u integral_0^1 P(u,t)^m dt",
+    "ordinary_generating_function": "sum_(m>=0) mu_m/(4m+1)! s^m = CT_u integral_0^1 1/(1-s*P(u,t)) dt",
+    "checked_orders": 4
+  },
+  "generic_rank_two_laurent_support": {
+    "newton_polygon_vertices": [
+      [
+        -4,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        4,
+        4
+      ],
+      [
+        -4,
+        4
+      ]
+    ],
+    "euclidean_area": 24,
+    "normalized_volume": 48,
+    "warning": "the normalized volume is not by itself a recurrence-order or initial-moment bound at the singular expansion s=0"
+  },
+  "recurrence_status": "no coefficient-specialized recurrence: the semistable thirteen-moment point is existential and has no recorded coordinates or residue field",
+  "first_possible_unsolved_tail": "mu_14",
+  "written_source": "extended-geometry/TWO_PAIR_SIC_BIDEGREE44_RANK_TWO_ALL_ORDER_AUDIT.md"
+}

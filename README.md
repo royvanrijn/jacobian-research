@@ -271,6 +271,13 @@ The
 uses the split-symbol theorem to exclude the complete rank-one Segre cone.
 Thus the certified coefficient-rank interval is \(2\leq r_{\min}\leq5\);
 ranks two through four remain open.
+The
+[rank-two all-order audit](extended-geometry/TWO_PAIR_SIC_BIDEGREE44_RANK_TWO_ALL_ORDER_AUDIT.md)
+derives the exact rational period generating function on \(C=UW\), but
+also shows that the displayed exact rank-two chart point is only a
+Jacobian transversality point: already \(\mu_1=7414\). The semistable
+thirteen-moment point remains existential, with no coordinates or residue
+field from which a scalar recurrence can be specialized.
 On the rank-at-most-two determinantal variety, the first thirteen moments
 are algebraically independent but cannot be homogeneous parameters: the
 required invariant Hilbert numerator has coefficient \(-5266\) in degree
@@ -284,13 +291,18 @@ Exact quadratic-field fibers also close the pivot-annihilator and
 equianharmonic orbits, while the earlier \(\lambda=2\) certificate closes
 the harmonic orbit. Exact expected-branch resultants expose one further
 quartic \(S_3\)-orbit, which is also closed over its coefficient field.
-Exact compatibility charts now close every remaining squarefree
-specialization. A separate finite checker proves that the first four
+The chart \(8c-3d^2=0\) with the expected cubic nonzero is now excluded
+by an exact three-variable unit certificate. The remaining
+uniform-specialization gate is one explicit Rabinowitsch membership on
+the complementary chart; modular standard bases support it, but an exact
+rational lift certificate has not completed. A separate finite
+checker proves that the first four
 moments cut out the one-sided nullcone for symbols with at most two roots;
-the three-root orbit was already closed by five moments. Therefore every
-rank-one six-moment zero is unstable, and the semistable
-thirteen-moment fiber contains a point of exact coefficient rank two.
-This is a truncated-moment survivor, not an all-order counterexample.
+the three-root orbit was already closed by five moments. Consequently the
+semistable thirteen-moment fiber is known to lie on rank at most two, but
+proving that some such point has exact rank two still depends on the
+squarefree specialization gate. None of this is an all-order
+counterexample.
 
 The earlier
 [dual-linear theorem](extended-geometry/DUAL_LINEAR_SIC2.md)
@@ -660,6 +672,33 @@ polynomiality, determinant, boundary-normalization, and collision-fibre
 mechanism. Weighted, cancellation, and quadratic-gauge maps are three
 explicit instances. Their determinant proofs are centralized there; the
 family notes retain only their different polynomiality and boundary data.
+The first direct three-puncture extension is now closed in all degrees by the
+[puncture-rank frontier](cancellation/PUNCTURE_RANK_FRONTIER.md).  For
+`f(Y)=Y^a(Y-1)^b`, the marked-root derivative and reciprocal source chart
+solve the determinant valuation ledger exactly, and the controlled divisor
+normalizes to
+`\((\mathbb P^1\setminus\{0,1,\infty\})\times\mathbb A^1\)`.
+Its unit lattice is saturated of rank two and its affine class group is
+trivial.  Polynomiality nevertheless fails already at the first boundary
+moment for every `a,b,r>=1`: the local conditions at `0`, `1`, and infinity
+force the residual center to be affine-linear, while an exact
+consecutive-eigenvalue recurrence makes the required coefficient
+cancellation impossible.  This excludes the complete direct reciprocal
+chart, not target-ledger or two-reconstruction-variable mechanisms; the
+[double-incidence core](extended-geometry/THREE_PUNCTURE_DOUBLE_INCIDENCE_CORE.md)
+and its
+[first nonlinear completion screen](extended-geometry/THREE_PUNCTURE_NONLINEAR_COMPLETION_FRONTIER.md)
+remain the next affine-space frontier.  That screen now also closes the
+proposed affine-transverse stratum exactly: for affine \(P,Q\), arbitrary
+polynomial \(H,S\), and two affine remaining outputs, the eleven
+zero-modification determinant equations plus the Plücker quadric have unit
+Gröbner basis over \(\mathbb Q(c,v)\).  Thus any surviving
+\(\mathbb A^6\) completion must make at least one transverse output
+genuinely nonlinear.  The same zero-slice method closes eight natural
+transverse skeletons even with a completely general degree-at-most-two
+fourth output and arbitrary affine \(P,Q\).  This is a fixed-skeleton
+quadratic screen; arbitrary transverse directions and two simultaneously
+general quadratic outputs remain open.
 The [stable-intersection theorem](verified/QUADRATIC_CANCELLATION_STABLE_INTERSECTION.md)
 shows that the cancellation and root-engineered quadratic-gauge families
 share exactly one stable polynomial left--right class: the foundational
@@ -837,7 +876,14 @@ coordinate two-planes have relative Ext presentation pulled back from the
 origin, closing every quartic direction supported on at most two basis
 tensors.  All 2,024 smooth coordinate three-spaces also retain the same
 pruned rank-three presentation, so any remaining smooth quartic escape
-requires at least four basis directions.  For a
+requires at least four basis directions.  The other six squarefree symbols
+have now been checked on all 1,656 coordinate planes as well: 1,652 retain
+the central pruned presentation, while four presentation-jump rows are
+nevertheless locally free of rank six by
+`Fitt_6=(1), Fitt_5=(0)` over the parameter plane.  Thus all 1,932
+squarefree-symbol coordinate planes retain the length-six defect, and any
+remaining singular-symbol quartic escape requires at least three basis
+directions.  For a
 smooth homogeneous symbol the resulting algebra is already a normal
 integral global defect model, but its elliptic projective incidence surface
 makes its geometric divisor class group non-finitely generated, excluding
@@ -909,6 +955,22 @@ to create a distinct second nonproperness divisor.  Its exact detector is
 the phantom factor `u_F=j_F/delta_F`; proving the nonproperness hypersurface
 irreducible makes this factor a unit.  Boundary minimality now supplies
 that irreducibility automatically.
+
+The
+[universal flat cubic ungraded testbed](cancellation/UNIVERSAL_CUBIC_UNGRADED_TESTBED.md)
+computes this coupling on a large actual-Keller coefficient cell.  For
+arbitrary polynomials `A(P)` and `a(P)=P(1+P^2 gamma(P))`, the
+denominator-free root-incidence map has determinant `-2`, finite free
+Deligne--Faddeev normalization, vanishing of both closed-point saturation
+modules, and arbitrary polynomial `GL_2` Tschirnhausen gauge.  Its reduced
+nonproperness equation is `Delta*rad(1+P^2 gamma)`, and the adapted
+base-change map `(G)` is an automorphism exactly when that phantom factor
+is a unit.  Thus boundary-minimal base-change rigidity holds throughout
+this flat cell, while failure of `(G)` is exactly the extra unramified
+`OP-UG3` divisor.  The 24-dimensional Koszul order-four kernel is a
+different, nonflat module sector (`Fitt_3=(x,y,z)` rather than the unit
+ideal); incorporating it still requires a module degeneration with a
+compatible Keller open.
 
 Its [all-degree rational-fiber corollary](verified/ALL_DEGREE_RATIONAL_FIBERS.md)
 gives, for every `N>=3`, a Keller map with a complete fiber of exactly `N`

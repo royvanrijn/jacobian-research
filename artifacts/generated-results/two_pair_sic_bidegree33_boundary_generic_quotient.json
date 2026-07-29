@@ -1,5 +1,58 @@
 {
   "characteristic_zero_certificate": {
+    "j_divisor_generic_quotient": {
+      "coefficient_field": "QQ(alpha)(s1,s3,t0,L,t2), alpha^2=-30420",
+      "coprime_s_pair_skipped_by_product_criterion": [
+        "s5^2",
+        "t4^3"
+      ],
+      "final_s_pair_reduction_steps": 5,
+      "groebner_basis_support_sizes": [
+        6,
+        7,
+        6
+      ],
+      "input_fiber_support_sizes": [
+        6,
+        8
+      ],
+      "leading_coefficients": [
+        {
+          "even_terms": 1,
+          "odd_terms": 1,
+          "sha256": "bcc2b60e594b56e16b180bb09d837e42f548ae7b9379a54cf54c3858cc5fc526"
+        },
+        {
+          "even_terms": 1,
+          "odd_terms": 1,
+          "sha256": "fb15751dbc8ce88dbf25bbe5aafe6a20c4b6c79e81dd2c0c07c4516b45caf828"
+        },
+        {
+          "even_terms": 112,
+          "odd_terms": 112,
+          "sha256": "b32c06ec46c88981fe16fb42a715253740cedb136908369fb5fa20b662a3536f"
+        }
+      ],
+      "leading_monomials": [
+        "s5^2",
+        "s5*t4^2",
+        "t4^3"
+      ],
+      "pseudo_reduction_steps": [
+        2,
+        4
+      ],
+      "quotient_length": 5,
+      "scope": "exact fraction-free characteristic-zero Groebner certificate over the generic J-divisor function field",
+      "split_divisor_equation": "99*Q+155*t0^2=alpha*L",
+      "standard_basis": [
+        "1",
+        "t4",
+        "t4^2",
+        "s5",
+        "s5*t4"
+      ]
+    },
     "j_divisor_modular_replays": [
       {
         "prime": 47,

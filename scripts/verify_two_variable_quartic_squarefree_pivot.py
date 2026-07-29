@@ -318,86 +318,63 @@ print("GENERIC_DECOMPOSITION");
         completed.stdout
     )
 
-    # Uniform specialization closure on the pivot-open chart.  The first
-    # Rabinowitsch chart is h!=0; its exact basis forces lambda=0 or 1.
-    # The second is h=0 and g!=0; it is the unit ideal.  modStd proposes
-    # the rational bases, after which the two containments are checked
-    # directly: std(G) reduces I to zero, and lift(I,G) reconstructs every
-    # generator of G exactly from I.
-    squarefree_degeneracy = lam**4 * (lam - 1) ** 4
-    compatibility_program = """
-LIB "modstd.lib";
-ring r=0,(z,c,d,lam),lp;
-option(redSB);
-"""
-    for order, polynomial in enumerate(eliminated_polynomials, start=3):
-        compatibility_program += (
-            f"poly f{order}={singular_expression(polynomial)};\n"
+    # The h=0, g!=0 specialization chart admits a much smaller exact
+    # certificate than the four-variable saturation.  Substitute
+    # c=3*d^2/8 first.  The four moment numerators contain the invertible
+    # factors g,g,g^2,g^2, respectively; after exact division, the
+    # residual ideal together with the Rabinowitsch equation is the unit
+    # ideal over Q.
+    restricted_residuals: list[sp.Expr] = []
+    for index, polynomial in enumerate(eliminated_polynomials):
+        restricted = sp.Poly(
+            sp.expand(
+                polynomial.subs(c, sp.Rational(3, 8) * d**2)
+            ),
+            d,
+            lam,
+            domain=sp.QQ,
         )
-    compatibility_program += f"""
-poly p={singular_expression(pivot)};
-poly h={singular_expression(expected_relation)};
+        restricted = sp.Poly(
+            restricted.clear_denoms()[1].primitive()[1],
+            d,
+            lam,
+            domain=sp.QQ,
+        )
+        divisor_power = 1 if index < 2 else 2
+        residual = restricted.exquo(
+            sp.Poly(expected_cubic**divisor_power, d, lam)
+        )
+        restricted_residuals.append(residual.primitive()[1].as_expr())
+    restricted_pivot = cleared_polynomial(
+        pivot.subs(c, sp.Rational(3, 8) * d**2),
+        (d, lam),
+    )
+    h_zero_program = "ring r=0,(z,d,lam),lp;\noption(redSB);\n"
+    for order, polynomial in enumerate(restricted_residuals, start=3):
+        h_zero_program += (
+            f"poly r{order}={singular_expression(polynomial)};\n"
+        )
+    h_zero_program += f"""
+poly p={singular_expression(restricted_pivot)};
 poly g={singular_expression(expected_cubic)};
-ideal I1=f3,f4,f5,f6,z*p*h-1;
-ideal G1=modStd(I1);
-ideal V1=std(G1);
-if (size(reduce(I1,V1))!=0)
+ideal I=r3,r4,r5,r6,z*p*g-1;
+ideal G=std(I);
+if (size(G)!=1 || G[1]!=1)
 {{
-  print("BAD_H_OPEN_FORWARD_CONTAINMENT");
+  print("BAD_H_ZERO_G_OPEN_CHART");
   exit(1);
 }}
-matrix T1=lift(I1,G1);
-int row;
-int column;
-poly reconstructed;
-for (column=1;column<=size(G1);column++)
-{{
-  reconstructed=0;
-  for (row=1;row<=size(I1);row++)
-  {{
-    reconstructed=reconstructed+I1[row]*T1[row,column];
-  }}
-  if (reconstructed-G1[column]!=0)
-  {{
-    print("BAD_H_OPEN_LIFT");
-    exit(1);
-  }}
-}}
-if (reduce({singular_expression(squarefree_degeneracy)},V1)!=0)
-{{
-  print("BAD_H_OPEN_PARAMETER_CUTOFF");
-  exit(1);
-}}
-ideal I2=f3,f4,f5,f6,h,z*p*g-1;
-ideal G2=modStd(I2);
-ideal V2=std(G2);
-if (size(V2)!=1 || V2[1]!=1 || size(reduce(I2,V2))!=0)
-{{
-  print("BAD_HG_OPEN_UNIT");
-  exit(1);
-}}
-matrix T2=lift(I2,G2);
-reconstructed=0;
-for (row=1;row<=size(I2);row++)
-{{
-  reconstructed=reconstructed+I2[row]*T2[row,1];
-}}
-if (reconstructed!=1)
-{{
-  print("BAD_HG_OPEN_LIFT");
-  exit(1);
-}}
-print("UNIFORM_SQUAREFREE_CLOSURE");
+print("H_ZERO_G_OPEN_UNIT");
 """
     completed = subprocess.run(
         [singular, "-q"],
-        input=compatibility_program,
+        input=h_zero_program,
         text=True,
         capture_output=True,
         check=True,
-        timeout=600,
+        timeout=60,
     )
-    assert completed.stdout.strip() == "UNIFORM_SQUAREFREE_CLOSURE", (
+    assert completed.stdout.strip() == "H_ZERO_G_OPEN_UNIT", (
         completed.stdout
     )
 
@@ -619,23 +596,16 @@ print("EXCEPTIONAL_FIBER");
             pivot_exception_polynomial
         ),
         "expected_branch_exceptional_gcds": branch_exception_data,
-        "uniform_squarefree_closure": {
-            "h_nonzero_chart": (
-                "exact verified modular Groebner basis contains "
-                "lambda^4*(lambda-1)^4"
-            ),
-            "h_zero_g_nonzero_chart": "exact unit ideal",
-            "basis_containment_checks": (
-                "direct standard reductions and exact lift identities"
-            ),
-            "status": (
-                "every squarefree fiber consists only of annihilator "
-                "sections"
+        "h_zero_g_nonzero_chart": {
+            "status": "exact unit ideal over Q",
+            "reduction": (
+                "substitute c=3*d^2/8 and divide the four moment "
+                "numerators by the invertible powers g,g,g^2,g^2"
             ),
         },
         "remaining_exact_gate": (
-            "combine with the finite two-root and three-root normal-form "
-            "certificates to close the complete rank-one quartic boundary"
+            "certify that (f3,f4,f5,f6,z*p*h-1) contains "
+            "lambda^4*(lambda-1)^4 over Q"
         ),
         "written_source": (
             "extended-geometry/TWO_PAIR_SIC_BIDEGREE44_RANK_FRONTIER.md"
@@ -650,12 +620,12 @@ print("EXCEPTIONAL_FIBER");
         "annihilator sections"
     )
     print(
-        "PASS squarefree quartic: pivot-annihilator and equianharmonic "
-        "and branch-quartic fibers have only the four annihilator points"
+        "PASS squarefree quartic: h=0 and g nonzero is an exact empty "
+        "chart"
     )
     print(
-        "PASS squarefree quartic: exact compatibility charts close every "
-        "squarefree specialization"
+        "PASS squarefree quartic: pivot-annihilator and equianharmonic "
+        "and branch-quartic fibers have only the four annihilator points"
     )
     print(f"PASS wrote {OUTPUT.relative_to(ROOT)}")
 

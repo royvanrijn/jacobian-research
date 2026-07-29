@@ -335,6 +335,16 @@ different completed Hilbert data.  This is a regression for the proposed
 linearization and for the necessity of completion, not yet the
 coefficient-decorated homotopy-limit theorem.
 
+The next associated-graded regression is the
+[cellular cotangent prototype](HESSIAN_RITT_CELLULAR_COTANGENT_PROTOTYPE.md).
+It attaches explicit modules and signed matrices to vertices, moves,
+commuting squares, and braid cells.  Its degree-thirty sectors have
+\((\dim H^0,\dim H^1,\dim H^2)=(2,1,0)\).  In degree forty-two it separates
+the first conormal \(H^1\) into the exact \(z^8\) sector and \(z\) spectator
+layers and replays their finite-jet dimensions.  This is an exact
+associated-graded model; it does not yet compute the completed transitivity
+extension or prove the homotopy-limit comparison.
+
 ## Relation to the existing notes
 
 The [general Hessian--Ritt note](GENERAL_HESSIAN_RITT_INTERSECTIONS.md)

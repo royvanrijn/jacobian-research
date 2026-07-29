@@ -2,10 +2,9 @@
 """Exact quartic coordinate-plane audit for singular squarefree cubics.
 
 The ordinary rows test the pruned relative Ext presentation on every
-coordinate plane.  One nodal plane, (5,11), has a nonconstant ambient
-R-presentation; its m^2-truncated parameter module is tested instead by
-Fitt_6=(1), Fitt_5=(0).  The nodal plane (21,22) is explicitly unresolved
-because exact Ext elimination exceeds the bounded reproduction time.
+coordinate plane.  Four planes have nonconstant ambient R-presentations;
+their m^2-truncated parameter modules are tested instead by
+Fitt_6=(1), Fitt_5=(0).
 """
 
 from __future__ import annotations
@@ -19,8 +18,12 @@ import verify_cubic_symbol_double_saturation as cubic_audit
 SINGULAR_SQUAREFREE_STRATA = tuple(
     sorted(cubic_audit.SQUAREFREE_STRATA - {"smooth"})
 )
-NODAL_FITTING_PAIR = (5, 11)
-NODAL_UNRESOLVED_PAIR = (21, 22)
+FITTING_PAIRS = {
+    ("cuspidal", (3, 8)),
+    ("cuspidal", (4, 9)),
+    ("line-tangent-conic", (2, 9)),
+    ("nodal", (5, 11)),
+}
 
 
 def audit_plane(
@@ -44,12 +47,9 @@ def main() -> None:
         (stratum, pair)
         for stratum in SINGULAR_SQUAREFREE_STRATA
         for pair in pairs
-        if not (
-            stratum == "nodal"
-            and pair in {NODAL_FITTING_PAIR, NODAL_UNRESOLVED_PAIR}
-        )
+        if (stratum, pair) not in FITTING_PAIRS
     ]
-    assert len(tasks) == 1654
+    assert len(tasks) == 1652
 
     context = multiprocessing.get_context("fork")
     with context.Pool(processes=4) as pool:
@@ -57,25 +57,26 @@ def main() -> None:
             assert result == (0, 6, 0, 0, 3), (task, result)
 
     directions = cubic_audit.quartic_kernel_basis_tensors()
-    fitting_result = cubic_audit.run_plane_parameter_fitting(
-        cubic_audit.CUBIC_STRATA["nodal"],
-        directions[NODAL_FITTING_PAIR[0]],
-        directions[NODAL_FITTING_PAIR[1]],
-        timeout=300,
-    )
-    assert fitting_result == (0, 0, 0)
+    for stratum, pair in sorted(FITTING_PAIRS):
+        fitting_result = cubic_audit.run_plane_parameter_fitting(
+            cubic_audit.CUBIC_STRATA[stratum],
+            directions[pair[0]],
+            directions[pair[1]],
+            timeout=300,
+        )
+        assert fitting_result == (0, 0, 0), (
+            stratum,
+            pair,
+            fitting_result,
+        )
 
     print(
-        "PASS: 1654 ordinary singular-squarefree coordinate planes have "
+        "PASS: 1652 ordinary singular-squarefree coordinate planes have "
         "the central pruned rank-three length-six Ext presentation"
     )
     print(
-        "PASS: nodal plane (5,11) is parameter-flat of rank six by "
-        "Fitt_6=(1) and Fitt_5=(0)"
-    )
-    print(
-        "UNRESOLVED: nodal plane (21,22) exceeds the bounded exact Ext "
-        "elimination time"
+        "PASS: four exceptional-presentation planes are parameter-flat "
+        "of rank six by Fitt_6=(1) and Fitt_5=(0)"
     )
 
 

@@ -1,0 +1,127 @@
+{
+  "schema": "hc4_exceptional_schur_locus_modular/v1",
+  "status": "reconstructed_modular_evidence_not_full_classification",
+  "family": "(x^6+y^6+z^6)/30 + mu*x^2*y^2*z^2 + nu*sum_(i!=j)x_i^4*x_j^2",
+  "schur_system": {
+    "generic_intrinsic_equations": 114,
+    "quartic_variables": 15,
+    "generic_basis_size": 117,
+    "generic_cube_certificates": 15
+  },
+  "generic_denominator": {
+    "basis_and_lift_attempt": {
+      "command": ".venv/bin/python scripts/verify_hc4_quintic_two_parameter_symmetric_schur.py --extract-denominators --basis-profile",
+      "result": "timeout",
+      "singular_timeout_seconds": 900,
+      "mathematical_conclusion": "none"
+    },
+    "basis_only_attempt": {
+      "command": ".venv/bin/python scripts/verify_hc4_quintic_two_parameter_symmetric_schur.py --extract-basis-denominators --basis-profile",
+      "result": "success",
+      "basis_denominator": "2",
+      "mathematical_conclusion": "The reduced generic basis has no parameter-dependent coefficient denominator. The exceptional divisor can therefore occur only in the certificates expressing that basis in the original 114 generators, not in the displayed basis coefficients."
+    }
+  },
+  "even_quartic_charts": {
+    "quartic": "a*x^4+b*y^4+c*z^4+d*x^2*y^2+e*x^2*z^2+f*y^2*z^2",
+    "quotient": "qx*x^2+qy*y^2+qz*z^2",
+    "coefficient_equations": 36,
+    "good_primes": [
+      47,
+      101,
+      103
+    ],
+    "pure_chart_a_equals_1": {
+      "modular_basis_sizes": [
+        88,
+        88,
+        88
+      ],
+      "reconstructed_parameter_ideal": [
+        "mu*nu^2-2*nu^3-mu^2/10+3*mu*nu/10-nu^2/5",
+        "mu^2*nu-4*nu^3-mu^2/2+8*mu*nu/5-6*nu^2/5",
+        "mu^3-8*nu^3-9*mu^2/5+6*mu*nu-24*nu^2/5",
+        "nu^4-nu^3/5-mu^2/100+mu*nu/25-3*nu^2/100"
+      ],
+      "reconstructed_quotient_length": 7,
+      "reconstructed_radical": [
+        "mu-2*nu",
+        "10*nu^2-nu"
+      ],
+      "candidate_support": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "1/5",
+          "1/10"
+        ]
+      ]
+    },
+    "mixed_chart_d_equals_1": {
+      "modular_basis_sizes": [
+        56,
+        56,
+        56
+      ],
+      "reconstructed_parameter_ideal": [
+        "mu*nu-3*nu^2-mu/10+2*nu/5-1/100",
+        "mu^2-9*nu^2-2*mu/5+9*nu/5-1/20",
+        "nu^3-3*nu^2/10+3*nu/100-1/1000"
+      ],
+      "reconstructed_support": [
+        [
+          "1/5",
+          "1/10"
+        ]
+      ],
+      "nilpotent_parameter": "(nu-1/10)^3"
+    }
+  },
+  "single_parity_blocks": {
+    "representative": "x*y*(a*x^2+b*y^2+c*z^2)",
+    "coefficient_equations": 36,
+    "projective_charts": [
+      "a=1",
+      "b=1",
+      "c=1"
+    ],
+    "characteristic_zero_result": "unit ideal on every chart",
+    "scope_warning": "This excludes a quartic contained in one nontrivial sign-character block; it does not exclude cancellations among several parity blocks."
+  },
+  "candidate_rational_strata": [
+    {
+      "name": "Fermat",
+      "parameters": [
+        "0",
+        "0"
+      ],
+      "sextic": "(x^6+y^6+z^6)/30",
+      "hessian_discriminant": "x^4*y^4*z^4",
+      "projective_linear_automorphism_group": "(mu_6^2) semidirect S_3",
+      "projective_group_order": 216,
+      "schur_quartics": "a*x^4+b*y^4+c*z^4",
+      "lower_face_status": "excluded by HC4QF1"
+    },
+    {
+      "name": "radial",
+      "parameters": [
+        "1/5",
+        "1/10"
+      ],
+      "sextic": "(x^2+y^2+z^2)^3/30",
+      "hessian_discriminant": "(x^2+y^2+z^2)^6/25",
+      "projective_linear_automorphism_group": "PO_3(C), isomorphic to PGL_2(C)",
+      "projective_group_order": "infinite",
+      "schur_quartics": "scalar multiples of (x^2+y^2+z^2)^2",
+      "lower_face_status": "excluded by HC4QSE2"
+    }
+  ],
+  "open_checks": [
+    "Compute and factor the exact generic basis denominator.",
+    "Compute denominators of lift certificates for the fifteen cube reductions.",
+    "Analyze full projective quartics mixing two or more nontrivial sign-character blocks.",
+    "Prove characteristic-zero containment for the reconstructed even-chart parameter ideals."
+  ]
+}

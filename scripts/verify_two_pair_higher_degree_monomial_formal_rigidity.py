@@ -43,7 +43,7 @@ def convolve(
 
 
 PROFILE_POWERS = [{0: sp.Integer(1)}]
-for _ in range(32):
+for _ in range(24):
     PROFILE_POWERS.append(convolve(PROFILE_POWERS[-1], PROFILE))
 
 

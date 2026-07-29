@@ -326,9 +326,8 @@ fiber with the expected radical and eighth-power certificates.
 
 The specialization problem admits a final, simpler compatibility test.
 Put \(h=8c-3d^2\) and
-\(g=d(d-4)(d-4\lambda)\).  Exact verified modular Gröbner computation
-over \(\mathbb Q\), followed by direct lift identities for both ideal
-containments, gives
+\(g=d(d-4)(d-4\lambda)\).  Verified modular reconstruction produced
+candidate rational standard bases implying
 \[
 \begin{aligned}
 (f_3,f_4,f_5,f_6,\;zph-1)&\ni
@@ -336,27 +335,27 @@ containments, gives
 (f_3,f_4,f_5,f_6,\;h,\;zpg-1)&=(1).
 \end{aligned}
 \]
-Hence, for every squarefree \(\lambda\ne0,1\), a pivot-open common zero
-has \(h=g=0\).  The pivot-boundary exceptional gcd (6.12), together with
-the already-certified pivot orbit, handles the complementary chart.
-Thus every squarefree six-moment zero is one of the four annihilator
-sections.
+The second membership is now exact without the large four-variable
+calculation.  Substitute \(c=3d^2/8\), divide the four moment numerators
+by the invertible factors \(g,g,g^2,g^2\), and retain the Rabinowitsch
+equation for \(pg\).  The resulting ideal in
+\(\mathbb Q[z,d,\lambda]\) has exact reduced standard basis \((1)\).
 
-Combining the squarefree result with the finite collided-root cutoffs
-proves:
+For the first membership, the same output occurs modulo \(101,103,107\).
+Singular's verified
+modular standard-basis routine checks that the proposed output is a
+standard basis containing the input, but in this nonhomogeneous global
+order it does not by itself certify the reverse ideal containment.
+Attempts to produce an exact rational lift or syzygy identity exceeded
+the available resource envelope.  Therefore the first membership remains
+the precise characteristic-zero gate; its modular output is reproducible
+evidence, not a theorem.
 
-> **Theorem 6.2.** On the rank-one Segre cone in bidegree \((4,4)\), the
-> common zero locus of \(\mu_1,\ldots,\mu_6\) is contained in the
-> diagonal \(\mathrm{SL}_2\)-nullcone.
-
-Proposition 6.1 now has an exact-rank consequence:
-
-> **Corollary 6.3.** The common zero fiber of
-> \(\mu_1,\ldots,\mu_{13}\) on \(X_2\) contains a semistable point of
-> exact coefficient-matrix rank two.
-
-This is a finite-moment rank-two survivor, not an all-order SIC
-counterexample.
+If the remaining membership is certified, then every squarefree six-moment zero
+is one of the four annihilator sections. Combined with the exact
+collided-root cutoffs, this would imply that the semistable point of
+Proposition 6.1 can be chosen with exact coefficient-matrix rank two.
+At present Proposition 6.1 only guarantees rank at most two.
 
 The least degree repair is
 \[
@@ -377,19 +376,22 @@ candidate.  This remains a necessary-test result, not a proof that
 
 The efficient order is now:
 
-1. start from the exact-rank-two semistable thirteen-moment survivor;
-2. on rank two, whose determinantal quotient has expected affine
+1. finish the remaining squarefree Rabinowitsch membership above, preferably by
+   sparse rational reconstruction of modular target-only lift identities;
+2. conditional on that boundary closure, start from the exact-rank-two
+   semistable thirteen-moment survivor;
+3. on rank two, whose determinantal quotient has expected affine
    dimension \(16-3=13\), normalize a non-null lowest
    Clebsch--Gordan component and remove the
    residual torus before elimination;
-3. use the Gorenstein-perfect corrected degree set
+4. use the Gorenstein-perfect corrected degree set
    \(\mu_1,\ldots,\mu_{12},\mu_{14}\), rather than the impossible
    consecutive set, to organize the remaining finite-moment fiber;
-4. seek an exact component or an effective holonomic recurrence upgrading
+5. seek an exact component or an effective holonomic recurrence upgrading
    finite pure vanishing to all orders;
-5. apply (4.3) with fixed low-bidegree multipliers on every all-order
+6. apply (4.3) with fixed low-bidegree multipliers on every all-order
    survivor; and
-6. only after a global rank-two exclusion, repeat for ranks three and
+7. only after a global rank-two exclusion, repeat for ranks three and
    four.
 
 Promotion to a counterexample requires an exact coefficient field,
@@ -405,6 +407,7 @@ Run
 python3 scripts/verify_two_pair_sic_bidegree44_rank_frontier.py
 python3 scripts/verify_two_pair_sic_bidegree44_rank_two_invariants.py
 .venv/bin/python scripts/verify_two_variable_quartic_squarefree_pivot.py
+.venv/bin/python scripts/verify_two_variable_quartic_two_root_finite.py
 ```
 
 The dependency-free checker verifies the chart dimensions, exact
@@ -420,13 +423,15 @@ Jacobi--Trudi formulas. It verifies the exact obstruction (6.5), the
 corrected necessary test through degree \(100\), and palindromy through
 the predicted Gorenstein top degree \(82\).
 
-The third checker proves the squarefree pivot-boundary unit certificate,
+The third checker proves the generic squarefree pivot-boundary unit certificate,
 the two-generator expected affine ideal (6.8), the four exact cubic-factor
 multiplicities, and the generic resultant decomposition (6.9)--(6.10).
 It also closes the pivot-annihilator and equianharmonic quadratic orbits;
 the branch-quartic orbit is closed over its degree-four field, and the
 harmonic orbit is supplied by the separate \(\lambda=2\) anchor.  It
 extracts the complete pivot-boundary and expected-branch exceptional
-gcds. It does not certify the remaining residual-gcd specialization.
+gcds and proves the \(h=0,\ g\ne0\) Rabinowitsch chart empty by a smaller
+exact unit certificate. It does not certify the remaining \(h\ne0\)
+uniform Rabinowitsch membership.
 Collided-root quartics are supplied separately by the two-root and
 three-root theorems.

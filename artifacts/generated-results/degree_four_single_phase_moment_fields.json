@@ -1,0 +1,517 @@
+{
+  "format": "degree-four-single-phase-moment-fields-v1",
+  "quotient_coordinates": [
+    "a0",
+    "a1",
+    "a2",
+    "a3",
+    "a4",
+    "z=bc"
+  ],
+  "apolar_involution": "(a0,a1,a2,a3,a4,z) -> (a4,a3,a2,a1,a0,z)",
+  "test_point": [
+    2,
+    3,
+    5,
+    7,
+    11,
+    221
+  ],
+  "slice_count": 10,
+  "slices": [
+    {
+      "phase": 1,
+      "positive_direction_index": 0,
+      "positive_direction": [
+        {
+          "row": 1,
+          "column": 0,
+          "coefficient": 1
+        },
+        {
+          "row": 4,
+          "column": 3,
+          "coefficient": -1
+        }
+      ],
+      "negative_direction_index": 0,
+      "negative_direction": [
+        {
+          "row": 0,
+          "column": 1,
+          "coefficient": 1
+        },
+        {
+          "row": 3,
+          "column": 4,
+          "coefficient": -1
+        }
+      ],
+      "moment_term_counts_orders_1_through_7": [
+        5,
+        16,
+        40,
+        86,
+        166,
+        296,
+        496
+      ],
+      "first_seven_moment_values": [
+        "392",
+        "10297152",
+        "1566665763840",
+        "989321854161715200",
+        "1643048454225731051520000",
+        "6136707772447611114736189440000",
+        "44291457875968481963992733885399040000"
+      ],
+      "first_six_parameter_quotient_length": 360,
+      "first_six_standard_basis_size": 133,
+      "first_seven_fiber_length": 2,
+      "first_seven_fiber_standard_basis_size": 6,
+      "mutual_fiber_ideal_reductions_zero": true
+    },
+    {
+      "phase": 1,
+      "positive_direction_index": 0,
+      "positive_direction": [
+        {
+          "row": 1,
+          "column": 0,
+          "coefficient": 1
+        },
+        {
+          "row": 4,
+          "column": 3,
+          "coefficient": -1
+        }
+      ],
+      "negative_direction_index": 1,
+      "negative_direction": [
+        {
+          "row": 1,
+          "column": 2,
+          "coefficient": 1
+        },
+        {
+          "row": 2,
+          "column": 3,
+          "coefficient": -1
+        }
+      ],
+      "moment_term_counts_orders_1_through_7": [
+        5,
+        16,
+        40,
+        86,
+        166,
+        296,
+        496
+      ],
+      "first_seven_moment_values": [
+        "392",
+        "6987456",
+        "894573434880",
+        "434673965150208000",
+        "566668713999028838400000",
+        "1620858556039898186992189440000",
+        "8917033104543345808046220320440320000"
+      ],
+      "first_six_parameter_quotient_length": 360,
+      "first_six_standard_basis_size": 133,
+      "first_seven_fiber_length": 2,
+      "first_seven_fiber_standard_basis_size": 6,
+      "mutual_fiber_ideal_reductions_zero": true
+    },
+    {
+      "phase": 1,
+      "positive_direction_index": 1,
+      "positive_direction": [
+        {
+          "row": 2,
+          "column": 1,
+          "coefficient": 1
+        },
+        {
+          "row": 3,
+          "column": 2,
+          "coefficient": -1
+        }
+      ],
+      "negative_direction_index": 0,
+      "negative_direction": [
+        {
+          "row": 0,
+          "column": 1,
+          "coefficient": 1
+        },
+        {
+          "row": 3,
+          "column": 4,
+          "coefficient": -1
+        }
+      ],
+      "moment_term_counts_orders_1_through_7": [
+        5,
+        16,
+        40,
+        86,
+        166,
+        296,
+        496
+      ],
+      "first_seven_moment_values": [
+        "392",
+        "6987456",
+        "894573434880",
+        "434673965150208000",
+        "566668713999028838400000",
+        "1620858556039898186992189440000",
+        "8917033104543345808046220320440320000"
+      ],
+      "first_six_parameter_quotient_length": 360,
+      "first_six_standard_basis_size": 133,
+      "first_seven_fiber_length": 2,
+      "first_seven_fiber_standard_basis_size": 6,
+      "mutual_fiber_ideal_reductions_zero": true
+    },
+    {
+      "phase": 1,
+      "positive_direction_index": 1,
+      "positive_direction": [
+        {
+          "row": 2,
+          "column": 1,
+          "coefficient": 1
+        },
+        {
+          "row": 3,
+          "column": 2,
+          "coefficient": -1
+        }
+      ],
+      "negative_direction_index": 1,
+      "negative_direction": [
+        {
+          "row": 1,
+          "column": 2,
+          "coefficient": 1
+        },
+        {
+          "row": 2,
+          "column": 3,
+          "coefficient": -1
+        }
+      ],
+      "moment_term_counts_orders_1_through_7": [
+        5,
+        16,
+        40,
+        86,
+        166,
+        296,
+        496
+      ],
+      "first_seven_moment_values": [
+        "392",
+        "6478272",
+        "805899041280",
+        "381156095287296000",
+        "484624436845146071040000",
+        "1354802845454987324312125440000",
+        "7303292122246402823519753774039040000"
+      ],
+      "first_six_parameter_quotient_length": 360,
+      "first_six_standard_basis_size": 133,
+      "first_seven_fiber_length": 2,
+      "first_seven_fiber_standard_basis_size": 6,
+      "mutual_fiber_ideal_reductions_zero": true
+    },
+    {
+      "phase": 2,
+      "positive_direction_index": 0,
+      "positive_direction": [
+        {
+          "row": 2,
+          "column": 0,
+          "coefficient": 1
+        },
+        {
+          "row": 4,
+          "column": 2,
+          "coefficient": 1
+        }
+      ],
+      "negative_direction_index": 0,
+      "negative_direction": [
+        {
+          "row": 0,
+          "column": 2,
+          "coefficient": 1
+        },
+        {
+          "row": 2,
+          "column": 4,
+          "coefficient": 1
+        }
+      ],
+      "moment_term_counts_orders_1_through_7": [
+        5,
+        16,
+        40,
+        86,
+        166,
+        296,
+        496
+      ],
+      "first_seven_moment_values": [
+        "392",
+        "8133120",
+        "1026531014400",
+        "492004927424102400",
+        "628446544923057315840000",
+        "1771455676811191111617085440000",
+        "9640326136047337696310676121190400000"
+      ],
+      "first_six_parameter_quotient_length": 360,
+      "first_six_standard_basis_size": 133,
+      "first_seven_fiber_length": 2,
+      "first_seven_fiber_standard_basis_size": 6,
+      "mutual_fiber_ideal_reductions_zero": true
+    },
+    {
+      "phase": 2,
+      "positive_direction_index": 0,
+      "positive_direction": [
+        {
+          "row": 2,
+          "column": 0,
+          "coefficient": 1
+        },
+        {
+          "row": 4,
+          "column": 2,
+          "coefficient": 1
+        }
+      ],
+      "negative_direction_index": 1,
+      "negative_direction": [
+        {
+          "row": 1,
+          "column": 3,
+          "coefficient": 1
+        }
+      ],
+      "moment_term_counts_orders_1_through_7": [
+        5,
+        16,
+        40,
+        86,
+        166,
+        296,
+        496
+      ],
+      "first_seven_moment_values": [
+        "392",
+        "6987456",
+        "862174056960",
+        "400821760629964800",
+        "502271569165985095680000",
+        "1390223765930188451636183040000",
+        "7444602495967322930066043615313920000"
+      ],
+      "first_six_parameter_quotient_length": 360,
+      "first_six_standard_basis_size": 133,
+      "first_seven_fiber_length": 2,
+      "first_seven_fiber_standard_basis_size": 6,
+      "mutual_fiber_ideal_reductions_zero": true
+    },
+    {
+      "phase": 2,
+      "positive_direction_index": 1,
+      "positive_direction": [
+        {
+          "row": 3,
+          "column": 1,
+          "coefficient": 1
+        }
+      ],
+      "negative_direction_index": 0,
+      "negative_direction": [
+        {
+          "row": 0,
+          "column": 2,
+          "coefficient": 1
+        },
+        {
+          "row": 2,
+          "column": 4,
+          "coefficient": 1
+        }
+      ],
+      "moment_term_counts_orders_1_through_7": [
+        5,
+        16,
+        40,
+        86,
+        166,
+        296,
+        496
+      ],
+      "first_seven_moment_values": [
+        "392",
+        "6987456",
+        "862174056960",
+        "400821760629964800",
+        "502271569165985095680000",
+        "1390223765930188451636183040000",
+        "7444602495967322930066043615313920000"
+      ],
+      "first_six_parameter_quotient_length": 360,
+      "first_six_standard_basis_size": 133,
+      "first_seven_fiber_length": 2,
+      "first_seven_fiber_standard_basis_size": 6,
+      "mutual_fiber_ideal_reductions_zero": true
+    },
+    {
+      "phase": 2,
+      "positive_direction_index": 1,
+      "positive_direction": [
+        {
+          "row": 3,
+          "column": 1,
+          "coefficient": 1
+        }
+      ],
+      "negative_direction_index": 1,
+      "negative_direction": [
+        {
+          "row": 1,
+          "column": 3,
+          "coefficient": 1
+        }
+      ],
+      "moment_term_counts_orders_1_through_7": [
+        5,
+        16,
+        40,
+        86,
+        166,
+        296,
+        496
+      ],
+      "first_seven_moment_values": [
+        "392",
+        "6605568",
+        "814629000960",
+        "380713872649420800",
+        "480111015597329571840000",
+        "1336056713337723832699453440000",
+        "7186069019230478517789089723842560000"
+      ],
+      "first_six_parameter_quotient_length": 360,
+      "first_six_standard_basis_size": 133,
+      "first_seven_fiber_length": 2,
+      "first_seven_fiber_standard_basis_size": 6,
+      "mutual_fiber_ideal_reductions_zero": true
+    },
+    {
+      "phase": 3,
+      "positive_direction_index": 0,
+      "positive_direction": [
+        {
+          "row": 3,
+          "column": 0,
+          "coefficient": 1
+        },
+        {
+          "row": 4,
+          "column": 1,
+          "coefficient": -1
+        }
+      ],
+      "negative_direction_index": 0,
+      "negative_direction": [
+        {
+          "row": 0,
+          "column": 3,
+          "coefficient": 1
+        },
+        {
+          "row": 1,
+          "column": 4,
+          "coefficient": -1
+        }
+      ],
+      "moment_term_counts_orders_1_through_7": [
+        5,
+        16,
+        40,
+        86,
+        166,
+        296,
+        496
+      ],
+      "first_seven_moment_values": [
+        "392",
+        "6478272",
+        "805899041280",
+        "381156095287296000",
+        "484624436845146071040000",
+        "1354802845454987324312125440000",
+        "7303292122246402823519753774039040000"
+      ],
+      "first_six_parameter_quotient_length": 360,
+      "first_six_standard_basis_size": 133,
+      "first_seven_fiber_length": 2,
+      "first_seven_fiber_standard_basis_size": 6,
+      "mutual_fiber_ideal_reductions_zero": true
+    },
+    {
+      "phase": 4,
+      "positive_direction_index": 0,
+      "positive_direction": [
+        {
+          "row": 4,
+          "column": 0,
+          "coefficient": 1
+        }
+      ],
+      "negative_direction_index": 0,
+      "negative_direction": [
+        {
+          "row": 0,
+          "column": 4,
+          "coefficient": 1
+        }
+      ],
+      "moment_term_counts_orders_1_through_7": [
+        5,
+        16,
+        40,
+        86,
+        166,
+        296,
+        496
+      ],
+      "first_seven_moment_values": [
+        "392",
+        "6605568",
+        "814629000960",
+        "380713872649420800",
+        "480111015597329571840000",
+        "1336056713337723832699453440000",
+        "7186069019230478517789089723842560000"
+      ],
+      "first_six_parameter_quotient_length": 360,
+      "first_six_standard_basis_size": 133,
+      "first_seven_fiber_length": 2,
+      "first_seven_fiber_standard_basis_size": 6,
+      "mutual_fiber_ideal_reductions_zero": true
+    }
+  ],
+  "generic_full_moment_degree_on_each_slice": 2,
+  "full_moment_field_on_each_slice": "apolar-fixed field",
+  "open_family_consequence": "for every phase h=1,2,3,4, a nonempty Zariski-open family of tau-even positive/negative direction pairs has the same degree-two fixed-field property",
+  "scope_warning": "single-phase quotient slices only; no determination of the degree on Frac(R_4)"
+}

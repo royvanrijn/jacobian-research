@@ -1,0 +1,222 @@
+{
+  "format": "degree-four-tau-even-parameters-v1",
+  "prime": 1000003,
+  "point": [
+    [
+      19,
+      93,
+      193,
+      319,
+      471
+    ],
+    [
+      63,
+      148,
+      259,
+      396,
+      559
+    ],
+    [
+      121,
+      217,
+      339,
+      487,
+      661
+    ],
+    [
+      193,
+      300,
+      433,
+      592,
+      777
+    ],
+    [
+      279,
+      397,
+      541,
+      711,
+      907
+    ]
+  ],
+  "parameter_count": 22,
+  "degrees": [
+    1,
+    2,
+    2,
+    2,
+    2,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4
+  ],
+  "labels": [
+    "tr(A_0)",
+    "tr(A_2^2)",
+    "tr(A_4^2)",
+    "tr(A_6^2)",
+    "tr(A_8^2)",
+    "symtr(1,1,2)",
+    "symtr(1,2,3)",
+    "symtr(1,3,4)",
+    "symtr(2,2,2)",
+    "symtr(2,2,4)",
+    "symtr(2,3,3)",
+    "symtr(2,4,4)",
+    "symtr(3,3,4)",
+    "symtr(4,4,4)",
+    "tr(1113)",
+    "tr(1122)",
+    "tr(1124)",
+    "tr(1133)",
+    "tr(1144)",
+    "tr(1223)",
+    "tr(1232)",
+    "tr(1234)"
+  ],
+  "selected_tau_even_quartic_trace_words": [
+    {
+      "word": [
+        1,
+        1,
+        1,
+        3
+      ],
+      "component_index_sum": 6
+    },
+    {
+      "word": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "component_index_sum": 6
+    },
+    {
+      "word": [
+        1,
+        1,
+        2,
+        4
+      ],
+      "component_index_sum": 8
+    },
+    {
+      "word": [
+        1,
+        1,
+        3,
+        3
+      ],
+      "component_index_sum": 8
+    },
+    {
+      "word": [
+        1,
+        1,
+        4,
+        4
+      ],
+      "component_index_sum": 10
+    },
+    {
+      "word": [
+        1,
+        2,
+        2,
+        3
+      ],
+      "component_index_sum": 8
+    },
+    {
+      "word": [
+        1,
+        2,
+        3,
+        2
+      ],
+      "component_index_sum": 8
+    },
+    {
+      "word": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "component_index_sum": 10
+    }
+  ],
+  "jacobian_rank": 22,
+  "pivot_columns_zero_based": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21
+  ],
+  "minor_determinant_mod_prime": 531404,
+  "first_tau_odd_generator": "tr(A_4 A_6 A_8)",
+  "rank_after_appending_odd_generator": 22,
+  "first_22_moment_jacobian": {
+    "rank": 22,
+    "pivot_columns_zero_based": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21
+    ],
+    "minor_determinant_mod_prime": 997653
+  },
+  "combined_even_parameter_and_moment_cotangent_rank": 22,
+  "status": "exact algebraic-independence certificate; no assertion that these parameters or the moments generate the tau-fixed field"
+}

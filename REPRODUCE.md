@@ -969,6 +969,44 @@ job is the single aggregation check intended for GitHub branch protection.
 make verify-master
 ```
 
+The direct three-puncture reciprocal ledger and its all-degree
+polynomiality obstruction are replayed separately by:
+
+```bash
+.venv/bin/python scripts/verify_puncture_rank_frontier.py
+```
+
+The checker derives the universal determinant ledger, enumerates all
+two-character coefficient matrices in `[-2,2]` into 129 rank failures,
+392 nonsaturated class-lattice failures, and 104 saturated bases, and lists
+the 44 primitive positive `(r,a,b)` ledgers with coefficients at most four.
+It then verifies the boundary-moment eigenvalue recurrence used by the
+written all-degree proof and retains the eleven degree-four through
+degree-seven coefficient factorizations as regressions.  No candidate
+reaches polynomiality, so the calculation does not claim a Keller map or a
+complete collision.  Singular is not required.
+
+The surviving two-reconstruction-variable `A^6` core and its nonlinear
+screens are checked by:
+
+```bash
+.venv/bin/python scripts/verify_three_puncture_nonlinear_frontier.py
+```
+
+In addition to the two dimension-free rank-drop gates and the 80 fixed
+degree-at-most-three skeletons, this computes the zero-modification slice of
+the proposed coupled ansatz.  For arbitrary affine `P,Q` over `Q(c,v)`,
+arbitrary polynomial `H,S`, and two arbitrary affine transverse outputs, it
+forms eleven determinant coefficient equations and the Plücker quadric.
+Their exact Gröbner basis is `(1)`.  This proves that the next search must
+give at least one transverse output degree at least two; it does not exclude
+the remaining degree-two through degree-four systems.  The checker then
+keeps `P,Q` arbitrary affine, makes the fourth output a completely general
+degree-at-most-two polynomial, and proves unit coefficient ideals for the
+eight transverse skeletons
+`u,z,w,u+z,u+w,z+w,D0+z,D1+w`.  The two-general-quadratic-output system
+and arbitrary transverse directions outside this list remain open.
+
 This target includes the exact quadratic-gauge/cancellation intersection
 regression.  To run its symbolic `N=4,5,6,7` discriminant and all-factorization
 checks directly:
@@ -1058,6 +1096,7 @@ saturation modules are audited by:
 .venv/bin/python scripts/verify_cubic_symbol_deformation_saturation.py
 .venv/bin/python scripts/verify_cubic_symbol_quartic_tangent_saturation.py
 .venv/bin/python scripts/verify_smooth_cubic_quartic_plane_saturation.py
+.venv/bin/python scripts/verify_singular_cubic_quartic_plane_saturation.py
 .venv/bin/python scripts/verify_smooth_cubic_quartic_three_space_saturation.py
 ```
 
@@ -1070,6 +1109,11 @@ generically étale.  One explicit order-four kernel tensor makes the support
 defect finite of length six in all ten strata, while cotangent saturation
 still passes.  This is an exact leading-model computation.  It neither
 proves lift-independence nor constructs a normal lift with a Keller open.
+The support presentation is computed directly as the module preimage
+`modulo(H1,H2)`, namely the kernel of the four action columns in the
+threefold direct sum of the cotangent quotient.  This is exactly equivalent
+to extracting four coordinates from the combined syzygy module, but avoids
+the unnecessarily large 97-column elimination.
 The second command works over `Q[t,x,y,z]`.  On each of the seven
 squarefree lines `phi_h+t*psi_4`, it verifies uniform cotangent saturation,
 no parameter torsion in relative `Ext_A^2(T,A)`, radical support equal to
@@ -1090,7 +1134,14 @@ every plane the cotangent presentation is saturated and the relative
 length-six `Ext^2` presentation is pulled back from `u=v=0`; this includes
 every specialization on the plane.  Directions supported on three or more
 basis tensors are not tested.
-The fifth command is the longer four-worker three-space audit.  It tests
+The fifth command is the four-worker coordinate-plane audit for the six
+singular squarefree symbols.  It verifies that 1,652 pruned presentations
+are pulled back from the origin.  Four ambient presentations jump, so the
+checker forms their exact finite `Q[p0,p1]` presentations using the
+verified zero `m^2` action and proves `Fitt_6=(1), Fitt_5=(0)`.  Thus all
+1,656 singular-squarefree planes are flat of relative rank six; the four
+exceptional modules are in fact free by Quillen--Suslin.
+The sixth command is the longer four-worker three-space audit.  It tests
 all 2,024 smooth coordinate three-spaces over
 `Q[p0,p1,p2,x,y,z]`.  After pruning contractible free summands, every
 relative rank-three `Ext^2` presentation is pulled back from the parameter
@@ -1132,6 +1183,25 @@ ramified `(2,1)` and affine `(1,1)` sheets exhaust degree three.  An
 arbitrary cubic can still have a distinct unramified nonproperness divisor;
 excluding that factor, or reducing it to the minimal stratum while
 preserving genuine ungradedness, is the separate `OP-UG3` obligation.
+
+The universal flat ungraded coefficient cell is checked separately by:
+
+```bash
+.venv/bin/python scripts/verify_universal_cubic_ungraded_testbed.py
+```
+
+It verifies the seven-parameter degree-at-most-four cell, and the written
+argument extends the same identities to arbitrary
+`A(P),gamma(P) in k[P]`.  The checker proves the determinant-minus-two
+identity, inverse cubic and derivative reconstruction, reciprocal chart,
+finite free Deligne--Faddeev multiplication table, discriminant, smooth
+Laurent ramification parametrization, universal polynomial `GL_2`
+discriminant transformation, and the exact equivalence
+`G automorphic <=> phantom factor unit`.  It also separates this flat cell
+from the 24-dimensional Koszul order-four tensor kernel by their intrinsic
+third Fitting ideals.  It does not construct a Keller open for an arbitrary
+Koszul-kernel combination.
+
 The written no-global-monogenicity proposition then shows why these local
 generators cannot be patched into one root coordinate: the derivative would
 be a constant unit on `A^3` and would contradict cubic degree.
@@ -2010,6 +2080,54 @@ calculation are checked independently by
 .venv/bin/python scripts/verify_two_pair_counterexample_missing_invariant.py
 ```
 
+The degree-four moment-field continuation is replayed by
+
+```bash
+.venv/bin/python scripts/verify_degree_four_tau_even_parameters.py
+.venv/bin/python scripts/research_degree_four_moment_field.py \
+  --max-weight 16 --targets odd-square
+.venv/bin/python scripts/verify_degree_four_diagonal_moment_field.py
+```
+
+The first command constructs twenty-two algebraically independent
+apolar-even trace invariants of degrees \(1,2^4,3^9,4^8\).  Their exact
+modular Jacobian rank is \(22\), and their combined cotangent matrix with
+\(\mu_1,\ldots,\mu_{22}\) still has rank \(22\).  The second command is a
+bounded exact search: it proves that no relation
+\(Q(\mu)+c_{234}^2P(\mu)=0\) of invariant weight at most sixteen exists
+with that support.  It does not exclude a higher-weight denominator or a
+higher even minimal polynomial.  The third command requires Singular.  On
+the diagonal quartic slice it proves that the first five moments give a
+finite parameter ring of quotient length \(120\), and that the complete
+first-six-moment fiber through \((2,3,5,7,11)\) consists exactly of that
+point and its reversal.  Finiteness then proves that the full diagonal
+moment field is the reversal-fixed field, of exact generic degree two.
+The full \(22\)-dimensional degree-four moment-field equality remains
+open; see
+[`DEGREE_FOUR_MOMENT_FIELD.md`](extended-geometry/DEGREE_FOUR_MOMENT_FIELD.md).
+
+The completed-coordinate comparison in degrees three through five is
+replayed by
+
+```bash
+.venv/bin/python scripts/research_completed_moment_algebra.py \
+  --degrees 3 4 5 --max-weight 10
+```
+
+This exploratory checker constructs the quadratic Casimir decompositions,
+verifies the coefficient rows
+\(\binom{2d+1}{d-r}\) in \(\mu_2\), and gives exact modular moment-Jacobian
+ranks \(13,22,33\).  It runs linear-denominator nonrelation searches for
+the missing quadratics over the moments and over the moments with \(q_2\).
+For the square of a first apolar-odd invariant it additionally tests the
+proposed \((q_2,q_6)\) base and the full quadratic completion.  It also
+records bounded Hilbert-series necessary tests for natural and minimally
+corrected parameter-degree sequences, and checks the propagated
+all-moment-zero witnesses in degrees four and five.  A zero relation
+intersection is an exact bounded nonexistence certificate; Hilbert
+compatibility is not a proof of a nullcone zero fiber.  See
+[`COMPLETED_MOMENT_ALGEBRA_RESEARCH.md`](extended-geometry/COMPLETED_MOMENT_ALGEBRA_RESEARCH.md).
+
 The explicit first \(d=2\) moment relation is reconstructed and verified
 by
 
@@ -2245,6 +2363,7 @@ The coefficient-rank frontier inside bidegree \((4,4)\) is replayed by
 ```bash
 python3 scripts/verify_two_pair_sic_bidegree44_rank_frontier.py
 python3 scripts/verify_two_pair_sic_bidegree44_rank_two_invariants.py
+python3 scripts/verify_two_pair_sic_bidegree44_rank_two_all_order_audit.py
 .venv/bin/python scripts/verify_two_variable_quartic_squarefree_pivot.py
 .venv/bin/python scripts/verify_two_variable_quartic_two_root_finite.py
 ```
@@ -2278,9 +2397,27 @@ necessary Hilbert test through degree \(100\). Their numerator is
 palindromic through degree \(82\), the top degree predicted by the
 determinantal invariant ring's \(a\)-invariant \(-10\) and the candidate
 parameter-degree sum \(92\), but their zero fiber remains open. The
-rank-one finite-cutoff check below proves that the semistable
-thirteen-moment point has exact rank two. No all-order counterexample is
-claimed.
+rank-one finite-cutoff checks below close all collided-root strata, but
+one squarefree uniform-specialization chart remains open. Thus exact rank
+two is not yet forced for the semistable thirteen-moment point. No
+all-order counterexample is claimed.
+
+The third dependency-free command audits the proposed all-order starting
+point. It verifies
+\[
+\frac{\mu_m}{(4m+1)!}
+=\operatorname{CT}_u\int_0^1
+\Phi_C(1,u,t,(1-t)/u)^m\,dt
+\]
+on the rank-two factor chart and records the corresponding rational
+generating function. It also proves that the displayed exact rank-two
+Jacobian point has \(\mu_1=7414\), so it is not the existential
+thirteen-moment survivor, and computes the generic rank-two Newton polygon
+with normalized volume \(48\). The semistable fiber has no recorded closed
+point or residue field, so no coefficient-specialized scalar recurrence
+is claimed. See
+[`TWO_PAIR_SIC_BIDEGREE44_RANK_TWO_ALL_ORDER_AUDIT.md`](extended-geometry/TWO_PAIR_SIC_BIDEGREE44_RANK_TWO_ALL_ORDER_AUDIT.md).
+
 On the rank-one boundary, the same checker proves that moments one through
 six have exact Jacobian rank six and computes their nonnegative Hilbert
 numerator, of coefficient sum \(50\). Rank-one annihilator tensors are
@@ -2315,19 +2452,22 @@ three expected-branch gcds. Their sole new \(S_3\)-orbit is represented by
 22\lambda^4-54\lambda^3+\lambda^2-54\lambda+22=0;
 \]
 the checker closes that quartic-field fiber with the same degree and
-radical and with eighth-power certificates. Finally, verified modular
-Gröbner bases over \(\mathbb Q\), checked by direct lift identities, prove
-that on \(p\ne0\), the \(8c-3d^2\ne0\) chart is supported only at
-\(\lambda=0,1\), while the chart
-\(8c-3d^2=0,\ d(d-4)(d-4\lambda)\ne0\) is empty. Hence every squarefree
-fiber is closed exactly.
+radical and with eighth-power certificates. On the chart
+\(8c-3d^2=0,\ d(d-4)(d-4\lambda)\ne0\), direct substitution and exact
+division by the invertible cubic powers reduce the problem to a
+three-variable unit ideal over \(\mathbb Q\). One Rabinowitsch membership
+remains: on \(p\ne0\), the \(8c-3d^2\ne0\) chart should be supported only
+at \(\lambda=0,1\). Modular standard bases verify this statement at
+several good primes, but the checker does not promote that evidence to a
+characteristic-zero certificate.
 
 The fourth checker handles the remaining at-most-two-root normal forms
 \(u^rv^{4-r}\). For \(r=0,4\), the first moment gives the one-sided
 hyperplane. For \(r=1,2,3\), the first four moments have exactly the
 expected two one-sided linear components, with eighth-power radical
 certificates. Combined with the existing five-moment three-root theorem,
-this proves that every rank-one six-moment zero is in the nullcone.
+this closes every collided-root rank-one stratum. The single squarefree
+uniform-specialization gate described above remains.
 
 The dual-linear two-pair theorem is replayed by
 
@@ -2810,11 +2950,15 @@ The checker also constructs an irreducible quartic number field and an
 explicit point on \(J=\mu_3=0\).  At that point
 \((\mu_4,\mu_5)\) has length five, with initial ideal
 \((s_5^2,t_4^3,s_5t_4^2)\) and basis
-\(1,t_4,t_4^2,s_5,s_5t_4\).  This is an exact special-fiber theorem,
-not a proof that rank five is generic on \(J=0\).  Generic
+\(1,t_4,t_4^2,s_5,s_5t_4\).  It then proves the same statement at the
+generic point of \(J=0\).  Over
+\(\mathbb Q(\alpha)(s_1,s_3,t_0,L,t_2)\), \(\alpha^2=-30420\), a
+quadratic-pair fraction-free calculation constructs a three-element
+Gröbner basis with supports \(6,7,6\) and leading monomials
+\(s_5^2,s_5t_4^2,t_4^3\).  One pair is removed by the product criterion
+and the final pair reduces exactly to zero in five steps.  Generic
 rational-function-field calculations at both split roots modulo 47 and
-101 give the same basis and supply reconstruction evidence for that
-next statement.
+101 independently reproduce the basis.
 After solving the constant \(t_2\)-pivot, the checker forms the
 642-term cubic \(P(s_3)\) coming from \(\mu_3\) and the cubic
 \(s_5t_4\)-coefficient \(C(s_3)\) of the remaining \(\mu_6\) normal
@@ -3569,6 +3713,7 @@ The global quartic Cox-lattice continuation is included in:
 
 ```bash
 .venv/bin/python plane-jc/cas/test_plane_boundary_exclusion.py
+.venv/bin/python plane-jc/cas/test_degree_zero_endpoint_pairing.py
 Singular -q plane-jc/cas/quartic_completed_deletion.sing
 ```
 
@@ -3595,7 +3740,45 @@ degree-zero global-section algebra and its cusp/connector endpoint
 pairing, not nonprincipality alone.  The replay also checks the sharper
 module form: the degree `-1` square map into degree `-2` has affine
 companion cokernel `k[x,y]/(h)`.  A descended unit or exceptional curve is
-now a possible witness, not the statement being assumed.  See
+now a possible witness, not the statement being assumed.  The second
+Python command proves the proposed four-filter semigroup search is not yet
+finite: for every `n>=1` the reduced divisor
+`(y^2-x^3)*(x*y-y^(n+1)-1)` has cusp pole pair `(2,3)` and connector pole
+pairs `(1,0),(n,1)`, while the connector matrix is unimodular and all
+degree-zero, rank-one-piece, and odd-square-cokernel conditions survive.
+The bounded loop through `n=20` is only a regression for the uniform
+algebraic proof.  It also checks the triangular coordinates
+`(x,y+x^m)`: the connector pole pairs become `(1,m),(n,m*n)` without
+changing the affine plane, graded bridge, or packet data.  Hence no bound
+on raw coordinate-generator poles can be intrinsic.  A genuine finite
+compiler first needs the marked multivaluation semigroup or an
+automorphism-minimal coordinate pair, a degree-four bound on its minimized
+pole height, and the conductor equivalence relation pairing connector
+endpoints.  On the displayed connector the inverse shear
+`u=x-y^n=t^-1, v=y=t` gives the exact minimum height two.
+Finally, the two-ended family
+`X=t+t^-1, Y_c=t^2+c*t^-2+t` has the same pole row `(1,2)` at both
+endpoints for every nonzero `c`, but one quadratic shear cancels both
+leading poles only when their residue ratios agree (`c=1`).  The compiler
+must therefore retain simultaneous initial-residue data, not only numerical
+semigroup values.  The imported
+`plane-jc/cas/endpoint_valuation_compiler.py` enumerates every monomial
+triangular shear that strictly lowers the two-endpoint pole height, in both
+orientations, and terminates by integer descent.  It reduces every displayed
+connector to height two and distinguishes the residue-matched and
+residue-mismatched rows.  It now also exhausts complete lowering polynomial
+shears by recursively retaining forced cancellation terms in strictly
+descending degree, even when a leading prefix is height-neutral or
+height-increasing.  The witness
+`u=t^-1+t^2`,
+`v=u^3-t^6+t^5+u^2`
+has no lowering monomial shear, but the compiler finds
+`P(u)=u^3+u^2`, which lowers total height from eleven to nine.  This closes
+the one-polynomial-shear gap.  It is not yet a proof of global minimum under
+all plane polynomial automorphisms: the remaining automorphism gate is a
+marked multi-pole peak-reduction theorem for alternating triangular
+directions.
+See
 [`plane-jc/JC2_GLOBAL_COX_PACKET_ATTACK.md`](plane-jc/JC2_GLOBAL_COX_PACKET_ATTACK.md).
 The normalization and conductor formulas are written algebraic proofs.  The
 Python checker replays their cusp factorization, determinantal identities,
@@ -3702,6 +3885,29 @@ codimension-one block-affine theorem `SDX2` proves that every three-variable
 Keller map with such a block is a polynomial automorphism, even after a
 nonlinear source rechart.  Only mixed source--dual or coisotropic pivots
 survive this route.
+
+The first bounded mixed canonical-pivot search is:
+
+```bash
+PYTHONHASHSEED=0 .venv/bin/python \
+  scripts/search_hc4_mixed_canonical_pivots.py \
+  --output artifacts/generated-results/hc4_mixed_canonical_pivot_search.json
+```
+
+It searches 312 exact polynomial symplectic charts generated by quadratic
+or cubic Hamiltonians in one mixed source--dual line, two commuting mixed
+lines, or a cubic coisotropic-graph generator with one nonlinear constraint.
+Pure source transformations are excluded by construction.  All 312 charts
+have a scalar affine pivot and there are 258 jointly affine pairs.  Of 4320
+specialized scalar-remainder trials, 240 are the exact inherited
+`D=0` route and the other 4080 have modular nonconstancy witnesses.  Every
+affine pair fails the simultaneous rank-at-most-two budget, and all 41796
+complete descended determinants in the declared small repair box have
+unequal values modulo `1000003`.  This is the finite-box result `HC4MCP1`,
+not an exclusion of symbolic multi-parameter generators, mixed shear
+compositions, coefficient-dependent repairs, or general coisotropic
+embeddings.  See
+[`HC4_MIXED_CANONICAL_PIVOT_SEARCH.md`](HC4_MIXED_CANONICAL_PIVOT_SEARCH.md).
 
 The direct one-variable calculation for the `PC(2)` graph is:
 
@@ -4304,6 +4510,26 @@ points: the radial pair and the Fermat pair
 Consequently this complete symmetric-even slice contains no exceptional
 parameter curve, and both isolated points are already excluded at lower
 faces.
+
+The component-directed exceptional-locus research transcript is:
+
+```bash
+.venv/bin/python scripts/research_hc4_exceptional_schur_locus.py
+.venv/bin/python \
+  scripts/verify_hc4_quintic_two_parameter_symmetric_schur.py \
+  --extract-basis-denominators --basis-profile
+```
+
+The current modular reconstruction, exact special-fiber geometry, and
+remaining certification gates are recorded in
+[`HC4_EXCEPTIONAL_SCHUR_LOCUS.md`](HC4_EXCEPTIONAL_SCHUR_LOCUS.md) and
+[`hc4_exceptional_schur_locus_modular.json`](artifacts/generated-results/hc4_exceptional_schur_locus_modular.json).
+The even-quartic charts reconstruct only the Fermat and radial parameter
+points modulo \(47,101,103\), but this is not yet a full
+15-coefficient classification: the exact generic denominator and
+mixed-sign-character quartics remain open.  The transformation-aware
+`--extract-denominators` calculation timed out at its 900-second Singular
+bound and supplies no certificate.
 
 The direct collision-normalized finite-field experiment in degree bounds
 five through eight is:

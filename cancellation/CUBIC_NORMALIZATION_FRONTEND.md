@@ -1176,9 +1176,42 @@ ambient presentation, but pruning identifies both changes as nonminimal
 artifacts.  Thus every smooth order-four direction supported on at most
 three basis tensors retains the length-six defect.
 
+The coordinate-plane calculation also closes for all six singular
+squarefree symbols.  Among their
+\(6\binom{24}{2}=1656\) planes, 1652 have the same pruned rank-three
+presentation as the parameter origin.  Four planes have a nonconstant
+ambient presentation:
+
+\[
+\begin{split}
+ &(h_{\mathrm{cusp}},\{3,8\}),\quad
+ (h_{\mathrm{cusp}},\{4,9\}),\\
+ &(h_{\mathrm{line\text{-}tangent\text{-}conic}},\{2,9\}),\quad
+ (h_{\mathrm{node}},\{5,11\}).
+\end{split}
+\tag{1.16te}
+\]
+
+This presentation jump is not a flatness defect.  In each exceptional
+row the relative module is annihilated by
+\((x,y,z)^2\), so it has an exact finite presentation over
+\(S=\mathbb Q[p_0,p_1]\).  Direct calculation gives
+
+\[
+ \operatorname{Fitt}_6^S(M)=S,\qquad
+ \operatorname{Fitt}_5^S(M)=0.
+\tag{1.16tf}
+\]
+
+Hence \(M\) is locally free of rank six over the full parameter plane,
+and Quillen--Suslin makes it free.  Together with (1.16tc), all
+\(7\binom{24}{2}=1932\) coordinate planes for squarefree cubic symbols
+retain the flat length-six support defect.
+
 This computation does **not** prove lift-independence.  In particular it
-does not cover arbitrary linear combinations in the 24-parameter
-order-four space supported on four or more basis tensors, show that every
+does not cover singular-symbol combinations supported on three or more
+basis tensors, smooth-symbol combinations supported on four or more basis
+tensors, the universal 24-parameter order-four space, show that every
 normal integral higher lift has a length-six support defect, or construct
 the distinguished Keller open.
 Proposition 1.8c supplies normal integral lifts abstractly, but the
@@ -2374,6 +2407,7 @@ Run
 .venv/bin/python scripts/verify_cubic_symbol_deformation_saturation.py
 .venv/bin/python scripts/verify_cubic_symbol_quartic_tangent_saturation.py
 .venv/bin/python scripts/verify_smooth_cubic_quartic_plane_saturation.py
+.venv/bin/python scripts/verify_singular_cubic_quartic_plane_saturation.py
 .venv/bin/python scripts/verify_smooth_cubic_quartic_three_space_saturation.py
 .venv/bin/python plane-jc/cas/test_cubic_cusp_local_model.py
 Singular -q scripts/verify_cubic_double_saturation.sing
@@ -2408,6 +2442,11 @@ The smooth-plane checker is a four-worker calculation over
 every specialization, and proves that each relative `Ext^2` presentation
 is pulled back from the parameter-plane origin.  It does not control
 mixtures supported on three or more basis directions.
+The singular-plane checker treats the other six squarefree symbols.  It
+verifies 1,652 central pruned presentations and proves the remaining four
+planes flat of rank six from their exact finite parameter-ring
+presentations via `Fitt_6=(1)` and `Fitt_5=(0)`.  Thus no coordinate plane
+for a squarefree cubic symbol is left open.
 The smooth three-space checker is the longer four-worker continuation over
 `Q[p0,p1,p2,x,y,z]`.  It verifies all 2,024 coordinate three-spaces after
 pruning nonminimal free summands.  It does not control mixtures supported

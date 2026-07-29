@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Exact checks for the first nonlinear three-puncture completion frontier."""
+"""Exact checks for the nonlinear three-puncture A6 completion frontier."""
 
 from __future__ import annotations
 
@@ -176,6 +176,179 @@ for primitive in primitives:
 
 assert tested_skeletons == 80
 
+
+# The proposed affine-coupling moonshot can be screened uniformly when its
+# two remaining block outputs are affine-linear.  Write
+#
+#   Rtilde = R + D1*z + D0*w + z*w*H,
+#   Btilde = r + z*P + w*Q + z*w*S,
+#
+# where P,Q are arbitrary affine functions of r,u over K=Q(c,v).  On the
+# slice z=w=0, H and S disappear even if they have arbitrary degree.  The
+# gradients of two arbitrary affine transverse outputs C,D enter only
+# through their six Pluecker coordinates.  In four variables, the single
+# Pluecker quadric is necessary and sufficient for such a two-plane.
+p0, p1, p2, q0, q1, q2 = sp.symbols("p0 p1 p2 q0 q1 q2")
+P_affine = p0 + p1 * r + p2 * u
+Q_affine = q0 + q1 * r + q2 * u
+
+A_zero_gradient = (
+    sp.diff(R, r),
+    sp.diff(R, u),
+    D1,
+    D0,
+)
+B_zero_gradient = (
+    1,
+    0,
+    P_affine,
+    Q_affine,
+)
+
+p12, p13, p14, p23, p24, p34 = sp.symbols(
+    "p12 p13 p14 p23 p24 p34"
+)
+pluecker_coordinates = {
+    (0, 1): p12,
+    (0, 2): p13,
+    (0, 3): p14,
+    (1, 2): p23,
+    (1, 3): p24,
+    (2, 3): p34,
+}
+
+zero_slice_determinant = 0
+for first_column in range(4):
+    for second_column in range(first_column + 1, 4):
+        complementary_columns = [
+            column
+            for column in range(4)
+            if column not in (first_column, second_column)
+        ]
+        permutation = [
+            first_column,
+            second_column,
+            *complementary_columns,
+        ]
+        inversions = sum(
+            permutation[left] > permutation[right]
+            for left in range(4)
+            for right in range(left + 1, 4)
+        )
+        first_minor = (
+            A_zero_gradient[first_column]
+            * B_zero_gradient[second_column]
+            - A_zero_gradient[second_column]
+            * B_zero_gradient[first_column]
+        )
+        zero_slice_determinant += (
+            (-1) ** inversions
+            * first_minor
+            * pluecker_coordinates[tuple(complementary_columns)]
+        )
+
+zero_slice_polynomial = sp.Poly(
+    sp.expand(zero_slice_determinant - 1),
+    r,
+    u,
+)
+pluecker_relation = p12 * p34 - p13 * p24 + p14 * p23
+affine_completion_equations = [
+    *zero_slice_polynomial.coeffs(),
+    pluecker_relation,
+]
+affine_completion_unknowns = (
+    p0,
+    p1,
+    p2,
+    q0,
+    q1,
+    q2,
+    p12,
+    p13,
+    p14,
+    p23,
+    p24,
+    p34,
+)
+assert len(affine_completion_equations) == 12
+affine_completion_basis = sp.groebner(
+    affine_completion_equations,
+    *affine_completion_unknowns,
+    order="grevlex",
+    domain=sp.QQ.frac_field(c, v),
+)
+assert len(affine_completion_basis.polys) == 1
+assert affine_completion_basis.contains(sp.Integer(1))
+
+# The next zero-slice screen lets P,Q remain arbitrary affine functions and
+# lets the fourth output be a completely general polynomial of block degree
+# at most two.  It tests the same eight transverse skeletons used above.
+# H,S again disappear on z=w=0.  Every resulting coefficient ideal is the
+# unit ideal over Q(c,v).  This is an exact eight-row screen, not a
+# classification of arbitrary quadratic third outputs.
+quadratic_monomials = [
+    monomial
+    for monomial in monomials_through(2)
+    if monomial != 1
+]
+quadratic_coefficients = sp.symbols(
+    f"d0:{len(quadratic_monomials)}"
+)
+quadratic_fourth_output = sum(
+    coefficient * monomial
+    for coefficient, monomial in zip(
+        quadratic_coefficients,
+        quadratic_monomials,
+        strict=True,
+    )
+)
+quadratic_fourth_gradient = tuple(
+    sp.diff(quadratic_fourth_output, variable).subs({z: 0, w: 0})
+    for variable in block_variables
+)
+
+quadratic_zero_slice_skeletons = 0
+for third_coordinate in third_coordinates:
+    quadratic_zero_slice_skeletons += 1
+    third_gradient = tuple(
+        sp.diff(third_coordinate, variable).subs({z: 0, w: 0})
+        for variable in block_variables
+    )
+    determinant_equation = sp.expand(
+        sp.Matrix(
+            [
+                A_zero_gradient,
+                B_zero_gradient,
+                third_gradient,
+                quadratic_fourth_gradient,
+            ]
+        ).det(method="domain-ge")
+        - 1
+    )
+    coefficient_equations = sp.Poly(
+        determinant_equation,
+        r,
+        u,
+    ).coeffs()
+    coefficient_basis = sp.groebner(
+        coefficient_equations,
+        p0,
+        p1,
+        p2,
+        q0,
+        q1,
+        q2,
+        *quadratic_coefficients,
+        order="grevlex",
+        domain=sp.QQ.frac_field(c, v),
+    )
+    assert len(coefficient_basis.polys) == 1
+    assert coefficient_basis.contains(sp.Integer(1))
+
+assert quadratic_zero_slice_skeletons == 8
+
+
 print(
     "PASS: retained-primitive and one-sided nonlinear rank-drop gates; "
     "exact rank-one transfer determinants"
@@ -183,4 +356,12 @@ print(
 print(
     "PASS: 80 coupled A^6 coordinate skeletons have no degree-<=3 "
     "polynomial Jacobian slice over Q(c,v)"
+)
+print(
+    "PASS: the proposed affine P,Q coupling has no completion with two "
+    "affine transverse outputs over Q(c,v)"
+)
+print(
+    "PASS: all 8 transverse skeletons reject a general degree-<=2 fourth "
+    "output with arbitrary affine P,Q"
 )

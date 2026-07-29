@@ -1,0 +1,79 @@
+{
+  "format": "degree-four-moment-field-bounded-relations-v1",
+  "prime": 1000003,
+  "max_weight": 16,
+  "extra_samples": 3,
+  "targets": "odd-square",
+  "relation_ansatz": "Q(mu)+target*P(mu)=0, homogeneous in invariant weight",
+  "results": {
+    "c_234^2": [
+      {
+        "weight": 6,
+        "columns": 12,
+        "rank": 12,
+        "nullity": 0
+      },
+      {
+        "weight": 7,
+        "columns": 16,
+        "rank": 16,
+        "nullity": 0
+      },
+      {
+        "weight": 8,
+        "columns": 24,
+        "rank": 24,
+        "nullity": 0
+      },
+      {
+        "weight": 9,
+        "columns": 33,
+        "rank": 33,
+        "nullity": 0
+      },
+      {
+        "weight": 10,
+        "columns": 47,
+        "rank": 47,
+        "nullity": 0
+      },
+      {
+        "weight": 11,
+        "columns": 63,
+        "rank": 63,
+        "nullity": 0
+      },
+      {
+        "weight": 12,
+        "columns": 88,
+        "rank": 88,
+        "nullity": 0
+      },
+      {
+        "weight": 13,
+        "columns": 116,
+        "rank": 116,
+        "nullity": 0
+      },
+      {
+        "weight": 14,
+        "columns": 157,
+        "rank": 157,
+        "nullity": 0
+      },
+      {
+        "weight": 15,
+        "columns": 206,
+        "rank": 206,
+        "nullity": 0
+      },
+      {
+        "weight": 16,
+        "columns": 273,
+        "rank": 273,
+        "nullity": 0
+      }
+    ]
+  },
+  "status": "full column rank excludes the displayed characteristic-zero relation support; a rank defect would require rational reconstruction and identity verification"
+}

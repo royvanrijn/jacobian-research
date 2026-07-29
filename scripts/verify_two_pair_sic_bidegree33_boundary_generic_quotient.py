@@ -912,6 +912,360 @@ for (basisIndex=1;basisIndex<=size(G);basisIndex++)
     }
 
 
+def exact_j_divisor_generic_certificate(
+    polynomials: list[str],
+) -> dict[str, object]:
+    """Fraction-free Groebner certificate on the generic J divisor."""
+
+    s1, s2, s3, s5, t0, t1, t2, t4, linear, quadratic, alpha = sp.symbols(
+        "s1 s2 s3 s5 t0 t1 t2 t4 L Q alpha"
+    )
+    environment = {
+        str(symbol): symbol
+        for symbol in (
+            s1,
+            s2,
+            s3,
+            s5,
+            t0,
+            t1,
+            t2,
+            t4,
+            linear,
+            quadratic,
+            alpha,
+        )
+    }
+    parsed = [
+        sp.sympify(
+            polynomial.replace("^", "**"),
+            locals=environment,
+        )
+        for polynomial in polynomials
+    ]
+    split_quadratic = (alpha * linear - 155 * t0**2) / 99
+    replacements = {
+        t1: s1 * t0 - linear,
+        s2: s1**2 - sp.Rational(13, 3) * t0**2 - split_quadratic,
+    }
+    fiber_polynomials = [
+        sp.Poly(
+            sp.expand(parsed[index].subs(replacements)),
+            s5,
+            t4,
+        )
+        for index in (1, 2)
+    ]
+    assert [len(polynomial.terms()) for polynomial in fiber_polynomials] == [
+        6,
+        8,
+    ]
+
+    base_ring = sp.QQ.poly_ring(s1, s3, t0, linear, t2)
+    zero = base_ring.zero
+    one = base_ring.one
+    quadratic_constant = 30420
+
+    def coefficient_add(left, right):
+        return left[0] + right[0], left[1] + right[1]
+
+    def coefficient_negate(value):
+        return -value[0], -value[1]
+
+    def coefficient_multiply(left, right):
+        return (
+            left[0] * right[0]
+            - quadratic_constant * left[1] * right[1],
+            left[0] * right[1] + left[1] * right[0],
+        )
+
+    def coefficient_is_zero(value) -> bool:
+        return value[0] == zero and value[1] == zero
+
+    def coefficient_from_expression(expression):
+        polynomial = sp.Poly(expression, alpha, domain=sp.EX)
+        even = zero
+        odd = zero
+        for (exponent,), coefficient in polynomial.terms():
+            reduced = base_ring.from_sympy(coefficient)
+            reduced *= (-quadratic_constant) ** (exponent // 2)
+            if exponent % 2:
+                odd += reduced
+            else:
+                even += reduced
+        return even, odd
+
+    def clean(polynomial, is_zero=coefficient_is_zero):
+        return {
+            monomial: coefficient
+            for monomial, coefficient in polynomial.items()
+            if not is_zero(coefficient)
+        }
+
+    def fiber_polynomial(polynomial):
+        return clean(
+            {
+                monomial: coefficient_from_expression(coefficient)
+                for monomial, coefficient in polynomial.terms()
+            }
+        )
+
+    def monomial_key(monomial):
+        return (
+            monomial[0] + monomial[1],
+            -monomial[1],
+            -monomial[0],
+        )
+
+    def leading_monomial(polynomial):
+        return max(polynomial, key=monomial_key)
+
+    def polynomial_add(left, right, is_zero=coefficient_is_zero):
+        answer = dict(left)
+        for monomial, coefficient in right.items():
+            answer[monomial] = coefficient_add(
+                answer.get(monomial, (zero, zero)),
+                coefficient,
+            )
+        return clean(answer, is_zero)
+
+    def polynomial_scale(polynomial, coefficient):
+        return clean(
+            {
+                monomial: coefficient_multiply(value, coefficient)
+                for monomial, value in polynomial.items()
+            }
+        )
+
+    def polynomial_monomial_multiply(polynomial, monomial):
+        return {
+            (
+                exponent[0] + monomial[0],
+                exponent[1] + monomial[1],
+            ): coefficient
+            for exponent, coefficient in polynomial.items()
+        }
+
+    def monomial_divides(left, right) -> bool:
+        return left[0] <= right[0] and left[1] <= right[1]
+
+    def pseudo_reduce(polynomial, basis):
+        remainder = {}
+        polynomial = dict(polynomial)
+        steps = 0
+        while polynomial:
+            monomial = leading_monomial(polynomial)
+            coefficient = polynomial[monomial]
+            for divisor in basis:
+                divisor_monomial = leading_monomial(divisor)
+                if not monomial_divides(divisor_monomial, monomial):
+                    continue
+                divisor_coefficient = divisor[divisor_monomial]
+                multiplier = (
+                    monomial[0] - divisor_monomial[0],
+                    monomial[1] - divisor_monomial[1],
+                )
+                polynomial = polynomial_add(
+                    polynomial_scale(polynomial, divisor_coefficient),
+                    polynomial_scale(
+                        polynomial_monomial_multiply(divisor, multiplier),
+                        coefficient_negate(coefficient),
+                    ),
+                )
+                remainder = polynomial_scale(remainder, divisor_coefficient)
+                steps += 1
+                break
+            else:
+                remainder[monomial] = coefficient
+                del polynomial[monomial]
+        return clean(remainder), steps
+
+    def s_polynomial(left, right, add=polynomial_add, scale=polynomial_scale):
+        left_monomial = leading_monomial(left)
+        right_monomial = leading_monomial(right)
+        least_common_multiple = (
+            max(left_monomial[0], right_monomial[0]),
+            max(left_monomial[1], right_monomial[1]),
+        )
+        left_multiplier = (
+            least_common_multiple[0] - left_monomial[0],
+            least_common_multiple[1] - left_monomial[1],
+        )
+        right_multiplier = (
+            least_common_multiple[0] - right_monomial[0],
+            least_common_multiple[1] - right_monomial[1],
+        )
+        return add(
+            scale(
+                polynomial_monomial_multiply(left, left_multiplier),
+                right[right_monomial],
+            ),
+            scale(
+                polynomial_monomial_multiply(right, right_multiplier),
+                coefficient_negate(left[left_monomial]),
+            ),
+        )
+
+    first, second = [
+        fiber_polynomial(polynomial)
+        for polynomial in fiber_polynomials
+    ]
+    middle, first_steps = pseudo_reduce(second, [first])
+    last, second_steps = pseudo_reduce(
+        s_polynomial(first, middle),
+        [first, middle],
+    )
+    basis = [first, middle, last]
+    assert [leading_monomial(polynomial) for polynomial in basis] == [
+        (2, 0),
+        (1, 2),
+        (0, 3),
+    ]
+    assert [len(polynomial) for polynomial in basis] == [6, 7, 6]
+    assert (first_steps, second_steps) == (2, 4)
+
+    fraction_field = sp.QQ.frac_field(s1, s3, t0, linear, t2)
+    fraction_zero = fraction_field.zero
+
+    def lift_coefficient(value):
+        return fraction_field.convert(value[0]), fraction_field.convert(value[1])
+
+    lifted_basis = [
+        {
+            monomial: lift_coefficient(coefficient)
+            for monomial, coefficient in polynomial.items()
+        }
+        for polynomial in basis
+    ]
+
+    def fraction_is_zero(value) -> bool:
+        return value[0] == fraction_zero and value[1] == fraction_zero
+
+    def fraction_add(left, right):
+        return left[0] + right[0], left[1] + right[1]
+
+    def fraction_negate(value):
+        return -value[0], -value[1]
+
+    def fraction_multiply(left, right):
+        return (
+            left[0] * right[0]
+            - quadratic_constant * left[1] * right[1],
+            left[0] * right[1] + left[1] * right[0],
+        )
+
+    def fraction_inverse(value):
+        denominator = (
+            value[0] * value[0]
+            + quadratic_constant * value[1] * value[1]
+        )
+        return value[0] / denominator, -value[1] / denominator
+
+    def fraction_divide(left, right):
+        return fraction_multiply(left, fraction_inverse(right))
+
+    def fraction_polynomial_add(left, right):
+        answer = dict(left)
+        for monomial, coefficient in right.items():
+            answer[monomial] = fraction_add(
+                answer.get(monomial, (fraction_zero, fraction_zero)),
+                coefficient,
+            )
+        return clean(answer, fraction_is_zero)
+
+    def fraction_polynomial_scale(polynomial, coefficient):
+        return clean(
+            {
+                monomial: fraction_multiply(value, coefficient)
+                for monomial, value in polynomial.items()
+            },
+            fraction_is_zero,
+        )
+
+    def fraction_s_polynomial(left, right):
+        return s_polynomial(
+            left,
+            right,
+            add=fraction_polynomial_add,
+            scale=fraction_polynomial_scale,
+        )
+
+    def fraction_reduce(polynomial, divisors):
+        remainder = {}
+        polynomial = dict(polynomial)
+        steps = 0
+        while polynomial:
+            monomial = leading_monomial(polynomial)
+            coefficient = polynomial[monomial]
+            for divisor in divisors:
+                divisor_monomial = leading_monomial(divisor)
+                if not monomial_divides(divisor_monomial, monomial):
+                    continue
+                multiplier = (
+                    monomial[0] - divisor_monomial[0],
+                    monomial[1] - divisor_monomial[1],
+                )
+                factor = fraction_divide(
+                    coefficient,
+                    divisor[divisor_monomial],
+                )
+                polynomial = fraction_polynomial_add(
+                    polynomial,
+                    fraction_polynomial_scale(
+                        polynomial_monomial_multiply(divisor, multiplier),
+                        fraction_negate(factor),
+                    ),
+                )
+                steps += 1
+                break
+            else:
+                remainder[monomial] = coefficient
+                del polynomial[monomial]
+        return clean(remainder, fraction_is_zero), steps
+
+    final_remainder, final_steps = fraction_reduce(
+        fraction_s_polynomial(lifted_basis[1], lifted_basis[2]),
+        lifted_basis,
+    )
+    assert final_remainder == {}
+    assert final_steps == 5
+
+
+    leading_coefficient_metadata = []
+    for polynomial in basis:
+        coefficient = polynomial[leading_monomial(polynomial)]
+        serialized = f"{coefficient[0]}|{coefficient[1]}"
+        leading_coefficient_metadata.append(
+            {
+                "even_terms": len(coefficient[0].terms()),
+                "odd_terms": len(coefficient[1].terms()),
+                "sha256": hashlib.sha256(serialized.encode()).hexdigest(),
+            }
+        )
+    return {
+        "coefficient_field": (
+            "QQ(alpha)(s1,s3,t0,L,t2), alpha^2=-30420"
+        ),
+        "split_divisor_equation": "99*Q+155*t0^2=alpha*L",
+        "input_fiber_support_sizes": [6, 8],
+        "groebner_basis_support_sizes": [6, 7, 6],
+        "leading_monomials": ["s5^2", "s5*t4^2", "t4^3"],
+        "standard_basis": ["1", "t4", "t4^2", "s5", "s5*t4"],
+        "quotient_length": 5,
+        "pseudo_reduction_steps": [first_steps, second_steps],
+        "final_s_pair_reduction_steps": final_steps,
+        "coprime_s_pair_skipped_by_product_criterion": [
+            "s5^2",
+            "t4^3",
+        ],
+        "leading_coefficients": leading_coefficient_metadata,
+        "scope": (
+            "exact fraction-free characteristic-zero Groebner certificate "
+            "over the generic J-divisor function field"
+        ),
+    }
+
+
 def modular_j_divisor_replay(
     singular: str,
     polynomials: list[str],
@@ -1127,6 +1481,9 @@ def exact_certificate() -> dict[str, object]:
             singular,
             polynomials,
         ),
+        "j_divisor_generic_quotient": exact_j_divisor_generic_certificate(
+            polynomials,
+        ),
         "j_divisor_mu3_point": exact_j_divisor_point_certificate(
             singular,
             polynomials,
@@ -1196,6 +1553,7 @@ def main() -> None:
     print("PASS R63 is irreducible by its degree-preserving reduction modulo 47")
     print("PASS the first two residual resultants are coprime off L*Q")
     print("PASS R63 has a dense rational linear s3 subresultant pivot")
+    print("PASS over QQ: the generic J-divisor quotient has length five")
     print("PASS an exact mu_3=J=0 point has quotient length five")
     print("PASS both split J components have rank-five modular replays")
     print("PASS L=0, Q=0, and L=Q=0 have quotient lengths 6, 5, and 5")

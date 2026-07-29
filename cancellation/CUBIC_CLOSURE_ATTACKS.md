@@ -189,8 +189,16 @@ For the smooth symbol, all 276 full coordinate planes
 \(\mathbb Q[u,v]\).  On every plane the relative Ext presentation is
 pulled back from the origin, with support equal to the parameter plane and
 relative multiplicity six.  This closes every specialization supported on
-at most two basis vectors, but not mixtures supported on three or more
-basis vectors or the other six squarefree symbols.
+at most two basis vectors.
+
+The other six squarefree symbols have now been tested on all 1,656
+coordinate planes.  In 1,652 rows the pruned presentation is pulled back
+from the origin.  Four rows have a nonconstant ambient presentation, but
+their exact finite \(\mathbb Q[p_0,p_1]\)-presentations satisfy
+\(\operatorname{Fitt}_6=(1)\) and \(\operatorname{Fitt}_5=0\), proving
+local freeness of rank six, hence freeness by Quillen--Suslin.  Therefore
+all 1,932 squarefree-symbol coordinate planes retain the length-six defect;
+any remaining singular-symbol escape uses at least three basis tensors.
 
 All 2,024 smooth coordinate three-spaces have now also been tested.  Their
 pruned rank-three relative Ext presentations are pulled back from the
@@ -214,10 +222,9 @@ open.
 
 These results leave four sharply separated continuation gates:
 
-1. extend the coordinate-plane audit to the singular squarefree symbols,
-   then replace the 10,626 smooth coordinate four-space sweep by a
-   coefficient-independent finite-jet proof and pass to the universal
-   24-parameter family;
+1. replace the 10,626 smooth coordinate four-space sweep and the singular
+   coordinate three-space sweeps by a coefficient-independent finite-jet
+   proof, then pass to the universal 24-parameter family;
 2. derive the coefficient \(6\) intrinsically from the Koszul trace
    module, for example as a localized Buchsbaum--Rim or Chern-class charge,
    rather than by orbit-by-orbit elimination;

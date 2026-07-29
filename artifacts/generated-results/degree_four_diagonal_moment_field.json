@@ -1,0 +1,51 @@
+{
+  "format": "degree-four-diagonal-moment-field-v1",
+  "slice": "C=diag(a_0,a_1,a_2,a_3,a_4)",
+  "apolar_involution": "(a_0,a_1,a_2,a_3,a_4) -> (a_4,a_3,a_2,a_1,a_0)",
+  "first_five_parameter_quotient_length": 120,
+  "first_five_standard_basis_size": 32,
+  "test_point": [
+    2,
+    3,
+    5,
+    7,
+    11
+  ],
+  "first_six_moment_values": [
+    "392",
+    "6350976",
+    "786491493120",
+    "371595648356352000",
+    "472381443403196866560000",
+    "1321167867982917099155619840000"
+  ],
+  "fiber_ideal_generators": [
+    "a0+a4-13",
+    "9*a1+4*a4-71",
+    "a2-5",
+    "9*a3-4*a4-19",
+    "(a4-2)*(a4-11)"
+  ],
+  "fiber_length": 2,
+  "fiber_standard_basis_size": 5,
+  "fiber_points": [
+    [
+      2,
+      3,
+      5,
+      7,
+      11
+    ],
+    [
+      11,
+      7,
+      5,
+      3,
+      2
+    ]
+  ],
+  "mutual_ideal_reductions_zero": true,
+  "generic_full_moment_degree_on_slice": 2,
+  "full_moment_field_on_slice": "reversal-fixed field",
+  "scope_warning": "slice theorem only; does not determine the degree on Frac(R_4)"
+}

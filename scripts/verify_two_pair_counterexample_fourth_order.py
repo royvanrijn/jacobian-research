@@ -258,7 +258,11 @@ def coefficient_vector(
     )
 
 
-def main() -> None:
+def main(
+    *,
+    write_output: bool = True,
+    return_context: bool = False,
+) -> dict[str, object] | None:
     stored = json.loads(LOCAL_ARTIFACT.read_text())
     witness = seed.witness()[0]
 
@@ -1269,7 +1273,8 @@ def main() -> None:
             len(polynomial) for polynomial in correction
         )
         result["universal_cubic_tangent_correction"] = correction
-    OUTPUT.write_text(json.dumps(result, indent=2) + "\n")
+    if write_output:
+        OUTPUT.write_text(json.dumps(result, indent=2) + "\n")
 
     print(
         "PASS SIC2C4 fourth: assembled exact "
@@ -1285,7 +1290,27 @@ def main() -> None:
             "PASS SIC2C4 fourth: every reduced quadratic direction "
             "lifts through fourth order"
         )
-    print(f"PASS SIC2C4 fourth: wrote {OUTPUT.relative_to(ROOT)}")
+    if write_output:
+        print(f"PASS SIC2C4 fourth: wrote {OUTPUT.relative_to(ROOT)}")
+    if return_context:
+        return {
+            "stored": stored,
+            "tangent_basis": tangent_basis,
+            "residual_vectors": residual_vectors,
+            "rows": rows,
+            "first_rows": first_rows,
+            "pivot_columns": pivot_columns,
+            "pivot_inverse": pivot_inverse,
+            "row_coordinates": row_coordinates,
+            "bilinear_matrices": bilinear_matrices,
+            "second_map": second_map,
+            "third_map": third_map,
+            "fourth_obstructions": fourth_obstructions,
+            "tangent_linear": tangent_linear,
+            "symbolic_tangent_matrix": symbolic_tangent_matrix,
+            "symbolic_fourth_constant": symbolic_fourth_constant,
+        }
+    return None
 
 
 if __name__ == "__main__":

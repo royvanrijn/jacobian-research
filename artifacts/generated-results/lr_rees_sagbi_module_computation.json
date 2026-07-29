@@ -1,0 +1,1386 @@
+{
+  "description": "Finite LR Rees/SAGBI and quadratic normal-module computation for F_2",
+  "generation_tests": {
+    "known_membership_failures": [
+      0,
+      1,
+      3,
+      4,
+      5,
+      12,
+      13,
+      15,
+      16,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      30
+    ],
+    "known_p1_column_index": 17,
+    "known_p1_generates_all_p1_and_p2_columns": false,
+    "p1_matrix_generates_p2_matrix": false,
+    "p2_mod_p1_failures": [
+      2
+    ]
+  },
+  "initial_lifts": {
+    "-1": [
+      {
+        "degree": 66,
+        "field": "(B**3) e_A",
+        "initial_lift": [
+          "15*x**39*y**15*z**12/32",
+          "0",
+          "-45*x**38*y**15*z**13/32"
+        ]
+      },
+      {
+        "degree": 51,
+        "field": "(A*B) e_A",
+        "initial_lift": [
+          "45*x**30*y**12*z**9",
+          "0",
+          "-135*x**29*y**12*z**10"
+        ]
+      },
+      {
+        "degree": 56,
+        "field": "(A**2*C) e_A",
+        "initial_lift": [
+          "1080*x**33*y**13*z**10",
+          "0",
+          "-3240*x**32*y**13*z**11"
+        ]
+      },
+      {
+        "degree": 51,
+        "field": "(B**2) e_B",
+        "initial_lift": [
+          "-225*x**30*y**12*z**9/4",
+          "0",
+          "675*x**29*y**12*z**10/4"
+        ]
+      },
+      {
+        "degree": 36,
+        "field": "(A) e_B",
+        "initial_lift": [
+          "-5400*x**21*y**9*z**6",
+          "0",
+          "16200*x**20*y**9*z**7"
+        ]
+      },
+      {
+        "degree": 31,
+        "field": "(1) e_C",
+        "initial_lift": [
+          "135*x**18*y**8*z**5",
+          "0",
+          "-405*x**17*y**8*z**6"
+        ]
+      }
+    ],
+    "-2": [
+      {
+        "degree": 82,
+        "field": "(B**4) e_A",
+        "initial_lift": [
+          "15*x**48*y**19*z**15/128",
+          "0",
+          "-45*x**47*y**19*z**16/128"
+        ]
+      },
+      {
+        "degree": 67,
+        "field": "(A*B**2) e_A",
+        "initial_lift": [
+          "45*x**39*y**16*z**12/4",
+          "0",
+          "-135*x**38*y**16*z**13/4"
+        ]
+      },
+      {
+        "degree": 52,
+        "field": "(A**2) e_A",
+        "initial_lift": [
+          "1080*x**30*y**13*z**9",
+          "0",
+          "-3240*x**29*y**13*z**10"
+        ]
+      },
+      {
+        "degree": 67,
+        "field": "(B**3) e_B",
+        "initial_lift": [
+          "-225*x**39*y**16*z**12/16",
+          "0",
+          "675*x**38*y**16*z**13/16"
+        ]
+      },
+      {
+        "degree": 52,
+        "field": "(A*B) e_B",
+        "initial_lift": [
+          "-1350*x**30*y**13*z**9",
+          "0",
+          "4050*x**29*y**13*z**10"
+        ]
+      },
+      {
+        "degree": 57,
+        "field": "(A**2*C) e_B",
+        "initial_lift": [
+          "-32400*x**33*y**14*z**10",
+          "0",
+          "97200*x**32*y**14*z**11"
+        ]
+      },
+      {
+        "degree": 47,
+        "field": "(B) e_C",
+        "initial_lift": [
+          "135*x**27*y**12*z**8/4",
+          "0",
+          "-405*x**26*y**12*z**9/4"
+        ]
+      },
+      {
+        "degree": 52,
+        "field": "(A*C) e_C",
+        "initial_lift": [
+          "810*x**30*y**13*z**9",
+          "0",
+          "-2430*x**29*y**13*z**10"
+        ]
+      }
+    ],
+    "1": [
+      {
+        "degree": 34,
+        "field": "(B) e_A",
+        "initial_lift": [
+          "15*x**21*y**7*z**6/2",
+          "0",
+          "-45*x**20*y**7*z**7/2"
+        ]
+      },
+      {
+        "degree": 39,
+        "field": "(A*C) e_A",
+        "initial_lift": [
+          "180*x**24*y**8*z**7",
+          "0",
+          "-540*x**23*y**8*z**8"
+        ]
+      },
+      {
+        "degree": 19,
+        "field": "(1) e_B",
+        "initial_lift": [
+          "-900*x**12*y**4*z**3",
+          "0",
+          "2700*x**11*y**4*z**4"
+        ]
+      },
+      {
+        "degree": 39,
+        "field": "(C**2) e_C",
+        "initial_lift": [
+          "135*x**24*y**8*z**7",
+          "0",
+          "-405*x**23*y**8*z**8"
+        ]
+      }
+    ],
+    "2": [
+      {
+        "degree": 18,
+        "field": "(1) e_A",
+        "initial_lift": [
+          "30*x**12*y**3*z**3",
+          "0",
+          "-90*x**11*y**3*z**4"
+        ]
+      },
+      {
+        "degree": 23,
+        "field": "(C) e_B",
+        "initial_lift": [
+          "-900*x**15*y**4*z**4",
+          "0",
+          "2700*x**14*y**4*z**5"
+        ]
+      },
+      {
+        "degree": 43,
+        "field": "(C**3) e_C",
+        "initial_lift": [
+          "135*x**27*y**8*z**8",
+          "0",
+          "-405*x**26*y**8*z**9"
+        ]
+      }
+    ],
+    "linear_strictness": {
+      "commutes": false,
+      "input_degree": 39,
+      "new_initial_lift": [
+        "-210*x**21*y**7*z**6",
+        "0",
+        "630*x**20*y**7*z**7"
+      ],
+      "output_degree_after_cancellation": 34,
+      "relation": "3*ell_F(AC e_A)-4*ell_F(C^2 e_C)",
+      "weight": 1
+    }
+  },
+  "quadratic_cutoff": {
+    "regression_column_counts": {
+      "3": 27,
+      "4": 33,
+      "5": 36,
+      "6": 42,
+      "7": 45,
+      "8": 51
+    },
+    "statement": "|p|>=3 vanishes because every coefficient product lies in (a,b^2), (b,a*gamma), and (gamma) simultaneously"
+  },
+  "quadratic_matrices": {
+    "1": [
+      {
+        "components": [
+          0,
+          0
+        ],
+        "first": "(B) e_A",
+        "multiplier_exponents_ABC": [
+          0,
+          4,
+          0
+        ],
+        "nonzero": true,
+        "residue": [
+          "0",
+          "0",
+          "576*u**5/4375 - 2952*u**4/4375 + 1808*u**3/4375 - 188*u**2/1875 + 48*u/4375 - 107/236250"
+        ],
+        "second": "(B**3) e_A"
+      },
+      {
+        "components": [
+          0,
+          0
+        ],
+        "first": "(B) e_A",
+        "multiplier_exponents_ABC": [
+          1,
+          2,
+          0
+        ],
+        "nonzero": true,
+        "residue": [
+          "0",
+          "0",
+          "-1728*u**5/175 + 8856*u**4/175 - 768*u**3/25 + 1086*u**2/175 - 214*u/525"
+        ],
+        "second": "(A*B) e_A"
+      },
+      {
+        "components": [
+          0,
+          0
+        ],
+        "first": "(B) e_A",
+        "multiplier_exponents_ABC": [
+          2,
+          1,
+          1
+        ],
+        "nonzero": false,
+        "residue": [
+          "0",
+          "0",
+          "0"
+        ],
+        "second": "(A**2*C) e_A"
+      },
+      {
+        "components": [
+          0,
+          1
+        ],
+        "first": "(B) e_A",
+        "multiplier_exponents_ABC": [
+          0,
+          3,
+          0
+        ],
+        "nonzero": true,
+        "residue": [
+          "0",
+          "0",
+          "3456*u**5/175 - 17712*u**4/175 + 10896*u**3/175 - 2656*u**2/175 + 292*u/175 - 109/1575"
+        ],
+        "second": "(B**2) e_B"
+      },
+      {
+        "components": [
+          0,
+          1
+        ],
+        "first": "(B) e_A",
+        "multiplier_exponents_ABC": [
+          1,
+          1,
+          0
+        ],
+        "nonzero": true,
+        "residue": [
+          "0",
+          "0",
+          "-10368*u**5/7 + 53136*u**4/7 - 32400*u**3/7 + 6588*u**2/7 - 436*u/7"
+        ],
+        "second": "(A) e_B"
+      },
+      {
+        "components": [
+          0,
+          2
+        ],
+        "first": "(B) e_A",
+        "multiplier_exponents_ABC": [
+          0,
+          1,
+          0
+        ],
+        "nonzero": true,
+        "residue": [
+          "12183371127482811*gamma**2/22453825257598083020 + 13225412947416207574171*gamma*u/10912559075192668347720 + 17200674424335405251*gamma/242501312782059296616 + 1946545149582802673*u**2/9279386968701248595 - 7309344436540526767*u/44541057449765993256 - 2900742424767240868429/2182511815038533669544",
+          "0",
+          "-4896*u**5/35 + 25092*u**4/35 - 15164*u**3/35 + 1853*u**2/35 - 18*u/5 + 3/5"
+        ],
+        "second": "(1) e_C"
+      },
+      {
+        "components": [
+          0,
+          0
+        ],
+        "first": "(A*C) e_A",
+        "multiplier_exponents_ABC": [
+          1,
+          3,
+          1
+        ],
+        "nonzero": false,
+        "residue": [
+          "0",
+          "0",
+          "0"
+        ],
+        "second": "(B**3) e_A"
+      },
+      {
+        "components": [
+          0,
+          0
+        ],
+        "first": "(A*C) e_A",
+        "multiplier_exponents_ABC": [
+          2,
+          1,
+          1
+        ],
+        "nonzero": false,
+        "residue": [
+          "0",
+          "0",
+          "0"
+        ],
+        "second": "(A*B) e_A"
+      },
+      {
+        "components": [
+          0,
+          0
+        ],
+        "first": "(A*C) e_A",
+        "multiplier_exponents_ABC": [
+          3,
+          0,
+          2
+        ],
+        "nonzero": false,
+        "residue": [
+          "0",
+          "0",
+          "0"
+        ],
+        "second": "(A**2*C) e_A"
+      },
+      {
+        "components": [
+          0,
+          1
+        ],
+        "first": "(A*C) e_A",
+        "multiplier_exponents_ABC": [
+          1,
+          2,
+          1
+        ],
+        "nonzero": false,
+        "residue": [
+          "0",
+          "0",
+          "0"
+        ],
+        "second": "(B**2) e_B"
+      },
+      {
+        "components": [
+          0,
+          1
+        ],
+        "first": "(A*C) e_A",
+        "multiplier_exponents_ABC": [
+          2,
+          0,
+          1
+        ],
+        "nonzero": false,
+        "residue": [
+          "0",
+          "0",
+          "0"
+        ],
+        "second": "(A) e_B"
+      },
+      {
+        "components": [
+          0,
+          2
+        ],
+        "first": "(A*C) e_A",
+        "multiplier_exponents_ABC": [
+          1,
+          0,
+          1
+        ],
+        "nonzero": false,
+        "residue": [
+          "0",
+          "0",
+          "0"
+        ],
+        "second": "(1) e_C"
+      },
+      {
+        "components": [
+          1,
+          0
+        ],
+        "first": "(1) e_B",
+        "multiplier_exponents_ABC": [
+          0,
+          3,
+          0
+        ],
+        "nonzero": true,
+        "residue": [
+          "0",
+          "0",
+          "3456*u**5/175 - 17712*u**4/175 + 10896*u**3/175 - 2656*u**2/175 + 292*u/175 - 109/1575"
+        ],
+        "second": "(B**3) e_A"
+      },
+      {
+        "components": [
+          1,
+          0
+        ],
+        "first": "(1) e_B",
+        "multiplier_exponents_ABC": [
+          1,
+          1,
+          0
+        ],
+        "nonzero": true,
+        "residue": [
+          "0",
+          "0",
+          "-10368*u**5/7 + 53136*u**4/7 - 32400*u**3/7 + 6588*u**2/7 - 436*u/7"
+        ],
+        "second": "(A*B) e_A"
+      },
+      {
+        "components": [
+          1,
+          0
+        ],
+        "first": "(1) e_B",
+        "multiplier_exponents_ABC": [
+          2,
+          0,
+          1
+        ],
+        "nonzero": false,
+        "residue": [
+          "0",
+          "0",
+          "0"
+        ],
+        "second": "(A**2*C) e_A"
+      },
+      {
+        "components": [
+          1,
+          1
+        ],
+        "first": "(1) e_B",
+        "multiplier_exponents_ABC": [
+          0,
+          2,
+          0
+        ],
+        "nonzero": true,
+        "residue": [
+          "0",
+          "0",
+          "20736*u**5/7 - 106272*u**4/7 + 65664*u**3/7 - 16080*u**2/7 + 1776*u/7 - 74/7"
+        ],
+        "second": "(B**2) e_B"
+      },
+      {
+        "components": [
+          1,
+          1
+        ],
+        "first": "(1) e_B",
+        "multiplier_exponents_ABC": [
+          1,
+          0,
+          0
+        ],
+        "nonzero": true,
+        "residue": [
+          "0",
+          "0",
+          "-1555200*u**5/7 + 7970400*u**4/7 - 4881600*u**3/7 + 999000*u**2/7 - 66600*u/7"
+        ],
+        "second": "(A) e_B"
+      },
+      {
+        "components": [
+          1,
+          2
+        ],
+        "first": "(1) e_B",
+        "multiplier_exponents_ABC": [
+          0,
+          0,
+          0
+        ],
+        "nonzero": true,
+        "residue": [
+          "-293420218924628938907550*gamma**2/6986507728901643531673 - 59305417665599881951914215990*gamma*u/565907126041033126065513 - 368734368553387943958337820*gamma/62878569560114791785057 - 25673269799105024724786770*u**2/1283236113471730444593 + 210706131004385684049839050*u/11549125021245574001337 + 63645105582503685776779620040/565907126041033126065513",
+          "-1224931017725*gamma/1460831347017 + 26745508869449*u**2/536631923394 - 2323807352689670*u/39442446369459 + 782171176527487/78884892738918",
+          "-146880*u**5/7 + 752760*u**4/7 - 65280*u**3 + 56610*u**2/7 - 540*u + 90"
+        ],
+        "second": "(1) e_C"
+      },
+      {
+        "components": [
+          2,
+          0
+        ],
+        "first": "(C**2) e_C",
+        "multiplier_exponents_ABC": [
+          0,
+          3,
+          2
+        ],
+        "nonzero": false,
+        "residue": [
+          "0",
+          "0",
+          "0"
+        ],
+        "second": "(B**3) e_A"
+      },
+      {
+        "components": [
+          2,
+          0
+        ],
+        "first": "(C**2) e_C",
+        "multiplier_exponents_ABC": [
+          1,
+          1,
+          2
+        ],
+        "nonzero": false,
+        "residue": [
+          "0",
+          "0",
+          "0"
+        ],
+        "second": "(A*B) e_A"
+      },
+      {
+        "components": [
+          2,
+          0
+        ],
+        "first": "(C**2) e_C",
+        "multiplier_exponents_ABC": [
+          2,
+          0,
+          3
+        ],
+        "nonzero": false,
+        "residue": [
+          "0",
+          "0",
+          "0"
+        ],
+        "second": "(A**2*C) e_A"
+      },
+      {
+        "components": [
+          2,
+          1
+        ],
+        "first": "(C**2) e_C",
+        "multiplier_exponents_ABC": [
+          0,
+          2,
+          2
+        ],
+        "nonzero": false,
+        "residue": [
+          "0",
+          "0",
+          "0"
+        ],
+        "second": "(B**2) e_B"
+      },
+      {
+        "components": [
+          2,
+          1
+        ],
+        "first": "(C**2) e_C",
+        "multiplier_exponents_ABC": [
+          1,
+          0,
+          2
+        ],
+        "nonzero": false,
+        "residue": [
+          "0",
+          "0",
+          "0"
+        ],
+        "second": "(A) e_B"
+      },
+      {
+        "components": [
+          2,
+          2
+        ],
+        "first": "(C**2) e_C",
+        "multiplier_exponents_ABC": [
+          0,
+          0,
+          2
+        ],
+        "nonzero": true,
+        "residue": [
+          "-887544317390935464*gamma**2/3315855590366228539 - 18340689035975158950836*gamma*u/29842700313296056851 - 120205616043698293370*gamma/3315855590366228539 - 80293250820177922484*u**2/609034700271348099 + 81509825917831848524*u/609034700271348099 + 19370915299439919634382/29842700313296056851",
+          "5042556353*gamma/19875256422 + 4764439112*u**2/9126393255 - 1225548372301*u/1341579808485 + 369606538019/2683159616970",
+          "0"
+        ],
+        "second": "(1) e_C"
+      }
+    ],
+    "2": [
+      {
+        "components": [
+          0,
+          0
+        ],
+        "first": "(1) e_A",
+        "multiplier_exponents_ABC": [
+          0,
+          4,
+          0
+        ],
+        "nonzero": true,
+        "residue": [
+          "0",
+          "0",
+          "576*u**5/4375 - 2952*u**4/4375 + 1808*u**3/4375 - 188*u**2/1875 + 48*u/4375 - 107/236250"
+        ],
+        "second": "(B**4) e_A"
+      },
+      {
+        "components": [
+          0,
+          0
+        ],
+        "first": "(1) e_A",
+        "multiplier_exponents_ABC": [
+          1,
+          2,
+          0
+        ],
+        "nonzero": true,
+        "residue": [
+          "0",
+          "0",
+          "-1728*u**5/175 + 8856*u**4/175 - 768*u**3/25 + 1086*u**2/175 - 214*u/525"
+        ],
+        "second": "(A*B**2) e_A"
+      },
+      {
+        "components": [
+          0,
+          0
+        ],
+        "first": "(1) e_A",
+        "multiplier_exponents_ABC": [
+          2,
+          0,
+          0
+        ],
+        "nonzero": true,
+        "residue": [
+          "0",
+          "439868*gamma/1014043695 - 220816043*u**2/10430163720 - 49572047*u/7822622790 + 5930142731/219033438120",
+          "5184*u**5/7 - 26568*u**4/7 + 15984*u**3/7 - 2568*u**2/7"
+        ],
+        "second": "(A**2) e_A"
+      },
+      {
+        "components": [
+          0,
+          1
+        ],
+        "first": "(1) e_A",
+        "multiplier_exponents_ABC": [
+          0,
+          3,
+          0
+        ],
+        "nonzero": true,
+        "residue": [
+          "0",
+          "0",
+          "3456*u**5/175 - 17712*u**4/175 + 10896*u**3/175 - 2656*u**2/175 + 292*u/175 - 109/1575"
+        ],
+        "second": "(B**3) e_B"
+      },
+      {
+        "components": [
+          0,
+          1
+        ],
+        "first": "(1) e_A",
+        "multiplier_exponents_ABC": [
+          1,
+          1,
+          0
+        ],
+        "nonzero": true,
+        "residue": [
+          "0",
+          "0",
+          "-10368*u**5/7 + 53136*u**4/7 - 32400*u**3/7 + 6588*u**2/7 - 436*u/7"
+        ],
+        "second": "(A*B) e_B"
+      },
+      {
+        "components": [
+          0,
+          1
+        ],
+        "first": "(1) e_A",
+        "multiplier_exponents_ABC": [
+          2,
+          0,
+          1
+        ],
+        "nonzero": false,
+        "residue": [
+          "0",
+          "0",
+          "0"
+        ],
+        "second": "(A**2*C) e_B"
+      },
+      {
+        "components": [
+          0,
+          2
+        ],
+        "first": "(1) e_A",
+        "multiplier_exponents_ABC": [
+          0,
+          1,
+          0
+        ],
+        "nonzero": true,
+        "residue": [
+          "12183371127482811*gamma**2/22453825257598083020 + 13225412947416207574171*gamma*u/10912559075192668347720 + 17200674424335405251*gamma/242501312782059296616 + 1946545149582802673*u**2/9279386968701248595 - 7309344436540526767*u/44541057449765993256 - 2900742424767240868429/2182511815038533669544",
+          "0",
+          "-4896*u**5/35 + 25092*u**4/35 - 15164*u**3/35 + 1853*u**2/35 - 18*u/5 + 3/5"
+        ],
+        "second": "(B) e_C"
+      },
+      {
+        "components": [
+          0,
+          2
+        ],
+        "first": "(1) e_A",
+        "multiplier_exponents_ABC": [
+          1,
+          0,
+          1
+        ],
+        "nonzero": false,
+        "residue": [
+          "0",
+          "0",
+          "0"
+        ],
+        "second": "(A*C) e_C"
+      },
+      {
+        "components": [
+          1,
+          0
+        ],
+        "first": "(C) e_B",
+        "multiplier_exponents_ABC": [
+          0,
+          4,
+          1
+        ],
+        "nonzero": false,
+        "residue": [
+          "0",
+          "0",
+          "0"
+        ],
+        "second": "(B**4) e_A"
+      },
+      {
+        "components": [
+          1,
+          0
+        ],
+        "first": "(C) e_B",
+        "multiplier_exponents_ABC": [
+          1,
+          2,
+          1
+        ],
+        "nonzero": false,
+        "residue": [
+          "0",
+          "0",
+          "0"
+        ],
+        "second": "(A*B**2) e_A"
+      },
+      {
+        "components": [
+          1,
+          0
+        ],
+        "first": "(C) e_B",
+        "multiplier_exponents_ABC": [
+          2,
+          0,
+          1
+        ],
+        "nonzero": false,
+        "residue": [
+          "0",
+          "0",
+          "0"
+        ],
+        "second": "(A**2) e_A"
+      },
+      {
+        "components": [
+          1,
+          1
+        ],
+        "first": "(C) e_B",
+        "multiplier_exponents_ABC": [
+          0,
+          3,
+          1
+        ],
+        "nonzero": false,
+        "residue": [
+          "0",
+          "0",
+          "0"
+        ],
+        "second": "(B**3) e_B"
+      },
+      {
+        "components": [
+          1,
+          1
+        ],
+        "first": "(C) e_B",
+        "multiplier_exponents_ABC": [
+          1,
+          1,
+          1
+        ],
+        "nonzero": false,
+        "residue": [
+          "0",
+          "0",
+          "0"
+        ],
+        "second": "(A*B) e_B"
+      },
+      {
+        "components": [
+          1,
+          1
+        ],
+        "first": "(C) e_B",
+        "multiplier_exponents_ABC": [
+          2,
+          0,
+          2
+        ],
+        "nonzero": false,
+        "residue": [
+          "0",
+          "0",
+          "0"
+        ],
+        "second": "(A**2*C) e_B"
+      },
+      {
+        "components": [
+          1,
+          2
+        ],
+        "first": "(C) e_B",
+        "multiplier_exponents_ABC": [
+          0,
+          1,
+          1
+        ],
+        "nonzero": true,
+        "residue": [
+          "-4743593598623430303*gamma**2/142581790385747827177 - 274282850273504969927083*gamma*u/3849708340415191333779 - 1819796817522245077378*gamma/427745371157243481531 - 324748039104196399108*u**2/26188492111667968257 + 760857174655172746283*u/78565476335003904771 + 301245058848581414342675/3849708340415191333779",
+          "0",
+          "0"
+        ],
+        "second": "(B) e_C"
+      },
+      {
+        "components": [
+          1,
+          2
+        ],
+        "first": "(C) e_B",
+        "multiplier_exponents_ABC": [
+          1,
+          0,
+          2
+        ],
+        "nonzero": false,
+        "residue": [
+          "0",
+          "0",
+          "0"
+        ],
+        "second": "(A*C) e_C"
+      },
+      {
+        "components": [
+          2,
+          0
+        ],
+        "first": "(C**3) e_C",
+        "multiplier_exponents_ABC": [
+          0,
+          4,
+          3
+        ],
+        "nonzero": false,
+        "residue": [
+          "0",
+          "0",
+          "0"
+        ],
+        "second": "(B**4) e_A"
+      },
+      {
+        "components": [
+          2,
+          0
+        ],
+        "first": "(C**3) e_C",
+        "multiplier_exponents_ABC": [
+          1,
+          2,
+          3
+        ],
+        "nonzero": false,
+        "residue": [
+          "0",
+          "0",
+          "0"
+        ],
+        "second": "(A*B**2) e_A"
+      },
+      {
+        "components": [
+          2,
+          0
+        ],
+        "first": "(C**3) e_C",
+        "multiplier_exponents_ABC": [
+          2,
+          0,
+          3
+        ],
+        "nonzero": false,
+        "residue": [
+          "0",
+          "0",
+          "0"
+        ],
+        "second": "(A**2) e_A"
+      },
+      {
+        "components": [
+          2,
+          1
+        ],
+        "first": "(C**3) e_C",
+        "multiplier_exponents_ABC": [
+          0,
+          3,
+          3
+        ],
+        "nonzero": false,
+        "residue": [
+          "0",
+          "0",
+          "0"
+        ],
+        "second": "(B**3) e_B"
+      },
+      {
+        "components": [
+          2,
+          1
+        ],
+        "first": "(C**3) e_C",
+        "multiplier_exponents_ABC": [
+          1,
+          1,
+          3
+        ],
+        "nonzero": false,
+        "residue": [
+          "0",
+          "0",
+          "0"
+        ],
+        "second": "(A*B) e_B"
+      },
+      {
+        "components": [
+          2,
+          1
+        ],
+        "first": "(C**3) e_C",
+        "multiplier_exponents_ABC": [
+          2,
+          0,
+          4
+        ],
+        "nonzero": false,
+        "residue": [
+          "0",
+          "0",
+          "0"
+        ],
+        "second": "(A**2*C) e_B"
+      },
+      {
+        "components": [
+          2,
+          2
+        ],
+        "first": "(C**3) e_C",
+        "multiplier_exponents_ABC": [
+          0,
+          1,
+          3
+        ],
+        "nonzero": true,
+        "residue": [
+          "1599427283201424*gamma**2/2078451754894283195 - 149193470134771226113*gamma*u/130942460558339841285 + 106717762643386991*gamma/8729497370555989419 - 118795432238947552*u**2/890765037811835655 + 63968445266271901*u/534459022687101393 + 4265217120719068741/3741213158809709751",
+          "0",
+          "0"
+        ],
+        "second": "(B) e_C"
+      },
+      {
+        "components": [
+          2,
+          2
+        ],
+        "first": "(C**3) e_C",
+        "multiplier_exponents_ABC": [
+          1,
+          0,
+          4
+        ],
+        "nonzero": false,
+        "residue": [
+          "0",
+          "0",
+          "0"
+        ],
+        "second": "(A*C) e_C"
+      }
+    ]
+  },
+  "saturated_normal_quotient": {
+    "initial_ideals": [
+      [
+        "u^3",
+        "u^2*gamma",
+        "u*gamma^2",
+        "gamma^3"
+      ],
+      [
+        "u^3",
+        "u*gamma",
+        "gamma^2"
+      ],
+      [
+        "gamma"
+      ]
+    ],
+    "ring": "Q[u,gamma], deg(u)=2, deg(gamma)=3",
+    "summand_ideals": [
+      [
+        "6*gamma**3*u**5 - 21*gamma**2*u**4 + 17*gamma*u**3 - 3*u**2 + u",
+        "(gamma**3*u**4/4 - 14*gamma**2*u**3/15 + 17*gamma*u**2/20 - u/5 + 1/30)**2"
+      ],
+      [
+        "gamma**3*u**4/4 - 14*gamma**2*u**3/15 + 17*gamma*u**2/20 - u/5 + 1/30",
+        "gamma*(6*gamma**3*u**5 - 21*gamma**2*u**4 + 17*gamma*u**3 - 3*u**2 + u)"
+      ],
+      [
+        "gamma"
+      ]
+    ]
+  },
+  "target_field_modules": {
+    "-1": [
+      {
+        "coefficient": "B**3",
+        "component": "A",
+        "field": "(B**3) e_A"
+      },
+      {
+        "coefficient": "A*B",
+        "component": "A",
+        "field": "(A*B) e_A"
+      },
+      {
+        "coefficient": "A**2*C",
+        "component": "A",
+        "field": "(A**2*C) e_A"
+      },
+      {
+        "coefficient": "B**2",
+        "component": "B",
+        "field": "(B**2) e_B"
+      },
+      {
+        "coefficient": "A",
+        "component": "B",
+        "field": "(A) e_B"
+      },
+      {
+        "coefficient": "1",
+        "component": "C",
+        "field": "(1) e_C"
+      }
+    ],
+    "-2": [
+      {
+        "coefficient": "B**4",
+        "component": "A",
+        "field": "(B**4) e_A"
+      },
+      {
+        "coefficient": "A*B**2",
+        "component": "A",
+        "field": "(A*B**2) e_A"
+      },
+      {
+        "coefficient": "A**2",
+        "component": "A",
+        "field": "(A**2) e_A"
+      },
+      {
+        "coefficient": "B**3",
+        "component": "B",
+        "field": "(B**3) e_B"
+      },
+      {
+        "coefficient": "A*B",
+        "component": "B",
+        "field": "(A*B) e_B"
+      },
+      {
+        "coefficient": "A**2*C",
+        "component": "B",
+        "field": "(A**2*C) e_B"
+      },
+      {
+        "coefficient": "B",
+        "component": "C",
+        "field": "(B) e_C"
+      },
+      {
+        "coefficient": "A*C",
+        "component": "C",
+        "field": "(A*C) e_C"
+      }
+    ],
+    "1": [
+      {
+        "coefficient": "B",
+        "component": "A",
+        "field": "(B) e_A"
+      },
+      {
+        "coefficient": "A*C",
+        "component": "A",
+        "field": "(A*C) e_A"
+      },
+      {
+        "coefficient": "1",
+        "component": "B",
+        "field": "(1) e_B"
+      },
+      {
+        "coefficient": "C**2",
+        "component": "C",
+        "field": "(C**2) e_C"
+      }
+    ],
+    "2": [
+      {
+        "coefficient": "1",
+        "component": "A",
+        "field": "(1) e_A"
+      },
+      {
+        "coefficient": "C",
+        "component": "B",
+        "field": "(C) e_B"
+      },
+      {
+        "coefficient": "C**3",
+        "component": "C",
+        "field": "(C**3) e_C"
+      }
+    ]
+  },
+  "target_invariant_ring": {
+    "generators": [
+      "P=A*C^2",
+      "Q=B*C"
+    ],
+    "pullbacks": [
+      "gamma**2*(6*gamma**3*u**5 - 21*gamma**2*u**4 + 17*gamma*u**3 - 3*u**2 + u)",
+      "gamma*(gamma**3*u**4/4 - 14*gamma**2*u**3/15 + 17*gamma*u**2/20 - u/5 + 1/30)"
+    ],
+    "sagbi": {
+      "generators": [
+        "gamma**5*u**5 - 7*gamma**4*u**4/2 + 17*gamma**3*u**3/6 - gamma**2*u**2/2 + gamma**2*u/6",
+        "gamma**4*u**4 - 56*gamma**3*u**3/15 + 17*gamma**2*u**2/5 - 4*gamma*u/5 + 2*gamma/15",
+        "gamma**14*u**12 - 41867*gamma**13*u**13/450 - 56*gamma**13*u**11/5 + 6873409*gamma**12*u**12/6750 + 23543*gamma**12*u**10/450 - 931831789*gamma**11*u**11/202500 - 447922*gamma**11*u**9/3375 + 7*gamma**11*u**8/15 + 125706991*gamma**10*u**10/11250 - 544271*gamma**10*u**9/13500 + 40691029*gamma**10*u**8/202500 - 784*gamma**10*u**7/225 - 1456022071*gamma**9*u**9/91125 + 3312307*gamma**9*u**8/11250 - 9682492*gamma**9*u**7/50625 + 22003*gamma**9*u**6/2250 + 470383493*gamma**8*u**8/33750 - 241278709*gamma**8*u**7/303750 + 49269941*gamma**8*u**6/405000 - 654614*gamma**8*u**5/50625 + 131*gamma**8*u**4/1800 - 300366349*gamma**7*u**7/40500 + 301298423*gamma**7*u**6/303750 - 6341741*gamma**7*u**5/101250 + 87668*gamma**7*u**4/10125 - 917*gamma**7*u**3/3375 + 104554733*gamma**6*u**6/45000 - 40961383*gamma**6*u**5/67500 + 50859587*gamma**6*u**4/1215000 - 1586554*gamma**6*u**3/455625 + 2591*gamma**6*u**2/10125 - 4390549*gamma**5*u**5/11250 + 11631977*gamma**5*u**4/67500 - 239009*gamma**5*u**3/10125 + 698677*gamma**5*u**2/607500 - 2804*gamma**5*u/50625 + 64*gamma**5/16875 + 16864*gamma**4*u**4/625 - 33728*gamma**4*u**3/1875 + 8432*gamma**4*u**2/1875 - 8432*gamma**4*u/16875 + 1054*gamma**4/50625"
+      ],
+      "initial_monomials": [
+        "u^5*gamma^5",
+        "u^4*gamma^4",
+        "u^12*gamma^14"
+      ],
+      "subduction_identity": [
+        [
+          4,
+          0,
+          "1"
+        ],
+        [
+          0,
+          5,
+          "-1"
+        ],
+        [
+          3,
+          1,
+          "-14/3"
+        ],
+        [
+          2,
+          2,
+          "461/90"
+        ],
+        [
+          1,
+          3,
+          "-739/450"
+        ],
+        [
+          0,
+          4,
+          "-527/720"
+        ],
+        [
+          3,
+          0,
+          "-1636136/759375"
+        ],
+        [
+          2,
+          1,
+          "675947/202500"
+        ]
+      ],
+      "third_generator_term_count": 42
+    }
+  },
+  "target_weights_ABC": [
+    -2,
+    -1,
+    1
+  ]
+}

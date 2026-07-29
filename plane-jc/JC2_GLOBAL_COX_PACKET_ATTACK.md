@@ -1014,7 +1014,468 @@ smallest global module datum that simultaneously remembers the
 nonprincipal Cox character, the two-generated plane ring, and the packet
 incidence.
 
-### 6.5 What the later Cox attacks change
+### 6.5 The four degree-zero filters do not give a finite semigroup problem
+
+There is a necessary finiteness gate before enumerating endpoint
+semigroups.  The data proved in Sections 6.3--6.4 do not bound the pole
+orders of \(x,y\), and the connector chart explicitly permits arbitrary
+finite contact.  More strongly, factoriality and the rank-one module
+conditions do not add such a bound.
+
+> **Proposition 6.1 -- degree-zero semigroup insufficiency.**
+> The following four inputs do not define a finite endpoint enumeration:
+>
+> 1. the completed models \(as^2=r^2\ell\), with cusp contact two and
+>    arbitrary finite connector contact;
+> 2. factoriality of \(R=k[x,y]\);
+> 3. rank-one freeness of every graded piece of \(C_{F,g}\); and
+> 4. \(\operatorname{coker}(C_{-1}^{\otimes2}\to C_{-2})=R/(h)\).
+>
+> At the level seen by these four inputs, infinitely many distinct
+> connector pole pairs survive.  Consequently they cannot by themselves
+> force a descended unit, an extra boundary component, or a monodromy
+> contradiction.
+
+#### Proof
+
+First, the last three inputs are formal for every reduced
+\(h\in k[x,y]\).  The ring \(R\) is a UFD independently of \(h\), while
+
+\[
+C_h=R[s,a]/(h-as^2)
+\tag{6.47}
+\]
+
+has the normal forms
+
+\[
+(C_h)_d=
+\begin{cases}
+R s^d,&d\ge0,\\
+R a^m,&d=-2m<0,\\
+R a^{m+1}s,&d=-(2m+1)<0.
+\end{cases}
+\tag{6.48}
+\]
+
+Thus all pieces are free of rank one.  Moreover
+
+\[
+(as)^2=a^2s^2=ha
+\tag{6.49}
+\]
+
+again gives cokernel \(R/(h)\).  None of these statements bounds a pole
+order.
+
+Here is an explicit infinite degree-zero test family.  For \(n\ge1\), put
+
+\[
+\begin{aligned}
+c&=y^2-x^3,\\
+d_n&=xy-y^{n+1}-1,\\
+h_n&=c\,d_n.
+\end{aligned}
+\tag{6.50}
+\]
+
+The two factors are coprime: on the cusp normalization
+\((x,y)=(t^2,t^3)\), the second factor becomes
+\(t^5-t^{3n+3}-1\), which is nonzero.  The connector factor is smooth,
+because \((d_n)_x=y\), and \(y=0\) is incompatible with \(d_n=0\).
+Hence \(h_n\) is reduced.
+
+The normalization of \(c=0\) has its standard endpoint pole pair
+
+\[
+(\operatorname{pole}(x),\operatorname{pole}(y))=(2,3).
+\tag{6.51}
+\]
+
+The connector component is
+
+\[
+R/(d_n)
+\simeq k[t,t^{-1}],
+\qquad
+y=t,\quad x=t^n+t^{-1}.
+\tag{6.52}
+\]
+
+Indeed \(y^{-1}=x-y^n\) in \(R/(d_n)\), which gives the inverse
+isomorphism.
+At \(t=0\) and \(t=\infty\), its two endpoint pole pairs are respectively
+
+\[
+(1,0),\qquad(n,1).
+\tag{6.53}
+\]
+
+They are distinct for all \(n\), and their row matrix is unimodular:
+
+\[
+\det
+\begin{pmatrix}
+1&0\\
+n&1
+\end{pmatrix}
+=1.
+\tag{6.54}
+\]
+
+Thus even the stronger *provisional* filter that asks the connector
+generator vectors to span a saturated free lattice retains every \(n\).
+The completed calculation does not remove them: its connector contact is
+allowed to be any finite positive integer, and its formal equations contain
+no pole-order constraint on the global functions \(x,y\).
+
+This family is not asserted to lift to a quartic finite normalization or to
+a Keller map.  It proves the narrower and necessary point: every condition
+in the proposed four-filter degree-zero abstraction survives an unbounded
+parametric family.  Therefore that abstraction is not yet a finite
+semigroup problem. \(\square\)
+
+There is a second loss of information.  The divisor \(h=0\), and hence the
+odd-square cokernel, records its normalized endpoints but not the
+equivalence relation saying which two endpoints have the same target value.
+That pairing belongs to the finite map and its conductor, not to the
+abstract \(R\)-module \(R/(h)\).  In particular, no sheet-monodromy test can
+be recovered from the cokernel alone.
+
+Factoriality must also be used with care.  A UFD need not have a saturated
+numerical value semigroup for an arbitrary filtration, and normality need
+not pass to its associated graded ring.  A semigroup saturation test is
+therefore only a prefilter unless one first proves that the chosen
+multivaluation has one-dimensional leaves and that \(x,y\) form a
+Khovanskii/SAGBI basis for the relevant associated graded algebra.
+
+There is a further coordinate-invariance obstruction which persists even
+after the conductor pairing is restored.
+
+> **Proposition 6.2 -- triangular-shear unboundedness.**
+> Suppose a component of \(h=0\) has an endpoint \(p\), and let
+> \[
+> \alpha=\operatorname{pole}_p(x),\qquad
+> \beta=\operatorname{pole}_p(y).
+> \tag{6.55}
+> \]
+> Then the orbit of the ordered generator pair \((x,y)\) under polynomial
+> automorphisms of \(k[x,y]\) has unbounded endpoint pole pairs.  This
+> remains true after fixing the geometric degree, completed packet,
+> conductor pairing, and sheet monodromy of a hypothetical Keller map.
+
+#### Proof
+
+After harmless constant translations, neither coordinate restricts to zero
+on the component; such translations do not change its endpoint poles.  At
+least one of \(\alpha,\beta\) is positive, since a missing point of the
+normalization of an affine plane curve cannot have both affine coordinates
+regular.  If \(\alpha>0\), use the triangular coordinates
+
+\[
+x_m=x,\qquad y_m=y+x^m.
+\tag{6.56}
+\]
+
+For every \(m\) with \(m\alpha>\beta\), the two summands have unequal
+orders at \(p\), so cancellation is impossible and
+
+\[
+\operatorname{pole}_p(y_m)=m\alpha.
+\tag{6.57}
+\]
+
+If \(\alpha=0\), then \(\beta>0\), and the opposite shear
+\((x+y^m,y)\) gives the same conclusion.  Both shears have Jacobian one
+and polynomial inverses.
+
+The shear extends to the bridge by fixing \(s,a\) and sending
+\(h\) to its pullback \(h_m\):
+
+\[
+k[x,y,s,a]/(h-as^2)
+\simeq
+k[x,y,s,a]/(h_m-as^2).
+\tag{6.58}
+\]
+
+If \(F\) were a quartic Keller map, precomposition by the same source
+automorphism would preserve its constant Jacobian, function-field degree,
+finite normalization up to isomorphism, completed conductor packets, and
+monodromy.  Only the chosen polynomial generators and their numerical pole
+pairs change.  Hence no bound on raw generator pole pairs can follow from
+those invariant data. \(\square\)
+
+For the family (6.50), the calculation is visible without any hypothetical
+cover.  On the connector normalization,
+
+\[
+x=t^n+t^{-1},\qquad
+y_m=t+(t^n+t^{-1})^m.
+\tag{6.59}
+\]
+
+The endpoint pole pairs become
+
+\[
+(1,m)\quad\text{at }t=0,\qquad
+(n,mn)\quad\text{at }t=\infty.
+\tag{6.60}
+\]
+
+Thus the earlier determinant-one matrix is a useful witness, but not an
+intrinsic factoriality condition: a polynomial coordinate change turns it
+into a determinant-zero pole matrix while the ambient ring remains the
+same UFD.  This is the numerical refinement of the
+[stable affine-membership lemma](../extended-geometry/INTRINSIC_SELECTOR_ATTACK.md#4-stable-mixing-cannot-repair-the-failure):
+the existence of a pole is intrinsic, whereas its magnitude in a chosen
+coordinate generator is not.
+
+The coordinate-invariant replacement is the marked multivaluation of the
+whole ring.  Componentwise, for endpoint valuations
+\(\nu_i=\operatorname{ord}_{p_i}\), set
+
+\[
+\Gamma(R;\nu_1,\ldots,\nu_s)
+=
+\left\{
+(\nu_1(f),\ldots,\nu_s(f)):
+0\ne f\in R/(h_j)
+\right\}
+\subset\mathbb Z^s,
+\tag{6.61}
+\]
+
+where \(h_j\) is the relevant irreducible component.  Changing polynomial
+coordinate generators permutes the functions being measured but not
+\(\Gamma\).  A finite generator-pair compiler can equivalently use the
+automorphism-minimized pole height
+
+\[
+H(\nu)
+=
+\min_{\substack{R=k[u,v]\\ \bar u,\bar v\ne0\text{ in }R/(h_j)}}
+\sum_{i=1}^s
+\left(
+\max\{0,-\nu_i(u)\}
++
+\max\{0,-\nu_i(v)\}
+\right).
+\tag{6.62}
+\]
+
+The minimum exists because the values are nonnegative integers and the
+original pair \((x,y)\) is admissible.  It is an invariant of the marked
+valuation orbit.  What is not yet proved is a degree-four bound on
+\(H(\nu)\), finite generation of the relevant marked part of \(\Gamma\),
+or an algorithm producing a minimizing coordinate pair.
+
+For the connector component in (6.52), the minimizing calculation is
+already exact:
+
+\[
+u=x-y^n=t^{-1},\qquad v=y=t.
+\tag{6.63}
+\]
+
+Its two pole rows are \((1,0)\) and \((0,1)\), so \(H=2\).  The opposite
+inequality is automatic because each of the two missing normalization
+points must be a pole of at least one coordinate.  Thus the parameter \(n\)
+is completely removed from the marked connector component by
+automorphism minimization.  This demonstrates both why raw enumeration
+overcounts and what a successful reduction step should output.
+
+Numerical values alone still do not implement that reduction.
+
+> **Proposition 6.3 -- the endpoint residues are necessary.**
+> Two marked two-ended plane curves can have the same pole matrix for their
+> displayed generators while a given triangular shear cancels the leading
+> pole at both endpoints for one and not for the other.
+
+Take \(c\in k^\times\) and, on \(k[t,t^{-1}]\), put
+
+\[
+X=t+t^{-1},\qquad
+Y_c=t^2+c\,t^{-2}+t.
+\tag{6.64}
+\]
+
+These functions define a birational plane curve with normalization
+\(\mathbb G_m\).  Indeed \(t\) is integral over \(k[X]\) by
+\(t^2-Xt+1=0\), while
+
+\[
+t=
+\frac{Y_c-cX^2+1+c}{1+(1-c)X}
+\tag{6.65}
+\]
+
+proves equality of fraction fields.  At both \(t=0\) and \(t=\infty\), the
+pole row of \((X,Y_c)\) is \((1,2)\), independently of \(c\).
+Nevertheless
+
+\[
+Y_c-\lambda X^2
+\tag{6.66}
+\]
+
+loses its order-two pole at \(t=\infty\) exactly when \(\lambda=1\), and
+loses it at \(t=0\) exactly when \(\lambda=c\).  A single quadratic shear
+reduces both endpoints precisely for \(c=1\).
+
+In general, whenever
+\(\operatorname{pole}_{p_i}(y)=m\operatorname{pole}_{p_i}(x)\), the
+relevant datum is the initial-residue ratio
+
+\[
+\rho_i=
+\frac{\operatorname{in}_{\nu_i}(y)}
+     {\operatorname{in}_{\nu_i}(x)^m}
+\in\kappa(p_i)^\times.
+\tag{6.67}
+\]
+
+The shear \(y-\lambda x^m\) cancels at every tied endpoint if and only if
+all \(\rho_i\) are the image of the same \(\lambda\in k\).  Therefore an
+effective automorphism reduction needs the residue-decorated associated
+graded algebra, or at least these simultaneous initial-form ratios, not
+only the numerical semigroup \(\Gamma\).
+
+The residue gate now has a finite exact front end.
+
+> **Proposition 6.4 -- finite monotone shear compiler.**
+> For a fixed pair of nonzero Laurent polynomials \(u(t),v(t)\), the set of
+> monomial triangular shears
+> \[
+> v\longmapsto v-c\,u^m
+> \tag{6.68}
+> \]
+> which strictly decrease the sum of the pole orders at \(0,\infty\) is
+> finite and is determined exactly by the pole orders and leading residues.
+> The same holds in the opposite orientation.  Iterating only strict
+> decreases terminates.
+
+Indeed, a decreasing shear must cancel a current leading pole at at least
+one endpoint.  At such an endpoint,
+
+\[
+\operatorname{pole}(v)=m\operatorname{pole}(u),
+\qquad
+c=\frac{\operatorname{in}(v)}{\operatorname{in}(u)^m}.
+\tag{6.69}
+\]
+
+There are only two endpoints, so these equalities produce a finite
+candidate list.  Direct Laurent expansion tests the total height after
+each candidate shear, including any increase at the other endpoint.
+Every accepted step lowers a nonnegative integer, proving termination.
+
+The implementation
+[`cas/endpoint_valuation_compiler.py`](cas/endpoint_valuation_compiler.py)
+enumerates all such moves in both orientations and returns a complete
+strict-descent certificate.  On (6.52) it finds
+\(x\mapsto x-y^n=t^{-1}\) and height two.  Starting from the expanded
+coordinates (6.59), it first removes \(x^m\) from \(y_m\) and then removes
+\(y^n\) from \(x\).  On (6.64), its terminal monotone heights are two for
+\(c=1\) and four for the checked \(c\ne1\) rows, exactly reflecting the
+residue mismatch.
+
+This is not yet a canonical normal-form theorem.  A general polynomial
+shear can contain several powers whose combined effect is not represented
+by a strictly decreasing monomial prefix.  The following extension closes
+that single-shear gap.
+
+> **Proposition 6.5 -- finite complete-polynomial shear compiler.**
+> Modulo terms which do not affect either endpoint pole, all triangular
+> polynomials \(P\) for which
+> \[
+> (u,v)\longmapsto(u,v-P(u))
+> \tag{6.70}
+> \]
+> strictly lowers the two-endpoint pole height form a finite,
+> residue-determined list.  They can be enumerated even when a proper
+> leading prefix of \(P\) preserves or increases the height.
+
+Process the nonconstant terms of \(P\) in descending degree.  Any term
+which contributes to a final decrease must, at the stage when it is
+processed, cancel a current leading pole at some endpoint.  Its degree and
+coefficient are therefore forced by (6.69).  After that cancellation, the
+next relevant degree is strictly smaller.  Consequently the search tree is
+finite.  Terms which never cancel a current leading pole can be deleted:
+they either leave both endpoint poles unchanged or introduce a pole which
+lower-degree terms cannot remove.  This proves completeness after removing
+endpoint-irrelevant terms.
+
+The need to retain nondecreasing prefixes is real.  Put
+
+\[
+u=t^{-1}+t^2,\qquad
+v=u^3-t^6+t^5+u^2.
+\tag{6.71}
+\]
+
+The pole rows of \((u,v)\) are \((1,3)\) and \((2,5)\), of total height
+eleven.  No monomial shear strictly lowers this height.  The first
+cancellation is neutral:
+
+\[
+v-u^3=-t^6+t^5+u^2,
+\tag{6.72}
+\]
+
+whose target pole sum is still eight.  The lower term then gives
+
+\[
+v-u^3-u^2=-t^6+t^5,
+\tag{6.73}
+\]
+
+so the total height drops to nine.  The expanded checker verifies that the
+polynomial compiler finds exactly this descending-degree certificate.
+
+The implementation now iterates the best complete lowering polynomial
+shear in either orientation.  Its terminal form admits no
+height-decreasing triangular polynomial in either coordinate.  What remains
+is strictly narrower: a polynomial automorphism may alternate triangular
+directions and pass through an equal or greater intermediate height before
+ending lower.  Identifying the terminal output with the invariant minimum
+\(H(\nu)\) therefore requires a marked multi-pole peak-reduction theorem
+for alternating Jung--van der Kulk factors.  That is the precise
+automorphism-theoretic gap.
+
+The endpoint search becomes genuinely finite only after adjoining the
+following global input:
+
+1. a fixed compactification and the finite endpoint set;
+2. the marked multivaluation semigroup \(\Gamma\) together with its
+   initial-residue data, or a proved reduction to an automorphism-minimal
+   coordinate pair;
+3. a degree-four bound on the invariant height \(H(\nu)\), rather than on
+   an arbitrary presentation of \(x,y\);
+4. the conductor equivalence relation pairing connector endpoints; and
+5. the global degree-four monodromy/meridian relation carried by that
+   pairing.
+
+With an invariant height bound \(B\) and a fixed minimizing coordinate
+pair, the vectors
+\[
+\alpha=(\operatorname{pole}_{p_i}x)_i,\qquad
+\beta=(\operatorname{pole}_{p_i}y)_i
+\tag{6.74}
+\]
+lie in a finite box.  Local contact, principal-divisor, graded-module, and
+monodromy tests can then be compiled as finite filters.  Deriving \(B\) and
+the pairing map on the automorphism-reduced valuation data, rather than
+adding more Laurent layers or running an unbounded raw-pair search, is the
+next missing theorem.
+
+The exact regression is
+[`cas/test_degree_zero_endpoint_pairing.py`](cas/test_degree_zero_endpoint_pairing.py).
+It checks the family (6.50)--(6.54) for representative \(n\) and the graded
+normal forms (6.48).  Infinitude is the displayed uniform proof, not the
+bounded loop.
+
+### 6.6 What the later Cox attacks change
 
 The following lessons from the multi-factor programme now apply directly:
 
@@ -1093,11 +1554,14 @@ comparison, and transition law are now computed in (6.22)--(6.37), and all
 are compatible.  Equations (6.39)--(6.46) further identify the first
 global module carrying packet data: the square of the degree \(-1\)
 rank-one piece maps to degree \(-2\), with cokernel \(k[x,y]/(h)\).  The
-immediate calculation is to express the cusp endpoint and the two points
-paired by a connector as valuations of this multiplication divisor in the
-pole semigroup of the two degree-zero generators \(x,y\), then determine
-whether factoriality and
-\((C_{F,g})_0=k[x,y]\) force either:
+negative audit in Proposition 6.1 shows that this does not yet give a
+finite semigroup enumeration.  The immediate task is to derive, from the
+degree-four cover and its log boundary, a bound on the
+automorphism-minimized multivaluation height (6.62), together with the
+conductor equivalence relation pairing the connector endpoints.
+Proposition 6.2 rules out a bound on arbitrary coordinate generators.
+Only after adjoining the invariant data can one test whether
+factoriality and \((C_{F,g})_0=k[x,y]\) force either:
 
 1. trivialization of \([E]\), hence a nonconstant degree-zero unit on the
    purported \(\mathbb A^2\);
@@ -1119,6 +1583,7 @@ Run
 
 ```bash
 .venv/bin/python plane-jc/cas/test_plane_boundary_exclusion.py
+.venv/bin/python plane-jc/cas/test_degree_zero_endpoint_pairing.py
 Singular -q plane-jc/cas/quartic_completed_deletion.sing
 ```
 
@@ -1138,7 +1603,20 @@ checks, the regression verifies:
 8. the compatible transition exponents
    \((r,\ell,z,s,a)=(1,-2,-1,0,0)\); and
 9. the degree \(0,-1,-2\) bridge and its affine-companion square
-   cokernels \(A_0/(\ell)\) and \(k[x,y]/(h)\).
+   cokernels \(A_0/(\ell)\) and \(k[x,y]/(h)\); and
+10. the infinite packet-shaped degree-zero family with endpoint data
+    \((2,3)\) and \((1,0),(n,1)\), including the unimodular connector
+    matrix; and
+11. the triangular-shear orbits
+    \((1,m),(n,mn)\), which prove that raw generator pole pairs are not
+    coordinate-invariant; and
+12. equal numerical pole matrices with unequal endpoint residue ratios,
+    which prove that simultaneous shear reduction needs initial-form data;
+    and
+13. exhaustive strict-height monomial shear reduction, including its
+    terminating step certificates and residue-sensitive terminal rows; and
+14. exhaustive lowering polynomial shears with nondecreasing prefixes,
+    including the height-eleven to height-nine two-term witness (6.71).
 
 The normality and finite-duality conclusions are the written proofs in
 Section 6.3.  The independent Singular replay computes the cusp
