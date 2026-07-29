@@ -1,4 +1,4 @@
-# All-order audit of the bidegree-\((4,4)\) rank-two moment fiber
+# Prerequisite audit for the bidegree-\((4,4)\) rank-two problem
 
 ## 1. Outcome
 
@@ -13,10 +13,9 @@ rank-two survivor.  The current exact input is weaker:
    nor a residue field for its semistable point.
 
 Consequently there is no exact coefficient point at which to derive and
-solve a scalar recurrence.  Neither an all-order rank-two witness nor an
-exact tail obstruction is proved here.  The first moment not imposed by the
-known prefix is \(\mu _{14}\), but its value on the existential fiber is
-unknown.
+solve a scalar recurrence.  Recurrence derivation and evaluation of
+\(\mu_{14}\) are therefore parked.  Neither an all-order rank-two witness
+nor an exact tail obstruction is proved here.
 
 This corrects a possible misreading of equation (6.1) in the
 [rank frontier](TWO_PAIR_SIC_BIDEGREE44_RANK_FRONTIER.md).  That displayed
@@ -31,7 +30,7 @@ thirteen.  It is not a moment zero:
 \end{aligned} \tag{1.1}
 \]
 
-## 2. Exact rank-two period
+## 2. Parked holonomic infrastructure
 
 The determinantal parameterization can nevertheless be put into the form
 needed by creative telescoping.  Write
@@ -72,13 +71,15 @@ Equivalently, the factorial-normalized ordinary generating function is
    \frac{dt}{1-sP_{U,W}(u,t)}.} \tag{2.5}
 \]
 
-Formula (2.5) is the exact holonomic starting point.  Closure of holonomic
-functions under coefficient extraction and definite integration implies
-that every exact algebraic specialization of \(U,W\) has a P-finite
-moment sequence.  This existence statement is not a recurrence
-certificate: an all-order result still requires an explicit scalar
-operator, telescoping certificates including the endpoint terms, its
-singular-step audit, and enough exact initial values.
+Formula (2.5) is valid holonomic infrastructure, but it is not an active
+recurrence calculation.  Closure of holonomic functions under coefficient
+extraction and definite integration implies that every exact algebraic
+specialization of \(U,W\) has a P-finite moment sequence.  No such
+specialization is currently available from the semistable fiber.  Once an
+explicit exact-rank-two point or component is known, an all-order result
+will still require an explicit scalar operator, telescoping certificates
+including the endpoint terms, its singular-step audit, and enough exact
+initial values.
 
 ## 3. Rank two does not supply a small generic cutoff
 
@@ -100,7 +101,7 @@ The ordinary-point and scalar cyclic-vector gates from
 therefore remain necessary.  In particular, the thirteen zero moments do
 not propagate merely from holonomicity or from (3.1).
 
-## 4. Exact gates before recurrence solving
+## 4. Mandatory order of work
 
 The required order is:
 
@@ -111,15 +112,18 @@ The required order is:
    \in(f_3,f_4,f_5,f_6);
    \]
    the exponent \(5\) is the common least exponent modulo
-   \(101,103,107\), but the rational lift remains open;
+   \(101,103,107\), but the rational lift remains open.  A \(240\)-bit
+   large-prime CRT attempt recovers only three of \(14508\) arbitrary-lift
+   coefficients at a holdout prime; tracked-basis transforms are
+   support-unstable, while canonical syzygy reduction exceeds a
+   \(600\)-second modular bound;
 2. compute an explicit closed point, or an explicit positive-dimensional
    component and its function field, in the semistable
    \(\mu_1=\cdots=\mu_{13}=0\) fiber;
 3. verify exact coefficient rank two at that point;
-4. specialize (2.5) and produce a checkable creative-telescoping
-   recurrence; and
-5. evaluate \(\mu_{14}\) and the later bridge values required by the
-   recurrence.
+4. only then specialize (2.5), produce a checkable
+   creative-telescoping recurrence, and evaluate \(\mu_{14}\) and any
+   later bridge values it requires.
 
 If the recurrence propagates zero, a fixed mixed multiplier must still be
 tested before the point becomes an SIC witness.  If a tail moment is
@@ -138,6 +142,6 @@ python3 scripts/verify_two_pair_sic_bidegree44_rank_two_all_order_audit.py
 The dependency-free checker verifies the factor identity (2.3), the
 beta/constant-term identity (2.4) through order four at the displayed
 exact rank-two chart point, the four nonzero values in (1.1), and the
-Newton polygon and normalized volume in (3.1).  The finite replay is an
-audit of the formulas and of the proposed starting point; it is not an
-all-order recurrence certificate.
+Newton polygon and normalized volume in (3.1).  The finite replay audits
+why recurrence work is parked; it is not an all-order recurrence
+certificate.

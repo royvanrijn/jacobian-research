@@ -11,6 +11,12 @@
   },
   "criterion": "If s_i^4 belongs to the specialized homogeneous Schur ideal for every one of the fifteen coefficient variables, its radical is the coefficient maximal ideal and the reduced projective Schur fiber is empty.",
   "command_template": ".venv/bin/python -u scripts/verify_hc4_quintic_two_parameter_symmetric_schur.py --fourth-power-profile --fourth-prime PRIME",
+  "symbolic_annihilator_attempt": {
+    "command": ".venv/bin/python -u scripts/verify_hc4_quintic_two_parameter_symmetric_schur.py --fourth-power-profile --fourth-prime 7 --fourth-stage annihilator --fourth-timeout 900",
+    "result": "timeout_before_standard_basis",
+    "timeout_seconds": 900,
+    "mathematical_conclusion": "none"
+  },
   "scans": {
     "7": {
       "parameter_points_on_D_nu": 42,

@@ -359,6 +359,13 @@ sequence is short exact; the two-dimensional kernel introduced by
 base-square reduction is ordinary Tor.  What remains is to compute the
 individual higher homology modules and prove the homotopy-limit comparison.
 
+The general local algebra behind this conclusion is now separated in
+[cellular Postnikov transitivity](CELLULAR_POSTNIKOV_TRANSITIVITY.md).
+For an arbitrary ideal flag it proves the overlap formula and constructs the
+successive conormal extensions; its executable finite-module tower accepts
+any number of layers.  This closes the formal flag-transitivity part of the
+programme.  It does not close the Ritt-specific cellular-descent comparison.
+
 ## Relation to the existing notes
 
 The [general Hessian--Ritt note](GENERAL_HESSIAN_RITT_INTERSECTIONS.md)

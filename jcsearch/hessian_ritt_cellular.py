@@ -20,7 +20,9 @@ are used for fibers and exact Artin jets.
 
 This is an associated-graded prototype.  Direct-summing two relative blocks
 does not assert that the corresponding completed cotangent transitivity
-triangle splits.
+triangle splits.  The finite-module classes below retain the extension tower
+itself: commuting coordinate actions, equivariant quotient maps, their exact
+kernel layers, and compatible-section tests.
 """
 
 from __future__ import annotations
@@ -53,6 +55,212 @@ class CellularCochainModel:
             raise ValueError(
                 f"label dimensions {actual} do not match complex {expected}"
             )
+
+
+@dataclass(frozen=True)
+class FiniteModuleRepresentation:
+    """A finite rational module represented by commuting coordinate actions."""
+
+    variable_names: tuple[str, ...]
+    actions: tuple[sp.Matrix, ...]
+    name: str
+
+    def __post_init__(self) -> None:
+        if len(self.variable_names) != len(self.actions):
+            raise ValueError("each coordinate needs one action matrix")
+        normalized = tuple(sp.Matrix(action) for action in self.actions)
+        dimensions = {
+            action.rows
+            for action in normalized
+            if action.rows == action.cols
+        }
+        if any(action.rows != action.cols for action in normalized):
+            raise ValueError("module actions must be square")
+        if len(dimensions) > 1:
+            raise ValueError("all module actions must have the same size")
+        object.__setattr__(self, "actions", normalized)
+        if not self.actions:
+            return
+        for index, left in enumerate(self.actions):
+            for right in self.actions[index + 1 :]:
+                if left * right != right * left:
+                    raise ValueError(
+                        f"coordinate actions do not commute on {self.name}"
+                    )
+
+    @property
+    def dimension(self) -> int:
+        """Return the underlying rational vector-space dimension."""
+
+        return self.actions[0].rows if self.actions else 0
+
+    @classmethod
+    def zero(
+        cls,
+        variable_names: tuple[str, ...],
+        name: str,
+    ) -> "FiniteModuleRepresentation":
+        """Return the zero module over the declared coordinate algebra."""
+
+        return cls(
+            variable_names,
+            tuple(sp.zeros(0, 0) for _ in variable_names),
+            name,
+        )
+
+
+@dataclass(frozen=True)
+class EquivariantModuleSurjection:
+    """An equivariant surjection between finite module representations."""
+
+    source: FiniteModuleRepresentation
+    target: FiniteModuleRepresentation
+    projection: sp.Matrix
+    name: str
+
+    def __post_init__(self) -> None:
+        projection = sp.Matrix(self.projection)
+        object.__setattr__(self, "projection", projection)
+        if self.source.variable_names != self.target.variable_names:
+            raise ValueError("source and target coordinate names differ")
+        expected = (self.target.dimension, self.source.dimension)
+        if projection.shape != expected:
+            raise ValueError(
+                f"projection shape {projection.shape} does not match {expected}"
+            )
+        if projection.rank() != self.target.dimension:
+            raise ValueError(f"{self.name} is not surjective")
+        for source_action, target_action in zip(
+            self.source.actions, self.target.actions
+        ):
+            if projection * source_action != target_action * projection:
+                raise ValueError(f"{self.name} is not equivariant")
+
+    @property
+    def kernel_basis(self) -> sp.Matrix:
+        """Return a column basis for the invariant kernel."""
+
+        nullspace = self.projection.nullspace()
+        if not nullspace:
+            return sp.zeros(self.source.dimension, 0)
+        return sp.Matrix.hstack(*nullspace)
+
+    @property
+    def kernel(self) -> FiniteModuleRepresentation:
+        """Return the exact kernel with its restricted coordinate actions."""
+
+        basis = self.kernel_basis
+        restricted = []
+        for action in self.source.actions:
+            if basis.cols == 0:
+                restricted.append(sp.zeros(0, 0))
+                continue
+            restricted.append(
+                sp.Matrix.hstack(
+                    *(
+                        basis.gauss_jordan_solve(
+                            action * basis[:, column]
+                        )[0]
+                        for column in range(basis.cols)
+                    )
+                )
+            )
+        return FiniteModuleRepresentation(
+            self.source.variable_names,
+            tuple(restricted),
+            f"kernel({self.name})",
+        )
+
+    def compatible_section(self) -> sp.Matrix | None:
+        """Return one equivariant section, or ``None`` when none exists."""
+
+        source_dimension = self.source.dimension
+        target_dimension = self.target.dimension
+        if target_dimension == 0:
+            return sp.zeros(source_dimension, 0)
+        variables = sp.symbols(
+            f"section_0:{source_dimension * target_dimension}"
+        )
+        section = sp.Matrix(
+            source_dimension,
+            target_dimension,
+            variables,
+        )
+        equations = list(
+            self.projection * section - sp.eye(target_dimension)
+        )
+        for source_action, target_action in zip(
+            self.source.actions, self.target.actions
+        ):
+            equations.extend(
+                source_action * section - section * target_action
+            )
+        coefficient_matrix, right_hand_side = sp.linear_eq_to_matrix(
+            equations, variables
+        )
+        try:
+            solution, parameters = coefficient_matrix.gauss_jordan_solve(
+                right_hand_side
+            )
+        except ValueError:
+            return None
+        values = solution.subs(
+            {parameter: sp.Integer(0) for parameter in parameters}
+        )
+        return sp.Matrix(
+            source_dimension,
+            target_dimension,
+            list(values),
+        )
+
+    @property
+    def splits(self) -> bool:
+        """Whether the surjection has an equivariant linear section."""
+
+        return self.compatible_section() is not None
+
+
+@dataclass(frozen=True)
+class PostnikovModuleTower:
+    """A composable tower of finite equivariant module surjections."""
+
+    maps: tuple[EquivariantModuleSurjection, ...]
+    name: str
+
+    def __post_init__(self) -> None:
+        for left, right in zip(self.maps, self.maps[1:]):
+            if (
+                left.target.variable_names
+                != right.source.variable_names
+                or left.target.dimension != right.source.dimension
+                or left.target.actions != right.source.actions
+            ):
+                raise ValueError(
+                    f"noncomposable adjacent maps in {self.name}"
+                )
+
+    @property
+    def module_dimensions(self) -> tuple[int, ...]:
+        """Dimensions of all modules, including the terminal target."""
+
+        if not self.maps:
+            return ()
+        return (
+            self.maps[0].source.dimension,
+            *(map_.target.dimension for map_ in self.maps),
+        )
+
+    @property
+    def layer_dimensions(self) -> tuple[int, ...]:
+        """Dimensions of the exact kernel layers."""
+
+        return tuple(map_.kernel.dimension for map_ in self.maps)
+
+    @property
+    def split_profile(self) -> tuple[bool, ...]:
+        """Compatible-section status for every adjacent extension."""
+
+        return tuple(map_.splits for map_ in self.maps)
 
 
 def ritt_cellular_coboundaries(
@@ -251,3 +459,23 @@ def braid_totalization(
         )
     )
     return direct_sum((base,) + defects, name)
+
+
+def postnikov_braid_totalization(
+    braid: RittMoveComplex,
+    base_dimension: int,
+    tower: PostnikovModuleTower,
+    layer_names: tuple[str, ...],
+    name: str,
+) -> CellularCochainModel:
+    """Totalize the associated graded of an arbitrary Postnikov tower."""
+
+    if len(layer_names) != len(tower.maps):
+        raise ValueError("each Postnikov layer needs a cellular label")
+    return braid_totalization(
+        braid,
+        base_dimension,
+        tower.layer_dimensions,
+        layer_names,
+        name,
+    )

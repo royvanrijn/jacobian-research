@@ -320,3 +320,8 @@ not yet exclude parameter points defined only over proper extensions of
 the finite fields, nor does it compute a characteristic-zero support
 ideal.  The transcript is
 [`hc4_fourth_power_support.json`](artifacts/generated-results/hc4_fourth_power_support.json).
+
+The direct symbolic annihilator attempt over
+\(\mathbb F_7[\mu,\nu]\) reached its 900-second Singular bound before
+returning a standard basis.  Thus it supplies no radical or component
+factorization and does not close the finite-extension limitation.

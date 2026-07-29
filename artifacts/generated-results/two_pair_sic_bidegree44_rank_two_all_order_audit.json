@@ -1,5 +1,5 @@
 {
-  "format": "two-pair-sic-bidegree44-rank-two-all-order-audit-v1",
+  "format": "two-pair-sic-bidegree44-rank-two-prerequisite-audit-v2",
   "field": "characteristic zero",
   "factor_chart": "C=U*W with U in Mat(5,2), W in Mat(2,5)",
   "displayed_rank_two_point": {
@@ -42,7 +42,15 @@
     "normalized_volume": 48,
     "warning": "the normalized volume is not by itself a recurrence-order or initial-moment bound at the singular expansion s=0"
   },
-  "recurrence_status": "no coefficient-specialized recurrence: the semistable thirteen-moment point is existential and has no recorded coordinates or residue field",
-  "first_possible_unsolved_tail": "mu_14",
+  "explicit_survivor_status": "none recorded: Hilbert theory proves only an existential semistable point on the rank-at-most-two fiber",
+  "rank_one_boundary_status": "one squarefree Rabinowitsch membership remains open",
+  "recurrence_status": "parked until the rank-one boundary is closed, an explicit closed semistable point or component is extracted, and its coefficient rank is proved to be exactly two",
+  "tail_evaluation_status": "mu_14 is not evaluated without an explicit exact-rank-two specialization",
+  "mandatory_gate_sequence": [
+    "close the remaining rank-one membership",
+    "extract an explicit closed semistable point or component",
+    "prove exact coefficient rank two",
+    "derive the specialized recurrence and evaluate mu_14"
+  ],
   "written_source": "extended-geometry/TWO_PAIR_SIC_BIDEGREE44_RANK_TWO_ALL_ORDER_AUDIT.md"
 }

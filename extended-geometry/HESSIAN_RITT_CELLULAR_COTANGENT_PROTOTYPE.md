@@ -532,7 +532,15 @@ This is enough to isolate a reusable theorem target:
 > blocks of the form (1.3), with the transitivity extensions and higher
 > brackets retained.
 
-Proving that target would make (1.7) formal and would reduce
+The ideal-flag and arbitrary-length Postnikov portions of this target are
+now proved in
+[cellular Postnikov transitivity](CELLULAR_POSTNIKOV_TRANSITIVITY.md).
+They give the universal overlap formula, the multi-layer conormal
+filtration, finite-quotient splitting detection, and the separation of
+base-change Tor.  What remains here is the geometric comparison identifying
+the actual Hessian intersection with that cellular object.
+
+Proving this remaining comparison would make (1.7) formal and would reduce
 degree-specific synchronization to three universal tasks: identify the
 move coefficient modules, calculate the extension between adjacent
 filtration layers, and prove vanishing of the genuinely algebraic
@@ -580,4 +588,10 @@ The quadratic-overlap and base-change-Tor separation is replayed by
 
 ```bash
 .venv/bin/python scripts/verify_degree42_ritt_postnikov_overlap.py
+```
+
+The arbitrary-length finite-module tower is replayed by
+
+```bash
+.venv/bin/python scripts/verify_cellular_postnikov_transitivity.py
 ```

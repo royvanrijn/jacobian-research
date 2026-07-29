@@ -156,10 +156,10 @@ active one; later raw moments are small largely because of scale. The
 numerical point is therefore not suitable for exact reconstruction as it
 stands.
 
-## 6. Exact rank-two invariant-quotient obstruction
+## 6. Exact rank-at-most-two invariant-quotient obstruction
 
-There is nevertheless an exact reason for truncated semistable rank-two
-leads. Let
+There is nevertheless an exact reason for truncated semistable
+rank-at-most-two leads. Let
 \[
  X_2=\{C\in\operatorname{Mat}_5:\operatorname{rank}C\leq2\}.
 \]
@@ -218,9 +218,10 @@ Consequently:
 > \(\mu_1,\ldots,\mu_{13}\) on \(X_2\) contains a semistable point.
 
 By itself this proposition does not determine whether the point has rank
-one or two.  The finite rank-one analysis below closes that ambiguity.
-A zero of thirteen moments still does not satisfy the all-order SIC
-premise.
+one or two.  The finite rank-one analysis below closes every collided-root
+stratum and all but one squarefree chart, so it does not yet close that
+ambiguity.  A zero of thirteen moments still does not satisfy the all-order
+SIC premise.
 
 The boundary problem is itself tightly calibrated. On the rank-one Segre
 cone, \(\mu_1,\ldots,\mu_6\) have exact Jacobian rank six, the dimension
@@ -373,6 +374,39 @@ four-variable saturation.  A direct rational lift and a full reconstructed
 basis lift both exceeded a twenty-minute bound.  The three prime-field
 identities are reproducible evidence, not a characteristic-zero theorem.
 
+A resumable large-prime reconstruction test sharpens this negative
+computational result.  For the thirteen primes from \(1000003\) through
+\(1000183\) recorded in the generated CRT ledger, Singular's direct lifts
+have the common four-row support profile
+\[
+ (5561,3834,3175,1938), \qquad 14508\ \hbox{terms in total}. \tag{6.13d}
+\]
+Twelve images give a \(240\)-bit CRT build modulus and the thirteenth is
+held out.  Balanced rational reconstruction produces \(8830\) candidates,
+but only three agree at the holdout prime.  The next two primes,
+\(1000187\) and \(1000193\), have different supports.  Hence common support
+at a run of primes does not make the arbitrary lifted multipliers suitable
+for coefficientwise CRT; this is a failed reconstruction attempt, not
+evidence against membership over \(\mathbb Q\).
+
+Two attempts to remove the syzygy ambiguity were also bounded explicitly.
+Tracking the transformation through `liftstd` succeeds modulo
+\(101,103,107\), but gives three distinct support hashes and respective
+row profiles
+\[
+\begin{split}
+ &(12969,10137,7805,1806),\\
+ &(13046,10199,7883,1843),\\
+ &(13015,10172,7875,1828).
+\end{split} \tag{6.13e}
+\]
+Reducing a direct lift by a standard basis of the generator syzygies, with
+degree-plus-component module order and `returnSB`, did not finish modulo
+\(101\) within \(600\) seconds.  Thus the current exact gate is more
+specific still: construct a prime-stable normal form for the multiplier
+class modulo the syzygy module, or find a different characteristic-zero
+membership proof.
+
 If the remaining membership is certified, then every squarefree six-moment zero
 is one of the four annihilator sections. Combined with the exact
 collided-root cutoffs, this would imply that the semistable point of
@@ -400,21 +434,22 @@ The efficient order is now:
 
 1. reconstruct and verify over \(\mathbb Q\) the target-only lift
    \(qM^5\in(f_3,f_4,f_5,f_6)\) from (6.13a)--(6.13c);
-2. conditional on that boundary closure, start from the exact-rank-two
-   semistable thirteen-moment survivor;
-3. on rank two, whose determinantal quotient has expected affine
-   dimension \(16-3=13\), normalize a non-null lowest
-   Clebsch--Gordan component and remove the
-   residual torus before elimination;
-4. use the Gorenstein-perfect corrected degree set
-   \(\mu_1,\ldots,\mu_{12},\mu_{14}\), rather than the impossible
-   consecutive set, to organize the remaining finite-moment fiber;
-5. seek an exact component or an effective holonomic recurrence upgrading
-   finite pure vanishing to all orders;
-6. apply (4.3) with fixed low-bidegree multipliers on every all-order
+2. after that boundary closure, extract an explicit closed semistable
+   point or component from the thirteen-moment fiber, including its exact
+   residue field or function field;
+3. prove that the extracted point or generic component has coefficient
+   rank exactly two;
+4. only then specialize the parked period formula, derive a checkable
+   recurrence, and evaluate \(\mu_{14}\);
+5. apply (4.3) with fixed low-bidegree multipliers on every all-order
    survivor; and
-7. only after a global rank-two exclusion, repeat for ranks three and
+6. only after a global rank-two exclusion, repeat for ranks three and
    four.
+
+The corrected degree set
+\(\mu_1,\ldots,\mu_{12},\mu_{14}\) remains useful for organizing a
+separate finite-moment fiber, but it does not supply the missing point in
+the consecutive thirteen-moment fiber and is not a recurrence input.
 
 Promotion to a counterexample requires an exact coefficient field,
 all-order pure vanishing, and one fixed mixed defect for infinitely many

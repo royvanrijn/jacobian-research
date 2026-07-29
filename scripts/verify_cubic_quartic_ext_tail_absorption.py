@@ -13,9 +13,9 @@ present a length-six module killed by (x,y,z)^2.  Row 1 lies in
 affine-linear in p0,p1.  It is therefore redundant in the transposed
 presentation of Ext^2.
 
-This is an exact resolution-tail calculation on seven parameter planes.
-It does not by itself prove that the same minimal-resolution tail persists
-over the full 24-parameter space.
+This is an exact resolution-tail and annihilator/different comparison on
+seven parameter planes.  It does not by itself prove that the canonical
+different generators equal Ann(Omega) over the full 24-parameter space.
 """
 
 from __future__ import annotations
@@ -43,6 +43,7 @@ EXPECTED = {
     "LINEAR_QUOTIENT_LENGTH": 6,
     "LINEAR_M2_ACTION_GENERATORS": 0,
     "HIGH_ROW_REMAINDER_GENERATORS": 0,
+    "DIFFERENT_SUPPORT_DIFFERENCE": 0,
 }
 
 
@@ -57,6 +58,26 @@ def tail_program(stratum: str) -> str:
         )
         for triple in plus
     }
+    trace_free_products, scalar_products = (
+        cubic_audit.multiplication_table(
+            cubic_audit.CUBIC_STRATA[stratum], plane_tensor
+        )
+    )
+    different_columns = [[0, cubic_audit.z, -cubic_audit.y, cubic_audit.x]]
+    different_columns.extend(
+        [
+            scalar_products[pair],
+            *[
+                sp.expand(2 * entry)
+                for entry in trace_free_products[pair]
+            ],
+        ]
+        for pair in sorted(trace_free_products)
+    )
+    different_module = ",".join(
+        cubic_audit.singular_vector(column)
+        for column in different_columns
+    )
     program = cubic_audit.singular_program(
         cubic_audit.CUBIC_STRATA[stratum], plane_tensor
     ).replace(
@@ -67,7 +88,22 @@ def tail_program(stratum: str) -> str:
     prefix = program.split(anchor)[0]
     return (
         prefix
+        + "\nmodule different_candidate="
+        + different_module
+        + ";\n"
         + r"""
+different_candidate=std(different_candidate);
+module different_to_support=simplify(
+  reduce(different_candidate,support_presentation),2
+);
+module support_to_different=simplify(
+  reduce(support_presentation,different_candidate),2
+);
+print(
+  "DIFFERENT_SUPPORT_DIFFERENCE="
+  +string(size(different_to_support)+size(support_to_different))
+);
+
 module support_minimal=std(prune(support_presentation));
 resolution support_resolution=mres(support_minimal,0);
 module tail= support_resolution[2];
@@ -237,8 +273,8 @@ def main() -> None:
         "constant relations, hence Fitt_6=(1) and Fitt_5=(0)"
     )
     print(
-        "OPEN: prove Rees strictness of this resolution tail over the "
-        "full 24-parameter quartic kernel"
+        "OPEN: prove that the canonical different generators equal "
+        "Ann(Omega) over the full 24-parameter quartic kernel"
     )
 
 

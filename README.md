@@ -278,12 +278,15 @@ uses the split-symbol theorem to exclude the complete rank-one Segre cone.
 Thus the certified coefficient-rank interval is \(2\leq r_{\min}\leq5\);
 ranks two through four remain open.
 The
-[rank-two all-order audit](extended-geometry/TWO_PAIR_SIC_BIDEGREE44_RANK_TWO_ALL_ORDER_AUDIT.md)
+[rank-two prerequisite audit](extended-geometry/TWO_PAIR_SIC_BIDEGREE44_RANK_TWO_ALL_ORDER_AUDIT.md)
 derives the exact rational period generating function on \(C=UW\), but
 also shows that the displayed exact rank-two chart point is only a
 Jacobian transversality point: already \(\mu_1=7414\). The semistable
 thirteen-moment point remains existential, with no coordinates or residue
-field from which a scalar recurrence can be specialized.
+field from which a scalar recurrence can be specialized. Recurrence
+derivation and evaluation of \(\mu_{14}\) are parked until the rank-one
+boundary is closed and an explicit exact-rank-two point or component is
+extracted.
 On the rank-at-most-two determinantal variety, the first thirteen moments
 are algebraically independent but cannot be homogeneous parameters: the
 required invariant Hilbert numerator has coefficient \(-5266\) in degree
@@ -932,8 +935,19 @@ seven full-support planes sharpen that gap.  Their last differential has
 six parameter-independent linear rows presenting a length-six module
 killed by `(x,y,z)^2`; the remaining central-quadratic/parameter-cubic row
 is automatically redundant.  Thus `Fitt_6=(1), Fitt_5=(0)` on those
-planes for a structural reason, and the universal Fitting problem reduces
-to Rees strictness of this six-row resolution tail.  Translating the
+planes for a structural reason.  Over all 24 parameters, the seven
+canonical different generators
+`(0,z,-y,x),(s_ij,2*mu_ij)` have an exact Buchsbaum--Eisenbud complex with
+the same constant Ext block and the same Fittings.  The universal Fitting
+problem is therefore reduced to identifying this canonical different with
+the complete annihilator `Ann(Omega)`; that equality is exact on the
+seven full-support planes.  A separate universal Deligne--Faddeev
+calculation proves `Fitt_0(Omega)=Ann(Omega)` wherever the trace-free
+module is locally free.  The depth of the canonical-different complex then
+shows that universal cotangent saturation extends the equality across the
+collision axis.  Consequently there is no independent Ext-Fitting gate:
+cotangent saturation implies `Fitt_6=(1), Fitt_5=(0)` for the actual
+support module.  Translating the
 sum/alternating-sum plane by the deterministic
 generic quartic lift extends the constant length-six result to all ten
 cubic-symbol strata.  In particular, the double-line, triple-line, and zero

@@ -3059,8 +3059,8 @@
       "id": "KDFT6",
       "kind": "reproduction",
       "state": "proved",
-      "title": "Squarefree quartic-plane Ext-tail absorption",
-      "scope": "For each of the seven squarefree cubic symbols on the fixed full-support plane phi_h+p0*psi_plus+p1*psi_minus, the minimal ramification-support resolution has last nonzero differential R^3 -> R^7. Rows two through seven are parameter-independent linear triples and present a quotient of vector-space length six killed by (x,y,z)^2. The remaining row lies in (x,y,z)^2; its parameter-dependent part lies in (x,y,z)^3 and is affine-linear in p0,p1. It therefore reduces to zero modulo the six linear rows. After (x,y,z)^2 truncation, the relative Ext^2 parameter module has twelve generators and six independent constant relations, hence is free of rank six with Fitt_6=(1) and Fitt_5=(0). This identifies Rees strictness of the six-row last-differential strand as the remaining universal Fitting lemma; the checker proves the statement on seven full-support planes, not over the full 24-parameter kernel.",
+      "title": "Squarefree quartic-plane annihilator/different and Ext-tail absorption",
+      "scope": "For each of the seven squarefree cubic symbols on the fixed full-support plane phi_h+p0*psi_plus+p1*psi_minus, the seven canonical different generators (0,z,-y,x) and (s_ij,2*mu_ij) generate exactly the complete annihilator Ann_B(Omega). The minimal ramification-support resolution has last nonzero differential R^3 -> R^7. Rows two through seven are parameter-independent linear triples and present a quotient of vector-space length six killed by (x,y,z)^2. The remaining row lies in (x,y,z)^2; its parameter-dependent part lies in (x,y,z)^3 and is affine-linear in p0,p1. It therefore reduces to zero modulo the six linear rows. After (x,y,z)^2 truncation, the relative Ext^2 parameter module has twelve generators and six independent constant relations, hence is free of rank six with Fitt_6=(1) and Fitt_5=(0). The checker proves the annihilator/different equality and tail statement on seven full-support planes, not over the full 24-parameter kernel.",
       "canonical_source": "cancellation/UNIVERSAL_CUBIC_QUARTIC_KERNEL_SATURATION.md",
       "dependencies": [
         "KDFP6",
@@ -3072,13 +3072,69 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:16d076fa3def22c3e6f13fc6d3a889d6541759f89b2259c9e204f26025fe4eb3",
+      "artifact_hash": "sha256:47038e84dd0eeee4ef00c436e463c24db25db294b580b96bb7421516314400ec",
       "software_lock": [
         ".python-version",
         "requirements.txt"
       ],
       "supersedes": [
         "large-minor Fitting computation as the only explanation for flat rank six on full-support quartic planes"
+      ],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "KDFC6",
+      "kind": "reproduction",
+      "state": "proved",
+      "title": "Universal squarefree canonical-different Fitting complex",
+      "scope": "For each of the seven squarefree cubic symbols and the full order-four family over Q[u_1,...,u_24,x,y,z], let mu_ij and s_ij be the trace-free and scalar multiplication components and form the 4-by-7 canonical-different matrix d1=[(0,z,-y,x),(s_ij,2*mu_ij)]. The identities sum_i r_i*s_ij=0 and 2*sum_i r_i*mu_ij=q_j*r for r=(z,-y,x) give an explicit universal 7-by-3 matrix d2 with d1*d2=0. Its varying top row has only parameter/collision bidegrees (0,2) and (1,3); its fixed lower six rows have maximal minors containing x^3,y^3,z^3. A nonzero central 4-by-4 minor of d1 for every squarefree symbol supplies the other Buchsbaum--Eisenbud grade condition, proving 0 -> R^3 -> R^7 -> R^4 exact. The transpose of d2 presents Ext^2 of coker(d1). The six fixed linear rows already give a length-six quotient killed by (x,y,z)^2, so the varying row is redundant and the 12-generator parameter module is free of rank six with Fitt_6=(1), Fitt_5=(0). This closes the universal Fittings for the canonical-different support. Identifying its seven generators with the full annihilator Ann_B(Omega) remains open unconditionally; KDFT6 verifies that equality on seven full-support planes.",
+      "canonical_source": "cancellation/UNIVERSAL_CUBIC_QUARTIC_KERNEL_SATURATION.md",
+      "dependencies": [
+        "KDFL10",
+        "KDFT6",
+        "external: Buchsbaum--Eisenbud acyclicity criterion",
+        "external: Singular 4.4.1 exact module length and square-action reduction"
+      ],
+      "checker": "scripts/verify_universal_cubic_quartic_different_complex.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:aa9574618b6cc13699c250936eef0237acfba74a8650a861961794b659d50723",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [
+        "the full 24-parameter Fitting-minor computation for the canonical-different support"
+      ],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "KCA3",
+      "kind": "reproduction",
+      "state": "proved",
+      "title": "Universal locally free cubic Kähler-different/annihilator equality",
+      "scope": "For the universal Deligne--Faddeev cubic algebra over Q[a,b,c,d], with products w^2=-ac+bw-at, wt=-ad, and t^2=-bd+dw-ct, the relative differential module has the displayed 2-by-3 Jacobian presentation. Its zeroth Fitting ideal, the Kähler different, and its full annihilator both reduce to the same three-generator ideal. Consequently the canonical different and Ann(Omega) agree on the punctured base of the Koszul cubic construction, where the trace-free module is locally free. Combined with KDFC6, relative cotangent saturation across (x,y,z) implies equality globally and hence Fitt_6=(1), Fitt_5=(0) for the actual ramification-support Ext^2. This checker proves the locally free equality, not universal cotangent saturation at the collision origin.",
+      "canonical_source": "cancellation/UNIVERSAL_CUBIC_QUARTIC_KERNEL_SATURATION.md",
+      "dependencies": [
+        "KDFC6",
+        "external: Singular 4.4.1 exact quotient-ring module preimages and Fitting ideals"
+      ],
+      "checker": "scripts/verify_universal_cubic_kahler_annihilator.py",
+      "proof_type": "reproduction",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:28120303ac7e99595493dc7e6777943262c4bd759cce5bbd327be9ee477551e1",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [
+        "the actual Ext-Fitting discriminant as an independent calculation from cotangent saturation"
       ],
       "replaced_by": [],
       "priority": "derived"
@@ -6032,8 +6088,8 @@
       "id": "SIC2C4R2",
       "kind": "theorem",
       "state": "proved",
-      "title": "Rank-two invariant-quotient moment obstruction in bidegree (4,4)",
-      "scope": "Let X_2 be the sixteen-dimensional determinantal variety of 5-by-5 bidegree-(4,4) coefficient matrices of rank at most two. On an exact global factor chart, both moment sets mu_1,...,mu_13 and mu_1,...,mu_12,mu_14 have Jacobian rank thirteen modulo the good prime 1000003, hence are algebraically independent in characteristic zero and attain the generic diagonal-SL_2 quotient dimension. The invariant Hilbert series is computed from the two-row Cauchy decomposition and the SL_2 weight-zero-minus-weight-two rule. Degrees 1,...,13 cannot be a homogeneous system of parameters because the required Hilbert numerator has coefficient -5266 in degree 69, so their common zero fiber on X_2 contains a semistable point. The finite rank-one boundary classification is complete on the collided-root strata and all but one squarefree Rabinowitsch chart. Therefore the semistable thirteen-moment fiber is proved only to contain a point of rank at most two; exact rank two is conditional on that remaining boundary closure. Replacing mu_13 by mu_14 is the least degree repair: the corrected moments retain exact Jacobian rank thirteen, and their candidate Hilbert numerator is nonnegative through degree 100 and palindromic through the predicted Gorenstein top degree 82. This remains only a necessary Hilbert test. The corrected rank-two zero fiber and ranks two through four in the all-order problem remain open.",
+      "title": "Rank-at-most-two invariant-quotient moment obstruction in bidegree (4,4)",
+      "scope": "Let X_2 be the sixteen-dimensional determinantal variety of 5-by-5 bidegree-(4,4) coefficient matrices of rank at most two. On an exact global factor chart, both moment sets mu_1,...,mu_13 and mu_1,...,mu_12,mu_14 have Jacobian rank thirteen modulo the good prime 1000003, hence are algebraically independent in characteristic zero and attain the generic diagonal-SL_2 quotient dimension. The displayed chart matrix is only a transversality point and has mu_1=7414; it is not a moment survivor. The invariant Hilbert series is computed from the two-row Cauchy decomposition and the SL_2 weight-zero-minus-weight-two rule. Degrees 1,...,13 cannot be a homogeneous system of parameters because the required Hilbert numerator has coefficient -5266 in degree 69, so their common zero fiber on X_2 contains a semistable point. This point is existential: no coordinates, residue field, or explicit component are known. The finite rank-one boundary classification is complete on the collided-root strata and all but one squarefree Rabinowitsch chart. Therefore the semistable thirteen-moment fiber is proved only to contain a point of rank at most two; exact rank two is conditional on that remaining boundary closure. Replacing mu_13 by mu_14 is the least degree repair: the corrected moments retain exact Jacobian rank thirteen, and their candidate Hilbert numerator is nonnegative through degree 100 and palindromic through the predicted Gorenstein top degree 82. This remains only a necessary Hilbert test and does not provide a recurrence specialization. Recurrence derivation and evaluation of mu_14 are parked until the rank-one membership is closed, an explicit closed semistable point or component is extracted, and its coefficient rank is proved to be exactly two. The corrected rank-at-most-two zero fiber and ranks two through four in the all-order problem remain open.",
       "canonical_source": "extended-geometry/TWO_PAIR_SIC_BIDEGREE44_RANK_FRONTIER.md",
       "dependencies": [
         "GVCSS",
@@ -6062,7 +6118,7 @@
       "kind": "theorem",
       "state": "proved",
       "title": "Squarefree quartic rank-one pivot reduction",
-      "scope": "Normalize the squarefree binary-quartic symbol to A=u v(u-v)(u-lambda v), eliminate the first moment, and work on the projective polynomial chart e=1. The second moment is linear in a with pivot p=5c-5(lambda+1)d+2lambda^2+8lambda+2. On the generic pivot-open chart, pairwise resultants and exact branch reductions give the expected radical (8c-3d^2,d(d-4)(d-4lambda)); the apparent extra quadratic component satisfies p^3=0. Exact coefficient-field fibers close the harmonic, equianharmonic, pivot-annihilator, and branch-quartic special orbits. The complete pivot-boundary and expected-branch exceptional gcds are extracted exactly. On the chart 8c-3d^2=0 with d(d-4)(d-4lambda) nonzero, substitution and exact division by the invertible cubic powers give a three-variable unit ideal over Q. One Rabinowitsch membership remains to make the result uniform in squarefree lambda. Writing q=lambda^4(lambda-1)^4 and M=p(8c-3d^2), it is reduced to the target-only membership q*M^5 in (f3,f4,f5,f6). Over F_101, F_103, and F_107 the least saturation exponent is exactly five and the degree-order basis size is 87; at 101 a direct lift has multiplier degree/term profiles (34,5356), (29,3679), (27,3037), and (22,1853). These are finite-field identities only. Direct rational target and full reconstructed-basis lifts each exceeded a twenty-minute bound, so the Q-membership remains open. Slower full generic Groebner, direct saturation, large Bezout, residual-resultant intersections, and a generic extra-component denominator split with high-degree exceptional factors are failed routes, not mathematical evidence.",
+      "scope": "Normalize the squarefree binary-quartic symbol to A=u v(u-v)(u-lambda v), eliminate the first moment, and work on the projective polynomial chart e=1. The second moment is linear in a with pivot p=5c-5(lambda+1)d+2lambda^2+8lambda+2. On the generic pivot-open chart, pairwise resultants and exact branch reductions give the expected radical (8c-3d^2,d(d-4)(d-4lambda)); the apparent extra quadratic component satisfies p^3=0. Exact coefficient-field fibers close the harmonic, equianharmonic, pivot-annihilator, and branch-quartic special orbits. The complete pivot-boundary and expected-branch exceptional gcds are extracted exactly. On the chart 8c-3d^2=0 with d(d-4)(d-4lambda) nonzero, substitution and exact division by the invertible cubic powers give a three-variable unit ideal over Q. One Rabinowitsch membership remains to make the result uniform in squarefree lambda. Writing q=lambda^4(lambda-1)^4 and M=p(8c-3d^2), it is reduced to the target-only membership q*M^5 in (f3,f4,f5,f6). Over F_101, F_103, and F_107 the least saturation exponent is exactly five and the degree-order basis size is 87; at 101 a direct lift has multiplier degree/term profiles (34,5356), (29,3679), (27,3037), and (22,1853). These are finite-field identities only. A 240-bit large-prime CRT build from twelve common-support direct lifts recovers only three of 14508 balanced coefficients at a thirteenth holdout prime, and two further primes change support. Tracked-basis transforms at 101, 103, and 107 also have distinct supports, while degree-plus-component syzygy normalization at 101 exceeds a 600-second bound. Direct rational target and full reconstructed-basis lifts each exceeded a twenty-minute bound, so the Q-membership remains open. These bounded failed reconstructions and slower full generic Groebner, direct saturation, large Bezout, residual-resultant intersections, and generic extra-component denominator split are not mathematical evidence against membership.",
       "canonical_source": "extended-geometry/TWO_PAIR_SIC_BIDEGREE44_RANK_FRONTIER.md",
       "dependencies": [
         "GVC2C4S",
@@ -6074,7 +6130,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:2fa001199d4768938e1cbed2adde5bbff9cf5ef11ec80dd3b689081b36d5fa5e",
+      "artifact_hash": "sha256:1749742b54a09e501c307c8d699b3f32c7255fb3587aab18c8696822a29ba723",
       "software_lock": [
         ".python-version",
         "requirements.txt"
@@ -9661,7 +9717,7 @@
       "kind": "reproduction",
       "state": "proved",
       "title": "Hessian--Ritt cellular cotangent prototype",
-      "scope": "An exact rational cellular model now attaches Dickson-base deformation modules to vertices, factor/move modules to edges, and signed commuting-square and braid-hexagon modules to two-cells. A three-edge half-braid relative to its endpoints carries any defect module D with cellular cohomology H^1=D and H^2=0. In degree thirty, each labelled sector has matrix dimensions (14,15,2), differential ranks (12,2), and cohomology dimensions (2,1,0); its single cellular excess is compared with the established sector-dependent z-annihilators, nilpotence indices, and transverse complete intersections. In degree forty-two, the associated graded of the exact flag I_6<I_boundary<K has sector and spectator summands with minimal annihilators z^8 and z; its first-conormal cohomology dimensions are (2,2,0), and its order-two through order-four jet cohomology dimensions are (3,2,0), (6,8,0), and (10,19,0). The four-factor Coxeter two-skeleton verifies all six commuting squares and eight braid cells and has the expected topological H^2 line. HRCELL2 computes the first nonsplit filtered enhancements, HRCELL3 proves completed ideal-module non-splitting, and HRCELL4 proves that the actual cotangent transitivity connecting morphism is nonzero through its first-Postnikov conormal shadow. This remains a prototype, not a quasi-isomorphism theorem for the full derived Hessian intersection; higher Postnikov layers and filtered algebraic H^2 groups remain open.",
+      "scope": "An exact rational cellular model now attaches Dickson-base deformation modules to vertices, factor/move modules to edges, and signed commuting-square and braid-hexagon modules to two-cells. A three-edge half-braid relative to its endpoints carries any defect module D with cellular cohomology H^1=D and H^2=0. In degree thirty, each labelled sector has matrix dimensions (14,15,2), differential ranks (12,2), and cohomology dimensions (2,1,0); its single cellular excess is compared with the established sector-dependent z-annihilators, nilpotence indices, and transverse complete intersections. In degree forty-two, the associated graded of the exact flag I_6<I_boundary<K has sector and spectator summands with minimal annihilators z^8 and z; its first-conormal cohomology dimensions are (2,2,0), and its order-two through order-four jet cohomology dimensions are (3,2,0), (6,8,0), and (10,19,0). The four-factor Coxeter two-skeleton verifies all six commuting squares and eight braid cells and has the expected topological H^2 line. HRCELL2 computes the first nonsplit filtered enhancements, HRCELL3 proves completed ideal-module non-splitting, HRCELL4 proves that the actual cotangent transitivity connecting morphism is nonzero through its first-Postnikov conormal shadow, and HRCELL5 proves the completed first homology sequence short exact while separating a two-dimensional truncated base-change-Tor image. This remains a prototype, not a quasi-isomorphism theorem for the full derived Hessian intersection; the individual higher cotangent homology modules and filtered algebraic H^2 groups remain open.",
       "canonical_source": "extended-geometry/HESSIAN_RITT_CELLULAR_COTANGENT_PROTOTYPE.md",
       "dependencies": [
         "HR30C",
@@ -9672,7 +9728,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:c28fd13176e33f4b2d7245d3cdbb7bb573b7c2773b3da1be2144e4a0e74d56d8",
+      "artifact_hash": "sha256:b2c59c0c6e737f1425b35f12f00fc56ee657ed028f2d1dc9696af869d2ac9b3d",
       "software_lock": [
         ".python-version",
         "requirements.txt"
@@ -9765,11 +9821,38 @@
       "priority": "derived"
     },
     {
+      "id": "HRCELL5",
+      "kind": "corollary",
+      "state": "proved",
+      "title": "Degree-forty-two first-Postnikov overlap vanishing",
+      "scope": "Put I=I_6 and J=I_boundary in the completed normalized 2 o 7 o 3 chart. The first homology of the left cotangent-transitivity term is S=J/(I+KJ), and the kernel of S->K/(I+K^2) is the quadratic overlap (J intersect (I+K^2))/(I+KJ). Exact Artin--Rees cutoff calculations show that S tensor_B B/(tau,z)^2 has dimension six: at cutoff m^4 the denominator and numerator quotient-ring lengths are 22 and 16, and all 497 generators of the cutoff intersection reduce to zero. For the quadratic overlap, at cutoff m^5 both quotient-ring lengths are 38 and all 1286 cutoff-intersection generators reduce to zero, so its base-square quotient vanishes. Nakayama's lemma proves the completed overlap itself is zero. Hence 0->S->H_1(L_(B/A_6))->H_1(L_(B/A_boundary))->0 is exact. After tensoring with the base-square quotient, S has dimension six but image dimension four; this two-dimensional kernel is the image of ordinary non-flat base-change Tor. Equivalently, higher cotangent homology has zero image in this completed H_1 sequence. The individual H_i for i>=2 are not computed.",
+      "canonical_source": "extended-geometry/HESSIAN_RITT_CELLULAR_COTANGENT_PROTOTYPE.md",
+      "dependencies": [
+        "HR42C",
+        "HRCELL4"
+      ],
+      "checker": "scripts/verify_degree42_ritt_postnikov_overlap.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:f6f0cb868aaf213ffa1f061485ed038c7291688f43b45380615daa7144197dfb",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [
+        "the unidentified two-dimensional kernel in the truncated degree-42 sector conormal map"
+      ],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
       "id": "OP-RITT",
       "kind": "open_problem",
       "state": "open",
       "title": "Vertical imprimitive-specialization loci",
-      "scope": "Replace degree-by-degree elimination by the completed Hessian--Ritt deformation complex. Use tame Ritt--Engstrom relation graphs for reduced power/Dickson components; present the formal intersection as the homotopy limit of the coefficient-decorated factor, move, and labelled 2-cell diagram and compute its cotangent complex by cellular totalization; prove the Hessian lift defect is null-homotopic on every filtered layer; prove relative obstruction vanishing for universal commuting and braid cells; and recover nilpotent thickenings and their power--Dickson boundary gluing from the completed deformation algebra. HR42C separates the degree-42 conormal flag into a z^8 sector layer and a z spectator layer, while HRLL closes reduced degree-30 component completeness. HRCELL1 implements the associated-graded cellular matrices, HRCELL2 finds the first non-split jets, HRCELL3 proves that the completed degree-42 ideal-module extension is non-split, and HRCELL4 proves that the cotangent transitivity connecting morphism is nonzero at its first Postnikov layer. In degree thirty the full boundary equals the Dickson ideal, so the spectator cotangent term is zero and the comparison is the sector-only z^4-to-z^8 thickness change, not a second connecting class. The next tasks are a proof that the cellwise cotangent homotopy limit reduces to the prototype, computation of higher Postnikov layers, filtered algebraic H^2-vanishing, nonreduced terminal-refinement existence, universal commuting/mixed cells, power--Dickson boundary gluing, and later affine-sheet compactification.",
+      "scope": "Replace degree-by-degree elimination by the completed Hessian--Ritt deformation complex. Use tame Ritt--Engstrom relation graphs for reduced power/Dickson components; present the formal intersection as the homotopy limit of the coefficient-decorated factor, move, and labelled 2-cell diagram and compute its cotangent complex by cellular totalization; prove the Hessian lift defect is null-homotopic on every filtered layer; prove relative obstruction vanishing for universal commuting and braid cells; and recover nilpotent thickenings and their power--Dickson boundary gluing from the completed deformation algebra. HR42C separates the degree-42 conormal flag into a z^8 sector layer and a z spectator layer, while HRLL closes reduced degree-30 component completeness. HRCELL1 implements the associated-graded cellular matrices, HRCELL2 finds the first non-split jets, HRCELL3 proves that the completed degree-42 ideal-module extension is non-split, HRCELL4 proves that the cotangent transitivity connecting morphism is nonzero at its first Postnikov layer, and HRCELL5 proves that this first homology sequence is short exact and separates its truncated base-change Tor. In degree thirty the full boundary equals the Dickson ideal, so the spectator cotangent term is zero and the comparison is the sector-only z^4-to-z^8 thickness change, not a second connecting class. The next tasks are a proof that the cellwise cotangent homotopy limit reduces to the prototype, computation of the individual higher cotangent homology modules, filtered algebraic H^2-vanishing, nonreduced terminal-refinement existence, universal commuting/mixed cells, power--Dickson boundary gluing, and later affine-sheet compactification.",
       "canonical_source": "extended-geometry/HESSIAN_RITT_DEFORMATION_COMPLEX.md",
       "dependencies": [
         "HR12",
@@ -9785,7 +9868,8 @@
         "HRCELL1",
         "HRCELL2",
         "HRCELL3",
-        "HRCELL4"
+        "HRCELL4",
+        "HRCELL5"
       ],
       "checker": null,
       "proof_type": "not-applicable",

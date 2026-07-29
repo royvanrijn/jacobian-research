@@ -1,4 +1,14 @@
 {
+  "characteristic_zero_result": {
+    "algorithm": "Singular modStd with exactness=1",
+    "characteristic": 0,
+    "through_mu8": {
+      "dimension": -1,
+      "groebner_basis_size": 1,
+      "quotient_length": 0,
+      "unit_ideal": true
+    }
+  },
   "corrected_moments_used": [
     3,
     4,
@@ -5504,5 +5514,5 @@
       }
     }
   ],
-  "scope": "complete finite-field slice computation; not a global or characteristic-zero nullcone certificate"
+  "scope": "complete finite-field slice computation plus an exact characteristic-zero unit-ideal certificate when present; not a global nullcone certificate"
 }

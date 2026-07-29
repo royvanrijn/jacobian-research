@@ -946,6 +946,29 @@ by \(\mu_8\).  These calculations are finite-field reconnaissance, not
 an exhaustion of the rank-drop locus and not a characteristic-zero
 nullcone certificate.
 
+There is also one complete characteristic-zero slice certificate.  Fix
+
+\[
+ L=s_1=t_0=1.
+\]
+
+The remaining variables are \(Q,t_2,s_3,s_5,t_4\).  Modulo both \(47\)
+and \(101\), the ideal
+\((\mu_3,\ldots,\mu_7)\) is zero-dimensional of length \(1128\).
+Adjoining corrected \(\mu_8\) gives the unit ideal in both
+characteristics.  More importantly, Singular's verified modular
+reconstruction (`modStd` with exactness one) gives
+
+\[
+ (\mu_3,\mu_4,\mu_5,\mu_6,\mu_7,\mu_8)
+ =\mathbb Q[Q,t_2,s_3,s_5,t_4]                         \tag{5.12b''}
+\]
+
+on this exact slice.  Thus the whole five-variable slice contains no
+corrected zero-fiber point.  Equation (5.12b'') is a
+characteristic-zero slice exclusion, not a statement about the full
+four-dimensional base.
+
 The constant \(t_2\)-pivot permits one more exact elimination without a
 five-variable Gröbner basis.  Use the adapted base coordinates
 \((s_1,s_3,t_0,L,Q)\), solve (5.12g) for \(t_2\), and let

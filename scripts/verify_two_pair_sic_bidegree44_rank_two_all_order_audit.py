@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
-"""Exact audit of the proposed rank-two all-order starting point.
+"""Exact prerequisite audit for the bidegree-(4,4) rank-two problem.
 
 This checker does not claim an all-order rank-two witness or obstruction.
 It verifies the exact rank-two period/generating-function setup and records
 that the only displayed exact rank-two point in the current frontier note is
 a Jacobian transversality point, not a truncated moment survivor.
+Recurrence derivation is parked until an explicit exact-rank-two moment
+survivor is available.
 """
 
 from __future__ import annotations
@@ -263,7 +265,7 @@ def main() -> None:
     assert twice_area == 48
 
     artifact = {
-        "format": "two-pair-sic-bidegree44-rank-two-all-order-audit-v1",
+        "format": "two-pair-sic-bidegree44-rank-two-prerequisite-audit-v2",
         "field": "characteristic zero",
         "factor_chart": "C=U*W with U in Mat(5,2), W in Mat(2,5)",
         "displayed_rank_two_point": {
@@ -295,12 +297,28 @@ def main() -> None:
                 "or initial-moment bound at the singular expansion s=0"
             ),
         },
-        "recurrence_status": (
-            "no coefficient-specialized recurrence: the semistable "
-            "thirteen-moment point is existential and has no recorded "
-            "coordinates or residue field"
+        "explicit_survivor_status": (
+            "none recorded: Hilbert theory proves only an existential "
+            "semistable point on the rank-at-most-two fiber"
         ),
-        "first_possible_unsolved_tail": "mu_14",
+        "rank_one_boundary_status": (
+            "one squarefree Rabinowitsch membership remains open"
+        ),
+        "recurrence_status": (
+            "parked until the rank-one boundary is closed, an explicit "
+            "closed semistable point or component is extracted, and its "
+            "coefficient rank is proved to be exactly two"
+        ),
+        "tail_evaluation_status": (
+            "mu_14 is not evaluated without an explicit exact-rank-two "
+            "specialization"
+        ),
+        "mandatory_gate_sequence": [
+            "close the remaining rank-one membership",
+            "extract an explicit closed semistable point or component",
+            "prove exact coefficient rank two",
+            "derive the specialized recurrence and evaluate mu_14",
+        ],
         "written_source": (
             "extended-geometry/"
             "TWO_PAIR_SIC_BIDEGREE44_RANK_TWO_ALL_ORDER_AUDIT.md"
@@ -310,6 +328,7 @@ def main() -> None:
     print("PASS rank-two factor and beta/constant-term period identities")
     print("PASS displayed exact rank-two chart point has mu_1=7414, not zero")
     print("PASS generic rank-two Newton polygon has normalized volume 48")
+    print("PASS recurrence derivation is parked behind the exact-point gates")
     print(f"PASS wrote {OUTPUT.relative_to(ROOT)}")
 
 

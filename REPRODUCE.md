@@ -1153,6 +1153,8 @@ saturation modules are audited by:
 .venv/bin/python scripts/verify_smooth_cubic_quartic_three_space_saturation.py
 .venv/bin/python scripts/research_universal_cubic_quartic_kernel_saturation.py
 .venv/bin/python scripts/verify_cubic_quartic_ext_tail_absorption.py
+.venv/bin/python scripts/verify_universal_cubic_quartic_different_complex.py
+.venv/bin/python scripts/verify_universal_cubic_kahler_annihilator.py
 .venv/bin/python scripts/verify_cubic_symbol_dense_quartic_plane_saturation.py
 .venv/bin/python scripts/verify_cubic_symbol_affine_dense_quartic_plane_saturation.py
 ```
@@ -1224,9 +1226,26 @@ length-six quotient killed by `(x,y,z)^2`.  The seventh row has a central
 quadratic part and a parameter-linear cubic part, so it reduces to zero
 modulo those six rows.  The resulting 12-generator parameter module has
 six independent constant relations and therefore
-`Fitt_6=(1), Fitt_5=(0)`.  This isolates universal Rees strictness of the
-resolution tail as the remaining Fitting step.
-The ninth command tests one low-height full-support plane for all seven
+`Fitt_6=(1), Fitt_5=(0)`.  It also verifies that the seven canonical
+different generators equal the complete annihilator on each plane.
+The ninth command constructs the canonical different matrix
+`[(0,z,-y,x),(s_ij,2*mu_ij)]` over all 24 quartic-kernel parameters and
+all seven squarefree symbols.  Its explicit universal syzygy matrix
+satisfies the Buchsbaum--Eisenbud grade conditions.  The resulting
+canonical-different support has constant length-six `Ext^2` and
+`Fitt_6=(1), Fitt_5=(0)` over the full parameter ring.  Identifying these
+seven generators with the complete annihilator `Ann(Omega)` remains
+open universally; the eighth command verifies that equality on the seven
+full-support planes.
+The tenth command computes the universal Deligne--Faddeev locally free
+cubic algebra and proves that the Kähler different `Fitt_0(Omega)` equals
+the full annihilator `Ann(Omega)`.  On the punctured Koszul base this
+identifies the canonical different with the actual support ideal.  Together
+with the depth of the ninth command's exact complex, relative cotangent
+saturation extends the equality across the collision axis and closes the
+actual Ext Fittings.  The command does not prove that remaining universal
+cotangent saturation.
+The eleventh command tests one low-height full-support plane for all seven
 squarefree symbols.  If `psi_plus` is the sum of the 24 fixed kernel-basis
 tensors and `psi_minus` their alternating sum, it computes the complete
 family `phi_h+u*psi_plus+v*psi_minus` over `Q[u,v,x,y,z]`.  In every row
@@ -1237,7 +1256,7 @@ two-parameter full-support result, not a Zariski-open theorem in the
 24-dimensional kernel.  Low-height dense parameter-three-space and
 higher-height parameter-four-space runs reached their declared 600-second
 timeouts and provide no mathematical evidence.
-The tenth command translates the same sum/alternating-sum plane by the
+The twelfth command translates the same sum/alternating-sum plane by the
 deterministic generic quartic lift and tests all nine nonzero cubic-symbol
 orbits plus the zero symbol.  Over `Q[u,v,x,y,z]`, all ten rows have
 saturated cotangent presentation, support exactly equal to the parameter
@@ -2680,8 +2699,8 @@ one squarefree uniform-specialization chart remains open. Thus exact rank
 two is not yet forced for the semistable thirteen-moment point. No
 all-order counterexample is claimed.
 
-The third dependency-free command audits the proposed all-order starting
-point. It verifies
+The third dependency-free command audits why recurrence work is currently
+parked. It verifies
 \[
 \frac{\mu_m}{(4m+1)!}
 =\operatorname{CT}_u\int_0^1
@@ -2693,7 +2712,7 @@ Jacobian point has \(\mu_1=7414\), so it is not the existential
 thirteen-moment survivor, and computes the generic rank-two Newton polygon
 with normalized volume \(48\). The semistable fiber has no recorded closed
 point or residue field, so no coefficient-specialized scalar recurrence
-is claimed. See
+is claimed and \(\mu_{14}\) is not evaluated. See
 [`TWO_PAIR_SIC_BIDEGREE44_RANK_TWO_ALL_ORDER_AUDIT.md`](extended-geometry/TWO_PAIR_SIC_BIDEGREE44_RANK_TWO_ALL_ORDER_AUDIT.md).
 
 On the rank-one boundary, the same checker proves that moments one through
@@ -2760,6 +2779,38 @@ The first two commands reproduce the exponent, basis size, and finite-field
 lift profile.  The third asks for the exact rational target-only lift; the
 recorded run exceeded its 1,200-second bound.  A timeout is not evidence
 against membership.
+
+The resumable large-prime CRT experiment is recorded in
+`artifacts/generated-results/two_variable_quartic_squarefree_crt.json`.
+To rebuild it independently, use a new checkpoint path:
+
+```bash
+.venv/bin/python \
+  scripts/research_two_variable_quartic_squarefree_membership.py \
+  --crt-lift 5 /tmp/two-variable-quartic-squarefree-crt.json \
+  1000003 1000033 1000037 1000039 1000081 1000099 1000117 1000121 \
+  1000133 1000151 1000159 1000171 1000183 1000187 1000193
+```
+
+The first thirteen images have a common 14,508-term support.  Twelve
+build primes give a 240-bit modulus and `1000183` is the holdout; only
+three balanced rational reconstructions agree at the holdout.  The final
+two primes have different supports.  This rejects coefficientwise CRT of
+these arbitrary lifts at the recorded bound, not membership over
+\(\mathbb Q\).  The two attempted normalizations are:
+
+```bash
+.venv/bin/python \
+  scripts/research_two_variable_quartic_squarefree_membership.py \
+  --compare-tracked-lifts 5 101 103 107
+.venv/bin/python \
+  scripts/research_two_variable_quartic_squarefree_membership.py \
+  --compare-syzygy-lifts 5 std component 101
+```
+
+The tracked transformations finish but have three different support
+hashes.  The component-order syzygy normalization reached its 600-second
+per-prime timeout at \(101\).
 
 The fourth checker handles the remaining at-most-two-root normal forms
 \(u^rv^{4-r}\). For \(r=0,4\), the first moment gives the one-sided
@@ -3316,6 +3367,9 @@ moments with:
 .venv/bin/python \
   scripts/verify_two_pair_sic_bidegree33_boundary_trace_candidates.py \
   --prime 47 --timeout 600
+.venv/bin/python \
+  scripts/verify_two_pair_sic_bidegree33_boundary_trace_slice.py \
+  --primes 47,101 --s1 1 --t0 1 --timeout 600
 ```
 
 Every accepted specialization at both primes has leading ideal
@@ -3324,7 +3378,12 @@ reduced length-one common \((\mu_6,\mu_7)\) fibers; corrected \(\mu_8\)
 is nonzero at all three.  The commands write their exact finite-field
 data under `artifacts/generated-results/`.  This is sampled modular
 evidence only, not an exhaustion of the rank-drop locus or a
-characteristic-zero nullcone certificate.
+characteristic-zero nullcone certificate.  The final command is stronger:
+on the complete slice \(L=s_1=t_0=1\), it finds length \(1128\) through
+\(\mu_7\) modulo both primes and then uses Singular `modStd` with exactness
+one to certify over \(\mathbb Q\) that adjoining corrected \(\mu_8\)
+gives the unit ideal.  This is an exact slice exclusion, not a global
+boundary certificate.
 
 Modular full-chart reconnaissance is available separately:
 
@@ -5005,6 +5064,15 @@ for prime in 7 11 13; do
 done
 ```
 
+The corresponding symbolic attempt is:
+
+```bash
+.venv/bin/python -u \
+  scripts/verify_hc4_quintic_two_parameter_symmetric_schur.py \
+  --fourth-power-profile --fourth-prime 7 \
+  --fourth-stage annihilator --fourth-timeout 900
+```
+
 The zero sign-character block of degree four has 819 target monomials and
 3474 equation-times-quadratic columns.  At all \(42+110+156\) parameter
 points on `nu!=0`, membership of all fifteen coefficient fourth powers
@@ -5012,7 +5080,9 @@ certifies an empty reduced projective Schur fiber except at the radial
 reduction.  The cube-torsion point `(-5/3,-1/6)` is certified
 reduced-empty at every prime.  These scans cover \(\mathbb F_p\)-rational
 parameters, not points over proper finite-field extensions and not the
-characteristic-zero support ideal.  See
+characteristic-zero support ideal.  The symbolic \(\mathbb F_7[\mu,\nu]\)
+annihilator command reached its 900-second bound before returning a
+standard basis and supplies no factorization.  See
 [`hc4_fourth_power_support.json`](artifacts/generated-results/hc4_fourth_power_support.json).
 
 The direct collision-normalized finite-field experiment in degree bounds

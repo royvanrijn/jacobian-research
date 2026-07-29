@@ -194,14 +194,82 @@ its support can convert higher-order relations into new low-order
 syzygies.  Any exceptional locus must therefore enter through this
 syzygy-lifting step, rather than through the raw two-jet.
 
-## 5. Resolution-tail absorption and the Fitting reduction
+## 5. Canonical-different complex and the Fitting reduction
 
-There is a sharper finite reduction on the full-support plane of Section 2.
-For every squarefree symbol, the minimal support resolution has tail
+Write the trace-free and scalar multiplication components as
+\(\mu_{ij}\in M\) and \(s_{ij}\in R\).  Over the full 24-parameter ring,
+form the seven-column canonical-different matrix
+
+\[
+ d_1=\left[
+ (0,z,-y,x)^{\mathsf T},
+ (s_{ij},2\mu_{ij})^{\mathsf T}_{0\leq i\leq j\leq2}
+ \right].                                             \tag{5.1}
+\]
+
+The exact checker constructs a universal \(7\)-by-\(3\) matrix \(d_2\).
+For \(r=(z,-y,x)\), associativity and the coefficient-module relation give
+
+\[
+ \sum_i r_i s_{ij}=0,\qquad
+ 2\sum_i r_i\mu_{ij}=q_jr.                            \tag{5.2}
+\]
+
+The top row of \(d_2\) is \((-q_0,-q_1,-q_2)\); its other six rows are the
+fixed incidence coefficients expressing
+\(\sum_i r_i(s_{ij},2\mu_{ij})\).  Thus \(d_1d_2=0\) identically.  Each
+\(q_j\) has only parameter/collision bidegrees \((0,2)\) and \((1,3)\).
+The fixed lower \(6\)-by-\(3\) block has maximal minors containing
+\(x^3,y^3,z^3\), while \(d_1\) has a nonzero central \(4\)-by-\(4\) minor
+for every squarefree symbol.  The Buchsbaum--Eisenbud grade criterion
+therefore proves exactness of
+
+\[
+ 0\longrightarrow R^3\mathop{\longrightarrow}^{d_2}R^7
+ \mathop{\longrightarrow}^{d_1}R^4.                  \tag{5.3}
+\]
+
+Let \(T_\Delta=\operatorname{coker}(d_1)\).  Transposing the last
+differential computes \(\operatorname{Ext}^2_R(T_\Delta,R)\).  The six
+fixed linear rows alone generate a module \(L\subset R^3\) satisfying
+
+\[
+ \dim_{\mathbb Q}(R^3/L)=6,\qquad
+ (x,y,z)^2(R^3/L)=0.                                  \tag{5.4}
+\]
+
+The varying top row lies in \((x,y,z)^2R^3\), so it is redundant.  Hence
+
+\[
+ \operatorname{Ext}^2_R(T_\Delta,R)
+ \simeq (R^3/L)
+ \simeq E_0\otimes_{\mathbb Q}
+ \mathbb Q[u_1,\ldots,u_{24}].                        \tag{5.5}
+\]
+
+After truncation by \((x,y,z)^2\), the parameter module has 12 generators
+and six independent constant relations.  It is free of rank six, proving
+universally for the canonical-different support
+
+\[
+ \operatorname{Fitt}_6=(1),\qquad
+ \operatorname{Fitt}_5=(0).                           \tag{5.6}
+\]
+
+The remaining issue is now an identification, not a Fitting-minor
+calculation.  The ramification support in (1.2) uses
+\[
+ T=B/\operatorname{Ann}_B(\Omega_{B/R}),
+\]
+whereas (5.1) defines \(T_\Delta\) from the seven canonical different
+generators.  On the full-support plane of Section 2, exact module reduction
+proves that these seven generators span the complete annihilator for every
+parameter and every squarefree symbol.  The resulting actual minimal
+support resolution has tail
 
 \[
  R^3\mathop{\longrightarrow}^{d_2}R^7
- \longrightarrow R^4\longrightarrow T\longrightarrow0.       \tag{5.1}
+ \longrightarrow R^4\longrightarrow T\longrightarrow0.       \tag{5.7}
 \]
 
 After the exact minimal-resolution basis chosen by Singular, rows two
@@ -210,7 +278,7 @@ through seven of \(d_2\) are parameter-independent linear triples.  Let
 
 \[
  \dim_{\mathbb Q}(R^3/L)=6,\qquad
- (x,y,z)^2(R^3/L)=0.                                  \tag{5.2}
+ (x,y,z)^2(R^3/L)=0.                                  \tag{5.8}
 \]
 
 The remaining row lies in \((x,y,z)^2R^3\).  Its central part is quadratic,
@@ -220,33 +288,77 @@ entire seventh row redundant:
 
 \[
  \operatorname{coker}(d_2^{\mathsf T})
- \simeq R^3/L.                                        \tag{5.3}
+ \simeq R^3/L.                                        \tag{5.9}
 \]
 
-This proves the Fitting assertion on all seven planes without computing
-large minors.  After truncation by \((x,y,z)^2\), the parameter module has
-12 generators and six independent constant relations.  It is free of rank
-six, so
+Thus (5.6) already closes the universal Fittings for \(T_\Delta\), and
+(5.9) checks their identification with the requested Fittings on seven
+full-support planes.  To close them globally for the actual \(T\), it is
+enough to prove the universal annihilator--different equality
 
 \[
- \operatorname{Fitt}_6=(1),\qquad
- \operatorname{Fitt}_5=(0).                           \tag{5.4}
+ \operatorname{Ann}_B(\Omega_{B/R})
+ =
+ \left((0,z,-y,x),(s_{ij},2\mu_{ij})\right).          \tag{5.10}
 \]
 
-More importantly, (5.2) identifies the exact missing universal lemma.  It
-is enough to prove that the universal support resolution is
-**Rees-strict at its last differential**: its linear strand must be the
-same six-row strand, and every additional row must lie in
-\((x,y,z)^2R^3\).  If so, all additional rows are automatically absorbed
-by (5.2), (5.3) holds over
-\(\mathbb Q[u_1,\ldots,u_{24},x,y,z]\), and the universal Fitting
-discriminant is empty.
+Equivalently, one must exclude additional annihilator generators supported
+over a proper parameter locus.  No further determinant calculation is
+needed once (5.10) is established.
+
+There is now an exact conditional closure of this last step.  The universal
+Deligne--Faddeev cubic algebra on a free trace-free rank-two module has
+
+\[
+ \operatorname{Fitt}_0^B(\Omega_{B/R})
+ =
+ \operatorname{Ann}_B(\Omega_{B/R}).                  \tag{5.11}
+\]
+
+The checker computes both ideals in the universal algebra over
+\(\mathbb Q[a,b,c,d]\) and reduces them to the same three-generator ideal.
+On \(D(x)\cup D(y)\cup D(z)\), the Koszul trace-free module is locally free,
+so (5.11) identifies the canonical different in (5.1) with the actual
+annihilator.
+
+The exact complex (5.3) also shows that \(T_\Delta\) has projective
+dimension at most two.  If a prime contains \((x,y,z)\), its height is at
+least three; Auslander--Buchsbaum therefore gives depth at least one for
+\((T_\Delta)_\mathfrak p\).  Hence
+
+\[
+ H^0_{(x,y,z)}(T_\Delta)=0.                           \tag{5.12}
+\]
+
+Assume now the requested universal relative cotangent saturation
+\(H^0_{(x,y,z)}(\Omega_{B/R})=0\).  The canonical different annihilates
+\(\Omega\) off the collision axis, so its action on \(\Omega\) is
+\((x,y,z)\)-torsion and therefore vanishes globally.  Thus
+\(\Delta\subseteq\operatorname{Ann}(\Omega)\).  Their quotient is supported
+on the collision axis by (5.11) and injects into \(T_\Delta\); (5.12)
+forces the quotient to vanish.  Consequently
+
+\[
+ H^0_{(x,y,z)}(\Omega)=0
+ \quad\Longrightarrow\quad
+ T=T_\Delta,\quad
+ \operatorname{Fitt}_6(E)=(1),\quad
+ \operatorname{Fitt}_5(E)=0.                         \tag{5.13}
+\]
+
+Thus there is no independent Ext-Fitting exceptional set: it is contained
+in the cotangent-saturation failure locus.  Closing universal cotangent
+saturation closes the requested Fittings at the same time.
 
 The checker
 [`verify_cubic_quartic_ext_tail_absorption.py`](../scripts/verify_cubic_quartic_ext_tail_absorption.py)
-proves this tail statement on the seven full-support planes.  It does not
-yet prove universal Rees strictness; a higher-order support syzygy could in
-principle change the minimal tail away from all tested planes.
+proves the actual-support statement on the seven full-support planes.
+The checker
+[`verify_universal_cubic_quartic_different_complex.py`](../scripts/verify_universal_cubic_quartic_different_complex.py)
+proves (5.2)--(5.6) over all 24 parameters.  Neither checker proves the
+universal equality (5.10) unconditionally.  The checker
+[`verify_universal_cubic_kahler_annihilator.py`](../scripts/verify_universal_cubic_kahler_annihilator.py)
+proves (5.11), which gives the conditional implication (5.13).
 
 ## 6. Universal elimination bottleneck
 
@@ -276,27 +388,30 @@ still did not return its first standard-basis diagnostic after six minutes
 and reached approximately 1.75 GB resident memory.  This is another failed
 direct route, not an exceptional parameter.
 
-The useful homological reduction is the known two-layer condition
-\((x,y,z)^2E=0\).  A universal proof should avoid the full module standard
-basis and construct the finite parameter presentation directly from the
-minimal resolution of \(T\).  Its six linear relation columns act on the
-nine-dimensional space
+The canonical-different construction of Section 5 completes the
+parameter-only matrix that this bottleneck originally suggested.  Its six
+linear relation columns act on the nine-dimensional space
 
 \[
  (x,y,z)\,S^3/(x,y,z)^2S^3.                         \tag{6.1}
 \]
 
-The next certificate is therefore a parameter-only matrix:
+The Fittings of this matrix are now closed by (5.6).  The next certificate
+is instead the equality (5.10).  A useful formulation is to compute the
+finite quotient
 
-1. construct the universal minimal second differential without localizing
-   at a parameter pivot;
-2. prove universally that the quadratic action vanishes;
-3. compute (1.4) from the resulting finite \(S\)-presentation;
-4. add the independent cotangent-saturation certificate.
+\[
+ \operatorname{Ann}_B(\Omega_{B/R})/\Delta,
+ \qquad
+ \Delta=((0,z,-y,x),(s_{ij},2\mu_{ij})),             \tag{6.2}
+\]
 
-This route computes the requested discriminant directly.  Pivot charts are
-acceptable only if their exceptional ideals are retained and the charts
-are proved to cover \(\mathbb A^{24}\).
+and prove that it is zero.  It vanishes on every recorded line, plane, and
+the smooth coordinate ten-space.  By (5.13), however, this quotient
+vanishes automatically once the cotangent-saturation quotient does.
+Therefore the remaining universal calculation is the single relative
+cotangent saturation test; the Fittings no longer require a separate
+elimination.
 
 ## 7. Reproduction
 
@@ -305,11 +420,16 @@ Run
 ```bash
 .venv/bin/python scripts/research_universal_cubic_quartic_kernel_saturation.py
 .venv/bin/python scripts/verify_cubic_quartic_ext_tail_absorption.py
+.venv/bin/python scripts/verify_universal_cubic_quartic_different_complex.py
+.venv/bin/python scripts/verify_universal_cubic_kahler_annihilator.py
 ```
 
 The generated record is
 [`universal_cubic_quartic_kernel_saturation_frontier.json`](../artifacts/generated-results/universal_cubic_quartic_kernel_saturation_frontier.json).
 
-The calculation requires Singular 4.4.1.  It is an exact finite-subspace
-computation.  The arbitrary 24-parameter combination, its global Fitting
-ideals, and its parameter discriminant remain open.
+The calculations require Singular 4.4.1.  The canonical-different complex
+and its Fitting ideals are computed over all 24 parameters.  The locally
+free universal cubic calculation and the depth argument prove that
+cotangent saturation implies equality with the actual annihilator and
+hence the same Fittings.  The unconditional universal cotangent saturation
+and its parameter discriminant remain open.

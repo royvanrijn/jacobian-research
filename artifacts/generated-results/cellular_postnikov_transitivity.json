@@ -1,0 +1,72 @@
+{
+  "schema": "cellular-postnikov-transitivity.v1",
+  "status": "exact finite-module tower formalism",
+  "synthetic_multiflag": {
+    "module_dimensions": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "layer_dimensions": [
+      1,
+      1,
+      1
+    ],
+    "split_profile": [
+      true,
+      true,
+      true
+    ]
+  },
+  "degree_30_sector_only": {
+    "module_dimensions": [
+      1,
+      0
+    ],
+    "layer_dimensions": [
+      1
+    ],
+    "split_profile": [
+      true
+    ],
+    "cellular_cohomology": [
+      2,
+      1,
+      0
+    ]
+  },
+  "degree_42_base_square": {
+    "module_dimensions": [
+      6,
+      2,
+      0
+    ],
+    "layer_dimensions": [
+      4,
+      2
+    ],
+    "split_profile": [
+      false,
+      true
+    ],
+    "cellular_cohomology": [
+      3,
+      6,
+      0
+    ],
+    "interpretation": "the four-dimensional first kernel is the effective sector after non-flat base change; HRCELL5 identifies the missing two source dimensions as a Tor image"
+  },
+  "conormal_artifact": "artifacts/generated-results/degree42_ritt_conormal_transitivity.json",
+  "conormal_artifact_sha256": "bec6823cee90464f6a9113499704aa00a3339aabcbd9e11c1d0cf27bb8168b14",
+  "proved_by_checker": [
+    "commuting coordinate actions define finite modules",
+    "every declared projection is surjective and equivariant",
+    "kernel actions are restricted exactly",
+    "compatible sections are solved by exact rational linear algebra",
+    "arbitrary tower lengths feed their kernel layers into the cellular totalization",
+    "the degree-30 and actual degree-42 finite representations have the asserted tower profiles"
+  ],
+  "theorem_boundary": "the derived multi-flag theorem is proved in the canonical note; this checker validates its finite-module and cellular linear-algebra realization, not the all-degree Hessian--Ritt homotopy-limit comparison",
+  "reproducing_command": ".venv/bin/python scripts/verify_cellular_postnikov_transitivity.py"
+}

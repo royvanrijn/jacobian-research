@@ -39,7 +39,7 @@ import subprocess
 from collections import Counter
 from dataclasses import dataclass
 from functools import reduce
-from itertools import product
+from itertools import combinations, product
 from math import lcm
 from pathlib import Path
 from typing import Sequence
@@ -401,6 +401,184 @@ def singular_full_parent_identity(
     }
 
 
+def reduced_probe_points() -> tuple[tuple[int, ...], ...]:
+    points = [tuple(0 for _ in range(6))]
+    points.extend(
+        unit_axis(index, sign)
+        for index in range(6)
+        for sign in (1, -1)
+    )
+    points.extend(two_axis_probe_points())
+    return tuple(points)
+
+
+def remove_b_power(polynomial: sp.Poly) -> sp.Poly:
+    result = polynomial
+    divisor = sp.Poly(b, b, domain=sp.QQ)
+    while result.degree() > 0 and result.eval(0) == 0:
+        result = sp.quo(result, divisor)
+    return result.monic()
+
+
+def univariate_record(
+    point: Sequence[int],
+    polynomial: sp.Poly,
+    *,
+    rows: Sequence[int] | None = None,
+    columns: Sequence[int] | None = None,
+) -> dict[str, object]:
+    result: dict[str, object] = {
+        "point": list(point),
+        "degree_in_b": polynomial.degree(),
+        "factorization": sp.sstr(sp.factor(polynomial.as_expr())),
+    }
+    if rows is not None:
+        result["rows"] = list(rows)
+    if columns is not None:
+        result["columns"] = list(columns)
+    return result
+
+
+def audit_reduced_pair(
+    potential: sp.Expr,
+    pair: tuple[int, int],
+) -> dict[str, object]:
+    retained = tuple(
+        variable
+        for index, variable in enumerate(base.variables)
+        if index not in pair
+    )
+    pivot1, pivot2 = (base.variables[index] for index in pair)
+    s1, s2 = sp.symbols("s1 s2")
+    zero_pivots = {pivot1: 0, pivot2: 0}
+    A1 = sp.expand(sp.diff(potential, pivot1).subs(zero_pivots))
+    A2 = sp.expand(sp.diff(potential, pivot2).subs(zero_pivots))
+    B0 = sp.expand(potential.subs(zero_pivots))
+    matrix = sp.hessian(B0 + s1 * A1 + s2 * A2, retained)
+    probe_variables = retained + (s1, s2)
+
+    rank_three_gcd: sp.Poly | None = None
+    rank_three_records: list[dict[str, object]] = []
+    rank_three_closed = False
+    rank_four_gcd: sp.Poly | None = None
+    rank_four_records: list[dict[str, object]] = []
+    rank_four_closed = False
+
+    for point in reduced_probe_points():
+        evaluated = matrix.subs(
+            dict(zip(probe_variables, point, strict=True))
+        )
+        if not rank_three_closed:
+            for row_indices in combinations(range(4), 3):
+                for column_indices in combinations(range(4), 3):
+                    minor = sp.Poly(
+                        sp.expand(
+                            evaluated.extract(
+                                row_indices, column_indices
+                            ).det(method="domain-ge")
+                        ),
+                        b,
+                        domain=sp.QQ,
+                    )
+                    if minor.is_zero:
+                        continue
+                    rank_three_records.append(
+                        univariate_record(
+                            point,
+                            minor,
+                            rows=row_indices,
+                            columns=column_indices,
+                        )
+                    )
+                    rank_three_gcd = (
+                        minor
+                        if rank_three_gcd is None
+                        else sp.gcd(rank_three_gcd, minor)
+                    )
+                    localized = remove_b_power(rank_three_gcd)
+                    if localized.degree() == 0:
+                        rank_three_closed = True
+                        break
+                if rank_three_closed:
+                    break
+
+        if not rank_four_closed:
+            determinant = sp.Poly(
+                sp.expand(evaluated.det(method="domain-ge")),
+                b,
+                domain=sp.QQ,
+            )
+            if not determinant.is_zero:
+                rank_four_records.append(
+                    univariate_record(point, determinant)
+                )
+                rank_four_gcd = (
+                    determinant
+                    if rank_four_gcd is None
+                    else sp.gcd(rank_four_gcd, determinant)
+                )
+                localized = remove_b_power(rank_four_gcd)
+                if localized.degree() == 0:
+                    rank_four_closed = True
+
+        if rank_three_closed and rank_four_closed:
+            break
+
+    if not rank_three_closed:
+        raise AssertionError(
+            f"rank-at-most-two locus survived reduced probes for {pair}"
+        )
+    if not rank_four_closed:
+        raise AssertionError(
+            f"rank-drop locus survived reduced probes for {pair}"
+        )
+    return {
+        "pivots": [str(pivot1), str(pivot2)],
+        "retained": [str(variable) for variable in retained],
+        "rank_at_least_three_for_every_b_nonzero": True,
+        "generic_rank_four_for_every_b_nonzero": True,
+        "generic_corank_for_every_b_nonzero": 0,
+        "rank_three_certificate": rank_three_records,
+        "rank_four_certificate": rank_four_records,
+    }
+
+
+def affine_rank_audit(
+    potential: sp.Expr,
+    a_value: sp.Rational,
+) -> dict[str, object]:
+    specialized = sp.expand(potential.subs(a, a_value))
+    polynomial = sp.Poly(
+        specialized,
+        *base.variables,
+        domain=sp.QQ.poly_ring(b),
+    )
+    dimension, maximal_blocks = words.coordinate_affine_blocks(
+        polynomial
+    )
+    if dimension < 2:
+        raise AssertionError("parent family lost the two-pivot block")
+    pairs = sorted(
+        {
+            pair
+            for block in maximal_blocks
+            for pair in combinations(block, 2)
+        }
+    )
+    pair_audits = [
+        audit_reduced_pair(specialized, pair) for pair in pairs
+    ]
+    return {
+        "coordinate_affine_pivot_dimension": dimension,
+        "maximal_coordinate_affine_blocks": [
+            [str(base.variables[index]) for index in block]
+            for block in maximal_blocks
+        ],
+        "two_pivot_pairs": len(pair_audits),
+        "pair_audits": pair_audits,
+    }
+
+
 def analyze_pattern(
     pattern: Pattern,
     *,
@@ -480,6 +658,9 @@ def analyze_pattern(
             timeout=singular_timeout,
         )
         certificate_kind = "exact_parent_family"
+        rank_audit = affine_rank_audit(potential, a_value)
+    else:
+        rank_audit = None
 
     result: dict[str, object] = {
         "pattern_id": pattern.pattern_id,
@@ -512,6 +693,8 @@ def analyze_pattern(
         result["sampled_parent_elimination_basis"] = elimination_basis
     if exact_parent_family is not None:
         result["exact_parent_family"] = exact_parent_family
+    if rank_audit is not None:
+        result["affine_rank_audit"] = rank_audit
     return result
 
 
@@ -544,6 +727,18 @@ def run(order: str, singular_timeout: int) -> dict[str, object]:
         row["parent_constant_locus_with_ab_nonzero"]
         != "empty"
         for row in rows
+    )
+    two_pivot_pairs = sum(
+        int(row.get("affine_rank_audit", {}).get("two_pivot_pairs", 0))
+        for row in rows
+    )
+    rank_four_pairs = sum(
+        1
+        for row in rows
+        for pair in row.get("affine_rank_audit", {}).get(
+            "pair_audits", []
+        )
+        if pair["generic_rank_four_for_every_b_nonzero"]
     )
     assert incidence_census == {
         "h1_source_hits_h2_dual": 24,
@@ -591,6 +786,8 @@ def run(order: str, singular_timeout: int) -> dict[str, object]:
             - parent_probe_survivors,
             "parent_probe_survivors": parent_probe_survivors,
             "parent_survivors": parent_probe_survivors,
+            "two_pivot_pairs": two_pivot_pairs,
+            "rank_four_two_pivot_pairs": rank_four_pairs,
             "maximum_probe_equations": maximum_probes,
             "incidence_census": dict(sorted(incidence_census.items())),
             "certificate_census": dict(

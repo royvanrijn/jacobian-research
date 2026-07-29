@@ -334,7 +334,7 @@
         }
       }
     ],
-    "extension_status": "the direct sum is the associated graded of the exact ideal flag; verify_degree42_ritt_cellular_extension.py proves that the nested order-three and order-four module extensions are non-split, and verify_degree42_ritt_tensor_extension.py proves that the completed ideal-module extension is non-split; verify_degree42_ritt_conormal_transitivity.py proves that the first-Postnikov conormal projection is non-split and hence that the cotangent transitivity connecting morphism is nonzero"
+    "extension_status": "the direct sum is the associated graded of the exact ideal flag; verify_degree42_ritt_cellular_extension.py proves that the nested order-three and order-four module extensions are non-split, and verify_degree42_ritt_tensor_extension.py proves that the completed ideal-module extension is non-split; verify_degree42_ritt_conormal_transitivity.py proves that the first-Postnikov conormal projection is non-split and hence that the cotangent transitivity connecting morphism is nonzero; verify_degree42_ritt_postnikov_overlap.py proves that the completed sector-to-total conormal map is injective and separates its truncated base-change Tor"
   },
   "theorem_boundary": {
     "proved_by_this_checker": [
@@ -345,7 +345,7 @@
     ],
     "not_proved": [
       "the coefficient system is quasi-isomorphic to the full derived Hessian intersection",
-      "the higher Postnikov layers of the relative cotangent complexes are computed",
+      "the individual higher cotangent homology modules are computed",
       "the filtered H2 obstruction groups vanish beyond the displayed associated graded",
       "an all-degree reusable deformation theorem"
     ]

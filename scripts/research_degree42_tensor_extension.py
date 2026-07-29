@@ -285,6 +285,13 @@ def audit(base_order: int, normal_order: int) -> dict[str, object]:
         )
         if total_action.is_zero_matrix and spectator_action.is_zero_matrix
     ]
+
+    def serialized_matrix(matrix: sp.Matrix) -> list[list[str]]:
+        return [
+            [str(entry) for entry in row]
+            for row in matrix.tolist()
+        ]
+
     return {
         "base_order": base_order,
         "normal_order": normal_order,
@@ -296,6 +303,16 @@ def audit(base_order: int, normal_order: int) -> dict[str, object]:
         "splits_as_R_module": splits,
         "one_section": section.tolist() if section is not None else None,
         "zero_action_variables": zero_action_variables,
+        "finite_module_presentation": {
+            "variables": [str(symbol) for symbol in symbols],
+            "projection": serialized_matrix(projection),
+            "total_actions": [
+                serialized_matrix(action) for action in total_actions
+            ],
+            "spectator_actions": [
+                serialized_matrix(action) for action in spectator_actions
+            ],
+        },
         "certificate": certificate,
     }
 
