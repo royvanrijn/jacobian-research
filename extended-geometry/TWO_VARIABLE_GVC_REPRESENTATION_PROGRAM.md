@@ -71,6 +71,41 @@ the entire \(r=2,\deg P\le3\) cell: the double-line quadratic orbit has
 one apparent second-moment cancellation, killed exactly at moment three,
 and every surviving branch in both quadratic orbits has a strict weighted
 degree separator.  Thus the first \(r=2\) target has \(\deg P\ge4\).
+The quartic analysis below closes that endpoint as well.
+In that quartic target, the distinct-root quadratic orbit and the
+double-line \(xy^3\) top form close through moment three and weighted
+cutoffs.  Only the double-line \(y^4\) top form remains; eliminating one
+coefficient from its second and third moments leaves finitely many ratios
+on an explicit sextic.  Its fourth-moment octavic is coprime to that
+sextic.  Moreover, weights
+\(\operatorname{wt}(x)=2,\operatorname{wt}(y)=1\) show that the full pure
+moments equal those of this three-term weighted face: every higher
+operator jet has excess weight and every lower polynomial term has
+deficient weight.  Hence the entire \(r=2,\deg P\le4\) cell is closed,
+and the first quadratic-leading target has degree at least five.
+For \(r=3,\deg P=4\), the triple-root cubic-symbol orbit closes through
+moment four and three weighted-face reductions.  The double-root orbit
+closes through moment three.  For the squarefree orbit, the first two
+leading moments leave three fourth-power tips in one root-permutation
+orbit; its \(x^4\) tip has the same weight-four correction face as the
+double-root case and dies at moment three.  Hence every binary
+constant-coefficient operator is GVC-safe for \(\deg P\le4\).  A
+counterexample must have degree at least five; initially its lowest
+positive operator order could only be \(2,3,\) or \(4\).  For \(r=2\),
+the first two
+leading equations leave only
+\((\partial_x\partial_y,x^5)\),
+\((\partial_x^2,xy^4)\), and
+\((\partial_x^2,y^5)\).  The full correction calculation closes all
+three: the distinct-root tip has a linear-factor/high-order cutoff, the
+\(xy^4\) tip dies on two nested weighted faces, and the \(y^5\) tip
+reduces to six ratios, four killed at moment three and two already
+one-sided.  Hence the first quadratic-leading target has degree at least
+six, and a degree-five counterexample must have \(r=3\) or \(4\).
+For \(r=3\), the first two leading equations leave eight top-form normal
+forms: four triple-root, three double-root, and one squarefree.  This is
+the next finite correction calculation.  The \(r=4\) row has a
+continuous squarefree-quartic cross-ratio and is the less discrete branch.
 Although a squarefree tangent cone formally factors into smooth branches,
 this does not transport powers: a multiplicative conjugate of a
 derivation is a derivation, so a constant-coefficient umbral conjugate

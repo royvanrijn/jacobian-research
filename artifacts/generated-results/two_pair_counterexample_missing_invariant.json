@@ -192,6 +192,27 @@
     "first_odd_invariant": "c_234 in degree 3",
     "c_234_generic_value": "2110176/7",
     "conductor": "zero",
-    "at_F": "tau(F) is the diag(1,-1) PGL2 translate of F"
+    "at_F": "tau(F) is the diag(1,-1) PGL2 translate of F",
+    "local_quotient_tangent_eigenspace_dimensions_at_F": {
+      "plus": 14,
+      "minus": 8
+    },
+    "all_moment_fiber_quotient_tangent_eigenspaces_at_F": {
+      "plus": 2,
+      "minus": 8
+    },
+    "first_odd_invariant_dimensions": {
+      "End(Sym^2)_degree_6": 1,
+      "End(Sym^3)_degree_4": 3,
+      "End(Sym^4)_degree_3": 1
+    },
+    "degree_of_d2_first_six_moment_parameter_map": 10,
+    "d2_mu7_not_in_first_six_parameter_ring_certificate": {
+      "prime": 1000003,
+      "weighted_degree_seven_monomial_count": 14,
+      "evaluation_rank_with_mu7": 15,
+      "determinant_mod_prime": 607765
+    },
+    "degree_of_d2_full_moment_field": 2
   }
 }

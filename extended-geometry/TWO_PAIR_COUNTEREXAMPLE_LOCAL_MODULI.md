@@ -383,6 +383,33 @@ Thus \(\tau(F)\) is the
 so every odd invariant vanishes there.  The degree-two separator
 \(I_2\) is \(\tau\)-even.
 
+Composing \(\tau\) with that translate gives a linear involution
+\(\sigma\) fixing \(F\).  Its eigenspaces on \(V_4\) have dimensions
+\[
+ \dim V_4^+=15,\qquad \dim V_4^-=10.
+ \tag{4.31}
+\]
+The three-dimensional orbit tangent splits as \(1+2\), so the
+orbit-normal space \(V_4/\mathfrak {sl}_2F\) splits as
+\[
+ 14+8.
+ \tag{4.32}
+\]
+Every moment differential at \(F\) is \(\sigma\)-even.  The exact
+all-order rank calculation in Section 3 becomes
+\[
+\begin{array}{c|cc}
+&+&-\\ \hline
+\text{rank of the moment differential}&12&0\\
+\text{moment-fiber tangent modulo the orbit}&2&8.
+\end{array}
+\tag{4.33}
+\]
+Thus eight of the ten quotient-tangent directions in the all-moment fiber
+are forced before any Hopf-specific calculation: pure moments cannot see
+the apolar-odd normal directions.  Only the remaining two even directions
+come from additional degeneracy of the moment map at this special point.
+
 Despite the full transcendence degree, \(R_4\) is not integral over
 \({\cal A}\).  Indeed, if the homogeneous positive-degree element \(I_2\)
 were integral, graded integrality would give a homogeneous monic equation
@@ -397,7 +424,7 @@ The conductor is now determined exactly:
 \[
  ({\cal A}:R_4)=\{a\in{\cal A}:aR_4\subset{\cal A}\}
  =0.
- \tag{4.31}
+ \tag{4.34}
 \]
 Indeed, if \(0\ne a\) belonged to the conductor, then for every
 \(r\in R_4\) one would have \(ar\in{\cal A}\), hence
@@ -467,6 +494,17 @@ ideal
 Thus the seven quadrics define a degree-three nonreduced thickening of one
 five-plane.  In particular, the reduced quadratic tangent cone modulo
 orbit and scaling is linear rather than a union of nonlinear branches.
+The apolar involution gives this plane a sharper structure:
+\[
+ \boxed{\dim L^+=1,\qquad\dim L^-=4,}
+ \tag{5.7}
+\]
+where \(L\) denotes the five-plane (5.6).  Restoring the even radial
+direction, the reduced quadratic tangent cone modulo the orbit has split
+\(2+4\).  Comparing with (4.33), the quadratic obstructions leave both
+even moment-fiber directions and cut the eight odd directions down to
+four.  This isolates the first nonlinear obstruction entirely inside the
+apolar-odd excess.
 
 ### 5.2 Every reduced direction lifts through cubic order
 
@@ -475,7 +513,7 @@ the artifact.  At the next order write
 \[
  X(\epsilon)
  =F+\epsilon H+\epsilon^2K+\epsilon^3L+O(\epsilon^4).
-\tag{5.7}
+\tag{5.8}
 \]
 After division by \(r+1\), the coefficient of \(\epsilon^3\) in moment
 \(r+1\) is
@@ -483,7 +521,7 @@ After division by \(r+1\), the coefficient of \(\epsilon^3\) in moment
  \ell_r(L)
  +r\mathcal E_2(HKF^{r-1})
  +\frac{r(r-1)}6\mathcal E_2(H^3F^{r-2}).
-\tag{5.8}
+\tag{5.9}
 \]
 Use the first twelve equations to choose a particular quadratic part of
 \(K\).  Its remaining tangent part has thirteen coordinates.  Substitution
@@ -500,15 +538,33 @@ coefficient replay stored by the checker.  Hence
 \[
 \boxed{\text{every point of the reduced five-plane (5.6) lifts through
 order }\epsilon^3.}
-\tag{5.9}
+\tag{5.10}
 \]
 This includes every rank-drop boundary of the generic two-equation cubic
 system; it is not only a generic-chart statement.
 
+The \(1+4\) apolar split gives an immediate computational compression.
+The tangent space in which the correction is chosen has split \(3+10\).
+For a quadratic equivariant correction, the source monomials split as
+\[
+ \dim(\operatorname{Sym}^2L)^+=11,\qquad
+ \dim(\operatorname{Sym}^2L)^-=4.
+ \tag{5.11}
+\]
+Thus the \(195\) unrestricted correction coefficients reduce to
+\[
+ 11\cdot3+4\cdot10=73.
+ \tag{5.12}
+\]
+Only the eleven even cubic scalar monomials can occur in each of the
+fourteen replay orders, reducing the existing \(490\) equations to
+\(14\cdot11=154\).  The already-certified solution may be averaged under
+\(\sigma\), so this smaller \(154\) by \(73\) system is guaranteed to be
+consistent.
+
 Consequently neither the quadratic nor cubic obstruction proves rigidity
-modulo scaling.  The first unresolved equations are the fourth-order
-coefficients, which contain \(K^2\), \(H^2K\), \(HL\), and \(H^4\).
-More precisely, for
+modulo scaling.  The fourth-order coefficients contain \(K^2\), \(H^2K\),
+\(HL\), and \(H^4\).  More precisely, for
 \[
 X(\epsilon)
 =F+\epsilon H+\epsilon^2K+\epsilon^3L+\epsilon^4M+O(\epsilon^5),
@@ -523,13 +579,166 @@ is
  &+\frac{r(r-1)}2\mathcal E_2(H^2KF^{r-2})
   +\frac{r(r-1)(r-2)}{24}\mathcal E_2(H^4F^{r-3}).
 \end{aligned}
-\tag{5.10}
+\tag{5.13}
 \]
-A direct universal expansion produces \(980\) quartic coefficient
-equations for \(455\) cubic correction coefficients, but naive expanded
-symbolic contraction is not a practical verifier.  The next computation
-should retain the five-plane coordinates in a sparse coefficient module
-and apply the all-order tail reduction before polynomial expansion.
+Equivariance reduces the cubic correction space to
+\[
+ 11\cdot3+24\cdot10=273
+ \tag{5.14}
+\]
+coefficients, because
+\((\operatorname{Sym}^3L)^+\) and
+\((\operatorname{Sym}^3L)^-\) have dimensions \(11\) and \(24\).
+There are only
+\[
+ 1+10+35=46
+ \tag{5.15}
+\]
+even quartic monomials, according as they contain zero, two, or four odd
+parameters.  The system therefore reduces canonically to at most
+\[
+ \boxed{644\text{ equations in }273\text{ correction coefficients}.}
+ \tag{5.16}
+\]
+
+### 5.3 Fourth order: a section obstruction, but not an intrinsic one
+
+There is a small all-order subtlety at fourth order.  Reducing the four
+numerator degrees separately does not justify a cutoff, because their
+indices and polynomial prefactors in (5.13) differ.  For arbitrary
+balanced numerators \(A_d\) of degree \(d\), the relevant combined row is
+\[
+\begin{split}
+ \Phi_r={}&\mathcal E_2(A_4F^r)
+ +r\mathcal E_2(A_8F^{r-1})
+ +\frac{r(r-1)}2\mathcal E_2(A_{12}F^{r-2})\\
+&+\frac{r(r-1)(r-2)}{24}
+  \mathcal E_2(A_{16}F^{r-3}).
+\end{split}
+\tag{5.17}
+\]
+Expanding the beta sum (3.3), now in degrees \(4,8,12,16\), and removing
+the common nonzero hypergeometric factor puts every coordinate of
+\(\Phi_r\) over one denominator with numerator degree at most \(41\).
+Consequently
+\[
+ \boxed{\Phi_{12},\ldots,\Phi_{53}\text{ determine }\Phi_r
+ \text{ for every }r\geq12.}
+ \tag{5.18}
+\]
+The exact combined row rank is \(42\).  The checker uses the slightly
+redundant range \(12,\ldots,57\) and replays the resulting rank through
+order \(71\).  Thus the following conclusions concern the infinite moment
+ideal, not a finite prefix.
+
+First freeze the particular polynomial choices of \(K(h)\) and \(L(h)\)
+made in Section 5.2, and seek a cubic polynomial tangent correction to
+\(L\).  The resulting exact system has \(3220\) scalar coefficient
+equations and \(455\) unknowns.  Its coefficient and augmented ranks are
+\[
+ 90\quad\hbox{and}\quad91.
+\tag{5.19}
+\]
+Thus this convenient global section of the lower-order lifting torsor
+does not extend polynomially through fourth order.  On one generic
+two-column chart its residual determinant is a product of two linear
+forms and one quartic.  This is a **section obstruction** only: changing
+the unused tangent part of the cubic lift changes it.
+
+To test intrinsic liftability, take the nonzero reduced direction
+\[
+ (h_0,h_1,h_2,h_3,h_4)=(1,2,3,4,5)
+ \tag{5.20}
+\]
+and restore all eleven free cubic-lift parameters left after the
+third-order equations.  The fourth compatibility ideal has \(44\)
+displayed generators.  Exact characteristic-zero Gröbner reduction
+leaves one affine-linear equation and one quadric:
+\[
+ \boxed{\dim=9,\qquad\deg=2.}
+ \tag{5.21}
+\]
+The quadric has rank one and discriminant square class \(41\).  Hence the
+fiber is the union of two conjugate affine \(9\)-planes over
+\(\mathbb Q(\sqrt {41})\); it has no \(\mathbb Q\)-point but is nonempty
+over the algebraic closure.  In particular this nonradial reduced
+direction has a fourth-order lift after a quadratic scalar extension.
+Therefore fourth order still does not prove that the radial curve is the
+complete reduced local quotient.
+
+Equation (5.21) is only a four-jet statement.  It neither constructs a
+formal arc nor proves that an additional reduced component exists; the
+fifth and higher Kuranishi equations remain open.  Since
+\(\mathcal E_2(ZF^m)\ne0\) for every \(m\geq1\), each of these mixed
+contractions has nonzero constant term on any such infinitesimal lift and
+is therefore a unit in its Artin base.  The lifted jets automatically
+retain the \(Q=Z\) mixed defect.
+
+The checker chooses one point on a \(\mathbb Q(\sqrt {41})\)-component
+and reconstructs the complete jet
+\[
+ F+\epsilon H+\epsilon^2K+\epsilon^3L+\epsilon^4M.
+ \tag{5.22}
+\]
+The supports of \(H,K,L,M\) in the \(25\)-monomial basis have sizes
+\(16,13,11,9\).  Direct substitution verifies all four deformation
+coefficients through the complete \(42\)-row tail.  Thus (5.21) is backed
+by an explicit four-jet, not only a dimension computation.
+
+### 5.4 The explicit nonradial four-jet is obstructed at fifth order
+
+For a fifth correction \(N\), the coefficient of \(\epsilon^5\) in
+moment \(r+1\), divided by \(r+1\), is
+\[
+\begin{aligned}
+\ell_r(N)
+{}&+r\mathcal E_2((HM+KL)F^{r-1})\\
+&+\frac{r(r-1)}2\mathcal E_2((H^2L+HK^2)F^{r-2})\\
+&+\frac{r(r-1)(r-2)}6\mathcal E_2(H^3KF^{r-3})\\
+&+\frac{r(r-1)(r-2)(r-3)}{120}
+  \mathcal E_2(H^5F^{r-4}).
+\end{aligned}
+\tag{5.23}
+\]
+The combined beta reduction now involves numerator degrees
+\(4,8,12,16,20\).  After removing the common hypergeometric factor, its
+common numerator degree is at most \(55\).  Hence the \(56\) rows
+\[
+ r=12,\ldots,67
+ \tag{5.24}
+\]
+are all-order complete; their exact rank remains \(56\), with replay
+through \(r=80\).
+
+Restore the entire \(13\)-dimensional tangent freedom in \(M\).  On the
+explicit four-jet (5.22), the fifth compatibility matrix and its
+augmentation have ranks
+\[
+ \boxed{2\quad\hbox{and}\quad3.}
+ \tag{5.25}
+\]
+There is a particularly short exact left obstruction.  In primitive
+integer normalization its support on the residual rows
+\((r=12,13,14)\) is
+\[
+ \boxed{(2727113757934325760,\,-407042494824,\,17047).}
+ \tag{5.26}
+\]
+It annihilates all thirteen fourth-tangent columns and pairs nontrivially
+with the constant fifth defect.  The pairing and its nonzero quadratic
+norm are stored exactly.  Conjugation sends the certificate to the
+conjugate explicit four-jet and leaves the norm nonzero.  Therefore
+\[
+\boxed{\text{both explicit conjugate nonradial four-jets fail at fifth
+order}.}
+\tag{5.27}
+\]
+
+This does not eliminate the two affine \(9\)-planes in (5.21): their
+other points change \(K,L,M\), and the fifth obstruction may vanish on a
+proper subvariety.  The next intrinsic calculation is the fifth
+compatibility ideal over one whole \(\mathbb Q(\sqrt {41})\)-component,
+followed by descent of its conjugate pair.
 
 ## 6. An exact positive-dimensional local quotient
 
@@ -598,6 +807,8 @@ Run
 
 ```bash
 .venv/bin/python scripts/verify_two_pair_counterexample_local_moduli.py
+.venv/bin/python scripts/verify_two_pair_counterexample_fourth_order.py
+.venv/bin/python scripts/verify_two_pair_counterexample_fifth_order.py
 ```
 
 The checker verifies the stabilizer, invariant, orbit tangent, exact
@@ -607,3 +818,10 @@ the polynomial cubic lift of every reduced direction, the polynomial
 family, and its pure and mixed identities.  It writes the exact matrices,
 quadrics, and correction formulas to
 `artifacts/generated-results/two_pair_counterexample_local_moduli.json`.
+The second checker verifies the combined all-order fourth tail, the
+obstructed polynomial section, and the nonradial fourth-order lift.  It
+writes
+`artifacts/generated-results/two_pair_counterexample_fourth_order.json`.
+The third reconstructs an explicit \(\mathbb Q(\sqrt {41})\)-valued
+four-jet and supplies its three-row all-order fifth obstruction in
+`artifacts/generated-results/two_pair_counterexample_fifth_order.json`.

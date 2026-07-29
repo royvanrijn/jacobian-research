@@ -263,6 +263,15 @@ verify-minimal-boundary:
 	$(PYTHON) scripts/verify_cubic_gauge_straightening.py
 	$(PYTHON) scripts/verify_cubic_gauge_first_obstruction.py
 
+verify-cubic-quartic-tangent-saturation:
+	$(PYTHON) scripts/verify_cubic_symbol_quartic_tangent_saturation.py
+
+verify-smooth-cubic-quartic-plane-saturation:
+	$(PYTHON) scripts/verify_smooth_cubic_quartic_plane_saturation.py
+
+verify-smooth-cubic-quartic-three-space-saturation:
+	$(PYTHON) scripts/verify_smooth_cubic_quartic_three_space_saturation.py
+
 verify-contact-r6:
 	$(PYTHON) scripts/verify_contact_resultant_r6_effective.py
 
@@ -464,6 +473,7 @@ verify-two-real-gmc:
 verify-sic2c4:
 	$(PYTHON) scripts/verify_two_pair_image_mathieu_counterexample.py
 	$(SYSTEM_PYTHON) scripts/audit_two_pair_image_mathieu_coefficient_extraction.py
+	$(PYTHON) scripts/verify_two_pair_sic_characteristic_p.py
 	cd formal/finite-etale-keller && lake build FiniteEtaleKeller.SIC2C4FiniteSum
 
 verify-counterexample-scoreboard: verify-two-real-gmc verify-sic2c4

@@ -2,6 +2,13 @@
 
 ## Status
 
+This calculation is pinned to the July 24 arXiv v1 representative
+\(\Psi=A^2+11A+2B\).  The current v2 uses
+\(\Psi=A^2+13A+2B\), whose collision lies at \(y=0\).  Both belong to the
+same constant-Hessian family.  The version relation and the general theorem
+behind the first descent are recorded in the
+[Meng--Yang Schur-descent bridge](MENG_YANG_SCHUR_DESCENT_BRIDGE.md).
+
 This note records an exact nonlinear one-variable reduction of the
 Meng--Yang five-variable Hessian counterexample.  It succeeds in producing a
 polynomial unit pivot and, after a relative toric correction, a
@@ -11,7 +18,10 @@ polynomial automorphism, so the Meng--Yang collision cannot survive.
 
 This is a restricted obstruction.  It does not settle `HC_4` and does not
 exclude non-toric symplectic changes, non-coordinate coisotropic embeddings,
-or higher-degree critical equations.
+or mixed \(w\)-dependent critical equations.  Pure univariate
+higher-degree repairs add nothing: a polynomial solution of
+\(R'(t)=A(w)\) forces \(R\) to be quadratic, as proved in
+[the Schur-descent continuation note](SCHUR_DESCENT_CONTINUATIONS.md).
 
 ## 1. A polynomial unit-pivot coordinate
 

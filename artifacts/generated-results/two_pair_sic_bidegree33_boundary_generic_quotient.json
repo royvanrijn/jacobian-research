@@ -1,35 +1,534 @@
 {
-  "certificates": [
-    {
-      "denominator_factors": [
-        "s1*t0-t1",
-        "s1^2-s2-(13/3)*t0^2"
+  "characteristic_zero_certificate": {
+    "j_divisor_modular_replays": [
+      {
+        "prime": 47,
+        "roots_of_minus_30420": [
+          6,
+          41
+        ],
+        "scope": "generic rational-function-field reconstruction evidence on both split J components; not a characteristic-zero theorem",
+        "split_component_replays": {
+          "41": {
+            "initial_ideal": [
+              "s5^2",
+              "t4^3",
+              "s5*t4^2"
+            ],
+            "quotient_length": 5,
+            "standard_basis": [
+              "1",
+              "t4",
+              "t4^2",
+              "s5",
+              "s5*t4"
+            ]
+          },
+          "6": {
+            "initial_ideal": [
+              "s5^2",
+              "t4^3",
+              "s5*t4^2"
+            ],
+            "quotient_length": 5,
+            "standard_basis": [
+              "1",
+              "t4",
+              "t4^2",
+              "s5",
+              "s5*t4"
+            ]
+          }
+        }
+      },
+      {
+        "prime": 101,
+        "roots_of_minus_30420": [
+          48,
+          53
+        ],
+        "scope": "generic rational-function-field reconstruction evidence on both split J components; not a characteristic-zero theorem",
+        "split_component_replays": {
+          "48": {
+            "initial_ideal": [
+              "s5^2",
+              "t4^3",
+              "s5*t4^2"
+            ],
+            "quotient_length": 5,
+            "standard_basis": [
+              "1",
+              "t4",
+              "t4^2",
+              "s5",
+              "s5*t4"
+            ]
+          },
+          "53": {
+            "initial_ideal": [
+              "s5^2",
+              "t4^3",
+              "s5*t4^2"
+            ],
+            "quotient_length": 5,
+            "standard_basis": [
+              "1",
+              "t4",
+              "t4^2",
+              "s5",
+              "s5*t4"
+            ]
+          }
+        }
+      }
+    ],
+    "j_divisor_mu3_point": {
+      "J_zero": true,
+      "L_Q_H_nonzero": true,
+      "base_point": {
+        "L": "1",
+        "Q": "(sqrt(-30420)-155)/99",
+        "s1": "1",
+        "s3": "beta",
+        "t0": "1",
+        "t2": "0"
+      },
+      "field_generator": "beta",
+      "initial_ideal": [
+        "s5^2",
+        "t4^3",
+        "s5*t4^2"
       ],
-      "denominator_products": [
-        "L*Q",
-        "L*Q^2"
+      "minimal_polynomial": "441554190069069*beta^4+15795130399581456*beta^3+193851580108553334*beta^2+319468919863825776*beta+1067521643767708429",
+      "minimal_polynomial_degree": 4,
+      "minimal_polynomial_irreducible_over_QQ": true,
+      "mu3_zero": true,
+      "quotient_length": 5,
+      "scope": "one exact quartic-number-field special fiber on mu3=J=0; this proves nonemptiness of the characteristic-zero rank-five locus, not generic rank five on J=0",
+      "sqrt_minus_30420_representation": "3*(1026265600730531007*beta^3+41799868694363859156*beta^2+506411570533205547441*beta+545569851002913527492)/18525795986003750110",
+      "standard_basis": [
+        "1",
+        "t4",
+        "t4^2",
+        "s5",
+        "s5*t4"
+      ]
+    },
+    "principal_base_resultant": {
+      "adapted_base_parameters": [
+        "s1",
+        "t0",
+        "L",
+        "Q"
       ],
+      "eliminated_variable": "t2",
+      "first_remaining_mu6_coefficients": [
+        "s5*t4",
+        "t4^2"
+      ],
+      "first_remaining_mu6_degrees_in_s3": [
+        3,
+        3
+      ],
+      "first_residual_factor_degree": 63,
+      "first_residual_factor_terms_over_QQ": 6702,
+      "first_resultant_degree": 75,
+      "first_resultant_factorization": "L^6*Q^6*R63",
+      "first_resultant_sha256": "dcd0401a919bf53fdc99e7a50a2af6e3fdd53a4259821771bc4586e5647ccb29",
+      "generic_gcd_degree": 0,
+      "linear_subresultant_coefficient_degree": 60,
+      "linear_subresultant_coefficient_sha256": "6cf7b6f8b0f55085fc0faf12525e83b62e369b55329d86d90673a1feeb456dae",
+      "linear_subresultant_constant_degree": 63,
+      "linear_subresultant_constant_sha256": "a86831cf6dfdccb6dec33931304129aa59d33142bc9d70e97cc65f55bfdafc6b",
+      "linear_subresultant_gcd_with_R63": {
+        "V0": "1",
+        "V1": "1"
+      },
+      "linear_subresultant_identity": "V1*s3+V0=0",
+      "linear_subresultant_modular_terms": {
+        "101": {
+          "V0": 5127,
+          "V1": 2090
+        },
+        "47": {
+          "V0": 5083,
+          "V1": 2074
+        }
+      },
+      "linear_subresultant_pivot": "s3=-V0/V1 on V1!=0",
+      "linear_subresultant_terms_over_QQ": {
+        "V0": 5170,
+        "V1": 2105
+      },
+      "mu3_polynomial_degree_in_s3": 3,
+      "mu3_polynomial_terms": 642,
+      "mu3_polynomial_total_degree": 21,
+      "residual_factor_irreducible_modulo": [
+        47,
+        101
+      ],
+      "residual_factor_modular_terms": {
+        "101": 6633,
+        "47": 6565
+      },
+      "residual_resultants_gcd": "1",
+      "scope": "exact QQ resultant with degree-preserving irreducible reductions; the first two residual resultants are coprime and the first resultant divisor has a dense linear s3 pivot, but the codimension-two intersection is not excluded",
+      "second_residual_factor_degree": 66,
+      "second_residual_factor_irreducible_modulo": [
+        47,
+        101
+      ],
+      "second_residual_factor_modular_terms": {
+        "101": 7038,
+        "47": 6951
+      },
+      "second_residual_factor_terms_over_QQ": 7108,
+      "second_resultant_degree": 81,
+      "second_resultant_factor": "L^9*Q^6*T66",
+      "second_resultant_sha256": "4b9de2bf8d729e804ab1a5e0b9092e2fa97f55b97395eaa0455e1bdfb866215c",
+      "t2_denominator": "93366*L*Q"
+    },
+    "principal_open": {
+      "adapted_coordinate_identities": {
+        "H": "32*J+1179*Q*W",
+        "J": "W^2+30420*L^2",
+        "W": "99*Q+155*t0^2",
+        "consequence": "(J,H):(L*Q)^infinity=(1)"
+      },
+      "field": "QQ(s1,s2,s3,t0,t1,t2)",
       "groebner_basis_size": 3,
+      "groebner_leading_coefficient_factors": [
+        "Q",
+        "L",
+        "J"
+      ],
+      "leading_exponents_s5_t4": [
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          4
+        ]
+      ],
+      "mu6_denominator_factors": [
+        "L",
+        "Q"
+      ],
       "mu6_remainder_terms": 6,
+      "mu6_t4_cubed_denominator": "39*L*Q",
+      "mu6_t4_cubed_numerator_terms": 42,
+      "mu6_t4_cubed_t2_derivative": "-100078239744000",
+      "mu7_additional_divisor": "9801*s1**4 - 19602*s1**2*s2 - 23832*s1**2*t0**2 - 60840*s1*t0*t1 + 9801*s2**2 + 54252*s2*t0**2 + 75076*t0**4 + 30420*t1**2",
+      "mu7_denominator_factors": [
+        "L",
+        "Q",
+        "J"
+      ],
       "mu7_remainder_terms": 6,
+      "quotient_length": 6,
+      "s3_pivot": "430353*s1**4 - 860706*s1**2*s2 - 1591461*s1**2*t0**2 - 1946880*s1*t0*t1 + 430353*s2**2 + 2564901*s2*t0**2 + 3802298*t0**4 + 973440*t1**2",
+      "standard_basis": [
+        "1",
+        "t4",
+        "t4^2",
+        "t4^3",
+        "s5",
+        "s5*t4"
+      ]
+    },
+    "special_divisors": [
+      {
+        "groebner_basis_size": 2,
+        "leading_exponents_s5_t4": [
+          [
+            2,
+            0
+          ],
+          [
+            0,
+            3
+          ]
+        ],
+        "mu6_remainder_terms": 6,
+        "mu7_remainder_terms": 6,
+        "quotient_length": 6,
+        "standard_basis": [
+          "1",
+          "t4",
+          "t4^2",
+          "s5",
+          "s5*t4",
+          "s5*t4^2"
+        ],
+        "stratum": "L=0"
+      },
+      {
+        "groebner_basis_size": 3,
+        "leading_exponents_s5_t4": [
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            3,
+            0
+          ]
+        ],
+        "mu6_remainder_terms": 5,
+        "mu7_remainder_terms": 5,
+        "quotient_length": 5,
+        "standard_basis": [
+          "1",
+          "t4",
+          "t4^2",
+          "s5",
+          "s5^2"
+        ],
+        "stratum": "Q=0"
+      },
+      {
+        "groebner_basis_size": 3,
+        "leading_exponents_s5_t4": [
+          [
+            0,
+            2
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            0
+          ]
+        ],
+        "mu6_remainder_terms": 5,
+        "mu7_remainder_terms": 5,
+        "quotient_length": 5,
+        "standard_basis": [
+          "1",
+          "t4",
+          "s5",
+          "s5*t4",
+          "s5^2"
+        ],
+        "stratum": "L=Q=0"
+      }
+    ]
+  },
+  "modular_replays": [
+    {
       "prime": 47,
-      "quotient_length": 6
+      "principal_open": {
+        "groebner_basis_size": 3,
+        "mu6_denominator_factors": [
+          "s1*t0-t1",
+          "s1^2-s2-(13/3)*t0^2"
+        ],
+        "mu6_denominator_products": [
+          "L*Q",
+          "L*Q^2"
+        ],
+        "mu6_remainder_terms": 6,
+        "mu7_remainder_terms": 6,
+        "prime": 47,
+        "quotient_length": 6
+      },
+      "special_divisors": [
+        {
+          "groebner_basis_size": 2,
+          "leading_exponents_s5_t4": [
+            [
+              2,
+              0
+            ],
+            [
+              0,
+              3
+            ]
+          ],
+          "mu6_remainder_terms": 6,
+          "mu7_remainder_terms": 6,
+          "quotient_length": 6,
+          "standard_basis": [
+            "1",
+            "t4",
+            "t4^2",
+            "s5",
+            "s5*t4",
+            "s5*t4^2"
+          ],
+          "stratum": "L=0"
+        },
+        {
+          "groebner_basis_size": 3,
+          "leading_exponents_s5_t4": [
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              3,
+              0
+            ]
+          ],
+          "mu6_remainder_terms": 5,
+          "mu7_remainder_terms": 5,
+          "quotient_length": 5,
+          "standard_basis": [
+            "1",
+            "t4",
+            "t4^2",
+            "s5",
+            "s5^2"
+          ],
+          "stratum": "Q=0"
+        },
+        {
+          "groebner_basis_size": 3,
+          "leading_exponents_s5_t4": [
+            [
+              0,
+              2
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              0
+            ]
+          ],
+          "mu6_remainder_terms": 5,
+          "mu7_remainder_terms": 5,
+          "quotient_length": 5,
+          "standard_basis": [
+            "1",
+            "t4",
+            "s5",
+            "s5*t4",
+            "s5^2"
+          ],
+          "stratum": "L=Q=0"
+        }
+      ]
     },
     {
-      "denominator_factors": [
-        "s1*t0-t1",
-        "s1^2-s2-(13/3)*t0^2"
-      ],
-      "denominator_products": [
-        "L*Q",
-        "L*Q^2"
-      ],
-      "groebner_basis_size": 3,
-      "mu6_remainder_terms": 6,
-      "mu7_remainder_terms": 6,
       "prime": 101,
-      "quotient_length": 6
+      "principal_open": {
+        "groebner_basis_size": 3,
+        "mu6_denominator_factors": [
+          "s1*t0-t1",
+          "s1^2-s2-(13/3)*t0^2"
+        ],
+        "mu6_denominator_products": [
+          "L*Q",
+          "L*Q^2"
+        ],
+        "mu6_remainder_terms": 6,
+        "mu7_remainder_terms": 6,
+        "prime": 101,
+        "quotient_length": 6
+      },
+      "special_divisors": [
+        {
+          "groebner_basis_size": 2,
+          "leading_exponents_s5_t4": [
+            [
+              2,
+              0
+            ],
+            [
+              0,
+              3
+            ]
+          ],
+          "mu6_remainder_terms": 6,
+          "mu7_remainder_terms": 6,
+          "quotient_length": 6,
+          "standard_basis": [
+            "1",
+            "t4",
+            "t4^2",
+            "s5",
+            "s5*t4",
+            "s5*t4^2"
+          ],
+          "stratum": "L=0"
+        },
+        {
+          "groebner_basis_size": 3,
+          "leading_exponents_s5_t4": [
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              3,
+              0
+            ]
+          ],
+          "mu6_remainder_terms": 5,
+          "mu7_remainder_terms": 5,
+          "quotient_length": 5,
+          "standard_basis": [
+            "1",
+            "t4",
+            "t4^2",
+            "s5",
+            "s5^2"
+          ],
+          "stratum": "Q=0"
+        },
+        {
+          "groebner_basis_size": 3,
+          "leading_exponents_s5_t4": [
+            [
+              0,
+              2
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              0
+            ]
+          ],
+          "mu6_remainder_terms": 5,
+          "mu7_remainder_terms": 5,
+          "quotient_length": 5,
+          "standard_basis": [
+            "1",
+            "t4",
+            "s5",
+            "s5*t4",
+            "s5^2"
+          ],
+          "stratum": "L=Q=0"
+        }
+      ]
     }
   ],
-  "scope": "exact rational-function-field calculations in two finite characteristics; reconstruction evidence, not a QQ unit certificate"
+  "scope": "exact characteristic-zero rational-function-field quotient certificates with two modular replays; not a full boundary unit certificate"
 }

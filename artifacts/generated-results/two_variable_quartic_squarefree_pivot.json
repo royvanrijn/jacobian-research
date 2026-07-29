@@ -1,0 +1,84 @@
+{
+  "format": "two-variable-quartic-squarefree-pivot-v2",
+  "field": "characteristic zero",
+  "symbol": "u*v*(u-v)*(u-lambda*v)",
+  "chart": "e=1 after eliminating b with mu_1",
+  "mu_2_pivot": "5*c - 5*d*lam - 5*d + 2*lam**2 + 8*lam + 2",
+  "pivot_boundary": {
+    "status": "excluded over Q(lambda)",
+    "certificate": "unit ideal from mu_2,...,mu_6"
+  },
+  "expected_affine_ideal": [
+    "8*c-3*d^2",
+    "d*(d-4)*(d-4*lambda)"
+  ],
+  "expected_points": [
+    [
+      "0",
+      "0"
+    ],
+    [
+      "6",
+      "4"
+    ],
+    [
+      "6*lambda^2",
+      "4*lambda"
+    ]
+  ],
+  "cubic_factor_multiplicities_in_mu_3_through_mu_6": [
+    1,
+    1,
+    2,
+    2
+  ],
+  "generic_radical_decomposition": {
+    "pairwise_c_resultant_gcd": "d*(d-4)*(d-4*lambda)*q_lambda(d)^6",
+    "extra_quadratic": "d**2*(25*lam**4 - 50*lam**3 + 75*lam**2 - 50*lam + 25) + d*(100*lam**5 - 350*lam**4 + 100*lam**3 + 100*lam**2 - 350*lam + 100) - 44*lam**6 - 68*lam**5 + 386*lam**4 + 208*lam**3 + 386*lam**2 - 68*lam - 44",
+    "extra_component": "p^3=0, hence absent on p nonzero",
+    "remaining_branches": [
+      [
+        "d=0",
+        "c=0"
+      ],
+      [
+        "d=4",
+        "c=6"
+      ],
+      [
+        "d=4*lambda",
+        "c=6*lambda^2"
+      ]
+    ],
+    "status": "generic squarefree fiber equals the annihilator sections"
+  },
+  "closed_special_squarefree_orbits": {
+    "pivot_annihilator_orbit": {
+      "minimal_polynomial": "lam^2+4*lam+1",
+      "projective_fiber_degree": 4,
+      "radical": "four annihilator sections",
+      "radical_power_certificate": 8
+    },
+    "equianharmonic_orbit": {
+      "minimal_polynomial": "lam^2-lam+1",
+      "projective_fiber_degree": 4,
+      "radical": "four annihilator sections",
+      "radical_power_certificate": 8
+    },
+    "branch_quartic_orbit": {
+      "minimal_polynomial": "22*lam^4-54*lam^3+lam^2-54*lam+22",
+      "projective_fiber_degree": 4,
+      "radical": "four annihilator sections",
+      "radical_power_certificate": 8
+    }
+  },
+  "harmonic_orbit": "closed separately by the exact lambda=2 anchor certificate",
+  "pivot_boundary_exceptional_gcd": "lam**4*(lam - 1)**4*(lam**2 - 6*lam + 6)*(lam**2 + 4*lam + 1)*(6*lam**2 - 6*lam + 1)",
+  "expected_branch_exceptional_gcds": {
+    "d_zero": "lam**4*(lam - 1)**4*(lam**2 + 4*lam + 1)**2*(22*lam**4 - 54*lam**3 + lam**2 - 54*lam + 22)**6",
+    "d_four": "lam**4*(lam - 1)**4*(lam**2 - 6*lam + 6)**2*(22*lam**4 - 34*lam**3 - 29*lam**2 + 126*lam - 63)**6",
+    "d_four_lambda": "lam**4*(lam - 1)**4*(6*lam**2 - 6*lam + 1)**2*(63*lam**4 - 126*lam**3 + 29*lam**2 + 34*lam - 22)**6"
+  },
+  "remaining_exact_gate": "prove that specialization of the residual pairwise-resultant gcd introduces no squarefree orbit beyond the already closed harmonic and equianharmonic orbits; two-prime degree-jump screens support this but are not a proof",
+  "written_source": "extended-geometry/TWO_PAIR_SIC_BIDEGREE44_RANK_FRONTIER.md"
+}

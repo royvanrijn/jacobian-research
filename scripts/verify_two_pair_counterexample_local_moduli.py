@@ -492,6 +492,73 @@ def main() -> None:
     )
     residual_h = residual_vectors * sp.Matrix(residual_parameters)
 
+    # The apolar adjoint, composed with diag(1,-1), fixes F.  It explains
+    # eight of the ten all-moment quotient-tangent directions and splits
+    # the reduced quadratic plane into one even and four odd directions
+    # after quotienting by the orbit and radial line.
+    apolar = sp.zeros(5)
+    for index, value in enumerate(
+        (1, -sp.Rational(1, 4), sp.Rational(1, 6), -sp.Rational(1, 4), 1)
+    ):
+        apolar[index, 4 - index] = value
+    parity = sp.diag(1, -1, 1, -1, 1)
+    local_involution = sp.zeros(25)
+    for basis_index in range(25):
+        basis_coefficient = sp.zeros(5)
+        basis_coefficient[basis_index // 5, basis_index % 5] = 1
+        basis_operator = basis_coefficient.T * factorial_diagonal
+        transformed_operator = (
+            parity
+            * apolar.inv()
+            * basis_operator.T
+            * apolar
+            * parity
+        )
+        transformed_coefficient = (
+            factorial_diagonal.inv() * transformed_operator.T
+        )
+        local_involution[:, basis_index] = sp.Matrix(
+            [
+                transformed_coefficient[row, column]
+                for row in range(5)
+                for column in range(5)
+            ]
+        )
+    assert local_involution**2 == sp.eye(25)
+    assert local_involution * radial_vector == radial_vector
+    assert first_rows * local_involution == first_rows
+    plus_space = sp.Matrix.hstack(
+        *(local_involution - sp.eye(25)).nullspace()
+    )
+    minus_space = sp.Matrix.hstack(
+        *(local_involution + sp.eye(25)).nullspace()
+    )
+    assert (plus_space.cols, minus_space.cols) == (15, 10)
+    orbit_plus_rank = ((sp.eye(25) + local_involution) * orbit_radial[:, :3]).rank()
+    orbit_minus_rank = ((sp.eye(25) - local_involution) * orbit_radial[:, :3]).rank()
+    assert (orbit_plus_rank, orbit_minus_rank) == (1, 2)
+    quotient_fiber_eigenspaces = (
+        plus_space.cols - (first_rows * plus_space).rank() - orbit_plus_rank,
+        minus_space.cols - orbit_minus_rank,
+    )
+    assert quotient_fiber_eigenspaces == (2, 8)
+    assert sp.Matrix.hstack(
+        orbit_radial, residual_vectors, local_involution * residual_vectors
+    ).rank() == sp.Matrix.hstack(orbit_radial, residual_vectors).rank()
+    reduced_plane_eigenspaces = (
+        sp.Matrix.hstack(
+            orbit_radial,
+            (sp.eye(25) + local_involution) * residual_vectors,
+        ).rank()
+        - orbit_radial.rank(),
+        sp.Matrix.hstack(
+            orbit_radial,
+            (sp.eye(25) - local_involution) * residual_vectors,
+        ).rank()
+        - orbit_radial.rank(),
+    )
+    assert reduced_plane_eigenspaces == (1, 4)
+
     residual_q = [sp.Integer(0)]
     for order in range(1, 12):
         residual_q.append(
@@ -779,9 +846,17 @@ def main() -> None:
         "quotient_quadratic_scheme": {
             "dimension": 5,
             "degree": 3,
+            "apolar_adjoint_eigenspace_dimensions": {
+                "even": reduced_plane_eigenspaces[0],
+                "odd": reduced_plane_eigenspaces[1],
+            },
             "radical_linear_forms": [
                 str(polynomial) for polynomial in radical_linear_forms
             ],
+        },
+        "all_moment_fiber_quotient_tangent_eigenspaces": {
+            "even": quotient_fiber_eigenspaces[0],
+            "odd": quotient_fiber_eigenspaces[1],
         },
         "reduced_quadratic_cone_parameter_order": [
             str(parameter) for parameter in residual_parameters
@@ -820,7 +895,10 @@ def main() -> None:
     print("PASS local SIC2C4: effective stabilizer is trivial and orbit dimension is 3")
     print("PASS local SIC2C4: all-order moment tangent has dimension 13")
     print("PASS local SIC2C4: seven independent quadratic lifting obstructions")
-    print("PASS local SIC2C4: reduced quadratic cone is a five-plane")
+    print(
+        "PASS local SIC2C4: reduced quadratic cone is a five-plane "
+        "with apolar split 1+4"
+    )
     print("PASS local SIC2C4: every reduced direction lifts through third order")
     print("PASS local SIC2C4: F_ab is an all-order defect-preserving family")
     print(f"PASS local SIC2C4: wrote {OUTPUT.relative_to(ROOT)}")

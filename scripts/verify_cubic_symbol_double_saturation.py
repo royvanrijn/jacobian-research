@@ -34,6 +34,7 @@ BASE_VARIABLES = (x, y, z)
 RELATION = sp.Matrix((z, -y, x))
 STANDARD_BASIS = tuple(sp.eye(3).col(index) for index in range(3))
 POLARIZATION_VARIABLES = sp.symbols("polarization_0:3")
+FACTOR_SINGULAR_EXPRESSIONS = True
 
 
 def homogeneous_monomials(degree: int) -> list[sp.Expr]:
@@ -338,7 +339,12 @@ def differential_relations(
 
 
 def singular_polynomial(expression: sp.Expr) -> str:
-    return sp.sstr(sp.factor(expression)).replace("**", "^")
+    normalized = (
+        sp.factor(expression)
+        if FACTOR_SINGULAR_EXPRESSIONS
+        else sp.expand(expression)
+    )
+    return sp.sstr(normalized).replace("**", "^")
 
 
 def singular_vector(vector: list[sp.Expr]) -> str:
@@ -478,13 +484,18 @@ def run_singular(
     )
 
 
-def singular_family_program(cubic: sp.Expr) -> str:
+def singular_family_program(
+    cubic: sp.Expr,
+    quartic_tensor: dict[tuple[int, int, int], sp.Expr] | None = None,
+) -> str:
     """The exact family phi_h+t*psi_4 over Q[t,x,y,z]."""
 
     deformation_parameter = sp.symbols("t")
     family_tensor = {
         triple: deformation_parameter * value
-        for triple, value in generic_quartic_tensor().items()
+        for triple, value in (
+            quartic_tensor or generic_quartic_tensor()
+        ).items()
     }
     program = singular_program(cubic, family_tensor).replace(
         "ring coefficient_ring=0,(x,y,z),dp;",
@@ -523,17 +534,22 @@ def singular_family_program(cubic: sp.Expr) -> str:
     )
 
 
-def run_singular_family(cubic: sp.Expr) -> tuple[int, int, int, int, int]:
+def run_singular_family(
+    cubic: sp.Expr,
+    quartic_tensor: dict[tuple[int, int, int], sp.Expr] | None = None,
+    timeout: int | None = None,
+) -> tuple[int, int, int, int, int]:
     """Return uniform cotangent, support, multiplicity, and t-torsion data."""
 
     singular = shutil.which("Singular")
     assert singular is not None, "Singular is required for this checker"
     result = subprocess.run(
         [singular, "-q"],
-        input=singular_family_program(cubic),
+        input=singular_family_program(cubic, quartic_tensor),
         text=True,
         capture_output=True,
         check=True,
+        timeout=timeout,
     )
     wanted = {
         "SATURATION_GENERATORS",
@@ -558,9 +574,266 @@ def run_singular_family(cubic: sp.Expr) -> tuple[int, int, int, int, int]:
     )
 
 
+def run_singular_subspace(
+    cubic: sp.Expr,
+    tensors: tuple[dict[tuple[int, int, int], sp.Expr], ...],
+    timeout: int | None = None,
+) -> tuple[int, int, int, int, int]:
+    """Audit a full polynomial parameter subspace of quartic tensors."""
+
+    assert tensors
+    parameters = sp.symbols(f"p0:{len(tensors)}")
+    subspace_tensor = {
+        triple: sp.expand(
+            sum(
+                parameter * tensor[triple]
+                for parameter, tensor in zip(parameters, tensors)
+            )
+        )
+        for triple in tensors[0]
+    }
+    parameter_names = ",".join(map(str, parameters))
+    program = singular_program(cubic, subspace_tensor).replace(
+        "ring coefficient_ring=0,(x,y,z),dp;",
+        f"ring coefficient_ring=0,({parameter_names},x,y,z),dp;",
+    )
+    diagnostic_anchor = (
+        'print("EXT2_VECTOR_DIMENSION="'
+        "+string(vdim(support_ext2)));"
+    )
+    program = program.replace(
+        diagnostic_anchor,
+        diagnostic_anchor
+        + 'print("EXT2_MULTIPLICITY="+string(mult(support_ext2)));'
+        + "ideal ext2_fitting=fitting(support_ext2,0);"
+        + "ideal ext2_support=std(radical(ext2_fitting));"
+        + "ideal parameter_space=std(ideal(x,y,z));"
+        + "ideal first_support_difference=simplify("
+        + "reduce(ext2_support,parameter_space),2);"
+        + "ideal second_support_difference=simplify("
+        + "reduce(parameter_space,ext2_support),2);"
+        + 'print("PARAMETER_SPACE_DIFFERENCE="'
+        + "+string(size(first_support_difference)"
+        + "+size(second_support_difference)));"
+        + "module pruned_ext2_presentation=std(prune(support_ext2));"
+        + "module central_ext2_presentation=std(prune("
+        + "".join(f"subst(" for _ in parameters)
+        + "support_ext2"
+        + "".join(f",{parameter},0)" for parameter in parameters)
+        + "));"
+        + "module first_presentation_difference=simplify("
+        + "reduce(pruned_ext2_presentation,"
+        + "central_ext2_presentation),2);"
+        + "module second_presentation_difference=simplify("
+        + "reduce(central_ext2_presentation,"
+        + "pruned_ext2_presentation),2);"
+        + 'print("PRUNED_PRESENTATION_DIFFERENCE="'
+        + "+string(size(first_presentation_difference)"
+        + "+size(second_presentation_difference)));"
+        + 'print("PRUNED_PRESENTATION_RANK="'
+        + "+string(nrows(pruned_ext2_presentation)));",
+    )
+    singular = shutil.which("Singular")
+    assert singular is not None, "Singular is required for this checker"
+    result = subprocess.run(
+        [singular, "-q"],
+        input=program,
+        text=True,
+        capture_output=True,
+        check=True,
+        timeout=timeout,
+    )
+    wanted = {
+        "SATURATION_GENERATORS",
+        "EXT2_MULTIPLICITY",
+        "PARAMETER_SPACE_DIFFERENCE",
+        "PRUNED_PRESENTATION_DIFFERENCE",
+        "PRUNED_PRESENTATION_RANK",
+    }
+    values: dict[str, int] = {}
+    for line in result.stdout.splitlines():
+        if "=" in line:
+            key, value = line.split("=", 1)
+            if key in wanted:
+                values[key] = int(value)
+    assert set(values) == wanted, result.stdout + result.stderr
+    return (
+        values["SATURATION_GENERATORS"],
+        values["EXT2_MULTIPLICITY"],
+        values["PARAMETER_SPACE_DIFFERENCE"],
+        values["PRUNED_PRESENTATION_DIFFERENCE"],
+        values["PRUNED_PRESENTATION_RANK"],
+    )
+
+
+def run_singular_plane(
+    cubic: sp.Expr,
+    first_tensor: dict[tuple[int, int, int], sp.Expr],
+    second_tensor: dict[tuple[int, int, int], sp.Expr],
+    timeout: int | None = None,
+) -> tuple[int, int, int, int, int]:
+    """Audit a two-dimensional polynomial quartic parameter space."""
+
+    return run_singular_subspace(
+        cubic,
+        (first_tensor, second_tensor),
+        timeout,
+    )
+
+
+def run_plane_parameter_fitting(
+    cubic: sp.Expr,
+    first_tensor: dict[tuple[int, int, int], sp.Expr],
+    second_tensor: dict[tuple[int, int, int], sp.Expr],
+    timeout: int | None = None,
+) -> tuple[int, int, int]:
+    """Test S-flat rank six after m^2 truncation, S=Q[p0,p1]."""
+
+    first_parameter, second_parameter = sp.symbols("p0 p1")
+    plane_tensor = {
+        triple: sp.expand(
+            first_parameter * first_tensor[triple]
+            + second_parameter * second_tensor[triple]
+        )
+        for triple in first_tensor
+    }
+    program = singular_program(cubic, plane_tensor).replace(
+        "ring coefficient_ring=0,(x,y,z),dp;",
+        "ring coefficient_ring=0,(p0,p1,x,y,z),dp;",
+    )
+    program = program.replace(
+        "quit;",
+        "module pruned_ext2=std(prune(support_ext2));"
+        "int fitting_row,fitting_column;"
+        'print("FITTING_ROWS="+string(nrows(pruned_ext2)));'
+        'print("FITTING_COLUMNS="+string(ncols(pruned_ext2)));'
+        "module maximal_square_free="
+        "(x2+xy+xz+y2+yz+z2)*freemodule(nrows(pruned_ext2));"
+        "module maximal_square_action=simplify("
+        "reduce(maximal_square_free,pruned_ext2),2);"
+        'print("FITTING_M2_ACTION="'
+        "+string(size(maximal_square_action)));"
+        "for(fitting_column=1;"
+        "fitting_column<=ncols(pruned_ext2);"
+        "fitting_column++)"
+        "{for(fitting_row=1;"
+        "fitting_row<=nrows(pruned_ext2);"
+        "fitting_row++)"
+        "{print("
+        '"FITTING_ENTRY_"+string(fitting_row)+"_"'
+        "+string(fitting_column)+"
+        '"="+string(pruned_ext2[fitting_column][fitting_row]));}}'
+        "quit;",
+    )
+    singular = shutil.which("Singular")
+    assert singular is not None, "Singular is required for this checker"
+    result = subprocess.run(
+        [singular, "-q"],
+        input=program,
+        text=True,
+        capture_output=True,
+        check=True,
+        timeout=timeout,
+    )
+    values: dict[str, str] = {}
+    for line in result.stdout.splitlines():
+        if "=" in line:
+            key, value = line.split("=", 1)
+            if key.startswith("FITTING_"):
+                values[key] = value
+    row_count = int(values["FITTING_ROWS"])
+    column_count = int(values["FITTING_COLUMNS"])
+    maximal_square_action = int(values["FITTING_M2_ACTION"])
+    assert maximal_square_action == 0
+
+    parameter_locals = {
+        "p0": first_parameter,
+        "p1": second_parameter,
+        "x": x,
+        "y": y,
+        "z": z,
+    }
+    entries = {
+        (row, column): sp.sympify(
+            values[f"FITTING_ENTRY_{row}_{column}"].replace("^", "**"),
+            locals=parameter_locals,
+        )
+        for column in range(1, column_count + 1)
+        for row in range(1, row_count + 1)
+    }
+    truncated_basis = (sp.Integer(1), x, y, z)
+    parameter_relations: list[list[sp.Expr]] = []
+    for column in range(1, column_count + 1):
+        for multiplier in truncated_basis:
+            relation = [sp.Integer(0)] * (4 * row_count)
+            for row in range(1, row_count + 1):
+                polynomial = sp.Poly(
+                    sp.expand(multiplier * entries[row, column]),
+                    x,
+                    y,
+                    z,
+                )
+                for monomial_index, monomial in enumerate(
+                    truncated_basis
+                ):
+                    relation[
+                        4 * (row - 1) + monomial_index
+                    ] = sp.expand(polynomial.coeff_monomial(monomial))
+            if any(relation):
+                parameter_relations.append(relation)
+
+    parameter_program = f"""
+LIB "homolog.lib";
+ring parameter_ring=0,(p0,p1),dp;
+module parameter_presentation=
+{",".join(map(singular_vector, parameter_relations))};
+parameter_presentation=std(parameter_presentation);
+ideal fitting_six=std(fitting(parameter_presentation,6));
+ideal fitting_five=std(fitting(parameter_presentation,5));
+ideal fitting_six_difference=simplify(
+  reduce(ideal(1),fitting_six),2
+);
+print("FITTING_SIX_UNIT_DIFFERENCE="
+  +string(size(fitting_six_difference)));
+print("FITTING_FIVE_GENERATORS="+string(size(fitting_five)));
+quit;
+"""
+    parameter_result = subprocess.run(
+        [singular, "-q"],
+        input=parameter_program,
+        text=True,
+        capture_output=True,
+        check=True,
+        timeout=timeout,
+    )
+    parameter_values: dict[str, int] = {}
+    for line in parameter_result.stdout.splitlines():
+        if "=" in line:
+            key, value = line.split("=", 1)
+            if key in {
+                "FITTING_SIX_UNIT_DIFFERENCE",
+                "FITTING_FIVE_GENERATORS",
+            }:
+                parameter_values[key] = int(value)
+    assert set(parameter_values) == {
+        "FITTING_SIX_UNIT_DIFFERENCE",
+        "FITTING_FIVE_GENERATORS",
+    }, parameter_result.stdout + parameter_result.stderr
+    return (
+        maximal_square_action,
+        parameter_values["FITTING_SIX_UNIT_DIFFERENCE"],
+        parameter_values["FITTING_FIVE_GENERATORS"],
+    )
+
+
 @cache
-def generic_quartic_tensor() -> dict[tuple[int, int, int], sp.Expr]:
-    """A deterministic generic-looking element of the order-four kernel."""
+def quartic_constraint_data() -> tuple[
+    list[tuple[int, int, int]],
+    list[sp.Expr],
+    dict[tuple[tuple[int, int, int], sp.Expr], int],
+    list[sp.Matrix],
+]:
+    """Return monomial coordinates and a basis of the order-four kernel."""
 
     triples = list(itertools.combinations_with_replacement(range(3), 3))
     pairs = list(itertools.combinations_with_replacement(range(3), 2))
@@ -590,12 +863,56 @@ def generic_quartic_tensor() -> dict[tuple[int, int, int], sp.Expr]:
                 ] += sign
     kernel_basis = constraint.nullspace()
     assert len(kernel_basis) == 24
+    return triples, input_monomials, columns, kernel_basis
+
+
+@cache
+def quartic_kernel_basis_tensors() -> tuple[
+    dict[tuple[int, int, int], sp.Expr], ...
+]:
+    """A primitive integral basis of the 24-dimensional quartic kernel."""
+
+    (
+        triples,
+        input_monomials,
+        columns,
+        kernel_basis,
+    ) = quartic_constraint_data()
+    result = []
+    for vector in kernel_basis:
+        denominators = [
+            int(sp.denom(entry)) for entry in vector if entry != 0
+        ]
+        integral_vector = math.lcm(*denominators) * vector
+        tensor = {
+            triple: sp.expand(
+                sum(
+                    integral_vector[columns[(triple, monomial)]] * monomial
+                    for monomial in input_monomials
+                )
+            )
+            for triple in triples
+        }
+        result.append(tensor)
+    return tuple(result)
+
+
+@cache
+def generic_quartic_tensor() -> dict[tuple[int, int, int], sp.Expr]:
+    """A deterministic generic-looking element of the order-four kernel."""
+
+    (
+        triples,
+        input_monomials,
+        columns,
+        kernel_basis,
+    ) = quartic_constraint_data()
     kernel_vector = sum(
         (
             (index + 1) * vector
             for index, vector in enumerate(kernel_basis)
         ),
-        sp.zeros(constraint.cols, 1),
+        sp.zeros(kernel_basis[0].rows, 1),
     )
     denominators = [
         int(sp.denom(entry)) for entry in kernel_vector if entry != 0
@@ -611,7 +928,7 @@ def generic_quartic_tensor() -> dict[tuple[int, int, int], sp.Expr]:
         )
         for triple in triples
     }
-    for pair in pairs:
+    for pair in itertools.combinations_with_replacement(range(3), 2):
         assert sp.expand(
             z * result[tuple(sorted((0, *pair)))]
             - y * result[tuple(sorted((1, *pair)))]

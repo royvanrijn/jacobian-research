@@ -1,15 +1,18 @@
-# Complete local reproductions: `SU(2)`, the BCW 79-variable route, and a 21-variable optimization
+# Complete local reproductions: `SU(2)`, `SO(3)`, the BCW 79-variable route, and a 21-variable optimization
 
-This note supplies the two proofs left deliberately conditional in the first
-external-consequences audit.  It has two distinct outcomes.
+This note extends the first external-consequences audit with four distinct
+outcomes.
 
 1. The `SU(2)` integration formula and Long's lifted witness are now proved
    locally from normalized surface measure on the unit three-sphere.
-2. The complete `3 -> 39 -> 79` Bass--Connell--Wright route is constructed and
+2. Long's announced `SO(3)` witness is proved locally by pushing Haar measure
+   to the third-column sphere.  It is exactly the spherical normalization of
+   the repository's two-pair Hopf seed.
+3. The complete `3 -> 39 -> 79` Bass--Connell--Wright route is constructed and
    checked exactly.  The fixed-dimensional implication from that map to
    `not GMC(158)` is proved locally in a companion note, following and
    crediting Derksen--van den Essen--Zhao and Zhao.
-3. A repository-derived common-factor optimization replaces the conservative
+4. A repository-derived common-factor optimization replaces the conservative
    degree-lowering stage by `3 -> 16`.  The cubic component vector has exact
    rational rank seven, so rank-compressed homogenization needs only 24
    variables.  A later essential-dimension search finds a different
@@ -192,6 +195,306 @@ applies through the locally proved formula (1.3), yielding for every `n>=1`
 \]
 
 Thus the displayed `SU(2)` identities are independently reproduced in full.
+
+### 1.5 Long's `SO(3)` witness
+
+On 28 July 2026, Long announced the following pair in the matrix coordinates
+\(R=(r_{ij})\) of \(SO(3)\):
+
+\[
+ U=r_{13}+ir_{23},\qquad
+ V=r_{13}-ir_{23},\qquad
+ T=r_{33},
+\]
+\[
+ P=(1+U)\bigl(V-(2+U)T^2\bigr),\qquad Q=U.
+\tag{1.4}
+\]
+
+The announcement supplied the identities
+\[
+ \int_{SO(3)}P^m\,dR=0,\qquad
+ \int_{SO(3)}QP^m\,dR
+ =\frac{4^m(m!)^2}{(2m+1)!}\ne0
+ \quad(m\ge1).
+\tag{1.5}
+\]
+At the time of this audit, no paper, arXiv revision, or stable post URL for
+the `SO(3)` announcement had been located.  The external provenance is
+therefore the author announcement as quoted to the repository on 28 July
+2026; the proof below is a local reproduction, not a claim about priority or
+external review.
+
+#### Haar measure reduces to the third-column sphere
+
+The map
+\[
+ \pi:SO(3)\longrightarrow S^2,\qquad R\longmapsto Re_3
+\]
+sends a rotation to its third column.  The pushforward of normalized Haar
+measure is an \(SO(3)\)-invariant probability measure on \(S^2\), hence is
+normalized surface measure.  Since \(P,Q\) depend only on that column, their
+group integrals are exactly their spherical integrals.
+
+Write a point of \(S^2\) as \((X,Y,T)\) and put
+\[
+ U=X+iY,\qquad V=X-iY.
+\]
+Then
+\[
+ UV+T^2=1.
+\tag{1.6}
+\]
+The height \(T\) is uniform on \([-1,1]\), and conditional on \(T\), the
+phase of \(U=\sqrt{1-T^2}e^{i\theta}\) is uniform.  Thus normalized
+spherical integration is
+\[
+ \frac12\int_{-1}^1\frac1{2\pi}\int_0^{2\pi}(\cdots)\,d\theta\,dT.
+\tag{1.7}
+\]
+
+#### Endpoint contact gives all moments at once
+
+Using (1.6), the displayed polynomial has the Laurent presentation
+\[
+\begin{aligned}
+ P
+ &=(1+U)\left(\frac{1-T^2}{U}-(2+U)T^2\right)\\
+ &=\frac{1+U}{U}\left(1-T^2(1+U)^2\right).
+\end{aligned}
+\tag{1.8}
+\]
+The apparent \(U^{-1}\) is harmless: (1.4) is polynomial, while (1.8) is
+used only for phase constant-term extraction.
+
+Define
+\[
+ H_m(A)=A^m\int_0^1(1-v^2A^2)^m\,dv.
+\tag{1.9}
+\]
+The integrand is even in the height.  Phase extraction in (1.8) gives
+\[
+ \int_{SO(3)}P^m\,dR=[u^m]H_m(1+u),\qquad
+ \int_{SO(3)}UP^m\,dR=[u^{m-1}]H_m(1+u).
+\tag{1.10}
+\]
+After the change of variable \(w=vA\),
+\[
+ H_m(A)=A^{m-1}J_m(A),\qquad
+ J_m(A)=\int_0^A(1-w^2)^m\,dw.
+\tag{1.11}
+\]
+Now \(J_m'(A)=(1-A^2)^m\) has a zero of order \(m\) at \(A=1\).
+Consequently, through Taylor degree \(m\) at \(A=1\),
+\[
+ H_m(A)=J_m(1)A^{m-1}+O((A-1)^{m+1}).
+\tag{1.12}
+\]
+The coefficient of \(u^m\) is therefore zero, while the coefficient of
+\(u^{m-1}\) is \(J_m(1)\).  Finally,
+\[
+\begin{aligned}
+ J_m(1)
+ &=\int_0^1(1-w^2)^m\,dw\\
+ &=\frac{2^m m!}{(2m+1)!!}
+ =\frac{4^m(m!)^2}{(2m+1)!}.
+\end{aligned}
+\tag{1.13}
+\]
+Equations (1.10)--(1.13) prove both identities in (1.5) for every
+\(m\ge1\).
+
+The functions are of finite type in Mathieu's sense.  Each \(r_{ij}\) is a
+matrix coefficient of the defining representation, and polynomials in
+matrix coefficients lie in the algebra of representative functions, which
+is stable under translations with finite-dimensional orbit span.
+
+#### Relation to the repository seed and consequences
+
+Set
+\[
+ x=U,\qquad y=\frac V2,\qquad t=T.
+\]
+Then \(t^2+2xy=1\), and the angular polynomial in the
+[two-pair Image--Mathieu counterexample](TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md)
+is
+\[
+ p=(1+x)\left(y-\frac12(2+x)t^2\right)=\frac P2,\qquad Q=x.
+\tag{1.14}
+\]
+Thus Long's `SO(3)` formula is not merely analogous to that construction:
+it is exactly the same Hopf-sphere identity, with the factor \(2^m\) in the
+mixed moment converted by
+\[
+ \frac{2^m m!}{(2m+1)!!}
+ =\frac{4^m(m!)^2}{(2m+1)!}.
+\]
+Expanded on the sphere,
+\[
+ P=V+UV-2T^2-3UT^2-U^2T^2,
+\]
+so \(P/2\) is also Long's five-term Hopf polynomial recorded in the
+[Hopf-lift classification](HOPF_LIFT_CLASSIFICATION.md).
+
+This has four precise consequences.
+
+1. The Mathieu conjecture fails already in the right-\(SO(2)\)-invariant
+   subalgebra of finite-type functions on \(SO(3)\), equivalently in
+   representative functions on the homogeneous sphere \(SO(3)/SO(2)\).
+2. Pullback along the double cover \(SU(2)\to SO(3)\) gives a
+   center-invariant `SU(2)` counterexample.  Long's earlier small `SU(2)`
+   pair in Section 1.4 is not invariant under the central involution and
+   did not itself descend to \(SO(3)\).
+3. The sufficient Abelian reduction proposed for \(SO(N)\) in Kevin
+   Zwart's
+   [*On the Mathieu Conjecture for \(SU(N)\) and \(SO(N)\)*](https://arxiv.org/abs/2304.02648)
+   must fail at \(N=3\); here the obstruction is visible in its spherical
+   factor.
+4. This does not improve the repository's SIC, GVC, or GMC dimension
+   bounds: (1.14) identifies an already proved angular seed in a new compact
+   group.  Nor does failure for one compact group imply failure of the
+   Jacobian conjecture; Mathieu's implication runs from the universal
+   compact-group statement to the Jacobian conjecture, not conversely.
+
+### 1.6 The reusable circuit and the higher-group lifting gate
+
+The point of Long's example is not limited to the single pair \(F,G\).
+At the Abelian level, put
+
+\[
+ f(U,T)=(1-T^{-1})((1-U)+UT).                    \tag{1.15}
+\]
+
+The uniform identity used above is the first member of a more general
+weighted finite-difference mechanism.  For a nonzero polynomial
+\(w\in\mathbb C[U]\), write
+
+\[
+ w(U)=(1-U)^{t-1}h(U),\qquad h(1)\ne0,
+\]
+
+and set \(D=\deg h\).  The
+[weighted constant-term note](PRIME_SEPARATING_RADIAL_MOMENTS.md#no-polynomial-interval-density-has-a-mathieu-kernel)
+proves, for every \(m\ge D+t\),
+
+\[
+ \int_0^1\operatorname{CT}_T(f(U,T)^m)w(U)\,dU=0,
+\]
+
+while
+
+\[
+ \int_0^1\operatorname{CT}_T(T^{-t}f(U,T)^m)w(U)\,dU
+ =(-1)^{m+t}\frac{h(1)}{t\binom{m+t}{t}}\ne0.     \tag{1.16}
+\]
+
+Thus, with \(N=D+t\), the fixed pair \(P=f^N\), \(Q=T^{-t}\)
+violates the Mathieu--Zhao conclusion for every positive power of \(P\).
+For \(w=1\), this is exactly Long's sequence
+\((-1)^{m-1}/(m+1)\).  The proof is the same circuit calculation at a
+higher finite-difference order: after the beta integral, the Bernstein
+coefficient is a polynomial in the angular index, so the full alternating
+difference vanishes and a boundary term survives after multiplication by
+\(T^{-t}\).
+
+This interacts directly with Müger--Tuset's general integration formula.
+For a direct product of compact connected simple groups and a torus, their
+finite-type reduction supplies integers \(N_K,M_K\), a nonzero monomial
+
+\[
+ \delta(x)=c\prod_{j=1}^{N_K}x_j^{q_j},
+ \qquad q_j\ \hbox{odd},
+\]
+
+and a linear map
+
+\[
+ \mathbb C[K]\longrightarrow
+ \mathbb C[x_1,\ldots,x_{N_K},
+           z_1^{\mathord\pm1},\ldots,z_{M_K}^{\mathord\pm1}],
+ \qquad H\longmapsto\widetilde H,
+\]
+
+that preserves every joint moment
+\(\int_K H^aJ^b\) after weighted product integration.  Arbitrary compact
+connected Lie groups are reached from such a product by a finite central
+quotient.
+
+At the level of the **full ambient Laurent-polynomial ring**, (1.16)
+therefore applies to every Müger--Tuset monomial density as soon as there is
+at least one interval variable and one torus variable.  Indeed, choose one
+factor \(x_j^{q_j}\), use (1.15) in \((x_j,z_1)\), ignore the other variables,
+and take
+
+\[
+ P=f^{q_j+1},\qquad Q=z_1^{-1}.                   \tag{1.17}
+\]
+
+For every \(\ell\ge1\), the weighted pure integral of \(P^\ell\) is zero
+and the weighted integral of \(QP^\ell\) is nonzero.  The unused factors
+contribute only nonzero constants.  This is an exact consequence of the
+local polynomial-density theorem, not a bounded search.  It shows that the
+strong ambient Abelian conjecture cannot be repaired merely by retaining
+the monomial weights occurring in the general Lie-group formula.
+
+It does **not** give a counterexample on every compact connected Lie group.
+The group-dependent image
+
+\[
+ \mathcal A(K)=\{\widetilde H:H\in\mathbb C[K]\}
+\]
+
+is generally a proper subspace of the ambient Laurent-polynomial ring.
+Moreover, Müger and Tuset prove the moment identities using a linear
+replacement map; they explicitly do not claim that this replacement is an
+algebra homomorphism.  A higher-group counterexample must therefore pass
+the following lifting gate:
+
+> Find \(H,J\in\mathbb C[K]\) whose Müger--Tuset replacements are the
+> circuit pair (1.17), or another pair in \(\mathcal A(K)\) with the same
+> all-order pure and mixed moments.
+
+For a finite central quotient there is an additional descent gate: the
+chosen functions on the product cover must be invariant under the finite
+kernel.  Groups with an actual `SU(2)` direct factor inherit Long's witness
+immediately by ignoring the other factors.  A root `SU(2)` subgroup inside
+a simple higher-rank group is not enough, because a function on that
+subgroup need not extend to a group function whose integration-coordinate
+image ignores all other root factors.
+
+This isolates a reproducible higher-rank program.
+
+1. Start with `SU(3)` and a fixed reduced word for the longest Weyl element.
+   Compute the replacements of low-weight matrix coefficients and
+   generalized minors, then test exact membership of the powered circuit
+   (1.17) and its multiplier in their span.
+2. If literal membership fails, search inside \(\mathcal A(K)\) for the
+   weaker invariant condition that the Bernstein coefficient sequence has
+   uniformly bounded degree and a nonzero truncated boundary difference.
+3. Only after an all-order identity is obtained on the product cover, test
+   invariance under the relevant finite central kernel.
+
+The circuit already has two separate algebraic descendants in the active
+Image-Mathieu work.  The
+[four-term three-pair witness](THREE_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md)
+is a one-pair bihomogeneous lift of Long's `SU(2)` seed, while the
+[Dvorsky--Long witness](DVORSKY_GVC5_COUNTEREXAMPLE.md) is a five-variable
+constant-coefficient GVC and five-pair SIC lift.  The later
+[two-pair counterexample](TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md) proves
+that the minimum failing SIC pair dimension is two, but it is a genuinely
+nonseparable rank-five construction rather than a Müger--Tuset lift.
+Likewise, the Gaussian counterexamples involve factorial radial weights
+rather than the beta weights in (1.15)--(1.16).  The present observation
+therefore sharpens the compact-group lifting program without changing the
+repository's GMC, SIC, or BCW dimension bounds.
+
+The status distinction is therefore:
+
+- the weighted ambient failure is an exact corollary of the locally proved
+  polynomial-density theorem;
+- the `SU(2)` lift is the reproduced theorem of Long;
+- membership in \(\mathcal A(K)\) for a simple higher-rank group remains an
+  open problem.
 
 ## 2. The exact `3 -> 39 -> 79` BCW route
 
@@ -675,6 +978,7 @@ Run
 ```bash
 .venv/bin/python scripts/verify_long_su2_haar.py
 .venv/bin/python scripts/verify_long_xz_mathieu.py
+.venv/bin/python scripts/verify_beta_radial_mathieu_counterexamples.py
 .venv/bin/python scripts/verify_long_bcw_79_route.py
 python3 scripts/audit_long_bcw_79_independent.py
 .venv/bin/python scripts/verify_shared_bcw_33_route.py
@@ -691,18 +995,22 @@ python3 scripts/audit_bcw_21_affine_vector_symmetries.py
 python3 scripts/verify_fixed_gmc_sic_bridge.py
 ```
 
-The first two scripts jointly certify the complete `SU(2)` proof.  The next
-two construct and independently replay Long's conservative 79-variable
-route.  The next pair record and replay the repository's shared-factor
-baseline, and the following pair construct and independently replay its
-rank-compressed 24-variable homogenization.  The next pair construct and
-independently replay its 22-variable constant-kernel quotient.  The following
-pair freeze and independently replay the improved 21-variable essential
-quotient.  The next two scripts exclude further collision-preserving linear
-quotients and affine-vector-field translation symmetries.  The next script
-checks the two-parameter shortcut obstruction; the final script checks the
-coefficient skeleton of the fixed-dimensional implication.  None of these
-replaces the repository's separate 95-variable cubic-homogeneous artifact.
+The first two scripts jointly certify the complete `SU(2)` proof; the second
+also directly checks the `SO(3)` spherical moments through order fifteen and
+the endpoint-jet identities through order one hundred.  The third checks the
+integer-Beta and arbitrary polynomial-density extensions of the same
+circuit.  The next two construct and independently replay Long's
+conservative 79-variable route.  The next pair record and replay the
+repository's shared-factor baseline, and the following pair construct and
+independently replay its rank-compressed 24-variable homogenization.  The
+next pair construct and independently replay its 22-variable constant-kernel
+quotient.  The following pair freeze and independently replay the improved
+21-variable essential quotient.  The next two scripts exclude further
+collision-preserving linear quotients and affine-vector-field translation
+symmetries.  The next script checks the two-parameter shortcut obstruction;
+the final script checks the coefficient skeleton of the fixed-dimensional
+implication.  None of these replaces the repository's separate 95-variable
+cubic-homogeneous artifact.
 
 The external theorem inputs and construction sources are:
 
@@ -711,6 +1019,15 @@ The external theorem inputs and construction sources are:
 - Christopher D. Long, [*Counterexamples to the (xz)-Conjecture and the
   Mathieu Conjecture for (SU(2))*](https://arxiv.org/abs/2607.19012),
   arXiv:2607.19012v1;
+- Christopher D. Long, public `SO(3)` counterexample announcement,
+  28 July 2026, quoted in Section 1.5; no archival URL was located at audit
+  time;
+- Kevin Zwart, [*On the Mathieu Conjecture for \(SU(N)\) and
+  \(SO(N)\)*](https://arxiv.org/abs/2304.02648), arXiv:2304.02648;
+- Michael Müger and Lars Tuset, [*An integral formula for Lie groups, and
+  the Mathieu conjecture reduced to Abelian non-Lie
+  conjectures*](https://arxiv.org/abs/2410.11622), arXiv:2410.11622v2,
+  accepted in Advances in Mathematics;
 - Hyman Bass, Edwin H. Connell, and David Wright,
   [*The Jacobian Conjecture: Reduction of Degree and Formal Expansion of the
   Inverse*](https://doi.org/10.1090/S0273-0979-1982-15032-7), Bulletin of the

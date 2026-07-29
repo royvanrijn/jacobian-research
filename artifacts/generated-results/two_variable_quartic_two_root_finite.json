@@ -1,0 +1,46 @@
+{
+  "format": "two-variable-quartic-two-root-finite-v1",
+  "field": "characteristic zero",
+  "normal_forms": "u^r*v^(4-r), 0<=r<=4",
+  "moment_cutoffs": {
+    "0": 1,
+    "1": 4,
+    "2": 4,
+    "3": 4,
+    "4": 1
+  },
+  "fibers": {
+    "0": {
+      "affine_cone_dimension": 4,
+      "projective_degree": 1,
+      "component_count": 1,
+      "radical_power_certificate": 8
+    },
+    "1": {
+      "affine_cone_dimension": 3,
+      "projective_degree": 1,
+      "component_count": 2,
+      "radical_power_certificate": 8
+    },
+    "2": {
+      "affine_cone_dimension": 2,
+      "projective_degree": 2,
+      "component_count": 2,
+      "radical_power_certificate": 8
+    },
+    "3": {
+      "affine_cone_dimension": 3,
+      "projective_degree": 1,
+      "component_count": 2,
+      "radical_power_certificate": 8
+    },
+    "4": {
+      "affine_cone_dimension": 4,
+      "projective_degree": 1,
+      "component_count": 1,
+      "radical_power_certificate": 8
+    }
+  },
+  "consequence": "the first four moments put every quartic rank-one tensor whose symbol has at most two roots in the one-sided nullcone",
+  "written_source": "extended-geometry/TWO_PAIR_SIC_BIDEGREE44_RANK_FRONTIER.md"
+}

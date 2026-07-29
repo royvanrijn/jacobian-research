@@ -209,8 +209,13 @@ and the expression in parentheses is exactly the three-row determinant in
 The divisor `D_Lambda=V(Lambda)` is mapped by `bar G` to `(P,Q)=(0,0)`.
 When `Lambda` is reduced, (9) says scheme-theoretically that the quotient
 Jacobian vanishes to order exactly `k` along every component of
-`D_Lambda`.  For `k=2`, this recovers Shaska's order-two quotient-Jacobian
-theorem, now with the quotient map and its orientation written explicitly.
+`D_Lambda`.  For `k=2`, this agrees with Shaska's order-two
+quotient-Jacobian theorem.  In the current arXiv v2, Shaska's Proposition
+8.2 and Remark 8.4 give the wider `(1,-r,-s)` exponent `r+s-1`; the present
+formula is its `r=1,s=k` specialization, with the orientation fixed and the
+admissible weighted-seed factorization below made explicit.  See the
+[mixed-sign literature reconciliation](MIXED_SIGN_GRADINGS_LITERATURE_RECONCILIATION.md)
+for the version and scope comparison.
 
 The orbit quotient has a separate contraction which should not be confused
 with `D_Lambda`.  The coarse quotient maps are

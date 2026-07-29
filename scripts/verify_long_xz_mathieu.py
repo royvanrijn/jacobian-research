@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Exact, dependency-free checks for Long's (xz) and SU(2) witnesses.
+"""Exact, dependency-free checks for Long's (xz), SU(2), and SO(3) witnesses.
 
 Source: Christopher D. Long, "Counterexamples to the (xz)-Conjecture and
 the Mathieu Conjecture for SU(2)", arXiv:2607.19012v1 (21 July 2026).
@@ -8,6 +8,10 @@ The (xz) calculation is self-contained.  This script verifies the SU(2)
 algebraic substitution and monomial identities on the right side of the
 Mueger--Tuset integration formula quoted by Long.  The companion
 verify_long_su2_haar.py supplies the independent Haar-measure proof.
+
+The SO(3) calculation replays Long's 28 July 2026 announcement.  It uses
+only that the third column of a Haar rotation is uniform on S^2, where
+U*V+T^2=1, the phase of U is uniform, and T is uniform on [-1,1].
 """
 
 from fractions import Fraction
@@ -15,6 +19,7 @@ from math import comb, factorial
 
 
 Laurent = dict[tuple[int, int, int], Fraction]  # powers of x, z1, z2
+SphereLaurent = dict[tuple[int, int], Fraction]  # powers of U, T
 
 
 def add(*polys: Laurent) -> Laurent:
@@ -86,6 +91,123 @@ def mueger_tuset_monomial_rhs(r: int, s: int, t: int, u: int) -> Fraction:
     return Fraction((-1) ** t * factorial(r) * factorial(s), factorial(r + s + 1))
 
 
+def sphere_add(*polys: SphereLaurent) -> SphereLaurent:
+    out: SphereLaurent = {}
+    for poly in polys:
+        for monomial, coefficient in poly.items():
+            out[monomial] = out.get(monomial, Fraction(0)) + coefficient
+            if not out[monomial]:
+                del out[monomial]
+    return out
+
+
+def sphere_scale(coefficient: int, poly: SphereLaurent) -> SphereLaurent:
+    return {
+        monomial: Fraction(coefficient) * value
+        for monomial, value in poly.items()
+        if coefficient * value
+    }
+
+
+def sphere_multiply(
+    left: SphereLaurent, right: SphereLaurent
+) -> SphereLaurent:
+    out: SphereLaurent = {}
+    for (left_u, left_t), left_coefficient in left.items():
+        for (right_u, right_t), right_coefficient in right.items():
+            monomial = (left_u + right_u, left_t + right_t)
+            out[monomial] = (
+                out.get(monomial, Fraction(0))
+                + left_coefficient * right_coefficient
+            )
+    return {
+        monomial: coefficient
+        for monomial, coefficient in out.items()
+        if coefficient
+    }
+
+
+def sphere_power(poly: SphereLaurent, exponent: int) -> SphereLaurent:
+    out: SphereLaurent = {(0, 0): Fraction(1)}
+    base = poly
+    n = exponent
+    while n:
+        if n & 1:
+            out = sphere_multiply(out, base)
+        base = sphere_multiply(base, base)
+        n //= 2
+    return out
+
+
+def sphere_integral(poly: SphereLaurent) -> Fraction:
+    """Apply uniform phase extraction and normalized height integration."""
+    total = Fraction(0)
+    for (u_degree, t_degree), coefficient in poly.items():
+        if u_degree == 0 and t_degree % 2 == 0:
+            total += coefficient * Fraction(1, t_degree + 1)
+    return total
+
+
+def long_so3_witness() -> tuple[SphereLaurent, SphereLaurent]:
+    """Return P,Q after eliminating V through U*V+T^2=1."""
+    one: SphereLaurent = {(0, 0): Fraction(1)}
+    u: SphereLaurent = {(1, 0): Fraction(1)}
+    u_inverse: SphereLaurent = {(-1, 0): Fraction(1)}
+    t_squared: SphereLaurent = {(0, 2): Fraction(1)}
+
+    # V=(1-T^2)/U on the sphere.
+    v = sphere_add(
+        u_inverse,
+        sphere_scale(-1, sphere_multiply(u_inverse, t_squared)),
+    )
+    displayed = sphere_multiply(
+        sphere_add(one, u),
+        sphere_add(
+            v,
+            sphere_scale(
+                -1,
+                sphere_multiply(sphere_add(sphere_scale(2, one), u), t_squared),
+            ),
+        ),
+    )
+
+    # Equivalent endpoint-contact form:
+    # P=(1+U)/U * (1-T^2(1+U)^2).
+    endpoint_form = sphere_multiply(
+        sphere_multiply(sphere_add(one, u), u_inverse),
+        sphere_add(
+            one,
+            sphere_scale(
+                -1,
+                sphere_multiply(t_squared, sphere_power(sphere_add(one, u), 2)),
+            ),
+        ),
+    )
+    assert displayed == endpoint_form
+    return displayed, u
+
+
+def long_so3_height_integral(order: int) -> Fraction:
+    """Integral_0^1 (1-v^2)^order dv, evaluated termwise."""
+    return sum(
+        Fraction((-1) ** index * comb(order, index), 2 * index + 1)
+        for index in range(order + 1)
+    )
+
+
+def long_so3_jet(order: int, degree: int) -> Fraction:
+    """Coefficient of s^degree in H_m(1+s)."""
+    return sum(
+        Fraction(
+            (-1) ** index
+            * comb(order, index)
+            * comb(order + 2 * index, degree),
+            2 * index + 1,
+        )
+        for index in range(order + 1)
+    )
+
+
 def main() -> None:
     # Proof-oriented beta/binomial identity.
     for n in range(1, 21):
@@ -125,10 +247,39 @@ def main() -> None:
                         r, s, t, u
                     )
 
+    # Long's SO(3) witness depends only on the third rotation column.
+    # Haar pushforward makes that column uniform on S^2.  Direct phase/height
+    # integration checks the displayed moments without using SU(2).
+    so3_p, so3_q = long_so3_witness()
+    so3_power: SphereLaurent = {(0, 0): Fraction(1)}
+    for order in range(1, 16):
+        so3_power = sphere_multiply(so3_power, so3_p)
+        expected = Fraction(
+            4**order * factorial(order) ** 2,
+            factorial(2 * order + 1),
+        )
+        assert sphere_integral(so3_power) == 0
+        assert sphere_integral(sphere_multiply(so3_q, so3_power)) == expected
+
+    # Replay the all-order endpoint-jet mechanism through a much larger
+    # exact cutoff.  The note proves it uniformly: after w=vX,
+    # H_m(X)=X^(m-1) J_m(X), and J_m'(X)=(1-X^2)^m has an m-fold zero at 1.
+    for order in range(1, 101):
+        height_integral = long_so3_height_integral(order)
+        expected = Fraction(
+            4**order * factorial(order) ** 2,
+            factorial(2 * order + 1),
+        )
+        assert height_integral == expected
+        assert long_so3_jet(order, order) == 0
+        assert long_so3_jet(order, order - 1) == height_integral
+
     print("PASS Long xz: beta/binomial identity n=1..20")
     print("PASS Long xz: exact Laurent moments n=1..15")
     print("PASS Long SU(2): beta substitution and monomial RHS in degrees 0..4")
     print("PASS Long SU(2): combine with verify_long_su2_haar.py for the full Haar proof")
+    print("PASS Long SO(3): exact spherical moments n=1..15")
+    print("PASS Long SO(3): endpoint-jet and beta identities n=1..100")
 
 
 if __name__ == "__main__":

@@ -4,14 +4,23 @@
 The all-order proof is in
 extended-geometry/HOPF_LIFT_CLASSIFICATION.md.  This script does not search
 V_d: it expands the defining one-variable integral, checks the jet
-identities, and uses exact SymPy arithmetic only for the fixed (4,6)
-residual Groebner certificate.
+identities, uses exact SymPy arithmetic for the fixed (4,6) and (5,7)
+residual ideal certificates, and constructs the exact (6,8) residual
+system.  With ``--require-singular`` it also verifies the rational
+modular Groebner/FGLM candidate support profile for that system.  Because
+the residual ideal is nonhomogeneous, this optional modular reconstruction
+is evidence rather than a deterministic ideal-equality certificate.  The
+same option verifies one exact rational boundary exclusion and three exact
+specialized ideal memberships, and classifies the exact H=0 slice.
 """
 
 from __future__ import annotations
 
+import argparse
 from fractions import Fraction
 from math import comb, factorial
+import shutil
+import subprocess
 
 
 Polynomial = list[Fraction]
@@ -196,8 +205,8 @@ def check_profile(r: int, s: int, profile: Polynomial) -> None:
             assert (pure == 0 and adjacent != 0) == (q == r)
 
 
-def check_high_rectangles() -> None:
-    """Verify the exact residual ideals in the (4,6) and (5,7) rectangles."""
+def check_high_rectangles(require_singular: bool = False) -> None:
+    """Verify the exact residual ideals in the higher fixed rectangles."""
     import sympy as sym
 
     e, f, g = sym.symbols("E F G")
@@ -250,12 +259,12 @@ def check_high_rectangles() -> None:
                 base = truncated_multiply(base, base, limit)
         return result
 
-    def symbolic_moment(
+    def symbolic_jet(
         order: int,
         current_constant_part: list[sym.Expr],
         current_height_part: list[sym.Expr],
-    ) -> list[sym.Expr]:
-        result: list[sym.Expr] = []
+    ) -> sym.Expr:
+        result = sym.S.Zero
         for height_count in range(order + 1):
             term = truncated_multiply(
                 truncated_power(
@@ -270,18 +279,16 @@ def check_high_rectangles() -> None:
                 comb(order, height_count),
                 2 * height_count + 1,
             )
-            if len(result) < len(term):
-                result += [sym.S.Zero] * (len(term) - len(result))
-            for degree, value in enumerate(term):
-                result[degree] += coefficient_value * value
-        return [sym.factor(value) for value in result]
+            if order < len(term):
+                result += coefficient_value * term[order]
+        return sym.factor(result)
 
     jets = {
-        order: symbolic_moment(
+        order: symbolic_jet(
             order,
             constant_part,
             height_part,
-        )[order]
+        )
         for order in range(1, 11)
     }
     assert all(jets[order] == 0 for order in range(1, 7))
@@ -347,11 +354,11 @@ def check_high_rectangles() -> None:
         ),
     ]
     jets_57 = {
-        order: symbolic_moment(
+        order: symbolic_jet(
             order,
             constant_part_57,
             height_part_57,
-        )[order]
+        )
         for order in range(1, 13)
     }
     assert all(jets_57[order] == 0 for order in range(1, 8))
@@ -419,8 +426,173 @@ def check_high_rectangles() -> None:
         for residual in residuals_57
     )
 
+    # The (6,8) rectangle: derive the exact residual system through the
+    # predicted cutoff 14.  The optional Singular check reconstructs the
+    # candidate support profile but does not certify ideal equality.
+    i = sym.symbols("I")
+    reconstruction_variables = sym.symbols("B1:9")
+    constant_part_68 = [sym.S.One, sym.S.One, e, f, g, h, i]
+    unsolved_height_68 = [-sym.S.One, *reconstruction_variables]
+    substitutions: dict[sym.Symbol, sym.Expr] = {}
+    for order in range(1, 9):
+        current_height = [
+            sym.expand(sym.sympify(value).subs(substitutions))
+            for value in unsolved_height_68
+        ]
+        jet = symbolic_jet(
+            order,
+            constant_part_68,
+            current_height,
+        )
+        substitutions[reconstruction_variables[order - 1]] = sym.factor(
+            sym.solve(jet, reconstruction_variables[order - 1])[0]
+        )
+    solved_height_68 = [
+        sym.expand(sym.sympify(value).subs(substitutions))
+        for value in unsolved_height_68
+    ]
+    jets_68 = {
+        order: symbolic_jet(
+            order,
+            constant_part_68,
+            solved_height_68,
+        )
+        for order in range(9, 15)
+    }
+    residuals_68 = [
+        sym.Poly(jets_68[order], e, f, g, h, i).primitive()[1].as_expr()
+        for order in range(9, 15)
+    ]
+    assert [
+        len(sym.Poly(residual, e, f, g, h, i).terms())
+        for residual in residuals_68
+    ] == [19, 28, 37, 51, 64, 83]
+    residual_jacobian = sym.Matrix(
+        [
+            [
+                sym.diff(residual, variable).subs(
+                    {e: 0, f: 0, g: 0, h: 0, i: 0}
+                )
+                for variable in (e, f, g, h, i)
+            ]
+            for residual in residuals_68
+        ]
+    )
+    assert residual_jacobian.rank() == 1
+    assert residual_jacobian[:, :4] == sym.zeros(6, 4)
+    assert residual_jacobian[:, 4] != sym.zeros(6, 1)
+
+    if require_singular:
+        singular = shutil.which("Singular")
+        if singular is None:
+            raise RuntimeError(
+                "--require-singular requested, but Singular is not on PATH"
+            )
+        residual_text = ",".join(
+            str(residual).replace("**", "^") for residual in residuals_68
+        )
+        specialized_residual_text = ",".join(
+            str(sym.expand(residual.subs({h: 0, i: 0}))).replace("**", "^")
+            for residual in residuals_68
+        )
+        h_zero_residual_text = ",".join(
+            str(sym.expand(residual.subs(h, 0))).replace("**", "^")
+            for residual in residuals_68
+        )
+        singular_program = f"""
+LIB "modstd.lib";
+ring r=0,(I,H,G,F,E),dp;
+option(redSB);
+ideal J={residual_text};
+ideal Boundary=J,84E+54F+5;
+ideal BoundaryBasis=slimgb(Boundary);
+int exact_ok=1;
+if (reduce(1,BoundaryBasis)!=0) {{ exact_ok=0; }}
+ideal K=modStd(J);
+int candidate_ok=1;
+if (vdim(K)!=32) {{ candidate_ok=0; }}
+ring l=0,(I,H,G,F,E),lp;
+ideal L=fglm(r,K);
+if (size(L)!=18) {{ candidate_ok=0; }}
+if (L[1]!=E8) {{ candidate_ok=0; }}
+if (L[6]!=F5) {{ candidate_ok=0; }}
+poly q=L[13];
+q=subst(q,E,0);
+q=subst(q,F,0);
+if (q!=607500G3) {{ candidate_ok=0; }}
+q=L[17];
+q=subst(q,E,0);
+q=subst(q,F,0);
+q=subst(q,G,0);
+if (q!=1944000000H2) {{ candidate_ok=0; }}
+q=L[18];
+q=subst(q,E,0);
+q=subst(q,F,0);
+q=subst(q,G,0);
+q=subst(q,H,0);
+if (q!=186624000000I) {{ candidate_ok=0; }}
+ring s=0,(G,F,E),dp;
+ideal J0={specialized_residual_text};
+ideal T=E6,48F3+7E5,972G2+864F2E+29E5-108E4;
+matrix M=lift(J0,T);
+matrix Q=matrix(T)-matrix(J0)*M;
+if (Q[1,1]!=0) {{ exact_ok=0; }}
+if (Q[1,2]!=0) {{ exact_ok=0; }}
+if (Q[1,3]!=0) {{ exact_ok=0; }}
+ring h0=0,(I,G,F,E),dp;
+option(redSB);
+ideal HJ={h_zero_residual_text};
+ideal HK=slimgb(HJ);
+if (vdim(HK)!=17) {{ exact_ok=0; }}
+ring hlex=0,(I,G,F,E),lp;
+ideal HL=fglm(h0,HK);
+if (size(HL)!=8) {{ exact_ok=0; }}
+if (HL[1]!=E7) {{ exact_ok=0; }}
+poly hq=HL[4];
+hq=subst(hq,E,0);
+if (hq!=165256200000F3) {{ exact_ok=0; }}
+hq=HL[7];
+hq=subst(hq,E,0);
+hq=subst(hq,F,0);
+if (hq!=38731921875G2) {{ exact_ok=0; }}
+hq=HL[8];
+hq=subst(hq,E,0);
+hq=subst(hq,F,0);
+hq=subst(hq,G,0);
+if (hq!=165256200000I) {{ exact_ok=0; }}
+"HOPF_68_EXACT_PARTIAL";
+exact_ok;
+"HOPF_68_CANDIDATE";
+candidate_ok;
+"""
+        completed = subprocess.run(
+            [singular, "-q"],
+            input=singular_program,
+            text=True,
+            capture_output=True,
+            check=True,
+            timeout=120,
+        )
+        if (
+            "HOPF_68_EXACT_PARTIAL\n1" not in completed.stdout
+            or "HOPF_68_CANDIDATE\n1" not in completed.stdout
+        ):
+            raise AssertionError(
+                "Singular did not reproduce the (6,8) candidate profile:\n"
+                + completed.stdout
+                + completed.stderr
+            )
+
 
 def main() -> None:
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--require-singular",
+        action="store_true",
+        help="reproduce the rational (6,8) modular Groebner/FGLM profile",
+    )
+    arguments = parser.parse_args()
+
     # R(z)=(1-z)^s for several windings and endpoint multiplicities.
     for r in range(1, 5):
         for s in range(r, r + 3):
@@ -688,7 +860,7 @@ def main() -> None:
         )
         assert coefficient(response, order) == expected
 
-    check_high_rectangles()
+    check_high_rectangles(require_singular=arguments.require_singular)
 
     print(
         "PASS Hopf lifts: full lower-jet ladder and q=r rigidity "
@@ -702,6 +874,13 @@ def main() -> None:
     print("PASS Hopf lifts: universal triangular coefficient through m=20")
     print("PASS Hopf lifts: ten-jet rigidity in the full (4,6) class")
     print("PASS Hopf lifts: twelve-jet rigidity in the full (5,7) class")
+    if arguments.require_singular:
+        print(
+            "PASS Hopf lifts: exact partial certificate and modular "
+            "candidate support profile in (6,8)"
+        )
+    else:
+        print("PASS Hopf lifts: exact residual system in the (6,8) class")
 
 
 if __name__ == "__main__":

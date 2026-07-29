@@ -1,0 +1,7002 @@
+{
+  "normalization": "nu_m=mu_m/(2m+1)!, x_m=sum_p binom(m,p)(-nu_1)^(m-p)nu_p",
+  "relation": "x7^5+sum_(k=1)^5 A_k(x2,x3,x4,x5,x6)*x7^(5-k)=0",
+  "weights_x2_through_x7": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "relation_degree_in_x7": 5,
+  "ansatz_block_sizes": [
+    3,
+    19,
+    49,
+    120,
+    227
+  ],
+  "ansatz_size": 418,
+  "nonzero_coefficient_count": 241,
+  "interpolation_primes": [
+    1000000007,
+    1000000009,
+    1000000033,
+    1000000087,
+    1000000093
+  ],
+  "exact_verification_point_count": 418,
+  "verification_ansatz_rank": 418,
+  "verification_rank_prime": 1000003,
+  "coefficient_blocks": [
+    {
+      "coefficient_index": 1,
+      "weighted_degree": 7,
+      "x7_power": 4,
+      "terms": [
+        {
+          "exponents_x2_through_x6": [
+            0,
+            1,
+            1,
+            0,
+            0
+          ],
+          "coefficient": "-37975/1144"
+        },
+        {
+          "exponents_x2_through_x6": [
+            1,
+            0,
+            0,
+            1,
+            0
+          ],
+          "coefficient": "-1785/52"
+        },
+        {
+          "exponents_x2_through_x6": [
+            2,
+            1,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "154875/1144"
+        }
+      ]
+    },
+    {
+      "coefficient_index": 2,
+      "weighted_degree": 14,
+      "x7_power": 3,
+      "terms": [
+        {
+          "exponents_x2_through_x6": [
+            0,
+            0,
+            1,
+            2,
+            0
+          ],
+          "coefficient": "12005/8112"
+        },
+        {
+          "exponents_x2_through_x6": [
+            0,
+            0,
+            2,
+            0,
+            1
+          ],
+          "coefficient": "8575/3432"
+        },
+        {
+          "exponents_x2_through_x6": [
+            0,
+            2,
+            2,
+            0,
+            0
+          ],
+          "coefficient": "847853125/1963104"
+        },
+        {
+          "exponents_x2_through_x6": [
+            1,
+            0,
+            3,
+            0,
+            0
+          ],
+          "coefficient": "-214375/13728"
+        },
+        {
+          "exponents_x2_through_x6": [
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "coefficient": "79447375/89232"
+        },
+        {
+          "exponents_x2_through_x6": [
+            2,
+            0,
+            0,
+            2,
+            0
+          ],
+          "coefficient": "314825/676"
+        },
+        {
+          "exponents_x2_through_x6": [
+            2,
+            0,
+            1,
+            0,
+            1
+          ],
+          "coefficient": "-6125/572"
+        },
+        {
+          "exponents_x2_through_x6": [
+            2,
+            2,
+            1,
+            0,
+            0
+          ],
+          "coefficient": "-3426784375/981552"
+        },
+        {
+          "exponents_x2_through_x6": [
+            3,
+            0,
+            2,
+            0,
+            0
+          ],
+          "coefficient": "459375/5408"
+        },
+        {
+          "exponents_x2_through_x6": [
+            3,
+            1,
+            0,
+            1,
+            0
+          ],
+          "coefficient": "-108565625/29744"
+        },
+        {
+          "exponents_x2_through_x6": [
+            4,
+            0,
+            0,
+            0,
+            1
+          ],
+          "coefficient": "13125/1144"
+        },
+        {
+          "exponents_x2_through_x6": [
+            4,
+            2,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "4645046875/654368"
+        },
+        {
+          "exponents_x2_through_x6": [
+            5,
+            0,
+            1,
+            0,
+            0
+          ],
+          "coefficient": "-8859375/59488"
+        },
+        {
+          "exponents_x2_through_x6": [
+            7,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "4921875/59488"
+        }
+      ]
+    },
+    {
+      "coefficient_index": 3,
+      "weighted_degree": 21,
+      "x7_power": 2,
+      "terms": [
+        {
+          "exponents_x2_through_x6": [
+            0,
+            0,
+            0,
+            3,
+            1
+          ],
+          "coefficient": "26411/8112"
+        },
+        {
+          "exponents_x2_through_x6": [
+            0,
+            0,
+            4,
+            1,
+            0
+          ],
+          "coefficient": "10504375/5889312"
+        },
+        {
+          "exponents_x2_through_x6": [
+            0,
+            1,
+            2,
+            2,
+            0
+          ],
+          "coefficient": "-90337625/3093376"
+        },
+        {
+          "exponents_x2_through_x6": [
+            0,
+            1,
+            3,
+            0,
+            1
+          ],
+          "coefficient": "-31513125/654368"
+        },
+        {
+          "exponents_x2_through_x6": [
+            0,
+            2,
+            0,
+            3,
+            0
+          ],
+          "coefficient": "-4621925/421824"
+        },
+        {
+          "exponents_x2_through_x6": [
+            0,
+            3,
+            3,
+            0,
+            0
+          ],
+          "coefficient": "-93751546875/34027136"
+        },
+        {
+          "exponents_x2_through_x6": [
+            1,
+            0,
+            1,
+            3,
+            0
+          ],
+          "coefficient": "-9303875/210912"
+        },
+        {
+          "exponents_x2_through_x6": [
+            1,
+            0,
+            2,
+            1,
+            1
+          ],
+          "coefficient": "-8703625/178464"
+        },
+        {
+          "exponents_x2_through_x6": [
+            1,
+            1,
+            0,
+            2,
+            1
+          ],
+          "coefficient": "-60025/1352"
+        },
+        {
+          "exponents_x2_through_x6": [
+            1,
+            1,
+            4,
+            0,
+            0
+          ],
+          "coefficient": "262609375/906048"
+        },
+        {
+          "exponents_x2_through_x6": [
+            1,
+            2,
+            2,
+            1,
+            0
+          ],
+          "coefficient": "-865928153125/102081408"
+        },
+        {
+          "exponents_x2_through_x6": [
+            1,
+            3,
+            0,
+            2,
+            0
+          ],
+          "coefficient": "10504375/70304"
+        },
+        {
+          "exponents_x2_through_x6": [
+            2,
+            0,
+            3,
+            1,
+            0
+          ],
+          "coefficient": "29524796875/102081408"
+        },
+        {
+          "exponents_x2_through_x6": [
+            2,
+            1,
+            1,
+            2,
+            0
+          ],
+          "coefficient": "-26406498125/3093376"
+        },
+        {
+          "exponents_x2_through_x6": [
+            2,
+            1,
+            2,
+            0,
+            1
+          ],
+          "coefficient": "772821875/1963104"
+        },
+        {
+          "exponents_x2_through_x6": [
+            2,
+            2,
+            0,
+            1,
+            1
+          ],
+          "coefficient": "1500625/7436"
+        },
+        {
+          "exponents_x2_through_x6": [
+            2,
+            3,
+            2,
+            0,
+            0
+          ],
+          "coefficient": "37155287421875/1122895488"
+        },
+        {
+          "exponents_x2_through_x6": [
+            2,
+            4,
+            0,
+            1,
+            0
+          ],
+          "coefficient": "-262609375/386672"
+        },
+        {
+          "exponents_x2_through_x6": [
+            3,
+            0,
+            0,
+            3,
+            0
+          ],
+          "coefficient": "-437110625/140608"
+        },
+        {
+          "exponents_x2_through_x6": [
+            3,
+            0,
+            1,
+            1,
+            1
+          ],
+          "coefficient": "6216875/29744"
+        },
+        {
+          "exponents_x2_through_x6": [
+            3,
+            1,
+            3,
+            0,
+            0
+          ],
+          "coefficient": "-276677734375/102081408"
+        },
+        {
+          "exponents_x2_through_x6": [
+            3,
+            2,
+            1,
+            1,
+            0
+          ],
+          "coefficient": "1157919765625/17013568"
+        },
+        {
+          "exponents_x2_through_x6": [
+            3,
+            3,
+            0,
+            0,
+            1
+          ],
+          "coefficient": "-37515625/122694"
+        },
+        {
+          "exponents_x2_through_x6": [
+            3,
+            5,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "6565234375/6380088"
+        },
+        {
+          "exponents_x2_through_x6": [
+            4,
+            0,
+            2,
+            1,
+            0
+          ],
+          "coefficient": "-54681703125/34027136"
+        },
+        {
+          "exponents_x2_through_x6": [
+            4,
+            1,
+            0,
+            2,
+            0
+          ],
+          "coefficient": "56122303125/1546688"
+        },
+        {
+          "exponents_x2_through_x6": [
+            4,
+            1,
+            1,
+            0,
+            1
+          ],
+          "coefficient": "-669921875/654368"
+        },
+        {
+          "exponents_x2_through_x6": [
+            4,
+            3,
+            1,
+            0,
+            0
+          ],
+          "coefficient": "-148195159765625/1122895488"
+        },
+        {
+          "exponents_x2_through_x6": [
+            5,
+            0,
+            0,
+            1,
+            1
+          ],
+          "coefficient": "-13321875/59488"
+        },
+        {
+          "exponents_x2_through_x6": [
+            5,
+            1,
+            2,
+            0,
+            0
+          ],
+          "coefficient": "303474609375/34027136"
+        },
+        {
+          "exponents_x2_through_x6": [
+            5,
+            2,
+            0,
+            1,
+            0
+          ],
+          "coefficient": "-4767083671875/34027136"
+        },
+        {
+          "exponents_x2_through_x6": [
+            6,
+            0,
+            1,
+            1,
+            0
+          ],
+          "coefficient": "8762578125/3093376"
+        },
+        {
+          "exponents_x2_through_x6": [
+            6,
+            1,
+            0,
+            0,
+            1
+          ],
+          "coefficient": "562734375/654368"
+        },
+        {
+          "exponents_x2_through_x6": [
+            6,
+            3,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "66966060546875/374298496"
+        },
+        {
+          "exponents_x2_through_x6": [
+            7,
+            1,
+            1,
+            0,
+            0
+          ],
+          "coefficient": "-418318359375/34027136"
+        },
+        {
+          "exponents_x2_through_x6": [
+            8,
+            0,
+            0,
+            1,
+            0
+          ],
+          "coefficient": "-53574609375/34027136"
+        },
+        {
+          "exponents_x2_through_x6": [
+            9,
+            1,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "202412109375/34027136"
+        }
+      ]
+    },
+    {
+      "coefficient_index": 4,
+      "weighted_degree": 28,
+      "x7_power": 1,
+      "terms": [
+        {
+          "exponents_x2_through_x6": [
+            0,
+            0,
+            2,
+            4,
+            0
+          ],
+          "coefficient": "-55883275/16451136"
+        },
+        {
+          "exponents_x2_through_x6": [
+            0,
+            0,
+            3,
+            2,
+            1
+          ],
+          "coefficient": "-14706125/27840384"
+        },
+        {
+          "exponents_x2_through_x6": [
+            0,
+            1,
+            0,
+            5,
+            0
+          ],
+          "coefficient": "6470695/5483712"
+        },
+        {
+          "exponents_x2_through_x6": [
+            0,
+            1,
+            1,
+            3,
+            1
+          ],
+          "coefficient": "-2941225/64896"
+        },
+        {
+          "exponents_x2_through_x6": [
+            0,
+            1,
+            5,
+            1,
+            0
+          ],
+          "coefficient": "-12867859375/561447744"
+        },
+        {
+          "exponents_x2_through_x6": [
+            0,
+            2,
+            3,
+            2,
+            0
+          ],
+          "coefficient": "280519334375/1447699968"
+        },
+        {
+          "exponents_x2_through_x6": [
+            0,
+            2,
+            4,
+            0,
+            1
+          ],
+          "coefficient": "115810734375/374298496"
+        },
+        {
+          "exponents_x2_through_x6": [
+            0,
+            3,
+            1,
+            3,
+            0
+          ],
+          "coefficient": "514714375/3374592"
+        },
+        {
+          "exponents_x2_through_x6": [
+            0,
+            4,
+            4,
+            0,
+            0
+          ],
+          "coefficient": "141868149609375/16469133824"
+        },
+        {
+          "exponents_x2_through_x6": [
+            1,
+            0,
+            0,
+            4,
+            1
+          ],
+          "coefficient": "-10168235/210912"
+        },
+        {
+          "exponents_x2_through_x6": [
+            1,
+            0,
+            4,
+            2,
+            0
+          ],
+          "coefficient": "-29779903125/1769411072"
+        },
+        {
+          "exponents_x2_through_x6": [
+            1,
+            1,
+            2,
+            3,
+            0
+          ],
+          "coefficient": "945089123125/1447699968"
+        },
+        {
+          "exponents_x2_through_x6": [
+            1,
+            1,
+            3,
+            1,
+            1
+          ],
+          "coefficient": "17279696875/27840384"
+        },
+        {
+          "exponents_x2_through_x6": [
+            1,
+            2,
+            0,
+            4,
+            0
+          ],
+          "coefficient": "2926518875/21934848"
+        },
+        {
+          "exponents_x2_through_x6": [
+            1,
+            2,
+            1,
+            2,
+            1
+          ],
+          "coefficient": "73530625/118976"
+        },
+        {
+          "exponents_x2_through_x6": [
+            1,
+            2,
+            5,
+            0,
+            0
+          ],
+          "coefficient": "-8042412109375/4491581952"
+        },
+        {
+          "exponents_x2_through_x6": [
+            1,
+            3,
+            3,
+            1,
+            0
+          ],
+          "coefficient": "6162353515390625/175171696128"
+        },
+        {
+          "exponents_x2_through_x6": [
+            1,
+            4,
+            1,
+            2,
+            0
+          ],
+          "coefficient": "-12867859375/6186752"
+        },
+        {
+          "exponents_x2_through_x6": [
+            2,
+            0,
+            1,
+            4,
+            0
+          ],
+          "coefficient": "3111395875/7311616"
+        },
+        {
+          "exponents_x2_through_x6": [
+            2,
+            0,
+            2,
+            2,
+            1
+          ],
+          "coefficient": "976906875/3093376"
+        },
+        {
+          "exponents_x2_through_x6": [
+            2,
+            1,
+            0,
+            3,
+            1
+          ],
+          "coefficient": "720600125/843648"
+        },
+        {
+          "exponents_x2_through_x6": [
+            2,
+            1,
+            4,
+            1,
+            0
+          ],
+          "coefficient": "-203229456171875/58390565376"
+        },
+        {
+          "exponents_x2_through_x6": [
+            2,
+            2,
+            2,
+            2,
+            0
+          ],
+          "coefficient": "266164318109375/5308233216"
+        },
+        {
+          "exponents_x2_through_x6": [
+            2,
+            2,
+            3,
+            0,
+            1
+          ],
+          "coefficient": "-6222529140625/1684343232"
+        },
+        {
+          "exponents_x2_through_x6": [
+            2,
+            3,
+            0,
+            3,
+            0
+          ],
+          "coefficient": "-417286296875/160855552"
+        },
+        {
+          "exponents_x2_through_x6": [
+            2,
+            3,
+            1,
+            1,
+            1
+          ],
+          "coefficient": "-1838265625/654368"
+        },
+        {
+          "exponents_x2_through_x6": [
+            2,
+            4,
+            3,
+            0,
+            0
+          ],
+          "coefficient": "-131597989345703125/963444328704"
+        },
+        {
+          "exponents_x2_through_x6": [
+            2,
+            5,
+            1,
+            1,
+            0
+          ],
+          "coefficient": "321696484375/34027136"
+        },
+        {
+          "exponents_x2_through_x6": [
+            3,
+            0,
+            3,
+            2,
+            0
+          ],
+          "coefficient": "-1593776296875/884705536"
+        },
+        {
+          "exponents_x2_through_x6": [
+            3,
+            1,
+            1,
+            3,
+            0
+          ],
+          "coefficient": "203207134375/6186752"
+        },
+        {
+          "exponents_x2_through_x6": [
+            3,
+            1,
+            2,
+            1,
+            1
+          ],
+          "coefficient": "-171483921875/34027136"
+        },
+        {
+          "exponents_x2_through_x6": [
+            3,
+            2,
+            0,
+            2,
+            1
+          ],
+          "coefficient": "-8771153125/1546688"
+        },
+        {
+          "exponents_x2_through_x6": [
+            3,
+            2,
+            4,
+            0,
+            0
+          ],
+          "coefficient": "1378929001953125/58390565376"
+        },
+        {
+          "exponents_x2_through_x6": [
+            3,
+            3,
+            2,
+            1,
+            0
+          ],
+          "coefficient": "-72051878174609375/175171696128"
+        },
+        {
+          "exponents_x2_through_x6": [
+            3,
+            4,
+            0,
+            2,
+            0
+          ],
+          "coefficient": "47050408671875/2654116608"
+        },
+        {
+          "exponents_x2_through_x6": [
+            3,
+            4,
+            1,
+            0,
+            1
+          ],
+          "coefficient": "45956640625/10797072"
+        },
+        {
+          "exponents_x2_through_x6": [
+            3,
+            6,
+            1,
+            0,
+            0
+          ],
+          "coefficient": "-8042412109375/561447744"
+        },
+        {
+          "exponents_x2_through_x6": [
+            4,
+            0,
+            0,
+            4,
+            0
+          ],
+          "coefficient": "74066348125/7311616"
+        },
+        {
+          "exponents_x2_through_x6": [
+            4,
+            0,
+            1,
+            2,
+            1
+          ],
+          "coefficient": "-4164234375/3093376"
+        },
+        {
+          "exponents_x2_through_x6": [
+            4,
+            1,
+            3,
+            1,
+            0
+          ],
+          "coefficient": "163402118359375/4865880448"
+        },
+        {
+          "exponents_x2_through_x6": [
+            4,
+            2,
+            1,
+            2,
+            0
+          ],
+          "coefficient": "-56617268203125/136108544"
+        },
+        {
+          "exponents_x2_through_x6": [
+            4,
+            2,
+            2,
+            0,
+            1
+          ],
+          "coefficient": "1503438671875/93574624"
+        },
+        {
+          "exponents_x2_through_x6": [
+            4,
+            3,
+            0,
+            1,
+            1
+          ],
+          "coefficient": "32826171875/1963104"
+        },
+        {
+          "exponents_x2_through_x6": [
+            4,
+            4,
+            2,
+            0,
+            0
+          ],
+          "coefficient": "384155005732421875/481722164352"
+        },
+        {
+          "exponents_x2_through_x6": [
+            4,
+            5,
+            0,
+            1,
+            0
+          ],
+          "coefficient": "-59513849609375/1122895488"
+        },
+        {
+          "exponents_x2_through_x6": [
+            5,
+            0,
+            2,
+            2,
+            0
+          ],
+          "coefficient": "2236869140625/221176384"
+        },
+        {
+          "exponents_x2_through_x6": [
+            5,
+            1,
+            0,
+            3,
+            0
+          ],
+          "coefficient": "-25134680921875/160855552"
+        },
+        {
+          "exponents_x2_through_x6": [
+            5,
+            1,
+            1,
+            1,
+            1
+          ],
+          "coefficient": "443997421875/34027136"
+        },
+        {
+          "exponents_x2_through_x6": [
+            5,
+            2,
+            3,
+            0,
+            0
+          ],
+          "coefficient": "-1157943212890625/9731760896"
+        },
+        {
+          "exponents_x2_through_x6": [
+            5,
+            3,
+            1,
+            1,
+            0
+          ],
+          "coefficient": "31762111513671875/19463521792"
+        },
+        {
+          "exponents_x2_through_x6": [
+            5,
+            4,
+            0,
+            0,
+            1
+          ],
+          "coefficient": "-2593267578125/140361936"
+        },
+        {
+          "exponents_x2_through_x6": [
+            5,
+            6,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "143614501953125/2432940224"
+        },
+        {
+          "exponents_x2_through_x6": [
+            6,
+            0,
+            0,
+            2,
+            1
+          ],
+          "coefficient": "4453640625/3093376"
+        },
+        {
+          "exponents_x2_through_x6": [
+            6,
+            1,
+            2,
+            1,
+            0
+          ],
+          "coefficient": "-1082602458984375/9731760896"
+        },
+        {
+          "exponents_x2_through_x6": [
+            6,
+            2,
+            0,
+            2,
+            0
+          ],
+          "coefficient": "1586182196484375/1769411072"
+        },
+        {
+          "exponents_x2_through_x6": [
+            6,
+            2,
+            1,
+            0,
+            1
+          ],
+          "coefficient": "-5641412109375/187149248"
+        },
+        {
+          "exponents_x2_through_x6": [
+            6,
+            4,
+            1,
+            0,
+            0
+          ],
+          "coefficient": "-223192528466796875/107049369856"
+        },
+        {
+          "exponents_x2_through_x6": [
+            7,
+            0,
+            1,
+            2,
+            0
+          ],
+          "coefficient": "-15805198828125/884705536"
+        },
+        {
+          "exponents_x2_through_x6": [
+            7,
+            1,
+            0,
+            1,
+            1
+          ],
+          "coefficient": "-371806640625/34027136"
+        },
+        {
+          "exponents_x2_through_x6": [
+            7,
+            2,
+            2,
+            0,
+            0
+          ],
+          "coefficient": "2776039013671875/9731760896"
+        },
+        {
+          "exponents_x2_through_x6": [
+            7,
+            3,
+            0,
+            1,
+            0
+          ],
+          "coefficient": "-44119805283203125/19463521792"
+        },
+        {
+          "exponents_x2_through_x6": [
+            8,
+            1,
+            1,
+            1,
+            0
+          ],
+          "coefficient": "747240908203125/4865880448"
+        },
+        {
+          "exponents_x2_through_x6": [
+            8,
+            2,
+            0,
+            0,
+            1
+          ],
+          "coefficient": "7727548828125/374298496"
+        },
+        {
+          "exponents_x2_through_x6": [
+            8,
+            4,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "456303133056640625/214098739712"
+        },
+        {
+          "exponents_x2_through_x6": [
+            9,
+            0,
+            0,
+            2,
+            0
+          ],
+          "coefficient": "17558173828125/1769411072"
+        },
+        {
+          "exponents_x2_through_x6": [
+            9,
+            2,
+            1,
+            0,
+            0
+          ],
+          "coefficient": "-573536865234375/1769411072"
+        },
+        {
+          "exponents_x2_through_x6": [
+            10,
+            1,
+            0,
+            1,
+            0
+          ],
+          "coefficient": "-1445416259765625/19463521792"
+        },
+        {
+          "exponents_x2_through_x6": [
+            11,
+            2,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "2695418701171875/19463521792"
+        }
+      ]
+    },
+    {
+      "coefficient_index": 5,
+      "weighted_degree": 35,
+      "x7_power": 0,
+      "terms": [
+        {
+          "exponents_x2_through_x6": [
+            0,
+            0,
+            0,
+            7,
+            0
+          ],
+          "coefficient": "99648703/106932384"
+        },
+        {
+          "exponents_x2_through_x6": [
+            0,
+            0,
+            1,
+            5,
+            1
+          ],
+          "coefficient": "45294865/8225568"
+        },
+        {
+          "exponents_x2_through_x6": [
+            0,
+            0,
+            2,
+            3,
+            2
+          ],
+          "coefficient": "20588575/2530944"
+        },
+        {
+          "exponents_x2_through_x6": [
+            0,
+            0,
+            5,
+            3,
+            0
+          ],
+          "coefficient": "-54045009375/23002343936"
+        },
+        {
+          "exponents_x2_through_x6": [
+            0,
+            1,
+            3,
+            4,
+            0
+          ],
+          "coefficient": "3603000625/142576512"
+        },
+        {
+          "exponents_x2_through_x6": [
+            0,
+            1,
+            4,
+            2,
+            1
+          ],
+          "coefficient": "18015003125/5308233216"
+        },
+        {
+          "exponents_x2_through_x6": [
+            0,
+            2,
+            1,
+            5,
+            0
+          ],
+          "coefficient": "-3603000625/131609088"
+        },
+        {
+          "exponents_x2_through_x6": [
+            0,
+            2,
+            2,
+            3,
+            1
+          ],
+          "coefficient": "147723025625/1447699968"
+        },
+        {
+          "exponents_x2_through_x6": [
+            0,
+            2,
+            6,
+            1,
+            0
+          ],
+          "coefficient": "15763127734375/214098739712"
+        },
+        {
+          "exponents_x2_through_x6": [
+            0,
+            3,
+            4,
+            2,
+            0
+          ],
+          "coefficient": "-3152625546875/7298820672"
+        },
+        {
+          "exponents_x2_through_x6": [
+            0,
+            3,
+            5,
+            0,
+            1
+          ],
+          "coefficient": "-141868149609375/214098739712"
+        },
+        {
+          "exponents_x2_through_x6": [
+            0,
+            4,
+            2,
+            3,
+            0
+          ],
+          "coefficient": "-630525109375/1447699968"
+        },
+        {
+          "exponents_x2_through_x6": [
+            0,
+            5,
+            5,
+            0,
+            0
+          ],
+          "coefficient": "-24826926181640625/2355086136832"
+        },
+        {
+          "exponents_x2_through_x6": [
+            1,
+            0,
+            2,
+            5,
+            0
+          ],
+          "coefficient": "-514714375/95051008"
+        },
+        {
+          "exponents_x2_through_x6": [
+            1,
+            0,
+            3,
+            3,
+            1
+          ],
+          "coefficient": "-13897288125/160855552"
+        },
+        {
+          "exponents_x2_through_x6": [
+            1,
+            1,
+            0,
+            6,
+            0
+          ],
+          "coefficient": "-35556469025/855459072"
+        },
+        {
+          "exponents_x2_through_x6": [
+            1,
+            1,
+            1,
+            4,
+            1
+          ],
+          "coefficient": "26456318875/131609088"
+        },
+        {
+          "exponents_x2_through_x6": [
+            1,
+            1,
+            2,
+            2,
+            2
+          ],
+          "coefficient": "-514714375/4640064"
+        },
+        {
+          "exponents_x2_through_x6": [
+            1,
+            1,
+            5,
+            2,
+            0
+          ],
+          "coefficient": "35579631171875/253025783296"
+        },
+        {
+          "exponents_x2_through_x6": [
+            1,
+            2,
+            3,
+            3,
+            0
+          ],
+          "coefficient": "-74131737859375/34503515904"
+        },
+        {
+          "exponents_x2_through_x6": [
+            1,
+            2,
+            4,
+            1,
+            1
+          ],
+          "coefficient": "-450375078125/228088146"
+        },
+        {
+          "exponents_x2_through_x6": [
+            1,
+            3,
+            1,
+            4,
+            0
+          ],
+          "coefficient": "-666555115625/1447699968"
+        },
+        {
+          "exponents_x2_through_x6": [
+            1,
+            3,
+            2,
+            2,
+            1
+          ],
+          "coefficient": "-3693075640625/2654116608"
+        },
+        {
+          "exponents_x2_through_x6": [
+            1,
+            3,
+            6,
+            0,
+            0
+          ],
+          "coefficient": "394078193359375/107049369856"
+        },
+        {
+          "exponents_x2_through_x6": [
+            1,
+            4,
+            4,
+            1,
+            0
+          ],
+          "coefficient": "-8590904615234375/160574054784"
+        },
+        {
+          "exponents_x2_through_x6": [
+            1,
+            5,
+            2,
+            2,
+            0
+          ],
+          "coefficient": "15763127734375/2654116608"
+        },
+        {
+          "exponents_x2_through_x6": [
+            2,
+            0,
+            0,
+            5,
+            1
+          ],
+          "coefficient": "3655942675/21934848"
+        },
+        {
+          "exponents_x2_through_x6": [
+            2,
+            0,
+            1,
+            3,
+            2
+          ],
+          "coefficient": "-14706125/421824"
+        },
+        {
+          "exponents_x2_through_x6": [
+            2,
+            0,
+            4,
+            3,
+            0
+          ],
+          "coefficient": "6987247640625/23002343936"
+        },
+        {
+          "exponents_x2_through_x6": [
+            2,
+            1,
+            2,
+            4,
+            0
+          ],
+          "coefficient": "-2838649778125/1045561088"
+        },
+        {
+          "exponents_x2_through_x6": [
+            2,
+            1,
+            3,
+            2,
+            1
+          ],
+          "coefficient": "-321696484375/408325632"
+        },
+        {
+          "exponents_x2_through_x6": [
+            2,
+            2,
+            0,
+            5,
+            0
+          ],
+          "coefficient": "104487018125/570306048"
+        },
+        {
+          "exponents_x2_through_x6": [
+            2,
+            2,
+            1,
+            3,
+            1
+          ],
+          "coefficient": "-3183508409375/723849984"
+        },
+        {
+          "exponents_x2_through_x6": [
+            2,
+            2,
+            2,
+            1,
+            2
+          ],
+          "coefficient": "12867859375/25520352"
+        },
+        {
+          "exponents_x2_through_x6": [
+            2,
+            2,
+            5,
+            1,
+            0
+          ],
+          "coefficient": "42909485568359375/4174925424384"
+        },
+        {
+          "exponents_x2_through_x6": [
+            2,
+            3,
+            3,
+            2,
+            0
+          ],
+          "coefficient": "-36815910761328125/379538674944"
+        },
+        {
+          "exponents_x2_through_x6": [
+            2,
+            3,
+            4,
+            0,
+            1
+          ],
+          "coefficient": "6631773025390625/642296219136"
+        },
+        {
+          "exponents_x2_through_x6": [
+            2,
+            4,
+            1,
+            3,
+            0
+          ],
+          "coefficient": "208523661171875/15924699648"
+        },
+        {
+          "exponents_x2_through_x6": [
+            2,
+            4,
+            2,
+            1,
+            1
+          ],
+          "coefficient": "92326891015625/14597641344"
+        },
+        {
+          "exponents_x2_through_x6": [
+            2,
+            5,
+            4,
+            0,
+            0
+          ],
+          "coefficient": "731015048681640625/3532629205248"
+        },
+        {
+          "exponents_x2_through_x6": [
+            2,
+            6,
+            2,
+            1,
+            0
+          ],
+          "coefficient": "-394078193359375/14597641344"
+        },
+        {
+          "exponents_x2_through_x6": [
+            3,
+            0,
+            1,
+            5,
+            0
+          ],
+          "coefficient": "-58750969375/47525504"
+        },
+        {
+          "exponents_x2_through_x6": [
+            3,
+            0,
+            2,
+            3,
+            1
+          ],
+          "coefficient": "-31985821875/160855552"
+        },
+        {
+          "exponents_x2_through_x6": [
+            3,
+            1,
+            0,
+            4,
+            1
+          ],
+          "coefficient": "-158017313125/43869696"
+        },
+        {
+          "exponents_x2_through_x6": [
+            3,
+            1,
+            1,
+            2,
+            2
+          ],
+          "coefficient": "367653125/773344"
+        },
+        {
+          "exponents_x2_through_x6": [
+            3,
+            1,
+            4,
+            2,
+            0
+          ],
+          "coefficient": "1781876826953125/253025783296"
+        },
+        {
+          "exponents_x2_through_x6": [
+            3,
+            2,
+            2,
+            3,
+            0
+          ],
+          "coefficient": "-466781598828125/5750585984"
+        },
+        {
+          "exponents_x2_through_x6": [
+            3,
+            2,
+            3,
+            1,
+            1
+          ],
+          "coefficient": "260895848828125/14597641344"
+        },
+        {
+          "exponents_x2_through_x6": [
+            3,
+            3,
+            0,
+            4,
+            0
+          ],
+          "coefficient": "94720312859375/18820099584"
+        },
+        {
+          "exponents_x2_through_x6": [
+            3,
+            3,
+            1,
+            2,
+            1
+          ],
+          "coefficient": "118963359921875/3981174912"
+        },
+        {
+          "exponents_x2_through_x6": [
+            3,
+            3,
+            2,
+            0,
+            2
+          ],
+          "coefficient": "-321696484375/421085808"
+        },
+        {
+          "exponents_x2_through_x6": [
+            3,
+            3,
+            5,
+            0,
+            0
+          ],
+          "coefficient": "-129764319384765625/2087462712192"
+        },
+        {
+          "exponents_x2_through_x6": [
+            3,
+            4,
+            3,
+            1,
+            0
+          ],
+          "coefficient": "2281318661357421875/2783283616256"
+        },
+        {
+          "exponents_x2_through_x6": [
+            3,
+            5,
+            1,
+            2,
+            0
+          ],
+          "coefficient": "-8388235830078125/87585848064"
+        },
+        {
+          "exponents_x2_through_x6": [
+            3,
+            5,
+            2,
+            0,
+            1
+          ],
+          "coefficient": "-2308172275390625/240861082176"
+        },
+        {
+          "exponents_x2_through_x6": [
+            3,
+            7,
+            2,
+            0,
+            0
+          ],
+          "coefficient": "9851954833984375/240861082176"
+        },
+        {
+          "exponents_x2_through_x6": [
+            4,
+            0,
+            0,
+            3,
+            2
+          ],
+          "coefficient": "10504375/281216"
+        },
+        {
+          "exponents_x2_through_x6": [
+            4,
+            0,
+            3,
+            3,
+            0
+          ],
+          "coefficient": "48612934453125/23002343936"
+        },
+        {
+          "exponents_x2_through_x6": [
+            4,
+            1,
+            1,
+            4,
+            0
+          ],
+          "coefficient": "-80639198171875/2091122176"
+        },
+        {
+          "exponents_x2_through_x6": [
+            4,
+            1,
+            2,
+            2,
+            1
+          ],
+          "coefficient": "1295977265625/136108544"
+        },
+        {
+          "exponents_x2_through_x6": [
+            4,
+            2,
+            0,
+            3,
+            1
+          ],
+          "coefficient": "14880760234375/482566656"
+        },
+        {
+          "exponents_x2_through_x6": [
+            4,
+            2,
+            1,
+            1,
+            2
+          ],
+          "coefficient": "-9191328125/4253392"
+        },
+        {
+          "exponents_x2_through_x6": [
+            4,
+            2,
+            4,
+            1,
+            0
+          ],
+          "coefficient": "-177487992841796875/1391641808128"
+        },
+        {
+          "exponents_x2_through_x6": [
+            4,
+            3,
+            2,
+            2,
+            0
+          ],
+          "coefficient": "18392996494140625/15814111456"
+        },
+        {
+          "exponents_x2_through_x6": [
+            4,
+            3,
+            3,
+            0,
+            1
+          ],
+          "coefficient": "-1600440009765625/29195282688"
+        },
+        {
+          "exponents_x2_through_x6": [
+            4,
+            4,
+            0,
+            3,
+            0
+          ],
+          "coefficient": "-6718631076171875/103510547712"
+        },
+        {
+          "exponents_x2_through_x6": [
+            4,
+            4,
+            1,
+            1,
+            1
+          ],
+          "coefficient": "-1889966845703125/21896462016"
+        },
+        {
+          "exponents_x2_through_x6": [
+            4,
+            5,
+            3,
+            0,
+            0
+          ],
+          "coefficient": "-6075841288330078125/3827014972352"
+        },
+        {
+          "exponents_x2_through_x6": [
+            4,
+            6,
+            1,
+            1,
+            0
+          ],
+          "coefficient": "139897758642578125/481722164352"
+        },
+        {
+          "exponents_x2_through_x6": [
+            5,
+            0,
+            0,
+            5,
+            0
+          ],
+          "coefficient": "-151735696875/11881376"
+        },
+        {
+          "exponents_x2_through_x6": [
+            5,
+            0,
+            1,
+            3,
+            1
+          ],
+          "coefficient": "328524328125/160855552"
+        },
+        {
+          "exponents_x2_through_x6": [
+            5,
+            1,
+            0,
+            2,
+            2
+          ],
+          "coefficient": "-787828125/1546688"
+        },
+        {
+          "exponents_x2_through_x6": [
+            5,
+            1,
+            3,
+            2,
+            0
+          ],
+          "coefficient": "-1883992482421875/23002343936"
+        },
+        {
+          "exponents_x2_through_x6": [
+            5,
+            2,
+            1,
+            3,
+            0
+          ],
+          "coefficient": "8826570268359375/11501171968"
+        },
+        {
+          "exponents_x2_through_x6": [
+            5,
+            2,
+            2,
+            1,
+            1
+          ],
+          "coefficient": "-348121552734375/4865880448"
+        },
+        {
+          "exponents_x2_through_x6": [
+            5,
+            3,
+            0,
+            2,
+            1
+          ],
+          "coefficient": "-346375200390625/2654116608"
+        },
+        {
+          "exponents_x2_through_x6": [
+            5,
+            3,
+            1,
+            0,
+            2
+          ],
+          "coefficient": "229783203125/70180968"
+        },
+        {
+          "exponents_x2_through_x6": [
+            5,
+            3,
+            4,
+            0,
+            0
+          ],
+          "coefficient": "279272760498046875/695820904064"
+        },
+        {
+          "exponents_x2_through_x6": [
+            5,
+            4,
+            2,
+            1,
+            0
+          ],
+          "coefficient": "-13029954191064453125/2783283616256"
+        },
+        {
+          "exponents_x2_through_x6": [
+            5,
+            5,
+            0,
+            2,
+            0
+          ],
+          "coefficient": "60213539462890625/189769337472"
+        },
+        {
+          "exponents_x2_through_x6": [
+            5,
+            5,
+            1,
+            0,
+            1
+          ],
+          "coefficient": "5509052294921875/60215270544"
+        },
+        {
+          "exponents_x2_through_x6": [
+            5,
+            7,
+            1,
+            0,
+            0
+          ],
+          "coefficient": "-7037110595703125/21896462016"
+        },
+        {
+          "exponents_x2_through_x6": [
+            6,
+            0,
+            2,
+            3,
+            0
+          ],
+          "coefficient": "-399606120703125/23002343936"
+        },
+        {
+          "exponents_x2_through_x6": [
+            6,
+            1,
+            0,
+            4,
+            0
+          ],
+          "coefficient": "509114230078125/2091122176"
+        },
+        {
+          "exponents_x2_through_x6": [
+            6,
+            1,
+            1,
+            2,
+            1
+          ],
+          "coefficient": "-53237485546875/1769411072"
+        },
+        {
+          "exponents_x2_through_x6": [
+            6,
+            2,
+            0,
+            1,
+            2
+          ],
+          "coefficient": "19695703125/8506784"
+        },
+        {
+          "exponents_x2_through_x6": [
+            6,
+            2,
+            3,
+            1,
+            0
+          ],
+          "coefficient": "438926130029296875/695820904064"
+        },
+        {
+          "exponents_x2_through_x6": [
+            6,
+            3,
+            1,
+            2,
+            0
+          ],
+          "coefficient": "-593315166376953125/126512891648"
+        },
+        {
+          "exponents_x2_through_x6": [
+            6,
+            3,
+            2,
+            0,
+            1
+          ],
+          "coefficient": "15493132470703125/107049369856"
+        },
+        {
+          "exponents_x2_through_x6": [
+            6,
+            4,
+            0,
+            1,
+            1
+          ],
+          "coefficient": "3976398330078125/14597641344"
+        },
+        {
+          "exponents_x2_through_x6": [
+            6,
+            5,
+            2,
+            0,
+            0
+          ],
+          "coefficient": "92142920838623046875/15308059889408"
+        },
+        {
+          "exponents_x2_through_x6": [
+            6,
+            6,
+            0,
+            1,
+            0
+          ],
+          "coefficient": "-2244034038818359375/3131194068288"
+        },
+        {
+          "exponents_x2_through_x6": [
+            7,
+            0,
+            0,
+            3,
+            1
+          ],
+          "coefficient": "-420362578125/160855552"
+        },
+        {
+          "exponents_x2_through_x6": [
+            7,
+            1,
+            2,
+            2,
+            0
+          ],
+          "coefficient": "74587135341796875/253025783296"
+        },
+        {
+          "exponents_x2_through_x6": [
+            7,
+            2,
+            0,
+            3,
+            0
+          ],
+          "coefficient": "-5293515650390625/2875292992"
+        },
+        {
+          "exponents_x2_through_x6": [
+            7,
+            2,
+            1,
+            1,
+            1
+          ],
+          "coefficient": "51701220703125/374298496"
+        },
+        {
+          "exponents_x2_through_x6": [
+            7,
+            3,
+            0,
+            0,
+            2
+          ],
+          "coefficient": "-164130859375/46787312"
+        },
+        {
+          "exponents_x2_through_x6": [
+            7,
+            3,
+            3,
+            0,
+            0
+          ],
+          "coefficient": "-467465203857421875/347910452032"
+        },
+        {
+          "exponents_x2_through_x6": [
+            7,
+            4,
+            1,
+            1,
+            0
+          ],
+          "coefficient": "2601749040283203125/214098739712"
+        },
+        {
+          "exponents_x2_through_x6": [
+            7,
+            5,
+            0,
+            0,
+            1
+          ],
+          "coefficient": "-17951812744140625/80287027392"
+        },
+        {
+          "exponents_x2_through_x6": [
+            7,
+            7,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "487571234130859375/782798517072"
+        },
+        {
+          "exponents_x2_through_x6": [
+            8,
+            0,
+            1,
+            3,
+            0
+          ],
+          "coefficient": "29754580078125/884705536"
+        },
+        {
+          "exponents_x2_through_x6": [
+            8,
+            1,
+            0,
+            2,
+            1
+          ],
+          "coefficient": "6288556640625/221176384"
+        },
+        {
+          "exponents_x2_through_x6": [
+            8,
+            2,
+            2,
+            1,
+            0
+          ],
+          "coefficient": "-4249803412353515625/2783283616256"
+        },
+        {
+          "exponents_x2_through_x6": [
+            8,
+            3,
+            0,
+            2,
+            0
+          ],
+          "coefficient": "109185592236328125/15814111456"
+        },
+        {
+          "exponents_x2_through_x6": [
+            8,
+            3,
+            1,
+            0,
+            1
+          ],
+          "coefficient": "-43170519287109375/214098739712"
+        },
+        {
+          "exponents_x2_through_x6": [
+            8,
+            5,
+            1,
+            0,
+            0
+          ],
+          "coefficient": "-27205613177490234375/2355086136832"
+        },
+        {
+          "exponents_x2_through_x6": [
+            9,
+            1,
+            1,
+            2,
+            0
+          ],
+          "coefficient": "-319703466796875/748596992"
+        },
+        {
+          "exponents_x2_through_x6": [
+            9,
+            2,
+            0,
+            1,
+            1
+          ],
+          "coefficient": "-494854541015625/4865880448"
+        },
+        {
+          "exponents_x2_through_x6": [
+            9,
+            3,
+            2,
+            0,
+            0
+          ],
+          "coefficient": "3464905023193359375/1391641808128"
+        },
+        {
+          "exponents_x2_through_x6": [
+            9,
+            4,
+            0,
+            1,
+            0
+          ],
+          "coefficient": "-35754779315185546875/2783283616256"
+        },
+        {
+          "exponents_x2_through_x6": [
+            10,
+            0,
+            0,
+            3,
+            0
+          ],
+          "coefficient": "-111511845703125/5750585984"
+        },
+        {
+          "exponents_x2_through_x6": [
+            10,
+            2,
+            1,
+            1,
+            0
+          ],
+          "coefficient": "189527178955078125/107049369856"
+        },
+        {
+          "exponents_x2_through_x6": [
+            10,
+            3,
+            0,
+            0,
+            1
+          ],
+          "coefficient": "25507694091796875/214098739712"
+        },
+        {
+          "exponents_x2_through_x6": [
+            10,
+            5,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "72657141082763671875/7654029944704"
+        },
+        {
+          "exponents_x2_through_x6": [
+            11,
+            1,
+            0,
+            2,
+            0
+          ],
+          "coefficient": "13450607666015625/63256445824"
+        },
+        {
+          "exponents_x2_through_x6": [
+            11,
+            3,
+            1,
+            0,
+            0
+          ],
+          "coefficient": "-9891815185546875/4117283456"
+        },
+        {
+          "exponents_x2_through_x6": [
+            12,
+            2,
+            0,
+            1,
+            0
+          ],
+          "coefficient": "-537040777587890625/695820904064"
+        },
+        {
+          "exponents_x2_through_x6": [
+            13,
+            3,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "80547637939453125/86977613008"
+        }
+      ]
+    }
+  ],
+  "necessary_additional_algebra_generators": [
+    {
+      "centered_moment": 8,
+      "earlier_weighted_monomial_count": 6,
+      "earlier_span_rank": 6,
+      "rank_after_adjoining_moment": 7,
+      "prime": 1000003
+    },
+    {
+      "centered_moment": 9,
+      "earlier_weighted_monomial_count": 7,
+      "earlier_span_rank": 7,
+      "rank_after_adjoining_moment": 8,
+      "prime": 1000003
+    },
+    {
+      "centered_moment": 10,
+      "earlier_weighted_monomial_count": 11,
+      "earlier_span_rank": 11,
+      "rank_after_adjoining_moment": 12,
+      "prime": 1000003
+    },
+    {
+      "centered_moment": 11,
+      "earlier_weighted_monomial_count": 13,
+      "earlier_span_rank": 13,
+      "rank_after_adjoining_moment": 14,
+      "prime": 1000003
+    },
+    {
+      "centered_moment": 12,
+      "earlier_weighted_monomial_count": 20,
+      "earlier_span_rank": 20,
+      "rank_after_adjoining_moment": 21,
+      "prime": 1000003
+    }
+  ],
+  "post_cutoff_interpolation_primes": [
+    1000000007,
+    1000000009,
+    1000000033,
+    1000000087,
+    1000000093,
+    1000000097,
+    1000000103
+  ],
+  "dense_operator_slice": {
+    "operator": "[[0,1,0],[a,b,c],[d,e,f]]",
+    "orbit_coordinate_minor_determinant": 4,
+    "dominance_conclusion": "SL2 times the affine slice is dense in End(Sym^2)"
+  },
+  "post_cutoff_generation": [
+    {
+      "centered_moment": 13,
+      "weighted_monomial_count": 23,
+      "independent_expression_monomial_count": 23,
+      "nonzero_expression_term_count": 23,
+      "dense_slice_target_term_count": 1543,
+      "terms": [
+        {
+          "exponents_x2_through_x12": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "184041/34960"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "127413/17480"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "3575/368"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            0,
+            2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-22096305/475456"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "coefficient": "1001/92"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            1,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-20650707/475456"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-43618575/475456"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            2,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-24309285/475456"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            3,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "93767625/475456"
+        },
+        {
+          "exponents_x2_through_x12": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "coefficient": "117/10"
+        },
+        {
+          "exponents_x2_through_x12": [
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-38351313/475456"
+        },
+        {
+          "exponents_x2_through_x12": [
+            1,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-47769579/475456"
+        },
+        {
+          "exponents_x2_through_x12": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-853281/6992"
+        },
+        {
+          "exponents_x2_through_x12": [
+            1,
+            1,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "147349125/237728"
+        },
+        {
+          "exponents_x2_through_x12": [
+            1,
+            2,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "298845855/475456"
+        },
+        {
+          "exponents_x2_through_x12": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-91377/1288"
+        },
+        {
+          "exponents_x2_through_x12": [
+            2,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "148097565/237728"
+        },
+        {
+          "exponents_x2_through_x12": [
+            2,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "332837505/475456"
+        },
+        {
+          "exponents_x2_through_x12": [
+            2,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-177778125/118864"
+        },
+        {
+          "exponents_x2_through_x12": [
+            3,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "932141925/3328192"
+        },
+        {
+          "exponents_x2_through_x12": [
+            3,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-371881125/118864"
+        },
+        {
+          "exponents_x2_through_x12": [
+            4,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-102041775/118864"
+        },
+        {
+          "exponents_x2_through_x12": [
+            5,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "36905625/14858"
+        }
+      ]
+    },
+    {
+      "centered_moment": 14,
+      "weighted_monomial_count": 33,
+      "independent_expression_monomial_count": 33,
+      "nonzero_expression_term_count": 33,
+      "dense_slice_target_term_count": 2074,
+      "terms": [
+        {
+          "exponents_x2_through_x12": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "552123/202768"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "1288287/202768"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "451451/53360"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "coefficient": "111111/10672"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            0,
+            1,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-671975073/13788224"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            0,
+            2,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-169954785/3447056"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "coefficient": "6643/580"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-642590949/6894112"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-178279101/1723528"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-48201153/811072"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            2,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "4594613625/13788224"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            3,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "780841215/3447056"
+        },
+        {
+          "exponents_x2_through_x12": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "coefficient": "715/58"
+        },
+        {
+          "exponents_x2_through_x12": [
+            1,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-586170585/13788224"
+        },
+        {
+          "exponents_x2_through_x12": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-82153071/861764"
+        },
+        {
+          "exponents_x2_through_x12": [
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-95810715/811072"
+        },
+        {
+          "exponents_x2_through_x12": [
+            1,
+            0,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "3204691875/13788224"
+        },
+        {
+          "exponents_x2_through_x12": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-1490489/10672"
+        },
+        {
+          "exponents_x2_through_x12": [
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "9617131755/6894112"
+        },
+        {
+          "exponents_x2_through_x12": [
+            1,
+            2,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "2566979415/3447056"
+        },
+        {
+          "exponents_x2_through_x12": [
+            1,
+            4,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-2957731875/3447056"
+        },
+        {
+          "exponents_x2_through_x12": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "coefficient": "-422565/5336"
+        },
+        {
+          "exponents_x2_through_x12": [
+            2,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "4718446425/13788224"
+        },
+        {
+          "exponents_x2_through_x12": [
+            2,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "297972675/405536"
+        },
+        {
+          "exponents_x2_through_x12": [
+            2,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "737161425/861764"
+        },
+        {
+          "exponents_x2_through_x12": [
+            2,
+            2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-1087009875/202768"
+        },
+        {
+          "exponents_x2_through_x12": [
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "273648375/811072"
+        },
+        {
+          "exponents_x2_through_x12": [
+            3,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-6303268125/3447056"
+        },
+        {
+          "exponents_x2_through_x12": [
+            3,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-13166462925/3447056"
+        },
+        {
+          "exponents_x2_through_x12": [
+            4,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-3739861125/3447056"
+        },
+        {
+          "exponents_x2_through_x12": [
+            4,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "25771213125/3447056"
+        },
+        {
+          "exponents_x2_through_x12": [
+            5,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "283854375/90712"
+        },
+        {
+          "exponents_x2_through_x12": [
+            7,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-553584375/430882"
+        }
+      ]
+    },
+    {
+      "centered_moment": 15,
+      "weighted_monomial_count": 39,
+      "independent_expression_monomial_count": 38,
+      "nonzero_expression_term_count": 38,
+      "dense_slice_target_term_count": 2719,
+      "terms": [
+        {
+          "exponents_x2_through_x12": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "279464234049/1257161600"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "6155149/827080"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "coefficient": "-539329791/2281600"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            0,
+            0,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "57189223741419/85486988800"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "coefficient": "794703/71920"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "29321177354469/17097397760"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            0,
+            2,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-573914858517/854869888"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "coefficient": "43225/3596"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            1,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-904806903/18584128"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "464279706891/899863040"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-303165219357/201145856"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            1,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "14406413992425/3419479552"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-89934845/1323328"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            2,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "1975246600635/3419479552"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            3,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "7029947925/26714684"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            5,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-20704123125/106858736"
+        },
+        {
+          "exponents_x2_through_x12": [
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-27918914612589/17097397760"
+        },
+        {
+          "exponents_x2_through_x12": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "184599139725/201145856"
+        },
+        {
+          "exponents_x2_through_x12": [
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-238543305/2646656"
+        },
+        {
+          "exponents_x2_through_x12": [
+            1,
+            0,
+            2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-8192084313105/1709739776"
+        },
+        {
+          "exponents_x2_through_x12": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "coefficient": "1457364909/1323328"
+        },
+        {
+          "exponents_x2_through_x12": [
+            1,
+            1,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-41461110399555/3419479552"
+        },
+        {
+          "exponents_x2_through_x12": [
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "9639175450905/3419479552"
+        },
+        {
+          "exponents_x2_through_x12": [
+            1,
+            2,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-644852283075/213717472"
+        },
+        {
+          "exponents_x2_through_x12": [
+            1,
+            3,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "1532178041625/854869888"
+        },
+        {
+          "exponents_x2_through_x12": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "coefficient": "459459/7192"
+        },
+        {
+          "exponents_x2_through_x12": [
+            2,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-58168239129/44993152"
+        },
+        {
+          "exponents_x2_through_x12": [
+            2,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "21548400478605/3419479552"
+        },
+        {
+          "exponents_x2_through_x12": [
+            2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-40208473305/6936064"
+        },
+        {
+          "exponents_x2_through_x12": [
+            2,
+            1,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-337770664875/25143232"
+        },
+        {
+          "exponents_x2_through_x12": [
+            2,
+            2,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "54501507088875/854869888"
+        },
+        {
+          "exponents_x2_through_x12": [
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-923197275/2646656"
+        },
+        {
+          "exponents_x2_through_x12": [
+            3,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "58862155275/854869888"
+        },
+        {
+          "exponents_x2_through_x12": [
+            3,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "215651811375/13788224"
+        },
+        {
+          "exponents_x2_through_x12": [
+            3,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-82597950264375/854869888"
+        },
+        {
+          "exponents_x2_through_x12": [
+            4,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-3236898597075/854869888"
+        },
+        {
+          "exponents_x2_through_x12": [
+            4,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-1967014074375/427434944"
+        },
+        {
+          "exponents_x2_through_x12": [
+            5,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "12370309875/2812072"
+        }
+      ]
+    },
+    {
+      "centered_moment": 16,
+      "weighted_monomial_count": 52,
+      "independent_expression_monomial_count": 50,
+      "nonzero_expression_term_count": 50,
+      "dense_slice_target_term_count": 3538,
+      "terms": [
+        {
+          "exponents_x2_through_x12": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "23682168221283/107613032960"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "1402372155041/5663843840"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "coefficient": "-1020272201949/5663843840"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "coefficient": "-389992093491/1231270400"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            0,
+            0,
+            2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "205962731397423/77028276224"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "coefficient": "33786025/12312704"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            0,
+            1,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "496942066291671/365884312064"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            0,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "7578071844902559/7317686241280"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-28762931191995/21522606592"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            0,
+            4,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "337675739625/166009216"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-308443556586165/1463537248256"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "804775744773/53806516480"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-6799810042025/4531075072"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            1,
+            2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "7602272172027225/1463537248256"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "coefficient": "295616606285/566384384"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            2,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-127812008742957/25233400832"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            2,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "124769285215575/1463537248256"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            3,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-1245816860863575/731768624128"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            4,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "2364409901975625/731768624128"
+        },
+        {
+          "exponents_x2_through_x12": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-2823466338189783/1463537248256"
+        },
+        {
+          "exponents_x2_through_x12": [
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-29337151122279/21522606592"
+        },
+        {
+          "exponents_x2_through_x12": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "37342937104473/22655375360"
+        },
+        {
+          "exponents_x2_through_x12": [
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "coefficient": "1066245465285/1132768768"
+        },
+        {
+          "exponents_x2_through_x12": [
+            1,
+            0,
+            1,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-602835812857971/31816027136"
+        },
+        {
+          "exponents_x2_through_x12": [
+            1,
+            0,
+            2,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-50966934843825/11433884752"
+        },
+        {
+          "exponents_x2_through_x12": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "coefficient": "39765370281/24625408"
+        },
+        {
+          "exponents_x2_through_x12": [
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-31548886175037231/1463537248256"
+        },
+        {
+          "exponents_x2_through_x12": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "9301961498614785/1463537248256"
+        },
+        {
+          "exponents_x2_through_x12": [
+            1,
+            2,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-74629741090905/10761303296"
+        },
+        {
+          "exponents_x2_through_x12": [
+            1,
+            2,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-4222681429010625/365884312064"
+        },
+        {
+          "exponents_x2_through_x12": [
+            1,
+            3,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "42182055849554775/731768624128"
+        },
+        {
+          "exponents_x2_through_x12": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "coefficient": "1108560375/12312704"
+        },
+        {
+          "exponents_x2_through_x12": [
+            2,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "50392048121415/21522606592"
+        },
+        {
+          "exponents_x2_through_x12": [
+            2,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "278695672249995/86090426368"
+        },
+        {
+          "exponents_x2_through_x12": [
+            2,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "3110743510875/1132768768"
+        },
+        {
+          "exponents_x2_through_x12": [
+            2,
+            0,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-299923649353125/365884312064"
+        },
+        {
+          "exponents_x2_through_x12": [
+            2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-46952785155705/4531075072"
+        },
+        {
+          "exponents_x2_through_x12": [
+            2,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "1598447540376225/15908013568"
+        },
+        {
+          "exponents_x2_through_x12": [
+            2,
+            2,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "1894645164136725/25233400832"
+        },
+        {
+          "exponents_x2_through_x12": [
+            2,
+            4,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-47849364331059375/365884312064"
+        },
+        {
+          "exponents_x2_through_x12": [
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "coefficient": "-451620365625/283192192"
+        },
+        {
+          "exponents_x2_through_x12": [
+            3,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "197297846392185/15908013568"
+        },
+        {
+          "exponents_x2_through_x12": [
+            3,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-556225095801375/182942156032"
+        },
+        {
+          "exponents_x2_through_x12": [
+            3,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "785866375812375/38514138112"
+        },
+        {
+          "exponents_x2_through_x12": [
+            3,
+            2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-94055999567158125/365884312064"
+        },
+        {
+          "exponents_x2_through_x12": [
+            4,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "46969124362875/21522606592"
+        },
+        {
+          "exponents_x2_through_x12": [
+            4,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "313341176334375/91471078016"
+        },
+        {
+          "exponents_x2_through_x12": [
+            4,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-49237734066530625/365884312064"
+        },
+        {
+          "exponents_x2_through_x12": [
+            5,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-13275138751875/5380651648"
+        },
+        {
+          "exponents_x2_through_x12": [
+            5,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "49003503034696875/182942156032"
+        }
+      ]
+    },
+    {
+      "centered_moment": 17,
+      "weighted_monomial_count": 61,
+      "independent_expression_monomial_count": 57,
+      "nonzero_expression_term_count": 57,
+      "dense_slice_target_term_count": 4516,
+      "terms": [
+        {
+          "exponents_x2_through_x12": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "33694494326252331/111527539328380"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "coefficient": "9108847687821739/278818848320950"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "coefficient": "-297863920062891/34635881779000"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "coefficient": "-215149978457427/554174108464"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            0,
+            0,
+            1,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "79433542607655967731/48434817079753600"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            0,
+            0,
+            2,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "60496055355349274661/24217408539876800"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            0,
+            1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "186106497390694881/96869634159507200"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "2703603542098826367/1937392683190144"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-172720780479967083/203936071914752"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            0,
+            3,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "1015097784979324095/15499141465521152"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-535308183532336929/9686963415950720"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-49672570994501341887/24217408539876800"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "936943578547279303/509840179786880"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "coefficient": "-7346626445759783/25492008989344"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            1,
+            1,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-283863826498425561927/15499141465521152"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            1,
+            2,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "5973869865221314875/815744287659008"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "coefficient": "13328149170793639/121918303862080"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            2,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-58977959062116731637/9686963415950720"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            2,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "8819322112318320603/15499141465521152"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            3,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "9012502701089037059/3874785366380288"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            3,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-1748971666177921187625/170490556120732672"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            4,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "1733111672641871165/968696341595072"
+        },
+        {
+          "exponents_x2_through_x12": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "633349363436756109/33904371955827520"
+        },
+        {
+          "exponents_x2_through_x12": [
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-335791742703685983/159325056183400"
+        },
+        {
+          "exponents_x2_through_x12": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "coefficient": "165360635215757553/127460044946720"
+        },
+        {
+          "exponents_x2_through_x12": [
+            1,
+            0,
+            0,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-6761971533861196191/968696341595072"
+        },
+        {
+          "exponents_x2_through_x12": [
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "coefficient": "2736931536951807/24383660772416"
+        },
+        {
+          "exponents_x2_through_x12": [
+            1,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-326613610419489534141/77495707327605760"
+        },
+        {
+          "exponents_x2_through_x12": [
+            1,
+            0,
+            2,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-13484930701645186875/15499141465521152"
+        },
+        {
+          "exponents_x2_through_x12": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "coefficient": "11921217354922525/6095915193104"
+        },
+        {
+          "exponents_x2_through_x12": [
+            1,
+            1,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "6240908449048580307/842344644865280"
+        },
+        {
+          "exponents_x2_through_x12": [
+            1,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-57504726655018750107/1937392683190144"
+        },
+        {
+          "exponents_x2_through_x12": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-11843760858567604785/968696341595072"
+        },
+        {
+          "exponents_x2_through_x12": [
+            1,
+            1,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "1212121897526848793625/85245278060366336"
+        },
+        {
+          "exponents_x2_through_x12": [
+            1,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-1106675282141760331/101968035957376"
+        },
+        {
+          "exponents_x2_through_x12": [
+            1,
+            2,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "2969764355820434426415/15499141465521152"
+        },
+        {
+          "exponents_x2_through_x12": [
+            1,
+            3,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "15900595132279945815/968696341595072"
+        },
+        {
+          "exponents_x2_through_x12": [
+            1,
+            5,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-8148575814818245625/560824197765568"
+        },
+        {
+          "exponents_x2_through_x12": [
+            2,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-2814015690601638237/1937392683190144"
+        },
+        {
+          "exponents_x2_through_x12": [
+            2,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-301067129569438089/121087042699384"
+        },
+        {
+          "exponents_x2_through_x12": [
+            2,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "16286553238561515/2216696433856"
+        },
+        {
+          "exponents_x2_through_x12": [
+            2,
+            0,
+            2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-157750891442182402875/7749570732760576"
+        },
+        {
+          "exponents_x2_through_x12": [
+            2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "coefficient": "-166885891448524365/25492008989344"
+        },
+        {
+          "exponents_x2_through_x12": [
+            2,
+            1,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "334344997763502475365/3874785366380288"
+        },
+        {
+          "exponents_x2_through_x12": [
+            2,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "90664305683276047905/15499141465521152"
+        },
+        {
+          "exponents_x2_through_x12": [
+            2,
+            2,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "551541272498368425/6373002247336"
+        },
+        {
+          "exponents_x2_through_x12": [
+            2,
+            3,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-16658816497709610280875/42622639030183168"
+        },
+        {
+          "exponents_x2_through_x12": [
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "coefficient": "58534989906242655/170685625406912"
+        },
+        {
+          "exponents_x2_through_x12": [
+            3,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "98511284177292987/15624134541856"
+        },
+        {
+          "exponents_x2_through_x12": [
+            3,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "4485312682625276775/534453153983488"
+        },
+        {
+          "exponents_x2_through_x12": [
+            3,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "39100863219564624075/3874785366380288"
+        },
+        {
+          "exponents_x2_through_x12": [
+            3,
+            1,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-2759610333230717281875/42622639030183168"
+        },
+        {
+          "exponents_x2_through_x12": [
+            3,
+            2,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-320795239130111984175/968696341595072"
+        },
+        {
+          "exponents_x2_through_x12": [
+            4,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-744408773966166075/89222031462704"
+        },
+        {
+          "exponents_x2_through_x12": [
+            4,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "68822661894761084625/3874785366380288"
+        },
+        {
+          "exponents_x2_through_x12": [
+            4,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "1469563446764383425/50984017978688"
+        },
+        {
+          "exponents_x2_through_x12": [
+            4,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "3318352138249818744375/10655659757545792"
+        }
+      ]
+    },
+    {
+      "centered_moment": 18,
+      "weighted_monomial_count": 81,
+      "independent_expression_monomial_count": 75,
+      "nonzero_expression_term_count": 75,
+      "dense_slice_target_term_count": 5732,
+      "terms": [
+        {
+          "exponents_x2_through_x12": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "36775005809620221/6865121298560"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0
+          ],
+          "coefficient": "5525333806808387/858140162320"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "coefficient": "-18710236008228479/6998716751600"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "coefficient": "-24916518448107/4264050496"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            0,
+            0,
+            0,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "3300231244011735033/149071205340160"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "24875479420898024291373/346739623621212160"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-16764736638689488449/937134117895168"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "940863597896882091861/43342452952651520"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "4792740725948175/1028077278208"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-9229309650853297005/125858302584832"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "coefficient": "-8558670182807745/392292645632"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            0,
+            2,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "86098422525794243337465/277391698896969728"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            0,
+            3,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "2068701236066289825/29814241068032"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "9579196793351428154769/36498907749601280"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-1537601024961001/68224807936"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "coefficient": "-367907165187275891177/986456966205440"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            1,
+            0,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "2903429669861044448751627/2773916988969697280"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "coefficient": "437072014794991667/39672725814784"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "1465669707996124094801337/554783397793939456"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            1,
+            2,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-119012122348691715778635/138695849448484864"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "coefficient": "61392809129925/4264050496"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            2,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-35117956905236205/784585291264"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            2,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "27135306606344570853219/29199126199681024"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            2,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-54322175241561907604925/29199126199681024"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            2,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "2912114467004461250938875/554783397793939456"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-19556754408466275/784585291264"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            3,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-11389880090650542979575/17896238638514176"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            4,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "1004963566126144625/7453560267008"
+        },
+        {
+          "exponents_x2_through_x12": [
+            0,
+            6,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-332421442142706875/3726780133504"
+        },
+        {
+          "exponents_x2_through_x12": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-15406857088626821103/260874609345280"
+        },
+        {
+          "exponents_x2_through_x12": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-962615895683712585029/15968272140450560"
+        },
+        {
+          "exponents_x2_through_x12": [
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "coefficient": "601121112426263/31636503680"
+        },
+        {
+          "exponents_x2_through_x12": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "coefficient": "318418615994624145/19836362907392"
+        },
+        {
+          "exponents_x2_through_x12": [
+            1,
+            0,
+            0,
+            2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-417424422427816227695271/1386958494484848640"
+        },
+        {
+          "exponents_x2_through_x12": [
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "coefficient": "131162575794575/4264050496"
+        },
+        {
+          "exponents_x2_through_x12": [
+            1,
+            0,
+            1,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-175509256615621929/480874855936"
+        },
+        {
+          "exponents_x2_through_x12": [
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-11943785730377487987/308555838595072"
+        },
+        {
+          "exponents_x2_through_x12": [
+            1,
+            0,
+            2,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "38317787567714655/232923758344"
+        },
+        {
+          "exponents_x2_through_x12": [
+            1,
+            0,
+            4,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-1224531122825926125/3726780133504"
+        },
+        {
+          "exponents_x2_through_x12": [
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-1143206345988521360196651/554783397793939456"
+        },
+        {
+          "exponents_x2_through_x12": [
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "1085301125654392005261903/554783397793939456"
+        },
+        {
+          "exponents_x2_through_x12": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "1388889155305009723365/7299781549920256"
+        },
+        {
+          "exponents_x2_through_x12": [
+            1,
+            1,
+            2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-2753675883472085970014925/277391698896969728"
+        },
+        {
+          "exponents_x2_through_x12": [
+            1,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "coefficient": "5545663697580639267635/3649890774960128"
+        },
+        {
+          "exponents_x2_through_x12": [
+            1,
+            2,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-10350426079213994189877615/554783397793939456"
+        },
+        {
+          "exponents_x2_through_x12": [
+            1,
+            2,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "1536237537170718965658075/554783397793939456"
+        },
+        {
+          "exponents_x2_through_x12": [
+            1,
+            3,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-79521748602172963711625/17336981181060608"
+        },
+        {
+          "exponents_x2_through_x12": [
+            1,
+            4,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "763372780009318523279375/138695849448484864"
+        },
+        {
+          "exponents_x2_through_x12": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "103850105134153115688093/485435473069697024"
+        },
+        {
+          "exponents_x2_through_x12": [
+            2,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "9804290145795003573/29814241068032"
+        },
+        {
+          "exponents_x2_through_x12": [
+            2,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "787720860361394790831/3649890774960128"
+        },
+        {
+          "exponents_x2_through_x12": [
+            2,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "coefficient": "-30022346911490505/196146322816"
+        },
+        {
+          "exponents_x2_through_x12": [
+            2,
+            0,
+            1,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-351210258453356042895/4474059659628544"
+        },
+        {
+          "exponents_x2_through_x12": [
+            2,
+            0,
+            2,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "6961348318208909625/7453560267008"
+        },
+        {
+          "exponents_x2_through_x12": [
+            2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "coefficient": "-1819646496890257815/39672725814784"
+        },
+        {
+          "exponents_x2_through_x12": [
+            2,
+            1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-908544033495103925494575/277391698896969728"
+        },
+        {
+          "exponents_x2_through_x12": [
+            2,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "4274226800117645622225975/554783397793939456"
+        },
+        {
+          "exponents_x2_through_x12": [
+            2,
+            2,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-4762670228695446811318575/554783397793939456"
+        },
+        {
+          "exponents_x2_through_x12": [
+            2,
+            2,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-27280944476889307036875/2237029829814272"
+        },
+        {
+          "exponents_x2_through_x12": [
+            2,
+            3,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "12926088636659279903658375/138695849448484864"
+        },
+        {
+          "exponents_x2_through_x12": [
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "coefficient": "-30290668380375/932761046"
+        },
+        {
+          "exponents_x2_through_x12": [
+            3,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-3091765394621108205/7453560267008"
+        },
+        {
+          "exponents_x2_through_x12": [
+            3,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-392690358565489323971775/277391698896969728"
+        },
+        {
+          "exponents_x2_through_x12": [
+            3,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-196127821582117425/465847516688"
+        },
+        {
+          "exponents_x2_through_x12": [
+            3,
+            0,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-893221644638334375/3726780133504"
+        },
+        {
+          "exponents_x2_through_x12": [
+            3,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-1625673536265170760225/7299781549920256"
+        },
+        {
+          "exponents_x2_through_x12": [
+            3,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "1092441508525973430853875/138695849448484864"
+        },
+        {
+          "exponents_x2_through_x12": [
+            3,
+            2,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "1525120261494808524170625/69347924724242432"
+        },
+        {
+          "exponents_x2_through_x12": [
+            3,
+            4,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-18633474831336620657653125/138695849448484864"
+        },
+        {
+          "exponents_x2_through_x12": [
+            4,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "coefficient": "73088505303345675/343256064928"
+        },
+        {
+          "exponents_x2_through_x12": [
+            4,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "152808359278228090858575/69347924724242432"
+        },
+        {
+          "exponents_x2_through_x12": [
+            4,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "40264626164387625/100723787392"
+        },
+        {
+          "exponents_x2_through_x12": [
+            4,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-655838479916545937851125/138695849448484864"
+        },
+        {
+          "exponents_x2_through_x12": [
+            4,
+            2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-772939091056858218478125/69347924724242432"
+        },
+        {
+          "exponents_x2_through_x12": [
+            5,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "-3942332475774103125/26087460934528"
+        }
+      ]
+    }
+  ]
+}

@@ -54,7 +54,22 @@ nonzero linear part, for arbitrary \(P\).  Formal Weierstrass division
 straightens its symbol to a separated drift through a locally finite
 differential automorphism.  Consequently the surviving nonhomogeneous
 frontier has lowest positive order at least two.  Theorem 3.7 further
-shows that its first quadratic-leading polynomial degree is at least four.
+shows that cubic \(P\) is safe, and Theorem 3.9 below pushes the first
+quadratic-leading polynomial degree to at least five.  Theorems
+3.10--3.12 close all cubic-leading quartic symbols.  Consequently:
+
+> **Corollary 1.4 — binary degree-four GVC.**  Every constant-coefficient
+> operator in two variables satisfies GVC for every polynomial \(P\) of
+> degree at most four.  In particular, every binary GVC counterexample
+> has \(\deg P\ge5\).  If \(\deg P=5\), its lowest positive operator order
+> is one of \(2,3,4\).
+
+Theorems 3.14--3.16 below close the \(r=2,\deg P=5\) row as well.
+Therefore:
+
+> **Corollary 1.5 — first degree-five reduction.**  If a binary GVC
+> counterexample has \(\deg P=5\), then its lowest positive operator
+> order is \(3\) or \(4\).
 
 There is also a conversion obstruction independent of differential
 orders.  Let
@@ -638,6 +653,16 @@ Hence \(C=E=0\).  Choose \(v=1\) and \(2<u<3\).  Then
 quartic monomial, and every term of order at least five have strictly
 larger weight.  The weighted cutoff applies.
 
+The use of the third equation is sharp for this argument.  Explicitly,
+\[
+ \Lambda=\partial_x^2+\partial_x\partial_y^2
+ -\frac14\partial_y^4,\qquad
+ P=xy^2-x^2
+\tag{3.38a}
+\]
+satisfies \(\Lambda(P)=\Lambda^2(P^2)=0\), but
+\(\Lambda^3(P^3)=-4608\).
+
 If \(p_8=0\) but \(p_9\ne0\), the constant second-moment coefficient is
 \(792D^2p_9^2\), so \(D=0\).  Taking \(v=1\) and
 \(3/2<u<2\) makes \(\deg_{u,v}P=3\) and again puts every operator
@@ -666,6 +691,717 @@ Thus the two pure cubic tips cannot coexist.  If \(p_6\ne0\), then
 \(288A^2p_6^2\), so \(A=0\).  Weights \(u=1\), \(2<v<3\) give a strict
 separator.  The branch \(p_9\ne0\) is symmetric, and if both vanish then
 \(\deg P\le2\).  This proves the theorem.
+
+After three moments, the quartic cell has only one finite residual branch.
+
+> **Proposition 3.8 — quadratic-leading quartic reduction.**  Suppose
+> \(r=2\), \(\deg P=4\), and the pure equations hold through order three.
+> If \(\Lambda_2\) has two distinct roots, the GVC conclusion follows.
+> If \(\Lambda_2\) is a square, every branch except one has the GVC
+> conclusion; the remaining branch is cut out by the two equations
+> (3.45) below and projects to an explicit finite sextic set.
+
+For the distinct-root orbit put
+\(\Lambda_2=\partial_x\partial_y\).  The leading equation and the second
+leading pure equation force \(P_4\) to be a single pure tip; take
+\(P_4=x^4\).  Let \(A,E\) be the coefficients of
+\(\partial_x^3,\partial_x^4\), and let \(c,d\) be the coefficients of
+\(y^3,y^2\) in \(P\).  Successive coefficients of the full second moment
+are
+\[
+\begin{aligned}
+[x^2y]\Lambda^2(P^2)&=144c,\\
+[x^2]\Lambda^2(P^2)&=48(132A^2+d),\\
+[y]\Lambda^2(P^2)\big|_{c=0,\ d=-132A^2}&=9216A^3,\\
+[1]\Lambda^2(P^2)\big|_{c=d=A=0}&=31104E^2.
+\end{aligned}
+\tag{3.41}
+\]
+Thus \(c=d=A=E=0\), and the first equation reduces \(P\) to a polynomial
+in \(x\) plus a linear \(y\)-term.  Weights \(u=1\), \(3<v<4\) strictly
+separate every operator monomial from \(P\).  The \(P_4=y^4\) branch is
+symmetric.
+
+Now put \(\Lambda_2=\partial_x^2\).  Its leading equation gives
+\[
+ P_4=y^3(ax+by).
+\tag{3.42}
+\]
+The stabilizer of \(\partial_x^2\) reduces this to \(xy^3\) or \(y^4\).
+On the \(xy^3\) branch, denote the coefficients of
+\[
+\partial_x\partial_y^2,\ \partial_y^3,\ \partial_y^4,\
+\partial_x\partial_y^3,\ \partial_y^5,\ \partial_y^6
+\]
+by \(C,D,E,H,J,K\), respectively.  The second moment successively gives
+\[
+ D=0,\qquad 20E+C^2=0,\qquad EC=0,\qquad
+ J=0,\qquad K=-\frac{17}{40}H^2.
+\tag{3.43}
+\]
+Hence \(C=E=0\), and the complete third moment reduces to
+\[
+ \Lambda^3(P^3)=-3604176H^3.
+\tag{3.44}
+\]
+Thus \(H=K=0\).  Weights \(v=1\), \(3<u<4\) give the strict cutoff.
+
+It remains to take \(P_4=y^4\).  The second moment first forces \(D=0\).
+Put \(z=[xy^2]P\).  Its remaining constant coefficient and the third
+moment are, up to nonzero scalar factors,
+\[
+\begin{aligned}
+S(C,E,z)={}&1728E^2-48C^2E+112CEz+4Ez^2\\
+&-4C^3z+C^2z^2,\\
+T(C,E,z)={}&815616E^3-13824C^2E^2+52416CE^2z
+ +1152E^2z^2\\
+&-1584C^3Ez+936C^2Ez^2+36CEz^3
+-36C^4z^2+C^3z^3.
+\end{aligned}
+\tag{3.45}
+\]
+If \(Cz=0\), these equations force \(E=0\), and weights
+\(v=1\), \(2<u<3\) close the branch.  If \(Cz\ne0\), eliminating \(E\)
+gives
+\[
+\begin{aligned}
+0={}&-2583360C^6+1828368C^5z+1514304C^4z^2\\
+&+502328C^3z^3+80916C^2z^4+6117Cz^5+92z^6.
+\end{aligned}
+\tag{3.46}
+\]
+Thus, modulo the natural scaling, only finitely many algebraic ratios
+\(z/C\) remain after the first three moments.
+
+> **Theorem 3.9 — quadratic-leading quartic theorem.**  Suppose the
+> lowest positive order of \(\Lambda\) is two and \(\deg P\le4\).  The
+> first four pure equations imply the GVC conclusion.
+
+Only the last branch of Proposition 3.8 needs consideration.  Give
+\(x,y\) weights \(2,1\).  The first equation and \(D=0\) give
+\[
+\begin{aligned}
+P&=P_{[4]}+P_{<4},&
+P_{[4]}&=y^4+zxy^2-(12E+Cz)x^2,\\
+\Lambda&=\Lambda_{[4]}+\Lambda_{>4},&
+\Lambda_{[4]}&=\partial_x^2+C\partial_x\partial_y^2
+ +E\partial_y^4.
+\end{aligned}
+\tag{3.47}
+\]
+The subscripts denote these weights.  Every omitted polynomial term has
+weight below four, and every omitted operator monomial has weight above
+four.  Since \(P^m\) has weight at most \(4m\) while every monomial of
+\(\Lambda^m\) has derivative weight at least \(4m\), equality is possible
+only by choosing \(P_{[4]}\) and \(\Lambda_{[4]}\) throughout.  Hence,
+for every \(m\),
+\[
+ \Lambda^m(P^m)=\Lambda_{[4]}^m(P_{[4]}^m).
+\tag{3.47a}
+\]
+
+The second and third right-hand sides are the polynomials \(S,T\) in
+(3.45).  The fourth is \(17280M(C,E,z)\).  Eliminating \(E\) from \(S,M\)
+and removing a nonzero scalar and the factor \(C^4z^4\) gives
+\[
+\begin{aligned}
+R_8(C,z)={}&-2557094400C^8+639596160C^7z
+ +532247424C^6z^2\\
+&+236419896C^5z^3+52199245C^4z^4+7972150C^3z^5\\
+&+720528C^2z^6+39490Cz^7+550z^8.
+\end{aligned}
+\tag{3.48}
+\]
+After setting \(t=z/C\), the degree-six polynomial \(R_6(1,t)\) from
+(3.46) and \(R_8(1,t)\) have gcd one.  More explicitly, their resultant is
+\[
+-22002331580862445954532620608845574194895939575073794373253473026129579212800.
+\tag{3.49}
+\]
+Thus no branch with \(Cz\ne0\) survives all three equations
+\(S=T=M=0\); (3.47a) proves that no higher jet or lower coefficient can
+alter this obstruction.  The cases \(Cz=0\) were already closed by strict
+weights in Proposition 3.8.  Together with Theorem 3.7 and the other
+branches of Proposition 3.8, this proves the theorem.
+
+The triple-root part of the next leading order also closes.
+
+> **Theorem 3.10 — triple-root cubic-leading quartic theorem.**  Suppose
+> the lowest positive order of \(\Lambda\) is three,
+> \(\Lambda_3\) has a triple root, and \(\deg P\le4\).  The first four
+> pure equations imply the GVC conclusion.
+
+Normalize \(\Lambda_3=\partial_x^3\).  The leading equation gives
+\[
+ P_4=y^2(Ax^2+Bxy+Cy^2).
+\tag{3.50}
+\]
+The stabilizer of \(\partial_x^3\) leaves three cases.
+
+If \(A\ne0\), normalize \(A=1,B=0\), leaving
+\(P_4=x^2y^2+\rho y^4\).  Denote the coefficients of
+\[
+\partial_x^2\partial_y^2,\ \partial_x\partial_y^3,\
+\partial_y^4,\ \partial_x\partial_y^4,\
+\partial_y^5,\ \partial_y^6
+\]
+by \(U,D,E,V,J,K\), respectively.  Successive coefficients of the second
+moment force
+\[
+ E=0,\qquad D=0,\qquad V=-\frac29U^2.
+\tag{3.51}
+\]
+The third moment then gives
+\[
+1555200J=0,\qquad
+1920(810K-272U^3)=0,
+\tag{3.52}
+\]
+so \(J=0\) and \(K=136U^3/405\).  The fourth moment is
+\[
+ \Lambda^4(P^4)=3361505280U^4.
+\tag{3.53}
+\]
+Hence \(U=0\).
+
+These identities are full-jet statements.  With weights
+\(\operatorname{wt}(x)=2,\operatorname{wt}(y)=1\), the displayed
+polynomial and operator terms in (3.51)--(3.52) are precisely their
+weight-six faces; every omitted polynomial term has smaller weight and
+every omitted operator term has larger weight.  Thus the same face
+identity as (3.47a) applies.  Once \(U=0\), the face is the one-sided pair
+\((\partial_x^3,x^2y^2)\), whose mixed values have the direct
+\(x\)-degree cutoff.
+
+If \(A=0,B\ne0\), a shear gives \(P_4=xy^3\).  Write \(D,E\) for the
+coefficients of \(\partial_x\partial_y^3,\partial_y^4\).  The
+\(y\)-coefficient of the third moment is \(6531840E^2\), so \(E=0\);
+the remaining constant second-moment coefficient is \(1584D^2\).
+Weights \((3,2)\) then leave the one-sided face
+\((\partial_x^3,xy^3)\).
+
+Finally, for \(P_4=y^4\), the constant second moment is
+\(49536E^2\), so \(E=0\).  Weights \((4,3)\) leave
+\((\partial_x^3,y^4)\).  Every branch therefore has an eventual mixed
+cutoff.
+
+The double-root orbit has only one endpoint left.
+
+> **Theorem 3.11 — double-root cubic-leading quartic theorem.**
+> Suppose \(r=3\), \(\deg P=4\), and
+> \(\Lambda_3\) has one double and one simple root.  The first three
+> pure equations imply the GVC conclusion.
+
+The first two leading-face equations give
+\[
+ P_4=x^4
+ \quad\text{or}\quad
+ P_4=y^3(ax+by).
+\tag{3.54}
+\]
+For \(P_4=x^4\), let \(T\) be the coefficient of \(\partial_x^4\).
+Solving the first equation and reading the second gives successively
+\[
+ [y^3]P=0,\qquad [xy^2]P=0,\qquad
+ [y^2]P=-132T^2.
+\tag{3.55}
+\]
+With weights \(\operatorname{wt}(x)=1,\operatorname{wt}(y)=2\), the
+weight-four face is
+\[
+\Lambda_{[4]}=\partial_x^2\partial_y+T\partial_x^4,\qquad
+P_{[4]}=x^4-12Tx^2y-132T^2y^2.
+\tag{3.56}
+\]
+All omitted operator terms have larger weight and all omitted polynomial
+terms have smaller weight.  Its third moment is
+\[
+ \Lambda_{[4]}^3(P_{[4]}^3)=129392640T^3,
+\tag{3.57}
+\]
+so \(T=0\), leaving the one-sided pair
+\((\partial_x^2\partial_y,x^4)\).
+
+Now take \(a\ne0\), normalize \(a=1\), and write
+\(P_4=xy^3+by^4\).  Let \(E,H,J\) be the coefficients of
+\(\partial_y^4,\partial_x\partial_y^3,\partial_y^5\).
+The second equation first gives
+\[
+ [x^3]P=-10E,\qquad
+ 20J=-(248E^2b^2+56EHb-20EU+H^2),
+\tag{3.58}
+\]
+where \(U=[\partial_x^2\partial_y^2]\Lambda\).  The \(x\)-coefficient of
+the third moment is \(7827840E^2\), hence \(E=0\).  Its remaining
+constant coefficient is then a nonzero multiple of \(H^3\), so
+\(H=J=0\).  Choosing \(\operatorname{wt}(y)=1\) and
+\(2<\operatorname{wt}(x)<3\) strictly separates every operator monomial
+from \(P\), proving the mixed cutoff.
+
+It remains to take \(a=0\), so \(P_4=y^4\).  Put
+\[
+r=[x^3]P,\qquad z=[xy^2]P,
+\]
+and retain \(E=[\partial_y^4]\Lambda\) and
+\(H=[\partial_x\partial_y^3]\Lambda\).  The relevant coefficients are
+\[
+\Lambda^2(P^2)=96(372E^2+6Hr+rz),
+\qquad
+[y]\Lambda^3(P^3)=51840r^2.
+\tag{3.59}
+\]
+Thus \(r=0\), followed by \(E=0\); the first equation also gives
+\([x^2y]P=-12E=0\).  With \(\operatorname{wt}(y)=1\) and
+\(3/2<\operatorname{wt}(x)<2\), \(P\) has weight at most four and every
+operator monomial has weight strictly greater than four.  This closes the
+last branch and proves the theorem.
+
+The squarefree cubic orbit unexpectedly reduces to the same \(x^4\)
+weighted face as (3.56).
+
+> **Theorem 3.12 — squarefree cubic-leading quartic theorem.**
+> Suppose \(r=3\), \(\deg P=4\), and \(\Lambda_3\) is squarefree.  The
+> first three pure equations imply the GVC conclusion.
+
+After scalar extension and a linear change of variables, normalize
+\[
+ \Lambda_3=\partial_x^2\partial_y+\partial_x\partial_y^2.
+\tag{3.60}
+\]
+Write
+\[
+ P_4=A x^4+a_1x^3y+B x^2y^2+a_3xy^3+C y^4.
+\]
+The first leading moment gives
+\[
+ a_1=a_3=-\frac23B.
+\tag{3.61}
+\]
+The coefficients of the second leading moment have Gröbner basis
+\[
+ AB-BC,\qquad B^2-6BC,\qquad 6AC-BC.
+\tag{3.62}
+\]
+Thus \(P_4\) is proportional to exactly one of
+\[
+ x^4,\qquad y^4,\qquad (x-y)^4.
+\tag{3.63}
+\]
+The stabilizer of the three roots of (3.60) permutes these three
+fourth powers transitively, so it suffices to take \(P_4=x^4\).
+
+Let \(T=[\partial_x^4]\Lambda\), and write
+\[
+ p_{21}=[x^2y]P,\quad p_{12}=[xy^2]P,\quad
+ p_{03}=[y^3]P,\quad p_{02}=[y^2]P,\quad p_{30}=[x^3]P.
+\]
+The first equation is
+\[
+ 24T+2p_{21}+2p_{12}=0.
+\tag{3.64}
+\]
+After substituting \(p_{21}=-12T-p_{12}\), the nonconstant
+coefficients of the second moment are
+\[
+ [x]\Lambda^2(P^2)=96(5p_{12}+6p_{03}),\qquad
+ [y]\Lambda^2(P^2)=288p_{03}.
+\tag{3.65}
+\]
+They force \(p_{03}=p_{12}=0\).  The remaining constant coefficient is
+\[
+ 48\bigl(264T^2+2p_{02}\bigr),
+\tag{3.66}
+\]
+so \(p_{02}=-132T^2\) and \(p_{21}=-12T\).
+
+Give \(x,y\) weights \(1,2\).  The weight-four faces are now exactly
+\[
+\begin{aligned}
+ \Lambda_{[4]}&=\partial_x^2\partial_y+T\partial_x^4,\\
+ P_{[4]}&=x^4-12Tx^2y-132T^2y^2.
+\end{aligned}
+\tag{3.67}
+\]
+The additional squarefree summand
+\(\partial_x\partial_y^2\) has weight five; every other omitted operator
+term has weight greater than four, while every omitted polynomial term
+has weight less than four.  Since \(P^m\) has weight at most \(4m\) and
+every monomial of \(\Lambda^m\) has derivative weight at least \(4m\),
+only equality can contribute.  Hence, for every \(m\),
+\[
+ \Lambda^m(P^m)=\Lambda_{[4]}^m(P_{[4]}^m).
+\tag{3.67a}
+\]
+The third moment of this face is
+\[
+ \Lambda_{[4]}^3(P_{[4]}^3)=129392640T^3.
+\tag{3.68}
+\]
+Thus \(T=0\), and the remaining face
+\((\partial_x^2\partial_y,x^4)\) is one-sided.  The strict weighted
+degree count gives the eventual mixed cutoff, proving the theorem.
+
+We can now prove Corollary 1.4.  A nonzero order-zero term forces \(P=0\).
+Lowest order one is closed in arbitrary degree by Theorem 3.4.  Lowest
+order two is closed through degree four by Theorem 3.9.  At lowest order
+three, degree below four is covered by Theorem 1.1, while every cubic
+leading symbol becomes triple-root, double-root, or squarefree after
+scalar extension; Theorems 3.10--3.12 cover these cases in degree four.
+Lowest order at least four is again covered by Theorem 1.1.  Vanishing
+after scalar extension descends to the ground field.  Finally, in degree
+five Theorem 1.1 excludes lowest order at least five and Theorem 3.4
+excludes lowest order one, leaving only \(r=2,3,4\).
+
+The first unresolved quadratic-leading cell already has a finite
+top-form reduction.
+
+> **Proposition 3.13 — quadratic-leading quintic top forms.**
+> Suppose \(r=2\), \(\deg P=5\), and the first two pure equations hold.
+> After scalar extension, a linear change of variables, and rescaling,
+> the leading pair \((\Lambda_2,P_5)\) is one of
+> \[
+> (\partial_x\partial_y,x^5),\qquad
+> (\partial_x^2,xy^4),\qquad
+> (\partial_x^2,y^5).
+> \tag{3.69}
+> \]
+
+Indeed, if \(\Lambda_2=\partial_x\partial_y\), the first leading equation
+gives \(P_5=Ax^5+By^5\).  The second leading moment is
+\[
+ (\partial_x\partial_y)^2(P_5^2)
+ =800ABx^3y^3,
+\tag{3.70}
+\]
+so exactly one of \(A,B\) is nonzero; swapping \(x,y\) gives the first
+normal form.  If \(\Lambda_2=\partial_x^2\), the first leading equation
+gives \(P_5=y^4(Ax+By)\).  When \(A\ne0\), a shear preserving
+\(\partial_x^2\) removes \(B\), giving \(xy^4\); when \(A=0\), one gets
+\(y^5\).  This proposition classifies only the leading top forms.  The
+lower polynomial terms and higher operator jets are treated in Theorems
+3.14--3.16.
+
+The distinct-root tip in (3.69) closes without a third moment.
+
+> **Theorem 3.14 — distinct-root quadratic-leading quintic theorem.**
+> Suppose \(r=2\), \(\deg P=5\), and \(\Lambda_2\) has two distinct
+> roots.  The first two pure equations imply the GVC conclusion.
+
+Normalize \(\Lambda_2=\partial_x\partial_y\) and \(P_5=x^5\).  Retain
+every operator jet through order eight, since higher jets kill \(P^2\).
+After solving the first equation, put
+\[
+\begin{gathered}
+ A=[\partial_x^3]\Lambda,\quad
+ B=[\partial_x^4]\Lambda,\quad
+ C=[\partial_x^5]\Lambda,\\
+ u=[y^4]P,\quad v=[y^3]P,\quad w=[y^2]P.
+\end{gathered}
+\]
+Successive coefficients of the full second moment are
+\[
+\begin{aligned}
+ [x^3y^2]\Lambda^2(P^2)&=480u,\\
+ [x^4]\Lambda^2(P^2)\big|_{u=0}&=48000A^2,\\
+ [x^3y]\Lambda^2(P^2)\big|_{u=A=0}&=240v,\\
+ [x^3]\Lambda^2(P^2)\big|_{u=A=v=0}&=80w,\\
+ [x^2]\Lambda^2(P^2)\big|_{u=A=v=w=0}&=1296000B^2,\\
+ [1]\Lambda^2(P^2)\big|_{u=A=v=w=B=0}&=3340800C^2.
+\end{aligned}
+\tag{3.71}
+\]
+Thus all six displayed parameters vanish.  Substitution back into the
+first equation leaves
+\[
+ P=f(x)+ay,\qquad \deg f=5,
+\tag{3.72}
+\]
+and no pure-\(x\) operator term of order below six.  Consequently
+\[
+ \Lambda=\partial_y\Gamma+H(\partial_x),
+\qquad
+\operatorname{ord}_{\min}\Gamma\ge1,\quad
+\operatorname{ord}_{\min}H\ge6,
+\tag{3.73}
+\]
+where \(H=0\) is allowed.
+
+This normal form gives the all-order cutoff directly.  Fix \(Q\), put
+\(q=\deg_yQ\), and expand
+\[
+ \Lambda^m
+ =\sum_{k=0}^m\binom mk
+   (\partial_y\Gamma)^kH^{m-k}.
+\tag{3.74}
+\]
+Set \(N=m-k\).  In the Leibniz expansion of
+\(\partial_y^k(QP^m)\), at most \(q\) derivatives hit \(Q\), and every
+remaining term contains \(P^{N+j}\) with \(0\le j\le q\).  Its
+\(x\)-degree is at most
+\[
+ \deg_xQ+5(N+q).
+\tag{3.75}
+\]
+But every monomial of \(H^N\) has \(x\)-derivative order at least \(6N\).
+Hence the term vanishes whenever
+\[
+ N>\deg_xQ+5q.
+\tag{3.76}
+\]
+Only bounded \(N\) remain.  For those terms, applying
+\(\partial_y^kH^N\) leaves a polynomial of degree bounded independently
+of \(m\), while \(\Gamma^k\) has differential order at least
+\(k=m-N\).  It therefore kills the result for all sufficiently large
+\(m\).  This proves the theorem.
+
+The cutoff argument did not use the special value five.
+
+> **Corollary 3.14a — transverse-linear/high-order class.**  Let
+> \[
+> P=f(x)+ay,\qquad
+> \Lambda=\partial_y\Gamma+H(\partial_x),
+> \tag{3.76a}
+> \]
+> where \(\Gamma\) has no order-zero term and every nonzero monomial of
+> \(H\) has order strictly greater than \(\deg f\).  Then all pure moments
+> vanish and the GVC mixed conclusion holds for every \(Q\).
+
+Indeed, the proof of (3.75)--(3.76), with \(5\) replaced by
+\(\deg f\) and \(6\) by \(\operatorname{ord}_{\min}H\), applies verbatim.
+For \(Q=1\), every term with \(N>0\) is killed by \(H^N\), while the
+\(N=0\) term becomes constant after \(\partial_y^m\) and is killed by
+\(\Gamma^m\).
+
+The first double-line tip has two successive weighted faces.
+
+> **Theorem 3.15 — \(xy^4\) quadratic-leading quintic theorem.**
+> Suppose \(r=2\), \(\deg P=5\),
+> \(\Lambda_2=\partial_x^2\), and \(P_5=xy^4\).  The first three pure
+> equations imply the GVC conclusion.
+
+Retain every operator jet through order eight and solve the first
+equation.  Write \(a_{ij}=[\partial_x^i\partial_y^j]\Lambda\).  Successive
+coefficients of the second moment first give
+\[
+\begin{aligned}
+ [y^5]\Lambda^2(P^2)&=1152a_{03},\\
+ [y^4]\Lambda^2(P^2)\big|_{a_{03}=0}
+   &=96(68a_{04}+a_{12}^2),\\
+ [xy^2]\Lambda^2(P^2)
+   \big|_{a_{03}=0,\ a_{04}=-a_{12}^2/68}
+   &=-\frac{115200}{17}a_{12}^3.
+\end{aligned}
+\tag{3.77}
+\]
+Hence \(a_{03}=a_{12}=a_{04}=0\).  The next three coefficients give
+\[
+\begin{aligned}
+ a_{05}&=0,\\
+ a_{06}&=-\frac{23}{70}a_{13}^2,\\
+ a_{07}&=\frac{16}{35}a_{13}^2a_{21}
+          -\frac{11}{14}a_{13}a_{14}.
+\end{aligned}
+\tag{3.78}
+\]
+
+Give \(x,y\) weights \(3,1\) and put \(H=a_{13}\).  The maximal
+polynomial face and minimal operator face are
+\[
+\begin{aligned}
+ P_{[7]}&=xy^4-12Hx^2y,\\
+ \Lambda_{[6]}&=\partial_x^2
+   +H\partial_x\partial_y^3
+   -\frac{23}{70}H^2\partial_y^6.
+\end{aligned}
+\tag{3.79}
+\]
+Every omitted polynomial term has weight below seven and every omitted
+operator term has weight above six.  Therefore the weight-three component
+of the third pure equation is the corresponding component of this face.
+Directly,
+\[
+ [y^3]\Lambda_{[6]}^3(P_{[7]}^3)
+ =-553153536H^3.
+\tag{3.80}
+\]
+Thus \(H=0\).  Equations (3.78) give \(a_{06}=a_{07}=0\), and the
+remaining constant second-moment coefficient gives
+\[
+ a_{08}=-\frac{67}{140}a_{14}^2.
+\tag{3.81}
+\]
+
+Now give \(x,y\) weights \(4,1\) and put \(J=a_{14}\).  The new faces are
+\[
+\begin{aligned}
+ P_{[8]}&=xy^4-12Jx^2,\\
+ \Lambda_{[8]}&=\partial_x^2
+   +J\partial_x\partial_y^4
+   -\frac{67}{140}J^2\partial_y^8.
+\end{aligned}
+\tag{3.82}
+\]
+Their third moment is the constant
+\[
+ \Lambda_{[8]}^3(P_{[8]}^3)=-5430509568J^3.
+\tag{3.83}
+\]
+Hence \(J=0\).  What remains has maximal polynomial face \(xy^4\),
+minimal operator face \(\partial_x^2\), and strict inequalities off those
+faces.  Since the \(x\)-degree of \((xy^4)^m\) is only \(m<2m\), the
+standard weighted one-sided count gives the eventual mixed cutoff.
+
+The last quadratic-leading quintic tip reduces to six weighted ratios,
+four of which die at moment three.
+
+> **Theorem 3.16 — \(y^5\) quadratic-leading quintic theorem.**
+> Suppose \(r=2\), \(\deg P=5\),
+> \(\Lambda_2=\partial_x^2\), and \(P_5=y^5\).  The first three pure
+> equations imply the GVC conclusion.
+
+Solve the first equation and retain all jets through order eight.  The
+\(y^4\)-coefficient of the second moment is
+\[
+ 122400a_{03}^2,
+\tag{3.84}
+\]
+so \(a_{03}=0\).  Put
+\[
+ A=a_{04},\qquad B=a_{12},\qquad z=[xy^3]P.
+\]
+Give \(x,y\) weights \(2,1\).  The maximal polynomial and minimal
+operator faces are
+\[
+\begin{aligned}
+ P_{[5]}&=y^5+zxy^3-3(20A+Bz)x^2y,\\
+ \Lambda_{[4]}&=\partial_x^2
+   +B\partial_x\partial_y^2+A\partial_y^4.
+\end{aligned}
+\tag{3.85}
+\]
+The weight-two component of the second moment is
+\[
+72\left(
+16Az(40A+Bz)x+S(A,B,z)y^2
+\right),
+\tag{3.86}
+\]
+where
+\[
+\begin{aligned}
+S={}&24000A^2-1200AB^2+880ABz+20Az^2\\
+   &-60B^3z+B^2z^2.
+\end{aligned}
+\tag{3.87}
+\]
+The equations \(Az(40A+Bz)=S=0\), modulo the scaling
+\[
+ (A,B,z)\longmapsto(t^2A,tB,tz),
+\tag{3.88}
+\]
+have six nonzero ratios:
+\[
+\begin{gathered}
+(0,0,1),\quad(0,1,0),\quad(0,1,60),\quad
+\left(\frac1{20},1,0\right),\\
+\left(-\frac{t}{40},1,t\right),
+\qquad t^2+12t+60=0.
+\end{gathered}
+\tag{3.89}
+\]
+The origin is the uncorrected face.
+
+The weight-three component of the third moment is the third moment of
+(3.85).  On the third and fourth ratios in (3.89) it is respectively
+\[
+\begin{aligned}
+-1119744000y(42x+17y^2),\\
+-373248y(4x-27y^2),
+\end{aligned}
+\tag{3.90}
+\]
+so neither survives.  On the quadratic pair, reduction modulo
+\(t^2+12t+60\) gives
+\[
+124416y\left((51t+1080)x-(259t+2220)y^2\right),
+\tag{3.91}
+\]
+which is nonzero at both roots.  The remaining ratios are one-sided:
+\[
+\begin{array}{c|c}
+(0,0,1)&
+(\partial_x^2,\ y^5+xy^3),\\
+(0,1,0)&
+(\partial_x^2+\partial_x\partial_y^2,\ y^5),
+\end{array}
+\tag{3.92}
+\]
+and the origin gives \((\partial_x^2,y^5)\).  Every term off the displayed
+faces has strict weight.  The \(x\)-derivative count on each one-sided
+face therefore gives the eventual mixed cutoff and proves the theorem.
+
+Together with Proposition 3.13 and Theorems 3.14--3.15, this closes every
+\(r=2,\deg P=5\) pair and proves Corollary 1.5.
+
+The cubic-leading degree-five row is still open, but its top forms are
+finite.
+
+> **Proposition 3.17 — cubic-leading quintic top forms.**  Suppose
+> \(r=3\), \(\deg P=5\), and the first two pure equations hold.  After
+> scalar extension, linear changes, and rescaling, the leading pair is
+> one of the following eight forms:
+> \[
+> \begin{array}{c|c}
+> \Lambda_3&P_5\\ \hline
+> \partial_x^3&
+> x^2y^3,\ x(x-y)y^3,\ xy^4,\ y^5\\
+> \partial_x^2\partial_y&
+> x^5,\ xy^4,\ y^5\\
+> \partial_x\partial_y(\partial_x+\partial_y)&
+> x^5.
+> \end{array}
+> \tag{3.93}
+> \]
+
+For the triple-root orbit, the first equation gives
+\[
+ P_5=y^3(Ax^2+Bxy+Cy^2).
+\tag{3.94}
+\]
+The affine stabilizer of \(\partial_x^3\) has four orbits on the binary
+quadratic: two distinct finite roots, one double finite root, one finite
+root together with infinity, or the double root at infinity.  These give
+the first row of (3.93).
+
+For the double-root orbit, normalize
+\(\Lambda_3=\partial_x^2\partial_y\).  The first equation gives
+\[
+ P_5=Ax^5+Bxy^4+Cy^5,
+\]
+and the second leading moment is
+\[
+ 960Ax y^2(9Bx+5Cy).
+\tag{3.95}
+\]
+Thus either \(A\ne0\) and \(B=C=0\), or \(A=0\); the stabilizer reduces
+the latter case to \(xy^4\) or \(y^5\).
+
+Finally normalize the squarefree orbit to
+\(\partial_x\partial_y(\partial_x+\partial_y)\).  Solving the first
+equation writes
+\[
+P_5=A x^5-Dx^4y+2Dx^3y^2-2Dx^2y^3+Dxy^4+C y^5.
+\tag{3.96}
+\]
+The coefficients of the second leading moment have Gröbner basis
+\[
+ D(A+C),\qquad C(5A-D),\qquad D(D+5C).
+\tag{3.97}
+\]
+Its projective zero set is \(x^5,y^5,(x-y)^5\).  Root permutation makes
+these one orbit, giving the last row of (3.93).  Proposition 3.17 is only
+a top-form reduction; the eight nonhomogeneous correction systems remain
+open.
 
 ## 4. The rank obstruction for natural conversions
 
@@ -863,9 +1599,18 @@ The results leave four sharply separated directions.
    lowest-order-one class.  The first unresolved symbols therefore have
    lowest positive order \(r\ge2\), are genuinely nonhomogeneous, have
    \(\deg P>r\), and do not admit the split factor-unit architecture.
-   Theorem 3.7 additionally closes \(r=2,\deg P\le3\), so the first
-   exact cell is \(r=2,\deg P=4\).  Theorem 3.1 has already removed every
-   fixed leading face.
+   Theorems 3.7 and 3.9 close \(r=2,\deg P\le4\), while Theorems
+   3.10--3.12 close every \(r=3,\deg P=4\) leading-symbol orbit.
+   Corollary 1.4 therefore moves the universal binary frontier to
+   \(\deg P\ge5\).  In degree five only \(r=2,3,4\) can occur.
+   Proposition 3.13 reduces the first \(r=2\) row to three top forms;
+   Theorems 3.14--3.16 close all three forms.  Thus the first
+   quadratic-leading target has degree at least six, while a degree-five
+   counterexample must have \(r=3\) or \(4\).  Proposition 3.17 reduces
+   the \(r=3\) row to eight top forms.  This is the next finite
+   correction problem; the \(r=4\) row already contains the continuous
+   squarefree-quartic cross-ratio.
+   Theorem 3.1 has already removed every fixed leading face.
 3. **Coupled coefficient polarization.**  A one-coefficient translation
    is exactly the split-symbol class, while coefficient extraction of the
    rank-five witness needs at least five channels.  The next algebraic

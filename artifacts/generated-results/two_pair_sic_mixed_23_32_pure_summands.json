@@ -1,0 +1,105 @@
+{
+  "claim": "SIC(2) holds on V_(2,3)+V_(3,2) whenever the nonzero positive block lies in one of the pure Sym^5 or Sym^3 summands and satisfies its pure premise",
+  "claim_boundary": "The positive block with both Sym^5 and Sym^3 components nonzero remains open",
+  "clebsch_gordan": {
+    "change_of_basis_determinant": -22500,
+    "decomposition": "Sym^5 + Sym^3 + Sym^1",
+    "first_contraction": "12*(r0*Z+r1*Y)"
+  },
+  "pure_Sym3": {
+    "geometry": "rational normal cubic of binary cubes L^3",
+    "normal_form": "V**2*Y*Z**2 + V*W*Z**3",
+    "second_contraction_ideal": [
+      "t0*t2 - t1**2",
+      "t0*t3 - t1*t2",
+      "t1*t3 - t2**2"
+    ]
+  },
+  "pure_Sym5": {
+    "geometry": "tangential variety of binary quintics L^4*M",
+    "power_normal_form": "V**2*Z**3",
+    "prime_audit": {
+      "affine_dimension": 3,
+      "groebner_basis_size": 6,
+      "input_equals_prime_component": true,
+      "prime_components": 1
+    },
+    "second_contraction_ideal": [
+      "s0*s4 - 4*s1*s3 + 3*s2**2",
+      "s0*s5 - 3*s1*s4 + 2*s2*s3",
+      "s1*s5 - 4*s2*s4 + 3*s3**2"
+    ],
+    "tangent_normal_form": "3*V**2*Y*Z**2 - 2*V*W*Z**3"
+  },
+  "pure_power_branch": {
+    "forced_corner": "W^3*Y^2",
+    "moment_2": "24*h",
+    "multiplier_bound": "If w_Q is the central weight and epsilon_Q=deg_V-deg_Y, put R=max(0,w_Q-epsilon_Q).  A surviving term has m<=2*R+max(w_Q,0)."
+  },
+  "remaining_mixed_positive_local_gate": {
+    "base_point": "V*Z**2*(2*V*Y + 5*V*Z + 3*W*Z)",
+    "claim_boundary": "This is a local calculation for moments one through four at one mixed-positive point, not a global classification of the mixed-positive branch",
+    "excess_directions": [
+      "W*Z**2*(3*V*Y - W*Z)/3",
+      "Y*(20*V**2*Y**2 - 97*V*W*Y*Z + 37*W**2*Z**2)/20"
+    ],
+    "fourth_order_obstruction": {
+      "all_second_corrections_parameter_count": 6,
+      "all_third_corrections_parameter_count": 6,
+      "conclusion": "The surviving excess direction has no fourth-order lift for moments one through four, even after all second- and third-order corrections",
+      "resultant": 2283980165392458318151680000,
+      "two_residual_quadratics": [
+        "198510381*a5**2 + 6275108*a5 + 44436",
+        "1311046029*a5**2 + 20142212*a5 + 220884"
+      ]
+    },
+    "incidence_tangent_dimension": 4,
+    "jacobian_rank": 6,
+    "moment_orders": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "second_correction": "W*Y*Z*(V*Y - W*Z)/10",
+    "second_order_obstruction_ideal": "(beta_excess^2)",
+    "surviving_direction_lifts_through_order": 3,
+    "tangent_kernel_dimension": 6,
+    "third_correction": "W*Y*(4*V*Y**2 - 169*V*Y*Z - 172*W*Y*Z + 169*W*Z**2)/30280"
+  },
+  "status": "exact characteristic-zero theorem",
+  "two_sided_branches": {
+    "Sym3_cube": {
+      "forced_zero_coefficients": [
+        "u1",
+        "u3",
+        "u4"
+      ],
+      "groebner_basis": [
+        "u4**2",
+        "2*u1 + 3*u4",
+        "u3"
+      ],
+      "moment_2": "2*u1 + 3*u4",
+      "moment_3_z": "u3",
+      "moment_4": "4*u0*u3 + 2*u1**2 + 5*u1*u4 + 5*u2*u3 + 10*u3*u5 + 5*u4**2",
+      "residual_cutoff": "m > delta_Q+3*max(0,-epsilon_Q)"
+    },
+    "Sym5_tangent": {
+      "forced_zero_coefficients": [
+        "u1",
+        "u3",
+        "u4"
+      ],
+      "groebner_basis": [
+        "u4**2",
+        "u1 - u4",
+        "u3"
+      ],
+      "moment_2": "u1 - u4",
+      "moment_3_z": "u3",
+      "moment_4": "18*u0*u3 + 9*u1**2 + 15*u1*u4 + 15*u2*u3 + 40*u3*u5 + 20*u4**2",
+      "residual_cutoff": "m > delta_Q+3*max(0,-epsilon_Q)"
+    }
+  }
+}

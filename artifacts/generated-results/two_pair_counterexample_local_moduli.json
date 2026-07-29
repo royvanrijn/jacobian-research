@@ -2136,12 +2136,20 @@
   "quotient_quadratic_scheme": {
     "dimension": 5,
     "degree": 3,
+    "apolar_adjoint_eigenspace_dimensions": {
+      "even": 1,
+      "odd": 4
+    },
     "radical_linear_forms": [
       "v0",
       "35*v1 - 8*v4 - 70*v6 + 105*v7 - 105*v8",
       "28*v2 - 43*v4 + 168*v5 - 336*v6 + 336*v7 - 336*v8",
       "105*v3 - 251*v4 + 840*v5 - 1260*v6 + 1260*v7 - 1365*v8"
     ]
+  },
+  "all_moment_fiber_quotient_tangent_eigenspaces": {
+    "even": 2,
+    "odd": 8
   },
   "reduced_quadratic_cone_parameter_order": [
     "h0",

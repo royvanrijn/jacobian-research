@@ -61,13 +61,37 @@ the full binomial mixed-jet ladder, and proves Long's mechanism unique at
 minimum profile degree.  It also classifies the full
 \(p=x^{-1}(C(x)+D(x)t^2)\) numerator classes through
 \((\deg C,\deg D)\le(5,7)\).  The respective exact cutoffs are three, six,
-eight, ten, and twelve pure jets; in every rectangle the only all-order
+eight, ten, and twelve pure jets; in every proved rectangle the only all-order
 component is Long's \(D=-C^3\) family.  In arbitrary degree the pure jets reconstruct
 \(D\) triangularly from \(C\), while \(d-2\) eventual tangent directions
 remain invisible in the \((d,d+2)\) rectangle; a uniform proof must therefore
-be nonlinear.  The fixed cases motivate the precise \(2d+2\)-jet uniform
-rigidity conjecture.  The note does not classify general low-degree sphere
+be nonlinear.  In the open \((6,8)\) rectangle, stable modular data and a
+rationally reconstructed FGLM basis give a quotient of candidate length
+32 and a triangular support chain.  Exact rational lifts certify the last
+three relations in a five-relation support certificate and exclude the
+only denominator boundary.  The exact \(H=0\) slice has quotient length
+17 and is supported only at Long's point, so the sole fixed-degree gap is
+the saturation \(J_6:H^\infty=(1)\).  The fixed cases motivate the precise \(2d+2\)-jet
+uniform rigidity conjecture.  The note does not classify general low-degree sphere
 polynomials or general \(V_4\).
+The same five-term Hopf seed now has a direct
+[`SO(3)` interpretation](extended-geometry/LONG_SU2_AND_BCW_REPRODUCTIONS.md#15-longs-so3-witness).
+For the third-column coordinates
+\(U=r_{13}+ir_{23}\), \(V=r_{13}-ir_{23}\), \(T=r_{33}\), Long's announced
+\[
+ P=(1+U)(V-(2+U)T^2),\qquad Q=U
+\]
+satisfies
+\[
+ \int_{SO(3)}P^m=0,\qquad
+ \int_{SO(3)}QP^m=\frac{4^m(m!)^2}{(2m+1)!}\ne0
+ \quad(m\ge1).
+\]
+The local proof pushes Haar measure to the uniform third-column sphere and
+identifies \(P/2\) exactly with the repository's two-pair angular seed.  Thus
+the Mathieu conjecture fails already on the homogeneous sphere
+\(SO(3)/SO(2)\); this adds a compact-group realization but does not change
+the repository's SIC, GVC, or GMC dimension bounds.
 The two-pair seed behind the repository's three-pair Image-Mathieu witness
 also gives a
 [four-term cubic counterexample in four real variables](extended-geometry/THREE_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md#31-four-real-gaussian-consequence):
@@ -98,6 +122,49 @@ More generally, \(F_d=R^{d-4}F\) has bidegree \((d,d)\) and
 \]
 Thus \(\mathrm{MN}_d\) fails for every \(d\geq4\), with no parity or
 congruence restriction.
+The separate
+[characteristic-\(p\) phase diagram](extended-geometry/TWO_PAIR_SIC_CHARACTERISTIC_P.md)
+shows that this failure is genuinely characteristic-zero.  For the
+integral seed \(\widetilde F=2F\), the mixed reduction is nonzero exactly
+when \(4m+2<p\); ordinary differentiation then forces every fixed mixed
+contraction to vanish eventually.  The quadric and tensor are both
+nondegenerate precisely for \(p\geq5\), while the naive Hasse replacement
+has pure moments \(16^m\) and does not retain the witness.
+In fact ordinary \(\operatorname{SIC}(r)\) holds for every \(r\) in
+characteristic \(p\): the single identity
+\(\mathcal E_{r,p}(f^p)=0\) forces \(f(0,z)=0\), after which every mixed
+contraction vanishes from order \(p\) onward.  The cutoff is sharp.
+For every propagated form \(R^k(2F)^r\) of degree \(d=4r+k\), the exact
+cutoff is similarly \(dm+2<p\).  A complete Hasse-compatible kernel uses
+the \(p\)-typical divided orders \(1,p,p^2,\ldots\); passing instead to the
+fully divided-power algebra makes all positive-degree elements
+\(p\)-nilpotent.
+That Hasse Image is not Mathieu: already in one pair,
+\(f=\xi z^p\) has every pure Hasse moment zero, while the multiplier
+\(g=z\) is nonzero at the infinite orders
+\((p^e-1)/(p-1)\).
+Every non-power Hopf profile \(\Phi_h\) has the necessary cutoff
+\(4hm+2<p\), and \(\Phi_2\) satisfies this criterion exactly.  Higher
+profiles can have additional numerator-prime holes, beginning with
+\((h,m,p)=(6,1,47)\).
+At prime-power level the radial subfamily has monotone valuations because
+its consecutive mixed moments have quotient
+\(16(4m+3)(4m+5)(m+1)^2\).  This fails for non-radial lifts:
+for \(R(2F)\), the order-four moment is zero modulo \(11^2\), while the
+order-five moment is \(22\) modulo \(11^2\).
+Higher-degree tensor rank has a separate arithmetic: the determinants for
+\(R^k(2F)\), \(0\leq k\leq4\), introduce the exceptional odd primes
+\(17,23,5,83,13\).  These rank drops do not collapse the forms into the
+nullcone; every such lift remains semistable at odd primes.  For every
+\(k\), the four matrix diagonals are explicit binomial convolutions and
+their determinant satisfies a linear-size lower-Hessenberg continuant.
+In characteristic two their rank is exactly
+\(2^{1+s_2(\lfloor(k+2)/2\rfloor)}\), even though every displayed lift
+is in the nullcone there.
+On a perfect residue field \(k\), ordinary contraction over the canonical
+Witt lift \(W(k)\) retains every mixed moment; the truncated rings
+\(W_a(k)\) are governed exactly by the valuation phase diagram.  Thus
+the Witt formulation needs no Hasse modification.
 The stronger family \(R^kF^r\), where \(d=4r+k\) and \(0\leq k\leq3\),
 bounds the radial order by three and is \(R\)-primitive whenever
 \(4\mid d\).  A separate explicit Hopf-profile family gives
@@ -121,13 +188,46 @@ More generally, every nonzero correction
 \(\sum_{j\geq1}c_jR^{d-j}Z^j\) is detected exactly one order after its
 least positive phase, so the entire positive-phase triangular sector is
 excluded from all-order propagation.
-The opposite-pair obstruction is broader.  Every odd-height pair
-\(Z^sT^{d-s},W^sT^{d-s}\), and every even-height pair with \(s\geq3\),
-is excluded in all degrees by three explicit moments.  A separate exact
-elimination for \(RF+aZT^4+bWT^4\) closes the only remaining
-even-height phase in degree five.  Hence no opposite monomial pair in
-degree five preserves all pure moments; moments \(2,3,4\) already close
-the exceptional phase-one pair.
+The
+[opposite-monomial obstruction](extended-geometry/TWO_PAIR_OPPOSITE_MONOMIAL_OBSTRUCTION.md)
+closes the whole two-sided one-pair ansatz: for every \(d>4\) and
+\(1\leq s\leq d\), adding
+\[
+ aZ^sT^{d-s}+bW^sT^{d-s}
+\]
+preserves all pure moments only when \(a=b=0\).  Odd heights and
+even-height phases \(s\geq3\) have direct phase certificates.  Phase two
+reduces to a degree-22 numerator with no root modulo \(47\), while phase
+one reduces to a quadratic/cubic resultant whose degree-31 factor has no
+root modulo \(29\).
+Locally, even the first multi-pair escape is quadratically rigid: on the
+degree-five odd-height sector
+\[
+ a_2Z^2T^3+a_4Z^4T+b_2W^2T^3+b_4W^4T,
+\]
+the quadratic moment obstructions through order ten have radical equal
+to the origin.  Their quotient is the length-six compressed
+Artin--Gorenstein algebra with Hilbert vector \((1,4,1)\).  More strongly,
+the six even-height variables are eliminated linearly by moments
+\(2,\ldots,7\); the projected quadratic obstruction from moments
+\(8,\ldots,11\) is a length-sixteen complete intersection with Hilbert
+vector \((1,4,6,4,1)\).  Hence \(RF\) is formally isolated in the full
+ten-dimensional degree-five monomial correction space, although isolated
+finite corrections away from \(RF\) remain open.
+The same formal isolation is now exact in degrees six through eleven.  In
+degrees six and seven the odd-height kernel is cut out by six projected
+quadrics forming a length-\(64\) complete intersection with Hilbert vector
+\((1,6,15,20,15,6,1)\).  In degrees eight and nine, good-prime
+certificates at \(1000003\) prove that eight projected quadrics form the
+length-\(256\) complete intersection with Hilbert vector
+\((1,8,28,56,70,56,28,8,1)\).  Degree ten gives ten projected quadrics,
+Hilbert vector \((1,10,45,120,210,252,210,120,45,10,1)\), and length
+\(1024\); degree eleven has the same ten-quadric Hilbert series and
+length.  Degrees five through eleven support a uniform
+conjecture: after \(2\lceil d/2\rceil\) linear pivots, the
+\(2\lfloor d/2\rfloor\) odd-height variables should be cut out by the
+same number of quadrics with Hilbert series
+\((1+t)^{2\lfloor d/2\rfloor}\).
 Since the one-pair theorem is known, the minimum failing SIC pair
 dimension is exactly two.  The witness is bidegree \((4,4)\), has sixteen
 expanded terms, and has full \(5\times5\) coefficient-matrix rank, so it
@@ -142,8 +242,20 @@ twelve independent functionals, and the first lifting obstruction has
 seven independent quadrics.  Modulo orbit and scaling, those quadrics
 define a degree-three thickening of an explicit five-plane.  Every
 direction on the reduced five-plane has an exact polynomial lift through
-cubic order, so the first unresolved obstruction is fourth order.  The
-nullcone has empty local germ at \(F\).
+cubic order.  At fourth order, the chosen polynomial section is
+obstructed, but this is not intrinsic: after restoring the full cubic-lift
+torsor, the nonradial direction \((1,2,3,4,5)\) has a
+nine-dimensional degree-two space of fourth lifts.  It is two conjugate
+affine \(9\)-planes over \(\mathbb Q(\sqrt {41})\), so this direction has
+no rational fourth lift even though it lifts geometrically.  A combined
+degree-\(4,8,12,16\) beta-tail identity makes this an all-moment
+calculation rather than a finite-prefix test.  One explicit conjugate pair
+of these four-jets is obstructed at fifth order: after restoring all
+thirteen fourth-tangent parameters, the compatibility rank jumps
+\(2\to3\), with a three-row exact obstruction supported at indices
+\(12,13,14\).  Whether another point on either affine \(9\)-plane survives
+the fifth equations remains open.  The nullcone has empty local germ at
+\(F\).
 The explicit family
 \[
  F_{a,b}=\frac{aR+bZ}{2}
@@ -164,7 +276,21 @@ are algebraically independent but cannot be homogeneous parameters: the
 required invariant Hilbert numerator has coefficient \(-5266\) in degree
 \(69\). Hence their zero fiber contains a semistable point. Replacing
 \(\mu_{13}\) by \(\mu_{14}\) is the first Hilbert-compatible
-dimension-sized system; its exact zero fiber is the next rank-two gate.
+dimension-sized system. Its candidate numerator is nonnegative and
+palindromic through the Gorenstein-predicted top degree \(82\).
+On the generic squarefree rank-one stratum, exact resultant decomposition
+now proves that the first six moments vanish only on annihilator tensors.
+Exact quadratic-field fibers also close the pivot-annihilator and
+equianharmonic orbits, while the earlier \(\lambda=2\) certificate closes
+the harmonic orbit. Exact expected-branch resultants expose one further
+quartic \(S_3\)-orbit, which is also closed over its coefficient field.
+Exact compatibility charts now close every remaining squarefree
+specialization. A separate finite checker proves that the first four
+moments cut out the one-sided nullcone for symbols with at most two roots;
+the three-root orbit was already closed by five moments. Therefore every
+rank-one six-moment zero is unstable, and the semistable
+thirteen-moment fiber contains a point of exact coefficient rank two.
+This is a truncated-moment survivor, not an all-order counterexample.
 
 The earlier
 [dual-linear theorem](extended-geometry/DUAL_LINEAR_SIC2.md)
@@ -183,6 +309,64 @@ bidegree-\((2,2)\) polynomial, including all dense eight- and nine-term
 forms.  The earlier \(501\)-support census through seven terms is retained
 with its certified Laurent-curve radicals and hidden one-sided
 factorizations.
+The first genuinely two-sided nonhomogeneous collection is also closed.
+For
+\[
+ F=F_{2,2}+F_{1,3}+F_{3,1},
+\]
+the
+[mixed ordinary-degree frontier](extended-geometry/TWO_PAIR_SIC_ORDINARY_DEGREE_LT8_MIXED_FRONTIER.md)
+uses the full polynomial-valued contractions through order four to force
+a strict two-step one-sided cone.  Hence every fixed mixed contraction
+vanishes eventually on this complete stratum.  The same argument proves
+`SIC(2)` on \(V_{1,d}\oplus V_{d,1}\) for every \(d\geq2\), excluding all
+five opposite dual-linear pair types through ordinary degree seven.  This
+rules out the first proposed central-weight cancellation mechanisms, but does not prove
+ordinary degree eight minimal: balanced lower corrections through
+\((3,3)\) and other two-sided bidegree collections remain open.
+At the next balanced level, the same note closes every point of
+\[
+ V_{3,3}\oplus V_{1,4}\oplus V_{4,1}
+\]
+with nonzero \(V_{1,4}\) component.  Moments through five force an
+upper-triangular flag, then cut the four-variable central core out
+radically.  The zero-\(V_{1,4}\) boundary reduces exactly to the existing
+balanced \((3,3)\) problem, so this entire mixed stratum is safe if and
+only if \(V_{3,3}\) is safe.
+The resulting diagonal-core formula extends uniformly in degree.  At the
+first degree-eight threshold, exact calculations over
+\(\mathbb F_{101}\) and \(\mathbb F_{1009}\) give the same
+origin-supported length-\(360\) core fiber.  This remains finite-field
+evidence: rational reconstruction and the preceding full \(d=4\)
+triangularization are open, and the known bidegree-\((4,4)\) witness is
+off this diagonal core.
+The first positive block of dual degree two is now partly classified as
+well.  Under
+\[
+V_{2,3}\cong\operatorname{Sym}^5\oplus
+\operatorname{Sym}^3\oplus\operatorname{Sym}^1,
+\]
+the first contraction removes \(\operatorname{Sym}^1\).  On either pure
+remaining summand, the second contraction gives respectively the
+tangential quintics \(L^4M\) or the rational-normal cubes \(L^3\).
+For all their normal forms, moments through four remove the dangerous
+\(V_{3,2}\) coefficients and an explicit cone proves `SIC(2)`.  Thus the
+first unresolved \(V_{2,3}\oplus V_{3,2}\) branch requires simultaneous
+nonzero \(\operatorname{Sym}^5\) and \(\operatorname{Sym}^3\) components.
+At one such mixed-positive point, the two transverse tangent excesses of
+the first four moment equations are killed at deformation orders two and
+four.  The order-four obstruction retains every second- and third-order
+correction parameter and has a nonzero exact resultant.  This closes the
+local jet at that point, while leaving exceptional mixed-positive ratios
+and other components open.
+The incidence family reduces further to one quotient parameter
+\(u=a/b\): an exact rational-function calculation closes the generic
+transverse jet and factors its fourth-order resultant into chart factors
+and one irreducible sextic.  Direct recomputation removes
+\(u=0,-6,-3/4,\infty\), so every rational ratio on the normalized
+\(a\ne b\) family is excluded locally through order four.  Over an
+algebraic closure, six sextic ratios, three kernel-chart ratios, and the
+\(a=b\) stratum remain.
 The intervening balanced case remains independently interesting:
 the [bidegree-\((3,3)\) frontier](extended-geometry/TWO_PAIR_SIC_BIDEGREE33_FRONTIER.md)
 eliminates the full seven-dimensional one-sided nullcone and proves that
@@ -296,12 +480,46 @@ At lowest positive order two, every cubic \(P\) is safe as well: the two
 binary-quadratic symbol orbits reduce to explicit second- and third-moment
 branches, after which a strict weighted-degree separator proves all mixed
 vanishing.
+For quartic \(P\), the distinct-root quadratic orbit and the double-line
+\(xy^3\) top-form branch also close.  The sole remaining double-line
+\(y^4\) branch is reduced by its first three moments to finitely many
+algebraic parameter ratios, cut out by an explicit sextic resultant.
+The weight-four realization of that residual dies at moment four:
+its new octavic is coprime to the sextic.  Weights
+\(\operatorname{wt}(x)=2,\operatorname{wt}(y)=1\) show that every higher
+operator jet and lower polynomial term drops out of every pure moment.
+Thus the full quadratic-leading quartic cell is closed.
+At lowest order three, the triple-root leading-symbol orbit is also safe
+for quartic \(P\).  Its three stabilizer types reduce to one-sided
+weighted faces; the only surviving correction chain ends in the fourth
+moment \(3361505280U^4\).
+The double-root orbit closes through moment three as well.  In the
+squarefree orbit, the first two leading moments leave exactly the three
+fourth powers annihilated by the three linear factors.  Root permutation
+reduces them to \(x^4\), whose full nonhomogeneous correction is the same
+weight-four face as in the double-root case; its third moment is
+\(129392640T^3\).  Thus every binary constant-coefficient operator
+satisfies GVC for \(\deg P\le4\).  Any binary counterexample must have
+\(\deg P\ge5\), and in degree five its lowest positive operator order can
+only be \(2,3,\) or \(4\).  In the first \(r=2\) row, the leading pair
+already reduces to
+\((\partial_x\partial_y,x^5)\),
+\((\partial_x^2,xy^4)\), or
+\((\partial_x^2,y^5)\).  Full second- and third-moment calculations,
+together with weighted one-sided cutoffs, close all three correction
+systems.  Thus every quadratic-leading pair is safe through degree five.
+A degree-five counterexample must have lowest positive operator order
+\(3\) or \(4\).  The \(r=3\) leading equations reduce further to eight
+top-form normal forms: four over the triple-root cubic symbol, three over
+the double-root symbol, and one over the squarefree symbol.  Their
+nonhomogeneous correction systems are the next finite target; the
+\(r=4\) row already contains a squarefree-quartic cross-ratio.
 The full SIC nullcone equality is now false, but the new witness has full
 coefficient-matrix rank and therefore lies outside the separable GVC
 Segre cone.  The remaining nonhomogeneous frontier has lowest positive
 operator order at least two, requires polynomial degree greater than that
 order, and must avoid the factor-unit architecture.  If the lowest order
-is exactly two, its polynomial degree must now be at least four.  The
+is exactly two, its polynomial degree must now be at least six.  The
 [low-dimensional GVC program](extended-geometry/TWO_VARIABLE_GVC_REPRESENTATION_PROGRAM.md)
 also records the separate ordinary-Laplacian route: quadraticize the
 factored third-order Dvorsky symbol by a nonlinear polarization, minimizing
@@ -408,6 +626,14 @@ or `0` analytic inverse branches off the boundary discriminant, on its
 smooth remainder, or on the codimension-two omitted triple-root curve.  The
 origin branch and the three rational-collision branches have exact centered
 radius one, not attained.
+
+The
+[mixed-sign grading literature reconciliation](extended-geometry/MIXED_SIGN_GRADINGS_LITERATURE_RECONCILIATION.md)
+compares Shaska's elliptic/parabolic/hyperbolic classification and quotient
+formula with the repository's terminology.  It records that the foundational
+weights are `(1,-1,-2)`, reconciles the swapped target-invariant convention,
+and separates equivariance for a chosen grading from the stronger but
+family-specific stable-left--right and intrinsic-boundary results.
 
 ## Canonical proof path
 
@@ -602,7 +828,16 @@ module tests but is nowhere generically étale.  One explicit order-four
 lift restores the same finite length-six support defect in all ten rows
 without creating cotangent point torsion.  Along the seven squarefree
 one-parameter families scaling this lift, the relative `Ext^2` presentation
-is exactly parameter-independent and retains multiplicity six.  For a
+is exactly parameter-independent and retains multiplicity six.  More
+generally, all 168 families obtained from the 24 quartic kernel-basis axes
+and the seven squarefree symbols retain invariant flat length six; four
+rows change their literal presentation, confirming that presentation
+equality is not itself geometric.  For the smooth symbol, all 276 full
+coordinate two-planes have relative Ext presentation pulled back from the
+origin, closing every quartic direction supported on at most two basis
+tensors.  All 2,024 smooth coordinate three-spaces also retain the same
+pruned rank-three presentation, so any remaining smooth quartic escape
+requires at least four basis directions.  For a
 smooth homogeneous symbol the resulting algebra is already a normal
 integral global defect model, but its elliptic projective incidence surface
 makes its geometric divisor class group non-finitely generated, excluding

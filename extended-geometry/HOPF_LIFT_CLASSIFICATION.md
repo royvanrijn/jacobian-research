@@ -737,14 +737,144 @@ Long's point.  Its tangent space is spanned by \(E,F,G\), of the predicted
 dimension three.  The exact checker derives the residual jets and verifies
 both ideal containments in (7.24).  Theorem 3.1 supplies all higher orders.
 
-The next unclassified numerator rectangle is
+### Modularly reconstructed \((6,8)\) frontier
+
+The triangular and tangent parts of this case remain tractable.  Normalize
 \[
- \deg C\le6,\qquad \deg D\le8.
+ C=1+x+Ex^2+Fx^3+Gx^4+Hx^5+Ix^6.
+\]
+The first eight pure jets reconstruct all eight nonconstant coefficients of
+\(D\).  After substitution, the predicted cutoff contributes six residual
+polynomials
+\[
+ P_9,\ldots,P_{14}\in\mathbb Q[E,F,G,H,I]
+\]
+with respectively
+\[
+ 19,\ 28,\ 37,\ 51,\ 64,\ 83
+\]
+terms.  Their Jacobian at the origin has rank one, so the residual tangent
+space has dimension four, exactly as Proposition 7.6 predicts.
+
+Let \(J_6=\langle P_9,\ldots,P_{14}\rangle\).  Rational modular
+standard-basis reconstruction, followed by FGLM, produces a candidate
+basis \(K_6\) with
+\[
+ \dim_{\mathbb Q}\mathbb Q[E,F,G,H,I]/K_6=32.
 \tag{7.25}
 \]
+The grevlex leading ideal and this quotient length are identical modulo
+each of \(32003,32009,32027,65521\).  In the lexicographic order
+\(I>H>G>F>E\), write the reconstructed reduced basis
+as \(L_1,\ldots,L_{18}\).  The following small part of the exact output is
+a triangular candidate support chain:
+\[
+\begin{aligned}
+ L_1&=E^8,&L_6&=F^5,\\
+ L_{13}|_{E=F=0}&=607500G^3,\\
+ L_{17}|_{E=F=G=0}&=1944000000H^2,\\
+ L_{18}|_{E=F=G=H=0}&=186624000000I.
+\end{aligned}
+\tag{7.26}
+\]
+If \(K_6=J_6\), successive substitution in (7.26) forces
+\(E=F=G=H=I=0\), and fourteen-jet rigidity follows.
 
-> **Open problem A.**  Classify (7.25) under polynomiality and the all-order
-> adjacent-jet conditions.  More structurally, determine whether the
+This is not yet a characteristic-zero proof.  Singular's fast modular
+standard-basis routine verifies the reconstructed rational basis internally,
+but for a nonhomogeneous input ideal its documented equality guarantee is
+probabilistic.  Direct rational ideal-membership lifts, rational
+full-syzygy reconstruction, the \(H\ne0\) chart described below, and the
+homogeneous modular route exceeded the current bounded runs.  Thus the
+exact missing certificate is one of:
+\[
+ K_6\subseteq J_6,\qquad
+ \operatorname{in}(J_6)=\operatorname{in}(K_6),\qquad\text{or}\qquad
+ \sqrt{J_6}=(E,F,G,H,I).
+\tag{7.27}
+\]
+The checker constructs the residuals and verifies their term counts and
+tangent rank.  With `--require-singular`, it also reproduces
+(7.25)--(7.26); that part of the optional check is computational evidence,
+not a proof of (7.27).
+
+There is a substantially smaller certification target than the full
+18-element basis.  The reconstructed grevlex basis contains \(H^3\) and
+\(I^3\).  After setting \(H=I=0\), the three-variable lex basis contains
+\[
+ E^6,\qquad
+ 48F^3+7E^5,\qquad
+ 972G^2+864F^2E+29E^5-108E^4.
+\tag{7.28}
+\]
+Thus five exact memberships—\(H^3,I^3\) in \(J_6\), followed by the three
+members of (7.28) in the specialized ideal—would already prove origin
+support.  The last three are now certified: exact rational lift matrices
+express every member of (7.28) in the specialization
+\(J_6|_{H=I=0}\), and direct multiplication gives zero remainder.
+Only the two full-ideal memberships \(H^3,I^3\in J_6\) remain in this
+five-relation route.
+
+There is also an exact useful chart reduction.  The first residual is
+affine in \(I\), with coefficient
+\[
+ 2(84E+54F+5).
+\]
+Exact rational standard-basis computation gives
+\[
+ J_6+(84E+54F+5)=(1).
+\]
+Consequently every residual point lies on the principal open where \(I\)
+can be eliminated.  Clearing its unit denominator produces five
+polynomials in \(E,F,G,H\).
+
+The complementary \(H=0\) slice is also completely exact.  Direct rational
+standard-basis computation gives quotient length \(17\); its eight-element
+lex basis begins with \(E^7\) and, after successive substitution, contains
+nonzero multiples of \(F^3,G^2,I\).  Hence
+\[
+ V(J_6+(H))=\{0\}.
+\]
+Every hypothetical extra residual point must therefore lie in the single
+principal chart \(H\ne0\).  Equivalently, the entire remaining fixed-degree
+question is
+\[
+ J_6:H^\infty\stackrel{?}{=}(1).
+\]
+The exact rational Rabinowitsch computation for this chart did not finish
+within the bounded run.  Over \(\mathbb F_{32003}\), however, a unit
+certificate is found in one second.  Its seven multipliers have degrees
+\[
+ 11,\ 11,\ 10,\ 10,\ 9,\ 9,\ 12
+\]
+and about \(13\,000\) terms in total.  Thus the sharpest immediate
+continuation is modular reconstruction of this single transformation vector
+followed by exact rational multiplication, rather than reconstruction of
+the entire basis.
+
+Raw lift vectors cannot be combined prime by prime: although their supports
+are stable, an eleventh-prime prediction test shows that their coefficients
+vary by modular syzygies.  Reducing each lift modulo a standardized syzygy
+basis removes this ambiguity.  At \(p=32003\), the syzygy module has 371
+standard-basis elements and the normalized certificate has multiplier
+degrees
+\[
+ 8,\ 8,\ 8,\ 9,\ 9,\ 8,\ 8
+\]
+with term counts
+\[
+ 778,\ 834,\ 814,\ 732,\ 646,\ 487,\ 692.
+\]
+The same supports occur at \(p=32009\).  Ten normalized small primes give a
+150-bit CRT modulus, still insufficient for balanced rational
+reconstruction.  A resumable normalized-CRT computation is therefore the
+remaining certification task; the prime computations should be
+checkpointed rather than restarted.  Alternatively one may certify
+\(H^3\in J_6\) directly.  Recording the full reconstructed basis is
+unnecessary.
+
+> **Open problem A.**  Certify (7.27), or find an additional component of
+> \(J_6\).  More structurally, determine whether the
 > rectangles \((d,d+2)\) are rigid for every fixed \(d\), and whether there
 > is a uniform conceptual reason for the finite-jet cutoffs.
 
@@ -756,7 +886,7 @@ The computed cutoffs suggest a precise statement.
 > polynomiality, the adjacent condition \([x]K_2\ne0\), and the pure jets
 > \[
 > [x^m]K_m=0\qquad(1\le m\le2d+2)
-> \tag{7.26}
+> \tag{7.29}
 > \]
 > force \(C=1+ax,\ D=-(1+ax)^3\), up to scaling and the sphere torus, in
 > the rectangle \((\deg C,\deg D)\le(d,d+2)\).  The residual finite-jet
@@ -778,7 +908,7 @@ All \(t^2\)-linear height moments are packaged by
  &=\sum_{k\ge0}
    \frac{(zD(x))^k}{(2k+1)(1-zC(x))^{k+1}}.
 \end{aligned}
-\tag{7.27}
+\tag{7.30}
 \]
 The pure conditions are the vanishing diagonal
 \([x^mz^m]\mathcal G=0\), while the adjacent detectors are the neighboring
@@ -839,19 +969,33 @@ moving endpoint factor \(D=-C^3\).  The adjacent condition is then the
 coefficientwise nonvanishing of the simpler average
 \(\int_0^1z\,w_v'(z)\,dv\).
 
+The averaging cannot be discarded.  If \(h(v)\) is any nonzero function
+with \(\int_0^1h(v)\,dv=0\), then the artificial family
+\[
+ w_v(z)=z(1-v^2)\exp(h(v)z)
+\]
+satisfies the boxed logarithmic identity but is not pointwise trivial.
+Such a family generally does not arise from
+\(w_v=z(C(w_v)+v^2D(w_v))\) with fixed polynomials \(C,D\).  Therefore no
+Jensen-style argument can infer the Long factor from the averaged logarithm
+alone.  A uniform proof must use, essentially, the affine dependence of
+\(f_v\) on \(v^2\).  This is the central structural constraint retained by
+the original Hopf ansatz and lost in an arbitrary family of inverse
+branches.
+
 There is an important tangent obstruction to any such proof.
 
 > **Proposition 7.6 (eventual tangent invisibility).**  At Long's normalized
 > point
 > \[
 > C=X=1+x,\qquad D=-X^3,
-> \tag{7.28}
+> \tag{7.31}
 > \]
 > consider a first-order deformation
 > \[
 > C_\epsilon=X+\epsilon c(x),\qquad
 > D_\epsilon=-X^3+\epsilon d(x),
-> \tag{7.29}
+> \tag{7.32}
 > \]
 > in the rectangle \((d,d+2)\), after fixing the constant and linear
 > normalizations, so \(c\in x^2k[x]\).  The eventual linearized pure-jet
@@ -866,7 +1010,7 @@ Indeed, put
  A_m(X)&=\int_0^X(1-w^2)^{m-1}\,dw,\\
  B_m(X)&=\int_0^Xw^2(1-w^2)^{m-1}\,dw.
 \end{aligned}
-\tag{7.30}
+\tag{7.33}
 \]
 Their differences from their values at \(X=1\) have order at least \(m\).
 Since \(c,d\) have no constant term, differentiating \(K_m\) at
@@ -874,32 +1018,33 @@ Since \(c,d\) have no constant term, differentiating \(K_m\) at
 factor,
 \[
  [x^m]X^{m-4}\bigl(d(x)+(2m+1)X^2c(x)\bigr),
-\tag{7.31}
+\tag{7.34}
 \]
 where
 \[
  \frac{B_m(1)}{A_m(1)}=\frac1{2m+1}.
-\tag{7.32}
+\tag{7.35}
 \]
 For \(c_jx^j\), the resulting polynomial in \(m\) is
 \[
  (2m+1)c_j\binom{m-2}{j-2},
-\tag{7.33}
+\tag{7.36}
 \]
 of degree \(j-1\).  A term \(d_kx^k\) contributes
 \[
  d_k\binom{m-4}{k-4},
-\tag{7.34}
+\tag{7.37}
 \]
 of degree at most \(k-4\).  Since \(k\le d+2\), no \(d\)-term can cancel
 the degree-\((d-1)\) contribution of \(c_dx^d\); hence \(c_d=0\).
-Conversely the binomial polynomials in (7.34), for
+Conversely the binomial polynomials in (7.37), for
 \(4\le k\le d+2\), form a basis through degree \(d-2\), so they absorb
 every contribution from \(c_2,\ldots,c_{d-1}\).
 
 For \(d=3\), the single invisible direction is the nonreduced \(E\)-direction
 in Theorem 7.2.  For \(d=4,5\), Theorems 7.3--7.4 exhibit respectively two
-and three surviving directions.
+and three surviving directions; the computed \(d=6\) residual system has
+the predicted four-dimensional tangent space.
 Therefore a uniform rigidity proof cannot be a Jacobian-rank or first-order
 argument; it must exploit nonlinear endpoint contact.
 
@@ -909,7 +1054,7 @@ Endpoint contact proves the pure cancellation independently of the values
 \(C_m\).  Detection by \(x^\ell\) fails exactly at orders for which
 \[
  C_m=\int_0^1R(v^2)^m\,dv=0.
-\tag{7.35}
+\tag{7.38}
 \]
 For real nonzero \(R\), every even \(C_m\) is positive.  Hence only odd
 orders can obstruct all-order detection.  Fixed-sign profiles such as
@@ -920,28 +1065,28 @@ odd cancellations.  This is a genuine obstruction, not just a caveat.
 > For every odd \(n\ge1\), there is a unique \(c_n\in(0,1)\) such that
 > \[
 > R_{c_n}(z)=(1-z)(z-c_n)
-> \tag{7.36}
+> \tag{7.39}
 > \]
 > has the required simple endpoint zero but
 > \[
 > \int_0^1R_{c_n}(v^2)^n\,dv=0.
-> \tag{7.37}
+> \tag{7.40}
 > \]
 > Moreover,
 > \[
 > c_n\longrightarrow3-2\sqrt2
 > \qquad(n\longrightarrow\infty,\ n\ {\rm odd}).
-> \tag{7.38}
+> \tag{7.41}
 > \]
 
-To see existence, regard the integral in (7.37) as a continuous function
+To see existence, regard the integral in (7.40) as a continuous function
 of \(c\).  At \(c=0\), the integrand
 \(((1-v^2)v^2)^n\) is nonnegative and not identically zero.  At \(c=1\),
 it is \(-(1-v^2)^{2n}\), because \(n\) is odd.  The intermediate value
 theorem gives \(c_n\).  Its derivative is
 \[
  -n\int_0^1(1-v^2)^n(v^2-c)^{n-1}\,dv<0,
-\tag{7.39}
+\tag{7.42}
 \]
 because \(n-1\) is even.  Hence the zero is unique.
 
@@ -950,14 +1095,14 @@ At the zero, the positive and negative parts of the integral have equal
 \[
  \max_{0\le z\le c}(1-z)(c-z)=c,\qquad
  \max_{c\le z\le1}(1-z)(z-c)=\frac{(1-c)^2}{4}.
-\tag{7.40}
+\tag{7.43}
 \]
 Every accumulation point of \(c_n\) therefore solves
 \(c=(1-c)^2/4\).  The unique solution in \((0,1)\) is
-\(3-2\sqrt2\), proving (7.38).  For \(n=1\), direct integration gives
+\(3-2\sqrt2\), proving (7.41).  For \(n=1\), direct integration gives
 \[
  c_1=\frac15.
-\tag{7.41}
+\tag{7.44}
 \]
 
 Consequently the hypothesis \(C_m\ne0\) in Theorem 3.1 cannot be removed

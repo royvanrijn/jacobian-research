@@ -208,6 +208,10 @@ Gröbner elimination, or finite-difference proofs.  The existing bounded
 four-variable search in
 [`DVORSKY_GVC5_COUNTEREXAMPLE.md`](DVORSKY_GVC5_COUNTEREXAMPLE.md)
 only covers one symmetry-preserving lattice slice.
+The exact reduction of sparse contractions to finite hypergeometric
+multisums, the recurrence-certificate protocol, and the separate
+applicability gates for Newton-polytope GKZ rank bounds are recorded in
+[`HOLONOMIC_HYPERGEOMETRIC_ALGORITHMS.md`](HOLONOMIC_HYPERGEOMETRIC_ALGORITHMS.md).
 
 The following four-pair subproblem was closed before the three-pair
 construction was found and remains useful structural evidence:
@@ -309,8 +313,12 @@ polynomial, with no degree restriction.  Thus the remaining GVC(2) route
 needs a genuinely nonhomogeneous operator; the
 [separable escape obstruction](SEPARABLE_GVC_ESCAPE_OBSTRUCTIONS.md)
 also excludes degree at most the lowest positive order and the
-arbitrary-degree factor-unit class.  Finite-moment nullcone classification
-remains a separate SIC-strengthening.
+arbitrary-degree factor-unit class.  Its low-order orbit analysis now
+closes every binary operator through polynomial degree four, so a GVC
+counterexample must begin in degree five.  It further closes every
+quadratic-leading pair through degree five, so the first degree-five
+counterexample would have lowest positive operator order three or four.
+Finite-moment nullcone classification remains a separate SIC-strengthening.
 The continuing representation program and the distinction between unequal
 bidegree and genuinely nonhomogeneous mixtures are recorded in
 [`TWO_VARIABLE_GVC_REPRESENTATION_PROGRAM.md`](TWO_VARIABLE_GVC_REPRESENTATION_PROGRAM.md).
@@ -363,10 +371,10 @@ as well: the
 [Keller-provenance compression audit](KELLER_PROVENANCE_COMPRESSION.md)
 proves
 \[
- \{P\in\mathbb Q[X]_{\leq5}:P\circ V=P\}
- =\mathbb Q[X_{20}]_{\leq5}.
+ \{P\in\mathbb Q[X]_{\leq6}:P\circ V=P\}
+ =\mathbb Q[X_{20}]_{\leq6}.
 \]
-Thus no invariant polynomial of degree at most five exposes a second identity
+Thus no invariant polynomial of degree at most six exposes a second identity
 output independent of the known homogenizing coordinate.  The same audit
 shows that literal inverse-recurrence dependency pruning still uses all
 twenty active coordinates and that no already stored degree-lowering circuit
@@ -377,8 +385,26 @@ narrower scopes stated in that note.
 At degree six, both possible correction channels from the lower-degree
 near-invariant are also closed. Two exact torus gradings reduce them to
 Lie-derivative blocks of sizes 103 and 1604; both blocks are injective and
-both required defects lie outside their images. The remaining degree-six
-question is only whether a genuinely new homogeneous sextic invariant exists.
+both required defects lie outside their images. The same gradings classify
+all \(220\) sextic sectors. Unique-row peeling certifies \(25\) of the \(28\)
+dense sectors outright and reduces the other three to cores of sizes
+\(1596,1956,2170\). The complete Lie kernel is
+\(\langle s^6,s^4Q,s^2Q^2,Q^3\rangle\); exact pullback defects leave only
+\(s^6\) fixed. At degree seven, both lower-degree correction sectors are
+exactly \(s\) times the already excluded sextic sectors, so only the pure
+homogeneous septic Lie kernel remains open. Reducing that problem modulo
+\(s\) gives \(657800\) columns in \(204\) sectors; exact unique-row peeling
+removes \(451891\), leaving a \(205909\)-column residual quotient kernel and
+its \(s\)-adic lifting problem. The reduced derivation is a constant vertical
+direction over the fourteen-variable base. Its first lifting obstruction
+lives in the quotient by the six vertical coefficients; it already excludes
+the extreme class \(X_9^7\). That coefficient ideal has height two and five
+minimal components, including the plane \(X_0=X_1=0\); its degree-eight
+quotient has dimension \(158412\). Consequently a regular-sequence/Koszul
+shortcut is unavailable. Direct evaluation on the five components excludes
+\(71588\) of the \(77520\) support-one base septics. The support-free stacked
+component map has rank at least \(61060\), leaving a radical-level subspace
+of dimension at most \(16460\); the next attack is embedded-torsion control.
 
 The same audit program now backtraces the near-invariant through the frozen
 BCW circuit. In the 24-dimensional rank-compressed homogenization,
@@ -401,7 +427,7 @@ quotient.
 
 Resume this track only with one of:
 
-1. a nonlinear collision-preserving quotient outside the degree-at-most-five
+1. a nonlinear collision-preserving quotient outside the degree-at-most-six
    invariant-slice class;
 2. a different degree-lowering/homogenizing circuit before contraction;
 3. a new smaller noninvertible Keller presentation;

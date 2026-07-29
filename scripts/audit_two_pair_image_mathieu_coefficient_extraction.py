@@ -490,6 +490,7 @@ def audit_repeated_pole_jet_transform() -> None:
         product_jet = generalized_beta_product_jet(order, MAX_POLE_ORDER)
         for pole_order in range(1, MAX_POLE_ORDER + 1):
             current = repeated_beta_sum(order, pole_order)
+            assert current > 0
             assert (2 * order + 1) * current == (
                 repeated_beta_sum(order, pole_order - 1)
                 + 2 * order * repeated_beta_sum(order - 1, pole_order)

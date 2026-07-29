@@ -680,24 +680,314 @@ This does not exclude the common moment zero fiber.  It replaces the
 eight-variable Gröbner problem on this open by six coefficient equations
 on the base for every later moment.
 
-The generic fiber calculation can also be performed over the rational
-function fields of the six base variables.  Exact runs in characteristics
-\(47\) and \(101\) both give a three-element Gröbner basis, quotient
-length six, and six-term normal forms for each of \(\mu_6,\mu_7\).
-Across the two primes the denominators reconstruct to products of
+The generic fiber calculation can be performed exactly over the rational
+function field
+\(K=\mathbb Q(s_1,s_2,s_3,t_0,t_1,t_2)\).  A sparse integral
+construction of the moments followed by a characteristic-zero Gröbner
+calculation gives a three-element basis with leading exponents
+\((2,0),(1,2),(0,4)\) in \((s_5,t_4)\), quotient length six, and
+six-term normal forms for each of \(\mu_6,\mu_7\).  Put
 
 \[
  L=s_1t_0-t_1,\qquad
  Q=s_1^2-s_2-\frac{13}{3}t_0^2,                           \tag{5.12d}
 \]
 
-beginning with \(LQ\) and \(LQ^2\).  Thus the computational continuation
-has three precise strata: the principal open \(LQ\ne0\), where later
-moments become six coefficient equations on the base, and the two
-degeneracy divisors \(L=0\) and \(Q=0\), where a separate fiber basis is
-required.  The agreement of two modular rational-function-field
-calculations is exact reconstruction evidence, but no
-characteristic-zero identity or zero-fiber exclusion is asserted here.
+and
+
+\[
+\begin{aligned}
+J={}&9801s_1^4-19602s_1^2s_2-23832s_1^2t_0^2
+       -60840s_1t_0t_1\\
+  &\quad+9801s_2^2+54252s_2t_0^2+75076t_0^4+30420t_1^2.
+\end{aligned}                                             \tag{5.12e}
+\]
+
+The three Gröbner leading coefficients are nonzero rational multiples
+of \(Q,L,J\), respectively.  The denominators in the normal form of
+\(\mu_6\) have support \(LQ\), while those for \(\mu_7\) also contain
+\(J\).  This corrects the two-prime reconstruction, which saw only the
+\(\mu_6\) denominators \(LQ,LQ^2\): the later-moment principal open is
+controlled by \(LQJ\), and \(J=0\) is an additional special divisor.
+
+Those divisor bases can also be computed without submitting the full
+eight-variable ideal.  Exact characteristic-zero calculations over the
+appropriate rational-function fields of the remaining base variables
+give:
+
+\[
+\begin{array}{c|c|c|c}
+\text{stratum}&\operatorname{in}(\mu_4,\mu_5)&
+ \text{standard basis}&\text{length}\\ \hline
+L=0&(s_5^2,t_4^3)&
+1,t_4,t_4^2,s_5,s_5t_4,s_5t_4^2&6\\
+Q=0&(s_5t_4,t_4^3,s_5^3)&
+1,t_4,t_4^2,s_5,s_5^2&5\\
+L=Q=0&(t_4^2,s_5^2t_4,s_5^3)&
+1,t_4,s_5,s_5t_4,s_5^2&5.
+\end{array}                                               \tag{5.12f}
+\]
+
+The normal forms of both \(\mu_6\) and \(\mu_7\) occupy all the displayed
+fiber coordinates.  Hence the continuation requires six base
+coefficients on the \(L\)-divisor but only five on the generic
+\(Q\)-divisor and on the intersection.
+
+There is also a new exact constant pivot among those base coefficients.  The
+\(t_4^3\)-coefficient of
+\(\operatorname{NF}_{(\mu_4,\mu_5)}(\mu_6)\) is \(N/(39LQ)\), where
+\(N\) has 42 terms and is affine-linear in both \(t_2\) and \(s_3\),
+with no \(s_3t_2\) term.  Exact differentiation gives
+
+\[
+ \frac{\partial N}{\partial t_2}=-3903051350016000LQ,
+ \qquad
+ \frac{\partial}{\partial t_2}\left(\frac{N}{39LQ}\right)
+ =-100078239744000.                                      \tag{5.12g}
+\]
+
+Thus on the generic \(LQJ\)-open, vanishing of this one \(\mu_6\)
+coefficient eliminates \(t_2\) globally, with no further split.  This
+reduces the subsequent base calculation from six variables to five
+before the remaining normal-form coefficients are imposed.
+
+For completeness, the alternate \(s_3\)-coefficient is, up to sign,
+
+\[
+\begin{aligned}
+H={}&430353s_1^4-860706s_1^2s_2-1591461s_1^2t_0^2
+      -1946880s_1t_0t_1\\
+  &\quad+430353s_2^2+2564901s_2t_0^2
+      +3802298t_0^4+973440t_1^2.                         \tag{5.12h}
+\end{aligned}
+\]
+
+On \(H\ne0\), the same equation may instead eliminate \(s_3\), but
+\(H=0\) is not a separate obstruction because the \(t_2\) pivot remains
+constant.
+
+The apparent pair of new quartic branches simplifies in the adapted
+coordinates.  If
+
+\[
+ W=99Q+155t_0^2,
+\]
+
+then exact expansion gives
+
+\[
+ J=W^2+30420L^2,\qquad H=32J+1179QW.                    \tag{5.12i}
+\]
+
+Consequently \(J=H=0\) has no point on \(LQ\ne0\): after inverting \(Q\),
+the second identity puts \(W\) in \((J,H)\), and the first then puts
+\(L^2\) there.  Equivalently,
+
+\[
+ (J,H):(LQ)^\infty=(1).                                  \tag{5.12j}
+\]
+
+Thus the \(J\)- and \(H\)-special loci are disjoint on the principal
+\(LQ\)-open.  Over \(\mathbb Q(\sqrt{-30420})\), the \(J\)-divisor
+splits into the conjugate linear conditions
+\(W=\pm\sqrt{-30420}\,L\), suggesting a two-variable
+quadratic-extension continuation.
+
+That continuation has an exact finite point even though a direct
+transcendental coefficient-field calculation is expensive.  Let
+
+\[
+\begin{aligned}
+m(\beta)={}&441554190069069\beta^4
+ +15795130399581456\beta^3\\
+&+193851580108553334\beta^2
+ +319468919863825776\beta\\
+&+1067521643767708429.
+\end{aligned}
+\]
+
+This quartic is irreducible over \(\mathbb Q\).  In
+\(\mathbb Q[\beta]/(m)\), put
+
+\[
+\alpha=
+\frac{3(1026265600730531007\beta^3
++41799868694363859156\beta^2
++506411570533205547441\beta
++545569851002913527492)}
+{18525795986003750110}.
+\]
+
+Exact reduction gives \(\alpha^2=-30420\).  The base point
+
+\[
+ s_1=t_0=L=1,\qquad s_3=\beta,\qquad t_2=0,\qquad
+ Q=\frac{\alpha-155}{99}                                \tag{5.12j'}
+\]
+
+satisfies \(J=\mu_3=0\).  At this point,
+\((\mu_4,\mu_5)\) has leading ideal
+
+\[
+ (s_5^2,t_4^3,s_5t_4^2)
+\]
+
+and hence length five with standard basis
+
+\[
+ 1,t_4,t_4^2,s_5,s_5t_4.                               \tag{5.12j''}
+\]
+
+The three displayed leading coefficients are nonzero in the quartic
+field.  Thus (5.12j') is an exact characteristic-zero rank-five special
+fiber on \(J=\mu_3=0\).  It does not by itself prove that the same
+initial ideal holds on a dense open of \(J=0\).  Generic
+rational-function-field calculations on both split components in
+characteristics \(47\) and \(101\) all give the same length-five basis;
+these four modular calculations are reconstruction evidence, not the
+missing characteristic-zero generic theorem.  The earlier direct
+generic computation that kept \(J\) as an additional polynomial
+variable did not finish within the recorded \(180\)-second Singular
+bound; that timing is not a mathematical result.
+
+> **Proposition 5.2b (generic boundary quotient and divisor bases).**
+> Over \(K\), the quotient
+> \(K[s_5,t_4]/(\mu_4,\mu_5)\) has length six with standard basis
+> \(1,t_4,t_4^2,t_4^3,s_5,s_5t_4\).  At the generic points of
+> \(L=0\), \(Q=0\), and \(L=Q=0\), its characteristic-zero lengths and
+> bases are those in (5.12f).  The exact normal forms have denominator
+> support and the constant \(t_2\)-pivot described in
+> (5.12d)--(5.12g).
+> Moreover the localized exceptional intersection is empty as in
+> (5.12j).  The \(J=\mu_3=0\) branch contains the exact
+> characteristic-zero length-five special fiber (5.12j')--(5.12j'').
+
+Independent reductions in characteristics \(47\) and \(101\) reproduce
+all four quotient shapes.  Proposition 5.2b is a finite-quotient theorem,
+not a zero-fiber exclusion.
+
+The constant \(t_2\)-pivot permits one more exact elimination without a
+five-variable Gröbner basis.  Use the adapted base coordinates
+\((s_1,s_3,t_0,L,Q)\), solve (5.12g) for \(t_2\), and let
+\(P(s_3)\) be the numerator of the resulting third moment.  Then \(P\)
+has 642 terms, total degree 21, and degree three in \(s_3\).  Since the
+rank-six \((s_5,t_4)\)-basis is uniform after localizing the three
+leading coefficients \(LQJ\), adjoining \(P\) gives a generic
+rank-\(18\) iterated quotient over
+\(\mathbb Q(s_1,t_0,L,Q)\).
+
+After the \(t_2\)-pivot, the leading remaining coefficient of
+\(\operatorname{NF}(\mu_6)\) is the coefficient \(C(s_3)\) of
+\(s_5t_4\).  It is also cubic in \(s_3\), and exact elimination gives
+
+\[
+ \operatorname{Res}_{s_3}(P,C)=L^6Q^6\mathcal R_{63},    \tag{5.12k}
+\]
+
+where \(\mathcal R_{63}\in
+\mathbb Q[s_1,t_0,L,Q]\) has total degree 63 and 6702 terms.  Its
+degree-preserving reduction modulo \(47\) is irreducible (with 6565
+surviving terms), so \(\mathcal R_{63}\) is irreducible over
+\(\mathbb Q\).  Reduction modulo \(101\) independently gives an
+irreducible degree-63 polynomial with 6633 surviving terms.
+
+The next \(t_4^2\)-coefficient \(C_2(s_3)\) is again cubic.  Its exact
+resultant has the form
+
+\[
+ \operatorname{Res}_{s_3}(P,C_2)=L^9Q^6\mathcal T_{66},  \tag{5.12l}
+\]
+
+where \(\mathcal T_{66}\) has degree 66.  Its reductions modulo \(47\)
+and \(101\) are irreducible of degree 66, with respectively 6951 and
+7038 surviving terms, and in both characteristics
+
+\[
+ \gcd(\mathcal R_{63},\mathcal T_{66})=1.
+\]
+
+One good reduction already proves coprimality over \(\mathbb Q\).
+Therefore simultaneous vanishing of the first two remaining
+\(\mu_6\)-coefficients has codimension at least two in the
+four-parameter principal base; the degree-63 divisor is not itself a
+component of the full \(\mu_6\)-zero locus.
+
+> **Proposition 5.2c (first residual base divisor).** On the
+> \(LQJ\)-open, the constant \(t_2\)-pivot and
+> \(\mu_3,\mu_4,\mu_5\) give a generic rank-18 finite quotient.
+> Vanishing of the next \(s_5t_4\)-coefficient of \(\mu_6\) forces the
+> base onto the irreducible divisor \(\mathcal R_{63}=0\).  Imposing
+> also the \(t_4^2\)-coefficient confines it to the codimension-at-least
+> two intersection
+> \(\mathcal R_{63}=\mathcal T_{66}=0\).
+
+There is a further exact simplification on the degree-63 divisor.  Write
+
+\[
+\begin{aligned}
+ P&=as_3^3+bs_3^2+cs_3+d,\\
+ C&=es_3^3+fs_3^2+gs_3+h,
+\end{aligned}
+\]
+
+and set
+
+\[
+ A=eb-af,\qquad B=ec-ag,\qquad C_0=ed-ah.
+\]
+
+Twice taking the pseudo-remainder, without division, gives the linear
+polynomial
+
+\[
+ V_1s_3+V_0,\qquad
+ \begin{cases}
+ V_1=A(Ac-aC_0)-(Ab-aB)B,\\
+ V_0=A^2d-(Ab-aB)C_0.
+ \end{cases}                                             \tag{5.12m}
+\]
+
+It vanishes at every common zero of \(P\) and \(C\).  Exact expansion
+gives
+
+\[
+\deg V_1=60,\quad |V_1|=2105,\qquad
+\deg V_0=63,\quad |V_0|=5170,                            \tag{5.12n}
+\]
+
+where \(|\cdot|\) denotes the number of rational terms.  In
+characteristics \(47\) and \(101\), direct gcd calculations give
+
+\[
+ \gcd(\mathcal R_{63},V_1)
+ =\gcd(\mathcal R_{63},V_0)=1.
+\]
+
+Either good reduction proves the corresponding characteristic-zero
+coprimality.  Hence \(V_1\) is nonzero on a dense open of the irreducible
+divisor \(\mathcal R_{63}=0\), and there
+
+\[
+ s_3=-V_0/V_1.                                          \tag{5.12o}
+\]
+
+> **Proposition 5.2d (dense linear pivot on the residual divisor).**
+> On a dense open of the irreducible degree-63 residual divisor, the
+> common cubic equations \(P=C=0\) have the rational linear pivot
+> (5.12o).  Thus the divisorial incidence cover is birational to its
+> base rather than a generically cubic extension.
+
+Thus the generic continuation is no longer an unrestricted
+five-variable coefficient ideal or even a divisorial branch: it is
+confined to a codimension-at-least-two locus in four adapted parameters.
+The pivot (5.12o) simplifies the generic degree-63 branch, but it does
+not prove that \(V_1\) stays nonzero on every component of
+\(\mathcal R_{63}=\mathcal T_{66}=0\).  That exceptional subresultant
+intersection, the remaining four \(\mu_6\)-coefficients, and the separate
+lower-dimensional coefficient ideal on \(J=0\) remain open.  The latter
+is now known to contain an exact rank-five special fiber; generic
+rank-five behavior is supported at both split roots modulo \(47\) and
+\(101\), but is not yet promoted in characteristic zero.
 
 One natural plane in the common boundary can already be closed. Put
 

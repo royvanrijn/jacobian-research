@@ -685,19 +685,32 @@ identities.  The generalized sums
  B_{m,s}=\sum_{k=0}^m\frac{(-1)^k\binom mk}{(2k+1)^s}
 \]
 and their triangular repeated-pole recurrence
-\((2m+1)B_{m,s}=B_{m,s-1}+2mB_{m-1,s}\) are formalized as well.
+\((2m+1)B_{m,s}=B_{m,s-1}+2mB_{m-1,s}\) are formalized as well, together
+with the finite remainder-to-jet identity in (4.8d).  Strict positivity
+for \(s\geq1\) follows in the written proof from (4.8f).
 Build it with
 
 ```bash
 lake build FiniteEtaleKeller.SIC2C4FiniteSum
 ```
 
-The scalar chart identity and the monomial contraction/coefficient-
-extraction equality are also formalized.  Their linear assembly for the
-four-variable witness and the derivation of the chart constant terms remain
-written arguments plus an independent Python audit.  Accordingly this
-scoped module does not constitute an end-to-end Lean formalization of
-SIC2C4.
+The coefficient functional \(I(t^j)=1/(j+1)\), its formal fundamental
+theorem, the algebraic beta identity (4.1), the monomial and balanced-array
+contraction/coefficient-extraction equalities, the scalar chart identity,
+the two selected polynomial coefficients, and the formal integrals of the
+resulting pure and mixed chart polynomials are also formalized.  The module
+now represents (4.3) literally in \(\mathbb Q[v][x,x^{-1}]\), proves its
+all-order binomial expansion, and identifies the constant terms of \(F^m\)
+and \(xF^m\) with those two chart polynomials.  Thus the algebraic proof from
+the chart formula through both closed moment values is formalized end to end.
+It also defines the original four-variable \(F,Q\) as `MvPolynomial`
+objects, constructs the substitution
+\((\xi _1,\xi _2,z_1,z_2)=(1,(1-v)/(2x),(1+v)/2,x)\), and proves that it
+sends \(F\) and \(QF^m\) to the already-formalized Laurent witnesses for
+every \(m\).  The remaining formal integration seam is only to identify the
+generic balanced coefficient array used by the contraction theorem with
+`MvPolynomial.coeff` in one wrapper theorem; both sides of that wrapper are
+already formalized.
 
 Repository CI uses the first command for the paper artifact.  It does not pull
 the explicit arithmetic examples, degree-four barrier, or other companion

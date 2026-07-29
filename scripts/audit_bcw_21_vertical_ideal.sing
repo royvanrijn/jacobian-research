@@ -1,0 +1,144 @@
+// Exact geometry of the mod-X_20 vertical coefficient ideal.
+//
+// Run with:
+//   Singular -q scripts/audit_bcw_21_vertical_ideal.sing
+
+LIB "primdec.lib";
+
+ring r=0,(x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13),dp;
+
+proc idealEqual(ideal A, ideal B)
+{
+  ideal GA=std(A);
+  ideal GB=std(B);
+  return(size(reduce(A,GB))==0 && size(reduce(B,GA))==0);
+}
+
+proc containsIdeal(list found, ideal target)
+{
+  for (int q=1; q<=size(found); q++)
+  {
+    if (idealEqual(target,found[q]))
+    {
+      return(1);
+    }
+  }
+  return(0);
+}
+
+proc choose(int n, int k)
+{
+  if (k>n-k)
+  {
+    k=n-k;
+  }
+  bigint product=1;
+  for (int q=1; q<=k; q++)
+  {
+    product=product*(n-k+q) div q;
+  }
+  return(product);
+}
+
+poly A14=3*x0^2*x1-x0^2*x6-x0*x2*x9;
+poly A15=
+  -24*x0*x1^2+36*x0*x1*x3+12*x0*x1*x6-36*x0*x1*x11
+  +12*x0*x2*x8-12*x0*x2*x10-12*x0*x3*x6
+  -12*x1*x5*x8-36*x1*x8^2;
+poly A16=
+  -6*x0*x1*x2-48*x0*x1*x7+28*x0*x1*x13
+  +12*x0*x2*x3+8*x0*x2*x12+8*x0*x6*x7
+  +28*x1^2*x8-8*x1*x3*x5-48*x1*x3*x8
+  -8*x1*x4*x8-12*x1*x6*x8;
+poly A17=-x0*x1^2;
+poly A18=x0*x1*x6+x0*x2*x8;
+poly A19=-x0^2*x2;
+
+ideal I=A14,A15,A16,A17,A18,A19;
+ideal G=std(I);
+int checksPassed=1;
+if (dim(G)!=12)
+{
+  "FAIL vertical ideal does not have dimension 12";
+  checksPassed=0;
+}
+
+ideal P1=x1,x2,x6;
+ideal P2=x0,x5,x8;
+ideal P3=x0,x5+3*x8,7*x1-6*x3-2*x4-3*x6;
+ideal P4=x0,x3,x8;
+ideal P5=x0,x1;
+
+list found=minAssGTZ(I);
+if (size(found)!=5)
+{
+  "FAIL vertical ideal does not have five minimal primes";
+  checksPassed=0;
+}
+if (
+  !containsIdeal(found,P1)
+  || !containsIdeal(found,P2)
+  || !containsIdeal(found,P3)
+  || !containsIdeal(found,P4)
+  || !containsIdeal(found,P5)
+)
+{
+  "FAIL vertical ideal has an unexpected minimal prime";
+  checksPassed=0;
+}
+
+ideal J=intersect(P1,P2);
+J=intersect(J,P3);
+J=intersect(J,P4);
+J=intersect(J,P5);
+ideal R=radical(I);
+if (!idealEqual(R,J))
+{
+  "FAIL displayed minimal primes do not cut out the radical";
+  checksPassed=0;
+}
+
+bigintvec hilbertNumerator=hilb(G,1);
+bigintvec expected=1,0,0,-6,0,12,-3,-5,-5,9,-3,0;
+if (hilbertNumerator!=expected)
+{
+  "FAIL unexpected Hilbert numerator";
+  checksPassed=0;
+}
+
+int targetDegree=8;
+int exponent=0;
+bigint hilbertValue=0;
+for (int q=1; q<=size(hilbertNumerator); q++)
+{
+  exponent=q-1;
+  if (exponent<=targetDegree)
+  {
+    hilbertValue=
+      hilbertValue
+      +hilbertNumerator[q]*choose(13+targetDegree-exponent,13);
+  }
+}
+if (hilbertValue!=158412)
+{
+  "FAIL unexpected degree-eight obstruction quotient dimension";
+  checksPassed=0;
+}
+
+if (reduce(x0^2*x9^6,G)==0)
+{
+  "FAIL the X_9^7 lifting obstruction vanishes";
+  checksPassed=0;
+}
+
+if (checksPassed)
+{
+  "PASS vertical ideal: dimension 12 and five displayed minimal primes";
+  "PASS radical: intersection of the five displayed primes";
+  "PASS obstruction quotient: degree-eight dimension 158412";
+  "PASS X0^2*X9^6 survives modulo the vertical ideal";
+}
+else
+{
+  ERROR("vertical ideal audit failed");
+}

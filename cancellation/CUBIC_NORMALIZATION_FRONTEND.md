@@ -1118,8 +1118,67 @@ specialization at \(t=0\).  Thus the length-six defect is flat and constant
 along each of these seven chosen deformation lines; it is not merely an
 agreement between their two endpoints.
 
+The line test can be enlarged without introducing a multivariate
+coefficient ring.  Choose the exact nullspace basis
+\(\psi_{4,0},\ldots,\psi_{4,23}\) of the order-four constraint space.  For
+every squarefree \(h\) and every basis index \(i\), the family
+
+\[
+ \phi_h+t\psi_{4,i}
+\tag{1.16tb}
+\]
+
+has uniformly saturated cotangent presentation, relative
+\(\operatorname{Ext}^2\) multiplicity six, no \(t\)-torsion, and radical
+support equal to the collision axis.  Thus all \(7\cdot24=168\) basis-axis
+families retain the flat length-six support defect.
+
+Literal equality of the Gröbner presentation with its central
+specialization is not invariant.  It changes in exactly four basis-axis
+pairs: concurrent lines in directions \(13,17\), line tangent to a conic
+in direction \(10\), and the triangle in direction \(17\).  None of these
+four changes affects flatness, support, or multiplicity.  Accordingly,
+presentation equality is useful as a strong coordinate check on the
+original seven lines, but it is not part of the geometric
+double-saturation criterion.
+
+For the smooth symbol, mixed quartic directions can be pushed one step
+further.  For every pair \(0\leq i<j<24\), compute the full coordinate
+plane over \(\mathbb Q[u,v,x,y,z]\):
+
+\[
+ \phi_h+u\psi_{4,i}+v\psi_{4,j}.
+\tag{1.16tc}
+\]
+
+On all \(\binom{24}{2}=276\) coordinate planes, the cotangent presentation
+is saturated and the relative \(\operatorname{Ext}^2\) presentation is
+equal to the scalar extension of its value at \(u=v=0\).  Its support is
+the parameter plane and its relative multiplicity is six.  This includes
+every specialization on every two-basis plane, and excludes every
+order-four escape supported on at most two basis tensors for the smooth
+cubic.
+
+The same polynomial-base test remains tractable on coordinate
+three-spaces.  For every \(0\leq i<j<k<24\), the family
+
+\[
+ \phi_h+p_0\psi_{4,i}+p_1\psi_{4,j}+p_2\psi_{4,k}
+\tag{1.16td}
+\]
+
+over \(\mathbb Q[p_0,p_1,p_2,x,y,z]\) has saturated cotangent presentation,
+support equal to the parameter three-space, and relative multiplicity six.
+After pruning contractible free summands, its rank-three
+\(\operatorname{Ext}^2\) presentation is pulled back from the parameter
+origin in all \(\binom{24}{3}=2024\) rows.  Two raw resolutions change
+ambient presentation, but pruning identifies both changes as nonminimal
+artifacts.  Thus every smooth order-four direction supported on at most
+three basis tensors retains the length-six defect.
+
 This computation does **not** prove lift-independence.  In particular it
-does not cover the full 24-parameter order-four space, show that every
+does not cover arbitrary linear combinations in the 24-parameter
+order-four space supported on four or more basis tensors, show that every
 normal integral higher lift has a length-six support defect, or construct
 the distinguished Keller open.
 Proposition 1.8c supplies normal integral lifts abstractly, but the
@@ -2313,6 +2372,9 @@ Run
 .venv/bin/python scripts/verify_cubic_normalization_frontend.py
 .venv/bin/python scripts/verify_cubic_symbol_double_saturation.py
 .venv/bin/python scripts/verify_cubic_symbol_deformation_saturation.py
+.venv/bin/python scripts/verify_cubic_symbol_quartic_tangent_saturation.py
+.venv/bin/python scripts/verify_smooth_cubic_quartic_plane_saturation.py
+.venv/bin/python scripts/verify_smooth_cubic_quartic_three_space_saturation.py
 .venv/bin/python plane-jc/cas/test_cubic_cusp_local_model.py
 Singular -q scripts/verify_cubic_double_saturation.sing
 ```
@@ -2336,6 +2398,20 @@ symbols it verifies that the family obtained by scaling that order-four
 tensor has uniformly saturated cotangent presentation and a
 parameter-independent relative `Ext^2` presentation of multiplicity six
 on the collision axis.  It does not test arbitrary order-four directions.
+The quartic tangent checker tests all 24 nullspace-basis axes for every
+squarefree symbol.  It verifies the four invariant family conditions in
+all 168 rows and records the four rows where literal Gröbner-presentation
+equality changes.  This is a spanning collection of lines, not the
+universal 24-parameter family or a proof for every linear combination.
+The smooth-plane checker is a four-worker calculation over
+`Q[u,v,x,y,z]`.  It verifies all 276 full coordinate two-planes, including
+every specialization, and proves that each relative `Ext^2` presentation
+is pulled back from the parameter-plane origin.  It does not control
+mixtures supported on three or more basis directions.
+The smooth three-space checker is the longer four-worker continuation over
+`Q[p0,p1,p2,x,y,z]`.  It verifies all 2,024 coordinate three-spaces after
+pruning nonminimal free summands.  It does not control mixtures supported
+on four or more basis directions.
 The cusp checker enumerates all nine transposition-valued \(B_3\)
 representations on three letters and verifies the monic cubic root model,
 the \(2+1\) Kummer model, and the curvilinear length-three cusp fiber.

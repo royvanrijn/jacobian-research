@@ -268,6 +268,110 @@ def invariant_hilbert_coefficients(cutoff: int) -> list[int]:
     ]
 
 
+def refined_invariant_hilbert_coefficients(
+    max_component: int,
+    cutoff: int,
+) -> tuple[list[int], list[int]]:
+    coefficients = [defaultdict(int) for _ in range(cutoff + 1)]
+    coefficients[0][(0, 0)] = 1
+    for component in range(max_component + 1):
+        parity = component % 2
+        for weight in range(-2 * component, 2 * component + 1, 2):
+            updated = [defaultdict(int) for _ in range(cutoff + 1)]
+            for degree in range(cutoff + 1):
+                for (
+                    total_weight,
+                    total_parity,
+                ), multiplicity in coefficients[degree].items():
+                    for power in range(cutoff - degree + 1):
+                        updated[degree + power][
+                            (
+                                total_weight + power * weight,
+                                total_parity ^ (parity * (power % 2)),
+                            )
+                        ] += multiplicity
+            coefficients = updated
+    even = [
+        coefficients[degree][(0, 0)] - coefficients[degree][(2, 0)]
+        for degree in range(cutoff + 1)
+    ]
+    odd = [
+        coefficients[degree][(0, 1)] - coefficients[degree][(2, 1)]
+        for degree in range(cutoff + 1)
+    ]
+    return even, odd
+
+
+def hilbert_numerator(
+    hilbert: list[int],
+    degrees: tuple[int, ...],
+) -> list[int]:
+    result = list(hilbert)
+    for degree in degrees:
+        for index in range(len(result) - 1, degree - 1, -1):
+            result[index] -= result[index - degree]
+    return result
+
+
+def weighted_exponents(
+    weights: tuple[int, ...],
+    total: int,
+) -> list[tuple[int, ...]]:
+    result: list[tuple[int, ...]] = []
+
+    def recurse(
+        index: int,
+        remainder: int,
+        prefix: tuple[int, ...],
+    ) -> None:
+        if index == len(weights):
+            if remainder == 0:
+                result.append(prefix)
+            return
+        weight = weights[index]
+        for exponent in range(remainder // weight + 1):
+            recurse(
+                index + 1,
+                remainder - exponent * weight,
+                prefix + (exponent,),
+            )
+
+    recurse(0, total, ())
+    return result
+
+
+def d2_moment_values_mod(point: list[list[int]]) -> list[int]:
+    factorials = [1]
+    for value in range(1, 15):
+        factorials.append(factorials[-1] * value % PRIME)
+    power = [[1]]
+    values = []
+    for order in range(1, 8):
+        size = 2 * order + 1
+        current = [[0] * size for _ in range(size)]
+        for left, previous_row in enumerate(power):
+            for right, value in enumerate(previous_row):
+                if not value:
+                    continue
+                for row in range(3):
+                    for column in range(3):
+                        current[left + row][right + column] = (
+                            current[left + row][right + column]
+                            + value * point[row][column]
+                        ) % PRIME
+        power = current
+        values.append(
+            sum(
+                factorials[index]
+                * factorials[2 * order - index]
+                * power[index][index]
+                for index in range(size)
+            )
+            % PRIME
+        )
+    return values
+
+
 def moment_jacobian_rows() -> tuple[list[list[int]], list[list[int]]]:
     point = [
         [
@@ -352,6 +456,48 @@ def moment_values_mod(point: list[list[int]]) -> list[int]:
             % PRIME
         )
     return values
+
+
+def exact_moment_jacobian(
+    coefficients: sp.Matrix,
+    cutoff: int,
+) -> sp.Matrix:
+    powers = [[[sp.Integer(1)]]]
+    for power in range(1, cutoff):
+        previous = powers[-1]
+        size = 4 * power + 1
+        current = [[sp.Integer(0)] * size for _ in range(size)]
+        for left, previous_row in enumerate(previous):
+            for right, value in enumerate(previous_row):
+                for row in range(5):
+                    for column in range(5):
+                        current[left + row][right + column] += (
+                            value * coefficients[row, column]
+                        )
+        powers.append(current)
+
+    rows = []
+    for order in range(1, cutoff + 1):
+        previous = powers[order - 1]
+        row_values = []
+        for dual_index in range(5):
+            for coordinate_index in range(5):
+                value = sp.Integer(0)
+                for total in range(4 * order + 1):
+                    left = total - dual_index
+                    right = total - coordinate_index
+                    if (
+                        0 <= left < len(previous)
+                        and 0 <= right < len(previous)
+                    ):
+                        value += (
+                            factorial(total)
+                            * factorial(4 * order - total)
+                            * previous[left][right]
+                        )
+                row_values.append(order * value)
+        rows.append(row_values)
+    return sp.Matrix(rows)
 
 
 def rank_and_pivots_mod(
@@ -538,8 +684,148 @@ def main() -> None:
         parity_operator * operator * parity_operator
     )
 
+    # Compose the adjoint with this PGL2 translate so that the resulting
+    # quotient involution fixes F, then split its tangent representation.
+    factorial_diagonal = sp.diag(
+        *[factorial(index) * factorial(4 - index) for index in range(5)]
+    )
+    local_involution = sp.zeros(25)
+    for basis_index in range(25):
+        basis_coefficient = sp.zeros(5)
+        basis_coefficient[basis_index // 5, basis_index % 5] = 1
+        basis_operator, _ = vectorized_operator(basis_coefficient)
+        transformed_operator = (
+            parity_operator
+            * apolar_adjoint(basis_operator)
+            * parity_operator
+        )
+        transformed_coefficient = (
+            factorial_diagonal.inv() * transformed_operator.T
+        )
+        local_involution[:, basis_index] = sp.Matrix(
+            [
+                transformed_coefficient[row, column]
+                for row in range(5)
+                for column in range(5)
+            ]
+        )
+    assert local_involution**2 == sp.eye(25)
+    plus_space = sp.Matrix.hstack(
+        *(local_involution - sp.eye(25)).nullspace()
+    )
+    minus_space = sp.Matrix.hstack(
+        *(local_involution + sp.eye(25)).nullspace()
+    )
+    assert (plus_space.cols, minus_space.cols) == (15, 10)
+
+    local_jacobian = exact_moment_jacobian(coefficients, 12)
+    assert local_jacobian.rank() == 12
+    assert local_jacobian * local_involution == local_jacobian
+    assert (
+        (local_jacobian * plus_space).rank(),
+        (local_jacobian * minus_space).rank(),
+    ) == (12, 0)
+
+    orbit_vectors = []
+    for generator in sl2_matrices():
+        tangent_operator = generator * operator - operator * generator
+        tangent_coefficient = factorial_diagonal.inv() * tangent_operator.T
+        orbit_vectors.append(
+            sp.Matrix(
+                [
+                    tangent_coefficient[row, column]
+                    for row in range(5)
+                    for column in range(5)
+                ]
+            )
+        )
+    orbit = sp.Matrix.hstack(*orbit_vectors)
+    assert orbit.rank() == 3
+    orbit_plus_rank = ((sp.eye(25) + local_involution) * orbit).rank()
+    orbit_minus_rank = ((sp.eye(25) - local_involution) * orbit).rank()
+    assert (orbit_plus_rank, orbit_minus_rank) == (1, 2)
+    quotient_tangent_eigenspaces = (
+        plus_space.cols - orbit_plus_rank,
+        minus_space.cols - orbit_minus_rank,
+    )
+    quotient_fiber_eigenspaces = (
+        plus_space.cols
+        - (local_jacobian * plus_space).rank()
+        - orbit_plus_rank,
+        minus_space.cols - orbit_minus_rank,
+    )
+    assert quotient_tangent_eigenspaces == (14, 8)
+    assert quotient_fiber_eigenspaces == (2, 8)
+
     hilbert = invariant_hilbert_coefficients(5)
     assert hilbert == [1, 1, 5, 15, 65, 219]
+    even_d2, odd_d2 = refined_invariant_hilbert_coefficients(2, 12)
+    _, odd_d3 = refined_invariant_hilbert_coefficients(3, 4)
+    _, odd_d4 = refined_invariant_hilbert_coefficients(4, 3)
+    assert odd_d2[:7] == [0, 0, 0, 0, 0, 0, 1]
+    assert odd_d3 == [0, 0, 0, 0, 3]
+    assert odd_d4 == [0, 0, 0, 1]
+    d2_hilbert = [
+        even + odd for even, odd in zip(even_d2, odd_d2)
+    ]
+    d2_numerator = hilbert_numerator(
+        d2_hilbert, tuple(range(1, 7))
+    )
+    assert [
+        (degree, coefficient)
+        for degree, coefficient in enumerate(d2_numerator)
+        if coefficient
+    ] == [
+        (0, 1),
+        (2, 1),
+        (3, 1),
+        (4, 1),
+        (6, 2),
+        (8, 1),
+        (9, 1),
+        (10, 1),
+        (12, 1),
+    ]
+    assert sum(d2_numerator) == 10
+    degree_seven_exponents = weighted_exponents(
+        tuple(range(1, 7)), 7
+    )
+    assert len(degree_seven_exponents) == 14
+    d2_degree_seven_evaluations = []
+    for sample in range(15):
+        point = [
+            [
+                (
+                    17 * row
+                    + 31 * column
+                    + 7 * row * column
+                    + 11
+                    + sample * (13 + 5 * row + 3 * column)
+                    + sample**2 * (row + 2 * column + 1)
+                )
+                % 101
+                - 50
+                for column in range(3)
+            ]
+            for row in range(3)
+        ]
+        moments = d2_moment_values_mod(point)
+        degree_seven_values = []
+        for exponents in degree_seven_exponents:
+            value = 1
+            for moment, exponent in zip(moments[:6], exponents):
+                value = value * pow(moment, exponent, PRIME) % PRIME
+            degree_seven_values.append(value)
+        degree_seven_values.append(moments[6])
+        d2_degree_seven_evaluations.append(degree_seven_values)
+    d2_degree_seven_rank, _ = rank_and_pivots_mod(
+        d2_degree_seven_evaluations
+    )
+    assert d2_degree_seven_rank == 15
+    d2_degree_seven_determinant = determinant_mod(
+        d2_degree_seven_evaluations
+    )
+    assert d2_degree_seven_determinant != 0
 
     jacobian, jacobian_point = moment_jacobian_rows()
     rank, pivots = rank_and_pivots_mod(jacobian)
@@ -617,6 +903,31 @@ def main() -> None:
             ),
             "conductor": "zero",
             "at_F": "tau(F) is the diag(1,-1) PGL2 translate of F",
+            "local_quotient_tangent_eigenspace_dimensions_at_F": {
+                "plus": quotient_tangent_eigenspaces[0],
+                "minus": quotient_tangent_eigenspaces[1],
+            },
+            "all_moment_fiber_quotient_tangent_eigenspaces_at_F": {
+                "plus": quotient_fiber_eigenspaces[0],
+                "minus": quotient_fiber_eigenspaces[1],
+            },
+            "first_odd_invariant_dimensions": {
+                "End(Sym^2)_degree_6": odd_d2[6],
+                "End(Sym^3)_degree_4": odd_d3[4],
+                "End(Sym^4)_degree_3": odd_d4[3],
+            },
+            "degree_of_d2_first_six_moment_parameter_map": sum(
+                d2_numerator
+            ),
+            "d2_mu7_not_in_first_six_parameter_ring_certificate": {
+                "prime": PRIME,
+                "weighted_degree_seven_monomial_count": len(
+                    degree_seven_exponents
+                ),
+                "evaluation_rank_with_mu7": d2_degree_seven_rank,
+                "determinant_mod_prime": d2_degree_seven_determinant,
+            },
+            "degree_of_d2_full_moment_field": 2,
         },
     }
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
@@ -642,6 +953,7 @@ def main() -> None:
         "has nonzero odd cubic c_234"
     )
     print("PASS moment algebra: invariant fields differ and the conductor is zero")
+    print("PASS d=2 moment field: mu_7 generates the degree-five fixed field")
 
 
 if __name__ == "__main__":

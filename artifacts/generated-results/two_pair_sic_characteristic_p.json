@@ -21,6 +21,166 @@
     "H_2(Z*Fbar^m)": "2m*16^m",
     "conclusion": "naive Hasse replacement destroys pure vanishing for odd p"
   },
+  "propagated_family": {
+    "form": "Gbar_(r,k)=R^k*Fbar^r, d=4r+k",
+    "mixed_moment": "4^(r*m)*(d*m+2)!*((r*m)!)^2/(2*r*m+1)!",
+    "mod_p_nonzero": "p odd and d*m+2<p",
+    "fixed_p_pattern": "m=1,...,floor((p-3)/d)",
+    "p_adic_valuation": "(d*m+1-s_p(d*m+2)-2s_p(r*m)+s_p(2*r*m+1))/(p-1)",
+    "replay": {
+      "degrees": [
+        4,
+        20
+      ],
+      "all_seed_powers_r_with_4r<=d": true,
+      "primes_through": 101,
+      "orders_through": "2*p"
+    }
+  },
+  "complete_hasse_image_system": {
+    "raising": "X^[a](xi^c)=binom(c+a,a)*xi^(c+a)",
+    "operators": "D_[a]=partial_z^[a]-X_xi^[a] for every a>0",
+    "p_typical_generators": "D_(i,p^j) for 1<=i<=r and j>=0 suffice",
+    "kernel": "sum_a image(D_[a])=kernel(H)",
+    "intertwining_identity": "binom(b,a)*binom(b-a,c)=binom(c+a,a)*binom(b,c+a)",
+    "audit_order_cutoff": 12
+  },
+  "full_ordinary_positive_characteristic_sic": {
+    "frobenius_identity": "E_(r,p)(f^p)=f(0,z)^p",
+    "single_moment_premise": "E_(r,p)(f^p)=0",
+    "conclusion_cutoff": "E_(r,p)(g*f^m)=0 for every m>=p",
+    "consequence": "ordinary SIC(r) holds for every r and p>0",
+    "sharpness": "f=xi1, g=z1^(p-1): all pure moments vanish but E(g*f^(p-1))=(p-1)! is nonzero"
+  },
+  "non_power_hopf_profiles": {
+    "necessary_nonvanishing_condition": "p>4*h*m+2",
+    "height_two_integral": "C_(2,m)=4^m*m!/product_(j=0)^m(4j+1)",
+    "height_two_nonzero": "p odd and 8*m+2<p",
+    "additional_hole_examples": [
+      {
+        "height": 6,
+        "order": 1,
+        "prime": 47
+      },
+      {
+        "height": 4,
+        "order": 5,
+        "prime": 89
+      }
+    ],
+    "general_conclusion": "above the factorial cutoff, numerator primes of C_(h,m) can create holes"
+  },
+  "prime_power_survival": {
+    "radial_family": "d=4*r, so M_(r,m)=A_(r*m)",
+    "radial_ratio": "A_(s+1)/A_s=16*(4*s+3)*(4*s+5)*(s+1)^2",
+    "radial_consequence": "v_p(M_(r,m)) is nondecreasing in m for every prime",
+    "general_increment": "v_p(M_(m+1))-v_p(M_m) is the signed valuation sum of the three consecutive-factor blocks in M_(m+1)/M_m",
+    "non_radial_reentry": {
+      "family": "R*Fbar (d=5,r=1)",
+      "prime_power": "11^2",
+      "order_4_valuation": 2,
+      "order_5_valuation": 1,
+      "order_4_residue": 0,
+      "order_5_residue": 22
+    },
+    "conclusion": "outside d=4*r, prime-power survival need not be an initial interval"
+  },
+  "first_lift_tensor_ranks": {
+    "family": "R^k*Fbar for k>=0",
+    "data": {
+      "0": {
+        "degree": 4,
+        "determinant": 1536,
+        "exceptional_ranks": {
+          "2": 4,
+          "3": 4
+        }
+      },
+      "1": {
+        "degree": 5,
+        "determinant": -17408,
+        "exceptional_ranks": {
+          "2": 4,
+          "17": 5
+        }
+      },
+      "2": {
+        "degree": 6,
+        "determinant": 376832,
+        "exceptional_ranks": {
+          "2": 4,
+          "23": 6
+        }
+      },
+      "3": {
+        "degree": 7,
+        "determinant": -15298560,
+        "exceptional_ranks": {
+          "2": 4,
+          "3": 7,
+          "5": 7,
+          "83": 7
+        }
+      },
+      "4": {
+        "degree": 8,
+        "determinant": 362086400,
+        "exceptional_ranks": {
+          "2": 8,
+          "5": 7,
+          "13": 8,
+          "17": 8
+        }
+      },
+      "recurrence_audit": {
+        "radial_powers": [
+          0,
+          20
+        ],
+        "determinants": {
+          "0": 1536,
+          "1": -17408,
+          "2": 376832,
+          "3": -15298560,
+          "4": 362086400,
+          "5": 1115862859776,
+          "6": -3092382492917760,
+          "7": 15715662075172749312,
+          "8": -181003875692865336115200,
+          "9": 5024990427255121756815360000,
+          "10": -345193201185863740973011779452928,
+          "11": 59423266546379013644303686731873386496,
+          "12": -25771848288186930058516920008621986525741056,
+          "13": 28152617133417777023863389706916200403842367488000,
+          "14": -76933191740895198981951063342596484418589390851276800000,
+          "15": 516505581354588030858279053931293935813177379737098109902127104,
+          "16": -8143959479438367370288377270624039861725832238341565904059791216476160,
+          "17": 261417045499383411229628691658583411440734874706433730116017483789235092717568,
+          "18": -4136004964601100431945712779786690840626177164523769162251650192232716563550044160000,
+          "19": -14275465562374727125539282785731819057840642500192560555654027241935508903536123487191040000000,
+          "20": 33868495070494078580749424554586778397738536181752027705144154294632151074600186499237642335216337944576
+        }
+      }
+    },
+    "diagonal_symbols": {
+      "upper": "4*(1+x)^(k+3)",
+      "diagonal": "-2*(1+x)^(k+2)*(x^2-4*x+1)",
+      "lower_1": "-3*x*(x-1)^2*(1+x)^(k+1)",
+      "lower_2": "-x^2*(x-1)^2*(1+x)^k"
+    },
+    "determinant_method": "three-term lower-Hessenberg continuant, audited for 0<=k<=20",
+    "characteristic_two_rank": "2^(1+s_2(floor((k+2)/2))), audited for 0<=k<=128",
+    "conclusion": "higher degree introduces exceptional odd rank primes, but semistability still propagates"
+  },
+  "hasse_sic_counterexample": {
+    "pair_dimension": 1,
+    "f": "xi*z^p",
+    "g": "z",
+    "pure": "H(f^m)=binom(p*m,m)*z^((p-1)*m)=0 for all m>0",
+    "mixed_orders": "m_e=(p^e-1)/(p-1)",
+    "mixed": "H(g*f^m_e)=z^((p-1)*m_e+1), since binom(p*m_e+1,m_e)=1 mod p",
+    "consequence": "the p-typical Hasse Image is not Mathieu"
+  },
   "exceptional_geometry": {
     "p=2": {
       "matrix_rank": 4,

@@ -8,7 +8,9 @@ For X_2={C in Mat_5: rank(C)<=2}, this checker proves:
 * the SL_2-invariant Hilbert series of Q[X_2] makes degrees 1,...,13
   impossible for a homogeneous system of parameters, with coefficient
   -5266 in degree 69;
-* degrees 1,...,12,14 pass the same necessary test through degree 100.
+* degrees 1,...,12,14 pass the same necessary test through degree 100,
+  and the candidate numerator through its predicted top degree 82 is
+  nonnegative and palindromic.
 
 The Hilbert coefficients use the Cauchy decomposition
 
@@ -373,6 +375,17 @@ def main() -> None:
         for index, value in enumerate(corrected_numerator)
         if value
     ) == 82
+    # The square 5-by-5 rank-at-most-two determinantal ring is Gorenstein
+    # with a-invariant -5*2=-10.  Since SL_2 has no nontrivial character,
+    # the invariant ring has the same a-invariant.  Thus an hsop of total
+    # degree 1+...+12+14=92 would have numerator degree 92-10=82.
+    corrected_predicted_top_degree = sum(corrected) - 10
+    assert corrected_predicted_top_degree == 82
+    assert all(
+        corrected_numerator[index]
+        == corrected_numerator[corrected_predicted_top_degree - index]
+        for index in range(corrected_predicted_top_degree + 1)
+    )
 
     complete = complete_symmetric_characters(HILBERT_CUTOFF)
     rank_one_hilbert = [
@@ -451,6 +464,16 @@ def main() -> None:
             "degrees_1_through_12_and_14": {
                 "negative_coefficients_through_cutoff": [],
                 "last_nonzero_degree_through_cutoff": 82,
+                "determinantal_a_invariant": -10,
+                "predicted_hsop_numerator_degree": (
+                    corrected_predicted_top_degree
+                ),
+                "palindromic_through_predicted_top_degree": True,
+                "candidate_numerator_coefficient_sum": sum(
+                    corrected_numerator[
+                        : corrected_predicted_top_degree + 1
+                    ]
+                ),
                 "hsop_status": "necessary Hilbert test only",
             },
         },
@@ -469,6 +492,12 @@ def main() -> None:
                 "finitely many exceptional squarefree quartic "
                 "cross-ratios and the uniform low-root finite cutoff"
             ),
+            "hilbert_mumford_observation": (
+                "rank-one annihilator tensors A tensor ell^4 with "
+                "A(ell)=0 are unstable: the ell-adapted one-parameter "
+                "subgroup gives every surviving tensor coefficient "
+                "strictly positive weight"
+            ),
         },
         "consequence": (
             "the first thirteen moments have a semistable common zero "
@@ -482,7 +511,10 @@ def main() -> None:
     print("PASS rank<=2: moments 1,...,13 have exact Jacobian rank 13")
     print("PASS rank<=2: degrees 1,...,13 fail the Hilbert test at degree 69")
     print("PASS rank<=2: moments 1,...,12,14 have exact Jacobian rank 13")
-    print("PASS rank<=2: corrected degrees pass the Hilbert test through 100")
+    print(
+        "PASS rank<=2: corrected numerator is nonnegative through 100 "
+        "and palindromic through predicted degree 82"
+    )
     print("PASS rank=1 boundary: moments 1,...,6 have Jacobian rank 6")
     print("PASS rank=1 boundary: degrees 1,...,6 pass the Hilbert test through 100")
     print(f"PASS wrote {OUTPUT.relative_to(ROOT)}")

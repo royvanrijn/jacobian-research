@@ -75,6 +75,10 @@
     "degrees_1_through_12_and_14": {
       "negative_coefficients_through_cutoff": [],
       "last_nonzero_degree_through_cutoff": 82,
+      "determinantal_a_invariant": -10,
+      "predicted_hsop_numerator_degree": 82,
+      "palindromic_through_predicted_top_degree": true,
+      "candidate_numerator_coefficient_sum": 448865340,
       "hsop_status": "necessary Hilbert test only"
     }
   },
@@ -146,7 +150,8 @@
     ],
     "numerator_coefficient_sum": 50,
     "hsop_status": "necessary Hilbert test only",
-    "remaining_geometry": "finitely many exceptional squarefree quartic cross-ratios and the uniform low-root finite cutoff"
+    "remaining_geometry": "finitely many exceptional squarefree quartic cross-ratios and the uniform low-root finite cutoff",
+    "hilbert_mumford_observation": "rank-one annihilator tensors A tensor ell^4 with A(ell)=0 are unstable: the ell-adapted one-parameter subgroup gives every surviving tensor coefficient strictly positive weight"
   },
   "consequence": "the first thirteen moments have a semistable common zero on rank(C)<=2; its exact rank may be one or two",
   "written_source": "extended-geometry/TWO_PAIR_SIC_BIDEGREE44_RANK_FRONTIER.md"

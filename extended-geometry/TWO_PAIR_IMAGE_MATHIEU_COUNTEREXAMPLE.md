@@ -474,8 +474,27 @@ Formal differentiation in \(\mathbb Q(a)\) yields
  \qquad(s\geq1).
  \tag{4.8e}
 \]
-Equations (4.8c)--(4.8e) make the surviving \(r\)-jet effective; realizing
-such a jet by an admissible SIC multiplier remains a separate problem.
+If \(h_q\) denotes the complete homogeneous symmetric polynomial of degree
+\(q\), expansion at \(a=1\) makes this still more concrete:
+\[
+ \boxed{\displaystyle
+ B_{m,s}
+ =\frac{2^m m!}{(2m+1)!!}\,
+ h_{s-1}\left(1,\frac13,\ldots,\frac1{2m+1}\right)>0.}
+ \tag{4.8f}
+\]
+Indeed,
+\[
+ \frac{G_m(1+y)}{G_m(1)}
+ =\prod_{\ell=0}^m
+  \left(1+\frac{y}{2\ell+1}\right)^{-1},
+\]
+whose coefficient of \(y^q\) is
+\((-1)^qh_q(1,1/3,\ldots,1/(2m+1))\).  Consequently the jet in (4.8d)
+cannot vanish when its local coefficients \(c_j\) are all nonnegative and
+at least one is positive.  Equations (4.8c)--(4.8f) make the surviving
+\(r\)-jet effective; realizing such a jet by an admissible SIC multiplier
+remains a separate problem.
 
 For the mixed sum, take
 \[
@@ -735,11 +754,16 @@ termwise recurrence are the independently checkable all-order certificate.
 The Lean module formalizes the general finite-difference cancellation, the
 rank-one residue identity (4.8), the specialized normalized products
 (4.7)--(4.9), and the recurrence and explicit double-factorial evaluation
-of \(B_m\).  It deliberately stops short of claiming an end-to-end
-formalization: the monomial case of (4.2) and the scalar chart identity
-(4.3) are formalized, but their linear assembly for \(F\) and the binomial
-expansion into (4.4)--(4.5) remain written mathematics checked independently
-by the Python audit.
+of \(B_m\).  It also formalizes the coefficient functional and beta
+recurrence, the linear assembly of (4.2), the literal Laurent witness (4.3),
+its all-order binomial expansion, both constant-term extractions, and the
+closed values in (4.4)--(4.5).  It now also defines the original
+four-variable \(F,Q\) as `MvPolynomial` objects and identifies their
+displayed substitution with the Laurent witness, including all pure and
+mixed powers.  The only remaining Lean integration seam is a wrapper
+identifying the generic balanced coefficient array in the contraction
+theorem with `MvPolynomial.coeff`; the algebraic proof itself is formalized
+on both sides of that representation boundary.
 
 No term-count minimality or literature-priority claim is made here.
 

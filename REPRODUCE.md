@@ -1056,6 +1056,9 @@ saturation modules are audited by:
 ```bash
 .venv/bin/python scripts/verify_cubic_symbol_double_saturation.py
 .venv/bin/python scripts/verify_cubic_symbol_deformation_saturation.py
+.venv/bin/python scripts/verify_cubic_symbol_quartic_tangent_saturation.py
+.venv/bin/python scripts/verify_smooth_cubic_quartic_plane_saturation.py
+.venv/bin/python scripts/verify_smooth_cubic_quartic_three_space_saturation.py
 ```
 
 For the homogeneous tensor, all seven squarefree strata have saturated
@@ -1074,6 +1077,25 @@ the collision axis, multiplicity six, and equality of the relative
 presentation with the scalar extension of its central specialization.
 This proves constancy on those lines, not on the full 24-parameter
 order-four space.
+The third command is the longer tangent-direction audit.  It tests every
+one of the 24 exact nullspace-basis axes for every squarefree symbol.  All
+168 families have uniform cotangent saturation, no parameter torsion,
+collision-axis radical support, and relative multiplicity six.  Literal
+presentation equality changes in four rows, without changing any of those
+invariants.  The basis axes span the order-four kernel, but this computation
+does not test all their linear combinations.
+The fourth command is the four-worker mixed-direction audit for the smooth
+symbol.  Over `Q[u,v,x,y,z]` it tests all 276 full coordinate planes.  On
+every plane the cotangent presentation is saturated and the relative
+length-six `Ext^2` presentation is pulled back from `u=v=0`; this includes
+every specialization on the plane.  Directions supported on three or more
+basis tensors are not tested.
+The fifth command is the longer four-worker three-space audit.  It tests
+all 2,024 smooth coordinate three-spaces over
+`Q[p0,p1,p2,x,y,z]`.  After pruning contractible free summands, every
+relative rank-three `Ext^2` presentation is pulled back from the parameter
+origin with multiplicity six.  Directions supported on four or more basis
+tensors are not tested.
 
 The equivalent coordinate-free test is that each collision cotangent module
 has unit first Fitting ideal (or vanishing second exterior power); the
@@ -1489,18 +1511,21 @@ degrees four and five.  All displayed commands are part of
 
 ## External consequence identities
 
-Christopher D. Long's direct Gaussian-moment and `(xz)` identities, together
-with the exact normalization of the foundational map used in his BCW
-discussion, have a dedicated target:
+Christopher D. Long's direct Gaussian-moment, `(xz)`, `SU(2)`, and `SO(3)`
+identities, together with the exact normalization of the foundational map
+used in his BCW discussion, have a dedicated target:
 
 ```bash
 make verify-external-consequences
 ```
 
-The Gaussian and `(xz)` scripts use only the Python standard library.  Their
-bounded exact regressions are distinguished from Long's written all-exponent
-proofs.  A companion symbolic checker proves the `SU(2)=S^3` Haar density in
-Hopf coordinates, completing the local integration proof.  The same target
+The Gaussian, `(xz)`, and spherical `SO(3)` scripts use only the Python
+standard library.  Their bounded exact regressions are distinguished from
+the all-exponent proofs in the canonical notes.  The `SO(3)` replay checks
+the displayed moments through order fifteen and the endpoint-jet identity
+through order one hundred.  A companion symbolic checker proves the
+`SU(2)=S^3` Haar density in Hopf coordinates, completing that local
+integration proof.  The same target
 also performs all 18 balanced BCW steps and checks the resulting 79-variable
 cubic-homogeneous collision, writes its sparse artifact, and replays it with a
 separate standard-library implementation.  It then runs the shared-factor
@@ -1633,6 +1658,7 @@ The companion one-profile Hopf classification is checked directly by
 
 ```bash
 .venv/bin/python scripts/verify_hopf_lift_classification.py
+.venv/bin/python scripts/verify_hopf_lift_classification.py --require-singular
 ```
 
 This exact regression expands the phase-integrated polynomial for
@@ -1670,6 +1696,36 @@ For `deg(C)<=5`, `deg(D)<=7`, it derives seven triangular solutions and five
 residual jets, verifies zero-dimensionality, performs exact FGLM conversion,
 and checks both containments in the displayed lexicographic ideal.  The
 support is again Long's point and the tangent dimension is three.
+For `deg(C)<=6`, `deg(D)<=8`, the default command reconstructs all eight
+coefficients of `D`, constructs the six exact residuals through jet
+fourteen, checks their term counts `[19,28,37,51,64,83]`, and verifies
+residual Jacobian rank one.  The second command additionally requires
+Singular and computes the exact rational modular standard basis and its
+FGLM lexicographic conversion.  It checks quotient length 32 and the
+triangular support relations `E^8`, `F^5`, then nonzero pure powers of
+`G`, `H`, and `I` after successive substitution.  Singular's modular
+routine does not give a deterministic ideal-equality guarantee for this
+nonhomogeneous input, so this remains computational evidence for
+fourteen-jet uniqueness, not a proof.  The same command separately performs
+two deterministic rational checks: the boundary
+`84*E+54*F+5=0` gives the unit ideal, and exact lift matrices put
+`E^6`, `48*F^3+7*E^5`, and
+`972*G^2+864*F^2*E+29*E^5-108*E^4` in the residual specialization
+`H=I=0`.  The remaining compact certificate is `H^3,I^3` in the full
+residual ideal; equivalently, one may eliminate `I` on the certified
+principal open and exclude the resulting four-variable `H!=0` chart.  The
+command also computes the exact original `H=0` slice: its quotient has
+length 17 and an eight-element lex basis successively forcing
+`E=F=G=I=0`.  Therefore the sole possible extra locus is the principal
+chart `H!=0`, equivalently the unresolved saturation `J_6:H^infinity`.
+Finite-field unit lifts on that chart must first be normalized modulo the
+syzygy module before CRT: the raw coefficients are prime-dependent.  At
+primes 32003 and 32009 the normalized seven-multiplier support is identical,
+with term counts `[778,834,814,732,646,487,692]`; ten normalized small
+primes give a 150-bit modulus but do not yet suffice for balanced rational
+reconstruction.  This longer reconstruction is not part of the command
+above and should use a resumable checkpoint before being promoted to a
+reproducer.
 
 A final group of checks uses the first collision-coordinate values `0,1,-1`
 to fix the multiplier, expands the homogeneous 42-variable quartic, descends
@@ -1689,28 +1745,57 @@ two-pair construction:
 ```bash
 python3 scripts/audit_bcw_21_low_degree_invariants.py
 python3 scripts/audit_bcw_21_sextic_defect_sectors.py
+Singular -q scripts/audit_bcw_21_vertical_ideal.sing
+python3 scripts/audit_bcw_21_septic_component_screen.py
 .venv/bin/python scripts/audit_keller_near_invariant_backtrace.py
 python3 scripts/audit_keller_observable_quotients.py
 python3 scripts/audit_keller_provenance_compression.py
 ```
 
 The first command gives characteristic-zero rank and Lie-image certificates
-that the degree-at-most-five invariant space of the stored 21-variable map is
-`Q[X_20]_{<=5}`. It also records the near-invariant
+through degree five for the stored 21-variable map. It also records the near-invariant
 `Q=X_18*X_20-X_6*X_8` and its one-term pullback defect. The second uses two
-exact torus gradings to exclude both sextic correction channels, while leaving
-pure homogeneous sextic invariants open. The third reconstructs the frozen
+exact torus gradings to exclude both sextic correction channels and classify
+all 220 sextic Lie sectors. Unique-row peeling completely certifies 25 of
+the 28 dense sectors and reduces the remaining three to small exact cores.
+The full sextic Lie kernel is generated by `X_20^6`, `X_20^4*Q`,
+`X_20^2*Q^2`, and `Q^3`; their pullback defects extend the fixed-space
+identity to `Q[X_20]_{<=6}`. It also verifies that the two degree-seven
+correction sectors are exactly `X_20` times the already excluded sextic
+sectors. For the remaining pure septic problem, reduction modulo `X_20`
+has 657800 columns in 204 sectors; exact unique-row peeling removes 451891
+and leaves 205909 columns in 79 sectors. This last statement is a support
+reduction, not a classification of the residual kernel or its lifts. The
+checker also verifies that the reduced derivation is constant vertical over
+the fourteen-variable base and that `X_9^7` has a nonzero first lifting
+obstruction because its required sextic correction sector is empty.
+The Singular command proves that the six vertical coefficients generate a
+height-two ideal with five displayed minimal primes, verifies their
+intersection as the radical, computes
+`dim_Q(B/(A_14,...,A_19))_8=158412`, and independently confirms that
+`X_0^2*X_9^6` survives in the obstruction quotient. It requires Singular
+with `primdec.lib`.
+The component-screen command evaluates all 77520 degree-seven base
+monomials on the five minimal components. It proves that 71588 support-one
+base septics have nonzero first lifting obstruction, leaving 5932 monomials
+for sectorwise cancellation and higher-order analysis. Exactly eight
+monomials, `X_3^(7-j)*X_5^j`, have zero first obstruction.
+Stacking all five restrictions in the 29 bidegree sectors gives modular rank
+61060 on the full 77520-dimensional base-septic space. Hence over `Q` the
+radical-level survivor space has dimension at most 16460. Embedded torsion
+and higher `X_20`-adic lifts remain open.
+The backtrace command reconstructs the frozen
 17-step circuit and identifies `Q=c_4*s-v_3*v_5` as a determinantal
 shared-factor gate residual whose stable-source restriction is `x^2*y*z`.
-The fourth proves that any rational semiconjugate quotient carrying either
+The observable command proves that any rational semiconjugate quotient carrying either
 `X_0` or the restricted
 quadratic observable has dimension at least 13; its longer rank plateau is
 printed as experiment only, while a stacked rank-20 certificate excludes a
-common constant translation direction behind that plateau. The fifth verifies that the normalized
+common constant translation direction behind that plateau. The final provenance command verifies that the normalized
 three-variable canonical contraction fails at its first pure moment, checks
 the full twenty-coordinate inverse-recurrence dependency closure after the
 known identity slice, and reports the finite stored-circuit census.  Only
-the degree-at-most-five invariant statement is a nonlinear quotient-class
+the degree-at-most-six invariant statement is a nonlinear quotient-class
 obstruction; the circuit census is computation, not minimality.
 
 The independent small-witness audit can also be run directly:
@@ -1790,19 +1875,133 @@ all-order.  The Lean command
 formalizes the general finite-difference cancellation, the
 denominator-remainder theorem for alternating quotient sums and its rank-one
 endpoint-residue specialization, the specialized normalized products, and
-the generalized repeated-pole beta recurrence with its order-one
+the generalized repeated-pole beta recurrence, the finite
+remainder-to-jet identity, and the order-one
 factorial/double-factorial evaluation; it also formalizes the scalar chart
-identity, the monomial contraction/coefficient-extraction equality, the
-product-polynomial evaluation at natural numbers, and both normalized
-displayed binomial-sum identities.  It does not formalize their linear
-assembly for \(F\) or the derivation of the chart constant terms, so the
-repository does not label SIC2C4 itself as formally verified.
+identity, the coefficient functional and algebraic beta identity, the
+monomial and balanced-array contraction/coefficient-extraction equalities,
+the selected chart coefficients, the formal integrals of the resulting
+chart polynomials, the product-polynomial evaluation at natural numbers,
+and both normalized displayed binomial-sum identities.  It now also
+represents (4.3) literally in \(\mathbb Q[v][x,x^{-1}]\), proves the
+all-order binomial expansion of its powers, identifies the pure and mixed
+constant terms, and proves their final formal-integral values.  It also
+defines the original four-variable \(F,Q\) as `MvPolynomial` objects and
+proves that their displayed substitution gives the Laurent witness and its
+mixed powers.  The remaining Lean integration seam is only a wrapper between
+the generic balanced coefficient array in the contraction theorem and
+`MvPolynomial.coeff`; the algebraic chart proof itself is formalized on both
+sides of that representation boundary.
+
+The positive-characteristic phase diagram is replayed separately by
+
+```bash
+.venv/bin/python scripts/verify_two_pair_sic_characteristic_p.py
+```
+
+It clears denominators with \(\widetilde F=2F\), checks that the quadric
+chart is nondegenerate for every odd prime and that the coefficient tensor
+has full rank away from \(2,3\), and verifies
+\[
+\mathcal E_{2,p}(\widetilde F^m)=0,\qquad
+\mathcal E_{2,p}(Z\widetilde F^m)
+=\overline{2^m(4m+2)!m!/(2m+1)!!}.
+\]
+Legendre floor sums, base-\(p\) digit sums, and the Lucas--Kummer carry
+criterion all give the exact nonvanishing condition \(4m+2<p\).  The
+same audit treats every \(R^k(2F)^r\) of degree \(d=4r+k\) through
+degree twenty and verifies the uniform criterion \(dm+2<p\).
+At prime-power level it checks the integral radial quotient
+\[
+A_{s+1}/A_s=16(4s+3)(4s+5)(s+1)^2
+\]
+and the resulting valuation monotonicity.  It also verifies the
+non-radial re-entry for \(R(2F)\): the order-four moment is zero modulo
+\(11^2\), but the order-five moment is \(22\) modulo \(11^2\).
+The general signed consecutive-order valuation recurrence (4.14e) is
+audited through degree sixteen, prime \(31\), and order forty.
+The checker also computes the exact coefficient determinants and every
+exceptional modular rank for \(R^k(2F)\), \(0\leq k\leq4\), through
+degree eight; these are tabulated in (7.6) of the written proof.  The
+four binomial-convolution diagonal symbols and their lower-Hessenberg
+determinant recurrence are independently compared with expanded
+polynomials for every \(0\leq k\leq20\).  The closed characteristic-two
+rank formula
+\[
+\operatorname {rank}C_{R^k(2F)}
+=2^{1+s_2(\lfloor(k+2)/2\rfloor)}
+\]
+is checked through \(k=128\).
+For the non-power profiles it checks the universal necessary cutoff
+\(4hm+2<p\), proves the closed height-two formula
+\[
+C_{2,m}=\frac{4^m m!}{\prod_{j=0}^m(4j+1)},
+\]
+and records the first higher-profile numerator-prime holes at
+\((h,m,p)=(6,1,47)\) and \((4,5,89)\).
+The checker also verifies the characteristic-two one-sided degeneration, the
+characteristic-three Hilbert--Mumford unit ideal, and the naive Hasse
+formulas
+\(\mathcal H_2(\widetilde F^m)=16^m\) and
+\(\mathcal H_2(Z\widetilde F^m)=2m16^m\).
+It additionally checks the binomial intertwining and Lucas no-carry units
+behind the complete Hasse Image-kernel theorem and its reduction to the
+\(p\)-typical operator orders \(1,p,p^2,\ldots\).
+For that modified Image it verifies the one-pair counterexample
+\[
+f=\xi z^p,\qquad g=z,
+\]
+whose pure moments vanish because \(\binom{pm}{m}=0\), while the mixed
+moments are nonzero at every \(m=(p^e-1)/(p-1)\).
+The written proof in
+[`TWO_PAIR_SIC_CHARACTERISTIC_P.md`](extended-geometry/TWO_PAIR_SIC_CHARACTERISTIC_P.md)
+shows division-freely that the Image-kernel identity survives in every
+characteristic.  Frobenius gives
+\(\mathcal E_{r,p}(f^p)=f(0,z)^p\), so the single \(p\)-th pure moment
+forces the dual-degree-zero part to vanish; every fixed mixed contraction
+then vanishes for all \(m\geq p\).  This proves ordinary
+\(\operatorname{SIC}(r)\) for every \(r\) and \(p>0\), with sharp cutoff
+witness \(f=\xi _1,\ g=z_1^{p-1}\).  The finite replay is not being used
+as an all-order or periodicity argument.
 
 The exact local geometry of this displayed \(F\) is checked by
 
 ```bash
 .venv/bin/python scripts/verify_two_pair_counterexample_local_moduli.py
 ```
+
+The all-order fourth-order continuation is checked separately by
+
+```bash
+.venv/bin/python scripts/verify_two_pair_counterexample_fourth_order.py
+```
+
+It derives the combined shifted beta-tail for numerator degrees
+\(4,8,12,16\), rather than imposing an independent cutoff on each degree.
+The exact \(3220\)-by-\(455\) universal polynomial-section system has rank
+jump \(90\) to \(91\).  Restoring the eleven free cubic-lift parameters at
+the reduced direction \((1,2,3,4,5)\) leaves one affine-linear equation
+and one rank-one quadric, of dimension nine and degree two.  Its
+discriminant square class is \(41\), so the fiber is two conjugate affine
+\(9\)-planes over \(\mathbb Q(\sqrt {41})\) and has no rational point.
+This certifies a nonradial geometric fourth-order lift, not a formal arc.
+
+One explicit conjugate pair of fourth-order lifts is continued by
+
+```bash
+.venv/bin/python scripts/verify_two_pair_counterexample_fifth_order.py
+```
+
+The checker reconstructs the complete
+\(\mathbb Q(\sqrt {41})\)-valued jet, verifies its four coefficients
+against the all-order fourth tail, and derives the combined
+degree-\(4,8,12,16,20\) fifth tail of rank \(56\).  After all thirteen
+fourth-tangent corrections, the fifth rank jumps \(2\) to \(3\).  A
+primitive obstruction supported only on residual rows \(12,13,14\) has
+coefficients
+\((2727113757934325760,-407042494824,17047)\).
+This obstructs the selected conjugate jets, not the entire
+nine-dimensional fourth-lift components.
 
 The minimum-degree separating invariant and the low-degree invariant-ring
 calculation are checked independently by
@@ -1811,7 +2010,34 @@ calculation are checked independently by
 .venv/bin/python scripts/verify_two_pair_counterexample_missing_invariant.py
 ```
 
-This constructs the five Casimir projectors for
+The explicit first \(d=2\) moment relation is reconstructed and verified
+by
+
+```bash
+.venv/bin/python scripts/verify_two_pair_d2_moment_field_relation.py
+```
+
+With factorial-normalized centered moments \(x_m\), this produces the
+monic quintic relation for \(x_7\) over
+\(\mathbb Q[x_2,\ldots,x_6]\).  Five good primes reconstruct its \(241\)
+nonzero rational coefficients.  The checker then verifies the relation
+exactly at \(418\) fixed integral coefficient matrices whose full ansatz
+evaluation matrix has rank \(418\) modulo \(1000003\).  The generated
+artifact stores the five sparse coefficient blocks.  The same checker
+also proves, by five further modular rank jumps, that the centered
+moments \(x_8,\ldots,x_{12}\) are each outside the algebra generated by
+their predecessors.  Thus the first seven moments generate the moment
+field but not the polynomial moment algebra.  Finally, it certifies that
+the affine operator slice
+\[
+ \begin{pmatrix}0&1&0\\a&b&c\\d&e&f\end{pmatrix}
+\]
+has dense \(\mathrm{SL}_2\)-saturation and expands reconstructed formulas
+for \(x_{13},\ldots,x_{18}\) identically to zero in
+\(\mathbb Q[a,b,c,d,e,f]\).  Hence every moment through order \(18\)
+belongs to the algebra generated by the first twelve.
+
+The missing-invariant checker constructs the five Casimir projectors for
 \(\operatorname{End}(\operatorname{Sym}^4)\), verifies the five quadratic
 values and the exact expression of \(\mu_2\) in that basis, evaluates the
 ten primitive cubic contractions, and certifies modulo \(1000003\) that
@@ -1822,17 +2048,31 @@ adjoint, verifies its alternating signs on the five irreducible summands,
 and checks that the first odd cubic is nonzero.  The written coefficient
 reindexing proves that every moment is adjoint-even in all orders; hence
 the moment and invariant fields differ and the algebra conductor is zero.
+The same weight calculation finds the first odd invariant in bidegrees
+two and three, and gives degree ten for the proved first-six-moment
+parameter map on \(V_2\).  A nonzero fifteen-by-fifteen modular evaluation
+determinant shows that \(\mu_7\) leaves the first-six moment field; the
+prime degree-five tower then proves that the complete \(d=2\) moment field
+is exactly the apolar-adjoint fixed field, of generic degree two in the
+full invariant field.
 
-This computes the contraction-preserving stabilizer and orbit, uses the
+The local-moduli checker computes the contraction-preserving stabilizer
+and orbit, uses the
 all-order Hopf coefficient identity to obtain the thirteen-dimensional
 all-moment tangent space, records the seven independent quadratic lifting
-obstructions, proves that their quotient radical is a five-plane, constructs
-a polynomial cubic lift for every direction on that plane, and verifies the
-defect-preserving family
+obstructions, proves that their quotient radical is a five-plane, and
+splits the quotient moment tangent as \(2+8\) and that five-plane as
+\(1+4\) under the apolar involution.  It constructs a polynomial cubic
+lift for every direction on that plane and verifies the defect-preserving
+family
 \[
 F_{a,b}=\frac{aR+bZ}{2}
 \left(2W(aR+bZ)^2-2abR^3-b^2R^2Z\right).
 \]
+The parity split reduces the certified cubic correction system from
+\(490\times195\) to a consistent \(154\times73\) equivariant system and
+reduces the proposed fourth-order continuation from \(980\times455\) to
+at most \(644\times273\).
 The generated artifact contains the exact tangent matrix, kernel basis,
 obstruction quadrics, radical equations, and cubic correction.  The family
 proves a positive-dimensional local quotient but is not claimed to exhaust
@@ -1925,14 +2165,75 @@ whose all-order phase-parity proof gives zero moments below \(2d\) and
 =\binom{2d}{2}\lambda^2(2d^2+1)!
 \frac{(2d-2)!}{(4d-1)!!}.
 \]
-The same replay checks all opposite odd-height monomial pairs and all
-opposite even-height pairs of phase \(s\geq3\) in the displayed degree
-range against the written all-degree formulas.  Finally it verifies the
-degree-five phase-one elimination for
+The same replay checks all opposite odd-height monomial pairs, all
+opposite even-height pairs of phase \(s\geq3\), and the phase-two
+exceptional branch in the displayed degree range against the written
+all-degree formulas.  It also verifies the degree-five phase-one
+elimination for
 \(RF+aZT^4+bWT^4\): the normalized moments \(2,3,4\), their exact
 lexicographic remainder, and the nonzero resultant
-\(-418538718730248905250\).  Together these calculations exclude every
-opposite monomial pair in degree five.
+\(-418538718730248905250\).
+
+The remaining uniform phase-one elimination is reproduced by
+
+```bash
+.venv/bin/python scripts/verify_two_pair_phase_one_uniform_obstruction.py
+```
+
+It derives the symbolic height-dependent moments, eliminates to a
+quadratic and cubic in the remaining correction parameter, and factors
+their resultant.  The only nonlinear height factor has degree \(31\)
+and no root modulo \(29\).  Together with the preceding checker, this
+excludes every correction
+\(aZ^sT^{d-s}+bW^sT^{d-s}\) for every \(d>4\).
+
+The first multi-pair local obstruction is checked by
+
+```bash
+.venv/bin/python scripts/verify_two_pair_degree_five_odd_height_quadratic_rigidity.py
+```
+
+For the degree-five odd-height correction
+\(a_2Z^2T^3+a_4Z^4T+b_2W^2T^3+b_4W^4T\), it constructs the quadratic
+coefficients of moments \(2,\ldots,10\).  Their exact Gröbner basis
+contains the cube of every parameter, so their radical is the homogeneous
+maximal ideal.  It also computes the Hilbert vector \((1,4,1)\), length
+six, and a nondegenerate socle pairing, identifying the quotient as a
+compressed quadratic Artin--Gorenstein algebra.  This is a local formal
+obstruction.  The checker then treats the full ten-dimensional monomial
+correction space: moments \(2,\ldots,7\) eliminate the six even-height
+second-order variables, and projected moments \(8,\ldots,11\) give four
+quadrics forming a length-sixteen complete intersection with Hilbert
+vector \((1,4,6,4,1)\).  Thus \(RF\) is formally isolated in this full
+space; this is not a global classification of finite corrections away
+from \(RF\).
+
+The higher-degree continuation is checked by
+
+```bash
+.venv/bin/python scripts/verify_two_pair_higher_degree_monomial_formal_rigidity.py
+```
+
+Using exact Hopf-angular integration, it treats the full monomial
+correction spaces in degrees six and seven.  The consecutive linear
+blocks have sizes six and eight, respectively.  In both degrees, the
+projected odd-height obstruction consists of six quadrics forming a
+complete intersection with Hilbert vector
+\((1,6,15,20,15,6,1)\) and length \(64\).
+
+Degrees eight through eleven use the scalable good-prime replay
+
+```bash
+.venv/bin/python scripts/verify_two_pair_degree_eight_monomial_formal_rigidity.py
+```
+
+The checker constructs the exact rational pivot and projected systems,
+reduces them at \(1000003\), and invokes Singular.  Degrees eight and nine
+give eight-quadric quotients of dimension \(256\).  Degree ten gives a
+ten-quadric quotient of dimension \(1024\), and degree eleven gives the
+same ten-quadric dimension.  The corresponding ninth and eleventh
+variable powers reduce to zero, proving the characteristic-zero complete
+intersections.
 See
 [`TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md`](extended-geometry/TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md).
 This proves `not MN_d` for every `d>=4`, `not SIC(2)`, and, with the known
@@ -1944,6 +2245,8 @@ The coefficient-rank frontier inside bidegree \((4,4)\) is replayed by
 ```bash
 python3 scripts/verify_two_pair_sic_bidegree44_rank_frontier.py
 python3 scripts/verify_two_pair_sic_bidegree44_rank_two_invariants.py
+.venv/bin/python scripts/verify_two_variable_quartic_squarefree_pivot.py
+.venv/bin/python scripts/verify_two_variable_quartic_two_root_finite.py
 ```
 
 The dependency-free checker verifies the determinantal dimensions
@@ -1971,15 +2274,60 @@ homogeneous-parameter test exactly:
 \]
 Thus their common rank-at-most-two zero fiber necessarily contains a
 semistable point. The corrected degrees \(1,\ldots,12,14\) pass the
-necessary Hilbert test through degree \(100\), but their zero fiber remains
-open. The exact rank of the extra truncated-moment point may be one or two,
-and no all-order counterexample is claimed.
+necessary Hilbert test through degree \(100\). Their numerator is
+palindromic through degree \(82\), the top degree predicted by the
+determinantal invariant ring's \(a\)-invariant \(-10\) and the candidate
+parameter-degree sum \(92\), but their zero fiber remains open. The
+rank-one finite-cutoff check below proves that the semistable
+thirteen-moment point has exact rank two. No all-order counterexample is
+claimed.
 On the rank-one boundary, the same checker proves that moments one through
 six have exact Jacobian rank six and computes their nonnegative Hilbert
-numerator, of coefficient sum \(50\). This reduces the boundary gate to
-the finitely many exceptional squarefree quartic cross-ratios and a
-uniform finite cutoff on the low-root orbits; it does not claim that this
-remaining fiber calculation is complete.
+numerator, of coefficient sum \(50\). Rank-one annihilator tensors are
+Hilbert--Mumford unstable: for the one-parameter subgroup adapted to the
+annihilating root, the missing extremal coefficient makes every surviving
+tensor weight strictly positive.
+
+The third checker refines that rank-one boundary on the squarefree
+operator chart. After \(\mu_1\) and the normalization \(e=1\), it proves
+that the coefficient pivot of the \(a\)-linear second moment has empty
+common boundary with \(\mu_2,\ldots,\mu_6\) over
+\(\mathbb Q(\lambda)\). On the pivot-open chart the three expected
+annihilator sections have ideal
+\[
+(8c-3d^2,\ d(d-4)(d-4\lambda)),
+\]
+and the last four moments contain the cubic factor with multiplicities
+\(1,1,2,2\) after imposing the first relation. The checker then computes
+the gcd of all pairwise \(c\)-resultants. Its only extra quadratic factor
+is supported on the pivot divisor because \(p^3\) reduces to zero there,
+and the other three branches force
+\((c,d)=(0,0),(6,4),(6\lambda^2,4\lambda)\).
+Thus the generic squarefree fiber is exactly the annihilator sections.
+The same checker closes the pivot-annihilator orbit
+\(\lambda^2+4\lambda+1=0\) and the equianharmonic orbit
+\(\lambda^2-\lambda+1=0\): each projective fiber has degree four and
+the expected four-point radical, with eighth-power certificates.  The
+harmonic orbit is closed by the separate exact \(\lambda=2\) anchor.
+It also extracts the complete pivot-boundary exceptional gcd and the
+three expected-branch gcds. Their sole new \(S_3\)-orbit is represented by
+\[
+22\lambda^4-54\lambda^3+\lambda^2-54\lambda+22=0;
+\]
+the checker closes that quartic-field fiber with the same degree and
+radical and with eighth-power certificates. Finally, verified modular
+Gröbner bases over \(\mathbb Q\), checked by direct lift identities, prove
+that on \(p\ne0\), the \(8c-3d^2\ne0\) chart is supported only at
+\(\lambda=0,1\), while the chart
+\(8c-3d^2=0,\ d(d-4)(d-4\lambda)\ne0\) is empty. Hence every squarefree
+fiber is closed exactly.
+
+The fourth checker handles the remaining at-most-two-root normal forms
+\(u^rv^{4-r}\). For \(r=0,4\), the first moment gives the one-sided
+hyperplane. For \(r=1,2,3\), the first four moments have exactly the
+expected two one-sided linear components, with eighth-power radical
+certificates. Combined with the existing five-moment three-root theorem,
+this proves that every rank-one six-moment zero is in the nullcone.
 
 The dual-linear two-pair theorem is replayed by
 
@@ -2019,6 +2367,121 @@ supports of size at most seven, certifies the eight six-term and twelve
 seven-term Laurent-curve charts, and verifies their hidden one-sided
 factorizations.  The proof and exact claim boundary are in
 [`TWO_PAIR_SIC_BIDEGREE22_FRONTIER.md`](extended-geometry/TWO_PAIR_SIC_BIDEGREE22_FRONTIER.md).
+
+The first mixed-bidegree ordinary-degree search is replayed by
+
+```bash
+.venv/bin/python scripts/verify_two_pair_sic_mixed_22_13_31.py
+```
+
+For
+\[
+F=F_{2,2}+F_{1,3}+F_{3,1},
+\]
+the checker enumerates all \(35\) nonconstant bidegrees of ordinary degree
+at most seven and all \(256\) primitive positive/negative central circuits,
+then treats this complete three-block stratum exactly.  On
+the nonzero \(F_{1,3}\) branch, the dual-linear normal form gives
+\(F_{1,3}=\xi _2z_1^3\).  Polynomial-valued contractions through order
+three force the aligned triangular flag.  The remaining scalar
+contractions through order four reduce to three polynomials whose exact
+lexicographic basis contains \(h^3\), and whose \(h=0\) boundary contains
+fourth powers of the other two central variables.  The surviving support
+has a strict two-step exponent cone, giving an explicit all-multiplier
+cutoff rather than a bounded moment prefix.  The \(F_{1,3}=0\) branch
+reduces to the bidegree-\((2,2)\) theorem.  The proof and the still-open
+ordinary-degree-\(<8\) collection classes are in
+[`TWO_PAIR_SIC_ORDINARY_DEGREE_LT8_MIXED_FRONTIER.md`](extended-geometry/TWO_PAIR_SIC_ORDINARY_DEGREE_LT8_MIXED_FRONTIER.md).
+The same replay checks the central factorial formula for
+\(V_{1,d}\oplus V_{d,1}\), \(2\leq d\leq6\); the written exponent-cone
+proof is uniform for every \(d\geq2\).
+
+The next dual-linear mixed branch is replayed by
+
+```bash
+.venv/bin/python scripts/verify_two_pair_sic_mixed_33_14_41.py
+```
+
+For
+\[
+F=F_{3,3}+F_{1,4}+F_{4,1},\qquad F_{1,4}\ne0,
+\]
+the checker normalizes \(F_{1,4}=\xi _2z_1^4\), verifies the maximal-weight
+linear ladder, and uses two full-polynomial output coefficients from
+moments three and four to force the \(F_{3,3}\) coefficient matrix upper
+triangular.  It constructs the four-variable diagonal/opposite-corner
+core and its moments through order five.  Their exact 28-element rational
+Gröbner basis contains tenth powers of all three diagonal parameters and
+the fifth power of the corner parameter.  The residual exponent cone
+then gives the explicit multiplier cutoff.  The checker does not close
+the \(F_{1,4}=0\) boundary: the written proof identifies that boundary
+exactly with the existing balanced bidegree-\((3,3)\) problem.
+
+The first degree-eight diagonal-core probe is
+
+```bash
+.venv/bin/python scripts/explore_two_pair_sic_mixed_diagonal_core.py
+```
+
+The script uses a direct factorial composition formula for the core of
+\(V_{4,4}\oplus V_{1,5}\oplus V_{5,1}\), avoiding expanded Wick
+polynomials.  Moments two through six have exact rational Jacobian rank
+five.  Singular gives basis size \(132\), quotient dimension \(360\), and
+origin-support power reductions over both \(\mathbb F_{101}\) and
+\(\mathbb F_{1009}\).  These are exact finite-field computations but only
+evidence for the rational radical.  The script neither reconstructs a
+characteristic-zero certificate nor checks the preceding \(d=4\)
+triangularization equations.
+
+The first non-dual-linear positive block is replayed by
+
+```bash
+.venv/bin/python scripts/verify_two_pair_sic_mixed_23_32_pure_summands.py
+```
+
+The checker constructs
+\(V_{2,3}=\operatorname{Sym}^5\oplus\operatorname{Sym}^3
+\oplus\operatorname{Sym}^1\) exactly.  It identifies the first contraction
+with the linear projection, the pure cubic second-moment ideal with the
+rational normal cubic, and the pure quintic ideal with the prime
+tangential variety \(L^4M\), including an exact Singular primary
+decomposition.  It then inserts all three nonzero orbit normal forms into
+\(V_{2,3}\oplus V_{3,2}\).  Moments two through four eliminate every
+negative-block coefficient capable of an unbounded central contraction,
+and explicit exponent bounds prove eventual mixed vanishing.  The branch
+with both positive irreducible summands nonzero remains open.  At one
+explicit mixed-positive point, the same checker constructs the full
+moment-one-through-four Jacobian.  Its two transverse excess directions
+are obstructed at deformation orders two and four, respectively.  For the
+second direction it retains all six parameters in both higher correction
+spaces and verifies that the two order-four compatibility quadratics have
+nonzero resultant
+\(2283980165392458318151680000\).  This is an exact local jet exclusion,
+not a global classification of the remaining branch.
+
+The one-parameter generic strengthening is replayed by
+
+```bash
+.venv/bin/python \
+  scripts/verify_two_pair_sic_mixed_23_32_generic_local_gate.py
+```
+
+The raising operator removes the third incidence coefficient on
+\(b(a-b)\ne0\), leaving \(B(u)=VZ^2(uVY+WZ)\).  Over
+\(\mathbb Q(u)\), the checker retains all second- and third-order
+corrections and factors the fourth-order resultant as
+\[
+648u^8(u+6)^4(4u+3)^2
+(2u^3+10u^2+21u+9)^2S(u),
+\]
+where the displayed artifact records the irreducible sextic \(S\).
+The linear subresultant also gives the unique fourth-order correction
+\(\tau=-B(u)/A(u)\) at every root of \(S\), since the checker verifies
+\(\operatorname{Res}(A,S)\ne0\).
+It also recomputes \(u=0,-6,-3/4,\infty\) and one \(a=b,c\ne0\)
+representative without the rational-function chart; every resulting
+fourth-order obstruction ideal is the unit ideal.  This is a generic
+local first-four-moment theorem, not a global SIC classification.
 
 The balanced cubic two-variable GVC theorem is replayed by
 
@@ -2150,6 +2613,49 @@ second-moment cancellation and the decisive third moment
 \(-4608C^3p_{xy^2}^3\); in the distinct-line orbit it verifies the
 triangular second-moment branches.  The written strict weighted-degree
 cutoffs turn the surviving branches into an all-order theorem.
+For quartic \(P\), the checker retains every operator jet that can enter
+the displayed moments.  It verifies the triangular distinct-root
+second-moment closure, the double-line \(xy^3\) third-moment coefficient
+\(-3604176H^3\), and the two residual polynomials \(S,T\) on the
+double-line \(y^4\) branch.  Their exact resultant is a monomial times the
+homogeneous sextic printed in Proposition 3.8, leaving only finitely many
+nonweighted parameter ratios for the next moment.
+It then evaluates moment four, eliminates the remaining coefficient, and
+verifies that the resulting octavic has gcd one with the sextic.  The
+written \((2,1)\)-weighted-face identity shows that higher operator jets
+and lower polynomial terms cannot alter any pure moment, upgrading this
+calculation to closure of the full \(r=2,\deg P\le4\) cell.
+For \(r=3,\deg P=4\) with triple-root leading symbol, the checker verifies
+the three stabilizer types.  In the \(x^2y^2\) type it checks the forced
+weighted correction chain and terminal coefficient
+\(3361505280U^4\); the \(xy^3\) and \(y^4\) types terminate at moments
+three and two.  The written weighted-face argument supplies the all-order
+mixed cutoffs.  It also checks all double-root branches and the squarefree
+orbit.  For the latter it computes the leading-moment Gröbner basis,
+reduces the three fourth-power tips by root permutation, retains the full
+order-four and order-five jets at the \(x^4\) tip, and verifies the
+terminal weighted-face value \(129392640T^3\).  Together with the written
+orbit and weight arguments this proves GVC for every binary operator and
+every \(P\) of degree at most four.  Finally, the checker verifies the
+leading reduction in the first open \(r=2,\deg P=5\) row: the only three
+top pairs are
+\((\partial_x\partial_y,x^5)\),
+\((\partial_x^2,xy^4)\), and
+\((\partial_x^2,y^5)\).  It then retains the complete jets that can enter
+the first two moments.  The distinct-root branch reduces to
+\(P=f(x)+ay\) and
+\(\Lambda=\partial_y\Gamma+H(\partial_x)\), with
+\(\operatorname{ord}_{\min}H\ge6>\deg f\).  The written binomial
+derivative count gives its all-order mixed cutoff.  For the \(xy^4\)
+branch the checker verifies two nested third-moment faces, terminating in
+\(-553153536H^3\) and \(-5430509568J^3\).  For the \(y^5\) branch it
+checks the six weighted second-moment ratios and the four nonzero
+third-moment residuals; the other two ratios are one-sided.  This closes
+the full \(r=2,\deg P\le5\) cell.  The checker finally derives the next
+\(r=3,\deg P=5\) leading reduction: four triple-root, three double-root,
+and one squarefree top-form normal forms.  This is a leading-face
+classification only; their nonhomogeneous correction systems remain
+open.
 The accompanying written no-go for formal umbral straightening is
 proof-theoretic: conjugation by an algebra automorphism preserves the
 Leibniz rule, while a locally finite formal constant-coefficient operator
@@ -2283,15 +2789,66 @@ The generic boundary quotient and its denominator strata are replayed by
   scripts/verify_two_pair_sic_bidegree33_boundary_generic_quotient.py
 ```
 
-Over both \(\mathbb F_{47}\) and \(\mathbb F_{101}\), with the six base
-variables treated as rational-function parameters, the checker obtains a
-three-element basis and quotient length six for
+The checker constructs the sparse moments integrally and works over the
+characteristic-zero rational-function field of the six base variables.
+It obtains a three-element basis and quotient length six for
 \((\mu_4,\mu_5)\).  Both \(\mu_6,\mu_7\) reduce to six fiber coordinates.
-The denominators reconstruct as products of
+The \(\mu_6\) denominators are supported on
 \(L=s_1t_0-t_1\) and
-\(Q=s_1^2-s_2-(13/3)t_0^2\).  This identifies the principal open and two
-degeneracy divisors for the next elimination; it remains modular
-reconstruction evidence rather than a characteristic-zero certificate.
+\(Q=s_1^2-s_2-(13/3)t_0^2\); \(\mu_7\) introduces the additional
+quartic divisor \(J\) recorded in the artifact.  The checker also proves
+that the \(t_4^3\)-coefficient of the \(\mu_6\) normal form is
+affine-linear in \(t_2\), with constant derivative
+\(-100078239744000\), so it globally eliminates \(t_2\) on the
+generic \(LQJ\)-open.  It is also affine-linear in \(s_3\), with the
+explicit alternate eight-term pivot \(H\).
+In the adapted coordinates it verifies
+\(J=(99Q+155t_0^2)^2+30420L^2\) and
+\(H=32J+1179Q(99Q+155t_0^2)\), giving the exact localized exclusion
+\((J,H):(LQ)^\infty=(1)\).
+The checker also constructs an irreducible quartic number field and an
+explicit point on \(J=\mu_3=0\).  At that point
+\((\mu_4,\mu_5)\) has length five, with initial ideal
+\((s_5^2,t_4^3,s_5t_4^2)\) and basis
+\(1,t_4,t_4^2,s_5,s_5t_4\).  This is an exact special-fiber theorem,
+not a proof that rank five is generic on \(J=0\).  Generic
+rational-function-field calculations at both split roots modulo 47 and
+101 give the same basis and supply reconstruction evidence for that
+next statement.
+After solving the constant \(t_2\)-pivot, the checker forms the
+642-term cubic \(P(s_3)\) coming from \(\mu_3\) and the cubic
+\(s_5t_4\)-coefficient \(C(s_3)\) of the remaining \(\mu_6\) normal
+form.  Their exact resultant factors as
+\[
+ \operatorname{Res}_{s_3}(P,C)=L^6Q^6\mathcal R_{63}.
+\]
+The residual factor has degree 63 and 6702 rational terms.  Its
+degree-preserving reduction modulo 47 is irreducible, proving
+\(\mathcal R_{63}\) irreducible over \(\mathbb Q\); reduction modulo
+101 independently reproduces the degree and irreducibility.
+For the next \(t_4^2\)-coefficient, the checker obtains
+\(\operatorname{Res}_{s_3}(P,C_2)=L^9Q^6\mathcal T_{66}\).
+Both reductions of \(\mathcal T_{66}\) are irreducible, and the checker
+verifies modulo both primes that
+\(\gcd(\mathcal R_{63},\mathcal T_{66})=1\).  Thus the principal
+\(\mu_6\)-zero base has codimension at least two rather than a surviving
+degree-63 divisorial component.
+For the two cubics \(P=as_3^3+bs_3^2+cs_3+d\) and
+\(C=es_3^3+fs_3^2+gs_3+h\), it also constructs the direct linear
+pseudo-remainder \(V_1s_3+V_0\).  Over \(\mathbb Q\), \(V_1,V_0\)
+have degrees \(60,63\) and respectively 2105 and 5170 terms.
+Their reductions modulo both primes are coprime to
+\(\mathcal R_{63}\).  Consequently the degree-63 incidence branch has
+the dense rational pivot \(s_3=-V_0/V_1\); the checker does not assert
+that this pivot covers every component of the residual codimension-two
+intersection.
+On the divisor strata \(L=0\), \(Q=0\), and \(L=Q=0\), the exact
+characteristic-zero quotient lengths are respectively six, five, and
+five.  Their changed standard monomial bases are recorded, and the
+normal forms of both \(\mu_6,\mu_7\) occupy every basis coordinate.
+Independent calculations over \(\mathbb F_{47}\) and
+\(\mathbb F_{101}\) replay all quotient shapes.  This is a finite
+quotient certificate, not a full boundary unit certificate.
 
 Modular full-chart reconnaissance is available separately:
 
@@ -3117,6 +3674,35 @@ does not import the primary CAS or generation modules.
 
 ## Direct Schur-descent audit for `HC_4`
 
+The reusable six-to-five-variable construction is imported in
+[`MENG_YANG_SCHUR_DESCENT_BRIDGE.md`](MENG_YANG_SCHUR_DESCENT_BRIDGE.md).
+For \(\Phi=tA+B\), it separates the two exact hypotheses--constant bordered
+Hessian determinant and identically singular reduced pencil
+\(\operatorname{Hess}_w(B+sA)\)--from the automatic conclusion
+\(\det\operatorname{Hess}(B+\lambda A^2/2+\mu A)=-\lambda c\).
+The doubled-Keller row count proves the singular-pencil hypothesis directly,
+so no homogeneous-face calculation is needed to reconstruct that descent.
+The commands below concern the genuinely additional attempt to descend from
+five variables to four.
+
+Two algebraic strengthenings and the resulting research gates are in
+[`SCHUR_DESCENT_CONTINUATIONS.md`](SCHUR_DESCENT_CONTINUATIONS.md).  The
+exact scalar formula is
+\[
+\det\operatorname{Hess}\psi_{\lambda,\mu}
+=\det M(\mu+\lambda A,w)-\lambda c,
+\]
+so a fixed descent needs only the specialized reduced determinant to be
+constant.  The simultaneous \(r\)-pivot theorem uses the corank condition
+\(\operatorname{rank}M\le m-r\); at \(n=3,r=2\) it gives a direct
+six-to-four-variable bridge from any Keller collision admitting a jointly
+affine two-dimensional source block.  The existing linear-direction audit
+rules out such a block for the foundational gauge family, and the general
+codimension-one block-affine theorem `SDX2` proves that every three-variable
+Keller map with such a block is a polynomial automorphism, even after a
+nonlinear source rechart.  Only mixed source--dual or coisotropic pivots
+survive this route.
+
 The direct one-variable calculation for the `PC(2)` graph is:
 
 ```bash
@@ -3135,7 +3721,8 @@ to three cases, and exact Hessian evaluations exclude constant nonzero
 determinant in all six.  Finally, the checker proves that the Meng--Yang
 five-variable potential has no further polynomial partial Legendre transform
 along a constant linear direction.  Non-coordinate graph embeddings and
-higher-degree critical equations are not tested.
+mixed coefficient-dependent critical equations are not tested.  Pure
+univariate higher-degree repairs are excluded abstractly by `SDX1`.
 
 The double-Schur audit for the parameterized quadratic-gauge families is:
 
@@ -3668,6 +4255,55 @@ on the two-parameter surface.  It does not exclude exceptional curves
 inside `nu!=0`: exact uniform saturation timed out at 300 seconds, and
 raw projective-chart runs timed out at 120 seconds.  Those timeouts are
 diagnostics, not certificates.
+
+The surface nevertheless contains an explicit exceptional Schur pair:
+
+```bash
+.venv/bin/python \
+  scripts/verify_hc4_quintic_radial_exceptional_schur.py
+```
+
+At `(mu,nu)=(1/5,1/10)`, the sextic is
+`(x^2+y^2+z^2)^3/30`.  The checker proves that the nonzero quartic
+`s4=(x^2+y^2+z^2)^2` has polynomial Schur quotient
+`16*(x^2+y^2+z^2)` and that the sextic Hessian determinant is
+`(x^2+y^2+z^2)^6/25`.  This verifies only the Schur face; it does not
+by itself claim extension through the lower collision identities.  In
+the invariant coordinates `R=x^2+y^2+z^2`,
+`P2=x^2*y^2+x^2*z^2+y^2*z^2`, and `P3=x^2*y^2*z^2`, the surface is
+`R^3/30+(nu-1/10)*R*P2+(mu-3*nu+1/10)*P3`.  The checker also proves that
+the fixed radial quartic `R^2` has a polynomial Schur norm only when both
+deformation coefficients vanish, so this pair occurs only at the stated
+parameter point.
+
+The lower-face prolongation is excluded by:
+
+```bash
+.venv/bin/python \
+  scripts/verify_hc4_quintic_radial_prolongation.py
+```
+
+The checker retains an arbitrary base quintic and every allowed quartic,
+cubic, and quadratic coefficient.  Sparse exact determinant extraction
+gives `2*(3*delta-32)/25` at `lambda^13*t*x^12`, forcing
+`delta=32/3`, while `lambda^11*t^3*x^8` then equals `1024/25`.
+Every arbitrary lower coefficient cancels.  Thus the radial Schur pair is
+exceptional at the Schur face but cannot produce a constant-Hessian
+collision.
+
+The full even permutation-invariant quartic line is classified by:
+
+```bash
+.venv/bin/python \
+  scripts/verify_hc4_quintic_even_symmetric_schur.py
+```
+
+For `s4=a*R^2+b*P2`, the `a=1` chart has radical support at exactly two
+points: the radial pair and the Fermat pair
+`(mu,nu,s4)=(0,0,x^4+y^4+z^4)`.  The `a=0` chart is the unit ideal.
+Consequently this complete symmetric-even slice contains no exceptional
+parameter curve, and both isolated points are already excluded at lower
+faces.
 
 The direct collision-normalized finite-field experiment in degree bounds
 five through eight is:

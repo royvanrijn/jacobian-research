@@ -316,6 +316,76 @@ def main() -> None:
                 "-4608*C^3*p_xy2^3; every survivor has a strict weighted "
                 "degree separator."
             ),
+            "quadratic_leading_two_moment_sharpness": (
+                "Lambda=dx^2+dx*dy^2-dy^4/4 and P=x*y^2-x^2 have pure "
+                "moments one and two zero, but moment three equals -4608."
+            ),
+            "quadratic_leading_quartic_theorem": (
+                "For r=2 and deg(P)<=4, the first four pure equations "
+                "imply GVC. The last double-line y^4 branch is exactly "
+                "its weight-four face; moment four gives an octavic "
+                "coprime to the earlier residual sextic."
+            ),
+            "quadratic_leading_quartic_face_identity": (
+                "With weights wt(x)=2, wt(y)=1, every omitted term of P "
+                "has weight below four and every omitted operator jet "
+                "has weight above four, so all pure moments equal those "
+                "of the three-term weight-four face."
+            ),
+            "triple_root_cubic_leading_quartic_theorem": (
+                "For r=3, deg(P)<=4, and triple-root leading symbol, the "
+                "first four pure equations imply GVC. Three stabilizer "
+                "types reduce to one-sided weighted faces; the only "
+                "fourth-moment obstruction is 3361505280*U^4."
+            ),
+            "double_root_cubic_leading_quartic_theorem": (
+                "For r=3, deg(P)=4, and double-root leading symbol, the "
+                "first three pure equations imply GVC. Its x^4 correction "
+                "face terminates in 129392640*T^3, and the remaining two "
+                "top-form branches have strict weighted cutoffs."
+            ),
+            "squarefree_cubic_leading_quartic_theorem": (
+                "For r=3, deg(P)=4, and squarefree leading symbol, the "
+                "first three pure equations imply GVC. The leading "
+                "nullcone has three fourth-power tips in one orbit; its "
+                "x^4 correction is the double-root face and terminates in "
+                "129392640*T^3."
+            ),
+            "binary_degree_four_corollary": (
+                "Every binary constant-coefficient operator satisfies "
+                "GVC for deg(P)<=4. Any counterexample has deg(P)>=5; "
+                "in degree five its lowest positive order is 2, 3, or 4."
+            ),
+            "quadratic_leading_quintic_top_forms": (
+                "For r=2 and deg(P)=5, the first two leading equations "
+                "reduce the top pair to (dx*dy,x^5), (dx^2,x*y^4), or "
+                "(dx^2,y^5). Lower terms and higher jets remain open."
+            ),
+            "quadratic_leading_quintic_theorem": (
+                "For r=2 and deg(P)<=5, GVC holds. The distinct-root x^5 "
+                "tip closes after moment two by a linear-factor/high-order "
+                "decomposition. The x*y^4 tip closes through two nested "
+                "third-moment weighted faces. The y^5 tip has six "
+                "second-moment weighted ratios; moment three eliminates "
+                "four and the other two are one-sided."
+            ),
+            "degree_five_lowest_order_reduction": (
+                "Any binary GVC counterexample of polynomial degree five "
+                "has lowest positive operator order three or four."
+            ),
+            "transverse_linear_high_order_class": (
+                "If P=f(x)+a*y and Lambda=dy*Gamma+H(dx), with Gamma(0)=0 "
+                "and every term of H having order greater than deg(f), "
+                "then all pure moments vanish and the GVC mixed conclusion "
+                "holds by a direct binomial derivative count."
+            ),
+            "cubic_leading_quintic_top_forms": (
+                "For r=3 and deg(P)=5, the first two leading equations "
+                "reduce the top pair to eight normal forms: four over the "
+                "triple-root cubic symbol, three over the double-root "
+                "symbol, and one over the squarefree symbol. Their "
+                "nonhomogeneous correction systems remain open."
+            ),
             "proof": (
                 "extended-geometry/"
                 "SEPARABLE_GVC_ESCAPE_OBSTRUCTIONS.md"

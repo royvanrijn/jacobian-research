@@ -6,6 +6,16 @@ This note tests the most direct two-step Meng--Yang descent on the full
 root-engineered quadratic-gauge family.  No four-variable Hessian
 counterexample is found.
 
+The first, six-to-five-variable step is the general
+[Meng--Yang Schur-descent bridge](MENG_YANG_SCHUR_DESCENT_BRIDGE.md);
+its determinant identity is imported here.  The calculations below begin
+with the additional pivot needed for a five-to-four-variable descent.
+The separate [continuation note](SCHUR_DESCENT_CONTINUATIONS.md) gives the
+exact reduced-determinant remainder and the simultaneous source-block
+version.  Its codimension-one block-affine theorem globally excludes the
+pure-source two-pivot route, including nonlinear source recharts; the cases
+not covered here are therefore genuinely mixed source--dual or coisotropic.
+
 There are two exact negative results.
 
 1. Eliminating two constant linear combinations of the three dual variables
@@ -325,6 +335,15 @@ are:
    polynomially to \((x,y,z)\);
 4. a search allowing the two Schur variables to mix source and dual
    directions nonlinearly.
+
+For any resulting scalar affine pivot, the determinant target is the weaker
+condition
+\[
+ \det M(\mu+\lambda A,w)\in K
+\]
+from Proposition 1.1 of the continuation note; the full pencil
+\(\det M(s,w)\) need not vanish identically.  For a simultaneous pivot block,
+the first gate is the corank bound of Theorem 3.1 there.
 
 The existing nonlinear toric calculation for the foundational potential
 shows why polynomial coordinates alone are insufficient: a nonlinear point

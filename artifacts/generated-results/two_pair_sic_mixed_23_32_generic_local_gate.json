@@ -1,0 +1,138 @@
+{
+  "claim": "On the chart b*(a-b)!=0, the incidence family reduces to B(u)=V*Z^2*(u*V*Y+W*Z).  Away from the displayed finite exceptional set, both transverse directions of the first four full moment equations are obstructed by deformation order four.",
+  "claim_boundary": "This is an exact generic local jet theorem, not a global classification of the mixed-positive branch and not an all-order SIC theorem.",
+  "direct_rational_special_points": [
+    {
+      "base_point": "V*Z**2*(-6*V*Y + W*Z)",
+      "fourth_order_basis": [
+        "1"
+      ],
+      "fourth_order_obstructions": [
+        "-960*(441*tau2**2 - 210*tau2 + 373)/343",
+        "23040*(6321*tau2**2 - 14378*tau2 + 8837)/343"
+      ],
+      "label": "u=-6",
+      "second_order_basis": [
+        "direct_beta**2"
+      ],
+      "surviving_excess": "W*Z**2*(3*V*Y - W*Z)/3"
+    },
+    {
+      "base_point": "V*Z**2*(-3*V*Y/4 + W*Z)",
+      "fourth_order_basis": [
+        "1"
+      ],
+      "fourth_order_obstructions": [
+        "64*(21*tau5 - 2)*(21*tau5 + 2)/147",
+        "960*(5733*tau5**2 + 1071*tau5 - 136)/49"
+      ],
+      "label": "u=-3/4",
+      "second_order_basis": [
+        "direct_beta**2"
+      ],
+      "surviving_excess": "W*Z**2*(3*V*Y - W*Z)/3"
+    },
+    {
+      "base_point": "V*W*Z**3",
+      "fourth_order_basis": [
+        "1"
+      ],
+      "fourth_order_obstructions": [
+        "-120*(9*tau5 - 4)*(18*tau5 - 13)",
+        "-960*(810*tau5**2 - 927*tau5 + 242)"
+      ],
+      "label": "u=0",
+      "second_order_basis": [
+        "direct_beta**2"
+      ],
+      "surviving_excess": "Z*(3*V**2*Y**2 - W**2*Z**2)/3"
+    },
+    {
+      "base_point": "V**2*Y*Z**2",
+      "fourth_order_basis": [
+        "1"
+      ],
+      "fourth_order_obstructions": [
+        "480*(36*tau5**2 - 14*tau5 + 3)",
+        "1920*(396*tau5**2 - 124*tau5 + 111)"
+      ],
+      "label": "u=infinity",
+      "second_order_basis": [
+        "direct_beta**2"
+      ],
+      "surviving_excess": "W*Z**2*(3*V*Y - W*Z)/3"
+    },
+    {
+      "base_point": "V*Z**2*(V*Y + V*Z + W*Z)",
+      "fourth_order_basis": [
+        "1"
+      ],
+      "fourth_order_obstructions": [
+        "-160*(21168*tau5**2 + 2765*tau5 + 69)/343",
+        "3840*(68796*tau5**2 + 5005*tau5 + 177)/343"
+      ],
+      "label": "a=b=c=1 representative",
+      "second_order_basis": [
+        "direct_beta**2"
+      ],
+      "surviving_excess": "W*Z**2*(3*V*Y - W*Z)/3"
+    }
+  ],
+  "fourth_order_gate": {
+    "chart_denominator": "(u + 6)**2*(4*u + 3)*(2*u**3 + 10*u**2 + 21*u + 9)",
+    "compatibility_polynomials": [
+      "144*tau5**2*u**7 + 1512*tau5**2*u**6 + 5256*tau5**2*u**5 + 4482*tau5**2*u**4 - 20088*tau5**2*u**3 - 58563*tau5**2*u**2 - 61236*tau5**2*u - 19683*tau5**2 - 56*tau5*u**6 - 282*tau5*u**5 - 576*tau5*u**4 - 4833*tau5*u**3 - 9234*tau5*u**2 - 4374*tau5*u + 12*u**5 + 18*u**4 - 270*u**3 - 243*u**2",
+      "792*tau5**2*u**8 + 11628*tau5**2*u**7 + 75672*tau5**2*u**6 + 272142*tau5**2*u**5 + 564300*tau5**2*u**4 + 611064*tau5**2*u**3 + 191241*tau5**2*u**2 - 183708*tau5**2*u - 98415*tau5**2 - 248*tau5*u**7 + 1022*tau5*u**6 + 22890*tau5*u**5 + 70452*tau5*u**4 + 52785*tau5*u**3 - 19926*tau5*u**2 - 21870*tau5*u + 222*u**6 + 1704*u**5 + 2952*u**4 + 54*u**3 - 1215*u**2"
+    ],
+    "degree_6_exceptional_polynomial": "14138*u**6 + 142955*u**5 + 483945*u**4 + 727020*u**3 + 540270*u**2 + 185004*u + 18225",
+    "exceptional_sextic_common_correction": {
+      "A": "20*u**7 + 1262*u**6 + 10842*u**5 + 31626*u**4 + 38295*u**3 + 21168*u**2 + 6075*u + 2187",
+      "B": "52*u**6 + 378*u**5 + 581*u**4 + 42*u**3 + 27*u**2 + 243*u",
+      "formula": "tau=-B(u)/A(u) in Q[u]/(S), with A and B below",
+      "resultant_A_S": 98518095894778815317044086562668309937383692646528
+    },
+    "resultant_factorization": "648*u**8*(u + 6)**4*(4*u + 3)**2*(2*u**3 + 10*u**2 + 21*u + 9)**2*(14138*u**6 + 142955*u**5 + 483945*u**4 + 727020*u**3 + 540270*u**2 + 185004*u + 18225)",
+    "second_correction_parameter_count": 6,
+    "third_correction_parameter_count": 6
+  },
+  "incidence_reduction": {
+    "c_shift": "c -> c+shift*(a-b)",
+    "normalized_chart": "b*(a-b)!=0; u=a/b; c=0; b=1",
+    "raising_operator": "Z*d/dY-V*d/dW"
+  },
+  "moment_jacobian": {
+    "generic_rank": 6,
+    "incidence_tangent_dimension": 4,
+    "shape": [
+      14,
+      12
+    ],
+    "transverse_excess_dimension": 2
+  },
+  "remaining_special_ratios": {
+    "affine_normalization_exceptions": [
+      "b=0",
+      "a=b"
+    ],
+    "calculation_chart_exceptions": [
+      "u=-6",
+      "4*u+3=0",
+      "2*u**3 + 10*u**2 + 21*u + 9"
+    ],
+    "fourth_resultant_exceptions": [
+      "u=0",
+      "14138*u**6 + 142955*u**5 + 483945*u**4 + 727020*u**3 + 540270*u**2 + 185004*u + 18225"
+    ],
+    "note": "Some chart exceptions may be removable basis artifacts; each must be recomputed directly before being treated as a geometric component."
+  },
+  "second_order_gate": {
+    "chart_denominator": "(u + 6)**2*(4*u + 3)",
+    "coefficient_polynomials": [
+      "8*u**4 + 44*u**3 - 12*u**2 - 189*u - 243",
+      "44*u**5 + 426*u**4 + 1612*u**3 + 2388*u**2 + 567*u - 1215"
+    ],
+    "coefficient_resultant": -10554055205970310272,
+    "conclusion": "the beta direction is obstructed"
+  },
+  "status": "exact characteristic-zero generic local theorem"
+}

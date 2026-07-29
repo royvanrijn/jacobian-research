@@ -120,6 +120,53 @@ Finally, the chain rule in (2.1) gives
 This proves the last assertion.  Notice that neither this proof nor its
 uniqueness assertion assumes that `F` is injective.  QED
 
+### Equivariant corollary
+
+Suppose in addition that an affine algebraic group `H` acts polynomially on
+the source and target, that `F` is equivariant for these actions, and that
+the deformation `mathcal F` is equivariant for the base-changed actions over
+`R`.  Then the unique automorphism `alpha` in Theorem 2.1 is
+`H`-equivariant.
+
+Indeed, work universally over the coordinate ring `k[H]`.  If `sigma` and
+`tau` denote the source and target actions, put
+
+\[
+ \beta=\sigma^{-1}\circ\alpha\circ\sigma.
+\]
+
+Equivariance of `F` and `mathcal F=F circ alpha` gives
+
+\[
+\begin{aligned}
+ F\circ\beta
+ &=F\circ\sigma^{-1}\circ\alpha\circ\sigma\\
+ &=\tau^{-1}\circ F\circ\alpha\circ\sigma\\
+ &=\tau^{-1}\circ\mathcal F\circ\sigma
+ =\mathcal F.
+\end{aligned}
+\]
+
+Both `alpha` and `beta` are congruent to the identity modulo
+`m R[H]`.  The uniqueness induction in Theorem 2.1 applies unchanged after
+the flat extension `R -> R[H]`: it uses only that the extended ideal is
+nilpotent, not that the coefficient ring is local.  Hence
+`beta=alpha`, which is exactly commutation with the universal source action.
+
+For a fixed diagonal `G_m`-grading this says:
+
+\[
+ \boxed{\text{every finite-order graded Keller deformation is uniquely
+ trivialized by a graded polynomial source automorphism.}}       \tag{2.1a}
+\]
+
+Consequently the fixed-grading Artin deformation functor modulo the full
+graded polynomial source-automorphism functor is a point.  This does not
+imply that a bounded parameter scheme is one orbit of its
+degree-bound-preserving automorphism group, or that the compatible formal
+trivializer algebraizes over a reduced base.  Those are precisely the
+global and filtered gaps.
+
 For a one-parameter deformation
 
 \[

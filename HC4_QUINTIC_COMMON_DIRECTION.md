@@ -496,12 +496,156 @@ polynomial Schur norm.
 > nonzero quartic satisfying (5.3).  Consequently the generic
 > rank-three quintic branch on this parameter surface reaches `HC4CD5`.
 
+The generic statement cannot be made uniform on the whole parameter
+surface.  At the rational point
+
+\[
+ (\mu,\nu)=\left(\frac15,\frac1{10}\right)
+\]
+
+put \(R=x^2+y^2+m^2\),
+\(P_2=x^2y^2+x^2m^2+y^2m^2\), and \(P_3=x^2y^2m^2\).
+The full surface has the invariant presentation
+
+\[
+ h_{6,\mu,\nu}
+ =\frac{R^3}{30}
+  +\left(\nu-\frac1{10}\right)RP_2
+  +\left(\mu-3\nu+\frac1{10}\right)P_3.               \tag{8.4}
+\]
+
+Thus the displayed rational point is exactly the simultaneous zero of
+the two non-radial deformation coordinates, and
+
+\[
+ h_{6,1/5,1/10}=\frac{R^3}{30}.
+\]
+
+For the nonzero quartic \(s_4=R^2\), direct differentiation gives
+
+\[
+ \det\operatorname{Hess}(h_{6,1/5,1/10})=\frac{R^6}{25}
+\]
+
+and
+
+\[
+ (\nabla s_4)^{\mathsf T}
+ \operatorname{adj}(\operatorname{Hess}h_{6,1/5,1/10})
+ \nabla s_4
+ =
+ \det(\operatorname{Hess}h_{6,1/5,1/10})\,16R.         \tag{8.5}
+\]
+
+Thus this point carries a genuine nonzero polynomial Schur norm.
+Equivalently, the Hessian has radial eigenvalue \(R^2\) and two tangential
+eigenvalues \(R^2/5\), which proves (8.5) without elimination.  This
+radial quartic occurs nowhere else on the surface: if the two deformation
+coefficients in (8.4) are denoted by \(A,B\), and the forced invariant
+quadratic quotient by \(qR\), the eight coefficient equations have
+reduced Gröbner basis
+
+\[
+ q-16,\qquad A,\qquad B.
+\]
+
+> **Theorem `HC4QSE1` — exceptional radial Schur pair.**  The member
+> \(h_{6,1/5,1/10}=R^3/30\) of (8.1), together with \(s_4=R^2\), satisfies
+> the Schur divisibility identity (5.3), with quadratic quotient \(16R\).
+
+This theorem is only a certificate for the degree-fourteen Schur face.
+The pair nevertheless does not extend through the lower faces.  Retain an
+arbitrary base quintic \(r_5\), arbitrary ternary forms \(r_3,\phi_4,g_2,
+\phi_3\), and an arbitrary quadratic form \(q_2\).  After (8.5), the
+complete possible quartic and cubic layers have the form
+
+\[
+\begin{aligned}
+h_5&=tR^2+r_5,\\
+h_4&=8t^2R+t\,r_3+\phi_4,\\
+h_3&=\delta t^3+t^2L_1+t\,g_2+\phi_3 .
+\end{aligned}
+\]
+
+In the determinant of the Hessian pencil
+\[
+ q_2+\lambda h_3+\lambda^2h_4+\lambda^3h_5+\lambda^4h_6,
+\]
+two exact axis coefficients are
+
+\[
+\begin{aligned}
+ [\lambda^{13}t x^{12}]
+ &=\frac{2}{25}(3\delta-32),\\
+ [\lambda^{11}t^3x^8]
+ &=\frac{64}{25}(99\delta-1040).                       \tag{8.6}
+\end{aligned}
+\]
+
+Every coefficient of \(r_5,r_3,\phi_4,L_1,g_2,\phi_3,q_2\) cancels from
+(8.6).  The first identity forces \(\delta=32/3\), after which the second
+is
+
+\[
+ \frac{1024}{25}\ne0.                                 \tag{8.7}
+\]
+
+> **Theorem `HC4QSE2` — radial Schur-pair prolongation obstruction.**
+> The exceptional pair in `HC4QSE1` does not extend to a
+> constant-Hessian collision, even with completely arbitrary
+> non-invariant lower homogeneous data.
+
+Thus `HC4QSE1` is a genuine exceptional Schur pair but not an `HC_4`
+counterexample.
+
+There is also a complete classification in the even
+permutation-invariant quartic plane.  Write
+
+\[
+ s_4=aR^2+bP_2.
+\]
+
+On the projective chart \(a=1\), introduce the invariant quadratic
+quotient \(qR\) and the deformation coordinates
+
+\[
+ A=\nu-\frac1{10},\qquad
+ B=\mu-3\nu+\frac1{10}.
+\]
+
+The radical of the eight Schur coefficient equations is exactly
+
+\[
+\begin{aligned}
+ &(q-16,b,A,B)\\
+ &\qquad{}\cap
+ (q-16,b+2,10A+1,10B-1).                              \tag{8.8}
+\end{aligned}
+\]
+
+The first point is the radial pair.  The second is
+\((\mu,\nu)=(0,0)\) with
+
+\[
+ s_4=R^2-2P_2=x^4+y^4+m^4,
+\]
+
+the Fermat pair already closed by `HC4QF1`.  The complementary projective
+chart \(a=0\), represented by \(s_4=P_2\), has unit coefficient ideal.
+
+> **Theorem `HC4QSE3` — even symmetric exceptional-locus
+> classification.**  On the projective line of nonzero quartics
+> \(aR^2+bP_2\), the two-parameter surface has exactly the radial and
+> Fermat Schur pairs and no exceptional parameter curve.  Both isolated
+> pairs are excluded at lower faces by `HC4QSE2` and `HC4QF1`.
+
 This statement is deliberately generic.  Saturating the 114-equation
 polynomial family by \(\nu\) did not finish in a bounded 300-second exact
 run, and direct projective-chart Gröbner calculations also exceeded their
 120-second bounds.  Therefore exceptional algebraic curves inside
-\(\nu\ne0\) are not excluded.  The boundary \(\nu=0\) is fully closed by
-`HC4QS1`.
+\(\nu\ne0\) are not excluded.  The radial point above shows that the
+exceptional locus is nonempty, although it does not by itself exhibit an
+exceptional curve.  The boundary \(\nu=0\) is fully closed by `HC4QS1`.
 
 This broadening gives a fairly clear verdict on the method.  The Schur
 face has real merit: rigidity persists for a full quartic over a
@@ -521,6 +665,12 @@ Run:
 .venv/bin/python scripts/verify_hc4_quintic_symmetric_sextic_schur.py
 .venv/bin/python \
   scripts/verify_hc4_quintic_two_parameter_symmetric_schur.py
+.venv/bin/python \
+  scripts/verify_hc4_quintic_radial_exceptional_schur.py
+.venv/bin/python \
+  scripts/verify_hc4_quintic_radial_prolongation.py
+.venv/bin/python \
+  scripts/verify_hc4_quintic_even_symmetric_schur.py
 ```
 
 The checker replays `HC4T31`, verifies every symbolic face, runs the exact
@@ -532,7 +682,14 @@ checker constructs the full 111-equation ideal (7.2), saturates by
 \(\mu\), and verifies all twenty-one fourth-power radical certificates.
 The fourth checker eliminates the quadratic quotient on \(\nu\ne0\),
 constructs the 114 intrinsic equations, and verifies the 117-element
-function-field basis and all fifteen cube certificates (8.3).
+function-field basis and all fifteen cube certificates (8.3).  The fifth
+checker verifies the radial specialization, its nonzero Hessian
+determinant, the exact Schur identity (8.5), and uniqueness of this radial
+quartic on the surface.  The sixth checker keeps
+all lower forms generic and extracts the two sparse determinant
+coefficients (8.6), proving the obstruction (8.7).  The seventh checker
+computes the exact radical decomposition (8.8) and the unit ideal on the
+remaining projective chart.
 
 The scalar Schur identity and the implication from (6.5)--(6.6) to
 \(a=b=c=0\) are also machine-checked in

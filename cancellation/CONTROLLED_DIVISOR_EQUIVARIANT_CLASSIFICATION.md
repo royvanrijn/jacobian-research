@@ -46,8 +46,11 @@ classification force.
 ## Verified literature input
 
 Shaska's paper
-[Graded Keller maps and the Jacobian Conjecture](https://arxiv.org/abs/2607.20210)
-was submitted on 22 July 2026.  It proves over `C` that:
+[Graded Keller maps and the Jacobian Conjecture](https://arxiv.org/abs/2607.20210v2)
+was submitted on 22 July 2026 and revised on 25 July.  The detailed
+version-aware comparison is in the
+[mixed-sign literature reconciliation](../extended-geometry/MIXED_SIGN_GRADINGS_LITERATURE_RECONCILIATION.md).
+The inputs used here are:
 
 1. a `G_m`-equivariant Keller map with all source weights of one sign is an
    automorphism; the target degrees are automatically a permutation of the
@@ -73,9 +76,10 @@ was submitted on 22 July 2026.  It proves over `C` that:
    \tag{1}
    \]
 
-Equation (1) is exactly the proposed quotient starting point.  It is a
-reduction to a plane map with prescribed divisorial Jacobian, not yet a
-classification of that plane map.
+Equation (1) is exactly the proposed quotient starting point.  In v2 it is
+the `r=1,s=2` case of the exponent `r+s-1` for weights `(1,-r,-s)`.
+It is a reduction to a plane map with prescribed divisorial Jacobian, not
+yet a classification of that plane map.
 
 ## The incidence lemma
 

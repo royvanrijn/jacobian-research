@@ -217,10 +217,10 @@ Consequently:
 > **Proposition 6.1.** The common zero fiber of
 > \(\mu_1,\ldots,\mu_{13}\) on \(X_2\) contains a semistable point.
 
-This proposition does not prove that the extra point has exact rank two:
-it could lie on the rank-one boundary, whose uniform finite
-quartic moment--nullcone cutoff is not known. Nor does a zero of thirteen
-moments satisfy the all-order SIC premise.
+By itself this proposition does not determine whether the point has rank
+one or two.  The finite rank-one analysis below closes that ambiguity.
+A zero of thirteen moments still does not satisfy the all-order SIC
+premise.
 
 The boundary problem is itself tightly calibrated. On the rank-one Segre
 cone, \(\mu_1,\ldots,\mu_6\) have exact Jacobian rank six, the dimension
@@ -236,36 +236,160 @@ Hilbert numerator is
 with zero coefficients after degree \(16\) through the checked cutoff. It
 is nonnegative and has coefficient sum \(50\). Thus the first six moments
 are a Hilbert-compatible parameter candidate on rank one.
-The remaining geometry is exactly the finite set of exceptional
-squarefree-quartic cross-ratios left by the generic theorem, together with
-a uniform finite cutoff on the at-most-two-root orbits. A direct generic
-Gröbner basis over \(\mathbb Q(\lambda)\) did not finish within 180
-seconds; a Fitting determinant or exceptional-fiber resultant is the
-better next calculation.
+
+The collided-root strata have short exact cutoffs.  If the symbol has at
+most two roots, normalize it to \(u^rv^{4-r}\).  For \(r=0,4\), the first
+moment cuts out the one-sided hyperplane.  For \(r=1,2,3\), exact
+Gröbner reduction proves that the first four moments have radical equal
+to the expected union of the two one-sided linear loci; eighth powers of
+the radical generators lie in the moment ideal.  The three-root partition
+\((2,1,1)\) is already cut out by the first five moments by the existing
+three-root theorem.
+
+The expected annihilator sections are in the diagonal
+\(\mathrm{SL}_2\)-nullcone.  Indeed, write \(P=\ell^4\) and choose the
+one-parameter subgroup adapted to \(\ell\).  The equation \(A(\ell)=0\)
+removes the unique extremal coefficient of \(A\); every remaining weight
+of \(A\otimes\ell^4\) is then strictly positive.  The at-most-two-root
+and \((2,1,1)\) root-partition strata are therefore closed by finite
+prefixes.  It remains here to treat every squarefree cross-ratio.
+
+There is now a smaller exact squarefree chart. Normalize
+\[
+A=uv(u-v)(u-\lambda v),\qquad e=1,
+\]
+and eliminate \(b\) with \(\mu_1\). The second moment is linear in \(a\);
+after removing a harmless scalar its pivot is
+\[
+p=5c-5(\lambda+1)d+2\lambda^2+8\lambda+2. \tag{6.7}
+\]
+On \(p=0\), exact Gröbner reduction over \(\mathbb Q(\lambda)\) shows that
+\(\mu_2,\ldots,\mu_6\) generate the unit ideal. Thus the generic
+squarefree fiber lies entirely on the principal chart \(p\ne0\), where
+\(\mu_2\) eliminates \(a\).
+
+In the remaining \((c,d)\)-plane the three expected annihilator sections
+have the remarkably small radical ideal
+\[
+\boxed{8c-3d^2=0,\qquad d(d-4)(d-4\lambda)=0.} \tag{6.8}
+\]
+After imposing the first relation, the substituted moments
+\(\mu_3,\mu_4,\mu_5,\mu_6\) contain the cubic factor in (6.8) with
+multiplicities \(1,1,2,2\), respectively. The unresolved generic step is
+settled by a smaller resultant decomposition.  The gcd of all six
+pairwise \(c\)-resultants is
+\[
+d(d-4)(d-4\lambda)q_\lambda(d)^6, \tag{6.9}
+\]
+where \(q_\lambda\) is quadratic in \(d\).  On the component cut out by
+\(q_\lambda\), exact reduction gives \(p^3=0\), so this component is
+absent from the principal chart.  On the other three branches the exact
+Gröbner bases force, respectively,
+\[
+(d,c)=(0,0),\quad(4,6),\quad(4\lambda,6\lambda^2). \tag{6.10}
+\]
+Thus over \(\mathbb Q(\lambda)\) the squarefree six-moment fiber consists
+exactly of the annihilator sections.  Two full generic Gröbner variants,
+a direct
+saturation, and a large fraction-free Bézout solve were slower failed
+routes; they are not mathematical evidence.
+
+Three distinguished special squarefree orbits are also closed.  The
+harmonic orbit has the existing rational representative \(\lambda=2\).
+Over each of the quadratic fields
+\[
+\lambda^2+4\lambda+1=0,\qquad
+\lambda^2-\lambda+1=0, \tag{6.11}
+\]
+the projective moment fiber again has degree four and radical equal to
+the four annihilator sections; every generator of the six-element
+radical basis has its eighth power in the moment ideal.  The first orbit
+is where the pivot meets an expected section, and the second is the
+equianharmonic orbit.  The remaining squarefree task is now precise:
+the pivot-boundary resultant gcd is exactly
+\[
+\lambda^4(\lambda-1)^4
+(\lambda^2+4\lambda+1)(\lambda^2-6\lambda+6)
+(6\lambda^2-6\lambda+1), \tag{6.12}
+\]
+where the three quadratic factors form the already-closed
+pivot-annihilator orbit.  On the three expected \(d\)-branches, shifting
+the expected \(c\)-value and removing the common powers
+\((1,1,2,2)\) gives complete pairwise-resultant gcds.  Besides
+\(\lambda=0,1\) and the same pivot orbit, their only new factors form
+the \(S_3\)-orbit represented by
+\[
+22\lambda^4-54\lambda^3+\lambda^2-54\lambda+22=0. \tag{6.13}
+\]
+An exact computation over this quartic field again gives a degree-four
+fiber with the expected radical and eighth-power certificates.
+
+The specialization problem admits a final, simpler compatibility test.
+Put \(h=8c-3d^2\) and
+\(g=d(d-4)(d-4\lambda)\).  Exact verified modular Gröbner computation
+over \(\mathbb Q\), followed by direct lift identities for both ideal
+containments, gives
+\[
+\begin{aligned}
+(f_3,f_4,f_5,f_6,\;zph-1)&\ni
+  \lambda^4(\lambda-1)^4,\\
+(f_3,f_4,f_5,f_6,\;h,\;zpg-1)&=(1).
+\end{aligned}
+\]
+Hence, for every squarefree \(\lambda\ne0,1\), a pivot-open common zero
+has \(h=g=0\).  The pivot-boundary exceptional gcd (6.12), together with
+the already-certified pivot orbit, handles the complementary chart.
+Thus every squarefree six-moment zero is one of the four annihilator
+sections.
+
+Combining the squarefree result with the finite collided-root cutoffs
+proves:
+
+> **Theorem 6.2.** On the rank-one Segre cone in bidegree \((4,4)\), the
+> common zero locus of \(\mu_1,\ldots,\mu_6\) is contained in the
+> diagonal \(\mathrm{SL}_2\)-nullcone.
+
+Proposition 6.1 now has an exact-rank consequence:
+
+> **Corollary 6.3.** The common zero fiber of
+> \(\mu_1,\ldots,\mu_{13}\) on \(X_2\) contains a semistable point of
+> exact coefficient-matrix rank two.
+
+This is a finite-moment rank-two survivor, not an all-order SIC
+counterexample.
 
 The least degree repair is
 \[
- \boxed{\mu_1,\ldots,\mu_{12},\mu_{14}.} \tag{6.7}
+ \boxed{\mu_1,\ldots,\mu_{12},\mu_{14}.} \tag{6.14}
 \]
 At the same point (6.1), these corrected moments also have exact Jacobian
 rank thirteen. Their Hilbert numerator is nonnegative through degree
-\(100\), with last observed nonzero coefficient in degree \(82\). This is
-a necessary-test result, not a proof that (6.6) is a system of parameters.
+\(100\), with last observed nonzero coefficient in degree \(82\).
+Moreover, its coefficients through degree \(82\) are exactly
+palindromic.  This is the predicted top degree: the square
+rank-at-most-two determinantal ring has \(a\)-invariant \(-5\cdot2=-10\),
+unchanged after taking \(\mathrm{SL}_2\)-invariants, while the degrees in
+(6.14) sum to \(92\).  Thus (6.14) is a Gorenstein-perfect parameter
+candidate.  This remains a necessary-test result, not a proof that
+(6.14) is a system of parameters.
 
 ## 7. Next exact gates
 
-The efficient order is:
+The efficient order is now:
 
-1. start with rank two, whose determinantal quotient has expected affine
-   dimension \(16-3=13\) when the diagonal
-   \(\mathrm{SL}_2\)-stabilizer is finite;
-2. normalize a non-null lowest Clebsch--Gordan component and remove the
+1. start from the exact-rank-two semistable thirteen-moment survivor;
+2. on rank two, whose determinantal quotient has expected affine
+   dimension \(16-3=13\), normalize a non-null lowest
+   Clebsch--Gordan component and remove the
    residual torus before elimination;
-3. use the Hilbert-compatible corrected set
+3. use the Gorenstein-perfect corrected degree set
    \(\mu_1,\ldots,\mu_{12},\mu_{14}\), rather than the impossible
-   consecutive set, and determine its projective zero fiber;
-4. apply (4.3) with fixed low-bidegree multipliers on every survivor; and
-5. only after a global rank-two exclusion, repeat for ranks three and
+   consecutive set, to organize the remaining finite-moment fiber;
+4. seek an exact component or an effective holonomic recurrence upgrading
+   finite pure vanishing to all orders;
+5. apply (4.3) with fixed low-bidegree multipliers on every all-order
+   survivor; and
+6. only after a global rank-two exclusion, repeat for ranks three and
    four.
 
 Promotion to a counterexample requires an exact coefficient field,
@@ -280,6 +404,7 @@ Run
 ```bash
 python3 scripts/verify_two_pair_sic_bidegree44_rank_frontier.py
 python3 scripts/verify_two_pair_sic_bidegree44_rank_two_invariants.py
+.venv/bin/python scripts/verify_two_variable_quartic_squarefree_pivot.py
 ```
 
 The dependency-free checker verifies the chart dimensions, exact
@@ -291,5 +416,17 @@ exploratory rank-two residuals into a theorem.
 The second checker constructs the rank-two moment Jacobian directly,
 proves both displayed rank-thirteen statements modulo a good prime, and
 computes the invariant Hilbert coefficients from the Cauchy and
-Jacobi--Trudi formulas. It verifies the exact obstruction (6.5) and the
-corrected necessary test through degree \(100\).
+Jacobi--Trudi formulas. It verifies the exact obstruction (6.5), the
+corrected necessary test through degree \(100\), and palindromy through
+the predicted Gorenstein top degree \(82\).
+
+The third checker proves the squarefree pivot-boundary unit certificate,
+the two-generator expected affine ideal (6.8), the four exact cubic-factor
+multiplicities, and the generic resultant decomposition (6.9)--(6.10).
+It also closes the pivot-annihilator and equianharmonic quadratic orbits;
+the branch-quartic orbit is closed over its degree-four field, and the
+harmonic orbit is supplied by the separate \(\lambda=2\) anchor.  It
+extracts the complete pivot-boundary and expected-branch exceptional
+gcds. It does not certify the remaining residual-gcd specialization.
+Collided-root quartics are supplied separately by the two-root and
+three-root theorems.
