@@ -1,0 +1,119 @@
+{
+  "schema": "degree42-ritt-cut14-tensor-split-q4.v1",
+  "status": "exact finite base-adic module splitting",
+  "word": [
+    2,
+    3,
+    7
+  ],
+  "thick_composite_omission": 14,
+  "base_order": 4,
+  "normal_order": 1,
+  "source_ideal_cache": "artifacts/generated-results/degree42_ritt_rotated_source_ideals_237.json.gz",
+  "source_ideal_cache_sha256": "8b8c3568c96ae6b3a32eac7ba99f14f15684f92ea87cd69b908ac0b3a5154dac",
+  "matrix_cache": "artifacts/generated-results/degree42_ritt_rotated_tensor_matrices_237_b4_n1.txt.gz",
+  "matrix_cache_sha256": "3508aae269423519ba4c9ecf2dc48990d3fc015de3f4d434149d49a4c2e541ef",
+  "calculation": {
+    "dimensions": {
+      "kernel": 9,
+      "total": 13,
+      "spectator": 4
+    },
+    "splits_as_R_module": true,
+    "one_section": [
+      [
+        "-118219/98",
+        "-9497/49",
+        "29/49",
+        "8/21"
+      ],
+      [
+        "952",
+        "315/2",
+        "0",
+        "-1/4"
+      ],
+      [
+        "-2033/7",
+        "-675/14",
+        "0",
+        "15/196"
+      ],
+      [
+        "68232/49",
+        "20579/98",
+        "-123/98",
+        "-25/84"
+      ],
+      [
+        "4080/7",
+        "682/7",
+        "0",
+        "-15/98"
+      ],
+      [
+        "-451209/49",
+        "-69254/49",
+        "16/49",
+        "0"
+      ],
+      [
+        "-12648/7",
+        "-2040/7",
+        "3/2",
+        "32/49"
+      ],
+      [
+        "5403",
+        "867",
+        "3",
+        "1/2"
+      ],
+      [
+        "-2040",
+        "-360",
+        "-3/2",
+        "0"
+      ],
+      [
+        "3672",
+        "585",
+        "-3/2",
+        "-1/2"
+      ],
+      [
+        "-3570",
+        "-560",
+        "0",
+        "0"
+      ],
+      [
+        "10395",
+        "1596",
+        "0",
+        "0"
+      ],
+      [
+        "3360",
+        "504",
+        "0",
+        "0"
+      ]
+    ],
+    "zero_action_variables": [
+      "n0",
+      "n1",
+      "n2",
+      "n3",
+      "n4",
+      "n5",
+      "n6"
+    ],
+    "coboundary_rank": 32,
+    "augmented_rank": 32,
+    "obstruction_detected": false
+  },
+  "consequence": "The tensor-presented cut-14 first-conormal extension splits over B/(tau,zeta)^4. Its reductions therefore split at every base order at most four.",
+  "theorem_boundary": "A finite-order section does not prove that compatible sections exist at every order or that the completed extension splits.",
+  "reproducing_command": ".venv/bin/python scripts/verify_degree42_ritt_cut14_tensor_split_q4.py"
+}

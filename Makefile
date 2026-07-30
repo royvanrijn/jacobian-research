@@ -60,6 +60,7 @@ ALL_PAPERS := $(VERIFIED_PAPERS) $(PARKED_PAPERS) $(COMPANION_PAPERS)
 	verify-k12-single-defect-quartic-completion \
 	verify-hvc38-cross-frontier \
 	verify-hvc38-gap-closure \
+	verify-hvc38-maximal-block-closure \
 	verify-support-saturation-compiler refresh-support-saturation-cases \
 	verify-degree30-hessian-pairs refresh-degree30-hessian-pairs \
 	verify-contact-r6 verify-contact-branch-schema verify-contact-r7-asymptotic \
@@ -79,6 +80,8 @@ ALL_PAPERS := $(VERIFIED_PAPERS) $(PARKED_PAPERS) $(COMPANION_PAPERS)
 .PHONY: verify-rank-three-collision-descent
 .PHONY: verify-rank-four-collision-cross-ratio
 .PHONY: verify-all-rank-collision-projective-descent
+.PHONY: verify-rank-four-nonprojective-keller-lift
+.PHONY: verify-rank-four-degree-eighteen-target-obstruction
 
 check:
 	$(PYTHON) -m compileall -q jcsearch scripts
@@ -93,6 +96,12 @@ verify-rank-four-collision-cross-ratio:
 
 verify-all-rank-collision-projective-descent:
 	$(PYTHON) scripts/verify_all_rank_collision_projective_descent.py
+
+verify-rank-four-nonprojective-keller-lift:
+	$(PYTHON) scripts/verify_rank_four_nonprojective_keller_lift.py
+
+verify-rank-four-degree-eighteen-target-obstruction:
+	$(PYTHON) scripts/verify_rank_four_degree_eighteen_target_obstruction.py
 
 verify-backward-cubic-reduction:
 	$(PYTHON) scripts/verify_backward_cubic_suite.py
@@ -117,6 +126,9 @@ verify-hvc38-cross-frontier:
 
 verify-hvc38-gap-closure:
 	$(PYTHON) scripts/audit_hvc38_gap_closure.py
+
+verify-hvc38-maximal-block-closure:
+	$(PYTHON) scripts/audit_hvc38_maximal_block_closure.py
 
 verify-support-saturation-compiler:
 	$(PYTHON) scripts/verify_support_saturation_compiler.py

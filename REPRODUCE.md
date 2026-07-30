@@ -155,6 +155,45 @@ every tested rank.  The bounded replay supports the written all-rank
 linear-algebra proof; it does not claim that every Keller equivalence acts
 projectively on the root line.
 
+The first nonprojective rank-four continuation is:
+
+```bash
+.venv/bin/python scripts/verify_rank_four_nonprojective_keller_lift.py
+```
+
+It verifies the exact fifth-power ground-field orbit class, shows why the
+`(1,2,3,4)` quadratic witness carries a separate rational Kummer twist, and
+constructs an arithmetic-neutral witness with seed ratio `4^5`.  It checks
+the explicit source--target scaling to the single fixed map
+`F_(-124416)`, the two endpoint fibers, and their residual target
+translation.  The straight target line has inverse polynomial
+`-(S-12)(S+12)(S^2+24S+108*lambda)/3456`; its discriminant and wrong framed
+sheet partition are checked exactly.  A label-preserving rational path has
+a divergence-free polynomial first-order source lift of degrees
+`(55,53,55)`, while the fixed-map target translation has first-order degrees
+`(31,29,31)`.  All-finite-order liftability is supplied by the separate
+formal-orbit theorem.  At `lambda=-4`, the checker reconstructs the exact
+two-point affine fiber and uses integer-orbit fiber invariance to rule out a
+polynomial lift of the straight target translation.  It does not claim a
+high-degree endpoint self-equivalence: the prime ramified discriminant has
+ordinary degree thirteen, so divisibility and the exact `mu_5` orbit test
+exclude every target candidate through degree twelve.
+
+The next exact frontier requires Singular:
+
+```bash
+.venv/bin/python scripts/verify_rank_four_degree_eighteen_target_obstruction.py
+```
+
+It computes the logarithmic-derivation nullities
+`(0,0,0,0,1,7)` through multiplier degree five.  For target degree at most
+eighteen, the endpoint condition leaves four parameters.  Ten exact
+constant-Jacobian evaluations in those parameters generate the unit ideal
+over `QQ`; Singular returns the reduced basis `[1]`.  This excludes all
+endpoint target symmetries through degree eighteen and leaves degree
+nineteen as the first unresolved case.  It is an exact Gröbner
+inconsistency, not a bounded coefficient search.
+
 Build the Lean interface with:
 
 ```bash
@@ -2051,6 +2090,27 @@ The generated record is
 [`hvc38_gap_closure.json`](artifacts/generated-results/hvc38_gap_closure.json).
 This excludes only the stated bounded pivot algebras and quadratic
 source-target family; it does not prove minimality at dimension 38.
+
+The maximal-block continuation enumerates all six maximal jointly affine
+source blocks of `K12`.  For each block it combines every complementary
+quadratic source shear with all 792 elementary quadratic target directions,
+lifts the complete good-prime high-degree kernel over `QQ`, and verifies a
+linearized rank-six Schur witness.  It then integrates every kernel
+direction into one full triangular source-target family—including
+source-only directions and directions that fail to preserve degree three
+individually—and asks whether the exact degree-three locus can have
+cubic-output rank at most five.  Pinned packets of at most 32 cubic minors
+give unit ideals in Singular:
+
+```bash
+make verify-hvc38-maximal-block-closure
+```
+
+The generated record is
+[`hvc38_maximal_block_closure.json`](artifacts/generated-results/hvc38_maximal_block_closure.json).
+This closes the full quadratic left-right kernel class on all maximal
+jointly affine blocks.  It remains a bounded theorem, not a dimension-38
+minimality result.
 
 The restricted-minima continuation then changes the BCW circuit before
 homogenization: it exposes two polynomial gates, cancels one complete
@@ -4079,6 +4139,7 @@ specialized computations:
 .venv/bin/python scripts/explore_degree42_ritt_rotated_conormal_flags.py --word 327
 .venv/bin/python scripts/verify_degree42_ritt_cut14_postnikov_overlap.py
 .venv/bin/python scripts/verify_degree42_ritt_cut21_postnikov_overlap.py
+.venv/bin/python scripts/verify_degree42_ritt_cut14_tensor_split_q4.py
 ```
 
 They reconstruct the cut-`14` and cut-`21` residual ideals, change to seven
@@ -4106,6 +4167,10 @@ quadratic overlaps for cuts `14` and `21`, and write the corresponding
 `degree42_ritt_cut21_postnikov_overlap.json` artifacts.
 The two rotated-conormal JSON files remain finite-jet computations; the
 separate completed certificates cover both new sectors.
+The final command consumes the compressed order-four action-matrix cache
+and proves that the tensor-presented cut-`14` conormal extension splits
+over `B/(tau,zeta)^4`, with dimensions `9 -> 13 -> 4` and cocycle ranks
+`32=32`.  This is a finite-order result, not a completed splitting theorem.
 
 The last command writes the fully explicit degree-forty-two and
 degree-thirty factor/move/labelled-cell diagrams, the totalized complexes,

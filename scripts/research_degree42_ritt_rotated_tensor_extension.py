@@ -17,6 +17,7 @@ base-changed first-conormal projection, not merely a quotient-ring image.
 from __future__ import annotations
 
 import argparse
+import gzip
 import shutil
 import subprocess
 import sys
@@ -35,13 +36,98 @@ from explore_degree42_ritt_rotated_conormal_flags import (  # noqa: E402
     serialize_ideal,
 )
 from research_degree42_cellular_extension import (  # noqa: E402
-    extension_cocycle_certificate,
+    vector_space_section,
     splitting_solution,
 )
 from research_degree42_tensor_extension import (  # noqa: E402
     module_coordinate_matrix,
     parse_sections,
 )
+
+
+def matrix_cache(
+    word: tuple[int, int, int],
+    base_order: int,
+    normal_order: int,
+) -> Path:
+    """Return the compressed cache for Singular bases and reductions."""
+
+    label = "".join(map(str, word))
+    return (
+        ROOT
+        / "artifacts"
+        / "generated-results"
+        / (
+            f"degree42_ritt_rotated_tensor_matrices_{label}"
+            f"_b{base_order}_n{normal_order}.txt.gz"
+        )
+    )
+
+
+def exact_rank_certificate(
+    inclusion: sp.Matrix,
+    projection: sp.Matrix,
+    sector_actions: tuple[sp.Matrix, ...],
+    total_actions: tuple[sp.Matrix, ...],
+    spectator_actions: tuple[sp.Matrix, ...],
+    action_names: tuple[str, ...],
+) -> dict[str, object]:
+    """Return the adapted cocycle with fraction-free exact rank tests."""
+
+    section = vector_space_section(projection)
+    adapted_basis = inclusion.row_join(section)
+    adapted_inverse = adapted_basis.inv()
+    sector_dimension = inclusion.cols
+    spectator_dimension = section.cols
+    couplings = []
+    for sector_action, total_action, spectator_action in zip(
+        sector_actions, total_actions, spectator_actions
+    ):
+        adapted_action = adapted_inverse * total_action * adapted_basis
+        assert (
+            adapted_action[:sector_dimension, :sector_dimension]
+            == sector_action
+        )
+        assert (
+            adapted_action[sector_dimension:, sector_dimension:]
+            == spectator_action
+        )
+        assert (
+            adapted_action[sector_dimension:, :sector_dimension]
+            == sp.zeros(spectator_dimension, sector_dimension)
+        )
+        couplings.append(
+            adapted_action[:sector_dimension, sector_dimension:]
+        )
+
+    h_variables = sp.symbols(
+        f"h0:{sector_dimension * spectator_dimension}"
+    )
+    correction = sp.Matrix(
+        sector_dimension, spectator_dimension, h_variables
+    )
+    expressions = []
+    for sector_action, spectator_action in zip(
+        sector_actions, spectator_actions
+    ):
+        expressions.extend(
+            sector_action * correction - correction * spectator_action
+        )
+    coboundary, _ = sp.linear_eq_to_matrix(expressions, h_variables)
+    cocycle = sp.Matrix(
+        [value for coupling in couplings for value in coupling]
+    )
+    coboundary_rank = coboundary.to_DM().rank()
+    augmented_rank = coboundary.row_join(-cocycle).to_DM().rank()
+    return {
+        "adapted_coupling": {
+            name: coupling.tolist()
+            for name, coupling in zip(action_names, couplings)
+        },
+        "coboundary_rank": coboundary_rank,
+        "augmented_rank": augmented_rank,
+        "obstruction_detected": augmented_rank > coboundary_rank,
+    }
 
 
 def rotated_singular_output(
@@ -64,6 +150,10 @@ def rotated_singular_output(
         word, factor_variables
     )
     local_variables = normals + base_coordinates
+    cache = matrix_cache(word, base_order, normal_order)
+    if cache.is_file():
+        with gzip.open(cache, "rt") as source:
+            return source.read(), local_variables
     map_images = ",".join(
         str(images[parameter]).replace("**", "^")
         for parameter in parameters
@@ -135,6 +225,8 @@ for (int index_projection=1; index_projection<=ncols(BT); index_projection++)
         check=True,
         timeout=7200,
     )
+    with gzip.open(cache, "wt", compresslevel=9) as target:
+        target.write(result.stdout)
     return result.stdout, local_variables
 
 
@@ -211,7 +303,7 @@ def rotated_tensor_audit(
     splits, section = splitting_solution(
         projection, total_actions, spectator_actions
     )
-    certificate = extension_cocycle_certificate(
+    certificate = exact_rank_certificate(
         kernel,
         projection,
         kernel_actions,
@@ -244,7 +336,9 @@ def rotated_tensor_audit(
             "spectator": len(spectator_basis),
         },
         "splits_as_R_module": splits,
-        "one_section": section.tolist() if section is not None else None,
+        "one_section": (
+            serialized_matrix(section) if section is not None else None
+        ),
         "zero_action_variables": [
             str(symbol)
             for symbol, total_action, spectator_action in zip(

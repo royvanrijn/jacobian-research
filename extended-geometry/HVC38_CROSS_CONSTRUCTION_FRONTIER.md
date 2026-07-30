@@ -221,7 +221,10 @@ excludes the public \(d\)-pivot and local \(z_8\)-pivot through target degree
 eight.  It also derives a seventeen-parameter genuine triangular
 source-target family and proves that its exact degree-three locus never has
 cubic-output rank below six.  Thus the corresponding open items above
-should now be read with those stronger bounds.
+should now be read with those stronger bounds.  The later
+[maximal-block closure](HVC38_MAXIMAL_BLOCK_CLOSURE.md) treats all six
+maximal jointly affine source blocks and every direction in their complete
+finite quadratic left-right kernels.
 
 ## Verification
 

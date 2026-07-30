@@ -1,10 +1,10 @@
-# Rank-four nonprojective Keller descent: arithmetic twist and formal lift
+# Rank-four nonprojective Keller descent: Kummer class, formal lift, and target-symmetry obstructions
 
 ## 0. Result and scope
 
 The rank-four projective-descent theorem leaves the first genuinely
 nonprojective primitive change open.  This note applies that change to the
-quartic quadratic-gauge Keller family and proves three exact statements.
+quartic quadratic-gauge Keller family and proves six exact statements.
 
 1. Over an arbitrary characteristic-zero field, the rank-four
    quadratic-gauge orbit has a precise Kummer descent class in
@@ -19,12 +19,20 @@ quartic quadratic-gauge Keller family and proves three exact statements.
    first-order lift.  The repository's formal-orbit theorem then supplies a
    unique lift to every finite order, and every finite jet has a polynomial
    `SAut(A^3)` representative.
+4. The straight target translation cannot have a polynomial source lift:
+   its \(-4\) iterate takes a four-point fiber to an exact two-point fiber.
+5. More generally, every target component of degree at most twelve is one
+   of the residual \(\mu_5\) symmetries; none carries the two endpoint
+   targets.
+6. The necessary logarithmic-boundary and constant-Jacobian equations have
+   no endpoint solution through target degree eighteen.
 
 This does **not** construct a polynomial automorphism at the endpoint.  The
-remaining question is global algebraization with a prescribed permutation
-of the four collision-frame sheets.  Formal deformation theory, the
-finite-etale conormal module, and the coarse quartic stable invariant cannot
-decide that question.
+remaining question is whether a different, nontranslation target symmetry
+of degree at least nineteen can realize the prescribed permutation of the
+four collision-frame sheets.
+Formal deformation theory, the finite-etale conormal module, and the coarse
+quartic stable invariant cannot decide that question.
 
 ## 1. Credit and provenance
 
@@ -419,6 +427,261 @@ decomposition and would not, by itself, realize the required collision
 frame.  This is the exact distinction between unmarked fiber motion and
 nonprojective framed descent.
 
+### 6.1 A global fiber-orbit obstruction
+
+There is a stronger obstruction to algebraizing the straight translation.
+For any morphism \(F:X\to Y\), if automorphisms \(A\) and \(B\) satisfy
+
+\[
+ F\circ A=B\circ F,                                   \tag{6.7}
+\]
+
+then for every \(m\in\mathbb Z\), \(A^m\) restricts to a
+scheme-theoretic isomorphism
+
+\[
+ F^{-1}(y)\simeq F^{-1}(B^m y).                       \tag{6.8}
+\]
+
+Thus geometric point count, fiber length when finite, and every
+scheme-theoretic fiber invariant are constant along the full
+\(\mathbb Z\)-orbit of \(B\).  This elementary observation is a useful
+general obstruction to lifting a target automorphism through a Keller map.
+
+Apply it to \(B=T_\delta\), \(y=y_{\rm lin}\), and \(m=-4\).  Formula (6.2)
+becomes
+
+\[
+ E_{-4}(S)
+ =-\frac{(S-12)^2(S+12)(S+36)}{3456}.                \tag{6.9}
+\]
+
+For \(\pi\ne0\), every affine source point has
+
+\[
+ E'(S)=\frac1{1+xy}\ne0,                              \tag{6.10}
+\]
+
+and every simple inverse root reconstructs one source point.  Hence the
+repeated root \(S=12\) in (6.9) is missing from the affine fiber, while the
+simple roots \(-36,-12\) reconstruct exactly
+
+\[
+ \left(-\frac94,\frac5{12},-\frac{731}{9}\right),
+ \qquad
+ \left(3,-\frac5{12},-\frac14\right).                 \tag{6.11}
+\]
+
+Therefore
+
+\[
+ \#F_{-124416}^{-1}(y_{\rm lin})=4,\qquad
+ \#F_{-124416}^{-1}(y_{-4})=2.                        \tag{6.12}
+\]
+
+Equations (6.8) and (6.12) are incompatible.  Consequently
+
+\[
+ \boxed{
+ \nexists A\in\operatorname{Aut}(\mathbb A^3):
+ F_{-124416}\circ A=T_\delta\circ F_{-124416}.
+ }                                                       \tag{6.13}
+\]
+
+This proves that the formal target-translation lift (6.6) does not
+algebraize, even without imposing the desired frame permutation.  It does
+not exclude a different polynomial target automorphism taking
+\(y_{\rm lin}\) to \(y_1\).
+
+### 6.2 Exact low-degree target self-equivalence group
+
+The intrinsic decorated-normalization theorem gives a second general
+reduction.  For every compressed quartic \(F_U\) over an algebraically
+closed characteristic-zero field, the residual symmetries
+
+\[
+\begin{aligned}
+ \sigma_\zeta(x,y,z)
+   &=(\zeta x,\zeta^{-1}y,\zeta^{-2}z),\\
+ \tau_\zeta(P,B,C)
+   &=(\zeta^{-2}P,\zeta^{-1}B,\zeta C),
+\end{aligned}
+\qquad \zeta^5=1,                                    \tag{6.14}
+\]
+
+satisfy
+
+\[
+ F_U\circ\sigma_\zeta=\tau_\zeta\circ F_U.            \tag{6.15}
+\]
+
+They are not merely examples among affine-target symmetries.
+
+**Affine-target theorem.**  If polynomial automorphisms \(A,T\) satisfy
+
+\[
+ F_U\circ A=T\circ F_U
+\]
+
+and \(T\) is affine, then
+
+\[
+ (A,T)=(\sigma_\zeta,\tau_\zeta)
+\quad\text{for a unique }\zeta\in\mu_5.               \tag{6.16}
+\]
+
+Indeed, functoriality sends every left--right self-equivalence to an
+automorphism of the intrinsic decorated ramified-normalization stratum.
+That automorphism group is exactly \(\mu_5\).  Compose with the inverse of
+the corresponding pair in (6.14).  The resulting affine target
+automorphism restricts to the identity on the normalization and hence fixes
+the dense prime discriminant hypersurface pointwise.  Each coordinate
+difference from the identity is affine-linear and vanishes on that
+nonlinear hypersurface, so every difference is zero.  The remaining source
+map is target-fixed.  Generic \(S_4\) monodromy makes its deck group
+
+\[
+ N_{S_4}(S_3)/S_3=1,
+\]
+
+so the source map is also the identity.  This proves (6.16).  Over a
+nonclosed field \(K\), the \(K\)-defined affine-target group is
+\(\mu_5(K)\).
+
+The same argument gives much more than the affine case.  Write the prime
+ramified discriminant component as
+
+\[
+ \operatorname{disc}_S(E_{U,(P,B,C)})
+ =-\frac{P^2}{4}H_U(P,B,C).                           \tag{6.17}
+\]
+
+Its defining polynomial has ordinary total degree thirteen, with unique
+top-degree term
+
+\[
+ \operatorname{in}_{13}(H_U)
+ =128U^3P^{10}C^3.                                   \tag{6.18}
+\]
+
+For an arbitrary polynomial target component \(T\), compose off its
+decorated \(\tau_\zeta\) action as above.  The resulting map fixes the prime
+hypersurface \(H_U=0\) pointwise.  Hence every coordinate satisfies
+
+\[
+ T_i-(\tau_\zeta)_i\in(H_U).                          \tag{6.19}
+\]
+
+If one difference is nonzero, its degree is at least
+\(\deg H_U=13\).  If all are zero, deck rigidity recovers
+\((A,T)=(\sigma_\zeta,\tau_\zeta)\).  Therefore
+
+\[
+ \boxed{
+ T=\tau_\zeta\text{ for some }\zeta^5=1
+ \quad\text{or}\quad
+ \deg T\ge13.
+ }                                                       \tag{6.20}
+\]
+
+For the present map,
+
+\[
+ \frac{-124416}{1/2}=(-12)^5,
+\]
+
+so it is rationally in the same quartic class as the small reference map in
+the decorated-normalization theorem.  If
+\(\tau_\zeta(y_{\rm lin})=y_1\), equality of their common nonzero first
+coordinate forces \(\zeta^2=1\).  Together with \(\zeta^5=1\), this gives
+\(\zeta=1\), but then the second and third coordinates do not move.
+Therefore:
+
+\[
+ \boxed{\text{any target symmetry carrying }y_{\rm lin}\text{ to }y_1
+ \text{ has polynomial degree at least thirteen.}}     \tag{6.21}
+\]
+
+This does not classify target automorphisms of degree at least thirteen in
+the kernel of the decorated-boundary action.
+
+### 6.3 Exact exclusion through target degree eighteen
+
+The first degrees allowed by (6.21) reduce to a finite logarithmic system.
+After composing off the residual \(\mu_5\) action, write
+
+\[
+ T=\operatorname{id}+H_UV.                            \tag{6.22}
+\]
+
+If \(\deg T\le18\), then \(\deg V\le5\).  Since an automorphism preserving
+the prime divisor has \(T^*H_U=\rho H_U\), Taylor expansion modulo \(H_U^2\)
+gives the necessary identity
+
+\[
+ V(H_U)-QH_U-\kappa=0,\qquad
+ \deg Q\le\deg V-1.                                   \tag{6.23}
+\]
+
+Exact rational coefficient matrices for (6.23) have nullities
+
+\[
+\begin{array}{c|rrrrrr}
+\deg V\le m&0&1&2&3&4&5\\ \hline
+\dim\mathcal L_m&0&0&0&0&1&7.
+\end{array}                                           \tag{6.24}
+\]
+
+Every solution has \(\kappa=0\).  The endpoint equation is
+
+\[
+ H_U(y_{\rm lin})V(y_{\rm lin})=\delta,\qquad
+ H_U(y_{\rm lin})=-\frac1{16}.                        \tag{6.25}
+\]
+
+The evaluation map from the seven-dimensional space in (6.24) has rank
+three, so (6.25) leaves exactly four affine parameters.
+
+For such a candidate,
+
+\[
+ DT
+ =I+V(\nabla H_U)^T+H_UDV.                           \tag{6.26}
+\]
+
+The equality \(\kappa=0\) makes the normal action along \(H_U=0\) the
+identity.  Thus a polynomial automorphism would have
+\(\det DT=1\).  Evaluate \(\det DT-1\) at the ten target points
+
+\[
+\begin{gathered}
+(1,1,0),(1,0,1),(1,1,1),(-1,1,0),(2,0,0),\\
+(1,-1,2),(2,1,-1),(-1,2,1),(2,-1,1),(-2,1,2).
+\end{gathered}                                        \tag{6.27}
+\]
+
+After primitive denominator clearing, these are ten cubic polynomials in
+the four remaining parameters.  Their exact characteristic-zero Gröbner
+basis in Singular is
+
+\[
+ \boxed{[1].}                                         \tag{6.28}
+\]
+
+Every genuine constant-Jacobian target automorphism would vanish on all ten
+evaluations, so (6.28) is an exact contradiction.  Combining this with the
+\(\mu_5\) endpoint failure proves
+
+\[
+ \boxed{\text{any target symmetry realizing the endpoint frame has }
+ \deg T\ge19.}                                        \tag{6.29}
+\]
+
+This is an exact finite computer-algebra proof over \(\mathbb Q\), not a
+random or bounded-coefficient search.  It uses only necessary equations, so
+their inconsistency is sufficient.  No claim is made in target degree
+nineteen or above.
+
 ## 7. The framed path and its polynomial first-order lift
 
 To retain the desired labels, use
@@ -563,7 +826,13 @@ S_4\text{ labeling}&\text{resolved by the collision frame}\\
   &\text{classified by }U'/U\in\mathbb Q^{\times5}\\
 \text{finite-order source transport}
   &\text{exists uniquely and is polynomial at every jet}\\
-\text{global endpoint transport with the }q\text{-frame}
+\text{straight target-translation lift}
+  &\text{globally impossible by the }-4\text{ fiber drop}\\
+\text{target degree at most }12
+  &\mu_5\text{ exactly; none carries the endpoints}\\
+\text{endpoint target degrees }13\text{ through }18
+  &\text{excluded by logarithmic/Jacobian equations}\\
+\text{target degree at least }19\text{ with the }q\text{-frame}
   &\text{open}.
 \end{array}
 \]
@@ -577,16 +846,24 @@ In particular:
   it, by formal orbit triviality;
 - the straight target line connects the unmarked fibers but has the wrong
   relative sheet decomposition;
+- its target translation has no polynomial lift at all, because an integer
+  iterate changes the fiber cardinality from four to two;
+- every target self-equivalence through degree twelve is in \(\mu_5\), and
+  its endpoint orbit test fails;
+- the exact logarithmic-boundary frontier and ten-point Jacobian unit ideal
+  exclude endpoint target degrees thirteen through eighteen;
 - the obstruction, if one exists, must be global: boundary algebraization,
   filtered polynomial complexity, or a discrete decorated-normalization
   constraint.
 
 The intrinsic torus theorem says that the canonical boundary decoration of
 the small quartic map has automorphism group scheme \(\mu_5\) and no
-infinitesimal automorphisms.  This excludes an algebraic
-\(\mathbb G_m\)-explanation but does not classify discrete or unipotent
-polynomial self-equivalences.  Those are exactly the possibilities left
-relevant here.
+infinitesimal automorphisms.  Section 6.2 upgrades this to a complete
+classification through target degree twelve.  It still does not classify
+degree-at-least-thirteen discrete or unipotent polynomial
+self-equivalences in general, but Section 6.3 excludes their endpoint
+problem through degree eighteen.  The degree-at-least-nineteen
+possibilities are exactly what remains relevant here.
 
 The earlier
 [root-changing suspension audit](../cancellation/ESCAPE_THREE_SUSPENSION_FAMILIES.md)
@@ -598,23 +875,25 @@ coordinate.  Enlarging the root-only Möbius ansatz cannot reach this case.
 
 ## 9. Exact next problem
 
-The minimal endpoint problem is now:
+The straight translation is now excluded by (6.13).  The minimal remaining
+endpoint problem is:
 
-> Determine whether there is a polynomial automorphism
-> \(A\in\operatorname{Aut}_{\mathbb Q}(\mathbb A^3)\), together with the
-> required collision-frame permutation, such that
+> Determine whether there are polynomial automorphisms
+> \(A,T\in\operatorname{Aut}_{\mathbb Q}(\mathbb A^3)\) such that
 > \[
-> F_{-124416}\circ A
-> =T_\delta\circ F_{-124416},
-> \qquad \delta=(0,-1/32,-9),
+> F_{-124416}\circ A=T\circ F_{-124416},\qquad
+> T(y_{\rm lin})=y_1,
 > \]
-> or prove that every such lift violates an intrinsic boundary divisor.
+> and the induced fiber isomorphism realizes (5.11), or prove that every
+> such degree-at-least-nineteen target symmetry violates an intrinsic boundary
+> divisor.
 
-A based algebraization along the straight line has the wrong sheet
-partition, so the search must also account for a discrete fiber
-permutation or a target path with the required monodromy.  A useful bounded
-search should therefore impose the full decorated-normalization action and
-the endpoint permutation before expanding a source automorphism ansatz.
+Any candidate \(T\) must preserve every fiber invariant along its complete
+integer orbit by (6.8).  It must also induce an allowed automorphism of the
+decorated normalization, while (6.29) forces \(\deg T\ge19\).  A useful
+bounded search should impose those orbit and boundary constraints, together
+with the endpoint permutation, before expanding a source automorphism
+ansatz.
 
 ## 10. Exact regression
 
@@ -632,11 +911,27 @@ The checker verifies:
 - the exact source/target scaling (5.7);
 - both endpoint fibers and the residual target translation;
 - the factorization and discriminant of the fixed-map target line;
+- the two-point fiber at \(\lambda=-4\) and the resulting global
+  translation-lift obstruction;
+- the degree-thirteen prime discriminant and residual \(\mu_5\) orbit test
+  used by the low-degree target theorem;
 - the framed rational path and its endpoint data;
 - \(\det DF_U=1\);
 - exact reconstruction of all four source points;
 - both polynomial first-order lifts, their divergences, degrees, term
   counts, and induced root velocities.
 
-It deliberately ends with a scope line stating that endpoint algebraization
-and global self-equivalence remain unproved.
+This first checker deliberately ends with a scope line stating that no
+degree-at-least-thirteen endpoint self-equivalence is claimed.
+
+The exact degree-eighteen continuation requires Singular:
+
+```bash
+.venv/bin/python scripts/verify_rank_four_degree_eighteen_target_obstruction.py
+```
+
+It reconstructs the logarithmic systems through multiplier degree five,
+checks the nullities `(0,0,0,0,1,7)`, imposes the endpoint condition, and
+generates ten exact determinant evaluations in the four surviving
+parameters.  Singular returns the reduced basis `[1]` over `QQ`.  Its scope
+line leaves target degree nineteen and above open.

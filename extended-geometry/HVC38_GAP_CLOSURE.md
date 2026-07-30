@@ -185,6 +185,13 @@ Therefore the degree-three locus never meets the zero locus of this minor.
 Every member of the combined genuine triangular source-target family has
 cubic-output rank at least six.
 
+This seventeen-parameter family does not include the fourteen source-only
+kernel relations, nor does it test finite cancellations involving the five
+directions that fail individually.  The subsequent
+[maximal-block closure](HVC38_MAXIMAL_BLOCK_CLOSURE.md) restores all
+thirty-six directions simultaneously and treats all six maximal jointly
+affine blocks.
+
 ## Consequence and remaining gaps
 
 No \(n+r\le17\) construction is obtained.  The exact new conclusions are:
@@ -199,7 +206,6 @@ No \(n+r\le17\) construction is obtained.  The exact new conclusions are:
 The nearest remaining routes are now materially broader:
 
 - target completion of degree at least nine;
-- a different jointly affine source block or quadratic source basis;
 - nonlinear target generators rather than elementary quadratics;
 - a non-nested state realization with tail score at most seventeen;
 - a symmetric Hessian-nilpotent lift that avoids full dimension doubling.

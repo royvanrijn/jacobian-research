@@ -765,7 +765,23 @@ coordinates `r,u`, projective transport exists exactly when the four
 columns `1,r,u,r*u` have rank at most three.  Its `4`-by-`4` minors define a
 smooth codimension-`N-3` locus, become explicit polynomial equations in the
 universal Keller chart, and show that collision framing removes the finite
-`S_N` ambiguity but not the `N-3` moduli of the root-line embedding.  Any
+`S_N` ambiguity but not the `N-3` moduli of the root-line embedding.  The
+[rank-four nonprojective continuation](verified/RANK_FOUR_NONPROJECTIVE_KELLER_LIFT.md)
+then treats the first transverse direction.  It identifies the exact
+ground-field `K*/(K*)^5` twist, replaces the original witness by a
+rational arithmetic-neutral one, and reduces the comparison to two regular
+fibers of the fixed map `F_(-124416)`.  The desired framed motion has a
+divergence-free polynomial first-order lift and a unique lift to every
+finite order.  A straight finite-etale target line connects the unmarked
+fibers but preserves the wrong sheet decomposition; moreover, its target
+translation has no polynomial source lift because the `-4` iterate drops
+the fiber from four points to two.  The prime discriminant component has
+ordinary degree thirteen, so every target self-equivalence through degree
+twelve is exactly one of the residual `mu_5` actions; their endpoint orbit
+also fails.  The exact logarithmic-boundary space and a four-parameter
+Singular unit-ideal certificate then exclude endpoint degrees thirteen
+through eighteen.  The sharp open problem therefore starts at target degree
+nineteen with the prescribed frame permutation.  Any
 field-versal Keller parameter scheme is separately bounded
 below by `ed(S_N)`.  Promoting all `N-3` relative parameters to unchanged
 coordinates gives, for every `N>=3`, one explicit determinant-one map of
@@ -1606,7 +1622,12 @@ development:
    stated target-completion bounds.  `BCR6` then excludes the two nonlinear
    square pivots through target degree eight and proves that the exact
    degree-three locus of a derived seventeen-parameter triangular
-   source-target family never reaches cubic-output rank five.
+   source-target family never reaches cubic-output rank five.  `BCR9`
+   enumerates all six maximal jointly affine source blocks, restores every
+   omitted source-only and individually obstructed kernel direction, and
+   proves by exact Schur witnesses and Singular unit ideals that none of the
+   six full finite quadratic left-right kernel families reaches
+   cubic-output rank five on its degree-three locus.
 2. `LR1 -> GS1` gives the nonexplicit fixed-dimensional route to
    `not GMC(42)`.
 3. `LR1 -> IV1` gives direct `not SIC(21)`, descends to `not SIC(20)`, and

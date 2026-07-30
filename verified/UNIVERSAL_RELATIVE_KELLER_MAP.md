@@ -919,9 +919,23 @@ within that canonical transport.  The
 identifies `Conf_3` with the full `S_4` frame torsor and computes the exact
 cross-ratio defect
 `q_2^2-q_1q_3+q_2q_3e_1+q_3^2e_2`.  Canonical projective root transport
-exists only on its zero locus; a genuinely nonprojective Keller lift remains
-open off that hypersurface.  Stable coarse classes alone do not settle either
-global question.
+exists only on its zero locus.  The
+[rank-four nonprojective lift theorem](RANK_FOUR_NONPROJECTIVE_KELLER_LIFT.md)
+now treats the first transverse direction formally: it separates the
+ground-field fifth-power twist, gives a rational arithmetic-neutral witness,
+reduces the problem to two fibers of one fixed quartic map, and constructs
+the exact first-order and all-finite-order formal marked lift.  Its straight
+fixed-map target line is finite etale at both endpoints but has the wrong
+collision-frame sheet partition.  The `-4` iterate has only two affine
+fiber points, so fiber-orbit invariance rules out a polynomial lift of the
+straight target translation.  Global polynomial transport remains open only
+from target degree nineteen onward with the prescribed frame permutation:
+the prime discriminant has degree thirteen, every lower-degree target
+self-equivalence is in `mu_5`, and its endpoint orbit fails.  Exact
+logarithmic-boundary ranks and a Singular unit-ideal certificate exclude
+endpoint degrees thirteen through eighteen, so the open range starts at
+degree nineteen.  Stable coarse classes alone do not settle either global
+question.
 
 The
 [all-rank collision-projective theorem](ALL_RANK_COLLISION_PROJECTIVE_DESCENT.md)
@@ -1110,8 +1124,9 @@ Still open:
    presentation-free section of (4.1);
 2. global polynomial extension of the target-localized rank-three
    projective transport, an all-rank lift on the determinantal projective
-   locus, and a rank-four Keller lift of the single nonprojective
-   Tschirnhaus direction transverse to the cross-ratio hypersurface;
+   locus, and a rank-four target symmetry of degree at least nineteen
+   realizing the formally lifted nonprojective direction with its
+   prescribed collision-frame permutation;
 3. the kernel of the braid action after the two jet divisors are removed;
 4. whether an `ed_k(S_N)`-dimensional versal finite-etale family admits any
    compatible relative polynomial Keller lift.
@@ -1188,3 +1203,21 @@ projective and nonprojective witnesses, and the `N-3` independent framed
 residuals through rank ten.  The uniform theorem is the written
 linear-algebra argument; bounded symbolic replay is not substituted for that
 proof.
+
+The rank-four nonprojective continuation is checked by
+
+```bash
+.venv/bin/python scripts/verify_rank_four_nonprojective_keller_lift.py
+```
+
+It verifies the ground-field Kummer class, an arithmetic-neutral primitive
+witness, its exact reduction to one fixed quartic map, the finite-etale
+straight target line and its sheet mismatch, and both polynomial
+first-order lifts.  It also uses the exact two-point fiber at parameter
+`-4` to rule out a polynomial lift of the straight target translation.  The
+prime discriminant has degree thirteen, so every lower-degree target
+self-equivalence is exactly in `mu_5`; its endpoint orbit is also excluded.
+The specialized Singular continuation excludes endpoint target degrees
+thirteen through eighteen.  The all-finite-order conclusion uses the
+separate formal-orbit theorem; no degree-at-least-nineteen endpoint
+automorphism is asserted.

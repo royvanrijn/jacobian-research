@@ -66,6 +66,18 @@ of restriction from polynomial left--right self-equivalences contains no
 positive-dimensional torus. Identity stabilization is outside the claim:
 an added identity factor carries tautological torus actions.
 
+There is one exact discrete consequence for the unstabilized map.  The
+decorated \(\mu_5\) action determines every target component on the prime
+discriminant hypersurface.  Its defining polynomial has ordinary degree
+thirteen, so a coordinate difference of degree at most twelve cannot be a
+nonzero multiple of that polynomial; generic deck rigidity then determines
+the source.  Hence every target component through degree twelve is exactly
+one of the residual \(\mu_5\) actions.  The proof and its application
+excluding the two endpoints of the first nonprojective rank-four lift are
+recorded in the
+[rank-four continuation](../verified/RANK_FOUR_NONPROJECTIVE_KELLER_LIFT.md#62-exact-low-degree-target-self-equivalence-group).
+The degree-at-least-thirteen target kernel remains unclassified.
+
 This last qualification is logically necessary.  For example,
 \(F\times\operatorname{id}_{\mathbb A^1}\) is equivariant for the action
 which fixes the original three coordinates and scales the added coordinate

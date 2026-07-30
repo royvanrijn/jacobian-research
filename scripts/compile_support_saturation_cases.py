@@ -226,7 +226,7 @@ attrib(InputPresentation,"isSB",1);
                     "presentation": "full-reduced-core",
                     "method": "full-order-six/order-seven-saturation",
                     "outcome": "timeout",
-                    "seconds": 1200,
+                    "seconds": 3600,
                 },
             ],
         },

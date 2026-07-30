@@ -745,7 +745,7 @@
       "kind": "theorem",
       "state": "proved",
       "title": "Intrinsic algebraic-torus exclusion for the quartic Keller map",
-      "scope": "For the small determinant-one quartic, the canonical ramified-normalization stratum with its ordered toric punctures and relative-differential Fitting divisor has scheme-theoretic automorphism group mu_5 and zero infinitesimal automorphism algebra. The exact Newton-support audit has two lattice candidates; the ordered second-boundary image rejects the sole involution. Every algebraic G_m left-right action therefore fixes the prime nonnormal discriminant hypersurface pointwise. A weight-space lemma forces the target action to be trivial, and S_4 deck rigidity then forces the source action to be trivial. Hence no polynomial left-right representative of the map is algebraic-torus-equivariant. The polynomially equivalent rational-root seed S(S-1)(S-2)(3S+2) gives a determinant-one four-point representative with expanded supports (7,51,38) and degrees (7,26,24); a symbolic coefficient audit proves support-minimality inside the displayed quartic quadratic-gauge normal form, not under arbitrary polynomial coordinates. A rational left-right scaling lowers maximum expanded coefficient height from 2248704 to 21875 and collision-coordinate height from 24820 to 19856 without changing support. Exact bounded searches over degree-two one-monomial shears, 330 rational source-to-target circuits, all 286 three-term essential jets through exponent 12, and 25281 rational scalings find no smaller support. The unique smallest nonidentity boundary polynomial is the near miss z -> z+(16/7)y^2 with support (7,51,39); its bounded source and target cleanup audits do not lower it. These are computational evidence only. After identity stabilization, every connected action on the pulled-back decoration is vertical over its intrinsic two-torus, but tautological actions on the added affine factors remain; no stable splitting theorem is claimed. This does not classify all discrete or unipotent polynomial self-equivalences or prove geometric-degree minimality among all ungraded maps.",
+      "scope": "For the small determinant-one quartic, the canonical ramified-normalization stratum with its ordered toric punctures and relative-differential Fitting divisor has scheme-theoretic automorphism group mu_5 and zero infinitesimal automorphism algebra. The exact Newton-support audit has two lattice candidates; the ordered second-boundary image rejects the sole involution. Every algebraic G_m left-right action therefore fixes the prime nonnormal discriminant hypersurface pointwise. A weight-space lemma forces the target action to be trivial, and S_4 deck rigidity then forces the source action to be trivial. Hence no polynomial left-right representative of the map is algebraic-torus-equivariant. More generally, the prime decorated discriminant has ordinary degree thirteen, so restriction to it followed by divisibility and S_4 deck rigidity shows that every target component through degree twelve is exactly one of the residual mu_5 symmetries. The polynomially equivalent rational-root seed S(S-1)(S-2)(3S+2) gives a determinant-one four-point representative with expanded supports (7,51,38) and degrees (7,26,24); a symbolic coefficient audit proves support-minimality inside the displayed quartic quadratic-gauge normal form, not under arbitrary polynomial coordinates. A rational left-right scaling lowers maximum expanded coefficient height from 2248704 to 21875 and collision-coordinate height from 24820 to 19856 without changing support. Exact bounded searches over degree-two one-monomial shears, 330 rational source-to-target circuits, all 286 three-term essential jets through exponent 12, and 25281 rational scalings find no smaller support. The unique smallest nonidentity boundary polynomial is the near miss z -> z+(16/7)y^2 with support (7,51,39); its bounded source and target cleanup audits do not lower it. These are computational evidence only. After identity stabilization, every connected action on the pulled-back decoration is vertical over its intrinsic two-torus, but tautological actions on the added affine factors remain; no stable splitting theorem is claimed. This does not classify degree-at-least-thirteen target components of discrete or unipotent polynomial self-equivalences or prove geometric-degree minimality among all ungraded maps.",
       "canonical_source": "cancellation/NO_ALGEBRAIC_TORUS_EQUIVARIANCE.md",
       "dependencies": [
         "LTS1",
@@ -774,7 +774,7 @@
       "kind": "theorem",
       "state": "proved",
       "title": "Quadratic-gauge stable moduli",
-      "scope": "On the degree-N coefficient-torus locus a_3...a_N nonzero, stable polynomial left-right equivalence of quadratic-gauge maps is exactly the explicit two-torus action a_3 -> alpha^-2 beta^-1 a_3 and a_j -> alpha^(1-j) beta^-j a_j for j>=4. The intrinsic normalization Fitting polynomial orders the two toric punctures, removes every P^m twist, and recovers all coefficients modulo that action. The coarse stable-moduli quotient has dimension N-4, not N-3; it is a point with stack stabilizer mu_5 for N=4 and a torus of dimension N-4 for N>=5.",
+      "scope": "On the degree-N coefficient-torus locus a_3...a_N nonzero, stable polynomial left-right equivalence of quadratic-gauge maps is exactly the explicit two-torus action a_3 -> alpha^-2 beta^-1 a_3 and a_j -> alpha^(1-j) beta^-j a_j for j>=4. The intrinsic normalization Fitting polynomial orders the two toric punctures, removes every P^m twist, and recovers all coefficients modulo that action. The coarse stable-moduli quotient has dimension N-4, not N-3; it is a point with stack stabilizer mu_5 for N=4 and a torus of dimension N-4 for N>=5. For rank-four equivalences defined over a characteristic-zero field K, the exact ground-field refinement is ((b4/b3^4)/(a4/a3^4)) in K^(times 5), equivalently the Kummer class in K^times/K^(times 5) vanishes.",
       "canonical_source": "verified/QUADRATIC_GAUGE_STABLE_MODULI.md",
       "dependencies": [
         "RQG1",
@@ -10473,6 +10473,34 @@
       "priority": "derived"
     },
     {
+      "id": "HRCELL12",
+      "kind": "example",
+      "state": "proved",
+      "title": "Cut-fourteen conormal extension splitting through base order four",
+      "scope": "On the normalized degree-42 chart 237, present the cut-14 first-conormal projection K/(I_thick+K^2) -> K/(I_boundary+K^2) before tensoring with B/(tau,zeta)^4. The exact finite module extension has dimensions 9 -> 13 -> 4. All seven graph-normal actions vanish, and an explicit rational section commutes with the tau and zeta actions. Equivalently, the adapted extension cocycle and its coboundary matrix both have rank 32, so no obstruction is detected. Therefore this extension splits through base order four and hence at every lower base order. Independently, exploratory calculations on cut 21 split at base orders two and three, with dimensions 3 -> 5 -> 2 and 6 -> 9 -> 3. These finite splittings do not prove a completed split because compatible sections have not been lifted through every order. They do prove that the cut-6 base-square non-splitting obstruction does not transport uniformly to the rotated sectors.",
+      "canonical_source": "extended-geometry/HESSIAN_RITT_COTANGENT_DESCENT_COMPARISON.md",
+      "dependencies": [
+        "HRCELL3",
+        "HRCELL9",
+        "HRCELL10"
+      ],
+      "checker": "scripts/verify_degree42_ritt_cut14_tensor_split_q4.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:8f015926ae6171d5cc36606f42d2a6f5fb2e21a54b7f4dfe7c5667919f9196a7",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [
+        "uniform transport of the cut-6 base-square non-splitting obstruction to cut 14"
+      ],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
       "id": "COND1",
       "kind": "theorem",
       "state": "proved",
@@ -10532,7 +10560,7 @@
       "kind": "open_problem",
       "state": "open",
       "title": "Vertical imprimitive-specialization loci",
-      "scope": "Replace degree-by-degree elimination by the completed Hessian--Ritt deformation complex. Use tame Ritt--Engstrom relation graphs for reduced power/Dickson components; present the formal intersection as the homotopy limit of the coefficient-decorated factor, move, and labelled cell diagram and compute its cotangent complex by cellular totalization; prove the Hessian lift defect is null-homotopic on every filtered layer; prove relative obstruction vanishing for universal commuting and braid cells; and recover nilpotent thickenings and their power--Dickson boundary gluing from the completed deformation algebra. HR42C separates the degree-42 conormal flag into a z^8 sector layer and a z spectator layer, while HRLL closes reduced degree-30 component completeness. HRCELL1 implements the associated-graded cellular matrices, HRCELL2 finds the first non-split jets, HRCELL3 proves completed ideal-module non-splitting, HRCELL4 proves a nonzero cotangent connecting morphism, HRCELL5 proves first-Postnikov overlap vanishing and separates base-change Tor, HRCELL6 proves arbitrary ideal-flag transitivity, HRCELL7 proves cotangent descent for the full bar diagram and all-chart degree-42 first conormal transport, HRCELL8 writes the complete degree-42/30 diagrams and isolates the order-three filtered extension as the explicit obstruction to the split prototype, HRCELL9 separates the cut-14 and cut-21 sector coefficients through the fourth jet while verifying a uniform spectator profile, and HRCELL10--HRCELL11 prove completed thin/boundary equality and first-Postnikov overlap vanishing on the cut-14 and cut-21 half-braids. In degree thirty the full boundary equals the Dickson ideal, so the spectator cotangent term is zero. The formal transitivity, full-bar descent, prototype success criterion, all-chart first-order transport, and all three completed degree-42 first-Postnikov half-braid comparisons are now closed: the split prototype has H^2=0 in every filtration, but the actual degree-42 coefficient tower is already non-split at order three and its nonlinear sector layers depend on the omitted composite cut. The next geometric task is coefficient effectivity of the extension-retaining finite Ritt compression: transport the cut-14 and cut-21 non-split extension maps and verify the braid restriction map. Further tasks are computation of individual higher cotangent homology, genuine higher Coxeter cells in longer factor words, filtered algebraic obstruction groups of the actual coefficient system, nonreduced terminal-refinement existence, universal commuting/mixed cells, power--Dickson boundary gluing, and later affine-sheet compactification.",
+      "scope": "Replace degree-by-degree elimination by the completed Hessian--Ritt deformation complex. Use tame Ritt--Engstrom relation graphs for reduced power/Dickson components; present the formal intersection as the homotopy limit of the coefficient-decorated factor, move, and labelled cell diagram and compute its cotangent complex by cellular totalization; prove the Hessian lift defect is null-homotopic on every filtered layer; prove relative obstruction vanishing for universal commuting and braid cells; and recover nilpotent thickenings and their power--Dickson boundary gluing from the completed deformation algebra. HR42C separates the degree-42 conormal flag into a z^8 sector layer and a z spectator layer, while HRLL closes reduced degree-30 component completeness. HRCELL1 implements the associated-graded cellular matrices, HRCELL2 finds the first non-split jets, HRCELL3 proves completed ideal-module non-splitting, HRCELL4 proves a nonzero cotangent connecting morphism, HRCELL5 proves first-Postnikov overlap vanishing and separates base-change Tor, HRCELL6 proves arbitrary ideal-flag transitivity, HRCELL7 proves cotangent descent for the full bar diagram and all-chart degree-42 first conormal transport, HRCELL8 writes the complete degree-42/30 diagrams and isolates the order-three filtered extension as the explicit obstruction to the split prototype, HRCELL9 separates the cut-14 and cut-21 sector coefficients through the fourth jet while verifying a uniform spectator profile, HRCELL10--HRCELL11 prove completed thin/boundary equality and first-Postnikov overlap vanishing on the cut-14 and cut-21 half-braids, and HRCELL12 proves that the cut-14 tensor-presented extension splits through base order four rather than inheriting the cut-6 base-square obstruction. In degree thirty the full boundary equals the Dickson ideal, so the spectator cotangent term is zero. The formal transitivity, full-bar descent, prototype success criterion, all-chart first-order transport, and all three completed degree-42 first-Postnikov half-braid comparisons are now closed. The actual cut-6 degree-42 coefficient tower is non-split, but the rotated cut-14 extension is split through order four and the nonlinear sector layers depend on the omitted composite cut. The next geometric task is coefficient effectivity of the finite Ritt compression: solve compatible inverse-limit lifting for the rotated finite-order sections and verify the braid restriction map. Further tasks are computation of individual higher cotangent homology, genuine higher Coxeter cells in longer factor words, filtered algebraic obstruction groups of the actual coefficient system, nonreduced terminal-refinement existence, universal commuting/mixed cells, power--Dickson boundary gluing, and later affine-sheet compactification.",
       "canonical_source": "extended-geometry/HESSIAN_RITT_DEFORMATION_COMPLEX.md",
       "dependencies": [
         "HR12",
@@ -10555,7 +10583,8 @@
         "HRCELL8",
         "HRCELL9",
         "HRCELL10",
-        "HRCELL11"
+        "HRCELL11",
+        "HRCELL12"
       ],
       "checker": null,
       "proof_type": "not-applicable",
@@ -12353,6 +12382,34 @@
       "priority": "derived"
     },
     {
+      "id": "BCR9",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "All-six maximal jointly affine quadratic left-right closure",
+      "scope": "For the BCR2 twelve-variable map K, there are exactly six maximal source-coordinate blocks on which every component is jointly affine: (z4,z6,z9,z10,z11), (z4,z6,z9,z10,z12), (z4,z7,z9,z10,z11), (z4,z7,z9,z10,z12), (z5,z7,z9,z10,z12), and (z3,z5,z7,z9,z10,z11). For each block, combine every quadratic source shear in the complementary variables with all 792 elementary quadratic target directions. The degree-at-least-four good-prime ranks are 911,914,896,898,912,902, with exact rational kernel dimensions 21,18,36,34,20,16; every sparse modular relation rationally reconstructs and cancels exactly, and the degree-at-least-three matrices have full column rank. Five blocks have fixed five-by-five cubic pivots and constant Schur obstruction -2; the six-coordinate block has a fixed four-by-four pivot and constant two-by-two Schur determinant -2, so no linearized family reaches cubic-output rank five. Every kernel direction, including all source-only directions and all directions with individual lambda-squared high-degree obstruction, integrates into a common triangular source-target family. Their exact degree-three loci have respectively 54,27,170,195,101,0 high-degree equations in 21,18,36,34,20,16 parameters. Singular verifies that these equations together with pinned packets of at most 32 six-by-six cubic minors generate the unit ideal in the five nonconstant cases; the last family has constant minor 6. Hence none of the six full finite kernel families reaches cubic-output rank five. This is an exact bounded theorem for the stated quadratic left-right class, not a dimension-38 lower bound.",
+      "canonical_source": "extended-geometry/HVC38_MAXIMAL_BLOCK_CLOSURE.md",
+      "dependencies": [
+        "BCR6"
+      ],
+      "checker": "scripts/audit_hvc38_maximal_block_closure.py",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:326fd4686e498baaf13d3555bfd37b382de3bde6d7bd450d9e3c623ccc25068f",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt",
+        "Singular 4.4.1"
+      ],
+      "supersedes": [
+        "the omitted source-only and individually nonintegrable finite directions in BCR6",
+        "the five unaudited maximal jointly affine source blocks in BCR6"
+      ],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
       "id": "CIO1",
       "kind": "reproduction",
       "state": "proved",
@@ -12409,7 +12466,7 @@
       "kind": "theorem",
       "state": "proved",
       "title": "Rank-four collision frames and projective cross-ratio defect",
-      "scope": "For every rank-four finite-etale cover E/S, the ordered-pair collision cover has rank twelve and pointwise stabilizer S_2, while Conf_3(E/S) is canonically the rank-24 S_4 frame torsor because three disjoint sections have a functorial rank-one complement. On that frame, for a primitive change u=q0+q1*r+q2*r^2+q3*r^3, signed-minor interpolation through the first three roots misses the fourth by -V_4(r)*Psi, where Psi=q2^2-q1*q3+q2*q3*e1+q3^2*e2. The numerator of labeled cross-ratio equality has the same factor, so one PGL_2 transformation matches all four roots exactly on Psi=0. The primitive boundary is independently Theta_4=product_(i<j)(q1+q2*(r_i+r_j)+q3*(r_i^2+r_i*r_j+r_j^2)); a primitive nonprojective quadratic witness and a primitive non-affine projective cubic witness are explicit. On the universal quartic inverse chart E=u4*pi^4*S^4+pi*S^3+b*S^2+S-c/2, the cleared projective equation is u4*pi^4*(q2^2-q1*q3)-pi*q2*q3+b*q3^2=0. Thus collision framing completely resolves finite S_4 labeling, but canonical projective root transport covers only this hypersurface. No claim is made that every Keller-incidence equivalence is projective; a nonprojective Keller lift off the hypersurface remains open.",
+      "scope": "For every rank-four finite-etale cover E/S, the ordered-pair collision cover has rank twelve and pointwise stabilizer S_2, while Conf_3(E/S) is canonically the rank-24 S_4 frame torsor because three disjoint sections have a functorial rank-one complement. On that frame, for a primitive change u=q0+q1*r+q2*r^2+q3*r^3, signed-minor interpolation through the first three roots misses the fourth by -V_4(r)*Psi, where Psi=q2^2-q1*q3+q2*q3*e1+q3^2*e2. The numerator of labeled cross-ratio equality has the same factor, so one PGL_2 transformation matches all four roots exactly on Psi=0. The primitive boundary is independently Theta_4=product_(i<j)(q1+q2*(r_i+r_j)+q3*(r_i^2+r_i*r_j+r_j^2)); a primitive nonprojective quadratic witness and a primitive non-affine projective cubic witness are explicit. On the universal quartic inverse chart E=u4*pi^4*S^4+pi*S^3+b*S^2+S-c/2, the cleared projective equation is u4*pi^4*(q2^2-q1*q3)-pi*q2*q3+b*q3^2=0. Thus collision framing completely resolves finite S_4 labeling, but canonical projective root transport covers only this hypersurface. R4NP1 constructs the exact first-order and all-finite-order formal lift for an arithmetic-neutral nonprojective witness, excludes its straight target translation globally by a four-to-two fiber-orbit drop, and proves that every target self-equivalence through degree twelve is residual mu_5. Endpoint transport from degree thirteen onward and a full descent cocycle remain open.",
       "canonical_source": "verified/RANK_FOUR_COLLISION_CROSS_RATIO.md",
       "dependencies": [
         "URK1",
@@ -12458,6 +12515,67 @@
       ],
       "supersedes": [
         "separate low-rank descriptions of the projective primitive-presentation locus"
+      ],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "R4NP1",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Rank-four nonprojective Keller Kummer reduction, formal lift, and target-symmetry obstructions",
+      "scope": "For quartic quadratic-gauge maps over any characteristic-zero field K, the exact stable ground-field orbit criterion is ((b4/b3^4)/(a4/a3^4)) in K^(times 5), the Kummer form of the geometric mu_5 stabilizer. The primitive nonprojective change r -> r+r^2 on roots 1,2,3,4 has a separate nontrivial rational Kummer twist, while the split witness r=(-6,-3,0,3), u=r+r^2-18 is primitive, nonprojective, and arithmetic-neutral: its compressed seeds are -243/2 and -124416 with ratio 4^5. The explicit rational source-target scaling reduces it to the two regular fibers (-1/144,1/24,0) and (-1/144,1/96,-9) of the single determinant-one map F_(-124416). Their straight target line has inverse polynomial -(S-12)(S+12)(S^2+24S+108*lambda)/3456 and discriminant -(lambda+4)^2(3*lambda-4)^3/1358954496, so it is finite etale at both endpoints, but its constant two-sheet factor does not realize the required quadratic collision-frame labels. A label-preserving rational path has an exact divergence-free polynomial first-order source lift with coordinate degrees (55,53,55), term counts (512,510,612), and induced root velocity r^2-18 at all four reconstructed source points. Formal orbit triviality gives a unique lift to every finite order, with every finite jet represented by a polynomial SAut(A3) curve. The fixed-map target translation separately has a divergence-free first-order lift of degrees (31,29,31), but it cannot lift to a polynomial source automorphism: its -4 iterate sends the four-point start fiber to the exact two-point affine fiber with simple roots -36 and -12. This is an instance of the general fiber-orbit obstruction that every source-target intertwining preserves all scheme-theoretic fiber invariants along integer target orbits. The prime decorated discriminant has ordinary degree thirteen; after its residual mu_5 action is removed, every coordinate difference of a target self-equivalence is divisible by that prime equation. Thus every target self-equivalence through degree twelve is exactly in mu_5. The two endpoint targets are not in one mu_5 orbit, so any remaining endpoint target symmetry has degree at least thirteen. No degree-at-least-thirteen endpoint self-equivalence, prescribed-frame global transport, or full nonprojective descent cocycle is claimed.",
+      "canonical_source": "verified/RANK_FOUR_NONPROJECTIVE_KELLER_LIFT.md",
+      "dependencies": [
+        "CIO1",
+        "FEKC1",
+        "R4CR1",
+        "ARPD1",
+        "RQG3",
+        "O1",
+        "LTS2"
+      ],
+      "checker": "scripts/verify_rank_four_nonprojective_keller_lift.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:3dfb4780db3e15dc1892cbc97712ce9678995ca4ec7a4ccd6bbb8a055900ea90",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [
+        "the undifferentiated rank-four nonprojective normal-direction problem at first and finite formal order"
+      ],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "R4NP2",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Rank-four nonprojective endpoint target-degree-eighteen obstruction",
+      "scope": "For the arithmetic-neutral fixed-map endpoint problem of R4NP1, every Q-defined target self-equivalence outside residual mu_5 has the form T=id+H*V, where H is the prime degree-thirteen ramified-discriminant equation. If deg(T)<=18, preservation of H modulo H^2 forces V(H)-QH-kappa=0 with deg(V)<=5. The exact logarithmic-system nullities for degree bounds zero through five are (0,0,0,0,1,7), and every solution has kappa=0. Since H(y_lin)=-1/16, the endpoint equation H(y_lin)V(y_lin)=delta has evaluation rank three and leaves four parameters. For T=id+HV, ten exact rational target evaluations of det(DT)-1 give cubic equations in those four parameters; their characteristic-zero Singular standard basis is [1]. Hence no polynomial target automorphism of degree at most eighteen can carry y_lin to y_1 in a left-right self-equivalence of F_(-124416), with or without the prescribed frame. Target degree nineteen and above, and the full nonprojective descent cocycle, remain open.",
+      "canonical_source": "verified/RANK_FOUR_NONPROJECTIVE_KELLER_LIFT.md",
+      "dependencies": [
+        "R4NP1",
+        "LTS2",
+        "FEKC1"
+      ],
+      "checker": "scripts/verify_rank_four_degree_eighteen_target_obstruction.py",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:0afbcb8f6a94a919b7dc0158168b89919e0f2274fbcd58bc353101f77713ca4f",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt",
+        "external: Singular 4.4.1 exact Groebner basis over QQ"
+      ],
+      "supersedes": [
+        "target degrees thirteen through eighteen in the R4NP1 endpoint frontier"
       ],
       "replaced_by": [],
       "priority": "derived"

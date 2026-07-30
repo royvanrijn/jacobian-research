@@ -537,6 +537,92 @@ assert line_discriminant.subs(line_parameter, 0) != 0
 assert line_discriminant.subs(line_parameter, 1) != 0
 
 F_1 = compressed_quartic_map(seed_1)
+minus_four_target = tuple(
+    sp.factor(coordinate.subs(line_parameter, -4))
+    for coordinate in line_target
+)
+minus_four_relation = sp.factor(
+    line_relation.subs(line_parameter, -4)
+)
+assert_zero(
+    minus_four_relation
+    + (S - 12) ** 2 * (S + 12) * (S + 36) / 3456
+)
+minus_four_derivative = sp.diff(minus_four_relation, S)
+assert minus_four_derivative.subs(S, 12) == 0
+assert minus_four_derivative.subs(S, -12) != 0
+assert minus_four_derivative.subs(S, -36) != 0
+
+# For pi != 0, source reconstruction exists exactly at the simple inverse
+# roots: on every affine source point E'(S)=1/(1+xy) is a unit.  Hence the
+# lambda=-4 fiber has exactly two points, not four.
+minus_four_source_points = tuple(
+    reconstruct_source(root, seed_1, minus_four_target)
+    for root in (sp.Integer(-36), sp.Integer(-12))
+)
+assert minus_four_source_points == (
+    (sp.Rational(-9, 4), sp.Rational(5, 12), sp.Rational(-731, 9)),
+    (sp.Integer(3), sp.Rational(-5, 12), sp.Rational(-1, 4)),
+)
+for point in minus_four_source_points:
+    assert tuple(
+        sp.factor(component.subs(dict(zip((x, y, z), point))))
+        for component in F_1
+    ) == minus_four_target
+assert len(source_points) == 4
+assert len(minus_four_source_points) == 2
+
+# The intrinsic decorated-boundary theorem identifies the affine-target
+# self-equivalence group with the residual mu_5.  The current map is a
+# rational scaling of its small reference map, and the two endpoint targets
+# are not in one mu_5 orbit.
+assert sp.factor(seed_1 / sp.Rational(1, 2)) == (-12) ** 5
+zeta = sp.symbols("zeta")
+mu5_and_fixed_pi = sp.gcd(
+    sp.Poly(zeta**5 - 1, zeta, domain=sp.QQ),
+    sp.Poly(zeta**2 - 1, zeta, domain=sp.QQ),
+)
+assert mu5_and_fixed_pi.monic().as_expr() == zeta - 1
+assert linearized_target_0 != target_1
+
+# The prime ramified discriminant has ordinary degree thirteen.  Once a
+# residual mu_5 action is removed, every target-coordinate difference is
+# divisible by this polynomial.  Thus every non-mu_5 target symmetry has
+# degree at least thirteen.
+target_pi, target_b, target_c = sp.symbols(
+    "target_pi target_b target_c"
+)
+generic_inverse_relation = (
+    seed_1 * target_pi**4 * S**4
+    + target_pi * S**3
+    + target_b * S**2
+    + S
+    - target_c / 2
+)
+generic_discriminant = sp.factor(
+    sp.discriminant(generic_inverse_relation, S)
+)
+ramified_discriminant = sp.factor(
+    -4 * generic_discriminant / target_pi**2
+)
+ramified_polynomial = sp.Poly(
+    ramified_discriminant,
+    target_pi,
+    target_b,
+    target_c,
+    domain=sp.QQ,
+)
+assert ramified_polynomial.total_degree() == 13
+assert len(ramified_polynomial.terms()) == 16
+top_degree_terms = [
+    (monomial, coefficient)
+    for monomial, coefficient in ramified_polynomial.terms()
+    if sum(monomial) == 13
+]
+assert top_degree_terms == [
+    ((10, 0, 3), 128 * seed_1**3),
+]
+
 jacobian_1 = sp.Matrix(F_1).jacobian((x, y, z))
 translation_field = jacobian_1.adjugate() * sp.Matrix(target_residual)
 translation_field = sp.Matrix(
@@ -589,7 +675,7 @@ assert tuple(line_root_velocities) == (
 constant_start = {-12, 12}
 constant_end = {-12, 12}
 desired_images_of_constant_start = {
-    root**2 / 16 + root / 4 - 18
+    sp.Rational(root**2, 16) + sp.Rational(root, 4) - 18
     for root in constant_start
 }
 assert desired_images_of_constant_start == {-12, -6}
@@ -607,4 +693,7 @@ print("PASS: lift degrees are (55,53,55), with terms (512,510,612)")
 print("PASS: the fixed-map target line is finite etale at both endpoints")
 print("PASS: its formal translation lift has degrees (31,29,31)")
 print("PASS: the straight-line sheet partition does not realize the q-frame")
-print("SCOPE: no endpoint algebraization or global self-equivalence is claimed")
+print("PASS: the lambda=-4 fiber drop forbids a polynomial translation lift")
+print("PASS: no affine-target mu_5 symmetry carries the endpoint targets")
+print("PASS: every remaining target symmetry has degree at least thirteen")
+print("SCOPE: no degree-at-least-thirteen endpoint symmetry is claimed")

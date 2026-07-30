@@ -363,14 +363,24 @@ The next focused program is therefore:
 
 1. extend the rank-three target-local factorization transport to the
    all-rank projective locus and record every boundary denominator;
-2. in rank four, test the single nonprojective normal direction represented
-   by (6.3) against stable boundary, conormal, and normalization invariants;
-3. interpret the resulting first-order equation as the first of the
-   `N-3` residual directions in (4.5), then test whether the construction
-   composes to a polynomial cocycle.
+2. use the
+   [rank-four nonprojective continuation](RANK_FOUR_NONPROJECTIVE_KELLER_LIFT.md),
+   which isolates the ground-field Kummer class, produces a neutral
+   fixed-map endpoint problem, and constructs the exact first-order and
+   all-finite-order formal lift of the single normal direction; its
+   four-to-two fiber-orbit drop also excludes the straight target
+   translation globally;
+3. decide whether a target symmetry of degree at least nineteen realizes
+   the prescribed collision-frame permutation—the prime discriminant has
+   degree thirteen, every lower-degree target symmetry is in `mu_5`, and
+   its endpoint orbit fails, while exact logarithmic/Jacobian equations
+   exclude degrees thirteen through eighteen—then test whether such
+   endpoint lifts compose to a polynomial cocycle;
+4. only after that rank-four gate, treat the other `N-3` residual directions
+   in (4.5).
 
-Until step 2 succeeds, this theorem is a complete projective-descent result,
-not a full Keller-descent theorem.
+Step 2 is now complete formally but not globally.  This theorem remains a
+complete projective-descent result, not a full Keller-descent theorem.
 
 ## 8. Exact regression
 

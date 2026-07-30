@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Screen every maximal jointly affine source block of the local K12 map.
+"""Close every maximal jointly affine quadratic left-right block of K12.
 
 For a jointly affine block J, linearize the coordinated action consisting of
 
@@ -9,14 +9,17 @@ with quadratic q_j, followed by every elementary quadratic target shear.
 The screen records the ranks of the coefficient matrices in source degrees
 at least four and at least three over the good prime 1,000,003.
 
-This is an exploratory calculation.  It identifies blocks worth lifting over
-QQ; by itself it is not a characteristic-zero obstruction theorem.
+Good-prime ranks are paired with explicit rational kernel lifts.  Exact
+Schur witnesses obstruct rank five in every linearized family.  Every kernel
+direction then integrates to a simultaneous triangular source-target family;
+Singular verifies that the exact degree-three equations and pinned packets of
+rank-drop minors generate the unit ideal.
 """
 
 from __future__ import annotations
 
-import argparse
 import itertools
+import hashlib
 import json
 import math
 import shutil
@@ -39,7 +42,7 @@ OUTPUT = (
     ROOT
     / "artifacts"
     / "generated-results"
-    / "hvc38_remaining_blocks_screen.json"
+    / "hvc38_maximal_block_closure.json"
 )
 
 Exponent = tuple[int, ...]
@@ -57,6 +60,89 @@ BLOCKS = (
     (3, 6, 8, 9, 11),
     (4, 6, 8, 9, 11),
     (2, 4, 6, 8, 9, 10),
+)
+
+# The discovery search examined the 455 potentially nonzero base-column
+# minors in each of the two flexible blocks.  These are the 32 sparsest
+# separating packets it selected, recorded one-based for readability.
+PINNED_MINOR_PACKETS = {
+    BLOCKS[2]: (
+        (12, 14, 15, 16, 17, 18),
+        (12, 13, 14, 15, 17, 18),
+        (3, 14, 15, 16, 17, 18),
+        (10, 12, 14, 15, 16, 18),
+        (4, 14, 15, 16, 17, 18),
+        (1, 12, 14, 15, 17, 18),
+        (3, 13, 14, 15, 17, 18),
+        (9, 12, 14, 15, 17, 18),
+        (5, 14, 15, 16, 17, 18),
+        (10, 12, 13, 14, 15, 18),
+        (3, 10, 14, 15, 16, 18),
+        (4, 13, 14, 15, 17, 18),
+        (4, 10, 14, 15, 16, 18),
+        (1, 3, 14, 15, 17, 18),
+        (11, 12, 14, 15, 17, 18),
+        (3, 9, 14, 15, 17, 18),
+        (5, 6, 14, 15, 17, 18),
+        (3, 10, 13, 14, 15, 18),
+        (1, 10, 12, 14, 15, 18),
+        (1, 4, 14, 15, 17, 18),
+        (5, 13, 14, 15, 17, 18),
+        (9, 10, 12, 14, 15, 18),
+        (5, 10, 14, 15, 16, 18),
+        (4, 9, 14, 15, 17, 18),
+        (4, 10, 13, 14, 15, 18),
+        (3, 11, 14, 15, 17, 18),
+        (1, 3, 10, 14, 15, 18),
+        (10, 11, 12, 14, 15, 18),
+        (1, 5, 14, 15, 17, 18),
+        (3, 9, 10, 14, 15, 18),
+        (4, 11, 14, 15, 17, 18),
+        (5, 6, 10, 14, 15, 18),
+    ),
+    BLOCKS[3]: (
+        (12, 14, 15, 16, 17, 18),
+        (10, 12, 14, 15, 16, 18),
+        (12, 13, 14, 15, 17, 18),
+        (3, 14, 15, 16, 17, 18),
+        (3, 10, 14, 15, 16, 18),
+        (4, 14, 15, 16, 17, 18),
+        (10, 12, 13, 14, 15, 18),
+        (1, 12, 14, 15, 17, 18),
+        (4, 10, 14, 15, 16, 18),
+        (3, 13, 14, 15, 17, 18),
+        (5, 14, 15, 16, 17, 18),
+        (9, 12, 14, 15, 17, 18),
+        (5, 10, 14, 15, 16, 18),
+        (4, 13, 14, 15, 17, 18),
+        (1, 10, 12, 14, 15, 18),
+        (9, 10, 12, 14, 15, 18),
+        (3, 10, 13, 14, 15, 18),
+        (5, 6, 14, 15, 17, 18),
+        (1, 3, 14, 15, 17, 18),
+        (11, 12, 14, 15, 17, 18),
+        (3, 9, 14, 15, 17, 18),
+        (5, 6, 10, 14, 15, 18),
+        (4, 10, 13, 14, 15, 18),
+        (5, 13, 14, 15, 17, 18),
+        (1, 4, 14, 15, 17, 18),
+        (1, 3, 10, 14, 15, 18),
+        (3, 9, 10, 14, 15, 18),
+        (10, 11, 12, 14, 15, 18),
+        (4, 9, 14, 15, 17, 18),
+        (3, 11, 14, 15, 17, 18),
+        (5, 10, 13, 14, 15, 18),
+        (1, 5, 14, 15, 17, 18),
+    ),
+}
+
+EXPECTED = (
+    (911, 932, 5, 2, 16, 3, 54, 1),
+    (914, 932, 5, 2, 15, 1, 27, 1),
+    (896, 932, 5, 14, 17, 5, 170, 32),
+    (898, 932, 5, 14, 16, 4, 195, 32),
+    (912, 932, 4, 8, 9, 3, 101, 1),
+    (902, 918, 9, 7, 9, 0, 0, 1),
 )
 
 
@@ -715,7 +801,31 @@ def combined_family_frontier(
     ]
     minor = sp.factor(combined_matrix[:6, pivot_columns].det())
     initial_minor_terms = len(sp.Poly(minor, *parameters).terms())
-    if initial_minor_terms > 8:
+    rank_drop_minors = [minor]
+    rank_drop_minor_positions = [pivot_positions]
+    if block in PINNED_MINOR_PACKETS:
+        rank_drop_minor_positions = [
+            [position - 1 for position in positions]
+            for positions in PINNED_MINOR_PACKETS[block]
+        ]
+        rank_drop_minors = []
+        for positions in rank_drop_minor_positions:
+            columns = [
+                monomials.index(base_monomials[position])
+                for position in positions
+            ]
+            determinant = combined_matrix[:6, columns].det()
+            assert determinant
+            rank_drop_minors.append(
+                sp.Poly(determinant, *parameters).monic().as_expr()
+            )
+        pivot_positions = [1, 5, 13, 14, 16, 17]
+        pivot_columns = [
+            monomials.index(base_monomials[position])
+            for position in pivot_positions
+        ]
+        minor = sp.factor(combined_matrix[:6, pivot_columns].det())
+    elif initial_minor_terms > 8:
         active_base_columns = [
             column
             for column in range(base_matrix.cols)
@@ -746,6 +856,7 @@ def combined_family_frontier(
             pivot_positions,
             minor,
         )
+        candidates: dict[str, tuple[int, int, list[int], sp.Expr]] = {}
         for extra in itertools.combinations(
             optional, 6 - len(mandatory)
         ):
@@ -766,9 +877,23 @@ def combined_family_frontier(
                 candidate_positions,
                 candidate_minor,
             )
+            normalized = polynomial.monic().as_expr()
+            candidates[str(normalized)] = (
+                score[0],
+                score[1],
+                candidate_positions,
+                normalized,
+            )
             if score[:2] < best[:2]:
                 best = score
         _, _, pivot_positions, minor = best
+        selected_candidates = sorted(
+            candidates.values(), key=lambda row: (row[0], row[1])
+        )[:32]
+        rank_drop_minors = [row[3] for row in selected_candidates]
+        rank_drop_minor_positions = [
+            row[2] for row in selected_candidates
+        ]
     active_high_parameters = sorted(
         {
             str(symbol)
@@ -809,10 +934,21 @@ def combined_family_frontier(
         ),
         "pure_power_parameter_constraints": pure_power_constraints,
         "selected_cubic_minor_at_origin": str(base_minor),
+        "selected_base_cubic_column_positions": [
+            position + 1 for position in pivot_positions
+        ],
+        "selected_base_cubic_monomials": [
+            list(base_monomials[position]) for position in pivot_positions
+        ],
         "selected_cubic_minor": str(minor),
         "selected_cubic_minor_total_degree": sp.Poly(
             minor, *parameters
         ).total_degree(),
+        "rank_drop_minor_packet_size": len(rank_drop_minors),
+        "rank_drop_minor_packet_base_column_positions": [
+            [position + 1 for position in positions]
+            for positions in rank_drop_minor_positions
+        ],
     }
     if run_groebner and minor.free_symbols:
         singular = shutil.which("Singular")
@@ -822,7 +958,7 @@ def combined_family_frontier(
             sp.Poly(equation, *parameters, domain=sp.QQ)
             .clear_denoms(convert=True)[1]
             .as_expr()
-            for equation in high + [minor]
+            for equation in high + rank_drop_minors
         ]
         generators = ",\n".join(
             sp.sstr(equation).replace("**", "^")
@@ -850,35 +986,28 @@ else
             check=True,
             timeout=300,
         )
-        assert "UNIT_IDEAL" in completed.stdout, (
-            completed.stdout + completed.stderr + "\n" + program
+        unit_ideal = (
+            "UNIT_IDEAL" in completed.stdout
+            and "NONUNIT_IDEAL" not in completed.stdout
         )
-        assert "NONUNIT_IDEAL" not in completed.stdout, completed.stdout
-        version = subprocess.run(
+        version_line = subprocess.run(
             [singular, "--version"],
             text=True,
             capture_output=True,
             check=True,
         ).stdout.splitlines()[0]
-        result["degree_three_plus_rank_drop_groebner_basis"] = ["1"]
-        result["degree_three_plus_rank_drop_unit_ideal"] = True
+        version = "Singular " + version_line.split(
+            " version ", maxsplit=1
+        )[1].split()[0]
+        result["degree_three_plus_rank_drop_groebner_basis"] = (
+            ["1"] if unit_ideal else ["nonunit"]
+        )
+        result["degree_three_plus_rank_drop_unit_ideal"] = unit_ideal
         result["groebner_engine"] = version
     return result
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser()
-    parser.add_argument(
-        "--groebner-block",
-        type=int,
-        action="append",
-        default=[],
-        help="one-based BLOCKS entry on which to run the rank-drop Groebner test",
-    )
-    arguments = parser.parse_args()
-    groebner_blocks = set(
-        arguments.groebner_block or range(1, len(BLOCKS) + 1)
-    )
     variables, mapping, _ = local_f12()
     for block_number, block in enumerate(BLOCKS, start=1):
         assert jointly_affine(mapping, variables, block)
@@ -913,8 +1042,28 @@ def main() -> None:
             variables,
             block,
             triangular_families,
-            block_number in groebner_blocks,
+            True,
         )
+        expected = EXPECTED[block_number - 1]
+        assert (
+            rank_ge4,
+            rank_ge3,
+            max(len(relation) for relation in relations),
+            len(integrability["source_only_relations"]),
+            len(integrability["target_integrable_relations"]),
+            len(integrability["target_nonintegrable_relations"]),
+            combined_frontier["high_degree_equations"],
+            combined_frontier["rank_drop_minor_packet_size"],
+        ) == expected
+        assert not integrability["multiple_target_term_relations"]
+        assert (
+            integrability["total_triangular_kernel_parameters"]
+            == len(relations)
+        )
+        if combined_frontier["selected_cubic_minor_total_degree"]:
+            assert combined_frontier[
+                "degree_three_plus_rank_drop_unit_ideal"
+            ]
         records.append(
             {
                 "source_coordinates": [
@@ -959,14 +1108,41 @@ def main() -> None:
         )
 
     artifact = {
-        "format": "hvc38-remaining-blocks-screen-v1",
-        "status": "experiment",
+        "format": "hvc38-maximal-block-closure-v1",
+        "status": "exact bounded obstruction theorem",
+        "field": "QQ",
         "good_prime": PRIME,
         "records": records,
+        "conclusion": (
+            "For every maximal jointly affine source block of K12, the "
+            "complete coordinated quadratic-source and elementary-"
+            "quadratic-target linearized kernel has cubic-output rank at "
+            "least six.  After simultaneous triangular integration of "
+            "every kernel direction, its exact degree-three locus still "
+            "has cubic-output rank at least six."
+        ),
+        "scope": (
+            "This closes all six maximal jointly affine blocks for "
+            "quadratic source polynomials in the complementary variables "
+            "and elementary quadratic target generators.  It is not a "
+            "dimension-38 minimality theorem and does not cover "
+            "non-affine source substitutions, higher-degree source or "
+            "target generators, or unrelated constructions."
+        ),
     }
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT.write_text(json.dumps(artifact, indent=2) + "\n")
-    print(f"Wrote {OUTPUT.relative_to(ROOT)}")
+    digest = hashlib.sha256(OUTPUT.read_bytes()).hexdigest()
+    print(
+        "PASS HVC38 maximal blocks: all six exact linearized kernels "
+        "have cubic-output rank at least six"
+    )
+    print(
+        "PASS HVC38 maximal blocks: all six full triangular kernel "
+        "families avoid cubic-output rank five on their degree-three loci"
+    )
+    print(f"PASS wrote {OUTPUT.relative_to(ROOT)}")
+    print(f"SHA256 {digest}")
 
 
 if __name__ == "__main__":

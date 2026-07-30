@@ -79,6 +79,22 @@ This directory contains the stable proof chain:
   chart, and specializes to the automatic cubic and quartic cross-ratio
   results.  It isolates, but does not construct, the genuinely
   nonprojective Keller transport required off this locus.
+- [Rank-four nonprojective Keller descent](RANK_FOUR_NONPROJECTIVE_KELLER_LIFT.md):
+  refines the one-point geometric quartic quotient by its exact
+  `K*/(K*)^5` ground-field class, constructs an
+  arithmetic-neutral primitive quadratic witness, and reduces it to two
+  fibers of the fixed map `F_(-124416)`.  It verifies a finite-etale
+  straight target line, proves that line has the wrong collision-frame
+  sheet partition, and constructs the exact polynomial first-order and
+  all-finite-order formal framed lifts.  The `-4` iterate drops the fiber
+  cardinality from four to two, proving that the straight target translation
+  has no polynomial lift.  The prime discriminant has ordinary degree
+  thirteen, so every target self-equivalence through degree twelve is
+  exactly in `mu_5`, whose endpoint orbit also fails.  An exact
+  logarithmic-boundary reduction and Singular unit-ideal certificate
+  exclude endpoint degrees thirteen through eighteen.  A target symmetry
+  of degree at least nineteen with the prescribed sheet permutation
+  remains open.
 - [Universal atomic-map adversarial audit](UNIVERSAL_ATOMIC_MAP_ADVERSARIAL_AUDIT.md):
   attacks polynomiality, the promoted block Jacobian, generic degree,
   coefficient compilation, finite-etale completeness, monodromy, and stable

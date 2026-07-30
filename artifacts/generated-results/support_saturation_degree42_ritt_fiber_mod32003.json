@@ -132,7 +132,7 @@
         "method": "full-order-six/order-seven-saturation",
         "outcome": "timeout",
         "presentation": "full-reduced-core",
-        "seconds": 1200
+        "seconds": 3600
       }
     ],
     "status": "nonzero_support_witness_certified",

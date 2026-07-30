@@ -78,6 +78,22 @@ one-point quotient asserted here.
 The theorem remains valid over an arbitrary characteristic-zero field after
 interpreting the statement geometrically over its algebraic closure.
 
+### Rank-four ground-field refinement
+
+For equivalences defined over a characteristic-zero field `K`, the residual
+rank-four arithmetic is not lost in the one-point geometric quotient.  If
+`a=(a_3,a_4)` and `b=(b_3,b_4)` are `K`-points, then a stable polynomial
+left--right equivalence over `K` exists exactly when
+
+\[
+ \frac{b_4/b_3^4}{a_4/a_3^4}\in K^{\times5}.           \tag{5a}
+\]
+
+This is the `K*/(K*)^5` Kummer form of the `mu_5` stabilizer.
+The exact descent argument, its source--target scaling, and a rational
+nonprojective witness with trivial Kummer class are recorded in the
+[rank-four nonprojective lift note](RANK_FOUR_NONPROJECTIVE_KELLER_LIFT.md).
+
 ## 1. The overlooked second scaling
 
 Let `F_a` denote the map associated with (1).  For

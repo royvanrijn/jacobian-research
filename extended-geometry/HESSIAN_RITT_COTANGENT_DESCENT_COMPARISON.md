@@ -522,8 +522,27 @@ three degree-forty-two half-braids (cuts \(6,14,21\)).  For each new sector
 the source base-square quotient has dimension three, whereas the \(q=2\)
 quotient-length difference in (6.7) is one; the two-dimensional loss after
 finite base change is Tor, not a completed quadratic overlap.  The
-cut-labelled non-split extension classes and braid restriction coherence
-remain separate obligations.
+extension classes and braid restriction coherence remain separate
+obligations.
+
+The first tensor-presentation transport test changes the expected picture.
+For cut \(14\), tensor the presented conormal projection with
+\(B/(\tau,\zeta)^4\).  Its exact dimensions and cocycle ranks are
+
+\[
+ 0\longrightarrow\mathbf Q^9\longrightarrow\mathbf Q^{13}
+ \longrightarrow\mathbf Q^4\longrightarrow0,\qquad
+ \operatorname{rank}\delta=\operatorname{rank}[\delta\mid c]=32. \tag{6.15}
+\]
+
+An explicit simultaneous section for the \(\tau,\zeta\) actions exists;
+the seven normal actions vanish.  Hence this module extension splits
+through base order four, and therefore through every lower order.  The
+cut-\(21\) calculation independently splits at orders two and three, with
+dimensions \(3\to5\to2\) and \(6\to9\to3\).  These facts do **not** prove a
+completed split: one must still lift compatible sections to every order.
+They do prove that the cut-\(6\) base-square non-splitting obstruction does
+not transport uniformly to the rotated sectors.
 
 ## 7. Result and remaining proof obligation
 
@@ -546,11 +565,12 @@ The comparison problem now has the following exact status.
    power move, Dickson move, commuting square, and labelled braid, followed
    by composition base change.
 
-The next concrete calculation is transport of the cut-labelled non-split
-extension classes and verification that the three completed conormal
-towers intertwine the braid and commuting-cell restrictions.  That would
-promote the local \(H_1\) comparisons to the full degree-forty-two cellular
-coefficient diagram.
+The next concrete calculation is the inverse-limit lifting problem for the
+rotated finite-order sections (starting with cut \(14\) at order five and
+cut \(21\) at order four), followed by verification that the resulting
+completed conormal towers intertwine the braid and commuting-cell
+restrictions.  That would promote the local \(H_1\) comparisons to the full
+degree-forty-two cellular coefficient diagram.
 
 ## Reproduction
 
@@ -560,10 +580,13 @@ Run
 .venv/bin/python scripts/verify_hessian_ritt_cotangent_descent.py
 .venv/bin/python scripts/verify_degree42_ritt_cut14_postnikov_overlap.py
 .venv/bin/python scripts/verify_degree42_ritt_cut21_postnikov_overlap.py
+.venv/bin/python scripts/verify_degree42_ritt_cut14_tensor_split_q4.py
 ```
 
 The commands write
 `artifacts/generated-results/hessian_ritt_cotangent_descent.json`,
 `artifacts/generated-results/degree42_ritt_cut14_postnikov_overlap.json`,
 and
-`artifacts/generated-results/degree42_ritt_cut21_postnikov_overlap.json`.
+`artifacts/generated-results/degree42_ritt_cut21_postnikov_overlap.json`,
+and
+`artifacts/generated-results/degree42_ritt_cut14_tensor_split_q4.json`.

@@ -315,15 +315,31 @@ embedding while retaining enough ambient data.
 No global nonexistence conclusion follows.  A polynomial source--target
 equivalence of the rank-four Keller family could act on the finite fiber by a
 nonprojective cubic interpolation.  The theorem above supplies a minimal
-exact falsification card and a natural two-stratum program:
+exact falsification card.  The
+[nonprojective Keller-lift continuation](RANK_FOUR_NONPROJECTIVE_KELLER_LIFT.md)
+now separates its rational `mu_5` twist, replaces it by an
+arithmetic-neutral witness, reduces the comparison to two fibers of one
+fixed quartic map, and constructs the exact first-order and all-finite-order
+formal marked lift.  It also proves that the straight finite-etale target
+line has the wrong collision-frame sheet partition and that its `-4`
+iterate drops the affine fiber from four points to two, excluding a
+polynomial lift of that target translation.  The updated two-stratum
+program is:
 
 1. on \(\widehat\Psi=0\), attempt the target-localized projective lift and audit
    its boundary denominators;
-2. on \(\widehat\Psi\ne0\), test the witness `q(r)=r+r^2` against stable boundary,
-   conormal, and marked-normalization invariants of the rank-four Keller
-   family;
-3. only promote a global descent claim if those nonprojective transitions
-   acquire an exact polynomial cocycle.
+2. on \(\widehat\Psi\ne0\), decide whether the neutral fixed-map endpoint
+   problem admits a target symmetry of degree at least nineteen with its
+   prescribed frame permutation; the degree-thirteen prime discriminant
+   forces every lower-degree target symmetry into `mu_5`, which fails the
+   endpoint orbit test, and the exact logarithmic/Jacobian unit ideal
+   excludes degrees thirteen through eighteen;
+3. only promote a global descent claim if those endpoint lifts acquire an
+   exact polynomial cocycle.
+
+The new formal lift proves that unrestricted Artin deformation theory cannot
+obstruct step 2.  A proof or construction must use global boundary,
+filtered-complexity, or discrete decorated-normalization data.
 
 ## 8. Exact regression
 

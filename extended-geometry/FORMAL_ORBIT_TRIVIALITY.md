@@ -214,6 +214,38 @@ rational in `t`, or defines an automorphism over a reduced finite-type base.
 
 This is the formal-to-algebraic gap in which the stable moduli can live.
 
+### 3.1 An exact failure of algebraization
+
+The
+[rank-four nonprojective Keller application](../verified/RANK_FOUR_NONPROJECTIVE_KELLER_LIFT.md)
+now gives a concrete instance where the gap is strict.  For the explicit
+determinant-one map \(F_{-124416}\) and target velocity
+
+\[
+ \delta=(0,-1/32,-9),
+\]
+
+the based target translations have the unique formal source lift supplied
+above, and its first coefficient is a divergence-free polynomial field of
+degrees `(31,29,31)`.  Nevertheless there is no polynomial automorphism
+\(A\) with
+
+\[
+ F_{-124416}\circ A=T_\delta\circ F_{-124416}.
+\]
+
+Indeed such an \(A\) would make all fibers on the integer
+\(T_\delta\)-orbit isomorphic.  The start fiber has four points, whereas the
+`-4` iterate has inverse equation
+
+\[
+ -\frac{(S-12)^2(S+12)(S+36)}{3456}
+\]
+
+and exactly two affine source points, coming from its two simple roots.
+Thus compatible polynomial jets at every finite order need not algebraize
+even at one nonzero parameter value.
+
 ## 4. Every finite special jet has a reduced representative in dimension three
 
 Assume now that `char(k)=0`.  Let

@@ -424,6 +424,38 @@ finite-etale collision tower removes all root-label ambiguity, while the
 moduli of the embedded root configuration remain as genuine projective
 obstructions.
 
+The
+[rank-four nonprojective Keller-lift theorem](RANK_FOUR_NONPROJECTIVE_KELLER_LIFT.md)
+applies the first transverse direction to this exact fiber compiler.  It
+shows that the quartic ground-field orbit has Kummer class
+
+\[
+ \frac{U'}U\in K^\times/K^{\times5},
+\]
+
+constructs a rational primitive nonprojective comparison with trivial
+class, and reduces it to two regular fibers of the same map
+`F_(-124416)`.  Those endpoints lie on the explicit finite-etale target
+line
+
+\[
+ -\frac{(S-12)(S+12)(S^2+24S+108\lambda)}{3456},
+\]
+
+but the line's two constant sheets do not realize the required quadratic
+collision-frame labels.  The desired framed motion nevertheless has an
+exact divergence-free polynomial first-order lift and a unique lift to
+every finite order.  At the line parameter `-4`, the inverse polynomial has
+only two simple roots; the resulting four-to-two fiber-cardinality drop
+proves that the straight target translation has no polynomial source lift.
+The prime discriminant component has ordinary degree thirteen, so every
+target self-equivalence through degree twelve is exactly in `mu_5`, and its
+endpoint orbit also fails.  The exact logarithmic-boundary system and a
+four-parameter Singular unit-ideal certificate further exclude endpoint
+degrees thirteen through eighteen.  Global endpoint transport is now open
+only from target degree nineteen onward, with the prescribed sheet
+permutation.
+
 For a product \(A=\prod_iL_i\), tensor distributivity refines the collision
 algebra into the ordered blocks \(L_i\otimes_KL_j\). The cross blocks
 \(i\ne j\) lie entirely in the obstruction, while each diagonal block
