@@ -1,0 +1,243 @@
+{
+  "degree_comparison": {
+    "matched_total_degree_searches": [
+      {
+        "casimirs": [
+          "q_2"
+        ],
+        "degree_sum_matches": 75,
+        "hilbert_compatible_full_rank_matches": 24,
+        "hilbert_compatible_matches": 24,
+        "moment_search_range": [
+          3,
+          24
+        ],
+        "selected_label": "matched_total_q2",
+        "selection_rule": "minimize largest moment order, then degree product, then lexicographic moment-order tuple",
+        "target_total_invariant_degree": 92
+      },
+      {
+        "casimirs": [
+          "q_2",
+          "q_4"
+        ],
+        "degree_sum_matches": 665,
+        "hilbert_compatible_full_rank_matches": 65,
+        "hilbert_compatible_matches": 65,
+        "moment_search_range": [
+          3,
+          24
+        ],
+        "selected_label": "matched_total_q2_q4",
+        "selection_rule": "minimize largest moment order, then degree product, then lexicographic moment-order tuple",
+        "target_total_invariant_degree": 92
+      }
+    ],
+    "mu14_casimir_class_test": {
+      "base_generators": [
+        "mu_1",
+        "mu_2",
+        "mu_3",
+        "mu_4",
+        "mu_5",
+        "mu_6",
+        "mu_7",
+        "mu_8",
+        "mu_9",
+        "mu_10",
+        "mu_11",
+        "mu_12",
+        "q_2"
+      ],
+      "classes_independent_mod_lower_moment_span": true,
+      "degree_14_monomials_total": 293,
+      "interpretation": "If the two classes are independent, there is no identity mu_14=c*q_2^7 modulo the degree-14 part of the ideal (mu_1,...,mu_12) inside the generated algebra Q[mu_1,...,mu_12,q_2]. This does not decide equality of their zero divisors in the full invariant quotient.",
+      "lower_moment_ideal_columns": 292,
+      "prime": 32003,
+      "ranks": {
+        "lower_moment_ideal": 292,
+        "plus_both": 294,
+        "plus_mu14": 293,
+        "plus_q2_power_7": 293
+      },
+      "samples": 297,
+      "weight": 14
+    },
+    "prime": 32003,
+    "status": "exact Hilbert coefficient arithmetic and characteristic-zero Jacobian rank certificates via one good prime",
+    "systems": [
+      {
+        "casimirs": [],
+        "degree_product": 6706022400,
+        "degrees": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          14
+        ],
+        "first_negative_through_cutoff": null,
+        "first_nonzero_after_predicted_top_through_cutoff": null,
+        "hilbert_checked_through_degree": 120,
+        "jacobian_rank_mod_prime": 13,
+        "label": "corrected_moments",
+        "moment_orders": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          14
+        ],
+        "numerator_coefficient_sum_through_predicted_top": 9226602,
+        "predicted_hilbert_numerator_top_degree": 76,
+        "total_invariant_degree": 92
+      },
+      {
+        "casimirs": [
+          "q_2"
+        ],
+        "degree_product": 958003200,
+        "degrees": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          2
+        ],
+        "first_negative_through_cutoff": null,
+        "first_nonzero_after_predicted_top_through_cutoff": null,
+        "hilbert_checked_through_degree": 120,
+        "jacobian_rank_mod_prime": 13,
+        "label": "low_degree_q2",
+        "moment_orders": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "numerator_coefficient_sum_through_predicted_top": 1318086,
+        "predicted_hilbert_numerator_top_degree": 64,
+        "total_invariant_degree": 80
+      },
+      {
+        "casimirs": [
+          "q_2"
+        ],
+        "degree_product": 2641766400,
+        "degrees": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          12,
+          13,
+          14,
+          15,
+          2
+        ],
+        "first_negative_through_cutoff": null,
+        "first_nonzero_after_predicted_top_through_cutoff": null,
+        "hilbert_checked_through_degree": 120,
+        "jacobian_rank_mod_prime": 13,
+        "label": "matched_total_q2",
+        "moment_orders": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          12,
+          13,
+          14,
+          15
+        ],
+        "numerator_coefficient_sum_through_predicted_top": 3634722,
+        "predicted_hilbert_numerator_top_degree": 76,
+        "total_invariant_degree": 92
+      },
+      {
+        "casimirs": [
+          "q_2",
+          "q_4"
+        ],
+        "degree_product": 1509580800,
+        "degrees": [
+          1,
+          2,
+          3,
+          4,
+          6,
+          8,
+          10,
+          12,
+          13,
+          14,
+          15,
+          2,
+          2
+        ],
+        "first_negative_through_cutoff": null,
+        "first_nonzero_after_predicted_top_through_cutoff": null,
+        "hilbert_checked_through_degree": 120,
+        "jacobian_rank_mod_prime": 13,
+        "label": "matched_total_q2_q4",
+        "moment_orders": [
+          1,
+          2,
+          3,
+          4,
+          6,
+          8,
+          10,
+          12,
+          13,
+          14,
+          15
+        ],
+        "numerator_coefficient_sum_through_predicted_top": 2076984,
+        "predicted_hilbert_numerator_top_degree": 76,
+        "total_invariant_degree": 92
+      }
+    ]
+  },
+  "status": "exact parameter comparison plus bounded finite-field zero-fiber probes"
+}
