@@ -1,0 +1,157 @@
+{
+  "schema": "degree42-ritt-inverse-limit-sections-q5-q7.v1",
+  "status": "exact compatible finite section tower",
+  "base_orders": [
+    5,
+    6,
+    7
+  ],
+  "normal_order": 1,
+  "matrix_caches": [
+    {
+      "path": "artifacts/generated-results/degree42_ritt_rotated_tensor_matrices_237_b7_n1.txt.gz",
+      "sha256": "45eacd53ec79de25ba8266fd317dfa30307758d45d7fecf09c3b8c142d29b3d0"
+    },
+    {
+      "path": "artifacts/generated-results/degree42_ritt_rotated_tensor_matrices_327_b7_n1.txt.gz",
+      "sha256": "f0e1d796fc6ca1a6274b82c28af937af5b379653c60d46c74640a40a716d4cd9"
+    }
+  ],
+  "sectors": [
+    {
+      "word": [
+        2,
+        3,
+        7
+      ],
+      "thick_composite_omission": 14,
+      "levels": [
+        {
+          "base_order": 5,
+          "dimensions": {
+            "kernel": 12,
+            "total": 17,
+            "spectator": 5
+          },
+          "splits_as_B_module": true,
+          "coboundary_rank": 55,
+          "augmented_rank": 55,
+          "section_space_dimension": 5
+        },
+        {
+          "base_order": 6,
+          "dimensions": {
+            "kernel": 15,
+            "total": 21,
+            "spectator": 6
+          },
+          "splits_as_B_module": true,
+          "coboundary_rank": 84,
+          "augmented_rank": 84,
+          "section_space_dimension": 6
+        },
+        {
+          "base_order": 7,
+          "dimensions": {
+            "kernel": 18,
+            "total": 25,
+            "spectator": 7
+          },
+          "splits_as_B_module": true,
+          "coboundary_rank": 119,
+          "augmented_rank": 119,
+          "section_space_dimension": 7
+        }
+      ],
+      "transitions": [
+        {
+          "from_order": 6,
+          "to_order": 5,
+          "compatible_section_residual_rank": 0,
+          "homogeneous_source_dimension": 6,
+          "homogeneous_target_dimension": 5,
+          "homogeneous_restriction_rank": 3,
+          "homogeneous_restriction_cokernel_dimension": 2
+        },
+        {
+          "from_order": 7,
+          "to_order": 6,
+          "compatible_section_residual_rank": 0,
+          "homogeneous_source_dimension": 7,
+          "homogeneous_target_dimension": 6,
+          "homogeneous_restriction_rank": 4,
+          "homogeneous_restriction_cokernel_dimension": 2
+        }
+      ]
+    },
+    {
+      "word": [
+        3,
+        2,
+        7
+      ],
+      "thick_composite_omission": 21,
+      "levels": [
+        {
+          "base_order": 5,
+          "dimensions": {
+            "kernel": 12,
+            "total": 17,
+            "spectator": 5
+          },
+          "splits_as_B_module": true,
+          "coboundary_rank": 55,
+          "augmented_rank": 55,
+          "section_space_dimension": 5
+        },
+        {
+          "base_order": 6,
+          "dimensions": {
+            "kernel": 15,
+            "total": 21,
+            "spectator": 6
+          },
+          "splits_as_B_module": true,
+          "coboundary_rank": 84,
+          "augmented_rank": 84,
+          "section_space_dimension": 6
+        },
+        {
+          "base_order": 7,
+          "dimensions": {
+            "kernel": 18,
+            "total": 25,
+            "spectator": 7
+          },
+          "splits_as_B_module": true,
+          "coboundary_rank": 119,
+          "augmented_rank": 119,
+          "section_space_dimension": 7
+        }
+      ],
+      "transitions": [
+        {
+          "from_order": 6,
+          "to_order": 5,
+          "compatible_section_residual_rank": 0,
+          "homogeneous_source_dimension": 6,
+          "homogeneous_target_dimension": 5,
+          "homogeneous_restriction_rank": 3,
+          "homogeneous_restriction_cokernel_dimension": 2
+        },
+        {
+          "from_order": 7,
+          "to_order": 6,
+          "compatible_section_residual_rank": 0,
+          "homogeneous_source_dimension": 7,
+          "homogeneous_target_dimension": 6,
+          "homogeneous_restriction_rank": 4,
+          "homogeneous_restriction_cokernel_dimension": 2
+        }
+      ]
+    }
+  ],
+  "consequence": "Both rotated first-conormal extensions have sections at base orders five, six, and seven that commute exactly with truncation. The finite affine inverse-limit obstruction through order seven is zero.",
+  "theorem_boundary": "This finite tower alone does not prove that the completed extension splits; an all-order Mittag-Leffler, Ext, or braid-restriction calculation is still required.",
+  "reproducing_command": ".venv/bin/python scripts/verify_degree42_ritt_inverse_limit_sections.py"
+}

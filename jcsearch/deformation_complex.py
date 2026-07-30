@@ -252,3 +252,153 @@ class ThreeTermComplex:
             )
             for prime in primes
         }
+
+
+@dataclass(frozen=True)
+class RelativeFiberConnectionComplex:
+    """The bounded canonical fiber-plus-connection complex and its raw data.
+
+    In canonical coordinates ``(S,T,R)``, corrections are triples ``(s,t,a)``
+    and raw defects are
+
+        (s_S+t_T, s_R-a_T, t_R+a_S).
+
+    The returned three-term complex uses coordinates in the kernel of the
+    Bianchi map ``(F,G,H) -> F_R-G_S-H_T`` as its final module.  Keeping the
+    raw matrices here makes boundary-lattice restrictions reproducible
+    without rebuilding the differential in each census script.
+    """
+
+    complex: ThreeTermComplex
+    raw_d1: sp.Matrix
+    bianchi: sp.Matrix
+    closed_basis: sp.Matrix
+
+
+def relative_fiber_connection_complex(
+    gauge_degree: int = 4,
+) -> RelativeFiberConnectionComplex:
+    """Construct the canonical bounded relative complex.
+
+    The correction, defect, and Bianchi degrees are respectively one, two,
+    and three less than ``gauge_degree``.  The default is the exact
+    ``35 -> 60 -> 26`` complex used by the rank-two incidence programme.
+    """
+
+    if gauge_degree < 3:
+        raise ValueError("gauge_degree must be at least three")
+
+    S, T, R = sp.symbols("S T R")
+    variables = (S, T, R)
+    gauge_basis = total_degree_monomials(variables, gauge_degree)
+    scalar_corrections = total_degree_monomials(
+        variables, gauge_degree - 1
+    )
+    scalar_defects = total_degree_monomials(variables, gauge_degree - 2)
+    bianchi_targets = total_degree_monomials(
+        variables, gauge_degree - 3
+    )
+
+    def block_column(*columns: sp.Matrix) -> sp.Matrix:
+        return sp.Matrix.vstack(*columns)
+
+    gauge_columns = []
+    for hamiltonian in gauge_basis:
+        gauge_columns.append(
+            block_column(
+                polynomial_coordinate_column(
+                    -sp.diff(hamiltonian, T),
+                    scalar_corrections,
+                    variables,
+                ),
+                polynomial_coordinate_column(
+                    sp.diff(hamiltonian, S),
+                    scalar_corrections,
+                    variables,
+                ),
+                polynomial_coordinate_column(
+                    -sp.diff(hamiltonian, R),
+                    scalar_corrections,
+                    variables,
+                ),
+            )
+        )
+    d0 = sp.Matrix.hstack(*gauge_columns)
+
+    raw_defect_columns = []
+    for component in range(3):
+        for correction in scalar_corrections:
+            if component == 0:
+                defects = (
+                    sp.diff(correction, S),
+                    sp.diff(correction, R),
+                    sp.Integer(0),
+                )
+            elif component == 1:
+                defects = (
+                    sp.diff(correction, T),
+                    sp.Integer(0),
+                    sp.diff(correction, R),
+                )
+            else:
+                defects = (
+                    sp.Integer(0),
+                    -sp.diff(correction, T),
+                    sp.diff(correction, S),
+                )
+            raw_defect_columns.append(
+                block_column(
+                    *(
+                        polynomial_coordinate_column(
+                            defect,
+                            scalar_defects,
+                            variables,
+                        )
+                        for defect in defects
+                    )
+                )
+            )
+    raw_d1 = sp.Matrix.hstack(*raw_defect_columns)
+
+    bianchi_blocks = (
+        polynomial_action_matrix(
+            scalar_defects,
+            bianchi_targets,
+            variables,
+            lambda polynomial: sp.diff(polynomial, R),
+        ),
+        polynomial_action_matrix(
+            scalar_defects,
+            bianchi_targets,
+            variables,
+            lambda polynomial: -sp.diff(polynomial, S),
+        ),
+        polynomial_action_matrix(
+            scalar_defects,
+            bianchi_targets,
+            variables,
+            lambda polynomial: -sp.diff(polynomial, T),
+        ),
+    )
+    bianchi = sp.Matrix.hstack(*bianchi_blocks)
+    if bianchi * raw_d1 != sp.zeros(bianchi.rows, raw_d1.cols):
+        raise AssertionError("raw defects violate the Bianchi identity")
+
+    closed_basis = sp.Matrix.hstack(*bianchi.nullspace())
+    d1_closed, parameters = closed_basis.gauss_jordan_solve(raw_d1)
+    if list(parameters):
+        raise AssertionError("closed-defect coordinates are not unique")
+    if closed_basis * d1_closed != raw_d1:
+        raise AssertionError("closed-defect coordinate reconstruction failed")
+
+    complex_ = ThreeTermComplex(
+        d0,
+        d1_closed,
+        "relative fiber-plus-connection complex",
+    )
+    return RelativeFiberConnectionComplex(
+        complex=complex_,
+        raw_d1=raw_d1,
+        bianchi=bianchi,
+        closed_basis=closed_basis,
+    )

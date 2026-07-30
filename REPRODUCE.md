@@ -13,6 +13,22 @@ make check
 This compiles the active Python code, checks local Markdown links, and audits
 the single status ledger.
 
+## Checked-in Lean projects
+
+All three local Lean packages use the pinned Lean/Mathlib `v4.32.1` release.
+Build their default targets and audit their source policies with:
+
+```bash
+make verify-lean-local
+```
+
+This rejects `sorry` and `admit` throughout `formal/`, rejects unexpected
+explicit axioms, checks the finite-étale publication-certificate import
+boundary, and builds `discriminant-pencils`, `finite-etale-keller`, and
+`gmc2`.  The GMC(2) package deliberately exposes exactly two mathematical
+inputs as axioms; their names and roles are documented in
+[`formal/gmc2/README.md`](formal/gmc2/README.md).
+
 ## Stable core
 
 ```bash
@@ -83,6 +99,7 @@ remain as a regression:
 
 ```bash
 .venv/bin/python scripts/verify_padic_inverse_branches.py
+.venv/bin/python scripts/verify_foundational_arithmetic_dynamics.py
 .venv/bin/python scripts/verify_composite_degree_twelve.py
 .venv/bin/python scripts/verify_degree_twelve_wreath_elimination.py
 .venv/bin/python scripts/verify_all_degree_rational_fibers.py
@@ -1099,21 +1116,23 @@ Uniform fourth-order continuation on that `P6` is the next open calculation.
 These are statements about the displayed classical symbol only; they do not
 prove `(DC_2)`.
 
-The separately authored Lean certificate is optional because it downloads a
-pinned toolchain:
+The separately authored foundational Lean certificate is optional because it
+downloads an external pinned checkout:
 
 ```bash
 make verify-lean-foundational
 ```
 
 GitHub Actions runs this target in the required `formal-lean` job using the
-pinned upstream commit and Lean action.  The `papers` job compiles the
+pinned upstream commit and Lean action.  The `formal-local-lean` job
+audits both publication certificates and runs `make verify-lean-local`, so
+every checked-in Lean package is built.  The `papers` job compiles the
 finalized and active manuscripts listed in `papers/README.md`, while parked
 manuscripts remain available for direct local builds.  The
-`macaulay2-independent-check` runs the pinned
-Macaulay2 comparison.  Together with the four Python matrix jobs, these are
-the complete CI verification pipeline.  The final `verification-complete`
-job is the single aggregation check intended for GitHub branch protection.
+`macaulay2-independent-check` runs the pinned Macaulay2 comparison.  Together
+with the four Python matrix jobs, these are the complete CI verification
+pipeline.  The final `verification-complete` job is the single aggregation
+check intended for GitHub branch protection.
 
 ## Cancellation programme
 
@@ -1194,6 +1213,26 @@ cubic certificate:
 ```bash
 make verify-minimal-boundary
 ```
+
+The eight-predicate invariant pipeline on finite canonical-normalization
+exports has its own dependency-light target:
+
+```bash
+make verify-minimal-boundary-pipeline
+```
+
+It checks weighted degrees `3,...,8`, six cancellation parameter pairs,
+quadratic-gauge degrees `3,...,8`, five single-defect perturbation/spectator
+records, and a relabeling/order blindness regression.  Regenerate
+`artifacts/generated-results/minimal_boundary_pipeline.json` with
+
+```bash
+.venv/bin/python scripts/verify_minimal_boundary_pipeline.py \
+  --write-artifact
+```
+
+This target starts from exact finite exports; it does not compute a canonical
+normalization or its intrinsic marking from a bare polynomial map.
 
 It proves that the weighted geometric-degree-three seed has no modulus, that
 the cancellation degree equation forces `(m,r)=(1,1)` and `h=3+9A`, and that
@@ -1727,6 +1766,7 @@ identities are checked exactly by
 .venv/bin/python scripts/verify_generic_affine_mark_faithfulness.py
 .venv/bin/python scripts/verify_intrinsic_selector_attack.py
 .venv/bin/python scripts/verify_hasse_typical_seed_recovery.py
+python3 scripts/verify_positive_characteristic_deformation_landscape.py
 .venv/bin/python scripts/verify_multicluster_ll_comparison.py
 .venv/bin/python scripts/verify_labelled_node_saturation.py
 .venv/bin/python scripts/verify_branch_wonderful_pullback.py
@@ -3087,6 +3127,30 @@ and four remain open; finite rank-two residuals are not treated as an
 exact counterexample or a lower bound. See
 [`TWO_PAIR_SIC_BIDEGREE44_RANK_FRONTIER.md`](extended-geometry/TWO_PAIR_SIC_BIDEGREE44_RANK_FRONTIER.md).
 
+The cross-degree rank-stratified finite-prefix census is replayed by
+
+```bash
+python3 scripts/verify_rank_stratified_moment_census.py
+```
+
+For every determinantal rank stratum through rank four in balanced
+degrees two through four, the checker computes the exact
+diagonal-\(\mathrm{SL}_2\) invariant Hilbert coefficients through degree
+\(85\) and a good-prime Jacobian of the dimension-sized consecutive
+moment system. It recovers the certified degree-four rank-two coefficient
+\(-5266\) and ambient degree-three coefficient \(-2186\). The new
+rank-two cubic calculation has full nine-moment Jacobian and
+\[
+[t^{29}]H_{3,2}(t)\prod_{m=1}^{9}(1-t^m)=-58.
+\]
+Since the first four moments already cut the cubic rank-one Segre cone
+down to the nullcone, the resulting semistable nine-moment point has
+exact coefficient rank two. It is existential and finite-prefix only.
+The first tested single replacement with full Jacobian and a nonnegative
+candidate numerator through degree \(85\) is
+\(\mu_1,\ldots,\mu_8,\mu_{12}\); orders ten and eleven do not pass. See
+[`RANK_STRATIFIED_MOMENT_PROGRAM.md`](extended-geometry/RANK_STRATIFIED_MOMENT_PROGRAM.md).
+
 The second checker works on the sixteen-dimensional rank-at-most-two
 determinantal variety. At one exact rank-two factor chart it proves modulo
 the good prime \(1000003\) that both
@@ -4199,6 +4263,25 @@ separated one-chart ansatz; multi-chart and ambient-coupled conductors remain
 open.  The result is
 `artifacts/generated-results/conductor_first_one_chart_obstruction.json`.
 
+The smallest symmetric ambient-coupled escape is replayed by
+
+```bash
+.venv/bin/python scripts/verify_conductor_three_boundary_cox_fill.py
+```
+
+It replaces the conductor localization by the three-prime fill
+`x*y*z=c(t)`, with `c=t(t-1)` for the node and `c=t^2` for the cusp.
+Singular verifies the descended hypersurface equations, smoothness of the
+nodal normalization, and the exact three-axis singular locus of the
+cuspidal normalization.  The remaining exact checks show that the marked
+root and reconstruction equations descend polynomially, but the descended
+dualizing form pulls back as `Omega_norm/(x*y*z)`.  Affine-space recognition
+then fails: the smooth nodal fill has Hodge--Deligne polynomial
+`(uv)^3+2(uv)^2-uv`, while the normal cuspidal fill is singular.  This is an
+obstruction for the symmetric Cox-product ansatz, not for asymmetric affine
+modifications or a distributed target conductor ledger.  The result is
+`artifacts/generated-results/conductor_three_boundary_cox_fill.json`.
+
 The general affine boundary-obstruction regressions are:
 
 ```bash
@@ -4551,6 +4634,23 @@ part of the public proof navigation.  Existing generated artifacts live under
 `artifacts/generated-results/`; historical search tools are preserved under
 `archive/tooling/`.
 
+## Cyclic and dihedral absolute inverse-Galois audit
+
+The first Programme 3 checker replays the Dickson power-sum recurrence,
+primitive derivative, reduced-branch pullback, and odd/even discriminant
+formulas through degree twelve.  It also checks the low-degree \(D_3,D_4,D_5\)
+cards and the determinant-minus-one derivative-unit suspension:
+
+```bash
+.venv/bin/python scripts/verify_cyclic_dihedral_keller_audit.py
+```
+
+The all-degree proof and the distinction between geometric and arithmetic
+monodromy are in
+[`extended-geometry/ABSOLUTE_INVERSE_GALOIS_CYCLIC_DIHEDRAL_AUDIT.md`](extended-geometry/ABSOLUTE_INVERSE_GALOIS_CYCLIC_DIHEDRAL_AUDIT.md).
+The bounded replay is a regression certificate, not an exhaustive proof over
+all degrees.
+
 ## \(A_4\) Keller inverse-Galois frontier
 
 The pure-target ledger, two-mask factorization, normalized-boundary
@@ -4567,6 +4667,8 @@ assembly, and root-incidence derivative-split checks are:
 .venv/bin/python scripts/verify_a4_corrected_boundary_selector.py
 .venv/bin/python scripts/verify_a4_boundary_coloring_surgery.py
 Singular -q scripts/verify_a4_corrected_boundary_genus.sing
+.venv/bin/python scripts/verify_a4_genus_zero_selector_search.py
+Singular -q scripts/verify_a4_genus_zero_selector_search.sing
 ```
 
 The normalized-boundary command verifies the determinant-one ambient
@@ -4614,7 +4716,34 @@ degree-16 `Hhat` norm as 13, verifies
 `Norm(Lchi)=chi*q14`, and computes genus 20 for the degree-14 component.
 Since a smooth completion of `A2` has only rational boundary components,
 either positive-genus divisor rules out the surviving `B`-free complement
-as an affine plane.
+as an affine plane.  The bounded genus-zero search computes the complete
+ordinary-total-degree-three valuation spaces in selected-root degrees one
+and two.  It verifies four new exact root-linear selectors and proves that
+every exact selector in this ansatz has horizontal norm degree at least
+sixteen; root-quadratic terms start at norm degree twenty-four.  The bound
+is sharp.  The accompanying Singular command verifies irreducible
+degree-sixteen norms of genera twelve and fourteen for two sharp
+representatives and genus twelve for one displayed `a^3` perturbation.
+Those samples do not classify the remaining degree-sixteen parameter plane,
+so no rational selector or affine reconstruction is claimed.
+
+### Davenport alternating coefficient pencils
+
+The first coefficient class beyond AS14--AS17, and the stronger
+all-length-two obstruction, are replayed by:
+
+```bash
+.venv/bin/python scripts/verify_davenport_independent_marked_line.py
+```
+
+The checker forms the general quadratic--quadratic alternating Jung
+coordinate with all translations and lower coefficients present, saturates
+the four highest fiber coefficients at the outer quadratic leading
+coefficient, and obtains the unit ideal over
+`Q[a]/(a^2+a+2)`.  It then proves the unbounded length-two statement from
+the three exact Newton-leading coefficients.  These are exact symbolic
+obstructions, not bounded searches.  No unit-gate solution survives, so no
+candidate is promoted to the nonlinear-`U` translated-incidence equations.
 
 ## Plane degree-frontier audit
 
@@ -4823,6 +4952,30 @@ and monomial conductor quotient; the independent Singular command computes
 the cusp normalization and conductor and verifies normality of the
 determinantal overring.
 
+The conductor-decorated endpoint-semigroup continuation is:
+
+```bash
+.venv/bin/python plane-jc/cas/experiment_quartic_endpoint_semigroups.py \
+  --max-connectors 4 \
+  --max-pole 8 \
+  --max-contact 8 \
+  --cutoff 12 \
+  --output artifacts/generated-results/quartic_endpoint_semigroups.json
+```
+
+For each bounded connector row it computes the cusp semigroup
+`<2,3>`, the displayed connector polar-bound monoid, the exact signed
+two-endpoint valuation semigroup
+`{(u,v) in Z^2 : u+v<=0}`, the residue completion, the conductor endpoint
+pairing, and the odd-square contact vector.  It also replays the 24 cusp
+braid pairs and three connector sheet matchings and checks the rank-one
+graded bridge.  The output is a bounded feasibility report, not a quartic
+exclusion.  The uniform carrier
+`(y^2-x^3)*product_i(x*y-y^(n_i+1)-lambda_i)` proves that the listed inputs,
+even with conductor pairing restored, do not bound connector count,
+displayed pole parameters, or completed contact.  See
+[`plane-jc/QUARTIC_ENDPOINT_SEMIGROUP_EXPERIMENT.md`](plane-jc/QUARTIC_ENDPOINT_SEMIGROUP_EXPERIMENT.md).
+
 The exact chart-aware boundary localization/Smith-normal-form prefilter is:
 
 ```bash
@@ -4891,6 +5044,23 @@ versions, the full replay command, and the independent hard-certificate
 command are in
 [`plane-jc/cas/README.md`](plane-jc/cas/README.md).  The independent checker
 does not import the primary CAS or generation modules.
+
+## Shared `JC_2`--`HC_4` isotropic boundary bridge
+
+The combined programme is
+[`JC2_HC4_SHARED_BOUNDARY_PROGRAM.md`](JC2_HC4_SHARED_BOUNDARY_PROGRAM.md).
+Its exact first calculation identifies the cotangent determinant
+\(\det\operatorname{Hess}(tP+mQ+H)=J(P,Q)^2\), the first isotropic Schur
+remainder \(-\Phi_{mm}R(P)\), and the quartic packet's reduced conormal
+residue \(2\ell\).  Run:
+
+```bash
+.venv/bin/python scripts/verify_jc2_hc4_isotropic_boundary_bridge.py
+```
+
+This does not verify isotropic-flag recognition for an arbitrary
+four-variable potential or nonvanishing of the proposed paired
+initial-conormal class.
 
 ## Direct Schur-descent audit for `HC_4`
 
@@ -5063,6 +5233,29 @@ chain-rule evaluation of the transformed Hessian gives unequal determinant
 values at integer points for every word.  Thus every parent determinant is
 nonconstant in characteristic zero and there are no survivors requiring
 potential expansion.  This finite parent obstruction is `HC4MCP7`.
+
+The smallest reciprocal mixed-line coisotropic graph box is:
+
+```bash
+.venv/bin/python \
+  scripts/search_hc4_noncoordinate_coisotropic_scalar_gate.py \
+  --output \
+  artifacts/generated-results/hc4_noncoordinate_coisotropic_scalar_gate.json
+```
+
+For ordered `i != j`, it takes
+`K=q_i+rho*p_j`, `L=q_j+rho*p_i`, and `H=tau*K*L^2`.
+The commuting mixed forms make the time-one flow polynomial and send
+`p_i=0` to a nonlinear reciprocal mixed graph.  In the boxes
+`rho,tau in {-2,-1,1,2}`, `lambda in {-1,1}`, and
+`mu in {-1,0,1}`, the 96 charts have 128 affine scalar pivots.  All 768
+graph-specialized scalar Schur remainders have exact nonconstancy witnesses
+modulo `1000003`.  The post-gate audit also proves that all 96 parent
+Hessian determinants are nonconstant.  Thus no collision-transfer or full
+descended-determinant calculation is reached.  This is the bounded result
+`HC4MCP8`; arbitrary rational parameters and general coisotropic embeddings
+remain open.  See
+[`HC4_NONCOORDINATE_COISOTROPIC_GATE.md`](HC4_NONCOORDINATE_COISOTROPIC_GATE.md).
 
 The direct one-variable calculation for the `PC(2)` graph is:
 

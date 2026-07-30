@@ -1,0 +1,70 @@
+// Verify geometric genera on the first sharp degree-16 A4 selector stratum.
+
+LIB "normal.lib";
+
+ring root_ring=0,(T,a,b),dp;
+
+poly B=
+    a^3-3*a*b^2+2*b^3-9*a*b+9*b^2-27*a+27*b+27;
+poly A=a^3-b^3-9*b^2-27*b-54;
+poly C=a^3-b^3+27;
+poly P=
+    T^4
+    -6*A*B*T^2
+    -8*B^3*T
+    +B^2*(9*A^2-12*C*B);
+
+// Denominators in the Python basis have been cleared; scalar multiples do
+// not change the norm curve.
+poly S1=
+    4*b*T
+    +81*a*b^2+243*a*b+729*a
+    -72*b^3-324*b^2-972*b-972;
+poly S3=
+    3*a*T+4*T
+    -54*a*b^2-162*a*b-486*a
+    +12*b^3-324;
+
+poly norm1=resultant(P,S1,T);
+poly norm3=resultant(P,S3,T);
+poly norm1a=resultant(P,S1+4*a^3,T);
+
+ring coefficient_ring=0,(a,b),dp;
+poly norm1=imap(root_ring,norm1);
+poly norm3=imap(root_ring,norm3);
+poly norm1a=imap(root_ring,norm1a);
+
+if (deg(norm1)!=16 || size(factorize(norm1,1))!=1)
+{
+    ERROR("the first sharp selector norm is not irreducible of degree 16");
+}
+if (deg(norm3)!=16 || size(factorize(norm3,1))!=1)
+{
+    ERROR("the second sharp selector norm is not irreducible of degree 16");
+}
+if (deg(norm1a)!=16 || size(factorize(norm1a,1))!=1)
+{
+    ERROR("the a^3 perturbation norm is not irreducible of degree 16");
+}
+
+int genus1=genus(ideal(norm1));
+int genus3=genus(ideal(norm3));
+int genus1a=genus(ideal(norm1a));
+
+if (genus1!=12)
+{
+    ERROR("the first sharp selector norm does not have genus 12");
+}
+if (genus3!=14)
+{
+    ERROR("the second sharp selector norm does not have genus 14");
+}
+if (genus1a!=12)
+{
+    ERROR("the displayed a^3 perturbation norm does not have genus 12");
+}
+
+print("PASS: the first irreducible degree-16 selector norm has genus 12");
+print("PASS: the second irreducible degree-16 selector norm has genus 14");
+print("PASS: the displayed a^3 perturbation remains irreducible of genus 12");
+print("NOTE: these sharp-bound samples are not a classification of the degree-16 parameter plane");

@@ -287,6 +287,17 @@ field from which a scalar recurrence can be specialized. Recurrence
 derivation and evaluation of \(\mu_{14}\) are parked until the rank-one
 boundary is closed and an explicit exact-rank-two point or component is
 extracted.
+The new
+[rank-stratified moment programme](extended-geometry/RANK_STRATIFIED_MOMENT_PROGRAM.md)
+organizes the balanced problem by the determinantal loci \(X_{d,r}\).
+Its exact census through \(d=4\) proves that the first nine moments on the
+degree-three rank-at-most-two locus have a semistable common zero of exact
+coefficient rank two: the invariant Hilbert numerator first becomes
+negative by \(-58\) in degree \(29\), while the nine-moment Jacobian has
+full rank.  This is an existential finite-prefix point, not an all-order
+counterexample.  Replacing \(\mu_9\) by \(\mu_{12}\) is the first single
+replacement passing the tested Hilbert conditions; replacements by
+\(\mu_{10}\) or \(\mu_{11}\) still fail.
 On the rank-at-most-two determinantal variety, the first thirteen moments
 are algebraically independent but cannot be homogeneous parameters: the
 required invariant Hilbert numerator has coefficient \(-5266\) in degree
@@ -685,6 +696,15 @@ polynomiality, determinant, boundary-normalization, and collision-fibre
 mechanism. Weighted, cancellation, and quadratic-gauge maps are three
 explicit instances. Their determinant proofs are centralized there; the
 family notes retain only their different polynomiality and boundary data.
+The
+[logarithmic boundary-type programme](cancellation/LOGARITHMIC_BOUNDARY_TYPE_CLASSIFICATION.md)
+packages normalized critical curves, punctures, reconstruction valuations,
+ramification and different, conductor squares, target images, affine-sheet
+marks, and the signed determinant ledger into one marked groupoid.  Its
+first census makes the weighted and reciprocal mechanisms the first two
+classification cells, then separates the quadratic-gauge, three-puncture,
+nodal/cuspidal, genus-one, and multiple-selected-component frontiers without
+promoting feasibility screens to realizations.
 The first direct three-puncture extension is now closed in all degrees by the
 [puncture-rank frontier](cancellation/PUNCTURE_RANK_FRONTIER.md).  For
 `f(Y)=Y^a(Y-1)^b`, the marked-root derivative and reciprocal source chart
@@ -697,7 +717,21 @@ moment for every `a,b,r>=1`: the local conditions at `0`, `1`, and infinity
 force the residual center to be affine-linear, while an exact
 consecutive-eigenvalue recurrence makes the required coefficient
 cancellation impossible.  This excludes the complete direct reciprocal
-chart, not target-ledger or two-reconstruction-variable mechanisms; the
+chart, not target-ledger or two-reconstruction-variable mechanisms.
+The conductor-first alternative is now tested beyond a separated
+localization.  The
+[three-boundary Cox-fill theorem](extended-geometry/CONDUCTOR_THREE_BOUNDARY_COX_FILL_OBSTRUCTION.md)
+imposes \(xyz=p\) for the nodal and cuspidal rational conductor algebras.
+The marked normalization, reconstruction, and polynomial descent all
+succeed, but the pulled-back dualizing form retains the exact pole
+\(p^{-1}=(xyz)^{-1}\).  The nodal normalized fill is smooth with
+Hodge--Deligne polynomial
+\((uv)^3+2(uv)^2-uv\), while the cuspidal fill is normal with a
+codimension-two three-axis singular locus.  Thus the smallest symmetric
+three-boundary coupling is not affine three-space, even after polynomial
+stabilization.  It remains open for asymmetric affine modifications or a
+distributed target conductor ledger.
+The
 [double-incidence core](extended-geometry/THREE_PUNCTURE_DOUBLE_INCIDENCE_CORE.md)
 and its
 [first nonlinear completion screen](extended-geometry/THREE_PUNCTURE_NONLINEAR_COMPLETION_FRONTIER.md)
@@ -841,12 +875,11 @@ four-point rational collision.  The count is minimal in the displayed
 quartic quadratic-gauge normal form: setting the removable `g_2` coefficient
 to zero deletes exactly seven terms and no admissible specialization deletes
 another.  This is not an absolute sparsity theorem over arbitrary polynomial
-coordinates.  Likewise, quartic is the smallest certified ungraded upper
-bound in geometric degree, not yet a proved global minimum: closing the
-open cubic package-extraction theorem would classify the boundary-minimal
-cubic stratum, but a global lower bound additionally requires excluding a
-separate unramified nonproperness divisor for an arbitrary cubic (or proving
-a reduction to that stratum which preserves genuine ungradedness).
+coordinates.  The quartic is no longer the minimum-degree ungraded example:
+the cubic testbed below uses two unramified phantom components to give an
+exact geometric-degree-three algebraic-torus exclusion.  The quartic remains
+the smaller certified boundary-minimal ungraded example and retains its
+separate atomic/non-quasi-torus role.
 
 The first
 [bounded polynomial left--right sparsity search](cancellation/QUARTIC_LR_SPARSITY_SEARCH.md)
@@ -877,6 +910,18 @@ straightenability.  The conditional implications from this package to a
 plane core and from a marked plane core to a suspension are theorems.  The
 conjectural step is that every numerically boundary-minimal map canonically
 supplies a diagram satisfying the package.
+
+The [operational invariant pipeline](cancellation/MINIMAL_BOUNDARY_INVARIANT_PIPELINE.md)
+now decides all eight predicates on a finite canonical-normalization export.
+It selects the critical prime from automorphism-fixed signatures, computes
+puncture and valuation lattices, audits saturation and the complete signed
+ledger, tests conormal primitivity and noncontraction, and straightens marked
+charts coefficientwise.  Exact weighted and cancellation grids pass; the
+same formula-blind calculation extracts the quadratic-gauge mark `S^2` but
+correctly rejects it from the two-class `CS` definition.  Perturbed and
+spectator records fail at their declared invariant layer.  Producing the
+finite marked export from an arbitrary unmarked canonical normalization
+remains open.
 
 Inside the two already identified branches, the exact cubic reduction is
 unconditional: the weighted degree-three branch and the `(m,r)=(1,1)`
@@ -1126,8 +1171,15 @@ modules, and arbitrary polynomial `GL_2` Tschirnhausen gauge.  Its reduced
 nonproperness equation is `Delta*rad(1+P^2 gamma)`, and the adapted
 base-change map `(G)` is an automorphism exactly when that phantom factor
 is a unit.  Thus boundary-minimal base-change rigidity holds throughout
-this flat cell, while failure of `(G)` is exactly the extra unramified
-`OP-UG3` divisor.  The 24-dimensional Koszul order-four kernel is a
+this flat cell.  At `A=0`, `gamma=1`, the two phantom components
+`P=+i,-i` and the ramified-normalization Fitting divisor
+`1-3P(1+P^2)S^2` have trivial connected decorated automorphism group.
+The pointwise-fixed nonnormal-hypersurface lemma and finite generic deck
+symmetry then exclude every algebraic-torus-equivariant polynomial
+left--right representative.  Since geometric degrees one and two are
+impossible for noninvertible Keller maps, the minimum genuinely ungraded
+geometric degree is exactly three.  The former `OP-UG3` universal-gradedness
+direction is therefore false.  The 24-dimensional Koszul order-four kernel is a
 different, nonflat module sector (`Fitt_3=(x,y,z)` rather than the unit
 ideal); incorporating it still requires a module degeneration with a
 compatible Keller open.
@@ -1302,6 +1354,15 @@ permutation group `G <= S_N`, preserve an explicit generic `G`-cover through
 constant-Jacobian completion while retaining full fibers, marked sheets, and
 compatible real and finite-prime splitting conditions.  It identifies
 cover-preserving Kellerization as the missing bridge.  Its
+[cyclic/dihedral opening audit](extended-geometry/ABSOLUTE_INVERSE_GALOIS_CYCLIC_DIHEDRAL_AUDIT.md)
+proves that cyclic generic inverse monodromy is absolutely impossible because
+every faithful transitive cyclic action is regular.  For the natural
+degree-`n` dihedral action it computes the uniform Dickson invariant rings,
+discriminant and orientation covers, boundary unit lattices, class groups,
+derivative unit, and essential dimension.  The resulting smooth-affine
+threefold chart has determinant minus one; a triangular one-coordinate
+polynomial completion is excluded, while coupled affine modifications remain
+open.  The program's
 [first proper-monodromy checkpoint](extended-geometry/A4_KELLER_INVERSE_COVER.md)
 is an oriented degree-four root cover with exact generic `A_4`, a
 determinant-one suspension on smooth affine boundary complements, and a full
@@ -1578,8 +1639,15 @@ Jacobian now factors through the necessary unit
 searches can reject them before solving any coefficient equations.
 Both one-triangular Jung families fail as well: degree dominance handles
 every case except `x=T+cY^2+dY+e`, whose nine high-degree coefficient
-equations have unit Gröbner ideal.  An affine-in-`U` candidate must now
-start at alternating triangular polydegree two.
+equations have unit Gröbner ideal.  The subsequent
+[alternating-pencil audit](extended-geometry/DAVENPORT_INDEPENDENT_MARKED_LINE_OPENING.md)
+closes the first genuinely mixed quadratic--quadratic coordinate with a
+saturated unit ideal in all shear coefficients.  Its Newton-leading
+certificate is stronger: every affine-in-`U` coefficient pencil whose
+plane coordinate has Jung length at most two fails the unit gate.  The next
+coefficient class therefore starts at quadratic--quadratic--quadratic Jung
+length three; genuinely nonlinear `U`-dependence remains a separate live
+mechanism.
 The [stratified extension](extended-geometry/STRATIFIED_ADELIC_FIBER_ENGINEERING.md)
 moves the seed and target together on any rational chart of a selected locally
 closed seed stratum. It isolates geometric nonemptiness as the only extra
@@ -1902,13 +1970,11 @@ frontiers:
   cubic fiber-minimality (equivalently no zero-dimensional flatness defect),
   affine-linearity of the intrinsic binary-cubic coefficient map, and
   absence of extra simple boundary.
-- `OP-UG3`: arbitrary-cubic ungraded exclusion.  To turn the quartic
-  example into a proved geometric-degree minimum, the same cubic frontend
-  must apply without boundary minimality.  Proposition 1.4 forces every
-  critical target component to have the unique ledger
-  `(2,1)_boundary+(1,1)_affine`; the additional divisorial case is exactly
-  a distinct unramified nonproperness component.  It is not removed by the
-  current minimal-boundary theorem.
+- `OP-UG3` is resolved negatively.  The universal flat cubic testbed at
+  `A=0`, `gamma=1` is genuinely ungraded, so the exact minimum geometric
+  degree is three.  The cubic frontend remains active only for the narrower
+  boundary-minimal classification; its phantom-free hypothesis deliberately
+  excludes this counterexample.
 
 In particular, `b_m=34m+1` is an exact source-only profile in one
 determinant-normalized target gauge.  It is not target-minimal and is not a

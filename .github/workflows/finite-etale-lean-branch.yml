@@ -33,7 +33,7 @@ jobs:
       - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
         with:
           persist-credentials: false
-      - name: Reject Lean placeholders and explicit axioms
+      - name: Audit Lean placeholders and explicit axioms
         run: python3 scripts/check_lean_placeholders.py
       - name: Enforce the paper certificate import boundary
         run: python3 scripts/check_paper_certificate_imports.py

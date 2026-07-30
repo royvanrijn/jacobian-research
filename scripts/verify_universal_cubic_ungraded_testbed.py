@@ -12,7 +12,9 @@ The inverse cubic is
 
 The checker verifies the denominator-free Keller map, its incidence and
 ramification identities, the Deligne--Faddeev finite normalization,
-discriminant, full GL2 coefficient action, and the base-change criterion.
+discriminant, full GL2 coefficient action, the base-change criterion, and
+the decorated-normalization character calculation for the explicit
+genuinely ungraded specialization A=0, gamma=1.
 """
 
 from __future__ import annotations
@@ -306,6 +308,56 @@ koszul_fitting_3 = {
 assert flat_fitting_3 == {1}
 assert koszul_fitting_3 == {x, -y, z}
 
+# The specialization alpha=0, gamma=1 has
+#
+#     h(P)=1+P^2,  a(P)=P(1+P^2).
+#
+# Its two phantom boundary components are P=+i and P=-i.  On the
+# normalization of the ramified discriminant the relative-differential
+# Fitting generator is J=1-3*a(P)*S^2.  These are the exact inputs to the
+# unit-lattice proof that every connected automorphism of the decorated
+# normalization is trivial.
+explicit_h = 1 + P_symbol**2
+explicit_a = P_symbol * explicit_h
+assert sp.gcd(
+    sp.Poly(explicit_a, P_symbol),
+    sp.Poly(sp.diff(explicit_a, P_symbol), P_symbol),
+).degree() == 0
+
+explicit_ramification_B = 3 * explicit_a * S + 1 / S
+explicit_ramification_C = S - explicit_a * S**3
+explicit_fitting = 1 - 3 * explicit_a * S**2
+assert sp.factor(
+    sp.diff(explicit_ramification_B, S)
+    + explicit_fitting / S**2
+) == 0
+assert sp.factor(
+    sp.diff(explicit_ramification_C, S) - explicit_fitting
+) == 0
+assert explicit_fitting != 1
+
+# A connected group acts trivially on the discrete unit lattice of
+# k[P,(P^2+1)^-1,S^+-1].  Write the three possible character scalars on
+# P-i, P+i, and S as cp, cm, and cs.  The two expressions for the pullback
+# of P force cp=cm=1.  Preservation of the Fitting divisor then forces
+# cs^2=1, hence cs=1 on a connected torus.
+cp, cm, cs = sp.symbols("cp cm cs", nonzero=True)
+imaginary_unit = sp.I
+pulled_P_from_plus = imaginary_unit + cp * (P_symbol - imaginary_unit)
+pulled_P_from_minus = -imaginary_unit + cm * (
+    P_symbol + imaginary_unit
+)
+character_equations = sp.Poly(
+    sp.expand(pulled_P_from_plus - pulled_P_from_minus),
+    P_symbol,
+)
+assert sp.solve(character_equations.all_coeffs(), (cp, cm), dict=True) == [
+    {cm: 1, cp: 1}
+]
+assert sp.factor(
+    explicit_fitting.subs(S, cs * S) - explicit_fitting
+) == -3 * S**2 * explicit_a * (cs - 1) * (cs + 1)
+
 print("PASS: the seven-parameter quartic coefficient cell has determinant -2")
 print("PASS: the inverse cubic, derivative, and reciprocal chart are exact")
 print("PASS: the Deligne--Faddeev normalization and discriminant are exact")
@@ -313,3 +365,5 @@ print("PASS: the ramification support is the smooth Laurent plane")
 print("PASS: arbitrary GL2 gauge scales the discriminant by det^6")
 print("PASS: G is an automorphism exactly when the phantom factor is a unit")
 print("PASS: the flat and 24-direction Koszul cells have different Fitt_3 ideals")
+print("PASS: h=1+P^2 gives two simple phantom boundary components")
+print("PASS: their unit characters fix P and the Fitting character is 2-torsion")

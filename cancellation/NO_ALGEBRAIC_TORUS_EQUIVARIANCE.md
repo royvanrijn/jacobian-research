@@ -221,15 +221,12 @@ down from \(24820\) in (4c).  These are exact improvements for the stated
 height convention, not optimality theorems.  The more-than-102-fold
 coefficient-height drop does not change expanded support.
 
-The geometric-degree qualifier should not be overstated.  Degree two is
-excluded for every noninvertible Keller map, while the foundational
-geometric-degree-three example is graded.  The repository does not yet
-classify every geometric-degree-three counterexample: the cubic
-package-extraction theorem in
-[the minimal-boundary program](MINIMAL_BOUNDARY_CLASSIFICATION.md#5-the-degree-three-proof-target)
-is open.  Consequently (4b) is a geometric-degree-four genuinely ungraded
-example and the smallest certified upper bound, but unconditional global
-minimality in geometric degree remains open.
+The geometric-degree qualifier has since been sharpened by the
+[universal cubic testbed](UNIVERSAL_CUBIC_UNGRADED_TESTBED.md#8-an-explicit-genuinely-ungraded-cubic).
+Its specialization \(A=0,\gamma=1\) is genuinely ungraded in geometric
+degree three, so (4b) is no longer the smallest-degree example.  It remains
+the boundary-minimal example with the stronger decorated
+\(\mu _5\)-stabilizer and atomic/non-quasi-torus consequences used here.
 
 ## 2. The decorated stabilizer
 

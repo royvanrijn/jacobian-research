@@ -95,9 +95,9 @@ the [restricted-minima frontier](RESTRICTED_MINIMA_FRONTIER.md).  This exact
 certification says nothing by itself about priority or optimality outside the
 repository.
 
-## 4. Two exact degree minima within the stated classes
+## 4. Three exact degree minima within the stated classes
 
-Two degree questions are already closed even though their dimension questions
+Three degree questions are already closed even though their dimension questions
 are not.
 
 ### General Keller maps
@@ -121,6 +121,23 @@ four-real-variable counterexample is cubic.  Therefore
 \]
 
 This is independent of the unresolved minimum Gaussian dimension.
+
+### Genuinely ungraded Keller maps
+
+The exact geometric-degree spectrum excludes noninvertible Keller maps of
+geometric degree one and two.  The specialization `A=0`, `gamma=1` of the
+[universal cubic testbed](../cancellation/UNIVERSAL_CUBIC_UNGRADED_TESTBED.md#8-an-explicit-genuinely-ungraded-cubic)
+has geometric degree three and no algebraic-torus-equivariant polynomial
+left--right representative.  Therefore
+
+\[
+\boxed{\min\operatorname{gdeg}(\text{genuinely ungraded Keller map})=3.}
+\tag{4.3}
+\]
+
+This supersedes the former quartic upper endpoint.  It is an unstabilized
+left--right statement; identity stabilization introduces tautological torus
+actions on the added coordinates.
 
 ## 5. Repository witness ledger
 

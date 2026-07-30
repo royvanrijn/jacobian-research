@@ -1,0 +1,380 @@
+{
+  "format": "rank-stratified-balanced-moment-census-v1",
+  "field": "characteristic zero",
+  "good_prime_for_jacobians": 1000003,
+  "scope": {
+    "balanced_degrees": [
+      2,
+      3,
+      4
+    ],
+    "rank_bounds": "all determinantal ranks in each degree",
+    "hilbert_cutoff": 85
+  },
+  "interpretation": {
+    "full_jacobian_rank": "proves algebraic independence of the displayed moments in characteristic zero",
+    "negative_numerator": "proves the consecutive moments are not a homogeneous system of parameters and their zero fiber has a semistable point",
+    "warning": "no finite-prefix semistable point is asserted to satisfy all moments; this census does not classify counterexamples"
+  },
+  "cases": {
+    "d2_r1": {
+      "balanced_degree": 2,
+      "rank_bound": 1,
+      "matrix_size": 3,
+      "determinantal_dimension": 5,
+      "quotient_dimension": 2,
+      "consecutive_moment_orders": [
+        1,
+        2
+      ],
+      "jacobian_rank_mod_prime": 2,
+      "jacobian_point_seed": 1,
+      "first_negative_numerator_coefficient": null,
+      "least_hilbert_compatible_single_replacement": null,
+      "hilbert_cutoff": 85
+    },
+    "d2_r2": {
+      "balanced_degree": 2,
+      "rank_bound": 2,
+      "matrix_size": 3,
+      "determinantal_dimension": 8,
+      "quotient_dimension": 5,
+      "consecutive_moment_orders": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "jacobian_rank_mod_prime": 5,
+      "jacobian_point_seed": 1,
+      "first_negative_numerator_coefficient": [
+        5,
+        -1
+      ],
+      "least_hilbert_compatible_single_replacement": {
+        "orders": [
+          1,
+          2,
+          3,
+          4,
+          6
+        ],
+        "jacobian_rank_mod_prime": 5,
+        "jacobian_point_seed": 1,
+        "numerator": {
+          "nonnegative_through": 85,
+          "last_nonzero_degree": 10,
+          "predicted_gorenstein_top_degree": 10,
+          "palindromic": true
+        }
+      },
+      "hilbert_cutoff": 85
+    },
+    "d2_r3": {
+      "balanced_degree": 2,
+      "rank_bound": 3,
+      "matrix_size": 3,
+      "determinantal_dimension": 9,
+      "quotient_dimension": 6,
+      "consecutive_moment_orders": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "jacobian_rank_mod_prime": 6,
+      "jacobian_point_seed": 1,
+      "first_negative_numerator_coefficient": null,
+      "least_hilbert_compatible_single_replacement": null,
+      "hilbert_cutoff": 85
+    },
+    "d3_r1": {
+      "balanced_degree": 3,
+      "rank_bound": 1,
+      "matrix_size": 4,
+      "determinantal_dimension": 7,
+      "quotient_dimension": 4,
+      "consecutive_moment_orders": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "jacobian_rank_mod_prime": 4,
+      "jacobian_point_seed": 1,
+      "first_negative_numerator_coefficient": null,
+      "least_hilbert_compatible_single_replacement": null,
+      "hilbert_cutoff": 85
+    },
+    "d3_r2": {
+      "balanced_degree": 3,
+      "rank_bound": 2,
+      "matrix_size": 4,
+      "determinantal_dimension": 12,
+      "quotient_dimension": 9,
+      "consecutive_moment_orders": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "jacobian_rank_mod_prime": 9,
+      "jacobian_point_seed": 1,
+      "first_negative_numerator_coefficient": [
+        29,
+        -58
+      ],
+      "least_hilbert_compatible_single_replacement": {
+        "orders": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          12
+        ],
+        "jacobian_rank_mod_prime": 9,
+        "jacobian_point_seed": 1,
+        "numerator": {
+          "nonnegative_through": 85,
+          "last_nonzero_degree": 40,
+          "predicted_gorenstein_top_degree": 40,
+          "palindromic": true
+        }
+      },
+      "hilbert_cutoff": 85
+    },
+    "d3_r3": {
+      "balanced_degree": 3,
+      "rank_bound": 3,
+      "matrix_size": 4,
+      "determinantal_dimension": 15,
+      "quotient_dimension": 12,
+      "consecutive_moment_orders": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "jacobian_rank_mod_prime": 12,
+      "jacobian_point_seed": 1,
+      "first_negative_numerator_coefficient": null,
+      "least_hilbert_compatible_single_replacement": null,
+      "hilbert_cutoff": 85
+    },
+    "d3_r4": {
+      "balanced_degree": 3,
+      "rank_bound": 4,
+      "matrix_size": 4,
+      "determinantal_dimension": 16,
+      "quotient_dimension": 13,
+      "consecutive_moment_orders": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "jacobian_rank_mod_prime": 13,
+      "jacobian_point_seed": 1,
+      "first_negative_numerator_coefficient": [
+        63,
+        -2186
+      ],
+      "least_hilbert_compatible_single_replacement": {
+        "orders": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          14
+        ],
+        "jacobian_rank_mod_prime": 13,
+        "jacobian_point_seed": 1,
+        "numerator": {
+          "nonnegative_through": 85,
+          "last_nonzero_degree": 76,
+          "predicted_gorenstein_top_degree": 76,
+          "palindromic": true
+        }
+      },
+      "hilbert_cutoff": 85
+    },
+    "d4_r1": {
+      "balanced_degree": 4,
+      "rank_bound": 1,
+      "matrix_size": 5,
+      "determinantal_dimension": 9,
+      "quotient_dimension": 6,
+      "consecutive_moment_orders": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "jacobian_rank_mod_prime": 6,
+      "jacobian_point_seed": 1,
+      "first_negative_numerator_coefficient": null,
+      "least_hilbert_compatible_single_replacement": null,
+      "hilbert_cutoff": 85
+    },
+    "d4_r2": {
+      "balanced_degree": 4,
+      "rank_bound": 2,
+      "matrix_size": 5,
+      "determinantal_dimension": 16,
+      "quotient_dimension": 13,
+      "consecutive_moment_orders": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "jacobian_rank_mod_prime": 13,
+      "jacobian_point_seed": 1,
+      "first_negative_numerator_coefficient": [
+        69,
+        -5266
+      ],
+      "least_hilbert_compatible_single_replacement": {
+        "orders": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          14
+        ],
+        "jacobian_rank_mod_prime": 13,
+        "jacobian_point_seed": 1,
+        "numerator": {
+          "nonnegative_through": 85,
+          "last_nonzero_degree": 82,
+          "predicted_gorenstein_top_degree": 82,
+          "palindromic": true
+        }
+      },
+      "hilbert_cutoff": 85
+    },
+    "d4_r3": {
+      "balanced_degree": 4,
+      "rank_bound": 3,
+      "matrix_size": 5,
+      "determinantal_dimension": 21,
+      "quotient_dimension": 18,
+      "consecutive_moment_orders": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "jacobian_rank_mod_prime": 18,
+      "jacobian_point_seed": 1,
+      "first_negative_numerator_coefficient": null,
+      "least_hilbert_compatible_single_replacement": null,
+      "hilbert_cutoff": 85
+    },
+    "d4_r4": {
+      "balanced_degree": 4,
+      "rank_bound": 4,
+      "matrix_size": 5,
+      "determinantal_dimension": 24,
+      "quotient_dimension": 21,
+      "consecutive_moment_orders": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "jacobian_rank_mod_prime": 21,
+      "jacobian_point_seed": 1,
+      "first_negative_numerator_coefficient": null,
+      "least_hilbert_compatible_single_replacement": null,
+      "hilbert_cutoff": 85
+    }
+  }
+}

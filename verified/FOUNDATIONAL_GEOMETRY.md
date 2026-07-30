@@ -67,6 +67,9 @@ nonduplicated continuation of the core chain is:
 - [Cubic marked-root model](MARKED_ROOT_MODEL.md): the marked-root
   interpretation and its two reconstruction charts;
 - [Exact image and nonproperness](IMAGE_AND_NONPROPERNESS.md);
+- [Arithmetic dynamics of the foundational map](../arithmetic/ARITHMETIC_DYNAMICS_OF_KELLER_MAPS.md):
+  exact degree growth, generic preimage trees, and an exceptional escaping
+  orbit;
 - [Weighted marked-root theorem](WEIGHTED_SEED_THEOREM.md).
 
 ## Reproduction

@@ -1689,6 +1689,15 @@ If the degree-zero endpoint-pairing theorem is proved, the clean one-boundary
 packet is closed.  The same primitive-character audit then supplies the
 correct integral input for the ramified-plus-unramified row.
 
+The conductor-decorated semigroup continuation is
+[`QUARTIC_ENDPOINT_SEMIGROUP_EXPERIMENT.md`](QUARTIC_ENDPOINT_SEMIGROUP_EXPERIMENT.md).
+It computes the cusp and connector semigroups, restores arbitrary endpoint
+pairings, and formulates the exact bounded lattice problem.  Its
+no-finiteness theorem shows that conductor decoration alone still does not
+bound the connector count, the automorphism-minimized marked height, or the
+connector contact orders.  Thus it is a strengthened negative gate, not the
+degree-zero endpoint-pairing theorem or a quartic exclusion.
+
 ## 8. Reproduction
 
 Run
@@ -1696,6 +1705,9 @@ Run
 ```bash
 .venv/bin/python plane-jc/cas/test_plane_boundary_exclusion.py
 .venv/bin/python plane-jc/cas/test_degree_zero_endpoint_pairing.py
+.venv/bin/python plane-jc/cas/experiment_quartic_endpoint_semigroups.py \
+  --max-connectors 4 --max-pole 8 --max-contact 8 --cutoff 12 \
+  --output artifacts/generated-results/quartic_endpoint_semigroups.json
 Singular -q plane-jc/cas/quartic_completed_deletion.sing
 ```
 

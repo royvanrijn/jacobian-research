@@ -1,0 +1,77 @@
+// Exact Singular replay for the conductor three-boundary Cox fill.
+//
+// The Python driver runs this file and records the remaining valuation,
+// motivic, and finite-field ledgers.
+
+option(redSB);
+
+// Node: eliminate the normalization parameter and verify smoothness of
+// xyz=t(t-1).
+ring rn = 0,(x,y,z,q,t),dp;
+ideal node_graph =
+  x*y*z-t*(t-1),
+  q-t*t*(t-1);
+ideal node_elimination = eliminate(node_graph,t);
+ideal expected_node = q2-q*x*y*z-(x*y*z)^3;
+ideal node_elimination_check =
+  reduce(node_elimination,std(expected_node)),
+  reduce(expected_node,std(node_elimination));
+if (size(node_elimination_check) != 0)
+{
+  ERROR("node elimination did not give the descended conductor equation");
+}
+
+poly node_fill = x*y*z-t*(t-1);
+ideal node_singular =
+  node_fill,
+  diff(node_fill,x),
+  diff(node_fill,y),
+  diff(node_fill,z),
+  diff(node_fill,t);
+if (reduce(1,std(node_singular)) != 0)
+{
+  ERROR("the normalized nodal three-boundary fill is not smooth");
+}
+print("SINGULAR_PASS node elimination and smoothness");
+
+// Cusp: eliminate the normalization parameter.  The normalized fill
+// xyz=t^2 is normal but singular on the three pairwise coordinate axes.
+ring rc = 0,(x,y,z,q,t),dp;
+ideal cusp_graph =
+  x*y*z-t2,
+  q-t3;
+ideal cusp_elimination = eliminate(cusp_graph,t);
+ideal expected_cusp = q2-(x*y*z)^3;
+ideal cusp_elimination_check =
+  reduce(cusp_elimination,std(expected_cusp)),
+  reduce(expected_cusp,std(cusp_elimination));
+if (size(cusp_elimination_check) != 0)
+{
+  ERROR("cusp elimination did not give the descended conductor equation");
+}
+
+poly cusp_fill = x*y*z-t2;
+ideal cusp_singular =
+  cusp_fill,
+  diff(cusp_fill,x),
+  diff(cusp_fill,y),
+  diff(cusp_fill,z),
+  diff(cusp_fill,t);
+ideal cusp_axis_x = t,y,z;
+ideal cusp_axis_y = t,x,z;
+ideal cusp_axis_z = t,x,y;
+ideal expected_cusp_singular =
+  intersect(cusp_axis_x,intersect(cusp_axis_y,cusp_axis_z));
+ideal cusp_singular_check =
+  reduce(cusp_singular,std(expected_cusp_singular)),
+  reduce(expected_cusp_singular,std(cusp_singular));
+if (size(cusp_singular_check) != 0)
+{
+  ERROR("the cuspidal fill singular locus is not the three-axis union");
+}
+if (reduce(1,std(cusp_singular)) == 0)
+{
+  ERROR("the normalized cuspidal three-boundary fill is unexpectedly smooth");
+}
+print("SINGULAR_PASS cusp elimination and exact singular locus");
+print("SINGULAR_PASS conductor three-boundary Cox fill");

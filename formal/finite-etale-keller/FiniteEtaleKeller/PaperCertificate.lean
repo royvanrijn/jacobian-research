@@ -14,9 +14,9 @@ import FiniteEtaleKeller.CollisionFiber
 
 This is the publication-sized Lean artifact.  Its direct imports are limited
 to the general gauge construction, its function-field comparison, the
-polynomial page-one theorem, and the abstract finite-étale realization.
-Arithmetic examples and unrelated companion results deliberately remain
-outside this module.
+polynomial page-one theorem, the abstract finite-étale realization, and the
+presentation-independent collision-fiber interface.  Arithmetic examples and
+unrelated companion results deliberately remain outside this module.
 
 The paper states the polynomial theorem using `Polynomial.Separable`; the
 internal construction uses the equivalent `Squarefree` hypothesis.  The

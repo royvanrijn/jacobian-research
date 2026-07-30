@@ -1353,20 +1353,150 @@ polynomial affine-space construction must replace the corrected selector
 itself by a principal mask whose horizontal prime components are rational,
 or leave this root chart entirely.
 
+### 6.10. First bounded genus-zero selector search
+
+There is a smaller selector space than (6.26), but not a smaller horizontal
+norm.  Give \(a,b,T\) ordinary degree one.  Let \(V_{d,r}\) be the vector
+space of polynomials of total degree at most \(d\), root degree at most
+\(r\), and normalized exceptional orders at least
+
+\[
+ h=(2,6,3,3,6,3,3)                                  \tag{6.44}
+\]
+
+in the seven-curve order
+\((S_1,F_s,S_2,Q,R_2,F_t,R_1)\).  Equivalently, their four unsplit root
+order vectors are at least those in (6.27).
+
+The valuation ideals can be computed by exact truncated root jets.  Write
+\(z=\rho\), \(c=2b+3\), so \(c^2+27=4z\).  On the simple components the
+jets needed below the thresholds (6.44) are
+
+\[
+\begin{array}{c|c|c}
+S_1&a=x,\ z=xy&
+T=x(27-3c)y/2+O(x^2)\\
+S_2&a=x,\ z=x^2y&
+T=x^2(27-3c)y/2+O(x^3)\\
+F_s&a=u^2k,\ z=u^3k&
+\displaystyle
+T=u^3\left(
+\frac{(27-3c)k}{2}
++\frac{9(c+3)k^2}{8}u^2
+\right)+O(u^6).
+\end{array}                                          \tag{6.45}
+\]
+
+Reduction of every forbidden coefficient modulo \(c^2+27\) gives exact
+rational linear algebra.  The result is
+
+\[
+\begin{aligned}
+ V_{2,1}&=0,&
+ V_{2,2}&=\langle T^2\rangle,\\
+ V_{3,1}&=\langle q_0,q_1,q_2,q_3,q_4,q_5\rangle,&
+ V_{3,2}&=V_{3,1}+\langle T^2,aT^2,bT^2\rangle,
+                                                        \tag{6.46}
+\end{aligned}
+\]
+
+where \(q_0=a^3,\ q_5=a^2T\), and, after harmless scalar
+normalizations,
+
+\[
+\begin{aligned}
+4q_1={}&4bT+81ab^2+243ab+729a\\
+       &-72b^3-324b^2-972b-972,\\
+4q_2={}&4b^2T+36T-243ab^2-729ab-2187a\\
+       &+216b^3+972b^2+2916b+2916,\\
+3q_3={}&3aT+4T-54ab^2-162ab-486a+12b^3-324,\\
+q_4={}&abT-8T+27ab^2+81ab+243a-24b^3+648.
+                                                        \tag{6.47}
+\end{aligned}
+\]
+
+Each of \(q_1,q_2,q_3,q_4\) has the exact four branch vectors (6.27).
+Thus the corrected degree-four selector was not minimal as a root-algebra
+function.
+
+The norm filtration supplies the useful bounded obstruction.  At infinity
+give \(T\) weight three and \(a,b\) weight one.  The leading quartic has
+weight twelve and nonzero constant term.  For
+
+\[
+ S=C(a,b)T^2+D(a,b)T+E(a,b)
+\]
+
+of ordinary total degree at most three, a nonzero quadratic-root
+coefficient has
+
+\[
+ \deg\operatorname {Norm}(S)=24+4\deg C\geq24.
+\]
+
+If \(C=0\) and the quadratic part of \(D\) is nonzero, the norm has degree
+twenty.  The quadratic parts of the \(T\)-coefficients in (6.46) are the
+independent forms \(a^2,ab,b^2\), so they cannot cancel without deleting
+the corresponding three basis directions.  What remains is
+
+\[
+ \langle q_0,q_1,q_3\rangle.
+\]
+
+An exact selector in this space has a nonzero linear part in its
+\(T\)-coefficient: otherwise it is a multiple of \(q_0=a^3\), whose four
+\(E_1\)-orders are all three.  Its norm therefore has degree exactly
+sixteen.  Hence
+
+\[
+\boxed{
+\begin{gathered}
+\text{within total degree at most three and root degree at most two,}\\
+\text{no exact selector of norm degree below sixteen exists.}
+\end{gathered}}                                      \tag{6.48}
+\]
+
+In particular no selector below this horizontal degree can have both the
+required valuations and genus zero.  The bound is sharp.  The norms of
+\(q_1\) and \(q_3\) are irreducible of degree sixteen, but exact
+normalization gives
+
+\[
+ g(\widetilde{V(\operatorname {Norm}(q_1))})=12,
+ \qquad
+ g(\widetilde{V(\operatorname {Norm}(q_3))})=14.      \tag{6.49}
+\]
+
+The displayed perturbation \(q_1+a^3\) remains irreducible of genus twelve.
+These three genus computations are probes of the sharp degree-sixteen
+parameter plane, not a classification of it.
+
+The search order matters here.  Below degree sixteen there is no norm to
+factor.  The three tested sharp-bound norms have one positive-genus
+irreducible component, so they fail the rational-component gate.  No
+primitive boundary-lattice completion, polynomial divisibility test, or
+affine reconstruction claim is made for them.  Those later tests should be
+run only after a rational point of the degree-sixteen parameter
+stratification is found.
+
 ## 7. Structured next search
 
-Both corrected-selector factorizations are now closed.  The next search
-must change the horizontal selector before doing any contraction:
+Both corrected-selector factorizations are now closed, and (6.48) gives a
+sharp first lower bound for their replacement.  The next search should
+start on the degree-sixteen norm stratum before doing any contraction:
 
-1. prescribe the exceptional order vector (6.27) together with a rational
-   horizontal norm component;
-2. solve for root-algebra functions realizing that divisor data, allowing
-   reducible norms whose individual prime components are rational;
-3. reject candidates immediately when any indispensable horizontal prime
-   has positive geometric genus;
-4. rerun the normalized discriminant-lattice and relative-ampleness tests;
-5. construct affine coordinates only for a candidate which passes all
-   three gates.
+1. stratify the projective parameter plane
+   \(\mathbb P\langle q_0,q_1,q_3\rangle\) by norm factorization and
+   normalization genus;
+2. retain only parameters for which every indispensable norm component is
+   rational;
+3. only then compute the normalized discriminant-lattice span and
+   relative-ampleness cone;
+4. test polynomial divisibility and construct affine coordinates only for
+   a candidate which passes those preceding gates;
+5. if the degree-sixteen plane has no rational member, move to the
+   degree-twenty root-linear stratum before the root-quadratic
+   degree-\(\geq24\) stratum.
 
 Random ambient shears, the uncorrected exceptional quotients, and the
 coarse four-divisor contraction are no longer relevant to this branch.
@@ -1388,6 +1518,8 @@ Run
 .venv/bin/python scripts/verify_a4_affine_modification_obstruction.py
 .venv/bin/python scripts/verify_a4_corrected_boundary_selector.py
 Singular -q scripts/verify_a4_corrected_boundary_genus.sing
+.venv/bin/python scripts/verify_a4_genus_zero_selector_search.py
+Singular -q scripts/verify_a4_genus_zero_selector_search.sing
 ```
 
 The checker verifies the compact inverse basis, the two-coordinate
@@ -1422,4 +1554,10 @@ Singular checker computes geometric genus thirteen for the irreducible
 corrected-selector norm, verifies
 \(\operatorname {Norm}(L_\chi)=\chi q_{14}\), computes genus twenty for
 the degree-fourteen component, and rules out the surviving complement as
-an affine plane.
+an affine plane.  The sixth Python checker computes the complete
+total-degree-three valuation spaces in root degrees one and two, verifies
+the exact order vectors of four new degree-three selectors, and proves the
+sharp horizontal norm-degree floor sixteen.  The final Singular checker
+verifies irreducibility and genera twelve and fourteen for two sharp-bound
+norms, and genus twelve for one displayed \(a^3\)-perturbation.  It does
+not classify the full degree-sixteen parameter plane.

@@ -1262,12 +1262,16 @@ length-six defect uniformly on an affine parameter plane.  It still does
 not prove normality of these nonhomogeneous algebras or compatibility with
 a distinguished Keller open.
 
-This computation does **not** prove lift-independence.  In particular it
-does not cover singular-symbol combinations supported on three or more
-basis tensors, smooth-symbol combinations supported on four or more basis
-tensors outside the tested full-support plane, the universal 24-parameter
-order-four space, show that every normal integral higher lift has a
-length-six support defect, or construct the distinguished Keller open.
+This plane computation does **not** by itself prove lift-independence.  In
+particular it does not cover singular-symbol combinations supported on
+three or more basis tensors, show that every normal integral higher lift
+has a length-six support defect, or construct the distinguished Keller
+open.  The later formal-gauge theorem in
+[`UNIVERSAL_CUBIC_QUARTIC_KERNEL_SATURATION.md`](UNIVERSAL_CUBIC_QUARTIC_KERNEL_SATURATION.md)
+does cover every linear combination in the full smooth-symbol
+24-parameter order-four space and proves its cotangent saturation.  Its
+gauge-cokernel atlas shows exactly why that proof does not extend to the
+six singular squarefree symbols; their universal saturation remains open.
 Proposition 1.8c supplies normal integral lifts abstractly, but the
 constrained genericity argument there does not identify their saturation
 modules.  The remaining sharp target is therefore:
@@ -2463,6 +2467,7 @@ Run
 .venv/bin/python scripts/verify_smooth_cubic_quartic_plane_saturation.py
 .venv/bin/python scripts/verify_singular_cubic_quartic_plane_saturation.py
 .venv/bin/python scripts/verify_smooth_cubic_quartic_three_space_saturation.py
+.venv/bin/python scripts/verify_universal_cubic_cotangent_saturation.py
 .venv/bin/python plane-jc/cas/test_cubic_cusp_local_model.py
 Singular -q scripts/verify_cubic_double_saturation.sing
 ```
@@ -2505,6 +2510,16 @@ The smooth three-space checker is the longer four-worker continuation over
 `Q[p0,p1,p2,x,y,z]`.  It verifies all 2,024 coordinate three-spaces after
 pruning nonminimal free summands.  It does not control mixtures supported
 on four or more basis directions.
+The universal formal-gauge checker closes precisely that smooth-symbol
+gap without a 27-variable saturation.  It derives the nine gauge columns
+from the finite determinant-twisted action over the dual numbers, verifies
+`ker(C)=im(G)+A*eta` and an explicit matrix identity
+`G*L=[x*eta,y*eta,z*eta]`, constructs rational gauge lifts for all 24
+quartic basis tensors, and replays central cotangent saturation.  The
+result is
+`H^0_(x,y,z)(Omega)=0` over
+`Q[u1,...,u24,x,y,z]` for the smooth symbol.  It does not assert universal
+saturation for a singular cubic symbol.
 The cusp checker enumerates all nine transposition-valued \(B_3\)
 representations on three letters and verifies the monic cubic root model,
 the \(2+1\) Kummer model, and the curvilinear length-three cusp fiber.

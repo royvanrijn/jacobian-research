@@ -225,6 +225,19 @@ for (int index_projection=1; index_projection<=ncols(BT); index_projection++)
         check=True,
         timeout=7200,
     )
+    required_markers = (
+        "BASIS_TOTAL",
+        "BASIS_SPECTATOR",
+        "PROJECTION",
+    )
+    missing_markers = tuple(
+        marker for marker in required_markers if marker not in result.stdout
+    )
+    if missing_markers:
+        raise RuntimeError(
+            "Singular returned an incomplete rotated tensor transcript; "
+            f"missing {missing_markers}. stderr: {result.stderr.strip()}"
+        )
     with gzip.open(cache, "wt", compresslevel=9) as target:
         target.write(result.stdout)
     return result.stdout, local_variables

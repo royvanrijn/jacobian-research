@@ -93,6 +93,99 @@ def evaluate_univariate(
     return result
 
 
+def weighted_seed_symbol_pair(
+    field,
+    a,
+    factor_coefficients: tuple[object, ...],
+    shear,
+    *,
+    verify_canonical: bool = True,
+) -> tuple[SparsePoly, SparsePoly]:
+    """Return the generic-chart pair for ``H=w^2(w-1)P(w)``.
+
+    ``factor_coefficients`` lists the coefficients of ``P`` in increasing
+    degree.  This is the common sparse constructor behind the degree-five
+    and degree-six relative quantization calculations.
+    """
+
+    one = field.one
+    c = lambda numerator, denominator=1: field_fraction(
+        field, numerator, denominator
+    )
+    scalar_one = {(0, 0, 0): one}
+    X = {(1, 0, 0): one}
+    Q = {(0, 1, 0): one}
+    Z = {(0, 0, 1): one}
+
+    if not a or not a + one:
+        raise ValueError("generic a-chart requires a != 0,-1")
+
+    W = add(Z, scale(poly_power(Q, 2, one), shear))
+    Y = add(Q, scale(multiply(X, W), -c(1, 3)))
+    source_u = add(
+        scalar_one,
+        scale(multiply(X, Y), -c(3, 2) / a),
+    )
+    source_gamma = add(
+        scalar_one,
+        scale(multiply(X, Q), -c(3, 2)),
+    )
+    marked = multiply(source_u, source_gamma)
+
+    # Expand H=w^2(w-1)P coefficientwise.  Then
+    # H'=w*p1 and w*H'-H=w^2*q2.
+    h_coefficients = [
+        field.zero for _ in range(len(factor_coefficients) + 3)
+    ]
+    for index, coefficient in enumerate(factor_coefficients):
+        h_coefficients[index + 3] += coefficient
+        h_coefficients[index + 2] -= coefficient
+    p1_coefficients = [
+        (index + 2) * h_coefficients[index + 2]
+        for index in range(len(factor_coefficients) + 1)
+    ]
+    q2_coefficients = [
+        (index + 1) * h_coefficients[index + 2]
+        for index in range(len(factor_coefficients) + 1)
+    ]
+    p1_marked = evaluate_univariate(p1_coefficients, marked, one)
+    q2_marked = evaluate_univariate(q2_coefficients, marked, one)
+
+    T_numerator = add(scalar_one, multiply(source_u, p1_marked))
+    T = {
+        (x_degree - 1, q_degree, z_degree): coefficient
+        for (x_degree, q_degree, z_degree), coefficient
+        in T_numerator.items()
+        if coefficient
+    }
+    S_numerator = scale(
+        add(
+            source_u,
+            multiply(multiply(source_u, source_u), q2_marked),
+        ),
+        -2 * a / 3,
+    )
+    S = {
+        (x_degree - 2, q_degree, z_degree): coefficient
+        for (x_degree, q_degree, z_degree), coefficient
+        in S_numerator.items()
+        if coefficient
+    }
+
+    if min(x_degree for x_degree, _, _ in S) < 0:
+        raise AssertionError("the S numerator did not cancel its X^2 factor")
+    if min(x_degree for x_degree, _, _ in T) < 0:
+        raise AssertionError("the T numerator did not cancel its X factor")
+    if verify_canonical:
+        bracket = poisson(S, T)
+        if bracket != {(0, 0, 0): one}:
+            raise AssertionError(
+                "the generated family is not canonical: "
+                f"{len(bracket)} nonzero bracket terms"
+            )
+    return S, T
+
+
 def degree_five_family(
     field,
     a,
@@ -114,14 +207,6 @@ def degree_five_family(
     """
 
     one = field.one
-    c = lambda numerator, denominator=1: field_fraction(
-        field, numerator, denominator
-    )
-    scalar_one = {(0, 0, 0): one}
-    X = {(1, 0, 0): one}
-    Q = {(0, 1, 0): one}
-    Z = {(0, 0, 1): one}
-
     if not a or not a + one:
         raise ValueError("generic a-chart requires a != 0,-1")
 
@@ -135,68 +220,17 @@ def degree_five_family(
             + 315
         ) / (28 * (a + one) ** 2)
 
-    W = add(Z, scale(poly_power(Q, 2, one), shear))
-    Y = add(Q, scale(multiply(X, W), -c(1, 3)))
-    source_u = add(
-        scalar_one,
-        scale(multiply(X, Y), -c(3, 2) / a),
-    )
-    source_gamma = add(
-        scalar_one,
-        scale(multiply(X, Q), -c(3, 2)),
-    )
-    marked = multiply(source_u, source_gamma)
-
     # H=w^2(w-1)(tau*w^2+A*w+B), with kappa eliminated in favour of a.
     kappa = -(one + 2 * a) / (one + a)
     linear = kappa / 2 - 2 * tau + 2
     constant = -kappa / 2 + tau - 3
-    h_coefficients = [field.zero for _ in range(6)]
-    for index, coefficient in enumerate((constant, linear, tau)):
-        h_coefficients[index + 3] += coefficient
-        h_coefficients[index + 2] -= coefficient
-
-    # p(w)=H'(w)=w*p1(w), q(w)=w*H'(w)-H(w)=w^2*q2(w).
-    p1_coefficients = [
-        (index + 2) * h_coefficients[index + 2] for index in range(4)
-    ]
-    q2_coefficients = [
-        (index + 1) * h_coefficients[index + 2] for index in range(4)
-    ]
-    p1_marked = evaluate_univariate(p1_coefficients, marked, one)
-    q2_marked = evaluate_univariate(q2_coefficients, marked, one)
-
-    T_numerator = add(scalar_one, multiply(source_u, p1_marked))
-    T = {
-        (x_degree - 1, q_degree, z_degree): coefficient
-        for (x_degree, q_degree, z_degree), coefficient in T_numerator.items()
-        if coefficient
-    }
-    S_numerator = scale(
-        add(
-            source_u,
-            multiply(multiply(source_u, source_u), q2_marked),
-        ),
-        -2 * a / 3,
+    return weighted_seed_symbol_pair(
+        field,
+        a,
+        (constant, linear, tau),
+        shear,
+        verify_canonical=verify_canonical,
     )
-    S = {
-        (x_degree - 2, q_degree, z_degree): coefficient
-        for (x_degree, q_degree, z_degree), coefficient in S_numerator.items()
-        if coefficient
-    }
-
-    if min(x_degree for x_degree, _, _ in S) < 0:
-        raise AssertionError("the S numerator did not cancel its X^2 factor")
-    if min(x_degree for x_degree, _, _ in T) < 0:
-        raise AssertionError("the T numerator did not cancel its X factor")
-    if verify_canonical:
-        bracket = poisson(S, T)
-        if bracket != {(0, 0, 0): one}:
-            raise AssertionError(
-                "the generated family is not canonical: "
-                f"{len(bracket)} nonzero bracket terms"
-            )
-    return S, T
 
 
 def exceptional_delta(poly: SparsePoly, times: int = 1) -> SparsePoly:

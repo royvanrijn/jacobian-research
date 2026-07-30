@@ -1,0 +1,82 @@
+{
+  "families": [
+    {
+      "base_ring": "Q[h4,h5,h6,1/(h6*(H''(1)+2))] with h3=-1-2h4-3h5-4h6",
+      "boundary_type": "weighted A1 normalization",
+      "composition_blocks": null,
+      "conductor_length": 0,
+      "controlled_exponent": 1,
+      "geometric_degree": 6,
+      "key": "weighted_n6",
+      "normalized_unit_rank": 0,
+      "rank_two_status": "polynomial exact-symplectic family proved"
+    },
+    {
+      "base_ring": "Q[q]/(q^2-4q+6)",
+      "boundary_type": "reciprocal Gm normalization",
+      "composition_blocks": null,
+      "conductor_length": 0,
+      "controlled_exponent": 1,
+      "geometric_degree": 4,
+      "key": "reciprocal_m2_r1",
+      "normalized_unit_rank": 1,
+      "rank_two_status": "localized canonical candidate; polynomial A4 descent open"
+    },
+    {
+      "base_ring": "Q (with conductor square at (u^2,u^3))",
+      "boundary_type": "cusp conductor Q[u^2,u^3] in Q[u]",
+      "composition_blocks": null,
+      "conductor_length": 1,
+      "controlled_exponent": 1,
+      "geometric_degree": 3,
+      "key": "conductor_cusp_n3",
+      "normalized_unit_rank": 0,
+      "rank_two_status": "polynomial c=-9 exact-symplectic completion proved"
+    },
+    {
+      "base_ring": "Q[h4,h5,h6,1/(h6*(H''(1)+2))] for the outer degree-six seed",
+      "boundary_type": "two-stage weighted incidence tower",
+      "composition_blocks": "6 blocks of size 3",
+      "conductor_length": 0,
+      "controlled_exponent": 1,
+      "geometric_degree": 18,
+      "key": "composition_f6_after_f3",
+      "normalized_unit_rank": 0,
+      "rank_two_status": "composition of polynomial exact-symplectic rank-two completions"
+    }
+  ],
+  "relative_complex": {
+    "cohomology_dimensions": [
+      1,
+      0,
+      0
+    ],
+    "dimensions": [
+      35,
+      60,
+      26
+    ],
+    "fitting_0_obstruction_module": "unit ideal",
+    "prime_rank_profile": {
+      "31991": [
+        34,
+        26
+      ],
+      "32003": [
+        34,
+        26
+      ],
+      "65521": [
+        34,
+        26
+      ]
+    },
+    "ranks": [
+      34,
+      26
+    ],
+    "strong_dual_cocycle_module": "zero",
+    "unit_maximal_minor": "6912"
+  },
+  "scope": "bounded canonical degrees 4->3->2; no Ore-boundary descent or polynomial A_2 quantization claim"
+}

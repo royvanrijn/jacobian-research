@@ -1,0 +1,309 @@
+{
+  "certified_monotone_relations": [
+    {
+      "from": "quadratic-gauge-quartic-sparse-naive",
+      "id": "qg-quartic-rational-height-balancing",
+      "kind": "polynomial_left_right_equivalence",
+      "objectives": [
+        {
+          "after": 21875,
+          "before": 2248704,
+          "direction": "minimize",
+          "measure_path": "coefficient_height.value"
+        }
+      ],
+      "preserved_measure_paths": [
+        "source_dimension.value",
+        "coordinate_degree_vector.value",
+        "support_vector.value",
+        "support_vector.total",
+        "geometric_degree.value",
+        "monodromy.value",
+        "boundary_prime_count.value",
+        "puncture_count.value",
+        "stable_moduli_dimension.value"
+      ],
+      "status": "theorem",
+      "to": "quadratic-gauge-quartic-sparse-balanced"
+    },
+    {
+      "from": "quadratic-gauge-quartic-sparse-balanced",
+      "id": "qg-quartic-coefficient-only-height-descent",
+      "kind": "polynomial_left_right_equivalence",
+      "objectives": [
+        {
+          "after": 4648,
+          "before": 21875,
+          "direction": "minimize",
+          "measure_path": "coefficient_height.value"
+        }
+      ],
+      "preserved_measure_paths": [
+        "source_dimension.value",
+        "coordinate_degree_vector.value",
+        "support_vector.value",
+        "support_vector.total",
+        "geometric_degree.value",
+        "monodromy.value",
+        "boundary_prime_count.value",
+        "puncture_count.value",
+        "stable_moduli_dimension.value"
+      ],
+      "status": "exact_certificate",
+      "to": "quadratic-gauge-quartic-coefficient-optimized-grid"
+    },
+    {
+      "from": "bcw21-original",
+      "id": "bcw21-sparse-linear-conjugation",
+      "kind": "linear_conjugation",
+      "objectives": [
+        {
+          "after": 74,
+          "before": 81,
+          "direction": "minimize",
+          "measure_path": "support_vector.total"
+        },
+        {
+          "after": 36,
+          "before": 48,
+          "direction": "minimize",
+          "measure_path": "coefficient_height.value"
+        }
+      ],
+      "preserved_measure_paths": [
+        "source_dimension.value",
+        "coordinate_degree_vector.value",
+        "rank_and_nilpotency_indices.0.operator",
+        "rank_and_nilpotency_indices.0.rank.value",
+        "rank_and_nilpotency_indices.0.nilpotency_index.value"
+      ],
+      "status": "exact_certificate",
+      "to": "bcw21-sparse-conjugate"
+    },
+    {
+      "from": "bcw21-sparse-conjugate",
+      "id": "bcw-circuit-redesign-index",
+      "kind": "construction_replacement",
+      "objectives": [
+        {
+          "after": 18,
+          "before": 19,
+          "direction": "minimize",
+          "measure_path": "rank_and_nilpotency_indices.0.nilpotency_index.value"
+        }
+      ],
+      "preserved_measure_paths": [
+        "rank_and_nilpotency_indices.0.operator",
+        "rank_and_nilpotency_indices.0.rank.value"
+      ],
+      "status": "exact_certificate",
+      "to": "bcw22-index-reduced"
+    },
+    {
+      "from": "bcw22-index-reduced",
+      "id": "bcw-circuit-redesign-rank",
+      "kind": "construction_replacement",
+      "objectives": [
+        {
+          "after": 17,
+          "before": 18,
+          "direction": "minimize",
+          "measure_path": "rank_and_nilpotency_indices.0.rank.value"
+        }
+      ],
+      "preserved_measure_paths": [
+        "rank_and_nilpotency_indices.0.operator",
+        "rank_and_nilpotency_indices.0.nilpotency_index.value"
+      ],
+      "status": "exact_certificate",
+      "to": "bcw24-rank-reduced"
+    },
+    {
+      "from": "hn42-cotangent-lift",
+      "id": "cotangent-circuit-redesign-rank",
+      "kind": "construction_replacement",
+      "objectives": [
+        {
+          "after": 37,
+          "before": 38,
+          "direction": "minimize",
+          "measure_path": "rank_and_nilpotency_indices.0.rank.value"
+        }
+      ],
+      "preserved_measure_paths": [
+        "rank_and_nilpotency_indices.0.operator"
+      ],
+      "status": "exact_certificate",
+      "to": "hn44-rank37-cotangent-lift"
+    },
+    {
+      "from": "meng-yang-doubled-foundational-6",
+      "id": "meng-yang-one-pivot-schur-descent",
+      "kind": "schur_elimination",
+      "objectives": [
+        {
+          "after": 5,
+          "before": 6,
+          "direction": "minimize",
+          "measure_path": "source_dimension.value"
+        }
+      ],
+      "preserved_measure_paths": [],
+      "status": "theorem",
+      "to": "meng-yang-schur-descended-5"
+    }
+  ],
+  "comparison_frontiers": [
+    {
+      "common_numeric_complexity_metrics": [
+        "coefficient_height",
+        "maximum_coordinate_degree",
+        "nilpotency_index",
+        "rank",
+        "source_dimension",
+        "support_total"
+      ],
+      "comparison_class": "bcw21-linear-conjugacy-class",
+      "domination_edges": [
+        {
+          "dominated": "bcw21-original",
+          "dominator": "bcw21-sparse-conjugate"
+        }
+      ],
+      "nondominated": [
+        "bcw21-sparse-conjugate"
+      ],
+      "vectors": {
+        "bcw21-original": {
+          "coefficient_height": 48,
+          "maximum_coordinate_degree": 3,
+          "nilpotency_index": 19,
+          "rank": 18,
+          "source_dimension": 21,
+          "support_total": 81
+        },
+        "bcw21-sparse-conjugate": {
+          "coefficient_height": 36,
+          "maximum_coordinate_degree": 3,
+          "nilpotency_index": 19,
+          "rank": 18,
+          "source_dimension": 21,
+          "support_total": 74
+        }
+      }
+    },
+    {
+      "common_numeric_complexity_metrics": [
+        "coefficient_height",
+        "maximum_coordinate_degree",
+        "rank",
+        "source_dimension",
+        "support_total"
+      ],
+      "comparison_class": "quartic-qg-same-stable-class",
+      "domination_edges": [
+        {
+          "dominated": "quadratic-gauge-quartic-sparse-balanced",
+          "dominator": "quadratic-gauge-quartic-coefficient-optimized-grid"
+        },
+        {
+          "dominated": "quadratic-gauge-quartic-sparse-naive",
+          "dominator": "quadratic-gauge-quartic-coefficient-optimized-grid"
+        },
+        {
+          "dominated": "quadratic-gauge-quartic-sparse-naive",
+          "dominator": "quadratic-gauge-quartic-sparse-balanced"
+        }
+      ],
+      "nondominated": [
+        "quadratic-gauge-quartic-coefficient-optimized-grid"
+      ],
+      "vectors": {
+        "quadratic-gauge-quartic-coefficient-optimized-grid": {
+          "coefficient_height": 4648,
+          "maximum_coordinate_degree": 26,
+          "rank": 3,
+          "source_dimension": 3,
+          "support_total": 96
+        },
+        "quadratic-gauge-quartic-sparse-balanced": {
+          "coefficient_height": 21875,
+          "maximum_coordinate_degree": 26,
+          "rank": 3,
+          "source_dimension": 3,
+          "support_total": 96
+        },
+        "quadratic-gauge-quartic-sparse-naive": {
+          "coefficient_height": 2248704,
+          "maximum_coordinate_degree": 26,
+          "rank": 3,
+          "source_dimension": 3,
+          "support_total": 96
+        }
+      }
+    }
+  ],
+  "construction_count": 15,
+  "coverage_by_measure_and_status": {
+    "boundary_prime_count": {
+      "theorem": 5,
+      "uncomputed": 10
+    },
+    "coefficient_height": {
+      "exact": 8,
+      "not_defined": 4,
+      "uncomputed": 3
+    },
+    "coordinate_degree_vector": {
+      "exact": 8,
+      "formula": 1,
+      "uncomputed": 6
+    },
+    "formal_verification_status": {
+      "complete": 1,
+      "none": 13,
+      "partial": 1
+    },
+    "geometric_degree": {
+      "theorem": 7,
+      "uncomputed": 8
+    },
+    "monodromy": {
+      "theorem": 7,
+      "uncomputed": 8
+    },
+    "puncture_count": {
+      "theorem": 6,
+      "uncomputed": 9
+    },
+    "rank_and_nilpotency_indices": {
+      "complete_operator_data": 4,
+      "contains_gap_or_not_applicable": 11
+    },
+    "source_dimension": {
+      "exact": 12,
+      "formula": 2,
+      "theorem": 1
+    },
+    "stable_moduli_dimension": {
+      "not_applicable": 1,
+      "not_established": 8,
+      "theorem": 6
+    },
+    "support_vector": {
+      "exact": 8,
+      "uncomputed": 7
+    }
+  },
+  "database": "extended-geometry/complexity_compression_database.json",
+  "database_sha256": "d001592b60c6051d00d063c3b355e0b9e7f2dbe252483def718efc63d1a45548",
+  "format": "programme8-complexity-compression-report-v1",
+  "guardrails": [
+    "Null values remain explicit gaps and are never copied from a nearby construction.",
+    "Diagnostic sampled nilpotency indices are excluded from exact objectives.",
+    "Construction replacements are not relabeled as equivalences.",
+    "Pareto comparison uses only numeric complexity metrics common to every member of the declared comparison class."
+  ],
+  "search_hypothesis_count": 5,
+  "transformation_count": 7
+}

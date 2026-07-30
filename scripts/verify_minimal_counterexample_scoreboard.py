@@ -245,6 +245,18 @@ def main() -> None:
                     "Long's explicit four-real-variable Gaussian counterexample is cubic"
                 ),
             },
+            "genuinely_ungraded_Keller_geometric_degree": {
+                "exact_value": 3,
+                "lower_reason": (
+                    "the exact geometric-degree spectrum excludes "
+                    "noninvertible Keller maps of geometric degree 1 or 2"
+                ),
+                "upper_reason": (
+                    "the A=0, gamma=1 universal cubic testbed specialization "
+                    "has no algebraic-torus-equivariant polynomial "
+                    "left-right representative"
+                ),
+            },
         },
         "smallest_certified_witnesses": {
             "cubic_homogeneous_Keller": {
@@ -313,6 +325,7 @@ def main() -> None:
     print("PASS scoreboard: exact minimum SIC pair dimension is 2")
     print("PASS scoreboard: GMC failure dimension is in [2,3]")
     print("PASS scoreboard: exact minimum Gaussian counterexample degree is 3")
+    print("PASS scoreboard: exact minimum genuinely ungraded geometric degree is 3")
     print("PASS scoreboard: all 121 two-real cubic four-weight charts excluded")
     print("PASS scoreboard: cubic dimension/rank/index intervals are [5,19] / [3,17] / [3,18]")
     print("PASS scoreboard: cotangent Hessian-rank interval is [6,37]")

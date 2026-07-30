@@ -23,7 +23,8 @@ ALL_PAPERS := $(VERIFIED_PAPERS) $(PARKED_PAPERS) $(COMPANION_PAPERS)
 	verify-plane-sparse-supports verify-plane-support-bridge \
 	verify-linear-torus-free verify-algebraic-torus-free \
 	verify-master \
-	verify-quartic verify-normal-forms verify-formal verify-lean-foundational \
+	verify-quartic verify-normal-forms verify-formal verify-lean-local \
+	verify-lean-foundational \
 	verify-foundations verify-foundations-formal \
 	verify-gq2-local-fibers \
 	verify-coincident-root-loci verify-papers verify-ritt-boundary \
@@ -67,7 +68,7 @@ ALL_PAPERS := $(VERIFIED_PAPERS) $(PARKED_PAPERS) $(COMPANION_PAPERS)
 	verify-contact-r8-asymptotic verify-contact-r8 \
 	verify-parameter-dusart-frontier verify-parameter-sharp-dusart-frontier \
 	verify-parameter-adaptive-dusart-frontier \
-	verify-minimal-boundary \
+	verify-minimal-boundary verify-minimal-boundary-pipeline \
 	render-status prepare-arxiv-uploads clean-papers
 
 .PHONY: verify-normal-covering-hasse verify-arithmetic-compilation \
@@ -346,6 +347,9 @@ refresh-degree30-hessian-pairs:
 
 audit-degree30-hessian-synchronization-pairs:
 	$(PYTHON) scripts/audit_degree30_hessian_synchronization_pairs.py
+
+verify-minimal-boundary-pipeline:
+	$(PYTHON) scripts/verify_minimal_boundary_pipeline.py
 
 verify-minimal-boundary:
 	$(PYTHON) scripts/verify_minimal_boundary_cubic.py
@@ -680,10 +684,20 @@ verify-derived: verify-normal-forms verify-boundary-obstruction-theory
 # Optional formal replication. This fetches Dean Cureton's separately authored
 # Lean project at the audited commit recorded in verified/LEAN_FOUNDATIONAL_MAP.md; it is kept
 # out of the default target because it downloads a pinned Lean/mathlib toolchain.
+verify-lean-local:
+	$(SYSTEM_PYTHON) scripts/check_lean_placeholders.py
+	$(SYSTEM_PYTHON) scripts/check_paper_certificate_imports.py
+	cd formal/discriminant-pencils && lake exe cache get
+	cd formal/discriminant-pencils && lake build
+	cd formal/finite-etale-keller && lake exe cache get
+	cd formal/finite-etale-keller && lake build
+	cd formal/gmc2 && lake exe cache get
+	cd formal/gmc2 && lake build
+
 verify-lean-foundational:
 	bash scripts/verify_lean_foundational_map.sh
 
-verify-formal: verify-lean-foundational
+verify-formal: verify-lean-local verify-lean-foundational
 
 verify-foundations: verify-core
 	$(PYTHON) scripts/verify_weighted_seed_schema.py

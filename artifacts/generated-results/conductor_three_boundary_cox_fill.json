@@ -1,0 +1,90 @@
+{
+  "schema": "conductor-three-boundary-cox-fill.v1",
+  "status": "exact obstruction for the minimal symmetric three-boundary fill",
+  "singular_replay": {
+    "version": "Singular for arm64-Darwin version 4.4.1 (44105, 64 bit) Nov 11 2025 16:12:34",
+    "script": "scripts/verify_conductor_three_boundary_cox_fill.sing",
+    "script_sha256": "79f97558e8f618b74163a73ec72db75c49848ad1e9fdc681d4fe117a6e5c7952",
+    "certificates": [
+      "SINGULAR_PASS node elimination and smoothness",
+      "SINGULAR_PASS cusp elimination and exact singular locus",
+      "SINGULAR_PASS conductor three-boundary Cox fill"
+    ]
+  },
+  "conductor_and_marked_root": {
+    "node": {
+      "conductor_algebra": "Q[p,q]/(q^2-p*q-p^3)",
+      "normalization": "p=t(t-1), q=t^2(t-1)",
+      "conductor": "(p,q), pulling back to p*Q[t]",
+      "marked_root_equations": [
+        "T^2-T-p=0",
+        "p*T-q=0"
+      ],
+      "reconstruction_off_conductor": "T=q/p",
+      "conductor_fiber": "T(T-1)=0: the two branches are glued",
+      "normalization_quotient": "(B/A) is cyclic on T-bar with annihilator (p,q)"
+    },
+    "cusp": {
+      "conductor_algebra": "Q[p,q]/(q^2-p^3)",
+      "normalization": "p=t^2, q=t^3",
+      "conductor": "(p,q), pulling back to p*Q[t]",
+      "marked_root_equations": [
+        "T^2-p=0",
+        "p*T-q=0"
+      ],
+      "reconstruction_off_conductor": "T=q/p",
+      "conductor_fiber": "T^2=0: the missing first jet is restored",
+      "normalization_quotient": "(B/A) is cyclic on T-bar with annihilator (p,q)"
+    }
+  },
+  "polynomiality_and_determinant_ledger": {
+    "node": {
+      "normalized_fill": "x*y*z=t*(t - 1)",
+      "polynomial_descended_coordinates": {
+        "p": "x*y*z",
+        "q": "t**2*(t - 1)"
+      },
+      "descended_hypersurface": "q**2 - q*x*y*z - x**3*y**3*z**3",
+      "reconstruction": "t=q/(x*y*z) off the conductor",
+      "dualizing_pullback": "pi^*Omega_desc=Omega_norm/(x*y*z)",
+      "conductor_boundary_orders": {
+        "D_x,0; D_y,0; D_z,0": 1,
+        "D_x,1; D_y,1; D_z,1": 1
+      }
+    },
+    "cusp": {
+      "normalized_fill": "x*y*z=t**2",
+      "polynomial_descended_coordinates": {
+        "p": "x*y*z",
+        "q": "t**3"
+      },
+      "descended_hypersurface": "q**2 - x**3*y**3*z**3",
+      "reconstruction": "t=q/(x*y*z) off the conductor",
+      "dualizing_pullback": "pi^*Omega_desc=Omega_norm/(x*y*z)",
+      "conductor_boundary_orders": {
+        "D_x; D_y; D_z": 2
+      }
+    }
+  },
+  "affine_space_recognition": {
+    "node": {
+      "smooth": true,
+      "grothendieck_class": "L^3+2*L^2-L",
+      "hodge_deligne_polynomial": "(uv)^3+2(uv)^2-uv",
+      "affine_space": false,
+      "stable_affine_space_after_polynomial_stabilization": false,
+      "obstruction": "nonzero Hodge-Deligne defect 2(uv)^2-uv"
+    },
+    "cusp": {
+      "normal": true,
+      "smooth": false,
+      "singular_locus": "V(t,y,z) union V(t,x,z) union V(t,x,y)",
+      "grothendieck_class": "L^3",
+      "affine_space": false,
+      "stable_affine_space_after_polynomial_stabilization": false,
+      "obstruction": "a codimension-two three-axis singular locus, persisting after polynomial stabilization"
+    }
+  },
+  "theorem_boundary": "This excludes the symmetric Cox fill x*y*z=p for the nodal and cuspidal rational conductor algebras, including ordinary polynomial stabilization.  It does not exclude asymmetric affine modifications, a non-Cox three-boundary relation, or a distributed source/target ledger.",
+  "reproducing_command": ".venv/bin/python scripts/verify_conductor_three_boundary_cox_fill.py"
+}

@@ -1,0 +1,1612 @@
+{
+  "schema_version": 1,
+  "title": "Programme 8 complexity and compression database",
+  "scope": "Initial canonical census. A null value is deliberate and must carry a status and explanation; it is never imputed from a nearby construction.",
+  "conventions": {
+    "coordinate_degree_vector": "Exact ordinary total degrees of the displayed coordinate polynomials, in displayed coordinate order.",
+    "support_vector": "Numbers of nonzero monomials in the fully expanded displayed coordinate polynomials, in displayed coordinate order. total is their sum.",
+    "coefficient_height": "For a rational coefficient a/b in lowest terms with b>0, H(a/b)=max(abs(a),b); the construction height is the maximum over all expanded displayed coordinate coefficients.",
+    "boundary_prime_count": "Number of non-affine height-one primes in the stated canonical finite-normalization boundary ledger. The locus and exclusions must be stated.",
+    "puncture_count": "Number of deleted geometric points on the normalized one-dimensional root parameter in the stated ramified-boundary chart; it is not inferred from a unit rank unless the cited theorem identifies the points.",
+    "stable_moduli_dimension": "Dimension of the image of the stated construction family in coarse stable polynomial left-right moduli, not the dimension of its raw parameter space.",
+    "rank_and_nilpotency_indices": "Every rank and index names its operator. JH means the correction Jacobian for F=X+H; Hess(P) means the polynomial Hessian matrix. Sampled indices are diagnostics, not exact entries.",
+    "formal_verification_status": "complete means the construction-level claims listed in scope are covered by a proof assistant; partial means only the stated subclaims are formalized; exact CAS or dependency-free checkers alone count as none."
+  },
+  "required_measures": [
+    "source_dimension",
+    "coordinate_degree_vector",
+    "support_vector",
+    "coefficient_height",
+    "geometric_degree",
+    "monodromy",
+    "boundary_prime_count",
+    "puncture_count",
+    "stable_moduli_dimension",
+    "rank_and_nilpotency_indices",
+    "formal_verification_status"
+  ],
+  "constructions": [
+    {
+      "id": "foundational-weighted-cubic-expanded",
+      "name": "Foundational weighted cubic, compact expanded coordinates",
+      "class": "keller_map",
+      "parameters": {},
+      "sources": [
+        "README.md#the-foundational-map-in-two-forms",
+        "verified/FOUNDATIONAL_GEOMETRY.md",
+        "MATH_STATUS.json#F1",
+        "MATH_STATUS.json#W1",
+        "MATH_STATUS.json#UM1"
+      ],
+      "measures": {
+        "source_dimension": {
+          "value": 3,
+          "status": "exact",
+          "source": "verified/FOUNDATIONAL_GEOMETRY.md"
+        },
+        "coordinate_degree_vector": {
+          "value": [7, 6, 4],
+          "status": "exact",
+          "source": "README.md#the-foundational-map-in-two-forms"
+        },
+        "support_vector": {
+          "value": [7, 6, 3],
+          "total": 16,
+          "status": "exact",
+          "source": "Expansion of the displayed README formula under the database convention."
+        },
+        "coefficient_height": {
+          "value": 12,
+          "status": "exact",
+          "source": "Expansion of the displayed README formula under the database convention."
+        },
+        "geometric_degree": {
+          "value": 3,
+          "status": "theorem",
+          "source": "verified/GEOMETRIC_DEGREE_SPECTRUM.md"
+        },
+        "monodromy": {
+          "value": "S_3",
+          "action": "natural action on the three generic inverse roots",
+          "status": "theorem",
+          "source": "verified/WEIGHTED_SEED_THEOREM.md"
+        },
+        "boundary_prime_count": {
+          "value": null,
+          "status": "uncomputed",
+          "source": "The all-degree clean weighted ledger is stated uniformly for N>=4; this census does not extrapolate it to the special cubic boundary."
+        },
+        "puncture_count": {
+          "value": 1,
+          "status": "theorem",
+          "source": "The linear-tilt discriminant normalization is A^1, with the single projective puncture at infinity; cancellation/ROOT_ENGINEERED_QUADRATIC_GAUGE.md."
+        },
+        "stable_moduli_dimension": {
+          "value": 0,
+          "status": "theorem",
+          "source": "The weighted clean-locus formula N-3 at N=3; README.md."
+        },
+        "rank_and_nilpotency_indices": [
+          {
+            "operator": "DF",
+            "rank": {
+              "value": 3,
+              "status": "exact",
+              "source": "det(DF)=-2"
+            },
+            "nilpotency_index": {
+              "value": null,
+              "status": "not_applicable",
+              "source": "DF is invertible, not nilpotent; no X+H nilpotent-correction presentation is being asserted."
+            }
+          }
+        ],
+        "formal_verification_status": {
+          "status": "complete",
+          "scope": "Determinant, exact collision, determinant-one normalization, identity stabilization, and noninvertibility are formally certified; geometric degree, monodromy, and the complexity expansion are not included in that scope.",
+          "source": "MATH_STATUS.json#F1"
+        }
+      }
+    },
+    {
+      "id": "weighted-clean-family-N",
+      "name": "Boundary-clean weighted marked-root family",
+      "class": "keller_map_family",
+      "parameters": {
+        "N": "integer, N>=4",
+        "seed": "degree-N admissible boundary-clean weighted seed"
+      },
+      "sources": [
+        "verified/WEIGHTED_SEED_THEOREM.md",
+        "verified/QUADRATIC_WEIGHTED_STABLE_SEPARATION.md",
+        "verified/GEOMETRIC_DEGREE_SPECTRUM.md",
+        "MATH_STATUS.json#W1",
+        "MATH_STATUS.json#UM1"
+      ],
+      "measures": {
+        "source_dimension": {
+          "value": 3,
+          "status": "formula",
+          "source": "verified/WEIGHTED_SEED_THEOREM.md"
+        },
+        "coordinate_degree_vector": {
+          "value": null,
+          "status": "uncomputed",
+          "source": "Depends on the seed and displayed polynomial lift; no canonical expanded degree vector has yet been extracted."
+        },
+        "support_vector": {
+          "value": null,
+          "total": null,
+          "status": "uncomputed",
+          "source": "Seed-dependent and coordinate-dependent."
+        },
+        "coefficient_height": {
+          "value": null,
+          "status": "not_defined",
+          "source": "A coefficient field and integral/rational normalization have not been fixed for the family."
+        },
+        "geometric_degree": {
+          "value": "N",
+          "status": "theorem",
+          "source": "verified/WEIGHTED_SEED_THEOREM.md"
+        },
+        "monodromy": {
+          "value": "S_N",
+          "action": "natural action on the N generic inverse roots",
+          "status": "theorem",
+          "source": "verified/UNIVERSAL_SYMMETRIC_MONODROMY.md"
+        },
+        "boundary_prime_count": {
+          "value": "N-2",
+          "status": "theorem",
+          "source": "One (2,1) prime over the discriminant vertex and N-3 unramified primes over the ordered second vertex; verified/QUADRATIC_WEIGHTED_STABLE_SEPARATION.md."
+        },
+        "puncture_count": {
+          "value": 1,
+          "status": "theorem",
+          "source": "The normalized root parameter is A^1; its projective completion deletes infinity."
+        },
+        "stable_moduli_dimension": {
+          "value": "N-3",
+          "status": "theorem",
+          "source": "Weighted clean seed open, as summarized in README.md and verified/QUADRATIC_GAUGE_STABLE_MODULI.md."
+        },
+        "rank_and_nilpotency_indices": [
+          {
+            "operator": "DF",
+            "rank": {
+              "value": 3,
+              "status": "exact",
+              "source": "Constant nonzero Jacobian determinant."
+            },
+            "nilpotency_index": {
+              "value": null,
+              "status": "not_applicable",
+              "source": "No nilpotent-correction presentation is part of this family record."
+            }
+          }
+        ],
+        "formal_verification_status": {
+          "status": "none",
+          "scope": "Exact symbolic checkers exist, but the all-seed inverse-degree, monodromy, boundary, and moduli package is not proof-assistant formalized.",
+          "source": "MATH_STATUS.json#W1"
+        }
+      }
+    },
+    {
+      "id": "quadratic-gauge-clean-family-N",
+      "name": "Minimal-diagonal root-engineered quadratic-gauge family",
+      "class": "keller_map_family",
+      "parameters": {
+        "N": "integer, N>=4",
+        "seed": "g_1 S+...+g_N S^N with g_1 g_3 g_N nonzero; clean coefficient torus for the moduli formula"
+      },
+      "sources": [
+        "cancellation/ROOT_ENGINEERED_QUADRATIC_GAUGE.md",
+        "verified/QUADRATIC_WEIGHTED_STABLE_SEPARATION.md",
+        "verified/QUADRATIC_GAUGE_STABLE_MODULI.md",
+        "MATH_STATUS.json#RQG1",
+        "MATH_STATUS.json#RQG2",
+        "MATH_STATUS.json#RQG3"
+      ],
+      "measures": {
+        "source_dimension": {
+          "value": 3,
+          "status": "formula",
+          "source": "cancellation/ROOT_ENGINEERED_QUADRATIC_GAUGE.md"
+        },
+        "coordinate_degree_vector": {
+          "value": [7, "6N+2", "6N"],
+          "status": "formula",
+          "source": "For the split seed G_N(S)=product_{j=0}^{N-1}(S-j); cancellation/ROOT_ENGINEERED_QUADRATIC_GAUGE.md, equation (30)."
+        },
+        "support_vector": {
+          "value": null,
+          "total": null,
+          "status": "uncomputed",
+          "source": "No all-N expansion has yet been canonicalized."
+        },
+        "coefficient_height": {
+          "value": null,
+          "status": "not_defined",
+          "source": "Depends on the seed and rational normalization."
+        },
+        "geometric_degree": {
+          "value": "N",
+          "status": "theorem",
+          "source": "cancellation/ROOT_ENGINEERED_QUADRATIC_GAUGE.md"
+        },
+        "monodromy": {
+          "value": "S_N",
+          "action": "natural action on the N generic inverse roots",
+          "status": "theorem",
+          "source": "cancellation/ROOT_ENGINEERED_QUADRATIC_GAUGE.md"
+        },
+        "boundary_prime_count": {
+          "value": "1+gcd(N-3,2)",
+          "status": "theorem",
+          "source": "One (2,1) prime over Z_Delta and gcd(N-3,2) non-affine primes over Z_0; affine q=0 and t=0 sheets are excluded by convention."
+        },
+        "puncture_count": {
+          "value": 2,
+          "status": "theorem",
+          "source": "The normalized root parameter is G_m, with punctures r=0 and r=infinity."
+        },
+        "stable_moduli_dimension": {
+          "value": "N-4",
+          "status": "theorem",
+          "source": "verified/QUADRATIC_GAUGE_STABLE_MODULI.md"
+        },
+        "rank_and_nilpotency_indices": [
+          {
+            "operator": "DF",
+            "rank": {
+              "value": 3,
+              "status": "exact",
+              "source": "Constant nonzero Jacobian determinant."
+            },
+            "nilpotency_index": {
+              "value": null,
+              "status": "not_applicable",
+              "source": "No nilpotent-correction presentation is part of this family record."
+            }
+          }
+        ],
+        "formal_verification_status": {
+          "status": "none",
+          "scope": "Exact symbolic checkers cover formulas and bounded degrees, but the construction-level boundary and moduli theorems are not proof-assistant formalized.",
+          "source": "MATH_STATUS.json#RQG1"
+        }
+      }
+    },
+    {
+      "id": "quadratic-gauge-quartic-sparse-naive",
+      "name": "Sparse ungraded quartic quadratic-gauge representative",
+      "class": "keller_map",
+      "parameters": {},
+      "comparison_class": "quartic-qg-same-stable-class",
+      "sources": [
+        "cancellation/NO_ALGEBRAIC_TORUS_EQUIVARIANCE.md#1-the-sparse-rational-root-representative",
+        "MATH_STATUS.json#LTS2"
+      ],
+      "measures": {
+        "source_dimension": {
+          "value": 3,
+          "status": "exact",
+          "source": "cancellation/NO_ALGEBRAIC_TORUS_EQUIVARIANCE.md"
+        },
+        "coordinate_degree_vector": {
+          "value": [7, 26, 24],
+          "status": "exact",
+          "source": "cancellation/NO_ALGEBRAIC_TORUS_EQUIVARIANCE.md, equation (4d)."
+        },
+        "support_vector": {
+          "value": [7, 51, 38],
+          "total": 96,
+          "status": "exact",
+          "source": "cancellation/NO_ALGEBRAIC_TORUS_EQUIVARIANCE.md, equation (4d)."
+        },
+        "coefficient_height": {
+          "value": 2248704,
+          "status": "exact",
+          "source": "cancellation/NO_ALGEBRAIC_TORUS_EQUIVARIANCE.md, Section 1."
+        },
+        "geometric_degree": {
+          "value": 4,
+          "status": "theorem",
+          "source": "cancellation/ROOT_ENGINEERED_QUADRATIC_GAUGE.md"
+        },
+        "monodromy": {
+          "value": "S_4",
+          "action": "natural action on the four generic inverse roots",
+          "status": "theorem",
+          "source": "cancellation/NO_ALGEBRAIC_TORUS_EQUIVARIANCE.md"
+        },
+        "boundary_prime_count": {
+          "value": 2,
+          "status": "theorem",
+          "source": "The N=4 quadratic-gauge boundary formula."
+        },
+        "puncture_count": {
+          "value": 2,
+          "status": "theorem",
+          "source": "The normalized ramified root parameter is G_m."
+        },
+        "stable_moduli_dimension": {
+          "value": 0,
+          "status": "theorem",
+          "source": "verified/QUADRATIC_GAUGE_STABLE_MODULI.md"
+        },
+        "rank_and_nilpotency_indices": [
+          {
+            "operator": "DF",
+            "rank": {
+              "value": 3,
+              "status": "exact",
+              "source": "det(DF)=1"
+            },
+            "nilpotency_index": {
+              "value": null,
+              "status": "not_applicable",
+              "source": "DF is invertible, not nilpotent."
+            }
+          }
+        ],
+        "formal_verification_status": {
+          "status": "none",
+          "scope": "The formula, support, height, collision, boundary, and symmetry claims have exact checkers or written proofs, but no proof-assistant certificate.",
+          "source": "MATH_STATUS.json#LTS2"
+        }
+      }
+    },
+    {
+      "id": "quadratic-gauge-quartic-sparse-balanced",
+      "name": "Height-balanced sparse ungraded quartic representative",
+      "class": "keller_map",
+      "parameters": {},
+      "comparison_class": "quartic-qg-same-stable-class",
+      "sources": [
+        "cancellation/NO_ALGEBRAIC_TORUS_EQUIVARIANCE.md#1-the-sparse-rational-root-representative",
+        "MATH_STATUS.json#LTS2"
+      ],
+      "measures": {
+        "source_dimension": {
+          "value": 3,
+          "status": "exact",
+          "source": "cancellation/NO_ALGEBRAIC_TORUS_EQUIVARIANCE.md"
+        },
+        "coordinate_degree_vector": {
+          "value": [7, 26, 24],
+          "status": "exact",
+          "source": "The rational moduli scaling preserves the degree vector."
+        },
+        "support_vector": {
+          "value": [7, 51, 38],
+          "total": 96,
+          "status": "exact",
+          "source": "The rational moduli scaling preserves expanded support."
+        },
+        "coefficient_height": {
+          "value": 21875,
+          "status": "exact",
+          "source": "cancellation/NO_ALGEBRAIC_TORUS_EQUIVARIANCE.md, equation (4f) and following paragraph."
+        },
+        "geometric_degree": {
+          "value": 4,
+          "status": "theorem",
+          "source": "Preserved by polynomial left-right equivalence."
+        },
+        "monodromy": {
+          "value": "S_4",
+          "action": "natural action on the four generic inverse roots",
+          "status": "theorem",
+          "source": "Preserved up to permutation equivalence by polynomial left-right equivalence."
+        },
+        "boundary_prime_count": {
+          "value": 2,
+          "status": "theorem",
+          "source": "Preserved canonical normalization boundary."
+        },
+        "puncture_count": {
+          "value": 2,
+          "status": "theorem",
+          "source": "Preserved canonical normalization boundary."
+        },
+        "stable_moduli_dimension": {
+          "value": 0,
+          "status": "theorem",
+          "source": "Same stable class and same N=4 family quotient."
+        },
+        "rank_and_nilpotency_indices": [
+          {
+            "operator": "DF",
+            "rank": {
+              "value": 3,
+              "status": "exact",
+              "source": "det(DF)=1"
+            },
+            "nilpotency_index": {
+              "value": null,
+              "status": "not_applicable",
+              "source": "DF is invertible, not nilpotent."
+            }
+          }
+        ],
+        "formal_verification_status": {
+          "status": "none",
+          "scope": "Exact rational expansion is checked outside a proof assistant.",
+          "source": "MATH_STATUS.json#LTS2"
+        }
+      }
+    },
+    {
+      "id": "quadratic-gauge-quartic-coefficient-optimized-grid",
+      "name": "Coefficient-height-optimized quartic representative on the declared rational scaling grid",
+      "class": "keller_map",
+      "parameters": {
+        "alpha": "7/12",
+        "beta": "6",
+        "search_box": "positive reduced alpha,beta with numerator and denominator at most 16"
+      },
+      "comparison_class": "quartic-qg-same-stable-class",
+      "sources": [
+        "cancellation/QUARTIC_LR_SPARSITY_SEARCH.md#rational-diagonal-left--right-scalings",
+        "artifacts/generated-results/quartic_lr_sparsity_search.json",
+        "MATH_STATUS.json#LTS2"
+      ],
+      "measures": {
+        "source_dimension": {
+          "value": 3,
+          "status": "exact",
+          "source": "Polynomial left-right scaling of the sparse quartic."
+        },
+        "coordinate_degree_vector": {
+          "value": [7, 26, 24],
+          "status": "exact",
+          "source": "The diagonal scaling preserves the degree vector."
+        },
+        "support_vector": {
+          "value": [7, 51, 38],
+          "total": 96,
+          "status": "exact",
+          "source": "The diagonal scaling preserves expanded support."
+        },
+        "coefficient_height": {
+          "value": 4648,
+          "status": "exact",
+          "source": "Exact expansion at alpha=7/12, beta=6; cancellation/QUARTIC_LR_SPARSITY_SEARCH.md. Grid optimality is computational evidence only."
+        },
+        "geometric_degree": {
+          "value": 4,
+          "status": "theorem",
+          "source": "Preserved by polynomial left-right equivalence."
+        },
+        "monodromy": {
+          "value": "S_4",
+          "action": "natural action on the four generic inverse roots",
+          "status": "theorem",
+          "source": "Preserved up to permutation equivalence by polynomial left-right equivalence."
+        },
+        "boundary_prime_count": {
+          "value": 2,
+          "status": "theorem",
+          "source": "Preserved canonical normalization boundary."
+        },
+        "puncture_count": {
+          "value": 2,
+          "status": "theorem",
+          "source": "Preserved canonical normalization boundary."
+        },
+        "stable_moduli_dimension": {
+          "value": 0,
+          "status": "theorem",
+          "source": "Same stable class and same N=4 family quotient."
+        },
+        "rank_and_nilpotency_indices": [
+          {
+            "operator": "DF",
+            "rank": {
+              "value": 3,
+              "status": "exact",
+              "source": "det(DF)=1"
+            },
+            "nilpotency_index": {
+              "value": null,
+              "status": "not_applicable",
+              "source": "DF is invertible, not nilpotent."
+            }
+          }
+        ],
+        "formal_verification_status": {
+          "status": "none",
+          "scope": "The chosen rational scaling and exact height are machine checked; no proof-assistant certificate and no global height optimality theorem.",
+          "source": "cancellation/QUARTIC_LR_SPARSITY_SEARCH.md"
+        }
+      },
+      "auxiliary_measures": {
+        "collision_coordinate_height": 49640,
+        "grid_candidate_count": 25281,
+        "grid_optimality_status": "bounded_computational_evidence"
+      }
+    },
+    {
+      "id": "bcw21-original",
+      "name": "Original 21-variable essential cubic-homogeneous BCW collision",
+      "class": "cubic_homogeneous_keller_map",
+      "parameters": {},
+      "comparison_class": "bcw21-linear-conjugacy-class",
+      "machine_source": "artifacts/generated-results/essential_bcw_21_counterexample.json",
+      "sources": [
+        "extended-geometry/LOW_COMPLEXITY_CUBIC_KELLER.md",
+        "artifacts/generated-results/essential_bcw_21_counterexample.json"
+      ],
+      "measures": {
+        "source_dimension": {
+          "value": 21,
+          "status": "exact",
+          "source": "machine_source"
+        },
+        "coordinate_degree_vector": {
+          "value": [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 1],
+          "status": "exact",
+          "source": "Derived from machine_source F=X+H."
+        },
+        "support_vector": {
+          "value": [3, 8, 10, 2, 3, 2, 2, 2, 2, 2, 2, 3, 2, 4, 4, 10, 12, 2, 3, 2, 1],
+          "total": 81,
+          "status": "exact",
+          "source": "Derived from machine_source F=X+H."
+        },
+        "coefficient_height": {
+          "value": 48,
+          "status": "exact",
+          "source": "Derived from machine_source under the database convention."
+        },
+        "geometric_degree": {
+          "value": null,
+          "status": "uncomputed",
+          "source": "The stable reduction provenance suggests comparison with the foundational map, but this row does not promote an uncited function-field calculation."
+        },
+        "monodromy": {
+          "value": null,
+          "action": null,
+          "status": "uncomputed",
+          "source": "No construction-level monodromy certificate is cited."
+        },
+        "boundary_prime_count": {
+          "value": null,
+          "status": "uncomputed",
+          "source": "Canonical finite-normalization boundary not exported for this representative."
+        },
+        "puncture_count": {
+          "value": null,
+          "status": "uncomputed",
+          "source": "Canonical finite-normalization boundary not exported for this representative."
+        },
+        "stable_moduli_dimension": {
+          "value": null,
+          "status": "not_established",
+          "source": "No family-level stable-moduli image is defined for this singleton witness."
+        },
+        "rank_and_nilpotency_indices": [
+          {
+            "operator": "JH",
+            "rank": {
+              "value": 18,
+              "status": "exact",
+              "source": "extended-geometry/LOW_COMPLEXITY_CUBIC_KELLER.md"
+            },
+            "nilpotency_index": {
+              "value": 19,
+              "status": "exact",
+              "source": "extended-geometry/LOW_COMPLEXITY_CUBIC_KELLER.md"
+            }
+          }
+        ],
+        "formal_verification_status": {
+          "status": "none",
+          "scope": "Exact characteristic-zero generator and collision checks exist; no proof-assistant certificate.",
+          "source": "extended-geometry/LOW_COMPLEXITY_CUBIC_KELLER.md"
+        }
+      },
+      "auxiliary_measures": {
+        "correction_component_monomial_terms": 60,
+        "distinct_scalar_cubic_monomials": 54
+      }
+    },
+    {
+      "id": "bcw21-sparse-conjugate",
+      "name": "Sparse linear conjugate of the 21-variable BCW collision",
+      "class": "cubic_homogeneous_keller_map",
+      "parameters": {},
+      "comparison_class": "bcw21-linear-conjugacy-class",
+      "machine_source": "artifacts/generated-results/low_complexity_bcw_21_counterexample.json",
+      "sources": [
+        "extended-geometry/LOW_COMPLEXITY_CUBIC_KELLER.md",
+        "artifacts/generated-results/low_complexity_bcw_21_counterexample.json"
+      ],
+      "measures": {
+        "source_dimension": {
+          "value": 21,
+          "status": "exact",
+          "source": "machine_source"
+        },
+        "coordinate_degree_vector": {
+          "value": [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 1],
+          "status": "exact",
+          "source": "Derived from machine_source F=X+H."
+        },
+        "support_vector": {
+          "value": [3, 6, 7, 2, 5, 3, 2, 2, 2, 2, 3, 2, 2, 3, 4, 8, 10, 2, 3, 2, 1],
+          "total": 74,
+          "status": "exact",
+          "source": "Derived from machine_source F=X+H."
+        },
+        "coefficient_height": {
+          "value": 36,
+          "status": "exact",
+          "source": "Derived from machine_source under the database convention."
+        },
+        "geometric_degree": {
+          "value": null,
+          "status": "uncomputed",
+          "source": "Preserved from bcw21-original by conjugacy, but the common value is not entered without a cited function-field calculation."
+        },
+        "monodromy": {
+          "value": null,
+          "action": null,
+          "status": "uncomputed",
+          "source": "Preserved from bcw21-original by conjugacy, but the common value is uncomputed."
+        },
+        "boundary_prime_count": {
+          "value": null,
+          "status": "uncomputed",
+          "source": "Preserved canonically under conjugacy, but the common count is uncomputed."
+        },
+        "puncture_count": {
+          "value": null,
+          "status": "uncomputed",
+          "source": "Preserved canonically under conjugacy, but the common count is uncomputed."
+        },
+        "stable_moduli_dimension": {
+          "value": null,
+          "status": "not_established",
+          "source": "No family-level stable-moduli image is defined for this singleton witness."
+        },
+        "rank_and_nilpotency_indices": [
+          {
+            "operator": "JH",
+            "rank": {
+              "value": 18,
+              "status": "exact",
+              "source": "extended-geometry/LOW_COMPLEXITY_CUBIC_KELLER.md"
+            },
+            "nilpotency_index": {
+              "value": 19,
+              "status": "exact",
+              "source": "extended-geometry/LOW_COMPLEXITY_CUBIC_KELLER.md"
+            }
+          }
+        ],
+        "formal_verification_status": {
+          "status": "none",
+          "scope": "Exact characteristic-zero conjugacy, collision, rank, and index checks exist; no proof-assistant certificate.",
+          "source": "extended-geometry/LOW_COMPLEXITY_CUBIC_KELLER.md"
+        }
+      },
+      "auxiliary_measures": {
+        "correction_component_monomial_terms": 53,
+        "distinct_scalar_cubic_monomials": 45,
+        "derivative_flattening_rank": 42,
+        "vector_waring_rank_lower_bound": 42,
+        "vector_waring_rank_upper_bound": 164
+      }
+    },
+    {
+      "id": "bcw22-index-reduced",
+      "name": "Circuit-redesigned 22-variable index-18 cubic collision",
+      "class": "cubic_homogeneous_keller_map",
+      "parameters": {},
+      "machine_source": "artifacts/generated-results/index_reduced_bcw_22_counterexample.json",
+      "sources": [
+        "extended-geometry/RESTRICTED_MINIMA_FRONTIER.md",
+        "artifacts/generated-results/index_reduced_bcw_22_counterexample.json",
+        "MATH_STATUS.json#LR2"
+      ],
+      "measures": {
+        "source_dimension": {
+          "value": 22,
+          "status": "exact",
+          "source": "machine_source"
+        },
+        "coordinate_degree_vector": {
+          "value": [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 1],
+          "status": "exact",
+          "source": "Derived from machine_source F=X+H."
+        },
+        "support_vector": {
+          "value": [3, 9, 8, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 5, 4, 11, 10, 2, 3, 2, 3, 1],
+          "total": 82,
+          "status": "exact",
+          "source": "Derived from machine_source F=X+H."
+        },
+        "coefficient_height": {
+          "value": 48,
+          "status": "exact",
+          "source": "Derived from machine_source under the database convention."
+        },
+        "geometric_degree": {
+          "value": null,
+          "status": "uncomputed",
+          "source": "No function-field degree certificate is cited for this representative."
+        },
+        "monodromy": {
+          "value": null,
+          "action": null,
+          "status": "uncomputed",
+          "source": "No monodromy certificate is cited for this representative."
+        },
+        "boundary_prime_count": {
+          "value": null,
+          "status": "uncomputed",
+          "source": "Canonical boundary export not computed."
+        },
+        "puncture_count": {
+          "value": null,
+          "status": "uncomputed",
+          "source": "Canonical boundary export not computed."
+        },
+        "stable_moduli_dimension": {
+          "value": null,
+          "status": "not_established",
+          "source": "No family-level stable-moduli image is defined."
+        },
+        "rank_and_nilpotency_indices": [
+          {
+            "operator": "JH",
+            "rank": {
+              "value": 18,
+              "status": "exact",
+              "source": "machine_source"
+            },
+            "nilpotency_index": {
+              "value": 18,
+              "status": "exact",
+              "source": "machine_source"
+            }
+          }
+        ],
+        "formal_verification_status": {
+          "status": "none",
+          "scope": "Exact characteristic-zero rank, polynomial nilpotency, Jacobian, and collision certificates exist; no proof-assistant certificate.",
+          "source": "MATH_STATUS.json#LR2"
+        }
+      },
+      "auxiliary_measures": {
+        "correction_component_monomial_terms": 60
+      }
+    },
+    {
+      "id": "bcw24-rank-reduced",
+      "name": "Circuit-redesigned 24-variable rank-17 cubic collision",
+      "class": "cubic_homogeneous_keller_map",
+      "parameters": {},
+      "machine_source": "artifacts/generated-results/rank_reduced_bcw_24_counterexample.json",
+      "sources": [
+        "extended-geometry/RESTRICTED_MINIMA_FRONTIER.md",
+        "artifacts/generated-results/rank_reduced_bcw_24_counterexample.json",
+        "MATH_STATUS.json#LR2"
+      ],
+      "measures": {
+        "source_dimension": {
+          "value": 24,
+          "status": "exact",
+          "source": "machine_source"
+        },
+        "coordinate_degree_vector": {
+          "value": [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 1],
+          "status": "exact",
+          "source": "Derived from machine_source F=X+H."
+        },
+        "support_vector": {
+          "value": [3, 9, 11, 2, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 3, 3, 4, 11, 15, 2, 2, 3, 3, 1],
+          "total": 93,
+          "status": "exact",
+          "source": "Derived from machine_source F=X+H."
+        },
+        "coefficient_height": {
+          "value": 48,
+          "status": "exact",
+          "source": "Derived from machine_source under the database convention."
+        },
+        "geometric_degree": {
+          "value": null,
+          "status": "uncomputed",
+          "source": "No function-field degree certificate is cited for this representative."
+        },
+        "monodromy": {
+          "value": null,
+          "action": null,
+          "status": "uncomputed",
+          "source": "No monodromy certificate is cited for this representative."
+        },
+        "boundary_prime_count": {
+          "value": null,
+          "status": "uncomputed",
+          "source": "Canonical boundary export not computed."
+        },
+        "puncture_count": {
+          "value": null,
+          "status": "uncomputed",
+          "source": "Canonical boundary export not computed."
+        },
+        "stable_moduli_dimension": {
+          "value": null,
+          "status": "not_established",
+          "source": "No family-level stable-moduli image is defined."
+        },
+        "rank_and_nilpotency_indices": [
+          {
+            "operator": "JH",
+            "rank": {
+              "value": 17,
+              "status": "exact",
+              "source": "machine_source"
+            },
+            "nilpotency_index": {
+              "value": 18,
+              "status": "exact",
+              "source": "machine_source"
+            }
+          }
+        ],
+        "formal_verification_status": {
+          "status": "none",
+          "scope": "Exact characteristic-zero rank, polynomial nilpotency, Jacobian, and collision certificates exist; no proof-assistant certificate.",
+          "source": "MATH_STATUS.json#LR2"
+        }
+      },
+      "auxiliary_measures": {
+        "correction_component_monomial_terms": 69
+      }
+    },
+    {
+      "id": "hn42-cotangent-lift",
+      "name": "42-variable homogeneous quartic Hessian-nilpotent cotangent lift",
+      "class": "gradient_keller_map",
+      "parameters": {},
+      "sources": [
+        "extended-geometry/FIXED_RANK_HESSIAN_FRONTIER.md",
+        "extended-geometry/MINIMAL_COUNTEREXAMPLE_SCOREBOARD.md"
+      ],
+      "measures": {
+        "source_dimension": {
+          "value": 42,
+          "status": "exact",
+          "source": "extended-geometry/FIXED_RANK_HESSIAN_FRONTIER.md"
+        },
+        "coordinate_degree_vector": {
+          "value": null,
+          "status": "uncomputed",
+          "source": "Every correction coordinate has degree at most three, but the exact 42-entry vector has not been extracted."
+        },
+        "support_vector": {
+          "value": null,
+          "total": null,
+          "status": "uncomputed",
+          "source": "The note records 309 nonzero Hessian entries, not the expanded gradient-coordinate support vector."
+        },
+        "coefficient_height": {
+          "value": null,
+          "status": "uncomputed",
+          "source": "The displayed orthogonal/Witt normalization must be fixed before comparing rational heights."
+        },
+        "geometric_degree": {
+          "value": null,
+          "status": "uncomputed",
+          "source": "Noninjectivity is certified, but a function-field degree is not recorded."
+        },
+        "monodromy": {
+          "value": null,
+          "action": null,
+          "status": "uncomputed",
+          "source": "No monodromy certificate is cited."
+        },
+        "boundary_prime_count": {
+          "value": null,
+          "status": "uncomputed",
+          "source": "No canonical boundary export is cited."
+        },
+        "puncture_count": {
+          "value": null,
+          "status": "uncomputed",
+          "source": "No canonical boundary export is cited."
+        },
+        "stable_moduli_dimension": {
+          "value": null,
+          "status": "not_established",
+          "source": "No family-level stable-moduli image is defined."
+        },
+        "rank_and_nilpotency_indices": [
+          {
+            "operator": "Hess(P)",
+            "rank": {
+              "value": 38,
+              "status": "exact",
+              "source": "extended-geometry/FIXED_RANK_HESSIAN_FRONTIER.md"
+            },
+            "nilpotency_index": {
+              "value": null,
+              "status": "uncomputed",
+              "source": "Hessian nilpotence is exact, but its exact polynomial nilpotency index is not stated in the cited note."
+            }
+          }
+        ],
+        "formal_verification_status": {
+          "status": "none",
+          "scope": "Exact CAS rank and nilpotence certificates exist; no proof-assistant certificate.",
+          "source": "extended-geometry/FIXED_RANK_HESSIAN_FRONTIER.md"
+        }
+      }
+    },
+    {
+      "id": "hn44-rank37-cotangent-lift",
+      "name": "44-variable homogeneous quartic Hessian-rank-37 cotangent lift",
+      "class": "gradient_keller_map",
+      "parameters": {},
+      "machine_source": "artifacts/generated-results/hessian_rank_reduced_bcw_22_counterexample.json",
+      "sources": [
+        "extended-geometry/RESTRICTED_MINIMA_FRONTIER.md",
+        "extended-geometry/FIXED_RANK_HESSIAN_FRONTIER.md",
+        "artifacts/generated-results/hessian_rank_reduced_bcw_22_counterexample.json",
+        "MATH_STATUS.json#LR3"
+      ],
+      "measures": {
+        "source_dimension": {
+          "value": 44,
+          "status": "exact",
+          "source": "machine_source homogeneous_quartic_HN_lift.dimension"
+        },
+        "coordinate_degree_vector": {
+          "value": null,
+          "status": "uncomputed",
+          "source": "Every correction coordinate has degree at most three, but the exact 44-entry vector has not been extracted."
+        },
+        "support_vector": {
+          "value": null,
+          "total": null,
+          "status": "uncomputed",
+          "source": "The source artifact stores the cubic H, not the fully expanded 44-coordinate gradient after orthogonal change."
+        },
+        "coefficient_height": {
+          "value": null,
+          "status": "not_defined",
+          "source": "The displayed lift is over QQ(I); a rational height convention after descent has not been fixed."
+        },
+        "geometric_degree": {
+          "value": null,
+          "status": "uncomputed",
+          "source": "Noninjectivity is certified, but a function-field degree is not recorded."
+        },
+        "monodromy": {
+          "value": null,
+          "action": null,
+          "status": "uncomputed",
+          "source": "No monodromy certificate is cited."
+        },
+        "boundary_prime_count": {
+          "value": null,
+          "status": "uncomputed",
+          "source": "No canonical boundary export is cited."
+        },
+        "puncture_count": {
+          "value": null,
+          "status": "uncomputed",
+          "source": "No canonical boundary export is cited."
+        },
+        "stable_moduli_dimension": {
+          "value": null,
+          "status": "not_established",
+          "source": "No family-level stable-moduli image is defined."
+        },
+        "rank_and_nilpotency_indices": [
+          {
+            "operator": "Hess(P)",
+            "rank": {
+              "value": 37,
+              "status": "exact",
+              "source": "machine_source"
+            },
+            "nilpotency_index": {
+              "value": null,
+              "status": "uncomputed",
+              "source": "The stored value 35 is explicitly only a finite-field specialization diagnostic, not an exact polynomial-matrix index."
+            }
+          }
+        ],
+        "formal_verification_status": {
+          "status": "none",
+          "scope": "Exact characteristic-zero Hessian rank and exact structural nilpotence certificates exist; no proof-assistant certificate.",
+          "source": "MATH_STATUS.json#LR3"
+        }
+      },
+      "diagnostics": {
+        "sampled_hessian_nilpotency_index": 35,
+        "status": "diagnostic_only"
+      }
+    },
+    {
+      "id": "universal-atomic-map-U_N",
+      "name": "Promoted universal atomic map U_N",
+      "class": "keller_map_family",
+      "parameters": {
+        "N": "integer, N>=3; this denotes one fixed map in each N, not a moduli family of maps"
+      },
+      "sources": [
+        "verified/UNIVERSAL_RELATIVE_KELLER_MAP.md",
+        "formal/finite-etale-keller/README.md",
+        "MATH_STATUS.json#UAM1"
+      ],
+      "measures": {
+        "source_dimension": {
+          "value": "N",
+          "status": "theorem",
+          "source": "verified/UNIVERSAL_RELATIVE_KELLER_MAP.md"
+        },
+        "coordinate_degree_vector": {
+          "value": null,
+          "status": "uncomputed",
+          "source": "The literal all-N promoted coordinate block exists, but its exact ordinary-degree vector has not been exported to this census."
+        },
+        "support_vector": {
+          "value": null,
+          "total": null,
+          "status": "uncomputed",
+          "source": "The literal all-N promoted coordinate block has not been expanded into a support formula."
+        },
+        "coefficient_height": {
+          "value": null,
+          "status": "not_defined",
+          "source": "N varies and no integral normalization for comparing the promoted coefficient compiler has been selected."
+        },
+        "geometric_degree": {
+          "value": "N",
+          "status": "theorem",
+          "source": "verified/UNIVERSAL_RELATIVE_KELLER_MAP.md"
+        },
+        "monodromy": {
+          "value": "S_N",
+          "action": "natural action on the N generic inverse roots",
+          "status": "theorem",
+          "source": "verified/UNIVERSAL_RELATIVE_KELLER_MAP.md"
+        },
+        "boundary_prime_count": {
+          "value": null,
+          "status": "uncomputed",
+          "source": "Expected to be inherited from the promoted quadratic-gauge block under identity parameters, but the exact all-N canonical export is not cited here."
+        },
+        "puncture_count": {
+          "value": null,
+          "status": "uncomputed",
+          "source": "Expected to be inherited from the quadratic-gauge block, but the exact promoted canonical export is not cited here."
+        },
+        "stable_moduli_dimension": {
+          "value": null,
+          "status": "not_applicable",
+          "source": "For each N this row is one fixed stable class; the dimension of its fiber-parameter atlas is a different invariant and is not entered as stable-moduli dimension."
+        },
+        "rank_and_nilpotency_indices": [
+          {
+            "operator": "DU_N",
+            "rank": {
+              "value": "N",
+              "status": "theorem",
+              "source": "det(DU_N)=1"
+            },
+            "nilpotency_index": {
+              "value": null,
+              "status": "not_applicable",
+              "source": "DU_N is invertible and no nilpotent-correction operator is specified."
+            }
+          }
+        ],
+        "formal_verification_status": {
+          "status": "partial",
+          "scope": "Lean verifies the promoted coefficient compiler, quotient-algebra equivalence, quartic cards, literal polynomial self-map, full Jacobian block, and determinant one. The literal full-fiber bridge, geometric degree, monodromy, and atomicity are not formalized.",
+          "source": "MATH_STATUS.json#UAM1"
+        }
+      }
+    },
+    {
+      "id": "meng-yang-doubled-foundational-6",
+      "name": "Six-variable doubled foundational Keller potential",
+      "class": "constant_hessian_potential",
+      "parameters": {},
+      "sources": [
+        "MENG_YANG_SCHUR_DESCENT_BRIDGE.md",
+        "MATH_STATUS.json#MYSD1"
+      ],
+      "measures": {
+        "source_dimension": {
+          "value": 6,
+          "status": "exact",
+          "source": "Phi(x,y)=<y,F(x)> for the three-variable foundational map."
+        },
+        "coordinate_degree_vector": {
+          "value": null,
+          "status": "uncomputed",
+          "source": "This row concerns the gradient map of the potential; its exact six-entry degree vector has not been expanded."
+        },
+        "support_vector": {
+          "value": null,
+          "total": null,
+          "status": "uncomputed",
+          "source": "The exact six-coordinate gradient support has not been exported."
+        },
+        "coefficient_height": {
+          "value": null,
+          "status": "uncomputed",
+          "source": "No fixed integral normalization has been entered."
+        },
+        "geometric_degree": {
+          "value": null,
+          "status": "uncomputed",
+          "source": "The doubled gradient map's function-field degree is not part of MYSD1."
+        },
+        "monodromy": {
+          "value": null,
+          "action": null,
+          "status": "uncomputed",
+          "source": "Not part of MYSD1."
+        },
+        "boundary_prime_count": {
+          "value": null,
+          "status": "uncomputed",
+          "source": "No canonical boundary export is cited."
+        },
+        "puncture_count": {
+          "value": null,
+          "status": "uncomputed",
+          "source": "No canonical boundary export is cited."
+        },
+        "stable_moduli_dimension": {
+          "value": null,
+          "status": "not_established",
+          "source": "No family-level moduli image is defined."
+        },
+        "rank_and_nilpotency_indices": [
+          {
+            "operator": "Hess(Phi)",
+            "rank": {
+              "value": 6,
+              "status": "exact",
+              "source": "det Hess(Phi)=-4"
+            },
+            "nilpotency_index": {
+              "value": null,
+              "status": "not_applicable",
+              "source": "The Hessian is invertible, not nilpotent."
+            }
+          }
+        ],
+        "formal_verification_status": {
+          "status": "none",
+          "scope": "The determinant identities have exact symbolic replays, but no proof-assistant certificate.",
+          "source": "MATH_STATUS.json#MYSD1"
+        }
+      }
+    },
+    {
+      "id": "meng-yang-schur-descended-5",
+      "name": "Five-variable Meng-Yang Schur-descended potential",
+      "class": "constant_hessian_potential",
+      "parameters": {
+        "representative": "v2, Psi=A^2+13A+2B"
+      },
+      "sources": [
+        "MENG_YANG_SCHUR_DESCENT_BRIDGE.md",
+        "MATH_STATUS.json#MYSD1"
+      ],
+      "measures": {
+        "source_dimension": {
+          "value": 5,
+          "status": "exact",
+          "source": "MENG_YANG_SCHUR_DESCENT_BRIDGE.md"
+        },
+        "coordinate_degree_vector": {
+          "value": null,
+          "status": "uncomputed",
+          "source": "The potential has degree 14, but the exact five-coordinate gradient degree vector has not been exported."
+        },
+        "support_vector": {
+          "value": null,
+          "total": null,
+          "status": "uncomputed",
+          "source": "The potential has 42 monomials; this is not the same as the required gradient-coordinate support vector."
+        },
+        "coefficient_height": {
+          "value": null,
+          "status": "uncomputed",
+          "source": "No expanded gradient height has been entered."
+        },
+        "geometric_degree": {
+          "value": null,
+          "status": "uncomputed",
+          "source": "Schur descent preserves the selected collision and constant Hessian determinant, not a proved function-field degree."
+        },
+        "monodromy": {
+          "value": null,
+          "action": null,
+          "status": "uncomputed",
+          "source": "Not part of MYSD1."
+        },
+        "boundary_prime_count": {
+          "value": null,
+          "status": "uncomputed",
+          "source": "No canonical boundary export is cited."
+        },
+        "puncture_count": {
+          "value": null,
+          "status": "uncomputed",
+          "source": "No canonical boundary export is cited."
+        },
+        "stable_moduli_dimension": {
+          "value": null,
+          "status": "not_established",
+          "source": "No family-level moduli image is defined."
+        },
+        "rank_and_nilpotency_indices": [
+          {
+            "operator": "Hess(Psi)",
+            "rank": {
+              "value": 5,
+              "status": "exact",
+              "source": "det Hess(Psi)=128"
+            },
+            "nilpotency_index": {
+              "value": null,
+              "status": "not_applicable",
+              "source": "The Hessian is invertible, not nilpotent."
+            }
+          }
+        ],
+        "formal_verification_status": {
+          "status": "none",
+          "scope": "Degree 14, potential support 42, determinant 128, and the y=0 collision have exact replays, but no proof-assistant certificate.",
+          "source": "MATH_STATUS.json#MYSD1"
+        }
+      },
+      "auxiliary_measures": {
+        "potential_total_degree": 14,
+        "potential_support": 42
+      }
+    }
+  ],
+  "transformations": [
+    {
+      "id": "qg-quartic-rational-height-balancing",
+      "kind": "polynomial_left_right_equivalence",
+      "status": "theorem",
+      "from": "quadratic-gauge-quartic-sparse-naive",
+      "to": "quadratic-gauge-quartic-sparse-balanced",
+      "source": "cancellation/NO_ALGEBRAIC_TORUS_EQUIVARIANCE.md, equations (4f)-(4g).",
+      "preserved_measure_paths": [
+        "source_dimension.value",
+        "coordinate_degree_vector.value",
+        "support_vector.value",
+        "support_vector.total",
+        "geometric_degree.value",
+        "monodromy.value",
+        "boundary_prime_count.value",
+        "puncture_count.value",
+        "stable_moduli_dimension.value"
+      ],
+      "objectives": [
+        {
+          "measure_path": "coefficient_height.value",
+          "direction": "minimize",
+          "before": 2248704,
+          "after": 21875,
+          "status": "exact"
+        }
+      ],
+      "preserved_claims": [
+        "determinant one",
+        "complete four-point collision after transporting the points",
+        "stable polynomial left-right class"
+      ],
+      "side_effects": [
+        "Collision-coordinate height drops from 24820 to 19856 under the separately stated point-height convention."
+      ]
+    },
+    {
+      "id": "qg-quartic-coefficient-only-height-descent",
+      "kind": "polynomial_left_right_equivalence",
+      "status": "exact_certificate",
+      "from": "quadratic-gauge-quartic-sparse-balanced",
+      "to": "quadratic-gauge-quartic-coefficient-optimized-grid",
+      "source": "cancellation/QUARTIC_LR_SPARSITY_SEARCH.md and artifacts/generated-results/quartic_lr_sparsity_search.json.",
+      "preserved_measure_paths": [
+        "source_dimension.value",
+        "coordinate_degree_vector.value",
+        "support_vector.value",
+        "support_vector.total",
+        "geometric_degree.value",
+        "monodromy.value",
+        "boundary_prime_count.value",
+        "puncture_count.value",
+        "stable_moduli_dimension.value"
+      ],
+      "objectives": [
+        {
+          "measure_path": "coefficient_height.value",
+          "direction": "minimize",
+          "before": 21875,
+          "after": 4648,
+          "status": "exact"
+        }
+      ],
+      "preserved_claims": [
+        "determinant one",
+        "complete four-point collision after transporting the points",
+        "stable polynomial left-right class"
+      ],
+      "side_effects": [
+        "Collision-coordinate height increases from 19856 to 49640.",
+        "The value 4648 is optimal only in the declared 25281-point rational grid; the strict transformation and its height are exact, but global coefficient-height optimality is not claimed."
+      ]
+    },
+    {
+      "id": "bcw21-sparse-linear-conjugation",
+      "kind": "linear_conjugation",
+      "status": "exact_certificate",
+      "from": "bcw21-original",
+      "to": "bcw21-sparse-conjugate",
+      "source": "extended-geometry/LOW_COMPLEXITY_CUBIC_KELLER.md and the two machine-source artifacts.",
+      "preserved_measure_paths": [
+        "source_dimension.value",
+        "coordinate_degree_vector.value",
+        "rank_and_nilpotency_indices.0.operator",
+        "rank_and_nilpotency_indices.0.rank.value",
+        "rank_and_nilpotency_indices.0.nilpotency_index.value"
+      ],
+      "objectives": [
+        {
+          "measure_path": "support_vector.total",
+          "direction": "minimize",
+          "before": 81,
+          "after": 74,
+          "status": "exact"
+        },
+        {
+          "measure_path": "coefficient_height.value",
+          "direction": "minimize",
+          "before": 48,
+          "after": 36,
+          "status": "exact"
+        }
+      ],
+      "preserved_claims": [
+        "determinant one",
+        "noninjective collision after linear transport",
+        "linear conjugacy class",
+        "all function-field and canonical-boundary invariants, although their common database values remain uncomputed"
+      ],
+      "side_effects": [
+        "The support vector is not componentwise monotone: the certified scalar objective is its total.",
+        "The number of nonzero entries of JH increases from 92 to 96."
+      ]
+    },
+    {
+      "id": "bcw-circuit-redesign-index",
+      "kind": "construction_replacement",
+      "status": "exact_certificate",
+      "from": "bcw21-sparse-conjugate",
+      "to": "bcw22-index-reduced",
+      "source": "extended-geometry/RESTRICTED_MINIMA_FRONTIER.md",
+      "preserved_measure_paths": [
+        "rank_and_nilpotency_indices.0.operator",
+        "rank_and_nilpotency_indices.0.rank.value"
+      ],
+      "objectives": [
+        {
+          "measure_path": "rank_and_nilpotency_indices.0.nilpotency_index.value",
+          "direction": "minimize",
+          "before": 19,
+          "after": 18,
+          "status": "exact"
+        }
+      ],
+      "preserved_claims": [
+        "cubic homogeneity",
+        "identity linear part",
+        "determinant one",
+        "noninjectivity"
+      ],
+      "side_effects": [
+        "Source dimension increases from 21 to 22.",
+        "This is a redesigned reduction circuit, not an equivalence between the two displayed maps."
+      ]
+    },
+    {
+      "id": "bcw-circuit-redesign-rank",
+      "kind": "construction_replacement",
+      "status": "exact_certificate",
+      "from": "bcw22-index-reduced",
+      "to": "bcw24-rank-reduced",
+      "source": "extended-geometry/RESTRICTED_MINIMA_FRONTIER.md",
+      "preserved_measure_paths": [
+        "rank_and_nilpotency_indices.0.operator",
+        "rank_and_nilpotency_indices.0.nilpotency_index.value"
+      ],
+      "objectives": [
+        {
+          "measure_path": "rank_and_nilpotency_indices.0.rank.value",
+          "direction": "minimize",
+          "before": 18,
+          "after": 17,
+          "status": "exact"
+        }
+      ],
+      "preserved_claims": [
+        "cubic homogeneity",
+        "identity linear part",
+        "determinant one",
+        "noninjectivity"
+      ],
+      "side_effects": [
+        "Source dimension increases from 22 to 24.",
+        "This is a redesigned reduction circuit, not an equivalence between the two displayed maps."
+      ]
+    },
+    {
+      "id": "cotangent-circuit-redesign-rank",
+      "kind": "construction_replacement",
+      "status": "exact_certificate",
+      "from": "hn42-cotangent-lift",
+      "to": "hn44-rank37-cotangent-lift",
+      "source": "extended-geometry/FIXED_RANK_HESSIAN_FRONTIER.md",
+      "preserved_measure_paths": [
+        "rank_and_nilpotency_indices.0.operator"
+      ],
+      "objectives": [
+        {
+          "measure_path": "rank_and_nilpotency_indices.0.rank.value",
+          "direction": "minimize",
+          "before": 38,
+          "after": 37,
+          "status": "exact"
+        }
+      ],
+      "preserved_claims": [
+        "homogeneous quartic Hessian-nilpotent potential",
+        "noninjective gradient Keller map"
+      ],
+      "side_effects": [
+        "Source dimension increases from 42 to 44.",
+        "The two rows optimize different Pareto coordinates."
+      ]
+    },
+    {
+      "id": "meng-yang-one-pivot-schur-descent",
+      "kind": "schur_elimination",
+      "status": "theorem",
+      "from": "meng-yang-doubled-foundational-6",
+      "to": "meng-yang-schur-descended-5",
+      "source": "MENG_YANG_SCHUR_DESCENT_BRIDGE.md",
+      "preserved_measure_paths": [],
+      "objectives": [
+        {
+          "measure_path": "source_dimension.value",
+          "direction": "minimize",
+          "before": 6,
+          "after": 5,
+          "status": "exact"
+        }
+      ],
+      "preserved_claims": [
+        "nonzero constant Hessian determinant, with the stated scalar change",
+        "the selected equal-gradient collision after choosing mu=t_0-lambda A_0"
+      ],
+      "side_effects": [
+        "Geometric degree, monodromy, boundary data, support, and height are not proved preserved.",
+        "The affine pivot is consumed, so a second descent is not automatic."
+      ]
+    }
+  ],
+  "search_hypotheses": [
+    {
+      "id": "torus-height-lattice-descent",
+      "status": "proposed",
+      "transformation_family": "Integral or rational diagonal source-target scalings inside a proved moduli-torus orbit.",
+      "objectives": [
+        "coefficient_height",
+        "collision_point_height"
+      ],
+      "required_invariants": [
+        "coordinate_degree_vector",
+        "support_vector",
+        "geometric_degree",
+        "monodromy",
+        "canonical boundary ledger",
+        "stable class"
+      ],
+      "next_exact_test": "Convert exponent valuations of every expanded coefficient into a finite convex piecewise-linear minimax problem, then certify the rational optimum prime by prime."
+    },
+    {
+      "id": "sparse-triangular-lr-descent",
+      "status": "proposed",
+      "transformation_family": "Bounded triangular source and target shears, scored by total support first and height second.",
+      "objectives": [
+        "support_vector.total",
+        "coefficient_height"
+      ],
+      "required_invariants": [
+        "polynomial left-right class",
+        "geometric_degree",
+        "monodromy",
+        "canonical boundary ledger"
+      ],
+      "next_exact_test": "Replace greedy single moves by certified two-move neighborhoods with neutral setup moves, as the 21-variable conjugation shows strict greed can miss a descent."
+    },
+    {
+      "id": "coordinate-pair-dimension-descent",
+      "status": "proposed",
+      "transformation_family": "Find source h and target g with g composed with F equal to h, then restrict h=0 after degree-preserving target cleanup.",
+      "objectives": [
+        "source_dimension",
+        "coordinate_degree_vector",
+        "support_vector.total"
+      ],
+      "required_invariants": [
+        "constant Jacobian",
+        "selected collision",
+        "noninjectivity"
+      ],
+      "separately_recertify": [
+        "geometric_degree",
+        "monodromy",
+        "boundary-prime count",
+        "puncture count"
+      ],
+      "next_exact_test": "Run the coordinate-pair compiler on the 22- and 24-variable circuit witnesses, using their exact kernel and identity-output relations as candidate coordinates."
+    },
+    {
+      "id": "rank-index-circuit-rewrite",
+      "status": "active",
+      "transformation_family": "Rewrite the degree-lowering polynomial circuit before homogenization, then quotient exact constant kernels.",
+      "objectives": [
+        "generic rank of JH",
+        "nilpotency index of JH",
+        "source dimension"
+      ],
+      "required_invariants": [
+        "cubic homogeneity",
+        "identity linear part",
+        "constant Jacobian",
+        "noninjectivity"
+      ],
+      "next_exact_test": "Search for a single circuit dominating both incumbents (dimension<=22, rank<=17, index<=18), rather than optimizing rank and index in separate larger witnesses."
+    },
+    {
+      "id": "schur-pivot-compression",
+      "status": "active_with_obstructions",
+      "transformation_family": "Polynomial Schur elimination of an affine pivot with singular reduced Hessian pencil.",
+      "objectives": [
+        "source_dimension"
+      ],
+      "required_invariants": [
+        "nonzero constant Hessian determinant",
+        "selected equal-gradient collision"
+      ],
+      "separately_recertify": [
+        "geometric degree",
+        "monodromy",
+        "boundary data",
+        "support",
+        "coefficient height"
+      ],
+      "next_exact_test": "Search only mixed source-dual or coisotropic pivots; the pure-source and constant dual two-pivot routes are already excluded by the cited continuation audits."
+    }
+  ]
+}

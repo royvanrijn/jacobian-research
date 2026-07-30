@@ -240,14 +240,36 @@ unramified factorization-type theorem.
 These ingredients divide the program cleanly into arithmetic input,
 cover-preserving Jacobian completion, and affine-space descent.
 
-## 7. First pilot groups
+## 7. Programme 3 queue and current checkpoints
 
-The most informative order is not simply increasing group size.
+The systematic queue is:
 
-1. **Nonregular cyclic and dihedral actions.** Kummer and Chebyshev-type
-   presentations give explicit covers, but naturally introduce tori and
-   quotient boundaries. Regular actions are excluded for absolute polynomial
-   Keller maps by the Galois-case invertibility theorem.
+| stage | groups or actions | first model to audit | current repository state |
+|---:|---|---|---|
+| 1 | cyclic and dihedral | Kummer and Dickson/Chebyshev incidence | cyclic absolute no-go and complete uniform dihedral chart ledger |
+| 2 | \(A_4,S_4,A_5\) | oriented discriminants and low-dimensional generic polynomials | \(A_4\) has the advanced frontier below; \(S_4,A_5\) absolute ledgers are queued |
+| 3 | Frobenius groups | semidirect-product generic polynomials | \(F_{20}\) has a universal smooth-affine chart; absolute descent is open |
+| 4 | \(\operatorname{PSL}_2(\mathbb F_q)\) | point/line and low-index subgroup torsors | queued |
+| 5 | affine linear groups | natural affine actions and additive-polynomial invariants | \(F_{20}\) is the first overlap with stage 3; the general audit is queued |
+| 6 | selected Gassmann pairs | common-closure point/subspace actions | the degree-seven \(\operatorname{GL}_3(\mathbb F_2)\) pair has relative and Cox outputs; absolute descent is open |
+
+Every row is to be reported with the common eight-field card: invariant
+ring, discriminant/orientation cover, boundary unit lattice, class group,
+derivative units, essential dimension, affine-modification candidates, and
+the exact geometric/arithmetic monodromy distinction.
+
+The current concrete checkpoints are:
+
+1. [**Cyclic and dihedral
+   actions.**](extended-geometry/ABSOLUTE_INVERSE_GALOIS_CYCLIC_DIHEDRAL_AUDIT.md)
+   Every faithful transitive cyclic action is regular, so the Galois-case
+   theorem excludes nontrivial cyclic absolute inverse monodromy altogether.
+   The natural degree-\(n\) dihedral action is nonregular.  Its Dickson
+   incidence gives polynomial invariant rings, an exact discriminant and
+   boundary-unit ledger, and a derivative-unit determinant-one chart.  The
+   odd orientation cover has an \(A_{n-1}\) class-group obstruction, while
+   direct one-coordinate polynomial pole clearing is excluded in every
+   degree.  Coupled affine modifications remain open.
 2. [**\(A_N\) in its natural
    action.**](extended-geometry/A4_KELLER_INVERSE_COVER.md) The
    square-discriminant condition is conceptually minimal, and the oriented

@@ -28,6 +28,8 @@ PROOF_TYPES = {
     "formal",
     "reproduction",
     "counterexample",
+    "exact_symbolic",
+    "exact_modular",
     "not-applicable",
 }
 PRIORITIES = {"core", "derived", "reference", "primary", "parked"}
@@ -45,7 +47,6 @@ ACTIVE_OPEN = {
     "OP-RITT",
     "OP-SIC2-B33",
     "OP-SUSP",
-    "OP-UG3",
 }
 
 
@@ -54,7 +55,7 @@ def load_index() -> dict:
 
 
 def validate_index(index: dict) -> None:
-    assert index.get("schema_version") == 4, "unsupported status schema"
+    assert index.get("schema_version") == 5, "unsupported status schema"
     assert index.get("authority") == "MATH_STATUS.json"
     entries = index.get("entries")
     assert isinstance(entries, list) and entries, "the status registry is empty"

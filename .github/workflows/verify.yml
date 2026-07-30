@@ -105,8 +105,8 @@ jobs:
           if-no-files-found: error
           retention-days: 14
 
-  formal-finite-etale:
-    name: formal-paper-certificates
+  formal_local_lean:
+    name: formal-local-lean
     runs-on: ubuntu-latest
     timeout-minutes: 45
 
@@ -115,7 +115,7 @@ jobs:
         uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
         with:
           persist-credentials: false
-      - name: Reject Lean placeholders and explicit axioms
+      - name: Audit Lean placeholders and explicit axioms
         run: python3 scripts/check_lean_placeholders.py
       - name: Enforce the paper certificate import boundary
         run: python3 scripts/check_paper_certificate_imports.py
@@ -153,14 +153,21 @@ jobs:
         run: >-
           python3 scripts/check_lean_axiom_log.py fixed-hasse
           artifacts/verification/fixed-hasse-paper-certificate.log
+      - name: Build every checked-in Lean project
+        shell: bash
+        run: |
+          set -o pipefail
+          make verify-lean-local 2>&1 |
+            tee artifacts/verification/local-lean-projects.log
       - name: Archive finite-etale Lean logs
         if: always()
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         with:
-          name: formal-paper-certificates-${{ github.sha }}
+          name: formal-local-lean-${{ github.sha }}
           path: |
             artifacts/verification/paper-certificate.log
             artifacts/verification/fixed-hasse-paper-certificate.log
+            artifacts/verification/local-lean-projects.log
           if-no-files-found: error
           retention-days: 14
 
@@ -242,7 +249,7 @@ jobs:
   verification-complete:
     name: verification-complete
     if: ${{ always() }}
-    needs: [verify, formal-lean, formal-finite-etale, papers, macaulay2]
+    needs: [verify, formal-lean, formal_local_lean, papers, macaulay2]
     runs-on: ubuntu-latest
     timeout-minutes: 5
 
@@ -251,12 +258,12 @@ jobs:
         env:
           PYTHON_RESULT: ${{ needs.verify.result }}
           LEAN_RESULT: ${{ needs.formal-lean.result }}
-          FINITE_ETALE_LEAN_RESULT: ${{ needs.formal-finite-etale.result }}
+          LOCAL_LEAN_RESULT: ${{ needs.formal_local_lean.result }}
           PAPERS_RESULT: ${{ needs.papers.result }}
           MACAULAY2_RESULT: ${{ needs.macaulay2.result }}
         run: |
           test "$PYTHON_RESULT" = success
           test "$LEAN_RESULT" = success
-          test "$FINITE_ETALE_LEAN_RESULT" = success
+          test "$LOCAL_LEAN_RESULT" = success
           test "$PAPERS_RESULT" = success
           test "$MACAULAY2_RESULT" = success

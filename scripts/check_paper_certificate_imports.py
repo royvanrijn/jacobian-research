@@ -18,6 +18,7 @@ EXPECTED = {
         "FiniteEtaleKeller.GeneralGaugeFunctionFieldComparison",
         "FiniteEtaleKeller.PageOneTheorem",
         "FiniteEtaleKeller.AbstractFiniteEtale",
+        "FiniteEtaleKeller.CollisionFiber",
     ),
     "FixedHassePaperCertificate.lean": (
         "FiniteEtaleKeller.FixedHasseArithmetic",

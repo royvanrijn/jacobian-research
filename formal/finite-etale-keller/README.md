@@ -71,7 +71,7 @@ lake build FiniteEtaleKeller.PaperCertificate
 | 39 | Determinant of the abstract unchanged-coordinate block `[[I,0],[C,D]]` | implemented |
 | 40 | Quotient-algebra invariance under the compiler's nonzero scalar normalization and translation | implemented |
 | 41 | Literal promoted map on an `N`-element coordinate type, its actual full Jacobian block, and determinant one | implemented |
-| 42 | Generic `S_N` monodromy and primitive-monodromy stable atomicity | theorem-level; not yet Lean |
+| 42 | Generic `S_N` monodromy and primitive-monodromy stable atomicity | Galois/intermediate-field and abstract factorization kernel implemented; geometric bridge, base change, and stabilization not yet Lean |
 | 43 | Whole `Π=1` relative source functor, common target morphism, universal inverse discriminant, and discriminant-open naturality | implemented |
 | 44 | Fitting Newton shoelace formula, translation/`GL₂(ℤ)` invariance, strict shift separation, and cubic count separation | implemented; geometric preservation remains an interface |
 | 45 | Fiber collision algebra `A ⊗[K] A`, diagonal multiplication, obstruction kernel, ordered-pair functor, and obstruction rank `N²-N` | implemented |
@@ -151,9 +151,20 @@ lake build FiniteEtaleKeller.UniversalPromotedGauge
 
 This is deliberately partial formal verification of the universal atomic-map
 theorem.  Lean now proves the literal promoted map and its determinant on an
-explicit `N`-element coordinate type.  Its selected full-fiber/compiler
-bridge, geometric degree, geometric monodromy, and the
-monodromy-to-atomicity theorem are not formalized.
+explicit `N`-element coordinate type.  It also formalizes the
+presentation-independent Galois kernel of monodromy-to-atomicity:
+preprimitive monodromy makes the source intermediate field an atom, and an
+abstract factorization compiler turns that statement into irreducibility in
+an arbitrary noncommutative monoid.  The selected full-fiber/compiler bridge,
+geometric degree, generic symmetric monodromy, the polynomial factor-field
+adapter, the degree-one Keller automorphism lemma, constant-field extension,
+and stabilization are not formalized.
+
+Build the structural kernel with:
+
+```text
+lake build FiniteEtaleKeller.PrimitiveMonodromyAtomicity
+```
 
 After specialization to a field, the compiled quotient can be fed directly
 to `CollisionFiber.lean`; this formally supplies its tensor-square collision

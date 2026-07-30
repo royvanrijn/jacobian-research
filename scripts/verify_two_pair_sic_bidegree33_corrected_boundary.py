@@ -393,6 +393,190 @@ print(
     }
 
 
+def run_incremental_singular(
+    singular: str,
+    export: dict[str, object],
+    prime: int,
+    timeout: int,
+) -> dict[str, object]:
+    """Build the generic coefficient ideal one residual equation at a time."""
+
+    variables = export["ordinary_variables"]
+    polynomials = export["polynomials"]
+    assert prime > 0
+    assert len(polynomials) == 7
+    declarations = "\n".join(
+        f"poly f{index}={polynomial};"
+        for index, polynomial in enumerate(polynomials, start=1)
+    )
+    incremental_steps = "\n".join(
+        f"""
+current=G;
+current[size(current)+1]=f{stage};
+G=std(current);
+print(
+  "STAGE {stage} "+string(dim(G))+" "
+  +string(size(G))+" "+string(G[1]==1)
+);
+"""
+        for stage in range(3, 7)
+    )
+    started = time.monotonic()
+    try:
+        completed = subprocess.run(
+            [singular, "-q"],
+            input=f"""
+ring incremental={prime},({",".join(variables)}),dp;
+option(redSB);
+{declarations}
+ideal current=f1,f2,f7;
+ideal G=std(current);
+print(
+  "STAGE 2 "+string(dim(G))+" "+string(size(G))+" "
+  +string(G[1]==1)
+);
+{incremental_steps}
+""",
+            text=True,
+            capture_output=True,
+            check=True,
+            timeout=timeout,
+        )
+    except subprocess.TimeoutExpired as error:
+        return {
+            "status": "timeout",
+            "seconds": float(timeout),
+            "stdout_tail": (error.stdout or "")[-2000:],
+            "stderr_tail": (error.stderr or "")[-1000:],
+        }
+    elapsed = time.monotonic() - started
+    stages = [
+        {
+            "coefficient_equations": int(stage),
+            "dimension": int(dimension),
+            "basis_size": int(size),
+            "unit_ideal": unit == "1",
+        }
+        for stage, dimension, size, unit in re.findall(
+            r"(?m)^STAGE (\d+) (-?\d+) (\d+) ([01])$",
+            completed.stdout,
+        )
+    ]
+    return {
+        "status": "complete" if len(stages) == 5 else "incomplete",
+        "seconds": round(elapsed, 3),
+        "stages": stages,
+        "stdout_tail": completed.stdout[-2000:],
+        "stderr_tail": completed.stderr[-1000:],
+    }
+
+
+def run_resultant_singular(
+    singular: str,
+    export: dict[str, object],
+    prime: int,
+    timeout: int,
+) -> dict[str, object]:
+    """Eliminate the residual s3 graph before the base Groebner chain."""
+
+    polynomials = export["polynomials"]
+    assert prime > 0
+    assert len(polynomials) == 7
+    declarations = "\n".join(
+        f"poly f{index}={polynomial};"
+        for index, polynomial in enumerate(polynomials[:6], start=1)
+    )
+    resultant_declarations = "\n".join(
+        f"poly R{index-1}=resultant(f1,f{index},s3);"
+        for index in range(2, 7)
+    )
+    resultant_markers = "\n".join(
+        f'print("RESULTANT {index} "+string(size(R{index}))+" "'
+        f'+string(deg(R{index})));'
+        for index in range(1, 6)
+    )
+    incremental_steps = "\n".join(
+        f"""
+current=G;
+current[size(current)+1]=S{stage};
+G=std(current);
+print(
+  "STAGE {stage} "+string(dim(G))+" "
+  +string(size(G))+" "+string(G[1]==1)
+);
+"""
+        for stage in range(3, 6)
+    )
+    started = time.monotonic()
+    try:
+        completed = subprocess.run(
+            [singular, "-q"],
+            input=f"""
+ring incidence=({prime},s1,Q,ell,u),(s3),dp;
+{declarations}
+{resultant_declarations}
+{resultant_markers}
+ring base={prime},(s1,Q,ell,u,uinv),dp;
+option(redSB);
+poly S1=imap(incidence,R1);
+poly S2=imap(incidence,R2);
+poly S3=imap(incidence,R3);
+poly S4=imap(incidence,R4);
+poly S5=imap(incidence,R5);
+poly openFactor={export["open_factor"]};
+poly inverseEquation=uinv*openFactor-1;
+ideal current=S1,S2,inverseEquation;
+ideal G=std(current);
+print(
+  "STAGE 2 "+string(dim(G))+" "+string(size(G))+" "
+  +string(G[1]==1)
+);
+{incremental_steps}
+""",
+            text=True,
+            capture_output=True,
+            check=True,
+            timeout=timeout,
+        )
+    except subprocess.TimeoutExpired as error:
+        return {
+            "status": "timeout",
+            "seconds": float(timeout),
+            "stdout_tail": (error.stdout or "")[-2000:],
+            "stderr_tail": (error.stderr or "")[-1000:],
+        }
+    elapsed = time.monotonic() - started
+    return {
+        "status": "complete",
+        "seconds": round(elapsed, 3),
+        "resultants": [
+            {
+                "coefficient_index": int(index),
+                "terms": int(terms),
+                "degree": int(degree),
+            }
+            for index, terms, degree in re.findall(
+                r"(?m)^RESULTANT (\d+) (\d+) (\d+)$",
+                completed.stdout,
+            )
+        ],
+        "stages": [
+            {
+                "resultants": int(stage),
+                "dimension": int(dimension),
+                "basis_size": int(size),
+                "unit_ideal": unit == "1",
+            }
+            for stage, dimension, size, unit in re.findall(
+                r"(?m)^STAGE (\d+) (-?\d+) (\d+) ([01])$",
+                completed.stdout,
+            )
+        ],
+        "stdout_tail": completed.stdout[-2000:],
+        "stderr_tail": completed.stderr[-1000:],
+    }
+
+
 def deepest_three_pivot_certificate(
     singular: str,
     polynomials: list[str],
@@ -1282,6 +1466,306 @@ for (basisIndex=1;basisIndex<=size(G);basisIndex++)
     }
 
 
+def t0_open_generic_mu6_export(
+    singular: str,
+    prime: int,
+    timeout: int,
+) -> dict[str, object]:
+    """Export the generic six coefficient equations of mu6.
+
+    This is the first successive-common-root step in the t0-open rank-six
+    algebra.  It works over a good finite field, records every denominator
+    introduced by the fibre Groebner basis and normal form, and saturates by
+    that support together with u=s0^-1.
+    """
+
+    assert prime > 18
+    symbols = sp.symbols(" ".join(PARAMETERS))
+    (
+        s0,
+        s1,
+        s2,
+        s3,
+        s4,
+        s5,
+        s6,
+        t0,
+        t1,
+        t2,
+        t3,
+        t4,
+    ) = symbols
+    u = sp.symbols("u")
+
+    def full_moment(order: int) -> sp.Expr:
+        return sum(
+            coefficient
+            * sp.prod(
+                variable**exponent
+                for variable, exponent in zip(symbols, exponent_tuple)
+            )
+            for exponent_tuple, coefficient in exact_moment_terms(order).items()
+        ).subs(t0, 1)
+
+    moments = {order: full_moment(order) for order in range(2, 7)}
+    mu2_coefficient = sp.diff(moments[2], t4)
+    assert mu2_coefficient == 336
+    t4_value = sp.cancel(
+        -(moments[2] - mu2_coefficient * t4) / mu2_coefficient
+    )
+    homogenized_a = (
+        6 * s1**2 * t1
+        - 3 * s1 * s2
+        - 3 * s0 * s1 * t2
+        - 3 * s0 * s2 * t1
+        + 2 * s0 * s3
+        - 3 * s0
+        + s0**2 * t3
+    )
+    homogenized_b = (
+        12 * s0 * s1 * s3
+        + 28 * s1 * t1
+        - 18 * s0 * s1
+        - 9 * s0 * s2**2
+        - 14 * s2
+        - 3 * s0**2 * s4
+        - 2 * s0 * t2
+        - 12 * s0 * t1**2
+    )
+    t3_value = sp.cancel(
+        -(homogenized_a - s0**2 * t3) / s0**2
+    )
+    s4_value = sp.cancel(
+        (homogenized_b + 3 * s0**2 * s4) / (3 * s0**2)
+    )
+    polynomial_variables = (s6, s5, s1, s2, s3, t1, t2, u)
+    transformed: dict[int, sp.Poly] = {}
+    for order in range(3, 7):
+        expression = sp.cancel(
+            moments[order]
+            .subs(t4, t4_value)
+            .subs(t3, t3_value)
+            .subs(s4, s4_value)
+            .subs(s0, 1 / u)
+        )
+        numerator = sp.fraction(expression)[0]
+        transformed[order] = sp.Poly(
+            numerator,
+            *polynomial_variables,
+            domain=sp.QQ,
+        ).clear_denoms(convert=True)[1]
+    assert transformed[3].degree(s6) == 0
+    assert transformed[3].degree(s5) == 0
+    q_adapted, ell_adapted = sp.symbols("Q ell")
+    adapted_variables = (
+        s6,
+        s5,
+        s1,
+        s3,
+        q_adapted,
+        ell_adapted,
+        t2,
+        u,
+    )
+    adapted_replacements = {
+        s2: s1**2 * u - (q_adapted + 13 * u) / 3,
+        t1: s1 * u - ell_adapted,
+    }
+    for order in range(3, 7):
+        transformed[order] = sp.Poly(
+            sp.expand(
+                transformed[order].as_expr().subs(adapted_replacements)
+            ),
+            *adapted_variables,
+            domain=sp.QQ,
+        ).clear_denoms(convert=True)[1]
+
+    def singular_expression(polynomial: sp.Poly) -> str:
+        return sp.sstr(polynomial.as_expr()).replace("**", "^")
+
+    declarations = "\n".join(
+        f"poly p{order}={singular_expression(transformed[order])};"
+        for order in range(3, 7)
+    )
+    completed = subprocess.run(
+        [singular, "-q"],
+        input=f"""
+ring fiber=({prime},s1,s3,Q,ell,t2,u),(s6,s5),dp;
+option(redSB);
+{declarations}
+ideal G=std(p4,p5);
+poly r6=reduce(p6,G);
+proc polynomialLcm(poly left, poly right)
+{{
+  return(left*right/gcd(left,right));
+}}
+poly denominatorSupport=1;
+poly cursor;
+number coefficient;
+int polynomialIndex;
+for(polynomialIndex=1;polynomialIndex<=size(G);polynomialIndex++)
+{{
+  cursor=G[polynomialIndex];
+  while(cursor!=0)
+  {{
+    coefficient=leadcoef(cursor);
+    denominatorSupport=polynomialLcm(
+      denominatorSupport,
+      denominator(coefficient)
+    );
+    cursor=cursor-lead(cursor);
+  }}
+}}
+cursor=r6;
+while(cursor!=0)
+{{
+  coefficient=leadcoef(cursor);
+  print(
+    "COEFF "+string(leadexp(cursor))+" "
+    +string(deg(numerator(coefficient),t2))+" "
+    +string(size(numerator(coefficient)))+" "
+    +string(size(numerator(diff(coefficient,t2))))
+  );
+  denominatorSupport=polynomialLcm(
+    denominatorSupport,
+    denominator(coefficient)
+  );
+  cursor=cursor-lead(cursor);
+}}
+ideal exported=numerator(leadcoef(p3));
+cursor=r6;
+while(cursor!=0)
+{{
+  exported[size(exported)+1]=numerator(leadcoef(cursor));
+  cursor=cursor-lead(cursor);
+}}
+int normalFormSize=size(r6);
+int groebnerSize=size(G);
+int quotientLength=vdim(G);
+ring pivot=({prime},s1,s3,Q,ell,u),(t2),dp;
+ideal E=imap(fiber,exported);
+for(polynomialIndex=2;polynomialIndex<=size(E);polynomialIndex++)
+{{
+  print(
+    "CANDIDATE "+string(polynomialIndex-1)+" "
+    +string(deg(E[polynomialIndex]))+" "
+    +string(size(diff(E[polynomialIndex],t2)))+" "
+    +string(numerator(leadcoef(diff(E[polynomialIndex],t2))))
+  );
+}}
+ideal T=std(E[2]);
+int pivotBasisSize=size(T);
+int pivotLength=vdim(T);
+poly pivotDerivative=leadcoef(E[2]);
+ideal residual;
+int residualIndex=0;
+poly residualPolynomial;
+for(polynomialIndex=1;polynomialIndex<=size(E);polynomialIndex++)
+{{
+  if(polynomialIndex!=2)
+  {{
+    residualPolynomial=reduce(E[polynomialIndex],T);
+    if(residualPolynomial!=0)
+    {{
+      residualIndex++;
+      residual[residualIndex]=numerator(leadcoef(residualPolynomial));
+    }}
+  }}
+}}
+ring ordinary={prime},(s1,s3,Q,ell,u,uinv),dp;
+ideal I=imap(pivot,residual);
+poly Qfactor=Q;
+poly Afactor=33*Q+155*u;
+poly Jfactor=Afactor^2+30420*ell^2;
+poly Kfactor=117*Q+620*u;
+poly Hfactor=Afactor*Kfactor+121680*ell^2;
+poly openFactor=
+  u*Qfactor*Jfactor*Kfactor*Hfactor
+  *imap(pivot,pivotDerivative);
+I[size(I)+1]=uinv*openFactor-1;
+print(
+  "META "+string(groebnerSize)+" "+string(quotientLength)+" "
+  +string(size(I))+" "+string(normalFormSize)+" "
+  +string(pivotBasisSize)+" "+string(pivotLength)
+);
+print("OPEN "+string(openFactor));
+for(polynomialIndex=1;polynomialIndex<=size(I);polynomialIndex++)
+{{
+  print("POLY "+string(I[polynomialIndex]));
+}}
+""",
+        text=True,
+        capture_output=True,
+        check=True,
+        timeout=timeout,
+    )
+    marker = re.search(
+        r"(?m)^META (\d+) (\d+) (\d+) (\d+) (\d+) (\d+)$",
+        completed.stdout,
+    )
+    assert marker is not None, (
+        completed.stdout[:2000],
+        completed.stdout[-4000:],
+        completed.stderr[-2000:],
+    )
+    (
+        groebner_size,
+        quotient_length,
+        equation_count,
+        normal_form_size,
+        pivot_basis_size,
+        pivot_length,
+    ) = marker.groups()
+    assert (groebner_size, quotient_length, equation_count) == (
+        "3",
+        "6",
+        "7",
+    )
+    assert normal_form_size == "6"
+    assert (pivot_basis_size, pivot_length) == ("1", "1")
+    open_marker = re.search(r"(?m)^OPEN (.*)$", completed.stdout)
+    assert open_marker is not None
+    polynomials = re.findall(r"(?m)^POLY (.*)$", completed.stdout)
+    assert len(polynomials) == 7
+    return {
+        "branch": "t0-open generic rank-six coefficient ideal",
+        "characteristic": prime,
+        "base_variables": ["s1", "s3", "Q", "ell", "u"],
+        "ordinary_variables": [
+            "s1",
+            "s3",
+            "Q",
+            "ell",
+            "u",
+            "uinv",
+        ],
+        "fiber_variables": ["s6", "s5"],
+        "groebner_basis_size": 3,
+        "quotient_length": 6,
+        "coefficient_equations": 6,
+        "t2_pivot": {
+            "coefficient_index": 1,
+            "basis_size": 1,
+            "quotient_length": 1,
+            "derivative_in_open_factor": True,
+        },
+        "t2_pivot_candidates": [
+            {
+                "coefficient_index": int(index),
+                "degree": int(degree),
+                "derivative_terms": int(terms),
+                "derivative": derivative,
+            }
+            for index, degree, terms, derivative in re.findall(
+                r"(?m)^CANDIDATE (\d+) (-?\d+) (\d+) (.*)$",
+                completed.stdout,
+            )
+        ],
+        "open_factor": open_marker.group(1),
+        "polynomials": polynomials,
+    }
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument(
@@ -1324,6 +1808,16 @@ def main() -> None:
     parser.add_argument("--t0-zero-branch-table", action="store_true")
     parser.add_argument("--t0-open-rank-six", action="store_true")
     parser.add_argument(
+        "--t0-open-generic-mu6",
+        action="store_true",
+        help=(
+            "solve the six generic mu6 coefficient equations over the "
+            "selected finite field"
+        ),
+    )
+    parser.add_argument("--t0-open-incremental", action="store_true")
+    parser.add_argument("--t0-open-resultants", action="store_true")
+    parser.add_argument(
         "--t0-open-certificate-only",
         action="store_true",
         help=argparse.SUPPRESS,
@@ -1353,6 +1847,53 @@ def main() -> None:
                 sort_keys=True,
             )
         )
+        return
+    if arguments.t0_open_generic_mu6:
+        assert arguments.prime > 18
+        export = t0_open_generic_mu6_export(
+            singular,
+            arguments.prime,
+            arguments.timeout,
+        )
+        result = None
+        if not arguments.export_only:
+            if arguments.t0_open_incremental:
+                result = run_incremental_singular(
+                    singular,
+                    export,
+                    arguments.prime,
+                    arguments.timeout,
+                )
+            elif arguments.t0_open_resultants:
+                result = run_resultant_singular(
+                    singular,
+                    export,
+                    arguments.prime,
+                    arguments.timeout,
+                )
+            else:
+                result = run_msolve(
+                    msolve,
+                    export,
+                    arguments.prime,
+                    arguments.timeout,
+                    arguments.linear_algebra,
+                    arguments.eliminate,
+                )
+        summary = {
+            key: value for key, value in export.items() if key != "polynomials"
+        }
+        summary["exported_polynomial_terms"] = [
+            polynomial.count("+") + polynomial.count("-") + 1
+            for polynomial in export["polynomials"]
+        ]
+        summary["solve"] = result
+        summary["scope"] = (
+            "finite-field generic coefficient-ideal reconnaissance; "
+            "exceptional denominator strata and characteristic zero remain"
+        )
+        summary["reproduction_command"] = " ".join(sys.argv)
+        print(json.dumps(summary, indent=2, sort_keys=True))
         return
     t0_open_result = None
     if arguments.t0_open_rank_six:

@@ -3,8 +3,10 @@
 This note is the active closure protocol for the geometric-degree-three
 minimal-boundary conjecture.  It replaces three qualitative gaps by three
 intrinsic certificates built from the same cubic discriminant package.
-For the global ungraded lower bound `OP-UG3`, the same certificates apply,
-but Certificate P remains open outside the boundary-minimal stratum.
+The former global `OP-UG3` direction is now false: the universal flat cubic
+testbed has a genuinely ungraded specialization with two phantom boundary
+components.  The certificates below remain the active protocol for the
+narrower boundary-minimal cubic classification.
 
 Work over an algebraically closed field of characteristic zero.  Let
 
@@ -235,7 +237,35 @@ pruned rank-three relative Ext presentations are pulled back from the
 parameter origin, again with relative multiplicity six and saturated
 cotangent presentation.  Two raw resolution presentations vary, but the
 variation disappears under pruning.  Consequently the first untested
-smooth quartic direction must use at least four basis tensors.
+smooth quartic direction in that coordinate-subspace audit had to use at
+least four basis tensors.
+
+The separate universal formal-gauge certificate
+[`UNIVERSAL_CUBIC_QUARTIC_KERNEL_SATURATION.md`](UNIVERSAL_CUBIC_QUARTIC_KERNEL_SATURATION.md)
+now closes those remaining smooth directions.  If \(K\) is the graded
+module of compatible tensor corrections and \(G\) is the
+determinant-twisted simultaneous collision-coordinate/coefficient-module
+gauge differential, the exact identities
+\[
+ K=\operatorname{im}G+A\eta,\qquad
+ G L=[x\eta,\ y\eta,\ z\eta]
+\]
+give \(K/\operatorname{im}G\simeq\mathbb Q(-3)\).  Hence every compatible
+term of collision degree at least four is gauge.  Formal equivalence with
+the saturated smooth central fiber and faithful detection of
+\((x,y,z)\)-power torsion by completion prove
+\[
+ H^0_{(x,y,z)}(\Omega)=0
+\]
+over the full 24-parameter smooth family.  This is the universal
+cotangent-saturation theorem, not another finite coordinate sweep.
+
+The same gauge proof has an exact boundary.  For the six singular
+squarefree symbols, \(K/\operatorname{im}G_h\) has positive-dimensional
+support and nonzero quartic part, so formal reduction to the central fiber
+is unavailable.  The verified singular coordinate planes and the
+full-support plane remain saturated, but the six full 24-parameter
+singular families are still open.
 
 For a smooth homogeneous symbol, the obstruction can also be made global.
 The corresponding graded algebra is a normal integral threefold.  Its
@@ -252,9 +282,9 @@ open.
 
 These results leave four sharply separated continuation gates:
 
-1. replace the 10,626 smooth coordinate four-space sweep and the singular
-   coordinate three-space sweeps by a coefficient-independent finite-jet
-   proof, then pass to the universal 24-parameter family;
+1. prove cotangent saturation for the six singular-squarefree universal
+   24-parameter families, or exhibit a torsion class on one of them; the
+   smooth universal family is closed by the formal-gauge certificate;
 2. derive the coefficient \(6\) intrinsically from the Koszul trace
    module, for example as a localized Buchsbaum--Rim or Chern-class charge,
    rather than by orbit-by-orbit elimination;
@@ -295,8 +325,12 @@ Proposition 1.4 already proves that an extra boundary prime cannot lie over
 the critical discriminant: the ramified `(2,1)` boundary sheet and affine
 `(1,1)` sheet exhaust the degree.  The only remaining possibility is a
 separate unramified target divisor, precisely a nonconstant factor of
-`u_F`.  Boundary minimality rules it out; no reduction from an arbitrary
-ungraded cubic to the boundary-minimal stratum is currently proved.
+`u_F`.  Boundary minimality rules it out.  The specialization
+`A=0, gamma=1` in
+[`UNIVERSAL_CUBIC_UNGRADED_TESTBED.md`](UNIVERSAL_CUBIC_UNGRADED_TESTBED.md)
+shows that this alternative actually occurs and can force genuine
+ungradedness, so no universal reduction to the boundary-minimal stratum is
+possible.
 
 ### Certificate G -- coefficient-gauge rigidity
 

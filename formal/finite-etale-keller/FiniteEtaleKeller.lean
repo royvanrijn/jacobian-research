@@ -62,5 +62,6 @@ import FiniteEtaleKeller.UniversalParameterWitnesses
 import FiniteEtaleKeller.AutomaticRealization
 import FiniteEtaleKeller.ExplicitQuintic
 import FiniteEtaleKeller.PaperExampleCorrespondence
+import FiniteEtaleKeller.PrimitiveMonodromyAtomicity
 import FiniteEtaleKeller.HC4QuinticDiagonal
 import FiniteEtaleKeller.SIC2C4FiniteSum
