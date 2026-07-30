@@ -16,28 +16,73 @@ sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(ROOT / "scripts"))
 
 from explore_degree42_ritt_rotated_conormal_flags import (  # noqa: E402
+    ALL_CUTS,
     graph_normal_map,
+    path_flag,
     rotated_source_ideal_data,
     serialize_ideal,
 )
 
 
-def presentation_cache(word: tuple[int, int, int]) -> Path:
+def presentation_cache(
+    word: tuple[int, int, int],
+    omission: int | None = None,
+) -> Path:
     """Return the compressed completed-presentation cache."""
 
     label = "".join(map(str, word))
+    suffix = "" if omission is None else f"_cut{omission}"
     return (
         ROOT
         / "artifacts"
         / "generated-results"
-        / f"degree42_ritt_completed_presentations_{label}.txt.gz"
+        / (
+            f"degree42_ritt_completed_presentations_{label}"
+            f"{suffix}.txt.gz"
+        )
     )
 
 
-def completed_presentation_output(word: tuple[int, int, int]) -> str:
+def source_ideal_with_omission(
+    word: tuple[int, int, int],
+    omission: int,
+) -> list[str]:
+    """Extract one global cut-omission ideal from the boundary cache."""
+
+    (
+        _parameters,
+        _factor_variables,
+        _thick,
+        _thin,
+        boundary,
+        _thick_omission,
+        _thin_omission,
+    ) = rotated_source_ideal_data(word)
+    base_cuts, *_ = path_flag(word)
+    requested_cuts = tuple(sorted(ALL_CUTS - base_cuts))
+    assert omission in requested_cuts
+    blocks: dict[int, list[str]] = {}
+    start = 0
+    for cut in requested_cuts:
+        count = 43 - cut - 42 // cut
+        blocks[cut] = list(boundary[start : start + count])
+        start += count
+    assert start == len(boundary)
+    return [
+        equation
+        for cut in requested_cuts
+        if cut != omission
+        for equation in blocks[cut]
+    ]
+
+
+def completed_presentation_output(
+    word: tuple[int, int, int],
+    omission: int | None = None,
+) -> str:
     """Return two seven-generator presentations over ``Q[tau,zeta]``."""
 
-    cache = presentation_cache(word)
+    cache = presentation_cache(word, omission)
     if cache.is_file():
         with gzip.open(cache, "rt") as source:
             return source.read()
@@ -50,6 +95,8 @@ def completed_presentation_output(word: tuple[int, int, int]) -> str:
         _thick_omission,
         _thin_omission,
     ) = rotated_source_ideal_data(word)
+    if omission is not None:
+        thick = source_ideal_with_omission(word, omission)
     normals, base_coordinates, images = graph_normal_map(
         word, factor_variables
     )
@@ -114,9 +161,17 @@ for(int j=1;j<=ncols(PS);j++){{print(PS[j]);}}
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--word", choices=("237", "327"), required=True)
+    parser.add_argument(
+        "--omission", choices=tuple(map(str, sorted(ALL_CUTS)))
+    )
     arguments = parser.parse_args()
     word = tuple(int(character) for character in arguments.word)
-    print(completed_presentation_output(word))
+    omission = (
+        int(arguments.omission)
+        if arguments.omission is not None
+        else None
+    )
+    print(completed_presentation_output(word, omission))
 
 
 if __name__ == "__main__":

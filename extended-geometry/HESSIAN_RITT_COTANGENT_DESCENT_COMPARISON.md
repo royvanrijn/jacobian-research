@@ -544,6 +544,113 @@ completed split: one must still lift compatible sections to every order.
 They do prove that the cut-\(6\) base-square non-splitting obstruction does
 not transport uniformly to the rotated sectors.
 
+The inverse-limit lifting problem is now closed for both rotated sectors.
+Rather than choosing new sections independently, take the exact order-seven
+tensor presentation and quotient that single module extension by
+\((\tau,\zeta)^q\), for \(q=5,6,7\).  The resulting compatible towers have
+
+\[
+\begin{array}{c|ccc|cc}
+q&\dim K_q&\dim T_q&\dim S_q&
+\operatorname{rank}\delta_q&
+\operatorname{rank}[\delta_q\mid c_q]\\ \hline
+5&12&17&5&55&55\\
+6&15&21&6&84&84\\
+7&18&25&7&119&119.
+\end{array}                                                   \tag{6.16}
+\]
+
+This table is identical for omissions \(14\) and \(21\).  The chosen
+order-seven section reduces exactly to the displayed order-six and
+order-five sections.  The vector spaces of section differences have
+dimensions \(5,6,7\).  Their restriction maps have ranks \(3\) and \(4\),
+so each has a two-dimensional cokernel.  Thus independent finite splitting
+would not by itself justify an inverse limit: a coherence obstruction really
+has room to occur.
+
+The completed presentations remove that ambiguity.  Put
+\(u=1+\tau\) and \(B=\mathbf Q[[\tau,\zeta]]\).  In both sectors the
+spectator module is
+
+\[
+ S_c\cong\mathbf Q[[\tau]]e_4,\qquad \zeta e_4=0.             \tag{6.17}
+\]
+
+For cut \(14\), the total presentation contains
+
+\[
+ -e_5+3u e_6=0,\qquad
+ -\zeta e_4+u\zeta e_5-2\zeta^2e_6=0.
+\]
+
+Consequently
+
+\[
+ s_{14}(e_4)=e_4+(-3u^2+2\zeta)e_6,\qquad
+ \zeta s_{14}(e_4)=0.                                       \tag{6.18}
+\]
+
+For cut \(21\), the relevant relations are
+
+\[
+\begin{aligned}
+ -2e_5+3u e_6-8\zeta e_7&=0,\\
+ -e_6+4u e_7&=0,\\
+ -3\zeta e_4+2u\zeta e_5-4\zeta^2e_6&=0.
+\end{aligned}
+\]
+
+They give
+
+\[
+ s_{21}(e_4)=e_4+(-4u^3+8u\zeta)e_7,\qquad
+ \zeta s_{21}(e_4)=0.                                       \tag{6.19}
+\]
+
+Both displayed elements project to \(e_4\).  Exact reduction of every
+spectator relation under these maps has zero remainder in the corresponding
+total presentation, and the two retraction residuals have zero remainder in
+the spectator presentations.  Hence
+
+\[
+\boxed{0\longrightarrow K_c\longrightarrow T_c
+       \longrightarrow S_c\longrightarrow0
+       \text{ splits over }B,\quad c=14,21.}                 \tag{6.20}
+\]
+
+Equivalently, the completed extension obstruction
+
+\[
+ [\operatorname{id}_{S_c}]
+ \in\operatorname{coker}\!\left(
+ \operatorname{Hom}_B(S_c,T_c)\longrightarrow
+ \operatorname{End}_B(S_c)\right)                           \tag{6.21}
+\]
+
+is zero.  The polynomial sections (6.18)--(6.19) give a point of the full
+inverse limit of section torsors, so the corresponding
+\(\varprojlim^1\)-obstruction class is zero despite the nonsurjective finite
+restriction maps.
+
+This also explains the sector asymmetry in (6.8).  Before
+presentation-first tensoring, the cut-\(21\) quotient-ring fourth jet has
+one extra sector dimension.  After tensoring the presented first-conormal
+modules, both sectors have
+
+\[
+ \dim K_q=3q-3,\qquad \dim T_q=4q-3,\qquad \dim S_q=q
+ \quad(2\leq q\leq7).                                       \tag{6.22}
+\]
+
+Thus the extra cut-\(21\) quotient-ring dimension lies in the non-flat
+base-change/Tor discrepancy; it is not a different completed extension
+rank or a split/non-split asymmetry.  A genuine labelled asymmetry remains:
+the completed corrections are respectively
+\((-3u^2+2\zeta)e_6\) and \((-4u^3+8u\zeta)e_7\).  These different
+polynomials record the omitted composite cut.  Comparing them under the
+actual restriction maps between factor charts is still the separate braid
+coherence problem.
+
 ## 7. Result and remaining proof obligation
 
 The comparison problem now has the following exact status.
@@ -560,17 +667,19 @@ The comparison problem now has the following exact status.
    flag.  In degree forty-two the first conormal flag now transports over
    all six charts, and thin/boundary equality plus first-Postnikov overlap
    vanishing are proved after completion on all three half-braids.
-6. The all-degree finite Ritt presentation remains equivalent to proving
+6. The two rotated first-conormal extensions split after completion, with
+   explicit polynomial sections compatible with every base truncation.
+7. The all-degree finite Ritt presentation remains equivalent to proving
    coherent coefficient transport and homotopy cofinality for the universal
    power move, Dickson move, commuting square, and labelled braid, followed
    by composition base change.
 
-The next concrete calculation is the inverse-limit lifting problem for the
-rotated finite-order sections (starting with cut \(14\) at order five and
-cut \(21\) at order four), followed by verification that the resulting
-completed conormal towers intertwine the braid and commuting-cell
-restrictions.  That would promote the local \(H_1\) comparisons to the full
-degree-forty-two cellular coefficient diagram.
+The next concrete calculation is to transport (6.18)--(6.19) through the
+factor-chart transition maps and verify the braid and commuting-cell
+restrictions.  Completed local splitting is no longer the obstruction;
+labelled restriction coherence is.  Closing it would promote the local
+\(H_1\) comparisons to the full degree-forty-two cellular coefficient
+diagram.
 
 ## Reproduction
 
@@ -581,6 +690,8 @@ Run
 .venv/bin/python scripts/verify_degree42_ritt_cut14_postnikov_overlap.py
 .venv/bin/python scripts/verify_degree42_ritt_cut21_postnikov_overlap.py
 .venv/bin/python scripts/verify_degree42_ritt_cut14_tensor_split_q4.py
+.venv/bin/python scripts/verify_degree42_ritt_inverse_limit_sections.py
+.venv/bin/python scripts/verify_degree42_ritt_completed_splits.py
 ```
 
 The commands write
@@ -589,4 +700,7 @@ The commands write
 and
 `artifacts/generated-results/degree42_ritt_cut21_postnikov_overlap.json`,
 and
-`artifacts/generated-results/degree42_ritt_cut14_tensor_split_q4.json`.
+`artifacts/generated-results/degree42_ritt_cut14_tensor_split_q4.json`,
+`artifacts/generated-results/degree42_ritt_inverse_limit_sections_q5_q7.json`,
+and
+`artifacts/generated-results/degree42_ritt_completed_splits.json`.

@@ -704,7 +704,28 @@ path below are treated as reference artifacts.
 - `degree42_ritt_cut14_tensor_split_q4.json` records its exact
   `9 -> 13 -> 4` module extension, an explicit section, and equal
   coboundary/augmented ranks `32=32`.  It proves splitting through order
-  four only; compatible all-order lifting remains open.
+  four.
+- `degree42_ritt_rotated_tensor_matrices_237_b7_n1.txt.gz` and
+  `degree42_ritt_rotated_tensor_matrices_327_b7_n1.txt.gz` cache the exact
+  order-seven tensor presentations and action reductions for both rotated
+  sectors.
+- `degree42_ritt_inverse_limit_sections_q5_q7.json` constructs orders five
+  and six as quotients of those order-seven modules.  It records compatible
+  sections with dimensions `12 -> 17 -> 5`, `15 -> 21 -> 6`, and
+  `18 -> 25 -> 7` in both sectors, as well as the two-dimensional
+  cokernels of the section-difference restriction maps.
+- `degree42_ritt_completed_presentations_237.txt.gz` and
+  `degree42_ritt_completed_presentations_327.txt.gz` cache the exact
+  two-variable module presentations after killing the seven graph-normal
+  directions.
+- `degree42_ritt_completed_splits.json` records the polynomial completed
+  sections
+  `e4+(-3*(1+tau)^2+2*zeta)*e6` and
+  `e4+(-4*(1+tau)^3+8*(1+tau)*zeta)*e7`.  Exact module reduction proves
+  that both rotated first-conormal extensions split over
+  `Q[[tau,zeta]]`, so their completed extension and inverse-limit torsor
+  obstruction classes vanish.  Full braid restriction coherence is not
+  claimed.
 - `boundary_obstruction_theory.json` records exact module saturation and
   boundary-torsion controls, a finite-jet tower with surjective transitions
   but unbounded annihilation exponents, node and cusp conductor kernels and

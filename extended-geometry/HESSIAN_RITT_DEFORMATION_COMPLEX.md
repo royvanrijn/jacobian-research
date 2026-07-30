@@ -367,13 +367,30 @@ successive conormal extensions; its executable finite-module tower accepts
 any number of layers.  This closes the formal flag-transitivity part of the
 programme.  It does not close the Ritt-specific cellular-descent comparison.
 
+The two rotated degree-forty-two first-conormal extensions are now computed
+separately from the non-split cut-\(6\) tower above.  Compatible order-five,
+order-six, and order-seven sections come from one nested tensor
+presentation.  Exact completed presentations give polynomial sections
+
+\[
+ e_4+(-3(1+\tau)^2+2\zeta)e_6,\qquad
+ e_4+(-4(1+\tau)^3+8(1+\tau)\zeta)e_7
+\]
+
+for cuts \(14\) and \(21\).  Hence both rotated completed extension and
+inverse-limit torsor obstruction classes vanish.  The one-dimensional
+fourth-jet quotient-ring discrepancy is non-flat base-change Tor, while the
+different correction polynomials retain the labelled sector data.
+
 The categorical part of that comparison is now proved in
 [cotangent descent for the Hessian--Ritt diagram](HESSIAN_RITT_COTANGENT_DESCENT_COMPARISON.md):
 the full bar diagram computes the actual cotangent complex, and a complete
-two-skeleton determines \(H^0,H^1\).  The remaining Ritt-specific statement
-is coefficient effectivity of the finite cellular compression.  Genuine
-\(H^2\) also requires the next Coxeter cells; the permutohedron three-cell
-kills the topological \(H^2\) of the four-factor two-skeleton exactly.
+two-skeleton determines \(H^0,H^1\).  Local coefficient effectivity is now
+proved on the rotated conormal towers; the remaining Ritt-specific statement
+is coherence under the actual factor-chart braid and commuting-cell
+restriction maps.  Genuine \(H^2\) also requires the next Coxeter cells; the
+permutohedron three-cell kills the topological \(H^2\) of the four-factor
+two-skeleton exactly.
 
 ## Relation to the existing notes
 

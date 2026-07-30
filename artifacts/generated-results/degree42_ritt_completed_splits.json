@@ -1,0 +1,93 @@
+{
+  "schema": "degree42-ritt-completed-splits.v1",
+  "status": "exact completed module splitting theorem",
+  "completed_base_ring": "B=Q[[tau,zeta]]",
+  "presentation_caches": [
+    {
+      "path": "artifacts/generated-results/degree42_ritt_completed_presentations_237.txt.gz",
+      "sha256": "ae0994c456340079ff3260db601726b48a31aa0308ada5ce6ccede9f0de88bde"
+    },
+    {
+      "path": "artifacts/generated-results/degree42_ritt_completed_presentations_327.txt.gz",
+      "sha256": "0be846947c852bfa8455ac67b50443d23aca7e68832affd56d47b1212739413b"
+    }
+  ],
+  "finite_tower_artifact": "artifacts/generated-results/degree42_ritt_inverse_limit_sections_q5_q7.json",
+  "finite_tower_sha256": "e3901a17d49ddc22f281c74e124302e30b5cd47e3aff21af32529a159d4a47d2",
+  "sectors": [
+    {
+      "word": [
+        2,
+        3,
+        7
+      ],
+      "thick_composite_omission": 14,
+      "presentation_generators": {
+        "total": 13,
+        "spectator": 10
+      },
+      "spectator_normal_form": {
+        "module": "Q[[tau]]*e4",
+        "zeta_action": "0",
+        "free_generator_coordinates": [
+          "6*u^15",
+          "6*u^8",
+          "3*u",
+          "1",
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      "completed_section": {
+        "generator_image": "e4+(-3*u^2+2*zeta)*e6",
+        "relation_identity": "zeta*s(e4)=-r4-u*zeta*r2",
+        "well_defined_remainder_generators": 0,
+        "retraction_remainder_generators": 0
+      },
+      "extension_obstruction": {
+        "class": "[id_S] in coker(Hom_B(S,T) -> End_B(S))",
+        "value": "0"
+      }
+    },
+    {
+      "word": [
+        3,
+        2,
+        7
+      ],
+      "thick_composite_omission": 21,
+      "presentation_generators": {
+        "total": 14,
+        "spectator": 10
+      },
+      "spectator_normal_form": {
+        "module": "Q[[tau]]*e4",
+        "zeta_action": "0",
+        "free_generator_coordinates": [
+          "12*u^22",
+          "6*u^8",
+          "2*u",
+          "1",
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      "completed_section": {
+        "generator_image": "e4+(-4*u^3+8*u*zeta)*e7",
+        "relation_identity": "3*zeta*s(e4)=-r4-u*zeta*r1-(3*u^2*zeta-4*zeta^2)*r2",
+        "well_defined_remainder_generators": 0,
+        "retraction_remainder_generators": 0
+      },
+      "extension_obstruction": {
+        "class": "[id_S] in coker(Hom_B(S,T) -> End_B(S))",
+        "value": "0"
+      }
+    }
+  ],
+  "inverse_limit_consequence": "The polynomial completed sections reduce to one compatible section at every base order. Hence the affine section-torsor inverse-limit obstruction and its lim^1 class vanish.",
+  "sector_asymmetry": "Before presentation-first tensoring, cut 21 has one extra fourth-jet quotient-ring sector dimension. The completed first-conormal tensor modules instead have the common Hilbert functions K_q=3q-3, T_q=4q-3, S_q=q through q=2,...,7. Thus the extra dimension is non-flat base-change Tor. A genuine labelled asymmetry remains in the splitting formulas: cut 14 uses the correction (-3*(1+tau)^2+2*zeta)*e6, whereas cut 21 uses (-4*(1+tau)^3+8*(1+tau)*zeta)*e7.",
+  "theorem_boundary": "This proves completed splitting and truncation compatibility for the two rotated first-conormal extensions. It does not construct the restriction maps between different factor charts, so full braid-cell coefficient coherence remains a separate calculation.",
+  "reproducing_command": ".venv/bin/python scripts/verify_degree42_ritt_completed_splits.py"
+}

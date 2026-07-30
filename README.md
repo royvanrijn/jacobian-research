@@ -1939,7 +1939,14 @@ frontiers:
   [Hessian--Ritt deformation complex](extended-geometry/HESSIAN_RITT_DEFORMATION_COMPLEX.md):
   reduced components come from relation-graph Ritt theory, while the
   completed cellular cotangent complex is the proposed all-degree controller
-  for synchronization, nilpotent thickening, and braid obstructions.
+  for synchronization, nilpotent thickening, and braid obstructions.  The
+  rotated cut-`14` and cut-`21` first-conormal extensions now have compatible
+  sections at base orders five through seven and explicit polynomial
+  splittings over `Q[[tau,zeta]]`.  Their inverse-limit obstruction classes
+  vanish.  The earlier one-dimensional fourth-jet asymmetry is a
+  presentation-versus-image Tor effect; the distinct completed correction
+  polynomials retain labelled cut data.  Transporting those sections through
+  the actual braid restriction maps remains open.
 - `OP-RMIN`: the exact current intervals are
   `5<=n_cub<=19`, `3<=r_cub<=17`, `3<=nu_cub<=18`, and
   `6<=rho_cot<=37`.  Companion classes have

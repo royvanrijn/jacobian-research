@@ -4204,6 +4204,8 @@ specialized computations:
 .venv/bin/python scripts/verify_degree42_ritt_cut14_postnikov_overlap.py
 .venv/bin/python scripts/verify_degree42_ritt_cut21_postnikov_overlap.py
 .venv/bin/python scripts/verify_degree42_ritt_cut14_tensor_split_q4.py
+.venv/bin/python scripts/verify_degree42_ritt_inverse_limit_sections.py
+.venv/bin/python scripts/verify_degree42_ritt_completed_splits.py
 ```
 
 They reconstruct the cut-`14` and cut-`21` residual ideals, change to seven
@@ -4231,10 +4233,44 @@ quadratic overlaps for cuts `14` and `21`, and write the corresponding
 `degree42_ritt_cut21_postnikov_overlap.json` artifacts.
 The two rotated-conormal JSON files remain finite-jet computations; the
 separate completed certificates cover both new sectors.
-The final command consumes the compressed order-four action-matrix cache
+The order-four command consumes the compressed order-four action-matrix cache
 and proves that the tensor-presented cut-`14` conormal extension splits
 over `B/(tau,zeta)^4`, with dimensions `9 -> 13 -> 4` and cocycle ranks
-`32=32`.  This is a finite-order result, not a completed splitting theorem.
+`32=32`.
+
+The next command consumes the two compressed order-seven action-matrix
+caches and constructs orders five and six as quotients of those single
+order-seven presentations.  Thus its sections commute with truncation by
+construction.  For both cuts `14` and `21`, the dimensions at orders
+`5,6,7` are respectively
+
+```text
+12 -> 17 -> 5
+15 -> 21 -> 6
+18 -> 25 -> 7
+```
+
+and the cocycle/coboundary ranks are `55=55`, `84=84`, and `119=119`.
+The section-difference restriction maps have two-dimensional cokernels, so
+these finite splits alone do not imply an inverse-limit split.
+
+The last command consumes the completed two-variable presentation caches
+and verifies explicit polynomial sections.  With `u=1+tau`, their generator
+images are
+
+```text
+cut 14: e4 + (-3*u^2 + 2*zeta)*e6
+cut 21: e4 + (-4*u^3 + 8*u*zeta)*e7.
+```
+
+Every spectator relation maps to zero in the total presentation, and each
+section followed by projection is the identity.  Hence both extensions
+split over `Q[[tau,zeta]]`; the completed extension and inverse-limit torsor
+obstruction classes vanish.  The earlier extra cut-`21` fourth-jet
+quotient-ring dimension is a non-flat base-change/Tor discrepancy, while
+the different correction polynomials retain the genuine labelled-sector
+asymmetry.  Restriction coherence between different factor charts remains
+open.
 
 The last command writes the fully explicit degree-forty-two and
 degree-thirty factor/move/labelled-cell diagrams, the totalized complexes,

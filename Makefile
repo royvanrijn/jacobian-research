@@ -40,6 +40,7 @@ ALL_PAPERS := $(VERIFIED_PAPERS) $(PARKED_PAPERS) $(COMPANION_PAPERS)
 	verify-degree-five-cubic-h7-unit \
 	verify-relative-fiber-connection-complex \
 	verify-degree42-ritt-relative-cone \
+	verify-degree42-ritt-completed-splits \
 	verify-hessian-synchronization \
 	verify-common-right-factor-synchronization \
 	verify-degree42-hessian-normal-jets \
@@ -293,6 +294,10 @@ verify-relative-fiber-connection-complex:
 
 verify-degree42-ritt-relative-cone:
 	$(PYTHON) scripts/verify_degree42_ritt_relative_cotangent_cone.py
+
+verify-degree42-ritt-completed-splits:
+	$(PYTHON) scripts/verify_degree42_ritt_inverse_limit_sections.py
+	$(PYTHON) scripts/verify_degree42_ritt_completed_splits.py
 
 verify-hessian-synchronization:
 	$(PYTHON) scripts/verify_hessian_synchronization_lifts.py
