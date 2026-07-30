@@ -1,0 +1,92 @@
+// Exact nonfreeness certificate for the first marked-root branch surfaces.
+//
+// For a reduced surface divisor in a regular three-variable ring, freeness
+// forces the Jacobian ideal (f,f_P,f_B,f_C) to be perfect of codimension two.
+// Each branch ideal below has codimension two but minimal resolution length
+// three, rather than the Hilbert--Burch length two.  The Python companion
+// supplies Saito matrices after adjoining the weighted and cancellation
+// ledger boundaries; adjoining P=0 does not repair the quadratic gauge.
+
+ring weighted_ring=0,(A,B,C),dp;
+poly weighted_branch =
+    256*A^3*C^3-192*A^2*B*C^2+27*A^2*C
+   -6*A*B^2*C+27*B^4*C-4*B^3;
+ideal weighted_jacobian =
+    weighted_branch,
+    diff(weighted_branch,A),
+    diff(weighted_branch,B),
+    diff(weighted_branch,C);
+ideal weighted_standard = std(weighted_jacobian);
+if (dim(weighted_standard) != 1)
+{
+    ERROR("weighted branch Jacobian ideal has the wrong dimension");
+}
+resolution weighted_resolution = mres(weighted_jacobian,0);
+if (size(weighted_resolution) != 3)
+{
+    ERROR("weighted branch resolution length changed");
+}
+
+ring cancellation_ring=0,(P,Q,R),dp;
+poly cancellation_branch =
+    1728*P^4*R^3-3456*P^3*Q*R^2+288*P^2*Q^4*R^2
+   +1656*P^2*Q^2*R-729*P^2-288*P*Q^5*R+136*P*Q^3
+   +12*Q^8*R-6*Q^6;
+ideal cancellation_jacobian =
+    cancellation_branch,
+    diff(cancellation_branch,P),
+    diff(cancellation_branch,Q),
+    diff(cancellation_branch,R);
+ideal cancellation_standard = std(cancellation_jacobian);
+if (dim(cancellation_standard) != 1)
+{
+    ERROR("cancellation branch Jacobian ideal has the wrong dimension");
+}
+resolution cancellation_resolution = mres(cancellation_jacobian,0);
+if (size(cancellation_resolution) != 3)
+{
+    ERROR("cancellation branch resolution length changed");
+}
+
+ring r=0,(P,B,C),dp;
+
+poly Gamma =
+    B^4*C*P^2+4*B^3*C*P^3+B^3*C-B^3*P^2
+   +8*B^2*C^2*P^6+6*B^2*C*P^4+20*B^2*C*P^3+3*B^2*C*P
+   -3*B^2*P^3-B^2+16*B*C^2*P^7+36*B*C^2*P^4
+   -36*B*C*P^6+4*B*C*P^5+40*B*C*P^4+3*B*C*P^2
+   +18*B*C*P-3*B*P^4-18*B*P^3-2*B*P
+   +16*C^3*P^10+8*C^2*P^8-48*C^2*P^7+36*C^2*P^5
+   +27*C^2*P^2-36*C*P^7+C*P^6+20*C*P^5-6*C*P^4
+   +C*P^3+18*C*P^2+27*P^6-P^5-18*P^4-P^2-16*P;
+
+ideal branch_jacobian =
+    Gamma,diff(Gamma,P),diff(Gamma,B),diff(Gamma,C);
+ideal branch_standard = std(branch_jacobian);
+if (dim(branch_standard) != 1)
+{
+    ERROR("quadratic-gauge branch Jacobian ideal has the wrong dimension");
+}
+resolution branch_resolution = mres(branch_jacobian,0);
+if (size(branch_resolution) != 3)
+{
+    ERROR("quadratic-gauge branch resolution length changed");
+}
+
+poly Ledger=P*Gamma;
+ideal ledger_jacobian =
+    Ledger,diff(Ledger,P),diff(Ledger,B),diff(Ledger,C);
+ideal ledger_standard = std(ledger_jacobian);
+if (dim(ledger_standard) != 1)
+{
+    ERROR("quadratic-gauge ledger Jacobian ideal has the wrong dimension");
+}
+resolution ledger_resolution = mres(ledger_jacobian,0);
+if (size(ledger_resolution) != 3)
+{
+    ERROR("quadratic-gauge ledger resolution length changed");
+}
+
+print("PASS: weighted and cancellation branch divisors have nonperfect Jacobian ideals");
+print("PASS: quadratic-gauge branch divisor has codimension-two nonperfect Jacobian ideal");
+print("PASS: adjoining the P=0 ledger boundary does not make that divisor free");

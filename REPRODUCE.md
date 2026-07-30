@@ -3151,6 +3151,27 @@ candidate numerator through degree \(85\) is
 \(\mu_1,\ldots,\mu_8,\mu_{12}\); orders ten and eleven do not pass. See
 [`RANK_STRATIFIED_MOMENT_PROGRAM.md`](extended-geometry/RANK_STRATIFIED_MOMENT_PROGRAM.md).
 
+The first holonomic probe on the degree-three rank-two row is replayed by
+
+```bash
+.venv/bin/python \
+  scripts/verify_two_pair_sic_bidegree33_rank_two_holonomic_probe.py
+```
+
+It verifies the exact beta/constant-term period formula at two integral
+exact-rank-two points, compiles the adjacent C++ moment engine in a
+temporary directory, and computes 501 normalized moments at both points
+over three primes.  In all six cases an order-\(27\), \(m\)-degree-\(11\)
+recurrence ansatz uses 335 equations and passes 139 unused equations.  The
+monic forward coefficient is common to every probe, reconstructs exactly,
+and has no nonnegative integer root.  An order-\(27\), degree-\(10\)
+ansatz fails at both points modulo \(1000003\).  These are exact bounded
+computations and modular evidence for a universal recurrence shape, not a
+creative-telescoping certificate.  The universal parameter denominator,
+exceptional-locus stratification, and corrected-system bridge moments
+remain open.  See
+[`TWO_PAIR_SIC_BIDEGREE33_RANK_TWO_HOLONOMIC_PROBE.md`](extended-geometry/TWO_PAIR_SIC_BIDEGREE33_RANK_TWO_HOLONOMIC_PROBE.md).
+
 The second checker works on the sixteen-dimensional rank-at-most-two
 determinantal variety. At one exact rank-two factor chart it proves modulo
 the good prime \(1000003\) that both
@@ -3626,6 +3647,48 @@ proof-theoretic: conjugation by an algebra automorphism preserves the
 Leibniz rule, while a locally finite formal constant-coefficient operator
 is a derivation only when its symbol is linear.  No bounded computation is
 used for that statement.
+
+The eight cubic-leading quintic normal forms and the squarefree
+quartic-leading cross-ratio row are closed by
+[`BINARY_DEGREE_FIVE_GVC_FRONTIER.md`](extended-geometry/BINARY_DEGREE_FIVE_GVC_FRONTIER.md).
+The default exact checker replays the triangular moment eliminations,
+terminal one-sided faces, and explicit mixed-multiplier tails:
+
+```bash
+make verify-binary-degree-five-gvc
+```
+
+For an exploratory dump of all eight complete second-moment jets, with the
+optional product-splitting and unit-pivot heuristic, run:
+
+```bash
+.venv/bin/python scripts/explore_binary_degree_five_gvc_frontier.py \
+  --triangular-components
+```
+
+With Singular, replay both residual radicals and the uniform
+squarefree-quartic projective saturation:
+
+```bash
+.venv/bin/python scripts/verify_binary_degree_five_gvc_frontier.py \
+  --singular --singular-top
+```
+
+The separate modular screen enumerates \(6{,}696{,}142\) residual triples
+over \(p=101,103,107\) and \(2{,}082{,}612\) squarefree-quartic projective
+top forms over seven smaller primes:
+
+```bash
+make search-binary-degree-five-gvc
+```
+
+It regenerates
+[`binary_degree_five_gvc_face_search.json`](artifacts/generated-results/binary_degree_five_gvc_face_search.json).
+The modular record is an exhaustive bounded experiment on the displayed
+faces; the characteristic-zero radical computations and weighted
+face-separation argument are the proof.  The non-squarefree
+quartic-leading nonhomogeneous rows remain outside this theorem, so a
+universal binary degree-five corollary is not claimed.
 
 The first rank-efficient ordinary-Laplacian lift is excluded by
 
@@ -4692,7 +4755,8 @@ all degrees.
 The degree-five precomputation checks the split derivative and branch
 ledgers, the tangency of the two ramification colors, the singular product
 and separated Cox fills, and the maximal-minor determinant identity for
-affine-linear couplings with two and three new coordinates:
+affine-linear couplings with two and three new coordinates.  It also checks
+the block determinant for arbitrary zero-section thickenings:
 
 ```bash
 .venv/bin/python scripts/verify_absolute_dihedral_d5_modification_frontier.py
@@ -4701,6 +4765,37 @@ affine-linear couplings with two and three new coordinates:
 The all-degree affine-linear mask theorem, class-group calculations, and
 the exact surviving nonlinear search conditions are in
 [`extended-geometry/ABSOLUTE_DIHEDRAL_D5_MODIFICATION_FRONTIER.md`](extended-geometry/ABSOLUTE_DIHEDRAL_D5_MODIFICATION_FRONTIER.md).
+
+## Nonlinear \(D_5\) obstruction classification
+
+The nonlinear follow-up checks the complete branch-supported valuation
+ledger, its primitive diagonal pole, the normalized target-cusp incidence
+and tangent-rank drop, and the translated graph-section obstruction for two
+and three auxiliary coordinates:
+
+```bash
+.venv/bin/python scripts/verify_d5_nonlinear_obstruction_classification.py
+```
+
+The eight-gate classification, proofs, and exact rank-five fibre
+certificate requirements are in
+[`extended-geometry/D5_NONLINEAR_MODIFICATION_OBSTRUCTION_CLASSIFICATION.md`](extended-geometry/D5_NONLINEAR_MODIFICATION_OBSTRUCTION_CLASSIFICATION.md).
+
+## Canonical \(D_5\) two-mask blowdown
+
+The first construction attempt verifies the determinant-\(\Delta\)
+two-mask matrix and its adjugate inverse, proves the constant-linear
+coefficient locks, checks the generic genus-two fibre used in the all-degree
+automorphic rigidity theorem, and exhausts \(72\) coordinate assignments
+from the unchanged and two ramification-incidence source charts:
+
+```bash
+.venv/bin/python scripts/verify_d5_two_mask_blowdown_obstructions.py
+```
+
+The chain-rule obstruction, all-degree genus-two proof, and precise
+nonautomorphic continuation are in
+[`extended-geometry/D5_TWO_MASK_BLOWDOWN_OBSTRUCTIONS.md`](extended-geometry/D5_TWO_MASK_BLOWDOWN_OBSTRUCTIONS.md).
 
 ## \(A_4\) Keller inverse-Galois frontier
 
@@ -5027,6 +5122,26 @@ even with conductor pairing restored, do not bound connector count,
 displayed pole parameters, or completed contact.  See
 [`plane-jc/QUARTIC_ENDPOINT_SEMIGROUP_EXPERIMENT.md`](plane-jc/QUARTIC_ENDPOINT_SEMIGROUP_EXPERIMENT.md).
 
+The exact quartic linear-pencil calibration is:
+
+```bash
+.venv/bin/python plane-jc/cas/experiment_quartic_keller_pencil.py \
+  --output artifacts/generated-results/quartic_keller_pencil_calibration.json
+```
+
+It compares the finite-free packet model
+`(y,x^4-x^3+x*y)` with its target shear
+`(y,x^4-x^3+x*y+y^2)`. The maps have the same `3+1` cusp, the same
+`2+2` connector, and the same Jacobian determinant. The script resolves
+the symbolic linear pencil on the strata `beta!=0` and
+`[alpha:beta]=[1:0]`. For the unsheared map the generic fiber is `C*` and
+the zeta function is `1`; after the target shear it has genus one, two
+punctures, and zeta `1/(1+t^2)`. Both maps are non-Keller packet
+countermodels. The output proves that the packet does not determine the
+pencil and that the linear pencil is not invariant under nonlinear target
+equivalence; it does not exclude either quartic Keller packet. See
+[`plane-jc/KELLER_PENCIL_AT_INFINITY_EXPERIMENT.md`](plane-jc/KELLER_PENCIL_AT_INFINITY_EXPERIMENT.md).
+
 The exact chart-aware boundary localization/Smith-normal-form prefilter is:
 
 ```bash
@@ -5096,6 +5211,18 @@ command are in
 [`plane-jc/cas/README.md`](plane-jc/cas/README.md).  The independent checker
 does not import the primary CAS or generation modules.
 
+For the same archived exact replay with portable process-level CPU
+parallelism and without changing the pinned external snapshot, run:
+
+```bash
+.venv/bin/python plane-jc/cas/verify_72_108_exact_fast.py --jobs 4
+make verify-plane-72-108-exact-fast PYTHON=/absolute/path/to/venv/bin/python
+```
+
+GPU backends are intentionally deferred.  They may later be used for modular
+or bounded discovery workloads only when their output has a separate portable
+CPU verifier.
+
 ## Shared `JC_2`--`HC_4` isotropic boundary bridge
 
 The combined programme is
@@ -5111,12 +5238,25 @@ labellings.  Run:
 
 ```bash
 .venv/bin/python scripts/verify_jc2_hc4_isotropic_boundary_bridge.py
+.venv/bin/python scripts/verify_jc2_hc4_global_jet_transport.py
 ```
 
 This does not verify isotropic-flag recognition for an arbitrary
 four-variable potential.  It proves instead that the proposed local
 paired initial-conormal cokernel cannot be nonzero without an additional
-global transport between the two connector jet lines.
+global transport between the two connector jet lines.  The second checker
+shows that the marked affine-line normalization makes their projective jet
+ratio intrinsic, with exact quartic value \([-1:1]\), but that the
+dualizing-residue quotient is annihilated by the conductor.  The abstract
+cusp-node family \(R_\lambda\subset k[T]\) realizes the varying ratio
+\([-1:\lambda^2]\).  Its symmetric member is the exact two-generated plane
+carrier \(k[T^2,T^3(T^2-1)]\), with equation
+\(y^2=x^3(x-1)^2\), the anti-diagonal ratio \([-1:1]\), and the required
+cusp/node conductor.  Its actual vertical braids are \(\sigma^3\) at the
+cusp and \(\sigma^2\) at the node, so van Kampen imposes both the braid and
+commutation relations.  These force equal meridian transpositions and
+exclude a connected degree-four cover over this structured carrier.  Other
+carriers still require their own global braid factorization.
 
 ## Direct Schur-descent audit for `HC_4`
 
@@ -6206,6 +6346,25 @@ transitions.  Its fast exact calibration is:
 make verify-support-saturation-compiler
 ```
 
+This target also runs the standard-library-only replay of the exact
+characteristic-zero degree-42 \(c_6\) certificate.  It verifies
+\[
+c_6\notin J_6,\qquad w_0c_6,w_2c_6\in J_6
+\]
+on the specialized Ritt fiber, using explicit rational multipliers and a
+finite-support Macaulay dual functional.  The narrower command is:
+
+```bash
+make verify-degree42-c6-macaulay
+```
+
+Intentional modular block-Wiedemann reconstruction over the pinned 31-bit
+primes is:
+
+```bash
+make refresh-degree42-c6-macaulay
+```
+
 Intentional regeneration of the homogeneous cubic-symbol atlas, the exact
 degree-42 finite-jet computation over `GF(32003)`, and the normalized
 plane-JC cyclic `d3` boundary layer is:
@@ -6214,8 +6373,59 @@ plane-JC cyclic `d3` boundary layer is:
 make refresh-support-saturation-cases
 ```
 
-The degree-42 and plane cases require Singular; the plane primary
+The older degree-42 and plane cases require Singular; the plane primary
 decomposition is the longer run.  Their exact scopes, especially the
-characteristic-zero finite-jet gap and unproved generic all-order degree-42
-statement, and the still-undefined plane Case-1 conductor/residue module, are recorded in
+remaining full characteristic-zero saturation and order-seven gaps, the
+unproved generic all-order degree-42 statement, and the still-undefined
+plane Case-1 conductor/residue module, are recorded in
 [`extended-geometry/SUPPORT_SATURATION_COMPILER.md`](extended-geometry/SUPPORT_SATURATION_COMPILER.md).
+
+## HC4 projective polar atlas
+
+Regenerate and verify the low-degree projective-degree/Segre-signature
+atlas with:
+
+```bash
+.venv/bin/python scripts/verify_hc4_projective_polar_atlas.py
+```
+
+Independently compute the graph-compactification and full-polar
+multidegrees for the quadratic and cubic constant-Hessian calibrations
+with Macaulay2:
+
+```bash
+M2 --script scripts/verify_projective_polar_calibrations.m2
+```
+
+The Python command writes
+`artifacts/generated-results/hc4_projective_polar_atlas.json`.  The
+formula, the graph-versus-polar distinction, the cotangent and
+Meng--Yang controls, Wang's exclusion of all sixteen quadratic-gradient
+affine-degree-two/three rows, the `HC4CQ1` exclusion of all 139
+cubic-gradient rows, the resulting potential-degree lower bound five, and
+the exact nonexistence scope are documented in
+[`HC4_PROJECTIVE_POLAR_GEOMETRY.md`](HC4_PROJECTIVE_POLAR_GEOMETRY.md).
+
+## Free-discriminant and Saito-matrix experiment
+
+Verify the four first marked-root discriminants, the three full-target
+Saito bases, the fixed-\(P\) quadratic-gauge Saito basis, all regular
+marked-root lifts, and the type-\(A_3\) reflection control with:
+
+```bash
+.venv/bin/python scripts/verify_free_discriminant_saito.py
+```
+
+The weighted and cancellation branch surfaces, and the full
+quadratic-gauge branch and ledger divisors, have a separate exact Singular
+nonfreeness certificate:
+
+```bash
+Singular -q scripts/verify_free_discriminant_saito_nonfree.sing
+```
+
+The Singular command takes about one minute.  It verifies codimension two
+and minimal-resolution length three for both Jacobian ideals; it is not a
+bounded search.  The formulas, the corrected Saito--incidence proposition,
+and the external-candidate gates are in
+[`cancellation/FREE_DISCRIMINANT_SAITO_EXPERIMENT.md`](cancellation/FREE_DISCRIMINANT_SAITO_EXPERIMENT.md).

@@ -327,6 +327,16 @@ semistable thirteen-moment fiber is known to lie on rank at most two, but
 proving that some such point has exact rank two still depends on the
 squarefree specialization gate. None of this is an all-order
 counterexample.
+The
+[rank-two cubic holonomic probe](extended-geometry/TWO_PAIR_SIC_BIDEGREE33_RANK_TWO_HOLONOMIC_PROBE.md)
+puts the bidegree-\((3,3)\) factor chart into its exact relative-period
+form and finds the same order-\(27\), \(m\)-degree-\(11\) modular
+recurrence shape at two exact-rank-two points over three primes.  All six
+fits have 139 unused verification equations and the same reconstructed
+forward \(m\)-factor, which has no nonnegative integer root.  This fixes a
+concrete universal-telescoping target, but remains modular evidence: the
+parameter denominator, its exceptional strata, and the missing bridge
+moments for \(\mu_1,\ldots,\mu_{12},\mu_{14}\) are not yet certified.
 
 The earlier
 [dual-linear theorem](extended-geometry/DUAL_LINEAR_SIC2.md)
@@ -548,8 +558,18 @@ A degree-five counterexample must have lowest positive operator order
 \(3\) or \(4\).  The \(r=3\) leading equations reduce further to eight
 top-form normal forms: four over the triple-root cubic symbol, three over
 the double-root symbol, and one over the squarefree symbol.  Their
-nonhomogeneous correction systems are the next finite target; the
-\(r=4\) row already contains a squarefree-quartic cross-ratio.
+nonhomogeneous correction systems are now closed in the
+[binary degree-five frontier theorem](extended-geometry/BINARY_DEGREE_FIVE_GVC_FRONTIER.md).
+Exact moments through order four reduce every survivor to a one-sided
+weighted face, and one common defect estimate proves eventual mixed
+vanishing.  The same theorem closes the \(r=4\) squarefree-quartic row
+uniformly over its cross-ratio: moments two and three leave exactly the
+four fifth powers of the root lines, and the correction jets then close
+triangularly.  An exhaustive \(8{,}778{,}754\)-tuple search over several
+finite fields is retained as a separate experiment, not as the proof.
+This does not yet prove the universal degree-five statement: the
+non-squarefree \(r=4\) nonhomogeneous rows were not part of that reduction
+and remain open.
 The full SIC nullcone equality is now false, but the new witness has full
 coefficient-matrix rank and therefore lies outside the separable GVC
 Segre cone.  The remaining nonhomogeneous frontier has lowest positive
@@ -1104,6 +1124,21 @@ Hessian synchronization support.  The shared
 [support-saturation principle](verified/SUPPORT_SATURATION_PRINCIPLE.md)
 identifies local-cohomology torsion, associated-prime avoidance, positive
 grade, and presentation saturation; flatness is only a stronger shortcut.
+On the specialized transported Ritt fiber
+\((e_1,e_2,t)=(1,2,3)\), the explicit sixth-order class \(c_6\) is now
+closed exactly in characteristic zero:
+\[
+c_6\notin J_6,\qquad (w_0,w_2)c_6=0\quad\text{in }R/J_6.
+\]
+The
+[support-saturation compiler note](extended-geometry/SUPPORT_SATURATION_COMPILER.md)
+records the \(646\)-by-\(2400\) sparse Macaulay system, eight-prime modular
+block-Wiedemann reconstruction, rational annihilation syzygies, and the
+nine-term Macaulay dual nonmembership witness.  This proves a genuine
+embedded-support obstruction on the sixth normal jet.  It does not identify
+the full rational saturation or the order-seven and all-order modules, and
+it remains mathematically separate from the pending degree-42 inverse
+calculation.
 The active
 [cubic closure protocol](cancellation/CUBIC_CLOSURE_ATTACKS.md)
 organizes the remaining work into intrinsic certificates.  The
@@ -1366,7 +1401,22 @@ polynomial completion is excluded.  The
 further excludes the natural product and separated Cox fills and every
 affine-linear auxiliary coupling that retains the \(u\)-coordinate; any
 surviving \(D_5\) construction must modify \(u\) and use genuinely nonlinear
-auxiliary dependence.  The program's
+auxiliary dependence.  It also cannot retain the original incidence as a
+polynomial zero section, since the restricted block determinant remains
+divisible by \(J_5\).  The subsequent
+[nonlinear obstruction classification](extended-geometry/D5_NONLINEAR_MODIFICATION_OBSTRUCTION_CLASSIFICATION.md)
+organizes the surviving case into eight exact gates.  Its branch-supported
+valuation equation forces source orders \((m,2m-1,2m-1)\) against target
+branch order \(m\), leaving \(CQ\) against \(\Delta\) as the primitive
+ledger but showing that diagonal realization still has a \(1/Q\) pole.
+The
+[canonical two-mask blowdown](extended-geometry/D5_TWO_MASK_BLOWDOWN_OBSTRUCTIONS.md)
+realizes \(\Delta\) as a \(2\times2\) determinant, but all 72 primitive
+coordinate assignments fail its adjugate divisions.  Its generic
+genus-two fibre also excludes polynomial automorphic base mixing in every
+degree.  The first nonautomorphic normalized-cusp chart then fails by an
+all-degree contraction-divisor mismatch.
+The program's
 [first proper-monodromy checkpoint](extended-geometry/A4_KELLER_INVERSE_COVER.md)
 is an oriented degree-four root cover with exact generic `A_4`, a
 determinant-one suspension on smooth affine boundary complements, and a full

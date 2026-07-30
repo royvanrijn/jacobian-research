@@ -344,6 +344,40 @@ Expected final marker:
 JC2_72_108_EXACT_REPLAY_PASS
 ```
 
+The extracted archive is immutable provenance.  A local portable CPU adapter
+checks both archived hash manifests, removes two duplicate calculations, and
+runs the independent branches with at most four concurrent processes:
+
+```bash
+/absolute/path/to/venv/bin/python \
+  plane-jc/cas/verify_72_108_exact_fast.py --jobs 4
+```
+
+Equivalently, when `PYTHON` names that FLINT-enabled environment:
+
+```bash
+make verify-plane-72-108-exact-fast
+```
+
+It uses the archived equations and verifiers without changing the pinned
+release.  Its hard-certificate adapter parses large decimal integers directly
+with GMP and performs the formal branch transport after one, rather than two,
+replays of the 89 MB identity.  `--jobs 1` retains the same optimized
+calculation graph without concurrency.
+
+Engineering benchmark on 2026-07-30: the archived serial driver took
+`64.02 s`, while this adapter took `22.51 s` with `--jobs 4` on an AMD Ryzen
+9 9950X3D under WSL2, using Python 3.12.3, gmpy2 2.3.1,
+python-flint 0.9.0, and SymPy 1.14.0.  This is a runtime measurement, not a
+new certificate or mathematical result.  Apple M2 timing remains to be
+measured with the same command.
+
+Optional accelerators remain a possible future backend for bounded modular
+searches, batched finite-field calculations, or candidate discovery.  They
+are deliberately not dependencies of the exact replay: any accelerated
+experiment must emit a reproducible artifact with a portable CPU verifier.
+No CUDA- or Metal-specific target is currently maintained.
+
 For the independent hard-certificate check, run from the repository root:
 
 ```bash

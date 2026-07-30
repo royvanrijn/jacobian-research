@@ -1,0 +1,369 @@
+{
+  "claim": "exact target-shear calibration; packet data do not determine the topology or zeta function of the linear pencil",
+  "conclusion": {
+    "linear_pencil_is_invariant_under_general_target_shear": false,
+    "quartic_keller_packet_excluded": false,
+    "same_dP_wedge_dQ": true,
+    "same_finite_normalization_packet": true,
+    "same_linear_pencil_topology": false
+  },
+  "maps": {
+    "P": "y",
+    "Q0": "x**4 - x**3 + x*y",
+    "Q2": "x**4 - x**3 + x*y + y**2",
+    "common_jacobian_determinant": "-4*x**3 + 3*x**2 - y",
+    "jacobian_zero_curve": "y=-4*x^3+3*x^2",
+    "target_shear": "(u,v) -> (u,v+u^2)"
+  },
+  "packet": {
+    "connector_fiber_factorization": "(8*x**2 - 4*x - 1)**2/64",
+    "connector_target_F0": [
+      "1/8",
+      "-1/64"
+    ],
+    "connector_target_F2": [
+      "1/8",
+      "0"
+    ],
+    "cusp_fiber_factorization": "x**3*(x - 1)",
+    "cusp_target_F0": [
+      "0",
+      "0"
+    ],
+    "cusp_target_F2": [
+      "0",
+      "0"
+    ]
+  },
+  "pencil_F0": {
+    "exceptional_direction": {
+      "boundary": {
+        "acampo_factors": [
+          {
+            "exponent": 1,
+            "factor": "1-t^1"
+          }
+        ],
+        "components": [
+          {
+            "dicritical_degree": null,
+            "kind": "pole",
+            "name": "D_y_infinity",
+            "neighbors": [
+              "D_x_infinity"
+            ],
+            "open_euler_characteristic": 1,
+            "pole_order": 1
+          },
+          {
+            "dicritical_degree": 1,
+            "kind": "dicritical",
+            "name": "D_x_infinity",
+            "neighbors": [
+              "D_y_infinity"
+            ],
+            "open_euler_characteristic": null,
+            "pole_order": null
+          }
+        ],
+        "dicritical_degrees": [
+          1
+        ],
+        "zeta": "1-t"
+      },
+      "fiber": {
+        "genus": 0,
+        "homotopy": "A1",
+        "punctures": 1
+      },
+      "parameter": "[1:0]",
+      "polynomial": "P=y"
+    },
+    "generic_boundary": {
+      "acampo_factors": [],
+      "components": [
+        {
+          "dicritical_degree": null,
+          "kind": "pole",
+          "name": "D_X_infinity",
+          "neighbors": [
+            "D_Y_infinity",
+            "H_X"
+          ],
+          "open_euler_characteristic": 0,
+          "pole_order": 1
+        },
+        {
+          "dicritical_degree": null,
+          "kind": "pole",
+          "name": "D_Y_infinity",
+          "neighbors": [
+            "D_X_infinity",
+            "H_Y"
+          ],
+          "open_euler_characteristic": 0,
+          "pole_order": 1
+        },
+        {
+          "dicritical_degree": 1,
+          "kind": "dicritical",
+          "name": "H_X",
+          "neighbors": [
+            "D_X_infinity"
+          ],
+          "open_euler_characteristic": null,
+          "pole_order": null
+        },
+        {
+          "dicritical_degree": 1,
+          "kind": "dicritical",
+          "name": "H_Y",
+          "neighbors": [
+            "D_Y_infinity"
+          ],
+          "open_euler_characteristic": null,
+          "pole_order": null
+        }
+      ],
+      "dicritical_degrees": [
+        1,
+        1
+      ],
+      "zeta": "1"
+    },
+    "generic_fiber": {
+      "genus": 0,
+      "homotopy": "C*",
+      "punctures": 2
+    },
+    "generic_monodromy_H1_eigenvalues": [
+      "1"
+    ],
+    "generic_normal_form": {
+      "h_s": "-s**3 + s**2*x - s**2 - s*x**2 + s*x + x**3 - x**2",
+      "identity": "Q0+s*P=(x+s)*(y+h_s(x))+s^4+s^3"
+    }
+  },
+  "pencil_F2": {
+    "exceptional_direction": {
+      "boundary": {
+        "acampo_factors": [
+          {
+            "exponent": 1,
+            "factor": "1-t^1"
+          }
+        ],
+        "components": [
+          {
+            "dicritical_degree": null,
+            "kind": "pole",
+            "name": "D_y_infinity",
+            "neighbors": [
+              "D_x_infinity"
+            ],
+            "open_euler_characteristic": 1,
+            "pole_order": 1
+          },
+          {
+            "dicritical_degree": 1,
+            "kind": "dicritical",
+            "name": "D_x_infinity",
+            "neighbors": [
+              "D_y_infinity"
+            ],
+            "open_euler_characteristic": null,
+            "pole_order": null
+          }
+        ],
+        "dicritical_degrees": [
+          1
+        ],
+        "zeta": "1-t"
+      },
+      "fiber": {
+        "genus": 0,
+        "homotopy": "A1",
+        "punctures": 1
+      },
+      "parameter": "[1:0]",
+      "polynomial": "P=y"
+    },
+    "face_at_infinity": "x**4 + y**2",
+    "generic_boundary": {
+      "acampo_factors": [
+        {
+          "exponent": 1,
+          "factor": "1-t^4"
+        },
+        {
+          "exponent": 1,
+          "factor": "1-t^2"
+        },
+        {
+          "exponent": -2,
+          "factor": "1-t^4"
+        }
+      ],
+      "components": [
+        {
+          "dicritical_degree": null,
+          "kind": "pole",
+          "name": "L_infinity",
+          "neighbors": [
+            "E2"
+          ],
+          "open_euler_characteristic": 1,
+          "pole_order": 4
+        },
+        {
+          "dicritical_degree": null,
+          "kind": "pole",
+          "name": "E1",
+          "neighbors": [
+            "E2"
+          ],
+          "open_euler_characteristic": 1,
+          "pole_order": 2
+        },
+        {
+          "dicritical_degree": null,
+          "kind": "pole",
+          "name": "E2",
+          "neighbors": [
+            "L_infinity",
+            "E1",
+            "V3_plus",
+            "V3_minus"
+          ],
+          "open_euler_characteristic": -2,
+          "pole_order": 4
+        },
+        {
+          "dicritical_degree": null,
+          "kind": "pole",
+          "name": "V3_plus",
+          "neighbors": [
+            "E2",
+            "V2_plus"
+          ],
+          "open_euler_characteristic": 0,
+          "pole_order": 3
+        },
+        {
+          "dicritical_degree": null,
+          "kind": "pole",
+          "name": "V2_plus",
+          "neighbors": [
+            "V3_plus",
+            "V1_plus"
+          ],
+          "open_euler_characteristic": 0,
+          "pole_order": 2
+        },
+        {
+          "dicritical_degree": null,
+          "kind": "pole",
+          "name": "V1_plus",
+          "neighbors": [
+            "V2_plus",
+            "H_plus"
+          ],
+          "open_euler_characteristic": 0,
+          "pole_order": 1
+        },
+        {
+          "dicritical_degree": 1,
+          "kind": "dicritical",
+          "name": "H_plus",
+          "neighbors": [
+            "V1_plus"
+          ],
+          "open_euler_characteristic": null,
+          "pole_order": null
+        },
+        {
+          "dicritical_degree": null,
+          "kind": "pole",
+          "name": "V3_minus",
+          "neighbors": [
+            "E2",
+            "V2_minus"
+          ],
+          "open_euler_characteristic": 0,
+          "pole_order": 3
+        },
+        {
+          "dicritical_degree": null,
+          "kind": "pole",
+          "name": "V2_minus",
+          "neighbors": [
+            "V3_minus",
+            "V1_minus"
+          ],
+          "open_euler_characteristic": 0,
+          "pole_order": 2
+        },
+        {
+          "dicritical_degree": null,
+          "kind": "pole",
+          "name": "V1_minus",
+          "neighbors": [
+            "V2_minus",
+            "H_minus"
+          ],
+          "open_euler_characteristic": 0,
+          "pole_order": 1
+        },
+        {
+          "dicritical_degree": 1,
+          "kind": "dicritical",
+          "name": "H_minus",
+          "neighbors": [
+            "V1_minus"
+          ],
+          "open_euler_characteristic": null,
+          "pole_order": null
+        }
+      ],
+      "dicritical_degrees": [
+        1,
+        1
+      ],
+      "zeta": "1/(1+t^2)"
+    },
+    "generic_fiber": {
+      "first_betti_number": 3,
+      "genus": 1,
+      "punctures": 2
+    },
+    "generic_monodromy_H1_eigenvalues": [
+      "1",
+      "i",
+      "-i"
+    ],
+    "generic_polynomial": "y^2+(x+s)*y+x^4-x^3",
+    "newton_nondegenerate_at_infinity": true,
+    "newton_triangle": [
+      [
+        0,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        0,
+        2
+      ]
+    ]
+  },
+  "symbolic_parameter": {
+    "direction": "[alpha:beta]",
+    "exceptional_directions": [
+      "[1:0]"
+    ],
+    "generic_chart": "beta!=0, s=alpha/beta"
+  },
+  "warning": "F0 and F2 are finite quartic packet countermodels, not Keller maps"
+}

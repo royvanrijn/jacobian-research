@@ -142,4 +142,34 @@ def verify_affine_linear_mask_ledger(auxiliary_count: int) -> None:
 verify_affine_linear_mask_ledger(2)
 verify_affine_linear_mask_ledger(3)
 print("PASS: affine-linear mask ledgers hold for two and three auxiliaries")
+
+# Any polynomial thickening that restricts to (u,P,0,...,0) on the
+# auxiliary zero section has block-triangular derivative there.
+for auxiliary_count in (2, 3):
+    top_right = sp.Matrix(
+        2,
+        auxiliary_count,
+        sp.symbols(f"b{auxiliary_count}_0:{2 * auxiliary_count}"),
+    )
+    lower_right = sp.Matrix(
+        auxiliary_count,
+        auxiliary_count,
+        sp.symbols(
+            f"c{auxiliary_count}_0:{auxiliary_count * auxiliary_count}"
+        ),
+    )
+    zero_section_derivative = sp.Matrix.vstack(
+        sp.Matrix.hstack(
+            sp.Matrix([u, P]).jacobian((a, u)),
+            top_right,
+        ),
+        sp.Matrix.hstack(
+            sp.zeros(auxiliary_count, 2),
+            lower_right,
+        ),
+    )
+    assert sp.expand(
+        zero_section_derivative.det() + J * lower_right.det()
+    ) == 0
+print("PASS: zero-section thickenings retain the J5 Jacobian divisor")
 print("PASS absolute D5 affine-modification frontier")

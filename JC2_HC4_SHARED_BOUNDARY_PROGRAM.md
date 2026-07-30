@@ -19,14 +19,20 @@ The exact part is:
 > identically zero: at a cusp and in positive degree at a node, the
 > conductor map to the normalization is an isomorphism.  At the node only
 > degree-zero values are paired, and both residue values vanish.
+> The marked affine normalization nevertheless retains an intrinsic
+> projective jet ratio.  Its symmetric two-generated plane carrier is
+> \(y^2=x^3(x-1)^2\), but the carrier's cusp braid and node commutation
+> relations force equal meridian transpositions and therefore exclude every
+> connected degree-four simply ramified cover over that carrier.
 
 The open part is to attach such a polynomial isotropic flag canonically to
 an arbitrary hypothetical \(\mathrm{HC}_4\) counterexample, or to construct
 the corresponding residue-decorated flag on a compactification.  Any
 nonzero endpoint obstruction must add global jet transport supplied by the
-two-generated degree-zero algebra, a dualizing-residue structure, or an
-equivalent datum.  The conductor pairing and sheet monodromy alone do not
-provide that transport.
+two-generated degree-zero algebra or an equivalent genuinely global datum.
+The affine-line normalization makes the connector jet *ratio* intrinsic,
+but neither the conductor pairing, sheet monodromy, nor the canonical
+dualizing-residue sign forces a value for that ratio.
 
 The exact symbolic identities are checked by
 [`scripts/verify_jc2_hc4_isotropic_boundary_bridge.py`](scripts/verify_jc2_hc4_isotropic_boundary_bridge.py).
@@ -554,24 +560,263 @@ the plane programme are:
 Neither structure is contained in (6.1).  Merely expanding the quartic
 coefficient search cannot repair this missing datum.
 
-## 8. Remaining flagship gate
+## 8. Global jet transport
 
-The next sharply posed statement is a **global jet-transport theorem**:
-construct, from the factorial degree-zero algebra and the marked
-degree-four cover, an intrinsic map
+The marked normalization supplies a partial positive result.  Suppose the
+ramified boundary open is \(E^\circ\simeq\mathbb A^1\), the two connector
+contacts have the same order \(m\), and the inverse-square different line
+\(\mathcal L\) is restricted to \(E^\circ\).  Both
+\(\Omega^1_{E^\circ}\) and \(\mathcal L\) are trivial.  Their nowhere-zero
+global frames are unique up to constants because
+
+\[
+ k[E^\circ]^\times=k^\times.
+\]
+
+Choose an affine parameter \(T\), a frame \(e\) of \(\mathcal L\), and
+write
+
+\[
+\begin{aligned}
+ \rho&=c_+(T-p_+)^m e+\cdots,\\
+ \rho&=c_-(T-p_-)^m e+\cdots.
+\end{aligned}                                      \tag{8.1}
+\]
+
+Under \(T'=aT+b\) and \(e'=u e\), both coefficients are multiplied by
+the same scalar \(a^{-m}u^{-1}\).  Therefore
+
+\[
+ \boxed{\mathcal R_{\rm jet}(\rho;p_+,p_-)
+       =[c_+:c_-]\in\mathbb P^1}                    \tag{8.2}
+\]
+
+is intrinsic; for an unordered connector it is retained modulo
+\([c_+:c_-]\leftrightarrow[c_-:c_+]\).  Thus the global affine structure
+does reduce the two independent formal-parameter scalings to one common
+scaling.  It gives a projective comparison, not a reason for the two
+coefficients to be equal.
+
+For the exact quartic spectator packet, (6.10) gives
+
+\[
+ \mathcal R_{\rm jet}=[-1:1].                       \tag{8.3}
+\]
+
+### 8.1 The dualizing residue does not impose a jet equation
+
+At a node
+
+\[
+ R=k[[x,y]]/(xy),\qquad
+ \widetilde R=k[[x]]\oplus k[[y]],
+\]
+
+the canonical logarithmic dualizing generator can be represented on the
+normalization by
+
+\[
+ \eta=\left(\frac{dx}{x},-\frac{dy}{y}\right).
+\tag{8.4}
+\]
+
+Its residues are anti-diagonal.  This is the canonical sign structure
+which was absent from the ordinary conductor quotient.  However, every
+conormal residue at the connector lies in the conductor:
+
+\[
+ \rho=(x a(x),y b(y)).
+\]
+
+Consequently
+
+\[
+ \rho\eta=(a(x)\,dx,-b(y)\,dy)                     \tag{8.5}
+\]
+
+is regular on both normalized branches.  Equivalently, the conductor
+annihilates
+
+\[
+ \omega_R/\nu_*\omega_{\widetilde R}.               \tag{8.6}
+\]
+
+The dualizing residue quotient therefore forgets exactly the first
+conormal coefficients one hoped it would compare.  It supplies an
+anti-diagonal convention but no vanishing equation for
+\(\mathcal R_{\rm jet}\).
+
+### 8.2 The ratio varies in the abstract cusp-node packet
+
+This failure is not special to the quartic spectator model.  For
+\(\lambda\ne0,1\), define
+
+\[
+ R_\lambda=
+ \{f\in k[T]:f'(0)=0,\ f(1)=f(\lambda)\}
+ \subset k[T].                                      \tag{8.7}
+\]
+
+This is a finite-codimension subring with normalization \(k[T]\).  Its
+conductor is exactly
+
+\[
+ \mathfrak c_\lambda
+ =
+ T^2(T-1)(T-\lambda)k[T].                           \tag{8.8}
+\]
+
+Indeed, applying the cusp condition to \(h\) and \(hT\) forces
+\(h(0)=h'(0)=0\), while independent interpolation at \(1,\lambda\) forces
+\(h(1)=h(\lambda)=0\).  The converse is immediate.  Thus
+
+\[
+ \rho_\lambda=T^2(T-1)(T-\lambda)
+\]
+
+has the same order-two cusp and two order-one paired node branches for
+every \(\lambda\), but
+
+\[
+ \mathcal R_{\rm jet}(\rho_\lambda;1,\lambda)
+ =
+ \left[1-\lambda:\lambda^2(\lambda-1)\right]
+ =
+ [-1:\lambda^2].                                   \tag{8.9}
+\]
+
+The ratio varies with the affine cross-ratio of
+\((0,1,\lambda,\infty)\).  Therefore the marked cusp, affine-line
+normalization, conductor, conormal character, and dualizing residue do not
+force a universal connector jet ratio.
+
+For general \(\lambda\), no two-generator plane realization is asserted.
+The symmetric member, however, is already an exact plane carrier.
+
+### 8.3 The structured two-generated packet
+
+Set \(\lambda=-1\) and put
+
+\[
+ x=T^2,\qquad y=T^3(T^2-1).
+\tag{8.10}
+\]
+
+Then
+
+\[
+ y^2=x^3(x-1)^2.                                   \tag{8.11}
+\]
+
+The fraction field contains
+
+\[
+ T=\frac{y}{x(x-1)},
+\]
+
+so the normalization is \(k[T]\).  Moreover
+
+\[
+ k[x,y]
+ =
+ \{f\in k[T]: f'(0)=0,\ f(1)=f(-1)\}.              \tag{8.12}
+\]
+
+To see equality, the common conductor is
+
+\[
+ T^2(T^2-1)k[T].
+\]
+
+Every even multiple of its generator is a polynomial in \(x\), every odd
+multiple is \(y\) times a polynomial in \(x\), and modulo the conductor
+both sides have basis \(1,T^2= x\).
+
+The point \(T=0\) is an ordinary cusp, while \(T=\pm1\) are the two
+transverse branches of the node \((x,y)=(1,0)\).  The conductor generator
+has initials
+
+\[
+ 2(T-1),\qquad -2(T+1),                             \tag{8.13}
+\]
+
+and hence
+
+\[
+ \mathcal R_{\rm jet}=[-1:1]
+\]
+
+up to ordering.  This is the structured zero packet anticipated in the
+original programme: the affine plane carrier, cusp conductor, connector
+pairing, and anti-diagonal jet ratio are simultaneously compatible.
+Equation (8.11) is a plane carrier, not a degree-four finite cover or a
+Keller normalization.
+
+### 8.4 The global meridian relation excludes this carrier
+
+For (8.11), project to the \(x\)-line.  A generic vertical fiber has two
+punctures.  Their difference is a square root of
+
+\[
+ x^3(x-1)^2.
+\]
+
+Thus the positive local braid is \(\sigma^3\) at the cusp \(x=0\) and
+\(\sigma^2\) at the node \(x=1\).  Zariski--van Kampen gives meridians
+\(a,b\) with relations
+
+\[
+ aba=bab,\qquad ab=ba.                              \tag{8.14}
+\]
+
+The first is the cusp braid relation and the second is the node
+commutation relation.  Together they force
+
+\[
+ a=b.                                               \tag{8.15}
+\]
+
+In a simply ramified degree-four cover, both meridians must map to
+transpositions.  Equal transpositions have a largest sheet orbit of size
+two, so the cover is not connected.  Equivalently, exact enumeration finds
+only the six diagonal ordered transposition pairs satisfying both relations
+and no transitive image.
+
+Therefore
+
+\[
+\boxed{\text{the structured plane carrier (8.11) supports no connected
+degree-four simply ramified cover}.}                 \tag{8.16}
+\]
+
+This is the first actual global-meridian exclusion produced by the
+initial-conormal continuation.  It excludes the canonical symmetric
+carrier, not every plane curve with a \(3+1\) cusp and a \(2+2\)
+connector.
+
+### 8.5 Sharpened flagship gate
+
+The next statement must therefore be a **degree-four meridian constraint**:
+construct, from the factorial ambient algebra \(k[x,y]\), the marked
+degree-four cover, and its boundary class, an intrinsic map or equation
 
 \[
  (\tau_+)/(\tau_+^2)\otimes\mathcal L_{p_+}
  \longrightarrow
- (\tau_-)/(\tau_-^2)\otimes\mathcal L_{p_-},        \tag{8.1}
+ (\tau_-)/(\tau_-^2)\otimes\mathcal L_{p_-},        \tag{8.17}
 \]
 
-and prove its compatibility with both the \(S_4\) meridian packet and the
-oriented cotangent Hessian root.  Only after (8.1) exists does a scalar
-initial mismatch become well-defined.  The exact coefficients (6.9)--(6.10)
-then provide the first regression case: depending on the proven transport,
-they either force nonvanishing or select the anti-diagonal structured
-packet.
+or equivalently constrain \(\mathcal R_{\rm jet}\), and prove its
+compatibility with the \(S_4\) meridian packet and the oriented cotangent
+Hessian root.  The local conductor, affine normalization, and dualizing
+residue cannot prove this statement, and the two-generated carrier
+(8.10)--(8.13) shows that plane algebra alone is insufficient.  Its actual
+meridian relation does exclude that carrier by (8.16), so the next task is
+to derive the corresponding braid factorization for every carrier allowed
+by the degree-four boundary ledger and test its transposition image.  The
+exact quartic value (8.3) remains the first finite-cover regression case;
+the family (8.9) is the countertest for any argument that accidentally uses
+only the abstract conductor packet.
 
 ## 9. Reproduction
 
@@ -579,6 +824,7 @@ Run
 
 ```bash
 .venv/bin/python scripts/verify_jc2_hc4_isotropic_boundary_bridge.py
+.venv/bin/python scripts/verify_jc2_hc4_global_jet_transport.py
 ```
 
 The checker verifies (1.3), (2.3), (4.4), (5.2), the cusp specialization
@@ -591,3 +837,9 @@ remain canonically sourced in
 and
 [`plane-jc/JC2_GLOBAL_COX_PACKET_ATTACK.md`](plane-jc/JC2_GLOBAL_COX_PACKET_ATTACK.md);
 they are not re-proved by this small checker.
+
+The second checker verifies the affine/frame invariance of (8.2), the
+quartic ratio (8.3), the conductor calculation and varying ratio
+(8.7)--(8.9), the exact plane carrier (8.10)--(8.13), its
+braid/commutation transposition exclusion (8.14)--(8.16), and the
+annihilation of the node dualizing-residue quotient by its conductor.

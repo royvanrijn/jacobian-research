@@ -6646,6 +6646,33 @@
       "priority": "derived"
     },
     {
+      "id": "SIC2C3H27",
+      "kind": "reproduction",
+      "state": "proved",
+      "title": "Rank-two bidegree-(3,3) relative-period and modular recurrence probe",
+      "scope": "On the factor chart C=UW with U in Mat_(4,2) and W in Mat_(2,4), the exact identity nu_m=mu_m/(3m+1)!=CT_u integral_0^1 Phi_C(1,u,t,(1-t)/u)^m dt is verified through order four at two unrelated integral exact-rank-two points. The generic exponent polygon has normalized volume 27, but the forced u=-3 face is c_30*u^(-3)*(1-t)^3, so the constrained beta family lies on the unconstrained face discriminant and the volume is not asserted as a recurrence-order theorem. At both points and over each of 1000003, 1000033, and 1000037, 501 exact modular values admit the same order-27, m-degree-11 recurrence ansatz: 335 equations fit the null vector and 139 unused equations verify it. The monic forward coefficient is identical in all six probes and reconstructs as product_(k in {71,73,74,76,77,79,80,82})(3m+k)*(9m^3-1836m^2+210730m-17920380)/(9*3^8); it has no nonnegative integer root, while an order-27 degree-10 ansatz fails at both points modulo 1000003. These are exact bounded computations and modular evidence for a universal recurrence shape, not a creative-telescoping certificate. The universal parameter denominator, exceptional-locus stratification, and reduction of the missing bridge moments for mu_1,...,mu_12,mu_14 remain open.",
+      "canonical_source": "extended-geometry/TWO_PAIR_SIC_BIDEGREE33_RANK_TWO_HOLONOMIC_PROBE.md",
+      "dependencies": [
+        "RSMCENSUS",
+        "external: C++17 compiler"
+      ],
+      "checker": "scripts/verify_two_pair_sic_bidegree33_rank_two_holonomic_probe.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:1d72a95ea18bd556c41286a3d2ec7e0b23df9d65ae2dc7ab6cbcf923c9406d25",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [
+        "an unspecified universal-recurrence order search on the rank-two cubic stratum"
+      ],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
       "id": "GVC2C4P",
       "kind": "theorem",
       "state": "proved",
@@ -7932,7 +7959,7 @@
       "kind": "theorem",
       "state": "proved",
       "title": "Binary GVC escape and polarization obstructions",
-      "scope": "Let Lambda=Lambda_r+...+Lambda_d be nonhomogeneous in two variables. The split-symbol separator proves that every fixed number of leading homogeneous layers of Lambda^m(QP^m) vanishes eventually, so any defect must migrate to unbounded filtration depth. In particular deg(P)<=r implies GVC, and arbitrary degree is safe in the factor-unit class. Every binary operator with nonzero linear part is safe for arbitrary P after its first two pure equations: formal Weierstrass division factors its symbol as U(xi,eta)(xi+q(eta)), where U(partial) and its inverse act locally finitely on polynomials, reducing to the separated formal-drift theorem. If the lowest positive order is two and deg(P)<=3, the first three pure equations suffice; if deg(P)<=4, the first four suffice. In degree four, the distinct-root quadratic orbit and the double-line top form x*y^3 close through moment three and strict weighted separators. The last double-line y^4 branch reduces to a residual sextic; moment four gives a coprime octavic with an explicit nonzero resultant. Weights wt(x)=2, wt(y)=1 prove that every pure moment of the full pair equals that of this three-term weight-four face, so no higher operator jet or lower polynomial term changes the obstruction. For lowest order three and quartic P, all three cubic-symbol root types close. The triple-root types reduce to one-sided weighted faces, with terminal correction 3361505280*U^4 at moment four. The double-root orbit closes through moment three. In the squarefree orbit, the first two leading moments leave three fourth-power tips in one root-permutation orbit; the x^4 correction is the double-root weight-four face and has terminal third moment 129392640*T^3. Consequently every binary constant-coefficient operator satisfies GVC for deg(P)<=4. The complete r=2, deg(P)=5 row also closes. Its leading pair is one of (dx*dy,x^5), (dx^2,x*y^4), or (dx^2,y^5). The distinct-root tip reduces after moment two to P=f(x)+a*y and Lambda=dy*Gamma+H(dx), with ord(H)>=6>deg(f), giving a direct binomial derivative cutoff. More generally this transverse-linear/high-order form is automatically pure-zero and GVC-safe whenever ord(H)>deg(f). The x*y^4 tip closes through two nested weighted third-moment faces, with terminal coefficients -553153536*H^3 and -5430509568*J^3. The y^5 tip reduces after moment two to six weighted ratios; moment three eliminates four and the remaining two are one-sided. Thus any degree-five counterexample has lowest positive order 3 or 4, and the first quadratic-leading target has degree at least six. In the r=3, deg(P)=5 row, the first two leading equations leave eight top-form normal forms: four triple-root, three double-root, and one squarefree; their correction systems remain open. Every separated multiplicative conversion of one auxiliary rank-one product has bidegree-(4,4) rank at most one; SIC2C4 has rank five. Coefficient extraction raises rank only by losing multiplicativity, and fixed linear translation plus one diagonal coefficient represents exactly products of powers of linear symbols. Formal Hensel or umbral straightening supplies no multiplicative escape: an algebra-automorphism conjugate of a derivation is a derivation, so any locally finite constant-coefficient conjugate has linear symbol. The remaining nonhomogeneous frontier is genuinely nonhomogeneous, has deg(P)>r, and admits no split factor-unit decomposition. Growing-filtration-depth and non-single-coefficient polarization problems remain. No general SIC rank-stratum classification or GVC counterexample is claimed.",
+      "scope": "Let Lambda=Lambda_r+...+Lambda_d be nonhomogeneous in two variables. The split-symbol separator proves that every fixed number of leading homogeneous layers of Lambda^m(QP^m) vanishes eventually, so any defect must migrate to unbounded filtration depth. In particular deg(P)<=r implies GVC, and arbitrary degree is safe in the factor-unit class. Every binary operator with nonzero linear part is safe for arbitrary P after its first two pure equations: formal Weierstrass division factors its symbol as U(xi,eta)(xi+q(eta)), where U(partial) and its inverse act locally finitely on polynomials, reducing to the separated formal-drift theorem. If the lowest positive order is two and deg(P)<=3, the first three pure equations suffice; if deg(P)<=4, the first four suffice. In degree four, the distinct-root quadratic orbit and the double-line top form x*y^3 close through moment three and strict weighted separators. The last double-line y^4 branch reduces to a residual sextic; moment four gives a coprime octavic with an explicit nonzero resultant. Weights wt(x)=2, wt(y)=1 prove that every pure moment of the full pair equals that of this three-term weight-four face, so no higher operator jet or lower polynomial term changes the obstruction. For lowest order three and quartic P, all three cubic-symbol root types close. The triple-root types reduce to one-sided weighted faces, with terminal correction 3361505280*U^4 at moment four. The double-root orbit closes through moment three. In the squarefree orbit, the first two leading moments leave three fourth-power tips in one root-permutation orbit; the x^4 correction is the double-root weight-four face and has terminal third moment 129392640*T^3. Consequently every binary constant-coefficient operator satisfies GVC for deg(P)<=4. The complete r=2, deg(P)=5 row also closes. Its leading pair is one of (dx*dy,x^5), (dx^2,x*y^4), or (dx^2,y^5). The distinct-root tip reduces after moment two to P=f(x)+a*y and Lambda=dy*Gamma+H(dx), with ord(H)>=6>deg(f), giving a direct binomial derivative cutoff. More generally this transverse-linear/high-order form is automatically pure-zero and GVC-safe whenever ord(H)>deg(f). The x*y^4 tip closes through two nested weighted third-moment faces, with terminal coefficients -553153536*H^3 and -5430509568*J^3. The y^5 tip reduces after moment two to six weighted ratios; moment three eliminates four and the remaining two are one-sided. Thus any degree-five counterexample has lowest positive order 3 or 4, and the first quadratic-leading target has degree at least six. In the r=3, deg(P)=5 row, the first two leading equations leave eight top-form normal forms: four triple-root, three double-root, and one squarefree; GVC2D5F closes all eight correction systems. Every separated multiplicative conversion of one auxiliary rank-one product has bidegree-(4,4) rank at most one; SIC2C4 has rank five. Coefficient extraction raises rank only by losing multiplicativity, and fixed linear translation plus one diagonal coefficient represents exactly products of powers of linear symbols. Formal Hensel or umbral straightening supplies no multiplicative escape: an algebra-automorphism conjugate of a derivation is a derivation, so any locally finite constant-coefficient conjugate has linear symbol. The remaining nonhomogeneous frontier is genuinely nonhomogeneous, has deg(P)>r, and admits no split factor-unit decomposition. Growing-filtration-depth and non-single-coefficient polarization problems remain. No general SIC rank-stratum classification or GVC counterexample is claimed.",
       "canonical_source": "extended-geometry/SEPARABLE_GVC_ESCAPE_OBSTRUCTIONS.md",
       "dependencies": [
         "GVCSS",
@@ -7958,11 +7985,40 @@
       "priority": "reference"
     },
     {
+      "id": "GVC2D5F",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Binary degree-five cubic-leading and squarefree quartic-leading GVC frontier",
+      "scope": "Let Lambda be a nonhomogeneous constant-coefficient operator in two variables and let deg(P)=5. If the lowest positive order is r=3, all eight cubic-symbol top-form normal forms close: exact pure moments through order four eliminate the correction jets or leave only one-sided equality components, and a common weight-defect lemma proves eventual vanishing of Lambda^m(QP^m) for every fixed Q. If r=4 and the leading binary quartic symbol is squarefree, exact saturation over Q[lambda,1/(lambda(lambda-1))] shows uniformly in cross-ratio that moments two and three leave only the four fifth powers of the root lines. Translation and differential-unit normalization then make the lower jets triangular, and moments through order four reduce to the one-sided pair (dx^3*dy,x^5), which has an explicit mixed cutoff. The two residual cubic faces and every squarefree-quartic projective top form were also exhaustively screened over multiple finite fields, totaling 8,778,754 tuples; that modular search is an experiment, not the proof. No counterexample occurs on these rows. Non-squarefree r=4 nonhomogeneous rows are not covered, so the theorem does not establish GVC for every binary operator through polynomial degree five.",
+      "canonical_source": "extended-geometry/BINARY_DEGREE_FIVE_GVC_FRONTIER.md",
+      "dependencies": [
+        "GVC2NHO",
+        "GVCSS",
+        "external: exact Groebner saturation over Q with Singular"
+      ],
+      "checker": "scripts/verify_binary_degree_five_gvc_frontier.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:9977df470d13b8ba1e761f7470a475820893f89444e85c116d1c961e97ae720e",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [
+        "the eight cubic-leading quintic correction systems",
+        "the squarefree quartic-leading quintic cross-ratio row"
+      ],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
       "id": "OP-GVC2-RP",
       "kind": "open_problem",
       "state": "open",
       "title": "Two-variable GVC representation and rank-efficient Laplacian polarization",
-      "scope": "For a homogeneous operator Lambda=A(partial), the separable form f=A(zeta)P(z) is rank one and its contractions are Lambda^m(P^m) and Lambda^m(QP^m). GVCSS proves that every homogeneous binary operator satisfies GVC for arbitrary P, including deg(P)>ord(Lambda), by retaining z in the translated Laurent polynomial and using one generic-support Newton separator. GVC2NHO treats general nonhomogeneous Lambda when deg(P) is at most its lowest positive order, arbitrary degree in the factor-unit class Lambda=Lambda_0 Gamma, every binary operator with nonzero linear part by formal drift straightening, every binary operator through polynomial degree four, and every quadratic-leading operator through polynomial degree five; it also excludes separated multiplicative conversions of SIC2C4. The remaining GVC(2) frontier requires a genuinely nonhomogeneous operator, deg(P)>=5 and deg(P) greater than its lowest positive order, and no split factor-unit decomposition. In degree five the lowest positive order is now 3 or 4; the r=3 leading equations leave eight top-form normal forms, while the r=4 squarefree row has a quartic cross-ratio. The first quadratic-leading target has degree at least six. GVC2C3, GVC2C4T, and GVC2C4S remain stronger finite-moment/nullcone certificates. A separate ordinary-Laplacian route seeks an all-order nonlinear polarization of the Dvorsky symbol into a nondegenerate quadratic operator. DVG4 excludes the canonical one-pair completion at the second pure moment. No successful quadraticization or improved Laplacian endpoint is currently proved.",
+      "scope": "For a homogeneous operator Lambda=A(partial), the separable form f=A(zeta)P(z) is rank one and its contractions are Lambda^m(P^m) and Lambda^m(QP^m). GVCSS proves that every homogeneous binary operator satisfies GVC for arbitrary P, including deg(P)>ord(Lambda), by retaining z in the translated Laurent polynomial and using one generic-support Newton separator. GVC2NHO treats general nonhomogeneous Lambda when deg(P) is at most its lowest positive order, arbitrary degree in the factor-unit class Lambda=Lambda_0 Gamma, every binary operator with nonzero linear part by formal drift straightening, every binary operator through polynomial degree four, and every quadratic-leading operator through polynomial degree five; it also excludes separated multiplicative conversions of SIC2C4. GVC2D5F closes all eight cubic-leading quintic normal forms and the squarefree quartic-leading cross-ratio row. The remaining degree-five GVC(2) frontier consists of genuinely nonhomogeneous operators whose leading quartic symbol is non-squarefree; their leading pure-zero loci contain positive-dimensional one-sided families, and arbitrary higher jets are not yet eliminated. The first quadratic-leading target has degree at least six. GVC2C3, GVC2C4T, and GVC2C4S remain stronger finite-moment/nullcone certificates. A separate ordinary-Laplacian route seeks an all-order nonlinear polarization of the Dvorsky symbol into a nondegenerate quadratic operator. DVG4 excludes the canonical one-pair completion at the second pure moment. No successful quadraticization or improved Laplacian endpoint is currently proved.",
       "canonical_source": "extended-geometry/TWO_VARIABLE_GVC_REPRESENTATION_PROGRAM.md",
       "dependencies": [
         "DVG1",
@@ -7974,7 +8030,8 @@
         "GVC2C4T",
         "GVC2C4S",
         "GVCSS",
-        "GVC2NHO"
+        "GVC2NHO",
+        "GVC2D5F"
       ],
       "checker": null,
       "proof_type": "not-applicable",
@@ -9873,6 +9930,34 @@
       "priority": "reference"
     },
     {
+      "id": "GJT4",
+      "kind": "corollary",
+      "state": "proved",
+      "title": "Global jet ratio and symmetric-carrier meridian exclusion",
+      "scope": "On a marked ramified-boundary open E=A1, a global affine parameter and a nowhere-zero frame of the inverse-square different line are each unique up to a constant. For equal connector contact order m, the two initial conormal coefficients therefore define an intrinsic projective ratio R_jet=[c_+:c_-], modulo inversion for an unordered node. The exact quartic spectator packet has R_jet=[-1:1]. At a node the canonical logarithmic dualizing generator has anti-diagonal residues, but multiplication by any conormal residue in the conductor makes it regular on both normalized branches; equivalently the conductor annihilates the dualizing residue quotient, so it imposes no equation on R_jet. More strongly, for lambda!=0,1 the finite-codimension subring R_lambda={f in k[T]:f'(0)=0 and f(1)=f(lambda)} has normalization k[T], conductor T^2*(T-1)*(T-lambda)*k[T], one order-two cusp branch and one paired order-one node packet, while its conductor generator has varying ratio [-1:lambda^2]. The symmetric member lambda=-1 is exactly the two-generated plane algebra k[T^2,T^3*(T^2-1)] with equation y^2=x^3*(x-1)^2; it has the ordinary cusp T=0, transverse paired node T=+1,-1, the same conductor, and structured ratio [-1:1]. Vertical projection has local braids sigma^3 at the cusp and sigma^2 at the node. Zariski--van Kampen therefore imposes aba=bab and ab=ba, forcing a=b. Exact enumeration leaves only six diagonal transposition pairs, each with maximum orbit two, so no connected degree-four simply ramified cover can use this symmetric carrier. This is a carrier-specific global-meridian exclusion, not a quartic Keller exclusion; other carriers still require their actual braid factorizations.",
+      "canonical_source": "JC2_HC4_SHARED_BOUNDARY_PROGRAM.md",
+      "dependencies": [
+        "PIC4",
+        "QPK4",
+        "external: Zariski--van Kampen theorem for plane-curve complements"
+      ],
+      "checker": "scripts/verify_jc2_hc4_global_jet_transport.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:654b2dd291635ee02e7c09d483ade0183ec4395e9e84cc1698e0d7be3c64a583",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [
+        "the node dualizing-residue sign as sufficient connector jet transport"
+      ],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
       "id": "DZE4",
       "kind": "corollary",
       "state": "proved",
@@ -9922,6 +10007,33 @@
       ],
       "supersedes": [
         "restoring conductor endpoint pairing as sufficient to make the quartic semigroup search finite"
+      ],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
+      "id": "KPI4",
+      "kind": "example",
+      "state": "proved",
+      "title": "Quartic packet linear-pencil under-determination",
+      "scope": "The finite-free quartic packet model F0=(y,x^4-x^3+x*y) and its nonlinear target shear F2=(y,x^4-x^3+x*y+y^2) have isomorphic finite covers, the same clean 3+1 cusp and 2+2 connector, and the same Jacobian determinant -4*x^3+3*x^2-y. For every pencil direction beta!=0, the F0 member is polynomially equivalent to X*Y plus a constant, so its generic fiber has genus zero, two punctures, and cohomological monodromy-at-infinity zeta 1. The F2 member is Newton-nondegenerate with triangle conv{(0,0),(4,0),(0,2)}; its generic fiber has genus one and two punctures. An ordinary-blowup resolution has vertical pole data (4,1),(2,1),(4,-2) in (multiplicity, open Euler characteristic), giving zeta 1/(1+t^2). In both pencils [1:0] is the coordinate member y with zeta 1-t. Thus the quartic conductor packet and dP wedge dQ do not determine the topology of the linear pencil, and the linear-pencil construction is not invariant under nonlinear polynomial target equivalence. The examples are not Keller maps and do not exclude either quartic packet.",
+      "canonical_source": "plane-jc/KELLER_PENCIL_AT_INFINITY_EXPERIMENT.md",
+      "dependencies": [
+        "QPK4"
+      ],
+      "checker": "plane-jc/cas/experiment_quartic_keller_pencil.py",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:a8ff27066f8ee9d9566c7cd18101e273b548e37ef1e3dbc27fe2f9d7a2f4cde4",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [
+        "the quartic conductor packet as sufficient input for a symbolic linear-pencil zeta function",
+        "the linear target pencil as an invariant under unrestricted polynomial left equivalence"
       ],
       "replaced_by": [],
       "priority": "reference"
@@ -10342,6 +10454,33 @@
       ],
       "supersedes": [
         "generic continuation problem on the degree-42 residual graphs"
+      ],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "HR42S",
+      "kind": "corollary",
+      "state": "proved",
+      "title": "Degree-forty-two sixth-jet embedded-support obstruction",
+      "scope": "Let I be the full unit-pivot-reduced transported {2,7} Ritt core over Q on the base fiber (e1,e2,t)=(1,2,3), let m=(u,v), and put J6=I+m^6 in Q[u,v,w0,w1,w2]. For the explicit stored sixth-order class c6, exact rational Macaulay certificates prove w0*c6 and w2*c6 lie in J6. A nine-term finite-support coefficient functional annihilates every polynomial multiple of the 16 primitive reduced-core generators and every element of m^6 while taking c6 to one. Hence c6 is nonzero in R/J6 and is killed by the boundary ideal (w0,w2), so H^0_(w0,w2)(R/J6) is nonzero and an associated prime of the sixth jet contains the boundary. The membership matrix has dimensions 646 by 2400 and rank 547; the dual system has 1249 equations on 210 coordinates and rank 134. Both rational certificates are reconstructed by two-sided block Krylov--Wiedemann runs over eight 31-bit primes and replayed by a standard-library-only independent checker. This is a characteristic-zero theorem for one specialized order-six class, not the full saturation, the order-seven module, a generic-base statement, completed all-order synchronization, or the separate degree-42 inverse calculation.",
+      "canonical_source": "extended-geometry/SUPPORT_SATURATION_COMPILER.md",
+      "dependencies": [
+        "HR42J",
+        "external: elementary Macaulay ideal-membership and coefficient-duality criterion"
+      ],
+      "checker": "scripts/verify_degree42_c6_macaulay.py",
+      "proof_type": "exact_symbolic",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:4777e87cf0a0da6903d4dcccd529fc767c62f60c37b6aae2dec01783af89a6d8",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [
+        "modular-only order-six support torsion for the specialized degree-42 Ritt fiber"
       ],
       "replaced_by": [],
       "priority": "derived"
@@ -11277,7 +11416,7 @@
       "kind": "open_problem",
       "state": "parked",
       "title": "Plane finite-normalization and log-surface classification",
-      "scope": "Starting from PFN2, PCC3, QPK4, QCL4, QBX4, QLD4, QGM4, DZE4, MPP1, and QES4, close the two remaining geometric-degree-four rows. All target groupings reduce to the primitive ramified-boundary/canonical character E; completed cusp and connector normalization, conductor, deletion, and Cech laws are compatible; and k[x,y]/(h) is the odd-square endpoint carrier. DZE4 proves that raw generator poles are unbounded under packet-preserving automorphisms and require residue decoration. MPP1 closes the alternating-direction peak gate. QES4 computes the cusp semigroup <2,3>, the connector signed multivaluation semigroup {(u,v):u+v<=0}, its residue-completed polar bounds, arbitrary conductor endpoint matchings, and the odd-square contact vector. It proves that even this conductor-decorated abstraction is not finite: connector count, automorphism-minimized marked height, and connector contact remain unbounded, and the two-boundary rows additionally need the marked D valuation. The immediate tasks are to derive degree-four bounds on those three quantities from the finite cover and log boundary, recover the actual conductor pairing map and global meridian relation rather than an abstract matching, and then run the finite endpoint filters. Only then can the search force a descended unit, additional homogeneous boundary, or monodromy conflict. Then descend through the unramified D direction. Beyond degree four, classify all missing-boundary divisors and affine companions using the bounded signature atlas, residual different, free class group, units, Riemann--Hurwitz, and K+D=-2 Pi*L_infinity+sum e_i E_i.",
+      "scope": "Starting from PFN2, PCC3, QPK4, QCL4, QBX4, QLD4, QGM4, PIC4, GJT4, DZE4, MPP1, and QES4, close the two remaining geometric-degree-four rows. All target groupings reduce to the primitive ramified-boundary/canonical character E; completed cusp and connector normalization, conductor, deletion, and Cech laws are compatible; and k[x,y]/(h) is the odd-square endpoint carrier. PIC4 proves that the ordinary paired initial-conormal conductor class is zero. GJT4 makes the global projective connector jet ratio intrinsic, proves that the dualizing residue quotient cannot constrain it, constructs the symmetric two-generated cusp-node carrier, and then excludes a connected quartic cover over that carrier from its simultaneous cusp-braid and node-commutation relations. DZE4 proves that raw generator poles are unbounded under packet-preserving automorphisms and require residue decoration. MPP1 closes the alternating-direction peak gate. QES4 computes the cusp semigroup <2,3>, the connector signed multivaluation semigroup {(u,v):u+v<=0}, its residue-completed polar bounds, arbitrary conductor endpoint matchings, and the odd-square contact vector. It proves that even this conductor-decorated abstraction is not finite: connector count, automorphism-minimized marked height, and connector contact remain unbounded, and the two-boundary rows additionally need the marked D valuation. The immediate tasks are to derive degree-four bounds on those three quantities from the finite cover and log boundary, recover the actual braid factorization and global meridian relation for every remaining carrier rather than an abstract matching, and then run the finite endpoint filters. Only then can the search force a descended unit, additional homogeneous boundary, or monodromy conflict. Then descend through the unramified D direction. Beyond degree four, classify all missing-boundary divisors and affine companions using the bounded signature atlas, residual different, free class group, units, Riemann--Hurwitz, and K+D=-2 Pi*L_infinity+sum e_i E_i.",
       "canonical_source": "plane-jc/JC2_GLOBAL_COX_PACKET_ATTACK.md",
       "dependencies": [
         "PFN2",
@@ -11287,6 +11426,8 @@
         "QBX4",
         "QLD4",
         "QGM4",
+        "PIC4",
+        "GJT4",
         "DZE4",
         "MPP1",
         "QES4"
@@ -12962,7 +13103,7 @@
       "kind": "theorem",
       "state": "proved",
       "title": "Split D5 Cox-fill and affine-linear modification obstruction",
-      "scope": "Over a characteristic-zero field containing sqrt(5), J_5/5 factors as R_+ R_- and the reduced target branch pulls back with source boundary vector (1,2,2), while J_5 has vector (0,1,1). The two smooth ramification colors meet with multiplicity two. The product fill xy=R_+R_- is a normal singular threefold with class group Z and only constant units. Each one-color fill is A3, but leaves the other Jacobian color. The separated simultaneous fill is a factorial four-dimensional nondegenerate quadric cone with class group zero, constant units, and a unique singular vertex, so neither standard fill is affine space; free stabilization preserves the defects. More generally, for every r>=1, a map F(a,z)=h(a)+M(a)z over K[a] with r auxiliary variables and nonzero constant Jacobian has generic degree one. Applied over K=k(u), every polynomial D5 modification that retains u and is affine-linear in any number of auxiliary coordinates loses the degree-five function-field extension. Thus a surviving construction must modify u and use nonlinear auxiliary dependence. This result does not construct an absolute Keller map.",
+      "scope": "Over a characteristic-zero field containing sqrt(5), J_5/5 factors as R_+ R_- and the reduced target branch pulls back with source boundary vector (1,2,2), while J_5 has vector (0,1,1). The two smooth ramification colors meet with multiplicity two. The product fill xy=R_+R_- is a normal singular threefold with class group Z and only constant units. Each one-color fill is A3, but leaves the other Jacobian color. The separated simultaneous fill is a factorial four-dimensional nondegenerate quadric cone with class group zero, constant units, and a unique singular vertex, so neither standard fill is affine space; free stabilization preserves the defects. More generally, for every r>=1, a map F(a,z)=h(a)+M(a)z over K[a] with r auxiliary variables and nonzero constant Jacobian has generic degree one. Applied over K=k(u), every polynomial D5 modification that retains u and is affine-linear in any number of auxiliary coordinates loses the degree-five function-field extension. Independently, any polynomial thickening that restricts to the original incidence on a source and target zero section has restricted determinant -J_5 det(M), even with arbitrary nonlinear auxiliary terms, and cannot be Keller. Thus a surviving construction must modify u, use nonlinear auxiliary dependence, and preserve the D5 field through nontrivial birational elimination rather than an unchanged polynomial section. This result does not construct an absolute Keller map.",
       "canonical_source": "extended-geometry/ABSOLUTE_DIHEDRAL_D5_MODIFICATION_FRONTIER.md",
       "dependencies": [
         "CDIG1",
@@ -12974,13 +13115,123 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:f4f94f411d4a2bf33af48b36681d633f3d1982282ff33221c98a4716388534be",
+      "artifact_hash": "sha256:0ce650227f0daa827ab43f6008d04a4e1a29aeac984e282e555acafc3342a57f",
       "software_lock": [
         ".python-version",
         "requirements.txt"
       ],
       "supersedes": [
         "the unrestricted D5 affine-linear coupled-mask search in CDIG1"
+      ],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "D5NOC1",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Nonlinear D5 affine-modification obstruction classification",
+      "scope": "For stable polynomial realizations of the split degree-five Dickson D5 extension with two or three auxiliary coordinates, eight necessary gates are separated: arithmetic monodromy, exact field degree, relocation of finite branch valuations, boundary log discrepancy, affine-space invariants, incidence-graph normal modules, inverse-adjugate divisibility, and complete regular fibers. Etaleness forces the target branch valuation and both index-two source ramification valuations not to retain corresponding finite divisorial centers. In the single-branch-supported factorization class, if the target exceptional determinant pulls back with order m times (1,2,2), constant Jacobian uniquely forces source orders (m,2m-1,2m-1), with m>=1 and primitive source ledger C*R_+*R_- against one target branch factor. The diagonal realization of that primitive ledger still has pole 1/(R_+*R_-). Every polynomial source/target graph carrying the old incidence is excluded by the restricted block determinant. Every polynomial incidence into the target branch factors geometrically through (U,V)=(s^2,+/-2s^5), with base differential rank one off the cusp and zero at it. These are necessary obstructions and a search classification, not a construction or a no-go theorem for the remaining nonlinear nonautomorphic branch-incidence stratum.",
+      "canonical_source": "extended-geometry/D5_NONLINEAR_MODIFICATION_OBSTRUCTION_CLASSIFICATION.md",
+      "dependencies": [
+        "D5AM1",
+        "external: height-one ramification for etale morphisms",
+        "external: unique factorization valuation criterion"
+      ],
+      "checker": "scripts/verify_d5_nonlinear_obstruction_classification.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:adb095b1da330f6083b37967bec86bca7577923a814737c9ea9da6531e05005a",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [
+        "the unclassified nonlinear D5 two-/three-auxiliary search after D5AM1"
+      ],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "D5TMB1",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Canonical D5 two-mask blowdown obstructions",
+      "scope": "The polynomial two-mask blowdown beta(U,V,A,B)=(U,V,V*A+2*U*B,2*U^4*A+V*B) is generically birational with determinant Delta=V^2-4*U^5 and inverse adjugate numerators V*S-2*U*T and -2*U^4*S+V*T. Any polynomial map whose first two outputs are (u_0,P_5(a_0,u_0)) for polynomial a_0,u_0 has determinant divisible by J_5, independently of nonlinear source dependence, so the fixed-base factorization cannot be Keller. For a constant linear rechart, the identity q^2-4*p^5=lambda*(V^2-4*U^5) forces p=c*U and q=d*V with d^2=c^5; inverse divisibility then forces the two mask rows into the span of the base rows. More generally, at every polynomial degree, p and q satisfying that identity cannot depend on any mask variable: specializing all other variables gives a polynomial A1-map to a smooth projective genus-two completion, which is constant by Riemann--Hurwitz. Exact division also rejects all 72 coordinate assignments from the unchanged primitive source chart and the two normalized ramification-incidence charts. The first nonautomorphic normalized-cusp chart p=V^2+Delta*S, q=2*V^5+Delta*T also fails in every degree: every fourth-coordinate contraction determinant is divisible by Delta, while the required log-crepant quotient is nonzero modulo Delta. Thus the next chart must be nonautomorphic and move tangentially along the normalized cusp modulo Delta. This does not exclude that remaining stratum or construct a Keller map.",
+      "canonical_source": "extended-geometry/D5_TWO_MASK_BLOWDOWN_OBSTRUCTIONS.md",
+      "dependencies": [
+        "D5NOC1",
+        "external: Riemann--Hurwitz theorem for maps from P1 to a genus-two curve"
+      ],
+      "checker": "scripts/verify_d5_two_mask_blowdown_obstructions.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:1663fc144c5ed72b7942db25005b24d86dc1a2b028ed361902465eb5e1e86868",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [
+        "constant-linear and automorphic base-moving forms of the D5NOC1 two-mask search"
+      ],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "HC4PPG1",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "HC4 projective-gradient Segre formula and low-degree numerical atlas",
+      "scope": "For a four-variable potential of degree d with gradient degree m=d-1, the projective compactification whose top degree equals the affine gradient's generic degree is Gamma=[X0^m:(partial_1 Psi)^h:...:(partial_4 Psi)^h], not in general the full polar map of the homogenized potential. Its infinity base scheme has no divisorial component, and if i_*s(B,P4)=sum sigma_k H^k then g_i=m^i-sum_(k<=i) binom(i,k)m^(i-k)sigma_k, in particular deg_aff(grad Psi)=m^4-6m^2 sigma_2-4m sigma_3-sigma_4. Positivity, degree bounds, and log-concavity leave respectively 9, 7, 72, and 67 necessary integral Segre signatures for m=2,3 and affine degree 2,3; zero-dimensional bases have forced lengths 14,13,79,78. A smooth-curve-only quadratic-gradient base is numerically possible only for affine degree two with degree/genus (4,0), and is impossible for affine degree three. Cotangent lifts preserve the plane map's generic degree, so a hypothetical geometric-degree-four packet has aggregate correction m^4-4. The Meng--Yang HC6/HC5 controls have generic degree three and aggregate corrections 7^6-3=117646 and 13^5-3=371290; Schur descent preserves the generic fiber count by an exact Keller-linear solve. The equation R(P)=0 alone does not determine a Segre class, as an all-degree constant-Hessian automorphism family shows. The atlas gives necessary numerical configurations only: it does not prove their existence, classify schemes by Hilbert polynomial, compute every individual Meng--Yang Segre degree, or settle HC4.",
+      "canonical_source": "HC4_PROJECTIVE_POLAR_GEOMETRY.md",
+      "dependencies": [
+        "PIC4",
+        "MYSD1",
+        "external: Fulton blow-up definition of Segre classes",
+        "external: Khovanskii--Teissier log-concavity of graph multidegrees",
+        "external: Meng--Yang five-variable Hessian counterexample"
+      ],
+      "checker": "scripts/verify_hc4_projective_polar_atlas.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:97f016c1cf2b2ae214bb87de947098c0d6b3fdf2a566f5b5c6a510f89b9cecb5",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "HC4PPG2",
+      "kind": "corollary",
+      "state": "proved",
+      "title": "Quadratic-gradient HC4 infinity-base exclusion",
+      "scope": "Let Psi be a characteristic-zero four-variable potential whose gradient has polynomial degree at most two and whose Hessian determinant is a nonzero constant. Then grad(Psi) is a quadratic Keller map, so Wang's degree-two theorem makes it a polynomial automorphism. Its affine generic degree is therefore one, and the infinity Segre degrees satisfy 24*sigma_2+8*sigma_3+sigma_4=15. Consequently all nine quadratic-gradient affine-degree-two signatures and all seven affine-degree-three signatures in HC4PPG1 are empty. In particular, neither the length-14 nor the length-13 zero-dimensional infinity base scheme can occur, and no quadratic-gradient HC4 counterexample exists. This is an intersection-theoretic consequence of Wang's theorem, not a new proof of that theorem or a classification of quadratic gradient automorphism base schemes.",
+      "canonical_source": "HC4_PROJECTIVE_POLAR_GEOMETRY.md",
+      "dependencies": [
+        "HC4PPG1",
+        "external: S. S. Wang degree-two Jacobian theorem"
+      ],
+      "checker": "scripts/verify_hc4_projective_polar_atlas.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:97f016c1cf2b2ae214bb87de947098c0d6b3fdf2a566f5b5c6a510f89b9cecb5",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [
+        "the proposed length-13 Hilbert-scheme search for quadratic-gradient affine degree three"
       ],
       "replaced_by": [],
       "priority": "derived"

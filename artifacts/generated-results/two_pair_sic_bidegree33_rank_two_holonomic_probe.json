@@ -1,0 +1,280 @@
+{
+  "format": "two-pair-sic-bidegree33-rank-two-holonomic-probe-v1",
+  "status": "exact period setup plus modular recurrence evidence; not a universal creative-telescoping certificate",
+  "factor_chart": "C=U*W with U in Mat(4,2), W in Mat(2,4)",
+  "period_identity": "nu_m=mu_m/(3m+1)!=CT_u integral_0^1 Phi_C(1,u,t,(1-t)/u)^m dt",
+  "period_identity_checked_orders": 4,
+  "exact_points": [
+    {
+      "U": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          5,
+          7
+        ]
+      ],
+      "W": [
+        [
+          11,
+          13,
+          17,
+          19
+        ],
+        [
+          23,
+          29,
+          31,
+          37
+        ]
+      ],
+      "rank": 2,
+      "pure_moments_1_through_4": [
+        2502,
+        120004752,
+        24426240171840,
+        13040211749112437760
+      ]
+    },
+    {
+      "U": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          13,
+          17
+        ]
+      ],
+      "W": [
+        [
+          19,
+          23,
+          29,
+          31
+        ],
+        [
+          37,
+          41,
+          43,
+          47
+        ]
+      ],
+      "rank": 2,
+      "pure_moments_1_through_4": [
+        9670,
+        1722586272,
+        1307019775619520,
+        2604425824775477099520
+      ]
+    }
+  ],
+  "generic_laurent_support": {
+    "newton_polygon_vertices": [
+      [
+        -3,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        3,
+        3
+      ],
+      [
+        -3,
+        3
+      ]
+    ],
+    "normalized_volume": 27,
+    "forced_endpoint_face": "the u=-3 face is c_30*u^-3*(1-t)^3, so the constrained beta family lies on the unconstrained face discriminant"
+  },
+  "modular_probe": {
+    "sequence": "nu_m=mu_m/(3m+1)!",
+    "records": [
+      {
+        "point": 0,
+        "prime": 1000003,
+        "fit": {
+          "order": 27,
+          "coefficient_degree": 11,
+          "moments_computed": 501,
+          "linear_fit_equations": 335,
+          "unused_verification_equations": 139
+        },
+        "monic_leading_coefficients_low_to_high": [
+          556703,
+          366601,
+          458720,
+          33604,
+          367642,
+          700440,
+          178180,
+          359834,
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "point": 0,
+        "prime": 1000033,
+        "fit": {
+          "order": 27,
+          "coefficient_degree": 11,
+          "moments_computed": 501,
+          "linear_fit_equations": 335,
+          "unused_verification_equations": 139
+        },
+        "monic_leading_coefficients_low_to_high": [
+          505901,
+          273605,
+          965685,
+          229106,
+          936860,
+          10810,
+          554306,
+          993687,
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "point": 0,
+        "prime": 1000037,
+        "fit": {
+          "order": 27,
+          "coefficient_degree": 11,
+          "moments_computed": 501,
+          "linear_fit_equations": 335,
+          "unused_verification_equations": 139
+        },
+        "monic_leading_coefficients_low_to_high": [
+          490663,
+          566875,
+          654626,
+          108917,
+          638555,
+          497580,
+          374817,
+          6559,
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "point": 1,
+        "prime": 1000003,
+        "fit": {
+          "order": 27,
+          "coefficient_degree": 11,
+          "moments_computed": 501,
+          "linear_fit_equations": 335,
+          "unused_verification_equations": 139
+        },
+        "monic_leading_coefficients_low_to_high": [
+          556703,
+          366601,
+          458720,
+          33604,
+          367642,
+          700440,
+          178180,
+          359834,
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "point": 1,
+        "prime": 1000033,
+        "fit": {
+          "order": 27,
+          "coefficient_degree": 11,
+          "moments_computed": 501,
+          "linear_fit_equations": 335,
+          "unused_verification_equations": 139
+        },
+        "monic_leading_coefficients_low_to_high": [
+          505901,
+          273605,
+          965685,
+          229106,
+          936860,
+          10810,
+          554306,
+          993687,
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "point": 1,
+        "prime": 1000037,
+        "fit": {
+          "order": 27,
+          "coefficient_degree": 11,
+          "moments_computed": 501,
+          "linear_fit_equations": 335,
+          "unused_verification_equations": 139
+        },
+        "monic_leading_coefficients_low_to_high": [
+          490663,
+          566875,
+          654626,
+          108917,
+          638555,
+          497580,
+          374817,
+          6559,
+          0,
+          0,
+          0,
+          1
+        ]
+      }
+    ],
+    "common_monic_forward_coefficient": {
+      "factorization": "product_(k in {71,73,74,76,77,79,80,82})(3m+k)*(9m^3-1836m^2+210730m-17920380)/(9*3^8)",
+      "no_nonnegative_integer_roots": true,
+      "integer_root_check": "the cubic has no root modulo 29; all eight linear factors are positive for m>=0"
+    },
+    "degree_10_fit_at_order_27": "none at either exact point modulo 1000003"
+  },
+  "unresolved_universal_steps": [
+    "construct and independently verify telescoping certificates over the rank-two parameter ring",
+    "recover the parameter denominator/discriminant D(U,W) multiplying the common forward coefficient",
+    "stratify D=0 and reduce the required bridge moments on mu_1,...,mu_12,mu_14"
+  ],
+  "corrected_system_status": "not decided: an order-27 recurrence needs additional bridge values unless the corrected ideal supplies them"
+}

@@ -2,6 +2,7 @@ SHELL := /bin/bash
 
 PYTHON ?= .venv/bin/python
 SYSTEM_PYTHON ?= python3
+JC2_REPLAY_JOBS ?= 4
 
 FINALIZED_PAPERS := \
 	papers/gaussian-moments-two-variables \
@@ -19,6 +20,7 @@ ALL_PAPERS := $(VERIFIED_PAPERS) $(PARKED_PAPERS) $(COMPANION_PAPERS)
 .PHONY: check verify verify-logged verify-minimal verify-core verify-geometry \
 	verify-theorems verify-regressions verify-derived verify-family \
 	verify-external-consequences verify-restricted-minima verify-two-real-gmc verify-sic2c4 verify-factorial-moments verify-factorial-frontier verify-counterexample-scoreboard verify-plane-jc verify-plane-case2-residue-strata verify-plane-case2-j1-endpoint verify-plane-case2-maximal-gcd verify-plane-case2-gcd6 verify-plane-poisson-radical verify-plane-poisson-primary-charts verify-plane-poisson-separators verify-plane-poisson-primary-filtration verify-plane-poisson-filtered-modules verify-weighted-boundary verify-quartic-degree-drop-quantization \
+	verify-plane-72-108-exact-fast \
 	verify-lr-rees-sagbi \
 	verify-plane-sparse-supports verify-plane-support-bridge \
 	verify-linear-torus-free verify-algebraic-torus-free \
@@ -63,7 +65,8 @@ ALL_PAPERS := $(VERIFIED_PAPERS) $(PARKED_PAPERS) $(COMPANION_PAPERS)
 	verify-hvc38-cross-frontier \
 	verify-hvc38-gap-closure \
 	verify-hvc38-maximal-block-closure \
-	verify-support-saturation-compiler refresh-support-saturation-cases \
+	verify-support-saturation-compiler verify-degree42-c6-macaulay \
+	refresh-support-saturation-cases refresh-degree42-c6-macaulay \
 	verify-degree30-hessian-pairs refresh-degree30-hessian-pairs \
 	verify-contact-r6 verify-contact-branch-schema verify-contact-r7-asymptotic \
 	verify-contact-r8-asymptotic verify-contact-r8 \
@@ -84,6 +87,7 @@ ALL_PAPERS := $(VERIFIED_PAPERS) $(PARKED_PAPERS) $(COMPANION_PAPERS)
 .PHONY: verify-all-rank-collision-projective-descent
 .PHONY: verify-rank-four-nonprojective-keller-lift
 .PHONY: verify-rank-four-degree-eighteen-target-obstruction
+.PHONY: verify-binary-degree-five-gvc search-binary-degree-five-gvc
 
 check:
 	$(PYTHON) -m compileall -q jcsearch scripts
@@ -134,9 +138,16 @@ verify-hvc38-maximal-block-closure:
 
 verify-support-saturation-compiler:
 	$(PYTHON) scripts/verify_support_saturation_compiler.py
+	$(SYSTEM_PYTHON) scripts/verify_degree42_c6_macaulay.py
+
+verify-degree42-c6-macaulay:
+	$(SYSTEM_PYTHON) scripts/verify_degree42_c6_macaulay.py
 
 refresh-support-saturation-cases:
 	$(PYTHON) scripts/compile_support_saturation_cases.py
+
+refresh-degree42-c6-macaulay:
+	$(PYTHON) scripts/compile_degree42_c6_macaulay.py
 
 verify-gq2-local-fibers:
 	$(SYSTEM_PYTHON) scripts/verify_gq2_permutation_action.py arithmetic/certificates/gq2_s3_x3_minus_2.json
@@ -202,6 +213,9 @@ verify-plane-jc:
 	$(PYTHON) plane-jc/cas/test_log_boundary_compiler.py
 	$(PYTHON) plane-jc/cas/test_poisson_square_rigidity.py
 	$(PYTHON) plane-jc/cas/test_poisson_square_filtered_modules.py
+
+verify-plane-72-108-exact-fast:
+	$(PYTHON) plane-jc/cas/verify_72_108_exact_fast.py --jobs $(JC2_REPLAY_JOBS)
 
 verify-plane-sparse-supports:
 	$(PYTHON) plane-jc/cas/verify_sparse_support_exclusions.py
@@ -601,7 +615,14 @@ verify-counterexample-scoreboard: verify-two-real-gmc verify-sic2c4
 	$(PYTHON) scripts/audit_dvorsky_gvc5_counterexample.py
 	$(PYTHON) scripts/verify_separable_gvc_escape_obstructions.py
 	$(PYTHON) scripts/verify_binary_heat_quadratic_gvc.py
+	$(PYTHON) scripts/verify_binary_degree_five_gvc_frontier.py
 	$(PYTHON) scripts/verify_minimal_counterexample_scoreboard.py
+
+verify-binary-degree-five-gvc:
+	$(PYTHON) scripts/verify_binary_degree_five_gvc_frontier.py
+
+search-binary-degree-five-gvc:
+	$(PYTHON) scripts/search_binary_degree_five_gvc_faces_mod_p.py
 
 verify-factorial-moments:
 	$(SYSTEM_PYTHON) scripts/verify_factorial_moment_witnesses.py

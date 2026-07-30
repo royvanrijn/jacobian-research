@@ -1,0 +1,184 @@
+{
+  "format": "binary-degree-five-gvc-face-search-v1",
+  "status": "experiment",
+  "primes": [
+    101,
+    103,
+    107
+  ],
+  "quartic_top_primes": [
+    11,
+    13,
+    17,
+    19,
+    23,
+    29,
+    31
+  ],
+  "parameter_order": {
+    "xy4": [
+      "B",
+      "H",
+      "J"
+    ],
+    "y5": [
+      "A",
+      "H",
+      "J"
+    ]
+  },
+  "xy4": [
+    {
+      "prime": 101,
+      "raw_triples": 1030301,
+      "after_moment_2": 201,
+      "after_moment_3": 1,
+      "final_survivors": [
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "nonzero_stabilizer_orbits": 0
+    },
+    {
+      "prime": 103,
+      "raw_triples": 1092727,
+      "after_moment_2": 205,
+      "after_moment_3": 1,
+      "final_survivors": [
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "nonzero_stabilizer_orbits": 0
+    },
+    {
+      "prime": 107,
+      "raw_triples": 1225043,
+      "after_moment_2": 213,
+      "after_moment_3": 1,
+      "final_survivors": [
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "nonzero_stabilizer_orbits": 0
+    }
+  ],
+  "y5": [
+    {
+      "prime": 101,
+      "raw_triples": 1030301,
+      "after_moment_2": 10201,
+      "after_moment_3": 201,
+      "after_moment_4": 201,
+      "final_survivor_description": "{(A,0,0)} union {(0,H,0)}",
+      "final_survivor_count": 201,
+      "nonzero_stabilizer_orbits": 2,
+      "nullcone_screen": "two one-sided coordinate lines"
+    },
+    {
+      "prime": 103,
+      "raw_triples": 1092727,
+      "after_moment_2": 9589,
+      "after_moment_3": 205,
+      "after_moment_4": 205,
+      "final_survivor_description": "{(A,0,0)} union {(0,H,0)}",
+      "final_survivor_count": 205,
+      "nonzero_stabilizer_orbits": 2,
+      "nullcone_screen": "two one-sided coordinate lines"
+    },
+    {
+      "prime": 107,
+      "raw_triples": 1225043,
+      "after_moment_2": 12721,
+      "after_moment_3": 425,
+      "after_moment_4": 213,
+      "final_survivor_description": "{(A,0,0)} union {(0,H,0)}",
+      "final_survivor_count": 213,
+      "nonzero_stabilizer_orbits": 2,
+      "nullcone_screen": "two one-sided coordinate lines"
+    }
+  ],
+  "quartic_squarefree_top_forms": [
+    {
+      "prime": 11,
+      "squarefree_cross_ratios": 9,
+      "projective_forms_per_cross_ratio": 1464,
+      "raw_projective_tuples": 13176,
+      "after_moment_2": 36,
+      "after_moment_3": 36,
+      "survivors_per_cross_ratio": 4,
+      "survivor_description": "x^5, y^5, (x+y)^5, (lambda*x+y)^5"
+    },
+    {
+      "prime": 13,
+      "squarefree_cross_ratios": 11,
+      "projective_forms_per_cross_ratio": 2380,
+      "raw_projective_tuples": 26180,
+      "after_moment_2": 52,
+      "after_moment_3": 44,
+      "survivors_per_cross_ratio": 4,
+      "survivor_description": "x^5, y^5, (x+y)^5, (lambda*x+y)^5"
+    },
+    {
+      "prime": 17,
+      "squarefree_cross_ratios": 15,
+      "projective_forms_per_cross_ratio": 5220,
+      "raw_projective_tuples": 78300,
+      "after_moment_2": 108,
+      "after_moment_3": 60,
+      "survivors_per_cross_ratio": 4,
+      "survivor_description": "x^5, y^5, (x+y)^5, (lambda*x+y)^5"
+    },
+    {
+      "prime": 19,
+      "squarefree_cross_ratios": 17,
+      "projective_forms_per_cross_ratio": 7240,
+      "raw_projective_tuples": 123080,
+      "after_moment_2": 76,
+      "after_moment_3": 68,
+      "survivors_per_cross_ratio": 4,
+      "survivor_description": "x^5, y^5, (x+y)^5, (lambda*x+y)^5"
+    },
+    {
+      "prime": 23,
+      "squarefree_cross_ratios": 21,
+      "projective_forms_per_cross_ratio": 12720,
+      "raw_projective_tuples": 267120,
+      "after_moment_2": 144,
+      "after_moment_3": 84,
+      "survivors_per_cross_ratio": 4,
+      "survivor_description": "x^5, y^5, (x+y)^5, (lambda*x+y)^5"
+    },
+    {
+      "prime": 29,
+      "squarefree_cross_ratios": 27,
+      "projective_forms_per_cross_ratio": 25260,
+      "raw_projective_tuples": 682020,
+      "after_moment_2": 156,
+      "after_moment_3": 108,
+      "survivors_per_cross_ratio": 4,
+      "survivor_description": "x^5, y^5, (x+y)^5, (lambda*x+y)^5"
+    },
+    {
+      "prime": 31,
+      "squarefree_cross_ratios": 29,
+      "projective_forms_per_cross_ratio": 30784,
+      "raw_projective_tuples": 892736,
+      "after_moment_2": 160,
+      "after_moment_3": 116,
+      "survivors_per_cross_ratio": 4,
+      "survivor_description": "x^5, y^5, (x+y)^5, (lambda*x+y)^5"
+    }
+  ],
+  "total_raw_triples": 6696142,
+  "total_raw_projective_top_forms": 2082612,
+  "scope": "exhaustive on the two displayed weighted faces and on every squarefree quartic cross-ratio/projective top form over the listed finite fields; exact identities are checked first, but the modular counts are not an all-order proof"
+}

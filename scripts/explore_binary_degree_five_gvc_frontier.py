@@ -20,6 +20,7 @@ import argparse
 import json
 from dataclasses import dataclass
 from pathlib import Path
+from typing import Iterable
 
 import sympy as sp
 
@@ -161,7 +162,110 @@ def expression_record(expression: sp.Expr) -> dict[str, object]:
     }
 
 
-def analyze(normal_form: NormalForm) -> dict[str, object]:
+def _unit_linear_solution(
+    equation: sp.Expr,
+    variables: Iterable[sp.Symbol],
+) -> tuple[sp.Symbol, sp.Expr] | None:
+    """Return a denominator-free linear pivot when one is available."""
+    for variable in variables:
+        polynomial = sp.Poly(equation, variable)
+        if polynomial.degree() != 1:
+            continue
+        leading, constant = polynomial.all_coeffs()
+        if leading.is_Rational and leading != 0:
+            return variable, sp.expand(-constant / leading)
+    return None
+
+
+def triangular_components(
+    equations: Iterable[sp.Expr],
+    variables: Iterable[sp.Symbol],
+) -> list[tuple[dict[sp.Symbol, sp.Expr], tuple[sp.Expr, ...]]]:
+    """Apply unit pivots and split explicit products into research branches."""
+    initial = (
+        {},
+        tuple(sp.expand(equation) for equation in equations),
+    )
+    queue = [initial]
+    completed: list[
+        tuple[dict[sp.Symbol, sp.Expr], tuple[sp.Expr, ...]]
+    ] = []
+    variable_order = tuple(variables)
+    while queue:
+        substitution, pending = queue.pop()
+        reduced: list[sp.Expr] = []
+        contradiction = False
+        for equation in pending:
+            value = sp.factor(equation.subs(substitution))
+            if value == 0:
+                continue
+            if value.is_number:
+                contradiction = True
+                break
+            reduced.append(sp.expand(value))
+        if contradiction:
+            continue
+        split_index = None
+        split_factors: list[sp.Expr] = []
+        radicalized: list[sp.Expr] = []
+        for index, equation in enumerate(reduced):
+            factors = [
+                factor
+                for factor, _multiplicity in sp.factor_list(equation)[1]
+                if not factor.is_number
+            ]
+            if len(factors) >= 2:
+                split_index = index
+                split_factors = factors
+                break
+            radicalized.append(
+                sp.expand(factors[0] if factors else equation)
+            )
+        if split_index is not None:
+            rest = tuple(
+                equation
+                for index, equation in enumerate(reduced)
+                if index != split_index
+            )
+            for factor in split_factors:
+                queue.append(
+                    (
+                        dict(substitution),
+                        (sp.expand(factor),) + rest,
+                    )
+                )
+            continue
+        reduced = radicalized
+        pivot = None
+        for equation in reduced:
+            pivot = _unit_linear_solution(
+                equation,
+                (
+                    variable
+                    for variable in variable_order
+                    if variable not in substitution
+                ),
+            )
+            if pivot is not None:
+                break
+        if pivot is not None:
+            variable, value = pivot
+            updated = {
+                old_variable: sp.expand(old_value.subs(variable, value))
+                for old_variable, old_value in substitution.items()
+            }
+            updated[variable] = value
+            queue.append((updated, tuple(reduced)))
+            continue
+        completed.append((substitution, tuple(reduced)))
+    return completed
+
+
+def analyze(
+    normal_form: NormalForm,
+    *,
+    include_triangular_components: bool = False,
+) -> dict[str, object]:
     max_operator_order = 10 - normal_form.order
     lower_coefficients = polynomial_coefficients(4)
     operator = operator_coefficients(
@@ -185,7 +289,7 @@ def analyze(normal_form: NormalForm) -> dict[str, object]:
                 **expression_record(coefficient),
             }
         )
-    return {
+    record = {
         "normal_form": normal_form.name,
         "lowest_operator_order": normal_form.order,
         "leading_operator": {
@@ -213,6 +317,48 @@ def analyze(normal_form: NormalForm) -> dict[str, object]:
         "second_moment_equation_count": len(second_poly.terms()),
         "second_moment_layers": layers,
     }
+    if include_triangular_components:
+        second_equations = [
+            coefficient for _monomial, coefficient in second_poly.terms()
+        ]
+        polynomial_pivots = sorted(
+            (
+                symbol
+                for symbol in lower_coefficients.values()
+                if symbol not in first_solution
+            ),
+            key=str,
+            reverse=True,
+        )
+        operator_pivots = sorted(
+            (
+                symbol
+                for symbol in operator.values()
+                if isinstance(symbol, sp.Symbol)
+            ),
+            key=str,
+            reverse=True,
+        )
+        components = triangular_components(
+            second_equations,
+            polynomial_pivots + operator_pivots,
+        )
+        record["triangular_second_moment_components"] = [
+            {
+                "substitution": {
+                    str(symbol): str(value)
+                    for symbol, value in sorted(
+                        substitution.items(), key=lambda item: str(item[0])
+                    )
+                },
+                "residual_equations": [
+                    str(sp.factor(equation))
+                    for equation in residual_equations
+                ],
+            }
+            for substitution, residual_equations in components
+        ]
+    return record
 
 
 def main() -> None:
@@ -228,6 +374,11 @@ def main() -> None:
         default=OUTPUT,
         help="JSON output path",
     )
+    parser.add_argument(
+        "--triangular-components",
+        action="store_true",
+        help="also run the heuristic product-splitting/unit-pivot reducer",
+    )
     args = parser.parse_args()
 
     forms = normal_forms()
@@ -242,7 +393,12 @@ def main() -> None:
     records = []
     for form in selected:
         print(f"analyzing {form.name}", flush=True)
-        records.append(analyze(form))
+        records.append(
+            analyze(
+                form,
+                include_triangular_components=args.triangular_components,
+            )
+        )
     artifact = {
         "format": "binary-degree-five-gvc-second-moments-v1",
         "status": "experiment",

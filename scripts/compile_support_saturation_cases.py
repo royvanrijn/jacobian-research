@@ -9,8 +9,10 @@ The cases have intentionally different theorem scopes:
 * ``degree42`` uses the full unit-pivot-reduced core on the base fiber
   ``(e1,e2,t)=(1,2,3)``.  It certifies an untruncated characteristic-zero
   support class and computes the complete order-six/order-seven support
-  saturations at the established good prime 32003.  It does not claim a
-  characteristic-zero finite-jet lift or generic all-order synchronization.
+  saturations at the established good prime 32003.  It does not itself claim
+  a characteristic-zero finite-jet lift or generic all-order synchronization;
+  the separate sparse Macaulay certificate closes the fixed ``c6`` statement
+  at order six only.
 * ``plane`` runs the normalized cyclic ``d3`` multiplication-kernel layer of
   the Poisson-square coefficient scheme.  This is the currently defined
   boundary-residue proxy; the Case-1 conductor/residue matching module from

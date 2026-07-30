@@ -390,8 +390,25 @@ now performs the first such precomputation.  It factors
 group \(\mathbb Z\), and proves that the separated two-color fill is a
 factorial but singular quadric cone.  More generally, retaining \(u\) and
 making all remaining outputs affine-linear in any number of auxiliary
-coordinates forces generic degree one.  Thus the first surviving \(D_5\)
-ansatz must modify \(u\) and depend nonlinearly on the new coordinates.
+coordinates forces generic degree one.  An arbitrary nonlinear thickening
+which retains the incidence as a zero section also keeps \(J_5\) as a
+Jacobian divisor.  Thus the first surviving \(D_5\) ansatz must modify \(u\),
+depend nonlinearly on the new coordinates, and preserve the degree-five
+field only through a nontrivial birational elimination.
+
+The
+[nonlinear obstruction classification](D5_NONLINEAR_MODIFICATION_OBSTRUCTION_CLASSIFICATION.md)
+separates that residual stratum into eight necessary gates.  In particular,
+the branch-supported log ledger has the unique order pattern
+\((m,2m-1,2m-1)\), and the primitive diagonal realization still leaves
+the pole \(1/(R_+R_-)\).
+The subsequent
+[canonical two-mask blowdown](D5_TWO_MASK_BLOWDOWN_OBSTRUCTIONS.md)
+has determinant \(\Delta\), but its two inverse adjugate divisibilities
+exclude all constant-linear assemblies.  A generic genus-two-fibre argument
+upgrades the base-mixing obstruction to polynomial automorphic recharts of
+every degree, and the first nonautomorphic normalized-cusp chart fails by a
+contraction-divisor mismatch.
 
 ## 10. Low-degree cards
 

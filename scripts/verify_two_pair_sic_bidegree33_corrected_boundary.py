@@ -1282,6 +1282,428 @@ for (basisIndex=1;basisIndex<=size(G);basisIndex++)
     }
 
 
+def fixed_chart_expression_exact(
+    terms: dict[tuple[int, ...], int],
+    fixed_index: int,
+) -> str:
+    """Serialize an exact moment after setting one parameter equal to one."""
+
+    combined: dict[tuple[int, ...], int] = {}
+    for exponents, coefficient in terms.items():
+        reduced = exponents[:fixed_index] + exponents[fixed_index + 1 :]
+        combined[reduced] = combined.get(reduced, 0) + coefficient
+    variable_names = PARAMETERS[:fixed_index] + PARAMETERS[fixed_index + 1 :]
+    serialized: list[str] = []
+    for exponents, coefficient in sorted(combined.items()):
+        if coefficient == 0:
+            continue
+        factors: list[str] = []
+        for variable, exponent in zip(variable_names, exponents):
+            if exponent == 1:
+                factors.append(variable)
+            elif exponent > 1:
+                factors.append(f"{variable}^{exponent}")
+        monomial = "*".join(factors)
+        if not monomial:
+            serialized.append(str(coefficient))
+        elif coefficient == 1:
+            serialized.append(monomial)
+        elif coefficient == -1:
+            serialized.append(f"-{monomial}")
+        else:
+            serialized.append(f"{coefficient}*{monomial}")
+    return "+".join(serialized).replace("+-", "-") or "0"
+
+
+def t0_open_direct_export(
+    orders: tuple[int, ...],
+    prime: int,
+) -> dict[str, object]:
+    """Keep the common-root incidence before any rank-six localization.
+
+    Setting ``t0=1`` is valid on the residual-torus quotient of the
+    ``s0*t0 != 0`` chart.  The equation ``s0*uinv=1`` retains precisely
+    the original ``s0`` principal open.  Keeping A, B, mu2, and every later
+    moment as equations avoids the invalid stronger condition that every
+    coordinate of a later moment vanish in the rank-six algebra.
+    """
+
+    assert orders and orders[0] == 2
+    fixed_index = PARAMETERS.index("t0")
+    if prime:
+        moments = [
+            chart_expression(
+                moment_terms(order, prime),
+                fixed_index,
+                prime,
+            )
+            for order in orders
+        ]
+    else:
+        moments = [
+            fixed_chart_expression_exact(
+                exact_moment_terms(order),
+                fixed_index,
+            )
+            for order in orders
+        ]
+    homogenized_a = (
+        "6*s1^2*t1-3*s1*s2-3*s0*s1*t2-3*s0*s2*t1"
+        "+2*s0*s3-3*s0+s0^2*t3"
+    )
+    homogenized_b = (
+        "12*s0*s1*s3+28*s1*t1-18*s0*s1-9*s0*s2^2"
+        "-14*s2-3*s0^2*s4-2*s0*t2-12*s0*t1^2"
+    )
+    variables = [
+        "s6",
+        "s5",
+        "t4",
+        "t3",
+        "s4",
+        "s0",
+        "s1",
+        "s2",
+        "s3",
+        "t1",
+        "t2",
+        "uinv",
+    ]
+    polynomials = [
+        homogenized_a,
+        homogenized_b,
+        *moments,
+        "s0*uinv-1",
+    ]
+    return {
+        "branch": "t0-open common-root incidence",
+        "characteristic": prime,
+        "ordinary_variables": variables,
+        "polynomials": polynomials,
+        "orders": list(orders),
+        "equation_count": len(polynomials),
+        "open_factor": "s0",
+        "scope": (
+            "specialization-safe direct incidence on s0*t0 != 0; "
+            "no rank-six leading coefficient has been inverted"
+        ),
+    }
+
+
+def t0_open_reduced_export(
+    singular: str,
+    orders: tuple[int, ...],
+    prime: int,
+    timeout: int,
+) -> dict[str, object]:
+    """Apply the three linear pivots while retaining ``s0*uinv-1``.
+
+    Unlike the rational-function-field rank-six presentation, this
+    polynomial presentation does not invert Q, J, K, H, or any leading
+    coefficient.  It is therefore valid simultaneously on all their
+    specializations.
+    """
+
+    assert orders and orders[0] == 2
+    fixed_index = PARAMETERS.index("t0")
+    if prime:
+        moment_expressions = {
+            order: chart_expression(
+                moment_terms(order, prime),
+                fixed_index,
+                prime,
+            )
+            for order in orders
+            if order >= 3
+        }
+    else:
+        moment_expressions = {
+            order: fixed_chart_expression_exact(
+                exact_moment_terms(order),
+                fixed_index,
+            )
+            for order in orders
+            if order >= 3
+        }
+    declarations = "\n".join(
+        f"poly p{order}={expression};"
+        for order, expression in moment_expressions.items()
+    )
+    transformations = "\n".join(
+        f"""
+poly q{order}=subst(p{order},t4,t4Value);
+q{order}=subst(q{order},t3,t3Value);
+q{order}=subst(q{order},s4,s4Value);
+q{order}=reduce(q{order},inverseBasis);
+print("EXPORT {order} "+string(q{order}));
+"""
+        for order in moment_expressions
+    )
+    completed = subprocess.run(
+        [singular, "-q"],
+        input=f"""
+ring source={prime},(
+  s6,s5,t4,t3,s4,s0,s1,s2,s3,t1,t2,uinv
+),dp;
+{declarations}
+poly aWithoutT3=
+  6*s1^2*t1-3*s1*s2-3*s0*s1*t2-3*s0*s2*t1
+  +2*s0*s3-3*s0;
+poly bWithoutS4=
+  12*s0*s1*s3+28*s1*t1-18*s0*s1-9*s0*s2^2
+  -14*s2-2*s0*t2-12*s0*t1^2;
+poly t3Value=-aWithoutT3*uinv^2;
+poly s4Value=(bWithoutS4*uinv^2)/3;
+poly t4Value=(
+  3*s0*s6-18*s1*s5+45*s2*s4-30*s3^2
+  +56*t1*t3-42*t2^2-70
+)/14;
+ideal inverseBasis=std(s0*uinv-1);
+{transformations}
+""",
+        text=True,
+        capture_output=True,
+        check=True,
+        timeout=timeout,
+    )
+    assert "\n   ? " not in completed.stdout, (
+        completed.stdout[-8000:],
+        completed.stderr[-2000:],
+    )
+    exported = {
+        int(order): polynomial
+        for order, polynomial in re.findall(
+            r"(?m)^EXPORT (\d+) (.*)$",
+            completed.stdout,
+        )
+    }
+    assert set(exported) == set(moment_expressions), (
+        completed.stdout[-4000:],
+        completed.stderr[-2000:],
+    )
+    for order, polynomial in exported.items():
+        assert not re.search(r"\b(?:t3|s4|t4)\b", polynomial), (
+            order,
+            polynomial[-2000:],
+        )
+    variables = [
+        "s6",
+        "s5",
+        "s0",
+        "s1",
+        "s2",
+        "s3",
+        "t1",
+        "t2",
+        "uinv",
+    ]
+    polynomials = [
+        exported[order] for order in moment_expressions
+    ] + ["s0*uinv-1"]
+    return {
+        "branch": "t0-open specialization-safe reduced incidence",
+        "characteristic": prime,
+        "ordinary_variables": variables,
+        "polynomials": polynomials,
+        "orders": list(orders),
+        "eliminated_variables": ["t3", "s4", "t4"],
+        "equation_count": len(polynomials),
+        "open_factor": "s0",
+        "scope": (
+            "the A, B, and mu2 pivots are applied polynomially modulo "
+            "s0*uinv-1; Q, J, K, H and all fibre leading coefficients "
+            "remain uninverted"
+        ),
+    }
+
+
+def t0_open_fitting_export(
+    singular: str,
+    orders: tuple[int, ...],
+    prime: int,
+    timeout: int,
+) -> dict[str, object]:
+    """Export a common-root Fitting system from the generic rank-six algebra."""
+
+    assert prime > 7
+    assert orders[-1] in (7, 8)
+    reduced = t0_open_reduced_export(
+        singular,
+        orders,
+        prime,
+        timeout,
+    )
+    available = dict(zip(orders[1:], reduced["polynomials"][:-1]))
+    localized = {
+        order: substitute(
+            polynomial,
+            (("s0", "(1/u)"), ("uinv", "(u)")),
+        )
+        for order, polynomial in available.items()
+    }
+    declarations = "\n".join(
+        f"poly p{order}={polynomial};"
+        for order, polynomial in localized.items()
+    )
+    matrix_declarations = "\n".join(
+        f"matrix M{order}[6][6];"
+        for order in range(6, orders[-1] + 1)
+    )
+    normal_form_declarations = "\n".join(
+        f"poly r{order}=reduce(p{order},G);"
+        for order in range(6, orders[-1] + 1)
+    )
+    matrix_fills = "\n".join(
+        f"""
+z=reduce(r{order}*basisMonomial,G);
+while(z!=0)
+{{
+  basisRow=coordinateIndex(leadmonom(z));
+  if(basisRow==0)
+  {{
+    print("COORDINATE_ERROR {order} "+string(leadmonom(z)));
+    exit;
+  }}
+  M{order}[basisRow,basisColumn]=leadcoef(z);
+  z=z-lead(z);
+}}
+"""
+        for order in range(6, orders[-1] + 1)
+    )
+    determinant_program: list[str] = []
+    for first_value in range(7):
+        second_values = range(7) if orders[-1] == 8 else (0,)
+        for second_value in second_values:
+            matrix_expression = f"M6+{first_value}*M7"
+            if orders[-1] == 8:
+                matrix_expression += f"+{second_value}*M8"
+            determinant_program.append(
+                f"""
+combination={matrix_expression};
+determinantValue=leadcoef(det(combination));
+print(
+  "FITTING {first_value} {second_value} "
+  +string(numerator(determinantValue))
+);
+"""
+            )
+    completed = subprocess.run(
+        [singular, "-q"],
+        input=f"""
+ring fiber=({prime},s1,s2,s3,t1,t2,u),(s6,s5),dp;
+option(redSB);
+{declarations}
+ideal G=std(p4,p5);
+print("ALGEBRA "+string(size(G))+" "+string(vdim(G)));
+{normal_form_declarations}
+{matrix_declarations}
+proc coordinateIndex(poly termValue)
+{{
+  if(termValue==1) {{ return(1); }}
+  if(termValue==s6) {{ return(2); }}
+  if(termValue==s5) {{ return(3); }}
+  if(termValue==s6*s5) {{ return(4); }}
+  if(termValue==s5^2) {{ return(5); }}
+  if(termValue==s5^3) {{ return(6); }}
+  return(0);
+}}
+poly basisMonomial;
+poly z;
+int basisColumn;
+int basisRow;
+for(basisColumn=1;basisColumn<=6;basisColumn++)
+{{
+  if(basisColumn==1) {{ basisMonomial=1; }}
+  if(basisColumn==2) {{ basisMonomial=s6; }}
+  if(basisColumn==3) {{ basisMonomial=s5; }}
+  if(basisColumn==4) {{ basisMonomial=s6*s5; }}
+  if(basisColumn==5) {{ basisMonomial=s5^2; }}
+  if(basisColumn==6) {{ basisMonomial=s5^3; }}
+  {matrix_fills}
+}}
+matrix combination[6][6];
+number determinantValue;
+{''.join(determinant_program)}
+print("BASE "+string(numerator(leadcoef(p3))));
+""",
+        text=True,
+        capture_output=True,
+        check=True,
+        timeout=timeout,
+    )
+    assert "\n   ? " not in completed.stdout, (
+        completed.stdout[-8000:],
+        completed.stderr[-2000:],
+    )
+    algebra = re.search(r"(?m)^ALGEBRA (\d+) (\d+)$", completed.stdout)
+    assert algebra is not None and algebra.groups() == ("3", "6"), (
+        completed.stdout[-4000:],
+        completed.stderr[-2000:],
+    )
+    fitting_values = [
+        {
+            "lambda": int(first),
+            "nu": int(second),
+            "polynomial": polynomial,
+        }
+        for first, second, polynomial in re.findall(
+            r"(?m)^FITTING (\d+) (\d+) (.*)$",
+            completed.stdout,
+        )
+    ]
+    expected_count = 49 if orders[-1] == 8 else 7
+    assert len(fitting_values) == expected_count, (
+        len(fitting_values),
+        completed.stdout[-4000:],
+    )
+    base_marker = re.search(r"(?m)^BASE (.*)$", completed.stdout)
+    assert base_marker is not None
+    inverse_variable = "finv"
+    open_factor = (
+        "u"
+        "*(3*(s1^2*u-s2)-13*u)"
+        "*((99*(s1^2*u-s2)-274*u)^2+30420*(s1*u-t1)^2)"
+        "*(351*(s1^2*u-s2)-901*u)"
+        "*((99*(s1^2*u-s2)-274*u)"
+        "*(351*(s1^2*u-s2)-901*u)+121680*(s1*u-t1)^2)"
+    )
+    nonzero_fitting_values = [
+        datum for datum in fitting_values if datum["polynomial"] != "0"
+    ]
+    assert nonzero_fitting_values, fitting_values
+    polynomials = [base_marker.group(1)] + [
+        datum["polynomial"] for datum in nonzero_fitting_values
+    ] + [f"{inverse_variable}*({open_factor})-1"]
+    return {
+        "branch": "generic t0-open rank-six common-root Fitting locus",
+        "characteristic": prime,
+        "ordinary_variables": [
+            "s1",
+            "s2",
+            "s3",
+            "t1",
+            "t2",
+            "u",
+            inverse_variable,
+        ],
+        "polynomials": polynomials,
+        "orders": list(orders),
+        "quotient_length": 6,
+        "fitting_grid": {
+            "lambda_values": list(range(7)),
+            "nu_values": list(range(7)) if orders[-1] == 8 else [0],
+            "determinant_degree": 6,
+            "evaluation_count": expected_count,
+            "nonzero_evaluation_count": len(nonzero_fitting_values),
+        },
+        "open_factor": open_factor,
+        "scope": (
+            "exact common-root Fitting equations on the generic "
+            "Q*J*K*H*u open; exceptional divisors are not covered"
+        ),
+    }
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument(
@@ -1323,6 +1745,9 @@ def main() -> None:
     parser.add_argument("--deepest-t0-zero", action="store_true")
     parser.add_argument("--t0-zero-branch-table", action="store_true")
     parser.add_argument("--t0-open-rank-six", action="store_true")
+    parser.add_argument("--t0-open-direct", action="store_true")
+    parser.add_argument("--t0-open-reduced", action="store_true")
+    parser.add_argument("--t0-open-fitting", action="store_true")
     parser.add_argument(
         "--t0-open-certificate-only",
         action="store_true",
@@ -1342,6 +1767,55 @@ def main() -> None:
     singular = shutil.which("Singular")
     msolve = shutil.which("msolve")
     assert singular is not None and msolve is not None
+    if (
+        arguments.t0_open_direct
+        or arguments.t0_open_reduced
+        or arguments.t0_open_fitting
+    ):
+        export = (
+            t0_open_fitting_export(
+                singular,
+                orders,
+                arguments.prime,
+                arguments.timeout,
+            )
+            if arguments.t0_open_fitting
+            else (
+                t0_open_reduced_export(
+                    singular,
+                    orders,
+                    arguments.prime,
+                    arguments.timeout,
+                )
+                if arguments.t0_open_reduced
+                else t0_open_direct_export(orders, arguments.prime)
+            )
+        )
+        result = None
+        if not arguments.export_only:
+            if arguments.backend == "modstd":
+                assert arguments.prime == 0
+                result = run_modstd(singular, export, arguments.timeout)
+            else:
+                result = run_msolve(
+                    msolve,
+                    export,
+                    arguments.prime,
+                    arguments.timeout,
+                    arguments.linear_algebra,
+                    arguments.eliminate,
+                )
+        summary = {
+            key: value for key, value in export.items() if key != "polynomials"
+        }
+        summary["exported_polynomial_terms"] = [
+            polynomial.count("+") + polynomial.count("-") + 1
+            for polynomial in export["polynomials"]
+        ]
+        summary["solve"] = result
+        summary["reproduction_command"] = " ".join(sys.argv)
+        print(json.dumps(summary, indent=2, sort_keys=True))
+        return
     if arguments.t0_open_certificate_only:
         assert arguments.prime == 0
         print(

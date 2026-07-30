@@ -1,0 +1,3288 @@
+{
+  "atlases": {
+    "gradient_degree_2_affine_degree_2": [
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 2,
+        "projective_degrees": [
+          1,
+          2,
+          2,
+          2,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          2,
+          -6,
+          14
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 1,
+        "projective_degrees": [
+          1,
+          2,
+          3,
+          3,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          1,
+          -1,
+          -2
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 1,
+        "projective_degrees": [
+          1,
+          2,
+          3,
+          4,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          1,
+          -2,
+          6
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 3,
+        "leading_cycle_degree": 5,
+        "projective_degrees": [
+          1,
+          2,
+          4,
+          3,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          0,
+          5,
+          -26
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": false
+      },
+      {
+        "leading_base_codimension": 3,
+        "leading_cycle_degree": 4,
+        "projective_degrees": [
+          1,
+          2,
+          4,
+          4,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          0,
+          4,
+          -18
+        ],
+        "smooth_lci_curve_genus": 0,
+        "smooth_lci_curve_numerically_possible": true
+      },
+      {
+        "leading_base_codimension": 3,
+        "leading_cycle_degree": 3,
+        "projective_degrees": [
+          1,
+          2,
+          4,
+          5,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          0,
+          3,
+          -10
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": false
+      },
+      {
+        "leading_base_codimension": 3,
+        "leading_cycle_degree": 2,
+        "projective_degrees": [
+          1,
+          2,
+          4,
+          6,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          0,
+          2,
+          -2
+        ],
+        "smooth_lci_curve_genus": -3,
+        "smooth_lci_curve_numerically_possible": false
+      },
+      {
+        "leading_base_codimension": 3,
+        "leading_cycle_degree": 1,
+        "projective_degrees": [
+          1,
+          2,
+          4,
+          7,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          0,
+          1,
+          6
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": false
+      },
+      {
+        "leading_base_codimension": 4,
+        "leading_cycle_degree": 14,
+        "projective_degrees": [
+          1,
+          2,
+          4,
+          8,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          0,
+          0,
+          14
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      }
+    ],
+    "gradient_degree_2_affine_degree_3": [
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 1,
+        "projective_degrees": [
+          1,
+          2,
+          3,
+          3,
+          3
+        ],
+        "segre_degrees": [
+          0,
+          1,
+          -1,
+          -3
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 1,
+        "projective_degrees": [
+          1,
+          2,
+          3,
+          4,
+          3
+        ],
+        "segre_degrees": [
+          0,
+          1,
+          -2,
+          5
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 3,
+        "leading_cycle_degree": 4,
+        "projective_degrees": [
+          1,
+          2,
+          4,
+          4,
+          3
+        ],
+        "segre_degrees": [
+          0,
+          0,
+          4,
+          -19
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": false
+      },
+      {
+        "leading_base_codimension": 3,
+        "leading_cycle_degree": 3,
+        "projective_degrees": [
+          1,
+          2,
+          4,
+          5,
+          3
+        ],
+        "segre_degrees": [
+          0,
+          0,
+          3,
+          -11
+        ],
+        "smooth_lci_curve_genus": -1,
+        "smooth_lci_curve_numerically_possible": false
+      },
+      {
+        "leading_base_codimension": 3,
+        "leading_cycle_degree": 2,
+        "projective_degrees": [
+          1,
+          2,
+          4,
+          6,
+          3
+        ],
+        "segre_degrees": [
+          0,
+          0,
+          2,
+          -3
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": false
+      },
+      {
+        "leading_base_codimension": 3,
+        "leading_cycle_degree": 1,
+        "projective_degrees": [
+          1,
+          2,
+          4,
+          7,
+          3
+        ],
+        "segre_degrees": [
+          0,
+          0,
+          1,
+          5
+        ],
+        "smooth_lci_curve_genus": -4,
+        "smooth_lci_curve_numerically_possible": false
+      },
+      {
+        "leading_base_codimension": 4,
+        "leading_cycle_degree": 13,
+        "projective_degrees": [
+          1,
+          2,
+          4,
+          8,
+          3
+        ],
+        "segre_degrees": [
+          0,
+          0,
+          0,
+          13
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      }
+    ],
+    "gradient_degree_3_affine_degree_2": [
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 6,
+        "projective_degrees": [
+          1,
+          3,
+          3,
+          3,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          6,
+          -30,
+          115
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 5,
+        "projective_degrees": [
+          1,
+          3,
+          4,
+          3,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          5,
+          -21,
+          61
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 5,
+        "projective_degrees": [
+          1,
+          3,
+          4,
+          4,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          5,
+          -22,
+          73
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 5,
+        "projective_degrees": [
+          1,
+          3,
+          4,
+          5,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          5,
+          -23,
+          85
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 4,
+        "projective_degrees": [
+          1,
+          3,
+          5,
+          4,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          4,
+          -13,
+          19
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 4,
+        "projective_degrees": [
+          1,
+          3,
+          5,
+          5,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          4,
+          -14,
+          31
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 4,
+        "projective_degrees": [
+          1,
+          3,
+          5,
+          6,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          4,
+          -15,
+          43
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 4,
+        "projective_degrees": [
+          1,
+          3,
+          5,
+          7,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          4,
+          -16,
+          55
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 4,
+        "projective_degrees": [
+          1,
+          3,
+          5,
+          8,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          4,
+          -17,
+          67
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 3,
+        "projective_degrees": [
+          1,
+          3,
+          6,
+          4,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          3,
+          -4,
+          -35
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 3,
+        "projective_degrees": [
+          1,
+          3,
+          6,
+          5,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          3,
+          -5,
+          -23
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 3,
+        "projective_degrees": [
+          1,
+          3,
+          6,
+          6,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          3,
+          -6,
+          -11
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 3,
+        "projective_degrees": [
+          1,
+          3,
+          6,
+          7,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          3,
+          -7,
+          1
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 3,
+        "projective_degrees": [
+          1,
+          3,
+          6,
+          8,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          3,
+          -8,
+          13
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 3,
+        "projective_degrees": [
+          1,
+          3,
+          6,
+          9,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          3,
+          -9,
+          25
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 3,
+        "projective_degrees": [
+          1,
+          3,
+          6,
+          10,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          3,
+          -10,
+          37
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 3,
+        "projective_degrees": [
+          1,
+          3,
+          6,
+          11,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          3,
+          -11,
+          49
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 3,
+        "projective_degrees": [
+          1,
+          3,
+          6,
+          12,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          3,
+          -12,
+          61
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 2,
+        "projective_degrees": [
+          1,
+          3,
+          7,
+          4,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          2,
+          5,
+          -89
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 2,
+        "projective_degrees": [
+          1,
+          3,
+          7,
+          5,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          2,
+          4,
+          -77
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 2,
+        "projective_degrees": [
+          1,
+          3,
+          7,
+          6,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          2,
+          3,
+          -65
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 2,
+        "projective_degrees": [
+          1,
+          3,
+          7,
+          7,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          2,
+          2,
+          -53
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 2,
+        "projective_degrees": [
+          1,
+          3,
+          7,
+          8,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          2,
+          1,
+          -41
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 2,
+        "projective_degrees": [
+          1,
+          3,
+          7,
+          9,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          2,
+          0,
+          -29
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 2,
+        "projective_degrees": [
+          1,
+          3,
+          7,
+          10,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          2,
+          -1,
+          -17
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 2,
+        "projective_degrees": [
+          1,
+          3,
+          7,
+          11,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          2,
+          -2,
+          -5
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 2,
+        "projective_degrees": [
+          1,
+          3,
+          7,
+          12,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          2,
+          -3,
+          7
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 2,
+        "projective_degrees": [
+          1,
+          3,
+          7,
+          13,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          2,
+          -4,
+          19
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 2,
+        "projective_degrees": [
+          1,
+          3,
+          7,
+          14,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          2,
+          -5,
+          31
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 2,
+        "projective_degrees": [
+          1,
+          3,
+          7,
+          15,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          2,
+          -6,
+          43
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 2,
+        "projective_degrees": [
+          1,
+          3,
+          7,
+          16,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          2,
+          -7,
+          55
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 1,
+        "projective_degrees": [
+          1,
+          3,
+          8,
+          4,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          1,
+          14,
+          -143
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 1,
+        "projective_degrees": [
+          1,
+          3,
+          8,
+          5,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          1,
+          13,
+          -131
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 1,
+        "projective_degrees": [
+          1,
+          3,
+          8,
+          6,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          1,
+          12,
+          -119
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 1,
+        "projective_degrees": [
+          1,
+          3,
+          8,
+          7,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          1,
+          11,
+          -107
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 1,
+        "projective_degrees": [
+          1,
+          3,
+          8,
+          8,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          1,
+          10,
+          -95
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 1,
+        "projective_degrees": [
+          1,
+          3,
+          8,
+          9,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          1,
+          9,
+          -83
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 1,
+        "projective_degrees": [
+          1,
+          3,
+          8,
+          10,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          1,
+          8,
+          -71
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 1,
+        "projective_degrees": [
+          1,
+          3,
+          8,
+          11,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          1,
+          7,
+          -59
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 1,
+        "projective_degrees": [
+          1,
+          3,
+          8,
+          12,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          1,
+          6,
+          -47
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 1,
+        "projective_degrees": [
+          1,
+          3,
+          8,
+          13,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          1,
+          5,
+          -35
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 1,
+        "projective_degrees": [
+          1,
+          3,
+          8,
+          14,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          1,
+          4,
+          -23
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 1,
+        "projective_degrees": [
+          1,
+          3,
+          8,
+          15,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          1,
+          3,
+          -11
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 1,
+        "projective_degrees": [
+          1,
+          3,
+          8,
+          16,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          1,
+          2,
+          1
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 1,
+        "projective_degrees": [
+          1,
+          3,
+          8,
+          17,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          1,
+          1,
+          13
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 1,
+        "projective_degrees": [
+          1,
+          3,
+          8,
+          18,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          1,
+          0,
+          25
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 1,
+        "projective_degrees": [
+          1,
+          3,
+          8,
+          19,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          1,
+          -1,
+          37
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 1,
+        "projective_degrees": [
+          1,
+          3,
+          8,
+          20,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          1,
+          -2,
+          49
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 1,
+        "projective_degrees": [
+          1,
+          3,
+          8,
+          21,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          1,
+          -3,
+          61
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 3,
+        "leading_cycle_degree": 22,
+        "projective_degrees": [
+          1,
+          3,
+          9,
+          5,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          0,
+          22,
+          -185
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": false
+      },
+      {
+        "leading_base_codimension": 3,
+        "leading_cycle_degree": 21,
+        "projective_degrees": [
+          1,
+          3,
+          9,
+          6,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          0,
+          21,
+          -173
+        ],
+        "smooth_lci_curve_genus": 35,
+        "smooth_lci_curve_numerically_possible": true
+      },
+      {
+        "leading_base_codimension": 3,
+        "leading_cycle_degree": 20,
+        "projective_degrees": [
+          1,
+          3,
+          9,
+          7,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          0,
+          20,
+          -161
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": false
+      },
+      {
+        "leading_base_codimension": 3,
+        "leading_cycle_degree": 19,
+        "projective_degrees": [
+          1,
+          3,
+          9,
+          8,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          0,
+          19,
+          -149
+        ],
+        "smooth_lci_curve_genus": 28,
+        "smooth_lci_curve_numerically_possible": true
+      },
+      {
+        "leading_base_codimension": 3,
+        "leading_cycle_degree": 18,
+        "projective_degrees": [
+          1,
+          3,
+          9,
+          9,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          0,
+          18,
+          -137
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": false
+      },
+      {
+        "leading_base_codimension": 3,
+        "leading_cycle_degree": 17,
+        "projective_degrees": [
+          1,
+          3,
+          9,
+          10,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          0,
+          17,
+          -125
+        ],
+        "smooth_lci_curve_genus": 21,
+        "smooth_lci_curve_numerically_possible": true
+      },
+      {
+        "leading_base_codimension": 3,
+        "leading_cycle_degree": 16,
+        "projective_degrees": [
+          1,
+          3,
+          9,
+          11,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          0,
+          16,
+          -113
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": false
+      },
+      {
+        "leading_base_codimension": 3,
+        "leading_cycle_degree": 15,
+        "projective_degrees": [
+          1,
+          3,
+          9,
+          12,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          0,
+          15,
+          -101
+        ],
+        "smooth_lci_curve_genus": 14,
+        "smooth_lci_curve_numerically_possible": true
+      },
+      {
+        "leading_base_codimension": 3,
+        "leading_cycle_degree": 14,
+        "projective_degrees": [
+          1,
+          3,
+          9,
+          13,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          0,
+          14,
+          -89
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": false
+      },
+      {
+        "leading_base_codimension": 3,
+        "leading_cycle_degree": 13,
+        "projective_degrees": [
+          1,
+          3,
+          9,
+          14,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          0,
+          13,
+          -77
+        ],
+        "smooth_lci_curve_genus": 7,
+        "smooth_lci_curve_numerically_possible": true
+      },
+      {
+        "leading_base_codimension": 3,
+        "leading_cycle_degree": 12,
+        "projective_degrees": [
+          1,
+          3,
+          9,
+          15,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          0,
+          12,
+          -65
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": false
+      },
+      {
+        "leading_base_codimension": 3,
+        "leading_cycle_degree": 11,
+        "projective_degrees": [
+          1,
+          3,
+          9,
+          16,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          0,
+          11,
+          -53
+        ],
+        "smooth_lci_curve_genus": 0,
+        "smooth_lci_curve_numerically_possible": true
+      },
+      {
+        "leading_base_codimension": 3,
+        "leading_cycle_degree": 10,
+        "projective_degrees": [
+          1,
+          3,
+          9,
+          17,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          0,
+          10,
+          -41
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": false
+      },
+      {
+        "leading_base_codimension": 3,
+        "leading_cycle_degree": 9,
+        "projective_degrees": [
+          1,
+          3,
+          9,
+          18,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          0,
+          9,
+          -29
+        ],
+        "smooth_lci_curve_genus": -7,
+        "smooth_lci_curve_numerically_possible": false
+      },
+      {
+        "leading_base_codimension": 3,
+        "leading_cycle_degree": 8,
+        "projective_degrees": [
+          1,
+          3,
+          9,
+          19,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          0,
+          8,
+          -17
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": false
+      },
+      {
+        "leading_base_codimension": 3,
+        "leading_cycle_degree": 7,
+        "projective_degrees": [
+          1,
+          3,
+          9,
+          20,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          0,
+          7,
+          -5
+        ],
+        "smooth_lci_curve_genus": -14,
+        "smooth_lci_curve_numerically_possible": false
+      },
+      {
+        "leading_base_codimension": 3,
+        "leading_cycle_degree": 6,
+        "projective_degrees": [
+          1,
+          3,
+          9,
+          21,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          0,
+          6,
+          7
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": false
+      },
+      {
+        "leading_base_codimension": 3,
+        "leading_cycle_degree": 5,
+        "projective_degrees": [
+          1,
+          3,
+          9,
+          22,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          0,
+          5,
+          19
+        ],
+        "smooth_lci_curve_genus": -21,
+        "smooth_lci_curve_numerically_possible": false
+      },
+      {
+        "leading_base_codimension": 3,
+        "leading_cycle_degree": 4,
+        "projective_degrees": [
+          1,
+          3,
+          9,
+          23,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          0,
+          4,
+          31
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": false
+      },
+      {
+        "leading_base_codimension": 3,
+        "leading_cycle_degree": 3,
+        "projective_degrees": [
+          1,
+          3,
+          9,
+          24,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          0,
+          3,
+          43
+        ],
+        "smooth_lci_curve_genus": -28,
+        "smooth_lci_curve_numerically_possible": false
+      },
+      {
+        "leading_base_codimension": 3,
+        "leading_cycle_degree": 2,
+        "projective_degrees": [
+          1,
+          3,
+          9,
+          25,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          0,
+          2,
+          55
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": false
+      },
+      {
+        "leading_base_codimension": 3,
+        "leading_cycle_degree": 1,
+        "projective_degrees": [
+          1,
+          3,
+          9,
+          26,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          0,
+          1,
+          67
+        ],
+        "smooth_lci_curve_genus": -35,
+        "smooth_lci_curve_numerically_possible": false
+      },
+      {
+        "leading_base_codimension": 4,
+        "leading_cycle_degree": 79,
+        "projective_degrees": [
+          1,
+          3,
+          9,
+          27,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          0,
+          0,
+          79
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      }
+    ],
+    "gradient_degree_3_affine_degree_3": [
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 6,
+        "projective_degrees": [
+          1,
+          3,
+          3,
+          3,
+          3
+        ],
+        "segre_degrees": [
+          0,
+          6,
+          -30,
+          114
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 5,
+        "projective_degrees": [
+          1,
+          3,
+          4,
+          4,
+          3
+        ],
+        "segre_degrees": [
+          0,
+          5,
+          -22,
+          72
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 5,
+        "projective_degrees": [
+          1,
+          3,
+          4,
+          5,
+          3
+        ],
+        "segre_degrees": [
+          0,
+          5,
+          -23,
+          84
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 4,
+        "projective_degrees": [
+          1,
+          3,
+          5,
+          4,
+          3
+        ],
+        "segre_degrees": [
+          0,
+          4,
+          -13,
+          18
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 4,
+        "projective_degrees": [
+          1,
+          3,
+          5,
+          5,
+          3
+        ],
+        "segre_degrees": [
+          0,
+          4,
+          -14,
+          30
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 4,
+        "projective_degrees": [
+          1,
+          3,
+          5,
+          6,
+          3
+        ],
+        "segre_degrees": [
+          0,
+          4,
+          -15,
+          42
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 4,
+        "projective_degrees": [
+          1,
+          3,
+          5,
+          7,
+          3
+        ],
+        "segre_degrees": [
+          0,
+          4,
+          -16,
+          54
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 4,
+        "projective_degrees": [
+          1,
+          3,
+          5,
+          8,
+          3
+        ],
+        "segre_degrees": [
+          0,
+          4,
+          -17,
+          66
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 3,
+        "projective_degrees": [
+          1,
+          3,
+          6,
+          5,
+          3
+        ],
+        "segre_degrees": [
+          0,
+          3,
+          -5,
+          -24
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 3,
+        "projective_degrees": [
+          1,
+          3,
+          6,
+          6,
+          3
+        ],
+        "segre_degrees": [
+          0,
+          3,
+          -6,
+          -12
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 3,
+        "projective_degrees": [
+          1,
+          3,
+          6,
+          7,
+          3
+        ],
+        "segre_degrees": [
+          0,
+          3,
+          -7,
+          0
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 3,
+        "projective_degrees": [
+          1,
+          3,
+          6,
+          8,
+          3
+        ],
+        "segre_degrees": [
+          0,
+          3,
+          -8,
+          12
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 3,
+        "projective_degrees": [
+          1,
+          3,
+          6,
+          9,
+          3
+        ],
+        "segre_degrees": [
+          0,
+          3,
+          -9,
+          24
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 3,
+        "projective_degrees": [
+          1,
+          3,
+          6,
+          10,
+          3
+        ],
+        "segre_degrees": [
+          0,
+          3,
+          -10,
+          36
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 3,
+        "projective_degrees": [
+          1,
+          3,
+          6,
+          11,
+          3
+        ],
+        "segre_degrees": [
+          0,
+          3,
+          -11,
+          48
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 3,
+        "projective_degrees": [
+          1,
+          3,
+          6,
+          12,
+          3
+        ],
+        "segre_degrees": [
+          0,
+          3,
+          -12,
+          60
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 2,
+        "projective_degrees": [
+          1,
+          3,
+          7,
+          5,
+          3
+        ],
+        "segre_degrees": [
+          0,
+          2,
+          4,
+          -78
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 2,
+        "projective_degrees": [
+          1,
+          3,
+          7,
+          6,
+          3
+        ],
+        "segre_degrees": [
+          0,
+          2,
+          3,
+          -66
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 2,
+        "projective_degrees": [
+          1,
+          3,
+          7,
+          7,
+          3
+        ],
+        "segre_degrees": [
+          0,
+          2,
+          2,
+          -54
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 2,
+        "projective_degrees": [
+          1,
+          3,
+          7,
+          8,
+          3
+        ],
+        "segre_degrees": [
+          0,
+          2,
+          1,
+          -42
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 2,
+        "projective_degrees": [
+          1,
+          3,
+          7,
+          9,
+          3
+        ],
+        "segre_degrees": [
+          0,
+          2,
+          0,
+          -30
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 2,
+        "projective_degrees": [
+          1,
+          3,
+          7,
+          10,
+          3
+        ],
+        "segre_degrees": [
+          0,
+          2,
+          -1,
+          -18
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 2,
+        "projective_degrees": [
+          1,
+          3,
+          7,
+          11,
+          3
+        ],
+        "segre_degrees": [
+          0,
+          2,
+          -2,
+          -6
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 2,
+        "projective_degrees": [
+          1,
+          3,
+          7,
+          12,
+          3
+        ],
+        "segre_degrees": [
+          0,
+          2,
+          -3,
+          6
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 2,
+        "projective_degrees": [
+          1,
+          3,
+          7,
+          13,
+          3
+        ],
+        "segre_degrees": [
+          0,
+          2,
+          -4,
+          18
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 2,
+        "projective_degrees": [
+          1,
+          3,
+          7,
+          14,
+          3
+        ],
+        "segre_degrees": [
+          0,
+          2,
+          -5,
+          30
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 2,
+        "projective_degrees": [
+          1,
+          3,
+          7,
+          15,
+          3
+        ],
+        "segre_degrees": [
+          0,
+          2,
+          -6,
+          42
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 2,
+        "projective_degrees": [
+          1,
+          3,
+          7,
+          16,
+          3
+        ],
+        "segre_degrees": [
+          0,
+          2,
+          -7,
+          54
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 1,
+        "projective_degrees": [
+          1,
+          3,
+          8,
+          5,
+          3
+        ],
+        "segre_degrees": [
+          0,
+          1,
+          13,
+          -132
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 1,
+        "projective_degrees": [
+          1,
+          3,
+          8,
+          6,
+          3
+        ],
+        "segre_degrees": [
+          0,
+          1,
+          12,
+          -120
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 1,
+        "projective_degrees": [
+          1,
+          3,
+          8,
+          7,
+          3
+        ],
+        "segre_degrees": [
+          0,
+          1,
+          11,
+          -108
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 1,
+        "projective_degrees": [
+          1,
+          3,
+          8,
+          8,
+          3
+        ],
+        "segre_degrees": [
+          0,
+          1,
+          10,
+          -96
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 1,
+        "projective_degrees": [
+          1,
+          3,
+          8,
+          9,
+          3
+        ],
+        "segre_degrees": [
+          0,
+          1,
+          9,
+          -84
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 1,
+        "projective_degrees": [
+          1,
+          3,
+          8,
+          10,
+          3
+        ],
+        "segre_degrees": [
+          0,
+          1,
+          8,
+          -72
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 1,
+        "projective_degrees": [
+          1,
+          3,
+          8,
+          11,
+          3
+        ],
+        "segre_degrees": [
+          0,
+          1,
+          7,
+          -60
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 1,
+        "projective_degrees": [
+          1,
+          3,
+          8,
+          12,
+          3
+        ],
+        "segre_degrees": [
+          0,
+          1,
+          6,
+          -48
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 1,
+        "projective_degrees": [
+          1,
+          3,
+          8,
+          13,
+          3
+        ],
+        "segre_degrees": [
+          0,
+          1,
+          5,
+          -36
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 1,
+        "projective_degrees": [
+          1,
+          3,
+          8,
+          14,
+          3
+        ],
+        "segre_degrees": [
+          0,
+          1,
+          4,
+          -24
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 1,
+        "projective_degrees": [
+          1,
+          3,
+          8,
+          15,
+          3
+        ],
+        "segre_degrees": [
+          0,
+          1,
+          3,
+          -12
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 1,
+        "projective_degrees": [
+          1,
+          3,
+          8,
+          16,
+          3
+        ],
+        "segre_degrees": [
+          0,
+          1,
+          2,
+          0
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 1,
+        "projective_degrees": [
+          1,
+          3,
+          8,
+          17,
+          3
+        ],
+        "segre_degrees": [
+          0,
+          1,
+          1,
+          12
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 1,
+        "projective_degrees": [
+          1,
+          3,
+          8,
+          18,
+          3
+        ],
+        "segre_degrees": [
+          0,
+          1,
+          0,
+          24
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 1,
+        "projective_degrees": [
+          1,
+          3,
+          8,
+          19,
+          3
+        ],
+        "segre_degrees": [
+          0,
+          1,
+          -1,
+          36
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 1,
+        "projective_degrees": [
+          1,
+          3,
+          8,
+          20,
+          3
+        ],
+        "segre_degrees": [
+          0,
+          1,
+          -2,
+          48
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 2,
+        "leading_cycle_degree": 1,
+        "projective_degrees": [
+          1,
+          3,
+          8,
+          21,
+          3
+        ],
+        "segre_degrees": [
+          0,
+          1,
+          -3,
+          60
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      },
+      {
+        "leading_base_codimension": 3,
+        "leading_cycle_degree": 21,
+        "projective_degrees": [
+          1,
+          3,
+          9,
+          6,
+          3
+        ],
+        "segre_degrees": [
+          0,
+          0,
+          21,
+          -174
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": false
+      },
+      {
+        "leading_base_codimension": 3,
+        "leading_cycle_degree": 20,
+        "projective_degrees": [
+          1,
+          3,
+          9,
+          7,
+          3
+        ],
+        "segre_degrees": [
+          0,
+          0,
+          20,
+          -162
+        ],
+        "smooth_lci_curve_genus": 32,
+        "smooth_lci_curve_numerically_possible": true
+      },
+      {
+        "leading_base_codimension": 3,
+        "leading_cycle_degree": 19,
+        "projective_degrees": [
+          1,
+          3,
+          9,
+          8,
+          3
+        ],
+        "segre_degrees": [
+          0,
+          0,
+          19,
+          -150
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": false
+      },
+      {
+        "leading_base_codimension": 3,
+        "leading_cycle_degree": 18,
+        "projective_degrees": [
+          1,
+          3,
+          9,
+          9,
+          3
+        ],
+        "segre_degrees": [
+          0,
+          0,
+          18,
+          -138
+        ],
+        "smooth_lci_curve_genus": 25,
+        "smooth_lci_curve_numerically_possible": true
+      },
+      {
+        "leading_base_codimension": 3,
+        "leading_cycle_degree": 17,
+        "projective_degrees": [
+          1,
+          3,
+          9,
+          10,
+          3
+        ],
+        "segre_degrees": [
+          0,
+          0,
+          17,
+          -126
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": false
+      },
+      {
+        "leading_base_codimension": 3,
+        "leading_cycle_degree": 16,
+        "projective_degrees": [
+          1,
+          3,
+          9,
+          11,
+          3
+        ],
+        "segre_degrees": [
+          0,
+          0,
+          16,
+          -114
+        ],
+        "smooth_lci_curve_genus": 18,
+        "smooth_lci_curve_numerically_possible": true
+      },
+      {
+        "leading_base_codimension": 3,
+        "leading_cycle_degree": 15,
+        "projective_degrees": [
+          1,
+          3,
+          9,
+          12,
+          3
+        ],
+        "segre_degrees": [
+          0,
+          0,
+          15,
+          -102
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": false
+      },
+      {
+        "leading_base_codimension": 3,
+        "leading_cycle_degree": 14,
+        "projective_degrees": [
+          1,
+          3,
+          9,
+          13,
+          3
+        ],
+        "segre_degrees": [
+          0,
+          0,
+          14,
+          -90
+        ],
+        "smooth_lci_curve_genus": 11,
+        "smooth_lci_curve_numerically_possible": true
+      },
+      {
+        "leading_base_codimension": 3,
+        "leading_cycle_degree": 13,
+        "projective_degrees": [
+          1,
+          3,
+          9,
+          14,
+          3
+        ],
+        "segre_degrees": [
+          0,
+          0,
+          13,
+          -78
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": false
+      },
+      {
+        "leading_base_codimension": 3,
+        "leading_cycle_degree": 12,
+        "projective_degrees": [
+          1,
+          3,
+          9,
+          15,
+          3
+        ],
+        "segre_degrees": [
+          0,
+          0,
+          12,
+          -66
+        ],
+        "smooth_lci_curve_genus": 4,
+        "smooth_lci_curve_numerically_possible": true
+      },
+      {
+        "leading_base_codimension": 3,
+        "leading_cycle_degree": 11,
+        "projective_degrees": [
+          1,
+          3,
+          9,
+          16,
+          3
+        ],
+        "segre_degrees": [
+          0,
+          0,
+          11,
+          -54
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": false
+      },
+      {
+        "leading_base_codimension": 3,
+        "leading_cycle_degree": 10,
+        "projective_degrees": [
+          1,
+          3,
+          9,
+          17,
+          3
+        ],
+        "segre_degrees": [
+          0,
+          0,
+          10,
+          -42
+        ],
+        "smooth_lci_curve_genus": -3,
+        "smooth_lci_curve_numerically_possible": false
+      },
+      {
+        "leading_base_codimension": 3,
+        "leading_cycle_degree": 9,
+        "projective_degrees": [
+          1,
+          3,
+          9,
+          18,
+          3
+        ],
+        "segre_degrees": [
+          0,
+          0,
+          9,
+          -30
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": false
+      },
+      {
+        "leading_base_codimension": 3,
+        "leading_cycle_degree": 8,
+        "projective_degrees": [
+          1,
+          3,
+          9,
+          19,
+          3
+        ],
+        "segre_degrees": [
+          0,
+          0,
+          8,
+          -18
+        ],
+        "smooth_lci_curve_genus": -10,
+        "smooth_lci_curve_numerically_possible": false
+      },
+      {
+        "leading_base_codimension": 3,
+        "leading_cycle_degree": 7,
+        "projective_degrees": [
+          1,
+          3,
+          9,
+          20,
+          3
+        ],
+        "segre_degrees": [
+          0,
+          0,
+          7,
+          -6
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": false
+      },
+      {
+        "leading_base_codimension": 3,
+        "leading_cycle_degree": 6,
+        "projective_degrees": [
+          1,
+          3,
+          9,
+          21,
+          3
+        ],
+        "segre_degrees": [
+          0,
+          0,
+          6,
+          6
+        ],
+        "smooth_lci_curve_genus": -17,
+        "smooth_lci_curve_numerically_possible": false
+      },
+      {
+        "leading_base_codimension": 3,
+        "leading_cycle_degree": 5,
+        "projective_degrees": [
+          1,
+          3,
+          9,
+          22,
+          3
+        ],
+        "segre_degrees": [
+          0,
+          0,
+          5,
+          18
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": false
+      },
+      {
+        "leading_base_codimension": 3,
+        "leading_cycle_degree": 4,
+        "projective_degrees": [
+          1,
+          3,
+          9,
+          23,
+          3
+        ],
+        "segre_degrees": [
+          0,
+          0,
+          4,
+          30
+        ],
+        "smooth_lci_curve_genus": -24,
+        "smooth_lci_curve_numerically_possible": false
+      },
+      {
+        "leading_base_codimension": 3,
+        "leading_cycle_degree": 3,
+        "projective_degrees": [
+          1,
+          3,
+          9,
+          24,
+          3
+        ],
+        "segre_degrees": [
+          0,
+          0,
+          3,
+          42
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": false
+      },
+      {
+        "leading_base_codimension": 3,
+        "leading_cycle_degree": 2,
+        "projective_degrees": [
+          1,
+          3,
+          9,
+          25,
+          3
+        ],
+        "segre_degrees": [
+          0,
+          0,
+          2,
+          54
+        ],
+        "smooth_lci_curve_genus": -31,
+        "smooth_lci_curve_numerically_possible": false
+      },
+      {
+        "leading_base_codimension": 3,
+        "leading_cycle_degree": 1,
+        "projective_degrees": [
+          1,
+          3,
+          9,
+          26,
+          3
+        ],
+        "segre_degrees": [
+          0,
+          0,
+          1,
+          66
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": false
+      },
+      {
+        "leading_base_codimension": 4,
+        "leading_cycle_degree": 78,
+        "projective_degrees": [
+          1,
+          3,
+          9,
+          27,
+          3
+        ],
+        "segre_degrees": [
+          0,
+          0,
+          0,
+          78
+        ],
+        "smooth_lci_curve_genus": null,
+        "smooth_lci_curve_numerically_possible": null
+      }
+    ]
+  },
+  "calibrations": {
+    "cubic_full_polar": {
+      "m": 3,
+      "projective_degrees": [
+        1,
+        3,
+        6,
+        6,
+        3
+      ],
+      "segre_degrees": [
+        0,
+        3,
+        -6,
+        -12
+      ]
+    },
+    "cubic_graph": {
+      "m": 3,
+      "projective_degrees": [
+        1,
+        3,
+        3,
+        3,
+        1
+      ],
+      "segre_degrees": [
+        0,
+        6,
+        -30,
+        116
+      ]
+    },
+    "quadratic_full_polar": {
+      "m": 2,
+      "projective_degrees": [
+        1,
+        2,
+        4,
+        4,
+        2
+      ],
+      "segre_degrees": [
+        0,
+        0,
+        4,
+        -18
+      ]
+    },
+    "quadratic_graph": {
+      "m": 2,
+      "projective_degrees": [
+        1,
+        2,
+        2,
+        2,
+        1
+      ],
+      "segre_degrees": [
+        0,
+        2,
+        -6,
+        15
+      ]
+    }
+  },
+  "controls": {
+    "cotangent_lift_quartic_packet": {
+      "affine_degree": 4,
+      "ambient_dimension": 4,
+      "correction_cubic_gradient": 77,
+      "correction_quadratic_gradient": 12
+    },
+    "meng_yang_after_schur_hc5": {
+      "affine_degree": 3,
+      "ambient_dimension": 5,
+      "gradient_degree": 13,
+      "total_segre_correction": 371290
+    },
+    "meng_yang_before_schur_hc6": {
+      "affine_degree": 3,
+      "ambient_dimension": 6,
+      "gradient_degree": 7,
+      "total_segre_correction": 117646
+    }
+  },
+  "conventions": {
+    "formula": "g_i=m^i-sum_{k=1}^i binom(i,k)m^(i-k)sigma_k",
+    "map": "[X0^m:F1^h:F2^h:F3^h:F4^h]",
+    "segre_pushforward": "i_*s(B,P4)=sigma_1*H+sigma_2*H^2+sigma_3*H^3+sigma_4*H^4",
+    "top_formula_without_fixed_divisor": "g_4=m^4-6*m^2*sigma_2-4*m*sigma_3-sigma_4"
+  },
+  "counts": {
+    "gradient_degree_2_affine_degree_2": 9,
+    "gradient_degree_2_affine_degree_3": 7,
+    "gradient_degree_3_affine_degree_2": 72,
+    "gradient_degree_3_affine_degree_3": 67
+  },
+  "format": "hc4-projective-polar-atlas-v1",
+  "quadratic_keller_consequence": {
+    "excluded_atlas_rows": {
+      "affine_degree_2": 9,
+      "affine_degree_3": 7
+    },
+    "excluded_zero_dimensional_lengths": [
+      14,
+      13
+    ],
+    "external_input": "Wang's theorem: every characteristic-zero Keller map of polynomial degree at most two is a polynomial automorphism",
+    "forced_affine_degree": 1,
+    "forced_total_segre_correction": 15,
+    "number_of_log_concave_degree_one_signatures": 11
+  },
+  "quadratic_keller_degree_one_atlas": [
+    {
+      "leading_base_codimension": 2,
+      "leading_cycle_degree": 2,
+      "projective_degrees": [
+        1,
+        2,
+        2,
+        2,
+        1
+      ],
+      "segre_degrees": [
+        0,
+        2,
+        -6,
+        15
+      ],
+      "smooth_lci_curve_genus": null,
+      "smooth_lci_curve_numerically_possible": null
+    },
+    {
+      "leading_base_codimension": 2,
+      "leading_cycle_degree": 1,
+      "projective_degrees": [
+        1,
+        2,
+        3,
+        2,
+        1
+      ],
+      "segre_degrees": [
+        0,
+        1,
+        0,
+        -9
+      ],
+      "smooth_lci_curve_genus": null,
+      "smooth_lci_curve_numerically_possible": null
+    },
+    {
+      "leading_base_codimension": 2,
+      "leading_cycle_degree": 1,
+      "projective_degrees": [
+        1,
+        2,
+        3,
+        3,
+        1
+      ],
+      "segre_degrees": [
+        0,
+        1,
+        -1,
+        -1
+      ],
+      "smooth_lci_curve_genus": null,
+      "smooth_lci_curve_numerically_possible": null
+    },
+    {
+      "leading_base_codimension": 2,
+      "leading_cycle_degree": 1,
+      "projective_degrees": [
+        1,
+        2,
+        3,
+        4,
+        1
+      ],
+      "segre_degrees": [
+        0,
+        1,
+        -2,
+        7
+      ],
+      "smooth_lci_curve_genus": null,
+      "smooth_lci_curve_numerically_possible": null
+    },
+    {
+      "leading_base_codimension": 3,
+      "leading_cycle_degree": 6,
+      "projective_degrees": [
+        1,
+        2,
+        4,
+        2,
+        1
+      ],
+      "segre_degrees": [
+        0,
+        0,
+        6,
+        -33
+      ],
+      "smooth_lci_curve_genus": null,
+      "smooth_lci_curve_numerically_possible": false
+    },
+    {
+      "leading_base_codimension": 3,
+      "leading_cycle_degree": 5,
+      "projective_degrees": [
+        1,
+        2,
+        4,
+        3,
+        1
+      ],
+      "segre_degrees": [
+        0,
+        0,
+        5,
+        -25
+      ],
+      "smooth_lci_curve_genus": 1,
+      "smooth_lci_curve_numerically_possible": true
+    },
+    {
+      "leading_base_codimension": 3,
+      "leading_cycle_degree": 4,
+      "projective_degrees": [
+        1,
+        2,
+        4,
+        4,
+        1
+      ],
+      "segre_degrees": [
+        0,
+        0,
+        4,
+        -17
+      ],
+      "smooth_lci_curve_genus": null,
+      "smooth_lci_curve_numerically_possible": false
+    },
+    {
+      "leading_base_codimension": 3,
+      "leading_cycle_degree": 3,
+      "projective_degrees": [
+        1,
+        2,
+        4,
+        5,
+        1
+      ],
+      "segre_degrees": [
+        0,
+        0,
+        3,
+        -9
+      ],
+      "smooth_lci_curve_genus": -2,
+      "smooth_lci_curve_numerically_possible": false
+    },
+    {
+      "leading_base_codimension": 3,
+      "leading_cycle_degree": 2,
+      "projective_degrees": [
+        1,
+        2,
+        4,
+        6,
+        1
+      ],
+      "segre_degrees": [
+        0,
+        0,
+        2,
+        -1
+      ],
+      "smooth_lci_curve_genus": null,
+      "smooth_lci_curve_numerically_possible": false
+    },
+    {
+      "leading_base_codimension": 3,
+      "leading_cycle_degree": 1,
+      "projective_degrees": [
+        1,
+        2,
+        4,
+        7,
+        1
+      ],
+      "segre_degrees": [
+        0,
+        0,
+        1,
+        7
+      ],
+      "smooth_lci_curve_genus": -5,
+      "smooth_lci_curve_numerically_possible": false
+    },
+    {
+      "leading_base_codimension": 4,
+      "leading_cycle_degree": 15,
+      "projective_degrees": [
+        1,
+        2,
+        4,
+        8,
+        1
+      ],
+      "segre_degrees": [
+        0,
+        0,
+        0,
+        15
+      ],
+      "smooth_lci_curve_genus": null,
+      "smooth_lci_curve_numerically_possible": null
+    }
+  ],
+  "scope": "Integral signatures from positivity, degree bounds, and log-concavity. Wang's theorem excludes every listed quadratic-gradient affine-degree-two/three row. The cubic-gradient rows are necessary conditions, not existence results, and the ordinary Hilbert polynomial does not determine the Segre class.",
+  "zero_dimensional_lengths": {
+    "gradient_degree_2_affine_degree_2": 14,
+    "gradient_degree_2_affine_degree_3": 13,
+    "gradient_degree_3_affine_degree_2": 79,
+    "gradient_degree_3_affine_degree_3": 78
+  }
+}

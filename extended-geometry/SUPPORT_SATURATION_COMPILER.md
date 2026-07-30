@@ -128,10 +128,69 @@ order-seven torsion lift.  This corrects the weaker single-colon observation
 \(w_0C6=0\): annihilation by one element of the two-generated boundary does
 not alone imply membership in \(H^0_{(w_0,w_2)}\).
 
-The finite-jet computation does not lift itself to characteristic zero and
-does not imply generic or completed all-order synchronization.  Passing
-`--degree42-characteristic 0` requests the much longer rational finite-jet
-calculation.
+The order-six statement now has a separate characteristic-zero certificate.
+Let
+
+\[
+ R=\mathbf Q[u,v,w_0,w_1,w_2],\qquad
+ \mathfrak m=(u,v),\qquad J_6=I+\mathfrak m^6,
+\]
+
+where \(I\) is the full unit-pivot-reduced core on the displayed base fiber.
+For the explicit stored class \(c_6\),
+
+\[
+ c_6\notin J_6,\qquad w_0c_6\in J_6,\qquad w_2c_6\in J_6.       \tag{1}
+\]
+
+Consequently \([c_6]\) is a nonzero class in
+\(H^0_{(w_0,w_2)}(R/J_6)\), killed already by the boundary ideal itself.
+This is an exact embedded-support obstruction on the sixth normal jet.
+
+The certificate avoids global saturation.  After reduction modulo
+\(\mathfrak m^6\), the canonical input has 16 primitive integer generators
+and 1,002 nonzero terms, with problem hash
+`b5c115b3f2efb61c54017f251274cf7f537d650e5333a039949b4d5833fc4218`.
+The two membership statements in (1) use one \(646\)-by-\(2400\) sparse
+Macaulay matrix of rank \(547\).  A two-sided block Krylov--Wiedemann solve
+over eight 31-bit primes reconstructs 157 nonzero rational multiplier terms
+for \(w_0c_6\) and 88 for \(w_2c_6\).
+
+Nonmembership is positive proof data rather than a failed reduction.  A
+second Macaulay system has 1,249 equations on 210 possible functional
+coordinates and rank 134.  Modular reconstruction gives a nine-term
+finite-support functional \(\lambda\) satisfying
+
+\[
+ \lambda(c_6)=1,\qquad \lambda(qf_i)=0
+\]
+
+for every reduced-core generator \(f_i\) and every monomial \(q\).  Extending
+\(\lambda\) by zero outside its finite support also kills
+\(\mathfrak m^6\), so it proves \(c_6\notin J_6\) without a degree-bound
+assumption.  The minimal checker uses only Python's standard library and
+replays the rational polynomial identities and all multiplier tests that
+can meet the functional support.
+
+Run the independent replay with:
+
+```bash
+python3 scripts/verify_degree42_c6_macaulay.py
+```
+
+Intentional reconstruction is:
+
+```bash
+.venv/bin/python scripts/compile_degree42_c6_macaulay.py
+```
+
+The older modular finite-jet artifact still supplies the full order-six and
+order-seven saturation modules and their transition.  The new rational
+certificate closes only the fixed order-six class.  It does not compute the
+full characteristic-zero saturation, lift the order-seven module, vary the
+base specialization, or imply generic or completed all-order
+synchronization.  Passing `--degree42-characteristic 0` to the older adapter
+still requests the much longer full rational finite-jet calculation.
 
 ### Plane-JC boundary layer
 

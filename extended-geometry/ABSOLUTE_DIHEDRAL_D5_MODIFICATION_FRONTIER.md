@@ -56,6 +56,10 @@ search.  It gives three conclusions.
    affine-linear in any number of new coordinates, with arbitrary
    polynomial \(a,u\)-dependent masks, constant Jacobian forces the target
    field to recover \(a\).  The generic degree is then one, not five.
+4. More generally, no polynomial thickening can contain the original
+   incidence as a source and target zero section.  On that section its
+   Jacobian is block triangular and remains divisible by \(J_5\), regardless
+   of nonlinear auxiliary terms.
 
 No absolute Keller map is constructed here.  The surviving search must
 both modify the \(u\)-coordinate and contain nonlinear dependence on the
@@ -354,6 +358,54 @@ degree-five \(D_5\) function-field extension.  This is stronger than the
 block-triangular obstruction: all the affine-linear masks may depend on
 \((a,u)\) and may enter every output except the retained \(u\).
 
+### Theorem 5.3 -- zero-section obstruction
+
+Let \(r\ge1\), and consider an arbitrary polynomial map
+
+\[
+ \Phi\colon\mathbb A^{2+r}_{a,u,z}
+ \longrightarrow\mathbb A^{2+r}_{U,V,Z}.
+\]
+
+Suppose that the original incidence is retained as a polynomial zero
+section:
+
+\[
+ \Phi(a,u,0)=\bigl(u,P(a,u),0\bigr).                \tag{5.9}
+\]
+
+Then \(\Phi\) cannot have nonzero constant Jacobian.  Indeed, on \(z=0\)
+its derivative has block form
+
+\[
+ D\Phi\big|_{z=0}=
+ \begin{pmatrix}
+ D(u,P)/D(a,u)& *\\
+ 0&M(a,u)
+ \end{pmatrix}.
+\]
+
+Consequently
+
+\[
+ \det D\Phi\big|_{z=0}
+ =-J(a,u)\det M(a,u),                               \tag{5.10}
+\]
+
+which cannot be a nonzero constant because \(J\) is nonconstant and
+\(\det M\) is polynomial.
+
+The same conclusion holds if the auxiliary target coordinates on the
+section are target-polynomial functions \(g_i(u,P)\), rather than zero.
+The triangular target change \(Z_i\mapsto Z_i-g_i(U,V)\) reduces this case
+to (5.9).
+
+Thus nonlinear feedback into \(U\) and \(V\) is not enough if it vanishes
+along a retained copy of the original incidence.  Preservation of the
+\(D_5\) extension must instead be proved by a genuinely birational
+elimination certificate; it cannot come from an unchanged polynomial
+zero section.
+
 ## 6. Fibre and Jacobian gates for the surviving search
 
 The precomputation leaves a sharply smaller search space.
@@ -369,7 +421,10 @@ The precomputation leaves a sharply smaller search space.
    affine-linear auxiliary masks forces degree one by Corollary 5.2.
 5. **The auxiliary dependence must be nonlinear.**  Merely increasing the
    number of affine-linear masks does not evade the theorem.
-6. **Degree and complete fibres must be checked by elimination.**  On
+6. **There can be no unchanged incidence zero section.**  Even nonlinear
+   feedback which vanishes on such a section leaves the restricted
+   determinant divisible by \(J\).
+7. **Degree and complete fibres must be checked by elimination.**  On
    \(v^2-4u^5\ne0\), the final auxiliary system must contribute exactly one
    point above each of the five roots of \(P(A,u)-v\), with no localization
    and no extra auxiliary degree.  Polynomiality alone does not guarantee
@@ -396,6 +451,28 @@ This is the first coefficient search worth running.  A search that fixes
 \(U=u\), uses only affine-linear masks, or starts from a freely stabilized
 product fill is already closed by the results above.
 
+The
+[nonlinear obstruction classification](D5_NONLINEAR_MODIFICATION_OBSTRUCTION_CLASSIFICATION.md)
+now divides the remaining stratum into arithmetic-monodromy, field-degree,
+finite-branch relocation, log-discrepancy, affine-space, graph-section,
+adjugate-divisibility, and complete-fibre gates.  In the branch-supported
+case, target order \(m\) forces source Jacobian orders
+
+\[
+(m,2m-1,2m-1)
+\]
+
+along \((C,R_+,R_-)\).  The primitive surviving ledger is therefore \(CQ\)
+against one target branch factor.  This determinant equality is only a
+prefilter: its diagonal realization still leaves the pole \(1/Q\).
+The
+[canonical two-mask audit](D5_TWO_MASK_BLOWDOWN_OBSTRUCTIONS.md)
+then realizes \(\Delta\) by a \(2\times2\) determinant, rejects all \(72\)
+primitive coordinate assignments, and uses the generic genus-two fibre to
+exclude polynomial automorphic base mixing in every degree.  Its first
+nonautomorphic normalized-cusp chart also has an all-degree contraction
+divisor mismatch.
+
 ## 7. Reproduction
 
 Run
@@ -409,4 +486,5 @@ order-two intersection of the ramification colors, the unique singular
 vertices of the product and separated fills, the nondegenerate separated
 quadric, the singular conormal rank of the three-color fill, and the
 maximal-minor determinant ledger behind Theorem 5.1 for two and three new
-coordinates.
+coordinates.  It also verifies the block determinant in the zero-section
+obstruction.

@@ -252,19 +252,201 @@ finds a nonreduced tangent direction in a much smaller normalized ansatz and
 then proves that direction is polynomial source-orbit tangent.  It does not
 compute (5) for the full bounded-degree scheme.
 
-## 6. Revised exact computational deliverables
+## 6. Exact full-box tangent calculation in degrees four through six
+
+Write a general point of the minimal full coefficient box as
+
+\[
+ \Phi_i=\sum_{|\alpha|\leq d}c_{i,\alpha}x^\alpha
+ \qquad(1\leq i\leq3).
+\]
+
+The bounded-degree determinant-one coefficient scheme used here is the
+explicit affine scheme
+
+\[
+ X(3,d)=\operatorname{Spec}
+ \frac{\mathbb Q[c_{i,\alpha}]}
+ {\left([x^\beta](\det D\Phi-1):
+          |\beta|\leq3(d-1)\right)}.                 \tag{15}
+\]
+
+Zero coefficient equations are harmless in (15).  There are
+`3 binomial(d+3,3)` coefficient variables and `binomial(3d,3)` displayed
+coefficient slots.
+
+For the integer-root maps in
+[the all-degree rational-fiber theorem](../verified/ALL_DEGREE_RATIONAL_FIBERS.md),
+exact sparse elimination over `Q` gives:
+
+| `N` | coordinate degrees of `F_N` | `d` | variables | determinant slots | nonzero rows of `L_F` | `rank_Q L_F` | `dim T_F X(3,d)` |
+|---:|---:|---:|---:|---:|---:|---:|---:|
+| 4 | `(12,11,4)` | 12 | 1365 | 7140 | 3135 | 1307 | 58 |
+| 5 | `(17,16,4)` | 17 | 3420 | 20825 | 9065 | 3332 | 88 |
+| 6 | `(22,21,4)` | 22 | 6900 | 45760 | 19808 | 6777 | 123 |
+
+These are ranks over `Q`, not finite-field estimates.  The sparse echelon
+calculation uses the graded-lexicographic leading monomial of each column and
+retains exact rational pivots.  The largest numerator or denominator bit
+sizes in the normalized pivots are respectively `33`, `101`, and `204`.
+
+The tangent space of the normalized seed family has the concrete basis
+
+\[
+ h_j(W)=W^{j+2}(W-1)^2,\qquad 0\leq j\leq N-4.       \tag{16}
+\]
+
+Differentiating the weighted suspension in these directions gives rank
+exactly `N-3` inside the raw tangent spaces in the table.  For each resulting
+coefficient tangent `G_j`, the checker also constructs
+
+\[
+ V_j=\operatorname{adj}(DF_N)G_j,\qquad
+ DF_N\,V_j=G_j,\qquad \operatorname{div}V_j=0.       \tag{17}
+\]
+
+The maximum coordinate degrees of these canonical source trivializers are:
+
+| `N` | seed-tangent rank | maximum degrees of `V_0,V_1,...` |
+|---:|---:|---:|
+| 4 | 1 | `25` |
+| 5 | 2 | `30,35` |
+| 6 | 3 | `35,40,45` |
+
+Thus the visible stable parameters are honest reduced family directions in
+the full coefficient scheme and are linearly independent before quotienting.
+Their canonical first-order source gauges already leave the original
+coefficient-degree boxes.  This is a concrete filtered-contact datum, not a
+stable tangent invariant: a target gauge may lower a particular filtered
+representative, and higher orders require the full two-sided resource
+spectrum.
+
+The raw bounded schemes already have nonzero quadratic Kuranishi maps.  Put
+
+\[
+ \gamma_N=1+a_Nxy+x^2z,\qquad
+ (a_4,a_5,a_6)=\left(-\frac53,-\frac{11}7,-\frac{57}{34}\right),
+\]
+
+and define
+
+\[
+ P_{N,m}=x^m\gamma_N^{m-1},\qquad
+ G_{N,m}=(yP_{N,m},P_{N,m},0).
+\]
+
+For `(N,m)=(4,3),(5,3),(6,4)`, exact differentiation gives
+
+\[
+ L_{F_N}(G_{N,m})=0,\qquad
+ Q_{F_N}(G_{N,m})
+ =-x^{2m+2}\gamma_N^{2m-2}.                         \tag{18}
+\]
+
+Here `Q_F(G)` is the coefficient of `t^2` in
+`det D(F+tG)`.  Exact reduction by the rational echelon basis of
+`im(L_F)` gives nonzero canonical remainders with respectively `10`, `3`,
+and `9` terms.  Thus (18) is nonzero in `coker(L_F)`, so no correction `K`
+of degree at most `d` can make
+
+\[
+ F_N+tG_{N,m}+t^2K
+\]
+
+Keller modulo `t^3`.  Thus the first nonzero raw bounded-box Kuranishi map is
+quadratic for each of `N=4,5,6`, and all three coefficient-scheme points fail
+formal smoothness.  This does not distinguish a reduced singularity from
+nilpotent structure.
+
+### 6.1 The complete quartic quadratic map
+
+For `N=4`, relation-tracked exact elimination gives a 58-vector basis of
+`ker(L_F)`.  Reducing all
+
+\[
+ \binom{58+1}{2}=1711
+\]
+
+polarized quadratic determinant classes by a **full** canonical echelon
+normal form in `coker(L_F)` gives
+
+\[
+ \boxed{\operatorname{rank}_{\mathbb Q}K_{2,F_4}=53.} \tag{19}
+\]
+
+Exactly `727` basis pairs are nonzero before taking their span, and their
+remainders use `338` canonical cokernel monomials.  The largest rational
+pivot numerator or denominator in the final quadratic image has `214` bits.
+
+The determinant-preserving affine source--target parameter space has
+dimension `23`, but its orbit at `F_4` has dimension `22`: the missing
+dimension is the weighted `G_m` stabilizer.  Four further exact target-shear
+directions are
+
+\[
+ (C^2,0,0),\quad(C^3,0,0),\quad
+ (0,C^2,0),\quad(0,C^3,0),                           \tag{20}
+\]
+
+where `C=F_{4,3}`.  They raise the reduced orbit-family tangent rank from
+`22` to `26`.  Adding the normalized quartic seed direction raises it to
+`27`.  Hence there is an explicit reduced 27-dimensional family through
+`F_4`; this is a subvariety of the coefficient scheme, not yet a proof that
+its closure is an irreducible component.
+
+Modulo each of `32003`, `32009`, and `32027`, quotienting only the affine
+orbit gives a 36-variable normal slice.  The seed is one distinguished
+coordinate, has zero quadratic pairing with every normal coordinate, and
+the remaining quadratic ideal again has rank `53`.  Thirteen other displayed
+coordinate axes survive the quadratic equations.  A complete order-three
+lookahead kills eight of those thirteen axes and allows five to lift through
+order three.  Two of the five are the first-coordinate target shears in
+(20).  These are modular discovery calculations.  Beyond order three, a
+greedy echelon lift is not an obstruction certificate because kernel choices
+made at earlier orders can change later equations; the seed family itself
+is the control example.
+
+The exact characteristic-zero checker is
+[`verify_quartic_full_box_kuranishi.py`](../scripts/verify_quartic_full_box_kuranishi.py).
+The modular slice compiler and bounded-jet research screen is
+[`research_quartic_coefficient_kuranishi.py`](../scripts/research_quartic_coefficient_kuranishi.py).
+
+Most importantly, there is **no first nonzero Kuranishi obstruction after
+the unrestricted source--target jet quotient**.  The formal
+source-triviality theorem applies at every Artin order and makes that quotient
+the one-point functor; allowing target jets cannot restore an obstruction.
+Consequently the proposed order-by-order quotient and the request for a
+later nonzero unfiltered Kuranishi class are incompatible.  The `N-3` stable
+parameters first appear only at the reduced algebraization/global-boundary
+level, or in a specified bounded-degree/Rees filtration.  They do not appear
+at any finite unfiltered Kuranishi order.
+
+The raw bounded scheme (15) has the quadratic classes (18) precisely because
+the correcting source automorphisms may leave its degree box.  The full
+quartic quadratic map is now known by (19), but determining the radical and
+associated primes of its 36-variable affine-normal slice, its higher
+restrictions, and the reduced and embedded completed local components
+remains open.  Neither the large tangent dimensions nor (18)--(19) proves
+nonreducedness or a component count.
+
+Run the exact audit with
+
+```bash
+.venv/bin/python scripts/verify_all_degree_coefficient_tangents.py
+```
+
+## 7. Revised exact computational deliverables
 
 For each selected `F_N`, beginning with the foundational map and the minimal
 bound `d=deg(F_N)`:
 
-1. enumerate the coefficient variables of `G` and build the sparse matrix of
-   `L_{F_N}` from (4);
-2. compute its rank and a certified basis of `T_{F_N}X(3,d)`;
-3. differentiate the `N-3` seed parameters inside that raw tangent space and
-   record their canonical divergence-free source trivializers (10);
-4. compute quadratic Kuranishi equations and, where feasible, the minimal
-   primes of the completed local coefficient ideal;
-5. only for the separate complexity question, compute the filtered spaces
+1. retain a certified sparse basis of `T_{F_N}X(3,d)`, beyond the exact ranks
+   now known for `N=4,5,6` (complete for `N=4`);
+2. compute the full raw bounded-box quadratic Kuranishi map for `N=5,6`,
+   extending the quartic calculation (19);
+3. compute minimal primes and embedded associated primes of the completed
+   local coefficient ideal where feasible;
+4. for the separate complexity question, compute the filtered spaces
    (14) and higher-order contact growth, then test whether the formal
    trivializers algebraize uniformly along the seed family.
 
