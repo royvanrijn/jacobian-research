@@ -279,9 +279,10 @@ An all-degree proof can now be divided into structural lemmas.
 2. **Move model.**  Compute the relative cotangent complex of the universal
    power and Dickson Ritt correspondences.  Show that arbitrary degrees are
    obtained by base change and outer/inner composition.
-3. **Cell descent.**  Prove that the derived intersection is the homotopy
-   limit of the coefficient-decorated Ritt 2-complex, so that its cotangent
-   complex is the totalization (3.1).
+3. **Cell descent.**  Cotangent descent for the full bar presentation of the
+   actual derived intersection is now formal.  Prove coefficient
+   effectivity of its compression to the finite decorated Ritt complex, so
+   that its perfect dual is the totalization (3.1).
 4. **Synchronization null-homotopy.**  Upgrade the missing-line theorem and
    common-right-factor top-jet theorem from radical vanishing to a
    null-homotopy of (2.3) on every filtered layer.
@@ -365,6 +366,14 @@ For an arbitrary ideal flag it proves the overlap formula and constructs the
 successive conormal extensions; its executable finite-module tower accepts
 any number of layers.  This closes the formal flag-transitivity part of the
 programme.  It does not close the Ritt-specific cellular-descent comparison.
+
+The categorical part of that comparison is now proved in
+[cotangent descent for the Hessian--Ritt diagram](HESSIAN_RITT_COTANGENT_DESCENT_COMPARISON.md):
+the full bar diagram computes the actual cotangent complex, and a complete
+two-skeleton determines \(H^0,H^1\).  The remaining Ritt-specific statement
+is coefficient effectivity of the finite cellular compression.  Genuine
+\(H^2\) also requires the next Coxeter cells; the permutohedron three-cell
+kills the topological \(H^2\) of the four-factor two-skeleton exactly.
 
 ## Relation to the existing notes
 

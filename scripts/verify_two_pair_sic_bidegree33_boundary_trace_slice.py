@@ -19,6 +19,7 @@ import re
 import shutil
 import subprocess
 import sys
+import tempfile
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -239,6 +240,163 @@ print(
     }
 
 
+def compute_modular_hyperslice(
+    singular: str,
+    msolve: str,
+    prime: int,
+    fixed_variable: str,
+    fixed_value: int,
+    timeout: int,
+) -> dict[str, object]:
+    """Test one coordinate-fixed hyperslice through corrected mu_8."""
+
+    assert fixed_variable in ("s1", "t0")
+    free_variable = "t0" if fixed_variable == "s1" else "s1"
+    expressions = [
+        chart_expression(moment_terms(order, prime), 0, prime)
+        for order in ORDERS
+    ]
+    _variables, polynomials = prepare_s0_branch_for_msolve(
+        singular,
+        expressions,
+        prime,
+        "s0-boundary",
+        timeout,
+    )
+    replacements = (
+        ("t1", "(s1*t0-L)"),
+        ("s2", "(s1^2-(13/3)*t0^2-Q)"),
+        ("L", "(1)"),
+        (fixed_variable, f"({fixed_value})"),
+    )
+    generators = [
+        substitute(polynomial, replacements) for polynomial in polynomials
+    ]
+    with tempfile.TemporaryDirectory(prefix="sic33-trace-hyperslice-") as directory:
+        input_path = Path(directory) / "hyperslice.ms"
+        output_path = Path(directory) / "hyperslice.out"
+        input_path.write_text(
+            f"s5,t4,s3,Q,t2,{free_variable}\n"
+            f"{prime}\n"
+            + ",\n".join(generators)
+            + "\n"
+        )
+        completed = subprocess.run(
+            [
+                msolve,
+                "-f",
+                str(input_path),
+                "-o",
+                str(output_path),
+                "-t",
+                "4",
+                "-v",
+                "1",
+                "-l",
+                "44",
+                "-g",
+                "1",
+            ],
+            text=True,
+            capture_output=True,
+            check=False,
+            timeout=timeout,
+        )
+        if completed.returncode != 0:
+            raise AssertionError(
+                f"msolve exit {completed.returncode}\n"
+                f"{completed.stdout[-2000:]}\n{completed.stderr[-2000:]}"
+            )
+        result = output_path.read_text()
+    return {
+        "prime": prime,
+        "fixed_coordinate": {fixed_variable: fixed_value},
+        "free_variables": [free_variable, "Q", "t2", "s3", "s5", "t4"],
+        "through_mu8_unit_ideal": result.rstrip().endswith("[1]:"),
+        "basis_size": 1 if "#length of basis:      1 element" in result else None,
+        "backend": "msolve linear algebra 44",
+    }
+
+
+def compute_exact_hyperslice(
+    singular: str,
+    msolve: str,
+    fixed_variable: str,
+    fixed_value: int,
+    timeout: int,
+) -> dict[str, object]:
+    """Certify one coordinate-fixed hyperslice over the rationals."""
+
+    assert fixed_variable in ("s1", "t0")
+    free_variable = "t0" if fixed_variable == "s1" else "s1"
+    expressions = [
+        exact_chart_expression(exact_moment_terms(order))
+        for order in ORDERS
+    ]
+    _variables, polynomials = prepare_s0_branch_for_msolve(
+        singular,
+        expressions,
+        0,
+        "s0-boundary",
+        timeout,
+    )
+    replacements = (
+        ("t1", "(s1*t0-L)"),
+        ("s2", "(s1^2-(13/3)*t0^2-Q)"),
+        ("L", "(1)"),
+        (fixed_variable, f"({fixed_value})"),
+    )
+    generators = [
+        substitute(polynomial, replacements) for polynomial in polynomials
+    ]
+    with tempfile.TemporaryDirectory(
+        prefix="sic33-trace-hyperslice-exact-"
+    ) as directory:
+        input_path = Path(directory) / "hyperslice.ms"
+        output_path = Path(directory) / "hyperslice.out"
+        input_path.write_text(
+            f"s5,t4,s3,Q,t2,{free_variable}\n"
+            "0\n"
+            + ",\n".join(generators)
+            + "\n"
+        )
+        completed = subprocess.run(
+            [
+                msolve,
+                "-f",
+                str(input_path),
+                "-o",
+                str(output_path),
+                "-t",
+                "4",
+                "-v",
+                "1",
+                "-l",
+                "2",
+                "-g",
+                "1",
+            ],
+            text=True,
+            capture_output=True,
+            check=False,
+            timeout=timeout,
+        )
+        if completed.returncode != 0:
+            raise AssertionError(
+                f"msolve exit {completed.returncode}\n"
+                f"{completed.stdout[-2000:]}\n{completed.stderr[-2000:]}"
+            )
+        result = output_path.read_text()
+    return {
+        "characteristic": 0,
+        "fixed_coordinate": {fixed_variable: fixed_value},
+        "free_variables": [free_variable, "Q", "t2", "s3", "s5", "t4"],
+        "through_mu8_unit_ideal": result.rstrip().endswith("[1]:"),
+        "basis_size": 1 if "#length of basis:      1 element" in result else None,
+        "backend": "msolve over Q, exact sparse linear algebra 2",
+    }
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--primes", default="47,101")
@@ -251,6 +409,8 @@ def main() -> None:
     assert primes and all(3 * max(ORDERS) < prime for prime in primes)
     singular = shutil.which("Singular")
     assert singular is not None
+    msolve = shutil.which("msolve")
+    assert msolve is not None
 
     results = [
         compute_slice(
@@ -273,6 +433,43 @@ def main() -> None:
             arguments.timeout,
         )
         assert exact_result["through_mu8"]["unit_ideal"]
+    hyperslices: list[dict[str, object]] = []
+    for fixed_variable, fixed_value in (
+        ("t0", arguments.t0),
+        ("s1", arguments.s1),
+    ):
+        modular_results = [
+            compute_modular_hyperslice(
+                singular,
+                msolve,
+                prime,
+                fixed_variable,
+                fixed_value % prime,
+                arguments.timeout,
+            )
+            for prime in primes
+        ]
+        assert all(
+            result["through_mu8_unit_ideal"] for result in modular_results
+        )
+        exact_hyperslice_result = None
+        if not arguments.skip_characteristic_zero:
+            exact_hyperslice_result = compute_exact_hyperslice(
+                singular,
+                msolve,
+                fixed_variable,
+                fixed_value,
+                arguments.timeout,
+            )
+            assert exact_hyperslice_result["through_mu8_unit_ideal"]
+        hyperslices.append(
+            {
+                "fixed_variable": fixed_variable,
+                "fixed_value": fixed_value,
+                "results": modular_results,
+                "characteristic_zero_result": exact_hyperslice_result,
+            }
+        )
 
     output = (
         ROOT
@@ -303,6 +500,38 @@ def main() -> None:
         ),
     }
     output.write_text(json.dumps(payload, indent=2, sort_keys=True) + "\n")
+    hyperslice_outputs: list[Path] = []
+    for hyperslice in hyperslices:
+        fixed_variable = hyperslice["fixed_variable"]
+        fixed_value = hyperslice["fixed_value"]
+        hyperslice_output = (
+            ROOT
+            / "artifacts"
+            / "generated-results"
+            / (
+                "two_pair_sic_bidegree33_boundary_trace_hyperslice_"
+                f"{fixed_variable}_{fixed_value}.json"
+            )
+        )
+        hyperslice_payload = {
+            "normalization": "s0=1, A=B=mu2=0, L=1",
+            "fixed_coordinate": {fixed_variable: fixed_value},
+            "corrected_moments_used": list(range(3, 9)),
+            "results": hyperslice["results"],
+            "characteristic_zero_result": hyperslice[
+                "characteristic_zero_result"
+            ],
+            "scope": (
+                "complete finite-field hyperslice unit computations plus an "
+                "exact characteristic-zero msolve certificate when present; "
+                "not a global boundary certificate"
+            ),
+            "reproduction_command": payload["reproduction_command"],
+        }
+        hyperslice_output.write_text(
+            json.dumps(hyperslice_payload, indent=2, sort_keys=True) + "\n"
+        )
+        hyperslice_outputs.append(hyperslice_output)
     for result in results:
         print(
             f"TRACE_SLICE prime={result['prime']} "
@@ -316,7 +545,26 @@ def main() -> None:
             f"unit8={int(exact_result['through_mu8']['unit_ideal'])} "
             f"algorithm={exact_result['algorithm']}"
         )
+    for hyperslice in hyperslices:
+        fixed_variable = hyperslice["fixed_variable"]
+        fixed_value = hyperslice["fixed_value"]
+        for result in hyperslice["results"]:
+            print(
+                f"TRACE_HYPERSLICE prime={result['prime']} "
+                f"{fixed_variable}={fixed_value} "
+                f"unit8={int(result['through_mu8_unit_ideal'])}"
+            )
+        exact_hyperslice_result = hyperslice["characteristic_zero_result"]
+        if exact_hyperslice_result is not None:
+            print(
+                "TRACE_HYPERSLICE characteristic=0 "
+                f"{fixed_variable}={fixed_value} "
+                f"unit8={int(exact_hyperslice_result['through_mu8_unit_ideal'])} "
+                f"backend={exact_hyperslice_result['backend']}"
+            )
     print(f"TRACE_SLICE_WROTE {output.relative_to(ROOT)}")
+    for hyperslice_output in hyperslice_outputs:
+        print(f"TRACE_HYPERSLICE_WROTE {hyperslice_output.relative_to(ROOT)}")
     print("PASS: corrected mu8 kills the complete slice in every checked field")
 
 

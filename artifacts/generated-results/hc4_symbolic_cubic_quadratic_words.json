@@ -3,6 +3,83 @@
     {
       "H1_source": 0,
       "H2_source": 0,
+      "affine_rank_audit": {
+        "coordinate_affine_pivot_dimension": 2,
+        "maximal_coordinate_affine_blocks": [
+          [
+            "v",
+            "w"
+          ]
+        ],
+        "pair_audits": [
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "v",
+              "w"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 2,
+                "factorization": "-12288*b*(12*b + 1)",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "degree_in_b": 2,
+                "factorization": "-12288*b*(12*b - 1)",
+                "point": [
+                  -1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  2,
+                  3
+                ],
+                "degree_in_b": 1,
+                "factorization": "768*b",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  2,
+                  3
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "y",
+              "z",
+              "u"
+            ]
+          }
+        ],
+        "two_pivot_pairs": 1
+      },
       "certificate_kind": "exact_parent_family",
       "common_dual": 0,
       "composition_order": "cubic-quadratic",
@@ -218,6 +295,83 @@
     {
       "H1_source": 0,
       "H2_source": 0,
+      "affine_rank_audit": {
+        "coordinate_affine_pivot_dimension": 2,
+        "maximal_coordinate_affine_blocks": [
+          [
+            "v",
+            "w"
+          ]
+        ],
+        "pair_audits": [
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "v",
+              "w"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 2,
+                "factorization": "-12288*b*(12*b - 1)",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "degree_in_b": 2,
+                "factorization": "-12288*b*(12*b + 1)",
+                "point": [
+                  -1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  2,
+                  3
+                ],
+                "degree_in_b": 1,
+                "factorization": "768*b",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  2,
+                  3
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "y",
+              "z",
+              "u"
+            ]
+          }
+        ],
+        "two_pivot_pairs": 1
+      },
       "certificate_kind": "exact_parent_family",
       "common_dual": 0,
       "composition_order": "cubic-quadratic",
@@ -433,6 +587,178 @@
     {
       "H1_source": 0,
       "H2_source": 1,
+      "affine_rank_audit": {
+        "coordinate_affine_pivot_dimension": 3,
+        "maximal_coordinate_affine_blocks": [
+          [
+            "x",
+            "v",
+            "w"
+          ]
+        ],
+        "pair_audits": [
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "x",
+              "v"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 2,
+                "factorization": "36864*b**2",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  1,
+                  2
+                ],
+                "degree_in_b": 1,
+                "factorization": "-384*b",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  2
+                ]
+              }
+            ],
+            "retained": [
+              "y",
+              "z",
+              "u",
+              "w"
+            ]
+          },
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "x",
+              "w"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 0,
+                "factorization": "1024",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  1,
+                  2
+                ],
+                "degree_in_b": 1,
+                "factorization": "-384*b",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  2
+                ]
+              }
+            ],
+            "retained": [
+              "y",
+              "z",
+              "u",
+              "v"
+            ]
+          },
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "v",
+              "w"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 1,
+                "factorization": "3072*b",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  1,
+                  2
+                ],
+                "degree_in_b": 1,
+                "factorization": "-96*b",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  2
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "y",
+              "z",
+              "u"
+            ]
+          }
+        ],
+        "two_pivot_pairs": 3
+      },
       "certificate_kind": "exact_parent_family",
       "common_dual": 0,
       "composition_order": "cubic-quadratic",
@@ -718,6 +1044,178 @@
     {
       "H1_source": 0,
       "H2_source": 1,
+      "affine_rank_audit": {
+        "coordinate_affine_pivot_dimension": 3,
+        "maximal_coordinate_affine_blocks": [
+          [
+            "x",
+            "v",
+            "w"
+          ]
+        ],
+        "pair_audits": [
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "x",
+              "v"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 2,
+                "factorization": "36864*b**2",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  1,
+                  2
+                ],
+                "degree_in_b": 1,
+                "factorization": "384*b",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  2
+                ]
+              }
+            ],
+            "retained": [
+              "y",
+              "z",
+              "u",
+              "w"
+            ]
+          },
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "x",
+              "w"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 0,
+                "factorization": "1024",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  1,
+                  2
+                ],
+                "degree_in_b": 1,
+                "factorization": "384*b",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  2
+                ]
+              }
+            ],
+            "retained": [
+              "y",
+              "z",
+              "u",
+              "v"
+            ]
+          },
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "v",
+              "w"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 1,
+                "factorization": "-3072*b",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  1,
+                  2
+                ],
+                "degree_in_b": 1,
+                "factorization": "96*b",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  2
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "y",
+              "z",
+              "u"
+            ]
+          }
+        ],
+        "two_pivot_pairs": 3
+      },
       "certificate_kind": "exact_parent_family",
       "common_dual": 0,
       "composition_order": "cubic-quadratic",
@@ -1003,6 +1501,178 @@
     {
       "H1_source": 0,
       "H2_source": 1,
+      "affine_rank_audit": {
+        "coordinate_affine_pivot_dimension": 3,
+        "maximal_coordinate_affine_blocks": [
+          [
+            "x",
+            "v",
+            "w"
+          ]
+        ],
+        "pair_audits": [
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "x",
+              "v"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 2,
+                "factorization": "36864*b**2",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  1,
+                  2
+                ],
+                "degree_in_b": 1,
+                "factorization": "384*b",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  2
+                ]
+              }
+            ],
+            "retained": [
+              "y",
+              "z",
+              "u",
+              "w"
+            ]
+          },
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "x",
+              "w"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 0,
+                "factorization": "1024",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  1,
+                  2
+                ],
+                "degree_in_b": 1,
+                "factorization": "384*b",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  2
+                ]
+              }
+            ],
+            "retained": [
+              "y",
+              "z",
+              "u",
+              "v"
+            ]
+          },
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "v",
+              "w"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 1,
+                "factorization": "3072*b",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  1,
+                  2
+                ],
+                "degree_in_b": 1,
+                "factorization": "96*b",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  2
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "y",
+              "z",
+              "u"
+            ]
+          }
+        ],
+        "two_pivot_pairs": 3
+      },
       "certificate_kind": "exact_parent_family",
       "common_dual": 0,
       "composition_order": "cubic-quadratic",
@@ -1288,6 +1958,178 @@
     {
       "H1_source": 0,
       "H2_source": 1,
+      "affine_rank_audit": {
+        "coordinate_affine_pivot_dimension": 3,
+        "maximal_coordinate_affine_blocks": [
+          [
+            "x",
+            "v",
+            "w"
+          ]
+        ],
+        "pair_audits": [
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "x",
+              "v"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 2,
+                "factorization": "36864*b**2",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  1,
+                  2
+                ],
+                "degree_in_b": 1,
+                "factorization": "-384*b",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  2
+                ]
+              }
+            ],
+            "retained": [
+              "y",
+              "z",
+              "u",
+              "w"
+            ]
+          },
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "x",
+              "w"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 0,
+                "factorization": "1024",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  1,
+                  2
+                ],
+                "degree_in_b": 1,
+                "factorization": "-384*b",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  2
+                ]
+              }
+            ],
+            "retained": [
+              "y",
+              "z",
+              "u",
+              "v"
+            ]
+          },
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "v",
+              "w"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 1,
+                "factorization": "-3072*b",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  1,
+                  2
+                ],
+                "degree_in_b": 1,
+                "factorization": "-96*b",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  2
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "y",
+              "z",
+              "u"
+            ]
+          }
+        ],
+        "two_pivot_pairs": 3
+      },
       "certificate_kind": "exact_parent_family",
       "common_dual": 0,
       "composition_order": "cubic-quadratic",
@@ -1573,6 +2415,212 @@
     {
       "H1_source": 0,
       "H2_source": 2,
+      "affine_rank_audit": {
+        "coordinate_affine_pivot_dimension": 3,
+        "maximal_coordinate_affine_blocks": [
+          [
+            "x",
+            "v",
+            "w"
+          ]
+        ],
+        "pair_audits": [
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "x",
+              "v"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 2,
+                "factorization": "-479232*b**2",
+                "point": [
+                  0,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  1,
+                  2,
+                  3
+                ],
+                "degree_in_b": 1,
+                "factorization": "-384*b",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  1,
+                  2,
+                  3
+                ]
+              }
+            ],
+            "retained": [
+              "y",
+              "z",
+              "u",
+              "w"
+            ]
+          },
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "x",
+              "w"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 1,
+                "factorization": "-512*(3*b - 2)",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "degree_in_b": 1,
+                "factorization": "1024*(2244*b + 1)",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  1,
+                  2,
+                  3
+                ],
+                "degree_in_b": 1,
+                "factorization": "128*(3*b - 2)",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  2
+                ]
+              },
+              {
+                "columns": [
+                  0,
+                  1,
+                  3
+                ],
+                "degree_in_b": 1,
+                "factorization": "-96*b",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  3
+                ]
+              }
+            ],
+            "retained": [
+              "y",
+              "z",
+              "u",
+              "v"
+            ]
+          },
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "v",
+              "w"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 1,
+                "factorization": "3072*b",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  2,
+                  3
+                ],
+                "degree_in_b": 1,
+                "factorization": "-96*b",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  2,
+                  3
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "y",
+              "z",
+              "u"
+            ]
+          }
+        ],
+        "two_pivot_pairs": 3
+      },
       "certificate_kind": "exact_parent_family",
       "common_dual": 0,
       "composition_order": "cubic-quadratic",
@@ -1956,6 +3004,212 @@
     {
       "H1_source": 0,
       "H2_source": 2,
+      "affine_rank_audit": {
+        "coordinate_affine_pivot_dimension": 3,
+        "maximal_coordinate_affine_blocks": [
+          [
+            "x",
+            "v",
+            "w"
+          ]
+        ],
+        "pair_audits": [
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "x",
+              "v"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 2,
+                "factorization": "-479232*b**2",
+                "point": [
+                  0,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  1,
+                  2,
+                  3
+                ],
+                "degree_in_b": 1,
+                "factorization": "384*b",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  1,
+                  2,
+                  3
+                ]
+              }
+            ],
+            "retained": [
+              "y",
+              "z",
+              "u",
+              "w"
+            ]
+          },
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "x",
+              "w"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 1,
+                "factorization": "-512*(3*b - 2)",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "degree_in_b": 1,
+                "factorization": "-1024*(2295*b - 1)",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  1,
+                  2,
+                  3
+                ],
+                "degree_in_b": 1,
+                "factorization": "128*(3*b - 2)",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  2
+                ]
+              },
+              {
+                "columns": [
+                  0,
+                  1,
+                  3
+                ],
+                "degree_in_b": 1,
+                "factorization": "96*b",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  3
+                ]
+              }
+            ],
+            "retained": [
+              "y",
+              "z",
+              "u",
+              "v"
+            ]
+          },
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "v",
+              "w"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 1,
+                "factorization": "-3072*b",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  2,
+                  3
+                ],
+                "degree_in_b": 1,
+                "factorization": "96*b",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  2,
+                  3
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "y",
+              "z",
+              "u"
+            ]
+          }
+        ],
+        "two_pivot_pairs": 3
+      },
       "certificate_kind": "exact_parent_family",
       "common_dual": 0,
       "composition_order": "cubic-quadratic",
@@ -2339,6 +3593,212 @@
     {
       "H1_source": 0,
       "H2_source": 2,
+      "affine_rank_audit": {
+        "coordinate_affine_pivot_dimension": 3,
+        "maximal_coordinate_affine_blocks": [
+          [
+            "x",
+            "v",
+            "w"
+          ]
+        ],
+        "pair_audits": [
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "x",
+              "v"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 2,
+                "factorization": "-479232*b**2",
+                "point": [
+                  0,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  1,
+                  2,
+                  3
+                ],
+                "degree_in_b": 1,
+                "factorization": "384*b",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  1,
+                  2,
+                  3
+                ]
+              }
+            ],
+            "retained": [
+              "y",
+              "z",
+              "u",
+              "w"
+            ]
+          },
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "x",
+              "w"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 1,
+                "factorization": "512*(3*b + 2)",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "degree_in_b": 1,
+                "factorization": "1024*(2295*b + 1)",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  1,
+                  2,
+                  3
+                ],
+                "degree_in_b": 1,
+                "factorization": "-128*(3*b + 2)",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  2
+                ]
+              },
+              {
+                "columns": [
+                  0,
+                  1,
+                  3
+                ],
+                "degree_in_b": 1,
+                "factorization": "96*b",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  3
+                ]
+              }
+            ],
+            "retained": [
+              "y",
+              "z",
+              "u",
+              "v"
+            ]
+          },
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "v",
+              "w"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 1,
+                "factorization": "3072*b",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  2,
+                  3
+                ],
+                "degree_in_b": 1,
+                "factorization": "96*b",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  2,
+                  3
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "y",
+              "z",
+              "u"
+            ]
+          }
+        ],
+        "two_pivot_pairs": 3
+      },
       "certificate_kind": "exact_parent_family",
       "common_dual": 0,
       "composition_order": "cubic-quadratic",
@@ -2722,6 +4182,212 @@
     {
       "H1_source": 0,
       "H2_source": 2,
+      "affine_rank_audit": {
+        "coordinate_affine_pivot_dimension": 3,
+        "maximal_coordinate_affine_blocks": [
+          [
+            "x",
+            "v",
+            "w"
+          ]
+        ],
+        "pair_audits": [
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "x",
+              "v"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 2,
+                "factorization": "-479232*b**2",
+                "point": [
+                  0,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  1,
+                  2,
+                  3
+                ],
+                "degree_in_b": 1,
+                "factorization": "-384*b",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  1,
+                  2,
+                  3
+                ]
+              }
+            ],
+            "retained": [
+              "y",
+              "z",
+              "u",
+              "w"
+            ]
+          },
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "x",
+              "w"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 1,
+                "factorization": "512*(3*b + 2)",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "degree_in_b": 1,
+                "factorization": "-1024*(2244*b - 1)",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  1,
+                  2,
+                  3
+                ],
+                "degree_in_b": 1,
+                "factorization": "-128*(3*b + 2)",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  2
+                ]
+              },
+              {
+                "columns": [
+                  0,
+                  1,
+                  3
+                ],
+                "degree_in_b": 1,
+                "factorization": "-96*b",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  3
+                ]
+              }
+            ],
+            "retained": [
+              "y",
+              "z",
+              "u",
+              "v"
+            ]
+          },
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "v",
+              "w"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 1,
+                "factorization": "-3072*b",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  2,
+                  3
+                ],
+                "degree_in_b": 1,
+                "factorization": "-96*b",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  2,
+                  3
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "y",
+              "z",
+              "u"
+            ]
+          }
+        ],
+        "two_pivot_pairs": 3
+      },
       "certificate_kind": "exact_parent_family",
       "common_dual": 0,
       "composition_order": "cubic-quadratic",
@@ -3105,6 +4771,71 @@
     {
       "H1_source": 1,
       "H2_source": 0,
+      "affine_rank_audit": {
+        "coordinate_affine_pivot_dimension": 2,
+        "maximal_coordinate_affine_blocks": [
+          [
+            "v",
+            "w"
+          ]
+        ],
+        "pair_audits": [
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "v",
+              "w"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 1,
+                "factorization": "768*b",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  1,
+                  3
+                ],
+                "degree_in_b": 1,
+                "factorization": "-192*b",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  2
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "y",
+              "z",
+              "u"
+            ]
+          }
+        ],
+        "two_pivot_pairs": 1
+      },
       "certificate_kind": "exact_parent_family",
       "common_dual": 0,
       "composition_order": "cubic-quadratic",
@@ -3390,6 +5121,71 @@
     {
       "H1_source": 1,
       "H2_source": 0,
+      "affine_rank_audit": {
+        "coordinate_affine_pivot_dimension": 2,
+        "maximal_coordinate_affine_blocks": [
+          [
+            "v",
+            "w"
+          ]
+        ],
+        "pair_audits": [
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "v",
+              "w"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 1,
+                "factorization": "-768*b",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  1,
+                  3
+                ],
+                "degree_in_b": 1,
+                "factorization": "192*b",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  2
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "y",
+              "z",
+              "u"
+            ]
+          }
+        ],
+        "two_pivot_pairs": 1
+      },
       "certificate_kind": "exact_parent_family",
       "common_dual": 0,
       "composition_order": "cubic-quadratic",
@@ -3675,6 +5471,71 @@
     {
       "H1_source": 1,
       "H2_source": 0,
+      "affine_rank_audit": {
+        "coordinate_affine_pivot_dimension": 2,
+        "maximal_coordinate_affine_blocks": [
+          [
+            "v",
+            "w"
+          ]
+        ],
+        "pair_audits": [
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "v",
+              "w"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 1,
+                "factorization": "768*b",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  1,
+                  3
+                ],
+                "degree_in_b": 1,
+                "factorization": "-192*b",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  2
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "y",
+              "z",
+              "u"
+            ]
+          }
+        ],
+        "two_pivot_pairs": 1
+      },
       "certificate_kind": "exact_parent_family",
       "common_dual": 0,
       "composition_order": "cubic-quadratic",
@@ -3960,6 +5821,71 @@
     {
       "H1_source": 1,
       "H2_source": 0,
+      "affine_rank_audit": {
+        "coordinate_affine_pivot_dimension": 2,
+        "maximal_coordinate_affine_blocks": [
+          [
+            "v",
+            "w"
+          ]
+        ],
+        "pair_audits": [
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "v",
+              "w"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 1,
+                "factorization": "-768*b",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  1,
+                  3
+                ],
+                "degree_in_b": 1,
+                "factorization": "192*b",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  2
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "y",
+              "z",
+              "u"
+            ]
+          }
+        ],
+        "two_pivot_pairs": 1
+      },
       "certificate_kind": "exact_parent_family",
       "common_dual": 0,
       "composition_order": "cubic-quadratic",
@@ -4245,6 +6171,105 @@
     {
       "H1_source": 2,
       "H2_source": 0,
+      "affine_rank_audit": {
+        "coordinate_affine_pivot_dimension": 2,
+        "maximal_coordinate_affine_blocks": [
+          [
+            "v",
+            "w"
+          ]
+        ],
+        "pair_audits": [
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "v",
+              "w"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 2,
+                "factorization": "768*b*(882*b + 145)",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "degree_in_b": 2,
+                "factorization": "768*b*(324*b + 1)",
+                "point": [
+                  -1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  2,
+                  3
+                ],
+                "degree_in_b": 1,
+                "factorization": "32*(3*b - 16)",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  2,
+                  3
+                ]
+              },
+              {
+                "columns": [
+                  0,
+                  1,
+                  2
+                ],
+                "degree_in_b": 3,
+                "factorization": "-96*b*(1647*b**2 + 5838*b - 145)",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  2
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "y",
+              "z",
+              "u"
+            ]
+          }
+        ],
+        "two_pivot_pairs": 1
+      },
       "certificate_kind": "exact_parent_family",
       "common_dual": 0,
       "composition_order": "cubic-quadratic",
@@ -4628,6 +6653,105 @@
     {
       "H1_source": 2,
       "H2_source": 0,
+      "affine_rank_audit": {
+        "coordinate_affine_pivot_dimension": 2,
+        "maximal_coordinate_affine_blocks": [
+          [
+            "v",
+            "w"
+          ]
+        ],
+        "pair_audits": [
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "v",
+              "w"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 2,
+                "factorization": "768*b*(324*b + 1)",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "degree_in_b": 2,
+                "factorization": "768*b*(882*b + 145)",
+                "point": [
+                  -1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  2,
+                  3
+                ],
+                "degree_in_b": 1,
+                "factorization": "32*(3*b - 16)",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  2,
+                  3
+                ]
+              },
+              {
+                "columns": [
+                  0,
+                  1,
+                  2
+                ],
+                "degree_in_b": 3,
+                "factorization": "96*b*(2817*b**2 - 1362*b + 1)",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  2
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "y",
+              "z",
+              "u"
+            ]
+          }
+        ],
+        "two_pivot_pairs": 1
+      },
       "certificate_kind": "exact_parent_family",
       "common_dual": 0,
       "composition_order": "cubic-quadratic",
@@ -5011,6 +7135,105 @@
     {
       "H1_source": 2,
       "H2_source": 0,
+      "affine_rank_audit": {
+        "coordinate_affine_pivot_dimension": 2,
+        "maximal_coordinate_affine_blocks": [
+          [
+            "v",
+            "w"
+          ]
+        ],
+        "pair_audits": [
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "v",
+              "w"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 2,
+                "factorization": "768*b*(324*b - 1)",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "degree_in_b": 2,
+                "factorization": "768*b*(882*b - 145)",
+                "point": [
+                  -1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  2,
+                  3
+                ],
+                "degree_in_b": 1,
+                "factorization": "32*(3*b + 16)",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  2,
+                  3
+                ]
+              },
+              {
+                "columns": [
+                  0,
+                  1,
+                  2
+                ],
+                "degree_in_b": 3,
+                "factorization": "96*b*(2817*b**2 + 1362*b + 1)",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  2
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "y",
+              "z",
+              "u"
+            ]
+          }
+        ],
+        "two_pivot_pairs": 1
+      },
       "certificate_kind": "exact_parent_family",
       "common_dual": 0,
       "composition_order": "cubic-quadratic",
@@ -5394,6 +7617,105 @@
     {
       "H1_source": 2,
       "H2_source": 0,
+      "affine_rank_audit": {
+        "coordinate_affine_pivot_dimension": 2,
+        "maximal_coordinate_affine_blocks": [
+          [
+            "v",
+            "w"
+          ]
+        ],
+        "pair_audits": [
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "v",
+              "w"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 2,
+                "factorization": "768*b*(882*b - 145)",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "degree_in_b": 2,
+                "factorization": "768*b*(324*b - 1)",
+                "point": [
+                  -1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  2,
+                  3
+                ],
+                "degree_in_b": 1,
+                "factorization": "32*(3*b + 16)",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  2,
+                  3
+                ]
+              },
+              {
+                "columns": [
+                  0,
+                  1,
+                  2
+                ],
+                "degree_in_b": 3,
+                "factorization": "-96*b*(1647*b**2 - 5838*b - 145)",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  2
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "y",
+              "z",
+              "u"
+            ]
+          }
+        ],
+        "two_pivot_pairs": 1
+      },
       "certificate_kind": "exact_parent_family",
       "common_dual": 0,
       "composition_order": "cubic-quadratic",
@@ -5777,6 +8099,83 @@
     {
       "H1_source": 0,
       "H2_source": 1,
+      "affine_rank_audit": {
+        "coordinate_affine_pivot_dimension": 2,
+        "maximal_coordinate_affine_blocks": [
+          [
+            "u",
+            "w"
+          ]
+        ],
+        "pair_audits": [
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "u",
+              "w"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 1,
+                "factorization": "-256*(3*b - 1)",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "degree_in_b": 1,
+                "factorization": "-323584*(93*b - 40)",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  1,
+                  2
+                ],
+                "degree_in_b": 1,
+                "factorization": "-96*b",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  2
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "y",
+              "z",
+              "v"
+            ]
+          }
+        ],
+        "two_pivot_pairs": 1
+      },
       "certificate_kind": "exact_parent_family",
       "common_dual": 1,
       "composition_order": "cubic-quadratic",
@@ -6160,6 +8559,83 @@
     {
       "H1_source": 0,
       "H2_source": 1,
+      "affine_rank_audit": {
+        "coordinate_affine_pivot_dimension": 2,
+        "maximal_coordinate_affine_blocks": [
+          [
+            "u",
+            "w"
+          ]
+        ],
+        "pair_audits": [
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "u",
+              "w"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 1,
+                "factorization": "-256*(3*b - 1)",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "degree_in_b": 2,
+                "factorization": "256*(32238*b**2 + 1323*b + 1)",
+                "point": [
+                  0,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  1,
+                  2
+                ],
+                "degree_in_b": 1,
+                "factorization": "96*b",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  2
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "y",
+              "z",
+              "v"
+            ]
+          }
+        ],
+        "two_pivot_pairs": 1
+      },
       "certificate_kind": "exact_parent_family",
       "common_dual": 1,
       "composition_order": "cubic-quadratic",
@@ -6543,6 +9019,83 @@
     {
       "H1_source": 0,
       "H2_source": 1,
+      "affine_rank_audit": {
+        "coordinate_affine_pivot_dimension": 2,
+        "maximal_coordinate_affine_blocks": [
+          [
+            "u",
+            "w"
+          ]
+        ],
+        "pair_audits": [
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "u",
+              "w"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 1,
+                "factorization": "256*(3*b + 1)",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "degree_in_b": 2,
+                "factorization": "256*(32238*b**2 - 1323*b + 1)",
+                "point": [
+                  0,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  1,
+                  2
+                ],
+                "degree_in_b": 1,
+                "factorization": "96*b",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  2
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "y",
+              "z",
+              "v"
+            ]
+          }
+        ],
+        "two_pivot_pairs": 1
+      },
       "certificate_kind": "exact_parent_family",
       "common_dual": 1,
       "composition_order": "cubic-quadratic",
@@ -6926,6 +9479,83 @@
     {
       "H1_source": 0,
       "H2_source": 1,
+      "affine_rank_audit": {
+        "coordinate_affine_pivot_dimension": 2,
+        "maximal_coordinate_affine_blocks": [
+          [
+            "u",
+            "w"
+          ]
+        ],
+        "pair_audits": [
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "u",
+              "w"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 1,
+                "factorization": "256*(3*b + 1)",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "degree_in_b": 1,
+                "factorization": "323584*(93*b + 40)",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  1,
+                  2
+                ],
+                "degree_in_b": 1,
+                "factorization": "-96*b",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  2
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "y",
+              "z",
+              "v"
+            ]
+          }
+        ],
+        "two_pivot_pairs": 1
+      },
       "certificate_kind": "exact_parent_family",
       "common_dual": 1,
       "composition_order": "cubic-quadratic",
@@ -7309,6 +9939,212 @@
     {
       "H1_source": 1,
       "H2_source": 0,
+      "affine_rank_audit": {
+        "coordinate_affine_pivot_dimension": 3,
+        "maximal_coordinate_affine_blocks": [
+          [
+            "y",
+            "u",
+            "w"
+          ]
+        ],
+        "pair_audits": [
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "y",
+              "u"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 2,
+                "factorization": "-768*(183*b**2 - 388*b - 48)",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "degree_in_b": 2,
+                "factorization": "-768*(393*b**2 + 716*b - 48)",
+                "point": [
+                  -1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  2,
+                  3
+                ],
+                "degree_in_b": 1,
+                "factorization": "128*(3*b - 8)",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  2,
+                  3
+                ]
+              },
+              {
+                "columns": [
+                  0,
+                  1,
+                  2
+                ],
+                "degree_in_b": 3,
+                "factorization": "-1152*b*(897*b**2 - 4*b - 3)",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  2
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "z",
+              "v",
+              "w"
+            ]
+          },
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "y",
+              "w"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 1,
+                "factorization": "1536*b",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  1,
+                  2
+                ],
+                "degree_in_b": 1,
+                "factorization": "96*b",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  2
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "z",
+              "u",
+              "v"
+            ]
+          },
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "u",
+              "w"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 2,
+                "factorization": "126720*b**2",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  1,
+                  3
+                ],
+                "degree_in_b": 1,
+                "factorization": "96*b",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  3
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "y",
+              "z",
+              "v"
+            ]
+          }
+        ],
+        "two_pivot_pairs": 3
+      },
       "certificate_kind": "exact_parent_family",
       "common_dual": 1,
       "composition_order": "cubic-quadratic",
@@ -7692,6 +10528,212 @@
     {
       "H1_source": 1,
       "H2_source": 0,
+      "affine_rank_audit": {
+        "coordinate_affine_pivot_dimension": 3,
+        "maximal_coordinate_affine_blocks": [
+          [
+            "y",
+            "u",
+            "w"
+          ]
+        ],
+        "pair_audits": [
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "y",
+              "u"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 2,
+                "factorization": "768*(8781*b**2 - 1508*b + 48)",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "degree_in_b": 2,
+                "factorization": "768*(1947*b**2 + 748*b + 48)",
+                "point": [
+                  -1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  2,
+                  3
+                ],
+                "degree_in_b": 1,
+                "factorization": "128*(3*b - 8)",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  2,
+                  3
+                ]
+              },
+              {
+                "columns": [
+                  0,
+                  1,
+                  2
+                ],
+                "degree_in_b": 3,
+                "factorization": "1152*b*(5439*b**2 - 128*b + 3)",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  2
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "z",
+              "v",
+              "w"
+            ]
+          },
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "y",
+              "w"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 1,
+                "factorization": "1536*b",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  1,
+                  2
+                ],
+                "degree_in_b": 1,
+                "factorization": "96*b",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  2
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "z",
+              "u",
+              "v"
+            ]
+          },
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "u",
+              "w"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 2,
+                "factorization": "-232704*b**2",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  1,
+                  3
+                ],
+                "degree_in_b": 1,
+                "factorization": "96*b",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  3
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "y",
+              "z",
+              "v"
+            ]
+          }
+        ],
+        "two_pivot_pairs": 3
+      },
       "certificate_kind": "exact_parent_family",
       "common_dual": 1,
       "composition_order": "cubic-quadratic",
@@ -8075,6 +11117,212 @@
     {
       "H1_source": 1,
       "H2_source": 0,
+      "affine_rank_audit": {
+        "coordinate_affine_pivot_dimension": 3,
+        "maximal_coordinate_affine_blocks": [
+          [
+            "y",
+            "u",
+            "w"
+          ]
+        ],
+        "pair_audits": [
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "y",
+              "u"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 2,
+                "factorization": "768*(8781*b**2 + 1508*b + 48)",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "degree_in_b": 2,
+                "factorization": "768*(1947*b**2 - 748*b + 48)",
+                "point": [
+                  -1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  2,
+                  3
+                ],
+                "degree_in_b": 1,
+                "factorization": "128*(3*b + 8)",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  2,
+                  3
+                ]
+              },
+              {
+                "columns": [
+                  0,
+                  1,
+                  2
+                ],
+                "degree_in_b": 3,
+                "factorization": "1152*b*(5439*b**2 + 128*b + 3)",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  2
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "z",
+              "v",
+              "w"
+            ]
+          },
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "y",
+              "w"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 1,
+                "factorization": "-1536*b",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  1,
+                  2
+                ],
+                "degree_in_b": 1,
+                "factorization": "96*b",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  2
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "z",
+              "u",
+              "v"
+            ]
+          },
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "u",
+              "w"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 2,
+                "factorization": "-232704*b**2",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  1,
+                  3
+                ],
+                "degree_in_b": 1,
+                "factorization": "96*b",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  3
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "y",
+              "z",
+              "v"
+            ]
+          }
+        ],
+        "two_pivot_pairs": 3
+      },
       "certificate_kind": "exact_parent_family",
       "common_dual": 1,
       "composition_order": "cubic-quadratic",
@@ -8458,6 +11706,212 @@
     {
       "H1_source": 1,
       "H2_source": 0,
+      "affine_rank_audit": {
+        "coordinate_affine_pivot_dimension": 3,
+        "maximal_coordinate_affine_blocks": [
+          [
+            "y",
+            "u",
+            "w"
+          ]
+        ],
+        "pair_audits": [
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "y",
+              "u"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 2,
+                "factorization": "-768*(183*b**2 + 388*b - 48)",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "degree_in_b": 2,
+                "factorization": "-768*(393*b**2 - 716*b - 48)",
+                "point": [
+                  -1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  2,
+                  3
+                ],
+                "degree_in_b": 1,
+                "factorization": "128*(3*b + 8)",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  2,
+                  3
+                ]
+              },
+              {
+                "columns": [
+                  0,
+                  1,
+                  2
+                ],
+                "degree_in_b": 3,
+                "factorization": "-1152*b*(897*b**2 + 4*b - 3)",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  2
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "z",
+              "v",
+              "w"
+            ]
+          },
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "y",
+              "w"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 1,
+                "factorization": "-1536*b",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  1,
+                  2
+                ],
+                "degree_in_b": 1,
+                "factorization": "96*b",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  2
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "z",
+              "u",
+              "v"
+            ]
+          },
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "u",
+              "w"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 2,
+                "factorization": "126720*b**2",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  1,
+                  3
+                ],
+                "degree_in_b": 1,
+                "factorization": "96*b",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  3
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "y",
+              "z",
+              "v"
+            ]
+          }
+        ],
+        "two_pivot_pairs": 3
+      },
       "certificate_kind": "exact_parent_family",
       "common_dual": 1,
       "composition_order": "cubic-quadratic",
@@ -8841,6 +12295,171 @@
     {
       "H1_source": 1,
       "H2_source": 1,
+      "affine_rank_audit": {
+        "coordinate_affine_pivot_dimension": 2,
+        "maximal_coordinate_affine_blocks": [
+          [
+            "u",
+            "w"
+          ]
+        ],
+        "pair_audits": [
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "u",
+              "w"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 2,
+                "factorization": "576*(12*b + 1)**2",
+                "point": [
+                  0,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "degree_in_b": 2,
+                "factorization": "576*(12*b - 1)**2",
+                "point": [
+                  0,
+                  -1,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  1,
+                  2
+                ],
+                "degree_in_b": 3,
+                "factorization": "72*(12*b + 1)**2*(36*b + 1)",
+                "point": [
+                  0,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  2
+                ]
+              },
+              {
+                "columns": [
+                  0,
+                  1,
+                  3
+                ],
+                "degree_in_b": 2,
+                "factorization": "-144*(12*b + 1)*(24*b - 1)",
+                "point": [
+                  0,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  2
+                ]
+              },
+              {
+                "columns": [
+                  0,
+                  2,
+                  3
+                ],
+                "degree_in_b": 3,
+                "factorization": "-72*(12*b + 1)**2*(36*b - 1)",
+                "point": [
+                  0,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  2
+                ]
+              },
+              {
+                "columns": [
+                  0,
+                  1,
+                  2
+                ],
+                "degree_in_b": 2,
+                "factorization": "-144*(12*b + 1)*(24*b - 1)",
+                "point": [
+                  0,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  3
+                ]
+              },
+              {
+                "columns": [
+                  0,
+                  1,
+                  3
+                ],
+                "degree_in_b": 1,
+                "factorization": "-72*(180*b + 31)",
+                "point": [
+                  0,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  3
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "y",
+              "z",
+              "v"
+            ]
+          }
+        ],
+        "two_pivot_pairs": 1
+      },
       "certificate_kind": "exact_parent_family",
       "common_dual": 1,
       "composition_order": "cubic-quadratic",
@@ -9084,6 +12703,171 @@
     {
       "H1_source": 1,
       "H2_source": 1,
+      "affine_rank_audit": {
+        "coordinate_affine_pivot_dimension": 2,
+        "maximal_coordinate_affine_blocks": [
+          [
+            "u",
+            "w"
+          ]
+        ],
+        "pair_audits": [
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "u",
+              "w"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 2,
+                "factorization": "576*(12*b - 1)**2",
+                "point": [
+                  0,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "degree_in_b": 2,
+                "factorization": "576*(12*b + 1)**2",
+                "point": [
+                  0,
+                  -1,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  1,
+                  2
+                ],
+                "degree_in_b": 3,
+                "factorization": "72*(12*b - 1)**2*(36*b - 1)",
+                "point": [
+                  0,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  2
+                ]
+              },
+              {
+                "columns": [
+                  0,
+                  1,
+                  3
+                ],
+                "degree_in_b": 2,
+                "factorization": "-144*(12*b - 1)*(24*b + 1)",
+                "point": [
+                  0,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  2
+                ]
+              },
+              {
+                "columns": [
+                  0,
+                  2,
+                  3
+                ],
+                "degree_in_b": 3,
+                "factorization": "72*(12*b - 1)**2*(36*b + 1)",
+                "point": [
+                  0,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  2
+                ]
+              },
+              {
+                "columns": [
+                  0,
+                  1,
+                  2
+                ],
+                "degree_in_b": 2,
+                "factorization": "-144*(12*b - 1)*(24*b + 1)",
+                "point": [
+                  0,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  3
+                ]
+              },
+              {
+                "columns": [
+                  0,
+                  1,
+                  3
+                ],
+                "degree_in_b": 1,
+                "factorization": "-72*(180*b - 31)",
+                "point": [
+                  0,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  3
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "y",
+              "z",
+              "v"
+            ]
+          }
+        ],
+        "two_pivot_pairs": 1
+      },
       "certificate_kind": "exact_parent_family",
       "common_dual": 1,
       "composition_order": "cubic-quadratic",
@@ -9327,6 +13111,202 @@
     {
       "H1_source": 1,
       "H2_source": 2,
+      "affine_rank_audit": {
+        "coordinate_affine_pivot_dimension": 3,
+        "maximal_coordinate_affine_blocks": [
+          [
+            "y",
+            "u",
+            "w"
+          ]
+        ],
+        "pair_audits": [
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "y",
+              "u"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 1,
+                "factorization": "12288*(16*b + 3)",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "degree_in_b": 1,
+                "factorization": "12288*(8*b + 3)",
+                "point": [
+                  -1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  2,
+                  3
+                ],
+                "degree_in_b": 0,
+                "factorization": "-1024",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  2,
+                  3
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "z",
+              "v",
+              "w"
+            ]
+          },
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "y",
+              "w"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 2,
+                "factorization": "9216*(b - 1)**2",
+                "point": [
+                  0,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "degree_in_b": 2,
+                "factorization": "9216*(5*b + 1)**2",
+                "point": [
+                  0,
+                  -1,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  1,
+                  2,
+                  3
+                ],
+                "degree_in_b": 0,
+                "factorization": "-256",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  1,
+                  2,
+                  3
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "z",
+              "u",
+              "v"
+            ]
+          },
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "u",
+              "w"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 0,
+                "factorization": "2304",
+                "point": [
+                  0,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  1,
+                  2,
+                  3
+                ],
+                "degree_in_b": 1,
+                "factorization": "12288*b",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  1,
+                  2,
+                  3
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "y",
+              "z",
+              "v"
+            ]
+          }
+        ],
+        "two_pivot_pairs": 3
+      },
       "certificate_kind": "exact_parent_family",
       "common_dual": 1,
       "composition_order": "cubic-quadratic",
@@ -9668,6 +13648,202 @@
     {
       "H1_source": 1,
       "H2_source": 2,
+      "affine_rank_audit": {
+        "coordinate_affine_pivot_dimension": 3,
+        "maximal_coordinate_affine_blocks": [
+          [
+            "y",
+            "u",
+            "w"
+          ]
+        ],
+        "pair_audits": [
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "y",
+              "u"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 1,
+                "factorization": "-12288*(8*b - 3)",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "degree_in_b": 1,
+                "factorization": "-12288*(16*b - 3)",
+                "point": [
+                  -1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  2,
+                  3
+                ],
+                "degree_in_b": 0,
+                "factorization": "-1024",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  2,
+                  3
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "z",
+              "v",
+              "w"
+            ]
+          },
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "y",
+              "w"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 2,
+                "factorization": "9216*(5*b - 1)**2",
+                "point": [
+                  0,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "degree_in_b": 2,
+                "factorization": "9216*(b + 1)**2",
+                "point": [
+                  0,
+                  -1,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  1,
+                  2,
+                  3
+                ],
+                "degree_in_b": 0,
+                "factorization": "-256",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  1,
+                  2,
+                  3
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "z",
+              "u",
+              "v"
+            ]
+          },
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "u",
+              "w"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 0,
+                "factorization": "2304",
+                "point": [
+                  0,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  1,
+                  2,
+                  3
+                ],
+                "degree_in_b": 1,
+                "factorization": "3072*b",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  1,
+                  2,
+                  3
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "y",
+              "z",
+              "v"
+            ]
+          }
+        ],
+        "two_pivot_pairs": 3
+      },
       "certificate_kind": "exact_parent_family",
       "common_dual": 1,
       "composition_order": "cubic-quadratic",
@@ -10009,6 +14185,202 @@
     {
       "H1_source": 1,
       "H2_source": 2,
+      "affine_rank_audit": {
+        "coordinate_affine_pivot_dimension": 3,
+        "maximal_coordinate_affine_blocks": [
+          [
+            "y",
+            "u",
+            "w"
+          ]
+        ],
+        "pair_audits": [
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "y",
+              "u"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 1,
+                "factorization": "12288*(8*b + 3)",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "degree_in_b": 1,
+                "factorization": "12288*(16*b + 3)",
+                "point": [
+                  -1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  2,
+                  3
+                ],
+                "degree_in_b": 0,
+                "factorization": "1024",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  2,
+                  3
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "z",
+              "v",
+              "w"
+            ]
+          },
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "y",
+              "w"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 2,
+                "factorization": "9216*(5*b + 1)**2",
+                "point": [
+                  0,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "degree_in_b": 2,
+                "factorization": "9216*(b - 1)**2",
+                "point": [
+                  0,
+                  -1,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  1,
+                  2,
+                  3
+                ],
+                "degree_in_b": 0,
+                "factorization": "256",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  1,
+                  2,
+                  3
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "z",
+              "u",
+              "v"
+            ]
+          },
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "u",
+              "w"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 0,
+                "factorization": "2304",
+                "point": [
+                  0,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  1,
+                  2,
+                  3
+                ],
+                "degree_in_b": 1,
+                "factorization": "3072*b",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  1,
+                  2,
+                  3
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "y",
+              "z",
+              "v"
+            ]
+          }
+        ],
+        "two_pivot_pairs": 3
+      },
       "certificate_kind": "exact_parent_family",
       "common_dual": 1,
       "composition_order": "cubic-quadratic",
@@ -10350,6 +14722,202 @@
     {
       "H1_source": 1,
       "H2_source": 2,
+      "affine_rank_audit": {
+        "coordinate_affine_pivot_dimension": 3,
+        "maximal_coordinate_affine_blocks": [
+          [
+            "y",
+            "u",
+            "w"
+          ]
+        ],
+        "pair_audits": [
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "y",
+              "u"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 1,
+                "factorization": "-12288*(16*b - 3)",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "degree_in_b": 1,
+                "factorization": "-12288*(8*b - 3)",
+                "point": [
+                  -1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  2,
+                  3
+                ],
+                "degree_in_b": 0,
+                "factorization": "1024",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  2,
+                  3
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "z",
+              "v",
+              "w"
+            ]
+          },
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "y",
+              "w"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 2,
+                "factorization": "9216*(b + 1)**2",
+                "point": [
+                  0,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "degree_in_b": 2,
+                "factorization": "9216*(5*b - 1)**2",
+                "point": [
+                  0,
+                  -1,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  1,
+                  2,
+                  3
+                ],
+                "degree_in_b": 0,
+                "factorization": "256",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  1,
+                  2,
+                  3
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "z",
+              "u",
+              "v"
+            ]
+          },
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "u",
+              "w"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 0,
+                "factorization": "2304",
+                "point": [
+                  0,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  1,
+                  2,
+                  3
+                ],
+                "degree_in_b": 1,
+                "factorization": "12288*b",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  1,
+                  2,
+                  3
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "y",
+              "z",
+              "v"
+            ]
+          }
+        ],
+        "two_pivot_pairs": 3
+      },
       "certificate_kind": "exact_parent_family",
       "common_dual": 1,
       "composition_order": "cubic-quadratic",
@@ -10691,6 +15259,71 @@
     {
       "H1_source": 2,
       "H2_source": 1,
+      "affine_rank_audit": {
+        "coordinate_affine_pivot_dimension": 2,
+        "maximal_coordinate_affine_blocks": [
+          [
+            "u",
+            "w"
+          ]
+        ],
+        "pair_audits": [
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "u",
+              "w"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 0,
+                "factorization": "1024",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  2,
+                  3
+                ],
+                "degree_in_b": 0,
+                "factorization": "256",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  2
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "y",
+              "z",
+              "v"
+            ]
+          }
+        ],
+        "two_pivot_pairs": 1
+      },
       "certificate_kind": "exact_parent_family",
       "common_dual": 1,
       "composition_order": "cubic-quadratic",
@@ -11032,6 +15665,71 @@
     {
       "H1_source": 2,
       "H2_source": 1,
+      "affine_rank_audit": {
+        "coordinate_affine_pivot_dimension": 2,
+        "maximal_coordinate_affine_blocks": [
+          [
+            "u",
+            "w"
+          ]
+        ],
+        "pair_audits": [
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "u",
+              "w"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 0,
+                "factorization": "1024",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  2,
+                  3
+                ],
+                "degree_in_b": 0,
+                "factorization": "256",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  2
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "y",
+              "z",
+              "v"
+            ]
+          }
+        ],
+        "two_pivot_pairs": 1
+      },
       "certificate_kind": "exact_parent_family",
       "common_dual": 1,
       "composition_order": "cubic-quadratic",
@@ -11373,6 +16071,71 @@
     {
       "H1_source": 2,
       "H2_source": 1,
+      "affine_rank_audit": {
+        "coordinate_affine_pivot_dimension": 2,
+        "maximal_coordinate_affine_blocks": [
+          [
+            "u",
+            "w"
+          ]
+        ],
+        "pair_audits": [
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "u",
+              "w"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 0,
+                "factorization": "1024",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  2,
+                  3
+                ],
+                "degree_in_b": 0,
+                "factorization": "256",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  2
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "y",
+              "z",
+              "v"
+            ]
+          }
+        ],
+        "two_pivot_pairs": 1
+      },
       "certificate_kind": "exact_parent_family",
       "common_dual": 1,
       "composition_order": "cubic-quadratic",
@@ -11714,6 +16477,71 @@
     {
       "H1_source": 2,
       "H2_source": 1,
+      "affine_rank_audit": {
+        "coordinate_affine_pivot_dimension": 2,
+        "maximal_coordinate_affine_blocks": [
+          [
+            "u",
+            "w"
+          ]
+        ],
+        "pair_audits": [
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "u",
+              "w"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 0,
+                "factorization": "1024",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  2,
+                  3
+                ],
+                "degree_in_b": 0,
+                "factorization": "256",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  2
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "y",
+              "z",
+              "v"
+            ]
+          }
+        ],
+        "two_pivot_pairs": 1
+      },
       "certificate_kind": "exact_parent_family",
       "common_dual": 1,
       "composition_order": "cubic-quadratic",
@@ -12055,6 +16883,105 @@
     {
       "H1_source": 0,
       "H2_source": 2,
+      "affine_rank_audit": {
+        "coordinate_affine_pivot_dimension": 2,
+        "maximal_coordinate_affine_blocks": [
+          [
+            "u",
+            "v"
+          ]
+        ],
+        "pair_audits": [
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "u",
+              "v"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 1,
+                "factorization": "1792*(27*b - 1)",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "degree_in_b": 1,
+                "factorization": "-2304*(843*b - 49)",
+                "point": [
+                  -1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  2,
+                  3
+                ],
+                "degree_in_b": 1,
+                "factorization": "-32*(3*b + 8)",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  2,
+                  3
+                ]
+              },
+              {
+                "columns": [
+                  0,
+                  1,
+                  2
+                ],
+                "degree_in_b": 1,
+                "factorization": "-32*(159*b - 44)",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  2
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "y",
+              "z",
+              "w"
+            ]
+          }
+        ],
+        "two_pivot_pairs": 1
+      },
       "certificate_kind": "exact_parent_family",
       "common_dual": 2,
       "composition_order": "cubic-quadratic",
@@ -12438,6 +17365,105 @@
     {
       "H1_source": 0,
       "H2_source": 2,
+      "affine_rank_audit": {
+        "coordinate_affine_pivot_dimension": 2,
+        "maximal_coordinate_affine_blocks": [
+          [
+            "u",
+            "v"
+          ]
+        ],
+        "pair_audits": [
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "u",
+              "v"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 1,
+                "factorization": "2304*(843*b + 49)",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "degree_in_b": 1,
+                "factorization": "-1792*(27*b + 1)",
+                "point": [
+                  -1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  2,
+                  3
+                ],
+                "degree_in_b": 1,
+                "factorization": "32*(3*b - 8)",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  2,
+                  3
+                ]
+              },
+              {
+                "columns": [
+                  0,
+                  1,
+                  2
+                ],
+                "degree_in_b": 1,
+                "factorization": "32*(2295*b + 76)",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  2
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "y",
+              "z",
+              "w"
+            ]
+          }
+        ],
+        "two_pivot_pairs": 1
+      },
       "certificate_kind": "exact_parent_family",
       "common_dual": 2,
       "composition_order": "cubic-quadratic",
@@ -12821,6 +17847,105 @@
     {
       "H1_source": 0,
       "H2_source": 2,
+      "affine_rank_audit": {
+        "coordinate_affine_pivot_dimension": 2,
+        "maximal_coordinate_affine_blocks": [
+          [
+            "u",
+            "v"
+          ]
+        ],
+        "pair_audits": [
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "u",
+              "v"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 1,
+                "factorization": "-2304*(843*b - 49)",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "degree_in_b": 1,
+                "factorization": "1792*(27*b - 1)",
+                "point": [
+                  -1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  2,
+                  3
+                ],
+                "degree_in_b": 1,
+                "factorization": "32*(3*b + 8)",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  2,
+                  3
+                ]
+              },
+              {
+                "columns": [
+                  0,
+                  1,
+                  2
+                ],
+                "degree_in_b": 1,
+                "factorization": "32*(2295*b - 76)",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  2
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "y",
+              "z",
+              "w"
+            ]
+          }
+        ],
+        "two_pivot_pairs": 1
+      },
       "certificate_kind": "exact_parent_family",
       "common_dual": 2,
       "composition_order": "cubic-quadratic",
@@ -13204,6 +18329,105 @@
     {
       "H1_source": 0,
       "H2_source": 2,
+      "affine_rank_audit": {
+        "coordinate_affine_pivot_dimension": 2,
+        "maximal_coordinate_affine_blocks": [
+          [
+            "u",
+            "v"
+          ]
+        ],
+        "pair_audits": [
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "u",
+              "v"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 1,
+                "factorization": "-1792*(27*b + 1)",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "degree_in_b": 1,
+                "factorization": "2304*(843*b + 49)",
+                "point": [
+                  -1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  2,
+                  3
+                ],
+                "degree_in_b": 1,
+                "factorization": "-32*(3*b - 8)",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  2,
+                  3
+                ]
+              },
+              {
+                "columns": [
+                  0,
+                  1,
+                  2
+                ],
+                "degree_in_b": 1,
+                "factorization": "-32*(159*b + 44)",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  2
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "y",
+              "z",
+              "w"
+            ]
+          }
+        ],
+        "two_pivot_pairs": 1
+      },
       "certificate_kind": "exact_parent_family",
       "common_dual": 2,
       "composition_order": "cubic-quadratic",
@@ -13587,6 +18811,83 @@
     {
       "H1_source": 1,
       "H2_source": 2,
+      "affine_rank_audit": {
+        "coordinate_affine_pivot_dimension": 2,
+        "maximal_coordinate_affine_blocks": [
+          [
+            "u",
+            "v"
+          ]
+        ],
+        "pair_audits": [
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "u",
+              "v"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 1,
+                "factorization": "3072*(32*b + 3)",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "degree_in_b": 1,
+                "factorization": "3072*(16*b + 3)",
+                "point": [
+                  -1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  1,
+                  3
+                ],
+                "degree_in_b": 0,
+                "factorization": "-512",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  3
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "y",
+              "z",
+              "w"
+            ]
+          }
+        ],
+        "two_pivot_pairs": 1
+      },
       "certificate_kind": "exact_parent_family",
       "common_dual": 2,
       "composition_order": "cubic-quadratic",
@@ -13774,6 +19075,83 @@
     {
       "H1_source": 1,
       "H2_source": 2,
+      "affine_rank_audit": {
+        "coordinate_affine_pivot_dimension": 2,
+        "maximal_coordinate_affine_blocks": [
+          [
+            "u",
+            "v"
+          ]
+        ],
+        "pair_audits": [
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "u",
+              "v"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 1,
+                "factorization": "3072*(16*b + 3)",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "degree_in_b": 1,
+                "factorization": "3072*(32*b + 3)",
+                "point": [
+                  -1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  1,
+                  3
+                ],
+                "degree_in_b": 0,
+                "factorization": "512",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  3
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "y",
+              "z",
+              "w"
+            ]
+          }
+        ],
+        "two_pivot_pairs": 1
+      },
       "certificate_kind": "exact_parent_family",
       "common_dual": 2,
       "composition_order": "cubic-quadratic",
@@ -13961,6 +19339,83 @@
     {
       "H1_source": 1,
       "H2_source": 2,
+      "affine_rank_audit": {
+        "coordinate_affine_pivot_dimension": 2,
+        "maximal_coordinate_affine_blocks": [
+          [
+            "u",
+            "v"
+          ]
+        ],
+        "pair_audits": [
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "u",
+              "v"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 1,
+                "factorization": "-3072*(16*b - 3)",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "degree_in_b": 1,
+                "factorization": "-3072*(32*b - 3)",
+                "point": [
+                  -1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  1,
+                  3
+                ],
+                "degree_in_b": 0,
+                "factorization": "-512",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  3
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "y",
+              "z",
+              "w"
+            ]
+          }
+        ],
+        "two_pivot_pairs": 1
+      },
       "certificate_kind": "exact_parent_family",
       "common_dual": 2,
       "composition_order": "cubic-quadratic",
@@ -14148,6 +19603,83 @@
     {
       "H1_source": 1,
       "H2_source": 2,
+      "affine_rank_audit": {
+        "coordinate_affine_pivot_dimension": 2,
+        "maximal_coordinate_affine_blocks": [
+          [
+            "u",
+            "v"
+          ]
+        ],
+        "pair_audits": [
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "u",
+              "v"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 1,
+                "factorization": "-3072*(32*b - 3)",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "degree_in_b": 1,
+                "factorization": "-3072*(16*b - 3)",
+                "point": [
+                  -1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  1,
+                  3
+                ],
+                "degree_in_b": 0,
+                "factorization": "512",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  3
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "y",
+              "z",
+              "w"
+            ]
+          }
+        ],
+        "two_pivot_pairs": 1
+      },
       "certificate_kind": "exact_parent_family",
       "common_dual": 2,
       "composition_order": "cubic-quadratic",
@@ -14335,6 +19867,190 @@
     {
       "H1_source": 2,
       "H2_source": 0,
+      "affine_rank_audit": {
+        "coordinate_affine_pivot_dimension": 3,
+        "maximal_coordinate_affine_blocks": [
+          [
+            "z",
+            "u",
+            "v"
+          ]
+        ],
+        "pair_audits": [
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "z",
+              "u"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 1,
+                "factorization": "1024*(3*b + 4)",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "degree_in_b": 2,
+                "factorization": "256*(12285*b**2 - 588*b + 16)",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  1,
+                  2
+                ],
+                "degree_in_b": 1,
+                "factorization": "96*b",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  2
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "y",
+              "v",
+              "w"
+            ]
+          },
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "z",
+              "v"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 2,
+                "factorization": "543744*b**2",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  2,
+                  3
+                ],
+                "degree_in_b": 1,
+                "factorization": "96*b",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  2,
+                  3
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "y",
+              "u",
+              "w"
+            ]
+          },
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "u",
+              "v"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 2,
+                "factorization": "2375424*b**2",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  2,
+                  3
+                ],
+                "degree_in_b": 1,
+                "factorization": "384*b",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  2,
+                  3
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "y",
+              "z",
+              "w"
+            ]
+          }
+        ],
+        "two_pivot_pairs": 3
+      },
       "certificate_kind": "exact_parent_family",
       "common_dual": 2,
       "composition_order": "cubic-quadratic",
@@ -14718,6 +20434,190 @@
     {
       "H1_source": 2,
       "H2_source": 0,
+      "affine_rank_audit": {
+        "coordinate_affine_pivot_dimension": 3,
+        "maximal_coordinate_affine_blocks": [
+          [
+            "z",
+            "u",
+            "v"
+          ]
+        ],
+        "pair_audits": [
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "z",
+              "u"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 1,
+                "factorization": "-1024*(3*b - 4)",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "degree_in_b": 2,
+                "factorization": "256*(4869*b**2 + 204*b + 16)",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  1,
+                  2
+                ],
+                "degree_in_b": 1,
+                "factorization": "96*b",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  2
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "y",
+              "v",
+              "w"
+            ]
+          },
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "z",
+              "v"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 2,
+                "factorization": "101376*b**2",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  2,
+                  3
+                ],
+                "degree_in_b": 1,
+                "factorization": "96*b",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  2,
+                  3
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "y",
+              "u",
+              "w"
+            ]
+          },
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "u",
+              "v"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 2,
+                "factorization": "670464*b**2",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  2,
+                  3
+                ],
+                "degree_in_b": 1,
+                "factorization": "384*b",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  2,
+                  3
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "y",
+              "z",
+              "w"
+            ]
+          }
+        ],
+        "two_pivot_pairs": 3
+      },
       "certificate_kind": "exact_parent_family",
       "common_dual": 2,
       "composition_order": "cubic-quadratic",
@@ -15101,6 +21001,190 @@
     {
       "H1_source": 2,
       "H2_source": 0,
+      "affine_rank_audit": {
+        "coordinate_affine_pivot_dimension": 3,
+        "maximal_coordinate_affine_blocks": [
+          [
+            "z",
+            "u",
+            "v"
+          ]
+        ],
+        "pair_audits": [
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "z",
+              "u"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 1,
+                "factorization": "1024*(3*b + 4)",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "degree_in_b": 2,
+                "factorization": "256*(4869*b**2 - 204*b + 16)",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  1,
+                  2
+                ],
+                "degree_in_b": 1,
+                "factorization": "96*b",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  2
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "y",
+              "v",
+              "w"
+            ]
+          },
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "z",
+              "v"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 2,
+                "factorization": "101376*b**2",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  2,
+                  3
+                ],
+                "degree_in_b": 1,
+                "factorization": "96*b",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  2,
+                  3
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "y",
+              "u",
+              "w"
+            ]
+          },
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "u",
+              "v"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 2,
+                "factorization": "670464*b**2",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  2,
+                  3
+                ],
+                "degree_in_b": 1,
+                "factorization": "384*b",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  2,
+                  3
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "y",
+              "z",
+              "w"
+            ]
+          }
+        ],
+        "two_pivot_pairs": 3
+      },
       "certificate_kind": "exact_parent_family",
       "common_dual": 2,
       "composition_order": "cubic-quadratic",
@@ -15484,6 +21568,190 @@
     {
       "H1_source": 2,
       "H2_source": 0,
+      "affine_rank_audit": {
+        "coordinate_affine_pivot_dimension": 3,
+        "maximal_coordinate_affine_blocks": [
+          [
+            "z",
+            "u",
+            "v"
+          ]
+        ],
+        "pair_audits": [
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "z",
+              "u"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 1,
+                "factorization": "-1024*(3*b - 4)",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "degree_in_b": 2,
+                "factorization": "256*(12285*b**2 + 588*b + 16)",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  1,
+                  2
+                ],
+                "degree_in_b": 1,
+                "factorization": "96*b",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  2
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "y",
+              "v",
+              "w"
+            ]
+          },
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "z",
+              "v"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 2,
+                "factorization": "543744*b**2",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  2,
+                  3
+                ],
+                "degree_in_b": 1,
+                "factorization": "96*b",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  2,
+                  3
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "y",
+              "u",
+              "w"
+            ]
+          },
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "u",
+              "v"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 2,
+                "factorization": "2375424*b**2",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  2,
+                  3
+                ],
+                "degree_in_b": 1,
+                "factorization": "384*b",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  2,
+                  3
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "y",
+              "z",
+              "w"
+            ]
+          }
+        ],
+        "two_pivot_pairs": 3
+      },
       "certificate_kind": "exact_parent_family",
       "common_dual": 2,
       "composition_order": "cubic-quadratic",
@@ -15867,6 +22135,190 @@
     {
       "H1_source": 2,
       "H2_source": 1,
+      "affine_rank_audit": {
+        "coordinate_affine_pivot_dimension": 3,
+        "maximal_coordinate_affine_blocks": [
+          [
+            "z",
+            "u",
+            "v"
+          ]
+        ],
+        "pair_audits": [
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "z",
+              "u"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 0,
+                "factorization": "4096",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  1,
+                  2,
+                  3
+                ],
+                "degree_in_b": 0,
+                "factorization": "-256",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  2
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "y",
+              "v",
+              "w"
+            ]
+          },
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "z",
+              "v"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 2,
+                "factorization": "4096*(17505*b**2 + 1761*b + 64)",
+                "point": [
+                  0,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "degree_in_b": 2,
+                "factorization": "4096*(9639*b**2 - 1407*b + 64)",
+                "point": [
+                  0,
+                  -1,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  1,
+                  3
+                ],
+                "degree_in_b": 1,
+                "factorization": "-12288*b",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  3
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "y",
+              "u",
+              "w"
+            ]
+          },
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "u",
+              "v"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 2,
+                "factorization": "36864*b**2",
+                "point": [
+                  0,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  1,
+                  2
+                ],
+                "degree_in_b": 1,
+                "factorization": "-3072*b",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  2
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "y",
+              "z",
+              "w"
+            ]
+          }
+        ],
+        "two_pivot_pairs": 3
+      },
       "certificate_kind": "exact_parent_family",
       "common_dual": 2,
       "composition_order": "cubic-quadratic",
@@ -16054,6 +22506,190 @@
     {
       "H1_source": 2,
       "H2_source": 1,
+      "affine_rank_audit": {
+        "coordinate_affine_pivot_dimension": 3,
+        "maximal_coordinate_affine_blocks": [
+          [
+            "z",
+            "u",
+            "v"
+          ]
+        ],
+        "pair_audits": [
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "z",
+              "u"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 0,
+                "factorization": "4096",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  1,
+                  2,
+                  3
+                ],
+                "degree_in_b": 0,
+                "factorization": "-256",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  2
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "y",
+              "v",
+              "w"
+            ]
+          },
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "z",
+              "v"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 2,
+                "factorization": "2048*(39627*b**2 - 4158*b + 128)",
+                "point": [
+                  0,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "degree_in_b": 2,
+                "factorization": "2048*(70407*b**2 + 5250*b + 128)",
+                "point": [
+                  0,
+                  -1,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  1,
+                  3
+                ],
+                "degree_in_b": 1,
+                "factorization": "12288*b",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  3
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "y",
+              "u",
+              "w"
+            ]
+          },
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "u",
+              "v"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 2,
+                "factorization": "36864*b**2",
+                "point": [
+                  0,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  1,
+                  2
+                ],
+                "degree_in_b": 1,
+                "factorization": "3072*b",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  2
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "y",
+              "z",
+              "w"
+            ]
+          }
+        ],
+        "two_pivot_pairs": 3
+      },
       "certificate_kind": "exact_parent_family",
       "common_dual": 2,
       "composition_order": "cubic-quadratic",
@@ -16241,6 +22877,190 @@
     {
       "H1_source": 2,
       "H2_source": 1,
+      "affine_rank_audit": {
+        "coordinate_affine_pivot_dimension": 3,
+        "maximal_coordinate_affine_blocks": [
+          [
+            "z",
+            "u",
+            "v"
+          ]
+        ],
+        "pair_audits": [
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "z",
+              "u"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 0,
+                "factorization": "4096",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  1,
+                  2,
+                  3
+                ],
+                "degree_in_b": 0,
+                "factorization": "-256",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  2
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "y",
+              "v",
+              "w"
+            ]
+          },
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "z",
+              "v"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 2,
+                "factorization": "2048*(39627*b**2 + 4158*b + 128)",
+                "point": [
+                  0,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "degree_in_b": 2,
+                "factorization": "2048*(70407*b**2 - 5250*b + 128)",
+                "point": [
+                  0,
+                  -1,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  1,
+                  3
+                ],
+                "degree_in_b": 1,
+                "factorization": "12288*b",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  3
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "y",
+              "u",
+              "w"
+            ]
+          },
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "u",
+              "v"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 2,
+                "factorization": "36864*b**2",
+                "point": [
+                  0,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  1,
+                  2
+                ],
+                "degree_in_b": 1,
+                "factorization": "3072*b",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  2
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "y",
+              "z",
+              "w"
+            ]
+          }
+        ],
+        "two_pivot_pairs": 3
+      },
       "certificate_kind": "exact_parent_family",
       "common_dual": 2,
       "composition_order": "cubic-quadratic",
@@ -16428,6 +23248,190 @@
     {
       "H1_source": 2,
       "H2_source": 1,
+      "affine_rank_audit": {
+        "coordinate_affine_pivot_dimension": 3,
+        "maximal_coordinate_affine_blocks": [
+          [
+            "z",
+            "u",
+            "v"
+          ]
+        ],
+        "pair_audits": [
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "z",
+              "u"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 0,
+                "factorization": "4096",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  1,
+                  2,
+                  3
+                ],
+                "degree_in_b": 0,
+                "factorization": "-256",
+                "point": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  2
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "y",
+              "v",
+              "w"
+            ]
+          },
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "z",
+              "v"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 2,
+                "factorization": "4096*(17505*b**2 - 1761*b + 64)",
+                "point": [
+                  0,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "degree_in_b": 2,
+                "factorization": "4096*(9639*b**2 + 1407*b + 64)",
+                "point": [
+                  0,
+                  -1,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  1,
+                  3
+                ],
+                "degree_in_b": 1,
+                "factorization": "-12288*b",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  3
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "y",
+              "u",
+              "w"
+            ]
+          },
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "u",
+              "v"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 2,
+                "factorization": "36864*b**2",
+                "point": [
+                  0,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  1,
+                  2
+                ],
+                "degree_in_b": 1,
+                "factorization": "-3072*b",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  1,
+                  2
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "y",
+              "z",
+              "w"
+            ]
+          }
+        ],
+        "two_pivot_pairs": 3
+      },
       "certificate_kind": "exact_parent_family",
       "common_dual": 2,
       "composition_order": "cubic-quadratic",
@@ -16615,6 +23619,83 @@
     {
       "H1_source": 2,
       "H2_source": 2,
+      "affine_rank_audit": {
+        "coordinate_affine_pivot_dimension": 2,
+        "maximal_coordinate_affine_blocks": [
+          [
+            "u",
+            "v"
+          ]
+        ],
+        "pair_audits": [
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "u",
+              "v"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 2,
+                "factorization": "576*(12*b + 1)*(732*b + 1)",
+                "point": [
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "degree_in_b": 2,
+                "factorization": "5184*(4*b - 1)*(244*b - 1)",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  2,
+                  3
+                ],
+                "degree_in_b": 1,
+                "factorization": "24576*b",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  2,
+                  3
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "y",
+              "z",
+              "w"
+            ]
+          }
+        ],
+        "two_pivot_pairs": 1
+      },
       "certificate_kind": "exact_parent_family",
       "common_dual": 2,
       "composition_order": "cubic-quadratic",
@@ -16732,6 +23813,83 @@
     {
       "H1_source": 2,
       "H2_source": 2,
+      "affine_rank_audit": {
+        "coordinate_affine_pivot_dimension": 2,
+        "maximal_coordinate_affine_blocks": [
+          [
+            "u",
+            "v"
+          ]
+        ],
+        "pair_audits": [
+          {
+            "generic_corank_for_every_b_nonzero": 0,
+            "generic_rank_four_for_every_b_nonzero": true,
+            "pivots": [
+              "u",
+              "v"
+            ],
+            "rank_at_least_three_for_every_b_nonzero": true,
+            "rank_four_certificate": [
+              {
+                "degree_in_b": 2,
+                "factorization": "576*(12*b - 1)*(732*b - 1)",
+                "point": [
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "degree_in_b": 2,
+                "factorization": "5184*(4*b - 1)*(884*b - 1)",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "rank_three_certificate": [
+              {
+                "columns": [
+                  0,
+                  2,
+                  3
+                ],
+                "degree_in_b": 1,
+                "factorization": "24576*b",
+                "point": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "rows": [
+                  0,
+                  2,
+                  3
+                ]
+              }
+            ],
+            "retained": [
+              "x",
+              "y",
+              "z",
+              "w"
+            ]
+          }
+        ],
+        "two_pivot_pairs": 1
+      },
       "certificate_kind": "exact_parent_family",
       "common_dual": 2,
       "composition_order": "cubic-quadratic",
@@ -16884,6 +24042,8 @@
     "parent_probe_survivors": 54,
     "parent_survivors": 54,
     "patterns": 54,
-    "reduced_rank_audits_needed_after_parent_gate": 54
+    "rank_four_two_pivot_pairs": 102,
+    "reduced_rank_audits_needed_after_parent_gate": 54,
+    "two_pivot_pairs": 102
   }
 }

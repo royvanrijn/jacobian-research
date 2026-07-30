@@ -44,7 +44,7 @@ best-known or priority claims.
 
 | minimum | lower bound | upper bound | upper witness |
 |---|---:|---:|---|
-| \(n_{\rm cub}\) | **5** | 21 | 21-variable essential BCW quotient |
+| \(n_{\rm cub}\) | **5** | **20** | pinned external MacFarlane \(G_{20}\) certificate |
 | \(r_{\rm cub}\) | 3 | **17** | 24-variable circuit-level BCW quotient |
 | \(\nu_{\rm cub}\) | 3 | **18** | 22-variable circuit-level BCW quotient |
 | \(\rho_{\rm cot}\) | **6** | **37** | 44-variable circuit cotangent/HN lift |
@@ -66,7 +66,7 @@ into the four displayed above:
 |---|---:|---|
 | \(n_{\rm Dru}\) | \(6\le n_{\rm Dru}\le451\) | noninjective Drużkowski maps |
 | \(\rho_{\rm HN,4}\) | \(3\le\rho_{\rm HN,4}\le37\) | unrestricted homogeneous quartic HN counterexamples |
-| \(n_{\rm HN,4}\) | \(6\le n_{\rm HN,4}\le42\) | unrestricted homogeneous quartic HN counterexamples |
+| \(n_{\rm HN,4}\) | \(6\le n_{\rm HN,4}\le40\) | unrestricted homogeneous quartic HN counterexamples |
 
 For \(n_{\rm Dru}\), the lower bound follows from Drużkowski's theorem for
 rank or corank below three, while the upper bound is the repository's
@@ -113,6 +113,12 @@ rank three, `(JH)^3=0`, and inverse degree thirteen.  The exact certificate is
 Its nonzero degree-eleven inverse term realizes the previously unresolved
 tree class; this is a degree-bound counterexample, not a noninvertible Keller
 map.
+
+The dimension-20 upper endpoint uses MacFarlane's external determinant
+certificate together with the repository's exact reconstruction of its
+collision and backward construction.  The 21-variable essential BCW
+quotient remains the smallest internally generated witness with a
+dependency-free independent replay.
 
 ## 2. Circuit changes lower the exact rank and index
 
@@ -231,9 +237,10 @@ Consequently
 \]
 
 The rank-17 witness is the stronger repository rank endpoint; the 22-variable
-rank-18 witness is the smaller construction attaining index 18.  Neither
-supersedes the 21-variable witness as the smallest ambient cubic
-counterexample currently certified in this repository.
+rank-18 witness is the smaller internal construction attaining index 18.
+Neither supersedes MacFarlane's externally certified dimension-20 endpoint;
+the 21-variable witness remains the smallest internal independently replayed
+ambient construction.
 
 ## 3. Circuit search and power-rank objective
 
@@ -249,7 +256,11 @@ implements the search representation required by the new frontier:
    power-rank tuple of `J(F-id)`;
 7. only at a terminal state perform rank-compressed homogenization;
 8. iterate constant-kernel quotients to a fixed point;
-9. score the quotient by cubic rank/index and cotangent-Hessian rank, then
+9. retain the terminal when at least one exact collision pair remains
+   distinct, rather than requiring all three stored points to survive;
+10. record separate direct degree-three and raw cubic-homogeneous dimension
+   keys and emit separate terminal archives before scoring the quotient by
+   cubic rank/index and cotangent-Hessian rank, then
    sample powers after the orthogonal HN change.
 
 The partial key puts maximum residual degree first, followed by
@@ -287,6 +298,16 @@ and independent replay in Section 4.  Its retained discovery record is
 All finite-field search values remain diagnostics.  Only the frozen
 generators and independent replays promote winning profiles to exact
 statements.
+
+The backward-dimension ledger is deliberately independent of this Pareto
+archive.  Auditing thirteen retained representatives from ten active search
+records gives best direct key `(18,26,7)`, best raw-homogeneous key
+`(26,18,7)`, and best post-kernel dimension `22`.  Exact reconstruction of
+the best direct and best post-kernel representatives preserves all three
+collision pairs.  Since the historical representatives were selected by
+rank/index/Hessian objectives, this is not a lower bound for the direct
+dimension search.  The audit and the corrected terminal policy are in
+[`BACKWARD_CUBIC_REDUCTION.md`](BACKWARD_CUBIC_REDUCTION.md).
 
 The next bounded circuit library tests three non-equivalent gate
 factorizations:
@@ -369,8 +390,13 @@ has Hessian
  \end{pmatrix}.
 \]
 
-The existing 21-variable witness retains the repository-certified ambient
-bound `n_HN,4<=42` and has exact generic Hessian rank 38.  A different
+The homogeneous cotangent lift of MacFarlane \(G_{20}\) originally improved
+the ambient bound to `n_HN,4<=40`, conditional only on the pinned external
+determinant certificate already used for \(n_{\rm cub}\le20\).  The later
+[coordinate-pair reduction](../verified/TWELVE_VARIABLE_DEGREE_THREE_KELLER_COUNTEREXAMPLE.md)
+supersedes these ambient endpoints by `n_cub<=19` and `n_HN,4<=38`.  The internal
+21-variable witness still gives an independently replayed dimension-42
+quartic with exact generic Hessian rank 38.  A different
 two-atom circuit lowers the repository's rank upper endpoint.  It exposes the
 `qb` and `x2s`
 atoms, reaches a 19-variable quadratic--cubic map of cubic-output rank eight,
@@ -497,6 +523,7 @@ python3 scripts/audit_rank_reduced_bcw_24_independent.py
 .venv/bin/python scripts/verify_hessian_rank_reduced_bcw_22_route.py
 python3 scripts/audit_hessian_rank_reduced_bcw_22_independent.py
 .venv/bin/python scripts/verify_restricted_minima_frontier.py
+make verify-backward-cubic-reduction
 ```
 
 The broad discovery search is intentionally much slower than the frozen

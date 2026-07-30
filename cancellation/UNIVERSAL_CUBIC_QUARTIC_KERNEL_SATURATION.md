@@ -2,19 +2,28 @@
 
 ## Status
 
-The full 24-parameter question is open.  No exceptional parameter has been
-found, but the calculations below do not prove that the exceptional locus is
-empty.
+The full 24-parameter relative-cotangent saturation question for the smooth
+cubic symbol is proved.  The proof is a formal-gauge certificate, not a full
+27-variable saturation:
+
+\[
+ H^0_{(x,y,z)}(\Omega_{B/R})=0.
+\]
+
+Consequently the universal annihilator equals the canonical different and
+the actual-support Fittings are
+\(\operatorname{Fitt}_6=(1)\) and
+\(\operatorname{Fitt}_5=(0)\).
 
 This note separates three levels which must not be conflated:
 
 1. exact polynomial-family calculations on specified parameter subspaces;
 2. exact calculations at isolated dense parameter points;
-3. the unresolved calculation over
+3. the universal formal-gauge calculation over
    \(\mathbb Q[u_1,\ldots,u_{24},x,y,z]\).
 
-Only the first level gives a flatness statement for every point of a tested
-subspace.
+The earlier subspace calculations remain useful independent checks.  The
+universal theorem is supplied by Section 5 below.
 
 ## 1. Universal family
 
@@ -60,7 +69,7 @@ and
  E=\operatorname{Ext}^2_R(T,R).                    \tag{1.2}
 \]
 
-The desired universal theorem is:
+The universal theorem is:
 
 \[
 \begin{aligned}
@@ -78,12 +87,9 @@ For the finite \(S\)-module obtained from the verified
  \operatorname{Fitt}_5^S(E)=(0).                   \tag{1.4}
 \]
 
-Thus the parameter exceptional locus is scheme-theoretically contained in
-the union of the nonunit locus of \(\operatorname{Fitt}_6^S(E)\), the
-support of \(\operatorname{Fitt}_5^S(E)\), the parameter projection of the
-cotangent-saturation quotient, and the locus where the radical in (1.3)
-changes.  Computing those ideals over all 24 parameters is the unresolved
-discriminant calculation.
+The first equality is proved in Section 5.  The canonical-different
+calculation then supplies the last two assertions without a separate
+parameter-discriminant elimination.
 
 ## 2. Exact full-support planes and lines
 
@@ -194,7 +200,559 @@ its support can convert higher-order relations into new low-order
 syzygies.  Any exceptional locus must therefore enter through this
 syzygy-lifting step, rather than through the raw two-jet.
 
-## 5. Canonical-different complex and the Fitting reduction
+### 4.1 The first filtered syzygy frontier
+
+The central reduced \(6\)-by-\(25\) presentation can be resolved exactly.
+For the smooth symbol, Singular produces a minimal cokernel resolution
+
+\[
+ 0\longrightarrow R_0^7\longrightarrow R_0^{13}
+ \longrightarrow R_0^6\longrightarrow\Omega_0\longrightarrow0,
+\qquad R_0=\mathbb Q[x,y,z].
+\tag{4.3}
+\]
+
+Thus \(\operatorname{pd}_{R_0}\Omega_0\leq2\), and the exact colon test
+shows that \(x+y+z\) is \(\Omega_0\)-regular.  If either this resolution or
+this regular element lifted over
+\(\mathbb Q[u_1,\ldots,u_{24},x,y,z]\), the universal saturation would
+follow by Auslander--Buchsbaum or directly by the regular-element
+criterion.
+
+There is, however, a nontrivial finite syzygy correction before that
+argument can be made.  After unit pruning, the 150 matrix entries have the
+following pairs
+
+\[
+(\text{central collision order},\text{perturbation collision order}):
+\]
+
+\[
+\begin{array}{c|c}
+\text{pair}&\text{entry count}\\ \hline
+(1,\infty)&15\\
+(2,3)&30\\
+(3,4)&12\\
+(4,5)&51\\
+(\infty,3)&21\\
+(\infty,4)&6\\
+(\infty,5)&3\\
+(\infty,\infty)&12.
+\end{array}
+\tag{4.4}
+\]
+
+Here \(\infty\) denotes a zero entry.  Hence every perturbation of a
+nonzero central entry strictly raises collision order.  Nevertheless, let
+\(S_0\) be the exact 24-column syzygy module of the central
+\(6\)-by-\(25\) input and let \(D_{\mathrm{univ}}\) be the universal
+matrix.  The exact reduction
+
+\[
+ D_{\mathrm{univ}}S_0
+ \pmod{\operatorname{im}D_0}
+\tag{4.5}
+\]
+
+has 12 nonzero columns.  Therefore the unchanged central syzygies do not
+give a universal complex.  Entrywise low-jet agreement is not Rees
+strictness.
+
+Equation (4.5) is a frontier, not a counterexample to saturation.  Allowed
+changes of relation generators and higher filtered corrections may kill
+these classes.  Moreover, their span is a submodule of \(\Omega_0\), so
+the regularity of \(x+y+z\) on \(\Omega_0\) implies regularity on this
+span.  These remainders are therefore not collision-supported torsion
+which support saturation could erase; they are a horizontal
+presentation-gauge mismatch.  The next finite problem is to construct
+corrected syzygies with the allowed generator changes.  The checker
+[`verify_universal_cubic_filtered_syzygy_frontier.py`](../scripts/verify_universal_cubic_filtered_syzygy_frontier.py)
+records the full twelve-column remainder and its hash.
+
+## 5. Formal-gauge saturation theorem
+
+This section gives the universal certificate.  Put
+\(A=\mathbb Q[x,y,z]\), \(r=(z,-y,x)^{\mathsf T}\), and index the ten
+components of a symmetric tensor by
+\[
+ 000,001,002,011,012,022,111,112,122,222.
+\]
+Let \(K\subset A^{10}\) be the graded module of compatible tensor
+corrections.  It is the kernel of the \(6\)-by-\(10\) matrix \(C\) encoding
+\[
+ zc_{0ij}-yc_{1ij}+xc_{2ij}=0
+ \qquad(0\leq i\leq j\leq2).                         \tag{5.1}
+\]
+
+Write \(\phi_h=(c_{ijk})\) for the smooth Fermat cubic tensor.  A matrix
+\(D\in\operatorname{Mat}_3(A)\) determines a simultaneous infinitesimal
+change of the collision coordinates and the generators of the Koszul
+module.  Define \(v(D)\) by
+\[
+ (v_z,-v_y,v_x)^{\mathsf T}=Dr.
+\]
+The induced tensor variation is
+\[
+ \delta_h(D)_{ijk}
+ =
+ v(D)\mathbin{\cdot}\nabla c_{ijk}
+ +\sum_a\left(
+ D_{ai}c_{ajk}+D_{aj}c_{aik}+D_{ak}c_{aij}
+ \right)
+ -\operatorname{tr}(D)c_{ijk}.                       \tag{5.2}
+\]
+Here the last term is essential: the generalized tensor takes values in
+\(\det(M)\), and transport back to the original determinant line multiplies
+by \(\det(I+D)^{-1}\).  Equivalently, the exact transformed tensor is
+\[
+ \det(I+D)^{-1}\,
+ \sigma_D(\phi_h)\bigl((I+D)e_i,(I+D)e_j,(I+D)e_k\bigr),
+                                                        \tag{5.2a}
+\]
+whose first-order term is (5.2).
+For the nine matrix units, these columns form a homogeneous
+\(10\)-by-\(9\) matrix \(G\).  Direct expansion gives
+\[
+ CG=0.                                               \tag{5.3}
+\]
+The checker does not merely assume (5.2): over
+\(\mathbb Q[\epsilon]/(\epsilon^2)\), it expands the determinant-twisted
+finite action (5.2a) for all nine matrix units and verifies that its
+\(\epsilon\)-coefficient is exactly the corresponding column of \(G\).
+It simultaneously checks the exact transformed Koszul relation.
+
+There is one cubic direction not induced by a gauge.  Take \(\eta\) to be
+the integral tensor attached to \(3XYZ\):
+\[
+\eta=
+(0,-x^2y,-xy^2,-x^2z,0,y^2z,0,xz^2,yz^2,0)^{\mathsf T}.
+                                                               \tag{5.4}
+\]
+Then \(C\eta=0\).  The exact module certificate is
+\[
+ \boxed{\quad
+ \ker C=\operatorname{im}G+A\eta,\qquad
+ (x,y,z)\eta\subseteq\operatorname{im}G.
+ \quad}                                                   \tag{5.5}
+\]
+The second identity is witnessed without a standard basis:
+\[
+ GL=[x\eta\ \ y\eta\ \ z\eta],                         \tag{5.6}
+\]
+where, in the matrix-unit ordering
+\((00),(01),(02),(10),(11),(12),(20),(21),(22)\),
+\[
+L=
+\begin{pmatrix}
+0&0&0\\
+-y&0&0\\
+0&-x&0\\
+z&0&0\\
+0&0&0\\
+0&0&x\\
+0&-z&0\\
+0&0&-y\\
+0&0&0
+\end{pmatrix}.                                      \tag{5.7}
+\]
+For the first identity, the checker computes \(K=\operatorname{syz}(C)\)
+over \(\mathbb Q[x,y,z]\) and reduces its ten exact generators by
+\([G\ \eta]\), with zero remainder.  Independently,
+\(\operatorname{coker}(\operatorname{modulo}(K,G))\) has vector-space
+dimension one, \(\eta\) has nonzero remainder modulo \(G\), and
+\((x,y,z)\) acts by zero.  Thus, with the grading in which the tensor
+components have their polynomial degree,
+\[
+ \ker C/\operatorname{im}G\simeq\mathbb Q(-3).         \tag{5.8}
+\]
+In particular,
+\[
+ K_d=\operatorname{im}(G)_d\qquad(d\geq4).             \tag{5.9}
+\]
+
+For the first noncentral layer this surjectivity is also made explicit.
+The 24 fixed quartic-kernel tensors \(\psi_1,\ldots,\psi_{24}\) have
+coefficient rank 24 and span \(K_4\).  The degree-one gauge action has rank
+24 and kernel dimension three.  Exact rational row reduction constructs a
+linear-polynomial matrix
+\[
+ Q\in\operatorname{Mat}_{9\times24}(A_1)
+ \quad\text{with}\quad
+ GQ=[\psi_1\ \cdots\ \psi_{24}].                     \tag{5.9a}
+\]
+The generated certificate stores all entries of \(Q\), not only its rank
+or a modular fingerprint.
+
+Now complete \(R=S[x,y,z]\) along
+\(\mathfrak m=(x,y,z)\).  Suppose inductively that a compatible tensor has
+the form
+\[
+ \phi_h+\theta_d+\text{terms of collision degree \(>d\)}
+ \qquad(d\geq4).
+\]
+By (5.9), choose a homogeneous matrix \(D_{d-3}\) with
+\(\delta_h(D_{d-3})=-\theta_d\).  Put
+\[
+ (v_z,-v_y,v_x)^{\mathsf T}=D_{d-3}r.
+\]
+The coordinate change \(x\mapsto x+v_x\),
+\(y\mapsto y+v_y\), \(z\mapsto z+v_z\), together with
+\[
+ e\longmapsto (I+D_{d-3})e,
+\]
+preserves the Koszul relation because the exact identity
+\[
+ (I+D_{d-3})r=r(x+v_x,y+v_y,z+v_z)                    \tag{5.10}
+\]
+holds.  Formula (5.2) says that this change kills \(\theta_d\), changes no
+lower jet, and only creates terms of higher collision degree.  Iteration
+converges in the \(\mathfrak m\)-adic topology.  It is valid over \(S\):
+all right inverses used in (5.9) are rational linear maps, so the
+successive coefficients remain polynomials in the universal parameters.
+Functoriality of the generalized triple-cover construction therefore gives
+a formal equivalence
+\[
+ \widehat B_{\mathrm{univ}}
+ \simeq \sigma^*(B_0\widehat{\otimes}_{\mathbb Q}S)    \tag{5.11}
+\]
+for an \(S\)-linear formal coordinate automorphism \(\sigma\) preserving
+\(\mathfrak m\).
+
+The central smooth cotangent presentation is exactly saturated, as checked
+independently by
+[`verify_cubic_symbol_double_saturation.py`](../scripts/verify_cubic_symbol_double_saturation.py).
+Flat scalar extension and (5.11) give
+\[
+ H^0_{\mathfrak m}(
+ \Omega_{\widehat B_{\mathrm{univ}}/\widehat R})=0.
+\]
+Completion detects every \(\mathfrak m\)-power-torsion element: if
+\(\mathfrak m^n q=0\), then
+\((R/\mathfrak m^n)\otimes_R\widehat R=R/\mathfrak m^n\).
+Hence
+\[
+ \boxed{H^0_{\mathfrak m}(\Omega_{B/R})=0.}            \tag{5.12}
+\]
+
+The exact matrices and (5.3), (5.5), and (5.6) are checked by
+[`verify_universal_cubic_cotangent_saturation.py`](../scripts/verify_universal_cubic_cotangent_saturation.py).
+
+### 5.1 Exact boundary of the formal-rigidity argument
+
+The preceding proof is special to the smooth cubic symbol.  For a cubic
+orbit representative \(h\), let \(G_h\) be the determinant-twisted gauge
+differential obtained from (5.2), and put
+\[
+ Q_h=\ker C/\operatorname{im}G_h.
+\tag{5.13}
+\]
+The same dual-number derivation of the finite action applies to every
+orbit.  Exact graded module calculation gives the following complete
+atlas:
+
+\[
+\begin{array}{c|c|c|c}
+h&\operatorname{Hilb}_{Q_h}(t)&\operatorname{Ann}(Q_h)
+&\dim_{\mathbb Q}(Q_h)_4\\ \hline
+\text{smooth}&t^3&(x,y,z)&0\\
+\text{nodal}&t^3/(1-t)^2&(x)&2\\
+\text{cuspidal}&2t^3/(1-t)^2&(x^2)&4\\
+\text{line + transverse conic}&2t^3/(1-t)^2&(yz)&4\\
+\text{line + tangent conic}&3t^3/(1-t)^2&(y^3)&6\\
+\text{triangle}&3t^3/(1-t)^2&(xyz)&6\\
+\text{concurrent lines}&4t^3/(1-t)^2&(x^3)&8\\
+\text{double line}&t^3(5-4t)/(1-t)^3&(0)&11\\
+\text{triple line}&t^3(7-5t)/(1-t)^3&(0)&16\\
+0&t^3(10-6t)/(1-t)^3&(0)&24.
+\end{array}
+\tag{5.14}
+\]
+
+In all ten rows, \(\ker C\) has ten homogeneous generators in collision
+degree three.  The 24 fixed quartic tensors span the full compatible space
+\((\ker C)_4\), so the last column records exact essential quartic moduli
+for this gauge action.  Thus the smooth orbit is uniquely formally rigid
+above degree three.  The six singular squarefree quotients are supported
+on the displayed planes, unions of planes, and nonreduced plane
+thickenings.  The last three quotients are faithful over \(A\), with
+generic ranks one, two, and four, respectively.
+
+For singular symbols, (5.14) is not a cotangent-saturation failure.  It
+only proves that the deformation cannot be removed by the smooth proof's
+coordinate/module gauge.  Indeed, the previously verified singular
+parameter planes remain cotangent-saturated despite having nongauge tensor
+directions.  Their universal problem must therefore retain the
+deformation-dependent cotangent complex and prove boundary depth or
+saturation there; formal reduction to the central tensor is unavailable.
+The exact matrices and Hilbert numerators are checked by
+[`verify_cubic_formal_gauge_cokernel_atlas.py`](../scripts/verify_cubic_formal_gauge_cokernel_atlas.py).
+
+### 5.2 The nodal first formal slice
+
+For the nodal symbol
+\[
+ h_{\mathrm{nod}}=Y^2Z-X^2(X+Z),
+\]
+the atlas can be sharpened from Hilbert data to an explicit cyclic
+presentation.  Let \(\eta_{\mathrm{nod}}\) be the compatible cubic tensor
+attached to \(Z^3\).  Exact module reduction gives
+\[
+ \ker C=\operatorname{im}G_{\mathrm{nod}}+A\eta_{\mathrm{nod}},
+ \qquad
+ \operatorname{Ann}_A\!\left(
+ \ker C/\operatorname{im}G_{\mathrm{nod}}
+ \right)=(x).
+\tag{5.15}
+\]
+An explicit linear-polynomial column \(L_x\) satisfies
+\[
+ G_{\mathrm{nod}}L_x=x\eta_{\mathrm{nod}}.
+\tag{5.16}
+\]
+Together with (5.14), this proves
+\[
+ \boxed{\quad
+ \ker C/\operatorname{im}G_{\mathrm{nod}}
+ \simeq A/(x)(-3)=\mathbb Q[y,z](-3).
+ \quad}
+\tag{5.17}
+\]
+
+In collision degree four, therefore,
+\[
+ (\ker C)_4
+ =
+ \operatorname{im}(G_{\mathrm{nod}})_4
+ \oplus
+ \mathbb Q\,y\eta_{\mathrm{nod}}
+ \oplus
+ \mathbb Q\,z\eta_{\mathrm{nod}},
+\tag{5.18}
+\]
+with dimensions \(24=22+2\).  In the fixed primitive quartic basis
+\(\psi_1,\ldots,\psi_{24}\), exact rational reduction gives
+\[
+ [\psi_1]=z\eta_{\mathrm{nod}},\qquad
+ [\psi_2]=y\eta_{\mathrm{nod}},\qquad
+ [\psi_i]=0\quad(3\le i\le24).
+\tag{5.19}
+\]
+The certificate stores a \(9\)-by-\(24\) linear-polynomial matrix giving
+all 22 gauge lifts in (5.19).
+
+The previously checked full-support directions are also a transverse
+slice.  For
+\[
+ \psi_+=\sum_i\psi_i,\qquad
+ \psi_-=\sum_i(-1)^{i-1}\psi_i,
+\]
+one has
+\[
+ [\psi_+]=(y+z)\eta_{\mathrm{nod}},\qquad
+ [\psi_-]=(-y+z)\eta_{\mathrm{nod}}.
+\tag{5.20}
+\]
+The corresponding change-of-slice matrix is
+\[
+ \begin{pmatrix}1&-1\\1&1\end{pmatrix},
+ \qquad\det=2.
+\tag{5.21}
+\]
+Both the coordinate slice
+\(\phi_{\mathrm{nod}}+u\psi_1+v\psi_2\) and the dense slice
+\(\phi_{\mathrm{nod}}+u\psi_++v\psi_-\) have exact saturated cotangent
+presentations and the central length-six Ext block.
+
+The next collision layer is also computable.  Fix the deterministic
+rational lift in (5.19) obtained by setting all free row-reduction
+variables to zero, apply its inverse first-order gauge, and project the
+created degree-five term to
+\[
+ (Q_{\mathrm{nod}})_5
+ =
+ \left\langle
+ y^2\eta_{\mathrm{nod}},\
+ yz\eta_{\mathrm{nod}},\
+ z^2\eta_{\mathrm{nod}}
+ \right\rangle.
+\tag{5.22}
+\]
+The resulting normal remainder
+\[
+ \kappa_5^{\mathrm{row}}(u_1,\ldots,u_{24})
+ =
+ (\kappa_{y^2},\kappa_{yz},\kappa_{z^2})
+\tag{5.23}
+\]
+is an exact quadratic map.  Its three components contain respectively
+14, 16, and 13 monomials, with 30 nonzero cross-parameter pairs.  All
+coefficients are serialized in the certificate.  It vanishes identically
+on the coordinate slice:
+\[
+ \kappa_5^{\mathrm{row}}(u_1,u_2,0,\ldots,0)=0.
+\tag{5.24}
+\]
+On the dense plane \(u_i=a+(-1)^{i-1}b\), however, it is
+\[
+ \left(
+ \frac{7(4a^2-13ab+b^2)}3,\
+ -\frac{25a^2-193b^2}{12},\
+ -\frac{55a^2-14ab+97b^2}{6}
+ \right).
+\tag{5.25}
+\]
+Thus a transverse saturated polynomial slice can acquire a nonzero higher
+normal tail when compared with another slice.  This is not a cotangent
+obstruction: the dense plane itself is saturated.
+
+The dependence on the chosen quartic gauge lift can now be removed
+exactly.  Let \(W\) be the kernel of the degree-four gauge-action matrix.
+Then
+\[
+ \dim_{\mathbb Q}W=5.
+\tag{5.26}
+\]
+The degree-five projections of every \(W\)-\(W\) pair and every pair of
+\(W\) with one of the 22 removable directions vanish.  Only the pairings
+with \(\psi _1,\psi _2\) remain.  In the ordered target
+\((Q_{\mathrm{nod}})_5\oplus(Q_{\mathrm{nod}})_5\), their action is
+\[
+ W\longrightarrow\mathbb Q^6,\qquad
+ \begin{pmatrix}
+ 1/3&0&0&0&1/2\\
+ 0&-7/3&0&4&0\\
+ 2&0&0&0&7/2\\
+ 0&-2&0&7/2&0\\
+ 7/3&0&0&0&4\\
+ 0&-1/3&0&1/2&0
+ \end{pmatrix}.
+\tag{5.27}
+\]
+This matrix has rank four.  Its cokernel is detected by the two rows
+\[
+ (-1,0,-1,0,1,0),\qquad (0,-1,0,1,0,1).
+\tag{5.28}
+\]
+Consequently the slice--gauge part of the degree-five curvature has the
+two lift-independent quotient coordinates
+\[
+ L_1=\frac34(u_3+2u_9+2u_{11}),\qquad
+ L_2=\frac34(3u_6+2u_{10}+2u_{12}).
+\tag{5.29}
+\]
+The pure removable-gauge curvature is already fixed by every lift change.
+Its three components are
+\[
+\begin{aligned}
+ Q_1&=-\frac14\big((u_3-3u_5)^2-9u_6^2\big),\\
+ Q_2&=\frac32(u_3u_4+u_3u_6-3u_4u_5),\\
+ Q_3&=\frac14(u_3^2-9u_4^2).
+\end{aligned}
+\tag{5.30}
+\]
+Thus (5.29)--(5.30), rather than the row-reduced representative (5.23),
+are the intrinsic degree-five data.
+
+There is also an exact scheme-theoretic description of the pure-curvature
+zero locus in \(\mathbb A^4_{u_3,u_4,u_5,u_6}\).  Up to invertible scalar
+factors its ideal is
+\[
+ I_5=\big(
+ (u_3-3u_5)^2-9u_6^2,\
+ u_3u_4+u_3u_6-3u_4u_5,\
+ u_3^2-9u_4^2
+ \big).
+\tag{5.31}
+\]
+Its reduction is the union of the two rational planes
+\[
+\begin{aligned}
+ P_+&=(u_3-3u_4,\ u_3-3u_5+3u_6),\\
+ P_-&=(u_3+3u_4,\ u_3-3u_5-3u_6).
+\end{aligned}
+\tag{5.32}
+\]
+Moreover,
+\[
+ \sqrt{I_5}=I_5+(g),\qquad
+ g=u_3u_5-3u_5^2+3u_4u_6+3u_6^2,
+\tag{5.33}
+\]
+and \(g\notin I_5\), while
+\((u_3,u_4,u_5,u_6)g\subset I_5\).  Hence the unreduced locus has exactly
+one additional degree-two socle class supported at the origin.
+
+This closes the quartic-lift ambiguity at degree five, but it is not the
+universal nodal saturation theorem.  A gauge removing the other 22
+quartic coordinates creates higher collision terms, and by (5.17) the
+degree-\(d\) nongauge quotient has dimension \(d-2\).
+
+The two reduced planes in (5.32) can now be continued one step further.
+For \(\epsilon\in\{1,-1\}\), parameterize them by
+\[
+ (u_3,u_4,u_5,u_6)
+ =
+ (3\epsilon p,\ p,\ \epsilon(p+q),\ q).
+\tag{5.34}
+\]
+Keep the row-reduced quartic lift used in (5.23), apply its exact finite
+inverse gauge, and write the transformed tensor as
+\[
+ h_{\mathrm{nod}}+t^2R_5+t^3R_6+O(t^4).
+\tag{5.35}
+\]
+The linear term vanishes identically.  On both branches, \(R_5\) lies in
+the degree-five gauge image.  That gauge-action matrix has rank \(39\)
+and a \(15\)-dimensional kernel.  An explicit quadratic matrix
+\(E_\epsilon(p,q)\) in the certificate satisfies
+\[
+ G_{\mathrm{nod}}E_\epsilon=R_5.
+\tag{5.36}
+\]
+Moreover every change of \(E_\epsilon\) by this \(15\)-dimensional kernel
+has zero image in \((Q_{\mathrm{nod}})_6\).  Thus the next class is
+independent of the degree-five correction.
+
+In the ordered quotient basis
+\[
+ \langle
+ y^3\eta,\ y^2z\eta,\ yz^2\eta,\ z^3\eta
+ \rangle,
+\]
+exact expansion gives
+\[
+ [R_6-\delta_{\psi_\epsilon}(E_\epsilon)]
+ =
+ \frac{27}{8}
+ \left(
+ q^3,\ 3\epsilon pq^2,\ 3p^2q,\ \epsilon p^3
+ \right).
+\tag{5.37}
+\]
+Equivalently,
+\[
+ \boxed{\quad
+ \kappa_{6,\epsilon}^{\mathrm{row}}(p,q)
+ =
+ \frac{27}{8}(qy+\epsilon pz)^3\eta.
+ \quad}
+\tag{5.38}
+\]
+Hence, for the declared quartic splitting, the common zero locus on each
+reduced plane is only \(p=q=0\).
+
+Equation (5.38) is not yet the fully intrinsic degree-six obstruction.
+The calculation proves independence from the quadratic correction
+\(E_\epsilon\), but it has not yet quotiented changes in the earlier
+five-dimensional quartic gauge lift.  It also does not continue the
+embedded socle class (5.33), or the full slice--gauge curvature locus.
+Those are the next invariant tasks, followed by the effect on cotangent
+boundary depth.  Transversality at degree four alone does not identify
+the full universal family with either two-parameter slice.  The exact
+certificate is
+[`verify_nodal_cubic_formal_slice.py`](../scripts/verify_nodal_cubic_formal_slice.py).
+
+## 6. Canonical-different complex and the Fitting reduction
 
 Write the trace-free and scalar multiplication components as
 \(\mu_{ij}\in M\) and \(s_{ij}\in R\).  Over the full 24-parameter ring,
@@ -204,7 +762,7 @@ form the seven-column canonical-different matrix
  d_1=\left[
  (0,z,-y,x)^{\mathsf T},
  (s_{ij},2\mu_{ij})^{\mathsf T}_{0\leq i\leq j\leq2}
- \right].                                             \tag{5.1}
+ \right].                                             \tag{6.1}
 \]
 
 The exact checker constructs a universal \(7\)-by-\(3\) matrix \(d_2\).
@@ -212,7 +770,7 @@ For \(r=(z,-y,x)\), associativity and the coefficient-module relation give
 
 \[
  \sum_i r_i s_{ij}=0,\qquad
- 2\sum_i r_i\mu_{ij}=q_jr.                            \tag{5.2}
+ 2\sum_i r_i\mu_{ij}=q_jr.                            \tag{6.2}
 \]
 
 The top row of \(d_2\) is \((-q_0,-q_1,-q_2)\); its other six rows are the
@@ -226,7 +784,7 @@ therefore proves exactness of
 
 \[
  0\longrightarrow R^3\mathop{\longrightarrow}^{d_2}R^7
- \mathop{\longrightarrow}^{d_1}R^4.                  \tag{5.3}
+ \mathop{\longrightarrow}^{d_1}R^4.                  \tag{6.3}
 \]
 
 Let \(T_\Delta=\operatorname{coker}(d_1)\).  Transposing the last
@@ -235,7 +793,7 @@ fixed linear rows alone generate a module \(L\subset R^3\) satisfying
 
 \[
  \dim_{\mathbb Q}(R^3/L)=6,\qquad
- (x,y,z)^2(R^3/L)=0.                                  \tag{5.4}
+ (x,y,z)^2(R^3/L)=0.                                  \tag{6.4}
 \]
 
 The varying top row lies in \((x,y,z)^2R^3\), so it is redundant.  Hence
@@ -244,7 +802,7 @@ The varying top row lies in \((x,y,z)^2R^3\), so it is redundant.  Hence
  \operatorname{Ext}^2_R(T_\Delta,R)
  \simeq (R^3/L)
  \simeq E_0\otimes_{\mathbb Q}
- \mathbb Q[u_1,\ldots,u_{24}].                        \tag{5.5}
+ \mathbb Q[u_1,\ldots,u_{24}].                        \tag{6.5}
 \]
 
 After truncation by \((x,y,z)^2\), the parameter module has 12 generators
@@ -253,7 +811,7 @@ universally for the canonical-different support
 
 \[
  \operatorname{Fitt}_6=(1),\qquad
- \operatorname{Fitt}_5=(0).                           \tag{5.6}
+ \operatorname{Fitt}_5=(0).                           \tag{6.6}
 \]
 
 The remaining issue is now an identification, not a Fitting-minor
@@ -261,7 +819,7 @@ calculation.  The ramification support in (1.2) uses
 \[
  T=B/\operatorname{Ann}_B(\Omega_{B/R}),
 \]
-whereas (5.1) defines \(T_\Delta\) from the seven canonical different
+whereas (6.1) defines \(T_\Delta\) from the seven canonical different
 generators.  On the full-support plane of Section 2, exact module reduction
 proves that these seven generators span the complete annihilator for every
 parameter and every squarefree symbol.  The resulting actual minimal
@@ -269,7 +827,7 @@ support resolution has tail
 
 \[
  R^3\mathop{\longrightarrow}^{d_2}R^7
- \longrightarrow R^4\longrightarrow T\longrightarrow0.       \tag{5.7}
+ \longrightarrow R^4\longrightarrow T\longrightarrow0.       \tag{6.7}
 \]
 
 After the exact minimal-resolution basis chosen by Singular, rows two
@@ -278,33 +836,33 @@ through seven of \(d_2\) are parameter-independent linear triples.  Let
 
 \[
  \dim_{\mathbb Q}(R^3/L)=6,\qquad
- (x,y,z)^2(R^3/L)=0.                                  \tag{5.8}
+ (x,y,z)^2(R^3/L)=0.                                  \tag{6.8}
 \]
 
 The remaining row lies in \((x,y,z)^2R^3\).  Its central part is quadratic,
 its parameter-dependent part lies in \((x,y,z)^3R^3\), and that part is
-linear in the two plane parameters.  Equation (5.2) therefore makes the
+linear in the two plane parameters.  Equation (6.2) therefore makes the
 entire seventh row redundant:
 
 \[
  \operatorname{coker}(d_2^{\mathsf T})
- \simeq R^3/L.                                        \tag{5.9}
+ \simeq R^3/L.                                        \tag{6.9}
 \]
 
-Thus (5.6) already closes the universal Fittings for \(T_\Delta\), and
-(5.9) checks their identification with the requested Fittings on seven
+Thus (6.6) already closes the universal Fittings for \(T_\Delta\), and
+(6.9) checks their identification with the requested Fittings on seven
 full-support planes.  To close them globally for the actual \(T\), it is
 enough to prove the universal annihilator--different equality
 
 \[
  \operatorname{Ann}_B(\Omega_{B/R})
  =
- \left((0,z,-y,x),(s_{ij},2\mu_{ij})\right).          \tag{5.10}
+ \left((0,z,-y,x),(s_{ij},2\mu_{ij})\right).          \tag{6.10}
 \]
 
 Equivalently, one must exclude additional annihilator generators supported
 over a proper parameter locus.  No further determinant calculation is
-needed once (5.10) is established.
+needed once (6.10) is established.
 
 There is now an exact conditional closure of this last step.  The universal
 Deligne--Faddeev cubic algebra on a free trace-free rank-two module has
@@ -312,22 +870,22 @@ Deligne--Faddeev cubic algebra on a free trace-free rank-two module has
 \[
  \operatorname{Fitt}_0^B(\Omega_{B/R})
  =
- \operatorname{Ann}_B(\Omega_{B/R}).                  \tag{5.11}
+ \operatorname{Ann}_B(\Omega_{B/R}).                  \tag{6.11}
 \]
 
 The checker computes both ideals in the universal algebra over
 \(\mathbb Q[a,b,c,d]\) and reduces them to the same three-generator ideal.
 On \(D(x)\cup D(y)\cup D(z)\), the Koszul trace-free module is locally free,
-so (5.11) identifies the canonical different in (5.1) with the actual
+so (6.11) identifies the canonical different in (6.1) with the actual
 annihilator.
 
-The exact complex (5.3) also shows that \(T_\Delta\) has projective
+The exact complex (6.3) also shows that \(T_\Delta\) has projective
 dimension at most two.  If a prime contains \((x,y,z)\), its height is at
 least three; Auslander--Buchsbaum therefore gives depth at least one for
 \((T_\Delta)_\mathfrak p\).  Hence
 
 \[
- H^0_{(x,y,z)}(T_\Delta)=0.                           \tag{5.12}
+ H^0_{(x,y,z)}(T_\Delta)=0.                           \tag{6.12}
 \]
 
 Assume now the requested universal relative cotangent saturation
@@ -335,7 +893,7 @@ Assume now the requested universal relative cotangent saturation
 \(\Omega\) off the collision axis, so its action on \(\Omega\) is
 \((x,y,z)\)-torsion and therefore vanishes globally.  Thus
 \(\Delta\subseteq\operatorname{Ann}(\Omega)\).  Their quotient is supported
-on the collision axis by (5.11) and injects into \(T_\Delta\); (5.12)
+on the collision axis by (6.11) and injects into \(T_\Delta\); (6.12)
 forces the quotient to vanish.  Consequently
 
 \[
@@ -343,7 +901,7 @@ forces the quotient to vanish.  Consequently
  \quad\Longrightarrow\quad
  T=T_\Delta,\quad
  \operatorname{Fitt}_6(E)=(1),\quad
- \operatorname{Fitt}_5(E)=0.                         \tag{5.13}
+ \operatorname{Fitt}_5(E)=0.                         \tag{6.13}
 \]
 
 Thus there is no independent Ext-Fitting exceptional set: it is contained
@@ -355,12 +913,17 @@ The checker
 proves the actual-support statement on the seven full-support planes.
 The checker
 [`verify_universal_cubic_quartic_different_complex.py`](../scripts/verify_universal_cubic_quartic_different_complex.py)
-proves (5.2)--(5.6) over all 24 parameters.  Neither checker proves the
-universal equality (5.10) unconditionally.  The checker
+proves (6.2)--(6.6) over all 24 parameters.  The checker
 [`verify_universal_cubic_kahler_annihilator.py`](../scripts/verify_universal_cubic_kahler_annihilator.py)
-proves (5.11), which gives the conditional implication (5.13).
+proves (6.11).  The saturation theorem (5.12) makes (6.13)
+unconditional, so
+\[
+ \operatorname{Ann}_B(\Omega_{B/R})=\Delta,\qquad
+ \operatorname{Fitt}_6^S(E)=(1),\qquad
+ \operatorname{Fitt}_5^S(E)=(0).                     \tag{6.14}
+\]
 
-## 6. Universal elimination bottleneck
+## 7. Superseded universal elimination bottleneck
 
 The complete smooth universal input has 27 variables and approximately
 0.5 MB of exact Singular source.  Two direct routes were tested:
@@ -378,8 +941,8 @@ bottleneck.  On the smooth nested coordinate family, ten parameters
 complete.  The corresponding first-eleven-parameter calculation did not
 complete within a fresh 300-second bound; an earlier first-twelve-parameter
 calculation did not complete within 900 seconds and reached approximately
-1.27 GB resident memory.  These timings are failed computational routes,
-not evidence for or against flatness.
+1.27 GB resident memory.  These failed computational routes are superseded
+by the formal-gauge proof in Section 5.
 
 Unit pruning reduces the universal input to the \(6\)-by-\(25\) matrix of
 Section 4 and approximately 0.2 MB of Singular source.  With
@@ -388,32 +951,29 @@ still did not return its first standard-basis diagnostic after six minutes
 and reached approximately 1.75 GB resident memory.  This is another failed
 direct route, not an exceptional parameter.
 
-The canonical-different construction of Section 5 completes the
+The canonical-different construction of Section 6 completes the
 parameter-only matrix that this bottleneck originally suggested.  Its six
 linear relation columns act on the nine-dimensional space
 
 \[
- (x,y,z)\,S^3/(x,y,z)^2S^3.                         \tag{6.1}
+ (x,y,z)\,S^3/(x,y,z)^2S^3.                         \tag{7.1}
 \]
 
-The Fittings of this matrix are now closed by (5.6).  The next certificate
-is instead the equality (5.10).  A useful formulation is to compute the
-finite quotient
+The Fittings of this matrix are closed by (6.6).  Before the formal-gauge
+theorem, the next proposed certificate was the equality (6.10), formulated
+as the finite quotient
 
 \[
  \operatorname{Ann}_B(\Omega_{B/R})/\Delta,
  \qquad
- \Delta=((0,z,-y,x),(s_{ij},2\mu_{ij})),             \tag{6.2}
+ \Delta=((0,z,-y,x),(s_{ij},2\mu_{ij})),             \tag{7.2}
 \]
 
-and prove that it is zero.  It vanishes on every recorded line, plane, and
-the smooth coordinate ten-space.  By (5.13), however, this quotient
-vanishes automatically once the cotangent-saturation quotient does.
-Therefore the remaining universal calculation is the single relative
-cotangent saturation test; the Fittings no longer require a separate
-elimination.
+It vanishes on every recorded line, plane, and the smooth coordinate
+ten-space.  The theorem (5.12) and implication (6.13) now prove that it is
+zero universally; no 24-parameter elimination remains.
 
-## 7. Reproduction
+## 8. Reproduction
 
 Run
 
@@ -422,14 +982,27 @@ Run
 .venv/bin/python scripts/verify_cubic_quartic_ext_tail_absorption.py
 .venv/bin/python scripts/verify_universal_cubic_quartic_different_complex.py
 .venv/bin/python scripts/verify_universal_cubic_kahler_annihilator.py
+.venv/bin/python scripts/verify_universal_cubic_cotangent_saturation.py
+.venv/bin/python scripts/verify_cubic_formal_gauge_cokernel_atlas.py
+.venv/bin/python scripts/verify_nodal_cubic_formal_slice.py
 ```
 
-The generated record is
-[`universal_cubic_quartic_kernel_saturation_frontier.json`](../artifacts/generated-results/universal_cubic_quartic_kernel_saturation_frontier.json).
+The generated records are
+[`universal_cubic_quartic_kernel_saturation_frontier.json`](../artifacts/generated-results/universal_cubic_quartic_kernel_saturation_frontier.json)
+and
+[`universal_cubic_cotangent_saturation.json`](../artifacts/generated-results/universal_cubic_cotangent_saturation.json),
+together with the all-orbit boundary calculation
+[`cubic_formal_gauge_cokernel_atlas.json`](../artifacts/generated-results/cubic_formal_gauge_cokernel_atlas.json)
+and the first singular slice certificate
+[`nodal_cubic_formal_slice.json`](../artifacts/generated-results/nodal_cubic_formal_slice.json).
 
-The calculations require Singular 4.4.1.  The canonical-different complex
-and its Fitting ideals are computed over all 24 parameters.  The locally
-free universal cubic calculation and the depth argument prove that
-cotangent saturation implies equality with the actual annihilator and
-hence the same Fittings.  The unconditional universal cotangent saturation
-and its parameter discriminant remain open.
+The calculations require Singular 4.4.1.  The smooth checker uses Singular
+only for the three-variable exact module identity (5.5) and the independent
+central saturation check; it does not compute the 24-parameter
+saturation.  The formal-gauge argument proves universal cotangent
+saturation, and the canonical-different complex then identifies the actual
+annihilator and closes the universal Fittings.  The atlas checker computes
+the exact three-variable graded cokernel for all ten symbols and marks the
+limit of that formal-rigidity argument.  The nodal checker resolves the
+first singular row cyclically and splits the complete quartic space into
+22 gauge directions and a certified saturated two-parameter slice.

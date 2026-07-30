@@ -102,6 +102,55 @@ def affine_particular(columns, rhs, field):
     return particular, len(pivots)
 
 
+def batched_affine_particular(columns, right_hand_sides, field):
+    """Solve many constant-field systems with one sparse row reduction.
+
+    Every system has the same column operator.  Appending all right-hand
+    sides at once avoids repeating its elimination and, crucially, avoids
+    row-reducing that constant operator over a multivariate function field.
+    """
+
+    coordinates = sorted(
+        set().union(
+            *(set(column) for column in columns),
+            *(set(rhs) for rhs in right_hand_sides),
+        )
+    )
+    coordinate_index = {
+        coordinate: index for index, coordinate in enumerate(coordinates)
+    }
+    column_count = len(columns)
+    rows = {}
+    for column_index, column in enumerate(columns):
+        for coordinate, coefficient in column.items():
+            rows.setdefault(coordinate_index[coordinate], {})[
+                column_index
+            ] = coefficient
+    for rhs_index, rhs in enumerate(right_hand_sides):
+        augmented_column = column_count + rhs_index
+        for coordinate, coefficient in rhs.items():
+            rows.setdefault(coordinate_index[coordinate], {})[
+                augmented_column
+            ] = -coefficient
+    reduced, pivots, _ = sdm_irref(rows)
+    augmented_pivots = [
+        pivot for pivot in pivots if pivot >= column_count
+    ]
+    if augmented_pivots:
+        raise ValueError(
+            "batched affine system is inconsistent at right-hand side "
+            f"{augmented_pivots[0] - column_count}"
+        )
+    solutions = [{} for _ in right_hand_sides]
+    for reduced_row, pivot in enumerate(pivots):
+        row = reduced.get(reduced_row, {})
+        for rhs_index in range(len(right_hand_sides)):
+            value = row.get(column_count + rhs_index, field.zero)
+            if value:
+                solutions[rhs_index][pivot] = -value
+    return solutions, len(pivots)
+
+
 def dot(functional, polynomial, output_index, field):
     value = field.zero
     for monomial, coefficient in polynomial.items():
@@ -1571,7 +1620,7 @@ def sample_seventh_order_reduced_component(
 
     from explore_degree_five_quantum_residue import column_rank
 
-    if not hasattr(field, "mod"):
+    if not field.is_FiniteField:
         raise ValueError("component sampling is intended for a finite field")
     free_indices, base_parameters, parameter_directions = (
         reduced_component_parameters(field, a)
@@ -1738,6 +1787,7 @@ def eliminate_seventh_order_reduced_component(
     corrections,
     s4_monomials,
     t4_monomials,
+    program_output: Path | None = None,
 ) -> None:
     """Test the complete reduced hbar^7 consistency ideal."""
 
@@ -1749,38 +1799,38 @@ def eliminate_seventh_order_reduced_component(
     parameter_field = field.frac_field(*parameter_names)
     parameter_ring = parameter_field.get_ring()
     ground_polynomial = parameter_ring.ring.ground_new
-    variables = parameter_field.gens
+    polynomial_variables = parameter_ring.gens
 
-    parameters = []
+    polynomial_parameters = []
     for coordinate in range(variable_count):
-        value = parameter_field(base_parameters[coordinate])
+        value = ground_polynomial(base_parameters[coordinate])
         for variable, direction in zip(
-            variables,
+            polynomial_variables,
             parameter_directions,
             strict=True,
         ):
             coefficient = direction[coordinate]
             if coefficient:
-                value += parameter_field(coefficient) * variable
-        parameters.append(value)
+                value += ground_polynomial(coefficient) * variable
+        polynomial_parameters.append(value)
 
-    def promote(poly):
+    def promote_polynomial(poly):
         return {
-            monomial: parameter_field(coefficient)
+            monomial: ground_polynomial(coefficient)
             for monomial, coefficient in poly.items()
             if coefficient
         }
 
-    defect = promote(constant)
-    for index, parameter in enumerate(parameters):
+    defect = promote_polynomial(constant)
+    for index, parameter in enumerate(polynomial_parameters):
         defect = add(
             defect,
-            promote(nonconstant[2 * index]),
+            promote_polynomial(nonconstant[2 * index]),
             parameter,
         )
         defect = add(
             defect,
-            promote(nonconstant[2 * index + 1]),
+            promote_polynomial(nonconstant[2 * index + 1]),
             parameter**2,
         )
     cross_offset = 2 * variable_count
@@ -1789,18 +1839,48 @@ def eliminate_seventh_order_reduced_component(
     ):
         defect = add(
             defect,
-            promote(nonconstant[cross_offset + cross_index]),
-            parameters[left] * parameters[right],
+            promote_polynomial(nonconstant[cross_offset + cross_index]),
+            polynomial_parameters[left] * polynomial_parameters[right],
         )
 
-    promoted_corrections = [promote(column) for column in corrections]
-    correction, correction_rank = affine_particular(
-        promoted_corrections,
-        scale(defect, -parameter_field.one),
-        parameter_field,
+    rhs_by_exponent = {}
+    for output_monomial, polynomial in defect.items():
+        for exponents, coefficient in polynomial.to_dict().items():
+            rhs_by_exponent.setdefault(exponents, {})[
+                output_monomial
+            ] = -coefficient
+    rhs_exponents = sorted(rhs_by_exponent)
+    print(
+        "H7_COMPONENT_CORRECTION_BATCH="
+        f"rhs={len(rhs_exponents)},variables={len(parameter_names)}",
+        flush=True,
+    )
+    correction_solutions, correction_rank = batched_affine_particular(
+        corrections,
+        [rhs_by_exponent[exponents] for exponents in rhs_exponents],
+        field,
     )
     if correction_rank != 594:
         raise AssertionError(correction_rank)
+    correction_coefficients = {}
+    for exponents, solution in zip(
+        rhs_exponents,
+        correction_solutions,
+        strict=True,
+    ):
+        for index, coefficient in solution.items():
+            correction_coefficients.setdefault(index, {})[
+                exponents
+            ] = coefficient
+    correction = {
+        index: parameter_ring.ring.from_dict(coefficients)
+        for index, coefficients in correction_coefficients.items()
+    }
+    print(
+        "H7_COMPONENT_CORRECTION_SOLVED="
+        f"rank={correction_rank},nonzero={len(correction)}",
+        flush=True,
+    )
 
     def as_polynomial(value):
         value = parameter_field.convert(value)
@@ -1812,22 +1892,6 @@ def eliminate_seventh_order_reduced_component(
             raise AssertionError("unexpected parameter denominator")
         inverse = field.one / denominator_terms[zero_exponent]
         return numerator * ground_polynomial(inverse)
-
-    polynomial_parameters = [
-        as_polynomial(parameter) for parameter in parameters
-    ]
-
-    def promote_polynomial(poly):
-        return {
-            monomial: ground_polynomial(coefficient)
-            for monomial, coefficient in poly.items()
-            if coefficient
-        }
-
-    correction = {
-        index: as_polynomial(coefficient)
-        for index, coefficient in correction.items()
-    }
 
     base_defect = dict(constant)
     for index, parameter in enumerate(base_parameters):
@@ -2081,27 +2145,46 @@ def eliminate_seventh_order_reduced_component(
             seventh_variations[pivot_columns[local_index]],
             coefficient,
         )
-    residual_numerators = [
-        parameter_ring.convert(value)
-        for value in residual.values()
+    residual_items = [
+        (monomial, parameter_ring.convert(value))
+        for monomial, value in residual.items()
         if value
+    ]
+    residual_numerators = [
+        polynomial for _, polynomial in residual_items
     ]
     if not residual_numerators:
         raise AssertionError("generic reduced component unexpectedly extends")
+    zero_exponent = (0,) * len(parameter_names)
+    constant_residuals = [
+        (
+            index,
+            monomial,
+            polynomial.to_dict()[zero_exponent],
+        )
+        for index, (monomial, polynomial) in enumerate(
+            residual_items,
+            start=1,
+        )
+        if set(polynomial.to_dict()) == {zero_exponent}
+    ]
 
-    active_variables = sorted(
+    active_indices = sorted(
         {
-            str(generator)
+            index
             for polynomial in residual_numerators
-            for generator in parameter_ring.to_sympy(
-                polynomial
-            ).free_symbols
+            for exponents in polynomial.to_dict()
+            for index, exponent in enumerate(exponents)
+            if exponent
         }
     )
+    active_variables = [
+        parameter_names[index] for index in active_indices
+    ]
     singular = shutil.which("Singular")
     if singular is None:
         raise SystemExit("Singular is required for component elimination")
-    if hasattr(field, "mod"):
+    if field.is_FiniteField:
         ring_declaration = (
             f"ring r={int(field.mod)},"
             f"({','.join(active_variables)}),dp;"
@@ -2159,22 +2242,89 @@ def eliminate_seventh_order_reduced_component(
         serialize_polynomial(polynomial)
         for polynomial in residual_numerators
     ]
+    if constant_residuals:
+        (
+            selected_constant_index,
+            selected_constant_monomial,
+            selected_constant_value,
+        ) = constant_residuals[0]
+        selected_constant_text = (
+            f"generator={selected_constant_index},"
+            f"output={selected_constant_monomial},"
+            f"value={coefficient_text(selected_constant_value)}"
+        )
+        direct_certificate_program = f"""\
+poly direct_multiplier=1/I[{selected_constant_index}];
+poly direct_certificate=I[{selected_constant_index}]*direct_multiplier-1;
+print("H7_DIRECT_CERTIFICATE_GENERATOR={selected_constant_index}");
+print("H7_DIRECT_CERTIFICATE_MULTIPLIER="+string(direct_multiplier));
+print("H7_DIRECT_CERTIFICATE_VERIFIED="+string(direct_certificate==0));
+if(direct_certificate!=0)
+{{
+  ERROR("the selected constant residual failed exact inversion");
+}}
+"""
+    else:
+        selected_constant_text = "none"
+        direct_certificate_program = ""
     program = f"""\
 {ring_declaration}
 option(redSB);
 ideal I={','.join(polynomial_text)};
 ideal G=std(I);
+int is_unit=(reduce(1,G)==0);
 print("H7_CONSISTENCY_FIELD={field_label}");
 print("H7_CONSISTENCY_GENERATORS="+string(size(I)));
 print("H7_CONSISTENCY_ACTIVE_PARAMETERS={len(active_variables)}/27");
+print("H7_CONSTANT_RESIDUALS={len(constant_residuals)}");
+print("H7_SELECTED_CONSTANT_RESIDUAL={selected_constant_text}");
+{direct_certificate_program}
 print("H7_CONSISTENCY_GB_SIZE="+string(size(G)));
-print("H7_CONSISTENCY_UNIT="+string(reduce(1,G)==0));
-if(reduce(1,G)!=0)
+print("H7_CONSISTENCY_UNIT="+string(is_unit));
+if(is_unit)
+{{
+  ideal U=1;
+  matrix C=lift(I,U);
+  poly certificate=-1;
+  int certificate_nonzero=0;
+  int certificate_max_degree=-1;
+  int certificate_terms=0;
+  for(int i=1;i<=size(I);i++)
+  {{
+    if(C[i,1]!=0)
+    {{
+      certificate_nonzero++;
+      print(
+        "H7_NULLSTELLENSATZ_TERM_"
+        +string(certificate_nonzero)
+        +"=generator="+string(i)+",multiplier="+string(C[i,1])
+      );
+      if(deg(C[i,1])>certificate_max_degree)
+      {{
+        certificate_max_degree=deg(C[i,1]);
+      }}
+      certificate_terms=certificate_terms+size(C[i,1]);
+      certificate=certificate+I[i]*C[i,1];
+    }}
+  }}
+  print("H7_NULLSTELLENSATZ_NONZERO="+string(certificate_nonzero));
+  print("H7_NULLSTELLENSATZ_MAX_DEGREE="+string(certificate_max_degree));
+  print("H7_NULLSTELLENSATZ_TERMS="+string(certificate_terms));
+  print("H7_NULLSTELLENSATZ_VERIFIED="+string(certificate==0));
+  if(certificate!=0)
+  {{
+    ERROR("the lifted unit certificate failed exact verification");
+  }}
+}}
+else
 {{
   print("H7_CONSISTENCY_DIMENSION="+string(dim(G)));
 }}
 quit;
 """
+    if program_output is not None:
+        program_output.parent.mkdir(parents=True, exist_ok=True)
+        program_output.write_text(program)
     with tempfile.TemporaryDirectory(
         prefix="degree-five-cubic-seventh-component-",
     ) as directory:
@@ -2427,7 +2577,23 @@ def main() -> None:
         action="store_true",
         help="compute the global reduced hbar^7 consistency ideal modulo prime",
     )
+    parser.add_argument(
+        "--seventh-component-program-output",
+        type=Path,
+        help=(
+            "write the exact ten-variable Singular unit-certificate program "
+            "(requires --seventh-component-elimination)"
+        ),
+    )
     args = parser.parse_args()
+    if (
+        args.seventh_component_program_output is not None
+        and not args.seventh_component_elimination
+    ):
+        parser.error(
+            "--seventh-component-program-output requires "
+            "--seventh-component-elimination"
+        )
     prime = None if args.exact_cubic else args.prime
     (
         equations,
@@ -2522,6 +2688,7 @@ def main() -> None:
             corrections,
             s4_monomials,
             t4_monomials,
+            program_output=args.seventh_component_program_output,
         )
     if (
         args.groebner

@@ -1,0 +1,95 @@
+{
+  "format": "backward-cubic-reduction-calibration-v1",
+  "external_source": "https://github.com/Amacfa/keller-counterexamples-13-20/tree/dad6090bf4f01b3cdad04048fbe16f3be52b485c",
+  "status": "exact calibration of restriction and companion cancellation; no 12-variable map is constructed",
+  "generic_theorem_tests": {
+    "noncoordinate_fixed_covector": [
+      1,
+      -2,
+      3
+    ],
+    "ambient_jacobian_determinant": "1",
+    "restricted_jacobian_determinant": "1",
+    "companion_determinant_identity": "det D(x+Q+B*y,y-c)=det D(x+Q+B*c)",
+    "parametric_determinant_identity": "det D(V_t)=det D(t^-1*F(t*x))",
+    "special_fiber": "(x,y-c(x)) with determinant 1",
+    "collision_compatible_covector_subspace_dimension": 1
+  },
+  "chain": [
+    {
+      "operation": "fixed-covector restriction",
+      "source_dimension": 20,
+      "target_dimension": 19,
+      "covector": "tau",
+      "level": "1",
+      "collision_pair_survives": true
+    },
+    {
+      "operation": "stable companion cancellation",
+      "source_dimension": 19,
+      "target_dimension": 13,
+      "cancelled_companion_variables": 6,
+      "factorization": "M=A_B o (F13 x I_6) o S_gamma",
+      "collision_pair_survives": true
+    }
+  ],
+  "parametric_family": {
+    "relative_factorization": "V=A_(tau^2*B) o (E_tau x I_6) o S_gamma",
+    "nonzero_slice_identity": "E_tau(x)=tau^-1*F13(tau*x)",
+    "nonzero_slice_consequence": "every tau!=0 slice is stably equivalent to F13",
+    "special_slice_tau_0": "(x,w-gamma(x)) is a triangular automorphism",
+    "second_exact_collision_level": "2",
+    "normalization_policy": "every collision in the parent has tau!=0 and may be scaled to tau=1",
+    "collision_scheme_over_nonzero_parameter": "stably equivalent to Collision(F13) x G_m x A^6",
+    "collision_arc_weights": {
+      "tau": 1,
+      "base_x": -1,
+      "cubic_companion_w": -3,
+      "weighted_boundary_coordinates": "X=tau*x, W=tau^3*w"
+    }
+  },
+  "terminal_profile": {
+    "base_dimension": 13,
+    "cubic_output_rank": 6,
+    "rank_compressed_homogeneous_dimension": 20,
+    "direct_cubic_key": [
+      13,
+      20,
+      6
+    ],
+    "homogeneous_key": [
+      20,
+      13,
+      6
+    ]
+  },
+  "search_policy": {
+    "direct_degree_three_archive": "order by (base dimension, homogeneous dimension, cubic rank)",
+    "cubic_homogeneous_archive": "order by (homogeneous dimension, base dimension, cubic rank)",
+    "collision_policy": "retain a terminal when any one collision pair survives",
+    "pre_specialization_operation": "restrict every collision-compatible fixed linear covector"
+  },
+  "first_open_problem": {
+    "name": "MacFarlane F13 to a degree-three Keller collision in dimension 12",
+    "success_condition": "an exact determinant-preserving upstream schedule with a surviving collision pair and base dimension at most 12",
+    "secondary_homogeneous_gates": [
+      "base dimension 12 with cubic-output rank at most 6",
+      "base dimension 13 with cubic-output rank at most 5"
+    ]
+  },
+  "collision_image_F13": [
+    "0",
+    "0",
+    "-1/4",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+  ]
+}

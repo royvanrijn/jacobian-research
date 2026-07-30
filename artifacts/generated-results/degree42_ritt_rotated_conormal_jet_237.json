@@ -1,0 +1,73 @@
+{
+  "schema": "degree42-ritt-rotated-conormal-jet.v1",
+  "status": "exact fourth-maximal-adic-jet computation",
+  "word": [
+    2,
+    3,
+    7
+  ],
+  "opposite_word": [
+    7,
+    3,
+    2
+  ],
+  "thick_composite_omission": 14,
+  "thin_prime_omission": 3,
+  "equation_counts": {
+    "thick": 76,
+    "thin": 76,
+    "boundary": 102
+  },
+  "ideal_flag_q4": [
+    1,
+    1,
+    1,
+    1
+  ],
+  "conormal_ranks": [
+    5,
+    6,
+    6,
+    7
+  ],
+  "base_annihilation_exponents_q4": [
+    3,
+    1
+  ],
+  "jet_lengths_q1": [
+    1,
+    1,
+    1,
+    1
+  ],
+  "jet_lengths_q2": [
+    5,
+    4,
+    4,
+    3
+  ],
+  "jet_lengths_q3": [
+    13,
+    9,
+    9,
+    6
+  ],
+  "jet_lengths_q4": [
+    25,
+    16,
+    16,
+    10
+  ],
+  "sector_layer_dimensions_q2_q3_q4": [
+    1,
+    4,
+    9
+  ],
+  "spectator_layer_dimensions_q2_q3_q4": [
+    1,
+    3,
+    6
+  ],
+  "theorem_boundary": "These are exact quotient calculations modulo the fourth maximal-ideal power. They do not prove equality, annihilation, or non-splitting in the completed local ring.",
+  "reproducing_command": ".venv/bin/python scripts/explore_degree42_ritt_rotated_conormal_flags.py --word 237"
+}

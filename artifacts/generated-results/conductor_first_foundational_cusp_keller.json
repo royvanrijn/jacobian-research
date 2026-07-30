@@ -1,0 +1,89 @@
+{
+  "schema": "conductor-first-foundational-cusp-keller.v1",
+  "status": "exact conductor-first Keller realization",
+  "conductor_first_core": {
+    "seed": "H(W)=W^2(1-W)",
+    "core_map": {
+      "s": "-3*W**2 + 2*W + gamma",
+      "t": "-2*W**3 + W**2 + W*gamma",
+      "jacobian": "-gamma",
+      "critical_divisor": "gamma=0"
+    },
+    "cusp_point": {
+      "W": "1/3",
+      "s": "1/3",
+      "t": "1/27"
+    },
+    "translated_normalization": {
+      "S": "-3*u**2",
+      "V": "-2*u**3",
+      "implicit_equation": "4*S^3+27*V^2=0",
+      "local_ring": "Q[u^2,u^3]",
+      "normalization": "Q[u]",
+      "conductor_in_normalization": "u^2 Q[u]",
+      "normalization_quotient_basis": [
+        "u"
+      ]
+    },
+    "marked_root_algebra": {
+      "equation": "-W**3 + W**2 - W*s + t",
+      "degree": 3,
+      "discriminant": "-4*s**3 + s**2 + 18*s*t - 27*t**2 - 4*t",
+      "translated_discriminant": "-4*S**3 - 27*V**2",
+      "cusp_fiber": "-(3*W - 1)**3/27"
+    }
+  },
+  "keller_realization": {
+    "source_auxiliary_coordinates": {
+      "gamma": "-x**2*z/2 - 3*x*y/2 + 1",
+      "W": "-x**3*y*z/2 - 3*x**2*y**2/2 - x**2*z/2 - x*y/2 + 1",
+      "C": "-x**3*z/2 - 3*x**2*y/2 + x"
+    },
+    "polynomial_keller_map": {
+      "A": "x**3*y**3*z + 3*x**2*y**4 + 3*x**2*y**2*z + 7*x*y**3 + 3*x*y*z + 4*y**2 + z",
+      "B": "3*x**3*y**2*z/2 + 9*x**2*y**3/2 + 3*x**2*y*z + 6*x*y**2 + 3*x*z/2 + y/2",
+      "C": "-x**3*z/2 - 3*x**2*y/2 + x",
+      "relation_to_foundational_map": "(A,B,C)=(F1,F2/2,F3/2)",
+      "jacobian": "-1/2"
+    },
+    "determinant_ledger": {
+      "core_jacobian": "-gamma",
+      "source_chart_jacobian": "-x**3*(x**2*z + 3*x*y - 2)**2/8",
+      "target_chart_jacobian": "-C_target**3",
+      "common_value": "-x**3*(x**2*z + 3*x*y - 2)**3/16"
+    },
+    "reconstruction": {
+      "inverse_derivative_on_incidence": "x**2*z/2 + 3*x*y/2 - 1",
+      "coordinate": "x=C/gamma=-C/E_W",
+      "pole_divisor": "gamma=E_W=0 on C!=0",
+      "meets_cusp_conductor_point": true
+    },
+    "collision": {
+      "source_points": [
+        [
+          "0",
+          "0",
+          "-1/4"
+        ],
+        [
+          "1",
+          "-3/2",
+          "13/2"
+        ],
+        [
+          "-1",
+          "3/2",
+          "13/2"
+        ]
+      ],
+      "common_target": [
+        "-1/4",
+        "0",
+        "0"
+      ]
+    }
+  },
+  "success_criterion": "the scaled foundational degree-three Keller map is an explicit Keller family whose selected repeated-root discriminant is the cuspidal conductor curve Q[u^2,u^3]; the marked-root algebra, reconstruction pole, determinant ledger, and polynomiality hold simultaneously",
+  "mechanism_boundary": "the conductor is genuine but the construction is the known weighted tangent mechanism.  It escapes the separated one-chart obstruction because cancellation is distributed between source and target vertical charts; conductor gluing is not itself the source of a new polynomiality identity",
+  "reproducing_command": ".venv/bin/python scripts/verify_conductor_first_foundational_cusp_keller.py"
+}

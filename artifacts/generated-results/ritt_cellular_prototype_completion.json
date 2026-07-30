@@ -1,0 +1,633 @@
+{
+  "schema": "ritt-cellular-prototype-completion.v1",
+  "status": "exact cellular prototype and higher obstruction",
+  "degree_42_chain_diagram": {
+    "factor_vertices_outer_to_inner": [
+      "2 o 3 o 7",
+      "2 o 7 o 3",
+      "3 o 2 o 7",
+      "3 o 7 o 2",
+      "7 o 2 o 3",
+      "7 o 3 o 2"
+    ],
+    "moves": [
+      {
+        "from": "2 o 3 o 7",
+        "to": "3 o 2 o 7",
+        "swapped_positions_zero_based": [
+          0,
+          1
+        ],
+        "label": "chebyshev"
+      },
+      {
+        "from": "2 o 3 o 7",
+        "to": "2 o 7 o 3",
+        "swapped_positions_zero_based": [
+          1,
+          2
+        ],
+        "label": "chebyshev"
+      },
+      {
+        "from": "2 o 7 o 3",
+        "to": "7 o 2 o 3",
+        "swapped_positions_zero_based": [
+          0,
+          1
+        ],
+        "label": "chebyshev"
+      },
+      {
+        "from": "3 o 2 o 7",
+        "to": "3 o 7 o 2",
+        "swapped_positions_zero_based": [
+          1,
+          2
+        ],
+        "label": "chebyshev"
+      },
+      {
+        "from": "3 o 7 o 2",
+        "to": "7 o 3 o 2",
+        "swapped_positions_zero_based": [
+          0,
+          1
+        ],
+        "label": "chebyshev"
+      },
+      {
+        "from": "7 o 2 o 3",
+        "to": "7 o 3 o 2",
+        "swapped_positions_zero_based": [
+          1,
+          2
+        ],
+        "label": "chebyshev"
+      }
+    ],
+    "labelled_two_cell": {
+      "relation": "braid",
+      "first_half": [
+        "2 o 3 o 7",
+        "3 o 2 o 7",
+        "3 o 7 o 2",
+        "7 o 3 o 2"
+      ],
+      "second_half": [
+        "2 o 3 o 7",
+        "2 o 7 o 3",
+        "7 o 2 o 3",
+        "7 o 3 o 2"
+      ],
+      "oriented_edge_row": [
+        1,
+        -1,
+        -1,
+        1,
+        1,
+        -1
+      ]
+    },
+    "degree_zero_labels": [
+      "vertex:237",
+      "vertex:273",
+      "vertex:327",
+      "vertex:372",
+      "vertex:723",
+      "vertex:732"
+    ],
+    "degree_one_labels": [
+      "move:237->327",
+      "move:237->273",
+      "move:273->723",
+      "move:327->372",
+      "move:372->732",
+      "move:723->732"
+    ],
+    "degree_two_labels": [
+      "braid-cell:0"
+    ],
+    "scalar_d0": [
+      [
+        -1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        -1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        -1,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        -1,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        -1,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        -1,
+        1
+      ]
+    ],
+    "scalar_d1": [
+      [
+        1,
+        -1,
+        -1,
+        1,
+        1,
+        -1
+      ]
+    ],
+    "dimensions": [
+      6,
+      6,
+      1
+    ],
+    "ranks": [
+      5,
+      1
+    ],
+    "cohomology": [
+      1,
+      0,
+      0
+    ]
+  },
+  "degree_30_chain_diagram": {
+    "factor_vertices_outer_to_inner": [
+      "2 o 3 o 5",
+      "2 o 5 o 3",
+      "3 o 2 o 5",
+      "3 o 5 o 2",
+      "5 o 2 o 3",
+      "5 o 3 o 2"
+    ],
+    "moves": [
+      {
+        "from": "2 o 3 o 5",
+        "to": "3 o 2 o 5",
+        "swapped_positions_zero_based": [
+          0,
+          1
+        ],
+        "label": "chebyshev"
+      },
+      {
+        "from": "2 o 3 o 5",
+        "to": "2 o 5 o 3",
+        "swapped_positions_zero_based": [
+          1,
+          2
+        ],
+        "label": "chebyshev"
+      },
+      {
+        "from": "2 o 5 o 3",
+        "to": "5 o 2 o 3",
+        "swapped_positions_zero_based": [
+          0,
+          1
+        ],
+        "label": "chebyshev"
+      },
+      {
+        "from": "3 o 2 o 5",
+        "to": "3 o 5 o 2",
+        "swapped_positions_zero_based": [
+          1,
+          2
+        ],
+        "label": "chebyshev"
+      },
+      {
+        "from": "3 o 5 o 2",
+        "to": "5 o 3 o 2",
+        "swapped_positions_zero_based": [
+          0,
+          1
+        ],
+        "label": "chebyshev"
+      },
+      {
+        "from": "5 o 2 o 3",
+        "to": "5 o 3 o 2",
+        "swapped_positions_zero_based": [
+          1,
+          2
+        ],
+        "label": "chebyshev"
+      }
+    ],
+    "labelled_two_cell": {
+      "relation": "braid",
+      "first_half": [
+        "2 o 3 o 5",
+        "3 o 2 o 5",
+        "3 o 5 o 2",
+        "5 o 3 o 2"
+      ],
+      "second_half": [
+        "2 o 3 o 5",
+        "2 o 5 o 3",
+        "5 o 2 o 3",
+        "5 o 3 o 2"
+      ],
+      "oriented_edge_row": [
+        1,
+        -1,
+        -1,
+        1,
+        1,
+        -1
+      ]
+    },
+    "degree_zero_labels": [
+      "vertex:235",
+      "vertex:253",
+      "vertex:325",
+      "vertex:352",
+      "vertex:523",
+      "vertex:532"
+    ],
+    "degree_one_labels": [
+      "move:235->325",
+      "move:235->253",
+      "move:253->523",
+      "move:325->352",
+      "move:352->532",
+      "move:523->532"
+    ],
+    "degree_two_labels": [
+      "braid-cell:0"
+    ],
+    "scalar_d0": [
+      [
+        -1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        -1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        -1,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        -1,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        -1,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        -1,
+        1
+      ]
+    ],
+    "scalar_d1": [
+      [
+        1,
+        -1,
+        -1,
+        1,
+        1,
+        -1
+      ]
+    ],
+    "dimensions": [
+      6,
+      6,
+      1
+    ],
+    "ranks": [
+      5,
+      1
+    ],
+    "cohomology": [
+      1,
+      0,
+      0
+    ]
+  },
+  "relative_labelled_power_block": {
+    "d0": [
+      [
+        1,
+        0
+      ],
+      [
+        -1,
+        1
+      ],
+      [
+        0,
+        -1
+      ]
+    ],
+    "d1": [],
+    "cohomology": [
+      0,
+      1,
+      0
+    ],
+    "module_formula": {
+      "C0": "D^2",
+      "C1": "D^3",
+      "C2": "0",
+      "H0": "0",
+      "H1": "D",
+      "H2": "0"
+    }
+  },
+  "totalized_cotangent_prototype": {
+    "degree_42": {
+      "C0": "T_B^6 direct_sum D_sec^2 direct_sum D_sp^2",
+      "C1": "T_B^6 direct_sum D_sec^3 direct_sum D_sp^3",
+      "C2": "T_B",
+      "d0": "diag(delta0 tensor T_B, P tensor D_sec, P tensor D_sp)",
+      "d1": "(delta1 tensor T_B, 0, 0)",
+      "cohomology": {
+        "H0": "T_B",
+        "H1_associated_graded": "D_sec direct_sum D_sp",
+        "H2": "0"
+      },
+      "annihilators": {
+        "D_sec": "z^8",
+        "D_sp": "z"
+      }
+    },
+    "degree_30_sector_control": {
+      "C0": "T_B^6 direct_sum D_j^2",
+      "C1": "T_B^6 direct_sum D_j^3",
+      "C2": "T_B",
+      "d0": "diag(delta0 tensor T_B, P tensor D_j)",
+      "d1": "(delta1 tensor T_B, 0)",
+      "cohomology": {
+        "H0": "T_B",
+        "H1": "D_j",
+        "H2": "0"
+      },
+      "spectator": "zero because I_boundary=K"
+    }
+  },
+  "filtration_cohomology": {
+    "degree_42": [
+      {
+        "filtration_order": 1,
+        "coefficient_dimensions": {
+          "base": 1,
+          "sector": 0,
+          "spectator": 0
+        },
+        "chain_dimensions": [
+          6,
+          6,
+          1
+        ],
+        "ranks": [
+          5,
+          1
+        ],
+        "cohomology": [
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "filtration_order": 2,
+        "coefficient_dimensions": {
+          "base": 3,
+          "sector": 1,
+          "spectator": 1
+        },
+        "chain_dimensions": [
+          22,
+          24,
+          3
+        ],
+        "ranks": [
+          19,
+          3
+        ],
+        "cohomology": [
+          3,
+          2,
+          0
+        ]
+      },
+      {
+        "filtration_order": 3,
+        "coefficient_dimensions": {
+          "base": 6,
+          "sector": 5,
+          "spectator": 3
+        },
+        "chain_dimensions": [
+          52,
+          60,
+          6
+        ],
+        "ranks": [
+          46,
+          6
+        ],
+        "cohomology": [
+          6,
+          8,
+          0
+        ]
+      },
+      {
+        "filtration_order": 4,
+        "coefficient_dimensions": {
+          "base": 10,
+          "sector": 13,
+          "spectator": 6
+        },
+        "chain_dimensions": [
+          98,
+          117,
+          10
+        ],
+        "ranks": [
+          88,
+          10
+        ],
+        "cohomology": [
+          10,
+          19,
+          0
+        ]
+      }
+    ],
+    "degree_30": [
+      {
+        "omitted_composite_cut": 10,
+        "annihilator_power": "z^2",
+        "chain_dimensions": [
+          14,
+          15,
+          2
+        ],
+        "ranks": [
+          12,
+          2
+        ],
+        "cohomology": [
+          2,
+          1,
+          0
+        ]
+      },
+      {
+        "omitted_composite_cut": 15,
+        "annihilator_power": "z^2",
+        "chain_dimensions": [
+          14,
+          15,
+          2
+        ],
+        "ranks": [
+          12,
+          2
+        ],
+        "cohomology": [
+          2,
+          1,
+          0
+        ]
+      },
+      {
+        "omitted_composite_cut": 6,
+        "annihilator_power": "z^4",
+        "chain_dimensions": [
+          14,
+          15,
+          2
+        ],
+        "ranks": [
+          12,
+          2
+        ],
+        "cohomology": [
+          2,
+          1,
+          0
+        ]
+      }
+    ],
+    "uniform_statement": "for every coefficient module M and every filtration quotient, the filled-disk block has H2=0 and the relative half-path block has no degree-two term; therefore the prototype has H2=0 in every filtration degree",
+    "first_nontrivial_H2": {
+      "degree_42_prototype": null,
+      "degree_30_prototype": null,
+      "interpretation": "there is no first nonzero cellular H2 in the prototype; any algebraic H2 of the actual cotangent complex must lie in internal higher cotangent homology or in the mapping cone of coefficient effectivity"
+    }
+  },
+  "HRCELL1_to_HRCELL5_comparison": {
+    "HRCELL1": "split associated-graded cellular matrices",
+    "HRCELL2": "first non-split sector--spectator jets",
+    "HRCELL3": "completed ideal-module non-splitting",
+    "HRCELL4": "nonzero cotangent transitivity connecting morphism",
+    "HRCELL5": "overlap zero; finite-jet excess is base-change Tor"
+  },
+  "success_criterion": {
+    "first_failed_filtration_order": 3,
+    "order_3_extension": {
+      "dimensions": {
+        "sector": 5,
+        "spectator": 3,
+        "total": 8
+      },
+      "coboundary_rank": 7,
+      "augmented_rank": 8,
+      "obstruction_value": "1"
+    },
+    "order_4_persistence": {
+      "dimensions": {
+        "sector": 13,
+        "spectator": 6,
+        "total": 19
+      },
+      "coboundary_rank": 52,
+      "augmented_rank": 53,
+      "obstruction_value": "-3"
+    },
+    "completed_conormal_projection": {
+      "dimensions": {
+        "kernel": 4,
+        "total": 6,
+        "spectator": 2
+      },
+      "coboundary_rank": 5,
+      "augmented_rank": 6,
+      "obstruction_value": "2",
+      "splits": false
+    },
+    "first_postnikov_overlap_vanishes": true,
+    "conclusion": "the obstruction is not a cellular topological H2 class.  It is the nonzero filtered extension/connecting morphism lost when K/I6 is replaced by (I_boundary/I6) direct_sum (K/I_boundary).  Thus the general cellwise homotopy limit does not reduce to the split HRCELL1 prototype; it can reduce only to the extension-retaining Postnikov tower of HRCELL2--HRCELL5",
+    "artifact_hashes": {
+      "degree42_ritt_cellular_extension.json": "377ebc7b48f23910f04d77a7e7a129909e7718cd4c7ffcf01f07c688ca303ae8",
+      "degree42_ritt_conormal_transitivity.json": "bec6823cee90464f6a9113499704aa00a3339aabcbd9e11c1d0cf27bb8168b14",
+      "degree42_ritt_postnikov_overlap.json": "ecf69d72a0d6e18d5e5ac3ca66215c7bedc512d1392c299952fba1164de58e56"
+    }
+  },
+  "theorem_boundary": "This completes the explicit prototype and identifies the first higher obstruction.  It does not compute the individual H_i of the actual cotangent complexes for i>=2 and does not prove global coefficient effectivity on the other degree-42 charts.",
+  "reproducing_command": ".venv/bin/python scripts/verify_ritt_cellular_prototype_completion.py"
+}

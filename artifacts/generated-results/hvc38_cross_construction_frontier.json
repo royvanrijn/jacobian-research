@@ -1,0 +1,163 @@
+{
+  "format": "hvc38-cross-construction-frontier-v1",
+  "field": "QQ",
+  "public_construction": {
+    "source": "https://github.com/mtraboulsi689/Nested-Tail-components-for-Keller-Maps",
+    "commit": "73635c96034bb8364c036fbec2e366224e601b40",
+    "degree_three_dimension": 11,
+    "cubic_output_rank": 7,
+    "compressed_homogeneous_dimension": 19,
+    "quartic_HN_dimension": 38
+  },
+  "local_independent_construction": {
+    "canonical_source": "verified/TWELVE_VARIABLE_DEGREE_THREE_KELLER_COUNTEREXAMPLE.md",
+    "degree_three_dimension": 12,
+    "cubic_output_rank": 6,
+    "compressed_homogeneous_dimension": 19,
+    "quartic_HN_dimension": 38
+  },
+  "next_standard_doubling_target": {
+    "required_n_plus_cubic_rank_at_most": 17,
+    "required_cubic_homogeneous_dimension_at_most": 18,
+    "next_even_quartic_HN_dimension": 36,
+    "note": "The ordinary homogeneous cotangent lift doubles dimension, so this pipeline cannot produce dimension 37."
+  },
+  "public_G11_quadratic_pivot_completion_obstructions": [
+    {
+      "pivot": "a",
+      "allowed_target_outputs": 8,
+      "completion_columns": 44,
+      "system_shape": [
+        1213,
+        44
+      ],
+      "rank": 44,
+      "augmented_rank": 45
+    },
+    {
+      "pivot": "b",
+      "allowed_target_outputs": 8,
+      "completion_columns": 44,
+      "system_shape": [
+        1464,
+        44
+      ],
+      "rank": 44,
+      "augmented_rank": 45
+    },
+    {
+      "pivot": "c",
+      "allowed_target_outputs": 6,
+      "completion_columns": 27,
+      "system_shape": [
+        667,
+        27
+      ],
+      "rank": 27,
+      "augmented_rank": 28
+    },
+    {
+      "pivot": "q",
+      "allowed_target_outputs": 9,
+      "completion_columns": 54,
+      "system_shape": [
+        707,
+        54
+      ],
+      "rank": 54,
+      "augmented_rank": 55
+    },
+    {
+      "pivot": "s",
+      "allowed_target_outputs": 9,
+      "completion_columns": 54,
+      "system_shape": [
+        667,
+        54
+      ],
+      "rank": 54,
+      "augmented_rank": 55
+    },
+    {
+      "pivot": "h",
+      "allowed_target_outputs": 9,
+      "completion_columns": 54,
+      "system_shape": [
+        998,
+        54
+      ],
+      "rank": 54,
+      "augmented_rank": 55
+    },
+    {
+      "pivot": "k",
+      "allowed_target_outputs": 9,
+      "completion_columns": 54,
+      "system_shape": [
+        1061,
+        54
+      ],
+      "rank": 54,
+      "augmented_rank": 55
+    }
+  ],
+  "local_F12_nonlinear_z8_pivot": {
+    "pivot": "z8",
+    "allowed_target_outputs": [
+      1,
+      5,
+      6,
+      7,
+      9,
+      10,
+      11,
+      12
+    ],
+    "target_degree_bound": 2,
+    "completion_basis_size": 44,
+    "degree_at_least_three_system_shape": [
+      206,
+      44
+    ],
+    "degree_at_least_three_rank": 39,
+    "degree_at_most_two_pullback_dimension": 5,
+    "quadratic_part_rank": 5,
+    "quadratic_part_augmented_rank_for_z1z2": 6,
+    "identity_on_pivot_slice": "K4=z4+(z1*z2)^2-P(K_allowed)^2",
+    "conclusion": "No target completion of degree at most 2 in the eight z8-independent output components can make the z8 pivot restriction degree at most 3."
+  },
+  "local_F12_coordinated_source_shear": {
+    "sheared_source_coordinates": [
+      "z4",
+      "z7",
+      "z9",
+      "z10",
+      "z11"
+    ],
+    "quadratic_base_variables": [
+      "z1",
+      "z2",
+      "z3",
+      "z5",
+      "z6",
+      "z8",
+      "z12"
+    ],
+    "high_degree_system_shape": [
+      146,
+      140
+    ],
+    "high_degree_rank": 126,
+    "degree_preserving_kernel_dimension": 14,
+    "fixed_cubic_minor": {
+      "size": 5,
+      "determinant": "6"
+    },
+    "rank_at_most_five_equations": 6,
+    "rank_at_most_five_linear_equations": 6,
+    "rank_at_most_five_linear_rank": 5,
+    "rank_at_most_five_augmented_rank": 6,
+    "conclusion": "No member of this 14-parameter degree-preserving coordinated quadratic source-shear family has cubic-output rank at most 5."
+  },
+  "scope": "Exact bounded obstructions only. They do not exclude nonlinear coordinate pairs outside the stated bases, higher-degree automorphisms, non-nested state realizations, or a symmetric lift that avoids full dimension doubling."
+}

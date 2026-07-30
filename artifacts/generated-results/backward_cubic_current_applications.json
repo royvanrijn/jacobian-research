@@ -1,0 +1,144 @@
+{
+  "format": "backward-cubic-current-applications-v1",
+  "status": "exact audit of retained bounded-search representatives; not a lower bound and no new counterexample",
+  "current_fields": {
+    "arbitrary_degree_three_dimension": {
+      "objective": "(base dimension, homogeneous dimension, cubic rank)",
+      "best_retained_key": [
+        18,
+        26,
+        7
+      ],
+      "incumbent_macfarlane_key": [
+        13,
+        20,
+        6
+      ]
+    },
+    "cubic_homogeneous_dimension": {
+      "objective": "(raw homogeneous dimension, base dimension, cubic rank)",
+      "best_retained_key": [
+        26,
+        18,
+        7
+      ],
+      "incumbent_macfarlane_dimension": 20,
+      "best_retained_constant_kernel_quotient_dimension": 22
+    },
+    "homogeneous_quartic_hessian_nilpotent_dimension": {
+      "upper_bound": 40,
+      "construction": "standard homogeneous cotangent lift of the pinned MacFarlane G20 certificate",
+      "internal_independent_replay_upper_bound": 42
+    },
+    "restricted_rank_minima": {
+      "policy": "retain its existing rank/index/Hessian Pareto objective and record the backward keys as independent metadata",
+      "collision_policy": "at least one exact collision pair must remain distinct",
+      "homogenizing_level_policy": "normalize to t=1; all nonzero parent fibers scale to the base map and the t=0 fiber is injective"
+    }
+  },
+  "archive_scope": {
+    "files": [
+      "restricted_bcw_circuit_search_xxs_w32_d28.json",
+      "restricted_bcw_circuit_search_yvyb_structural_w22.json",
+      "restricted_bcw_circuit_search_ayb_yvyb_w36.json",
+      "restricted_bcw_circuit_search_xvvz_v2h_structural_w25.json",
+      "restricted_bcw_circuit_search_xvvz_v2h_mixed_w25.json",
+      "restricted_bcw_circuit_search_aspert_m12.json",
+      "restricted_bcw_circuit_search_xxs_rank_hybrid_w24.json",
+      "restricted_bcw_circuit_search_xxs_v2r_w16.json",
+      "restricted_bcw_circuit_search_xxs_y2vb_w16.json",
+      "restricted_bcw_circuit_search_all_w64.json"
+    ],
+    "retained_representative_count": 13,
+    "warning": "the historical archives were selected by restricted-rank objectives, so their absence of a smaller direct key cannot be interpreted as a failed direct-dimension search"
+  },
+  "exact_replays": [
+    {
+      "archive": "restricted_bcw_circuit_search_aspert_m12.json",
+      "pareto_index": 0,
+      "direct_cubic_key": [
+        18,
+        26,
+        7
+      ],
+      "homogeneous_key": [
+        26,
+        18,
+        7
+      ],
+      "constant_kernel_quotient_dimension": 23,
+      "source_collision_pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "projected_collision_pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "archive": "restricted_bcw_circuit_search_all_w64.json",
+      "pareto_index": 2,
+      "direct_cubic_key": [
+        19,
+        28,
+        8
+      ],
+      "homogeneous_key": [
+        28,
+        19,
+        8
+      ],
+      "constant_kernel_quotient_dimension": 22,
+      "source_collision_pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "projected_collision_pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ]
+    }
+  ],
+  "conclusion": "none of the retained restricted-minima representatives improves MacFarlane in either backward objective; future searches must maintain a separate direct-dimension archive"
+}

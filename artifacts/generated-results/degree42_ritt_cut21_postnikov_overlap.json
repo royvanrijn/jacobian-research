@@ -1,0 +1,57 @@
+{
+  "schema": "degree42-ritt-cut21-postnikov-overlap.v1",
+  "status": "exact completed first-Postnikov half-braid comparison",
+  "word": [
+    3,
+    2,
+    7
+  ],
+  "opposite_word": [
+    7,
+    2,
+    3
+  ],
+  "thick_composite_omission": 21,
+  "thin_prime_omission": 2,
+  "completed_base_ring": "B=Q[[tau,zeta]]=completed R/K",
+  "source_ideal_cache": "artifacts/generated-results/degree42_ritt_rotated_source_ideals_327.json.gz",
+  "source_ideal_cache_sha256": "d126307d3e0f1968edadde1f2172322f0a432f18b9d3f1f38cd62a7788fc9cb7",
+  "jet_artifact": "artifacts/generated-results/degree42_ritt_rotated_conormal_jet_327.json",
+  "jet_artifact_sha256": "5e6474509292a20047d8fcaea8b54858291c220bf7365c373a8c243fd34315cf",
+  "calculation": {
+    "word": [
+      3,
+      2,
+      7
+    ],
+    "thick_composite_omission": 21,
+    "thin_prime_omission": 2,
+    "thin_boundary_nakayama": {
+      "boundary_remainder_generators": 0,
+      "tautological_reverse_remainder_generators": 0,
+      "completed_equality": true
+    },
+    "sector_source_mod_base_square": {
+      "artin_rees_cutoff": 4,
+      "cutoff_intersection_generators": 495,
+      "cutoff_remainder_generators": 0,
+      "denominator_quotient_length": 19,
+      "numerator_quotient_length": 16,
+      "dimension": 3
+    },
+    "quadratic_overlap_mod_base_square": {
+      "numerator_generators": 61,
+      "artin_rees_cutoff": 5,
+      "cutoff_intersection_generators": 1278,
+      "cutoff_remainder_generators": 0,
+      "denominator_quotient_length": 34,
+      "numerator_quotient_length": 34,
+      "dimension": 0
+    }
+  },
+  "thin_boundary_consequence": "I_boundary is contained in I_thin+m*I_boundary and I_thin is contained in I_boundary. Nakayama therefore proves equality of their completed ideals.",
+  "postnikov_consequence": "The explicit cutoff-5 containment and equal finite lengths prove that the quadratic overlap has zero base-square quotient. Nakayama then gives I_boundary intersect (I_thick+K^2) = I_thick+K*I_boundary after completion, so the associated first-Postnikov conormal sequence is short exact.",
+  "base_change_consequence": "The sector source modulo (tau,zeta)^2 has dimension 3, while the q2 quotient-length difference shows a one-dimensional image after finite base change. The two-dimensional loss is non-flat base-change Tor, not completed quadratic overlap.",
+  "derived_boundary": "Together with the cut-6 and cut-14 certificates, this proves the completed comparison through H_1 on every degree-42 half-braid. It does not prove non-split extension transport, braid restriction coherence, or individual H_i for i>=2.",
+  "reproducing_command": ".venv/bin/python scripts/verify_degree42_ritt_cut21_postnikov_overlap.py"
+}

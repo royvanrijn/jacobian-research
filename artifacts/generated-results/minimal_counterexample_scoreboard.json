@@ -12,11 +12,11 @@
     },
     "cubic_homogeneous_Keller_noninvertibility": {
       "lower_bound": 5,
-      "upper_bound": 21,
+      "upper_bound": 19,
       "exact_value": null,
       "status": "open interval",
-      "lower_bound_reason": "cubic-homogeneous Keller maps are known invertible through ambient dimension four",
-      "upper_bound_reason": "the certified essential cubic-homogeneous collision uses 21 variables"
+      "lower_bound_reason": "cubic-homogeneous Keller maps are invertible through dimension four",
+      "upper_bound_reason": "the exact F12 coordinate-pair reduction has cubic-output rank six, giving a 12+6+1=19 rank-compressed parent"
     },
     "Druzkowski_Keller_noninvertibility": {
       "lower_bound": 6,
@@ -60,11 +60,11 @@
     },
     "homogeneous_quartic_HN_VC_failure_dimension": {
       "lower_bound": 6,
-      "upper_bound": 42,
+      "upper_bound": 38,
       "exact_value": null,
       "status": "open interval",
-      "lower_bound_reason": "the homogeneous symmetric nilpotent-Jacobian case is known through dimension five",
-      "upper_bound_reason": "the certified homogeneous HN quartic counterexample uses 42 variables"
+      "lower_bound_reason": "the symmetric homogeneous nilpotent-Jacobian result holds through dimension five",
+      "upper_bound_reason": "the homogeneous cotangent lift of the exact 19-variable cubic parent has dimension 38"
     }
   },
   "rank_and_index_frontiers": {
@@ -120,7 +120,7 @@
     "general_Keller_counterexample_total_degree": {
       "exact_value": 3,
       "lower_reason": "Wang's theorem proves every quadratic Keller map invertible",
-      "upper_reason": "the certified 21-variable cubic-homogeneous collision has degree 3"
+      "upper_reason": "the pinned external MacFarlane G20 collision has degree 3"
     },
     "Gaussian_moment_counterexample_total_degree": {
       "exact_value": 3,
@@ -130,6 +130,11 @@
   },
   "smallest_certified_witnesses": {
     "cubic_homogeneous_Keller": {
+      "dimension": 19,
+      "artifact": "macfarlane_f12_coordinate_pair_reduction.json",
+      "certificate_scope": "exact rank-compressed parent of the independently replayed twelve-variable map"
+    },
+    "cubic_homogeneous_Keller_internal_independent_replay": {
       "dimension": 21,
       "artifact": "essential_bcw_21_counterexample.json"
     },
@@ -148,8 +153,9 @@
       "artifact": "image_vanishing_counterexamples_20_40.json"
     },
     "homogeneous_quartic_HN_VC": {
-      "dimension": 42,
-      "artifact": "image_vanishing_counterexamples_21_42.json"
+      "dimension": 38,
+      "derived_from": "the exact G19 parent by the homogeneous cotangent lift",
+      "certificate_scope": "exact F12/G19 determinant certificate plus the homogeneous cotangent bridge"
     },
     "nonhomogeneous_HN_degree_at_most_4_rank": {
       "dimension": 40,
@@ -160,7 +166,7 @@
         4
       ],
       "artifact": "hessian_rank_34_double_identity_slice_counterexample.json",
-      "scope_warning": "this does not change the homogeneous quartic HN rank-37 or dimension-42 frontiers"
+      "scope_warning": "this does not change the homogeneous quartic HN rank-37 or certified dimension-38 frontiers"
     }
   },
   "promotion_policy": "Only exact identities or cited positive theorems change an endpoint; modular and bounded searches remain diagnostics.",

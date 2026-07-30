@@ -137,6 +137,107 @@ Consequently there is a canonical cartesian fiber identification
 The second isomorphism is `T=a+S`.  It is an isomorphism of finite-etale
 `U_N`-schemes of rank `N`, not only a bijection on geometric points.
 
+### 1.1 The universal ordered-collision cover
+
+The collision-algebra and divided-difference interface used here is credited
+to Chloe van der Vlugt's *Collision Ideals and Off-Diagonal Sheets*.  The
+[external audit and credit ledger](COLLISION_IDEALS_EXTERNAL_AUDIT.md)
+records the separately attributed manuscript, public Lean repository,
+license, AI-assistance disclosure, and exact formalization boundary.  The
+universal ordered-root application below is a deduction in this repository,
+not a claim that it appears in that paper.
+
+Put
+
+\[
+ R_N={\cal O}(U_N),\qquad
+ B_N=R_N[T]/({\cal P}(T)).
+\]
+
+By (1.9), the ordered self-collision fiber of the distinguished Keller fiber
+has coordinate algebra
+
+\[
+\boxed{
+ C_N=B_N\otimes_{R_N}B_N
+ \simeq
+ \frac{R_N[T_1,T_2]}
+      {({\cal P}(T_1),{\cal P}(T_2))}.}                \tag{1.10}
+\]
+
+Diagonal restriction is multiplication
+
+\[
+ \mu_N:C_N\longrightarrow B_N,\qquad
+ f(T_1,T_2)\longmapsto f(T,T),                        \tag{1.11}
+\]
+
+and the fiberwise collision obstruction is
+`\mathfrak o_N=\ker(\mu_N)`.  Introduce the divided difference
+
+\[
+ D_{\cal P}(T_1,T_2)
+ =\frac{{\cal P}(T_2)-{\cal P}(T_1)}{T_2-T_1}.        \tag{1.12}
+\]
+
+The discriminant is a unit on `U_N`, so the class of
+`${\cal P}'(T_1)$` is a unit in `B_N`.  If `\eta(T_1)` denotes its inverse,
+then
+
+\[
+ e_\Delta=\eta(T_1)D_{\cal P}(T_1,T_2)\in C_N         \tag{1.13}
+\]
+
+is the canonical diagonal idempotent: it is one modulo `T_2-T_1` and zero
+modulo `D_{\cal P}`.  Since
+
+\[
+ {\cal P}(T_2)-{\cal P}(T_1)
+ =(T_2-T_1)D_{\cal P}(T_1,T_2),
+\]
+
+the Chinese remainder theorem gives the exact splitting
+
+\[
+\boxed{
+ C_N\simeq B_N\times B_N^{\mathrm{off}},\qquad
+ B_N^{\mathrm{off}}
+ =\frac{R_N[T_1,T_2]}
+        {({\cal P}(T_1),D_{\cal P}(T_1,T_2))}.}        \tag{1.14}
+\]
+
+Under (1.14), `e_\Delta=(1,0)`, multiplication is projection to the first
+factor, and
+
+\[
+ \mathfrak o_N=(1-e_\Delta)C_N\simeq B_N^{\mathrm{off}}.
+                                                               \tag{1.15}
+\]
+
+All three algebras are finite etale over `R_N`, with locally free ranks
+
+\[
+\boxed{
+ \operatorname{rk}C_N=N^2,\qquad
+ \operatorname{rk}B_N=N,\qquad
+ \operatorname{rk}B_N^{\mathrm{off}}=N(N-1).}         \tag{1.16}
+\]
+
+Functorially, (1.10) represents ordered pairs of points of the selected
+fiber; (1.14) separates equal pairs from ordered distinct pairs.  Thus every
+compiled full fiber `Spec(A)` of the absolute map `{\cal U}_N` has the
+canonical collision decomposition
+
+\[
+ \operatorname{Spec}(A\otimes_kA)
+ =\Delta(\operatorname{Spec}A)
+ \sqcup\operatorname{Spec}(A^{\mathrm{off}}),          \tag{1.17}
+\]
+
+with off-diagonal rank `N(N-1)`.  Special fibers may split further.  The
+generic connectedness, normal-closure boundary, and higher distinct-root
+tower are determined by monodromy in Section 5.
+
 ## 2. Exact normalization of the proposed base
 
 The base (1.1) has one redundant translation parameter.  Define
@@ -754,11 +855,31 @@ The map `q_N` is an etale-local presentation atlas: after a rank-`N`
 finite-etale algebra is split, choose `N` distinct rational constants as a
 primitive coordinate and choose an origin avoiding the two jet divisors.
 
+The ordered-collision construction itself is choice-free.  For every
+rank-`N` finite-etale cover `E->S`, put
+
+\[
+ \operatorname{Off}_2(E/S)
+ =(E\times_SE)\setminus\Delta_E.
+\]
+
+This is a rank-`N(N-1)` finite-etale cover and defines the stack morphism
+
+\[
+\boxed{
+ \operatorname{Off}_2:BS_N\longrightarrow BS_{N(N-1)}}              \tag{4.3}
+\]
+
+induced by the action of `S_N` on ordered distinct pairs.  Pulling (4.3)
+back along `q_N` gives exactly `Spec(B_N^{\mathrm{off}})` from (1.14).
+Thus the collision cover descends through abstract finite-etale moduli even
+though the surrounding quadratic-gauge Keller presentation need not.
+
 Diagram (4.2) is the correct immediate output.  It does **not** reverse to
 a canonical arrow
 
 \[
- BS_N\longrightarrow\mathscr I_N.                      \tag{4.3}
+ BS_N\longrightarrow\mathscr I_N.                      \tag{4.4}
 \]
 
 Such an arrow would be a choice-free lift of a finite-etale algebra to a
@@ -766,7 +887,7 @@ Keller incidence object.  Descent of the displayed construction would
 require an isomorphism between the two pullbacks of `\kappa_N` to
 
 \[
- I_N\times_{BS_N}I_N                                   \tag{4.4}
+ I_N\times_{BS_N}I_N                                   \tag{4.5}
 \]
 
 satisfying the cocycle condition.
@@ -775,18 +896,59 @@ For `N>=5`, the quadratic-gauge family fails this test generically after
 passing even to stable polynomial left--right classes.  The universal
 quintic and higher-rank multiplicity theorems exhibit one finite-etale
 algebra with translated primitive presentations whose quadratic-gauge maps
-have different stable invariants.  Those points lie in (4.4), but their
+have different stable invariants.  Those points lie in (4.5), but their
 images in stable Keller incidence are nonisomorphic.  Hence:
 
 \[
 \boxed{\text{the quadratic-gauge atlas map does not descend through full
-Tschirnhaus equivalence for }N\ge5.}                    \tag{4.5}
+Tschirnhaus equivalence for }N\ge5.}                    \tag{4.6}
 \]
 
 This rules out descent of this particular atlas construction.  It does not
-rule out a different, genuinely presentation-free morphism (4.3).
-Ranks three and four require separate inertia and cocycle analyses; stable
-coarse classes alone do not settle them.
+rule out a different, genuinely presentation-free morphism (4.4).
+
+The [rank-three collision-framed descent audit](RANK_THREE_COLLISION_DESCENT.md)
+now resolves the finite inertia and presentation cocycle in degree three.
+There the off-diagonal pair cover is the full `S_3` frame torsor, and the
+unique projective transition between framed root triples lifts to the
+foundational factorization map after target localization.  The remaining
+rank-three question is global polynomial extension across the explicit
+normalizing-denominator divisor; only the scaling torus is denominator-free
+within that canonical transport.  The
+[rank-four collision-frame audit](RANK_FOUR_COLLISION_CROSS_RATIO.md)
+identifies `Conf_3` with the full `S_4` frame torsor and computes the exact
+cross-ratio defect
+`q_2^2-q_1q_3+q_2q_3e_1+q_3^2e_2`.  Canonical projective root transport
+exists only on its zero locus; a genuinely nonprojective Keller lift remains
+open off that hypersurface.  Stable coarse classes alone do not settle either
+global question.
+
+The
+[all-rank collision-projective theorem](ALL_RANK_COLLISION_PROJECTIVE_DESCENT.md)
+gives the uniform boundary between these cases.  If `r` and `q(r)` are two
+primitive coordinates in the normalized degree-`N` quotient, projective
+transport exists exactly when the columns `1,r,q(r),r*q(r)` have rank at
+most three.  In the basis `1,r,...,r^(N-1)`, after multiplying the last
+column by the leading coefficient, these columns form the polynomial matrix
+
+\[
+ C_N=
+ \begin{pmatrix}
+ 1&0&q_0&-a_0q_{N-1}\\
+ 0&1&q_1&a_Nq_0-q_{N-1}\\
+ 0&0&q_2&a_Nq_1-a_2q_{N-1}\\
+ \vdots&\vdots&\vdots&\vdots\\
+ 0&0&q_{N-1}&a_Nq_{N-2}-a_{N-1}q_{N-1}
+ \end{pmatrix}.                                      \tag{4.7}
+\]
+
+Here `(a_0,1,a_2,...,a_N)` are the coefficients of the normalized inverse
+equation.  Substitution of (3.6) puts every `4`-by-`4` minor of (4.7)
+directly in the actual `({\bf u},pi,b,c)` coordinates.  On the primitive
+overlap these minors cut out a smooth codimension-`N-3` locus.  Therefore
+`Conf_(N-1)` removes all finite `S_N` inertia, but a full presentation
+descent must still lift `N-3` independent nonprojective Tschirnhaus
+directions away from this locus.
 
 ## 5. Braid and symmetric monodromy
 
@@ -810,6 +972,62 @@ Thus
 \[
  \boxed{\operatorname{Mon}(q_N)=S_N.}                  \tag{5.2}
 \]
+
+On the collision cover this monodromy acts diagonally on ordered pairs:
+
+\[
+ [N]\times[N]
+ =\{(i,i):i\in[N]\}\sqcup\{(i,j):i\ne j\}.             \tag{5.3}
+\]
+
+These are exactly the two factors in (1.14).  The off-diagonal action is
+transitive, and the stabilizer of `(1,2)` is the pointwise stabilizer
+`S_{N-2}` of the remaining labels.  If `K_N=Frac(R_N)` and `M_N` is the
+splitting field of the generic polynomial, then
+
+\[
+\boxed{
+ \operatorname{Frac}(B_N^{\mathrm{off}})
+ =K_N(\alpha_1,\alpha_2)
+ =M_N^{S_{N-2}},\qquad
+ [K_N(\alpha_1,\alpha_2):K_N]=N(N-1).}                \tag{5.4}
+\]
+
+For `N=3`, the stabilizer `S_1` is trivial, so the generic off-diagonal
+sheet is the full splitting field:
+
+\[
+ B_3^{\mathrm{off}}\otimes_{R_3}K_3\simeq M_3,\qquad
+ \operatorname{Gal}(M_3/K_3)\simeq S_3.               \tag{5.5}
+\]
+
+This is precisely why a separable nonnormal cubic collision sheet is its
+`S_3` normal closure.  For every `N>=4`, `S_{N-2}` is nontrivial and
+nonnormal in `S_N`; the generic pair sheet is connected but not Galois and
+must not be called the normal closure.  Specialization can lower the
+monodromy or disconnect the off-diagonal algebra.
+
+There is a canonical higher extension.  For `1<=m<=N`, let
+
+\[
+ \operatorname{Conf}_m(X_N/U_N)
+ =X_N^m\setminus\bigcup_{i<j}\{T_i=T_j\},             \tag{5.6}
+\]
+
+where `X_N=Spec(B_N)`.  It is the clopen finite-etale cover of ordered
+`m`-tuples of distinct roots.  The `S_N`-action is transitive with stabilizer
+`S_{N-m}`, and hence
+
+\[
+\boxed{
+ \operatorname{rk}\operatorname{Conf}_m
+ =\frac{N!}{(N-m)!},\qquad
+ K(\operatorname{Conf}_m)=M_N^{S_{N-m}}.}             \tag{5.7}
+\]
+
+At `m=N-1` and `m=N` the stabilizer is trivial, so the tower reaches the
+full `S_N` splitting field in every rank.  The cubic pair sheet is the first
+case because `m=2=N-1` when `N=3`.
 
 The extra jet-complement meridians enlarge the fundamental group of the
 chosen presentation open, but their permutation action factors through the
@@ -871,20 +1089,29 @@ Proved here:
 
 1. the literal relative map (1.5), its block-triangular Jacobian, and its
    universal finite-etale marked fiber;
-2. the exact compression `U_N=V_N x A^1`;
-3. the sharp `N-3`-parameter relative map (3.3);
-4. one absolute determinant-one map of `A^N` in every rank `N>=3`, universal
+2. the universal ordered collision algebra, its explicit diagonal idempotent,
+   its rank-`N(N-1)` off-diagonal factor, and the higher distinct-root tower;
+3. the exact compression `U_N=V_N x A^1`;
+4. the sharp `N-3`-parameter relative map (3.3);
+5. one absolute determinant-one map of `A^N` in every rank `N>=3`, universal
    for rank-`N` finite-etale fibers and absolutely and stably atomic;
-5. the stack triangle (4.2), symmetric monodromy, and the
+6. the stack triangle (4.2), canonical ordered-pair descent, symmetric
+   monodromy, and the
    essential-dimension lower bound for versal parameter schemes;
-6. generic failure, for `N>=5`, of descent of the quadratic-gauge atlas
-   through full presentation equivalence in stable Keller moduli.
+7. generic failure, for `N>=5`, of descent of the quadratic-gauge atlas
+   through full presentation equivalence in stable Keller moduli;
+8. the full `S_N` frame `Conf_(N-1)` and the intrinsic determinantal
+   projective locus of smooth codimension `N-3`, including its polynomial
+   equations in the universal Keller chart.
 
 Still open:
 
 1. whether a different enhancement of Keller incidence admits a
    presentation-free section of (4.1);
-2. the rank-three and rank-four descent cocycles and inertia;
+2. global polynomial extension of the target-localized rank-three
+   projective transport, an all-rank lift on the determinantal projective
+   locus, and a rank-four Keller lift of the single nonprojective
+   Tschirnhaus direction transverse to the cross-ratio hypersurface;
 3. the kernel of the braid action after the two jet divisors are removed;
 4. whether an `ed_k(S_N)`-dimensional versal finite-etale family admits any
    compatible relative polynomial Keller lift.
@@ -903,7 +1130,16 @@ normalized inverse equation and coefficientwise compiler through degree
 twelve, the `U_N=V_N x A^1` reconstruction, and the compressed
 specialization formulas.  It also verifies the adversarial witness cards and
 the all-rank `T^N-T-1` target formula through rank twelve, as well as the
-degree-drop, bad-translation, and repeated-root boundaries.  The Lean
+degree-drop, bad-translation, and repeated-root boundaries.  On the Osada
+`S_N` witnesses in ranks three through eight, it additionally verifies the
+two-variable collision presentation, divided-difference identity, Bezout
+idempotent, diagonal/off-diagonal Chinese-remainder factors, and exact ranks
+`N^2`, `N`, and `N(N-1)`.  An independent permutation audit checks every
+ordered distinct `m`-tuple orbit and stabilizer for `1<=m<=N<=8`.
+
+The Lean module `CollisionFiber.lean` formalizes the presentation-independent
+tensor collision algebra, diagonal multiplication, obstruction kernel,
+ordered-pair functor, and fieldwise obstruction rank.  The Lean
 modules `UniversalPromotedBlock.lean`, `UniversalPromotedMap.lean`,
 `UniversalPromotedGauge.lean`, `UniversalParameterCompiler.lean`,
 `UniversalParameterQuotient.lean`, and
@@ -912,4 +1148,43 @@ the literal promoted map on an `N`-element coordinate type and its actual
 Jacobian-one identity, the coefficient compiler, its quotient-algebra
 realization, and three quartic cards.  Symmetric monodromy and
 primitive-monodromy atomicity are not yet formalized in Lean and are not
-conclusions of a bounded symbolic computation.
+conclusions of a bounded symbolic computation.  The explicit relative
+divided-difference splitting and the higher configuration tower are also not
+yet Lean theorems.
+
+The separate command
+
+```bash
+.venv/bin/python scripts/verify_rank_three_collision_descent.py
+```
+
+checks the exact rank-three frame torsor, projective interpolation and
+cocycle, quadratic Tschirnhaus boundary ledger, target-localized
+factorization transport, and global scaling-torus endpoint.  It does not
+classify nonlinear polynomial self-equivalences outside that transport.
+
+The rank-four continuation is checked by
+
+```bash
+.venv/bin/python scripts/verify_rank_four_collision_cross_ratio.py
+```
+
+It verifies that ordered triples give the full `S_4` frame, factors both the
+fourth-root interpolation residual and the cross-ratio difference by the
+same explicit defect, separates that hypersurface from the primitive-element
+boundary, and writes it in the actual universal-quartic target coordinates.
+It does not assert that every Keller equivalence is projective on the root
+line.
+
+The all-rank determinantal continuation is checked by
+
+```bash
+.venv/bin/python scripts/verify_all_rank_collision_projective_descent.py
+```
+
+It verifies the full-frame completion through rank eight, the exact
+coefficient matrix (4.7), the cubic and quartic specializations, uniform
+projective and nonprojective witnesses, and the `N-3` independent framed
+residuals through rank ten.  The uniform theorem is the written
+linear-algebra argument; bounded symbolic replay is not substituted for that
+proof.

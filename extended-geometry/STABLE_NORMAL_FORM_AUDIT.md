@@ -4,7 +4,9 @@ The 190-variable Image and quartic HN witnesses below remain valid artifacts
 of the conservative 95-variable reduction.  They are no longer the best
 repository dimensions: the [identity-slice construction](IMAGE_VANISHING_COUNTEREXAMPLES.md)
 gives a direct `SIC(20)` witness and a 40-variable generalized Laplacian/HN
-witness, while the homogeneous classical quartic witness has dimension 42.
+witness.  The pinned external MacFarlane \(G_{20}\) certificate now gives a
+homogeneous classical quartic witness in dimension 40 by cotangent lift; the
+dimension-42 witness remains the smallest internal dependency-free replay.
 
 Their status is therefore historical and witness-specific.  Each valid
 artifact is enough to falsify the corresponding universally quantified

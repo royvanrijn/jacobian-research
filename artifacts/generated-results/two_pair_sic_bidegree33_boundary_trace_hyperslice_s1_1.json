@@ -1,0 +1,69 @@
+{
+  "characteristic_zero_result": {
+    "backend": "msolve over Q, exact sparse linear algebra 2",
+    "basis_size": 1,
+    "characteristic": 0,
+    "fixed_coordinate": {
+      "s1": 1
+    },
+    "free_variables": [
+      "t0",
+      "Q",
+      "t2",
+      "s3",
+      "s5",
+      "t4"
+    ],
+    "through_mu8_unit_ideal": true
+  },
+  "corrected_moments_used": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "fixed_coordinate": {
+    "s1": 1
+  },
+  "normalization": "s0=1, A=B=mu2=0, L=1",
+  "reproduction_command": ".venv/bin/python scripts/verify_two_pair_sic_bidegree33_boundary_trace_slice.py --primes 47,101 --s1 1 --t0 1 --timeout 600",
+  "results": [
+    {
+      "backend": "msolve linear algebra 44",
+      "basis_size": 1,
+      "fixed_coordinate": {
+        "s1": 1
+      },
+      "free_variables": [
+        "t0",
+        "Q",
+        "t2",
+        "s3",
+        "s5",
+        "t4"
+      ],
+      "prime": 47,
+      "through_mu8_unit_ideal": true
+    },
+    {
+      "backend": "msolve linear algebra 44",
+      "basis_size": 1,
+      "fixed_coordinate": {
+        "s1": 1
+      },
+      "free_variables": [
+        "t0",
+        "Q",
+        "t2",
+        "s3",
+        "s5",
+        "t4"
+      ],
+      "prime": 101,
+      "through_mu8_unit_ideal": true
+    }
+  ],
+  "scope": "complete finite-field hyperslice unit computations plus an exact characteristic-zero msolve certificate when present; not a global boundary certificate"
+}

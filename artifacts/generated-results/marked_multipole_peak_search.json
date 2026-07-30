@@ -1,0 +1,940 @@
+{
+  "status": "no counterexample in bounded search",
+  "scope": {
+    "max_factor_degree": 3,
+    "max_word_length": 2,
+    "factor_lower_coefficients": "zero (monomial factors)",
+    "linear_triangular_factors": true,
+    "seed_coefficients": "{0,1}",
+    "extended_seed_basis": true,
+    "maximum_seed_terms": 2,
+    "word_order": "length, total polydegree, polydegree tuple, coefficients, initial orientation"
+  },
+  "invariant_tested": "a globally lowering alternating word cannot start at a state with no complete lowering triangular shear",
+  "charts": [
+    {
+      "chart": "two-pole Laurent",
+      "boundaries": [
+        "0",
+        "infinity"
+      ],
+      "conductor_pairing": [
+        [
+          0,
+          1
+        ]
+      ],
+      "seed_function_count": 15,
+      "ordered_seed_pair_count": 225,
+      "locally_terminal_seed_pairs": 104,
+      "words_tested_from_terminal_pairs": 7488,
+      "globally_lowering_words": 0,
+      "all_words_tested": 15120,
+      "all_globally_lowering_words": 348,
+      "delayed_globally_lowering_words": 40,
+      "delayed_words_with_initial_complete_reduction": 40,
+      "delayed_reduced_jung_words": 0,
+      "delayed_polydegree_counts": {
+        "1,1": 36,
+        "1,2": 4
+      },
+      "peak_delta_sequences": {
+        "0,-1,-1": 132,
+        "0,-1,-2": 32,
+        "0,-1,-3": 4,
+        "0,-2,-1": 32,
+        "0,-2,-2": 96,
+        "0,-4,-4": 12,
+        "0,0,-1": 20,
+        "0,0,-2": 8,
+        "0,1,-1": 12
+      },
+      "largest_delayed_peak_excess": 1,
+      "largest_delayed_peak_trace": {
+        "initial_complete_reductions": [
+          {
+            "target": 1,
+            "polynomial": "-U",
+            "peak_before": 4,
+            "peak_after": 3
+          }
+        ],
+        "word": {
+          "polydegree": [
+            1,
+            1
+          ],
+          "factors": [
+            {
+              "target": 0,
+              "polynomial": "-U",
+              "peak_before": 4,
+              "peak_after": 5
+            },
+            {
+              "target": 1,
+              "polynomial": "U",
+              "peak_before": 5,
+              "peak_after": 3
+            }
+          ],
+          "states": [
+            {
+              "index": 0,
+              "first": "t",
+              "second": "(t**3 + 1)/t**2",
+              "peak": 4,
+              "boundary_valuations": [
+                {
+                  "boundary": "0",
+                  "orders": [
+                    1,
+                    -2
+                  ],
+                  "poles": [
+                    0,
+                    2
+                  ]
+                },
+                {
+                  "boundary": "infinity",
+                  "orders": [
+                    -1,
+                    -1
+                  ],
+                  "poles": [
+                    1,
+                    1
+                  ]
+                }
+              ],
+              "residue_character": [
+                {
+                  "boundary": "0",
+                  "initial_coefficients": [
+                    "1",
+                    "1"
+                  ]
+                },
+                {
+                  "boundary": "infinity",
+                  "initial_coefficients": [
+                    "1",
+                    "1"
+                  ]
+                }
+              ],
+              "conductor_pairing": [
+                [
+                  0,
+                  1
+                ]
+              ]
+            },
+            {
+              "index": 1,
+              "first": "-1/t**2",
+              "second": "(t**3 + 1)/t**2",
+              "peak": 5,
+              "boundary_valuations": [
+                {
+                  "boundary": "0",
+                  "orders": [
+                    -2,
+                    -2
+                  ],
+                  "poles": [
+                    2,
+                    2
+                  ]
+                },
+                {
+                  "boundary": "infinity",
+                  "orders": [
+                    2,
+                    -1
+                  ],
+                  "poles": [
+                    0,
+                    1
+                  ]
+                }
+              ],
+              "residue_character": [
+                {
+                  "boundary": "0",
+                  "initial_coefficients": [
+                    "-1",
+                    "1"
+                  ]
+                },
+                {
+                  "boundary": "infinity",
+                  "initial_coefficients": [
+                    "-1",
+                    "1"
+                  ]
+                }
+              ],
+              "conductor_pairing": [
+                [
+                  0,
+                  1
+                ]
+              ]
+            },
+            {
+              "index": 2,
+              "first": "-1/t**2",
+              "second": "t",
+              "peak": 3,
+              "boundary_valuations": [
+                {
+                  "boundary": "0",
+                  "orders": [
+                    -2,
+                    1
+                  ],
+                  "poles": [
+                    2,
+                    0
+                  ]
+                },
+                {
+                  "boundary": "infinity",
+                  "orders": [
+                    2,
+                    -1
+                  ],
+                  "poles": [
+                    0,
+                    1
+                  ]
+                }
+              ],
+              "residue_character": [
+                {
+                  "boundary": "0",
+                  "initial_coefficients": [
+                    "-1",
+                    "1"
+                  ]
+                },
+                {
+                  "boundary": "infinity",
+                  "initial_coefficients": [
+                    "-1",
+                    "1"
+                  ]
+                }
+              ],
+              "conductor_pairing": [
+                [
+                  0,
+                  1
+                ]
+              ]
+            }
+          ]
+        }
+      },
+      "largest_polydegree_delayed_trace": {
+        "polydegree": [
+          1,
+          2
+        ],
+        "factors": [
+          {
+            "target": 0,
+            "polynomial": "-U",
+            "peak_before": 5,
+            "peak_after": 5
+          },
+          {
+            "target": 1,
+            "polynomial": "-U**2",
+            "peak_before": 5,
+            "peak_after": 4
+          }
+        ],
+        "states": [
+          {
+            "index": 0,
+            "first": "t**2 + t",
+            "second": "(t**3 + 1)/t",
+            "peak": 5,
+            "boundary_valuations": [
+              {
+                "boundary": "0",
+                "orders": [
+                  1,
+                  -1
+                ],
+                "poles": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "boundary": "infinity",
+                "orders": [
+                  -2,
+                  -2
+                ],
+                "poles": [
+                  2,
+                  2
+                ]
+              }
+            ],
+            "residue_character": [
+              {
+                "boundary": "0",
+                "initial_coefficients": [
+                  "1",
+                  "1"
+                ]
+              },
+              {
+                "boundary": "infinity",
+                "initial_coefficients": [
+                  "1",
+                  "1"
+                ]
+              }
+            ],
+            "conductor_pairing": [
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "index": 1,
+            "first": "(t**2 - 1)/t",
+            "second": "(t**3 + 1)/t",
+            "peak": 5,
+            "boundary_valuations": [
+              {
+                "boundary": "0",
+                "orders": [
+                  -1,
+                  -1
+                ],
+                "poles": [
+                  1,
+                  1
+                ]
+              },
+              {
+                "boundary": "infinity",
+                "orders": [
+                  -1,
+                  -2
+                ],
+                "poles": [
+                  1,
+                  2
+                ]
+              }
+            ],
+            "residue_character": [
+              {
+                "boundary": "0",
+                "initial_coefficients": [
+                  "-1",
+                  "1"
+                ]
+              },
+              {
+                "boundary": "infinity",
+                "initial_coefficients": [
+                  "1",
+                  "1"
+                ]
+              }
+            ],
+            "conductor_pairing": [
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "index": 2,
+            "first": "(t**2 - 1)/t",
+            "second": "(2*t**2 + t - 1)/t**2",
+            "peak": 4,
+            "boundary_valuations": [
+              {
+                "boundary": "0",
+                "orders": [
+                  -1,
+                  -2
+                ],
+                "poles": [
+                  1,
+                  2
+                ]
+              },
+              {
+                "boundary": "infinity",
+                "orders": [
+                  -1,
+                  0
+                ],
+                "poles": [
+                  1,
+                  0
+                ]
+              }
+            ],
+            "residue_character": [
+              {
+                "boundary": "0",
+                "initial_coefficients": [
+                  "-1",
+                  "-1"
+                ]
+              },
+              {
+                "boundary": "infinity",
+                "initial_coefficients": [
+                  "1",
+                  "2"
+                ]
+              }
+            ],
+            "conductor_pairing": [
+              [
+                0,
+                1
+              ]
+            ]
+          }
+        ]
+      },
+      "counterexample": null
+    },
+    {
+      "chart": "three-pole rational",
+      "boundaries": [
+        "0",
+        "1",
+        "infinity"
+      ],
+      "conductor_pairing": [
+        [
+          0,
+          1
+        ]
+      ],
+      "seed_function_count": 28,
+      "ordered_seed_pair_count": 784,
+      "locally_terminal_seed_pairs": 480,
+      "words_tested_from_terminal_pairs": 34560,
+      "globally_lowering_words": 0,
+      "all_words_tested": 54432,
+      "all_globally_lowering_words": 694,
+      "delayed_globally_lowering_words": 126,
+      "delayed_words_with_initial_complete_reduction": 126,
+      "delayed_reduced_jung_words": 0,
+      "delayed_polydegree_counts": {
+        "1,1": 120,
+        "1,2": 6
+      },
+      "peak_delta_sequences": {
+        "0,-1,-1": 228,
+        "0,-1,-2": 66,
+        "0,-1,-3": 6,
+        "0,-2,-1": 96,
+        "0,-2,-2": 148,
+        "0,-3,-1": 4,
+        "0,-3,-2": 4,
+        "0,-3,-3": 4,
+        "0,-4,-4": 12,
+        "0,0,-1": 66,
+        "0,0,-2": 24,
+        "0,1,-1": 36
+      },
+      "largest_delayed_peak_excess": 1,
+      "largest_delayed_peak_trace": {
+        "initial_complete_reductions": [
+          {
+            "target": 1,
+            "polynomial": "-U",
+            "peak_before": 4,
+            "peak_after": 3
+          }
+        ],
+        "word": {
+          "polydegree": [
+            1,
+            1
+          ],
+          "factors": [
+            {
+              "target": 0,
+              "polynomial": "-U",
+              "peak_before": 4,
+              "peak_after": 5
+            },
+            {
+              "target": 1,
+              "polynomial": "U",
+              "peak_before": 5,
+              "peak_after": 3
+            }
+          ],
+          "states": [
+            {
+              "index": 0,
+              "first": "t",
+              "second": "(t**3 - 2*t**2 + t + 1)/(t**2 - 2*t + 1)",
+              "peak": 4,
+              "boundary_valuations": [
+                {
+                  "boundary": "0",
+                  "orders": [
+                    1,
+                    0
+                  ],
+                  "poles": [
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "boundary": "1",
+                  "orders": [
+                    0,
+                    -2
+                  ],
+                  "poles": [
+                    0,
+                    2
+                  ]
+                },
+                {
+                  "boundary": "infinity",
+                  "orders": [
+                    -1,
+                    -1
+                  ],
+                  "poles": [
+                    1,
+                    1
+                  ]
+                }
+              ],
+              "residue_character": [
+                {
+                  "boundary": "0",
+                  "initial_coefficients": [
+                    "1",
+                    "1"
+                  ]
+                },
+                {
+                  "boundary": "1",
+                  "initial_coefficients": [
+                    "1",
+                    "1"
+                  ]
+                },
+                {
+                  "boundary": "infinity",
+                  "initial_coefficients": [
+                    "1",
+                    "1"
+                  ]
+                }
+              ],
+              "conductor_pairing": [
+                [
+                  0,
+                  1
+                ]
+              ]
+            },
+            {
+              "index": 1,
+              "first": "-1/(t**2 - 2*t + 1)",
+              "second": "(t**3 - 2*t**2 + t + 1)/(t**2 - 2*t + 1)",
+              "peak": 5,
+              "boundary_valuations": [
+                {
+                  "boundary": "0",
+                  "orders": [
+                    0,
+                    0
+                  ],
+                  "poles": [
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "boundary": "1",
+                  "orders": [
+                    -2,
+                    -2
+                  ],
+                  "poles": [
+                    2,
+                    2
+                  ]
+                },
+                {
+                  "boundary": "infinity",
+                  "orders": [
+                    2,
+                    -1
+                  ],
+                  "poles": [
+                    0,
+                    1
+                  ]
+                }
+              ],
+              "residue_character": [
+                {
+                  "boundary": "0",
+                  "initial_coefficients": [
+                    "-1",
+                    "1"
+                  ]
+                },
+                {
+                  "boundary": "1",
+                  "initial_coefficients": [
+                    "-1",
+                    "1"
+                  ]
+                },
+                {
+                  "boundary": "infinity",
+                  "initial_coefficients": [
+                    "-1",
+                    "1"
+                  ]
+                }
+              ],
+              "conductor_pairing": [
+                [
+                  0,
+                  1
+                ]
+              ]
+            },
+            {
+              "index": 2,
+              "first": "-1/(t**2 - 2*t + 1)",
+              "second": "t",
+              "peak": 3,
+              "boundary_valuations": [
+                {
+                  "boundary": "0",
+                  "orders": [
+                    0,
+                    1
+                  ],
+                  "poles": [
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "boundary": "1",
+                  "orders": [
+                    -2,
+                    0
+                  ],
+                  "poles": [
+                    2,
+                    0
+                  ]
+                },
+                {
+                  "boundary": "infinity",
+                  "orders": [
+                    2,
+                    -1
+                  ],
+                  "poles": [
+                    0,
+                    1
+                  ]
+                }
+              ],
+              "residue_character": [
+                {
+                  "boundary": "0",
+                  "initial_coefficients": [
+                    "-1",
+                    "1"
+                  ]
+                },
+                {
+                  "boundary": "1",
+                  "initial_coefficients": [
+                    "-1",
+                    "1"
+                  ]
+                },
+                {
+                  "boundary": "infinity",
+                  "initial_coefficients": [
+                    "-1",
+                    "1"
+                  ]
+                }
+              ],
+              "conductor_pairing": [
+                [
+                  0,
+                  1
+                ]
+              ]
+            }
+          ]
+        }
+      },
+      "largest_polydegree_delayed_trace": {
+        "polydegree": [
+          1,
+          2
+        ],
+        "factors": [
+          {
+            "target": 0,
+            "polynomial": "-U",
+            "peak_before": 5,
+            "peak_after": 5
+          },
+          {
+            "target": 1,
+            "polynomial": "-U**2",
+            "peak_before": 5,
+            "peak_after": 4
+          }
+        ],
+        "states": [
+          {
+            "index": 0,
+            "first": "t**2 + t",
+            "second": "(t**3 - t**2 + 1)/(t - 1)",
+            "peak": 5,
+            "boundary_valuations": [
+              {
+                "boundary": "0",
+                "orders": [
+                  1,
+                  0
+                ],
+                "poles": [
+                  0,
+                  0
+                ]
+              },
+              {
+                "boundary": "1",
+                "orders": [
+                  0,
+                  -1
+                ],
+                "poles": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "boundary": "infinity",
+                "orders": [
+                  -2,
+                  -2
+                ],
+                "poles": [
+                  2,
+                  2
+                ]
+              }
+            ],
+            "residue_character": [
+              {
+                "boundary": "0",
+                "initial_coefficients": [
+                  "1",
+                  "-1"
+                ]
+              },
+              {
+                "boundary": "1",
+                "initial_coefficients": [
+                  "2",
+                  "1"
+                ]
+              },
+              {
+                "boundary": "infinity",
+                "initial_coefficients": [
+                  "1",
+                  "1"
+                ]
+              }
+            ],
+            "conductor_pairing": [
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "index": 1,
+            "first": "(t**2 - t - 1)/(t - 1)",
+            "second": "(t**3 - t**2 + 1)/(t - 1)",
+            "peak": 5,
+            "boundary_valuations": [
+              {
+                "boundary": "0",
+                "orders": [
+                  0,
+                  0
+                ],
+                "poles": [
+                  0,
+                  0
+                ]
+              },
+              {
+                "boundary": "1",
+                "orders": [
+                  -1,
+                  -1
+                ],
+                "poles": [
+                  1,
+                  1
+                ]
+              },
+              {
+                "boundary": "infinity",
+                "orders": [
+                  -1,
+                  -2
+                ],
+                "poles": [
+                  1,
+                  2
+                ]
+              }
+            ],
+            "residue_character": [
+              {
+                "boundary": "0",
+                "initial_coefficients": [
+                  "1",
+                  "-1"
+                ]
+              },
+              {
+                "boundary": "1",
+                "initial_coefficients": [
+                  "-1",
+                  "1"
+                ]
+              },
+              {
+                "boundary": "infinity",
+                "initial_coefficients": [
+                  "1",
+                  "1"
+                ]
+              }
+            ],
+            "conductor_pairing": [
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "index": 2,
+            "first": "(t**2 - t - 1)/(t - 1)",
+            "second": "(2*t**2 - t - 2)/(t**2 - 2*t + 1)",
+            "peak": 4,
+            "boundary_valuations": [
+              {
+                "boundary": "0",
+                "orders": [
+                  0,
+                  0
+                ],
+                "poles": [
+                  0,
+                  0
+                ]
+              },
+              {
+                "boundary": "1",
+                "orders": [
+                  -1,
+                  -2
+                ],
+                "poles": [
+                  1,
+                  2
+                ]
+              },
+              {
+                "boundary": "infinity",
+                "orders": [
+                  -1,
+                  0
+                ],
+                "poles": [
+                  1,
+                  0
+                ]
+              }
+            ],
+            "residue_character": [
+              {
+                "boundary": "0",
+                "initial_coefficients": [
+                  "1",
+                  "-2"
+                ]
+              },
+              {
+                "boundary": "1",
+                "initial_coefficients": [
+                  "-1",
+                  "-1"
+                ]
+              },
+              {
+                "boundary": "infinity",
+                "initial_coefficients": [
+                  "1",
+                  "2"
+                ]
+              }
+            ],
+            "conductor_pairing": [
+              [
+                0,
+                1
+              ]
+            ]
+          }
+        ]
+      },
+      "counterexample": null
+    }
+  ]
+}

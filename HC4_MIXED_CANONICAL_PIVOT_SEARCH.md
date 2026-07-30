@@ -540,9 +540,108 @@ values:
 This is a parent-Hessian obstruction for the displayed fixed order and
 mixed-line alphabet.  Since there is no parent survivor, no reduced-rank
 or repair calculation is logically needed on the symbolic parameter
-loci.  The reverse degree order, zero-coefficient boundaries, other
-Hamiltonian supports, oblique affine directions, and longer words remain
-outside the theorem.
+loci.  Zero-coefficient boundaries, other Hamiltonian supports, oblique
+affine directions, and longer words remain outside the theorem.
+
+## 10. Reverse-order resonances and the rank obstruction
+
+Reverse the two flows while retaining the notation above:
+
+\[
+ \Phi_{a,b}^{\rm rev}
+ =\Phi_0\circ T_{H_1}\circ T_{H_2}.
+\]
+
+Unlike the fixed order, every one of the 54 support/sign patterns now has
+a nonzero parent-constant coefficient line.  Exact elimination at integer
+probes first finds the candidates, and a direct six-variable Singular
+identity then verifies each complete Hessian determinant:
+
+\[
+\begin{array}{c|r|c|c}
+\text{Poisson incidence}&\text{patterns}&
+\text{parent-constant line}&
+\text{coordinate affine dimension}\\ \hline
+i=j,\ k\ne j&24&a=\pm\tfrac12,\ b\ne0&3\\
+k=j,\ i\ne j&24&a=\pm\tfrac12,\ b\ne0&2\\
+i=j=k&6&a=\pm\tfrac14,\ b\ne0&2.
+\end{array}
+\]
+
+The signs of the displayed resonances are fixed by the two line signs.
+On every listed line,
+
+\[
+ \det\operatorname{Hess}\Phi_{a,b}^{\rm rev}=-16384
+\]
+
+identically in all six variables and for arbitrary \(b\ne0\).  These are
+the first nonlinear parent-Hessian-preserving canonical families found in
+this search.
+
+They nevertheless do not descend to `HC(4)`.  The 24 dimension-three
+patterns contribute all three constituent coordinate two-pivot pairs; the
+other 30 patterns contribute one pair each, for 102 exact reduced pencils.
+For every pair, a displayed \(3\times3\) minor is nonzero for all
+\(b\ne0\), while one or more displayed \(4\times4\) determinant
+specializations have no common nonzero root in \(b\).  Hence
+
+\[
+ \operatorname{rank}_{\rm gen}M=4,\qquad
+ \operatorname{corank}_{\rm gen}M=0
+\]
+
+for every nonzero \(b\), in all three Poisson-incidence types.
+
+This gives a structural obstruction inside the reverse-order family.
+Parent constancy consumes the quadratic coefficient by forcing it onto a
+discrete resonance.  The remaining cubic scale occurs as a nonzero factor
+of a reduced \(3\times3\) minor, so it cannot lower the rank to the
+required value two; relatively prime determinant probes then rule out even
+a persistent rank-three locus.  Thus the bracket types do not merely
+systematically force rank three: they force generic rank four throughout
+the entire parent-preserving locus.
+
+## 11. The first quadratic--cubic commutator box
+
+The next canonical family is the unit-coefficient group commutator
+
+\[
+ S=T_{-H_2}\circ T_{-H_1}\circ T_{H_2}\circ T_{H_1},
+\qquad
+H_1=(q_i+\epsilon_1p_j)^2,\quad
+H_2=(q_k+\epsilon_2p_\ell)^3.
+\]
+
+Among the \(18^2=324\) pairs, 162 commute and are excluded.  All 162
+noncommuting commutator maps are distinct.  Before composition, their
+Poisson-bracket incidence census is
+
+\[
+\begin{array}{c|r|c}
+\text{incidence}&\text{pairs}&
+\det\operatorname{Hess}(\Phi_0\circ S)\\ \hline
+i=\ell,\ j\ne k&72&\text{nonconstant}\\
+j=k,\ i\ne\ell&72&\text{nonconstant}\\
+i=\ell,\ j=k&18&\text{nonconstant}.
+\end{array}
+\]
+
+The parent audit does not expand \(\Phi_0\circ S\).  It evaluates the exact
+chain-rule identity
+
+\[
+ \operatorname{Hess}(\Phi_0\circ S)
+ =DS^{\mathsf T}\operatorname{Hess}(\Phi_0)(S)DS
+  +\sum_r(\partial_r\Phi_0)(S)\operatorname{Hess}(S_r)
+\]
+
+modulo \(1000003\).  Every commutator has two integer points with unequal
+determinant values.  These are exact characteristic-zero nonconstancy
+certificates, so there are no modular survivors requiring full expansion.
+Consequently this unit commutator box fails before the affine-pivot and
+reduced-rank gates.  Scaled commutators, other supports, oblique affine
+directions, and general longer words remain open.
 
 ## Reproduction
 
@@ -613,4 +712,33 @@ PYTHONHASHSEED=0 .venv/bin/python \
 The exact symbolic census is
 [`artifacts/generated-results/hc4_symbolic_quadratic_cubic_words.json`](artifacts/generated-results/hc4_symbolic_quadratic_cubic_words.json).
 Its pinned SHA-256 is
-`34ef55922437cdfdf25006e00dc833ce6394d0ad1fe42585454e4bc568b8c874`.
+`c7ebbc6345d3037a9fdbecb080ca152ed7390cd6db7fcc5dd36dd7b8ffde082d`.
+
+Replay the reverse-order symbolic family with:
+
+```bash
+PYTHONHASHSEED=0 .venv/bin/python \
+  scripts/verify_hc4_symbolic_quadratic_cubic_words.py \
+  --order cubic-quadratic \
+  --output \
+  artifacts/generated-results/hc4_symbolic_cubic_quadratic_words.json
+```
+
+The exact parent-family and reduced-rank census is
+[`artifacts/generated-results/hc4_symbolic_cubic_quadratic_words.json`](artifacts/generated-results/hc4_symbolic_cubic_quadratic_words.json).
+Its pinned SHA-256 is
+`1c33fdbcb2296efe04df6e6e86d79bd407793a1adc5142f89e11912b419a36d9`.
+
+Replay the unit quadratic--cubic commutator box with:
+
+```bash
+PYTHONHASHSEED=0 .venv/bin/python \
+  scripts/search_hc4_mixed_commutator_words.py \
+  --output \
+  artifacts/generated-results/hc4_mixed_quadratic_cubic_commutators.json
+```
+
+The exact modular parent-Hessian census is
+[`artifacts/generated-results/hc4_mixed_quadratic_cubic_commutators.json`](artifacts/generated-results/hc4_mixed_quadratic_cubic_commutators.json).
+Its pinned SHA-256 is
+`95cd7757483cc71e97c8ed8925a0bce9e2d351794b2366a8ee83dab41f1ab359`.

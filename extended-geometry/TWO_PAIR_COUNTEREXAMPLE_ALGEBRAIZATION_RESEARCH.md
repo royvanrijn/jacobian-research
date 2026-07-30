@@ -181,7 +181,90 @@ two-column pivot chart gives the unit Gröbner basis \((1)\) in every case.
 The characteristic-zero constant minor, rather than this modular check, is
 the proof.
 
-## 7. Reconstruction and stabilization conclusions
+## 7. A reconstructed factor candidate on \(h_3=h_4=0\)
+
+The component checker accepts custom rational directions.  Nine exact
+component-wide calculations on the projective plane \(h_3=h_4=0\) reconstruct
+the projective ratio between the rational and \(\sqrt{41}\) parts of the
+selected constant augmented minor within a quadratic projective ansatz.
+
+Eight samples give a rank-eight interpolation system with one-dimensional
+kernel.  A ninth sample at \((h_0,h_1,h_2)=(1,1,2)\) is reserved from the fit
+and agrees exactly.  The reconstructed candidate, up to a nonzero rational
+chart factor, is
+\[
+ \Theta(h_0,h_1,h_2)=h_0A_1+\sqrt{41}\,B_2,
+ \tag{7.1}
+\]
+where
+\[
+\begin{aligned}
+A_1={}&1155847373766150h_0
+       -36297985953411000h_1
+       +27223928948689200h_2,\\
+B_2={}&36391011330354397h_0^2
+       +6249230221583086080h_0h_1
+       -6305341673135930040h_0h_2\\
+&+239871821693141332800h_1^2
+-485076246209760340800h_1h_2
++245240740811211768000h_2^2.
+\end{aligned}
+\tag{7.2}
+\]
+Equivalently,
+\[
+ \frac{\Theta_{\mathrm{rat}}}{\Theta_{\sqrt{41}}}
+ =\frac{h_0A_1}{B_2}.
+ \tag{7.3}
+\]
+The quadratic form \(B_2\) has rank three and determinant
+\[
+-17597199715531977537918909696315829680766290528000000.
+\tag{7.4}
+\]
+The determinant of the full quadratic form \(\Theta\) is
+\[
+\begin{split}
+&729245647195217455697430711533144208802994049936000000\\
+&\quad
+-726873922382233060747233151732018411642022039856000000\sqrt{41}.
+\end{split}
+\]
+Its rational norm is nonzero, as checked exactly in the artifact.  Thus the
+candidate exceptional locus of this selected minor is the smooth conic
+\[
+ h_0A_1+\sqrt{41}B_2=0
+\tag{7.5}
+\]
+over \(\mathbb Q(\sqrt{41})\), not a union of linear directions.  The norm
+is the quartic
+\[
+ h_0^2A_1^2-41B_2^2.
+\tag{7.6}
+\]
+
+The reconstructed conic has no rational projective points.  Indeed, if
+\([h_0:h_1:h_2]\in\mathbb P^2(\mathbb Q)\), then \(\Theta=0\) forces
+\(h_0A_1=B_2=0\).  On the line \(h_0=0\), the binary restriction of \(B_2\)
+has discriminant
+\[
+-6408370091478404240150045725416960000,
+\]
+which is negative.  On the line \(A_1=0\), after clearing denominators, its
+binary discriminant is
+\[
+5139006856829622345071075808901549175510230116674634862952296119705720988800000,
+\]
+which is positive but not a rational square.
+
+All nine evaluations and the interpolation are exact, but the finite sample
+does not itself prove the quadratic degree ansatz or a universal identity on
+the displayed plane.  A symbolic degree bound or direct identity check is
+still required.  Even after that, vanishing of this one augmented minor on
+(7.5) would not imply fifth liftability: the other augmented minors must be
+restricted to the conic and checked for a common zero.
+
+## 8. Reconstruction and stabilization conclusions
 
 For the exact \(F_{a,b}\) control, polynomial reconstruction succeeds and the
 sequence terminates at order three.
@@ -205,6 +288,7 @@ Run
 ```bash
 .venv/bin/python scripts/research_two_pair_counterexample_algebraization.py
 .venv/bin/python scripts/research_two_pair_counterexample_fifth_component.py
+.venv/bin/python scripts/analyze_two_pair_counterexample_fifth_factor.py
 ```
 
 The run uses the complete fourth and fifth all-order beta tails.  On the
@@ -213,3 +297,6 @@ reference machine it took about nineteen minutes.  It writes
 The component-wide command runs all three directions; each subcalculation
 takes about five to seven minutes and writes the corresponding
 `two_pair_counterexample_fifth_component_research*.json` artifact.
+The final command is a fast exact replay from the nine stored slice samples
+and writes
+`two_pair_counterexample_fifth_factor_plane_research.json`.

@@ -973,11 +973,62 @@ u_{37},u_{38},u_{39},u_{40},u_{41}.
 Their Gröbner basis is the unit ideal at the two good cubic residues
 \((p,a,\tau)=(32003,-7418,25070)\) and
 \((31991,109,28672)\); 200 further exact points at the first prime all have
-rank jump \(6\to7\).  This is a complete modular obstruction on the
-reduced component and reduces the characteristic-zero gap to lifting one
-explicit ten-variable unit identity.  A modular unit ideal alone is not
-called a characteristic-zero proof here, because an affine special fiber
-can be empty while the generic fiber is nonempty.
+rank jump \(6\to7\).
+
+The characteristic-zero lift is now exact.  Write \(V_J\) for the six
+pivot columns, \(R=(X^8,\ldots,X^{13})\), and
+\(P=(V_J)_R\).  The matrix \(P\) is constant and invertible over \(K\).
+For any output row \(m\), the Schur functional
+
+\[
+ \Lambda_m=e_m^\vee-(V_J)_mP^{-1}e_R^\vee
+\tag{QR19o}
+\]
+
+annihilates all twenty order-seven variation columns over the full reduced
+\(\mathbb A^{27}_K\).  For \(m=X^{18}\), exact elimination gives the
+parameter-independent value
+
+\[
+\begin{aligned}
+\Lambda_{18}(O_7)
+={}&\frac{643165152050421}{41943040}a^2
+  \frac{3040127723842209}{83886080}a
+  \frac{182006566236495}{8388608}\\
+={}&\frac{2189187}{83886080}
+ \left(587583566a^2+1388701707a+831388850\right).
+\end{aligned}
+\tag{QR19p}
+\]
+
+This is exactly the earlier branchwise value (QR19n), now proved constant
+on the entire reduced lift component.  It is a unit in \(K\).  Indeed, if
+
+\[
+\begin{aligned}
+p(a)&=94a^3+335a^2+400a+160,\\
+q(a)&=587583566a^2+1388701707a+831388850,
+\end{aligned}
+\]
+
+then the explicit Bézout identity is
+
+\[
+\begin{aligned}
+&(32313555201a^2+79786133680a+49319661920)q(a)\\
+&\quad-(201988446756823689a+256263622855091438)p(a)\\
+&=1637349242961920.
+\end{aligned}
+\tag{QR19q}
+\]
+
+Thus \(\Lambda_{18}(O_7)\ne0\) at every point of
+\(\mathbb A^{27}_K\).  Equivalently, the 401 consistency polynomials in
+(QR19n'') contain 27 nonzero constants; their characteristic-zero Gröbner
+basis is \((1)\).  Singular also lifts \(1\) through the original
+generators with a single degree-zero multiplier and verifies the polynomial
+identity exactly.  Therefore the complete reduced cubic fifth-order
+component is obstructed at order seven, not merely its explicit line.
 
 For the standard 16-coordinate support, the full Laurent comparison has
 also become finite.  At
@@ -1193,6 +1244,13 @@ PYTHONPATH=scripts .venv/bin/python \
   scripts/analyze_degree_five_cubic_fifth_order.py \
   --prime 31991 --a 109 --tau 28672 \
   --seventh-component-elimination
+PYTHONPATH=scripts .venv/bin/python \
+  scripts/analyze_degree_five_cubic_fifth_order.py \
+  --exact-cubic --seventh-component-elimination \
+  --seventh-component-program-output \
+    artifacts/generated-results/degree_five_cubic_h7_unit_certificate.sing
+.venv/bin/python \
+  scripts/verify_degree_five_cubic_h7_unit_certificate.py
 ```
 
 Extract and verify the vertical all-pole period at the rational common
@@ -1223,17 +1281,20 @@ The all-pole certificate rules out the proposed Laurent connecting class at
 the known seed, (QR22) gives a canonical-gauge formal representative, and
 (QR19l)--(QR19m) close the genuine bounded fifth-order equations on the
 four-period cubic locus.  The all-pole \(\hbar^5\) functional and the
-one-term cubic-branch \(\hbar^7\) functional have now been identified as
-strong dual cocycles of the restricted deformation complex; see
+global Schur-reduced \(\hbar^7\) functional (QR19o) have now been identified
+as strong dual cocycles of the restricted deformation complex; see
 [Restricted quantum deformation cocycles](RESTRICTED_QUANTUM_DEFORMATION_COCYCLES.md).
+Equation (QR19p) obstructs the entire reduced cubic fifth-order component,
+so no order-seven branch remains there.
 The remaining useful directions are:
 
 1. **Formal-tail invariantization.** Determine the quotient of (QR22) by
    changes of the lower lift, formal Hamiltonian gauge, and homotopy.  The
    displayed coefficient is a representative, not yet a cohomology class.
 2. **Dual-sheaf globalization.** The coherent strong-cocycle kernel
-   \(\mathcal P_n\) is now defined and its \(\hbar^5\) and branchwise
-   \(\hbar^7\) fibers are certified.  On the first 16-monomial support, a
+   \(\mathcal P_n\) is now defined, its \(\hbar^5\) fibers are certified,
+   and the cubic \(\hbar^7\) section is global on the reduced lift
+   component.  On the first 16-monomial support, a
    polynomial 15-by-16 presentation is now frozen.  Two exact maximal
    minors have coprime nonboundary factors of degrees 34 and 35, so there is
    no divisorial rank drop; all maximal minors give a length-218
@@ -1245,14 +1306,331 @@ The remaining useful directions are:
    the three exact fibers to \(\mathbb Q(a,\tau)\), then calculate its
    Fitting ideals and repeat on the four alternate supports and the
    replacement chart.  This is no longer a 4065-variable search.
-4. **Lift the final cubic \(h^7\) unit identity.** The reduced fifth-order
-   scheme is one affine 27-space, its order-seven matrix has constant rank
-   six, and consistency is a 401-generator ideal in only ten coordinates.
-   This ideal is the unit ideal at two good primes.  Finish the
-   characteristic-zero Singular computation over \(K=\mathbb Q(a)\), or
-   reconstruct a short Nullstellensatz combination from the two modular
-   bases.  This is the only remaining order-seven step on the cubic
-   component.
+4. **Branch across classical symbols.** The only interior fifth-order
+   survivor of this normalized degree-five family is now eliminated at
+   order seven.  The next \(DC_2\) search should start from a different
+   relative classical-symbol family, not a larger correction support at
+   the old symbol.
 
-Only after one of these steps should a scalar or finite vector be called
-the quantum residue of the degree-five family.
+The global Schur period (QR19p) is now a genuine quantum residue on the
+reduced cubic lift component.  A scalar obtained from an unglobalized
+support chart should still be called only a bounded period.
+
+## 12. Relative family package
+
+The fixed symbol at \((\kappa,\tau)=(0,1)\) should no longer be the base of
+the search.  It is the point
+
+\[
+ (a,\tau)=(-1/2,1)
+\]
+
+of the two-parameter family (QR10), where
+
+\[
+ \kappa=-\frac{1+2a}{1+a}.
+\]
+
+The smallest useful relative base for the existing generic presentation is
+
+\[
+ B=\mathbb Q\left[
+ a,\tau,\frac1{a(a+1)\tau H(a,\tau)}
+ \right],
+\tag{QR23}
+\]
+
+with \(H\) as in (RDC21).  Here \(a=0\) is handled by the replacement
+chart, \(a=-1\) is outside the normalized seed chart, \(\tau=0\) is the
+degree-drop boundary, and \(H=0\) is only the boundary of the chosen sparse
+lower-kernel trivialization.  It is not a new classical discriminant.
+
+### 12.1 The relative restricted complex
+
+Let \(\mathscr V(D,r)\) be the free \(B\)-module on
+
+\[
+ X^iQ^jZ^k,\qquad
+ i,j,k\ge0,\quad k\le r,\quad i+j+3k\le D.
+\]
+
+At orders three and five the correction modules are respectively
+
+\[
+\begin{aligned}
+C^1_3&=\mathscr V(25,3)\oplus\mathscr V(21,2),\\
+C^1_5&=\mathscr V(21,1)\oplus\mathscr V(17,0).
+\end{aligned}
+\tag{QR24}
+\]
+
+Together with the declared Hamiltonian and defect modules, they carry the
+relative complex
+
+\[
+ C^0_n\xrightarrow{d_{0,n}}C^1_n\xrightarrow{d_{1,n}}C^2_n,
+\qquad
+\begin{aligned}
+d_{0,n}h&=(\{h,S\},\{h,T\}),\\
+d_{1,n}(u,v)&=\{u,T\}+\{S,v\}.
+\end{aligned}
+\tag{QR25}
+\]
+
+The identity \(d_{1,n}d_{0,n}=0\) holds over \(B\), not just after
+specialization.  The order-three lower-lift scheme is
+
+\[
+ \mathcal L_3=
+ V\!\left(d_{1,3}(S_2,T_2)+\frac1{24}\Pi^3(S,T)\right)
+ \longrightarrow\operatorname{Spec}B.
+\tag{QR26}
+\]
+
+The function-field certificate gives a 42-monomial relative section of
+(QR26).  On (QR23), the homogeneous kernel has generic rank 41.  Modulo the
+order-five correction image, (QR3) therefore defines the relative
+Kuranishi section
+
+\[
+ \bar o_5\in
+ \Gamma\!\left(\mathcal L_3,p^*E_5\right),
+\qquad
+ E_5=\operatorname{coker}d_{1,5}.
+\tag{QR27}
+\]
+
+The genuine order-five Kuranishi locus is
+\(\mathcal K_5=Z(\bar o_5)\).  This retains the two horizontal symbol
+directions \(a,\tau\), which disappear in a fixed-symbol matrix.
+
+### 12.2 Fitting and Kuranishi loci
+
+On the standard 16-monomial dual support \(\Sigma\), the strong-cocycle
+module is the coherent kernel
+
+\[
+ \mathcal P_{5,\Sigma}=\ker\left(
+ M_\Sigma:B^{16}\longrightarrow B^{15}
+ \right).
+\tag{QR28}
+\]
+
+Its presentation Fitting scheme is
+
+\[
+ \mathfrak F_\Sigma=
+ V\!\left(I_{15}(M_\Sigma)\right).
+\tag{QR29}
+\]
+
+The exact minors (RDC22) have coprime nonboundary factors \(D_{34}\) and
+\(E_{35}\).  Consequently (QR29) has no divisorial component on (QR23);
+the strong-cocycle line is locally free on the union of those two minor
+charts.  The length-218 calculation for the full maximal-minor ideal is
+still modular evidence at three good primes.  It is not used here as a
+characteristic-zero length theorem.
+
+On any maximal-minor chart, the cofactor vector is a section
+
+\[
+ \lambda_\Sigma\in\Gamma(\mathcal P_{5,\Sigma})
+ \subset\Gamma(E_5^\vee).
+\tag{QR30}
+\]
+
+Evaluation on (QR27) is the residue/period section
+
+\[
+ q_\Sigma=\langle\lambda_\Sigma,\bar o_5\rangle
+ \in\Gamma(B,\mathcal O_B).
+\tag{QR31}
+\]
+
+Thus the computed residue functionals are sections of a dual coherent
+module, rather than unrelated left-nullvectors at selected symbols.
+Changing \(\Sigma\) changes a trivialization of the dual obstruction
+module and can reveal vertical sections where formation of (QR28) fails to
+commute with base change.
+
+The four exact generic supports in (QR19c), (QR19e), and (QR19h) give a
+linear-residue degeneracy scheme
+
+\[
+ \mathcal Z_{\mathrm{per}}
+ =V(P_{41},Q_{32},R_{38},S_{39})
+ \supseteq p(\mathcal K_5).
+\tag{QR32}
+\]
+
+It has exact length 44 over \(\mathbb Q\), with the local decomposition
+listed after (QR19j).  On the interior (QR23), its reduced support consists
+of
+
+\[
+ (-1/2,-3)
+\quad\text{and}\quad
+\begin{cases}
+94a^3+335a^2+400a+160=0,\\
+8\tau+658a^2+1593a+976=0.
+\end{cases}
+\tag{QR33}
+\]
+
+The rational point is not in \(p(\mathcal K_5)\): its vertical 15-term
+section of the fiberwise dual module evaluates to one.  The cubic closed
+point is in \(p(\mathcal K_5)\): (QR19l)--(QR19m) give an exact lift, whose
+reduced lift scheme is an affine \(27\)-space over its cubic residue field.
+The global Schur functional (QR19o) evaluates to the unit (QR19p) on that
+entire affine space.  Hence every fifth-order lift over the cubic closed
+point is obstructed at order seven.
+
+It follows already that
+
+\[
+ \operatorname{Spec}B\setminus\mathcal Z_{\mathrm{per}}
+\tag{QR34}
+\]
+
+is a parameter-uniform order-five obstruction open.  Equation (QR33) is
+the geometrically meaningful exceptional locus: one vertical order-five
+failure and one genuine cubic order-five lift component.  The former is
+obstructed at order five and the latter at order seven, so no interior
+parameter of (QR23) survives the declared correction tower.
+
+### 12.3 Root-at-infinity valuation filtration
+
+There are two compatible infinity charts.  First, the residual quadratic
+factor of the seed is
+
+\[
+ \tau w^2+A(a,\tau)w+B(a,\tau),
+\]
+
+where
+
+\[
+ A=\frac{2a+3}{2(a+1)}-2\tau,\qquad
+ B=\tau-\frac{4a+5}{2(a+1)}.
+\tag{QR35}
+\]
+
+With \(r=w^{-1}\), the equation at infinity is
+
+\[
+ \tau+Ar+Br^2=0.
+\tag{QR36}
+\]
+
+Hence a root reaches infinity exactly on \(\tau=0\).  At a generic point
+of that divisor it has \(\tau\)-adic valuation one.  At
+\((a,\tau)=(-3/2,0)\), (QR36) becomes
+
+\[
+ \tau-2\tau r+(\tau-1)r^2=0,
+\]
+
+so both roots have valuation \(1/2\) after the quadratic ramified base
+change.  This is the distinguished ramification point of the infinity
+boundary.
+
+Second, on the marked-root chart of (20)--(22), put
+
+\[
+ s=u^{-1},\qquad d=v/u,\qquad w=Ru/2.
+\]
+
+Then
+
+\[
+\begin{aligned}
+X&=\frac{s}{d},&
+R&=2sw,&
+Q&=\frac{2d(1-dw)}{3s},\\
+W=Z+\psi(Q)
+ &=\frac{2d\{a(1-d)+d(1-dw)\}}{s^2},&
+\gamma&=dw.
+\end{aligned}
+\tag{QR37}
+\]
+
+For \(a,d,w,1-dw\) generically units, the resulting valuation vector is
+
+\[
+ \boxed{
+ \nu_s(X,Q,W,R,\gamma)=(1,-1,-2,1,0).
+ }
+\tag{QR38}
+\]
+
+The quadratic shear \(W=Z+\psi(Q)\) is triangular of weight \(-2\), so the
+same filtration is represented on the script's \(X,Q,Z\) monomials by
+
+\[
+ \nu_s(X^iQ^jZ^k)=i-j-2k.
+\tag{QR39}
+\]
+
+The adapted derivations satisfy
+
+\[
+ \nu_s(\delta f)\ge\nu_s(f)+1,\qquad
+ \nu_s(\partial_Zf)\ge\nu_s(f)+2,
+\tag{QR40}
+\]
+
+and therefore
+
+\[
+ \nu_s(\{f,g\})\ge\nu_s(f)+\nu_s(g)+3,\qquad
+ \nu_s(\Pi^m(f,g))\ge\nu_s(f)+\nu_s(g)+3m.
+\tag{QR41}
+\]
+
+For the relative symbols,
+
+\[
+ \nu_s(S)=-2,\qquad \nu_s(T)=-1.
+\tag{QR42}
+\]
+
+Thus \(d_1\) is filtration preserving when the \(S\)-correction summand is
+shifted by \(2\), the \(T\)-correction summand by \(1\), and the
+Hamiltonian module by \(3\).  The sparse order-three section has pure
+weights
+
+\[
+ \nu_s(S_2)=4,\qquad \nu_s(T_2)=5.
+\tag{QR43}
+\]
+
+Every term of its order-five defect then starts in weight \(12\):
+
+\[
+\begin{aligned}
+\nu_s\{S_2,T_2\}&\ge12,&
+\nu_s\Pi^3(S_2,T)&\ge12,\\
+\nu_s\Pi^3(S,T_2)&\ge12,&
+\nu_s\Pi^5(S,T)&\ge12.
+\end{aligned}
+\tag{QR44}
+\]
+
+The compatible order-five correction weights are consequently
+
+\[
+ \nu_s(S_4)=10,\qquad \nu_s(T_4)=11.
+\tag{QR45}
+\]
+
+This filtration is the boundary lattice required before conductor descent.
+It does not prove that a localized correction extends: cancellation must
+still be tested modulo homogeneous corrections and Hamiltonian gauge.
+
+The inexpensive exact audit of (QR35)--(QR45), the two coprime Fitting
+charts, and the interior support (QR33) is:
+
+```bash
+PYTHONPATH=scripts .venv/bin/python \
+  scripts/verify_degree_five_relative_quantization_family.py
+```

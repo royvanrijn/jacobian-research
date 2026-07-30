@@ -24,8 +24,8 @@ and
 
 The full cancellation prime-intersection diagram requires
 `Res_w(K_{m,r},L_{m,r}) != 0`.  This note records a uniform endpoint
-reduction and proves the seven complete columns `r=1,2,3,4,5,6,7`.  It does
-**not** claim the remaining all-parameter theorem for `r>=8`.
+reduction and proves the eight complete columns `r=1,2,3,4,5,6,7,8`.  It
+does **not** claim the remaining all-parameter theorem for `r>=9`.
 
 ## 1. Triangular beta-primitive identity
 
@@ -670,11 +670,11 @@ theorem.
 
 More generally, (46) transfers every proved parameter-irreducibility range,
 including the prime and two-prime interval criteria.  This is independent of
-the six complete fixed-`r` columns: it supplies 1000 complete all-`r`
+the eight complete fixed-`r` columns: it supplies 1000 complete all-`r`
 columns in the transverse direction and an explicit effective tail in every
 fixed-`m` column.
 
-Consequently a still-unresolved pair in `OP-CR` must have `m>=1001`, `r>=8`,
+Consequently a still-unresolved pair in `OP-CR` must have `m>=1001`, `r>=9`,
 satisfy `r<=X_m/m`, have composite `N=(m+1)r+1`, and
 have at most one prime in
 `(mr,(m+1)r+1)`, unless another recorded irreducibility criterion applies.
@@ -928,14 +928,14 @@ chosen prime.  Degree is therefore preserved, and a modular monic gcd equal
 to one certifies coprimality over `Q`.  These 203 certificates are reproduced
 by
 [`verify_contact_resultant_modular_grid.py`](../scripts/verify_contact_resultant_modular_grid.py).
-For `r=6` and `r=7` these are subsets of the finite parts of the complete
-column certificates.  The rows with `r>=8` are evidence only and do not
+For `r=6`, `r=7`, and `r=8` these are subsets of the finite parts of the
+complete column certificates.  The rows with `r>=9` are evidence only and do not
 replace a uniform argument.
 
 ## 14. Scope boundary (`OP-CR`)
 
 The all-parameter problem is now confined to the finite staircase in each
-column given by `m>=1001`, `8<=r<=X_m/m`, after removing pairs covered by
+column given by `m>=1001`, `9<=r<=X_m/m`, after removing pairs covered by
 another parameter-irreducibility theorem.  Above the non-numerical threshold
 `K_0`, it is further confined by `r<5(mr)^(21/40)`.  Formula (6) still gives
 a fixed comparison disk, but the `r=4` analysis shows that demanding every
@@ -1007,7 +1007,55 @@ respectively.  The effective continuation and finite completion are replayed
 by
 [`verify_contact_resultant_r7_effective.py`](../scripts/verify_contact_resultant_r7_effective.py).
 
-Two structural routes remain useful beyond that first column.  First,
+The same fixed-column template closes `r=8`.  Exact endpoint elimination
+removes the excluded factor `(y-1)^9` and leaves a residual eliminant `H_8`
+of bidegree `(55,200)` in `(y,m)`.  Its complete top Newton edge is
+
+\[
+ \operatorname{Res}_z(e_8,f_8)=\lambda c^9P_{55}(c),
+ \qquad \lambda\in\mathbb Q^*,
+\]
+
+where `P_55` is squarefree, `P_55(0)!=0`,
+`gcd(P_55,U_8)=1`, and the penultimate subresultant reconstructs a unique
+finite `z` on all 55 branches.  The polynomial `P_55` has exactly one real
+root.  Thus every branch has `y=1+c/m+O(m^-2)`, and
+Lindemann--Weierstrass gives eventual nonvanishing independently of the
+effective continuation.
+
+For the effective theorem, the eighth-moment equation becomes
+
+\[
+ 315=Q_8(t,x)(1+tx)^{8/t+1},
+\]
+
+with `Q_8` an explicit polynomial of bidegree `(8,8)`.  On the 1,024
+rational cells partitioning `0<=t<=1/1001`, 320-bit Arb arithmetic certifies
+55 pairwise-disjoint Rouche tubes per cell, for 56,320 tubes in total.  The
+unique real branch is handled by a real logarithmic enclosure.  On all other
+tubes, rigorous complex logarithms exclude the scalar identity by modulus;
+when the real part overlaps zero, its phase excludes every multiple of
+`2*pi`.  The replay records 52,224 modulus and 4,096 phase certificates.
+Consequently the contact resultant is nonzero for every `m>=1001`.
+Degree-preserving FLINT gcds modulo `1,000,003` certify all 1,000 remaining
+integers, and hence
+
+\[
+ \boxed{\operatorname{Res}_w(K_{m,8},L_{m,8})\ne0
+        \quad\text{for every integer }m\ge1.}
+\]
+
+The exact endpoint and asymptotic replay is
+[`verify_contact_resultant_r8_asymptotic.py`](../scripts/verify_contact_resultant_r8_asymptotic.py);
+the effective continuation and finite completion are
+[`verify_contact_resultant_r8_effective.py`](../scripts/verify_contact_resultant_r8_effective.py).
+The underlying scripts use per-column configurations for `r=6,7,8`, so a
+subsequent fixed column requires new exact degree/edge data, a threshold and
+cell count, but not a second implementation of elimination, tubes,
+logarithmic separation, or finite gcds.  This remains a fixed-column
+template, not a continuation uniform in `r`.
+
+Two structural routes remain useful beyond these columns.  First,
 combine the factor-degree restriction after (47) with endpoint geometry.  A
 bound, depending only on `r`, for the degree of a common factor would exclude
 the `mr-u` option immediately and leave the small degree `u` option for a
@@ -1053,6 +1101,11 @@ The exact full-eliminant connection and eventual `r=7` theorem are in
 [`verify_contact_resultant_r7_asymptotic.py`](../scripts/verify_contact_resultant_r7_asymptotic.py).
 The effective 42-tube continuation and finite-range completion are in
 [`verify_contact_resultant_r7_effective.py`](../scripts/verify_contact_resultant_r7_effective.py).
+The exact degree-55 endpoint/asymptotic certificate and the effective
+55-tube continuation are in
+[`verify_contact_resultant_r8_asymptotic.py`](../scripts/verify_contact_resultant_r8_asymptotic.py)
+and
+[`verify_contact_resultant_r8_effective.py`](../scripts/verify_contact_resultant_r8_effective.py).
 The coefficient comparison and fractional-linear transfer behind (46)--(47)
 are checked by
 [`verify_contact_resultant_irreducible_ranges.py`](../scripts/verify_contact_resultant_irreducible_ranges.py).

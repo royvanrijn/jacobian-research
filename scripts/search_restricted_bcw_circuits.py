@@ -26,10 +26,18 @@ from dataclasses import dataclass
 from itertools import combinations
 import json
 from pathlib import Path
+import sys
 from typing import Iterable
 
 import sympy as sp
 
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT))
+
+from jcsearch.backward_cubic import (
+    profile_from_cubic_components,
+    surviving_collision_pairs,
+)
 from rank_compressed_bcw_homogenization import (
     extract_quadratic_cubic,
     factor_cubic_output,
@@ -51,8 +59,6 @@ from verify_shared_bcw_33_route import (
     high_terms,
 )
 
-
-ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_OUTPUT = (
     ROOT
     / "artifacts"
@@ -637,22 +643,42 @@ def diverse_profiled(
 def terminal_profile(state: CircuitState, hessian_power: bool = False) -> dict[str, object]:
     quadratic, cubic = extract_quadratic_cubic(state.expressions, state.variables)
     factorization = factor_cubic_output(cubic)
+    backward_profile = profile_from_cubic_components(
+        len(state.variables),
+        [poly.as_expr() for poly in cubic],
+        state.variables,
+    )
+    assert backward_profile.cubic_output_rank == len(factorization.c)
     ambient_variables, ambient_h = rank_compressed_homogeneous_map(
         state.variables, quadratic, factorization
     )
+    assert (
+        len(ambient_variables) == backward_profile.homogeneous_dimension
+    )
     quotient = iterated_constant_kernel_quotient(ambient_variables, ambient_h)
 
+    source_points = [
+        sp.Matrix(point) for point in state.collision_points
+    ]
+    source_pairs = surviving_collision_pairs(source_points)
+    if not source_pairs:
+        raise AssertionError("terminal source has no surviving collision pair")
     projected = []
     for point in state.collision_points:
         substitution = dict(zip(state.variables, point))
         cubic_values = [poly.eval(substitution) for poly in factorization.c]
+        # The backward fiber theorem proves that t=0 is injective and every
+        # nonzero parent collision scales to t=1, so this normalization loses
+        # no collision branch.
         ambient_point = sp.Matrix(list(point) + cubic_values + [sp.Integer(1)])
         projected.append(ambient_point)
     for stage in quotient.stages:
         projected = [stage.B * point for point in projected]
-    projected = [tuple(point) for point in projected]
-    if len(set(projected)) != 3:
-        raise AssertionError("constant-kernel quotient collapsed the collision")
+    projected_pairs = surviving_collision_pairs(projected)
+    if not projected_pairs:
+        raise AssertionError(
+            "constant-kernel quotient collapsed every collision pair"
+        )
 
     cubic_profile = polynomial_jacobian_profile(
         quotient.quotient_h, quotient.quotient_variables
@@ -670,12 +696,18 @@ def terminal_profile(state: CircuitState, hessian_power: bool = False) -> dict[s
         "monomial_cleanup_steps": len(state.monomial_plan),
         "cubic_output_rank": len(factorization.c),
         "homogeneous_dimension": len(ambient_variables),
+        "direct_cubic_key": list(backward_profile.direct_cubic_key),
+        "homogeneous_key": list(backward_profile.homogeneous_key),
         "constant_kernel_dimensions": [
             stage.kernel.cols for stage in quotient.stages
         ],
         "total_constant_kernel_dimension": quotient.total_kernel_dimension,
         "quotient_dimension": len(quotient.quotient_variables),
-        "projected_collision_separated": True,
+        "source_collision_pairs": [list(pair) for pair in source_pairs],
+        "projected_collision_pairs": [
+            list(pair) for pair in projected_pairs
+        ],
+        "projected_collision_separated": bool(projected_pairs),
         "cubic_power_ranks_mod_1000003": list(cubic_profile.ranks),
         "cubic_power_profile_terminated": cubic_profile.terminated,
         "cubic_sampled_index": cubic_profile.sampled_index,
@@ -1058,9 +1090,31 @@ def main() -> None:
         best_state, best_profile = min(
             terminals, key=lambda pair: terminal_key(pair[1], pair[0])
         )
+    best_direct_terminal = (
+        min(
+            terminals,
+            key=lambda pair: (
+                tuple(pair[1]["direct_cubic_key"]),
+                pair[0].plan_key,
+            ),
+        )
+        if terminals
+        else None
+    )
+    best_homogeneous_terminal = (
+        min(
+            terminals,
+            key=lambda pair: (
+                tuple(pair[1]["homogeneous_key"]),
+                pair[0].plan_key,
+            ),
+        )
+        if terminals
+        else None
+    )
 
     payload: dict[str, object] = {
-        "format": "restricted-bcw-circuit-search-v2",
+        "format": "restricted-bcw-circuit-search-v3",
         "certification_status": (
             "bounded modular search record; any improvement requires an exact QQ "
             "generator and independent replay"
@@ -1079,6 +1133,21 @@ def main() -> None:
                 "Pareto archive for cubic rank, cubic sampled nilpotency "
                 "index, cotangent-Hessian rank, quotient dimension, and "
                 "transformed quartic-Hessian sampled nilpotency index"
+            ),
+            "backward_objectives": (
+                "also record separate (base dimension, homogeneous dimension, "
+                "cubic rank) and (homogeneous dimension, base dimension, "
+                "cubic rank) keys; these do not replace the restricted-rank "
+                "Pareto objective"
+            ),
+            "collision_policy": (
+                "retain a terminal when at least one exact collision pair "
+                "remains distinct after every quotient"
+            ),
+            "homogenizing_level_policy": (
+                "normalize every parent collision to t=1; the relative "
+                "companion theorem makes all t!=0 fibers scaled copies and "
+                "proves the t=0 fiber triangular and injective"
             ),
             "terminal_pipeline": (
                 "rank-compressed cubic homogenization, constant-kernel quotient, "
@@ -1147,6 +1216,34 @@ def main() -> None:
             }
             for state, profile in archive
         ],
+        "backward_archives": {
+            "direct_degree_three": (
+                {
+                    "objective": best_direct_terminal[1][
+                        "direct_cubic_key"
+                    ],
+                    "profile": best_direct_terminal[1],
+                    "plan": encoded_plan(best_direct_terminal[0]),
+                }
+                if best_direct_terminal is not None
+                else None
+            ),
+            "raw_cubic_homogeneous": (
+                {
+                    "objective": best_homogeneous_terminal[1][
+                        "homogeneous_key"
+                    ],
+                    "profile": best_homogeneous_terminal[1],
+                    "plan": encoded_plan(best_homogeneous_terminal[0]),
+                }
+                if best_homogeneous_terminal is not None
+                else None
+            ),
+            "scope": (
+                "separate exact terminal archives among reached states; "
+                "partial-state beam selection remains bounded"
+            ),
+        },
         "terminal_family_leaders": [
             {
                 "circuit_atoms": list(family),

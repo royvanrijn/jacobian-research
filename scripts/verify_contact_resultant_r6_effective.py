@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Effective tail certificate for the cancellation contact resultant at r=6 or 7.
+"""Effective tail certificate for the cancellation contact resultant at r=6,7,8.
 
 This checker closes the gap between the asymptotic 29-branch theorem and the
 exact finite certificates through m=40.  Put
@@ -22,9 +22,9 @@ in phase.  The positive real branch is handled by a real logarithmic bound.
 Consequently no common root exists for m >= 41.  The separate modular-grid
 checker certifies 1 <= m <= 40.
 
-Set ``CONTACT_R=7`` to run the seventh-column certificate; the default is
-the original sixth-column certificate.  Requirements beyond the base
-repository environment: python-flint >= 0.9.
+Set ``CONTACT_R=7`` or ``CONTACT_R=8`` to run a subsequent fixed-column
+certificate; the default is the original sixth-column certificate.
+Requirements beyond the base repository environment: python-flint >= 0.9.
 All Arb enclosures are rigorous; floating-point root finding only proposes
 the disks subsequently certified by Arb.
 """
@@ -42,7 +42,7 @@ from tempfile import TemporaryDirectory
 
 import mpmath as mp
 import sympy as sp
-from flint import acb, arb, ctx, fmpq
+from flint import acb, arb, ctx, fmpq, nmod_poly
 from sympy.polys.domains import QQ
 
 
@@ -51,12 +51,13 @@ mp.mp.dps = 90
 
 m, y, z, t, x = sp.symbols("m y z t x")
 R = int(os.environ.get("CONTACT_R", "6"))
-assert R in (6, 7)
+assert R in (6, 7, 8)
 D = 1 - y
 CONFIG = {
     6: {
         "tail_start": 41,
         "cell_count": 256,
+        "endpoint_factor": 7,
         "edge_weight": 61,
         "m_degree": 90,
         "chart_t_degree": 89,
@@ -66,21 +67,33 @@ CONFIG = {
     7: {
         "tail_start": 101,
         "cell_count": 512,
+        "endpoint_factor": 7,
         "edge_weight": 84,
         "m_degree": 126,
         "chart_t_degree": 126,
         "q_constant": 720,
         "real_branches": 0,
     },
+    8: {
+        "tail_start": 1001,
+        "cell_count": 1024,
+        "endpoint_factor": 9,
+        "edge_weight": 145,
+        "m_degree": 200,
+        "chart_t_degree": 199,
+        "q_constant": 315,
+        "real_branches": 1,
+    },
 }
 TAIL_START = CONFIG[R]["tail_start"]
 CELL_COUNT = CONFIG[R]["cell_count"]
+ENDPOINT_FACTOR = CONFIG[R]["endpoint_factor"]
 EDGE_WEIGHT = CONFIG[R]["edge_weight"]
 M_DEGREE = CONFIG[R]["m_degree"]
 CHART_T_DEGREE = CONFIG[R]["chart_t_degree"]
 Q_CONSTANT = CONFIG[R]["q_constant"]
 REAL_BRANCHES = CONFIG[R]["real_branches"]
-BRANCH_DEGREE = 29 if R == 6 else 42
+BRANCH_DEGREE = {6: 29, 7: 42, 8: 55}[R]
 LOG_TERMS = 100
 
 
@@ -124,14 +137,14 @@ def build_chart_polynomial() -> sp.Poly:
     """Construct P6 exactly, coefficientwise, using Singular for H6."""
 
     singular = shutil.which("Singular")
-    assert singular is not None, "the effective r=6 certificate requires Singular"
+    assert singular is not None, "the effective fixed-r certificate requires Singular"
     integral_E6 = sp.expand(integral_polynomial(E6))
     integral_F6 = sp.expand(integral_polynomial(F6))
     program = f"""
 ring rr=0,(z,y,m),dp;
 poly E={singular_expression(integral_E6)};
 poly F={singular_expression(integral_F6)};
-poly H=resultant(E,F,z)/(y-1)^7;
+poly H=resultant(E,F,z)/(y-1)^{ENDPOINT_FACTOR};
 matrix Cm=coeffs(H,m);
 "BEGIN";
     for (int j={M_DEGREE};j>=0;j--) {{
@@ -168,10 +181,11 @@ matrix Cm=coeffs(H,m);
             assert total_t_degree >= 0
             expression += value * t**total_t_degree * x**x_degree
     polynomial = sp.Poly(expression, x, t, domain=QQ)
-    assert (polynomial.degree(x), polynomial.degree(t)) == (
+    observed_degree = (polynomial.degree(x), polynomial.degree(t))
+    assert observed_degree == (
         BRANCH_DEGREE,
         CHART_T_DEGREE,
-    )
+    ), observed_degree
     return polynomial
 
 
@@ -509,7 +523,7 @@ def endpoint_moment_coefficients(parameter: int, k: int) -> list[int]:
     ]
 
 
-def finite_endpoint_pair(parameter: int) -> tuple[sp.Poly, sp.Poly]:
+def finite_endpoint_pair(parameter: int) -> tuple[nmod_poly, nmod_poly]:
     degree = parameter * R
     moments = [endpoint_moment_coefficients(parameter, k) for k in range(R + 1)]
     k_coefficients = moments[R]
@@ -521,16 +535,17 @@ def finite_endpoint_pair(parameter: int) -> tuple[sp.Poly, sp.Poly]:
             l_coefficients[index + shift] = (
                 l_coefficients[index + shift] + multiplier * coefficient
             ) % PRIME
-    K = sp.Poly.from_list(k_coefficients[::-1], gens=y, modulus=PRIME)
-    L = sp.Poly.from_list(l_coefficients[::-1], gens=y, modulus=PRIME)
+    K = nmod_poly(k_coefficients, PRIME)
+    L = nmod_poly(l_coefficients, PRIME)
     assert K.degree() == L.degree() == degree
-    assert K.LC() % PRIME != 0 and L.LC() % PRIME != 0
+    assert int(K.leading_coefficient()) != 0
+    assert int(L.leading_coefficient()) != 0
     return K, L
 
 
 for finite_m in range(1, TAIL_START):
     finite_K, finite_L = finite_endpoint_pair(finite_m)
-    assert sp.gcd(finite_K, finite_L).degree() == 0
+    assert finite_K.gcd(finite_L).degree() == 0
 
 print(
     f"PASS contact resultant r={R} finite range: "

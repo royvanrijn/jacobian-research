@@ -1435,13 +1435,115 @@ polynomial compiler finds exactly this descending-degree certificate.
 
 The implementation now iterates the best complete lowering polynomial
 shear in either orientation.  Its terminal form admits no
-height-decreasing triangular polynomial in either coordinate.  What remains
-is strictly narrower: a polynomial automorphism may alternate triangular
-directions and pass through an equal or greater intermediate height before
-ending lower.  Identifying the terminal output with the invariant minimum
-\(H(\nu)\) therefore requires a marked multi-pole peak-reduction theorem
-for alternating Jung--van der Kulk factors.  That is the precise
-automorphism-theoretic gap.
+height-decreasing triangular polynomial in either coordinate.  Alternating
+directions do not create a further peak obstruction.
+
+> **Proposition 6.6 -- marked multi-pole peak reduction for reduced Jung
+> words.**
+> Let \(p_1,\ldots,p_s\) be finitely many marked boundary valuations and put
+> \[
+> H(u,v)=\sum_i\bigl(\operatorname{pole}_{p_i}(u)
+>                  +\operatorname{pole}_{p_i}(v)\bigr).
+> \]
+> Consider an alternating word of complete triangular factors
+> \[
+> z_{\epsilon_j}\longmapsto
+> z_{\epsilon_j}+P_j(z_{1-\epsilon_j}),
+> \qquad
+> \epsilon_{j+1}=1-\epsilon_j,
+> \tag{6.74}
+> \]
+> with every \(d_j=\deg P_j\ge2\).  If the whole word lowers \(H\), then its
+> first complete triangular factor lowers \(H\).  In particular, a pair
+> terminal for complete triangular reductions cannot be lowered by a
+> reduced alternating Jung word.
+
+#### Proof
+
+It is enough to compare two consecutive factors at one marked valuation.
+Write \(a,b\) for the pole orders before the first factor,
+
+\[
+x'=x+P(y),\qquad y'=y+Q(x'),
+\tag{6.75}
+\]
+
+and write \(a',b'\) for the pole orders of \(x',y'\).  Set
+\(d=\deg P\ge2\), \(e=\deg Q\ge2\), and
+
+\[
+\alpha=a'-a,\qquad \beta=b'-b.
+\tag{6.76}
+\]
+
+We claim
+
+\[
+\boxed{\ \beta\ge\alpha.\ }
+\tag{6.77}
+\]
+
+If \(\beta<0\), the leading pole of \(Q(x')\) must cancel that of \(y\).
+Hence \(b=e a'\).  Since \(db=de a'>a'\), obtaining the smaller pole
+\(a'\) in the first equation forces \(a=db\).  Therefore
+
+\[
+a-a'=(de-1)a',
+\qquad
+b-b'\le e a'\le(de-1)a',
+\tag{6.78}
+\]
+
+which is (6.77).
+
+Suppose now that \(\beta\ge0\).  If \(\alpha\le0\), (6.77) is immediate.
+If \(\alpha>0\), the leading term of \(P(y)\) dominates \(x\), so
+\(a'=db>a\).  Then \(ea'=edb>b\), the leading term of \(Q(x')\) dominates
+\(y\), and \(b'=ea'\).  Thus
+
+\[
+\beta=(ed-1)b\ge db\ge db-a=\alpha,
+\tag{6.79}
+\]
+
+because \(ed-1\ge d\).  This proves (6.77) in every case.  Notice that tied
+initial residues determine how far a pole drops, but the inequality itself
+does not require their values.
+
+For the full alternating word, let \(\Delta_{j,i}\) be the change of the
+pole order of the coordinate modified by factor \(j\) at \(p_i\).
+Applying (6.77) to every consecutive pair gives
+
+\[
+\Delta_{1,i}\le\Delta_{2,i}\le\cdots\le\Delta_{r,i}.
+\tag{6.80}
+\]
+
+After summing over the marked valuations, the factor-height increments
+\(\Delta_j=\sum_i\Delta_{j,i}\) are nondecreasing.  If
+\(\sum_j\Delta_j<0\), then necessarily \(\Delta_1<0\).  The first complete
+factor therefore lowers the current marked multi-pole peak. \(\square\)
+
+The conductor equivalence relation and residue characters are carried
+unchanged by the coordinate automorphism.  Proposition 6.6 shows that they
+are not needed for the inter-factor peak inequality; they remain necessary
+for compiling the actual complete cancellation polynomial and for the
+subsequent conductor/monodromy filters.
+
+Affine factors create no separate local peak obstruction.  Translations,
+nonzero diagonal scalings, and coordinate exchange preserve \(H\).  For a
+linear change
+\[
+(u,v)\longmapsto(au+bv,cu+dv),
+\qquad ad-bc\ne0,
+\]
+suppose no linear shear of \(u\) by \(v\), or of \(v\) by \(u\), lowers the
+corresponding pole degree.  If \(a,d\ne0\), the two new coordinates have
+pole degrees at least those of \(u,v\), respectively.  If \(b,c\ne0\), use
+the off-diagonal pivots and obtain the same lower bound in the opposite
+order.  One of these two pivot pairs is nonzero because the determinant is
+nonzero.  Hence a lowering affine basis change already exposes a lowering
+complete linear shear.
 
 As bounded evidence only, the checker exhausts all 49 ordered Laurent pairs
 whose two supports are nonempty subsets of
@@ -1449,8 +1551,8 @@ whose two supports are nonempty subsets of
 degrees one or two and coefficients \(\pm1\).  Sixteen paths lower the
 final height after a nondecreasing first step.  In every one, the initial
 pair already admits a lowering complete polynomial shear, so none is a
-terminal peak counterexample.  This finite grid is a regression for the
-proposed peak theorem, not its proof.
+terminal peak counterexample.  This finite grid is now a regression for
+Proposition 6.6, not part of its proof.
 
 The endpoint search becomes genuinely finite only after adjoining the
 following global input:
@@ -1470,13 +1572,14 @@ pair, the vectors
 \[
 \alpha=(\operatorname{pole}_{p_i}x)_i,\qquad
 \beta=(\operatorname{pole}_{p_i}y)_i
-\tag{6.74}
+\tag{6.81}
 \]
 lie in a finite box.  Local contact, principal-divisor, graded-module, and
-monodromy tests can then be compiled as finite filters.  Deriving \(B\) and
-the pairing map on the automorphism-reduced valuation data, rather than
-adding more Laurent layers or running an unbounded raw-pair search, is the
-next missing theorem.
+monodromy tests can then be compiled as finite filters.  Proposition 6.6
+closes the reduced alternating-direction peak step.  Deriving \(B\) and the
+pairing map on the automorphism-reduced valuation data, rather than adding
+more Laurent layers or running an unbounded raw-pair search, is the next
+missing theorem.
 
 The exact regression is
 [`cas/test_degree_zero_endpoint_pairing.py`](cas/test_degree_zero_endpoint_pairing.py).

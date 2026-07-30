@@ -1,0 +1,5951 @@
+{
+  "case": "universal-cubic-homogeneous-symbol-atlas",
+  "certificates": {
+    "concurrent-lines": {
+      "associated_primes": {
+        "boundary_containing_primes": [],
+        "primes": [
+          [
+            "x"
+          ],
+          [
+            "z",
+            "x"
+          ],
+          [
+            "y-z",
+            "x"
+          ],
+          [
+            "y",
+            "x"
+          ]
+        ],
+        "status": "computed_by_module_primary_decomposition"
+      },
+      "backend": {
+        "name": "Singular",
+        "stderr": "",
+        "version": "Singular for arm64-Darwin version 4.4.1 (44105, 64 bit) Nov 11 2025 16:12:34"
+      },
+      "input": {
+        "boundary_ideal": [
+          "x",
+          "y",
+          "z"
+        ],
+        "distinguished_class": null,
+        "filtration": null,
+        "options": {
+          "associated_primes": "decompose",
+          "regular_search_bound": 8,
+          "saturation_strategy": "compute",
+          "singular_binary": null,
+          "timeout_seconds": 300,
+          "torsion_exponent_bound": 32
+        },
+        "presentation": {
+          "generators": [
+            [
+              "0",
+              "z",
+              "-y",
+              "x",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "z",
+              "-y",
+              "x",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "z",
+              "-y",
+              "x"
+            ],
+            [
+              "z",
+              "0",
+              "0",
+              "0",
+              "-y",
+              "0",
+              "0",
+              "0",
+              "x",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "z",
+              "0",
+              "0",
+              "0",
+              "-y",
+              "0",
+              "0",
+              "0",
+              "x",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "z",
+              "0",
+              "0",
+              "0",
+              "-y",
+              "0",
+              "0",
+              "0",
+              "x",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "z",
+              "0",
+              "0",
+              "0",
+              "-y",
+              "0",
+              "0",
+              "0",
+              "x"
+            ],
+            [
+              "-x^2",
+              "2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "4*x^4",
+              "x^2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "2*x^4",
+              "2*x^2",
+              "-3*x^2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "2*x^3*(y - 2*z)",
+              "2*x*(y - z)",
+              "-2*x*y",
+              "-x^2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "-x^2",
+              "0",
+              "1",
+              "0",
+              "x^2",
+              "1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "x^4",
+              "0",
+              "-x^2",
+              "0",
+              "2*x^4",
+              "2*x^2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "2*x^4",
+              "0",
+              "-2*x^2",
+              "0",
+              "x^4",
+              "x^2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "x^3*(2*y - z)",
+              "-x*z",
+              "-x*(y - z)",
+              "-x^2",
+              "x^3*(y - 2*z)",
+              "x*(y - z)",
+              "-x*y",
+              "x^2",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "-x*(y - z)",
+              "0",
+              "0",
+              "1",
+              "x*y",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1",
+              "0",
+              "0"
+            ],
+            [
+              "x^3*(y - 2*z)",
+              "0",
+              "-x*y",
+              "0",
+              "0",
+              "x*y",
+              "0",
+              "0",
+              "2*x^4",
+              "x^2",
+              "0",
+              "0"
+            ],
+            [
+              "x^3*(2*y - z)",
+              "-x*z",
+              "-2*x*(y - z)",
+              "0",
+              "0",
+              "0",
+              "x*y",
+              "0",
+              "x^4",
+              "x^2",
+              "-x^2",
+              "0"
+            ],
+            [
+              "2*x^2*(y^2 - y*z + z^2)",
+              "-z*(2*y - z)",
+              "-y*(y - 2*z)",
+              "-x*(y - z)",
+              "0",
+              "0",
+              "0",
+              "x*y",
+              "x^3*(y - 2*z)",
+              "x*(y - z)",
+              "-x*y",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "x^2",
+              "0",
+              "2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "2*x^4",
+              "3*x^2",
+              "-2*x^2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "4*x^4",
+              "0",
+              "-x^2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "2*x^3*(2*y - z)",
+              "-2*x*z",
+              "-2*x*(y - z)",
+              "x^2",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "x*z",
+              "0",
+              "0",
+              "0",
+              "x*(y - z)",
+              "0",
+              "0",
+              "1",
+              "0",
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "x*z",
+              "0",
+              "0",
+              "x^3*(y - 2*z)",
+              "2*x*(y - z)",
+              "-x*y",
+              "0",
+              "x^4",
+              "x^2",
+              "-x^2",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "x*z",
+              "0",
+              "x^3*(2*y - z)",
+              "-x*z",
+              "0",
+              "0",
+              "2*x^4",
+              "0",
+              "-x^2",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "x*z",
+              "2*x^2*(y^2 - y*z + z^2)",
+              "-z*(2*y - z)",
+              "-y*(y - 2*z)",
+              "x*(y - z)",
+              "x^3*(2*y - z)",
+              "-x*z",
+              "-x*(y - z)",
+              "0"
+            ],
+            [
+              "z*(2*y - z)",
+              "0",
+              "0",
+              "0",
+              "y*(y - 2*z)",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "2"
+            ],
+            [
+              "0",
+              "z*(2*y - z)",
+              "0",
+              "0",
+              "0",
+              "y*(y - 2*z)",
+              "0",
+              "0",
+              "2*x^3*(y - 2*z)",
+              "2*x*(y - z)",
+              "-2*x*y",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "z*(2*y - z)",
+              "0",
+              "0",
+              "0",
+              "y*(y - 2*z)",
+              "0",
+              "2*x^3*(2*y - z)",
+              "-2*x*z",
+              "-2*x*(y - z)",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "z*(2*y - z)",
+              "0",
+              "0",
+              "0",
+              "y*(y - 2*z)",
+              "4*x^2*(y^2 - y*z + z^2)",
+              "-2*z*(2*y - z)",
+              "-2*y*(y - 2*z)",
+              "0"
+            ]
+          ],
+          "label": "homogeneous-cubic-cotangent-concurrent-lines",
+          "rank": 12,
+          "ring": {
+            "characteristic": 0,
+            "ordering": "dp",
+            "variables": [
+              "x",
+              "y",
+              "z"
+            ]
+          },
+          "singular_setup": null
+        }
+      },
+      "input_sha256": "8aa05fdd143f5f5959d52222e1e464e8c6faeaee6a1ef3764febe77b7f09cd36",
+      "local_cohomology": {
+        "annihilator": [],
+        "associated_primes": [],
+        "boundary_annihilation_exponent": 0,
+        "generator_count": 0,
+        "generators_in_F": [],
+        "identity": "H^0_I(F/N) = (N:I^infinity)/N",
+        "relations": [],
+        "torsion_exponent_search_bound": 32,
+        "zero": true
+      },
+      "regular_elements": {
+        "candidate": "x+y+z",
+        "certifies_boundary_grade_at_least_one": true,
+        "certifies_no_regular_element_in_boundary": false,
+        "tests": [
+          {
+            "element": "x+y+z",
+            "regular": true,
+            "tested": true
+          },
+          {
+            "element": "x+2y+4z",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "x+3y+9z",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "x+4y+16z",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "x+5y+25z",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "x+6y+36z",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "x+7y+49z",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "x+8y+64z",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "x",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "y",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "z",
+            "regular": false,
+            "tested": false
+          }
+        ]
+      },
+      "saturation": {
+        "equal_to_presentation": true,
+        "presentation_standard_basis_size": 23,
+        "saturated_presentation": [
+          "2*gen(7)-gen(6)-gen(3)+2*gen(2)",
+          "y*gen(11)-y*gen(8)-z*gen(10)+z*gen(4)",
+          "x*gen(4)-y*gen(3)+z*gen(2)",
+          "2x*gen(8)-y*gen(6)-y*gen(3)+2y*gen(2)+2z*gen(6)",
+          "x*gen(9)-y*gen(5)+z*gen(1)",
+          "x*gen(10)+x*gen(4)-y*gen(6)-y*gen(3)+2z*gen(2)",
+          "x*gen(11)-x*gen(10)+x*gen(8)-x*gen(4)+2y*gen(2)+z*gen(6)+z*gen(3)-2z*gen(2)",
+          "2x*gen(12)-y*gen(11)-y*gen(8)+z*gen(10)+z*gen(4)",
+          "xz*gen(3)+xz*gen(2)",
+          "y2*gen(3)-2y2*gen(2)-2yz*gen(3)+4yz*gen(2)-3z2*gen(2)",
+          "y2*gen(5)-2yz*gen(5)+2yz*gen(1)-z2*gen(1)+2*gen(12)",
+          "3y2*gen(6)+2yz*gen(3)-4yz*gen(2)+2z2*gen(3)+5z2*gen(2)",
+          "y2*gen(8)+2yz*gen(10)-2yz*gen(8)-2z2*gen(10)+z2*gen(4)",
+          "xy*gen(1)-xz*gen(5)+gen(11)-gen(10)+gen(8)-gen(4)",
+          "xy*gen(3)-2xy*gen(2)+3xz*gen(2)",
+          "xy*gen(5)-xy*gen(1)+xz*gen(1)+gen(10)+gen(4)",
+          "xy*gen(6)-xz*gen(2)",
+          "x2*gen(1)-2*gen(2)",
+          "x2*gen(2)",
+          "x2*gen(3)",
+          "x2*gen(5)+gen(6)+gen(3)-2*gen(2)",
+          "x2*gen(6)",
+          "xyz*gen(2)-xz2*gen(2)"
+        ],
+        "saturated_standard_basis_size": 23,
+        "strategy": "compute"
+      },
+      "schema": "support-saturation-certificate.v2"
+    },
+    "cuspidal": {
+      "associated_primes": {
+        "boundary_containing_primes": [],
+        "primes": [
+          [
+            "x"
+          ],
+          [
+            "27xy2+4z3"
+          ]
+        ],
+        "status": "computed_by_module_primary_decomposition"
+      },
+      "backend": {
+        "name": "Singular",
+        "stderr": "",
+        "version": "Singular for arm64-Darwin version 4.4.1 (44105, 64 bit) Nov 11 2025 16:12:34"
+      },
+      "input": {
+        "boundary_ideal": [
+          "x",
+          "y",
+          "z"
+        ],
+        "distinguished_class": null,
+        "filtration": null,
+        "options": {
+          "associated_primes": "decompose",
+          "regular_search_bound": 8,
+          "saturation_strategy": "compute",
+          "singular_binary": null,
+          "timeout_seconds": 300,
+          "torsion_exponent_bound": 32
+        },
+        "presentation": {
+          "generators": [
+            [
+              "0",
+              "z",
+              "-y",
+              "x",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "z",
+              "-y",
+              "x",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "z",
+              "-y",
+              "x"
+            ],
+            [
+              "z",
+              "0",
+              "0",
+              "0",
+              "-y",
+              "0",
+              "0",
+              "0",
+              "x",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "z",
+              "0",
+              "0",
+              "0",
+              "-y",
+              "0",
+              "0",
+              "0",
+              "x",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "z",
+              "0",
+              "0",
+              "0",
+              "-y",
+              "0",
+              "0",
+              "0",
+              "x",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "z",
+              "0",
+              "0",
+              "0",
+              "-y",
+              "0",
+              "0",
+              "0",
+              "x"
+            ],
+            [
+              "-x*z",
+              "2",
+              "0",
+              "0",
+              "3*x*y",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "4*x^2*z^2",
+              "x*z",
+              "-6*x*y",
+              "0",
+              "0",
+              "3*x*y",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "-18*x^3*y",
+              "0",
+              "-3*x*z",
+              "0",
+              "0",
+              "0",
+              "3*x*y",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "-2*x*(9*x*y^2 + 2*z^3)",
+              "-2*z^2",
+              "4*y*z",
+              "-x*z",
+              "0",
+              "0",
+              "0",
+              "3*x*y",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "1",
+              "0",
+              "x*z",
+              "1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "-9*x^3*y",
+              "0",
+              "-x*z",
+              "0",
+              "2*x^2*z^2",
+              "2*x*z",
+              "-3*x*y",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "-6*x^3*z",
+              "3*x^2",
+              "0",
+              "0",
+              "-9*x^3*y",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "3*x^2*y*z",
+              "3*x*y",
+              "z^2",
+              "0",
+              "-x*(9*x*y^2 + 2*z^3)",
+              "-z^2",
+              "2*y*z",
+              "x*z",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "z^2",
+              "0",
+              "0",
+              "1",
+              "-2*y*z",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1",
+              "0",
+              "0"
+            ],
+            [
+              "-x*(9*x*y^2 + 2*z^3)",
+              "0",
+              "2*y*z",
+              "0",
+              "0",
+              "-2*y*z",
+              "0",
+              "0",
+              "2*x^2*z^2",
+              "x*z",
+              "-3*x*y",
+              "0"
+            ],
+            [
+              "3*x^2*y*z",
+              "3*x*y",
+              "2*z^2",
+              "0",
+              "0",
+              "0",
+              "-2*y*z",
+              "0",
+              "-9*x^3*y",
+              "0",
+              "-x*z",
+              "0"
+            ],
+            [
+              "2*z*(6*x*y^2 + z^3)",
+              "3*y^2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-2*y*z",
+              "-x*(9*x*y^2 + 2*z^3)",
+              "-z^2",
+              "2*y*z",
+              "0"
+            ],
+            [
+              "-3*x^2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "-3*x^2",
+              "0",
+              "0",
+              "-18*x^3*y",
+              "0",
+              "-2*x*z",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "-3*x^2",
+              "0",
+              "-12*x^3*z",
+              "6*x^2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "-3*x^2",
+              "6*x^2*y*z",
+              "6*x*y",
+              "2*z^2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "-3*x*y",
+              "0",
+              "0",
+              "0",
+              "-z^2",
+              "0",
+              "0",
+              "1",
+              "0",
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "-3*x*y",
+              "0",
+              "0",
+              "-x*(9*x*y^2 + 2*z^3)",
+              "-2*z^2",
+              "2*y*z",
+              "0",
+              "-9*x^3*y",
+              "0",
+              "-x*z",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "-3*x*y",
+              "0",
+              "3*x^2*y*z",
+              "3*x*y",
+              "0",
+              "0",
+              "-6*x^3*z",
+              "3*x^2",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "-3*x*y",
+              "2*z*(6*x*y^2 + z^3)",
+              "3*y^2",
+              "0",
+              "-2*z^2",
+              "3*x^2*y*z",
+              "3*x*y",
+              "z^2",
+              "0"
+            ],
+            [
+              "-3*y^2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "z^2",
+              "0",
+              "0",
+              "2"
+            ],
+            [
+              "0",
+              "-3*y^2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-2*x*(9*x*y^2 + 2*z^3)",
+              "-z^2",
+              "4*y*z",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "-3*y^2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "6*x^2*y*z",
+              "6*x*y",
+              "3*z^2",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "-3*y^2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "4*z*(6*x*y^2 + z^3)",
+              "6*y^2",
+              "0",
+              "-z^2"
+            ]
+          ],
+          "label": "homogeneous-cubic-cotangent-cuspidal",
+          "rank": 12,
+          "ring": {
+            "characteristic": 0,
+            "ordering": "dp",
+            "variables": [
+              "x",
+              "y",
+              "z"
+            ]
+          },
+          "singular_setup": null
+        }
+      },
+      "input_sha256": "7fb3f8ca2dee08c9571d6887e407d841b7b5bd14b1fed9d9b785eebde81d69b5",
+      "local_cohomology": {
+        "annihilator": [],
+        "associated_primes": [],
+        "boundary_annihilation_exponent": 0,
+        "generator_count": 0,
+        "generators_in_F": [],
+        "identity": "H^0_I(F/N) = (N:I^infinity)/N",
+        "relations": [],
+        "torsion_exponent_search_bound": 32,
+        "zero": true
+      },
+      "regular_elements": {
+        "candidate": "x+y+z",
+        "certifies_boundary_grade_at_least_one": true,
+        "certifies_no_regular_element_in_boundary": false,
+        "tests": [
+          {
+            "element": "x+y+z",
+            "regular": true,
+            "tested": true
+          },
+          {
+            "element": "x+2y+4z",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "x+3y+9z",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "x+4y+16z",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "x+5y+25z",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "x+6y+36z",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "x+7y+49z",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "x+8y+64z",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "x",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "y",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "z",
+            "regular": false,
+            "tested": false
+          }
+        ]
+      },
+      "saturation": {
+        "equal_to_presentation": true,
+        "presentation_standard_basis_size": 27,
+        "saturated_presentation": [
+          "y*gen(11)-y*gen(8)-z*gen(10)+z*gen(4)",
+          "x*gen(4)-y*gen(3)+z*gen(2)",
+          "x*gen(8)-y*gen(7)+z*gen(6)",
+          "x*gen(9)-y*gen(5)+z*gen(1)",
+          "x*gen(10)+x*gen(4)-y*gen(6)-y*gen(3)+2z*gen(2)",
+          "x*gen(11)+x*gen(8)-2y*gen(7)+z*gen(6)+z*gen(3)",
+          "2x*gen(12)-y*gen(11)-y*gen(8)+z*gen(10)+z*gen(4)",
+          "2yz*gen(5)-z2*gen(1)-gen(10)-gen(4)",
+          "xz*gen(5)+gen(6)+gen(3)",
+          "3y2*gen(1)-z2*gen(9)-2*gen(12)",
+          "3y2*gen(2)+4yz*gen(8)+z2*gen(10)-4z2*gen(4)",
+          "6y2*gen(6)+3y2*gen(3)-6yz*gen(2)+z2*gen(11)",
+          "3y2*gen(7)-3yz*gen(6)-5yz*gen(3)+3z2*gen(2)",
+          "2y2*gen(10)+y2*gen(4)-z2*gen(12)",
+          "3xy*gen(1)+z2*gen(5)-gen(11)-gen(8)",
+          "3xy*gen(2)+yz*gen(7)+z2*gen(3)",
+          "9xy*gen(3)-3xz*gen(2)-2z2*gen(7)",
+          "3xy*gen(5)-xz*gen(1)+2*gen(2)",
+          "9xy*gen(6)+9xy*gen(3)-6xz*gen(2)+2z2*gen(7)",
+          "3xy*gen(7)+xz*gen(3)",
+          "3x2*gen(1)-2*gen(7)",
+          "3x2*gen(2)-2xz*gen(7)",
+          "2x2*gen(6)+x2*gen(3)",
+          "xz2*gen(1)+3x*gen(10)+3x*gen(4)+4z*gen(2)",
+          "z4*gen(5)-9y2*gen(6)-9y2*gen(3)+6yz*gen(2)-z2*gen(11)-z2*gen(8)",
+          "z5*gen(1)-9y3*gen(3)+7yz2*gen(8)+4z3*gen(10)-8z3*gen(4)",
+          "z7*gen(9)-27y5*gen(3)+21y3z2*gen(8)-30y2z3*gen(4)+8z5*gen(12)"
+        ],
+        "saturated_standard_basis_size": 27,
+        "strategy": "compute"
+      },
+      "schema": "support-saturation-certificate.v2"
+    },
+    "double-line": {
+      "associated_primes": {
+        "boundary_containing_primes": [],
+        "primes": [
+          [],
+          [
+            "x"
+          ],
+          [
+            "y",
+            "x"
+          ]
+        ],
+        "status": "computed_by_module_primary_decomposition"
+      },
+      "backend": {
+        "name": "Singular",
+        "stderr": "",
+        "version": "Singular for arm64-Darwin version 4.4.1 (44105, 64 bit) Nov 11 2025 16:12:34"
+      },
+      "input": {
+        "boundary_ideal": [
+          "x",
+          "y",
+          "z"
+        ],
+        "distinguished_class": null,
+        "filtration": null,
+        "options": {
+          "associated_primes": "decompose",
+          "regular_search_bound": 8,
+          "saturation_strategy": "compute",
+          "singular_binary": null,
+          "timeout_seconds": 300,
+          "torsion_exponent_bound": 32
+        },
+        "presentation": {
+          "generators": [
+            [
+              "0",
+              "z",
+              "-y",
+              "x",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "z",
+              "-y",
+              "x",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "z",
+              "-y",
+              "x"
+            ],
+            [
+              "z",
+              "0",
+              "0",
+              "0",
+              "-y",
+              "0",
+              "0",
+              "0",
+              "x",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "z",
+              "0",
+              "0",
+              "0",
+              "-y",
+              "0",
+              "0",
+              "0",
+              "x",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "z",
+              "0",
+              "0",
+              "0",
+              "-y",
+              "0",
+              "0",
+              "0",
+              "x",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "z",
+              "0",
+              "0",
+              "0",
+              "-y",
+              "0",
+              "0",
+              "0",
+              "x"
+            ],
+            [
+              "0",
+              "2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "2*x^2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "2*x*y",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "-x^2",
+              "0",
+              "1",
+              "0",
+              "0",
+              "1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "2*x^4",
+              "0",
+              "-2*x^2",
+              "0",
+              "0",
+              "x^2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "2*x^3*y",
+              "-x*z",
+              "-x*y",
+              "-x^2",
+              "0",
+              "x*y",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "-x*y",
+              "0",
+              "0",
+              "1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "2*x^3*y",
+              "-x*z",
+              "-2*x*y",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "x^2",
+              "0",
+              "0"
+            ],
+            [
+              "2*x^2*y^2",
+              "-2*y*z",
+              "-y^2",
+              "-x*y",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "x*y",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "x^2",
+              "0",
+              "2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "3*x^2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "4*x^4",
+              "0",
+              "-x^2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "4*x^3*y",
+              "-2*x*z",
+              "-2*x*y",
+              "x^2",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "x*z",
+              "0",
+              "0",
+              "0",
+              "x*y",
+              "0",
+              "0",
+              "1",
+              "0",
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "x*z",
+              "0",
+              "0",
+              "0",
+              "2*x*y",
+              "0",
+              "0",
+              "0",
+              "x^2",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "x*z",
+              "0",
+              "2*x^3*y",
+              "-x*z",
+              "0",
+              "0",
+              "2*x^4",
+              "0",
+              "-x^2",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "x*z",
+              "2*x^2*y^2",
+              "-2*y*z",
+              "-y^2",
+              "x*y",
+              "2*x^3*y",
+              "-x*z",
+              "-x*y",
+              "0"
+            ],
+            [
+              "2*y*z",
+              "0",
+              "0",
+              "0",
+              "y^2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "2"
+            ],
+            [
+              "0",
+              "2*y*z",
+              "0",
+              "0",
+              "0",
+              "y^2",
+              "0",
+              "0",
+              "0",
+              "2*x*y",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "2*y*z",
+              "0",
+              "0",
+              "0",
+              "y^2",
+              "0",
+              "4*x^3*y",
+              "-2*x*z",
+              "-2*x*y",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "2*y*z",
+              "0",
+              "0",
+              "0",
+              "y^2",
+              "4*x^2*y^2",
+              "-4*y*z",
+              "-2*y^2",
+              "0"
+            ]
+          ],
+          "label": "homogeneous-cubic-cotangent-double-line",
+          "rank": 12,
+          "ring": {
+            "characteristic": 0,
+            "ordering": "dp",
+            "variables": [
+              "x",
+              "y",
+              "z"
+            ]
+          },
+          "singular_setup": null
+        }
+      },
+      "input_sha256": "1ad151f581f7461727f5ef0f840490894148dd0e9deb4379732d5ff042cab4b3",
+      "local_cohomology": {
+        "annihilator": [],
+        "associated_primes": [],
+        "boundary_annihilation_exponent": 0,
+        "generator_count": 0,
+        "generators_in_F": [],
+        "identity": "H^0_I(F/N) = (N:I^infinity)/N",
+        "relations": [],
+        "torsion_exponent_search_bound": 32,
+        "zero": true
+      },
+      "regular_elements": {
+        "candidate": "x+y+z",
+        "certifies_boundary_grade_at_least_one": true,
+        "certifies_no_regular_element_in_boundary": false,
+        "tests": [
+          {
+            "element": "x+y+z",
+            "regular": true,
+            "tested": true
+          },
+          {
+            "element": "x+2y+4z",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "x+3y+9z",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "x+4y+16z",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "x+5y+25z",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "x+6y+36z",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "x+7y+49z",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "x+8y+64z",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "x",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "y",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "z",
+            "regular": false,
+            "tested": false
+          }
+        ]
+      },
+      "saturation": {
+        "equal_to_presentation": true,
+        "presentation_standard_basis_size": 20,
+        "saturated_presentation": [
+          "gen(2)",
+          "y*gen(11)-y*gen(8)-z*gen(10)+z*gen(4)",
+          "x*gen(4)-y*gen(3)",
+          "x*gen(8)-y*gen(7)+z*gen(6)",
+          "x*gen(9)-y*gen(5)+z*gen(1)",
+          "x*gen(10)+x*gen(4)-y*gen(6)-y*gen(3)",
+          "x*gen(11)+x*gen(8)-2y*gen(7)+z*gen(6)+z*gen(3)",
+          "2x*gen(12)-y*gen(11)-y*gen(8)+z*gen(10)+z*gen(4)",
+          "y2*gen(5)+2yz*gen(1)+2*gen(12)",
+          "y2*gen(6)",
+          "3y2*gen(7)+2yz*gen(6)",
+          "y2*gen(8)+2yz*gen(10)",
+          "xy*gen(1)-gen(10)-gen(4)",
+          "xy*gen(5)+xz*gen(1)+gen(11)+gen(8)",
+          "xy*gen(6)",
+          "3xy*gen(7)+xz*gen(6)",
+          "x2*gen(1)-gen(6)-gen(3)",
+          "x2*gen(5)+2*gen(7)",
+          "x2*gen(6)",
+          "x2*gen(7)"
+        ],
+        "saturated_standard_basis_size": 20,
+        "strategy": "compute"
+      },
+      "schema": "support-saturation-certificate.v2"
+    },
+    "line-tangent-conic": {
+      "associated_primes": {
+        "boundary_containing_primes": [],
+        "primes": [
+          [
+            "y"
+          ],
+          [
+            "4xy+z2"
+          ],
+          [
+            "z",
+            "y"
+          ]
+        ],
+        "status": "computed_by_module_primary_decomposition"
+      },
+      "backend": {
+        "name": "Singular",
+        "stderr": "",
+        "version": "Singular for arm64-Darwin version 4.4.1 (44105, 64 bit) Nov 11 2025 16:12:34"
+      },
+      "input": {
+        "boundary_ideal": [
+          "x",
+          "y",
+          "z"
+        ],
+        "distinguished_class": null,
+        "filtration": null,
+        "options": {
+          "associated_primes": "decompose",
+          "regular_search_bound": 8,
+          "saturation_strategy": "compute",
+          "singular_binary": null,
+          "timeout_seconds": 300,
+          "torsion_exponent_bound": 32
+        },
+        "presentation": {
+          "generators": [
+            [
+              "0",
+              "z",
+              "-y",
+              "x",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "z",
+              "-y",
+              "x",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "z",
+              "-y",
+              "x"
+            ],
+            [
+              "z",
+              "0",
+              "0",
+              "0",
+              "-y",
+              "0",
+              "0",
+              "0",
+              "x",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "z",
+              "0",
+              "0",
+              "0",
+              "-y",
+              "0",
+              "0",
+              "0",
+              "x",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "z",
+              "0",
+              "0",
+              "0",
+              "-y",
+              "0",
+              "0",
+              "0",
+              "x",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "z",
+              "0",
+              "0",
+              "0",
+              "-y",
+              "0",
+              "0",
+              "0",
+              "x"
+            ],
+            [
+              "-2*y*z",
+              "2",
+              "0",
+              "0",
+              "3*y^2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "4*y^2*(3*x*y + z^2)",
+              "2*y*z",
+              "-6*y^2",
+              "0",
+              "0",
+              "3*y^2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "2*y*z*(7*x*y + 2*z^2)",
+              "-2*(x*y - z^2)",
+              "-6*y*z",
+              "0",
+              "0",
+              "0",
+              "3*y^2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "2*y^3*z",
+              "-2*y^2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "3*y^2",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "x*y - z^2",
+              "0",
+              "1",
+              "0",
+              "2*y*z",
+              "1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "y*z*(7*x*y + 2*z^2)",
+              "0",
+              "-2*y*z",
+              "0",
+              "2*y^2*(3*x*y + z^2)",
+              "4*y*z",
+              "-3*y^2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "2*(x^2*y^2 + 4*x*y*z^2 + z^4)",
+              "-3*x*z",
+              "2*(x*y - z^2)",
+              "0",
+              "y*z*(7*x*y + 2*z^2)",
+              "-x*y + z^2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "y^2*(2*x*y + z^2)",
+              "-2*y*z",
+              "y^2",
+              "x*y",
+              "y^3*z",
+              "-y^2",
+              "0",
+              "3*y*z",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "y^2",
+              "0",
+              "0",
+              "1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-y*z",
+              "1",
+              "0",
+              "0"
+            ],
+            [
+              "y^3*z",
+              "0",
+              "0",
+              "y*z",
+              "0",
+              "0",
+              "0",
+              "0",
+              "2*y^2*(3*x*y + z^2)",
+              "y*z",
+              "-3*y^2",
+              "0"
+            ],
+            [
+              "y^2*(2*x*y + z^2)",
+              "-2*y*z",
+              "2*y^2",
+              "z^2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "y*z*(7*x*y + 2*z^2)",
+              "-x*y + z^2",
+              "-3*y*z",
+              "0"
+            ],
+            [
+              "2*y^4",
+              "0",
+              "0",
+              "2*y^2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "y^3*z",
+              "-y^2",
+              "0",
+              "0"
+            ],
+            [
+              "3*x*z",
+              "0",
+              "0",
+              "0",
+              "-x*y + z^2",
+              "0",
+              "2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "3*x*z",
+              "0",
+              "0",
+              "2*y*z*(7*x*y + 2*z^2)",
+              "-3*(x*y - z^2)",
+              "-4*y*z",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "3*x*z",
+              "0",
+              "4*(x^2*y^2 + 4*x*y*z^2 + z^4)",
+              "-6*x*z",
+              "x*y - z^2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "3*x*z",
+              "2*y^2*(2*x*y + z^2)",
+              "-4*y*z",
+              "2*y^2",
+              "-x*y + 3*z^2",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "2*y*z",
+              "0",
+              "0",
+              "0",
+              "-y^2",
+              "0",
+              "0",
+              "1",
+              "-z^2",
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "2*y*z",
+              "0",
+              "0",
+              "y^3*z",
+              "-2*y^2",
+              "0",
+              "y*z",
+              "y*z*(7*x*y + 2*z^2)",
+              "-x*y",
+              "-2*y*z",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "2*y*z",
+              "0",
+              "y^2*(2*x*y + z^2)",
+              "-2*y*z",
+              "0",
+              "z^2",
+              "2*(x^2*y^2 + 4*x*y*z^2 + z^4)",
+              "-3*x*z",
+              "x*y - 2*z^2",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "2*y*z",
+              "2*y^4",
+              "0",
+              "0",
+              "0",
+              "y^2*(2*x*y + z^2)",
+              "-2*y*z",
+              "y^2",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-y^2",
+              "0",
+              "0",
+              "2"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "2*y^3*z",
+              "-3*y^2",
+              "0",
+              "2*y*z"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "2*y^2*(2*x*y + z^2)",
+              "-4*y*z",
+              "y^2",
+              "2*z^2"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "4*y^4",
+              "0",
+              "0",
+              "y^2"
+            ]
+          ],
+          "label": "homogeneous-cubic-cotangent-line-tangent-conic",
+          "rank": 12,
+          "ring": {
+            "characteristic": 0,
+            "ordering": "dp",
+            "variables": [
+              "x",
+              "y",
+              "z"
+            ]
+          },
+          "singular_setup": null
+        }
+      },
+      "input_sha256": "146461936c796ea4712313eecd2f67c2b2edd55932f3636c52db22ed33af75f5",
+      "local_cohomology": {
+        "annihilator": [],
+        "associated_primes": [],
+        "boundary_annihilation_exponent": 0,
+        "generator_count": 0,
+        "generators_in_F": [],
+        "identity": "H^0_I(F/N) = (N:I^infinity)/N",
+        "relations": [],
+        "torsion_exponent_search_bound": 32,
+        "zero": true
+      },
+      "regular_elements": {
+        "candidate": "x+y+z",
+        "certifies_boundary_grade_at_least_one": true,
+        "certifies_no_regular_element_in_boundary": false,
+        "tests": [
+          {
+            "element": "x+y+z",
+            "regular": true,
+            "tested": true
+          },
+          {
+            "element": "x+2y+4z",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "x+3y+9z",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "x+4y+16z",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "x+5y+25z",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "x+6y+36z",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "x+7y+49z",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "x+8y+64z",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "x",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "y",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "z",
+            "regular": false,
+            "tested": false
+          }
+        ]
+      },
+      "saturation": {
+        "equal_to_presentation": true,
+        "presentation_standard_basis_size": 29,
+        "saturated_presentation": [
+          "y*gen(11)-y*gen(8)-z*gen(10)+z*gen(4)",
+          "x*gen(4)-y*gen(3)+z*gen(2)",
+          "x*gen(8)-y*gen(7)+z*gen(6)",
+          "x*gen(9)-y*gen(5)+z*gen(1)",
+          "x*gen(10)+x*gen(4)-y*gen(6)-y*gen(3)+2z*gen(2)",
+          "x*gen(11)+x*gen(8)-2y*gen(7)+z*gen(6)+z*gen(3)",
+          "2x*gen(12)-y*gen(11)-y*gen(8)+z*gen(10)+z*gen(4)",
+          "4yz*gen(1)-3z2*gen(9)+3*gen(11)+3*gen(8)+2*gen(2)",
+          "y2*gen(1)-yz*gen(9)+gen(10)+gen(4)",
+          "2y2*gen(2)+yz*gen(10)-yz*gen(4)-2z2*gen(12)",
+          "2y2*gen(3)-yz*gen(8)-3yz*gen(2)+2z2*gen(4)",
+          "3y2*gen(5)-2yz*gen(1)+2*gen(2)",
+          "y2*gen(6)+yz*gen(8)+yz*gen(2)-2z2*gen(4)",
+          "3y2*gen(7)-5yz*gen(6)-3yz*gen(3)+z2*gen(8)+3z2*gen(2)",
+          "6y2*gen(8)+2y2*gen(2)-yz*gen(10)-7yz*gen(4)+2z2*gen(12)",
+          "y2*gen(9)-2*gen(12)",
+          "y2*gen(10)-2yz*gen(12)",
+          "y2*gen(12)",
+          "xy*gen(1)+2yz*gen(5)-z2*gen(1)+gen(6)+gen(3)",
+          "2xy*gen(2)+5yz*gen(6)+5yz*gen(3)-z2*gen(8)-5z2*gen(2)",
+          "xy*gen(5)-3xz*gen(1)-z2*gen(5)-2*gen(7)",
+          "xy*gen(6)+3xz*gen(2)+4yz*gen(7)-z2*gen(6)",
+          "xy*gen(7)-2xz*gen(6)-xz*gen(3)-z2*gen(7)",
+          "11yz2*gen(5)-7z3*gen(1)-3x*gen(11)-3x*gen(8)-2x*gen(2)+4z*gen(6)+4z*gen(3)",
+          "yz2*gen(9)+3y*gen(11)+3y*gen(8)+2y*gen(2)-4z*gen(10)-4z*gen(4)",
+          "z4*gen(9)-8xy*gen(2)-24y2*gen(7)+28yz*gen(6)+28yz*gen(3)-z2*gen(11)-z2*gen(8)-30z2*gen(2)",
+          "26xz3*gen(1)+11z4*gen(5)-2x2*gen(2)-6xy*gen(7)+7xz*gen(6)+7xz*gen(3)+22z2*gen(7)",
+          "z5*gen(1)-66xyz*gen(3)+137xz2*gen(2)+81yz2*gen(7)-12z3*gen(6)-z3*gen(3)",
+          "z6*gen(5)+156x2yz*gen(3)-324x2z2*gen(2)-355xz3*gen(6)-189xz3*gen(3)-190z4*gen(7)"
+        ],
+        "saturated_standard_basis_size": 29,
+        "strategy": "compute"
+      },
+      "schema": "support-saturation-certificate.v2"
+    },
+    "line-transverse-conic": {
+      "associated_primes": {
+        "boundary_containing_primes": [],
+        "primes": [
+          [
+            "z"
+          ],
+          [
+            "y"
+          ],
+          [
+            "x2+4yz"
+          ],
+          [
+            "z",
+            "y"
+          ]
+        ],
+        "status": "computed_by_module_primary_decomposition"
+      },
+      "backend": {
+        "name": "Singular",
+        "stderr": "",
+        "version": "Singular for arm64-Darwin version 4.4.1 (44105, 64 bit) Nov 11 2025 16:12:34"
+      },
+      "input": {
+        "boundary_ideal": [
+          "x",
+          "y",
+          "z"
+        ],
+        "distinguished_class": null,
+        "filtration": null,
+        "options": {
+          "associated_primes": "decompose",
+          "regular_search_bound": 8,
+          "saturation_strategy": "compute",
+          "singular_binary": null,
+          "timeout_seconds": 300,
+          "torsion_exponent_bound": 32
+        },
+        "presentation": {
+          "generators": [
+            [
+              "0",
+              "z",
+              "-y",
+              "x",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "z",
+              "-y",
+              "x",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "z",
+              "-y",
+              "x"
+            ],
+            [
+              "z",
+              "0",
+              "0",
+              "0",
+              "-y",
+              "0",
+              "0",
+              "0",
+              "x",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "z",
+              "0",
+              "0",
+              "0",
+              "-y",
+              "0",
+              "0",
+              "0",
+              "x",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "z",
+              "0",
+              "0",
+              "0",
+              "-y",
+              "0",
+              "0",
+              "0",
+              "x",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "z",
+              "0",
+              "0",
+              "0",
+              "-y",
+              "0",
+              "0",
+              "0",
+              "x"
+            ],
+            [
+              "x*y",
+              "2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-3*y^2",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "4*y^2*(x^2 + 3*y*z)",
+              "-x*y",
+              "0",
+              "6*y^2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-3*y^2",
+              "0",
+              "0"
+            ],
+            [
+              "2*y*z*(x^2 + 6*y*z)",
+              "-2*x*z",
+              "3*x*y",
+              "6*y*z",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-3*y^2",
+              "0"
+            ],
+            [
+              "-2*x*y^2*z",
+              "0",
+              "2*y^2",
+              "x*y",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-3*y^2"
+            ],
+            [
+              "x*z",
+              "0",
+              "1",
+              "0",
+              "-x*y",
+              "1",
+              "0",
+              "0",
+              "-3*y*z",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "y*z*(x^2 + 6*y*z)",
+              "0",
+              "x*y",
+              "3*y*z",
+              "2*y^2*(x^2 + 3*y*z)",
+              "-2*x*y",
+              "0",
+              "3*y^2",
+              "0",
+              "-3*y*z",
+              "0",
+              "0"
+            ],
+            [
+              "2*z^2*(x^2 + 3*y*z)",
+              "0",
+              "2*x*z",
+              "3*z^2",
+              "y*z*(x^2 + 6*y*z)",
+              "-x*z",
+              "0",
+              "3*y*z",
+              "0",
+              "0",
+              "-3*y*z",
+              "0"
+            ],
+            [
+              "x*y*z^2",
+              "z^2",
+              "0",
+              "x*z",
+              "-x*y^2*z",
+              "0",
+              "y^2",
+              "-x*y",
+              "0",
+              "0",
+              "0",
+              "-3*y*z"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "1",
+              "-y^2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1",
+              "0",
+              "0"
+            ],
+            [
+              "-x*y^2*z",
+              "0",
+              "y^2",
+              "0",
+              "0",
+              "-y^2",
+              "0",
+              "0",
+              "2*y^2*(x^2 + 3*y*z)",
+              "-x*y",
+              "0",
+              "3*y^2"
+            ],
+            [
+              "x*y*z^2",
+              "z^2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-y^2",
+              "0",
+              "y*z*(x^2 + 6*y*z)",
+              "-x*z",
+              "x*y",
+              "3*y*z"
+            ],
+            [
+              "2*y^2*z^2",
+              "0",
+              "0",
+              "-y*z",
+              "0",
+              "0",
+              "0",
+              "-y^2",
+              "-x*y^2*z",
+              "0",
+              "y^2",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "-x*z",
+              "0",
+              "2",
+              "0",
+              "-3*z^2",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "2*y*z*(x^2 + 6*y*z)",
+              "-3*x*z",
+              "2*x*y",
+              "6*y*z",
+              "0",
+              "-3*z^2",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "4*z^2*(x^2 + 3*y*z)",
+              "0",
+              "x*z",
+              "6*z^2",
+              "0",
+              "0",
+              "-3*z^2",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "2*x*y*z^2",
+              "2*z^2",
+              "0",
+              "-x*z",
+              "0",
+              "0",
+              "0",
+              "-3*z^2"
+            ],
+            [
+              "-z^2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1",
+              "0",
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "-z^2",
+              "0",
+              "0",
+              "-x*y^2*z",
+              "0",
+              "y^2",
+              "0",
+              "y*z*(x^2 + 6*y*z)",
+              "-x*z",
+              "x*y",
+              "3*y*z"
+            ],
+            [
+              "0",
+              "0",
+              "-z^2",
+              "0",
+              "x*y*z^2",
+              "z^2",
+              "0",
+              "0",
+              "2*z^2*(x^2 + 3*y*z)",
+              "0",
+              "x*z",
+              "3*z^2"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "-z^2",
+              "2*y^2*z^2",
+              "0",
+              "0",
+              "-y*z",
+              "x*y*z^2",
+              "z^2",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "y*z",
+              "0",
+              "0",
+              "2"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-2*x*y^2*z",
+              "y*z",
+              "2*y^2",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "2*x*y*z^2",
+              "2*z^2",
+              "y*z",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "4*y^2*z^2",
+              "0",
+              "0",
+              "-y*z"
+            ]
+          ],
+          "label": "homogeneous-cubic-cotangent-line-transverse-conic",
+          "rank": 12,
+          "ring": {
+            "characteristic": 0,
+            "ordering": "dp",
+            "variables": [
+              "x",
+              "y",
+              "z"
+            ]
+          },
+          "singular_setup": null
+        }
+      },
+      "input_sha256": "c2115e2f1c43dda821fa27d44695429921572d0639c169706b62d3543262ca8d",
+      "local_cohomology": {
+        "annihilator": [],
+        "associated_primes": [],
+        "boundary_annihilation_exponent": 0,
+        "generator_count": 0,
+        "generators_in_F": [],
+        "identity": "H^0_I(F/N) = (N:I^infinity)/N",
+        "relations": [],
+        "torsion_exponent_search_bound": 32,
+        "zero": true
+      },
+      "regular_elements": {
+        "candidate": "x+y+z",
+        "certifies_boundary_grade_at_least_one": true,
+        "certifies_no_regular_element_in_boundary": false,
+        "tests": [
+          {
+            "element": "x+y+z",
+            "regular": true,
+            "tested": true
+          },
+          {
+            "element": "x+2y+4z",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "x+3y+9z",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "x+4y+16z",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "x+5y+25z",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "x+6y+36z",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "x+7y+49z",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "x+8y+64z",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "x",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "y",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "z",
+            "regular": false,
+            "tested": false
+          }
+        ]
+      },
+      "saturation": {
+        "equal_to_presentation": true,
+        "presentation_standard_basis_size": 27,
+        "saturated_presentation": [
+          "y*gen(11)-y*gen(8)-z*gen(10)+z*gen(4)",
+          "x*gen(4)-y*gen(3)+z*gen(2)",
+          "x*gen(8)-y*gen(7)+z*gen(6)",
+          "x*gen(9)-y*gen(5)+z*gen(1)",
+          "x*gen(10)+x*gen(4)-y*gen(6)-y*gen(3)+2z*gen(2)",
+          "x*gen(11)+x*gen(8)-2y*gen(7)+z*gen(6)+z*gen(3)",
+          "2x*gen(12)-y*gen(11)-y*gen(8)+z*gen(10)+z*gen(4)",
+          "z2*gen(1)-gen(11)-gen(8)",
+          "yz*gen(7)+3z2*gen(12)+z2*gen(6)",
+          "yz*gen(8)-z2*gen(10)-z2*gen(4)",
+          "yz*gen(9)+2*gen(12)",
+          "yz*gen(12)",
+          "xz*gen(5)+3z2*gen(9)-2*gen(7)",
+          "xz*gen(7)+z2*gen(11)+2z2*gen(8)",
+          "y2*gen(5)-gen(10)-gen(4)",
+          "2y2*gen(7)+6yz*gen(12)-yz*gen(6)-yz*gen(3)+2z2*gen(2)",
+          "2y2*gen(8)+yz*gen(10)-2yz*gen(4)",
+          "3y2*gen(12)+y2*gen(3)+yz*gen(2)",
+          "xy*gen(1)-3y2*gen(9)+2*gen(2)",
+          "xy*gen(2)-y2*gen(10)-2y2*gen(4)",
+          "2xy*gen(3)-4xz*gen(2)+3yz*gen(10)+12yz*gen(4)",
+          "xy*gen(5)-xz*gen(1)-6*gen(12)-gen(6)-gen(3)",
+          "2xy*gen(7)-xz*gen(6)+9z2*gen(10)+6z2*gen(4)",
+          "3yz2*gen(6)+yz2*gen(3)-2z3*gen(2)",
+          "yz2*gen(10)",
+          "xz2*gen(6)-z3*gen(10)-2z3*gen(4)",
+          "y2z*gen(3)+yz2*gen(2)"
+        ],
+        "saturated_standard_basis_size": 27,
+        "strategy": "compute"
+      },
+      "schema": "support-saturation-certificate.v2"
+    },
+    "nodal": {
+      "associated_primes": {
+        "boundary_containing_primes": [],
+        "primes": [
+          [
+            "x"
+          ],
+          [
+            "27x2y2-4y4-36xy2z+8y2z2+4xz3-4z4"
+          ]
+        ],
+        "status": "computed_by_module_primary_decomposition"
+      },
+      "backend": {
+        "name": "Singular",
+        "stderr": "",
+        "version": "Singular for arm64-Darwin version 4.4.1 (44105, 64 bit) Nov 11 2025 16:12:34"
+      },
+      "input": {
+        "boundary_ideal": [
+          "x",
+          "y",
+          "z"
+        ],
+        "distinguished_class": null,
+        "filtration": null,
+        "options": {
+          "associated_primes": "decompose",
+          "regular_search_bound": 8,
+          "saturation_strategy": "compute",
+          "singular_binary": null,
+          "timeout_seconds": 300,
+          "torsion_exponent_bound": 32
+        },
+        "presentation": {
+          "generators": [
+            [
+              "0",
+              "z",
+              "-y",
+              "x",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "z",
+              "-y",
+              "x",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "z",
+              "-y",
+              "x"
+            ],
+            [
+              "z",
+              "0",
+              "0",
+              "0",
+              "-y",
+              "0",
+              "0",
+              "0",
+              "x",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "z",
+              "0",
+              "0",
+              "0",
+              "-y",
+              "0",
+              "0",
+              "0",
+              "x",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "z",
+              "0",
+              "0",
+              "0",
+              "-y",
+              "0",
+              "0",
+              "0",
+              "x",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "z",
+              "0",
+              "0",
+              "0",
+              "-y",
+              "0",
+              "0",
+              "0",
+              "x"
+            ],
+            [
+              "-x*z",
+              "2",
+              "0",
+              "0",
+              "3*x*y",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "4*x^2*(3*y^2 + z^2)",
+              "x*z",
+              "-6*x*y",
+              "0",
+              "0",
+              "3*x*y",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "-2*x^2*y*(9*x - 8*z)",
+              "-2*x*y",
+              "-3*x*z",
+              "0",
+              "0",
+              "0",
+              "3*x*y",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "-2*x*(9*x*y^2 - 2*y^2*z + 2*z^3)",
+              "-2*(y^2 + z^2)",
+              "4*y*z",
+              "-x*z",
+              "0",
+              "0",
+              "0",
+              "3*x*y",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "x*y",
+              "0",
+              "1",
+              "0",
+              "x*z",
+              "1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "-x^2*y*(9*x - 8*z)",
+              "0",
+              "-x*z",
+              "0",
+              "2*x^2*(3*y^2 + z^2)",
+              "2*x*z",
+              "-3*x*y",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "-2*x^2*(3*x*z - y^2 - 3*z^2)",
+              "3*x*(x - z)",
+              "2*x*y",
+              "0",
+              "-x^2*y*(9*x - 8*z)",
+              "-x*y",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "x*y*(3*x*z + 2*y^2 - 2*z^2)",
+              "y*(3*x - 2*z)",
+              "y^2 + z^2",
+              "x*y",
+              "-x*(9*x*y^2 - 2*y^2*z + 2*z^3)",
+              "-y^2 - z^2",
+              "2*y*z",
+              "x*z",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "y^2 + z^2",
+              "0",
+              "0",
+              "1",
+              "-2*y*z",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1",
+              "0",
+              "0"
+            ],
+            [
+              "-x*(9*x*y^2 - 2*y^2*z + 2*z^3)",
+              "0",
+              "2*y*z",
+              "0",
+              "0",
+              "-2*y*z",
+              "0",
+              "0",
+              "2*x^2*(3*y^2 + z^2)",
+              "x*z",
+              "-3*x*y",
+              "0"
+            ],
+            [
+              "x*y*(3*x*z + 2*y^2 - 2*z^2)",
+              "y*(3*x - 2*z)",
+              "2*(y^2 + z^2)",
+              "0",
+              "0",
+              "0",
+              "-2*y*z",
+              "0",
+              "-x^2*y*(9*x - 8*z)",
+              "-x*y",
+              "-x*z",
+              "0"
+            ],
+            [
+              "2*(6*x*y^2*z + y^4 - 2*y^2*z^2 + z^4)",
+              "3*y^2",
+              "0",
+              "2*y^2",
+              "0",
+              "0",
+              "0",
+              "-2*y*z",
+              "-x*(9*x*y^2 - 2*y^2*z + 2*z^3)",
+              "-y^2 - z^2",
+              "2*y*z",
+              "0"
+            ],
+            [
+              "-3*x*(x - z)",
+              "0",
+              "0",
+              "0",
+              "-x*y",
+              "0",
+              "2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "-3*x*(x - z)",
+              "0",
+              "0",
+              "-2*x^2*y*(9*x - 8*z)",
+              "-3*x*y",
+              "-2*x*z",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "-3*x*(x - z)",
+              "0",
+              "-4*x^2*(3*x*z - y^2 - 3*z^2)",
+              "6*x*(x - z)",
+              "x*y",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "-3*x*(x - z)",
+              "2*x*y*(3*x*z + 2*y^2 - 2*z^2)",
+              "2*y*(3*x - 2*z)",
+              "2*(y^2 + z^2)",
+              "-x*y",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "-y*(3*x - 2*z)",
+              "0",
+              "0",
+              "0",
+              "-y^2 - z^2",
+              "0",
+              "0",
+              "1",
+              "0",
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "-y*(3*x - 2*z)",
+              "0",
+              "0",
+              "-x*(9*x*y^2 - 2*y^2*z + 2*z^3)",
+              "-2*(y^2 + z^2)",
+              "2*y*z",
+              "0",
+              "-x^2*y*(9*x - 8*z)",
+              "-x*y",
+              "-x*z",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "-y*(3*x - 2*z)",
+              "0",
+              "x*y*(3*x*z + 2*y^2 - 2*z^2)",
+              "y*(3*x - 2*z)",
+              "0",
+              "0",
+              "-2*x^2*(3*x*z - y^2 - 3*z^2)",
+              "3*x*(x - z)",
+              "x*y",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "-y*(3*x - 2*z)",
+              "2*(6*x*y^2*z + y^4 - 2*y^2*z^2 + z^4)",
+              "3*y^2",
+              "0",
+              "-2*z^2",
+              "x*y*(3*x*z + 2*y^2 - 2*z^2)",
+              "y*(3*x - 2*z)",
+              "y^2 + z^2",
+              "0"
+            ],
+            [
+              "-3*y^2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-(y - z)*(y + z)",
+              "0",
+              "0",
+              "2"
+            ],
+            [
+              "0",
+              "-3*y^2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-2*x*(9*x*y^2 - 2*y^2*z + 2*z^3)",
+              "-3*y^2 - z^2",
+              "4*y*z",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "-3*y^2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "2*x*y*(3*x*z + 2*y^2 - 2*z^2)",
+              "2*y*(3*x - 2*z)",
+              "y^2 + 3*z^2",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "-3*y^2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "4*(6*x*y^2*z + y^4 - 2*y^2*z^2 + z^4)",
+              "6*y^2",
+              "0",
+              "(y - z)*(y + z)"
+            ]
+          ],
+          "label": "homogeneous-cubic-cotangent-nodal",
+          "rank": 12,
+          "ring": {
+            "characteristic": 0,
+            "ordering": "dp",
+            "variables": [
+              "x",
+              "y",
+              "z"
+            ]
+          },
+          "singular_setup": null
+        }
+      },
+      "input_sha256": "1efa174860d4805a5fb033297a7ea077ac6faddd315b5dc71a716d51e2813431",
+      "local_cohomology": {
+        "annihilator": [],
+        "associated_primes": [],
+        "boundary_annihilation_exponent": 0,
+        "generator_count": 0,
+        "generators_in_F": [],
+        "identity": "H^0_I(F/N) = (N:I^infinity)/N",
+        "relations": [],
+        "torsion_exponent_search_bound": 32,
+        "zero": true
+      },
+      "regular_elements": {
+        "candidate": "x+y+z",
+        "certifies_boundary_grade_at_least_one": true,
+        "certifies_no_regular_element_in_boundary": false,
+        "tests": [
+          {
+            "element": "x+y+z",
+            "regular": true,
+            "tested": true
+          },
+          {
+            "element": "x+2y+4z",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "x+3y+9z",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "x+4y+16z",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "x+5y+25z",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "x+6y+36z",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "x+7y+49z",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "x+8y+64z",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "x",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "y",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "z",
+            "regular": false,
+            "tested": false
+          }
+        ]
+      },
+      "saturation": {
+        "equal_to_presentation": true,
+        "presentation_standard_basis_size": 24,
+        "saturated_presentation": [
+          "y*gen(11)-y*gen(8)-z*gen(10)+z*gen(4)",
+          "x*gen(4)-y*gen(3)+z*gen(2)",
+          "x*gen(8)-y*gen(7)+z*gen(6)",
+          "x*gen(9)-y*gen(5)+z*gen(1)",
+          "x*gen(10)+x*gen(4)-y*gen(6)-y*gen(3)+2z*gen(2)",
+          "x*gen(11)+x*gen(8)-2y*gen(7)+z*gen(6)+z*gen(3)",
+          "2x*gen(12)-y*gen(11)-y*gen(8)+z*gen(10)+z*gen(4)",
+          "y2*gen(1)-2yz*gen(5)+z2*gen(1)+gen(10)+gen(4)",
+          "y2*gen(5)-3xz*gen(5)-2yz*gen(1)+z2*gen(5)-gen(11)-gen(8)-3*gen(6)-3*gen(3)",
+          "3y2*gen(7)+2y2*gen(2)-3yz*gen(6)-5yz*gen(3)+3z2*gen(2)",
+          "3y2*gen(8)+6y2*gen(6)+3y2*gen(3)-yz*gen(10)-3yz*gen(4)-6yz*gen(2)+z2*gen(11)",
+          "y2*gen(9)+6yz*gen(5)-z2*gen(9)-3z2*gen(1)-2*gen(12)-3*gen(10)-3*gen(4)",
+          "y2*gen(10)-3y2*gen(2)-4yz*gen(8)-z2*gen(10)+4z2*gen(4)",
+          "y2*gen(12)+y2*gen(4)+6y2*gen(2)+8yz*gen(8)-z2*gen(12)+2z2*gen(10)-8z2*gen(4)",
+          "xy*gen(1)+xz*gen(5)+gen(6)+gen(3)",
+          "3xy*gen(2)-y2*gen(6)+yz*gen(7)-yz*gen(2)+z2*gen(3)",
+          "9xy*gen(3)+2y2*gen(2)-3xz*gen(2)+2yz*gen(6)-2yz*gen(3)-2z2*gen(7)",
+          "3xy*gen(5)-xz*gen(1)+2*gen(2)",
+          "9xy*gen(6)+9xy*gen(3)+6y2*gen(7)+2y2*gen(2)-6xz*gen(2)-8yz*gen(6)-8yz*gen(3)+2z2*gen(7)+6z2*gen(2)",
+          "9xy*gen(7)+2y2*gen(6)+3xz*gen(3)-2yz*gen(7)+2yz*gen(2)-2z2*gen(3)",
+          "9x2*gen(1)-8xz*gen(1)-6*gen(7)-2*gen(2)",
+          "27x2*gen(2)-4y2*gen(2)-18xz*gen(7)-30xz*gen(2)-4yz*gen(6)+4yz*gen(3)+4z2*gen(7)",
+          "18x2*gen(6)+9x2*gen(3)-2y2*gen(6)-18xz*gen(6)-12xz*gen(3)+2yz*gen(7)-2yz*gen(2)+2z2*gen(3)",
+          "9x2z*gen(5)-8xz2*gen(5)+3x*gen(11)+3x*gen(8)+9x*gen(6)+9x*gen(3)+2y*gen(2)-5z*gen(6)-5z*gen(3)"
+        ],
+        "saturated_standard_basis_size": 24,
+        "strategy": "compute"
+      },
+      "schema": "support-saturation-certificate.v2"
+    },
+    "smooth": {
+      "associated_primes": {
+        "boundary_containing_primes": [],
+        "primes": [
+          [
+            "x6+2x3y3+y6-2x3z3+2y3z3+z6"
+          ]
+        ],
+        "status": "computed_by_module_primary_decomposition"
+      },
+      "backend": {
+        "name": "Singular",
+        "stderr": "",
+        "version": "Singular for arm64-Darwin version 4.4.1 (44105, 64 bit) Nov 11 2025 16:12:34"
+      },
+      "input": {
+        "boundary_ideal": [
+          "x",
+          "y",
+          "z"
+        ],
+        "distinguished_class": null,
+        "filtration": null,
+        "options": {
+          "associated_primes": "decompose",
+          "regular_search_bound": 8,
+          "saturation_strategy": "compute",
+          "singular_binary": null,
+          "timeout_seconds": 300,
+          "torsion_exponent_bound": 32
+        },
+        "presentation": {
+          "generators": [
+            [
+              "0",
+              "z",
+              "-y",
+              "x",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "z",
+              "-y",
+              "x",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "z",
+              "-y",
+              "x"
+            ],
+            [
+              "z",
+              "0",
+              "0",
+              "0",
+              "-y",
+              "0",
+              "0",
+              "0",
+              "x",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "z",
+              "0",
+              "0",
+              "0",
+              "-y",
+              "0",
+              "0",
+              "0",
+              "x",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "z",
+              "0",
+              "0",
+              "0",
+              "-y",
+              "0",
+              "0",
+              "0",
+              "x",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "z",
+              "0",
+              "0",
+              "0",
+              "-y",
+              "0",
+              "0",
+              "0",
+              "x"
+            ],
+            [
+              "0",
+              "2",
+              "0",
+              "0",
+              "3*x^2",
+              "0",
+              "0",
+              "0",
+              "3*y^2",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "-36*x*y*z^2",
+              "0",
+              "-6*x^2",
+              "-6*y^2",
+              "0",
+              "3*x^2",
+              "0",
+              "0",
+              "0",
+              "3*y^2",
+              "0",
+              "0"
+            ],
+            [
+              "18*x*(x^3 + y^3 - z^3)",
+              "0",
+              "0",
+              "-6*y*z",
+              "0",
+              "0",
+              "3*x^2",
+              "0",
+              "0",
+              "0",
+              "3*y^2",
+              "0"
+            ],
+            [
+              "18*y*(x^3 + y^3 + z^3)",
+              "0",
+              "6*x*z",
+              "0",
+              "0",
+              "0",
+              "0",
+              "3*x^2",
+              "0",
+              "0",
+              "0",
+              "3*y^2"
+            ],
+            [
+              "0",
+              "0",
+              "1",
+              "0",
+              "0",
+              "1",
+              "0",
+              "0",
+              "3*y*z",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "9*x*(x^3 + y^3 - z^3)",
+              "0",
+              "0",
+              "-3*y*z",
+              "-18*x*y*z^2",
+              "0",
+              "-3*x^2",
+              "-3*y^2",
+              "0",
+              "3*y*z",
+              "0",
+              "0"
+            ],
+            [
+              "18*x*y^2*z",
+              "-3*x^2",
+              "0",
+              "-3*z^2",
+              "9*x*(x^3 + y^3 - z^3)",
+              "0",
+              "0",
+              "-3*y*z",
+              "0",
+              "0",
+              "3*y*z",
+              "0"
+            ],
+            [
+              "-9*z*(x^3 - y^3 - z^3)",
+              "-3*x*y",
+              "0",
+              "0",
+              "9*y*(x^3 + y^3 + z^3)",
+              "0",
+              "3*x*z",
+              "0",
+              "0",
+              "0",
+              "0",
+              "3*y*z"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "1",
+              "-3*x*z",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1",
+              "0",
+              "0"
+            ],
+            [
+              "9*y*(x^3 + y^3 + z^3)",
+              "0",
+              "3*x*z",
+              "0",
+              "0",
+              "-3*x*z",
+              "0",
+              "0",
+              "-18*x*y*z^2",
+              "0",
+              "-3*x^2",
+              "-3*y^2"
+            ],
+            [
+              "-9*z*(x^3 - y^3 - z^3)",
+              "-3*x*y",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-3*x*z",
+              "0",
+              "9*x*(x^3 + y^3 - z^3)",
+              "0",
+              "0",
+              "-3*y*z"
+            ],
+            [
+              "-18*x^2*y*z",
+              "-3*y^2",
+              "-3*z^2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-3*x*z",
+              "9*y*(x^3 + y^3 + z^3)",
+              "0",
+              "3*x*z",
+              "0"
+            ],
+            [
+              "3*x^2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "2",
+              "0",
+              "3*z^2",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "3*x^2",
+              "0",
+              "0",
+              "18*x*(x^3 + y^3 - z^3)",
+              "0",
+              "0",
+              "-6*y*z",
+              "0",
+              "3*z^2",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "3*x^2",
+              "0",
+              "36*x*y^2*z",
+              "-6*x^2",
+              "0",
+              "-6*z^2",
+              "0",
+              "0",
+              "3*z^2",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "3*x^2",
+              "-18*z*(x^3 - y^3 - z^3)",
+              "-6*x*y",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "3*z^2"
+            ],
+            [
+              "3*x*y",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1",
+              "0",
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "3*x*y",
+              "0",
+              "0",
+              "9*y*(x^3 + y^3 + z^3)",
+              "0",
+              "3*x*z",
+              "0",
+              "9*x*(x^3 + y^3 - z^3)",
+              "0",
+              "0",
+              "-3*y*z"
+            ],
+            [
+              "0",
+              "0",
+              "3*x*y",
+              "0",
+              "-9*z*(x^3 - y^3 - z^3)",
+              "-3*x*y",
+              "0",
+              "0",
+              "18*x*y^2*z",
+              "-3*x^2",
+              "0",
+              "-3*z^2"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "3*x*y",
+              "-18*x^2*y*z",
+              "-3*y^2",
+              "-3*z^2",
+              "0",
+              "-9*z*(x^3 - y^3 - z^3)",
+              "-3*x*y",
+              "0",
+              "0"
+            ],
+            [
+              "3*y^2",
+              "0",
+              "0",
+              "0",
+              "3*z^2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "2"
+            ],
+            [
+              "0",
+              "3*y^2",
+              "0",
+              "0",
+              "0",
+              "3*z^2",
+              "0",
+              "0",
+              "18*y*(x^3 + y^3 + z^3)",
+              "0",
+              "6*x*z",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "3*y^2",
+              "0",
+              "0",
+              "0",
+              "3*z^2",
+              "0",
+              "-18*z*(x^3 - y^3 - z^3)",
+              "-6*x*y",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "3*y^2",
+              "0",
+              "0",
+              "0",
+              "3*z^2",
+              "-36*x^2*y*z",
+              "-6*y^2",
+              "-6*z^2",
+              "0"
+            ]
+          ],
+          "label": "homogeneous-cubic-cotangent-smooth",
+          "rank": 12,
+          "ring": {
+            "characteristic": 0,
+            "ordering": "dp",
+            "variables": [
+              "x",
+              "y",
+              "z"
+            ]
+          },
+          "singular_setup": null
+        }
+      },
+      "input_sha256": "2c7293764e421a1c3a747db54d78b70c4391c8abb8dcd46d53d6f48a76ac505e",
+      "local_cohomology": {
+        "annihilator": [],
+        "associated_primes": [],
+        "boundary_annihilation_exponent": 0,
+        "generator_count": 0,
+        "generators_in_F": [],
+        "identity": "H^0_I(F/N) = (N:I^infinity)/N",
+        "relations": [],
+        "torsion_exponent_search_bound": 32,
+        "zero": true
+      },
+      "regular_elements": {
+        "candidate": "x+y+z",
+        "certifies_boundary_grade_at_least_one": true,
+        "certifies_no_regular_element_in_boundary": false,
+        "tests": [
+          {
+            "element": "x+y+z",
+            "regular": true,
+            "tested": true
+          },
+          {
+            "element": "x+2y+4z",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "x+3y+9z",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "x+4y+16z",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "x+5y+25z",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "x+6y+36z",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "x+7y+49z",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "x+8y+64z",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "x",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "y",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "z",
+            "regular": false,
+            "tested": false
+          }
+        ]
+      },
+      "saturation": {
+        "equal_to_presentation": true,
+        "presentation_standard_basis_size": 24,
+        "saturated_presentation": [
+          "y*gen(11)-y*gen(8)-z*gen(10)+z*gen(4)",
+          "x*gen(4)-y*gen(3)+z*gen(2)",
+          "x*gen(8)-y*gen(7)+z*gen(6)",
+          "x*gen(9)-y*gen(5)+z*gen(1)",
+          "x*gen(10)+x*gen(4)-y*gen(6)-y*gen(3)+2z*gen(2)",
+          "x*gen(11)+x*gen(8)-2y*gen(7)+z*gen(6)+z*gen(3)",
+          "2x*gen(12)-y*gen(11)-y*gen(8)+z*gen(10)+z*gen(4)",
+          "3yz*gen(9)+gen(6)+gen(3)",
+          "3xz*gen(5)-gen(10)-gen(4)",
+          "3y2*gen(1)+3z2*gen(5)+2*gen(12)",
+          "y2*gen(2)-2yz*gen(7)+z2*gen(6)+2z2*gen(3)",
+          "2y2*gen(6)+y2*gen(3)-2yz*gen(2)+z2*gen(7)",
+          "2y2*gen(10)+y2*gen(4)+2z2*gen(11)+z2*gen(8)",
+          "3xy*gen(1)+gen(11)+gen(8)",
+          "xy*gen(2)-xz*gen(7)+yz*gen(12)",
+          "2xy*gen(6)+xy*gen(3)-xz*gen(2)+z2*gen(12)",
+          "xy*gen(7)+y2*gen(12)-xz*gen(6)-2xz*gen(3)",
+          "3x2*gen(1)+3z2*gen(9)+2*gen(7)",
+          "x2*gen(2)+2yz*gen(8)+z2*gen(10)",
+          "x2*gen(3)+y2*gen(4)-z2*gen(11)-z2*gen(8)",
+          "3x2*gen(5)+3y2*gen(9)+2*gen(2)",
+          "x2*gen(6)+x2*gen(3)+y2*gen(10)+y2*gen(4)+z2*gen(11)+z2*gen(8)",
+          "x2*gen(7)+y2*gen(8)+yz*gen(10)+yz*gen(4)",
+          "3y2z*gen(5)-3yz2*gen(1)+x*gen(6)+x*gen(3)"
+        ],
+        "saturated_standard_basis_size": 24,
+        "strategy": "compute"
+      },
+      "schema": "support-saturation-certificate.v2"
+    },
+    "triangle": {
+      "associated_primes": {
+        "boundary_containing_primes": [],
+        "primes": [
+          [
+            "z"
+          ],
+          [
+            "y"
+          ],
+          [
+            "x"
+          ],
+          [
+            "z",
+            "y"
+          ],
+          [
+            "z",
+            "x"
+          ],
+          [
+            "y",
+            "x"
+          ]
+        ],
+        "status": "computed_by_module_primary_decomposition"
+      },
+      "backend": {
+        "name": "Singular",
+        "stderr": "",
+        "version": "Singular for arm64-Darwin version 4.4.1 (44105, 64 bit) Nov 11 2025 16:12:34"
+      },
+      "input": {
+        "boundary_ideal": [
+          "x",
+          "y",
+          "z"
+        ],
+        "distinguished_class": null,
+        "filtration": null,
+        "options": {
+          "associated_primes": "decompose",
+          "regular_search_bound": 8,
+          "saturation_strategy": "compute",
+          "singular_binary": null,
+          "timeout_seconds": 300,
+          "torsion_exponent_bound": 32
+        },
+        "presentation": {
+          "generators": [
+            [
+              "0",
+              "z",
+              "-y",
+              "x",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "z",
+              "-y",
+              "x",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "z",
+              "-y",
+              "x"
+            ],
+            [
+              "z",
+              "0",
+              "0",
+              "0",
+              "-y",
+              "0",
+              "0",
+              "0",
+              "x",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "z",
+              "0",
+              "0",
+              "0",
+              "-y",
+              "0",
+              "0",
+              "0",
+              "x",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "z",
+              "0",
+              "0",
+              "0",
+              "-y",
+              "0",
+              "0",
+              "0",
+              "x",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "z",
+              "0",
+              "0",
+              "0",
+              "-y",
+              "0",
+              "0",
+              "0",
+              "x"
+            ],
+            [
+              "x*y",
+              "2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "4*x^2*y^2",
+              "-x*y",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "2*x^2*y*z",
+              "-2*x*z",
+              "3*x*y",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "-2*x*y^2*z",
+              "0",
+              "2*y^2",
+              "x*y",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "x*z",
+              "0",
+              "1",
+              "0",
+              "-x*y",
+              "1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "x^2*y*z",
+              "0",
+              "x*y",
+              "0",
+              "2*x^2*y^2",
+              "-2*x*y",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "2*x^2*z^2",
+              "0",
+              "2*x*z",
+              "0",
+              "x^2*y*z",
+              "-x*z",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "x*y*z^2",
+              "z^2",
+              "0",
+              "x*z",
+              "-x*y^2*z",
+              "0",
+              "y^2",
+              "-x*y",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "1",
+              "-y^2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1",
+              "0",
+              "0"
+            ],
+            [
+              "-x*y^2*z",
+              "0",
+              "y^2",
+              "0",
+              "0",
+              "-y^2",
+              "0",
+              "0",
+              "2*x^2*y^2",
+              "-x*y",
+              "0",
+              "0"
+            ],
+            [
+              "x*y*z^2",
+              "z^2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-y^2",
+              "0",
+              "x^2*y*z",
+              "-x*z",
+              "x*y",
+              "0"
+            ],
+            [
+              "2*y^2*z^2",
+              "0",
+              "0",
+              "-y*z",
+              "0",
+              "0",
+              "0",
+              "-y^2",
+              "-x*y^2*z",
+              "0",
+              "y^2",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "-x*z",
+              "0",
+              "2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "2*x^2*y*z",
+              "-3*x*z",
+              "2*x*y",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "4*x^2*z^2",
+              "0",
+              "x*z",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "2*x*y*z^2",
+              "2*z^2",
+              "0",
+              "-x*z",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "-z^2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1",
+              "0",
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "-z^2",
+              "0",
+              "0",
+              "-x*y^2*z",
+              "0",
+              "y^2",
+              "0",
+              "x^2*y*z",
+              "-x*z",
+              "x*y",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "-z^2",
+              "0",
+              "x*y*z^2",
+              "z^2",
+              "0",
+              "0",
+              "2*x^2*z^2",
+              "0",
+              "x*z",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "-z^2",
+              "2*y^2*z^2",
+              "0",
+              "0",
+              "-y*z",
+              "x*y*z^2",
+              "z^2",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "y*z",
+              "0",
+              "0",
+              "2"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-2*x*y^2*z",
+              "y*z",
+              "2*y^2",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "2*x*y*z^2",
+              "2*z^2",
+              "y*z",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "4*y^2*z^2",
+              "0",
+              "0",
+              "-y*z"
+            ]
+          ],
+          "label": "homogeneous-cubic-cotangent-triangle",
+          "rank": 12,
+          "ring": {
+            "characteristic": 0,
+            "ordering": "dp",
+            "variables": [
+              "x",
+              "y",
+              "z"
+            ]
+          },
+          "singular_setup": null
+        }
+      },
+      "input_sha256": "e935bc7e08d3372d12ab98b87b2dbfae56a6af8b643576f5a9422abc088bb929",
+      "local_cohomology": {
+        "annihilator": [],
+        "associated_primes": [],
+        "boundary_annihilation_exponent": 0,
+        "generator_count": 0,
+        "generators_in_F": [],
+        "identity": "H^0_I(F/N) = (N:I^infinity)/N",
+        "relations": [],
+        "torsion_exponent_search_bound": 32,
+        "zero": true
+      },
+      "regular_elements": {
+        "candidate": "x+y+z",
+        "certifies_boundary_grade_at_least_one": true,
+        "certifies_no_regular_element_in_boundary": false,
+        "tests": [
+          {
+            "element": "x+y+z",
+            "regular": true,
+            "tested": true
+          },
+          {
+            "element": "x+2y+4z",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "x+3y+9z",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "x+4y+16z",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "x+5y+25z",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "x+6y+36z",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "x+7y+49z",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "x+8y+64z",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "x",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "y",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "z",
+            "regular": false,
+            "tested": false
+          }
+        ]
+      },
+      "saturation": {
+        "equal_to_presentation": true,
+        "presentation_standard_basis_size": 26,
+        "saturated_presentation": [
+          "y*gen(11)-y*gen(8)-z*gen(10)+z*gen(4)",
+          "x*gen(4)-y*gen(3)+z*gen(2)",
+          "x*gen(8)-y*gen(7)+z*gen(6)",
+          "x*gen(9)-y*gen(5)+z*gen(1)",
+          "x*gen(10)+x*gen(4)-y*gen(6)-y*gen(3)+2z*gen(2)",
+          "x*gen(11)+x*gen(8)-2y*gen(7)+z*gen(6)+z*gen(3)",
+          "2x*gen(12)-y*gen(11)-y*gen(8)+z*gen(10)+z*gen(4)",
+          "z2*gen(1)-gen(11)-gen(8)",
+          "yz*gen(7)+z2*gen(6)",
+          "yz*gen(8)-z2*gen(10)-z2*gen(4)",
+          "yz*gen(9)+2*gen(12)",
+          "yz*gen(12)",
+          "xz*gen(5)-2*gen(7)",
+          "xz*gen(7)",
+          "y2*gen(3)+yz*gen(2)",
+          "y2*gen(5)-gen(10)-gen(4)",
+          "2y2*gen(7)-yz*gen(6)-yz*gen(3)+2z2*gen(2)",
+          "2y2*gen(8)+yz*gen(10)-2yz*gen(4)",
+          "xy*gen(1)+2*gen(2)",
+          "xy*gen(2)",
+          "xy*gen(3)-2xz*gen(2)",
+          "xy*gen(5)-xz*gen(1)-gen(6)-gen(3)",
+          "2xy*gen(7)-xz*gen(6)",
+          "3yz2*gen(6)+yz2*gen(3)-2z3*gen(2)",
+          "yz2*gen(10)",
+          "xz2*gen(6)"
+        ],
+        "saturated_standard_basis_size": 26,
+        "strategy": "compute"
+      },
+      "schema": "support-saturation-certificate.v2"
+    },
+    "triple-line": {
+      "associated_primes": {
+        "boundary_containing_primes": [],
+        "primes": [
+          [],
+          [
+            "y",
+            "x"
+          ]
+        ],
+        "status": "computed_by_module_primary_decomposition"
+      },
+      "backend": {
+        "name": "Singular",
+        "stderr": "",
+        "version": "Singular for arm64-Darwin version 4.4.1 (44105, 64 bit) Nov 11 2025 16:12:34"
+      },
+      "input": {
+        "boundary_ideal": [
+          "x",
+          "y",
+          "z"
+        ],
+        "distinguished_class": null,
+        "filtration": null,
+        "options": {
+          "associated_primes": "decompose",
+          "regular_search_bound": 8,
+          "saturation_strategy": "compute",
+          "singular_binary": null,
+          "timeout_seconds": 300,
+          "torsion_exponent_bound": 32
+        },
+        "presentation": {
+          "generators": [
+            [
+              "0",
+              "z",
+              "-y",
+              "x",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "z",
+              "-y",
+              "x",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "z",
+              "-y",
+              "x"
+            ],
+            [
+              "z",
+              "0",
+              "0",
+              "0",
+              "-y",
+              "0",
+              "0",
+              "0",
+              "x",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "z",
+              "0",
+              "0",
+              "0",
+              "-y",
+              "0",
+              "0",
+              "0",
+              "x",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "z",
+              "0",
+              "0",
+              "0",
+              "-y",
+              "0",
+              "0",
+              "0",
+              "x",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "z",
+              "0",
+              "0",
+              "0",
+              "-y",
+              "0",
+              "0",
+              "0",
+              "x"
+            ],
+            [
+              "0",
+              "2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "1",
+              "0",
+              "0",
+              "1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "-3*x^2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "-3*x*y",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "-3*x*y",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "-3*y^2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "3*x^2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "3*x^2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "3*x^2",
+              "0",
+              "0",
+              "-6*x^2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "3*x^2",
+              "0",
+              "-6*x*y",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "3*x*y",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1",
+              "0",
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "3*x*y",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "3*x*y",
+              "0",
+              "0",
+              "-3*x*y",
+              "0",
+              "0",
+              "0",
+              "-3*x^2",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "3*x*y",
+              "0",
+              "-3*y^2",
+              "0",
+              "0",
+              "0",
+              "-3*x*y",
+              "0",
+              "0"
+            ],
+            [
+              "3*y^2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "2"
+            ],
+            [
+              "0",
+              "3*y^2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "3*y^2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-6*x*y",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "3*y^2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-6*y^2",
+              "0",
+              "0"
+            ]
+          ],
+          "label": "homogeneous-cubic-cotangent-triple-line",
+          "rank": 12,
+          "ring": {
+            "characteristic": 0,
+            "ordering": "dp",
+            "variables": [
+              "x",
+              "y",
+              "z"
+            ]
+          },
+          "singular_setup": null
+        }
+      },
+      "input_sha256": "ca3531c9fabf14fc9fba1b1401389c76abd923d78d168047eaeac7bdbd9655b7",
+      "local_cohomology": {
+        "annihilator": [],
+        "associated_primes": [],
+        "boundary_annihilation_exponent": 0,
+        "generator_count": 0,
+        "generators_in_F": [],
+        "identity": "H^0_I(F/N) = (N:I^infinity)/N",
+        "relations": [],
+        "torsion_exponent_search_bound": 32,
+        "zero": true
+      },
+      "regular_elements": {
+        "candidate": "x+y+z",
+        "certifies_boundary_grade_at_least_one": true,
+        "certifies_no_regular_element_in_boundary": false,
+        "tests": [
+          {
+            "element": "x+y+z",
+            "regular": true,
+            "tested": true
+          },
+          {
+            "element": "x+2y+4z",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "x+3y+9z",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "x+4y+16z",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "x+5y+25z",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "x+6y+36z",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "x+7y+49z",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "x+8y+64z",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "x",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "y",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "z",
+            "regular": false,
+            "tested": false
+          }
+        ]
+      },
+      "saturation": {
+        "equal_to_presentation": true,
+        "presentation_standard_basis_size": 16,
+        "saturated_presentation": [
+          "gen(2)",
+          "gen(6)+gen(3)",
+          "gen(10)+gen(4)",
+          "y*gen(11)-y*gen(8)+2z*gen(4)",
+          "x*gen(4)-y*gen(3)",
+          "x*gen(8)-y*gen(7)-z*gen(3)",
+          "x*gen(9)-y*gen(5)+z*gen(1)",
+          "x*gen(11)+x*gen(8)-2y*gen(7)",
+          "2x*gen(12)-y*gen(11)-y*gen(8)",
+          "3y2*gen(1)+2*gen(12)",
+          "y2*gen(3)",
+          "y2*gen(4)",
+          "3xy*gen(1)+gen(11)+gen(8)",
+          "xy*gen(3)",
+          "3x2*gen(1)+2*gen(7)",
+          "x2*gen(3)"
+        ],
+        "saturated_standard_basis_size": 16,
+        "strategy": "compute"
+      },
+      "schema": "support-saturation-certificate.v2"
+    },
+    "zero": {
+      "associated_primes": {
+        "boundary_containing_primes": [],
+        "primes": [
+          []
+        ],
+        "status": "computed_by_module_primary_decomposition"
+      },
+      "backend": {
+        "name": "Singular",
+        "stderr": "",
+        "version": "Singular for arm64-Darwin version 4.4.1 (44105, 64 bit) Nov 11 2025 16:12:34"
+      },
+      "input": {
+        "boundary_ideal": [
+          "x",
+          "y",
+          "z"
+        ],
+        "distinguished_class": null,
+        "filtration": null,
+        "options": {
+          "associated_primes": "decompose",
+          "regular_search_bound": 8,
+          "saturation_strategy": "compute",
+          "singular_binary": null,
+          "timeout_seconds": 300,
+          "torsion_exponent_bound": 32
+        },
+        "presentation": {
+          "generators": [
+            [
+              "0",
+              "z",
+              "-y",
+              "x",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "z",
+              "-y",
+              "x",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "z",
+              "-y",
+              "x"
+            ],
+            [
+              "z",
+              "0",
+              "0",
+              "0",
+              "-y",
+              "0",
+              "0",
+              "0",
+              "x",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "z",
+              "0",
+              "0",
+              "0",
+              "-y",
+              "0",
+              "0",
+              "0",
+              "x",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "z",
+              "0",
+              "0",
+              "0",
+              "-y",
+              "0",
+              "0",
+              "0",
+              "x",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "z",
+              "0",
+              "0",
+              "0",
+              "-y",
+              "0",
+              "0",
+              "0",
+              "x"
+            ],
+            [
+              "0",
+              "2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "1",
+              "0",
+              "0",
+              "1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1",
+              "0",
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "2"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          ],
+          "label": "homogeneous-cubic-cotangent-zero",
+          "rank": 12,
+          "ring": {
+            "characteristic": 0,
+            "ordering": "dp",
+            "variables": [
+              "x",
+              "y",
+              "z"
+            ]
+          },
+          "singular_setup": null
+        }
+      },
+      "input_sha256": "5789ebde040f4f676e9e377529e21e0c365ce80fa08d8ebf100d591f8aacdc5f",
+      "local_cohomology": {
+        "annihilator": [],
+        "associated_primes": [],
+        "boundary_annihilation_exponent": 0,
+        "generator_count": 0,
+        "generators_in_F": [],
+        "identity": "H^0_I(F/N) = (N:I^infinity)/N",
+        "relations": [],
+        "torsion_exponent_search_bound": 32,
+        "zero": true
+      },
+      "regular_elements": {
+        "candidate": "x+y+z",
+        "certifies_boundary_grade_at_least_one": true,
+        "certifies_no_regular_element_in_boundary": false,
+        "tests": [
+          {
+            "element": "x+y+z",
+            "regular": true,
+            "tested": true
+          },
+          {
+            "element": "x+2y+4z",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "x+3y+9z",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "x+4y+16z",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "x+5y+25z",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "x+6y+36z",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "x+7y+49z",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "x+8y+64z",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "x",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "y",
+            "regular": false,
+            "tested": false
+          },
+          {
+            "element": "z",
+            "regular": false,
+            "tested": false
+          }
+        ]
+      },
+      "saturation": {
+        "equal_to_presentation": true,
+        "presentation_standard_basis_size": 10,
+        "saturated_presentation": [
+          "gen(2)",
+          "gen(6)+gen(3)",
+          "gen(7)",
+          "gen(10)+gen(4)",
+          "gen(11)+gen(8)",
+          "gen(12)",
+          "y*gen(8)-z*gen(4)",
+          "x*gen(4)-y*gen(3)",
+          "x*gen(8)-z*gen(3)",
+          "x*gen(9)-y*gen(5)+z*gen(1)"
+        ],
+        "saturated_standard_basis_size": 10,
+        "strategy": "compute"
+      },
+      "schema": "support-saturation-certificate.v2"
+    }
+  },
+  "mathematical_scope": "Exact cotangent saturation and associated primes for the ten homogeneous ternary-cubic orbit representatives; this does not prove saturation for arbitrary nonhomogeneous higher lifts.",
+  "schema": "support-saturation-case-family.v1"
+}

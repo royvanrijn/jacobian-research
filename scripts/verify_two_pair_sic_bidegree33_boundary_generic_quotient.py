@@ -1124,6 +1124,32 @@ def exact_j_divisor_generic_certificate(
     assert [len(polynomial) for polynomial in basis] == [6, 7, 6]
     assert (first_steps, second_steps) == (2, 4)
 
+    later_fiber_polynomials = [
+        fiber_polynomial(
+            sp.Poly(
+                sp.expand(parsed[index].subs(replacements)),
+                s5,
+                t4,
+            )
+        )
+        for index in (3, 4)
+    ]
+    later_reductions = [
+        pseudo_reduce(polynomial, basis)
+        for polynomial in later_fiber_polynomials
+    ]
+    standard_monomials = {
+        (0, 0),
+        (0, 1),
+        (0, 2),
+        (1, 0),
+        (1, 1),
+    }
+    assert all(
+        set(remainder) <= standard_monomials
+        for remainder, _steps in later_reductions
+    )
+
     fraction_field = sp.QQ.frac_field(s1, s3, t0, linear, t2)
     fraction_zero = fraction_field.zero
 
@@ -1259,9 +1285,27 @@ def exact_j_divisor_generic_certificate(
             "t4^3",
         ],
         "leading_coefficients": leading_coefficient_metadata,
+        "later_moment_normal_forms": {
+            str(order): {
+                "support_size": len(remainder),
+                "pseudo_reduction_steps": steps,
+                "coefficient_term_counts_even_odd": [
+                    [
+                        len(coefficient[0].terms()),
+                        len(coefficient[1].terms()),
+                    ]
+                    for _monomial, coefficient in sorted(remainder.items())
+                ],
+            }
+            for order, (remainder, steps) in zip(
+                (6, 7),
+                later_reductions,
+            )
+        },
         "scope": (
             "exact fraction-free characteristic-zero Groebner certificate "
-            "over the generic J-divisor function field"
+            "and mu6,mu7 pseudo-normal forms over the generic J-divisor "
+            "function field"
         ),
     }
 

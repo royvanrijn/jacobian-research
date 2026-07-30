@@ -239,8 +239,11 @@ finite modules.  It verifies:
 * existence or nonexistence of compatible sections; and
 * the associated-graded cellular totalization of all layers.
 
-If the actual cotangent diagram satisfies derived cellular descent, its
-skeletal filtration has the usual totalization spectral sequence
+The full bar presentation of the actual derived intersection satisfies
+cotangent descent by
+[the cotangent-colimit comparison theorem](HESSIAN_RITT_COTANGENT_DESCENT_COMPARISON.md).
+If that bar diagram is effectively compressed to the finite Ritt cell
+complex, its skeletal filtration has the usual totalization spectral sequence
 
 \[
  E_2^{p,q}
@@ -251,8 +254,8 @@ skeletal filtration has the usual totalization spectral sequence
 \]
 
 Equation (5.2) is the correct all-cell theorem target.  The algebraic
-transitivity statements above do not by themselves prove the comparison
-between \(L_{\mathrm{total}}\) and the completed Hessian intersection.
+transitivity statements above do not by themselves prove coefficient
+effectivity of the finite Ritt compression.
 
 ## 6. Degree-thirty and degree-forty-two regressions
 

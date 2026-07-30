@@ -2,6 +2,10 @@
 
 This directory contains the stable proof chain:
 
+- [Twelve-variable degree-three reduction](TWELVE_VARIABLE_DEGREE_THREE_KELLER_COUNTEREXAMPLE.md):
+  an exact source-graph/target-square reduction of MacFarlane's map, its
+  independent sparse determinant replay, and its 19-variable
+  cubic-homogeneous parent;
 - [Foundational Keller map](FOUNDATIONAL_GEOMETRY.md): exact determinant and collision;
 - [Tangent-map core](TANGENT_MAP_CORE.md): the central theorem unifying the
   inverse pencil, plane incidence, Jacobian factor, discriminant normalization,
@@ -31,18 +35,50 @@ This directory contains the stable proof chain:
   unless its rank is two. Ranks `N>=3` are realized explicitly in `A^3` by
   Jacobian-one maps of coordinate degree at most `6N+2`, compatibly with scalar
   extension. The note includes the degree-two descent, scheme-theoretic
-  quotient reconstruction, optimal quintic Hasse fiber, updated arithmetic
-  chain, and staged Lean certificate.
+  quotient reconstruction, the collision algebra `A tensor_K A` and its
+  rank-`N(N-1)` off-diagonal obstruction, cubic `S_3` normal-closure sheets,
+  higher ordered-root configurations reaching the splitting field,
+  the exact optimal-quintic decomposition
+  `A_5 tensor A_5 = A_5 times (N_6^3 times L_2)`, the updated arithmetic
+  chain, and a staged Lean certificate.
 - [Universal relative Keller map](UNIVERSAL_RELATIVE_KELLER_MAP.md): packages
   all supplied presentations into one relative Jacobian-one map, compresses
   the map base sharply from `N+1` to `N-3` parameters by moving three inverse
-  coefficients into the target, identifies the universal root fiber over the
-  `N`-dimensional incidence open, and promotes the remaining parameters to
-  produce one `Q`-defined map of `A^N` for every `N>=3`.  That fixed map is
-  universal for rank-`N` finite-etale fibers over characteristic-zero fields,
-  has `S_N` monodromy, and is absolutely and stably atomic.  The note also
-  separates the `BS_N` atlas from the obstructed Tschirnhaus descent and
-  essential-dimension questions.
+  coefficients into the target, and identifies the universal root fiber over
+  the `N`-dimensional incidence open.  Its ordered collision cover splits into
+  diagonal rank `N` and off-diagonal rank `N(N-1)`; generic off-diagonal
+  monodromy is the `S_N` action on ordered distinct pairs, and the higher
+  ordered-configuration tower reaches the full splitting field.  Promoting
+  the remaining parameters produces one `Q`-defined map of `A^N` for every
+  `N>=3`.  That fixed map is universal for rank-`N` finite-etale fibers over
+  characteristic-zero fields, has `S_N` monodromy, and is absolutely and
+  stably atomic.  The note also separates the canonical collision operation
+  on `BS_N` from the obstructed Tschirnhaus descent of the Keller lift and
+  from essential-dimension questions.
+- [Rank-three collision-framed descent](RANK_THREE_COLLISION_DESCENT.md):
+  identifies the cubic off-diagonal collision cover with the full `S_3`
+  frame torsor, gives the exact projective and quadratic-Tschirnhaus
+  transition cocycles, lifts them to the normalized factorization map after
+  target localization, and isolates the remaining global polynomial boundary
+  at one explicit denominator.  Within the canonical projective transport,
+  the only denominator-free global subgroup is the known scaling torus.
+- [Rank-four collision frames and cross ratio](RANK_FOUR_COLLISION_CROSS_RATIO.md):
+  identifies the ordered three-root cover with the full `S_4` frame torsor
+  and factors the fourth-root interpolation residual by the exact
+  cross-ratio defect
+  `q_2^2-q_1q_3+q_2q_3e_1+q_3^2e_2`.  It separates this projective
+  hypersurface from the primitive-element boundary and writes its cleared
+  equation in the universal quartic Keller coordinates; nonprojective Keller
+  transport off that hypersurface remains open.
+- [All-rank collision frames and projective descent](ALL_RANK_COLLISION_PROJECTIVE_DESCENT.md):
+  identifies `Conf_(N-1)` with the full `S_N` frame torsor and proves that
+  two primitive root coordinates are projectively related exactly when the
+  four columns `1,r,u,r*u` have rank at most three.  The resulting
+  determinantal locus is smooth of codimension `N-3` on the primitive open,
+  has an explicit normalized coefficient matrix on the universal Keller
+  chart, and specializes to the automatic cubic and quartic cross-ratio
+  results.  It isolates, but does not construct, the genuinely
+  nonprojective Keller transport required off this locus.
 - [Universal atomic-map adversarial audit](UNIVERSAL_ATOMIC_MAP_ADVERSARIAL_AUDIT.md):
   attacks polynomiality, the promoted block Jacobian, generic degree,
   coefficient compilation, finite-etale completeness, monodromy, and stable
@@ -176,6 +212,16 @@ This directory contains the stable proof chain:
   equivalent local-cohomology, associated-prime, grade, regular-element,
   and presentation-saturation criteria that extend a defect across its
   possible support.
+
+The [external collision-ideals audit](COLLISION_IDEALS_EXTERNAL_AUDIT.md)
+checks the dimension-independent collision-ring and cubic `S_3` interfaces
+against a pinned Lean development.  Its credit ledger separately records the
+manuscript's attribution to Chloe van der Vlugt, publication of the Lean
+project by the GitHub account `what-social-construct`, the manuscript's
+AI-assistance disclosure, literature inputs, and the independent provenance
+of the explicit three-dimensional counterexample.  It records the exact
+conditional boundary of the planar hidden-inertia argument and does not
+change the plane Jacobian-conjecture status.
 
 External formal certificates for the foundational map are the pinned
 [Lean development](LEAN_FOUNDATIONAL_MAP.md) and the independently authored,

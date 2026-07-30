@@ -38,8 +38,8 @@ lower-order lift.  It is naturally the kernel of a morphism of coherent
 modules, and therefore includes Hamiltonian gauge invariance without
 choosing a gauge slice.
 
-For the existing degree-five calculations this gives two exact
-instantiations.
+For the existing degree-five calculations this gives exact
+instantiations at orders five and seven.
 
 1. At \((\kappa,\tau)=(0,1)\), the 16-term Laurent functional
    \(\Lambda_5\) is a strong restricted dual cocycle.  It annihilates every
@@ -70,12 +70,16 @@ instantiations.
    \right)\ne0.
    \tag{RDC5}
    \]
+3. On the full reduced \(\mathbb A^{27}_K\) fifth-order lift component,
+   eliminate the constant six-column pivot in the order-seven variation
+   matrix.  The resulting Schur functional
+   \(\Lambda^{\mathrm{rel}}_{18}\) is a global section of
+   \(\mathcal P_7\), and its value is again the constant (RDC5).
 
 The first class is global with respect to every finite Laurent lower lift at
-the stated seed.  The second is branchwise: it is invariant under every
-fifth-order correction and gauge change above the displayed \(K\)-point,
-but it has not been extended across the full reduced
-\(\mathbb A^{27}_K\) scheme of fifth-order lifts.
+the stated seed.  The raw coefficient extraction in the second item is
+branchwise.  Its Schur correction in the third item globalizes it across
+the complete reduced fifth-order lift component.
 
 ## 2. The restricted correction complex
 
@@ -252,7 +256,7 @@ strong-cocycle conditions and gives value \(1\).  Its appearance only on
 that fiber is the base-change failure of the coherent kernel
 \(\mathcal P_5\), not a failure of gauge invariance.
 
-## 5. The branchwise \(\hbar^7\) cocycle
+## 5. The branchwise and global \(\hbar^7\) cocycles
 
 On the cubic component, fix the sparse \(K\)-point of the genuine
 fifth-order lift scheme displayed in
@@ -296,12 +300,39 @@ This proves that every one of the 20 fifth-order correction choices above
 the fixed lower branch is obstructed at order seven by the same dual
 cocycle.
 
-It does **not** yet prove that \([X^{18}]\) extends as a section of
-\(\mathcal P_7\) over the entire reduced \(\mathbb A^{27}_K\).  Across that
-space, the order-seven image still has constant rank six, but its
-consistency condition is the known 401-generator ideal in ten effective
-parameters.  A global family of dual cocycles may need several supports and
-Fitting charts.
+The global extension uses the six variation columns numbered
+\(9,11,13,15,17,19\) and the pure-\(X\) rows \(X^8,\ldots,X^{13}\).
+Their pivot matrix \(P\) is constant and invertible over \(K\), and every
+other variation column lies in their span over the full reduced
+\(\mathbb A^{27}_K\).  If \(V_J\) denotes those pivot columns, then
+
+\[
+\Lambda^{\mathrm{rel}}_{18}
+=e_{X^{18}}^\vee-(V_J)_{X^{18}}P^{-1}
+ (e_{X^8}^\vee,\ldots,e_{X^{13}}^\vee)
+\tag{RDC19a}
+\]
+
+annihilates all twenty columns identically.  Exact evaluation gives the
+same constant (RDC5), independently of all 27 lower-lift parameters.
+Moreover
+
+\[
+\begin{aligned}
+&(32313555201a^2+79786133680a+49319661920)\\
+&\quad\cdot(587583566a^2+1388701707a+831388850)\\
+&-(201988446756823689a+256263622855091438)\\
+&\quad\cdot(94a^3+335a^2+400a+160)
+=1637349242961920.
+\end{aligned}
+\tag{RDC19b}
+\]
+
+Thus (RDC5) is a unit in \(K\).  The complete 401-generator consistency
+ideal in ten effective parameters contains 27 nonzero constants, has exact
+characteristic-zero Gröbner basis \((1)\), and admits a one-generator
+degree-zero Nullstellensatz certificate.  Hence every point of the reduced
+\(\mathbb A^{27}_K\) component is obstructed at order seven.
 
 ## 6. Exact scope
 
@@ -512,6 +543,18 @@ The exact cubic branch and its one-term order-seven cocycle are:
   --exact-cubic --seventh-order
 ```
 
+The global order-seven section, generated unit program, and fast replay are:
+
+```bash
+PYTHONPATH=scripts .venv/bin/python \
+  scripts/analyze_degree_five_cubic_fifth_order.py \
+  --exact-cubic --seventh-component-elimination \
+  --seventh-component-program-output \
+    artifacts/generated-results/degree_five_cubic_h7_unit_certificate.sing
+.venv/bin/python \
+  scripts/verify_degree_five_cubic_h7_unit_certificate.py
+```
+
 The parameter presentation and modular Fitting audit are:
 
 ```bash
@@ -554,5 +597,5 @@ The next parameter-uniform steps are:
    other four supports;
 3. lift the bounded-versus-Laurent equality of the 41-condition module over
    the parameter ring; and
-4. repeat (RDC11) for the order-seven obstruction over the reduced
-   \(\mathbb A^{27}_K\).
+4. start the same relative construction on a different classical-symbol
+   family now that the cubic order-seven component is closed.

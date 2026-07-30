@@ -7,7 +7,7 @@
   "source_ideal_cache": "artifacts/generated-results/degree42_ritt_cellular_source_ideals.json",
   "source_ideal_cache_sha256": "b87490607a2667b74339b641675b3b7b29be89442ed52b2b8db80462bf968394",
   "conormal_artifact": "artifacts/generated-results/degree42_ritt_conormal_transitivity.json",
-  "conormal_artifact_sha256": "d7b501c815d785bab67f2286f1c75ad46545d35e517ee00f6d896c2d0077fdf6",
+  "conormal_artifact_sha256": "bec6823cee90464f6a9113499704aa00a3339aabcbd9e11c1d0cf27bb8168b14",
   "calculation": {
     "sector_source_mod_base_square": {
       "artin_rees_cutoff": 4,

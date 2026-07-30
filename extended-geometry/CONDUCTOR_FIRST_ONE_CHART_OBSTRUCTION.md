@@ -1,0 +1,216 @@
+# Conductor-first node and cusp incidence: a one-chart obstruction
+
+> **Status.** A prescribed node or cusp conductor on normalization
+> \(\mathbb A^1\) is compatible with a finite marked-root algebra and a
+> descended discriminant divisor.  In the direct separated one-chart
+> construction, however, the reconstruction pole and polynomiality
+> equations are incompatible.  Equivalently, deleting the sole conductor
+> support creates a nonconstant unit, so the reconstruction open cannot be
+> affine space, even after polynomial stabilization.  This is a general
+> no-go theorem for the stated one-conductor one-chart ansatz.  It does not
+> exclude multi-chart gluing, nonprincipal ambient boundary, or an
+> ambient-coupled construction in which the full source is not the
+> conductor-line localization.
+
+The point of this calculation is to start with the conductor, rather than
+with a punctured parametrization.  The conductor and finite root algebra
+work.  The obstruction appears only when the reciprocal determinant ledger
+is imposed simultaneously with polynomiality.
+
+## 1. The two conductor algebras
+
+Let \(k\) be a characteristic-zero field and \(B=k[t]\).
+
+For a node obtained by identifying \(t=0\) and \(t=1\), put
+
+\[
+A_{\rm n}
+=\{f\in k[t]:f(0)=f(1)\}
+=k+t(t-1)k[t].                                             \tag{1.1}
+\]
+
+Its normalization is \(B\), and its conductor in \(B\) is
+
+\[
+\mathfrak c_{\rm n}=t(t-1)B.                               \tag{1.2}
+\]
+
+For the ordinary cusp, put
+
+\[
+A_{\rm c}=k[t^2,t^3]=k+t^2k[t],\qquad
+\mathfrak c_{\rm c}=t^2B.                                  \tag{1.3}
+\]
+
+Membership has the elementary conductor-jet descriptions
+
+\[
+f\in A_{\rm n}\Longleftrightarrow f(0)=f(1),\qquad
+f\in A_{\rm c}\Longleftrightarrow f'(0)=0.                 \tag{1.4}
+\]
+
+Thus the node glues two residues, while the cusp kills one first-order
+normalization jet.
+
+## 2. Finite marked roots and descended discriminants
+
+The conductor itself does not obstruct a finite marked-root algebra.
+Consider
+
+\[
+\begin{aligned}
+\Psi_{\rm n}(Z,t)&=Z^2-t(t-1)(t+1),\\
+\Psi_{\rm c}(Z,t)&=Z^2-t^2(t+1).                           \tag{2.1}
+\end{aligned}
+\]
+
+Their nonleading coefficients lie in \(A_{\rm n}\) and \(A_{\rm c}\),
+respectively.  Hence each defines a finite rank-two algebra over the
+singular conductor curve.  Their discriminants are
+
+\[
+\Delta_{\rm n}=4t(t-1)(t+1),\qquad
+\Delta_{\rm c}=4t^2(t+1).                                  \tag{2.2}
+\]
+
+Equation (1.4) gives
+
+\[
+\Delta_{\rm n}(0)=\Delta_{\rm n}(1),\qquad
+\Delta_{\rm c}'(0)=0,                                      \tag{2.3}
+\]
+
+so both discriminant divisors descend through the prescribed conductor.
+After removing the visible square \(t^2\) in the cusp case, both radicals
+have an odd valuation somewhere.  Therefore the quadratics are separable
+and irreducible over \(k(t)\).
+
+This meets the finite-algebra and discriminant parts of the proposed
+construction without first choosing a three-punctured curve.
+
+## 3. Reconstruction pole versus polynomiality
+
+The direct conductor-first ansatz now asks for a reconstruction coordinate
+
+\[
+x=\frac{p(t)}{c(t)^m},\qquad m\ge1,                         \tag{3.1}
+\]
+
+where \(c=t(t-1)\) for the node and \(c=t^2\) for the cusp.  The reciprocal
+determinant ledger requires \(x\), or a Jacobian factor constructed from
+it, to have negative valuation on at least one conductor branch.
+
+For the node, polynomiality in the normalization ring is exactly
+
+\[
+t^m(t-1)^m\mid p(t).                                       \tag{3.2}
+\]
+
+Equivalently,
+
+\[
+\operatorname{ord}_0(p)\ge m,\qquad
+\operatorname{ord}_1(p)\ge m.                              \tag{3.3}
+\]
+
+The required pole is the negation of at least one inequality in (3.3).
+Thus no numerator solves both requirements.
+
+For the cusp, polynomiality is
+
+\[
+t^{2m}\mid p(t)
+\quad\Longleftrightarrow\quad
+\operatorname{ord}_0(p)\ge2m,                              \tag{3.4}
+\]
+
+while a conductor pole requires
+\(\operatorname{ord}_0(p)<2m\).  Again the simultaneous system is empty.
+
+These are not merely first-residue tests.  Divisibility in (3.2) imposes
+\(2m\) independent Hermite conditions, and (3.4) kills the first \(2m\)
+Taylor coefficients.  The checker forms these complete systems and, for
+the first four pole orders, adjoins a normalized nonzero polar residue.
+The resulting exact Gröbner basis is the unit ideal.  The displayed
+divisibility argument proves the statement for every \(m\).
+
+## 4. The affine-space obstruction
+
+There is a coordinate-free version of the same failure.  The direct
+regular-reconstruction opens are
+
+\[
+U_{\rm n}
+=\operatorname{Spec}k[t,1/(t(t-1))],\qquad
+U_{\rm c}
+=\operatorname{Spec}k[t,1/t].                              \tag{4.1}
+\]
+
+Their unit groups modulo \(k^\times\) have ranks
+
+\[
+\operatorname{rank}
+\mathcal O(U_{\rm n})^\times/k^\times=2,\qquad
+\operatorname{rank}
+\mathcal O(U_{\rm c})^\times/k^\times=1,                   \tag{4.2}
+\]
+
+generated by \(t,t-1\) in the node case and by \(t\) in the cusp case.
+Adjoining polynomial variables does not change the unit group.  A
+polynomial ring over \(k\), on the other hand, has only constant units.
+Consequently
+
+\[
+U_{\rm n}\times\mathbb A^r\not\simeq\mathbb A^{r+1},
+\qquad
+U_{\rm c}\times\mathbb A^r\not\simeq\mathbb A^{r+1}         \tag{4.3}
+\]
+
+for every \(r\ge0\).
+
+## 5. One-conductor one-chart theorem
+
+The preceding observations give the reusable result.
+
+> **Theorem.** Let \(A=k+c\,k[t]\subset B=k[t]\) be either the nodal
+> conductor algebra with \(c=t(t-1)\) or the cuspidal conductor algebra
+> with \(c=t^2\).  Let \(E\) be any finite marked-root \(A\)-algebra whose
+> discriminant descends to \(A\).  Suppose the separated reconstruction
+> chart is obtained from the normalized conductor line by inverting only
+> \(c\), adjoining affine variables, and using at least one reconstruction
+> function with negative conductor valuation to satisfy a reciprocal
+> determinant ledger.  Then that chart is not affine space and the
+> reconstruction functions cannot all be polynomial in \(B\).  Hence this
+> direct one-conductor one-chart datum does not polynomially algebraize to
+> a Keller source.
+
+The proof does not depend on the degree or coefficients of \(E\): equations
+(3.2)--(3.4) give the valuation contradiction, while (4.2)--(4.3) give the
+intrinsic affine-source obstruction.
+
+The theorem identifies the exact failure of the most literal
+conductor-first construction.  A surviving mechanism must violate at least
+one hypothesis.  Concretely, it must use one of:
+
+1. several ambient boundary primes whose divisor classes eliminate the
+   localization unit;
+2. genuinely multi-chart gluing;
+3. a nonprincipal conductor inside a higher-dimensional normalization; or
+4. ambient-coupled reconstruction in which the full regular source is not
+   \(B[1/c]\) times affine space.
+
+The Davenport node-separating modifications are examples of the second
+kind of behavior: one affine chart loses a point, while completing the
+gluing creates an exceptional projective curve.  The present theorem is
+independent of its three-puncture parametrization.
+
+## Reproduction
+
+Run
+
+```bash
+.venv/bin/python scripts/verify_conductor_first_one_chart_obstruction.py
+```
+
+The command writes
+`artifacts/generated-results/conductor_first_one_chart_obstruction.json`.

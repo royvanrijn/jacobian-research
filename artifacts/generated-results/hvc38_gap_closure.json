@@ -1,0 +1,237 @@
+{
+  "format": "hvc38-gap-closure-v1",
+  "field": "QQ",
+  "nonlinear_pivots": {
+    "public_d_pivot": {
+      "pivot": "d",
+      "allowed_target_outputs": [
+        3,
+        5,
+        6,
+        8,
+        10,
+        11
+      ],
+      "maximum_target_degree": 8,
+      "good_prime": 1000003,
+      "degree_records": [
+        {
+          "target_degree": 1,
+          "new_columns": 6,
+          "cumulative_columns": 6,
+          "rank_mod_prime": 3,
+          "nullity": 3
+        },
+        {
+          "target_degree": 2,
+          "new_columns": 21,
+          "cumulative_columns": 27,
+          "rank_mod_prime": 24,
+          "nullity": 3
+        },
+        {
+          "target_degree": 3,
+          "new_columns": 56,
+          "cumulative_columns": 83,
+          "rank_mod_prime": 80,
+          "nullity": 3
+        },
+        {
+          "target_degree": 4,
+          "new_columns": 126,
+          "cumulative_columns": 209,
+          "rank_mod_prime": 206,
+          "nullity": 3
+        },
+        {
+          "target_degree": 5,
+          "new_columns": 252,
+          "cumulative_columns": 461,
+          "rank_mod_prime": 458,
+          "nullity": 3
+        },
+        {
+          "target_degree": 6,
+          "new_columns": 462,
+          "cumulative_columns": 923,
+          "rank_mod_prime": 920,
+          "nullity": 3
+        },
+        {
+          "target_degree": 7,
+          "new_columns": 792,
+          "cumulative_columns": 1715,
+          "rank_mod_prime": 1712,
+          "nullity": 3
+        },
+        {
+          "target_degree": 8,
+          "new_columns": 1287,
+          "cumulative_columns": 3002,
+          "rank_mod_prime": 2999,
+          "nullity": 3
+        }
+      ],
+      "exact_low_source_degree_output_basis": [
+        8,
+        10,
+        11
+      ],
+      "quadratic_span_rank": 3,
+      "quadratic_span_augmented_rank": 4,
+      "square_identity": "G4=a+(x*y)^2-R^2",
+      "required_quadratic_part": "+/- x*y"
+    },
+    "local_z8_pivot": {
+      "pivot": "z8",
+      "allowed_target_outputs": [
+        1,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12
+      ],
+      "maximum_target_degree": 8,
+      "good_prime": 1000003,
+      "degree_records": [
+        {
+          "target_degree": 1,
+          "new_columns": 8,
+          "cumulative_columns": 8,
+          "rank_mod_prime": 3,
+          "nullity": 5
+        },
+        {
+          "target_degree": 2,
+          "new_columns": 36,
+          "cumulative_columns": 44,
+          "rank_mod_prime": 39,
+          "nullity": 5
+        },
+        {
+          "target_degree": 3,
+          "new_columns": 120,
+          "cumulative_columns": 164,
+          "rank_mod_prime": 159,
+          "nullity": 5
+        },
+        {
+          "target_degree": 4,
+          "new_columns": 330,
+          "cumulative_columns": 494,
+          "rank_mod_prime": 489,
+          "nullity": 5
+        },
+        {
+          "target_degree": 5,
+          "new_columns": 792,
+          "cumulative_columns": 1286,
+          "rank_mod_prime": 1281,
+          "nullity": 5
+        },
+        {
+          "target_degree": 6,
+          "new_columns": 1716,
+          "cumulative_columns": 3002,
+          "rank_mod_prime": 2997,
+          "nullity": 5
+        },
+        {
+          "target_degree": 7,
+          "new_columns": 3432,
+          "cumulative_columns": 6434,
+          "rank_mod_prime": 6429,
+          "nullity": 5
+        },
+        {
+          "target_degree": 8,
+          "new_columns": 6435,
+          "cumulative_columns": 12869,
+          "rank_mod_prime": 12864,
+          "nullity": 5
+        }
+      ],
+      "exact_low_source_degree_output_basis": [
+        7,
+        9,
+        10,
+        11,
+        12
+      ],
+      "quadratic_span_rank": 5,
+      "quadratic_span_augmented_rank": 6,
+      "square_identity": "K4=z4+(z1*z2)^2-R^2",
+      "required_quadratic_part": "+/- z1*z2"
+    },
+    "conclusion": "For target degree at most eight, neither completed nonlinear pivot can have source degree at most three.  The square identity forces the completion pullback to have degree at most two and the stated missing quadratic part."
+  },
+  "coordinated_source_target": {
+    "source_shear_coordinates": [
+      "z4",
+      "z7",
+      "z9",
+      "z10",
+      "z11"
+    ],
+    "source_quadratic_columns": 140,
+    "elementary_target_quadratic_columns": 792,
+    "total_linearized_columns": 932,
+    "good_prime": 1000003,
+    "high_degree_rank_mod_prime": 896,
+    "high_degree_kernel_dimension": 36,
+    "maximum_sparse_relation_support": 5,
+    "linearized_cubic_rank_obstruction": {
+      "fixed_minor_size": 5,
+      "fixed_minor_determinant": "12",
+      "constant_schur_obstruction": "-2",
+      "conclusion": "Every linearized source-target combination that cancels all terms above degree three still has cubic-output rank at least six."
+    },
+    "finite_triangular_family": {
+      "target_bearing_linearized_relations": 22,
+      "integrable_one_parameter_relations": [
+        14,
+        15,
+        17,
+        18,
+        21,
+        22,
+        23,
+        24,
+        25,
+        27,
+        28,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "nonintegrable_relation_indices": [
+        16,
+        19,
+        20,
+        26,
+        29
+      ],
+      "nonintegrable_common_parameter_factor": "lambda^2",
+      "combined_family_parameters": 17,
+      "combined_degree_three_equations": 48,
+      "combined_degree_three_equation_degrees": [
+        2,
+        3
+      ],
+      "selected_cubic_minor_at_origin": "6",
+      "selected_cubic_minor": "-(t3*t9 - 1)*(2*t0*t13 + 9*t3*t7 - 6*t3*t9 + 6)",
+      "degree_three_plus_rank_drop_groebner_basis": [
+        "1"
+      ],
+      "conclusion": "On the exact degree-three locus of the combined seventeen-parameter triangular source-target family, the selected six-by-six cubic minor never vanishes.  Hence cubic-output rank cannot drop below six."
+    }
+  },
+  "consequence": "No dimension-36 construction is obtained.  The two nonlinear pivot-completion families are excluded through target degree eight, and the exact degree-three locus of the stated seventeen-parameter triangular left-right family has cubic-output rank at least six.",
+  "scope": "The pivot statements are bounded by target degree eight.  The left-right theorem covers the explicitly derived quadratic source block and elementary quadratic target directions.  It does not exclude higher-degree completions, different source blocks, nonlinear target generators, non-nested state realizations, or non-doubling symmetric lifts."
+}

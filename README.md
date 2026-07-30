@@ -739,10 +739,34 @@ coefficient-and-origin base has the universal finite-etale root algebra as a
 marked fiber, while exact normalization removes the redundant origin and
 moves three inverse-polynomial coefficients into the target.  The resulting
 relative map uses the sharp `N-3` parameters needed to dominate all normalized
-degree-`N` presentations.  The construction gives an atlas triangle over
-`BS_N`, not a choice-free section: in ranks at least five, stable
+degree-`N` presentations.  The marked fiber's ordered collision cover splits
+canonically into diagonal rank `N` and off-diagonal rank `N(N-1)`.  Its
+generic off-diagonal field is fixed by `S_(N-2)`, so it is the full normal
+closure only in rank three; the higher ordered-root tower reaches the full
+splitting field at `N-1` marked roots.  This collision operation descends
+choice-freely over `BS_N`.  The surrounding Keller construction gives an
+atlas triangle over `BS_N`, not a choice-free section: in ranks at least five, stable
 quadratic-gauge invariants obstruct descent through full Tschirnhaus
-equivalence.  Any field-versal Keller parameter scheme is separately bounded
+equivalence.  The
+[rank-three collision-framed audit](verified/RANK_THREE_COLLISION_DESCENT.md)
+shows that the off-diagonal sheet is already the full `S_3` frame torsor: it
+gives an exact projective presentation cocycle and a canonical Keller
+transport after target localization.  The global
+affine-space problem is now isolated at one explicit normalization divisor;
+within this transport only the scaling torus is denominator-free.  The
+[rank-four frame audit](verified/RANK_FOUR_COLLISION_CROSS_RATIO.md) shows
+that ordered triples supply the full `S_4` frame but expose a genuine
+cross-ratio hypersurface: canonical projective transport covers precisely
+its zero locus, while nonprojective Tschirnhaus transitions remain to be
+lifted.  The
+[all-rank projective-descent theorem](verified/ALL_RANK_COLLISION_PROJECTIVE_DESCENT.md)
+places both low-rank results in one intrinsic criterion: for primitive
+coordinates `r,u`, projective transport exists exactly when the four
+columns `1,r,u,r*u` have rank at most three.  Its `4`-by-`4` minors define a
+smooth codimension-`N-3` locus, become explicit polynomial equations in the
+universal Keller chart, and show that collision framing removes the finite
+`S_N` ambiguity but not the `N-3` moduli of the root-line embedding.  Any
+field-versal Keller parameter scheme is separately bounded
 below by `ed(S_N)`.  Promoting all `N-3` relative parameters to unchanged
 coordinates gives, for every `N>=3`, one explicit determinant-one map of
 `A^N_Q` whose complete fibers realize every rank-`N` finite-etale algebra
@@ -922,9 +946,10 @@ block.  This is one full-support plane, not an open subset of the universal
 24-space.  Four further full-support dense lines for every squarefree
 symbol retain the central presentation for every scalar, and the full
 first-ten-coordinate subspace for the smooth symbol retains the central
-pruned presentation.  These are exact subspace calculations, not a
-universal theorem; the global 24-parameter Fitting discriminant remains
-open.  On the full universal input, all parameter-dependent cotangent
+pruned presentation.  These exact subspace calculations remain independent
+checks; the smooth-symbol universal theorem is now closed by the
+formal-gauge certificate below.  On the full universal input, all
+parameter-dependent cotangent
 entries begin in collision degree three, so the universal and central
 presentations agree modulo `(x,y,z)^3`.  Six parameter-independent unit
 pivots reduce the raw 12-by-31 matrix to a cokernel-equivalent 6-by-25
@@ -947,7 +972,56 @@ module is locally free.  The depth of the canonical-different complex then
 shows that universal cotangent saturation extends the equality across the
 collision axis.  Consequently there is no independent Ext-Fitting gate:
 cotangent saturation implies `Fitt_6=(1), Fitt_5=(0)` for the actual
-support module.  Translating the
+support module.  The remaining saturation hypothesis is now proved for the
+smooth-symbol full 24-parameter family.  If `K` is the graded module of
+compatible tensor corrections and `G` is the determinant-twisted
+simultaneous collision-coordinate/coefficient-module gauge differential,
+an exact dual-number expansion derives all nine columns of `G`.  The exact
+identities
+`K=im(G)+A*eta` and
+`G*L=[x*eta,y*eta,z*eta]` show that `K/im(G)` is the single cubic-modulus
+class and is killed by `(x,y,z)`.  Every compatible term of degree at least
+four is therefore gauge.  The 24 universal quartic directions span the
+full compatible quartic space, and a stored 9-by-24 matrix gives their
+explicit linear-polynomial gauge lift.  Successive homogeneous changes formally identify
+the universal quartic family with its saturated central fiber, and
+collision-adic completion faithfully detects collision-power torsion.
+Thus `H^0_(x,y,z)(Omega)=0`, the canonical different is the actual
+annihilator, and the actual-support Fittings are universally
+`Fitt_6=(1), Fitt_5=(0)` for the smooth symbol.  Extending the
+formal-gauge calculation to the other cubic orbits has an exact limit:
+the graded quotients `ker(C)/im(G_h)` have quartic dimensions
+`2,4,4,6,6,8` on the six singular squarefree symbols and `11,16,24` on
+the double-line, triple-line, and zero symbols.  Their exact
+singular-squarefree annihilators are
+`(x),(x^2),(yz),(y^3),(xyz),(x^3)`; the three non-squarefree quotients are
+faithful of generic ranks `1,2,4`.  Thus smooth is uniquely formally rigid
+above cubic order.  These nongauge directions are genuine tensor moduli,
+not evidence of cotangent torsion; the verified singular planes remain
+saturated.  The nodal row now has an exact first-stage slice:
+`ker(C)/im(G_nodal)=Q[y,z](-3)`.  Its quartic space is the direct sum of
+22 gauge directions and the first-two-coordinate plane, while the
+full-support sum/alternating-sum plane is another transverse slice.  Both
+planes are cotangent-saturated.  Removing the 22 gauge coordinates creates
+higher terms.  The exact degree-five normal curvature for the stored
+row-reduced lift is a nonzero three-component quadratic with 30 cross
+pairs; it vanishes on the coordinate slice and is nonzero on the dense
+slice.  The five-dimensional quartic-lift ambiguity has now been quotiented
+exactly: it acts with rank four on the six slice--gauge curvature
+coordinates, leaving two intrinsic cross forms, and acts trivially on
+three intrinsic pure-gauge quadrics.  The reduced pure-curvature locus is
+the union of two rational planes; the unreduced ideal has one embedded
+degree-two socle class at the origin.  On each reduced plane, the stored
+row-reduced quartic lift now admits an exact quadratic correction of its
+degree-five term.  The 15-dimensional ambiguity in that correction acts
+trivially on the four-dimensional degree-six quotient, where the two
+classes are
+\(\frac{27}{8}(qy+pz)^3\eta\) and
+\(\frac{27}{8}(qy-pz)^3\eta\).  Thus each reduced branch stops at the
+origin for this quartic splitting.  Degree-six independence from the
+earlier five-dimensional quartic lift, continuation of the embedded
+socle, and the cotangent depth test remain open.
+Translating the
 sum/alternating-sum plane by the deterministic
 generic quartic lift extends the constant length-six result to all ten
 cubic-symbol strata.  In particular, the double-line, triple-line, and zero
@@ -958,8 +1032,8 @@ smooth homogeneous symbol the resulting algebra is already a normal
 integral global defect model, but its elliptic projective incidence surface
 makes its geometric divisor class group non-finitely generated, excluding
 an `A^3` open.  These results still do not cover arbitrary normal
-nonhomogeneous lifts, so universal support-saturation and Keller-open
-compatibility remain the precise gaps.
+nonhomogeneous lifts, singular-symbol universal cotangent saturation, or
+Keller-open compatibility.
 For a reduced Koszul defect the branch jump is quantitative: the
 ternary-cubic symbol `h` produces the degree-six tangent equation
 `Disc(h restricted to r-perp)`.  Squarefree `h` forces branch multiplicity
@@ -1516,6 +1590,23 @@ development:
 
 1. `F1 -> LR1` constructs and replays the 21-variable cubic-homogeneous
    collision.
+   `BCR1` imports the pinned external MacFarlane certificate and calibrates
+   backward companion cancellation.  `BCR2` then uses a source graph
+   coordinate and the target square completion `y4-y8^2` to construct and
+   independently replay a 12-variable degree-three collision.  Its
+   cubic-output rank six gives a 19-variable cubic-homogeneous parent and
+   the ambient bounds `n_cub<=19` and `n_HN,4<=38`; the 21-variable route
+   remains the smallest internally generated dependency-free replay.
+   `BCR3` cross-audits this against Traboulsi's independent public
+   `(n,r)=(11,7)` route, identifies `n+r<=17` as the next standard
+   dimension-36 target, and exactly obstructs a seven-pivot public
+   completion family, the closest nonlinear local pivot through target
+   degree two, and a new fourteen-parameter coordinated source-shear family.
+   `BCR4` closes literal and linear `K12 -> K11` graph coordinates in its
+   stated target-completion bounds.  `BCR6` then excludes the two nonlinear
+   square pivots through target degree eight and proves that the exact
+   degree-three locus of a derived seventeen-parameter triangular
+   source-target family never reaches cubic-output rank five.
 2. `LR1 -> GS1` gives the nonexplicit fixed-dimensional route to
    `not GMC(42)`.
 3. `LR1 -> IV1` gives direct `not SIC(21)`, descends to `not SIC(20)`, and
@@ -1703,15 +1794,17 @@ the cancellation, Hessian--Ritt, restricted-minima, and minimal-boundary
 frontiers:
 
 - `OP-CR`: cancellation contact resultants in the residual staircase
-  `m>=1001`, `8<=r<=X_m/m`; the first seven fixed-`r` columns, the 1000
+  `m>=1001`, `9<=r<=X_m/m`; the first eight fixed-`r` columns, the 1000
   all-`r` columns `m<=1000`,
   the exact effective Dusart region, the asymptotic region
   `r>=5(mr)^(21/40)`, and all other parameter-irreducibility ranges are
   complete.  The `r=6` column is closed by 7424 rigorous Arb
-  branch tubes on `0<=1/m<=1/41` and exact modular gcds for `m<=40`.  An
+  branch tubes on `0<=1/m<=1/41` and exact modular gcds for `m<=40`.
   The `r=7` column is closed by 21,504 rigorous Arb branch tubes on
-  `0<=1/m<=1/101` and exact modular gcds for `m<=100`.  The branch method
-  still does not provide a continuation uniform in `r`.
+  `0<=1/m<=1/101` and exact modular gcds for `m<=100`.  The `r=8` column is
+  closed by 56,320 rigorous Arb branch tubes on `0<=1/m<=1/1001` and 1,000
+  degree-preserving modular gcds.  The branch method still does not provide
+  a continuation uniform in `r`.
 - `OP-LR-REES`: the finite module/SAGBI computation is complete on the
   ordinary-source-degree face of `F_2` and gives a negative answer there:
   a weight-one linear combination subducts from degree `39` through `34` to
@@ -1759,9 +1852,9 @@ frontiers:
   completed cellular cotangent complex is the proposed all-degree controller
   for synchronization, nilpotent thickening, and braid obstructions.
 - `OP-RMIN`: the exact current intervals are
-  `5<=n_cub<=21`, `3<=r_cub<=17`, `3<=nu_cub<=18`, and
+  `5<=n_cub<=19`, `3<=r_cub<=17`, `3<=nu_cub<=18`, and
   `6<=rho_cot<=37`.  Companion classes have
-  `6<=n_Dru<=451`, `3<=rho_HN,4<=37`, and `6<=n_HN,4<=42`.
+  `6<=n_Dru<=451`, `3<=rho_HN,4<=37`, and `6<=n_HN,4<=38`.
   The distinction matters: the lower Hessian-rank bound three is for
   unrestricted quartic HN counterexamples, whereas the cotangent block-rank
   identity forces `rho_cot>=6`.  The broad circuit search is frozen at this
@@ -1838,7 +1931,13 @@ The inverse-Jacobian Weyl lift already disproves `DC_n` for every `n>=3`.
 Accordingly, the quantization program is now framed as determining the
 smallest false Dixmier rank—especially settling `DC_2`—rather than connecting
 the counterexample to Dixmier.  Current filtered `A_2` calculations remain
-symbol-specific and do not by themselves settle `DC_2`.
+family-specific and do not by themselves settle `DC_2`.  For the normalized
+two-parameter degree-five family, relative order-five periods leave one
+cubic closed point with reduced lift scheme \(\mathbb A^{27}\); a global
+order-seven Schur cocycle now has a nonzero constant value on that entire
+component.  Thus the interior of this relative family is closed in the
+declared filtration, and the next \(DC_2\) calculation must vary the
+classical-symbol family rather than enlarge support at the old symbol.
 
 Other questions—arithmetic Galois theory, wider quantization,
 coefficient-scheme gluing, quadratic--cubic flexibility, and the two plane

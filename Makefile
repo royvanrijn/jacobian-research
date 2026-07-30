@@ -29,7 +29,14 @@ ALL_PAPERS := $(VERIFIED_PAPERS) $(PARKED_PAPERS) $(COMPANION_PAPERS)
 	verify-coincident-root-loci verify-papers verify-ritt-boundary \
 	verify-ritt-2-complex verify-ll-ritt-reduction verify-ritt-deformation-complex \
 	verify-unified-deformation-complex \
+	verify-boundary-obstruction-theory \
+	verify-universal-cubic-cotangent-saturation \
+	verify-cubic-formal-gauge-cokernel-atlas \
+	verify-nodal-cubic-formal-slice \
+	verify-universal-cubic-filtered-syzygy-frontier \
 	verify-marked-root-ore-bridge \
+	verify-degree-five-relative-quantization-family \
+	verify-degree-five-cubic-h7-unit \
 	verify-relative-fiber-connection-complex \
 	verify-degree42-ritt-relative-cone \
 	verify-hessian-synchronization \
@@ -45,8 +52,18 @@ ALL_PAPERS := $(VERIFIED_PAPERS) $(PARKED_PAPERS) $(COMPANION_PAPERS)
 	verify-degree42-ab-residual-quintics \
 	verify-degree42-higher-gcd-strata \
 	verify-degree42-kuranishi-cutoff-chain \
+	verify-backward-cubic-reduction \
+	verify-macfarlane-f12 \
+	verify-k12-coordinate-pair-frontier \
+	verify-k12-parameterized-completion \
+	verify-k12-z8-cubic-completion \
+	verify-k12-single-defect-quartic-completion \
+	verify-hvc38-cross-frontier \
+	verify-hvc38-gap-closure \
+	verify-support-saturation-compiler refresh-support-saturation-cases \
 	verify-degree30-hessian-pairs refresh-degree30-hessian-pairs \
 	verify-contact-r6 verify-contact-branch-schema verify-contact-r7-asymptotic \
+	verify-contact-r8-asymptotic verify-contact-r8 \
 	verify-parameter-dusart-frontier verify-parameter-sharp-dusart-frontier \
 	verify-parameter-adaptive-dusart-frontier \
 	verify-minimal-boundary \
@@ -59,11 +76,53 @@ ALL_PAPERS := $(VERIFIED_PAPERS) $(PARKED_PAPERS) $(COMPANION_PAPERS)
 	verify-fixed-map-hasse-failures \
 	refresh-multiplicative-hasse-artifact
 .PHONY: verify-hilbert14-invariants
+.PHONY: verify-rank-three-collision-descent
+.PHONY: verify-rank-four-collision-cross-ratio
+.PHONY: verify-all-rank-collision-projective-descent
 
 check:
 	$(PYTHON) -m compileall -q jcsearch scripts
 	$(PYTHON) scripts/check_markdown_links.py
 	$(PYTHON) scripts/audit_status.py
+
+verify-rank-three-collision-descent:
+	$(PYTHON) scripts/verify_rank_three_collision_descent.py
+
+verify-rank-four-collision-cross-ratio:
+	$(PYTHON) scripts/verify_rank_four_collision_cross_ratio.py
+
+verify-all-rank-collision-projective-descent:
+	$(PYTHON) scripts/verify_all_rank_collision_projective_descent.py
+
+verify-backward-cubic-reduction:
+	$(PYTHON) scripts/verify_backward_cubic_suite.py
+
+verify-macfarlane-f12:
+	$(PYTHON) scripts/verify_macfarlane_f12_suite.py
+
+verify-k12-coordinate-pair-frontier:
+	$(PYTHON) scripts/audit_k12_coordinate_pair_frontier.py
+
+verify-k12-parameterized-completion:
+	$(PYTHON) scripts/audit_k12_parameterized_completion.py
+
+verify-k12-z8-cubic-completion:
+	$(PYTHON) scripts/audit_k12_z8_cubic_completion.py
+
+verify-k12-single-defect-quartic-completion:
+	$(PYTHON) scripts/audit_k12_single_defect_quartic_completion.py
+
+verify-hvc38-cross-frontier:
+	$(PYTHON) scripts/audit_hvc38_cross_construction_frontier.py
+
+verify-hvc38-gap-closure:
+	$(PYTHON) scripts/audit_hvc38_gap_closure.py
+
+verify-support-saturation-compiler:
+	$(PYTHON) scripts/verify_support_saturation_compiler.py
+
+refresh-support-saturation-cases:
+	$(PYTHON) scripts/compile_support_saturation_cases.py
 
 verify-gq2-local-fibers:
 	$(SYSTEM_PYTHON) scripts/verify_gq2_permutation_action.py arithmetic/certificates/gq2_s3_x3_minus_2.json
@@ -192,8 +251,29 @@ verify-ritt-deformation-complex:
 verify-unified-deformation-complex:
 	$(PYTHON) scripts/verify_unified_deformation_complex.py
 
+verify-boundary-obstruction-theory:
+	$(PYTHON) scripts/verify_boundary_obstruction_theory.py
+
+verify-universal-cubic-cotangent-saturation:
+	PYTHONPATH=scripts $(PYTHON) scripts/verify_universal_cubic_cotangent_saturation.py
+
+verify-cubic-formal-gauge-cokernel-atlas:
+	PYTHONPATH=scripts $(PYTHON) scripts/verify_cubic_formal_gauge_cokernel_atlas.py
+
+verify-nodal-cubic-formal-slice:
+	PYTHONPATH=scripts $(PYTHON) scripts/verify_nodal_cubic_formal_slice.py
+
+verify-universal-cubic-filtered-syzygy-frontier:
+	$(PYTHON) scripts/verify_universal_cubic_filtered_syzygy_frontier.py
+
 verify-marked-root-ore-bridge:
 	$(PYTHON) scripts/verify_marked_root_ore_bridge.py
+
+verify-degree-five-relative-quantization-family:
+	PYTHONPATH=scripts $(PYTHON) scripts/verify_degree_five_relative_quantization_family.py
+
+verify-degree-five-cubic-h7-unit:
+	$(PYTHON) scripts/verify_degree_five_cubic_h7_unit_certificate.py
 
 verify-relative-fiber-connection-complex:
 	$(PYTHON) scripts/verify_relative_fiber_connection_complex.py
@@ -300,6 +380,12 @@ verify-contact-branch-schema:
 
 verify-contact-r7-asymptotic:
 	$(PYTHON) scripts/verify_contact_resultant_r7_asymptotic.py
+
+verify-contact-r8-asymptotic:
+	$(PYTHON) scripts/verify_contact_resultant_r8_asymptotic.py
+
+verify-contact-r8:
+	$(PYTHON) scripts/verify_contact_resultant_r8_effective.py
 
 verify-core: verify-minimal
 	$(PYTHON) scripts/verify_counterexample.py
@@ -577,7 +663,7 @@ verify-normal-forms:
 	$(PYTHON) scripts/audit_stable_normal_form_independent.py
 	$(PYTHON) scripts/generate_stable_normal_form_consequences.py
 
-verify-derived: verify-normal-forms
+verify-derived: verify-normal-forms verify-boundary-obstruction-theory
 
 # Optional formal replication. This fetches Dean Cureton's separately authored
 # Lean project at the audited commit recorded in verified/LEAN_FOUNDATIONAL_MAP.md; it is kept

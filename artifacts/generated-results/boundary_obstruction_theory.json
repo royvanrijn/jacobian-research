@@ -1,0 +1,638 @@
+{
+  "conductor_descent": {
+    "cusp": {
+      "conductor_condition": "f'(0)=0",
+      "difference_matrix": [
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "difference_rank": 2,
+      "finite_free_coefficient_rank": 3,
+      "kernel_dimension": 7,
+      "polynomial_degree_cutoff": 7,
+      "tensor_difference_rank": 6,
+      "tensor_kernel_dimension": 21
+    },
+    "node": {
+      "conductor_condition": "f(0)=f(1)",
+      "difference_matrix": [
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          -1
+        ]
+      ],
+      "difference_rank": 2,
+      "finite_free_coefficient_rank": 3,
+      "kernel_dimension": 7,
+      "polynomial_degree_cutoff": 7,
+      "tensor_difference_rank": 6,
+      "tensor_kernel_dimension": 21
+    }
+  },
+  "filtered_effectivity": {
+    "nonstrict_example": {
+      "conclusion": "ordinary solvability does not preserve a filtration bound",
+      "defect_target_degree": 0,
+      "least_lift_source_degree": 1,
+      "matrix": [
+        [
+          1
+        ]
+      ],
+      "profile": [
+        {
+          "image_intersection_target_piece_rank": 1,
+          "order": 0,
+          "restricted_image_rank": 0,
+          "strict": false
+        },
+        {
+          "image_intersection_target_piece_rank": 1,
+          "order": 1,
+          "restricted_image_rank": 1,
+          "strict": true
+        }
+      ],
+      "source_weights": [
+        1
+      ],
+      "target_weights": [
+        0
+      ]
+    },
+    "strict_example": {
+      "bounded_defect": [
+        1,
+        1
+      ],
+      "bounded_lift": [
+        1,
+        1
+      ],
+      "matrix": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "profile": [
+        {
+          "image_intersection_target_piece_rank": 1,
+          "order": 0,
+          "restricted_image_rank": 1,
+          "strict": true
+        },
+        {
+          "image_intersection_target_piece_rank": 2,
+          "order": 1,
+          "restricted_image_rank": 2,
+          "strict": true
+        }
+      ],
+      "source_weights": [
+        0,
+        1
+      ],
+      "target_weights": [
+        0,
+        1
+      ]
+    },
+    "tail_rigidity_warning": {
+      "bounded_representative": false,
+      "conclusion": "vanishing high obstruction groups does not imply finite effectivity",
+      "equations": 0,
+      "formal_solution": "sum_(n>=0) t^n",
+      "gauges": 0,
+      "obstructions": 0
+    }
+  },
+  "module_boundary": {
+    "boundary_torsion": {
+      "associated_primes": {
+        "boundary_containing_primes": [
+          [
+            "x"
+          ]
+        ],
+        "primes": [
+          [
+            "x"
+          ]
+        ],
+        "status": "computed_by_module_primary_decomposition"
+      },
+      "backend": {
+        "name": "Singular",
+        "stderr": "",
+        "version": "Singular for arm64-Darwin version 4.4.1 (44105, 64 bit) Nov 11 2025 16:12:34"
+      },
+      "distinguished_class": {
+        "annihilator": [
+          "x2"
+        ],
+        "belongs_to_local_cohomology": true,
+        "boundary_annihilation_exponent": 2,
+        "remainder": [
+          "gen(1)"
+        ],
+        "zero_in_F_mod_N": false
+      },
+      "input": {
+        "boundary_ideal": [
+          "x"
+        ],
+        "distinguished_class": [
+          "1"
+        ],
+        "filtration": null,
+        "options": {
+          "associated_primes": "decompose",
+          "basis_algorithm": "std",
+          "regular_search_bound": 8,
+          "saturation_strategy": "compute",
+          "singular_binary": null,
+          "timeout_seconds": 900,
+          "torsion_exponent_bound": 12
+        },
+        "presentation": {
+          "generators": [
+            [
+              "x2"
+            ]
+          ],
+          "label": "boundary-torsion-example",
+          "rank": 1,
+          "ring": {
+            "characteristic": 0,
+            "ordering": "dp",
+            "variables": [
+              "x"
+            ]
+          },
+          "singular_setup": null
+        }
+      },
+      "input_sha256": "793138d6f076be0642be87ea6dc5bb272f43c522703ce8b5242b897364dfc16e",
+      "local_cohomology": {
+        "annihilator": [
+          "x2"
+        ],
+        "associated_primes": [
+          [
+            "x"
+          ]
+        ],
+        "boundary_annihilation_exponent": 2,
+        "generator_count": 1,
+        "generators_in_F": [
+          "gen(1)"
+        ],
+        "identity": "H^0_I(F/N) = (N:I^infinity)/N",
+        "relations": [
+          "x2*gen(1)"
+        ],
+        "torsion_exponent_search_bound": 12,
+        "zero": false
+      },
+      "regular_elements": {
+        "candidate": null,
+        "certifies_boundary_grade_at_least_one": false,
+        "certifies_no_regular_element_in_boundary": true,
+        "tests": [
+          {
+            "element": "x",
+            "regular": false,
+            "tested": true
+          }
+        ]
+      },
+      "saturation": {
+        "equal_to_presentation": false,
+        "presentation_standard_basis_size": 1,
+        "saturated_presentation": [
+          "gen(1)"
+        ],
+        "saturated_standard_basis_size": 1,
+        "strategy": "compute"
+      },
+      "schema": "support-saturation-certificate.v2"
+    },
+    "finite_jet_warning": {
+      "all_transition_maps_surjective": true,
+      "boundary_exponent_profile": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "certificate": {
+        "associated_primes": {
+          "boundary_containing_primes": null,
+          "primes": null,
+          "status": "boundary_noncontainment_certified_by_regular_element"
+        },
+        "backend": {
+          "name": "Singular",
+          "stderr": "",
+          "version": "Singular for arm64-Darwin version 4.4.1 (44105, 64 bit) Nov 11 2025 16:12:34"
+        },
+        "distinguished_class": {
+          "annihilator": [],
+          "belongs_to_local_cohomology": false,
+          "boundary_annihilation_exponent": -1,
+          "remainder": [
+            "gen(1)"
+          ],
+          "zero_in_F_mod_N": false
+        },
+        "finite_jets": {
+          "convention": "N_n=N+m^n F",
+          "jets": [
+            {
+              "boundary_annihilation_exponent": 1,
+              "distinguished_class_in_local_cohomology": true,
+              "distinguished_class_zero": false,
+              "local_cohomology_generator_count": 1,
+              "local_cohomology_generators": [
+                "gen(1)"
+              ],
+              "order": 1,
+              "presentation_standard_basis_size": 1,
+              "saturated_standard_basis_size": 1,
+              "saturation_equal": false
+            },
+            {
+              "boundary_annihilation_exponent": 2,
+              "distinguished_class_in_local_cohomology": true,
+              "distinguished_class_zero": false,
+              "local_cohomology_generator_count": 1,
+              "local_cohomology_generators": [
+                "gen(1)"
+              ],
+              "order": 2,
+              "presentation_standard_basis_size": 1,
+              "saturated_standard_basis_size": 1,
+              "saturation_equal": false
+            },
+            {
+              "boundary_annihilation_exponent": 3,
+              "distinguished_class_in_local_cohomology": true,
+              "distinguished_class_zero": false,
+              "local_cohomology_generator_count": 1,
+              "local_cohomology_generators": [
+                "gen(1)"
+              ],
+              "order": 3,
+              "presentation_standard_basis_size": 1,
+              "saturated_standard_basis_size": 1,
+              "saturation_equal": false
+            },
+            {
+              "boundary_annihilation_exponent": 4,
+              "distinguished_class_in_local_cohomology": true,
+              "distinguished_class_zero": false,
+              "local_cohomology_generator_count": 1,
+              "local_cohomology_generators": [
+                "gen(1)"
+              ],
+              "order": 4,
+              "presentation_standard_basis_size": 1,
+              "saturated_standard_basis_size": 1,
+              "saturation_equal": false
+            },
+            {
+              "boundary_annihilation_exponent": 5,
+              "distinguished_class_in_local_cohomology": true,
+              "distinguished_class_zero": false,
+              "local_cohomology_generator_count": 1,
+              "local_cohomology_generators": [
+                "gen(1)"
+              ],
+              "order": 5,
+              "presentation_standard_basis_size": 1,
+              "saturated_standard_basis_size": 1,
+              "saturation_equal": false
+            },
+            {
+              "boundary_annihilation_exponent": 6,
+              "distinguished_class_in_local_cohomology": true,
+              "distinguished_class_zero": false,
+              "local_cohomology_generator_count": 1,
+              "local_cohomology_generators": [
+                "gen(1)"
+              ],
+              "order": 6,
+              "presentation_standard_basis_size": 1,
+              "saturated_standard_basis_size": 1,
+              "saturation_equal": false
+            }
+          ],
+          "maximum_requested_jet_boundary_exponent": 6,
+          "normal_ideal": [
+            "x"
+          ],
+          "strategy": "full_saturation",
+          "torsion_exponent_search_bound": 12,
+          "transitions": [
+            {
+              "from_order": 2,
+              "image_generator_count": 1,
+              "image_generators": [
+                "gen(1)"
+              ],
+              "surjective": true,
+              "to_order": 1
+            },
+            {
+              "from_order": 3,
+              "image_generator_count": 1,
+              "image_generators": [
+                "gen(1)"
+              ],
+              "surjective": true,
+              "to_order": 2
+            },
+            {
+              "from_order": 4,
+              "image_generator_count": 1,
+              "image_generators": [
+                "gen(1)"
+              ],
+              "surjective": true,
+              "to_order": 3
+            },
+            {
+              "from_order": 5,
+              "image_generator_count": 1,
+              "image_generators": [
+                "gen(1)"
+              ],
+              "surjective": true,
+              "to_order": 4
+            },
+            {
+              "from_order": 6,
+              "image_generator_count": 1,
+              "image_generators": [
+                "gen(1)"
+              ],
+              "surjective": true,
+              "to_order": 5
+            }
+          ],
+          "uniform_boundary_exponent_on_requested_jets": true
+        },
+        "input": {
+          "boundary_ideal": [
+            "x"
+          ],
+          "distinguished_class": [
+            "1"
+          ],
+          "filtration": {
+            "ideal": [
+              "x"
+            ],
+            "orders": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "strategy": "full_saturation",
+            "transition_annihilator": null
+          },
+          "options": {
+            "associated_primes": "regularity",
+            "basis_algorithm": "std",
+            "regular_search_bound": 8,
+            "saturation_strategy": "compute",
+            "singular_binary": null,
+            "timeout_seconds": 900,
+            "torsion_exponent_bound": 12
+          },
+          "presentation": {
+            "generators": [
+              [
+                "0"
+              ]
+            ],
+            "label": "unbounded-finite-jet-torsion",
+            "rank": 1,
+            "ring": {
+              "characteristic": 0,
+              "ordering": "dp",
+              "variables": [
+                "x"
+              ]
+            },
+            "singular_setup": null
+          }
+        },
+        "input_sha256": "a0bc3157172e6318c2214c7782d181efc73cb21ef00ea7d8e7527fd3000bcc27",
+        "local_cohomology": {
+          "annihilator": [],
+          "associated_primes": null,
+          "boundary_annihilation_exponent": 0,
+          "generator_count": 0,
+          "generators_in_F": [],
+          "identity": "H^0_I(F/N) = (N:I^infinity)/N",
+          "relations": [],
+          "torsion_exponent_search_bound": 12,
+          "zero": true
+        },
+        "regular_elements": {
+          "candidate": "x",
+          "certifies_boundary_grade_at_least_one": true,
+          "certifies_no_regular_element_in_boundary": false,
+          "tests": [
+            {
+              "element": "x",
+              "regular": true,
+              "tested": true
+            }
+          ]
+        },
+        "saturation": {
+          "equal_to_presentation": true,
+          "presentation_standard_basis_size": 0,
+          "saturated_presentation": [],
+          "saturated_standard_basis_size": 0,
+          "strategy": "compute"
+        },
+        "schema": "support-saturation-certificate.v2"
+      },
+      "completed_local_cohomology": "H^0_(x)(Q[[x]])=0",
+      "conclusion": "finite-jet torsion needs a uniform boundary exponent before inverse limit",
+      "global_identity": "H^0_(x)(Q[x])=0",
+      "inverse_limit": "Q[[x]]",
+      "jet_identity": "H^0_(x)(Q[x]/(x^n))=Q[x]/(x^n)"
+    },
+    "regular_boundary": {
+      "associated_primes": {
+        "boundary_containing_primes": null,
+        "primes": null,
+        "status": "boundary_noncontainment_certified_by_regular_element"
+      },
+      "backend": {
+        "name": "Singular",
+        "stderr": "",
+        "version": "Singular for arm64-Darwin version 4.4.1 (44105, 64 bit) Nov 11 2025 16:12:34"
+      },
+      "distinguished_class": {
+        "annihilator": [
+          "y"
+        ],
+        "belongs_to_local_cohomology": false,
+        "boundary_annihilation_exponent": -1,
+        "remainder": [
+          "gen(1)"
+        ],
+        "zero_in_F_mod_N": false
+      },
+      "input": {
+        "boundary_ideal": [
+          "x"
+        ],
+        "distinguished_class": [
+          "1"
+        ],
+        "filtration": null,
+        "options": {
+          "associated_primes": "regularity",
+          "basis_algorithm": "std",
+          "regular_search_bound": 8,
+          "saturation_strategy": "compute",
+          "singular_binary": null,
+          "timeout_seconds": 900,
+          "torsion_exponent_bound": 12
+        },
+        "presentation": {
+          "generators": [
+            [
+              "y"
+            ]
+          ],
+          "label": "regular-boundary-example",
+          "rank": 1,
+          "ring": {
+            "characteristic": 0,
+            "ordering": "dp",
+            "variables": [
+              "x",
+              "y"
+            ]
+          },
+          "singular_setup": null
+        }
+      },
+      "input_sha256": "f8c30a034de158c62243d69042911046b4508316da508dcb125360794e1186e9",
+      "local_cohomology": {
+        "annihilator": [],
+        "associated_primes": null,
+        "boundary_annihilation_exponent": 0,
+        "generator_count": 0,
+        "generators_in_F": [],
+        "identity": "H^0_I(F/N) = (N:I^infinity)/N",
+        "relations": [],
+        "torsion_exponent_search_bound": 12,
+        "zero": true
+      },
+      "regular_elements": {
+        "candidate": "x",
+        "certifies_boundary_grade_at_least_one": true,
+        "certifies_no_regular_element_in_boundary": false,
+        "tests": [
+          {
+            "element": "x",
+            "regular": true,
+            "tested": true
+          }
+        ]
+      },
+      "saturation": {
+        "equal_to_presentation": true,
+        "presentation_standard_basis_size": 1,
+        "saturated_presentation": [
+          "y*gen(1)"
+        ],
+        "saturated_standard_basis_size": 1,
+        "strategy": "compute"
+      },
+      "schema": "support-saturation-certificate.v2"
+    }
+  },
+  "schema": "boundary-obstruction-theory-regression.v1",
+  "scope": {
+    "executable_regressions": [
+      "module saturation and regular boundary element",
+      "boundary torsion and distinguished class",
+      "unbounded finite-jet torsion exponents",
+      "node and cusp conductor kernels",
+      "finite-free tensor conductor kernels",
+      "strict and non-strict filtered lifts",
+      "tail-rigidity countermodel"
+    ],
+    "not_claimed": [
+      "a universal cubic cotangent saturation certificate",
+      "global degree-forty-two Ritt coefficient effectivity",
+      "rank-two quantization algebraization",
+      "the missing plane-JC residue module"
+    ],
+    "proved_by_written_argument": [
+      "derived localization triangle",
+      "local-cohomology spectral sequence criterion",
+      "uniform-exponent finite-jet convergence",
+      "perfect and Rees-projective conductor descent",
+      "strict bounded lifting",
+      "finite effectivity under compatible tail elimination"
+    ]
+  }
+}

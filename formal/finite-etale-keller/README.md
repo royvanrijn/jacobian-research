@@ -18,7 +18,8 @@ corollary.
 The publication artifact is the deliberately small
 `FiniteEtaleKeller/PaperCertificate.lean`.  Its direct imports are limited to
 the general gauge map, function-field comparison, page-one theorem, and
-abstract finite-étale realization.  Build it without the companion
+abstract finite-étale realization, together with the presentation-independent
+collision-fiber interface.  Build it without the companion
 developments using:
 
 ```text
@@ -73,6 +74,7 @@ lake build FiniteEtaleKeller.PaperCertificate
 | 42 | Generic `S_N` monodromy and primitive-monodromy stable atomicity | theorem-level; not yet Lean |
 | 43 | Whole `Π=1` relative source functor, common target morphism, universal inverse discriminant, and discriminant-open naturality | implemented |
 | 44 | Fitting Newton shoelace formula, translation/`GL₂(ℤ)` invariance, strict shift separation, and cubic count separation | implemented; geometric preservation remains an interface |
+| 45 | Fiber collision algebra `A ⊗[K] A`, diagonal multiplication, obstruction kernel, ordered-pair functor, and obstruction rank `N²-N` | implemented |
 
 ## Universal promoted-parameter compiler
 
@@ -152,6 +154,14 @@ theorem.  Lean now proves the literal promoted map and its determinant on an
 explicit `N`-element coordinate type.  Its selected full-fiber/compiler
 bridge, geometric degree, geometric monodromy, and the
 monodromy-to-atomicity theorem are not formalized.
+
+After specialization to a field, the compiled quotient can be fed directly
+to `CollisionFiber.lean`; this formally supplies its tensor-square collision
+algebra, diagonal kernel, ordered-pair functor, and obstruction finrank.  The
+universal relative divided-difference idempotent, its finite-locally-free
+off-diagonal rank over the coefficient base, and the higher ordered-root
+configuration tower are presently written and exact-computation theorems,
+not Lean endpoints.
 
 ## Final polynomial-presentation theorem
 
@@ -549,7 +559,12 @@ of finite separable field extensions, it translates primitive generators to
 give them pairwise distinct traces and applies the Chinese remainder theorem.
 It then composes the resulting squarefree polynomial presentation with
 `PageOneTheorem.lean`, including the natural equivalence on all test
-algebras. `ExplicitFiber.lean` separately specializes the reconstruction to
+algebras. `CollisionFiber.lean` identifies the ordered self-collision fiber
+with `A ⊗[K] A`, defines diagonal multiplication and its obstruction ideal,
+proves that the diagonal map is surjective, proves that every rank-greater-
+than-one fiber has nonzero obstruction, computes its finrank as `N²-N`, and
+identifies collision points over every commutative test algebra with ordered
+pairs of fiber points. `ExplicitFiber.lean` separately specializes the reconstruction to
 an exact denominator-free quintic map and target,
 including finite étaleness, naturality, and rank five.
 `ExplicitPolynomial.lean` applies the rational-root theorem to certify that
@@ -568,7 +583,8 @@ real, and all-`p`-adic assertions into one Hasse certificate.
 The project contains no `sorry` and introduces no project-specific axioms.
 The final functor-of-points theorem uses only Lean's standard foundations
 `propext`, `Classical.choice`, and `Quot.sound`. The determinant and degree
-certificates are algebraic theorems with no additional axioms.
+certificates and the collision-fiber theorems are algebraic statements with
+no additional axioms.
 
 The reconstruction works over arbitrary commutative test algebras. Units are
 carried explicitly, so there is no hidden localization, omitted component, or

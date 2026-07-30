@@ -1,0 +1,118 @@
+{
+  "schema": "conductor-first-one-chart-obstruction.v1",
+  "status": "exact general one-chart obstruction with node/cusp fixtures",
+  "marked_root_discriminant_descent": {
+    "node": {
+      "A": "Q + t(t-1) Q[t]",
+      "conductor": "t(t-1) Q[t]",
+      "root_equation": "-t**3 + t + z**2",
+      "discriminant": "4*t*(t - 1)*(t + 1)",
+      "descent_equation": "Delta(0)=Delta(1)",
+      "generically_irreducible": true
+    },
+    "cusp": {
+      "A": "Q + t^2 Q[t] = Q[t^2,t^3]",
+      "conductor": "t^2 Q[t]",
+      "root_equation": "-t**3 - t**2 + z**2",
+      "discriminant": "4*t**2*(t + 1)",
+      "descent_equation": "coefficient_t(Delta)=Delta'(0)=0",
+      "generically_irreducible": true
+    }
+  },
+  "finite_polynomiality_replays": {
+    "node": [
+      {
+        "pole_power": 1,
+        "numerator_degree_tested": 4,
+        "polynomiality_equation_rank": 2,
+        "expected_rank": 2,
+        "nonzero_residue_at_t0_inconsistent": true,
+        "nonzero_residue_at_t1_inconsistent": true
+      },
+      {
+        "pole_power": 2,
+        "numerator_degree_tested": 6,
+        "polynomiality_equation_rank": 4,
+        "expected_rank": 4,
+        "nonzero_residue_at_t0_inconsistent": true,
+        "nonzero_residue_at_t1_inconsistent": true
+      },
+      {
+        "pole_power": 3,
+        "numerator_degree_tested": 8,
+        "polynomiality_equation_rank": 6,
+        "expected_rank": 6,
+        "nonzero_residue_at_t0_inconsistent": true,
+        "nonzero_residue_at_t1_inconsistent": true
+      },
+      {
+        "pole_power": 4,
+        "numerator_degree_tested": 10,
+        "polynomiality_equation_rank": 8,
+        "expected_rank": 8,
+        "nonzero_residue_at_t0_inconsistent": true,
+        "nonzero_residue_at_t1_inconsistent": true
+      }
+    ],
+    "cusp": [
+      {
+        "pole_power": 1,
+        "numerator_degree_tested": 4,
+        "polynomiality_equation_rank": 2,
+        "expected_rank": 2,
+        "nonzero_cusp_residue_inconsistent": true
+      },
+      {
+        "pole_power": 2,
+        "numerator_degree_tested": 6,
+        "polynomiality_equation_rank": 4,
+        "expected_rank": 4,
+        "nonzero_cusp_residue_inconsistent": true
+      },
+      {
+        "pole_power": 3,
+        "numerator_degree_tested": 8,
+        "polynomiality_equation_rank": 6,
+        "expected_rank": 6,
+        "nonzero_cusp_residue_inconsistent": true
+      },
+      {
+        "pole_power": 4,
+        "numerator_degree_tested": 10,
+        "polynomiality_equation_rank": 8,
+        "expected_rank": 8,
+        "nonzero_cusp_residue_inconsistent": true
+      }
+    ]
+  },
+  "general_valuation_ledger": {
+    "node": {
+      "conductor_branches": [
+        "t=0",
+        "t=1"
+      ],
+      "unit_lattice_rank_of_Q[t,1/(t(t-1))]": 2,
+      "units_mod_constants": [
+        "t",
+        "t-1"
+      ],
+      "polynomiality": "ord_0(p)-m>=0 and ord_1(p)-m>=0",
+      "required_pole": "ord_0(p)-m<0 or ord_1(p)-m<0"
+    },
+    "cusp": {
+      "conductor_branches": [
+        "t=0"
+      ],
+      "unit_lattice_rank_of_Q[t,1/t^2]": 1,
+      "units_mod_constants": [
+        "t"
+      ],
+      "polynomiality": "ord_0(p)-2m>=0",
+      "required_pole": "ord_0(p)-2m<0"
+    },
+    "conclusion": "the reciprocal determinant ledger requires a negative conductor valuation, while polynomiality requires every reconstruction valuation to be nonnegative; the simultaneous system is empty"
+  },
+  "unit_obstruction": "the reconstruction open B[1/c][x_1,...,x_r] has a nonconstant unit c (and the displayed positive unit rank), whereas a polynomial ring over Q has only constant units; affine stabilization preserves this obstruction",
+  "theorem_boundary": "This excludes the direct separated one-conductor one-chart ansatz.  It does not exclude multi-chart gluing, a nonprincipal ambient boundary, or an ambient-coupled reconstruction whose full affine source is not obtained by localizing the normalized conductor line.",
+  "reproducing_command": ".venv/bin/python scripts/verify_conductor_first_one_chart_obstruction.py"
+}

@@ -1,0 +1,603 @@
+{
+  "format": "hvc38-remaining-blocks-screen-v1",
+  "status": "experiment",
+  "good_prime": 1000003,
+  "records": [
+    {
+      "source_coordinates": [
+        "z4",
+        "z6",
+        "z9",
+        "z10",
+        "z11"
+      ],
+      "source_columns": 140,
+      "target_columns": 792,
+      "total_columns": 932,
+      "rank_source_degree_at_least_4_mod_prime": 911,
+      "kernel_dimension_source_degree_at_least_4": 21,
+      "rank_source_degree_at_least_3_mod_prime": 932,
+      "kernel_dimension_source_degree_at_least_3": 0,
+      "linearized_cubic_correction_dimension": 21,
+      "maximum_sparse_relation_support": 5,
+      "linearized_rank_witness": {
+        "invariant_rank_on_first_six_outputs": 5,
+        "selected_output_rows": [
+          1,
+          2,
+          3,
+          5,
+          6
+        ],
+        "fixed_minor_size": 5,
+        "fixed_minor_determinant": "-3",
+        "constant_schur_obstruction": "-2"
+      },
+      "one_parameter_integrability": {
+        "source_only_relations": [
+          0,
+          1
+        ],
+        "target_integrable_relations": [
+          2,
+          3,
+          5,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "target_nonintegrable_relations": [
+          {
+            "relation_index": 4,
+            "common_parameter_factor": "lambda**2"
+          },
+          {
+            "relation_index": 6,
+            "common_parameter_factor": "lambda**2"
+          },
+          {
+            "relation_index": 7,
+            "common_parameter_factor": "lambda**2"
+          }
+        ],
+        "multiple_target_term_relations": [],
+        "total_individually_integrable_parameters": 18,
+        "total_triangular_kernel_parameters": 21,
+        "changed_target_outputs": [
+          1,
+          2,
+          3
+        ],
+        "target_factor_outputs": [
+          7,
+          8,
+          11,
+          12
+        ],
+        "target_factors_avoid_changed_outputs": true
+      },
+      "combined_full_kernel_family": {
+        "parameters": 21,
+        "high_degree_equations": 54,
+        "high_degree_equation_parameter_degrees": [
+          2,
+          3
+        ],
+        "parameters_occurring_in_high_degree_equations": 11,
+        "pure_power_parameter_constraints": {
+          "t6": 3
+        },
+        "selected_cubic_minor_at_origin": "6",
+        "selected_cubic_minor": "-6*(t7 - 1)*(t7 + 1)",
+        "selected_cubic_minor_total_degree": 2
+      }
+    },
+    {
+      "source_coordinates": [
+        "z4",
+        "z6",
+        "z9",
+        "z10",
+        "z12"
+      ],
+      "source_columns": 140,
+      "target_columns": 792,
+      "total_columns": 932,
+      "rank_source_degree_at_least_4_mod_prime": 914,
+      "kernel_dimension_source_degree_at_least_4": 18,
+      "rank_source_degree_at_least_3_mod_prime": 932,
+      "kernel_dimension_source_degree_at_least_3": 0,
+      "linearized_cubic_correction_dimension": 18,
+      "maximum_sparse_relation_support": 5,
+      "linearized_rank_witness": {
+        "invariant_rank_on_first_six_outputs": 5,
+        "selected_output_rows": [
+          1,
+          2,
+          3,
+          5,
+          6
+        ],
+        "fixed_minor_size": 5,
+        "fixed_minor_determinant": "-3/2",
+        "constant_schur_obstruction": "-2"
+      },
+      "one_parameter_integrability": {
+        "source_only_relations": [
+          0,
+          1
+        ],
+        "target_integrable_relations": [
+          2,
+          3,
+          4,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "target_nonintegrable_relations": [
+          {
+            "relation_index": 5,
+            "common_parameter_factor": "lambda**2"
+          }
+        ],
+        "multiple_target_term_relations": [],
+        "total_individually_integrable_parameters": 17,
+        "total_triangular_kernel_parameters": 18,
+        "changed_target_outputs": [
+          1,
+          2,
+          3
+        ],
+        "target_factor_outputs": [
+          7,
+          8,
+          11,
+          12
+        ],
+        "target_factors_avoid_changed_outputs": true
+      },
+      "combined_full_kernel_family": {
+        "parameters": 18,
+        "high_degree_equations": 27,
+        "high_degree_equation_parameter_degrees": [
+          2
+        ],
+        "parameters_occurring_in_high_degree_equations": 8,
+        "pure_power_parameter_constraints": {
+          "t5": 2
+        },
+        "selected_cubic_minor_at_origin": "6",
+        "selected_cubic_minor": "-6*(t5 - 1)",
+        "selected_cubic_minor_total_degree": 1
+      }
+    },
+    {
+      "source_coordinates": [
+        "z4",
+        "z7",
+        "z9",
+        "z10",
+        "z11"
+      ],
+      "source_columns": 140,
+      "target_columns": 792,
+      "total_columns": 932,
+      "rank_source_degree_at_least_4_mod_prime": 896,
+      "kernel_dimension_source_degree_at_least_4": 36,
+      "rank_source_degree_at_least_3_mod_prime": 932,
+      "kernel_dimension_source_degree_at_least_3": 0,
+      "linearized_cubic_correction_dimension": 36,
+      "maximum_sparse_relation_support": 5,
+      "linearized_rank_witness": {
+        "invariant_rank_on_first_six_outputs": 5,
+        "selected_output_rows": [
+          1,
+          2,
+          3,
+          5,
+          6
+        ],
+        "fixed_minor_size": 5,
+        "fixed_minor_determinant": "12",
+        "constant_schur_obstruction": "-2"
+      },
+      "one_parameter_integrability": {
+        "source_only_relations": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ],
+        "target_integrable_relations": [
+          14,
+          15,
+          17,
+          18,
+          21,
+          22,
+          23,
+          24,
+          25,
+          27,
+          28,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35
+        ],
+        "target_nonintegrable_relations": [
+          {
+            "relation_index": 16,
+            "common_parameter_factor": "lambda**2"
+          },
+          {
+            "relation_index": 19,
+            "common_parameter_factor": "lambda**2"
+          },
+          {
+            "relation_index": 20,
+            "common_parameter_factor": "lambda**2"
+          },
+          {
+            "relation_index": 26,
+            "common_parameter_factor": "lambda**2"
+          },
+          {
+            "relation_index": 29,
+            "common_parameter_factor": "lambda**2"
+          }
+        ],
+        "multiple_target_term_relations": [],
+        "total_individually_integrable_parameters": 31,
+        "total_triangular_kernel_parameters": 36,
+        "changed_target_outputs": [
+          1,
+          2,
+          3
+        ],
+        "target_factor_outputs": [
+          7,
+          8,
+          9,
+          11,
+          12
+        ],
+        "target_factors_avoid_changed_outputs": true
+      },
+      "combined_full_kernel_family": {
+        "parameters": 36,
+        "high_degree_equations": 170,
+        "high_degree_equation_parameter_degrees": [
+          2,
+          3
+        ],
+        "parameters_occurring_in_high_degree_equations": 35,
+        "pure_power_parameter_constraints": {
+          "t19": 3
+        },
+        "selected_cubic_minor_at_origin": "6",
+        "selected_cubic_minor": "9*(2*t19*t21 + t20 - 1)",
+        "selected_cubic_minor_total_degree": 2
+      }
+    },
+    {
+      "source_coordinates": [
+        "z4",
+        "z7",
+        "z9",
+        "z10",
+        "z12"
+      ],
+      "source_columns": 140,
+      "target_columns": 792,
+      "total_columns": 932,
+      "rank_source_degree_at_least_4_mod_prime": 898,
+      "kernel_dimension_source_degree_at_least_4": 34,
+      "rank_source_degree_at_least_3_mod_prime": 932,
+      "kernel_dimension_source_degree_at_least_3": 0,
+      "linearized_cubic_correction_dimension": 34,
+      "maximum_sparse_relation_support": 5,
+      "linearized_rank_witness": {
+        "invariant_rank_on_first_six_outputs": 5,
+        "selected_output_rows": [
+          1,
+          2,
+          3,
+          5,
+          6
+        ],
+        "fixed_minor_size": 5,
+        "fixed_minor_determinant": "-6",
+        "constant_schur_obstruction": "-2"
+      },
+      "one_parameter_integrability": {
+        "source_only_relations": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ],
+        "target_integrable_relations": [
+          14,
+          16,
+          17,
+          18,
+          20,
+          21,
+          22,
+          23,
+          25,
+          26,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33
+        ],
+        "target_nonintegrable_relations": [
+          {
+            "relation_index": 15,
+            "common_parameter_factor": "lambda**2"
+          },
+          {
+            "relation_index": 19,
+            "common_parameter_factor": "lambda**2"
+          },
+          {
+            "relation_index": 24,
+            "common_parameter_factor": "lambda**2"
+          },
+          {
+            "relation_index": 27,
+            "common_parameter_factor": "lambda**2"
+          }
+        ],
+        "multiple_target_term_relations": [],
+        "total_individually_integrable_parameters": 30,
+        "total_triangular_kernel_parameters": 34,
+        "changed_target_outputs": [
+          1,
+          2,
+          3
+        ],
+        "target_factor_outputs": [
+          7,
+          8,
+          9,
+          11,
+          12
+        ],
+        "target_factors_avoid_changed_outputs": true
+      },
+      "combined_full_kernel_family": {
+        "parameters": 34,
+        "high_degree_equations": 195,
+        "high_degree_equation_parameter_degrees": [
+          3
+        ],
+        "parameters_occurring_in_high_degree_equations": 33,
+        "pure_power_parameter_constraints": {},
+        "selected_cubic_minor_at_origin": "6",
+        "selected_cubic_minor": "9*(t17*t26 + t19**2 - 1)",
+        "selected_cubic_minor_total_degree": 2
+      }
+    },
+    {
+      "source_coordinates": [
+        "z5",
+        "z7",
+        "z9",
+        "z10",
+        "z12"
+      ],
+      "source_columns": 140,
+      "target_columns": 792,
+      "total_columns": 932,
+      "rank_source_degree_at_least_4_mod_prime": 912,
+      "kernel_dimension_source_degree_at_least_4": 20,
+      "rank_source_degree_at_least_3_mod_prime": 932,
+      "kernel_dimension_source_degree_at_least_3": 0,
+      "linearized_cubic_correction_dimension": 20,
+      "maximum_sparse_relation_support": 4,
+      "linearized_rank_witness": {
+        "invariant_rank_on_first_six_outputs": 5,
+        "selected_output_rows": [
+          1,
+          2,
+          3,
+          5,
+          6
+        ],
+        "fixed_minor_size": 5,
+        "fixed_minor_determinant": "-6",
+        "constant_schur_obstruction": "-2"
+      },
+      "one_parameter_integrability": {
+        "source_only_relations": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "target_integrable_relations": [
+          9,
+          10,
+          12,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "target_nonintegrable_relations": [
+          {
+            "relation_index": 8,
+            "common_parameter_factor": "lambda**2"
+          },
+          {
+            "relation_index": 11,
+            "common_parameter_factor": "lambda**2"
+          },
+          {
+            "relation_index": 13,
+            "common_parameter_factor": "lambda**2"
+          }
+        ],
+        "multiple_target_term_relations": [],
+        "total_individually_integrable_parameters": 17,
+        "total_triangular_kernel_parameters": 20,
+        "changed_target_outputs": [
+          1,
+          2,
+          3
+        ],
+        "target_factor_outputs": [
+          7,
+          8,
+          9,
+          11,
+          12
+        ],
+        "target_factors_avoid_changed_outputs": true
+      },
+      "combined_full_kernel_family": {
+        "parameters": 20,
+        "high_degree_equations": 101,
+        "high_degree_equation_parameter_degrees": [
+          2,
+          3
+        ],
+        "parameters_occurring_in_high_degree_equations": 18,
+        "pure_power_parameter_constraints": {
+          "t11": 2,
+          "t8": 2
+        },
+        "selected_cubic_minor_at_origin": "6",
+        "selected_cubic_minor": "6*(t11 - 1)*(t13 - 1)*(t13 + 1)",
+        "selected_cubic_minor_total_degree": 3
+      }
+    },
+    {
+      "source_coordinates": [
+        "z3",
+        "z5",
+        "z7",
+        "z9",
+        "z10",
+        "z11"
+      ],
+      "source_columns": 126,
+      "target_columns": 792,
+      "total_columns": 918,
+      "rank_source_degree_at_least_4_mod_prime": 902,
+      "kernel_dimension_source_degree_at_least_4": 16,
+      "rank_source_degree_at_least_3_mod_prime": 918,
+      "kernel_dimension_source_degree_at_least_3": 0,
+      "linearized_cubic_correction_dimension": 16,
+      "maximum_sparse_relation_support": 9,
+      "linearized_rank_witness": {
+        "invariant_rank_on_first_six_outputs": 4,
+        "maximum_invariant_rank_on_six_outputs": 4,
+        "fixed_minor_size": 4,
+        "fixed_minor_determinant": "-3",
+        "constant_schur_minor_size": 2,
+        "constant_schur_minor_determinant": "-2"
+      },
+      "one_parameter_integrability": {
+        "source_only_relations": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "target_integrable_relations": [
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "target_nonintegrable_relations": [],
+        "multiple_target_term_relations": [],
+        "total_individually_integrable_parameters": 16,
+        "total_triangular_kernel_parameters": 16,
+        "changed_target_outputs": [
+          1,
+          2,
+          3,
+          5
+        ],
+        "target_factor_outputs": [
+          8,
+          12
+        ],
+        "target_factors_avoid_changed_outputs": true
+      },
+      "combined_full_kernel_family": {
+        "parameters": 16,
+        "high_degree_equations": 0,
+        "high_degree_equation_parameter_degrees": [],
+        "parameters_occurring_in_high_degree_equations": 0,
+        "pure_power_parameter_constraints": {},
+        "selected_cubic_minor_at_origin": "6",
+        "selected_cubic_minor": "6",
+        "selected_cubic_minor_total_degree": 0
+      }
+    }
+  ]
+}

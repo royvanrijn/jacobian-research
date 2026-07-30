@@ -25,11 +25,11 @@
   "rigorous_frontiers": {
     "n_cub": {
       "lower_bound": 5,
-      "upper_bound": 21,
+      "upper_bound": 20,
       "exact_value": null,
       "status": "open interval",
       "lower_bound_reason": "cubic-homogeneous Keller maps are known invertible through ambient dimension four",
-      "upper_bound_reason": "the certified essential cubic-homogeneous collision uses 21 variables"
+      "upper_bound_reason": "the pinned external MacFarlane G20 determinant certificate and locally exact collision audit use 20 variables"
     },
     "r_cub": {
       "lower_bound": 3,
@@ -73,11 +73,11 @@
     },
     "n_HN4": {
       "lower_bound": 6,
-      "upper_bound": 42,
+      "upper_bound": 40,
       "exact_value": null,
       "status": "open interval",
       "lower_bound_reason": "the homogeneous symmetric nilpotent-Jacobian case is known through dimension five",
-      "upper_bound_reason": "the certified homogeneous HN quartic counterexample uses 42 variables"
+      "upper_bound_reason": "the standard homogeneous cotangent lift of the pinned external MacFarlane G20 certificate uses 40 variables"
     }
   },
   "certified_rank_upper_witness": {
@@ -97,7 +97,13 @@
       1
     ]
   },
-  "smallest_ambient_cubic_witness_and_HN_source": {
+  "smallest_external_ambient_cubic_witness_and_HN_source": {
+    "cubic_artifact": "macfarlane_g20_dimension_reduction_audit.json",
+    "dimension": 20,
+    "certificate_scope": "external determinant certificate with locally exact collision and backward-construction audit",
+    "quartic_dimension_by_homogeneous_cotangent_lift": 40
+  },
+  "smallest_internal_independently_replayed_cubic_witness": {
     "cubic_artifact": "low_complexity_bcw_21_counterexample.json",
     "source_artifact": "essential_bcw_21_counterexample.json",
     "dimension": 21,
@@ -160,7 +166,7 @@
     "generic_hessian_rank": 34,
     "cotangent_kernel_excess": 0,
     "scope": "exact rank improvement for nonhomogeneous HN Vanishing counterexamples only",
-    "homogeneous_frontier_warning": "does not change rho_HN4<=37 or n_HN4<=42",
+    "homogeneous_frontier_warning": "does not change rho_HN4<=37 or the external n_HN4<=40",
     "exact_hessian_certificate": "12 polynomial syzygy generators contain 6 generically independent kernel columns, while an exact rational specialization has rank 34",
     "predecessor": "the first identity slice has dimension 42, rank 35, and kernel excess 1"
   },
@@ -203,7 +209,7 @@
         "rank(JH)=17 and kernel excess at most 2"
       ]
     },
-    "cotangent_dimension": "beating quartic dimension 42 by a cotangent lift requires a cubic source of dimension at most 20"
+    "cotangent_dimension": "beating quartic dimension 40 by a cotangent lift requires a cubic source of dimension at most 19"
   },
   "primary_sources": {
     "rank_two_cubic": "https://arxiv.org/abs/1803.05551",

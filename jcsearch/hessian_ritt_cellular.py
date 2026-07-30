@@ -263,6 +263,270 @@ class PostnikovModuleTower:
         return tuple(map_.splits for map_ in self.maps)
 
 
+@dataclass(frozen=True)
+class FourTermCellularCochainComplex:
+    """A cellular cochain complex through genuine three-cells."""
+
+    d0: sp.Matrix
+    d1: sp.Matrix
+    d2: sp.Matrix
+    name: str
+
+    def __post_init__(self) -> None:
+        d0 = sp.Matrix(self.d0)
+        d1 = sp.Matrix(self.d1)
+        d2 = sp.Matrix(self.d2)
+        object.__setattr__(self, "d0", d0)
+        object.__setattr__(self, "d1", d1)
+        object.__setattr__(self, "d2", d2)
+        if d0.rows != d1.cols or d1.rows != d2.cols:
+            raise ValueError("adjacent cellular differentials do not compose")
+        if d1 * d0 != sp.zeros(d1.rows, d0.cols):
+            raise ValueError("d1*d0 is nonzero")
+        if d2 * d1 != sp.zeros(d2.rows, d1.cols):
+            raise ValueError("d2*d1 is nonzero")
+
+    @property
+    def dimensions(self) -> tuple[int, int, int, int]:
+        """Return dimensions in cohomological degrees zero through three."""
+
+        return (self.d0.cols, self.d0.rows, self.d1.rows, self.d2.rows)
+
+    @property
+    def ranks(self) -> tuple[int, int, int]:
+        """Return exact rational differential ranks."""
+
+        return (self.d0.rank(), self.d1.rank(), self.d2.rank())
+
+    @property
+    def cohomology_dimensions(self) -> tuple[int, int, int, int]:
+        """Return exact rational cohomology dimensions."""
+
+        c0, c1, c2, c3 = self.dimensions
+        r0, r1, r2 = self.ranks
+        return (
+            c0 - r0,
+            c1 - r0 - r1,
+            c2 - r1 - r2,
+            c3 - r2,
+        )
+
+
+@dataclass(frozen=True)
+class FiniteChainComplex:
+    """A finite rational homological chain complex.
+
+    ``boundaries[n - 1]`` is the differential from degree ``n`` to degree
+    ``n - 1``.  This small exact-linear-algebra model is used to certify
+    comparisons between normalized bar chains and cellular chains.
+    """
+
+    dimensions: tuple[int, ...]
+    boundaries: tuple[sp.Matrix, ...]
+    name: str
+
+    def __post_init__(self) -> None:
+        if not self.dimensions:
+            raise ValueError("a chain complex needs at least degree zero")
+        if len(self.boundaries) != len(self.dimensions) - 1:
+            raise ValueError("one boundary is required between adjacent degrees")
+        normalized = tuple(sp.Matrix(boundary) for boundary in self.boundaries)
+        object.__setattr__(self, "boundaries", normalized)
+        for degree, boundary in enumerate(normalized, start=1):
+            expected = (self.dimensions[degree - 1], self.dimensions[degree])
+            if boundary.shape != expected:
+                raise ValueError(
+                    f"degree-{degree} boundary has shape {boundary.shape}, "
+                    f"expected {expected}"
+                )
+        for lower, upper in zip(normalized, normalized[1:]):
+            if lower * upper != sp.zeros(lower.rows, upper.cols):
+                raise ValueError("adjacent chain boundaries do not compose to zero")
+
+    @property
+    def homology_dimensions(self) -> tuple[int, ...]:
+        """Return exact rational homology dimensions in every degree."""
+
+        ranks = tuple(boundary.rank() for boundary in self.boundaries)
+        return tuple(
+            dimension
+            - (ranks[degree - 1] if degree else 0)
+            - (ranks[degree] if degree < len(ranks) else 0)
+            for degree, dimension in enumerate(self.dimensions)
+        )
+
+    def tensor_with_vector_space(
+        self,
+        dimension: int,
+        coefficient_name: str,
+    ) -> "FiniteChainComplex":
+        """Tensor the complex by an exact finite rational coefficient."""
+
+        if dimension < 0:
+            raise ValueError("coefficient dimension must be nonnegative")
+        identity = sp.eye(dimension)
+        return FiniteChainComplex(
+            tuple(size * dimension for size in self.dimensions),
+            tuple(
+                sp.kronecker_product(boundary, identity)
+                for boundary in self.boundaries
+            ),
+            f"{self.name} tensor {coefficient_name}",
+        )
+
+
+@dataclass(frozen=True)
+class FiniteChainComparison:
+    """A chain map together with an exact mapping-cone quasi-isomorphism test."""
+
+    source: FiniteChainComplex
+    target: FiniteChainComplex
+    maps: tuple[sp.Matrix, ...]
+    name: str
+
+    def __post_init__(self) -> None:
+        if len(self.source.dimensions) != len(self.target.dimensions):
+            raise ValueError("source and target must have the same degree range")
+        if len(self.maps) != len(self.source.dimensions):
+            raise ValueError("one comparison map is required in every degree")
+        normalized = tuple(sp.Matrix(map_) for map_ in self.maps)
+        object.__setattr__(self, "maps", normalized)
+        for degree, map_ in enumerate(normalized):
+            expected = (
+                self.target.dimensions[degree],
+                self.source.dimensions[degree],
+            )
+            if map_.shape != expected:
+                raise ValueError(
+                    f"degree-{degree} comparison has shape {map_.shape}, "
+                    f"expected {expected}"
+                )
+        for degree in range(1, len(normalized)):
+            if (
+                self.target.boundaries[degree - 1] * normalized[degree]
+                != normalized[degree - 1]
+                * self.source.boundaries[degree - 1]
+            ):
+                raise ValueError(f"{self.name} is not a chain map in degree {degree}")
+
+    @property
+    def mapping_cone(self) -> FiniteChainComplex:
+        """Return the homological mapping cone of the comparison map."""
+
+        source_dimensions = self.source.dimensions
+        target_dimensions = self.target.dimensions
+        maximum_degree = len(source_dimensions)
+        dimensions = tuple(
+            (target_dimensions[degree] if degree < maximum_degree else 0)
+            + (source_dimensions[degree - 1] if degree > 0 else 0)
+            for degree in range(maximum_degree + 1)
+        )
+
+        def target_boundary(degree: int) -> sp.Matrix:
+            if 1 <= degree < maximum_degree:
+                return self.target.boundaries[degree - 1]
+            return sp.zeros(
+                target_dimensions[degree - 1] if degree > 0 else 0,
+                target_dimensions[degree] if degree < maximum_degree else 0,
+            )
+
+        def source_boundary(degree: int) -> sp.Matrix:
+            if 1 <= degree < maximum_degree:
+                return self.source.boundaries[degree - 1]
+            return sp.zeros(
+                source_dimensions[degree - 1] if degree > 0 else 0,
+                source_dimensions[degree] if degree < maximum_degree else 0,
+            )
+
+        boundaries = []
+        for degree in range(1, maximum_degree + 1):
+            target_left = (
+                target_dimensions[degree - 1]
+                if degree - 1 < maximum_degree
+                else 0
+            )
+            target_right = (
+                target_dimensions[degree]
+                if degree < maximum_degree
+                else 0
+            )
+            source_left = (
+                source_dimensions[degree - 2] if degree >= 2 else 0
+            )
+            source_right = source_dimensions[degree - 1]
+            upper = target_boundary(degree).row_join(
+                self.maps[degree - 1]
+            )
+            lower = sp.zeros(source_left, target_right).row_join(
+                -source_boundary(degree - 1)
+            )
+            boundary = upper.col_join(lower)
+            assert boundary.shape == (
+                target_left + source_left,
+                target_right + source_right,
+            )
+            boundaries.append(boundary)
+        return FiniteChainComplex(
+            dimensions,
+            tuple(boundaries),
+            f"cone({self.name})",
+        )
+
+    @property
+    def is_quasi_isomorphism(self) -> bool:
+        """Whether the exact rational mapping cone is acyclic."""
+
+        return all(
+            dimension == 0
+            for dimension in self.mapping_cone.homology_dimensions
+        )
+
+    def tensor_with_vector_space(
+        self,
+        dimension: int,
+        coefficient_name: str,
+    ) -> "FiniteChainComparison":
+        """Tensor a chain comparison by a finite rational coefficient."""
+
+        if dimension < 0:
+            raise ValueError("coefficient dimension must be nonnegative")
+        identity = sp.eye(dimension)
+        return FiniteChainComparison(
+            self.source.tensor_with_vector_space(dimension, coefficient_name),
+            self.target.tensor_with_vector_space(dimension, coefficient_name),
+            tuple(
+                sp.kronecker_product(map_, identity) for map_ in self.maps
+            ),
+            f"{self.name} tensor {coefficient_name}",
+        )
+
+
+def minimal_top_cell_completion(
+    model: CellularCochainModel,
+    name: str,
+) -> FourTermCellularCochainComplex:
+    """Attach algebraic top cells whose coboundary kills all two-skeleton H2.
+
+    The rows of ``d2`` form the exact annihilator of the image of ``d1``.
+    For a known regular CW boundary this recovers the oriented top-cell
+    attachment.  Without such geometric input it is only a minimal algebraic
+    completion, not an assertion that the required cells exist.
+    """
+
+    annihilator = model.complex.d1.T.nullspace()
+    d2 = (
+        sp.Matrix.vstack(*(vector.T for vector in annihilator))
+        if annihilator
+        else sp.zeros(0, model.complex.dimensions[2])
+    )
+    return FourTermCellularCochainComplex(
+        model.complex.d0,
+        model.complex.d1,
+        d2,
+        name,
+    )
+
+
 def ritt_cellular_coboundaries(
     complex_: RittMoveComplex,
 ) -> CellularCochainModel:

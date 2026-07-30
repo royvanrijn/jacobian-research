@@ -1,0 +1,238 @@
+{
+  "schema": "hessian-ritt-cotangent-descent.v2",
+  "status": "exact skeletal descent regression",
+  "filled_braid": {
+    "dimensions": [
+      6,
+      6,
+      1,
+      0
+    ],
+    "ranks": [
+      5,
+      1,
+      0
+    ],
+    "cohomology_dimensions": [
+      1,
+      0,
+      0,
+      0
+    ],
+    "top_cells_added": 0
+  },
+  "four_factor_permutohedron": {
+    "two_skeleton_cohomology": [
+      1,
+      0,
+      1,
+      0
+    ],
+    "completed_dimensions": [
+      24,
+      36,
+      14,
+      1
+    ],
+    "completed_ranks": [
+      23,
+      13,
+      1
+    ],
+    "completed_cohomology": [
+      1,
+      0,
+      0,
+      0
+    ],
+    "oriented_three_cell_boundary": [
+      1,
+      -1,
+      -1,
+      1,
+      -1,
+      -1,
+      1,
+      1,
+      1,
+      1,
+      -1,
+      -1,
+      1,
+      1
+    ],
+    "two_dimensional_coefficient_cohomology": [
+      2,
+      0,
+      0,
+      0
+    ]
+  },
+  "low_degree_skeletal_invariance": {
+    "two_skeleton": [
+      2,
+      1,
+      0
+    ],
+    "with_all_minimal_top_cells": [
+      2,
+      1,
+      0,
+      0
+    ],
+    "conclusion": "the complete two-skeleton determines H0 and H1; H2 is trustworthy only after the next cellular differential"
+  },
+  "bar_to_cellular_subdivision": {
+    "relative_half_braid": {
+      "cellular_dimensions": [
+        2,
+        3
+      ],
+      "normalized_bar_dimensions": [
+        5,
+        6
+      ],
+      "mapping_cone_homology": [
+        0,
+        0,
+        0
+      ]
+    },
+    "filled_braid": {
+      "cellular_dimensions": [
+        6,
+        6,
+        1
+      ],
+      "normalized_bar_dimensions": [
+        13,
+        24,
+        12
+      ],
+      "mapping_cone_homology": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "coefficient_dimensions_tested": {
+      "2": {
+        "relative_path_homology": [
+          0,
+          2
+        ],
+        "filled_braid_homology": [
+          2,
+          0,
+          0
+        ]
+      },
+      "4": {
+        "relative_path_homology": [
+          0,
+          4
+        ],
+        "filled_braid_homology": [
+          4,
+          0,
+          0
+        ]
+      },
+      "6": {
+        "relative_path_homology": [
+          0,
+          6
+        ],
+        "filled_braid_homology": [
+          6,
+          0,
+          0
+        ]
+      }
+    },
+    "conclusion": "the canonical cellular subdivision maps are quasi-isomorphisms; tensoring preserves the comparison for every exact perfect coefficient block"
+  },
+  "degree_42_actual_tangent_incidence": {
+    "ambient": "degree-42 Hessian coefficients W^2 through W^41",
+    "vertex_tangent_ranks": {
+      "237": 9,
+      "273": 9,
+      "327": 9,
+      "372": 9,
+      "723": 9,
+      "732": 9
+    },
+    "move_intersection_ranks": {
+      "237-327": 8,
+      "237-273": 5,
+      "273-723": 6,
+      "327-372": 6,
+      "372-732": 5,
+      "723-732": 8
+    },
+    "common_six_chart_tangent_rank": 3,
+    "reduced_dickson_tangent_rank": 2,
+    "common_excess_generator": "(W+1)^36-1 after Hessian projection",
+    "common_excess_rank": 1,
+    "three_sector_first_conormal_flags": {
+      "273": {
+        "opposite_chart": "372",
+        "thick_composite_omission": 6,
+        "thin_prime_omission": 7,
+        "tangent_dimensions": {
+          "thick_path": 4,
+          "thin_path": 3,
+          "full_boundary": 3,
+          "reduced_dickson_graph": 2
+        },
+        "conormal_ranks": {
+          "thick_path": 5,
+          "thin_path": 6,
+          "full_boundary": 6,
+          "reduced_dickson_graph": 7
+        }
+      },
+      "237": {
+        "opposite_chart": "732",
+        "thick_composite_omission": 14,
+        "thin_prime_omission": 3,
+        "tangent_dimensions": {
+          "thick_path": 4,
+          "thin_path": 3,
+          "full_boundary": 3,
+          "reduced_dickson_graph": 2
+        },
+        "conormal_ranks": {
+          "thick_path": 5,
+          "thin_path": 6,
+          "full_boundary": 6,
+          "reduced_dickson_graph": 7
+        }
+      },
+      "327": {
+        "opposite_chart": "723",
+        "thick_composite_omission": 21,
+        "thin_prime_omission": 2,
+        "tangent_dimensions": {
+          "thick_path": 4,
+          "thin_path": 3,
+          "full_boundary": 3,
+          "reduced_dickson_graph": 2
+        },
+        "conormal_ranks": {
+          "thick_path": 5,
+          "thin_path": 6,
+          "full_boundary": 6,
+          "reduced_dickson_graph": 7
+        }
+      }
+    },
+    "conclusion": "the actual degree-42 tangent face data are coherent as ambient subspaces but are not a constant rank-two system: move ranks are 5, 6, or 8, all three labelled sectors have conormal ranks 5<6<7, and the six-chart intersection has one nilpotent tangent direction beyond the Dickson plane"
+  },
+  "formal_theorem": "cotangent complexes commute with homotopy colimits of connective algebra diagrams; for perfect local cotangent modules, duality converts the cellular chain colimit into the cellular cochain totalization. Once the actual bar coefficient diagram factors coherently through the Ritt face category, homotopy cofinality is the remaining presentation criterion; face-poset bar to cellular subdivision is formal",
+  "proved_comparison": "the full simplicial bar diagram of the actual derived Hessian intersection satisfies cotangent descent",
+  "remaining_effectivity_condition": "construct coherent completed coefficient transport from the actual bar diagram to the Ritt face category and prove the bar-to-face functor homotopy cofinal on every completed component; degree 30 supplies all conormal-fiber braid charts, while degree 42 currently supplies one exact flag chart",
+  "theorem_boundary": "the checker proves the cellular and skeletal linear algebra; the canonical note proves formal cotangent-colimit descent. It does not assert all-degree coefficient effectivity or filtered algebraic H2 vanishing.",
+  "reproducing_command": ".venv/bin/python scripts/verify_hessian_ritt_cotangent_descent.py"
+}

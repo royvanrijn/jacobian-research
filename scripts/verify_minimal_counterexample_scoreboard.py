@@ -61,6 +61,7 @@ def main() -> None:
     hessian_rank_34_slice = load(
         "hessian_rank_34_double_identity_slice_counterexample.json"
     )
+    f12_reduction = load("macfarlane_f12_coordinate_pair_reduction.json")
 
     assert cubic["dimension"] == 21
     assert image_20["source_dimension"] == 20
@@ -113,10 +114,16 @@ def main() -> None:
     assert (
         hessian_rank_34_slice["HN_potential"]["generic_hessian_rank"] == 34
     )
+    assert f12_reduction["F12"]["dimension"] == 12
+    assert f12_reduction["F12"]["determinant"] == "1"
+    assert f12_reduction["F12"]["cubic_output_rank"] == 6
+    assert f12_reduction["G19"]["dimension"] == 19
+    assert f12_reduction["G19"]["determinant"] == "1"
+    assert f12_reduction["G19"]["collision"] is True
 
     frontiers = restricted["rigorous_frontiers"]
     assert frontiers["n_cub"]["lower_bound"] == 5
-    assert frontiers["n_cub"]["upper_bound"] == 21
+    assert frontiers["n_cub"]["upper_bound"] == 20
     assert frontiers["r_cub"]["lower_bound"] == 3
     assert frontiers["r_cub"]["upper_bound"] == 17
     assert frontiers["nu_cub"]["lower_bound"] == 3
@@ -128,7 +135,7 @@ def main() -> None:
     assert frontiers["rho_HN4"]["lower_bound"] == 3
     assert frontiers["rho_HN4"]["upper_bound"] == 37
     assert frontiers["n_HN4"]["lower_bound"] == 6
-    assert frontiers["n_HN4"]["upper_bound"] == 42
+    assert frontiers["n_HN4"]["upper_bound"] == 40
 
     scoreboard = {
         "format": "minimal-counterexample-scoreboard-v2",
@@ -140,7 +147,15 @@ def main() -> None:
                 "a one-variable Keller map is affine",
                 "the certified foundational determinant-nonzero collision uses 3 variables",
             ),
-            "cubic_homogeneous_Keller_noninvertibility": frontiers["n_cub"],
+            "cubic_homogeneous_Keller_noninvertibility": interval(
+                5,
+                19,
+                "cubic-homogeneous Keller maps are invertible through dimension four",
+                (
+                    "the exact F12 coordinate-pair reduction has cubic-output "
+                    "rank six, giving a 12+6+1=19 rank-compressed parent"
+                ),
+            ),
             "Druzkowski_Keller_noninvertibility": frontiers["n_Dru"],
             "GMC_failure_real_Gaussian_dimension": interval(
                 2,
@@ -175,7 +190,18 @@ def main() -> None:
                 ),
                 "the identity-output slice gives a 40-variable counterexample",
             ),
-            "homogeneous_quartic_HN_VC_failure_dimension": frontiers["n_HN4"],
+            "homogeneous_quartic_HN_VC_failure_dimension": interval(
+                6,
+                38,
+                (
+                    "the symmetric homogeneous nilpotent-Jacobian result "
+                    "holds through dimension five"
+                ),
+                (
+                    "the homogeneous cotangent lift of the exact "
+                    "19-variable cubic parent has dimension 38"
+                ),
+            ),
         },
         "rank_and_index_frontiers": {
             "cubic_homogeneous_Jacobian_rank": frontiers["r_cub"],
@@ -206,7 +232,7 @@ def main() -> None:
                 "exact_value": 3,
                 "lower_reason": "Wang's theorem proves every quadratic Keller map invertible",
                 "upper_reason": (
-                    "the certified 21-variable cubic-homogeneous collision has degree 3"
+                    "the pinned external MacFarlane G20 collision has degree 3"
                 ),
             },
             "Gaussian_moment_counterexample_total_degree": {
@@ -222,6 +248,14 @@ def main() -> None:
         },
         "smallest_certified_witnesses": {
             "cubic_homogeneous_Keller": {
+                "dimension": 19,
+                "artifact": "macfarlane_f12_coordinate_pair_reduction.json",
+                "certificate_scope": (
+                    "exact rank-compressed parent of the independently "
+                    "replayed twelve-variable map"
+                ),
+            },
+            "cubic_homogeneous_Keller_internal_independent_replay": {
                 "dimension": 21,
                 "artifact": "essential_bcw_21_counterexample.json",
             },
@@ -240,8 +274,14 @@ def main() -> None:
                 "artifact": "image_vanishing_counterexamples_20_40.json",
             },
             "homogeneous_quartic_HN_VC": {
-                "dimension": 42,
-                "artifact": "image_vanishing_counterexamples_21_42.json",
+                "dimension": 38,
+                "derived_from": (
+                    "the exact G19 parent by the homogeneous cotangent lift"
+                ),
+                "certificate_scope": (
+                    "exact F12/G19 determinant certificate plus the "
+                    "homogeneous cotangent bridge"
+                ),
             },
             "nonhomogeneous_HN_degree_at_most_4_rank": {
                 "dimension": 40,
@@ -252,7 +292,7 @@ def main() -> None:
                 ),
                 "scope_warning": (
                     "this does not change the homogeneous quartic HN "
-                    "rank-37 or dimension-42 frontiers"
+                    "rank-37 or certified dimension-38 frontiers"
                 ),
             },
         },
@@ -268,13 +308,13 @@ def main() -> None:
     OUTPUT.write_text(json.dumps(scoreboard, indent=2) + "\n")
     print(
         "PASS scoreboard: ambient witness dimensions "
-        "21 / SIC 2 / GVC 5 / Laplacian 40 / HN 42"
+        "19 / SIC 2 / GVC 5 / Laplacian 40 / HN 38"
     )
     print("PASS scoreboard: exact minimum SIC pair dimension is 2")
     print("PASS scoreboard: GMC failure dimension is in [2,3]")
     print("PASS scoreboard: exact minimum Gaussian counterexample degree is 3")
     print("PASS scoreboard: all 121 two-real cubic four-weight charts excluded")
-    print("PASS scoreboard: cubic dimension/rank/index intervals are [5,21] / [3,17] / [3,18]")
+    print("PASS scoreboard: cubic dimension/rank/index intervals are [5,19] / [3,17] / [3,18]")
     print("PASS scoreboard: cotangent Hessian-rank interval is [6,37]")
     print("PASS scoreboard: unrestricted quartic Hessian-rank interval is [3,37]")
     print("PASS scoreboard: nonhomogeneous degree-at-most-4 HN witness has rank 34")

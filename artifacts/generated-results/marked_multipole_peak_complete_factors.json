@@ -1,0 +1,75 @@
+{
+  "status": "no counterexample in bounded search",
+  "scope": {
+    "max_factor_degree": 3,
+    "max_word_length": 2,
+    "factor_lower_coefficients": "all in {-1,0,1}",
+    "linear_triangular_factors": false,
+    "seed_coefficients": "{0,1}",
+    "extended_seed_basis": false,
+    "maximum_seed_terms": null,
+    "word_order": "length, total polydegree, polydegree tuple, coefficients, initial orientation"
+  },
+  "invariant_tested": "a globally lowering alternating word cannot start at a state with no complete lowering triangular shear",
+  "charts": [
+    {
+      "chart": "two-pole Laurent",
+      "boundaries": [
+        "0",
+        "infinity"
+      ],
+      "conductor_pairing": [
+        [
+          0,
+          1
+        ]
+      ],
+      "seed_function_count": 7,
+      "ordered_seed_pair_count": 49,
+      "locally_terminal_seed_pairs": 20,
+      "words_tested_from_terminal_pairs": 5760,
+      "globally_lowering_words": 0,
+      "all_words_tested": 0,
+      "all_globally_lowering_words": 0,
+      "delayed_globally_lowering_words": 0,
+      "delayed_words_with_initial_complete_reduction": 0,
+      "delayed_reduced_jung_words": 0,
+      "delayed_polydegree_counts": {},
+      "peak_delta_sequences": {},
+      "largest_delayed_peak_excess": null,
+      "largest_delayed_peak_trace": null,
+      "largest_polydegree_delayed_trace": null,
+      "counterexample": null
+    },
+    {
+      "chart": "three-pole rational",
+      "boundaries": [
+        "0",
+        "1",
+        "infinity"
+      ],
+      "conductor_pairing": [
+        [
+          0,
+          1
+        ]
+      ],
+      "seed_function_count": 7,
+      "ordered_seed_pair_count": 49,
+      "locally_terminal_seed_pairs": 18,
+      "words_tested_from_terminal_pairs": 5184,
+      "globally_lowering_words": 0,
+      "all_words_tested": 0,
+      "all_globally_lowering_words": 0,
+      "delayed_globally_lowering_words": 0,
+      "delayed_words_with_initial_complete_reduction": 0,
+      "delayed_reduced_jung_words": 0,
+      "delayed_polydegree_counts": {},
+      "peak_delta_sequences": {},
+      "largest_delayed_peak_excess": null,
+      "largest_delayed_peak_trace": null,
+      "largest_polydegree_delayed_trace": null,
+      "counterexample": null
+    }
+  ]
+}

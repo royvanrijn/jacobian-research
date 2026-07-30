@@ -864,6 +864,13 @@ the generic \(J\)-divisor quotient has length five with basis
 (5.12j'').  The quartic point (5.12j') additionally proves that this
 rank-five locus meets \(\mu_3=0\).
 
+The same quadratic-pair arithmetic pseudo-reduces \(\mu_6\) and
+\(\mu_7\) without dividing by a base polynomial.  Their normal forms
+occupy all five standard monomials in respectively five and ten reduction
+steps.  Thus every one of the five \(L,Q,J\) strata now has exact
+\(\mu_6,\mu_7\) normal forms; this statement does not compute the
+successive common-root quotients.
+
 Generic rational-function-field calculations on both split components
 in characteristics \(47\) and \(101\) independently reproduce the same
 basis.  The earlier direct computation that kept \(J\) as an additional
@@ -887,6 +894,173 @@ software bottleneck.
 Independent reductions in characteristics \(47\) and \(101\) reproduce
 all four quotient shapes.  Proposition 5.2b is a finite-quotient theorem,
 not a zero-fiber exclusion.
+
+There is one further exact finite algebra on the deepest divisor.  On
+\(L=Q=0\), use \(t_2,s_5,t_4\) as fiber variables and
+\(s_1,s_3,t_0\) as base variables.  The third moment is cubic in \(t_2\)
+with constant leading coefficient \(933120\).  Exact characteristic-zero
+reduction gives
+
+\[
+ \dim_{\mathbb Q(s_1,s_3,t_0)}
+ \frac{\mathbb Q(s_1,s_3,t_0)[t_2,s_5,t_4]}
+      {(\mu_3,\mu_4,\mu_5)}=15.                         \tag{5.12p}
+\]
+
+The reduced basis has eleven elements; its leading exponents are recorded
+in the corrected-boundary artifact.  This promotes the deepest
+\((\mu_4,\mu_5)\) rank-five algebra to a rank-fifteen algebra after the
+\(\mu_3\) pivot.  Content-preserving pseudo-reduction in this algebra gives
+primitive normal forms for \(\mu_6\) and \(\mu_7\) in respectively \(19\)
+and \(35\) reduction steps.  Both normal forms occupy all fifteen standard
+monomials and have maximum fiber degree three.
+
+There is also an exact divisor exclusion across all five branches.  At
+\(t_0=0\), the generic, \(L\), \(Q\), \(J\), and \(L=Q\) strata use the
+respective principal opens
+
+\[
+ LQ(9801Q^2+30420L^2),\qquad Q,\qquad L,\qquad LQ,\qquad 1.
+\]
+
+These strata partition the adapted \((L,Q)\)-plane over an algebraic
+closure.  Exact sparse linear algebra gives the unit ideal through
+\(\mu_{10}\) on every stratum.  In particular, on the deepest stratum,
+
+\[
+ (\mu_3,\mu_4,\ldots,\mu_{10})
+ =\mathbb Q[t_2,s_5,t_4,s_1,s_3]
+ \qquad\text{on }L=Q=t_0=0.                            \tag{5.12q}
+\]
+
+Thus the entire branchwise common boundary at \(t_0=0\) is excluded; any
+surviving point on any of the five strata lies on the \(t_0\)-open.
+
+The remaining open has a smaller exact presentation than the direct
+eight-variable system suggests.  Normalize \(t_0=1\), put \(u=s_0^{-1}\),
+and use \(\mu_2,A,B\) to eliminate \(t_4,t_3,s_4\), respectively.  In
+the resulting variables,
+
+\[
+ x=s_1^2u-s_2,\qquad \ell=s_1u-t_1,
+\]
+
+the transformed \(\mu_3\) is a 73-term base equation independent of
+\(s_5,s_6\).  Over
+\(\mathbb Q(s_1,s_2,s_3,t_1,t_2,u)\), exact reduction gives
+
+\[
+ \dim
+ \frac{\mathbb Q(s_1,s_2,s_3,t_1,t_2,u)[s_6,s_5]}
+      {(\mu_4,\mu_5)}=6,                              \tag{5.12r}
+\]
+
+with leading monomials \(s_6^2,s_6s_5^2,s_5^4\) and standard basis
+
+\[
+ 1,\ s_6,\ s_5,\ s_6s_5,\ s_5^2,\ s_5^3.
+\]
+
+The exact \(\mu_6\) normal form occupies all six coordinates.  With the
+reverse fiber order \((s_6,s_5)\), the three leading coefficients factor,
+up to the nonzero rational constants \(311040,324,122472\), as
+
+\[
+ K,\qquad H,\qquad Q_*KJ_*H,
+\]
+
+where
+
+\[
+\begin{aligned}
+ Q_*&=3x-13u,\\
+ A_*&=99x-274u,\\
+ J_*&=(99x-274u)^2+30420\ell^2,\\
+ K&=351x-901u,\\
+ H&=(99x-274u)K+121680\ell^2.
+\end{aligned}
+\]
+
+These factors satisfy the simpler identities
+
+\[
+ K=4A_*-15Q_*,\qquad H=4J_*-15A_*Q_* .              \tag{5.12s}
+\]
+
+The apparent \(K\)-exception can itself be resolved into finite algebras.
+On \(K=0\), equivalently
+\(s_2=s_1^2u-(901/351)u\), the generic leading ideal changes to
+
+\[
+ (s_6s_5,s_6^3,s_5^4),
+\]
+
+the quotient still has length six, and the leading coefficients have
+support \(\ell,\ell^3,\ell^2J_*\).  The exact \(\mu_6\) normal form again
+occupies all six coordinates.  Since \(H=121680\ell^2\) on \(K=0\), the
+reduced \(K=H=0\) intersection is the linear slice
+
+\[
+ s_2=s_1^2u-\frac{901}{351}u,\qquad t_1=s_1u .
+\]
+
+There \((\mu_4,\mu_5)\) has leading ideal \((s_5^2,s_6^3)\), length six,
+and basis
+
+\[
+ 1,\ s_6,\ s_6^2,\ s_5,\ s_6s_5,\ s_6^2s_5;
+\]
+
+\(\mu_6\) occupies all six coordinates yet again.  Together with the
+separate exact \(J_*=0\) algebra, this shows that \(K\) introduces no new
+positive-dimensional fiber degeneration.
+
+The residual \(H=0\) divisor is a rational conic.  A dense
+parametrization, with parameter \(r\) and
+\(D=1287r^2+40560\), is
+
+\[
+ \ell=-\frac{775ru}{D},\qquad
+ Q_*=-\frac{155}{33}u+r\ell,\qquad
+ x=\frac{Q_*+13u}{3}.                                \tag{5.12t}
+\]
+
+Substitute \(s_2=s_1^2u-x\) and \(t_1=s_1u-\ell\).  Over the resulting
+rational-function field, \((\mu_4,\mu_5)\) has leading ideal
+\((s_6^2,s_5^3)\), length six, and basis
+
+\[
+ 1,\ s_6,\ s_5,\ s_6s_5,\ s_5^2,\ s_6s_5^2.
+\]
+
+The omitted parametrization point has \(A_*=\ell=0\) and hence lies on
+the separately certified \(J_*=0\) branch.  Thus \(H\), like \(K\), does
+not cause a generic positive-dimensional fiber; lower-dimensional
+specializations and its later-moment normal forms are still open.
+
+Thus (5.12r) reduces the \(t_0\)-open continuation to one base equation,
+a rank-six fiber, with generic rank-six presentations on every new
+\(K,H\) leading-factor divisor.  This does not yet resolve the
+lower-dimensional coefficient specializations, the inherited
+\(Q_*,J_*\) later-moment radicals, or the common radical.
+
+An attempted branchwise continuation through corrected \(\mu_8\) exposed
+an important content issue.  Singular's `cleardenom` removes polynomial
+content, so applying it to a fiber-constant base equation can replace that
+equation by \(1\).  Such an export gives a spurious unit ideal and is not a
+Nullstellensatz certificate.  The corrected exporter preserves base
+content explicitly.  With that correction, the reordered \(600\)-second
+mod-\(47\) deepest solve still does not finish.  Exact and mod-\(47\)
+fraction-free reductions of \(\mu_8\) also exceed the recorded
+\(600\)-second bound.  Thus \(\mu_6,\mu_7\) are reduced exactly on the
+deepest branch and (5.12q), together with the other four saturated unit
+computations, closes the whole \(t_0=0\) divisor.  On the \(t_0\)-open,
+(5.12r) now reduces \(\mu_6\) in a generic rank-six algebra, but its
+successive common-root/Fitting equations, the lower-dimensional
+coefficient strata and inherited \(Q_*,J_*\) branch radicals, and
+corrected orders \(7,8,9,10,11,12,14\) remain unresolved.  Neither a
+semistable moment-zero point nor a radical equality follows from the
+present certificates.
 
 ### Trace/norm reconnaissance on the \(L\)-open
 
@@ -968,6 +1142,34 @@ on this exact slice.  Thus the whole five-variable slice contains no
 corrected zero-fiber point.  Equation (5.12b'') is a
 characteristic-zero slice exclusion, not a statement about the full
 four-dimensional base.
+
+Two six-variable hyperslices admit the same exact treatment.  Keeping
+\(s_1\) free and fixing \(t_0=1\), or keeping \(t_0\) free and fixing
+\(s_1=1\), `msolve` computes
+
+\[
+ (\mu_3,\ldots,\mu_8)=(1)
+\]
+
+modulo both \(47\) and \(101\), and also directly over \(\mathbb Q\).
+Thus
+
+\[
+ (\mu_3,\ldots,\mu_8)
+ =\mathbb Q[s_1,Q,t_2,s_3,s_5,t_4]
+ \quad\text{when }t_0=1,                              \tag{5.12b'''}
+\]
+
+and the analogous equality holds in
+\(\mathbb Q[t_0,Q,t_2,s_3,s_5,t_4]\) when \(s_1=1\).
+This excludes both complete hyperslices in characteristic zero.
+Singular's verified modular reconstruction of the first hyperslice did
+not finish within the recorded \(600\)-second bound, but the independent
+exact `msolve` computations returned the one-element Gröbner basis
+\([1]\) using deterministic exact sparse linear algebra.  The unfixed
+seven-variable \(L=1\) system did not finish
+within its recorded \(600\)-second exact `msolve` run, so these two
+hyperslice exclusions are not promoted to a full \(L\)-open theorem.
 
 The constant \(t_2\)-pivot permits one more exact elimination without a
 five-variable Gröbner basis.  Use the adapted base coordinates

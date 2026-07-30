@@ -537,8 +537,12 @@ now proved in
 [cellular Postnikov transitivity](CELLULAR_POSTNIKOV_TRANSITIVITY.md).
 They give the universal overlap formula, the multi-layer conormal
 filtration, finite-quotient splitting detection, and the separation of
-base-change Tor.  What remains here is the geometric comparison identifying
-the actual Hessian intersection with that cellular object.
+base-change Tor.  The
+[cotangent-descent comparison](HESSIAN_RITT_COTANGENT_DESCENT_COMPARISON.md)
+now proves descent for the full bar diagram of the actual derived
+intersection and shows that the finite two-skeleton controls \(H^0,H^1\).
+What remains here is coefficient effectivity of the finite Ritt compression
+and the higher-cell calculation needed for algebraic \(H^2\).
 
 Proving this remaining comparison would make (1.7) formal and would reduce
 degree-specific synchronization to three universal tasks: identify the

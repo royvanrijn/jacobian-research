@@ -115,6 +115,95 @@ eight-variable standard-basis stage, but both `std` and `slimgb` with
 timeouts are a computational frontier and supply no evidence about the
 quartic jet dimension.  The retained artifact records the `slimgb` run.
 
+### 3.1 Decomposition of the cubic support
+
+Number the eight free coordinates in the order displayed in (3.3) by
+\(x_0,\ldots,x_7\), and let \(I_3\) be the cubic moment-jet ideal.  A
+factorizing standard-basis calculation reveals structure that the
+dimension count (3.4) hides:
+\[
+ x_7^3\in I_3.
+\tag{3.5}
+\]
+After adjoining the radical consequence \(x_7\), the resulting ideal
+\(J\) has dimension four, multiplicity six, and a 63-element standard
+basis.  Split its support by \(x_6\):
+\[
+ V(J)=V(J+(x_6))\ \cup\
+ V\bigl(J:(x_6)^\infty\bigr).
+\tag{3.6}
+\]
+
+The first term in (3.6) has a short exact radical certificate.  Put
+\[
+\begin{split}
+ P={}&x_2^3+6306x_2^2x_5-11062x_2x_5^2+1735x_5^3.
+\end{split}
+\tag{3.7}
+\]
+Direct standard-basis reductions prove
+\[
+ J+(x_6)\subseteq (x_7,x_6,x_3,P),\qquad
+ x_3^3,P^2\in J+(x_6).
+\tag{3.8}
+\]
+Moreover, over \(\mathbb F_{32003}\),
+\[
+ P=(x_2-7378x_5)
+ (x_2^2+13684x_2x_5+12028x_5^2),
+\tag{3.9}
+\]
+and the quadratic factor is irreducible.  Thus \(P\) is squarefree, so
+(3.8) proves
+\[
+ \sqrt{J+(x_6)}=(x_7,x_6,x_3,P).
+\tag{3.10}
+\]
+The dominant cubic support therefore consists of one rational sheet and
+one quadratic-conjugate pair of sheets.  Over an algebraic closure these
+are three sheets.
+
+The off-axis saturation
+\[
+ K=J:(x_6)^\infty
+\tag{3.11}
+\]
+has dimension three, multiplicity nine, and a 38-element standard
+basis.  The variables \(x_1,x_4,x_6\) form an independent set.  Over
+\(\mathbb F_{32003}(x_1,x_4,x_6)\), its generic fiber has length nine
+and a four-element lexicographic basis whose primitive polynomial has
+degree nine and is irreducible.  This proves generic irreducibility of
+that finite fiber; it does not by itself prove that the global
+saturation \(K\) is prime or exclude special vertical structure.
+
+The raw `facstd` output also contains a nonreduced dimension-three,
+multiplicity-six branch supported inside (3.10).  It is not an
+additional set-theoretic component.  The multiplicity-nine cubic count
+therefore mixes a thickened dominant support with the lower-dimensional
+off-axis branch.
+
+### 3.2 Quartic restriction to the dominant sheets
+
+Specializing the quartic moment jet directly to the two factors in
+(3.9) avoids the unsuccessful redundant eight-variable calculation.
+On the linear sheet, the restricted ideal has dimension three,
+multiplicity two, and contains \(x_5^4\).  On the quadratic sheet it has
+dimension three, multiplicity four, and contains \(x_5^5\).  In both
+cases every generator lies in the candidate radical, and the quadratic
+relation then also makes \(x_2\) nilpotent.  Hence both sheet radicals
+collapse to the same three-plane
+\[
+ (x_2,x_3,x_5,x_6,x_7),
+\tag{3.12}
+\]
+with \(x_0,x_1,x_4\) free.
+
+This is real quartic progress, but not formal isolation.  The symbolic
+standard basis of the quartic ideal together with \(K\), over
+\(\mathbb F_{32003}(x_1,x_4,x_6)\), still reaches its declared
+240-second timeout.  No conclusion is drawn about survival of the
+off-axis component.
+
 ## 4. Interpretation
 
 The calculation rules out two overly optimistic approaches.
@@ -126,14 +215,17 @@ The calculation rules out two overly optimistic approaches.
    synchronized branch.  Six normal dimensions survive the quadratic
    jet and four survive the cubic jet.
 
-This does not show that \(q_2\) is insufficient.  The surviving jet cone
-may be killed by quartic or quintic Taylor terms.  It also does not
-produce a semistable residual point: a positive-dimensional truncated
-cone need not lift to an actual moment-zero branch.
+This does not show that \(q_2\) is insufficient.  The decomposition
+shows more precisely where the obstruction lies: quartic terms collapse
+all three dominant cubic sheets to (3.12), while the generic quartic
+restriction on the degree-nine off-axis branch remains unresolved.
+Neither the residual three-plane nor the off-axis cubic component is an
+actual moment-zero arc without compatible higher Taylor terms.
 
-The next exact calculation should use coefficientwise formal
-composition, or a native Singular map, to finish the quartic and quintic
-jets after the four pivots.  The target is either:
+The next exact calculation should work in the nine-dimensional generic
+fiber algebra of (3.11), using multiplication matrices rather than
+recomputing a large parameter-field standard basis.  Independently, one
+should restrict the quintic jet to (3.12).  The target remains either:
 
 - a maximal-ideal-power containment proving formal isolation at the
   tested synchronized point; or
@@ -163,3 +255,20 @@ The artifact records every allowed and forbidden weight coordinate, the
 four pivots, the formal-series term counts, the reduced moment term
 counts when Python composition is selected, both completed
 standard-basis dimensions, and the bounded quartic timeout.
+
+Replay the cubic decomposition and dominant-sheet quartic restrictions
+with
+
+```bash
+.venv/bin/python \
+  scripts/research_degree_four_q2_cubic_decomposition.py \
+  --prime 32003 --timeout 180
+```
+
+The generated
+[`degree_four_q2_cubic_decomposition.json`](../artifacts/generated-results/degree_four_q2_cubic_decomposition.json)
+has SHA-256
+`9c812573ba3dd0f014ffc4515a147605297045042ab0487fec9271f52c14d6ec`.
+It records the exact radical certificate (3.8), the factorization (3.9),
+the degree-nine generic off-axis fiber, both dominant-sheet quartic
+collapses, and the unresolved off-axis quartic timeout.

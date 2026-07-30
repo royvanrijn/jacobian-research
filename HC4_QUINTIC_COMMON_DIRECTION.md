@@ -639,13 +639,65 @@ chart \(a=0\), represented by \(s_4=P_2\), has unit coefficient ideal.
 > Fermat Schur pairs and no exceptional parameter curve.  Both isolated
 > pairs are excluded at lower faces by `HC4QSE2` and `HC4QF1`.
 
-This statement is deliberately generic.  Saturating the 114-equation
-polynomial family by \(\nu\) did not finish in a bounded 300-second exact
-run, and direct projective-chart Gröbner calculations also exceeded their
-120-second bounds.  Therefore exceptional algebraic curves inside
-\(\nu\ne0\) are not excluded.  The radial point above shows that the
-exceptional locus is nonempty, although it does not by itself exhibit an
-exceptional curve.  The boundary \(\nu=0\) is fully closed by `HC4QS1`.
+The full fifteen-coefficient classification follows from the Hessian
+discriminant rather than a uniform coefficient saturation.  For a
+squarefree Hessian determinant \(D\), reduction modulo every irreducible
+factor of \(D\) makes the adjugate a nonzero symmetric rank-one matrix.
+Thus
+
+\[
+\nabla s_4^{\mathsf T}\operatorname{adj}(H)\nabla s_4=0
+\pmod D
+\]
+
+forces \(\operatorname{adj}(H)\nabla s_4=0\) modulo every factor.
+Consequently \(D\), of degree twelve, divides this degree-eleven vector.
+The vector and hence \(s_4\) vanish.
+
+In the invariant coordinates \(R,P_2,P_3\), exact coefficient
+calculation writes \(D\) as a quadratic in \(P_3\).  The radical of the
+coefficient ideal of its \(P_3\)-discriminant consists of
+
+\[
+(0,0),\qquad (1/5,1/10),\qquad (5/7,-1/14).
+\]
+
+At the third point,
+
+\[
+D=\frac{(12P_2-R^2)
+(144P_2^2-24P_2R^2-7R^4)}{343},
+\]
+
+whose two factors are distinct and coprime.  The two degree-drop lines
+and the ramification divisors of the invariant-coordinate map introduce
+no further repeated factor.  Therefore the reduced projective incidence
+scheme for an arbitrary quartic is
+
+\[
+\begin{aligned}
+&\{(\mu,\nu)=(0,0)\}\times
+  \mathbb P\langle x^4,y^4,m^4\rangle\\
+&\qquad{}\sqcup
+\{(\mu,\nu)=(1/5,1/10),\ [s_4]=[R^2]\}.
+\end{aligned}
+\]
+
+> **Theorem `HC4QSE4` — full exceptional Schur atlas.**  The
+> two-parameter surface has no exceptional parameter curve and no
+> mixed-character reduced Schur component.  Its only reduced projective
+> components are the Fermat plane and the radial point above.  `HC4QF1`
+> and `HC4QSE2` make both determinant prolongation ideals empty before
+> any additional antipodal collision equations are imposed.  Hence no
+> nonzero Schur pair on this surface defines a new `HC(4)` candidate.
+
+The earlier generic coefficient route remains a useful computational
+checkpoint.  Saturating the 114-equation polynomial family by \(\nu\)
+did not finish in a bounded 300-second exact run, and direct
+projective-chart Gröbner calculations also exceeded their 120-second
+bounds.  Those timeouts supply no certificate and are not used in
+`HC4QSE4`; the squarefree-discriminant argument closes the exceptional
+curves they could not exclude.
 
 This broadening gives a fairly clear verdict on the method.  The Schur
 face has real merit: rigidity persists for a full quartic over a
@@ -671,6 +723,7 @@ Run:
   scripts/verify_hc4_quintic_radial_prolongation.py
 .venv/bin/python \
   scripts/verify_hc4_quintic_even_symmetric_schur.py
+.venv/bin/python scripts/verify_hc4_exceptional_schur_atlas.py
 ```
 
 The checker replays `HC4T31`, verifies every symbolic face, runs the exact
@@ -689,7 +742,10 @@ quartic on the surface.  The sixth checker keeps
 all lower forms generic and extracts the two sparse determinant
 coefficients (8.6), proving the obstruction (8.7).  The seventh checker
 computes the exact radical decomposition (8.8) and the unit ideal on the
-remaining projective chart.
+remaining projective chart.  The eighth constructs all 120 incidence
+coefficients, verifies the seven-term invariant Hessian determinant,
+classifies its nonsquarefree parameter locus, and removes the extra
+squarefree split point and invariant-quotient ramification divisors.
 
 The scalar Schur identity and the implication from (6.5)--(6.6) to
 \(a=b=c=0\) are also machine-checked in

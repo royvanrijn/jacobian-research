@@ -111,6 +111,38 @@ quotienting redundant variables can reduce essential dimension or corank,
 but it cannot by itself improve the rank objective unless it changes the
 nondegenerate part of the potential.
 
+There is nevertheless nonlinear structure in the remaining generic kernel.
+In Witt coordinates, three of the four exact Hessian syzygies are vertical
+vector fields
+
+\[
+ D_b=\sum_j b_j(x)\partial_{y_j},\qquad b(x)^TH(x)=0.
+\]
+
+Their degrees are zero, two, and three.  The fourth syzygy is mixed in
+\(x,y\) and also has degree three.  Exact derivation calculations show that
+all four fix \(p=y^TH(x)\), are locally nilpotent, and commute pairwise.
+Their action has generic rank four, witnessed by the minor
+\(42x_0^3x_1^3x_{20}y_2\).  Thus the rank-38 quartic carries a nonlinear
+\(\mathbb G_a^4\)-action, a symmetry mechanism not used by the current
+constant-kernel quotients.
+
+The obvious zero-cotangent collision lifts have action ranks \(1,3,3\), but
+this degeneracy is not intrinsic to the collision.  Lifting the second and
+third source points with common second gradient output \(e_0\) gives an exact
+rational two-point collision at which the action ranks are \(4,4\).  Hence a
+principal open containing a collision lies in the full-rank orbit locus, and
+its generic orbit quotient has dimension \(42-4=38\).
+
+This does not yet give a 38-variable HN polynomial.  The action is not
+globally free, its invariant ring has not been proved polynomial, nonlinear
+quotient coordinates need not preserve quartic homogeneity, and the Witt
+quadratic form does not automatically descend to the ordinary nondegenerate
+Laplacian.  Any descent based on these directions must analyze that invariant
+ring or an affine modification and separately recover the quadratic form.
+The exact audit is
+[`audit_hessian_rank38_kernel_actions.py`](../scripts/audit_hessian_rank38_kernel_actions.py).
+
 At a generic finite-field specialization after the orthogonal change, the
 HN Hessian has power ranks
 
@@ -184,11 +216,12 @@ counterexample to a specific published fixed-rank theorem.
 
 ```bash
 .venv/bin/python scripts/audit_fixed_rank_hessian_witness.py
+python3 scripts/audit_hessian_rank38_kernel_actions.py
 .venv/bin/python scripts/verify_hessian_rank_reduced_bcw_22_route.py
 python3 scripts/audit_hessian_rank_reduced_bcw_22_independent.py
 .venv/bin/python scripts/search_fixed_rank_hessian.py --width 64 --max-steps 24
 ```
 
-The first three commands give exact certificates for the rank-38 dimension
-baseline and the rank-37 circuit witness.  The final command is an
-exploratory search and takes several minutes.
+The first four commands give exact certificates for the rank-38 dimension
+baseline, its nonlinear kernel actions, and the rank-37 circuit witness.  The
+final command is an exploratory search and takes several minutes.

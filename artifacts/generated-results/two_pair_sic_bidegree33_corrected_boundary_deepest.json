@@ -1,0 +1,623 @@
+{
+  "base_variables": [
+    "s1",
+    "s3",
+    "t0",
+    "t2"
+  ],
+  "branch": "LQ",
+  "branch_table": {
+    "J": {
+      "exact_fraction_free_normal_forms": {
+        "6": {
+          "pseudo_reduction_steps": 5,
+          "support_size": 5
+        },
+        "7": {
+          "pseudo_reduction_steps": 10,
+          "support_size": 5
+        }
+      },
+      "later_corrected_moments_reduced": [
+        6,
+        7
+      ],
+      "leading_exponents": [
+        "2,0",
+        "1,2",
+        "0,3"
+      ],
+      "quotient_length": 5,
+      "source": "verify_two_pair_sic_bidegree33_boundary_generic_quotient.py",
+      "standard_basis": [
+        "1",
+        "t4",
+        "t4^2",
+        "s5",
+        "s5*t4"
+      ]
+    },
+    "L": {
+      "base_variables": [
+        "s1",
+        "s3",
+        "t0",
+        "Q",
+        "t2"
+      ],
+      "branch": "L",
+      "exported_polynomial_terms": [
+        60,
+        220,
+        628,
+        1220,
+        2406,
+        4651,
+        8248,
+        14368,
+        3
+      ],
+      "groebner_basis_size": 2,
+      "later_corrected_moments_reduced": false,
+      "later_orders": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "leading_exponents": [
+        "2,0",
+        "0,3"
+      ],
+      "open_factor": "155*t0^2*Q+99*Q^2",
+      "quotient_length": 6
+    },
+    "LQ": {
+      "base_variables": [
+        "s1",
+        "s3",
+        "t0",
+        "t2"
+      ],
+      "branch": "LQ",
+      "exported_polynomial_terms": [
+        32,
+        103,
+        235,
+        372,
+        488,
+        894,
+        1576,
+        2622,
+        4270
+      ],
+      "groebner_basis_size": 3,
+      "later_corrected_moments_reduced": false,
+      "later_orders": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "leading_exponents": [
+        "0,2",
+        "2,1",
+        "3,0"
+      ],
+      "open_factor": "1",
+      "quotient_length": 5
+    },
+    "Q": {
+      "base_variables": [
+        "s1",
+        "s3",
+        "t0",
+        "L",
+        "t2"
+      ],
+      "branch": "Q",
+      "exported_polynomial_terms": [
+        62,
+        212,
+        791,
+        1205,
+        1198,
+        2430,
+        4612,
+        8296,
+        14284,
+        3
+      ],
+      "groebner_basis_size": 3,
+      "later_corrected_moments_reduced": false,
+      "later_orders": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "leading_exponents": [
+        "1,1",
+        "0,3",
+        "3,0"
+      ],
+      "open_factor": "24025*t0^4*L+30420*L^3",
+      "quotient_length": 5
+    },
+    "generic": {
+      "base_variables": [
+        "s1",
+        "s3",
+        "t0",
+        "L",
+        "Q",
+        "t2"
+      ],
+      "branch": "generic",
+      "exported_polynomial_terms": [
+        106,
+        405,
+        1325,
+        3596,
+        2743,
+        6009,
+        12346,
+        23742,
+        43600,
+        5
+      ],
+      "groebner_basis_size": 3,
+      "later_corrected_moments_reduced": false,
+      "later_orders": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "leading_exponents": [
+        "2,0",
+        "1,2",
+        "0,4"
+      ],
+      "open_factor": "24025*t0^4*L*Q+30690*t0^2*L*Q^2+30420*L^3*Q+9801*L*Q^3",
+      "quotient_length": 6
+    }
+  },
+  "constructed_orders": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "corrected_moment_set": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    14
+  ],
+  "deepest_fraction_free_normal_forms": {
+    "algorithm": "content-preserving fraction-free pseudo-normal form",
+    "coefficient_field": "QQ(s1,s3,t0)",
+    "groebner_basis_size": 11,
+    "normal_forms": {
+      "6": {
+        "maximum_fiber_degree": 3,
+        "primitive_base_content": true,
+        "pseudo_reduction_steps": 19,
+        "support_size": 15
+      },
+      "7": {
+        "maximum_fiber_degree": 3,
+        "primitive_base_content": true,
+        "pseudo_reduction_steps": 35,
+        "support_size": 15
+      }
+    },
+    "quotient_length": 15,
+    "scope": "exact reductions in the finite algebra; exceptional leading-coefficient support and the later radical are not yet resolved"
+  },
+  "deepest_three_pivot": {
+    "coefficient_field": "QQ(s1,s3,t0)",
+    "fiber_variables": [
+      "t2",
+      "s5",
+      "t4"
+    ],
+    "groebner_basis_size": 11,
+    "leading_exponents": [
+      "1,1,1",
+      "2,0,1",
+      "1,2,0",
+      "2,1,0",
+      "3,0,0",
+      "0,0,4",
+      "0,1,3",
+      "1,0,3",
+      "0,2,2",
+      "0,3,1",
+      "0,4,0"
+    ],
+    "moments": [
+      3,
+      4,
+      5
+    ],
+    "mu3_leading_coefficient": "933120",
+    "mu3_leading_exponent": [
+      3,
+      0,
+      0
+    ],
+    "quotient_length": 15,
+    "scope": "exact characteristic-zero finite algebra after the mu3 pivot; later corrected moments are not yet reduced fraction-free"
+  },
+  "exported_polynomial_terms": [
+    32,
+    103,
+    235,
+    372,
+    488,
+    894,
+    1576,
+    2622,
+    4270
+  ],
+  "groebner_basis_size": 3,
+  "later_corrected_moments_reduced": false,
+  "later_orders": [
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "leading_exponents": [
+    "0,2",
+    "2,1",
+    "3,0"
+  ],
+  "open_factor": "1",
+  "ordinary_variables": [
+    "s1",
+    "s3",
+    "t0",
+    "t2",
+    "s5",
+    "t4"
+  ],
+  "quotient_length": 5,
+  "reproduction_command": "scripts/verify_two_pair_sic_bidegree33_corrected_boundary.py --branch LQ --prime 0 --through 10 --export-only --include-branch-table --deepest-ffnf --deepest-ffnf-through 7 --t0-zero-branch-table --t0-open-rank-six --timeout 300 --output artifacts/generated-results/two_pair_sic_bidegree33_corrected_boundary_deepest.json",
+  "scope": "exact finite-algebra branch exports through the constructed orders; no semistable point and no characteristic-zero radical equality",
+  "solve": null,
+  "t0_open_rank_six": {
+    "H_divisor": {
+      "denominator": "D=1287*r^2+40560",
+      "groebner_basis_size": 2,
+      "leading_exponents": [
+        "2,0",
+        "0,3"
+      ],
+      "omitted_base_point": "A=ell=0, contained in J=0",
+      "parameter": "r",
+      "parametrization": {
+        "Q": "-155*u/33+r*ell",
+        "ell": "-775*r*u/D",
+        "s2": "s1^2*u-x",
+        "t1": "s1*u-ell",
+        "x": "(Q+13*u)/3"
+      },
+      "quotient_length": 6,
+      "scope": "exact generic finite algebra on H=0; later-moment normal forms and lower-dimensional specializations remain unresolved",
+      "standard_basis": [
+        "1",
+        "s6",
+        "s5",
+        "s6*s5",
+        "s5^2",
+        "s6*s5^2"
+      ]
+    },
+    "K_H_intersection": {
+      "derivation": "K=0 and H=121680*ell^2",
+      "groebner_basis_size": 2,
+      "leading_exponents": [
+        "0,2",
+        "3,0"
+      ],
+      "mu6_normal_form": {
+        "support_exponents": [
+          "2,1",
+          "2,0",
+          "1,1",
+          "1,0",
+          "0,1",
+          "0,0"
+        ],
+        "support_size": 6
+      },
+      "quotient_length": 6,
+      "radical_substitutions": [
+        "s2=s1^2*u-(901/351)*u",
+        "t1=s1*u"
+      ],
+      "scope": "exact finite algebra on the reduced K=H=0 intersection; later common-root equations remain unresolved",
+      "standard_basis": [
+        "1",
+        "s6",
+        "s6^2",
+        "s5",
+        "s6*s5",
+        "s6^2*s5"
+      ]
+    },
+    "K_divisor": {
+      "H": "121680*ell^2",
+      "groebner_basis_size": 3,
+      "leading_coefficient_factors": [
+        "u*ell",
+        "ell^3",
+        "u^2*ell^2*J"
+      ],
+      "leading_exponents": [
+        "1,1",
+        "3,0",
+        "0,4"
+      ],
+      "mu6_normal_form_support_size": 6,
+      "quotient_length": 6,
+      "scope": "exact on the generic K=0 divisor away from ell*J=0",
+      "substitution": "s2=s1^2*u-(901/351)*u"
+    },
+    "adapted_base_coordinates": {
+      "ell": "s1*u-t1",
+      "x": "s1^2*u-s2"
+    },
+    "base_variables": [
+      "s1",
+      "s2",
+      "s3",
+      "t1",
+      "t2",
+      "u"
+    ],
+    "characteristic": 0,
+    "chart": "t0=1 with u=s0^-1",
+    "cleared_denominators": {
+      "3": "1",
+      "4": "49*u**3",
+      "5": "49*u**5",
+      "6": "49*u**5"
+    },
+    "eliminated_variables": [
+      "t4",
+      "t3",
+      "s4"
+    ],
+    "fiber_variables": [
+      "s6",
+      "s5"
+    ],
+    "groebner_basis_size": 3,
+    "leading_coefficient_factors": {
+      "A": "99*x-274*u",
+      "H": "(99*x-274*u)*K+121680*ell^2",
+      "J": "(99*x-274*u)^2+30420*ell^2",
+      "K": "351*x-901*u",
+      "Q": "3*x-13*u",
+      "constants": [
+        311040,
+        324,
+        122472
+      ],
+      "factorization": [
+        "K",
+        "H",
+        "Q*K*J*H"
+      ],
+      "identities": [
+        "K=4*A-15*Q",
+        "H=4*J-15*A*Q"
+      ]
+    },
+    "leading_exponents": [
+      "2,0",
+      "1,2",
+      "0,4"
+    ],
+    "mu2_t4_pivot_coefficient": 336,
+    "mu3_base_term_count": 73,
+    "mu3_independent_of_fiber": true,
+    "mu6_normal_form": {
+      "maximum_fiber_degree": 3,
+      "support_exponents": [
+        "0,3",
+        "1,1",
+        "0,2",
+        "1,0",
+        "0,1",
+        "0,0"
+      ],
+      "support_size": 6
+    },
+    "quotient_length": 6,
+    "scope": "exact generic finite algebra and exact mu6 normal form on the t0-open chart; coefficient-denominator strata and the later radical remain unresolved",
+    "standard_basis": [
+      "1",
+      "s6",
+      "s5",
+      "s6*s5",
+      "s5^2",
+      "s5^3"
+    ]
+  },
+  "t0_zero_branch_table": {
+    "J": {
+      "backend": "msolve exact sparse linear algebra 2",
+      "basis_size": 1,
+      "branch": "J",
+      "characteristic": 0,
+      "divisor": "t0=0",
+      "moments": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "open_factor": "L*Q",
+      "scope": "exact exclusion of this t0=0 branch divisor; the t0-open and the full corrected radical remain unresolved",
+      "seconds": 1.586,
+      "unit_ideal": true,
+      "variables": [
+        "t2",
+        "s5",
+        "t4",
+        "s1",
+        "s3",
+        "L",
+        "Q",
+        "uinv"
+      ]
+    },
+    "L": {
+      "backend": "msolve exact sparse linear algebra 2",
+      "basis_size": 1,
+      "branch": "L",
+      "characteristic": 0,
+      "divisor": "t0=0",
+      "moments": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "open_factor": "Q",
+      "scope": "exact exclusion of this t0=0 branch divisor; the t0-open and the full corrected radical remain unresolved",
+      "seconds": 1.581,
+      "unit_ideal": true,
+      "variables": [
+        "t2",
+        "s5",
+        "t4",
+        "s1",
+        "s3",
+        "Q",
+        "uinv"
+      ]
+    },
+    "LQ": {
+      "backend": "msolve exact sparse linear algebra 2",
+      "basis_size": 1,
+      "branch": "LQ",
+      "characteristic": 0,
+      "divisor": "t0=0",
+      "moments": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "open_factor": "1",
+      "scope": "exact exclusion of this t0=0 branch divisor; the t0-open and the full corrected radical remain unresolved",
+      "seconds": 1.509,
+      "unit_ideal": true,
+      "variables": [
+        "t2",
+        "s5",
+        "t4",
+        "s1",
+        "s3"
+      ]
+    },
+    "Q": {
+      "backend": "msolve exact sparse linear algebra 2",
+      "basis_size": 1,
+      "branch": "Q",
+      "characteristic": 0,
+      "divisor": "t0=0",
+      "moments": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "open_factor": "L",
+      "scope": "exact exclusion of this t0=0 branch divisor; the t0-open and the full corrected radical remain unresolved",
+      "seconds": 1.583,
+      "unit_ideal": true,
+      "variables": [
+        "t2",
+        "s5",
+        "t4",
+        "s1",
+        "s3",
+        "L",
+        "uinv"
+      ]
+    },
+    "generic": {
+      "backend": "msolve exact sparse linear algebra 2",
+      "basis_size": 1,
+      "branch": "generic",
+      "characteristic": 0,
+      "divisor": "t0=0",
+      "moments": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "open_factor": "L*Q*(9801*Q^2+30420*L^2)",
+      "scope": "exact exclusion of this t0=0 branch divisor; the t0-open and the full corrected radical remain unresolved",
+      "seconds": 1.586,
+      "unit_ideal": true,
+      "variables": [
+        "t2",
+        "s5",
+        "t4",
+        "s1",
+        "s3",
+        "L",
+        "Q",
+        "uinv"
+      ]
+    }
+  }
+}

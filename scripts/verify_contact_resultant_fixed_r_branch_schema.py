@@ -2,10 +2,10 @@
 """Exact bounded audit of the fixed-r branch-at-infinity mechanism.
 
 This does not attempt the residual all-r wedge.  It constructs the limiting
-endpoint system for r=5,6,7 and checks whether the algebraic ingredients used
-in the r=6 proof survive in the first subsequent column: a squarefree branch
-polynomial away from c=0, no branch at z=infinity, and unique reconstruction
-of z by the linear subresultant.
+endpoint system for r=5,6,7,8 and checks whether the algebraic ingredients
+used in the r=6 proof survive in subsequent fixed columns: a squarefree
+branch polynomial away from c=0, no branch at z=infinity, and unique
+reconstruction of z by the linear subresultant.
 """
 
 from __future__ import annotations
@@ -81,4 +81,5 @@ def audit(r: int, expected_valuation: int, expected_degree: int) -> None:
 audit(5, expected_valuation=5, expected_degree=20)
 audit(6, expected_valuation=7, expected_degree=29)
 audit(7, expected_valuation=7, expected_degree=42)
+audit(8, expected_valuation=9, expected_degree=55)
 print("SCOPE: fixed-r limiting systems only; no uniform continuation in r")

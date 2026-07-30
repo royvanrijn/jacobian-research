@@ -23,6 +23,7 @@ import FiniteEtaleKeller.GeneralGaugeBaseChange
 import FiniteEtaleKeller.GeneralGaugeFiberRank
 import FiniteEtaleKeller.PageOneTheorem
 import FiniteEtaleKeller.AbstractFiniteEtale
+import FiniteEtaleKeller.CollisionFiber
 import FiniteEtaleKeller.PaperCertificate
 import FiniteEtaleKeller.LocalizedFiberPoints
 import FiniteEtaleKeller.LocalizedGaugeFiberPoints

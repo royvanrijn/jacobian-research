@@ -1,0 +1,1499 @@
+{
+  "basis_conventions": {
+    "collision_variables": [
+      "x",
+      "y",
+      "z"
+    ],
+    "external_collision_degree_shift": 3,
+    "gauge_matrix_unit_order": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    "singular_monomial_order": "dp",
+    "tensor_component_order": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        0,
+        2,
+        2
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        2
+      ],
+      [
+        1,
+        2,
+        2
+      ],
+      [
+        2,
+        2,
+        2
+      ]
+    ]
+  },
+  "exact_matrices": {
+    "compatibility_matrix": [
+      [
+        "z",
+        "-y",
+        "x",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "z",
+        "0",
+        "-y",
+        "x",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "z",
+        "0",
+        "-y",
+        "x",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "z",
+        "0",
+        "0",
+        "-y",
+        "x",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "z",
+        "0",
+        "0",
+        "-y",
+        "x",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "z",
+        "0",
+        "0",
+        "-y",
+        "x"
+      ]
+    ],
+    "gauge_matrices": {
+      "concurrent-lines": [
+        [
+          "0",
+          "0",
+          "0",
+          "x**3",
+          "0",
+          "0",
+          "x**2*y",
+          "0",
+          "0"
+        ],
+        [
+          "x**3/3",
+          "0",
+          "0",
+          "2*x**3/3",
+          "0",
+          "0",
+          "2*x**2*y/3 + x**2*z/3",
+          "-2*x**2*y/3",
+          "2*x**3/3"
+        ],
+        [
+          "x**2*y/3",
+          "0",
+          "0",
+          "2*x**2*y/3 - x**2*z",
+          "0",
+          "0",
+          "2*x*y**2/3 - 2*x*y*z/3",
+          "-2*x*y**2/3",
+          "2*x**2*y/3"
+        ],
+        [
+          "0",
+          "2*x**3/3",
+          "0",
+          "0",
+          "x**3/3",
+          "0",
+          "2*x**2*z/3",
+          "-x**2*y/3 - 2*x**2*z/3",
+          "2*x**3/3"
+        ],
+        [
+          "-x**2*z/3",
+          "2*x**2*y/3",
+          "0",
+          "-2*x**2*z/3",
+          "x**2*y/3",
+          "0",
+          "-x*z**2/3",
+          "-x*y**2/3",
+          "2*x**2*y/3 - 2*x**2*z/3"
+        ],
+        [
+          "-2*x*y*z/3",
+          "2*x*y**2/3",
+          "0",
+          "-4*x*y*z/3 + x*z**2",
+          "x*y**2/3",
+          "0",
+          "-2*y**2*z/3 + y*z**2/3",
+          "-y**3/3 + 2*y**2*z/3",
+          "2*x*y**2/3 - 4*x*y*z/3"
+        ],
+        [
+          "0",
+          "x**3",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-x**2*z",
+          "0"
+        ],
+        [
+          "0",
+          "x**2*y - 2*x**2*z/3",
+          "0",
+          "0",
+          "-x**2*z/3",
+          "0",
+          "-2*x*z**2/3",
+          "-2*x*y*z/3 + 2*x*z**2/3",
+          "-2*x**2*z/3"
+        ],
+        [
+          "x*z**2/3",
+          "x*y**2 - 4*x*y*z/3",
+          "0",
+          "2*x*z**2/3",
+          "-2*x*y*z/3",
+          "0",
+          "-2*y*z**2/3 + z**3/3",
+          "-y**2*z/3 + 2*y*z**2/3",
+          "-4*x*y*z/3 + 2*x*z**2/3"
+        ],
+        [
+          "y*z**2",
+          "y**3 - 2*y**2*z",
+          "0",
+          "2*y*z**2 - z**3",
+          "-y**2*z",
+          "0",
+          "0",
+          "0",
+          "-2*y**2*z + 2*y*z**2"
+        ]
+      ],
+      "cuspidal": [
+        [
+          "2*x**2*y",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-x**3",
+          "0",
+          "-2*x*y**2",
+          "x**2*y"
+        ],
+        [
+          "2*x**2*z/3",
+          "2*x**2*y/3",
+          "x**3/3",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-4*x*y*z/3",
+          "x**2*z/3"
+        ],
+        [
+          "-4*x*y*z/3",
+          "2*x*y**2/3",
+          "x**2*y/3",
+          "0",
+          "0",
+          "x**2*z",
+          "0",
+          "2*y**2*z/3",
+          "-2*x*y*z/3"
+        ],
+        [
+          "0",
+          "2*x**2*z/3",
+          "0",
+          "x**3",
+          "0",
+          "0",
+          "x**2*y",
+          "-2*x*z**2/3",
+          "0"
+        ],
+        [
+          "-2*x*z**2/3",
+          "0",
+          "-x**2*z/3",
+          "x**2*y",
+          "0",
+          "0",
+          "x*y**2",
+          "2*y*z**2/3",
+          "-x*z**2/3"
+        ],
+        [
+          "2*y*z**2/3",
+          "-2*y**2*z/3",
+          "-2*x*y*z/3",
+          "x*y**2",
+          "0",
+          "-x*z**2",
+          "y**3",
+          "0",
+          "y*z**2/3"
+        ],
+        [
+          "-x**3",
+          "0",
+          "0",
+          "0",
+          "2*x**3",
+          "0",
+          "3*x**2*z",
+          "0",
+          "2*x**3"
+        ],
+        [
+          "-x**2*y",
+          "-2*x*z**2/3",
+          "0",
+          "-x**2*z",
+          "2*x**2*y",
+          "0",
+          "2*x*y*z",
+          "2*z**3/3",
+          "2*x**2*y"
+        ],
+        [
+          "-x*y**2 + 2*z**3/3",
+          "-2*y*z**2/3",
+          "x*z**2/3",
+          "-2*x*y*z",
+          "2*x*y**2",
+          "0",
+          "y**2*z",
+          "0",
+          "2*x*y**2 + z**3/3"
+        ],
+        [
+          "-y**3",
+          "0",
+          "y*z**2",
+          "-3*y**2*z",
+          "2*y**3",
+          "z**3",
+          "0",
+          "0",
+          "2*y**3"
+        ]
+      ],
+      "double-line": [
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "2*x**3/3",
+          "0",
+          "0",
+          "2*x**2*y/3",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "2*x**2*y/3",
+          "0",
+          "0",
+          "2*x*y**2/3",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "x**3/3",
+          "0",
+          "2*x**2*z/3",
+          "-x**2*y/3",
+          "2*x**3/3"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "-2*x**2*z/3",
+          "x**2*y/3",
+          "0",
+          "0",
+          "-x*y**2/3",
+          "2*x**2*y/3"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "-4*x*y*z/3",
+          "x*y**2/3",
+          "0",
+          "-2*y**2*z/3",
+          "-y**3/3",
+          "2*x*y**2/3"
+        ],
+        [
+          "0",
+          "x**3",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-x**2*z",
+          "0"
+        ],
+        [
+          "0",
+          "x**2*y",
+          "0",
+          "0",
+          "-x**2*z/3",
+          "0",
+          "-2*x*z**2/3",
+          "-2*x*y*z/3",
+          "-2*x**2*z/3"
+        ],
+        [
+          "0",
+          "x*y**2",
+          "0",
+          "2*x*z**2/3",
+          "-2*x*y*z/3",
+          "0",
+          "-2*y*z**2/3",
+          "-y**2*z/3",
+          "-4*x*y*z/3"
+        ],
+        [
+          "0",
+          "y**3",
+          "0",
+          "2*y*z**2",
+          "-y**2*z",
+          "0",
+          "0",
+          "0",
+          "-2*y**2*z"
+        ]
+      ],
+      "line-tangent-conic": [
+        [
+          "2*x*y**2",
+          "0",
+          "0",
+          "0",
+          "x*y**2",
+          "-2*x**2*y",
+          "0",
+          "-y**3",
+          "0"
+        ],
+        [
+          "4*x*y*z/3",
+          "x*y**2/3",
+          "2*x**2*y/3",
+          "-2*x**2*y/3",
+          "2*x*y*z/3",
+          "-2*x**2*z/3",
+          "-2*x*y**2/3",
+          "-y**2*z",
+          "0"
+        ],
+        [
+          "-2*y**2*z/3",
+          "y**3/3",
+          "2*x*y**2/3",
+          "-2*x*y**2/3",
+          "-y**2*z/3",
+          "4*x*y*z/3",
+          "-2*y**3/3",
+          "0",
+          "0"
+        ],
+        [
+          "2*x*z**2/3",
+          "2*x*y*z/3",
+          "2*x**2*z/3",
+          "-2*x**2*z/3",
+          "-2*x**2*y/3 + x*z**2/3",
+          "x**3/3",
+          "-4*x*y*z/3",
+          "-y*z**2",
+          "-x**2*y/3"
+        ],
+        [
+          "-2*y*z**2/3",
+          "y**2*z/3",
+          "0",
+          "0",
+          "-2*x*y**2/3 - y*z**2/3",
+          "x**2*y/3 + 2*x*z**2/3",
+          "-2*y**2*z/3",
+          "0",
+          "-x*y**2/3"
+        ],
+        [
+          "0",
+          "0",
+          "-2*y**2*z/3",
+          "2*y**2*z/3",
+          "-2*y**3/3",
+          "x*y**2/3 - 2*y*z**2/3",
+          "0",
+          "0",
+          "-y**3/3"
+        ],
+        [
+          "0",
+          "x*z**2",
+          "-x**3",
+          "0",
+          "-2*x**2*z",
+          "0",
+          "-2*x*z**2",
+          "-z**3",
+          "-x**2*z"
+        ],
+        [
+          "-2*z**3/3",
+          "y*z**2/3",
+          "-x**2*y - 2*x*z**2/3",
+          "2*x*z**2/3",
+          "-4*x*y*z/3 - z**3/3",
+          "-x**2*z/3",
+          "-2*y*z**2/3",
+          "0",
+          "-2*x*y*z/3"
+        ],
+        [
+          "0",
+          "0",
+          "-x*y**2 - 2*y*z**2/3",
+          "2*y*z**2/3",
+          "-2*y**2*z/3",
+          "-2*x*y*z/3 - 2*z**3/3",
+          "0",
+          "0",
+          "-y**2*z/3"
+        ],
+        [
+          "0",
+          "0",
+          "-y**3",
+          "0",
+          "0",
+          "-y**2*z",
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      "line-transverse-conic": [
+        [
+          "-2*y**3",
+          "0",
+          "0",
+          "-x**2*y",
+          "-2*y**3",
+          "3*x*y**2",
+          "-x*y**2",
+          "0",
+          "y**3"
+        ],
+        [
+          "-x**2*y/3 - 2*y**2*z",
+          "0",
+          "-x*y**2",
+          "-x**2*z/3",
+          "-x**2*y/3 - 2*y**2*z",
+          "x**3/3 + 2*x*y*z",
+          "-2*x*y*z/3",
+          "x*y**2/3",
+          "-x**2*y/3 + y**2*z"
+        ],
+        [
+          "-x*y**2/3",
+          "0",
+          "-y**3",
+          "2*x*y*z/3",
+          "-x*y**2/3",
+          "x**2*y/3 - y**2*z",
+          "y**2*z/3",
+          "y**3/3",
+          "-x*y**2/3"
+        ],
+        [
+          "-x**2*z/3 - 2*y*z**2",
+          "-x**2*y/3",
+          "-x**3/3 - 2*x*y*z",
+          "0",
+          "-x**2*z/3 - 2*y*z**2",
+          "x*z**2",
+          "-x*z**2/3",
+          "2*x*y*z/3",
+          "-x**2*z/3 + y*z**2"
+        ],
+        [
+          "0",
+          "-x*y**2/3",
+          "-x**2*y/3 - y**2*z",
+          "x*z**2/3",
+          "0",
+          "-x**2*z/3 - y*z**2",
+          "y*z**2/3",
+          "y**2*z/3",
+          "0"
+        ],
+        [
+          "y**2*z/3",
+          "-y**3/3",
+          "-x*y**2/3",
+          "-y*z**2/3",
+          "y**2*z/3",
+          "-2*x*y*z/3",
+          "0",
+          "0",
+          "y**2*z/3"
+        ],
+        [
+          "-2*z**3",
+          "-x**2*z",
+          "-3*x*z**2",
+          "0",
+          "-2*z**3",
+          "0",
+          "0",
+          "x*z**2",
+          "z**3"
+        ],
+        [
+          "x*z**2/3",
+          "-2*x*y*z/3",
+          "x**2*z/3 - y*z**2",
+          "0",
+          "x*z**2/3",
+          "-z**3",
+          "z**3/3",
+          "y*z**2/3",
+          "x*z**2/3"
+        ],
+        [
+          "y*z**2/3",
+          "-y**2*z/3",
+          "2*x*y*z/3",
+          "-z**3/3",
+          "y*z**2/3",
+          "x*z**2/3",
+          "0",
+          "0",
+          "y*z**2/3"
+        ],
+        [
+          "0",
+          "0",
+          "y**2*z",
+          "0",
+          "0",
+          "y*z**2",
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      "nodal": [
+        [
+          "2*x**2*y",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-x**3",
+          "0",
+          "-2*x*y**2",
+          "x**2*y"
+        ],
+        [
+          "2*x**2*z/3",
+          "2*x**2*y/3",
+          "x**3/3",
+          "-2*x**2*y/3",
+          "0",
+          "0",
+          "-2*x*y**2/3",
+          "-4*x*y*z/3",
+          "x**2*z/3"
+        ],
+        [
+          "-4*x*y*z/3",
+          "2*x*y**2/3",
+          "x**2*y/3",
+          "-2*x*y**2/3",
+          "0",
+          "x**2*z",
+          "-2*y**3/3",
+          "2*y**2*z/3",
+          "-2*x*y*z/3"
+        ],
+        [
+          "0",
+          "2*x**2*z/3",
+          "0",
+          "x**3 - 2*x**2*z/3",
+          "-2*x**2*y/3",
+          "x**3/3",
+          "x**2*y - 4*x*y*z/3",
+          "-2*x*z**2/3",
+          "-x**2*y/3"
+        ],
+        [
+          "-2*x*z**2/3",
+          "0",
+          "-x**2*z/3",
+          "x**2*y",
+          "-2*x*y**2/3",
+          "x**2*y/3",
+          "x*y**2 - 2*y**2*z/3",
+          "2*y*z**2/3",
+          "-x*y**2/3 - x*z**2/3"
+        ],
+        [
+          "2*y*z**2/3",
+          "-2*y**2*z/3",
+          "-2*x*y*z/3",
+          "x*y**2 + 2*y**2*z/3",
+          "-2*y**3/3",
+          "x*y**2/3 - x*z**2",
+          "y**3",
+          "0",
+          "-y**3/3 + y*z**2/3"
+        ],
+        [
+          "-x**3",
+          "0",
+          "-x**3",
+          "0",
+          "2*x**3 - 2*x**2*z",
+          "0",
+          "3*x**2*z - 2*x*z**2",
+          "0",
+          "2*x**3 - x**2*z"
+        ],
+        [
+          "-x**2*y",
+          "-2*x*z**2/3",
+          "-x**2*y",
+          "-x**2*z + 2*x*z**2/3",
+          "2*x**2*y - 4*x*y*z/3",
+          "-x**2*z/3",
+          "2*x*y*z - 2*y*z**2/3",
+          "2*z**3/3",
+          "2*x**2*y - 2*x*y*z/3"
+        ],
+        [
+          "-x*y**2 + 2*z**3/3",
+          "-2*y*z**2/3",
+          "-x*y**2 + x*z**2/3",
+          "-2*x*y*z + 2*y*z**2/3",
+          "2*x*y**2 - 2*y**2*z/3",
+          "-2*x*y*z/3",
+          "y**2*z",
+          "0",
+          "2*x*y**2 - y**2*z/3 + z**3/3"
+        ],
+        [
+          "-y**3",
+          "0",
+          "-y**3 + y*z**2",
+          "-3*y**2*z",
+          "2*y**3",
+          "-y**2*z + z**3",
+          "0",
+          "0",
+          "2*y**3"
+        ]
+      ],
+      "smooth": [
+        [
+          "2*x**3 + 2*y**3",
+          "0",
+          "0",
+          "0",
+          "-x**3 + 2*y**3",
+          "-3*x*y**2",
+          "0",
+          "-3*x**2*y",
+          "2*x**3 - y**3"
+        ],
+        [
+          "2*y**2*z",
+          "x**3",
+          "x*y**2",
+          "0",
+          "2*y**2*z",
+          "-2*x*y*z",
+          "0",
+          "-x**2*z",
+          "-y**2*z"
+        ],
+        [
+          "-2*x**2*z",
+          "x**2*y",
+          "y**3",
+          "0",
+          "x**2*z",
+          "y**2*z",
+          "0",
+          "2*x*y*z",
+          "-2*x**2*z"
+        ],
+        [
+          "2*y*z**2",
+          "0",
+          "2*x*y*z",
+          "-x**3",
+          "2*y*z**2",
+          "-x*z**2",
+          "-x**2*y",
+          "0",
+          "-y*z**2"
+        ],
+        [
+          "0",
+          "-x**2*z",
+          "y**2*z",
+          "-x**2*y",
+          "0",
+          "y*z**2",
+          "-x*y**2",
+          "x*z**2",
+          "0"
+        ],
+        [
+          "2*x*z**2",
+          "-2*x*y*z",
+          "0",
+          "-x*y**2",
+          "-x*z**2",
+          "0",
+          "-y**3",
+          "-y*z**2",
+          "2*x*z**2"
+        ],
+        [
+          "x**3 + 2*z**3",
+          "0",
+          "3*x*z**2",
+          "0",
+          "-2*x**3 + 2*z**3",
+          "0",
+          "-3*x**2*z",
+          "0",
+          "-2*x**3 - z**3"
+        ],
+        [
+          "x**2*y",
+          "0",
+          "y*z**2",
+          "x**2*z",
+          "-2*x**2*y",
+          "z**3",
+          "-2*x*y*z",
+          "0",
+          "-2*x**2*y"
+        ],
+        [
+          "x*y**2",
+          "x*z**2",
+          "0",
+          "2*x*y*z",
+          "-2*x*y**2",
+          "0",
+          "-y**2*z",
+          "-z**3",
+          "-2*x*y**2"
+        ],
+        [
+          "y**3 - 2*z**3",
+          "3*y*z**2",
+          "0",
+          "3*y**2*z",
+          "-2*y**3 + z**3",
+          "0",
+          "0",
+          "0",
+          "-2*y**3 - 2*z**3"
+        ]
+      ],
+      "triangle": [
+        [
+          "0",
+          "0",
+          "0",
+          "-x**2*y",
+          "0",
+          "0",
+          "-x*y**2",
+          "0",
+          "0"
+        ],
+        [
+          "-x**2*y/3",
+          "0",
+          "0",
+          "-x**2*z/3",
+          "-x**2*y/3",
+          "x**3/3",
+          "-2*x*y*z/3",
+          "x*y**2/3",
+          "-x**2*y/3"
+        ],
+        [
+          "-x*y**2/3",
+          "0",
+          "0",
+          "2*x*y*z/3",
+          "-x*y**2/3",
+          "x**2*y/3",
+          "y**2*z/3",
+          "y**3/3",
+          "-x*y**2/3"
+        ],
+        [
+          "-x**2*z/3",
+          "-x**2*y/3",
+          "-x**3/3",
+          "0",
+          "-x**2*z/3",
+          "0",
+          "-x*z**2/3",
+          "2*x*y*z/3",
+          "-x**2*z/3"
+        ],
+        [
+          "0",
+          "-x*y**2/3",
+          "-x**2*y/3",
+          "x*z**2/3",
+          "0",
+          "-x**2*z/3",
+          "y*z**2/3",
+          "y**2*z/3",
+          "0"
+        ],
+        [
+          "y**2*z/3",
+          "-y**3/3",
+          "-x*y**2/3",
+          "-y*z**2/3",
+          "y**2*z/3",
+          "-2*x*y*z/3",
+          "0",
+          "0",
+          "y**2*z/3"
+        ],
+        [
+          "0",
+          "-x**2*z",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "x*z**2",
+          "0"
+        ],
+        [
+          "x*z**2/3",
+          "-2*x*y*z/3",
+          "x**2*z/3",
+          "0",
+          "x*z**2/3",
+          "0",
+          "z**3/3",
+          "y*z**2/3",
+          "x*z**2/3"
+        ],
+        [
+          "y*z**2/3",
+          "-y**2*z/3",
+          "2*x*y*z/3",
+          "-z**3/3",
+          "y*z**2/3",
+          "x*z**2/3",
+          "0",
+          "0",
+          "y*z**2/3"
+        ],
+        [
+          "0",
+          "0",
+          "y**2*z",
+          "0",
+          "0",
+          "y*z**2",
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      "triple-line": [
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "-x**3",
+          "0",
+          "0",
+          "-x**2*y",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "-x**2*y",
+          "0",
+          "0",
+          "-x*y**2",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "-x*y**2",
+          "0",
+          "0",
+          "-y**3",
+          "0",
+          "0"
+        ],
+        [
+          "x**3",
+          "0",
+          "0",
+          "0",
+          "-2*x**3",
+          "0",
+          "-3*x**2*z",
+          "0",
+          "-2*x**3"
+        ],
+        [
+          "x**2*y",
+          "0",
+          "0",
+          "x**2*z",
+          "-2*x**2*y",
+          "0",
+          "-2*x*y*z",
+          "0",
+          "-2*x**2*y"
+        ],
+        [
+          "x*y**2",
+          "0",
+          "0",
+          "2*x*y*z",
+          "-2*x*y**2",
+          "0",
+          "-y**2*z",
+          "0",
+          "-2*x*y**2"
+        ],
+        [
+          "y**3",
+          "0",
+          "0",
+          "3*y**2*z",
+          "-2*y**3",
+          "0",
+          "0",
+          "0",
+          "-2*y**3"
+        ]
+      ],
+      "zero": [
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      ]
+    }
+  },
+  "exact_matrix_sha256": "8c74782d4d25273f79fa941d57e808c855f7256ada8d1dbf0680ef9eb1af4152",
+  "mathematical_status": "exact graded gauge-cokernel theorem",
+  "not_proved": [
+    "a nongauge tensor direction does not imply failure of cotangent saturation",
+    "formal classification of the singular-symbol deformations",
+    "normality or Keller-open compatibility"
+  ],
+  "proved": [
+    "the smooth gauge cokernel is Q in collision degree three and vanishes in all higher degrees",
+    "every singular squarefree symbol has a dimension-two persistent gauge cokernel with the recorded principal annihilator and multiplicity",
+    "double-line, triple-line, and zero symbols have dimension-three faithful gauge cokernels of generic ranks one, two, and four",
+    "the universal 24 quartic directions span K_4, so the recorded quartic quotient dimensions are exact essential nongauge directions"
+  ],
+  "reproduce": ".venv/bin/python scripts/verify_cubic_formal_gauge_cokernel_atlas.py",
+  "rows": {
+    "concurrent-lines": {
+      "annihilator": "(x^3)",
+      "annihilator_singular_syntax": "x3",
+      "collision_degree_shift": 3,
+      "formal_rigidity_above_degree_three": false,
+      "generic_rank_over_Q[x,y,z]": 0,
+      "hilbert_numerator_over_one_minus_t_cubed": [
+        4,
+        -4
+      ],
+      "kernel_generator_count": 10,
+      "kernel_generator_max_degree": 3,
+      "kernel_generator_min_degree": 3,
+      "quartic_nongauge_dimension": 8,
+      "support_dimension": 2,
+      "support_multiplicity": 4,
+      "vector_space_dimension": -1
+    },
+    "cuspidal": {
+      "annihilator": "(x^2)",
+      "annihilator_singular_syntax": "x2",
+      "collision_degree_shift": 3,
+      "formal_rigidity_above_degree_three": false,
+      "generic_rank_over_Q[x,y,z]": 0,
+      "hilbert_numerator_over_one_minus_t_cubed": [
+        2,
+        -2
+      ],
+      "kernel_generator_count": 10,
+      "kernel_generator_max_degree": 3,
+      "kernel_generator_min_degree": 3,
+      "quartic_nongauge_dimension": 4,
+      "support_dimension": 2,
+      "support_multiplicity": 2,
+      "vector_space_dimension": -1
+    },
+    "double-line": {
+      "annihilator": "(0)",
+      "annihilator_singular_syntax": "0",
+      "collision_degree_shift": 3,
+      "formal_rigidity_above_degree_three": false,
+      "generic_rank_over_Q[x,y,z]": 1,
+      "hilbert_numerator_over_one_minus_t_cubed": [
+        5,
+        -4
+      ],
+      "kernel_generator_count": 10,
+      "kernel_generator_max_degree": 3,
+      "kernel_generator_min_degree": 3,
+      "quartic_nongauge_dimension": 11,
+      "support_dimension": 3,
+      "support_multiplicity": 1,
+      "vector_space_dimension": -1
+    },
+    "line-tangent-conic": {
+      "annihilator": "(y^3)",
+      "annihilator_singular_syntax": "y3",
+      "collision_degree_shift": 3,
+      "formal_rigidity_above_degree_three": false,
+      "generic_rank_over_Q[x,y,z]": 0,
+      "hilbert_numerator_over_one_minus_t_cubed": [
+        3,
+        -3
+      ],
+      "kernel_generator_count": 10,
+      "kernel_generator_max_degree": 3,
+      "kernel_generator_min_degree": 3,
+      "quartic_nongauge_dimension": 6,
+      "support_dimension": 2,
+      "support_multiplicity": 3,
+      "vector_space_dimension": -1
+    },
+    "line-transverse-conic": {
+      "annihilator": "(yz)",
+      "annihilator_singular_syntax": "yz",
+      "collision_degree_shift": 3,
+      "formal_rigidity_above_degree_three": false,
+      "generic_rank_over_Q[x,y,z]": 0,
+      "hilbert_numerator_over_one_minus_t_cubed": [
+        2,
+        -2
+      ],
+      "kernel_generator_count": 10,
+      "kernel_generator_max_degree": 3,
+      "kernel_generator_min_degree": 3,
+      "quartic_nongauge_dimension": 4,
+      "support_dimension": 2,
+      "support_multiplicity": 2,
+      "vector_space_dimension": -1
+    },
+    "nodal": {
+      "annihilator": "(x)",
+      "annihilator_singular_syntax": "x",
+      "collision_degree_shift": 3,
+      "formal_rigidity_above_degree_three": false,
+      "generic_rank_over_Q[x,y,z]": 0,
+      "hilbert_numerator_over_one_minus_t_cubed": [
+        1,
+        -1
+      ],
+      "kernel_generator_count": 10,
+      "kernel_generator_max_degree": 3,
+      "kernel_generator_min_degree": 3,
+      "quartic_nongauge_dimension": 2,
+      "support_dimension": 2,
+      "support_multiplicity": 1,
+      "vector_space_dimension": -1
+    },
+    "smooth": {
+      "annihilator": "(x,y,z)",
+      "annihilator_singular_syntax": "z,y,x",
+      "collision_degree_shift": 3,
+      "formal_rigidity_above_degree_three": true,
+      "generic_rank_over_Q[x,y,z]": 0,
+      "hilbert_numerator_over_one_minus_t_cubed": [
+        1,
+        -3,
+        3,
+        -1
+      ],
+      "kernel_generator_count": 10,
+      "kernel_generator_max_degree": 3,
+      "kernel_generator_min_degree": 3,
+      "quartic_nongauge_dimension": 0,
+      "support_dimension": 0,
+      "support_multiplicity": 1,
+      "vector_space_dimension": 1
+    },
+    "triangle": {
+      "annihilator": "(xyz)",
+      "annihilator_singular_syntax": "xyz",
+      "collision_degree_shift": 3,
+      "formal_rigidity_above_degree_three": false,
+      "generic_rank_over_Q[x,y,z]": 0,
+      "hilbert_numerator_over_one_minus_t_cubed": [
+        3,
+        -3
+      ],
+      "kernel_generator_count": 10,
+      "kernel_generator_max_degree": 3,
+      "kernel_generator_min_degree": 3,
+      "quartic_nongauge_dimension": 6,
+      "support_dimension": 2,
+      "support_multiplicity": 3,
+      "vector_space_dimension": -1
+    },
+    "triple-line": {
+      "annihilator": "(0)",
+      "annihilator_singular_syntax": "0",
+      "collision_degree_shift": 3,
+      "formal_rigidity_above_degree_three": false,
+      "generic_rank_over_Q[x,y,z]": 2,
+      "hilbert_numerator_over_one_minus_t_cubed": [
+        7,
+        -5
+      ],
+      "kernel_generator_count": 10,
+      "kernel_generator_max_degree": 3,
+      "kernel_generator_min_degree": 3,
+      "quartic_nongauge_dimension": 16,
+      "support_dimension": 3,
+      "support_multiplicity": 2,
+      "vector_space_dimension": -1
+    },
+    "zero": {
+      "annihilator": "(0)",
+      "annihilator_singular_syntax": "0",
+      "collision_degree_shift": 3,
+      "formal_rigidity_above_degree_three": false,
+      "generic_rank_over_Q[x,y,z]": 4,
+      "hilbert_numerator_over_one_minus_t_cubed": [
+        10,
+        -6
+      ],
+      "kernel_generator_count": 10,
+      "kernel_generator_max_degree": 3,
+      "kernel_generator_min_degree": 3,
+      "quartic_nongauge_dimension": 24,
+      "support_dimension": 3,
+      "support_multiplicity": 4,
+      "vector_space_dimension": -1
+    }
+  },
+  "schema": "cubic-formal-gauge-cokernel-atlas.v2",
+  "universal_compatible_quartic_space_dimension": 24
+}

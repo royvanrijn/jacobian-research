@@ -461,7 +461,8 @@ kernel excess zero.  The construction and characteristic-zero syzygy
 certificate are in
 [`HESSIAN_RANK_34_DOUBLE_IDENTITY_SLICE.md`](HESSIAN_RANK_34_DOUBLE_IDENTITY_SLICE.md).
 The polynomial again has degrees two through four, so this rank improvement
-does not lower the homogeneous quartic rank-37 or dimension-42 frontiers.
+does not lower the homogeneous quartic rank-37 or externally certified
+dimension-40 frontiers.
 
 ## 7. All-order recurrence for the actual homogeneous inverse
 

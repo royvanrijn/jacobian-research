@@ -187,6 +187,20 @@ horizontal classical-symbol directions which a fixed-symbol matrix omits.
 Candidate components may be discovered across several good primes, but they
 must be reconstructed and verified over \(\mathbb Q\).
 
+This replacement has now been carried out for the complete normalized
+degree-five two-parameter family.  The relative complex, coherent
+strong-cocycle module, Fitting and Kuranishi loci, and root-at-infinity
+valuation filtration are assembled in
+[`QUANTUM_RESIDUE_OBSTRUCTION.md`, Section 12](extended-geometry/QUANTUM_RESIDUE_OBSTRUCTION.md#12-relative-family-package).
+Four exact period sections give a parameter-uniform order-five obstruction
+off a zero-dimensional scheme.  Its only interior reduced support is a
+vertical rational point, already obstructed, and a cubic closed point with a
+genuine \(27\)-dimensional fifth-order lift scheme.  A constant six-column
+order-seven pivot now globalizes the \(X^{18}\) cocycle across that affine
+space; its value is a unit in the cubic residue field, so the complete
+component is obstructed.  The next relative run should therefore use a
+different classical-symbol family.
+
 The direct two-PBW-correction search remains a useful independent control.
 It should use cross-prime component reconstruction and exact Ore--Gröbner
 generation certificates, not a larger coefficient alphabet.  Its

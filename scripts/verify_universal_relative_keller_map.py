@@ -3,6 +3,9 @@
 
 from __future__ import annotations
 
+from itertools import permutations
+from math import factorial
+
 import sympy as sp
 
 
@@ -249,6 +252,146 @@ def promoted_inverse_from_target(
     return sp.Poly(sp.cancel(inverse), S)
 
 
+collision_root_1, collision_root_2 = sp.symbols(
+    "collision_root_1 collision_root_2"
+)
+
+
+def leading_exponents(basis: sp.GroebnerBasis) -> set[tuple[int, ...]]:
+    """Return the leading exponent vectors of an exact Groebner basis."""
+
+    return {
+        tuple(polynomial.LM(order=basis.order).exponents)
+        for polynomial in basis.polys
+    }
+
+
+def check_relative_collision_witness(
+    polynomial: sp.Expr,
+    degree: int,
+) -> None:
+    """Audit the diagonal/off-diagonal CRT for one separable root cover."""
+
+    polynomial_over_q = sp.Poly(polynomial, T, domain=sp.QQ)
+    assert polynomial_over_q.degree() == degree
+    polynomial_1 = sp.expand(polynomial.subs(T, collision_root_1))
+    polynomial_2 = sp.expand(polynomial.subs(T, collision_root_2))
+    divided_difference = sp.Poly(
+        sp.cancel(
+            (polynomial_2 - polynomial_1)
+            / (collision_root_2 - collision_root_1)
+        ),
+        collision_root_2,
+        collision_root_1,
+        domain=sp.QQ,
+    ).as_expr()
+    assert sp.expand(
+        polynomial_2
+        - polynomial_1
+        - (collision_root_2 - collision_root_1) * divided_difference
+    ) == 0
+
+    derivative_inverse = sp.invert(
+        sp.Poly(sp.diff(polynomial, T), T, domain=sp.QQ),
+        polynomial_over_q,
+    ).as_expr()
+    inverse_remainder = sp.rem(
+        sp.Poly(
+            sp.expand(
+                derivative_inverse * sp.diff(polynomial, T) - 1
+            ),
+            T,
+            domain=sp.QQ,
+        ),
+        polynomial_over_q,
+    )
+    assert inverse_remainder.is_zero
+
+    diagonal_idempotent = sp.expand(
+        derivative_inverse.subs(T, collision_root_1)
+        * divided_difference
+    )
+    collision_basis = sp.groebner(
+        [polynomial_1, polynomial_2],
+        collision_root_2,
+        collision_root_1,
+        order="lex",
+        domain=sp.QQ,
+    )
+    diagonal_basis = sp.groebner(
+        [polynomial_1, collision_root_2 - collision_root_1],
+        collision_root_2,
+        collision_root_1,
+        order="lex",
+        domain=sp.QQ,
+    )
+    off_diagonal_basis = sp.groebner(
+        [polynomial_1, divided_difference],
+        collision_root_2,
+        collision_root_1,
+        order="lex",
+        domain=sp.QQ,
+    )
+    comaximal_basis = sp.groebner(
+        [
+            polynomial_1,
+            collision_root_2 - collision_root_1,
+            divided_difference,
+        ],
+        collision_root_2,
+        collision_root_1,
+        order="lex",
+        domain=sp.QQ,
+    )
+
+    assert collision_basis.reduce(
+        diagonal_idempotent**2 - diagonal_idempotent
+    )[1] == 0
+    assert diagonal_basis.reduce(diagonal_idempotent - 1)[1] == 0
+    assert off_diagonal_basis.reduce(diagonal_idempotent)[1] == 0
+    assert off_diagonal_basis.reduce(polynomial_2)[1] == 0
+    assert len(comaximal_basis.polys) == 1
+    assert comaximal_basis.polys[0].as_expr() == 1
+
+    # With variable order root_2 > root_1, these rectangular standard
+    # monomial sets have the displayed ranks N^2, N, and N(N-1).
+    assert leading_exponents(collision_basis) == {
+        (degree, 0),
+        (0, degree),
+    }
+    assert leading_exponents(diagonal_basis) == {
+        (1, 0),
+        (0, degree),
+    }
+    assert leading_exponents(off_diagonal_basis) == {
+        (degree - 1, 0),
+        (0, degree),
+    }
+
+
+def check_ordered_configuration_action(degree: int) -> None:
+    """Audit every ordered-distinct-root orbit of S_degree."""
+
+    symmetric_group = tuple(permutations(range(degree)))
+    assert len(symmetric_group) == factorial(degree)
+    for tuple_length in range(1, degree + 1):
+        base_tuple = tuple(range(tuple_length))
+        orbit = {
+            tuple(permutation[index] for index in base_tuple)
+            for permutation in symmetric_group
+        }
+        stabilizer_size = sum(
+            tuple(permutation[index] for index in base_tuple) == base_tuple
+            for permutation in symmetric_group
+        )
+        expected_rank = factorial(degree) // factorial(
+            degree - tuple_length
+        )
+        assert len(orbit) == expected_rank
+        assert stabilizer_size == factorial(degree - tuple_length)
+        assert len(orbit) * stabilizer_size == factorial(degree)
+
+
 # Adversarial witness cards cover connected fields, the split algebra, and
 # disconnected products.  Each target is pinned independently of the general
 # coefficientwise identity above.
@@ -327,6 +470,12 @@ for witness_degree in range(3, 13):
     assert target == expected_target
     assert promoted_inverse_from_target(witness_degree, target) == normalized
     assert sp.discriminant(witness_polynomial, T) != 0
+    if witness_degree <= 8:
+        check_relative_collision_witness(
+            witness_polynomial,
+            witness_degree,
+        )
+        check_ordered_configuration_action(witness_degree)
 
 
 split_quartic = sp.prod(T - root for root in range(1, 5))
@@ -691,5 +840,6 @@ for computed_coordinate, displayed_coordinate in zip(
 
 print(
     "universal relative and absolute Keller-map algebraic checks passed "
+    "with exact ordered-collision regressions "
     "(S_N monodromy and atomicity are theorem-level imports)"
 )

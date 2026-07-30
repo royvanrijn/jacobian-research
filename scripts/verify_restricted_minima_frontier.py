@@ -96,6 +96,16 @@ def main() -> None:
     all_circuits_search = load(
         "restricted_bcw_circuit_search_all_w64.json"
     )
+    macfarlane = load("macfarlane_g20_dimension_reduction_audit.json")
+    backward_applications = load(
+        "backward_cubic_current_applications.json"
+    )
+    assert macfarlane["verified_external_structure"]["G20_dimension"] == 20
+    assert macfarlane["verified_external_structure"]["G20_collision"]
+    assert macfarlane["verified_external_structure"]["G20_cubic_homogeneous"]
+    assert backward_applications["format"] == (
+        "backward-cubic-current-applications-v1"
+    )
     assert cubic["dimension"] == source["dimension"] == 21
     statistics = cubic["statistics"]
     assert statistics["generic_rank_JH_over_QQ_x"] == 18
@@ -460,14 +470,15 @@ def main() -> None:
         "rigorous_frontiers": {
             "n_cub": interval(
                 5,
-                21,
+                20,
                 (
                     "cubic-homogeneous Keller maps are known invertible "
                     "through ambient dimension four"
                 ),
                 (
-                    "the certified essential cubic-homogeneous collision "
-                    "uses 21 variables"
+                    "the pinned external MacFarlane G20 determinant "
+                    "certificate and locally exact collision audit use "
+                    "20 variables"
                 ),
             ),
             "r_cub": interval(
@@ -533,12 +544,15 @@ def main() -> None:
             ),
             "n_HN4": interval(
                 6,
-                42,
+                40,
                 (
                     "the homogeneous symmetric nilpotent-Jacobian case is "
                     "known through dimension five"
                 ),
-                "the certified homogeneous HN quartic counterexample uses 42 variables",
+                (
+                    "the standard homogeneous cotangent lift of the pinned "
+                    "external MacFarlane G20 certificate uses 40 variables"
+                ),
             ),
         },
         "certified_rank_upper_witness": {
@@ -552,7 +566,16 @@ def main() -> None:
             "nilpotency_index_JH": 18,
             "specialized_JH_jordan_type": [18, 1, 1, 1, 1, 1, 1],
         },
-        "smallest_ambient_cubic_witness_and_HN_source": {
+        "smallest_external_ambient_cubic_witness_and_HN_source": {
+            "cubic_artifact": "macfarlane_g20_dimension_reduction_audit.json",
+            "dimension": 20,
+            "certificate_scope": (
+                "external determinant certificate with locally exact "
+                "collision and backward-construction audit"
+            ),
+            "quartic_dimension_by_homogeneous_cotangent_lift": 40,
+        },
+        "smallest_internal_independently_replayed_cubic_witness": {
             "cubic_artifact": "low_complexity_bcw_21_counterexample.json",
             "source_artifact": "essential_bcw_21_counterexample.json",
             "dimension": 21,
@@ -635,7 +658,7 @@ def main() -> None:
                 "counterexamples only"
             ),
             "homogeneous_frontier_warning": (
-                "does not change rho_HN4<=37 or n_HN4<=42"
+                "does not change rho_HN4<=37 or the external n_HN4<=40"
             ),
             "exact_hessian_certificate": (
                 "12 polynomial syzygy generators contain 6 generically "
@@ -722,8 +745,8 @@ def main() -> None:
                 ],
             },
             "cotangent_dimension": (
-                "beating quartic dimension 42 by a cotangent lift requires "
-                "a cubic source of dimension at most 20"
+                "beating quartic dimension 40 by a cotangent lift requires "
+                "a cubic source of dimension at most 19"
             ),
         },
         "primary_sources": {
@@ -880,16 +903,16 @@ def main() -> None:
     OUTPUT.write_text(json.dumps(frontier, indent=2) + "\n")
     print("PASS restricted minima: rank witness has exact generic rank 17")
     print("PASS restricted minima: circuit witness has exact nilpotency index 18")
-    print("PASS restricted minima: HN quartic upper bounds are dimension 42 and rank 37")
+    print("PASS restricted minima: HN quartic upper bounds are dimension 40 and rank 37")
     print("PASS restricted minima: nonhomogeneous degree-at-most-4 HN rank is 34")
     print("PASS restricted minima: full cubic and power-linear index-three scopes are separated")
     print("PASS restricted minima: van den Essen disproves the uniform degree-9 bound")
     print("OPEN primary target: full cubic index-three invertibility")
     print(
         "OPEN exact intervals: "
-        "5<=n_cub<=21, 3<=r_cub<=17, 3<=nu_cub<=18, "
+        "5<=n_cub<=20, 3<=r_cub<=17, 3<=nu_cub<=18, "
         "6<=rho_cot<=37; companion intervals "
-        "6<=n_Dru<=451, 3<=rho_HN4<=37, 6<=n_HN4<=42"
+        "6<=n_Dru<=451, 3<=rho_HN4<=37, 6<=n_HN4<=40"
     )
     print(f"PASS restricted minima: wrote {OUTPUT.relative_to(ROOT)}")
 

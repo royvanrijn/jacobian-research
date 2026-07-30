@@ -1,0 +1,245 @@
+{
+  "format": "degree-four-q2-cubic-decomposition-v1",
+  "scope": "exact finite-field decomposition of the cubic normal moment jet and quartic restrictions on its dominant x6=0 sheets at one deterministic synchronized point",
+  "prime": 32003,
+  "normalized_sym2_component": "highest-weight raising matrix E",
+  "allowed_point_coefficients": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "allowed_weight_coordinates": [
+    [
+      2,
+      0
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      3,
+      0
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      3,
+      2
+    ],
+    [
+      4,
+      0
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      4,
+      2
+    ],
+    [
+      4,
+      3
+    ]
+  ],
+  "forbidden_weight_coordinates": [
+    [
+      2,
+      2
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      3,
+      6
+    ],
+    [
+      4,
+      4
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      4,
+      6
+    ],
+    [
+      4,
+      7
+    ],
+    [
+      4,
+      8
+    ]
+  ],
+  "linear_pivot_indices": [
+    1,
+    2,
+    6,
+    11
+  ],
+  "free_normal_indices": [
+    0,
+    3,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10
+  ],
+  "cubic_decomposition": {
+    "cubic_ideal": {
+      "standard_basis_size": 85,
+      "dimension": 4,
+      "multiplicity": 9,
+      "x7_cubed_is_zero": true
+    },
+    "after_adjoining_x7": {
+      "standard_basis_size": 63,
+      "dimension": 4,
+      "multiplicity": 6
+    },
+    "factorizing_standard_basis_branches": [
+      {
+        "branch": 1,
+        "dimension": 3,
+        "multiplicity": 6,
+        "standard_basis_size": 7,
+        "support_ideal": [
+          "x7",
+          "x6",
+          "x5",
+          "x3",
+          "x2"
+        ],
+        "support_contained_in_dominant_component": true,
+        "x2_nilpotence_exponent_certified": 6,
+        "x3_nilpotence_exponent_certified": 3
+      },
+      {
+        "branch": 2,
+        "dimension": 4,
+        "multiplicity": 3,
+        "standard_basis_size": 4
+      },
+      {
+        "branch": 3,
+        "dimension": 3,
+        "multiplicity": 9,
+        "standard_basis_size": 38
+      }
+    ],
+    "x6_zero_radical": {
+      "ideal": [
+        "x7",
+        "x6",
+        "x3",
+        "x2^3+6306*x2^2*x5-11062*x2*x5^2+1735*x5^3"
+      ],
+      "containment_of_cubic_ideal": true,
+      "x3_nilpotence_exponent_certified": 3,
+      "binary_cubic_nilpotence_exponent_certified": 2,
+      "binary_cubic_factorization": [
+        "x2-7378*x5",
+        "x2^2+13684*x2*x5+12028*x5^2"
+      ],
+      "factor_count_over_finite_field": 2,
+      "dimension": 4,
+      "multiplicity": 3,
+      "standard_basis_size": 4
+    },
+    "off_x6_saturation": {
+      "dimension": 3,
+      "multiplicity": 9,
+      "standard_basis_size": 38,
+      "independent_variables": [
+        "x1",
+        "x4",
+        "x6"
+      ],
+      "generic_fiber": {
+        "coefficient_field": "F_32003(x1,x4,x6)",
+        "dependent_variables": [
+          "x0",
+          "x2",
+          "x3",
+          "x5"
+        ],
+        "degree": 9,
+        "degree_order_basis_size": 10,
+        "lex_basis_size": 4,
+        "primitive_polynomial_degree": 9,
+        "primitive_polynomial_factor_count": 1
+      }
+    }
+  },
+  "dominant_component_quartic_restrictions": {
+    "common_quartic_radical_in_full_coordinates": [
+      "x2",
+      "x3",
+      "x5",
+      "x6",
+      "x7"
+    ],
+    "free_coordinates": [
+      "x0",
+      "x1",
+      "x4"
+    ],
+    "linear_sheet": {
+      "relation": "x2-7378*x5",
+      "dimension": 3,
+      "multiplicity": 2,
+      "standard_basis_size": 4,
+      "ideal_contained_in_candidate_radical": true,
+      "x5_nilpotence_exponent_certified": 4
+    },
+    "quadratic_sheet": {
+      "relation": "x2^2+13684*x2*x5+12028*x5^2",
+      "relation_factor_count_over_finite_field": 1,
+      "dimension": 3,
+      "multiplicity": 4,
+      "standard_basis_size": 15,
+      "ideal_contained_in_candidate_radical": true,
+      "x5_nilpotence_exponent_certified": 5
+    }
+  },
+  "off_axis_quartic_status": {
+    "status": "timeout",
+    "timeout_seconds": 240,
+    "calculation": "standard basis of the quartic moment ideal plus the cubic x6-saturation over F_32003(x1,x4,x6)",
+    "inference": "none"
+  },
+  "scope_warning": "This is a finite-field normal-jet computation.  It does not prove that the full moment-zero germ is the synchronized branch, does not treat the F2=0 boundary, and does not establish global integrality."
+}

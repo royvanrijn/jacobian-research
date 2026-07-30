@@ -1,0 +1,54 @@
+{
+  "format": "macfarlane-g20-dimension-reduction-audit-v1",
+  "external_source": "https://github.com/Amacfa/keller-counterexamples-13-20/tree/dad6090bf4f01b3cdad04048fbe16f3be52b485c",
+  "status": "exact obstruction audit; no 19-variable counterexample is constructed",
+  "verified_external_structure": {
+    "F13_dimension": 13,
+    "G20_dimension": 20,
+    "cubic_output_rank_of_F13": 6,
+    "rank_compressed_count": "13+6+1=20",
+    "F13_collision": true,
+    "G20_collision": true,
+    "G20_cubic_homogeneous": true
+  },
+  "linear_audit": {
+    "G20_constant_JH_kernel_dimension": 0,
+    "G20_H_output_span_dimension": 19,
+    "G20_fixed_linear_covectors": [
+      [
+        [
+          20,
+          "1"
+        ]
+      ]
+    ],
+    "F13_constant_nonlinear_Jacobian_kernel_dimension": 0,
+    "F13_nonlinear_output_span_dimension": 13,
+    "quadratic_R_left_kernel": [
+      [
+        [
+          6,
+          "1"
+        ]
+      ],
+      [
+        [
+          5,
+          "-1/3"
+        ],
+        [
+          13,
+          "1"
+        ]
+      ]
+    ],
+    "ker_left_R_intersection_ker_left_B_dimension": 0,
+    "G20_Keller_linear_hyperplane_restrictions_through_collision": 0,
+    "F13_Keller_affine_hyperplane_restrictions_through_collision": 0
+  },
+  "dimension_19_success_gates": [
+    "a collision-preserving degree-three source in dimension 12 with cubic-output rank at most 6",
+    "a 13-variable stable-equivalent source with cubic-output rank at most 5",
+    "a genuinely nonlinear quotient or restriction outside the audited linear and degree-at-most-three invariant mechanisms"
+  ]
+}

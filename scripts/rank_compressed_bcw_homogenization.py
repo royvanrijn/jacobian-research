@@ -15,8 +15,19 @@ particular 16-variable shared-factor trace.
 from __future__ import annotations
 
 from dataclasses import dataclass
+import sys
+from pathlib import Path
 
 import sympy as sp
+
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT))
+
+from jcsearch.backward_cubic import (
+    companion_cancellation,
+    parametric_companion_cancellation,
+    profile_from_cubic_components,
+)
 
 
 @dataclass(frozen=True)
@@ -191,6 +202,47 @@ def verify_parametric_factorization(
     de = sp.Matrix(e_first).jacobian(variables)
     residual = de - (sp.eye(n) + t * jq + t**2 * B * jc)
     assert all(sp.expand(entry) == 0 for entry in residual)
+
+    # Reverse the construction at t=1.  This makes the forward checker also
+    # certify that every introduced companion variable has a valid terminal
+    # cancellation, rather than treating the rank-compressed parent as a
+    # one-way construction.
+    backward = companion_cancellation(
+        variables,
+        y,
+        [poly.as_expr() for poly in quadratic],
+        B,
+        [poly.as_expr() for poly in c],
+    )
+    expected_base = tuple(
+        sp.expand(
+            variables[index]
+            + quadratic[index].as_expr()
+            + cubic[index].as_expr()
+        )
+        for index in range(n)
+    )
+    assert backward.base_map == expected_base
+    relative_backward = parametric_companion_cancellation(
+        variables,
+        y,
+        t,
+        [poly.as_expr() for poly in quadratic],
+        B,
+        [poly.as_expr() for poly in c],
+    )
+    assert relative_backward.base_map == expected_base
+    assert tuple(
+        sp.expand(value.subs(t, 1))
+        for value in relative_backward.parent_map[:-1]
+    ) == backward.specialized_map
+    profile = profile_from_cubic_components(
+        n,
+        [poly.as_expr() for poly in cubic],
+        variables,
+    )
+    assert profile.cubic_output_rank == k
+    assert profile.homogeneous_dimension == n + k + 1
 
 
 def rank_compressed_homogeneous_map(

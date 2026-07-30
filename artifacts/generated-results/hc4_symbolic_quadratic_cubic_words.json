@@ -5,6 +5,7 @@
       "H2_source": 0,
       "certificate_kind": "singular_unit_ideal",
       "common_dual": 0,
+      "composition_order": "quadratic-cubic",
       "degree_pair": [
         2,
         3
@@ -75,14 +76,18 @@
           "total_degree": 10
         }
       ],
+      "sampled_parent_elimination_basis": [
+        "1"
+      ],
       "singular_basis_size": 1,
-      "singular_input_sha256": "61ae9b1fe36bb229da5322739a30f9bcce925e373acccbef2bcbec42f1811626"
+      "singular_input_sha256": "5eeeb79e430ada2d66b7f8efe410050aff5776fac4dbf65eb8aa26ccd7ca6850"
     },
     {
       "H1_source": 0,
       "H2_source": 0,
       "certificate_kind": "singular_unit_ideal",
       "common_dual": 0,
+      "composition_order": "quadratic-cubic",
       "degree_pair": [
         2,
         3
@@ -153,14 +158,18 @@
           "total_degree": 10
         }
       ],
+      "sampled_parent_elimination_basis": [
+        "1"
+      ],
       "singular_basis_size": 1,
-      "singular_input_sha256": "ff8fcb9155efa5fb99ee89bc482d8556817eccd1d7c6c744c59aa04ce68756b8"
+      "singular_input_sha256": "c6f8c05cdecec79ac7070bd1fc417e42ec1d562bcec71ae2819e6ca59cf5da19"
     },
     {
       "H1_source": 0,
       "H2_source": 1,
       "certificate_kind": "singular_unit_ideal",
       "common_dual": 0,
+      "composition_order": "quadratic-cubic",
       "degree_pair": [
         2,
         3
@@ -203,14 +212,18 @@
           "total_degree": 14
         }
       ],
+      "sampled_parent_elimination_basis": [
+        "1"
+      ],
       "singular_basis_size": 1,
-      "singular_input_sha256": "b58fe6b4c59124158f7b33a1b6e285ebf3fc88942be0b03e8dfc0ad10589c2ec"
+      "singular_input_sha256": "b6fe550deac2d428f184f01e5e37a38e0b3be2227a2277eb41d55a461cd0f17e"
     },
     {
       "H1_source": 0,
       "H2_source": 1,
       "certificate_kind": "singular_unit_ideal",
       "common_dual": 0,
+      "composition_order": "quadratic-cubic",
       "degree_pair": [
         2,
         3
@@ -253,14 +266,18 @@
           "total_degree": 14
         }
       ],
+      "sampled_parent_elimination_basis": [
+        "1"
+      ],
       "singular_basis_size": 1,
-      "singular_input_sha256": "5b4b055d064bd5e2805c4765a6d8dd8e6656a28ca9503e811f5b90cfc11d5047"
+      "singular_input_sha256": "94984e358638f11d8d3b432e4a0b5975a101f9a604b6831109358f0f42a5a8e7"
     },
     {
       "H1_source": 0,
       "H2_source": 1,
       "certificate_kind": "singular_unit_ideal",
       "common_dual": 0,
+      "composition_order": "quadratic-cubic",
       "degree_pair": [
         2,
         3
@@ -303,14 +320,18 @@
           "total_degree": 14
         }
       ],
+      "sampled_parent_elimination_basis": [
+        "1"
+      ],
       "singular_basis_size": 1,
-      "singular_input_sha256": "b58fe6b4c59124158f7b33a1b6e285ebf3fc88942be0b03e8dfc0ad10589c2ec"
+      "singular_input_sha256": "b6fe550deac2d428f184f01e5e37a38e0b3be2227a2277eb41d55a461cd0f17e"
     },
     {
       "H1_source": 0,
       "H2_source": 1,
       "certificate_kind": "singular_unit_ideal",
       "common_dual": 0,
+      "composition_order": "quadratic-cubic",
       "degree_pair": [
         2,
         3
@@ -353,14 +374,18 @@
           "total_degree": 14
         }
       ],
+      "sampled_parent_elimination_basis": [
+        "1"
+      ],
       "singular_basis_size": 1,
-      "singular_input_sha256": "5b4b055d064bd5e2805c4765a6d8dd8e6656a28ca9503e811f5b90cfc11d5047"
+      "singular_input_sha256": "94984e358638f11d8d3b432e4a0b5975a101f9a604b6831109358f0f42a5a8e7"
     },
     {
       "H1_source": 0,
       "H2_source": 2,
       "certificate_kind": "localized_monomial",
       "common_dual": 0,
+      "composition_order": "quadratic-cubic",
       "degree_pair": [
         2,
         3
@@ -395,6 +420,7 @@
       "H2_source": 2,
       "certificate_kind": "localized_monomial",
       "common_dual": 0,
+      "composition_order": "quadratic-cubic",
       "degree_pair": [
         2,
         3
@@ -429,6 +455,7 @@
       "H2_source": 2,
       "certificate_kind": "localized_monomial",
       "common_dual": 0,
+      "composition_order": "quadratic-cubic",
       "degree_pair": [
         2,
         3
@@ -463,6 +490,7 @@
       "H2_source": 2,
       "certificate_kind": "localized_monomial",
       "common_dual": 0,
+      "composition_order": "quadratic-cubic",
       "degree_pair": [
         2,
         3
@@ -497,6 +525,7 @@
       "H2_source": 0,
       "certificate_kind": "singular_unit_ideal",
       "common_dual": 0,
+      "composition_order": "quadratic-cubic",
       "degree_pair": [
         2,
         3
@@ -595,14 +624,18 @@
           "total_degree": 11
         }
       ],
+      "sampled_parent_elimination_basis": [
+        "1"
+      ],
       "singular_basis_size": 1,
-      "singular_input_sha256": "854ba1b5ea701c1fcb1b95da57af51f0617501b4bc75e342aadbb77c4cf92e4f"
+      "singular_input_sha256": "00c77c2cb71e2d5fcd2429c2e38d59a2413e5bdcbd18884f74b79b1a668c93bb"
     },
     {
       "H1_source": 1,
       "H2_source": 0,
       "certificate_kind": "singular_unit_ideal",
       "common_dual": 0,
+      "composition_order": "quadratic-cubic",
       "degree_pair": [
         2,
         3
@@ -701,14 +734,18 @@
           "total_degree": 11
         }
       ],
+      "sampled_parent_elimination_basis": [
+        "1"
+      ],
       "singular_basis_size": 1,
-      "singular_input_sha256": "f6d47223d348dfbeee041a6dfbad613e4c2f1f71315eadca350e5e21d7d93053"
+      "singular_input_sha256": "52ff0639e8008d659ad99d903d0a5b9cb4c68e2369879599e6fe7e4dfee34183"
     },
     {
       "H1_source": 1,
       "H2_source": 0,
       "certificate_kind": "singular_unit_ideal",
       "common_dual": 0,
+      "composition_order": "quadratic-cubic",
       "degree_pair": [
         2,
         3
@@ -807,14 +844,18 @@
           "total_degree": 11
         }
       ],
+      "sampled_parent_elimination_basis": [
+        "1"
+      ],
       "singular_basis_size": 1,
-      "singular_input_sha256": "e7c5d8f68d26eed13b373ad8c36e4ae58eb6f689216c0189d4a09b3ee0a0a279"
+      "singular_input_sha256": "373d0fa314569007e99344e4d9a01eec74db504af604757010d7a90c0ad45208"
     },
     {
       "H1_source": 1,
       "H2_source": 0,
       "certificate_kind": "singular_unit_ideal",
       "common_dual": 0,
+      "composition_order": "quadratic-cubic",
       "degree_pair": [
         2,
         3
@@ -913,14 +954,18 @@
           "total_degree": 11
         }
       ],
+      "sampled_parent_elimination_basis": [
+        "1"
+      ],
       "singular_basis_size": 1,
-      "singular_input_sha256": "223f00231c1e0e59312f5dcb054bcca84a1669a8bdb2d82684b30d9fc34b7892"
+      "singular_input_sha256": "dc503ed44eccc41db0202c7c00d9f5bca16d86529fee5c13fa09458631a3656e"
     },
     {
       "H1_source": 2,
       "H2_source": 0,
       "certificate_kind": "singular_unit_ideal",
       "common_dual": 0,
+      "composition_order": "quadratic-cubic",
       "degree_pair": [
         2,
         3
@@ -1019,14 +1064,18 @@
           "total_degree": 18
         }
       ],
+      "sampled_parent_elimination_basis": [
+        "1"
+      ],
       "singular_basis_size": 1,
-      "singular_input_sha256": "f2b90415d2b80f67f98063074b1f81bd9b74d20fbde5c8e63b427697135f4708"
+      "singular_input_sha256": "fa23ecc0a56e62805abe291578f7fdaa5a767f8ed773df59d38c86af1a55e017"
     },
     {
       "H1_source": 2,
       "H2_source": 0,
       "certificate_kind": "singular_unit_ideal",
       "common_dual": 0,
+      "composition_order": "quadratic-cubic",
       "degree_pair": [
         2,
         3
@@ -1125,14 +1174,18 @@
           "total_degree": 18
         }
       ],
+      "sampled_parent_elimination_basis": [
+        "1"
+      ],
       "singular_basis_size": 1,
-      "singular_input_sha256": "cec5a7145e02961b9964c783d5346fc432844e7c7b24432b069c808e59f98784"
+      "singular_input_sha256": "8d274740cf22cbbcdbae68686a7752b51f23d760f651891b2bbb95ae4d0d14c5"
     },
     {
       "H1_source": 2,
       "H2_source": 0,
       "certificate_kind": "singular_unit_ideal",
       "common_dual": 0,
+      "composition_order": "quadratic-cubic",
       "degree_pair": [
         2,
         3
@@ -1231,14 +1284,18 @@
           "total_degree": 18
         }
       ],
+      "sampled_parent_elimination_basis": [
+        "1"
+      ],
       "singular_basis_size": 1,
-      "singular_input_sha256": "ee9d776d5719aa1b5f86a37be4ff3d15fd1ff68d72e46f5caf00c2d0d8cc8648"
+      "singular_input_sha256": "c38839132ed52e49d60fd5ed21f2f69000bbe82578a55bbd4c9e10bfc9196c5f"
     },
     {
       "H1_source": 2,
       "H2_source": 0,
       "certificate_kind": "singular_unit_ideal",
       "common_dual": 0,
+      "composition_order": "quadratic-cubic",
       "degree_pair": [
         2,
         3
@@ -1337,14 +1394,18 @@
           "total_degree": 18
         }
       ],
+      "sampled_parent_elimination_basis": [
+        "1"
+      ],
       "singular_basis_size": 1,
-      "singular_input_sha256": "46db27050d19b84da6f654a751a1bba8894ee77dd2531fce938c479e640945ce"
+      "singular_input_sha256": "f13194aa8892928d22da95f452b6ef42b98b6389a730c840d49a5b84c326d4cd"
     },
     {
       "H1_source": 0,
       "H2_source": 1,
       "certificate_kind": "singular_unit_ideal",
       "common_dual": 1,
+      "composition_order": "quadratic-cubic",
       "degree_pair": [
         2,
         3
@@ -1443,14 +1504,18 @@
           "total_degree": 6
         }
       ],
+      "sampled_parent_elimination_basis": [
+        "1"
+      ],
       "singular_basis_size": 1,
-      "singular_input_sha256": "8b3c5b4aafe891b0aedb350081c28aa731ca07ded9e43c702898d0f943105d72"
+      "singular_input_sha256": "9d23ab4c2a65b7d09388455b5b8cf414cf47a0f9b51580e893fc111d8ed1540b"
     },
     {
       "H1_source": 0,
       "H2_source": 1,
       "certificate_kind": "singular_unit_ideal",
       "common_dual": 1,
+      "composition_order": "quadratic-cubic",
       "degree_pair": [
         2,
         3
@@ -1549,14 +1614,18 @@
           "total_degree": 6
         }
       ],
+      "sampled_parent_elimination_basis": [
+        "1"
+      ],
       "singular_basis_size": 1,
-      "singular_input_sha256": "1355fdc4f14e060a5a0f01fa68e7211e28b26619dc59a4c5c699005cc7a81c01"
+      "singular_input_sha256": "5b355f736890b77554746e086dd6e01dd48b50713028a28c29bb202388d2230a"
     },
     {
       "H1_source": 0,
       "H2_source": 1,
       "certificate_kind": "singular_unit_ideal",
       "common_dual": 1,
+      "composition_order": "quadratic-cubic",
       "degree_pair": [
         2,
         3
@@ -1655,14 +1724,18 @@
           "total_degree": 6
         }
       ],
+      "sampled_parent_elimination_basis": [
+        "1"
+      ],
       "singular_basis_size": 1,
-      "singular_input_sha256": "1dfd26c84d9866ff383296ed50359e478637568904a342c1d3767620bb4da1f1"
+      "singular_input_sha256": "42eca9eaa46d275f5fe62a5c8e4dd52340b8d6ba3cbb4db71ac914b046cacd60"
     },
     {
       "H1_source": 0,
       "H2_source": 1,
       "certificate_kind": "singular_unit_ideal",
       "common_dual": 1,
+      "composition_order": "quadratic-cubic",
       "degree_pair": [
         2,
         3
@@ -1761,14 +1834,18 @@
           "total_degree": 6
         }
       ],
+      "sampled_parent_elimination_basis": [
+        "1"
+      ],
       "singular_basis_size": 1,
-      "singular_input_sha256": "6e0855c5c37830f327a2d9ed07641a8218a32d21884e0552888298ed54da56c4"
+      "singular_input_sha256": "c213f34a330fc221cf89e0321004681da94627990526958ec8e1bd4c906bb8ba"
     },
     {
       "H1_source": 1,
       "H2_source": 0,
       "certificate_kind": "localized_monomial",
       "common_dual": 1,
+      "composition_order": "quadratic-cubic",
       "degree_pair": [
         2,
         3
@@ -1803,6 +1880,7 @@
       "H2_source": 0,
       "certificate_kind": "localized_monomial",
       "common_dual": 1,
+      "composition_order": "quadratic-cubic",
       "degree_pair": [
         2,
         3
@@ -1837,6 +1915,7 @@
       "H2_source": 0,
       "certificate_kind": "localized_monomial",
       "common_dual": 1,
+      "composition_order": "quadratic-cubic",
       "degree_pair": [
         2,
         3
@@ -1871,6 +1950,7 @@
       "H2_source": 0,
       "certificate_kind": "localized_monomial",
       "common_dual": 1,
+      "composition_order": "quadratic-cubic",
       "degree_pair": [
         2,
         3
@@ -1905,6 +1985,7 @@
       "H2_source": 1,
       "certificate_kind": "singular_unit_ideal",
       "common_dual": 1,
+      "composition_order": "quadratic-cubic",
       "degree_pair": [
         2,
         3
@@ -1975,14 +2056,18 @@
           "total_degree": 4
         }
       ],
+      "sampled_parent_elimination_basis": [
+        "1"
+      ],
       "singular_basis_size": 1,
-      "singular_input_sha256": "4e6a7009d64194aa20e3642dc547abeccdb9261f5d542757f30ec4d0e289ff07"
+      "singular_input_sha256": "807d653c5fd3703d99c11a1a6862ea45a1ac16c64773d8cd13e03e88d6fac16a"
     },
     {
       "H1_source": 1,
       "H2_source": 1,
       "certificate_kind": "singular_unit_ideal",
       "common_dual": 1,
+      "composition_order": "quadratic-cubic",
       "degree_pair": [
         2,
         3
@@ -2053,14 +2138,18 @@
           "total_degree": 4
         }
       ],
+      "sampled_parent_elimination_basis": [
+        "1"
+      ],
       "singular_basis_size": 1,
-      "singular_input_sha256": "5f5d88c2e61b96c51309388f2fc06233e5ff8a0b970e609bc8cb99725cacac07"
+      "singular_input_sha256": "cb231566de901d5f5d7f74e3d3b8d4ff332993c8078ec5b1165966940f7552f0"
     },
     {
       "H1_source": 1,
       "H2_source": 2,
       "certificate_kind": "singular_unit_ideal",
       "common_dual": 1,
+      "composition_order": "quadratic-cubic",
       "degree_pair": [
         2,
         3
@@ -2131,14 +2220,18 @@
           "total_degree": 5
         }
       ],
+      "sampled_parent_elimination_basis": [
+        "1"
+      ],
       "singular_basis_size": 1,
-      "singular_input_sha256": "902eb8937ddb27ada4e186878220313d511b84074873f1c877538fb096a01712"
+      "singular_input_sha256": "bd3c8a82b656c9d44a491c857c9eca2296463c444facc0a4e986a431a61516b5"
     },
     {
       "H1_source": 1,
       "H2_source": 2,
       "certificate_kind": "singular_unit_ideal",
       "common_dual": 1,
+      "composition_order": "quadratic-cubic",
       "degree_pair": [
         2,
         3
@@ -2209,14 +2302,18 @@
           "total_degree": 5
         }
       ],
+      "sampled_parent_elimination_basis": [
+        "1"
+      ],
       "singular_basis_size": 1,
-      "singular_input_sha256": "e8d9a5e56d60db9c111211e9d29459270ecfb2193087a1b08fabaee9599dd5cf"
+      "singular_input_sha256": "38141fde580d4c7d00670d2c29a63317b369b90bd226a2edba89761c43821ff2"
     },
     {
       "H1_source": 1,
       "H2_source": 2,
       "certificate_kind": "singular_unit_ideal",
       "common_dual": 1,
+      "composition_order": "quadratic-cubic",
       "degree_pair": [
         2,
         3
@@ -2287,14 +2384,18 @@
           "total_degree": 5
         }
       ],
+      "sampled_parent_elimination_basis": [
+        "1"
+      ],
       "singular_basis_size": 1,
-      "singular_input_sha256": "475e467f3c30c6e9ce3d06f6761b467ec34d96ee8858f4871b5591856e8f6012"
+      "singular_input_sha256": "48de873eb80e27c011671b91404e2d48af176eabbd1edbc626298b6f5abc7963"
     },
     {
       "H1_source": 1,
       "H2_source": 2,
       "certificate_kind": "singular_unit_ideal",
       "common_dual": 1,
+      "composition_order": "quadratic-cubic",
       "degree_pair": [
         2,
         3
@@ -2365,14 +2466,18 @@
           "total_degree": 5
         }
       ],
+      "sampled_parent_elimination_basis": [
+        "1"
+      ],
       "singular_basis_size": 1,
-      "singular_input_sha256": "c958131e10a8e78637aff35b0aef9b15b80b1b4fded5f036d17e8e2da66fa893"
+      "singular_input_sha256": "44553b90f53a4803400217a3d9ed587f0e015a4f484258fbc469847b560f5281"
     },
     {
       "H1_source": 2,
       "H2_source": 1,
       "certificate_kind": "singular_unit_ideal",
       "common_dual": 1,
+      "composition_order": "quadratic-cubic",
       "degree_pair": [
         2,
         3
@@ -2471,14 +2576,18 @@
           "total_degree": 4
         }
       ],
+      "sampled_parent_elimination_basis": [
+        "1"
+      ],
       "singular_basis_size": 1,
-      "singular_input_sha256": "d7df32aa3de15452ff3f96c256eb006b11f8ff57afabd2abcddbf2e850dfc6d0"
+      "singular_input_sha256": "e3092b40e9083520c066c3545cf53a9b055836aa353f3a605440f8ddb44c8150"
     },
     {
       "H1_source": 2,
       "H2_source": 1,
       "certificate_kind": "singular_unit_ideal",
       "common_dual": 1,
+      "composition_order": "quadratic-cubic",
       "degree_pair": [
         2,
         3
@@ -2577,14 +2686,18 @@
           "total_degree": 4
         }
       ],
+      "sampled_parent_elimination_basis": [
+        "1"
+      ],
       "singular_basis_size": 1,
-      "singular_input_sha256": "7ad69fbcb3f42487b6b5eb7f081b15acf4d972610ee95e438ea0d4f1e8331ea2"
+      "singular_input_sha256": "f5864feafa038188dd8723d91fdbad20fae797ddf6b773c48c2d0e6515c889f4"
     },
     {
       "H1_source": 2,
       "H2_source": 1,
       "certificate_kind": "singular_unit_ideal",
       "common_dual": 1,
+      "composition_order": "quadratic-cubic",
       "degree_pair": [
         2,
         3
@@ -2683,14 +2796,18 @@
           "total_degree": 4
         }
       ],
+      "sampled_parent_elimination_basis": [
+        "1"
+      ],
       "singular_basis_size": 1,
-      "singular_input_sha256": "4aca6357bf562acd994ec5236479c3500cc5f2421ebb0eb9fc468de97566e4f8"
+      "singular_input_sha256": "2058f99d91eaa95f5e93aa7772d340310f1fab70da3c719e5fe355ad73c289bd"
     },
     {
       "H1_source": 2,
       "H2_source": 1,
       "certificate_kind": "singular_unit_ideal",
       "common_dual": 1,
+      "composition_order": "quadratic-cubic",
       "degree_pair": [
         2,
         3
@@ -2789,14 +2906,18 @@
           "total_degree": 4
         }
       ],
+      "sampled_parent_elimination_basis": [
+        "1"
+      ],
       "singular_basis_size": 1,
-      "singular_input_sha256": "85d24d3221d68c5ed2936da01ea1e17fa99186be8e0be9fb6c491b993021fd26"
+      "singular_input_sha256": "0272820820bcd9914a19a32b21be11673169568b7189c5866e5a195e610daddc"
     },
     {
       "H1_source": 0,
       "H2_source": 2,
       "certificate_kind": "singular_unit_ideal",
       "common_dual": 2,
+      "composition_order": "quadratic-cubic",
       "degree_pair": [
         2,
         3
@@ -2867,14 +2988,18 @@
           "total_degree": 9
         }
       ],
+      "sampled_parent_elimination_basis": [
+        "1"
+      ],
       "singular_basis_size": 1,
-      "singular_input_sha256": "3953922b7c0722ed5bb5468c674837bb70dcd645513786ea06c71fc3e4f8a3db"
+      "singular_input_sha256": "4801bc246f42cabdfeef38347cf0c314de6fd561ec6a29ed3962211aac9834f1"
     },
     {
       "H1_source": 0,
       "H2_source": 2,
       "certificate_kind": "singular_unit_ideal",
       "common_dual": 2,
+      "composition_order": "quadratic-cubic",
       "degree_pair": [
         2,
         3
@@ -2945,14 +3070,18 @@
           "total_degree": 9
         }
       ],
+      "sampled_parent_elimination_basis": [
+        "1"
+      ],
       "singular_basis_size": 1,
-      "singular_input_sha256": "d44f74f79c08577323e78d41d9e462409914a90d0ba46bf56254ba1ed4c5562f"
+      "singular_input_sha256": "32e70bdc28a1d003aa7cafd91fd3ed6fc5200fbf0bfd040e3961cb478307a876"
     },
     {
       "H1_source": 0,
       "H2_source": 2,
       "certificate_kind": "singular_unit_ideal",
       "common_dual": 2,
+      "composition_order": "quadratic-cubic",
       "degree_pair": [
         2,
         3
@@ -3023,14 +3152,18 @@
           "total_degree": 9
         }
       ],
+      "sampled_parent_elimination_basis": [
+        "1"
+      ],
       "singular_basis_size": 1,
-      "singular_input_sha256": "d1df3fd5abc15934e79dd0bd0995b7a52675fab20d906070f8297fd55d7c11a7"
+      "singular_input_sha256": "78e28f56861f7b4a5cb5ddbe2a47a480792d007a03d98d8bcfea9389c80529d3"
     },
     {
       "H1_source": 0,
       "H2_source": 2,
       "certificate_kind": "singular_unit_ideal",
       "common_dual": 2,
+      "composition_order": "quadratic-cubic",
       "degree_pair": [
         2,
         3
@@ -3101,14 +3234,18 @@
           "total_degree": 9
         }
       ],
+      "sampled_parent_elimination_basis": [
+        "1"
+      ],
       "singular_basis_size": 1,
-      "singular_input_sha256": "4aa11679073abb9959f4a785c3119c923cb74811571be8d03fc1d591fce07459"
+      "singular_input_sha256": "8e9b564e52a7cd85a42afb00b9536c9f2197f0e6f4a6675585f35a9dc559f60a"
     },
     {
       "H1_source": 1,
       "H2_source": 2,
       "certificate_kind": "singular_unit_ideal",
       "common_dual": 2,
+      "composition_order": "quadratic-cubic",
       "degree_pair": [
         2,
         3
@@ -3207,14 +3344,18 @@
           "total_degree": 7
         }
       ],
+      "sampled_parent_elimination_basis": [
+        "1"
+      ],
       "singular_basis_size": 1,
-      "singular_input_sha256": "b050c31b023e609235eabd4c1ece5463f7e7b9f67c80dab42493f2d7a716950d"
+      "singular_input_sha256": "8f9a0c4ac794656ad066ef7eca9cf858b11c56d45c8b978edb99248ef00c510e"
     },
     {
       "H1_source": 1,
       "H2_source": 2,
       "certificate_kind": "singular_unit_ideal",
       "common_dual": 2,
+      "composition_order": "quadratic-cubic",
       "degree_pair": [
         2,
         3
@@ -3313,14 +3454,18 @@
           "total_degree": 7
         }
       ],
+      "sampled_parent_elimination_basis": [
+        "1"
+      ],
       "singular_basis_size": 1,
-      "singular_input_sha256": "50d648b8ef7d250c9b0df64c3cee032114cbff1a7546df21f294f996e8ad8f5b"
+      "singular_input_sha256": "89e80a5bf8612dd9e1ef008493bb29ae17848134c13819e9f554c6915e96e7cc"
     },
     {
       "H1_source": 1,
       "H2_source": 2,
       "certificate_kind": "singular_unit_ideal",
       "common_dual": 2,
+      "composition_order": "quadratic-cubic",
       "degree_pair": [
         2,
         3
@@ -3419,14 +3564,18 @@
           "total_degree": 7
         }
       ],
+      "sampled_parent_elimination_basis": [
+        "1"
+      ],
       "singular_basis_size": 1,
-      "singular_input_sha256": "e900fafea4291bbe90fd90204569fb3eb5751d46585b3fbfb5cd2f88e279494f"
+      "singular_input_sha256": "cf149dc87f632fa1f08791753a7bc595e788a0dabd9169f1ec4fb3ff9abd78d0"
     },
     {
       "H1_source": 1,
       "H2_source": 2,
       "certificate_kind": "singular_unit_ideal",
       "common_dual": 2,
+      "composition_order": "quadratic-cubic",
       "degree_pair": [
         2,
         3
@@ -3525,14 +3674,18 @@
           "total_degree": 7
         }
       ],
+      "sampled_parent_elimination_basis": [
+        "1"
+      ],
       "singular_basis_size": 1,
-      "singular_input_sha256": "070e5f7a7c2906bc88c71ba62c667408e9139f1598f0d4b61052c3fdfe11e706"
+      "singular_input_sha256": "edc687d3398209bea39cdaeecefe4d08333216a1d84c0d76a2e801e67baa052b"
     },
     {
       "H1_source": 2,
       "H2_source": 0,
       "certificate_kind": "localized_monomial",
       "common_dual": 2,
+      "composition_order": "quadratic-cubic",
       "degree_pair": [
         2,
         3
@@ -3567,6 +3720,7 @@
       "H2_source": 0,
       "certificate_kind": "localized_monomial",
       "common_dual": 2,
+      "composition_order": "quadratic-cubic",
       "degree_pair": [
         2,
         3
@@ -3601,6 +3755,7 @@
       "H2_source": 0,
       "certificate_kind": "localized_monomial",
       "common_dual": 2,
+      "composition_order": "quadratic-cubic",
       "degree_pair": [
         2,
         3
@@ -3635,6 +3790,7 @@
       "H2_source": 0,
       "certificate_kind": "localized_monomial",
       "common_dual": 2,
+      "composition_order": "quadratic-cubic",
       "degree_pair": [
         2,
         3
@@ -3669,6 +3825,7 @@
       "H2_source": 1,
       "certificate_kind": "singular_unit_ideal",
       "common_dual": 2,
+      "composition_order": "quadratic-cubic",
       "degree_pair": [
         2,
         3
@@ -3837,14 +3994,18 @@
           "total_degree": 7
         }
       ],
+      "sampled_parent_elimination_basis": [
+        "1"
+      ],
       "singular_basis_size": 1,
-      "singular_input_sha256": "ed58093b95c73120fd41a40f22ff6dc01f5dcc2511ce3bce91ef566a6a25a08c"
+      "singular_input_sha256": "52722033305937d23b5fb159226b05814a33d38248daf2480ae77c97a4366576"
     },
     {
       "H1_source": 2,
       "H2_source": 1,
       "certificate_kind": "singular_unit_ideal",
       "common_dual": 2,
+      "composition_order": "quadratic-cubic",
       "degree_pair": [
         2,
         3
@@ -3999,14 +4160,18 @@
           "total_degree": 7
         }
       ],
+      "sampled_parent_elimination_basis": [
+        "1"
+      ],
       "singular_basis_size": 1,
-      "singular_input_sha256": "5e978f018a4e3a5277757324388811509a0e5fbd8539957e77fcc3ceb492e28c"
+      "singular_input_sha256": "bf593296cb274fd3317f4ffb538785408cf67afce972935ee86a12b6e5530ea5"
     },
     {
       "H1_source": 2,
       "H2_source": 1,
       "certificate_kind": "singular_unit_ideal",
       "common_dual": 2,
+      "composition_order": "quadratic-cubic",
       "degree_pair": [
         2,
         3
@@ -4175,14 +4340,18 @@
           "total_degree": 7
         }
       ],
+      "sampled_parent_elimination_basis": [
+        "1"
+      ],
       "singular_basis_size": 1,
-      "singular_input_sha256": "c22c37349678dd05d02242e8d4a5af0b36ce032b061d801125d67ea44693ae1b"
+      "singular_input_sha256": "efc8e7a1614ed5cb7777ada1ad41cf5ec16bc4d87565af26ec01a84992663145"
     },
     {
       "H1_source": 2,
       "H2_source": 1,
       "certificate_kind": "singular_unit_ideal",
       "common_dual": 2,
+      "composition_order": "quadratic-cubic",
       "degree_pair": [
         2,
         3
@@ -4337,14 +4506,18 @@
           "total_degree": 7
         }
       ],
+      "sampled_parent_elimination_basis": [
+        "1"
+      ],
       "singular_basis_size": 1,
-      "singular_input_sha256": "3610b7a8576a0f6f3d043777709ccd23c011a435ded4705fe1d09def1a43347b"
+      "singular_input_sha256": "c06dd5ce4cfa1e41c593c1b9e86cd6253f6a68876f5cbf981c0c2fbfcdb6a137"
     },
     {
       "H1_source": 2,
       "H2_source": 2,
       "certificate_kind": "localized_monomial",
       "common_dual": 2,
+      "composition_order": "quadratic-cubic",
       "degree_pair": [
         2,
         3
@@ -4379,6 +4552,7 @@
       "H2_source": 2,
       "certificate_kind": "localized_monomial",
       "common_dual": 2,
+      "composition_order": "quadratic-cubic",
       "degree_pair": [
         2,
         3
@@ -4415,6 +4589,10 @@
     "base": "collision-centred foundational cubic Keller doubling",
     "coefficient_ring": "Q[a,b]",
     "composition": "T_H2 o T_H1",
+    "degree_order": [
+      2,
+      3
+    ],
     "limitations": [
       "zero coefficients",
       "reverse degree order",
@@ -4440,8 +4618,11 @@
     },
     "maximum_probe_equations": 11,
     "parent_constant_locus_empty": 54,
+    "parent_probe_survivors": 0,
     "parent_survivors": 0,
     "patterns": 54,
-    "reduced_rank_audits_needed_after_parent_gate": 0
+    "rank_four_two_pivot_pairs": 0,
+    "reduced_rank_audits_needed_after_parent_gate": 0,
+    "two_pivot_pairs": 0
   }
 }

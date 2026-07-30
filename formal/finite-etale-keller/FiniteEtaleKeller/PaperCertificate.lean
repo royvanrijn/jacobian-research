@@ -7,6 +7,7 @@ import FiniteEtaleKeller.GeneralGaugeMap
 import FiniteEtaleKeller.GeneralGaugeFunctionFieldComparison
 import FiniteEtaleKeller.PageOneTheorem
 import FiniteEtaleKeller.AbstractFiniteEtale
+import FiniteEtaleKeller.CollisionFiber
 
 /-!
 # Certificate accompanying the finite-étale Keller-fiber paper
@@ -71,5 +72,9 @@ example (A : Type u) [CommRing A] [Algebra K A] [Algebra.Etale K A]
 #print axioms finiteEtalePresentation
 #print axioms abstractFiniteEtale_pageOne
 #print axioms paperAbstractFiniteEtale_pageOne
+#print axioms fiberCollisionDiagonal_surjective
+#print axioms fiberCollisionPointPairsEquiv
+#print axioms fiberCollisionDiagonal_not_injective
+#print axioms finrank_fiberCollisionObstruction
 
 end FiniteEtaleKeller

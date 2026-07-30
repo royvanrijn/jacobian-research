@@ -16,6 +16,60 @@
         6,
         8
       ],
+      "later_moment_normal_forms": {
+        "6": {
+          "coefficient_term_counts_even_odd": [
+            [
+              12702,
+              12711
+            ],
+            [
+              5868,
+              5851
+            ],
+            [
+              2101,
+              2090
+            ],
+            [
+              5772,
+              5778
+            ],
+            [
+              2078,
+              2082
+            ]
+          ],
+          "pseudo_reduction_steps": 5,
+          "support_size": 5
+        },
+        "7": {
+          "coefficient_term_counts_even_odd": [
+            [
+              69067,
+              69006
+            ],
+            [
+              38061,
+              38063
+            ],
+            [
+              18185,
+              18202
+            ],
+            [
+              37458,
+              37389
+            ],
+            [
+              18196,
+              18169
+            ]
+          ],
+          "pseudo_reduction_steps": 10,
+          "support_size": 5
+        }
+      },
       "leading_coefficients": [
         {
           "even_terms": 1,
@@ -43,7 +97,7 @@
         4
       ],
       "quotient_length": 5,
-      "scope": "exact fraction-free characteristic-zero Groebner certificate over the generic J-divisor function field",
+      "scope": "exact fraction-free characteristic-zero Groebner certificate and mu6,mu7 pseudo-normal forms over the generic J-divisor function field",
       "split_divisor_equation": "99*Q+155*t0^2=alpha*L",
       "standard_basis": [
         "1",
