@@ -299,6 +299,33 @@ The role of the clauses is now precise:
 The Hilbert basis is therefore neither the regularity theorem nor the
 cancellation theorem.  It is the finite indexing device between them.
 
+### Hilbert--14 failure diagnostic
+
+The finite initial-presentation hypothesis is substantive.  The
+[multiboundary Hilbert--14 control](../extended-geometry/MULTIBOUNDARY_HILBERT14_CONTROL.md)
+gives its exact negative calibration.  For
+
+\[
+ K^{(r)}=\bigotimes_{i=1}^r(k+t_i^2k[t_i,P_i]),
+\]
+
+the one-axis semigroups are individually elementary, but the algebra has an
+infinite monomial SAGBI basis and finite-generation ideal
+
+\[
+ \mathfrak f_{K^{(r)}}
+ =\left(\prod_i t_i^2\right)
+   k[t_1,P_1,\ldots,t_r,P_r].
+\]
+
+Its \(2^r\) conductor-return ladders escape every finite multidegree box.
+Thus a compiler that continually discovers new generators at the minimal
+conductor order has not merely missed a larger Hilbert basis: it has reached
+the Hilbert--14 branch where hypothesis 4 fails.  Conversely, mixed
+multi-Rees relations that prevent the tensor-product description are
+essential data and must not be discarded by replacing the chart with this
+independent-boundary control.
+
 For a fixed explicit rational expression, Proposition 1.1 and its finite
 principal parts are usually enough; no Hilbert-basis theorem is needed.
 The Rees formulation becomes useful when one wants one certificate for an

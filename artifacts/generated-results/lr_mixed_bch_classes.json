@@ -1,0 +1,77 @@
+{
+  "all_order_theorem": {
+    "bch_scalar": "-B_(2k)*binomial(2k,k)/(2k)!",
+    "conclusion": "The balanced coefficient linear in X and of bidegree (k,k) in (D_B,D_C) has nonzero third saturated associated-graded normal residue in every odd BCH order 2k+1.",
+    "degree": "deg_u rho(W_k)=4*k+11",
+    "recurrence": "c_(k+1)=-73440*(k+3)*(2*k+7)*c_k for k>=1",
+    "seed": "c_1=14438891520/2401"
+  },
+  "boundary_face": {
+    "F_new": "F*(-121500*d**2*w**8 + 1058400*d**2*w**7 - 3711960*d**2*w**6 + 6739200*d**2*w**5 - 6816555*d**2*w**4 + 3875040*d**2*w**3 - 1182195*d**2*w**2 + 171180*d**2*w - 9180*d**2 + 972000*d*w**8 - 7408800*d*w**7 + 22271760*d*w**6 - 33696000*d*w**5 + 27266220*d*w**4 - 11625120*d*w**3 + 2364390*d*w**2 - 171180*d*w + 1093500*w**8 - 8467200*w**7 + 25983720*w**6 - 40435200*w**5 + 34082775*w**4 - 15500160*w**3 + 3546585*w**2 - 342360*w + 9180) + H*(972000*d*w**7 - 7408800*d*w**6 + 22271760*d*w**5 - 33696000*d*w**4 + 27266220*d*w**3 - 11625120*d*w**2 + 2364390*d*w - 171180*d + 972000*w**7 - 7408800*w**6 + 22271760*w**5 - 33696000*w**4 + 27266220*w**3 - 11625120*w**2 + 2364390*w - 171180)",
+    "H_new": "F*(-1458000*d*w**9 + 11642400*d*w**8 - 37119600*d*w**7 + 60652800*d*w**6 - 54532440*d*w**5 + 27125280*d*w**4 - 7093170*d*w**3 + 855900*d*w**2 - 36720*d*w - 1458000*w**9 + 11642400*w**8 - 37119600*w**7 + 60652800*w**6 - 54532440*w**5 + 27125280*w**4 - 7093170*w**3 + 855900*w**2 - 36720*w) + H*(-121500*d**2*w**8 + 1058400*d**2*w**7 - 3711960*d**2*w**6 + 6739200*d**2*w**5 - 6816555*d**2*w**4 + 3875040*d**2*w**3 - 1182195*d**2*w**2 + 171180*d**2*w - 9180*d**2 - 1458000*d*w**8 + 11642400*d*w**7 - 37119600*d*w**6 + 60652800*d*w**5 - 54532440*d*w**4 + 27125280*d*w**3 - 7093170*d*w**2 + 855900*d*w - 36720*d - 1336500*w**8 + 10584000*w**7 - 33407640*w**6 + 53913600*w**5 - 47715885*w**4 + 23250240*w**3 - 5910975*w**2 + 684720*w - 27540)",
+    "constant_transfer": {
+      "F_new_at_w_0": "-540*(d+1)*(17*(d-1)*F(0)+317*H(0))",
+      "H_new_at_w_0": "-9180*(d + 1)*(d + 3)*H(0)"
+    },
+    "coordinate": "w=u*gamma",
+    "input": "(u^(d+1)F(w),u^(d+2)F(w),u^d H(w))",
+    "output": "(u^(d+5)F_new(w),u^(d+6)F_new(w),u^(d+4)H_new(w))"
+  },
+  "commutation": {
+    "D_B_D_C_bracket_zero": true,
+    "balanced_component": "binomial(2k,k)*(ad(D_B)*ad(D_C))^k X",
+    "reason": "[ad(D_B),ad(D_C)]=ad([D_B,D_C])=0"
+  },
+  "computed_regression": [
+    {
+      "balanced_bch_leading_coefficient": "-2406481920/2401",
+      "balanced_bch_scalar": "-1/6",
+      "bch_order": 3,
+      "k": 1,
+      "residue_at_u_1_over_6": "-1804001317765625/2286573795072",
+      "residue_degree_u": 15,
+      "residue_leading_coefficient": "14438891520/2401",
+      "residue_terms": 15,
+      "word": "(ad(D_B)*ad(D_C))^k X"
+    },
+    {
+      "balanced_bch_leading_coefficient": "-318117657968640/2401",
+      "balanced_bch_scalar": "1/120",
+      "bch_order": 5,
+      "k": 2,
+      "residue_at_u_1_over_6": "946068260934371875/9146295180288",
+      "residue_degree_u": 19,
+      "residue_leading_coefficient": "-38174118956236800/2401",
+      "residue_terms": 19,
+      "word": "(ad(D_B)*ad(D_C))^k X"
+    },
+    {
+      "balanced_bch_leading_coefficient": "-713856024481628160000/16807",
+      "balanced_bch_scalar": "-1/1512",
+      "bch_order": 7,
+      "k": 3,
+      "residue_at_u_1_over_6": "-853357712499841838125/36585180721152",
+      "residue_degree_u": 23,
+      "residue_leading_coefficient": "154192901288031682560000/2401",
+      "residue_terms": 22,
+      "word": "(ad(D_B)*ad(D_C))^k X"
+    }
+  ],
+  "conventions": {
+    "D": "D_B+D_C",
+    "X": "N(x,0,-3z), N=v^6*S^4, weight 0",
+    "bch": "BCH_map(-X,-D)",
+    "map_bracket": "{P,Q} = P\u25b7Q-Q\u25b7P",
+    "map_prelie": "P \u25b7 Q = (DP)Q",
+    "target_directions": {
+      "D_B": "ell_F(partial_B), weight 1",
+      "D_C": "ell_F(partial_C), weight -1"
+    }
+  },
+  "descent_audit": {
+    "linear_target_module": "PASS: the residue is taken in the saturated third normal summand R/(gamma), so every linear lifted-target correction maps to zero while the displayed residue remains nonzero.",
+    "lower_target_amplitudes": "FAILS UNIVERSALITY: replacing D_B,D_C by s*D_B,t*D_C multiplies W_k by s^k*t^k. The sector vanishes on s*t=0, including the valid lower-jet choice D_1=0.",
+    "status": "This proves actual BCH noncancellation in one multihomogeneous mixed sector and gives an all-order penalty when both opposite weights are active. It is not a universal obstruction over the full lower-jet solution scheme."
+  },
+  "description": "Balanced linear-in-X BCH normal classes for the F_2 target lift"
+}

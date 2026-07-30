@@ -34,26 +34,41 @@ OUTPUT = (
 PRIMES = (1_000_003, 1_000_033, 1_000_037)
 EXPECTED_BORDER = ("u5", "u4t", "u3t2", "u2t4", "ut5", "t6")
 EXPECTED_DENOMINATOR_DEGREES = (74, 74, 88, 94, 74, 74)
+EXPECTED_COMPONENT_CLASSIFICATIONS = {
+    1_000_003: {
+        "extra_degree_14:relative_length_change": 4,
+    },
+    1_000_033: {
+        "common_degree_74:stable_length_profile_chart_failure": 1,
+        "extra_degree_14:relative_length_change": 4,
+        "extra_degree_20:relative_length_change": 1,
+    },
+    1_000_037: {
+        "common_degree_74:stable_length_profile_chart_failure": 3,
+        "extra_degree_14:relative_length_change": 2,
+    },
+}
 S = symbols("s")
 
 
-def linear(left: int, right: int) -> str:
-    return f"({left}+({right})*s)"
+def linear(left: int, right: int, value: int | None = None) -> str:
+    parameter = "s" if value is None else str(value)
+    return f"({left}+({right})*{parameter})"
 
 
-def q_expression() -> str:
+def q_expression(value: int | None = None) -> str:
     """Return Q=u^3 Phi(1,u,t,(1-t)/u) on U0+sU1,W0+sW1."""
 
     (u0, w0), (u1, w1) = POINTS
     summands = []
     for inner in range(2):
         dual = "+".join(
-            f"{linear(u0[i][inner], u1[i][inner])}*u^{3-i}"
+            f"{linear(u0[i][inner], u1[i][inner], value)}*u^{3-i}"
             for i in range(4)
         )
         coordinate = "+".join(
             (
-                f"{linear(w0[inner][j], w1[inner][j])}"
+                f"{linear(w0[inner][j], w1[inner][j], value)}"
                 f"*u^{j}*t^{j}*(1-t)^{3-j}"
             )
             for j in range(4)
@@ -116,6 +131,136 @@ for(i=1;i<=size(border);i++){{
 }}
 """
     )
+
+
+def modular_matrix_rank(matrix: list[list[int]], prime: int) -> int:
+    work = [[value % prime for value in row] for row in matrix]
+    row = 0
+    for column in range(len(work[0])):
+        pivot = next(
+            (
+                index
+                for index in range(row, len(work))
+                if work[index][column]
+            ),
+            None,
+        )
+        if pivot is None:
+            continue
+        work[row], work[pivot] = work[pivot], work[row]
+        inverse = pow(work[row][column], -1, prime)
+        work[row] = [value * inverse % prime for value in work[row]]
+        for index in range(len(work)):
+            if index == row or work[index][column] == 0:
+                continue
+            scale = work[index][column]
+            work[index] = [
+                (left - scale * right) % prime
+                for left, right in zip(work[index], work[row], strict=True)
+            ]
+        row += 1
+    return row
+
+
+def factor_chart_rank(prime: int, value: int) -> int:
+    (u0, w0), (u1, w1) = POINTS
+    u = [
+        [
+            (u0[row][column] + value * u1[row][column]) % prime
+            for column in range(2)
+        ]
+        for row in range(4)
+    ]
+    w = [
+        [
+            (w0[row][column] + value * w1[row][column]) % prime
+            for column in range(4)
+        ]
+        for row in range(2)
+    ]
+    product = [
+        [
+            sum(u[row][inner] * w[inner][column] for inner in range(2))
+            % prime
+            for column in range(4)
+        ]
+        for row in range(4)
+    ]
+    return modular_matrix_rank(product, prime)
+
+
+def specialized_relative_fiber(prime: int, value: int) -> dict[str, object]:
+    output = run_singular(
+        f"""
+LIB "elim.lib";
+ring r={prime},(u,t),dp;
+poly Q={q_expression(value)};
+poly A=u*diff(Q,u)-3*Q;
+poly C=t*(1-t)*diff(Q,t);
+list saturation=sat_with_exp(ideal(A,C),ideal(u));
+ideal relative=std(saturation[1]);
+ideal endpoint0=std(sat(ideal(A,t),ideal(u)));
+ideal endpoint1=std(sat(ideal(A,t-1),ideal(u)));
+ideal interior=std(
+  sat(sat(ideal(A,diff(Q,t)),ideal(u)),ideal(t*(1-t)))
+);
+print("SATURATION_EXPONENT");
+print(saturation[2]);
+print("RELATIVE_LENGTH");
+print(vdim(relative));
+print("ENDPOINT_ZERO_LENGTH");
+print(vdim(endpoint0));
+print("ENDPOINT_ONE_LENGTH");
+print(vdim(endpoint1));
+print("INTERIOR_LENGTH");
+print(vdim(interior));
+"""
+    )
+    lines = [
+        line.strip()
+        for line in output.splitlines()
+        if line.strip() and not line.startswith("//")
+    ]
+    expected_labels = (
+        "SATURATION_EXPONENT",
+        "RELATIVE_LENGTH",
+        "ENDPOINT_ZERO_LENGTH",
+        "ENDPOINT_ONE_LENGTH",
+        "INTERIOR_LENGTH",
+    )
+    values = {}
+    cursor = 0
+    for label in expected_labels:
+        assert lines[cursor] == label
+        values[label] = int(lines[cursor + 1])
+        cursor += 2
+    assert cursor == len(lines)
+
+    rank = factor_chart_rank(prime, value)
+    profile = (
+        values["ENDPOINT_ZERO_LENGTH"],
+        values["ENDPOINT_ONE_LENGTH"],
+        values["INTERIOR_LENGTH"],
+    )
+    relative_length = values["RELATIVE_LENGTH"]
+    if rank < 2:
+        classification = "coefficient_rank_drop"
+    elif relative_length != 18:
+        classification = "relative_length_change"
+    elif profile != (2, 2, 14):
+        classification = "boundary_interior_redistribution"
+    else:
+        classification = "stable_length_profile_chart_failure"
+    return {
+        "parameter_value": value,
+        "coefficient_matrix_rank": rank,
+        "saturation_exponent": values["SATURATION_EXPONENT"],
+        "relative_length": relative_length,
+        "endpoint_t0_length": profile[0],
+        "endpoint_t1_length": profile[1],
+        "interior_length": profile[2],
+        "classification": classification,
+    }
 
 
 def parse_polynomial(text: str, prime: int) -> Poly:
@@ -207,10 +352,47 @@ def parse_output(output: str, prime: int) -> dict[str, object]:
         [factor.degree(), multiplicity]
         for factor, multiplicity in exceptional_factors
     ]
-    distinct_linear_factors = sum(
-        1
-        for factor, _multiplicity in exceptional_factors
-        if factor.degree() == 1
+    linear_roots = sorted(
+        {
+            int(
+                -factor.nth(0) * pow(int(factor.nth(1)), -1, prime)
+            )
+            % prime
+            for factor, _multiplicity in exceptional_factors
+            if factor.degree() == 1
+        }
+    )
+    specialized_fibers = [
+        specialized_relative_fiber(prime, value) for value in linear_roots
+    ]
+    for fiber in specialized_fibers:
+        value = int(fiber["parameter_value"])
+        components = []
+        if int(unique[0].eval(value)) % prime == 0:
+            components.append("common_degree_74")
+        if int(extra_14.eval(value)) % prime == 0:
+            components.append("extra_degree_14")
+        if int(extra_20.eval(value)) % prime == 0:
+            components.append("extra_degree_20")
+        assert len(components) == 1
+        fiber["denominator_component"] = components[0]
+    classification_counts: dict[str, int] = {}
+    component_classification_counts: dict[str, int] = {}
+    for fiber in specialized_fibers:
+        classification = str(fiber["classification"])
+        classification_counts[classification] = (
+            classification_counts.get(classification, 0) + 1
+        )
+        component_classification = (
+            f"{fiber['denominator_component']}:{classification}"
+        )
+        component_classification_counts[component_classification] = (
+            component_classification_counts.get(component_classification, 0)
+            + 1
+        )
+    assert (
+        component_classification_counts
+        == EXPECTED_COMPONENT_CLASSIFICATIONS[prime]
     )
 
     return {
@@ -232,7 +414,12 @@ def parse_output(output: str, prime: int) -> dict[str, object]:
             exceptional_factor_degrees
         ),
         "distinct_exceptional_roots_in_base_field": (
-            distinct_linear_factors
+            len(linear_roots)
+        ),
+        "base_field_exceptional_fibers": specialized_fibers,
+        "base_field_exceptional_classification_counts": classification_counts,
+        "base_field_component_classification_counts": (
+            component_classification_counts
         ),
         "exceptional_polynomial_coefficients_low_to_high": [
             int(exceptional.nth(index)) % prime
@@ -250,6 +437,31 @@ def main() -> None:
             f"PASS prime {prime}: length 18, six 19-term border "
             "relations, exceptional degree 108"
         )
+        counts = records[-1]["base_field_exceptional_classification_counts"]
+        print(
+            f"PASS prime {prime}: classified "
+            f"{records[-1]['distinct_exceptional_roots_in_base_field']} "
+            f"base-field exceptional fibers as {counts}"
+        )
+    aggregate_profiles: dict[tuple[str, tuple[int, int, int]], int] = {}
+    for record in records:
+        for fiber in record["base_field_exceptional_fibers"]:
+            key = (
+                str(fiber["denominator_component"]),
+                (
+                    int(fiber["endpoint_t0_length"]),
+                    int(fiber["endpoint_t1_length"]),
+                    int(fiber["interior_length"]),
+                ),
+            )
+            aggregate_profiles[key] = aggregate_profiles.get(key, 0) + 1
+    assert aggregate_profiles == {
+        ("common_degree_74", (2, 2, 14)): 4,
+        ("extra_degree_14", (1, 2, 14)): 4,
+        ("extra_degree_14", (2, 1, 14)): 4,
+        ("extra_degree_14", (2, 2, 13)): 2,
+        ("extra_degree_20", (2, 2, 13)): 1,
+    }
     OUTPUT.write_text(
         json.dumps(
             {
@@ -268,8 +480,9 @@ def main() -> None:
                     ),
                     "exceptional_locus": (
                         "roots of the chart denominator require separate "
-                        "specialization and may include coordinate-chart "
-                        "artifacts"
+                        "specialization; every base-field root is classified "
+                        "by coefficient rank, total relative length, and its "
+                        "2+2+14 endpoint/interior profile"
                     ),
                 },
             },
@@ -280,6 +493,7 @@ def main() -> None:
     print("PASS denominator degrees 74, 88, 94 have common gcd degree 74")
     print("PASS quotient degrees 14 and 20 are coprime")
     print("PASS border-basis chart denominator has degree 108")
+    print("PASS every base-field exceptional root has an exact fiber classification")
     print("PASS result is modular one-pencil evidence, not a universal theorem")
     print(f"PASS wrote {OUTPUT.relative_to(ROOT)}")
 

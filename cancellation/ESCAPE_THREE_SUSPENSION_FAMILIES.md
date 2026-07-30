@@ -207,6 +207,19 @@ known two-boundary calculation test a three-boundary ledger.  A genuinely
 nonmonomial irreducible denominator should be its own stratum, not replaced
 by a monomial exponent vector.
 
+The three-boundary ledger now has an exact Hilbert--14 prefilter.  If its
+three one-axis invariant quotients separate as independent cusp factors,
+the
+[multiboundary product-conductor theorem](../extended-geometry/MULTIBOUNDARY_HILBERT14_CONTROL.md#6-arbitrarily-many-independent-cusp-boundaries)
+computes a proper finite-generation ideal with eight infinite return
+ladders.  Such a stratum is a non-finitely-generated control, not a new
+finite suspension family.  The coefficient search should therefore retain
+only strata with genuinely mixed multi-Rees relations.  The symmetric
+one-conductor coupling is also already excluded by the
+[three-boundary Cox-fill obstruction](../extended-geometry/CONDUCTOR_THREE_BOUNDARY_COX_FILL_OBSTRUCTION.md),
+leaving asymmetric or distributed source/target ledgers as the relevant
+three-divisor branch.
+
 Known families should be removed only after solutions are reconstructed.
 Formula-level ideal quotients are unsafe because polynomial left--right
 orbits and boundary degenerations are not single closed coefficient

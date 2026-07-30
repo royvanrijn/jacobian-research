@@ -40,6 +40,10 @@ flowchart TD
     M["Motivation for Long's searches"]
     GP["Long's direct three-Gaussian polynomials"]
     G["not GMC(n) for every n at least 3"]
+    FT["Long's factorially weighted multitorus theorem"]
+    FM["ker Gamma_r is Mathieu--Zhao for every torus rank"]
+    G2["GMC(2) and the SO2 nullcone classification"]
+    GC["GMC(n) holds exactly for n at most 2"]
     XP["Long's direct (xz) witness"]
     X["not xz(1,1)"]
     SP["Long's direct SU(2) witness"]
@@ -75,6 +79,10 @@ flowchart TD
     M -.-> GP
     M -.-> XP
     GP -->|"direct explicit witness"| G
+    FT -->|"one radial variable, arbitrary torus rank"| FM
+    FT -->|"circular Gaussian embedding"| G2
+    G -->|"combine dimension bounds"| GC
+    G2 -->|"combine dimension bounds"| GC
     XP -->|"direct explicit witness"| X
     SP -->|"direct explicit witness"| S
     XP -->|"Müger--Tuset lift"| SP
@@ -223,6 +231,50 @@ coefficient identity on a monomial basis through `m=14`, and checks the
 formal central-binomial identity through degree 20.  These are **locally
 reproduced identities** and bounded regressions; the paper's displayed formal
 series argument is the general all-`m` proof.
+
+## Christopher D. Long: factorially weighted algebraic tori
+
+Long's separate manuscript,
+[*A Factorially Weighted Constant-Term Theorem on Algebraic
+Tori*](https://github.com/octonion/mathematics/blob/main/gmc/gmc2_stronger_arbitrary_torus.tex),
+dated 22 July 2026, is an **independent external result**.  For
+
+\[
+ \Gamma_r(u^nz^\mu)=n!\mathbf1_{\mu=0}
+\]
+
+on
+\(\mathbb C[u,z_1^{\pm1},\ldots,z_r^{\pm1}]\), it proves the equivalence
+
+\[
+\begin{aligned}
+ &\Gamma_r(F^m)=0\quad(m\gg0),\\
+ &\Gamma_r(F^m)=0\quad(m\geq1),\\
+ &0\notin\operatorname{conv}\Omega(F).
+\end{aligned}
+\]
+
+It also proves that \(\ker\Gamma_r\) is Mathieu--Zhao and, in the opposite
+case, that one fixed power has nonzero moments at every sufficiently large
+prime dilation.  Its rank-one circular-Gaussian embedding proves GMC(2) and
+the corresponding \(\operatorname{SO}_2(\mathbb C)\) nullcone
+classification.
+
+The manuscript's public repository announcement predates the first
+checked-in GMC(2) formalization here.  The external source discloses AI
+assistance and describes itself as not yet human verified or formalized.
+The repository's
+[credited theorem note](FACTORIALLY_WEIGHTED_MULTITORUS_THEOREM.md)
+gives a local proof audit, records the exact overlap with `G2T`, and combines
+Long's multitorus geometry with the existing prime-separating radial theorem.
+That audit is not peer review and does not transfer authorship.
+
+The scope is one radial variable and arbitrary angular torus rank.  It is not
+a positive theorem for ordinary higher-dimensional Gaussian expectation,
+whose independent radial coordinates carry product-factorial weights.
+Accordingly the consequence graph has no arrow from this theorem to
+`GMC(d)` for \(d\geq3\), SIC in pair rank at least two, or the Jacobian
+Conjecture.
 
 ## Christopher D. Long: the `(xz)` and `SU(2)` Mathieu conjectures
 
@@ -515,10 +567,15 @@ transport, not as an optimization queue.
    three-real-variable witness remains dimensionally smaller; the family and
    its finite fingerprints, not witness discovery or dimension minimization,
    are the point here.
-3. **Resolved two-real Gaussian frontier.**  `G2T` proves
-   [GMC(2)](GMC2_RESEARCH_PROGRAM.md) in every degree and for arbitrary
-   support.  Earlier finite-degree and support-graph attacks are retained as
-   regressions or reusable techniques; no Gaussian-dimension search is active.
+3. **Resolved two-real Gaussian frontier and one-radial torus sieve.**
+   `G2T` proves [GMC(2)](GMC2_RESEARCH_PROGRAM.md) in every degree and for
+   arbitrary support.  Long's contemporaneous factorially weighted
+   multitorus theorem supplies the stronger eventual-vanishing and
+   prime-index classification for one radial variable in arbitrary torus
+   rank.  Earlier finite-degree and support-graph attacks are retained as
+   regressions or reusable techniques; no Gaussian-dimension search is
+   active, and no search inside a functional-intertwined one-radial
+   \(\Gamma_r\) model should be opened.
 4. **Symplectic dimension descent and families.**  The foundational map now
    has an intrinsic four-dimensional rank-two completion.  Determine which
    weighted seeds admit analogous pole-free flux corrections, whether their

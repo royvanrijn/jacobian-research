@@ -270,6 +270,7 @@ def run_msolve(
     timeout: int,
     linear_algebra: int,
     eliminate: int,
+    max_pairs: int,
 ) -> dict[str, object]:
     variables = export["ordinary_variables"]
     polynomials = export["polynomials"]
@@ -303,6 +304,8 @@ def run_msolve(
                 ]
             if eliminate:
                 command.extend(["-e", str(eliminate)])
+            if max_pairs:
+                command.extend(["-m", str(max_pairs)])
             completed = subprocess.run(
                 command,
                 text=True,
@@ -1518,6 +1521,625 @@ ideal inverseBasis=std(s0*uinv-1);
     }
 
 
+def localize_inverse_pair(polynomial: str) -> str:
+    """Replace ``s0=1/u, uinv=u`` and remove the common Laurent unit.
+
+    The reduced incidence polynomials are expanded sums of monomials.
+    On the ``u != 0`` open, subtracting the minimum resulting ``u``
+    exponent from every term changes an equation only by a Laurent unit.
+    """
+
+    terms = re.findall(r"[+-]?[^+-]+", polynomial)
+    assert terms and "".join(terms) == polynomial
+    localized: list[tuple[str, int]] = []
+    for term in terms:
+        sign = term[0] if term[0] in "+-" else ""
+        body = term[1:] if sign else term
+        retained_factors = []
+        s0_exponent = 0
+        uinv_exponent = 0
+        for factor in body.split("*"):
+            s0_match = re.fullmatch(r"s0(?:\^(\d+))?", factor)
+            uinv_match = re.fullmatch(r"uinv(?:\^(\d+))?", factor)
+            if s0_match is not None:
+                s0_exponent += int(s0_match.group(1) or 1)
+            elif uinv_match is not None:
+                uinv_exponent += int(uinv_match.group(1) or 1)
+            else:
+                retained_factors.append(factor)
+        term = sign + ("*".join(retained_factors) or "1")
+        localized.append((term, uinv_exponent - s0_exponent))
+    minimum_exponent = min(exponent for _, exponent in localized)
+    shifted_terms = []
+    for term, exponent in localized:
+        exponent -= minimum_exponent
+        if exponent == 1:
+            term += "*u"
+        elif exponent > 1:
+            term += f"*u^{exponent}"
+        shifted_terms.append(term)
+    result = "".join(shifted_terms)
+    assert not re.search(r"\b(?:s0|uinv)\b", result)
+    return result
+
+
+def t0_open_localized_export(
+    singular: str,
+    orders: tuple[int, ...],
+    prime: int,
+    timeout: int,
+) -> dict[str, object]:
+    """Return the specialization-safe ``t0``-open localized incidence."""
+
+    reduced = t0_open_reduced_export(singular, orders, prime, timeout)
+    assert reduced["polynomials"][-1] == "s0*uinv-1"
+    localized = [
+        localize_inverse_pair(polynomial)
+        for polynomial in reduced["polynomials"][:-1]
+    ]
+    return {
+        "branch": "t0-open specialization-safe localized incidence",
+        "characteristic": prime,
+        "ordinary_variables": [
+            "s6",
+            "s5",
+            "s1",
+            "s2",
+            "s3",
+            "t1",
+            "t2",
+            "u",
+            "finv",
+        ],
+        "polynomials": localized + ["finv*u-1"],
+        "orders": list(orders),
+        "eliminated_variables": ["t3", "s4", "t4", "s0", "uinv"],
+        "equation_count": len(localized) + 1,
+        "open_factor": "u",
+        "scope": (
+            "specialization-safe on Q, J, K, and H; the Rabinowitsch "
+            "equation retains the u-open without using solver saturation"
+        ),
+    }
+
+
+def t0_open_fixed_fiber_certificate(
+    singular: str,
+    timeout: int,
+) -> dict[str, object]:
+    """Certify a bounded exact common-root exclusion in one rank-six fiber.
+
+    The rational base point was found by solving the 73-term ``mu_3``
+    equation after fixing the other five base coordinates.  All generic
+    rank-six leading factors are nonzero there.  The calculation below is
+    only a two-variable standard basis over QQ; it deliberately avoids the
+    six-parameter determinant whose expansion is the expensive next step.
+    """
+
+    orders = (2, 3, 4, 5, 6)
+    export = t0_open_localized_export(
+        singular,
+        orders,
+        0,
+        timeout,
+    )
+    moment_polynomials = dict(
+        zip(orders[1:], export["polynomials"][:-1], strict=True)
+    )
+    base_values = {
+        "s1": "-3",
+        "s2": "-3",
+        "s3": "33467/26028",
+        "t1": "0",
+        "t2": "1",
+        "u": "3",
+    }
+    declarations = []
+    for order, polynomial in moment_polynomials.items():
+        declarations.append(f"poly p{order}={polynomial};")
+        declarations.extend(
+            f"p{order}=subst(p{order},{variable},{value});"
+            for variable, value in base_values.items()
+        )
+    completed = subprocess.run(
+        [singular, "-q"],
+        input=f"""
+ring source=0,(s6,s5,s1,s2,s3,t1,t2,u),dp;
+{chr(10).join(declarations)}
+print("BASE "+string(p3));
+ring fiber=0,(s6,s5),dp;
+ideal G=std(imap(source,p4),imap(source,p5));
+ideal U=std(ideal(imap(source,p4),imap(source,p5),imap(source,p6)));
+print(
+  "ALGEBRA "+string(size(G))+" "+string(dim(G))+" "+string(vdim(G))
+);
+print("UNIT "+string(reduce(1,U)==0)+" "+string(size(U)));
+int basisIndex;
+for(basisIndex=1;basisIndex<=size(G);basisIndex++)
+{{
+  print("LEAD "+string(leadexp(G[basisIndex])));
+}}
+""",
+        text=True,
+        capture_output=True,
+        check=True,
+        timeout=timeout,
+    )
+    assert "\n   ? " not in completed.stdout, (
+        completed.stdout[-4000:],
+        completed.stderr[-2000:],
+    )
+    base_marker = re.search(r"(?m)^BASE (.*)$", completed.stdout)
+    algebra = re.search(
+        r"(?m)^ALGEBRA (\d+) (-?\d+) (-?\d+)$",
+        completed.stdout,
+    )
+    unit = re.search(r"(?m)^UNIT ([01]) (\d+)$", completed.stdout)
+    leading_exponents = re.findall(
+        r"(?m)^LEAD ([0-9,]+)$",
+        completed.stdout,
+    )
+    assert base_marker is not None and base_marker.group(1) == "0"
+    assert algebra is not None and algebra.groups() == ("3", "0", "6")
+    assert unit is not None and unit.group(1) == "1"
+    assert leading_exponents == ["2,0", "1,2", "0,4"]
+    return {
+        "branch": "t0-open exact fixed rank-six fiber",
+        "characteristic": 0,
+        "base_values": base_values,
+        "base_equation": "mu_3=0",
+        "adapted_factor_values": {
+            "Q": "51",
+            "J": "7077924",
+            "K": "7827",
+            "H": "26668476",
+        },
+        "fiber_variables": ["s6", "s5"],
+        "fiber_ideal": ["mu_4", "mu_5"],
+        "groebner_basis_size": 3,
+        "leading_exponents": leading_exponents,
+        "quotient_length": 6,
+        "adjoined_moments": ["mu_6"],
+        "unit_ideal": True,
+        "scope": (
+            "exact characteristic-zero exclusion in this rational fiber; "
+            "openness excludes a nonempty base neighborhood, but the "
+            "exceptional norm divisor and its specializations remain open"
+        ),
+    }
+
+
+def t0_open_rational_curve_norm_certificate(
+    singular: str,
+    timeout: int,
+) -> dict[str, object]:
+    """Compute the first rank-six norm on a rational ``mu_3=0`` curve."""
+
+    orders = (2, 3, 4, 5, 6, 7)
+    export = t0_open_localized_export(
+        singular,
+        orders,
+        0,
+        timeout,
+    )
+    moment_polynomials = dict(
+        zip(orders[1:], export["polynomials"][:-1], strict=True)
+    )
+    curve_numerator = "2916*r^3+810*r^2-2511*r-3025"
+    curve_denominator = "54*(36*r^3-r+5)"
+    replacements = (
+        ("s1", "(r)"),
+        ("s2", "(-3)"),
+        ("s3", f"(({curve_numerator})/({curve_denominator}))"),
+        ("t1", "(0)"),
+        ("t2", "(1)"),
+        ("u", "(3)"),
+    )
+    specialized = {
+        order: substitute(polynomial, replacements)
+        for order, polynomial in moment_polynomials.items()
+    }
+    r_symbol = sp.symbols("r")
+    assert sp.cancel(
+        sp.sympify(
+            specialized[3].replace("^", "**"),
+            locals={"r": r_symbol},
+        )
+    ) == 0
+    vandermonde = sp.Matrix(
+        [[value**degree for degree in range(7)] for value in range(7)]
+    )
+    linear_weights = vandermonde.inv().row(1)
+    linear_coefficient = "+".join(
+        f"({weight.p}/{weight.q})*leadcoef(d{value})"
+        for value, weight in enumerate(linear_weights)
+        if weight
+    )
+    completed = subprocess.run(
+        [singular, "-q"],
+        input=f"""
+ring fiber=(0,r),(s6,s5),dp;
+option(redSB);
+poly p3={specialized[3]};
+poly p4={specialized[4]};
+poly p5={specialized[5]};
+poly p6={specialized[6]};
+poly p7={specialized[7]};
+ideal G=std(p4,p5);
+poly r6=reduce(p6,G);
+poly r7=reduce(p7,G);
+print(
+  "ALGEBRA "+string(size(G))+" "
+  +string(dim(G))+" "+string(vdim(G))+" "+string(size(r7))
+);
+proc coordinateIndex(poly termValue)
+{{
+  if(termValue==1) {{ return(1); }}
+  if(termValue==s6) {{ return(2); }}
+  if(termValue==s5) {{ return(3); }}
+  if(termValue==s6*s5) {{ return(4); }}
+  if(termValue==s5^2) {{ return(5); }}
+  if(termValue==s5^3) {{ return(6); }}
+  return(0);
+}}
+poly basisMonomial;
+poly z;
+int basisColumn;
+int basisRow;
+matrix B1[6][6];
+matrix B2[6][6];
+matrix B3[6][6];
+matrix B4[6][6];
+matrix B5[6][6];
+matrix B6[6][6];
+matrix M6[6][6];
+matrix M7[6][6];
+for(basisColumn=1;basisColumn<=6;basisColumn++)
+{{
+  B1[basisColumn,basisColumn]=1;
+  if(basisColumn==1) {{ basisMonomial=1; }}
+  if(basisColumn==2) {{ basisMonomial=s6; }}
+  if(basisColumn==3) {{ basisMonomial=s5; }}
+  if(basisColumn==4) {{ basisMonomial=s6*s5; }}
+  if(basisColumn==5) {{ basisMonomial=s5^2; }}
+  if(basisColumn==6) {{ basisMonomial=s5^3; }}
+  z=reduce(s6*basisMonomial,G);
+  while(z!=0)
+  {{
+    basisRow=coordinateIndex(leadmonom(z));
+    if(basisRow==0) {{ print("COORDINATE_ERROR"); exit; }}
+    B2[basisRow,basisColumn]=leadcoef(z);
+    z=z-lead(z);
+  }}
+  z=reduce(s5*basisMonomial,G);
+  while(z!=0)
+  {{
+    basisRow=coordinateIndex(leadmonom(z));
+    if(basisRow==0) {{ print("COORDINATE_ERROR"); exit; }}
+    B3[basisRow,basisColumn]=leadcoef(z);
+    z=z-lead(z);
+  }}
+}}
+B4=B2*B3;
+B5=B3*B3;
+B6=B5*B3;
+z=r6;
+while(z!=0)
+{{
+  basisRow=coordinateIndex(leadmonom(z));
+  if(basisRow==1) {{ M6=M6+leadcoef(z)*B1; }}
+  if(basisRow==2) {{ M6=M6+leadcoef(z)*B2; }}
+  if(basisRow==3) {{ M6=M6+leadcoef(z)*B3; }}
+  if(basisRow==4) {{ M6=M6+leadcoef(z)*B4; }}
+  if(basisRow==5) {{ M6=M6+leadcoef(z)*B5; }}
+  if(basisRow==6) {{ M6=M6+leadcoef(z)*B6; }}
+  z=z-lead(z);
+}}
+z=r7;
+while(z!=0)
+{{
+  basisRow=coordinateIndex(leadmonom(z));
+  if(basisRow==1) {{ M7=M7+leadcoef(z)*B1; }}
+  if(basisRow==2) {{ M7=M7+leadcoef(z)*B2; }}
+  if(basisRow==3) {{ M7=M7+leadcoef(z)*B3; }}
+  if(basisRow==4) {{ M7=M7+leadcoef(z)*B4; }}
+  if(basisRow==5) {{ M7=M7+leadcoef(z)*B5; }}
+  if(basisRow==6) {{ M7=M7+leadcoef(z)*B6; }}
+  z=z-lead(z);
+}}
+poly normPolynomial=det(M6);
+number normCoefficient=leadcoef(normPolynomial);
+poly d0=det(M6);
+poly d1=det(M6+M7);
+poly d2=det(M6+2*M7);
+poly d3=det(M6+3*M7);
+poly d4=det(M6+4*M7);
+poly d5=det(M6+5*M7);
+poly d6=det(M6+6*M7);
+number pencilLinearCoefficient={linear_coefficient};
+print("NORM_NUMERATOR "+string(numerator(normCoefficient)));
+print("NORM_DENOMINATOR "+string(denominator(normCoefficient)));
+print(
+  "PENCIL_LINEAR_NUMERATOR "
+  +string(numerator(pencilLinearCoefficient))
+);
+print(
+  "PENCIL_LINEAR_DENOMINATOR "
+  +string(denominator(pencilLinearCoefficient))
+);
+""",
+        text=True,
+        capture_output=True,
+        check=True,
+        timeout=timeout,
+    )
+    assert "\n   ? " not in completed.stdout
+    algebra = re.search(
+        r"(?m)^ALGEBRA (\d+) (-?\d+) (-?\d+) (\d+)$",
+        completed.stdout,
+    )
+    assert (
+        algebra is not None
+        and algebra.groups()[:3] == ("3", "0", "6")
+        and int(algebra.group(4)) <= 6
+    ), (
+        algebra.groups() if algebra is not None else None,
+        completed.stdout[-4000:],
+        completed.stderr[-2000:],
+    )
+    numerator_marker = re.search(
+        r"(?m)^NORM_NUMERATOR (.*)$",
+        completed.stdout,
+    )
+    denominator_marker = re.search(
+        r"(?m)^NORM_DENOMINATOR (.*)$",
+        completed.stdout,
+    )
+    pencil_linear_numerator_marker = re.search(
+        r"(?m)^PENCIL_LINEAR_NUMERATOR (.*)$",
+        completed.stdout,
+    )
+    pencil_linear_denominator_marker = re.search(
+        r"(?m)^PENCIL_LINEAR_DENOMINATOR (.*)$",
+        completed.stdout,
+    )
+    assert (
+        numerator_marker is not None
+        and denominator_marker is not None
+        and pencil_linear_numerator_marker is not None
+        and pencil_linear_denominator_marker is not None
+    )
+    r = r_symbol
+    norm_numerator = sp.Poly(
+        sp.sympify(
+            numerator_marker.group(1).replace("^", "**"),
+            locals={"r": r},
+        ),
+        r,
+        domain=sp.QQ,
+    )
+    norm_denominator = sp.Poly(
+        sp.sympify(
+            denominator_marker.group(1).replace("^", "**"),
+            locals={"r": r},
+        ),
+        r,
+        domain=sp.QQ,
+    )
+    pencil_linear_numerator = sp.Poly(
+        sp.sympify(
+            pencil_linear_numerator_marker.group(1).replace("^", "**"),
+            locals={"r": r},
+        ),
+        r,
+        domain=sp.QQ,
+    )
+    pencil_linear_denominator = sp.Poly(
+        sp.sympify(
+            pencil_linear_denominator_marker.group(1).replace("^", "**"),
+            locals={"r": r},
+        ),
+        r,
+        domain=sp.QQ,
+    )
+    primitive = norm_numerator.primitive()[1]
+    factorization = sp.factor_list(primitive.as_expr())
+    norm_denominator_factorization = sp.factor_list(
+        norm_denominator.primitive()[1].as_expr()
+    )
+    pencil_denominator_factorization = sp.factor_list(
+        pencil_linear_denominator.primitive()[1].as_expr()
+    )
+    assert (
+        len(factorization[1]) == 1
+        and factorization[1][0][1] == 1
+        and sp.Poly(factorization[1][0][0], r).degree()
+        == primitive.degree()
+    )
+    assert sp.gcd(primitive, norm_denominator).degree() == 0
+    curve_denominator_polynomial = sp.Poly(
+        sp.sympify(
+            curve_denominator.replace("^", "**"),
+            locals={"r": r},
+        ),
+        r,
+        domain=sp.QQ,
+    )
+    assert sp.gcd(primitive, curve_denominator_polynomial).degree() == 0
+    pencil_gcd = sp.gcd(primitive, pencil_linear_numerator)
+    assert pencil_gcd.degree() == 0
+    known_denominator_factors = {
+        "Q": sp.Poly(3 * r**2 - 10, r, domain=sp.QQ),
+        "curve_pole": curve_denominator_polynomial.primitive()[1],
+        "J": sp.Poly(
+            9801 * r**4 - 4230 * r**2 + 30625,
+            r,
+            domain=sp.QQ,
+        ),
+    }
+    norm_factor_signature = {
+        str(sp.Poly(factor, r).monic().as_expr()): multiplicity
+        for factor, multiplicity in norm_denominator_factorization[1]
+    }
+    pencil_factor_signature = {
+        str(sp.Poly(factor, r).monic().as_expr()): multiplicity
+        for factor, multiplicity in pencil_denominator_factorization[1]
+    }
+    expected_norm_signature = {
+        str(factor.monic().as_expr()): multiplicity
+        for factor, multiplicity in (
+            (known_denominator_factors["Q"], 3),
+            (known_denominator_factors["curve_pole"], 42),
+            (known_denominator_factors["J"], 3),
+        )
+    }
+    expected_pencil_signature = {
+        str(factor.monic().as_expr()): multiplicity
+        for factor, multiplicity in (
+            (known_denominator_factors["Q"], 4),
+            (known_denominator_factors["curve_pole"], 43),
+            (known_denominator_factors["J"], 4),
+        )
+    }
+    assert norm_factor_signature == expected_norm_signature
+    assert pencil_factor_signature == expected_pencil_signature
+    denominator_branches = []
+    for label in ("Q", "J"):
+        factor = known_denominator_factors[label]
+        minpoly = sp.sstr(factor.as_expr()).replace("**", "^")
+        minpoly = re.sub(r"\br\b", "a", minpoly)
+        branch_polynomials = {
+            order: re.sub(r"\br\b", "a", specialized[order])
+            for order in (4, 5, 6, 7)
+        }
+        branch = subprocess.run(
+            [singular, "-q"],
+            input=f"""
+ring branch=(0,a),(s6,s5),dp;
+minpoly={minpoly};
+option(redSB);
+poly q4={branch_polynomials[4]};
+poly q5={branch_polynomials[5]};
+poly q6={branch_polynomials[6]};
+poly q7={branch_polynomials[7]};
+ideal G=std(ideal(q4,q5));
+ideal U=std(ideal(q4,q5,q6,q7));
+print(
+  "BRANCH "+string(size(G))+" "+string(dim(G))+" "
+  +string(vdim(G))+" "+string(reduce(1,U)==0)+" "
+  +string(size(U))
+);
+""",
+            text=True,
+            capture_output=True,
+            check=True,
+            timeout=timeout,
+        )
+        assert "\n   ? " not in branch.stdout, (
+            label,
+            branch.stdout[-4000:],
+            branch.stderr[-2000:],
+        )
+        marker = re.search(
+            r"(?m)^BRANCH (\d+) (-?\d+) (-?\d+) ([01]) (\d+)$",
+            branch.stdout,
+        )
+        assert marker is not None and marker.group(4) == "1", (
+            label,
+            branch.stdout[-4000:],
+        )
+        denominator_branches.append(
+            {
+                "label": label,
+                "factor": str(factor.as_expr()),
+                "degree": factor.degree(),
+                "fiber_groebner_basis_size": int(marker.group(1)),
+                "fiber_dimension": int(marker.group(2)),
+                "fiber_quotient_length": int(marker.group(3)),
+                "mu_4_through_mu_7_unit_ideal": True,
+            }
+        )
+    return {
+        "branch": "t0-open exact rational mu_3-zero curve",
+        "characteristic": 0,
+        "curve_parameter": "r",
+        "fixed_base_values": {
+            "s2": "-3",
+            "t1": "0",
+            "t2": "1",
+            "u": "3",
+        },
+        "curve_substitution": {
+            "s1": "r",
+            "s3": f"({curve_numerator})/({curve_denominator})",
+        },
+        "curve_denominator": curve_denominator,
+        "mu_3_zero_identity": True,
+        "quotient_length": 6,
+        "mu_7_normal_form_support_size": int(algebra.group(4)),
+        "norm_numerator_degree": primitive.degree(),
+        "norm_denominator_degree": norm_denominator.degree(),
+        "primitive_norm_numerator": str(primitive.as_expr()),
+        "primitive_norm_factorization": [
+            {
+                "factor": str(factor),
+                "degree": sp.Poly(factor, r).degree(),
+                "multiplicity": multiplicity,
+            }
+            for factor, multiplicity in factorization[1]
+        ],
+        "norm_denominator_factorization": [
+            {
+                "factor": str(factor),
+                "degree": sp.Poly(factor, r).degree(),
+                "multiplicity": multiplicity,
+            }
+            for factor, multiplicity in norm_denominator_factorization[1]
+        ],
+        "mu_6_mu_7_pencil": {
+            "determinant": "det(M_mu6+z*M_mu7)",
+            "tested_coefficient": "coefficient of z",
+            "coefficient_numerator_degree": (
+                pencil_linear_numerator.degree()
+            ),
+            "coefficient_denominator_degree": (
+                pencil_linear_denominator.degree()
+            ),
+            "coefficient_denominator_factorization": [
+                {
+                    "factor": str(factor),
+                    "degree": sp.Poly(factor, r).degree(),
+                    "multiplicity": multiplicity,
+                }
+                for factor, multiplicity
+                in pencil_denominator_factorization[1]
+            ],
+            "gcd_with_mu_6_norm_numerator_degree": pencil_gcd.degree(),
+        },
+        "mu_7_gives_unit_on_exceptional_divisor": True,
+        "denominator_branches": denominator_branches,
+        "curve_pole_factor": {
+            "factor": str(
+                known_denominator_factors["curve_pole"].as_expr()
+            ),
+            "degree": known_denominator_factors[
+                "curve_pole"
+            ].degree(),
+            "interpretation": (
+                "the rational parametrization is undefined; its "
+                "numerator is coprime, so this is not an affine point "
+                "of the parametrized curve"
+            ),
+        },
+        "scope": (
+            "exact one-parameter successive common-root calculation; "
+            "the irreducible mu_6 norm divisor has no common mu_7 root, "
+            "and the Q and J denominator fibers are unit ideals through "
+            "mu_7; every defined point of this rational curve is excluded"
+        ),
+    }
+
+
 def t0_open_fitting_export(
     singular: str,
     orders: tuple[int, ...],
@@ -1577,6 +2199,29 @@ while(z!=0)
 """
         for order in multiplication_orders
     )
+    denominator_scans = "\n".join(
+        f"""
+for(matrixRow=1;matrixRow<=6;matrixRow++)
+{{
+  for(matrixColumn=1;matrixColumn<=6;matrixColumn++)
+  {{
+    if(M{order}[matrixRow,matrixColumn]!=0)
+    {{
+      matrixEntryCoefficient=leadcoef(M{order}[matrixRow,matrixColumn]);
+      matrixDenominator=polynomialLcm(
+        matrixDenominator,
+        denominator(matrixEntryCoefficient)
+      );
+    }}
+  }}
+}}
+"""
+        for order in multiplication_orders
+    )
+    denominator_clears = "\n".join(
+        f"M{order}=matrixDenominator*M{order};"
+        for order in multiplication_orders
+    )
     parameter_orders = multiplication_orders[1:]
     parameter_variables = [f"z{order}" for order in parameter_orders]
     fitting_ring_variables = ",".join(parameter_variables) or "zaux"
@@ -1587,6 +2232,74 @@ while(z!=0)
     matrix_expression = "N6" + "".join(
         f"+z{order}*N{order}" for order in parameter_orders
     )
+    if len(parameter_orders) <= 1:
+        if parameter_orders:
+            pencil_order = parameter_orders[0]
+            vandermonde = sp.Matrix(
+                [[value**degree for degree in range(7)] for value in range(7)]
+            )
+            inverse_vandermonde = vandermonde.inv()
+            determinant_evaluations = "\n".join(
+                f"matrix E{value}=M6+{value}*M{pencil_order}; "
+                f"poly d{value}=det(E{value});"
+                for value in range(7)
+            )
+            interpolated_coefficients = []
+            for degree in range(7):
+                summands = []
+                for value in range(7):
+                    coefficient = inverse_vandermonde[degree, value]
+                    if coefficient:
+                        summands.append(
+                            f"({coefficient.p}/{coefficient.q})*d{value}"
+                        )
+                interpolated_coefficients.append(
+                    f"""
+poly c{degree}={"+".join(summands)};
+if(c{degree}!=0)
+{{
+  print(
+    "FITTING {degree} "
+    +string(numerator(leadcoef(c{degree})))
+  );
+}}
+"""
+                )
+            fitting_extraction = f"""
+{determinant_evaluations}
+{chr(10).join(interpolated_coefficients)}
+print("BASE "+string(numerator(leadcoef(p3))));
+"""
+        else:
+            fitting_extraction = """
+poly c0=det(M6);
+if(c0!=0)
+{
+  print("FITTING 0 "+string(numerator(leadcoef(c0))));
+}
+print("BASE "+string(numerator(leadcoef(p3))));
+"""
+    else:
+        fitting_extraction = f"""
+ring fitting=({prime},s1,s2,s3,t1,t2,u),(
+  {fitting_ring_variables}
+),dp;
+{mapped_matrices}
+poly baseEquation=imap(fiber,p3);
+matrix combination[6][6];
+combination={matrix_expression};
+poly determinantPolynomial=det(combination);
+poly determinantCursor=determinantPolynomial;
+while(determinantCursor!=0)
+{{
+  print(
+    "FITTING "+string(leadexp(determinantCursor))+" "
+    +string(numerator(leadcoef(determinantCursor)))
+  );
+  determinantCursor=determinantCursor-lead(determinantCursor);
+}}
+print("BASE "+string(numerator(leadcoef(baseEquation))));
+"""
     completed = subprocess.run(
         [singular, "-q"],
         input=f"""
@@ -1597,6 +2310,10 @@ ideal G=std(p4,p5);
 print("ALGEBRA "+string(size(G))+" "+string(vdim(G)));
 {normal_form_declarations}
 {matrix_declarations}
+proc polynomialLcm(poly left, poly right)
+{{
+  return(left*right/gcd(left,right));
+}}
 proc coordinateIndex(poly termValue)
 {{
   if(termValue==1) {{ return(1); }}
@@ -1611,6 +2328,10 @@ poly basisMonomial;
 poly z;
 int basisColumn;
 int basisRow;
+int matrixColumn;
+int matrixRow;
+number matrixEntryCoefficient;
+poly matrixDenominator=1;
 matrix B1[6][6];
 matrix B2[6][6];
 matrix B3[6][6];
@@ -1655,24 +2376,10 @@ B4=B2*B3;
 B5=B3*B3;
 B6=B5*B3;
 {multiplication_matrix_fills}
-ring fitting=({prime},s1,s2,s3,t1,t2,u),(
-  {fitting_ring_variables}
-),dp;
-{mapped_matrices}
-poly baseEquation=imap(fiber,p3);
-matrix combination[6][6];
-combination={matrix_expression};
-poly determinantPolynomial=det(combination);
-poly determinantCursor=determinantPolynomial;
-while(determinantCursor!=0)
-{{
-  print(
-    "FITTING "+string(leadexp(determinantCursor))+" "
-    +string(numerator(leadcoef(determinantCursor)))
-  );
-  determinantCursor=determinantCursor-lead(determinantCursor);
-}}
-print("BASE "+string(numerator(leadcoef(baseEquation))));
+{denominator_scans}
+{denominator_clears}
+print("MATRIX_DENOMINATOR "+string(matrixDenominator));
+{fitting_extraction}
 """,
         text=True,
         capture_output=True,
@@ -1703,6 +2410,12 @@ print("BASE "+string(numerator(leadcoef(baseEquation))));
     assert fitting_values, completed.stdout[-4000:]
     base_marker = re.search(r"(?m)^BASE (.*)$", completed.stdout)
     assert base_marker is not None
+    denominator_marker = re.search(
+        r"(?m)^MATRIX_DENOMINATOR (.*)$",
+        completed.stdout,
+    )
+    assert denominator_marker is not None
+    matrix_denominator = denominator_marker.group(1)
     inverse_variable = "finv"
     open_factor = (
         "u"
@@ -1711,6 +2424,7 @@ print("BASE "+string(numerator(leadcoef(baseEquation))));
         "*(351*(s1^2*u-s2)-901*u)"
         "*((99*(s1^2*u-s2)-274*u)"
         "*(351*(s1^2*u-s2)-901*u)+121680*(s1*u-t1)^2)"
+        f"*({matrix_denominator})"
     )
     polynomials = [base_marker.group(1)] + [
         datum["polynomial"] for datum in fitting_values
@@ -1739,6 +2453,7 @@ print("BASE "+string(numerator(leadcoef(baseEquation))));
                 len(parameter_variables) + 6,
                 6,
             ),
+            "cleared_matrix_denominator": matrix_denominator,
         },
         "open_factor": open_factor,
         "scope": (
@@ -1791,7 +2506,11 @@ def main() -> None:
     parser.add_argument("--t0-open-rank-six", action="store_true")
     parser.add_argument("--t0-open-direct", action="store_true")
     parser.add_argument("--t0-open-reduced", action="store_true")
+    parser.add_argument("--t0-open-localized", action="store_true")
+    parser.add_argument("--t0-open-fixed-fiber", action="store_true")
+    parser.add_argument("--t0-open-curve-norm", action="store_true")
     parser.add_argument("--t0-open-fitting", action="store_true")
+    parser.add_argument("--max-pairs", type=int, default=0)
     parser.add_argument(
         "--t0-open-certificate-only",
         action="store_true",
@@ -1814,8 +2533,53 @@ def main() -> None:
     if (
         arguments.t0_open_direct
         or arguments.t0_open_reduced
+        or arguments.t0_open_localized
+        or arguments.t0_open_fixed_fiber
+        or arguments.t0_open_curve_norm
         or arguments.t0_open_fitting
     ):
+        if arguments.t0_open_fixed_fiber:
+            assert arguments.prime == 0
+            fixed_fiber = t0_open_fixed_fiber_certificate(
+                singular,
+                arguments.timeout,
+            )
+            fixed_fiber["reproduction_command"] = " ".join(sys.argv)
+            if arguments.output:
+                output = Path(arguments.output)
+                if not output.is_absolute():
+                    output = ROOT / output
+                output.parent.mkdir(parents=True, exist_ok=True)
+                output.write_text(
+                    json.dumps(fixed_fiber, indent=2, sort_keys=True) + "\n",
+                    encoding="utf-8",
+                )
+            print(
+                json.dumps(
+                    fixed_fiber,
+                    indent=2,
+                    sort_keys=True,
+                )
+            )
+            return
+        if arguments.t0_open_curve_norm:
+            assert arguments.prime == 0
+            curve_norm = t0_open_rational_curve_norm_certificate(
+                singular,
+                arguments.timeout,
+            )
+            curve_norm["reproduction_command"] = " ".join(sys.argv)
+            if arguments.output:
+                output = Path(arguments.output)
+                if not output.is_absolute():
+                    output = ROOT / output
+                output.parent.mkdir(parents=True, exist_ok=True)
+                output.write_text(
+                    json.dumps(curve_norm, indent=2, sort_keys=True) + "\n",
+                    encoding="utf-8",
+                )
+            print(json.dumps(curve_norm, indent=2, sort_keys=True))
+            return
         export = (
             t0_open_fitting_export(
                 singular,
@@ -1825,14 +2589,23 @@ def main() -> None:
             )
             if arguments.t0_open_fitting
             else (
-                t0_open_reduced_export(
+                t0_open_localized_export(
                     singular,
                     orders,
                     arguments.prime,
                     arguments.timeout,
                 )
-                if arguments.t0_open_reduced
-                else t0_open_direct_export(orders, arguments.prime)
+                if arguments.t0_open_localized
+                else (
+                    t0_open_reduced_export(
+                        singular,
+                        orders,
+                        arguments.prime,
+                        arguments.timeout,
+                    )
+                    if arguments.t0_open_reduced
+                    else t0_open_direct_export(orders, arguments.prime)
+                )
             )
         )
         result = None
@@ -1848,6 +2621,7 @@ def main() -> None:
                     arguments.timeout,
                     arguments.linear_algebra,
                     arguments.eliminate,
+                    arguments.max_pairs,
                 )
         summary = {
             key: value for key, value in export.items() if key != "polynomials"
@@ -1936,6 +2710,7 @@ def main() -> None:
                 arguments.timeout,
                 arguments.linear_algebra,
                 arguments.eliminate,
+                arguments.max_pairs,
             )
     summary = {key: value for key, value in export.items() if key != "polynomials"}
     summary["corrected_moment_set"] = list(range(1, 13)) + [14]
@@ -2083,6 +2858,7 @@ def main() -> None:
                 arguments.timeout,
                 arguments.linear_algebra,
                 arguments.eliminate,
+                arguments.max_pairs,
             ),
             "scope": "finite-field reconnaissance only",
         }

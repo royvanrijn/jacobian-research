@@ -29,17 +29,30 @@ This note closes the frontier requested after the quadratic-leading row:
 > The first four pure equations already imply the same mixed conclusion.
 > The result is uniform in the quartic cross-ratio.
 
-No binary counterexample occurs on these rows.  Together with the already
-proved \(r=2\) row, this removes every case explicitly named in the requested
-degree-five frontier.
+> **Theorem 1.3 — quadruple-root quartic-leading quintic row.**  Suppose
+> \(r=4\) and the binary quartic symbol of \(\Lambda_4\) is a fourth
+> power.  The first five pure equations imply the same mixed conclusion,
+> for arbitrary higher operator jets and arbitrary lower pieces of \(P\).
+> The exact proof is in
+> [the quadruple-root note](BINARY_QUARTIC_QUADRUPLE_ROOT_GVC.md).
 
-There is one status caveat.  The repository did not previously contain a
-theorem for the non-squarefree \(r=4,\deg P=5\) **nonhomogeneous** rows.
-The balanced low-root and split-symbol theorems do not cover arbitrary
-higher operator jets.  Thus Theorems 1.1–1.2 alone do not justify the
-unqualified statement that every binary operator satisfies GVC through
-degree five.  That universal corollary requires those omitted discrete
-order-four partitions as an additional dependency.
+> **Theorem 1.4 — triple-plus-simple quartic-leading quintic row.**
+> Suppose \(r=4\) and the root partition of \(\Lambda_4\) is \((3+1)\).
+> Arbitrary higher operator jets and arbitrary lower pieces of \(P\)
+> satisfy the mixed conclusion.  See the
+> [triple-plus-simple note](BINARY_QUARTIC_TRIPLE_SIMPLE_ROOT_GVC.md).
+
+> **Theorem 1.5 — maximal-multiplicity-two quartic-leading quintic
+> rows.**  The same conclusion holds for root partitions \((2+2)\) and
+> \((2+1+1)\).  See the
+> [double-root note](BINARY_QUARTIC_DOUBLE_ROOT_GVC.md).
+
+No binary counterexample occurs on any degree-five row.  Together with the
+earlier lowest-order results, Theorems 1.1--1.5 prove:
+
+> **Corollary 1.6 — binary GVC through polynomial degree five.**
+> Every constant-coefficient operator in two variables satisfies the GVC
+> conclusion for every polynomial of degree at most five.
 
 ## 2. Weight-defect lemma
 
@@ -662,7 +675,7 @@ Reproduce the \(8{,}778{,}754\) finite-field tuples with:
 The generated modular search record is
 [`binary_degree_five_gvc_face_search.json`](../artifacts/generated-results/binary_degree_five_gvc_face_search.json).
 
-## 8. Why this is not yet the universal degree-five theorem
+## 8. Repeated-root quartic closure
 
 The squarefree row is only the partition \((1,1,1,1)\) of a quartic
 symbol.  The repeated-root partitions have larger leading pure-zero loci.
@@ -697,22 +710,33 @@ Exact moments one through four have radical
  P_5=x^5,\qquad P_5=(x+y)^5,\qquad P_5=y^4L(x,y).
 \tag{8.3}
 \]
-Thus the omitted rows have positive-dimensional leading families; they
-cannot be inferred from the squarefree calculation by specialization.
+These rows have positive-dimensional leading families and cannot be
+inferred from the squarefree calculation by specialization.
 
-The higher-jet problem is finite but still nontrivial.  For example, in
-the \((4)\) row, Weierstrass normalization followed by the weight
-\(w(x)=2,w(y)=1\), \(W=8\), leaves the below-threshold operator terms
+The higher-jet problem is finite but nontrivial.  The
+[quadruple-root theorem](BINARY_QUARTIC_QUADRUPLE_ROOT_GVC.md)
+closes the \((4)\) equality chain at moment five.  The
+[triple-plus-simple theorem](BINARY_QUARTIC_TRIPLE_SIMPLE_ROOT_GVC.md)
+computes the defect-one radical on both families in (8.2), eliminates its
+projective branches, and closes every equality face by moment four.  The
+[double-root theorem](BINARY_QUARTIC_DOUBLE_ROOT_GVC.md)
+does the same for \((2+2)\) and \((2+1+1)\).  Each final face has a
+coordinate-derivative deficit, so the common weight-defect lemma gives
+the arbitrary-jet mixed conclusion.
+
+## 9. First repeated-root jet search
+
+The first filtration architecture capable of moving a defect to depth
+proportional to \(m\) is
 \[
- X^2Y^3,\ XY^4,\ XY^5,\ Y^5,\ Y^6,\ Y^7,
-\tag{8.4}
+ \Lambda=\Lambda_4+\Lambda_5,\qquad P=P_5+P_4.
 \]
-and the equality operator chain
-\[
- X^4,\ X^3Y^2,\ X^2Y^4,\ XY^6,\ Y^8.
-\tag{8.5}
-\]
-An arbitrary-jet elimination theorem for all families in (8.2)--(8.3)
-is not proved here.  This is the precise additional dependency needed
-before upgrading Theorems 1.1--1.2 to “every binary operator through
-polynomial degree five.”
+The \(\Lambda_5\)-selection count and the \(P_4\)-selection count can then
+contribute to the same output layer.  The separate
+[repeated-root jet-search note](BINARY_REPEATED_QUARTIC_GVC_JET_SEARCH.md)
+records bounded faithful-characteristic searches on the
+\((4),(3+1),(2+2)\) orbits and a nested \((4)\)-orbit search with
+\(\Lambda_6,P_3\).  The later exact repeated-root theorems supersede all
+three sampled orbits, while the double-root theorem also closes the
+previously unsampled \((2+1+1)\) orbit.  The modular data remain discovery
+history only.

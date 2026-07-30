@@ -245,6 +245,57 @@ This is strong compatibility evidence, not yet a proof that (2.7d) is a
 homogeneous system of parameters. The corrected zero-fiber equality is
 the next geometric target.
 
+The completed invariant algebra gives a smaller corrected candidate.
+In the conventions below, its first missing quadratic Casimir is
+\[
+ q_2=80\Delta_2.
+\tag{2.7e}
+\]
+The system
+\[
+ \boxed{\mu_1,\ldots,\mu_{12},q_2}
+\tag{2.7f}
+\]
+also has exact Jacobian rank thirteen.  Its Hilbert numerator is
+nonnegative through degree \(120\), has predicted top degree \(64\), no
+observed tail, and coefficient sum \(1\,318\,086\), compared with
+\(9\,226\,602\) for (2.7d).  Two degree-sum-\(92\) mixed
+moment/Casimir controls likewise pass the same necessary test and have
+full rank.
+
+This does not yet identify the unavoidable semistable component of
+\((\mu_1,\ldots,\mu_{13})\).  It does show that (2.7f) removes every
+point with \(\Delta_2\ne0\), leaving only the normalized null-quadratic
+stratum \(F_2=L^2\ne0\) and the boundary \(F_2=0\).  A complete
+weight-\(14\) evaluation test additionally proves that
+\(\mu_{14}\) is independent, modulo the lower-moment span, from every
+degree-\(14\) polynomial in \(q_2,q_4\) inside the generated completed
+algebra.  Thus \(\mu_{14}\) is not simply a polynomial Casimir
+replacement, although equality of their zero divisors in the full
+invariant quotient remains open.  The exact systems, ranks, and
+nonrelation certificate are canonical in
+[`COMPLETED_MOMENT_ALGEBRA_RESEARCH.md`](COMPLETED_MOMENT_ALGEBRA_RESEARCH.md#51-the-cubic-corrected-momentcasimir-comparison).
+
+The first synchronization step is now generically established on the
+nonzero null-quadratic chart.  After \(F_2=X^2\), the exact linear normal
+symbols of \(\mu_2,\mu_3,\mu_4\) have generic rank three.  Their nonzero
+maximal minors share one explicit irreducible cubic pivot \(P(s_2,t_1)\).
+At the integral allowed base \((20,27,36,47,60)\), the full seven-normal
+fiber of \(\mu_2,\ldots,\mu_{12}\) is zero-dimensional modulo \(32003\),
+of length \(195\); good reduction therefore proves characteristic-zero
+transverse isolation on a nonempty open subset.  This replaces the
+generic part of the proposed synchronization calculation by a
+seven-variable normal fiber.  The residual rank locus splits exactly
+into two three-dimensional quadratic-field components and one
+two-dimensional rational locus, all disjoint from \(P=0\).  Full
+seven-normal fibers at good reductions of exact algebraic points on
+\(P=0\) and both quadratic components again have dimension zero and
+length \(195\); the lower rational locus has dimension zero and length
+\(197\).  Thus transverse isolation holds on a nonempty open subset of
+every linear-rank stratum.  Proper closed subsets inside those strata
+and the separate \(F_2=0\) chart remain open; see
+[`COMPLETED_MOMENT_ALGEBRA_RESEARCH.md`](COMPLETED_MOMENT_ALGEBRA_RESEARCH.md#52-generic-synchronization-on-the-null-quadratic-chart).
+
 ### 2.2 The global quadratic anchor and the torus-fixed test
 
 The complete Clebsch--Gordan change of basis can be inverted exactly. In
@@ -1044,6 +1095,242 @@ a rank-six fiber, with generic rank-six presentations on every new
 lower-dimensional coefficient specializations, the inherited
 \(Q_*,J_*\) later-moment radicals, or the common radical.
 
+The first common-root step can be certified without expanding the
+six-parameter norm.  At the exact rational base
+
+\[
+ (s_1,s_2,s_3,t_1,t_2,u)
+ =
+ \left(-3,-3,\frac{33467}{26028},0,1,3\right),       \tag{5.12u}
+\]
+
+the base equation \(\mu_3=0\), while
+\[
+ (Q_*,J_*,K,H)=(51,7077924,7827,26668476).
+\]
+Over \(\mathbb Q[s_6,s_5]\), the ideal
+\((\mu_4,\mu_5)\) has the same leading monomials as in (5.12r) and
+quotient length six, but
+\[
+ (\mu_4,\mu_5,\mu_6)=(1).
+\]
+Consequently the multiplication norm of \(\mu_6\) is not identically
+zero on the local base component through (5.12u).  The common-root locus
+is contained in a proper norm divisor there, and a nonempty
+characteristic-zero base neighborhood is excluded.  This fixed-fiber
+certificate is exact and completes in under a second; it does not
+compute the norm divisor or cover its specializations.
+
+The point (5.12u) lies on an exact rational curve in the same base:
+
+\[
+\begin{gathered}
+ s_1=r,\quad s_2=-3,\quad t_1=0,\quad t_2=1,\quad u=3,\\
+ s_3=
+ \frac{2916r^3+810r^2-2511r-3025}
+      {54(36r^3-r+5)}.                               \tag{5.12v}
+\end{gathered}
+\]
+
+Substitution proves \(\mu_3=0\) identically.  In the rank-six algebra
+defined by \((\mu_4,\mu_5)\), exact multiplication matrices give
+
+\[
+ \det M_{\mu_6}=\frac{N_{198}(r)}{D_{144}(r)},        \tag{5.12w}
+\]
+
+where the primitive numerator \(N_{198}\) is irreducible over
+\(\mathbb Q\).  The normal form of \(\mu_7\) occupies all six standard
+monomials.  More decisively, the coefficient of \(z\) in
+
+\[
+ \det(M_{\mu_6}+zM_{\mu_7})
+\]
+
+has numerator degree \(209\), denominator degree \(153\), and numerator
+coprime to \(N_{198}\).  Hence away from the curve and border
+denominators, either \(\mu_6\) is a unit or some linear combination of
+\(\mu_6,\mu_7\) is a unit.
+
+The denominator factors are exactly
+\[
+ (3r^2-10)^3(36r^3-r+5)^{42}
+ (9801r^4-4230r^2+30625)^3
+\]
+for (5.12w), with multiplicities \(4,43,4\) for the next pencil
+coefficient.  The quadratic and quartic factors are respectively the
+specialized \(Q_*=0\) and \(J_*=0\) divisors.  Direct exact calculations
+over their degree-two and degree-four number fields give quotient length
+five for \((\mu_4,\mu_5)\) and
+\[
+ (\mu_4,\mu_5,\mu_6,\mu_7)=(1)
+\]
+on both.  The cubic factor is the denominator in (5.12v); its numerator
+is coprime, so its roots are poles rather than affine points of the
+parametrized curve.  Every defined point of the rational curve (5.12v)
+is therefore excluded.  The full calculation takes under three seconds
+and is the first successive Fitting exclusion on the \(t_0\)-open.
+
+The global interpolation size can now be measured without expanding the
+five-variable determinant.  Write
+\[
+ \mu_3=a_2s_3^2+a_1s_3+a_0
+\]
+over the remaining base variables.  At a specialization where this
+quadratic has two distinct roots, two rank-six evaluations recover the
+\(1,s_3\) residue coordinates of \(c_0=\det M_{\mu_6}\) and
+\(c_1=[z]\det(M_{\mu_6}+zM_{\mu_7})\) modulo \(\mu_3\).
+Fifteen exact directional reconstructions, using two unrelated base
+points and the primes \(1019,2039\), each fit on 400 paired samples and
+verify on 50 unused pairs.  Every line gives
+\[
+ \operatorname{den}(c_0)=a_2^{41}Q_*^3J_*^3,\qquad
+ \operatorname{den}(c_1)=a_2^{42}Q_*^4J_*^4.         \tag{5.12x}
+\]
+The largest observed numerator/denominator profiles occur in the
+\(u\)-direction: \(177/91,176/91\) for the two \(c_0\) coordinates and
+\(185/96,184/96\) for \(c_1\).  All directional numerator slices are
+nearly dense.  This is stable modular interpolation evidence and a
+degree/denominator budget, not a reconstruction of the multivariate
+numerators or a common-root theorem.  In particular, a tensor grid would
+recreate the original blow-up and is not the next algorithm.
+
+The same paired-root engine now evaluates all seven coefficients
+\(c_0,\ldots,c_6\) of the determinant pencil.  Forty-four deterministic
+random shards at \(p=43,47,59,71\), each protected by a \(20\)-second
+internal guard, tried \(46475\) base points and accepted \(19800\) bases
+where \(\mu_3(s_3)\) has two distinct roots.  Thus the bounded scout
+tested
+\[
+ 39600\ \text{\(\mu_3\)-roots},\qquad
+ 20\ \text{points with }c_0=\cdots=c_6=0.            \tag{5.12y}
+\]
+Direct Gröbner replay of
+\((\mu_4,\mu_5,\mu_6,\mu_7)\) at all twenty points gives a reduced
+length-one quotient.  The block matrices satisfy
+\(\operatorname{rank}[M_6\ M_7]=5\) and
+\(\operatorname{rank}[M_6\ M_7\ M_8]=6\) at every point.  Nineteen use
+the leading five columns of \(M_6\) as a nonzero \(5\)-by-\(5\) pivot;
+one replaces the fifth column by the first column of \(M_7\).  The first
+column of \(M_8\) restores full rank in both charts.
+
+Direct specialization-safe scouts at \(p=43\) also test \(900\)
+\(\mu_3\)-roots on each of \(Q_*=0,J_*=0,K_*=0,H_*=0\).  The generic
+\((\mu_4,\mu_5)\) lengths are five on \(Q_*,J_*\) and six on
+\(K_*,H_*\), with lower length drops recorded on the first two.
+\(Q_*\) and \(J_*\) each contain one sampled reduced common point through
+\(\mu_7\); both are excluded by \(\mu_8\), while no such point occurs
+in the \(K_*,H_*\) samples.  Reconstructing every full normalized
+parameter point and evaluating the original corrected moment formula
+gives \(\mu_8\ne0\).  Fixed-point evaluation stops at the first nonzero
+later moment and never expands a global \(\mu_{14}\).
+This is exact bounded finite-field evidence, not an exhaustion: the
+common-\(\mu_6,\mu_7\) incidence is expected to have positive dimension,
+so the absence of a \(\mu_8\)-survivor in these samples is not a global
+or divisor exclusion.
+
+The lower-dimensional continuation can nevertheless be made explicit
+without a large elimination.  Additional direct \(p=43\) scouts cover
+\(K=H=0\), the three relevant \(Q,J,K,H\) intersections, \(a_2=0\), and
+the repeated-root divisor of \(\mu_3(s_3)\).  Together with enlarged
+\(Q=0\) and \(J=0\) shards they retain every specialized fiber at
+\(31\) deterministic artifacts.  Seventeen reduced common points through
+\(\mu_7\) occur across these strata; direct evaluation of the original
+corrected moment formula gives \(\mu_8\ne0\) at all seventeen.
+
+A separate rank-complement scout evaluates \(6300\) further
+\(\mu_3\)-roots.  Four points miss both selected \(5\)-by-\(5\) pivots,
+including one with \(\operatorname{rank}M_6=3\), but all four satisfy
+\[
+ \operatorname{rank}[M_6\ M_7]=6.
+\]
+No sampled point has joint rank at most four.  Four additional full-pencil
+zeros through \(\mu_7\) are again excluded by \(\mu_8\).  Thus the two
+named pivots are not a global chart cover, while the full joint-rank
+condition remains the correct invariant.
+
+More importantly, `liftstd` exposes the specialization border hidden by
+the reduced rational-function-field bases.  The least common multiple of
+the lifted leading coefficients is a single irreducible polynomial modulo
+\(43\) on every displayed stratum:
+
+\[
+\begin{array}{c|c|c|c}
+\text{stratum}&\text{generic length}&(\deg,\text{terms})&
+ \text{sampled drops / border zeros}\\ \hline
+Q&5&(36,578)&132/132\\
+J&5&(36,1245)&136/136\\
+K&6&(22,16)&0/0\\
+H&6&(36,15)&0/0\\
+K\cap H&6&(4,1)&0/0\\
+Q\cap J\cap H&4&(59,2997)&171/263\\
+J\cap H&4&(57,1399)&151/226\\
+J\cap K&5&(29,166)&77/77\\
+a_2=0&6&(33,187)&0/0 .
+\end{array}                                             \tag{5.12z}
+\]
+
+Thus every sampled length drop lies on the exact modular border.
+Conversely the border is exact on the \(Q,J,J\cap K\) samples; on the two
+deeper \(H\)-intersections some border points use another basis of the
+same length.  Enlarging the \(Q,J\) point clouds gives \(132,136\) drop
+points.  In both cases the degree-at-most-four evaluation matrix has
+\(126\) columns and rank \(120\); its six-dimensional kernel is exactly
+the ambient cubic component equation and its five linear multiples.
+There is no extra drop equation through degree four.
+
+Since both \(\mu_3\) and the borders are quadratic in \(s_3\), their
+projection is a small resultant rather than a multivariate Gröbner
+problem.  Factoring these resultants modulo \(43\), after removing
+\(u=0\) and inherited linear intersections, gives the residual components
+
+\[
+\begin{array}{c|c}
+\text{stratum}&(\deg,\text{terms},\text{multiplicity})\\ \hline
+Q&(20,195,2)\\
+J&(24,612,2)\\
+J\cap K&(24,161,2)\\
+Q\cap J\cap H&(20,101,1),(24,161,1),(24,163,3)\\
+J\cap H&(20,54,3),(24,143,1),(24,143,1).
+\end{array}                                             \tag{5.12aa}
+\]
+
+Writing the two quadratics as
+\(as_3^2+bs_3+c\) and \(ds_3^2+es_3+f\), their first
+pseudo-remainder is
+\[
+ A s_3+B,\qquad A=db-ae,\quad B=dc-af.                \tag{5.12ab}
+\]
+On every residual factor in (5.12aa), direct modular gcd computation gives
+\(\gcd(A,R)=\gcd(B,R)=1\).  Hence every such component has the dense
+linear pivot \(s_3=-B/A\); the failures of this pivot are precisely the
+recorded \(u=0\) and inherited linear factors.
+
+The \(Q=0\) row admits a direct characteristic-zero promotion.  Over
+\(\mathbb Q(s_1,s_3,t_1,t_2,u)\), the lifted leading border is irreducible
+of degree \(36\) with \(588\) terms.  Its exact resultant with \(\mu_3\)
+has \(5563\) terms, degree \(76\), and factors as
+\[
+ c\,u^{20}\,J_Q^4\,R_{20}^2,                          \tag{5.12ac}
+\]
+where \(J_Q\) is the irreducible four-term quartic cutting out the
+inherited \(Q\cap J\) locus and \(R_{20}\) is irreducible over
+\(\mathbb Q\), with degree \(20\) and \(200\) terms.  The exact
+pseudo-remainder coefficients \(A,B\) have term/degree profiles
+\((262,33)\), \((535,38)\), and both are coprime to \(R_{20}\).
+Reduction modulo \(43\) gives the corresponding \(Q\)-row data above
+up to nonzero scalars.
+
+The remaining rows of (5.12z)--(5.12ab) are exact finite-field
+calculations and sampled incidence checks, not characteristic-zero
+factorizations or component exclusions.  Even on the exact
+\(Q\)-component, general-purpose Gröbner recomputation exceeds the
+\(20\)-second guard after the linear pivot.  The next bounded
+implementation should therefore perform custom quotient arithmetic in
+the degree-five and degree-six extensions defined by the residual
+factors, reduce \(\mu_4,\ldots,\mu_8\) there, and recurse only on the
+exceptional subresultant loci.
+
 An attempted branchwise continuation through corrected \(\mu_8\) exposed
 an important content issue.  Singular's `cleardenom` removes polynomial
 content, so applying it to a fiber-constant base equation can replace that
@@ -1055,8 +1342,16 @@ fraction-free reductions of \(\mu_8\) also exceed the recorded
 \(600\)-second bound.  Thus \(\mu_6,\mu_7\) are reduced exactly on the
 deepest branch and (5.12q), together with the other four saturated unit
 computations, closes the whole \(t_0=0\) divisor.  On the \(t_0\)-open,
-(5.12r) now reduces \(\mu_6\) in a generic rank-six algebra, but its
-successive common-root/Fitting equations, the lower-dimensional
+(5.12r) reduces \(\mu_6\) in a generic rank-six algebra and (5.12u)
+proves that its first norm is nonzero on one exact local base component,
+while (5.12v)--(5.12w) close one dense rational curve through its
+irreducible norm divisor.  The bounded scout (5.12y) confirms that the
+full determinant-pencil test and direct higher-moment replay can be run
+in short shards, but it does not replace elimination.  The next exact
+step is to construct the common-pencil incidence itself and intersect
+its components with \(\mu_8\), before continuing to later moments.  The
+global norm divisor, its successive common-root/Fitting equations, the
+lower-dimensional
 coefficient strata and inherited \(Q_*,J_*\) branch radicals, and
 corrected orders \(7,8,9,10,11,12,14\) remain unresolved.  Neither a
 semistable moment-zero point nor a radical equality follows from the

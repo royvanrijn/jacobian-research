@@ -53,6 +53,15 @@ dimension-by-dimension classification is therefore:
 \]
 Accordingly, there is no remaining Gaussian-dimension problem.
 
+Long's contemporaneous
+[factorially weighted multitorus theorem](FACTORIALLY_WEIGHTED_MULTITORUS_THEOREM.md)
+contains the two-real conclusion as a rank-one specialization and proves a
+stronger one-radial classification in arbitrary angular torus rank,
+including eventual pure vanishing and prime-index nonvanishing.  The public
+overlap is credited in the canonical theorem note and paper.  This does not
+reopen higher-dimensional GMC: ordinary higher-dimensional Gaussian
+expectation is multi-radial and lies outside Long's one-radial functional.
+
 The next finite problem is optimization in the first failing dimension:
 classify minimal three-real-variable witnesses.  The
 [minimal-failures program](THREE_REAL_GMC_MINIMAL_FAILURES.md) proves that

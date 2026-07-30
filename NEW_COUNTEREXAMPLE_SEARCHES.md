@@ -4,6 +4,34 @@ This note records the first active pass on the five proposed searches.  It
 separates exact conclusions from computational evidence and from new search
 targets.
 
+## Universal moment-search preflight
+
+Before enumerating coefficients for any Gaussian, Image-Mathieu, or weighted
+constant-term candidate, test whether its algebra and functional admit an
+exact intertwining embedding into
+
+\[
+ \Gamma_r(u^nz^\mu)=n!\mathbf1_{\mu=0}.
+\]
+
+Christopher D. Long's
+[factorially weighted multitorus theorem](extended-geometry/FACTORIALLY_WEIGHTED_MULTITORUS_THEOREM.md)
+proves that every such kernel is Mathieu--Zhao, for arbitrary angular torus
+rank.  This removes the entire one-factorial-radial architecture from
+counterexample searches:
+
+1. if the origin is outside the torus-weight convex hull, support separation
+   forces eventual mixed vanishing;
+2. if the origin is inside, one fixed power has nonzero pure moments at every
+   sufficiently large prime dilation.
+
+Finite zero prefixes cannot evade the second branch.  A retained search must
+exhibit several independent radial directions, a non-prime-separating radial
+functional, or a proved failure of functional/multiplicative intertwining.
+Do not apply the sieve to ordinary multi-pair Gaussian or SIC contraction
+solely because their angular torus has low rank: their product-factorial
+radial functionals are outside its hypotheses.
+
 ## A. Positive-characteristic infinitesimal synchronization
 
 Let \(k\) be a field of characteristic \(p>0\), let \(R\) be monic and
@@ -355,3 +383,240 @@ quadratic source and target vector fields, then test local nilpotence and
 slices.  The completed linear and affine audits prove that degree zero and
 one contain no new quotient, so quadratic degree is the first meaningful
 case.
+
+## F. LND ideal-image Mathieu search
+
+This search is attached to the Image/Mathieu chain, but it is not a
+compression of the known two-pair counterexample.  For a global slice
+\(D=\partial_s\), the exact primitive criterion closes three large classes:
+
+1. all zero-dimensional carrier-free ideals, including nonreduced schemes;
+2. ideals \(I=qJ\) with \(q\) monic of positive \(s\)-degree and \(B/J\)
+   finite-dimensional, including nonreduced \(J\);
+3. \(q=x^c(xs-1)^d\) with the finite residual scheme supported at its
+   degree-drop point.
+
+The proofs and exact replays are in
+[`LND_MATHIEU_SLICE_CONDUCTOR_FRONTIER.md`](extended-geometry/LND_MATHIEU_SLICE_CONDUCTOR_FRONTIER.md).
+Thus the old broad instruction “search small \(qJ\)” is too wasteful.  The
+first exact pass should use only:
+
+\[
+ \deg_s q>0,\ q\text{ nonmonic},
+\]
+
+excluding the normalized repeated carrier \(x^c(xs-1)^d\).  Support \(J\)
+over a multiple or reducible vanishing divisor of the leading
+\(s\)-coefficient.  This is where roots escape the monic slice and where
+valuation/conductor saturation can still change the image.
+
+The bounded compiler should output, for each primary chart:
+
+1. the primitive-membership matrix modulo \(J\);
+2. the leading-coefficient and carrier valuations;
+3. the normalization branches and conductor quotient;
+4. the exposed support faces of \(f\);
+5. pure and mixed sequences in recurrence-ready form.
+
+Reject a chart immediately if it has a strict support separator, only
+reduced interval moments, or a unique valuation face.  Promote nothing
+without an all-order primitive certificate and an infinite mixed
+nonmembership certificate.
+
+The first exact bounded compiler
+`scripts/search_lnd_nonmonic_degree_drop.py` audits the normalized carriers
+\(x^c(xs-1)^d\) for \((c,d)=(0,1),(0,2),(1,1)\), three small primary
+residual schemes, and 256 sparse seeds.  Its primitive-carrier assertion is
+a regression for the support-weight theorem; every finite search result is
+only a replay or candidate audit.
+
+The next compiler, `scripts/search_lnd_plinth_ideal_images.py`, crosses the
+plinth divisor of \(D=x\partial_y+y\partial_z\) by constructing each
+homogeneous space \(D(I_n)\) exactly.  Five ideals and 45 sparse seeds leave
+thirteen pure-prefix survivors, all divisible by the visible plinth
+coordinate \(x\), and no bounded mixed-tail obstruction.
+
+The exact reducible-plinth compiler
+`scripts/search_lnd_reducible_plinth.py` then treats
+
+\[
+ D=x(x-1)\partial_y+y\partial_z,
+\]
+
+using the weight grading \((0,1,2)\) and Singular standard bases over
+\(\mathbf Q[x]\).  Five ideals coupling \(x=0\) and \(x=1\) and 205
+branch-aware seeds leave fourteen pure-prefix survivors.  They are exactly
+the displayed support-cone forms \(x(x-1)y^r\), \(1\leq r\leq3\), and none
+has a bounded mixed-tail obstruction.  The same compiler now also treats
+
+\[
+ D=x(x-1)\partial_y+y^2\partial_z,
+\]
+
+with grading \((0,1,3)\).  Five coupled ideals and 210 seeds leave
+seventeen pure-prefix survivors, all \(x(x-1)y^r\) for
+\(1\leq r\leq4\), and again no bounded mixed-tail obstruction.  The first
+branch-asymmetric target
+
+\[
+ D=x(x-1)\partial_y+(y^2+x)\partial_z,
+\]
+
+admits an exact normalized-primitive compiler despite breaking the grading.
+Across eight ideals, including three mixed-weight jet charts, and 350
+mixed-weight seeds, it leaves 48 chartwise survivors representing only
+seven distinct forms.  All seven are divisible by \(x(x-1)\), and none
+has a bounded mixed-tail obstruction.
+
+Two disjoint points on the invariant \(x\)-line therefore do not provide
+enough conductor interaction.  The crossing-plinth LND
+
+\[
+ D=uv\partial_y+(y^2+u)\partial_z
+\]
+
+on \(k[u,v,y,z]\) makes the plinth components \(u=0\) and \(v=0\)
+intersect.  An exact normalized-primitive search over \(\mathbf Q[u,v]\)
+tests five zero-dimensional crossing ideals and 956 seeds.  Its 177
+chartwise survivors represent 36 distinct forms, all divisible by \(uv\);
+no mixed-tail obstruction survives, and every non-\(uv\) seed already
+fails by its square.  This removes the simplest crossing-divisor route.
+
+The nonprincipal plinth ideal begins with
+
+\[
+ D=u\partial_x+v\partial_y,\qquad \ker D=k[u,v,uy-vx].
+\]
+
+Here the local slices \(x/u\) and \(y/v\) have a genuine overlap cocycle
+along the codimension-two plinth locus \((u,v)\), rather than a single
+product denominator.  The exact finite-residual audit tests five ideals
+and 1,055 seeds.  It leaves 494 chartwise survivors representing 100
+distinct forms, all in \((u,v)A\), and no mixed obstruction.  Every seed
+outside that support cone fails at its first power.
+
+The positive-dimensional continuation begins with \(I=(u,v,x)\).  Here
+there is an exact identity
+
+\[
+ D(I)=\operatorname {Im}D\cap
+ \ker\bigl(h\mapsto[v^1]h(0,v,0,y)\bigr).
+\]
+
+More generally, with \(\mathfrak p=(u,v)\), the base-degree grading gives
+
+\[
+ \operatorname {Im}D\cap\mathfrak p^N
+ =D(\mathfrak p^{N-1}).
+\]
+
+The known rank-two linear-derivation theorem for \(\operatorname {Im}D\)
+therefore proves all-order that \(D(I)\) is Mathieu--Zhao for every ideal
+containing a power of \(\mathfrak p\).  This includes
+\((u,v,\ell(x,y))\) with \(\ell\ne0\) and every nilpotent jet below.
+
+Four positive-dimensional nilpotent jets were then searched exactly
+without truncating their free \(y\)-direction.  Across all five charts,
+1,055 seeds leave 289 chartwise survivors representing 75 forms, all in
+\((u,v)A\), and no mixed obstruction.  The theorem independently proves
+all five charts safe.  The live counterexample target is now \(I=(x)\):
+modulo \(x\), the invariant image is \(k[u,v,uy]\), has positive module
+rank, and is not controlled by plinth-power saturation.
+
+For this ideal, primitive membership is the exact support inequality
+\(a\ge c\) on every residue monomial \(u^av^by^c\).  The first
+valuation-face search tests 1,055 seeds.  Forty-eight survive six pure
+powers, all divisible by \(u\), with no mixed-tail obstruction; every
+failed seed dies by its square.  Finite Neumann-series inversions prove
+all-order safety when \(\nu_u(f)>\deg_yf\), or when
+\(\nu_v(f)>\deg_xf\) and the \(u\)-minus-\(y\) support weight is positive.
+The local-slice argument generalizes further: every
+\(f=u^rF\), \(r\ge1\), with \(F\in\ker(D)[x]\), has the mixed-power
+conclusion.  All 48 survivors lie in \(u\ker(D)[x]\), including the three
+affine forms left by the strict cones, so the entire survivor list is
+proved safe to all orders.
+
+The suggested square gate is false after an algebraic scalar extension.
+For
+\[
+ p(t)=2t-1+\frac{\sqrt{-15}}3(6t^2-6t+1),
+\]
+the first two moments on \([0,1]\) vanish but the third does not.
+Homogenizing and substituting \(z=uy\), \(w=uy-vx\) gives an exact
+\(f\) with \(f,f^2\in D((x))\) and \(f^3\notin D((x))\).  This falsifies
+the finite shortcut, not LNED.
+
+The full eventual-power hypothesis does close the ideal.  In the local
+slice \(A\subset k[u,v,uy-vx]_u[x]\), a nonpositive lowest \(u\)-face
+would make all sufficiently large interval moments of one nonzero
+polynomial vanish.  Passing to a fixed sufficiently high power and using
+the one-variable polynomial moment lemma gives a contradiction.  The
+lowest \(u\)-order is therefore positive, putting \(f\) in
+\(u\ker(D)[x]\), where the existing local-slice theorem supplies every
+mixed tail.  Hence \(D((x))\), and by simultaneous linear change
+\(D((\ell(x,y)))\) for every nonzero linear form \(\ell\), is
+Mathieu--Zhao.  Divisibility bootstrapping then proves the same for every
+thickening \(D((\ell^d))\), \(d\ge1\).
+
+The first reducible target \(I=(xy)\) also closes all-order, for a
+different reason.  Over the invariant fraction field, \(xy\) has the two
+distinct local-slice roots \(0\) and \(-(uy-vx)/v\).  A primitive in
+\((xy)\) vanishes at both, so eventual pure-power membership gives all
+large interval moments between those roots.  The one-variable moment
+lemma forces the seed to be zero.  More generally, every principal carrier
+with two distinct roots on the generic additive-group orbit has zero
+Mathieu radical.  This also closes \(I=(x(x-1))\).
+
+The first invariant-content controls also close.  Since
+\(D(uxA)=uD(xA)\), the local-slice proof for \(D((x))\) tolerates the
+single fixed multiplier denominator \(u^{-1}\).  In the crossed case,
+pure membership in \(uD(yA)\) forces
+\(f\in uA\cap v\ker(D)[y]=uv\ker(D)[y]\); its \(u^mv^m\) content clears
+both fixed denominator losses.  By symmetry,
+\[
+ D((a\ell))\text{ is Mathieu--Zhao}
+ \quad(a\in\{u,v\},\ \ell\in\{x,y\}).
+\]
+
+The first genuinely rational ladder also closes.  For
+\(q_n=u^nx+(uy-vx)\), \(n\ge1\), normalization of \(A/(q_n)\) gives the
+exact support cone \(u^av^bt^c:a\ge(n+1)c\).  The apparent second-face
+obstruction \(y=v(q_n-w)/u^{n+1}+w/u\) invalidates divisibility of an
+arbitrary coefficient, but the actual lowest \(u\)-face retains a
+\((q_n-w)\)-factor.  Eventual pure powers therefore force
+\(f\in u\ker(D)[q_n]\) by the one-variable moment lemma, and this content
+clears every fixed mixed-tail denominator.  Hence every
+\(D((q_n))\) is Mathieu--Zhao.  For \(q_1\), the exact bounded census has
+seventeen survivors on powers \(4,5,6\), all in the proved safe cone.
+
+The first tied family closes as well.  For
+\(q_{r,s}=u^rv^sx+(uy-vx)\), \(r,s\ge1\), quotient normalization gives
+the simultaneous exact cone
+\[
+ a\ge(r+1)c,\qquad b\ge sc.
+\]
+Independent lowest-face moment arguments force positive \(u\)- and
+\(v\)-content, hence \(f\in uv\ker(D)[q_{r,s}]\); the resulting
+\((uv)^m\) clears every fixed mixed denominator.  For \(q_{1,1}\), eight
+of 1,055 seeds survive powers \(4,5,6\), all in the proved safe cone.
+
+The intercept can in fact be arbitrary: replacing \(w\) by any
+\(b\in\ker(D)\) merely replaces the moment endpoint \(w\) by \(b\).
+The zero-intercept case reduces to invariant content times the
+moving-linear theorem.  Hence every
+\[
+ q=u^rv^sx+b,\qquad r\ge1,\ s\ge0,\ b\in\ker(D),
+\]
+is safe.
+
+Generic nonmonomial slopes close prime by prime.  For coprime
+\(q=ax+b\), every prime factor of \(a\) forces growing content, and the
+\(u\)-face does the same unless
+\[
+ v(b\bmod u)=(a\bmod u)w.
+\]
+Off this locus, \(D((q))\) is Mathieu--Zhao.  On it, \(q\in uA\) despite
+\(\gcd(a,b)=1\) in \(B[x]\): this is a genuine conductor cancellation.
+
+The next principal target is therefore the aligned conductor-descent
+locus, plus removal of nontrivial common invariant content.

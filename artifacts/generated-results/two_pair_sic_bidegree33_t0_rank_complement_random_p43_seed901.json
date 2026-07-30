@@ -1,0 +1,109 @@
+{
+  "attempted_base_count": 530,
+  "candidate_replays": [
+    {
+      "dimension": 0,
+      "higher_moment_evaluation": {
+        "all_corrected_moments_zero": false,
+        "evaluated_orders": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "first_nonzero_order": 8,
+        "full_parameter_point": {
+          "s0": 31,
+          "s1": 39,
+          "s2": 19,
+          "s3": 19,
+          "s4": 4,
+          "s5": 15,
+          "s6": 3,
+          "t0": 1,
+          "t1": 39,
+          "t2": 13,
+          "t3": 36,
+          "t4": 37
+        },
+        "moment_values": {
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 28
+        },
+        "status": "evaluated directly from the corrected moment formula"
+      },
+      "sample_index": 273,
+      "standard_basis": [
+        "s5-15",
+        "s6-3"
+      ],
+      "standard_basis_size": 2,
+      "vector_space_dimension": 1
+    }
+  ],
+  "common_pencil_zero_sample_count": 1,
+  "common_pencil_zero_samples": [
+    {
+      "base": {
+        "s1": 39,
+        "s2": 19,
+        "t1": 39,
+        "t2": 13,
+        "u": 25
+      },
+      "pencil_coefficients": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "pivot_signature": {
+        "completion_determinant": 8,
+        "completion_to_pivot_ratio": 26,
+        "mu8_completion_column_zero_based": 0,
+        "pivot_columns_B7_zero_based": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "pivot_determinant": 40,
+        "pivot_rows_zero_based": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "rank_B7": 5,
+        "rank_B8": 6
+      },
+      "s3": 19,
+      "sample_index": 273
+    }
+  ],
+  "format": "two-pair-sic-bidegree33-t0-fitting-samples-v2",
+  "pivot_scout": true,
+  "prime": 43,
+  "random_seed": 901,
+  "rank_at_most_four_sample_count": 0,
+  "rank_at_most_four_samples": [],
+  "reproduction_command": "scripts/research_two_pair_sic_bidegree33_t0_fitting_interpolation.py --prime 43 --sample-count 225 --random-seed 901 --max-attempts 6000 --pivot-scout --timeout 20 --output artifacts/generated-results/two_pair_sic_bidegree33_t0_rank_complement_random_p43_seed901.json",
+  "sample_count": 225,
+  "sampling_mode": "random",
+  "selected_pivot_complement_sample_count": 0,
+  "selected_pivot_complement_samples": [],
+  "status": "bounded modular determinant-pencil samples; not a proof"
+}

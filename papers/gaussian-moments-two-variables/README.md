@@ -16,6 +16,14 @@ The proof has four dependencies:
 3. the Duistermaat--van der Kallen constant-term theorem;
 4. the filtered Frobenius isolation lemma after reduction modulo a prime.
 
+A contemporaneous manuscript of Christopher D. Long,
+[*A Factorially Weighted Constant-Term Theorem on Algebraic
+Tori*](https://github.com/octonion/mathematics/blob/main/gmc/gmc2_stronger_arbitrary_torus.tex),
+proves a stronger one-radial theorem in arbitrary torus rank.  Its rank-one
+specialization overlaps the theorem in this paper.  The paper credits that
+overlap explicitly; the repository's local comparison and proof audit are in
+[`../../extended-geometry/FACTORIALLY_WEIGHTED_MULTITORUS_THEOREM.md`](../../extended-geometry/FACTORIALLY_WEIGHTED_MULTITORUS_THEOREM.md).
+
 A companion Lean 4 package is located at
 [`../../formal/gmc2`](../../formal/gmc2/README.md).  It checks
 the full bivariate theorem, from the circular substitution and Wick formula

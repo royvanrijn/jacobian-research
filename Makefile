@@ -22,6 +22,8 @@ ALL_PAPERS := $(VERIFIED_PAPERS) $(PARKED_PAPERS) $(COMPANION_PAPERS)
 	verify-external-consequences verify-restricted-minima verify-two-real-gmc verify-sic2c4 verify-factorial-moments verify-factorial-frontier verify-counterexample-scoreboard verify-plane-jc verify-plane-case2-residue-strata verify-plane-case2-j1-endpoint verify-plane-case2-maximal-gcd verify-plane-case2-gcd6 verify-plane-poisson-radical verify-plane-poisson-primary-charts verify-plane-poisson-separators verify-plane-poisson-primary-filtration verify-plane-poisson-filtered-modules verify-weighted-boundary verify-quartic-degree-drop-quantization \
 	verify-plane-72-108-exact-fast \
 	verify-lr-rees-sagbi \
+	verify-lr-rooted-trees \
+	verify-lr-mixed-bch \
 	verify-plane-sparse-supports verify-plane-support-bridge \
 	verify-linear-torus-free verify-algebraic-torus-free \
 	verify-master \
@@ -83,22 +85,46 @@ ALL_PAPERS := $(VERIFIED_PAPERS) $(PARKED_PAPERS) $(COMPANION_PAPERS)
 	verify-fixed-map-hasse-failures \
 	refresh-multiplicative-hasse-artifact
 .PHONY: verify-hilbert14-invariants
+.PHONY: verify-lnd-radical-slice-fibers
+.PHONY: search-lnd-nonmonic-degree-drop
+.PHONY: search-lnd-plinth-ideal-images
+.PHONY: search-lnd-reducible-plinth
+.PHONY: search-lnd-crossing-plinth
+.PHONY: search-lnd-nonprincipal-plinth
+.PHONY: search-lnd-positive-dimensional-plinth
+.PHONY: search-lnd-principal-conductor
 .PHONY: verify-rank-three-collision-descent
 .PHONY: verify-rank-four-collision-cross-ratio
 .PHONY: verify-all-rank-collision-projective-descent
 .PHONY: verify-rank-four-nonprojective-keller-lift
 .PHONY: verify-rank-four-degree-eighteen-target-obstruction
+.PHONY: verify-keller-ritt-product
 .PHONY: verify-binary-degree-five-gvc search-binary-degree-five-gvc
-.PHONY: verify-projective-gradient-segre
+.PHONY: verify-projective-gradient-segre verify-hc4-quintic-infinity-rees
 
 check:
 	$(PYTHON) -m compileall -q jcsearch scripts
 	$(PYTHON) scripts/check_markdown_links.py
 	$(PYTHON) scripts/audit_status.py
 
-verify-projective-gradient-segre:
+verify-projective-gradient-segre: verify-hc4-quintic-infinity-rees
+	$(PYTHON) scripts/verify_projective_gradient_normal_slices.py
+	M2 --script scripts/verify_projective_gradient_normal_slices.m2
+	$(PYTHON) scripts/verify_projective_gradient_singular_slices.py
+	M2 --script scripts/verify_projective_gradient_singular_slices.m2
 	$(PYTHON) scripts/verify_projective_gradient_segre_machinery.py
 	M2 --script scripts/verify_projective_gradient_segre_families.m2
+
+verify-hc4-quintic-infinity-rees:
+	$(PYTHON) scripts/verify_hc4_projective_polar_atlas.py
+	$(PYTHON) scripts/analyze_hc4_quintic_infinity_rees.py
+	M2 --script scripts/verify_hc4_quintic_infinity_rees_strata.m2
+	$(PYTHON) scripts/verify_hc4_rank3_vertex_colength.py
+	M2 --script scripts/verify_hc4_rank3_vertex_colength.m2
+	$(PYTHON) scripts/verify_hc4_codim3_gradient_strata.py
+	M2 --script scripts/verify_hc4_codim3_gradient_strata.m2
+	$(PYTHON) scripts/verify_hc4_binary_root_partition_segre.py
+	M2 --script scripts/verify_hc4_binary_root_partition_segre.m2
 
 verify-rank-three-collision-descent:
 	$(PYTHON) scripts/verify_rank_three_collision_descent.py
@@ -273,7 +299,10 @@ verify-algebraic-torus-free:
 verify-ritt-boundary:
 	bash scripts/verify_degree_six_ritt_boundary_atlas.sh
 
-verify-ritt-2-complex:
+verify-keller-ritt-product:
+	$(PYTHON) scripts/verify_keller_ritt_product.py
+
+verify-ritt-2-complex: verify-keller-ritt-product
 	$(PYTHON) scripts/verify_degree30_ritt_2_complex.py
 
 verify-ll-ritt-reduction:
@@ -459,6 +488,30 @@ verify-hilbert14-invariants:
 	$(PYTHON) scripts/verify_hilbert14_saturation_ladders.py
 	$(PYTHON) scripts/verify_multiboundary_hilbert14_antichain.py
 
+verify-lnd-radical-slice-fibers:
+	$(PYTHON) scripts/verify_lnd_radical_slice_fibers.py
+
+search-lnd-nonmonic-degree-drop:
+	$(PYTHON) scripts/search_lnd_nonmonic_degree_drop.py
+
+search-lnd-plinth-ideal-images:
+	$(PYTHON) scripts/search_lnd_plinth_ideal_images.py
+
+search-lnd-reducible-plinth:
+	$(PYTHON) scripts/search_lnd_reducible_plinth.py
+
+search-lnd-crossing-plinth:
+	$(PYTHON) scripts/search_lnd_crossing_plinth.py
+
+search-lnd-nonprincipal-plinth:
+	$(PYTHON) scripts/search_lnd_nonprincipal_plinth.py
+
+search-lnd-positive-dimensional-plinth:
+	$(PYTHON) scripts/search_lnd_positive_dimensional_plinth.py
+
+search-lnd-principal-conductor:
+	$(PYTHON) scripts/search_lnd_principal_conductor.py
+
 verify-theorems:
 	$(PYTHON) scripts/verify_controlled_boundary_suspensions.py
 	$(PYTHON) scripts/verify_puncture_rank_frontier.py
@@ -475,6 +528,8 @@ verify-theorems:
 	$(PYTHON) scripts/verify_universal_power_shifted_gauge_multiplicity.py
 	$(PYTHON) scripts/verify_whole_plane_stable_multiplicity.py
 	$(PYTHON) scripts/verify_two_marked_fiber_gauge_reconstruction.py
+	$(PYTHON) scripts/verify_finite_marked_plane_nonreconstruction.py
+	$(PYTHON) scripts/verify_polynomial_gauge_decorated_torelli.py
 	$(PYTHON) scripts/verify_universal_quintic_fiber_multiplicity.py
 	$(PYTHON) scripts/verify_universal_higher_degree_fiber_multiplicity.py
 	$(PYTHON) scripts/verify_universal_multiplicity_witness_cards.py
@@ -555,8 +610,11 @@ verify-master:
 
 verify-external-consequences:
 	$(SYSTEM_PYTHON) scripts/verify_long_gaussian_moments.py
+	$(SYSTEM_PYTHON) scripts/audit_factorially_weighted_multitorus.py
 	$(SYSTEM_PYTHON) scripts/verify_long_xz_mathieu.py
 	$(PYTHON) scripts/verify_long_su2_haar.py
+	$(SYSTEM_PYTHON) scripts/verify_algebraic_quadric_haar.py
+	$(SYSTEM_PYTHON) scripts/verify_algebraic_sl2_haar.py
 	$(PYTHON) scripts/verify_long_foundational_normalization.py
 	$(PYTHON) scripts/verify_rank_two_poisson_preaudit.py
 	$(PYTHON) scripts/verify_rank_two_poisson_completion.py
@@ -619,6 +677,7 @@ verify-sic2c4:
 	$(PYTHON) scripts/verify_two_pair_image_mathieu_counterexample.py
 	$(SYSTEM_PYTHON) scripts/audit_two_pair_image_mathieu_coefficient_extraction.py
 	$(PYTHON) scripts/verify_two_pair_sic_characteristic_p.py
+	$(PYTHON) scripts/research_two_pair_sic_frobenius_curvature.py
 	cd formal/finite-etale-keller && lake build FiniteEtaleKeller.SIC2C4FiniteSum
 
 verify-counterexample-scoreboard: verify-two-real-gmc verify-sic2c4
@@ -644,6 +703,14 @@ verify-factorial-frontier:
 verify-lr-rees-sagbi:
 	$(PYTHON) scripts/compute_lr_rees_sagbi_modules.py
 	$(SYSTEM_PYTHON) scripts/audit_lr_rees_sagbi_module_certificate.py
+
+verify-lr-rooted-trees:
+	$(PYTHON) scripts/compile_lr_rooted_tree_classes.py --max-order 12
+	$(SYSTEM_PYTHON) scripts/audit_lr_rooted_tree_normal_classes.py
+
+verify-lr-mixed-bch:
+	$(PYTHON) scripts/compile_lr_mixed_bch_classes.py --max-k 3
+	$(SYSTEM_PYTHON) scripts/audit_lr_mixed_bch_classes.py
 
 verify-regressions: verify-external-consequences verify-factorial-moments verify-factorial-frontier
 	$(PYTHON) scripts/verify_degree_five_stable_moduli.py

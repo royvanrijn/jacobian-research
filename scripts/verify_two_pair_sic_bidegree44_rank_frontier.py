@@ -256,6 +256,12 @@ def main() -> None:
             ),
             "upper_bound_reason": "the exact witness has det(C)=48",
         },
+        "best_open_target": {
+            "coefficient_rank": 2,
+            "bidegree": [4, 4],
+            "ansatz": "F=A_1(xi)P_1(z)+A_2(xi)P_2(z)",
+            "status": "open",
+        },
         "rank_strata": {
             "1": {"dimension": 9, "status": "excluded exactly"},
             "2": {"dimension": 16, "status": "open"},

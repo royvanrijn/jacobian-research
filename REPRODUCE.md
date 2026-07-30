@@ -13,6 +13,177 @@ make check
 This compiles the active Python code, checks local Markdown links, and audits
 the single status ledger.
 
+## LND-image Mathieu finite-fiber replay
+
+```bash
+.venv/bin/python scripts/verify_lnd_radical_slice_fibers.py
+```
+
+For the slice LND `D=d/ds`, this constructs a radical complete intersection
+of six points in three vertical fibers.  It checks reducedness, verifies on
+a generic degree window that primitive membership is exactly the three
+vertical interval conditions, and replays a safe seed and multiplier through
+exponent twelve.  It also replays two nonreduced length-two residual schemes
+for the carrier `q=s^2`, one on and one off the carrier.  The powers are
+bounded regression checks; the all-order arbitrary finite-residual and
+monic-carrier finite-residual theorems are proved in
+[`LND_MATHIEU_SLICE_CONDUCTOR_FRONTIER.md`](extended-geometry/LND_MATHIEU_SLICE_CONDUCTOR_FRONTIER.md).
+
+## LND-image nonmonic degree-drop search
+
+```bash
+.venv/bin/python scripts/search_lnd_nonmonic_degree_drop.py
+```
+
+This uses exact rational arithmetic for the carrier `p=x*s-1`, powers
+`x^c*p^d` with `(c,d)=(0,1),(0,2),(1,1)`, three primary residual schemes
+at the degree-drop point, 256 sparse seeds, and six fixed multipliers.  The
+primitive-carrier assertions replay the all-order support-weight exclusion
+theorem.  All reported finite prefixes are bounded regressions or candidate
+generation only.
+
+## LND-image plinth-divisor search
+
+```bash
+.venv/bin/python scripts/search_lnd_plinth_ideal_images.py
+```
+
+This searches the linear LND `D=x*d/dy+y*d/dz` on `Q[x,y,z]`, whose local
+slice `y/x` has plinth element `x`.  In each required homogeneous degree it
+constructs `D(I_n)` exactly by rational linear algebra.  Five homogeneous
+ideals, 45 sparse seeds, pure powers through six, and four multipliers are
+tested.  The output is candidate generation only.
+
+## LND-image reducible-plinth search
+
+Requires Singular:
+
+```bash
+.venv/bin/python scripts/search_lnd_reducible_plinth.py
+```
+
+This searches
+`D_r=x*(x-1)*d/dy+y^r*d/dz` for `r=1,2` on `Q[x,y,z]`.  With weights
+`wt(x)=0`, `wt(y)=1`, and `wt(z)=r+1`, image membership in each weight is
+an exact finite module calculation over `Q[x]`; Singular computes the
+module standard bases.  Five ideals couple the fibers `x=0,1`.  The
+`r=1` profile tests 205 seeds through weight three, and the `r=2` profile
+tests 210 through weight four; both use pure powers through six and five
+multipliers.  A third profile tests
+`D=x*(x-1)*d/dy+(y^2+x)*d/dz` on eight ideals and 350 mixed-weight seeds.
+It uses bounded normalized primitive lifts and finite quotient/kernel
+images, so individual membership decisions remain exact even though the
+grading is broken.  Every exponent range is bounded.
+
+## LND-image crossing-plinth search
+
+Requires Singular:
+
+```bash
+.venv/bin/python scripts/search_lnd_crossing_plinth.py
+```
+
+This searches the four-variable LND
+`D=u*v*d/dy+(y^2+u)*d/dz`, whose plinth divisor has intersecting
+components `u=0` and `v=0`.  The compiler normalizes primitives modulo
+`Q[u,v,3*u*v*z-y^3-3*u*y]`, computes an exact bounded lift by a Singular
+module standard basis over `Q[u,v]`, and decides the remaining kernel
+correction in each finite quotient exactly.  Five zero-dimensional
+crossing ideals and 956 sparse seeds are tested through six pure powers;
+mixed powers four through six use the multipliers `1,u,v,y,z`.  Individual
+membership decisions are exact, but both exponent windows are bounded.
+
+## LND-image nonprincipal-plinth search
+
+Requires Singular:
+
+```bash
+.venv/bin/python scripts/search_lnd_nonprincipal_plinth.py
+```
+
+This searches `D=u*d/dx+v*d/dy` on `Q[u,v,x,y]`, with invariant
+`w=u*y-v*x` and nonprincipal plinth ideal `(u,v)` in the kernel.
+Homogeneous primitive membership is an exact Singular module calculation
+over `Q[u,v]`; kernel corrections are decided exactly in five finite
+quotients by closure under `u,v,w`.  The search tests 1,055 sparse seeds,
+pure powers through six, and mixed powers four through six for
+`1,u,v,x,y,w`.  Individual membership decisions are exact; the exponent
+windows are bounded.
+
+## LND-image positive-dimensional plinth search
+
+Requires Singular:
+
+```bash
+.venv/bin/python scripts/search_lnd_positive_dimensional_plinth.py
+```
+
+This retains a free `y`-direction for `D=u*d/dx+v*d/dy`.  The five ideals
+begin with `(u,v,x)` and include four nilpotent or tilted plinth jets.
+Although their quotients are positive-dimensional, the images of
+`u,v,w=u*y-v*x` are nilpotent, so the kernel-image span and every
+membership decision are exact without a `y`-degree cutoff.  The checker
+also verifies through total degree eight the coefficient-functional
+identity used in the free-line corollary of the all-order plinth-power
+saturation theorem, and the filtration identity through total degree
+seven.  Pure powers through six and mixed powers four through six are
+bounded regressions; the written theorem independently proves all five
+displayed ideals safe.
+
+## LND-image principal-conductor search
+
+Requires Singular:
+
+```bash
+.venv/bin/python scripts/search_lnd_principal_conductor.py
+```
+
+For `D=u*d/dx+v*d/dy` and `I=(x)`, the image of the invariant ring modulo
+`I` is exactly `Q[u,v,u*y]`.  Consequently a primitive residue monomial
+`u^a*v^b*y^c` is correctable exactly when `a>=c`.  The script combines
+this exact valuation-face test with Singular primitive lifts for 1,055
+seeds, pure powers through six, and mixed powers four through six.  The
+membership decisions are exact and untruncated; the exponent windows are
+bounded.  The support census also checks 43 `y`-free survivors, thirteen
+invariant survivors, four forms touching the slope-zero face, and exact
+membership of all 48 survivors in `u*ker(D)[x]`.  It additionally verifies
+the exact algebraic square-gate failure: a homogenized shifted-Legendre
+face gives `f,f^2 in D((x))` but `f^3 not in D((x))`.  This is not an
+LNED counterexample.  It also checks the local-slice identity
+`T(D(x*y*a))=(u*y)*a` underlying the exact two-branch criterion, together
+with `D(u*x*a)=u*D(x*a)` and `D(u*y*a)=u*D(y*a)` for the aligned and
+crossed invariant-content carriers.  For the rational-root carrier
+`q_1=u*x+w`, it normalizes `A/(q_1)` by
+`x=u*t, y=-(u-v)*t`; the invariant image is
+`Q[u,v,u^2*t]`, so the exact residue test is `a>=2*c`.  Seventeen seeds
+survive the genuinely eventual window `m=4,5,6`; all seventeen lie in
+`u*ker(D)[q_1]`, and no bounded mixed-tail obstruction occurs.  The
+checker also verifies the normalization identities through the ladder
+`q_n=u^n*x+w`, `1<=n<=4`.  For the first tied carrier
+`q=u*v*x+w`, its exact quotient cone is `a>=2*c, b>=c`.  Eight seeds
+survive powers `4,5,6`; all eight lie in `u*v*ker(D)[q]`, with no bounded
+mixed-tail obstruction.  The checker verifies the two-prime
+normalization identities for `1<=r,s<=3`.
+
+The all-order proof in the canonical note uses the
+full eventual-power hypothesis and the one-variable polynomial moment
+lemma to prove that `D((x))`, and hence `D((ell(x,y)))` for every nonzero
+linear form `ell`, is Mathieu--Zhao.  Divisibility bootstrapping closes
+all powers `(ell^d)`, while primitive evaluation at two generic roots
+proves zero Mathieu radical for carriers such as `(x*y)` and
+`(x*(x-1))`.  A fixed-denominator extension of the local-slice proof also
+closes `(a*ell)` for `a` in `{u,v}` and `ell` in `{x,y}`.  A lowest-face
+moment argument closes every rational-root ladder carrier
+`q_n=u^n*x+w`, `n>=1`, and the paired lowest-face argument closes the
+two-prime grid `q_(r,s)=u^r*v^s*x+w`, `r,s>=1`.  None of these all-order
+results is inferred from the bounded census.  The same lowest-face proof
+closes `u^r*v^s*x+b` for every invariant intercept `b in ker(D)`, with
+`r>=1` and `s>=0`; this arbitrary-intercept extension is a written
+theorem rather than a separate bounded search.  Prime-by-prime lowest
+faces also close every coprime `q=a*x+b`, `a,b in ker(D)`, away from the
+explicit aligned conductor condition `v*(b mod u)=(a mod u)*w`.  The
+aligned locus is the remaining theorem gap.
+
 ## Checked-in Lean projects
 
 All three local Lean packages use the pinned Lean/Mathlib `v4.32.1` release.
@@ -79,8 +250,18 @@ two commuting cusp LNDs, the invariant grid
 `s^2*t^2*(X+sY)^m*(U+tV)^n`, and the conductor-square replay modulo
 `(s^4,t^4)`.  The arbitrary-bidegree rectangle escape in
 [`MULTIBOUNDARY_HILBERT14_CONTROL.md`](extended-geometry/MULTIBOUNDARY_HILBERT14_CONTROL.md)
-is the non-finite-generation proof.  The same note proves that the two
-leading divisors in a tangent-normalized factorization slice are disjoint.
+is the non-finite-generation proof.  The same note computes the exact
+finite-generation ideal as the conductor
+`s^2*t^2*k[s,t,P,Q]` to the normalized-ambient invariant algebra and gives
+its four infinite return ladders and infinite monomial SAGBI basis.  The
+checker replays the monomial conductor criterion in a configurable box; the
+written localization/specialization argument proves the arbitrary-degree
+statement.  The same argument is proved for every
+`tensor_i(k+t_i^2*k[t_i,P_i])`: its finite-generation ideal is the product
+conductor and has `2^r` infinite return ladders.  The checker replays this
+formula through `r=4` by default.  The note also proves that the two leading
+divisors in a tangent-normalized factorization slice are disjoint and
+explains why the coupled three-boundary Cox fill is a different branch.
 The same target verifies the general weight-`(1,-1,-k)` invariant-coordinate
 Jacobian reduction for `k=1,2,3,4`, including the foundational
 `(-2,-1,1)` output weights.  It then reconstructs the complete
@@ -116,6 +297,7 @@ remain as a regression:
 .venv/bin/python scripts/verify_universal_higher_degree_fiber_multiplicity.py
 .venv/bin/python scripts/verify_universal_multiplicity_witness_cards.py
 .venv/bin/python scripts/verify_universal_relative_keller_map.py
+.venv/bin/python scripts/verify_keller_tschirnhaus_descent_567.py
 .venv/bin/python scripts/verify_rank_three_collision_descent.py
 .venv/bin/python scripts/verify_rank_four_collision_cross_ratio.py
 .venv/bin/python scripts/verify_low_rank_multiplicity_boundaries.py
@@ -249,6 +431,38 @@ counterexamples on finite collections of torsion planes and recovers `m`
 from the pole order `N+m` on a transverse affine line.  The result retains
 the inverse-root generator and the base character `P`; it is not an
 unmarked-cover Torelli theorem.
+
+The unrestricted finite-sampling question is answered negatively by:
+
+```bash
+.venv/bin/python scripts/verify_finite_marked_plane_nonreconstruction.py
+```
+
+The checker replaces the common monomial power shift by an arbitrary
+polynomial multiplier `R(P)`.  Exact interpolation makes `R=1` on every
+prescribed sample plane, while simple roots of `R` each create a Newton
+block `(0,0)->(3,0)->(N,1)` and one boundary prime with
+`(e,f)=(N-3,1)`.  Squarefree interpolants of increasing degree therefore
+give maps agreeing on any finite collection of complete marked inverse
+planes but having strictly increasing stable boundary counts
+`deg(R)+2`.  The direct quartic calculation independently checks the full
+determinant, inverse, and reconstruction identities.
+
+The final full-boundary reconstruction layer is checked by:
+
+```bash
+.venv/bin/python scripts/verify_polynomial_gauge_decorated_torelli.py
+```
+
+On the clean polynomial-multiplier locus, the boundary ledger selects
+`P=0` intrinsically and hence recovers `P` up to scalar.  The checker then
+verifies that the unmarked ramified-stratum Fitting divisor excludes root
+inversion, kills every punctured-base unit twist, reconstructs the seed and
+`R(P)` coefficientwise, and yields exactly the ordinary source--target
+scaling action.  The written theorem also records the general converse:
+the full finite-normalization morphism carrying its reconstruction boundary
+restricts to a left--right equivalence, so that top layer is a complete
+stable invariant without a chosen inverse root.
 
 To intentionally refresh the pinned count artifact after changing its
 generator, run:
@@ -856,6 +1070,46 @@ The decisive independence statement has a dependency-free replay:
 ```bash
 python3 scripts/audit_lr_rees_sagbi_module_certificate.py
 ```
+
+The all-order constant-direction rooted-tree normal classes are reproduced by
+
+```bash
+.venv/bin/python scripts/compile_lr_rooted_tree_classes.py --max-order 12
+python3 scripts/audit_lr_rooted_tree_normal_classes.py
+```
+
+The compiler works in exact torus semi-invariant coordinates, reproduces the
+known `II_F(partial_B,partial_C)` residue at order two, and constructs the
+weight-zero ladders `tau_2=B(C)`, `tau_3=A(C(C))`,
+`tau_(n+2)=B(C(tau_n))`.  A fixed `3 x 3` transfer matrix at
+`(u,gamma)=(1/6,0)` and a positive-coefficient Cayley--Hamilton recurrence
+prove that the third saturated normal residue, hence its associated-graded
+symbol, is nonzero for every order `n>=2`.  This is an all-order theorem for
+the individual tree classes, not a proof that the same class survives the
+sum and lower-jet variation in a mixed BCH/LR forcing coefficient.
+
+The balanced linear-in-`X` mixed BCH sector is reproduced by
+
+```bash
+.venv/bin/python scripts/compile_lr_mixed_bch_classes.py --max-k 3
+python3 scripts/audit_lr_mixed_bch_classes.py
+```
+
+Here `X=N*(x,0,-3z)`, `D_B=ell_F(partial_B)`, and
+`D_C=ell_F(partial_C)`.  The checker proves `[D_B,D_C]=0`, collapses the
+balanced order-`2k+1` BCH sum to
+`binomial(2k,k)*(ad(D_B)*ad(D_C))^k*X`, and derives the exact third-normal
+recurrence
+
+```text
+c_(k+1) = -73440*(k+3)*(2k+7)*c_k,
+c_1 = 14438891520/2401.
+```
+
+Thus the actual multihomogeneous BCH coefficient is nonzero in every odd
+order.  It survives the saturated linear target quotient, but with target
+amplitudes `s,t` it is multiplied by `s^k*t^k`; consequently this sector
+alone is not universal over the full lower-jet scheme.
 
 At `(u,gamma)=(1/6,0)`, the covector `(0,-144/79,1)` descends through the
 saturated normal relations, kills all 24 `p=1` columns, and takes the value
@@ -1976,13 +2230,18 @@ used in his BCW discussion, have a dedicated target:
 make verify-external-consequences
 ```
 
-The Gaussian, `(xz)`, and spherical `SO(3)` scripts use only the Python
-standard library.  Their bounded exact regressions are distinguished from
-the all-exponent proofs in the canonical notes.  The `SO(3)` replay checks
-the displayed moments through order fifteen and the endpoint-jet identity
-through order one hundred.  A companion symbolic checker proves the
-`SU(2)=S^3` Haar density in Hopf coordinates, completing that local
-integration proof.  The same target
+The Gaussian, `(xz)`, spherical `SO(3)`, and algebraic Haar scripts use only
+the Python standard library.  Their bounded exact regressions are
+distinguished from the all-exponent proofs in the canonical notes.  The
+`SO(3)` replay checks the displayed moments through order fifteen and the
+endpoint-jet identity through order one hundred.  The two algebraic checkers
+verify the unique normalized functional on `UV+T^2=1`, its three
+infinitesimal `so3` identities, the factorial functional on
+`k[SL2]`, all six left/right `sl2` identities, and the explicit
+`SL2/T` pullback.  The proof and the quotient/transfer theorem are in
+[`ALGEBRAIC_HAAR_QUADRIC_AND_SL2.md`](extended-geometry/ALGEBRAIC_HAAR_QUADRIC_AND_SL2.md).
+A separate symbolic checker proves the `SU(2)=S^3` Haar density in Hopf
+coordinates, retaining an independent compact integration proof.  The same target
 also performs all 18 balanced BCW steps and checks the resulting 79-variable
 cubic-homogeneous collision, writes its sparse artifact, and replays it with a
 separate standard-library implementation.  It then runs the shared-factor
@@ -2278,6 +2537,22 @@ the first three moments cut out Long's family scheme-theoretically, a formal
 square identity proves all-order vanishing, and deletion saturation proves
 five-term and degree-four minimality inside that ansatz.  Global minimality
 outside the ansatz remains open.
+
+The credited factorially weighted multitorus regression is:
+
+```bash
+python3 scripts/audit_factorially_weighted_multitorus.py
+```
+
+It checks a rank-two exposed coefficient, the normalized congruence at two
+prime dilations, strict torus separation with a mixed cutoff, and the
+circular Gaussian embedding.  These finite exact identities are regressions,
+not the all-order proof.  Long's theorem, the local proof audit, the
+prime-separating arbitrary-torus synthesis, and the one-radial search sieve
+are in
+[`FACTORIALLY_WEIGHTED_MULTITORUS_THEOREM.md`](extended-geometry/FACTORIALLY_WEIGHTED_MULTITORUS_THEOREM.md).
+The checked-in Lean development still formalizes only the rank-one Gaussian
+specialization.
 
 The companion one-profile Hopf classification is checked directly by
 
@@ -2589,6 +2864,44 @@ then vanishes for all \(m\geq p\).  This proves ordinary
 witness \(f=\xi _1,\ g=z_1^{p-1}\).  The finite replay is not being used
 as an all-order or periodicity argument.
 
+The Frobenius/\(p\)-curvature bridge is tested by
+
+```bash
+.venv/bin/python scripts/research_two_pair_sic_frobenius_curvature.py
+```
+
+For
+\[
+M_{d,r}(m)=4^{rm}(dm+2)!((rm)!)^2/(2rm+1)!,
+\]
+it derives the coprime minimal order-one recurrence
+\(A_{d,r}(m)M(m+1)=B_{d,r}(m)M(m)\) at nine radial rows.
+At every good prime its recurrence-operator \(p\)-curvature is proved and
+directly replayed as
+\[
+\prod_{i=0}^{p-1}\frac{B_{d,r}(m+i)}{A_{d,r}(m+i)}
+=d^d(m^p-m)^d.
+\]
+Separately, the normalized angular beta period has Picard--Fuchs operator
+\(\theta(2\theta+1)-x(\theta+1)^2\).  Its differential \(p\)-curvature is
+computed at every odd prime through \(101\); it is always nonzero,
+square-zero of rank one, with poles only at \(0,2\).  This bounded
+differential calculation is not an all-prime proof.  The correlation audit
+shows why neither curvature recovers the exact phase diagram: first radial
+lifts have one common Picard--Fuchs operator, while the recurrence shift
+norm cancels the separate zero/pole factors responsible for prime-power
+re-entry.  The exact reusable mechanism is instead the local rule
+\[
+v_p(M(m+1))-v_p(M(m))=v_p(B_{d,r}(m))-v_p(A_{d,r}(m)).
+\]
+The status and the degree-eight same-curvature/different-phase control are
+in
+[`TWO_PAIR_SIC_FROBENIUS_CURVATURE_BRIDGE.md`](extended-geometry/TWO_PAIR_SIC_FROBENIUS_CURVATURE_BRIDGE.md).
+The resulting integral-lattice postprocessing stage is incorporated in
+[`HOLONOMIC_HYPERGEOMETRIC_ALGORITHMS.md`](extended-geometry/HOLONOMIC_HYPERGEOMETRIC_ALGORITHMS.md)
+and in the next-step protocols for the bidegree-\((3,3)\) and rank-two
+bidegree-\((4,4)\) recurrence programmes.
+
 The exact local geometry of this displayed \(F\) is checked by
 
 ```bash
@@ -2794,6 +3107,62 @@ for every \(m\geq1\) that all earlier quadratics vanish and
 sums used in that proof through \(m=32\).  The stronger formula listing
 every surviving torus phase is recorded through \(m=12\) and remains
 bounded evidence.
+
+The completed-invariant comparison specialized to bidegree \((3,3)\) is
+replayed by
+
+```bash
+.venv/bin/python \
+  scripts/research_two_pair_sic_bidegree33_casimir_fiber.py
+```
+
+The default run does not launch the older direct boundary standard-basis
+calculations.  It compares
+\((\mu_1,\ldots,\mu_{12},\mu_{14})\),
+\((\mu_1,\ldots,\mu_{12},q_2)\), and full-rank mixed
+moment/Casimir systems of the same total invariant degree \(92\).  It
+also evaluates the complete weight-\(14\) monomial spaces generated by
+the lower moments with \(q_2\), and with \(q_2,q_4\).  The modular ranks
+prove over characteristic zero that \(\mu_{14}\) is independent from
+the pure Casimir span modulo the lower-moment span.  Hilbert compatibility
+does not prove that any displayed zero fiber is the nullcone.
+
+The new null-quadratic synchronization experiment is included explicitly by
+
+```bash
+.venv/bin/python \
+  scripts/research_two_pair_sic_bidegree33_casimir_fiber.py \
+  --run-normal-rank-locus \
+  --run-residual-normal-probe \
+  --run-complete-normal-fiber \
+  --run-exceptional-normal-fibers \
+  --timeout 300 \
+  --power-bound 50
+```
+
+On the normalized chart \(F_2=X^2\), the synchronization ideal has the
+seven normal coordinates \(s_3,s_4,s_5,s_6,t_2,t_3,t_4\).  The checker
+computes the exact linear normal-symbol matrix of
+\(\mu_2,\mu_3,\mu_4\), proves its generic rank is three, and proves that
+the common divisor of its nonzero maximal minors is the displayed
+irreducible cubic \(P\).  It then records two finite-field calculations
+at \(p=32003\): the residual rank-drop locus after dividing by \(P\),
+and the complete normal fiber of \(\mu_2,\ldots,\mu_{12}\) above the
+fixed allowed-coordinate point \((20,27,36,47,60)\).  The latter has
+dimension zero and quotient length \(195\).  Good reduction therefore
+proves characteristic-zero transverse isolation at this point and on a
+nonempty open subset of the synchronized chart.  The recorded coordinate
+powers are finite-field certificates only.  The same run decomposes the
+residual rank support exactly into two quadratic-field components and one
+lower rational locus, proves that all three are disjoint from \(P=0\),
+and tests full normal fibers at good reductions of exact algebraic points
+on all four exceptional strata.  The three top-dimensional exceptional
+fibers have quotient length \(195\); the lower locus has length \(197\).
+Consequently transverse isolation holds on a nonempty open subset of
+every linear-rank stratum.  Prefix computations through orders nine and
+ten timed out and make no minimal-cutoff claim; proper closed subsets
+inside the exceptional strata, the \(F_2=0\) chart, and global nullcone
+equality remain open.
 
 The exact diagonal fixed-field theorem in all three degrees is replayed
 by
@@ -3126,6 +3495,7 @@ The coefficient-rank frontier inside bidegree \((4,4)\) is replayed by
 python3 scripts/verify_two_pair_sic_bidegree44_rank_frontier.py
 python3 scripts/verify_two_pair_sic_bidegree44_rank_two_invariants.py
 python3 scripts/verify_two_pair_sic_bidegree44_rank_two_all_order_audit.py
+.venv/bin/python scripts/verify_two_pair_sic_bidegree44_rank_two_swap_slice.py
 .venv/bin/python scripts/verify_two_variable_quartic_squarefree_pivot.py
 .venv/bin/python scripts/verify_two_variable_quartic_two_root_finite.py
 ```
@@ -3141,6 +3511,18 @@ giving the rigorous interval \(2\leq r_{\min}\leq5\). Ranks two, three,
 and four remain open; finite rank-two residuals are not treated as an
 exact counterexample or a lower bound. See
 [`TWO_PAIR_SIC_BIDEGREE44_RANK_FRONTIER.md`](extended-geometry/TWO_PAIR_SIC_BIDEGREE44_RANK_FRONTIER.md).
+
+The swap-slice checker treats
+\(F_P=\xi_1^4P(z_1,z_2)-\xi_2^4P(z_2,z_1)\).  It proves that odd moments
+vanish by involution and that the even moments of orders
+\(2,4,6,8,10\) have a length-twelve zero scheme whose radical consists
+of \(P=(z_2\pm z_1)^4\).  Seven good primes reconstruct the triangular
+lex ideal; exact rational reductions, the matching special-fiber length,
+and four unit charts on the complete \(a_4=0\) projective boundary certify
+the characteristic-zero result.  Both reduced points have coefficient
+rank one.  The parity-even three-parameter core is already excluded by
+orders \(2,4,6\).  This is an exact structured-slice theorem, not a global
+rank-two exclusion.
 
 The cross-degree rank-stratified finite-prefix census is replayed by
 
@@ -3206,6 +3588,83 @@ a naive degree-17 polynomial divergence certificate cannot prove the
 recurrence.  The result remains exact quotient data plus modular
 recurrence evidence, not a universal telescoping certificate.
 
+The characteristic-zero cyclic splitting at the first integral rank-two
+point is replayed by
+
+```bash
+.venv/bin/python \
+  scripts/verify_two_pair_sic_bidegree33_rank_two_interior_cyclic_split.py
+```
+
+The checker proves the pairwise-comaximal critical-algebra decomposition
+\(18=14_{\rm interior}+2_{t=0}+2_{t=1}\).  Eliminating
+\(P=Q/u^3\) gives pairwise-coprime squarefree polynomials of degrees
+\(14,2,2\), whose product is the degree-\(18\) relative eliminant up to
+scalar.  Hence \(1,P,\ldots,P^{13}\) is an exact cyclic basis of the
+interior algebra.  It also proves
+\[
+ ((uQ_u-3Q,tQ_t):(ut)^\infty)=I_{\rm interior},
+\]
+so the exact toric logarithmic critical rank at this fiber is \(14\).
+Exact evaluation of the Chinese-remainder idempotents
+against \(\nu_0,\ldots,\nu_{18}\) gives nonzero values on both endpoint
+pairs.  Therefore the raw period does not descend through the ordinary
+Jacobian quotient.  The same run computes the exact first divergence
+seed
+\[
+u^{47}p_{\rm int}(P)=X(uQ_u-3Q)+YQ_t.
+\]
+The lift has 6750 and 6791 terms, its divergence has 6749 terms, and the
+two nonzero endpoint restrictions have 45 and 85 terms.  An
+\(m\)-dependent reduction of these retained terms is still required.
+Their first ordinary normal forms occupy all \(14+2+2\) coordinates;
+the discarded gradient parts must be lifted recursively rather than
+silently set to zero.
+The artifact is
+`artifacts/generated-results/two_pair_sic_bidegree33_rank_two_interior_cyclic_split.json`.
+
+The exact fixed-fiber rational \(D\)-module seed is replayed by
+
+```bash
+.venv/bin/python \
+  scripts/research_two_pair_sic_bidegree33_rank_two_dmodule_picard_fuchs.py \
+  --annihilator-only
+```
+
+This command requires Macaulay2, the `BernsteinSato` package, and
+Normaliz.  It rewrites the generating integrand as
+\(u^2/(u^3-zQ(u,t))\), computes 34 first-order annihilators of
+\((u^3-zQ)^{-1}\), and then computes the 76-generator annihilator of the
+specific numerator \(u^2\).  Both left ideals are checked exactly to be
+holonomic of rank one.  The artifact is
+`artifacts/generated-results/two_pair_sic_bidegree33_rank_two_dmodule_picard_fuchs_research.json`.
+This is an all-order integrand certificate, not yet the integrated
+Picard--Fuchs operator.  Omitting `--annihilator-only` requests the long
+sequential \(t,u\) pushforward; its output must still pass the relative
+endpoint audit.
+
+The exact shift-Ore comparison of the two sampled recurrence shapes is
+replayed by
+
+```bash
+.venv/bin/python \
+  scripts/verify_two_pair_sic_bidegree33_rank_two_ore_gcd.py
+```
+
+At the same two points and three primes, the checker recomputes the
+order-\(18\) and order-\(27\) operators through moment 500 and performs
+left Euclidean division in
+\(\mathbb F_p(m)[S;\,Sf(m)=f(m+1)S]\).  The order-\(27\) operator is not
+a left multiple of the order-\(18\) operator.  Their greatest common
+right divisor has order \(14\), primitive coefficient degree \(58\), and
+left quotient orders \(4\) and \(13\), respectively.  The primitive
+order-\(14\) operator is checked directly on all 487 available moment
+rows at every sample.  Its order matches the exact interior length in
+the \(2+2+14\) relative-Jacobian decomposition.  The artifact is
+`artifacts/generated-results/two_pair_sic_bidegree33_rank_two_ore_gcd.json`.
+This is an exact bounded modular factor calculation, not a universal
+Picard--Fuchs certificate.
+
 The exact border-basis calculation on the generic factor pencil is
 replayed by
 
@@ -3221,9 +3680,14 @@ denominators have degrees \(74,88,94\), common gcd degree \(74\), and
 coprime quotient degrees \(14,20\); their lcm is squarefree of degree
 \(108\).  The artifact is
 `artifacts/generated-results/two_pair_sic_bidegree33_rank_two_pencil_border.json`.
-This is an exact modular one-pencil chart calculation, not a universal
-parameter-space determinant or a classification of the exceptional
-fibers.
+The same run specializes all \(4,6,5\) base-field roots of that polynomial.
+Every specialization remains coefficient-rank two.  Four roots of the
+degree-\(74\) component preserve the full \(2+2+14\) relative profile,
+while the ten accessible degree-\(14\) roots and one accessible
+degree-\(20\) root lower one endpoint or interior length and have total
+length seventeen.  This is an exact modular one-pencil classification, not
+a universal parameter-space determinant or a classification of the
+non-linear exceptional closed points.
 
 The generic-pencil interpolation stress test is
 
@@ -3755,8 +4219,108 @@ It regenerates
 The modular record is an exhaustive bounded experiment on the displayed
 faces; the characteristic-zero radical computations and weighted
 face-separation argument are the proof.  The non-squarefree
-quartic-leading nonhomogeneous rows remain outside this theorem, so a
-universal binary degree-five corollary is not claimed.
+quartic-leading nonhomogeneous rows remain outside this particular theorem,
+so it alone does not give a universal binary degree-five corollary.
+
+The quadruple-root partition \((4)\) is closed separately, with arbitrary
+lower polynomial pieces and arbitrary higher Weierstrass operator jets, by:
+
+```bash
+.venv/bin/python scripts/verify_binary_quartic_quadruple_root_gvc.py
+```
+
+This exact checker replays the defect-one radical, all three minimal
+branches, the terminal weight-eight equality chain through pure moment
+five, and the final strict or one-sided weight separators.  The proof and
+normalizations are documented in
+[`BINARY_QUARTIC_QUADRUPLE_ROOT_GVC.md`](extended-geometry/BINARY_QUARTIC_QUADRUPLE_ROOT_GVC.md).
+
+The other repeated-root quartic partitions are closed by:
+
+```bash
+.venv/bin/python scripts/verify_binary_quartic_triple_simple_root_gvc.py
+.venv/bin/python scripts/verify_binary_quartic_double_root_gvc.py
+```
+
+The first command verifies the \((3+1)\) defect-one radical, every
+projective branch through defect three, and its final separators.  The
+second closes \((2+2)\) and \((2+1+1)\), including both two-parameter
+weight-six equality systems and the isolated fifth-power components.
+Together with the earlier degree-five checker, these exact calculations
+prove binary GVC for every polynomial of degree at most five.  See
+[`BINARY_QUARTIC_TRIPLE_SIMPLE_ROOT_GVC.md`](extended-geometry/BINARY_QUARTIC_TRIPLE_SIMPLE_ROOT_GVC.md)
+and
+[`BINARY_QUARTIC_DOUBLE_ROOT_GVC.md`](extended-geometry/BINARY_QUARTIC_DOUBLE_ROOT_GVC.md).
+
+The first sextic frontier cell, with lowest symbol of order five and root
+partition \((5)\), is closed by:
+
+```bash
+.venv/bin/python scripts/verify_binary_quintic_quintuple_root_gvc.py
+```
+
+This exact checker verifies the defect-one radical, all five projective
+top-form branches, and the complete terminal equality chain through
+operator order ten and pure moment six.  The proof includes arbitrary
+lower pieces of \(P\) and arbitrary higher operator jets.  See
+[`BINARY_QUINTIC_QUINTUPLE_ROOT_GVC.md`](extended-geometry/BINARY_QUINTIC_QUINTUPLE_ROOT_GVC.md).
+The complete replay below incorporates this longest component and closes
+the other quintic root partitions.
+
+All six remaining quintic root partitions, and hence the complete
+\((r,\deg P)=(5,6)\) row, are closed by:
+
+```bash
+.venv/bin/python scripts/verify_binary_quintic_all_root_partitions_gvc.py
+```
+
+This checker verifies the Hall-matching classification of the leading
+pure-zero locus, the local correction systems for root multiplicities one
+through five, generic strict quintic cofactors, and every final weighted
+separator.  It invokes the quintuple-root replay for the multiplicity-five
+cell.  See
+[`BINARY_QUINTIC_ALL_ROOT_PARTITIONS_GVC.md`](extended-geometry/BINARY_QUINTIC_ALL_ROOT_PARTITIONS_GVC.md).
+The complete \((r,\deg P)=(4,6)\) row is closed by:
+
+```bash
+.venv/bin/python scripts/verify_binary_quartic_all_root_partitions_gvc.py
+```
+
+This exact checker verifies the Hall leading-locus classification, every
+repeated-root terminal face, both coupled pure-sixth-power endpoint
+radicals, the triple-root terminal tail coefficients, and the simple-root
+defect layers through defect four.  The finite-tail inequalities covering
+arbitrary later operator jets are documented in
+[`BINARY_QUARTIC_ALL_ROOT_PARTITIONS_GVC.md`](extended-geometry/BINARY_QUARTIC_ALL_ROOT_PARTITIONS_GVC.md).
+The complete \((r,\deg P)=(3,6)\) row is closed by:
+
+```bash
+.venv/bin/python scripts/verify_binary_cubic_all_root_partitions_gvc.py
+```
+
+This exact checker verifies the cubic Hall locus, the triple-, double-,
+and simple-root Newton ladders, and the two coupled weighted-face chart
+covers.  It requires Singular and `msolve`; the latter is used over
+characteristic zero to prove explicit affine saturations empty.  See
+[`BINARY_CUBIC_ALL_ROOT_PARTITIONS_GVC.md`](extended-geometry/BINARY_CUBIC_ALL_ROOT_PARTITIONS_GVC.md).
+The sole remaining binary degree-six row has lowest positive order \(r=2\).
+
+The first repeated-root continuation is the migrating defect-one ansatz
+\((\Lambda_4+\Lambda_5,P_5+P_4)\).  Run its faithful-characteristic samples,
+followed by the conditioned defect-two \((\Lambda_6,P_3)\) search, with:
+
+```bash
+.venv/bin/python \
+  scripts/search_binary_repeated_quartic_gvc_jets_mod_p.py
+```
+
+The pinned run takes roughly two minutes.  Use `--quick` for a small
+non-pinning regression.  The generated
+[`binary_repeated_quartic_gvc_jet_search.json`](artifacts/generated-results/binary_repeated_quartic_gvc_jet_search.json)
+is bounded experimental evidence only.  Its scope, the support-separator
+proof for the two fifth-moment survivors, and the unique defect-two
+fourth-moment failure are documented in
+[`BINARY_REPEATED_QUARTIC_GVC_JET_SEARCH.md`](extended-geometry/BINARY_REPEATED_QUARTIC_GVC_JET_SEARCH.md).
 
 The first rank-efficient ordinary-Laplacian lift is excluded by
 
@@ -4000,6 +4564,188 @@ recorded \(600\)-second bounds.  The \(t_0\)-open common-root equations,
 lower-dimensional coefficient specializations, inherited \(Q_*,J_*\)
 branch radicals, orders \(7,8,9,10,11,12,14\), and the rational radical
 remain open.
+
+The first \(t_0\)-open common-root step has a separate subsecond exact
+certificate:
+
+```bash
+.venv/bin/python \
+  scripts/verify_two_pair_sic_bidegree33_corrected_boundary.py \
+  --branch generic --prime 0 --t0-open-fixed-fiber --timeout 20 \
+  --output \
+  artifacts/generated-results/two_pair_sic_bidegree33_t0_open_fixed_fiber.json
+```
+
+At the rational base (5.12u), it verifies \(\mu_3=0\), nonvanishing of
+\(Q_*J_*KH\), length six for
+\(\mathbb Q[s_6,s_5]/(\mu_4,\mu_5)\), and the exact unit ideal
+\((\mu_4,\mu_5,\mu_6)=(1)\).  This proves that the first norm is not
+identically zero on the local base component, but does not expand or
+classify its exceptional divisor.
+
+The same fixed point extends to the exact rational \(\mu_3=0\) curve
+(5.12v).  Its first norm and the next Fitting coefficient are replayed
+by:
+
+```bash
+.venv/bin/python \
+  scripts/verify_two_pair_sic_bidegree33_corrected_boundary.py \
+  --branch generic --prime 0 --t0-open-curve-norm --timeout 20 \
+  --output \
+  artifacts/generated-results/two_pair_sic_bidegree33_t0_open_curve_norm.json
+```
+
+The checker obtains an irreducible degree-\(198\) numerator for
+\(\det M_{\mu_6}\), with denominator degree \(144\).  The coefficient of
+\(z\) in \(\det(M_{\mu_6}+zM_{\mu_7})\) has numerator and denominator
+degrees \(209,153\), and its numerator is coprime to the degree-\(198\)
+norm.  Thus \((\mu_6,\mu_7)\) has no common root on the norm divisor
+where the curve and border chart are defined.  The norm denominator
+factors into the specialized \(Q_*=0\), curve-pole, and \(J_*=0\)
+factors with degrees \(2,3,4\).  Exact degree-two and degree-four
+number-field calculations give length five for \((\mu_4,\mu_5)\) and
+the unit ideal after adjoining \(\mu_6,\mu_7\) on both \(Q_*=0\) and
+\(J_*=0\).  The cubic factor is a genuine pole with coprime numerator,
+not an affine point of the parametrized curve.  Thus every defined point
+of this rational curve is excluded.
+
+Directional modular interpolation shards for the first two Fitting
+coefficients use paired roots of the quadratic \(\mu_3(s_3)\):
+
+```bash
+.venv/bin/python \
+  scripts/research_two_pair_sic_bidegree33_t0_fitting_interpolation.py \
+  --prime 1019 --variable s1 --sample-count 450 \
+  --training-count 400 --timeout 20 \
+  --output \
+  artifacts/generated-results/two_pair_sic_bidegree33_t0_fitting_s1_mod1019.json
+.venv/bin/python \
+  scripts/verify_two_pair_sic_bidegree33_t0_fitting_degree_scout.py
+```
+
+The generated scout aggregates all five directions through two base
+points, at primes \(1019,2039\): 6750 paired samples fit fifteen rational
+line reconstructions and 750 unused pairs verify them.  The common
+observed denominator models are (5.12x).  This supplies stable degree
+bounds only; it does not reconstruct the dense five-variable
+numerators.
+
+The same engine can evaluate the complete degree-six determinant pencil
+on deterministic random paired-root shards and replay only its common-zero
+candidates:
+
+```bash
+.venv/bin/python \
+  scripts/research_two_pair_sic_bidegree33_t0_fitting_interpolation.py \
+  --prime 47 --random-seed 102 --sample-count 450 \
+  --max-attempts 2000 --timeout 20 \
+  --output \
+  artifacts/generated-results/two_pair_sic_bidegree33_t0_pencil_random_p47_seed102.json
+.venv/bin/python \
+  scripts/verify_two_pair_sic_bidegree33_t0_pencil_random_scout.py
+```
+
+The expanded aggregate also includes the smallest admissible prime and
+the direct divisor mode:
+
+```bash
+.venv/bin/python \
+  scripts/research_two_pair_sic_bidegree33_t0_fitting_interpolation.py \
+  --prime 43 --random-seed 404 --sample-count 450 \
+  --max-attempts 2000 --timeout 20 \
+  --output \
+  artifacts/generated-results/two_pair_sic_bidegree33_t0_pencil_random_p43_seed404.json
+.venv/bin/python \
+  scripts/research_two_pair_sic_bidegree33_t0_fitting_interpolation.py \
+  --prime 43 --random-seed 501 --stratum Q --sample-count 450 \
+  --max-attempts 2000 --timeout 20 \
+  --output \
+  artifacts/generated-results/two_pair_sic_bidegree33_t0_stratum_Q_random_p43_seed501.json
+```
+
+The aggregate contains forty-four generic shards at primes
+\(43,47,59,71\): 19800 accepted paired bases, 39600 evaluated roots of
+\(\mu_3\), and twenty direct length-one common roots through \(\mu_7\).
+All twenty have block rank five through \(\mu_7\) and rank six after
+adding \(\mu_8\); nineteen use the leading \(M_6\) pivot and one uses a
+second pivot.  Four direct divisor scouts evaluate another 3600 roots.
+The generic quotient lengths are five on \(Q,J\) and six on \(K,H\);
+one reduced through-\(\mu_7\) point occurs on each of \(Q,J\), and both
+are excluded by \(\mu_8\).  This is a bounded modular scout, not a
+reconstruction or a characteristic-zero exclusion.
+
+The specialization, rank-complement, leading-border, and projected-border
+continuation uses only short guarded jobs.  Representative producers and
+the aggregate verifier are:
+
+```bash
+.venv/bin/python \
+  scripts/research_two_pair_sic_bidegree33_t0_fitting_interpolation.py \
+  --prime 43 --random-seed 602 --stratum QJH \
+  --sample-count 450 --max-attempts 10000 --retain-pairs --timeout 20 \
+  --output \
+  artifacts/generated-results/two_pair_sic_bidegree33_t0_stratum_QJH_random_p43_seed602.json
+.venv/bin/python \
+  scripts/research_two_pair_sic_bidegree33_t0_fitting_interpolation.py \
+  --prime 43 --random-seed 901 --sample-count 225 \
+  --max-attempts 6000 --pivot-scout --timeout 20 \
+  --output \
+  artifacts/generated-results/two_pair_sic_bidegree33_t0_rank_complement_random_p43_seed901.json
+.venv/bin/python \
+  scripts/research_two_pair_sic_bidegree33_t0_stratum_leading.py \
+  --prime 43 --stratum Q --timeout 20 \
+  --output \
+  artifacts/generated-results/two_pair_sic_bidegree33_t0_stratum_Q_leading_mod43.json
+.venv/bin/python \
+  scripts/research_two_pair_sic_bidegree33_t0_stratum_border_resultant.py \
+  --prime 43 --stratum Q --timeout 20 \
+  --output \
+  artifacts/generated-results/two_pair_sic_bidegree33_t0_stratum_Q_border_resultant_mod43.json
+.venv/bin/python \
+  scripts/research_two_pair_sic_bidegree33_t0_stratum_leading.py \
+  --prime 0 --stratum Q --timeout 20 \
+  --output \
+  artifacts/generated-results/two_pair_sic_bidegree33_t0_stratum_Q_leading_exact.json
+.venv/bin/python \
+  scripts/research_two_pair_sic_bidegree33_t0_stratum_border_resultant.py \
+  --prime 0 --stratum Q --timeout 20 \
+  --output \
+  artifacts/generated-results/two_pair_sic_bidegree33_t0_stratum_Q_border_resultant_exact.json
+.venv/bin/python \
+  scripts/verify_two_pair_sic_bidegree33_t0_strata_rank_continuation.py
+```
+
+The verifier pins 31 direct-stratum artifacts.  Across \(Q,J,K,H,KH\),
+\(QJH,JH,JK\), \(a_2=0\), and the repeated-root stratum, seventeen
+sampled reduced common roots through \(\mu_7\) are all excluded by direct
+\(\mu_8\) evaluation.  Twelve rank-complement shards test another 6300
+\(\mu_3\)-roots: four miss both selected pivots, but all four have full
+rank in \([M_6\ M_7]\), and no joint-rank-at-most-four point occurs.
+
+The `stratum_leading` command uses `liftstd`; the LCM of its leading
+coefficients is the specialization border.  Modulo \(43\) it gives the
+nine irreducible border profiles in (5.12z) and contains every retained
+length-drop point.  On \(Q,J,JK\) its sampled zeros are exactly the
+length drops.  The degree-at-most-four \(Q,J\) point-cloud kernels contain
+only the ambient cubic equation and its five linear multiples.
+
+The border-resultant command projects the quadratic \(\mu_3(s_3)\)
+against this border and factors the result.  The residual factors have
+the degree, term-count, and multiplicity profiles in (5.12aa).  The
+linear pseudo-remainder \(A s_3+B\) is coprime to every residual factor,
+so all have the dense pivot \(s_3=-B/A\).  These are exact finite-field
+calculations, not characteristic-zero component certificates.
+
+The two `--prime 0 --stratum Q` commands promote the \(Q\)-row.  Over
+\(\mathbb Q\), its leading border is irreducible of degree \(36\) with
+588 terms.  The exact degree-\(76\) resultant factors as
+\(c\,u^{20}J_Q^4R_{20}^2\), where \(J_Q\) is the inherited four-term
+quartic and \(R_{20}\) is irreducible of degree \(20\) with 200 terms.
+The exact linear pivot is coprime to \(R_{20}\), and reduction modulo
+43 matches the modular artifacts up to units.  The next step is custom
+arithmetic in this degree-five extension and the remaining modular
+degree-five/degree-six extensions; direct Gröbner recomputation is
+deliberately not part of this command sequence.
 
 The \(L=1\) trace/norm reconnaissance treats
 \((s_3,s_5,t_4)\) as a rank-twelve finite fiber after
@@ -6537,8 +7283,94 @@ cubic-gradient rows, the 319 and 307 quartic-gradient numerical rows, the
 rank-one/two/three leading-quintic determinant faces, the exact
 rank-three cubic Schur gap, its squarefree Hessian-discriminant
 obstruction and exact witness, the resulting potential-degree lower bound
-five, and the exact nonexistence scope are documented in
+five, the generic essential-rank top-gradient/Rees support sieve, its exact
+intersection with the three atlas codimension columns, and the exact
+nonexistence scope are documented in
 [`HC4_PROJECTIVE_POLAR_GEOMETRY.md`](HC4_PROJECTIVE_POLAR_GEOMETRY.md).
+
+Construct the universal 56-coefficient quintic top part, verify its
+gradient/Hessian/Euler/Koszul and midpoint-collision identities, build the
+generic essential Hessian-rank strata, and intersect their exact support
+codimensions with the atlas using:
+
+```bash
+.venv/bin/python scripts/analyze_hc4_quintic_infinity_rees.py
+```
+
+Independently certify that the generic smooth rank-one/two/three top ideals
+are equal-degree complete intersections of linear type, with the stated
+pure-top projective degrees, using:
+
+```bash
+M2 --script scripts/verify_hc4_quintic_infinity_rees_strata.m2
+```
+
+The Python command writes
+`artifacts/generated-results/hc4_quintic_infinity_rees_strata.json`.
+The pure-top Segre vectors are degeneration calibrations, not completed
+constant-Hessian Segre classes.  The exact restrictions on the actual
+atlas are the support-codimension/Segre-vanishing filters; lower-layer
+normal-cone multiplicities remain open at this stage.  The next checker
+below closes the smooth rank-three vertex packet.
+The recorded replay environment is the repository Python lock together with
+Macaulay2 1.22 and its `Cremona` and `ReesAlgebra` packages over
+\(\mathbb Q\).
+
+Close the smooth essential rank-three, codimension-four packet by verifying
+the \(\epsilon\)-flat length-\(256\) local complete intersection, the
+socle bound \(\dim(Bs_3)\ge2\), and the resulting affine-degree bound
+\(\delta\ge6\):
+
+```bash
+.venv/bin/python scripts/verify_hc4_rank3_vertex_colength.py
+M2 --script scripts/verify_hc4_rank3_vertex_colength.m2
+```
+
+The Python command writes
+`artifacts/generated-results/hc4_rank3_vertex_colength.json` and intersects
+the theorem with the atlas, excluding the signatures
+`(1,4,16,64,2)` and `(1,4,16,64,3)`.  The Macaulay2 command independently
+checks the complete-intersection Hilbert function and exact Fermat and
+deformed local calibrations.  The universal conclusion comes from the
+flatness/socle proof in
+[`HC4_PROJECTIVE_POLAR_GEOMETRY.md`](HC4_PROJECTIVE_POLAR_GEOMETRY.md), not
+from extrapolating those representatives.
+
+Refine the two codimension-three packets with the rank-two
+constant-kernel/Schur calculation and the rank-three ordinary-singularity
+incidence:
+
+```bash
+.venv/bin/python scripts/verify_hc4_codim3_gradient_strata.py
+M2 --script scripts/verify_hc4_codim3_gradient_strata.m2
+```
+
+The Python command writes
+`artifacts/generated-results/hc4_codim3_gradient_strata.json`.  It proves
+that a nonzero rank-two kernel restriction \(h_4|_K\) synchronizes a
+constant direction, closes the squarefree binary-Hessian branch through
+`HC4CD5`, and forces \(\sigma_3=16\) on the nonsquarefree remainder.  It
+also checks that the rank-three Schur cubic vanishes at every isolated
+singular point where the top Hessian has rank two.  The Macaulay2 replay
+checks the radical synchronization powers, transverse lengths \(64\to16\),
+and a nodal Hessian calibration.  These are packet restrictions, not
+unconditional deletions of codimension-three atlas rows.
+
+Apply `PGS3` to the essential-rank-two singular binary-quintic packet with:
+
+```bash
+.venv/bin/python scripts/verify_hc4_binary_root_partition_segre.py
+M2 --script scripts/verify_hc4_binary_root_partition_segre.m2
+```
+
+On the open stratum where a redundant active gradient has
+\(X_0\)-order one with unit coefficient at every repeated root, a root of
+multiplicity \(e\) contributes exactly \(e-1\) to \(\sigma_2\).  Hence a
+binary quintic with \(q\) distinct roots has \(\sigma_2=5-q\); the generic
+double-root packet retains only 51 and 50 atlas rows for affine degrees two
+and three.  The Macaulay2 replay checks multiplicities \(2,3,4\).
+The higher-\(X_0\)-torsion failure locus remains open, so this is not an
+unconditional row deletion.
 
 ## All-dimensional projective-gradient Segre machinery
 
@@ -6550,19 +7382,34 @@ with:
 
 ```bash
 .venv/bin/python scripts/verify_projective_gradient_segre_machinery.py
+.venv/bin/python scripts/verify_projective_gradient_normal_slices.py
+.venv/bin/python scripts/verify_projective_gradient_singular_slices.py
 ```
 
 Independently compute the exact plane-cotangent and
-quadratic-stabilization multidegrees with:
+quadratic-stabilization multidegrees, and replay representative
+smooth-essential normal slices, with:
 
 ```bash
 M2 --script scripts/verify_projective_gradient_segre_families.m2
+M2 --script scripts/verify_projective_gradient_normal_slices.m2
+M2 --script scripts/verify_projective_gradient_singular_slices.m2
 ```
 
-The first command writes
-`artifacts/generated-results/projective_gradient_segre_registry.json`.
+The Python commands write
+`artifacts/generated-results/projective_gradient_segre_registry.json` and
+the smooth and singular normal-slice ledgers
+`artifacts/generated-results/projective_gradient_normal_slices.json` and
+`artifacts/generated-results/projective_gradient_singular_slices.json`.
 Complete multidegree/Segre vectors, top-degree-only transport controls, and
 explicit families with uncomputed vectors are distinct record types.  The
+normal-slice artifact records the dimension-free complete-intersection
+Hilbert series, filtered missing-generator bound, exact unit-penultimate
+law, and the HC4 specializations `HC4PPG7` and `HC4PPG8`.  The canonical
+singular ledger records the kernel-vertex/singularity join, the exact
+truncated DVR-module formula, and a repeated-root binary quintic whose
+lower quartics realize active lengths \(8,3,2\).  This proves that the
+singular support alone does not determine its Segre multiplicity.  The
 canonical scope and the resulting restrictions on cotangent, Schur, HN,
 coefficient-scheme, and boundary-normalization consumers are documented in
 [`PROJECTIVE_GRADIENT_SEGRE_MACHINERY.md`](PROJECTIVE_GRADIENT_SEGRE_MACHINERY.md).

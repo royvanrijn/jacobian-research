@@ -1,0 +1,9677 @@
+{
+  "atlas_intersections": {
+    "affine_degree_2": {
+      "codimension_2": [
+        {
+          "projective_degrees": [
+            1,
+            4,
+            4,
+            3,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            12,
+            -83,
+            430
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            4,
+            4,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            12,
+            -84,
+            446
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            5,
+            4,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            11,
+            -72,
+            350
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            5,
+            5,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            11,
+            -73,
+            366
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            5,
+            6,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            11,
+            -74,
+            382
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            6,
+            4,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            10,
+            -60,
+            254
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            6,
+            5,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            10,
+            -61,
+            270
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            6,
+            6,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            10,
+            -62,
+            286
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            6,
+            7,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            10,
+            -63,
+            302
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            6,
+            8,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            10,
+            -64,
+            318
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            6,
+            9,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            10,
+            -65,
+            334
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            7,
+            4,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            9,
+            -48,
+            158
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            7,
+            5,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            9,
+            -49,
+            174
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            7,
+            6,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            9,
+            -50,
+            190
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            7,
+            7,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            9,
+            -51,
+            206
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            7,
+            8,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            9,
+            -52,
+            222
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            7,
+            9,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            9,
+            -53,
+            238
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            7,
+            10,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            9,
+            -54,
+            254
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            7,
+            11,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            9,
+            -55,
+            270
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            7,
+            12,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            9,
+            -56,
+            286
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            8,
+            4,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            8,
+            -36,
+            62
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            8,
+            5,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            8,
+            -37,
+            78
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            8,
+            6,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            8,
+            -38,
+            94
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            8,
+            7,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            8,
+            -39,
+            110
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            8,
+            8,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            8,
+            -40,
+            126
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            8,
+            9,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            8,
+            -41,
+            142
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            8,
+            10,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            8,
+            -42,
+            158
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            8,
+            11,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            8,
+            -43,
+            174
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            8,
+            12,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            8,
+            -44,
+            190
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            8,
+            13,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            8,
+            -45,
+            206
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            8,
+            14,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            8,
+            -46,
+            222
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            8,
+            15,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            8,
+            -47,
+            238
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            8,
+            16,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            8,
+            -48,
+            254
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            9,
+            5,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            7,
+            -25,
+            -18
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            9,
+            6,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            7,
+            -26,
+            -2
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            9,
+            7,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            7,
+            -27,
+            14
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            9,
+            8,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            7,
+            -28,
+            30
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            9,
+            9,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            7,
+            -29,
+            46
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            9,
+            10,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            7,
+            -30,
+            62
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            9,
+            11,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            7,
+            -31,
+            78
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            9,
+            12,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            7,
+            -32,
+            94
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            9,
+            13,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            7,
+            -33,
+            110
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            9,
+            14,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            7,
+            -34,
+            126
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            9,
+            15,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            7,
+            -35,
+            142
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            9,
+            16,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            7,
+            -36,
+            158
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            9,
+            17,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            7,
+            -37,
+            174
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            9,
+            18,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            7,
+            -38,
+            190
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            9,
+            19,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            7,
+            -39,
+            206
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            9,
+            20,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            7,
+            -40,
+            222
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            10,
+            5,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            6,
+            -13,
+            -114
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            10,
+            6,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            6,
+            -14,
+            -98
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            10,
+            7,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            6,
+            -15,
+            -82
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            10,
+            8,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            6,
+            -16,
+            -66
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            10,
+            9,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            6,
+            -17,
+            -50
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            10,
+            10,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            6,
+            -18,
+            -34
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            10,
+            11,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            6,
+            -19,
+            -18
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            10,
+            12,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            6,
+            -20,
+            -2
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            10,
+            13,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            6,
+            -21,
+            14
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            10,
+            14,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            6,
+            -22,
+            30
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            10,
+            15,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            6,
+            -23,
+            46
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            10,
+            16,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            6,
+            -24,
+            62
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            10,
+            17,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            6,
+            -25,
+            78
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            10,
+            18,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            6,
+            -26,
+            94
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            10,
+            19,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            6,
+            -27,
+            110
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            10,
+            20,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            6,
+            -28,
+            126
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            10,
+            21,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            6,
+            -29,
+            142
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            10,
+            22,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            6,
+            -30,
+            158
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            10,
+            23,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            6,
+            -31,
+            174
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            10,
+            24,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            6,
+            -32,
+            190
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            10,
+            25,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            6,
+            -33,
+            206
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            11,
+            5,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            5,
+            -1,
+            -210
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            11,
+            6,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            5,
+            -2,
+            -194
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            11,
+            7,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            5,
+            -3,
+            -178
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            11,
+            8,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            5,
+            -4,
+            -162
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            11,
+            9,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            5,
+            -5,
+            -146
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            11,
+            10,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            5,
+            -6,
+            -130
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            11,
+            11,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            5,
+            -7,
+            -114
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            11,
+            12,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            5,
+            -8,
+            -98
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            11,
+            13,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            5,
+            -9,
+            -82
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            11,
+            14,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            5,
+            -10,
+            -66
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            11,
+            15,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            5,
+            -11,
+            -50
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            11,
+            16,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            5,
+            -12,
+            -34
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            11,
+            17,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            5,
+            -13,
+            -18
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            11,
+            18,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            5,
+            -14,
+            -2
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            11,
+            19,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            5,
+            -15,
+            14
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            11,
+            20,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            5,
+            -16,
+            30
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            11,
+            21,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            5,
+            -17,
+            46
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            11,
+            22,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            5,
+            -18,
+            62
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            11,
+            23,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            5,
+            -19,
+            78
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            11,
+            24,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            5,
+            -20,
+            94
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            11,
+            25,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            5,
+            -21,
+            110
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            11,
+            26,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            5,
+            -22,
+            126
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            11,
+            27,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            5,
+            -23,
+            142
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            11,
+            28,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            5,
+            -24,
+            158
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            11,
+            29,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            5,
+            -25,
+            174
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            11,
+            30,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            5,
+            -26,
+            190
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            12,
+            5,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            4,
+            11,
+            -306
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            12,
+            6,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            4,
+            10,
+            -290
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            12,
+            7,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            4,
+            9,
+            -274
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            12,
+            8,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            4,
+            8,
+            -258
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            12,
+            9,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            4,
+            7,
+            -242
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            12,
+            10,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            4,
+            6,
+            -226
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            12,
+            11,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            4,
+            5,
+            -210
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            12,
+            12,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            4,
+            4,
+            -194
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            12,
+            13,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            4,
+            3,
+            -178
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            12,
+            14,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            4,
+            2,
+            -162
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            12,
+            15,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            4,
+            1,
+            -146
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            12,
+            16,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            4,
+            0,
+            -130
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            12,
+            17,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            4,
+            -1,
+            -114
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            12,
+            18,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            4,
+            -2,
+            -98
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            12,
+            19,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            4,
+            -3,
+            -82
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            12,
+            20,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            4,
+            -4,
+            -66
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            12,
+            21,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            4,
+            -5,
+            -50
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            12,
+            22,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            4,
+            -6,
+            -34
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            12,
+            23,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            4,
+            -7,
+            -18
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            12,
+            24,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            4,
+            -8,
+            -2
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            12,
+            25,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            4,
+            -9,
+            14
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            12,
+            26,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            4,
+            -10,
+            30
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            12,
+            27,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            4,
+            -11,
+            46
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            12,
+            28,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            4,
+            -12,
+            62
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            12,
+            29,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            4,
+            -13,
+            78
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            12,
+            30,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            4,
+            -14,
+            94
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            12,
+            31,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            4,
+            -15,
+            110
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            12,
+            32,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            4,
+            -16,
+            126
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            12,
+            33,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            4,
+            -17,
+            142
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            12,
+            34,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            4,
+            -18,
+            158
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            12,
+            35,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            4,
+            -19,
+            174
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            12,
+            36,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            4,
+            -20,
+            190
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            13,
+            6,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            3,
+            22,
+            -386
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            13,
+            7,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            3,
+            21,
+            -370
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            13,
+            8,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            3,
+            20,
+            -354
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            13,
+            9,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            3,
+            19,
+            -338
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            13,
+            10,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            3,
+            18,
+            -322
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            13,
+            11,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            3,
+            17,
+            -306
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            13,
+            12,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            3,
+            16,
+            -290
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            13,
+            13,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            3,
+            15,
+            -274
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            13,
+            14,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            3,
+            14,
+            -258
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            13,
+            15,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            3,
+            13,
+            -242
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            13,
+            16,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            3,
+            12,
+            -226
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            13,
+            17,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            3,
+            11,
+            -210
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            13,
+            18,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            3,
+            10,
+            -194
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            13,
+            19,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            3,
+            9,
+            -178
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            13,
+            20,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            3,
+            8,
+            -162
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            13,
+            21,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            3,
+            7,
+            -146
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            13,
+            22,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            3,
+            6,
+            -130
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            13,
+            23,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            3,
+            5,
+            -114
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            13,
+            24,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            3,
+            4,
+            -98
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            13,
+            25,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            3,
+            3,
+            -82
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            13,
+            26,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            3,
+            2,
+            -66
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            13,
+            27,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            3,
+            1,
+            -50
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            13,
+            28,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            3,
+            0,
+            -34
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            13,
+            29,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            3,
+            -1,
+            -18
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            13,
+            30,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            3,
+            -2,
+            -2
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            13,
+            31,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            3,
+            -3,
+            14
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            13,
+            32,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            3,
+            -4,
+            30
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            13,
+            33,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            3,
+            -5,
+            46
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            13,
+            34,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            3,
+            -6,
+            62
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            13,
+            35,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            3,
+            -7,
+            78
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            13,
+            36,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            3,
+            -8,
+            94
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            13,
+            37,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            3,
+            -9,
+            110
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            13,
+            38,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            3,
+            -10,
+            126
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            13,
+            39,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            3,
+            -11,
+            142
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            13,
+            40,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            3,
+            -12,
+            158
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            13,
+            41,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            3,
+            -13,
+            174
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            13,
+            42,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            3,
+            -14,
+            190
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            6,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            34,
+            -482
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            7,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            33,
+            -466
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            8,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            32,
+            -450
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            9,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            31,
+            -434
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            10,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            30,
+            -418
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            11,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            29,
+            -402
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            12,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            28,
+            -386
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            13,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            27,
+            -370
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            14,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            26,
+            -354
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            15,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            25,
+            -338
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            16,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            24,
+            -322
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            17,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            23,
+            -306
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            18,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            22,
+            -290
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            19,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            21,
+            -274
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            20,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            20,
+            -258
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            21,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            19,
+            -242
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            22,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            18,
+            -226
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            23,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            17,
+            -210
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            24,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            16,
+            -194
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            25,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            15,
+            -178
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            26,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            14,
+            -162
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            27,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            13,
+            -146
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            28,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            12,
+            -130
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            29,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            11,
+            -114
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            30,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            10,
+            -98
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            31,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            9,
+            -82
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            32,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            8,
+            -66
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            33,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            7,
+            -50
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            34,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            6,
+            -34
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            35,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            5,
+            -18
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            36,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            4,
+            -2
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            37,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            3,
+            14
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            38,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            2,
+            30
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            39,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            1,
+            46
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            40,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            0,
+            62
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            41,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            -1,
+            78
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            42,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            -2,
+            94
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            43,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            -3,
+            110
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            44,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            -4,
+            126
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            45,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            -5,
+            142
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            46,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            -6,
+            158
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            47,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            -7,
+            174
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            48,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            -8,
+            190
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            49,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            -9,
+            206
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            6,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            46,
+            -578
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            7,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            45,
+            -562
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            8,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            44,
+            -546
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            9,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            43,
+            -530
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            10,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            42,
+            -514
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            11,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            41,
+            -498
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            12,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            40,
+            -482
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            13,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            39,
+            -466
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            14,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            38,
+            -450
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            15,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            37,
+            -434
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            16,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            36,
+            -418
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            17,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            35,
+            -402
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            18,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            34,
+            -386
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            19,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            33,
+            -370
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            20,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            32,
+            -354
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            21,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            31,
+            -338
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            22,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            30,
+            -322
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            23,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            29,
+            -306
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            24,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            28,
+            -290
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            25,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            27,
+            -274
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            26,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            26,
+            -258
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            27,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            25,
+            -242
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            28,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            24,
+            -226
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            29,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            23,
+            -210
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            30,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            22,
+            -194
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            31,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            21,
+            -178
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            32,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            20,
+            -162
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            33,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            19,
+            -146
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            34,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            18,
+            -130
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            35,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            17,
+            -114
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            36,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            16,
+            -98
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            37,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            15,
+            -82
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            38,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            14,
+            -66
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            39,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            13,
+            -50
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            40,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            12,
+            -34
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            41,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            11,
+            -18
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            42,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            10,
+            -2
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            43,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            9,
+            14
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            44,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            8,
+            30
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            45,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            7,
+            46
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            46,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            6,
+            62
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            47,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            5,
+            78
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            48,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            4,
+            94
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            49,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            3,
+            110
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            50,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            2,
+            126
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            51,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            1,
+            142
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            52,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            0,
+            158
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            53,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            -1,
+            174
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            54,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            -2,
+            190
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            55,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            -3,
+            206
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            56,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            -4,
+            222
+          ]
+        }
+      ],
+      "codimension_3": [
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            6,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            58,
+            -674
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            7,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            57,
+            -658
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            8,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            56,
+            -642
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            9,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            55,
+            -626
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            10,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            54,
+            -610
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            11,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            53,
+            -594
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            12,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            52,
+            -578
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            13,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            51,
+            -562
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            14,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            50,
+            -546
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            15,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            49,
+            -530
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            16,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            48,
+            -514
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            17,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            47,
+            -498
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            18,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            46,
+            -482
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            19,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            45,
+            -466
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            20,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            44,
+            -450
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            21,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            43,
+            -434
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            22,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            42,
+            -418
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            23,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            41,
+            -402
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            24,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            40,
+            -386
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            25,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            39,
+            -370
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            26,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            38,
+            -354
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            27,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            37,
+            -338
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            28,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            36,
+            -322
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            29,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            35,
+            -306
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            30,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            34,
+            -290
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            31,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            33,
+            -274
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            32,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            32,
+            -258
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            33,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            31,
+            -242
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            34,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            30,
+            -226
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            35,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            29,
+            -210
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            36,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            28,
+            -194
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            37,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            27,
+            -178
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            38,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            26,
+            -162
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            39,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            25,
+            -146
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            40,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            24,
+            -130
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            41,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            23,
+            -114
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            42,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            22,
+            -98
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            43,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            21,
+            -82
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            44,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            20,
+            -66
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            45,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            19,
+            -50
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            46,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            18,
+            -34
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            47,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            17,
+            -18
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            48,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            16,
+            -2
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            49,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            15,
+            14
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            50,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            14,
+            30
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            51,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            13,
+            46
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            52,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            12,
+            62
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            53,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            11,
+            78
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            54,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            10,
+            94
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            55,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            9,
+            110
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            56,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            8,
+            126
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            57,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            7,
+            142
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            58,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            6,
+            158
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            59,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            5,
+            174
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            60,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            4,
+            190
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            61,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            3,
+            206
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            62,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            2,
+            222
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            63,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            1,
+            238
+          ]
+        }
+      ],
+      "codimension_4": [
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            64,
+            2
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            0,
+            254
+          ]
+        }
+      ]
+    },
+    "affine_degree_3": {
+      "codimension_2": [
+        {
+          "projective_degrees": [
+            1,
+            4,
+            4,
+            4,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            12,
+            -84,
+            445
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            5,
+            4,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            11,
+            -72,
+            349
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            5,
+            5,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            11,
+            -73,
+            365
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            5,
+            6,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            11,
+            -74,
+            381
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            6,
+            5,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            10,
+            -61,
+            269
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            6,
+            6,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            10,
+            -62,
+            285
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            6,
+            7,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            10,
+            -63,
+            301
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            6,
+            8,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            10,
+            -64,
+            317
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            6,
+            9,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            10,
+            -65,
+            333
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            7,
+            5,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            9,
+            -49,
+            173
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            7,
+            6,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            9,
+            -50,
+            189
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            7,
+            7,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            9,
+            -51,
+            205
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            7,
+            8,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            9,
+            -52,
+            221
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            7,
+            9,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            9,
+            -53,
+            237
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            7,
+            10,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            9,
+            -54,
+            253
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            7,
+            11,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            9,
+            -55,
+            269
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            7,
+            12,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            9,
+            -56,
+            285
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            8,
+            5,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            8,
+            -37,
+            77
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            8,
+            6,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            8,
+            -38,
+            93
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            8,
+            7,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            8,
+            -39,
+            109
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            8,
+            8,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            8,
+            -40,
+            125
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            8,
+            9,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            8,
+            -41,
+            141
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            8,
+            10,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            8,
+            -42,
+            157
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            8,
+            11,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            8,
+            -43,
+            173
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            8,
+            12,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            8,
+            -44,
+            189
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            8,
+            13,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            8,
+            -45,
+            205
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            8,
+            14,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            8,
+            -46,
+            221
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            8,
+            15,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            8,
+            -47,
+            237
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            8,
+            16,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            8,
+            -48,
+            253
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            9,
+            6,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            7,
+            -26,
+            -3
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            9,
+            7,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            7,
+            -27,
+            13
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            9,
+            8,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            7,
+            -28,
+            29
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            9,
+            9,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            7,
+            -29,
+            45
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            9,
+            10,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            7,
+            -30,
+            61
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            9,
+            11,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            7,
+            -31,
+            77
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            9,
+            12,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            7,
+            -32,
+            93
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            9,
+            13,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            7,
+            -33,
+            109
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            9,
+            14,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            7,
+            -34,
+            125
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            9,
+            15,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            7,
+            -35,
+            141
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            9,
+            16,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            7,
+            -36,
+            157
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            9,
+            17,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            7,
+            -37,
+            173
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            9,
+            18,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            7,
+            -38,
+            189
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            9,
+            19,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            7,
+            -39,
+            205
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            9,
+            20,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            7,
+            -40,
+            221
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            10,
+            6,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            6,
+            -14,
+            -99
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            10,
+            7,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            6,
+            -15,
+            -83
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            10,
+            8,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            6,
+            -16,
+            -67
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            10,
+            9,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            6,
+            -17,
+            -51
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            10,
+            10,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            6,
+            -18,
+            -35
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            10,
+            11,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            6,
+            -19,
+            -19
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            10,
+            12,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            6,
+            -20,
+            -3
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            10,
+            13,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            6,
+            -21,
+            13
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            10,
+            14,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            6,
+            -22,
+            29
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            10,
+            15,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            6,
+            -23,
+            45
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            10,
+            16,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            6,
+            -24,
+            61
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            10,
+            17,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            6,
+            -25,
+            77
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            10,
+            18,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            6,
+            -26,
+            93
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            10,
+            19,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            6,
+            -27,
+            109
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            10,
+            20,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            6,
+            -28,
+            125
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            10,
+            21,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            6,
+            -29,
+            141
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            10,
+            22,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            6,
+            -30,
+            157
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            10,
+            23,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            6,
+            -31,
+            173
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            10,
+            24,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            6,
+            -32,
+            189
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            10,
+            25,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            6,
+            -33,
+            205
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            11,
+            6,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            5,
+            -2,
+            -195
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            11,
+            7,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            5,
+            -3,
+            -179
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            11,
+            8,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            5,
+            -4,
+            -163
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            11,
+            9,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            5,
+            -5,
+            -147
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            11,
+            10,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            5,
+            -6,
+            -131
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            11,
+            11,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            5,
+            -7,
+            -115
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            11,
+            12,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            5,
+            -8,
+            -99
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            11,
+            13,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            5,
+            -9,
+            -83
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            11,
+            14,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            5,
+            -10,
+            -67
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            11,
+            15,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            5,
+            -11,
+            -51
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            11,
+            16,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            5,
+            -12,
+            -35
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            11,
+            17,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            5,
+            -13,
+            -19
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            11,
+            18,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            5,
+            -14,
+            -3
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            11,
+            19,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            5,
+            -15,
+            13
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            11,
+            20,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            5,
+            -16,
+            29
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            11,
+            21,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            5,
+            -17,
+            45
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            11,
+            22,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            5,
+            -18,
+            61
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            11,
+            23,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            5,
+            -19,
+            77
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            11,
+            24,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            5,
+            -20,
+            93
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            11,
+            25,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            5,
+            -21,
+            109
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            11,
+            26,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            5,
+            -22,
+            125
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            11,
+            27,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            5,
+            -23,
+            141
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            11,
+            28,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            5,
+            -24,
+            157
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            11,
+            29,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            5,
+            -25,
+            173
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            11,
+            30,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            5,
+            -26,
+            189
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            12,
+            6,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            4,
+            10,
+            -291
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            12,
+            7,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            4,
+            9,
+            -275
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            12,
+            8,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            4,
+            8,
+            -259
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            12,
+            9,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            4,
+            7,
+            -243
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            12,
+            10,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            4,
+            6,
+            -227
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            12,
+            11,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            4,
+            5,
+            -211
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            12,
+            12,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            4,
+            4,
+            -195
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            12,
+            13,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            4,
+            3,
+            -179
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            12,
+            14,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            4,
+            2,
+            -163
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            12,
+            15,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            4,
+            1,
+            -147
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            12,
+            16,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            4,
+            0,
+            -131
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            12,
+            17,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            4,
+            -1,
+            -115
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            12,
+            18,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            4,
+            -2,
+            -99
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            12,
+            19,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            4,
+            -3,
+            -83
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            12,
+            20,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            4,
+            -4,
+            -67
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            12,
+            21,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            4,
+            -5,
+            -51
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            12,
+            22,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            4,
+            -6,
+            -35
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            12,
+            23,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            4,
+            -7,
+            -19
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            12,
+            24,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            4,
+            -8,
+            -3
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            12,
+            25,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            4,
+            -9,
+            13
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            12,
+            26,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            4,
+            -10,
+            29
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            12,
+            27,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            4,
+            -11,
+            45
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            12,
+            28,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            4,
+            -12,
+            61
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            12,
+            29,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            4,
+            -13,
+            77
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            12,
+            30,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            4,
+            -14,
+            93
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            12,
+            31,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            4,
+            -15,
+            109
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            12,
+            32,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            4,
+            -16,
+            125
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            12,
+            33,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            4,
+            -17,
+            141
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            12,
+            34,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            4,
+            -18,
+            157
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            12,
+            35,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            4,
+            -19,
+            173
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            12,
+            36,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            4,
+            -20,
+            189
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            13,
+            7,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            3,
+            21,
+            -371
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            13,
+            8,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            3,
+            20,
+            -355
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            13,
+            9,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            3,
+            19,
+            -339
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            13,
+            10,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            3,
+            18,
+            -323
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            13,
+            11,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            3,
+            17,
+            -307
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            13,
+            12,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            3,
+            16,
+            -291
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            13,
+            13,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            3,
+            15,
+            -275
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            13,
+            14,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            3,
+            14,
+            -259
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            13,
+            15,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            3,
+            13,
+            -243
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            13,
+            16,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            3,
+            12,
+            -227
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            13,
+            17,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            3,
+            11,
+            -211
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            13,
+            18,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            3,
+            10,
+            -195
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            13,
+            19,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            3,
+            9,
+            -179
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            13,
+            20,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            3,
+            8,
+            -163
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            13,
+            21,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            3,
+            7,
+            -147
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            13,
+            22,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            3,
+            6,
+            -131
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            13,
+            23,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            3,
+            5,
+            -115
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            13,
+            24,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            3,
+            4,
+            -99
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            13,
+            25,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            3,
+            3,
+            -83
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            13,
+            26,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            3,
+            2,
+            -67
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            13,
+            27,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            3,
+            1,
+            -51
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            13,
+            28,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            3,
+            0,
+            -35
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            13,
+            29,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            3,
+            -1,
+            -19
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            13,
+            30,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            3,
+            -2,
+            -3
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            13,
+            31,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            3,
+            -3,
+            13
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            13,
+            32,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            3,
+            -4,
+            29
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            13,
+            33,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            3,
+            -5,
+            45
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            13,
+            34,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            3,
+            -6,
+            61
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            13,
+            35,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            3,
+            -7,
+            77
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            13,
+            36,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            3,
+            -8,
+            93
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            13,
+            37,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            3,
+            -9,
+            109
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            13,
+            38,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            3,
+            -10,
+            125
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            13,
+            39,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            3,
+            -11,
+            141
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            13,
+            40,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            3,
+            -12,
+            157
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            13,
+            41,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            3,
+            -13,
+            173
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            13,
+            42,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            3,
+            -14,
+            189
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            7,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            33,
+            -467
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            8,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            32,
+            -451
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            9,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            31,
+            -435
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            10,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            30,
+            -419
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            11,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            29,
+            -403
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            12,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            28,
+            -387
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            13,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            27,
+            -371
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            14,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            26,
+            -355
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            15,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            25,
+            -339
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            16,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            24,
+            -323
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            17,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            23,
+            -307
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            18,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            22,
+            -291
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            19,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            21,
+            -275
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            20,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            20,
+            -259
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            21,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            19,
+            -243
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            22,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            18,
+            -227
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            23,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            17,
+            -211
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            24,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            16,
+            -195
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            25,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            15,
+            -179
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            26,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            14,
+            -163
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            27,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            13,
+            -147
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            28,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            12,
+            -131
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            29,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            11,
+            -115
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            30,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            10,
+            -99
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            31,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            9,
+            -83
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            32,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            8,
+            -67
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            33,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            7,
+            -51
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            34,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            6,
+            -35
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            35,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            5,
+            -19
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            36,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            4,
+            -3
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            37,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            3,
+            13
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            38,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            2,
+            29
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            39,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            1,
+            45
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            40,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            0,
+            61
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            41,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            -1,
+            77
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            42,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            -2,
+            93
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            43,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            -3,
+            109
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            44,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            -4,
+            125
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            45,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            -5,
+            141
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            46,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            -6,
+            157
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            47,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            -7,
+            173
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            48,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            -8,
+            189
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            14,
+            49,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            2,
+            -9,
+            205
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            7,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            45,
+            -563
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            8,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            44,
+            -547
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            9,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            43,
+            -531
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            10,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            42,
+            -515
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            11,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            41,
+            -499
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            12,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            40,
+            -483
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            13,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            39,
+            -467
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            14,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            38,
+            -451
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            15,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            37,
+            -435
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            16,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            36,
+            -419
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            17,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            35,
+            -403
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            18,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            34,
+            -387
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            19,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            33,
+            -371
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            20,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            32,
+            -355
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            21,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            31,
+            -339
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            22,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            30,
+            -323
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            23,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            29,
+            -307
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            24,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            28,
+            -291
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            25,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            27,
+            -275
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            26,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            26,
+            -259
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            27,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            25,
+            -243
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            28,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            24,
+            -227
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            29,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            23,
+            -211
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            30,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            22,
+            -195
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            31,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            21,
+            -179
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            32,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            20,
+            -163
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            33,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            19,
+            -147
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            34,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            18,
+            -131
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            35,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            17,
+            -115
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            36,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            16,
+            -99
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            37,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            15,
+            -83
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            38,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            14,
+            -67
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            39,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            13,
+            -51
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            40,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            12,
+            -35
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            41,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            11,
+            -19
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            42,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            10,
+            -3
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            43,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            9,
+            13
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            44,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            8,
+            29
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            45,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            7,
+            45
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            46,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            6,
+            61
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            47,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            5,
+            77
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            48,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            4,
+            93
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            49,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            3,
+            109
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            50,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            2,
+            125
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            51,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            1,
+            141
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            52,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            0,
+            157
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            53,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            -1,
+            173
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            54,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            -2,
+            189
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            55,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            -3,
+            205
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            15,
+            56,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            1,
+            -4,
+            221
+          ]
+        }
+      ],
+      "codimension_3": [
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            7,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            57,
+            -659
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            8,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            56,
+            -643
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            9,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            55,
+            -627
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            10,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            54,
+            -611
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            11,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            53,
+            -595
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            12,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            52,
+            -579
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            13,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            51,
+            -563
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            14,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            50,
+            -547
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            15,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            49,
+            -531
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            16,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            48,
+            -515
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            17,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            47,
+            -499
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            18,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            46,
+            -483
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            19,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            45,
+            -467
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            20,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            44,
+            -451
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            21,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            43,
+            -435
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            22,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            42,
+            -419
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            23,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            41,
+            -403
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            24,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            40,
+            -387
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            25,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            39,
+            -371
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            26,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            38,
+            -355
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            27,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            37,
+            -339
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            28,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            36,
+            -323
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            29,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            35,
+            -307
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            30,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            34,
+            -291
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            31,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            33,
+            -275
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            32,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            32,
+            -259
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            33,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            31,
+            -243
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            34,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            30,
+            -227
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            35,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            29,
+            -211
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            36,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            28,
+            -195
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            37,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            27,
+            -179
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            38,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            26,
+            -163
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            39,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            25,
+            -147
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            40,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            24,
+            -131
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            41,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            23,
+            -115
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            42,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            22,
+            -99
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            43,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            21,
+            -83
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            44,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            20,
+            -67
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            45,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            19,
+            -51
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            46,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            18,
+            -35
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            47,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            17,
+            -19
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            48,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            16,
+            -3
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            49,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            15,
+            13
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            50,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            14,
+            29
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            51,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            13,
+            45
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            52,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            12,
+            61
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            53,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            11,
+            77
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            54,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            10,
+            93
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            55,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            9,
+            109
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            56,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            8,
+            125
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            57,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            7,
+            141
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            58,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            6,
+            157
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            59,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            5,
+            173
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            60,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            4,
+            189
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            61,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            3,
+            205
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            62,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            2,
+            221
+          ]
+        },
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            63,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            1,
+            237
+          ]
+        }
+      ],
+      "codimension_4": [
+        {
+          "projective_degrees": [
+            1,
+            4,
+            16,
+            64,
+            3
+          ],
+          "segre_degrees": [
+            0,
+            0,
+            0,
+            253
+          ]
+        }
+      ]
+    }
+  },
+  "constant_determinant_normal_cone_faces": {
+    "rank_1": {
+      "equation": "det(C1)*det(Hess(h4)|K)=0",
+      "lambda_degree": 9
+    },
+    "rank_2": {
+      "equation": "det(C2)*det(Hess(h4)|K)=0",
+      "lambda_degree": 10
+    },
+    "rank_3": {
+      "certificate": "scripts/verify_hc4_projective_polar_atlas.py",
+      "lambda_degree_10": "det(C3)*D_t^2(h3)-grad(s3)^T*adj(C3)*grad(s3)=0",
+      "lambda_degree_11": "det(C3)*D_t^2(h4)=0"
+    }
+  },
+  "constant_hessian_gate": "The top determinant forces Hessian rank at most three. Existing HC4 determinant-face equations must be imposed after this support filter; they are not encoded by the pure-top complete intersection.",
+  "format": "hc4-quintic-infinity-rees-strata-v1",
+  "generic_rees_conclusion": "On the smooth essential rank-r stratum, the active infinity gradient generators form a regular sequence and are of linear type. Their Rees ideal has only Koszul equations; padded zero gradient coordinates add linear target equations. Extra nonlinear Rees constraints must therefore come from singular top quintics or from the lower-layer completed base ideal.",
+  "generic_smooth_rank_strata": [
+    {
+      "active_gradient_generators": 1,
+      "atlas_rows_affine_degree_2": 260,
+      "atlas_rows_affine_degree_3": 249,
+      "base_support_codimension": 2,
+      "coefficient_count": 1,
+      "compactification_rees_relations": 4,
+      "hessian_rank": 1,
+      "inactive_gradient_generators": 3,
+      "infinity_gradient_rees_relations": 3,
+      "pure_top_projective_degrees": [
+        1,
+        4,
+        0,
+        0,
+        0
+      ],
+      "pure_top_segre_degrees": [
+        0,
+        16,
+        -128,
+        768
+      ]
+    },
+    {
+      "active_gradient_generators": 2,
+      "atlas_rows_affine_degree_2": 58,
+      "atlas_rows_affine_degree_3": 57,
+      "base_support_codimension": 3,
+      "coefficient_count": 6,
+      "compactification_rees_relations": 5,
+      "hessian_rank": 2,
+      "inactive_gradient_generators": 2,
+      "infinity_gradient_rees_relations": 3,
+      "pure_top_projective_degrees": [
+        1,
+        4,
+        16,
+        0,
+        0
+      ],
+      "pure_top_segre_degrees": [
+        0,
+        0,
+        64,
+        -768
+      ]
+    },
+    {
+      "active_gradient_generators": 3,
+      "atlas_rows_affine_degree_2": 1,
+      "atlas_rows_affine_degree_3": 1,
+      "base_support_codimension": 4,
+      "coefficient_count": 21,
+      "compactification_rees_relations": 7,
+      "hessian_rank": 3,
+      "inactive_gradient_generators": 1,
+      "infinity_gradient_rees_relations": 4,
+      "pure_top_projective_degrees": [
+        1,
+        4,
+        16,
+        64,
+        0
+      ],
+      "pure_top_segre_degrees": [
+        0,
+        0,
+        0,
+        256
+      ]
+    }
+  ],
+  "midpoint_collision_parity": {
+    "even_gradient_equation": "grad(h3+h5)(a)=0",
+    "homogeneous_layer_checks": {
+      "h2": {
+        "coefficient_count": 10,
+        "gradient_parity_under_x_to_minus_x": -1
+      },
+      "h3": {
+        "coefficient_count": 20,
+        "gradient_parity_under_x_to_minus_x": 1
+      },
+      "h4": {
+        "coefficient_count": 35,
+        "gradient_parity_under_x_to_minus_x": -1
+      },
+      "h5": {
+        "coefficient_count": 56,
+        "gradient_parity_under_x_to_minus_x": 1
+      }
+    },
+    "odd_gradient_equation": "grad(h2+h4)(a)=0",
+    "scope": "These are exact collision equations after midpoint translation. They do not by themselves put [a] in the infinity gradient base scheme."
+  },
+  "scope": "Exact universal top-quintic identities, generic smooth essential rank-stratum Rees/complete-intersection models, and support-codimension intersections with the numerical HC4 atlas. The pure-top Segre vectors are degeneration calibrations, not the Segre vectors of a completed constant-Hessian potential. Lower layers can change normal-cone multiplicities while preserving the reduced support codimension.",
+  "software_assumptions": {
+    "coefficient_field": "characteristic zero; exact symbolic work over QQ",
+    "independent_rees_replay": "Macaulay2 1.22 with Cremona and ReesAlgebra",
+    "python": "repository .python-version and requirements.txt"
+  },
+  "support_strata": [
+    {
+      "atlas_rows": {
+        "2": 260,
+        "3": 249
+      },
+      "base_support_codimension": 2,
+      "determinant_face_status": "open: det(Hess(h4)|K)=0 on a constant three-plane; kernel synchronization remains",
+      "essential_quintic_singularity": "empty",
+      "hessian_rank": 1
+    },
+    {
+      "atlas_rows": {
+        "2": 58,
+        "3": 57
+      },
+      "base_support_codimension": 3,
+      "determinant_face_status": "open: det(Hess(h4)|K)=0 on a constant two-plane; kernel synchronization remains",
+      "essential_quintic_singularity": "empty (squarefree binary quintic)",
+      "hessian_rank": 2
+    },
+    {
+      "atlas_rows": {
+        "2": 260,
+        "3": 249
+      },
+      "base_support_codimension": 2,
+      "determinant_face_status": "open: singular binary top plus the rank-two determinant face",
+      "essential_quintic_singularity": "nonempty (repeated binary root)",
+      "hessian_rank": 2
+    },
+    {
+      "atlas_rows": {
+        "2": 1,
+        "3": 1
+      },
+      "base_support_codimension": 4,
+      "determinant_face_status": "aligned branch closed; nonaligned branch requires nonsquarefree ternary Hessian determinant",
+      "essential_quintic_singularity": "empty (smooth ternary quintic)",
+      "hessian_rank": 3
+    },
+    {
+      "atlas_rows": {
+        "2": 58,
+        "3": 57
+      },
+      "base_support_codimension": 3,
+      "determinant_face_status": "aligned branch closed; nonaligned branch requires nonsquarefree ternary Hessian determinant",
+      "essential_quintic_singularity": "isolated points",
+      "hessian_rank": 3
+    },
+    {
+      "atlas_rows": {
+        "2": 260,
+        "3": 249
+      },
+      "base_support_codimension": 2,
+      "determinant_face_status": "aligned branch closed; nonaligned branch requires nonsquarefree ternary Hessian determinant",
+      "essential_quintic_singularity": "positive-dimensional",
+      "hessian_rank": 3
+    }
+  ],
+  "symbolic_atlas_restrictions": {
+    "codimension_2": {
+      "equations": [
+        "sigma_1=0",
+        "sigma_2>0"
+      ],
+      "top_degree_equation": "96*sigma_2+16*sigma_3+sigma_4=256-delta"
+    },
+    "codimension_3": {
+      "equations": [
+        "sigma_1=sigma_2=0",
+        "sigma_3>0"
+      ],
+      "top_degree_equation": "16*sigma_3+sigma_4=256-delta"
+    },
+    "codimension_4": {
+      "affine_degree_2_signature": [
+        0,
+        0,
+        0,
+        254
+      ],
+      "affine_degree_3_signature": [
+        0,
+        0,
+        0,
+        253
+      ],
+      "equations": [
+        "sigma_1=sigma_2=sigma_3=0"
+      ],
+      "top_degree_equation": "sigma_4=256-delta"
+    }
+  },
+  "universal_checks": {
+    "rank_1": {
+      "active_koszul_relations": [],
+      "curl_relations": 6,
+      "euler_identity": "sum x_i*d_i(h5)=5*h5",
+      "hessian_euler_identity": "Hess(h5)*x=4*grad(h5)",
+      "inactive_target_relations": [
+        "u_2",
+        "u_3",
+        "u_4"
+      ],
+      "universal_top_term_count": 1
+    },
+    "rank_2": {
+      "active_koszul_relations": [
+        "d_1(h5)*u_2-d_2(h5)*u_1"
+      ],
+      "curl_relations": 6,
+      "euler_identity": "sum x_i*d_i(h5)=5*h5",
+      "hessian_euler_identity": "Hess(h5)*x=4*grad(h5)",
+      "inactive_target_relations": [
+        "u_3",
+        "u_4"
+      ],
+      "universal_top_term_count": 6
+    },
+    "rank_3": {
+      "active_koszul_relations": [
+        "d_1(h5)*u_2-d_2(h5)*u_1",
+        "d_1(h5)*u_3-d_3(h5)*u_1",
+        "d_2(h5)*u_3-d_3(h5)*u_2"
+      ],
+      "curl_relations": 6,
+      "euler_identity": "sum x_i*d_i(h5)=5*h5",
+      "hessian_euler_identity": "Hess(h5)*x=4*grad(h5)",
+      "inactive_target_relations": [
+        "u_4"
+      ],
+      "universal_top_term_count": 21
+    }
+  },
+  "universal_four_variable_h5": {
+    "coefficient_count": 56,
+    "constant_hessian_top_gate": "det Hess(h5)=0, hence rank<=3",
+    "curl_relations": 6,
+    "euler_identity": "sum x_i*d_i(h5)=5*h5",
+    "generic_rank_four_witness": "h5=sum x_i^5 has det Hess(h5)=20^4*product x_i^3",
+    "gradient_generators": 4,
+    "hessian_euler_identity": "Hess(h5)*x=4*grad(h5)"
+  }
+}

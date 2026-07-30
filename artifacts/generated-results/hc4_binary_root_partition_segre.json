@@ -1,0 +1,145 @@
+{
+  "codimension_two_sigma2_counts": {
+    "affine_degree_2": {
+      "1": 51,
+      "10": 6,
+      "11": 3,
+      "12": 2,
+      "2": 44,
+      "3": 37,
+      "4": 32,
+      "5": 26,
+      "6": 21,
+      "7": 16,
+      "8": 13,
+      "9": 9
+    },
+    "affine_degree_3": {
+      "1": 50,
+      "10": 5,
+      "11": 3,
+      "12": 1,
+      "2": 43,
+      "3": 36,
+      "4": 31,
+      "5": 25,
+      "6": 20,
+      "7": 15,
+      "8": 12,
+      "9": 8
+    }
+  },
+  "format": "hc4-binary-root-partition-segre-v1",
+  "generic_discriminant_packet": {
+    "forced_sigma2": 1,
+    "root_partition": [
+      2,
+      1,
+      1,
+      1
+    ],
+    "rows_before_partition_sieve": {
+      "affine_degree_2": 260,
+      "affine_degree_3": 249
+    },
+    "rows_for_affine_degree_2": 51,
+    "rows_for_affine_degree_3": 50
+  },
+  "local_calibrations": {
+    "root_multiplicity_2": {
+      "active_dvr_profile": {
+        "generic_rank": 0,
+        "torsion_orders": [
+          1
+        ]
+      },
+      "transverse_jacobian_length": 1,
+      "truncated_and_final_length": 1
+    },
+    "root_multiplicity_3": {
+      "active_dvr_profile": {
+        "generic_rank": 0,
+        "torsion_orders": [
+          1,
+          1
+        ]
+      },
+      "transverse_jacobian_length": 2,
+      "truncated_and_final_length": 2
+    },
+    "root_multiplicity_4": {
+      "active_dvr_profile": {
+        "generic_rank": 0,
+        "torsion_orders": [
+          1,
+          1,
+          1
+        ]
+      },
+      "transverse_jacobian_length": 3,
+      "truncated_and_final_length": 3
+    }
+  },
+  "local_theorem": {
+    "active_unit_profile": "rho=0 with e-1 torsion summands, all of order one",
+    "component_segre_contribution": "e-1",
+    "root_multiplicity": "e",
+    "transverse_jacobian_algebra": "K[x]/(x^(e-1))",
+    "transverse_jacobian_length": "e-1"
+  },
+  "next_exceptional_calculation": "impose the constant-Hessian determinant faces on the failure of the active-unit condition and compute its higher torsion orders",
+  "root_partitions": {
+    "2+1+1+1": {
+      "atlas_rows": {
+        "affine_degree_2": 51,
+        "affine_degree_3": 50
+      },
+      "distinct_roots": 4,
+      "forced_sigma2_on_active_unit_stratum": 1,
+      "repeated_root_excess": 1
+    },
+    "2+2+1": {
+      "atlas_rows": {
+        "affine_degree_2": 44,
+        "affine_degree_3": 43
+      },
+      "distinct_roots": 3,
+      "forced_sigma2_on_active_unit_stratum": 2,
+      "repeated_root_excess": 2
+    },
+    "3+1+1": {
+      "atlas_rows": {
+        "affine_degree_2": 44,
+        "affine_degree_3": 43
+      },
+      "distinct_roots": 3,
+      "forced_sigma2_on_active_unit_stratum": 2,
+      "repeated_root_excess": 2
+    },
+    "3+2": {
+      "atlas_rows": {
+        "affine_degree_2": 37,
+        "affine_degree_3": 36
+      },
+      "distinct_roots": 2,
+      "forced_sigma2_on_active_unit_stratum": 3,
+      "repeated_root_excess": 3
+    },
+    "4+1": {
+      "atlas_rows": {
+        "affine_degree_2": 37,
+        "affine_degree_3": 36
+      },
+      "distinct_roots": 2,
+      "forced_sigma2_on_active_unit_stratum": 3,
+      "repeated_root_excess": 3
+    }
+  },
+  "scope": "Conditional PGS3 sieve for essential-rank-two singular binary quintic tops. At every repeated root, assume a redundant active gradient component has epsilon-order one with unit coefficient after transverse elimination. Then sigma2 is the total repeated-root excess. Failure of that active-unit condition is a proper lower-layer torsion stratum and remains open.",
+  "software_assumptions": {
+    "coefficient_field": "characteristic zero",
+    "independent_calibration": "Macaulay2 over QQ",
+    "python": "exact integer and symbolic polynomial arithmetic"
+  },
+  "unconditional_rows_excluded": 0
+}

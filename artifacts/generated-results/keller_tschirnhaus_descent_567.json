@@ -1,0 +1,162 @@
+{
+  "base_field": "Q",
+  "degrees": {
+    "5": {
+      "inverse_tschirnhaus_polynomial": "-U**4/120960 + 19*U**3/30240 - 559*U**2/30240 + 103*U/280 + 1/3",
+      "projective_residual_count": 2,
+      "projective_residuals": [
+        "-12",
+        "-48"
+      ],
+      "promoted_coordinate_degree": 33,
+      "promoted_target_dimension": 5,
+      "relative_coordinate_degree": 32,
+      "residual_scaling_eliminations": 1,
+      "seed_parameter_count": 2,
+      "source_polynomial": "T**5 - 15*T**4 + 85*T**3 - 225*T**2 + 274*T - 120",
+      "source_roots": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "source_seed_parameters": {
+        "u_4": "-61712472/10440125",
+        "u_5": "5636405776/4437053125"
+      },
+      "source_stable_fingerprint": [
+        "75076/968203125"
+      ],
+      "stable_boundary_survivor_count": 1,
+      "transformed_polynomial": "U**5 - 70*U**4 + 1708*U**3 - 17544*U**2 + 72000*U - 86400",
+      "transformed_roots": [
+        2,
+        6,
+        12,
+        20,
+        30
+      ],
+      "transformed_seed_parameters": {
+        "u_4": "-14580000000000/4749123463",
+        "u_5": "26244000000000000/14195130030907"
+      },
+      "transformed_stable_fingerprint": [
+        "1296/50236123"
+      ]
+    },
+    "6": {
+      "inverse_tschirnhaus_polynomial": "U**5/5702400 - 41*U**4/1995840 + 9259*U**3/9979200 - 5977*U**2/277200 + 10547*U/27720 + 7/22",
+      "projective_residual_count": 3,
+      "projective_residuals": [
+        "-12",
+        "-48",
+        "-120"
+      ],
+      "promoted_coordinate_degree": 39,
+      "promoted_target_dimension": 6,
+      "relative_coordinate_degree": 38,
+      "residual_scaling_eliminations": 1,
+      "seed_parameter_count": 3,
+      "source_polynomial": "T**6 - 21*T**5 + 175*T**4 - 735*T**3 + 1624*T**2 - 1764*T + 720",
+      "source_roots": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "source_seed_parameters": {
+        "u_4": "-576/175",
+        "u_5": "20736/21875",
+        "u_6": "-82944/765625"
+      },
+      "source_stable_fingerprint": [
+        "734832/1220703125",
+        "25/63"
+      ],
+      "stable_boundary_survivor_count": 2,
+      "transformed_polynomial": "U**6 - 112*U**5 + 4648*U**4 - 89280*U**3 + 808848*U**2 - 3110400*U + 3628800",
+      "transformed_roots": [
+        2,
+        6,
+        12,
+        20,
+        30,
+        42
+      ],
+      "transformed_seed_parameters": {
+        "u_4": "-2033035200/923521",
+        "u_5": "52907904000/28629151",
+        "u_6": "-510183360000/887503681"
+      },
+      "transformed_stable_fingerprint": [
+        "13436928000/70946061021073",
+        "83/224"
+      ]
+    },
+    "7": {
+      "inverse_tschirnhaus_polynomial": "-U**6/345945600 + 37*U**5/74131200 - 551*U**4/16216200 + 153847*U**3/129729600 - 172253*U**2/7207200 + 140351*U/360360 + 4/13",
+      "projective_residual_count": 4,
+      "projective_residuals": [
+        "-12",
+        "-48",
+        "-120",
+        "-240"
+      ],
+      "promoted_coordinate_degree": 45,
+      "promoted_target_dimension": 7,
+      "relative_coordinate_degree": 44,
+      "residual_scaling_eliminations": 1,
+      "seed_parameter_count": 4,
+      "source_polynomial": "T**7 - 28*T**6 + 322*T**5 - 1960*T**4 + 6769*T**3 - 13132*T**2 + 13068*T - 5040",
+      "source_roots": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "source_seed_parameters": {
+        "u_4": "-89266266017280/42845180458129",
+        "u_5": "1341511298960887296/2030133185647526407",
+        "u_6": "-1524423448245293494272/13741971533648106248983",
+        "u_7": "4980291405417373845786624/651135837178848218395561489"
+      },
+      "source_stable_fingerprint": [
+        "68696948942127/44596500536000000",
+        "280/529",
+        "23/56"
+      ],
+      "stable_boundary_survivor_count": 3,
+      "transformed_polynomial": "U**7 - 168*U**6 + 10920*U**5 - 349568*U**4 + 5808528*U**3 - 48405888*U**2 + 177811200*U - 203212800",
+      "transformed_roots": [
+        2,
+        6,
+        12,
+        20,
+        30,
+        42,
+        56
+      ],
+      "transformed_seed_parameters": {
+        "u_4": "-4570450820135424000000/2647368398938397761",
+        "u_5": "176297693112410688000000000/106786899107978150485457",
+        "u_6": "-3349113714695457192960000000000/4307463149318514656131879009",
+        "u_7": "24615985803011610368256000000000000/173750141054060925684391603586033"
+      },
+      "transformed_stable_fingerprint": [
+        "254014812517232151861328125/548382681573171461681967824896",
+        "43696/88725",
+        "65/168"
+      ]
+    }
+  },
+  "experiment": "Keller/Tschirnhaus descent in ranks 5, 6, and 7",
+  "projective_descent_dependency": "ARPD1",
+  "stable_invariance_dependency": "RQG3",
+  "tschirnhaus_change": "u=r+r^2"
+}

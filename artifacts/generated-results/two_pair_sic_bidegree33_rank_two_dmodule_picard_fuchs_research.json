@@ -1,0 +1,28 @@
+{
+  "format": "two-pair-sic-bidegree33-rank-two-dmodule-picard-fuchs-research-v1",
+  "status": "exact characteristic-zero rank-one rational-function annihilator at one rank-two fiber; pushforward pending",
+  "integrand": "u^2/(u^3-z*Q(u,t))",
+  "point": 0,
+  "software": {
+    "Macaulay2": "1.22",
+    "normaliz": "Normaliz 3.10.2\n------------------------------------------------------------\nwith package(s) Flint e-antic nauty\nCopyright (C) 2007-2022  The Normaliz Team, University of Osnabrueck.\nThis program comes with ABSOLUTELY NO WARRANTY; This is free software,\nand you are welcome to redistribute it under certain conditions;\nSee COPYING for details."
+  },
+  "denominator_annihilator": {
+    "algorithm": "kOrderAnnFa(1,H,-1)",
+    "generators": 34,
+    "holonomic": true,
+    "holonomic_rank": 1
+  },
+  "specific_rational_function_annihilator": {
+    "numerator": "u^2",
+    "generators": 76,
+    "holonomic": true,
+    "holonomic_rank": 1
+  },
+  "retained_weyl_variables": [
+    "z",
+    "Dz"
+  ],
+  "remaining_gate": "extract an operator, compare it with the sampled order-14 shift factor, and verify the t=0,1 certificate boundaries for the interval period",
+  "pushforward_ideal": null
+}

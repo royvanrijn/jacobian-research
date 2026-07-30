@@ -1,0 +1,44 @@
+{
+  "attempted_base_count": 526,
+  "candidate_replays": [],
+  "common_pencil_zero_sample_count": 0,
+  "common_pencil_zero_samples": [],
+  "format": "two-pair-sic-bidegree33-t0-fitting-samples-v2",
+  "pivot_scout": true,
+  "prime": 43,
+  "random_seed": 905,
+  "rank_at_most_four_sample_count": 0,
+  "rank_at_most_four_samples": [],
+  "reproduction_command": "scripts/research_two_pair_sic_bidegree33_t0_fitting_interpolation.py --prime 43 --sample-count 225 --random-seed 905 --max-attempts 6000 --pivot-scout --timeout 20 --output artifacts/generated-results/two_pair_sic_bidegree33_t0_rank_complement_random_p43_seed905.json",
+  "sample_count": 225,
+  "sampling_mode": "random",
+  "selected_pivot_complement_sample_count": 1,
+  "selected_pivot_complement_samples": [
+    {
+      "base": {
+        "s1": 21,
+        "s2": 42,
+        "t1": 38,
+        "t2": 17,
+        "u": 8
+      },
+      "nonzero_restoring_borders": [
+        "A_M6_c6",
+        "A_M7_c2",
+        "A_M7_c3",
+        "A_M7_c4",
+        "A_M7_c5",
+        "A_M7_c6",
+        "A_M8_c1"
+      ],
+      "ranks": {
+        "M6": 6,
+        "M6_M7": 6,
+        "M6_M7_M8": 6
+      },
+      "s3": 23,
+      "sample_index": 105
+    }
+  ],
+  "status": "bounded modular determinant-pencil samples; not a proof"
+}

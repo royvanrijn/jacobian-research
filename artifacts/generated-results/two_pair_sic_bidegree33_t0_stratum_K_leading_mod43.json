@@ -1,0 +1,43 @@
+{
+  "coefficient_variables": [
+    "s1",
+    "s3",
+    "t1",
+    "t2",
+    "u"
+  ],
+  "common_denominator": "1",
+  "common_denominator_factors": [
+    {
+      "factor": "1",
+      "multiplicity": 1
+    }
+  ],
+  "common_denominator_terms": 1,
+  "format": "two-pair-sic-bidegree33-t0-stratum-leading-v1",
+  "groebner_basis_size": 3,
+  "leading_coefficient_factors": [
+    {
+      "factor": "(s1^8*u^14-8*s1^7*t1*u^13-15*s1^6*t1^2*u^12-14*s1^6*u^14-13*s1^5*t1^3*u^11-2*s1^5*t1*u^13-16*s1^4*t1^4*u^10+5*s1^4*t1^2*u^12-13*s1^3*t1^5*u^9-21*s1^3*t1^3*u^11-15*s1^2*t1^6*u^8+5*s1^2*t1^4*u^10-8*s1*t1^7*u^7-2*s1*t1^5*u^9+t1^8*u^6-14*t1^6*u^8)",
+      "multiplicity": 1
+    }
+  ],
+  "leading_coefficient_lcm": "(s1^8*u^14-8*s1^7*t1*u^13-15*s1^6*t1^2*u^12-14*s1^6*u^14-13*s1^5*t1^3*u^11-2*s1^5*t1*u^13-16*s1^4*t1^4*u^10+5*s1^4*t1^2*u^12-13*s1^3*t1^5*u^9-21*s1^3*t1^3*u^11-15*s1^2*t1^6*u^8+5*s1^2*t1^4*u^10-8*s1*t1^7*u^7-2*s1*t1^5*u^9+t1^8*u^6-14*t1^6*u^8)",
+  "leading_monomials": [
+    "s6*s5",
+    "s6^3",
+    "s5^4"
+  ],
+  "prime": 43,
+  "quotient_length": 6,
+  "reproduction_command": "scripts/research_two_pair_sic_bidegree33_t0_stratum_leading.py --prime 43 --stratum K --timeout 20 --output artifacts/generated-results/two_pair_sic_bidegree33_t0_stratum_K_leading_mod43.json",
+  "status": "bounded exact finite-field rational-function-field Groebner denominator; not a characteristic-zero certificate",
+  "stratum": "K",
+  "transformation_denominator": "1",
+  "transformation_denominator_factors": [
+    {
+      "factor": "1",
+      "multiplicity": 1
+    }
+  ]
+}

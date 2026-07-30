@@ -10,6 +10,15 @@
     "lower_bound_reason": "the split-symbol theorem followed by fixed dual differentiation excludes every rank-one SIC point",
     "upper_bound_reason": "the exact witness has det(C)=48"
   },
+  "best_open_target": {
+    "coefficient_rank": 2,
+    "bidegree": [
+      4,
+      4
+    ],
+    "ansatz": "F=A_1(xi)P_1(z)+A_2(xi)P_2(z)",
+    "status": "open"
+  },
   "rank_strata": {
     "1": {
       "dimension": 9,

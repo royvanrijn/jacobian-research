@@ -93,6 +93,18 @@ that power to a suitable prime and reducing modulo the prime makes the
 lowest term impossible to cancel after the factorial substitution.  This
 contradicts the assumed moment vanishing.
 
+Long's contemporaneous manuscript~\cite{LongTorus} proves a stronger
+factorially weighted constant-term theorem with one radial variable and an
+arbitrary-rank algebraic torus.  Its rank-one specialization contains the
+same two-variable Gaussian conclusion and also records the corresponding
+orthogonal-nullcone classification.  It further proves that eventual pure
+vanishing is equivalent to one-sided torus support and gives nonvanishing at
+every sufficiently large prime dilation of one fixed power.  We retain the
+present bivariate proof and formalization because they start from an ordinary
+polynomial in \(X,Y\) and mechanically verify the circular substitution,
+Wick functional, lower-face extraction, and mixed-moment conclusion.  The
+overlap and Long's broader theorem are credited explicitly here.
+
 The argument is conceptual rather than computational.  In particular, it
 contains the previously studied three-level and star-shaped supports
 without needing separate case analyses.
@@ -366,10 +378,13 @@ primitive weight relations is only a finite presentation of the same lower
 face.  Leaf removal is unnecessary: the supporting line exposes all
 relevant leaves at once.
 
-The proof is genuinely two-dimensional.  With one circular pair there is
-one weight coordinate and one radial order, and the latter is measured by
-the single factorial \(j!\).  In higher dimension there are several radial
-directions, so the one-dimensional isolation step no longer applies.
+The proof is genuinely one-radial, rather than one-angular: Long's
+multitorus theorem~\cite{LongTorus} shows that the angular weight lattice may
+have arbitrary rank while the same isolation works.  With one circular pair
+there is one radial order, measured by the single factorial \(j!\).  In
+ordinary higher-dimensional Gaussian space there are several independent
+radial directions with product-factorial weights, so the one-dimensional
+isolation step no longer applies.
 Corollary~\ref{cor:classification} shows that this is not merely a
 technical gap: counterexamples already occur in dimension three.
 
@@ -400,6 +415,12 @@ Theorem~\ref{thm:main}, with its remaining trust boundary stated
 explicitly.
 
 \section*{Acknowledgments and declaration of generative AI use}
+
+The author thanks Christopher D. Long for making his contemporaneous and
+more general factorially weighted torus theorem publicly available.  Its
+rank-one Gaussian specialization overlaps Theorem~\ref{thm:main}; its
+arbitrary-torus and prime-index conclusions are not claimed as results of
+this paper.
 
 The author used OpenAI's ChatGPT and Codex extensively during the research
 process, including for conjecture formation, symbolic experimentation,

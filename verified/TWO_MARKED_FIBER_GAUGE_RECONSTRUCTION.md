@@ -270,7 +270,11 @@ coordinates.  Promoting it to a map-intrinsic stable Torelli theorem would
 require recognizing the root mark and the base character `P` from the
 finite-normalization package.  The stable-moduli theorem recognizes `P` up
 to scalar only after retaining the ordered boundary and Fitting data; that
-is the next, stronger reconstruction layer.
+is the next, stronger reconstruction layer.  Allowing arbitrary polynomial
+gauge multipliers changes the finite-sampling answer completely: the
+[finite marked-plane nonreconstruction theorem](FINITE_MARKED_PLANE_NONRECONSTRUCTION.md)
+constructs infinitely many stable classes agreeing on any prescribed
+finite set of marked inverse planes.
 
 ## 6. Exact regression
 

@@ -95,6 +95,40 @@ def total_segre_correction(
     return map_degree**ambient_dimension - affine_degree
 
 
+def equal_degree_complete_intersection_segre(
+    *,
+    ambient_dimension: int,
+    codimension: int,
+    generator_degree: int,
+) -> tuple[int, ...]:
+    """Return the pushed-forward Segre degrees of an equal-degree CI.
+
+    For a complete intersection of codimension ``c`` cut out by degree
+    ``d`` forms in projective ``n``-space, this expands
+
+    ``(d H)^c / (1+d H)^c``
+
+    through codimension ``n``.
+    """
+
+    if ambient_dimension < 1:
+        raise ValueError("ambient_dimension must be positive")
+    if not 1 <= codimension <= ambient_dimension:
+        raise ValueError("codimension must lie between 1 and n")
+    if generator_degree < 1:
+        raise ValueError("generator_degree must be positive")
+    return tuple(
+        0
+        if index < codimension
+        else (
+            (-1) ** (index - codimension)
+            * comb(index - 1, codimension - 1)
+            * generator_degree**index
+        )
+        for index in range(1, ambient_dimension + 1)
+    )
+
+
 def is_log_concave(projective_degrees: Sequence[int]) -> bool:
     """Test the elementary log-concavity inequalities for a degree list."""
 
@@ -299,6 +333,342 @@ def integrate_homogeneous_gradient(
     ):
         raise ValueError("Euler reconstruction failed")
     return potential
+
+
+def equal_degree_ci_hilbert_function(
+    *,
+    generator_degree: int,
+    codimension: int,
+) -> tuple[int, ...]:
+    """Return coefficients of ``(1+z+...+z^(d-1))^c``.
+
+    This is the Hilbert function of an Artinian complete intersection of
+    ``codimension`` forms, all of degree ``generator_degree``.
+    """
+
+    if generator_degree < 1:
+        raise ValueError("generator_degree must be positive")
+    if codimension < 1:
+        raise ValueError("codimension must be positive")
+    base = (1,) * generator_degree
+    result = (1,)
+    for _ in range(codimension):
+        product = [0] * (len(result) + len(base) - 1)
+        for left_index, left_value in enumerate(result):
+            for right_index, right_value in enumerate(base):
+                product[left_index + right_index] += (
+                    left_value * right_value
+                )
+        result = tuple(product)
+    return result
+
+
+def filtered_missing_generator_drop(
+    *,
+    map_degree: int,
+    epsilon_order: int,
+    cyclic_ideal_dimension: int,
+) -> int:
+    """Lower-bound the length removed by one missing gradient component.
+
+    If its initial form in the smooth-essential normal slice is
+    ``epsilon^q*s``, this returns
+
+    ``(map_degree-q) * dim(B*s)``.
+    """
+
+    if map_degree < 2:
+        raise ValueError("map_degree must be at least two")
+    if not 1 <= epsilon_order < map_degree:
+        raise ValueError("epsilon_order must lie between 1 and m-1")
+    if cyclic_ideal_dimension < 1:
+        raise ValueError("cyclic_ideal_dimension must be positive")
+    return (
+        map_degree - epsilon_order
+    ) * cyclic_ideal_dimension
+
+
+def truncated_dvr_module_length(
+    *,
+    truncation_order: int,
+    generic_rank: int,
+    torsion_orders: Sequence[int],
+) -> int:
+    """Return the length after truncating a finite DVR module.
+
+    For
+
+    ``M = R^rho + direct_sum_j R/(epsilon^a_j)``,
+
+    with ``R=K[[epsilon]]``, the quotient by ``epsilon^m`` has length
+
+    ``m*rho + sum_j min(m,a_j)``.
+    """
+
+    if truncation_order < 1:
+        raise ValueError("truncation_order must be positive")
+    if generic_rank < 0:
+        raise ValueError("generic_rank must be nonnegative")
+    orders = _integer_tuple(torsion_orders, name="torsion_orders")
+    if any(order < 1 for order in orders):
+        raise ValueError("torsion orders must be positive")
+    return (
+        truncation_order * generic_rank
+        + sum(min(truncation_order, order) for order in orders)
+    )
+
+
+@dataclass(frozen=True)
+class SmoothEssentialGradientNormalSlice:
+    """Dimension-free normal slice for a smooth essential gradient top.
+
+    The top potential depends on ``essential_rank`` variables and defines a
+    smooth hypersurface in their projective space.  At the generic point of
+    the kernel vertex, the active Jacobian algebra is an equal-degree
+    complete intersection and the compactifying parameter is truncated at
+    ``map_degree``.
+    """
+
+    ambient_dimension: int
+    map_degree: int
+    essential_rank: int
+
+    def __post_init__(self) -> None:
+        if self.ambient_dimension < 2:
+            raise ValueError("ambient_dimension must be at least two")
+        if self.map_degree < 2:
+            raise ValueError("map_degree must be at least two")
+        if not 1 <= self.essential_rank < self.ambient_dimension:
+            raise ValueError(
+                "essential_rank must lie between 1 and ambient_dimension-1"
+            )
+
+    @property
+    def kernel_dimension(self) -> int:
+        return self.ambient_dimension - self.essential_rank
+
+    @property
+    def support_dimension(self) -> int:
+        return self.kernel_dimension - 1
+
+    @property
+    def base_codimension(self) -> int:
+        return self.essential_rank + 1
+
+    @property
+    def jacobian_hilbert_function(self) -> tuple[int, ...]:
+        return equal_degree_ci_hilbert_function(
+            generator_degree=self.map_degree,
+            codimension=self.essential_rank,
+        )
+
+    @property
+    def jacobian_length(self) -> int:
+        return self.map_degree**self.essential_rank
+
+    @property
+    def jacobian_socle_degree(self) -> int:
+        return self.essential_rank * (self.map_degree - 1)
+
+    @property
+    def truncated_active_length(self) -> int:
+        return self.map_degree ** (self.essential_rank + 1)
+
+    @property
+    def unit_penultimate_segre_degree(self) -> int:
+        """Leading Segre degree when one epsilon-order-one term is a unit."""
+
+        return self.jacobian_length
+
+    def missing_generator_drop(
+        self,
+        *,
+        epsilon_order: int,
+        cyclic_ideal_dimension: int,
+    ) -> int:
+        if cyclic_ideal_dimension > self.jacobian_length:
+            raise ValueError("cyclic ideal cannot be larger than B")
+        return filtered_missing_generator_drop(
+            map_degree=self.map_degree,
+            epsilon_order=epsilon_order,
+            cyclic_ideal_dimension=cyclic_ideal_dimension,
+        )
+
+    def leading_segre_upper_bound(
+        self,
+        *,
+        epsilon_order: int,
+        cyclic_ideal_dimension: int,
+    ) -> int:
+        """Upper-bound ``sigma_(r+1)`` from one missing component."""
+
+        return self.truncated_active_length - self.missing_generator_drop(
+            epsilon_order=epsilon_order,
+            cyclic_ideal_dimension=cyclic_ideal_dimension,
+        )
+
+    def isolated_vertex_affine_degree_lower_bound(
+        self,
+        *,
+        epsilon_order: int,
+        cyclic_ideal_dimension: int,
+    ) -> int:
+        """Lower-bound the affine degree when the kernel vertex is a point."""
+
+        if self.kernel_dimension != 1:
+            raise ValueError("the kernel vertex is not zero-dimensional")
+        return self.missing_generator_drop(
+            epsilon_order=epsilon_order,
+            cyclic_ideal_dimension=cyclic_ideal_dimension,
+        )
+
+
+@dataclass(frozen=True)
+class SingularEssentialGradientNormalSlice:
+    """Generic normal slice along one singular component of the top.
+
+    The top potential uses ``essential_rank`` variables.  Its selected
+    projective singular component has dimension
+    ``singular_locus_dimension``, degree ``component_degree``, and generic
+    transverse Jacobian length ``transverse_jacobian_length``.
+
+    Lower potential layers are encoded by the finite
+    ``K[[epsilon]]``-module profile of the active gradient quotient:
+    ``generic_rank`` and ``torsion_orders``.
+    """
+
+    ambient_dimension: int
+    map_degree: int
+    essential_rank: int
+    singular_locus_dimension: int
+    transverse_jacobian_length: int
+    component_degree: int = 1
+
+    def __post_init__(self) -> None:
+        if self.ambient_dimension < 3:
+            raise ValueError("ambient_dimension must be at least three")
+        if self.map_degree < 2:
+            raise ValueError("map_degree must be at least two")
+        if not 2 <= self.essential_rank < self.ambient_dimension:
+            raise ValueError(
+                "essential_rank must lie between 2 and ambient_dimension-1"
+            )
+        if not (
+            0
+            <= self.singular_locus_dimension
+            <= self.essential_rank - 2
+        ):
+            raise ValueError(
+                "singular-locus dimension must lie between 0 and r-2"
+            )
+        if self.transverse_jacobian_length < 1:
+            raise ValueError("transverse Jacobian length must be positive")
+        if self.component_degree < 1:
+            raise ValueError("component degree must be positive")
+
+    @property
+    def kernel_dimension(self) -> int:
+        return self.ambient_dimension - self.essential_rank
+
+    @property
+    def joined_support_dimension(self) -> int:
+        return (
+            self.kernel_dimension
+            + self.singular_locus_dimension
+        )
+
+    @property
+    def base_codimension(self) -> int:
+        return (
+            self.essential_rank
+            - self.singular_locus_dimension
+        )
+
+    @property
+    def flat_active_truncated_length(self) -> int:
+        return (
+            self.map_degree
+            * self.transverse_jacobian_length
+        )
+
+    def active_truncated_length(
+        self,
+        *,
+        generic_rank: int,
+        torsion_orders: Sequence[int],
+    ) -> int:
+        """Return the active length for a validated DVR profile."""
+
+        orders = _integer_tuple(torsion_orders, name="torsion_orders")
+        if (
+            generic_rank + len(orders)
+            != self.transverse_jacobian_length
+        ):
+            raise ValueError(
+                "generic rank plus torsion summands must equal "
+                "the transverse Jacobian length"
+            )
+        return truncated_dvr_module_length(
+            truncation_order=self.map_degree,
+            generic_rank=generic_rank,
+            torsion_orders=orders,
+        )
+
+    def leading_segre_contribution_bounds(
+        self,
+        *,
+        generic_rank: int,
+        torsion_orders: Sequence[int],
+    ) -> tuple[int, int]:
+        """Bound this component's leading Segre contribution.
+
+        Missing kernel-gradient components are epsilon-divisible.  Thus the
+        final transverse quotient still has special fiber of length ``mu``,
+        while it is a quotient of the active truncated algebra.
+        """
+
+        active_length = self.active_truncated_length(
+            generic_rank=generic_rank,
+            torsion_orders=torsion_orders,
+        )
+        return (
+            self.component_degree * self.transverse_jacobian_length,
+            self.component_degree * active_length,
+        )
+
+    @property
+    def order_one_active_segre_contribution(self) -> int:
+        """Exact contribution when the active DVR profile has order one."""
+
+        return (
+            self.component_degree
+            * self.transverse_jacobian_length
+        )
+
+    @property
+    def unit_kernel_gradient_segre_contribution(self) -> int:
+        """Exact contribution when a missing component is epsilon times a unit."""
+
+        return self.order_one_active_segre_contribution
+
+    def flat_missing_generator_upper_bound(
+        self,
+        *,
+        epsilon_order: int,
+        cyclic_ideal_dimension: int,
+    ) -> int:
+        """Upper-bound the contribution when the active DVR module is flat."""
+
+        if cyclic_ideal_dimension > self.transverse_jacobian_length:
+            raise ValueError("cyclic ideal cannot be larger than B")
+        drop = filtered_missing_generator_drop(
+            map_degree=self.map_degree,
+            epsilon_order=epsilon_order,
+            cyclic_ideal_dimension=cyclic_ideal_dimension,
+        )
+        return self.component_degree * (
+            self.flat_active_truncated_length - drop
+        )
 
 
 @dataclass(frozen=True)

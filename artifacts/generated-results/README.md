@@ -4,6 +4,87 @@ This directory contains reproducible outputs from the retained
 three-dimensional work.  Only outputs with a named generator and verification
 path below are treated as reference artifacts.
 
+- `two_pair_sic_bidegree33_rank_two_interior_cyclic_split.json` records
+  the exact characteristic-zero critical-algebra decomposition
+  \(18=14+2+2\) at the first integral rank-two point.  The period function
+  \(P\) is primitive on the interior and both endpoint summands, giving the
+  cyclic interior basis \(1,P,\ldots,P^{13}\).  The checker also proves
+  that the saturated toric logarithmic critical ideal equals this interior
+  ideal, so its exact Picard--Fuchs target rank is \(14\).  Exact
+  endpoint-idempotent
+  period values are nevertheless nonzero, proving that an \(m\)-dependent
+  divergence reduction is required.  It also certifies the first gradient
+  lift of the degree-14 eliminant and records the nonzero endpoint
+  restrictions of its 6791-term \(t\)-certificate.  Their ordinary normal
+  forms occupy all \(14+2+2\) critical-algebra coordinates.  Regenerate it with
+  `.venv/bin/python scripts/verify_two_pair_sic_bidegree33_rank_two_interior_cyclic_split.py`.
+  Its whole-file SHA-256 is
+  `c3cbe744b784e10b06e565276569eb9736209b068d6d41a4d3e5218513e088e9`.
+  The canonical source is
+  `extended-geometry/TWO_PAIR_SIC_BIDEGREE33_RANK_TWO_HOLONOMIC_PROBE.md`.
+- `two_pair_sic_bidegree33_rank_two_dmodule_picard_fuchs_research.json`
+  records the exact fixed-fiber rational \(D\)-module seed for the
+  generating integrand \(u^2/(u^3-zQ)\).  Macaulay2 computes 34
+  first-order annihilators of \((u^3-zQ)^{-1}\) and 76 annihilators of
+  the specific numerator \(u^2\); both ideals are certified holonomic of
+  rank one.  The stored run deliberately stops before pushforward, so it
+  is an all-order integrand certificate rather than a Picard--Fuchs
+  operator for the interval period.  Regenerate it with
+  `.venv/bin/python scripts/research_two_pair_sic_bidegree33_rank_two_dmodule_picard_fuchs.py --annihilator-only`.
+  Its whole-file SHA-256 is
+  `6d570888a35b178adc4f5b67dc666094f55da374d90ba5fd607af56c0016605f`.
+  The canonical source is
+  `extended-geometry/TWO_PAIR_SIC_BIDEGREE33_RANK_TWO_HOLONOMIC_PROBE.md`.
+- `two_pair_sic_bidegree33_rank_two_ore_gcd.json` records six exact
+  modular shift-Ore Euclidean calculations comparing the sampled
+  order-\(18\) and order-\(27\) recurrence operators.  Their common right
+  factor has order \(14\), primitive coefficient degree \(58\), and is
+  verified directly on 487 moment rows at each sample.  Its order matches
+  the interior length in the exact \(2+2+14\) logarithmic-Jacobian
+  decomposition, but no universal Picard--Fuchs identification is
+  claimed.  Regenerate it with
+  `.venv/bin/python scripts/verify_two_pair_sic_bidegree33_rank_two_ore_gcd.py`.
+  Its whole-file SHA-256 is
+  `0fb908186a2ac48a240a0f0c6a8928cea28a2ee6d36836caa80345fdc9f9f310`.
+  The canonical source is
+  `extended-geometry/TWO_PAIR_SIC_BIDEGREE33_RANK_TWO_HOLONOMIC_PROBE.md`.
+- `two_pair_sic_bidegree44_rank_two_swap_slice.json` records the exact
+  exclusion on
+  \(F_P=\xi_1^4P(z_1,z_2)-\xi_2^4P(z_2,z_1)\).  The first five even
+  moments have a length-twelve zero scheme with radical
+  \(P=(z_2\pm z_1)^4\), where coefficient rank drops to one.  It includes
+  the seven-prime lex reconstruction, exact rational tail reductions
+  through order sixteen, the complete good-prime projective-boundary
+  unit certificates, and the sharper three-moment parity-even exclusion.
+  Regenerate it with
+  `.venv/bin/python scripts/verify_two_pair_sic_bidegree44_rank_two_swap_slice.py`.
+  Its whole-file SHA-256 is
+  `8a953186d90d6b95622d60fa6a77b485ac88a37c18ff19cbf4eeff5100bddc35`.
+  The canonical source is
+  `extended-geometry/TWO_PAIR_SIC_BIDEGREE44_RANK_FRONTIER.md`.
+- `two_pair_sic_frobenius_curvature.json` records the primitive
+  first-order recurrences for nine SIC2C4 radial propagations, direct
+  good-prime recurrence-curvature norms, differential \(p\)-curvature of
+  the normalized beta period at every odd prime through \(101\), and the
+  bounded prime-power valuation/re-entry correlation audit.  The exact
+  good-prime recurrence curvature is \(d^d(m^p-m)^d\); the differential
+  computation is bounded evidence, not an all-prime proof.  Regenerate it
+  with
+  `.venv/bin/python scripts/research_two_pair_sic_frobenius_curvature.py`.
+  Its whole-file SHA-256 is
+  `2a1ed9dff308448f6e1cb856e06a661637c3cefbde9d0870c4e4f5d585a06682`.
+  The written analysis is
+  `extended-geometry/TWO_PAIR_SIC_FROBENIUS_CURVATURE_BRIDGE.md`.
+- `keller_tschirnhaus_descent_567.json` records the exact ranks five, six,
+  and seven comparison between the primitive coordinates `r` and `r+r^2`
+  on the same split finite-etale algebra.  It pins the inverse interpolation,
+  nonzero projective residuals, compiled universal-map seed parameters,
+  stable boundary fingerprints, and relative/promoted coordinate degrees.
+  It is generated and replayed by
+  `scripts/verify_keller_tschirnhaus_descent_567.py`; pass `--write` only
+  when intentionally refreshing the pinned certificate.  Its whole-file
+  SHA-256 is
+  `4177843a58dc77ce89aee5e2e5a2c781afc6d29ffb8bb17b013fd1bf0150ffda`.
 - `degree_five_cubic_h7_unit_certificate.sing` is the exact
   characteristic-zero ten-variable consistency ideal for the full reduced
   cubic \(\mathbb A^{27}\) fifth-order lift component.  Its 401 generators
@@ -45,6 +126,88 @@ path below are treated as reference artifacts.
   open; the artifact proves neither a semistable point nor a full
   characteristic-zero radical equality.  Its whole-file SHA-256 is
   `96881a3428d1b0a1cd279208ab13f9f235b41cc371acc5137606f502a3d0e19d`.
+- `two_pair_sic_bidegree33_t0_open_fixed_fiber.json` records the exact
+  rational base (5.12u) on the \(t_0\)-open rank-six chart.  It verifies
+  \(\mu_3=0\), \(Q_*J_*KH\ne0\), quotient length six for
+  \((\mu_4,\mu_5)\subset\mathbb Q[s_6,s_5]\), and the unit ideal after
+  adjoining \(\mu_6\).  Thus the first multiplication norm is not
+  identically zero on the local base component; the artifact does not
+  compute its exceptional divisor.  It is generated by
+  `scripts/verify_two_pair_sic_bidegree33_corrected_boundary.py
+  --branch generic --prime 0 --t0-open-fixed-fiber`.  Its whole-file
+  SHA-256 is
+  `70e1fb7f2d33b3f471de75fbfacf37715594cec67bce1708d0d77035788eebf3`.
+- `two_pair_sic_bidegree33_t0_open_curve_norm.json` records the exact
+  rational \(\mu_3=0\) curve (5.12v), the primitive degree-\(198\)
+  irreducible numerator and degree-\(144\) denominator of
+  \(\det M_{\mu_6}\), and the next coefficient of
+  \(\det(M_{\mu_6}+zM_{\mu_7})\).  That coefficient has numerator and
+  denominator degrees \(209,153\), and its numerator is coprime to the
+  \(\mu_6\) norm numerator.  Hence the degree-\(198\) exceptional divisor
+  has no common \(\mu_6,\mu_7\) root on the curve's border open.  The
+  denominator factors have degrees \(2,3,4\): exact calculations on the
+  \(Q_*=0\) and \(J_*=0\) number-field fibers give length five and the
+  unit ideal through \(\mu_7\), while the cubic factor is the curve pole
+  and has coprime numerator.  Thus every defined point of the rational
+  curve is excluded.  The artifact is generated by
+  `scripts/verify_two_pair_sic_bidegree33_corrected_boundary.py
+  --branch generic --prime 0 --t0-open-curve-norm`.  Its whole-file
+  SHA-256 is
+  `6ea0bdbdc489530a9d74479966feab4b8e2b066cd6990f3fb2a494792a9c73f9`.
+- `two_pair_sic_bidegree33_t0_fitting_degree_scout.json` aggregates
+  fifteen bounded directional reconstructions of
+  \(\det M_{\mu_6}\) and the linear coefficient of
+  \(\det(M_{\mu_6}+zM_{\mu_7})\) modulo the quadratic \(\mu_3(s_3)\).
+  Across two base points and primes \(1019,2039\), 6750 paired-root
+  samples fit the line functions and 750 held-out pairs verify them.
+  Every direction matches the denominator models
+  \(a_2^{41}Q_*^3J_*^3\) and \(a_2^{42}Q_*^4J_*^4\).  The artifact is a
+  modular degree scout, not a multivariate Fitting certificate.  It is
+  replayed by
+  `scripts/verify_two_pair_sic_bidegree33_t0_fitting_degree_scout.py`.
+  Its whole-file SHA-256 is
+  `e6aec153eee2da72bae801efdb85da3ffb2b6c689d86a3eaba304f294cb2e2c6`.
+- `two_pair_sic_bidegree33_t0_pencil_random_scout.json` aggregates
+  forty-four deterministic bounded random shards of the complete
+  determinant pencil \(\det(M_{\mu_6}+zM_{\mu_7})\) at primes
+  \(43,47,59,71\).  The shards test 19800 paired bases, hence 39600 roots
+  of the quadratic \(\mu_3(s_3)\).  Twenty points make all seven pencil
+  coefficients vanish; direct Gröbner replay gives a reduced length-one
+  common quotient through \(\mu_7\) at each.  Nineteen use the leading
+  \(M_6\) pivot chart and one uses a second pivot; \(M_8\) restores full
+  block rank at all twenty.  The aggregate also includes direct
+  specialization-safe \(Q,J,K,H\) scouts at \(p=43\), 900 roots per
+  divisor.  \(Q,J\) each contain one sampled reduced through-\(\mu_7\)
+  point and both are excluded by \(\mu_8\); \(K,H\) contain none in the
+  sample.  This is bounded modular evidence, not a global or divisor
+  common-root exclusion.  The summary and shard hashes are checked by
+  `scripts/verify_two_pair_sic_bidegree33_t0_pencil_random_scout.py`.
+  Its whole-file SHA-256 is
+  `31def59d50b689efb7001aea5b8731fc72a079d377bd25f775eda363a0cbee68`.
+- `two_pair_sic_bidegree33_t0_strata_rank_continuation.json` aggregates
+  the guarded lower-stratum and rank-complement continuation at \(p=43\).
+  Thirty-one direct-stratum artifacts contain seventeen sampled reduced
+  common roots through \(\mu_7\), all excluded by direct corrected
+  \(\mu_8\) evaluation.  Twelve rank shards test 6300 further
+  \(\mu_3\)-roots; four miss both selected pivots but have full joint
+  \(M_6,M_7\) rank, and no rank-at-most-four point occurs.  Nine
+  `liftstd` calculations extract the exact modular leading-coefficient
+  borders and check them against every retained fiber.  On \(Q,J,JK\)
+  their sampled zeros are exactly the quotient-length drops; the enlarged
+  \(Q,J\) clouds have no extra polynomial relation through degree four.
+  Five factored border resultants give the residual degree-\(20\) and
+  degree-\(24\) components in (5.12aa), and the linear
+  pseudo-remainder \(A s_3+B\) is coprime to every residual factor.
+  The \(Q\)-row is also promoted over \(\mathbb Q\): its irreducible
+  degree-\(36\) border has 588 terms, and its exact resultant factors as
+  \(c\,u^{20}J_Q^4R_{20}^2\), with irreducible degree-\(20\), 200-term
+  residual factor and a coprime dense linear pivot.  The other projected
+  rows remain finite-field calculations, and no residual component is
+  yet excluded through later moments.  The summary and all constituent
+  hashes are checked by
+  `scripts/verify_two_pair_sic_bidegree33_t0_strata_rank_continuation.py`.
+  Its whole-file SHA-256 is
+  `c8c35d8ff3749ccb2c866dbc0f4319bf1b475f66e063509eb6f91a573422f0af`.
 - `two_pair_sic_bidegree33_boundary_generic_quotient.json` records the
   characteristic-zero generic and \(L,Q,J\) divisor quotient certificates,
   including the exact quadratic-extension \(\mu_6,\mu_7\) normal forms on
@@ -147,6 +310,36 @@ path below are treated as reference artifacts.
   `d-1`.  The full phase-support formula remains conjectural, and the scan
   does not classify every semistable component or prove the candidate
   augmented systems finite.
+- `two_pair_sic_bidegree33_casimir_fiber.json` joins the corrected cubic
+  moment degrees to the completed invariant algebra.  It records exact
+  Hilbert-coefficient tests and good-prime rank-thirteen certificates for
+  the corrected moment-only system, the smaller one-`q_2` system, and
+  mixed `q_2`/`q_4` systems of the same total invariant degree.  Its
+  complete weight-14 evaluation matrices prove that `mu_14` is independent
+  from the pure Casimir span modulo the lower-moment span, both with `q_2`
+  alone and with `q_2,q_4`.  The optional null-quadratic run records the
+  exact seven-column linear normal-symbol matrix, its generic rank three,
+  and the irreducible common cubic divisor `P` of its nonzero maximal
+  minors.  Modulo `32003`, the rank-drop ideal after removing `P` has
+  dimension three and multiplicity four in the five allowed coordinates.
+  At allowed-coordinate base `(20,27,36,47,60)`, the full normal
+  restriction of `mu_2,...,mu_12` is zero-dimensional of quotient length
+  `195`; its recorded coordinate-power memberships certify the finite
+  modular fiber.  Good reduction yields characteristic-zero transverse
+  isolation at that base, hence on a nonempty open synchronized locus.
+  The exceptional run decomposes the quotient-minor support into two
+  quadratic-field components and one lower rational locus, proves all
+  three are disjoint from `P=0`, and records good reductions of exact
+  algebraic points on all four exceptional strata.  The normal fibers
+  on `P=0` and the two top-dimensional residual components have length
+  `195`; the lower residual locus has length `197`.  All are
+  zero-dimensional, proving transverse isolation on a nonempty
+  characteristic-zero open subset of each stratum.
+  The default generator does not run the older direct boundary
+  standard-basis probes.  These results do not prove global nullcone
+  equality, cover every proper closed subset inside the exceptional
+  strata, handle the `F_2=0` chart, or establish a smaller minimal moment
+  cutoff.
 - `lr_rees_sagbi_module_computation.json` records the finite target-invariant
   SAGBI basis, target-field modules and initial lifts in weights
   `p=+-1,+-2`, the saturated normal quotient, and the complete quadratic
@@ -160,6 +353,31 @@ path below are treated as reference artifacts.
   new quotient has exact annihilator `(gamma,6*u-1)` and length one.  Its
   whole-file SHA-256 is
   `c2f2700b051afd539d42b1fda50ff057f66a1f61297b5d49b0d064edf42732a8`.
+- `lr_rooted_tree_normal_classes.json` records the exact constant-direction
+  pre-Lie rooted-tree compiler for the \(F_2\) target lift and the family
+  `tau_2=B(C)`, `tau_3=A(C(C))`, `tau_(n+2)=B(C(tau_n))`.  Its specialized
+  `3 x 3` transfer matrix has a positive-coefficient Cayley--Hamilton
+  recurrence proving a nonzero third saturated normal residue in every order
+  `n>=2`; the stored expansions through order twelve are regression data, not
+  the basis of the all-order claim.  The dependency-free
+  `scripts/audit_lr_rooted_tree_normal_classes.py` replays the rational matrix
+  identity and sign induction.  This certifies individual tree classes, not
+  noncancellation in the full BCH/LR forcing sum.  Its whole-file SHA-256 is
+  `1672290d4d326af04dd85248a0afa346b66d6b2e0d807a3cf2d2d2fa28936859`.
+- `lr_mixed_bch_classes.json` records the exact balanced mixed-BCH
+  continuation with `X=N*(x,0,-3z)` and the commuting lifted directions
+  `D_B,D_C`.  It stores the complete two-component boundary-face operator and
+  the triangular recurrence
+  `c_(k+1)=-73440*(k+3)*(2k+7)*c_k`.  Together with the nonzero even Bernoulli
+  coefficients, this proves a nonzero third saturated normal residue in the
+  linear-in-`X`, bidegree-`(k,k)` BCH coefficient for every odd order
+  `2k+1`.  The certificate also records the exact status boundary: target
+  amplitudes multiply the class by `s^k*t^k`, so it vanishes on `s*t=0` and
+  is not a universal lower-jet obstruction by itself.  Generate it with
+  `scripts/compile_lr_mixed_bch_classes.py` and replay its rational
+  coefficients with `scripts/audit_lr_mixed_bch_classes.py`.  Its whole-file
+  SHA-256 is
+  `877560240a592dcf6813948bd71ce95597e43d32d3b8b98bd2c1d9298ffe5740`.
 - `degree_four_tau_even_parameters.json` records the exact modular
   Jacobian certificate for twenty-two apolar-even trace parameters of
   degrees `1,2^4,3^9,4^8`, together with the equal generic cotangent span
@@ -491,6 +709,15 @@ path below are treated as reference artifacts.
   `scripts/explore_binary_degree_five_gvc_frontier.py`; add
   `--triangular-components` for a heuristic branch dump without replacing
   the default artifact schema.
+- `binary_repeated_quartic_gvc_jet_search.json` records bounded modular
+  samples of the first migrating repeated-root quartic jets
+  \((\Lambda_4+\Lambda_5,P_5+P_4)\) and the conditioned defect-two
+  \((\Lambda_4+\Lambda_5+\Lambda_6,P_5+P_4+P_3)\) slice.  The primes are
+  larger than every input degree in the recorded moment windows.  Regenerate
+  it with `scripts/search_binary_repeated_quartic_gvc_jets_mod_p.py`.  It is
+  an experiment, not an exhaustive search, proof, or counterexample.  Its
+  whole-file SHA-256 is
+  `299297fcf936c9041cb2da7ab4f7d124271504e09af02066f92d0cfc4e930f14`.
 - `three_pair_image_mathieu_counterexample.json` records the eight-term
   three-pair SIC witness with multiplier `g=z`, its bidegrees, and the exact
   all-order contraction identities.  It is generated by the dependency-free
@@ -812,12 +1039,27 @@ path below are treated as reference artifacts.
   argument closes that branch whenever the ternary-quintic Hessian
   determinant is squarefree; an exact squarefree witness proves this is
   the generic case.  Only its nonsquarefree discriminant locus remains.
-  No individual quartic-gradient signature is excluded by that matrix
-  because projective degrees do not currently determine the Hessian-rank
-  branch.  Of the codimension-three rows, 18 for each affine degree pass
+  The Hessian matrix alone does not assign individual signatures, but the
+  attached top-gradient/Rees sieve partitions the rows in the other
+  direction: generic smooth essential Hessian ranks one, two, and three
+  feed only codimensions two, three, and four, while singular top quintics
+  feed the stated lower-codimension columns.  The smooth rank-three vertex
+  colength theorem then excludes the two codimension-four
+  affine-degree-two/three rows, leaving 318 and 306 numerical signatures.
+  The codimension-three gradient sieve further closes the squarefree
+  binary-Hessian open when \(h_4|_K\ne0\), forces \(\sigma_3=16\) on its
+  nonsquarefree remainder, and records the Schur-cubic incidence at
+  ordinary rank-three singularities; it does not delete a row
+  unconditionally.
+  Of the
+  codimension-three rows, 18 for each affine degree pass
   the additional smooth-integral-curve genus and Castelnuovo test.  The
   rows are a numerical pre-Keller atlas, not existence results or a
   classification by Hilbert polynomial.
+  The attached `HC4PPG9` packet records a further conditional split of the
+  codimension-two repeated-binary-root rows: on the active-unit stratum a
+  partition with \(q\) distinct roots has \(\sigma_2=5-q\), and the
+  generic double-root packet retains 51 and 50 rows.
   Regenerate it with
   `.venv/bin/python scripts/verify_hc4_projective_polar_atlas.py`; run the
   independent calibration with
@@ -834,6 +1076,89 @@ path below are treated as reference artifacts.
   with
   `M2 --script scripts/verify_projective_gradient_segre_families.m2`.
   The canonical source is `PROJECTIVE_GRADIENT_SEGRE_MACHINERY.md`.
+- `projective_gradient_normal_slices.json` records theorem `PGS2` for every
+  regression tuple \(2\le n\le10\), \(2\le m\le7\), and \(1\le r<n\).
+  It gives the smooth-essential Jacobian Hilbert function and length
+  \(m^r\), the compactifier-truncated active length \(m^{r+1}\), the
+  filtered missing-generator bound, and the exact unit-penultimate Segre
+  law.  The range is a regression ledger, not a dimension bound.  Generate
+  it with
+  `.venv/bin/python scripts/verify_projective_gradient_normal_slices.py`;
+  replay exact complete-intersection calibrations with
+  `M2 --script scripts/verify_projective_gradient_normal_slices.m2`.  Its
+  whole-file SHA-256 is
+  `5853c8fa609879663b31f680591a5e612ab944b1637902de5dcd115c9400837b`.
+  The canonical source is `PROJECTIVE_GRADIENT_SEGRE_MACHINERY.md`.
+- `projective_gradient_singular_slices.json` records theorem `PGS3`: an
+  essential singular component \(C\) of dimension \(s\) and degree \(d\)
+  gives the infinity component
+  \(\operatorname{Join}(\mathbf P^{n-r-1},C)\) of codimension \(r-s\),
+  while its transverse multiplicity depends on the Jacobian length
+  \(\mu_C\) and the finite \(K[[X_0]]\)-module profile
+  \((\rho_C;a_{C,j})\).  It also records the exact truncated length
+  \(m\rho_C+\sum_j\min(m,a_{C,j})\) and the binary-quintic profiles of
+  lengths \(8,3,2\).  Generate it with
+  `.venv/bin/python scripts/verify_projective_gradient_singular_slices.py`;
+  independently replay the three local lengths with
+  `M2 --script scripts/verify_projective_gradient_singular_slices.m2`.
+  Its whole-file SHA-256 is
+  `c6971874b5359e4aed11a8918328804f9ffdd6e67811f49c9ff79b2a8c5d7b72`.
+  The canonical source is `PROJECTIVE_GRADIENT_SEGRE_MACHINERY.md`.
+- `hc4_quintic_infinity_rees_strata.json` records the universal
+  56-coefficient top quintic, its Euler/Hessian/curl/Koszul and
+  midpoint-parity identities, the generic smooth essential
+  Hessian-rank-one/two/three Rees models, their pure-top
+  complete-intersection Segre calibrations, and the exact support-codimension
+  intersection with the 626-row atlas.  It separates those pure-top vectors
+  from the unknown lower-layer normal-cone multiplicities.  Regenerate it
+  with
+  `.venv/bin/python scripts/analyze_hc4_quintic_infinity_rees.py`;
+  independently certify the linear-type and projective-degree claims with
+  `M2 --script scripts/verify_hc4_quintic_infinity_rees_strata.m2`.
+  The recorded independent replay uses Macaulay2 1.22 with `Cremona` and
+  `ReesAlgebra` over \(\mathbb Q\).
+  The canonical source is `HC4_PROJECTIVE_POLAR_GEOMETRY.md`.
+- `hc4_rank3_vertex_colength.json` records the exact filtered-length
+  obstruction on the smooth essential rank-three quintic vertex.  The
+  active ternary Jacobian complete intersection has Hilbert function
+  `(1,3,6,10,12,12,10,6,3,1)` and length \(64\); after truncation at
+  \(\epsilon^4\), a nonaligned missing gradient component generates an
+  ideal of length at least six.  This excludes the two codimension-four
+  affine-degree-two/three atlas rows.  Generate it with
+  `.venv/bin/python scripts/verify_hc4_rank3_vertex_colength.py`; replay the
+  exact Fermat and deformed calibrations with
+  `M2 --script scripts/verify_hc4_rank3_vertex_colength.m2`.  Its whole-file
+  SHA-256 is
+  `c610f57af67061d0b4eb9523cb018569a7e8220a51dbd2350b71eb7007bfe473`.
+  The canonical source is `HC4_PROJECTIVE_POLAR_GEOMETRY.md`.
+- `hc4_codim3_gradient_strata.json` records the exact conditional sieve on
+  the two codimension-three top-gradient packets.  For smooth essential
+  rank two, a nonzero \(h_4|_K\) synchronizes a constant kernel direction;
+  the squarefree binary-Hessian branch reaches `HC4CD5`, while its
+  nonsquarefree remainder has forced generic multiplicity
+  \(\sigma_3=16\).  For essential rank three, the Schur cubic vanishes at
+  every isolated singular point where the top Hessian has rank two.
+  Generate it with
+  `.venv/bin/python scripts/verify_hc4_codim3_gradient_strata.py`; replay
+  the radical powers and transverse lengths with
+  `M2 --script scripts/verify_hc4_codim3_gradient_strata.m2`.  Its
+  whole-file SHA-256 is
+  `8759875cf431d18f35321631984d9120c72a2335dcae31d107fa191ae539e5a3`.
+  The canonical source is `HC4_PROJECTIVE_POLAR_GEOMETRY.md`.
+- `hc4_binary_root_partition_segre.json` records theorem `HC4PPG9`, the
+  first direct singular-top application of `PGS3`.  At a binary-quintic
+  root of multiplicity \(e\), the transverse Jacobian length is \(e-1\).
+  On the active-unit lower-layer stratum this is its exact contribution to
+  \(\sigma_2\), so a root partition with \(q\) distinct roots forces
+  \(\sigma_2=5-q\).  The generic \(2+1+1+1\) packet retains 51 and 50
+  atlas rows.  Generate it with
+  `.venv/bin/python scripts/verify_hc4_binary_root_partition_segre.py`;
+  replay multiplicities \(2,3,4\) with
+  `M2 --script scripts/verify_hc4_binary_root_partition_segre.m2`.  Its
+  whole-file SHA-256 is
+  `09f6a57c735b2751d0f890b8cd216822001bae875fd9a5156e2a27550f8e71ad`.
+  The higher-torsion failure locus remains open.  The canonical source is
+  `HC4_PROJECTIVE_POLAR_GEOMETRY.md`.
 - `quartic_coefficient_kuranishi_mod32003.json` records the modular
   36-variable affine-normal quadratic slice and coordinate-axis jet screen at
   the integer-root quartic map.  The adjacent `.sing` and `.m2` files are

@@ -1,0 +1,803 @@
+{
+  "format": "two-pair-sic-bidegree33-rank-two-ore-gcd-v1",
+  "status": "exact bounded modular Ore-factor calculation; not a universal Picard-Fuchs or telescoping certificate",
+  "ore_convention": "S*f(m)=f(m+1)*S; division is on the left and the common factor is a greatest common right divisor",
+  "records": [
+    {
+      "point": 0,
+      "prime": 1000003,
+      "input_operators": [
+        {
+          "order": 18,
+          "m_degree": 18
+        },
+        {
+          "order": 27,
+          "m_degree": 11
+        }
+      ],
+      "order_27_left_division_by_order_18_remainder_order": 17,
+      "euclidean_remainder_orders": [
+        17,
+        16,
+        15,
+        14,
+        -1
+      ],
+      "greatest_common_right_divisor": {
+        "order": 14,
+        "primitive_coefficient_degrees": [
+          58,
+          58,
+          58,
+          58,
+          58,
+          58,
+          58,
+          58,
+          58,
+          58,
+          58,
+          58,
+          58,
+          58,
+          58
+        ],
+        "forward_fixed_factor": "product_(k in {32,34,35,37,38,40,41,43})(3m+k)",
+        "forward_residual_degree": 50,
+        "moment_equations_checked": 487
+      },
+      "left_quotient_orders": {
+        "order_18_operator": 4,
+        "order_27_operator": 13
+      },
+      "left_quotient_rational_degree_pairs": {
+        "order_18_operator": [
+          [
+            68,
+            50
+          ],
+          [
+            68,
+            50
+          ],
+          [
+            68,
+            50
+          ],
+          [
+            68,
+            50
+          ],
+          [
+            18,
+            0
+          ]
+        ],
+        "order_27_operator": [
+          [
+            61,
+            50
+          ],
+          [
+            61,
+            50
+          ],
+          [
+            61,
+            50
+          ],
+          [
+            61,
+            50
+          ],
+          [
+            61,
+            50
+          ],
+          [
+            61,
+            50
+          ],
+          [
+            61,
+            50
+          ],
+          [
+            61,
+            50
+          ],
+          [
+            61,
+            50
+          ],
+          [
+            61,
+            50
+          ],
+          [
+            61,
+            50
+          ],
+          [
+            61,
+            50
+          ],
+          [
+            61,
+            50
+          ],
+          [
+            11,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "point": 0,
+      "prime": 1000033,
+      "input_operators": [
+        {
+          "order": 18,
+          "m_degree": 18
+        },
+        {
+          "order": 27,
+          "m_degree": 11
+        }
+      ],
+      "order_27_left_division_by_order_18_remainder_order": 17,
+      "euclidean_remainder_orders": [
+        17,
+        16,
+        15,
+        14,
+        -1
+      ],
+      "greatest_common_right_divisor": {
+        "order": 14,
+        "primitive_coefficient_degrees": [
+          58,
+          58,
+          58,
+          58,
+          58,
+          58,
+          58,
+          58,
+          58,
+          58,
+          58,
+          58,
+          58,
+          58,
+          58
+        ],
+        "forward_fixed_factor": "product_(k in {32,34,35,37,38,40,41,43})(3m+k)",
+        "forward_residual_degree": 50,
+        "moment_equations_checked": 487
+      },
+      "left_quotient_orders": {
+        "order_18_operator": 4,
+        "order_27_operator": 13
+      },
+      "left_quotient_rational_degree_pairs": {
+        "order_18_operator": [
+          [
+            68,
+            50
+          ],
+          [
+            68,
+            50
+          ],
+          [
+            68,
+            50
+          ],
+          [
+            68,
+            50
+          ],
+          [
+            18,
+            0
+          ]
+        ],
+        "order_27_operator": [
+          [
+            61,
+            50
+          ],
+          [
+            61,
+            50
+          ],
+          [
+            61,
+            50
+          ],
+          [
+            61,
+            50
+          ],
+          [
+            61,
+            50
+          ],
+          [
+            61,
+            50
+          ],
+          [
+            61,
+            50
+          ],
+          [
+            61,
+            50
+          ],
+          [
+            61,
+            50
+          ],
+          [
+            61,
+            50
+          ],
+          [
+            61,
+            50
+          ],
+          [
+            61,
+            50
+          ],
+          [
+            61,
+            50
+          ],
+          [
+            11,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "point": 0,
+      "prime": 1000037,
+      "input_operators": [
+        {
+          "order": 18,
+          "m_degree": 18
+        },
+        {
+          "order": 27,
+          "m_degree": 11
+        }
+      ],
+      "order_27_left_division_by_order_18_remainder_order": 17,
+      "euclidean_remainder_orders": [
+        17,
+        16,
+        15,
+        14,
+        -1
+      ],
+      "greatest_common_right_divisor": {
+        "order": 14,
+        "primitive_coefficient_degrees": [
+          58,
+          58,
+          58,
+          58,
+          58,
+          58,
+          58,
+          58,
+          58,
+          58,
+          58,
+          58,
+          58,
+          58,
+          58
+        ],
+        "forward_fixed_factor": "product_(k in {32,34,35,37,38,40,41,43})(3m+k)",
+        "forward_residual_degree": 50,
+        "moment_equations_checked": 487
+      },
+      "left_quotient_orders": {
+        "order_18_operator": 4,
+        "order_27_operator": 13
+      },
+      "left_quotient_rational_degree_pairs": {
+        "order_18_operator": [
+          [
+            68,
+            50
+          ],
+          [
+            68,
+            50
+          ],
+          [
+            68,
+            50
+          ],
+          [
+            68,
+            50
+          ],
+          [
+            18,
+            0
+          ]
+        ],
+        "order_27_operator": [
+          [
+            61,
+            50
+          ],
+          [
+            61,
+            50
+          ],
+          [
+            61,
+            50
+          ],
+          [
+            61,
+            50
+          ],
+          [
+            61,
+            50
+          ],
+          [
+            61,
+            50
+          ],
+          [
+            61,
+            50
+          ],
+          [
+            61,
+            50
+          ],
+          [
+            61,
+            50
+          ],
+          [
+            61,
+            50
+          ],
+          [
+            61,
+            50
+          ],
+          [
+            61,
+            50
+          ],
+          [
+            61,
+            50
+          ],
+          [
+            11,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "point": 1,
+      "prime": 1000003,
+      "input_operators": [
+        {
+          "order": 18,
+          "m_degree": 18
+        },
+        {
+          "order": 27,
+          "m_degree": 11
+        }
+      ],
+      "order_27_left_division_by_order_18_remainder_order": 17,
+      "euclidean_remainder_orders": [
+        17,
+        16,
+        15,
+        14,
+        -1
+      ],
+      "greatest_common_right_divisor": {
+        "order": 14,
+        "primitive_coefficient_degrees": [
+          58,
+          58,
+          58,
+          58,
+          58,
+          58,
+          58,
+          58,
+          58,
+          58,
+          58,
+          58,
+          58,
+          58,
+          58
+        ],
+        "forward_fixed_factor": "product_(k in {32,34,35,37,38,40,41,43})(3m+k)",
+        "forward_residual_degree": 50,
+        "moment_equations_checked": 487
+      },
+      "left_quotient_orders": {
+        "order_18_operator": 4,
+        "order_27_operator": 13
+      },
+      "left_quotient_rational_degree_pairs": {
+        "order_18_operator": [
+          [
+            68,
+            50
+          ],
+          [
+            68,
+            50
+          ],
+          [
+            68,
+            50
+          ],
+          [
+            68,
+            50
+          ],
+          [
+            18,
+            0
+          ]
+        ],
+        "order_27_operator": [
+          [
+            61,
+            50
+          ],
+          [
+            61,
+            50
+          ],
+          [
+            61,
+            50
+          ],
+          [
+            61,
+            50
+          ],
+          [
+            61,
+            50
+          ],
+          [
+            61,
+            50
+          ],
+          [
+            61,
+            50
+          ],
+          [
+            61,
+            50
+          ],
+          [
+            61,
+            50
+          ],
+          [
+            61,
+            50
+          ],
+          [
+            61,
+            50
+          ],
+          [
+            61,
+            50
+          ],
+          [
+            61,
+            50
+          ],
+          [
+            11,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "point": 1,
+      "prime": 1000033,
+      "input_operators": [
+        {
+          "order": 18,
+          "m_degree": 18
+        },
+        {
+          "order": 27,
+          "m_degree": 11
+        }
+      ],
+      "order_27_left_division_by_order_18_remainder_order": 17,
+      "euclidean_remainder_orders": [
+        17,
+        16,
+        15,
+        14,
+        -1
+      ],
+      "greatest_common_right_divisor": {
+        "order": 14,
+        "primitive_coefficient_degrees": [
+          58,
+          58,
+          58,
+          58,
+          58,
+          58,
+          58,
+          58,
+          58,
+          58,
+          58,
+          58,
+          58,
+          58,
+          58
+        ],
+        "forward_fixed_factor": "product_(k in {32,34,35,37,38,40,41,43})(3m+k)",
+        "forward_residual_degree": 50,
+        "moment_equations_checked": 487
+      },
+      "left_quotient_orders": {
+        "order_18_operator": 4,
+        "order_27_operator": 13
+      },
+      "left_quotient_rational_degree_pairs": {
+        "order_18_operator": [
+          [
+            68,
+            50
+          ],
+          [
+            68,
+            50
+          ],
+          [
+            68,
+            50
+          ],
+          [
+            68,
+            50
+          ],
+          [
+            18,
+            0
+          ]
+        ],
+        "order_27_operator": [
+          [
+            61,
+            50
+          ],
+          [
+            61,
+            50
+          ],
+          [
+            61,
+            50
+          ],
+          [
+            61,
+            50
+          ],
+          [
+            61,
+            50
+          ],
+          [
+            61,
+            50
+          ],
+          [
+            61,
+            50
+          ],
+          [
+            61,
+            50
+          ],
+          [
+            61,
+            50
+          ],
+          [
+            61,
+            50
+          ],
+          [
+            61,
+            50
+          ],
+          [
+            61,
+            50
+          ],
+          [
+            61,
+            50
+          ],
+          [
+            11,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "point": 1,
+      "prime": 1000037,
+      "input_operators": [
+        {
+          "order": 18,
+          "m_degree": 18
+        },
+        {
+          "order": 27,
+          "m_degree": 11
+        }
+      ],
+      "order_27_left_division_by_order_18_remainder_order": 17,
+      "euclidean_remainder_orders": [
+        17,
+        16,
+        15,
+        14,
+        -1
+      ],
+      "greatest_common_right_divisor": {
+        "order": 14,
+        "primitive_coefficient_degrees": [
+          58,
+          58,
+          58,
+          58,
+          58,
+          58,
+          58,
+          58,
+          58,
+          58,
+          58,
+          58,
+          58,
+          58,
+          58
+        ],
+        "forward_fixed_factor": "product_(k in {32,34,35,37,38,40,41,43})(3m+k)",
+        "forward_residual_degree": 50,
+        "moment_equations_checked": 487
+      },
+      "left_quotient_orders": {
+        "order_18_operator": 4,
+        "order_27_operator": 13
+      },
+      "left_quotient_rational_degree_pairs": {
+        "order_18_operator": [
+          [
+            68,
+            50
+          ],
+          [
+            68,
+            50
+          ],
+          [
+            68,
+            50
+          ],
+          [
+            68,
+            50
+          ],
+          [
+            18,
+            0
+          ]
+        ],
+        "order_27_operator": [
+          [
+            61,
+            50
+          ],
+          [
+            61,
+            50
+          ],
+          [
+            61,
+            50
+          ],
+          [
+            61,
+            50
+          ],
+          [
+            61,
+            50
+          ],
+          [
+            61,
+            50
+          ],
+          [
+            61,
+            50
+          ],
+          [
+            61,
+            50
+          ],
+          [
+            61,
+            50
+          ],
+          [
+            61,
+            50
+          ],
+          [
+            61,
+            50
+          ],
+          [
+            61,
+            50
+          ],
+          [
+            61,
+            50
+          ],
+          [
+            11,
+            0
+          ]
+        ]
+      }
+    }
+  ],
+  "uniform_sampled_result": {
+    "order_27_is_left_multiple_of_order_18": false,
+    "common_right_factor_order": 14,
+    "common_right_factor_primitive_m_degree": 58,
+    "order_18_left_quotient_order": 4,
+    "order_27_left_quotient_order": 13,
+    "direct_moment_equations_per_sample": 487,
+    "interior_length_match": "the common order 14 equals the exact interior length 14 in the 2+2+14 logarithmic-Jacobian decomposition"
+  },
+  "interpretation_limit": "The order match is evidence that the sampled scalar period uses the interior cyclic factor while the two endpoint pairs account for the four extra relative-Jacobian dimensions. This identification is not proved universally."
+}

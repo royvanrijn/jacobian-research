@@ -18,7 +18,7 @@ three-dimensional counterexample construction.
 | [KELLER_PENCIL_AT_INFINITY_EXPERIMENT.md](KELLER_PENCIL_AT_INFINITY_EXPERIMENT.md) | Exact target-shear calibration of the full linear pencil: the same \(3+1\)/\(2+2\) finite packet and the same Jacobian determinant support generic zeta functions \(1\) and \((1+t^2)^{-1}\), proving that packet data do not determine pencil topology |
 | [PAIR_72_108_REPRODUCTION.md](PAIR_72_108_REPRODUCTION.md) | Newton-to-coefficient reconstruction, exact ideals, certificates, and division audit |
 | [WEIGHTED_WRONSKIAN_FIRST_BLOCK.md](WEIGHTED_WRONSKIAN_FIRST_BLOCK.md) | Hyperelliptic/de Rham interpretation and residual-scaling quotient of the audited first block |
-| [SUPERELLIPTIC_DERHAM_ENGINE.md](SUPERELLIPTIC_DERHAM_ENGINE.md) | Reusable character-wise Hermite reduction, exact implementation, and frontier experiment design |
+| [SUPERELLIPTIC_DERHAM_ENGINE.md](SUPERELLIPTIC_DERHAM_ENGINE.md) | Reusable character-wise Hermite reduction, Gauss--Manin matrices, exact scalar Picard--Fuchs extraction, and frontier experiment design |
 | [NEWTON_BOUNDARY_DICTIONARY.md](NEWTON_BOUNDARY_DICTIONARY.md) | Qualified comparison with boundary/valuation language |
 | [BOUNDARY_LATTICE_PREFILTER.md](BOUNDARY_LATTICE_PREFILTER.md) | Chart-aware localization/SNF gate and exact checker for complete proposed boundaries |
 | [INTRINSIC_A2_BOUNDARY_GATE.md](INTRINSIC_A2_BOUNDARY_GATE.md) | Adjunction/Noether reconstruction, pole-vector ramification gate, and intrinsic dicritical depth obstruction |

@@ -308,6 +308,29 @@ and outer degree \(4\).  In particular, \(C_{3,4}\) has no reverse
 uniqueness of the polynomial subalgebra with the unique intermediate
 fraction field.
 
+### 4.2 A direct-product Ritt diamond
+
+The
+[separated-product Keller--Ritt theorem](../verified/KELLER_RITT_PRODUCT_THEOREM.md)
+gives the complementary degree-twelve behavior.  On \(\mathbb A^6\),
+
+\[
+ F_3\times F_4
+ =
+ (\operatorname{id}\times F_4)\circ(F_3\times\operatorname{id})
+ =
+ (F_3\times\operatorname{id})\circ
+ (\operatorname{id}\times F_4).
+\]
+
+Its monodromy is \(S_3\times S_4\), and the point-stabilizer interval is an
+exact diamond.  Hence every maximal polynomial decomposition has length
+two, degree multiset \(\{3,4\}\), and factor-monodromy group multiset
+\(\{S_3,S_4\}\).  This is a literal Keller Ritt move and proves that the
+ordered degree word is not invariant.  Stable factor-class invariance for
+all polynomial models over the two middle fields remains the affine-open
+uniqueness gate.
+
 ## 5. Boundary-decorated uniqueness
 
 For an atomic factor \(A\), write
@@ -389,6 +412,17 @@ already gives the correct local model for coherence:
 - a \(2\)-cell identifies reduced images or normalizations, while retaining
   any nilpotent or derived defect of the full path schemes.
 
+The separated-product theorem realizes this skeleton as strict Keller
+geometry on a control subcategory.  For
+\(\prod_iF_{n_i}:\mathbb A^{3r}\to\mathbb A^{3r}\), the intermediate-field
+interval is Boolean, its canonical split polynomial chains are indexed by
+the \(r!\) factor orders, and adjacent swaps are literal commuting Keller
+Ritt moves.  Three factors give a strict braid hexagon; four give the six
+commuting squares and eight braid hexagons of the permutohedral
+\(2\)-skeleton.  All comparison defects vanish because the coordinate
+stabilizations commute as polynomial maps.  This is the base case against
+which coupled marked-root cells should be measured.
+
 Programme 4 asks for a functor from the Keller factorization groupoid to this
 coefficient-decorated \(2\)-complex on the marked-root subcategory.  On an
 edge, the functor should transport:
@@ -404,15 +438,18 @@ equal merely because they have the same reduction and normalization.  Full
 stable LR geometry should therefore be correspondence-valued or derived,
 not a bare graph quotient.
 
-> **P4-D (Ritt realization).**  Determine which vertical seed Ritt edges
-> lift to Keller Ritt \(2\)-cells, and compute the obstruction when the
-> required intermediate affine reconstruction opens fail to glue.
+> **P4-D (coupled Ritt realization).**  Starting from the strict
+> separated-product control cells, determine which non-split vertical seed
+> Ritt edges lift to Keller Ritt \(2\)-cells, and compute the obstruction
+> when the required intermediate affine reconstruction opens fail to glue.
 
 The first useful tests are degrees \(12\), \(24\), \(27\), and \(30\).
 Degree \(12\) has the two orders \(3\cdot4\) and \(4\cdot3\); degree \(24\)
 is the first arithmetic competition between distinct two-factor multisets;
 degree \(27\) is the first possible length competition; and degree \(30\)
 already has a nontrivial braid coherence defect in the seed Ritt complex.
+The separated degree-\(60\) product \(F_3\times F_4\times F_5\) supplies the
+strict braid control for that comparison.
 
 ## 7. A Jordan--Hölder target
 
@@ -489,12 +526,13 @@ of whether factor order is visible in stable LR geometry.
 
 ### 8.3 The first diamond
 
-Degree \(12\) is the smallest possible adjacent interchange.  Search for a
-single Keller map having both a \(3\)-then-\(4\) and a \(4\)-then-\(3\)
-polynomial sandwich.  Proposition 4.1 excludes the existing
-\(C_{3,4}\) full-wreath composite, so a positive example must lie on a
-proper-monodromy locus.  Such an example would produce the first Keller
-Ritt square.
+Degree \(12\) is the smallest possible adjacent interchange.  The separated
+product \(F_3\times F_4\) now supplies a single Keller map with both a
+\(3\)-then-\(4\) and a \(4\)-then-\(3\) polynomial sandwich, and its
+direct-product monodromy proves that these are the two field-level routes.
+The remaining first-diamond problem is the coupled three-dimensional one.
+Proposition 4.1 excludes the existing \(C_{3,4}\) full-wreath composite, so
+a positive three-dimensional example must lie on a proper-monodromy locus.
 
 ### 8.4 Fiber recognition
 
@@ -564,8 +602,9 @@ These results motivate P4-E.  They do not imply semimodularity of
 4. **How are Ritt moves reflected in stable LR geometry?**  They should be
    invertible, correspondence-valued \(2\)-cells between adjacent factor
    words, preserving marked block flags and boundary decorations.  The
-   existing Hessian--Ritt \(2\)-complex is the local seed model, not yet the
-   global Keller factorization category.
+   separated-product theorem supplies one literal commuting Keller Ritt
+   square.  The existing Hessian--Ritt \(2\)-complex is the local seed
+   model, not yet the global Keller factorization category.
 5. **What is the Jordan--Hölder analogue?**  First prove that the decorated
    sandwich poset is graded under explicit boundary-inertia hypotheses;
    then classify diamonds and prove maximal-chain connectivity.  A global

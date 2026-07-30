@@ -1,0 +1,67 @@
+{
+  "accepted_paired_base_count": 450,
+  "attempted_base_count": 803,
+  "common_through_mu7_point_count": 1,
+  "common_through_mu7_points": [
+    {
+      "base": {
+        "s1": 9,
+        "s2": 42,
+        "t1": 35,
+        "t2": 27,
+        "u": 9
+      },
+      "higher_moment_evaluation": {
+        "all_corrected_moments_zero": false,
+        "first_nonzero_order": 8,
+        "full_parameter_point": {
+          "s0": 24,
+          "s1": 9,
+          "s2": 42,
+          "s3": 31,
+          "s4": 10,
+          "s5": 27,
+          "s6": 21,
+          "t0": 1,
+          "t1": 35,
+          "t2": 27,
+          "t3": 13,
+          "t4": 35
+        },
+        "moment_values": {
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 25
+        }
+      },
+      "mu4_mu5_dimension": 0,
+      "mu4_mu5_length": 6,
+      "s3": 31,
+      "sample_index": 261,
+      "through_mu7_dimension": 0,
+      "through_mu7_length": 1,
+      "through_mu7_standard_basis": [
+        "s5+16",
+        "s6-21"
+      ],
+      "through_mu7_standard_basis_size": 2
+    }
+  ],
+  "evaluated_mu3_root_count": 450,
+  "format": "two-pair-sic-bidegree33-t0-specialized-direct-scout-v1",
+  "generic_mu4_mu5_length": 6,
+  "length_drop_sample_count": 0,
+  "length_drop_samples": [],
+  "mu4_mu5_length_distribution": {
+    "6": 450
+  },
+  "prime": 43,
+  "random_seed": 702,
+  "reproduction_command": "scripts/research_two_pair_sic_bidegree33_t0_fitting_interpolation.py --prime 43 --random-seed 702 --stratum discriminant --sample-count 450 --max-attempts 3000 --timeout 20 --output artifacts/generated-results/two_pair_sic_bidegree33_t0_stratum_discriminant_random_p43_seed702.json",
+  "status": "bounded modular specialized direct ideals; not a proof",
+  "stratum": "discriminant"
+}

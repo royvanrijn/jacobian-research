@@ -155,9 +155,41 @@ for degree in range(4, 65):
         assert gcd(abs(determinant_34), abs(determinant_35)) == 1
 
 
+# On the compiler slice a3=1, the residual scaling has weights
+# (5,6,...,N+1) on (u4,u5,...,uN).  I5 and the consecutive second
+# differences J6,...,JN form a saturated basis of its invariant lattice.
+for degree in range(5, 17):
+    residual_weights = sp.Matrix(
+        [[index + 1 for index in range(4, degree + 1)]]
+    )
+    relations = sp.zeros(degree - 4, degree - 3)
+    relations[0, 0] = -6
+    relations[0, 1] = 5
+    for row in range(1, degree - 4):
+        relations[row, row - 1] = 1
+        relations[row, row] = -2
+        relations[row, row + 1] = 1
+
+    assert residual_weights * relations.T == sp.zeros(1, degree - 4)
+    assert relations.rank() == degree - 4
+    maximal_minors = []
+    for deleted_column in range(degree - 3):
+        retained_columns = [
+            column
+            for column in range(degree - 3)
+            if column != deleted_column
+        ]
+        maximal_minors.append(
+            abs(int(relations[:, retained_columns].det()))
+        )
+    assert maximal_minors == list(range(5, degree + 2))
+    assert gcd(*maximal_minors) == 1
+
+
 print("PASS: the independent (alpha,beta) source-target scaling is exact")
 print("PASS: a2 is removed by the target shear B -> B-2*a2*P")
 print("PASS: the intrinsic Fitting polynomial recovers a3,...,aN")
 print("PASS: Fitting support orders the two toric punctures")
 print("PASS: Fitting support removes P^m twists")
 print("PASS: the stable coefficient-torus quotient has dimension N-4")
+print("PASS: I5,J6,...,JN are saturated compiler-slice quotient coordinates")

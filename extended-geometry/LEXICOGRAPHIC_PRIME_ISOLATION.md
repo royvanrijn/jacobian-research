@@ -38,6 +38,13 @@ the non-Frobenius cross terms**.  The most promising unrestricted
 replacement is a same-prime, higher-\(p\)-adic initial-functional analysis,
 not a sequence of different primes.
 
+The obstruction here is radial rank, not angular rank.  Long's
+[factorially weighted multitorus theorem](FACTORIALLY_WEIGHTED_MULTITORUS_THEOREM.md)
+already permits any finite angular torus rank when there is only one radial
+variable \(u\) with moment \(n!\).  Consequently no lexicographic refinement
+is needed in that one-radial model, and searches should discard it before
+opening a multi-radial valuation analysis.
+
 ## 2. Multi-radial setup
 
 Let \(T^\alpha\), \(\alpha\in\mathbb Z^q\), denote angular Laurent

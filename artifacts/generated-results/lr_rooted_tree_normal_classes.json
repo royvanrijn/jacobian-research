@@ -1,0 +1,176 @@
+{
+  "all_order_family": {
+    "cayley_hamilton_recurrence_coefficients": [
+      "113825/756",
+      "157250425/10584",
+      "15477069875/428652"
+    ],
+    "characteristic_polynomial": "lambda**3 - 113825*lambda**2/756 - 157250425*lambda/10584 - 15477069875/428652",
+    "even_initial_third_values_k_0_through_3": [
+      "170/63",
+      "-2022575/11907",
+      "-256808972125/9001692",
+      "-45742985609279375/6805279152"
+    ],
+    "even_seed": "B(C)",
+    "even_seed_vector_at_gamma_0_u_1_over_6": [
+      "-85/4",
+      "-85/12",
+      "170/63"
+    ],
+    "odd_initial_third_values_k_0_through_2": [
+      "-516875/9072",
+      "-65504665/979776",
+      "-455884893661325/5184974592"
+    ],
+    "odd_seed": "A(C(C))",
+    "odd_seed_vector_at_gamma_0_u_1_over_6": [
+      "-3010741/54432",
+      "-35741/40824",
+      "-516875/9072"
+    ],
+    "orders_covered": "every n>=2",
+    "proof": "The recurrence coefficients are positive. The odd initial values are negative, and the even values from k=1 onward start with three negative values; Cayley-Hamilton therefore makes every later separator value negative. The exceptional even k=0 value is positive. Hence every third residue is a nonzero polynomial, so its weighted associated-graded symbol in gr(Q[u,gamma]/(gamma)) is nonzero.",
+    "recursion": "tau_(n+2)=B(C(tau_n))",
+    "transfer_matrix_at_gamma_0_u_1_over_6": [
+      [
+        "55165/378",
+        "17510/63",
+        "8995/144"
+      ],
+      [
+        "31195/567",
+        "1445/378",
+        "1445/144"
+      ],
+      [
+        "0",
+        "170/7",
+        "605/756"
+      ]
+    ]
+  },
+  "compiler_cross_checks": {
+    "one_edge_BC_equals_second_fundamental_form": true,
+    "one_edge_associated_graded_symbol": "-146880*u**5/7",
+    "one_edge_third_residue": "-146880*u**5/7 + 752760*u**4/7 - 65280*u**3 + 56610*u**2/7 - 540*u + 90",
+    "one_vertex_defect_zero": true
+  },
+  "computed_orders": [
+    {
+      "associated_graded_symbol": "-146880*u**5/7",
+      "order": 2,
+      "third_residue_at_u_1_over_6": "170/63",
+      "third_residue_degree_u": 5,
+      "third_residue_leading_coefficient": "-146880/7",
+      "third_residue_terms": 6,
+      "tree": "B(C)"
+    },
+    {
+      "associated_graded_symbol": "-208080*u**6/7",
+      "order": 3,
+      "third_residue_at_u_1_over_6": "-516875/9072",
+      "third_residue_degree_u": 6,
+      "third_residue_leading_coefficient": "-208080/7",
+      "third_residue_terms": 5,
+      "tree": "A(C(C))"
+    },
+    {
+      "associated_graded_symbol": "-218909952000*u**11/49",
+      "order": 4,
+      "third_residue_at_u_1_over_6": "-2022575/11907",
+      "third_residue_degree_u": 11,
+      "third_residue_leading_coefficient": "-218909952000/49",
+      "third_residue_terms": 10,
+      "tree": "B(C(B(C)))"
+    },
+    {
+      "associated_graded_symbol": "-803711496960*u**12/49",
+      "order": 5,
+      "third_residue_at_u_1_over_6": "-65504665/979776",
+      "third_residue_degree_u": 12,
+      "third_residue_leading_coefficient": "-803711496960/49",
+      "third_residue_terms": 10,
+      "tree": "B(C(A(C(C))))"
+    },
+    {
+      "associated_graded_symbol": "-326263392460800000*u**17/343",
+      "order": 6,
+      "third_residue_at_u_1_over_6": "-256808972125/9001692",
+      "third_residue_degree_u": 17,
+      "third_residue_leading_coefficient": "-326263392460800000/343",
+      "third_residue_terms": 15,
+      "tree": "B(C(B(C(B(C)))))"
+    },
+    {
+      "associated_graded_symbol": "-1814087690890444800*u**18/343",
+      "order": 7,
+      "third_residue_at_u_1_over_6": "-455884893661325/5184974592",
+      "third_residue_degree_u": 18,
+      "third_residue_leading_coefficient": "-1814087690890444800/343",
+      "third_residue_terms": 15,
+      "tree": "B(C(B(C(A(C(C))))))"
+    },
+    {
+      "associated_graded_symbol": "-486262960123576320000000*u**23/2401",
+      "order": 8,
+      "third_residue_at_u_1_over_6": "-45742985609279375/6805279152",
+      "third_residue_degree_u": 23,
+      "third_residue_leading_coefficient": "-486262960123576320000000/2401",
+      "third_residue_terms": 20,
+      "tree": "B(C(B(C(B(C(B(C)))))))"
+    },
+    {
+      "associated_graded_symbol": "-3473074710444446613504000*u**24/2401",
+      "order": 9,
+      "third_residue_at_u_1_over_6": "-63848446759831000375/3919840791552",
+      "third_residue_degree_u": 24,
+      "third_residue_leading_coefficient": "-3473074710444446613504000/2401",
+      "third_residue_terms": 20,
+      "tree": "B(C(B(C(B(C(A(C(C))))))))"
+    },
+    {
+      "associated_graded_symbol": "-724726315768178147328000000000*u**29/16807",
+      "order": 10,
+      "third_residue_at_u_1_over_6": "-7418948580420820178125/5144791038912",
+      "third_residue_degree_u": 29,
+      "third_residue_leading_coefficient": "-724726315768178147328000000000/16807",
+      "third_residue_terms": 25,
+      "tree": "B(C(B(C(B(C(B(C(B(C)))))))))"
+    },
+    {
+      "associated_graded_symbol": "-6136799143580832019167313920000*u**30/16807",
+      "order": 11,
+      "third_residue_at_u_1_over_6": "-11145860005398149884863125/2963399638413312",
+      "third_residue_degree_u": 30,
+      "third_residue_leading_coefficient": "-6136799143580832019167313920000/16807",
+      "third_residue_terms": 25,
+      "tree": "B(C(B(C(B(C(B(C(A(C(C))))))))))"
+    },
+    {
+      "associated_graded_symbol": "-1080132101020892710777651200000000000*u**35/117649",
+      "order": 12,
+      "third_residue_at_u_1_over_6": "-1236895881878469799201484375/3889462025417472",
+      "third_residue_degree_u": 35,
+      "third_residue_leading_coefficient": "-1080132101020892710777651200000000000/117649",
+      "third_residue_terms": 30,
+      "tree": "B(C(B(C(B(C(B(C(B(C(B(C)))))))))))"
+    }
+  ],
+  "description": "Constant-direction rooted-tree normal classes for the F_2 target lift",
+  "scope": {
+    "decorations": [
+      "partial_A",
+      "partial_B",
+      "partial_C"
+    ],
+    "filtration": "deg(u)=2, deg(gamma)=3",
+    "normal_quotient_third_summand": "Q[u,gamma]/(gamma)",
+    "target_weights": {
+      "partial_A": 2,
+      "partial_B": 1,
+      "partial_C": -1
+    }
+  },
+  "status_boundary": "This proves all-order nonvanishing for the displayed individual rooted-tree normal classes. It does not prove that their total coefficient survives cancellations in the mixed BCH forcing series or uniformly over all lower LR jets."
+}

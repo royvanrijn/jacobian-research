@@ -1,0 +1,269 @@
+{
+  "format": "two-pair-sic-bidegree33-rank-two-interior-cyclic-split-v1",
+  "status": "exact characteristic-zero critical-algebra calculation at one integral rank-two point; not a universal connection",
+  "point": {
+    "U": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        5,
+        7
+      ]
+    ],
+    "W": [
+      [
+        11,
+        13,
+        17,
+        19
+      ],
+      [
+        23,
+        29,
+        31,
+        37
+      ]
+    ],
+    "coefficient_rank": 2
+  },
+  "relative_critical_algebra": {
+    "length": 18,
+    "standard_monomial_basis": [
+      "1",
+      "u",
+      "u2",
+      "u3",
+      "u4",
+      "t",
+      "ut",
+      "u2t",
+      "u3t",
+      "t2",
+      "ut2",
+      "u2t2",
+      "t3",
+      "ut3",
+      "u2t3",
+      "t4",
+      "ut4",
+      "t5"
+    ],
+    "chinese_remainder_lengths": {
+      "interior": 14,
+      "endpoint_t0": 2,
+      "endpoint_t1": 2
+    },
+    "interior_standard_monomial_basis": [
+      "1",
+      "u",
+      "u2",
+      "u3",
+      "t",
+      "ut",
+      "u2t",
+      "u3t",
+      "t2",
+      "ut2",
+      "u2t2",
+      "t3",
+      "ut3",
+      "t4"
+    ],
+    "relative_basis_monomials_removed_by_interior_localization": [
+      "u4",
+      "u2t3",
+      "ut4",
+      "t5"
+    ]
+  },
+  "toric_logarithmic_critical_algebra": {
+    "ideal": "sat((u*Q_u-3Q, t*Q_t), u*t)",
+    "length": 14,
+    "equals_interior_algebra": true,
+    "standard_monomial_basis": [
+      "1",
+      "u",
+      "u2",
+      "u3",
+      "t",
+      "ut",
+      "u2t",
+      "u3t",
+      "t2",
+      "ut2",
+      "u2t2",
+      "t3",
+      "ut3",
+      "t4"
+    ],
+    "picard_fuchs_target": "the exact toric logarithmic critical rank equals the sampled minimal Ore-gcd order 14"
+  },
+  "period_function_eliminants": {
+    "variable": "z=P=Q/u^3",
+    "coefficient_order": "low_to_high",
+    "endpoint_t0": [
+      102200491,
+      -22590364,
+      1259712
+    ],
+    "endpoint_t1": [
+      846742771,
+      -5218042,
+      9747
+    ],
+    "interior": [
+      650858950851555367945331159075272432118718974656512000000000,
+      -1779886235954960410379181486651706214449080109419724800000000,
+      1706151945252952984630547373896781837227540523778375680000000,
+      -2215066137225464842759890300166984693531705760538771456000000,
+      3635353327148799366727896669297195189068170447004056780800000,
+      -3958384480444928570180283241611092692158136238895020175360000,
+      2324735888994378075703856761484874950190765491932186756096000,
+      -907517733832654549555132326577677563052171393507352753868800,
+      85370555959909467579770044717747062127426411087984258021760,
+      32926701418950062437879812163386867162582860925649604126272,
+      -4656385211930238000454371123069000293056342582862831003988,
+      -1096647265892414705373549106519871158606253116991580227595,
+      275132275059317380002695672517962165286895865567327869893,
+      -18146332378936273831909103218995398454273886901120362674,
+      43165546871562707860230921153832484156246256548532258
+    ],
+    "relative": [
+      56323723997947900487217867387082015910712585557080663972907995103232000000000,
+      -166823825393163845104003267939397517310463220516556200720938455321804800000000,
+      183413037823543823224054775627473763573306339062096905578490108549857280000000,
+      -227346398004565276858301012394010540518819511833076649874008747282743296000000,
+      360180826470463404083092416027082542336329622949787135421891019286625484800000,
+      -416662983662402820904734456126724938095876873223986107051976074989313781760000,
+      283329599407433646072558988544325609703664892717250849986531726856763401216000,
+      -128959657253414406065782479279610493375739303541197736004689269908899368652800,
+      28013898908616447222944820860071813835651823643003531334519238846010570060160,
+      79153887793626096504519381696304669685072925960277255946748760413943168832,
+      -942938182020466015766538378493340212593371722937079034806768275737569470100,
+      35094788268063785001943020969746750194826310931306508257181369819903750317,
+      39628111360837943061936094790573779383959990360738717298174836472235613223,
+      -8247922165789970122542497384214002629916968899802776823100118228726637503,
+      694088984143029798016428825501012402838962737427727274952730716431589711,
+      -24244196160354829817959665009354191708000343452546647454019808651710282,
+      177827678808310216950307230612540622265288523221624938279938289067226,
+      -516049781357503374516728301300950167053258464165035108425474689832,
+      530004405989390507973733256305786496365130222357342716946166912
+    ],
+    "relative_is_scalar_multiple_of_product": true,
+    "pairwise_coprime": true,
+    "all_three_factors_squarefree": true
+  },
+  "cyclic_consequence": {
+    "relative_basis": "1,P,...,P^17",
+    "interior_basis": "1,P,...,P^13",
+    "endpoint_bases": [
+      "1,P",
+      "1,P"
+    ],
+    "reason": "each eliminant degree equals the corresponding algebra length, so Q[P] has full dimension on every summand"
+  },
+  "jacobian_idempotent_period_audit": {
+    "moments_computed": 19,
+    "tests_per_summand": [
+      "period(e)",
+      "period(P*e)"
+    ],
+    "values": {
+      "interior": [
+        {
+          "nonzero": true,
+          "numerator_bits": 1561,
+          "denominator_bits": 1489,
+          "sha256": "2e585a09c7ee32a26ee76578dc347562b7eaba442759ac5370ec6250e17af88e"
+        },
+        {
+          "nonzero": true,
+          "numerator_bits": 1584,
+          "denominator_bits": 1504,
+          "sha256": "91b46fd3ac45152edb43c24ebacf8f9b76d4fb64b17fbdce73fda5fd078d027f"
+        }
+      ],
+      "endpoint_t0": [
+        {
+          "nonzero": true,
+          "numerator_bits": 924,
+          "denominator_bits": 852,
+          "sha256": "5562385e93614fd8ac732b4700b1d88508d9702029c1c90852f3e637c23a2e3c"
+        },
+        {
+          "nonzero": true,
+          "numerator_bits": 934,
+          "denominator_bits": 853,
+          "sha256": "e54885aadf2f4465a8ad564b57fca2e8f78abd931728388ccf1b71d93bf28452"
+        }
+      ],
+      "endpoint_t1": [
+        {
+          "nonzero": true,
+          "numerator_bits": 891,
+          "denominator_bits": 892,
+          "sha256": "39d46006fbef7074bd34c45e10b194e96eef0178e07cfe94eb8563cf5ea5e4dd"
+        },
+        {
+          "nonzero": true,
+          "numerator_bits": 909,
+          "denominator_bits": 901,
+          "sha256": "31bb66f196766e236047d26163fb4f711d544467fe9e10a77f8b85993add9a41"
+        }
+      ]
+    },
+    "endpoint_values_are_nonzero": true,
+    "conclusion": "the raw period functional does not descend through the ordinary Jacobian quotient; an m-dependent divergence reduction is required before the cyclic split can yield a recurrence"
+  },
+  "gradient_lift_seed": {
+    "saturation_exponent": 5,
+    "identity": "u^47*p_int(P)=X*(u*Q_u-3Q)+Y*Q_t, equivalently u^44*p_int(P)=X*D_u(P)+Y*partial_t(P)",
+    "cleared_eliminant": {
+      "total_degree": 126,
+      "terms": 2752
+    },
+    "X": {
+      "total_degree": 132,
+      "terms": 6750
+    },
+    "Y": {
+      "total_degree": 133,
+      "terms": 6791
+    },
+    "divergence_DuX_plus_dY": {
+      "total_degree": 132,
+      "terms": 6749
+    },
+    "endpoint_boundary_terms": {
+      "t0": 45,
+      "t1": 85
+    },
+    "ordinary_jacobian_normal_forms": {
+      "interior_divergence": {
+        "total_degree": 4,
+        "coordinates": 14
+      },
+      "endpoint_t0": {
+        "total_degree": 1,
+        "coordinates": 2
+      },
+      "endpoint_t1": {
+        "total_degree": 1,
+        "coordinates": 2
+      }
+    },
+    "integration_by_parts_identity": "(m+1)*Integral[u^44*p_int(P)*P^m] = -Integral[(D_u X+partial_t Y)*P^(m+1)] +Boundary[Y*P^(m+1)]_(t=0)^(t=1)",
+    "next_reduction": "recursively lift the gradient parts discarded by the 14+2+2 ordinary normal forms to construct the full m-dependent connection"
+  },
+  "next_gate": "construct the m-dependent reduction/connection in the interior cyclic basis and recover the sampled order-14 shift operator with divergence certificates"
+}

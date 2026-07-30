@@ -358,6 +358,65 @@ nonnegative increments (4.14c) from \(s=rm\) through
 of negative jumps.  Formula (4.14e), rather than the factorial-sized
 integer \(M_m\), is the natural input for a base-\(p\) automaton.
 
+#### 4.2.1 Recurrence curvature and the integral singularity ledger
+
+The local recurrence in (4.14e) has a useful operator formulation.  Cancel
+the consecutive quotient
+\[
+ \frac{M_{m+1}}{M_m}
+ =
+ 4^r
+ \frac{
+  \prod_{j=3}^{d+2}(dm+j)
+  \left(\prod_{j=1}^{r}(rm+j)\right)^2
+ }{
+  \prod_{j=2}^{2r+1}(2rm+j)
+ }
+ \tag{4.14f}
+\]
+over \(\mathbb Q[m]\), and write the result as \(B_{d,r}(m)/A_{d,r}(m)\)
+with coprime primitive \(A_{d,r},B_{d,r}\in\mathbb Z[m]\).  Then
+\[
+ A_{d,r}(m)M_{m+1}=B_{d,r}(m)M_m                     \tag{4.14g}
+\]
+is the minimal order-one recurrence, and (4.14e) becomes the exact local
+transition
+\[
+ \boxed{
+ v_p(M_{m+1})-v_p(M_m)
+ =v_p(B_{d,r}(m))-v_p(A_{d,r}(m)).}                    \tag{4.14h}
+\]
+Thus the primitive factorization, not the factorial-sized moment, is the
+canonical input for the digit automaton.
+
+The recurrence also has a characteristic-\(p\) curvature.  If
+\(\tau(m)=m+1\), its \(p\)-step multiplier is
+\[
+ \Psi_{p,d,r}(m)
+ =\prod_{i=0}^{p-1}
+ \frac{B_{d,r}(m+i)}{A_{d,r}(m+i)}.                    \tag{4.14i}
+\]
+For \(p>d+2\), the shift norm of every affine factor \(am+b\) is
+\(a(m^p-m)\), so
+\[
+ \boxed{\Psi_{p,d,r}=d^d(m^p-m)^d.}                    \tag{4.14j}
+\]
+This exact curvature is a global consistency invariant, not a replacement
+for (4.14h): taking the shift norm cancels the separate numerator and
+denominator factors that control prime-power re-entry.  For example,
+\((d,r)=(8,1)\) and \((8,2)\) have the same curvature
+\(8^8(m^p-m)^8\).  The first primitive recurrence has forward factor
+\(2m+3\) and admits negative valuation jumps; the second has forward
+factor \(1\) and is valuation-monotone.
+
+The normalized angular beta period supplies a parallel warning.  Every
+first radial lift \(R^k\widetilde F\) has the same Picard--Fuchs operator
+up to a dilation of its generating variable, although its factorial
+valuation phase depends on \(d=4+k\).  The exact recurrence derivation,
+good-prime curvature proof, differential \(p\)-curvature experiment through
+\(101\), and degree-eight control are in
+[`TWO_PAIR_SIC_FROBENIUS_CURVATURE_BRIDGE.md`](TWO_PAIR_SIC_FROBENIUS_CURVATURE_BRIDGE.md).
+
 ### 4.3 Non-power Hopf profiles and numerator-prime holes
 
 The non-power family \(\Phi_h\) has mixed moment
@@ -1015,8 +1074,12 @@ finer arithmetic and geometric structure leaves four distinct problems.
    survival an initial interval, but (4.14d) shows that non-radial
    survival can disappear and re-enter.  The ordinary witness already
    survives over \(\operatorname {Frac}W(k)\), so the remaining problem
-   is not to modify contraction but to classify the finite-level holes
-   and maximal surviving order by a base-\(p\) digit automaton, and to
+   is not to modify contraction.  For the radial propagations, (4.14h)
+   now supplies the exact factorized digit automaton; the next task is to
+   minimize its carry states and extract maximal surviving orders without
+   returning to factorial expansion.  For non-power profiles and future
+   higher-order telescopers, retain an integral companion lattice and its
+   stepwise singular factors before taking \(p\)-curvature.  It remains to
    decide whether a useful ring-theoretic Mathieu property commutes with
    the inverse system \(W_a(k)\).
 4. **Higher-degree exceptional tensor rank.** Semistability propagates to

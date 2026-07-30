@@ -1,0 +1,410 @@
+# Decorated Torelli for polynomial quadratic gauges
+
+The
+[finite marked-plane theorem](FINITE_MARKED_PLANE_NONRECONSTRUCTION.md)
+shows that finite marked sampling does not recover a stable class.  This
+note closes the top layer of the reconstruction hierarchy: the canonical
+finite normalization together with its reconstruction boundary is a
+complete stable invariant, and a much smaller intrinsic boundary--Fitting
+package already reconstructs every clean polynomial quadratic gauge.
+
+No displayed inverse-root generator or named target coordinate is retained
+in the compressed package.
+
+## 1. The full decorated normalization is complete
+
+Let
+
+\[
+ F:U\simeq\mathbb A^n\longrightarrow Y\simeq\mathbb A^n
+\tag{1.1}
+\]
+
+be dominant and quasi-finite.  Its map-intrinsic Zariski--Main package is
+
+\[
+ \mathcal B(F)=
+ \left(
+ \overline X_F\xrightarrow{\pi_F}Y,\quad
+ j_F:U\hookrightarrow\overline X_F,\quad
+ \partial_F=(\overline X_F\setminus j_F(U))_{\rm red}
+ \right),
+\tag{1.2}
+\]
+
+where `Xbar_F` is the normalization of `Y` in `K(U)`.
+
+The
+[stable-normalization theorem](STABLE_NORMALIZATION_FUNCTORIALITY.md)
+proves that left--right equivalence, including after identity stabilization,
+transports (1.2).  The converse is equally exact.
+
+### Proposition 1.1
+
+Suppose there are isomorphisms
+
+\[
+ \bar a:\overline X_F\xrightarrow{\sim}\overline X_G,
+ \qquad b:Y_F\xrightarrow{\sim}Y_G
+\tag{1.3}
+\]
+
+such that
+
+\[
+ \pi_G\bar a=b\pi_F,\qquad
+ \bar a(j_F(U_F))=j_G(U_G).
+\tag{1.4}
+\]
+
+Then restriction gives an isomorphism
+
+\[
+ a=j_G^{-1}\bar a j_F:U_F\xrightarrow{\sim}U_G
+\tag{1.5}
+\]
+
+and
+
+\[
+\boxed{G a=bF.}
+\tag{1.6}
+\]
+
+After choosing the given affine-space identifications, `a` and `b` are
+polynomial automorphisms.  Thus an isomorphism of full decorated packages is
+exactly a polynomial left--right equivalence.  The same argument after
+product with affine space proves the stable statement.
+
+#### Proof
+
+The boundary identifies its complement `j_F(U_F)`, so (1.5) is defined.
+Restricting the first equality in (1.4) to that open and using
+`F=pi_F j_F`, `G=pi_G j_G` gives (1.6).  The converse is the functoriality
+theorem for normalization.  No primitive root or inverse presentation is
+used.
+
+Hence “full finite normalization plus boundary” is a complete invariant in
+general.  This statement is formally short because the full package still
+contains the finite morphism and its distinguished affine open.
+
+The substantive question is how much of (1.2) can be discarded.  The
+remaining sections answer that question for polynomial quadratic gauges.
+
+## 2. The clean polynomial-gauge locus
+
+Work over an algebraically closed characteristic-zero field `K`.  Fix
+`N>=4`, normalize `g_1=1`, shear away `g_2`, and write
+
+\[
+ h_{P,R}(S)
+ =S+a_3PS^3+
+ R(P)\sum_{j=4}^Na_jP^jS^j,
+\tag{2.1}
+\]
+
+where
+
+\[
+ a_3a_4\cdots a_N\ne0.
+\tag{2.2}
+\]
+
+Assume:
+
+- `R` is squarefree;
+- `R(0)R(1)!=0`;
+- `R(1)=1`, using the common scalar redundancy between `R` and the
+  coefficients `a_j`, `j>=4`.
+
+Let `F_{a,R}` be the associated determinant-minus-two map.  Its inverse
+equation is
+
+\[
+ h_{P,R}(S)-\frac12(BS^2+C)=0.
+\tag{2.3}
+\]
+
+The complete boundary has three intrinsic types of target image.
+
+1. The repeated-root discriminant is the unique nonnormal image whose
+   finite normalization has nonzero relative Fitting divisor.  Its generic
+   boundary label is `(2,1)`.
+2. At `P=0`, the affine residue-degree partition is `(2,1)` and the final
+   Newton block has the established minimal quadratic-gauge ledger.
+3. At a root of `R`, the affine residue-degree partition is `(3)` and the
+   final Newton block gives one boundary prime `(N-3,1)`.
+
+The second and third types remain distinct when their geometric
+ramification indices happen to coincide: their generic affine residue
+fields have degrees `2+1` and `3`.  The discriminant remains distinct in
+the exceptional quintic case, where both boundary indices are two, because
+the discriminant image is nonnormal with a nontrivial normalization Fitting
+ideal while a multiplier-root plane is normal.
+
+Consequently the package intrinsically selects:
+
+- the ramified discriminant stratum;
+- the target prime `Z_0=V(P)`; and
+- the unordered multiplier-root target planes.
+
+Since `Z_0` is a prime hypersurface in affine target space, any target
+automorphism transporting packages carries a prime generator to a constant
+multiple:
+
+\[
+\boxed{P'\longmapsto\beta P,\qquad\beta\in K^\times.}
+\tag{2.4}
+\]
+
+Thus the base character is reconstructed from the boundary; it is not
+retained as a displayed coordinate.
+
+## 3. The unmarked ramified normalization
+
+Delete `P=0` and every multiplier-root target plane from the discriminant
+stratum.  Its normalization is
+
+\[
+ \widetilde Z_{\Delta,a,R}^{\circ}
+ =
+ \operatorname{Spec}
+ K[P^{\pm1},R(P)^{-1},r^{\pm1}].
+\tag{3.1}
+\]
+
+Modulo the base-unit lattice generated by `P` and the irreducible factors
+of `R`, its unit group has rank one.  Therefore an isomorphism of two such
+unmarked normalizations has the form
+
+\[
+ P'\longmapsto\beta P,\qquad
+ r'\longmapsto\alpha\,u(P)r^\epsilon,
+\tag{3.2}
+\]
+
+where `alpha in K^times`, `epsilon in {1,-1}`, and `u(P)` is a unit on the
+punctured base.  This is the full ambiguity after forgetting the displayed
+root coordinate.
+
+The intrinsic relative Fitting generator is
+
+\[
+\boxed{
+ J_{a,R}(P,r)
+ =-1+3a_3Pr^2+
+ R(P)\sum_{j=4}^Nj(j-2)a_jP^jr^{j-1}.
+}
+\tag{3.3}
+\]
+
+It is constructed from the finite normalization morphism and therefore
+does not require a chosen primitive root.
+
+Suppose two stabilized maps have isomorphic intrinsic packages.  Fitting
+functoriality gives
+
+\[
+ J_{b,T}(\beta P,\alpha u(P)r^\epsilon)
+ =v(P)r^qJ_{a,R}(P,r)
+\tag{3.4}
+\]
+
+for a base unit `v(P)` and `q in Z`.
+
+## 4. Fitting rigidity removes every unmarked ambiguity
+
+The `r`-exponent support of (3.3) is
+
+\[
+ \{0,2,3,\ldots,N-1\}.
+\tag{4.1}
+\]
+
+After inversion and translation, it becomes
+
+\[
+ \{0,1,\ldots,N-3,N-1\}.
+\tag{4.2}
+\]
+
+The missing interior exponents are respectively `1` and `N-2`, so
+(3.4) forces
+
+\[
+ \epsilon=1.
+\tag{4.3}
+\]
+
+Comparison of the smallest `r`-exponent gives `q=0`.  The constant term
+`-1` then gives
+
+\[
+ v(P)=1.
+\tag{4.4}
+\]
+
+The coefficient of `r^2` in (3.4) is
+
+\[
+ 3b_3\beta P\alpha^2u(P)^2=3a_3P.
+\tag{4.5}
+\]
+
+Every valuation of the base unit `u(P)` is therefore zero.  The base-unit
+lattice is torsion-free, so `u(P)` is constant and can be absorbed into
+`alpha`.  Thus
+
+\[
+\boxed{
+ P'\longmapsto\beta P,\qquad r'\longmapsto\alpha r
+}
+\tag{4.6}
+\]
+
+is the only surviving normalization-coordinate change.  In particular the
+full boundary--Fitting package reconstructs both the base character and the
+root coordinate up to their unavoidable scalings.
+
+## 5. Exact orbit classification
+
+Let `(a,R)` and `(b,T)` satisfy the clean hypotheses and the normalization
+`R(1)=T(1)=1`.  Coefficient comparison in (3.4), after (4.6), gives
+
+\[
+ b_3=\alpha^{-2}\beta^{-1}a_3
+\tag{5.1}
+\]
+
+and, for every `j>=4`,
+
+\[
+ b_j\beta^j\alpha^{j-1}T(\beta P)
+ =a_jR(P).
+\tag{5.2}
+\]
+
+Hence there is one scalar `kappa` such that
+
+\[
+ T(\beta P)=\kappa R(P).
+\tag{5.3}
+\]
+
+The normalization at one gives
+
+\[
+ \kappa=\frac1{R(1/\beta)}
+\tag{5.4}
+\]
+
+and therefore
+
+\[
+\boxed{
+\begin{aligned}
+ T(U)&=\frac{R(U/\beta)}{R(1/\beta)},\\
+ b_3&=\alpha^{-2}\beta^{-1}a_3,\\
+ b_j&=R(1/\beta)\alpha^{1-j}\beta^{-j}a_j
+ \qquad(4\le j\le N).
+\end{aligned}
+}
+\tag{5.5}
+\]
+
+Conversely, whenever `R(1/beta)!=0`, the source and target scalings
+
+\[
+ (x,y,z)\longmapsto(\alpha x,\alpha^{-1}y,\beta z),
+\qquad
+ (P,B,C)\longmapsto(\beta P,\alpha^{-1}B,\alpha C)
+\tag{5.6}
+\]
+
+realize (5.5) by an ordinary polynomial left--right equivalence.
+
+### Theorem 5.1
+
+On the clean polynomial quadratic-gauge locus, stable polynomial
+left--right equivalence is exactly the explicit ordinary scaling relation
+(5.5).  The intrinsic ordered boundary, unmarked discriminant
+normalization, and its full Fitting divisor recover the stable class.
+
+No inverse-root generator, displayed `P`-coordinate, or labeling of the
+roots of `R` is required.
+
+For `R=1`, formula (5.5) specializes to the established quadratic-gauge
+[stable-moduli action](QUADRATIC_GAUGE_STABLE_MODULI.md).  The monomial
+shifts `R=P^m`, `m>0`, lie on the excluded boundary `R(0)=0`; their changed
+`P=0` ledger and exponent reconstruction are handled by the separate
+power-shift theorems.
+
+## 6. Direct reconstruction from the Fitting generator
+
+Once the intrinsically recovered coordinates `(P,r)` are chosen, (3.3)
+gives an explicit inverse to the decorated invariant:
+
+\[
+ a_3=\frac{[r^2]J}{3P},
+\tag{6.1}
+\]
+
+and for `j>=4`,
+
+\[
+ L_j(P)
+ =\frac{[r^{j-1}]J}{j(j-2)P^j}
+ =a_jR(P).
+\tag{6.2}
+\]
+
+Since `R(1)=1`,
+
+\[
+\boxed{
+ a_j=L_j(1),\qquad
+ R(P)=\frac{L_j(P)}{L_j(1)}.
+}
+\tag{6.3}
+\]
+
+Every `j>=4` independently recovers the same multiplier.  Their agreement
+is an internal recognition test for the polynomial-gauge locus.
+
+## 7. Closed reconstruction hierarchy
+
+For this family the hierarchy is now complete.
+
+| retained data | conclusion |
+|---|---|
+| any finite collection of fibers or parallel inverse planes | infinitely many stable classes remain |
+| one root-framed transverse inverse-cover line with known `P` | recovers the displayed polynomial multiplier |
+| intrinsic boundary plus unmarked ramified normalization and Fitting divisor | recovers the stable class up to exactly (5.5) |
+| full finite normalization morphism plus reconstruction boundary | complete stable invariant for every quasi-finite polynomial map |
+
+If the boundary or distinguished reconstruction open is deliberately
+forgotten, one has changed the object: the abstract normal source no longer
+specifies which affine open carries the polynomial map.  No reconstruction
+claim is made for that weaker forgetful object.  This is not a remaining
+gap in the stated hierarchy, whose final layer explicitly retains the
+boundary.
+
+Ground-field descent can retain Kummer classes, as in the minimal quartic
+quadratic-gauge theorem.  The present classification is geometric over an
+algebraic closure; an exact arithmetic orbit classification for general
+`R` is a separate descent refinement, not a failure of decorated
+reconstruction.
+
+## 8. Exact regression
+
+Run
+
+```bash
+.venv/bin/python scripts/verify_polynomial_gauge_decorated_torelli.py
+```
+
+The checker verifies the exact Fitting transformation law, coefficientwise
+recovery of the seed and multiplier, exclusion of root-coordinate
+inversion, elimination of every punctured-base unit twist, intrinsic
+distinction of the `P=0` ledger, and a direct quartic source--target scaling
+identity for a nonconstant normalized multiplier.

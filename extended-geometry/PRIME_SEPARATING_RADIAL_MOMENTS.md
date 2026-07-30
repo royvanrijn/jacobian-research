@@ -12,6 +12,20 @@ not about probability.  Its only inputs are the
 Duistermaat--van der Kallen constant-term theorem, Frobenius compatibility,
 and a normalized divisibility condition on the weights \(a_d\).
 
+Christopher D. Long's
+[factorially weighted multitorus theorem](FACTORIALLY_WEIGHTED_MULTITORUS_THEOREM.md)
+shows that the angular Laurent torus may have arbitrary rank as long as the
+radial variable remains one-dimensional.  Combining his exposed-face
+geometry with the prime-separation criterion below gives the same
+Mathieu--Zhao conclusion for
+\[
+ \Phi_{a,r}:\mathbb C[U,T_1^{\pm1},\ldots,T_r^{\pm1}]
+ \longrightarrow\mathbb C
+\]
+in every torus rank.  The linked note is the canonical source for that
+multitorus extension; this note remains the canonical source for the
+arithmetic sequence criterion and its positive and negative families.
+
 Rotationally invariant probability measures give an important application.
 If \(\sigma\) is such a measure on \(\mathbb C\), \(Z\sim\sigma\), and all
 polynomial moments exist, write

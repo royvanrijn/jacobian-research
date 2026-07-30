@@ -1004,6 +1004,49 @@ The checker
 computes (6.11u)--(6.11v) from the Hessian formula and independently verifies
 the symmetric pre-Lie-defect formula (6.11q).
 
+### Balanced mixed BCH classes in every odd order
+
+The rooted-tree continuation of the target-lift defect can be projected onto
+an actual mixed BCH coefficient.  Put
+
+\[
+ D_B=\ell_{F_2}(\partial_B),\qquad
+ D_C=\ell_{F_2}(\partial_C),\qquad
+ X=N(x,0,-3z),\quad N=v^6S^4.
+\]
+
+The two lifted constant directions commute.  Hence the coefficient linear in
+\(X\) and of bidegree \((k,k)\) in \((D_B,D_C)\) in
+\(\operatorname{BCH}_{\rm map}(-X,-D_B-D_C)\) is
+
+\[
+ -\frac{B_{2k}}{(2k)!}\binom{2k}{k}
+ \bigl(\operatorname{ad}_{D_B}\operatorname{ad}_{D_C}\bigr)^kX.
+                                                               \tag{6.11w}
+\]
+
+All tree placements in this multihomogeneous component have therefore
+already been summed.  Its third saturated normal residue has leading
+coefficient \(c_k u^{4k+11}\), where
+
+\[
+ c_1=\frac{14438891520}{2401},\qquad
+ c_{k+1}=-73440(k+3)(2k+7)c_k.                    \tag{6.11x}
+\]
+
+Thus this genuine BCH normal coefficient is nonzero in every odd order
+\(2k+1\).  It survives the saturated linear target quotient.
+
+This does not yet prove the universal class (6.14): if the two target
+amplitudes are \(s,t\), the coefficient (6.11w) is multiplied by \(s^kt^k\)
+and vanishes on \(st=0\), including the valid lower-jet choice \(D_1=0\).
+The calculation supplies the \(st\ne0\) branch of a future lower-jet
+dichotomy.  The \(st=0\) branch must instead be compared with the weight-zero
+kernel and the torus-gauge recurrence.
+
+See [balanced mixed BCH classes](LR_MIXED_BCH_NORMAL_CLASSES.md) for the
+exact boundary-face transfer and its checker.
+
 Now expand arbitrary based source and target gauges and suppose their
 coefficients through order `m-1` solve the LR equations through that order.
 At order `m` the equation has the form

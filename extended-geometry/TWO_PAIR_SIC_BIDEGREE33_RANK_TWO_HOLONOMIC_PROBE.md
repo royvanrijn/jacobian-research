@@ -30,8 +30,27 @@ The logarithmic Jacobian quotient has exact length \(18\), split as two
 length-two endpoint pieces and a length-fourteen interior piece.  At the
 same six point/prime combinations, an order-18 recurrence of
 \(m\)-degree 18 passes 83 unused equations; degree 17 fails at both
-points modulo \(1000003\).  Thus order 27 is a low-\(m\)-degree,
-desingularized tradeoff rather than the minimal cohomological order.
+points modulo \(1000003\).
+
+Exact shift-Ore comparison sharpens this picture.  The order-27 operator
+is not a left multiple of the order-18 operator.  Instead, at all six
+samples,
+
+\[
+ R_{18}=Q_4G_{14},\qquad R_{27}=Q_{13}G_{14},             \tag{1.3}
+\]
+
+where \(G_{14}\) is their greatest common right divisor and the subscripts
+denote shift order.  After clearing rational content, every coefficient of
+\(G_{14}\) has \(m\)-degree 58, and the resulting operator annihilates all
+487 available moment rows.  Its order 14 matches the interior length in
+the exact \(2+2+14\) logarithmic-Jacobian decomposition.  This is exact
+bounded modular evidence for an interior cyclic Picard--Fuchs factor.
+At the first characteristic-zero point, multiplication by \(P\) is now
+proved cyclic on the degree-14 interior critical algebra.  However, the
+raw period is nonzero on both endpoint idempotent pairs, so it does not
+descend through that ordinary Jacobian algebra.  The \(m\)-dependent
+divergence connection remains necessary; no universal factor is identified.
 
 After making the coefficient of \(m^{11}\nu_{m+27}\) monic, all six fits
 have the same forward coefficient:
@@ -44,7 +63,7 @@ have the same forward coefficient:
  \prod_{k\in\{71,73,74,76,77,79,80,82\}}(3m+k)
  \left(9m^3-1836m^2+210730m-17920380\right)}
  {9\cdot3^8}.}
- \tag{1.3}
+ \tag{1.4}
 \]
 
 This is strong modular evidence for a compact universal recurrence shape.
@@ -52,10 +71,14 @@ It is **not** a creative-telescoping certificate.  The other recurrence
 coefficients have not been reconstructed in the rank-two parameter ring,
 and their universal common parameter denominator has not been found.  A
 single generic factor pencil now has an exact modular border-basis
-denominator calculation, described in Section 4.4, but its exceptional
-fibers have not yet been classified.  In particular, this note does not
-prove that bidegree \((3,3)\) is safe and does not produce an all-order
-counterexample.
+denominator calculation, described in Section 4.6.  All fifteen roots of
+that denominator lying in the three tested prime fields have now been
+specialized exactly: eleven lower the relative length from \(18\) to \(17\),
+while four preserve the complete \(2+2+14\) profile even though the chosen
+border chart fails.  The non-linear exceptional closed points and the
+characteristic-zero determinant remain unclassified.  In particular, this
+note does not prove that bidegree \((3,3)\) is safe and does not produce an
+all-order counterexample.
 
 ## 2. Exact relative-period realization
 
@@ -154,7 +177,7 @@ null vector and then tests all remaining available equations through
 point/prime combinations.
 
 The monic \(j=27\) coefficient reconstructed from the three primes is
-(1.3).  Its eight linear factors are positive for every \(m\geq0\).
+(1.4).  Its eight linear factors are positive for every \(m\geq0\).
 The cubic has no integer root because it has no root modulo \(29\).
 Therefore
 
@@ -205,7 +228,149 @@ Saturating further by the two endpoints decomposes the length as
 This is the first exact finite relative-cohomology model for the proposed
 recurrence.
 
-### 4.2 The natural order-18 recurrence shape
+### 4.2 Exact characteristic-zero cyclic splitting
+
+At the first integral rank-two point, put
+
+\[
+\begin{aligned}
+ I_{\rm int}&=((A,Q_t):u^\infty):(t(1-t))^\infty,\\
+ I_0&=(A,t):u^\infty,\qquad
+ I_1=(A,t-1):u^\infty.
+\end{aligned}
+\]
+
+Exact characteristic-zero ideal arithmetic gives the pairwise-comaximal
+decomposition
+
+\[
+ (A,C):u^\infty=I_{\rm int}\cap I_0\cap I_1,\qquad
+ 18=14+2+2.                                             \tag{4.7a}
+\]
+
+The interior standard monomials are
+
+\[
+ 1,u,u^2,u^3,\ t,ut,u^2t,u^3t,\ t^2,ut^2,u^2t^2,\
+ t^3,ut^3,t^4.                                         \tag{4.7b}
+\]
+
+Thus interior localization removes precisely
+\(u^4,u^2t^3,ut^4,t^5\) from (4.6).
+
+This interior algebra is also the exact logarithmic critical algebra of
+the Laurent polynomial \(P=Q/u^3\).  Indeed, the same calculation proves
+
+\[
+ \bigl((uQ_u-3Q,tQ_t):(ut)^\infty\bigr)=I_{\rm int}.
+\]
+
+In particular, the logarithmic critical rank at this rank-two fiber is
+exactly \(14\), with the standard monomials (4.7b).  This identifies the
+correct fixed-fiber Picard--Fuchs target rank and explains why the
+sampled common Ore factor below has order \(14\).  It does not by itself
+prove the scalar recurrence: a filtered twisted-de-Rham reduction must
+still control classes at infinity and the interval endpoints.
+
+There is a more useful cyclic description.  Eliminate \(u,t\) after
+adjoining \(z u^3-Q\), so that \(z=P=Q/u^3\).  The eliminant degrees on
+the interior and two endpoint summands are \(14,2,2\), respectively.  The
+endpoint polynomials are
+
+\[
+\begin{aligned}
+ p_0(z)&=1259712z^2-22590364z+102200491,\\
+ p_1(z)&=9747z^2-5218042z+846742771.
+\end{aligned}                                           \tag{4.7c}
+\]
+
+The degree-14 interior polynomial is stored exactly in the generated
+artifact.  All three factors are squarefree and pairwise coprime, and the
+degree-18 relative eliminant is their product up to a rational scalar.
+Since every eliminant degree equals the length of its algebra,
+
+\[
+ A_{\rm int}\simeq\mathbb Q[z]/(p_{\rm int}(z)),
+ \qquad 1,P,\ldots,P^{13}\ \text{is a basis}.            \tag{4.7d}
+\]
+
+This supplies an exact characteristic-zero Krylov basis for the interior
+critical algebra.  It does **not** yet supply the period connection.  The
+Chinese-remainder idempotents \(e_{\rm int},e_0,e_1\) were evaluated
+against the exact moments through \(\nu_{18}\).  Both
+\((\nu(e_0),\nu(Pe_0))\) and
+\((\nu(e_1),\nu(Pe_1))\) are nonzero.  Hence the raw period functional
+does not descend through the ordinary Jacobian quotient: gradient terms
+vanish only after the \(m\)-dependent divergence correction.  Any
+derivation of the order-14 recurrence must construct that correction
+explicitly.
+
+The first divergence certificate is now explicit.  The interior
+saturation exponent with respect to \(u\) is five.  If
+\(p_{\rm int}\) is the degree-14 eliminant, exact lifting through
+\((A,Q_t)\) gives polynomials \(X,Y\) satisfying
+
+\[
+ \boxed{
+ u^{47}p_{\rm int}(P)=X(uQ_u-3Q)+YQ_t,
+ }
+ \qquad\text{or}\qquad
+ u^{44}p_{\rm int}(P)=X D_uP+Y\partial_tP.              \tag{4.7e}
+\]
+
+The cleared eliminant has 2752 terms; \(X\) and \(Y\) have respectively
+6750 and 6791 terms.  Their divergence
+
+\[
+ D_uX+\partial_tY
+\]
+
+has 6749 terms.  Integration by parts therefore gives the exact seed
+
+\[
+\begin{aligned}
+ (m+1)\int u^{44}p_{\rm int}(P)P^m
+ &=-\int(D_uX+\partial_tY)P^{m+1}\\
+ &\quad+[YP^{m+1}]_{t=0}^{t=1}.                         \tag{4.7f}
+\end{aligned}
+\]
+
+The two restrictions of \(Y\) are nonzero, with 45 terms at \(t=0\) and
+85 terms at \(t=1\).  Ordinary Jacobian reduction puts the divergence in
+all fourteen interior coordinates and the two restrictions in both
+coordinates of their endpoint algebras.  This is not yet the connection:
+the gradient parts discarded by these normal forms must themselves be
+lifted recursively with their \(m\)-dependent integration-by-parts
+weights.  Thus the endpoint extension is not bookkeeping; it appears in
+the first exact connection identity and survives its first reduction.
+
+#### 4.2.1 Exact rational \(D\)-module seed
+
+The ordinary generating function of the normalized moments has the
+rational-period presentation
+
+\[
+ \sum_{m\geq 0}\nu_m z^m
+ =\operatorname{CT}_u\int_0^1\frac{1}{1-zQ/u^3}\,dt
+ =\oint\int_0^1\frac{u^2}{u^3-zQ(u,t)}\,dt\,du.
+\]
+
+Put \(H=u^3-zQ\).  Macaulay2's exact first-order annihilator calculation
+for \(H^{-1}\) returns 34 generators.  The resulting left ideal is
+holonomic of rank one.  Taking the kernel of multiplication by \(u^2\)
+gives 76 exact differential operators annihilating the specific
+integrand \(u^2/H\); this ideal is again holonomic of rank one.  Thus the
+input to a \(D\)-module pushforward is now an exact all-order object, not
+a fitted recurrence.
+
+This does not yet prove an operator for the interval period.
+The sequential pushforward in \(t\) and \(u\) remains to be completed,
+and any resulting ambient operator must retain or discharge the
+\(t=0,1\) certificate boundaries.  The exact annihilator counts,
+holonomicity tests, ranks, and software versions are stored in
+`artifacts/generated-results/two_pair_sic_bidegree33_rank_two_dmodule_picard_fuchs_research.json`.
+
+### 4.3 The natural order-18 recurrence shape
 
 At both integral rank-two points and all three primes, the ansatz
 
@@ -225,11 +390,10 @@ The monic forward coefficient factors as
 \]
 
 where \(H_{U,W}\) is a point-dependent monic decic.  The degree-eight
-factor is common to all six probes.  The decic records
-parameter-dependent apparent singularities of the lower-order scalar
-operator.  Passing to order 27 removes them from the observed forward
-\(m\)-factor, which is why the higher-order relation is preferable for
-uniform forward propagation.
+factor is common to all six probes.  The decic is absent from the
+order-27 forward coefficient, but the Ore calculation below shows that
+this is not explained by a direct left multiplication
+\(R_{27}=Q R_{18}\).
 
 A naive certificate polynomial of \(m\)-degree 17 cannot prove (4.8).
 After shifting the recurrence to the exponent used in integration by
@@ -239,7 +403,61 @@ one of the eighteen basis coordinates (4.6), even after saturation by
 connection, a higher-degree syzygy cancellation, or an equivalent
 desingularized operator.
 
-### 4.3 Why expanded universal interpolation is not the next step
+### 4.4 The sampled order-14 interior factor
+
+Work in the shift Ore ring
+
+\[
+ \mathbb F_p(m)[S;\sigma],\qquad
+ \sigma(f(m))=f(m+1),\qquad Sf(m)=f(m+1)S.               \tag{4.10}
+\]
+
+Exact left Euclidean division of \(R_{27}\) by \(R_{18}\) first leaves an
+order-17 remainder.  At every one of the six point/prime samples, the
+successive remainder orders are
+
+\[
+ 17,\ 16,\ 15,\ 14,\ -1.                                \tag{4.11}
+\]
+
+Consequently their monic greatest common right divisor is \(G_{14}\), and
+exact division gives
+
+\[
+ R_{18}=Q_4G_{14},\qquad R_{27}=Q_{13}G_{14}.             \tag{4.12}
+\]
+
+After taking the least common denominator of the rational coefficients
+of \(G_{14}\) and removing their polynomial gcd, all fifteen primitive
+coefficients have degree 58.  The forward coefficient contains
+
+\[
+ \prod_{k\in\{32,34,35,37,38,40,41,43\}}(3m+k)           \tag{4.13}
+\]
+
+and a residual factor of degree 50.  Direct substitution in the computed
+sequence verifies the primitive order-14 relation for every
+\(0\leq m\leq486\), giving 487 exact modular identities per sample.
+
+The equality
+
+\[
+ \operatorname {ord}(G_{14})=14
+ =\dim(\text{interior logarithmic quotient})             \tag{4.14}
+\]
+
+is the strongest current link to a Picard--Fuchs description.  It
+agrees with the exact characteristic-zero cyclic algebra (4.7d), while
+the two endpoint pieces account for the four extra dimensions in the
+relative critical model.  The nonzero idempotent-period audit above rules
+out the shortcut of simply projecting the raw period to that algebra.
+The \(m\)-dependent divergence connection and the characteristic-zero
+operator remain unproved.  The exact Krylov construction implemented in
+[`SUPERELLIPTIC_DERHAM_ENGINE.md`](../plane-jc/SUPERELLIPTIC_DERHAM_ENGINE.md)
+is the model for extracting \(G_{14}\) once the rank-two relative
+connection has been constructed.
+
+### 4.5 Why expanded universal interpolation is not the next step
 
 On the scaling family \(C(s)=(1+s)C_0\), the modular rational
 reconstructor recovers the predicted coefficient degrees \(27-j\) for
@@ -250,7 +468,7 @@ engine.
 On the generic quadratic factor pencil
 
 \[
- (U(s),W(s))=(U_0+sU_1,W_0+sW_1),                        \tag{4.10}
+ (U(s),W(s))=(U_0+sU_1,W_0+sW_1),                        \tag{4.15}
 \]
 
 256 samples with twelve holdouts find no rational interpolant for eight
@@ -258,14 +476,13 @@ representative recurrence coefficients within the resulting degree
 window.  In particular, no candidate appears with combined
 numerator/denominator degree at most 243 on this one pencil.  Therefore a
 fully expanded twelve-parameter recurrence is the wrong immediate
-representation.  The relative connection on the eighteen-element basis
-(4.6), followed by determinant and desingularization operations, is the
-compact target.
+representation.  The interior connection suggested by (4.14), with the
+endpoint extension retained for certificates, is the compact target.
 
-### 4.4 Exact border-basis denominator on the generic pencil
+### 4.6 Exact border-basis denominator on the generic pencil
 
 There is nevertheless an exact compact calculation available on the
-pencil (4.10).  Over each of
+pencil (4.15).  Over each of
 \(\mathbb F_{1000003}(s)\), \(\mathbb F_{1000033}(s)\), and
 \(\mathbb F_{1000037}(s)\), saturating the logarithmic Jacobian ideal
 
@@ -278,14 +495,14 @@ border monomials
 
 \[
  u^5,\quad u^4t,\quad u^3t^2,\quad u^2t^4,\quad ut^5,\quad t^6.
- \tag{4.11}
+ \tag{4.16}
 \]
 
 After reduction and monic normalization, every border relation has
 nineteen terms.  Their denominator degrees, in Singular basis order, are
 
 \[
- 74,\ 74,\ 88,\ 94,\ 74,\ 74.                           \tag{4.12}
+ 74,\ 74,\ 88,\ 94,\ 74,\ 74.                           \tag{4.17}
 \]
 
 At all three primes the degree-\(74\) denominator is the common gcd of
@@ -301,6 +518,32 @@ telescoping denominator \(D(U,W)\).  The stable profile at three primes is
 evidence for a characteristic-zero pencil determinant of the same
 degree, not a reconstruction of that determinant.
 
+Every linear factor of the degree-\(108\) polynomial over the three base
+fields can nevertheless be specialized exactly.  There are respectively
+\(4,6,5\) such roots.  All fifteen specializations keep the coefficient
+matrix at exact rank two and retain saturation exponent six.  Their
+relative-length profiles are
+
+\[
+\begin{array}{c|c|c}
+\text{number}&\text{profile}&\text{denominator component}\\ \hline
+4&2+2+14&74\\
+4&1+2+14&14\\
+4&2+1+14&14\\
+2&2+2+13&14\\
+1&2+2+13&20.
+\end{array}                                             \tag{4.18}
+\]
+
+Thus all ten accessible roots of the extra degree-\(14\) factor and the one
+accessible root of the extra degree-\(20\) factor are genuine
+relative-length changes on these reductions.  The four accessible roots of
+the common degree-\(74\) factor preserve the full endpoint/interior length
+profile and are border-chart failures at this level.  This is an exact
+classification over the stated finite fields, not evidence that every
+geometric root of the three factors has the same type in characteristic
+zero.
+
 ## 5. The actual finite-determination statement to prove
 
 Let
@@ -313,37 +556,48 @@ be the factor parameter ring.  The modular data suggest a recurrence over
 \(\operatorname {Frac}(R_2)\) of the form
 
 \[
- \sum_{j=0}^{27}p_j(m;U,W)\nu_{m+j}=0,\qquad
- \deg_m p_j\leq11,                                      \tag{5.1}
+ G_{14}\nu=
+ \sum_{j=0}^{14}g_j(m;U,W)\nu_{m+j}=0,\qquad
+ \deg_m g_j\leq58,                                      \tag{5.1}
 \]
 
-whose monic forward coefficient is \(L(m)\).  After clearing a primitive
-common denominator \(D(U,W)\), the forward coefficient should have the
-form
+whose sampled forward coefficient contains (4.13) and a
+parameter-dependent degree-50 residual factor.  The order-27,
+\(m\)-degree-11 operator with forward coefficient (1.4) is a sampled left
+multiple of (5.1), not a left multiple of the order-18 operator.  After
+clearing a primitive common parameter denominator \(D_{14}(U,W)\), the
+forward coefficient of (5.1) should have the form
 
 \[
- D(U,W)L(m),                                             \tag{5.2}
+ D_{14}(U,W)
+ \prod_{k\in\{32,34,35,37,38,40,41,43\}}(3m+k)
+ H_{50}(m;U,W),                                         \tag{5.2}
 \]
 
 possibly after removing a common parameter content.
 
 An exact telescoping identity proving (5.1), together with (5.2), would
-give the desired first open stratum:
+give the sharper desired first open stratum after auditing the integer
+steps of \(H_{50}\):
 
-> On \(D\ne0\), 27 consecutive zero moments beginning at any positive
+> On \(D_{14}\ne0\), 14 consecutive zero moments beginning at any positive
 > order propagate to all later orders.
 
 The same statement transfers to the raw \(\mu_m\) after multiplying (5.1)
-by \((3(m+27)+1)!\).  This only introduces explicit nonzero factorial
-ratios; it does not create characteristic-zero singular steps.
+by \((3(m+14)+1)!\).  This only introduces explicit nonzero factorial
+ratios; it does not create characteristic-zero singular steps.  It does
+change the integral recurrence lattice after reduction modulo \(p\).
+Consequently the normalized-period operator and the raw-moment operator
+must be stored separately in any arithmetic continuation.
 
 The exceptional analysis is then finite and algebraic only after
-\(D(U,W)\) is known.  On each component of \(D=0\), one must specialize
-the telescoping matrix, remove its parameter content, and recompute its
-generic rank and forward coefficient.  Merely requiring the leading
-coefficient to be nonzero as a polynomial in \(m\) is insufficient:
-integer-step zeros must also be audited.  Formula (4.3) performs that
-audit only for the common open-stratum factor observed here.
+\(D_{14}(U,W)\) is known.  On each component of \(D_{14}=0\), one must
+specialize the telescoping matrix, remove its parameter content, and
+recompute its generic rank and forward coefficient.  Merely requiring the
+leading coefficient to be nonzero as a polynomial in \(m\) is
+insufficient: integer-step zeros must also be audited.  Formula (4.3)
+performs that audit only for the order-27 common factor; no
+characteristic-zero audit of \(H_{50}\) is available.
 
 ## 6. Interaction with the corrected moment system
 
@@ -354,26 +608,28 @@ The corrected ambient system is
 \]
 
 The order-27 recurrence shape does not make (6.1) an all-order condition
-by itself.  Even on \(D\ne0\), forward propagation currently asks for
-\(\mu_1,\ldots,\mu_{27}\).  The corrected equations omit \(\mu_{13}\) and
-do not include orders \(15,\ldots,27\).
+by itself.  Even on its open parameter locus, forward propagation asks
+for \(\mu_1,\ldots,\mu_{27}\).  The corrected equations omit
+\(\mu_{13}\) and do not include orders \(15,\ldots,27\).
 
-The natural order-18 relation narrows the missing bridge set to
+The sampled order-14 factor narrows the candidate missing bridge set to
 
 \[
- \mu_{13},\mu_{15},\mu_{16},\mu_{17},\mu_{18}.            \tag{6.2}
+ \boxed{\mu_{13}}.                                       \tag{6.2}
 \]
 
-It does not yet remove those five values, and its parameter-dependent
-decic requires an integer-step audit or desingularization.
+Indeed, (6.1) together with \(\mu_{13}=0\) supplies the consecutive block
+\(\mu_1,\ldots,\mu_{14}\).  This reduction is conditional on a universal
+certificate for (5.1), a parameter-locus analysis, and the integer-step
+audit of its degree-50 forward residual.
 
 There are three exact ways the recurrence could still settle (6.1):
 
-1. reduce \(\mu_{13},\mu_{15},\ldots,\mu_{27}\) to zero in the radical of
-   the corrected rank-two ideal on \(D\ne0\);
+1. reduce \(\mu_{13}\) to zero in the radical of the corrected rank-two
+   ideal on \(D_{14}\ne0\);
 2. derive a lower-order recurrence after quotienting by that ideal; or
-3. show directly that (6.1) has only nullcone points on \(D\ne0\), then
-   recurse on \(D=0\).
+3. show directly that (6.1) has only nullcone points on
+   \(D_{14}\ne0\), then recurse on \(D_{14}=0\).
 
 Until one of these calculations is certified, (6.1) remains undecided on
 the rank-two stratum.
@@ -383,28 +639,45 @@ the rank-two stratum.
 The immediate target is no longer an unspecified Picard--Fuchs search.
 It is the following fixed-size reconstruction problem.
 
-1. Construct the relative connection on the basis (4.6) over the generic
-   rank-two factor field, retaining the six border-pivot determinants
-   instead of expanding them.  The degree-\(74+14+20\) pencil
-   factorization in Section 4.4 is the specialization target for this
-   calculation.
-2. Take a cyclic determinant to recover the order-18 operator and the
-   parameter-dependent decic \(H_{U,W}(m)\).
-3. Desingularize the apparent decic steps to the observed order-27,
-   \(m\)-degree-11 operator and normalize its forward coefficient to
-   (1.3).
-4. Store the relative divergence certificates, including the
+1. Starting from the exact one-fiber cyclic basis (4.7d), construct the
+   \(m\)-dependent divergence reduction at that characteristic-zero
+   point.  Retain the two endpoint extensions, because the idempotent
+   period audit proves that ordinary Jacobian projection is insufficient.
+2. Apply the exact Krylov calculation to this discrete connection and
+   recover the order-14, \(m\)-degree-58 target (5.1), together with its
+   polynomial divergence certificates.
+3. Lift the construction over the generic rank-two factor field while
+   retaining the six border-pivot determinants.  The
+   degree-\(74+14+20\) pencil factorization in Section 4.6 is the
+   specialization target.
+4. Recover the order-4 and order-13 left quotients in (4.12), thereby
+   explaining both displayed low-degree recurrences and normalizing the
+   order-27 forward coefficient to (1.4).
+5. Store the relative divergence certificates, including the
    \(t=0,1\) endpoint terms, and verify their polynomial identities
    independently.
-5. Reduce the five bridge moments in (6.2) and the border-pivot
-   determinant against the corrected rank-two moment ideal, then repeat
-   on every rank-drop component.
+6. Reduce the single bridge moment \(\mu_{13}\) and the border-pivot
+   determinant against the corrected rank-two moment ideal.  On the
+   exceptional locus, separate chart changes from the length-\(17\)
+   relative modules and recompute the scalar operator on each component.
+7. After the characteristic-zero operator is certified, primitively
+   normalize both its period and raw-moment forms over the parameter ring.
+   At selected good primes, compute the companion \(p\)-curvature together
+   with the uncancelled step-matrix Smith/singularity ledger.  The latter,
+   not the generic curvature characteristic polynomial, is the input for
+   any prime-power moment phase claim.
 
-The modular probes have now separated the natural relative rank from its
-uniform desingularized form and exposed one exact modular pencil
-denominator.  Connection construction, certificate reconstruction, and
-recursive analysis of the degree-\(108\) pencil fibers remain the
-proof-producing gates.
+The modular probes have now separated the full relative rank 18 from a
+sampled scalar interior factor of order 14 and from its order-18 and
+order-27 left multiples.  They have also exposed one exact modular pencil
+denominator.  The exact one-fiber cyclic algebra is now constructed, and
+it explicitly shows why the divergence connection cannot be skipped.
+Connection construction, certificate reconstruction, and
+recursive analysis of the non-linear degree-\(108\) pencil fibers remain
+the proof-producing gates.  The arithmetic postprocessing in step 7 is
+specified now, but it does not precede those gates; see
+[`TWO_PAIR_SIC_FROBENIUS_CURVATURE_BRIDGE.md`](TWO_PAIR_SIC_FROBENIUS_CURVATURE_BRIDGE.md)
+for the order-one calibration.
 
 ## 8. Reproduction
 
@@ -431,6 +704,57 @@ The relative-Jacobian and natural-order calculation is replayed by
 
 It writes
 `artifacts/generated-results/two_pair_sic_bidegree33_rank_two_relative_jacobian.json`.
+The exact characteristic-zero interior split is replayed by
+
+```bash
+.venv/bin/python \
+  scripts/verify_two_pair_sic_bidegree33_rank_two_interior_cyclic_split.py
+```
+
+At the first integral rank-two point it certifies the pairwise-comaximal
+critical-algebra decomposition \(18=14+2+2\), eliminates \(P=Q/u^3\) on
+all three summands, and proves that
+\(1,P,\ldots,P^{13}\) is a basis of the interior algebra.  It also
+proves that the saturated toric logarithmic ideal
+\(((uQ_u-3Q,tQ_t):(ut)^\infty)\) equals the interior ideal, giving the
+exact logarithmic Picard--Fuchs target rank \(14\).  It then
+computes the first nineteen exact moments and verifies that both endpoint
+idempotent pairs have nonzero period values.  Thus the ordinary Jacobian
+split is a connection seed, not a substitute for the \(m\)-dependent
+divergence calculation.  The artifact is
+`artifacts/generated-results/two_pair_sic_bidegree33_rank_two_interior_cyclic_split.json`.
+
+The exact rational \(D\)-module seed is replayed by
+
+```bash
+.venv/bin/python \
+  scripts/research_two_pair_sic_bidegree33_rank_two_dmodule_picard_fuchs.py \
+  --annihilator-only
+```
+
+This requires Macaulay2, its `BernsteinSato` package, and Normaliz.  It
+certifies the 34-generator rank-one holonomic annihilator of \(H^{-1}\)
+and the 76-generator rank-one holonomic annihilator of \(u^2/H\), then
+writes
+`artifacts/generated-results/two_pair_sic_bidegree33_rank_two_dmodule_picard_fuchs_research.json`.
+Omitting `--annihilator-only` requests the sequential \(t,u\)
+pushforward.  That long computation is not part of the retained
+certificate until it finishes and its endpoint terms are audited.
+
+The exact Ore-factor comparison is replayed by
+
+```bash
+.venv/bin/python \
+  scripts/verify_two_pair_sic_bidegree33_rank_two_ore_gcd.py
+```
+
+It recomputes both recurrence operators and the 501 moments at all six
+samples, performs exact left Euclidean division over
+\(\mathbb F_p(m)[S;\sigma]\), and writes
+`artifacts/generated-results/two_pair_sic_bidegree33_rank_two_ore_gcd.json`.
+It verifies the order-14 common right factor directly on 487 moment rows
+per sample; it does not certify a universal operator.
+
 The exact modular pencil border basis is replayed by
 
 ```bash
@@ -442,8 +766,10 @@ It writes
 `artifacts/generated-results/two_pair_sic_bidegree33_rank_two_pencil_border.json`.
 The three finite rational-function-field calculations certify the stable
 denominator profile \(74,\ 74+14,\ 74+20\) and the squarefree
-degree-\(108\) chart polynomial.  They do not reconstruct a universal
-parameter determinant or classify its exceptional fibers.
+degree-\(108\) chart polynomial.  They also classify all fifteen
+base-field roots by coefficient rank, saturation exponent, total relative
+length, and endpoint/interior profile.  They do not reconstruct a universal
+parameter determinant or classify the non-linear exceptional closed points.
 
 The generic and scaling pencil experiments are implemented in
 `scripts/explore_two_pair_sic_bidegree33_rank_two_recurrence_line.py`;

@@ -55,6 +55,12 @@ This directory contains the stable proof chain:
   stably atomic.  The note also separates the canonical collision operation
   on `BS_N` from the obstructed Tschirnhaus descent of the Keller lift and
   from essential-dimension questions.
+- [Keller/Tschirnhaus bridge card in ranks five through seven](KELLER_TSCHIRNHAUS_DESCENT_567.md):
+  links the canonical all-rank projective and stable-boundary theorems,
+  proposes Keller target dimension and Keller coordinate degree as research
+  invariants, and pins one exact nonprojective Tschirnhaus experiment on a
+  common split fiber.  The canonical proof is maintained in the stable-moduli
+  and universal-relative-map notes, not duplicated on the card.
 - [Rank-three collision-framed descent](RANK_THREE_COLLISION_DESCENT.md):
   identifies the cubic off-diagonal collision cover with the full `S_3`
   frame torsor, gives the exact projective and quadratic-Tschirnhaus
@@ -117,6 +123,20 @@ This directory contains the stable proof chain:
   characteristic zero; torsion planes give the exact congruence
   counterexamples, while one transverse marked line reads the exponent as
   a pole order at `P=0`.
+- [Finite marked-plane nonreconstruction](FINITE_MARKED_PLANE_NONRECONSTRUCTION.md):
+  outside the monomial power-shift locus, polynomial multipliers interpolate
+  the value one on any finite set of target planes.  The resulting maps
+  agree on every sampled marked inverse cover but have growing numbers of
+  degree-drop boundary components, proving that no universal finite number
+  of marked fibers recovers an unrestricted stable class in degrees at
+  least four.
+- [Polynomial-gauge decorated Torelli](POLYNOMIAL_GAUGE_DECORATED_TORELLI.md):
+  the intrinsic boundary recovers the base character and the unmarked
+  ramified-stratum Fitting divisor recovers the root coordinate, seed, and
+  polynomial multiplier up to exactly the ordinary two-scaling action.
+  More generally, the full finite normalization morphism plus its
+  reconstruction boundary is a complete stable invariant by restriction to
+  its distinguished affine open.
 - [Universal cubic gauge multiplicity](UNIVERSAL_CUBIC_GAUGE_MULTIPLICITY.md):
   fiber-invisible cubic lifts keep the selected inverse quotient fixed while
   their canonical boundary-component count grows with the lift exponent.

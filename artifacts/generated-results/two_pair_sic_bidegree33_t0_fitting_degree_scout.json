@@ -1,0 +1,556 @@
+{
+  "bases": 2,
+  "coefficient_definitions": {
+    "c0": "det(M_mu6)",
+    "c1": "coefficient of z in det(M_mu6+z*M_mu7)"
+  },
+  "directional_degree_profiles": {
+    "s1": {
+      "c0_constant": [
+        145,
+        59
+      ],
+      "c0_s3": [
+        145,
+        59
+      ],
+      "c1_constant": [
+        155,
+        66
+      ],
+      "c1_s3": [
+        155,
+        66
+      ]
+    },
+    "s2": {
+      "c0_constant": [
+        94,
+        50
+      ],
+      "c0_s3": [
+        92,
+        50
+      ],
+      "c1_constant": [
+        99,
+        54
+      ],
+      "c1_s3": [
+        97,
+        54
+      ]
+    },
+    "t1": {
+      "c0_constant": [
+        124,
+        47
+      ],
+      "c0_s3": [
+        123,
+        47
+      ],
+      "c1_constant": [
+        129,
+        50
+      ],
+      "c1_s3": [
+        128,
+        50
+      ]
+    },
+    "t2": {
+      "c0_constant": [
+        83,
+        41
+      ],
+      "c0_s3": [
+        81,
+        41
+      ],
+      "c1_constant": [
+        85,
+        42
+      ],
+      "c1_s3": [
+        84,
+        42
+      ]
+    },
+    "u": {
+      "c0_constant": [
+        177,
+        91
+      ],
+      "c0_s3": [
+        176,
+        91
+      ],
+      "c1_constant": [
+        185,
+        96
+      ],
+      "c1_s3": [
+        184,
+        96
+      ]
+    }
+  },
+  "format": "two-pair-sic-bidegree33-t0-fitting-degree-scout-v1",
+  "held_out_samples_per_line": 50,
+  "interpretation_limit": "Matching directional degrees and denominator factors give stable interpolation bounds. They do not reconstruct the five-variable numerators or prove a common-root exclusion.",
+  "line_reconstructions": 15,
+  "paired_samples_per_line": 450,
+  "primes": [
+    1019,
+    2039
+  ],
+  "records": [
+    {
+      "artifact": "artifacts/generated-results/two_pair_sic_bidegree33_t0_fitting_s1_mod1019.json",
+      "base": 1,
+      "candidate_interval": [
+        0,
+        931
+      ],
+      "degree_profile": {
+        "c0_constant": [
+          145,
+          59
+        ],
+        "c0_s3": [
+          145,
+          59
+        ],
+        "c1_constant": [
+          155,
+          66
+        ],
+        "c1_s3": [
+          155,
+          66
+        ]
+      },
+      "prime": 1019,
+      "sha256": "66a01c79aa044231fdf6bcff50b729494a62442439638980572f47be7e037447",
+      "variable": "s1"
+    },
+    {
+      "artifact": "artifacts/generated-results/two_pair_sic_bidegree33_t0_fitting_s2_mod1019.json",
+      "base": 1,
+      "candidate_interval": [
+        0,
+        888
+      ],
+      "degree_profile": {
+        "c0_constant": [
+          94,
+          50
+        ],
+        "c0_s3": [
+          92,
+          50
+        ],
+        "c1_constant": [
+          99,
+          54
+        ],
+        "c1_s3": [
+          97,
+          54
+        ]
+      },
+      "prime": 1019,
+      "sha256": "a3cbe6d671c912e46495c49283fac0be466787d13b3b751078e18d55382d1cc6",
+      "variable": "s2"
+    },
+    {
+      "artifact": "artifacts/generated-results/two_pair_sic_bidegree33_t0_fitting_t1_mod1019.json",
+      "base": 1,
+      "candidate_interval": [
+        0,
+        932
+      ],
+      "degree_profile": {
+        "c0_constant": [
+          124,
+          47
+        ],
+        "c0_s3": [
+          123,
+          47
+        ],
+        "c1_constant": [
+          129,
+          50
+        ],
+        "c1_s3": [
+          128,
+          50
+        ]
+      },
+      "prime": 1019,
+      "sha256": "9a8a21e4e9982cacac6eb9251001a58c53febfa01e27cf4899f1cceb2bb41aa4",
+      "variable": "t1"
+    },
+    {
+      "artifact": "artifacts/generated-results/two_pair_sic_bidegree33_t0_fitting_t2_mod1019.json",
+      "base": 1,
+      "candidate_interval": [
+        0,
+        906
+      ],
+      "degree_profile": {
+        "c0_constant": [
+          83,
+          41
+        ],
+        "c0_s3": [
+          81,
+          41
+        ],
+        "c1_constant": [
+          85,
+          42
+        ],
+        "c1_s3": [
+          84,
+          42
+        ]
+      },
+      "prime": 1019,
+      "sha256": "9aa0f63127a90cb46f4ec2c62a13a71ca73464b39e83c767066b537e620a3625",
+      "variable": "t2"
+    },
+    {
+      "artifact": "artifacts/generated-results/two_pair_sic_bidegree33_t0_fitting_u_mod1019.json",
+      "base": 1,
+      "candidate_interval": [
+        0,
+        919
+      ],
+      "degree_profile": {
+        "c0_constant": [
+          177,
+          91
+        ],
+        "c0_s3": [
+          176,
+          91
+        ],
+        "c1_constant": [
+          185,
+          96
+        ],
+        "c1_s3": [
+          184,
+          96
+        ]
+      },
+      "prime": 1019,
+      "sha256": "142aade00a1d4a393bdfb357575d9d9feb268fd63206c6085f798145b1162847",
+      "variable": "u"
+    },
+    {
+      "artifact": "artifacts/generated-results/two_pair_sic_bidegree33_t0_fitting_s1_mod2039.json",
+      "base": 1,
+      "candidate_interval": [
+        0,
+        886
+      ],
+      "degree_profile": {
+        "c0_constant": [
+          145,
+          59
+        ],
+        "c0_s3": [
+          145,
+          59
+        ],
+        "c1_constant": [
+          155,
+          66
+        ],
+        "c1_s3": [
+          155,
+          66
+        ]
+      },
+      "prime": 2039,
+      "sha256": "a9b737a1c6a0ff2e76ee15a61b59aa59d6caf3f5ec08d3bfff46711d29321740",
+      "variable": "s1"
+    },
+    {
+      "artifact": "artifacts/generated-results/two_pair_sic_bidegree33_t0_fitting_s2_mod2039.json",
+      "base": 1,
+      "candidate_interval": [
+        0,
+        911
+      ],
+      "degree_profile": {
+        "c0_constant": [
+          94,
+          50
+        ],
+        "c0_s3": [
+          92,
+          50
+        ],
+        "c1_constant": [
+          99,
+          54
+        ],
+        "c1_s3": [
+          97,
+          54
+        ]
+      },
+      "prime": 2039,
+      "sha256": "588cf189549e92d0222dee7c3c810f8218587673ebd01d2314f496a310784e9e",
+      "variable": "s2"
+    },
+    {
+      "artifact": "artifacts/generated-results/two_pair_sic_bidegree33_t0_fitting_t1_mod2039.json",
+      "base": 1,
+      "candidate_interval": [
+        0,
+        850
+      ],
+      "degree_profile": {
+        "c0_constant": [
+          124,
+          47
+        ],
+        "c0_s3": [
+          123,
+          47
+        ],
+        "c1_constant": [
+          129,
+          50
+        ],
+        "c1_s3": [
+          128,
+          50
+        ]
+      },
+      "prime": 2039,
+      "sha256": "ca6121785c825df63e169b68f9af41c3ed4aa45d77133fc50cf5dfe0a513fe90",
+      "variable": "t1"
+    },
+    {
+      "artifact": "artifacts/generated-results/two_pair_sic_bidegree33_t0_fitting_t2_mod2039.json",
+      "base": 1,
+      "candidate_interval": [
+        0,
+        903
+      ],
+      "degree_profile": {
+        "c0_constant": [
+          83,
+          41
+        ],
+        "c0_s3": [
+          81,
+          41
+        ],
+        "c1_constant": [
+          85,
+          42
+        ],
+        "c1_s3": [
+          84,
+          42
+        ]
+      },
+      "prime": 2039,
+      "sha256": "f4847676ba9bd479ad83e762777ccc9c908762a3bd33df72310504dd46db11a9",
+      "variable": "t2"
+    },
+    {
+      "artifact": "artifacts/generated-results/two_pair_sic_bidegree33_t0_fitting_u_mod2039.json",
+      "base": 1,
+      "candidate_interval": [
+        0,
+        902
+      ],
+      "degree_profile": {
+        "c0_constant": [
+          177,
+          91
+        ],
+        "c0_s3": [
+          176,
+          91
+        ],
+        "c1_constant": [
+          185,
+          96
+        ],
+        "c1_s3": [
+          184,
+          96
+        ]
+      },
+      "prime": 2039,
+      "sha256": "c3d05022c0d788faf017f421494a2ba1a5125e752668d4eea512e07441344596",
+      "variable": "u"
+    },
+    {
+      "artifact": "artifacts/generated-results/two_pair_sic_bidegree33_t0_fitting_s1_base2_mod1019.json",
+      "base": 2,
+      "candidate_interval": [
+        0,
+        916
+      ],
+      "degree_profile": {
+        "c0_constant": [
+          145,
+          59
+        ],
+        "c0_s3": [
+          145,
+          59
+        ],
+        "c1_constant": [
+          155,
+          66
+        ],
+        "c1_s3": [
+          155,
+          66
+        ]
+      },
+      "prime": 1019,
+      "sha256": "ce209b6adc3d6dc9b25674716654c9d97b5b83151ad56cbf39248c7be1e21e94",
+      "variable": "s1"
+    },
+    {
+      "artifact": "artifacts/generated-results/two_pair_sic_bidegree33_t0_fitting_s2_base2_mod1019.json",
+      "base": 2,
+      "candidate_interval": [
+        0,
+        904
+      ],
+      "degree_profile": {
+        "c0_constant": [
+          94,
+          50
+        ],
+        "c0_s3": [
+          92,
+          50
+        ],
+        "c1_constant": [
+          99,
+          54
+        ],
+        "c1_s3": [
+          97,
+          54
+        ]
+      },
+      "prime": 1019,
+      "sha256": "7b53b384b9349b22331cdf960f15cf70644d8011b2bb7aa5f706ea1370ba0fef",
+      "variable": "s2"
+    },
+    {
+      "artifact": "artifacts/generated-results/two_pair_sic_bidegree33_t0_fitting_t1_base2_mod1019.json",
+      "base": 2,
+      "candidate_interval": [
+        0,
+        909
+      ],
+      "degree_profile": {
+        "c0_constant": [
+          124,
+          47
+        ],
+        "c0_s3": [
+          123,
+          47
+        ],
+        "c1_constant": [
+          129,
+          50
+        ],
+        "c1_s3": [
+          128,
+          50
+        ]
+      },
+      "prime": 1019,
+      "sha256": "2430f43bf2e7d9408a938c4de5df82a525db34aea00a8991e82d9360dba07dd6",
+      "variable": "t1"
+    },
+    {
+      "artifact": "artifacts/generated-results/two_pair_sic_bidegree33_t0_fitting_t2_base2_mod1019.json",
+      "base": 2,
+      "candidate_interval": [
+        0,
+        936
+      ],
+      "degree_profile": {
+        "c0_constant": [
+          83,
+          41
+        ],
+        "c0_s3": [
+          81,
+          41
+        ],
+        "c1_constant": [
+          85,
+          42
+        ],
+        "c1_s3": [
+          84,
+          42
+        ]
+      },
+      "prime": 1019,
+      "sha256": "857552b835aab0964720cce99b2bbb3ccf060a7f58f80eaef7f6f8864cbcc432",
+      "variable": "t2"
+    },
+    {
+      "artifact": "artifacts/generated-results/two_pair_sic_bidegree33_t0_fitting_u_base2_mod1019.json",
+      "base": 2,
+      "candidate_interval": [
+        0,
+        977
+      ],
+      "degree_profile": {
+        "c0_constant": [
+          177,
+          91
+        ],
+        "c0_s3": [
+          176,
+          91
+        ],
+        "c1_constant": [
+          185,
+          96
+        ],
+        "c1_s3": [
+          184,
+          96
+        ]
+      },
+      "prime": 1019,
+      "sha256": "791e8ec804ffce1184b8499a42185d16bf6a1c074afa5974d83469ee6e556af7",
+      "variable": "u"
+    }
+  ],
+  "residue_basis": [
+    "1",
+    "s3"
+  ],
+  "status": "exact bounded modular directional reconstructions; not a multivariate Fitting certificate",
+  "training_samples_per_line": 400,
+  "universal_denominator_model_observed": {
+    "a2": "coefficient of s3^2 in mu_3",
+    "c0": "a2^41*Q^3*J^3",
+    "c1": "a2^42*Q^4*J^4"
+  }
+}

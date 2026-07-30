@@ -106,10 +106,26 @@ For \(r=3\), the first two leading equations leave eight top-form normal
 forms: four triple-root, three double-root, and one squarefree.  The
 [binary degree-five frontier theorem](BINARY_DEGREE_FIVE_GVC_FRONTIER.md)
 closes all eight correction systems.  It also closes the \(r=4\)
-squarefree-quartic row uniformly in its cross-ratio.  Thus the exact
-remaining degree-five frontier consists of the genuinely nonhomogeneous
-\(r=4\) strata with non-squarefree leading quartic symbol and arbitrary
-higher jets.
+squarefree-quartic row uniformly in its cross-ratio.  The
+[quadruple-root quartic theorem](BINARY_QUARTIC_QUADRUPLE_ROOT_GVC.md)
+now closes the partition \((4)\), including arbitrary lower symbol terms
+and arbitrary higher operator jets.  The
+[triple-plus-simple theorem](BINARY_QUARTIC_TRIPLE_SIMPLE_ROOT_GVC.md)
+and [double-root theorem](BINARY_QUARTIC_DOUBLE_ROOT_GVC.md)
+close the other three quartic root partitions.  Thus every binary
+constant-coefficient operator satisfies GVC through polynomial degree
+five; the next nonhomogeneous degree frontier begins at six.  The
+[complete quintic-leading sextic theorem](BINARY_QUINTIC_ALL_ROOT_PARTITIONS_GVC.md)
+now closes the entire \((r,\deg P)=(5,6)\) row.  A Hall-matching argument
+classifies the leading locus for all seven quintic root partitions, and
+local exact calculations close root multiplicities one through five with
+arbitrary higher jets.  The longest defect chain, on the quintuple-root
+cell, reaches operator order ten and dies at pure moment six.  The
+quartic-leading row is closed by
+[GVC2D6R4](BINARY_QUARTIC_ALL_ROOT_PARTITIONS_GVC.md), and the
+[complete cubic-leading sextic theorem](BINARY_CUBIC_ALL_ROOT_PARTITIONS_GVC.md)
+closes \(r=3\) for all three cubic root partitions.  Thus only \(r=2\)
+remains in degree six.
 Although a squarefree tangent cone formally factors into smooth branches,
 this does not transport powers: a multiplicative conjugate of a
 derivation is a derivation, so a constant-coefficient umbral conjugate

@@ -363,6 +363,188 @@ of the natural one-\(q_2\) degree sequence with total degree increase at
 most fifteen, the least compatible correction has increase two and
 replaces the final moment pair \(31,32\) by \(32,33\).
 
+### 5.1 The cubic corrected-moment/Casimir comparison
+
+For \(d=3\), the quadratic Casimir is the quadratic-anchor
+discriminant from the bidegree-\((3,3)\) programme:
+\[
+ q_2=80\Delta_2=80(r_1^2-r_0r_2)
+\tag{5.2}
+\]
+in the divided-power conventions used there.  Thus adjoining \(q_2\)
+does not merely add an arbitrary missing invariant: it replaces the
+global quadratic-anchor problem by the two strata
+\[
+ F_2=L^2\ne0,\qquad F_2=0.
+\tag{5.3}
+\]
+It eliminates every possible residual whose generic point has non-null
+quadratic component.  Whether the semistable component forced by the
+failed degrees \(1,\ldots,13\) survives inside \(q_2=0\) remains open.
+
+The exact comparison is:
+\[
+\begin{array}{c|c|c|c}
+\text{system}&\sum\deg&\text{Hilbert numerator sum}&
+\text{Jacobian rank}\\ \hline
+\mu_1,\ldots,\mu_{12},\mu_{14}
+ &92&9\,226\,602&13\\
+\mu_1,\ldots,\mu_{12},q_2
+ &80&1\,318\,086&13\\
+\{\mu_m:m\in\{1,2,3,4,5,6,7,8,12,13,14,15\}\},q_2
+ &92&3\,634\,722&13\\
+\{\mu_m:m\in\{1,2,3,4,6,8,10,12,13,14,15\}\},q_2,q_4
+ &92&2\,076\,984&13.
+\end{array}
+\tag{5.4}
+\]
+Every row has a nonnegative candidate numerator with no nonzero
+coefficient after its predicted top through degree \(120\), and every
+rank is certified modulo \(32003\), hence in characteristic zero.  The
+last two rows compare systems at the same total invariant degree as the
+corrected moment-only row.  Among moment orders at most \(24\), the
+search found respectively \(24\) one-\(q_2\) and \(65\)
+\((q_2,q_4)\) Hilbert-compatible full-rank systems of total degree \(92\);
+the displayed rows minimize the largest moment order, then the degree
+product, then the moment-order tuple.  These remain necessary Hilbert
+tests, not parameter theorems.
+
+There is also an exact negative answer to the simplest interpretation of
+``\(\mu_{14}\) is an indirect Casimir detector.''  In polynomial weight
+\(14\), all \(293\) monomials in
+\(\mathbb Q[\mu_1,\ldots,\mu_{12},q_2]\) are independent modulo
+\(32003\), and adjoining \(\mu_{14}\) raises the evaluation rank from
+\(293\) to \(294\).  With both missing quadratics, all \(608\) monomials
+in
+\(\mathbb Q[\mu_1,\ldots,\mu_{12},q_2,q_4]\) are independent and
+\(\mu_{14}\) raises the rank to \(609\).  Equivalently,
+\[
+ \mu_{14}\not\equiv P(q_2,q_4)
+ \pmod{(\mu_1,\ldots,\mu_{12})}
+\tag{5.5}
+\]
+for every homogeneous polynomial \(P\) of weight \(14\) in the generated
+subalgebra; the \(q_2\)-only statement follows by restriction.  A
+nonzero determinant modulo one prime is an exact characteristic-zero
+nonrelation certificate.  Equation (5.5) does **not** rule out equality
+of the zero divisors of \(\mu_{14}\) and a Casimir expression in the full
+invariant quotient, where invariants outside this generated subalgebra
+may enter.
+
+If the second row of (5.4) is a homogeneous system of parameters, then
+Cohen--Macaulayness makes its thirteen equations a regular sequence in
+\(R_3\).  Its zero fiber in the full invariant quotient is then a
+zero-dimensional complete intersection of length \(1\,318\,086\), and
+its inverse image in \(V_3\) is exactly the nullcone.  Proving this
+conditional premise is now precisely the common-root synchronization
+problem on (5.3), not the old non-null rank-six boundary continuation.
+
+### 5.2 Generic synchronization on the null-quadratic chart
+
+The first synchronization chart can now be reduced exactly.  Normalize
+\(F_2=X^2\) and write the synchronized nullcone locus as
+\[
+ J_{\rm sync}=(s_3,s_4,s_5,s_6,t_2,t_3,t_4)
+\tag{5.6}
+\]
+over the allowed base
+\(\mathbb Q[s_0,s_1,s_2,t_0,t_1]\).  Exact biform differentiation shows
+that only \(\mu_2,\mu_3,\mu_4\) have nonzero
+\(J_{\rm sync}/J_{\rm sync}^2\) symbols.  In the ordered normal
+coordinates
+\[
+ (s_3,s_4,s_5,s_6,t_2,t_3,t_4)
+\]
+their matrix is
+\[
+\begin{pmatrix}
+0&-1080s_2&432s_1&-72s_0&0&-1344t_1&336t_0\\
+0&0&311040t_1(s_2+2)&-51840(2s_1t_1-s_2t_0+3t_0)
+ &0&0&51840(3s_2^2-3s_2+4t_1^2+7)\\
+0&0&0&414720P&0&0&0
+\end{pmatrix},
+\tag{5.7}
+\]
+where
+\[
+ P=27s_2^3-468s_2^2-156s_2t_1^2
+      +429s_2-572t_1^2-429.
+\tag{5.8}
+\]
+The five nonzero \(3\times3\) minors have exact common factor \(P\).
+Thus the first-order problem has generic rank three, not seven: it gives
+three pivots, while the remaining four normal directions necessarily
+begin at quadratic or cubic order.  Modulo \(32003\), the ideal obtained
+after dividing the five minors by \(P\) has dimension three and
+multiplicity four in the five-dimensional allowed base.  This finite-field
+calculation identifies a codimension-two residual rank-drop locus in
+addition to the exact cubic divisor \(P=0\).
+
+The quotient-minor support admits the exact set-theoretic decomposition
+\[
+\begin{split}
+ C_A&=V(t_1,\,3s_2^2-3s_2+7),\\
+ C_B&=V(s_2+2,\,4t_1^2+25),\\
+ C_0&=V(s_1,s_2,t_1).
+\end{split}
+\tag{5.9}
+\]
+Here \(C_A,C_B,C_0\) have dimensions \(3,3,2\), respectively, in the
+five-dimensional allowed base.  They are disjoint from \(P=0\):
+modulo \(C_A\), \(P=-75(s_2-8)\) and the quadratic takes value \(175\)
+at \(s_2=8\); modulo \(C_B\), \(P=-1750\); and on \(C_0\),
+\(P=-429\).  Thus there is no mixed \(P\)-quotient-minor intersection
+to continue.
+
+At the exact allowed base point
+\[
+ (s_0,s_1,s_2,t_0,t_1)=(20,27,36,47,60),
+\tag{5.10}
+\]
+the complete seven-normal restrictions of
+\(\mu_2,\ldots,\mu_{12}\) have, over \(\mathbb F_{32003}\), a
+zero-dimensional quotient of length \(195\) with Groebner basis size
+\(181\).  The same standard basis contains
+\[
+ s_3^{13},\ s_4^7,\ s_5^5,\ s_6^4,\quad
+ t_2^{13},\ t_3^7,\ t_4^5.
+\tag{5.11}
+\]
+The power memberships are finite-field certificates.  More importantly,
+zero-dimensionality at one good prime implies zero-dimensionality of the
+characteristic-zero normal fiber at (5.10).
+
+The same complete normal-fiber computation can be made at good reductions
+of exact algebraic points on every exceptional stratum:
+\[
+\begin{array}{c|c|c|c}
+\text{stratum}&\text{good prime}&\dim&\text{quotient length}\\ \hline
+P=0&32003&0&195\\
+C_A&30013&0&195\\
+C_B&30013&0&195\\
+C_0&32003&0&197.
+\end{array}
+\tag{5.12}
+\]
+For \(P=0\), take \(t_1=0\) and let \(s_2\) be a root of
+\(9s_2^3-156s_2^2+143s_2-143\).  For \(C_A\) and \(C_B\), use the
+quadratic fields defined by the equations in (5.9).  The selected roots
+are simple at the recorded primes, so the modular zero-dimensionality
+lifts to the displayed characteristic-zero algebraic points.  Hence:
+
+> **Stratified generic null-quadratic synchronization.**  The common
+> zero fiber of \(\mu_2,\ldots,\mu_{12}\) is transversely isolated on
+> a nonempty characteristic-zero open subset of the generic rank-three
+> locus and on a nonempty open subset of each irreducible linear-rank
+> exceptional stratum \(P=0,C_A,C_B,C_0\).
+
+This remains a stratified open theorem, not global synchronization:
+proper closed subsets inside the four exceptional strata and the separate
+chart \(F_2=0\) can still carry a transverse component.  Tests with
+moments only through orders nine and ten timed out and give no smaller
+cutoff; the proved normal-fiber statement uses the natural prefix through
+order twelve.
+
 ## 6. The known moment-zero witnesses
 
 Let \(F_4\) be the exact bidegree-\((4,4)\) all-moment-zero witness and

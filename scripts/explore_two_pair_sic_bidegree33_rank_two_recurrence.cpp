@@ -13,6 +13,7 @@
 #include <cstdlib>
 #include <iostream>
 #include <stdexcept>
+#include <string>
 #include <utility>
 #include <vector>
 
@@ -258,6 +259,30 @@ static bool verify_recurrence(
 }
 
 int main(int argc, char** argv) {
+    if (argc >= 2 && std::string(argv[1]) == "--moments") {
+        if (argc != 4 && argc != 5) {
+            std::cerr
+                << "usage: recurrence-probe --moments PRIME MAXIMUM "
+                << "[POINT]\n";
+            return 2;
+        }
+        prime = std::atoll(argv[2]);
+        const int maximum = std::atoi(argv[3]);
+        const int point = argc == 5 ? std::atoi(argv[4]) : 0;
+        if (3 * maximum + 1 >= prime) {
+            throw std::runtime_error(
+                "prime must exceed 3*maximum+1"
+            );
+        }
+        const std::vector<i64> sequence = moments(maximum, point);
+        std::cout
+            << "MOMENTS maximum=" << maximum
+            << " point=" << point << "\n";
+        for (int index = 0; index <= maximum; ++index) {
+            std::cout << index << " " << sequence[index] << "\n";
+        }
+        return 0;
+    }
     if (argc != 5 && argc != 6) {
         std::cerr
             << "usage: recurrence-probe PRIME MAXIMUM ORDER DEGREE [POINT]\n";

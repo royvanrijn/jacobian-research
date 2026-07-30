@@ -964,6 +964,69 @@ overlap these minors cut out a smooth codimension-`N-3` locus.  Therefore
 descent must still lift `N-3` independent nonprojective Tschirnhaus
 directions away from this locus.
 
+### 4.1 Quantitative seed-descent defect
+
+The projective residual count and the stable Keller-boundary count are
+different invariants.  On the compiler slice `a_3=1`, the `N-3` unchanged
+seed coordinates are
+
+\[
+ (u_4,\ldots,u_N)\in\mathbb G_m^{N-3}.
+\]
+
+The residual source--target scaling from the
+[quadratic-gauge stable-moduli theorem](QUADRATIC_GAUGE_STABLE_MODULI.md)
+acts by
+
+\[
+ u_j\longmapsto\alpha^{j+1}u_j.                       \tag{4.8}
+\]
+
+After this one redundancy is removed, the intrinsic reconstruction boundary
+retains the saturated quotient coordinates
+
+\[
+\boxed{
+ \Phi_N=
+ \left(
+ \frac{u_5^5}{u_4^6},
+ \frac{u_4u_6}{u_5^2},
+ \frac{u_5u_7}{u_6^2},
+ \ldots,
+ \frac{u_{N-2}u_N}{u_{N-1}^2}
+ \right)\in\mathbb G_m^{N-4}.
+}                                                       \tag{4.9}
+\]
+
+These characters generate the invariant Laurent ring.  By stable
+normalization and Fitting functoriality, two compiler points with different
+values of `Phi_N` cannot define stably polynomially left--right equivalent
+quadratic-gauge maps.  Therefore:
+
+\[
+\boxed{
+\begin{array}{l}
+\text{the framed root embedding has }N-3\text{ independent projective
+residuals,}\\
+\text{while the quadratic-gauge Keller lift has }N-4\text{ independent
+stable boundary moduli.}
+\end{array}}                                            \tag{4.10}
+\]
+
+In particular, after the single residual scaling, every remaining seed
+direction is visible on the intrinsic boundary.  This is the quantitative
+form of the obstruction in (4.6).  It still concerns this atlas: it does not
+exclude another Keller lift whose presentation cocycle uses different
+boundary data.
+
+The exact ranks-five-through-seven regression takes the split root
+coordinate `r=(1,...,N)` and the primitive Tschirnhaus coordinate
+`q(r)=r+r^2`.  The quotient algebras are explicitly isomorphic, but the
+applicable coordinates of `Phi_N` all change.  Thus the fibre correspondence
+descends while the surrounding stable Keller incidence does not.  The
+[bridge card](KELLER_TSCHIRNHAUS_DESCENT_567.md) records the arithmetic
+complexity comparison, and its checker pins the exact rational values.
+
 ## 5. Braid and symmetric monodromy
 
 Over `C`, the space of monic squarefree degree-`N` polynomials is the
@@ -1097,6 +1160,14 @@ Equations (3.11) and (6.1) answer different minimization problems:
   is obstructed by presentation-dependent stable Keller invariants for
   `N>=5`.
 
+The
+[ranks-five-through-seven bridge card](KELLER_TSCHIRNHAUS_DESCENT_567.md)
+uses this distinction to propose two further minimization problems: Keller
+target dimension and fixed-ambient Keller coordinate degree.  At present
+they are organizing definitions, not computed invariants.  The promoted map
+only gives the upper bound `ktdim_k(S_N)<=N`, while (6.1) gives the lower
+bound `ed_k(S_N)<=ktdim_k(S_N)`.
+
 ## 7. What is proved and what remains
 
 Proved here:
@@ -1113,7 +1184,8 @@ Proved here:
    monodromy, and the
    essential-dimension lower bound for versal parameter schemes;
 7. generic failure, for `N>=5`, of descent of the quadratic-gauge atlas
-   through full presentation equivalence in stable Keller moduli;
+   through full presentation equivalence in stable Keller moduli, together
+   with the quantitative `N-4`-coordinate boundary fingerprint (4.9);
 8. the full `S_N` frame `Conf_(N-1)` and the intrinsic determinantal
    projective locus of smooth codimension `N-3`, including its polynomial
    equations in the universal Keller chart.

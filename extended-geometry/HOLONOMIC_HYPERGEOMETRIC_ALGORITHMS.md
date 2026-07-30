@@ -181,8 +181,69 @@ For repository use, a recurrence certificate should record:
 - the exact summand and its support convention;
 - the recurrence and all telescoping certificates;
 - the exceptional integer zeros of the leading coefficient;
+- a primitive integral normalization, including any factorial or Borel
+  normalization used to pass between the period and the raw moment;
+- the numerator/denominator or companion-matrix singularity ledger needed
+  for reduction modulo \(p^a\);
 - the initial or bridge values used for propagation; and
 - an independent exact checker of (4.1), not only a long numerical replay.
+
+### 4.1 Arithmetic postprocessing after telescoping
+
+Once a recurrence is certified, reduction modulo \(p\) is a second
+algorithmic stage, not a formal afterthought.  The recurrence must first be
+made primitive over an integral coefficient ring.  Scalar multiplication
+by factorials can be harmless in characteristic zero while changing every
+positive-characteristic singular step.
+
+For an order-one recurrence
+\[
+ A(m)S(m+1)=B(m)S(m),\qquad
+ A,B\in\mathbb Z[m],\quad \gcd(A,B)=1,                  \tag{4.2}
+\]
+factor \(A\) and \(B\) before reduction.  Then
+\[
+ v_p(S(m+1))-v_p(S(m))
+ =v_p(B(m))-v_p(A(m))                                  \tag{4.3}
+\]
+is an exact local transition rule whenever \(S(m)\ne0\).  It turns the
+recurrence into a base-\(p\) valuation automaton without expanding the
+moments themselves.
+
+The recurrence \(p\)-curvature is the \(p\)-step shift multiplier
+\[
+ \Psi_p(m)=\prod_{i=0}^{p-1}\frac{B(m+i)}{A(m+i)}.       \tag{4.4}
+\]
+It is useful for checking the reduced difference module and its true
+singularity class.  It is not, by itself, a valuation classifier: shift
+norms can cancel numerator zeros against denominator poles that occur at
+different steps of the same residue orbit.
+
+For an order-\(\gamma\) recurrence, put it in companion form
+\[
+ Y(m+1)=C(m)Y(m).                                      \tag{4.5}
+\]
+The corresponding curvature is
+\[
+ C(m+p-1)\cdots C(m),                                  \tag{4.6}
+\]
+but prime-power propagation must retain more data: an integral companion
+lattice, the Smith valuations of the individual step matrices, and bridge
+vectors across singular steps.  Taking the generic characteristic
+polynomial of (4.6) first can erase precisely this information.
+
+The SIC2C4 radial family is the calibration.  Its good-prime recurrence
+curvature depends only on the degree \(d\), while two degree-eight
+recurrences with the same curvature have respectively re-entrant and
+monotone valuation phases.  See
+[`TWO_PAIR_SIC_FROBENIUS_CURVATURE_BRIDGE.md`](TWO_PAIR_SIC_FROBENIUS_CURVATURE_BRIDGE.md).
+Accordingly, the repository pipeline after creative telescoping is:
+
+1. clear parameter and sequence-normalization denominators primitively;
+2. factor scalar leading/trailing coefficients and locate singular steps;
+3. build the local valuation or Smith ledger over \(\mathbb Z_p\);
+4. compute \(p\)-curvature as a module-level consistency check; and
+5. certify bridge data rather than canceling singular factors generically.
 
 ## 5. The stable GKZ rank theorem
 
@@ -321,10 +382,15 @@ For a new parameterized contraction family:
 2. try direct finite differences, Gosper telescoping, or
    Paule--Schneider-style recursive telescoping;
 3. retain the exact certificate and singular-step audit;
-4. independently compute the Laurent support and normalized Newton volume;
-5. test face nondegeneracy at the actual coefficient point, not only
+4. primitively normalize the recurrence over the relevant integral
+   parameter ring and separate period normalization from raw factorial
+   normalization;
+5. compute the local factor/Smith valuation ledger before taking shift
+   norms, and use recurrence \(p\)-curvature only as a module-level check;
+6. independently compute the Laurent support and normalized Newton volume;
+7. test face nondegeneracy at the actual coefficient point, not only
    generically; and
-6. use the GKZ rank as an initial-data bound only after constructing the
+8. use the GKZ rank as an initial-data bound only after constructing the
    generating-function pullback and proving the expansion point ordinary.
 
 The hypergeometric route is the primary proof-producing method for the
@@ -339,3 +405,6 @@ potential complexity bound whose application gates remain open.
 - L. Fu,
   [*The stable GKZ hypergeometric \(\mathcal D\)-module*](https://arxiv.org/abs/2602.16941v2),
   arXiv:2602.16941v2 (2026), main theorem.
+- Y. Zhou and M. van Hoeij,
+  [*Desingularization and \(p\)-Curvature of Recurrence Operators*](https://arxiv.org/abs/2202.08931),
+  arXiv:2202.08931 (2022), especially Sections 2--3.

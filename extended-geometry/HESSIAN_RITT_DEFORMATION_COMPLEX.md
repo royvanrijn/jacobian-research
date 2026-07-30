@@ -223,7 +223,25 @@ move, and 2-cell, and its maps are the substitution operators (1.2).
 Its polynomial modules still remember the factor degrees; no claim of a
 degree-independent finite-dimensional bound is needed.
 
-### 3.1 The Frobenius cell module
+### 3.1 The split Keller control complex
+
+The
+[separated-product Keller--Ritt theorem](../verified/KELLER_RITT_PRODUCT_THEOREM.md)
+supplies a strict zero-defect control for this cellular architecture.
+For \(\prod_iF_{n_i}\), the coordinate factors commute as polynomial Keller
+maps, the intermediate-field lattice is Boolean, and the canonical split
+composition series realize the Coxeter squares and braid hexagons
+literally.  Thus their comparison modules and all higher path obstructions
+vanish before reduction or completion.
+
+This does not solve the coefficient-coupled cells studied here.  It fixes
+the normalization of the obstruction theory: a universal commuting or braid
+class should restrict to zero on the separated-product locus, and any
+nonzero class must measure coupling of factor coefficients, affine
+reconstruction opens, or boundary data rather than the bare Coxeter
+relation.
+
+### 3.2 The Frobenius cell module
 
 Let \(\pi_{>q}\) retain the coefficients of degrees greater than \(q\).  The
 one-sided invisible module on an oriented edge \(H\circ R\) is
@@ -405,10 +423,13 @@ An all-degree proof can now be divided into structural lemmas.
 4. **Synchronization null-homotopy.**  Upgrade the missing-line theorem and
    common-right-factor top-jet theorem from radical vanishing to a
    null-homotopy of (2.3) on every filtered layer.
-5. **Universal 2-cells.**  Establish obstruction vanishing for the universal
-   commuting square and the labelled three-factor braid.  Composition and
-   base change should then supply all spectators, provided the comparison is
-   made relative to the full cell boundary.
+5. **Universal 2-cells.**  The split Keller control cells have zero
+   obstruction by KRP1.  Establish the relative obstruction class for the
+   coefficient-coupled commuting square and labelled three-factor braid,
+   prove its required vanishing, and show that it restricts to the split
+   zero section.  Composition and base change should then supply all
+   spectators, provided the comparison is made relative to the full cell
+   boundary.
 6. **Boundary gluing.**  Compute the completed power--Dickson overlap once,
    including the \(z\)-adic filtration, and descend the sector modules along
    adjacent cells.
@@ -445,8 +466,9 @@ Before claiming the theorem, the following tests are decisive.
   the completed cut-\(14\) and cut-\(21\) splittings and evaluate braid
   coherence.  The known modular order-seven lift is evidence only; the
   characteristic-zero theorem currently ends at order six.
-* Verify a commuting square with both power and Dickson labels; a bare
-  topological square has no scheme-theoretic content.
+* Compare a commuting square with both power and Dickson labels against the
+  strict KRP1 split square; a bare topological square has no
+  scheme-theoretic content.
 * Show that the lift cocycle is null-homotopic, rather than merely zero on
   tangent spaces, on the existing degree-thirty and degree-forty-two charts.
 * Reduce integral test charts at primes meeting all three rows of (1.5) and

@@ -379,6 +379,18 @@ the following:
 This proposition is an exact obstruction for (10), not evidence that all
 two-boundary suspensions are impossible.
 
+There is now a sharp invariant-algebra handoff for option 1.  If the three
+divisors give tensor-separated cusp pinches, the
+[arbitrary-multiboundary Hilbert--14 theorem](../extended-geometry/MULTIBOUNDARY_HILBERT14_CONTROL.md#6-arbitrarily-many-independent-cusp-boundaries)
+computes the finite-generation ideal as the product conductor and proves
+non-finite generation.  If they share one symmetric conductor through a
+Cox relation, the
+[three-boundary Cox-fill theorem](../extended-geometry/CONDUCTOR_THREE_BOUNDARY_COX_FILL_OBSTRUCTION.md)
+excludes the minimal construction.  Consequently a viable use of the
+third divisor must exhibit mixed Rees relations, an asymmetric affine
+modification, or a distributed target cancellation; merely recording three
+independent pole exponents is no longer an open case.
+
 ## 5. A realistic classification target
 
 The first attainable theorem is an **elementary one-boundary suspension

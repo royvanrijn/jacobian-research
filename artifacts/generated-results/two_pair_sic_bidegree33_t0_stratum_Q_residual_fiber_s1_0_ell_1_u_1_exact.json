@@ -1,0 +1,54 @@
+{
+  "adapted_coordinates": {
+    "ell": "s1*u-t1"
+  },
+  "adapted_term_counts": {
+    "A": 4,
+    "B": 6,
+    "R20": 6
+  },
+  "adjoined_basis_size": 1,
+  "coefficient_field": "QQ(s1,ell,u)[a]/(R20(s1,ell,a,u)), deg_a(R20)=5",
+  "dense_pivot": "s3=-B/A",
+  "fiber_dimension": 0,
+  "fiber_groebner_basis_size": 3,
+  "fiber_quotient_length": 4,
+  "fiber_variables": [
+    "s6",
+    "s5"
+  ],
+  "format": "two-pair-sic-bidegree33-t0-Q-residual-v1",
+  "last_moment": 8,
+  "leading_border_zero_in_residual_field": true,
+  "leading_exponents": [
+    "1,1",
+    "2,0",
+    "0,3"
+  ],
+  "mu3_zero_in_residual_field": true,
+  "normal_form_term_counts": {
+    "mu6": 4,
+    "mu7": 4,
+    "mu8": 4
+  },
+  "pivot_content_ratio": "1/126",
+  "removed_u_powers": {
+    "A": 16,
+    "B": 16,
+    "R20": 2
+  },
+  "reproduction_command": "scripts/research_two_pair_sic_bidegree33_t0_Q_residual.py --through 8 --timeout 20 --specialize s1=0 --specialize ell=1 --specialize u=1 --output artifacts/generated-results/two_pair_sic_bidegree33_t0_stratum_Q_residual_fiber_s1_0_ell_1_u_1_exact.json",
+  "residual_factor_t2_degree": 5,
+  "residual_factor_total_degree": 20,
+  "specializations": {
+    "ell": "1",
+    "s1": "0",
+    "u": "1"
+  },
+  "status": "exact generic-point arithmetic on the characteristic-zero irreducible Q-border residual component; exceptional coefficient denominators are not yet classified",
+  "unit_ideal_through_last_moment": true,
+  "weight_zero_coordinates": {
+    "a": "t2/u^2",
+    "ell": "(s1*u-t1)/u"
+  }
+}

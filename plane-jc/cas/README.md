@@ -252,7 +252,8 @@ localized `preserved/cut/eliminated` decisions.
 
 The reusable superelliptic leading-block reducer is documented in
 [`../SUPERELLIPTIC_DERHAM_ENGINE.md`](../SUPERELLIPTIC_DERHAM_ENGINE.md).
-Its fast regression is:
+It includes exact Gauss--Manin matrices and cyclic-vector scalar
+Picard--Fuchs extraction.  Its fast regression is:
 
 ```bash
 python3 plane-jc/cas/test_superelliptic_derham.py

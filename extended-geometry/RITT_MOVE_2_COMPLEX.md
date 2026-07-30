@@ -46,6 +46,23 @@ give the boundary of the three-dimensional permutohedron:
 
 and hence Euler characteristic \(24-36+14=2\).
 
+### 1.1 Strict Keller control cells
+
+The same Coxeter \(2\)-skeleton now has a literal Keller-map realization on
+the separated-product subcategory.  The
+[separated-product Keller--Ritt theorem](../verified/KELLER_RITT_PRODUCT_THEOREM.md)
+uses the commuting stabilized atoms in
+\(\prod_iF_{n_i}:\mathbb A^{3r}\to\mathbb A^{3r}\).  Its canonical split
+factorizations form the Boolean block tower, adjacent swaps are polynomial
+Keller Ritt moves, and the square and braid relations hold strictly.  In
+particular, \(F_3\times F_4\times F_5\) realizes a defect-free braid
+hexagon.
+
+This is a control realization, not a transfer of the degree-thirty
+coefficient schemes below.  The vertical seed braid can carry nilpotent
+path defects precisely because its factors are coupled in one coefficient
+system; the separated Keller atoms live on disjoint coordinate blocks.
+
 ## 2. Coefficient systems, not bare cells
 
 A vertex with degree word \(\mathbf d=(d_1,\ldots,d_r)\) carries its affine

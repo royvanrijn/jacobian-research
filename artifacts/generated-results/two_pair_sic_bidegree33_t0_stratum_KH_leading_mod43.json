@@ -1,0 +1,41 @@
+{
+  "coefficient_variables": [
+    "s1",
+    "s3",
+    "t2",
+    "u"
+  ],
+  "common_denominator": "1",
+  "common_denominator_factors": [
+    {
+      "factor": "1",
+      "multiplicity": 1
+    }
+  ],
+  "common_denominator_terms": 1,
+  "format": "two-pair-sic-bidegree33-t0-stratum-leading-v1",
+  "groebner_basis_size": 2,
+  "leading_coefficient_factors": [
+    {
+      "factor": "(u^4)",
+      "multiplicity": 1
+    }
+  ],
+  "leading_coefficient_lcm": "(u^4)",
+  "leading_monomials": [
+    "s5^2",
+    "s6^3"
+  ],
+  "prime": 43,
+  "quotient_length": 6,
+  "reproduction_command": "scripts/research_two_pair_sic_bidegree33_t0_stratum_leading.py --prime 43 --stratum KH --timeout 20 --output artifacts/generated-results/two_pair_sic_bidegree33_t0_stratum_KH_leading_mod43.json",
+  "status": "bounded exact finite-field rational-function-field Groebner denominator; not a characteristic-zero certificate",
+  "stratum": "KH",
+  "transformation_denominator": "1",
+  "transformation_denominator_factors": [
+    {
+      "factor": "1",
+      "multiplicity": 1
+    }
+  ]
+}

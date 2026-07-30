@@ -85,6 +85,14 @@ These should be kept as two separate optimization problems:
 Here \((s,d;s_g,d_g)\) records expanded term count and degree for \(f\), then
 for \(g\).  It is only a complexity ledger, not a mathematical invariant.
 
+The image of an LND acting on an ideal is a third problem.  The failures of
+\(\mathcal M_r\) above do not transfer automatically because
+\(\sum_i(\partial_{z_i}-\zeta_i)\) is not a derivation.  Conversely, a
+counterexample to \(D(I)\) being Mathieu--Zhao would not improve the pair
+dimension or Keller-provenance ledgers in (1.5).  The exact slice reduction
+and its conductor frontier are maintained in
+[`LND_MATHIEU_SLICE_CONDUCTOR_FRONTIER.md`](LND_MATHIEU_SLICE_CONDUCTOR_FRONTIER.md).
+
 ## 2. Exact membership identities
 
 Define the contraction
@@ -181,6 +189,29 @@ moment-ideal machinery attack the Image problem without confusing a bounded
 moment search with an all-order proof.
 
 ## 4. Search tracks
+
+Before any track computes a moment prefix, apply the
+[one-radial multitorus sieve](FACTORIALLY_WEIGHTED_MULTITORUS_THEOREM.md).
+If an exact algebra embedding intertwines the candidate functional with
+
+\[
+ \Gamma_s(u^nz^\mu)=n!\mathbf1_{\mu=0},
+\]
+
+then the whole kernel is Mathieu--Zhao and the candidate cannot work.
+This is stronger than checking for a strict support separator: if the origin
+lies in the weight convex hull, Long's prime-index theorem forces a nonzero
+pure moment along every sufficiently large prime dilation of one fixed
+power.  Thus no coefficient search anywhere inside an exact
+\(\Gamma_s\)-model is needed.
+
+The word **exact** is essential.  Centered moment agreement, a rank-one list
+of radial support vectors, or a torus-equivariant change of variables does
+not suffice; multiplication and the functional must both intertwine.
+Ordinary two-pair contraction has independent product-factorial radial
+weights and is outside the theorem.  The known counterexample therefore
+survives this sieve, while any proposed compression to one factorial radial
+variable is excluded.
 
 ### Track A: residual two-pair classification and minimization
 
@@ -469,6 +500,134 @@ The precise identities, rank-minimization objective, and promotion gates
 are in
 [`TWO_VARIABLE_GVC_REPRESENTATION_PROGRAM.md`](TWO_VARIABLE_GVC_REPRESENTATION_PROGRAM.md).
 
+### Track E: LND ideal images through the conductor frontier
+
+For \(D=\partial_s\) on \(k[x,s]\), zero-constant integration gives the
+exact test
+
+\[
+ h\in D(I)
+ \Longleftrightarrow
+ {\cal J}(h)+c(x)\in I\text{ for some }c(x)\in k[x].
+\]
+
+This track now has four all-order safe gates.
+
+1. If \(I\) is any zero-dimensional ideal, primary components on singleton
+   fibers satisfy a slice-or-vanishing dichotomy, while multiple-point
+   fibers reduce to interval moments.  Thus \(D(I)\) is Mathieu--Zhao even
+   for nonreduced residual schemes.
+2. If \(I=qJ\), \(q\) is monic of positive \(s\)-degree, and \(B/J\) has
+   finite length, then \(D(I)\) is Mathieu--Zhao even when \(J\) is
+   nonreduced.  Two generic roots of \(q\) force the seed to be zero; a
+   single root reduces to growing primary-ideal order after translation.
+3. If \(q=x^c(xs-1)^d\) and the finite residual scheme is supported at the
+   degree-drop point, root multiplicity and the \(x\)-support weight force
+   the mixed quotient into the residual ideal.
+4. Principal, monomial, and the established rank/homogeneity classes remain
+   governed by their existing theorems.
+
+Accordingly, do not spend elimination time on carrier-free finite schemes,
+monic carrier charts, or normalized repeated linear degree-drop charts,
+including invariant \(x\)-content.
+The first live slice charts are
+
+\[
+ I=qJ\quad(q\text{ nonmonic}),
+\]
+
+excluding \(q=x^c(xs-1)^d\) at its degree-drop point and placing the
+residual support in a more complicated degree-drop divisor of the leading
+\(s\)-coefficient.  Their membership functionals should be compiled by
+valuation face, normalized branch, and conductor jet before any moment
+equations are solved.  A candidate advances only if its pure and mixed
+sequences admit all-order recurrences; a finite zero prefix is only
+candidate generation.
+
+The first exact plinth-divisor pass for
+\(D=x\partial_y+y\partial_z\) found thirteen six-power survivors across
+five homogeneous ideals, all in the visible \(x\)-support cone, and no
+bounded mixed-tail obstruction.  The reducible-plinth follow-up for
+\(D=x(x-1)\partial_y+y\partial_z\) uses exact
+\(\mathbf Q[x]\)-module membership: 205 branch-aware seeds leave fourteen
+six-power survivors, all \(x(x-1)y^r\), and again no mixed-tail
+obstruction.  The nonlinear profile
+\(D=x(x-1)\partial_y+y^2\partial_z\) has the exact grading \((0,1,3)\);
+210 seeds leave seventeen survivors, again all \(x(x-1)y^r\), and no
+mixed-tail obstruction.  For the grading-breaking perturbation
+\(D=x(x-1)\partial_y+(y^2+x)\partial_z\), normalized primitive lifts and
+finite kernel-image tests remain exact.  Eight ideals and 350 mixed-weight
+seeds leave 48 chartwise survivors, only seven distinct and all divisible
+by \(x(x-1)\), with no mixed obstruction.  The crossing-divisor follow-up
+for \(D=uv\partial_y+(y^2+u)\partial_z\) uses exact normalized lifts over
+\(\mathbf Q[u,v]\).  Five ideals and 956 seeds leave 177 chartwise
+survivors, 36 distinct and all divisible by \(uv\); there is no mixed
+obstruction, and every tested non-\(uv\) seed fails by its square.  The
+next live plinth chart is therefore the nonprincipal ideal \((u,v)\) for
+\(D=u\partial_x+v\partial_y\), where the two local slices have a genuine
+overlap cocycle.  Its finite-residual audit tests five ideals and 1,055
+seeds: 494 chartwise survivors give 100 distinct forms, all in
+\((u,v)A\), with no mixed obstruction; every seed outside that cone fails
+at its first power.  The live chart is now positive-dimensional residual
+support along \((u,v)\), not another finite quotient.  For the reduced
+free line \(I=(u,v,x)\), coefficient extraction gives
+\(D(I)=\operatorname {Im}D\cap\ker([v^1]h(0,v,0,y))\).  More generally,
+the base-degree identity
+\(\operatorname {Im}D\cap(u,v)^N=D((u,v)^{N-1})\), combined with the
+published rank-two linear-image theorem, proves \(D(I)\) Mathieu--Zhao
+for every ideal containing a power of \((u,v)\).  This includes all four
+positive-dimensional nilpotent jets: 1,055 seeds give 289 chartwise
+survivors, 75 distinct and all in \((u,v)A\), with no mixed obstruction.
+The next live ideal is \(I=(x)\), whose invariant image modulo \(I\) is
+\(k[u,v,uy]\) and has positive module rank.  Its exact valuation face is
+\(u^av^by^c:a\ge c\).  Among 1,055 seeds, 48 survive six pure powers, all
+divisible by \(u\), and none gives a mixed obstruction; every failed seed
+dies by its square.  Two finite Neumann-series cones and the
+invariant-times-\(u\) local-slice formula first prove 45 of those forms
+safe.  The stronger normal form
+\(f\in u^r\ker(D)[x]\) proves all 48 safe to all orders, including the
+three affine forms.  Every tested seed outside \(u\ker(D)[x]\) fails by
+its square.  The resulting square-gate conjecture is nevertheless false:
+the algebraic face
+\[
+2t-1+\frac{\sqrt{-15}}3(6t^2-6t+1)
+\]
+has zero first and second moments but nonzero third moment.  Its
+homogenization gives \(f,f^2\in D((x))\) but
+\(f^3\notin D((x))\), so it is not an LNED counterexample.
+
+The eventual hypothesis supplies the missing rigidity.  A nonpositive
+lowest \(u\)-face of \(f\) would force all sufficiently large interval
+moments of a nonzero one-variable polynomial to vanish.  Applying the
+one-variable moment lemma to a sufficiently high fixed power excludes
+that face.  Thus \(f\in u\ker(D)[x]\), and the local-slice theorem proves
+the mixed tail.  The canonical LND note therefore proves
+\(D((\ell(x,y)))\) Mathieu--Zhao for every nonzero moving linear form
+\(\ell\).  A divisibility bootstrap closes every power
+\((\ell^d)\).  Moreover, any principal carrier with two distinct roots on
+the generic local-slice orbit has zero Mathieu radical: primitive values
+at the roots turn eventual pure-power membership into an all-moment
+interval identity.  This closes both \((xy)\) and \((x(x-1))\).
+The first content controls \((ux)\) and \((uy)\) also close: the aligned
+case absorbs one fixed \(u^{-1}\) multiplier in the \(x/u\) slice, while
+the crossed case forces \(f\in uv\ker(D)[y]\) and clears both fixed
+denominators.  The first rational-root ladder closes as well.  For
+\(q_n=u^nx+(uy-vx)\), the quotient normalization has invariant support
+cone \(a\ge(n+1)c\); a lowest-face moment argument forces every eventual
+pure-power seed into \(u\ker(D)[q_n]\), where fixed denominators clear.
+Thus \(D((q_n))\) is Mathieu--Zhao for every \(n\ge1\).  The true
+two-prime grid closes too: for
+\(q_{r,s}=u^rv^sx+(uy-vx)\), the simultaneous quotient cone
+\(a\ge(r+1)c,\ b\ge sc\) and paired lowest-face moments force
+\(f\in uv\ker(D)[q_{r,s}]\).  Hence \(D((q_{r,s}))\) is Mathieu--Zhao for
+all \(r,s\ge1\).  The same proof permits an arbitrary invariant intercept:
+\(D((u^rv^sx+b))\) is Mathieu--Zhao for
+\(r\ge1,\ s\ge0,\ b\in\ker(D)\).  The true remaining carrier must have
+a genuinely nonmonomial invariant slope.  Prime-by-prime lowest faces
+close the coprime form \(q=ax+b\) away from
+\(v(b\bmod u)=(a\bmod u)w\).  The surviving locus is exactly where
+\(q\in uA\) by conductor cancellation, and is the next principal target.
+
 ## 5. Promotion rules
 
 A promoted counterexample must include:
@@ -482,3 +641,13 @@ A promoted counterexample must include:
 
 A bounded search or a long zero prefix remains an experiment.  It must not
 change the counterexample scoreboard or `MATH_STATUS.json`.
+
+For an LND ideal-image counterexample, replace items 2--4 by:
+
+1. an explicit locally nilpotent derivation \(D\), ideal \(I\), and
+   polynomials \(f,g\);
+2. an all-order certificate \(f^m=D(F_m)\) with \(F_m\in I\);
+3. a separating functional proving \(gf^m\notin D(I)\) for infinitely many
+   \(m\);
+4. a slice/plinth, valuation, and conductor audit proving that no
+   localization or saturation step changed the polynomial image.

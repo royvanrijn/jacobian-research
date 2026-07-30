@@ -333,6 +333,65 @@ noncanonically,
  \mathbb G_m^{N-4}.                                    \tag{22}
 \]
 
+### 4.1 Explicit quotient coordinates on the compiler slice
+
+The universal relative Keller compiler uses the slice `a_3=1` and writes
+
+\[
+ u_j=a_j/a_3^j,\qquad 4\le j\le N.
+\]
+
+The subgroup of (4) preserving `a_3=1` has
+`\beta=\alpha^{-2}` and acts by
+
+\[
+ \boxed{u_j\longmapsto\alpha^{j+1}u_j.}                \tag{23}
+\]
+
+Thus one of the `N-3` compiler seed coordinates is a residual scaling
+coordinate.  For `N>=5`, a saturated basis of the invariant character
+lattice is
+
+\[
+\boxed{
+ I_5=\frac{u_5^5}{u_4^6},\qquad
+ J_m=\frac{u_{m-2}u_m}{u_{m-1}^2}\quad(6\le m\le N).
+}                                                       \tag{24}
+\]
+
+Indeed, the exponent vector of `I_5` is `(-6,5,0,...)`, while that of
+`J_m` has the consecutive entries `(1,-2,1)` in slots
+`(m-2,m-1,m)`.  They annihilate the weight row
+
+\[
+ (5,6,\ldots,N+1).                                    \tag{25}
+\]
+
+The maximal minors of the resulting `(N-4)`-by-`(N-3)` relation matrix
+are, up to sign,
+
+\[
+ 5,6,\ldots,N+1.
+\]
+
+Their gcd is one, so the relation lattice is saturated.  Consequently
+
+\[
+ k[u_4^{\pm1},\ldots,u_N^{\pm1}]^{\mathbb G_m}
+ =
+ k[I_5^{\pm1},J_6^{\pm1},\ldots,J_N^{\pm1}],           \tag{26}
+\]
+
+and `(I_5,J_6,...,J_N)` is a complete geometric stable-boundary
+fingerprint on the compiler seed torus.  After the single residual scaling
+is removed, every remaining one of the `N-4` seed directions is visible on
+the intrinsic Fitting boundary.
+
+Over a nonclosed ground field, choosing a normalization such as `u_4=1`
+requires a fifth root.  This is the same rank-four `mu_5` Kummer residue
+seen in (5a); equation (26) is the geometric coarse quotient and does not
+erase that arithmetic descent condition.
+
 ## 5. Consequence for the two-family picture
 
 The weighted clean locus has stable-moduli dimension `N-3`.  The quadratic
@@ -356,4 +415,5 @@ Run
 
 The checker verifies the two-parameter left--right identity through degree
 six, the target shear removing `a_2`, the Fitting polynomial, puncture pole
-orders, support rigidity, and the weight-lattice ranks and stabilizers.
+orders, support rigidity, the weight-lattice ranks and stabilizers, and the
+saturated compiler-slice invariant basis (24).

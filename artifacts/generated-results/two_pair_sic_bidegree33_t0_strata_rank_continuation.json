@@ -1,0 +1,540 @@
+{
+  "characteristic_zero_Q_border": {
+    "dense_linear_pivot": true,
+    "good_reduction_matches_mod43": true,
+    "leading_artifact": "artifacts/generated-results/two_pair_sic_bidegree33_t0_stratum_Q_leading_exact.json",
+    "leading_border_term_count": 588,
+    "leading_border_total_degree": 36,
+    "leading_sha256": "e3eb46589b895df8d0215c8f505392a3208ea11ed1a97e03418f80af79a6be18",
+    "projected_resultant_term_count": 5563,
+    "projected_resultant_total_degree": 76,
+    "residual_factor": {
+      "multiplicity": 2,
+      "term_count": 200,
+      "total_degree": 20
+    },
+    "resultant_artifact": "artifacts/generated-results/two_pair_sic_bidegree33_t0_stratum_Q_border_resultant_exact.json",
+    "resultant_sha256": "dd065bcf6b62dbc5126f65224053ae69a1c7ddd79d1d562234524be8b9f81a8d"
+  },
+  "direct_candidate_count": 17,
+  "direct_candidates_excluded_by_mu8": 17,
+  "direct_records": [
+    {
+      "artifact": "artifacts/generated-results/two_pair_sic_bidegree33_t0_stratum_Q_random_p43_seed501.json",
+      "seed": 501,
+      "sha256": "8de382cc62bdce49766aa7921defeb3878d2beb04a797b4690f5c7d7624d93b2",
+      "stratum": "Q"
+    },
+    {
+      "artifact": "artifacts/generated-results/two_pair_sic_bidegree33_t0_stratum_Q_random_p43_seed811.json",
+      "seed": 811,
+      "sha256": "37e196e74b463c907da417ec1bdae2e4a02ddb18c6f2922f85ac985f50cef61f",
+      "stratum": "Q"
+    },
+    {
+      "artifact": "artifacts/generated-results/two_pair_sic_bidegree33_t0_stratum_Q_random_p43_seed821.json",
+      "seed": 821,
+      "sha256": "f906810c4c39b840334c41fed7fbb795a5aa39f04256684ad1afe4badf468eae",
+      "stratum": "Q"
+    },
+    {
+      "artifact": "artifacts/generated-results/two_pair_sic_bidegree33_t0_stratum_Q_random_p43_seed831.json",
+      "seed": 831,
+      "sha256": "aea976ea83b946620d676d94e620007dd15df272aa29c2d68cf4e0d446b5e17c",
+      "stratum": "Q"
+    },
+    {
+      "artifact": "artifacts/generated-results/two_pair_sic_bidegree33_t0_stratum_Q_random_p43_seed841.json",
+      "seed": 841,
+      "sha256": "837c7a296549e38f4945c50e6a4895f2df4b1ac7f9d7a1f59334eccf88b1469e",
+      "stratum": "Q"
+    },
+    {
+      "artifact": "artifacts/generated-results/two_pair_sic_bidegree33_t0_stratum_Q_random_p43_seed842.json",
+      "seed": 842,
+      "sha256": "a2e6fae3a5a9d2525dd3899511baac811f7e082345619f050baa8fab5d154cad",
+      "stratum": "Q"
+    },
+    {
+      "artifact": "artifacts/generated-results/two_pair_sic_bidegree33_t0_stratum_Q_random_p43_seed843.json",
+      "seed": 843,
+      "sha256": "aa6472641b951ce871a71405a1b37d9ba0dd70f06ff9c9aef8a910450d8e542b",
+      "stratum": "Q"
+    },
+    {
+      "artifact": "artifacts/generated-results/two_pair_sic_bidegree33_t0_stratum_J_random_p43_seed502.json",
+      "seed": 502,
+      "sha256": "cba9076c341f6aad6906f848ee00404524e2561fe9a06a4b4a62f8b69c680eff",
+      "stratum": "J"
+    },
+    {
+      "artifact": "artifacts/generated-results/two_pair_sic_bidegree33_t0_stratum_J_random_p43_seed812.json",
+      "seed": 812,
+      "sha256": "37e56f5a5a885b4927116b3dd031f147d17f652579b3527cf1f2c136fec086e9",
+      "stratum": "J"
+    },
+    {
+      "artifact": "artifacts/generated-results/two_pair_sic_bidegree33_t0_stratum_J_random_p43_seed822.json",
+      "seed": 822,
+      "sha256": "19dd2ed02b0d634d8368dfffaa52ca113036c42d8acb1ec50e6836b252e77eb1",
+      "stratum": "J"
+    },
+    {
+      "artifact": "artifacts/generated-results/two_pair_sic_bidegree33_t0_stratum_J_random_p43_seed832.json",
+      "seed": 832,
+      "sha256": "8bd772a9857fc1ee54db11ec51dfb448d27b21ab3f70773ba2ff47ca30ae4b67",
+      "stratum": "J"
+    },
+    {
+      "artifact": "artifacts/generated-results/two_pair_sic_bidegree33_t0_stratum_J_random_p43_seed851.json",
+      "seed": 851,
+      "sha256": "e51b3cb370d39af28861bb0fcbd854d297c38834c341b405e3493bbd4ecac748",
+      "stratum": "J"
+    },
+    {
+      "artifact": "artifacts/generated-results/two_pair_sic_bidegree33_t0_stratum_J_random_p43_seed852.json",
+      "seed": 852,
+      "sha256": "c42c6bdcacc0a3737bf897cc764dbd2831cc384b61fc8506f2e7d4d12a448d4f",
+      "stratum": "J"
+    },
+    {
+      "artifact": "artifacts/generated-results/two_pair_sic_bidegree33_t0_stratum_J_random_p43_seed853.json",
+      "seed": 853,
+      "sha256": "51a983932eb418c17340ce2abdc4bc40a377a2fc29a32b0f599b30bc60010afc",
+      "stratum": "J"
+    },
+    {
+      "artifact": "artifacts/generated-results/two_pair_sic_bidegree33_t0_stratum_K_random_p43_seed503.json",
+      "seed": 503,
+      "sha256": "15f3a99d7e1431f89c6cefc1742305ee1ba1e0ff5ea19f62d92f7f306bb7e6b0",
+      "stratum": "K"
+    },
+    {
+      "artifact": "artifacts/generated-results/two_pair_sic_bidegree33_t0_stratum_H_random_p43_seed504.json",
+      "seed": 504,
+      "sha256": "b593f83259dfd7ef3570ca1e17fcf4de35b24ea863a301e93ec6ddc52412fc6a",
+      "stratum": "H"
+    },
+    {
+      "artifact": "artifacts/generated-results/two_pair_sic_bidegree33_t0_stratum_KH_random_p43_seed601.json",
+      "seed": 601,
+      "sha256": "ea498f401cdd15c8861cf0e714eabf677dd2eafef03be913410612d9bf40efbb",
+      "stratum": "KH"
+    },
+    {
+      "artifact": "artifacts/generated-results/two_pair_sic_bidegree33_t0_stratum_QJH_random_p43_seed602.json",
+      "seed": 602,
+      "sha256": "d0b01cb2226975e46aa20ecc8065a0cb084258254679342e1d549e4adaf5b719",
+      "stratum": "QJH"
+    },
+    {
+      "artifact": "artifacts/generated-results/two_pair_sic_bidegree33_t0_stratum_QJH_random_p43_seed813.json",
+      "seed": 813,
+      "sha256": "1af8b3e812e0f86631ef962e8c19b5eb2cd5f8e2e331cc288072c9364180ed66",
+      "stratum": "QJH"
+    },
+    {
+      "artifact": "artifacts/generated-results/two_pair_sic_bidegree33_t0_stratum_QJH_random_p43_seed823.json",
+      "seed": 823,
+      "sha256": "3ea9bf844fc1f2441afa9414d3ba73b92a9ef9bc24eb8933ce37ef45b537a8d9",
+      "stratum": "QJH"
+    },
+    {
+      "artifact": "artifacts/generated-results/two_pair_sic_bidegree33_t0_stratum_QJH_random_p43_seed833.json",
+      "seed": 833,
+      "sha256": "3a078ae41e6de9618e97a168c0567c54508e9ed6f987cde456f6d1743799738f",
+      "stratum": "QJH"
+    },
+    {
+      "artifact": "artifacts/generated-results/two_pair_sic_bidegree33_t0_stratum_JH_random_p43_seed603.json",
+      "seed": 603,
+      "sha256": "fe64fe937639ba2be419fec54a8827e0c34e8b5c65da530b6a389806265f9e10",
+      "stratum": "JH"
+    },
+    {
+      "artifact": "artifacts/generated-results/two_pair_sic_bidegree33_t0_stratum_JH_random_p43_seed814.json",
+      "seed": 814,
+      "sha256": "7b216bdef01f0bc353f3eed1de0d3db8e6e1ac7d9b16b203ddf43e382a8e19cb",
+      "stratum": "JH"
+    },
+    {
+      "artifact": "artifacts/generated-results/two_pair_sic_bidegree33_t0_stratum_JH_random_p43_seed824.json",
+      "seed": 824,
+      "sha256": "ebf3dca19325dafb6523e1be2b61c95240bef596b4f201f7ca24fbf15762e917",
+      "stratum": "JH"
+    },
+    {
+      "artifact": "artifacts/generated-results/two_pair_sic_bidegree33_t0_stratum_JH_random_p43_seed834.json",
+      "seed": 834,
+      "sha256": "36f282bd31070f9586ee2529997141b75af8bc3b43d3be5177a0422e147068ae",
+      "stratum": "JH"
+    },
+    {
+      "artifact": "artifacts/generated-results/two_pair_sic_bidegree33_t0_stratum_JK_random_p43_seed604.json",
+      "seed": 604,
+      "sha256": "a2876b92bef117fed0448a8a6ff680e5ff7052a74464e59741564910e42753f2",
+      "stratum": "JK"
+    },
+    {
+      "artifact": "artifacts/generated-results/two_pair_sic_bidegree33_t0_stratum_JK_random_p43_seed815.json",
+      "seed": 815,
+      "sha256": "8508a6758103a1e0c77a4be49ffb3f582eb51c93ad4e96502efb6a88c81f2062",
+      "stratum": "JK"
+    },
+    {
+      "artifact": "artifacts/generated-results/two_pair_sic_bidegree33_t0_stratum_JK_random_p43_seed825.json",
+      "seed": 825,
+      "sha256": "4b0e52ffa1e156010dc14d4c18c0a2d390b0669592c8ee25cbd9cdbfd94accc1",
+      "stratum": "JK"
+    },
+    {
+      "artifact": "artifacts/generated-results/two_pair_sic_bidegree33_t0_stratum_JK_random_p43_seed835.json",
+      "seed": 835,
+      "sha256": "6d9eb1d8a3ddd1e505d49546173cac97cebd25c67cf01ae55e7fc68c6037571e",
+      "stratum": "JK"
+    },
+    {
+      "artifact": "artifacts/generated-results/two_pair_sic_bidegree33_t0_stratum_a2_random_p43_seed701.json",
+      "seed": 701,
+      "sha256": "dba1f8883cdce62b199e4579035a35c5e29917159caa5399d26e315ff69b3566",
+      "stratum": "a2"
+    },
+    {
+      "artifact": "artifacts/generated-results/two_pair_sic_bidegree33_t0_stratum_discriminant_random_p43_seed702.json",
+      "seed": 702,
+      "sha256": "bcbfa7acbb64903390a82fb0ec45245bd37f2a17a3b9ff83e115458c97afe0f1",
+      "stratum": "discriminant"
+    }
+  ],
+  "direct_stratum_artifact_count": 31,
+  "format": "two-pair-sic-bidegree33-t0-strata-rank-continuation-v1",
+  "interpretation_limit": "Only the Q border and its projected residual factor have been promoted to characteristic zero. No residual component is excluded through later moments. The next exact step is arithmetic in the degree-five and degree-six residual extensions, followed by mu6--mu8 Fitting tests.",
+  "leading_border_records": [
+    {
+      "artifact": "artifacts/generated-results/two_pair_sic_bidegree33_t0_stratum_Q_leading_mod43.json",
+      "border_term_count": 578,
+      "border_total_degree": 36,
+      "quotient_length": 5,
+      "sampled_border_points": 132,
+      "sampled_drop_points_on_border": 132,
+      "sha256": "f77215ffefca131851d26413a0b69310042ed30d817056e2bb0e2e24113962fb",
+      "stratum": "Q"
+    },
+    {
+      "artifact": "artifacts/generated-results/two_pair_sic_bidegree33_t0_stratum_J_leading_mod43.json",
+      "border_term_count": 1245,
+      "border_total_degree": 36,
+      "quotient_length": 5,
+      "sampled_border_points": 136,
+      "sampled_drop_points_on_border": 136,
+      "sha256": "a6dd6602de441dd45d3dea98c9272247739c7066f2e23878e366459596284eea",
+      "stratum": "J"
+    },
+    {
+      "artifact": "artifacts/generated-results/two_pair_sic_bidegree33_t0_stratum_K_leading_mod43.json",
+      "border_term_count": 16,
+      "border_total_degree": 22,
+      "quotient_length": 6,
+      "sampled_border_points": 0,
+      "sampled_drop_points_on_border": 0,
+      "sha256": "a0918f067e2528c6b1aa27ec8a7784f6c2a359262d6859f1ca18b3e3874ed77f",
+      "stratum": "K"
+    },
+    {
+      "artifact": "artifacts/generated-results/two_pair_sic_bidegree33_t0_stratum_H_leading_mod43.json",
+      "border_term_count": 15,
+      "border_total_degree": 36,
+      "quotient_length": 6,
+      "sampled_border_points": 0,
+      "sampled_drop_points_on_border": 0,
+      "sha256": "cc59d45e4aa54bd78738ef443b99d2bb910263b128ce8110e95743234eb6662f",
+      "stratum": "H"
+    },
+    {
+      "artifact": "artifacts/generated-results/two_pair_sic_bidegree33_t0_stratum_KH_leading_mod43.json",
+      "border_term_count": 1,
+      "border_total_degree": 4,
+      "quotient_length": 6,
+      "sampled_border_points": 0,
+      "sampled_drop_points_on_border": 0,
+      "sha256": "fd7d20f0535705855e357087a47d3db89e76cb614f83d5d1e05fc697f4190f75",
+      "stratum": "KH"
+    },
+    {
+      "artifact": "artifacts/generated-results/two_pair_sic_bidegree33_t0_stratum_QJH_leading_mod43.json",
+      "border_term_count": 2997,
+      "border_total_degree": 59,
+      "quotient_length": 4,
+      "sampled_border_points": 263,
+      "sampled_drop_points_on_border": 171,
+      "sha256": "d8809b983797d7b898a696c7b1a9daef2507636c906ce4b55a4ff9d312dec867",
+      "stratum": "QJH"
+    },
+    {
+      "artifact": "artifacts/generated-results/two_pair_sic_bidegree33_t0_stratum_JH_leading_mod43.json",
+      "border_term_count": 1399,
+      "border_total_degree": 57,
+      "quotient_length": 4,
+      "sampled_border_points": 226,
+      "sampled_drop_points_on_border": 151,
+      "sha256": "56576adb7f30f7366f56b3fba181c43c67bae824a562b00374d74059a89f85d1",
+      "stratum": "JH"
+    },
+    {
+      "artifact": "artifacts/generated-results/two_pair_sic_bidegree33_t0_stratum_JK_leading_mod43.json",
+      "border_term_count": 166,
+      "border_total_degree": 29,
+      "quotient_length": 5,
+      "sampled_border_points": 77,
+      "sampled_drop_points_on_border": 77,
+      "sha256": "16afef453cb94bb22a0c3096b25bcb3ad05a7b4e04b27c03027b0f6aeb59762a",
+      "stratum": "JK"
+    },
+    {
+      "artifact": "artifacts/generated-results/two_pair_sic_bidegree33_t0_stratum_a2_leading_mod43.json",
+      "border_term_count": 187,
+      "border_total_degree": 33,
+      "quotient_length": 6,
+      "sampled_border_points": 0,
+      "sampled_drop_points_on_border": 0,
+      "sha256": "4028d159740841b01d07d86a09646cca657138274303000dba66fdf92719675b",
+      "stratum": "a2"
+    }
+  ],
+  "prime": 43,
+  "projected_border_resultants": [
+    {
+      "artifact": "artifacts/generated-results/two_pair_sic_bidegree33_t0_stratum_Q_border_resultant_mod43.json",
+      "dense_linear_pivot_on_every_residual_factor": true,
+      "residual_factors": [
+        [
+          20,
+          195,
+          2
+        ]
+      ],
+      "resultant_term_count": 5429,
+      "resultant_total_degree": 76,
+      "sha256": "5b2a93920463f04730783fa65cf2946bd96027e8b4b398bc346e855ee0700629",
+      "stratum": "Q"
+    },
+    {
+      "artifact": "artifacts/generated-results/two_pair_sic_bidegree33_t0_stratum_J_border_resultant_mod43.json",
+      "dense_linear_pivot_on_every_residual_factor": true,
+      "residual_factors": [
+        [
+          24,
+          612,
+          2
+        ]
+      ],
+      "resultant_term_count": 16222,
+      "resultant_total_degree": 80,
+      "sha256": "fdbfa77563c0e304d3db370eafac80e8f264480db3507f6573cc3b58712e81f1",
+      "stratum": "J"
+    },
+    {
+      "artifact": "artifacts/generated-results/two_pair_sic_bidegree33_t0_stratum_JK_border_resultant_mod43.json",
+      "dense_linear_pivot_on_every_residual_factor": true,
+      "residual_factors": [
+        [
+          24,
+          161,
+          2
+        ]
+      ],
+      "resultant_term_count": 972,
+      "resultant_total_degree": 66,
+      "sha256": "53093972b1f4345f3fa7f09b17ca280ac08acfbcd9a24480d8f4f32f8d39178a",
+      "stratum": "JK"
+    },
+    {
+      "artifact": "artifacts/generated-results/two_pair_sic_bidegree33_t0_stratum_QJH_border_resultant_mod43.json",
+      "dense_linear_pivot_on_every_residual_factor": true,
+      "residual_factors": [
+        [
+          20,
+          101,
+          1
+        ],
+        [
+          24,
+          161,
+          1
+        ],
+        [
+          24,
+          163,
+          3
+        ]
+      ],
+      "resultant_term_count": 11558,
+      "resultant_total_degree": 136,
+      "sha256": "574dc5afbed1f5047f3a704457592dacdafebebfc89932f2b01a1635b095d539",
+      "stratum": "QJH"
+    },
+    {
+      "artifact": "artifacts/generated-results/two_pair_sic_bidegree33_t0_stratum_JH_border_resultant_mod43.json",
+      "dense_linear_pivot_on_every_residual_factor": true,
+      "residual_factors": [
+        [
+          20,
+          54,
+          3
+        ],
+        [
+          24,
+          143,
+          1
+        ],
+        [
+          24,
+          143,
+          1
+        ]
+      ],
+      "resultant_term_count": 4865,
+      "resultant_total_degree": 128,
+      "sha256": "ea0bcd1e5e20d0474233d9026081e05e8a94156093ddd07280992fabff642846",
+      "stratum": "JH"
+    }
+  ],
+  "quartic_point_cloud_records": [
+    {
+      "interpretation": "the six relations are the ambient cubic component equation and its five linear multiples",
+      "monomial_count": 126,
+      "nullity": 6,
+      "point_count": 132,
+      "rank": 120,
+      "stratum": "Q"
+    },
+    {
+      "interpretation": "the six relations are the ambient cubic component equation and its five linear multiples",
+      "monomial_count": 126,
+      "nullity": 6,
+      "point_count": 136,
+      "rank": 120,
+      "stratum": "J"
+    }
+  ],
+  "rank_complement": {
+    "accepted_paired_base_count": 3150,
+    "common_pencil_points_excluded_by_mu8": 4,
+    "common_pencil_zero_point_count": 4,
+    "evaluated_mu3_root_count": 6300,
+    "rank_at_most_four_point_count": 0,
+    "records": [
+      {
+        "accepted_paired_bases": 225,
+        "artifact": "artifacts/generated-results/two_pair_sic_bidegree33_t0_rank_complement_random_p43_seed901.json",
+        "common_pencil_zero_points": 1,
+        "rank_at_most_four_points": 0,
+        "seed": 901,
+        "selected_pivot_complement_points": 0,
+        "sha256": "48af7bfd1ee4acb5b05f5565a8e62f0bf27c541c976fb268582309f501211037"
+      },
+      {
+        "accepted_paired_bases": 450,
+        "artifact": "artifacts/generated-results/two_pair_sic_bidegree33_t0_rank_complement_random_p43_seed902.json",
+        "common_pencil_zero_points": 0,
+        "rank_at_most_four_points": 0,
+        "seed": 902,
+        "selected_pivot_complement_points": 1,
+        "sha256": "2183058f9c7841ea42908e159cb5080fde33c981e62a379c4141e616ebe082f8"
+      },
+      {
+        "accepted_paired_bases": 225,
+        "artifact": "artifacts/generated-results/two_pair_sic_bidegree33_t0_rank_complement_random_p43_seed903.json",
+        "common_pencil_zero_points": 2,
+        "rank_at_most_four_points": 0,
+        "seed": 903,
+        "selected_pivot_complement_points": 0,
+        "sha256": "a46dd8885dade65bc0e91bc537011f73aaefa16d84309e02b2e29abddbba0a68"
+      },
+      {
+        "accepted_paired_bases": 450,
+        "artifact": "artifacts/generated-results/two_pair_sic_bidegree33_t0_rank_complement_random_p43_seed904.json",
+        "common_pencil_zero_points": 0,
+        "rank_at_most_four_points": 0,
+        "seed": 904,
+        "selected_pivot_complement_points": 1,
+        "sha256": "46646cbae6374ef54a8e2d5f8556da292a0fe25b2790632dec0be769e2395a5d"
+      },
+      {
+        "accepted_paired_bases": 225,
+        "artifact": "artifacts/generated-results/two_pair_sic_bidegree33_t0_rank_complement_random_p43_seed905.json",
+        "common_pencil_zero_points": 0,
+        "rank_at_most_four_points": 0,
+        "seed": 905,
+        "selected_pivot_complement_points": 1,
+        "sha256": "5cb0a59240db2129b36f107af2b4d51a057fbe64e9ff7d1b58b2b751a52b90ae"
+      },
+      {
+        "accepted_paired_bases": 225,
+        "artifact": "artifacts/generated-results/two_pair_sic_bidegree33_t0_rank_complement_random_p43_seed906.json",
+        "common_pencil_zero_points": 0,
+        "rank_at_most_four_points": 0,
+        "seed": 906,
+        "selected_pivot_complement_points": 0,
+        "sha256": "810c328f9d6966b53e62b242cd4e9ed2a8fbeb74b686bccfa18dc958148c90e0"
+      },
+      {
+        "accepted_paired_bases": 225,
+        "artifact": "artifacts/generated-results/two_pair_sic_bidegree33_t0_rank_complement_random_p43_seed907.json",
+        "common_pencil_zero_points": 0,
+        "rank_at_most_four_points": 0,
+        "seed": 907,
+        "selected_pivot_complement_points": 0,
+        "sha256": "d333124fbfb101742429d83c7b39cba8f96449edb8e3608fdae03e22e7c4b71a"
+      },
+      {
+        "accepted_paired_bases": 225,
+        "artifact": "artifacts/generated-results/two_pair_sic_bidegree33_t0_rank_complement_random_p43_seed908.json",
+        "common_pencil_zero_points": 0,
+        "rank_at_most_four_points": 0,
+        "seed": 908,
+        "selected_pivot_complement_points": 0,
+        "sha256": "d57718cb7e7d02291df4a9a8285658c3034f7891b1df1d849c3aeb3eef0c714b"
+      },
+      {
+        "accepted_paired_bases": 225,
+        "artifact": "artifacts/generated-results/two_pair_sic_bidegree33_t0_rank_complement_random_p43_seed909.json",
+        "common_pencil_zero_points": 1,
+        "rank_at_most_four_points": 0,
+        "seed": 909,
+        "selected_pivot_complement_points": 0,
+        "sha256": "aed102042a70c1bbd5d9d54540b12538d83257d6b3888df51620471b6861937c"
+      },
+      {
+        "accepted_paired_bases": 225,
+        "artifact": "artifacts/generated-results/two_pair_sic_bidegree33_t0_rank_complement_random_p43_seed910.json",
+        "common_pencil_zero_points": 0,
+        "rank_at_most_four_points": 0,
+        "seed": 910,
+        "selected_pivot_complement_points": 0,
+        "sha256": "8a04f42971da6c273e45bd9122c18168352efc01ee26039d8f59635a203c6425"
+      },
+      {
+        "accepted_paired_bases": 225,
+        "artifact": "artifacts/generated-results/two_pair_sic_bidegree33_t0_rank_complement_random_p43_seed911.json",
+        "common_pencil_zero_points": 0,
+        "rank_at_most_four_points": 0,
+        "seed": 911,
+        "selected_pivot_complement_points": 0,
+        "sha256": "f3552d648cd5c1b436573999ec9fed2ae3a4657833a8f5cab143d61cf49456e6"
+      },
+      {
+        "accepted_paired_bases": 225,
+        "artifact": "artifacts/generated-results/two_pair_sic_bidegree33_t0_rank_complement_random_p43_seed912.json",
+        "common_pencil_zero_points": 0,
+        "rank_at_most_four_points": 0,
+        "seed": 912,
+        "selected_pivot_complement_points": 1,
+        "sha256": "e46bb660460bf5f5a0d576cbf0018740d3c86f4ecb567a32f7d21e393e4ba35b"
+      }
+    ],
+    "selected_two_pivot_complement_point_count": 4,
+    "shard_count": 12
+  },
+  "status": "exact characteristic-zero Q-border calculation plus bounded finite-field strata and sampled incidence checks; not a global common-root exclusion"
+}

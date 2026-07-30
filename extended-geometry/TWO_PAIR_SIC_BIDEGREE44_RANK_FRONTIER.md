@@ -1,4 +1,15 @@
-# The coefficient-rank frontier in bidegree \((4,4)\)
+# Minimum coefficient rank of a two-pair SIC counterexample
+
+The best unresolved counterexample target is coefficient rank two in
+bidegree \((4,4)\):
+\[
+ F=A_1(\xi)P_1(z)+A_2(\xi)P_2(z),                 \tag{0.1}
+\]
+with \(A_i\) and \(P_i\) binary quartics.  This is the first open
+determinantal stratum, small enough for orbit reduction while no longer
+covered by the rank-one split-symbol GVC theorem.  An exact example here
+would replace the current sixteen-term full-rank witness by two separated
+channels and would determine the minimum coefficient rank.
 
 ## 1. Certified answer
 
@@ -155,6 +166,87 @@ first-twelve-moment Jacobian at the numerical point range from about
 active one; later raw moments are small largely because of scale. The
 numerical point is therefore not suitable for exact reconstruction as it
 stands.
+
+## 5A. Exact exclusion on a swap-antisymmetric two-channel slice
+
+There is now one exact orbit-slice exclusion inside rank at most two.  For
+a binary quartic
+\[
+ P(z_1,z_2)=\sum_{j=0}^4a_jz_1^jz_2^{4-j},
+\]
+put
+\[
+ F_P=\xi _1^4P(z_1,z_2)-\xi _2^4P(z_2,z_1).       \tag{5A.1}
+\]
+Its coefficient matrix has only its first and last rows nonzero, so its
+rank is at most two.  It has exact rank two precisely when \(P\) and its
+coefficient reversal are linearly independent.
+
+The simultaneous coordinate swap
+\[
+ (\xi _1,\xi _2,z_1,z_2)\longmapsto
+ (\xi _2,\xi _1,z_2,z_1)
+\]
+preserves contraction and sends \(F_P\) to \(-F_P\).  Hence every odd pure
+moment vanishes identically.  The first five even moments already close
+the slice:
+
+> **Theorem 5A.1.** Over a characteristic-zero field, if
+> \[
+>  \mathcal E_2(F_P^m)=0
+>  \qquad(m=2,4,6,8,10),                            \tag{5A.2}
+> \]
+> then, after scalar extension and projective rescaling,
+> \[
+>  P=(z_2-z_1)^4\quad\hbox{or}\quad P=(z_2+z_1)^4. \tag{5A.3}
+> \]
+> At both points \(P(z_2,z_1)=P(z_1,z_2)\), so \(F_P\) has coefficient
+> rank one.  Thus (5A.1) contains no rank-two SIC counterexample.
+
+Here is the exact certificate.  On \(a_4=1\), let \(I\) be the ideal of
+the five moments in (5A.2).  A seven-prime reconstruction gives a rational
+lex ideal \(B\) with leading monomials
+\[
+ a_0,\quad a_1,\quad a_2^2,\quad a_2a_3^2,\quad a_3^{10}. \tag{5A.4}
+\]
+Therefore \(\mathbb Q[a_0,a_1,a_2,a_3]/B\) has basis
+\[
+ 1,a_3,\ldots,a_3^9,a_2,a_2a_3
+\]
+and length twelve.  Exact rational reduction puts the moments of orders
+\(2,4,\ldots,16\) in \(B\).  In particular \(I\subseteq B\).  Modulo the
+good prime \(32003\), the original five-moment ideal has length twelve.
+On the complete projective boundary \(a_4=0\), its four coefficient charts
+all have unit standard basis.  Properness and the special-fiber length
+bound therefore give
+\[
+ \dim_{\mathbb Q}\mathbb Q[a_0,a_1,a_2,a_3]/I\leq12.
+\]
+The quotient map induced by \(I\subseteq B\) gives the reverse inequality,
+so \(I=B\).
+
+The first lex polynomial is exactly
+\[
+ (a_3^2-16)^5.                                    \tag{5A.5}
+\]
+On \(a_3=\pm4\), the remaining triangular equations reduce successively
+to
+\[
+ (a_2-6)^2,\qquad a_1-a_3,\qquad a_0-1.           \tag{5A.6}
+\]
+This proves (5A.3), including the nonreduced structure behind the
+twelve-point scheme length.  The full reconstructed basis is recorded in
+the generated artifact rather than duplicated here.
+
+There is a sharper three-parameter corollary.  If
+\[
+ P=a_0z_2^4+a_2z_1^2z_2^2+a_4z_1^4,              \tag{5A.7}
+\]
+then the moments of orders \(2,4,6\) have no nonzero projective common
+zero.  Exact rational unit bases on the charts \(a_0=1,a_2=1,a_4=1\)
+prove this.  Neither result changes the global interval (1.1): a generic
+rank-two symbol pencil is not equivalent to the two-fourth-power pencil
+in (5A.1), and the swap relation is an additional restriction.
 
 ## 6. Exact rank-at-most-two invariant-quotient obstruction
 
@@ -478,6 +570,7 @@ Run
 ```bash
 python3 scripts/verify_two_pair_sic_bidegree44_rank_frontier.py
 python3 scripts/verify_two_pair_sic_bidegree44_rank_two_invariants.py
+.venv/bin/python scripts/verify_two_pair_sic_bidegree44_rank_two_swap_slice.py
 .venv/bin/python scripts/verify_two_variable_quartic_squarefree_pivot.py
 .venv/bin/python scripts/verify_two_variable_quartic_two_root_finite.py
 ```
@@ -494,6 +587,13 @@ computes the invariant Hilbert coefficients from the Cauchy and
 Jacobi--Trudi formulas. It verifies the exact obstruction (6.5), the
 corrected necessary test through degree \(100\), and palindromy through
 the predicted Gorenstein top degree \(82\).
+
+The swap-slice checker proves Theorem 5A.1.  It reconstructs the
+length-twelve lex ideal at seven good primes, verifies its rational
+containment and triangular radical exactly, checks equality by the
+good-prime length bound, and excludes the complete \(a_4=0\) projective
+boundary.  It also proves the three-moment parity-even corollary on all
+three projective charts.
 
 The third checker proves the generic squarefree pivot-boundary unit certificate,
 the two-generator expected affine ideal (6.8), the four exact cubic-factor

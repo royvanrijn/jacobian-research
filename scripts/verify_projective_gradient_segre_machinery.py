@@ -16,6 +16,8 @@ sys.path.insert(0, str(ROOT))
 
 from jcsearch.projective_gradient_segre import (
     ProjectiveGradientSegreRecord,
+    SingularEssentialGradientNormalSlice,
+    SmoothEssentialGradientNormalSlice,
     affine_gradient_compactification,
     full_polar_map,
     homogeneous_leading_forms,
@@ -268,8 +270,29 @@ assert top_degree_controls["meng_yang_schur_hc5"][
 ] == 371290
 
 
+smooth_normal_slice = SmoothEssentialGradientNormalSlice(
+    ambient_dimension=4,
+    map_degree=4,
+    essential_rank=3,
+)
+assert smooth_normal_slice.truncated_active_length == 256
+assert smooth_normal_slice.isolated_vertex_affine_degree_lower_bound(
+    epsilon_order=1,
+    cyclic_ideal_dimension=2,
+) == 6
+
+singular_normal_slice = SingularEssentialGradientNormalSlice(
+    ambient_dimension=4,
+    map_degree=4,
+    essential_rank=3,
+    singular_locus_dimension=0,
+    transverse_jacobian_length=1,
+)
+assert singular_normal_slice.base_codimension == 3
+
+
 payload = {
-    "format": "projective-gradient-segre-registry-v1",
+    "format": "projective-gradient-segre-registry-v3",
     "conventions": {
         "actual_affine_compactification": "[X0^m:F1^h:...:Fn^h]",
         "full_polar_map_is_separate": True,
@@ -287,9 +310,115 @@ payload = {
         "transform_pairs_checked": 12 * 7,
         "integrability_reconstruction": "exact Euler reconstruction",
     },
+    "smooth_essential_normal_slice_theorem": {
+        "status": "proved in all dimensions and map degrees m>=2",
+        "parameters": "(ambient dimension n, map degree m, essential rank r)",
+        "kernel_vertex": "P^(n-r-1)",
+        "base_codimension": "r+1",
+        "jacobian_length": "m^r",
+        "truncated_active_length": "m^(r+1)",
+        "filtered_drop": "(m-q)*dim(B*s)",
+        "artifact": (
+            "artifacts/generated-results/"
+            "projective_gradient_normal_slices.json"
+        ),
+        "checker": "scripts/verify_projective_gradient_normal_slices.py",
+        "independent_checker": (
+            "scripts/verify_projective_gradient_normal_slices.m2"
+        ),
+    },
+    "singular_essential_normal_slice_theorem": {
+        "status": "proved support and DVR-profile law in all dimensions",
+        "parameters": (
+            "(ambient dimension n, map degree m, essential rank r, "
+            "singular-component dimension s and degree d)"
+        ),
+        "joined_support": "Join(P^(n-r-1),C)",
+        "base_codimension": "r-s",
+        "transverse_jacobian_length": "mu",
+        "active_dvr_profile": "(generic rank rho, torsion orders a_j)",
+        "truncated_active_length": (
+            "m*rho+sum_j min(m,a_j)"
+        ),
+        "artifact": (
+            "artifacts/generated-results/"
+            "projective_gradient_singular_slices.json"
+        ),
+        "checker": (
+            "scripts/verify_projective_gradient_singular_slices.py"
+        ),
+        "independent_checker": (
+            "scripts/verify_projective_gradient_singular_slices.m2"
+        ),
+    },
     "complete_calibrations": calibrations,
     "cotangent_calibrations": cotangent_calibrations,
     "quadratic_stabilization_calibrations": stabilization_calibrations,
+    "downstream_consumers": {
+        "hc4_quintic_infinity_rees_strata": {
+            "status": (
+                "implemented universal top-gradient and support-codimension "
+                "sieve; singular lower-layer normal-cone multiplicities "
+                "remain open"
+            ),
+            "artifact": (
+                "artifacts/generated-results/"
+                "hc4_quintic_infinity_rees_strata.json"
+            ),
+            "checker": "scripts/analyze_hc4_quintic_infinity_rees.py",
+            "independent_rees_checker": (
+                "scripts/verify_hc4_quintic_infinity_rees_strata.m2"
+            ),
+        },
+        "hc4_rank3_vertex_colength": {
+            "status": (
+                "implemented lower-layer filtered-length obstruction; "
+                "both codimension-four affine-degree-two/three rows excluded"
+            ),
+            "artifact": (
+                "artifacts/generated-results/"
+                "hc4_rank3_vertex_colength.json"
+            ),
+            "checker": "scripts/verify_hc4_rank3_vertex_colength.py",
+            "independent_checker": (
+                "scripts/verify_hc4_rank3_vertex_colength.m2"
+            ),
+        },
+        "hc4_codimension_three_gradient_strata": {
+            "status": (
+                "implemented rank-two constant-kernel/Schur sieve and "
+                "rank-three ordinary-singularity incidence"
+            ),
+            "artifact": (
+                "artifacts/generated-results/"
+                "hc4_codim3_gradient_strata.json"
+            ),
+            "checker": "scripts/verify_hc4_codim3_gradient_strata.py",
+            "independent_checker": (
+                "scripts/verify_hc4_codim3_gradient_strata.m2"
+            ),
+        },
+        "hc4_binary_root_partition_segre": {
+            "status": (
+                "implemented PGS3 active-unit sieve on singular essential "
+                "binary quintic root partitions"
+            ),
+            "generic_double_root_packet": {
+                "forced_sigma2": 1,
+                "rows_for_affine_degrees_2_and_3": [51, 50],
+            },
+            "artifact": (
+                "artifacts/generated-results/"
+                "hc4_binary_root_partition_segre.json"
+            ),
+            "checker": (
+                "scripts/verify_hc4_binary_root_partition_segre.py"
+            ),
+            "independent_checker": (
+                "scripts/verify_hc4_binary_root_partition_segre.m2"
+            ),
+        },
+    },
     "top_degree_controls_and_open_records": top_degree_controls,
     "scope": (
         "The transform and compactification constructors are exact in all "
@@ -308,6 +437,8 @@ digest = hashlib.sha256(serialized.encode()).hexdigest()
 print("PASS: all-dimensional projective-degree/Segre transforms are inverse")
 print("PASS: affine-gradient and full-polar constructors are distinct")
 print("PASS: homogeneous integrability reconstructs the infinity potential")
+print("PASS: attached the all-dimensional smooth-essential normal slice")
+print("PASS: attached the all-dimensional singular-stratum DVR profile")
 print("PASS: complete and top-degree-only family records stay separated")
 print(f"PASS: wrote {OUTPUT.relative_to(ROOT)}")
 print(f"SHA256: {digest}")

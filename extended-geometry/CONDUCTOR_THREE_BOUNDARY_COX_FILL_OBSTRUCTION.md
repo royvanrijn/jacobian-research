@@ -276,6 +276,37 @@ The scope is important.  The theorem does not exclude:
 The next viable search should alter one of those three features rather than
 increase the degree of the same symmetric product.
 
+## Hilbert--14 handoff
+
+The independent-cusp comparison is now exact.  If three boundary directions
+instead separate as
+
+\[
+ \bigotimes_{i=1}^3(k+t_i^2k[t_i,P_i]),
+\]
+
+then the
+[multiboundary finite-generation-ideal theorem](MULTIBOUNDARY_HILBERT14_CONTROL.md#6-arbitrarily-many-independent-cusp-boundaries)
+computes the finite-generation ideal as
+
+\[
+ (t_1^2t_2^2t_3^2)
+ k[t_1,P_1,t_2,P_2,t_3,P_3]
+\]
+
+and proves non-finite generation by eight conductor-return ladders.  The Cox
+fill above is not such a tensor product: all three axes factor the single
+conductor \(p=xyz\).  Its failure is therefore complementary rather than an
+instance of the independent-cusp theorem.
+
+This leaves a precise fork for a Keller-attached three-boundary search:
+
+1. tensor-separated one-axis quotients imply the exact non-finite
+   Hilbert--14 control;
+2. the symmetric one-conductor Cox coupling is excluded by this note; and
+3. only asymmetric mixed Rees relations or a distributed source/target
+   conductor ledger can evade both conclusions.
+
 ## Reproduction
 
 Run

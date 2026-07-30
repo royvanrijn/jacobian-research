@@ -268,6 +268,58 @@
         ]
       ],
       "distinct_exceptional_roots_in_base_field": 4,
+      "base_field_exceptional_fibers": [
+        {
+          "parameter_value": 82859,
+          "coefficient_matrix_rank": 2,
+          "saturation_exponent": 6,
+          "relative_length": 17,
+          "endpoint_t0_length": 2,
+          "endpoint_t1_length": 2,
+          "interior_length": 13,
+          "classification": "relative_length_change",
+          "denominator_component": "extra_degree_14"
+        },
+        {
+          "parameter_value": 161532,
+          "coefficient_matrix_rank": 2,
+          "saturation_exponent": 6,
+          "relative_length": 17,
+          "endpoint_t0_length": 1,
+          "endpoint_t1_length": 2,
+          "interior_length": 14,
+          "classification": "relative_length_change",
+          "denominator_component": "extra_degree_14"
+        },
+        {
+          "parameter_value": 206160,
+          "coefficient_matrix_rank": 2,
+          "saturation_exponent": 6,
+          "relative_length": 17,
+          "endpoint_t0_length": 2,
+          "endpoint_t1_length": 2,
+          "interior_length": 13,
+          "classification": "relative_length_change",
+          "denominator_component": "extra_degree_14"
+        },
+        {
+          "parameter_value": 495494,
+          "coefficient_matrix_rank": 2,
+          "saturation_exponent": 6,
+          "relative_length": 17,
+          "endpoint_t0_length": 1,
+          "endpoint_t1_length": 2,
+          "interior_length": 14,
+          "classification": "relative_length_change",
+          "denominator_component": "extra_degree_14"
+        }
+      ],
+      "base_field_exceptional_classification_counts": {
+        "relative_length_change": 4
+      },
+      "base_field_component_classification_counts": {
+        "extra_degree_14:relative_length_change": 4
+      },
       "exceptional_polynomial_coefficients_low_to_high": [
         802945,
         64072,
@@ -589,6 +641,83 @@
         ]
       ],
       "distinct_exceptional_roots_in_base_field": 6,
+      "base_field_exceptional_fibers": [
+        {
+          "parameter_value": 62871,
+          "coefficient_matrix_rank": 2,
+          "saturation_exponent": 6,
+          "relative_length": 18,
+          "endpoint_t0_length": 2,
+          "endpoint_t1_length": 2,
+          "interior_length": 14,
+          "classification": "stable_length_profile_chart_failure",
+          "denominator_component": "common_degree_74"
+        },
+        {
+          "parameter_value": 127772,
+          "coefficient_matrix_rank": 2,
+          "saturation_exponent": 6,
+          "relative_length": 17,
+          "endpoint_t0_length": 2,
+          "endpoint_t1_length": 1,
+          "interior_length": 14,
+          "classification": "relative_length_change",
+          "denominator_component": "extra_degree_14"
+        },
+        {
+          "parameter_value": 296241,
+          "coefficient_matrix_rank": 2,
+          "saturation_exponent": 6,
+          "relative_length": 17,
+          "endpoint_t0_length": 2,
+          "endpoint_t1_length": 1,
+          "interior_length": 14,
+          "classification": "relative_length_change",
+          "denominator_component": "extra_degree_14"
+        },
+        {
+          "parameter_value": 312032,
+          "coefficient_matrix_rank": 2,
+          "saturation_exponent": 6,
+          "relative_length": 17,
+          "endpoint_t0_length": 2,
+          "endpoint_t1_length": 2,
+          "interior_length": 13,
+          "classification": "relative_length_change",
+          "denominator_component": "extra_degree_20"
+        },
+        {
+          "parameter_value": 618057,
+          "coefficient_matrix_rank": 2,
+          "saturation_exponent": 6,
+          "relative_length": 17,
+          "endpoint_t0_length": 1,
+          "endpoint_t1_length": 2,
+          "interior_length": 14,
+          "classification": "relative_length_change",
+          "denominator_component": "extra_degree_14"
+        },
+        {
+          "parameter_value": 873727,
+          "coefficient_matrix_rank": 2,
+          "saturation_exponent": 6,
+          "relative_length": 17,
+          "endpoint_t0_length": 1,
+          "endpoint_t1_length": 2,
+          "interior_length": 14,
+          "classification": "relative_length_change",
+          "denominator_component": "extra_degree_14"
+        }
+      ],
+      "base_field_exceptional_classification_counts": {
+        "stable_length_profile_chart_failure": 1,
+        "relative_length_change": 5
+      },
+      "base_field_component_classification_counts": {
+        "common_degree_74:stable_length_profile_chart_failure": 1,
+        "extra_degree_14:relative_length_change": 4,
+        "extra_degree_20:relative_length_change": 1
+      },
       "exceptional_polynomial_coefficients_low_to_high": [
         239961,
         756699,
@@ -958,6 +1087,71 @@
         ]
       ],
       "distinct_exceptional_roots_in_base_field": 5,
+      "base_field_exceptional_fibers": [
+        {
+          "parameter_value": 95714,
+          "coefficient_matrix_rank": 2,
+          "saturation_exponent": 6,
+          "relative_length": 18,
+          "endpoint_t0_length": 2,
+          "endpoint_t1_length": 2,
+          "interior_length": 14,
+          "classification": "stable_length_profile_chart_failure",
+          "denominator_component": "common_degree_74"
+        },
+        {
+          "parameter_value": 399248,
+          "coefficient_matrix_rank": 2,
+          "saturation_exponent": 6,
+          "relative_length": 17,
+          "endpoint_t0_length": 2,
+          "endpoint_t1_length": 1,
+          "interior_length": 14,
+          "classification": "relative_length_change",
+          "denominator_component": "extra_degree_14"
+        },
+        {
+          "parameter_value": 742037,
+          "coefficient_matrix_rank": 2,
+          "saturation_exponent": 6,
+          "relative_length": 18,
+          "endpoint_t0_length": 2,
+          "endpoint_t1_length": 2,
+          "interior_length": 14,
+          "classification": "stable_length_profile_chart_failure",
+          "denominator_component": "common_degree_74"
+        },
+        {
+          "parameter_value": 816796,
+          "coefficient_matrix_rank": 2,
+          "saturation_exponent": 6,
+          "relative_length": 17,
+          "endpoint_t0_length": 2,
+          "endpoint_t1_length": 1,
+          "interior_length": 14,
+          "classification": "relative_length_change",
+          "denominator_component": "extra_degree_14"
+        },
+        {
+          "parameter_value": 833422,
+          "coefficient_matrix_rank": 2,
+          "saturation_exponent": 6,
+          "relative_length": 18,
+          "endpoint_t0_length": 2,
+          "endpoint_t1_length": 2,
+          "interior_length": 14,
+          "classification": "stable_length_profile_chart_failure",
+          "denominator_component": "common_degree_74"
+        }
+      ],
+      "base_field_exceptional_classification_counts": {
+        "stable_length_profile_chart_failure": 3,
+        "relative_length_change": 2
+      },
+      "base_field_component_classification_counts": {
+        "common_degree_74:stable_length_profile_chart_failure": 3,
+        "extra_degree_14:relative_length_change": 2
+      },
       "exceptional_polynomial_coefficients_low_to_high": [
         893082,
         596255,
@@ -1073,6 +1267,6 @@
   ],
   "interpretation": {
     "generic_pencil_chart": "the six monic logarithmic-Jacobian border relations are regular away from a degree-108 polynomial",
-    "exceptional_locus": "roots of the chart denominator require separate specialization and may include coordinate-chart artifacts"
+    "exceptional_locus": "roots of the chart denominator require separate specialization; every base-field root is classified by coefficient rank, total relative length, and its 2+2+14 endpoint/interior profile"
   }
 }

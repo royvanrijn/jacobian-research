@@ -37,6 +37,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
 from jcsearch.projective_gradient_segre import (  # noqa: E402
+    equal_degree_complete_intersection_segre,
     projective_degrees_from_segre,
     segre_degrees_from_projective,
 )
@@ -180,6 +181,238 @@ for top_degree in (2, 3):
 assert quintic_signature_counts_by_leading_codimension == {
     "affine_degree_2": {"2": 260, "3": 58, "4": 1},
     "affine_degree_3": {"2": 249, "3": 57, "4": 1},
+}
+
+# The universal top-gradient support sieve is transverse to the determinant
+# coverage matrix.  For an essential rank-r cone, the smooth top support is
+# the kernel vertex P^(3-r), hence has codimension r+1 in P4.  Singular
+# essential tops join that vertex to their singular locus and feed the lower
+# codimension columns.  The pure-top CI vectors calibrate the degeneration;
+# only the support codimension, not those multiplicities, is asserted for a
+# completed constant-Hessian potential.
+quintic_top_gradient_rees_sieve = {
+    "universal_h5_coefficient_count": 56,
+    "constant_hessian_top_gate": "det Hess(h5)=0; essential rank <=3",
+    "generic_smooth_rank_strata": [],
+    "singular_support_transport": {
+        "rank_2_repeated_binary_root": 2,
+        "rank_3_isolated_singularities": 3,
+        "rank_3_positive_dimensional_singular_locus": 2,
+    },
+    "midpoint_collision_parity": [
+        "grad(h2+h4)(a)=0",
+        "grad(h3+h5)(a)=0",
+    ],
+    "artifact": (
+        "artifacts/generated-results/"
+        "hc4_quintic_infinity_rees_strata.json"
+    ),
+}
+for rank in (1, 2, 3):
+    codimension = rank + 1
+    sigmas = equal_degree_complete_intersection_segre(
+        ambient_dimension=4,
+        codimension=codimension,
+        generator_degree=4,
+    )
+    degrees = projective_degrees_from_segre(4, sigmas)
+    quintic_top_gradient_rees_sieve[
+        "generic_smooth_rank_strata"
+    ].append(
+        {
+            "essential_hessian_rank": rank,
+            "universal_essential_coefficient_count": (1, 6, 21)[
+                rank - 1
+            ],
+            "base_support_codimension": codimension,
+            "atlas_rows": {
+                affine_key: counts[str(codimension)]
+                for affine_key, counts in (
+                    quintic_signature_counts_by_leading_codimension.items()
+                )
+            },
+            "pure_top_projective_degrees": degrees,
+            "pure_top_segre_degrees": sigmas,
+            "generic_rees_ideal": (
+                "linear type: Koszul plus inactive target equations"
+            ),
+        }
+    )
+
+assert [
+    row["pure_top_projective_degrees"]
+    for row in quintic_top_gradient_rees_sieve[
+        "generic_smooth_rank_strata"
+    ]
+] == [
+    (1, 4, 0, 0, 0),
+    (1, 4, 16, 0, 0),
+    (1, 4, 16, 64, 0),
+]
+
+# HC4PPG7 closes the two codimension-four rows.  The support sieve above
+# shows that such a row can only come from a smooth essential rank-three
+# top quintic.  On its vertex chart the filtered complete-intersection
+# argument gives affine degree at least six in the nonaligned branch,
+# while HC4CD5 already excludes the aligned branch.
+rank_three_vertex_colength_sieve = {
+    "support_stratum": "smooth essential rank-three ternary quintic",
+    "base_support_codimension": 4,
+    "active_complete_intersection_length": 256,
+    "nonaligned_minimum_affine_degree": 6,
+    "aligned_branch": {
+        "status": "excluded",
+        "result": "HC4CD5",
+    },
+    "excluded_rows": {},
+    "artifact": (
+        "artifacts/generated-results/hc4_rank3_vertex_colength.json"
+    ),
+}
+for affine_degree in (2, 3):
+    key = f"gradient_degree_4_affine_degree_{affine_degree}"
+    codimension_four_rows = [
+        row
+        for row in atlases[key]
+        if row.leading_base_codimension == 4
+    ]
+    assert len(codimension_four_rows) == 1
+    row = codimension_four_rows[0]
+    assert row.projective_degrees == (1, 4, 16, 64, affine_degree)
+    assert row.segre_degrees == (0, 0, 0, 256 - affine_degree)
+    rank_three_vertex_colength_sieve["excluded_rows"][
+        f"affine_degree_{affine_degree}"
+    ] = {
+        "projective_degrees": row.projective_degrees,
+        "segre_degrees": row.segre_degrees,
+    }
+
+assert rank_three_vertex_colength_sieve["excluded_rows"] == {
+    "affine_degree_2": {
+        "projective_degrees": (1, 4, 16, 64, 2),
+        "segre_degrees": (0, 0, 0, 254),
+    },
+    "affine_degree_3": {
+        "projective_degrees": (1, 4, 16, 64, 3),
+        "segre_degrees": (0, 0, 0, 253),
+    },
+}
+
+# HC4PPG8 refines, but does not globally delete, the codimension-three
+# column.  On the smooth rank-two packet, a nonzero restriction h4|K
+# synchronizes a constant kernel direction.  The squarefree binary-Hessian
+# branch is excluded; on its nonsquarefree remainder the generic transverse
+# multiplicity is sigma_3=16.  The h4|K=0 and rank-three isolated-singularity
+# packets remain capable of feeding other numerical rows.
+codimension_three_gradient_sieve = {
+    "rank_two_smooth_top": {
+        "nonzero_h4_kernel_restriction": {
+            "squarefree_binary_hessian": {
+                "status": "excluded",
+                "result": "HC4PPG8 plus HC4CD5",
+            },
+            "nonsquarefree_binary_hessian": {
+                "status": "open exceptional discriminant",
+                "forced_sigma3": 16,
+                "atlas_rows": {},
+            },
+        },
+        "zero_h4_kernel_restriction": {
+            "status": "open synchronization stratum",
+        },
+    },
+    "rank_three_isolated_singularities": {
+        "ordinary_points": "s3 vanishes at every Hessian-rank-two point",
+        "worse_points": "open when Hess(h5) has rank at most one",
+    },
+    "unconditional_atlas_rows_excluded": 0,
+    "artifact": (
+        "artifacts/generated-results/hc4_codim3_gradient_strata.json"
+    ),
+}
+for affine_degree in (2, 3):
+    key = f"gradient_degree_4_affine_degree_{affine_degree}"
+    rows = [
+        row
+        for row in atlases[key]
+        if row.leading_base_codimension == 3
+        and row.segre_degrees[2] == 16
+    ]
+    assert len(rows) == 1
+    row = rows[0]
+    assert row.projective_degrees == (1, 4, 16, 48, affine_degree)
+    assert row.segre_degrees == (0, 0, 16, -affine_degree)
+    codimension_three_gradient_sieve["rank_two_smooth_top"][
+        "nonzero_h4_kernel_restriction"
+    ]["nonsquarefree_binary_hessian"]["atlas_rows"][
+        f"affine_degree_{affine_degree}"
+    ] = {
+        "projective_degrees": row.projective_degrees,
+        "segre_degrees": row.segre_degrees,
+    }
+
+# HC4PPG9 applies the PGS3 order-one active profile to the essential
+# rank-two repeated-root packet.  A root partition with q distinct roots
+# has total transverse Jacobian length 5-q, hence sigma_2=5-q on this open
+# lower-layer stratum.  Failure of the active-unit condition remains an
+# exceptional torsion packet, so this is a partition, not an unconditional
+# deletion of codimension-two rows.
+codimension_two_binary_root_sieve = {
+    "condition": (
+        "at every repeated root, one redundant active gradient has "
+        "epsilon-order one with unit coefficient after transverse elimination"
+    ),
+    "root_partitions": {},
+    "generic_double_root_packet": {},
+    "unconditional_atlas_rows_excluded": 0,
+    "artifact": (
+        "artifacts/generated-results/"
+        "hc4_binary_root_partition_segre.json"
+    ),
+}
+for partition in (
+    (2, 1, 1, 1),
+    (3, 1, 1),
+    (2, 2, 1),
+    (4, 1),
+    (3, 2),
+):
+    sigma2 = 5 - len(partition)
+    row_counts = {}
+    for affine_degree in (2, 3):
+        key = f"gradient_degree_4_affine_degree_{affine_degree}"
+        row_counts[f"affine_degree_{affine_degree}"] = sum(
+            row.leading_base_codimension == 2
+            and row.segre_degrees[1] == sigma2
+            for row in atlases[key]
+        )
+    codimension_two_binary_root_sieve["root_partitions"][
+        "+".join(map(str, partition))
+    ] = {
+        "forced_sigma2": sigma2,
+        "atlas_rows": row_counts,
+    }
+
+assert codimension_two_binary_root_sieve["root_partitions"][
+    "2+1+1+1"
+] == {
+    "forced_sigma2": 1,
+    "atlas_rows": {
+        "affine_degree_2": 51,
+        "affine_degree_3": 50,
+    },
+}
+codimension_two_binary_root_sieve["generic_double_root_packet"] = {
+    "root_partition": [2, 1, 1, 1],
+    "forced_sigma2": 1,
+    "rows_before": {
+        "affine_degree_2": 260,
+        "affine_degree_3": 249,
+    },
+    "rows_after": {
+        "affine_degree_2": 51,
+        "affine_degree_3": 50,
+    },
 }
 
 quintic_smooth_curve_only_counts = {
@@ -397,6 +630,10 @@ quintic_coverage_matrix = [
         "unresolved_subbranch": {
             "condition": "s3!=0",
             "status": "split_by_hessian_discriminant",
+            "smooth_top_affine_degree_2_or_3": {
+                "status": "excluded",
+                "result": "HC4PPG7 vertex-colength obstruction",
+            },
             "first_unresolved_face": (
                 "det(Hess_u(h5)) divides "
                 "grad(s3)^T adj(Hess_u(h5)) grad(s3), "
@@ -433,15 +670,26 @@ quintic_coverage_summary = {
     "smooth_integral_curve_only_rows_passing_castelnuovo": (
         quintic_smooth_curve_only_counts
     ),
-    "signature_level_exclusions_from_hessian_rank_matrix": 0,
-    "reason_no_signature_level_exclusion": (
-        "No proved implication currently recovers leading Hessian rank or "
-        "kernel alignment from the four projective degrees alone."
+    "signature_level_exclusions": {
+        "affine_degree_2": 1,
+        "affine_degree_3": 1,
+        "total": 2,
+    },
+    "remaining_numerical_signatures_after_vertex_colength": {
+        "affine_degree_2": 318,
+        "affine_degree_3": 306,
+        "total": 624,
+    },
+    "reason_the_codimension_four_rows_are_assignable": (
+        "The top-gradient support theorem identifies codimension four "
+        "exactly with the smooth essential rank-three stratum; HC4PPG7 "
+        "then excludes affine degrees two and three on that stratum."
     ),
     "recommended_next_exact_calculation": (
-        "Classify the nonsquarefree degree-nine Hessian determinants of "
-        "ternary quintics in the rank-three branch, then compute local "
-        "cone-vertex Segre contributions only on the surviving strata."
+        "Attack the exceptional codimension-three packets: h4|K=0 in "
+        "essential rank two, the nonsquarefree binary-Hessian sigma3=16 "
+        "row, and the lower normal cones at isolated ternary singularities "
+        "subject to s3(p)=0 at every ordinary point."
     ),
     "rank_three_squarefree_degree_ledger":
         rank_three_squarefree_degree_ledger,
@@ -594,7 +842,7 @@ assert controls["meng_yang_after_schur_hc5"]["total_segre_correction"] == 371290
 
 
 payload = {
-    "format": "hc4-projective-polar-atlas-v2",
+    "format": "hc4-projective-polar-atlas-v5",
     "conventions": {
         "map": "[X0^m:F1^h:F2^h:F3^h:F4^h]",
         "segre_pushforward": (
@@ -614,10 +862,12 @@ payload = {
         "quadratic-gradient affine-degree-two/three row. HC4CQ1 and "
         "Ax--Grothendieck exclude every listed cubic-gradient row. The "
         "quintic rows are paired with an exact leading-Hessian coverage "
-        "matrix, but projective degrees alone do not assign a row to a "
-        "Hessian-rank branch. Thus these are a numerical pre-Keller atlas "
-        "and structural reduction, not existence results; the ordinary "
-        "Hilbert polynomial does not determine the Segre class."
+        "matrix. The top-gradient support theorem assigns codimension four "
+        "to the smooth essential rank-three branch, and the vertex-colength "
+        "obstruction excludes its affine-degree-two/three rows. The other "
+        "624 quintic rows remain necessary numerical configurations, not "
+        "existence results; the ordinary Hilbert polynomial does not "
+        "determine the Segre class."
     ),
     "counts": {key: len(value) for key, value in atlases.items()},
     "zero_dimensional_lengths": zero_dimensional,
@@ -631,6 +881,12 @@ payload = {
     ],
     "quintic_coverage_summary": quintic_coverage_summary,
     "quintic_coverage_matrix": quintic_coverage_matrix,
+    "quintic_top_gradient_rees_sieve": quintic_top_gradient_rees_sieve,
+    "rank_three_vertex_colength_sieve": rank_three_vertex_colength_sieve,
+    "codimension_three_gradient_sieve": codimension_three_gradient_sieve,
+    "codimension_two_binary_root_sieve": (
+        codimension_two_binary_root_sieve
+    ),
     "atlases": {
         key: [asdict(row) for row in value]
         for key, value in atlases.items()
@@ -655,6 +911,10 @@ print("PASS: verified the rank-one/two/three quintic determinant faces")
 print("PASS: rank-three aligned quintics reduce to HC4CD5")
 print("PASS: isolated the rank-three cubic Schur divisibility gap")
 print("PASS: squarefree rank-three Hessian discriminants force s3=0")
+print("PASS: intersected generic quintic top-gradient/Rees strata with atlas")
+print("PASS: excluded both codimension-four quintic degree-two/three rows")
+print("PASS: refined the codimension-three rank-two/rank-three packets")
+print("PASS: partitioned the codimension-two repeated-binary-root packet")
 print("PASS: HC6/HC5 total corrections are 117646 and 371290")
 print(f"PASS: wrote {OUTPUT.relative_to(ROOT)}")
 print(f"SHA256: {digest}")

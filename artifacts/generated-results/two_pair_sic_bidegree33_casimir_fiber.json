@@ -34,7 +34,8 @@
       }
     ],
     "mu14_casimir_class_test": {
-      "base_generators": [
+      "interpretation": "If mu_14 is independent from the pure Casimir span, there is no degree-14 identity expressing mu_14 as a polynomial in the selected quadratic Casimirs modulo the degree-14 part of (mu_1,...,mu_12) inside the generated algebra. This does not decide equality of their zero divisors in the full invariant quotient.",
+      "lower_moment_generators": [
         "mu_1",
         "mu_2",
         "mu_3",
@@ -46,24 +47,57 @@
         "mu_9",
         "mu_10",
         "mu_11",
-        "mu_12",
-        "q_2"
+        "mu_12"
       ],
-      "classes_independent_mod_lower_moment_span": true,
-      "degree_14_monomials_total": 293,
-      "interpretation": "If the two classes are independent, there is no identity mu_14=c*q_2^7 modulo the degree-14 part of the ideal (mu_1,...,mu_12) inside the generated algebra Q[mu_1,...,mu_12,q_2]. This does not decide equality of their zero divisors in the full invariant quotient.",
-      "lower_moment_ideal_columns": 292,
       "prime": 32003,
-      "ranks": {
-        "lower_moment_ideal": 292,
-        "plus_both": 294,
-        "plus_mu14": 293,
-        "plus_q2_power_7": 293
-      },
-      "samples": 297,
+      "tests": [
+        {
+          "casimirs": [
+            "q_2"
+          ],
+          "degree_14_monomials_total": 293,
+          "lower_moment_ideal_columns": 292,
+          "mu14_in_pure_casimir_span_mod_lower_moments": false,
+          "mu14_independent_from_pure_casimir_span_mod_lower_moments": true,
+          "pure_casimir_classes_independent_mod_lower_moment_span": true,
+          "pure_casimir_columns": 1,
+          "ranks": {
+            "lower_moment_ideal": 292,
+            "lower_plus_mu14": 293,
+            "lower_plus_pure_casimirs": 293,
+            "lower_plus_pure_casimirs_plus_mu14": 294
+          },
+          "samples": 297
+        },
+        {
+          "casimirs": [
+            "q_2",
+            "q_4"
+          ],
+          "degree_14_monomials_total": 608,
+          "lower_moment_ideal_columns": 600,
+          "mu14_in_pure_casimir_span_mod_lower_moments": false,
+          "mu14_independent_from_pure_casimir_span_mod_lower_moments": true,
+          "pure_casimir_classes_independent_mod_lower_moment_span": true,
+          "pure_casimir_columns": 8,
+          "ranks": {
+            "lower_moment_ideal": 600,
+            "lower_plus_mu14": 601,
+            "lower_plus_pure_casimirs": 608,
+            "lower_plus_pure_casimirs_plus_mu14": 609
+          },
+          "samples": 612
+        }
+      ],
       "weight": 14
     },
     "prime": 32003,
+    "quadratic_anchor_identity": {
+      "Delta_2": "-r0*r2 + r1**2",
+      "identity": "q_2=80*Delta_2",
+      "q_2": "-80*(r0*r2 - r1**2)",
+      "status": "exact symbolic"
+    },
     "status": "exact Hilbert coefficient arithmetic and characteristic-zero Jacobian rank certificates via one good prime",
     "systems": [
       {
@@ -239,5 +273,835 @@
       }
     ]
   },
-  "status": "exact parameter comparison plus bounded finite-field zero-fiber probes"
+  "null_quadratic_exceptional_complete_normal_fibers": {
+    "interpretation": "a zero-dimensional result proves a nonempty characteristic-zero transverse-isolation open subset on the corresponding exact irreducible stratum",
+    "samples": [
+      {
+        "P_value_mod_prime": 0,
+        "algebraic_root_derivative_mod_prime": 19963,
+        "allowed_values": {
+          "s0": 20,
+          "s1": 27,
+          "s2": 12804,
+          "t0": 47,
+          "t1": 0
+        },
+        "characteristic_zero_lift": "s0=20,s1=27,t0=47,t1=0 and s2=beta, where 9*beta^3-156*beta^2+143*beta-143=0",
+        "coordinate_power_memberships": {
+          "s3": 13,
+          "s4": 7,
+          "s5": 5,
+          "s6": 4,
+          "t2": 13,
+          "t3": 7,
+          "t4": 5
+        },
+        "dimension": 0,
+        "groebner_basis_size": 181,
+        "interpretation": "dimension zero at this good reduction proves transverse isolation at the displayed characteristic-zero algebraic lift and hence on a nonempty open subset of its stratum; coordinate power memberships are finite-field evidence",
+        "moment_orders": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "moment_term_counts": {
+          "10": 2393,
+          "11": 3867,
+          "12": 6079,
+          "2": 6,
+          "3": 15,
+          "4": 43,
+          "5": 99,
+          "6": 221,
+          "7": 435,
+          "8": 813,
+          "9": 1415
+        },
+        "normal_coordinates": [
+          "s3",
+          "s4",
+          "s5",
+          "s6",
+          "t2",
+          "t3",
+          "t4"
+        ],
+        "power_search_bound": 50,
+        "prime": 32003,
+        "quotient_length": 195,
+        "returncode": 0,
+        "simple_algebraic_root_mod_prime": true,
+        "status": "completed",
+        "stderr_tail": "",
+        "stdout_tail": "META 0 195 181\nPOWER s3 13\nPOWER s4 7\nPOWER s5 5\nPOWER s6 4\nPOWER t2 13\nPOWER t3 7\nPOWER t4 5\n",
+        "stratum": "P_divisor",
+        "stratum_equations_mod_prime": [
+          "t1=0",
+          "9*s2^3-156*s2^2+143*s2-143=0"
+        ]
+      },
+      {
+        "P_value_mod_prime": 15771,
+        "algebraic_root_derivative_mod_prime": 9588,
+        "allowed_values": {
+          "s0": 20,
+          "s1": 27,
+          "s2": 16605,
+          "t0": 47,
+          "t1": 0
+        },
+        "characteristic_zero_lift": "s0=20,s1=27,t0=47,t1=0 and s2=alpha, where 3*alpha^2-3*alpha+7=0",
+        "coordinate_power_memberships": {
+          "s3": 13,
+          "s4": 7,
+          "s5": 5,
+          "s6": 4,
+          "t2": 13,
+          "t3": 7,
+          "t4": 5
+        },
+        "dimension": 0,
+        "groebner_basis_size": 181,
+        "interpretation": "dimension zero at this good reduction proves transverse isolation at the displayed characteristic-zero algebraic lift and hence on a nonempty open subset of its stratum; coordinate power memberships are finite-field evidence",
+        "moment_orders": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "moment_term_counts": {
+          "10": 2393,
+          "11": 3867,
+          "12": 6079,
+          "2": 6,
+          "3": 14,
+          "4": 44,
+          "5": 99,
+          "6": 221,
+          "7": 435,
+          "8": 813,
+          "9": 1415
+        },
+        "normal_coordinates": [
+          "s3",
+          "s4",
+          "s5",
+          "s6",
+          "t2",
+          "t3",
+          "t4"
+        ],
+        "power_search_bound": 50,
+        "prime": 30013,
+        "quotient_length": 195,
+        "returncode": 0,
+        "simple_algebraic_root_mod_prime": true,
+        "status": "completed",
+        "stderr_tail": "",
+        "stdout_tail": "META 0 195 181\nPOWER s3 13\nPOWER s4 7\nPOWER s5 5\nPOWER s6 4\nPOWER t2 13\nPOWER t3 7\nPOWER t4 5\n",
+        "stratum": "residual_component_A",
+        "stratum_equations_mod_prime": [
+          "t1=0",
+          "3*s2^2-3*s2+7=0"
+        ]
+      },
+      {
+        "P_value_mod_prime": 28263,
+        "algebraic_root_derivative_mod_prime": 4900,
+        "allowed_values": {
+          "s0": 20,
+          "s1": 27,
+          "s2": 30011,
+          "t0": 47,
+          "t1": 15619
+        },
+        "characteristic_zero_lift": "s0=20,s1=27,t0=47,s2=-2 and t1=5*i/2",
+        "coordinate_power_memberships": {
+          "s3": 13,
+          "s4": 7,
+          "s5": 5,
+          "s6": 4,
+          "t2": 13,
+          "t3": 7,
+          "t4": 5
+        },
+        "dimension": 0,
+        "groebner_basis_size": 181,
+        "interpretation": "dimension zero at this good reduction proves transverse isolation at the displayed characteristic-zero algebraic lift and hence on a nonempty open subset of its stratum; coordinate power memberships are finite-field evidence",
+        "moment_orders": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "moment_term_counts": {
+          "10": 2521,
+          "11": 4054,
+          "12": 6334,
+          "2": 7,
+          "3": 15,
+          "4": 50,
+          "5": 111,
+          "6": 243,
+          "7": 473,
+          "8": 870,
+          "9": 1504
+        },
+        "normal_coordinates": [
+          "s3",
+          "s4",
+          "s5",
+          "s6",
+          "t2",
+          "t3",
+          "t4"
+        ],
+        "power_search_bound": 50,
+        "prime": 30013,
+        "quotient_length": 195,
+        "returncode": 0,
+        "simple_algebraic_root_mod_prime": true,
+        "status": "completed",
+        "stderr_tail": "",
+        "stdout_tail": "META 0 195 181\nPOWER s3 13\nPOWER s4 7\nPOWER s5 5\nPOWER s6 4\nPOWER t2 13\nPOWER t3 7\nPOWER t4 5\n",
+        "stratum": "residual_component_B",
+        "stratum_equations_mod_prime": [
+          "s2=-2",
+          "4*t1^2+25=0"
+        ]
+      },
+      {
+        "P_value_mod_prime": 31574,
+        "algebraic_root_derivative_mod_prime": null,
+        "allowed_values": {
+          "s0": 20,
+          "s1": 0,
+          "s2": 0,
+          "t0": 47,
+          "t1": 0
+        },
+        "characteristic_zero_lift": "the same rational point over Q",
+        "coordinate_power_memberships": {
+          "s3": 13,
+          "s4": 7,
+          "s5": 5,
+          "s6": 4,
+          "t2": 13,
+          "t3": 8,
+          "t4": 5
+        },
+        "dimension": 0,
+        "groebner_basis_size": 177,
+        "interpretation": "dimension zero at this good reduction proves transverse isolation at the displayed characteristic-zero algebraic lift and hence on a nonempty open subset of its stratum; coordinate power memberships are finite-field evidence",
+        "moment_orders": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "moment_term_counts": {
+          "10": 1400,
+          "11": 2227,
+          "12": 3459,
+          "2": 4,
+          "3": 13,
+          "4": 31,
+          "5": 68,
+          "6": 144,
+          "7": 271,
+          "8": 494,
+          "9": 842
+        },
+        "normal_coordinates": [
+          "s3",
+          "s4",
+          "s5",
+          "s6",
+          "t2",
+          "t3",
+          "t4"
+        ],
+        "power_search_bound": 50,
+        "prime": 32003,
+        "quotient_length": 197,
+        "returncode": 0,
+        "simple_algebraic_root_mod_prime": true,
+        "status": "completed",
+        "stderr_tail": "",
+        "stdout_tail": "META 0 197 177\nPOWER s3 13\nPOWER s4 7\nPOWER s5 5\nPOWER s6 4\nPOWER t2 13\nPOWER t3 8\nPOWER t4 5\n",
+        "stratum": "residual_lower_locus",
+        "stratum_equations_mod_prime": [
+          "s1=0",
+          "s2=0",
+          "t1=0"
+        ]
+      }
+    ],
+    "status": "completed"
+  },
+  "null_quadratic_exceptional_rank_strata": {
+    "P_intersection_quotient_minor_support": "empty",
+    "P_section_sample": {
+      "field_of_sample": "Q(beta), 9*beta^3-156*beta^2+143*beta-143=0",
+      "ideal": [
+        "t1",
+        "9*s2^3-156*s2^2+143*s2-143"
+      ],
+      "minimal_polynomial_irreducible": true
+    },
+    "common_cubic_divisor": "27*s2**3 - 468*s2**2 - 156*s2*t1**2 + 429*s2 - 572*t1**2 - 429",
+    "interpretation": "the linear-rank exceptional set is the disjoint union of the cubic divisor P=0 and the displayed quotient-minor support; each component can therefore be tested separately",
+    "quotient_minor_support": [
+      {
+        "P_remainder": "-75*(s2 - 8)",
+        "dimension_in_allowed_base": 3,
+        "disjointness_certificate": "P=-75*(s2-8) modulo the component and (3*s2^2-3*s2+7)|_(s2=8)=175",
+        "field_of_sample": "Q(alpha), 3*alpha^2-3*alpha+7=0",
+        "ideal": [
+          "t1",
+          "3*s2**2 - 3*s2 + 7"
+        ],
+        "label": "residual_component_A"
+      },
+      {
+        "P_remainder": "-1750",
+        "dimension_in_allowed_base": 3,
+        "disjointness_certificate": "P=-1750 modulo the component",
+        "field_of_sample": "Q(i), t1=5*i/2",
+        "ideal": [
+          "s2+2",
+          "4*t1**2 + 25"
+        ],
+        "label": "residual_component_B"
+      },
+      {
+        "P_remainder": "-429",
+        "dimension_in_allowed_base": 2,
+        "disjointness_certificate": "P=-429 on the lower locus",
+        "field_of_sample": "Q",
+        "ideal": [
+          "s1",
+          "s2",
+          "t1"
+        ],
+        "label": "residual_lower_locus"
+      }
+    ],
+    "quotient_minor_support_generators_up_to_units": [
+      "s2*t1*(s2 + 2)",
+      "s2*(3*s2**2 - 3*s2 + 4*t1**2 + 7)",
+      "t1**2*(s2 + 2)",
+      "9*s1*s2**2 - 9*s1*s2 + 12*s1*t1**2 + 21*s1 - 14*s2*t0*t1 - 28*t0*t1",
+      "t1*(3*s2**2 - 3*s2 + 4*t1**2 + 7)"
+    ],
+    "set_theoretic_branch_certificate": "If W is nonzero, s2*W=t1*W=0 and 3*s1*W-14*t0*t1*(s2+2)=0 force (s1,s2,t1)=0. If W=0, t1^2*(s2+2)=0 gives t1=0 or s2=-2, producing the first or second quadratic component.",
+    "status": "exact characteristic-zero set-theoretic decomposition and disjointness certificates"
+  },
+  "null_quadratic_generic_complete_normal_fiber": {
+    "allowed_values": {
+      "s0": 20,
+      "s1": 27,
+      "s2": 36,
+      "t0": 47,
+      "t1": 60
+    },
+    "characteristic_zero_lift": "the same rational point over Q",
+    "coordinate_power_memberships": {
+      "s3": 13,
+      "s4": 7,
+      "s5": 5,
+      "s6": 4,
+      "t2": 13,
+      "t3": 7,
+      "t4": 5
+    },
+    "dimension": 0,
+    "groebner_basis_size": 181,
+    "interpretation": "dimension zero at this good reduction proves transverse isolation at the displayed characteristic-zero algebraic lift and hence on a nonempty open subset of its stratum; coordinate power memberships are finite-field evidence",
+    "moment_orders": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "moment_term_counts": {
+      "10": 2521,
+      "11": 4054,
+      "12": 6334,
+      "2": 7,
+      "3": 18,
+      "4": 50,
+      "5": 112,
+      "6": 243,
+      "7": 473,
+      "8": 870,
+      "9": 1505
+    },
+    "normal_coordinates": [
+      "s3",
+      "s4",
+      "s5",
+      "s6",
+      "t2",
+      "t3",
+      "t4"
+    ],
+    "power_search_bound": 50,
+    "prime": 32003,
+    "quotient_length": 195,
+    "returncode": 0,
+    "status": "completed",
+    "stderr_tail": "",
+    "stdout_tail": "META 0 195 181\nPOWER s3 13\nPOWER s4 7\nPOWER s5 5\nPOWER s6 4\nPOWER t2 13\nPOWER t3 7\nPOWER t4 5\n",
+    "stratum": "generic_allowed_base"
+  },
+  "null_quadratic_generic_residual_normal_probe": {
+    "allowed_values": {
+      "s0": 20,
+      "s1": 27,
+      "s2": 36,
+      "t0": 47,
+      "t1": 60
+    },
+    "coordinate_power_memberships": {
+      "s3": 0,
+      "t2": 0,
+      "t3": 0,
+      "t4": 2
+    },
+    "dimension": 3,
+    "groebner_basis_size": 2,
+    "interpretation": "a zero-dimensional homogeneous residual symbol ideal proves transverse isolation on a nonempty characteristic-zero open subset after the three linear pivots; it does not cover the pivot or rank-drop divisors",
+    "linear_pivot_coordinates": [
+      "s4",
+      "s5",
+      "s6"
+    ],
+    "minimum_normal_degrees": {
+      "10": 3,
+      "11": 3,
+      "12": 3,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 2,
+      "6": 2,
+      "7": 2,
+      "8": 2,
+      "9": 3
+    },
+    "nonzero_residual_symbol_orders": [
+      5,
+      6,
+      9
+    ],
+    "power_search_bound": 50,
+    "prime": 32003,
+    "quotient_length": -1,
+    "residual_normal_coordinates": [
+      "s3",
+      "t2",
+      "t3",
+      "t4"
+    ],
+    "residual_symbol_term_counts": {
+      "5": 2,
+      "6": 1,
+      "9": 1
+    },
+    "returncode": 0,
+    "status": "completed",
+    "stderr_tail": "",
+    "stdout_tail": "META 3 -1 2\nPOWER s3 0\nPOWER t2 0\nPOWER t3 0\nPOWER t4 2\n"
+  },
+  "null_quadratic_normal_rank_locus": {
+    "active_symbol_rows": 3,
+    "dimension": 4,
+    "generic_rank": 3,
+    "groebner_basis_size": 4,
+    "interpretation": "finite-field rank-drop locus of the exact linear normal symbol matrix; positive dimension requires higher-symbol analysis on its components",
+    "maximal_minors": 5,
+    "minor_factorization": {
+      "active_moment_orders": [
+        2,
+        3,
+        4
+      ],
+      "common_factor": "(27*s2**3 - 468*s2**2 - 156*s2*t1**2 + 429*s2 - 572*t1**2 - 429)/27",
+      "common_factor_degree": 3,
+      "common_factor_factorization": [
+        [
+          "27*s2**3 - 468*s2**2 - 156*s2*t1**2 + 429*s2 - 572*t1**2 - 429",
+          1
+        ]
+      ],
+      "exact_matrix": [
+        [
+          "0",
+          "-1080*s2",
+          "432*s1",
+          "-72*s0",
+          "0",
+          "-1344*t1",
+          "336*t0"
+        ],
+        [
+          "0",
+          "0",
+          "311040*t1*(s2 + 2)",
+          "-51840*(2*s1*t1 - s2*t0 + 3*t0)",
+          "0",
+          "0",
+          "51840*(3*s2**2 - 3*s2 + 4*t1**2 + 7)"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "414720*(27*s2**3 - 468*s2**2 - 156*s2*t1**2 + 429*s2 - 572*t1**2 - 429)",
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      "nonzero_minor_column_sets": [
+        [
+          "s4",
+          "s5",
+          "s6"
+        ],
+        [
+          "s4",
+          "s6",
+          "t4"
+        ],
+        [
+          "s5",
+          "s6",
+          "t3"
+        ],
+        [
+          "s5",
+          "s6",
+          "t4"
+        ],
+        [
+          "s6",
+          "t3",
+          "t4"
+        ]
+      ],
+      "nonzero_rank_three_minors": 5,
+      "quotient_minor_count": 5,
+      "status": "exact characteristic-zero biform differentiation and gcd"
+    },
+    "multiplicity": 3,
+    "quotient_minor_groebner_basis_size": 4,
+    "quotient_minor_locus_dimension": 3,
+    "quotient_minor_locus_multiplicity": 4,
+    "returncode": 0,
+    "status": "completed",
+    "stderr_tail": "",
+    "stdout_tail": "META 5 4 3 4 3 4 4\n"
+  },
+  "null_quadratic_normal_symbols": {
+    "active_linear_symbol_matrix": [
+      [
+        "0",
+        "-1080*s2",
+        "432*s1",
+        "-72*s0",
+        "0",
+        "-1344*t1",
+        "336*t0"
+      ],
+      [
+        "0",
+        "0",
+        "14023*t1-8990*s2*t1",
+        "4495*t0-12166*s2*t0-7671*s1*t1",
+        "0",
+        "0",
+        "10847+15342*t1^2+4495*s2-4495*s2^2"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "-10203-13604*t1^2+10203*s2+13746*s2*t1^2+9235*s2^2-3610*s2^3",
+        "0",
+        "0",
+        "0"
+      ]
+    ],
+    "allowed_coordinates": [
+      "s0",
+      "s1",
+      "s2",
+      "t0",
+      "t1"
+    ],
+    "exact_linear_symbol_factorization": {
+      "active_moment_orders": [
+        2,
+        3,
+        4
+      ],
+      "common_factor": "(27*s2**3 - 468*s2**2 - 156*s2*t1**2 + 429*s2 - 572*t1**2 - 429)/27",
+      "common_factor_degree": 3,
+      "common_factor_factorization": [
+        [
+          "27*s2**3 - 468*s2**2 - 156*s2*t1**2 + 429*s2 - 572*t1**2 - 429",
+          1
+        ]
+      ],
+      "exact_matrix": [
+        [
+          "0",
+          "-1080*s2",
+          "432*s1",
+          "-72*s0",
+          "0",
+          "-1344*t1",
+          "336*t0"
+        ],
+        [
+          "0",
+          "0",
+          "311040*t1*(s2 + 2)",
+          "-51840*(2*s1*t1 - s2*t0 + 3*t0)",
+          "0",
+          "0",
+          "51840*(3*s2**2 - 3*s2 + 4*t1**2 + 7)"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "414720*(27*s2**3 - 468*s2**2 - 156*s2*t1**2 + 429*s2 - 572*t1**2 - 429)",
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      "nonzero_minor_column_sets": [
+        [
+          "s4",
+          "s5",
+          "s6"
+        ],
+        [
+          "s4",
+          "s6",
+          "t4"
+        ],
+        [
+          "s5",
+          "s6",
+          "t3"
+        ],
+        [
+          "s5",
+          "s6",
+          "t4"
+        ],
+        [
+          "s6",
+          "t3",
+          "t4"
+        ]
+      ],
+      "nonzero_rank_three_minors": 5,
+      "quotient_minor_count": 5,
+      "status": "exact characteristic-zero biform differentiation and gcd"
+    },
+    "forbidden_coordinates": [
+      "s3",
+      "s4",
+      "s5",
+      "s6",
+      "t2",
+      "t3",
+      "t4"
+    ],
+    "interpretation": "rank three gives three generic first-order pivots on the null-quadratic chart; the other four normal directions begin in quadratic or cubic order",
+    "maximum_rank": 3,
+    "moment_orders": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "normalization": "F_2=X^2",
+    "orders": [
+      {
+        "linear_sync_normal_terms": 5,
+        "minimum_sync_normal_degree": 1,
+        "moment_terms": 7,
+        "nonzero_linear_normal_coordinates": [
+          "s4",
+          "s5",
+          "s6",
+          "t3",
+          "t4"
+        ],
+        "order": 2
+      },
+      {
+        "linear_sync_normal_terms": 9,
+        "minimum_sync_normal_degree": 1,
+        "moment_terms": 26,
+        "nonzero_linear_normal_coordinates": [
+          "s5",
+          "s6",
+          "t4"
+        ],
+        "order": 3
+      },
+      {
+        "linear_sync_normal_terms": 6,
+        "minimum_sync_normal_degree": 1,
+        "moment_terms": 93,
+        "nonzero_linear_normal_coordinates": [
+          "s6"
+        ],
+        "order": 4
+      },
+      {
+        "linear_sync_normal_terms": 0,
+        "minimum_sync_normal_degree": 2,
+        "moment_terms": 263,
+        "nonzero_linear_normal_coordinates": [],
+        "order": 5
+      },
+      {
+        "linear_sync_normal_terms": 0,
+        "minimum_sync_normal_degree": 2,
+        "moment_terms": 715,
+        "nonzero_linear_normal_coordinates": [],
+        "order": 6
+      },
+      {
+        "linear_sync_normal_terms": 0,
+        "minimum_sync_normal_degree": 2,
+        "moment_terms": 1760,
+        "nonzero_linear_normal_coordinates": [],
+        "order": 7
+      },
+      {
+        "linear_sync_normal_terms": 0,
+        "minimum_sync_normal_degree": 2,
+        "moment_terms": 4101,
+        "nonzero_linear_normal_coordinates": [],
+        "order": 8
+      },
+      {
+        "linear_sync_normal_terms": 0,
+        "minimum_sync_normal_degree": 3,
+        "moment_terms": 8702,
+        "nonzero_linear_normal_coordinates": [],
+        "order": 9
+      },
+      {
+        "linear_sync_normal_terms": 0,
+        "minimum_sync_normal_degree": 3,
+        "moment_terms": 17739,
+        "nonzero_linear_normal_coordinates": [],
+        "order": 10
+      },
+      {
+        "linear_sync_normal_terms": 0,
+        "minimum_sync_normal_degree": 3,
+        "moment_terms": 34631,
+        "nonzero_linear_normal_coordinates": [],
+        "order": 11
+      },
+      {
+        "linear_sync_normal_terms": 0,
+        "minimum_sync_normal_degree": 3,
+        "moment_terms": 65598,
+        "nonzero_linear_normal_coordinates": [],
+        "order": 12
+      }
+    ],
+    "prime": 32003,
+    "rank_certificate": {
+      "allowed_values": {
+        "s0": 20,
+        "s1": 27,
+        "s2": 36,
+        "t0": 47,
+        "t1": 60
+      },
+      "determinant_mod_prime": 30660,
+      "moment_orders": [
+        2,
+        3,
+        4
+      ],
+      "normal_coordinates": [
+        "s4",
+        "s5",
+        "s6"
+      ]
+    },
+    "sample_ranks": [
+      {
+        "allowed_values": {
+          "s0": 20,
+          "s1": 27,
+          "s2": 36,
+          "t0": 47,
+          "t1": 60
+        },
+        "rank": 3,
+        "sample": 1
+      }
+    ],
+    "status": "exact characteristic-zero generic-rank certificate via J_sync-linear symbols reduced at one good prime"
+  },
+  "status": "exact parameter comparison and characteristic-zero nonrelation certificates plus the null-quadratic synchronization normal symbols; direct zero-fiber probes are optional and were not run"
 }

@@ -165,7 +165,40 @@
       "potential": "t*(x+y^3)+u*y"
     }
   },
-  "format": "projective-gradient-segre-registry-v1",
+  "downstream_consumers": {
+    "hc4_binary_root_partition_segre": {
+      "artifact": "artifacts/generated-results/hc4_binary_root_partition_segre.json",
+      "checker": "scripts/verify_hc4_binary_root_partition_segre.py",
+      "generic_double_root_packet": {
+        "forced_sigma2": 1,
+        "rows_for_affine_degrees_2_and_3": [
+          51,
+          50
+        ]
+      },
+      "independent_checker": "scripts/verify_hc4_binary_root_partition_segre.m2",
+      "status": "implemented PGS3 active-unit sieve on singular essential binary quintic root partitions"
+    },
+    "hc4_codimension_three_gradient_strata": {
+      "artifact": "artifacts/generated-results/hc4_codim3_gradient_strata.json",
+      "checker": "scripts/verify_hc4_codim3_gradient_strata.py",
+      "independent_checker": "scripts/verify_hc4_codim3_gradient_strata.m2",
+      "status": "implemented rank-two constant-kernel/Schur sieve and rank-three ordinary-singularity incidence"
+    },
+    "hc4_quintic_infinity_rees_strata": {
+      "artifact": "artifacts/generated-results/hc4_quintic_infinity_rees_strata.json",
+      "checker": "scripts/analyze_hc4_quintic_infinity_rees.py",
+      "independent_rees_checker": "scripts/verify_hc4_quintic_infinity_rees_strata.m2",
+      "status": "implemented universal top-gradient and support-codimension sieve; singular lower-layer normal-cone multiplicities remain open"
+    },
+    "hc4_rank3_vertex_colength": {
+      "artifact": "artifacts/generated-results/hc4_rank3_vertex_colength.json",
+      "checker": "scripts/verify_hc4_rank3_vertex_colength.py",
+      "independent_checker": "scripts/verify_hc4_rank3_vertex_colength.m2",
+      "status": "implemented lower-layer filtered-length obstruction; both codimension-four affine-degree-two/three rows excluded"
+    }
+  },
+  "format": "projective-gradient-segre-registry-v3",
   "quadratic_stabilization_calibrations": {
     "triangular_r2": {
       "after_one_quadratic_variable": {
@@ -247,6 +280,30 @@
     }
   },
   "scope": "The transform and compactification constructors are exact in all dimensions. Complete projective/Segre lists are recorded only where independently computed. A top generic degree determines only the weighted aggregate correction, not the individual Segre degrees. Boundary normalization data and Hessian rank data are therefore not silently promoted to Segre classes.",
+  "singular_essential_normal_slice_theorem": {
+    "active_dvr_profile": "(generic rank rho, torsion orders a_j)",
+    "artifact": "artifacts/generated-results/projective_gradient_singular_slices.json",
+    "base_codimension": "r-s",
+    "checker": "scripts/verify_projective_gradient_singular_slices.py",
+    "independent_checker": "scripts/verify_projective_gradient_singular_slices.m2",
+    "joined_support": "Join(P^(n-r-1),C)",
+    "parameters": "(ambient dimension n, map degree m, essential rank r, singular-component dimension s and degree d)",
+    "status": "proved support and DVR-profile law in all dimensions",
+    "transverse_jacobian_length": "mu",
+    "truncated_active_length": "m*rho+sum_j min(m,a_j)"
+  },
+  "smooth_essential_normal_slice_theorem": {
+    "artifact": "artifacts/generated-results/projective_gradient_normal_slices.json",
+    "base_codimension": "r+1",
+    "checker": "scripts/verify_projective_gradient_normal_slices.py",
+    "filtered_drop": "(m-q)*dim(B*s)",
+    "independent_checker": "scripts/verify_projective_gradient_normal_slices.m2",
+    "jacobian_length": "m^r",
+    "kernel_vertex": "P^(n-r-1)",
+    "parameters": "(ambient dimension n, map degree m, essential rank r)",
+    "status": "proved in all dimensions and map degrees m>=2",
+    "truncated_active_length": "m^(r+1)"
+  },
   "top_degree_controls_and_open_records": {
     "homogeneous_cotangent_hn_38": {
       "affine_degree": null,

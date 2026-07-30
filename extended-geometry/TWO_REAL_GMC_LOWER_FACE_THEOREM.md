@@ -22,6 +22,24 @@ where \(S\subset\mathbb Z\) is finite and
 > **Corollary.** The Gaussian Moments Conjecture holds in two real
 > variables.
 
+Christopher D. Long's contemporaneous
+[factorially weighted multitorus theorem](FACTORIALLY_WEIGHTED_MULTITORUS_THEOREM.md)
+contains this result as its rank-one Gaussian specialization and proves the
+stronger statements
+
+\[
+ \mathbb E(P^m)=0\ (m\gg0)
+ \Longleftrightarrow
+ \mathbb E(P^m)=0\ (m\geq1)
+ \Longleftrightarrow
+ 0\notin\operatorname{conv}(S),
+\]
+
+together with nonvanishing at \(rp\) for every sufficiently large prime
+\(p\) when \(0\in\operatorname{conv}(S)\).  The checked-in Lean theorem
+formalizes the all-positive-power implication used for GMC(2), not these
+stronger quantifiers or arbitrary torus rank.
+
 This contains the three-level, unit-star, arbitrary-star, and circuit
 results without a graph hypothesis.
 
@@ -141,6 +159,17 @@ The constant-term theorem finds a nonzero angular moment on that face;
 prime dilation transports it to a Gaussian moment whose lowest factorial
 term cannot cancel.  Leaf removal, star rigidity, and toric tie analysis
 are finite presentations of this single lower-face obstruction.
+
+Long's arbitrary-torus theorem shows that this mechanism is one-radial, not
+one-angular: the torus-weight lattice may have any finite rank.  What fails
+for ordinary higher-dimensional Gaussian expectation is the replacement of
+one factorial radial degree by several independent radial degrees and a
+product of factorials.
+
+The one-sided-support conclusion also gives the orthogonal-nullcone
+classification.  In circular coordinates the one-parameter subgroup
+\((Z,W)\mapsto(tZ,t^{-1}W)\), or its inverse, drives \(P\) to zero and lies
+in \(\operatorname{SO}_2(\mathbb C)\).
 
 The same proof applies to a broad class of weighted constant-term
 functionals once factorial divisibility is replaced by normalized prime

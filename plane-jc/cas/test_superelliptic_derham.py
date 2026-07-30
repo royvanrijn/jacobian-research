@@ -14,6 +14,7 @@ ENGINE = importlib.util.module_from_spec(SPEC)
 SPEC.loader.exec_module(ENGINE)
 
 SuperellipticDeRham = ENGINE.SuperellipticDeRham
+scalar_picard_fuchs = ENGINE.scalar_picard_fuchs
 weighted_wronskian_compatibility = ENGINE.weighted_wronskian_compatibility
 
 t = sp.symbols("t")
@@ -119,6 +120,43 @@ for matrix in connection.matrices:
             sp.Poly(denominator, u), sp.Poly(-discriminant, u)
         ) == 0
 
+# Scalarization of the u-connection gives a certified second-order
+# Picard--Fuchs operator for the period of dt/y.  The coefficient convention
+# is low derivative order first.
+elliptic_pf = scalar_picard_fuchs(connection, u, (1, 0))
+assert elliptic_pf.order == 2
+assert all(
+    sp.expand(observed - expected) == 0
+    for observed, expected in zip(
+        elliptic_pf.polynomial_coefficients,
+        (
+            7 * u,
+            48 * u**2,
+            4 * (4 * u**3 + 27 * v**2),
+        ),
+        strict=True,
+    )
+)
+elliptic_vectors = tuple(sp.Matrix(vector) for vector in elliptic_pf.cyclic_vectors)
+for previous, following in zip(elliptic_vectors, elliptic_vectors[1:]):
+    assert following == (
+        Mu * previous + previous.diff(u)
+    ).applyfunc(sp.cancel)
+assert (
+    sum(
+        (
+            coefficient * vector
+            for coefficient, vector in zip(
+                elliptic_pf.coefficients,
+                elliptic_vectors,
+                strict=True,
+            )
+        ),
+        sp.zeros(2, 1),
+    ).applyfunc(sp.cancel)
+    == sp.zeros(2, 1)
+)
+
 # The actual plane-block rank also works without specializing to genus one.
 # This one-parameter degree-eight slice gives a dense 6x6 connection whose
 # denominators are scalar multiples of the slice discriminant.
@@ -135,9 +173,60 @@ for value in plane_matrix:
     denominator = sp.factor(sp.denom(sp.cancel(value)))
     assert not sp.cancel(denominator / plane_discriminant).has(plane_u)
 
+# The first genus-three basis period is cyclic of full order six.  Its
+# scalar leading coefficient contains plane_u^2 in addition to the
+# discriminant.  Since the matrix itself is regular at plane_u=0, that
+# factor is a cyclic-vector/apparent singularity rather than a degeneration
+# of the underlying connection.
+plane_pf = scalar_picard_fuchs(
+    plane_connection,
+    plane_u,
+    (1, 0, 0, 0, 0, 0),
+)
+assert plane_pf.order == 6
+assert all(
+    sp.expand(observed - expected) == 0
+    for observed, expected in zip(
+        plane_pf.polynomial_coefficients,
+        (
+            75699135 * plane_u**3,
+            4457250000 * plane_u**4,
+            8825811120 * plane_u**5,
+            5003389440 * plane_u**6,
+            128 * (8586810 * plane_u**7 + 823543),
+            128 * plane_u * (769824 * plane_u**7 - 823543),
+            64 * plane_u**2 * (46656 * plane_u**7 + 823543),
+        ),
+        strict=True,
+    )
+)
+plane_vectors = tuple(sp.Matrix(vector) for vector in plane_pf.cyclic_vectors)
+assert (
+    sum(
+        (
+            coefficient * vector
+            for coefficient, vector in zip(
+                plane_pf.coefficients,
+                plane_vectors,
+                strict=True,
+            )
+        ),
+        sp.zeros(6, 1),
+    ).applyfunc(sp.cancel)
+    == sp.zeros(6, 1)
+)
+assert plane_discriminant.subs(plane_u, 0) != 0
+assert all(
+    sp.denom(sp.cancel(value)).subs(plane_u, 0) != 0
+    for value in plane_matrix
+)
+
 print("PASS: superelliptic Hermite/de Rham reduction")
 print("PASS: (72,108) gives 11 solved coefficients and 6 compact obstructions")
 print("PASS: character dimensions sum to compact H^1_deRham")
 print("PASS: trivial character descends to a rational quotient differential")
 print("PASS: elliptic Gauss--Manin matrices are flat with discriminant poles")
 print("PASS: genus-three plane slice has a dense 6x6 Gauss--Manin matrix")
+print("PASS: elliptic period has a certified order-2 Picard--Fuchs operator")
+print("PASS: genus-three period has a certified order-6 scalar operator")
+print("PASS: scalar cyclic-vector singularities are separated from the discriminant")

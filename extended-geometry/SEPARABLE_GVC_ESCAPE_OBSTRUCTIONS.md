@@ -1613,10 +1613,20 @@ The results leave four sharply separated directions.
    the \(r=3\) row to eight top forms, and the
    [degree-five frontier theorem](BINARY_DEGREE_FIVE_GVC_FRONTIER.md)
    closes all eight correction systems.  It also closes the \(r=4\)
-   squarefree-quartic row uniformly in its cross-ratio.  The exact
-   remaining degree-five frontier is therefore the genuinely
-   nonhomogeneous \(r=4\) strata with non-squarefree leading quartic
-   symbol; their arbitrary higher jets have not been eliminated.
+   squarefree-quartic row uniformly in its cross-ratio.  The
+   [quadruple-root quartic theorem](BINARY_QUARTIC_QUADRUPLE_ROOT_GVC.md)
+   now closes the partition \((4)\), with arbitrary lower symbol terms
+   and arbitrary higher operator jets.  The
+   [triple-plus-simple theorem](BINARY_QUARTIC_TRIPLE_SIMPLE_ROOT_GVC.md)
+   and [double-root theorem](BINARY_QUARTIC_DOUBLE_ROOT_GVC.md)
+   close the other three quartic partitions.  Therefore every binary
+   operator satisfies GVC through polynomial degree five, and the next
+   nonhomogeneous degree frontier begins at six.  The
+   [complete quintic-leading sextic theorem](BINARY_QUINTIC_ALL_ROOT_PARTITIONS_GVC.md)
+   closes the entire \((r,\deg P)=(5,6)\) row, including every quintic
+   root partition and arbitrary higher jets.  The later quartic- and
+   cubic-leading sextic theorems close \(r=4\) and \(r=3\), respectively.
+   Only \(r=2\) remains open in degree six.
    Theorem 3.1 has already removed every fixed leading face.
 3. **Coupled coefficient polarization.**  A one-coefficient translation
    is exactly the split-symbol class, while coefficient extraction of the

@@ -75,6 +75,108 @@ class GaussManinConnection:
     matrices: tuple[sp.Matrix, ...]
 
 
+@dataclass(frozen=True)
+class ScalarPicardFuchs:
+    """A scalar operator extracted from a Gauss--Manin connection.
+
+    ``coefficients`` are ordered from derivative order zero upward and are
+    monic in the highest derivative.  ``polynomial_coefficients`` are the
+    same relation after clearing their common rational denominator and
+    removing a common polynomial factor.  ``cyclic_vectors`` includes orders
+    zero through ``order`` and certifies that the period of ``section`` and
+    its successive derivatives are represented by those basis-coordinate
+    columns.
+    """
+
+    parameter: sp.Symbol
+    section: tuple[sp.Expr, ...]
+    cyclic_vectors: tuple[tuple[sp.Expr, ...], ...]
+    coefficients: tuple[sp.Expr, ...]
+    polynomial_coefficients: tuple[sp.Expr, ...]
+
+    @property
+    def order(self) -> int:
+        return len(self.coefficients) - 1
+
+
+def _primitive_polynomial_coefficients(
+    coefficients: tuple[sp.Expr, ...],
+) -> tuple[sp.Expr, ...]:
+    denominators = [
+        sp.denom(sp.cancel(coefficient)) for coefficient in coefficients
+    ]
+    clearing_factor = sp.lcm(denominators)
+    cleared = [
+        sp.factor(sp.cancel(clearing_factor * coefficient))
+        for coefficient in coefficients
+    ]
+    common = sp.gcd_list(cleared)
+    if common not in (0, 1, -1):
+        cleared = [sp.factor(sp.cancel(value / common)) for value in cleared]
+    if cleared[-1].could_extract_minus_sign():
+        cleared = [-value for value in cleared]
+    return tuple(cleared)
+
+
+def scalar_picard_fuchs(
+    connection: GaussManinConnection,
+    parameter: sp.Symbol,
+    section: Iterable[sp.Expr],
+) -> ScalarPicardFuchs:
+    """Extract the first scalar Picard--Fuchs relation for a period.
+
+    The connection convention is ``nabla(e) = e*M`` for the row basis
+    ``e``.  If a section has coordinate column ``v``, differentiation of its
+    periods is therefore represented by
+
+        delta(v) = d(v)/d(parameter) + M*v.
+
+    The first linear dependence among ``v, delta(v), ...`` gives a scalar
+    differential operator.  The returned cyclic vectors and dependence are
+    an exact certificate over the rational function field.
+    """
+
+    if parameter not in connection.parameters:
+        raise ValueError("the parameter is not present in the connection")
+    matrix = connection.matrices[connection.parameters.index(parameter)]
+    coordinates = tuple(sp.cancel(value) for value in section)
+    if len(coordinates) != len(connection.basis):
+        raise ValueError("the section must have one coordinate per basis element")
+    if not any(coordinates):
+        raise ValueError("the zero section has no distinguished scalar operator")
+
+    vectors = [sp.Matrix(coordinates)]
+    dimension = len(connection.basis)
+    for _order in range(1, dimension + 1):
+        previous = vectors[-1]
+        candidate = (
+            previous.diff(parameter) + matrix * previous
+        ).applyfunc(sp.cancel)
+        span = sp.Matrix.hstack(*vectors)
+        augmented = span.row_join(candidate)
+        if augmented.rank() == span.rank():
+            dependence = span.gauss_jordan_solve(candidate)[0]
+            coefficients = tuple(
+                [sp.factor(-sp.cancel(value)) for value in dependence]
+                + [sp.S.One]
+            )
+            cyclic_vectors = tuple(
+                tuple(sp.cancel(value) for value in vector)
+                for vector in [*vectors, candidate]
+            )
+            return ScalarPicardFuchs(
+                parameter=parameter,
+                section=coordinates,
+                cyclic_vectors=cyclic_vectors,
+                coefficients=coefficients,
+                polynomial_coefficients=_primitive_polynomial_coefficients(
+                    coefficients
+                ),
+            )
+        vectors.append(candidate)
+    raise ArithmeticError("no scalar relation within the connection rank")
+
+
 class SuperellipticDeRham:
     """Hermite reduction on the smooth model of ``y**a = A(t)``.
 

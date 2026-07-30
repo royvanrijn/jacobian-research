@@ -7,6 +7,15 @@ least three.  Nevertheless, the lower-face/prime-isolation proof in two real
 variables has a genuine multiradial extension on a large, explicitly
 checkable class of supports.
 
+This must be distinguished from Christopher D. Long's
+[factorially weighted multitorus theorem](FACTORIALLY_WEIGHTED_MULTITORUS_THEOREM.md).
+Long permits an arbitrary-rank angular torus but retains one radial variable
+with moment \(n!\); in that setting no support restriction is needed.  The
+present note treats ordinary higher-dimensional Gaussian expectation, where
+there are several radial variables and the moment is \(\prod_i n_i!\).
+Thus Long's theorem removes angular rank from the obstruction and isolates
+independent radial rank as the issue addressed here.
+
 The correct condition is slightly stronger and cleaner than uniqueness on
 one exposed face:
 

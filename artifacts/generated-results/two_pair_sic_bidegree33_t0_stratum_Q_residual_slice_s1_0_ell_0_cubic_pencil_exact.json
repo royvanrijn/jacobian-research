@@ -1,0 +1,22 @@
+{
+  "all_tested_components_excluded_through_mu7": false,
+  "checkpoint": "/home/royvanrijn/src/jacobian-research/artifacts/generated-results/two_pair_sic_bidegree33_t0_stratum_Q_residual_slice_s1_0_ell_0_matrices67_exact.json",
+  "format": "two-pair-sic-bidegree33-t0-Q-residual-pencil-resume-v1",
+  "mu6_mu7_factor_tests": [
+    {
+      "c1_extension_root_degree": -1,
+      "c1_extension_root_terms": 0,
+      "c1_zero_in_factor_field": true,
+      "degree": 3,
+      "excluded_by_c1": false,
+      "excluded_through_mu7": false,
+      "factor": "909*T**3 + 25521*T**2 + 6189560*T - 22223500",
+      "joint_rank_full": false,
+      "mu6_norm_multiplicity": 12,
+      "nonzero_block_minor_columns_zero_based": null
+    }
+  ],
+  "pencil_factor_degree": 3,
+  "reproduction_command": "scripts/research_two_pair_sic_bidegree33_t0_Q_residual.py --resume-checkpoint artifacts/generated-results/two_pair_sic_bidegree33_t0_stratum_Q_residual_slice_s1_0_ell_0_matrices67_exact.json --pencil-factor-degree 3 --output artifacts/generated-results/two_pair_sic_bidegree33_t0_stratum_Q_residual_slice_s1_0_ell_0_cubic_pencil_exact.json",
+  "status": "exact characteristic-zero pencil-coefficient test resumed from exact multiplication matrices"
+}

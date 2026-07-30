@@ -20,6 +20,11 @@ block by [`cas/laurent_band_frontend.py`](cas/laurent_band_frontend.py); see
 interface has narrowed to deriving an exhaustive normalized polygon list from
 an admissible corner chain.
 
+The Gauss--Manin layer now also has an exact cyclic-vector scalarizer.  It
+returns the first scalar Picard--Fuchs operator together with all Krylov
+coordinate vectors, so the differential relation can be checked without
+integrating periods.
+
 This is an engine for a leading coefficient block once its Newton bands and
 supports have been derived.  It does **not** derive Laurent polygons from an
 admissible corner chain.  That is the principal missing interface for the
@@ -287,6 +292,59 @@ matrix with poles only on its discriminant.  This promotes the fiberwise de
 Rham reducer to a family-level engine; the plane-JC obstruction itself is a
 generally non-horizontal section.
 
+For a connection matrix \(M\) with the convention
+\(\nabla(e)=eM\), a section with coordinate column \(v_0\) has successive
+period derivatives represented by
+
+\[
+ v_{k+1}=\partial_u v_k+Mv_k.                            \tag{17}
+\]
+
+`scalar_picard_fuchs(...)` constructs these columns until their first exact
+linear dependence.  If
+
+\[
+ v_r+\sum_{k=0}^{r-1}c_kv_k=0,
+\]
+
+then every period of the section satisfies
+
+\[
+ \Pi^{(r)}+\sum_{k=0}^{r-1}c_k\Pi^{(k)}=0.               \tag{18}
+\]
+
+The returned certificate contains both the monic rational coefficients and
+their primitive polynomial clearing.
+
+For the elliptic regression \(y^2=t^3+ut+v\), the period of \(dt/y\) has the
+certified operator
+
+\[
+ \boxed{
+ 4(4u^3+27v^2)\Pi''+48u^2\Pi'+7u\Pi=0.
+ }                                                       \tag{19}
+\]
+
+For the genus-three slice \(y^2=t^8+qt^7+t\), the first basis period is cyclic
+of full order six.  Writing \(\sum_{k=0}^6c_k(q)\Pi^{(k)}=0\), its primitive
+coefficient vector is
+
+\[
+\begin{aligned}
+(c_0,\ldots,c_6)=(&75699135q^3,\ 4457250000q^4,\
+8825811120q^5,\ 5003389440q^6,\\
+&128(8586810q^7+823543),\
+128q(769824q^7-823543),\\
+&64q^2(46656q^7+823543)).
+\end{aligned}                                           \tag{20}
+\]
+
+The connection matrix is regular at \(q=0\), while the scalar leading
+coefficient contains \(q^2\).  Thus \(q=0\) is an exact cyclic-vector
+singularity, not a degeneration of the Gauss--Manin connection.  This is a
+small certified model of the distinction between a connection discriminant
+and removable or apparent factors of a scalar Picard--Fuchs operator.
+
 ## 8. Frontier experiments
 
 ### `(96,144)`
@@ -345,6 +403,9 @@ PASS: character dimensions sum to compact H^1_deRham
 PASS: trivial character descends to a rational quotient differential
 PASS: elliptic Gauss--Manin matrices are flat with discriminant poles
 PASS: genus-three plane slice has a dense 6x6 Gauss--Manin matrix
+PASS: elliptic period has a certified order-2 Picard--Fuchs operator
+PASS: genus-three period has a certified order-6 scalar operator
+PASS: scalar cyclic-vector singularities are separated from the discriminant
 ```
 
 The compiler certificate is checked separately:

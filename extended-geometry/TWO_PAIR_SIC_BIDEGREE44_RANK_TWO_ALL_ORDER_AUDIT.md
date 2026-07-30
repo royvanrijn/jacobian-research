@@ -118,13 +118,23 @@ The required order is:
    function field, inside that exact-rank-two open;
 3. specialize (2.5), produce a checkable
    creative-telescoping recurrence, and evaluate \(\mu_{14}\) and any
-   later bridge values it requires.
+   later bridge values it requires;
+4. only after that characteristic-zero certificate exists, store primitive
+   integral period/raw-moment companion forms, their singular-step ledgers,
+   and selected good-prime \(p\)-curvatures.  Prime-power conclusions must
+   use the uncancelled step ledger rather than only the generic curvature
+   characteristic polynomial.
 
 If the recurrence propagates zero, a fixed mixed multiplier must still be
 tested before the point becomes an SIC witness.  If a tail moment is
 nonzero, that exact value is the desired obstruction for that closed
 point; excluding rank two globally would require treating every
 semistable component.
+
+Step 4 is calibrated by
+[`TWO_PAIR_SIC_FROBENIUS_CURVATURE_BRIDGE.md`](TWO_PAIR_SIC_FROBENIUS_CURVATURE_BRIDGE.md).
+It does not unpark the present scalar recurrence: the missing exact closed
+point or component in step 2 remains the prior obstruction.
 
 Independently, certifying the remaining squarefree rank-one target-only
 membership

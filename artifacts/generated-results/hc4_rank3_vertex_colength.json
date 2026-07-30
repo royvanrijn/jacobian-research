@@ -1,0 +1,99 @@
+{
+  "atlas_intersection": {
+    "affine_degree_2": {
+      "excluded_projective_degrees": [
+        1,
+        4,
+        16,
+        64,
+        2
+      ],
+      "excluded_segre_degrees": [
+        0,
+        0,
+        0,
+        254
+      ],
+      "rows_after": 318,
+      "rows_before": 319,
+      "rows_excluded": 1
+    },
+    "affine_degree_3": {
+      "excluded_projective_degrees": [
+        1,
+        4,
+        16,
+        64,
+        3
+      ],
+      "excluded_segre_degrees": [
+        0,
+        0,
+        0,
+        253
+      ],
+      "rows_after": 306,
+      "rows_before": 307,
+      "rows_excluded": 1
+    }
+  },
+  "fermat_calibration": {
+    "B": "QQ[u1,u2,u3]/(u1^4,u2^4,u3^4)",
+    "dimension_B_times_s3": 16,
+    "length_epsilon_s3_ideal": 48,
+    "role": "calibration, not the universal proof",
+    "s3": "u1^3"
+  },
+  "filtered_flatness": {
+    "active_regular_sequence_length": 3,
+    "ambient_complete_local_ring_dimension": 4,
+    "associated_graded": "B tensor k[epsilon]/(epsilon^4)",
+    "epsilon_is_nonzerodivisor": true,
+    "free_rank_over_k_power_series_epsilon": 64,
+    "truncated_length": 256
+  },
+  "format": "hc4-rank3-vertex-colength-v1",
+  "local_chart": {
+    "active_generators": "G_i=partial_i(h5)+epsilon*partial_i(h4)+epsilon^2*partial_i(h3)+epsilon^3*partial_i(h2)",
+    "compactifying_parameter": "epsilon=X0",
+    "missing_generator": "G_t=epsilon*s3+epsilon^2*D_t(h3)+epsilon^3*D_t(h2)",
+    "s3": "D_t(h4), a nonzero ternary cubic in the nonaligned branch",
+    "vertex_chart": "t=1"
+  },
+  "nonaligned_colength_bound": {
+    "conclusion": "delta>=6",
+    "identity": "length(A*G_t)=256-sigma_4=delta",
+    "minimum_dimension_B_times_s3": 2,
+    "minimum_length_A_times_G_t": 6,
+    "nonzero_epsilon_layers": 3,
+    "s3_degree": 3
+  },
+  "scope": "Exact filtered-length obstruction for the smooth essential rank-three top-quintic stratum. The universal conclusion is delta>=6 in the nonaligned branch; the aligned branch is already excluded by HC4CD5. The Fermat computation is a calibration only.",
+  "smooth_top_complete_intersection": {
+    "generator_degrees": [
+      4,
+      4,
+      4
+    ],
+    "hilbert_function": [
+      1,
+      3,
+      6,
+      10,
+      12,
+      12,
+      10,
+      6,
+      3,
+      1
+    ],
+    "length": 64,
+    "socle_degree": 9
+  },
+  "software_assumptions": {
+    "coefficient_field": "characteristic zero",
+    "independent_calibration": "Macaulay2 over QQ",
+    "python": "dependency-free exact integer arithmetic"
+  },
+  "theorem_consequence": "No affine-degree-two or affine-degree-three HC4 candidate has a smooth essential rank-three quintic top. Equivalently, both codimension-four quartic-gradient atlas rows are empty."
+}

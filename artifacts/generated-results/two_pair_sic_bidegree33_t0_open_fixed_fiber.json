@@ -1,0 +1,40 @@
+{
+  "adapted_factor_values": {
+    "H": "26668476",
+    "J": "7077924",
+    "K": "7827",
+    "Q": "51"
+  },
+  "adjoined_moments": [
+    "mu_6"
+  ],
+  "base_equation": "mu_3=0",
+  "base_values": {
+    "s1": "-3",
+    "s2": "-3",
+    "s3": "33467/26028",
+    "t1": "0",
+    "t2": "1",
+    "u": "3"
+  },
+  "branch": "t0-open exact fixed rank-six fiber",
+  "characteristic": 0,
+  "fiber_ideal": [
+    "mu_4",
+    "mu_5"
+  ],
+  "fiber_variables": [
+    "s6",
+    "s5"
+  ],
+  "groebner_basis_size": 3,
+  "leading_exponents": [
+    "2,0",
+    "1,2",
+    "0,4"
+  ],
+  "quotient_length": 6,
+  "reproduction_command": "scripts/verify_two_pair_sic_bidegree33_corrected_boundary.py --branch generic --prime 0 --t0-open-fixed-fiber --timeout 20 --output artifacts/generated-results/two_pair_sic_bidegree33_t0_open_fixed_fiber.json",
+  "scope": "exact characteristic-zero exclusion in this rational fiber; openness excludes a nonempty base neighborhood, but the exceptional norm divisor and its specializations remain open",
+  "unit_ideal": true
+}

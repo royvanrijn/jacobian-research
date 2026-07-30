@@ -91,11 +91,19 @@ satisfies
  \int_{SO(3)}QP^m=\frac{4^m(m!)^2}{(2m+1)!}\ne0
  \quad(m\ge1).
 \]
-The local proof pushes Haar measure to the uniform third-column sphere and
-identifies \(P/2\) exactly with the repository's two-pair angular seed.  Thus
-the Mathieu conjecture fails already on the homogeneous sphere
-\(SO(3)/SO(2)\); this adds a compact-group realization but does not change
-the repository's SIC, GVC, or GMC dimension bounds.
+The original local proof pushes Haar measure to the uniform third-column
+sphere and identifies \(P/2\) exactly with the repository's two-pair angular
+seed.  The new
+[algebraic Haar proof](extended-geometry/ALGEBRAIC_HAAR_QUADRIC_AND_SL2.md)
+instead derives the unique normalized functional on
+\(k[U,V,T]/(UV+T^2-1)\) from the infinitesimal
+\(\mathfrak {so}_3\)-action, proves the moments without compact integration,
+and checks the explicit \(SL_2/T\) pullback.  It also proves that every affine
+homogeneous space admitting this quadric as a Haar-compatible equivariant
+quotient has a non-Mathieu invariant kernel.  Thus the Mathieu conjecture
+fails already on the homogeneous sphere \(SO(3)/SO(2)\); this adds a
+compact-group realization and an algebraic transfer theorem but does not
+change the repository's SIC, GVC, or GMC dimension bounds.
 The two-pair seed behind the repository's three-pair Image-Mathieu witness
 also gives a
 [four-term cubic counterexample in four real variables](extended-geometry/THREE_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md#31-four-real-gaussian-consequence):
@@ -156,6 +164,13 @@ its consecutive mixed moments have quotient
 \(16(4m+3)(4m+5)(m+1)^2\).  This fails for non-radial lifts:
 for \(R(2F)\), the order-four moment is zero modulo \(11^2\), while the
 order-five moment is \(22\) modulo \(11^2\).
+The
+[Frobenius/\(p\)-curvature audit](extended-geometry/TWO_PAIR_SIC_FROBENIUS_CURVATURE_BRIDGE.md)
+shows that generic curvature does not classify this phase: the two
+degree-eight propagations \(R^4(2F)\) and \((2F)^2\) have the same
+recurrence curvature but respectively re-entrant and monotone valuations.
+Accordingly, the holonomic pipeline now retains the primitive integral
+recurrence and its stepwise zero/pole ledger before taking shift norms.
 Higher-degree tensor rank has a separate arithmetic: the determinants for
 \(R^k(2F)\), \(0\leq k\leq4\), introduce the exceptional odd primes
 \(17,23,5,83,13\).  These rank drops do not collapse the forms into the
@@ -281,6 +296,16 @@ The
 uses the split-symbol theorem to exclude the complete rank-one Segre cone.
 Thus the certified coefficient-rank interval is \(2\leq r_{\min}\leq5\);
 ranks two through four remain open.
+Inside the natural two-fourth-power-symbol slice
+\[
+F_P=\xi_1^4P(z_1,z_2)-\xi_2^4P(z_2,z_1),
+\]
+the five even moments through order ten now give an exact exclusion:
+their projective zero fiber consists only of
+\(P=(z_2\pm z_1)^4\), where the coefficient rank drops to one.  The
+certificate combines a length-twelve rational lex ideal with a complete
+good-prime projective-boundary check.  This closes a structured
+two-channel orbit slice, not generic rank two.
 The
 [rank-two prerequisite audit](extended-geometry/TWO_PAIR_SIC_BIDEGREE44_RANK_TWO_ALL_ORDER_AUDIT.md)
 derives the exact rational period generating function on \(C=UW\), but
@@ -589,15 +614,44 @@ uniformly over its cross-ratio: moments two and three leave exactly the
 four fifth powers of the root lines, and the correction jets then close
 triangularly.  An exhaustive \(8{,}778{,}754\)-tuple search over several
 finite fields is retained as a separate experiment, not as the proof.
-This does not yet prove the universal degree-five statement: the
-non-squarefree \(r=4\) nonhomogeneous rows were not part of that reduction
-and remain open.
+The
+[quadruple-root quartic theorem](extended-geometry/BINARY_QUARTIC_QUADRUPLE_ROOT_GVC.md)
+also closes the partition \((4)\), with arbitrary lower symbol terms and
+arbitrary higher operator jets.  The
+[triple-plus-simple theorem](extended-geometry/BINARY_QUARTIC_TRIPLE_SIMPLE_ROOT_GVC.md)
+and
+[double-root theorem](extended-geometry/BINARY_QUARTIC_DOUBLE_ROOT_GVC.md)
+close \((3+1)\), \((2+2)\), and \((2+1+1)\) by exact defect equations
+through moment four and one-sided final faces.  Consequently every binary
+constant-coefficient operator satisfies GVC for polynomials of degree at
+most five.
+
+The entire quintic-leading degree-six row is also closed.  The
+[all-root-partitions theorem](extended-geometry/BINARY_QUINTIC_ALL_ROOT_PARTITIONS_GVC.md)
+uses a Hall-matching description of the leading pure-zero locus and exact
+local calculations for root multiplicities one through five.  It covers
+all seven quintic root partitions, with arbitrary lower polynomial pieces
+and arbitrary higher operator jets.  The
+[quintuple-root theorem](extended-geometry/BINARY_QUINTIC_QUINTUPLE_ROOT_GVC.md)
+retains the longest equality chain: it reaches operator order ten before
+moments five and six force its last parameters to vanish.  This is not a
+universal degree-six theorem; at this point the rows with lowest orders
+\(2,3,4\) were the remaining cases.
+
 The full SIC nullcone equality is now false, but the new witness has full
 coefficient-matrix rank and therefore lies outside the separable GVC
-Segre cone.  The remaining nonhomogeneous frontier has lowest positive
-operator order at least two, requires polynomial degree greater than that
-order, and must avoid the factor-unit architecture.  If the lowest order
-is exactly two, its polynomial degree must now be at least six.  The
+Segre cone.  The remaining nonhomogeneous frontier begins at polynomial
+degree six, requires degree greater than the lowest positive operator
+order, and must avoid the factor-unit architecture.  Its complete
+\((r,\deg P)=(5,6)\) and \((4,6)\) rows are now removed, leaving only
+\(r=2,3\) in polynomial degree six.  The
+[complete cubic-leading sextic theorem](extended-geometry/BINARY_CUBIC_ALL_ROOT_PARTITIONS_GVC.md)
+now removes \(r=3\): a Hall classification reduces the three cubic root
+partitions to multiplicities one, two, and three, exact Newton-face
+calculations close every projective chart, and the simple-root defect
+bound has slope four against the degree gap three.  Thus only \(r=2\)
+remains in degree six.  If the lowest order is exactly two, its polynomial
+degree must be at least six.  The
 [low-dimensional GVC program](extended-geometry/TWO_VARIABLE_GVC_REPRESENTATION_PROGRAM.md)
 also records the separate ordinary-Laplacian route: quadraticize the
 factored third-order Dvorsky symbol by a nonlinear polarization, minimizing
@@ -619,6 +673,19 @@ strengthenings, while the prime-endpoint, support-graph, and unit-star
 arguments are reusable techniques.  None is an active GMC(2) search.
 High-dimensional implication chains and weighted families remain as examples
 of logical transport.
+
+Christopher D. Long's contemporaneous
+[factorially weighted multitorus theorem](extended-geometry/FACTORIALLY_WEIGHTED_MULTITORUS_THEOREM.md)
+sharpens the mechanism: for one factorial radial variable and any angular
+torus rank, eventual pure vanishing, all-order pure vanishing, and exclusion
+of zero from the weight convex hull are equivalent; the kernel is
+Mathieu--Zhao, and a balanced support is detected at every sufficiently
+large prime dilation of one fixed power.  Its rank-one Gaussian
+specialization overlaps `G2T` and gives the
+\(\operatorname{SO}_2(\mathbb C)\) nullcone classification.  The theorem is
+now a search pre-sieve, not a new higher-dimensional GMC implication:
+ordinary multi-pair Gaussian and SIC functionals have several independent
+product-factorial radial directions and remain outside its hypotheses.
 
 ## The foundational map in two forms
 
@@ -1386,7 +1453,21 @@ shows exactly where the exponent reappears in every rank at least four:
 the marked fiber at `P=1` recovers the normalized seed, and a second one at
 the universally valid non-torsion plane `P=2` recovers `m`.  A torsion
 second plane sees only `m` modulo its order, while one transverse marked
-line sees `m` as a pole order at `P=0`.  The quartic
+line sees `m` as a pole order at `P=0`.  This positive statement is sharp
+only on the monomial power-shift locus.  The
+[finite marked-plane nonreconstruction theorem](verified/FINITE_MARKED_PLANE_NONRECONSTRUCTION.md)
+allows an arbitrary polynomial multiplier `R(P)`: interpolation fixes its
+value on any finite set of target planes, while its growing zero set creates
+strictly more canonical boundary components.  Consequently no finite
+collection of marked fibers—or even complete parallel inverse planes—can
+recover an unrestricted stable class in degree at least four.  At the top
+of the hierarchy, the
+[polynomial-gauge decorated Torelli theorem](verified/POLYNOMIAL_GAUGE_DECORATED_TORELLI.md)
+shows that the intrinsic boundary recovers the base character and the
+unmarked ramified Fitting divisor recovers the seed and multiplier up to
+exactly the ordinary scaling action.  The full finite normalization
+morphism plus reconstruction boundary is therefore a complete stable
+invariant without retaining a chosen inverse root.  The quartic
 [first case](verified/UNIVERSAL_QUARTIC_GAUGE_MULTIPLICITY.md)
 has lattice index `2m+5`.  The earlier
 [weighted trace-chord normalization](verified/UNIVERSAL_QUARTIC_FIBER_MULTIPLICITY.md)
@@ -1853,8 +1934,46 @@ development:
     projective-polar work and supplies the all-dimensional
     \((g_0,\ldots,g_n)\leftrightarrow(\sigma_1,\ldots,\sigma_n)\) transform,
     executable gradient-integrability sieve, and a typed family registry.
+    `PGS2` adds the all-dimensional smooth-essential normal slice: for a
+    degree-\(m\) gradient whose top potential has essential rank \(r<n\),
+    the active Jacobian algebra has length \(m^r\), its
+    compactifier-truncated extension has length \(m^{r+1}\), and lower
+    gradient layers give explicit bounds on the leading Segre
+    multiplicity.
+    `PGS3` treats every nonempty singular component \(C\): its infinity
+    support is the join of \(C\) with the kernel vertex, of codimension
+    \(r-\dim C\), while its multiplicity is controlled by the transverse
+    Jacobian length and the generic-rank/\(X_0\)-torsion profile of the
+    lower active gradients.  A fixed repeated-root binary quintic realizes
+    active lengths \(8,3,2\) under three lower quartics, proving that
+    singular-locus dimension and Hessian rank do not determine a Segre
+    class.
     Exact cotangent and quadratic-stabilization calibrations show that these
     lifts preserve the top affine degree but not the interior multidegrees.
+    Its first coefficient-level consumer, `HC4PPG6`, constructs the
+    universal 56-coefficient quintic top gradient and partitions the 626
+    HC4 rows by the essential Hessian rank and singularity type: the generic
+    smooth rank-one, rank-two, and rank-three packets meet respectively the
+    codimension-two, codimension-three, and isolated codimension-four
+    columns.  Their top Rees ideals are complete intersections of linear
+    type.  `HC4PPG7`, the \((n,m,r)=(4,4,3)\) instance of `PGS2`, then
+    uses the lower vertex filtration in the smooth
+    rank-three packet: its active algebra has length \(256\), and a
+    nonaligned missing gradient component has ideal length at least six.
+    This excludes both codimension-four affine-degree-two/three rows, leaving
+    318 and 306 numerical signatures and moving the next frontier to the
+    codimension-three packets.  `HC4PPG8` now refines those packets: when
+    the rank-two quartic restricts nontrivially to its kernel line, a
+    squarefree binary Hessian discriminant is excluded and the
+    nonsquarefree remainder has forced \(\sigma_3=16\), the
+    \((4,4,2)\) unit-penultimate instance of `PGS2`.  For rank-three
+    tops, the Schur cubic passes through every ordinary isolated
+    singularity.  `HC4PPG9` then uses `PGS3` on the singular binary
+    rank-two packet: on its active-unit stratum, a root partition with
+    \(q\) distinct roots forces \(\sigma_2=5-q\); in particular the
+    generic double-root packet falls from \(260,249\) rows to \(51,50\).
+    The zero kernel restriction, higher-torsion failure locus, and
+    worse/nonsquarefree singular strata remain open.
     See
     [`PROJECTIVE_GRADIENT_SEGRE_MACHINERY.md`](PROJECTIVE_GRADIENT_SEGRE_MACHINERY.md).
 
@@ -2172,7 +2291,23 @@ is `p=2`, where `(partial_A,A^2 partial_A)` has remainder
 `-987/395 e_C` modulo the full `p=1` image; all `|p|>=3` vanish by the
 semigroup cutoff.  Its quotient over the `p=1` image is the reduced
 length-one module `R/(gamma,6u-1)`.  Quadratic strict descent therefore fails
-with at least these two independent classes.  Valuative no
+with at least these two independent classes.  The
+[rooted-tree continuation](extended-geometry/LR_ROOTED_TREE_NORMAL_CLASSES.md)
+now compiles the higher pre-Lie defects exactly.  The weight-zero ladders
+`tau_2=B(C)`, `tau_3=A(C(C))`, and
+`tau_(n+2)=B(C(tau_n))` have a nonzero third saturated associated-graded
+normal residue in every order, by one fixed `3 x 3` Cayley--Hamilton
+recurrence.  The
+[balanced mixed-BCH continuation](extended-geometry/LR_MIXED_BCH_NORMAL_CLASSES.md)
+now also closes tree cancellation in the component linear in the leading
+weight-zero deformation and balanced between the constant target directions
+of weights `1,-1`.  Its third normal leading coefficients satisfy
+`c_(k+1)=-73440(k+3)(2k+7)c_k`, so the actual BCH coefficient is nonzero in
+every odd order.  This is an all-order penalty when both opposite weights are
+active, not yet a universal lower-jet obstruction: with amplitudes `s,t` the
+class is multiplied by `s^k*t^k` and vanishes on `s*t=0`.  The remaining
+filtered problem is a lower-jet stratification linking that branch to the
+weight-zero torus recurrence.  Valuative no
 escape is a separate marked-cover problem, not an automorphism-coefficient
 estimate.  None is a bottleneck for stable moduli, which already follow from
 decorated normalization and the affine sheet.

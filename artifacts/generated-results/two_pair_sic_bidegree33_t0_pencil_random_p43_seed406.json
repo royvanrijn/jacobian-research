@@ -1,0 +1,13 @@
+{
+  "attempted_base_count": 1110,
+  "candidate_replays": [],
+  "common_pencil_zero_sample_count": 0,
+  "common_pencil_zero_samples": [],
+  "format": "two-pair-sic-bidegree33-t0-fitting-samples-v2",
+  "prime": 43,
+  "random_seed": 406,
+  "reproduction_command": "scripts/research_two_pair_sic_bidegree33_t0_fitting_interpolation.py --prime 43 --random-seed 406 --sample-count 450 --max-attempts 2000 --timeout 20 --output artifacts/generated-results/two_pair_sic_bidegree33_t0_pencil_random_p43_seed406.json",
+  "sample_count": 450,
+  "sampling_mode": "random",
+  "status": "bounded modular determinant-pencil samples; not a proof"
+}

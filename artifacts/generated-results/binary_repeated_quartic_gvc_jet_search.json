@@ -1,0 +1,304 @@
+{
+  "format": "binary-repeated-quartic-gvc-jet-search-v1",
+  "status": "experiment",
+  "field": "finite fields of faithful characteristic for each window",
+  "scope": "bounded modular samples on repeated-root quartic-leading degree-five binary GVC jets; not an exhaustive search, all-order proof, or counterexample",
+  "minimal_migrating_architecture": {
+    "operator": "Lambda4 + Lambda5",
+    "polynomial": "P5 + P4",
+    "defect_formula": "number of Lambda5 selections plus number of P4 selections"
+  },
+  "depth_one_searches": [
+    {
+      "orbit": "4",
+      "prime": 23,
+      "samples": 100000,
+      "seed": 20260733,
+      "maximum_moment": 4,
+      "faithful_degree_bound": 20,
+      "moment_survivor_counts": {
+        "2": 35,
+        "3": 1,
+        "4": 1
+      },
+      "survivor_count": 1,
+      "survivors": [
+        {
+          "P5": {
+            "0,5": 1
+          },
+          "P4": {
+            "0,4": 18,
+            "2,2": 15,
+            "3,1": 17
+          },
+          "Lambda5": {
+            "1,4": 12,
+            "2,3": 4,
+            "3,2": 10
+          },
+          "boundary_coefficients": {
+            "P4_dual_to_Lambda4": 0,
+            "Lambda5_dual_to_lowest_P5_tip": 0
+          },
+          "mixed_nonzero": {
+            "x": [
+              true,
+              true,
+              true,
+              true
+            ],
+            "y": [
+              false,
+              true,
+              true,
+              false
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "orbit": "3+1",
+      "prime": 23,
+      "samples": 100000,
+      "seed": 20260732,
+      "maximum_moment": 4,
+      "faithful_degree_bound": 20,
+      "moment_survivor_counts": {
+        "2": 84,
+        "3": 0,
+        "4": 0
+      },
+      "survivor_count": 0,
+      "survivors": []
+    },
+    {
+      "orbit": "2+2",
+      "prime": 23,
+      "samples": 100000,
+      "seed": 20260733,
+      "maximum_moment": 4,
+      "faithful_degree_bound": 20,
+      "moment_survivor_counts": {
+        "2": 17,
+        "3": 2,
+        "4": 2
+      },
+      "survivor_count": 2,
+      "survivors": [
+        {
+          "P5": {
+            "5,0": 1
+          },
+          "P4": {
+            "4,0": 17
+          },
+          "Lambda5": {
+            "0,5": 8,
+            "1,4": 14,
+            "4,1": 5
+          },
+          "boundary_coefficients": {
+            "P4_dual_to_Lambda4": 0,
+            "Lambda5_dual_to_lowest_P5_tip": 5
+          },
+          "mixed_nonzero": {
+            "x": [
+              false,
+              false,
+              false,
+              false
+            ],
+            "y": [
+              true,
+              false,
+              false,
+              false
+            ]
+          }
+        },
+        {
+          "P5": {
+            "0,5": 1
+          },
+          "P4": {
+            "0,4": 18,
+            "1,3": 9
+          },
+          "Lambda5": {
+            "1,4": 10,
+            "4,1": 3,
+            "5,0": 10
+          },
+          "boundary_coefficients": {
+            "P4_dual_to_Lambda4": 0,
+            "Lambda5_dual_to_lowest_P5_tip": 0
+          },
+          "mixed_nonzero": {
+            "x": [
+              true,
+              true,
+              false,
+              false
+            ],
+            "y": [
+              true,
+              false,
+              false,
+              false
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "conditioned_depth_one_fifth_moment_search": {
+    "orbit": "4",
+    "prime": 29,
+    "samples": 500000,
+    "seed": 20260738,
+    "maximum_moment": 5,
+    "faithful_degree_bound": 25,
+    "conditioning": "solve moment one and both degree-one coefficients of moment two in P4, then test the scalar second moment and moments three through five",
+    "counts": {
+      "solvable_through_defect_one": 1805,
+      "moment_two": 55,
+      "moment_three": 2,
+      "moment_four": 2,
+      "moment_five": 2
+    },
+    "survivor_count": 2,
+    "survivors": [
+      {
+        "P5": {
+          "0,5": 1,
+          "1,4": 25
+        },
+        "P4": {
+          "0,4": 8,
+          "1,3": 28,
+          "2,2": 23,
+          "3,1": 11
+        },
+        "Lambda5": {
+          "2,3": 26,
+          "3,2": 1
+        },
+        "support_extrema": {
+          "P5_max_x": 1,
+          "P4_max_x": 3,
+          "Lambda5_min_x": 2
+        },
+        "mixed_nonzero": {
+          "x": [
+            true,
+            true,
+            true,
+            false,
+            false
+          ],
+          "y": [
+            false,
+            true,
+            false,
+            false,
+            false
+          ]
+        }
+      },
+      {
+        "P5": {
+          "0,5": 1,
+          "1,4": 19
+        },
+        "P4": {
+          "0,4": 5,
+          "1,3": 27,
+          "2,2": 17,
+          "3,1": 26
+        },
+        "Lambda5": {
+          "2,3": 16,
+          "3,2": 16
+        },
+        "support_extrema": {
+          "P5_max_x": 1,
+          "P4_max_x": 3,
+          "Lambda5_min_x": 2
+        },
+        "mixed_nonzero": {
+          "x": [
+            true,
+            true,
+            true,
+            false,
+            false
+          ],
+          "y": [
+            true,
+            true,
+            false,
+            false,
+            false
+          ]
+        }
+      }
+    ]
+  },
+  "depth_two_conditioned_search": {
+    "orbit": "4",
+    "prime": 29,
+    "samples": 500000,
+    "seed": 20260737,
+    "maximum_moment": 5,
+    "faithful_degree_bound": 25,
+    "conditioning": "solve moment one and both degree-one coefficients of moment two in P4, then solve the scalar part of moment two in P3 and Lambda6",
+    "counts": {
+      "solvable_through_defect_one": 1722,
+      "solvable_through_moment_two": 1108,
+      "moment_three": 1,
+      "moment_four": 0,
+      "moment_five": 0
+    },
+    "delayed_failures": [
+      {
+        "P5": {
+          "0,5": 1,
+          "1,4": 1
+        },
+        "P4": {
+          "0,4": 24,
+          "1,3": 20,
+          "2,2": 25,
+          "3,1": 18,
+          "4,0": 4
+        },
+        "P3": {
+          "0,3": 25,
+          "1,2": 12,
+          "2,1": 2,
+          "3,0": 14
+        },
+        "Lambda5": {
+          "0,5": 26,
+          "1,4": 11,
+          "2,3": 24,
+          "3,2": 19
+        },
+        "Lambda6": {
+          "0,6": 26,
+          "1,5": 25,
+          "2,4": 23,
+          "3,3": 27
+        },
+        "first_failure": 4,
+        "fourth_moment": {
+          "0,0": 20,
+          "0,1": 17
+        }
+      }
+    ]
+  },
+  "conclusion": "No sampled point survives the declared final moment outside the recorded boundary strata. The search does not exclude points outside the samples or failure at a later moment."
+}

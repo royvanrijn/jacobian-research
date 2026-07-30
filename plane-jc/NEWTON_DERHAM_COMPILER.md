@@ -152,6 +152,25 @@ A degree-eight slice `y^2=t^8+ut^7+t` also produces a dense `6x6`
 genus-three matrix whose denominators are scalar multiples of
 `46656u^7+823543`, its discriminant up to sign.
 
+The middle end now scalarizes any chosen section by the exact Krylov rule
+\(v\mapsto \partial_uv+Mv\).  On the elliptic regression this gives
+
+\[
+4(4u^3+27v^2)\Pi''+48u^2\Pi'+7u\Pi=0.
+\]
+
+On the degree-eight slice the first basis period is cyclic of order six.
+Its primitive scalar leading coefficient is
+
+\[
+64u^2(46656u^7+823543).
+\]
+
+The matrix is regular at `u=0`, so the extra `u^2` is a certified
+cyclic-vector singularity rather than a local-system discriminant.  This
+gives the compiler an exact way to distinguish family degeneration from
+scalarization artifacts before attempting desingularization.
+
 The obstruction section need not be horizontal.  Reusing a local system and
 reusing a plane-JC obstruction problem are therefore different claims.
 
